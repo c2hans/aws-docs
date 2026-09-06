@@ -72,7 +72,3 @@ The field `start_end_date` is a combination of `start_date` and `end_date`.
 <a name="google-search-console-reading-partitioning-queries"></a>
 
 Filter-based partitioning and record-based partitioning are not supported.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

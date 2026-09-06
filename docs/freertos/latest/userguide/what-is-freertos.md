@@ -66,7 +66,3 @@ These resources might be helpful to you.
 + For more information about connecting devices to AWS IoT, see [Device Provisioning](https://docs.aws.amazon.com/iot/latest/developerguide/iot-provision.html) in the [AWS IoT Core Developer Guide](https://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html).
 + For technical support for AWS, see [AWS Support](https://aws.amazon.com/premiumsupport/).
 + For questions about AWS billing, account services, events, abuse, or other issues with AWS, see the [Contact Us](https://aws.amazon.com/contact-us/) page.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

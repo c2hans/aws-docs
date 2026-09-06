@@ -181,7 +181,3 @@ This copies the Block source into your monorepo. You now own it. Modify the CDK,
 + ✅ Local implementations, types, and API surface all still work
 + ❌ You’re responsible for maintenance. Upstream updates require manual re-sync
 + ❌ Only use when a custom wrapping BB (Pattern 3) or upstream PR won’t solve the problem
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Blocks. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query blocks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

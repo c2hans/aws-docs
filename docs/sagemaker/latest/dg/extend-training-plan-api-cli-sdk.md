@@ -42,7 +42,3 @@ The following section defines the mandatory input request parameter for the `Ext
 
 When calling the [`ExtendTrainingPlan`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ExtendTrainingPlan.html) API to extend a training plan, you must provide the following value:
 + `TrainingPlanExtensionOfferingId`: The ID of the extension offering you are purchasing. You can retrieve this ID from the `TrainingPlanExtensionOfferings` in the response of your `SearchTrainingPlanOfferings` API call. Its format should start with `tpeo-*`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

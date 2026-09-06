@@ -28,7 +28,3 @@ The first step in a large-scale migration is to prepare the application and serv
 Cloud Migration Factory includes an automation script that you run on the migration execution server to import the metadata from the CSV file to Cloud Migration Factory.
 
 For detailed instructions, see [Importing data](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/metadata-management.html#importing-data) in the *Cloud Migration Factory Implementation Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

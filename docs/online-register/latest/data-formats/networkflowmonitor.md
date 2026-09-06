@@ -20,7 +20,3 @@ Network Flow Monitor provides the following APIs for data retrieval.
 | <a name="networkflowmonitor-ListMonitors"></a>[ListMonitors](https://docs.aws.amazon.com/networkflowmonitor/2.0/APIReference/API_ListMonitors.html) | List all monitors in an account and their statuses | List |
 | <a name="networkflowmonitor-ListScopes"></a>[ListScopes](https://docs.aws.amazon.com/networkflowmonitor/2.0/APIReference/API_ListScopes.html) | Get all scopes for an account | List |
 | <a name="networkflowmonitor-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/networkflowmonitor/2.0/APIReference/API_ListTagsForResource.html) | List the tags for a resource | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

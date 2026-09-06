@@ -27,7 +27,3 @@ This topic contains information about troubleshooting issues when trying to prev
 **Problem:** This can happen when your app editing session was taken over by another user, but you weren't notified. This can cause the app being edited to not match the preview environment.
 
 **Solution:** Refresh the application studio browser tab and take over the editing session if needed.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

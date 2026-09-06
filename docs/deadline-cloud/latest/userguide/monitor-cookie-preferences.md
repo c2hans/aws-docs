@@ -52,7 +52,3 @@ Advertising cookies help deliver relevant marketing content. The monitor does no
 If you decline or withdraw consent for functional cookies, the monitor deletes your saved preferences. The next time you open or refresh the monitor, it uses the default settings. Affected settings include table column layouts, your active farm selection, job monitor board layout, your download location, and unsaved job submission content.
 
 The monitor deletes preferences because it cannot retain UI settings in your browser without functional cookie consent. If you later re-enable functional cookies, the monitor begins saving your preferences again, but it does not restore your previous settings.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

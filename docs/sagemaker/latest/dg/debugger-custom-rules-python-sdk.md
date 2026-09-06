@@ -58,7 +58,3 @@ For more variations and advanced examples of using Debugger custom rules, see th
 + [Monitor your training job with Amazon SageMaker Debugger custom rules](https://sagemaker-examples.readthedocs.io/en/latest/sagemaker-debugger/tensorflow_keras_custom_rule/tf-keras-custom-rule.html)
 + [PyTorch iterative model pruning of ResNet and AlexNet](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/sagemaker-debugger/pytorch_iterative_model_pruning)
 + [Trigger Amazon CloudWatch Events using Debugger Rules to Take an Action Based on Training Status with TensorFlow](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/sagemaker-debugger/tensorflow_action_on_rule)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

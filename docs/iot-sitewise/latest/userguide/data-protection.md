@@ -20,7 +20,3 @@ We strongly recommend that you never put confidential or sensitive information, 
 **Topics**
 + [Internetwork traffic privacy for AWS IoT SiteWise](internetwork-traffic-privacy.md)
 + [AWS IoT SiteWise Assistant Business Service improvement](assistant-bsp.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -41,7 +41,3 @@ The preview is built as a single large HTML file. It will be displayed as multip
  **What doesn’t work:**
 + Links to other AWS content, using `type="documentation"`. This is because this content doesn’t exist in the preview environment.
 + The attribute `{aws}` will not display properly. Its value changes based on the environment.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

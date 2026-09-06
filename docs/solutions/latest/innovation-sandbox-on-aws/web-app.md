@@ -11,7 +11,3 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 The web app infrastructure consists of an [Amazon CloudFront](https://aws.amazon.com/cloudfront/) distribution with an [Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3/) bucket origin for hosting the static assets for the web UI, and an API origin.
 
 The API uses an [AWS WAF](https://aws.amazon.com/waf/) protected [Amazon API Gateway REST API](https://aws.amazon.com/api-gateway/), with proxy [AWS Lambda](https://aws.amazon.com/lambda/) function integrations for each API resource (leases, lease-templates, accounts, configurations, users, blueprints). API Gateway authorizes requests natively using IAM authorization (SigV4) and does not require a custom Lambda authorizer. Each integration function then verifies the caller’s identity token and enforces role-based access control through shared middleware before interacting with the underlying data stores in the Data stack.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

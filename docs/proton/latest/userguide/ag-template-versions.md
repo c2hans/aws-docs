@@ -24,7 +24,3 @@ The way AWS Proton determines if a template version request is for a minor or ma
 A new minor version registration based on template sync still fails if AWS Proton determines that the change isn't backward compatible.
 
 When you publish a new version of a template, it becomes the **Recommended** version if it's the highest major and minor version. New AWS Proton resources are created using the new recommended version, and AWS Proton prompts administrators to use the new version and to update existing AWS Proton resources that are using an outdated version.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Proton. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query proton` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

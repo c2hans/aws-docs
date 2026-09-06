@@ -20,7 +20,3 @@ You must stop a device before you can perform the following actions:
 1. In the navigation pane, choose **Input devices**. Find the card for the appropriate Link , and choose the hyperlink.
 
 1. On the **Device details** page for the device, choose **Start** or **Stop**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

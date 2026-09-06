@@ -89,7 +89,3 @@ In the MS Smooth output group section, complete the following fields:
 + **Acquisition Point ID**: Enter the address of the certificate if encryption is enabled on the output.
 
 ![The file images/ms-smooth-advanced.png.](http://docs.aws.amazon.com/elemental-server/latest/ug/images/ms-smooth-advanced.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Server. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-server` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

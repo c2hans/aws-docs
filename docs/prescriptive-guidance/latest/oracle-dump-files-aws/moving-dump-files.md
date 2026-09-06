@@ -22,7 +22,3 @@ The following options describes the ways to move the on-premises Oracle Database
 + An Amazon RDS for Oracle instance
 + An EC2 instance
 + A database link with validated connectivity from the on-premises data source to the Amazon EC2 or Amazon RDS for Oracle instance
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

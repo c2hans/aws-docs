@@ -23,7 +23,3 @@ We expect the similar trend for larger data sets too. We didn’t include Oracle
 + 52 minutes is the total elapsed time for Oracle Export/Import. This time includes:
   + 14 minutes to unload data using `exp`.
   + 38 minutes to load data using `imp`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

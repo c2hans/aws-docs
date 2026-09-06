@@ -42,7 +42,3 @@ You can use tags to identify the kind of support a group of resources may need, 
 In addition to role-based access control (RBAC), tagging your resources enables you to define and enhance the security of your resources in the environment. You can limit access to certain resources for roles in different environments, and you can also use tags to grant a temporary elevated access to certain resources. For more information, refer to the [What is ABAC for AWS?](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_attribute-based-access-control.html) documentation.
 
 Authorization-based access control (ABAC) is not supported for all services. For information on what services support tags refer to, the [service table](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.html). In the table, locate the service and check the **Authorization based on tags** column. You can also select the service name for additional documentation on authorization and access control for the service.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

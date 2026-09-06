@@ -36,7 +36,3 @@ Whether this is AWS or APN partner solution, there are varying degrees of build 
 + Business impact of a service outage
 
 You should also evaluate the available commercial models for any solutions you intend to buy based on your specific business requirements and functionality each solution provides. Consider the terms of any commercial model, for example, the right to use vs. pay per use charges and how any such charges are calculated.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

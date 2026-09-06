@@ -28,7 +28,3 @@ Optionally, you can set the AWS Region that you want the flow to be created in. 
 If you want to use the flow in the Amazon Bedrock console, don't use the `--cleanup` parameter as this deletes the flow after the script runs the flow. If you don't use `--cleanup`, you will have to delete the flow, when you no longer need it.
 
 For more information, see [https://github.com/aws-samples/amazon-bedrock-flows-samples?tab=readme-ov-file\#how-to-use](https://github.com/aws-samples/amazon-bedrock-flows-samples?tab=readme-ov-file#how-to-use).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -241,7 +241,3 @@ The following table shows the performance metrics available in S3 Storage Lens a
 | % In-Region transferred bytes | - | Percentage of bytes transferred that originate from calls from same Region as bucket's home Region | Advanced | Performance | Y | 100 \* InRegionTransferredBytes / (BytesDownloaded \+ BytesUploaded) | N |
 | Unique objects accessed count daily | UniqueObjectsAccessedDailyCount | Number of objects that were accessed at least once in last 24 hrs | Advanced | Performance | N | - | N |
 | % Unique objects accessed count daily | - | Percentage of objects that were accessed at least once in last 24 hrs | Advanced | Performance | Y | 100 \* UniqueObjectsAccessedDailyCount / ObjectCount | N |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

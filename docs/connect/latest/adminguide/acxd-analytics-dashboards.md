@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-analytics
 # Analytics dashboards
 <a name="acxd-analytics-dashboards"></a>
 
-Analytics dashboards help you view, organize, and monitor performance data for deployed Agentic CX Designer applications.
+Analytics dashboards help you view, organize, and monitor performance data for deployed agentic CX designer applications.
 
 Review dashboards to understand how users are interacting with your conversational AI applications, whether flows are performing as expected, where users may be dropping off, and whether integrations or response times may be affecting the experience.
 
@@ -258,7 +258,7 @@ Examples include:
 
 External analytics lets you display data from an external source inside an analytics dashboard.
 
-Use external analytics when your team needs to compare Agentic CX Designer conversation metrics with data from another system, such as business reporting, operational data, or an internal service.
+Use external analytics when your team needs to compare agentic CX designer conversation metrics with data from another system, such as business reporting, operational data, or an internal service.
 
 External data is available through the Table chart type.
 
@@ -300,7 +300,3 @@ You can also use placeholders in the URL field to pass the dashboard's selected 
 Use these placeholders when the external data source should return results for the same time window selected in the dashboard.
 
 When using external analytics, follow your organization's security requirements for endpoint access, authentication, headers, and sensitive values.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

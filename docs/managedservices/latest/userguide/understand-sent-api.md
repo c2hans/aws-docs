@@ -58,7 +58,3 @@ The AWS CLI is a prerequisite for using the AWS Managed Services (AMS) CLIs (Cha
 1. After the installation, run `aws amscm help` and `aws amsskms help` to see commands and options.
 **Note**
 The AMS CLI must be installed for these commands to work. To install the AMS API or CLI, go to the AMS console **Developers Resources** page. For reference material on the AMS CM API or AMS SKMS API, see the AMS Information Resources section in the User Guide. You may need to add a `--profile` option for authentication; for example, `aws amsskms {{ams-cli-command}} --profile SAML`. You may also need to add the `--region` option as all AMS commands run out of us-east-1; for example `aws amscm {{ams-cli-command}} --region=us-east-1`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -78,7 +78,3 @@ All integration-related Amazon CloudWatch metrics originate from Amazon Redshift
 <a name="zero-etl.eventbridge"></a>
 
 Amazon Redshift send integration-related events to Amazon EventBridge. For a list of events and their corresponding event IDs, see [Zero-ETL integration event notifications with Amazon EventBridge](https://docs.aws.amazon.com/redshift/latest/mgmt/integration-event-notifications) in the *Amazon Redshift Management Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

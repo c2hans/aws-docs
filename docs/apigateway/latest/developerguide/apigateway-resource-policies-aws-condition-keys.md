@@ -32,7 +32,3 @@ For more information about AWS condition keys, see [AWS Global Condition Context
 | aws:UserAgent | Key is present only if the value is provided by the caller in the HTTP header. | No | All |
 | aws:userid | None | Yes | IAM |
 | aws:username | None | Yes | IAM |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

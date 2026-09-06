@@ -21,7 +21,3 @@ Shows how to set up AWS Config. Lists which CodeBuild resources are tracked and 
 
 [Build notifications sample](sample-build-notifications.md)
 Uses Apache Maven to produce a single JAR file. Sends a build notification to subscribers of an Amazon SNS topic. The sample instructions show you how to set up permissions so that CodeBuild can communicate with Amazon SNS and CloudWatch, how to create and identify CodeBuild topics in Amazon SNS, how to subscribe recipients to the topic, and how to set up rules in CloudWatch.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

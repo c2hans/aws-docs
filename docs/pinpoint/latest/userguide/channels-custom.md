@@ -23,7 +23,3 @@ You can configure your campaigns to send messages through custom channels by usi
 You can create custom channels by using a webhook, or by calling a service's API through an AWS Lambda function. For more information about creating custom channel functions in Lambda, see [Creating custom channels](https://docs.aws.amazon.com/pinpoint/latest/developerguide/channels-custom.html) in the *Amazon Pinpoint Developer Guide*.
 
 Unlike other channels in Amazon Pinpoint, you don't have to enable the custom channels feature. Custom channels are enabled by default in all Amazon Pinpoint projects. You don't have to request production access to use custom channels.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

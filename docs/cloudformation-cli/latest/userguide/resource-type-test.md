@@ -7,6 +7,9 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/reso
 
 As you model and develop your resource type, you should have the CloudFormation CLI perform tests to ensure that the resource type is behaving as expected during each event in the resource lifecycle. The CloudFormation CLI performs a suite of tests called contract tests to enforce CloudFormation’s [handler contract](resource-type-test-contract.md). Developing and registering your resource type in CloudFormation signifies an agreement that your resource is compliant and doesn't break any framework expectations. All resources that fail contract tests are blocked from publishing into our registry.
 
+**Important**
+A new version of the contract tests is available through the `--v2` flag of the `cfn test` command. Going forward, all newly registered resource types must pass contract tests v2 during registration. We recommend that you adopt `cfn test --v2` early to identify and resolve any gaps, though `cfn test` without the flag continues to work as before. To adopt the new tests, you might need to update your test input files in addition to your handler code. The `--v2` flag supports only resource types developed for the Java runtime. For other languages, such as TypeScript and Go, `cfn test` remains functional.
+
 ## Testing resource types locally using AWS SAM
 <a name="resource-type-develop-test"></a>
 
@@ -40,6 +43,63 @@ $ cfn test
 The CloudFormation CLI selects the appropriate contract tests to execute, based on the handlers specified in your resource type schema. If a test fails, the CloudFormation CLI outputs a detailed trace of the failure, including the related assertion failure and mismatched values.
 
 For more information about testing using AWS SAM CLI, see [Testing and debugging serverless applications ](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-test-and-debug.html) in the *AWS Serverless Application Model Developer Guide*.
+
+## Testing resource types using the --v2 flag
+<a name="resource-type-test-v2"></a>
+
+Use the `--v2` flag of the `cfn test` command to run the new version of the contract tests in a Docker container. Unlike the default `cfn test` command, `cfn test --v2` doesn't require AWS SAM or a running local Lambda endpoint for resource types using the Java runtime. The test runner loads your handler package directly. The same test suite runs during type registration, so a type that passes locally will pass at registration.
+
+**Prerequisites**
++ Docker installed and running. The `--v2` flag is supported on macOS and Linux.
++ A built handler package (`<my-resource-type>.zip`) in your project root — for example, one created by running `cfn submit --dry-run`.
++ Valid AWS credentials and an AWS Region. Contract tests provision real resources in your account.
++ Outbound network access to the Amazon ECR Public Gallery, so the CloudFormation CLI can download the test runner image.
+
+**To run the tests**, from your project root:
+
+```
+$ cfn test --v2
+```
+
+The CloudFormation CLI verifies the prerequisites, pulls the latest test runner image from the Amazon ECR Public Gallery, and runs the tests against your handler package. Test results stream to your terminal as tests execute. The CloudFormation CLI writes detailed HTML and JUnit XML reports to the `rqts-output/` directory in your project root. The command exits with code `0` when all tests pass.
+
+If the image can't be downloaded and a previously downloaded copy is available locally, the CloudFormation CLI runs that copy and warns that it might be out of date.
+
+As with the default command, the CloudFormation CLI selects the appropriate tests based on the handlers and properties specified in your resource type schema. The CloudFormation CLI reads test input from the files in the `inputs` directory packaged in your handler package. The same `inputs_1_create.json` / `inputs_1_update.json` / `inputs_1_invalid.json` conventions apply. Note that `overrides.json` is not used by `--v2` — specify input data using input files.
+
+The following options are supported with `--v2`.
+
+| Option | Description |
+| --- | --- |
+| `--region` | The Region used for temporary credentials and resource provisioning. |
+| `--profile` | The AWS profile used for temporary credentials. |
+| `--role-arn` | The IAM role assumed when performing handler operations. |
+| `--source-account`, `--source-arn` | Values passed when assuming the role, matching the trust policy conditions of generated execution roles. |
+| `--typeconfig` | The type configuration file supplying additional input to the handler. |
+
+Other `cfn test` options, including `--endpoint`, `--function-name`, `--log-group-name`, `--log-role-arn`, and `--docker-image`, apply only to the default command and have no effect when you specify `--v2`. Arguments passed through to pytest after `--` are likewise not used.
+
+**Note**
+Results can differ from registration if your local test runner image is older than the image used at registration, or when handler behavior depends on the Lambda execution environment.
+
+For more information, see [Contract tests performed with the --v2 flag](contract-tests.md#contract-tests-v2).
+
+### Troubleshooting
+<a name="resource-type-test-v2-troubleshooting"></a>
+
+The following entries describe common failures and how to resolve them.
+
+`cfn test --v2` fails with a command not found error  <a name="resource-type-test-v2-troubleshooting-notfound"></a>
+Your installed version of the CloudFormation CLI doesn't include the `--v2` flag. Upgrade the CloudFormation CLI to a version that supports contract tests v2, and then run the command again.
+
+Tests fail with `the RQTS local test runner supports Java projects only`  <a name="resource-type-test-v2-troubleshooting-javaonly"></a>
+Your resource type isn't developed for the Java runtime. The `--v2` flag supports only Java resource types, so resource types developed for other languages can't be tested locally.
+
+Tests fail during setup with an expired token error  <a name="resource-type-test-v2-troubleshooting-expired"></a>
+Contract tests use your existing credentials if they're already temporary credentials, so an expired session isn't detected until the tests begin provisioning resources. Refresh your credentials and run the command again.
+
+Tests fail with `AlreadyExists`  <a name="resource-type-test-v2-troubleshooting-alreadyexists"></a>
+A previous run that ended early can leave resources behind in your account. Because input files typically specify fixed resource names, later runs fail when the `create` handler is invoked. Delete the resources that the previous run created, and then run the command again. To make the suite repeatable, use unique resource names in your input files.
 
 ## How the CloudFormation CLI constructs and executes contract tests
 <a name="resource-type-test-how"></a>
@@ -343,7 +403,3 @@ Once you've written the input files, do the following to debug your handlers:
 1. Step through the code to debug any handler errors.
 
 For more information about testing using the AWS SAM CLI, see [Testing and Debugging Serverless Applications](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-test-and-debug.html) in the *AWS Serverless Application Model Developer Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudformation-cli` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

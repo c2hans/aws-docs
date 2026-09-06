@@ -21,7 +21,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
  Tagging in hybrid edge environments like Outposts and Local Zones operates similarly to cloud Regions, providing a consistent experience and familiar tools. Organizations can use existing tools and services to manage tagging strategies at scale across hybrid edge workloads, including implementing [automated tagging policies and remediation workflows](https://docs.aws.amazon.com/whitepapers/latest/cost-optimization-laying-the-foundation/tagging.html?ref=wellarchitected#enforce-quality-of-tagging) to comply with tagging standards.
 
  Tagging enables organizations to derive total cost of ownership associated with workloads. Tagging in hybrid edge (Outposts and Local Zones) operates similarly as in-Region. Once a tag is activated as a cost allocation tag, data appears in the [Cost and Usage Report (CUR)](https://aws.amazon.com/aws-cost-management/aws-cost-and-usage-reporting/) for analysis.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

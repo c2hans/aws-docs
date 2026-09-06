@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 # Build a worker-equivalent Amazon Linux 2023 Docker image for Deadline Cloud
 <a name="examples-container-al2023"></a>
 
-The [al2023-deadline](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/containers/al2023-deadline) Dockerfile replicates the package set of the Deadline Cloud service-managed fleet (SMF) worker AMI on top of the base Amazon Linux 2023 image. Use the image to:
+The [al2023-deadline](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/containers/al2023-deadline) Dockerfile on the GitHub website replicates the package set of the Deadline Cloud service-managed fleet (SMF) worker AMI on top of the base Amazon Linux 2023 image. Use the image to:
 + Build and test conda packages with the same GLIBC version, system libraries, and runtime environment as real workers.
 + Reproduce worker-side build or runtime failures locally.
 + Validate that your software dependencies are satisfied by the worker environment before submitting jobs.
@@ -27,7 +27,3 @@ docker run --rm -v "$PWD":/work -w /work al2023-deadline:latest \
 
 **Important**
 This image is a point-in-time snapshot. The actual SMF worker AMI may have newer or additional packages. For NVIDIA GPU support, add the NVIDIA Container Toolkit repository to the Dockerfile and run with `--gpus all`.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

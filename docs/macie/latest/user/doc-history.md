@@ -85,7 +85,3 @@ The following table describes the important changes to the documentation since t
 | [New content](#doc-history) | Added instructions for configuring Macie to [store detailed discovery results in an S3 bucket](https://docs.aws.amazon.com/macie/latest/user/discovery-results-repository-s3.html). | June 2, 2020 |
 | [New content](#doc-history) | Added information about the [types of sensitive data](https://docs.aws.amazon.com/macie/latest/user/managed-data-identifiers.html) that Macie can detect, and [encryption requirements](https://docs.aws.amazon.com/macie/latest/user/discovery-supported-encryption-types.html) for detecting sensitive data in Amazon S3 objects. | May 28, 2020 |
 | [General availability](#doc-history) | This is the initial public release of the *Amazon Macie User Guide*. | May 13, 2020 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

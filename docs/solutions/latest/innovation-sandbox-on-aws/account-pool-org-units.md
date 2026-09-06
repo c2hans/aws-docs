@@ -25,7 +25,3 @@ The following OUs are created when the solution is deployed:
 | Exit | Staging OU for accounts that have been ejected from the solution. |
 | Frozen | Sandbox accounts where the users access has been revoked, but administrators still have access in order to review resources within the account. |
 | Quarantine | Sandbox accounts that have failed the cleanup process because of an undeletable resource, were detected as solution state drift, or were manually quarantined by an administrator, and need remediation from an administrator. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

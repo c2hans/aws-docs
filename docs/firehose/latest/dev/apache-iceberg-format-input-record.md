@@ -21,7 +21,3 @@ If you want Firehose to insert data to a single Iceberg table, simply configure 
 ```
 
 In this example, Firehose routes all input records to `customer_id` table in `UserEvents` database. If you want to perform update or delete operations on a single table, then you must provide the operation for each incoming record to Firehose using either the [JSONQuery method](apache-iceberg-format-input-record-different.md#apache-iceberg-route-jq) or [Lambda method](apache-iceberg-format-input-record-different.md#apache-iceberg-route-lambda).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Data Firehose. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query firehose` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

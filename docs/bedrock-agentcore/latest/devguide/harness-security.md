@@ -716,7 +716,3 @@ The trailing `-*` on Secrets Manager resources accounts for the random suffix th
 +  [Environment and filesystem](harness-environment.md) - custom environments and ECR permissions
 +  [Control cost with limits](harness-operations.md#harness-limits) - execution limits to control cost
 +  [API Documentation](harness-get-started.md#api-documentation)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

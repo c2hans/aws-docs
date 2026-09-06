@@ -44,7 +44,3 @@ In the **Default VPC** column, look for a value of **Yes**. Take note of the ID 
 1. In the navigation pane, choose **Transit Gateway ID** for transit gateway that you created earlier.
 
 1. Under **Details**, choose **Association route table ID**. The **Association** tab shows the two VPC attachments, one from FinSpace infrastructure VPC and the other from your VPC.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

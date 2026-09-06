@@ -24,7 +24,3 @@ AWS Resource Access Manager (RAM) provides the following APIs for data retrieval
 | <a name="ram-ListResourceTypes"></a>[ListResourceTypes](https://docs.aws.amazon.com/ram/latest/APIReference/API_ListResourceTypes.html) | List the shareable resource types supported by AWS RAM | List |
 | <a name="ram-ListResources"></a>[ListResources](https://docs.aws.amazon.com/ram/latest/APIReference/API_ListResources.html) | List the resources that you added to resource shares or the resources that are shared with you | List |
 | <a name="ram-ListSourceAssociations"></a>[ListSourceAssociations](https://docs.aws.amazon.com/ram/latest/APIReference/API_ListSourceAssociations.html) | List source associations for resource shares | List |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

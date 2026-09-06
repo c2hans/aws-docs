@@ -58,7 +58,3 @@ This CT (ct-3r2ckznmt0a59) does not allow adding static routes to core route tab
 **Configuring your VPC Route tables to point at the AMS Multi-Account Landing Zone transit gateway**:
 
 Decide with your solutions architect what traffic you want to send to the AMS Multi-Account Landing Zone transit gateway. Update your VPC route tables to send traffic to TGW attachment created earlier
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

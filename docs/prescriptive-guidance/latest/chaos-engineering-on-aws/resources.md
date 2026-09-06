@@ -20,7 +20,3 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/chaos-engin
   + [Building resilient serverless applications using chaos engineering](https://aws.amazon.com/blogs/compute/building-resilient-serverless-applications-using-chaos-engineering/) (AWS blog post)
   + [Use FIS to interrupt a spot instance](https://ec2spotworkshops.com/karpenter/060_scaling/fis_experiment.html) (AWS workshop)
   + [Automating Chaos Engineering in Your Delivery Pipelines](https://community.aws/posts/chaos-engineering-pipeline) (AWS Community post)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

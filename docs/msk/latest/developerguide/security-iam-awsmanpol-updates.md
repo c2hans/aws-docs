@@ -16,7 +16,3 @@ View details about updates to AWS managed policies for Amazon MSK since this ser
 | [AmazonMSKFullAccess](security-iam-awsmanpol-AmazonMSKFullAccess.md) – Update to an existing policy | Amazon MSK added new Amazon EC2 permissions to make it possible to connect to a cluster. | November 30, 2021 |
 | [AmazonMSKFullAccess](security-iam-awsmanpol-AmazonMSKFullAccess.md) – Update to an existing policy | Amazon MSK added a new permission to allow it to describe Amazon EC2 route tables. | November 19, 2021 |
 | Amazon MSK started tracking changes | Amazon MSK started tracking changes for its AWS managed policies. | November 19, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Streaming for Apache Kafka. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query msk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

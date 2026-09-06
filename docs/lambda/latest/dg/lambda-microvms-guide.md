@@ -48,7 +48,3 @@ Lambda MicroVMs is a good fit for use cases that execute user or AI-generated co
 + **Lifecycle control** – Suspend, resume, and terminate MicroVMs programmatically or automatically through configurable idle policies. See [Running MicroVMs](microvms-launching.md).
 + **Flexible networking** – MicroVMs support inbound HTTPS traffic on configurable ports, with service-provided JWE authentication. Outbound access is configurable. Access the public internet or your VPC. For details, see the chapter on [Networking](microvms-networking.md).
 + **Flexible resource allocation** – Provision each MicroVM for baseline or average usage, with the flexibility to vertically scale to 4x of configured baseline during peak activity. Pay the baseline rate while your MicroVM is running and only pay for active use above the baseline.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -35,7 +35,3 @@ The following list contains some common issues that produce errors:
 + **Connector issues**
   + **Problem:** Because App Studio apps do not communicate with external services with connectors until they are published, errors can occur in the Testing environment that did not occur during preview. If an action in an automation that uses a connector fails, it could be from a misconfiguration in the action that sends the request to the connector, or with the connector configuration itself.
   + **Solution:** You should use **Mocked output** to test automations early in the preview environment to prevent these errors. Ensure your connector is configured correctly, for more information, see [Troubleshooting connectors](troubleshooting-connectors.md). Lastly, you can use CloudWatch to review the logs. For more information, see [Debugging with logs from published apps in Amazon CloudWatch Logs](troubleshooting-cloudwatch.md). In the `ConnectorService` namespace logs, there should be error message or metadata that originated from the connector.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

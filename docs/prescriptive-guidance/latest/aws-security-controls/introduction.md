@@ -21,7 +21,3 @@ There are four types of security controls: preventative, proactive, detective, a
 <a name="intended-audience"></a>
 
 This guide is intended for architects and security engineers who are responsible for implementing security controls in the AWS Cloud. If your company has not defined a security policy, control objectives, or standards, as described in [Security controls in the governance framework](sec-controls-gov-model.md), we recommend that you complete these governance tasks before proceeding with this guide.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

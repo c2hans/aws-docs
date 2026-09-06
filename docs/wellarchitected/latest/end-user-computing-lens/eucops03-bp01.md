@@ -17,7 +17,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
  Most organizations have personas that benefit from a deployment of or migration to a cloud-hosted EUC service. While the business problems being solved may be clear, such as cost reduction, increased agility and resilience, or global reach, it is also important to evaluate whether the AWS EUC services being deployed meet the requirements of each user persona.
 
  Create a matrix of user personas that captures each unique set of hardware and software requirements, accessibility options, and access requirements, highlighting where technology limitations may need to be considered to accommodate other benefits.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

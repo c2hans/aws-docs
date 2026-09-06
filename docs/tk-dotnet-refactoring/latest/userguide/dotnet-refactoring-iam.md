@@ -67,7 +67,3 @@ After you have created a user, you can configure your AWS named profile to apply
 1. After you configure the profile using the AWS CLI, Toolkit for .NET Refactoring will display the `default` profile under **AWS named profile** on the **Set up Toolkit for .NET Refactoring** page of the assessment tool.
 
 For more information about configuring the AWS CLI, see [Configuring the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html) in the *AWS CLI User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for NET Refactoring. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query tk-dotnet-refactoring` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

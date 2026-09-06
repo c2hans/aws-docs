@@ -19,7 +19,3 @@ After you create the alarm suppression Workload Change Request, you receive the 
 + Acknowledgement of your Workload Change Request.
 + Notification when alarms are suppressed.
 + Notification when alarms are re-enabled for monitoring.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Detection Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IDR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

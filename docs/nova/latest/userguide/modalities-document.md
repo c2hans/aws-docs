@@ -26,7 +26,3 @@ Supported file formats include common document types: plain text and structured 
 | Text-based document size | Each text document (e.g., .txt, .csv, .md, .html, .doc) must be ≤ 4.5 MB |
 | Media-based document size | For .pdf and .docx files, there is no individual file size limit, but:+  When using direct upload, the combined size of all media documents must be ≤ 25 MB <br />+  When using Amazon S3, the combined size of all media documents must be ≤ 2 GB  |
 | Unsupported PDF content | PDFs containing CMYK color profiles or SVG images are not supported |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

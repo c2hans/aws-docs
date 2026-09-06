@@ -18,7 +18,3 @@ When CloudTrail creates the log stream for the log group, it names the log strea
 If the volume of CloudTrail logs is large, multiple log streams may be created to deliver log data to your log group. When there are multiple log streams, CloudTrail names each log stream according to the following format: {{account\_ID}}\_CloudTrail\_{{trail\_region}}\_{{number}}.
 
 For more information about CloudWatch log groups, see [Working with log groups and log streams](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html) in the *Amazon CloudWatch Logs User Guide* and [CreateLogGroup](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateLogGroup.html) in the *Amazon CloudWatch Logs API Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

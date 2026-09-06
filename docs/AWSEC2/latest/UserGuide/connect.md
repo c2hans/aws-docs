@@ -33,7 +33,3 @@ For more information, see the documentation for the connection option that you i
 + [Connect using Session Manager](connect-with-systems-manager-session-manager.md)
 + [Connect using a public IP and EC2 Instance Connect](connect-linux-inst-eic.md)
 + [Connect using a private IP and EC2 Instance Connect Endpoint](connect-with-ec2-instance-connect-endpoint.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

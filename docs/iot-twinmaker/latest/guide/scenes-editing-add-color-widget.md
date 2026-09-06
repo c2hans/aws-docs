@@ -32,7 +32,3 @@ The following procedure shows you how to add a new visual rule group for the mes
 1. Define a new rule for your use case. For example, you can create one based on the data property 'temperature', where the reported value is less than 20. Use the following syntax for rule expressions: Less than is **<**, greater than is **>**, less than or equal is **<=**, greater than or equal is **>=**, and equal is **==**. (For more information, see the [Apache Commons JEXL syntax](https://commons.apache.org/proper/commons-jexl/reference/syntax.html).)
 
 1. Set the target to a color. To define a color, such as `#fcba03`, use hex values. (For more information about hex values, see [Hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal).)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT TwinMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-twinmaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

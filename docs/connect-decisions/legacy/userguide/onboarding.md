@@ -116,7 +116,3 @@ The time period displayed will depend on the time period you chose under **Time 
 **Note**
 You can also find the Amazon S3 path for the published demand plans on the **Settings** page. For more information, see [Manage Demand Plan settings](settings.md).
 Forecast is generated only when you ingest data into Supply Chain. Make sure that all the required and optional attributes that you chose have information in the dataset.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

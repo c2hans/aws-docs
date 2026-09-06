@@ -138,7 +138,3 @@ Before updating a canary with new dependencies, you can test them using the Star
 <a name="creating-compatible-layers"></a>
 
 For information on how to create and package layers, see [Managing Lambda dependencies with layers ](https://docs.aws.amazon.com/lambda/latest/dg/chapter-layers.html) and to understand the packaging structure of a canary check based on the canary packing structure, see [Writing a canary script](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries_WritingCanary.html).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

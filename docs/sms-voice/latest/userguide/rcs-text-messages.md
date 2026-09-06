@@ -93,7 +93,3 @@ Use `TextMessage` for:
 + Short status updates where the content does not require images or structured layouts.
 
 For messages that require images, videos, or structured layouts with titles and descriptions, use rich cards or carousels instead. See [Sending rich RCS messages](rcs-rich-messaging.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -115,7 +115,3 @@ In healthcare and life sciences, monitoring LLM fine-tuning requires tracking mu
 Calibration metrics help you make sure that the model's confidence levels match real-world probabilities. [Fairness metrics](https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-measure-data-bias.html) can help you detect potential biases across different patient demographics.
 
 [MLflow](https://docs.aws.amazon.com/sagemaker/latest/dg/mlflow.html) is an open source solution that can help you track fine-tuning experiments. MLflow is natively supported within Amazon SageMaker AI, which helps you to visually compare metrics from training runs. For fine-tuning jobs on Amazon Bedrock, metrics are streamed to Amazon CloudWatch so that you can visualize the metrics in the CloudWatch console.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

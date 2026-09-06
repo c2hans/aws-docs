@@ -23,7 +23,3 @@ When creating a new Cost Explorer report, only the Cost Explorer query is saved 
 
 **Note**
 You can save your Cost Explorer configuration and billing view selection as a favorite or bookmark in your browser. When you return to this saved link, Cost Explorer refreshes the page to display the cost management data from the billing view along with the saved configuration. This feature allows you to quickly access frequently used combinations of configurations and billings views, saving you time and effort.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

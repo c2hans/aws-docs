@@ -128,7 +128,3 @@ If you have no other workloads deployed to your cluster, the node created by EKS
 In the default configuration, EKS Auto Mode detects nodes that have been empty for thirty seconds, and terminates them.
 
 Use `kubectl` or the EC2 console to confirm the associated instance has been deleted.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

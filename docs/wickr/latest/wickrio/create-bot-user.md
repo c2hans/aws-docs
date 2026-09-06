@@ -30,7 +30,3 @@ Complete the following procedure to create a bot user.
    + **Display name** — The bot name that will be shown to end users.
    + **Password** — The password that you'll need to register and log in to the bot.
    + **Security group** — Controls permissions for the bot and how it's allowed to communicate.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

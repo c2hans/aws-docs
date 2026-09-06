@@ -24,7 +24,3 @@ The following table describes the documentation releases for Strategy Recommenda
 | New feature | [Added Azure DevOps Git repository support for source code analysis](https://docs.aws.amazon.com/migrationhub-strategy/latest/userguide/getting-started-collector-setup.html#cli-collector-setup-git-source-config). | January 28, 2022 |
 | New feature | [Added Babelfish recommendations for SQL databases](https://docs.aws.amazon.com/migrationhub-strategy/latest/userguide/what-is-mhub-strategy.html#related-services). | January 14, 2022 |
 | Initial release | Initial release of the Migration Hub Strategy Recommendations User Guide. | October 25, 2021 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Hub Strategy Recommendations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub-strategy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

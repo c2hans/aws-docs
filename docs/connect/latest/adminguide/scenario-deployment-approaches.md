@@ -180,7 +180,3 @@ If your agents use Azure Virtual Desktop (AVD) or Windows 365 Cloud PC, you can 
 Sometimes the VDI client does not have access to a local browser. In this scenario, you can create a single CCP instance with media run from the VDI server allowing access to enterprise resources. For this deployment model UDP audio is usually enabled on the VDI OS. This deployment model requires extensive testing to calibrate the different VDI server parameters to optimize quality of experience:
 
 ![VDI client without local browser access.](http://docs.aws.amazon.com/connect/latest/adminguide/images/architecture/vdinobrowser.png)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

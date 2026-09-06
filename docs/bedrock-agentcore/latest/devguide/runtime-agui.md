@@ -63,152 +63,82 @@ For complete examples and framework-specific implementations, see [AG-UI Quickst
 
 ### Prerequisites
 <a name="runtime-agui-prerequisites"></a>
-+ Python 3.12 or higher, or Node.js 18\+ for TypeScript, installed with a basic understanding of your chosen language
++ Python 3.12 or higher installed
++ Node.js 20 or higher installed for the AgentCore CLI
 + An AWS account with appropriate permissions and local credentials configured
 + Understanding of the AG-UI protocol and event-based agent-to-user communication concepts
 
 ### Step 1: Create your AG-UI server
 <a name="runtime-agui-create-server"></a>
 
-AG-UI is supported by multiple agent frameworks. Choose the framework that best fits your needs. AWS Strands provides first-party AG-UI integrations for both Python and TypeScript.
+AG-UI is supported by multiple agent frameworks. This tutorial uses AWS Strands for Python.
 
 #### Install required packages
 <a name="runtime-agui-install-packages"></a>
 
 Install packages for AWS Strands with AG-UI support:
 
-**Example**
-
-1.
-
-   ```
-   pip install fastapi
-   pip install uvicorn
-   pip install ag-ui-strands
-   ```
-
-1. Create a `package.json` first:
-
-   ```
-   {
-     "name": "my-agui-server",
-     "type": "module",
-     "scripts": {
-       "build": "tsc"
-     },
-     "dependencies": {
-       "@ag-ui/aws-strands": "^0.1.0",
-       "@strands-agents/sdk": "^1.1.0"
-     },
-     "devDependencies": {
-       "@types/express": "^5.0.0",
-       "@types/node": "^22.0.0",
-       "tsx": "^4.0.0",
-       "typescript": "^5.0.0"
-     }
-   }
-   ```
-
-   Then install dependencies:
-
-   ```
-   npm install
-   ```
+```
+pip install fastapi
+pip install uvicorn
+pip install ag-ui-strands
+```
 
 For other frameworks, see the [AG-UI framework integrations](https://docs.ag-ui.com/introduction#supported-integrations).
 
 #### Create your first AG-UI server
 <a name="runtime-agui-create-first-server"></a>
 
-Create your AG-UI server file in the language of your choice. Both examples below produce a server that listens on port `8080` , exposes `/invocations` for AG-UI traffic, and `/ping` for health checks — the contract that AgentCore Runtime expects from AG-UI containers.
+Create a file named `my_agui_server.py`. This example uses AWS Strands with AG-UI. The server listens on port `8080`, exposes `/invocations` for AG-UI traffic, and exposes `/ping` for health checks. AgentCore Runtime requires this contract for AG-UI containers.
 
-**Example**
+```
+# my_agui_server.py
+import uvicorn
+from fastapi import FastAPI, Request
+from fastapi.responses import StreamingResponse, JSONResponse
+from ag_ui_strands import StrandsAgent
+from ag_ui.core import RunAgentInput
+from ag_ui.encoder import EventEncoder
+from strands import Agent
 
-1. Create a new file called `my_agui_server.py` . This example uses AWS Strands with AG-UI:
+# Create a simple Strands agent
+strands_agent = Agent(
+    system_prompt="You are a helpful assistant.",
+)
 
-   ```
-   # my_agui_server.py
-   import uvicorn
-   from fastapi import FastAPI, Request
-   from fastapi.responses import StreamingResponse, JSONResponse
-   from ag_ui_strands import StrandsAgent
-   from ag_ui.core import RunAgentInput
-   from ag_ui.encoder import EventEncoder
-   from strands import Agent
+# Wrap with AG-UI protocol support
+agui_agent = StrandsAgent(
+    agent=strands_agent,
+    name="my_agent",
+    description="A helpful assistant",
+)
 
-   # Create a simple Strands agent
-   strands_agent = Agent(
-       system_prompt="You are a helpful assistant.",
-   )
+# FastAPI server
+app = FastAPI()
 
-   # Wrap with AG-UI protocol support
-   agui_agent = StrandsAgent(
-       agent=strands_agent,
-       name="my_agent",
-       description="A helpful assistant",
-   )
+@app.post("/invocations")
+async def invocations(input_data: dict, request: Request):
+    """Main AG-UI endpoint that returns event streams."""
+    accept_header = request.headers.get("accept")
+    encoder = EventEncoder(accept=accept_header)
 
-   # FastAPI server
-   app = FastAPI()
+    async def event_generator():
+        run_input = RunAgentInput(**input_data)
+        async for event in agui_agent.run(run_input):
+            yield encoder.encode(event)
 
-   @app.post("/invocations")
-   async def invocations(input_data: dict, request: Request):
-       """Main AG-UI endpoint that returns event streams."""
-       accept_header = request.headers.get("accept")
-       encoder = EventEncoder(accept=accept_header)
+    return StreamingResponse(
+        event_generator(),
+        media_type=encoder.get_content_type()
+    )
 
-       async def event_generator():
-           run_input = RunAgentInput(**input_data)
-           async for event in agui_agent.run(run_input):
-               yield encoder.encode(event)
+@app.get("/ping")
+async def ping():
+    return JSONResponse({"status": "Healthy"})
 
-       return StreamingResponse(
-           event_generator(),
-           media_type=encoder.get_content_type()
-       )
-
-   @app.get("/ping")
-   async def ping():
-       return JSONResponse({"status": "Healthy"})
-
-   if __name__ == "__main__":
-       uvicorn.run(app, host="0.0.0.0", port=8080)
-   ```
-
-1. Create a new file called `my-agui-server.ts` . This example uses AWS Strands with AG-UI:
-
-   ```
-   // my-agui-server.ts
-   import { Agent } from "@strands-agents/sdk";
-   import { StrandsAgent } from "@ag-ui/aws-strands";
-   import { createStrandsApp } from "@ag-ui/aws-strands/server";
-
-   async function main(): Promise<void> {
-     // Create a simple Strands agent
-     const strandsAgent = new Agent({
-       systemPrompt: "You are a helpful assistant.",
-     });
-
-     // Wrap with AG-UI protocol support
-     const aguiAgent = new StrandsAgent({
-       agent: strandsAgent,
-       name: "my_agent",
-       description: "A helpful assistant",
-     });
-
-     // Express app exposing the AgentCore-required paths on port 8080
-     const app = await createStrandsApp(aguiAgent, {
-       path: "/invocations",
-       pingPath: "/ping",
-     });
-
-     app.listen(8080, () => {
-       console.log("AG-UI server running on port 8080");
-     });
-   }
-
-   void main();
-   ```
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8080)
+```
 
 For complete, framework-specific examples, see:
 +  [LangGraph \+ AG-UI](https://docs.copilotkit.ai/langgraph/)
@@ -237,19 +167,9 @@ Run and test your AG-UI server in a local development environment.
 
 Run your AG-UI server locally:
 
-**Example**
-
-1.
-
-   ```
-   python my_agui_server.py
-   ```
-
-1.
-
-   ```
-   npx tsx my-agui-server.ts
-   ```
+```
+python my_agui_server.py
+```
 
 You should see output indicating the server is running on port `8080`.
 
@@ -277,90 +197,72 @@ You should see AG-UI event streams returned in SSE format, including `RUN_STARTE
 ### Step 3: Deploy your AG-UI server to Bedrock AgentCore Runtime
 <a name="runtime-agui-deploy"></a>
 
-Deploy your AG-UI server to AWS using the Amazon Bedrock AgentCore starter toolkit.
+Deploy your AG-UI server to AWS using the AgentCore CLI.
 
 #### Install deployment tools
 <a name="runtime-agui-install-deployment-tools"></a>
 
-Install the Amazon Bedrock AgentCore starter toolkit:
+Install the AgentCore CLI:
 
 ```
-pip install bedrock-agentcore-starter-toolkit
+npm install -g @aws/agentcore
 ```
 
 Start by creating a project folder with the following structure:
 
-**Example**
+```
+## Project Folder Structure
+your_project_directory/
+├── my_agui_server.py          # Your main agent code
+├── requirements.txt           # Dependencies for your agent
+```
 
-1.
+Create a new file called `requirements.txt` with your dependencies:
 
-   ```
-   ## Project Folder Structure
-   your_project_directory/
-   ├── my_agui_server.py          # Your main agent code
-   ├── requirements.txt           # Dependencies for your agent
-   ```
-
-   Create a new file called `requirements.txt` with your dependencies:
-
-   ```
-   fastapi
-   uvicorn
-   ag-ui-strands
-   ```
-
-1.
-
-   ```
-   ## Project Folder Structure
-   your_project_directory/
-   ├── my-agui-server.ts          # Your main agent code
-   ├── package.json               # Dependencies for your agent
-   └── tsconfig.json              # TypeScript compiler configuration
-   ```
-
-   Create a `tsconfig.json` :
-
-   ```
-   {
-     "compilerOptions": {
-       "target": "ES2022",
-       "lib": ["ES2022", "DOM"],
-       "module": "NodeNext",
-       "moduleResolution": "NodeNext",
-       "outDir": "./dist",
-       "strict": true,
-       "esModuleInterop": true
-     },
-     "include": ["*.ts"]
-   }
-   ```
+```
+fastapi
+uvicorn
+ag-ui-strands
+```
 
 #### Set up Cognito user pool for authentication
 <a name="runtime-agui-setup-cognito"></a>
 
 Configure authentication for secure access to your deployed server. For detailed Cognito setup instructions, see [Set up Cognito user pool for authentication](#runtime-agui-appendix-a) . This provides the OAuth tokens required for secure access to your deployed server.
 
+After you complete the Cognito setup, export the values that the deployment command uses:
+
+```
+export REGION="<your-region>"
+export POOL_ID="<your-user-pool-id>"
+export CLIENT_ID="<your-app-client-id>"
+```
+
 #### Configure your AG-UI server for deployment
 <a name="runtime-agui-configure-deployment"></a>
 
-After setting up authentication, create the deployment configuration. Pass the entrypoint that matches the language you used:
+Create an empty AgentCore project. Then register the server that you created in [Create your first AG-UI server](#runtime-agui-create-first-server) as a BYO agent with the Cognito configuration from the previous step:
 
-**Example**
+```
+agentcore create --project-name AguiProject --no-agent
+cd AguiProject
+agentcore add agent \
+  --name AguiAgent \
+  --type byo \
+  --language Python \
+  --framework Strands \
+  --model-provider Bedrock \
+  --memory none \
+  --code-location .. \
+  --entrypoint my_agui_server.py \
+  --protocol AGUI \
+  --authorizer-type CUSTOM_JWT \
+  --discovery-url "https://cognito-idp.$REGION.amazonaws.com/$POOL_ID/.well-known/openid-configuration" \
+  --allowed-clients "$CLIENT_ID" \
+  --request-header-allowlist Authorization
+```
 
-1.
-
-   ```
-   agentcore configure -e my_agui_server.py --protocol AGUI
-   ```
-
-1.
-
-   ```
-   agentcore configure -e my-agui-server.ts --protocol AGUI
-   ```
-+ Select protocol as AGUI
-+ Configure with OAuth configuration as setup in the previous step
+The commands register the existing implementation with the AG-UI protocol and the Cognito OAuth configuration from the previous step.
 
 #### Deploy to AWS
 <a name="runtime-agui-deploy-aws"></a>
@@ -528,7 +430,3 @@ Make sure your request uses the same authentication method (OAuth or SigV4) that
 
 Event format errors
 Ensure your events follow the AG-UI protocol specification. See [AG-UI Events Documentation](https://docs.ag-ui.com/concepts/events)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

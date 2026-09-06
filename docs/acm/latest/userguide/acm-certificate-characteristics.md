@@ -89,7 +89,3 @@ ACM certificates are valid for 198 days.
 ACM allows an asterisk (\*) in the domain name to create a wildcard certificate protecting multiple sites in the same domain. For example, `*.example.com` protects `www.example.com` and `images.example.com`.
 In a wildcard certificate, the asterisk (`*`) must be leftmost in the domain name and protects only one subdomain level. For instance, `*.example.com` protects `login.example.com` and `test.example.com`, but not `test.login.example.com`. Also, `*.example.com` protects *only* subdomains, not the bare or apex domain (`example.com`). You can request a certificate for both a bare domain and its subdomains by specifying multiple domain names, such as `example.com` and `*.example.com`.
 If you use CloudFront, note that HTTP validation does not support wildcard certificates. For wildcard certificates, you must use either DNS validation or email validation. We recommend DNS validation because it supports automatic certificate renewal.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certificate Manager (ACM). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query acm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

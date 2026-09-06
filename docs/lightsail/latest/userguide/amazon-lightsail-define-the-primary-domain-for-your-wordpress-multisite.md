@@ -85,7 +85,3 @@ After running that command, enter the following command to keep the bnconfig too
 Complete the next steps after you have defined the primary domain for your WordPress Multisite instance:
 + [Add blogs as subdomains to your WordPress Multisite instance](amazon-lightsail-add-blogs-as-subdomains-to-your-wordpress-multisite.md)
 + [Add blogs as domains to your WordPress Multisite instance](amazon-lightsail-add-blogs-as-domains-to-your-wordpress-multisite.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -94,7 +94,3 @@ After you associate the key value store with your function, you can test and pub
    When you publish, CloudFront copies the version of the function from the `DEVELOPMENT` stage over to the live stage. The function has the new code and is associated with the key value store. (There is no need to perform the association again, in the live stage.)
 
    For information about how to publish the function, see [Publish functions](publish-function.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

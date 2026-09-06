@@ -21,7 +21,3 @@ This is not a complete list of active resources on your domain. For all active S
 1. Once the resources are selected, a shutdown option will become available at the top of the resource type section. Choose the option and follow the instructions to shut down the selected resources.
 
 For instructions on how to delete your resources per SageMaker AI feature, see [Where to shut down resources per SageMaker AI features](sm-shut-down-resources-per-feature.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

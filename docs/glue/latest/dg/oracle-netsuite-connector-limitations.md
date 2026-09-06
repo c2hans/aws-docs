@@ -15,7 +15,3 @@ The following are limitations or notes for the Oracle NetSuite connector:
   + Applying the `LESS_THAN_OR_EQUAL_TO` filter operator to fields of type Date gives unreliable results and behaves similar to the `LESS_THAN` operator.
   + Applying the `GREATER_THAN` filter operator to fields of type Date= gives unreliable results and behaves similar to `GREATER_THAN_OR_EQUAL_TO` operator.
 + For Item, Transaction Line, Transaction Accounting Line, and Custom Record Type objects, boolean values come in the format T/F instead of the standard true/false. The connector maps the t/f values to true/false to ensure consistency in data.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,7 +19,3 @@ Consider the following:
 + In order to enable this feature, your Outposts must have enough compute capacity to deploy the local resolver in the form of at least 4 EC2 instances of any c5.xlarge, m5.large or m5.xlarge.
 + If you are using private DNS, you must share the Private Hosted Zone with the required Outposts VPCs’ in order to cache the records locally in the Route 53 Resolver on Outposts.
 + In order to enable integration with on-premises DNS with Inbound and Outbound endpoints, your Outposts must have enough compute capacity to deploy two EC2 instances per Route53 endpoint.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

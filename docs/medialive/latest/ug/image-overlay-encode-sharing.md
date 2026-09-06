@@ -16,7 +16,3 @@ Video encode sharing isn't compatible with per-output image insertion. To undo s
 1. If you plan different images for these outputs, you must stop sharing them:
    + Stop sharing the video encode in one of the outputs, for example in output group A. For instructions, see [To stop sharing an encode](create-video-share.md#create-video-stop-sharing). The video encode is now used only in output group B.
    + In output group B, clone the video encode that was previously shared. Keep in mind that cloning isn't the same as sharing. For more information, see [Creating a video encode by cloning](create-video-clone.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

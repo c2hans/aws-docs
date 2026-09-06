@@ -30,7 +30,3 @@ This topic explains how to investigate device problems:
     If so, to find the problematic application, remove the recently installed applications one at a time until the issue is resolved.
 + To investigate issues with your custom Contact Control Panel (CCP), do the following:
   + If you are using a custom CCP (not the default CCP), does the issue reproduce on a default CCP?
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

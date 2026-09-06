@@ -84,7 +84,3 @@ If you're looking for the CIS hardening component, select `Third party managed`,
 A recipe that includes one or more AWS Marketplace components must also include at least one build component. Image Builder returns an error if you create a recipe that references AWS Marketplace components but has no build component. Container recipes don't support AWS Marketplace components. For more information, see [Container recipe constraints](create-container-recipes.md#container-recipe-constraints).
 
 For more information about how to select, arrange, and configure parameters for your components, see [Create a new version of an image recipe](create-image-recipes.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

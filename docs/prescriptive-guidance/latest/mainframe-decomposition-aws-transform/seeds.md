@@ -26,7 +26,3 @@ Mainframe applications use naming standards to maintain the consistency, readabi
 | CICS transactions | CICS system definition (CSD) files for online applications. You can use CSD files to group modules based on transaction group definitions. | 1-4 characters | In the following definitions, two transactions (`CAUP`, `CAVW`) and one online CICS program (`COACTVWC`) are included in the `ACCTMGNT` (account management) group:<pre>DEFINE TRANSACTION(CAUP) GROUP(ACCTMGNT)<br />DEFINE PROGRAM(COACTVWC) GROUP(ACCTMGNT)<br />DEFINE TRANSACTION(CAVW) GROUP(ACCTMGNT)</pre> |
 
 Other decomposition grouping options include file names (datasets) and copybook file members, if these components follow meaningful naming standards.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

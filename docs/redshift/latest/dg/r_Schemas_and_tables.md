@@ -28,7 +28,3 @@ If an object is created without specifying a target schema, the object is added 
 To change the default schema for the current session, use the [SET](r_SET.md) command.
 
 For more information, see the [search\_path](r_search_path.md) description in the Configuration Reference.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -224,7 +224,3 @@ The key benefits of using billing transfer are:
 + **Separate billing and administration**: The management account that accepted the invitation maintains complete administration over its organization, while its consolidated bill is managed and paid for by the *bill-transfer account*.
 + **Pricing privacy**: After a transfer starts, the *bill-transfer account* manages the pricing seen by the *bill-source account* using [AWS Billing Conductor](https://docs.aws.amazon.com/aws-cost-management/aws-billing-conductor/).
 + **Centralized billing management**: The consolidated bills of multiple organizations can be managed and paid for from a single *bill-transfer account*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

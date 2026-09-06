@@ -14,7 +14,3 @@ The following table describes updates to the KafkaServiceRolePolicy managed poli
 |  [IPv6 connectivity support added to KafkaServiceRolePolicy](#security-iam-awsmanpol-KafkaServiceRolePolicy) – Update to an existing policy  | Amazon MSK added permissions to KafkaServiceRolePolicy to enable IPv6 connectivity for MSK clusters. These permissions allow Amazon MSK to assign and unassign IPv6 addresses to network interfaces and modify network interface attributes in customer account. | November 17, 2025 |
 |  [KafkaServiceRolePolicy](#security-iam-awsmanpol-KafkaServiceRolePolicy) – Update to an existing policy  | Amazon MSK added permissions to support multi-VPC private connectivity. | March 8, 2023 |
 | Amazon MSK started tracking changes | Amazon MSK started tracking changes for KafkaServiceRolePolicy managed policy. | March 8, 2023 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Streaming for Apache Kafka. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query msk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

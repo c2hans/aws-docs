@@ -29,7 +29,3 @@ For a database migration, you must do the following:
 These walkthroughs provide an example of using the AMS console or AMS CLI to create an AWS Database Migration Service (AWS DMS). CLI commands for creating the AWS DMS replication instance, subnet group, and task as well as an AWS DMS source endpoint and target endpoint are provided.
 
 To learn more about AMS AWS DMS, see [AWS Database Migration Service](https://aws.amazon.com/dms/) for general information and [AWS Database Migration Service FAQs](https://aws.amazon.com/dms/faqs/) for answers to common questions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

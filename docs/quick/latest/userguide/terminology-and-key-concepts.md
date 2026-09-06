@@ -42,7 +42,3 @@ User input
 <a name="editor-and-run-mode"></a>
 
 Editor mode is where you build your flow. You see all the steps laid out and can select each one to change its configuration. Run mode is where you test and execute your flow, with a chat panel where you can ask follow-up questions or refine the output.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

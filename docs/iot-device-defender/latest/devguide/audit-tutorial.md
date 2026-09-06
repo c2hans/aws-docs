@@ -172,7 +172,7 @@ The [`AWSIoTDeviceDefenderAudit`](https://docs.aws.amazon.com/aws-managed-policy
 
 1. In the **Permissions** tab, choose **Add permissions**, and then choose **Create inline policy**.
 
-1. Choose the **JSON** tab and enter the following policy. Replace {{REGION}}, {{ACCOUNT\_ID}}, and {{KEY\_ID}} with your AWS KMS key details:
+1. Choose the **JSON** tab and enter the following policy. Replace the example {{us-east-1}} Region, {{111122223333}} account ID, and {{KEY\_ID}} with your AWS KMS key details:
 
    ```
    {
@@ -183,7 +183,7 @@ The [`AWSIoTDeviceDefenderAudit`](https://docs.aws.amazon.com/aws-managed-policy
          "Action": [
            "kms:Decrypt"
          ],
-         "Resource": "arn:aws:kms:{{REGION}}:{{ACCOUNT_ID}}:key/{{KEY_ID}}"
+         "Resource": "arn:aws:kms:{{us-east-1}}:{{111122223333}}:key/{{KEY_ID}}"
        }
      ]
    }
@@ -211,7 +211,3 @@ This procedure describes how to enable AWS IoT to log information to CloudWatch 
 1. For **Log level**, choose **Debug (most verbosity)**.
 
 1. Choose **Update**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Device Defender. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-device-defender` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

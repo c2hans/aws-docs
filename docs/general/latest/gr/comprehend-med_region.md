@@ -71,7 +71,3 @@ The following are the service endpoints and service quotas for this service.
 | Transactions per second (TPS) for the StopPHIDetectionJob operation | Each supported Region: 5 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/comprehendmedical/quotas/L-A599138D)  | The maximum transactions per second (TPS) for the StopPHIDetectionJob operation. |
 | Transactions per second (TPS) for the StopRxNormInferenceJob operation | Each supported Region: 5 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/comprehendmedical/quotas/L-6E23E26F)  | The maximum transactions per second (TPS) for the StopRxNormInferenceJob operation. |
 | Transactions per second (TPS) for the StopSNOMEDCTInferenceJob operation | Each supported Region: 5 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/comprehendmedical/quotas/L-3645AB89)  | The maximum transactions per second (TPS) for the StopSNOMEDCTInferenceJob operation. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

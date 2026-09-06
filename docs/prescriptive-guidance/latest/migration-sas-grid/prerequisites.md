@@ -39,7 +39,3 @@ A solid understanding of the SAS system and the components of SAS infrastructure
 + High availability, disaster recovery, and backup and restoration are as important in SAS software cloud deployments as they are in SAS software on-premises deployments.
 + Local laws and privacy regulations might affect the data you store in the cloud. For example, certain geographies might restrict the storage and processing of data in a cloud location out of country or state.
 + The cost of a cloud infrastructure is a core consideration.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

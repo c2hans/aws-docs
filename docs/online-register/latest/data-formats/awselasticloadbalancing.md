@@ -15,7 +15,3 @@ AWS Elastic Load Balancing provides the following APIs for data retrieval.
 | <a name="elasticloadbalancing-DescribeLoadBalancerPolicyTypes"></a>[DescribeLoadBalancerPolicyTypes](https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_DescribeLoadBalancerPolicyTypes.html) | Describe the specified load balancer policy types | Read |
 | <a name="elasticloadbalancing-DescribeLoadBalancers"></a>[DescribeLoadBalancers](https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_DescribeLoadBalancers.html) | Describe the specified the load balancers. If no load balancers are specified, the call describes all of your load balancers | List |
 | <a name="elasticloadbalancing-DescribeTags"></a>[DescribeTags](https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_DescribeTags.html) | Describe the tags associated with the specified load balancers | Read |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

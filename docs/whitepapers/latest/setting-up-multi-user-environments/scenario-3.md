@@ -17,7 +17,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/setting-up-multi-user
  Users can log in to the AWS Management Console to launch and access different AWS services, subject to the access control policy applied to their account. Students don’t see resources provisioned by other students, because each account is isolated from each other.
 
  A key advantage of this scenario is that students can keep their accounts after the completion of the course. Each account can be set up as a standalone account, outside the AWS Organization. If the students have used AWS resources as part of a startup course, they can continue to use what they have built on AWS after the class, semester, or course is over.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

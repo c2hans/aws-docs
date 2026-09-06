@@ -82,6 +82,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   GetAccountSettings  **
+  - **IAM action:**  [evs:GetAccountSettings](#list_evs-action-GetAccountSettings)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   GetDepotUrl  **
   - **IAM action:**  [evs:GetDepotUrl](#list_evs-action-GetDepotUrl)
   - **Condition key:**
@@ -135,6 +141,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
+
+- **   PutAccountSettings  **
+  - **IAM action:**  [evs:PutAccountSettings](#list_evs-action-PutAccountSettings)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
 
 - **   TagResource  **
   - **IAM action:**  [evs:TagResource](#list_evs-action-TagResource)
@@ -219,6 +231,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_evs-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [GetAccountSettings](https://docs.aws.amazon.com/evs/latest/APIReference/API_GetAccountSettings.html)  **
+  - **Description:** Grants permission to get EVS account settings
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Read
+
 - **   [GetDepotUrl](https://docs.aws.amazon.com/evs/latest/APIReference/API_GetDepotUrl.html)  **
   - **Description:** Grants permission to get an Amazon EVS environment depot url
   - **Resource types (\*required):** [environment\*](#list_evs-resource-environment)
@@ -273,6 +291,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_evs-aws_ResourceTag___TagKey_)
   - **Access level:** List
 
+- **   [PutAccountSettings](https://docs.aws.amazon.com/evs/latest/APIReference/API_PutAccountSettings.html)  **
+  - **Description:** Grants permission to get EVS account settings
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Write
+
 - **   [TagResource](https://docs.aws.amazon.com/evs/latest/APIReference/API_TagResource.html)  **
   - **Description:** Grants permission to tag a specified resource ARN
   - **Resource types (\*required):** [environment\*](#list_evs-resource-environment)
@@ -310,7 +334,3 @@ Amazon Elastic VMware Service defines the following condition keys that can be u
 |   [aws:RequestTag/${TagKey}](https://docs.aws.amazon.com/evs/latest/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies)  | Filters access by a tag key and value pair that is allowed in the request | String |
 |   [aws:ResourceTag/${TagKey}](https://docs.aws.amazon.com/evs/latest/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies)  | Filters access by a tag key and value pair of a resource | String |
 |   [aws:TagKeys](https://docs.aws.amazon.com/evs/latest/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies)  | Filters access by a list of tag keys that are allowed in the request | ArrayOfString |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

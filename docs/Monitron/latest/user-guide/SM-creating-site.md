@@ -42,7 +42,3 @@ To add a site to a project, you must be a project-level admin user. You can crea
 ![Mobile app interface showing project name dropdown with site options and management features.](http://docs.aws.amazon.com/Monitron/latest/user-guide/images/webapp_add-site.png)
 
 The project-level admin user who creates a site is automatically a site-level admin user for that site. To learn more about adding users, see [Adding a user](adding-user.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

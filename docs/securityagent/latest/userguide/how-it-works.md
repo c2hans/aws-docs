@@ -91,7 +91,3 @@ AWS Security Agent integrates directly with GitHub to provide automated security
  **Automatic remediation** - When users enable automatic code remediation for a code review, AWS Security Agent generates fixes for identified vulnerabilities and submits pull requests to the associated GitHub repositories.
 
  **Penetration test remediation** - When administrators enable finding remediation in the Console, users can request automatic remediation for penetration test findings from the web application. AWS Security Agent opens a pull request to the associated GitHub repository with code fixes to address the vulnerability.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

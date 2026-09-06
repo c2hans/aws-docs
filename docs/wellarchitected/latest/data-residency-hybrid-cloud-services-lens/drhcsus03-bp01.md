@@ -17,7 +17,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 <a name="implementation-guidance-56"></a>
 
  Monitor and capture workload metrics such as CPU utilization, memory utilization, network connections, and network throughput using [Amazon CloudWatch metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/working_with_metrics.html) to identify workloads or components that are no longer used or are under-utilized. Routinely review the recommendations made by [AWS Compute Optimizer](https://aws.amazon.com/compute-optimizer/) to identify instances that have been over-provisioned, and adjust as necessary to match instance type and size to the workload requirements. With AWS Local Zones, it is possible to maximize sustainability by using the large variety of Amazon EC2 instances to match resource consumption to workload requirements.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -37,7 +37,3 @@ When making CloudTrail Lake data available for export into CloudWatch, consider 
 + **Data retention** - Ensure that your CloudTrail Lake event data store retention period covers the historical data you want to export
 + **Regional availability** - Check the CloudWatch documentation for supported AWS regions for this feature
 + **Event data store access** - You must have access to the Event Data Store from which data will be exported.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

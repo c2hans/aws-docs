@@ -20,7 +20,3 @@ This solution sends operational metrics to AWS (the "Data") about the use of thi
 The Spatial Data Management on AWS solution is licensed under the terms of the [AWS Customer Agreement](https://aws.amazon.com/agreement/) and the [AWS Intellectual Property License](https://aws.amazon.com/legal/aws-ip-license-terms/).
 
 © 2025, Amazon Web Services, Inc. or its affiliates. All rights reserved.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Spatial Data Management on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

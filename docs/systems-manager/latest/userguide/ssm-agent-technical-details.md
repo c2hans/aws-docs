@@ -357,7 +357,3 @@ To recover from hibernation, address the underlying cause:
 + **For connectivity issues**: Verify network connectivity and make sure the required endpoints are accessible. For more information, see [Troubleshooting managed node availability using `ssm-cli`](troubleshooting-managed-nodes-using-ssm-cli.md).
 
 After you resolve the underlying issue, the agent should automatically exit hibernation mode and resume normal operation at the next communication attempt.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

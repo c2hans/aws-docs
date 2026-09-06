@@ -82,46 +82,17 @@ Before you create an export job, you must create the destination S3 bucket to ex
 ## Export parameters
 <a name="export-parameters"></a>
 
-The exported file can include multiple parameters, including:
+The exported file includes the same parameters as the imported file. For the full list of parameters and their descriptions, see [Import parameters](import-parameters.md).
+
+In addition, the exported file includes the following view-only parameters. These parameters are exported for informational purposes only, and are ignored if they are present in an imported file:
 
 |  |  |
 | --- |--- |
 | Parameter | Description |
-| **mgn:account-id** | The ID of the account being exported. |
-| **mgn:app:description** | The description of the application being exported. |
-| **mgn:app:id** | The ID of the application being exported. |
-| **mgn:app:name** | The name of the application being exported. |
-| **mgn:app:tag:appkey1** | The value of the application tag key (in this example, the tag key is appkey1). |
-| **mgn:launch:iam-instance-profile:name** | The name of the instance profile associated with the launch instance. |
-| **mgn:launch:instance-type** | The EC2 instance type of the launch instance (for example, m4.large). |
-| **mgn:launch:nic:0:network-interface-id** | The ID of the network interface that appears first in the launch template ("0" refers to the first network interface, "1" would refer to the second network interface, and so on). |
-| **mgn:launch:nic:0:private-ip:0** | The private IP that appears first in the network interface that appears first in the launch template. |
-| **mgn:launch:nic:0:security-group-id:0** | The security group that appears first in the network interface that appears first in the launch template. |
-| **mgn:launch:nic:0:subnet-id** | The subnet ID that appears first in the network interface that appears first in the launch template. |
-| **mgn:launch:placement:host-id** | The host ID of the placement of the launch instance. |
-| mgn:launch:placement:operating-system-licensing | The operating system licensing approach, LI, (license Included) or BYOL (bring your own license). |
-| **mgn:launch:placement:tenancy** | The tenancy of the launch instance. Expected values: default, dedicated, or host. |
-| **mgn:launch:tag:instance:key1** | The value of launch instance tag "key1" (in this example, the tag key is key1). |
-| **mgn:launch:volume:/dev/sda:type** | The type of the launch instance's volume whose name is /dev/sda (in this example, the volume's name is /dev/sda). |
-| **mgn:region** | The AWS Region to which you are importing, which must be the Region of your MGN console. If left blank, defaults to the console Region. |
-| **mgn:server:fqdn-for-action-framework** | The FQDN that the MGN connector uses to connect to the server. |
-| **mgn:server:id** | The server ID. |
 | **mgn:server:lifecycle-state** | The server's lifecycle state. |
-| **mgn:server:platform** | The server's platform (Linux or Windows). |
-| **mgn:server:replication-type** | The type of the replication (agent-based or agentless). |
 | **mgn:server:replication-state** | The state of the replication. |
-| **mgn:server:tag:serverkey1** | The value of the server tag key (in this example, the tag key is serverkey1). |
-| **mgn:server:user-provided-id** | The server's user-provided ID. This parameter is used by MGN to consistently recognize the server replication, and avoid duplication when importing inventory from a CSV file. This parameter should be provided during the AWS replication agent installation by the MGN connector or other installation method. This attribute can be edited via the edit server option. |
-| **mgn:wave:description** | The description of the exported wave. |
-| **mgn:wave:id** | The ID of the exported wave. |
-| **mgn:wave:name** | The name of the exported wave. |
-| **mgn:wave:tag:appkey1** | The value of the wave tag key (in this example, the tag key is appkey1). |
-| **mgn:launch:transfer-server-tags** | The option to transfer any user-configured custom tags from your source servers onto your test or cutover instance. |
+| **mgn:server:replication-type** | The type of the replication (agent-based or agentless). |
 
 **Note**
 If the bucket you're exporting to is encrypted with customer managed keys (KMS), that KMS key's policies must give MGN permission to use it. This permission is given through the user or role that initiates the export job.
 If you choose to encrypt your export using a key protected by AWS Key Management Service (AWS KMS), the key must be in the same Region as the destination S3 bucket.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

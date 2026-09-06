@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/about-endpo
 # Transition endpoints with client IP address preservation
 <a name="about-endpoints.sipp"></a>
 
-If you haven't yet configured client IP address preservation for the endpoints in your accelerator, follow the guidance in this section add and transition one or more endpoints to endpoints that preserve the user’s client IP address. You can choose to transition an Application Load Balancer, Network Load Balancer with security groups, or an Elastic IP address endpoint to a corresponding endpoint—a corresponding load balancer endpoint or an EC2 instance endpoint—that has client IP address preservation.
+If you haven't yet configured client IP address preservation for the endpoints in your accelerator, follow the guidance in this section to add and transition one or more endpoints to endpoints that preserve the user’s client IP address. You can choose to transition an Application Load Balancer, Network Load Balancer with security groups, or an Elastic IP address endpoint to a corresponding endpoint—a corresponding load balancer endpoint or an EC2 instance endpoint—that has client IP address preservation.
 
 This section explains how to add and transition endpoints by using the AWS Global Accelerator console. If you want to use API operations with Global Accelerator, see the [AWS Global Accelerator API Reference](https://docs.aws.amazon.com/global-accelerator/latest/api/Welcome.html).
 
@@ -52,14 +52,14 @@ Next, follow the steps here to edit the corresponding existing endpoints (that y
 
 1. Choose **Edit**.
 
-1. On the **Edit endpoint** page, in the **Weight** field, enter a lower number than the current number. For example, if the weight for an existing endpoint is 255, you could enter a weight of 220 for the new endpoint (with client IP address preservation).
+1. On the **Edit endpoint** page, in the **Weight** field, enter a lower number than the current number. For example, if the weight for an existing endpoint is 255, you could enter a weight of 220 for the existing endpoint (without client IP address preservation).
 
 1. Choose **Save changes**.
 
 After you’ve tested with a small portion of the original traffic by setting the weight for the new endpoint to a low number, you can slowly transition all the traffic by continuing to adjust the weights for the original and new endpoints.
 
 For example, say you start with an existing Application Load Balancer with a weight set to 200, and you add a new Application Load Balancer endpoint with client IP address preservation enabled with a weight set to 5. Gradually shift traffic from the original Application Load Balancer to the new Application Load Balancer by increasing the weight for the new Application Load Balancer and decreasing the weight for the original Application Load Balancer. For example:
-+ Original weight → 190 new weight 10
++ Original weight 190 → new weight 10
 + Original weight 180 → new weight 20
 + Original weight 170 → new weight 30, and so on.
 
@@ -68,7 +68,3 @@ When you have decreased the weight to 0 for the original endpoint, all traffic (
 If you have additional endpoints—load balancers or EC2 instances—that you want to transition to use client IP address preservation, repeat the steps in this section to transition them.
 
 If you need to revert your configuration for an endpoint so that traffic to the endpoint doesn't preserve the client IP address, you can do that at any time: increase the weight for the endpoint that does *not* have client IP address preservation to the original value, and decrease the weight for the endpoint *with* client IP address preservation to 0.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

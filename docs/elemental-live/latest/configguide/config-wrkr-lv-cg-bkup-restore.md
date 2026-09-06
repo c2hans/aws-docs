@@ -34,7 +34,3 @@ Follow this procedure if you ever need to restore a backed-up version of the dat
      If you are using Elemental Live 2.25 or earlier, and if you enabled SSL when you configured the node\*x\*, enter `HTTPS`. If you omit this flag, the script disables SSL. If you don't have or don't want SSL, omit this flag.
 
      If you are using Elemental Live 2.26 or later, there is no need to enter this option. SSL is enabled by default in these versions.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

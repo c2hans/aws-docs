@@ -22,7 +22,3 @@ The AWS Data Pipeline console is a convenient tool to visually monitor the statu
 1. In the **Instance summary** pane, choose **Attempts**, to see details for each attempt row.
 
 1. To take an action on your incomplete or failed instance, select the check box next the instance. This activates the actions. Then, select an action (`Rerun|Cancel|Mark Finished`).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Pipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datapipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

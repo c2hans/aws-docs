@@ -64,7 +64,3 @@ Example 3: No mapping templates are defined in the integration request.
 | application/xml | WHEN\_NO\_MATCH | The request payload is not transformed and is sent to the backend as-is. |
 | application/xml | WHEN\_NO\_TEMPLATES | The request payload is not transformed and is sent to the backend as-is. |
 | application/xml | NEVER | The request is rejected with an HTTP 415 Unsupported Media Type response. |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -74,7 +74,3 @@ Consider configuring the following alarms depending on which OpenSearch Service 
   <tr><td><code>LTRStatus.red</code> is &gt;= 1 for 1 minute, 1 consecutive time</td><td>At least one of the indexes needed to run the Learning to Rank plugin has missing primary shards and isn't functional.</td></tr>
 </tbody>
 </table>
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

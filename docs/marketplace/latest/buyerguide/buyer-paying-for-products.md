@@ -159,7 +159,3 @@ For more information about how to change your currency preference to a supported
 Amazon Web Services EMEA SARL accepts payments by electronic funds transfer, by MasterCard, VISA, and American Express credit cards. Diner's Club or Discover credit cards are not accepted.
 
 For more information, refer to [AWS Marketplace Buyer Tax Help](https://aws.amazon.com/tax-help/marketplace-buyers/).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

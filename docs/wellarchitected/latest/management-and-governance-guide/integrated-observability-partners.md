@@ -31,7 +31,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/management-and-go
  [Splunk Cloud](https://aws.amazon.com/marketplace/solutions/control-tower/siem/#Splunk) enables you to search, monitor, and analyze machine data from various sources to gain valuable intelligence and insights across your entire organization.
 
 [Sysdig Monitor](https://aws.amazon.com/marketplace/pp/prodview-dq475uhgg4o6g) provides real-time, deep visibility into rapidly changing AWS Cloud and container environments. You can resolve issues faster using granular data derived from Linux system calls enriched with cloud and Kubernetes context along with Prometheus metrics. With Sysdig, cloud teams can optimize costs by visualizing capacity utilization across regions, services, and clusters.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

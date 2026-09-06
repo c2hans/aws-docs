@@ -29,7 +29,3 @@ The best practices in this section focus on smoothing operations and keeping end
 **Service quotas** – Service quotas are default settings that protect you from unexpected load and consumption charges. For example, service quotas can limit you to 10 concurrent calls or 5 phone numbers per instance. We recommend that you view your service quotas and request increases to support your expected usage. For more information, see [Connect Customer service quotas](https://docs.aws.amazon.com/connect/latest/adminguide/amazon-connect-service-limits.html).
 
 **Agility through DevOps** – Use a DevOps deployment pipeline to accelerate your release schedules and deliver new features more frequently. Business owners might have to reset expectations on how quickly they can release software, because the technology is more agile. Using deployment pipelines enables you to release smaller code bundles more frequently, so your releases are less risky and reach your customers faster.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

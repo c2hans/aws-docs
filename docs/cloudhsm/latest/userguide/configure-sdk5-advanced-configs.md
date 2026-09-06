@@ -22,7 +22,3 @@ After making any changes to your configuration, you need to restart your applica
   + [Key extraction using JCE for AWS CloudHSM](java-lib-configs-getencoded.md)
 + Advanced configurations for AWS CloudHSM Command Line Interface (CLI)
   + [Connecting to multiple clusters with CloudHSM CLI](cloudhsm_cli-configs-multi-cluster.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

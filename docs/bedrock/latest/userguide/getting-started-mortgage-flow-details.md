@@ -19,7 +19,3 @@ The following steps occur in the flow:
 1. The output from the `loanCalculator` function (`maximumAffordableLoan`) and the `loanAmount` value from the input are sent to the condition node, which is then evaluated as follows:
    + If the `loanAmount` is greater than the `maximumAffordableLoan`, the `incomeDebt` prompt is triggered and a rejection letter for the loan is generated.
    + Otherwise, the customer's financial information is sent to the `mortgageProcessingAgent` by the `processApplication` prompt. The agent applies a loan calculator function, as well as a Multiple Listing Service (MLS) lookup function to look up a DynamoDB table and assess the customer's information with respect to the MLS property specified in the input. Furthermore, the agent looks up information from a knowledge base, which contains the Fannie Mae Selling Guide. The agent uses all this information to generate a response analyzing the customer's eligibility for the requested loan amount.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

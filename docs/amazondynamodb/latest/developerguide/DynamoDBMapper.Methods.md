@@ -424,7 +424,3 @@ The `S3Link` class provides many other methods for manipulating objects in Amazo
 <a name="DynamoDBMapper.Methods.getS3ClientCache"></a>
 
 Returns the underlying `S3ClientCache` for accessing Amazon S3. An `S3ClientCache` is a smart Map for `AmazonS3Client` objects. If you have multiple clients, an `S3ClientCache` can help you keep the clients organized by AWS Region, and can create new Amazon S3 clients on demand.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

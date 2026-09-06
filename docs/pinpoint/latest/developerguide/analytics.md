@@ -33,7 +33,3 @@ To query the data for a metric, you send a `get` request to the appropriate metr
 After you send your query, Amazon Pinpoint returns the query results in a JSON response. In the response, the structure of the results varies depending on the metric that you queried.
 
 Some metrics provide only one value—for example, the number of messages that were delivered by a campaign. Other metrics provide multiple values and typically group those values by a relevant field—for example, the number of messages that were delivered by each run of a campaign, grouped by campaign run. If a metric provides and groups multiple values, the JSON response includes a field that indicates which field was used to group the data. To learn more about the structure of query results, see [Use JSON query results](analytics-query-results.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

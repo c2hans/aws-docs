@@ -39,7 +39,3 @@ Users will be associated with an identity store, for example Active Directory. T
 +  SAP Note: [3040959 - How to get a CA signed server certificate in ABAP](https://launchpad.support.sap.com/#/notes/3040959) [Requires SAP Portal Access]
 +  SAP Lens [Operational Excellence]: [Suggestion 3.4.1 - Create specific runbooks for SAP security operations](best-practice-3-4.md)
 +  SAP Lens [Operational Excellence]: [Suggestion 4.1.2 - Maintain a calendar for expiring of credentials, certificates and licenses](best-practice-4-1.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -63,7 +63,3 @@ Quotas, also referred to as limits, are the maximum number of service resources 
 For detailed limits that apply to S3 Vectors, see [Limitations and restrictions](s3-vectors-limitations.md).
 
 Unless otherwise noted, each quota is per AWS Region. You can request increases for some quotas, and other quotas can't be increased. For more information about requesting a quota increase, see [Requesting a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html) in the *Service Quotas User Guide*. For more Amazon S3 quota information, see [Amazon S3 endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/s3.html) in the *AWS General Reference*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

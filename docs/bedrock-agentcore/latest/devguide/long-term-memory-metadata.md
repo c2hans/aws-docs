@@ -735,7 +735,3 @@ Existing memory records do not retroactively receive new LLM-extracted fields. H
 +  **Don’t use metadata for values that change on every interaction** — metadata is most effective for stable or slowly-changing attributes.
 +  **Don’t rely on metadata alone for tenant isolation.** A `tenant_id` metadata field without namespace isolation is a security-through-convention model that breaks on any missed filter. Use namespaces for the `who`, and metadata for the `what`, `when`, and `how urgent`.
 +  **Don’t use LLM extraction for values that must be exact.** If a key must carry a specific, known value (like `department` or `ticket_id`), use `STRICTLY_CONSISTENT` extraction or supply it via the Batch APIs. LLM extraction may produce variations of the same concept.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

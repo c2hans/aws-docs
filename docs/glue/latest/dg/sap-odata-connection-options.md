@@ -53,7 +53,3 @@ The following are connection options for SAP OData:
 + `PAGE_SIZE`(Integer) - Defines the page size for querying the records. The default page size is 50,000. When a page size is specified, SAP returns only the defined number of records per API call, rather than the entire dataset. The connector will still provide the total number of records and handle pagination using your specified page size. If you require a larger page size, you can choose any value up to 500,000, which is the maximum allowed. Any specified page size exceeding 500,000 will be ignored. Instead, the system will use the maximum allowed page size. You can specify the page size in the AWS Glue Studio UI by adding a connection option `PAGE_SIZE` with your desired value.
 
   For example: `20000`
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

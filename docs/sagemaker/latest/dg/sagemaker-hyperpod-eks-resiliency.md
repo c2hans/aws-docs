@@ -15,7 +15,3 @@ SageMaker HyperPod provides the following cluster resiliency features.
 + [Resilience-related Kubernetes labels by SageMaker HyperPod](sagemaker-hyperpod-eks-resiliency-node-labels.md)
 + [Manually quarantine, replace, or reboot a node](sagemaker-hyperpod-eks-resiliency-manual.md)
 + [Suggested resilience configurations](sagemaker-hyperpod-eks-resiliency-config-tips.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

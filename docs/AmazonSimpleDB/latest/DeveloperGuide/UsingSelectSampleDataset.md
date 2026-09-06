@@ -15,7 +15,3 @@ The following table contains the data set used throughout this section.
 | B000T9886K | In Between | Paul Van Dyk | 2007 |  | CD<br />Trance | 4 stars |
 | B00005JPLW | 300 | Zack Snyder | 2007 |  | DVD<br />Action<br />Frank Miller | \*\*\*<br />3 stars<br />Not bad |
 | B000SF3NGK | Heaven's Gonna Burn Your Eyes | Thievery Corporation | 2002 |  |  | \*\*\*\*\* |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SimpleDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonSimpleDB` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

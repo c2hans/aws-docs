@@ -25,7 +25,3 @@ Before you attempt to connect to an instance using Session Manager, you must com
 
 **Troubleshooting**
 If you receive an error that you're not authorized to perform one or more Systems Manager actions (`ssm:{{command-name}}`), you must update your policies to allow you to start sessions from the Amazon EC2 console. For more information and instructions, see [Quickstart default IAM policies for Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/getting-started-restrict-access-quickstart.html) in the *AWS Systems Manager User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

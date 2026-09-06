@@ -123,7 +123,3 @@ If your application includes layers, for information about how to debug issues w
 <a name="serverless-sam-cli-using-invoke-learn"></a>
 
 For a hands-on example of invoking functions locally, see [ Module 2 - Run locally](https://s12d.com/sam-ws-en-local) in *The Complete AWS SAM Workshop*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Model. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless-application-model` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

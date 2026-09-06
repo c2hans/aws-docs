@@ -14,7 +14,3 @@ The policies determine what actions a user can perform on the AWS Elemental Live
 1. Hover over **Settings** and choose **Roles**.
 
 1. On the **Roles** screen, assign a name to the new user role, select the actions to include, and choose **Create**. The new role appears in the list.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -81,7 +81,3 @@ After you've gone through the procedure, you should have:
 + If the users are uploading files from their local machines, a CORS policy attached to their Amazon S3 bucket.
 
 If your users still can't upload the local files after you update the CORS policy, the browser might be caching the CORS settings from a previous upload attempt. If they're running into issues, instruct them to clear their browser cache and try again.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,7 +20,3 @@ To get started with AWS, you need an AWS account. For information about creating
 <a name="gettingstarted-prereqs-create"></a>
 
 You must have resources in your AWS account to tag. For more information about the supported resource types, see the **Tag Editor Tagging** column under [Supported resource types](https://docs.aws.amazon.com/ARG/latest/userguide/supported-resources.html) in the *AWS Resource Groups User Guide*.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Tagging and Tag Editor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query tag-editor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

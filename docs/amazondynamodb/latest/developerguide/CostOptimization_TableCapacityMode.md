@@ -96,7 +96,3 @@ One of the most common causes of these patterns is batch imports. This type of t
 + If the batch occurs at scheduled times, you can schedule an increase to your auto- scaling capacity before it runs
 + If the batch occurs randomly, consider trying to extend the time it runs rather than executing as fast as possible
 + Add a ramp up period to the import where the velocity of the import starts small but is slowly increased over a few minutes until auto scaling has had the opportunity to start adjusting table capacity
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

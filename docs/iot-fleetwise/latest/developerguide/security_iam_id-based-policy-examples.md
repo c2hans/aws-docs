@@ -89,7 +89,3 @@ Before using AWS IoT FleetWise, you must register your AWS account, IAM, and Ama
 + An IAM role that allows AWS IoT FleetWise to send data to Amazon Timestream.
 
 For more information, including procedures and example policies, see [Configure your AWS IoT FleetWise settings](configure-settings.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT FleetWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-fleetwise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

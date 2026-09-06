@@ -22,7 +22,7 @@ Because a SECURITY DEFINER procedure runs with the privileges of the user that o
 + Qualify all database objects that the procedure must access with the schema names. For example, use `myschema.mytable` instead of just `mytable`.
 + If you can't qualify an object name by its schema, set `search_path` when creating the procedure by using the SET option. Set `search_path` to exclude any schemas that are writable by untrusted users. This approach prevents any callers of this procedure from creating objects (for example, tables or views) that mask objects intended to be used by the procedure. For more information about the SET option, see [CREATE PROCEDURE](r_CREATE_PROCEDURE.md).
 
-The following example sets `search_path` to `admin` to ensure that the `user_creds` table is accessed from the `admin` schema and not from public or any other schema in the caller's `search_path`.
+The following example sets `search_path` to `admin` to make sure that the `user_creds` table is accessed from the `admin` schema and not from public or any other schema in the caller's `search_path`.
 
 ```
 CREATE OR REPLACE PROCEDURE sp_get_credentials(userid int, o_creds OUT varchar)
@@ -37,7 +37,3 @@ SECURITY DEFINER
 -- Set a secure search_path
 SET search_path = admin;
 ```
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

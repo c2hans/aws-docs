@@ -242,7 +242,3 @@ When the delegated administrator deactivates a tag key, the delegated administra
 + **Tag key character requirements:** Tag keys can contain Unicode letters, digits, white space, and the following characters: `_ . : / = + @ -`. Tag keys must not exceed 128 characters.
 + **Re-activation:** If you deactivate and re-activate the same tag key, only new data is available. The `EarliestDatapointTimestamp` resets with each activation.
 + **Suspended tags:** Each tag key supports up to 100,000 unique tag values. If a tag key exceeds this threshold, it is moved to `suspended` status. The tag still counts toward your limit but data is no longer ingested. Reduce the number of unique values for the tag or deactivate it to free up space for another tag key.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

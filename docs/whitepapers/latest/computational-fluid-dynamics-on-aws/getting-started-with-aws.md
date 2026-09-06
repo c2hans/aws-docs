@@ -24,7 +24,3 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/computational-fluid-d
  A dedicated [Running CFD on AWS workshop](https://cfd-on-pcluster.workshop.aws/) has been created to guide you through the process of running your CFD codes on AWS. This workshop has step-by-step instructions for common codes like Simcenter STAR-CCM\+, OpenFOAM, and ANSYS Fluent.
 
  Additionally, the [AWS Well-Architected Framework High Performance Computing (HPC) Lens](https://docs.aws.amazon.com/wellarchitected/latest/high-performance-computing-lens/welcome.html) covers common HPC scenarios and identifies key elements to ensure that your workloads are architected according to best practices. It focuses on how to design, deploy, and architect your HPC workloads on the AWS Cloud.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

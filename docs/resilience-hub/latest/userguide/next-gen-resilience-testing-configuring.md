@@ -41,7 +41,3 @@ Send detailed test logs to Amazon S3, CloudWatch Logs, or both. Logs capture tim
 
 **Test permissions**
 An IAM execution role is required. Permissions vary based on the test type, fault actions, and options selected. For multi-account tests, use the same-named role in each account. For more information, see [IAM execution roles for resilience testing](next-gen-resilience-testing-iam.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -65,7 +65,3 @@ Managed Integrations uses data models for organizing data and end-to-end communi
 + **Property:** An entity representing a particular attribute in device state (bell is ringing, porch light is on, camera is recording).
 + **Data Model:** The data layer corresponds to the data and verb elements that help support the functionality of the application. The Application operates on these data structures when there is an intent to interact with the device. For more information, see [connectedhomeip](https://github.com/project-chip/connectedhomeip/tree/v1.4-branch/src/app/zap-templates/zcl/data-model/chip) on the *GitHub* website.
 + **Schema:** A schema is a representation of the data model in JSON format.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed integrations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-mi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,7 +14,3 @@ With Amazon Fraud Detector, you can manage a list by adding or removing data wit
 A list can contain up to 100,000 unique entries and each entry can be up to 320 characters long. Every list you use in a rule is, by default, associated with Amazon Fraud Detector’s [Variable types](variables.md#variable-types) FREE\_FORM\_TEXT. You can assign a variable type to your list at any time. You can use up to 3 lists in a rule.
 
 You can create a list, add entries to the list, delete a list, or delete one or more entries in the list, or assign a variable type to your list in the Amazon Fraud Detector console, using the API, using the AWS CLI, or using the AWS SDK.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Fraud Detector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query frauddetector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

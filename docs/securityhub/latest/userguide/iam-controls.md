@@ -1032,7 +1032,3 @@ If an account is part of an organization in AWS Organizations, this control does
 <a name="iam-28-remediation"></a>
 
 For information about enabling an external access analyzer in a specific Region, see [Getting started with IAM Access Analyzer](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-getting-started.html) in the *IAM User Guide*. You must enable an analyzer in each Region in which you want to monitor access to your resources.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

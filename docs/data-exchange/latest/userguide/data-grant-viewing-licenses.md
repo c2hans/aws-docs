@@ -42,7 +42,3 @@ You can use the AWS License Manager console to view a single license for an AWS 
 1. On the next page, choose **View license** or **Distribute with License Manager**. What you see varies, depending on the data grant's distribution permissions.
 
 1. View the details on the **License detail** page.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Exchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query data-exchange` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

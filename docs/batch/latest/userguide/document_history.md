@@ -51,7 +51,3 @@ The following table describes the important changes to the documentation since t
 | [AWS Batch event stream for EventBridge](https://docs.aws.amazon.com/batch/latest/userguide/cloudwatch_event_stream.html) | AWS Batch adds the event stream for EventBridge. You can use AWS Batch event stream to receive near real-time notifications regarding the state of jobs that are submitted to your job queues. | October 24, 2017 |
 | [Automated job retries](https://docs.aws.amazon.com/batch/latest/userguide/job_retries.html) | AWS Batch adds support for job retries. With this update, you can apply a retry strategy to your jobs and job definitions that allows your jobs to be automatically retried if they fail. | March 28, 2017 |
 | [AWS Batch general availability](#document_history) | AWS Batch is introduced, designed as a means for you to run batch computing workloads on the AWS Cloud. | January 5, 2017 |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

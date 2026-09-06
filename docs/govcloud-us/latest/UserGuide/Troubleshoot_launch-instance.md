@@ -14,7 +14,3 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/Troubleshoo
  **Recommended Action:** Verify that your account has a VPC. If not, create a VPC and then use it to launch instances.
 
 In some cases, your account might have a default VPC. For more information, see [Determining if your account has a default VPC](govcloud-ec2.md#govcloud-ec2-vpc). If you still receive this error when you run the `ec2-run-instances` command (or the `RunInstances` action) to launch an Amazon EC2 instance, you must specify the `subnet` parameter. Although the `subnet` parameter is optional in other regions, if you omit it in the AWS GovCloud (US-West) Region, you receive an error.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS GovCloud (US). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query govcloud-us` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,7 +30,3 @@ Additionally, when you file a service request, or incident report, you have the 
 While the CC email addresses provided in service requests and incident reports receive email notifications of communications, other notifications, such as patching notifications, appear in your Service Request list (an email is also sent to the default contact), *without* explicit notification to you that you have a communication awaiting your attention. This is why we strongly recommend adding a CC email where you can, and setting up the default contact email as a group to which everyone using AMS is a member.
 
 Additionally, you can request special notifications for new AMIs, for RFC state change, and for configuration changes in your AMS account. These optional notification services are discussed next.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

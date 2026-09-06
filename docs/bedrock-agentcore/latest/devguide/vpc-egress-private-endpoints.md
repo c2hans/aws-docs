@@ -465,7 +465,3 @@ The following table describes common issues and their solutions:
 Be aware of the following limitations when using VPC egress for AgentCore:
 +  **Cross-account** : Cross-account private connectivity requires the self-managed Lattice resources option. Managed VPC resources does not support cross-account scenarios.
 +  **DNS TTL configuration** : VPC Lattice uses IP-based routing. Ensure that DNS TTLs for your resource configuration domain are configured appropriately so that IP address changes during rolling deployments do not cause connectivity disruption.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

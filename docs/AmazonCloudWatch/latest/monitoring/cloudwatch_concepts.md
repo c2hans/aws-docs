@@ -6,7 +6,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloud
 <a name="cloudwatch_concepts"></a>
 
 The following terminology and concepts are central to your understanding and use of Amazon CloudWatch:
-+ [OpenTelemetry metrics](#OpenTelemetry_metrics)
 + [Namespaces](#Namespace)
 + [Metrics](#Metric)
 + [Dimensions](#Dimension)
@@ -16,27 +15,6 @@ The following terminology and concepts are central to your understanding and use
 + [Alarms](#CloudWatchAlarms)
 
  For information about the service quotas for CloudWatch metrics, alarms, API requests, and alarm email notifications, see [CloudWatch service quotas](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch_limits.html).
-
-## OpenTelemetry metrics
-<a name="OpenTelemetry_metrics"></a>
-
-CloudWatch also supports metrics sent using the OpenTelemetry Protocol (OTLP). OpenTelemetry metrics use a different data model from traditional CloudWatch metrics. Instead of namespaces and dimensions, OpenTelemetry metrics use metric names with descriptive labels (key-value pairs) that follow OpenTelemetry semantic conventions. OpenTelemetry metrics support up to 150 labels per metric and support metric types including gauge, sum, histogram, and exponential histogram.
-
-OpenTelemetry metrics are queried using the Prometheus Query Language (PromQL) in CloudWatch Query Studio or through the Prometheus-compatible query API. You can set PromQL-based CloudWatch Alarms on OpenTelemetry metrics.
-
-The following table summarizes the key differences between OpenTelemetry metrics and traditional CloudWatch metrics.
-
-| Concept | Traditional CloudWatch metrics | OpenTelemetry metrics |
-| --- | --- | --- |
-| Identity | Namespace, metric name, up to 30 dimensions | Metric name, up to 150 labels |
-| Metric types | Single values, statistic sets | Gauge, sum, histogram, exponential histogram |
-| Ingestion | PutMetricData API or AWS CLI | OpenTelemetry Protocol (OTLP) |
-| Query language | GetMetricStatistics, Metrics Insights | Prometheus Query Language (PromQL) |
-| Alarms | Standard CloudWatch Alarms | PromQL-based CloudWatch Alarms |
-| Console experience | CloudWatch Metrics console | CloudWatch Query Studio |
-| Retention | Up to 15 months with automatic rollup | Up to 15 months |
-
-For more information, see [Send metrics using OpenTelemetry](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-OpenTelemetry-Sections.html).
 
 ## Namespaces
 <a name="Namespace"></a>
@@ -121,7 +99,7 @@ You can't retrieve statistics for the following dimensions or if you specify no 
 + `Domain=Rio`
 
 **Note**
-OpenTelemetry metrics use labels instead of dimensions. Labels serve a similar purpose but follow OpenTelemetry semantic conventions and support up to 150 labels per metric. For more information, see [OpenTelemetry metrics](#OpenTelemetry_metrics).
+OpenTelemetry metrics use labels instead of dimensions. Labels serve a similar purpose but follow OpenTelemetry semantic conventions and support up to 150 labels per metric. For more information, see [OpenTelemetry Metrics (Recommended)](metrics-otel-recommended.md).
 
 ## Resolution
 <a name="Resolution_definition"></a>
@@ -219,7 +197,3 @@ When creating an alarm, select an alarm monitoring period that is greater than o
 For more information, see [Using Amazon CloudWatch alarms](CloudWatch_Alarms.md) and [Create an alarm from a metric on a graph](create_alarm_metric_graph.md).
 
 For OpenTelemetry metrics, you can create PromQL-based CloudWatch Alarms. These alarms use PromQL queries to define alarm conditions, using the same query language available in CloudWatch Query Studio.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

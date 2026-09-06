@@ -14,7 +14,3 @@ Changes should be tested and the results validated at all lifecycle stages (for 
  **Suggestion 2.5.3 - Understand what level of testing is required for differing levels of change. For example, a full suite of testing vs targeted regression testing for minor changes. Agree on test definitions and scope of change testing required to release to production.**
 
  **Suggestion 2.5.4. - Automate testing where possible with third-party tools and test harnesses. Focus on regular change types and frequent releases first.**
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

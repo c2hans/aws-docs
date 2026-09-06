@@ -23,7 +23,3 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 + [DRHCREL05-BP03 Maintain high availability during on-premises maintenance activities](drhcrel05-bp03.md)
 + [DRHCREL05-BP04 Design your environment to maintain availability and recover in case of failure in a critical sub-system like networking, server, rack, or within the application itself](drhcrel05-bp04.md)
 + [DRHCREL06-BP01 Use AWS Health to receive EC2 instance retirement notifications and scheduled events on Outposts that may require instance failover ahead of time](drhcrel06-bp01.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

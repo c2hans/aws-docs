@@ -19,7 +19,3 @@ The following figure shows the network access flow of ASCS or SAP HANA overlay I
  *Pricing for Network Load Balancers*:
 
 With Network Load Balancers, you only pay for what you use. See [Elastic Load Balancing pricing](https://aws.amazon.com/elasticloadbalancing/pricing/), for more information.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

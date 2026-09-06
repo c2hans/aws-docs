@@ -27,7 +27,3 @@ Elastic Beanstalk supports several Amazon EC2 [instance purchasing options](http
 + [Configuring Amazon EC2 security groups and instance types using the AWS CLI](using-features.managing.ec2.aws-cli.md)
 + [Configuring Amazon EC2 instances with namespace options](using-features.managing.ec2.namespace.md)
 + [Configuring the IMDS on your Elastic Beanstalk environment's instances](environments-cfg-ec2-imds.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -55,7 +55,3 @@ Amazon
   Type: String
 
   Description: (Optional) The ARN of the IAM role to use to run the command on the instance. The role must have a trust relationship with the `ssm.amazonaws.com` service principal, it must have the **AmazonSSMManagedInstanceCore** policy attached, and it must have write permissions for the Amazon S3 bucket specified for **S3BucketLog**.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager Automation Runbook Reference. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager-automation-runbooks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

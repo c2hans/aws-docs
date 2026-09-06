@@ -88,7 +88,3 @@ For execution status descriptions, see [Execution statuses](lifecycle-policy-exe
 
 **Viewing per-resource details**
 Run the [list-lifecycle-execution-resources](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/list-lifecycle-execution-resources.html) AWS CLI command with the execution ID to view individual resource outcomes. Each entry shows the action taken, its result (succeeded, failed, or skipped), and the reason.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

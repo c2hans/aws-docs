@@ -113,7 +113,3 @@ AWS Security Incident Response supports using service-linked roles in all of the
 To deliver new features and to make sure that required resources remain correctly configured, AWS Security Incident Response periodically updates the service's underlying infrastructure. Each update triggers a deployment that creates the required service-linked role. If the role already exists, the `CreateServiceLinkedRole` call returns an exception that indicates the role is already present. This exception is expected and handled by the service, and the deployment continues normally.
 
 As a result, you might see `InvalidInputException` entries for `CreateServiceLinkedRole` in your CloudTrail event history. These entries are expected behavior, have no impact on your accounts, and require no action.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Security Incident Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-ir` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

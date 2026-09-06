@@ -48,7 +48,3 @@ For more information about sending email using Amazon SES, see the [Amazon SES D
 + [The Amazon Pinpoint Deliverability dashboard](channels-email-deliverability-dashboard.md)
 + [Email best practices](channels-email-best-practices.md)
 + [Troubleshooting the email channel](channels-email-troubleshooting.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

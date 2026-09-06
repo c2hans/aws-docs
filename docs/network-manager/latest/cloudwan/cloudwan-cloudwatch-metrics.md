@@ -40,7 +40,3 @@ View usage metrics for a specific core network edge.
 The **Add to dashboard** option only works if your registered transit gateway is in the US West (Oregon) Region.
 
 1. The Metrics page displays the usage metrics for the specified edge location during the chosen time frame. For more information about these metrics, see [Cloud WAN metrics and dimensions](cloudwan-metrics.md#cloudwan-metrics-tbl).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

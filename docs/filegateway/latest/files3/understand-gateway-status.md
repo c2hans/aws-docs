@@ -15,7 +15,3 @@ In the following table, you can find a description of each gateway status, and w
 | --- | --- |
 | RUNNING | The gateway is configured properly and is available to use. |
 | OFFLINE | Your gateway might be in an `OFFLINE` status for one or more of the following reasons:+  The gateway can't reach the Storage Gateway service endpoints. <br />+  The gateway had an unexpected shutdown. <br />+  The gateway has an associated cache disk that is disconnected, has been modified, or has failed.  |
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

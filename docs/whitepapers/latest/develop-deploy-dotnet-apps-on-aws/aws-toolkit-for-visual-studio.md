@@ -16,7 +16,3 @@ You can use NuGet to include the AWS SDK for .NET in your projects, so you can g
 The toolkit allows you to create, configure, edit, or query resources in your AWS account, directly from within Visual Studio and without having to visit [AWS Management Console](https://aws.amazon.com/console/) or use any other secondary tool.
 
 The toolkit contains a rich set of features that help configure and deploy new solutions, and can be broken down into a number of core features, most of which are available from the **AWS Explorer** in Visual Studio’s **View** menu. For example, you can use Visual Studio to build a CloudFormation template (Infrastructure as Code) with the convenience of IntelliSense and deploy to AWS with AWS CloudFormation. The AWS Toolkit for Visual Studio also includes project templates for Lambda functions, CloudFormation templates and sample projects showing how to use various AWS Services. It also makes it easy to deploy your applications into AWS runtime platforms, such as Elastic Beanstalk, Lambda and API Gateway, and ECS containers.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

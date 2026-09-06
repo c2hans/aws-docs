@@ -18,7 +18,3 @@ In this step, you map application attributes to the user attribute in IAM Identi
 
 **Note**
 If you have configured IAM Identity Center to use an external identity provider, you need to ensure that the attribute mappings from external identity provider to IAM Identity Center are configured correctly. For more information refer to [Configuring an external identity provider](configuring-external-idp.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

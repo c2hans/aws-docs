@@ -37,7 +37,3 @@ Demand Planning uses the Gregorian calendar for planning. The default start day 
 + **Planning Horizon** – The total length of time into the future for which forecasts are generated, measured from the forecast start date. The planning horizon is determined by combining the time bucket (Daily, Weekly, or Monthly) with the plan horizon length. For example, a weekly plan with a 26-week plan horizon creates forecasts covering the next 26 weeks from the forecast start date.
 + **Product lifecycle** – The product lifecycle refers to the various stages of a product from introduction to End of Life (EoL).
 + **Published demand plan** – The final output of the plan. You can choose to publish the finalized demand plan to downstream inventory and supply planning systems for implementation.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -42,7 +42,3 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 + [ Amazon CloudWatch - Using Metrics ](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/working_with_metrics.html)
 + [ Building Dashboards ](https://aws.amazon.com/builders-library/building-dashboards-for-operational-visibility/)
 + [ How to track your cost optimization KPIs with KPI Dashboard ](https://aws.amazon.com/blogs/aws-cloud-financial-management/how-to-track-your-cost-optimization-kpis-with-the-kpi-dashboard/)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

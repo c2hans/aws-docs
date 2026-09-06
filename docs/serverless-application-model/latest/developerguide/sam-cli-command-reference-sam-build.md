@@ -104,6 +104,12 @@ Ensures the AWS SAM CLI always mounts symlinks that are present in the files to
 `--no-use-container`  <a name="ref-sam-cli-build-options-no-use-container"></a>
 An option that allows you to use the IDE toolkit to set default behavior. You can also use `sam build --no-use-container` to run a build in your local machine instead of a docker container.
 
+`--output {{[ text | json ]}}`  <a name="ref-sam-cli-build-options-output"></a>
+The format of the command output:
++ `text` – Prints regular, human-readable output. This is the default value.
++ `json` – Prints structured, machine-readable output. Use this format when you want to consume the output programmatically, such as in CI/CD pipelines, IDE extensions, and AI-assisted tools.
+When you specify `--output json`, the AWS SAM CLI prints a single JSON object after the command completes. On success, this object includes fields such as the build status, the build directory, the template file, and a list of the resources that were built. On failure, it includes an `error` object that describes what went wrong.
+
 `--parallel`  <a name="ref-sam-cli-build-options-parallel"></a>
 Enables parallel builds. Use this option to build your AWS SAM template's functions and layers in parallel. By default, the functions and layers are built in sequence.
 
@@ -141,7 +147,3 @@ If your functions depend on packages that have natively compiled dependencies, u
 <a name="sam-cli-command-reference-sam-build-examples"></a>
 
 For a detailed example and in-depth walkthrough on using the `sam build` subcommand, refer to [Introduction to building with AWS SAM](using-sam-cli-build.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Model. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless-application-model` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

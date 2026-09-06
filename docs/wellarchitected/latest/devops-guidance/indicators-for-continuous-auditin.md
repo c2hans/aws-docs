@@ -12,7 +12,3 @@ Facilitates ongoing automated assessments of system configurations, activities, 
 + [[AG.CA.2] Optimize configuration item management](ag.ca.2-optimize-configuration-item-management.md)
 + [[AG.CA.3] Implement systematic exception tracking and review processes](ag.ca.3-implement-systematic-exception-tracking-and-review-processes.md)
 + [[AG.CA.4] Enable iterative internal auditing practices](ag.ca.4-enable-iterative-internal-auditing-practices.md)
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

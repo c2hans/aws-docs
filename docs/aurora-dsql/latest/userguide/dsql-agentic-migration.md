@@ -66,7 +66,3 @@ The Aurora DSQL Model Context Protocol (MCP) server allows AI assistants to conn
 + Provide accurate, up-to-date guidance based on the latest Aurora DSQL documentation
 
  To use the Aurora DSQL MCP server with AI assistants, see the setup instructions for the [ Aurora DSQL MCP server](SECTION_aurora-dsql-mcp-server.md).
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
