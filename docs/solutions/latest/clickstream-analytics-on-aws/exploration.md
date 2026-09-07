@@ -44,7 +44,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 
  Explorations interface consists of the following components:
 
-![Explore module interface showing analytics model selector, filters, parameter grouping, date range, and query options.](http://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/explore.png)
+![Explore module interface showing analytics model selector, filters, parameter grouping, date range, and query options.](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/explore.png)
 
 +  **Analytics Model**. A drop-down list to select or switch analytics model.
 +  **Model Configuration**. Specifies the configurations for the analytics model, such as select event, adding filters. Each model might have different configuration.

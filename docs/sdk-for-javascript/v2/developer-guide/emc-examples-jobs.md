@@ -7,7 +7,7 @@ The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you 
 # Creating and Managing Transcoding Jobs in MediaConvert
 <a name="emc-examples-jobs"></a>
 
-![JavaScript code example that applies to Node.js execution](http://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/nodeicon.png)
+![JavaScript code example that applies to Node.js execution](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/nodeicon.png)
 
 **This Node.js code example shows:**
 + How to create transcoding jobs in MediaConvert.

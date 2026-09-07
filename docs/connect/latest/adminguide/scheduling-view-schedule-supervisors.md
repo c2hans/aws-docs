@@ -24,9 +24,9 @@ Managers and supervisors can sort or filter schedules based on the following cri
 + **Sort** schedules based on the earliest shift start time. For example, agents who login first to take customer contacts are listed first in the schedule.
 
   The following image shows a schedule by agent first name, last name, or login ID with the string `sal`, sorted by their shift start times. Alejandro logged in first so he is listed first.
-![A searches for agents by first name, last name, or login ID with the string sal, sorted by their shift start times.](http://docs.aws.amazon.com/connect/latest/adminguide/images/scheduling-view-schedule-supervisors-sort.png)
+![A searches for agents by first name, last name, or login ID with the string sal, sorted by their shift start times.](https://docs.aws.amazon.com/connect/latest/adminguide/images/scheduling-view-schedule-supervisors-sort.png)
 + **Filter** schedules based on agent names or agent IDs, staffing groups, or supervisor names. The following image shows a schedule filtered by name and login.
-![An example of applying a filter by agent names.](http://docs.aws.amazon.com/connect/latest/adminguide/images/scheduling-view-schedule-supervisors-filter.png)
+![An example of applying a filter by agent names.](https://docs.aws.amazon.com/connect/latest/adminguide/images/scheduling-view-schedule-supervisors-filter.png)
 
 **Tip**
 Supervisors view agent schedules in the time zone defined on the Supervisor's profile on the **Staff Rules** page. Supervisors can choose to view agent schedules in a different time zone by selecting the desired time zone from the date filter.
@@ -38,7 +38,7 @@ As a manager or supervisor, you can display the adherence view by enabling the *
 
 The following image shows the agent's schedule, and a second line under it that indicates a breach occurred during that block of the agent's schedule, for example, after their break. It doesn't indicate how long the breach was.
 
-![An example of the adherence view where all the agents have breached their schedule during all blocks of time.](http://docs.aws.amazon.com/connect/latest/adminguide/images/scheduling-dailyview1.png)
+![An example of the adherence view where all the agents have breached their schedule during all blocks of time.](https://docs.aws.amazon.com/connect/latest/adminguide/images/scheduling-dailyview1.png)
 
 + The adherence view displays the agents' non-adherence data alongside their scheduled activities. It displays breaches that are longer than a minute. The data refreshes approximately every 5 minutes.
 + You can pause on the non-adherence activities to view details such as start time, end time, duration, scheduled activity, and actual activity. You can also view the adherence percentage that is calculated for this shift.
@@ -46,7 +46,7 @@ The following image shows the agent's schedule, and a second line under it that 
 
 To see which agents have exceeded a specified adherence duration, you can filter agents based on adherence breach duration. For example, you can choose to view agents who have breached adherence by more than 10 minutes. The following image shows the breach duration filter set to 30 minutes. The red lines indicate when the breach occurred.
 
-![An example the breach duration filter.](http://docs.aws.amazon.com/connect/latest/adminguide/images/scheduling-breach-duration.png)
+![An example the breach duration filter.](https://docs.aws.amazon.com/connect/latest/adminguide/images/scheduling-breach-duration.png)
 
 **Note**
 If an agent's schedule is changed within the last 30 days from the current date (not the date of the schedule), adherence is re-calculated with the new schedule. With this re-calculation, you can make real-time adjustments to an agent's shift and correctly evaluate their adherence.
@@ -66,4 +66,4 @@ Sort by start time is not available in Week view.
   + Service level (by channel): goal versus actual based on scheduled agents
   + Average speed of answer (by channel): goal versus actual based on scheduled agents
 
-![A Week view where manager searched for agents with first name, last name or login ID with the string sal.](http://docs.aws.amazon.com/connect/latest/adminguide/images/scheduling-view-schedule-supervisors-weekly.png)
+![A Week view where manager searched for agents with first name, last name or login ID with the string sal.](https://docs.aws.amazon.com/connect/latest/adminguide/images/scheduling-view-schedule-supervisors-weekly.png)

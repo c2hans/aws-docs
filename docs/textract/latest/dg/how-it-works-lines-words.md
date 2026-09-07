@@ -23,7 +23,7 @@ To detect only lines and words, you can use [DetectDocumentText](https://docs.aw
 
 The following diagram shows how the line *Hello, world.* in the text *Hello, world. How are you?* is represented by `Block` objects.
 
-![Diagram showing text objects "PAGE", "LINE" with two instances, "WORD" with two instances, and "Hello, world." Labels and connections depict a hierarchical structure.](http://docs.aws.amazon.com/textract/latest/dg/images/hieroglyph-text-detection.png)
+![Diagram showing text objects "PAGE", "LINE" with two instances, "WORD" with two instances, and "Hello, world." Labels and connections depict a hierarchical structure.](https://docs.aws.amazon.com/textract/latest/dg/images/hieroglyph-text-detection.png)
 
 The following is the JSON output from `DetectDocumentText` when the sentence *Hello, world. How are you?* is detected. The first example is the JSON for the document page. You can use the CHILD IDs to navigate through the document.
 

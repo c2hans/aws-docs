@@ -19,7 +19,7 @@ With AWS serverless services, you can build and run applications without provisi
 
 AWS offers serverless options across compute, API management, application integration, orchestration, and data storage, that you can use to assemble complete applications from managed services. You can build applications ranging from microservices that handle discrete business logic as a part of your application backend, to event-driven workflows that perform data transformations or processing.
 
-![Core serverless services grouped by category: compute, API layer, application integration, data storage, deployment, and observability.](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/core-services-serverless.png)
+![Core serverless services grouped by category: compute, API layer, application integration, data storage, deployment, and observability.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/core-services-serverless.png)
 
  Traditional application frameworks bundle routing, data access, and integrations into a single codebase that you scale and maintain as one unit. This approach works well for getting started quickly, and frameworks like Express, Django, and Spring Boot provide familiar tools that boost initial productivity. However, as applications grow and rely on more external systems, complexity increases. The monolithic model makes scaling individual features difficult and slows down both development and troubleshooting. Serverless development addresses these challenges by composing independent services that each handle a specific function. Instead of building common distributed patterns from scratch, you use purpose-built AWS services for queues, event buses, publish/subscribe, orchestration, and APIs.
 
@@ -41,7 +41,7 @@ This guide helps you select the AWS serverless services and tools that are the b
 
 These services communicate through events, which are messages that represent a change in state. For example, when a customer uploads a photo to Amazon S3, Amazon S3 publishes an event that triggers a Lambda function to generate a thumbnail, without the upload service needing to know about the thumbnail service. You can also handle long-running tasks asynchronously. For example, you can implement a queue using Amazon SQS to manage order submissions. Then use Step Functions to manage a workflow that updates user information and inventory counts after every order is processed. Along the way, you use Amazon CloudWatch to log actions, monitor application activity, and AWS X-Ray to trace data flows for debugging. Event producers don't need to know which downstream services will respond. This decoupling allows each component to scale, deploy, and evolve independently. For information about advantages of a decoupled architecture, see [What is EDA (Event-Driven Architecture)?](https://aws.amazon.com/what-is/eda/).
 
-![Serverless event-driven architecture with Lambda at the center, connected through events to the full ecosystem of serverless services.](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/serverless-conceptual.png)
+![Serverless event-driven architecture with Lambda at the center, connected through events to the full ecosystem of serverless services.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/serverless-conceptual.png)
 
 The following sections describe the services available in each category of a serverless architecture, and what they are optimized for.
 
@@ -237,7 +237,7 @@ To implement synchronous processing, use AWS Lambda for compute and Amazon API G
 
 For example, suppose you want to build a microservices application that looks up weather data by zip code. The client resolves the hostname through Amazon Route 53. The HTTP GET request routes to API Gateway, which verifies an access token through Amazon Cognito, then sends the request to a Lambda function. The function queries DynamoDB, customizes the data, sends an event to Amazon SQS for analytics, and another to Amazon SNS for alerts. After traffic slows, Lambda tears down the execution environment. You pay only for actual function usage.
 
-![Weather microservice architecture: a mobile client's request flows through Route 53, API Gateway, Cognito, Lambda, DynamoDB, SQS, and SNS, with CloudWatch monitoring throughout.](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/weather-microservice-serverless.png)
+![Weather microservice architecture: a mobile client's request flows through Route 53, API Gateway, Cognito, Lambda, DynamoDB, SQS, and SNS, with CloudWatch monitoring throughout.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/weather-microservice-serverless.png)
 
 **Tip**
 For deeper guidance on compute selection, see [AWS Fargate or AWS Lambda?](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/fargate-or-lambda.html)

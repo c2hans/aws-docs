@@ -44,7 +44,7 @@ To add a message to a FIFO queue, Amazon SQS uses the value of each message’s 
 
 The following diagram shows a queue that spans multiple partitions. The queue’s message group ID is based on item number. Amazon SQS uses its hash function to determine where to store a new item; in this case, it's based on the hash value of the string `item0`. Note that the items are stored in the same order in which they are added to the queue. Each item's location is determined by the hash value of its message group ID.
 
-![A queue spans multiple partitions.](http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/images/fifo-documentation-single.png)
+![A queue spans multiple partitions.](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/images/fifo-documentation-single.png)
 
 **Note**
 Amazon SQS is optimized for uniform distribution of items across a FIFO queue's partitions, regardless of the number of partitions. AWS recommends that you use message group IDs that can have a large number of distinct values.
@@ -62,7 +62,7 @@ To optimize partition utilization for the `DeleteMessageBatch` and `ChangeMessag
 
 In the following example, a batch of messages with various message group IDs is sent. The batch is split into three groups, each of which counts against the quota for the partition.
 
-![A batch of messages with different message group IDs is stored in partitions.](http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/images/fifo-documentation-batch.png)
+![A batch of messages with different message group IDs is stored in partitions.](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/images/fifo-documentation-batch.png)
 
 **Note**
 Amazon SQS only guarantees that messages with the same message group ID's internal hash function are grouped within a batch request. Depending on the output of the internal hash function and the number of partitions, messages with different message group IDs might be grouped. Since the hash function or number of partitions can change at any time, messages that are grouped at one point may not be grouped later.

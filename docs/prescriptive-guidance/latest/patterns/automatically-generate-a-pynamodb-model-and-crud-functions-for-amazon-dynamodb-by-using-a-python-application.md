@@ -39,7 +39,7 @@ The following are the key features of this solution:
 
 **Target architecture**
 
-![Using a Python app to generate CRUD functions and PynamoDB model from DynamoDB tables.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/74cc4c73-5c8b-448d-98fb-b681cfa5f860/images/c2c367d6-d88a-4f49-8571-89160539eb08.png)
+![Using a Python app to generate CRUD functions and PynamoDB model from DynamoDB tables.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/74cc4c73-5c8b-448d-98fb-b681cfa5f860/images/c2c367d6-d88a-4f49-8571-89160539eb08.png)
 
 1. You create an input JSON schema file. This JSON schema file represents the attributes of the respective DynamoDB tables that you want to create PynamoDB models from and CRUD functions for. It contains the following three important keys:
    + `name` –The name of the target DynamoDB table.

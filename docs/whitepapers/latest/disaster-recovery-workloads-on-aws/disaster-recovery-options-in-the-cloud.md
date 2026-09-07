@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-wor
 
 It is critical to regularly assess and test your disaster recovery strategy so that you have confidence in invoking it, should it become necessary. Use [AWS Resilience Hub](https://aws.amazon.com/resilience-hub/) to continuously validate and track the resilience of your AWS workloads, including whether you are likely to meet your RTO and RPO targets.
 
-![Graph showing disaster recovery strategies and highlights of each strategy.](http://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/images/disaster-recovery-strategies.png)
+![Graph showing disaster recovery strategies and highlights of each strategy.](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/images/disaster-recovery-strategies.png)
 
 *Figure 6 - Disaster recovery strategies *
 
@@ -22,7 +22,7 @@ When choosing your strategy, and the AWS resources to implement it, keep in mind
 
  Backup and restore is a suitable approach for mitigating against data loss or corruption. This approach can also be used to mitigate against a regional disaster by replicating data to other AWS Regions, or to mitigate lack of redundancy for workloads deployed to a single Availability Zone. In addition to data, you must redeploy the infrastructure, configuration, and application code in the recovery Region. To enable infrastructure to be redeployed quickly without errors, you should always deploy using infrastructure as code (IaC) using services such as [AWS CloudFormation](https://aws.amazon.com/cloudformation) or the [AWS Cloud Development Kit (AWS CDK)](https://aws.amazon.com/cdk). Without IaC, it may be complex to restore workloads in the recovery Region, which will lead to increased recovery times and possibly exceed your RTO. In addition to user data, be sure to also back up code and configuration, including [Amazon Machine Images (AMIs)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html) you use to create Amazon EC2 instances. You can use [AWS CodePipeline](https://aws.amazon.com/codepipeline) to automate redeployment of application code and configuration.
 
-![Architecture diagram showing backup and restore architecture](http://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/images/backup-restore-architecture.png)
+![Architecture diagram showing backup and restore architecture](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/images/backup-restore-architecture.png)
 
 *Figure 7 - Backup and restore architecture *
 
@@ -59,7 +59,7 @@ When choosing your strategy, and the AWS resources to implement it, keep in mind
 
  Any data stored in the disaster recovery Region as backups must be restored at time of failover. AWS Backup offers restore capability, but does not currently enable scheduled or automatic restoration. You can implement automatic restore to the DR region using the AWS SDK to call APIs for AWS Backup. You can set this up as a regularly recurring job or trigger restoration whenever a backup is completed. The following figure shows an example of automatic restoration using [Amazon Simple Notification Service (Amazon SNS)](https://aws.amazon.com/sns/) and [AWS Lambda](https://aws.amazon.com/lambda/). Implementing a scheduled periodic data restore is a good idea as data restore from backup is a control plane operation. If this operation was not available during a disaster, you would still have operable data stores created from a recent backup.
 
-![Diagram showing workflow of restoring and testing backups.](http://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/images/restore-test-backups.png)
+![Diagram showing workflow of restoring and testing backups.](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/images/restore-test-backups.png)
 
 *Figure 8 - Restoring and testing backups *
 
@@ -71,7 +71,7 @@ Your backup strategy must include testing your backups. See the [Testing Disaste
 
  With the *pilot light* approach, you replicate your data from one Region to another and provision a copy of your core workload infrastructure. Resources required to support data replication and backup, such as databases and object storage, are always on. Other elements, such as application servers, are loaded with application code and configurations, but are "switched off" and are only used during testing or when disaster recovery failover is invoked. In the cloud, you have the flexibility to deprovision resources when you do not need them, and provision them when you do. A best practice for “switched off” is to not deploy the resource, and then create the configuration and capabilities to deploy it (“switch on”) when needed. Unlike the backup and restore approach, your core infrastructure is always available and you always have the option to quickly provision a full scale production environment by switching on and scaling out your application servers.
 
-![Reference architecture diagram for pilot light architecture](http://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/images/pilot-light-architecture.png)
+![Reference architecture diagram for pilot light architecture](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/images/pilot-light-architecture.png)
 
 *Figure 9 - Pilot light architecture*
 
@@ -113,7 +113,7 @@ One option is to use [Amazon Route 53](https://aws.amazon.com/route53). Using A
 
  [AWS Elastic Disaster Recovery](https://aws.amazon.com/disaster-recovery/) (DRS) continuously replicates server-hosted applications and server- hosted databases from any source into AWS using block-level replication of the underlying server. Elastic Disaster Recovery enables you to use a Region in AWS Cloud as a disaster recovery target for a workload hosted on-premises or on another cloud provider, and its environment. It can also be used for disaster recovery of AWS hosted workloads if they consist only of applications and databases hosted on EC2 (that is, not RDS). Elastic Disaster Recovery uses the Pilot Light strategy, maintaining a copy of data and “switched-off” resources in an [Amazon Virtual Private Cloud (Amazon VPC)](https://aws.amazon.com/vpc/) used as a staging area. When a failover event is triggered, the staged resources are used to automatically create a full-capacity deployment in the target Amazon VPC used as the recovery location.
 
-![Architecture diagram showing AWS Elastic Disaster Recovery architecture.](http://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/images/disaster-recovery-architecture.png)
+![Architecture diagram showing AWS Elastic Disaster Recovery architecture.](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/images/disaster-recovery-architecture.png)
 
 *Figure 10 - AWS Elastic Disaster Recovery architecture*
 
@@ -122,7 +122,7 @@ One option is to use [Amazon Route 53](https://aws.amazon.com/route53). Using A
 
  The *warm standby* approach involves ensuring that there is a scaled down, but fully functional, copy of your production environment in another Region. This approach extends the pilot light concept and decreases the time to recovery because your workload is always-on in another Region. This approach also allows you to more easily perform testing or implement continuous testing to increase confidence in your ability to recover from a disaster.
 
-![Architecture diagram showing warm standby architecture.](http://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/images/warm-standby-architecture.png)
+![Architecture diagram showing warm standby architecture.](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/images/warm-standby-architecture.png)
 
 *Figure 11 - Warm standby architecture *
 
@@ -142,7 +142,7 @@ Because Auto Scaling is a control plane activity, taking a dependency on it will
 
  You can run your workload simultaneously in multiple Regions as part of a *multi-site active/active* or *hot standby active/passive* strategy. Multi-site active/active serves traffic from all regions to which it is deployed, whereas hot standby serves traffic only from a single region, and the other Region(s) are only used for disaster recovery. With a multi-site active/active approach, users are able to access your workload in any of the Regions in which it is deployed. This approach is the most complex and costly approach to disaster recovery, but it can reduce your recovery time to near zero for most disasters with the correct technology choices and implementation (however data corruption may need to rely on backups, which usually results in a non-zero recovery point). Hot standby uses an active/passive configuration where users are only directed to a single region and DR regions do not take traffic. Most customers find that if they are going to stand up a full environment in the second Region, it makes sense to use it active/active. Alternatively, if you do not want to use both Regions to handle user traffic, then Warm Standby offers a more economical and operationally less complex approach.
 
-![Architecture diagram showing multi-site active/active architecture (change one Active path to Inactive for hot standby)](http://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/images/multi-site-active-active-architecture.png)
+![Architecture diagram showing multi-site active/active architecture (change one Active path to Inactive for hot standby)](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/images/multi-site-active-active-architecture.png)
 
 *Figure 12 - Multi-site active/active architecture (change one Active path to Inactive for hot standby) *
 

@@ -13,7 +13,7 @@ To enforce a consistent way of sharing the tenant identifier across your entire 
 
 The following example shows how the API endpoint sends a JWT for the users `Alice` and `Bob`, who belong to different tenants but share the policy store with the policy store ID `store-multi-tenant` for authorization. Because all tenants share a single policy store, you don't need to maintain the policy store ID in a token or database. Because all tenants share a single policy store ID, you can provide the ID as an environment variable that your application can use to make calls to the policy store.
 
-![Amazon Verified Permissions shared design model](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/5d09c1a4-884a-4478-b9df-75e9be5dc45d.png)
+![Amazon Verified Permissions shared design model](https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/5d09c1a4-884a-4478-b9df-75e9be5dc45d.png)
 
 The following sample policy illustrates the one shared multi-tenant policy design paradigm. In this policy, the principal `MultiTenantApp::User` that has the parent `MultiTenantApp::Role` `Admin` has permissions to view the data of all resources.
 
@@ -105,7 +105,7 @@ With Verified Permissions, it is possible, but not required, to integrate an IdP
 
 When you integrate a policy store with an IdP,you can use only one [identity source](https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/identity-providers.html) per policy store. For example, if you choose to integrate Verified Permissions with Amazon Cognito, you have to mirror the strategy used for tenant isolation of Verified Permissions policy stores and Amazon Cognito user pools. The policy stores and user pools also have to be in the same AWS account.
 
-![Integrating Verified Permissions with Amazon Cognito in shared design model](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/c9231b42-f0bf-4089-bc48-f87efcb6aa78.png)
+![Integrating Verified Permissions with Amazon Cognito in shared design model](https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/c9231b42-f0bf-4089-bc48-f87efcb6aa78.png)
 
 From operational and audit perspectives, the one shared multi-tenant policy store model has a disadvantage in that the [logged activity in AWS CloudTrail](https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/monitoring-overview.html) requires more involved queries to filter out individual activity on the tenant, because each logged CloudTrail call uses the same policy store. In this scenario, it is helpful to log additional custom metrics on a per-tenant dimension to Amazon CloudWatch to ensure an appropriate level of observability and audit capability.
 

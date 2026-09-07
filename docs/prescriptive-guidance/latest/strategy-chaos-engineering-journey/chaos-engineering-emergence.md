@@ -55,7 +55,7 @@ The following diagram shows how value increases over time as chaos adoption prog
 + Periodic GameDays
 + Continuous experimentation
 
-![Value increasing gradually at first and rising more quickly after one-time experimentation.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-chaos-engineering-journey/images/guide-img/4a45128d-5b70-46b6-b625-98d89da7e822/images/f7266223-698c-4b8a-b3b5-85be350064df.png)
+![Value increasing gradually at first and rising more quickly after one-time experimentation.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-chaos-engineering-journey/images/guide-img/4a45128d-5b70-46b6-b625-98d89da7e822/images/f7266223-698c-4b8a-b3b5-85be350064df.png)
 
 As shown in the  diagram, the benefits of chaos engineering often start before any fault is injected into the system. The process of planning and designing chaos experiments itself provides immediate value. Identifying potential failure scenarios, single points of failure, and areas of uncertainty in the system leads to improvements.
 

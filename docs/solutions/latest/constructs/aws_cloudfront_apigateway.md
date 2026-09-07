@@ -155,7 +155,7 @@ Out of the box implementation of the Construct without any override will set the
 ## Architecture
 <a name="_architecture"></a>
 
-![Diagram showing data flow between network, code, storage, and cloud search components.](http://docs.aws.amazon.com/solutions/latest/constructs/images/aws-cloudfront-apigateway.png)
+![Diagram showing data flow between network, code, storage, and cloud search components.](https://docs.aws.amazon.com/solutions/latest/constructs/images/aws-cloudfront-apigateway.png)
 
 ## Github
 <a name="_github"></a>

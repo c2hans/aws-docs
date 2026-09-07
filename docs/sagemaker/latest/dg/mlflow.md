@@ -82,7 +82,7 @@ MLflow Apps are available in the following AWS Regions:
 
 An MLflow Tracking Server has three main components: compute, backend metadata storage, and artifact storage. The compute that hosts the tracking server and the backend metadata storage are securely hosted in the SageMaker AI service account. The artifact storage lives in an Amazon S3 bucket in your own AWS account.
 
-![A diagram showing the compute and metadata store for an MLflow Tracking Server.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/mlflow/mlflow-diagram.png)
+![A diagram showing the compute and metadata store for an MLflow Tracking Server.](https://docs.aws.amazon.com/sagemaker/latest/dg/images/mlflow/mlflow-diagram.png)
 
 A tracking server has an ARN. You can use this ARN to connect the MLflow SDK to your Tracking Server and start logging your training runs to MLflow.
 

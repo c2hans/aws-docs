@@ -11,7 +11,7 @@ This architecture supports bidirectional traffic between the VPCs and supports a
 
 The following architecture diagram shows how you can use VPC peering connections to connect VPCs in your account with a VPC in the third-party account.
 
-![Creating VPC peering connections between VPCs in different AWS accounts](http://docs.aws.amazon.com/prescriptive-guidance/latest/integrate-third-party-services/images/guide-img/80f3a808-d645-486e-82c4-f574fdcf6710/images/d70ad29e-ce7f-4bf1-8fd0-a2ab6c7038e3.png)
+![Creating VPC peering connections between VPCs in different AWS accounts](https://docs.aws.amazon.com/prescriptive-guidance/latest/integrate-third-party-services/images/guide-img/80f3a808-d645-486e-82c4-f574fdcf6710/images/d70ad29e-ce7f-4bf1-8fd0-a2ab6c7038e3.png)
 
 VPC peering is subject to limitations, such as these connections do not support transitive peering relationships or overlapping CIDR blocks. In addition, there is a quota on the number of connections each VPC can have. For more information, see [VPC peering limitations](https://docs.aws.amazon.com/vpc/latest/peering/vpc-peering-basics.html#vpc-peering-limitations).
 

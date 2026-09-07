@@ -16,7 +16,7 @@ Most organizations have several environments outlined for use. However, the numb
 
 This section describes each environment in detail. It also describes the build steps, deployment steps, and exit criteria for each environment so that you can proceed to the next. The following image shows these environments in sequence.
 
-![Common DevOps environments in sequential order](http://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-git-branch-approach/images/guide-img/2c642ab1-73c3-487b-9aff-d887904354b7/images/d1ccb5b9-30b4-4bcf-b9dd-efa3f0be0f19.png)
+![Common DevOps environments in sequential order](https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-git-branch-approach/images/guide-img/2c642ab1-73c3-487b-9aff-d887904354b7/images/d1ccb5b9-30b4-4bcf-b9dd-efa3f0be0f19.png)
 
 Topics in this section:
 + [Sandbox environment](sandbox-environment.md)

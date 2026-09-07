@@ -50,7 +50,7 @@ The pattern provides best practices for handling the migration of stored procedu
 
 In the following diagram, AWS SCT copies and converts schema objects from the Amazon RDS for Oracle source database and sends the objects to the Amazon RDS for MySQL target database. AWS DMS replicates data from the source database and sends it to the Amazon RDS for MySQL instance.
 
-![AWS SCT, AWS DMS, and Amazon RDS deployed in a private subnet.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e1efa7c2-47c1-4677-80bc-6b19250fc0d6/images/b54a8442-9ab9-4074-b8f6-a08f87fa2f52.jpeg)
+![AWS SCT, AWS DMS, and Amazon RDS deployed in a private subnet.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e1efa7c2-47c1-4677-80bc-6b19250fc0d6/images/b54a8442-9ab9-4074-b8f6-a08f87fa2f52.jpeg)
 
 ## Tools
 <a name="migrate-from-amazon-rds-for-oracle-to-amazon-rds-for-mysql-tools"></a>

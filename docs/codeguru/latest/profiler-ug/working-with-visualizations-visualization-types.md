@@ -37,7 +37,7 @@ Thread main
       com.amazon.profiler.demo.Example.main(String[])
 ```
 
-![Image: Stack traces in overview 1.](http://docs.aws.amazon.com/codeguru/latest/profiler-ug/images/stacks-to-graph1.png)
+![Image: Stack traces in overview 1.](https://docs.aws.amazon.com/codeguru/latest/profiler-ug/images/stacks-to-graph1.png)
 
 ```
  Thread main
@@ -47,7 +47,7 @@ Thread main
       com.amazon.profiler.demo.Example.main(String[])
 ```
 
-![Image: Stack traces in overview 2.](http://docs.aws.amazon.com/codeguru/latest/profiler-ug/images/stacks-to-graph2.png)
+![Image: Stack traces in overview 2.](https://docs.aws.amazon.com/codeguru/latest/profiler-ug/images/stacks-to-graph2.png)
 
 ```
 Thread main
@@ -56,7 +56,7 @@ Thread main
       com.amazon.profiler.demo.Example.main(String[])
 ```
 
-![Image: Stack traces in overview 3.](http://docs.aws.amazon.com/codeguru/latest/profiler-ug/images/stacks-to-graph3.png)
+![Image: Stack traces in overview 3.](https://docs.aws.amazon.com/codeguru/latest/profiler-ug/images/stacks-to-graph3.png)
 
 ```
 Thread main
@@ -65,7 +65,7 @@ Thread main
       com.amazon.profiler.demo.Example.main(String[])
 ```
 
-![Image: Stack traces in overview 4.](http://docs.aws.amazon.com/codeguru/latest/profiler-ug/images/stacks-to-graph4.png)
+![Image: Stack traces in overview 4.](https://docs.aws.amazon.com/codeguru/latest/profiler-ug/images/stacks-to-graph4.png)
 
 As we collect more samples, the functions in which threads spend a lot of time appear wider in the visualization.
 
@@ -74,7 +74,7 @@ As we collect more samples, the functions in which threads spend a lot of time a
 
 An overview visualization can help you find specific call stacks that lead to inefficient code. You can find code that is running on the CPU by looking for flat tops in the visualization. The flat tops are areas where the CPU is doing work directly in that function.
 
-![Image: Overview.](http://docs.aws.amazon.com/codeguru/latest/profiler-ug/images/overview.png)
+![Image: Overview.](https://docs.aws.amazon.com/codeguru/latest/profiler-ug/images/overview.png)
 
 **Note**
 This example of an overview is in CPU view (see [Selecting and coloring thread states](working-with-visualizations-thread-states.md)).
@@ -101,7 +101,7 @@ You can use a hotspots visualization to investigate functions that are by themse
 ### Example
 <a name="working-with-visualizations-hotspots-visualization-example"></a>
 
-![Image: Overview.](http://docs.aws.amazon.com/codeguru/latest/profiler-ug/images/hotspots.png)
+![Image: Overview.](https://docs.aws.amazon.com/codeguru/latest/profiler-ug/images/hotspots.png)
 
 This overview example tells the following:
 + The `doOne` function has two different callers because there are two frames below it.

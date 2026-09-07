@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/stat
 
  The error handling of the main state machine is handled by using an Amazon CloudWatch Event Rule attached to an AWS Lambda function.
 
-![State machine error handling diagram](http://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-state-machine-error-handling.png)
+![State machine error handling diagram](https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-state-machine-error-handling.png)
 
  The event rule is configured to listen to `Step Functions Run Status Change` events with error statuses of **FAILED**, **ABORTED**, and **TIMED\_OUT** of the ingestion and analysis state machine runs. It then invokes a Lambda `error-handler` function to process the state machine run error.
 

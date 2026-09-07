@@ -12,6 +12,6 @@ Agent patterns are reusable, composable building blocks that can be tailored to 
 
 The triangle in the following diagram represents the core building blocks of a software agent: perception, reason, and action. This enables an agentic system to observe, make decisions, and act within its environment.
 
-![Agent model](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-patterns/images/guide-img/cde5ee68-ed86-4053-9fb1-d0dbf7199e24/images/e59d7cec-70f9-4d16-a5ca-15f09b26f4b0.png)
+![Agent model](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-patterns/images/guide-img/cde5ee68-ed86-4053-9fb1-d0dbf7199e24/images/e59d7cec-70f9-4d16-a5ca-15f09b26f4b0.png)
 
 By design, agentic patterns provide a modular design language for building AI systems, which means they're accessible, operational, extensible, and production ready. Designing these systems requires careful attention to the following three interrelated dimensions, which are further discussed later in this guide.

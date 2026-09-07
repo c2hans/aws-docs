@@ -11,15 +11,15 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 
  In a *cell-based architecture*, each cell is a complete, independent instance of the service and has a fixed maximum size. As load increases, workloads grow by adding more cells. A partition key is used on incoming traffic to determine which cell will process the request. Any failure is contained to the single cell it occurs in, so that the number of impaired requests is limited as other cells continue without error. It is important to identify the proper partition key to minimize cross-cell interactions and avoid the need to involve complex mapping services in each request. Services that require complex mapping end up merely shifting the problem to the mapping services, while services that require cross-cell interactions create dependencies between cells (and thus reduce the assumed availability improvements of doing so).
 
-![Diagram showing Cell-based architecture](http://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/images/cell-based-architecture.png)
+![Diagram showing Cell-based architecture](https://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/images/cell-based-architecture.png)
 
  In his AWS blog post, Colm MacCarthaigh explains how Amazon Route 53 uses the concept of [*shuffle sharding*](https://aws.amazon.com/blogs/architecture/shuffle-sharding-massive-and-magical-fault-isolation/) to isolate customer requests into shards. A shard in this case consists of two or more cells. Based on partition key, traffic from a customer (or resources, or whatever you want to isolate) is routed to its assigned shard. In the case of eight cells with two cells per shard, and customers divided among the four shards, 25% of customers would experience impact in the event of a problem.
 
-![Diagram showing a service divided into traditional shards](http://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/images/service-divided-into-traditional-shards.png)
+![Diagram showing a service divided into traditional shards](https://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/images/service-divided-into-traditional-shards.png)
 
  With shuffle sharding, you create virtual shards of two cells each, and assign your customers to one of those virtual shards. When a problem happens, you can still lose a quarter of the whole service, but the way that customers or resources are assigned means that the scope of impact with shuffle sharding is considerably smaller than 25%. With eight cells, there are 28 unique combinations of two cells, which means that there are 28 possible shuffle shards (virtual shards). If you have hundreds or thousands of customers, and assign each customer to a shuffle shard, then the scope of impact due to a problem is just 1/28th. That’s seven times better than regular sharding.
 
-![Diagram showing a service divided into shuffle shards.](http://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/images/service-divided-into-shuffle-shards.png)
+![Diagram showing a service divided into shuffle shards.](https://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/images/service-divided-into-shuffle-shards.png)
 
  A shard can be used for servers, queues, or other resources in addition to cells.
 

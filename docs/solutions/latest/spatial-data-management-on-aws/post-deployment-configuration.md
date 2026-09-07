@@ -53,11 +53,11 @@ Upon successful login, you will see different interfaces depending on your user 
 
  **Administrator User:**
 
-![First-time login portal view for administrator users showing full access to all features and management capabilities](http://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/first-time-login-portal-browser-adminuser.png)
+![First-time login portal view for administrator users showing full access to all features and management capabilities](https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/first-time-login-portal-browser-adminuser.png)
 
  **General User:**
 
-![First-time login portal view for general users showing standard access to portal features](http://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/first-time-login-portal-browser-user.png)
+![First-time login portal view for general users showing standard access to portal features](https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/first-time-login-portal-browser-user.png)
 
 **Note**
 The interface you see on first-time login will vary based on your assigned user group and permissions. Administrator users (members of the SpatialDataManagementAdministrators group) have access to additional management features and system configuration options. General users who are not part of the administrators group and have not been granted specific permissions to the Default Library or any Projects will see the standard portal interface with limited access until additional permissions are assigned to them.

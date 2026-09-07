@@ -2,14 +2,14 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/containers.html
 ---
 
-# ![AWS Containers category icon](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/containers-icon.jpg)Containers
+# ![AWS Containers category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/containers-icon.jpg)Containers
 <a name="containers"></a>
 
 AWS offers services that give you a secure place to store and manage your container images, orchestration that manages when and where your containers run, and flexible compute engines to power your containers. AWS can help manage your containers and their deployments for you, so you don't have to worry about the underlying infrastructure.
 
 Each service is described after the diagram. To help you decide which service best meets your needs, see [Choosing an AWS container service](https://docs.aws.amazon.com/decision-guides/latest/containers-on-aws-how-to-choose/choosing-aws-container-service.html) or [Amazon Lightsail, AWS Elastic Beanstalk, or Amazon EC2?](https://docs.aws.amazon.com/decision-guides/latest/lightsail-elastic-beanstalk-ec2/lightsail-elastic-beanstalk-ec2.html). For general information, see [Containers on AWS](https://aws.amazon.com/containers/services/).
 
-![Diagram showing AWS container services](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/container-options-on-aws.png)
+![Diagram showing AWS container services](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/container-options-on-aws.png)
 
 **Topics**
 + [Amazon Elastic Container Registry](#amazon-elastic-container-registry)

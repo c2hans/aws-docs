@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-r
 
 The approach for replatforming backend databases is different for COTS and in-house applications. This is because the source code is typically only available for in-house applications. The following illustration shows the replatforming options available for your application's backend databases.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-replatforming-cots-applications/images/guide-img/1c80030e-7c77-405d-a255-8740ee2bb30b/images/155322b8-d05d-4eb0-8571-a5c96f7a3067.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-replatforming-cots-applications/images/guide-img/1c80030e-7c77-405d-a255-8740ee2bb30b/images/155322b8-d05d-4eb0-8571-a5c96f7a3067.png)
 
 The following sections explain the replatforming approaches for backend databases belonging to COTS or in-house applications.
 

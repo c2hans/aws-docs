@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/rehost-serv
 
 The following diagram displays the architecture of the most restrictive scenario, where all traffic goes over the private channel (AWS VPN or AWS Direct Connect) between the source environment and AWS.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/rehost-servers-over-private-networks-mgn/images/guide-img/db816b63-918e-424c-861e-0630fc54fedf/images/e7418ef1-d0ff-4c73-aa2c-00c6bb1a8dad.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/rehost-servers-over-private-networks-mgn/images/guide-img/db816b63-918e-424c-861e-0630fc54fedf/images/e7418ef1-d0ff-4c73-aa2c-00c6bb1a8dad.png)
 
 The main components of this architecture are:
 + *Source environment* in the corporate data center (on the left). This is the environment to migrate from.

@@ -32,7 +32,7 @@ Workloads that are spread across cloud environments can encounter similar design
 
 When you operate your system in multiple CSPs, you must turn hard dependencies across environments into soft (flexible), asynchronous dependencies, as illustrated in the following diagram. When API calls are part of your business process, use patterns such as circuit breakers and exponential backoff.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-multicloud-fsi/images/guide-img/79fe34d7-841b-4bd6-a6da-96f5401c6a67/images/cf7e2d6a-447e-44ae-b509-8622632dab83.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-multicloud-fsi/images/guide-img/79fe34d7-841b-4bd6-a6da-96f5401c6a67/images/cf7e2d6a-447e-44ae-b509-8622632dab83.png)
 
 To transfer large amounts of data between cloud environments, use a bulk export approach. This approach enables faster data transfer than a series of synchronous API calls, simplifies data validation, and works with object storage across all cloud providers. One `PUT` operation is cleaner, faster, safer, easier to audit, and less expensive than millions (or billions) of `PUT` operations.
 

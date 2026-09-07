@@ -9,7 +9,7 @@ Your app can pass the tokens from a signed-in user to [Amazon Verified Permissio
 
 The following diagram shows how your application can pass a user's token to Verified Permissions in an authorization request.
 
-![A flow diagram of an application that authenticates with an Amazon Cognito user pool and authorizes access to local resources with Amazon Verified Permissions.](http://docs.aws.amazon.com/cognito/latest/developerguide/images/access-services-local-resources.png)
+![A flow diagram of an application that authenticates with an Amazon Cognito user pool and authorizes access to local resources with Amazon Verified Permissions.](https://docs.aws.amazon.com/cognito/latest/developerguide/images/access-services-local-resources.png)
 
 **Get started with Amazon Verified Permissions**
 After you integrate your user pool with Verified Permissions, you gain a central source of granular authorization for all of your Amazon Cognito apps. This removes the need for fine-grained security logic that you would otherwise have to code and replicate between all of your apps. For more information about authorization with Verified Permissions, see [Authorization with Amazon Verified Permissions](amazon-cognito-authorization-with-avp.md).

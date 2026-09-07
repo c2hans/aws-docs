@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/developer-tools.html
 ---
 
-# ![AWS Developer Tools category icon](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/dev-tools-icon.jpg)Developer tools
+# ![AWS Developer Tools category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/dev-tools-icon.jpg)Developer tools
 <a name="developer-tools"></a>
 
 **Topics**

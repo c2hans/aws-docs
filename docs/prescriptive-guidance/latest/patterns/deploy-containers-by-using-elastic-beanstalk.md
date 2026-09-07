@@ -45,7 +45,7 @@ Use cases for Elastic Beanstalk include the following:
 
 **Target architecture **
 
-![Architecture for deploying containers with Elastic Beanstalk.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/dfabcdc2-747f-40e2-a603-08ea31ba71d3/images/1d17ff09-1aea-4c72-adb5-eaf741601428.png)
+![Architecture for deploying containers with Elastic Beanstalk.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/dfabcdc2-747f-40e2-a603-08ea31ba71d3/images/1d17ff09-1aea-4c72-adb5-eaf741601428.png)
 
 **Automation and scale**
 

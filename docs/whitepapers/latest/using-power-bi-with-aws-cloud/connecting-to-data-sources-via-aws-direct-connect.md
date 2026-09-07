@@ -9,7 +9,7 @@ AWS Direct Connect links your internal network to an AWS Direct Connect location
 
 In this model, the customer’s on-premises network is connected through AWS Direct Connect directly to the AWS network. While there are multiple methods for configuring AWS Direct Connect, in its simplest mode, you are given access to IP ranges within a VPC using a construct known as a private virtual interfaces (private VIF). You access to the internet/public IP ranges using a public virtual interface (public VIF).
 
-![A diagram depicting Power BI Desktop connecting to AWS data sources over AWS Direct Connect](http://docs.aws.amazon.com/whitepapers/latest/using-power-bi-with-aws-cloud/images/powerbi4.png)
+![A diagram depicting Power BI Desktop connecting to AWS data sources over AWS Direct Connect](https://docs.aws.amazon.com/whitepapers/latest/using-power-bi-with-aws-cloud/images/powerbi4.png)
 
 *Connecting Power BI Desktop to AWS data sources over AWS Direct Connect *
 

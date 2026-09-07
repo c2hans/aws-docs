@@ -21,7 +21,7 @@ This pattern creates a REST API endpoint by using [Amazon API Gateway](https://a
 ## Architecture
 <a name="integrate-amazon-api-gateway-with-amazon-sqs-to-handle-asynchronous-rest-apis-architecture"></a>
 
-![Architecture for integrating API Gateway with Amazon SQS](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/70984dee-e49f-4446-9d52-49ce826c3909/images/737ba0b2-da8f-4478-8c54-0a4835fd69f9.png)
+![Architecture for integrating API Gateway with Amazon SQS](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/70984dee-e49f-4446-9d52-49ce826c3909/images/737ba0b2-da8f-4478-8c54-0a4835fd69f9.png)
 
 The diagram illustrates these steps:
 

@@ -12,7 +12,7 @@ To connect to your volume target, your gateway must have an upload buffer config
 
 The following diagram highlights the iSCSI target in the larger picture of the Storage Gateway architecture. For more information, see [How Volume Gateway works](StorageGatewayConcepts.md).
 
-![Storage Gateway resources exposed as iSCSI targets connected to an application server.](http://docs.aws.amazon.com/storagegateway/latest/vgw/images/ArchitectureDiagram_HighlightediSCSI-diagram.png)
+![Storage Gateway resources exposed as iSCSI targets connected to an application server.](https://docs.aws.amazon.com/storagegateway/latest/vgw/images/ArchitectureDiagram_HighlightediSCSI-diagram.png)
 
 You can connect to your volume from either a Windows or Red Hat Linux client. You can optionally configure CHAP for either client type.
 

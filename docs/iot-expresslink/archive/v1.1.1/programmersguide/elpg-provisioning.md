@@ -104,7 +104,7 @@ The configuration parameter Endpoint (see [Table 2 - Configuration dictionary pe
 
 **9.3.2.5**   When (and only when) in the *onboarded* state, a connected ExpressLink module subscribes automatically to several AWS-reserved topics as required to support OTA and other core ExpressLink functionality. In the same way, features dependent on the AWS IoT Device Defender and AWS IoT Device Shadow services are supported only when a module is in the *onboarded* state.
 
-<a name="elpg-figure6"></a>![Figure 6 - ExpressLink onboarding states diagram](http://docs.aws.amazon.com/iot-expresslink/archive/v1.1.1/programmersguide/images/image5.png)
+<a name="elpg-figure6"></a>![Figure 6 - ExpressLink onboarding states diagram](https://docs.aws.amazon.com/iot-expresslink/archive/v1.1.1/programmersguide/images/image5.png)
 
 Once onboarded, all ExpressLink modules behave as fully owned devices and connect to the customer/OEM account as the ExpressLink things are transferred to the chosen OEM registry. It is the responsibility of the OEM to manage the product life cycle, use the OTA services to apply module updates (with images provided by the ExpressLink module vendor) and apply host processor application updates as needed.
 

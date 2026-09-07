@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/data-lake-f
 
 The following diagram shows this guide's reference architecture for growing and scaling a data lake on the AWS Cloud.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/data-lake-for-growth-scale/images/guide-img/dab5abfa-9d34-4ff1-9eb1-8a82c673378f/images/76ed6d32-cb10-48fb-b937-80c2da72967b.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/data-lake-for-growth-scale/images/guide-img/dab5abfa-9d34-4ff1-9eb1-8a82c673378f/images/76ed6d32-cb10-48fb-b937-80c2da72967b.png)
 
 The diagram shows the following components:
 

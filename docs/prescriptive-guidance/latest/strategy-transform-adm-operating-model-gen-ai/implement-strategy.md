@@ -12,7 +12,7 @@ As shown in the following diagram, the implementation strategy consists of phase
 + **Phase 2: Capability building** – This phase occurs in months 3-6. It expands AI adoption and addresses processes of medium complexity. Launch your AI COE, expand AI adoption to project management and operations roles, and collaborate with your ADM partners to redesign key SDLC processes using generative AI.
 + **Phase 3: Transformation scaling** – This phase occurs in months 6–12 (and beyond). It implements advanced solutions and tackles higher complexity challenges. For example, implement advanced AI solutions for architecture design, full-stack development, and security monitoring. Mature your AI governance to an enterprise level, and evolve your contractual relationships with ADM partners to reflect the new AI-powered reality.
 
-![Multiple phases of strategy to implement an AI-powered ADM operating model.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-transform-adm-operating-model-gen-ai/images/guide-img/b9a9e359-a4e7-4079-8cd0-44ed873cc2c3/images/1224c715-6b6d-4d33-a036-cab6672105ae.png)
+![Multiple phases of strategy to implement an AI-powered ADM operating model.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-transform-adm-operating-model-gen-ai/images/guide-img/b9a9e359-a4e7-4079-8cd0-44ed873cc2c3/images/1224c715-6b6d-4d33-a036-cab6672105ae.png)
 
 **Note**
 Before beginning implementation, conduct an AI-powered SDLC readiness assessment to establish a baseline of your organization's current SDLC capabilities and identify key areas for improvement. For more details, see [Next steps](next-steps.md).

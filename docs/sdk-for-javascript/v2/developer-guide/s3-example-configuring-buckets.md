@@ -7,7 +7,7 @@ The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you 
 # Configuring Amazon S3 Buckets
 <a name="s3-example-configuring-buckets"></a>
 
-![JavaScript code example that applies to Node.js execution](http://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/nodeicon.png)
+![JavaScript code example that applies to Node.js execution](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/nodeicon.png)
 
 **This Node.js code example shows:**
 + How to configure the cross-origin resource sharing (CORS) permissions for a bucket.

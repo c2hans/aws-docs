@@ -60,4 +60,4 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-da
 
 The following screenshot shows NoSQL Workbench.
 
-![Screenshot showing NoSQL Workbench.](http://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-data-modeling/images/guide-img/225c2600-95f1-4c8c-9e23-419bc7ae3c55/images/47f3a9c6-75f6-4d92-a2c9-a5af8e87cbc1.jpeg)
+![Screenshot showing NoSQL Workbench.](https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-data-modeling/images/guide-img/225c2600-95f1-4c8c-9e23-419bc7ae3c55/images/47f3a9c6-75f6-4d92-a2c9-a5af8e87cbc1.jpeg)

@@ -17,17 +17,17 @@ For example requests, responses, cURL, and CLI commands for this API, see [How t
 ------
 #### [ City ]
 
-![](http://docs.aws.amazon.com/location/latest/developerguide/images/dynamic-city.png)
+![](https://docs.aws.amazon.com/location/latest/developerguide/images/dynamic-city.png)
 
 ------
 #### [ Roads ]
 
-![](http://docs.aws.amazon.com/location/latest/developerguide/images/dynamic-roads.png)
+![](https://docs.aws.amazon.com/location/latest/developerguide/images/dynamic-roads.png)
 
 ------
 #### [ Park ]
 
-![](http://docs.aws.amazon.com/location/latest/developerguide/images/dynamic-parks.png)
+![](https://docs.aws.amazon.com/location/latest/developerguide/images/dynamic-parks.png)
 
 ------
 

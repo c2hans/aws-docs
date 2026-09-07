@@ -14,7 +14,7 @@ If your job is taking too much time, but executors are consuming sufficient reso
 
 In the following example, four executors are running at more than 97 percent CPU load*, *but processing has not been completed after about three hours.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/bdff4ca8-7a07-4ff0-aafa-d47854d46666.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/bdff4ca8-7a07-4ff0-aafa-d47854d46666.png)
 
 |
 |
@@ -26,11 +26,11 @@ In the following example, four executors are running at more than 97 percent CPU
 
 On the **Job** tab or the** Stage** tab, you can see the number of tasks for each job or stage. In the following example, Spark has created `58100` tasks.
 
-![Stages for All Jobs showing one stage and 58,100 tasks.](http://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/f528359e-a638-4fb7-91ed-be18410bb5db.png)
+![Stages for All Jobs showing one stage and 58,100 tasks.](https://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/f528359e-a638-4fb7-91ed-be18410bb5db.png)
 
 On the **Executor** tab, you can see the total number of executors and tasks. In the following screenshot, each Spark executor has four cores and can perform four tasks concurrently.
 
-![Executors table showing the Cores column.](http://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/ca6082e8-94ff-4c34-95e7-50e89698b62e.png)
+![Executors table showing the Cores column.](https://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/ca6082e8-94ff-4c34-95e7-50e89698b62e.png)
 
 In this example, the number of Spark tasks (`58100)` is much larger than the 16 tasks that the executors can process concurrently (4 executors × 4 cores ).
 

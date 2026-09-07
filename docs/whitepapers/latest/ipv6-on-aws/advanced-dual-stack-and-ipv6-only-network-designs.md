@@ -28,7 +28,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/advanced-
 
  Once inside the outbound traffic VPC, it is forwarded to the NAT66 instance which translates the packet’s source IP to its own. For additional security, the NAT66 instance may provide firewall functionality. To achieve high availability, you can add multiple Availability Zones, or attach routing appliances using Transit Gateway Connect.
 
-![This is a diagram that illustrates centralized internet outbound traffic with NAT66.](http://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/images/centralized-internet-outbound-traffic-with-nat66.png)
+![This is a diagram that illustrates centralized internet outbound traffic with NAT66.](https://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/images/centralized-internet-outbound-traffic-with-nat66.png)
 
 **Note**
 Centralized outbound traffic is applicable if you require centralized traffic inspection. With an outbound traffic only internet gateway, AWS makes it easy to achieve distributed outbound traffic. However, if there is an outbound traffic inspection requirement and it cannot be done in each VPC, the centralized pattern is useful.
@@ -39,7 +39,7 @@ Centralized outbound traffic is applicable if you require centralized traffic in
 
  Transit gateways can attach to VPCs with overlapping IP address CIDRs. This is because the TGW isn’t affected by the address space used in a VPC apart from when it comes to configuring routes. While it is possible to attach a TGW to VPCs with overlapping CIDRs it is not possible to have conflicting routes. However, because IPv6 prefixes are globally unique it can provide connectivity between hosts residing in VPCs with overlapping IP CIDRs.
 
-![This is a diagram that illustrates IPv6-only routing with AWS Transit Gateway.](http://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/images/ipv6-only-routing-with-aws-transit-gateway.png)
+![This is a diagram that illustrates IPv6-only routing with AWS Transit Gateway.](https://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/images/ipv6-only-routing-with-aws-transit-gateway.png)
 
  **Amazon EKS IPv6 clusters**
 

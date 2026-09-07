@@ -17,7 +17,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/model-based-systems-e
 
  The term **system** here is a wide-range definition, including hardware, software, information, processes, people, configurations, supply chains, regulators and geographies. One of the fundamental functions of SE is to conduct the **V**erification and **V**alidation **(V&V)** of the product development and overall lifecycle.
 
-![Diagrams showing Verification and Validation through a product development, MBSE, traditional SE cost and cost of defects to the project](http://docs.aws.amazon.com/whitepapers/latest/model-based-systems-engineering/images/verification-and-validation.png)![Diagrams showing Verification and Validation through a product development, MBSE, traditional SE cost and cost of defects to the project](http://docs.aws.amazon.com/whitepapers/latest/model-based-systems-engineering/images/cost-vs-time.png)![Diagrams showing Verification and Validation through a product development, MBSE, traditional SE cost and cost of defects to the project](http://docs.aws.amazon.com/whitepapers/latest/model-based-systems-engineering/images/mbse-effort-vs-time.png)
+![Diagrams showing Verification and Validation through a product development, MBSE, traditional SE cost and cost of defects to the project](https://docs.aws.amazon.com/whitepapers/latest/model-based-systems-engineering/images/verification-and-validation.png)![Diagrams showing Verification and Validation through a product development, MBSE, traditional SE cost and cost of defects to the project](https://docs.aws.amazon.com/whitepapers/latest/model-based-systems-engineering/images/cost-vs-time.png)![Diagrams showing Verification and Validation through a product development, MBSE, traditional SE cost and cost of defects to the project](https://docs.aws.amazon.com/whitepapers/latest/model-based-systems-engineering/images/mbse-effort-vs-time.png)
 
 (V&V figures are adapted from [Clarus Concept of Operations](https://web.archive.org/web/20090705102848/http:/www.itsdocs.fhwa.dot.gov/jpodocs/repts_te/14158_files/14158.pdf), [Archived on 2009-07-05](https://web.archive.org/web/20090705102900/http:/www.itsdocs.fhwa.dot.gov/jpodocs/repts_te/14158.htm) at the [Wayback Machine](https://en.wikipedia.org/wiki/Wayback_Machine), Publication No. FHWA-JPO-05-072, Federal Highway Administration (FHWA), 2005.)
 
@@ -29,7 +29,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/model-based-systems-e
 
  Traditionally, Systems Engineers follow a **document-based approach**. The challenge is the inability to adapt to changes and complications with collaboration due to a large number of stakeholders and moving parts in the projects that overall slows down the product development process.
 
-![Diagram showing Document Based SE MBSE](http://docs.aws.amazon.com/whitepapers/latest/model-based-systems-engineering/images/document-based-se-mbse.png)
+![Diagram showing Document Based SE MBSE](https://docs.aws.amazon.com/whitepapers/latest/model-based-systems-engineering/images/document-based-se-mbse.png)
 
  Meanwhile, in the diagram above, you can see on the left side the challenge of a traditional approach.
 
@@ -73,7 +73,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/model-based-systems-e
 
  To do that, MBSE follows **[Unified Modeling Language (UML)](https://www.omg.org/spec/UML/2.5.1/PDF)** standard. Some examples are SysML (see *Flexible Views for View-based Model-driven Development* By Burger, Erik. KIT Scientific Publishing, Nov 14, 2014. Pg. 250), OPM (see Dori, Dov. "Object-process analysis: maintaining the balance between system structure and behaviour." *Journal of Logic and Computation* 5, no. 2 (1995): 227-249), [ARCADIA](https://www.eclipse.org/capella/arcadia.html), and others where the popular is **SysML (System Modeling Language)**. SysML is an extension to UML specialized for SE applications and originally created as open-source. Currently, AWS does not have native SysML libraries. However, you can bring your own library (BYOL) and build SDKs for your needs. AWS Solutions Architects, AWS Partners, and/or AWS Professional Services will help you in every step.
 
-![Diagram showing Harnessing requirements, structures and behaviors with MBSE](http://docs.aws.amazon.com/whitepapers/latest/model-based-systems-engineering/images/harnessing-requirements.png)
+![Diagram showing Harnessing requirements, structures and behaviors with MBSE](https://docs.aws.amazon.com/whitepapers/latest/model-based-systems-engineering/images/harnessing-requirements.png)
 
  The next important concept in MBSE is **Ontology. ** Ontology establishes well-defined domain concepts in terms of the *objects*, *definitions*, and *relationships* inside and among the systems by bringing **formal semantics**. It is especially the case since these are **“systems of systems**” where each system is made of multitude of systems.
 
@@ -81,7 +81,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/model-based-systems-e
 
  This formalized application of modeling and simulation improves system requirements definition, design, verification and validation, operation, and overall performance.
 
-![A graph model made of different types of objects (nodes) and relations with each has different metadata changing in time (left), a change in the object propagating changes backwards and forwards and new object addition compatibility analysis (right).](http://docs.aws.amazon.com/whitepapers/latest/model-based-systems-engineering/images/graph-model.png)
+![A graph model made of different types of objects (nodes) and relations with each has different metadata changing in time (left), a change in the object propagating changes backwards and forwards and new object addition compatibility analysis (right).](https://docs.aws.amazon.com/whitepapers/latest/model-based-systems-engineering/images/graph-model.png)
 
  The other concept that enables an MBSE model is called **Digital Thread**. The “thread” should be a standardized way to “connect” or “plug” the different types of models into a system of systems model. You may notice the overall features of the MBSE forms a “**graph**” or “network topography” as shown in the diagram above.
 

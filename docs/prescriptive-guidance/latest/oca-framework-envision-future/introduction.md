@@ -15,7 +15,7 @@ The AWS Organizational Change Acceleration (OCA) 6-Point Framework is intended t
 
 The framework's six points align with an agile sprint cadence, from program initiation through sustainable long-term change. The following diagram shows these six points and their subpoints.
 
-![Envision the Future phase of the AWS OCA Framework.](http://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-envision-future/images/guide-img/7134122a-df9a-4cfe-995a-6903c8a3790f/images/11dc4773-7442-4ffb-ac40-3e62d53c918a.png)
+![Envision the Future phase of the AWS OCA Framework.](https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-envision-future/images/guide-img/7134122a-df9a-4cfe-995a-6903c8a3790f/images/11dc4773-7442-4ffb-ac40-3e62d53c918a.png)
 
 The third point, *Envision the Future*, helps create a change acceleration strategy and plan to communicate, train, and engage the employees of the organization in their cloud adoption journey. It contains seven subpoints:
 + [3.1 Change strategy and plan](change.md). Summarize the strategy and plan for full change acceleration across workstreams. Ensure alignment and understanding across workstream leads and leadership.

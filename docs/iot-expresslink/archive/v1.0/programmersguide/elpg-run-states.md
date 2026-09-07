@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/archive/v1.0/programmers
 
 An ExpressLink module operates as a state machine that moves through a number of internal states (see [figure 2](#elpg-figure2) for a partial representation).
 
-<a name="elpg-figure2"></a>![Figure 2 - ExpressLink internal states diagram (partial)](http://docs.aws.amazon.com/iot-expresslink/archive/v1.0/programmersguide/images/internal-states.png)
+<a name="elpg-figure2"></a>![Figure 2 - ExpressLink internal states diagram (partial)](https://docs.aws.amazon.com/iot-expresslink/archive/v1.0/programmersguide/images/internal-states.png)
 
 The application or host processor is presented with a small command set that is independent from the connectivity solution offered by the specific module (such as ethernet, cellular, and Wi-Fi).
 

@@ -13,4 +13,4 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 
 1. View the Pod/Cluster level metrics.
 
-![CloudWatch Container Insights dashboard showing EKS cluster performance metrics and status.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/hyperpod-eks-CIdashboard.png)
+![CloudWatch Container Insights dashboard showing EKS cluster performance metrics and status.](https://docs.aws.amazon.com/sagemaker/latest/dg/images/hyperpod-eks-CIdashboard.png)

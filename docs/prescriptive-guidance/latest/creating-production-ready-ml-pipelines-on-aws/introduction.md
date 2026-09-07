@@ -24,4 +24,4 @@ The process for creating a production-ready ML pipeline consists of the followin
 
 The following diagram illustrates the major steps in this process.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/creating-production-ready-ml-pipelines-on-aws/images/guide-img/38c6f8a0-9908-46ce-9db4-ad6b4c4bc218/images/418882f7-3813-46b1-98d4-a64d37ec0c7a.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/creating-production-ready-ml-pipelines-on-aws/images/guide-img/38c6f8a0-9908-46ce-9db4-ad6b4c4bc218/images/418882f7-3813-46b1-98d4-a64d37ec0c7a.png)

@@ -15,7 +15,7 @@ Users can search for evaluated contacts and view evaluations side-by-side alongs
 1. In Connect Customer choose **Analytics and optimization**, **Contact search**.
 
 1. Use the filters on the page to narrow your search. For the date selection, you can search for up to 8 weeks of contacts at a time. You can review contacts and associated evaluations from up to 2 years ago.
-![The search filters for evaluations.](http://docs.aws.amazon.com/connect/latest/adminguide/images/evaluationforms-searchfilters1.png)
+![The search filters for evaluations.](https://docs.aws.amazon.com/connect/latest/adminguide/images/evaluationforms-searchfilters1.png)
 
 1. Choose the contact ID in the search results to open a contact and review associated evaluations.
 
@@ -28,9 +28,9 @@ Users can search for evaluated contacts and view evaluations side-by-side alongs
 
 1. Choose the evaluation to review the completed evaluation.
 
-![The list view of evaluations on the contact details page.](http://docs.aws.amazon.com/connect/latest/adminguide/images/evaluation-listView.png)
+![The list view of evaluations on the contact details page.](https://docs.aws.amazon.com/connect/latest/adminguide/images/evaluation-listView.png)
 
-![The detail view of an evaluation on the contact details page.](http://docs.aws.amazon.com/connect/latest/adminguide/images/evaluation-detailView.png)
+![The detail view of an evaluation on the contact details page.](https://docs.aws.amazon.com/connect/latest/adminguide/images/evaluation-detailView.png)
 
 **AI answer details in submitted evaluations**
 When you view a submitted evaluation that contains answers filled using native generative AI, you can also view the AI answer details. These details include the reasoning behind each AI answer and the relevant reference points from the transcript. AI answer details appear only when the submitted answer matches the answer that AI provided.

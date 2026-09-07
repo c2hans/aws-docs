@@ -20,11 +20,11 @@ This section helps you analyze coupling and cohesion patterns in your monolithic
 
 The following image shows loose coupling with high cohesion. The components in the database work together to perform a specific function, and you minimize the impact of change on a single component. This is the ideal state.
 
-![Components have loose coupling and high cohesion.](http://docs.aws.amazon.com/prescriptive-guidance/latest/database-decomposition/images/guide-img/6bdbec4e-98b8-4cd1-adda-f196258cf753/images/d8340f09-3dfe-4427-98a4-3ef8d100d644.png)
+![Components have loose coupling and high cohesion.](https://docs.aws.amazon.com/prescriptive-guidance/latest/database-decomposition/images/guide-img/6bdbec4e-98b8-4cd1-adda-f196258cf753/images/d8340f09-3dfe-4427-98a4-3ef8d100d644.png)
 
 The following image shows high coupling with low cohesion. The database components are disconnected, and changes are highly likely to impact other components.
 
-![Components have high coupling and low cohesion.](http://docs.aws.amazon.com/prescriptive-guidance/latest/database-decomposition/images/guide-img/6bdbec4e-98b8-4cd1-adda-f196258cf753/images/1ea05b97-30f1-4a19-a241-301655845a14.png)
+![Components have high coupling and low cohesion.](https://docs.aws.amazon.com/prescriptive-guidance/latest/database-decomposition/images/guide-img/6bdbec4e-98b8-4cd1-adda-f196258cf753/images/1ea05b97-30f1-4a19-a241-301655845a14.png)
 
 ## Common coupling patterns in monolithic databases
 <a name="coupling-patterns"></a>
@@ -249,7 +249,7 @@ Look for tables that demonstrate two key characteristics:
 
 The following coupling-cohesion matrix can help you identify the difficulty of decoupling each table. Tables that appear in the upper-right quadrant of this matrix are ideal candidates for initial decoupling efforts because they're the easiest to separate. In an ER diagram, these tables have few foreign key relationships or other dependencies. After you have decoupled these tables, progress toward tables with more complex relationships.
 
-![Upper-right quadrant is easy, and lower-left quadrant is hard.](http://docs.aws.amazon.com/prescriptive-guidance/latest/database-decomposition/images/guide-img/6bdbec4e-98b8-4cd1-adda-f196258cf753/images/40a152be-d75b-4a39-b9b0-56dbf1f8e265.png)
+![Upper-right quadrant is easy, and lower-left quadrant is hard.](https://docs.aws.amazon.com/prescriptive-guidance/latest/database-decomposition/images/guide-img/6bdbec4e-98b8-4cd1-adda-f196258cf753/images/40a152be-d75b-4a39-b9b0-56dbf1f8e265.png)
 
 **Note**
 Database structure often mirrors application architecture. Tables that are easier to decouple at the database level typically correspond to components that are easier to convert into microservices at the application level.

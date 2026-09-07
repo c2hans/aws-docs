@@ -62,7 +62,7 @@ This pattern focuses on providing the following target outcomes:
 
 The following diagram shows the example AWS environment that is required for this pilot.
 
-![Stonebranch UAC interacting with AWS Mainframe Modernization environment.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/01c6f9fa-87e6-459a-b694-5e03dd7f7952/images/4a7bea37-0a5b-4663-902b-9b051e92f0cb.png)
+![Stonebranch UAC interacting with AWS Mainframe Modernization environment.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/01c6f9fa-87e6-459a-b694-5e03dd7f7952/images/4a7bea37-0a5b-4663-902b-9b051e92f0cb.png)
 
 1. Stonebranch Universal Automation Center (UAC) includes two main components: Universal Controller and Universal Agents. Stonebranch OMS is used as a message bus between the controller and individual agents.
 
@@ -100,7 +100,7 @@ The following diagram shows the example AWS environment that is required for thi
 
 The following diagram represents Stonebranch’s job conversion process during the modernization journey. It describes how the job schedules and tasks definitions are converted into a compatible format that can run AWS Mainframe Modernization batch tasks.
 
-![Process from the mainframe to conversion to job scheduler on Amazon EC2 with JCL files in Amazon S3.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/01c6f9fa-87e6-459a-b694-5e03dd7f7952/images/4d2ed890-f143-455e-8180-4d967b71c494.png)
+![Process from the mainframe to conversion to job scheduler on Amazon EC2 with JCL files in Amazon S3.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/01c6f9fa-87e6-459a-b694-5e03dd7f7952/images/4d2ed890-f143-455e-8180-4d967b71c494.png)
 
 1. For the conversion process, the job definitions are exported from the existing mainframe system.
 
@@ -114,7 +114,7 @@ The following diagram represents Stonebranch’s job conversion process during t
 
 The following architecture diagram represents an active-active-passive model of high availability (HA) Universal Controller. Stonebranch UAC is deployed in multiple Availability Zones to provide high availability and support disaster recovery (DR).
 
-![Multi-AZ environment with DR and controllers, Amazon EFS, Aurora, and an S3 bucket for backups.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/01c6f9fa-87e6-459a-b694-5e03dd7f7952/images/3f94b855-c146-4fcb-902c-5d343438a558.png)
+![Multi-AZ environment with DR and controllers, Amazon EFS, Aurora, and an S3 bucket for backups.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/01c6f9fa-87e6-459a-b694-5e03dd7f7952/images/3f94b855-c146-4fcb-902c-5d343438a558.png)
 
 *Universal Controller*
 
@@ -278,12 +278,12 @@ The code for this pattern is available in the [aws-mainframe-modernization-stone
 
 **Icons in the Workflow Editor**
 
-![RUNHELLO task at the top, FOOBAR in the middle, and the remaining tasks at the third level.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/01c6f9fa-87e6-459a-b694-5e03dd7f7952/images/837430ee-3159-4fe2-8e17-65168294ef1e.png)
+![RUNHELLO task at the top, FOOBAR in the middle, and the remaining tasks at the third level.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/01c6f9fa-87e6-459a-b694-5e03dd7f7952/images/837430ee-3159-4fe2-8e17-65168294ef1e.png)
 
 **All tasks connected**
 
-![RUNHELLO connects to FOOBAR, which connects to the three remaining tasks.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/01c6f9fa-87e6-459a-b694-5e03dd7f7952/images/fe483348-9a6f-450b-87e6-ceae6b2bdaad.png)
+![RUNHELLO connects to FOOBAR, which connects to the three remaining tasks.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/01c6f9fa-87e6-459a-b694-5e03dd7f7952/images/fe483348-9a6f-450b-87e6-ceae6b2bdaad.png)
 
 **Workflow status**
 
-![FOOBAR task fails and the remaining three tasks are waiting.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/01c6f9fa-87e6-459a-b694-5e03dd7f7952/images/5ea4e239-fbbe-4fa4-9ffa-b7a9443b7975.png)
+![FOOBAR task fails and the remaining three tasks are waiting.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/01c6f9fa-87e6-459a-b694-5e03dd7f7952/images/5ea4e239-fbbe-4fa4-9ffa-b7a9443b7975.png)

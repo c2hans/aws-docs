@@ -59,7 +59,7 @@ AWS Backint Agent supports the following databases:
 
 The following diagram shows the installation scripts that install AWS Backint Agent, the S3 bucket, and Systems Manager and EventBridge, which use a Command document to schedule regular backups.
 
-![Workflow for scheduling regular backups.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/0aa22a27-d100-483d-95f9-c3101f40402c/images/201d2b9a-b88e-4432-82cd-240b81da981e.png)
+![Workflow for scheduling regular backups.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/0aa22a27-d100-483d-95f9-c3101f40402c/images/201d2b9a-b88e-4432-82cd-240b81da981e.png)
 
 **Automation and scale**
 + Multiple AWS Backint Agents can be installed by using a Systems Manager Automation runbook.

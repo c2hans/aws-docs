@@ -31,7 +31,7 @@ You must enable [cross-Region aggregation](https://docs.aws.amazon.com/securityh
 
 The following diagram shows an architecture for using Security Hub CSPM to identify public Amazon S3 buckets.
 
-![Diagram showing cross-account replication workflow](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7e365290-e3e9-460a-b69f-669ba459cf4c/images/381d66ac-ec03-4458-9793-9d125cebdba6.png)
+![Diagram showing cross-account replication workflow](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7e365290-e3e9-460a-b69f-669ba459cf4c/images/381d66ac-ec03-4458-9793-9d125cebdba6.png)
 
 The diagram show the following workflow:
 

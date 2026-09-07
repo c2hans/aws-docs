@@ -9,7 +9,7 @@ The solution provides an optional demo UI that you can deploy into your AWS acco
 
  **Screenshot of demo UI showing image source, original image, editing options, preview, code, and encoded URL.**
 
-![Screenshot of the demo UI showing an example image transformation](http://docs.aws.amazon.com/solutions/latest/dynamic-image-transformation-for-amazon-cloudfront/images/demo-ui-example.png)
+![Screenshot of the demo UI showing an example image transformation](https://docs.aws.amazon.com/solutions/latest/dynamic-image-transformation-for-amazon-cloudfront/images/demo-ui-example.png)
 
 Follow this procedure to experiment with the supported image editing features, preview the results, and create example URLs that you can use in your applications:
 

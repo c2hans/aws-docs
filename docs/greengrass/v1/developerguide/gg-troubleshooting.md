@@ -391,7 +391,7 @@ Use the following information to help troubleshoot deployment issues.
 1. On the group configuration page, choose the **Deployments** tab. This page displays the deployment history for the group, including the date and time, group version, and status of each deployment attempt.
 
 1. Find the row that contains the deployment you want to redeploy. Select the deployment you want to redeploy and choose **Redeploy**.
-![Deployments page showing the Re-Deploy action for a deployment.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/console-group-redeployment.png)
+![Deployments page showing the Re-Deploy action for a deployment.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/console-group-redeployment.png)
 
 **To redeploy a deployment (CLI)**
 

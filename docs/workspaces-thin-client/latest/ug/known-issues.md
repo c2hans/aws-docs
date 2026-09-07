@@ -44,7 +44,7 @@ End of support notice: On March 31, 2027, AWS will end support for Amazon WorkSp
 
 **Workaround:** Check that the input method within the session is set to the corresponding language. For example, if you want to use an Italian layout keyboard, set the input method to Italian within the session. See the following figure.
 
-![Italian keyboard layout](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/windows_language_input.png)
+![Italian keyboard layout](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/windows_language_input.png)
 
 ## Toolbar does not expand or collapse when you select it for the first time.
 <a name="toolbar-first-expand"></a>

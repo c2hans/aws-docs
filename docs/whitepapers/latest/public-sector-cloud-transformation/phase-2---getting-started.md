@@ -19,7 +19,7 @@ The [AWS Well-Architected Framework](https://aws.amazon.com/blogs/apn/the-5-pill
 
 The process for reviewing an architecture is a constructive conversation about architectural decisions, and is not an audit mechanism. Having well-architected systems greatly increases the likelihood of business success.
 
-![A diagram showing the AWS Well-Architected elements.](http://docs.aws.amazon.com/whitepapers/latest/public-sector-cloud-transformation/images/cloud-transformation4.png)
+![A diagram showing the AWS Well-Architected elements.](https://docs.aws.amazon.com/whitepapers/latest/public-sector-cloud-transformation/images/cloud-transformation4.png)
 
 * AWS Well-Architected elements *
 

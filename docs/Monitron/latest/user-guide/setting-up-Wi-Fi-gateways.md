@@ -13,7 +13,7 @@ To learn about using Amazon Monitron with Ethernet gateways, see [Ethernet gatew
 
 The Amazon Monitron gateway is easy to install and operate. After plugging in the power cable, you can put the gateway in commissioning mode by pressing the commissioning button.
 
-![Gateway device with LED lights, commissioning button, and power cable connected to outlet.](http://docs.aws.amazon.com/Monitron/latest/user-guide/images/gateway-physical.png)
+![Gateway device with LED lights, commissioning button, and power cable connected to outlet.](https://docs.aws.amazon.com/Monitron/latest/user-guide/images/gateway-physical.png)
 
 **Topics**
 + [Reading the LED lights on a Wi-Fi gateway](LED.md)

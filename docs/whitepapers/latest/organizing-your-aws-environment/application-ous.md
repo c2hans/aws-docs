@@ -19,4 +19,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 
  For general guidance on separating production and non-production workloads and resources, refer to [Organizing workload-oriented OUs](advanced-ous.md#organizing-workload-oriented-ous).
 
-![Diagram showing example structure of Workloads OU](http://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/example-workloads-ou.png)
+![Diagram showing example structure of Workloads OU](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/example-workloads-ou.png)

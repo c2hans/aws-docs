@@ -24,9 +24,9 @@ Other prerequisites depend on your development language, as follows.
 
 | Language | Prerequisites |
 | --- | --- |
-|  ![Python](http://docs.aws.amazon.com/solutions/latest/constructs/images/python.png)Python | Python >= 3.6 |
-|  ![TypeScript](http://docs.aws.amazon.com/solutions/latest/constructs/images/typescript.png)TypeScript | TypeScript >= 2.7 |
-|  ![Java](http://docs.aws.amazon.com/solutions/latest/constructs/images/java.png)Java | Java >= 1.8 |
+|  ![Python](https://docs.aws.amazon.com/solutions/latest/constructs/images/python.png)Python | Python >= 3.6 |
+|  ![TypeScript](https://docs.aws.amazon.com/solutions/latest/constructs/images/typescript.png)TypeScript | TypeScript >= 2.7 |
+|  ![Java](https://docs.aws.amazon.com/solutions/latest/constructs/images/java.png)Java | Java >= 1.8 |
 
 ## Installing the AWS CDK
 <a name="installing-the-aws-cdk"></a>

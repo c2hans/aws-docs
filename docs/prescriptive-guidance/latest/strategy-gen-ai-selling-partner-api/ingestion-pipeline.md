@@ -9,7 +9,7 @@ This section provides a strategy to ingests Amazon vendor and seller data from t
 
 The following architecture diagram shows how you use [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) functions in an [AWS Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html) workflow in order to ingest data from the SP-API into a data lake in your AWS account. The data is stored in [Amazon Simple Storage Service (Amazon S3)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) and in [Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html), which is a capability of AWS Systems Manager.
 
-![Serverless architecture that ingests data from the SP-API and stores it in a data lake.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-selling-partner-api/images/guide-img/fd951ab0-b7f5-4ded-9451-ea838cf4c59a/images/f91d3c2a-ca5c-4272-bd9e-2c9893c765a4.png)
+![Serverless architecture that ingests data from the SP-API and stores it in a data lake.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-selling-partner-api/images/guide-img/fd951ab0-b7f5-4ded-9451-ea838cf4c59a/images/f91d3c2a-ca5c-4272-bd9e-2c9893c765a4.png)
 
 The architecture diagram includes the following components:
 

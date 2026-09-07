@@ -36,7 +36,7 @@ For information about the overall benefits of AWS Service Catalog, see [What is 
 ## Architecture
 <a name="provision-a-terraform-product-in-aws-service-catalog-by-using-a-code-repository-architecture"></a>
 
-![Architecture diagram of provisioning a Terraform product in Service Catalog from a code repo](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7d0d76e8-9485-4b3f-915f-481b6a7cdcd9/images/e83fa44a-4ca6-4438-a0d1-99f09a3541bb.png)
+![Architecture diagram of provisioning a Terraform product in Service Catalog from a code repo](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7d0d76e8-9485-4b3f-915f-481b6a7cdcd9/images/e83fa44a-4ca6-4438-a0d1-99f09a3541bb.png)
 
 The diagram shows the following workflow:
 

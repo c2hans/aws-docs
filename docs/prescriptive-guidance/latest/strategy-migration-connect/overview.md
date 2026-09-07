@@ -12,7 +12,7 @@ To carry out a successful contact center migration, you shouldn't view the migra
 
 The pillars illustrated in the following diagram are perspectives and capabilities described in the [AWS Cloud Adoption Framework (AWS CAF)](https://aws.amazon.com/professional-services/CAF/). This framework provides best practice guidance to help you digitally transform and accelerate your business outcomes through innovative use of AWS. Each perspective covers a set of capabilities that stakeholders own or manage in the contact center transformation and migration process.
 
-![Pillars of successful migration for contact centers](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/images/guide-img/c8027e22-fcd9-43b3-b8a7-234ec8eb0644/images/f087d564-526c-40c5-985a-ce346e0d0fce.png)
+![Pillars of successful migration for contact centers](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/images/guide-img/c8027e22-fcd9-43b3-b8a7-234ec8eb0644/images/f087d564-526c-40c5-985a-ce346e0d0fce.png)
 
 Moving users (customers, agents, and operators) to a new platform and tool set is a considerable amount of work. Contact center migrations require thorough planning, whether you are taking your existing on-premises contact center journeys to the cloud, or refactoring the whole customer and agent experience.
 

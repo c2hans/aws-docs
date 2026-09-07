@@ -17,7 +17,7 @@ After you configure a Lambda function, you attach it to an S3 Object Lambda serv
 
 When you send a request to your Object Lambda Access Point, Amazon S3 automatically calls your Lambda function. Any data retrieved by using an S3 `GET`, `LIST`, or `HEAD` request through the Object Lambda Access Point returns a transformed result back to the application. All other requests are processed as normal, as illustrated in the following diagram.
 
-![How S3 Object Lambda works.](http://docs.aws.amazon.com/AmazonS3/latest/userguide/images/ObjectLamdaDiagram.png)
+![How S3 Object Lambda works.](https://docs.aws.amazon.com/AmazonS3/latest/userguide/images/ObjectLamdaDiagram.png)
 
 The topics in this section describe how to work with S3 Object Lambda.
 

@@ -18,7 +18,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-static-websites
 +  **FACTOR (3)** Time it takes for the page contents (US West [Oregon] Region) to be delivered across the Internet to the browser (Singapore).
 +  **FACTOR (4)** Time it takes for the browser to parse and display the web page. This latency is illustrated in the following figure.
 
-![A diagram showing factors affecting page load latency.](http://docs.aws.amazon.com/whitepapers/latest/build-static-websites-aws/images/page-load-factors.png)
+![A diagram showing factors affecting page load latency.](https://docs.aws.amazon.com/whitepapers/latest/build-static-websites-aws/images/page-load-factors.png)
 
  AWS addresses **FACTOR (2)** by optimizing Amazon S3 to serve up content as quickly as possible. You can improve **FACTOR (4)** by optimizing the actual page content (for example, minifying CSS and JavaScript, using efficient image and video formats). However, page- loading studies consistently show that most latency is due to **FACTOR (1)** and **FACTOR (3)**. (We find that the performance penalty incurred by a web flow due to its TCP handshake is between 10% and 30% of the latency to serve the HTTP request, as we show in detail in Section 2 of [TCP Fast Open](https://raghavan.usc.edu/papers/tfo-conext11.pdf).)
 

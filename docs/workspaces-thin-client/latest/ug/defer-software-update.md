@@ -29,12 +29,12 @@ You have three options.
 **Note**
 If you do not make any selection within five minutes, your device will automatically begin to install the update.
 
-![WorkSpaces Thin Client software update notification with installation options.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/defer-ss-popup.png)
+![WorkSpaces Thin Client software update notification with installation options.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/defer-ss-popup.png)
 
 If you selected **Install in one hour** or **Install during next maintenance window**, a notification related to the update will appear in the **Notifications** section of **Settings**. For an example of this, refer to the image below.
 
 The notification will tell you the name of the updated software, the version number, and when you will receive the pop-up notification again. If you want to install the update immediately, select **Install now**.
 
-![Settings page showing software update notification for Software set 2.6.0 scheduled for Jun 25, 2024.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/settings-install-now.png)
+![Settings page showing software update notification for Software set 2.6.0 scheduled for Jun 25, 2024.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/settings-install-now.png)
 
 You can continue deferring updates. After a certain point, however, your device will be considered behind schedule. If this happens, the updates will install automatically.

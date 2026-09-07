@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/applying-security-pra
 
  An example architecture of a 5GC workload running in an AWS Region. The 5G Control Plane and User Plane are running in the Region and interconnected with an on-premises environment.
 
-![Network architecture diagram showing public and private subnets, NAT gateways, and on-premises connections for 5G workloads.](http://docs.aws.amazon.com/whitepapers/latest/applying-security-practices-to-network-workload-for-csps/images/architecture-5g-core.png)
+![Network architecture diagram showing public and private subnets, NAT gateways, and on-premises connections for 5G workloads.](https://docs.aws.amazon.com/whitepapers/latest/applying-security-practices-to-network-workload-for-csps/images/architecture-5g-core.png)
 
 **Security description of the AWS services used in the example architecture of 5G core deployment on the Region:**
 

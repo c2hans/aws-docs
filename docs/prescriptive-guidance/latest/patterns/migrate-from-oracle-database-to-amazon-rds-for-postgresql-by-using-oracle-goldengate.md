@@ -39,7 +39,7 @@ The source Oracle database can be either on-premises or on an Amazon Elastic Com
 
 The following diagram shows an example workflow for migrating an Oracle database to Amazon RDS for PostgreSQL by using Oracle GoldenGate:
 
-![Migration workflow from on-premises Oracle database to Amazon RDS for PostgreSQL.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/384f0eaf-8582-474a-a7f4-ec1048a4feb3/images/de541887-0d5f-4a9a-b136-ce2599355cb8.png)
+![Migration workflow from on-premises Oracle database to Amazon RDS for PostgreSQL.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/384f0eaf-8582-474a-a7f4-ec1048a4feb3/images/de541887-0d5f-4a9a-b136-ce2599355cb8.png)
 
 The diagram shows the following workflow:
 

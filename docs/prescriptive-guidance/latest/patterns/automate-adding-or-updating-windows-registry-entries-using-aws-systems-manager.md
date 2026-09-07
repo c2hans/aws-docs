@@ -29,7 +29,7 @@ This pattern covers the steps to keep your EC2 instances that are running Window
 
 **Target architecture**
 
-![How to automatically add or update Windows registry entries using AWS Systems Manager.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2ecf680d-9f36-4070-8a19-2af262db7fcc/images/c992bcb0-d894-4aa7-9bb3-3d60c9c79e8d.png)
+![How to automatically add or update Windows registry entries using AWS Systems Manager.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2ecf680d-9f36-4070-8a19-2af262db7fcc/images/c992bcb0-d894-4aa7-9bb3-3d60c9c79e8d.png)
 
 ## Tools
 <a name="automate-adding-or-updating-windows-registry-entries-using-aws-systems-manager-tools"></a>

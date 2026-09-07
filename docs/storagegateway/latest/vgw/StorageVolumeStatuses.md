@@ -58,7 +58,7 @@ The diagram doesn't show the **Upload Buffer Not Configured** status or the **De
 
 In the diagram, a transition between two states is depicted with a labeled line. For example, the transition from the **Creating** status to the **Available** status is labeled as *Create Basic Volume or Create Volume from Snapshot*. This transition represents creating a cached volume. For more information about creating storage volumes, see [Adding and expanding volumes](volume-size-increase.md).
 
-![all possible cached volume states with arrows indicating possible transitions between states.](http://docs.aws.amazon.com/storagegateway/latest/vgw/images/VolumeStateDiagramCachedVolume-diagram.png)
+![all possible cached volume states with arrows indicating possible transitions between states.](https://docs.aws.amazon.com/storagegateway/latest/vgw/images/VolumeStateDiagramCachedVolume-diagram.png)
 
 **Note**
 The volume status of **Pass Through** appears as yellow in this diagram. However, this doesn't match the color of this status icon in the **Status** box of the Storage Gateway console.
@@ -78,7 +78,7 @@ The diagram doesn't show the **Upload Buffer Not Configured** status or the **De
 
 In the following diagram, a transition between two states is depicted with a labeled line. For example, the transition from the **Creating** status to the **Available** status is labeled as *Create Basic Volume*. This transition represents creating a storage volume without preserving data or creating the volume from a snapshot.
 
-![all possible stored volume states with arrows indicating possible transitions between states.](http://docs.aws.amazon.com/storagegateway/latest/vgw/images/VolumeStateDiagram-diagram.png)
+![all possible stored volume states with arrows indicating possible transitions between states.](https://docs.aws.amazon.com/storagegateway/latest/vgw/images/VolumeStateDiagram-diagram.png)
 
 **Note**
 The volume status of **Pass Through** appears as yellow in this diagram. However, this doesn't match the color of this status icon in the **Status** box of the Storage Gateway console.

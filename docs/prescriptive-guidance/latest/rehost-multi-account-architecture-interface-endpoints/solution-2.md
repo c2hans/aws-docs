@@ -25,7 +25,7 @@ Create VPC endpoints for each Region in a central networking account and enable 
 
 The following diagram illustrates the architecture for this solution.
 
-![Traffic flow for rehosting multiple accounts in multiple Regions.](http://docs.aws.amazon.com/prescriptive-guidance/latest/rehost-multi-account-architecture-interface-endpoints/images/guide-img/7711a996-1484-4997-8795-d06bd903a940/images/d66e80b7-111a-44ad-b96e-652f72537a21.png)
+![Traffic flow for rehosting multiple accounts in multiple Regions.](https://docs.aws.amazon.com/prescriptive-guidance/latest/rehost-multi-account-architecture-interface-endpoints/images/guide-img/7711a996-1484-4997-8795-d06bd903a940/images/d66e80b7-111a-44ad-b96e-652f72537a21.png)
 
 The traffic flow is the same as in [solution 1](solution-1.md), except that the accounts in the two Regions are connected by transit gateway peering.
 

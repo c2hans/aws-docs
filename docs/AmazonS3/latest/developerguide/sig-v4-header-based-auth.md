@@ -22,7 +22,7 @@ To calculate a signature, you first need a string to sign. You then calculate a 
 
 When Amazon S3 receives an authenticated request, it computes the signature and then compares it with the signature that you provided in the request. For that reason, you must compute the signature by using the same method that is used by Amazon S3. The process of putting a request in an agreed-upon form for signing is called canonicalization.
 
-![AWS4-HMAC-SHA256 signature process diagram showing canonical request, StringToSign, and signature steps.](http://docs.aws.amazon.com/AmazonS3/latest/developerguide/images/sigV4-using-auth-header.png)
+![AWS4-HMAC-SHA256 signature process diagram showing canonical request, StringToSign, and signature steps.](https://docs.aws.amazon.com/AmazonS3/latest/developerguide/images/sigV4-using-auth-header.png)
 
 The following table describes the functions that are shown in the diagram. You need to implement code for these functions.
 

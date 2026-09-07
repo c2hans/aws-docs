@@ -38,7 +38,7 @@ Build systems manage two fundamental categories of dependencies that determine h
 + **Direct dependency**: When Package A relies on Package B, Package B is a direct dependency of Package A. Direct dependencies are declared explicitly in project configuration files such as `package.json` or `pom.xml`.
 + **Transitive dependency**: When Package B relies on Package C, and Package A relies on Package B, Package C becomes a dependency of Package A. This indirect relationship makes Package C a transitive dependency of Package A.
 
-![Package A depends directly on Package B and transitively on Package C through Package B.](http://docs.aws.amazon.com/prescriptive-guidance/latest/managing-transitive-dependency-conflicts-package-migrations/images/guide-img/e09a1ad7-c54f-4a20-b180-a86ef69032e6/images/c11ff0af-6a90-49f4-903a-60f3efa2831b.png)
+![Package A depends directly on Package B and transitively on Package C through Package B.](https://docs.aws.amazon.com/prescriptive-guidance/latest/managing-transitive-dependency-conflicts-package-migrations/images/guide-img/e09a1ad7-c54f-4a20-b180-a86ef69032e6/images/c11ff0af-6a90-49f4-903a-60f3efa2831b.png)
 
 ## Transitive dependency conflicts
 <a name="transitive-dependency-conflicts"></a>
@@ -59,7 +59,7 @@ As part of implementing this feature, you use a commonly employed package called
 
 The following diagram shows Party-UI as both a direct dependency of Top-Level-Module and a transitive dependency through Shared-Module.
 
-![Top-Level-Module depends on Party-UI directly and on Shared-Module, which also depends on Party-UI.](http://docs.aws.amazon.com/prescriptive-guidance/latest/managing-transitive-dependency-conflicts-package-migrations/images/guide-img/e09a1ad7-c54f-4a20-b180-a86ef69032e6/images/b1298fc0-1911-446e-8b46-fa4e2c7735d0.png)
+![Top-Level-Module depends on Party-UI directly and on Shared-Module, which also depends on Party-UI.](https://docs.aws.amazon.com/prescriptive-guidance/latest/managing-transitive-dependency-conflicts-package-migrations/images/guide-img/e09a1ad7-c54f-4a20-b180-a86ef69032e6/images/b1298fc0-1911-446e-8b46-fa4e2c7735d0.png)
 
 ### When version conflicts arise
 <a name="when-version-conflicts-arise.aa14b617-1f4d-5989-9a35-bad9fed8d070"></a>
@@ -92,7 +92,7 @@ Transitive dependency conflicts do not always result in errors. Differences betw
 
 Errors from transitive dependency conflicts typically occur during major version transitions. Party-UI 2.0 might feature components that are deprecated in Party-UI 3.0. Packages built on Party-UI 2.0 may encounter compatibility issues when forced to operate on Party-UI 3.0.
 
-![Packages built on Party-UI 2.0 fail against Party-UI 3.0 because components are deprecated.](http://docs.aws.amazon.com/prescriptive-guidance/latest/managing-transitive-dependency-conflicts-package-migrations/images/guide-img/e09a1ad7-c54f-4a20-b180-a86ef69032e6/images/7003a7b9-1e62-476c-bfae-0ce57b7a9fe9.png)
+![Packages built on Party-UI 2.0 fail against Party-UI 3.0 because components are deprecated.](https://docs.aws.amazon.com/prescriptive-guidance/latest/managing-transitive-dependency-conflicts-package-migrations/images/guide-img/e09a1ad7-c54f-4a20-b180-a86ef69032e6/images/7003a7b9-1e62-476c-bfae-0ce57b7a9fe9.png)
 
 ## How transitive dependency conflicts cause build errors
 <a name="how-transitive-dependency-conflicts-cause-build-errors"></a>
@@ -117,7 +117,7 @@ Build-time dependencies are those your build tool relies on during compilation.
 
 **Build process failures**: The build tool fails to download, install, or link a required dependency because of the conflict. The project never compiles.
 
-![Configured dependencies and build-time dependencies both produce build errors when transitive versions conflict.](http://docs.aws.amazon.com/prescriptive-guidance/latest/managing-transitive-dependency-conflicts-package-migrations/images/guide-img/e09a1ad7-c54f-4a20-b180-a86ef69032e6/images/c2f43728-87cf-47a5-884a-6e722e9f99c5.png)
+![Configured dependencies and build-time dependencies both produce build errors when transitive versions conflict.](https://docs.aws.amazon.com/prescriptive-guidance/latest/managing-transitive-dependency-conflicts-package-migrations/images/guide-img/e09a1ad7-c54f-4a20-b180-a86ef69032e6/images/c2f43728-87cf-47a5-884a-6e722e9f99c5.png)
 
 ## Using breadth-first search to sequence a migration
 <a name="breadth-first-search-roadmap-to-avoid-dependency-conflicts-in-a-migration"></a>
@@ -193,7 +193,7 @@ Review the dependency graph after the migration. Repeat the analysis when the ta
 ### Migration example
 <a name="migration-example.d6b98369-47cf-520f-a592-21725edf1abc"></a>
 
-![Migrating Top-Level-Module to Party-UI 3.0.0 requires migrating Shared-Module first.](http://docs.aws.amazon.com/prescriptive-guidance/latest/managing-transitive-dependency-conflicts-package-migrations/images/guide-img/e09a1ad7-c54f-4a20-b180-a86ef69032e6/images/59b5bb15-5c11-4d09-b836-4db8fee5eff4.png)
+![Migrating Top-Level-Module to Party-UI 3.0.0 requires migrating Shared-Module first.](https://docs.aws.amazon.com/prescriptive-guidance/latest/managing-transitive-dependency-conflicts-package-migrations/images/guide-img/e09a1ad7-c54f-4a20-b180-a86ef69032e6/images/59b5bb15-5c11-4d09-b836-4db8fee5eff4.png)
 
 **Goal**: Migrate Top-Level-Module 1.0 to a 2.0 version that uses Party-UI 3.0.0.
 

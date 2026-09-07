@@ -46,7 +46,7 @@ To configure IPAM, do the following:
    + Private, used for configuring and using private CIDR blocks
 
 1. Create the top-level IPAM pool. In the following diagram, the top-level pool is AWS Pool.
-![Under AWS pool, configure VPCs for pre-production and production in three AWS Regions.](http://docs.aws.amazon.com/prescriptive-guidance/latest/robust-network-design-control-tower/images/guide-img/734c65f3-3001-4321-a428-6ffbda3b44b0/images/3f8c4b72-de6c-498f-8b2f-7fc38fe34a9c.png)
+![Under AWS pool, configure VPCs for pre-production and production in three AWS Regions.](https://docs.aws.amazon.com/prescriptive-guidance/latest/robust-network-design-control-tower/images/guide-img/734c65f3-3001-4321-a428-6ffbda3b44b0/images/3f8c4b72-de6c-498f-8b2f-7fc38fe34a9c.png)
 
 1. Create the lower-level pools:
    + A pool for the Region

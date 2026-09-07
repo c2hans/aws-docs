@@ -12,7 +12,7 @@ For the code repository that implements this migration, see [sample-self-Managed
 ## How the solution works
 <a name="solution"></a>
 
-![How the migration solution works.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migrating-self-managed-kubernetes-cluster-to-amazon-eks/images/guide-img/333c6197-98bf-4802-81a6-594d3c94cbac/images/50e94024-ee7f-40cd-9a03-ffa99185b92b.png)
+![How the migration solution works.](https://docs.aws.amazon.com/prescriptive-guidance/latest/migrating-self-managed-kubernetes-cluster-to-amazon-eks/images/guide-img/333c6197-98bf-4802-81a6-594d3c94cbac/images/50e94024-ee7f-40cd-9a03-ffa99185b92b.png)
 
 The migration flow consists of two stages:
 

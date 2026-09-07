@@ -18,7 +18,7 @@ The example below displays how intra-cycle forecast refresh scheduler works (whe
 + Final forecast publish – 7th day of the week
 + Lock period – 2
 
-![Displays intra-cycle forecast refresh scheduler works (when it's disabled) with forecast lock](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/intra-cycle_with_forecast_lock.png)
+![Displays intra-cycle forecast refresh scheduler works (when it's disabled) with forecast lock](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/intra-cycle_with_forecast_lock.png)
 
 The example below displays how intra-cycle forecast refresh scheduler works (when it's enabled) with forecast lock in the following settings:
 + Demand plan granularity – Weekly
@@ -28,4 +28,4 @@ The example below displays how intra-cycle forecast refresh scheduler works (whe
 + Interim forecast publish – 3rd day of the week
 + Lock period – 2
 
-![Displays intra-cycle forecast refresh scheduler works (when it's enabled) with forecast lock](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/forecast_intracycle.png)
+![Displays intra-cycle forecast refresh scheduler works (when it's enabled) with forecast lock](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/forecast_intracycle.png)

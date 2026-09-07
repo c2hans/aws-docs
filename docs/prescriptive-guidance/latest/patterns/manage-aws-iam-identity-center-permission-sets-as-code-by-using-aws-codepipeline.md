@@ -45,7 +45,7 @@ You must use the same account as the delegated administrator for both services.
 
 **Target architecture**
 
-![Using a CI/CD pipeline to manage permission sets in IAM Identity Center.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/419aaa80-1b97-402d-9c74-c1b8c1ddd1cb/images/1f143bc4-c2c6-4ab6-8615-742fec617f18.png)
+![Using a CI/CD pipeline to manage permission sets in IAM Identity Center.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/419aaa80-1b97-402d-9c74-c1b8c1ddd1cb/images/1f143bc4-c2c6-4ab6-8615-742fec617f18.png)
 
 The diagram shows the following workflow:
 

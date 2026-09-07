@@ -29,11 +29,11 @@ To support multiple use cases and business needs, this solution provides six AWS
 
  **Depicts Deployment dashboard architecture (when deployed with VPC option disabled)**
 
-![deployment dashboard diagram](http://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/deployment-dashboard-diagram.png)
+![deployment dashboard diagram](https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/deployment-dashboard-diagram.png)
 
  **Depicts Deployment dashboard architecture (when deployed with VPC option enabled)**
 
-![deployment dashboard vpc arch diagram](http://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/deployment-dashboard-vpc-arch-diagram.png)
+![deployment dashboard vpc arch diagram](https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/deployment-dashboard-vpc-arch-diagram.png)
 
 **Note**
 AWS CloudFormation resources are created from AWS Cloud Development Kit (AWS CDK) constructs.
@@ -69,11 +69,11 @@ Although the Deployment dashboard can be launched in most AWS Regions, the deplo
 
  **Depicts Text use case architecture (when deployed with VPC option disabled)**
 
-![text use case diagram](http://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/text-use-case-diagram.png)
+![text use case diagram](https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/text-use-case-diagram.png)
 
  **Depicts Text use case architecture (when deployed with VPC option enabled)**
 
-![text use case vpc arch diagram](http://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/text-use-case-vpc-arch-diagram.png)
+![text use case vpc arch diagram](https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/text-use-case-vpc-arch-diagram.png)
 
 The high-level process flow for the solution components deployed with the AWS CloudFormation template is as follows:
 
@@ -109,11 +109,11 @@ If you choose to deploy this solution in an Amazon VPC, the data will be routed 
 
  **Depicts Bedrock Agent use case architecture (when deployed with VPC option disabled)**
 
-![agent use case diagram](http://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/agent-use-case-diagram.png)
+![agent use case diagram](https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/agent-use-case-diagram.png)
 
  **Depicts Bedrock Agent use case architecture (when deployed with VPC option enabled)**
 
-![agent use case vpc arch diagram](http://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/agent-use-case-vpc-arch-diagram.png)
+![agent use case vpc arch diagram](https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/agent-use-case-vpc-arch-diagram.png)
 
 The high-level process flow for the solution components deployed with the AWS CloudFormation template is as follows:
 
@@ -147,7 +147,7 @@ If you choose to deploy this solution in an Amazon VPC, data will be routed with
 
  **Depicts MCP Server use case architecture**
 
-![mcp server use case diagram](http://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/mcp-server-use-case-diagram.png)
+![mcp server use case diagram](https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/mcp-server-use-case-diagram.png)
 
 The MCP Server use case enables deployment and management of Model Context Protocol servers on Amazon Bedrock AgentCore. MCP servers provide a standardized interface for AI applications to access tools, resources, and enterprise data sources.
 
@@ -178,7 +178,7 @@ The high-level process flow for MCP Server deployment is as follows:
 
  **Depicts Agent Builder architecture**
 
-![agent builder deployment diagram](http://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/agent-builder-deployment-diagram.png)
+![agent builder deployment diagram](https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/agent-builder-deployment-diagram.png)
 
 The high-level process flow for the Agent Builder components deployed with the AWS CloudFormation template is as follows:
 
@@ -208,7 +208,7 @@ Agent processing is limited to Lambda execution timeout (15 minutes).
 
  **Depicts Workflow Builder architecture**
 
-![workflow deployment diagram](http://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/workflow-deployment-diagram.png)
+![workflow deployment diagram](https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/workflow-deployment-diagram.png)
 
 The high-level process flow for the Workflow Builder components deployed with the AWS CloudFormation template is as follows:
 

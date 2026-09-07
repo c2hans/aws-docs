@@ -9,7 +9,7 @@ This is the conceptual process of migrating Oracle databases to AWS using Oracle
 
 The following diagram shows the high-level migration steps for an Oracle database across different endian formats.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-bulky-oracle-databases/images/guide-img/c09fd9a4-3278-4711-9038-c55dfc694acd/images/91d5f172-1bf7-405e-8c31-b625411c11be.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-bulky-oracle-databases/images/guide-img/c09fd9a4-3278-4711-9038-c55dfc694acd/images/91d5f172-1bf7-405e-8c31-b625411c11be.png)
 
 1. Make a full backup of all the tablespaces.
 

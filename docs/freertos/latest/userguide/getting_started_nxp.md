@@ -144,7 +144,7 @@ If a **J-Link Device Selection** dialog box opens, choose **OK** to continue. In
 
 1. Any detected debug probes are displayed. Choose the probe you want to use, and then choose **OK** to start debugging.
 **Note**
-When the debugger stops at the breakpoint in `main()`, press the debug restart button ![Colorful logo with overlapping circles representing cloud services integration.](http://docs.aws.amazon.com/freertos/latest/userguide/images/reset.png) once to reset the debugging session. (This is required due to a bug with MCUXpresso debugger for NXP54018-IoT-Module).
+When the debugger stops at the breakpoint in `main()`, press the debug restart button ![Colorful logo with overlapping circles representing cloud services integration.](https://docs.aws.amazon.com/freertos/latest/userguide/images/reset.png) once to reset the debugging session. (This is required due to a bug with MCUXpresso debugger for NXP54018-IoT-Module).
 
 1. When the debugger stops at the breakpoint in `main()`, from the **Debug** menu, choose **Go**.
 

@@ -48,7 +48,7 @@ This pattern describes how to migrate large, on-premises MySQL databases efficie
 
 **Target architecture**
 
-![Architecture to migrate large MySQL databases to Amazon Aurora MySQL by using Percona XtraBackup.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/bf327776-bafd-484d-9ae2-a6f5c8af6edd/images/7a410539-1511-4106-90e2-8c0c8e95f92b.png)
+![Architecture to migrate large MySQL databases to Amazon Aurora MySQL by using Percona XtraBackup.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/bf327776-bafd-484d-9ae2-a6f5c8af6edd/images/7a410539-1511-4106-90e2-8c0c8e95f92b.png)
 
 ## Tools
 <a name="migrate-on-premises-mysql-databases-to-aurora-mysql-using-percona-xtrabackup-amazon-efs-and-amazon-s3-tools"></a>

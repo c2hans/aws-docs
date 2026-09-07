@@ -46,7 +46,7 @@ The pattern's CloudFormation template must be deployed in all AWS Regions where 
 
 **Target architecture **
 
-![Diagram of the five steps of the monitoring, alerting, and remediation process.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/56927ebc-bbf7-49cc-9ad2-b2e0dff1201c/images/32537a66-037a-45a1-af19-3bc7bc26eaa6.png)
+![Diagram of the five steps of the monitoring, alerting, and remediation process.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/56927ebc-bbf7-49cc-9ad2-b2e0dff1201c/images/32537a66-037a-45a1-af19-3bc7bc26eaa6.png)
 
 1. Deletion of an AWS KMS key is scheduled.
 

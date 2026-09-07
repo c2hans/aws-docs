@@ -25,7 +25,7 @@ Generative AI is a set of artificial intelligence (AI) systems and models design
 
  This guide helps you select the AWS generative AI services and tools that are the best fit for your needs and your organization.
 
-[![AWS Videos](http://img.youtube.com/vi/WEKTpzvJiec?si=39jHcyiMGTfiO2zB/0.jpg)](http://www.youtube.com/watch?v=WEKTpzvJiec?si=39jHcyiMGTfiO2zB)
+[![AWS Videos](https://img.youtube.com/vi/WEKTpzvJiec?si=39jHcyiMGTfiO2zB/0.jpg)](https://www.youtube.com/watch?v=WEKTpzvJiec?si=39jHcyiMGTfiO2zB)
 
 ## Understand
 <a name="understand"></a>
@@ -36,7 +36,7 @@ Amazon offers a range of generative AI services, applications, tools, and suppor
 + The degree of customization you need in your generative AI applications
 + The expertise within your organization
 
-![Diagram showing the AWS generative AI stack. This diagram shows the infrastructure to build and train AI models at the bottom of the stack, models and tools to build generative AI apps in the middle, and applications that use LLMs and other FMs to boost productivity, at the top.](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/gen-ai-stack-dec-2024.png)
+![Diagram showing the AWS generative AI stack. This diagram shows the infrastructure to build and train AI models at the bottom of the stack, models and tools to build generative AI apps in the middle, and applications that use LLMs and other FMs to boost productivity, at the top.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/gen-ai-stack-dec-2024.png)
 
  **Amazon Q Business and Amazon Q Developer— Applications to boost productivity**
 
@@ -76,7 +76,7 @@ If you're developing custom AI applications, need access to multiple foundation 
 
 Use the [ Amazon Bedrock Marketplace](https://docs.aws.amazon.com/bedrock/latest/userguide/amazon-bedrock-marketplace.html) to discover, test, and use over 100 popular, emerging, and specialized FMs. [Supported FMs](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html) are updated on a regular basis.
 
-![Diagram showing Amazon Bedrock's broad choice of models, from Amazon and leading model providers.](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/amazon-bedrock-models-feb-2025.jpg)
+![Diagram showing Amazon Bedrock's broad choice of models, from Amazon and leading model providers.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/amazon-bedrock-models-feb-2025.jpg)
 
 In addition, Amazon Bedrock provides what you need to build generative AI applications with security, privacy, and responsible AI—regardless of the foundation model you choose. It also offers model-independent, single API access and the flexibility to use different foundation models and upgrade to the latest model versions, with minimal code changes.
 
@@ -145,7 +145,7 @@ With [Amazon SageMaker AI](https://docs.aws.amazon.com/sagemaker/latest/dg/whati
 
 Amazon SageMaker AI also provides infrastructure and purpose-built tools for use throughout the ML lifecycle, including integrated development environments (IDEs), distributed training infrastructure, governance tools, machine learning operations (MLOps) tools, inference options and recommendations, and model evaluation.
 
-![Diagram that provides an overview of SageMaker AI's key features, including access to foundatio models (FMs), building and customizing FMs, running inference, and implementing FMOps and governance](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/sagemaker-ai-overview.jpg)
+![Diagram that provides an overview of SageMaker AI's key features, including access to foundatio models (FMs), building and customizing FMs, running inference, and implementing FMOps and governance](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/sagemaker-ai-overview.jpg)
 
 Use [Amazon SageMaker Partner AI Apps](https://docs.aws.amazon.com/sagemaker/latest/dg/partner-apps.html) to access generative AI and machine learning (ML) development applications built, published, and distributed by industry-leading application providers. Partner AI Apps are certified to run on SageMaker AI. With Partner AI Apps, you can improve how you build solutions based on foundation models (FM) and classic ML models without compromising the security of your sensitive data. The data stays completely within your trusted security configuration and is never shared with a third party.
 
@@ -162,7 +162,7 @@ Explore key features of SageMaker AI that may help you determine when to use it:
 
 This following screenshot shows some of the available models in Amazon SageMaker JumpStart within the AWS Management Console.
 
-![Diagram showing Amazon SageMaker JumpStart in the AWS Management Console, including a broad choice of models from Amazon and leading model providers.](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/sagemaker-jumpstart-console.jpg)
+![Diagram showing Amazon SageMaker JumpStart in the AWS Management Console, including a broad choice of models from Amazon and leading model providers.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/sagemaker-jumpstart-console.jpg)
 
 ------
 #### [ Amazon SageMaker Clarify ]
@@ -176,7 +176,7 @@ With [Amazon SageMaker Canvas](https://docs.aws.amazon.com/sagemaker/latest/dg/c
 
 [This blog post](https://aws.amazon.com/blogs/machine-learning/fine-tune-and-deploy-language-models-with-amazon-sagemaker-canvas-and-amazon-bedrock/) describes how you can use them to optimize customer interaction by working with your own datasets (such as your product FAQs) in Amazon Bedrock and Amazon SageMaker JumpStart The following diagram, from this blog post, demonstrates how Amazon SageMaker Canvas and Amazon Bedrock can be used together to fine-tune and deploy language models.
 
-![Diagram showing Amazon SageMaker Canvas and Amazon Bedrock used together to fine-tune and deploy language models.](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/sagemaker-bedrock-scenario.jpg)
+![Diagram showing Amazon SageMaker Canvas and Amazon Bedrock used together to fine-tune and deploy language models.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/sagemaker-bedrock-scenario.jpg)
 
 ------
 #### [ Amazon SageMaker Studio ]

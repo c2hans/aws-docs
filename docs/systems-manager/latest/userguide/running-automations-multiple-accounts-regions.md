@@ -16,7 +16,7 @@ For example, you can do the following by using automation runbooks:
 
 The following diagram shows an example of a user who is running the `AWS-RestartEC2Instances` runbook in multiple Regions and accounts from a central account. The automation locates the instances by using the specified tags in the targeted Regions and accounts.
 
-![Illustration showing Systems Manager Automation running in multiple Regions and multiple accounts.](http://docs.aws.amazon.com/systems-manager/latest/userguide/images/automation-multi-region-and-multi-account.png)
+![Illustration showing Systems Manager Automation running in multiple Regions and multiple accounts.](https://docs.aws.amazon.com/systems-manager/latest/userguide/images/automation-multi-region-and-multi-account.png)
 
 **Choose a central account for Automation**
 If you want to run automations across OUs, the central account must have permissions to list all of the accounts in the OUs. This is only possible from a delegated administrator account, or the management account of the organization. We recommend that you follow AWS Organizations best practices and use a delegated administrator account. For more information about AWS Organizations best practices, see [Best practices for the management account](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_best-practices_mgmt-acct.html) in the *AWS Organizations User Guide*. To create a delegated administrator account for Systems Manager, you can use the `register-delegated-administrator` command with the AWS CLI as shown in the following example.

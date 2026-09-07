@@ -9,7 +9,7 @@ In this example scenario, Amazon Verified Permissions is used to determine which
 
 In the following diagram, we would like to enforce two general business rules that are associated with the `viewSalary` `GET` method: *Employees can view their own salary *and *Employees can view the salary of anyone who reports to them.* You can enforce these business rules by using Verified Permissions policies.
 
-![Example of a basic ABAC implementation with Amazon Verified Permissions and Cedar to implement a PDP](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/28c86fd7-9b79-47f2-adca-32d1fe19c056.png)
+![Example of a basic ABAC implementation with Amazon Verified Permissions and Cedar to implement a PDP](https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/28c86fd7-9b79-47f2-adca-32d1fe19c056.png)
 
  *Employees can view their own salary.*
 

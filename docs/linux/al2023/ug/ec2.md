@@ -43,7 +43,7 @@ Make sure that **amazon** appears in the **Owner alias** column.
    `'al2023-[ami || ami-minimal]-2023.0.[release build date].[build number]-kernel-[version number]-[arm64 || x86_64]'`
 
 1. The following image shows a partial list of AL2023 AMIs.
-![A listing of AL2023 AMIs under the Source column.](http://docs.aws.amazon.com/linux/al2023/ug/images/launch-instance.png)
+![A listing of AL2023 AMIs under the Source column.](https://docs.aws.amazon.com/linux/al2023/ug/images/launch-instance.png)
 
 For more information about launching Amazon EC2 instances, see [Get started with Amazon EC2 Linux instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html) in the *Amazon EC2 User Guide*.
 

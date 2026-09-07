@@ -51,7 +51,7 @@ Provide a list of entities and how they are identified:
 
 Create an ER model for the entities:
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-data-modeling/images/guide-img/225c2600-95f1-4c8c-9e23-419bc7ae3c55/images/362b697f-a9cc-47e7-9481-85d2f913d05e.jpeg)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-data-modeling/images/guide-img/225c2600-95f1-4c8c-9e23-419bc7ae3c55/images/362b697f-a9cc-47e7-9481-85d2f913d05e.jpeg)
 
 Provide high-level statistics about the entities:
 

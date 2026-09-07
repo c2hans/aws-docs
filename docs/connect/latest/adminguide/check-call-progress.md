@@ -55,11 +55,11 @@ Although you can place this block in any flow type, it functions only for the ca
 
 The following image shows the **Properties** page of the **Check call progress** block.
 
-![The properties page of the Check call progress block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/check-call-progress-properties.png)
+![The properties page of the Check call progress block.](https://docs.aws.amazon.com/connect/latest/adminguide/images/check-call-progress-properties.png)
 
 ## Configured block
 <a name="check-call-progress-configured-block"></a>
 
 The following image shows an example of what this block looks like when it is configured. It has branches for **Call answered**, **Voicemail (beep)**, **Voicemail (no beep)**, **Not detected**, and **Error**.
 
-![A configured Check call progress block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/check-call-progress-configured.png)
+![A configured Check call progress block.](https://docs.aws.amazon.com/connect/latest/adminguide/images/check-call-progress-configured.png)

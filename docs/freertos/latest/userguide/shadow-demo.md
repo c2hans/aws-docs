@@ -37,13 +37,13 @@ The demo performs the following operations:
 
 1. Handle incoming MQTT messages in `prvEventCallback`, and determine whether the message is related to the device shadow by using a function defined by the AWS IoT Device Shadow library (`Shadow_MatchTopic`). If the message is a device shadow `/update/delta` message, then the main demo function will publish a second message to update the reported state to `powerOn`. If an `/update/accepted` message is received, verify that it has the same `clientToken` as previously published in the update message. That will mark the end of the demo.
 
-![shadow demo terminal output](http://docs.aws.amazon.com/freertos/latest/userguide/images/shadow-demo-output.png)
+![shadow demo terminal output](https://docs.aws.amazon.com/freertos/latest/userguide/images/shadow-demo-output.png)
 
 The demo can be found in the file `{{freertos}}/demos/device_shadow_for_aws/shadow_demo_main.c` or on [ GitHub](https://github.com/aws/amazon-freertos/blob/main/demos/device_shadow_for_aws/shadow_demo_main.c).
 
 The following screenshot shows the expected output when the demo succeeds.
 
-![shadow demo terminal output showing success](http://docs.aws.amazon.com/freertos/latest/userguide/images/shadow-demo-screenshot.png)
+![shadow demo terminal output showing success](https://docs.aws.amazon.com/freertos/latest/userguide/images/shadow-demo-screenshot.png)
 
 ## Connect to the AWS IoT MQTT broker
 <a name="shadow-demo-connect-mqtt"></a>

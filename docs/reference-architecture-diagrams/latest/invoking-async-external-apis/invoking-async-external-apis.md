@@ -12,7 +12,7 @@ This architecture shows how to call third-party services that implement the serv
 ## Invoking Asynchronous External APIs
 <a name="diagram1"></a>
 
-![Architecture diagram showing asynchronous external API invocation using AWS Step Functions, Amazon Simple Queue Service, AWS Lambda, Amazon API Gateway, and Amazon DynamoDB.](http://docs.aws.amazon.com/reference-architecture-diagrams/latest/invoking-async-external-apis/images/invoking-async-external-apis.png)
+![Architecture diagram showing asynchronous external API invocation using AWS Step Functions, Amazon Simple Queue Service, AWS Lambda, Amazon API Gateway, and Amazon DynamoDB.](https://docs.aws.amazon.com/reference-architecture-diagrams/latest/invoking-async-external-apis/images/invoking-async-external-apis.png)
 
 The following steps describe the architecture:
 

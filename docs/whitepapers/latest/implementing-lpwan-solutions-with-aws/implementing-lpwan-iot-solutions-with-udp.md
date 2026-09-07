@@ -24,12 +24,12 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-so
 
  The following figure provides an overview of these patterns:
 
-![Diagram showing patterns for implementing IoT solutions with AWS using UDP protocol](http://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/udp-iot-solutions.png)
+![Diagram showing patterns for implementing IoT solutions with AWS using UDP protocol](https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/udp-iot-solutions.png)
 
 ## Pattern 1: Telco-provided fully integrated solution
 <a name="pattern-1-telco-provided-fully-integrated-solution"></a>
 
-![Architecture of a fully integrated solution provided by the telco](http://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/telco-full-solution.png)
+![Architecture of a fully integrated solution provided by the telco](https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/telco-full-solution.png)
 
  In this pattern, the telco provider is operating a UDP endpoint. The customer’s devices target this endpoint for ingesting the payloads using UDP. Telco’s software component then encapsulates the binary payload from the UDP message into a JSON format. Finally, the telco will ingest the payload into the customer’s AWS account. A deployment of an [AWS CloudFormation](https://aws.amazon.com/cloudformation/) template into the customer’s account is typically necessary for the integration between telco’s infrastructure and customer’s AWS account.
 
@@ -62,7 +62,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-so
 ## Pattern 2: Customer-operated solution secured by Telco-provided VPN
 <a name="pattern-2-customer-operated-solution-secured-by-telco-provided-vpn"></a>
 
-![Architecture of a customer-operated solution secured by VPN](http://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/vpn-secured-solution.png)
+![Architecture of a customer-operated solution secured by VPN](https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/vpn-secured-solution.png)
 
  In this pattern, the customer is operating a solution for ingesting UDP payloads for the customer’s IoT devices. The solution can be built by the customer, the AWS Partner, or—if available—sourced from the telecommunication provider.
 
@@ -79,7 +79,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-so
 
  The same software component can also support downlink communication to the devices. For example, this software component can be designed to attach downlink payload data to the UDP response to uplink message (piggybacking mechanism). The source of the downlink data can be [AWS IoT Device Shadow](https://docs.aws.amazon.com/iot/latest/developerguide/iot-device-shadows.html) or a database such as [Amazon DynamoDB](https://aws.amazon.com/dynamodb). The following figure illustrates this approach:
 
-![Example architecture for processing UDP datagrams with AWS](http://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/udp-architecture.png)
+![Example architecture for processing UDP datagrams with AWS](https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/udp-architecture.png)
 
 ### Device-side considerations
 <a name="device-side-considerations-1"></a>
@@ -99,7 +99,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-so
 ## Pattern 3: Customer-operated solution secured by DTLS
 <a name="pattern-3-customer-operated-solution-secured-by-dtls"></a>
 
-![Architecture of a customer-operated solution secured by DTLS](http://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/dtls-secured-solution.png)
+![Architecture of a customer-operated solution secured by DTLS](https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/dtls-secured-solution.png)
 
  DTLS is a protocol which can be used to secure UDP-based communication in terms of device authentication, confidentiality, and integrity. The current version of DTLS 1.2 for use with UDP is defined in [RFC6347](https://datatracker.ietf.org/doc/html/rfc6347). When using DTLS, the payload of underlying UDP messages remains unchanged. Consequently, DTLS-based communication shows the same characteristics as UDP: best effort delivery without built-in acknowledgement and retry mechanisms, no guarantee for ordering of messages, and the possibility for duplicated messages. DTLS supports pre-shared secret, certificates and raw public keys as credentials. When using DTLS, a secure storage of pre-shared secret and certificates is an important precondition to avoid impersonation attacks.
 

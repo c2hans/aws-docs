@@ -11,7 +11,7 @@ There are two supported connectivity options for connecting to Teradata VantageC
 
 The following diagram shows these supported connectivity methods.
 
-![AWS PrivateLink and public internet options for connecting to Teradata VantageCloud Lake on AWS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-teradata-vantagecloud-lake/images/guide-img/54b73adc-60e6-4e76-a7be-f62261514119/images/e9b1ed0e-a86a-4637-87f3-3a2c0210ff4c.png)
+![AWS PrivateLink and public internet options for connecting to Teradata VantageCloud Lake on AWS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-teradata-vantagecloud-lake/images/guide-img/54b73adc-60e6-4e76-a7be-f62261514119/images/e9b1ed0e-a86a-4637-87f3-3a2c0210ff4c.png)
 
 ## PrivateLink architecture
 <a name="private-link"></a>
@@ -22,7 +22,7 @@ PrivateLink allows only unidirectional network connectivity. Applications tha
 
 The following diagram shows a PrivateLink architecture where a private endpoint in an AWS account uses PrivateLink to connect to Teradata Session Manager, which connects to a VantageCloud Lake primary cluster.
 
-![Using PrivateLink to access Teradata VantageCloud Lake on AWS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-teradata-vantagecloud-lake/images/guide-img/54b73adc-60e6-4e76-a7be-f62261514119/images/9c82aa37-f48c-40cb-afe3-937bef6c1129.png)
+![Using PrivateLink to access Teradata VantageCloud Lake on AWS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-teradata-vantagecloud-lake/images/guide-img/54b73adc-60e6-4e76-a7be-f62261514119/images/9c82aa37-f48c-40cb-afe3-937bef6c1129.png)
 
 For more information, see [AWS PrivateLink](https://aws.amazon.com/privatelink/) or contact your [Teradata account team.](https://www.teradata.com/About-Us/Contact)
 
@@ -31,4 +31,4 @@ For more information, see [AWS PrivateLink](https://aws.amazon.com/privatelink/)
 
 If your architecture requires hybrid connectivity from on premises to Teradata VantageCloud Lake, you can use the public internet connectivity option. You can also use this option to connect from another VPC over the internet. You control the allowed CIDR ranges. The following diagram shows a user's VPC using the internet to connect to Teradata-managed VantageCloud Lake.
 
-![Using the public internet to access Teradata VantageCloud Lake on AWS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-teradata-vantagecloud-lake/images/guide-img/54b73adc-60e6-4e76-a7be-f62261514119/images/e39adf7f-d253-4557-801f-d975b7f163eb.png)
+![Using the public internet to access Teradata VantageCloud Lake on AWS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-teradata-vantagecloud-lake/images/guide-img/54b73adc-60e6-4e76-a7be-f62261514119/images/e39adf7f-d253-4557-801f-d975b7f163eb.png)

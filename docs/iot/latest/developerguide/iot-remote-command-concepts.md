@@ -192,7 +192,7 @@ Devices can publish status and result updates anytime using commands reserved MQ
 
 The following diagram shows execution status transitions.
 
-![Image showing how a command execution status transitions between various statuses.](http://docs.aws.amazon.com/iot/latest/developerguide/images/command-execution-status-transitions.png)
+![Image showing how a command execution status transitions between various statuses.](https://docs.aws.amazon.com/iot/latest/developerguide/images/command-execution-status-transitions.png)
 
 **Note**
 When AWS IoT detects no device response within the timeout period, it sets `TIMED_OUT` as a temporary status allowing retries and state changes. If your device explicitly reports `TIMED_OUT`, this becomes a terminal status with no further transitions. For more information, see [Non-terminal command executions](#iot-command-execution-status-nonterminal).

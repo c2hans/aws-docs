@@ -78,7 +78,7 @@ For details of supported RDBMS and PAC requirements, see [Micro Focus Enterprise
 
 The following diagram shows a typical AWS architecture setup for a Micro Focus PAC.
 
-![A three-Availability Zone architecture with five steps described in a table after the diagram.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/64e3c22b-1058-4ab8-855f-18bbbed5dc13/images/df291568-a442-454f-80bf-49e4ffff4f6d.png)
+![A three-Availability Zone architecture with five steps described in a table after the diagram.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/64e3c22b-1058-4ab8-855f-18bbbed5dc13/images/df291568-a442-454f-80bf-49e4ffff4f6d.png)
 
 |
 |
@@ -98,7 +98,7 @@ After the PAC cluster is deployed on AWS, the PAC is managed through the Enterpr
 
 To automate the cluster management tasks during automatic scaling events, you can use Systems Manager Automation runbooks and Amazon EC2 Auto Scaling with Amazon EventBridge. The architecture of these automations is shown in the following diagram.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/64e3c22b-1058-4ab8-855f-18bbbed5dc13/images/6f9e4035-fafd-4aee-a6cc-d5e95d6514c2.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/64e3c22b-1058-4ab8-855f-18bbbed5dc13/images/6f9e4035-fafd-4aee-a6cc-d5e95d6514c2.png)
 
 |
 |

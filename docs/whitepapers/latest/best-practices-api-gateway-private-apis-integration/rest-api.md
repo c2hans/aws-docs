@@ -113,7 +113,7 @@ NLB listener types include TCP (SSL passthrough or non-SSL traffic) and TLS (end
 
  In the basic architecture, Amazon EC2 instances and VPC-enabled [AWS Lambda](https://aws.amazon.com/lambda/) functions access a private API through an interface VPC endpoint. The security group attached to the endpoint must allow the Transmission Control Protocol (TCP) port 443. In the private API resource policy, requests from the VPC and interface VPC endpoint should be allowed.
 
-![REST private API basic architecture.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-api-gateway-private-apis-integration/images/rest-private-api.png)
+![REST private API basic architecture.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-api-gateway-private-apis-integration/images/rest-private-api.png)
 
 **Best practices**
 + Use a single VPC endpoint to access multiple private APIs. This reduces the number of VPC endpoints that you might need.
@@ -127,7 +127,7 @@ NLB listener types include TCP (SSL passthrough or non-SSL traffic) and TLS (end
 
  If you want to allow access to a private API from other accounts, an interface VPC endpoint in a different account can be used to invoke the API. However, they both must exist in the same [Region](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/), such as us-east-1 (N. Virginia). Additionally, the private API resource policy must allow access from the other account's VPC or interface VPC endpoint.
 
-![REST private API cross-account architecture.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-api-gateway-private-apis-integration/images/cross-account.png)
+![REST private API cross-account architecture.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-api-gateway-private-apis-integration/images/cross-account.png)
 
 The following example shows a resource policy that allows access from a specific VPC endpoint in Account B:
 
@@ -162,7 +162,7 @@ Amazon API Gateway supports custom domain names for private APIs. This feature p
 
 In this pattern, the API provider (Account A) creates a private custom domain name backed by an AWS Certificate Manager (ACM) certificate and maps it to a private REST API. The provider then shares the private custom domain name with the API consumer (Account B) using AWS RAM. The consumer creates a domain name access association between their VPC endpoint and the shared private custom domain name, and configures a Route 53 private hosted zone to resolve the custom domain name to the VPC endpoint.
 
-![REST private API cross-account architecture using a private custom domain name.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-api-gateway-private-apis-integration/images/cross-account-pcd.png)
+![REST private API cross-account architecture using a private custom domain name.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-api-gateway-private-apis-integration/images/cross-account-pcd.png)
 
 **How it works**
 
@@ -211,7 +211,7 @@ For more information, see [Custom domain names for private APIs in API Gateway](
 
  The following diagram shows a sample architecture where on-premises clients access a web application hosted in the on-premises network. The web application uses a private API for its API endpoint. For the private API endpoint, a Route 53 alias is used. Because a Route 53 alias record is publicly resolvable, there is no need to set up a conditional forwarder on on-premises DNS servers to resolve the hostname.
 
-![REST private API on-premises architecture.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-api-gateway-private-apis-integration/images/on-premises.png)
+![REST private API on-premises architecture.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-api-gateway-private-apis-integration/images/on-premises.png)
 
 #### DNS resolution options for on-premises clients
 <a name="dns-resolution-on-premises"></a>
@@ -252,7 +252,7 @@ The following diagram shows a sample architecture for on-premises clients to acc
 
 The solution assumes mechanisms are in place to synchronize state (if any) across Regions for the backend APIs and associated datastores.
 
-![Multi-Region API Gateway integrated with on-premises via Route 53 Resolver using a Network Load Balancer.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-api-gateway-private-apis-integration/images/pcd-on-prem.png)
+![Multi-Region API Gateway integrated with on-premises via Route 53 Resolver using a Network Load Balancer.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-api-gateway-private-apis-integration/images/pcd-on-prem.png)
 
 **Best practices**
 + Use the NLB target group health check against custom heartbeat to verify API Gateway service health. The heartbeat endpoint returns HTTP 200 without requiring authentication.
@@ -292,7 +292,7 @@ A Route 53 private hosted zone associated with the client VPC contains records 
 
 1. Weighted routing policy: This is used in an active-active setup where a portion of traffic is always sent to the secondary Region. This can also be configured with a health check, similar to the failover policy, where traffic is only routed to healthy Regions.
 
-![Multi-Region API Gateway integrated with on-premises via Route 53 Resolver using Private Custom Domains.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-api-gateway-private-apis-integration/images/multi-region-pcd.png)
+![Multi-Region API Gateway integrated with on-premises via Route 53 Resolver using Private Custom Domains.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-api-gateway-private-apis-integration/images/multi-region-pcd.png)
 
 **Best practices**
 + Create Route 53 health checks and CloudWatch alarms in US East (N. Virginia) to monitor your secondary Region endpoints.
@@ -305,7 +305,7 @@ A Route 53 private hosted zone associated with the client VPC contains records 
 
  [Amazon Elastic Container Service](https://aws.amazon.com/ecs/) (Amazon ECS) is a fully managed container orchestration service. You can use Amazon ECS to run your most sensitive and mission critical applications because of its security, reliability, and scalability. For private integration in REST APIs, one design pattern is to use an Application Load Balancer to route traffic to an Amazon ECS cluster in private subnets. If you use Amazon ECS as your backend compute service, the following diagram shows clients in one VPC accessing an Amazon ECS cluster in another VPC through a private API and private integration.
 
-![Cross-VPC ECS access via private integration with private API.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-api-gateway-private-apis-integration/images/cross-vpc.png)
+![Cross-VPC ECS access via private integration with private API.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-api-gateway-private-apis-integration/images/cross-vpc.png)
 
 **Best practices**
 + Use an ALB with IP-type target groups for Amazon ECS tasks. This allows Amazon ECS to register and deregister task IP addresses automatically as tasks scale.
@@ -323,7 +323,7 @@ API Gateway supports VPC links V2 for REST APIs. VPC links V2 allow private inte
 
  The following diagram shows a sample architecture where a PrivateLink (VPC Endpoint Service) connection has been established between the *Central API Gateway Account* and an Elastic Container Service (ECS) cluster in *Resource Account A *and a EC2 Auto Scaling Group (ASG) in *Resource Account B*. As this is a REST API Gateway the VPC Link uses a Network Load Balancer (NLB) to point to the private IP addresses of the VPC Endpoint for each PrivateLink connection. API Gateway can invoke cross-account Lambda functions without the need for VPC link by [using resource-based policies](https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-based.html).
 
-![REST private cross-account integration using AWS PrivateLink and NLB.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-api-gateway-private-apis-integration/images/rest-privatelink.png)
+![REST private cross-account integration using AWS PrivateLink and NLB.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-api-gateway-private-apis-integration/images/rest-privatelink.png)
 
 In the preceding example there is no private routing between the different account VPCs. PrivateLink provides a secure private connection to a single endpoint. Example use cases for this architecture include where there are overlapping CIDR ranges between VPCs, or you wish to provide access to only a specific service or application rather than create a route to all resources in another VPC.
 
@@ -333,7 +333,7 @@ For this cross-account PrivateLink pattern, consider the following when choosing
 
 In the following architecture there is no private routing between the different account VPCs. PrivateLink provides a secure private connection to a single endpoint. Example use cases for this architecture include where there are overlapping CIDR ranges between VPCs, or you want to provide access to only a specific service or application rather than create a route to all resources in another VPC.
 
-![REST private cross-account integration using AWS PrivateLink and ALB.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-api-gateway-private-apis-integration/images/cross-account-alb.png)
+![REST private cross-account integration using AWS PrivateLink and ALB.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-api-gateway-private-apis-integration/images/cross-account-alb.png)
 
 **Resource Account Requirements**
 
@@ -360,7 +360,7 @@ Monitoring and Security
 
 If you already have a cross-account VPC architecture in place using VPC Peering or AWS Transit Gateway. NLB or ALB can be used for the VPC Link and pointed directly to the private IP addresses of the resources in a different account, removing the need for the VPC Endpoint and simplifying the architecture. This is shown in the following sample architecture.
 
-![REST private cross-account integration using VPC Peering (NLB - ALB).](http://docs.aws.amazon.com/whitepapers/latest/best-practices-api-gateway-private-apis-integration/images/rest-cross-account.png)
+![REST private cross-account integration using VPC Peering (NLB - ALB).](https://docs.aws.amazon.com/whitepapers/latest/best-practices-api-gateway-private-apis-integration/images/rest-cross-account.png)
 
 The following summary highlights the main architecture features of the API architectural patterns described above:
 

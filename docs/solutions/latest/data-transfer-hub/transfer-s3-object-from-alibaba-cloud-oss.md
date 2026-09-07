@@ -78,7 +78,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/trans
 
  After the task is created successfully, it will appear on the **Tasks** page.
 
-![Transfer task details and status](http://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/create-oss-transfer-task.png)
+![Transfer task details and status](https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/create-oss-transfer-task.png)
 
  Select the Task ID to go to the task Details page, and then choose CloudWatch Dashboard to monitor the task status.
 
@@ -225,7 +225,7 @@ Make sure to replace your queue ARN in the JSON.
 <a name="create-the-trigger"></a>
 
 1.  Navigate to the **Create Trigger** in **Triggers** tab to create the trigger for the function.
-![Triggers tab interface with Create Trigger button and search bar for managing function triggers.](http://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/create-trigger.png)
+![Triggers tab interface with Create Trigger button and search bar for managing function triggers.](https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/create-trigger.png)
 
 1.  Choose **OSS** as the **Trigger Type**, and choose the bucket name.
 

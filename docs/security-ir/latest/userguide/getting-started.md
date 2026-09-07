@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/getting-sta
 # Getting started
 <a name="getting-started"></a>
 
-[![AWS Videos](http://img.youtube.com/vi/-GfiHIbfGfI/0.jpg)](http://www.youtube.com/watch?v=-GfiHIbfGfI)
+[![AWS Videos](https://img.youtube.com/vi/-GfiHIbfGfI/0.jpg)](https://www.youtube.com/watch?v=-GfiHIbfGfI)
 
 **Topics**
 + [Sign up for an AWS account](#sign-up-for-aws)

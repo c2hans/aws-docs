@@ -32,7 +32,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/data-warehousing-on-a
 
  Figure 3 illustrates the primary difference between row-oriented and column-oriented databases. Rows are packed into their own blocks in a row-oriented database, and columns are packed into their own blocks in a column-oriented database.
 
-![Row-oriented vs. column-oriented databases](http://docs.aws.amazon.com/whitepapers/latest/data-warehousing-on-aws/images/row-column-databases.jpg)
+![Row-oriented vs. column-oriented databases](https://docs.aws.amazon.com/whitepapers/latest/data-warehousing-on-aws/images/row-column-databases.jpg)
 
 *Row-oriented vs. column-oriented databases*
 

@@ -30,14 +30,14 @@ Publication date: **June 3, 2021** ([Document revisions](document-revisions.md))
 
  The following figure illustrates an example Amazon VPC and its associated components:
 
-![A diagram depicting traditional access from an Amazon VPC.](http://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/images/traditional-access.png)
+![A diagram depicting traditional access from an Amazon VPC.](https://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/images/traditional-access.png)
 
 ### What is AWS PrivateLink?
 <a name="what-is-aws-privatelink"></a>
 
 AWS PrivateLink provides secure, private connectivity between Amazon VPCs, AWS services, and on-premises applications on the AWS network. As a result, customers can simply and securely access services on AWS using the private Amazon network, powering connectivity to AWS services through interface Amazon VPC endpoints. Refer to the following figure for Amazon VPC-to-VPC connectivity using AWS PrivateLink.
 
-![A diagram depicting Amazon VPC-to-VPC connectivity with AWS PrivateLink.](http://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/images/vpc-vpc.png)
+![A diagram depicting Amazon VPC-to-VPC connectivity with AWS PrivateLink.](https://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/images/vpc-vpc.png)
 
 AWS PrivateLink also allows customers to create an application in their Amazon VPC, referred to as a service provider VPC, and offers that application as an AWS PrivateLink-enabled service or VPC endpoint service. A VPC endpoint service lets customers host a service and have it accessed by other consumers using AWS PrivateLink.
 

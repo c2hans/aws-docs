@@ -18,7 +18,7 @@ Based on the user authentication service, choose one of the following options.
 ------
 #### [ IAM Identity Center ]
 
-![Portal administrators section of the portal details page.](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/SSOUserDetail.png)
+![Portal administrators section of the portal details page.](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/SSOUserDetail.png)
 
 **To add portal users**
 
@@ -30,7 +30,7 @@ If you use IAM Identity Center as your identity store, and you're signed in to y
 
 1. Choose **Assign users**.
 
-![The "Assign users" page.](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/SSOUserAssign2.png)
+![The "Assign users" page.](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/SSOUserAssign2.png)
 
 **To remove portal users**
 + On the portal details page, in the **Portal users** section, select the check box for the users to remove from the portal, and then choose **Remove from portal**.
@@ -38,7 +38,7 @@ If you use IAM Identity Center as your identity store, and you're signed in to y
 ------
 #### [ IAM ]
 
-![Portal administrators section of the portal details page.](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/IAMRoleUserDetail.png)
+![Portal administrators section of the portal details page.](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/IAMRoleUserDetail.png)
 
 **To add portal users**
 
@@ -52,9 +52,9 @@ If you use IAM Identity Center as your identity store, and you're signed in to y
 
 1. Choose **Assign users**.
 
-![The "Assign users" page.](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/IAMUserAssign2.png)
+![The "Assign users" page.](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/IAMUserAssign2.png)
 
-![The "Assign users" page.](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/IAMRoleAssign2.png)
+![The "Assign users" page.](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/IAMRoleAssign2.png)
 
 **To remove portal users**
 + On the portal details page, in the **Portal users** section, select the check box for the users to remove from the portal, and then choose **Remove from portal**.

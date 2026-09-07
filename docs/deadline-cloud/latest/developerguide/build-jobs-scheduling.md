@@ -131,7 +131,7 @@ steps:
 
 Submitters set the same requirements through the **Host requirements** tab. Choose **Run on worker hosts that meet the following requirements** to set an operating system, CPU architecture, and hardware ranges without editing the template.
 
-![The Host requirements tab with custom requirements selected, showing OS, CPU architecture, and hardware ranges.](http://docs.aws.amazon.com/deadline-cloud/latest/developerguide/images/bundle-gui-submit-host-requirements.png)
+![The Host requirements tab with custom requirements selected, showing OS, CPU architecture, and hardware ranges.](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/images/bundle-gui-submit-host-requirements.png)
 
 This job can be scheduled to a fleet with the following capabilities:
 

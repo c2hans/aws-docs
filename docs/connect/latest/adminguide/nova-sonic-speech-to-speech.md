@@ -30,28 +30,28 @@ You can configure Amazon Nova Sonic as a Speech-to-Speech (S2S) model for a Conv
 
 1. In the Speech model section, choose **Edit**.
 
-![Amazon Nova Sonic Speech-to-Speech overview.](http://docs.aws.amazon.com/connect/latest/adminguide/images/nova-sonic-overview.jpg)
+![Amazon Nova Sonic Speech-to-Speech overview.](https://docs.aws.amazon.com/connect/latest/adminguide/images/nova-sonic-overview.jpg)
 
 ### Step 2: Select Speech-to-Speech
 <a name="select-speech-to-speech"></a>
 
 In the Speech model modal, open the Model type dropdown and choose **Speech-to-Speech**.
 
-![Model type dropdown showing Speech-to-Speech option.](http://docs.aws.amazon.com/connect/latest/adminguide/images/nova-sonic-model-type.png)
+![Model type dropdown showing Speech-to-Speech option.](https://docs.aws.amazon.com/connect/latest/adminguide/images/nova-sonic-model-type.png)
 
 ### Step 3: Choose Amazon Nova Sonic
 <a name="choose-amazon-nova-sonic"></a>
 
 After selecting Speech-to-Speech, open Voice provider and select **Amazon Nova Sonic**. Then choose **Confirm**.
 
-![Model type dropdown showing Speech-to-Speech option.](http://docs.aws.amazon.com/connect/latest/adminguide/images/nova-sonic-speech-to-speech.png)
+![Model type dropdown showing Speech-to-Speech option.](https://docs.aws.amazon.com/connect/latest/adminguide/images/nova-sonic-speech-to-speech.png)
 
 ### Step 4: Review Speech model status
 <a name="review-speech-model-status"></a>
 
 The Speech model card now shows Speech-to-Speech: Amazon Nova Sonic and displays a warning to select a Nova Sonic compatible voice in your Set voice block.
 
-![Speech model modal with Amazon Nova Sonic selected.](http://docs.aws.amazon.com/connect/latest/adminguide/images/nova-sonic-provider-selection.png)
+![Speech model modal with Amazon Nova Sonic selected.](https://docs.aws.amazon.com/connect/latest/adminguide/images/nova-sonic-provider-selection.png)
 
 ### Step 5: Build and activate the locale
 <a name="build-activate-locale"></a>
@@ -79,14 +79,14 @@ After enabling Nova Sonic at the bot level, you must configure a matching Nova S
 
 1. Drag a Set voice block onto the canvas or open an existing one.
 
-![Speech model card showing Nova Sonic configuration.](http://docs.aws.amazon.com/connect/latest/adminguide/images/nova-sonic-speech-model-card.jpg)
+![Speech model card showing Nova Sonic configuration.](https://docs.aws.amazon.com/connect/latest/adminguide/images/nova-sonic-speech-model-card.jpg)
 
 ### Step 2: Select Override and Generative speaking style
 <a name="select-override-generative"></a>
 
 In Other settings, choose **Override speaking style** and select **Generative** to enable Nova Sonic expressive output.
 
-![Set voice block configuration.](http://docs.aws.amazon.com/connect/latest/adminguide/images/nova-sonic-set-voice-block.png)
+![Set voice block configuration.](https://docs.aws.amazon.com/connect/latest/adminguide/images/nova-sonic-set-voice-block.png)
 
 ### Step 3: Select a Nova Sonic compatible voice
 <a name="select-nova-sonic-voice"></a>
@@ -97,14 +97,14 @@ In Other settings, choose **Override speaking style** and select **Generative** 
 
 1. Under Voice, select one of the Nova Sonic–compatible voices.
 
-![Override speaking style set to Generative.](http://docs.aws.amazon.com/connect/latest/adminguide/images/nova-sonic-generative-style.png)
+![Override speaking style set to Generative.](https://docs.aws.amazon.com/connect/latest/adminguide/images/nova-sonic-generative-style.png)
 
 ### Step 4: Review selected voice
 <a name="review-selected-voice"></a>
 
 The Set voice block now shows the selected voice and style, such as Voice: Matthew (Generative).
 
-![Set necessary fields for Sonic.](http://docs.aws.amazon.com/connect/latest/adminguide/images/nova-sonic-voice-selection.png)
+![Set necessary fields for Sonic.](https://docs.aws.amazon.com/connect/latest/adminguide/images/nova-sonic-voice-selection.png)
 
 ### Step 5: Save and publish the flow
 <a name="save-publish-flow"></a>

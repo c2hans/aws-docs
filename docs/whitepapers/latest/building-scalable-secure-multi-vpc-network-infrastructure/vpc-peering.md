@@ -11,7 +11,7 @@ The first way to connect two VPCs is to use VPC peering. In this setup, a connec
 
 At scale, when you have tens or hundreds of VPCs, interconnecting them with peering can result in a mesh of hundreds or thousands of peering connections. A large number of connections can be difficult to manage and scale. For example, if you have 100 VPCs and you want to setup a full mesh peering between them, it will take 4,950 peering connections [`n(n-1)/2`] where `n` is the total number of VPCs. There is a [maximum limit](https://docs.aws.amazon.com/vpc/latest/userguide/amazon-vpc-limits.html) of 125 active peering connections per VPC.
 
-![A diagram depicting network setup using VPC peering](http://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/network-setup-vpc-peering.png)
+![A diagram depicting network setup using VPC peering](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/network-setup-vpc-peering.png)
 
 If you are using VPC peering, on-premises connectivity (VPN and/or Direct Connect) must be made to each VPC. Resources in a VPC cannot reach on-premises using the hybrid connectivity of a peered VPC, as shown in the preceding figure.
 

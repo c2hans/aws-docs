@@ -9,7 +9,7 @@ To modernize your legacy applications, you must first understand how to break th
 
 The following diagram shows the high-level process of generative AI-assisted decomposition and migration wave planning provided by AWS Transform.
 
-![Generative AI-assisted decomposition and migration planning with AWS Transform.](http://docs.aws.amazon.com/prescriptive-guidance/latest/mainframe-decomposition-aws-transform/images/guide-img/b2468f31-0c9f-4fc4-9a0f-816b3ed5739c/images/aec68162-b847-4797-a2ed-827fba04b6a9.png)
+![Generative AI-assisted decomposition and migration planning with AWS Transform.](https://docs.aws.amazon.com/prescriptive-guidance/latest/mainframe-decomposition-aws-transform/images/guide-img/b2468f31-0c9f-4fc4-9a0f-816b3ed5739c/images/aec68162-b847-4797-a2ed-827fba04b6a9.png)
 
 In this workflow:
 

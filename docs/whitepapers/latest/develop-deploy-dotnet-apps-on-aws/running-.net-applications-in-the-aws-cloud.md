@@ -17,7 +17,7 @@ In contrast, with the advent of .NET Core, modern .NET Core applications can be 
 
 .NET 5 now also allows performant hosting of workloads on [ARM64](https://en.wikipedia.org/wiki/AArch64) EC2 instances such as the [Graviton2](https://aws.amazon.com/ec2/graviton/) EC2 families. This enables access to the latest generation of processors available on Amazon EC2, meaning your applications can be hosted on compute specialized to your workload type, such as video encoding, web servers, and high-performance computing (HPC).
 
-![A chart depicting AWS deployment targets for compute workloads.](http://docs.aws.amazon.com/whitepapers/latest/develop-deploy-dotnet-apps-on-aws/images/dotnet-apps4.png)
+![A chart depicting AWS deployment targets for compute workloads.](https://docs.aws.amazon.com/whitepapers/latest/develop-deploy-dotnet-apps-on-aws/images/dotnet-apps4.png)
 
 * AWS deployment targets for compute workloads *
 

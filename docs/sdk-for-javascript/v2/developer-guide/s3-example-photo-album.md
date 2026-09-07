@@ -7,7 +7,7 @@ The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you 
 # Uploading Photos to Amazon S3 from a Browser
 <a name="s3-example-photo-album"></a>
 
-![JavaScript code example that applies to browser execution](http://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/browsericon.png)
+![JavaScript code example that applies to browser execution](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/browsericon.png)
 
 **This browser script code example shows:**
 + How to create a browser application that allows users to create photo albums in an Amazon S3 bucket and upload photos into the albums.
@@ -17,7 +17,7 @@ The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you 
 
 In this example, a simple HTML page provides a browser-based application for creating photo albums in an Amazon S3 bucket into which you can upload photos. The application lets you delete photos and albums that you add.
 
-![JavaScript in a browser script using Amazon S3 buckets for photo albums.](http://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/s3-photo-album-example.png)
+![JavaScript in a browser script using Amazon S3 buckets for photo albums.](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/s3-photo-album-example.png)
 
 The browser script uses the SDK for JavaScript to interact with an Amazon S3 bucket. Use the following methods of the Amazon S3 client class to enable the photo album application:
 + [`listObjects`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#listObjects-property)

@@ -39,7 +39,7 @@ For additional information, see the [Flux documentation](https://fluxcd.io/flux/
 
 The following diagram illustrates a GitOps-driven CD workflow that uses Flux within an EKS cluster. For detailed information, see the [Flux documentation](https://fluxcd.io/flux/).
 
-![Flux architecture and workflow on AWS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/eks-gitops-tools/images/guide-img/b6f49161-b2c5-42aa-b1d8-b0781836edb7/images/e8e3bf71-f2ff-4e6e-945d-789011201868.png)
+![Flux architecture and workflow on AWS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-gitops-tools/images/guide-img/b6f49161-b2c5-42aa-b1d8-b0781836edb7/images/e8e3bf71-f2ff-4e6e-945d-789011201868.png)
 
 where:
 + **Step 1: Pull request (PR) merge**. A developer commits changes to Kubernetes manifests or Helm charts that are stored in a Git repository. When the PR has been reviewed and merged into the main branch, the desired state of the application is updated in source control.

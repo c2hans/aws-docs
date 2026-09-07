@@ -14,7 +14,7 @@ Windows Volume Shadow Copy Service (VSS) orchestrates operating system and appli
 
 The following diagram shows the architecture of a backup and restore solution using VSS-enabled EBS snapshots.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-managing-on-aws/images/guide-img/465b5bfb-6afe-43d5-ad91-28d097c28a50/images/6278c649-86ff-4b92-9026-924adba8af7d.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-managing-on-aws/images/guide-img/465b5bfb-6afe-43d5-ad91-28d097c28a50/images/6278c649-86ff-4b92-9026-924adba8af7d.png)
 
 This architecture uses the AWS Systems Manager Run Command to install the VSS agent on your SQL Server instances. You can also use the Run Command to invoke the entire workflow of flushing operating system and application buffers to the disk, pausing I/O operations, taking a point-in-time snapshot of the EBS volumes, and then resuming I/O.
 
@@ -46,7 +46,7 @@ Using AWS Backup, you can centralize and automate data protection across AWS ser
 
 The following diagram shows the architecture of a backup and restore solution for SQL Server on EC2 using AWS Backup.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-managing-on-aws/images/guide-img/465b5bfb-6afe-43d5-ad91-28d097c28a50/images/e4fa5e37-201d-42ed-9cca-dc903a3547ad.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-managing-on-aws/images/guide-img/465b5bfb-6afe-43d5-ad91-28d097c28a50/images/e4fa5e37-201d-42ed-9cca-dc903a3547ad.png)
 
  This solution has the following benefits:
 + You can automate backup scheduling, retention management, and lifecycle management.

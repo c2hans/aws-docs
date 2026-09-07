@@ -123,7 +123,7 @@ If you use a multi-account architecture, SeedFarmer needs to access the target a
 
 The following figure shows the cross-account relationships, including operations for assuming ADDF-specific AWS Identity and Access Management (IAM) roles.
 
-![IAM roles in an AWS multi-account architecture that has a toolchain account and target accounts.](http://docs.aws.amazon.com/prescriptive-guidance/latest/addf-security-and-operations/images/guide-img/b7c99a03-2a36-4dc2-9b13-9b2a1cbf7eb9/images/724ea3a3-e810-4fca-ad1f-f0d12d1a7de9.png)
+![IAM roles in an AWS multi-account architecture that has a toolchain account and target accounts.](https://docs.aws.amazon.com/prescriptive-guidance/latest/addf-security-and-operations/images/guide-img/b7c99a03-2a36-4dc2-9b13-9b2a1cbf7eb9/images/724ea3a3-e810-4fca-ad1f-f0d12d1a7de9.png)
 
 These cross-account actions are achieved by using well-defined assume-role operations.
 + The ADDF toolchain IAM role is deployed in the toolchain account. SeedFarmer assumes this role. This role has permissions to perform an `iam:AssumeRole` action and can assume the ADDF deployment IAM role in each target account. In addition, the ADDF toolchain IAM role can run local AWS Systems Manager Parameter Store operations.

@@ -35,7 +35,7 @@ To perform a chunked upload, do the following:
 
 The following diagram illustrates the process of calculating the seed signature.
 
-![The process of calculating the seed signature.](http://docs.aws.amazon.com/AmazonS3/latest/developerguide/images/sigV4-auth-header-chunked-seed-signature.png)
+![The process of calculating the seed signature.](https://docs.aws.amazon.com/AmazonS3/latest/developerguide/images/sigV4-auth-header-chunked-seed-signature.png)
 
 The following table describes the functions that are shown in the diagram. You need to implement code for these functions.
 
@@ -69,7 +69,7 @@ Where:
 + {{chunk-size}} is the size, in bytes, of the chunk-data, without metadata. For example, if you are uploading a 65 KB object and using a chunk size of 64 KB, you upload the data in three chunks: the first would be 64 KB, the second 1 KB, and the final chunk with 0 bytes.
 + {{signature}} For each chunk, you calculate the signature using the following string to sign. For the first chunk, you use the seed-signature as the previous signature.
 
-![The process of calculating the seed signature showing various components of the string to sign.](http://docs.aws.amazon.com/AmazonS3/latest/developerguide/images/sigV4-auth-header-chunk-signature.png)
+![The process of calculating the seed signature showing various components of the string to sign.](https://docs.aws.amazon.com/AmazonS3/latest/developerguide/images/sigV4-auth-header-chunk-signature.png)
 
  The size of the final chunk data that you send is 0, although the chunk body still contains metadata, including the signature of the previous chunk.
 

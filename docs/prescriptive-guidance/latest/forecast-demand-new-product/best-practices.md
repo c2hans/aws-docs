@@ -51,11 +51,11 @@ Depending on the specific use case, your organization can consider different for
 
 A statistical forecasting approach, like the [Bass diffusion model](https://en.wikipedia.org/wiki/Bass_diffusion_model), uses a differential equation to describe how a population adopts new products. This approach is more suitable for new product introductions that are completely new to the market, such as products that feature significant innovations. The following chart shows the relationship between innovators and imitators when using a bass diffusion model.
 
-![The speed and timing of adoption depends on the degree of innovation and the degree of imitation.](http://docs.aws.amazon.com/prescriptive-guidance/latest/forecast-demand-new-product/images/guide-img/df47c28b-2a51-49d3-b80f-80efbc2bf4a0/images/f93b4089-846c-4197-9e92-ce694d5bab35.png)
+![The speed and timing of adoption depends on the degree of innovation and the degree of imitation.](https://docs.aws.amazon.com/prescriptive-guidance/latest/forecast-demand-new-product/images/guide-img/df47c28b-2a51-49d3-b80f-80efbc2bf4a0/images/f93b4089-846c-4197-9e92-ce694d5bab35.png)
 
 If the new product doesn't feature significant innovation, your organization can use time-series forecasting models that operate on the sales history of the product that is the most similar to the new product. You can use ML-based forecasting algorithms, such as the [Amazon SageMaker AI DeepAR forecasting algorithm](https://docs.aws.amazon.com/sagemaker/latest/dg/deepar.html), that can use time-series sales data from multiple similar products. This is well-suited for *cold start forecasting *scenarios, which is when you want to generate a forecast for a time series but have little or no existing historical data. The following image shows how you can use time-series data from related products to generate a forecast for a new, similar product.
 
-![Using historical data from other, related products in order to forecast demand for a new product.](http://docs.aws.amazon.com/prescriptive-guidance/latest/forecast-demand-new-product/images/guide-img/df47c28b-2a51-49d3-b80f-80efbc2bf4a0/images/25e4df88-08e3-4051-bf3d-0529a422ee17.png)
+![Using historical data from other, related products in order to forecast demand for a new product.](https://docs.aws.amazon.com/prescriptive-guidance/latest/forecast-demand-new-product/images/guide-img/df47c28b-2a51-49d3-b80f-80efbc2bf4a0/images/25e4df88-08e3-4051-bf3d-0529a422ee17.png)
 
 You should consider generating forecasts that align with your new product launch timeline. Generate forecasts well ahead of time to allow sufficient buffer for any logistic corrections.
 
@@ -66,7 +66,7 @@ After completing a proof of concept for NPI demand forecasting, the solution sho
 
 The following diagram demonstrates the launch and scale strategy as the organization's NPI forecasting solution matures.
 
-![Complete a PoC, build a framework, launch for one product, and then scale.](http://docs.aws.amazon.com/prescriptive-guidance/latest/forecast-demand-new-product/images/guide-img/df47c28b-2a51-49d3-b80f-80efbc2bf4a0/images/a05bfd29-071a-4fc7-8662-cce505516071.png)
+![Complete a PoC, build a framework, launch for one product, and then scale.](https://docs.aws.amazon.com/prescriptive-guidance/latest/forecast-demand-new-product/images/guide-img/df47c28b-2a51-49d3-b80f-80efbc2bf4a0/images/a05bfd29-071a-4fc7-8662-cce505516071.png)
 
 It is also recommended that you design the solution so that executives and stakeholders can self-serve forecasts. For example, you can create [Amazon Quick Sight dashboards](https://docs.aws.amazon.com/quicksight/latest/user/exploring-dashboards.html) so that stakeholders can access the latest forecasts on demand.
 

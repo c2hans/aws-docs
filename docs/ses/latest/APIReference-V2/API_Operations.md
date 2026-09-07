@@ -6,6 +6,7 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Operation
 <a name="API_Operations"></a>
 
 The following actions are supported:
++  [AssociateEmailIdentityCertificate](API_AssociateEmailIdentityCertificate.md)
 +  [BatchGetMetricData](API_BatchGetMetricData.md)
 +  [CancelExportJob](API_CancelExportJob.md)
 +  [CreateConfigurationSet](API_CreateConfigurationSet.md)
@@ -36,6 +37,7 @@ The following actions are supported:
 +  [DeleteSuppressedDestination](API_DeleteSuppressedDestination.md)
 +  [DeleteTenant](API_DeleteTenant.md)
 +  [DeleteTenantResourceAssociation](API_DeleteTenantResourceAssociation.md)
++  [DisassociateEmailIdentityCertificate](API_DisassociateEmailIdentityCertificate.md)
 +  [GetAccount](API_GetAccount.md)
 +  [GetBlacklistReports](API_GetBlacklistReports.md)
 +  [GetConfigurationSet](API_GetConfigurationSet.md)
@@ -69,6 +71,7 @@ The following actions are supported:
 +  [ListDeliverabilityTestReports](API_ListDeliverabilityTestReports.md)
 +  [ListDomainDeliverabilityCampaigns](API_ListDomainDeliverabilityCampaigns.md)
 +  [ListEmailIdentities](API_ListEmailIdentities.md)
++  [ListEmailIdentityCertificates](API_ListEmailIdentityCertificates.md)
 +  [ListEmailTemplates](API_ListEmailTemplates.md)
 +  [ListExportJobs](API_ListExportJobs.md)
 +  [ListImportJobs](API_ListImportJobs.md)
@@ -110,6 +113,7 @@ The following actions are supported:
 +  [TagResource](API_TagResource.md)
 +  [TestRenderEmailTemplate](API_TestRenderEmailTemplate.md)
 +  [UntagResource](API_UntagResource.md)
++  [UpdateConfigurationSet](API_UpdateConfigurationSet.md)
 +  [UpdateConfigurationSetEventDestination](API_UpdateConfigurationSetEventDestination.md)
 +  [UpdateContact](API_UpdateContact.md)
 +  [UpdateContactList](API_UpdateContactList.md)

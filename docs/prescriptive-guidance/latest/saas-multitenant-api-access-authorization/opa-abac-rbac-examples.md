@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multit
 
 To enhance the RBAC example in the previous section, you can add attributes to users.
 
-![RBAC and ABAC with OPA and Rego](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/976d9ba1-5fc0-4022-9698-3f971d60d314.png)
+![RBAC and ABAC with OPA and Rego](https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/976d9ba1-5fc0-4022-9698-3f971d60d314.png)
 
 This example includes the same roles from the previous example, but adds the user attribute *account\_lockout\_flag*. This is a user-specific attribute that isn't associated with any particular role. You can use the same RBAC external data that you used previously for this example:
 

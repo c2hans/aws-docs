@@ -46,7 +46,7 @@ For more information, see [Limitations of Amazon RDS encrypted DB instances](htt
   + An AWS KMS key is used for encryption while restoring the snapshot.
   + An AWS DMS replication task is used to migrate the data.
 
-![Process uses AWS DMS to encrypt an existing Amazon RDS for PostgreSQL DB instance to a new DB.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/820d17c0-0eed-4ed9-9f43-cbada081d924/images/44dd8420-d89d-466e-b7fb-1bdafab8f7f9.png)
+![Process uses AWS DMS to encrypt an existing Amazon RDS for PostgreSQL DB instance to a new DB.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/820d17c0-0eed-4ed9-9f43-cbada081d924/images/44dd8420-d89d-466e-b7fb-1bdafab8f7f9.png)
 
 ## Tools
 <a name="encrypt-an-existing-amazon-rds-for-postgresql-db-instance-tools"></a>
@@ -101,7 +101,7 @@ For more information, see [Limitations of Amazon RDS encrypted DB instances](htt
 
 Checking the encryption for the source PostgreSQL DB instance:
 
-![The Summary page of source PostgreSQL DB instance shows encryption not enabled for storage.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/820d17c0-0eed-4ed9-9f43-cbada081d924/images/d53d1dab-b5c2-452d-b823-ba3d6508ad15.png)
+![The Summary page of source PostgreSQL DB instance shows encryption not enabled for storage.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/820d17c0-0eed-4ed9-9f43-cbada081d924/images/d53d1dab-b5c2-452d-b823-ba3d6508ad15.png)
 
 Additional notes for this pattern:
 + Enable replication on PostgreSQL by setting the `rds.logical_replication` parameter to 1.

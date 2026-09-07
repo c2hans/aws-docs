@@ -2,14 +2,14 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/internet-of-things-services.html
 ---
 
-# ![AWS Management Console icon](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/iot-icon.jpg)Internet of Things (IoT)
+# ![AWS Management Console icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/iot-icon.jpg)Internet of Things (IoT)
 <a name="internet-of-things-services"></a>
 
 AWS offers Internet of Things (IoT) services and solutions to connect and manage billions of devices. Collect, store, and analyze IoT data for industrial, consumer, commercial, and automotive workloads.
 
 Each service is described after the diagram. To help you decide which service best meets your needs, see [Choosing an AWS IoT service](https://docs.aws.amazon.com/decision-guides/latest/iot-on-aws-how-to-choose/iot.html). For general information, see [AWS IoT](https://aws.amazon.com/iot/).
 
-![Diagram showing AWS IoT services](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/iot-stack.png)
+![Diagram showing AWS IoT services](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/iot-stack.png)
 
 **Topics**
 + [AWS IoT Analytics](#aws-iot-analytics)

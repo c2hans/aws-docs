@@ -102,7 +102,7 @@ Run volume tests before data migrations, when introducing bulk import/export fea
 ## Choosing the Right Test for Your Situation
 <a name="choosing-right-test"></a>
 
-![Choosing the Right Test for Your Situation](http://docs.aws.amazon.com/solutions/latest/performance-testing/images/perf_decision_tree.png)
+![Choosing the Right Test for Your Situation](https://docs.aws.amazon.com/solutions/latest/performance-testing/images/perf_decision_tree.png)
 
 ## Common Mistakes in Test Type Selection
 <a name="common-mistakes-test-type-selection"></a>

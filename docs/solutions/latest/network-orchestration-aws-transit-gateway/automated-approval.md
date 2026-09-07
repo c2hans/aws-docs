@@ -9,7 +9,7 @@ By default, the solution approves network requests from spoke accounts automatic
 
  **Architecture diagram of AWS resources deployed to approve network requests automatically.**
 
-![automated approval architecture](http://docs.aws.amazon.com/solutions/latest/network-orchestration-aws-transit-gateway/images/automated-approval-architecture.png)
+![automated approval architecture](https://docs.aws.amazon.com/solutions/latest/network-orchestration-aws-transit-gateway/images/automated-approval-architecture.png)
 
 1. Depending on the event, the state machine can perform the following actions:
    + Create, update, or delete transit gateway attachments to the VPC

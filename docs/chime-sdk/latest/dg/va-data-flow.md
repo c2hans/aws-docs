@@ -11,7 +11,7 @@ The speaker search function involves the creation of a voice embedding, which ca
 
 The following diagram shows an example data flow through a speaker search analysis task. The numbered descriptions below the diagram describe each step of the process. The diagram assumes you have already configured an Amazon Chime SDK Voice Connector with a call analytics configuration that has a `VoiceAnalyticsProcessor`. For more information, see [Recording Voice Connector calls](record-vc-calls.md).
 
-![A diagram showing the data flow through a speaker search analysis.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/speaker-search-workflow-2.png)
+![A diagram showing the data flow through a speaker search analysis.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/speaker-search-workflow-2.png)
 
 1. You or a system administrator create a voice profile domain for storing voice embeddings and voice profiles. For more information about creating voice profile domains, see [Creating voice profile domains](https://docs.aws.amazon.com/chime-sdk/latest/ag/create-vp-domain.html), in the *Amazon Chime SDK Administrator Guide*. You can also use the [CreateVoiceProfileDomain](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_CreateVoiceProfileDomain.html) API.
 

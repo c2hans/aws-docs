@@ -11,4 +11,4 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/Welcome.html
 
 For more information, see [What is AWS IoT Greengrass?](https://docs.aws.amazon.com/greengrass/v2/developerguide/what-is-iot-greengrass.html) in the * AWS IoT Greengrass V2 Developer Guide*.
 
-This document was last published on September 4, 2026.
+This document was last published on September 7, 2026.

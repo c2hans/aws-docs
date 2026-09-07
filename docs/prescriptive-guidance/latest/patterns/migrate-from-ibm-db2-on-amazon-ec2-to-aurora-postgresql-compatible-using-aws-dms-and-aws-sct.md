@@ -35,7 +35,7 @@ The pattern targets an online migration strategy with little or no downtime for 
 
 **Database migration architecture**** **
 
-![Using AWS DMS to migrate from IMB Db2 on Amazon EC2 to Aurora PostgreSQL-Compatible.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5e737fab-3e04-4887-9fb0-d1c88503b57d/images/789fabcc-8052-40d5-a746-986d799576e9.png)
+![Using AWS DMS to migrate from IMB Db2 on Amazon EC2 to Aurora PostgreSQL-Compatible.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5e737fab-3e04-4887-9fb0-d1c88503b57d/images/789fabcc-8052-40d5-a746-986d799576e9.png)
 
 ## Tools
 <a name="migrate-from-ibm-db2-on-amazon-ec2-to-aurora-postgresql-compatible-using-aws-dms-and-aws-sct-tools"></a>

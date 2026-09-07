@@ -16,7 +16,7 @@ In a traditional event-driven application architecture, the system is structured
 
 Serverless AI systems are similarly composed of loosely coupled, event-driven services that can independently scale, evolve, and recover. To design these systems with consistency and scalability, it's essential to view the architecture as five distinct layers. Each layer serves a specific function and maps directly to purpose-built AWS services. The following diagram shows each layer.
 
-![Relationship between logical layers of traditional and serverless AI architecture systems.](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-serverless/images/guide-img/ba00558a-f1cc-4853-9196-e287a2ba5ba5/images/0ad7d9b2-e9ee-4142-84e4-8b956c712d86.png)
+![Relationship between logical layers of traditional and serverless AI architecture systems.](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-serverless/images/guide-img/ba00558a-f1cc-4853-9196-e287a2ba5ba5/images/0ad7d9b2-e9ee-4142-84e4-8b956c712d86.png)
 
 These five layers form the blueprint for building intelligent, event-driven applications that are resilient, observable, and optimized for both cost and performance.
 

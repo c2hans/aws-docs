@@ -90,6 +90,6 @@ After you have the list of use cases, evaluate them with the stakeholders based 
 
 Next, you use the voting results to prioritize the use cases. Use cases with two high ratings are considered *quick wins*. Put use case with one high rating and one low rating in the *evaluate* category, and put use cases with two low ratings in the *consider* category. The following table shows a quadrant chart you can use to visualize this categorization.
 
-![Quadrant chart showing categories based on high and low importance and feasibility ratings](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-iiot-transformation/images/guide-img/2cc5efa2-2b32-4bb7-bd9d-d0a92a28e1ac/images/44837446-c588-4163-9586-7833969249bf.png)
+![Quadrant chart showing categories based on high and low importance and feasibility ratings](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-iiot-transformation/images/guide-img/2cc5efa2-2b32-4bb7-bd9d-d0a92a28e1ac/images/44837446-c588-4163-9586-7833969249bf.png)
 
 Prioritize use cases that are quick wins, and make sure that you consider dependencies. As you complete your journey, you start with the quick wins and as you progress, you can add use cases in the evaluate and consider categories, based on your budget and schedule.

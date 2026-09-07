@@ -29,7 +29,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/iot-edge
 
  This architecture pattern describes how to set up AWS IoT Greengrass for IoT edge computing.
 
-![Solution architecture for setting up AWS IoT Greengrass with client devices](http://docs.aws.amazon.com/wellarchitected/latest/iot-lens/images/image7.png)
+![Solution architecture for setting up AWS IoT Greengrass with client devices](https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/images/image7.png)
 
  The architecture includes:
 +  Two client devices. Each device contains a private key, a device certificate, and a root certificate authority (CA) certificate. The AWS IoT Device SDK, which contains an MQTT client, is also installed on each client device.

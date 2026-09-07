@@ -150,14 +150,14 @@ For detailed information about these features, see the following:
 
 The following diagram helps visualize the information in the previous table, to assist in your decision-making process.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-sql-server/images/guide-img/aa3b9357-4901-48ca-9fc9-a997d21ade3e/images/f04980fa-f2d0-46ba-b72d-46f8b843bc2e.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-sql-server/images/guide-img/aa3b9357-4901-48ca-9fc9-a997d21ade3e/images/f04980fa-f2d0-46ba-b72d-46f8b843bc2e.png)
 
 ## Shared responsibility
 <a name="shared"></a>
 
 The following diagram shows the division of responsibilities between AWS and the user in the management of SQL Server features and operations.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-sql-server/images/guide-img/aa3b9357-4901-48ca-9fc9-a997d21ade3e/images/4943526e-df45-46a5-b505-e40a338ec132.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-sql-server/images/guide-img/aa3b9357-4901-48ca-9fc9-a997d21ade3e/images/4943526e-df45-46a5-b505-e40a338ec132.png)
 
 With AWS services, you don't have to worry about administration tasks such as server provisioning, patching, setup, configuration, backups, or recovery. AWS continuously monitors your clusters to keep your workloads up and running with self-healing storage and automated scaling. You focus on high-value application development tasks such as schema design, query construction, and optimization, while AWS takes care of operational tasks on your behalf.
 

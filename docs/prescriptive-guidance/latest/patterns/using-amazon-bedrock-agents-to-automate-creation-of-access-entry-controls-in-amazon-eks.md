@@ -35,7 +35,7 @@ By using AWS Lambda functions as action groups, an Amazon Bedrock agent can hand
 
 The following diagram shows the workflow and architecture components for this pattern.
 
-![Workflow and components to create access controls in Amazon EKS with Amazon Bedrock agents.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2c52b1ba-bbad-4a46-ab1e-10e69a0a66e7/images/c7981a86-f734-4c07-a2f7-63ad38b66ab6.png)
+![Workflow and components to create access controls in Amazon EKS with Amazon Bedrock agents.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2c52b1ba-bbad-4a46-ab1e-10e69a0a66e7/images/c7981a86-f734-4c07-a2f7-63ad38b66ab6.png)
 
 This solution performs the following steps:
 

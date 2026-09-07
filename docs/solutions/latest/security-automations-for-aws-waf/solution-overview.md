@@ -15,7 +15,7 @@ Configuring AWS WAF rules can be challenging and burdensome to large and small o
 
  **A CloudFormation template deploys a web ACL with AWS WAF filtering rules.**
 
-![configuration web acl](http://docs.aws.amazon.com/solutions/latest/security-automations-for-aws-waf/images/configuration-web-acl.png)
+![configuration web acl](https://docs.aws.amazon.com/solutions/latest/security-automations-for-aws-waf/images/configuration-web-acl.png)
 
 This implementation guide discusses architectural considerations, configuration steps, and operational best practices for deploying this solution in the Amazon Web Services (AWS) Cloud. It includes links to CloudFormation templates that launch, configure, and run the AWS security, compute, storage, and other services required to deploy this solution on AWS, using AWS best practices for security and availability.
 

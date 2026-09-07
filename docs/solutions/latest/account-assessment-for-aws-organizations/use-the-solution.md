@@ -22,7 +22,7 @@ You may alternatively retrieve the web UI URL from the CloudFormation template o
 
 This page displays after you log in. If applicable, it shows your previous scan job status and assessment type for that job.
 
-![Screenshot of welcome page](http://docs.aws.amazon.com/solutions/latest/account-assessment-for-aws-organizations/images/welcome_page.png)
+![Screenshot of welcome page](https://docs.aws.amazon.com/solutions/latest/account-assessment-for-aws-organizations/images/welcome_page.png)
 
 ## Findings
 <a name="findings"></a>
@@ -40,9 +40,9 @@ Begin an assessment by selecting **Start Scan or download the table content as .
 **Note**
 You can run one active scan per assessment type at a time.
 
-![Screenshot of Resource-Based Polices page](http://docs.aws.amazon.com/solutions/latest/account-assessment-for-aws-organizations/images/delegated_admins.png)
+![Screenshot of Resource-Based Polices page](https://docs.aws.amazon.com/solutions/latest/account-assessment-for-aws-organizations/images/delegated_admins.png)
 
-![Screenshot of Delegated Admin Accounts page](http://docs.aws.amazon.com/solutions/latest/account-assessment-for-aws-organizations/images/trusted_access.png)
+![Screenshot of Delegated Admin Accounts page](https://docs.aws.amazon.com/solutions/latest/account-assessment-for-aws-organizations/images/trusted_access.png)
 
 ### Policy Explorer
 <a name="policy-explorer"></a>
@@ -52,7 +52,7 @@ Beginning with Account Assessment v1.1.0, the Policy Explorer allows you to cond
 **Note**
 Policy Explorer runs a nightly scan for policies across your AWS Organization and stores a string representation of each policy in DynamoDB. Search results you see on the Policy Explorer page are not real-time, but based on the last successful scan. Consult the JobHistory page to find out when the last successful scan was conducted.
 
-![Screenshot of Policy Explorer page](http://docs.aws.amazon.com/solutions/latest/account-assessment-for-aws-organizations/images/policy_explorer.png)
+![Screenshot of Policy Explorer page](https://docs.aws.amazon.com/solutions/latest/account-assessment-for-aws-organizations/images/policy_explorer.png)
 
 You can search for policies
 + By type (Identity Based Policies, Resource Based Policies, Service Control Policies)
@@ -67,7 +67,7 @@ The matching strategy is `string contains`, e.g. a search input like `us-` will 
 
 Use the `View Policies` button to see the full string representation of any policy.
 
-![Screenshot of Policy Explorer page](http://docs.aws.amazon.com/solutions/latest/account-assessment-for-aws-organizations/images/view_policies.png)
+![Screenshot of Policy Explorer page](https://docs.aws.amazon.com/solutions/latest/account-assessment-for-aws-organizations/images/view_policies.png)
 
 #### Dependencies on your AWS Organization
 <a name="dependencies-on-your-aws-organization"></a>
@@ -76,7 +76,7 @@ A main use case of the "Resource-based Policy Scan" in Account Assessment prior 
 
 This use case is now covered by PolicyExplorer. To search for Policies that contain your Organizational ID in the condition, press the button `Add OrgId` which will prepopulate the `Condition` search input field with your Org ID. Leave all other fields blank.
 
-![Screenshot of Policy Explorer page](http://docs.aws.amazon.com/solutions/latest/account-assessment-for-aws-organizations/images/org_dependencies.png)
+![Screenshot of Policy Explorer page](https://docs.aws.amazon.com/solutions/latest/account-assessment-for-aws-organizations/images/org_dependencies.png)
 
 ### Job History
 <a name="job-history"></a>
@@ -89,13 +89,13 @@ The Job History page helps you review the previous scans and their status. The s
 
 Select the **Job ID** to view specific findings per job.
 
-![Screenshot of job history](http://docs.aws.amazon.com/solutions/latest/account-assessment-for-aws-organizations/images/job_history.png)
+![Screenshot of job history](https://docs.aws.amazon.com/solutions/latest/account-assessment-for-aws-organizations/images/job_history.png)
 
 When you select the **Job ID**, the Job Details page displays the findings and any failed tasks during your selected job. You can use this information to help you identify the resource and errors. If the error states that a certain account/region/service/resource could not be scanned, that means that there may be possible findings which the solution was not able to assess. Use your judgement to decide how to proceed.
 
 The AccessDenied error often hints at the fact that the SpokeRole of the Account Assessment solution was not installed in the respective account, so the solution has no permission to access the account in question for a scan.
 
-![Example job details for SUCCEEDED_WITH_FAILED_TASKS](http://docs.aws.amazon.com/solutions/latest/account-assessment-for-aws-organizations/images/failed_tasks.png)
+![Example job details for SUCCEEDED_WITH_FAILED_TASKS](https://docs.aws.amazon.com/solutions/latest/account-assessment-for-aws-organizations/images/failed_tasks.png)
 
 ## Next steps
 <a name="next-steps"></a>

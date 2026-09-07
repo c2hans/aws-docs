@@ -32,7 +32,7 @@ You can access generative AI-powered post-contact summaries multiple ways:
 1.  Configure the **Properties** page of the block:
 
    1. Set **Call recording** to **On**. Choose **Agent and customer**, as shown in the following image.
-![The properties page of the Set recording and analytics behavior block configured for call recording.](http://docs.aws.amazon.com/connect/latest/adminguide/images/call-recording-summaries.png)
+![The properties page of the Set recording and analytics behavior block configured for call recording.](https://docs.aws.amazon.com/connect/latest/adminguide/images/call-recording-summaries.png)
 
    1. Set **Analytics** to **On**.
 
@@ -43,7 +43,7 @@ You can access generative AI-powered post-contact summaries multiple ways:
    1. Under **Generative AI capabilities**, choose **Post-contact summary**.
 
    The following image shows the **Analytics** section of a **Properties** page that is configured to enable post-contact summaries on the agent's CCP:
-![The properties page of the Set recording and analytics behavior block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/set-block-post-contact-summaries-ccp.png)
+![The properties page of the Set recording and analytics behavior block.](https://docs.aws.amazon.com/connect/latest/adminguide/images/set-block-post-contact-summaries-ccp.png)
 
 1. Assign the following permissions to the agent's security profile:
    + **Contact Control Panel (CCP) - conversational analytics data - Access**
@@ -99,7 +99,7 @@ You can access generative AI-powered post-contact summaries multiple ways:
 
 To help you perform After Contact Work (ACW), a generative AI-powered post-contact summary appears on your CCP. The summary is available for voice, chat, and email contacts. The following image shows an example summary.
 
-![The Contact Control Panel showing a generative AI-powered post-contact summary during After Contact Work (ACW).](http://docs.aws.amazon.com/connect/latest/adminguide/images/genai-summary-ccp1.png)
+![The Contact Control Panel showing a generative AI-powered post-contact summary during After Contact Work (ACW).](https://docs.aws.amazon.com/connect/latest/adminguide/images/genai-summary-ccp1.png)
 
 1. The agent is in ACW. They can browse the transcript while a "Generating summary" banner is displayed on the top of the page.
 
@@ -115,11 +115,11 @@ Generative AI-powered post-contact summaries support voice, chat, and email cont
 
 To help managers and other users review contacts, they can view post-contact summaries on the Connect Customer admin website. The following image shows an example of generative AI-powered post-contact summaries on the **Contact details** page.
 
-![The Contact details page showing a generative AI-powered post-contact summary.](http://docs.aws.amazon.com/connect/latest/adminguide/images/genai-summary2.png)
+![The Contact details page showing a generative AI-powered post-contact summary.](https://docs.aws.amazon.com/connect/latest/adminguide/images/genai-summary2.png)
 
 The following image shows an example of generative AI-powered post-contact summaries on the **Contact search** page.
 
-![The Contact search page displaying generative AI-powered post-contact summaries.](http://docs.aws.amazon.com/connect/latest/adminguide/images/genai-summary-contactsearch2.png)
+![The Contact search page displaying generative AI-powered post-contact summaries.](https://docs.aws.amazon.com/connect/latest/adminguide/images/genai-summary-contactsearch2.png)
 
 Each contact has no more than one summary generated. Not all contacts will have a summary generated; for more information, see [Why a summary is not generated](#summary-not-generated).
 

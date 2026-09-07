@@ -15,7 +15,7 @@ When you create a project, you might have a use case in mind that doesn't includ
 **Disabling modalities with the BDA Console**
 When using the BDA console, modality enablement is handled by a checklist, where you can simply select or deselect each modality while editing or creating your Project. These options are located under the Advanced settings tab. At least one Modality must be selected for a project.
 
-![Modality enablement section with checkboxes for Document, Image, Video, and Audio modalities.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/bda/modalityenableconsole.png)
+![Modality enablement section with checkboxes for Document, Image, Video, and Audio modalities.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/bda/modalityenableconsole.png)
 
 **Disabling modalities with the BDA API**
 When using the BDA API, modality enablement is handled by the `overrideConfiguration` request element, located in the `CreateDataAutomation` operation. Each modality has an associate section where you can declare the modality `ENABLED` or `DISABLED`. Below is an example of the `overrideConfiguration` element with only document and audio modalities enabled. The `modalityProcessing` flag defaults to `ENABLED`.
@@ -62,7 +62,7 @@ While in the Advanced settings tab when creating or editing a blueprint, you can
 **Note**
 Settings for JPEG files apply to both ".jpeg" and ".jpg" files. Settings for MP4 settings apply to both ".mp4" ".m4v" files.
 
-![Console drop-down menus for file type and modality destination, selected as PNG and Document.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/bda/manualrouting.png)
+![Console drop-down menus for file type and modality destination, selected as PNG and Document.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/bda/manualrouting.png)
 
 **Routing with the BDA API**
 Similar to modality enablement, modality routing is handled through the `overrideConfiguration` request element. Below is an example of the `modalityRouting` portion of `overrideConfiguration`. This example assumes all modalities are enabled, and routes JPEG and PNG files to the document modality, and MP4 and MOV files to the audio modality.

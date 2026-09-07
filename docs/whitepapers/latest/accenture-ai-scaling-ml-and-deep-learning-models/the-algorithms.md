@@ -57,7 +57,7 @@ tuner = HyperparameterTuner(
 
  Combining all of this together, you have the following build and training process taking BERT as an example. Other DL models built with PyTorch, MXNet, or TensorFlow follow the same process. It is essential to get the following three stages (within the box under MACHINE LEARNING ENGINEERING) correct to move on to productionizing the system with large scale model deployments.
 
-![A diagram that shows the complete ML engineering process and fine-tuning deep learning models .](http://docs.aws.amazon.com/whitepapers/latest/accenture-ai-scaling-ml-and-deep-learning-models/images/ml-engineering-process.png)
+![A diagram that shows the complete ML engineering process and fine-tuning deep learning models .](https://docs.aws.amazon.com/whitepapers/latest/accenture-ai-scaling-ml-and-deep-learning-models/images/ml-engineering-process.png)
 
 ## Model registry
 <a name="model-registry"></a>

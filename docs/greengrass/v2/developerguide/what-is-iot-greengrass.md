@@ -9,7 +9,7 @@ AWS IoT Greengrass is an open source Internet of Things (IoT) edge runtime and c
 
 The following example shows how an AWS IoT Greengrass device interacts with the AWS Cloud.
 
-![An overview of how an AWS IoT Greengrass device interacts with the AWS Cloud.](http://docs.aws.amazon.com/greengrass/v2/developerguide/images/greengrass-overview.png)
+![An overview of how an AWS IoT Greengrass device interacts with the AWS Cloud.](https://docs.aws.amazon.com/greengrass/v2/developerguide/images/greengrass-overview.png)
 
 ## New features
 <a name="new-features"></a>

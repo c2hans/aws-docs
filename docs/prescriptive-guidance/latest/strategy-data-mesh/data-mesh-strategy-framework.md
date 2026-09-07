@@ -77,6 +77,6 @@ When building a data solution, you're never done. Manage the lifecycle of the so
 
 The following figure displays a summary of the activities and the change in the number of supported business use cases in each phase.
 
-![The numbers of business use cases and adopters rise in the scale and evolve phases.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-data-mesh/images/guide-img/8ee4070d-6c71-44bc-a40f-f010d4d931e6/images/bc8fc719-741f-4bd5-84ad-8ebb2b7abfed.png)
+![The numbers of business use cases and adopters rise in the scale and evolve phases.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-data-mesh/images/guide-img/8ee4070d-6c71-44bc-a40f-f010d4d931e6/images/bc8fc719-741f-4bd5-84ad-8ebb2b7abfed.png)
 
 The users associated with the lighthouse use cases are the first to adopt the data mesh–based data solution. In the scale phase, more early adopters begin to use the data solution. In the evolve phase, the late adopters follow.

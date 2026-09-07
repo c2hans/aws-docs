@@ -14,7 +14,7 @@ Database load (`DBLoad`) is a key metric in Performance Insights that measures t
 
 The following screen illustration shows the Performance Insights tool.
 
-![Database load in the Performance Insights tool](http://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-monitoring-alerting/images/guide-img/9dd4cf9c-a2d9-4127-a3e3-2225b43b6c9a/images/bf17749e-e7a9-4083-a37f-a3262d88d714.png)
+![Database load in the Performance Insights tool](https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-monitoring-alerting/images/guide-img/9dd4cf9c-a2d9-4127-a3e3-2225b43b6c9a/images/bf17749e-e7a9-4083-a37f-a3262d88d714.png)
 
 ## Dimensions
 <a name="dimensions.5a2f9b5a-bdae-500b-bcf1-a9b440416800"></a>
@@ -49,11 +49,11 @@ Counter metrics are cumulative metrics whose values can only increase or reset t
 
 You can visualize DB instance metrics directly in the Performance Insights dashboard. Choose ***Manage Metrics***, choose the ***Database metrics*** tab, and then select the metrics of interest, as shown in the following illustration.
 
-![Selecting DB instance metrics in Performance Insights](http://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-monitoring-alerting/images/guide-img/9dd4cf9c-a2d9-4127-a3e3-2225b43b6c9a/images/f708c108-6b9d-4116-b412-b0a0f2cf10b2.png)
+![Selecting DB instance metrics in Performance Insights](https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-monitoring-alerting/images/guide-img/9dd4cf9c-a2d9-4127-a3e3-2225b43b6c9a/images/f708c108-6b9d-4116-b412-b0a0f2cf10b2.png)
 
 Choose the ***Update graph*** button to display the metrics you selected, as shown in the following illustration.
 
-![Viewing DB instance metrics in Performance Insights](http://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-monitoring-alerting/images/guide-img/9dd4cf9c-a2d9-4127-a3e3-2225b43b6c9a/images/f1bcefb8-6b31-4a36-9c19-2880c721b13d.png)
+![Viewing DB instance metrics in Performance Insights](https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-monitoring-alerting/images/guide-img/9dd4cf9c-a2d9-4127-a3e3-2225b43b6c9a/images/f1bcefb8-6b31-4a36-9c19-2880c721b13d.png)
 
 ## SQL statistics
 <a name="sql-statistics.50920269-03ed-5098-b9cb-b203ab99ea1f"></a>
@@ -69,4 +69,4 @@ Performance Insights gathers performance-related metrics about SQL queries for e
 
 SQL statistics are available in the Performance Insights dashboard, in the *Top SQL* tab of the *Top dimensions table*.
 
-![SQL statistics](http://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-monitoring-alerting/images/guide-img/9dd4cf9c-a2d9-4127-a3e3-2225b43b6c9a/images/2cd2fce0-17ea-4d85-ab86-1e4777a5aeef.png)
+![SQL statistics](https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-monitoring-alerting/images/guide-img/9dd4cf9c-a2d9-4127-a3e3-2225b43b6c9a/images/2cd2fce0-17ea-4d85-ab86-1e4777a5aeef.png)

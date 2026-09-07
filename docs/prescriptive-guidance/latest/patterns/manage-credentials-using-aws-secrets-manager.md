@@ -34,7 +34,7 @@ Secrets Manager enables you to replace hard-coded credentials in your code (incl
 
 **Secrets Manager integration with an application**
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/44d359f5-47d9-4228-ac14-a64b5dfa7972/images/fc4b44fd-d1bd-4564-9bc1-c42c896e305b.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/44d359f5-47d9-4228-ac14-a64b5dfa7972/images/fc4b44fd-d1bd-4564-9bc1-c42c896e305b.png)
 
 ## Tools
 <a name="manage-credentials-using-aws-secrets-manager-tools"></a>

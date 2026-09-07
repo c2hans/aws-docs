@@ -30,7 +30,7 @@ The following example in the `Resources` section specifies the state home folder
 
  While it is possible to [*route Amazon WorkSpaces Applications streaming traffic through an interface VPC endpoint*](https://docs.aws.amazon.com/appstream2/latest/developerguide/creating-streaming-from-interface-vpc-endpoints.html), use this configuration with caution. The default streaming behavior through the public internet is the most efficient and performant delivery method for Amazon WorkSpaces Applications streaming traffic.
 
-![Diagram showing how traffic moves between Amazon WorkSpaces Applications Streaming Gateways via the internet.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-for-deploying-amazon-appstream-2/images/appstream-streaming-interface.png)
+![Diagram showing how traffic moves between Amazon WorkSpaces Applications Streaming Gateways via the internet.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-deploying-amazon-appstream-2/images/appstream-streaming-interface.png)
 
  *Amazon WorkSpaces Applications streaming interface VPC endpoint*
 

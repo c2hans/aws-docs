@@ -62,7 +62,7 @@ To successfully implement this pattern, make sure that the following are in plac
 
 The following diagram shows the architecture and workflow for this pattern.
 
-![Architecture and workflow for embedding Quick Sight visuals into a React application.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/75ad12b1-caaa-4532-b709-8f3eaf3f9cc0/images/d0905f61-9055-49cf-887d-f46f5ca6c871.png)
+![Architecture and workflow for embedding Quick Sight visuals into a React application.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/75ad12b1-caaa-4532-b709-8f3eaf3f9cc0/images/d0905f61-9055-49cf-887d-f46f5ca6c871.png)
 
 In this workflow:
 

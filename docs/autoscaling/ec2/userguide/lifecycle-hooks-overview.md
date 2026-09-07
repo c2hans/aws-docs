@@ -9,7 +9,7 @@ An Amazon EC2 instance transitions through different states from the time it lau
 
 The following illustration shows the transitions between Auto Scaling instance states when you use lifecycle hooks for scale out and scale in.
 
-![The transitions between Auto Scaling instance states when you use lifecycle hooks for scale out and scale in.](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/how-lifecycle-hooks-work.png)
+![The transitions between Auto Scaling instance states when you use lifecycle hooks for scale out and scale in.](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/how-lifecycle-hooks-work.png)
 
 As shown in the preceding diagram:
 
@@ -37,7 +37,7 @@ Instances in a warm pool also have their own lifecycle with corresponding wait s
 
 The following diagram shows the transition between Auto Scaling instance states when you use lifecycle hooks for replace root volume:
 
-![The transitions between Auto Scaling instance states when you use lifecycle hooks for replace root volume.](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/root-volume-replacement-lifecycle-states.png)
+![The transitions between Auto Scaling instance states when you use lifecycle hooks for replace root volume.](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/root-volume-replacement-lifecycle-states.png)
 
 As shown in the preceding diagram:
 

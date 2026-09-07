@@ -33,7 +33,7 @@ This pattern showcases how to deploy ECS tasks on Amazon WorkSpaces with Amazon 
 
 **Target architecture **
 
-![ECS Anywhere sets up ECS cluster and uses Simple AD to launch WorkSpaces.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/da8b2249-3423-485c-9fef-6f902025e969/images/fd354d14-f29b-4b9e-8f1a-c3cb7ed4d6bf.png)
+![ECS Anywhere sets up ECS cluster and uses Simple AD to launch WorkSpaces.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/da8b2249-3423-485c-9fef-6f902025e969/images/fd354d14-f29b-4b9e-8f1a-c3cb7ed4d6bf.png)
 
 The architecture includes the following services and resources:
 + An ECS cluster with public and private subnets in a custom VPC

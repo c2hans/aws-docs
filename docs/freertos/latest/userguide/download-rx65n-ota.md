@@ -53,7 +53,7 @@ The procedures in this section use the following environments:
    1. Download the three files that are created and then choose **Activate**.
 
    1. Choose **Attach a policy**.
-![console screen showing files to be downloaded](http://docs.aws.amazon.com/freertos/latest/userguide/images/download-these-files-rx65n.png)
+![console screen showing files to be downloaded](https://docs.aws.amazon.com/freertos/latest/userguide/images/download-these-files-rx65n.png)
 
    1. Select the policy that you created in [Device policy](ota-mqtt-freertos.md#ota-mqtt-freertos-device-policy).
 
@@ -91,7 +91,7 @@ The procedures in this section use the following environments:
 
 If don't have Tera Term installed on your PC, you can download it from [https://ttssh2.osdn.jp/index.html.en](https://ttssh2.osdn.jp/index.html.en) and set it up as shown here. Make sure that you plug in the USB Serial port from your device to your PC.
 
-![Tera Term serial port setup window](http://docs.aws.amazon.com/freertos/latest/userguide/images/tera-team-rx65n.png)
+![Tera Term serial port setup window](https://docs.aws.amazon.com/freertos/latest/userguide/images/tera-team-rx65n.png)
 
 ## Import, configure the header file and build aws\_demos and boot\_loader
 <a name="download-rx65n-ota-import-configure"></a>
@@ -103,39 +103,39 @@ To begin, you select the latest version of the FreeRTOS package, and this will b
 1. Choose **File**, and then choose **Import…**.
 
 1. Select **Renesas GitHub FreeRTOS (with IoT libraries) Project**.
-![e-squared studio import window](http://docs.aws.amazon.com/freertos/latest/userguide/images/import-renesas-project-rx65n.png)
+![e-squared studio import window](https://docs.aws.amazon.com/freertos/latest/userguide/images/import-renesas-project-rx65n.png)
 
 1. Choose **Check for more version…** to show the download dialog box.
-![e-squared studio download dialog window](http://docs.aws.amazon.com/freertos/latest/userguide/images/check-more-version-rx65n.png)
+![e-squared studio download dialog window](https://docs.aws.amazon.com/freertos/latest/userguide/images/check-more-version-rx65n.png)
 
 1. Select the latest package.
-![e-squared studio module download dialog window](http://docs.aws.amazon.com/freertos/latest/userguide/images/choose-latest-version-rx65n.png)
+![e-squared studio module download dialog window](https://docs.aws.amazon.com/freertos/latest/userguide/images/choose-latest-version-rx65n.png)
 
 1. Choose **Agree** to accept the end user license agreement.
-![e-squared studio EULA dialog](http://docs.aws.amazon.com/freertos/latest/userguide/images/eula-rx65n.png)
+![e-squared studio EULA dialog](https://docs.aws.amazon.com/freertos/latest/userguide/images/eula-rx65n.png)
 
 1. Wait for the download to complete.
-![download progress bar](http://docs.aws.amazon.com/freertos/latest/userguide/images/downloading-rx65n.png)
+![download progress bar](https://docs.aws.amazon.com/freertos/latest/userguide/images/downloading-rx65n.png)
 
 1. Select the **aws\_demos** and **boot\_loader** projects, then choose **Finish** to import them.
-![import projects window](http://docs.aws.amazon.com/freertos/latest/userguide/images/import-projects-rx65n.png)
+![import projects window](https://docs.aws.amazon.com/freertos/latest/userguide/images/import-projects-rx65n.png)
 
 1. For both projects, open the project properties. In the navigation pane, choose **Tool Chain Editor**.
 
    1. Choose the **Current toolchain**.
 
    1. Choose the **Current builder**.
-![e-squared studio properties window](http://docs.aws.amazon.com/freertos/latest/userguide/images/project-properties-rx65n.png)
+![e-squared studio properties window](https://docs.aws.amazon.com/freertos/latest/userguide/images/project-properties-rx65n.png)
 
 1. In the navigation pane, choose **Settings**. Choose the **Toolchain** tab, and then choose the toolchain **Version**.
-![Toolchain integration settings for Renesas CCRX Version v3.01.00, with option to change toolchain.](http://docs.aws.amazon.com/freertos/latest/userguide/images/project-properties-toolchain-rx65n.png)
+![Toolchain integration settings for Renesas CCRX Version v3.01.00, with option to change toolchain.](https://docs.aws.amazon.com/freertos/latest/userguide/images/project-properties-toolchain-rx65n.png)
 
    Choose the **Tool Settings** tab, expand **Converter** and then choose **Output**. In the main window, make sure **Output hex file** is selected, and then choose the **Output file type**.
-![C/C++ Build configuration settings window showing compiler and linker options like output hex file, output file type, output directory, and file division options.](http://docs.aws.amazon.com/freertos/latest/userguide/images/project-properties-settings-rx65n.png)
-![Interface settings tree with options for Stack Analysis, Tool Chain Editor, C/C++ General, MCU, Project References, etc.](http://docs.aws.amazon.com/freertos/latest/userguide/images/project-properties-settings-2-rx65n.png)
+![C/C++ Build configuration settings window showing compiler and linker options like output hex file, output file type, output directory, and file division options.](https://docs.aws.amazon.com/freertos/latest/userguide/images/project-properties-settings-rx65n.png)
+![Interface settings tree with options for Stack Analysis, Tool Chain Editor, C/C++ General, MCU, Project References, etc.](https://docs.aws.amazon.com/freertos/latest/userguide/images/project-properties-settings-2-rx65n.png)
 
 1. In the bootloader project, open `projects\renesas\rx65n-rsk\e2studio\boot_loader\src\key\code_signer_public_key.h` and input the public key. For information on how to create a public key, see [ How to implement FreeRTOS OTA by using Amazon Web Services on RX65N](https://www.renesas.com/us/en/document/apn/rx-family-how-implement-freertos-ota-using-amazon-web-services-rx65n) and section 7.3 "Generating ECDSA-SHA256 Key Pairs with OpenSSL" in [Renesas MCU Firmware Update Design Policy](https://www.renesas.com/us/en/document/apn/renesas-mcu-firmware-update-design-policy).
-![Code editor showing a C header file with definition for CODE_SIGNER_PUBLIC_KEY and a PEM-encoded code signer public key variable.](http://docs.aws.amazon.com/freertos/latest/userguide/images/open-bootloader-project-rx65n.png)
+![Code editor showing a C header file with definition for CODE_SIGNER_PUBLIC_KEY and a PEM-encoded code signer public key variable.](https://docs.aws.amazon.com/freertos/latest/userguide/images/open-bootloader-project-rx65n.png)
 
    Then build the project to create `boot_loader.mot`.
 
@@ -153,14 +153,14 @@ To begin, you select the latest version of the FreeRTOS package, and this will b
       #define clientcredentialMQTT_BROKER_ENDPOINT[] = "{{Your AWS IoT endpoint}}";
       #define clientcredentialIOT_THING_NAME "{{The AWS IoT thing name of your board}}"
       ```
-![Code snippet showing AWS IoT thing name and broker endpoint configuration settings.](http://docs.aws.amazon.com/freertos/latest/userguide/images/client-credential-rx65n.png)
+![Code snippet showing AWS IoT thing name and broker endpoint configuration settings.](https://docs.aws.amazon.com/freertos/latest/userguide/images/client-credential-rx65n.png)
 
    1. Open the `tools/certificate_configuration/CertificateConfigurator.html` file.
 
    1. Import the certificate PEM file and Private Key PEM file that you downloaded earlier.
 
    1. Choose **Generate and save aws\_clientcredential\_keys.h** and replace this file in the `demos/include/` directory.
-![Certificate Configuration Tool with fields to provide client certificate and private key PEM files from the AWS IoT Console, and a button to generate and save aws_clientcredential_keys.h file.](http://docs.aws.amazon.com/freertos/latest/userguide/images/certificate-config-tool-rx65n.png)
+![Certificate Configuration Tool with fields to provide client certificate and private key PEM files from the AWS IoT Console, and a button to generate and save aws_clientcredential_keys.h file.](https://docs.aws.amazon.com/freertos/latest/userguide/images/certificate-config-tool-rx65n.png)
 
    1. Open the `vendors/renesas/boards/rx65n-rsk/aws_demos/config_files/ota_demo_config.h` file, and specify these values.
 
@@ -169,17 +169,17 @@ To begin, you select the latest version of the FreeRTOS package, and this will b
       ```
 
       Where {{your-certificate-key}} is the value from the file `secp256r1.crt`. Remember to add "\\" after each line in the certification. For more information on creating the `secp256r1.crt` file, see [ How to implement FreeRTOS OTA by using Amazon Web Services on RX65N](https://www.renesas.com/us/en/document/apn/rx-family-how-implement-freertos-ota-using-amazon-web-services-rx65n) and section 7.3 "Generating ECDSA-SHA256 Key Pairs with OpenSSL" in [Renesas MCU Firmware Update Design Policy](https://www.renesas.com/us/en/document/apn/renesas-mcu-firmware-update-design-policy).
-![Source code file showing C code defining a PEM-encoded code signer certificate constant string with redacted certificate data.](http://docs.aws.amazon.com/freertos/latest/userguide/images/codesigner-cert-rx65n.png)
+![Source code file showing C code defining a PEM-encoded code signer certificate constant string with redacted certificate data.](https://docs.aws.amazon.com/freertos/latest/userguide/images/codesigner-cert-rx65n.png)
 
 1. **Task A: Install the initial version of the firmware**
 
    1. Open the `vendors/renesas/boards/board/aws_demos/config_files/aws_demo_config.h` file, comment out `#define CONFIG_CORE_MQTT_MUTUAL_AUTH_DEMO_ENABLED`, and define either `CONFIG_OTA_MQTT_UPDATE_DEMO_ENABLED` or `CONFIG_OTA_HTTP_UPDATE_DEMO_ENABLED`.
 
    1. Open the `demos/include/ aws_application_version.h` file, and set the initial version of the firmware to `0.9.2`.
-![Code snippet showing version definitions for an application, including macros for major, minor, and build version numbers.](http://docs.aws.amazon.com/freertos/latest/userguide/images/firmware-version-rx65n.png)
+![Code snippet showing version definitions for an application, including macros for major, minor, and build version numbers.](https://docs.aws.amazon.com/freertos/latest/userguide/images/firmware-version-rx65n.png)
 
    1. Change the following settings in the **Section Viewer**.
-![Section viewer window showing memory addresses, section names like SU, SI, registers, and interface components like network buffers, exceptions, and action buttons.](http://docs.aws.amazon.com/freertos/latest/userguide/images/section-viewer-rx65n.png)
+![Section viewer window showing memory addresses, section names like SU, SI, registers, and interface components like network buffers, exceptions, and action buttons.](https://docs.aws.amazon.com/freertos/latest/userguide/images/section-viewer-rx65n.png)
 
    1. Choose **Build** to create the `aws_demos.mot` file.
 
@@ -191,7 +191,7 @@ To begin, you select the latest version of the FreeRTOS package, and this will b
       + **Private Key Path** – The location of `secp256r1.privatekey`.
       + **Boot Loader File Path**– The location of `boot_loader.mot` (`projects\renesas\rx65n-rsk\e2studio\boot_loader\HardwareDebug`).
       + **File Path** – The location of the `aws_demos.mot` (`projects\renesas\rx65n-rsk\e2studio\aws_demos\HardwareDebug`).
-![Renesas Secure Flash Programmer window with MCU, firmware verification, sequence number, AES key path, and file path fields.](http://docs.aws.amazon.com/freertos/latest/userguide/images/secure-flash-rx65n.png)
+![Renesas Secure Flash Programmer window with MCU, firmware verification, sequence number, AES key path, and file path fields.](https://docs.aws.amazon.com/freertos/latest/userguide/images/secure-flash-rx65n.png)
 
    1. Create a directory named `init_firmware`, Generate `userprog.mot`, and save it to the `init_firmware` directory. Verify that the generate succeeded.
 
@@ -202,10 +202,10 @@ To begin, you select the latest version of the FreeRTOS package, and this will b
    1. Open the `vendors\renesas\rx_mcu_boards\boards\rx65n-rsk\aws_demos\flash_project\erase_from_bank\ erase.rpj` file to erase data on the bank.
 
    1. Choose **Start** to erase the bank.
-![Renesas Flash Programmer window showing RX Group microcontroller project details, file path, and flash operation options like Erase, Program, and Verify with Start and OK buttons.](http://docs.aws.amazon.com/freertos/latest/userguide/images/flash-programmer-erasing-rx65n.png)
+![Renesas Flash Programmer window showing RX Group microcontroller project details, file path, and flash operation options like Erase, Program, and Verify with Start and OK buttons.](https://docs.aws.amazon.com/freertos/latest/userguide/images/flash-programmer-erasing-rx65n.png)
 
    1. To flash `userprog.mot`, choose **Browse...** and navigate to the `init_firmware` directory, select the `userprog.mot` file and choose **Start**.
-![Renesas Flash Programmer window showing erase operation settings, including microcontroller RX Group, option to browse program file, Erase and Start buttons, and status details on selected blocks to erase.](http://docs.aws.amazon.com/freertos/latest/userguide/images/flash-programmer-complete-rx65n.png)
+![Renesas Flash Programmer window showing erase operation settings, including microcontroller RX Group, option to browse program file, Erase and Start buttons, and status details on selected blocks to erase.](https://docs.aws.amazon.com/freertos/latest/userguide/images/flash-programmer-complete-rx65n.png)
 
 1. Version 0.9.2 (initial version) of the firmware was installed to your RX65N-RSK. The RX65N-RSK board is now listening for OTA updates. If you have opened Tera Term on your PC, you see something like the following when the initial firmware runs.
 
@@ -334,10 +334,10 @@ To begin, you select the latest version of the FreeRTOS package, and this will b
       + **File Path** – The location of the `aws_demos.mot` file (`projects\renesas\rx65n-rsk\e2studio\aws_demos\HardwareDebug`).
 
    1. Create a directory named `update _firmware`. Generate `userprog.rsu` and save it to the `update_firmware` directory. Verify that the generate succeeded.
-![Renesas Secure Flash Programmer window with MCU selection, firmware verification type, sequence number, AES MAC key field, and file path input for generating secure firmware.](http://docs.aws.amazon.com/freertos/latest/userguide/images/update-firmware-rx65n.png)
+![Renesas Secure Flash Programmer window with MCU selection, firmware verification type, sequence number, AES MAC key field, and file path input for generating secure firmware.](https://docs.aws.amazon.com/freertos/latest/userguide/images/update-firmware-rx65n.png)
 
 1. Upload the firmware update, `userproj.rsu`, into an Amazon S3 bucket as described in [Create an Amazon S3 bucket to store your update](dg-ota-bucket.md).
-![Amazon S3 bucket management interface with folders, uploads, versions, and permissions options](http://docs.aws.amazon.com/freertos/latest/userguide/images/upload-firmware-rx65n.png)
+![Amazon S3 bucket management interface with folders, uploads, versions, and permissions options](https://docs.aws.amazon.com/freertos/latest/userguide/images/upload-firmware-rx65n.png)
 
 1. Create a job to update firmware on the RX65N-RSK.
 
@@ -355,12 +355,12 @@ To begin, you select the latest version of the FreeRTOS package, and this will b
       + Choose the IAM role that you created in the previous section.
 
    1. Choose **Next**.
-![Firmware image sign and OTA update settings with options to sign new firmware, select previously signed firmware, use custom signed firmware, specify code signing profile, firmware image file, path on device, and IAM role for OTA update job.](http://docs.aws.amazon.com/freertos/latest/userguide/images/create-job-next-rx65n.png)
+![Firmware image sign and OTA update settings with options to sign new firmware, select previously signed firmware, use custom signed firmware, specify code signing profile, firmware image file, path on device, and IAM role for OTA update job.](https://docs.aws.amazon.com/freertos/latest/userguide/images/create-job-next-rx65n.png)
 
    1. Enter an ID and then choose **Create**.
 
 1. Reopen Tera Term to verify that the firmware was updated successfully to OTA demo version 0.9.3.
-![Command line output showing initialization and connection of a thread to a broker.](http://docs.aws.amazon.com/freertos/latest/userguide/images/update-successful-rx65n.png)
+![Command line output showing initialization and connection of a thread to a broker.](https://docs.aws.amazon.com/freertos/latest/userguide/images/update-successful-rx65n.png)
 
 1. On the AWS IoT console, verify that the job status is **Succeeded**.
-![AFR OTA-demo test job overview showing 1 resource succeeded.](http://docs.aws.amazon.com/freertos/latest/userguide/images/completed-succeeded-rx65n.png)
+![AFR OTA-demo test job overview showing 1 resource succeeded.](https://docs.aws.amazon.com/freertos/latest/userguide/images/completed-succeeded-rx65n.png)

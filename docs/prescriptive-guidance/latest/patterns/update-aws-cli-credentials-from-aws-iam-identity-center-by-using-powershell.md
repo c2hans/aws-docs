@@ -44,7 +44,7 @@ As an alternative solution, this pattern describes how to use AWS CLI [named pro
 
 You can use the script in this pattern to simultaneously refresh multiple IAM Identity Center credentials, and you can create a credential file for use with AWS CLI, AWS SDKs, or AWS CDK.
 
-![Using a PowerShell script to update credentials in AWS CLI, AWS CDK, or AWS SKDs.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6d54a6bb-01ac-4736-9b78-40921fcc9056/images/01e0fcb6-3b48-422c-8868-07a7de83b3e3.png)
+![Using a PowerShell script to update credentials in AWS CLI, AWS CDK, or AWS SKDs.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6d54a6bb-01ac-4736-9b78-40921fcc9056/images/01e0fcb6-3b48-422c-8868-07a7de83b3e3.png)
 
 ## Tools
 <a name="update-aws-cli-credentials-from-aws-iam-identity-center-by-using-powershell-tools"></a>

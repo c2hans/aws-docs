@@ -15,7 +15,7 @@ You can launch QnABot on AWS from a Chrome, Firefox, or Microsoft Edge browser o
 1. When your browser requests access to the microphone on behalf of the web application, allow it. The QnABot on AWS chat window opens.
 
     **QnABot on AWS web user interface chat window**
-![image9](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image9.png)
+![image9](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image9.png)
 
 1. Interact with the chatbot through the chat window. You can communicate through voice or text.
 

@@ -94,7 +94,7 @@ The managed networking capability of EKS Auto Mode runs on AWS infrastructure an
 
 The [NodeClass](https://docs.aws.amazon.com/eks/latest/userguide/create-node-class.html) controls the subnets and security groups that are used for Auto Mode nodes and Pods running on those nodes through the `subnetSelectorTerms`, `securityGroupSelectorTerms`, `podSubnetSelectorTerms`, and `podSecurityGroupSelectorTerms`. The `subnetSelectorTerms` and `securityGroupSelectorTerms` settings are required. If only these settings are provided, both the node and Pods will share the same subnets and security groups. The node IP and subsequent Pod IP addresses will be allocated from the primary ENI and additional ENIs will be dynamically created and attached to the node to support Pods as needed.
 
-![Node ENIs connecting to node and pod IPs, with security groups applied to primary and secondary ENIs.](http://docs.aws.amazon.com/whitepapers/latest/security-overview-amazon-eks-auto-mode/images/image5.png)
+![Node ENIs connecting to node and pod IPs, with security groups applied to primary and secondary ENIs.](https://docs.aws.amazon.com/whitepapers/latest/security-overview-amazon-eks-auto-mode/images/image5.png)
 
 If `podSubnetSelectorTerms` and `podSecurityGroupSelectorTerms` are also configured, then only the node's IP will come from the primary ENI. Pod IPs will come from secondary ENIs and use the specified security groups. This mode of operations allows segregating the node IP addresses from Pod IP addresses, primarily to allow using separate security groups to control traffic flow for nodes and Pods differently. Because the primary ENI is reserved for only the node IP address, when operating in this configuration the result is reduced Pod density on Auto Mode nodes.
 

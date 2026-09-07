@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/data_
 
 You can use AWS Supply Chain data lake to ingest your data from various data sources. For information about supported data sources, see [Data lake](data-connections.md).
 
-![Data lake overview](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/data_lake_overvoew.png)
+![Data lake overview](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/data_lake_overvoew.png)
 
 ## Data Ingestion
 <a name="ingestion"></a>
@@ -17,7 +17,7 @@ You can view the current connections, source, and destination flows. To view the
 1. On the AWS Supply Chain dashboard, on the left navigation pane, choose **Data Lake** and then choose the **Data Ingestion** tab.
 
    The **Data Ingestion** page appears.
-![Data lake ingestion](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/data-lake-ingestion.png)
+![Data lake ingestion](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/data-lake-ingestion.png)
 
 1. Choose the **Source Flows** tab.
    + Source Flows – Displays the file or folder structure of the dataset that was uploaded.
@@ -34,7 +34,7 @@ You can view the current connections, source, and destination flows. To view the
 1. Under **Actions**, choose **Manage Flow** to view and update the data mappings.
 
    The **Manage Destination Flows** page appears.
-![Data lake workflow](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/data-lake-flow.png)
+![Data lake workflow](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/data-lake-flow.png)
 
 1. Move any unassociated source columns under **Source Columns** to **Destination Columns**.
 

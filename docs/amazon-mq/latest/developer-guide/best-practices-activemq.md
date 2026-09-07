@@ -15,7 +15,7 @@ When you first [create an Amazon MQ broker](getting-started-activemq.md), Amazon
 **Warning**
 You must not modify or delete this network interface. Modifying or deleting the network interface can cause a permanent loss of connection between your VPC and your broker.
 
-![Diagram showing Client, Elastic Network Interface, and Amazon MQ Broker within a Customer VPC and service scope.](http://docs.aws.amazon.com/amazon-mq/latest/developer-guide/images/amazon-mq-network-configuration-architecture-vpc-elastic-network-interface.png)
+![Diagram showing Client, Elastic Network Interface, and Amazon MQ Broker within a Customer VPC and service scope.](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/images/amazon-mq-network-configuration-architecture-vpc-elastic-network-interface.png)
 
 ## Always Use Connection Pooling
 <a name="always-use-connection-pooling"></a>

@@ -31,7 +31,7 @@ By default, Amazon Transcribe may use and store audio content processed by the s
 
 The Amazon Chime SDK creates real-time meeting transcriptions, without audio leaving the AWS network, via a service-side integration with your Amazon Transcribe or Amazon Transcribe Medical account. For improved accuracy, users’ audio is processed separately, then mixed into the meeting. The Amazon Chime SDK uses its active talker algorithm to select the top two active talkers, and then sends their audio to Amazon Transcribe or Amazon Transcribe Medical in separate channels via a single stream. For reduced latency, user-attributed transcriptions are sent directly to every meeting participant via data messages. When using a media pipeline to capture meeting audio, the meeting’s transcription information is also captured.
 
-![A diagram showing the data flow of meeting transcription.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/transcription-architecture.png)
+![A diagram showing the data flow of meeting transcription.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/transcription-architecture.png)
 
 ## Billing and usage
 <a name="billing-and-usage"></a>

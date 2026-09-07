@@ -22,7 +22,7 @@ The disadvantages of using a Transit Gateway solution include:
 
 The following architecture diagram shows a simplified representation of using Transit Gateway to connect your VPCs to those of a third-party provider. Each VPC connects to the transit gateway, and the gateway supports transitive routing between all of the attached VPCs.
 
-![Using Transit Gateway to connect VPCs in different AWS accounts](http://docs.aws.amazon.com/prescriptive-guidance/latest/integrate-third-party-services/images/guide-img/80f3a808-d645-486e-82c4-f574fdcf6710/images/40e29cc8-b5f3-4b1c-957a-2b3fb8b8c55b.png)
+![Using Transit Gateway to connect VPCs in different AWS accounts](https://docs.aws.amazon.com/prescriptive-guidance/latest/integrate-third-party-services/images/guide-img/80f3a808-d645-486e-82c4-f574fdcf6710/images/40e29cc8-b5f3-4b1c-957a-2b3fb8b8c55b.png)
 
 However, the actual configuration is more nuanced, and this architecture is divided into different deployment considerations and options.
 
@@ -33,7 +33,7 @@ If you use Transit Gateway, you can deploy a centralized network traffic inspect
 
 The transit gateway must be in [appliance mode](https://docs.aws.amazon.com/vpc/latest/tgw/transit-gateway-appliance-scenario.html#transit-gateway-appliance-support) for the inspection VPC attachment to route the bidirectional traffic symmetrically. As shown in the following architecture diagram, the transit gateway directs traffic from the attached VPCs to an elastic network interface in the inspection VPC.
 
-![Creating a centralized inspection point in a dedicated VPC.](http://docs.aws.amazon.com/prescriptive-guidance/latest/integrate-third-party-services/images/guide-img/80f3a808-d645-486e-82c4-f574fdcf6710/images/6fa8e69d-2277-4609-8c4f-f563ae33fa93.png)
+![Creating a centralized inspection point in a dedicated VPC.](https://docs.aws.amazon.com/prescriptive-guidance/latest/integrate-third-party-services/images/guide-img/80f3a808-d645-486e-82c4-f574fdcf6710/images/6fa8e69d-2277-4609-8c4f-f563ae33fa93.png)
 
 ## Selecting a deployment option
 <a name="selecting-deployment-options"></a>

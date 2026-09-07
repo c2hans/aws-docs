@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-static-websites
 
  For example, if your team is using a Git-based repository for version control, a Git post-**commit hook can notify your continuous integration tool (for example, Jenkins) of any content updates. At that point, your continuous integration tool can perform the actual deployment to synchronize the content with Amazon S3 (using either the AWS CLI or the Amazon S3 API), and notify the user of the deployment status.
 
-![A diagram that shows an example of continuous deployment process.](http://docs.aws.amazon.com/whitepapers/latest/build-static-websites-aws/images/continuous-deployment.png)
+![A diagram that shows an example of continuous deployment process.](https://docs.aws.amazon.com/whitepapers/latest/build-static-websites-aws/images/continuous-deployment.png)
 
  If you don’t want to use version control, then be sure to periodically download your website and back up the snapshot. The AWS CLI lets you download your entire website with a single command:
 

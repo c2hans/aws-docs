@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/how-it-works.co
 
  The following diagram shows the core components of AWS Ground Station and how they relate to each other. The arrows indicate the direction of the dependencies between components, where each component points to its dependencies.
 
- ![Diagram showing the core components of AWS Ground Station and how they relate to each other.](http://docs.aws.amazon.com/ground-station/latest/ug/images/core-component-relationships.png)
+ ![Diagram showing the core components of AWS Ground Station and how they relate to each other.](https://docs.aws.amazon.com/ground-station/latest/ug/images/core-component-relationships.png)
 
 The following topics describe the AWS Ground Station core components in detail.
 

@@ -339,7 +339,7 @@ OK
 
 BLE capable devices can communicate with accessories without establishing permanent connections by means of a scanning and advertising protocol. This protocol is commonly used for characteristics whose value is required infrequently (device battery level, or ambient temperature sensors).
 
-<a name="elpg-figure7"></a>![Figure 7 - BLE scanning for devices](http://docs.aws.amazon.com/iot-expresslink/latest/programmersguide/images/ble-scanning-for-devices.png)
+<a name="elpg-figure7"></a>![Figure 7 - BLE scanning for devices](https://docs.aws.amazon.com/iot-expresslink/latest/programmersguide/images/ble-scanning-for-devices.png)
 
 The ExpressLink module scans for advertisements from peripherals that match criteria defined in the corresponding configuration string BLECentral\#. This is an asynchronous command. It returns an immediate response to confirm the process has started (or an error prevented it). During the scanning time, any advertised data received will be queued. The scanning process will stop after a set amount of time optionally configured by the duration parameter (30 seconds by default), and a BLE DISCOVER COMPLETE event (see [Table 4 - ExpressLink event codes](elpg-event-handling.md#elpg-table4)) will be produced. Queued data can then be retrieved using the [ BLE GET DISCOVER](#elpg-ble-get-discover-command) command.
 
@@ -453,7 +453,7 @@ OK{EOL}
 
 In some use cases, instead of just reading sensor data provided in the advertisement message, the host may want to inspect what type of services and characteristics a peripheral exposes. To do this, the ExpressLink module must first establish a direct connection to the BLE peripheral device (using the BLE GAP protocol).
 
-<a name="elpg-figure8"></a>![Figure 8 - Connecting to a BLE device](http://docs.aws.amazon.com/iot-expresslink/latest/programmersguide/images/connecting-to-ble-device.png)
+<a name="elpg-figure8"></a>![Figure 8 - Connecting to a BLE device](https://docs.aws.amazon.com/iot-expresslink/latest/programmersguide/images/connecting-to-ble-device.png)
 
 When you use the BLE{\#} CONNECT command, the ExpressLink module attempts to connect to a peripheral based on a specific configuration defined int the BLECentral\# parameter.Returns:
 
@@ -573,7 +573,7 @@ OK{EOL}
 
 The READ command allows the host to request the value of a characteristic when connected to a peripheral. The BLE (first) numerical suffix \# identifies the connected device by the corresponding BLECentral\# parameter. The READ (second) numerical suffix \# identifies the characteristics by the corresponding BLEGATT\# parameter. The maximum value that can be read from a characteristic is 31 bytes.
 
-<a name="elpg-figure9"></a>![Figure 9 - Reading a connected BLE peripheral](http://docs.aws.amazon.com/iot-expresslink/latest/programmersguide/images/reading-a-connected-ble-peripheral.png)
+<a name="elpg-figure9"></a>![Figure 9 - Reading a connected BLE peripheral](https://docs.aws.amazon.com/iot-expresslink/latest/programmersguide/images/reading-a-connected-ble-peripheral.png)
 
  Returns:
 
@@ -635,7 +635,7 @@ The WRITE command allows the host to update the value of (writable) characterist
 
 The maximum value that can be written to a characteristic is *MaxBLECharLen* bytes, where *MaxBLECharLen* is a value (>=31) defined by the vendor and documented in the module datasheet.
 
-<a name="elpg-figure10"></a>![Figure 10 - Writing to a connected BLE device](http://docs.aws.amazon.com/iot-expresslink/latest/programmersguide/images/writing-to-connected-ble-device.png)
+<a name="elpg-figure10"></a>![Figure 10 - Writing to a connected BLE device](https://docs.aws.amazon.com/iot-expresslink/latest/programmersguide/images/writing-to-connected-ble-device.png)
 
  Returns:
 
@@ -690,7 +690,7 @@ OK{EOL}
 
 The host can subscribe to receive notifications (see [Table 4 - ExpressLink event codes](elpg-event-handling.md#elpg-table4)) when connected to a peripheral and the selected characteristic is updated (it must be configured as notify or indicate). The BLE (first) numerical suffix \# identifies the connected device by the corresponding BLECentral\# parameter. The SUBSCRIBE (second) numerical suffix \#, identifies the characteristic by its corresponding BLEGATT\# parameter.
 
-<a name="elpg-figure11"></a>![Figure 11 - Subscribing to receive peripheral notifications](http://docs.aws.amazon.com/iot-expresslink/latest/programmersguide/images/subscribe-to-peripheral-notifications.png)
+<a name="elpg-figure11"></a>![Figure 11 - Subscribing to receive peripheral notifications](https://docs.aws.amazon.com/iot-expresslink/latest/programmersguide/images/subscribe-to-peripheral-notifications.png)
 
  Returns:
 
@@ -979,7 +979,7 @@ OK{EOL}
 
 The BLE GET command allows the host to perform a synchronous read of the value of a local peripheral characteristic. The maximum value that can be retrieved from a characteristic is *MaxBLECharLen* bytes, where *MaxBLECharLen* is a value (>=31) defined by the vendor and documented in the module datasheet.
 
-<a name="elpg-figure12"></a>![Figure 12 - Reading from a local characteristic in BLE peripheral mode](http://docs.aws.amazon.com/iot-expresslink/latest/programmersguide/images/reading-from-a-local-characteristic.jpg)
+<a name="elpg-figure12"></a>![Figure 12 - Reading from a local characteristic in BLE peripheral mode](https://docs.aws.amazon.com/iot-expresslink/latest/programmersguide/images/reading-from-a-local-characteristic.jpg)
 
  Returns:
 
@@ -1013,7 +1013,7 @@ OK 014A{EOL}
 
 The BLE SET command allows the host to perform a synchronous write to the value of a local peripheral characteristic. TThe maximum value that can be retrieved from a characteristic is *MaxBLECharLen* bytes, where *MaxBLECharLen* is a value (>=31) defined by the vendor and documented in the module datasheet.
 
-<a name="elpg-figure13"></a>![Figure 13 - Writing to a connected BLE device](http://docs.aws.amazon.com/iot-expresslink/latest/programmersguide/images/writing-to-a-local-characteristic.jpg)
+<a name="elpg-figure13"></a>![Figure 13 - Writing to a connected BLE device](https://docs.aws.amazon.com/iot-expresslink/latest/programmersguide/images/writing-to-a-local-characteristic.jpg)
 
  Returns:
 
@@ -1104,7 +1104,7 @@ Pairing not possible, device not connected or not initialized.
 **13.4.2.3**   `ERR27 BLE ERROR{EOL}`
 Pairing failed, device could not be paired.
 
-<a name="elpg-figure14"></a>![Figure 14 - Typical BLE Peripheral initialization and pairing flow](http://docs.aws.amazon.com/iot-expresslink/latest/programmersguide/images/typical-peripheral-pairing.png)
+<a name="elpg-figure14"></a>![Figure 14 - Typical BLE Peripheral initialization and pairing flow](https://docs.aws.amazon.com/iot-expresslink/latest/programmersguide/images/typical-peripheral-pairing.png)
 
 ### 13.4.3 BLE PAIR?   »Query device pairing status«
 <a name="elpg-ble-pair-query-command"></a>
@@ -1166,7 +1166,7 @@ No NC confirmation is pending.
    ```
 **Note**
 In Central role, the second parameter returned (0) is replaced by the BLEGATT index(\#).
-![Smartphone initiates pairing with ExpressLink module](http://docs.aws.amazon.com/iot-expresslink/latest/programmersguide/images/ble_pairing_step1.png)
+![Smartphone initiates pairing with ExpressLink module](https://docs.aws.amazon.com/iot-expresslink/latest/programmersguide/images/ble_pairing_step1.png)
 
 1. The host queries the sub-state:
 
@@ -1174,7 +1174,7 @@ In Central role, the second parameter returned (0) is replaced by the BLEGATT in
    > AT+BLE PAIR?
    < OK 3 NC_VALUE
    ```
-![Host queries pairing sub-state and receives NC_VALUE](http://docs.aws.amazon.com/iot-expresslink/latest/programmersguide/images/ble_pairing_step2.png)
+![Host queries pairing sub-state and receives NC_VALUE](https://docs.aws.amazon.com/iot-expresslink/latest/programmersguide/images/ble_pairing_step2.png)
 
 1. Fetch the six-digit number and display it:
 
@@ -1182,7 +1182,7 @@ In Central role, the second parameter returned (0) is replaced by the BLEGATT in
    > AT+BLE PAIR_ACTION GET_PASSKEY
    < OK 123456
    ```
-![Retrieve and display six-digit pairing code](http://docs.aws.amazon.com/iot-expresslink/latest/programmersguide/images/ble_pairing_step3.png)
+![Retrieve and display six-digit pairing code](https://docs.aws.amazon.com/iot-expresslink/latest/programmersguide/images/ble_pairing_step3.png)
 
 1. The user taps "Yes" on the device to accept pairing:
 
@@ -1190,7 +1190,7 @@ In Central role, the second parameter returned (0) is replaced by the BLEGATT in
    > AT+BLE PAIR_ACTION NC ACCEPT
    < OK
    ```
-![User accepts pairing by tapping Yes on device](http://docs.aws.amazon.com/iot-expresslink/latest/programmersguide/images/ble_pairing_step4.png)
+![User accepts pairing by tapping Yes on device](https://docs.aws.amazon.com/iot-expresslink/latest/programmersguide/images/ble_pairing_step4.png)
 
 1. Pairing completes and you receive a final notification event:
 
@@ -1207,7 +1207,7 @@ In Central role, the second parameter returned (0) is replaced by the BLEGATT in
    ```
 
    Pairing was successful\!
-![Pairing completion notification and success confirmation](http://docs.aws.amazon.com/iot-expresslink/latest/programmersguide/images/ble_pairing_step5.png)
+![Pairing completion notification and success confirmation](https://docs.aws.amazon.com/iot-expresslink/latest/programmersguide/images/ble_pairing_step5.png)
 
 ### 13.4.7 AT\+BLE UNPAIR »Removes device from the Allow list and Bond list«
 <a name="elpg-ble-unpair-command"></a>

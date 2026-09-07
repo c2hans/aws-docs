@@ -9,7 +9,7 @@ This automated AWS CloudFormation template deploys DeepRacer on AWS.
 
 1. Sign in to the AWS Management Console and select the button to launch the CloudFormation template.
 
-    [![Launch solution.](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?templateURL=https://solutions-reference.s3.amazonaws.com/deepracer-on-aws/latest/deepracer-on-aws.template&redirectId=ImplementationGuide)
+    [![Launch solution.](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?templateURL=https://solutions-reference.s3.amazonaws.com/deepracer-on-aws/latest/deepracer-on-aws.template&redirectId=ImplementationGuide)
 
    Alternatively, you can [download the template](https://solutions-reference.s3.amazonaws.com/deepracer-on-aws/latest/deepracer-on-aws.template) as a starting point for your own implementation.
 

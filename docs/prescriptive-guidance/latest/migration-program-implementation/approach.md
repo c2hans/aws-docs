@@ -13,4 +13,4 @@ Using an agile approach with *epics *(large stories), you start small, iterate,
 
 The following diagram illustrates the agile process that we describe in this guide.
 
-![Agile process.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-program-implementation/images/guide-img/c368ac72-b4ba-4de5-80d0-24d311a6c244/images/518d62aa-8f5b-4894-acec-3ea64056016a.png)
+![Agile process.](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-program-implementation/images/guide-img/c368ac72-b4ba-4de5-80d0-24d311a6c244/images/518d62aa-8f5b-4894-acec-3ea64056016a.png)

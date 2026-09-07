@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/step
 
  **Time to deploy:** Approximately 25 minutes
 
-1.  Sign in to the [AWS Management Console](https://aws.amazon.com/console/) and select the button to launch the media2cloud AWS CloudFormation template. [![Media2Cloud on AWS launch button](http://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?templateURL=https:%2F%2Fsolutions-reference.s3.amazonaws.com%2Fmedia2cloud%2Flatest%2Fmedia2cloud.template&redirectId=ImplementationGuide)
+1.  Sign in to the [AWS Management Console](https://aws.amazon.com/console/) and select the button to launch the media2cloud AWS CloudFormation template. [![Media2Cloud on AWS launch button](https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?templateURL=https:%2F%2Fsolutions-reference.s3.amazonaws.com%2Fmedia2cloud%2Flatest%2Fmedia2cloud.template&redirectId=ImplementationGuide)
 
 1.  The template launches in the US East (N. Virginia) Region by default. To launch the solution in a different AWS Region, use the Region selector in the console navigation bar.
 

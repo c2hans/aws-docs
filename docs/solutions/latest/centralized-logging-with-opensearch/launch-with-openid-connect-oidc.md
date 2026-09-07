@@ -51,15 +51,15 @@ You can use the Amazon Cognito User Pool in a supported AWS Standard Region as t
 1. Enter the **Callback URL** and **Sign out URL** using your domain name for Centralized Logging with the OpenSearch console. If your hosted UI is set up, you should be able to see something like the following.
 
     **Hosted UI. Configure the hosted UI for this app client.**
-![image18](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image18.png)
+![image18](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image18.png)
 
 1. Save the App client ID, User pool ID and the AWS Region to a file, which will be used later.
 
     **App client list. Appl clients and analytics.**
-![image19](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image19.png)
+![image19](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image19.png)
 
     **User pool overview screen.**
-![image20](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image20.png)
+![image20](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image20.png)
 
 In [Step 2. Launch the stack](#step-2.-launch-the-stack), the OidcClientID is the App client ID, and OidcProvider is `https://cognito-idp.${REGION}.amazonaws.com/${USER_POOL_ID}`.
 
@@ -81,14 +81,14 @@ In [Step 2. Launch the stack](#step-2.-launch-the-stack), the OidcClientID is th
 1. Save the App ID (that is, client\_id) and Issuer to a text file from Endpoint Information, which will be used later.
 
     **Endpoint information screen.**
-![image21](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image21.png)
+![image21](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image21.png)
 
 1. Update the `Login Callback URL` and `Logout Callback URL` to your IPC recorded domain name.
 
 1. Set the **Authorization Configuration**.
 
     **Authorization configuration screen.**
-![image22](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image22.png)
+![image22](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image22.png)
 
 You have successfully created an authing self-built application.
 
@@ -104,12 +104,12 @@ You have successfully created an authing self-built application.
 1. Go to the realm setting page. Choose **Endpoints**, and then **OpenID Endpoint Configuration** from the list.
 
     **Example screen with General tab and fields for data input.**
-![image23](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image23.jpg)
+![image23](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image23.jpg)
 
 1. In the JSON file that opens up in your browser, record the **issuer** value, which will be used later.
 
     **Example "issuer" value.**
-![image24](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image24.jpg)
+![image24](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image24.jpg)
 
 1. Go back to the Keycloak console and select **Clients** on the left navigation bar, and choose **Create**.
 
@@ -162,7 +162,7 @@ You have successfully created an authing self-built application.
    ```
 
     **Example IdTokenIssuer.**
-![image25](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image25.png)
+![image25](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image25.png)
 
 ### (Option 5) Other third-party authentication platforms such as Auth0
 <a name="option-5-Other-third-party-authentication-platforms-such-as-Auth0"></a>
@@ -180,14 +180,14 @@ You have successfully created an authing self-built application.
 1. Save `Client ID` - this is your `OidcClientId` value
 
     **Example Auth0 application Domain & Client ID**
-![image49](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image49.png)
+![image49](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image49.png)
 
 1. Scroll down to **Application URIs**
 
 1. Update `Allowed Callback URLs` and `Allowed Logout URLs`
 
     **Example Auth0 application redirect and logout URL’s**
-![image50](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image50.png)
+![image50](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image50.png)
 
 1. Click **Save Changes**
 

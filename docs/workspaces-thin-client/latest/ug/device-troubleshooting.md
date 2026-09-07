@@ -103,13 +103,13 @@ If your second monitor goes dark while you are using it, try one of the followin
 1. Go to **Settings** then **Peripheral devices**.
 
 1. Select **Detect Extended Display** under **DISPLAY RESOLUTION**.
-![Settings page showing mouse, display resolution, and sound options with "Detect Extended Display" highlighted.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/settings-dectect-display.jpeg)
+![Settings page showing mouse, display resolution, and sound options with "Detect Extended Display" highlighted.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/settings-dectect-display.jpeg)
 
 **Detect display from VDI toolbar**
 
 1. Open your VDI toolbar.
 
 1. Select **Detect Displays** on the toolbar.
-![Amazon WorkSpaces desktop with icons and a side menu highlighting "Detect Displays".](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/silk-dectect-display.jpeg)
+![Amazon WorkSpaces desktop with icons and a side menu highlighting "Detect Displays".](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/silk-dectect-display.jpeg)
 
 After doing either procedure, the secondary monitor should come back on. If the problem continues, restart your WorkSpaces Thin Client device.

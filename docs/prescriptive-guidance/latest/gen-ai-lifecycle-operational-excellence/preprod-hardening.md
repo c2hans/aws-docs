@@ -204,7 +204,7 @@ A generative AI application is not a static artifact that is finished upon deplo
 
 The following diagram shows a feedback loop that drives continuous improvement.
 
-![User feedback drives a continuous improvement loop for the generative AI application.](http://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-lifecycle-operational-excellence/images/guide-img/5b6a3e4a-ff13-48e9-83d7-177629049c97/images/5b05dc8a-2cbd-4f15-aa28-67b92b296ddd.png)
+![User feedback drives a continuous improvement loop for the generative AI application.](https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-lifecycle-operational-excellence/images/guide-img/5b6a3e4a-ff13-48e9-83d7-177629049c97/images/5b05dc8a-2cbd-4f15-aa28-67b92b296ddd.png)
 
 The diagram shows the following continuous improvement cycle:
 

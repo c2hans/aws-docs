@@ -50,7 +50,7 @@ The following are the prerequisites for deploying this solution:
 
 This section provides a high-level overview of the architecture that the sample code establishes. The following diagram shows the resources deployed in the logging account in order to ingest logs from an existing Amazon S3 bucket into Microsoft Sentinel.
 
-![Microsoft Sentinel using an Amazon SNS queue to ingest logs from an S3 bucket](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e8438b44-6bce-4863-8657-1d0a843ffb6f/images/38108d9d-88ad-4306-8ad2-01b66a6bf00f.png)
+![Microsoft Sentinel using an Amazon SNS queue to ingest logs from an S3 bucket](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e8438b44-6bce-4863-8657-1d0a843ffb6f/images/38108d9d-88ad-4306-8ad2-01b66a6bf00f.png)
 
 The architecture diagram shows the following resource interactions:
 

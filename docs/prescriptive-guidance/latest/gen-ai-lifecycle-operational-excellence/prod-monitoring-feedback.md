@@ -12,7 +12,7 @@ Balancing generative AI application autonomy with human oversight is central to 
 
 Teams comprehensively test through robust testing and the use of synthetic events to simulate real-world scenarios. However, it can be difficult to emulate some of real-world behaviors, or certain scenarios might be missed in testing. For an interactive generative AI system, it is recommended that you implement a feedback mechanism that captures user feedback when the application is not functioning as intended. This can be as simple as a binary good or not-good response. It could also be a more comprehensive open-text system where users can provide verbose feedback. The Driving continuous improvement through data and feedback loops section of this guide discusses how to implement a comprehensive feedback strategy that captures explicit and implicit user feedback. The same concepts also apply to the production stage. The following image shows a feedback loop in a production stage.
 
-![Feedback loop for a generative AI application in a production environment.](http://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-lifecycle-operational-excellence/images/guide-img/5b6a3e4a-ff13-48e9-83d7-177629049c97/images/33e7c512-3e4f-48fd-a6b6-77524d1c7a91.png)
+![Feedback loop for a generative AI application in a production environment.](https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-lifecycle-operational-excellence/images/guide-img/5b6a3e4a-ff13-48e9-83d7-177629049c97/images/33e7c512-3e4f-48fd-a6b6-77524d1c7a91.png)
 
 The diagram shows the following workflow:
 
@@ -33,7 +33,7 @@ The diagram shows the following workflow:
 
 Generative AI applications can be non-deterministic. When these applications are making autonomous decisions or actions, they can make incorrect decisions. It's imperative that you design for these failures through the implementation of safety guardrails. One approach to balance the autonomy of the generative AI application is to allow the application to make automated actions only in well-defined and low-risk scenarios. You incorporate a human-in-the-loop mechanism for high-risk or unfamiliar scenarios that are not previously covered in testing scenarios. The following diagram shows how you can include a human in the loop to review high-stakes actions.
 
-![A human in the loop reviewing a high-stakes action for a generative AI application.](http://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-lifecycle-operational-excellence/images/guide-img/5b6a3e4a-ff13-48e9-83d7-177629049c97/images/401aeca7-6e33-4099-b443-fd86bb2385b7.png)
+![A human in the loop reviewing a high-stakes action for a generative AI application.](https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-lifecycle-operational-excellence/images/guide-img/5b6a3e4a-ff13-48e9-83d7-177629049c97/images/401aeca7-6e33-4099-b443-fd86bb2385b7.png)
 
 ## Feedback data pipeline and schema
 <a name="prod-monitoring-feedback-pipeline"></a>

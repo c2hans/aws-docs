@@ -59,7 +59,7 @@ Amazon Linux 2 is nearing end of support. For more information, see the [Amazon 
 
 **Target architecture**
 
-![Architecture diagram of using Session Manager to access a bastion host.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a02aed20-1852-4c91-902f-f553795006e2/images/819c503b-7eec-4a9c-862b-b87107d50dc1.png)
+![Architecture diagram of using Session Manager to access a bastion host.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a02aed20-1852-4c91-902f-f553795006e2/images/819c503b-7eec-4a9c-862b-b87107d50dc1.png)
 
 The diagram shows the following process:
 

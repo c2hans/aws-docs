@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/deploying-oracle-soa-
 
  The following reference architecture shows how you can deploy Oracle SOA Suite 12c on AWS.
 
-![A diagram showing high-level architecture of Oracle SOA Suite 12c on AWS.](http://docs.aws.amazon.com/whitepapers/latest/deploying-oracle-soa-suite-12c/images/soa-architecture.jpeg)
+![A diagram showing high-level architecture of Oracle SOA Suite 12c on AWS.](https://docs.aws.amazon.com/whitepapers/latest/deploying-oracle-soa-suite-12c/images/soa-architecture.jpeg)
 
  This reference architecture includes a separate WebLogic domain for each component of Oracle SOA Suite (Oracle SOA, OSB, Oracle BPM, Oracle BAM, and Oracle ADF). Each WebLogic domain has one Administrative Server and multiple Managed Servers grouped into a WebLogic Server Cluster. The SOA metadata repository (MDS) is deployed on [Amazon Relational Database Service](https://aws.amazon.com/rds) (Amazon RDS). Amazon EFS is used for shared storage.
 

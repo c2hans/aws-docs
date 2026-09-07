@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 
 The following diagram presents the key functional modules found in most intelligent agents. Each component contributes to the agent's ability to operate autonomously in complex environments.
 
-![Key functional modules and submodules in intelligent agents.](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-foundations/images/guide-img/bf0cde42-baef-4bee-8fff-ca482667d2b6/images/b97920fd-1170-4545-bab9-e099b15f597b.png)
+![Key functional modules and submodules in intelligent agents.](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-foundations/images/guide-img/bf0cde42-baef-4bee-8fff-ca482667d2b6/images/b97920fd-1170-4545-bab9-e099b15f597b.png)
 
 In the context of the perceive, reason, act loop, an agent's reasoning capability is distributed across both its cognitive and learning modules. Through the integration of memory and learning, the agent develops adaptive reasoning grounded in past experience. As the agent acts within its environment, it creates an emergent feedback loop: Each action influences future perceptions, and the resulting experience is incorporated into memory and internal models through the learning module. This continuous loop of perception, reasoning, and action enables the agent to improve over time and completes the full perceive, reason, act cycle.
 

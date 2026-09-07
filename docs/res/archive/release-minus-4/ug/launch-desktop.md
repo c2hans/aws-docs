@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-4/ug/launch-de
 1. From the menu, choose **My Virtual Desktops**.
 
 1. Choose **Launch New Virtual Desktop**.
-![Virtual desktops](http://docs.aws.amazon.com/res/archive/release-minus-4/ug/images/res-virtualdesktops.png)
+![Virtual desktops](https://docs.aws.amazon.com/res/archive/release-minus-4/ug/images/res-virtualdesktops.png)
 
 1. Enter the details for your new desktop.
 

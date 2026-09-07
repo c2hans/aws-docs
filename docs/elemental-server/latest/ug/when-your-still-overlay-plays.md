@@ -9,7 +9,7 @@ This is version 2.18 of the AWS Elemental Server documentation. This is the late
 
 Regardless of whether you specify a still graphic overlay in an input, a stream, or globally to the job, you set up when it starts and how long it runs by specifying the **Start time** and **Duration**. The following image shows how you would specify these settings if you wanted your overlay to start two minutes into the video and to remain on the video for two minutes. If you keep these settings in their default state, the overlay begins at the first frame of the input or output and remains on the video for the duration of the input or output.
 
-![The overlay is represented in this image as a rectangle above a number line. The number line is marked with timecodes at one minute apart. The left edge of the rectangle is aligned with the second mark, at 00:00:02:00. The right edge of the rectangle is aligned with the fourth mark, at 00:00:04:00.](http://docs.aws.amazon.com/elemental-server/latest/ug/images/placing-overlay.png)
+![The overlay is represented in this image as a rectangle above a number line. The number line is marked with timecodes at one minute apart. The left edge of the rectangle is aligned with the second mark, at 00:00:02:00. The right edge of the rectangle is aligned with the fourth mark, at 00:00:04:00.](https://docs.aws.amazon.com/elemental-server/latest/ug/images/placing-overlay.png)
 
 **Start time**
 Provide the timecode for the first frame where you want to have the overlay appear. If you set up your overlay to fade in, set the the fade-in to begin at the start time.
@@ -21,4 +21,4 @@ Unless you have a reason to set it otherwise, set both of these settings to **St
 **Duration**
 Specify the length of time, in milliseconds, that you want the overlay to remain for. This duration includes fade-in time, but not fade-out time, as the following image shows.
 
-![This image shows three rectangles, representing the time when the overlay is fading in, the time when the overlay is at full opacity, and the time when the overlay is fading out. A brace labeled "Duration" surrounds the first two boxes.](http://docs.aws.amazon.com/elemental-server/latest/ug/images/overlay-fadein-fadeout-duration.png)
+![This image shows three rectangles, representing the time when the overlay is fading in, the time when the overlay is at full opacity, and the time when the overlay is fading out. A brace labeled "Duration" surrounds the first two boxes.](https://docs.aws.amazon.com/elemental-server/latest/ug/images/overlay-fadein-fadeout-duration.png)

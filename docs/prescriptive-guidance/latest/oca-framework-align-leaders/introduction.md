@@ -15,7 +15,7 @@ The AWS Organizational Change Acceleration (OCA) 6-Point Framework is intended t
 
 The framework's six points align with an agile sprint cadence, from program initiation through sustainable long-term change. The following diagram shows these six points and their subpoints.
 
-![Align Leaders phase of the AWS OCA Framework.](http://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-align-leaders/images/guide-img/ac63f84b-d8ec-4e66-bb40-1a98202c08aa/images/778c011d-34b2-4107-bf32-a07274115c3e.png)
+![Align Leaders phase of the AWS OCA Framework.](https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-align-leaders/images/guide-img/ac63f84b-d8ec-4e66-bb40-1a98202c08aa/images/778c011d-34b2-4107-bf32-a07274115c3e.png)
 
 *Align Leaders *is the second point. It helps you align and mobilize leaders around desired cloud outcomes, organizational impacts, and stakeholder readiness. *Align Leaders* contains five subpoints:
 

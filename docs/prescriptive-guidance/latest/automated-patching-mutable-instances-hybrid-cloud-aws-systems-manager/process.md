@@ -9,7 +9,7 @@ The primary users of the patching solution are the application development and o
 
 The following workflow provides an example of how you can plan patching windows for an application that is deployed in multiple environments and how to configure tags.
 
-![Patch management workflow.](http://docs.aws.amazon.com/prescriptive-guidance/latest/automated-patching-mutable-instances-hybrid-cloud-aws-systems-manager/images/guide-img/9c36bc8c-880d-42f7-8b76-ddf8e3d52477/images/3739bffc-e0da-4a24-bd33-7d5755072707.png)
+![Patch management workflow.](https://docs.aws.amazon.com/prescriptive-guidance/latest/automated-patching-mutable-instances-hybrid-cloud-aws-systems-manager/images/guide-img/9c36bc8c-880d-42f7-8b76-ddf8e3d52477/images/3739bffc-e0da-4a24-bd33-7d5755072707.png)
 
 + **Step 1.** Each application team plans their maintenance windows for their servers within various environments, and sets up the tags that represent the servers' patch groups and maintenance windows accordingly:
   + The **Patch Group** tag represents the servers within an application environment that are the targets of a specific patch baseline. Patch groups help ensure that the right patch baselines are deployed to the correct set of instances. Patch groups also help avoid deploying patches in the production environment before they have been adequately tested.

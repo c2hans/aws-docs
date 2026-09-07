@@ -18,7 +18,7 @@ After installation, you can choose from a set of pipeline tasks that can be incl
 
 These building blocks can then be used to construct complex deployment pipelines. The following figure shows an example pipeline designed to build, test, and publish an ASP.NET Core web application to an AWS Elastic Beanstalk environment.
 
-![An example pipeline designed to build, test, and publish an ASP.NET Core web application to an AWS Elastic Beanstalk environment.](http://docs.aws.amazon.com/whitepapers/latest/develop-deploy-dotnet-apps-on-aws/images/dotnet-apps6.png)
+![An example pipeline designed to build, test, and publish an ASP.NET Core web application to an AWS Elastic Beanstalk environment.](https://docs.aws.amazon.com/whitepapers/latest/develop-deploy-dotnet-apps-on-aws/images/dotnet-apps6.png)
 
 * Pipeline for building, testing, and deploying an ASP.NET Core application to AWS Elastic Beanstalk *
 

@@ -47,7 +47,7 @@ Complete the following steps to create a Transfer Family web app.
 
 1. Choose **Next**, then choose **Create web app**.
 
-![Screen that shows the Web apps dashboard as well as the menu item for selecting it from the left navigation panel.](http://docs.aws.amazon.com/transfer/latest/userguide/images/webapp-transfer-dashboard.png)
+![Screen that shows the Web apps dashboard as well as the menu item for selecting it from the left navigation panel.](https://docs.aws.amazon.com/transfer/latest/userguide/images/webapp-transfer-dashboard.png)
 
 **Note**
 Make sure to set up a Cross-origin resource sharing (CORS) policy for all of the buckets that are accessed from the web app endpoint.

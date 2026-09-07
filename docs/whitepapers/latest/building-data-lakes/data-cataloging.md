@@ -18,7 +18,7 @@ To create a Data Catalog, use AWS Glue crawlers that crawl the data from the dat
 
 You can define custom classifiers or use the built-in classifiers provided by AWS Glue to classify the data. AWS Glue provides classifiers for common file types, such as CSV, JSON, AVRO, or XML. AWS Glue also provides classifiers for common relational database management systems using a JDBC connection. You can create a custom classifier using a grok pattern, an XML tag, JavaScript Object Notation (JSON), or comma-separated values (CSV). The following figure depicts the working of AWS Glue in building a Data Catalog.
 
-![AWS Glue Data Catalog](http://docs.aws.amazon.com/whitepapers/latest/building-data-lakes/images/storage-best-practices6.png)
+![AWS Glue Data Catalog](https://docs.aws.amazon.com/whitepapers/latest/building-data-lakes/images/storage-best-practices6.png)
 
 Data Catalog is a database that stores metadata in tables consisting of data schema, data location, and runtime metrics. Data Catalog is also Apache Hive metastore compatible that can be used as a central repository for storing structural and operational metadata. AWS Glue also provides out-of-box integration with Amazon EMR that allows you to use Data Catalog as an external Hive metastore. Data Catalog is recommended, especially when you need a persistent metastore or a metastore shared between different applications, services, clusters, or AWS accounts. Data Catalog can also be used to create an external table for Athena or Amazon Redshift.
 
@@ -36,4 +36,4 @@ Lake Formation provides you with a grant/revoke permission model to control acce
 
 You have the flexibility to create a comprehensive data catalog using standard AWS services such as AWS Lambda, DynamoDB, and Amazon OpenSearch Service. At a high level, AWS Lambda triggers are used to populate DynamoDB tables with object names and metadata when those objects are put into S3; Amazon OpenSearch Service is used to search for specific assets, related metadata, and data classifications. The following figure shows a high-level architectural overview of this solution.
 
-![Comprehensive data catalog using AWS Lambda, DynamoDB, and Amazon OpenSearch Service](http://docs.aws.amazon.com/whitepapers/latest/building-data-lakes/images/storage-best-practices7.png)
+![Comprehensive data catalog using AWS Lambda, DynamoDB, and Amazon OpenSearch Service](https://docs.aws.amazon.com/whitepapers/latest/building-data-lakes/images/storage-best-practices7.png)

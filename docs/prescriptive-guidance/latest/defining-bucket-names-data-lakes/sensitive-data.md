@@ -20,7 +20,7 @@ Any data that is already masked can bypass the landing zone and be directly inge
 
 The following diagram shows a data lake where partially-sensitive datasets use a landing zone to mask the sensitive data but highly-sensitive datasets use separate, encrypted Amazon S3 buckets. The landing zone is isolated by using restrictive IAM and bucket policies, and the encrypted buckets use client-side encryption with AWS KMS.
 
-![Use different data flows and Amazon S3 buckets to process different levels of sensitive data.](http://docs.aws.amazon.com/prescriptive-guidance/latest/defining-bucket-names-data-lakes/images/guide-img/d76f2946-d940-4cf3-ac21-937dd4709e95/images/e7792e37-4a2d-4c18-87a7-ae7eb5e19cb5.png)
+![Use different data flows and Amazon S3 buckets to process different levels of sensitive data.](https://docs.aws.amazon.com/prescriptive-guidance/latest/defining-bucket-names-data-lakes/images/guide-img/d76f2946-d940-4cf3-ac21-937dd4709e95/images/e7792e37-4a2d-4c18-87a7-ae7eb5e19cb5.png)
 
 The diagram shows the following workflow:
 

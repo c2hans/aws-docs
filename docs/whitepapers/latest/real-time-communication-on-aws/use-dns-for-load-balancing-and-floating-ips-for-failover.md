@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/real-time-communicati
 
  IP telephony clients that support DNS SRV capability can efficiently use the redundancy built into the infrastructure by load balancing clients to different SBCs/PBXs.
 
-![A diagram depicting using DNS SRV records to load balance SIP clients .](http://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/images/using-dns-srv-records.png)
+![A diagram depicting using DNS SRV records to load balance SIP clients .](https://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/images/using-dns-srv-records.png)
 
 The preceding figure shows how customers can use the SRV records to load balance SIP traffic. Any IP telephony client that supports the SRV standard will look for the sip. `<transport protocol>` prefix in an SRV type DNS record. In the example, the answer section from DNS contains both of the PBXs running in different AWS Availability Zones. However, in addition to the endpoint URIs, the SRV record contains three additional pieces of information:
 +  The first number is the **Priority** (1 in the example above). A lower priority is preferred over higher.

@@ -72,8 +72,8 @@ This automated AWS CloudFormation template deploys the *Centralized Logging with
 
 |  | Launch in AWS Management Console | Download Template |
 | --- | --- | --- |
-| AWS Regions |  [![Launch solution](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image17.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?templateURL=https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/RDSLog.template)  |  [Template](https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/RDSLog.template)  |
-| AWS China Regions |  [![Launch solution](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image17.png)](https://console.amazonaws.cn/cloudformation/home#/stacks/new?templateURL=https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/RDSLog.template)  |  [Template](https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/RDSLog.template)  |
+| AWS Regions |  [![Launch solution](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image17.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?templateURL=https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/RDSLog.template)  |  [Template](https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/RDSLog.template)  |
+| AWS China Regions |  [![Launch solution](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image17.png)](https://console.amazonaws.cn/cloudformation/home#/stacks/new?templateURL=https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/RDSLog.template)  |  [Template](https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/RDSLog.template)  |
 
 1. Log in to the AWS Management Console and select the button to launch the AWS CloudFormation template. You can also download the template as a starting point for your own implementation.
 
@@ -128,7 +128,7 @@ You can access the built-in dashboard in Amazon OpenSearch Service to view log d
 
  **Amazon RDS/Aurora logs sample dashboard.**
 
-![image35](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image35.png)
+![image35](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image35.png)
 
 ## Create log ingestion (Light Engine)
 <a name="create-log-ingestion-light-engine-1"></a>
@@ -176,8 +176,8 @@ This automated AWS CloudFormation template deploys the *Centralized Logging with
 
 |  | Launch in AWS Management Console | Download Template |
 | --- | --- | --- |
-| AWS Regions |  [![Launch solution](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image17.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?templateURL=https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/MicroBatchAwsServicesRDSPipeline.template)  |  [Template](https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/MicroBatchAwsServicesRDSPipeline.template)  |
-| AWS China Regions |  [![Launch solution](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image17.png)](https://console.amazonaws.cn/cloudformation/home#/stacks/new?templateURL=https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/MicroBatchAwsServicesRDSPipeline.template)  |  [Template](https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/MicroBatchAwsServicesRDSPipeline.template)  |
+| AWS Regions |  [![Launch solution](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image17.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?templateURL=https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/MicroBatchAwsServicesRDSPipeline.template)  |  [Template](https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/MicroBatchAwsServicesRDSPipeline.template)  |
+| AWS China Regions |  [![Launch solution](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image17.png)](https://console.amazonaws.cn/cloudformation/home#/stacks/new?templateURL=https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/MicroBatchAwsServicesRDSPipeline.template)  |  [Template](https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/MicroBatchAwsServicesRDSPipeline.template)  |
 
 1. Log in to the AWS Management Console and select the preceding button to launch the AWS CloudFormation template. You can also download the template as a starting point for your own implementation.
 
@@ -219,4 +219,4 @@ You can view the status of the stack in the AWS CloudFormation console in the **
 
  **Amazon RDS/Aurora logs sample dashboard.**
 
-![image36](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image36.jpeg)
+![image36](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image36.jpeg)

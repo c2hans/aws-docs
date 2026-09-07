@@ -13,24 +13,24 @@ To complete this procedure, you must first install the AWS Toolkit and, if you h
    + For JetBrains Rider, choose **File**, **New** for a new solution. Or right-click an existing solution in the **Explorer** tool window, and then choose **Add**, **New Project**.
 
 1. For IntelliJ IDEA, choose **AWS**, **AWS Serverless Application**, and then choose **Next**.
-![Choosing to create an AWS serverless application in IntelliJ IDEA](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/sam-create-intellij.png)
+![Choosing to create an AWS serverless application in IntelliJ IDEA](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/sam-create-intellij.png)
 
    For PyCharm, choose **AWS Serverless Application**.
-![Choosing to create an AWS serverless application in PyCharm](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/sam-create-pycharm.png)
+![Choosing to create an AWS serverless application in PyCharm](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/sam-create-pycharm.png)
 
    For WebStorm, choose **AWS Serverless Application**.
-![Choosing to create an AWS serverless application in WebStorm](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/sam-create-webstorm.png)
+![Choosing to create an AWS serverless application in WebStorm](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/sam-create-webstorm.png)
 
    For JetBrains Rider, choose **AWS Serverless Application**.
-![Choosing to create an AWS serverless application in JetBrains Rider](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/sam-create-rider.png)
+![Choosing to create an AWS serverless application in JetBrains Rider](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/sam-create-rider.png)
 
 1. Complete the [New Project dialog box (or the New Solution dialog box for JetBrains Rider)](new-project-dialog.md), and then choose **Finish** (for IntelliJ IDEA) or **Create** (for PyCharm, WebStorm, or JetBrains Rider). The AWS Toolkit for JetBrains creates the project and adds the serverless application's code files to the new project.
 
 1. If you're using IntelliJ IDEA, with the **Project** tool window already open and displaying the project that contains the serverless application's files, do one of the following:
    + For Maven-based projects, right-click the project's `pom.xml` file, and then choose **Add as Maven Project**.
-![Choosing to add the POM file as a Maven project](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/add-as-maven-project.png)
+![Choosing to add the POM file as a Maven project](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/add-as-maven-project.png)
    + For Gradle-based projects, right-click the project's `build.gradle` file, and then choose **Import Gradle project**.
-![Choosing to import the Gradle project](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/import-gradle-project.png)
+![Choosing to import the Gradle project](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/import-gradle-project.png)
 
      Complete the **Import Module from Gradle** dialog box, and then choose **OK**.
 

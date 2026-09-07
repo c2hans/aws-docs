@@ -9,7 +9,7 @@ Amazon DynamoDB is a fast, highly scalable, highly available, cost-effective, no
 
 In the Toolkit for Visual Studio, AWS Explorer displays all of the DynamoDB tables associated with the active AWS account.
 
-![AWS Explorer window showing Amazon DynamoDB expanded with tables such as Forum and Thread.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/dynamodb-aws-explorer.png)
+![AWS Explorer window showing Amazon DynamoDB expanded with tables such as Forum and Thread.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/dynamodb-aws-explorer.png)
 
 ## Creating an DynamoDB Table
 <a name="tkv-dynamodb-create-table"></a>
@@ -32,7 +32,7 @@ You can use the Toolkit for Visual Studio to create a DynamoDB table.
 
 1. Click **OK** to create the table.
 
-![Create Table dialog box with table configuration options including hash key, range key, capacity settings, and alarm notification preferences.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/dynamodb-create-table.png)
+![Create Table dialog box with table configuration options including hash key, range key, capacity settings, and alarm notification preferences.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/dynamodb-create-table.png)
 
 For more information about DynamoDB tables, go to [Data Model Concepts - Tables, Items, and Attributes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html#HowItWorks.CoreComponents.TablesItemsAttributes).
 
@@ -43,18 +43,18 @@ To open a grid view of one of your DynamoDB tables, in AWS Explorer, double-clic
 
 An attribute can have a value that is a string or a number. Some attributes have a value that consists of a *set* of strings or numbers. Set values are displayed as a comma-separated list enclosed by square brackets.
 
-![ProductCatalog table showing attributes with string, number, and set values in square brackets.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/dynamodb-product-catalog.png)
+![ProductCatalog table showing attributes with string, number, and set values in square brackets.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/dynamodb-product-catalog.png)
 
 ## Editing and Adding Attributes and Values
 <a name="tkv-dynamodb-editing"></a>
 
 By double-clicking a cell, you can edit the values for the item's corresponding attribute. For set-value attributes, you can also add or delete individual values from the set.
 
-![Table row showing Brand-Company A with Color attribute containing Black and Green values.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/dynamodb-single-value-cell-edit.png)
+![Table row showing Brand-Company A with Color attribute containing Black and Green values.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/dynamodb-single-value-cell-edit.png)
 
 In addition to changing the value of an attribute, you can also, with some limitations, change the format of the value for an attribute. For example, any number value can be converted into a string value. If you have a string value, the content of which is a number, such as 125, the cell editor enables you to convert the format of the value from string to number. You can also convert a single-value to a set-value. However, you cannot generally convert from a set-value to a single-value; an exception is when the set-value has, in fact, only one element in the set.
 
-![Table editor showing Brand and Color columns with values like Brand-Company C and Mountain B with Black and Red colors.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/dynamodb-set-value-attribute.png)
+![Table editor showing Brand and Color columns with values like Brand-Company C and Mountain B with Black and Red colors.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/dynamodb-set-value-attribute.png)
 
 After editing the attribute value, choose the green check mark to confirm your changes. If you want to discard your changes, choose the red X.
 
@@ -64,20 +64,20 @@ After you have confirmed your changes, the attribute value will be displayed in 
 
 From the grid view, you can also add attributes to the table. To add a new attribute, choose **Add Attribute**.
 
-![Three buttons labeled Scan Table, Commit Changes, and Add Attribute.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/dynamodb-add-attribute-button.png)
+![Three buttons labeled Scan Table, Commit Changes, and Add Attribute.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/dynamodb-add-attribute-button.png)
 
 In the **Add Attribute** dialog box, type a name for your attribute, and then choose **OK**.
 
-![Add Attribute dialog box with Genre entered as the attribute name and informational text.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/dynamodb-add-attribute.png)
+![Add Attribute dialog box with Genre entered as the attribute name and informational text.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/dynamodb-add-attribute.png)
 
 To make the new attribute become part of the table, you must add a value to it for at least one item and then choose the **Commit Changes** button. To discard the new attribute, just close the grid view of the table without choosing **Commit Changes**.
 
-![ProductCatalog table with Genre column added and Commit Changes button highlighted.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/dynamodb-commit-new-attribute-value.png)
+![ProductCatalog table with Genre column added and Commit Changes button highlighted.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/dynamodb-commit-new-attribute-value.png)
 
 ## Scanning an DynamoDB Table
 <a name="tkv-dynamodb-scan"></a>
 
-![Three buttons labeled Scan Table, Commit Changes, and Add Attribute.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/dynamodb-scan.png)
+![Three buttons labeled Scan Table, Commit Changes, and Add Attribute.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/dynamodb-scan.png)
 
 You can perform Scans on your DynamoDB tables from the Toolkit. In a Scan, you define a set of criteria and the Scan returns all items from the table that match your criteria. Scans are expensive operations and should be used with care to avoid disrupting higher priority production traffic on the table. For more information about using the Scan operation, go to the *Amazon DynamoDB Developer Guide*.
 
@@ -93,7 +93,7 @@ You can perform Scans on your DynamoDB tables from the Toolkit. In a Scan, you d
 
 To remove a Scan clause, choose the red button with the white line to the right of each clause.
 
-![Product catalog table with scan conditions interface showing bicycle data entries.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/dynamodb-scan-results.png)
+![Product catalog table with scan conditions interface showing bicycle data entries.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/dynamodb-scan-results.png)
 
 To return to the view of the table that includes all items, remove all Scan clauses and choose **Scan Table** again.
 
@@ -101,7 +101,7 @@ To return to the view of the table that includes all items, remove all Scan clau
 
 At the bottom of the view are three buttons.
 
-![Three buttons showing pause, skip forward, and refresh icons.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-simpleDB-paginate-export.png)
+![Three buttons showing pause, skip forward, and refresh icons.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-simpleDB-paginate-export.png)
 
 The first two blue buttons provide pagination for Scan results. The first button will display an additional page of results. The second button will display an additional ten pages of results. In this context, a page is equal to 1 MB of content.
 

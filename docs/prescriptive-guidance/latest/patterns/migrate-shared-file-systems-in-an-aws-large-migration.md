@@ -60,7 +60,7 @@ One or more of the following:
 
 **Target architecture**
 
-![Architecture diagram of using AWS DataSync to migrate on-premises shared file systems to AWS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a30cf791-7a8a-4f71-8927-bc61f3b332f2/images/13232433-7d33-44c8-8998-b720f33f67b3.png)
+![Architecture diagram of using AWS DataSync to migrate on-premises shared file systems to AWS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a30cf791-7a8a-4f71-8927-bc61f3b332f2/images/13232433-7d33-44c8-8998-b720f33f67b3.png)
 
 The diagram shows the following process:
 
@@ -74,7 +74,7 @@ The diagram shows the following process:
 
 The following image shows the phases and high-level steps for migrating an SFS in a large migration project.
 
-![Discover, plan, prepare, cut over, and validate phases of migrating shared file systems to AWS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a30cf791-7a8a-4f71-8927-bc61f3b332f2/images/f1e0c94d-0eea-46a8-bdec-3297b34c1d43.png)
+![Discover, plan, prepare, cut over, and validate phases of migrating shared file systems to AWS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a30cf791-7a8a-4f71-8927-bc61f3b332f2/images/f1e0c94d-0eea-46a8-bdec-3297b34c1d43.png)
 
 The [Epics](#migrate-shared-file-systems-in-an-aws-large-migration-epics) section of this pattern contains detailed instructions for how to complete the migration and use the attached workbooks. The following is a high-level overview of the steps in this phased approach.
 

@@ -12,7 +12,7 @@ This architecture shows how to call multiple downstream API endpoints, in parall
 ## Parallel API Composition in AWS
 <a name="diagram1"></a>
 
-![Architecture diagram showing parallel API composition using Amazon API Gateway, AWS Step Functions Express Workflows, AWS Lambda, and Amazon EventBridge.](http://docs.aws.amazon.com/reference-architecture-diagrams/latest/parallel-api-composition/images/parallel-api-composition.png)
+![Architecture diagram showing parallel API composition using Amazon API Gateway, AWS Step Functions Express Workflows, AWS Lambda, and Amazon EventBridge.](https://docs.aws.amazon.com/reference-architecture-diagrams/latest/parallel-api-composition/images/parallel-api-composition.png)
 
 The following steps describe the architecture:
 

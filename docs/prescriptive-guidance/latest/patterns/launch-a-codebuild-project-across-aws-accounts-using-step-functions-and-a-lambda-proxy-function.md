@@ -28,7 +28,7 @@ CodeBuild helps you launch operational tasks using the AWS Command Line Interfac
 
 The following diagram shows the architecture that this pattern builds.
 
-![Architecture diagram of launching a CodeBuild project across multiple AWS accounts](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/809a5716-56e5-477c-aac6-02243675a2f2/images/857ba3ae-eb9a-4d6b-b73e-e596f41c8cb8.png)
+![Architecture diagram of launching a CodeBuild project across multiple AWS accounts](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/809a5716-56e5-477c-aac6-02243675a2f2/images/857ba3ae-eb9a-4d6b-b73e-e596f41c8cb8.png)
 
 The diagram shows the following workflow:
 
@@ -40,7 +40,7 @@ The diagram shows the following workflow:
 
 The state machine logic is shown in the following image.
 
-![Workflow of Step Functions state machine](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/809a5716-56e5-477c-aac6-02243675a2f2/images/4729bbfc-79ad-455d-a85a-b96cce00f432.png)
+![Workflow of Step Functions state machine](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/809a5716-56e5-477c-aac6-02243675a2f2/images/4729bbfc-79ad-455d-a85a-b96cce00f432.png)
 
 **Technology stack**
 + AWS CloudFormation

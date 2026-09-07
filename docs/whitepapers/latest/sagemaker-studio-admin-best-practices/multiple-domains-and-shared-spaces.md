@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admi
 
 Each domain set up in IAM authentication mode can make use of shared space for near real-time collaboration between users. With a shared space, users get access to a shared Amazon EFS directory, and a shared [JupyterServer](https://jupyter-server.readthedocs.io/en/latest/) app for the user interface, and can co-edit in near real-time. Automatic tagging of resources created by shared spaces allows the administrators to track costs on a project level. The shared JupyterServer UI also filters resources such as experiments and model registry entries so that only items relevant to the shared ML endeavor will be shown. The following diagram provides an overview of private apps and shared spaces within each domain.
 
-![A diagram depicting an overview of private apps and shared spaces within a single domain.](http://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/private-apps-shared-spaces.png)
+![A diagram depicting an overview of private apps and shared spaces within a single domain.](https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/private-apps-shared-spaces.png)
 
 ## Set up shared spaces in your domain
 <a name="set-up-shared-spaces-in-your-domain"></a>
@@ -101,7 +101,7 @@ An [Amazon Elastic Block Store](https://aws.amazon.com/ebs/) (Amazon EBS) [stora
 
  To use client VPC endpoint validation using the IAM policy condition `aws:sourceVpce`, the creation of a pre-signed URL needs to originate in the same customer VPC where SageMaker AI Studio is deployed, and resolution of the pre-signed URL needs to happen via a SageMaker AI Studio VPC endpoint on the customer VPC. This resolution of the pre-signed URL during access time for corporate network users can be accomplished using DNS forwarding rules (both in Zscaler and corporate DNS), and then into the customer VPC endpoint using an [Amazon Route 53](https://aws.amazon.com/route53/) inbound resolver as shown in the following architecture:
 
-![A diagram that shows accessing Studio pre-signed URL with VPC endpoint over corporate network.](http://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/pre-signed-url.png)
+![A diagram that shows accessing Studio pre-signed URL with VPC endpoint over corporate network.](https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/pre-signed-url.png)
 
  For step-by-step guidance setting up the preceding architecture, refer to [Secure Amazon SageMaker AI Studio presigned URLs Part 1: Foundational infrastructure](https://aws.amazon.com/blogs/machine-learning/secure-amazon-sagemaker-studio-presigned-urls-part-1-foundational-infrastructure/).
 

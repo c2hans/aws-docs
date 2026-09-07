@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 + In Solution Explorer, open the context (right-click) menu for the template and choose **Format Template**.
 
   Alternatively, to format the template you're currently editing, from the **Template** menu, choose **Format Template**.
-![Dropdown menu showing options to deploy to CloudFormation, estimate cost, and format template.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/vs-editor-template-menu-format.png)
+![Dropdown menu showing options to deploy to CloudFormation, estimate cost, and format template.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/vs-editor-template-menu-format.png)
 
   Your JSON code will be formatted so that its structure is clearly presented.
-![JSON code structure for CloudFormation template with UserData and Properties sections.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/vs-editor-cfn-formatting.png)
+![JSON code structure for CloudFormation template with UserData and Properties sections.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/vs-editor-cfn-formatting.png)

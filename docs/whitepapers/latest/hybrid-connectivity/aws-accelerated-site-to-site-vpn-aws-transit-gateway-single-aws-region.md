@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/a
 +  AWS Managed Site-to-Site VPN connection with AWS Transit Gateway.
 +  Accelerated VPN enabled.
 
-![Diagram showing AWS Managed VPN – AWS Transit Gateway, Single AWS Region](http://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/images/managed-vpn-tg-single-region.png)
+![Diagram showing AWS Managed VPN – AWS Transit Gateway, Single AWS Region](https://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/images/managed-vpn-tg-single-region.png)
 
  **Connectivity model attributes:**
 +  Provide the ability to establish optimized VPN connections over the public internet by using [AWS Accelerated Site-to-Site VPN connections](https://docs.aws.amazon.com/vpn/latest/s2svpn/accelerated-vpn.html).

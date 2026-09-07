@@ -39,7 +39,7 @@ First, connect QuickSight with the Amazon S3 bucket:
 1. On the **Select Amazon S3 buckets** dialog box, verify that you are in the **S3 Buckets Linked to QuickSight Account** tab and tick both the right and left checkboxes for the **athena-results** and \*migration-tracker \* S3 buckets.
 
     **QuickSight S3 bucket selection dialog with options for Athena Workgroup write permissions.**
-![step5 f6](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f6.png)
+![step5 f6](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f6.png)
 **Note**
 If you are already using QuickSight for other S3 data analysis, clear and reselect the Amazon S3 option to display the bucket selection dialog box.
 
@@ -54,7 +54,7 @@ Next, set up permissions for Amazon Athena:
 1. On the **Amazon Athena resources** dialog box, verify that you are in the **S3 Buckets Linked to QuickSight Account** tab and verify that the same S3 buckets are checked - **athena-results** and **migration-tracker**.
 
     **QuickSight Amazon Athena resources dialog box**
-![step5 f7](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f7.png)
+![step5 f7](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f7.png)
 
 1. Choose **Finish**.
 
@@ -79,7 +79,7 @@ Next, set up a new analysis:
 If you have deployed this solution multiple times, there will be more than one workgroup. Select the one that was created for your current deployment.
 
        **New Athena data source dialog box**
-![step5 f8](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f8.png)
+![step5 f8](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f8.png)
 
 1. Choose **Validate connection** to ensure that QuickSight can communicate with Athena.
 
@@ -96,12 +96,12 @@ If you have deployed this solution multiple times, there will be more than one w
    1. Choose **Select**.
 
        **Choose your table dialog box**
-![step5 f9](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f9.png)
+![step5 f9](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f9.png)
 
 1. In the next dialog box, **Finish data set creation**, choose **Visualize**.
 
     **Finish data set creation dialog box**
-![step5 f10](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f10.png)
+![step5 f10](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f10.png)
 
 1. In **New sheet**, choose **Interactive sheet**, then choose **Create**.
 
@@ -114,12 +114,12 @@ After the data is imported, you will be redirected to the Analysis page. However
 1. On the **Datasets** page, select the {{<migration-factory>}}-general-view dataset.
 
     **QuickSight Datasets page**
-![step5 f11](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f11.png)
+![step5 f11](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f11.png)
 
 1. On the {{<migration-factory>}}-general-view **Datasets** page, choose the **Refresh** tab.
 
     **Migration tracker general view dialog box**
-![step5 f12](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f12.png)
+![step5 f12](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f12.png)
 
 1. Choose **Add new schedule**.
 
@@ -128,7 +128,7 @@ After the data is imported, you will be redirected to the Analysis page. However
 1. Choose **Save**.
 
     **Create a schedule dialog box**
-![step5 f13](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f13.png)
+![step5 f13](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f13.png)
 
 ## Create a dashboard
 <a name="create-a-dashboard"></a>
@@ -137,7 +137,7 @@ Amazon QuickSight offers the flexibility of building a custom dashboard that hel
 
  **Example QuickSight dashboard**
 
-![step5 f14 dashboard](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f14-dashboard.png)
+![step5 f14 dashboard](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f14-dashboard.png)
 
 Use the following steps to create a count overview by migration waves. This view counts all the servers in the dataset that are grouped per wave, providing a granular view of the total number of servers in a wave. To create this view, you will convert the **server\_name** into a measure, which allows you to count distinct servers names. Then you will create a wave-by-wave filter.
 
@@ -150,7 +150,7 @@ Use the following steps to create a count overview by migration waves. This view
 1. On the **Visualize** page, hover over the **server\_name** and choose the ellipsis to the right.
 
     **QuickSight Visualize a data set page**
-![step5 f15](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f15.png)
+![step5 f15](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f15.png)
 
 1. Select **Convert to measure** to convert the dataset from a dimension to a measure. The **server\_name** text turns green to indicate that the dataset has been converted to a measure.
 
@@ -159,7 +159,7 @@ Use the following steps to create a count overview by migration waves. This view
 1. On the **Visuals** pane, select the **server\_name (Sum)**, under **Value**, select **Aggregate: Sum**, then select **Count distinct**.
 
     **Field wells page**
-![step5 f16](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f16.png)
+![step5 f16](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f16.png)
 
 A count of the number of unique server names you have in your dataset is displayed. You can resize the visualization as needed to ensure it displays the information clearly on your monitor.
 
@@ -173,7 +173,7 @@ Next, add filters to the visualization to identify the server count for each mig
 1. From the left Filters pane, choose **ADD** and select **wave\_id** from the list.
 
     **Filters pane drop-down list**
-![step5 f17](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f17.png)
+![step5 f17](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f17.png)
 
 1. Choose **wave\_id** from the filters list.
 
@@ -189,7 +189,7 @@ The next visualization we will add in the dashboard is a doughnut graph showing 
 
  **Doughnut graph and bar chart visualizing migration progress**
 
-![step5 f19](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f19.png)
+![step5 f19](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f19.png)
 
 **Note**
 By default, when there is no custom query applied to the dataset, up to five migration/replication statuses can be shown. For this solution, a **MigrationStatusSummary** query is created in a new column: `ifelse(migration_status ='Cutover instance launched', 'Completed', 'InProgress')`
@@ -206,7 +206,7 @@ Use the following steps to create the **MigrationStatusSummary** column:
 1. On the dataset page, choose **Edit dataset**.
 
     **Migration factory dataset dialog box**
-![step5 f20](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f20.png)
+![step5 f20](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f20.png)
 
 1. In the **Fields** pane, choose **\\\+**, then choose **Add calculated field**.
 
@@ -221,7 +221,7 @@ Use the following steps to create the **MigrationStatusSummary** column:
 1. Choose **Save**.
 
     **Add calculated field dialog box**
-![step5 f22](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f22.png)
+![step5 f22](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f22.png)
 
 1. On the **Dataset** page, choose **Save & publish**.
 
@@ -229,7 +229,7 @@ Your newly added query will be listed in the **Data set Fields list**.
 
  **Dataset Fields list**
 
-![step5 f24](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f24.png)
+![step5 f24](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f24.png)
 
 Next, build the dashboard.
 
@@ -251,13 +251,13 @@ If you have an enterprise license for Amazon QuickSight, insights will be genera
 
  **Example dashboard insights**
 
-![step5 f26 insights](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f26-insights.png)
+![step5 f26 insights](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f26-insights.png)
 
 You can also customize the data by breaking down the metadata into waves. For example:
 
  **Example wave 1 server breakdown**
 
-![step5 f27](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f27.png)
+![step5 f27](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f27.png)
 
 ### (Optional) View Insights on the Amazon QuickSight dashboard
 <a name="optional-view-insights-on-the-quicksight-dashboard"></a>
@@ -272,20 +272,20 @@ Use the following steps to add an insight to your dashboard which shows a breakd
 1. On the **Insights** page, in the **Count of Records BY MIGRATIONSTATUSSUMMARY** section, hover over **Top 2 MigrationSummarys** item and choose the **\\\+** to add an insight to the visual.
 
     **Add an insight to a visual**
-![step5 f29](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f29.png)
+![step5 f29](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f29.png)
 
 1. Customize the insight for your analysis by choosing **Customize Narrative** on the visual.
 
     **Add an Insight to your dashboard**
-![step5 f30 add insight](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f30-add-insight.png)
+![step5 f30 add insight](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f30-add-insight.png)
 
     **Customize narrative option**
-![step5 f31 customize narrative](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f31-customize-narrative.png)
+![step5 f31 customize narrative](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f31-customize-narrative.png)
 
 1. Edit the narrative to fit your use case and choose **Save**. For example:
 
     **Edit your narrative**
-![step5 f32](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f32.png)
+![step5 f32](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f32.png)
 
    Return to the dashboard and filter it to show each wave:
 
@@ -298,7 +298,7 @@ Use the following steps to add an insight to your dashboard which shows a breakd
 1. To visualize all the migration waves, duplicate the visuals by choosing the ellipsis to the left side of the visual and selecting **Duplicate visual**.
 
     **Visualize the migration waves**
-![step5 f34](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f34.png)
+![step5 f34](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/step5-f34.png)
 
 1. Modify the filter for each visual to show a breakdown for each migration wave.
 

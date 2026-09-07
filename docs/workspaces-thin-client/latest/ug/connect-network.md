@@ -18,4 +18,4 @@ Only one network connection type can be active. If you are using an Ethernet con
 
 Enter your network password in the **Password** field.
 
-![WorkSpaces Thin Client internet connection](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/oobe-network3.png)
+![WorkSpaces Thin Client internet connection](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/oobe-network3.png)

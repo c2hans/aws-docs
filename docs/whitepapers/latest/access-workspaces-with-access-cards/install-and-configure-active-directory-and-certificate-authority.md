@@ -22,7 +22,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/access-workspaces-wit
 1.  To select additional capabilities, select **Add Features**. Choose **Next**.
 
 1.  On the **Select features** screen, select the check boxes next to the features that you want to install during the AD DS installation process. Choose **Next**.
-![A diagram depicting Active Directory feature installation.](http://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/workspaces-smartcard5.png)
+![A diagram depicting Active Directory feature installation.](https://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/workspaces-smartcard5.png)
 
    *Active Directory feature installation *
 

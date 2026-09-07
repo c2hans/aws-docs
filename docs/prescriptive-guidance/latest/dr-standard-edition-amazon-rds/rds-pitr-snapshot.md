@@ -9,7 +9,7 @@ An Amazon RDS database instance can be configured to replicate snapshots and tra
 
 The following diagram shows how Amazon RDS facilitates the automated transfer of snapshots and transaction logs across AWS Regions to maintain the point-in-time recovery (PITR) requirements as configured in the settings of the primary Amazon RDS instance. From the primary Region, snapshots are copied to the secondary Region. Logs are stored in an S3 bucket in the primary Region and copied to an S3 bucket in the secondary Region.
 
-![""](http://docs.aws.amazon.com/prescriptive-guidance/latest/dr-standard-edition-amazon-rds/images/guide-img/d84bd0dc-b6eb-4d26-8602-78820cdf415f/images/68d7b028-b873-4869-8cc5-2a68cb0a4301.png)
+![""](https://docs.aws.amazon.com/prescriptive-guidance/latest/dr-standard-edition-amazon-rds/images/guide-img/d84bd0dc-b6eb-4d26-8602-78820cdf415f/images/68d7b028-b873-4869-8cc5-2a68cb0a4301.png)
 
 1. Transaction or redo logs
 

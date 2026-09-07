@@ -26,4 +26,4 @@ Viewing documentation, autocompletion, and validation are features included with
 
 See the image below for an example of what these features look like in VS Code.
 
-![RestApiId property details for AWS::Serverless::Api resource in AWS SAM template.](http://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/filetypes2024.png)
+![RestApiId property details for AWS::Serverless::Api resource in AWS SAM template.](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/filetypes2024.png)

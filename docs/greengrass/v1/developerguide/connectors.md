@@ -13,11 +13,11 @@ Connectors in AWS IoT Greengrass are prebuilt modules that make it more efficien
 
 The following diagram shows where connectors can fit into the AWS IoT Greengrass landscape.
 
-![Connectors connect to devices, services, and local resources.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/connectors/connectors-arch.png)
+![Connectors connect to devices, services, and local resources.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/connectors/connectors-arch.png)
 
 Many connectors use MQTT messages to communicate with client devices and Greengrass Lambda functions in the group, or with AWS IoT and the local shadow service. In the following example, the Twilio Notifications connector receives MQTT messages from a user-defined Lambda function, uses a local reference of a secret from AWS Secrets Manager, and calls the Twilio API.
 
-![A connector receiving an MQTT message from a Lambda function and calling a service.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/connectors/twilio-solution.png)
+![A connector receiving an MQTT message from a Lambda function and calling a service.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/connectors/twilio-solution.png)
 
 For tutorials that create this solution, see [Getting started with Greengrass connectors (console)](connectors-console.md) and [Getting started with Greengrass connectors (CLI)](connectors-cli.md).
 
@@ -46,7 +46,7 @@ You can deploy some connectors as simple standalone applications. For example, t
 
 You can add other connectors as building blocks in larger solutions. The following example solution uses the Modbus-RTU Protocol Adapter connector to process messages from sensors and the Twilio Notifications connector to initiate Twilio messages.
 
-![Data flow from Lambda function to Modbus-RTU Protocol Adapter connector to Lambda function to Twilio Notifications connector to Twilio.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/connectors/modbus-twilio-solution.png)
+![Data flow from Lambda function to Modbus-RTU Protocol Adapter connector to Lambda function to Twilio Notifications connector to Twilio.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/connectors/modbus-twilio-solution.png)
 
 Solutions often include user-defined Lambda functions that sit next to connectors and process the data that the connector sends or receives. In this example, the TempMonitor function receives data from Modbus-RTU Protocol Adapter, runs some business logic, and then sends data to Twilio Notifications.
 

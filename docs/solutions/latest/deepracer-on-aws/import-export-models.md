@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/import
 ## Import a model
 <a name="import-a-model"></a>
 
-![Import a model](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_import_model.png)
+![Import a model](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_import_model.png)
 
 You can import a model that you’ve previously exported from either:
 

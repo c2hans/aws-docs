@@ -7,11 +7,11 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/devops-pipe
 
 In the DevOps Pipeline Accelerator, *accelerators* are a collection of jobs that are managed in stages. A *stage* contains the building blocks that form a *job*. There are multiple *wrappers* that form an entry point for a specific IaC pipeline. The application consumes the *entry point*, which is the start of the pipeline. The entry point consists of *aggregators* and various stages. The following image shows how stages interact with wrappers, aggregators, and the entry point.
 
-![How stages interact with wrappers, aggregators, and the entry point](http://docs.aws.amazon.com/prescriptive-guidance/latest/devops-pipeline-accelerator/images/guide-img/e56ba347-e180-48ee-bbf9-0b76e10e70f2/images/8b5ca6e3-3dbf-4971-be26-9250b4d439e7.png)
+![How stages interact with wrappers, aggregators, and the entry point](https://docs.aws.amazon.com/prescriptive-guidance/latest/devops-pipeline-accelerator/images/guide-img/e56ba347-e180-48ee-bbf9-0b76e10e70f2/images/8b5ca6e3-3dbf-4971-be26-9250b4d439e7.png)
 
 This section describes the building blocks of the DPA solution architecture, as shown in the following image.
 
-![Building blocks of the DPA solution architecture](http://docs.aws.amazon.com/prescriptive-guidance/latest/devops-pipeline-accelerator/images/guide-img/e56ba347-e180-48ee-bbf9-0b76e10e70f2/images/106e947a-1c73-483c-8ac0-7dfb0575183c.png)
+![Building blocks of the DPA solution architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/devops-pipeline-accelerator/images/guide-img/e56ba347-e180-48ee-bbf9-0b76e10e70f2/images/106e947a-1c73-483c-8ac0-7dfb0575183c.png)
 
 The diagram shows the following workflow and features:
 

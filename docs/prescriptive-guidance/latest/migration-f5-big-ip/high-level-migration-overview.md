@@ -54,4 +54,4 @@ Before you begin the migration, it helps to lay out the entire process from a hi
 
 The following diagram shows the high-level process flow for an F5 BIG-IP migration.
 
-![High-level process flow for an F5 BIG-IP migration.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f5-big-ip/images/guide-img/migration-f5-big-ip/images/F5-high-level.png)
+![High-level process flow for an F5 BIG-IP migration.](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f5-big-ip/images/guide-img/migration-f5-big-ip/images/F5-high-level.png)

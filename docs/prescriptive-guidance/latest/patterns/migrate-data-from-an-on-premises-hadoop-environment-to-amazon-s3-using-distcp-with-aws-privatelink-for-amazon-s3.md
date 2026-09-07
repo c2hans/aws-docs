@@ -45,7 +45,7 @@ AWS PrivateLink for Amazon S3 doesn't support the following:
 
 **Target architecture**
 
-![Hadoop cluster with DistCp copies data from on-premises environment through Direct Connect to S3.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8d2b47ae-e854-4e5d-8f19-b9c2606f2c59/images/b8a249bd-307b-41ec-b939-5039d0ae7123.png)
+![Hadoop cluster with DistCp copies data from on-premises environment through Direct Connect to S3.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8d2b47ae-e854-4e5d-8f19-b9c2606f2c59/images/b8a249bd-307b-41ec-b939-5039d0ae7123.png)
 
 The diagram shows how the Hadoop administrator uses DistCp to copy data from an on-premises environment through a private network connection, such as AWS Direct Connect, to Amazon S3 through an Amazon S3 interface endpoint.
 

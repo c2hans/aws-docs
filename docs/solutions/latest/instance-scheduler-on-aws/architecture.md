@@ -14,7 +14,7 @@ Deploying this solution deploys the following components in your AWS account.
 
  **Instance Scheduler on the AWS Cloud**
 
-![InstanceScheduler architecture](http://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-aws/images/InstanceScheduler-architecture.png)
+![InstanceScheduler architecture](https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-aws/images/InstanceScheduler-architecture.png)
 
 1. An [Amazon EventBridge Rule](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html) triggers the orchestration Lambda function at configurable intervals (default: every 5 minutes).
 

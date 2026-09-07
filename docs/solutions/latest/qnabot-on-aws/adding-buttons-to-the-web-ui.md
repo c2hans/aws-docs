@@ -28,7 +28,7 @@ You can add buttons to your chatbot’s answers to help guide your end user by s
 1. Use the web UI to ask: *"What is an Echo Show?"*
 
     **Choose a button to send the next question.**
-![image16](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image16.jpeg)
+![image16](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image16.jpeg)
 
 1. Choose one of the buttons to automatically send the next question to QnABot on AWS.
 **Note**

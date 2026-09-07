@@ -44,7 +44,7 @@ This pattern shows you how to automate the process of replicating, tracking, and
 
 The following diagram shows an architecture for using Step Functions to orchestrate scheduled, on-demand replication of RDS DB instances from a source account (account A) to a destination account (account B).
 
-![Replicating Amazon RDS DB instances across source and destination accounts by using Step Functions.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6310ad9b-1b1a-4a67-b684-ef605fef3e87/images/001550bb-cf6b-493d-9de9-0229a43753a1.png)
+![Replicating Amazon RDS DB instances across source and destination accounts by using Step Functions.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6310ad9b-1b1a-4a67-b684-ef605fef3e87/images/001550bb-cf6b-493d-9de9-0229a43753a1.png)
 
 In the source account (account A in the diagram), the Step Functions state machine performs the following:
 

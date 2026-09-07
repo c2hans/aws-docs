@@ -15,4 +15,4 @@ Instead of decomposing monoliths by business capabilities or services, the servi
 
 The following illustration shows how a monolith can be split into microservices that are managed, maintained, and delivered by individual teams.
 
-![Service by team pattern](http://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-decomposing-monoliths/images/guide-img/8e9fa68d-7532-4c4b-8c7b-74bc6afdb7b9/images/af89a9b9-fcea-4d13-b499-eb85e96bef73.png)
+![Service by team pattern](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-decomposing-monoliths/images/guide-img/8e9fa68d-7532-4c4b-8c7b-74bc6afdb7b9/images/af89a9b9-fcea-4d13-b499-eb85e96bef73.png)

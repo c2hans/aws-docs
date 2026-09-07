@@ -18,7 +18,7 @@ However, this approach requires either the application team or the cloud team to
 
 The following illustration describes an alternate approach to patching on-premises instances that uses the Systems Manager custom inventory option. This process is an extension of the automated patching solution that we described earlier for mutable Amazon EC2 instances.
 
-![Reference architecture and workflow for patching on-premises Amazon EC2 instances.](http://docs.aws.amazon.com/prescriptive-guidance/latest/automated-patching-mutable-instances-hybrid-cloud-aws-systems-manager/images/guide-img/9c36bc8c-880d-42f7-8b76-ddf8e3d52477/images/a9a0af8c-b23c-4d0d-8743-a3f0732ae568.png)
+![Reference architecture and workflow for patching on-premises Amazon EC2 instances.](https://docs.aws.amazon.com/prescriptive-guidance/latest/automated-patching-mutable-instances-hybrid-cloud-aws-systems-manager/images/guide-img/9c36bc8c-880d-42f7-8b76-ddf8e3d52477/images/a9a0af8c-b23c-4d0d-8743-a3f0732ae568.png)
 
 1. Instead of using tags, Systems Manager captures the patch information (patch groups and maintenance windows) from the on-premises managed instances through a custom inventory collection.
 

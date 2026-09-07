@@ -36,7 +36,7 @@ After migration, you can use the custom PostgreSQL code that is provided with th
 
 The following diagram shows a source Oracle table with CLOB data, and the equivalent PostgreSQL table in Aurora PostgreSQL-Compatible version 11.6.
 
-![Source CLOB table and equivalent target PostgreSQL table.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/55806ee7-6a9f-4058-9a47-a07de68223ca/images/79b9d4b9-6f20-4db5-8ca8-2a599769a498.png)
+![Source CLOB table and equivalent target PostgreSQL table.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/55806ee7-6a9f-4058-9a47-a07de68223ca/images/79b9d4b9-6f20-4db5-8ca8-2a599769a498.png)
 
 ## Tools
 <a name="migrate-oracle-clob-values-to-individual-rows-in-postgresql-on-aws-tools"></a>

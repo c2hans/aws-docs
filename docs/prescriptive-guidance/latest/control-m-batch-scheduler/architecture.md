@@ -13,7 +13,7 @@ Both modes include transaction managers, data mapping tools, screen and maps rea
 
 The following diagram shows workflow integration where Control-M is hosted on an Amazon EC2 instance. An Amazon Aurora database is used for maintaining the data required to manage and run batch jobs. The architecture is a Multi-Availability Zone (Multi-AZ) deployment for high availability. Applications' batch jobs and data are orchestrated in the AWS Replatform with Micro Focus runtime environment. The diagram shows both AWS Replatform with Micro Focus modes: fully managed and custom on Amazon EC2.
 
-![Diagram showing both configurations.](http://docs.aws.amazon.com/prescriptive-guidance/latest/control-m-batch-scheduler/images/guide-img/ca7d4793-feac-4eba-a6cd-6ca4d6395925/images/f868f8cf-4803-4508-8660-ca2bf1eee3f9.png)
+![Diagram showing both configurations.](https://docs.aws.amazon.com/prescriptive-guidance/latest/control-m-batch-scheduler/images/guide-img/ca7d4793-feac-4eba-a6cd-6ca4d6395925/images/f868f8cf-4803-4508-8660-ca2bf1eee3f9.png)
 
 The diagram shows the following resources:
 

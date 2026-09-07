@@ -61,7 +61,7 @@ The comprehensive coverage of these diverse personas within the GLOE framework i
 
 The GLOE framework provides a holistic and structured approach to managing the generative AI application development lifecycle. As shown in the following diagram, it operates as an iterative cycle that emphasizes continuous refinement based on data and feedback gathered from subsequent stages. This framework organizes the generative AI application lifecycle into three distinct yet interconnected stages: development (PoC and experimentation), preproduction (validation and staging), and production (deployment and continuous operations). Each stage is characterized by specific objectives, key activities, and operational considerations. All are designed to help you transition from an initial concept to a live, high-quality application., high-quality application. The following diagram shows the stages and key components of the GLOE framework.
 
-![The stages in the GLOE framework: development, preproduction, and production.](http://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-lifecycle-operational-excellence/images/guide-img/5b6a3e4a-ff13-48e9-83d7-177629049c97/images/8d81bb01-bb0c-4c29-a601-770340cce3e0.png)
+![The stages in the GLOE framework: development, preproduction, and production.](https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-lifecycle-operational-excellence/images/guide-img/5b6a3e4a-ff13-48e9-83d7-177629049c97/images/8d81bb01-bb0c-4c29-a601-770340cce3e0.png)
 
 ### Development stage
 <a name="development-stage.a891181e-f7da-5e22-bd72-8015ac686500"></a>

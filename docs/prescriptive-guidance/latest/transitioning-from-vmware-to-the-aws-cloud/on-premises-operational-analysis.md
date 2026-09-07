@@ -28,7 +28,7 @@ The following diagram shows a typical on-premises VMware environment and operati
   + Monitoring and logging
   + Security and compliance
 
-![Typical on-premises VMware environment.](http://docs.aws.amazon.com/prescriptive-guidance/latest/transitioning-from-vmware-to-the-aws-cloud/images/guide-img/fa2c0c2d-160c-453b-9ba1-4a8c54d378c9/images/cccd8eeb-40c7-4ce5-b899-ca0d7a6c936a.png)
+![Typical on-premises VMware environment.](https://docs.aws.amazon.com/prescriptive-guidance/latest/transitioning-from-vmware-to-the-aws-cloud/images/guide-img/fa2c0c2d-160c-453b-9ba1-4a8c54d378c9/images/cccd8eeb-40c7-4ce5-b899-ca0d7a6c936a.png)
 
 These functions can be categorized into multiple workstreams and tasks, each designed to support business operations within on-premises VMware infrastructures. Following are the common VMware operational workstreams and related tasks:
 + **Backup management** – Implement comprehensive backup and recovery operations. Tasks include daily virtual machine (VM) backups for critical systems, backup monitoring and troubleshooting, and retention policy management. Also includes the establishment of restore procedures with defined recovery point objectives (RPOs) for different workloads.

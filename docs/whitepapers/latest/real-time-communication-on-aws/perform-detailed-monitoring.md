@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/real-time-communicati
 
  End users of real-time voice and video applications expect the same level of performance as they achieve with traditional telephony services. So, when they experience issues with an application, it ends up hurting the provider’s reputation. To be proactive rather than reactive, it is imperative that detailed monitoring be deployed at every part of the system that serves end users.
 
-![A diagram depicting using SIPp to monitor VoIP infrastructure .](http://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/images/using-sipp-to-monitor-voip.png)
+![A diagram depicting using SIPp to monitor VoIP infrastructure .](https://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/images/using-sipp-to-monitor-voip.png)
 
  Many open source tools, such as [iPerf](https://iperf.fr/) or [SIPp](http://sipp.sourceforge.net/), and [VOIPMonitor](http://www.voipmonitor.org), are available to use in monitoring SIP/RTP traffic. In the preceding example, nodes running SIP in client and server modes are measuring SIP metrics such as Successful Calls and SIP Retransmits between all four US AWS Regions. These metrics can then be exported into Amazon CloudWatch using a custom script. Using CloudWatch, customers can create alarms on these custom metrics based on a certain threshold value. Automatic or manual remediation actions can then be taken based on the state of these CloudWatch alarms.
 

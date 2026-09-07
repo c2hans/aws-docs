@@ -9,7 +9,7 @@ You can create an AWS KMS keys (KMS key) with key material that you supply.
 
 A KMS key is a logical representation of a data key. The metadata for a KMS key includes the ID of the key material used to perform cryptographic operations. When you [create a KMS key](create-keys.md), by default, AWS KMS generates the key material for that KMS key. But you can create a KMS key without key material and then import your own key material into that KMS key, a feature often known as "bring your own key" (BYOK).
 
-![Key icon that highlights the key material that it represents.](http://docs.aws.amazon.com/kms/latest/developerguide/images/import-key.png)
+![Key icon that highlights the key material that it represents.](https://docs.aws.amazon.com/kms/latest/developerguide/images/import-key.png)
 
 **Note**
 AWS KMS does not support decrypting any AWS KMS ciphertext encrypted by a symmetric encryption KMS key outside of AWS KMS, even if the ciphertext was encrypted under a KMS key with imported key material. AWS KMS does not publish the ciphertext format this task requires, and the format might change without notice.

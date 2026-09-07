@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/monitoring-river-leve
 
  The Pycom LoPy4 ESP32 development board used for this demonstration has the following physical connectivity, as outlined in this schematics diagram:
 
-![Diagram showing ESP32 development board schematics](http://docs.aws.amazon.com/whitepapers/latest/monitoring-river-levels-using-lorawan/images/esp32-development-board-schematics.png)
+![Diagram showing ESP32 development board schematics](https://docs.aws.amazon.com/whitepapers/latest/monitoring-river-levels-using-lorawan/images/esp32-development-board-schematics.png)
 
 **Note**
  In this example, a voltage divider is used on the output of the HC-SR04’s echo pin to convert the 5V to 3.3V.

@@ -9,7 +9,7 @@ The GAIA Chatbot Starter Package deploys a production-ready GenAI chatbot backen
 
  **GAIA Chatbot starter kit architecture**
 
-![GAIA Chatbot starter kit — GenAI backend with Cognito auth and AppSync streaming.](http://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/ai-gaia.png)
+![GAIA Chatbot starter kit — GenAI backend with Cognito auth and AppSync streaming.](https://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/ai-gaia.png)
 
 This architecture is particularly effective when:
 

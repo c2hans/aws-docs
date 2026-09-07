@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 
 The following diagram builds on the baseline AWS SRA to illustrate the architecture where perimeter services are deployed into the Network account**.**
 
-![Deploying perimeter services into Network account.](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-perimeter-security/images/guide-img/36fc75a2-a16a-4cf6-bea6-724dfeddb825/images/2dfbda14-546d-4e33-acfc-90d010886640.png)
+![Deploying perimeter services into Network account.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-perimeter-security/images/guide-img/36fc75a2-a16a-4cf6-bea6-724dfeddb825/images/2dfbda14-546d-4e33-acfc-90d010886640.png)
 
 Deploying the perimeter services into a single Network account has several benefits:
 + This pattern supports use cases such as highly regulated industries, where you want to restrict the administration of perimeter services across your organization to a single specialized team.

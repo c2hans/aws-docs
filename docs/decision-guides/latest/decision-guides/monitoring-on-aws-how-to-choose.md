@@ -26,14 +26,14 @@ AWS offers a range of tools and services for both monitoring and observability. 
 
 This guide will help you select the AWS monitoring and observability services and tools that are the best fit for your needs and your organization.
 
-[![AWS Videos](http://img.youtube.com/vi/7PQv9eYCJW8?start=104&end=338/0.jpg)](http://www.youtube.com/watch?v=7PQv9eYCJW8?start=104&end=338)
+[![AWS Videos](https://img.youtube.com/vi/7PQv9eYCJW8?start=104&end=338/0.jpg)](https://www.youtube.com/watch?v=7PQv9eYCJW8?start=104&end=338)
 
 ## Understand
 <a name="understand"></a>
 
 To choose the right AWS monitoring and observability tools for your needs, it may help to first understand the range of options available to you and how the main services fit together.
 
-![Diagram showing the available options for AWS monitoring and observability](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/monitoring-and-observability.png)
+![Diagram showing the available options for AWS monitoring and observability](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/monitoring-and-observability.png)
 
 Start with your three key data sources: logs, metrics, and traces. The data from those sources can be consumed using Amazon CloudWatch, AWS X-Ray, or AWS Distro for OpenTelemetry (ADOT) agents.
 

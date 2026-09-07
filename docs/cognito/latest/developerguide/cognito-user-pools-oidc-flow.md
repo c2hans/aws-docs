@@ -43,7 +43,7 @@ When your user signs in to your application using an OIDC IdP, your user pool co
 
 1. Your application processes the user pool tokens and signs the user in.
 
-![User pool OIDC IdP authentication flow](http://docs.aws.amazon.com/cognito/latest/developerguide/images/flow-cup-oidc-endpoints.png)
+![User pool OIDC IdP authentication flow](https://docs.aws.amazon.com/cognito/latest/developerguide/images/flow-cup-oidc-endpoints.png)
 
 **Note**
 Amazon Cognito cancels authentication requests that do not complete within 5 minutes, and redirects the user to managed login. The page displays a `Something went wrong` error message.

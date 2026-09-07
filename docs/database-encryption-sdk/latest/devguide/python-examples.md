@@ -201,4 +201,4 @@ The following image shows part of an example encrypted and signed table item.
 
 The encrypted attribute values are binary data. The names and values of the primary key attributes (`partition_attribute` and `sort_attribute`) and the `test` attribute remain in plaintext. The output also shows the attribute that contains the signature (`*amzn-ddb-map-sig*`) and the [materials description attribute](DDBEC-legacy-concepts.md#legacy-material-description) (`*amzn-ddb-map-desc*`).
 
-![An excerpt of an encrypted and signed item](http://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/images/encrypted-item-closeup.png)
+![An excerpt of an encrypted and signed item](https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/images/encrypted-item-closeup.png)

@@ -14,7 +14,7 @@ Deploying this solution with the default parameters deploys the following compon
 
  **Data flows from test vehicles through ingestion extraction, and analytics. Full text description follows**
 
-![scene intelligence with rosbag on aws](http://docs.aws.amazon.com/solutions/latest/scene-intelligence-with-rosbag-on-aws/images/scene-intelligence-with-rosbag-on-aws.png)
+![scene intelligence with rosbag on aws](https://docs.aws.amazon.com/solutions/latest/scene-intelligence-with-rosbag-on-aws/images/scene-intelligence-with-rosbag-on-aws.png)
 
 The high-level process flow for the solution components deployed with the CloudFormation template is as follows:
 

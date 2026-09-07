@@ -11,4 +11,4 @@ The [appendix](appendix.md) to this guide provides sample queries for Oracle and
 
 Continue iterating through the remaining list, and reprioritize the database candidates based on the object count and database size, in ascending order for both, to prioritize database candidates for [step 3](sct.md). Format the list as a comma-separated value (CSV) file in preparation for the next step.
 
-![Criteria for filtering databases based on PL/SQL object counts](http://docs.aws.amazon.com/prescriptive-guidance/latest/database-refactor-prioritization/images/guide-img/d514dcdf-d1f9-43a2-ac0b-46dc109cf9b2/images/4bf9d277-b941-4be3-9ad3-571aeb904ff4.png)
+![Criteria for filtering databases based on PL/SQL object counts](https://docs.aws.amazon.com/prescriptive-guidance/latest/database-refactor-prioritization/images/guide-img/d514dcdf-d1f9-43a2-ac0b-46dc109cf9b2/images/4bf9d277-b941-4be3-9ad3-571aeb904ff4.png)

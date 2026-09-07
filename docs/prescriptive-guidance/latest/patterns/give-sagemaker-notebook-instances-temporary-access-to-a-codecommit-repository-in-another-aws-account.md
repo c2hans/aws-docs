@@ -31,7 +31,7 @@ You can apply a similar procedure to grant other IAM identities cross-account ac
 
 The following diagram shows an example workflow for granting a SageMaker notebook instance and users in one AWS account cross-account access to a CodeCommit repository:
 
-![Workflow for cross-account access to CodeCommit](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/54d0fdb3-6d25-4433-9f67-c87846633d61/images/97a799af-ce88-4495-a61c-d0cd22493ce2.png)
+![Workflow for cross-account access to CodeCommit](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/54d0fdb3-6d25-4433-9f67-c87846633d61/images/97a799af-ce88-4495-a61c-d0cd22493ce2.png)
 
 The diagram shows the following workflow:
 

@@ -39,7 +39,7 @@ When you create a scaling plan from the console, it helps you find your scalable
    + Choose **Choose EC2 Auto Scaling groups**, and then choose one or more Auto Scaling groups.
 **Note**
 For an introductory tutorial, choose **Choose EC2 Auto Scaling groups**, and then choose the Auto Scaling group you created.
-![Console options for finding scalable resources.](http://docs.aws.amazon.com/autoscaling/plans/userguide/images/aws-as-gs-choose-asg.PNG)
+![Console options for finding scalable resources.](https://docs.aws.amazon.com/autoscaling/plans/userguide/images/aws-as-gs-choose-asg.PNG)
 
 1. Choose **Next** to continue with the scaling plan creation process.
 

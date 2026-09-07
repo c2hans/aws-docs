@@ -29,14 +29,14 @@ For effective program governance, follow the best practices described in this se
 
 Establish a high-level structure that depicts reporting relationships and high-level responsibilities, as shown in the following example.
 
-![Example OCA team structure and leadership alignment checkpoints.](http://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-mobilize-team/images/guide-img/92b6ddba-987c-49cf-bc18-ab8ec8f36978/images/db7ad92a-0e4b-4277-b774-d50a4d91fda4.png)
+![Example OCA team structure and leadership alignment checkpoints.](https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-mobilize-team/images/guide-img/92b6ddba-987c-49cf-bc18-ab8ec8f36978/images/db7ad92a-0e4b-4277-b774-d50a4d91fda4.png)
 
 ### Define roles for the OCA team
 <a name="define-roles-for-the-oca-team.2c359bec-d5a9-5805-8c38-126e6dae51cc"></a>
 
 Define the roles of the organizational change acceleration team. Provide the high-level responsibilities for each role, as shown in the following example.
 
-![Example OCA role descriptions.](http://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-mobilize-team/images/guide-img/92b6ddba-987c-49cf-bc18-ab8ec8f36978/images/e7e24091-21bf-4a17-a623-5e8cba8b61d7.png)
+![Example OCA role descriptions.](https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-mobilize-team/images/guide-img/92b6ddba-987c-49cf-bc18-ab8ec8f36978/images/e7e24091-21bf-4a17-a623-5e8cba8b61d7.png)
 
 These roles and responsibilities might include the following.
 
@@ -54,7 +54,7 @@ Additional OCA SMEs:
 
 Define the high-level responsibilities of relevant OCA roles in your organization, as in the following example.
 
-![Example customer job descriptions and resources for an OCA project.](http://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-mobilize-team/images/guide-img/92b6ddba-987c-49cf-bc18-ab8ec8f36978/images/8a795a56-1951-404f-ac98-a823b473ea11.png)
+![Example customer job descriptions and resources for an OCA project.](https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-mobilize-team/images/guide-img/92b6ddba-987c-49cf-bc18-ab8ec8f36978/images/8a795a56-1951-404f-ac98-a823b473ea11.png)
 
 These roles and time commitments might include the following.
 
@@ -123,7 +123,7 @@ These roles and time commitments might include the following.
 
 Develop a strategy for the ongoing identification of people and change risks that have the potential to impede the cloud strategy and value realization. This strategy should have the capability for broad-based inputs of potential risks as well as agile mechanisms for risk analysis, planning, mitigation, and tracking. The following diagram provides an example.
 
-![Change risk assessments and targeted change solutions for an OCA project.](http://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-mobilize-team/images/guide-img/92b6ddba-987c-49cf-bc18-ab8ec8f36978/images/de3f9d9a-b382-4ca9-8fc8-e15cedb1f5b6.png)
+![Change risk assessments and targeted change solutions for an OCA project.](https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-mobilize-team/images/guide-img/92b6ddba-987c-49cf-bc18-ab8ec8f36978/images/de3f9d9a-b382-4ca9-8fc8-e15cedb1f5b6.png)
 
 The objective of the risk mitigation strategy and plan is to ensure a seamless process to manage status, issues, and escalations and resolve conflicts in a timely manner.
 
@@ -134,7 +134,7 @@ The change risk assessments guide the change activities and detailed change plan
 
 Lastly, define the specific accountabilities and responsibilities for key organizational change acceleration capabilities for both the customer and AWS. Here's an example responsible, accountable, consulted, informed (RACI) matrix.
 
-![Example RACI matrix for an OCA project.](http://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-mobilize-team/images/guide-img/92b6ddba-987c-49cf-bc18-ab8ec8f36978/images/b22cf2e0-3fd7-4462-945e-80f990235cee.png)
+![Example RACI matrix for an OCA project.](https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-mobilize-team/images/guide-img/92b6ddba-987c-49cf-bc18-ab8ec8f36978/images/b22cf2e0-3fd7-4462-945e-80f990235cee.png)
 
 ## FAQ
 <a name="governance-faq"></a>

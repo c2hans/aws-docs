@@ -41,7 +41,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/development-and-test-
 
  An Elastic IP address provides a static endpoint to an Amazon EC2 instance, and can be used in combination with DNS (for example, behind a DNS [CNAME](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/ResourceRecordTypes.html#CNAMEFormat)). This helps teams to access their hosted services, such as the project management tool, in a consistent way, even if infrastructure is changed underneath; for example, when scaling up or down, or when a replacement instance is provisioned.
 
-![A diagram depicting An elastic IP address that provides a static endpoint to an Amazon EC2 instance .](http://docs.aws.amazon.com/whitepapers/latest/development-and-test-on-aws/images/elastic-ip-address.png)
+![A diagram depicting An elastic IP address that provides a static endpoint to an Amazon EC2 instance .](https://docs.aws.amazon.com/whitepapers/latest/development-and-test-on-aws/images/elastic-ip-address.png)
 
 **Note**
  : For even quicker and easier deployment, many project management tools are available from the [AWS Marketplace](https://aws.amazon.com/marketplace/b/2649274011/) or as [Amazon Machine Images](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html).
@@ -50,7 +50,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/development-and-test-
 
  Alternatively, you can create a new web application server from the AMI on a more powerful Amazon EC2 instance type, and replace the previous server. You can use horizontal scaling by using [Elastic Load Balancing](https://docs.aws.amazon.com/elasticloadbalancing/), adding more instances to the system by using [AWS Auto Scaling](https://aws.amazon.com/autoscaling/). In this case, as you have more than one node, you can use Elastic Load Balancing to distribute the load across all application nodes. Amazon RDS DB instances can scale compute and memory resources with a few clicks on the [AWS Management Console](https://aws.amazon.com/console/).
 
-![A diagram showing Elastic Load Balancing being used to distribute the load across all application nodes.](http://docs.aws.amazon.com/whitepapers/latest/development-and-test-on-aws/images/elastic-load-balancing.png)
+![A diagram showing Elastic Load Balancing being used to distribute the load across all application nodes.](https://docs.aws.amazon.com/whitepapers/latest/development-and-test-on-aws/images/elastic-load-balancing.png)
 
  When you want to quickly set up a software development project on AWS and don’t want to configure custom project management tools on EC2, you can use AWS CodeStar. AWS CodeStar comes with a unified project dashboard and integration with [Atlassian JIRA](https://www.atlassian.com/software/jira) software, a third-party issue tracking and project management tool. With the AWS CodeStar project dashboard, you can easily track your entire software development process, from a backlog work item to production code deployment.
 
@@ -73,7 +73,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/development-and-test-
 
  The following diagram shows a deployment where development environments are running on Amazon EC2 instances within an Amazon VPC. Those instances are remotely accessed from an enterprise network, through a secure VPN connection.
 
-![A diagram depicting development environments running on Amazon EC2 instances within an Amazon VPC .](http://docs.aws.amazon.com/whitepapers/latest/development-and-test-on-aws/images/dev-environments.png)
+![A diagram depicting development environments running on Amazon EC2 instances within an Amazon VPC .](https://docs.aws.amazon.com/whitepapers/latest/development-and-test-on-aws/images/dev-environments.png)
 
 ### Stopping vs. ending Amazon EC2 instances
 <a name="stopping-vs.-ending-amazon-ec2-instances"></a>

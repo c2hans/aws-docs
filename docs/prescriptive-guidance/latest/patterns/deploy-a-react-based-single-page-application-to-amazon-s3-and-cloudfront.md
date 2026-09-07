@@ -26,7 +26,7 @@ This pattern provides a step-by-step approach to coding and hosting an SPA thatâ
 ## Architecture
 <a name="deploy-a-react-based-single-page-application-to-amazon-s3-and-cloudfront-architecture"></a>
 
-![Architecture for deploying a React-based SPA to Amazon S3 and CloudFront](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/970a9d13-e8a2-44ac-aca5-a066e4be60e8/images/96061e05-8ac8-446e-b1da-baa6fc1cc7b6.png)
+![Architecture for deploying a React-based SPA to Amazon S3 and CloudFront](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/970a9d13-e8a2-44ac-aca5-a066e4be60e8/images/96061e05-8ac8-446e-b1da-baa6fc1cc7b6.png)
 
 This architecture is automatically deployed by using AWS CloudFormation (infrastructure as code). It uses Regional services such as Amazon S3 to store the static assets and Amazon CloudFront with Amazon API Gateway to expose Regional API (REST) endpoints. The application logs are collected by using Amazon CloudWatch. All AWS API calls are audited in AWS CloudTrail. All security configuration (for example, identities and permissions) is managed in AWS Identity and Access Management (IAM). Static content is delivered through the Amazon CloudFront content delivery network (CDN), and DNS queries are handled by Amazon RouteÂ 53.
 

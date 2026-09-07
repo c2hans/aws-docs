@@ -13,6 +13,6 @@ The telecom-specific test automation framework can be integrated in the code pip
 
 The complexity of calling external REST APIs is modeled using AWS step functions, which allow standard constructs to invoke parallel flows, wait for results, branch based on conditions, and integrate REST API with AWS CodePipeline.
 
-![A diagram depicting testing flow.](http://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_on_aws/images/cicd_5g15.png)
+![A diagram depicting testing flow.](https://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_on_aws/images/cicd_5g15.png)
 
 *Testing flow*

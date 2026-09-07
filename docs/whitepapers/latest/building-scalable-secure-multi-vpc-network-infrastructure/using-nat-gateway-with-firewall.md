@@ -9,7 +9,7 @@ If you want to inspect and filter your outbound traffic, you can incorporate AWS
 
 In the centralized egress architecture with inspection, the AWS Network Firewall endpoint is a default route table target in the transit gateway attachments subnet route table for the egress VPC. Traffic between spoke VPCs and the internet is inspected using AWS Network Firewall as shown in the following diagram.
 
-![A diagram depicting centralized egress with AWS Network Firewall and NAT gateway (route table design)](http://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/centralized-egress-rt.png)
+![A diagram depicting centralized egress with AWS Network Firewall and NAT gateway (route table design)](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/centralized-egress-rt.png)
 
 For centralized deployment model with Transit Gateway, AWS recommends deploying AWS Network Firewall endpoints in multiple Availability Zones. There should be one firewall endpoint in each Availability Zone the customer is running workloads in, as shown in the preceding diagram. As a best practice, the firewall subnet should not contain any other traffic because AWS Network Firewall is not able to inspect traffic from sources or destinations within a firewall subnet.
 

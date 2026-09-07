@@ -38,7 +38,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/scaling-t
 
  When you enable dual-stack mode on Network Load Balancers, and have the IPv4 targets, Network Load Balancing does the IPv6 to IPv4 conversion and therefore, the source IP is not preserved. However, the load balancer will add the IPv6 source IP to the proxy protocol (PPv2) header and send it to the targets. In this case, the targets need to parse the PPv2 header to obtain the actual source IP of the client.
 
-![This is a diagram that displays a dual-stack IPv4/IPv6 internet-facing Network Load Balancer.](http://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/images/dual-stack-ipv4ipv6-internet-facing-network-load-balancer.png)
+![This is a diagram that displays a dual-stack IPv4/IPv6 internet-facing Network Load Balancer.](https://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/images/dual-stack-ipv4ipv6-internet-facing-network-load-balancer.png)
 
  For the Network Load Balancer with IPv6 targets, source IP preservation is enabled for IPv6 connections to the dual stack load balancer with IPv6 targets. Client IP preservation has no effect on traffic converted from IPv6 to IPv4 or IPv4 to IPv6. The source IP of this type of traffic is always the private IP address of the Network Load Balancer. The following table summarizes the protocol – IPv4 or IPv6 – used by NLB clients and for target connectivity, and the Client IP visibility the targets have, based on client IP preservation settings:
 
@@ -84,4 +84,4 @@ AWS Global Accelerator supports IPv6 dual-stack implementations.
 
 1.  As soon as the first byte arrives from the origin, CloudFront begins to respond the files to the viewer. CloudFront also adds the image file to the cache in the edge location based on the cache headers.
 
-![This is a diagram that illustrates Amazon CloudFront dual-stack IPv4/IPv6 support.](http://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/images/amazon-cloudfront-dual-stack-ipv4ipv6-support.png)
+![This is a diagram that illustrates Amazon CloudFront dual-stack IPv4/IPv6 support.](https://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/images/amazon-cloudfront-dual-stack-ipv4ipv6-support.png)

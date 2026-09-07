@@ -14,7 +14,7 @@ The following topics explain how to use the different configuration layouts. The
 
 The following image shows the configuration and the available locations for the speaker tile.
 
-![Image showing a large video tile in the center of a window and a small tile in the upper-left.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/compositing-active-speaker-4x.png)
+![Image showing a large video tile in the center of a window and a small tile in the upper-left.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/compositing-active-speaker-4x.png)
 
 The following example shows how to implement the `ActiveSpeakerOnly` layout programmatically. In this case, the presenter tile appears in the upper-left corner.
 
@@ -50,7 +50,7 @@ The following example shows how to implement the `ActiveSpeakerOnly` layout prog
 
 `PresenterOnlyConfiguration` displays the content share and only the presenter’s video regardless of who talks. The following image shows the configuration.
 
-![Image of four screens. Each screen has a share window in the middle and a video tile in each corner.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/compositing-presenter-only-4x.png)
+![Image of four screens. Each screen has a share window in the middle and a video tile in each corner.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/compositing-presenter-only-4x.png)
 
 The following example shows how to implement the layout programmatically with the presenter at top-right.
 
@@ -88,7 +88,7 @@ The following example shows how to implement the layout programmatically with th
 
 The following image shows the tiles below the content share stream.
 
-![Image showing a large central tile and 4 smaller tiles in a line below.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/compositing-horizontal-bottom.png)
+![Image showing a large central tile and 4 smaller tiles in a line below.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/compositing-horizontal-bottom.png)
 
 The following example shows how to implement a horizontal layout programmatically. In this case, the layout orders the tiles by `SpeakerSequence` and places them below the screen share. The layout allows a maximum of four tiles and applies a 16/9 aspect ratio.
 
@@ -148,7 +148,7 @@ The following example shows how to implement a horizontal layout programmaticall
 
 `VerticalLayoutConfiguration` displays the content share and the four most recent videos stacked on the right. Presenters always appear on top. Other attendees appear in the order dictated by `TileOrder`.
 
-![Image showing a large video tile in the center of a window and 4 smaller tiles stacked on the right.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/grid-vertical.png)
+![Image showing a large video tile in the center of a window and 4 smaller tiles stacked on the right.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/grid-vertical.png)
 
 The following example shows how to implement the vertical layout programmatically. In this case, the layout orders tiles by JoinSequence and places them to the right of the screen share. The layout allows a maximum of four tiles and applies a 16/9 aspect ratio.
 

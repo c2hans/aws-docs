@@ -50,7 +50,7 @@ To get encryption materials without caching:
 
 1. The AWS Encryption SDK uses the plaintext data key to encrypt the data. It stores the encrypted data and encrypted data keys in an [encrypted message](concepts.md#message), which it returns to the user.
 
-![Encrypt data without caching](http://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/images/encrypt-workflow-no-cache.png)
+![Encrypt data without caching](https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/images/encrypt-workflow-no-cache.png)
 
 ### Encrypt data with caching
 <a name="workflow-with-cache"></a>
@@ -79,7 +79,7 @@ To get encryption materials with data key caching:
 
 1. The AWS Encryption SDK uses the plaintext data key to encrypt the data. It stores the encrypted data and encrypted data keys in an [encrypted message](concepts.md#message), which it returns to the user.
 
-![Encrypt data with data key caching](http://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/images/encrypt-workflow-with-cache.png)
+![Encrypt data with data key caching](https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/images/encrypt-workflow-with-cache.png)
 
 ## Creating a cryptographic materials cache
 <a name="simplecache"></a>

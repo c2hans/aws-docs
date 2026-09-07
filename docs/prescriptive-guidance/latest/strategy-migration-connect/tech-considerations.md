@@ -27,16 +27,16 @@ You can use NGN backend repointing or number porting to port phone numbers.
 
 *NGN backend repointing* – Perform a backend repoint of the frontend NGN number to the inbound number (DDI) hosted on Connect Customer, as shown in the following diagram. This does not require any public-facing number changes and is typically managed as a service request ticket to the NGN carrier provider. Repointing can be scheduled for a specific date and time.
 
-![NGN backend repointing](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/images/guide-img/c8027e22-fcd9-43b3-b8a7-234ec8eb0644/images/d40b39c7-f86e-48ed-8be2-575306f99f9f.png)
+![NGN backend repointing](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/images/guide-img/c8027e22-fcd9-43b3-b8a7-234ec8eb0644/images/d40b39c7-f86e-48ed-8be2-575306f99f9f.png)
 
 *Number porting* – This process consists of two stages:
 + Number forwarding – This optional step, illustrated in the following diagram, directs traffic from the old platform to the new platform without changing the public-facing number. You can complete this step before your scheduled number porting date. This expedites the migration of agents onto the new platform in parallel with the number porting process. It also allows for rapid rollback (which depends on a relatively simple change to call forwarding rules) without any dependencies on a carrier. However, we recommend not leaving number forwarding in place for a long period of time, because it increases call charges (you pay for inbound traffic on DDI-1, outbound forwarding, and inbound traffic on the new DDI-2) and consumes infrastructure capacity (each inbound call also consumes an outbound circuit for the forwarding path).
 
-![Number forwarding as first step in porting call center numbers](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/images/guide-img/c8027e22-fcd9-43b3-b8a7-234ec8eb0644/images/216b6060-dcd9-4457-a9d4-ccde4a74626e.png)
+![Number forwarding as first step in porting call center numbers](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/images/guide-img/c8027e22-fcd9-43b3-b8a7-234ec8eb0644/images/216b6060-dcd9-4457-a9d4-ccde4a74626e.png)
 
 + Completion of number porting – On an agreed date and time, the carrier for DDI-1 ports the number to AWS, so it becomes available for Connect Customer to use, as illustrated in the following diagram. You can then assign the number to user journeys or functions, and manage it as if it were a natively sourced DDI in AWS. This simplifies billing and provides flexibility, because you can manage telephone numbers in the Connect Customer console instead of relying on a third-party carrier to process service requests.
 
-![Completion of number porting for call center migrations](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/images/guide-img/c8027e22-fcd9-43b3-b8a7-234ec8eb0644/images/777abc21-38fd-4e22-9679-896a9033d56e.png)
+![Completion of number porting for call center migrations](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/images/guide-img/c8027e22-fcd9-43b3-b8a7-234ec8eb0644/images/777abc21-38fd-4e22-9679-896a9033d56e.png)
 
 **Transferring calls between other platforms and Amazon Connect **–** **Organizations often migrate agents to Connect Customer in groups based on line of business, job type, or other criteria. During a period of time, agent groups on other platforms are progressively migrated to Connect Customer. Depending on the number and size of the groups, the migration phase might take several months, and teams that are spread across different platforms might have to transfer calls to each other during this period.
 

@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
 
 Enable your developers and operations teams to innovate faster, while ensuring the quality of application and infrastructure updates. The capabilities within this area enable you to build, deploy, and operate, workloads with ease in the cloud with developer experience and tools capabilities.
 
-![A chart showing which capabilities fall under each category.](http://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/images/operations-category.png)
+![A chart showing which capabilities fall under each category.](https://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/images/operations-category.png)
 
  Operations capabilities include:
 +  **Observability** enables you to gather and analyze operational data about system and application activities. This includes the analysis of data to identify anomalies, indicators of compromise, performance, and configuration changes.

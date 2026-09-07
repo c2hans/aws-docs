@@ -18,7 +18,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-enterprise
 
  The launched serverless services include, but are not limited to, Amazon API Gateway (2015), Amazon EventBridge (2019), and Amazon Aurora Serverless v2 (2020). The pace of innovation has not stopped for individual services, as Lambda has had more than [100 major feature releases since its launch](https://docs.aws.amazon.com/lambda/latest/dg/lambda-releases.html). The following figure illustrates a subset of the components in the AWS serverless platform and their relationships.
 
-![Diagram showing AWS serverless platform components](http://docs.aws.amazon.com/whitepapers/latest/optimizing-enterprise-economics-with-serverless/images/serverless-components.png)
+![Diagram showing AWS serverless platform components](https://docs.aws.amazon.com/whitepapers/latest/optimizing-enterprise-economics-with-serverless/images/serverless-components.png)
 
  Serverless offerings from AWS consist of services that span across all infrastructure layers, including compute, storage, and orchestration. In addition, AWS provides tools needed to author, build, deploy, and diagnose serverless architectures.
 

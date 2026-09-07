@@ -121,7 +121,7 @@ autoscalingGroups:
 ## API Priority and Fairness
 <a name="_api_priority_and_fairness"></a>
 
-![APF](http://docs.aws.amazon.com/eks/latest/best-practices/images/scalability/APF.jpg)
+![APF](https://docs.aws.amazon.com/eks/latest/best-practices/images/scalability/APF.jpg)
 
 ### Overview
 <a name="_overview"></a>

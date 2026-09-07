@@ -16,7 +16,7 @@ The initial evaluation should focus on your transformation requirements. If you 
 
 The following diagram illustrates the two major approaches to data migration, which run in parallel.
 
-![Two parallel approaches when migrating from Solr to OpenSearch.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-solr-opensearch/images/guide-img/20cfd7ab-1afd-4038-9280-20666ff596e1/images/3c835e1a-ade8-4518-ae7c-a3d3a2f85e89.png)
+![Two parallel approaches when migrating from Solr to OpenSearch.](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-solr-opensearch/images/guide-img/20cfd7ab-1afd-4038-9280-20666ff596e1/images/3c835e1a-ade8-4518-ae7c-a3d3a2f85e89.png)
 
 1. **Live data migration** follows a  path from 1, to 3, 5, and 7 in the diagram. It captures real-time change data from various sources and ingests it into OpenSearch through ETL solutions.
 

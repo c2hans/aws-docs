@@ -38,7 +38,7 @@ This pattern provides the following benefits:
 
 This pattern implements the following architecture, which provides the complete infrastructure for the database migration process.
 
-![CI/CD pipeline architecture for migrating an on-premises SQL Server database to Amazon RDS on AWS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/87845d9f-8e6e-4c51-b9ee-9e7833671d05/images/a1e95458-419a-4de9-85ef-b17d8340700a.png)
+![CI/CD pipeline architecture for migrating an on-premises SQL Server database to Amazon RDS on AWS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/87845d9f-8e6e-4c51-b9ee-9e7833671d05/images/a1e95458-419a-4de9-85ef-b17d8340700a.png)
 
 In this architecture:
 + The source database is a SQL Server database that is on premises, on a virtual machine (VM), or hosted by another cloud provider. The diagram assumes that the source database is in an on-premises data center.
@@ -48,7 +48,7 @@ In this architecture:
 
 The following diagram shows the infrastructure set up with different levels of the database migration process, which involves provisioning, AWS DMS setup, and validation.
 
-![CI/CD pipeline details of the migration process from on premises to AWS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/87845d9f-8e6e-4c51-b9ee-9e7833671d05/images/3aca17e5-6fd7-4317-b578-ab5e485c6efb.png)
+![CI/CD pipeline details of the migration process from on premises to AWS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/87845d9f-8e6e-4c51-b9ee-9e7833671d05/images/3aca17e5-6fd7-4317-b578-ab5e485c6efb.png)
 
 In this process:
 + The validation pipeline validates all checks. The integrated pipeline moves to the next step when all necessary validations are complete.

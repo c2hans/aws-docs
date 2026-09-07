@@ -9,4 +9,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfe
 
  The following genomics reference architecture describes the AWS services used in this paper to ingest, store, archive, analyze, prepare, and interpret genomics data to gain insights and make predictions.
 
-![Genomics data transfer, analytics, and machine learning reference architecture](http://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfer-analytics-and-machine-learning/images/image8.png)
+![Genomics data transfer, analytics, and machine learning reference architecture](https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfer-analytics-and-machine-learning/images/image8.png)

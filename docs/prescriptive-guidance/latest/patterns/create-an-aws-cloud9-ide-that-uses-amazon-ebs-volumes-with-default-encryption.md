@@ -32,7 +32,7 @@ You don't need to create the service-linked role for AWS Cloud9. When you create
 ## Architecture
 <a name="create-an-aws-cloud9-ide-that-uses-amazon-ebs-volumes-with-default-encryption-architecture"></a>
 
-![Using an AWS Cloud9 IDE to enforce the encryption of EBS volumes and snapshots.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/dd98fbb4-0949-4299-b701-bc857e13049c/images/6b22b8d1-75d9-4f06-b5d6-5fff7397f22d.png)
+![Using an AWS Cloud9 IDE to enforce the encryption of EBS volumes and snapshots.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/dd98fbb4-0949-4299-b701-bc857e13049c/images/6b22b8d1-75d9-4f06-b5d6-5fff7397f22d.png)
 
 **Technology stack**
 + AWS Cloud9

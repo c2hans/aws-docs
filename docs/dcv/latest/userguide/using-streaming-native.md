@@ -17,7 +17,7 @@ source_url: https://docs.aws.amazon.com/dcv/latest/userguide/using-streaming-nat
    + **Best quality**
 
 1. (Optional) For information about network performance, choose **Display Streaming Metrics**. For more information, see [Streaming metrics](#using-streaming-metrics-native).
-![Settings button located in the top-left corner of the interface.](http://docs.aws.amazon.com/dcv/latest/userguide/images/streaming.png)
+![Settings button located in the top-left corner of the interface.](https://docs.aws.amazon.com/dcv/latest/userguide/images/streaming.png)
 
 1. Close the **Streaming Mode** window.
 
@@ -35,7 +35,7 @@ source_url: https://docs.aws.amazon.com/dcv/latest/userguide/using-streaming-nat
    + **Best image quality**
 
 1. (Optional) For information about network performance, choose **Display Streaming Metrics**. For more information, see [Streaming metrics](#using-streaming-metrics-native).
-![Settings button located in the top-left corner of the interface.](http://docs.aws.amazon.com/dcv/latest/userguide/images/mac-preferences-display-stream.png)
+![Settings button located in the top-left corner of the interface.](https://docs.aws.amazon.com/dcv/latest/userguide/images/mac-preferences-display-stream.png)
 
 1. Close the **Preferences** window.
 
@@ -51,7 +51,7 @@ source_url: https://docs.aws.amazon.com/dcv/latest/userguide/using-streaming-nat
    + **Best image quality**
 
 1. (Optional) For information about network performance, choose **Display Streaming Metrics**. For more information, see [Streaming metrics](#using-streaming-metrics-native).
-![Settings button located in the top-left corner of the interface.](http://docs.aws.amazon.com/dcv/latest/userguide/images/linux-pref-display-stream.png)
+![Settings button located in the top-left corner of the interface.](https://docs.aws.amazon.com/dcv/latest/userguide/images/linux-pref-display-stream.png)
 
 1. Close the **Preferences** window.
 
@@ -70,4 +70,4 @@ Metrics are displayed for the current Amazon DCV session connection.
 
 The following image shows example streaming metric data.
 
-![example streaming metric data.](http://docs.aws.amazon.com/dcv/latest/userguide/images/metrics.png)
+![example streaming metric data.](https://docs.aws.amazon.com/dcv/latest/userguide/images/metrics.png)

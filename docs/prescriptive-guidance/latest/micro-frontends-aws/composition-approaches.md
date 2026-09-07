@@ -9,7 +9,7 @@ You can compose views of an application with client-side composition, edge-side 
 
 The following diagram shows how the composition happens at the client-side, edge-side, and server-side layers of a micro-frontend architecture.
 
-![Origin, CDN, and client having micro-frontends in client-side, edge-side, and server-side layers.](http://docs.aws.amazon.com/prescriptive-guidance/latest/micro-frontends-aws/images/guide-img/4cd7ea48-b17c-411c-a5b2-fa8a58f6a617/images/96be30ad-858f-4fdc-aee1-70f0d03bebfa.png)
+![Origin, CDN, and client having micro-frontends in client-side, edge-side, and server-side layers.](https://docs.aws.amazon.com/prescriptive-guidance/latest/micro-frontends-aws/images/guide-img/4cd7ea48-b17c-411c-a5b2-fa8a58f6a617/images/96be30ad-858f-4fdc-aee1-70f0d03bebfa.png)
 
 The client-side, edge-side and server-side layers are discussed in the following sections.
 
@@ -23,7 +23,7 @@ Dynamically load and append micro-frontends as Document Object Model (DOM) fragm
 
 The following diagram shows an example AWS architecture for serverless client-side composition.
 
-![Web app connects through CloudFront to the micro-frontend discovery service and Amazon S3.](http://docs.aws.amazon.com/prescriptive-guidance/latest/micro-frontends-aws/images/guide-img/4cd7ea48-b17c-411c-a5b2-fa8a58f6a617/images/9e5ef5c8-08cb-4f9f-a890-904399100237.png)
+![Web app connects through CloudFront to the micro-frontend discovery service and Amazon S3.](https://docs.aws.amazon.com/prescriptive-guidance/latest/micro-frontends-aws/images/guide-img/4cd7ea48-b17c-411c-a5b2-fa8a58f6a617/images/9e5ef5c8-08cb-4f9f-a890-904399100237.png)
 
 Client-side composition happens in the browser environment through a shell application. The diagram shows the following details:
 
@@ -55,7 +55,7 @@ Server-side composition requires an in-depth understanding of the server environ
 
 The following diagram shows server-side composition.
 
-![Server-side composition in seven steps.](http://docs.aws.amazon.com/prescriptive-guidance/latest/micro-frontends-aws/images/guide-img/4cd7ea48-b17c-411c-a5b2-fa8a58f6a617/images/5174e26b-de2c-4681-bb02-f4126b077794.png)
+![Server-side composition in seven steps.](https://docs.aws.amazon.com/prescriptive-guidance/latest/micro-frontends-aws/images/guide-img/4cd7ea48-b17c-411c-a5b2-fa8a58f6a617/images/5174e26b-de2c-4681-bb02-f4126b077794.png)
 
 The diagram includes the following components and processes:
 

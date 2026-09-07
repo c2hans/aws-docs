@@ -41,7 +41,7 @@ A Microsoft SQL Server database on an Amazon EC2 instance
 
 **Target architecture**
 
-![Replicate data from an on-premises corporate data center to AWS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a459eaef-c256-4691-a7ec-2304f634228c/images/d8d6cee7-f42c-4686-bf92-6e6d39adfb17.png)
+![Replicate data from an on-premises corporate data center to AWS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a459eaef-c256-4691-a7ec-2304f634228c/images/d8d6cee7-f42c-4686-bf92-6e6d39adfb17.png)
 
 This architecture uses AWS MGN to replicate data from an on-premises corporate data center to AWS. The diagram shows the data replication process, API communications, and the test and cutover phases.
 

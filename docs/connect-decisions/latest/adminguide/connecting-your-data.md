@@ -36,7 +36,7 @@ This is a onetime selection on first login only. Your responses provide addition
 
 1. If none of the predefined options apply, select **Other**.
 
-![](http://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-step1-select-industry.png)
+![](https://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-step1-select-industry.png)
 
 ### Step 2: Define Your Biggest Challenge
 <a name="connecting-your-data-step2-define-challenge"></a>
@@ -57,7 +57,7 @@ This is a onetime selection on first login only. Your responses provide addition
 | **Improve demand forecast accuracy** | Choose this if your primary challenge is creating more accurate forecasts for better planning decisions. | Baseline forecasting; Consensus planning; Forecast accuracy tracking |
 | **Both** | Choose this if you need to address both inventory optimization and demand forecast accuracy simultaneously. | All supply specific and demand specific features are enabled |
 
-![](http://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-step2-define-challenge.png)
+![](https://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-step2-define-challenge.png)
 
 ### Step 3: Choose Your Inventory Planning Approach
 <a name="connecting-your-data-step3-inventory-planning"></a>
@@ -75,7 +75,7 @@ This is a onetime selection on first login only. Your responses provide addition
 | **Generate inventory plans with Amazon Connect Decisions** | The system uses your historical sales and inventory data to create plans tailored to your business. | Organizations that do not have an existing planning solution or want to leverage AI generated plans from their historical data. |
 | **Bring in existing inventory projections or plans** | Upload your existing inventory plans or projections so you can use decisioning capabilities immediately. The system will help you upload and map your data. | Organizations that already have established planning processes and want to leverage monitoring, insight generation, and recommendation capabilities without changing their plan source. |
 
-![](http://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-step3-inventory-planning.png)
+![](https://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-step3-inventory-planning.png)
 
 ### Step 4: Choose Your Demand Planning Approach
 <a name="connecting-your-data-step4-demand-planning"></a>
@@ -97,27 +97,27 @@ This is a onetime selection on first login only. Your responses provide addition
 | **Generate demand forecasts with Amazon Connect Decisions** | The system uses your historical sales and order data to create demand forecasts tailored to your business. Amazon Connect Decisions orchestrates 18\+ forecasting tools to produce accurate baseline forecasts. | Organizations that do not have an existing forecasting solution or want to replace their current approach with AI generated forecasts. |
 | **Bring in existing forecasts** | Upload your existing demand forecasts so you can use decisioning capabilities immediately. The system will help you map and import your forecast data. | Organizations that already have established forecasting processes and want to leverage the monitoring, insight generation, and recommendation capabilities without changing their forecast source. |
 
-![](http://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-step4-demand-planning.png)
+![](https://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-step4-demand-planning.png)
 
 ### After Completing the Questionnaire
 <a name="connecting-your-data-after-completing-questionnaire"></a>
 
 Click **Submit** after completing all four steps:
 
-![](http://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-submit-questionnaire.png)
+![](https://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-submit-questionnaire.png)
 
 + You will be **redirected to the Homepage** with dashboard and topic cards designed to guide you through the remaining onboarding steps.
 + The system will **auto create metrics and rules** within the application based on your selections. These are created in **Draft status** and are not immediately active.
 + You can review the auto created metrics and rules, then **activate them** if they meet your needs, or **create your own** metrics and rules tailored to your specific business requirements.
 
-![](http://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-homepage-after-questionnaire.png)
+![](https://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-homepage-after-questionnaire.png)
 
 ## Creating Your First Source Flow
 <a name="connecting-your-data-creating-first-source-flow"></a>
 
 To start onboarding your data, click on **Review** for the **Connect your data** topic card or navigate to the **Data Management** tab in the 'Hamburger Menu' in Amazon Connect Decisions. Here you can see all of your existing source flows. If you have not set one up yet, click **"Connect New Source"** to begin.
 
-![](http://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-create-source-flow.png)
+![](https://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-create-source-flow.png)
 
 ## Upload Your Source Data
 <a name="connecting-your-data-upload-source-data"></a>
@@ -126,7 +126,7 @@ Upload your CSV files containing source data based on the required CDM tables fo
 + **Append**: Add new data to existing data
 + **Replace**: Replace existing data with new data
 
-![](http://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-upload-source-data.png)
+![](https://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-upload-source-data.png)
 
 When you upload files, Amazon Connect Decisions automatically creates a folder structure in S3 for that data including:
 + A parent folder named after your selected source system
@@ -134,7 +134,7 @@ When you upload files, Amazon Connect Decisions automatically creates a folder s
 + All files under a subfolder are saved against the same source table
 + This file structure is also used to create the Amazon S3 folder path
 
-![](http://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-s3-folder-structure.png)
+![](https://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-s3-folder-structure.png)
 
 ## Source-to-CDM Destination Mapping
 <a name="connecting-your-data-source-to-cdm-mapping"></a>
@@ -147,17 +147,17 @@ Once your files are uploaded, Amazon Connect Decisions begins analyzing your dat
 + The Data Agent works in the background to identify the best CDM destination datasets for your source data.
 + *Navigating away from this page will cause automated mappings to fail.* While waiting, please keep the Amazon Connect Decisions and Data Management tab open to ensure automated mapping completes.
 
-![](http://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-source-to-cdm-analyzing.png)
+![](https://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-source-to-cdm-analyzing.png)
 
 Once complete, the Data Agent provides rationale on source-to-destination mappings based on overlapping data which you can review and ask questions to the agent on any mapping results.
 
-![](http://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-source-to-cdm-complete.png)
+![](https://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-source-to-cdm-complete.png)
 
 To review and edit source mappings, you can:
 + Interact directly with the Data Agent using natural language to update source-destination mappings.
 + Click on the **Actions** and select **"Edit Sources"**.
 
-![](http://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-edit-sources.png)
+![](https://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-edit-sources.png)
 
 ### Editing Mappings
 <a name="connecting-your-data-source-to-cdm-editing-mappings"></a>
@@ -172,7 +172,7 @@ From here, you can:
 
 After source-to-destination mapping is complete, Amazon Connect Decisions will automatically create SQL transformation queries from your source dataset to CDM destination. After any of your mappings complete, you will receive a notification from the Data Agent detailing the result of the mapping.
 
-![](http://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-column-mapping-notification.png)
+![](https://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-column-mapping-notification.png)
 
 From here, you should review the SQL generated for mappings by selecting **"Review SQL"** from the Action menu.
 
@@ -182,7 +182,7 @@ Reviewing the mapping (SQL), you'll see:
 + The transformation SQL connecting them
 + Rationale for mapping provided by the Data Agent
 
-![](http://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-column-mapping-sql-review.png)
+![](https://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-column-mapping-sql-review.png)
 
 ### Editing Mappings
 <a name="connecting-your-data-column-editing-mappings"></a>
@@ -198,7 +198,7 @@ As you edit the mapping query, continue to test it using the **"Test Query"** fu
 
 Once you are satisfied with the mapping output, select "**Save Query**" to save the transformation query for that source-destination pair.
 
-![](http://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-test-query.png)
+![](https://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-test-query.png)
 
 ## Review and Accept Mappings
 <a name="connecting-your-data-review-accept-mappings"></a>
@@ -207,14 +207,14 @@ Review the remaining mappings for each of your source datasets. The Data Agent r
 
 Once you're satisfied with all mappings, accept them to complete data onboarding by clicking on **Accept mappings.**
 
-![](http://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-accept-mappings.png)
+![](https://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-accept-mappings.png)
 
 ### Handle Failed Mappings
 <a name="connecting-your-data-handle-failed-mappings"></a>
 
 If any mappings failed, you can select **"Restart mapping"** to restart all mappings, or manually retry a single mapping from the Actions menu via **"Retry SQL generation"**. The Data Agent can also retry mappings using natural language and will continue to help you identify and resolve issues if errors continue to persist.
 
-![](http://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-failed-mappings.png)
+![](https://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-failed-mappings.png)
 
 ## Monitor Your Flows
 <a name="connecting-your-data-monitor-flows"></a>
@@ -228,11 +228,11 @@ Upon accepting mappings, you'll be navigated to the **Destinations** tab within 
 + Delete obsolete flows
 + Review execution status for these flows
 
-![](http://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-destinations-tab.png)
+![](https://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-destinations-tab.png)
 
 Selecting **"Manage Flow"** will bring you back to the Data Mapping experience where you can continue to work with the Data Agent to refine mappings over time.
 
-![](http://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-manage-flow.png)
+![](https://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-manage-flow.png)
 
 ### Sources Tab
 <a name="connecting-your-data-sources-tab"></a>
@@ -250,7 +250,7 @@ Selecting **"Manage Flow"** will bring you back to the Data Mapping experience w
 
 You also have access to **Create a New Source** as needed to restart the Data Onboarding process for any new data sources.
 
-![](http://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-sources-tab.png)
+![](https://docs.aws.amazon.com/connect-decisions/latest/adminguide/images/connecting-your-data-sources-tab.png)
 
 ## Best Practices
 <a name="connecting-your-data-best-practices"></a>

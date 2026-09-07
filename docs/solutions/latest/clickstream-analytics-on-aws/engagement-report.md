@@ -62,4 +62,4 @@ Engagement report are created based on the following QuickSight datasets:
 
 Below image is a sample dashboard for your reference.
 
-![Engagement dashboard showing event metrics, page views, and session data with charts and tables.](http://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/engagement.png)
+![Engagement dashboard showing event metrics, page views, and session data with charts and tables.](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/engagement.png)

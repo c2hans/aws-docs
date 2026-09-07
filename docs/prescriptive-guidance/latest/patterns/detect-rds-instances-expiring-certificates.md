@@ -44,7 +44,7 @@ By provisioning the infrastructure as code (IaC) provided in this pattern, you c
 
 The following architecture diagram shows the deployment of the AWS resources within a single AWS account. It's implemented by using a CloudFormation template directly through the CloudFormation console. If Security Hub CSPM is enabled, you can view the results in either AWS Config or Security Hub CSPM. If Security Hub CSPM is not enabled, you can view the results only in the AWS Config console.
 
-![Deployment of the provided CloudFormation template in a single account.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/d34fe1f1-6764-4485-b7a7-04e5861f1e9b/images/0b07133a-d4f8-4d87-8d00-2b5e2c453ece.png)
+![Deployment of the provided CloudFormation template in a single account.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/d34fe1f1-6764-4485-b7a7-04e5861f1e9b/images/0b07133a-d4f8-4d87-8d00-2b5e2c453ece.png)
 
 The diagram shows the following steps:
 
@@ -60,7 +60,7 @@ The diagram shows the following steps:
 
 The following diagram shows the assessment of certificate expiration across multiple accounts that are managed through AWS Organizations and AWS Control Tower. You deploy the CloudFormation template through CfCT. The assessment outcomes are centralized in Security Hub CSPM in the delegated administrator account. The AWS CodePipeline workflow depicted in the diagram shows the background steps that occur during CfCT deployment.
 
-![Deployment of the provided CloudFormation template to multiple accounts in an AWS Organization.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/d34fe1f1-6764-4485-b7a7-04e5861f1e9b/images/8d870cbb-54cf-43ec-96f2-00730e0134af.png)
+![Deployment of the provided CloudFormation template to multiple accounts in an AWS Organization.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/d34fe1f1-6764-4485-b7a7-04e5861f1e9b/images/8d870cbb-54cf-43ec-96f2-00730e0134af.png)
 
 The diagram shows the following steps:
 

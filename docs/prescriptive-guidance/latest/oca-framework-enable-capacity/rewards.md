@@ -40,7 +40,7 @@ Use culture assessments to understand the desired state and develop key behavior
 
 The following diagram summarizes the steps in the rewards and recognition process.
 
-![High-level rewards and recognition process in OCA.](http://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-enable-capacity/images/guide-img/0d6d6311-0ee6-4d42-9d4a-8ad713c058e4/images/f8337707-8bf4-424d-a6d2-64bb459203cb.png)
+![High-level rewards and recognition process in OCA.](https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-enable-capacity/images/guide-img/0d6d6311-0ee6-4d42-9d4a-8ad713c058e4/images/f8337707-8bf4-424d-a6d2-64bb459203cb.png)
 
 The diagram illustrates nine high-level steps for developing a rewards and recognition program:
 

@@ -22,7 +22,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admi
 
  To illustrate the central IdP setup, consider an enterprise with AD setup, where users and groups are synchronized to the IdP directory. In AWS, these AD groups are mapped to IAM roles. The major steps of the workflow follow:
 
-![A diagram that depicts a workflow for onboarding AD users, AD groups and IAM roles.](http://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/onboarding-workflow.png)
+![A diagram that depicts a workflow for onboarding AD users, AD groups and IAM roles.](https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/onboarding-workflow.png)
 
 1.  In AWS, Setup SAML integration for each of your AWS accounts with your IdP.
 
@@ -89,7 +89,7 @@ If SageMaker AI Studio is set up in IAM mode, SageMaker AI Studio users access t
 
  The AWS account federation method enables customers to federate into the SageMaker AI Console from their SAML IdP, such as Okta. To restrict users from accessing only their user profile, the administrator should tag the SageMaker AI Studio user profile, add `PrincipalTags` on the IdP, and set them as transitive tags. The following diagram depicts how the federated user (Data Scientist Alice) is authorized to access their own SageMaker AI Studio user profile.
 
-![A diagram depicting AWS IAM account federation for accessing SageMaker AI Studio .](http://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/account-federation.png)
+![A diagram depicting AWS IAM account federation for accessing SageMaker AI Studio .](https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/account-federation.png)
 
 1.  The Alice SageMaker AI Studio user profile is tagged with their user ID, and associated to execution role.
 
@@ -121,14 +121,14 @@ Set up an automation process that listens to the `SageMaker AI-Account1-Group` m
 
  In summary, this solution will expose SageMaker AI Studio as a SAML2.0 application with custom logic for authentication and authorization. Refer the appendix section *[SageMaker Studio access using SAML assertion](appendix.md#sagemaker-studio-access-using-saml)* for implementation details.
 
-![A diagram that depicts accessing SageMaker AI Studio using a custom SAML application.](http://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/access-studio-using-saml.png)
+![A diagram that depicts accessing SageMaker AI Studio using a custom SAML application.](https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/access-studio-using-saml.png)
 
 ## AWS IAM IdC federation
 <a name="aws-iam-idc-federation"></a>
 
 IdC federation method enables customers to federate directly into SageMaker AI Studio application from their SAML IdP (such as Okta). The following diagram depicts how the federated user is authorized to access their own SageMaker AI Studio instance.
 
-![A diagram that depicts accessing SageMaker AI Studio in IAM IdC mode.](http://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/access-studio-with-sso.png)
+![A diagram that depicts accessing SageMaker AI Studio in IAM IdC mode.](https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/access-studio-with-sso.png)
 
 1. In the corporate AD, the user is a member of AD groups such as the Platform Admin group and the Data Scientist group.
 

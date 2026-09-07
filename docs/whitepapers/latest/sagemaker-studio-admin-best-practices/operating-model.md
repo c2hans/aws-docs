@@ -36,21 +36,21 @@ The next section provides guidance on organizing your account structure for each
 +  Governance policies to ensure each data science team workload runs in isolation.
 +  Common best practices.
 
-![A diagram depicting a centralized operating model account structure.](http://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/com-account-structure.png)
+![A diagram depicting a centralized operating model account structure.](https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/com-account-structure.png)
 
 ### Decentralized model account structure
 <a name="decentralized-model-account-structure"></a>
 
  In this model, each ML team operates independently for provisioning, managing, and governing ML accounts and resources. However, we recommend ML teams use a centralized observability and data governance model approach to simplify data governance and audit management.
 
-![A diagram that depicts a decentralized operating model account structure.](http://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/decentralized-model.png)
+![A diagram that depicts a decentralized operating model account structure.](https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/decentralized-model.png)
 
 ### Federated model account structure
 <a name="federated-model-account-structure"></a>
 
  This model is similar to the centralized model; however, the key difference is that each data science/ML team gets their own set of development/test/production workload accounts that enable robust physical isolation of their ML resources, and also enable each team to scale independently without impacting other teams.
 
-![A document depicting a federated operating model account structure.](http://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/fom-account-structure.png)
+![A document depicting a federated operating model account structure.](https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/fom-account-structure.png)
 
 ## ML platform multitenancy
 <a name="ml-platform-multitenancy"></a>

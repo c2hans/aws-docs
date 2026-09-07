@@ -13,7 +13,7 @@ The centralized policy decision point (PDP) with policy enforcement points (PEPs
 + Authorization logic is independent of the application.
 + Access control decisions are centralized.
 
-![Using a centralized PDP with PEPs on APIs](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/82996376-fd1f-4369-92bf-820a383ef7d7.png)
+![Using a centralized PDP with PEPs on APIs](https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/82996376-fd1f-4369-92bf-820a383ef7d7.png)
 
 This model uses a centralized PDP to make authorization decisions. PEPs are implemented at different points to make authorization requests to the PDP. The following diagram shows how you can implement this model in a hypothetical multi-tenant SaaS application.
 

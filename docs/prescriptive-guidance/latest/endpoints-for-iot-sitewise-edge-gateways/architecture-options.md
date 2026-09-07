@@ -13,7 +13,7 @@ There are various architectures you can use to connect the AWS IoT SiteWise Edge
 
 1. The DNS server forwards the DNS queries to the inbound Amazon Route 53 Resolver endpoints in the AWS Cloud. For more information, see [Forwarding inbound DNS queries to your VPCs](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-forwarding-inbound-queries.html) in the Route 53 documentation.
 
-![Connections from the corporate data center to the Route 53 and Amazon VPC endpoints in the AWS Cloud](http://docs.aws.amazon.com/prescriptive-guidance/latest/endpoints-for-iot-sitewise-edge-gateways/images/guide-img/056ac4cc-e4c2-45b8-a939-a8d051fafe4d/images/b40f67cc-0fa8-4b6a-85d3-8e2ed04e6394.png)
+![Connections from the corporate data center to the Route 53 and Amazon VPC endpoints in the AWS Cloud](https://docs.aws.amazon.com/prescriptive-guidance/latest/endpoints-for-iot-sitewise-edge-gateways/images/guide-img/056ac4cc-e4c2-45b8-a939-a8d051fafe4d/images/b40f67cc-0fa8-4b6a-85d3-8e2ed04e6394.png)
 
 To support this architecture, you configure private hosted zones in Route 53. A *private hosted zone* is a container that holds information about how you want Amazon Route 53 to respond to DNS queries for a domain and its subdomains within one or more VPCs. The following are the Route 53 private hosted zones for this architecture:
 + `iotsitewise.<region>.amazonaws.com`

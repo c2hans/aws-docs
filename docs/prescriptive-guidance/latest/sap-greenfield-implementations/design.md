@@ -15,13 +15,13 @@ Build an infrastructure delivery timeline as soon the business transformation pr
 Considerations:
 + A visual representation of the delivery timeline enables the team to quickly understand what is being built, the required-by dates, and possible resource contentions.   It also allows key stakeholders to visualize the environments that are being built, the duration of the project, and the hand-off between AWS and the SAP Basis team in an easy to comprehend manner.
 
-![Delivery timeline for an SAP on AWS greenfield project.](http://docs.aws.amazon.com/prescriptive-guidance/latest/sap-greenfield-implementations/images/guide-img/3deae530-9b57-46ef-8dd1-542c426e8365/images/0a582649-501b-4d87-b865-696a63951913.png)
+![Delivery timeline for an SAP on AWS greenfield project.](https://docs.aws.amazon.com/prescriptive-guidance/latest/sap-greenfield-implementations/images/guide-img/3deae530-9b57-46ef-8dd1-542c426e8365/images/0a582649-501b-4d87-b865-696a63951913.png)
 
 + A typical greenfield SAP implementation spans a year or more. It includes times when the infrastructure team doesn't actively build infrastructure components, so it's important to consider the activities and deliverables during that time.  Examples of activities to map include HA setup and testing, DR setup and testing, performance testing, and building automation scripts.
 + In a greenfield implementation, the concepts of landscape and environments can be confusing to understand. A color-coded timeline that differentiates between environments and landscapes (N, N\+1, N\+2) can help stakeholders understand this matrix of information quickly.
 
   Here is an example of a typical high-level SAP landscape diagram. The boxes represent environments, which are a collection of applications (for example, SAP S/4HANA), and the landscapes are a collection of environments used for a particular release.
-![Landscape diagram for an SAP on AWS greenfield project.](http://docs.aws.amazon.com/prescriptive-guidance/latest/sap-greenfield-implementations/images/guide-img/3deae530-9b57-46ef-8dd1-542c426e8365/images/1bac4a41-5e68-4c0a-a404-58bccf6cd328.png)
+![Landscape diagram for an SAP on AWS greenfield project.](https://docs.aws.amazon.com/prescriptive-guidance/latest/sap-greenfield-implementations/images/guide-img/3deae530-9b57-46ef-8dd1-542c426e8365/images/1bac4a41-5e68-4c0a-a404-58bccf6cd328.png)
 + When you create the roadmap, we recommend that you revisit the high-level roadmap and conduct long-range planning on a quarterly basis until the team has become established. In addition to the migration, include other roadmap items such as workstreams for cloud center of excellence (CCoE), operations automation, security and compliance, and cloud disaster recovery.
 
 ## Understand regional services and document decisions

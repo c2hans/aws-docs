@@ -65,8 +65,8 @@ This automated AWS CloudFormation template deploys the *Centralized Logging with
 
 |  | Launch in AWS Management Console | Download Template |
 | --- | --- | --- |
-| AWS Regions |  [![Launch solution](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image17.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?templateURL=https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/CloudTrailLog.template)  |  [Template](https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/CloudTrailLog.template)  |
-| AWS China Regions |  [![Launch solution](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image17.png)](https://console.amazonaws.cn/cloudformation/home#/stacks/new?templateURL=https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/CloudTrailLog.template)  |  [Template](https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/CloudTrailLog.template)  |
+| AWS Regions |  [![Launch solution](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image17.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?templateURL=https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/CloudTrailLog.template)  |  [Template](https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/CloudTrailLog.template)  |
+| AWS China Regions |  [![Launch solution](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image17.png)](https://console.amazonaws.cn/cloudformation/home#/stacks/new?templateURL=https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/CloudTrailLog.template)  |  [Template](https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/CloudTrailLog.template)  |
 
 1. Log in to the AWS Management Console and select the preceding button to launch the AWS CloudFormation template. You can also download the template as a starting point for your own implementation.
 
@@ -118,7 +118,7 @@ You can choose the following image to view the high-resolution sample dashboard.
 
  **CloudTrail logs sample dashboard.**
 
-![image32](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image32.png)
+![image32](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image32.png)
 
 ## Create log ingestion (Light Engine)
 <a name="create-log-ingestion-light-engine"></a>
@@ -166,8 +166,8 @@ This automated AWS CloudFormation template deploys the *Centralized Logging with
 
 |  | Launch in AWS Management Console | Download Template |
 | --- | --- | --- |
-| AWS Regions |  [![Launch solution](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image17.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?templateURL=https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/MicroBatchAwsServicesCloudTrailPipeline.template)  |  [Template](https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/MicroBatchAwsServicesCloudTrailPipeline.template)  |
-| AWS China Regions |  ![Launch solution](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image17.png)  |  [Template](https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/MicroBatchAwsServicesCloudTrailPipeline.template)  |
+| AWS Regions |  [![Launch solution](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image17.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?templateURL=https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/MicroBatchAwsServicesCloudTrailPipeline.template)  |  [Template](https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/MicroBatchAwsServicesCloudTrailPipeline.template)  |
+| AWS China Regions |  ![Launch solution](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image17.png)  |  [Template](https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/MicroBatchAwsServicesCloudTrailPipeline.template)  |
 
 1. Log in to the AWS Management Console and select the preceding button to launch the AWS CloudFormation template. You can also download the template as a starting point for your own implementation.
 
@@ -209,4 +209,4 @@ You can view the status of the stack in the AWS CloudFormation console in the **
 
  **CloudTrail log sample dashboard**
 
-![image33](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image33.png)
+![image33](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image33.png)

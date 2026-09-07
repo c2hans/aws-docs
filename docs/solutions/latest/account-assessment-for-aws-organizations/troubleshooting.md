@@ -14,7 +14,7 @@ If these instructions don’t address your issue, [Contact AWS Support](contact-
 
 If a job fails for any of the assessments, the web UI will display an error message, and the **Job History** page will show the status of the job as `FAILED`.
 
-![Screenshot of failed job](http://docs.aws.amazon.com/solutions/latest/account-assessment-for-aws-organizations/images/image11.png)
+![Screenshot of failed job](https://docs.aws.amazon.com/solutions/latest/account-assessment-for-aws-organizations/images/image11.png)
 
 ### Resolution
 <a name="failed-job-resolution"></a>
@@ -30,7 +30,7 @@ For example, if your job failed due to the following error:
 
 this indicates that you need to [check the Lambda function concurrent executions quota](https://console.aws.amazon.com/servicequotas/home/services/lambda/quotas) for the hub account. By default, this solution requires up to 100 Lambda concurrent executions. To request a quota increase, select **Concurrent executions** and choose **Request quota increase**. See [Requesting a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html) in the *Service Quotas User Guide* for more information.
 
-![Screenshot of Lambda resource quotas](http://docs.aws.amazon.com/solutions/latest/account-assessment-for-aws-organizations/images/image22.png)
+![Screenshot of Lambda resource quotas](https://docs.aws.amazon.com/solutions/latest/account-assessment-for-aws-organizations/images/image22.png)
 
 ## Problem: Failed Resource-Based Policies scan
 <a name="failed-resource-based-policy-scan"></a>
@@ -42,13 +42,13 @@ This assessment type initiates an asynchronous Step Functions state machine exec
 
 If the state machine execution fails, you can view the [specific X-Ray trace](https://docs.aws.amazon.com/step-functions/latest/dg/concepts-xray-tracing.html#xray-concept-tracing-details) for the failed state machine execution. You can either click on the state machine **FailJob** state to view the details in the **Input and Output** tab (see Figure 2) or use the [X-Ray details](https://docs.aws.amazon.com/step-functions/latest/dg/concepts-xray-tracing.html#concepts-xray-tracing-segments) to help you identify the specific resource in the state machine where the failure occurred (see Figure 3).
 
-![Screenshot of state machine failure details](http://docs.aws.amazon.com/solutions/latest/account-assessment-for-aws-organizations/images/image12.png)
+![Screenshot of state machine failure details](https://docs.aws.amazon.com/solutions/latest/account-assessment-for-aws-organizations/images/image12.png)
 
-![Screenshot of state machine failure details in X-Ray](http://docs.aws.amazon.com/solutions/latest/account-assessment-for-aws-organizations/images/image13.png)
+![Screenshot of state machine failure details in X-Ray](https://docs.aws.amazon.com/solutions/latest/account-assessment-for-aws-organizations/images/image13.png)
 
 To view the error details, click on the resource and select the **Exceptions** tab. This can help you identify the Lambda function name where the failure occurred and will display the same error from the state machine output. Note that the same exception will be logged in the CloudWatch logs.
 
-![Screenshot of exceptions tab data](http://docs.aws.amazon.com/solutions/latest/account-assessment-for-aws-organizations/images/image14.png)
+![Screenshot of exceptions tab data](https://docs.aws.amazon.com/solutions/latest/account-assessment-for-aws-organizations/images/image14.png)
 
 ## Problem: Access denied
 <a name="access-denied"></a>
@@ -60,7 +60,7 @@ You may receive an `AccessDenied` error for a specific account in ** Failed Task
 
  [Deploy the Spoke stack](step-2-launch-the-spoke-stack.md) in the account to allow the scan to complete.
 
-![Screenshot of AccessDenied error](http://docs.aws.amazon.com/solutions/latest/account-assessment-for-aws-organizations/images/image15.png)
+![Screenshot of AccessDenied error](https://docs.aws.amazon.com/solutions/latest/account-assessment-for-aws-organizations/images/image15.png)
 
 ## Problem: Undefined error
 <a name="unidefined-error"></a>

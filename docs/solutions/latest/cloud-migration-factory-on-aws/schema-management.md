@@ -29,7 +29,7 @@ You may wish to add a new custom asset (schema) to CMF in case you have business
 
 When you select the **\+** symbol a new panel will pop up requesting the minimum required information to create a new asset.
 
-![create new schema](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/create-new-schema.png)
+![create new schema](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/create-new-schema.png)
 
 After creating the new asset, you can add additional asset-specific attributes. See the [Adding/editing an attribute](#addingediting-an-attribute) section for more information.
 
@@ -52,7 +52,7 @@ Adding an attribute:
 
  **Attribute management**
 
-![attribute management](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/attribute-management.png)
+![attribute management](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/attribute-management.png)
 
 You can add new attributes by choosing the **Add** button on the attributes tab of the entity you wish to add the attribute to. In the example above, choosing **Add** will add a new attribute to the database entity.
 

@@ -32,7 +32,7 @@ Amazon OpenSearch Service provides a set of [recommended CloudWatch alarms](http
 
 This automated AWS CloudFormation template deploys the *Centralized Logging with OpenSearch - Alarms* solution in the AWS Cloud.
 
-1. Log in to the AWS Management Console and select the button to launch the AWS CloudFormation template. [![Launch solution](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image17.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Fcentralized-logging-with-opensearch%2Flatest%2FAlarmForOpenSearch.template)
+1. Log in to the AWS Management Console and select the button to launch the AWS CloudFormation template. [![Launch solution](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image17.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Fcentralized-logging-with-opensearch%2Flatest%2FAlarmForOpenSearch.template)
 
 You can also [download the template](https://s3.amazonaws.com/solutions-reference/centralized-logging-with-opensearch/latest/AlarmForOpenSearch.template) as a starting point for your own implementation. . To launch the stack in a different AWS Region, use the Region selector in the console navigation bar. . On the **Create stack** page, verify that the correct template URL shows in the **Amazon S3 URL** text box and choose **Next**. . On the **Specify stack details** page, assign a name to your stack. . Under **Parameters**, review the parameters for the template and modify them as necessary. This solution uses the following parameters.
 
@@ -72,7 +72,7 @@ Go to the CloudWatch Alarms page by choosing the **General configuration > Alarm
 
  **General configuration screen.**
 
-![image31](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image31.png)
+![image31](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image31.png)
 
 Make sure that all the alarms are in **OK** status because you might have missed the notification if the alarms have changed its status before subscription.
 

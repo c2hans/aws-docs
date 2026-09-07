@@ -14,7 +14,7 @@ Deploying this guidance with the default parameters deploys the following compon
 
  **Guidance for Scalable Analytics Using Apache Druid on AWS - Architecture diagram**
 
-![scalable analytics using apache druid on aws](http://docs.aws.amazon.com/solutions/latest/scalable-analytics-using-apache-druid-on-aws/images/scalable-analytics-using-apache-druid-on-aws.png)
+![scalable analytics using apache druid on aws](https://docs.aws.amazon.com/solutions/latest/scalable-analytics-using-apache-druid-on-aws/images/scalable-analytics-using-apache-druid-on-aws.png)
 
 **Note**
 AWS CloudFormation resources are created from AWS Cloud Development Kit (AWS CDK) (AWS CDK) constructs.

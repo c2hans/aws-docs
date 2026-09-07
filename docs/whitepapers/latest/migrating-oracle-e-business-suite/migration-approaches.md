@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-bu
 
  The following diagram shows the migration paths that customers may take depending on the current platform, tooling, and experiences available to them.
 
-![Diagram showing possible migration approaches](http://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-business-suite/images/migration-approaches.jpg)
+![Diagram showing possible migration approaches](https://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-business-suite/images/migration-approaches.jpg)
 
  The current OS and endianness of the platform determines the appropriate tools you will need to migrate your Oracle E-Business Suite to AWS.
 

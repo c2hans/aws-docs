@@ -60,7 +60,7 @@ The following diagram shows the migration process from an on-premises Oracle dat
 
 For more information, see [Integrating AWS Database Migration Service with AWS Schema Conversion Tool](https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_DMSIntegration.html) in the AWS documentation.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/90160825-3199-4382-95a8-ad63139c5c89/images/b09c36a4-27fa-412e-877e-57a31bcce0dc.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/90160825-3199-4382-95a8-ad63139c5c89/images/b09c36a4-27fa-412e-877e-57a31bcce0dc.png)
 
 ## Tools
 <a name="multilevel-object-analysis-for-database-migration-from-oracle-to-postgresql-tools"></a>

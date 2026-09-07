@@ -47,6 +47,9 @@ Content-type: application/json
       "SendingPoolName": "string",
       "TlsPolicy": "string"
    },
+   "MessageSecurityOptions": {
+      "SigningScheme": { ... }
+   },
    "ReputationOptions": {
       "LastFreshStart": number,
       "ReputationMetricsEnabled": boolean
@@ -105,6 +108,10 @@ Type: String
  ** [DeliveryOptions](#API_GetConfigurationSet_ResponseSyntax) **   <a name="SES-GetConfigurationSet-response-DeliveryOptions"></a>
 An object that defines the dedicated IP pool that is used to send emails that you send using the configuration set.
 Type: [DeliveryOptions](API_DeliveryOptions.md) object
+
+ ** [MessageSecurityOptions](#API_GetConfigurationSet_ResponseSyntax) **   <a name="SES-GetConfigurationSet-response-MessageSecurityOptions"></a>
+The message security options that are applied to the configuration set, such as the signing scheme used for messages that you send with the configuration set.
+Type: [MessageSecurityOptions](API_MessageSecurityOptions.md) object
 
  ** [ReputationOptions](#API_GetConfigurationSet_ResponseSyntax) **   <a name="SES-GetConfigurationSet-response-ReputationOptions"></a>
 An object that defines whether or not Amazon SES collects reputation metrics for the emails that you send that use the configuration set.

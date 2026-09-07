@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterpri
 
 Large enterprises with strict security and compliance requirements need to set up guardrails for operating the ML environments. IAM policies can be used for enforcing guardrails, such as requiring proper resource tagging or limiting type of resources used, for different users and roles. For enterprise scale guardrail management, consider [AWS Organizations](https://aws.amazon.com/organizations/). Its Service Control Policies (SCP) feature can help with enterprise guardrail management, by attaching a SCP to an AWS Organizations entity (root, organizational unit (OU), or account). You still need to attach [identity-based or resource-based policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html) to IAM users or roles, or to the resources in your organization's accounts to actually grant permissions. When an IAM user or role belongs to an account that is a member of an organization, the SCPs can limit the user's or role's [effective permissions](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html#scp-effects-on-permissions).
 
-![A diagram that shows managing guardrails with AWS Organizations and Service Control Policies.](http://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-17.png)
+![A diagram that shows managing guardrails with AWS Organizations and Service Control Policies.](https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-17.png)
 
 *Managing guardrails with AWS Organizations and Service Control Policies*
 

@@ -9,7 +9,7 @@ The Kinesis Video Streams (KVS) pool for your media stream pipeline must belong 
 
 The following diagram shows the architecture of a media pipeline Kinesis Video Streams pool. Numbers in the image correspond to the numbered text below:
 
-![Diagram showing an API call that creates a Kinesis Video Streams pool.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/media-stream-pool-architecture.png)
+![Diagram showing an API call that creates a Kinesis Video Streams pool.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/media-stream-pool-architecture.png)
 
 In the diagram:
 

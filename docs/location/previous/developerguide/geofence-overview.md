@@ -9,7 +9,7 @@ Geofence collection resources allow you to store and manage geofences—virtual 
 
 The following shows you how to create and use geofence collection resources:
 
-![Workflow showing clicking a polygon, adding and positioning it, then messaging on mobile device.](http://docs.aws.amazon.com/location/previous/developerguide/images/illustration-geofence.PNG)
+![Workflow showing clicking a polygon, adding and positioning it, then messaging on mobile device.](https://docs.aws.amazon.com/location/previous/developerguide/images/illustration-geofence.PNG)
 
 1. Create a geofence collection resource in your AWS account.
 

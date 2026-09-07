@@ -31,7 +31,7 @@ This pattern describes how to use [Rclone](https://rclone.org/) to migrate data 
 
 **Architecture**
 
-![Migrating data from Microsoft Azure to Amazon S3](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6ead815d-7768-4726-b27d-97a70cd21081/images/abe69eee-632f-4ca2-abf6-3223f3f3ec94.png)
+![Migrating data from Microsoft Azure to Amazon S3](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6ead815d-7768-4726-b27d-97a70cd21081/images/abe69eee-632f-4ca2-abf6-3223f3f3ec94.png)
 
 ## Tools
 <a name="migrate-data-from-microsoft-azure-blob-to-amazon-s3-by-using-rclone-tools"></a>

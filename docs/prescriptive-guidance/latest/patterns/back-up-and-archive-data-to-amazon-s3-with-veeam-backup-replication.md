@@ -65,7 +65,7 @@ This pattern doesn’t cover how to set up Veeam Backup & Replication with a tap
 
 The following diagram shows the scale-out backup repository (SOBR) architecture.
 
-![SOBR architecture for backing up data from Veeam to Amazon S3](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7f3a36f7-31dc-45c8-87b2-c5dd37f7a01e/images/b48fd0cd-b66c-4ef7-b6fa-0ed53354e1a2.png)
+![SOBR architecture for backing up data from Veeam to Amazon S3](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7f3a36f7-31dc-45c8-87b2-c5dd37f7a01e/images/b48fd0cd-b66c-4ef7-b6fa-0ed53354e1a2.png)
 
 Veeam Backup and Replication software protects data from logical errors such as system failures, application errors, or accidental deletion. In this diagram, backups are run on premises first, and a secondary copy is sent directly to Amazon S3. A backup represents a point-in-time copy of the data.
 
@@ -81,7 +81,7 @@ Starting with Veeam Backup & Replication v12.2, the Direct to S3 Glacier feature
 
 The following diagram shows the direct-to-object (DTO) architecture.
 
-![DTO architecture for backing up data from Veeam to Amazon S3](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7f3a36f7-31dc-45c8-87b2-c5dd37f7a01e/images/9debe53a-d70a-43fa-844c-f93fa22124eb.png)
+![DTO architecture for backing up data from Veeam to Amazon S3](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7f3a36f7-31dc-45c8-87b2-c5dd37f7a01e/images/9debe53a-d70a-43fa-844c-f93fa22124eb.png)
 
 In this diagram, backup data goes directly to Amazon S3 without being stored on premises first. Secondary copies can be stored in S3 Glacier.
 

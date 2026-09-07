@@ -113,7 +113,7 @@ Tailor the following example step-by-step process to your specific experiment:
 
 Make sure that you capture the timeline of the end-to-end experiment, starting with load generation, injection of the fault, observation of impact, and recovery of the application, and ending when you stop the load generation. This is illustrated in the following example.
 
-![Example timeline for a chaos experiment.](http://docs.aws.amazon.com/prescriptive-guidance/latest/chaos-engineering-on-aws/images/guide-img/4119a10b-a241-4431-9681-0b62a5da1a70/images/32d6e719-6d6f-4297-ba77-6af873f4e43e.png)
+![Example timeline for a chaos experiment.](https://docs.aws.amazon.com/prescriptive-guidance/latest/chaos-engineering-on-aws/images/guide-img/4119a10b-a241-4431-9681-0b62a5da1a70/images/32d6e719-6d6f-4297-ba77-6af873f4e43e.png)
 
 ## Experiment results
 <a name="experiment-results"></a>

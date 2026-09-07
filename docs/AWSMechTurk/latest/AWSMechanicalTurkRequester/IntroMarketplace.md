@@ -9,7 +9,7 @@ Mechanical Turk uses the *requester* and *worker* terms to describe the two part
 
 As shown in the following image of the marketplace website, workers can see a list of available tasks, along with details about each task. Workers can review the title and description, reward amount, and time allotted to complete each task before accepting and working on it. In many cases, workers preview a task prior to accepting it, which allows them to decide if they want to work on it.
 
-![Amazon Mechanical Turk HIT Groups page showing available tasks with requester, reward, and creation time.](http://docs.aws.amazon.com/AWSMechTurk/latest/AWSMechanicalTurkRequester/images/mturk_marketplace.png)
+![Amazon Mechanical Turk HIT Groups page showing available tasks with requester, reward, and creation time.](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMechanicalTurkRequester/images/mturk_marketplace.png)
 
 Submitting tasks to the Mechanical Turk marketplace does not guarantee that workers will complete them. If workers don't believe that the reward amount is reasonable for the effort required, or the work isn't something on which they want to work, they skip it and move on to other tasks. For this reason, we recommended that you put thought into how you describe your task so that workers can make an informed decision.
 

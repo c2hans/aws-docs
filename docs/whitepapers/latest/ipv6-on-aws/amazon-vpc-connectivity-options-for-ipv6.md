@@ -20,7 +20,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/amazon-vp
 
  The following diagram depicts a VPC peering between two VPCs supporting IPv4 and IPv6 simultaneously. The peering is agnostic, and the subnet route tables are the deciding factor for which prefixes are reachable.
 
-![This is a diagram that shows dual-stack IPv6 VPC peering.](http://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/images/dual-stack-ipv6-vpc-peering.png)
+![This is a diagram that shows dual-stack IPv6 VPC peering.](https://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/images/dual-stack-ipv6-vpc-peering.png)
 
  With VPC peering, you can choose to route only the IPv6 CIDRs of your peered VPCs, thus ensuring IPv6-only connectivity. Also, you cannot peer two VPCs together if their IPv4 CIDRs are overlapping and their IPv6 CIDRs don’t overlap. For this use case, you can use the AWS Transit Gateway.
 
@@ -40,7 +40,7 @@ If you retrofit IPv6 into an existing VPC with a Transit Gateway attachment, its
 **Note**
 You cannot create a transit gateway attachment using IPv6-only subnets.
 
-![This is a diagram that shows dual-stack AWS Transit Gateway routing.](http://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/images/dual-stack-aws-transit-gateway-routing.png)
+![This is a diagram that shows dual-stack AWS Transit Gateway routing.](https://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/images/dual-stack-aws-transit-gateway-routing.png)
 
 ## IPv6 traffic within and between Transit Gateways
 <a name="ipv6-traffic-within-and-between-transit-gateways"></a>
@@ -63,14 +63,14 @@ You cannot create a transit gateway attachment using IPv6-only subnets.
 
  Multiprotocol BGP (MP-BGP) is an extension to BGP that enables BGP to carry routing information for multiple network layers and address families. MP-BGP can carry the unicast routes used for multicast routing separately from the routes used for unicast IP forwarding.
 
-![This is a diagram that shows AWS Transit Gateway Connect dual-stack IPV6 routing.](http://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/images/aws-transit-gateway-connect-dual-stack-ipv6-routing.png)
+![This is a diagram that shows AWS Transit Gateway Connect dual-stack IPV6 routing.](https://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/images/aws-transit-gateway-connect-dual-stack-ipv6-routing.png)
 
 ## AWS PrivateLink
 <a name="aws-privatelink"></a>
 
  [AWS PrivateLink](https://aws.amazon.com/privatelink/) provides private connectivity between VPCs, AWS services, and customer on-premises networks, without exposing traffic to the public internet. AWS PrivateLink makes it easy to connect services across different accounts and VPCs to significantly simplify your network architecture.
 
-![This is a diagram that shows AWS PrivateLink in a dual-stack scenario.](http://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/images/aws-privatelink-in-a-dual-stack-scenario.png)
+![This is a diagram that shows AWS PrivateLink in a dual-stack scenario.](https://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/images/aws-privatelink-in-a-dual-stack-scenario.png)
 
 ## VPC sharing
 <a name="vpc-sharing"></a>

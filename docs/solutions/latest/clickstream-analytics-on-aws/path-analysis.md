@@ -98,4 +98,4 @@ Path analysis refers to the distribution of the behavior of a group of users aft
 
  All configurations are as shown in the image below:
 
-![Path analysis configuration interface showing metrics, session definition, node types, start node, node sequence, and filters.](http://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/explore-path-en.png)
+![Path analysis configuration interface showing metrics, session definition, node types, start node, node sequence, and filters.](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/explore-path-en.png)

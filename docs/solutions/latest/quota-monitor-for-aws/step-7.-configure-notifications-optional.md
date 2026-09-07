@@ -13,7 +13,7 @@ Follow these steps to configure and mute specific notifications for the Quota Mo
 
    --Or--
 
-   If the AWS Systems Manager home page opens first, choose the menu icon (![Horizontal black and white striped pattern forming a simple geometric design.](http://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/images/image4.png)) to open the navigation pane, and then choose **Parameter Store**.
+   If the AWS Systems Manager home page opens first, choose the menu icon (![Horizontal black and white striped pattern forming a simple geometric design.](https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/images/image4.png)) to open the navigation pane, and then choose **Parameter Store**.
 
 1. On the **My parameters** tab, select the check box next to the parameter to update.
 

@@ -18,7 +18,7 @@ A golden image can be composed, or it can be created by taking a snapshot of a g
 
 As shown in the following illustration, a golden device is created, its file system is read to create the golden image, and this image is then written to many devices, at scale.
 
-![Creating and using a golden image to provision devices.](http://docs.aws.amazon.com/prescriptive-guidance/latest/iot-greengrass-golden-images/images/guide-img/ca526734-1212-4b56-a092-9b8dbbd2ef52/images/cdd5a6a1-8472-4a2f-bacf-340617b7cc05.png)
+![Creating and using a golden image to provision devices.](https://docs.aws.amazon.com/prescriptive-guidance/latest/iot-greengrass-golden-images/images/guide-img/ca526734-1212-4b56-a092-9b8dbbd2ef52/images/cdd5a6a1-8472-4a2f-bacf-340617b7cc05.png)
 
 ## Unique configuration
 <a name="configuration"></a>

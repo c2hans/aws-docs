@@ -11,7 +11,7 @@ The off-loading of archived data from the database to Amazon S3 can be performed
 
 The following diagram shows a basic architecture for database archiving.
 
-![Description follows the diagram.](http://docs.aws.amazon.com/prescriptive-guidance/latest/archiving-mysql-data/images/guide-img/1d38fd71-63ca-45ea-bf1f-9f493d5364d0/images/5db5ff9a-6662-4418-9d3c-6bc1eceaf572.png)
+![Description follows the diagram.](https://docs.aws.amazon.com/prescriptive-guidance/latest/archiving-mysql-data/images/guide-img/1d38fd71-63ca-45ea-bf1f-9f493d5364d0/images/5db5ff9a-6662-4418-9d3c-6bc1eceaf572.png)
 
 1. MySQL database creates the archive or backup table to be off-loaded in Amazon S3.
 

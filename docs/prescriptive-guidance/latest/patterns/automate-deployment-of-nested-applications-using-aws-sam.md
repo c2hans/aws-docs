@@ -51,11 +51,11 @@ The following diagram shows how user requests are made to the shopping services 
 
 When an item is added, deleted, or updated in DynamoDB, an event is put onto DynamoDB Streams, which in turn initiates a Lambda function. To avoid immediate deletion of old items as part of a synchronous workflow, messages are put onto an SQS queue, which initiates a worker function to delete the messages.
 
-![POST and PUT operations from API Gateway to Lambda functions to DynamoDB and Product Service.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/218adecc-b5b8-4193-9012-b5d584e2e128/images/5b454bae-5fd4-405d-a37d-6bafc3fcf889.png)
+![POST and PUT operations from API Gateway to Lambda functions to DynamoDB and Product Service.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/218adecc-b5b8-4193-9012-b5d584e2e128/images/5b454bae-5fd4-405d-a37d-6bafc3fcf889.png)
 
 In this solution setup, AWS SAM CLI serves as the interface for AWS CloudFormation stacks. AWS SAM templates automatically deploy nested applications. The parent SAM template calls the child templates, and the parent CloudFormation stack deploys the child stacks. Each child stack builds the AWS resources that are defined in the AWS SAM CloudFormation templates.
 
-![Four-step process using AWS SAM CLI with a parent and three child CloudFormation stacks.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/218adecc-b5b8-4193-9012-b5d584e2e128/images/5828026e-72ad-4a3f-a5f2-bffac0f13e42.png)
+![Four-step process using AWS SAM CLI with a parent and three child CloudFormation stacks.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/218adecc-b5b8-4193-9012-b5d584e2e128/images/5828026e-72ad-4a3f-a5f2-bffac0f13e42.png)
 
 1. Build and deploy the stacks.
 

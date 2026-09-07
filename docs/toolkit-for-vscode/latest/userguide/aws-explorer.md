@@ -13,7 +13,7 @@ Some important points:
 + If the toolkit is installed and conﬁgured correctly, you should see items in the **AWS Explorer**. To see the **AWS Explorer**, choose the **AWS** icon in the **Activity bar**.
 
   For example:
-![AWS Explorer with credentials defined.](http://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/aws-explorer-with-more-resources.png)
+![AWS Explorer with credentials defined.](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/aws-explorer-with-more-resources.png)
 + Certain features require certain AWS permissions. For example, to see the AWS Lambda functions in your AWS account, the credentials you configured in [Authentication and access](establish-credentials.md) must include at least read-only Lambda permissions. See the following topics for more information about the permissions that each feature needs.
 + If you want to interact with AWS services that aren't immediately visible in the **AWS Explorer**, you can go to **More resources** and choose from hundreds of resources that can added to the interface.
 

@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/database-caching-stra
 
  The following diagram is a typical representation of an architecture that uses a remote [distributed cache](https://en.wikipedia.org/wiki/Distributed_cache).
 
-![Figuring displaying architecture using remote distributed cache](http://docs.aws.amazon.com/whitepapers/latest/database-caching-strategies-using-redis/images/image2.png)
+![Figuring displaying architecture using remote distributed cache](https://docs.aws.amazon.com/whitepapers/latest/database-caching-strategies-using-redis/images/image2.png)
 
  Architecture using remote distributed cache
 
@@ -28,7 +28,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/database-caching-stra
 
 1.  If the data isn’t available (*a cache miss*), the database is queried for the data. The cache is then populated with the data that is retrieved from the database, and the data is returned to the caller.
 
-![Figure displaying a cache-aside cache](http://docs.aws.amazon.com/whitepapers/latest/database-caching-strategies-using-redis/images/image3.png)
+![Figure displaying a cache-aside cache](https://docs.aws.amazon.com/whitepapers/latest/database-caching-strategies-using-redis/images/image3.png)
 
  A cache-aside cache
 
@@ -46,7 +46,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/database-caching-stra
 1.  The application, batch, or backend process updates the primary database.
 
 1.  Immediately afterward, the data is also updated in the cache.
-![Figure displaying a write-through cache](http://docs.aws.amazon.com/whitepapers/latest/database-caching-strategies-using-redis/images/image4.png)
+![Figure displaying a write-through cache](https://docs.aws.amazon.com/whitepapers/latest/database-caching-strategies-using-redis/images/image4.png)
 
     A write-through cache
 

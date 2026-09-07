@@ -15,7 +15,7 @@ The AWS CDK consists of two primary parts:
 
 The AWS CDK supports TypeScript, JavaScript, Python, Java, C\#/.Net, and Go. You can use any of these supported programming languages to define reusable cloud components known as [constructs](constructs.md). You compose these together into [stacks](stacks.md) and [apps](apps.md). Then, you deploy your CDK applications through AWS CloudFormation to provision or update your resources.
 
-![CDK app and process overview](http://docs.aws.amazon.com/cdk/v2/guide/images/AppStacks.png)
+![CDK app and process overview](https://docs.aws.amazon.com/cdk/v2/guide/images/AppStacks.png)
 
 ## Benefits of the AWS CDK
 <a name="home-benefits"></a>
@@ -31,7 +31,7 @@ With the AWS CDK, you can use any of the following programming languages to defi
 Use the same programming language to define your infrastructure and your application logic.
 Receive the benefits of developing infrastructure in your preferred IDE (Integrated Development Environment), such as syntax highlighting and intelligent code completion.
 
-![Code snippet showing CDK setup for ECS cluster with VPC and Fargate service configuration.](http://docs.aws.amazon.com/cdk/v2/guide/images/CodeCompletion.png)
+![Code snippet showing CDK setup for ECS cluster with VPC and Fargate service configuration.](https://docs.aws.amazon.com/cdk/v2/guide/images/CodeCompletion.png)
 <a name="home-benefits-cfn"></a>
 
  **Deploy infrastructure through AWS CloudFormation**

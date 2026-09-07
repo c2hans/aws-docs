@@ -25,7 +25,7 @@ AWS offers a variety of purpose-built IoT services. The foundational services he
 
 This decision guide will help you ask the right questions, evaluate your criteria, and determine which IoT services are the best fit for your needs.
 
-[![AWS Videos](http://img.youtube.com/vi/o4Rr_lDFWfA?si=D-ZdUEJx0FOE6az0/0.jpg)](http://www.youtube.com/watch?v=o4Rr_lDFWfA?si=D-ZdUEJx0FOE6az0)
+[![AWS Videos](https://img.youtube.com/vi/o4Rr_lDFWfA?si=D-ZdUEJx0FOE6az0/0.jpg)](https://www.youtube.com/watch?v=o4Rr_lDFWfA?si=D-ZdUEJx0FOE6az0)
 
 ## Understand
 <a name="understand"></a>
@@ -34,7 +34,7 @@ IoT is sometimes described as a bridge between the physical and digital worlds.
 
 It is a network of connected devices and sensors that communicate with each other and the cloud. These devices and sensors (sometimes called things) collect data from a very broad range of sources.
 
-![Diagram showing an introduction to Internet of Things (IoT).](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/what-is-iot.jpg)
+![Diagram showing an introduction to Internet of Things (IoT).](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/what-is-iot.jpg)
 
 The devices collect data from sources that are connected to home appliances, buildings, machines, vehicles, hardware, factory production lines, pipelines, and connected people (for example, people wearing smart, connected devices for monitoring their health and fitness).
 
@@ -49,7 +49,7 @@ IoT services are designed to help you:
 + Scale your operations from an initial set of devices up to billions globally, while achieving higher reliability, quality of service, and availability.
 + Monitor your organization’s security posture across your entire device fleet.
 
-![Diagram showing the AWS IoT stack.](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/IoT-stack.png)
+![Diagram showing the AWS IoT stack.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/IoT-stack.png)
 
 When asking how AWS IoT services can be useful to your organization, it's important to think about how these services are organized.
 
@@ -66,7 +66,7 @@ While IoT-specific generative AI is still evolving, we see two broad categories 
 
 There are a wide range of possibilities when you connect a vast amount of IoT data with generative AI technology. Your initial focus, however, is likely to be on tangible use cases where you can find value today.
 
-![Diagram showing a comprehensive set of AWS IoT services.](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/iot-services.png)
+![Diagram showing a comprehensive set of AWS IoT services.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/iot-services.png)
 
 For example, developers can provide a description of the application function with details about an IoT circuit board and sensors. Then, a generative AI-powered function can produce prototype code with associated infrastructure as code (IaC) and installation steps. It can also provide generic prototype code for one type of board and automatically convert it to working code for another.
 
@@ -86,7 +86,7 @@ Here are some of the key criteria to consider when you’re choosing which IoT s
 ------
 #### [ Business outcome ]
 
- ![Business applications icon](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/Arch-Category_Business-Applications_48.png)
+ ![Business applications icon](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/Arch-Category_Business-Applications_48.png)
 
 **Business outcome**
 
@@ -97,7 +97,7 @@ For example, you might run a logistics company and use robots in your warehouses
 ------
 #### [ Scale, reliability, and quality of service ]
 
- ![Auto scaling icon](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/Res_Amazon-EC2_Auto-Scaling_48.png)
+ ![Auto scaling icon](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/Res_Amazon-EC2_Auto-Scaling_48.png)
 
 **Scale, reliability, and quality of service**
 
@@ -114,7 +114,7 @@ To ensure availability in the event of a disruption, AWS IoT operates across mul
 ------
 #### [ Lifecycle management ]
 
- ![Lifecycle management icon](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/Res_AWS-Systems-Manager_Change-Manager_48.png)
+ ![Lifecycle management icon](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/Res_AWS-Systems-Manager_Change-Manager_48.png)
 
 **Lifecycle management**
 
@@ -123,7 +123,7 @@ From initial deployment to eventual retirement, your IoT devices have a finite l
 ------
 #### [ Edge support ]
 
- ![Edge support icon](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/Res_Amazon-CloudFront_Edge-Location_48.png)
+ ![Edge support icon](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/Res_Amazon-CloudFront_Edge-Location_48.png)
 
 **Edge support**
 
@@ -144,7 +144,7 @@ Finally, the [AWS IoT Lens for the AWS Well-Architected Framework](https://docs.
 ------
 #### [ Digital twin capabilities ]
 
- ![Digital twin capabilities icon](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/Arch_AWS-IoT-TwinMaker_48.png)
+ ![Digital twin capabilities icon](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/Arch_AWS-IoT-TwinMaker_48.png)
 
 **Digital twin capabilities**
 
@@ -157,7 +157,7 @@ With AWS IoT TwinMaker, you can create digital visualizations to help you keep t
 ------
 #### [ Development time ]
 
- ![Development time icon](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/Dev-Tools_48.png)
+ ![Development time icon](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/Dev-Tools_48.png)
 
 **Development time**
 
@@ -170,7 +170,7 @@ To develop an IoT solution, you will likely need to structure your work into mul
 ------
 #### [ Video streaming support ]
 
- ![Video streaming support icon](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/Arch_Amazon-Kinesis-Video-Streams_48.png)
+ ![Video streaming support icon](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/Arch_Amazon-Kinesis-Video-Streams_48.png)
 
 **Video streaming support**
 
@@ -183,7 +183,7 @@ IoT implementations increasingly have video as a key data source. Those sources 
 ------
 #### [ Security ]
 
- ![Security icon](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/Arch-Category_Security-Identity-Compliance_48.png)
+ ![Security icon](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/Arch-Category_Security-Identity-Compliance_48.png)
 
 **Security**
 

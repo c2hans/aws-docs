@@ -25,7 +25,7 @@ Publication date: **March 30, 2023** ([Document revisions](document-revisions.md
 
  In on-premises environments, this knowledge is often captured in knowledge management systems, document management systems, and on internal wiki pages. With a configuration management database (CMDB), you can store and manage the relevant detailed metadata using standard change control processes. This approach provides governance, but requires additional effort to develop and maintain. You can take a structured approach to the naming of resources, but a resource name can only hold a limited amount of information.
 
-![Picture showing the decomposition of the name of a resource into its parts.](http://docs.aws.amazon.com/whitepapers/latest/tagging-best-practices/images/structured-approach-to-resource-naming.png)
+![Picture showing the decomposition of the name of a resource into its parts.](https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practices/images/structured-approach-to-resource-naming.png)
 
  For example, EC2 instances have a predefined tag called Name that provides similar functionality and allows you to name workloads as they are moved to AWS.
 

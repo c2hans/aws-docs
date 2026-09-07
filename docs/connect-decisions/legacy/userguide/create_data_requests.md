@@ -18,7 +18,7 @@ To create a data request, do the following:
 1. On the **Data Requests** page, choose **Create data request**.
 
    The **Create data requests** page appears.
-![Sustainability dashboard](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Sustainability_dashboard.png)
+![Sustainability dashboard](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Sustainability_dashboard.png)
 
 1. On the **Create data requests** page, under **Select data request type**, select the data request type.
 
@@ -35,7 +35,7 @@ To create a data request, do the following:
 1. Enter the name and description for your new template and choose **Save template**. Make sure you enter a name and description that is meaningful since you will use the name and description to find the template, understand it's usage, and reuse to request data.
 
    Under **Saved templates**, you will see the template listed under **Data request type**.
-![Creating a data request](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Sustainability_template.png)
+![Creating a data request](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Sustainability_template.png)
 
 1. Choose **Continue** to send the data request.
 

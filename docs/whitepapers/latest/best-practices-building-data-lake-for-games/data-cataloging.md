@@ -28,7 +28,7 @@ AWS Glue Data Catalog can be extended to meet many of your data cataloging requi
 
  The AWS Glue Data Catalog is an index to the location, schema, and runtime metrics of your data. You can use the information in the Data Catalog to create and monitor your ETL jobs. Each AWS account can have one AWS Glue Data Catalog per AWS Region. Information in the Data Catalog is stored as metadata tables, where each table specifies a single data store. Typically, you run a crawler to take inventory of the data in your data stores, but there are other ways to add metadata tables into your Data Catalog. For information about how to use the AWS Glue Data Catalog, refer to [Populating the AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/populate-data-catalog.html).
 
-![A diagram depicting how AWS Glue crawlers interact with data stores and other elements to populate the Data Catalog.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-building-data-lake-for-games/images/crawlers.png)
+![A diagram depicting how AWS Glue crawlers interact with data stores and other elements to populate the Data Catalog.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-building-data-lake-for-games/images/crawlers.png)
 
  When configuring the AWS Glue crawler to discover data in Amazon S3, you can choose from a full scan, where all objects in a given path are processed every time the crawler runs, or an incremental scan, where only the objects in a newly added folder are processed.
 

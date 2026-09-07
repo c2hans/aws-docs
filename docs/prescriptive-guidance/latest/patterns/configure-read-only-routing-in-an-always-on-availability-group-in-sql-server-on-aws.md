@@ -47,7 +47,7 @@ SQL Server uses the read-only routing mechanism to redirect the incoming read-on
 
 The following diagram shows how the Always On availability group (AG) listener redirects queries that contain the `ApplicationIntent` parameter in the connection to the appropriate secondary node.
 
-![Three step-process between two Availability Zones for node 1 WSFC and node 2 WSFC with Amazon EFS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/19b5937b-da10-4c74-8619-fdcb758f2211/images/f9ba0f89-7dc2-4f4c-8eee-bef56968ad2d.png)
+![Three step-process between two Availability Zones for node 1 WSFC and node 2 WSFC with Amazon EFS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/19b5937b-da10-4c74-8619-fdcb758f2211/images/f9ba0f89-7dc2-4f4c-8eee-bef56968ad2d.png)
 
 1. A request is sent to the Always On availability group listener.
 

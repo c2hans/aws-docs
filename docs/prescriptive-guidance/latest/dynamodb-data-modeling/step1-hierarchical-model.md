@@ -13,7 +13,7 @@ For example, you might build a system where 80–90 percent of the queries are t
 
 Diagramming an example tree for car components can help you map the relationship between them. The following diagram shows a dependency graph with four levels. CM1 is the top-level component for the example car itself. It has two subcomponents for two example batteries, CM2 and CM3. Each battery has two subcomponents, which are the modules. CM2 has modules CM4 and CM5, and CM3 has modules CM6 and CM7. Each module has several subcomponents, which are the cells. The CM4 module has two cells, CM8 and CM9. CM5 has one cell, CM10. CM6 and CM7 don't have any associated cells yet.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-data-modeling/images/guide-img/225c2600-95f1-4c8c-9e23-419bc7ae3c55/images/add4af92-a6e7-4cec-b42f-534de207a2b3.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-data-modeling/images/guide-img/225c2600-95f1-4c8c-9e23-419bc7ae3c55/images/add4af92-a6e7-4cec-b42f-534de207a2b3.png)
 
 This guide will use this tree and its component identifiers as a reference. A top component will be referred to as a *parent*, and a subcomponent will be referred to as a *child***.** For example, top component CM1 is the parent of CM2 and CM3. CM2 is the parent of CM4 and CM5. This graphs the parent-child relationships.
 

@@ -18,4 +18,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-serverless-data-a
 
  The following diagram illustrates this architecture.
 
-![A diagram depicting an AWS serverless data analytics pipeline reference architecture .](http://docs.aws.amazon.com/whitepapers/latest/aws-serverless-data-analytics-pipeline/images/da-pipeline.png)
+![A diagram depicting an AWS serverless data analytics pipeline reference architecture .](https://docs.aws.amazon.com/whitepapers/latest/aws-serverless-data-analytics-pipeline/images/da-pipeline.png)

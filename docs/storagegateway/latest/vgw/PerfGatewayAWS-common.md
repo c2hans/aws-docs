@@ -35,7 +35,7 @@ Data throughput, data latency, and operations per second are three measures that
 
 Moving the cursor over a data point displays information about the data point, including its value and bytes uploaded. Divide this value by the **Period** value (5 minutes) to get the throughput at that sample point. For example, if the throughput from the gateway to AWS is 555,544,576 bytes over a period of 300 seconds, then the approximate throughput per second is 1.85 megabytes per second.
 
-![a sample cloud bytes uploaded metric graph for a gateway with the sum statistic.](http://docs.aws.amazon.com/storagegateway/latest/vgw/images/GatewayMetrics_25.png)
+![a sample cloud bytes uploaded metric graph for a gateway with the sum statistic.](https://docs.aws.amazon.com/storagegateway/latest/vgw/images/GatewayMetrics_25.png)
 
 **To measure the latency per operation of a gateway**
 

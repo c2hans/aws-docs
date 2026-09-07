@@ -50,4 +50,4 @@ You can choose from two deployment options:
 + If you want complete control over the configuration of your compute environment, including memory and storage settings, and control over operating system patches: migrate your .NET application to Amazon EC2.
 + If you don't require full control over the infrastructure: use Elastic Beanstalk. Elastic Beanstalk automatically sets up a managed environment for your application.
 
-![Rehosting legacy .NET apps on AWS](http://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-net-applications/images/guide-img/e6435ff7-ff5b-43b9-841d-7a90ca834432/images/8fa53bdf-393e-4a2c-9abd-d6b3dd2f1e0b.png)
+![Rehosting legacy .NET apps on AWS](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-net-applications/images/guide-img/e6435ff7-ff5b-43b9-841d-7a90ca834432/images/8fa53bdf-393e-4a2c-9abd-d6b3dd2f1e0b.png)

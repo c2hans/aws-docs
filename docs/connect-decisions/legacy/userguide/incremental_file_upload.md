@@ -12,4 +12,4 @@ If you're using an automated connector, executing scripts, or using a middle war
 **Note**
 If an existing file with the same file name is re uploaded to Amazon S3, AWS Supply Chain will overwrite the file on Amazon S3.
 
-![Data ingestion for subsequent file uploads](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Data_lake_upload.png)
+![Data ingestion for subsequent file uploads](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Data_lake_upload.png)

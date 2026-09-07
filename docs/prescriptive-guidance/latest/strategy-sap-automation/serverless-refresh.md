@@ -29,4 +29,4 @@ The following image and process describe how the automation for SAP serverless r
 
 1. The Lambda functions use an Amazon DynamoDB table to track the progress of each step in the state machine.
 
-![Architecture diagram showing how you can use automation to perform a serverless refresh.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sap-automation/images/guide-img/029e7e61-9fe5-41b5-83f4-177d03384b91/images/02b1e527-edd7-44b6-bb0d-0c58c93a2290.png)
+![Architecture diagram showing how you can use automation to perform a serverless refresh.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sap-automation/images/guide-img/029e7e61-9fe5-41b5-83f4-177d03384b91/images/02b1e527-edd7-44b6-bb0d-0c58c93a2290.png)

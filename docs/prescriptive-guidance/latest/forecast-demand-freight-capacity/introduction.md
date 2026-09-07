@@ -17,4 +17,4 @@ This guide describes a strategy to build a solution on AWS that makes an accurat
 
 The following image shows an example of a historical time series and 12-month forecasted range. You can use the recommendations in this guide to create an ML model that produces this type of forecast.
 
-![Line chart of historical data and 12-month forecasted range](http://docs.aws.amazon.com/prescriptive-guidance/latest/forecast-demand-freight-capacity/images/guide-img/4600072e-6d1e-414c-b39d-f89e1eed9438/images/9fbd42b7-edc2-47c8-8296-55149d48f512.png)
+![Line chart of historical data and 12-month forecasted range](https://docs.aws.amazon.com/prescriptive-guidance/latest/forecast-demand-freight-capacity/images/guide-img/4600072e-6d1e-414c-b39d-f89e1eed9438/images/9fbd42b7-edc2-47c8-8296-55149d48f512.png)

@@ -49,7 +49,7 @@ The following diagram illustrates the high-level architecture of this pattern. T
 + Amazon CloudWatch to monitor logs
 + AWS Identity and Access Management (IAM) to create tenant roles and policies
 
-![High-level multi-tenant serverless architecture.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/750196bb-03f6-4b6e-92cd-eb7141602547/images/1a8501e7-0776-4aca-aed3-28e3ada1d15d.png)
+![High-level multi-tenant serverless architecture.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/750196bb-03f6-4b6e-92cd-eb7141602547/images/1a8501e7-0776-4aca-aed3-28e3ada1d15d.png)
 
 **Automation and scale**
 
@@ -197,11 +197,11 @@ There are three common data partitioning models used in multi-tenant systems: si
 In the silo model, each tenant’s data is stored in a distinct storage area where there is no commingling of tenant data. You can use two approaches to implement the silo model with OpenSearch Service: domain per tenant and index per tenant.
 + **Domain per tenant** – You can use a separate OpenSearch Service domain (synonymous with an Elasticsearch cluster) per tenant. Placing each tenant in its own domain provides all the benefits associated with having data in a standalone construct. However, this approach introduces management and agility challenges. Its distributed nature makes it harder to aggregate and assess the operational health and activity of tenants. This is a costly option that requires each OpenSearch Service domain to have three master nodes and two data nodes for production workloads at the minimum.
 
-![Domain per tenant silo model for multi-tenant serverless architectures.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/750196bb-03f6-4b6e-92cd-eb7141602547/images/c2195f82-e5ed-40bb-b76a-3b0210bf1254.png)
+![Domain per tenant silo model for multi-tenant serverless architectures.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/750196bb-03f6-4b6e-92cd-eb7141602547/images/c2195f82-e5ed-40bb-b76a-3b0210bf1254.png)
 
 + **Index per tenant** – You can place tenant data in separate indexes within an OpenSearch Service cluster. With this approach, you use a tenant identifier when you create and name the index, by prepending the tenant identifier to the index name. The index per tenant approach helps you achieve your silo goals without introducing a completely separate cluster for each tenant. However, you might encounter memory pressure if the number of indexes grows, because this approach requires more shards, and the master node has to handle more allocation and rebalancing.
 
-![Index per tenant silo model for multi-tenant serverless architectures.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/750196bb-03f6-4b6e-92cd-eb7141602547/images/354a9463-25bb-422b-84de-d4875a7c8ea2.png)
+![Index per tenant silo model for multi-tenant serverless architectures.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/750196bb-03f6-4b6e-92cd-eb7141602547/images/354a9463-25bb-422b-84de-d4875a7c8ea2.png)
 
 **Isolation in the silo model** – In the silo model, you use IAM policies to isolate the domains or indexes that hold each tenant’s data. These policies prevent one tenant from accessing another tenant’s data. To implement your silo isolation model, you can create a resource-based policy that controls access to your tenant resource. This is often a domain access policy that specifies which actions a principal can perform on the domain’s sub-resources, including Elasticsearch indexes and APIs. With IAM identity-based polices, you can specify *allowed* or *denied* actions on the domain, indexes, or APIs within OpenSearch Service. The `Action` element of an IAM policy describes the specific action or actions that are allowed or denied by the policy, and the `Principal `element specifies the affected accounts, users, or roles.
 
@@ -245,7 +245,7 @@ To implement the tenant per index silo model, you would need to modify this samp
 
 In the pool model, all tenant data is stored in an index within the same domain. The tenant identifier is included in the data (document) and used as the partition key, so you can determine which data belongs to which tenant. This model reduces the management overhead. Operating and managing the pooled index is easier and more efficient than managing multiple indexes. However, because tenant data is commingled within the same index, you lose the natural tenant isolation that the silo model provides. This approach might also degrade performance because of the noisy neighbor effect.
 
-![Pool model for multi-tenant serverless architectures.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/750196bb-03f6-4b6e-92cd-eb7141602547/images/c2c3bb0f-6ccd-47a7-ab67-e7f3f8c7f289.png)
+![Pool model for multi-tenant serverless architectures.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/750196bb-03f6-4b6e-92cd-eb7141602547/images/c2c3bb0f-6ccd-47a7-ab67-e7f3f8c7f289.png)
 
 **Tenant isolation in the pool model** – In general, tenant isolation is challenging to implement in the pool model. The IAM mechanism used with the silo model doesn’t allow you to describe isolation based on the tenant ID stored in your document.
 
@@ -269,7 +269,7 @@ To achieve the required isolation in the pooled model, you can use [document-lev
 
 The hybrid model uses a combination of the silo and pool models in the same environment to offer unique experiences to each tenant tier (such as free, standard, and premium tiers). Each tier follows the same security profile that was used in the pool model.
 
-![Hybrid model for multi-tenant serverless architectures.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/750196bb-03f6-4b6e-92cd-eb7141602547/images/e7def98a-38ef-435a-9881-7e95ae4d4940.png)
+![Hybrid model for multi-tenant serverless architectures.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/750196bb-03f6-4b6e-92cd-eb7141602547/images/e7def98a-38ef-435a-9881-7e95ae4d4940.png)
 
 **Tenant isolation in the hybrid model** – In the hybrid model, you follow the same security profile as in the pool model, where using the FGAC security model at the document level provided tenant isolation. Although this strategy simplifies cluster management and offers agility, it complicates other aspects of the architecture. For example, your code requires additional complexity to determine which model is associated with each tenant. You also have to ensure that single-tenant queries don’t saturate the entire domain and degrade the experience for other tenants.
 
@@ -277,11 +277,11 @@ The hybrid model uses a combination of the silo and pool models in the same en
 
 *Test window for Tenant-1 query*
 
-![Test window for Tenant-1 query.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/750196bb-03f6-4b6e-92cd-eb7141602547/images/a6757d3f-977a-4ecc-90cb-83ab7f1c3588.png)
+![Test window for Tenant-1 query.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/750196bb-03f6-4b6e-92cd-eb7141602547/images/a6757d3f-977a-4ecc-90cb-83ab7f1c3588.png)
 
 *Test window for Tenant-2 query*
 
-![Test window for Tenant-2 query.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/750196bb-03f6-4b6e-92cd-eb7141602547/images/31bfd656-33ca-4750-b6e6-da4d703c2071.png)
+![Test window for Tenant-2 query.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/750196bb-03f6-4b6e-92cd-eb7141602547/images/31bfd656-33ca-4750-b6e6-da4d703c2071.png)
 
 ## Attachments
 <a name="attachments-750196bb-03f6-4b6e-92cd-eb7141602547"></a>

@@ -9,7 +9,7 @@ Loose coupling is the core characteristic of a microservices architecture, becau
 
 In the following illustration, different AWS databases are used by the "Sales," "Customer," and "Compliance" microservices. These microservices are deployed as AWS Lambda functions and accessed through an Amazon API Gateway API. AWS Identity and Access Management (IAM) policies ensure that data is kept private and not shared among the microservices. Each microservice uses a database type that meets its individual requirements; for example, "Sales" uses Amazon Aurora, "Customer" uses Amazon DynamoDB, and "Compliance" uses Amazon Relational Database Service (Amazon RDS) for SQL Server.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-data-persistence/images/guide-img/44ded022-4fc5-47f3-9dda-29ff14ee9ef8/images/138cae6b-aec5-4c5e-bfce-deba6133876c.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-data-persistence/images/guide-img/44ded022-4fc5-47f3-9dda-29ff14ee9ef8/images/138cae6b-aec5-4c5e-bfce-deba6133876c.png)
 
 You should consider using this pattern if:
 + Loose coupling is required between your microservices.

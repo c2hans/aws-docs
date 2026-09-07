@@ -30,7 +30,7 @@ This pattern shows how to track the usage costs of Amazon EMR clusters by config
 
 The following diagram shows how you can apply tags to track usage costs for specific Amazon EMR clusters.
 
-![Using cost allocation tags for Amazon EMR clusters.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/3e470077-e3b1-43cf-8cb9-0895fe39e664/images/fb6b78cb-47bb-4ba1-848a-98dba02bdbb2.png)
+![Using cost allocation tags for Amazon EMR clusters.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/3e470077-e3b1-43cf-8cb9-0895fe39e664/images/fb6b78cb-47bb-4ba1-848a-98dba02bdbb2.png)
 
 The diagram shows the following workflow:
 

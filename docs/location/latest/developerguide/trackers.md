@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/trackers.
 # Amazon Location Service trackers
 <a name="trackers"></a>
 
-![This diagram shows you how to create and use tracker resources.](http://docs.aws.amazon.com/location/latest/developerguide/images/illustration-trackers.PNG)
+![This diagram shows you how to create and use tracker resources.](https://docs.aws.amazon.com/location/latest/developerguide/images/illustration-trackers.PNG)
 
 **Note**
 Tracker storage is encrypted with AWS owned keys automatically. You can add another layer of encryption using KMS keys that you manage, to ensure that only you can access your data. For more information, see [Data encryption at rest for Amazon Location Service](encryption-at-rest.md).

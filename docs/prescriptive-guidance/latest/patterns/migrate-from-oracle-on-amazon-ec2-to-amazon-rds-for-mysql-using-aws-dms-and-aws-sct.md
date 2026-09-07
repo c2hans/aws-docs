@@ -42,11 +42,11 @@ This pattern walks you through the migration of a source Oracle database on Amaz
 
 **Data migration architecture**
 
-![Using AWS DMS to migrate from Oracle on Amazon EC2 to Amazon RDS for MySQL](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8a8e346e-7944-4999-bc11-208efead3792/images/c00f908c-f348-41dd-a31c-3931b990777a.png)
+![Using AWS DMS to migrate from Oracle on Amazon EC2 to Amazon RDS for MySQL](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8a8e346e-7944-4999-bc11-208efead3792/images/c00f908c-f348-41dd-a31c-3931b990777a.png)
 
 **Source and target architecture  **
 
-![Using AWS DMS and AWS SCT to migrate from Oracle on Amazon EC2 to Amazon RDS for MySQL](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8a8e346e-7944-4999-bc11-208efead3792/images/e7ba7ac0-3094-4142-b355-fb192e242432.png)
+![Using AWS DMS and AWS SCT to migrate from Oracle on Amazon EC2 to Amazon RDS for MySQL](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8a8e346e-7944-4999-bc11-208efead3792/images/e7ba7ac0-3094-4142-b355-fb192e242432.png)
 
 ## Tools
 <a name="migrate-from-oracle-on-amazon-ec2-to-amazon-rds-for-mysql-using-aws-dms-and-aws-sct-tools"></a>

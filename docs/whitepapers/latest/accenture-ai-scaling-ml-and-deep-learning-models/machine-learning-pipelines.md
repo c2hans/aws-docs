@@ -23,7 +23,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/accenture-ai-scaling-
 +  Scalability
 +  Transparency/Explainability
 
-![A diagram that shows the ML workflow and process with multiple teams that need to collaborate to create a complete ML solution in production .](http://docs.aws.amazon.com/whitepapers/latest/accenture-ai-scaling-ml-and-deep-learning-models/images/ml-workflow.png)
+![A diagram that shows the ML workflow and process with multiple teams that need to collaborate to create a complete ML solution in production .](https://docs.aws.amazon.com/whitepapers/latest/accenture-ai-scaling-ml-and-deep-learning-models/images/ml-workflow.png)
 
 ### Applying software engineering principles to data science
 <a name="applying-software-engineering-principles-to-data-science"></a>
@@ -41,11 +41,11 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/accenture-ai-scaling-
 
  Automated ML pipelines ensure one vital feature and requirement of a stable live enterprise AI platform: repeatability and reproducibility. Instead of manual ad-hoc Python scripts that may propagate data quality issues from sources, pipelines help ensure the issues are caught, handled, retried, or logged at every step of the pipeline.
 
-![A diagram that shows the design principles for a functioning MLOps platform .](http://docs.aws.amazon.com/whitepapers/latest/accenture-ai-scaling-ml-and-deep-learning-models/images/mlops-platform.png)
+![A diagram that shows the design principles for a functioning MLOps platform .](https://docs.aws.amazon.com/whitepapers/latest/accenture-ai-scaling-ml-and-deep-learning-models/images/mlops-platform.png)
 
  Implementing these design principles, the following diagram summarizes a modern and effective way to implement pipelines on AWS. This section describes the key ML processes, and the stages for creating a modern and performant ML pipeline on AWS.
 
-![A diagram that shows the ML engineering process and steps to create modern and effective ML pipelines on AWS .](http://docs.aws.amazon.com/whitepapers/latest/accenture-ai-scaling-ml-and-deep-learning-models/images/ml-engineering-process2.png)
+![A diagram that shows the ML engineering process and steps to create modern and effective ML pipelines on AWS .](https://docs.aws.amazon.com/whitepapers/latest/accenture-ai-scaling-ml-and-deep-learning-models/images/ml-engineering-process2.png)
 
 ## Tracking lineage
 <a name="tracking-lineage"></a>
@@ -54,4 +54,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/accenture-ai-scaling-
 
  [SageMaker AI Lineage Tracking API](https://docs.aws.amazon.com/sagemaker/latest/dg/lineage-tracking.html) has lineage traversal, contexts, and associations among other concepts that help in creating a lineage history for all stages of SageMaker AI Pipelines, training jobs, endpoints, SageMaker AI processing jobs, and models, as shown in the following image. Lineage of feature engineering jobs can and should be tracked in the same way. Amazon SageMaker AI ML Lineage Tracking helps in storing information about all the stages of a ML workflow from data preparation to model deployment.
 
-![A screenshot that shows tracking model lineage and pipeline lineage with Amazon SageMaker.](http://docs.aws.amazon.com/whitepapers/latest/accenture-ai-scaling-ml-and-deep-learning-models/images/tracking-model-lineage.png)
+![A screenshot that shows tracking model lineage and pipeline lineage with Amazon SageMaker.](https://docs.aws.amazon.com/whitepapers/latest/accenture-ai-scaling-ml-and-deep-learning-models/images/tracking-model-lineage.png)

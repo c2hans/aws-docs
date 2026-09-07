@@ -36,7 +36,7 @@ If a `credentials file` already exists, the new user information is added to the
  If a `credentials file` doesn't exist a new file is created.
 
 1. From the AWS Explorer choose **New Account Profile** icon to open the **New Account Profile** dialog.
-![AWS Explorer interface showing services and profile selection dropdown.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/credentials_ui.png)
+![AWS Explorer interface showing services and profile selection dropdown.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/credentials_ui.png)
 
 1. Complete the required fields in the **New Account Profile** dialog and choose the **OK** button to create the IAM user.
 

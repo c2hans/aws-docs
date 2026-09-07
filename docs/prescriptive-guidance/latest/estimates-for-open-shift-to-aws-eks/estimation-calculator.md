@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/estimates-f
 
 Structure your OpenShift to Amazon EKS migration using a phased approach that aligns with standard software development lifecycle (SDLC) practices. Each phase requires specific activities and effort allocation.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/estimates-for-open-shift-to-aws-eks/images/guide-img/36464cc7-72e2-4e8c-8f01-a2dcd63a2843/images/c1f6dbc1-7acd-4e91-bd68-9a4f2e459be8.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/estimates-for-open-shift-to-aws-eks/images/guide-img/36464cc7-72e2-4e8c-8f01-a2dcd63a2843/images/c1f6dbc1-7acd-4e91-bd68-9a4f2e459be8.png)
 
 The migration lifecycle includes the following phases:
 

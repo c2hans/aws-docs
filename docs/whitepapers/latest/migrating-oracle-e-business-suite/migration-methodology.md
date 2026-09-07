@@ -15,4 +15,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-bu
 
 For details on the AWS three-phase migration process, see [How to migrate](https://aws.amazon.com/cloud-migration/how-to-migrate/).
 
-![Diagram showing the Three-phase migration process: assess, mobilize, and migrate & modernize.](http://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-business-suite/images/three-phase-migration-process.png)
+![Diagram showing the Three-phase migration process: assess, mobilize, and migrate & modernize.](https://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-business-suite/images/three-phase-migration-process.png)

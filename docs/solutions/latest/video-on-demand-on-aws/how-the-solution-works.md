@@ -12,7 +12,7 @@ When a new video is added to the source Amazon Simple Storage Service (Amazon S3
 
  **Video on demand solution ingest workflow**
 
-![ingest workflow](http://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws/images/ingest-workflow.png)
+![ingest workflow](https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws/images/ingest-workflow.png)
 
 +  **Input Validate** - Parses the input to the workflow, checks for the source video file, and defines the workflow configuration using the AWS Lambda function environment variables. If turned on, this step downloads the metadata file and overwrites the default environment variables with the variable definitions in the metadata file (metadata and video version only). For more information, refer to [Metadata file](metadata-file.md).
 +  **MediaInfo** - Generates a signed Amazon S3 URL for the source video and runs MediaInfo to extract metadata about the video.
@@ -27,7 +27,7 @@ When the ingest workflow is complete, it starts the processing workflow. The pro
 
  **Video on demand solution ingest workflow**
 
-![processing workflow](http://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws/images/processing-workflow.png)
+![processing workflow](https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws/images/processing-workflow.png)
 
 +  **Profiler** - Gets the source video’s height and width from the metadata file, defines the settings for frame capture (if turned on), and chooses which template to use for encoding based on the source video’s height. For example, if the source video is greater than or equal to 1080p, the 1080p job template will be used.
 +  **Encoding Profile Check, Accelerated Transcoding Check, and Frame Capture check** - Helps visualize which settings the profiler step applied.
@@ -41,7 +41,7 @@ When encoding is complete, an EventBridge rule invokes an AWS Lambda function th
 
  **Video on demand solution publishing workflow**
 
-![publishing workflow](http://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws/images/publishing-workflow.png)
+![publishing workflow](https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws/images/publishing-workflow.png)
 
 +  **Output Validate** - Checks the event data for the completed encoding job, gets the GUID from the MediaConvert notification, gets the asset details from Amazon DynamoDB, and generates the Amazon S3 and Amazon CloudFront URLs for the MediaConvert outputs.
 +  **Archive Choice** - If Glacier or Glacier Deep Archive was activated, this step tags the source video with a unique identifier and the archive to invoke the Amazon Glacier lifecycle policy.

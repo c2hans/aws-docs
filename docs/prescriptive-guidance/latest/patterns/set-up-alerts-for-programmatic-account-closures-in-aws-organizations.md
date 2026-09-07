@@ -44,7 +44,7 @@ This pattern implements alerts when the `CloseAccount` and `RemoveAccountFromOrg
 
 The following diagram shows the solution architecture for this pattern.
 
-![Architecture for setting up alerts in AWS Organizations for account closures](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/ba9d9db1-fab8-4e3b-a1bb-f0be91ade5c6/images/92caee55-2722-4ba2-bdd2-66f1af35dce5.png)
+![Architecture for setting up alerts in AWS Organizations for account closures](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/ba9d9db1-fab8-4e3b-a1bb-f0be91ade5c6/images/92caee55-2722-4ba2-bdd2-66f1af35dce5.png)
 
 1. AWS Organizations processes a `CloseAccount` or `RemoveAccountFromOrganization` request.
 

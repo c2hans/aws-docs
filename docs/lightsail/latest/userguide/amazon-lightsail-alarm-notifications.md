@@ -24,7 +24,7 @@ You can review alarm notifications for Lightsail for all of your resources in th
 
 1. Under **Alarm notifications**, you can review your active alarms.
 
-![Displays an example notification for an active alarm.](http://docs.aws.amazon.com/lightsail/latest/userguide/images/amazon-lightsail-alarm-notification-example.png)
+![Displays an example notification for an active alarm.](https://docs.aws.amazon.com/lightsail/latest/userguide/images/amazon-lightsail-alarm-notification-example.png)
 
 ## Review email contacts pending verification
 <a name="amazon-lightsail-alarm-notifications-review-contacts"></a>
@@ -39,4 +39,4 @@ You can review your email contacts that are pending verification in the Lightsai
 
 1. Under **Contacts pending verification**, you can review your email contacts that are pending verification.
 
-![Displays an example notification for a pending email contact.](http://docs.aws.amazon.com/lightsail/latest/userguide/images/amazon-lightsail-alarm-pending-contact-example.png)
+![Displays an example notification for a pending email contact.](https://docs.aws.amazon.com/lightsail/latest/userguide/images/amazon-lightsail-alarm-pending-contact-example.png)

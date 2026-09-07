@@ -97,7 +97,7 @@ You can configure the **Send message** block by using the Connect Customer admin
 
 The following image shows the **Send message** properties page when it's configured to send an SMS message.
 
-![The properties page of the Send message block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/send-message-block-properties-sms.png)
+![The properties page of the Send message block.](https://docs.aws.amazon.com/connect/latest/adminguide/images/send-message-block-properties-sms.png)
 
 Configure the following properties on the page to send an SMS message:
 + **From**: The phone number that the message is to be sent from. The dropdown menu shows a list of phone numbers that are claimed for your Connect Customer instance.
@@ -130,7 +130,7 @@ Configure the following properties on the page to send an SMS message:
 
 The following image shows the **Send message** properties page when it's configured to send an WhatsApp message.
 
-![The properties page of the Send message block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/send-message-block-properties-whatsapp.png)
+![The properties page of the Send message block.](https://docs.aws.amazon.com/connect/latest/adminguide/images/send-message-block-properties-whatsapp.png)
 
 Configure the following properties on the page to send an WhatsApp message:
 + **From**: The phone number that the message is to be sent from. The dropdown menu shows a list of WhatsApp numbers that are imported into your Connect Customer instance.
@@ -163,7 +163,7 @@ If a customer has not messaged your business within the past 24 hours, they are 
 
 The following image shows the **Send message** properties page when it's configured to send an email.
 
-![The properties page of the Send message block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/send-message-block-properties-email.png)
+![The properties page of the Send message block.](https://docs.aws.amazon.com/connect/latest/adminguide/images/send-message-block-properties-email.png)
 
 Configure the following properties on the **Send message** properties page to send an email message:
 + **From**: Use the dropdown menu to choose the email address the message is to be sent from. The menu shows a list of email addresses configured for your Connect Customer instance.
@@ -198,7 +198,7 @@ An email template is a complete email message that contains plain or rich text c
 
 The following image shows an example dropdown menu with a list of available email templates.
 
-![The properties page of the Send message block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/send-message-block-template.png)
+![The properties page of the Send message block.](https://docs.aws.amazon.com/connect/latest/adminguide/images/send-message-block-template.png)
 
 The email template contains the subject and body of an email message to be sent to a customer.
 
@@ -211,7 +211,7 @@ The subject from the template is not included when the **Send message** block is
 In the case of email, when you use a message created in the **Send message** block, you need to enter a **Subject** and **Message** for the email.
 + **Subject**: You can enter up to 998 characters, including spaces.
 + **Message**: Enter plain text, up to 5000 characters, including spaces. The message can be set manually by typing in a message or dynamically by a **User-defined** attribute set within the flow. The following image shows the character count for an email message.
-![The character count for an email message.](http://docs.aws.amazon.com/connect/latest/adminguide/images/send-message-block-email-characters.png)
+![The character count for an email message.](https://docs.aws.amazon.com/connect/latest/adminguide/images/send-message-block-email-characters.png)
 
 In the case of SMS, when you use a message created in the **Send message** block, you need to enter only a **Message**, no subject.
 + **Message**: Enter plain text, up to 1024 characters, including spaces. Or, set the message dynamically by using a user-defined attribute set within the flow.

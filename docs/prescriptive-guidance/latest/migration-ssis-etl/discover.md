@@ -23,7 +23,7 @@ Migrating these ETL details from SSIS forms the bulk of the migration effort. Ho
 
 The outcome of the discovery phase can be an inventory, as the following table shows.
 
-![SSIS ETL inventory, as a output of the discovery phase in migrations](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-ssis-etl/images/guide-img/ae5b08b7-f641-4524-9650-6ac5a0f71dd9/images/2687b291-b057-4018-b256-f947e113d611.png)
+![SSIS ETL inventory, as a output of the discovery phase in migrations](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-ssis-etl/images/guide-img/ae5b08b7-f641-4524-9650-6ac5a0f71dd9/images/2687b291-b057-4018-b256-f947e113d611.png)
 
 This inventory might include the following information:
 + Package: Name of the SSIS package to migrate

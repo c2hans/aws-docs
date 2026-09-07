@@ -82,19 +82,19 @@ There are six different flavors of Amazon Linux 1 (AL1) version 2012.03. This co
 
 | Instance Type | EBS-Backed 32-bit | EBS-Backed 64-bit | Instance Store 32-bit | Instance Store 64-bit | Cluster Compute EBS-Backed 64-bit | Cluster GPU EBS-Backed 64-bit |
 | --- | --- | --- | --- | --- | --- | --- |
-| t1.micro | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |  |  |  |
-| m1.small | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |  |
-| m1.medium | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |  |
-| m1.large |  | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |  |
-| m1.xlarge |  | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |  |
-| c1.medium | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |  |
-| c1.xlarge |  | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |  |
-| m2.xlarge |  | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |  |
-| m2.2xlarge |  | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |  |
-| m2.4xlarge |  | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |  |
-| cc1.4xlarge |  |  |  |  | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |
-| cc2.8xlarge |  |  |  |  | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |
-| cg1.4xlarge |  |  |  |  |  | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |
+| t1.micro | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |  |  |  |
+| m1.small | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |  |
+| m1.medium | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |  |
+| m1.large |  | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |  |
+| m1.xlarge |  | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |  |
+| c1.medium | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |  |
+| c1.xlarge |  | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |  |
+| m2.xlarge |  | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |  |
+| m2.2xlarge |  | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |  |
+| m2.4xlarge |  | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |  |
+| cc1.4xlarge |  |  |  |  | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |
+| cc2.8xlarge |  |  |  |  | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |
+| cg1.4xlarge |  |  |  |  |  | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |
 
 ### Frequently Asked Terms
 <a name="faq-2011.09"></a>

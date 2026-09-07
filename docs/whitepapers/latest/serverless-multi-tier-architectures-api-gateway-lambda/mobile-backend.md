@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/serverless-multi-tier
 # Mobile backend
 <a name="mobile-backend"></a>
 
-![Architectural pattern for serverless mobile backend](http://docs.aws.amazon.com/whitepapers/latest/serverless-multi-tier-architectures-api-gateway-lambda/images/arch-pattern-serverless-mobile-backend.png)
+![Architectural pattern for serverless mobile backend](https://docs.aws.amazon.com/whitepapers/latest/serverless-multi-tier-architectures-api-gateway-lambda/images/arch-pattern-serverless-mobile-backend.png)
 
 * Architectural pattern for serverless mobile backend *
 

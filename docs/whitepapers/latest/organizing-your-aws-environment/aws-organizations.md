@@ -50,4 +50,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 
  The following diagram shows a basic organization that consists of seven accounts that are organized into four OUs under the [root.](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_getting-started_concepts.html#root) The organization also has a few policies that are applied to OUs.
 
-![Diagram showing an example of a basic organization](http://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/basic-organization-example.png)
+![Diagram showing an example of a basic organization](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/basic-organization-example.png)

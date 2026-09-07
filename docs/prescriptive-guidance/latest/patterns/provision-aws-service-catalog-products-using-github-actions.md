@@ -45,7 +45,7 @@ This pattern’s solution was created by using the following [GitHub Marketplace
 
 The following diagram shows the architecture for this solution.
 
-![Using GitHub Actions to provision Service Catalog products based on CloudFormation templates.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/49f82fa7-0c74-4581-bf92-95505dca264c/images/a13c7b41-534e-4a9e-bdca-2974fa40a49a.png)
+![Using GitHub Actions to provision Service Catalog products based on CloudFormation templates.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/49f82fa7-0c74-4581-bf92-95505dca264c/images/a13c7b41-534e-4a9e-bdca-2974fa40a49a.png)
 
 1. Administrators or platform engineers push standardized CloudFormation templates to a GitHub repository, where the templates are maintained. The GitHub repo also contains workflows that automate the provisioning of AWS Service Catalog using GitHub Actions.
 

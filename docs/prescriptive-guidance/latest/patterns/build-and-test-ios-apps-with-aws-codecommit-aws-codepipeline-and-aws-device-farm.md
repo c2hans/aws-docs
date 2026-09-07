@@ -44,7 +44,7 @@ This pattern is based on the post [Building and testing iOS and iPadOS apps with
 
 When a user commits changes to the source repository, the pipeline (AWS CodePipeline) fetches the code from the source repository, initiates a Jenkins build, and passes the application code to Jenkins. After the build, the pipeline retrieves the build artifact and starts an AWS Device Farm job to test the application against a device pool.
 
-![CI/CD pipeline uses AWS CodePipeline to build and test iOS applications on real devices.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/06fbd82f-4aed-441c-818c-5f89f56af78e/images/0ae3d7b6-b40c-44ef-9580-8c8266c3d841.png)
+![CI/CD pipeline uses AWS CodePipeline to build and test iOS applications on real devices.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/06fbd82f-4aed-441c-818c-5f89f56af78e/images/0ae3d7b6-b40c-44ef-9580-8c8266c3d841.png)
 
 ## Tools
 <a name="build-and-test-ios-apps-with-aws-codecommit-aws-codepipeline-and-aws-device-farm-tools"></a>

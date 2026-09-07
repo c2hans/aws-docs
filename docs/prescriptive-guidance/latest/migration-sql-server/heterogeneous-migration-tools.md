@@ -44,7 +44,7 @@ Babelfish also provides access to data by using the native PostgreSQL connection
 
  Babelfish enables your legacy SQL Server applications to communicate with Aurora without extensive code rewrites, by providing connections from the SQL Server or PostgreSQL port. The following diagram illustrates this architecture.
 
-![Communications between Babelfish and &AUR;.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-sql-server/images/guide-img/aa3b9357-4901-48ca-9fc9-a997d21ade3e/images/7779740b-c1a5-4482-a9f8-81ca8b995d1b.png)
+![Communications between Babelfish and &AUR;.](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-sql-server/images/guide-img/aa3b9357-4901-48ca-9fc9-a997d21ade3e/images/7779740b-c1a5-4482-a9f8-81ca8b995d1b.png)
 
 You can enable Babelfish on your Aurora cluster from the Amazon RDS management console. For instructions, see [Creating a Babelfish for Aurora PostgreSQL DB cluster](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish-create.html) in the Amazon RDS documentation.
 

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 
  **AWS account creation and management workflow with EventBridge, Lambda, DynamoDB, and other services.**
 
-![image4](http://docs.aws.amazon.com/solutions/latest/landing-zone-accelerator-on-aws/images/image4.png)
+![image4](https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerator-on-aws/images/image4.png)
 
 1. The solution deploys [Amazon EventBridge](https://aws.amazon.com/eventbridge/) rules that monitor for AWS Control Tower lifecycle events. These rules invoke AWS Lambda functions that perform different actions based on the lifecycle event. The solution uses the `AttachQuarantineScp` function to attach an AWS Organizations SCP to newly-enrolled accounts, if configured. The solution uses the `ControlTowerOuEvents` function to detect changes made to OUs in the multi-account environment.
 

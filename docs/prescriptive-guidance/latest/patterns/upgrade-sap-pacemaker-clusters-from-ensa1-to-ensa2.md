@@ -56,7 +56,7 @@ Technically, ENSA2 can be used with or without Enqueue Replicator 2. However, hi
 
 The following diagram shows an HA configuration of ASCS/SCS and ERS instances based on an ENSA2 cluster.
 
-![HA architecture for ASCS/SCS and ERS instances on an ENSA2 cluster](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c32560de-901f-4796-a6b3-c08c109b22c8/images/19501713-0ddf-4242-9ea3-90478200a19e.png)
+![HA architecture for ASCS/SCS and ERS instances on an ENSA2 cluster](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c32560de-901f-4796-a6b3-c08c109b22c8/images/19501713-0ddf-4242-9ea3-90478200a19e.png)
 
 **Comparison of ENSA1 and ENSA2 clusters**
 

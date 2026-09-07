@@ -53,7 +53,7 @@ For more information about AFT, see the [AWS Control Tower documentation](https:
 
 The following diagram illustrates the implementation discussed in this pattern.
 
-![Workflow for implementing AFT by using a bootstrap pipeline.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/944f9912-87c7-4cc5-8478-7070cf67f7ee/images/4ee74757-940d-4d92-a7f0-fb0db1476247.png)
+![Workflow for implementing AFT by using a bootstrap pipeline.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/944f9912-87c7-4cc5-8478-7070cf67f7ee/images/4ee74757-940d-4d92-a7f0-fb0db1476247.png)
 
 The workflow consists of three main tasks: creating the resources, generating the content, and running the pipeline.
 

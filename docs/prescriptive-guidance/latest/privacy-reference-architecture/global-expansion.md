@@ -44,7 +44,7 @@ This deployment can be the most cost effective, but additional consideration is 
 
 The following diagram shows a centralized landing zone with Regional deployments.
 
-![Centralized landing zone with Regional deployments.](http://docs.aws.amazon.com/prescriptive-guidance/latest/privacy-reference-architecture/images/guide-img/a4379862-3434-48e4-8691-64db36363b08/images/9ffce5e7-cc60-486d-bdf5-8373f92555eb.png)
+![Centralized landing zone with Regional deployments.](https://docs.aws.amazon.com/prescriptive-guidance/latest/privacy-reference-architecture/images/guide-img/a4379862-3434-48e4-8691-64db36363b08/images/9ffce5e7-cc60-486d-bdf5-8373f92555eb.png)
 
 ## Regional landing zones
 <a name="global-expansion-regional"></a>
@@ -57,7 +57,7 @@ Although this strategy can scale to meet many current and future requirements, i
 
 The following diagram shows separate landing zones in two Regions.
 
-![Separate landing zones in two Regions.](http://docs.aws.amazon.com/prescriptive-guidance/latest/privacy-reference-architecture/images/guide-img/a4379862-3434-48e4-8691-64db36363b08/images/ba0a7865-d45a-4090-a6be-8e79fe9370af.png)
+![Separate landing zones in two Regions.](https://docs.aws.amazon.com/prescriptive-guidance/latest/privacy-reference-architecture/images/guide-img/a4379862-3434-48e4-8691-64db36363b08/images/ba0a7865-d45a-4090-a6be-8e79fe9370af.png)
 
 ## AWS European Sovereign Cloud
 <a name="global-expansion-eea"></a>

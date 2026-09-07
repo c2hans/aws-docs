@@ -160,7 +160,7 @@ You can decouple your database from an Elastic Beanstalk environment without aff
 
 1. Review all of the configurations values in the **Database settings** section, especially the **Database deletion policy**, which determines what happens to the database after it's decoupled.
 
-![Database settings page showing engine, instance class, storage, credentials, and deletion policy options.](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/images/aeb-rds-options-w-db-deletion-policies.png)
+![Database settings page showing engine, instance class, storage, credentials, and deletion policy options.](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/images/aeb-rds-options-w-db-deletion-policies.png)
 
    If all of the other configuration settings are correct, skip to **Step 6** to decouple the database.
 **Warning**
@@ -176,7 +176,7 @@ It’s important to *apply* the **Database deletion policy** setting *separately
 
 1. Go to the **Database connection** section of the pane.
 
-![Database connection options showing Couple database and Decouple database radio buttons.](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/images/aeb-rds-couple-decouple-db.png)
+![Database connection options showing Couple database and Decouple database radio buttons.](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/images/aeb-rds-couple-decouple-db.png)
 
 1. Choose **Decouple database**.
 

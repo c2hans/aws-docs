@@ -49,7 +49,7 @@ Use the following table to help you choose an authentication flow. More informat
 
 The Client Credentials flow is the shortest of the Amazon Cognito flows. It should be used if systems or services communicate with each other without any user interaction. The requesting system uses the client ID and the client secret to retrieve an access token. Because both systems work without user interaction, no additional consent step is required.
 
-![Client Credentials flow for Amazon Cognito](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7b5e567c-66a4-4386-a1f6-616ed77a6211/images/1138745d-69fa-4ecc-a9ec-c0b2a68ce7d2.png)
+![Client Credentials flow for Amazon Cognito](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7b5e567c-66a4-4386-a1f6-616ed77a6211/images/1138745d-69fa-4ecc-a9ec-c0b2a68ce7d2.png)
 
 The diagram illustrates the following:
 
@@ -71,7 +71,7 @@ The Authorization Code flow is for classic web-based authentication. In this flo
 
 The Authorization Code flow is a redirection-based flow. The client must be able to interact with the web browser or a similar client. The client is redirected to an authentication server and authenticates against this server. If the client authenticates successfully, it is redirected back to the server.
 
-![Authorization Code flow for Amazon Cognito](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7b5e567c-66a4-4386-a1f6-616ed77a6211/images/1008296c-d5b8-449d-99d4-f0b2b7cf5d80.png)
+![Authorization Code flow for Amazon Cognito](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7b5e567c-66a4-4386-a1f6-616ed77a6211/images/1008296c-d5b8-449d-99d4-f0b2b7cf5d80.png)
 
 The diagram illustrates the following:
 
@@ -97,7 +97,7 @@ This flow should not be used:
 
 Authorization Code flow with Proof Key for Code Exchange (PKCE) should be used for single-page applications and mobile applications. It is the successor of the Implicit flow and is more secure because it uses PKCE. PKCE is an extension to the OAuth 2.0 authorization code grant for public clients. PKCE guards against the redemption of intercepted authorization codes.
 
-![Authorization Code flow with PKCE for Amazon Cognito](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7b5e567c-66a4-4386-a1f6-616ed77a6211/images/1609da4f-decd-4d43-afe0-31237238df6d.png)
+![Authorization Code flow with PKCE for Amazon Cognito](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7b5e567c-66a4-4386-a1f6-616ed77a6211/images/1609da4f-decd-4d43-afe0-31237238df6d.png)
 
 The diagram illustrates the following:
 
@@ -123,7 +123,7 @@ This flow should not be used:
 
 The Resource Owner Password flow is intended for applications with no redirect capabilities. It is built by creating a login form in your own application. The login is checked on Amazon Cognito through a CLI or SDK call instead of relying on redirect flows. Federation is not possible in this authentication flow because federation requires browser-based redirects.
 
-![Resource Owner Password flow for Amazon Cognito](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7b5e567c-66a4-4386-a1f6-616ed77a6211/images/d74bc596-08a3-40f4-a6a7-07f6610fe6b1.png)
+![Resource Owner Password flow for Amazon Cognito](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7b5e567c-66a4-4386-a1f6-616ed77a6211/images/d74bc596-08a3-40f4-a6a7-07f6610fe6b1.png)
 
 The diagram illustrates the following:
 

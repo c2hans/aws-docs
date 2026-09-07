@@ -33,7 +33,7 @@ Scaling activities are performed with cooldown periods between them to prevent r
 
 The following diagram shows an overview of how a target tracking scaling policy works when the set up is complete.
 
-![Overview diagram of a target tracking scaling policy](http://docs.aws.amazon.com/autoscaling/application/userguide/images/target-tracking-scaling-policy.png)
+![Overview diagram of a target tracking scaling policy](https://docs.aws.amazon.com/autoscaling/application/userguide/images/target-tracking-scaling-policy.png)
 
 Note that a target tracking scaling policy is more aggressive in adding capacity when utilization increases than it is in removing capacity when utilization decreases. For example, if the policy's specified metric reaches its target value, the policy assumes that your application is already heavily loaded. So it responds by adding capacity proportional to the metric value as fast as it can. The higher the metric, the more capacity is added.
 

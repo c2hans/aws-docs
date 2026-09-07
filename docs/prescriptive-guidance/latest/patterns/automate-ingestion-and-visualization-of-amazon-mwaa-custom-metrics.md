@@ -40,7 +40,7 @@ This pattern discusses how to use Amazon Managed Grafana to create and monitor c
 
 The following architecture diagram highlights the AWS services used in the solution.
 
-![Workflow to automate the ingestion of Amazon MWAA custom metrics.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/3458d0a9-aee1-428a-bf2f-c357bb531c64/images/b43ed8d2-94ac-4438-913b-81c7eba8f3e0.png)
+![Workflow to automate the ingestion of Amazon MWAA custom metrics.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/3458d0a9-aee1-428a-bf2f-c357bb531c64/images/b43ed8d2-94ac-4438-913b-81c7eba8f3e0.png)
 
 The preceding diagram steps through the following workflow:
 

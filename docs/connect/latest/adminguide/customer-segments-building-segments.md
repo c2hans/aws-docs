@@ -22,14 +22,14 @@ Connect Customer provides two ways to build customer segments: 1/ Define segment
 
  Additionally, you can create a second audience group, and then create a relationship (AND, OR, or EXCLUDE) between the two audience groups to further narrow down, concatenate, or exclude customers from the first audience group.
 
-![Two audience groups.](http://docs.aws.amazon.com/connect/latest/adminguide/images/customer-segments-building-segments-1.png)
+![Two audience groups.](https://docs.aws.amazon.com/connect/latest/adminguide/images/customer-segments-building-segments-1.png)
 
 ## Audience groups
 <a name="customer-segments-audience-groups"></a>
 
  When you create a customer segment, you create one or more audience groups. An audience group consists of these components:
 
-![A conceptual diagram that shows the components of audience groups.](http://docs.aws.amazon.com/connect/latest/adminguide/images/customer-segments-audience-groups-1.png)
+![A conceptual diagram that shows the components of audience groups.](https://docs.aws.amazon.com/connect/latest/adminguide/images/customer-segments-audience-groups-1.png)
 
 +  **Starting audiences**: The customer segments that define the initial user population. You can specify up to 5 starting audiences, or all of the profiles in your Customer Profiles domain.
 +  **Filter groups**: Categories of audience information that you apply on top of the starting audiences. You can add multiple groups of filters which are connected by OR relationships.
@@ -54,7 +54,7 @@ Connect Customer provides two ways to build customer segments: 1/ Define segment
 1.  To create a segment, make sure that you have created security profiles permissions as a prerequisite. For more information, see [Assign security profile permissions to manage customer segments](security-profile-customer-profile-segmentation.md). In addition, to best visualize the membership of your segment, we recommend data ingestion before segment creation. To ingest profiles through S3 or external applications, see [Create and ingest customer data into Customer Profiles](customer-profiles-object-type-mappings.md) or [Integrate external applications with Connect Customer Customer Profiles](integrate-external-apps-customer-profiles.md).
 
 1.  Choose **Create a segment** in the Customer segment table view.
-![The Create a segment button.](http://docs.aws.amazon.com/connect/latest/adminguide/images/step-1-build-a-new-segment-1.png)
+![The Create a segment button.](https://docs.aws.amazon.com/connect/latest/adminguide/images/step-1-build-a-new-segment-1.png)
 
 ### Step 2: Specify a name and description
 <a name="step-2-configure-specify-name-and-description"></a>
@@ -63,7 +63,7 @@ Connect Customer provides two ways to build customer segments: 1/ Define segment
 The Connect Customer admin website uses the entered name as the `DisplayName` of the segment, and generates an identifier based on it. The generated identifier is used as the `SegmentDefinitionName` when you access the segment by using Customer Profiles APIs.
 +  For **Description**, optionally enter a description for the customer segment.
 
-![A Segment name section.](http://docs.aws.amazon.com/connect/latest/adminguide/images/step-2-configure-specify-name-and-description-1.png)
+![A Segment name section.](https://docs.aws.amazon.com/connect/latest/adminguide/images/step-2-configure-specify-name-and-description-1.png)
 
 ### Step 3: Choose the starting audiences to include in audience group 1
 <a name="step-3-choose-the-starting-audiences-to-include-in-audience-group"></a>
@@ -73,20 +73,20 @@ The Connect Customer admin website uses the entered name as the `DisplayName` of
 1.  Under **Audience group 1**, for the **Starting audience** dropdown list, select one or more segments to include in the audience group, or choose **All profiles from Customer Profiles**.
 **Note**
  When you choose multiple segments as the starting audience, the segments are connected by `OR` relationships. For example, if you choose **Premium membership customers** and **Basic membership customers** segments as the starting audiences, all profiles who are in either of the segments will be the included.
-![A Starting audience dropdown list.](http://docs.aws.amazon.com/connect/latest/adminguide/images/step-3-choose-the-starting-audiences-to-include-in-audience-group-1.png)
+![A Starting audience dropdown list.](https://docs.aws.amazon.com/connect/latest/adminguide/images/step-3-choose-the-starting-audiences-to-include-in-audience-group-1.png)
 
 1. To create a segment with ProfileType, start by using **All Accounts from Customer Profiles** as your initial audience. With this approach, you can filter account-based profiles effectively. It's important to note that unless you specify otherwise, the segmentation process will automatically export all profiles within the customer profiles domain. This default behavior ensures comprehensive coverage but can be adjusted to meet specific targeting needs.
 
    The following is an example of how a segment definition can be created (either account- or standard-profiles based):
 
    **Filters all account-based profiles (ProfileType=ACCOUNT\_PROFILE)**
-![Filters all account-based profiles (ProfileType=ACCOUNT_PROFILE).](http://docs.aws.amazon.com/connect/latest/adminguide/images/step-3-choose-the-starting-audiences-to-include-in-audience-group-1-5.png)
+![Filters all account-based profiles (ProfileType=ACCOUNT_PROFILE).](https://docs.aws.amazon.com/connect/latest/adminguide/images/step-3-choose-the-starting-audiences-to-include-in-audience-group-1-5.png)
 **Note**
 To create a segment only with sub-profiles, create a new audience that excludes account-based profiles. For example, profiles with `ProfileType` is PROFILE or where `ProfileType` is empty.
-![To create a segment only with sub-profiles, create a new audience that excludes account-based profiles.](http://docs.aws.amazon.com/connect/latest/adminguide/images/step-3-choose-the-starting-audiences-to-include-in-audience-group-1-6.png)
+![To create a segment only with sub-profiles, create a new audience that excludes account-based profiles.](https://docs.aws.amazon.com/connect/latest/adminguide/images/step-3-choose-the-starting-audiences-to-include-in-audience-group-1-6.png)
 
    **Sample Campaign that targets accounts to be reached out by using `Phone`**
-![Sample Campaign that targets accounts to be reached out by using Phone.](http://docs.aws.amazon.com/connect/latest/adminguide/images/step-3-choose-the-starting-audiences-to-include-in-audience-group-1-7.png)
+![Sample Campaign that targets accounts to be reached out by using Phone.](https://docs.aws.amazon.com/connect/latest/adminguide/images/step-3-choose-the-starting-audiences-to-include-in-audience-group-1-7.png)
 
    In this example, the campaign targets a single account with the following call sequence:
 
@@ -95,14 +95,14 @@ To create a segment only with sub-profiles, create a new audience that excludes 
    1. If John doesn't answer, then calls Sally (ID: 3) as a backup contact
 
 1.  After you choose a starting audience, the **Estimated audience** section updates to display the eligible profiles. After you edit the audience groups, you can choose **Refresh** button in the Estimated audience section to re-fetch the estimate.
-![An Estimated audience section.](http://docs.aws.amazon.com/connect/latest/adminguide/images/step-3-choose-the-starting-audiences-to-include-in-audience-group-2.png)
+![An Estimated audience section.](https://docs.aws.amazon.com/connect/latest/adminguide/images/step-3-choose-the-starting-audiences-to-include-in-audience-group-2.png)
 
 ### Step 4: Choose and apply audience filters (optional)
 <a name="step-4-choose-and-apply-audience-filters-optional"></a>
 
  After you’ve chosen your starting audiences, you can further refine the audiences by applying conditional logic to attributes. Segments supports standard profile attributes, custom profile attributes, and calculated attributes.
 
-![Audience filters.](http://docs.aws.amazon.com/connect/latest/adminguide/images/step-4-choose-and-apply-audience-filters-optional-1.png)
+![Audience filters.](https://docs.aws.amazon.com/connect/latest/adminguide/images/step-4-choose-and-apply-audience-filters-optional-1.png)
 
 **To choose and configure the audience filters**
 
@@ -161,7 +161,7 @@ Compare against fixed values that you enter.
 **Attribute references**
 Reference another attribute's value, evaluated individually for each customer. Choose the profile attribute or calculated attribute that you want to reference from the list.
 
-![A filter group with the Value drop-down expanded, showing the Static values and Attribute references options.](http://docs.aws.amazon.com/connect/latest/adminguide/images/customer-segments-building-segments-2.png)
+![A filter group with the Value drop-down expanded, showing the Static values and Attribute references options.](https://docs.aws.amazon.com/connect/latest/adminguide/images/customer-segments-building-segments-2.png)
 
 **Note**
 Customer segments in the Connect Customer admin website uses UTC timezone and a default time of 00:00:00 UTC for all time-based filters. You can filter on dates but times are recorded as the same value. If you enter a date of 2024-01-01, the console passes the time as 2024-01-01T00:00:00Z.
@@ -169,7 +169,7 @@ Customer segments in the Connect Customer admin website uses UTC timezone and a 
 **Note**
 When you specify a filter for a calculated attribute, you can override the time period of the calculated attribute definition. For example, the filter `Frequent caller is true for the event time period of 60 days` will override the *Frequent caller* [Default calculated attributes in Connect Customer Customer Profiles](customerprofiles-default-calculated-attributes.md) to evaluate the value within the past 60 days instead of the [time period configured in the calculated attribute definition](customerprofiles-calculated-attributes-apis.md). This override is specific to the segment, and does not affect the calculated attribute definition itself.
 
-![Attribute, Operator, and Value to be evaluated.](http://docs.aws.amazon.com/connect/latest/adminguide/images/step-4-choose-and-apply-audience-filters-optional-2.png)
+![Attribute, Operator, and Value to be evaluated.](https://docs.aws.amazon.com/connect/latest/adminguide/images/step-4-choose-and-apply-audience-filters-optional-2.png)
 
 1. Specify the Value. You can specify multiple values connected by `OR` relationships. For example, `Address.Country` is `USA` or `Mexico`. The value input shows suggestions in the dropdown for string operators based on the customer profiles stored in the domain.
 **Note**
@@ -182,7 +182,7 @@ Values are case-sensitive. For example, *Address.Country is US* returns differen
 
  When you have multiple filter groups in an audience group, Customer segments in the Connect Customer admin website use OR relationships to connect between the filter groups.
 
-![Two audience filters.](http://docs.aws.amazon.com/connect/latest/adminguide/images/step-4-choose-and-apply-audience-filters-optional-3.png)
+![Two audience filters.](https://docs.aws.amazon.com/connect/latest/adminguide/images/step-4-choose-and-apply-audience-filters-optional-3.png)
 
 1. When you’re finished setting up the audience group, choose **Create segment**.
 
@@ -197,14 +197,14 @@ Values are case-sensitive. For example, *Address.Country is US* returns differen
 **To configure second audience group**
 
 1.  Choose **AND**, **OR**, or **EXCLUDE** relationship after configuring Audience group 1.
-![The AND, OR, or EXCLUDE options.](http://docs.aws.amazon.com/connect/latest/adminguide/images/step-5-add-the-second-audience-group-optional-1.png)
+![The AND, OR, or EXCLUDE options.](https://docs.aws.amazon.com/connect/latest/adminguide/images/step-5-add-the-second-audience-group-optional-1.png)
 
 1.  Choose the starting audience in Audience group 2. For reference, see [Step 3: Choose the starting audiences to include in audience group 1](#step-3-choose-the-starting-audiences-to-include-in-audience-group).
 
 1.  (Optional) Choose the filters by which you want to narrow down your segments. For reference, see [Step 4: Choose and apply audience filters (optional)](#step-4-choose-and-apply-audience-filters-optional)
 
 1.  When you finish setting up the segment, choose **Create segment**. Segment is created and you can now use the segment in outbound campaigns or flows.
-![A message that the segment was successfully created.](http://docs.aws.amazon.com/connect/latest/adminguide/images/step-5-add-the-second-audience-group-optional-2.png)
+![A message that the segment was successfully created.](https://docs.aws.amazon.com/connect/latest/adminguide/images/step-5-add-the-second-audience-group-optional-2.png)
 
 ### Step 6: Enable Sorting (optional)
 <a name="step-6-enable-sorting-optional"></a>
@@ -227,7 +227,7 @@ Segment sort order is respected only for voice campaigns and voice activities in
 
 1.  (Optional) Specify the data type by choosing **String**, **Numeric**, or **Date**. If you do not specify a type, it is automatically inferred based on sampled data.
 
-![The Enable Sorting configuration for segment results.](http://docs.aws.amazon.com/connect/latest/adminguide/images/customer-profiles-enable-segment-sorting.png)
+![The Enable Sorting configuration for segment results.](https://docs.aws.amazon.com/connect/latest/adminguide/images/customer-profiles-enable-segment-sorting.png)
 
 ## Creating segments powered by Spark SQL
 <a name="w2aac40c53c13c15"></a>

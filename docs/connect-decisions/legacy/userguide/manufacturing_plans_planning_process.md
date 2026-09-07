@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/manuf
 
 Manufacturing Plans include material, transfer, and production plans. These plans are created based on the configured network topology for an item. The following illustration shows the steps involved in generating these plans. These steps are repeated for each product or site combination that is in the scope of a Manufacturing Plan.
 
-![Manufacturing Plan process](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/manufacturing_plan_process.png)
+![Manufacturing Plan process](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/manufacturing_plan_process.png)
 
 The steps and logic for Demand Processing, Inventory Target calculation, and Net Requirements calculation are common between Manufacturing Plans and Auto Replenishment. For more information, see [Planning process](planning-process.md) and [Inventory policies](inventory-policies.md).
 + **Production requirements** – For products with site combinations with sourcing rule type *Manufacture*, Supply Planning uses the production process referenced in the sourcing rule to calculate production requirements. Make type should be used for finished goods or sub-assemblies that go through a production process. Lead times and setup times from the *production\_process* data entity, along with the BOM, is used to determine the material or component requirements. Supply Planning also applies the frozen horizon defined in the production process or the default setting to freeze supply during this time period and move all requirements to the first time period after the frozen time horizon.

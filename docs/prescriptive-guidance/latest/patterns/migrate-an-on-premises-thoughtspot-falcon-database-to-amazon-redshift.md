@@ -29,7 +29,7 @@ This pattern describes the steps and process for migrating a ThoughtSpot Falcon 
 ## Architecture
 <a name="migrate-an-on-premises-thoughtspot-falcon-database-to-amazon-redshift-architecture"></a>
 
-![Migrating a ThoughtSpot Falcon database from an on-premises data center to Amazon Redshift.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/b0ca29f4-b269-4b57-b386-738693a6b334/images/2b483990-1f30-439c-ba13-dc0cb0650360.png)
+![Migrating a ThoughtSpot Falcon database from an on-premises data center to Amazon Redshift.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/b0ca29f4-b269-4b57-b386-738693a6b334/images/2b483990-1f30-439c-ba13-dc0cb0650360.png)
 
 The diagram shows the following workflow:
 

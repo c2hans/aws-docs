@@ -42,7 +42,7 @@ This pattern shows you how to use Amazon Personalize to generate personalized re
 
 The following diagram illustrates a pipeline for ingesting real-time data into Amazon Personalize. The pipeline then uses that data to generate personalized and re-ranked recommendations for users.
 
-![Data ingestion architecture for Amazon Personalize](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/42eb193b-2347-408a-8b25-46beeb3b29ca/images/786dbd56-7d7f-41bb-90f6-d4485d73fe15.png)
+![Data ingestion architecture for Amazon Personalize](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/42eb193b-2347-408a-8b25-46beeb3b29ca/images/786dbd56-7d7f-41bb-90f6-d4485d73fe15.png)
 
 The diagram shows the following workflow:
 

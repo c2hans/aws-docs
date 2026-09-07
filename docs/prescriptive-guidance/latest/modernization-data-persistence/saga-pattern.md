@@ -9,7 +9,7 @@ The saga pattern is a failure management pattern that helps establish consistenc
 
 The following illustration shows how the saga pattern implements an order processing system by using AWS Step Functions. Each step (for example, "ProcessPayment") also has separate steps to handle the success (for example, "UpdateCustomerAccount") or failure (for example, "Cancel Order") of the process.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-data-persistence/images/guide-img/44ded022-4fc5-47f3-9dda-29ff14ee9ef8/images/5999cebf-dc27-4e54-ac0f-78f8159e2d91.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-data-persistence/images/guide-img/44ded022-4fc5-47f3-9dda-29ff14ee9ef8/images/5999cebf-dc27-4e54-ac0f-78f8159e2d91.png)
 
 You should consider using this pattern if:
 + The application needs to maintain data consistency across multiple microservices without tight coupling.

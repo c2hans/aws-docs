@@ -21,7 +21,7 @@ The following diagram demonstrates the direct link between HTTPS endpoints and a
 
 This capability enables creating HTTP-based endpoints with Lambda functions and function URLs without needing to configure and manage web servers. It highlights the simplicity and efficiency of using function URLs to expose Lambda functions as HTTP endpoints.
 
-![Lambda function made available as HTTPs endpoint using Function URL feature.](http://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-the-right-aws-service-for-your-microservice-endpoints/images/guide-img/45387eb1-39dc-4dd7-a6b2-e3cd572b2949/images/43b20120-0b8b-4343-a8b1-eef9a3e022b2.png)
+![Lambda function made available as HTTPs endpoint using Function URL feature.](https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-the-right-aws-service-for-your-microservice-endpoints/images/guide-img/45387eb1-39dc-4dd7-a6b2-e3cd572b2949/images/43b20120-0b8b-4343-a8b1-eef9a3e022b2.png)
 
 The following is an example of a POST request to a Lambda function URL using cURL:
 

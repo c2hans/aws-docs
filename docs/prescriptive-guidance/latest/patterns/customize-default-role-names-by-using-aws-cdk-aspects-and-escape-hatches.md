@@ -33,7 +33,7 @@ This pattern demonstrates how to customize the default names of roles that are c
 
 **Target architecture **
 
-![Architecture for using escape hatches and aspects to customize AWS CDK-assigned role names.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c149d8d2-1da6-4680-ab0b-e5051b69688c/images/15e56ca5-f150-4522-b374-8ee2dcc655a9.png)
+![Architecture for using escape hatches and aspects to customize AWS CDK-assigned role names.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c149d8d2-1da6-4680-ab0b-e5051b69688c/images/15e56ca5-f150-4522-b374-8ee2dcc655a9.png)
 
 + An AWS CDK app consists of one or more CloudFormation stacks, which are synthesized and deployed to manage AWS resources.
 + To modify a property of an AWS CDK-managed resource that isn't exposed by a layer 2 (L2) construct, you use an escape hatch to override the underlying CloudFormation properties (in this case, the role name), and an aspect to apply the role to all resources in the AWS CDK app during the AWS CDK stack synthesis process.

@@ -29,7 +29,7 @@ Before you start, verify that the following requirements are met:
 
 **Architecture**
 
-![The architecture diagram.](http://docs.aws.amazon.com/wickr/latest/wickrenterpriseinstall/images/enterprise-architecture.png)
+![The architecture diagram.](https://docs.aws.amazon.com/wickr/latest/wickrenterpriseinstall/images/enterprise-architecture.png)
 
 ## Install dependencies
 <a name="getting-started-install-dependencies"></a>

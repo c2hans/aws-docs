@@ -48,6 +48,6 @@ To generate the README files, run the `npx typedoc` command in the root director
 
 The following sample document is generated by TypeDoc.
 
-![Sample TypeDoc document](http://docs.aws.amazon.com/prescriptive-guidance/latest/best-practices-cdk-typescript-iac/images/guide-img/b7d5d887-7172-4d47-9f1f-1cf7ae181482/images/3525b7c2-7570-4535-90cc-090d8040d9f6.png)
+![Sample TypeDoc document](https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practices-cdk-typescript-iac/images/guide-img/b7d5d887-7172-4d47-9f1f-1cf7ae181482/images/3525b7c2-7570-4535-90cc-090d8040d9f6.png)
 
 For more information about TypeDoc integration options, see [Doc Comments](https://typedoc.org/guides/doccomments/) in the TypeDoc documentation.

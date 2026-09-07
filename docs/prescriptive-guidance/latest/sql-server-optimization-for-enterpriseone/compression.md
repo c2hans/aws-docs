@@ -49,7 +49,7 @@ AND type_desc = 'ROWS'
 
 The output should be similar to the following:
 
-![Disk space utilization before compression](http://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-optimization-for-enterpriseone/images/guide-img/1ded277e-59b3-4f6d-bcef-fa7d04f06c63/images/bd785879-8f95-40b6-b366-eb7c1c80e7e4.png)
+![Disk space utilization before compression](https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-optimization-for-enterpriseone/images/guide-img/1ded277e-59b3-4f6d-bcef-fa7d04f06c63/images/bd785879-8f95-40b6-b366-eb7c1c80e7e4.png)
 
 In this example, the table rows occupy 3,407 MB of disk space.You will observe in this example that the ROWS are occupying 3407MB of diskspace.
 
@@ -156,6 +156,6 @@ AND type_desc = 'ROWS'
 
 The output should be similar to the following.
 
-![Disk space utilization after compression](http://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-optimization-for-enterpriseone/images/guide-img/1ded277e-59b3-4f6d-bcef-fa7d04f06c63/images/82337489-46e7-42f8-b1ba-23042f640953.png)
+![Disk space utilization after compression](https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-optimization-for-enterpriseone/images/guide-img/1ded277e-59b3-4f6d-bcef-fa7d04f06c63/images/82337489-46e7-42f8-b1ba-23042f640953.png)
 
 In this example, you can see that space used dropped from 3,407 MB to 1,275 MB, which represents a 62 percent savings from compression. The savings for your database will vary based on how data is distributed among the tables in the database.

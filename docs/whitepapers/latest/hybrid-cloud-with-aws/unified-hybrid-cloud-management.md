@@ -18,7 +18,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-with-aws
 
  In this example, a hybrid cloud user authenticates with the Identity, security, and access management service of the hybrid cloud to gain authorization to the management interfaces of the compute service. The compute service provides a unified provisioning, monitoring, and operating interface for the user. Internally, the compute service interacts with the core fleet or device management layer for on-premises infrastructure management, [AWS EC2 APIs](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Welcome.html) for EC2 management, as well as the core services of metrics and logging services for metrics and logging needs and identity, security and access management for gaining access authorization to on-premises and AWS resources through their respective APIs.
 
-![Example of compute service on a hybrid cloud](http://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-with-aws/images/compute-example-hybrid-cloud.png)
+![Example of compute service on a hybrid cloud](https://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-with-aws/images/compute-example-hybrid-cloud.png)
 
 * Example of compute service on a hybrid cloud *
 

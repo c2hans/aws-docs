@@ -67,7 +67,7 @@ Visual Studio's NuGet tools are accessible from **Tools** > **NuGet Package Mana
 **Note**
 All AWS Construct Library modules deemed "experimental" (see [Versioning](reference.md#versioning)) are flagged as pre-release in NuGet.
 
-![NuGet package manager showing Amazon CDK AWS packages with version and download info.](http://docs.aws.amazon.com/cdk/v1/guide/images/visual-studio-nuget.png)
+![NuGet package manager showing Amazon CDK AWS packages with version and download info.](https://docs.aws.amazon.com/cdk/v1/guide/images/visual-studio-nuget.png)
 
 Look on the **Updates** page to install new versions of your packages.
 

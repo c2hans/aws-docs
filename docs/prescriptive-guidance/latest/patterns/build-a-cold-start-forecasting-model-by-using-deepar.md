@@ -40,7 +40,7 @@ Traditional time series forecasting methods such as autoregressive integrated mo
 
 The following diagram shows the workflow and architecture components for this pattern.
 
-![Workflow to build a cold start forecasting model using SageMaker and Amazon S3.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/98d021d3-96d2-40a9-b0ce-717934652173/images/d97d66a0-8eef-4d30-ac5f-4c6c79cf6c9f.png)
+![Workflow to build a cold start forecasting model using SageMaker and Amazon S3.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/98d021d3-96d2-40a9-b0ce-717934652173/images/d97d66a0-8eef-4d30-ac5f-4c6c79cf6c9f.png)
 
 The workflow performs the following tasks:
 

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modern-data
 
 Data quality is an integral yet often overlooked part of the data cleaning process. The following diagram shows how data quality checks fit into the data engineering automation and access control lifecycle.
 
-![Data quality diagram](http://docs.aws.amazon.com/prescriptive-guidance/latest/modern-data-centric-use-cases/images/guide-img/058e3d2f-f726-4dc0-989b-0f15dcd3bc33/images/fc535f9d-6171-437b-86e0-f271e20b516e.png)
+![Data quality diagram](https://docs.aws.amazon.com/prescriptive-guidance/latest/modern-data-centric-use-cases/images/guide-img/058e3d2f-f726-4dc0-989b-0f15dcd3bc33/images/fc535f9d-6171-437b-86e0-f271e20b516e.png)
 
 The following table provides an overview of different data quality solutions based on use case.
 

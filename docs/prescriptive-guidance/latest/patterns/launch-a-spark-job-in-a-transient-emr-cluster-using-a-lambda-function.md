@@ -39,7 +39,7 @@ To demonstrate a sample batch computation and output, this pattern will launch a
 
 **Target architecture **
 
-![Lambda to Amazon EMR and Spark to Amazon S3](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6c999fa7-9550-4929-a5c1-60394142175d/images/eb4fbb3f-2114-44d2-b9da-3fdcb9ca456e.png)
+![Lambda to Amazon EMR and Spark to Amazon S3](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6c999fa7-9550-4929-a5c1-60394142175d/images/eb4fbb3f-2114-44d2-b9da-3fdcb9ca456e.png)
 
 **Automation and scale**
 

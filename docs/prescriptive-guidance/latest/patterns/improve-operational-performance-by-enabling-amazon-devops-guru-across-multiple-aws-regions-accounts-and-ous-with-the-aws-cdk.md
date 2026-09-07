@@ -71,7 +71,7 @@ The following diagram illustrates the architecture of a sample serverless applic
 
 1. Amazon SNS sends notification messages to the operator.
 
-![A sample serverless application that has been deployed across multiple accounts and Regions.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6075ca48-862a-4aa0-93c6-10bad8195a5c/images/beeb0992-aaa8-4f08-b983-685b6b8b8d5e.png)
+![A sample serverless application that has been deployed across multiple accounts and Regions.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6075ca48-862a-4aa0-93c6-10bad8195a5c/images/beeb0992-aaa8-4f08-b983-685b6b8b8d5e.png)
 
 **Automation and scale**
 

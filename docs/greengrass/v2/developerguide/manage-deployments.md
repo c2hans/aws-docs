@@ -67,7 +67,7 @@ The component dependency resolution may fail for two main reasons: target versio
 + A thing exists in one thing group and you also want to add that thing to a new thing group. The deployment will fail if the new thing group requires a different thing version.
 + A deployment may also fail if a thing belongs to a thing group and wants to update the component version through a thing deployment.
 
-![Component dependencies that result in a failed deployment.](http://docs.aws.amazon.com/greengrass/v2/developerguide/images/dependency-4.png)
+![Component dependencies that result in a failed deployment.](https://docs.aws.amazon.com/greengrass/v2/developerguide/images/dependency-4.png)
 
 *Failure log sample:*
 
@@ -139,7 +139,7 @@ There's a version conflict between two requirements for ComponentA:
 + ComponentC requires ComponentA versions lower than 2.0.0
 These two requirements contradict each other, making it impossible for the nucleus to find a ComponentA version that satisfies both requirements. Therefore, the dependency resolution fails.
 
-![Component dependencies that result in a failed deployment.](http://docs.aws.amazon.com/greengrass/v2/developerguide/images/dependency-3.png)
+![Component dependencies that result in a failed deployment.](https://docs.aws.amazon.com/greengrass/v2/developerguide/images/dependency-3.png)
 
 *Failure log sample:*
 

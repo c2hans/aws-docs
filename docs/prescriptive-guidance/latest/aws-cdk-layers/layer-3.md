@@ -9,7 +9,7 @@ If L1 constructs perform a literal translation of CloudFormation resources into 
 
 L3 constructs are called *patterns* within the AWS CDK. A pattern is any object that extends the `Construct` class in the AWS CDK (or extends a class that extends the `Construct `class) to perform any abstracted logic beyond layer 2. When you use the AWS CDK CLI to run **cdk init** to start a new AWS CDK project, you must choose from three AWS CDK application types: `app`, `lib`, and `sample-app`.
 
-![Instructions for Running cdk init](http://docs.aws.amazon.com/prescriptive-guidance/latest/aws-cdk-layers/images/guide-img/b3d19902-dcaf-4bb8-91d6-0ae9000416b5/images/ca08a7cf-f559-4ec4-bfb8-3d65a949059e.png)
+![Instructions for Running cdk init](https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-cdk-layers/images/guide-img/b3d19902-dcaf-4bb8-91d6-0ae9000416b5/images/ca08a7cf-f559-4ec4-bfb8-3d65a949059e.png)
 
 `app` and `sample-app` both represent classic AWS CDK applications where you build and deploy CloudFormation stacks to AWS environments. When you choose `lib`, you're choosing to build a brand new L3 construct. `app` and `sample-app` allow you to pick any language that the AWS CDK supports, but you can only pick TypeScript with `lib`. This is because the AWS CDK is natively written in TypeScript and uses an open source system called [JSii](https://github.com/aws/jsii) to translate the original code into the other supported languages. When you choose `lib` to initiate your project, you're choosing to build an extension to the AWS CDK.
 

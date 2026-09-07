@@ -7,7 +7,7 @@ The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you 
 # Using Queues in Amazon SQS
 <a name="sqs-examples-using-queues"></a>
 
-![JavaScript code example that applies to Node.js execution](http://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/nodeicon.png)
+![JavaScript code example that applies to Node.js execution](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/nodeicon.png)
 
 **This Node.js code example shows:**
 + How to get a list of all of your message queues

@@ -77,18 +77,18 @@ To deploy a new Text use case using a SageMaker AI endpoint for inference:
    + The name of the SageMaker AI endpoint you want to use. DevOps users can obtain this from the AWS console. Note that the endpoint must be in the same account and Region as the solution is deployed in.
 
       **Location of the endpoint name on the AWS console**
-![image15](http://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/image15.png)
+![image15](https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/image15.png)
    + The schema of the input payload expected by the endpoint. To support the widest set of endpoints, admin users are required to tell the solution how their endpoint expects the input to be formatted. In the model selection wizard, provide the JSON schema for the solution to send to the endpoint. You can add placeholders to inject static and dynamic values into the request payload. The available options are:
      + Mandatory placeholders: \\<\\<prompt\\>\\> will be dynamically replaced with the full input (for example, history, context, and user input as per the prompt template) to be sent to the SageMaker AI endpoint at runtime.
      + Optional placeholders: \\<\\<temperature\\>\\> \*,\\\* as well as any parameters defined in advanced model parameters can be provided to the endpoint. Any string containing a placeholder enclosed in \\<\\< and \\>\\> (for example, \\<\\<max\_new\_tokens\\>\\>) will be replaced by the value of the advanced model parameter of the same name.
 
         **Example input schema - setting mandatory fields, prompt and temperature, along with a custom advanced parameter, max\_new\_tokens. Output path must be supplied as a valid JSONPath string**
-![image16](http://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/image16.png)
+![image16](https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/image16.png)
 
 1. The location of the LLMs generated string response within the output payload. This must be supplied as a JSONPath expression to indicate where the final text response shown to users is expected to be accessed from within the endpoint’s return object and response.
 
     **Example of adding Advanced model parameters to use within SageMaker AI input schema (see Figure 2 for previous options/settings)**
-![image17](http://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/image17.png)
+![image17](https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/image17.png)
 
 **Note**
 SageMaker AI now supports hosting multiple models behind the same endpoint, and this is the default configuration when deploying an endpoint in the current version of SageMaker AI Studio (not Studio Classic).

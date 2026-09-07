@@ -51,7 +51,7 @@ The following diagram shows the DNS resolution flow from AWS to on premises. Thi
 
 1. Share and associate the rules with VPCs in other accounts that host resources that need to resolve on-premises hosted domains. This can be done in different ways depending on your use case, as described later in this section.
 
-![Inbound and outbound endpoints in an AWS to on premises DNS resolution flow.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/01e700cd-be8c-4a5d-bc89-b901a260d045/images/d69d4cad-5e2c-4481-9370-2708e8a4f8c1.png)
+![Inbound and outbound endpoints in an AWS to on premises DNS resolution flow.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/01e700cd-be8c-4a5d-bc89-b901a260d045/images/d69d4cad-5e2c-4481-9370-2708e8a4f8c1.png)
 
 After you set up connectivity, the steps involved in the outbound resolution are as follows:
 
@@ -71,7 +71,7 @@ The next diagram shows the DNS resolution flow from the on-premises environment 
 
 1. Associate the private hosted zones with the Shared Services VPC. Share and associate these zones with cross-account VPCs for VPC-to-VPC DNS resolution. This can be done in different ways depending on your use case, as described later in this section.
 
-![Inbound and outbound endpoints in an on premises to AWS DNS resolution flow.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/01e700cd-be8c-4a5d-bc89-b901a260d045/images/a6f5348c-2041-453e-8939-2b4ee0b7ebd8.png)
+![Inbound and outbound endpoints in an on premises to AWS DNS resolution flow.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/01e700cd-be8c-4a5d-bc89-b901a260d045/images/a6f5348c-2041-453e-8939-2b4ee0b7ebd8.png)
 
 After you set up connectivity, the steps involved in the inbound resolution are as follows:
 
@@ -95,7 +95,7 @@ In basic setup, the implementation for hybrid DNS resolution in a multi-account 
 
 The following diagram shows DNS resolution flows in this basic setup.
 
-![Using basic setup for hybrid DNS resolution in a multi-account AWS environment.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/01e700cd-be8c-4a5d-bc89-b901a260d045/images/258e4bcd-e9c6-43b5-bab8-856ca22206b9.png)
+![Using basic setup for hybrid DNS resolution in a multi-account AWS environment.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/01e700cd-be8c-4a5d-bc89-b901a260d045/images/258e4bcd-e9c6-43b5-bab8-856ca22206b9.png)
 
 This setup works well when you work with DNS infrastructure on a limited scale. However, it can become challenging to manage as your environment grows. The operational overhead of managing how private hosted zone and Resolver rules are shared and associated with VPCs individually increases significantly with scale. Additionally, service quotas such as the 300 VPC association limit per private hosted zone can become constraining factors in large-scale deployments. Enhanced setup addresses these challenges.
 
@@ -105,7 +105,7 @@ Route 53 Profiles offer a streamlined solution for managing DNS resolution in hy
 
 The following diagram shows DNS resolution flows in an enhanced setup.
 
-![Using advanced setup with Route 53 Profiles for hybrid DNS resolution in a multi-account AWS environment.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/01e700cd-be8c-4a5d-bc89-b901a260d045/images/55b9681d-ddb4-4a55-b4ec-fc9afa9870fa.png)
+![Using advanced setup with Route 53 Profiles for hybrid DNS resolution in a multi-account AWS environment.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/01e700cd-be8c-4a5d-bc89-b901a260d045/images/55b9681d-ddb4-4a55-b4ec-fc9afa9870fa.png)
 
 Route 53 Profiles let you package private hosted zone associations, Resolver forwarding rules, and DNS firewall rules into a single, shareable unit. You can create Profiles in the Shared Services account and share them with member accounts by using AWS RAM. When a profile is shared and applied to target VPCs, all necessary associations and configurations are automatically handled by the service. This significantly reduces the operational overhead of DNS management and provides excellent scalability for growing environments.
 

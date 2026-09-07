@@ -41,7 +41,7 @@ This pattern describes the steps for migrating on-premises Oracle databases to A
 
 The following diagram shows how to migrate an on-premises Oracle database to Amazon RDS for Oracle by using AWS DMS.
 
-![Workflow for migrating Oracle databases to Amazon RDS for Oracle by using AWS DMS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/25912997-0ac0-4303-9ce5-0621a7e12406/images/20f94a5c-1095-4182-b964-c379414c9a36.png)
+![Workflow for migrating Oracle databases to Amazon RDS for Oracle by using AWS DMS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/25912997-0ac0-4303-9ce5-0621a7e12406/images/20f94a5c-1095-4182-b964-c379414c9a36.png)
 
 The diagram shows the following workflow:
 
@@ -57,7 +57,7 @@ The diagram shows the following workflow:
 
 The following diagram shows how to migrate an on-premises Oracle database to Amazon RDS for Oracle by using native Oracle tools.
 
-![Workflow for migrating Oracle databases to Amazon RDS for Oracle by using Oracle tools.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/25912997-0ac0-4303-9ce5-0621a7e12406/images/af8e0e1a-d4c8-4d99-9780-3e093ad9a257.png)
+![Workflow for migrating Oracle databases to Amazon RDS for Oracle by using Oracle tools.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/25912997-0ac0-4303-9ce5-0621a7e12406/images/af8e0e1a-d4c8-4d99-9780-3e093ad9a257.png)
 
 The diagram shows the following workflow:
 

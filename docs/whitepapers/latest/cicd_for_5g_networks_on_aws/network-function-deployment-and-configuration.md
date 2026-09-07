@@ -11,7 +11,7 @@ To vet the images that are published by third parties, a vulnerability scanning 
 
 The following figure demonstrates the architecture of the Image Vulnerability Scanning solution.
 
-![A diagram depicting the architecture of the Image Vulnerability Scanning solution.](http://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_on_aws/images/cicd_5g13.png)
+![A diagram depicting the architecture of the Image Vulnerability Scanning solution.](https://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_on_aws/images/cicd_5g13.png)
 
 *Architecture of the Image Vulnerability Scanning solution*
 
@@ -29,6 +29,6 @@ Logs and metrics are collected and centralized in OpenSearch and Grafana. Third 
 
 A MANO that can coordinate network resources can also be deployed and integrated with the solution. It uses the data collected to take automated actions such as network slicing and Quality of Service (QoS) auto scaling.
 
-![A diagram depicting an application pipeline.](http://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_on_aws/images/cicd_5g12.png)
+![A diagram depicting an application pipeline.](https://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_on_aws/images/cicd_5g12.png)
 
 *Application pipeline*

@@ -28,7 +28,7 @@ A **Layout ID** is assigned to each Mechanical Turk project you create on the Re
 1.  Click **Create**, and then click **New Batch with an Existing Project**.
 
 1.  Click the **Project Name** of an existing project to view **Layout ID** and **Parameters**.
-![Click Project Name to View LayoutID](http://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/images/AWS-Mturk-Existing-Projects-LayoutId-01.jpg)
+![Click Project Name to View LayoutID](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/images/AWS-Mturk-Existing-Projects-LayoutId-01.jpg)
 
 ## Using a HITLayout
 <a name="ApiReference_HITLayoutArticle-usingaHITlayoutId"></a>

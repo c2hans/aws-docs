@@ -13,4 +13,4 @@ When designing your SaaS offering, you can adopt a single network access model o
 
 The following diagram shows a hybrid access approach, where consumers have the option to connect privately from their data center or CSP, publicly, or directly through AWS PrivateLink (if they have workloads in the AWS Cloud).
 
-![Hybrid connection for access from on premises, through the internet, or through the AWS Cloud.](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-network-access-options/images/guide-img/c6ce66a8-c949-4e68-b09d-850373110e63/images/004bd0bb-328f-4e79-9267-37a9a312ab1d.png)
+![Hybrid connection for access from on premises, through the internet, or through the AWS Cloud.](https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-network-access-options/images/guide-img/c6ce66a8-c949-4e68-b09d-850373110e63/images/004bd0bb-328f-4e79-9267-37a9a312ab1d.png)

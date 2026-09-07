@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 
  This section describes key aspects of medical imaging systems, such as PACS and VNA solutions.
 
-![Diagram of a cloud-based medical imaging system architecture.](http://docs.aws.amazon.com/wellarchitected/latest/healthcare-industry-lens/images/cloud-based-medical-imaging-system.png)
+![Diagram of a cloud-based medical imaging system architecture.](https://docs.aws.amazon.com/wellarchitected/latest/healthcare-industry-lens/images/cloud-based-medical-imaging-system.png)
 
 +  The solution should be highly available and deployed across multiple AWS Availability Zones.
 +  Medical imaging systems often consist of front-end viewers, application servers, databases, and storage for the imaging data. Where possible, each tier of the solution should be able to auto scale independently. Containerization or serverless can simplify operations. Auto Scaling based on load provides performance during peak demand and minimize costs during periods of low demand.

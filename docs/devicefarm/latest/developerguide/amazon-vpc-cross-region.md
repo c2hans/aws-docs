@@ -29,7 +29,7 @@ Establishing a peering connection between two VPCs can change the security postu
 
 The following diagram shows the components in the example and the interactions between these components.
 
-![Work with private devices across AWS Regions.](http://docs.aws.amazon.com/devicefarm/latest/developerguide/images/device-farm-vpc-across-region-vpn.png)
+![Work with private devices across AWS Regions.](https://docs.aws.amazon.com/devicefarm/latest/developerguide/images/device-farm-vpc-across-region-vpn.png)
 
 **Topics**
 + [VPC peering overview for VPCs in different Regions in AWS Device Farm](#device-farm-vpce-configuration-cross-region-vpc-overview)

@@ -10,6 +10,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/calculated-att
 1. Once selected, choose **Delete**.
 
 1. In the **Delete Attribute** pop-up, verify the details and enter *confirm* to enable the **Delete** button.
-![Delete a calculated attribute.](http://docs.aws.amazon.com/connect/latest/adminguide/images/calculated-attributes-admin-website-delete-1.png)
+![Delete a calculated attribute.](https://docs.aws.amazon.com/connect/latest/adminguide/images/calculated-attributes-admin-website-delete-1.png)
 
 1. Choose **Delete**.

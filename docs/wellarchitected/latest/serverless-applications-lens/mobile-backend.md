@@ -30,7 +30,7 @@ The growing demand from mobile users means that applications need a rich set of 
 ## Reference architecture
 <a name="mobile-backend-ref-arch"></a>
 
-![Reference architecture diagram for a mobile backend](http://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/images/reference-architecture-for-mobile-backend.png)
+![Reference architecture diagram for a mobile backend](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/images/reference-architecture-for-mobile-backend.png)
 
 1.  **Amazon Cognito** is used for user management and as an identity provider for your mobile application. Additionally, it allows mobile users to leverage existing social identities such as Facebook, Twitter, Google\+, and Amazon to sign in.
 

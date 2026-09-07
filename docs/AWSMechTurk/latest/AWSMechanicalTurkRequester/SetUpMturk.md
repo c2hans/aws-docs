@@ -22,7 +22,7 @@ If you plan to interact with Mechanical Turk only through the Mechanical Turk re
 
 To create an Amazon Mechanical Turk account, go to the [Amazon Mechanical Turk Requester](https://requester.mturk.com/) website, choose **Create an account**, and follow the on-screen instructions.
 
-![Create an Account and Sign In options with Requester link in the navigation bar.](http://docs.aws.amazon.com/AWSMechTurk/latest/AWSMechanicalTurkRequester/images/mturk_create_account.png)
+![Create an Account and Sign In options with Requester link in the navigation bar.](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMechanicalTurkRequester/images/mturk_create_account.png)
 
 Note that Mechanical Turk accounts use the same login credentials and profiles as Amazon retail websites such as [Amazon.com](http://amazon.com/). Changes in the name or address on your account, on either Amazon.com or Mechanical Turk, are reflected in both locations.
 

@@ -143,7 +143,7 @@ As shown in the following figure, the header in column C has been prefixed with 
 
  **Import header schema helper**
 
-![import header schema helper](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/import-header-schema-helper.png)
+![import header schema helper](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/import-header-schema-helper.png)
 
 #### Attribute import format
 <a name="attribute-import-format"></a>

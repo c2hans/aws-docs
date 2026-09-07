@@ -11,7 +11,7 @@ Your attribute settings apply to all layouts, regardless of content sharing.
 
 The following image shows a video tile with a border color and corner radius applied.
 
-![Image of a screen share and video tile with a red border and rounded corners.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/compositing-speaker-border.png)
+![Image of a screen share and video tile with a red border and rounded corners.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/compositing-speaker-border.png)
 
 The following example shows how to use each attribute. In this case, video tiles have rounded corners with a five-pixel radius. The tiles have a green border, also five pixels wide. When the speaker talks, the `HighlightColor` attribute changes the border color to red.
 

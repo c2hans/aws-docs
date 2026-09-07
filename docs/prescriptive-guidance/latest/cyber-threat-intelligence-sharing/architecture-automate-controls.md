@@ -13,7 +13,7 @@ This section provides examples of how to set up automated CTI responses in [Amaz
 
 The following diagram shows a sample architecture. Step Functions workflows automatically update the threat list in GuardDuty, the domain list in Route 53 Resolver DNS Firewall, and the rule group in Network Firewall.
 
-![An EventBridge event initiates Step Functions workflows that update the AWS security services.](http://docs.aws.amazon.com/prescriptive-guidance/latest/cyber-threat-intelligence-sharing/images/guide-img/65270b8a-43a4-49d2-8123-9467febf488a/images/8698999b-6963-4a69-abe9-29de36c9eefb.png)
+![An EventBridge event initiates Step Functions workflows that update the AWS security services.](https://docs.aws.amazon.com/prescriptive-guidance/latest/cyber-threat-intelligence-sharing/images/guide-img/65270b8a-43a4-49d2-8123-9467febf488a/images/8698999b-6963-4a69-abe9-29de36c9eefb.png)
 
 The figure shows the following workflow:
 
@@ -43,7 +43,7 @@ GuardDuty natively integrates with [AWS Security Hub CSPM](https://docs.aws.amaz
 
 The following image shows how a Step Functions workflow can use CTI from a threat feed to update the threat list in GuardDuty. When a Lambda function finishes converting the CTI to JSON format, it triggers an EventBridge event that starts the workflow.
 
-![A Step Functions workflow uses CTI to automatically update the threat list in GuardDuty.](http://docs.aws.amazon.com/prescriptive-guidance/latest/cyber-threat-intelligence-sharing/images/guide-img/65270b8a-43a4-49d2-8123-9467febf488a/images/73305c6d-0f11-4953-880b-32d124e8ac3d.png)
+![A Step Functions workflow uses CTI to automatically update the threat list in GuardDuty.](https://docs.aws.amazon.com/prescriptive-guidance/latest/cyber-threat-intelligence-sharing/images/guide-img/65270b8a-43a4-49d2-8123-9467febf488a/images/73305c6d-0f11-4953-880b-32d124e8ac3d.png)
 
 The diagram shows the following steps:
 
@@ -66,7 +66,7 @@ You can't retrieve a specific GuardDuty detector and IP address list because the
 
 The following image shows how a Step Functions workflow can use CTI from a threat feed to update the domain list in Amazon Route 53 Resolver DNS Firewall. When a Lambda function finishes converting the CTI to JSON format, it triggers an EventBridge event that starts the workflow.
 
-![A Step Functions workflow uses CTI to automatically update the domain list in DNS Firewall.](http://docs.aws.amazon.com/prescriptive-guidance/latest/cyber-threat-intelligence-sharing/images/guide-img/65270b8a-43a4-49d2-8123-9467febf488a/images/d8864bac-7b5a-49c5-873e-40c09833155d.png)
+![A Step Functions workflow uses CTI to automatically update the domain list in DNS Firewall.](https://docs.aws.amazon.com/prescriptive-guidance/latest/cyber-threat-intelligence-sharing/images/guide-img/65270b8a-43a4-49d2-8123-9467febf488a/images/d8864bac-7b5a-49c5-873e-40c09833155d.png)
 
 The diagram shows the following steps:
 
@@ -89,7 +89,7 @@ We recommend the following best practices:
 
 The following image shows how a Step Functions workflow can use CTI from a threat feed to update one or more rule groups in Network Firewall. When a Lambda function finishes converting the CTI to JSON format, it triggers an EventBridge event that starts the workflow.
 
-![A Step Functions workflow uses CTI to automatically update a rule group in Network Firewall.](http://docs.aws.amazon.com/prescriptive-guidance/latest/cyber-threat-intelligence-sharing/images/guide-img/65270b8a-43a4-49d2-8123-9467febf488a/images/150718fa-df05-4883-91c7-5bde36d1aadc.png)
+![A Step Functions workflow uses CTI to automatically update a rule group in Network Firewall.](https://docs.aws.amazon.com/prescriptive-guidance/latest/cyber-threat-intelligence-sharing/images/guide-img/65270b8a-43a4-49d2-8123-9467febf488a/images/150718fa-df05-4883-91c7-5bde36d1aadc.png)
 
 The diagram shows the following steps:
 

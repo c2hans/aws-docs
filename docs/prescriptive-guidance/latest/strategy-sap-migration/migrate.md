@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sa
 # Migrate phase
 <a name="migrate"></a>
 
-![https://1a9zxhkqsj.execute-api.us-west-2.amazonaws.com/v1/contents/2072f727-3a0b-4e29-9a4f-baa84a3343bb/images/a5d99701-2f4f-41e5-878f-3c0a1fc8c12d.png](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sap-migration/images/guide-img/2072f727-3a0b-4e29-9a4f-baa84a3343bb/images/edbcb404-53d9-4165-89b2-318d883f3e3d.png)
+![https://1a9zxhkqsj.execute-api.us-west-2.amazonaws.com/v1/contents/2072f727-3a0b-4e29-9a4f-baa84a3343bb/images/a5d99701-2f4f-41e5-878f-3c0a1fc8c12d.png](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sap-migration/images/guide-img/2072f727-3a0b-4e29-9a4f-baa84a3343bb/images/edbcb404-53d9-4165-89b2-318d883f3e3d.png)
 
 The migrate phase focuses on moving SAP workloads at scale and ensuring that the SAP on AWS infrastructure goes live successfully. To ensure this, the project uses IaC technologies such as [AWS CloudFormation](https://aws.amazon.com/cloudformation/) to automate SAP provisioning. If you want to use open-source tools,  you can read about the SAP repositories built by AWS Professional Services teams that specialize in SAP migrations, as described in the blog post [Automating SAP installation with open-source tools](https://aws.amazon.com/blogs/awsforsap/automating-sap-installation-with-open-source-tools/).
 
@@ -19,7 +19,7 @@ The project team automates the infrastructure build and provisions the key AWS c
 
 The following diagram provides a simplified example of the migrate phase (in green) as part of the full migration process. It shows the SAP production systems being migrated in two waves.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sap-migration/images/guide-img/2072f727-3a0b-4e29-9a4f-baa84a3343bb/images/d383f299-152c-4d23-8e93-dc04cea244f1.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sap-migration/images/guide-img/2072f727-3a0b-4e29-9a4f-baa84a3343bb/images/d383f299-152c-4d23-8e93-dc04cea244f1.png)
 
 For more information about this phase, read how the UK energy company Centrica [migrated their multibillion dollar enterprise](https://aws.amazon.com/partners/success/centrica-capgemini/) with the assistance of AWS Professional Services, as part of their digital transformation.
 

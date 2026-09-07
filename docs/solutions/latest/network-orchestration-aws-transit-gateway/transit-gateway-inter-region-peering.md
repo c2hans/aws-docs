@@ -9,7 +9,7 @@ You can use Transit Gateway peering to directly route traffic between two transi
 
  **Architecture diagram of AWS resources deployed to support Transit Gateway inter-Region peering.**
 
-![inter region architecture](http://docs.aws.amazon.com/solutions/latest/network-orchestration-aws-transit-gateway/images/inter-region-architecture.png)
+![inter region architecture](https://docs.aws.amazon.com/solutions/latest/network-orchestration-aws-transit-gateway/images/inter-region-architecture.png)
 
 1. When you [tag the transit gateway](tgw-peering-attachments.md#add-tags-to-transit-gateway), an EventBridge event initiates. The target for this event is the transit gateway peering attachment Lambda function in the hub account.
 

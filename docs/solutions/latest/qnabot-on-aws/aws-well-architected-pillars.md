@@ -13,7 +13,7 @@ The machine-learning lifecycle is the iterative process, with instructions and b
 
  **The Well-Architected machine learning lifecycle**
 
-![The Well-Architected machine learning lifecycle](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/wa-diagram.png)
+![The Well-Architected machine learning lifecycle](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/wa-diagram.png)
 
 ## Operational Excellence
 <a name="operational-excellence"></a>

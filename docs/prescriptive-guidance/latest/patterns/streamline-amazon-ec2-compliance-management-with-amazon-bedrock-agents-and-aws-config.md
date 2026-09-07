@@ -41,7 +41,7 @@ You can use this pattern as a blueprint to deploy your own generative AI-based 
 
 The following diagram shows the workflow and architecture components for this pattern.
 
-![Architecture and workflow for streamlining Amazon EC2 compliance management with Amazon Bedrock agents.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/f43ae2bd-209e-412b-9364-e73996360992/images/4ebf4bce-4927-4d78-841e-95c44b8d780f.png)
+![Architecture and workflow for streamlining Amazon EC2 compliance management with Amazon Bedrock agents.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/f43ae2bd-209e-412b-9364-e73996360992/images/4ebf4bce-4927-4d78-841e-95c44b8d780f.png)
 
 The workflow consists of these steps:
 

@@ -44,7 +44,7 @@ You can designate a test run as a baseline to compare future test runs against i
 
 Selecting a test run opens the detailed results view with three tabs: Test Run Results, Errors, and Artifacts.
 
-![Detailed test run results showing baseline comparison and metrics dashboard](http://docs.aws.amazon.com/solutions/latest/distributed-load-testing-on-aws/images/test-run-detailed-view.png)
+![Detailed test run results showing baseline comparison and metrics dashboard](https://docs.aws.amazon.com/solutions/latest/distributed-load-testing-on-aws/images/test-run-detailed-view.png)
 
  **Baseline information**
 

@@ -22,7 +22,7 @@ Before you start your migration, follow these steps:
 
 For project type, select **Migration**.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-cloudendure/images/guide-img/bbb5871c-6fdf-4a96-872d-e22410dc477d/images/5e75b3ae-ba32-4c95-847f-1a072fd7d7e1.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-cloudendure/images/guide-img/bbb5871c-6fdf-4a96-872d-e22410dc477d/images/5e75b3ae-ba32-4c95-847f-1a072fd7d7e1.png)
 
 **Note**
 Make sure that you have sufficient [migration licenses](https://docs.cloudendure.com/#Getting_Started_with_CloudEndure/Understanding_CloudEndure_Basic_Concepts/Understanding_CloudEndure_Basic_Concepts.htm) for your project.
@@ -39,7 +39,7 @@ Before you install CloudEndure Agents, you must create the AWS Identity and Acce
 1. Create a new IAM user and generate AWS credentials, which  consist of an access key ID and a secret access key. For more information, see the [CloudEndure documentation](https://docs.cloudendure.com/#Generating_and_Using_Your_Credentials/Working_with_AWS_Credentials/Generating_the_Required_AWS_Credentials/Generating_the_Required_AWS_Credentials.htm) and the [IAM documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html).
 
 1. In the CloudEndure User Console, choose **Setup & Info**, **AWS Credentials**.
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-cloudendure/images/guide-img/bbb5871c-6fdf-4a96-872d-e22410dc477d/images/31387e30-4c05-4743-88a9-f89e7a184f30.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-cloudendure/images/guide-img/bbb5871c-6fdf-4a96-872d-e22410dc477d/images/31387e30-4c05-4743-88a9-f89e7a184f30.png)
 
 1. Add the access key ID and secret access key you created in the previous step into the corresponding fields and save.
 
@@ -53,7 +53,7 @@ In general, there are three points of contact between CloudEndure components and
 + The CloudEndure Agent needs to communicate with the CloudEndure replication servers.
 + CloudEndure replication servers need to communicate with the CloudEndure Service Manager and Amazon Simple Storage Service (Amazon S3).
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-cloudendure/images/guide-img/bbb5871c-6fdf-4a96-872d-e22410dc477d/images/0db2de06-1b28-4ba8-8f08-139d16eac7c2.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-cloudendure/images/guide-img/bbb5871c-6fdf-4a96-872d-e22410dc477d/images/0db2de06-1b28-4ba8-8f08-139d16eac7c2.png)
 
 ### Network requirements
 <a name="network-requirements.4888e3ec-6149-5b96-8ba0-18a6d2cdf8b6"></a>

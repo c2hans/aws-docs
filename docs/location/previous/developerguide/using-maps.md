@@ -10,7 +10,7 @@ We released a new version of the Maps API, see the updated [Maps Developer Guide
 
 Amazon Location maps are cost-effective and interactive. You can replace an existing map in your application to save money, or add a new one to display location-based data visually, such as your store location.
 
-![Example map style in an app, showing parks mapped in central Seattle](http://docs.aws.amazon.com/location/previous/developerguide/images/maps_park_example.png)
+![Example map style in an app, showing parks mapped in central Seattle](https://docs.aws.amazon.com/location/previous/developerguide/images/maps_park_example.png)
 
 Amazon Location Service lets you choose a data provider for map operations by creating and configuring a map resource. The map resource configures the data provider and the style that is used to render the map.
 

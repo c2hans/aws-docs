@@ -14,7 +14,7 @@ In the silo model, storage of tenant data is fully isolated from any other tenan
 
 You can implement a silo model with Neptune by having one tenant per cluster. The following diagram shows three tenants accessing an application microservice in a virtual private cloud (VPC), with a separate cluster for each tenant.
 
-![The architecture including IAM and a tenant policy.](http://docs.aws.amazon.com/prescriptive-guidance/latest/multi-tenancy-amazon-neptune/images/guide-img/d9a33330-1308-4d3e-b2de-9b5b65b34e0f/images/00285ad7-80f2-4643-ae3e-57b95a8986a9.png)
+![The architecture including IAM and a tenant policy.](https://docs.aws.amazon.com/prescriptive-guidance/latest/multi-tenancy-amazon-neptune/images/guide-img/d9a33330-1308-4d3e-b2de-9b5b65b34e0f/images/00285ad7-80f2-4643-ae3e-57b95a8986a9.png)
 
 Each cluster has its [individual endpoint](https://docs.aws.amazon.com/neptune/latest/userguide/feature-overview-endpoints.html) to help ensure distinct access points for efficient data interaction and management. By placing each tenant in its own cluster, you create the well-defined boundary between tenants ensuring customers that their data is successfully isolated from other tenants' data. This isolation is also appealing for SaaS solutions that have strict regulatory and security constraints. Additionally, when each tenant having its own cluster you don't have to worry about noisy neighbor, where one tenant imposes a load that could adversely affect the experience of other tenants.
 

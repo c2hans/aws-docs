@@ -59,7 +59,7 @@ In this section, we'll use Moodle as our example LMS platform to demonstrate the
 #### Architecture and Components
 <a name="architecture-and-components.b04bc88c-3550-582f-95fb-cc6b03583bed"></a>
 
-![Moodle plugin calls API Gateway, Lambda, and Amazon Bedrock for AI responses.](http://docs.aws.amazon.com/prescriptive-guidance/latest/lms-integration-with-aws/images/guide-img/0295b1b3-2981-4c83-b66b-d5ae2700aca8/images/803d15f1-bcc9-4951-abe8-dded8f474b92.png)
+![Moodle plugin calls API Gateway, Lambda, and Amazon Bedrock for AI responses.](https://docs.aws.amazon.com/prescriptive-guidance/latest/lms-integration-with-aws/images/guide-img/0295b1b3-2981-4c83-b66b-d5ae2700aca8/images/803d15f1-bcc9-4951-abe8-dded8f474b92.png)
 
 [*Amazon Bedrock*](https://aws.amazon.com/bedrock/guardrails/)
 
@@ -139,7 +139,7 @@ As of version 4.5, Moodle's AI subsystem does not support AWS and Amazon Bedrock
 #### Architecture and Components
 <a name="architecture-and-components.6e46faa3-9991-5ea5-af2d-956c01e7b3cd"></a>
 
-![Moodle AI subsystem uses aiprovider_bedrock plugin to call Amazon Bedrock.](http://docs.aws.amazon.com/prescriptive-guidance/latest/lms-integration-with-aws/images/guide-img/0295b1b3-2981-4c83-b66b-d5ae2700aca8/images/e1992f90-3ab5-4cd5-83a9-dc7a4898ea62.png)
+![Moodle AI subsystem uses aiprovider_bedrock plugin to call Amazon Bedrock.](https://docs.aws.amazon.com/prescriptive-guidance/latest/lms-integration-with-aws/images/guide-img/0295b1b3-2981-4c83-b66b-d5ae2700aca8/images/e1992f90-3ab5-4cd5-83a9-dc7a4898ea62.png)
 
 *Figure 7: Moodle AI Subsystem Integration with Amazon Bedrock*
 + **Placements** define the specific areas within Moodle where AI-powered features can be accessed and utilized by users. For now, 2 placements are supported in Moodle core. For more information, see [AI placements](https://docs.moodle.org/405/en/AI_placements).
@@ -182,7 +182,7 @@ Unlike the direct model access approach, this pattern indexes course materials f
 #### Architecture and Components
 <a name="architecture-and-components.7b5c9584-6c6d-5bab-8f36-ae3ec92075cf"></a>
 
-![Event-driven and scheduled paths sync LMS content to Bedrock Knowledge Bases.](http://docs.aws.amazon.com/prescriptive-guidance/latest/lms-integration-with-aws/images/guide-img/0295b1b3-2981-4c83-b66b-d5ae2700aca8/images/3b61fa73-6bef-478b-9222-e21da6553e77.png)
+![Event-driven and scheduled paths sync LMS content to Bedrock Knowledge Bases.](https://docs.aws.amazon.com/prescriptive-guidance/latest/lms-integration-with-aws/images/guide-img/0295b1b3-2981-4c83-b66b-d5ae2700aca8/images/3b61fa73-6bef-478b-9222-e21da6553e77.png)
 
 *Figure 8: Moodle Integration with Amazon Bedrock Knowledge Bases*
 
@@ -243,7 +243,7 @@ The example below uses an LTI for integration but this could also be an LMS plug
 #### Architecture with AWS services
 <a name="architecture-with-9999999999999999aws--services.b1d7ffeb-fbea-52c0-9a6a-9291ac9da274"></a>
 
-![LTI tool invokes Amazon Bedrock Agents with knowledge base and action groups.](http://docs.aws.amazon.com/prescriptive-guidance/latest/lms-integration-with-aws/images/guide-img/0295b1b3-2981-4c83-b66b-d5ae2700aca8/images/ada62d99-8a02-46d2-8731-6dd7ba93d9e8.png)
+![LTI tool invokes Amazon Bedrock Agents with knowledge base and action groups.](https://docs.aws.amazon.com/prescriptive-guidance/latest/lms-integration-with-aws/images/guide-img/0295b1b3-2981-4c83-b66b-d5ae2700aca8/images/ada62d99-8a02-46d2-8731-6dd7ba93d9e8.png)
 
 *Figure 9: Moodle Integration with Amazon Bedrock Agents*
 

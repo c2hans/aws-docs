@@ -28,7 +28,7 @@ You can use Fargate with Amazon ECS to run containers without having to manage s
 ## Architecture
 <a name="access-container-applications-privately-on-amazon-ecs-by-using-aws-fargate-aws-privatelink-and-a-network-load-balancer-architecture"></a>
 
-![Using PrivateLink to access a container app on Amazon ECS with an AWS Fargate launch type.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/31cca5e2-8d8b-45ec-b872-a06b0dd97007/images/57cc9995-45f4-4039-a0bf-2d2b3d6a05de.png)
+![Using PrivateLink to access a container app on Amazon ECS with an AWS Fargate launch type.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/31cca5e2-8d8b-45ec-b872-a06b0dd97007/images/57cc9995-45f4-4039-a0bf-2d2b3d6a05de.png)
 
 **Technology stack**
 + Amazon CloudWatch

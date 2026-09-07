@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 
 You can download the CloudFormation template for this solution before deploying it.
 
- [![View Template](http://docs.aws.amazon.com/solutions/latest/landing-zone-accelerator-on-aws/images/view-template.png)](https://s3.amazonaws.com/solutions-reference/landing-zone-accelerator-on-aws/latest/AWSAccelerator-InstallerStack.template) **AWSAccelerator-InstallerStack.template** - Use this template to launch the solution and all associated components. The default configuration deploys the core and supporting solutions found in the [Architecture overview](architecture-overview.md). Manual changes to the template are strongly discouraged.
+ [![View Template](https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerator-on-aws/images/view-template.png)](https://s3.amazonaws.com/solutions-reference/landing-zone-accelerator-on-aws/latest/AWSAccelerator-InstallerStack.template) **AWSAccelerator-InstallerStack.template** - Use this template to launch the solution and all associated components. The default configuration deploys the core and supporting solutions found in the [Architecture overview](architecture-overview.md). Manual changes to the template are strongly discouraged.
 
 Before you launch the solution, review the [cost](cost.md), [architecture](architecture-details.md), [network security](security.md), and other considerations discussed earlier in this guide.
 

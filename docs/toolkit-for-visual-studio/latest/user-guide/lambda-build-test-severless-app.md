@@ -183,10 +183,10 @@ To deploy your serverless application complete the following steps
 1. In the **S3 Bucket** field, choose an Amazon S3 bucket that your application bundle will upload to or choose the **New...** button and enter the name of a new Amazon S3 bucket. Then choose **Publish** to publish to deploy your application.
 **Note**
 Your CloudFormation stack and Amazon S3 Bucket must exist in the same AWS region. The remaining settings for your project are defined in the `serverless.template` file.
-![Image of the Publish AWS Serverless Application dialog.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/lambda-upload-serverless-03192024.png)
+![Image of the Publish AWS Serverless Application dialog.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/lambda-upload-serverless-03192024.png)
 
 1. The **Stack** view window opens during the publishing process, when deployment is complete the **Status** field displays: `CREATE_COMPLETE`.
-![Image of the deployment stack view window in visual studio.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/lambda-upload-stackview-03192024.png)
+![Image of the deployment stack view window in visual studio.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/lambda-upload-stackview-03192024.png)
 
 ## Test the Serverless Application
 <a name="test-the-serverless-application"></a>

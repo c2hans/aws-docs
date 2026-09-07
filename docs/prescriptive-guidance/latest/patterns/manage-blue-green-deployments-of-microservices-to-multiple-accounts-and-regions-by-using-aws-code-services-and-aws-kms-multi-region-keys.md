@@ -67,7 +67,7 @@ The pattern uses AWS CodeBuild and other configuration files to deploy a sample 
 
 **Target architecture **
 
-![Target architecture for deploying microservices to multiple accounts and Regions](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a144c977-6823-4b08-a215-fae779b3ce7c/images/eedfabdb-f266-4190-b271-5caf7ac9b47b.png)
+![Target architecture for deploying microservices to multiple accounts and Regions](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a144c977-6823-4b08-a215-fae779b3ce7c/images/eedfabdb-f266-4190-b271-5caf7ac9b47b.png)
 
 **Automation and scale**
 

@@ -28,7 +28,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 +  3 subnets — 1 subnet = 2 subnets
 +  2 subnets x 507 fleet instance per subnet = 1,014 fleet instances at peak
 
-![Diagram showing reduced capacity when utilizing three subnets versus two subnets. The total changes from 1,521 Fleet instances to 1,014 Fleet instances.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-for-deploying-amazon-appstream-2/images/subnet-sizing.png)
+![Diagram showing reduced capacity when utilizing three subnets versus two subnets. The total changes from 1,521 Fleet instances to 1,014 Fleet instances.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-deploying-amazon-appstream-2/images/subnet-sizing.png)
 
  *Subnet sizing example*
 

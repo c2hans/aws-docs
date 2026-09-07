@@ -16,7 +16,7 @@ Change can be highly disruptive to an organization and will affect both the clou
 
 The following diagram illustrates how OCA can minimize the gap in perception and productivity during change acceleration.
 
-![Minimizing gaps in perception and productivity through OCA.](http://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-engage-organization/images/guide-img/1054d355-f84e-40b1-be21-5be8aad05588/images/ab9e9048-4e2e-4cab-8cf3-f7cc8c69c3a9.png)
+![Minimizing gaps in perception and productivity through OCA.](https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-engage-organization/images/guide-img/1054d355-f84e-40b1-be21-5be8aad05588/images/ab9e9048-4e2e-4cab-8cf3-f7cc8c69c3a9.png)
 
 ## Best practices
 <a name="change-best-practices"></a>

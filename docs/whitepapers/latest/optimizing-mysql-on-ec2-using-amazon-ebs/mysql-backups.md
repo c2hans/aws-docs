@@ -16,11 +16,11 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-mysql-on-e
 
  If the primary database server exhibits performance issues during a backup, a replication secondary database server or a read replica database server can be created to provide the source data for the backups to alleviate the backup load from the primary database server. One approach can be to back up from a secondary server’s SSD data volume to a backup server’s Throughput Optimized HDD (st1) volume. The high throughput of 500 MiB/s per volume and large 1 MiB I/O block size make it an ideal volume type for sequential backups meaning it can use the larger I/O blocks. The following diagram shows a backup server using the MySQL secondary server to read the backup data.
 
-![Diagram showing Using an st1 volume as a backup source](http://docs.aws.amazon.com/whitepapers/latest/optimizing-mysql-on-ec2-using-amazon-ebs/images/st1-volume-as-backup-source.png)
+![Diagram showing Using an st1 volume as a backup source](https://docs.aws.amazon.com/whitepapers/latest/optimizing-mysql-on-ec2-using-amazon-ebs/images/st1-volume-as-backup-source.png)
 
  Another option is to have the MySQL secondary server back up the database files directly to Amazon Elastic File System (Amazon EFS) or Amazon S3. Amazon EFS is an elastic file system that stores its data redundantly across multiple Availability Zones. Both the primary and the secondary instances can attach to the EFS file system. The secondary instance can initiate a backup to the EFS file system from where the primary instance can do a restore. Amazon S3 can also be used as a backup target. Amazon S3 can be used in a manner similar to Amazon EFS except that Amazon S3 is object-based storage rather than a file system. The following diagram depicts the option of using Amazon EFS or Amazon S3 as a backup target.
 
-![Diagram showing Using Amazon EFS or Amazon S3 as a backup target](http://docs.aws.amazon.com/whitepapers/latest/optimizing-mysql-on-ec2-using-amazon-ebs/images/efs-or-s3-as-backup-target.png)
+![Diagram showing Using Amazon EFS or Amazon S3 as a backup target](https://docs.aws.amazon.com/whitepapers/latest/optimizing-mysql-on-ec2-using-amazon-ebs/images/efs-or-s3-as-backup-target.png)
 
  The second general approach is to use volume-level EBS snapshots. Snapshots are incremental backups, which means that only the blocks on the device that have changed after your most recent snapshot are saved. This minimizes the time required to create the snapshot and saves on storage costs. When you delete a snapshot, only the data unique to that snapshot is removed. Active snapshots contain all of the information needed to restore your data (from the time the snapshot was taken) to a new EBS volume.
 
@@ -56,7 +56,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-mysql-on-e
 
  High latency can result from exhausting the available Provisioned IOPS in your EBS volume. For gp2 volumes, the CloudWatch metric `BurstBalance` is presented so that you can determine if you have depleted the available credit for IOPS. When bandwidth (KiB/s) and throughput (Ops/s) are reduced, latency (ms/op) increases.
 
-![Diagram showing BurstBalance metric showing that when bandwidth and throughput are reduced, latency increases](http://docs.aws.amazon.com/whitepapers/latest/optimizing-mysql-on-ec2-using-amazon-ebs/images/burstbalance-metric.jpg)
+![Diagram showing BurstBalance metric showing that when bandwidth and throughput are reduced, latency increases](https://docs.aws.amazon.com/whitepapers/latest/optimizing-mysql-on-ec2-using-amazon-ebs/images/burstbalance-metric.jpg)
 
  Disk queue length can also contribute to high latency. Disk queue length refers to the outstanding read/write requests that are waiting for resources to be available. The CloudWatch metric `VolumeQueueLength` shows the number of pending read/write operation requests for the volume. This metric is an important measurement to monitor if you have reached the full utilization of the Provisioned IOPS on your EBS volumes. Ideally, the EBS volumes must maintain an average queue length of about one per minute for every 200 Provisioned IOPS. Use the following formula to calculate how many IOPS will be consumed based on the disk queue length:
 
@@ -68,7 +68,7 @@ Consumed IOPS = 200 IOPS * VolumeQueueLength
 
  Pending MySQL operations will stack up if you observe the increase of the `VolumeQueueLength` without any corresponding increase in the Provisioned IOPS, as shown in the following screenshot.
 
-![Diagrams showing Average queue length and average read latency metrics](http://docs.aws.amazon.com/whitepapers/latest/optimizing-mysql-on-ec2-using-amazon-ebs/images/average-queue-length-and-read-latency2.jpg)![Diagrams showing Average queue length and average read latency metrics](http://docs.aws.amazon.com/whitepapers/latest/optimizing-mysql-on-ec2-using-amazon-ebs/images/average-queue-length-and-read-latency1.jpg)
+![Diagrams showing Average queue length and average read latency metrics](https://docs.aws.amazon.com/whitepapers/latest/optimizing-mysql-on-ec2-using-amazon-ebs/images/average-queue-length-and-read-latency2.jpg)![Diagrams showing Average queue length and average read latency metrics](https://docs.aws.amazon.com/whitepapers/latest/optimizing-mysql-on-ec2-using-amazon-ebs/images/average-queue-length-and-read-latency1.jpg)
 
 ## Throughput
 <a name="throughput"></a>

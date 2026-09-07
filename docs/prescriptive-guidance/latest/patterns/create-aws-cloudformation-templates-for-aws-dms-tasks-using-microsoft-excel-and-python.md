@@ -46,7 +46,7 @@ For detailed steps and background information, see the blog post [Create AWS Clo
 
 **Architecture**
 
-![Workflow to use Excel and Python to automatically create CloudFormation templates for AWS DMS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/778c7c1e-2647-496f-8afd-52ff1ef02489/images/8fe1550d-8966-41aa-a480-5f7bef20629f.png)
+![Workflow to use Excel and Python to automatically create CloudFormation templates for AWS DMS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/778c7c1e-2647-496f-8afd-52ff1ef02489/images/8fe1550d-8966-41aa-a480-5f7bef20629f.png)
 
 ## Tools
 <a name="create-aws-cloudformation-templates-for-aws-dms-tasks-using-microsoft-excel-and-python-tools"></a>

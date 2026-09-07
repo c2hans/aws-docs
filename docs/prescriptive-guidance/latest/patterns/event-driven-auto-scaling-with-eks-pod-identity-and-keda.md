@@ -51,7 +51,7 @@ Through the `TriggerAuthentication` and `ScaledObject` Kubernetes custom resour
 
 The following image shows how you use Amazon EKS Pod Identity to provide the `keda-operator` role with secure access to the Amazon SQS queue.
 
-![Using KEDA and Amazon EKS Pod Identity to automatically scale a Kubernetes-based application.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/56f7506d-e8d3-43e5-bec6-42267fedd0ae/images/05bdbd09-9eb8-4c0b-8c0d-efe38aecb683.png)
+![Using KEDA and Amazon EKS Pod Identity to automatically scale a Kubernetes-based application.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/56f7506d-e8d3-43e5-bec6-42267fedd0ae/images/05bdbd09-9eb8-4c0b-8c0d-efe38aecb683.png)
 
 The diagram shows the following workflow:
 

@@ -27,7 +27,7 @@ Before you can read and write data to a DynamoDB database, you must create a tab
 1. Go to the [DynamoDB Console](https://console.aws.amazon.com/dynamodb/home) and click **Create Table**. The Create Table wizard appears.
 
 1. Specify your table name, primary key type (Hash), and hash attribute name (“Id”) as shown below, and then click **Continue**:
-![](http://docs.aws.amazon.com/mobile/sdkforxamarin/developerguide/images/create-table.png)
+![](https://docs.aws.amazon.com/mobile/sdkforxamarin/developerguide/images/create-table.png)
 
 1. Leave the edit fields in the next screen empty and click **Continue**.
 
@@ -49,7 +49,7 @@ In order for your identity pool to access Amazon DynamoDB, you must modify the i
 1. Select **Policy Generator** and click **Select**.
 
 1. On the **Edit Permissions** page, enter the settings shown in the following image. The Amazon Resource Name (ARN) of a DynamoDB table looks like `arn:aws:dynamodb:us-west-2:123456789012:table/Books` and is composed of the region in which the table is located, the owner’s AWS account number, and the name of the table in the format `table/Books`. For more information about specifying ARNs, see [Amazon Resource Names for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/UsingIAMWithDDB.html#ARN_Format).
-![](http://docs.aws.amazon.com/mobile/sdkforxamarin/developerguide/images/edit-permissions-dynamodb.png)
+![](https://docs.aws.amazon.com/mobile/sdkforxamarin/developerguide/images/edit-permissions-dynamodb.png)
 
 1. Click **Add Statement**, and then click **Next Step**. The Wizard will show you the configuration generated.
 

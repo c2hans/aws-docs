@@ -43,7 +43,7 @@ Aurora data is stored in a cluster volume, which is a single, virtual volume tha
 
 Aurora automatically divides your database volume into 10 GB segments spread across many disks. Each 10 GB chunk of your database volume is replicated six ways, across three Availability Zones. The following diagram illustrates the relationship between the cluster volume, the writer DB instance, and reader DB instances in an Aurora DB cluster, and the separation of compute capacity and storage. For more information about this architecture, see the [Aurora documentation](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Overview.html) and [FAQ](https://aws.amazon.com/rds/aurora/faqs/#product-faqs).
 
-![Aurora MySQL DB instances and shared storage volume on AWS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/22729803-e4ff-45a2-ab5b-8ba2445e5e21/images/0d7d8ebd-e0f2-4bcf-b296-8bdfb2f12b64.png)
+![Aurora MySQL DB instances and shared storage volume on AWS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/22729803-e4ff-45a2-ab5b-8ba2445e5e21/images/0d7d8ebd-e0f2-4bcf-b296-8bdfb2f12b64.png)
 
 **Data migration architecture**
 
@@ -51,13 +51,13 @@ Aurora automatically divides your database volume into 10 GB segments spread acr
 
 The following diagram illustrates the migration of an on-premises MySQL database to an Aurora MySQL-Compatible cluster in the AWS Cloud, using AWS DMS.
 
-![Migrating an on-premises MySQL database to Aurora MySQL by using AWS DMS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/22729803-e4ff-45a2-ab5b-8ba2445e5e21/images/e5d72ebd-d157-45d7-8844-d1011f1646c0.png)
+![Migrating an on-premises MySQL database to Aurora MySQL by using AWS DMS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/22729803-e4ff-45a2-ab5b-8ba2445e5e21/images/e5d72ebd-d157-45d7-8844-d1011f1646c0.png)
 
 *Using native MySQL tools:*
 
 The following diagram illustrates the migration of an on-premises MySQL database to an Aurora MySQL-Compatible cluster in the AWS Cloud, using native MySQL tools such as **mysqldbcopy** and **mysqldump**.
 
-![Migrating an on-premises MySQL database to Aurora MySQL by using mysqldbcopy and mysqldump.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/22729803-e4ff-45a2-ab5b-8ba2445e5e21/images/26258752-24f6-4241-a49f-59c15e946314.png)
+![Migrating an on-premises MySQL database to Aurora MySQL by using mysqldbcopy and mysqldump.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/22729803-e4ff-45a2-ab5b-8ba2445e5e21/images/26258752-24f6-4241-a49f-59c15e946314.png)
 
 ## Tools
 <a name="migrate-an-on-premises-mysql-database-to-aurora-mysql-tools"></a>

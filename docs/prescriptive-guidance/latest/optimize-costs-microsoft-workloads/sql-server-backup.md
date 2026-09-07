@@ -32,7 +32,7 @@ This Run Command creates automated snapshots of all EBS volumes attached to a ta
 
 The following diagram shows an architecture for server-level backup using VSS-enabled snapshots.
 
-![VSS-enabled snapshots architecture](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/9ef868d8-ccf7-4a5e-b01c-23529d19554f.png)
+![VSS-enabled snapshots architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/9ef868d8-ccf7-4a5e-b01c-23529d19554f.png)
 
 Consider the following benefits of using VSS-enabled snapshots:
 + The first snapshot of a DB instance contains the data for the full DB instance. Subsequent snapshots of the same DB instance are [incremental](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-snapshots.html#how_snapshots_work), which means that only the data that has changed after your most recent snapshot is saved.
@@ -59,7 +59,7 @@ You can use [AWS Backup](https://aws.amazon.com/backup/) to centralize and autom
 
 The following diagram shows the architecture of a backup and restore solution for SQL Server on EC2 by using AWS Backup.
 
-![AWS Backup architecture](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/01c8cbc4-d3dc-4c54-aa47-2613da5ea86a.png)
+![AWS Backup architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/01c8cbc4-d3dc-4c54-aa47-2613da5ea86a.png)
 
 Consider the following benefits of backing up SQL Server by using AWS Backup:
 + You can automate backup scheduling, retention management, and lifecycle management.
@@ -92,7 +92,7 @@ Storage Gateway is a hybrid cloud storage service that provides on-premises appl
 
 The following diagram shows the architecture of a native backup and restore solution that uses Storage Gateway and Amazon S3.
 
-![Storage Gateway and Amazon S3 architecture](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/fe3f9001-43a5-49f8-939e-349c03514bc3.png)
+![Storage Gateway and Amazon S3 architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/fe3f9001-43a5-49f8-939e-349c03514bc3.png)
 
 Consider the following benefits of using native SQL Server backup with Storage Gateway:
 + You can map a storage gateway as a Server Message Block (SMB) file share on the EC2 instance and send the backup to Amazon S3.
@@ -112,7 +112,7 @@ You can take a native backup of your SQL Server database and store the file in a
 
 The following diagram shows the architecture of a native backup to an EBS volume.
 
-![EBS volume architecture](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/526e295a-639b-4746-9fc9-5bbbb7d04821.png)
+![EBS volume architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/526e295a-639b-4746-9fc9-5bbbb7d04821.png)
 
 Consider the following benefits of using SQL Server native backup to EBS volumes:
 + You can take backups of individual databases on a SQL Server EC2 instance and restore an individual database instead of having to restore the complete instance.
@@ -133,7 +133,7 @@ Consider the following limitations of using native backup to EBS volumes:
 
 The following diagram shows the architecture of a native SQL Server backup to FSx for Windows File Server.
 
-![FSx for Windows File Server backup architecture](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/4e4f5d9a-7a9a-4747-b486-25a45df27528.png)
+![FSx for Windows File Server backup architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/4e4f5d9a-7a9a-4747-b486-25a45df27528.png)
 
 Consider the following benefits of using native SQL Server backup to FSx for Windows File Server:
 + You can back up your SQL Server database to an Amazon FSx file share.
@@ -235,7 +235,7 @@ For backups going to Amazon S3 buckets, you can enable [Amazon S3 Intelligent-Ti
 
 The following diagram shows an architecture for a solution based on S3 Intelligent-Tiering.
 
-![S3 Intelligent-Tiering architecture](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/f478de02-0015-4f5b-9202-8f3da5218b50.png)
+![S3 Intelligent-Tiering architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/f478de02-0015-4f5b-9202-8f3da5218b50.png)
 
 By default, the backup files written to the S3 bucket use the Standard tier. To convert the backup files from the Standard tier to S3 Intelligent-Tiering, you must [create a lifecycle rule](https://docs.aws.amazon.com/AmazonS3/latest/userguide/lifecycle-transition-general-considerations.html). You can also use the [AWS Management Console](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-intelligent-tiering.html#enable-auto-archiving-int-tiering) to enable S3 Intelligent-Tiering. For more information, see [Getting Started Using Amazon S3 Intelligent-Tiering](https://aws.amazon.com/getting-started/hands-on/getting-started-using-amazon-s3-intelligent-tiering/) in the AWS documentation.
 

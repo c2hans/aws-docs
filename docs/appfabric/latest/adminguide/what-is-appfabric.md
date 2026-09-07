@@ -46,7 +46,7 @@ You can use AppFabric to:
 
 AppFabric quickly connects multiple SaaS applications with no coding required for increased productivity and security. The following diagram shows the benefits of AppFabric.
 
-![Diagram showing how AppFabric works](http://docs.aws.amazon.com/appfabric/latest/adminguide/images/how-appfabric-works.png)
+![Diagram showing how AppFabric works](https://docs.aws.amazon.com/appfabric/latest/adminguide/images/how-appfabric-works.png)
 
 **Note**
 AppFabric for productivity is currently launched as a preview and available in the US East (N. Virginia) AWS Region. For more information about AWS Regions, see [AWS AppFabric endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/appfabric.html) in the *AWS General Reference*.

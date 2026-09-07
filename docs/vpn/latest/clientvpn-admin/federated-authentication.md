@@ -18,7 +18,7 @@ AWS Client VPN supports identity federation with Security Assertion Markup Langu
 
 The following diagram provides an overview of the authentication workflow for a Client VPN endpoint that uses SAML-based federated authentication. When you create and configure the Client VPN endpoint, you specify the IAM SAML identity provider.
 
-![Authentication workflow](http://docs.aws.amazon.com/vpn/latest/clientvpn-admin/images/federated-auth-workflow.png)
+![Authentication workflow](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/images/federated-auth-workflow.png)
 
 1. The user opens the AWS provided client on their device and initiates a connection to the Client VPN endpoint.
 

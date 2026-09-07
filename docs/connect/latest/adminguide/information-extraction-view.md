@@ -15,21 +15,21 @@ Extracted information appears in alphabetical order by display label, and is ava
 
 During the after-call work process, any information extracted with an ACW analysis event source is displayed in the **Extracted Information** widget in the CCP.
 
-![The Extracted Information widget in the Contact Control Panel.](http://docs.aws.amazon.com/connect/latest/adminguide/images/InformationExtraction-View-CCP.png)
+![The Extracted Information widget in the Contact Control Panel.](https://docs.aws.amazon.com/connect/latest/adminguide/images/InformationExtraction-View-CCP.png)
 
 ## Contact details page
 <a name="information-extraction-view-contact-details"></a>
 
 After the contact ends, all extracted information appears in the **Extracted Information** section of the **Contact details** page.
 
-![The Extracted Information section on the Contact details page.](http://docs.aws.amazon.com/connect/latest/adminguide/images/InformationExtraction-View-ContactDetails.png)
+![The Extracted Information section on the Contact details page.](https://docs.aws.amazon.com/connect/latest/adminguide/images/InformationExtraction-View-ContactDetails.png)
 
 ## Contact search
 <a name="information-extraction-view-contact-search"></a>
 
 Extracted information is displayed in the **Contact search** results table.
 
-![Extracted information displayed in the Contact search results table.](http://docs.aws.amazon.com/connect/latest/adminguide/images/InformationExtraction-View-ContactSearch.png)
+![Extracted information displayed in the Contact search results table.](https://docs.aws.amazon.com/connect/latest/adminguide/images/InformationExtraction-View-ContactSearch.png)
 
 ## Errors
 <a name="information-extraction-errors"></a>

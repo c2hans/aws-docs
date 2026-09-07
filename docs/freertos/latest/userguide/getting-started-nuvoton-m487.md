@@ -147,7 +147,7 @@ You can also use the MQTT client in the AWS IoT console to monitor the messages 
 <a name="gsg-nuvoton-m487-troubleshoot"></a>
 + If your windows can’t recognize the device `VCOM`, install the NuMaker windows serial port driver from the link [Nu-Link USB Driver v1.6](https://www.nuvoton.com/export/resource-files/Nu-Link_USB_Driver_V1.6.zip).
 + If you connect your device to the Keil MDK (IDE) through Nu-Link, make sure the MSG switch (No.4 of ISW1 on ICE) is OFF, as shown.
-![Circuit board with SD card slot, microcontroller, pins, power and reset connectors labeled.](http://docs.aws.amazon.com/freertos/latest/userguide/images/nuvoton-m487-gsg.png)
+![Circuit board with SD card slot, microcontroller, pins, power and reset connectors labeled.](https://docs.aws.amazon.com/freertos/latest/userguide/images/nuvoton-m487-gsg.png)
 
 If you experience issues setting up your development environment or connecting to your board, contact [Nuvoton](http://www.nuvoton.com/contact-us/).
 
@@ -165,7 +165,7 @@ If you experience issues setting up your development environment or connecting t
    The **Call Stack \+ Locals** window appears when you start a debug session. μVision flashes the demo to the board, runs the demo, and stops at the beginning of the `main()` function.
 
 1. Set breakpoints in your project's source code, and then run the code. The project should look something like the following.
-![Main source code file with hardware initialization, task scheduling, key provisioning for a device microcontroller project.](http://docs.aws.amazon.com/freertos/latest/userguide/images/numaker-iot-m487-debug.png)
+![Main source code file with hardware initialization, task scheduling, key provisioning for a device microcontroller project.](https://docs.aws.amazon.com/freertos/latest/userguide/images/numaker-iot-m487-debug.png)
 
 ### Troubleshooting μVision debug settings
 <a name="gsg-nuvoton-m487-troubleshoot-debug"></a>
@@ -179,9 +179,9 @@ If you encounter problems while debugging an application, check that your debug 
 1. Right-click the `aws_demo` project in the IDE, and then choose **Options**.
 
 1. On the **Utilities** tab, verify that **Use Target Driver for Flash Programming** is selected, and that **Nuvoton Nu-Link Debugger** is set as the target driver.
-![Options window showing configuration settings for flash programming, debugging, and output file processing.](http://docs.aws.amazon.com/freertos/latest/userguide/images/nulink-debugger-target.png)
+![Options window showing configuration settings for flash programming, debugging, and output file processing.](https://docs.aws.amazon.com/freertos/latest/userguide/images/nulink-debugger-target.png)
 
 1. On the **Debug** tab, next to **Nuvoton Nu-Link Debugger**, choose **Settings**.
-![Nu-Link Debugger settings dialog with options for driver version, ICE version, device family, device ID, port, max clock, chip type, connection mode, reset option, and power control voltages.](http://docs.aws.amazon.com/freertos/latest/userguide/images/nulink-driver-setup.png)
+![Nu-Link Debugger settings dialog with options for driver version, ICE version, device family, device ID, port, max clock, chip type, connection mode, reset option, and power control voltages.](https://docs.aws.amazon.com/freertos/latest/userguide/images/nulink-driver-setup.png)
 
 1. Verify that the **Chip Type** is set to **M480**.

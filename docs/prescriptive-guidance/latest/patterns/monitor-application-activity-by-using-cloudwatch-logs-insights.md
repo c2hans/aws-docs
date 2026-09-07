@@ -42,7 +42,7 @@ CloudWatch Logs Insights is optimal for analyzing application-generated logs whe
 
 The following diagram shows how CloudWatch Logs Insights evaluates resource logs and sends a relevant data visualization to a CloudWatch dashboard.
 
-![CloudWatch Logs Insights evaluates resource logs and sends data visualization to dashboard.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/082ff4b6-9303-42e6-bc62-263e2254f232/images/b1cbb699-07cd-45e6-ac06-839159bafa6b.png)
+![CloudWatch Logs Insights evaluates resource logs and sends data visualization to dashboard.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/082ff4b6-9303-42e6-bc62-263e2254f232/images/b1cbb699-07cd-45e6-ac06-839159bafa6b.png)
 
 The diagram shows the following workflow:
 

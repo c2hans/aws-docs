@@ -12,7 +12,7 @@ Because MES sits at the edge of operational technology (OT) and information tech
 
 Considering the wide variety of PLM and ERP systems, the design for this pattern varies, based on the systems MES interacts with. The following diagram illustrates a sample architecture.
 
-![MES architecture for interfacing with other enterprise applications](http://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/images/guide-img/093538ca-c7c9-4311-a0e9-8a876ae66d65/images/73000135-5c37-429c-aaeb-9e0ca9b6902d.png)
+![MES architecture for interfacing with other enterprise applications](https://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/images/guide-img/093538ca-c7c9-4311-a0e9-8a876ae66d65/images/73000135-5c37-429c-aaeb-9e0ca9b6902d.png)
 
 1. Organizations might have ERP instances in the AWS Cloud or elsewhere.
 

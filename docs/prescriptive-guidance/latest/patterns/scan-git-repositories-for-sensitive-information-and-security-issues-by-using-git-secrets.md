@@ -29,7 +29,7 @@ This pattern describes how to use the open-source [git-secrets](https://github.c
 + Git
 + `git-secrets`
 
-![Using the git-secrets tool to scan Git source repositories for sensitive information.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/4a18e0c8-0935-4ee2-86bf-c1dfcfbc1bcb/images/e4813a76-83c2-4254-b5f4-aafe2b8f2127.png)
+![Using the git-secrets tool to scan Git source repositories for sensitive information.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/4a18e0c8-0935-4ee2-86bf-c1dfcfbc1bcb/images/e4813a76-83c2-4254-b5f4-aafe2b8f2127.png)
 
 ## Tools
 <a name="scan-git-repositories-for-sensitive-information-and-security-issues-by-using-git-secrets-tools"></a>

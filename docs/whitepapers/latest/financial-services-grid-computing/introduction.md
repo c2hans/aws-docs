@@ -31,7 +31,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/financial-services-gr
 
  The following figure shows two approaches to provisioning capacity. In the first, 2,000 vCPUs are provisioned for ten hours. In the second, 10,000 vCPUs are provisioned for two hours. In a vCPU-hour billing model, the overall cost is the same, but the latter produces results in one fifth of the time.
 
-![Diagram showing Two approaches to provisioning 20 CPU-hours of capacity](http://docs.aws.amazon.com/whitepapers/latest/financial-services-grid-computing/images/two-approaches-to-provisioning.png)
+![Diagram showing Two approaches to provisioning 20 CPU-hours of capacity](https://docs.aws.amazon.com/whitepapers/latest/financial-services-grid-computing/images/two-approaches-to-provisioning.png)
 
  Developers of the analytics calculations used in HPC applications can use the latest CPUs, graphics processing units (GPUs), and field-programmable gate arrays (FPGAs) available through the many [Amazon EC2 instance types](https://aws.amazon.com/ec2/instance-types/). This drives efficiency-per-core, and differs from on-premises grids that tend to be a mixture of infrastructure, which reflects historic procurement rather than current needs.
 

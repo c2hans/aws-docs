@@ -35,7 +35,7 @@ The demonstration, the code, and the CloudFormation template presented in this p
 
 The following diagram shows a high-level design of the cell router.
 
-![The five-step process of the cell router.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/fd2fbf9d-9ae4-4c27-bc32-cf117350137a/images/feb90b51-dd91-483b-b5a3-b0a5359686e3.png)
+![The five-step process of the cell router.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/fd2fbf9d-9ae4-4c27-bc32-cf117350137a/images/feb90b51-dd91-483b-b5a3-b0a5359686e3.png)
 
 The diagram steps through the following workflow:
 
@@ -147,7 +147,7 @@ Each layer sustains functionality even in the event of impairments affecting oth
 
 The following diagram shows the layers at a high level. The Cell layer and the Provision and Deploy layer are outside the scope of this pattern.
 
-![The Routing layer, the Cell layer with multiple cell accounts, and the Provision and Deploy layer.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/fd2fbf9d-9ae4-4c27-bc32-cf117350137a/images/137ac34d-43c3-42b6-95de-a365ff611ce8.png)
+![The Routing layer, the Cell layer with multiple cell accounts, and the Provision and Deploy layer.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/fd2fbf9d-9ae4-4c27-bc32-cf117350137a/images/137ac34d-43c3-42b6-95de-a365ff611ce8.png)
 
 For more information about cell-based architecture, see [Reducing the Scope of Impact with Cell-Based Architecture: Cell routing](https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/cell-routing.html).
 
@@ -231,7 +231,7 @@ Develop a Step Functions workflow to serve as the `Orchestrator` for the router.
 
 The following diagram shows the workflow. The choice state invokes one of the Lambda functions. If the Lambda function is successful, the workflow ends. If the Lambda function fails, fail state is called.
 
-![A diagram of the workflow with the four functions and ending in a fail state.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/fd2fbf9d-9ae4-4c27-bc32-cf117350137a/images/cfe8d029-6f30-49a1-aaad-cad503bdcbae.png)
+![A diagram of the workflow with the four functions and ending in a fail state.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/fd2fbf9d-9ae4-4c27-bc32-cf117350137a/images/cfe8d029-6f30-49a1-aaad-cad503bdcbae.png)
 
 *6. Implement the Lambda functions*
 

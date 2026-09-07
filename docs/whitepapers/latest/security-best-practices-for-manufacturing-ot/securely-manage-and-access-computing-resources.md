@@ -20,6 +20,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-best-practic
 
  For example, suppose a sensor device located at a factory a few hundred miles away is having trouble measuring the factory temperature. You can use secure tunneling to open and quickly start a session to that sensor device. After you have identified the problem (for example, a bad configuration file), you can reset the file and restart the sensor device through the same session. Compared to a more traditional troubleshooting (for example, sending a technician to the factory to investigate the sensor device), secure tunneling decreases incident response and recovery time and operational costs.
 
-![A diagram that shows securely managing and accessing computing resources.](http://docs.aws.amazon.com/whitepapers/latest/security-best-practices-for-manufacturing-ot/images/securely-manage-compute.png)
+![A diagram that shows securely managing and accessing computing resources.](https://docs.aws.amazon.com/whitepapers/latest/security-best-practices-for-manufacturing-ot/images/securely-manage-compute.png)
 
 * Securely manage and access computing resources *

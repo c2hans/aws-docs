@@ -37,15 +37,15 @@ Scale in events occur in the following scenarios:
 The following example shows how termination policies work when there is a scale in event.
 
 1. The Auto Scaling group in this example has one instance type, two Availability Zones, and a desired capacity of two instances. It also has a dynamic scaling policy that adds and removes instances when resource utilization increases or decreases. The two instances in this group are distributed across the two Availability Zones as shown in the following diagram.
-![A basic Auto Scaling group with two instances.](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/termination-policy-default-diagram.png)
+![A basic Auto Scaling group with two instances.](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/termination-policy-default-diagram.png)
 
 1. When the Auto Scaling group scales out, Amazon EC2 Auto Scaling launches a new instance. The Auto Scaling group now has three instances, distributed across the two Availability Zones as shown in the following diagram.
-![An Auto Scaling group after scaling out by one instance.](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/termination-policy-default-2-diagram.png)
+![An Auto Scaling group after scaling out by one instance.](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/termination-policy-default-2-diagram.png)
 
 1. When the Auto Scaling group scales in, Amazon EC2 Auto Scaling terminates one of the instances.
 
 1. If you did not assign a specific termination policy to the group, Amazon EC2 Auto Scaling uses the default termination policy. It selects the Availability Zone with two instances, and terminates the instance that was launched from a launch configuration, a different launch template, or the oldest version of the current launch template. If the instances were launched from the same launch template and version, Amazon EC2 Auto Scaling selects the instance that is closest to the next billing hour and terminates it.
-![An Auto Scaling group after scaling in by one instance.](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/termination-policy-default-3-diagram.png)
+![An Auto Scaling group after scaling in by one instance.](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/termination-policy-default-3-diagram.png)
 
 ### Instance refresh
 <a name="common-scenarios-termination-instance-refreshes"></a>

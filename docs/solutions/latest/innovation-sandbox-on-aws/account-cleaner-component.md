@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 # Account Cleaner components
 <a name="account-cleaner-component"></a>
 
-![Diagram showing the Account Cleaner components including the durable Lambda function and CodeBuild project](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/diagrams/account-cleaner.drawio.png)
+![Diagram showing the Account Cleaner components including the durable Lambda function and CodeBuild project](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/diagrams/account-cleaner.drawio.png)
 
 **ISB Account Cleaner components**
 The **Account Cleaner** recycles sandbox accounts either during onboarding or after a lease ends. It orchestrates the following sequence using an AWS Lambda durable function:

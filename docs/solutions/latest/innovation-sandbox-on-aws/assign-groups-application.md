@@ -23,6 +23,6 @@ To assign groups to your application:
 
 1. Choose **Assigned users and groups**, and choose the three groups. Manually enter the namespace to find the group, as they are not listed by default.
 
-![Assign users and groups](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/assign-user-groups.png)
+![Assign users and groups](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/assign-user-groups.png)
 
 1. Choose **Done** to assign these groups to your application.

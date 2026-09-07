@@ -8,4 +8,4 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/sap-hana-pacemaker-r
 ## Pacemaker - Scale-Up Architecture
 <a name="_pacemaker_scale_up_architecture"></a>
 
-![SAP Hana Pacemaker Red Hat Enterprise Linux Scale-Up](http://docs.aws.amazon.com/sap/latest/sap-hana/images/sap-hana-pacemaker-rhel-scaleup.png)
+![SAP Hana Pacemaker Red Hat Enterprise Linux Scale-Up](https://docs.aws.amazon.com/sap/latest/sap-hana/images/sap-hana-pacemaker-rhel-scaleup.png)

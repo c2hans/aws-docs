@@ -14,7 +14,7 @@ Unlike autocomplete tools, coding agents actively interpret user goals, query th
 
 A coding-agent pattern is shown in the following diagram:
 
-![Coding agent.](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-patterns/images/guide-img/cde5ee68-ed86-4053-9fb1-d0dbf7199e24/images/400980fd-a223-479b-b82b-0957743b19b6.png)
+![Coding agent.](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-patterns/images/guide-img/cde5ee68-ed86-4053-9fb1-d0dbf7199e24/images/400980fd-a223-479b-b82b-0957743b19b6.png)
 
 ## Description
 <a name="description.792d7b53-13aa-57f1-85e2-41ed3eb6f67a"></a>

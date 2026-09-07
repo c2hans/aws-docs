@@ -50,9 +50,9 @@ For more information about general dataset requirements and limitations in Canva
 <a name="canvas-fm-chat-fine-tune-procedure"></a>
 
 You can fine-tune a foundation model by using any of the following methods in the Canvas application:
-+ While in a **Generate, extract and summarize content** chat with a foundation model, choose the **Fine-tune model** icon (![Fine-tune model icon.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/studio/canvas/wrench-icon-small.png)).
++ While in a **Generate, extract and summarize content** chat with a foundation model, choose the **Fine-tune model** icon (![Fine-tune model icon.](https://docs.aws.amazon.com/sagemaker/latest/dg/images/studio/canvas/wrench-icon-small.png)).
 + While in a chat with a foundation model, if you’ve re-generated the response two or more times, then Canvas offers you the option to **Fine-tune model**. The following screenshot shows you what this looks like.
-![Screenshot of the Fine-tune foundation model option shown in a chat.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/studio/canvas/fine-tuning-ingress.png)
+![Screenshot of the Fine-tune foundation model option shown in a chat.](https://docs.aws.amazon.com/sagemaker/latest/dg/images/studio/canvas/fine-tuning-ingress.png)
 + On the **My models** page, you can create a new model by choosing **New model**, and then select **Fine-tune foundation model**.
 + On the **Ready-to-use models** home page, you can choose **Create your own model**, and then in the **Create new model** dialog box, choose **Fine-tune foundation model**.
 + While browsing your datasets in the **Data Wrangler** tab, you can select a dataset and choose **Create a model**. Then, choose **Fine-tune foundation model**.
@@ -106,7 +106,7 @@ On the **Analyze** tab of your fine-tuned foundation model, you can see the mode
 
 The **Overview** tab on this page shows you the perplexity and loss scores, along with analyses that visualize the model’s improvement over time during training. The following screenshot shows the **Overview** tab.
 
-![The Analyze tab of a fine-tuned foundation model in Canvas, showing the perplexity and loss curves.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/studio/canvas/canvas-fine-tune-analyze-2.png)
+![The Analyze tab of a fine-tuned foundation model in Canvas, showing the perplexity and loss curves.](https://docs.aws.amazon.com/sagemaker/latest/dg/images/studio/canvas/canvas-fine-tune-analyze-2.png)
 
 On this page, you can see the following visualizations:
 + The **Perplexity Curve** measures how well the model predicts the next word in a sequence, or how grammatical the model’s output is. Ideally, as the model improves during training, the score decreases and results in a curve that lowers and flattens over time.
@@ -114,7 +114,7 @@ On this page, you can see the following visualizations:
 
 The **Advanced metrics** tab shows you the hyperparameters and additional metrics for your model. It looks like the following screenshot:
 
-![Screenshot of the Advanced metrics tab of a fine-tuned foundation model in Canvas.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/studio/canvas/canvas-fine-tune-metrics.png)
+![Screenshot of the Advanced metrics tab of a fine-tuned foundation model in Canvas.](https://docs.aws.amazon.com/sagemaker/latest/dg/images/studio/canvas/canvas-fine-tune-metrics.png)
 
 The **Advanced metrics** tab contains the following information:
 + The **Explainability** section contains the **Hyperparameters**, which are the values set before the job to guide the model’s fine-tuning. If you didn’t specify custom hyperparameters in the model’s advanced settings in the [Fine-tune the model](#canvas-fm-chat-fine-tune-procedure-model) section, then Canvas selects default hyperparameters for you.

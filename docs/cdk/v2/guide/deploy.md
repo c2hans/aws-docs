@@ -128,7 +128,7 @@ To deploy your application, we recommend that you use the CDK CLI `cdk deploy` c
 
 When you run `cdk deploy`, the CDK CLI initiates `cdk synth` to prepare for deployment. The following diagram illustrates the app lifecycle in the context of a deployment:
 
-![Flowchart of the <shared id="AWS"/> CDK app lifecycle.](http://docs.aws.amazon.com/cdk/v2/guide/images/app-lifecycle_cdk-flowchart.png)
+![Flowchart of the <shared id="AWS"/> CDK app lifecycle.](https://docs.aws.amazon.com/cdk/v2/guide/images/app-lifecycle_cdk-flowchart.png)
 
 During deployment, the CDK CLI takes the cloud assembly produced by synthesis and deploys it to an AWS environment. Assets are uploaded to Amazon S3 and Amazon ECR and the CloudFormation template is submitted to AWS CloudFormation for deployment.
 
@@ -139,7 +139,7 @@ By the time the AWS CloudFormation deployment phase starts, your CDK app has alr
  **Deployment permissions**
 Before deployment can be performed, permissions must be established. The following diagram illustrates the permissions that are used during a default deployment, when using the default bootstrapping process and stack synthesizer:
 
-![Flowchart of the default <shared id="AWS"/> CDK deployment process.](http://docs.aws.amazon.com/cdk/v2/guide/images/default-deploy-process_cdk_flowchart.png)
+![Flowchart of the default <shared id="AWS"/> CDK deployment process.](https://docs.aws.amazon.com/cdk/v2/guide/images/default-deploy-process_cdk_flowchart.png)
 
  **Actor initiates deployment**
 Deployments are initiated by an *actor*, using the CDK CLI. An actor can either be a person, or a service such as AWS CodePipeline.

@@ -25,7 +25,7 @@ The AWS CDK lets you build reliable, scalable, cost-effective applications in th
 
 The AWS CDK supports TypeScript, JavaScript, Python, Java, C\#/.Net, and Go. Developers can use one of these supported programming languages to define reusable cloud components known as [Constructs](constructs.md). You compose these together into [Stacks](stacks.md) and [Apps](apps.md).
 
-![App containing stacks with constructs like SQS Queue, Lambda, S3 Bucket, and DynamoDB Table.](http://docs.aws.amazon.com/cdk/v1/guide/images/AppStacks.png)
+![App containing stacks with constructs like SQS Queue, Lambda, S3 Bucket, and DynamoDB Table.](https://docs.aws.amazon.com/cdk/v1/guide/images/AppStacks.png)
 
 ## Why use the AWS CDK?
 <a name="why-use-cdk"></a>
@@ -216,7 +216,7 @@ This class produces an CloudFormation [template of more than 500 lines](https://
 
 And let's not forget... code completion within your IDE or editor\!
 
-![Code editor showing autocomplete suggestions for Node.js and Python runtime options.](http://docs.aws.amazon.com/cdk/v1/guide/images/CodeCompletion.png)
+![Code editor showing autocomplete suggestions for Node.js and Python runtime options.](https://docs.aws.amazon.com/cdk/v1/guide/images/CodeCompletion.png)
 
 ## Developing with the AWS CDK
 <a name="developing"></a>

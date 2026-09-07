@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/serverless-multi-tier
 # Single-page application
 <a name="single-page-application"></a>
 
-![Architecture diagram showing client authentication flow through API Gateway, Lambda functions, and AWS services.](http://docs.aws.amazon.com/whitepapers/latest/serverless-multi-tier-architectures-api-gateway-lambda/images/single-page-application.png)
+![Architecture diagram showing client authentication flow through API Gateway, Lambda functions, and AWS services.](https://docs.aws.amazon.com/whitepapers/latest/serverless-multi-tier-architectures-api-gateway-lambda/images/single-page-application.png)
 
 * Architectural pattern for serverless single-page application *
 

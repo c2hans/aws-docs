@@ -7,7 +7,7 @@ The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you 
 # Creating an Amazon EC2 Instance
 <a name="ec2-example-creating-an-instance"></a>
 
-![JavaScript code example that applies to Node.js execution](http://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/nodeicon.png)
+![JavaScript code example that applies to Node.js execution](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/nodeicon.png)
 
 **This Node.js code example shows:**
 + How to create an Amazon EC2 instance from a public Amazon Machine Image (AMI).

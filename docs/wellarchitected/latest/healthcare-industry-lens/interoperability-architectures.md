@@ -16,7 +16,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 
  An HL7 v2 interoperability architecture may leverage the HL7 v2 APIs of a source system, like an EHR. To provide end-to-end encryption between the source system and target system, it’s a best practice to use a VPN tunnel or secure protocols like SSH File Transfer Protocol (SFTP), as MLLP may not provide TLS. The source system may asynchronously send batches of messages to an encrypted Amazon S3 bucket, or may synchronously exchange messages with a target integration service, as shown in the following figure.
 
-![An image that shows a common HL7v2 interoperability architecture that synchronously exchanges messages with a target integration service.](http://docs.aws.amazon.com/wellarchitected/latest/healthcare-industry-lens/images/hl7v2-interoperability-architecture.png)
+![An image that shows a common HL7v2 interoperability architecture that synchronously exchanges messages with a target integration service.](https://docs.aws.amazon.com/wellarchitected/latest/healthcare-industry-lens/images/hl7v2-interoperability-architecture.png)
 
 ## HL7 v3
 <a name="hl7-v3"></a>
@@ -28,7 +28,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 
  The following diagram illustrates a representative FHIR interoperability architecture, which presents an integration point in front of one or more systems of record, typically within a provider or payer organization.
 
-![Diagram of a representative FHIR interoperability architecture.](http://docs.aws.amazon.com/wellarchitected/latest/healthcare-industry-lens/images/fhir-interoperability-architecture.png)
+![Diagram of a representative FHIR interoperability architecture.](https://docs.aws.amazon.com/wellarchitected/latest/healthcare-industry-lens/images/fhir-interoperability-architecture.png)
 
 +  An API or server endpoint is made available for integration with other systems or users. A managed API service, like Amazon API Gateway, ensures scalability and high availability. Restrict network access to the API if possible and use a web application firewall to filter malicious requests.
 +  Inbound requests are authenticated with [OAuth](https://build.fhir.org/security.html) or a service like Amazon Cognito to verify that sensitive health data is only exchanged with appropriate parties.

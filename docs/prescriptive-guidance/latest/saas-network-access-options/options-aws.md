@@ -15,7 +15,7 @@ This section discusses connectivity options if both you and your consumers are o
 
 The following networking value map summarizes how each of these options scores for each evaluation metric. For more information about the evaluation metrics, see [Evaluation metrics](evaluating.md#evaluating-metrics) in this guide. In the map, a five represents the best score, such as the lowest TCO, best network isolation, or lowest time to repair. For more information about how to read this radar chart, see [Networking value map](evaluating.md#evaluating-map) in this guide.
 
-![Radar chart that shows scores for each evaluation metric.](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-network-access-options/images/guide-img/c6ce66a8-c949-4e68-b09d-850373110e63/images/11679979-a0c4-41e0-b6e0-62fe80eefcda.png)
+![Radar chart that shows scores for each evaluation metric.](https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-network-access-options/images/guide-img/c6ce66a8-c949-4e68-b09d-850373110e63/images/11679979-a0c4-41e0-b6e0-62fe80eefcda.png)
 
 The radar chart shows the following values.
 
@@ -38,7 +38,7 @@ The radar chart shows the following values.
 
 AWS PrivateLink supports a bandwidth of up to 100 Gbps per Availability Zone. The following diagram shows a basic configuration with some possible integrations. It connects two consumer accounts to the SaaS provider account through AWS PrivateLink. There are service endpoints in the consumer accounts and a Network Load Balancer in the SaaS provider account.
 
-![Basic configuration for AWS PrivateLink with optional integrations.](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-network-access-options/images/guide-img/c6ce66a8-c949-4e68-b09d-850373110e63/images/e923e1eb-a6d5-4282-ae9a-e651eb4b506d.png)
+![Basic configuration for AWS PrivateLink with optional integrations.](https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-network-access-options/images/guide-img/c6ce66a8-c949-4e68-b09d-850373110e63/images/e923e1eb-a6d5-4282-ae9a-e651eb4b506d.png)
 
 The following are the benefits of this approach:
 + Ease of integration: No route table changes required
@@ -66,7 +66,7 @@ Each VPC Lattice service can support up to 10 Gbps and 10,000 requests per secon
 
 The following diagram shows a high-level VPC Lattice configuration with some example integrations. It uses customer-managed service networks to access the SaaS application.
 
-![Basic configuration for Amazon VPC Lattice with optional integrations.](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-network-access-options/images/guide-img/c6ce66a8-c949-4e68-b09d-850373110e63/images/257c41f0-adec-453d-afb6-1efa49be95a5.png)
+![Basic configuration for Amazon VPC Lattice with optional integrations.](https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-network-access-options/images/guide-img/c6ce66a8-c949-4e68-b09d-850373110e63/images/257c41f0-adec-453d-afb6-1efa49be95a5.png)
 
 The following are the benefits of this approach:
 + Ease of integration: No route table changes required
@@ -96,7 +96,7 @@ After you establish a peering connection, you must update the route tables for t
 
 The following diagram shows a basic configuration with some possible integrations. VPCs in two consumer accounts have a peering connection with a VPC in the SaaS provider account.
 
-![Basic configuration of VPC peering connections between multiple accounts.](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-network-access-options/images/guide-img/c6ce66a8-c949-4e68-b09d-850373110e63/images/4c52b4d6-a31c-4777-a218-471439e07354.png)
+![Basic configuration of VPC peering connections between multiple accounts.](https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-network-access-options/images/guide-img/c6ce66a8-c949-4e68-b09d-850373110e63/images/4c52b4d6-a31c-4777-a218-471439e07354.png)
 
 The following are the benefits of this approach:
 + Time to repair: No single point of failure for communication
@@ -127,13 +127,13 @@ There are two main options to connect consumers to your SaaS offering with Trans
 
 In the first option, the service provider [shares the Transit Gateway](https://docs.aws.amazon.com/vpc/latest/tgw/transit-gateway-share.html) with the consumers by using [AWS Resource Access Manager (AWS RAM)](https://docs.aws.amazon.com/ram/latest/userguide/what-is.html). This allows the consumers to deploy the VPC attachments in their own accounts. The following diagram shows this option at a high level.
 
-![Consumers deploy transit gateway attachments to their VPCs.](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-network-access-options/images/guide-img/c6ce66a8-c949-4e68-b09d-850373110e63/images/c82f3900-53a8-4568-a94e-653cfb26c581.png)
+![Consumers deploy transit gateway attachments to their VPCs.](https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-network-access-options/images/guide-img/c6ce66a8-c949-4e68-b09d-850373110e63/images/c82f3900-53a8-4568-a94e-653cfb26c581.png)
 
 **Option 2: Peered transit gateways**
 
 The second option is to peer your transit gateway with a transit gateway in the consumers' accounts. This provides consumers with more flexibility because they can now fully control the route tables within their transit gateway. For example, they could set up centralized inspection between the service and their workloads. A drawback of this option is only static routing between transit gateways is supported. The following diagram shows this option at a high level.
 
-![Consumers and the SaaS provider create peered transit gateways.](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-network-access-options/images/guide-img/c6ce66a8-c949-4e68-b09d-850373110e63/images/581208dc-0f8d-4915-bfb0-9c42bb742b4d.png)
+![Consumers and the SaaS provider create peered transit gateways.](https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-network-access-options/images/guide-img/c6ce66a8-c949-4e68-b09d-850373110e63/images/581208dc-0f8d-4915-bfb0-9c42bb742b4d.png)
 
 The following are the benefits of this approach:
 + Scalability: Support for up to 5,000 attachments

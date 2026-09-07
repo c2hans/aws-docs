@@ -7,7 +7,7 @@ The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you 
 # Capturing Web Page Scroll Progress with Amazon Kinesis
 <a name="kinesis-examples-capturing-page-scrolling"></a>
 
-![JavaScript code example that applies to browser execution](http://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/browsericon.png)
+![JavaScript code example that applies to browser execution](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/browsericon.png)
 
 **This browser script example shows:**
 + How to capture scroll progress in a web page with Amazon Kinesis as an example of streaming page usage metrics for later analysis.

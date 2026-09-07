@@ -13,7 +13,7 @@ Many researchers were unwilling to delete old data, so local storage capacity wa
 
 The cloud addresses these challenges with hybrid compute and storage solutions that let you *burst* research computing into the cloud when on-premises capacity isn't enough. The following architecture diagram illustrates a few compute and storage bursting approaches, using tools such as [AWS ParallelCluster](https://aws.amazon.com/hpc/parallelcluster/) and [AWS Storage Gateway](https://aws.amazon.com/storagegateway/)[.](https://aws.amazon.com/hpc/parallelcluster/)
 
-![Architecture for cloud bursting for research computing](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-education-hybrid-multicloud/images/guide-img/72d1214e-0148-413e-9e71-1a181ad4845c/images/22283d97-4eef-4c82-bd6b-03ba484f75e2.png)
+![Architecture for cloud bursting for research computing](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-education-hybrid-multicloud/images/guide-img/72d1214e-0148-413e-9e71-1a181ad4845c/images/22283d97-4eef-4c82-bd6b-03ba484f75e2.png)
 
 This architecture follows these recommendations:
 + **Select a primary, strategic cloud provider. **This architecture uses one primary cloud provider to avoid being restricted by the least common denominator approach. This way, the institution can take advantage of the innovation and native compute and storage services that the primary cloud provider offers. The research computing team can focus on optimizing workloads in the environment provided by the primary cloud provider, not how to work in different cloud environments.

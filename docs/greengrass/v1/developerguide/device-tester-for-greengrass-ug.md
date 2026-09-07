@@ -16,7 +16,7 @@ IDT for AWS IoT Greengrass runs on your host computer (Windows, macOS, or Linux)
 
 Use IDT for AWS IoT Greengrass to verify that the AWS IoT Greengrass Core software runs on your hardware and can communicate with the AWS Cloud. It also performs end-to-end tests with AWS IoT Core. For example, it verifies that your device can send and receive MQTT messages and process them correctly.
 
-![An overview of how the AWS IoT Device Tester verifies that the AWS IoT Greengrass core software runs on your hardware and can communicate with the AWS Cloud.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/devicetester_gg.png)
+![An overview of how the AWS IoT Device Tester verifies that the AWS IoT Greengrass core software runs on your hardware and can communicate with the AWS Cloud.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/devicetester_gg.png)
 
 AWS IoT Device Tester for AWS IoT Greengrass organizes tests using the concepts of *test suites* and *test groups*.<a name="idt-test-suites-groups"></a>
 + A test suite is the set of test groups used to verify that a device works with particular versions of AWS IoT Greengrass.

@@ -17,7 +17,7 @@ Currently, they have a few thousand pre-purchased air conditioning (A/C) units w
 
  The data-flow architecture in the following figure shows how to solve this big data problem.
 
-![Data flow from sources through Kinesis to two paths: one to DynamoDB and dashboard, another to S3, Redshift, and QuickSight.](http://docs.aws.amazon.com/whitepapers/latest/big-data-analytics-options/images/bigdata3.png)
+![Data flow from sources through Kinesis to two paths: one to DynamoDB and dashboard, another to S3, Redshift, and QuickSight.](https://docs.aws.amazon.com/whitepapers/latest/big-data-analytics-options/images/bigdata3.png)
 
 *Capturing and analyzing sensor data *
 

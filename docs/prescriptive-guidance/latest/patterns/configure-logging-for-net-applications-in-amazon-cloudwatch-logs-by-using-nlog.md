@@ -38,7 +38,7 @@ To write log messages to CloudWatch Logs, you add the `AWS.Logger.NLog` NuGet pa
 
 **Target architecture**
 
-![Architecture diagram of NLog writing log data for a .NET application to Amazon ClodWatch Logs.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/0ac9c3ad-2a28-415f-afc3-7fe3494b2b63/images/daea9f2f-7242-4ed2-843e-655d843dcfdf.png)
+![Architecture diagram of NLog writing log data for a .NET application to Amazon ClodWatch Logs.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/0ac9c3ad-2a28-415f-afc3-7fe3494b2b63/images/daea9f2f-7242-4ed2-843e-655d843dcfdf.png)
 
 1. The .NET application writes log data to the NLog logging framework.
 

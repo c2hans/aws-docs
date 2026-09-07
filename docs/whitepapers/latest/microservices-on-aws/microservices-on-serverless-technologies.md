@@ -9,8 +9,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/
 
  Figure 4 demonstrates a serverless microservice architecture using AWS Lambda and managed services. This serverless architecture mitigates the need to design for scale and high availability, and reduces the effort needed for running and monitoring the underlying infrastructure.
 
-![Diagram showing Serverless microservice using AWS Lambda](http://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/images/serverless-microservice-using-lambda.png)
+![Diagram showing Serverless microservice using AWS Lambda](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/images/serverless-microservice-using-lambda.png)
 
  Figure 5 displays a similar serverless implementation using containers with AWS Fargate, removing concerns about underlying infrastructure. It also features Amazon Aurora Serverless, an on-demand, auto-scaling database that automatically adjusts capacity based on your application's requirements.
 
-![Diagram showing serverless microservice using AWS Fargate](http://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/images/serverless-microservice-fargate.png)
+![Diagram showing serverless microservice using AWS Fargate](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/images/serverless-microservice-fargate.png)

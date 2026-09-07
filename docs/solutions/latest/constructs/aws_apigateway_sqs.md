@@ -134,7 +134,7 @@ Out of the box implementation of the Construct without any override will set the
 ## Architecture
 <a name="_architecture"></a>
 
-![Diagram showing Amazon API Gateway, CloudWatch, and Simple Queue Service interactions with roles.](http://docs.aws.amazon.com/solutions/latest/constructs/images/aws-apigateway-sqs.png)
+![Diagram showing Amazon API Gateway, CloudWatch, and Simple Queue Service interactions with roles.](https://docs.aws.amazon.com/solutions/latest/constructs/images/aws-apigateway-sqs.png)
 
 ## Github
 <a name="_github"></a>

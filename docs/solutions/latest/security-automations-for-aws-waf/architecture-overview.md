@@ -14,7 +14,7 @@ Deploying this solution with the default parameters deploys the following compon
 
  **CloudFormation template deploys AWS WAF and other AWS resources to protect your web application from common attacks.**
 
-![aws waf architecture overview](http://docs.aws.amazon.com/solutions/latest/security-automations-for-aws-waf/images/aws-waf-architecture-overview.png)
+![aws waf architecture overview](https://docs.aws.amazon.com/solutions/latest/security-automations-for-aws-waf/images/aws-waf-architecture-overview.png)
 
 At the core of the design is an [AWS WAF](https://aws.amazon.com/waf/) web ACL, which acts as the central inspection and decision point for all incoming requests to a web application. During initial configuration of the CloudFormation stack, the user defines which protective components to activate. Each component operates independently and adds different rules to the web ACL.
 

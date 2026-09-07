@@ -53,7 +53,7 @@ Create the following user groups and assign appropriate users to these groups:
 
 Post this step, your IAM Identity Center should look similar to below:
 
-![IAM Identity Center with user groups](http://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashboards/images/customizations/ssoapp/iam_idc_groups.png)
+![IAM Identity Center with user groups](https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashboards/images/customizations/ssoapp/iam_idc_groups.png)
 
 ## Step 2: Sign-up for Quick Sight
 <a name="step-2-sign-up-for-quick-sight"></a>
@@ -65,7 +65,7 @@ Please follow the gif below for an overview of the process and also note the fol
 + Quick Sight account name you choose should be unique (see [here](https://docs.aws.amazon.com/quicksight/latest/user/signing-up.html) for details)
 + Search for and select the relevant user groups you created in Step 1 above
 
-![Quick Sight Sign-up process using IAM Identity Center](http://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashboards/images/customizations/ssoapp/qs-signup.gif)
+![Quick Sight Sign-up process using IAM Identity Center](https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashboards/images/customizations/ssoapp/qs-signup.gif)
 
 ## Step 3: Validate SSO flow
 <a name="step-3-validate-sso-flow"></a>
@@ -75,13 +75,13 @@ Please follow the gif below for an overview of the process and also note the fol
 + Enter user credentials on your identity provider portal
 + Click on Quick Sight tile on the AWS access portal to sign into Quick Sight
 
-![Quick Sight Sign-up process using IAM Identity Center](http://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashboards/images/customizations/ssoapp/user-portal.gif)
+![Quick Sight Sign-up process using IAM Identity Center](https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashboards/images/customizations/ssoapp/user-portal.gif)
 
  **Method 2**: From Quick Sight portal
 + Go to Quick Sight portal URL: https://quicksight.aws.amazon.com/
 + Enter your Quick Sight account name
 + Enter user credentials on your identity provider portal from where you would be redirected into Quick Sight
 
-![Quick Sight Sign-up process using IAM Identity Center](http://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashboards/images/customizations/ssoapp/qs-portal.gif)
+![Quick Sight Sign-up process using IAM Identity Center](https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashboards/images/customizations/ssoapp/qs-portal.gif)
 
 For a more in-depth walkthrough of setting up AWS IAM Identity Center, please follow the blog [Simplify business intelligence identity management with Amazon Quick Sight and AWS IAM Identity Center](https://aws.amazon.com/blogs/business-intelligence/simplify-business-intelligence-identity-management-with-amazon-quicksight-and-aws-iam-identity-center/)

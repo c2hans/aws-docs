@@ -12,15 +12,15 @@ Follow these steps to update the Systems Manager Parameter Store for the AWS acc
 1. In the navigation pane, choose **Parameter Store**.
 
     **Parameter Store**
-![parameterstore](http://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/images/parameterstore.png)
+![parameterstore](https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/images/parameterstore.png)
 
 --Or--
 
-If the Systems Manager home page opens first, choose the menu icon (![Horizontal black and white striped pattern forming a simple geometric design.](http://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/images/image4.png)) to open the navigation pane, then choose **Parameter Store**.
+If the Systems Manager home page opens first, choose the menu icon (![Horizontal black and white striped pattern forming a simple geometric design.](https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/images/image4.png)) to open the navigation pane, then choose **Parameter Store**.
 
  **My Parameters**
 
-![myparameters](http://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/images/myparameters.png)
+![myparameters](https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/images/myparameters.png)
 
 1. On the **My parameters** tab, select the box next to the parameter to update.
 

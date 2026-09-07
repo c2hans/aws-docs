@@ -16,7 +16,7 @@ At the core of the DynamoDB Encryption Client is an *item encryptor* that encryp
 
 The following diagram shows a high-level view of this process.
 
-![Encrypting and signing items in the DynamoDB Encryption Client](http://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/images/arch-encrypt.png)
+![Encrypting and signing items in the DynamoDB Encryption Client](https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/images/arch-encrypt.png)
 
 To encrypt and sign a table item, the DynamoDB Encryption Client needs:
 + **Information about the table. ** It gets information about the table from a [DynamoDB encryption context](concepts.md#encryption-context) that you supply. Some helpers get the required information from DynamoDB and create the DynamoDB encryption context for you.
@@ -34,7 +34,7 @@ The result is a DynamoDB item containing encrypted and signed data.
 
 These components also work together to verify and decrypt your item, as shown in the following diagram.
 
-![Verifying and decrypting items in the DynamoDB Encryption Client](http://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/images/arch-decrypt.png)
+![Verifying and decrypting items in the DynamoDB Encryption Client](https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/images/arch-decrypt.png)
 
 To verify and decrypt an item, the DynamoDB Encryption Client needs the same components, components with the same configuration, or components especially designed for decrypting the items, as follows:
 + **Information about the table** from the [DynamoDB encryption context](concepts.md#encryption-context).

@@ -35,7 +35,7 @@ Use the following table to compare the non-root solutions and understand their t
 
 The following flowchart guides you through selecting the appropriate solution based on your device constraints and requirements.
 
-![Flowchart showing decision process for choosing a non-root solution. Start by asking if you have root access on your core device. If no, use Solution 1. If yes, ask if you need to run components as different Linux users. If no, use Solution 2. If yes, ask if you want Greengrass to run as root user with limited capabilities. If yes, use Solution 4. If no, use Solution 3.](http://docs.aws.amazon.com/greengrass/v2/developerguide/images/non-root-solution-decision-flow.png)
+![Flowchart showing decision process for choosing a non-root solution. Start by asking if you have root access on your core device. If no, use Solution 1. If yes, ask if you need to run components as different Linux users. If no, use Solution 2. If yes, ask if you want Greengrass to run as root user with limited capabilities. If yes, use Solution 4. If no, use Solution 3.](https://docs.aws.amazon.com/greengrass/v2/developerguide/images/non-root-solution-decision-flow.png)
 
 ## Solution 1: Set up AWS IoT Greengrass V2 without root access
 <a name="non-root-solution-1"></a>

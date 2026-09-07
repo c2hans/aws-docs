@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-l
 
 The following diagram shows the high-level steps involved in migrating a database by using a mysqldump or mysqlpump backup file.
 
-![Diagram of migrating a mysqldump or mysqlpump backup file and restoring it on an Amazon DB instance.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-large-mysql-mariadb-databases/images/guide-img/49694e39-c5ff-41ab-af3d-e68e9b6e3ab5/images/5fefd2b1-1ee4-4eb7-a36e-7b7f4982b944.png)
+![Diagram of migrating a mysqldump or mysqlpump backup file and restoring it on an Amazon DB instance.](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-large-mysql-mariadb-databases/images/guide-img/49694e39-c5ff-41ab-af3d-e68e9b6e3ab5/images/5fefd2b1-1ee4-4eb7-a36e-7b7f4982b944.png)
 
 The following are the steps for using mysqldump or mysqlpump to migrate a database to the AWS Cloud:
 

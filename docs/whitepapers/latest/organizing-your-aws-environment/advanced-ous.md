@@ -89,7 +89,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 **Note**
  Some companies choose to keep each workload's data separated in individual accounts for an enhanced security posture, regardless of a regulatory or compliance need.
 
-![Diagram showing Business Continuity OU example structure](http://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/example-business-continuity-ou.png)
+![Diagram showing Business Continuity OU example structure](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/example-business-continuity-ou.png)
 
 ## Organizing workload-oriented OUs
 <a name="organizing-workload-oriented-ous"></a>
@@ -116,7 +116,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 
  Many of your top-level OUs will house collections of applications, cloud resources, and data in the form of workloads. A workload is a discrete collection of components and data that you manage. A workload can be a commercial off-the-shelf (COTS) application or your own custom application and data service.
 
-![Diagram showing the composition of a workload](http://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/workload-composition.png)
+![Diagram showing the composition of a workload](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/workload-composition.png)
 
 ### Workload environments
 <a name="workload-environments"></a>
@@ -127,7 +127,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 
  The following example shows multiple environments of a workload across non-production test and production workload environments.
 
-![Diagram showing example of multiple environments of a workload](http://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/multiple-environments-of-a-workload.png)
+![Diagram showing example of multiple environments of a workload](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/multiple-environments-of-a-workload.png)
 
  With COTS applications, you might not perform custom development, apart from implementing custom integrations with your own systems. However, you can experiment with and formally test new versions of the COTS applications in non-production environments before deploying them to production.
 
@@ -142,7 +142,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 
  The following diagram shows two degrees of scoping production workload accounts. In one example, a workload account is dedicated to a single workload environment. In the other example, multiple workload types reside in a single production workload account.
 
-![Diagram showing example workload accounts with different degrees of scoping](http://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/example-workload-accounts.png)
+![Diagram showing example workload accounts with different degrees of scoping](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/example-workload-accounts.png)
 
 ### Production and non-production workload environments
 <a name="production-and-non-production-workload-environments"></a>
@@ -180,7 +180,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 
  The following example shows the Workloads OU where a Prod child OU contains production accounts and workloads, and a NonProd child OU combines both development and test accounts and workloads.
 
-![Diagram showing example Workloads OU with common policies across a NonProd child OU](http://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/example-workloads-ou-common-policies.png)
+![Diagram showing example Workloads OU with common policies across a NonProd child OU](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/example-workloads-ou-common-policies.png)
 
 ### Option B: Different controls across non-production environments
 <a name="option-b-different-controls-across-non-production-environments"></a>
@@ -191,7 +191,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 
  The following example represents a simple form of this structure where Test and Dev OUs reside adjacent to the recommended Prod OU.
 
-![Diagram showing example Workloads OU with different policies for Test and Dev child OUs](http://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/example-workloads-ou-diff-policies.png)
+![Diagram showing example Workloads OU with different policies for Test and Dev child OUs](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/example-workloads-ou-diff-policies.png)
 
  The preceding example shows two different approaches to scoping development environment accounts. One approach is where development environments are aligned with the same groupings of workloads as used in test and production OUs. The other approach is one in which development environments are aligned based on teams.
 
@@ -211,11 +211,11 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 
  For example, if you manage a series of database services that are shared across your organizations and have common security and operational policy requirements, you might find value in grouping those data services under a common child OU.
 
-![Diagram showing a group of workloads with distinct policy requirements](http://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/group-of-workloads-with-distinct-policy-rqmts.png)
+![Diagram showing a group of workloads with distinct policy requirements](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/group-of-workloads-with-distinct-policy-rqmts.png)
 
  The following example represents a shared backup capability you can provide across your AWS environment. If this capability requires a set of security and operational policies that are distinct from other infrastructure workloads, then you can allocate a distinct OU for this workload.
 
-![Diagram showing a single workload with distinct policy requirements](http://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/single-workload-with-distinct-policy-rqmts.png)
+![Diagram showing a single workload with distinct policy requirements](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/single-workload-with-distinct-policy-rqmts.png)
 
 ### Separating business units with significantly different policies
 <a name="separating-business-units-with-significantly-different-policies"></a>
@@ -224,4 +224,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 
  In the following example, each BU is provided with its own OU so that different SCPs and/or operational policies can be applied independently from the other OUs.
 
-![Diagram showing an example business unit separation](http://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/example-business-unit-separation.png)
+![Diagram showing an example business unit separation](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/example-business-unit-separation.png)

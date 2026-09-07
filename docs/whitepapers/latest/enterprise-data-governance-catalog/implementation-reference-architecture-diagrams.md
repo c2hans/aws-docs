@@ -26,7 +26,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/enterprise-data-gover
 
  Data taxonomy is the classification of data based on data domains, subject areas, and data facets that introduce common terminologies and semantics across multiple systems. <a name="diagram1design"></a>
 
-![Reference architecture diagram 1: Enterprise metadata and data governance management catalog](http://docs.aws.amazon.com/whitepapers/latest/enterprise-data-governance-catalog/images/enterprise-metadata-diagram1.png)
+![Reference architecture diagram 1: Enterprise metadata and data governance management catalog](https://docs.aws.amazon.com/whitepapers/latest/enterprise-data-governance-catalog/images/enterprise-metadata-diagram1.png)
 
  Technical metadata is collected from various enterprise sources by a Database/Application Programming Interface (API). The API/JDBC connection periodically pulls data dictionary details from various relational/application data stores. This technical metadata is stored in a relational database modeled to meet the organizations data governance requirements.
 
@@ -43,7 +43,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/enterprise-data-gover
 
  Third-party tools provide an out-of-the-box graphical user interface for data stewards and users to view and update business metadata. Most third-party tools also provide machine learning capabilities to find similar matching patterns of data and help them inherit definitions and classifications. As depicted in the [reference architecture diagram 1](#diagram1design), technical and business metadata is combined to provide users with a meaningful context for various data assets within the organization. <a name="diagram2design"></a>
 
-![Reference architecture diagram 2: Enterprise metadata and data governance management catalog](http://docs.aws.amazon.com/whitepapers/latest/enterprise-data-governance-catalog/images/enterprise-metadata-diagram2.png)
+![Reference architecture diagram 2: Enterprise metadata and data governance management catalog](https://docs.aws.amazon.com/whitepapers/latest/enterprise-data-governance-catalog/images/enterprise-metadata-diagram2.png)
 
  Technical metadata is collected from various enterprise sources by a Database/Application Programming Interface (API). The API/JDBC connection periodically pulls data dictionary details from various relational/application data stores.
 

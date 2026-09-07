@@ -91,7 +91,7 @@ Compute Optimizer might update these threshold and headroom values to reflect th
 
 You can use the simulated graphs in the console to get a representation of how your CPU and memory usage interacts with the threshold and headroom settings across the lookback period. The graph displays how the threshold and headroom values you set are applied to utilization data of the example workload before Compute Optimizer uses the data to generate recommendations. As you adjust the headroom and threshold, the graph updates to show how Compute Optimizer generates recommendations based on your custom preferences.
 
-![CPU and memory usage graph](http://docs.aws.amazon.com/compute-optimizer/latest/ug/images/rightsizing-graph.png)
+![CPU and memory usage graph](https://docs.aws.amazon.com/compute-optimizer/latest/ug/images/rightsizing-graph.png)
 
 **Important**
 The data shown in the simulated graph is representative and for illustrative purposes only. The graph isn’t based on your utilization data.

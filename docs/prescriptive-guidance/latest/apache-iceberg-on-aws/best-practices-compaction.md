@@ -20,7 +20,7 @@ On AWS, you can run table compaction and maintenance operations for Iceberg thro
 
 When you run compaction by using the [rewrite\_data\_files](https://iceberg.apache.org/docs/latest/spark-procedures/#rewrite_data_files) procedure, you can adjust several knobs to control the compaction behavior. The following diagram shows the default behavior of bin packing. Understanding bin packing compaction is key to understanding hierarchical sorting and Z-order sorting implementations, because they are extensions of the bin packing interface and operate in a similar manner. The main distinction is the additional step required for sorting or clustering the data.
 
-![Default bin packing behavior in Iceberg tables](http://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/images/guide-img/ceffa39e-028d-47b6-a54a-6ef8526aee6a/images/64e4a793-e9cd-4ee5-bdca-5fd230b07dbb.png)
+![Default bin packing behavior in Iceberg tables](https://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/images/guide-img/ceffa39e-028d-47b6-a54a-6ef8526aee6a/images/64e4a793-e9cd-4ee5-bdca-5fd230b07dbb.png)
 
 In this example, the Iceberg table consists of four partitions. Each partition has a different size and different number of files. If you start a Spark application to run compaction, the application creates a total of four file groups to process. A file group is an Iceberg abstraction that represents a collection of files that will be processed by a single Spark job. That is, the Spark application that runs compaction will create four Spark jobs to process the data.
 

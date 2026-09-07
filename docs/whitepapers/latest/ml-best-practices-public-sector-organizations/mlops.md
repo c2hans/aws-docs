@@ -28,7 +28,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/ml-best-practices-pub
 
  For AWS programmers and teams that are already working with CodePipeline for deployment of other workloads, the option exists to utilize the same workflows for ML. Figure 3 below represents a reference pipeline for deployment on AWS.
 
-![Reference Architecture CI/CD Pipeline for ML on AWS](http://docs.aws.amazon.com/whitepapers/latest/ml-best-practices-public-sector-organizations/images/reference-architecture-cicd.png)
+![Reference Architecture CI/CD Pipeline for ML on AWS](https://docs.aws.amazon.com/whitepapers/latest/ml-best-practices-public-sector-organizations/images/reference-architecture-cicd.png)
 
  See [Build a CI/CD pipeline for deploying custom machine learning models using AWS services](https://aws.amazon.com/blogs/machine-learning/build-a-ci-cd-pipeline-for-deploying-custom-machine-learning-models-using-aws-services) for details on the reference architecture and implementation.
 
@@ -42,7 +42,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/ml-best-practices-pub
 
  Figure 4 below illustrates an AWS solution that provides an extendable framework with a standard interface for managing ML pipelines.
 
-![Diagram showing AWS MLOps Framework](http://docs.aws.amazon.com/whitepapers/latest/ml-best-practices-public-sector-organizations/images/aws-mlops-framework.png)
+![Diagram showing AWS MLOps Framework](https://docs.aws.amazon.com/whitepapers/latest/ml-best-practices-public-sector-organizations/images/aws-mlops-framework.png)
 
  The solution provides a ready-made template to upload trained models (also referred to as a *bring your own model*), configure the orchestration of the pipeline, and monitor the pipeline's operations.
 

@@ -19,10 +19,10 @@ source_url: https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws/
 
  **Application Insights dashboard showing no detected problems and advanced monitoring not enabled.**
 
-![appregistry2](http://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws/images/appregistry2.png)
+![appregistry2](https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws/images/appregistry2.png)
 
 Monitoring for your applications is now activated and the following status box appears:
 
  **Application Insights dashboard showing successful monitoring activation message.**
 
-![appregistry3](http://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws/images/appregistry3.png)
+![appregistry3](https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws/images/appregistry3.png)

@@ -14,11 +14,11 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 
  The following figure shows the separation of AD DS and AD Connector into dedicated private subnets (scenario 3). In this example all services reside in the same Amazon VPC.
 
-![Sample architecture showing the separation of AD DS and AD Connector into dedicated private subnets.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/registering-replicated-mad.png)
+![Sample architecture showing the separation of AD DS and AD Connector into dedicated private subnets.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/registering-replicated-mad.png)
 
  The following figure shows a design similar to scenario 1; however, in this scenario the on-premises portion resides in a dedicated Amazon VPC.
 
-![Sample architecture showing a design similar to scenario 1; however, in this scenario the on-premises portion resides in a dedicated Amazon VPC.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/ad-ds-network-separation.png)
+![Sample architecture showing a design similar to scenario 1; however, in this scenario the on-premises portion resides in a dedicated Amazon VPC.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/ad-ds-network-separation.png)
 
 **Note**
  For customers who have an existing AWS deployment where AD DS is being used, it’s recommended that they locate their WorkSpaces in a dedicated VPC, and use VPC peering for AD DS communications.
@@ -74,7 +74,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 
  Defining the correct site topology ensures client affinity, meaning that clients (in this case, WorkSpaces) use their preferred local domain controller.
 
-![Sample architecture showing the client affinity using a local domain controller.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/dedicated-workspaces-vpc.png)
+![Sample architecture showing the client affinity using a local domain controller.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/dedicated-workspaces-vpc.png)
 
  **Best practice:** Define high cost for site links between on-premises AD DS and the AWS Cloud. The following figure is an example of what costs to assign to the site links (cost 100) to ensure site-independent client affinity.
 
@@ -113,7 +113,7 @@ Implementing MFA requires Amazon WorkSpaces to be configured with either an Acti
 
  After MFA is enabled, users are required to provide their Username, Password, and MFA Code to the WorkSpaces client for authentication to their respective WorkSpaces desktops.
 
-![Screenshot of WorkSpaces console showing MFA enabled](http://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/workspaces-client-mfa.png)
+![Screenshot of WorkSpaces console showing MFA enabled](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/workspaces-client-mfa.png)
 
 **Note**
  The AWS Directory Service does not support selective *per user *or contextual MFA: this is a global setting per Directory. If selective “per user” MFA is required, users must be separated by an AD Connector, which can point back to the same source Active Directory.
@@ -138,7 +138,7 @@ When your end users log in to WorkSpaces with a FQDN as their WorkSpaces registr
 
 While you develop your BC/DR strategy, it is important to consider the user data, since the WorkSpaces cross-region redirection option does not synchronize any user data, nor does it synchronize your WorkSpaces images. Your WorkSpaces deployments in different AWS Regions are independent entities. You will, therefore, have to take additional measures to ensure that your WorkSpaces users can access their data when a redirection to a secondary region occurs. There are many options available for user data replication such as WorkSpaces, Windows FSx (DFS Share), or third party utilities to synchronize data volumes between regions. Likewise, you’ll have to ensure that your secondary region has access to the required WorkSpaces images, for example, by copying the images across regions. For more information, see [Cross-Region Redirection for Amazon WorkSpaces](https://docs.aws.amazon.com/workspaces/latest/adminguide/cross-region-redirection.html) in the *Amazon WorkSpaces Administration Guide*, and the example in the diagram.
 
-![Image showing WorkSpaces cross-Region redirection with Route 53](http://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/workspaces-route-53-cross-region-redirection.png)
+![Image showing WorkSpaces cross-Region redirection with Route 53](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/workspaces-route-53-cross-region-redirection.png)
 
 ## WorkSpaces Interface VPC Endpoint (AWS PrivateLink) – API Calls
 <a name="workspaces-interface-vpc-endpoint-aws-privatelink-api-calls"></a>
@@ -200,7 +200,7 @@ In-session authentication simplifies and secures application authentication afte
 
  Support for pre-session authentication requires Windows WorkSpaces Client version 3.1.1 and later, or macOS WorkSpaces client version 3.1.5 and later. Pre-session authentication with smart cards is fundamentally different than standard authentication, requiring the user to authenticate through a combination of both inserting the smart card and entering a PIN code. With this authentication type, the duration of user’s sessions is bounded by the lifetime of the Kerberos ticket. A full installation guide can be found [here](https://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/access-workspaces-with-access-cards.html).
 
-![Screenshot showing the pre-session authentication which requires requires Windows WorkSpaces Client version 3.1.1 and later, or macOS WorkSpaces client version 3.1.5 and later.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/pre-session-auth.png)
+![Screenshot showing the pre-session authentication which requires requires Windows WorkSpaces Client version 3.1.1 and later, or macOS WorkSpaces client version 3.1.5 and later.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/pre-session-auth.png)
 
 1.  User opens Amazon WorkSpaces Client, inserts Smart Card, and enters their PIN. The PIN is used by Amazon WorkSpaces Client to decrypt the X.509 Certificate, which is the proxied to the AD Connector through the Authentication Gateway.
 
@@ -216,7 +216,7 @@ OCSP Responder must be publicly accessible as connection is performed through th
 
  Entering the users name is not required as the user certificates presented to AD Connector includes the userPrincipalName (UPN) of the user in the subjectAltName (SAN) field of the certificate. It is a best practice to automate all users that require pre-session authentication with Smartcards have their AD user objects updated to authenticate with anticipated UPN in the certificate using PowerShell, rather than perform this individually in Microsoft Management Consoles.
 
-![Screenshot showing the WorkSpaces sign in console](http://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/sign-in-console.png)
+![Screenshot showing the WorkSpaces sign in console](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/sign-in-console.png)
 
 ## Client deployment
 <a name="client-deployment"></a>
@@ -259,7 +259,7 @@ Within these paths, you will find the two configuration files. The first configu
 
 Designed for locked-down devices, the [Web Access client](https://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-web-access.html) delivers access to Amazon WorkSpaces without the need for deploying client software. The Web Access client is recommended only in settings where the Amazon WorkSpaces are Windows Operating System (OS) and are used for limited user workflows, such as a kiosk environment. Most use cases benefit from the feature set available from the Amazon WorkSpaces client. The Web Access client is only recommended in specific use cases where devices and network restrictions require an alternative connection method.
 
-![Sample architecture showing the web access client network requirements.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/web-access-client-auth.png)
+![Sample architecture showing the web access client network requirements.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/web-access-client-auth.png)
 
 As shown in the diagram, The Web Access client has different [network requirements](https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.html#web-access-ports) to stream the session to users. Web Access is available for Windows WorkSpaces using either the PCoIP or WSP protocol. DNS and HTTP/HTTPS are required for authentication and registration with the WorkSpaces gateways. For WorkSpaces using the WSP protocol, direct connection of UDP/TCP 4195 is required to be opened to the WSP Gateway IP address ranges. Streaming traffic is not allocated to a fixed port as it is with the full Amazon WorkSpaces client; instead, it is dynamic allocated. UDP is preferable for streaming traffic; however, the web browser will fall back to TCP when UDP is restricted. In environments where TCP/UDP port 4172 is blocked and cannot be unblocked due to organizational restrictions, the Web Access client provides an alternative connection method for users.
 

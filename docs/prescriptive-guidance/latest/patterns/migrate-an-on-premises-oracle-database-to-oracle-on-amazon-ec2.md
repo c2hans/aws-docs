@@ -36,17 +36,17 @@ This pattern walks you through the steps for migrating an on-premises Oracle dat
 
 **Target architecture**
 
-![Setting up replication for an Oracle database on Amaozn EC2.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/66c98694-6580-4ffb-9f16-84de58cf8b07/images/386d5b14-8633-4ecc-98fb-59872de99d41.png)
+![Setting up replication for an Oracle database on Amaozn EC2.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/66c98694-6580-4ffb-9f16-84de58cf8b07/images/386d5b14-8633-4ecc-98fb-59872de99d41.png)
 
 **Data migration architecture**
 
 *Using AWS DMS:*
 
-![Migrating an on-premises Oracle database to Amazon EC2 with AWS DMS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/66c98694-6580-4ffb-9f16-84de58cf8b07/images/14954066-d22b-486a-a432-265296752878.png)
+![Migrating an on-premises Oracle database to Amazon EC2 with AWS DMS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/66c98694-6580-4ffb-9f16-84de58cf8b07/images/14954066-d22b-486a-a432-265296752878.png)
 
 *Using native Oracle tools:*
 
-![Migrating an on-premises Oracle database to Amazon EC2 with Oracle tools.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/66c98694-6580-4ffb-9f16-84de58cf8b07/images/82ba5fcb-8640-45fa-b432-2702dedc0774.png)
+![Migrating an on-premises Oracle database to Amazon EC2 with Oracle tools.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/66c98694-6580-4ffb-9f16-84de58cf8b07/images/82ba5fcb-8640-45fa-b432-2702dedc0774.png)
 
 ## Tools
 <a name="migrate-an-on-premises-oracle-database-to-oracle-on-amazon-ec2-tools"></a>

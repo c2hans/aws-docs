@@ -142,7 +142,7 @@ The techniques differ in how they produce proposals, which can be grouped into t
 + Requires loading a separate draft model (additional memory)
 + Acceptance rate depends on draft-target alignment
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-inference-architecture-and-best-practices-on-aws/images/guide-img/1e4a4636-9247-4346-9ab7-62170783f8a2/images/7212304c-d3d5-45ac-ab15-a3db2b23f3e1.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-inference-architecture-and-best-practices-on-aws/images/guide-img/1e4a4636-9247-4346-9ab7-62170783f8a2/images/7212304c-d3d5-45ac-ab15-a3db2b23f3e1.png)
 
 **Configuration example (vLLM):**
 
@@ -169,7 +169,7 @@ vllm serve meta-llama/Llama-3.1-70B-Instruct \
 + Requires training a speculator head for each target model if one is not already available
 + More complex setup than other approaches
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-inference-architecture-and-best-practices-on-aws/images/guide-img/1e4a4636-9247-4346-9ab7-62170783f8a2/images/b1a1b55d-348f-47f4-88c6-fe4f4557fa43.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-inference-architecture-and-best-practices-on-aws/images/guide-img/1e4a4636-9247-4346-9ab7-62170783f8a2/images/b1a1b55d-348f-47f4-88c6-fe4f4557fa43.png)
 
 **Configuration examples**
 
@@ -203,7 +203,7 @@ Rather than deploying N separate fine-tuned models, multi-LoRA serving loads one
 + **Dynamic switching**: Different concurrent requests can use different adapters in the same batch
 + **Automatic management**: Engine handles adapter loading/unloading based on memory constraints and request patterns
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-inference-architecture-and-best-practices-on-aws/images/guide-img/1e4a4636-9247-4346-9ab7-62170783f8a2/images/1f06ecc6-6043-448f-a88c-937fb170f08c.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-inference-architecture-and-best-practices-on-aws/images/guide-img/1e4a4636-9247-4346-9ab7-62170783f8a2/images/1f06ecc6-6043-448f-a88c-937fb170f08c.png)
 
 ### Memory and Performance Impact
 <a name="memory-and-performance-impact.3a283487-c3a4-514f-ab4e-b039b3f34786"></a>

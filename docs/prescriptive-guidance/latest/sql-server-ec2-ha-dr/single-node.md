@@ -9,7 +9,7 @@ The following diagram illustrates a recommended architecture for a single-node S
 
 In this architecture, the SQL Server database is deployed to an EC2 instance, using an Amazon Machine Image (AMI) for SQL Server and separate volumes for OS, DATA, LOG, and backups. Non-volatile memory express (NVMe) storage is attached directly to the EC2 instance and used for the SQL Server tempdb database. AWS Directory Service is used to set up Windows authentication for the SQL Server database. You can also use AWS Systems Manager to detect and install SQL Server patches and updates.
 
-![Single-node SQL Server architecture on Amazon EC2 before HA/DR](http://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-ec2-ha-dr/images/guide-img/09ec13da-971b-4981-975f-0940015d7fc0/images/b6644cca-48cf-40b2-befa-3be9909a2551.png)
+![Single-node SQL Server architecture on Amazon EC2 before HA/DR](https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-ec2-ha-dr/images/guide-img/09ec13da-971b-4981-975f-0940015d7fc0/images/b6644cca-48cf-40b2-befa-3be9909a2551.png)
 
  The following table summarizes the recommendations for configuring this architecture. These recommendations are discussed in detail in the sections that follow.
 

@@ -25,7 +25,7 @@ Accurate Audio/Video Synchronization is not supported on web based clients.
      1. Choose the **Settings** icon.
 
      1. Select **Accurate Audio/Video Synchronization** from the drop-down menu.
-![Audio/Video Settings button that's located at the bottom of the Settings menu.](http://docs.aws.amazon.com/dcv/latest/userguide/images/av-sync-setting-windows-client.png)
+![Audio/Video Settings button that's located at the bottom of the Settings menu.](https://docs.aws.amazon.com/dcv/latest/userguide/images/av-sync-setting-windows-client.png)
    + macOS clients
 
      1. Choose the **DCV Viewer** icon.
@@ -33,7 +33,7 @@ Accurate Audio/Video Synchronization is not supported on web based clients.
      1. Select **Preferences** from the drop-down menu.
 
      1. Check the box for **Accurate Audio/Video Synchronization**.
-![Audio/Video Settings button that's located at the bottom of the Settings menu.](http://docs.aws.amazon.com/dcv/latest/userguide/images/mac-preferences-av-sync.png)
+![Audio/Video Settings button that's located at the bottom of the Settings menu.](https://docs.aws.amazon.com/dcv/latest/userguide/images/mac-preferences-av-sync.png)
    + Linux clients
 
      1. Choose the **Settings** icon.
@@ -41,4 +41,4 @@ Accurate Audio/Video Synchronization is not supported on web based clients.
      1. Select **Preferences** from the drop-down menu.
 
      1. Check the box for **Accurate Audio/Video Synchronization**.
-![Audio/Video Settings button that's located at the bottom of the Settings menu.](http://docs.aws.amazon.com/dcv/latest/userguide/images/linux-preferences-av-sync.png)
+![Audio/Video Settings button that's located at the bottom of the Settings menu.](https://docs.aws.amazon.com/dcv/latest/userguide/images/linux-preferences-av-sync.png)

@@ -49,11 +49,11 @@ Ensure users are assigned the appropriate security profile permissions:
 
  Save a custom dashboard by:
 + Add one or more performance evaluation widgets to an existing dashboard.
-![Refresh icon and Add widget button in the dashboard header.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-performance-dashboard-add-widget.png)
-![Add widget dialog showing Performance evaluation category with six widget options.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-performance-widgets.png)
+![Refresh icon and Add widget button in the dashboard header.](https://docs.aws.amazon.com/connect/latest/adminguide/images/agent-performance-dashboard-add-widget.png)
+![Add widget dialog showing Performance evaluation category with six widget options.](https://docs.aws.amazon.com/connect/latest/adminguide/images/agent-performance-widgets.png)
 + **Save** the dashboard.
 + Choose **Share**. **Publish** the dashboard to make it available to other users. You might set the share setting to **Read-only** to prevent others from making edits to the dashboard.
-![Share dashboard dialog with Read-only toggle, share link, and Publish toggle options.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-performance-dashboard-share.png)
+![Share dashboard dialog with Read-only toggle, share link, and Publish toggle options.](https://docs.aws.amazon.com/connect/latest/adminguide/images/agent-performance-dashboard-share.png)
 
  You can **Share the dashboard link** for agents to access the dashboard within the Amazon Connect admin console. For agents to access the saved dashboard on the Connect agent workspace see: [Integrate a published dashboard into the agent workspace](integrate-published-dashboard.md).
 
@@ -79,7 +79,7 @@ Following are a few use cases that help explain how to configure the **Time rang
   + Compare to
     + Comparison type: Prior time period
     + Benchmark time range: Day, Prior day
-![Time range = Trailing, Time = Today, Comparison type = Prior time period.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-evaluations-dashboard-example1.png)
+![Time range = Trailing, Time = Today, Comparison type = Prior time period.](https://docs.aws.amazon.com/connect/latest/adminguide/images/agent-evaluations-dashboard-example1.png)
 + **Use case 2**: I want to compare my agents' performance last week with the prior week
 
   Configure the dashboard as follows:
@@ -88,7 +88,7 @@ Following are a few use cases that help explain how to configure the **Time rang
   + Compare to
     + Comparison type: Prior time period
     + Benchmark time range: Week, Prior week
-![Time range = Week, Time = Last week, Comparison type = Prior time period.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-evaluations-dashboard-example2.png)
+![Time range = Week, Time = Last week, Comparison type = Prior time period.](https://docs.aws.amazon.com/connect/latest/adminguide/images/agent-evaluations-dashboard-example2.png)
 + **Use case 3**: I want to compare my agents' performance last week with the average of the contact center.
 
   Configure the dashboard as follows:
@@ -97,7 +97,7 @@ Following are a few use cases that help explain how to configure the **Time rang
   + Compare to
     + Comparison type: Resource
     + Select resource: Agent
-![Time range = Week, Time = Last week, Comparison type = Resource.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-evaluations-dashboard-example3.png)
+![Time range = Week, Time = Last week, Comparison type = Resource.](https://docs.aws.amazon.com/connect/latest/adminguide/images/agent-evaluations-dashboard-example3.png)
 
 ## Agent performance overview and Agent evaluation performance overview charts
 <a name="agent-performance-overview"></a>
@@ -110,11 +110,11 @@ The charts also provide the benchmark value based on your selections within "Com
 
 The following image shows an example **Agent performance overview** chart.
 
-![The Agent performance overview chart.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-performance-dashboard1.png)
+![The Agent performance overview chart.](https://docs.aws.amazon.com/connect/latest/adminguide/images/agent-performance-dashboard1.png)
 
 The following image of the **Agent evaluation performance overview** chart shows the **Avg evaluation score** decreased from 67.58% to 48.72%.
 
-![The Agent evaluation performance overview chart.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-performance-dashboard2.png)
+![The Agent evaluation performance overview chart.](https://docs.aws.amazon.com/connect/latest/adminguide/images/agent-performance-dashboard2.png)
 
 ## Evaluation scorecard chart
 <a name="evaluation-scorecard-dashboard"></a>
@@ -134,7 +134,7 @@ The evaluation source helps you differentiate between evaluations performed manu
 
 The following image shows an example **Evaluation scorecard** chart.
 
-![The Evaluation scorecard chart.](http://docs.aws.amazon.com/connect/latest/adminguide/images/evaluation-scorecard-dashboard.png)
+![The Evaluation scorecard chart.](https://docs.aws.amazon.com/connect/latest/adminguide/images/evaluation-scorecard-dashboard.png)
 
 ## Evaluation score trend chart
 <a name="evaluation-scorecard-trend-chart"></a>
@@ -145,7 +145,7 @@ In addition to the page filters, you can also add filters to the chart for the e
 
 The following image shows an example **Evaluation score trend** chart.
 
-![The Evaluation score trend chart.](http://docs.aws.amazon.com/connect/latest/adminguide/images/evaluation-score-trend.png)
+![The Evaluation score trend chart.](https://docs.aws.amazon.com/connect/latest/adminguide/images/evaluation-score-trend.png)
 
 ## Agent performance evaluation metrics table
 <a name="agent-perf-metrics-chart"></a>
@@ -160,7 +160,7 @@ You can set custom thresholds that you can use to get an at-a-glance view of age
 
 The following image shows an example **Agent performance evaluation metrics** table.
 
-![The Agent performance evaluation metrics chart.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-perf-evaluation-metrics.png)
+![The Agent performance evaluation metrics chart.](https://docs.aws.amazon.com/connect/latest/adminguide/images/agent-perf-evaluation-metrics.png)
 
 ## Agent online time breakdown chart
 <a name="agent-online-time-breakdown-chart"></a>
@@ -175,7 +175,7 @@ This chart helps you assess whether agents are spending too much time on activit
 
 The following image shows an example **Agent online time breakdown** chart.
 
-![The Agent online time breakdown chart.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-online-time-breakdown.png)
+![The Agent online time breakdown chart.](https://docs.aws.amazon.com/connect/latest/adminguide/images/agent-online-time-breakdown.png)
 
 ## Average handle time breakdown chart
 <a name="avg-handletime-breakdown-chart"></a>
@@ -188,7 +188,7 @@ You can benchmark average handle time components over time or versus benchmark (
 
 The following image shows an example **Avg. handle time breakdown** chart.
 
-![The Avg. handle time breakdown chart.](http://docs.aws.amazon.com/connect/latest/adminguide/images/avg-handletime-breakdown.png)
+![The Avg. handle time breakdown chart.](https://docs.aws.amazon.com/connect/latest/adminguide/images/avg-handletime-breakdown.png)
 
 ## Agent performance metrics table
 <a name="agent-perf-metrics-table"></a>
@@ -199,7 +199,7 @@ You can also edit the chart to add or remove agent performance metrics, and set 
 
 The following image shows an example **Agent performance metrics** chart.
 
-![The Agent performance metrics table.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-perf-metrics-table.png)
+![The Agent performance metrics table.](https://docs.aws.amazon.com/connect/latest/adminguide/images/agent-perf-metrics-table.png)
 
 ## Evaluations performed by evaluator
 <a name="evaluations-performed-by-evaluator-table"></a>
@@ -208,21 +208,21 @@ On this table, you can view the evaluations performed by evaluator to assess eva
 
 You can also compare evaluation scores across evaluators to assess evaluator consistency and accuracy.
 
-![Evaluations performed by evaluator.](http://docs.aws.amazon.com/connect/latest/adminguide/images/evaluations-performed-by-evaluator-table.png)
+![Evaluations performed by evaluator.](https://docs.aws.amazon.com/connect/latest/adminguide/images/evaluations-performed-by-evaluator-table.png)
 
 To add this widget on the agent performance evaluation dashboard or another dashboard, choose **Add widget** and select it under **Performance evaluation**.
 
-![Performance evaluation widgets.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-performance-widgets.png)
+![Performance evaluation widgets.](https://docs.aws.amazon.com/connect/latest/adminguide/images/agent-performance-widgets.png)
 
 Note that you can filter any dashboard widget containing evaluation metrics by the **evaluator** that had submitted the evaluation:
 
-![Agent performance evaluator filter.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-performance-evaluator-filter.png)
+![Agent performance evaluator filter.](https://docs.aws.amazon.com/connect/latest/adminguide/images/agent-performance-evaluator-filter.png)
 
 ## Agent hierarchy evaluation metrics
 <a name="agent-hierarchy-evaluation-metrics-table"></a>
 
 On this table, you can drill-down into avg. evaluation score and evaluations performed by agent hierarchy. You can configure your agent hierarchy to represent geographical locations, departments, teams.
 
-![Agent hierarchy evaluation metrics table.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-hierarchy-evaluation-metrics-table.png)
+![Agent hierarchy evaluation metrics table.](https://docs.aws.amazon.com/connect/latest/adminguide/images/agent-hierarchy-evaluation-metrics-table.png)
 
 To add this widget on the agent performance evaluation dashboard or another dashboard, choose **Add widget** and select it under **Performance evaluation**.

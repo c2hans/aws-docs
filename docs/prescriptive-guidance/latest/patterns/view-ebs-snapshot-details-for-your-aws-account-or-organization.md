@@ -29,7 +29,7 @@ You can use the script provided by this pattern to generate a comma-separated va
 
 The following diagram shows the script workflow that generates an on-demand report of EBS snapshots that are spread across multiple AWS accounts in an OU.
 
-![Generating an on-demand report of EBS snapshots across OUs.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/4e8b1812-2731-4f46-8385-0dd4d92f2d03/images/62d10408-7c85-46cf-a6a4-fe87a6e446f2.png)
+![Generating an on-demand report of EBS snapshots across OUs.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/4e8b1812-2731-4f46-8385-0dd4d92f2d03/images/62d10408-7c85-46cf-a6a4-fe87a6e446f2.png)
 
 ## Tools
 <a name="view-ebs-snapshot-details-for-your-aws-account-or-organization-tools"></a>

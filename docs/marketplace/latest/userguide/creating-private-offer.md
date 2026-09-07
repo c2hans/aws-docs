@@ -162,7 +162,7 @@ After you enroll in the ACE program, status updates occur every two weeks. The p
   + Link your AWS Partner Central and AWS Marketplace accounts. For more information, see [Link your AWS Partner Central account to your AWS Marketplace account](https://docs.aws.amazon.com/partner-central/latest/getting-started/account-linking.html#linking-apc-aws-marketplace), in the *AWS Partner Central Getting Started Guide*.
 
     After you link your AWS Partner Central and AWS Marketplace accounts, your Partner Central **Home** page displays the following status message:
-![The Partner Central learn page showing a status of "account linked."](http://docs.aws.amazon.com/marketplace/latest/userguide/images/linked-accounts.png)
+![The Partner Central learn page showing a status of "account linked."](https://docs.aws.amazon.com/marketplace/latest/userguide/images/linked-accounts.png)
 
 For more information, sign in to Partner Central and see the following:
 + The [AWS Partner Central & Marketplace account linking guide](https://partnercentral.awspartner.com/partnercentral2/s/article?article=AWS-Partner-Central&category=Introductory_resources#Introduction)

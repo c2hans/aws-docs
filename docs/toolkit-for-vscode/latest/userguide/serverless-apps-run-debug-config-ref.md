@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/serv
 
 When you open the `launch.json` file to edit debug configurations, you can use the VS Code [IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) feature to view and automatically complete valid properties. To trigger IntelliSense in the editor, press **Ctrl**\+**Spacebar**.
 
-![Using VS Code's IntelliSense to find and complete valid debug properties.](http://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/Intellisense_autocomplete.gif)
+![Using VS Code's IntelliSense to find and complete valid debug properties.](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/Intellisense_autocomplete.gif)
 
 IntelliSense enables you to find and define properties for invoking Lambda functions directly or with the AWS SAM template. You can also define properties for `"lambda"` (how the function runs), `"sam"` (how the AWS SAM CLI builds the application), and `"aws"` (how AWS connection information is provided).
 

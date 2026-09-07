@@ -14,7 +14,7 @@ This solution uses a CloudFormation template to handle the uninstallation workfl
 
 You can download the CloudFormation template for uninstalling this solution before deploying it.
 
- [![View template button](http://docs.aws.amazon.com/solutions/latest/scene-intelligence-with-rosbag-on-aws/images/view-template.png)](https://solutions-reference.s3.amazonaws.com/scene-intelligence-with-rosbag-on-aws/latest/scene-intelligence-with-rosbag-on-aws-delete.template) **scene-intelligence-with-rosbag-on-aws-delete.template** Use this template to destroy the modules related to the solution and all associated components orchestrated by an open source GitOps library called `seedfarmer`.
+ [![View template button](https://docs.aws.amazon.com/solutions/latest/scene-intelligence-with-rosbag-on-aws/images/view-template.png)](https://solutions-reference.s3.amazonaws.com/scene-intelligence-with-rosbag-on-aws/latest/scene-intelligence-with-rosbag-on-aws-delete.template) **scene-intelligence-with-rosbag-on-aws-delete.template** Use this template to destroy the modules related to the solution and all associated components orchestrated by an open source GitOps library called `seedfarmer`.
 
 This CloudFormation template uninstalls the Scene Intelligence with Rosbag on AWS solution in the AWS Cloud.
 
@@ -33,7 +33,7 @@ Follow the step-by-step instructions in this section to uninstall the solution f
 
 1. Sign in to the [AWS Management Console](https://aws.amazon.com/console/) and select the button to launch the `scene-intelligence-with-rosbag-on-aws-delete.template` AWS CloudFormation template.
 
-    [![launch solution](http://docs.aws.amazon.com/solutions/latest/scene-intelligence-with-rosbag-on-aws/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/template?stackName=Scene-intelligence-with-rosbag-on-aws-role&amp;templateURL=https://solutions-reference.s3.amazonaws.com/scene-intelligence-with-rosbag-on-aws/latest/scene-intelligence-with-rosbag-on-aws-delete.template)
+    [![launch solution](https://docs.aws.amazon.com/solutions/latest/scene-intelligence-with-rosbag-on-aws/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/template?stackName=Scene-intelligence-with-rosbag-on-aws-role&amp;templateURL=https://solutions-reference.s3.amazonaws.com/scene-intelligence-with-rosbag-on-aws/latest/scene-intelligence-with-rosbag-on-aws-delete.template)
 
 1. The template launches in the US East (N. Virginia) Region by default. To launch the solution in a different AWS Region, use the Region selector in the console navigation bar.
 **Note**

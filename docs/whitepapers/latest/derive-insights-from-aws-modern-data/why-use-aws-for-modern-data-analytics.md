@@ -18,7 +18,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-
 
  For example, [Amazon Redshift delivers up to three times better price performance than other cloud data warehouses](https://aws.amazon.com/blogs/big-data/get-up-to-3x-better-price-performance-with-amazon-redshift-than-other-cloud-data-warehouses/), and [Apache Spark on EMR runs 1.7 times faster than standard Apache Spark 3.0](https://aws.amazon.com/blogs/big-data/run-apache-spark-3-0-workloads-1-7-times-faster-with-amazon-emr-runtime-for-apache-spark/), which means petabyte-scale analysis can be run at less than half of the cost of traditional on-premises solutions.
 
-![Picture showing Purpose-built analytics](http://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-aws-modern-data/images/purpose-built-analytics.png)
+![Picture showing Purpose-built analytics](https://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-aws-modern-data/images/purpose-built-analytics.png)
 
 ## Scalable data lakes
 <a name="scalable-data-lakes"></a>
@@ -33,7 +33,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-
 
 Amazon S3 gives you robust capabilities to manage access, cost, replication, and data protection.
 
-![Diagram showing Scalable data lakes](http://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-aws-modern-data/images/scalable-data-lakes.png)
+![Diagram showing Scalable data lakes](https://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-aws-modern-data/images/scalable-data-lakes.png)
 
 ## Performance and cost-effectiveness
 <a name="performance-and-cost-effectiveness"></a>
@@ -49,7 +49,7 @@ Amazon S3 gives you robust capabilities to manage access, cost, replication, and
 
  For example, [AWS Glue](https://aws.amazon.com/glue/) provides comprehensive data integration capabilities that make it easy to discover, prepare, and combine data for analytics, machine learning, and application development, while Amazon Redshift can easily query data in your S3 data lake.
 
-![AWS Glue is a data integration ecosystem for building a Modern Data architecture faster](http://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-aws-modern-data/images/glue-integration.png)
+![AWS Glue is a data integration ecosystem for building a Modern Data architecture faster](https://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-aws-modern-data/images/glue-integration.png)
 
  Amazon Redshift and Amazon Athena both support federated queries, the ability to run queries across data stored in operational databases, data warehouses, and data lakes to provide insights across multiple data sources with no data movement and no need to set up and maintain complex extract, transform, and load (ETL) pipelines.
 

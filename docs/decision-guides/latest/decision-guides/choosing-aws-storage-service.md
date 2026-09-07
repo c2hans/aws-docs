@@ -22,7 +22,7 @@ You can select from block, file, and object storage services as well as cloud da
 
 This decision guide will help you ask the right questions, provide a clear path for implementation, and help you migrate from your existing on-premises storage.
 
-[![AWS Videos](http://img.youtube.com/vi/A14EbSrZeFM?start=16&end=377/0.jpg)](http://www.youtube.com/watch?v=A14EbSrZeFM?start=16&end=377)
+[![AWS Videos](https://img.youtube.com/vi/A14EbSrZeFM?start=16&end=377/0.jpg)](https://www.youtube.com/watch?v=A14EbSrZeFM?start=16&end=377)
 
 ## Understand
 <a name="understand"></a>
@@ -31,7 +31,7 @@ Data is a cornerstone of successful application deployments, analytics workflows
 
 In many cases, however, choosing the right storage service will start with how well it aligns with what you're already using (or are familiar with). Working with storage services that you are familiar with will make it easier for you to get started - and can make migration of your data easier and potentially faster.
 
-![Diagram showing data protection, data at work, and data in motion with the Amazon FSx data storage family.](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/amazon-fsx-data-storage-family.png)
+![Diagram showing data protection, data at work, and data in motion with the Amazon FSx data storage family.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/amazon-fsx-data-storage-family.png)
 
 For example, services in the Amazon FSx data storage family come in four options that align to popular file systems:
 + **Amazon FSx for Windows File Server** provides fully managed Microsoft Windows file servers, backed by a fully native Windows file system.

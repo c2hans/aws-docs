@@ -14,7 +14,7 @@ We recommend this approach when the shared program can be instantiated as a stan
 
 In the following diagram, applications A and B are grouped to be migrated in the same wave.
 
-![Applications A and B are grouped to be migrated in the same wave.](http://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-mainframe-decoupling-patterns/images/guide-img/a6175648-8ce0-4ab7-9a68-cebf41995535/images/3d583f33-df36-4ed8-9780-090f2943f988.png)
+![Applications A and B are grouped to be migrated in the same wave.](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-mainframe-decoupling-patterns/images/guide-img/a6175648-8ce0-4ab7-9a68-cebf41995535/images/3d583f33-df36-4ed8-9780-090f2943f988.png)
 
  If you're decoupling your code by using a standalone API and migrating applications in the same wave, follow these steps:
 
@@ -29,7 +29,7 @@ In the following diagram, applications A and B are grouped to be migrated in the
 
 When applications are too big to be grouped into the same migration wave, you can migrate them in multiple waves, as shown in the following diagram, and maintain service continuity during migration. With this approach, you can modernize your applications in phases without bundling them together. Migrating your applications in separate waves decouples them without requiring significant code changes on the mainframe.
 
-![Applications A and B in separate migration waves.](http://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-mainframe-decoupling-patterns/images/guide-img/a6175648-8ce0-4ab7-9a68-cebf41995535/images/124e0f5e-1070-4302-a425-806d3a1ad408.png)
+![Applications A and B in separate migration waves.](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-mainframe-decoupling-patterns/images/guide-img/a6175648-8ce0-4ab7-9a68-cebf41995535/images/124e0f5e-1070-4302-a425-806d3a1ad408.png)
 
  If you're decoupling your code by using a standalone API and migrating applications in different waves, follow these steps:
 

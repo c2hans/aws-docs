@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/se
 # Reference architecture
 <a name="section-17"></a>
 
-![Reference architecture diagram for operational analytics](http://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/images/operational-analytics-reference-architecture.png)
+![Reference architecture diagram for operational analytics](https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/images/operational-analytics-reference-architecture.png)
 
  The reference architecture covers the data flow in an operational analytics use case. The Ingestion pipeline contains up to five stages as follows:
 

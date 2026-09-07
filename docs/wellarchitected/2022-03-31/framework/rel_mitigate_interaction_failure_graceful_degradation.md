@@ -11,7 +11,7 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 
  Consider a service B that is called by service A and in turn calls service C.
 
-![Diagram showing Service C fails when called from service B. Service B returns a degraded response to service A](http://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/images/graceful-degradation.png)
+![Diagram showing Service C fails when called from service B. Service B returns a degraded response to service A](https://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/images/graceful-degradation.png)
 
  When service B calls service C, it received an error or timeout from it. Service B, lacking a response from service C (and the data it contains) instead returns what it can. This can be the last cached good value, or service B can substitute a pre-determined static response for what it would have received from service C. It can then return a degraded response to its caller, service A. Without this static response, the failure in service C would cascade through service B to service A, resulting in a loss of availability.
 
@@ -19,7 +19,7 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 
  Another example of graceful degradation is the *circuit breaker pattern*. Retry strategies should be used when the failure is transient. When this is not the case, and the operation is likely to fail, the circuit breaker pattern prevents the client from performing a request that is likely to fail. When requests are being processed normally, the circuit breaker is closed and requests flow through. When the remote system begins returning errors or exhibits high latency, the circuit breaker opens and the dependency is ignored or results are replaced with more simply obtained but less comprehensive responses (which might simply be a response cache). Periodically, the system attempts to call the dependency to determine if it has recovered. When that occurs, the circuit breaker is closed.
 
-![Diagram showing circuit breaker in open and closed states.](http://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/images/circuit-breaker.png)
+![Diagram showing circuit breaker in open and closed states.](https://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/images/circuit-breaker.png)
 
  In addition to the closed and open states shown in the diagram, after a configurable period of time in the open state, the circuit breaker can transition to half-open. In this state, it periodically attempts to call the service at a much lower rate than normal. This probe is used to check the health of the service. After a number of successes in half-open state, the circuit breaker transitions to closed, and normal requests resume.
 

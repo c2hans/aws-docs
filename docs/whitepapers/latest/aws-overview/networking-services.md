@@ -2,14 +2,14 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/networking-services.html
 ---
 
-# ![AWS Networking and Content Delivery category icon](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/networking-content-delivery-icon.jpg)Networking and content delivery
+# ![AWS Networking and Content Delivery category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/networking-content-delivery-icon.jpg)Networking and content delivery
 <a name="networking-services"></a>
 
  AWS offers a broad set of networking and content delivery services that provide the highest level of reliability, security, and performance in the cloud.
 
 Each service is described after the diagram. To help you decide which service best meets your needs, see [Choosing an AWS networking and content delivery service](https://docs.aws.amazon.com/decision-guides/latest/networking-on-aws-how-to-choose/choosing-networking-and-content-delivery-service.html). For general information, see [AWS Networking and Content Delivery](https://aws.amazon.com/products/networking/).
 
-![Diagram showing AWS networking services](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/networking-services.png)
+![Diagram showing AWS networking services](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/networking-services.png)
 
 **Topics**
 + [Amazon API Gateway](#amazon-api-gateway)

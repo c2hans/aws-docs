@@ -18,7 +18,7 @@ For scenarios where you have an application or service running on Amazon Elastic
 
 The following diagram illustrates this scenario.
 
-![Using EC2 instance profiles for machine-to-machine identity management.](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-identity-management/images/guide-img/1bf8562a-50f2-4dfa-9a24-c4edfe7b936c/images/bbc5f256-2826-4039-86dc-9d7a1c9b4a24.png)
+![Using EC2 instance profiles for machine-to-machine identity management.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-identity-management/images/guide-img/1bf8562a-50f2-4dfa-9a24-c4edfe7b936c/images/bbc5f256-2826-4039-86dc-9d7a1c9b4a24.png)
 
 1. An application on the EC2 instance that needs to call an AWS API retrieves the security credentials provided by the role from the instance metadata item `iam/security-credentials/<role-name>`.
 
@@ -56,7 +56,7 @@ To learn more about using temporary credentials with AWS resources, see [Use tem
 
 The following diagram illustrates this method.
 
-![Using Amazon Cognito client credentials for machine-to-machine identity management.](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-identity-management/images/guide-img/1bf8562a-50f2-4dfa-9a24-c4edfe7b936c/images/3e2fab9c-a4f0-41e6-a33c-a7233d111178.png)
+![Using Amazon Cognito client credentials for machine-to-machine identity management.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-identity-management/images/guide-img/1bf8562a-50f2-4dfa-9a24-c4edfe7b936c/images/3e2fab9c-a4f0-41e6-a33c-a7233d111178.png)
 
 1. The application (App Client) that wants to request resources from a server (Resource Server) requests a token from Amazon Cognito.
 
@@ -98,7 +98,7 @@ Mutual TLS (mTLS) authentication is a mechanism that allows both the client and 
 
 The following diagram shows the mTLS authentication flow for an application that's running on an EC2 instance and an API that's set up on API Gateway.
 
-![mTLS authentication for an application that's running on an EC2 instance.](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-identity-management/images/guide-img/1bf8562a-50f2-4dfa-9a24-c4edfe7b936c/images/7476db30-4b98-493f-a41e-6debc8bb5226.png)
+![mTLS authentication for an application that's running on an EC2 instance.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-identity-management/images/guide-img/1bf8562a-50f2-4dfa-9a24-c4edfe7b936c/images/7476db30-4b98-493f-a41e-6debc8bb5226.png)
 
 1. API Gateway requests a publicly trusted certificate directly from AWS Certificate Manager (ACM).
 
@@ -142,7 +142,7 @@ We recommend that you use [IAM Roles Anywhere](https://aws.amazon.com/iam/roles-
 
 The following diagram shows how you can use IAM Roles Anywhere to connect AWS with external resources.
 
-![Using IAM Roles Anywhere for machine-to-machine identity management.](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-identity-management/images/guide-img/1bf8562a-50f2-4dfa-9a24-c4edfe7b936c/images/b6cb04c1-e955-49d5-9d09-84c3317d4fda.png)
+![Using IAM Roles Anywhere for machine-to-machine identity management.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-identity-management/images/guide-img/1bf8562a-50f2-4dfa-9a24-c4edfe7b936c/images/b6cb04c1-e955-49d5-9d09-84c3317d4fda.png)
 
 1. You create a trust anchor to establish trust between your AWS account and the CA that issues certificates to your on-premises workloads. The certificates are issued by a CA that you register as a [trust anchor](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/introduction.html#first-time-user) (root of trust) in IAM Roles Anywhere. The CA can be part of your existing public key infrastructure (PKI) system, or it can be a CA that you created with AWS Private CA and manage with ACM. In this example, we are using ACM.
 
@@ -176,7 +176,7 @@ For scenarios where you would like to connect multiple applications or services 
 
 The following diagram shows an example of a VPC Lattice service network, which comprises one or more VPC Lattice services. The services are part of a service directory, which is a list of all VPC Lattice services you create locally within an AWS account together with any VPC Lattice services that are shared with your account by using AWS RAM.
 
-![VPC Lattice service network with multiple services.](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-identity-management/images/guide-img/1bf8562a-50f2-4dfa-9a24-c4edfe7b936c/images/0d01567b-4cb7-432f-82c3-6781569492d0.png)
+![VPC Lattice service network with multiple services.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-identity-management/images/guide-img/1bf8562a-50f2-4dfa-9a24-c4edfe7b936c/images/0d01567b-4cb7-432f-82c3-6781569492d0.png)
 
 1. A service network is a logical boundary for a collection of services. Services that are associated with the network can be authorized for discovery, connectivity, accessibility, and observability. To make requests to services in the network, the client must be in a VPC that is associated with the service network.
 

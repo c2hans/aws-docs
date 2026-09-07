@@ -36,7 +36,7 @@ Configuring a PostgreSQL database to handle Oracle Database error codes correctl
 
 The following diagram shows an example Amazon Aurora PostgreSQL-Compatible database workflow for data error code validation and handling:
 
-![Data error code validation and handling for an Aurora PostgreSQL-Compatible database.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/82751f40-2fd9-4ce7-ab61-0874552d857b/images/b7ab627e-8f34-4635-8660-93c5c80ce38d.png)
+![Data error code validation and handling for an Aurora PostgreSQL-Compatible database.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/82751f40-2fd9-4ce7-ab61-0874552d857b/images/b7ab627e-8f34-4635-8660-93c5c80ce38d.png)
 
 The diagram shows the following workflow:
 

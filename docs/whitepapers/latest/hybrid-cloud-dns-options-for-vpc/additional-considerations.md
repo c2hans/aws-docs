@@ -48,7 +48,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-dns-opti
 
  This whitepaper does not describe the details of architecting such a solution, but we point out some caveats that will help you plan better in such a scenario. The following diagram illustrates an approach to a hybrid VPC DNS setup where you have your own DNS resolver on Amazon EC2.
 
-![A diagram depicting Amazon EC2 DNS instances with segregated resolver and forwarder.](http://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-dns-options-for-vpc/images/segregated.jpeg)
+![A diagram depicting Amazon EC2 DNS instances with segregated resolver and forwarder.](https://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-dns-options-for-vpc/images/segregated.jpeg)
 
 1.  DNS queries for internal EC2 names and Route 53 PHZs are forwarded to Route 53 Resolver.
 

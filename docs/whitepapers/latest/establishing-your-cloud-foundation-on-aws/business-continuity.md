@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
 
 Resilience is critical, it affects the quality of service your users experience. The capabilities within this area enable you to have a strategy in place to continue operations during a time of inefficiency or crisis, including Disaster Recovery, Backups and Support. Having this in place can help avoid downtime during outages or unprecedented situations.
 
-![A chart showing which capabilities fall under each category.](http://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/images/business-category.png)
+![A chart showing which capabilities fall under each category.](https://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/images/business-category.png)
 
  Business Continuity capabilities include:
 +  **Backups** is the ability to make reliable copy of data in a reliable way for retrieval as needed to meet business and security goals, Recovery Point Objective (RPO), and Recovery Time Objective (RTO). Content to be backed up includes: orchestration framework data and configuration, application data, logs, and customer data.

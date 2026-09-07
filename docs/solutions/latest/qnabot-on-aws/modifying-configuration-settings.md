@@ -130,6 +130,6 @@ If **ENABLE\_REDACTING** is set to `true`, the Comprehend detected PII entities 
 
  **PII rejection and redaction**
 
-![image25](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image25.png)
+![image25](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image25.png)
 
 For more information, see [Personally Identifiable Information (PII) Rejection and Redaction](https://github.com/aws-solutions/qnabot-on-aws/blob/main/source/docs/PII_Detection_And_Redaction/README.md) in the GitHub repository.

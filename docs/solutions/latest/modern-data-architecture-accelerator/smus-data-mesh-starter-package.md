@@ -9,7 +9,7 @@ The SMUS Data Mesh Starter Package deploys a production-ready, multi-account Sag
 
  **SMUS Data Mesh starter kit architecture**
 
-![SMUS Data Mesh starter kit — multi-account SageMaker Unified Studio with cross-account data sharing.](http://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/smus_comprehensive.png)
+![SMUS Data Mesh starter kit — multi-account SageMaker Unified Studio with cross-account data sharing.](https://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/smus_comprehensive.png)
 
 This architecture is particularly effective when:
 

@@ -36,7 +36,7 @@ This pattern demonstrates how to schedule and manage database tasks in SQL Serve
 
 The following diagram shows an Amazon EC2 instance running with SQL Server Express edition installed. The instance is accessible through Remote Desktop Protocol (RDP) client or from AWS Systems Manager Session Manager. AWS Key Management Service (AWS KMS) handles the data encryption for the Amazon EBS volumes to ensure data-at-rest security. The infrastructure also includes AWS Identity and Access Management (IAM), which provides access control and manages permissions for the execution of Lambda functions. Amazon Simple Storage Service (Amazon S3) stores Lambda functions.
 
-![An Amazon EC2 instance running with SQL Server Express edition installed on a private subnet.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/3af2174d-bf49-4e43-86f7-34759e5eea84/images/3a37dcb8-10af-42f2-8ff1-fab4f87eb646.png)
+![An Amazon EC2 instance running with SQL Server Express edition installed on a private subnet.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/3af2174d-bf49-4e43-86f7-34759e5eea84/images/3a37dcb8-10af-42f2-8ff1-fab4f87eb646.png)
 
 ## Tools
 <a name="automate-database-tasks-in-sql-server-express-edition-running-on-amazon-ec2-tools"></a>

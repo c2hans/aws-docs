@@ -42,7 +42,7 @@ This pattern shows an example architecture for processing events asynchronously 
 
 The following diagram shows the interaction of the jobs API with DynamoDB Streams and the event-processing and error-handling Lambda functions, with events stored in an Amazon EventBridge event archive.
 
-![Diagram of architecture and process, with steps listed after the diagram.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/68a46501-16e5-48e4-99c6-fc67a8b4133a/images/29fe6982-ad81-4099-9c65-08b17c96e78f.png)
+![Diagram of architecture and process, with steps listed after the diagram.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/68a46501-16e5-48e4-99c6-fc67a8b4133a/images/29fe6982-ad81-4099-9c65-08b17c96e78f.png)
 
 A typical workflow includes the following steps:
 

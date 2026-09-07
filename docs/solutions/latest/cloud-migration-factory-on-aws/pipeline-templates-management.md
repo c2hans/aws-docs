@@ -104,7 +104,7 @@ The following image shows an example of adding a pipeline template task.
 
  **Add pipeline task screen with Details and Audit menus.**
 
-![add pipeline task](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/add-pipeline-task.png)
+![add pipeline task](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/add-pipeline-task.png)
 
 ## Delete a pipeline template task
 <a name="delete-pipeline-template-task"></a>
@@ -123,7 +123,7 @@ The following image shows an example of deleting a pipeline template task.
 
  **Add pipeline task screen with Delete button.**
 
-![delete pipeline template task](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/delete-pipeline-template-task.png)
+![delete pipeline template task](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/delete-pipeline-template-task.png)
 
 ## Editing a pipeline template
 <a name="edit-pipeline-template-task"></a>
@@ -139,7 +139,7 @@ This section provides instructions for editing a pipeline template.
 1. Choose **Edit**.
 
     **Add pipeline task screen with Delete button.**
-![edit pipeline template task](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/edit-pipeline-template-task.png)
+![edit pipeline template task](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/edit-pipeline-template-task.png)
 
 1. On the task page, change the details of the task.
 

@@ -25,7 +25,7 @@ The following table categorizes the different types of bot activity and the busi
 
 The tactics, techniques, and procedures (TTP) of botnet operators have evolved substantially over time. They have had to keep up with the detection and mitigation technologies developed by companies. The following figure shows this evolution. Botnets started simply by using IP addresses as a means of operation, and they eventually evolved to use sophisticated, human biometric emulation. This sophistication is expensive, and not all botnets use the most advanced tools. There are a mix of operators in the internet, and they likely evaluate the best tool for the job to provide a good return on investment. One goal in bot defense is to make the botnet activity expensive so that the target is no longer viable.
 
-![Evolution in bot tactics, techniques, and procedures](http://docs.aws.amazon.com/prescriptive-guidance/latest/bot-control/images/guide-img/7c615558-ea52-4b14-ae3f-0e853a88c41f/images/13b1f3b1-1685-4594-af78-00fcfec54f35.png)
+![Evolution in bot tactics, techniques, and procedures](https://docs.aws.amazon.com/prescriptive-guidance/latest/bot-control/images/guide-img/7c615558-ea52-4b14-ae3f-0e853a88c41f/images/13b1f3b1-1685-4594-af78-00fcfec54f35.png)
 
 Generally, bots are categorized as common or targeted:
 + **Common bots** – These bots self-identify and won't attempt to emulate browsers. Many of these bots perform useful tasks, such as content crawling, search engine optimization (SEO), or aggregation. It's important to identify and understand which of these common bots come to your site and the effect they have on your traffic and performance.

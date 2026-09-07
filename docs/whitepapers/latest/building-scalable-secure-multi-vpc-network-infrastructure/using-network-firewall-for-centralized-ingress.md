@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-scalable-sec
 
 In this architecture, ingress traffic is inspected by AWS Network Firewall before reaching the rest of the VPCs. In this setup, traffic is split among all firewall endpoints deployed in the Edge VPC. You deploy a public subnet between the firewall endpoint and the Transit Gateway subnet. You can use an ALB or NLB, which contain IP targets in your spoke VPCs while handling Auto Scaling for targets behind them.
 
-![A diagram depicting ingress traffic inspection using AWS Network Firewall](http://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/ingress-inspection-using-aws-nf.png)
+![A diagram depicting ingress traffic inspection using AWS Network Firewall](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/ingress-inspection-using-aws-nf.png)
 
  To simplify deployment and management of AWS Network Firewall in this model, AWS Firewall Manager can be used. Firewall Manager allows you to centrally administer your different firewalls by automatically applying protection you create in the centralized location to multiple accounts. Firewall Manager supports both distributed and centralized deployment models for Network Firewall. The blog post [How to deploy AWS Network Firewall by using AWS Firewall Manager](https://aws.amazon.com/blogs/security/how-to-deploy-aws-network-firewall-by-using-aws-firewall-manager/) provides more details on the model.
 

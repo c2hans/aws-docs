@@ -47,7 +47,7 @@ At its most basic level, AWS DMS is a server in the AWS Cloud that runs replicat
 
 The following diagram illustrates the AWS DMS process.
 
-![How Database Migration Service works](http://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-postgresql-migration-playbook/images/pb-how-aws-dms-works.png)
+![How Database Migration Service works](https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-postgresql-migration-playbook/images/pb-how-aws-dms-works.png)
 
 ## Latest Updates
 <a name="chap-sql-server-aurora-pg.tools.awsdms.updates"></a>

@@ -171,10 +171,10 @@ You can use the CMake GUI to generate FreeRTOS build files.
 1. From the command line, issue `cmake-gui` to start the GUI.
 
 1. Choose **Browse Source** and specify the source input, and then choose **Browse Build** and specify the build output.
-![CMake window with input fields for source code location and build binaries location, along with options to browse sources, browse build directory, search, add or remove entry, and view grouped or advanced options.](http://docs.aws.amazon.com/freertos/latest/userguide/images/cmake-gui1.png)
+![CMake window with input fields for source code location and build binaries location, along with options to browse sources, browse build directory, search, add or remove entry, and view grouped or advanced options.](https://docs.aws.amazon.com/freertos/latest/userguide/images/cmake-gui1.png)
 
 1. Choose **Configure**, and under **Specify the build generator for this project**, find and choose the build system that you want to use to build the generated build files. if you do not see the pop up window, you might be reusing an existing build directory. In this case, delete the CMake cache by choosing **Delete Cache** from the **File** menu.
-![CMakeSetup dialog with options to specify the generator for the project as Unix Makefiles, and specify toolchain file for cross-compiling.](http://docs.aws.amazon.com/freertos/latest/userguide/images/cmake-gui2.png)
+![CMakeSetup dialog with options to specify the generator for the project as Unix Makefiles, and specify toolchain file for cross-compiling.](https://docs.aws.amazon.com/freertos/latest/userguide/images/cmake-gui2.png)
 
 1. Choose **Specify toolchain file for cross-compiling**, and then choose **Next**.
 
@@ -192,7 +192,7 @@ If you are seeing the following error:
    It means the compiler is not in your `PATH` environment variable. You can set the `AFR_TOOLCHAIN_PATH` variable in the GUI to tell CMake where you installed your compiler. If you do not see the `AFR_TOOLCHAIN_PATH` variable, choose **Add Entry**. In the pop up window, under **Name**, type **AFR\_TOOLCHAIN\_PATH**. Under **Compiler Path** type the path to your compiler. for example, `C:/toolchains/arm-none-eabi-gcc`.
 
 1. The GUI should now look like this:
-![CMake configuration window for building FreeRTOS with vendor board selected, modules enabled, and build paths specified.](http://docs.aws.amazon.com/freertos/latest/userguide/images/cmake-gui3.png)
+![CMake configuration window for building FreeRTOS with vendor board selected, modules enabled, and build paths specified.](https://docs.aws.amazon.com/freertos/latest/userguide/images/cmake-gui3.png)
 
    Choose **AFR\_BOARD**, choose your board, and then choose **Configure** again.
 

@@ -58,7 +58,7 @@ For Oracle Database versions and instance classes supported by Amazon RDS Custom
 
 The following architecture diagram represents a PeopleSoft system running in a single [Availability Zone](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html) on AWS. The application tier is accessed through an [Application Load Balancer](https://aws.amazon.com/elasticloadbalancing/application-load-balancer/). Both the application and the databases are in private subnets, and the Amazon RDS Custom and Amazon EC2 database instance use an Amazon EFS shared file system to store and access the RMAN backup files. Amazon S3 is used for creating the custom RDS Oracle engine and for storing the redo logs metadata.
 
-![Webservers, app servers, Amazon RDS Custom, an EC2 DB instance, and Amazon EFS in private subnets.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/bd423dfe-f3c8-42d9-ac84-bf3d093c52bc/images/0e9a6431-e6c7-4047-ae6c-85311938041f.jpeg)
+![Webservers, app servers, Amazon RDS Custom, an EC2 DB instance, and Amazon EFS in private subnets.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/bd423dfe-f3c8-42d9-ac84-bf3d093c52bc/images/0e9a6431-e6c7-4047-ae6c-85311938041f.jpeg)
 
 ## Tools
 <a name="migrate-oracle-peoplesoft-to-amazon-rds-custom-tools"></a>

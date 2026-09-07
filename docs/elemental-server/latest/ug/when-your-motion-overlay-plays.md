@@ -12,7 +12,7 @@ When you place a motion graphic overlay, you set up when it starts and how long 
 **Note**
 In this example, the motion graphic is three minutes long, but the overlay is set to continue to repeat the motion graphic until the end of the output.
 
-![The overlay is represented in this image as a rectangle above a number line. The number line is marked with timecode sat one minute apart. The left edge of the rectangle is aligned with the second mark, at 00:00:02:00. The right edge of the rectangle is aligned with the fourth mark, at 00:00:04:00.](http://docs.aws.amazon.com/elemental-server/latest/ug/images/motion-overlay-start-duration.png)
+![The overlay is represented in this image as a rectangle above a number line. The number line is marked with timecode sat one minute apart. The left edge of the rectangle is aligned with the second mark, at 00:00:02:00. The right edge of the rectangle is aligned with the fourth mark, at 00:00:04:00.](https://docs.aws.amazon.com/elemental-server/latest/ug/images/motion-overlay-start-duration.png)
 
 **Action Time**
 Provide the timecode for the first frame that you want to have the overlay appear on. If you set up your overlay to fade in, the fade-in begins at the start time.

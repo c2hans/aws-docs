@@ -46,14 +46,14 @@ You compute the SHA-256 tree hash as follows:
 
 When you upload an archive in a single request using the Upload Archive API (see [Upload Archive (POST archive)](api-archive-post.md)), the request payload includes the entire archive. Accordingly, you must include the tree hash of the entire archive in the `x-amz-sha256-tree-hash` request header. Suppose you want to upload a 6.5 MB archive. The following diagram illustrates the process of creating the SHA-256 hash of the archive. You read the archive and compute the SHA-256 hash for each 1 MB chunk. You also compute the hash for the remaining 0.5 MB data and then build the tree as outlined in the preceding procedure.
 
-![Diagram showing tree hash example uploading an archive in a single request.](http://docs.aws.amazon.com/amazonglacier/latest/dev/images/TreeHash-ArchiveUploadSingleRequest.png)
+![Diagram showing tree hash example uploading an archive in a single request.](https://docs.aws.amazon.com/amazonglacier/latest/dev/images/TreeHash-ArchiveUploadSingleRequest.png)
 
 ## Tree Hash Example 2: Uploading an archive using a multipart upload
 <a name="checksum-calculations-upload-archive-using-mpu"></a>
 
 The process of computing the tree hash when uploading an archive using multipart upload is the same when uploading the archive in a single request. The only difference is that in a multipart upload you upload only a part of the archive in each request (using the [Upload Part (PUT uploadID)](api-upload-part.md) API), and therefore you provide the checksum of only the part in the `x-amz-sha256-tree-hash` request header. However, after you upload all parts, you must send the Complete Multipart Upload (see [Complete Multipart Upload (POST uploadID)](api-multipart-complete-upload.md)) request with a tree hash of the entire archive in the `x-amz-sha256-tree-hash` request header.
 
-![Diagram showing tree hash example uploading an archive using a multipart upload.](http://docs.aws.amazon.com/amazonglacier/latest/dev/images/TreeHash-MPU.png)
+![Diagram showing tree hash example uploading an archive using a multipart upload.](https://docs.aws.amazon.com/amazonglacier/latest/dev/images/TreeHash-MPU.png)
 
 ## Computing the Tree Hash of a File
 <a name="checksum-calculations-examples"></a>

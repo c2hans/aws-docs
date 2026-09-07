@@ -13,7 +13,7 @@ When you release a blueprint through the Enterprise Blueprint Factory, the bluep
 
 The following diagram shows a high-level overview of the Enterprise Blueprint Factory architecture. This workflow releases the blueprint as a product in Service Catalog. It also creates or updates the portfolios and portfolio shares in order to make the blueprint available to the target end users.
 
-![The components and flow of the Enterprise Blueprint Factory solution.](http://docs.aws.amazon.com/prescriptive-guidance/latest/enterprise-blueprint-factory/images/guide-img/fbe4d444-882e-464d-9768-c5b4c6cfd79b/images/4572fa98-f921-48d8-bb0e-3f3c02a8200d.png)
+![The components and flow of the Enterprise Blueprint Factory solution.](https://docs.aws.amazon.com/prescriptive-guidance/latest/enterprise-blueprint-factory/images/guide-img/fbe4d444-882e-464d-9768-c5b4c6cfd79b/images/4572fa98-f921-48d8-bb0e-3f3c02a8200d.png)
 
 This diagram shows the following workflow:
 

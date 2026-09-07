@@ -16,7 +16,7 @@ Tracker position filtering and storage are useful on their own, but trackers are
 
 The following diagram shows you how to create and use tracker resources:
 
-![Workflow showing selection of tracker elements, SDK integration, embedding in application, and deployment.](http://docs.aws.amazon.com/location/previous/developerguide/images/illustration-trackers.PNG)
+![Workflow showing selection of tracker elements, SDK integration, embedding in application, and deployment.](https://docs.aws.amazon.com/location/previous/developerguide/images/illustration-trackers.PNG)
 
 1. First, you create a tracker resource in your AWS account.
 

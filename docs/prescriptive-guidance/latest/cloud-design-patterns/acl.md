@@ -44,24 +44,24 @@ You can implement ACL inside your monolithic application as a class that's speci
 
 In the following example architecture, a monolithic application has three services: user service, cart service, and account service. The cart service is dependent on the user service, and the application uses a monolithic relational database.
 
-![Monolithic application with three services](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/96c5b594-d1bb-4a54-8cc2-d9d088490039.png)
+![Monolithic application with three services](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/96c5b594-d1bb-4a54-8cc2-d9d088490039.png)
 
 In the following architecture, the user service has been migrated to a new microservice. The cart service calls the user service, but the implementation is no longer available within the monolith.  It's also likely that the interface of the newly migrated service won't match its previous interface, when it was inside the monolithic application.
 
-![Monolithic application where one service is moved out to a microservice](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/d37cfd9a-8938-40d4-bcd3-4f37154c5cb9.png)
+![Monolithic application where one service is moved out to a microservice](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/d37cfd9a-8938-40d4-bcd3-4f37154c5cb9.png)
 
 If the cart service has to call the newly migrated user service directly, this will require changes to the cart service and a thorough testing of the monolithic application. This can increase the transformation risk and business disruption. The goal should be to minimize the changes to the existing functionality of the monolithic application.
 
 In this case, we recommend that you introduce an ACL between the old user service and the newly migrated user service. The ACL works as an adapter or a facade that converts the calls into the newer interface. ACL can be implemented inside the monolithic application as a class (for example, `UserServiceFacade` or `UserServiceAdapter`) that's specific to the service that was migrated. The anti-corruption layer must be decommissioned after all dependent services have been migrated into the microservices architecture.
 
-![Adding an anti-corruption layer](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/d06ebf02-c3b5-4224-b091-dc8d0026c0a9.png)
+![Adding an anti-corruption layer](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/d06ebf02-c3b5-4224-b091-dc8d0026c0a9.png)
 
 ### Implementation using AWS services
 <a name="implementation-using-aws-services.ee35f591-9b60-5188-b84a-ca0e89b92603"></a>
 
 The following diagram shows how you can implement this ACL example by using AWS services.
 
-![Implementing the ACL pattern with AWS services.](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/d0b414ab-9b41-46a8-949d-44289eac047d.png)
+![Implementing the ACL pattern with AWS services.](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/d0b414ab-9b41-46a8-949d-44289eac047d.png)
 
 The user microservice is migrated out of the ASP.NET monolithic application and deployed as an [AWS Lambda](https://aws.amazon.com/lambda/) function on AWS. Calls to the Lambda function are routed through [Amazon API Gateway](https://aws.amazon.com/api-gateway/). ACL is deployed in the monolith to translate the call to adapt to the semantics of the user microservice.
 

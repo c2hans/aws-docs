@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/console-tour.htm
 
 Before we add data to our DynamoDB table, we should review the basic features of the AWS AppSync console experience. The AWS AppSync console tab on the left-hand side of the page allows users to easily navigate to any of the major components or configuration options that AWS AppSync provides:
 
-![](http://docs.aws.amazon.com/appsync/latest/devguide/images/explorer-example-5.jpg)
+![](https://docs.aws.amazon.com/appsync/latest/devguide/images/explorer-example-5.jpg)
 
 ## Schema designer
 <a name="schema-designer"></a>

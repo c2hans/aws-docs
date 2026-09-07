@@ -56,14 +56,14 @@ For more information about Aurora global database features and advantages, see [
 
 The following diagram shows three clusters with four-node Oracle RAC in different AWS Regions replicated using Oracle GoldenGate.
 
-![Oracle RAC in a primary Region and two secondary Regions.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/11d4265b-31af-4ebf-a766-24196193ee01/images/9fc740fc-d339-422e-beaf-1f65690c9d14.png)
+![Oracle RAC in a primary Region and two secondary Regions.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/11d4265b-31af-4ebf-a766-24196193ee01/images/9fc740fc-d339-422e-beaf-1f65690c9d14.png)
 
 **Target technology stack  **
 + A three-cluster Amazon Aurora global database based on Aurora PostgreSQL–Compatible, with one cluster in the primary Region, two clusters in different secondary Regions
 
 **Target architecture**
 
-![Amazon Aurora in a primary Region and two secondary Regions.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/11d4265b-31af-4ebf-a766-24196193ee01/images/8e3deca9-03f2-437c-9341-795ac17e2b42.png)
+![Amazon Aurora in a primary Region and two secondary Regions.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/11d4265b-31af-4ebf-a766-24196193ee01/images/8e3deca9-03f2-437c-9341-795ac17e2b42.png)
 
 ## Tools
 <a name="emulate-oracle-dr-by-using-a-postgresql-compatible-aurora-global-database-tools"></a>

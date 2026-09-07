@@ -30,6 +30,6 @@ AWS CloudTrail offers this visibility, recording every API call across services.
 
 For details on how to configure this mechanism, see [Set Up FluentD as a DaemonSet to Send Logs to CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Container-Insights-setup-logs.html).
 
-![A screenshot showing Amazon CloudWatch monitored metrics.](http://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_on_aws/images/cicd_5g11.png)
+![A screenshot showing Amazon CloudWatch monitored metrics.](https://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_on_aws/images/cicd_5g11.png)
 
 *Example of Amazon CloudWatch monitored metrics*

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 
 The following diagram illustrates how the building blocks discussed in the [previous section](core-modules.md) operate under the perceive, reason, act cycle.
 
-![How the core building blocks apply to traditional agent architecture.](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-foundations/images/guide-img/bf0cde42-baef-4bee-8fff-ca482667d2b6/images/7b6527c6-7a5a-4e01-9062-39992917838e.png)
+![How the core building blocks apply to traditional agent architecture.](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-foundations/images/guide-img/bf0cde42-baef-4bee-8fff-ca482667d2b6/images/7b6527c6-7a5a-4e01-9062-39992917838e.png)
 
 ## Perceive module
 <a name="perceive"></a>

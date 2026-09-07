@@ -24,7 +24,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/use-c
 
  With AWS PrivateLink, the service provider can create an endpoint service by placing their service instances behind a Network Load Balancer enabling customers to create an interface VPC endpoint in their Amazon VPC that is associated with their endpoint service. As a result, customers can privately and securely transfer log data to an interface VPC endpoint in their Amazon VPC and not over public facing AWS endpoints. Refer to the following figure for an illustration.
 
-![A diagram depciting private connectivity to cloud-based SaaS services .](http://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/images/private-connectivity.png)
+![A diagram depciting private connectivity to cloud-based SaaS services .](https://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/images/private-connectivity.png)
 
 ## Shared services
 <a name="shared-services"></a>
@@ -43,7 +43,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/use-c
 
  On-premises resources can also access AWS PrivateLink endpoint services over AWS Direct Connect. Create an Amazon VPC with up to 20 interface VPC endpoints and associate with the endpoint services from the Shared Services VPC. End the AWS Direct Connect connection’s private virtual interface to a virtual private gateway. Next, attach the virtual private gateway to the newly created Amazon VPC. Resources on-premises are then able to access and consume AWS PrivateLink endpoint services over the AWS Direct connection. The following figure illustrates a shared services Amazon VPC using AWS PrivateLink.
 
-![A diagram depicting shared services VPC using AWS PrivateLink .](http://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/images/shared-services-vpc.png)
+![A diagram depicting shared services VPC using AWS PrivateLink .](https://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/images/shared-services-vpc.png)
 
 ## Hybrid services
 <a name="hybrid-services"></a>
@@ -56,7 +56,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/use-c
 
  The Network Load Balancer enables the extension of a service architecture to load balance workloads across resources in AWS and on-premises resources, and makes it easy to migrate-to-cloud, burst-to-cloud, or failover-to-cloud. As customers complete the migration to the cloud, on-premises targets would be replaced by target instances in AWS and the hybrid scenario would convert to a Shared Services VPC solution. Refer to the following figure for a diagram on hybrid connectivity to services over AWS Direct Connect.
 
-![A diagram showing hybrid connectivity to services over AWS Direct Connect .](http://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/images/hybrid-services.png)
+![A diagram showing hybrid connectivity to services over AWS Direct Connect .](https://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/images/hybrid-services.png)
 
 ## Presenting microservices
 <a name="presenting-microservices"></a>
@@ -71,7 +71,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/use-c
 
  The nature of a microservice is to have a call stack of various microservices throughout the lifecycle of a request. What is illustrated as a service consumer in the following figure can also become a service provider. The service consumer can aggregate what it needs from the services it consumed and present itself as a higher-level microservice.
 
-![A diagram presenting microservices via AWS PrivateLink.](http://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/images/presenting-microservices.png)
+![A diagram presenting microservices via AWS PrivateLink.](https://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/images/presenting-microservices.png)
 
 ## Inter-Region endpoint services
 <a name="inter-region-endpoint-services"></a>
@@ -86,7 +86,7 @@ The following figure shows inter-Region endpoint services. A service provider is
 
 Because the remote endpoint service is communicating with resources in a remote Region, additional latency will be incurred when the service consumer communicates with the endpoint service. The service provider will also have to cover the costs for the inter-Region VPC peering data transfer. Depending on the workload, this could be a long- term approach for some service providers so long as they evaluate the pros and cons of the service consumer experience and their own operating model.
 
-![A diagram depicting inter-Region endpoint services .](http://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/images/inter-region-endpoint.png)
+![A diagram depicting inter-Region endpoint services .](https://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/images/inter-region-endpoint.png)
 
 ## Inter-Region access to endpoint services
 <a name="inter-region-access-to-endpoint-services"></a>
@@ -97,4 +97,4 @@ Because the remote endpoint service is communicating with resources in a remote 
 
 The following figure visualizes the inter-Region access to endpoint services. A customer has deployed a workload in the EU-WEST-1 Region that needs to access an AWS PrivateLink endpoint service hosted in the US-EAST-1 Region. The service consumer will first need to create an Amazon VPC in the Region where the AWS PrivateLink endpoint service is currently being hosted in. They will then need to create an inter-Region VPC Peering connection from the Amazon VPC in their Region to the Amazon VPC in the remote Region. The service consumer will then need to create an interface VPC endpoint in the Amazon VPC in the remote Region that is associated with the endpoint service. The workload in the service consumers Amazon VPC can now communicate with the endpoint service in the remote Region by using inter-Region VPC Peering. The service consumer will have to consider the additional latency when communicating with endpoint service hosted in the remote Region, as well as the inter-Region data transfer costs between the two Regions.
 
-![A diagram depicting inter-Region access to endpoint services.](http://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/images/inter-region.jpeg)
+![A diagram depicting inter-Region access to endpoint services.](https://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/images/inter-region.jpeg)

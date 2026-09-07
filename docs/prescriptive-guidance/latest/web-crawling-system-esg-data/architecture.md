@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/web-crawlin
 
 The following architecture diagram shows a web crawler system that is designed to ethically extract environmental, social, and governance (ESG) data from websites. You use a Python-based crawler that is optimized for AWS infrastructure. You use AWS Batch to orchestrate the large-scale crawling jobs and use Amazon Simple Storage Service (Amazon S3) for storage. Downstream applications can ingest and store the data from the Amazon S3 bucket.
 
-![Using a web crawler system to extract ESG data from websites.](http://docs.aws.amazon.com/prescriptive-guidance/latest/web-crawling-system-esg-data/images/guide-img/c05f0876-d987-41f0-9b7d-d5d908a52b17/images/82a1d2f5-a0c3-4d71-9758-d896f68f23a2.png)
+![Using a web crawler system to extract ESG data from websites.](https://docs.aws.amazon.com/prescriptive-guidance/latest/web-crawling-system-esg-data/images/guide-img/c05f0876-d987-41f0-9b7d-d5d908a52b17/images/82a1d2f5-a0c3-4d71-9758-d896f68f23a2.png)
 
 The diagram shows the following workflow:
 

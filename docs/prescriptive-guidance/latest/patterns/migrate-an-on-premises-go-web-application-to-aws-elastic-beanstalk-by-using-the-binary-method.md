@@ -37,7 +37,7 @@ As a rehost migration strategy, this pattern’s approach is fast and requires n
 
 **Target architecture*** *
 
-![Architecture for migrating a Go application to Elastic Beanstalk](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/cd8d660d-5621-4ea7-8f97-7a1e321c57d3/images/1df543d9-7073-43d8-abd3-f1f7e57278eb.png)
+![Architecture for migrating a Go application to Elastic Beanstalk](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/cd8d660d-5621-4ea7-8f97-7a1e321c57d3/images/1df543d9-7073-43d8-abd3-f1f7e57278eb.png)
 
 ## Tools
 <a name="migrate-an-on-premises-go-web-application-to-aws-elastic-beanstalk-by-using-the-binary-method-tools"></a>

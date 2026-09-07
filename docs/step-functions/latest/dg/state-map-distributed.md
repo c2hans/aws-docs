@@ -14,7 +14,7 @@ To set up a large-scale parallel workload in your workflows, include a `Map` sta
 
 The following illustration explains how you can set up large-scale parallel workloads in your workflows.
 
-![Diagram to illustrate the concept of orchestrating large-scale parallel workloads.](http://docs.aws.amazon.com/step-functions/latest/dg/images/autobahn-concept.png)
+![Diagram to illustrate the concept of orchestrating large-scale parallel workloads.](https://docs.aws.amazon.com/step-functions/latest/dg/images/autobahn-concept.png)
 
 **Learn in a workshop**
 Learn how serverless technologies such as Step Functions and Lambda can simplify management and scaling, offload undifferentiated tasks, and address the challenges of large-scale distributed data processing. Along the way, you will work with distributed map for high concurrency processing. The workshop also presents best practices for optimizing your workflows, and practical use cases for claims processing, vulnerability scanning, and Monte Carlo simulation.

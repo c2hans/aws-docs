@@ -18,4 +18,4 @@ The system also analyzes your trailing 12-month demand (subject to trimming conf
 
 The history length in years is calculated for each forecast granularity (for example, product-location combination) based on the earliest and latest dates available in your preprocessed historical demand data, after adjusting the dates to the default start of the period. This analysis helps determine if products have accumulated enough historical data to generate reliable forecasts, with a minimum of two years typically needed to capture seasonal patterns and long-term trends.
 
-![Raw demand history](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/raw-demand-history.png)
+![Raw demand history](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/raw-demand-history.png)

@@ -23,7 +23,7 @@ Measuring the effectiveness of right sizing can be challenging, because right si
 
 The following dashboard illustrates the savings achieved over several months as this example organization strategically implemented the right sizing recommendations of Compute Optimizer. Their objective was to operate their existing workloads as efficiently as possible in order to resume a stalled migration from a colocation data center nearing the end of its contract.
 
-![Savings from right sizing](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/2abddb5d-c36f-4688-ba02-54c42e6dd8fa.png)
+![Savings from right sizing](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/2abddb5d-c36f-4688-ba02-54c42e6dd8fa.png)
 
 ## Cost optimization recommendations
 <a name="rightsize-costopt-rec"></a>
@@ -274,7 +274,7 @@ After you have right sized your resources, you can use Cost Explorer to show bef
 
 The following diagram shows the tag structure for an organization.
 
-![Organization's tag structure](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/4d7b75ac-2923-48e5-8e4e-543f06bf9bd0.png)
+![Organization's tag structure](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/4d7b75ac-2923-48e5-8e4e-543f06bf9bd0.png)
 
 Consider the example of a business that right sizes the production web servers owned by the Operations team. In Cost Explorer, the **Rightsizing** tag is set to **enabled**, and the **Team** tag is set to **operations**. In this example, the right sizing effort reduces operating costs from 0.89 cents to 0.28 cents an hour. Assuming 744 hours per month, the annual cost before right sizing is $7,945.92. After right sizing, the annual cost drops to $2,499.84. This translates to a 68.5 percent decrease in annual workload costs. Imagine the impact of this across a large organization. Keep in mind, this is done in a sample environment and the instances are mostly idle. In a production environment, you can see savings between 10–35 percent.
 

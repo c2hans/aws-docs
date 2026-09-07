@@ -58,11 +58,11 @@ To look for a record, Supply Planning uses the following fields:
 
 The following is an example of the override logic:
 
-![Override logic example](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/override_logic.png)
+![Override logic example](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/override_logic.png)
 
 The following is an example of how Supply Planning calculates vendor lead time:
 
-![Vendor lead time calculation](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/vendor_lead_time.png)
+![Vendor lead time calculation](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/vendor_lead_time.png)
 
 Prioritization order is *product* > *product\_group* > *site* > *dest\_geo (region)* > *product segment* > *company*.
 
@@ -121,11 +121,11 @@ The supported *ss\_policy* values are *abs\_level*, *doc\_dem*, *doc\_fcst*, and
 
 The following example displays the override priority logic.
 
-![Override logic](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/override1.png)
+![Override logic](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/override1.png)
 
 The following is an example of the *ss\_policy* value based on the override logic.
 
-![Override ride logic example for ss_policy value](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/override2.png)
+![Override ride logic example for ss_policy value](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/override2.png)
 
 ## Sourcing schedule
 <a name="sourcing-schedule"></a>
@@ -153,15 +153,15 @@ Supply Planning reads the schedule details under *sourcing\_schedule\_details* w
 
 The following is an example of the override logic in *sourcing\_schedule\_details*.
 
-![Sourcing schedule override logic](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/sourcing_schedule2.png)
+![Sourcing schedule override logic](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/sourcing_schedule2.png)
 
 The following are the selected schedules after applying the override logic.
 
-![Sourcing schedule override logic](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/sourcing_schedule3.png)
+![Sourcing schedule override logic](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/sourcing_schedule3.png)
 
 The actual schedule can be from one row to multiple rows, based on the complexity of the schedule. For the field *week\_of\_month*, only one number is allowed in each row. For multiple weeks of the month, multiple records are required (see the following example). For the field *day\_of\_week*, both integer and name of day are allowed (Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6). In the sourcing schedule details, weekly planning requires *week\_of\_month*. While in daily planning, *week\_of\_month* can be empty, which means every week. See the following examples.
 
-![Sourcing schedule override logic](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/sourcing_schedule4.png)
+![Sourcing schedule override logic](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/sourcing_schedule4.png)
 
 Note that for weekly planning, *week\_of\_month* is required if *day\_of\_week* is provided.
 

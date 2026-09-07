@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 +  Game analytics pipelines provide support for ingesting and processing high volumes of real-time data to scale as a game grows.
 +  Provide support for both real-time and batch reporting use cases. For example, real-time dashboards and alerts are typically used by live ops teams to monitor game infrastructure and player behavior to detect issues. Data analyst teams typically rely on as-necessary and batch reporting to understand trends over time.
 
-![Serverless game analytics pipeline for gameplay telemetry](http://docs.aws.amazon.com/wellarchitected/latest/games-industry-lens/images/image8.jpeg)
+![Serverless game analytics pipeline for gameplay telemetry](https://docs.aws.amazon.com/wellarchitected/latest/games-industry-lens/images/image8.jpeg)
 
  Game data is ingested from game clients, game servers, and other applications. The streaming data is ingested into Amazon S3 for data lake integration and interactive analytics. Streaming analytics processes real-time events and generates metrics. Data consumers analyze metrics data in Amazon CloudWatch and raw events in Amazon S3.
 +  **Solution API and configuration data:** Use Amazon API Gateway to provide a REST API for administering your game analytics pipeline and storing configuration data in Amazon DynamoDB using Lambda functions. You can build an internal portal on top of this API or a custom command line interface for administration. A REST API also provides server-authentication for ingesting gameplay data from data sources and forwarding the telemetry data to Amazon Kinesis Data Streams for real-time processing and ingestion into storage.

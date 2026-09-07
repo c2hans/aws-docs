@@ -25,7 +25,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfe
 ## Reference architecture
 <a name="reference-architecture-3"></a>
 
-![Tertiary analysis with machine learning using Amazon SageMaker AI reference architecture](http://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfer-analytics-and-machine-learning/images/image5.png)
+![Tertiary analysis with machine learning using Amazon SageMaker AI reference architecture](https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfer-analytics-and-machine-learning/images/image5.png)
 
  An AWS Glue job is used to create a machine learning training set. Jupyter notebooks are used to generate machine learning model generation pipelines, explore the datasets, generate predictions, and interpret the results.
 

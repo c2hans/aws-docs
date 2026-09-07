@@ -26,7 +26,7 @@ The following section describes the main components that make up an Amazon MWAA 
 
  Every Amazon MWAA environment also interacts with a set of AWS services to handle a variety of tasks, including storing and accessing DAGs and task dependencies, securing your data at rest, and logging and monitoring you environment. The following diagram demonstrates the different components of an Amazon MWAA environment.
 
-![This image shows the architecture of an Amazon MWAA environment.](http://docs.aws.amazon.com/mwaa/latest/migrationguide/images/mwaa-architecture.png)
+![This image shows the architecture of an Amazon MWAA environment.](https://docs.aws.amazon.com/mwaa/latest/migrationguide/images/mwaa-architecture.png)
 
 **Note**
  The service Amazon VPC is not a shared VPC. Amazon MWAA creates an AWS owned VPC for every environment you create.

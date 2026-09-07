@@ -16,17 +16,17 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-app
    ```
    app2container remote inventory --target &lt;webserver-private-ip>
    ```
-![Screening showing App2Container output for retrieving the inventory of .NET applications from a server](http://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/app-out.jpg)
+![Screening showing App2Container output for retrieving the inventory of .NET applications from a server](https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/app-out.jpg)
 
 1.  Confirm that your application is listed in the `inventory.json` file at the location specified in the tool’s output.
-![Screen showing inventory.json confirmation](http://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/inventory-json.jpg)
+![Screen showing inventory.json confirmation](https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/inventory-json.jpg)
 
 1.  Locate the application ID for the application in the `inventory.json` file and then run the following command, replacing `net-app-id` with the application ID that you located in the `inventory.json`.
 
    ```
     app2container remote analyze --application-id <net-app-id> --target <webserver-private-ip>
    ```
-![App2Container successfully analyzes a .NET application for containerization](http://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/app2net.jpg)
+![App2Container successfully analyzes a .NET application for containerization](https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/app2net.jpg)
 
 1.  Open the `analysis.json` file at the location specified in the tool’s output.
 
@@ -35,7 +35,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-app
     The `containerBaseImage` is not populated in the file. This is because App2Container will automatically configure the image during the next containerization step using the worker machine version to determine the `containerBaseImage` to use. However, to provide visibility into the behavior, populate that field in the `analysis.json` file with `mcr.microsoft.com/dotnet/framework/aspnet:4.8-windowsservercore-ltsc2019`, as shown in the following figure, and save the file.
 **Note**
 This guide recommends that you use the SAC version for container-based applications because it has the most up-to-date improvements for Windows containers. However, App2Container requires the `containerBaseImage` to match the worker machine version and SAC version 2004 does not have a desktop experience. We chose LTSC version 2019 to provide a more effective walkthrough. If you use SAC version 2004, deploy a worker machine of that version and replace `containerBaseImage` with the `4.8-windowsservercore-2004` tag.
-![Screen showing populating the field in the analysis.json file with mcr.microsoft.com/dotnet/framework/aspnet:4.8-windowsservercore-ltsc2019](http://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/analysis-json.jpg)
+![Screen showing populating the field in the analysis.json file with mcr.microsoft.com/dotnet/framework/aspnet:4.8-windowsservercore-ltsc2019](https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/analysis-json.jpg)
 
     The NON-EDITABLE section of `analysis.json` includes application-level information that App2Container uses during the containerization step such as OS data, ports in use, dependencies, software libraries, and so on.
 
@@ -44,7 +44,7 @@ This guide recommends that you use the SAC version for container-based applicati
    ```
     app2container remote extract --application-id <net-app-id> --target <webserver-private-ip>
    ```
-![App2Container successfully extracting the artifacts required for containerization](http://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/app2artifacts.jpg)
+![App2Container successfully extracting the artifacts required for containerization](https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/app2artifacts.jpg)
 
 1.  Now you will run the `app2container containerize` command to create the container image based on the extracted files. This process will take several minutes, because the worker machine needs to download the container image .NET framework base layers, extract, and build the container image.
 
@@ -53,13 +53,13 @@ This guide recommends that you use the SAC version for container-based applicati
    ```
 
     After the process completes, you will see the following output:
-![App2Container successfully creates a container image of the .NET application](http://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/app2containerimage.jpg)
+![App2Container successfully creates a container image of the .NET application](https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/app2containerimage.jpg)
 
 1.  Run docker images to see the container image that App2Container created for you using the `windowsservercore-ltsc-2019` and `latest` image tag.
-![Screen showing List of container images available on the local machine](http://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/container-image-list.jpg)
+![Screen showing List of container images available on the local machine](https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/container-image-list.jpg)
 
 1.  Running the app2container containerize command creates a `deployment.json` file inside the application folder as noted in the output of the command. This file includes the AWS deployment configurations and you can update this file to fit your desired target environment such as changing the VPC or defining the CPU/memory allocation. Open the `deployment.json` file and ensure that `createEcsArtifacts` is set to true and set the target `vpc-id` to deploy the application to the target environment that you deployed previously. You can find the target `vpc-id` in the VPC service in the AWS Management Console.
-![Target vpc-id](http://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/target-vpcid.jpg)
-![Screen showing sample deployment.json file](http://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/deployment-json.jpg)
+![Target vpc-id](https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/target-vpcid.jpg)
+![Screen showing sample deployment.json file](https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/deployment-json.jpg)
 
  You have successfully containerized your application, and are ready to deploy your newly containerized application to AWS. In the next section you will deploy your application to Amazon ECS.

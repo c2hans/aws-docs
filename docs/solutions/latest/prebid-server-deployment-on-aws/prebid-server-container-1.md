@@ -17,7 +17,7 @@ The following diagram shows a detailed view of the container contents, and the r
 
  **Prebid Server container diagram**
 
-![prebid server container diagram](http://docs.aws.amazon.com/solutions/latest/prebid-server-deployment-on-aws/images/prebid-server-container-diagram.png)
+![prebid server container diagram](https://docs.aws.amazon.com/solutions/latest/prebid-server-deployment-on-aws/images/prebid-server-container-diagram.png)
 
 1. Amazon ECR is a fully managed container registry for developers to store, manage, and deploy container images for public or private access.
 

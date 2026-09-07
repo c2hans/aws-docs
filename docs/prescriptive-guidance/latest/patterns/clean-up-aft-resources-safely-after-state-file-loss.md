@@ -42,7 +42,7 @@ The resources that are deleted by the steps in this pattern cannot be recovered.
 
 The following diagram shows the AFT components and high-level workflow. AFT sets up a Terraform pipeline that helps you provision and customize your accounts in AWS Control Tower. AFT follows a GitOps model to automate the processes of account provisioning in AWS Control Tower. You create a Terraform file for an account request and commit it to a repository, which provides the input that triggers the AFT workflow for account provisioning. After account provisioning is complete, AFT can run additional customization steps automatically.
 
-![AFT components and high-level workflow.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/1342c0a6-4b07-46df-a063-ceab2e2f83c8/images/3e0cae87-20ef-4fcc-aacf-bb450844ac56.png)
+![AFT components and high-level workflow.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/1342c0a6-4b07-46df-a063-ceab2e2f83c8/images/3e0cae87-20ef-4fcc-aacf-bb450844ac56.png)
 
 In this architecture:
 + **AWS Control Tower Management account** is an AWS account that's dedicated to the AWS Control Tower service. This is also typically referred to as the *AWS payer account* or *AWS Organizations Management account*.
@@ -126,4 +126,4 @@ For additional information about this architecture, see [Introduction to AFT](ht
 
 To view AFT queries on the CloudWatch Logs Insights dashboard, choose the **Saved and sample queries** icon from the upper-right corner, as illustrated in the following screenshot:
 
-![Accessing AFT queries on the CloudWatch Logs Insights dashboard.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/1342c0a6-4b07-46df-a063-ceab2e2f83c8/images/255d4032-738b-4600-9084-9684d2e9a328.png)
+![Accessing AFT queries on the CloudWatch Logs Insights dashboard.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/1342c0a6-4b07-46df-a063-ceab2e2f83c8/images/255d4032-738b-4600-9084-9684d2e9a328.png)

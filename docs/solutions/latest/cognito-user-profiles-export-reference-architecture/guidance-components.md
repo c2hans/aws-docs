@@ -28,7 +28,7 @@ In the primary Region, the `BackupTable` DynamoDB table is configured to enable 
 
 The `ImportWorkflow` Step Functions workflow populates an empty user pool with user profiles, groups, and group memberships from the DynamoDB global table. You must run the `ImportWorkflow` Step Functions workflow on demand in either the primary or backup Region. When starting the execution, you must supply a JSON object as input and supply the ID for the new user pool in the `NewUserPoolId` property.
 
-![Amazon Cognito NewUserPoolId property](http://docs.aws.amazon.com/solutions/latest/cognito-user-profiles-export-reference-architecture/images/cognito-NewUserPoolId-property.png)
+![Amazon Cognito NewUserPoolId property](https://docs.aws.amazon.com/solutions/latest/cognito-user-profiles-export-reference-architecture/images/cognito-NewUserPoolId-property.png)
 
 The `ImportWorkflow` Step Functions workflow first checks that the new user pool does not have any groups or users before proceeding. If the user pool is not empty, the `ImportWorkflow` Step Functions workflow will be halted.
 

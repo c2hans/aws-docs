@@ -56,7 +56,7 @@ You will use the same key name in AWS Systems Manager automation for the AWS Man
 
 The following diagram shows an AWS account in a single AWS Region, with a VPC that includes two Availability Zones, two public subnets with NAT gateways, a jump server in the first public subnet, two private subnets, each with an EC2 instance for a SQL Server node in a node security group, and an Amazon FSx file system connecting to each of the SQL Server nodes. AWS Directory Service, Amazon EventBridge, AWS Secrets Manager, and AWS Systems Manager are also included.
 
-![Multi-AZ architecture with resources in public and private subnets, with node security groups.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/f09c0164-be2d-4665-a574-7ec29fd25082/images/543829a9-e130-4542-9c4e-7518c6cbe967.png)
+![Multi-AZ architecture with resources in public and private subnets, with node security groups.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/f09c0164-be2d-4665-a574-7ec29fd25082/images/543829a9-e130-4542-9c4e-7518c6cbe967.png)
 
 **Automation and scale**
 + You can use AWS Systems Manager to join AWS Managed Microsoft AD and perform the SQL Server installation.

@@ -14,7 +14,7 @@ After you activate cost allocation tags associated with the solution, you must c
 1. In **Applications**, choose the application name for this solution and select it.
 
 1. In the **Overview** tab, in **Cost**, select **Add user tag**.
-![Screenshot depicting the Application Cost add user tag screen](http://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/AppManager_1.png)
+![Screenshot depicting the Application Cost add user tag screen](https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/AppManager_1.png)
 
 1. On the **Add user tag** page, enter `confirm`, then select **Add user tag**.
 

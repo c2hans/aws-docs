@@ -140,7 +140,7 @@ Out of the box implementation of the Construct without any override will set the
 ## Architecture
 <a name="_architecture"></a>
 
-![Diagram showing the IOT rule, Kinesis data firehose, S3 buckets, log group and IAM roles created by the construct](http://docs.aws.amazon.com/solutions/latest/constructs/images/aws-iot-kinesisfirehose-s3.png)
+![Diagram showing the IOT rule, Kinesis data firehose, S3 buckets, log group and IAM roles created by the construct](https://docs.aws.amazon.com/solutions/latest/constructs/images/aws-iot-kinesisfirehose-s3.png)
 
 ## Github
 <a name="_github"></a>

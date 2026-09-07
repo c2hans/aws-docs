@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-m
 
 You can integrate MongoDB Atlas with [Amazon EventBridge](https://aws.amazon.com/eventbridge/) to orchestrate data flows, enable automated responses, and gain near real-time insights for applications. The following diagram shows an example reference architecture.
 
-![Integrating MongoDB Atlas with Amazon EventBridge to implement an event-driven architecture.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-mongodb-atlas/images/guide-img/2acef6bf-a074-43c2-a021-70385dda418f/images/61b374ce-187c-43e2-9362-445cef7e1724.png)
+![Integrating MongoDB Atlas with Amazon EventBridge to implement an event-driven architecture.](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-mongodb-atlas/images/guide-img/2acef6bf-a074-43c2-a021-70385dda418f/images/61b374ce-187c-43e2-9362-445cef7e1724.png)
 
 Key highlights:
 + Seamless event orchestration

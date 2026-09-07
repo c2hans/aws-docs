@@ -32,7 +32,7 @@ After you create a Data Catalog view, the details of the view is available in th
 
 1. Choose a view from the list and the details page shows the attributes of the view.
 
-![The lower section contains five tabs arranged horizontally where each tab includes corresponding information .](http://docs.aws.amazon.com/lake-formation/latest/dg/images/view-definition.png)
+![The lower section contains five tabs arranged horizontally where each tab includes corresponding information .](https://docs.aws.amazon.com/lake-formation/latest/dg/images/view-definition.png)
 
 Schema
 Choose a `Column` row, and select **Edit LF-Tags** to update tag values or assign new LF-Tags.

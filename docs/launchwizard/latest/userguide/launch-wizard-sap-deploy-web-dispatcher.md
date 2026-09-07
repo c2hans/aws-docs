@@ -26,7 +26,7 @@ Launch Wizard deploys the component as a standalone component on the same instan
 
 The following diagram depicts an SAP Web Dispatcher deployment using a single instance.
 
-![A SAP Web Dispatcher deployment that uses a single instance.](http://docs.aws.amazon.com/launchwizard/latest/userguide/images/sap-wd-single.png)
+![A SAP Web Dispatcher deployment that uses a single instance.](https://docs.aws.amazon.com/launchwizard/latest/userguide/images/sap-wd-single.png)
 
 ### Distributed instances deployment
 <a name="launch-wizard-sap-deploy-web-dispatcher-architectures-single"></a>
@@ -35,7 +35,7 @@ Launch Wizard deploys the component on a separate instance in the same Availabil
 
 The following diagram depicts an SAP Web Dispatcher deployment using a multiple instances.
 
-![A SAP Web Dispatcher deployment that uses multiple instances.](http://docs.aws.amazon.com/launchwizard/latest/userguide/images/sap-wd-multi.png)
+![A SAP Web Dispatcher deployment that uses multiple instances.](https://docs.aws.amazon.com/launchwizard/latest/userguide/images/sap-wd-multi.png)
 
 ### High availability (HA) deployment
 <a name="launch-wizard-sap-deploy-web-dispatcher-architectures-single"></a>
@@ -44,11 +44,11 @@ Launch Wizard deploys the component on two Amazon EC2 instances, each in a diffe
 
 The following diagram depicts a highly available SAP Web Dispatcher deployment using multiple instances behind an internet-facing load balancer.
 
-![A SAP Web Dispatcher deployment that is highly available and accessible from the internet.](http://docs.aws.amazon.com/launchwizard/latest/userguide/images/sap-wd-ha-internet.png)
+![A SAP Web Dispatcher deployment that is highly available and accessible from the internet.](https://docs.aws.amazon.com/launchwizard/latest/userguide/images/sap-wd-ha-internet.png)
 
 The following diagrams depicts a highly available SAP Web Dispatcher deployment using multiple instances behind an intranet-facing load balancer.
 
-![A SAP Web Dispatcher deployment that is highly available and accessible from your intranet.](http://docs.aws.amazon.com/launchwizard/latest/userguide/images/sap-wd-ha-intranet.png)
+![A SAP Web Dispatcher deployment that is highly available and accessible from your intranet.](https://docs.aws.amazon.com/launchwizard/latest/userguide/images/sap-wd-ha-intranet.png)
 
 ### Load balancers for SAP Web Dispatcher
 <a name="launch-wizard-sap-deploy-web-dispatcher-load-balancers"></a>

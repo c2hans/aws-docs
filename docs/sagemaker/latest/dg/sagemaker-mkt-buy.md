@@ -14,7 +14,7 @@ Use algorithms to:
 **Note**
 If you subscribe to an algorithm on AWS Marketplace, you must create a model package before you can use it to get inferences by creating hosted endpoint or running a batch transform job.
 
-![Market buyer workflow.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/mkt-buyer-workflow.png)
+![Market buyer workflow.](https://docs.aws.amazon.com/sagemaker/latest/dg/images/mkt-buyer-workflow.png)
 
 Use model packages to:
 + Create models that you can use to get real-time inference or run batch transform jobs. For information, see [Use a Model Package to Create a Model](sagemaker-mkt-model-pkg-model.md).

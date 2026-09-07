@@ -9,7 +9,7 @@ End of support notice: On March 31, 2027, AWS will end support for Amazon WorkSp
 
 Sign in to the AWS End User Computing service established for you by your administrator.
 
-![WorkSpaces Thin Client connection to WorkSpaces](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/oobe-vdi.png)
+![WorkSpaces Thin Client connection to WorkSpaces](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/oobe-vdi.png)
 
 **Note**
 The image shows WorkSpaces (web access). The service could be WorkSpaces (web access), WorkSpaces Applications, or WorkSpaces Secure Browser.

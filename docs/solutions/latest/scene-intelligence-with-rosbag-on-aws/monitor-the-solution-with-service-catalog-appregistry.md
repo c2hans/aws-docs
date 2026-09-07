@@ -15,4 +15,4 @@ The following figure depicts an example of the application view for the solution
 
  **Depicts solution stack in Application Manager**
 
-![appregistry1](http://docs.aws.amazon.com/solutions/latest/scene-intelligence-with-rosbag-on-aws/images/appregistry1.png)
+![appregistry1](https://docs.aws.amazon.com/solutions/latest/scene-intelligence-with-rosbag-on-aws/images/appregistry1.png)

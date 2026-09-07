@@ -27,7 +27,7 @@ If you want to list all of the JSON trace files, use the following AWS CLI comma
 
 As shown in the following animated screenshot, putting and aligning the trace events captured from the different profiling sources in a single plot can provide an overview of the entire events occurring in different phases of the training job.
 
-![An example of merged timeline.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/debugger/debugger-merged-timeline.gif)
+![An example of merged timeline.](https://docs.aws.amazon.com/sagemaker/latest/dg/images/debugger/debugger-merged-timeline.gif)
 
 **Tip**
 To interact with the merged timeline on the traicing app using a keyboard, use the `W` key for zooming in, the `A` key for shifting to the left, the `S` key for zooming out, and the `D` key for shifiting to the right.

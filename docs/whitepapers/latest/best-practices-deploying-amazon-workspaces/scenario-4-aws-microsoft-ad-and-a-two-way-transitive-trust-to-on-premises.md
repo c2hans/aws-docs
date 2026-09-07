@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 
  This scenario, shown in the following figure, has AWS Managed AD deployed in the AWS Cloud, which has a two-way transitive trust to the customer on-premises AD. Users and WorkSpaces are created in the Managed AD, with the AD trust enabling resources to be accessed in the on-premises environment.
 
-![Sample architecture showing AWS Managed AD deployed in the AWS Cloud, which has a two-way transitive trust to the customer on-premises AD.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/cloud-only-transitive-trust.png)
+![Sample architecture showing AWS Managed AD deployed in the AWS Cloud, which has a two-way transitive trust to the customer on-premises AD.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/cloud-only-transitive-trust.png)
 
  As in scenario 3, the AD DS (Microsoft AD) is deployed into dedicated subnets that span two AZs, making AD DS highly available in the AWS Cloud.
 

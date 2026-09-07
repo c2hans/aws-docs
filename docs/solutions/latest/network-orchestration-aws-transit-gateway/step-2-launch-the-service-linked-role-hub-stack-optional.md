@@ -16,7 +16,7 @@ Message: `Service role name AWSServiceRoleForResourceAccessManager has been take
 
 1. Sign in to the AWS Management Console with your AWS network hub account and select the button to launch the `network-orchestration-hub-service-linked-roles.template` CloudFormation template.
 
-    [![network orchestration service-linked role hub launch button](http://docs.aws.amazon.com/solutions/latest/network-orchestration-aws-transit-gateway/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?stackName=STNO-role&templateURL=https://solutions-reference.s3.amazonaws.com/network-orchestration-for-aws-transit-gateway/latest/network-orchestration-hub-service-linked-roles.template&redirectId=ImplementationGuide)
+    [![network orchestration service-linked role hub launch button](https://docs.aws.amazon.com/solutions/latest/network-orchestration-aws-transit-gateway/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?stackName=STNO-role&templateURL=https://solutions-reference.s3.amazonaws.com/network-orchestration-for-aws-transit-gateway/latest/network-orchestration-hub-service-linked-roles.template&redirectId=ImplementationGuide)
 
 1. Launch this template in the same Region as the hub template. The template launches in the US East (N. Virginia) Region by default.
 

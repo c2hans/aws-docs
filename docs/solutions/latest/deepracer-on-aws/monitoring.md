@@ -10,14 +10,14 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/monito
 
 DeepRacer on AWS automatically provisions an Amazon CloudWatch dashboard which surfaces important graphs, metrics, and alarms that are relevant to operating the solution and can help with identifying potential issues. This dashboard can be accessed through the AWS Management Console by going to the **Amazon CloudWatch** console and clicking **Dashboards** in the left sidebar.
 
-![DeepRacer on AWS dashboard top](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_dashboard_top.png)
+![DeepRacer on AWS dashboard top](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_dashboard_top.png)
 
 The upper-half of this dashboard shows system alarm states (see [Alarms](#alarms)), followed by:
 +  **Training instance usage** metrics, indicating the number of training jobs that are currently in use. This graph is helpful for identifying usage patterns for training and evaluation jobs, and can visually indicate cases such as when your current service quota is being reached.
 +  **Training job outcomes**, indicating the number of training and evaluation jobs that have completed and/or failed.
 +  **Queue metrics**, indicating the number of training and evaluation jobs that have been waiting in the queue over time.
 
-![DeepRacer on AWS dashboard bottom](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_dashboard_bottom.png)
+![DeepRacer on AWS dashboard bottom](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_dashboard_bottom.png)
 
 The bottom-half of this dashboard shows additional graphs related to:
 +  **API performance**, indicating the number of requests and latency, as well as the number of 4XX and 5XX errors over time.

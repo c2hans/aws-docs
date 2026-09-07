@@ -14,7 +14,7 @@ ML Platform needs to be monitored for job status (such as training job failure/s
 
 See the following figure for a sample monitoring architecture for the three monitoring areas:
 
-![A diagram showing a sample ML platform monitoring architecture.](http://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-16.png)
+![A diagram showing a sample ML platform monitoring architecture.](https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-16.png)
 
 *Sample ML platform monitoring architecture*
 

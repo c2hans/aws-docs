@@ -20,4 +20,4 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ## Reference architecture
 <a name="reference-architecture"></a>
 
-![Manufacturing and supply chain reference architecture](http://docs.aws.amazon.com/wellarchitected/latest/life-sciences-lens/images/manufacturing-and-supply-chain-reference-architecture.png)
+![Manufacturing and supply chain reference architecture](https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-lens/images/manufacturing-and-supply-chain-reference-architecture.png)

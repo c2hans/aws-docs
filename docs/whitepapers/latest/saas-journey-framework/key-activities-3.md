@@ -13,7 +13,7 @@ To successfully bring a SaaS solution to-market, it is necessary to align commer
 
 The MVS phase plays an important role in refining the GTM strategy for GA, and should directly influence decisions related to packaging, selling and operating the GA solution. Prior to bringing a new offer to-market, you should apply lessons-learned in the MVS phase to revise buyer and user personas, update customer journey maps, and set product adoption targets, to complement customer acquisition and expand-selling sales motions.
 
-![Diagram showing the market and sell with a customer-centric, adoption-driven approach.](http://docs.aws.amazon.com/whitepapers/latest/saas-journey-framework/images/market-and-sell-approach.jpg)
+![Diagram showing the market and sell with a customer-centric, adoption-driven approach.](https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framework/images/market-and-sell-approach.jpg)
 
  Below is a list of steps you should follow when building a GTM strategy for new SaaS offerings:
 

@@ -12,7 +12,7 @@ For the multinational pharmaceutical company in our example, the initial design 
 
 The following diagram shows the initial OU architecture.
 
-![Architecture design for phase 1 of the OU structure](http://docs.aws.amazon.com/prescriptive-guidance/latest/ou-structure-landing-zone/images/guide-img/dc8c0d6d-2fd2-4887-a8d0-2a424cc8ffb8/images/816de7e8-f5fa-4d89-9cda-b234c107cf73.png)
+![Architecture design for phase 1 of the OU structure](https://docs.aws.amazon.com/prescriptive-guidance/latest/ou-structure-landing-zone/images/guide-img/dc8c0d6d-2fd2-4887-a8d0-2a424cc8ffb8/images/816de7e8-f5fa-4d89-9cda-b234c107cf73.png)
 
 ## Security OU
 <a name="p1-security"></a>

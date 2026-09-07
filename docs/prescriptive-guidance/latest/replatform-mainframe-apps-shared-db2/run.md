@@ -37,7 +37,7 @@ By using XA, AWS Replatform with Rocket Software provides a reliable and scalabl
 
 The following diagram shows a highly available and elastic environment in the AWS Cloud that includes two Availability Zones, EC2 instances in an Auto Scaling group, a Network Load Balancer, and a dedicated connection between the AWS and mainframe environments through AWS Direct Connect.
 
-![2PC architecture for replatforming mainframe applications.](http://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-mainframe-apps-shared-db2/images/guide-img/b5c7b078-cfe6-46c4-b120-94b5824d3c88/images/ef1d449e-ee57-4664-ac6b-fc581a9af36d.png)
+![2PC architecture for replatforming mainframe applications.](https://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-mainframe-apps-shared-db2/images/guide-img/b5c7b078-cfe6-46c4-b120-94b5824d3c88/images/ef1d449e-ee57-4664-ac6b-fc581a9af36d.png)
 
 In this architecture:
 

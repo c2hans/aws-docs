@@ -19,7 +19,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/improvi
 
  The following cycle shows the main steps included in the *improvement* phase of the WAFR.
 
-![Improvement cycle](http://docs.aws.amazon.com/wellarchitected/latest/userguide/images/improvement_cycle.png)
+![Improvement cycle](https://docs.aws.amazon.com/wellarchitected/latest/userguide/images/improvement_cycle.png)
 
 ## Timeline after the WAFR
 <a name="timeline-after-the-wafr"></a>

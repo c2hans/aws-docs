@@ -54,7 +54,7 @@ Use the event sourcing pattern when:
 
 In distributed, event-driven microservices applications, commands represent the instructions or requests sent to a service, typically with the intent of initiating a change in its state. The service processes these commands and evaluates the command's validity and applicability to its current state. If the command runs successfully, the service responds by emitting an event that signifies the action taken and the relevant state information. For example, in the following diagram, the booking service responds to the Book ride command by emitting the Ride booked event.
 
-![Commands and events in event sourcing pattern](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/7920ff8b-9580-46e9-8517-15377aeda36e.png)
+![Commands and events in event sourcing pattern](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/7920ff8b-9580-46e9-8517-15377aeda36e.png)
 
  **Event stores**
 
@@ -67,11 +67,11 @@ The event store acts as a historical record of all actions and state changes, an
 
 The following diagram shows the `Ride booked` event being stored in an event store.
 
-![Using event stores in event sourcing pattern](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/5c99ccbe-0be7-4349-8f8b-0614fc127abb.png)
+![Using event stores in event sourcing pattern](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/5c99ccbe-0be7-4349-8f8b-0614fc127abb.png)
 
 The event store publishes the events it stores, and the events can be filtered and routed to the appropriate processor for subsequent actions. For example, events can be routed to a view processor that summarizes the state and shows a materialized view. The events are transformed to the data format of the target data store. This architecture can be extended to derive different types of data stores, which leads to polyglot persistence of the data. The following diagram describes the events in a ride booking application. All the events that occur within the application are stored in the event store. Stored events are then filtered and routed to different consumers.
 
-![Example high-level implementation for event sourcing pattern](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/d14f682b-8293-48cc-8b2a-fa434db550c0.png)
+![Example high-level implementation for event sourcing pattern](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/d14f682b-8293-48cc-8b2a-fa434db550c0.png)
 
 The ride events can be used to generate read-only data stores by using the CQRS or materialized view pattern. You can obtain the current state of the ride, the driver, or the booking by querying the read stores. Some events, such as `Location changed` or `Ride completed`, are published to another consumer for payment processing. When the ride is complete, all ride events are replayed to build a history of the ride for auditing or reporting purposes.
 
@@ -82,7 +82,7 @@ The event sourcing pattern is frequently used in applications that require a poi
 
 In the following architecture, Amazon Kinesis Data Streams is used as the event store. This service captures and manages application changes as events, and offers a high-throughput and real-time data streaming solution. To implement the event sourcing pattern on AWS, you can also use services such as Amazon EventBridge and Amazon Managed Streaming for Apache Kafka (Amazon MSK) based on your application's needs. To enhance durability and enable auditing, you can archive the events that are captured by Kinesis Data Streams in Amazon Simple Storage Service (Amazon S3). This dual-storage approach helps retain historical event data securely for future analysis and compliance purposes.
 
-![Implementing the event sourcing pattern with AWS services](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/75e17c88-8f38-40ac-a253-26601b130f81.png)
+![Implementing the event sourcing pattern with AWS services](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/75e17c88-8f38-40ac-a253-26601b130f81.png)
 
 The workflow consists of the following steps:
 

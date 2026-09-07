@@ -13,7 +13,7 @@ This library is hosted on the Amazon-FreeRTOS repository which is deprecated. We
 
 FreeRTOS supports publishing and subscribing to Message Queuing Telemetry Transport (MQTT) topics over Bluetooth Low Energy through a proxy device, such as a mobile phone. With the FreeRTOS [Bluetooth Low Energy](https://docs.aws.amazon.com/freertos/latest/lib-ref/html2/ble/index.html) (BLE) library, your microcontroller can securely communicate with the AWS IoT MQTT broker.
 
-![BLE devices connecting to AWS IoT Core via MQTT/HTTP/Websocket through AWS Cognito.](http://docs.aws.amazon.com/freertos/latest/userguide/images/blediagram.jpg)
+![BLE devices connecting to AWS IoT Core via MQTT/HTTP/Websocket through AWS Cognito.](https://docs.aws.amazon.com/freertos/latest/userguide/images/blediagram.jpg)
 
 Using the Mobile SDKs for FreeRTOS Bluetooth Devices, you can write native mobile applications that communicate with the embedded applications on your microcontroller over BLE. For more information about the mobile SDKs, see [Mobile SDKs for FreeRTOS Bluetooth devices](freertos-ble-mobile.md).
 
@@ -24,7 +24,7 @@ The FreeRTOS BLE library includes services for configuring Wi-Fi networks, trans
 
 Three layers make up the FreeRTOS BLE library: services, middleware, and low-level wrappers.
 
-![Cloud architecture layers: User Application, Services, Middleware, Low-level Wrappers, Manufacturer BLE Stack.](http://docs.aws.amazon.com/freertos/latest/userguide/images/ble-architecture.png)
+![Cloud architecture layers: User Application, Services, Middleware, Low-level Wrappers, Manufacturer BLE Stack.](https://docs.aws.amazon.com/freertos/latest/userguide/images/ble-architecture.png)
 
 ### Services
 <a name="freertos-ble-services"></a>
@@ -93,7 +93,7 @@ The Bluetooth Low Energy library has the following direct dependencies:
 + [Linear Containers](https://docs.aws.amazon.com/freertos/latest/lib-ref/c-sdk/linear_containers/index.html) library
 + A platform layer that interfaces with the operating system for thread management, timers, clock functions, and network access.
 
-![Architecture diagram showing components: BLE, List/Queue, Network, and Clock, with directional arrows indicating interactions.](http://docs.aws.amazon.com/freertos/latest/userguide/images/ble-dependencies.png)
+![Architecture diagram showing components: BLE, List/Queue, Network, and Clock, with directional arrows indicating interactions.](https://docs.aws.amazon.com/freertos/latest/userguide/images/ble-dependencies.png)
 
 Only the Wi-Fi Provisioning service has FreeRTOS library dependencies:
 

@@ -56,7 +56,7 @@ Your organization in AWS Organizations should include these accounts:
 
 The following diagram illustrates an AWS centralized logging architecture that provides a scalable solution for collecting, processing, and storing logs from multiple Application accounts into a dedicated Log Archive account. This architecture efficiently handles logs from AWS services, including Amazon RDS, Amazon EKS, and Lambda, and routes them through a streamlined process to Regional S3 buckets in the Log Archive account.
 
-![AWS centralized logging architecture for collecting logs from multiple Application accounts.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9fc71a10-65d6-437b-9128-cc27bda11af4/images/2e916040-0f11-4712-a8dd-31c95194ce5d.png)
+![AWS centralized logging architecture for collecting logs from multiple Application accounts.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9fc71a10-65d6-437b-9128-cc27bda11af4/images/2e916040-0f11-4712-a8dd-31c95194ce5d.png)
 
 The workflow includes five processes:
 

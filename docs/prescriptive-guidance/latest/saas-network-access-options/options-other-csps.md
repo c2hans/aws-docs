@@ -11,7 +11,7 @@ When choosing Site-to-Site VPN, consumers can benefit from managed gateways or s
 
 The following networking value map summarizes how each of these options scores for each evaluation metric. It is very similar to the networking value map for on-premises connections, although the values for Site-to-Site VPN are different. For more information about the evaluation metrics, see [Evaluation metrics](evaluating.md#evaluating-metrics) in this guide. In the map, a five represents the best score, such as the lowest TCO, best network isolation, or lowest time to repair. For more information about how to read this radar chart, see [Networking value map](evaluating.md#evaluating-map) in this guide.
 
-![Radar chart that shows scores for each evaluation metric.](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-network-access-options/images/guide-img/c6ce66a8-c949-4e68-b09d-850373110e63/images/56756012-b77e-43f7-889b-aaba529d8621.png)
+![Radar chart that shows scores for each evaluation metric.](https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-network-access-options/images/guide-img/c6ce66a8-c949-4e68-b09d-850373110e63/images/56756012-b77e-43f7-889b-aaba529d8621.png)
 
 The radar chart shows the following values.
 

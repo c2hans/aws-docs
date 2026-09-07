@@ -21,7 +21,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-o
 
  The following diagram illustrates a general use case for CodeDeploy as part of a complete CI/CD solution. In this example, CodeDeploy is used in conjunction with additional AWS Developer Tools, namely AWS CodePipeline (automate CI/CD pipelines), [AWS CodeBuild](https://aws.amazon.com/codebuild/) (build and test application components), and [AWS CodeCommit](https://aws.amazon.com/codecommit/) (source code repository) to deploy an application onto a group of Amazon EC2 instances. CodeDeploy is used with other tools as part of a complete CI/CD pipeline. CodeDeploy manages deployment of application components onto compute resources that are part of a deployment group. All infrastructure components are created outside of CodeDeploy.
 
-![AWS CodePipeline workflow showing CodeCommit, CodeBuild, CodeDeploy, and EC2 with Auto Scaling.](http://docs.aws.amazon.com/whitepapers/latest/overview-deployment-options/images/image4.png)
+![AWS CodePipeline workflow showing CodeCommit, CodeBuild, CodeDeploy, and EC2 with Auto Scaling.](https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-options/images/image4.png)
 
 * AWS CodeDeploy use case *
 

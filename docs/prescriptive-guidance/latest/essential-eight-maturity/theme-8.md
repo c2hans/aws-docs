@@ -11,7 +11,7 @@ At Amazon, we have a saying: [Good intentions don't work—mechanisms do](https:
 
 As shown in the following diagram, a *mechanism* is a complete process where you create a tool, drive adoption of the tool, and then inspect the results in order to adjustments. It is a cycle that reinforces and improves itself as it operates. It takes controllable inputs and transforms them into ongoing outputs to address a recurring business challenge. For more information, see [Building mechanisms](https://docs.aws.amazon.com/wellarchitected/latest/operational-readiness-reviews/building-mechanisms.html) in the AWS Well-Architected Framework.
 
-![A flow diagram of a mechanism that transforms controllable inputs into ongoing outputs.](http://docs.aws.amazon.com/prescriptive-guidance/latest/essential-eight-maturity/images/guide-img/018fe23c-66d3-4a4f-b452-f579e8efd497/images/0bc35568-9ce7-4950-a56a-d0631fd7f71f.png)
+![A flow diagram of a mechanism that transforms controllable inputs into ongoing outputs.](https://docs.aws.amazon.com/prescriptive-guidance/latest/essential-eight-maturity/images/guide-img/018fe23c-66d3-4a4f-b452-f579e8efd497/images/0bc35568-9ce7-4950-a56a-d0631fd7f71f.png)
 
 ## Related best practices in the AWS Well-Architected Framework
 <a name="theme-8-best-practices"></a>

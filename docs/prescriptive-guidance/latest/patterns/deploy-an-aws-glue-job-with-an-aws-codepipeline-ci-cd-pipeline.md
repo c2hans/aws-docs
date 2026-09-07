@@ -41,7 +41,7 @@ This solution is helpful in the situation where businesses, developers, and data
 
 **Target architecture **
 
-![Using Lambda to launch a Glue job as soon as a developer pushes changes to a CodeCommit repo.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/99a67388-5939-4267-8324-b6ca8bfa7962/images/917c9041-b94d-4e95-a3c4-9a1115ead228.png)
+![Using Lambda to launch a Glue job as soon as a developer pushes changes to a CodeCommit repo.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/99a67388-5939-4267-8324-b6ca8bfa7962/images/917c9041-b94d-4e95-a3c4-9a1115ead228.png)
 
 The process consists of these steps:
 

@@ -34,7 +34,7 @@ The LMS plugin integration architecture connects the Learning Management System 
 
 1. **AWS services**: Backend services that provide the actual functionality, such as Amazon Bedrock for generative AI capabilities, Amazon S3 for content storage, and other AWS services as needed for specific use cases
 
-![LMS plugin connects to AWS services through API Gateway and an authentication layer.](http://docs.aws.amazon.com/prescriptive-guidance/latest/lms-integration-with-aws/images/guide-img/0295b1b3-2981-4c83-b66b-d5ae2700aca8/images/e9283084-4f7f-43fa-b591-7e0a12d644d2.png)
+![LMS plugin connects to AWS services through API Gateway and an authentication layer.](https://docs.aws.amazon.com/prescriptive-guidance/latest/lms-integration-with-aws/images/guide-img/0295b1b3-2981-4c83-b66b-d5ae2700aca8/images/e9283084-4f7f-43fa-b591-7e0a12d644d2.png)
 
 *Figure 1: LMS Plugin Integration Pattern*
 
@@ -134,7 +134,7 @@ The LTI integration architecture consists of:
 
 The LTI standard enables secure communication between the LMS and the AWS-hosted tool while maintaining separation between the systems. This provides flexibility for the tool's development while ensuring secure data exchange with the LMS environment.
 
-![LTI tool frontend renders in an iframe, with backend connecting to AWS services.](http://docs.aws.amazon.com/prescriptive-guidance/latest/lms-integration-with-aws/images/guide-img/0295b1b3-2981-4c83-b66b-d5ae2700aca8/images/87b4ef0c-351c-448a-af0a-17e28b6e5cd7.png)
+![LTI tool frontend renders in an iframe, with backend connecting to AWS services.](https://docs.aws.amazon.com/prescriptive-guidance/latest/lms-integration-with-aws/images/guide-img/0295b1b3-2981-4c83-b66b-d5ae2700aca8/images/87b4ef0c-351c-448a-af0a-17e28b6e5cd7.png)
 
 *Figure 2: LTI Integration Pattern*
 
@@ -212,7 +212,7 @@ This pattern involves developing a standalone application that interfaces with t
    + **Application Backend**: Server-side components that processes business logic
    + **AWS Services**: Backend services that provide specialized functionality such as Amazon S3 or Amazon Bedrock.
 
-![Standalone application uses an API client to bridge LMS and AWS services.](http://docs.aws.amazon.com/prescriptive-guidance/latest/lms-integration-with-aws/images/guide-img/0295b1b3-2981-4c83-b66b-d5ae2700aca8/images/8d893af4-720f-41a3-9413-c039a36aa7b6.png)
+![Standalone application uses an API client to bridge LMS and AWS services.](https://docs.aws.amazon.com/prescriptive-guidance/latest/lms-integration-with-aws/images/guide-img/0295b1b3-2981-4c83-b66b-d5ae2700aca8/images/8d893af4-720f-41a3-9413-c039a36aa7b6.png)
 
 *Figure 3: Standalone API Integration Pattern*
 
@@ -271,7 +271,7 @@ Event-driven integration leverages the LMS' event system to trigger actions in A
 
 1. **AWS Services**: Backend services that provide the actual functionality, such as Lambda for executing custom code.
 
-![LMS plugin forwards events to Amazon EventBridge or Kinesis for AWS processing.](http://docs.aws.amazon.com/prescriptive-guidance/latest/lms-integration-with-aws/images/guide-img/0295b1b3-2981-4c83-b66b-d5ae2700aca8/images/696c70a0-a251-4d8c-83d1-b5f496b32394.png)
+![LMS plugin forwards events to Amazon EventBridge or Kinesis for AWS processing.](https://docs.aws.amazon.com/prescriptive-guidance/latest/lms-integration-with-aws/images/guide-img/0295b1b3-2981-4c83-b66b-d5ae2700aca8/images/696c70a0-a251-4d8c-83d1-b5f496b32394.png)
 
 *Figure 4: Event-Driven Integration Pattern*
 
@@ -364,7 +364,7 @@ ETL (Extract, Transform, Load) integration focuses on batch processing of LMS da
    + **AWS** **Analytics Services**: Tools for analyzing and visualizing the processed data
    + **AWS Lambda**: Function that can process data or write results back to the LMS (indicated by dotted lines)
 
-![Scheduled ETL extracts LMS data via AWS Glue into S3 for analytics services.](http://docs.aws.amazon.com/prescriptive-guidance/latest/lms-integration-with-aws/images/guide-img/0295b1b3-2981-4c83-b66b-d5ae2700aca8/images/55a1da6d-f3f7-4b54-94ea-3c5b9f67289b.png)
+![Scheduled ETL extracts LMS data via AWS Glue into S3 for analytics services.](https://docs.aws.amazon.com/prescriptive-guidance/latest/lms-integration-with-aws/images/guide-img/0295b1b3-2981-4c83-b66b-d5ae2700aca8/images/55a1da6d-f3f7-4b54-94ea-3c5b9f67289b.png)
 
 *Figure 5: ETL Pipeline Integration Pattern*
 

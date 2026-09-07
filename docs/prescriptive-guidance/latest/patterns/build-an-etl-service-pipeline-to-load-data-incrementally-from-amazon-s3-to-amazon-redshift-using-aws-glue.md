@@ -44,11 +44,11 @@ The source files in Amazon S3 can have different formats, including comma-separa
 
 **Target architecture**
 
-![Architecture for loading incremental changes from Amazon S3 to Amazon Redshift using AWS Glue.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/105b58ec-56c1-464a-8e69-f625360caa14/images/626aa365-e6e6-4874-a873-1c71adbe5306.png)
+![Architecture for loading incremental changes from Amazon S3 to Amazon Redshift using AWS Glue.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/105b58ec-56c1-464a-8e69-f625360caa14/images/626aa365-e6e6-4874-a873-1c71adbe5306.png)
 
 **Data flow**
 
-![Data flow for loading incremental changes from Amazon S3 to Amazon Redshift using AWS Glue.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/105b58ec-56c1-464a-8e69-f625360caa14/images/29569e48-9f2d-4f48-bc59-1f33949d01ca.png)
+![Data flow for loading incremental changes from Amazon S3 to Amazon Redshift using AWS Glue.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/105b58ec-56c1-464a-8e69-f625360caa14/images/29569e48-9f2d-4f48-bc59-1f33949d01ca.png)
 
 ## Tools
 <a name="build-an-etl-service-pipeline-to-load-data-incrementally-from-amazon-s3-to-amazon-redshift-using-aws-glue-tools"></a>

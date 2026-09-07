@@ -30,7 +30,7 @@ The setup described by this pattern is a secure way to share application access 
 ## Architecture
 <a name="access-container-applications-privately-on-amazon-eks-using-aws-privatelink-and-a-network-load-balancer-architecture"></a>
 
-![Use PrivateLink and a Network Load Balancer to access an application in an Amazon EKS container.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/ce977924-012c-4fb6-8e51-94d6e5c829a6/images/378456a3-f4d1-4a57-bb36-879c240cabfb.png)
+![Use PrivateLink and a Network Load Balancer to access an application in an Amazon EKS container.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/ce977924-012c-4fb6-8e51-94d6e5c829a6/images/378456a3-f4d1-4a57-bb36-879c240cabfb.png)
 
 **Technology stack  **
 + Amazon EKS

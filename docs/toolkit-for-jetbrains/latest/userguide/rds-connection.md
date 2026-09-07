@@ -40,7 +40,7 @@ You can also choose **Copy Arn** to add the database's Amazon Resource Name (ARN
    + **RDS Host/Port** – The endpoint and port for the database as listed in the AWS Management Console. If you're using a different endpoint to connect to a DB instance, specify the proxy's connection details in the **Host/Port** fields (described previously).
    + **Database** – The name of the database.
    + **URL** – The URL that the JetBrains IDE will use to connect to the database.
-![Connection settings for an Amazon RDS database with IAM credentials used for authentication.](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/rds-auth-iam.png)
+![Connection settings for an Amazon RDS database with IAM credentials used for authentication.](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/rds-auth-iam.png)
 **Note**
 For a full description of the connection settings that you can configure using the **Data sources and drivers** dialog box, see the [documentation for the JetBrains IDE](https://www.jetbrains.com/help/) that you're using.
 
@@ -85,7 +85,7 @@ You can also choose **Copy Arn** to add the database's Amazon Resource Name (ARN
    + **URL** – The URL that the JetBrains IDE will use to connect to the database.
 **Note**
 If you're using Secrets Manager for authentication, there are no fields for a user name and password for the database. This information is contained in the encrypted secret data portion of a secret.
-![Connection settings with IAM credentials used for authentication.](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/rds-auth-asm.png)
+![Connection settings with IAM credentials used for authentication.](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/rds-auth-asm.png)
 **Note**
 For a full description of the connection settings that you can configure using the **Data sources and drivers** dialog box, see the [documentation for the JetBrains IDE](https://www.jetbrains.com/help/) that you're using.
 

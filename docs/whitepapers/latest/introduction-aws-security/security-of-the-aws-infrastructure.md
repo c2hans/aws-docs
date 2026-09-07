@@ -15,6 +15,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/introduction-aws-secu
 
  AWS operates under a shared security responsibility model, where AWS is responsible for the security of the underlying cloud infrastructure and you are responsible for securing workloads you deploy in AWS (*Figure 1*). This gives you the flexibility and agility you need to implement the most applicable security controls for your business functions in the AWS environment. You can tightly restrict access to environments that process sensitive data, or deploy less stringent controls for information you want to make public.
 
-![AWS Shared Security Responsibility Model](http://docs.aws.amazon.com/whitepapers/latest/introduction-aws-security/images/image2.png)
+![AWS Shared Security Responsibility Model](https://docs.aws.amazon.com/whitepapers/latest/introduction-aws-security/images/image2.png)
 
 * Figure 1: AWS Shared Security Responsibility Model *

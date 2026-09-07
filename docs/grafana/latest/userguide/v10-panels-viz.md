@@ -61,54 +61,54 @@ In the following sections you can find visualizations examples.
 
 For time based line, area, and bar charts, we recommend the default [time series](v10-panels-time-series.md) visualization.
 
-![An image showing examples of times series visualizations in Grafana.](http://docs.aws.amazon.com/grafana/latest/userguide/images/viz/time_series_example.png)
+![An image showing examples of times series visualizations in Grafana.](https://docs.aws.amazon.com/grafana/latest/userguide/images/viz/time_series_example.png)
 
 For categorical data, use a [bar chart](v10-panels-bar-chart.md).
 
-![An image showing examples of bar chart visualizations in Grafana.](http://docs.aws.amazon.com/grafana/latest/userguide/images/viz/barchart_example.png)
+![An image showing examples of bar chart visualizations in Grafana.](https://docs.aws.amazon.com/grafana/latest/userguide/images/viz/barchart_example.png)
 
 ## Big numbers & stats
 <a name="v10-panels-ex-numbers"></a>
 
 A [stat](v10-panels-stat.md) visualization shows one large stat value with an optional graph sparkline. You can control the background or value color using thresholds or color scales.
 
-![An image showing an example of a stat visualization in Grafana.](http://docs.aws.amazon.com/grafana/latest/userguide/images/viz/stat_panel_example.png)
+![An image showing an example of a stat visualization in Grafana.](https://docs.aws.amazon.com/grafana/latest/userguide/images/viz/stat_panel_example.png)
 
 ## Gauge
 <a name="v10-panels-ex-gauge"></a>
 
 If you want to present a value as it relates to a min and max value, you have two options. First a standard radial [gauge](v10-panels-gauge.md):
 
-![An image showing an example of a gauge visualization in Grafana.](http://docs.aws.amazon.com/grafana/latest/userguide/images/viz/gauge_example.png)
+![An image showing an example of a gauge visualization in Grafana.](https://docs.aws.amazon.com/grafana/latest/userguide/images/viz/gauge_example.png)
 
 Secondly, Grafana also has a horizontal or vertical [bar gauge](v10-panels-bar-gauge.md) with three distinct display modes.
 
-![An image showing an example of a gauge visualization in Grafana.](http://docs.aws.amazon.com/grafana/latest/userguide/images/viz/bar_gauge_example.png)
+![An image showing an example of a gauge visualization in Grafana.](https://docs.aws.amazon.com/grafana/latest/userguide/images/viz/bar_gauge_example.png)
 
 ## Table
 <a name="v10-panels-ex-table"></a>
 
 To show data in a table layout, use a [table](v10-panels-table.md) visualization.
 
-![An image showing an example of a table visualization in Grafana.](http://docs.aws.amazon.com/grafana/latest/userguide/images/viz/table_example.png)
+![An image showing an example of a table visualization in Grafana.](https://docs.aws.amazon.com/grafana/latest/userguide/images/viz/table_example.png)
 
 ## Pie chart
 <a name="v10-panels-ex-piechart"></a>
 
 To display reduced series, or values in a series, from one or more queries, as they relate to each other, use a [pie chart](v10-panels-piechart.md) visualization.
 
-![An image showing an example of a pie chart visualization in Grafana.](http://docs.aws.amazon.com/grafana/latest/userguide/images/viz/pie_chart_example.png)
+![An image showing an example of a pie chart visualization in Grafana.](https://docs.aws.amazon.com/grafana/latest/userguide/images/viz/pie_chart_example.png)
 
 ## Heatmaps
 <a name="v10-panels-ex-heatmaps"></a>
 
 To show value distribution over time, use a [heatmap](v10-panels-heatmap.md) visualization.
 
-![An image showing an example of a heatmap visualization in Grafana.](http://docs.aws.amazon.com/grafana/latest/userguide/images/viz/heatmap_example.jpg)
+![An image showing an example of a heatmap visualization in Grafana.](https://docs.aws.amazon.com/grafana/latest/userguide/images/viz/heatmap_example.jpg)
 
 ## State timeline
 <a name="v10-panels-ex-state"></a>
 
 A [state timeline](v10-panels-state-timeline.md) shows discrete state changes over time. When used with time series, thresholds are used to turn numerical values into discrete state regions.
 
-![An image showing an example of a state timeline visualization in Grafana.](http://docs.aws.amazon.com/grafana/latest/userguide/images/viz/state_timeline_example.png)
+![An image showing an example of a state timeline visualization in Grafana.](https://docs.aws.amazon.com/grafana/latest/userguide/images/viz/state_timeline_example.png)

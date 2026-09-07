@@ -12,13 +12,13 @@ If you chose `Yes - AWS Lambda log parser` for the **Activate HTTP Flood Protect
 
  **Screenshot depicting a screen labeled AWSWAFSecurityAutomations and listing four outputs**
 
-![stack outputs](http://docs.aws.amazon.com/solutions/latest/security-automations-for-aws-waf/images/stack-outputs.png)
+![stack outputs](https://docs.aws.amazon.com/solutions/latest/security-automations-for-aws-waf/images/stack-outputs.png)
 
 If you edit and overwrite the ` <stack_name>-waf_log_conf.json` file on Amazon S3, the `Log Parser` Lambda function considers the new values when processing new AWS WAF log files. The following is a sample configuration file:
 
  **Screenshot of a sample configuration file**
 
-![http flood config](http://docs.aws.amazon.com/solutions/latest/security-automations-for-aws-waf/images/http-flood-config.png)
+![http flood config](https://docs.aws.amazon.com/solutions/latest/security-automations-for-aws-waf/images/http-flood-config.png)
 
 Parameters include the following:
 + General:
@@ -38,7 +38,7 @@ If you edit and overwrite on the ` <stack_name>-app_log_conf.json` on Amazon S3,
 
  **Screenshot of configuration file**
 
-![scanner probes config file](http://docs.aws.amazon.com/solutions/latest/security-automations-for-aws-waf/images/scanner-probes-config-file.png)
+![scanner probes config file](https://docs.aws.amazon.com/solutions/latest/security-automations-for-aws-waf/images/scanner-probes-config-file.png)
 
 Parameters include the following:
 + General:

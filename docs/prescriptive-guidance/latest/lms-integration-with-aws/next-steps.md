@@ -197,7 +197,7 @@ Once the plugin has been installed it can be configured through Site administrat
 
 Now that all the files have been packaged, the plugin uploaded and installed, you can enable the [Moodle *Edit Mode*](https://docs.moodle.org/500/en/Course_homepage) and add your plugin to your Moodle page.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/lms-integration-with-aws/images/guide-img/0295b1b3-2981-4c83-b66b-d5ae2700aca8/images/85f9b76e-b97a-40db-a6a8-f6a04712e109.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/lms-integration-with-aws/images/guide-img/0295b1b3-2981-4c83-b66b-d5ae2700aca8/images/85f9b76e-b97a-40db-a6a8-f6a04712e109.png)
 
 *Figure 10: Translation tool powered by Amazon Bedrock*
 
@@ -214,7 +214,7 @@ A complete sample for this pattern is available in the [sample-moodle-integratio
 
 The LTI process works using a handshake system, where both Moodle and the LTI compliant tool talk to each other and exchange information. The following diagram explains the process for LTI Advantage/1.3 (recommended):
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/lms-integration-with-aws/images/guide-img/0295b1b3-2981-4c83-b66b-d5ae2700aca8/images/198e6ece-4820-4581-8eba-1cfd4e0eee8c.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/lms-integration-with-aws/images/guide-img/0295b1b3-2981-4c83-b66b-d5ae2700aca8/images/198e6ece-4820-4581-8eba-1cfd4e0eee8c.png)
 
 *Figure 11: Moodle and LTI Sequence Diagram*
 
@@ -342,7 +342,7 @@ return Response(
 
 Once the `/launch` endpoints completes its processing, it redirects the app in the iframe to the tool's URL, which will allow the user to see and use the tool. The tool is able to display the course it is being launched from as well as the User ID thanks to the session token passed as part of the redirect.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/lms-integration-with-aws/images/guide-img/0295b1b3-2981-4c83-b66b-d5ae2700aca8/images/a30d7ae1-3018-47d6-a96f-38cc7a97bee9.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/lms-integration-with-aws/images/guide-img/0295b1b3-2981-4c83-b66b-d5ae2700aca8/images/a30d7ae1-3018-47d6-a96f-38cc7a97bee9.png)
 
 *Figure 12: LTI-based Translation tool*
 
@@ -353,7 +353,7 @@ Once the `/launch` endpoints completes its processing, it redirects the app in t
 
 The following diagram shows how an LTI compliant tool can pass data back into Moodle. It takes the example of a tool that would like to submit grades back.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/lms-integration-with-aws/images/guide-img/0295b1b3-2981-4c83-b66b-d5ae2700aca8/images/924db5a4-6d2d-479f-b106-25d1a0e1b98d.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/lms-integration-with-aws/images/guide-img/0295b1b3-2981-4c83-b66b-d5ae2700aca8/images/924db5a4-6d2d-479f-b106-25d1a0e1b98d.png)
 
 *Figure 13: Moodle LTI Sequence Diagram*
 

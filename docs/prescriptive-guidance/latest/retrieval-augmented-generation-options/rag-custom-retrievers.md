@@ -39,7 +39,7 @@ The following are the advantages of using Amazon Kendra for RAG:
 
 The following image shows a sample architecture that uses Amazon Kendra as the retrieval layer of the RAG system. For more information, see [Quickly build high-accuracy Generative AI applications on enterprise data using Amazon Kendra, LangChain, and large language models](https://aws.amazon.com/blogs/machine-learning/quickly-build-high-accuracy-generative-ai-applications-on-enterprise-data-using-amazon-kendra-langchain-and-large-language-models/) (AWS blog post).
 
-![Using Amazon Kendra as the retrieval layer for a RAG system on AWS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/retrieval-augmented-generation-options/images/guide-img/22e94edd-d3e5-4e29-8c94-48e327306335/images/2807c4b1-dbb5-4715-8e31-b33c6f568109.png)
+![Using Amazon Kendra as the retrieval layer for a RAG system on AWS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/retrieval-augmented-generation-options/images/guide-img/22e94edd-d3e5-4e29-8c94-48e327306335/images/2807c4b1-dbb5-4715-8e31-b33c6f568109.png)
 
 For the foundation model, you can use Amazon Bedrock or an LLM deployed through [Amazon SageMaker AI JumpStart](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html). You can use AWS Lambda with [LangChain](https://python.langchain.com/docs/integrations/tools/awslambda/) to orchestrate the flow between the user, Amazon Kendra, and the LLM. To build a RAG system that uses Amazon Kendra, LangChain, and various LLMs, see the [Amazon Kendra LangChain Extensions](https://github.com/aws-samples/amazon-kendra-langchain-extensions) GitHub repository.
 
@@ -84,12 +84,12 @@ The following are the advantages of using Neptune Analytics:
 
 The following diagram shows a sample architecture that uses MemoryDB as the vector database.
 
-![A generative AI application retrieving context from a MemoryDB vector database.](http://docs.aws.amazon.com/prescriptive-guidance/latest/retrieval-augmented-generation-options/images/guide-img/22e94edd-d3e5-4e29-8c94-48e327306335/images/7e1fec2b-d6a6-4e64-8ec2-f36220d6c15b.png)
+![A generative AI application retrieving context from a MemoryDB vector database.](https://docs.aws.amazon.com/prescriptive-guidance/latest/retrieval-augmented-generation-options/images/guide-img/22e94edd-d3e5-4e29-8c94-48e327306335/images/7e1fec2b-d6a6-4e64-8ec2-f36220d6c15b.png)
 
 The following are the advantages of using MemoryDB:
 + It supports both Flat and HNSW indexing algorithms. For more information, see [Vector search for Amazon MemoryDB is now generally available](https://aws.amazon.com/blogs/aws/vector-search-for-amazon-memorydb-is-now-generally-available/) on the AWS News Blog
 + It can also act as a buffer memory for the foundation model. This means that previously answered questions are retrieved from the buffer instead of going through the retrieval and generation process again. The following diagram shows this process.
-![Storing an answer in a MemoryDB database so that it can retrieved from buffer memory.](http://docs.aws.amazon.com/prescriptive-guidance/latest/retrieval-augmented-generation-options/images/guide-img/22e94edd-d3e5-4e29-8c94-48e327306335/images/3d5e7357-d23e-4fa5-ab51-f8d496bcafb5.png)
+![Storing an answer in a MemoryDB database so that it can retrieved from buffer memory.](https://docs.aws.amazon.com/prescriptive-guidance/latest/retrieval-augmented-generation-options/images/guide-img/22e94edd-d3e5-4e29-8c94-48e327306335/images/3d5e7357-d23e-4fa5-ab51-f8d496bcafb5.png)
 + Because it uses an in-memory database, this architecture provides single-digit millisecond query time for the semantic search.
 + It provides up to 33,000 queries per second at 95‐99% recall and 26,500 queries per second at greater than 99% recall. For more information, see the [AWS re:Invent 2023 - Ultra-low latency vector search for Amazon MemoryDB](https://www.youtube.com/watch?v=AaMh3rdu-p0) video on YouTube.
 
@@ -100,7 +100,7 @@ The following are the advantages of using MemoryDB:
 
 The following diagram shows a sample architecture that uses Amazon DocumentDB as the vector database.
 
-![A generative AI application retrieving context from a DocumentDB vector database.](http://docs.aws.amazon.com/prescriptive-guidance/latest/retrieval-augmented-generation-options/images/guide-img/22e94edd-d3e5-4e29-8c94-48e327306335/images/03373973-042b-482c-8605-c89b7622243d.png)
+![A generative AI application retrieving context from a DocumentDB vector database.](https://docs.aws.amazon.com/prescriptive-guidance/latest/retrieval-augmented-generation-options/images/guide-img/22e94edd-d3e5-4e29-8c94-48e327306335/images/03373973-042b-482c-8605-c89b7622243d.png)
 
 The diagram shows the following workflow:
 
@@ -128,7 +128,7 @@ The following are the advantages of using Amazon DocumentDB:
 
 The following diagram shows a sample architecture that uses Pinecone as the vector database.
 
-![A generative AI application retrieving context from a Pinecone vector database.](http://docs.aws.amazon.com/prescriptive-guidance/latest/retrieval-augmented-generation-options/images/guide-img/22e94edd-d3e5-4e29-8c94-48e327306335/images/d5306b01-e78e-4c00-837c-0521b96c80f2.png)
+![A generative AI application retrieving context from a Pinecone vector database.](https://docs.aws.amazon.com/prescriptive-guidance/latest/retrieval-augmented-generation-options/images/guide-img/22e94edd-d3e5-4e29-8c94-48e327306335/images/d5306b01-e78e-4c00-837c-0521b96c80f2.png)
 
 The diagram shows the following workflow:
 
@@ -153,7 +153,7 @@ The following are the advantages of using Pinecone:
 
 For more information about how to use MongoDB Atlas vector search for RAG, see [Retrieval-Augmented Generation with LangChain, Amazon SageMaker AI JumpStart, and MongoDB Atlas Semantic Search](https://aws.amazon.com/blogs/machine-learning/retrieval-augmented-generation-with-langchain-amazon-sagemaker-jumpstart-and-mongodb-atlas-semantic-search/) (AWS blog post). The following diagram shows the solution architecture detailed in this blog post.
 
-![Using MongoDB Atlas vector search to retrieve context for a RAG-based generative AI application.](http://docs.aws.amazon.com/prescriptive-guidance/latest/retrieval-augmented-generation-options/images/guide-img/22e94edd-d3e5-4e29-8c94-48e327306335/images/7736f899-1356-4314-a3f8-9c56a677c324.png)
+![Using MongoDB Atlas vector search to retrieve context for a RAG-based generative AI application.](https://docs.aws.amazon.com/prescriptive-guidance/latest/retrieval-augmented-generation-options/images/guide-img/22e94edd-d3e5-4e29-8c94-48e327306335/images/7736f899-1356-4314-a3f8-9c56a677c324.png)
 
 The following are the advantages of using MongoDB Atlas vector search:
 + You can use your existing implementation of MongoDB Atlas to store and search vector embeddings.

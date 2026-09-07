@@ -48,7 +48,7 @@ FSx for Lustre limits the Lustre file system to a single Availability Zone, whic
 
 The following diagram shows the architecture for FSx for Lustre and complementary AWS services in the AWS Cloud.
 
-![FSx for Lustre deployment with AWS KMS, Amazon EC2, Amazon CloudWatch Logs, and Amazon S3.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/51d38589-e752-42cd-9f46-59c3c8d0bfd3/images/c1c21952-fd6f-4b1d-9bf8-09b2f4f4459f.png)
+![FSx for Lustre deployment with AWS KMS, Amazon EC2, Amazon CloudWatch Logs, and Amazon S3.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/51d38589-e752-42cd-9f46-59c3c8d0bfd3/images/c1c21952-fd6f-4b1d-9bf8-09b2f4f4459f.png)
 
 The architecture includes the following:
 + An S3 bucket is used as a durable, scalable, and cost-effective storage location for data. The integration between FSx for Lustre and Amazon S3 provides a high-performance file system that is seamlessly linked with Amazon S3.

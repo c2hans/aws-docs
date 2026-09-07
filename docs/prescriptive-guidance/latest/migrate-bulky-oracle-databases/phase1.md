@@ -71,7 +71,7 @@ AWS Snowball Edge is no longer available to new customers. New customers should 
 
 The following diagram shows the transfer of a full backup using Snowball Edge.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-bulky-oracle-databases/images/guide-img/c09fd9a4-3278-4711-9038-c55dfc694acd/images/fdf84cd7-cfc1-47f2-b71a-741ec515672d.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-bulky-oracle-databases/images/guide-img/c09fd9a4-3278-4711-9038-c55dfc694acd/images/fdf84cd7-cfc1-47f2-b71a-741ec515672d.png)
 
 The Snowball Edge is a rugged physical storage and computing device that you can use to move large-scale data to AWS. Snowball Edge helps overcome challenges that you might encounter with large-scale data transfers, including long transfer times, a lack of usable bandwidth, and security concerns.
 
@@ -84,7 +84,7 @@ Amazon FSx for Lustre is deeply integrated with Amazon S3. You can create an FSx
    Use Snowball Edge to transfer and store the source stage area (for example, src\_backups) into an S3 bucket (for example, s3-src-backups).
 
    Create the FSx for Lustre file system (for example, dest\_backups) as the destination stage area for the data file backup copies.
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-bulky-oracle-databases/images/guide-img/c09fd9a4-3278-4711-9038-c55dfc694acd/images/68b11d6e-4107-4cda-9c55-1bf19eff272f.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-bulky-oracle-databases/images/guide-img/c09fd9a4-3278-4711-9038-c55dfc694acd/images/68b11d6e-4107-4cda-9c55-1bf19eff272f.png)
 
    Install the open-source Lustre client on the destination system (Amazon EC2). For more information, see the [Amazon FSx for Lustre User Guide](https://docs.aws.amazon.com/fsx/latest/LustreGuide/install-lustre-client.html).
 
@@ -99,7 +99,7 @@ Amazon FSx for Lustre is deeply integrated with Amazon S3. You can create an FSx
 
 The following diagram shows the transfer of a full backup by using AWS Direct Connect.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-bulky-oracle-databases/images/guide-img/c09fd9a4-3278-4711-9038-c55dfc694acd/images/330daa32-22c7-4070-98cb-82a080ef36b0.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-bulky-oracle-databases/images/guide-img/c09fd9a4-3278-4711-9038-c55dfc694acd/images/330daa32-22c7-4070-98cb-82a080ef36b0.png)
 
 Direct Connect gives you the ability to create private network connections between your data center, office, or colocation environment and AWS. These private network connections reduce network costs, increase throughput, and deliver a consistent experience.
 

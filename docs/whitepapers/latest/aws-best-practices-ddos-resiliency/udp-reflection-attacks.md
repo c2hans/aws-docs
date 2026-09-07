@@ -11,6 +11,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 
  For example, the amplification factor for DNS can be 28 to 54 times the original number of bytes. So, if an attacker sends a request payload of 64 bytes to a DNS server, they can generate over 3400 bytes of unwanted traffic to an attack target. UDP reflection attacks are accountable for larger volume of traffic in comparison to other attacks. The following figure illustrates the reflection tactic and amplification effect.
 
-![A diagram depicting a UDP reflection attack](http://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/images/udp-reflection-attack.png)
+![A diagram depicting a UDP reflection attack](https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/images/udp-reflection-attack.png)
 
  It should be noted that reflection attacks, while they provide attackers with amplification, require IP spoofing capability and as increasing numbers of network providers adopt Source Address Validation Everywhere (SAVE) or [BCP38](https://www.rfc-editor.org/info/bcp38/), this capability is removed, requiring DDoS attackers to cease reflection attacks or to relocate to data centers and network providers who don't implement source address validation.

@@ -135,7 +135,7 @@ Before you run the demo, you can set up the MQTT client in the AWS IoT console t
    1. From the **Quick Panel**, select **aws\_demos Program (KitProg3)**. This programs the board and the demo application starts running after the programming is finished.
 
    1. You can view the status of the running application in the serial terminal. The following figure shows a part of the terminal output.
-![Screenshot of the terminal output after you build the aws_demo project.](http://docs.aws.amazon.com/freertos/latest/userguide/images/gsg-psoc64-terminal-output.png)
+![Screenshot of the terminal output after you build the aws_demo project.](https://docs.aws.amazon.com/freertos/latest/userguide/images/gsg-psoc64-terminal-output.png)
 
       The MQTT demo publishes messages on four different topics (`iotdemo/topic/{{n}}`, where n=1 to 4) and subscribes to all those topics to receive the same messages back. When a message is received, the demo publishes an acknowledgement message on the topic `iotdemo/acknowledgements`. The following list describes the debug messages that appear in the terminal output, with references to the serial numbers of the messages. In the output, the WICED Host Driver (WHD) driver details are printed first without serial numbering.
 

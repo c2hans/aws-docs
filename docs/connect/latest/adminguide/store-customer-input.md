@@ -50,11 +50,11 @@ The following image shows the **Properties** page of the **Store customer input*
 
  For information about choosing a prompt from the Connect Customer library or an S3 bucket, see the [Play prompt](play.md) block.
 
-![The properties page of the Store customer input block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/store-customer-input-properties1.png)
+![The properties page of the Store customer input block.](https://docs.aws.amazon.com/connect/latest/adminguide/images/store-customer-input-properties1.png)
 
 The following image shows the **Customer input** section of the page. It is configured to allow up to 20 digits.
 
-![The Customer input section of the properties page.](http://docs.aws.amazon.com/connect/latest/adminguide/images/store-customer-input-properties1b.png)
+![The Customer input section of the properties page.](https://docs.aws.amazon.com/connect/latest/adminguide/images/store-customer-input-properties1b.png)
 
 Note the following properties:
 + **Maximum Digits**: Define the maximum number of digits that a customer can enter.
@@ -64,7 +64,7 @@ Note the following properties:
 
 The following image shows the **Input settings** section of the page. It is set to timeout after 15 seconds of no input and 3 seconds for any subsequent inputs.
 
-![The Input settings section of the properties page.](http://docs.aws.amazon.com/connect/latest/adminguide/images/store-customer-input-properties2b.png)
+![The Input settings section of the properties page.](https://docs.aws.amazon.com/connect/latest/adminguide/images/store-customer-input-properties2b.png)
 
 Note the following properties:
 + **Timeout before first entry**: Specify how long to wait for a customer to start entering their reply by voice or DTMF. For example, you might enter 20 seconds, to give the customer time to get their credit card.
@@ -115,7 +115,7 @@ For more information, see [Set Touchtone Buffer Behavior](set-touchtone-buffer-b
 
 The following image shows an example of what this block looks like when it is configured. It has the following branches: **Success**, **Error**, and **Invalid number**.
 
-![A configured Store customer input block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/store-customer-input-configured.png)
+![A configured Store customer input block.](https://docs.aws.amazon.com/connect/latest/adminguide/images/store-customer-input-configured.png)
 
 1. **Invalid number**: What to do if the customer enters an invalid number.
 

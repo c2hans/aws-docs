@@ -43,7 +43,7 @@ Hourly MIPS data is crucial for gaining a comprehensive understanding of your ma
 
 By analyzing hourly MIPS data, you can identify peak usage periods, spot trends, and pinpoint potential bottlenecks that might be obscured in aggregated data, as shown in the following diagram. This granularity allows for more precise capacity planning, helps optimize resource allocation, and can potentially lead to cost savings and improved system efficiency.
 
-![Analyzing hourly MIPS data before replatforming mainframe applications.](http://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-mainframe-apps-shared-db2/images/guide-img/b5c7b078-cfe6-46c4-b120-94b5824d3c88/images/ec7b7827-ce03-4076-a352-3a8d7aa8d76d.png)
+![Analyzing hourly MIPS data before replatforming mainframe applications.](https://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-mainframe-apps-shared-db2/images/guide-img/b5c7b078-cfe6-46c4-b120-94b5824d3c88/images/ec7b7827-ce03-4076-a352-3a8d7aa8d76d.png)
 
 Hourly MIPS data also serves as an essential performance benchmark tool. It establishes a detailed baseline of your system's performance, which is particularly valuable when you're planning or evaluating system changes such as migrations or upgrades. By comparing pre-change and post-change hourly MIPS data, you can accurately measure the impact of these modifications on your system's performance and ensure that your mainframe continues to meet your organization's needs.
 

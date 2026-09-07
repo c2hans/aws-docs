@@ -67,7 +67,7 @@ DLT consists of two main components:
 
 **Back End:** An orchestration engine that uses AWS Step Functions to coordinate test execution. When you start a test, the engine launches Amazon ECS tasks on AWS Fargate, each running your test script inside a container with the Taurus load testing framework. Results flow back through Amazon DynamoDB and Amazon S3.
 
-![Distributed Load Testing on AWS — Architecture](http://docs.aws.amazon.com/solutions/latest/performance-testing/images/perf_dlt_architecture.png)
+![Distributed Load Testing on AWS — Architecture](https://docs.aws.amazon.com/solutions/latest/performance-testing/images/perf_dlt_architecture.png)
 
 ## Deployment Options
 <a name="deployment-options"></a>

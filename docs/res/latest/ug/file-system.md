@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/res/latest/ug/file-system.html
 # File Systems
 <a name="file-system"></a>
 
-![File systems](http://docs.aws.amazon.com/res/latest/ug/images/home-file-systems.png)
+![File systems](https://docs.aws.amazon.com/res/latest/ug/images/home-file-systems.png)
 
 From the File Systems page, you can:
 

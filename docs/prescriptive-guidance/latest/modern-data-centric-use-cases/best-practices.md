@@ -22,7 +22,7 @@ The following table describes a common best practice to store files for a big da
 
 The following diagram shows an example of a partitioning strategy (corresponding to one S3 folder/prefix) that you can use across all the data layers. We recommend that you choose a partitioning strategy based on how your data is used downstream. For example, if reports are built on your data (where most common queries on the report filter the results based on region and dates), then make sure to include the regions and dates as partitions to improve query performance and runtime.
 
-![Partitioning strategy diagram](http://docs.aws.amazon.com/prescriptive-guidance/latest/modern-data-centric-use-cases/images/guide-img/058e3d2f-f726-4dc0-989b-0f15dcd3bc33/images/82960913-539c-41d5-b8ed-39e8985c289f.png)
+![Partitioning strategy diagram](https://docs.aws.amazon.com/prescriptive-guidance/latest/modern-data-centric-use-cases/images/guide-img/058e3d2f-f726-4dc0-989b-0f15dcd3bc33/images/82960913-539c-41d5-b8ed-39e8985c289f.png)
 
 ## Technical best practices
 <a name="technical-best-practices"></a>

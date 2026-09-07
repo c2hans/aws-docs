@@ -6,7 +6,7 @@ Version 4 (V4) of the AWS SDK for .NET has been released\!
 
 For information about breaking changes and migrating your applications, see the [migration topic](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html).
 
- [![Orange button with text "Click here for details".](http://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
+ [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
 # Install AWSSDK packages with NuGet
 <a name="net-dg-install-assemblies"></a>
@@ -47,7 +47,7 @@ If you want only the latest version of a NuGet package, you can exclude version 
 1. In the left pane of the **NuGet Package Manager**, choose **Browse**. You can then use the search box to search for the package you want to install. NuGet also installs any dependencies, such as [AWSSDK.Core](https://www.nuget.org/packages/AWSSDK.Core).
 
    The following figure shows installation of the **AWSSDK.S3** package.
-![AWSSDK.S3 package shown in NuGet Packages Manager.](http://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/nuget-install-vs-dlg.png)
+![AWSSDK.S3 package shown in NuGet Packages Manager.](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/nuget-install-vs-dlg.png)
 
 ## Using NuGet from the Package Manager Console
 <a name="package-install-cmd"></a>

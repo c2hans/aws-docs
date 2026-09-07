@@ -20,7 +20,7 @@ You can use the AWS Toolkit for Visual Studio Code (VS Code) to perform various 
 1. Expand the name of the registry that contains the schema you want to view. For example, many of the schemas that AWS supplies are in the **aws.events** registry.
 
 1. To view a schema in the editor, open the context menu of the schema, and then choose **View Schema**.
-![View an EventBridge schema.](http://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/eventbridge-view.png)
+![View an EventBridge schema.](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/eventbridge-view.png)
 
 ## Find an Available Schema
 <a name="eventbridge-schemas-find"></a>
@@ -30,7 +30,7 @@ In the **AWS Explorer**, do one or more of the following:
 + Open the context menu for **Schemas**, and then choose **Search Schemas**. Or expand **Schemas**, open the context menu for the registry that contains the schema you want to find, and then choose **Search Schemas in Registry**. In the **EventBridge Schemas Search** dialog box, begin typing the title of the schema you want to find. The dialog box displays the schema titles that contain a match.
 
   To display the schema in the dialog box, select the title of the schema.
-![Search for an EventBridge schema.](http://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/eventbridge-search.png)
+![Search for an EventBridge schema.](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/eventbridge-search.png)
 
 ## Generate Code for an Available Schema
 <a name="eventbridge-schemas-generate-code"></a>

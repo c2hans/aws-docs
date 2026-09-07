@@ -9,7 +9,7 @@ End of support notice: On March 31, 2027, AWS will end support for Amazon WorkSp
 
 Your WorkSpaces Thin Client device scans the area for any Wi-Fi networks in the area. You can sign on to any available networks once the device lists them.
 
-![Network settings interface showing known networks, available networks, and option to add new network.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/network2.png)
+![Network settings interface showing known networks, available networks, and option to add new network.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/network2.png)
 
 1. Go to **Settings**, **Network**, **Show Available Networks**.
 

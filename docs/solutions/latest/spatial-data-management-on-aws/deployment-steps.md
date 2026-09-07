@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 
 Choose the following link to launch the CloudFormation stack directly in the AWS Management Console:
 
- [![Launch CloudFormation Console](http://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=SpatialDataManagement&templateURL=https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/SpatialDataManagementStack.template)
+ [![Launch CloudFormation Console](https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=SpatialDataManagement&templateURL=https://solutions-reference.s3.amazonaws.com/spatial-data-management/latest/SpatialDataManagementStack.template)
 
 This opens the CloudFormation console with the template pre-loaded. You can select your preferred AWS Region from the console before proceeding.
 
@@ -32,7 +32,7 @@ You can also download the template and upload it manually:
 
 1. Choose **Next**
 
-![Create stack page showing template selection options](http://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/create-stack-select-template.png)
+![Create stack page showing template selection options](https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/create-stack-select-template.png)
 
 ## Step 2: Configure Stack Details
 <a name="step-2-configure-stack-details"></a>
@@ -42,7 +42,7 @@ Enter the stack name (for example, `SpatialDataManagement`) and configure basic 
 **Note**
 If you choose a different stack name, replace `SpatialDataManagement` with your chosen name in all CLI commands throughout this guide.
 
-![Stack details page showing default parameters for development deployment](http://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/poc-deploy-default-parameters.png)
+![Stack details page showing default parameters for development deployment](https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/poc-deploy-default-parameters.png)
 
 ## Step 3: Specify Stack Parameters
 <a name="step-3-specify-stack-parameters"></a>
@@ -71,7 +71,7 @@ Optional Parameters
 |  `ExistingOpenSearchVpcEndpointId`  | ID of the Amazon OpenSearch Serverless VPC endpoint in the existing VPC. Required when `ExistingVpcId` is set and `UseVpcEndpoints` is `Yes`. | Empty | Valid VPC endpoint ID (`vpce-<hex>`) or empty |
 |  `UseVpcEndpoints`  | For bring-your-own (BYO) VPC deployments: set to `No` to skip VPC endpoint creation and validation. When set to `No`, Lambda functions reach AWS services over the internet via NAT instead of through VPC endpoints. Only applicable when `ExistingVpcId` is provided. See [Reuse existing networking infrastructure](reuse-existing-networking.md) for details. |  `Yes`  |  `Yes`, `No`  |
 
-![Advanced parameters configuration for production deployment](http://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/production-advanced-parameters-deploy.png)
+![Advanced parameters configuration for production deployment](https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/production-advanced-parameters-deploy.png)
 
 ## Step 4: Configure Stack Options
 <a name="step-4-configure-stack-options"></a>
@@ -84,20 +84,20 @@ You can configure the following options:
 +  **Notification options** – Specifies Amazon SNS topics to receive stack-related notifications. For more information, see [Monitoring stack creation and updates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-notifications.html) in the AWS CloudFormation User Guide.
 +  **Tags** – Key-value pairs for resource organization and cost allocation. For more information, see [Tagging resources](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html) in the AWS CloudFormation User Guide.
 
-![CloudFormation stack options page showing basic configuration settings](http://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/cloudformation-basic-stack-options.png)
+![CloudFormation stack options page showing basic configuration settings](https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/cloudformation-basic-stack-options.png)
 
-![CloudFormation stack options page showing permissions and advanced settings](http://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/cloud-formation-stack-options-set-2.png)
+![CloudFormation stack options page showing permissions and advanced settings](https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/cloud-formation-stack-options-set-2.png)
 
-![CloudFormation stack options page showing tags and additional configuration](http://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/cloud-formation-stack-options-set-3.png)
+![CloudFormation stack options page showing tags and additional configuration](https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/cloud-formation-stack-options-set-3.png)
 
 ## Step 5: Review and Create
 <a name="step-5-review-and-create"></a>
 
 Review your configuration and choose **Create stack** to begin deployment. The stack creation typically takes approximately 45 minutes to complete.
 
-![Review page showing stack parameters and configuration summary](http://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/review-stack-parameters-and-create-set-1.png)
+![Review page showing stack parameters and configuration summary](https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/review-stack-parameters-and-create-set-1.png)
 
-![Review page showing capabilities acknowledgment and create button](http://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/review-stack-parameters-and-create-set-2.png)
+![Review page showing capabilities acknowledgment and create button](https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/review-stack-parameters-and-create-set-2.png)
 
 ## Step 6: Monitor Deployment Progress
 <a name="step-6-monitor-deployment-progress"></a>

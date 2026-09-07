@@ -18,7 +18,7 @@ Companies frequently underestimate data governance. Most efforts in this area ar
 
 Moving a company from an entry stage of data usage maturity to a data-driven stage is difficult, because it requires capabilities, processes, and roles that can take time to implement. The following diagram presents different stages in data usage maturity.
 
-![Stages in data usage maturity](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-aws-data/images/guide-img/7eadad47-3e6a-4775-bcac-a88d1e364e51/images/f4b582da-452a-4cde-abab-7156679d53a4.png)
+![Stages in data usage maturity](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-aws-data/images/guide-img/7eadad47-3e6a-4775-bcac-a88d1e364e51/images/f4b582da-452a-4cde-abab-7156679d53a4.png)
 
 **Stage 1 (transactional).** In stage 1, companies are focused on their core operations. They don't take advantage of the data around those operations, because they don't measure or use financial and operational performance indicators for their business. Today, we see very few companies at this stage. Most of these are startup companies in the early stages of their business.
 

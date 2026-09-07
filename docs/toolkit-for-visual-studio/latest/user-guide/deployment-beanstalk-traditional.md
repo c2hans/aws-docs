@@ -21,23 +21,23 @@ Before you can use the **Publish to Elastic Beanstalk** wizard, you must downloa
 1. In the navigation pane of the **New Project** dialog box, expand **Installed**, expand **Templates**, expand **Visual C\#**, and then choose **Web**.
 
 1. In the list of web project templates, choose any template containing the words `Web` and `Application` in its description. For this example, choose **ASP.NET Web Forms Application**.
-![New Project dialog with ASP.NET Web Forms Application template selected from the list.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-new-web-project-console.png)
+![New Project dialog with ASP.NET Web Forms Application template selected from the list.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-new-web-project-console.png)
 
 1. In the **Name** box, type `AEBWebAppDemo`.
 
 1. In the **Location** box, type the path to a solution folder on your development machine or choose **Browse**, and then browse to and choose a solution folder, and choose **Select Folder**.
 
 1. Confirm the **Create directory for solution** box is selected. In the **Solution** drop-down list, confirm **Create new solution** is selected, and then choose **OK**. Visual Studio will create a solution and project based on the ASP.NET Web Forms Application project template. Visual Studio will then display Solution Explorer where the new solution and project appear.
-![Solution Explorer showing ABEWebAppDemo solution with project files and folders structure.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-web-app-solution-explorer-console.png)
+![Solution Explorer showing ABEWebAppDemo solution with project files and folders structure.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-web-app-solution-explorer-console.png)
 
 ## To deploy an application by using the Publish to Elastic Beanstalk wizard
 <a name="to-deploy-an-application-by-using-the-publish-to-elastic-beanstalk-wizard"></a>
 
 1. In Solution Explorer, open the context (right-click) menu for the **AEBWebAppDemo** project folder for the project you created in the previous section, or open the context menu for the project folder for your own application, and choose **Publish to AWS Elastic Beanstalk**.
-![Solution Explorer context menu with Publish to AWS Elastic Beanstalk option highlighted.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-publish-to-aws-console.png)
+![Solution Explorer context menu with Publish to AWS Elastic Beanstalk option highlighted.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-publish-to-aws-console.png)
 
    The **Publish to Elastic Beanstalk** wizard appears.
-![Publish to AWS Elastic Beanstalk wizard with Application section selected in left navigation.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-aeb-wizard-app-console.png)
+![Publish to AWS Elastic Beanstalk wizard with Application section selected in left navigation.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-aeb-wizard-app-console.png)
 
 1. In **Profile**, from the **Account profile to use for deployment** drop-down list, choose the AWS account profile you want to use for the deployment.
 
@@ -50,7 +50,7 @@ Before you can use the **Publish to Elastic Beanstalk** wizard, you must downloa
 If you choose **Redeploy to an existing environment**, choose an environment in the list, and then choose **Next**, the wizard will take you directly to the **Application Options** page. If you go this route, skip ahead to the instructions later in this section that describe how to use the **Application Options** page.
 
 1. Choose **Next**.
-![Application Environment page with application name, environment name, and URL fields.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-aeb-wizard-env-console.png)
+![Application Environment page with application name, environment name, and URL fields.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-aeb-wizard-env-console.png)
 
 1. On the **Application Environment** page, in the **Application** area, the **Name** drop-down list proposes a default name for the application. You can change the default name by choosing a different name from the drop-down list.
 
@@ -62,7 +62,7 @@ If you choose **Redeploy to an existing environment**, choose an environment in 
 
 1. If the URL for your web application is okay to use, choose **Next**.
 
-![AWS Options page showing EC2 configuration with instance type, VPC settings, and permissions.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-aeb-wizard-ec2-console.png)
+![AWS Options page showing EC2 configuration with instance type, VPC settings, and permissions.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-aeb-wizard-ec2-console.png)
 
 1. On the **AWS Options** page, in **Amazon EC2 Launch Configuration**, from the **Container type** drop-down list, choose an Amazon Machine Image (AMI) type that will be used for your application.
 
@@ -90,7 +90,7 @@ If you choose **Redeploy to an existing environment**, choose an environment in 
    + If you did not select **Use a VPC** or **Enable Rolling Deployments**, the **Application Options** page will appear. Skip ahead to the instructions later in this section that describe how to use the **Application Options** page.
 
 1. If you selected **Use a VPC**, specify information on the **VPC Options** page to launch your application into a VPC.
-![VPC Options page with fields for VPC, ELB Scheme, ELB Subnet, Instances Subnet, and Security Group.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-aeb-wizard-vpc-console.png)
+![VPC Options page with fields for VPC, ELB Scheme, ELB Subnet, Instances Subnet, and Security Group.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-aeb-wizard-vpc-console.png)
 
    The VPC must have already been created. If you created the VPC in the Toolkit for Visual Studio, the Toolkit for Visual Studio will populate this page for you. If you created the VPC in the [AWS Management Console](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo-vpc-basic.html), type information about your VPC into this page.
 
@@ -108,7 +108,7 @@ For more information about how to deploy an Elastic Beanstalk application to a V
    + If you did not select **Enable Rolling Deployments**, the **Application Options** page will appear. Skip ahead to the instructions later in this section that describe how to use the **Application Options** page.
 
 1. If you selected **Enable Rolling Deployments**, you specify information on the **Rolling Deployments** page to configure how new versions of your applications are deployed to the instances in a load-balanced environment. For example, if you have four instances in your environment and you want to change the instance type, you can configure the environment to change two instances at a time. This helps ensure your application is still running while changes are being made.
-![Rolling Deployments page with percentage-based application version updates and batch size settings.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-aeb-wizard-rolling-console.png)
+![Rolling Deployments page with percentage-based application version updates and batch size settings.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-aeb-wizard-rolling-console.png)
 
 1. In the *Application Versions* area, choose an option to control deployments to either a percentage or number of instances at a time. Specify either the desired percentage or number.
 
@@ -117,7 +117,7 @@ For more information about how to deploy an Elastic Beanstalk application to a V
 1. Choose *Next*.
 
 1. On the **Application Options** page, you specify information about build, Internet Information Services (IIS), and application settings.
-![Application Options page with build configuration, app pool, app path, and health check URL fields.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-aeb-wizard-options-console.png)
+![Application Options page with build configuration, app pool, app path, and health check URL fields.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-aeb-wizard-options-console.png)
 
 1. In the **Build and IIS Deployment Settings** area, in the **Project build configuration** drop-down list, choose the target build configuration. If the wizard can find it, **Release** appears otherwise, the active configuration is displayed in this box.
 
@@ -134,7 +134,7 @@ For more information about how to deploy an Elastic Beanstalk application to a V
 Although not recommended, you can use the area for **Key** and **Value**, to specify AWS credentials under which your application should run. The preferred approach is to specify an IAM role in the **Identity and Access Management Role** drop-down list on the **AWS Options** page. However, if you must use AWS credentials instead of an IAM role to run your application, in the **Key** row, choose **AWSAccessKey**. In the **Value** row, type the access key. Repeat these steps for **AWSSecretKey**.
 
 1. Choose **Next**.
-![Review page showing deployment configuration for AWS Elastic Beanstalk application.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-aeb-wizard-review-console.png)
+![Review page showing deployment configuration for AWS Elastic Beanstalk application.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-aeb-wizard-review-console.png)
 
 1. On the **Review** page, review the options you configured, and select the **Open environment status window when wizard closes** box.
 

@@ -48,7 +48,7 @@ Consider the configuration where you have instances in two different AWS Regions
 + A Transit Gateway association between one of the Transit Gateways (the one in us-east-1) to the Direct Connect gateway.
 + A transit virtual interface from the on-premises location and the Direct Connect location.
 
-![Private VIF Routing no AS_PATH](http://docs.aws.amazon.com/directconnect/latest/UserGuide/images/dxg-asn.png)
+![Private VIF Routing no AS_PATH](https://docs.aws.amazon.com/directconnect/latest/UserGuide/images/dxg-asn.png)
 
 Configure the following options for the resources:
 + Direct Connect gateway: Set the ASN to 65030. For more information, see [Create a Direct Connect gateway](create-direct-connect-gateway.md).

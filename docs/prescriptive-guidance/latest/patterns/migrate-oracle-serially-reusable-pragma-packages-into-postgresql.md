@@ -37,7 +37,7 @@ For more information, see [SERIALLY\_REUSABLE](https://docs.oracle.com/en/databa
 
 **Migration architecture**
 
-![Migrate Oracle SERIALLY_REUSABLE Pragma packages into Amazon Aurora or Amazon RDS for PostgreSQL](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/fe3c45d2-6ea4-43b5-adb1-18f068f126b9/images/955ed078-0941-4ae6-b56e-964379a29365.jpeg)
+![Migrate Oracle SERIALLY_REUSABLE Pragma packages into Amazon Aurora or Amazon RDS for PostgreSQL](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/fe3c45d2-6ea4-43b5-adb1-18f068f126b9/images/955ed078-0941-4ae6-b56e-964379a29365.jpeg)
 
 ## Tools
 <a name="migrate-oracle-serially-reusable-pragma-packages-into-postgresql-tools"></a>

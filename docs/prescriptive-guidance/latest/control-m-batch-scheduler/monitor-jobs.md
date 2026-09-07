@@ -18,7 +18,7 @@ To follow detailed steps, see the [Viewpoints section of Monitoring](https://doc
 
 The following screenshot shows the outputs of two workflows. On the left side, the workflow is completed successfully with all jobs in green. On the right side, the workflow is only partially successful because job `CURRRENCY` returned the **Failed** status, which is indicated by the red color. The workflow stopped there, leaving the remaining jobs in the **Wait Schedule** state.
 
-![Diagrams of workflows on the left, job properties on the right.](http://docs.aws.amazon.com/prescriptive-guidance/latest/control-m-batch-scheduler/images/guide-img/ca7d4793-feac-4eba-a6cd-6ca4d6395925/images/86cb2cf3-3033-4774-8dbd-3bd233446615.png)
+![Diagrams of workflows on the left, job properties on the right.](https://docs.aws.amazon.com/prescriptive-guidance/latest/control-m-batch-scheduler/images/guide-img/ca7d4793-feac-4eba-a6cd-6ca4d6395925/images/86cb2cf3-3033-4774-8dbd-3bd233446615.png)
 
 *Image provided courtesy of BMC Software, Inc. ©2022*
 
@@ -27,6 +27,6 @@ The following screenshot shows the outputs of two workflows. On the left side, t
 
 To view job and log information on AWS, sign in to the AWS Management Console, and then navigate to the [AWS Mainframe Modernization console](https://console.aws.amazon.com/m2/home?region=us-east-1#/applications).
 
-![Jobs and statuses listed on the AWS Mainframe Modernization console.](http://docs.aws.amazon.com/prescriptive-guidance/latest/control-m-batch-scheduler/images/guide-img/ca7d4793-feac-4eba-a6cd-6ca4d6395925/images/cc3bd6fa-88a2-4ff0-9007-a8b6dc4901ca.png)
+![Jobs and statuses listed on the AWS Mainframe Modernization console.](https://docs.aws.amazon.com/prescriptive-guidance/latest/control-m-batch-scheduler/images/guide-img/ca7d4793-feac-4eba-a6cd-6ca4d6395925/images/cc3bd6fa-88a2-4ff0-9007-a8b6dc4901ca.png)
 
 This view doesn't include dependencies nor any workload that isn't managed by the AWS Mainframe Modernization service.

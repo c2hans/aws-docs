@@ -20,14 +20,14 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/active-directory-doma
 
  The simplest case is when you need to deploy a new solution in the cloud from scratch. You can deploy AWS Managed Microsoft AD in minutes and use it for most of the services and applications that require Active Directory. This solution is ideal for scenarios with no additional requirements for logical isolation between application tiers or administrators.
 
-![Diagram showing Managed Active Directory architecture deployed by Quick Start](http://docs.aws.amazon.com/whitepapers/latest/active-directory-domain-services/images/managed-ad-deployed-by-quick-start.png)
+![Diagram showing Managed Active Directory architecture deployed by Quick Start](https://docs.aws.amazon.com/whitepapers/latest/active-directory-domain-services/images/managed-ad-deployed-by-quick-start.png)
 
 ## Multiple accounts and VPCs in one AWS Region
 <a name="multiple-accounts-and-vpcs-in-one-aws-region"></a>
 
  Large organizations use multiple AWS accounts for administrative delegation and billing purposes. You can share a single AWS Managed Microsoft AD with multiple AWS accounts within one AWS Region. This capability makes it easier and more cost-effective for you to manage directory-aware workloads from a single directory across accounts and VPCs. This option also allows you seamlessly join your Amazon EC2 Windows instances to AWS Managed Microsoft AD.
 
-![Diagram showing sharing single AWS Managed Microsoft AD with another account](http://docs.aws.amazon.com/whitepapers/latest/active-directory-domain-services/images/sharing-single-managed-ad-with-another-account.png)
+![Diagram showing sharing single AWS Managed Microsoft AD with another account](https://docs.aws.amazon.com/whitepapers/latest/active-directory-domain-services/images/sharing-single-managed-ad-with-another-account.png)
 
  AWS recommends that you create a separate account for identity services like Active Directory and only allow a very limited group of administrators to have access to this account. Generally, you should treat Active Directory in the cloud in the same manner as on-premises Active Directory. Just as you would limit access to a physical data center, make sure to limit administrative access to the AWS account control.
 
@@ -67,7 +67,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/active-directory-doma
 
  To enable MFA, you must have an MFA solution that is a remote authentication dial-in user service (RADIUS) server, or you must have an MFA plugin to a RADIUS server already implemented in your on-premises infrastructure. Your MFA solution should implement one-time passcodes (OTP) that users obtain from a hardware device or from software running on a device (such as a mobile phone).
 
-![Diagram showing using AWS Managed Microsoft Active Directory with MFA for access to Amazon WorkSpaces](http://docs.aws.amazon.com/whitepapers/latest/active-directory-domain-services/images/managed-microsoft-ad-with-mfa.png)
+![Diagram showing using AWS Managed Microsoft Active Directory with MFA for access to Amazon WorkSpaces](https://docs.aws.amazon.com/whitepapers/latest/active-directory-domain-services/images/managed-microsoft-ad-with-mfa.png)
 
  A more detailed description of [this solution](https://aws.amazon.com/blogs/security/how-to-enable-multi-factor-authentication-for-amazon-workspaces-and-amazon-quicksight-by-using-microsoft-ad-and-on-premises-credentials/) is available on the AWS Security Blog.
 

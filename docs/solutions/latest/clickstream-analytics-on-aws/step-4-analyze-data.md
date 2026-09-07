@@ -17,7 +17,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 1. In the Analytics Studio page, select the project and app you just created in the drop-down list at the top of the web page.
 
 1. By default, you will be navigated to the **Dashboards** page. If not, choose **Dashboards** from the left navigation pane.
-![Clickstream Analytics Studio dashboard page showing a default user lifecycle analysis.](http://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/explore-dashboard.png)
+![Clickstream Analytics Studio dashboard page showing a default user lifecycle analysis.](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/explore-dashboard.png)
 
 1. Choose **User lifecycle dashboard - default**. You can see the dashboard created by the guidance.
 

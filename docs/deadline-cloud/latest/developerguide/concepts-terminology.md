@@ -12,7 +12,7 @@ To help you get started with AWS Deadline Cloud, this topic explains some of its
 
 This diagram shows how Deadline Cloud farm resources work together.
 
-![Diagram showing how Deadline Cloud farm resources work together.](http://docs.aws.amazon.com/deadline-cloud/latest/developerguide/images/concepts-farm-resources.png)
+![Diagram showing how Deadline Cloud farm resources work together.](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/images/concepts-farm-resources.png)
 
 **Farm**
 A farm contains all other resources related to submitting and running jobs. Farms are independent from each other making them useful for separating production environments.
@@ -43,7 +43,7 @@ The monitor configures the URL for the Deadline Cloud monitor web application, a
 
 This diagram shows how Deadline Cloud job resources work together.
 
-![Diagram showing how Deadline Cloud job resources work together.](http://docs.aws.amazon.com/deadline-cloud/latest/developerguide/images/concepts-job-resources.png)
+![Diagram showing how Deadline Cloud job resources work together.](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/images/concepts-job-resources.png)
 
 **Job**
 A job is a set of work that a user submits to Deadline Cloud to be scheduled and run on available workers. A job may render a 3D scene or run a simulation. Jobs are created from reusable job templates, which define the runtime environment and processes, and job-specific parameters. Jobs contain steps and tasks that define the work to be performed, and they can be configured with priorities, maximum worker counts, and retry settings.

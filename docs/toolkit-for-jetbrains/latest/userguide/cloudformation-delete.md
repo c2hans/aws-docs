@@ -10,6 +10,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/c
 1. Expand **CloudFormation**.
 
 1. Right-click the name of the stack to delete, and then choose **Delete CloudFormation Stack**.
-![Choosing to delete a AWS CloudFormation stack starting from AWS Explorer](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/sam-delete.png)
+![Choosing to delete a AWS CloudFormation stack starting from AWS Explorer](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/sam-delete.png)
 
 1. Enter the stack's name to confirm it's deleted, and then choose **OK**. If the stack deletion succeeds, the AWS Toolkit for JetBrains removes the stack name from the **CloudFormation** list in **AWS Explorer**. If the stack deletion fails, you can troubleshoot by viewing the event logs for the stack.

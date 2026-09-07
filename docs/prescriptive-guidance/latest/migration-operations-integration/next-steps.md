@@ -9,7 +9,7 @@ If you are in the process of modernizing your operations, use this guide and the
 
 Modernizing operations is an iterative process. It evolves over time as you integrate other operations tooling with your cloud initiatives. As the following diagram illustrates, the process includes alignment, launch (cycle 1), scaling, and optimization.
 
-![Iterative approach to modernizing operations.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-operations-integration/images/guide-img/6545b5e3-3780-4eb8-a195-e92454bb488e/images/93cd2a28-e722-4de4-9591-4debb7d2ec74.png)
+![Iterative approach to modernizing operations.](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-operations-integration/images/guide-img/6545b5e3-3780-4eb8-a195-e92454bb488e/images/93cd2a28-e722-4de4-9591-4debb7d2ec74.png)
 
 + **Align. **In this phase, you conduct discovery activities to agree on the desired business outcome, educate the team, address blockers, and align technical and business stakeholders on the initiative. This is part of operational readiness and discovery described earlier in this guide.
 + **Launch (cycle 1). **In this phase, you launch something small but fully functional into a production-like environment. The goal is to deliver MVP capabilities. For example, you can migrate an existing workload or create new functionality.

@@ -16,4 +16,4 @@ Complete the following steps to inspect the DynamoDB table.
 1. Select the `addf-aws-solutions-core-metadata-storage-Rosbag-Scene-Metadata` table to see the output.
 
     **Example DynamoDB table displaying extracted rosbag data.**
-![addf aws solutions core metadata storage rosbag scene metadata](http://docs.aws.amazon.com/solutions/latest/scene-intelligence-with-rosbag-on-aws/images/addf-aws-solutions-core-metadata-storage-rosbag-scene-metadata.png)
+![addf aws solutions core metadata storage rosbag scene metadata](https://docs.aws.amazon.com/solutions/latest/scene-intelligence-with-rosbag-on-aws/images/addf-aws-solutions-core-metadata-storage-rosbag-scene-metadata.png)

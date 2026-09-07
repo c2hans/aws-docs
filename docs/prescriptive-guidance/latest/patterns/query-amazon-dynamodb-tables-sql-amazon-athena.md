@@ -39,7 +39,7 @@ If this is your first time accessing Athena, you will need an additional S3 buck
 
 The following diagram shows the connection flow after the pattern is established. The user connects to Amazon Athena to provide the query. Athena passes the query and target to the DynamoDB data source connector Lambda function, which retrieves and returns the data to Athena. If large amounts of data are returned, Athena stores the temporary results in the spill bucket before packaging and returning the complete dataset.
 
-![Workflow from users to Athena to Lambda, which connects to the S3 bucket and to the DynamoDB table.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9d1ee529-36f3-4c7e-a2e7-05b76e09a3d8/images/e50a00cf-a55a-4def-81d5-4d2755dc9a97.png)
+![Workflow from users to Athena to Lambda, which connects to the S3 bucket and to the DynamoDB table.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9d1ee529-36f3-4c7e-a2e7-05b76e09a3d8/images/e50a00cf-a55a-4def-81d5-4d2755dc9a97.png)
 
 ## Tools
 <a name="query-amazon-dynamodb-tables-sql-amazon-athena-tools"></a>

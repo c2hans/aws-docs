@@ -11,14 +11,14 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-so
 
  The following figure provides an overview of various deployment patterns for private LoRaWAN networks:
 
-![First diagram showing patterns for deployment of private LoRaWAN networks](http://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/lorawan-network-patterns-1.png)![First diagram showing patterns for deployment of private LoRaWAN networks](http://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/lorawan-network-patterns-2.png)
+![First diagram showing patterns for deployment of private LoRaWAN networks](https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/lorawan-network-patterns-1.png)![First diagram showing patterns for deployment of private LoRaWAN networks](https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/lorawan-network-patterns-2.png)
 
  The following sections will describe each of the individual options.
 
 ## Managed LoRaWAN server with AWS IoT Core for LoRaWAN
 <a name="managed-lorawan-server-with-aws-iot-core-for-lorawan"></a>
 
-![Diagram showing AWS IoT Core for LoRaWAN architecture](http://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/iotcore-lorawan-arch.png)
+![Diagram showing AWS IoT Core for LoRaWAN architecture](https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/iotcore-lorawan-arch.png)
 
  The first pattern is to use AWS IoT Core for LoRaWAN. AWS IoT Core for LoRaWAN is a fully managed feature that enables customers to connect wireless devices that use low-power, long-range wide-area network (LoRaWAN) protocol with AWS Cloud. Using AWS IoT Core, customers can now set up a private LoRaWAN network by connecting their own LoRaWAN devices and gateways to AWS Cloud, without developing or operating a LoRaWAN network server, join server, or application server.
 
@@ -72,7 +72,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-so
 ### Customer-operated LoRaWAN network server in AWS Cloud
 <a name="customer-operated-lorawan-network-server-in-aws-cloud"></a>
 
-![Diagram showing LoRaWAN server provided by AWS Partner, operated by customer](http://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/cust-lorawan-server.png)
+![Diagram showing LoRaWAN server provided by AWS Partner, operated by customer](https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/cust-lorawan-server.png)
 
  In this pattern, customers deploy and operate LoRaWAN server components in their own AWS account. Examples of LoRaWAN server components are LoRaWAN network server, join server, and application server. When using AWS Partner solutions, the deployment of necessary software components is simplified by using AWS CloudFormation templates provided by AWS Partners.
 
@@ -83,7 +83,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-so
 ## LoRaWAN server as an AWS Partner software as a service (SaaS) solution
 <a name="lorawan-server-as-an-aws-partner-software-as-a-service-saas-solution"></a>
 
-![Diagram showing LoRaWAN server provided and operated by an AWS Partner](http://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/partner-lorawan-server.png)
+![Diagram showing LoRaWAN server provided and operated by an AWS Partner](https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/partner-lorawan-server.png)
 
  The next pattern uses a LoRaWAN network server of an AWS Partner as an SaaS solution. In this pattern, the AWS Partner is responsible for operating LoRaWAN components such as LoRaWAN network server, join server, and application server.
 
@@ -96,7 +96,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-so
 ## Customer-operated LoRaWAN server on the edge device
 <a name="customer-operated-lorawan-server-on-the-edge-device"></a>
 
-![Diagram showing LoRaWAN server operated by customer on the edge device](http://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/edge-lorawan-server.png)
+![Diagram showing LoRaWAN server operated by customer on the edge device](https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/edge-lorawan-server.png)
 
  In this pattern, customers source, deploy, and operate LoRaWAN gateways and LoRaWAN server components. The LoRaWAN server integrates with AWS IoT Core, enabling cloud applications to process data from and to send commands to LoRaWAN devices. Using this pattern results in higher development and operational efforts compared to the patterns previously described.
 

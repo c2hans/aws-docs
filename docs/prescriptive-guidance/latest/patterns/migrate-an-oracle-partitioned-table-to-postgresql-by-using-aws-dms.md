@@ -48,7 +48,7 @@ PostgreSQL version 10 supports native partitioning. However, you might decide to
 
 **Target architecture**
 
-![Partitioned table data in Oracle moving to an AWS DMS task for each partition, then into PostgreSQL.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7fa2898e-3308-436a-aec8-ab6f680d7bac/images/1b9742ea-a13d-434c-83a7-56686cf76ea0.png)
+![Partitioned table data in Oracle moving to an AWS DMS task for each partition, then into PostgreSQL.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7fa2898e-3308-436a-aec8-ab6f680d7bac/images/1b9742ea-a13d-434c-83a7-56686cf76ea0.png)
 
 ## Tools
 <a name="migrate-an-oracle-partitioned-table-to-postgresql-by-using-aws-dms-tools"></a>

@@ -111,7 +111,7 @@ Below is a description of the different resources and methods exposed by the API
 ## Architecture
 <a name="_architecture"></a>
 
-![IoT architecture diagram showing device, API Gateway, IoT Core, and related components.](http://docs.aws.amazon.com/solutions/latest/constructs/images/aws-apigateway-iot.png)
+![IoT architecture diagram showing device, API Gateway, IoT Core, and related components.](https://docs.aws.amazon.com/solutions/latest/constructs/images/aws-apigateway-iot.png)
 
 ## Github
 <a name="_github"></a>

@@ -9,7 +9,7 @@ End of support notice: On March 31, 2027, AWS will end support for Amazon WorkSp
 
 This tab shows the log of a specific device's setup and usage information. The following table lists each element of this log.
 
-![User activity details table showing device access date, user ID, virtual desktop service, and session information.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ag/images/user-activity.png)
+![User activity details table showing device access date, user ID, virtual desktop service, and session information.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/images/user-activity.png)
 
 | Element | Description |
 | --- | --- |

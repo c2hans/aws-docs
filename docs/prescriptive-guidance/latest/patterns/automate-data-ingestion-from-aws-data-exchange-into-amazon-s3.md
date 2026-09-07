@@ -38,7 +38,7 @@ The CloudFormation template creates an event in Amazon CloudWatch Events and an 
 
 **Target architecture **
 
-![CloudWatch initiates a Lambda function to copy data to S3 bucket and send Amazon SNS notification.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/059816dc-5a71-4942-9c7f-ac977072eebc/images/ec021620-47c1-4fb5-95a9-3b8985accc56.png)
+![CloudWatch initiates a Lambda function to copy data to S3 bucket and send Amazon SNS notification.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/059816dc-5a71-4942-9c7f-ac977072eebc/images/ec021620-47c1-4fb5-95a9-3b8985accc56.png)
 
 **Automation and scale**
 

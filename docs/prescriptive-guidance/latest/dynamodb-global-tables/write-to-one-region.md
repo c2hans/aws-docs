@@ -11,7 +11,7 @@ When you use an MRSC table, you might choose to generally write to one Region fo
 
 Eventually consistent read operations can go to any of the replica Regions to achieve lower latencies. Strongly consistent read operations must go to the single primary Region.
 
-![Write to one Region write mode.](http://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-global-tables/images/guide-img/a90e395c-d4d5-48a9-a714-90406b23d110/images/9c8c009b-d413-476b-a2f1-ace6da7c432e.png)
+![Write to one Region write mode.](https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-global-tables/images/guide-img/a90e395c-d4d5-48a9-a714-90406b23d110/images/9c8c009b-d413-476b-a2f1-ace6da7c432e.png)
 
 It's sometimes necessary to change the active Region in response to a Regional failure, as discussed later. Some users change the currently active Region on a regular schedule, such as implementing a *follow-the-sun* deployment. This places the active Region near the geography that has the most activity (usually where it's daytime, thus the name), which results in the lowest latency read and write operations. It also has the side benefit of calling the Region-changing code daily, and making sure that it's well tested before any disaster recovery.
 

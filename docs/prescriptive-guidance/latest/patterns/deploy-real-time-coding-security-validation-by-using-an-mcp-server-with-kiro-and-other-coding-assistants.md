@@ -60,7 +60,7 @@ The pattern provides a unified interface for security scanning with standardized
 
 The following diagram shows the architecture for this solution.
 
-![AI assistants send code to MCP security scanner server to route to specialized scanners; scan results sent to developer.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/fa623544-4d54-48af-a4e4-9b6a0624e776/images/9c881f95-76d0-40f6-983e-d987fd2097b8.png)
+![AI assistants send code to MCP security scanner server to route to specialized scanners; scan results sent to developer.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/fa623544-4d54-48af-a4e4-9b6a0624e776/images/9c881f95-76d0-40f6-983e-d987fd2097b8.png)
 
 The diagram shows the following workflow:
 

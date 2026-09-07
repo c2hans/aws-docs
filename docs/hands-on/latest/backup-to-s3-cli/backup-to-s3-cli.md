@@ -32,42 +32,42 @@ In this step, you will use the IAM service to create a user account with adminis
 1. Sign in to the console
 
    Click on the [AWS Management Console home](https://console.aws.amazon.com/console/home/?bck-files-amz-s3) to open the console in a new browser window, so you can keep this step-by-step guide open. When this screen loads, enter your user name and password to get started. Then type IAM in the search bar and select **IAM** to open the Identity and Access Management dashboard.
-![The AWS Management Console with a search for IAM highlighted.](http://docs.aws.amazon.com/hands-on/latest/backup-to-s3-cli/images/oul-resource-creation-interface.png)
+![The AWS Management Console with a search for IAM highlighted.](https://docs.aws.amazon.com/hands-on/latest/backup-to-s3-cli/images/oul-resource-creation-interface.png)
 
 1. Choose Users
 
    From the AWS Identity and Access Management dashboard, click on Users on the left side.
-![The IAM dashboard.](http://docs.aws.amazon.com/hands-on/latest/backup-to-s3-cli/images/qfog-selection-interface.png)
+![The IAM dashboard.](https://docs.aws.amazon.com/hands-on/latest/backup-to-s3-cli/images/qfog-selection-interface.png)
 
 1. Create a user
 
    Click the **Add user** button.
-![The IAM users window.](http://docs.aws.amazon.com/hands-on/latest/backup-to-s3-cli/images/movcb-resource-creation-interface.png)
+![The IAM users window.](https://docs.aws.amazon.com/hands-on/latest/backup-to-s3-cli/images/movcb-resource-creation-interface.png)
 
 1. Specify user details
 
    Enter a user name in the textbox next to **User name**: (we’ll use **AWS\_Admin** for this example) and select **Programmatic access** in the Select AWS Access Type section. Click the **Next: Permissions** button.
-![The IAM add users window.](http://docs.aws.amazon.com/hands-on/latest/backup-to-s3-cli/images/bzre-bcca-interface-controls-buttons.png)
+![The IAM add users window.](https://docs.aws.amazon.com/hands-on/latest/backup-to-s3-cli/images/bzre-bcca-interface-controls-buttons.png)
 
 1. Add permissions
 
    Click on **Attach existing policies directly** option. Select **AdministratorAccess** then click **Next: Tags**.
-![Adding permissions window.](http://docs.aws.amazon.com/hands-on/latest/backup-to-s3-cli/images/interface-controls-buttons.png)
+![Adding permissions window.](https://docs.aws.amazon.com/hands-on/latest/backup-to-s3-cli/images/interface-controls-buttons.png)
 
 1. Add tags
 
    IAM tags are key-value pairs you can add to your user. We’ll skip this step for this example. Click the **Next: Review** button.
-![The add tags window.](http://docs.aws.amazon.com/hands-on/latest/backup-to-s3-cli/images/lpix-afb-interface-controls-buttons.png)
+![The add tags window.](https://docs.aws.amazon.com/hands-on/latest/backup-to-s3-cli/images/lpix-afb-interface-controls-buttons.png)
 
 1. Review and create
 
    Take this opportunity to review that all settings are correct. When you are ready, click on **Create user**.
-![Reviewing the user to be created and then creating the user.](http://docs.aws.amazon.com/hands-on/latest/backup-to-s3-cli/images/resource-creation-interface.png)
+![Reviewing the user to be created and then creating the user.](https://docs.aws.amazon.com/hands-on/latest/backup-to-s3-cli/images/resource-creation-interface.png)
 
 1. Review and create
 
    Click the **Download Credentials** button and save the `credentials.csv` file in a safe location (you’ll need this later in step 3) and then click the **Close** button.
-![The resource creation interface.](http://docs.aws.amazon.com/hands-on/latest/backup-to-s3-cli/images/resource-creation-interface-1.png)
+![The resource creation interface.](https://docs.aws.amazon.com/hands-on/latest/backup-to-s3-cli/images/resource-creation-interface-1.png)
 
 ### Step 2: Install and configure the AWS CLI
 <a name="install-and-configure-the-aws-cli"></a>
@@ -97,7 +97,7 @@ This should look something like **je7MtGbClwBF/2Zp9Utk/h3yCo8nvbEXAMPLEKEY**
 
    **Default output format [None]:** Enter **json**
 
-![Command prompt showing the aws configure command.](http://docs.aws.amazon.com/hands-on/latest/backup-to-s3-cli/images/configuration-settings-interface.png)
+![Command prompt showing the aws configure command.](https://docs.aws.amazon.com/hands-on/latest/backup-to-s3-cli/images/configuration-settings-interface.png)
 
 ------
 #### [ macOS / Linux ]
@@ -122,7 +122,7 @@ This should look something like **je7MtGbClwBF/2Zp9Utk/h3yCo8nvbEXAMPLEKEY**
 
    **Default output format [None]:** Enter **json**
 
-![Terminal window showing the aws configure command.](http://docs.aws.amazon.com/hands-on/latest/backup-to-s3-cli/images/interface-interface-element.png)
+![Terminal window showing the aws configure command.](https://docs.aws.amazon.com/hands-on/latest/backup-to-s3-cli/images/interface-interface-element.png)
 
 ------
 
@@ -140,7 +140,7 @@ In this step, you will use the AWS CLI to create a bucket in Amazon S3 and copy 
    ```
 **Note**
 Bucket naming has some restrictions; one of those restrictions is that bucket names must be globally unique (for example, two different AWS users can not have the same bucket name); because of this, if you try the command above you will get a BucketAlreadyExists error.
-![Using the aws s3 command to create an S3 bucket.](http://docs.aws.amazon.com/hands-on/latest/backup-to-s3-cli/images/lsepzxaw-resource-creation-interface.png)
+![Using the aws s3 command to create an S3 bucket.](https://docs.aws.amazon.com/hands-on/latest/backup-to-s3-cli/images/lsepzxaw-resource-creation-interface.png)
 
 1. Upload files to Amazon S3
 
@@ -151,7 +151,7 @@ Bucket naming has some restrictions; one of those restrictions is that bucket na
    ```
 
    Or, use the original syntax if the filename contains no spaces.
-![Using the aws s3 cp command to upload to an S3 bucket.](http://docs.aws.amazon.com/hands-on/latest/backup-to-s3-cli/images/oxl-bda-interface-1.png)
+![Using the aws s3 cp command to upload to an S3 bucket.](https://docs.aws.amazon.com/hands-on/latest/backup-to-s3-cli/images/oxl-bda-interface-1.png)
 
 1. Download files from Amazon S3
 
@@ -160,7 +160,7 @@ Bucket naming has some restrictions; one of those restrictions is that bucket na
    ```
    aws s3 cp s3://my-first-backup-bucket/my-first-backup.bak ./
    ```
-![Using the aws s3 cp command to download from an S3 bucket.](http://docs.aws.amazon.com/hands-on/latest/backup-to-s3-cli/images/oxl-bda-interface-1.png)
+![Using the aws s3 cp command to download from an S3 bucket.](https://docs.aws.amazon.com/hands-on/latest/backup-to-s3-cli/images/oxl-bda-interface-1.png)
 
 1. Delete files from Amazon S3
 
@@ -169,7 +169,7 @@ Bucket naming has some restrictions; one of those restrictions is that bucket na
    ```
    aws s3 rm s3://my-first-backup-bucket/my-first-backup.bak
    ```
-![Using the aws s3 rm command to delete a file from an S3 bucket.](http://docs.aws.amazon.com/hands-on/latest/backup-to-s3-cli/images/interface.png)
+![Using the aws s3 rm command to delete a file from an S3 bucket.](https://docs.aws.amazon.com/hands-on/latest/backup-to-s3-cli/images/interface.png)
 
 ## Conclusion
 <a name="conclusion"></a>

@@ -29,6 +29,6 @@ Analytics Studio is a web console for business or data analysts to view dashboar
 
 Below is a diagram to help you better understand those concepts and their relationship with each other in the AWS context.
 
-![](http://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/concepts.png)
+![](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/concepts.png)
 
 For a general reference of AWS terms, see the [AWS glossary](https://docs.aws.amazon.com/general/latest/gr/glos-chap.html) in the *AWS General Reference*.

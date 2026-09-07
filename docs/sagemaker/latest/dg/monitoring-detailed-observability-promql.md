@@ -37,7 +37,7 @@ To query detailed observability metrics from your existing observability tool in
 
 1. Click **Save and test**
 
-![Amazon Managed Grafana data source configuration for SageMaker Inference PromQL.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/SageMaker Observability/AMG_data_source_configuration.png)
+![Amazon Managed Grafana data source configuration for SageMaker Inference PromQL.](https://docs.aws.amazon.com/sagemaker/latest/dg/images/SageMaker Observability/AMG_data_source_configuration.png)
 
 ### Option 2: Standard Prometheus data source
 <a name="detailed-observability-promql-grafana-standard"></a>
@@ -90,7 +90,7 @@ To query detailed observability metrics from your existing observability tool in
 
 The template has 3 sections (Performance, Capacity, Reliability) matching the SageMaker AI Insights dashboard.
 
-![Dashboard template import workflow showing Grafana data source selection and import steps.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/SageMaker Observability/Dashboard_template.png)
+![Dashboard template import workflow showing Grafana data source selection and import steps.](https://docs.aws.amazon.com/sagemaker/latest/dg/images/SageMaker Observability/Dashboard_template.png)
 
 ## OTel labels available in PromQL
 <a name="detailed-observability-promql-labels"></a>

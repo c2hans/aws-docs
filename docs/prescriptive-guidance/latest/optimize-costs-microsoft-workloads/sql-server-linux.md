@@ -14,7 +14,7 @@ For Linux, SQL Server is available to deploy on Red Hat Enterprise Linux (RHEL),
 
 SQL Server on Windows and Linux share a common code base. That is, the SQL Server core engine hasn't been changed, at all, to run on Linux. SQL Server introduced a Platform Abstraction Layer (SQLPAL), as shown in the following diagram.
 
-![The Sequel Server Platform Abstraction Layer (SQLPAL)](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/e0a110b3-ecdf-41ec-a636-a64e9060d19d.png)
+![The Sequel Server Platform Abstraction Layer (SQLPAL)](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/e0a110b3-ecdf-41ec-a636-a64e9060d19d.png)
 
 SQLPAL is responsible for abstraction of calls and communication between SQL Server and the underlying operating system. The host extension is simply a native Linux application. Low-level operating system functions are native calls to optimize the I/O, memory, and CPU usage. When the host extension starts, it loads and initializes SQLPAL, which then brings up SQL Server. SQLPAL launches isolated software processes that provide the required translation for the rest of the code. Adding this new layer to the SQL Server architecture means that the same enterprise-level core features and benefits that have made SQL Server so powerful on Windows are available regardless of operating system.
 
@@ -59,7 +59,7 @@ We recommend that you consider the following:
 
 The following diagram shows an architecture for a solution that uses the Windows to Linux replatforming assistant for Microsoft SQL Server Databases.
 
-![Windows to Linux replatforming assistant architecture](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/5adc01bb-a2ed-4850-894b-c1d7e8bfdf94.png)
+![Windows to Linux replatforming assistant architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/5adc01bb-a2ed-4850-894b-c1d7e8bfdf94.png)
 
 ## Additional resources
 <a name="sql-server-linux-resources"></a>

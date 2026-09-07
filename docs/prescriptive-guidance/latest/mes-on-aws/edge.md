@@ -14,7 +14,7 @@ Many MES transactions are latency-sensitive. One of the examples cited later in 
 
 Here is the sample architecture for this use case.
 
-![MES architecture for industrial edge computing use cases](http://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/images/guide-img/093538ca-c7c9-4311-a0e9-8a876ae66d65/images/3565c1f2-f424-4881-9565-f8cff47c9fc7.png)
+![MES architecture for industrial edge computing use cases](https://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/images/guide-img/093538ca-c7c9-4311-a0e9-8a876ae66d65/images/3565c1f2-f424-4881-9565-f8cff47c9fc7.png)
 
 1. Amazon Elastic Kubernetes Service (Amazon EKS) for computing and Amazon Relational Database Service (Amazon RDS) for databases are hosted locally in AWS Outposts. You can also use self-managed hardware to host edge components. Some features, such as Amazon EKS Anywhere, can be used for self-managed hardware as well.
 

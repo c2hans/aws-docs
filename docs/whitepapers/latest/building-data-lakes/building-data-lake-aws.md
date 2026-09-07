@@ -36,4 +36,4 @@ Because organizations are collecting and analyzing increasing amounts of data, t
 
 The remainder of this paper provides more information about each of these capabilities. The following figure illustrates a sample AWS data lake platform.
 
-![High-level AWS data lake technical reference architecture](http://docs.aws.amazon.com/whitepapers/latest/building-data-lakes/images/storage-best-practices1.png)
+![High-level AWS data lake technical reference architecture](https://docs.aws.amazon.com/whitepapers/latest/building-data-lakes/images/storage-best-practices1.png)

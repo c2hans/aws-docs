@@ -37,7 +37,7 @@ This pattern addresses these challenges. First, it eliminates the need for code 
 
 The following diagram depicts the architecture of the solution.
 
-![Workflow to create and run SageMaker AI training or HPO jobs.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/1db57484-f85c-49a6-b870-471dade02b26/images/d80e7474-a975-4d92-8f66-2d34e33053fd.png)
+![Workflow to create and run SageMaker AI training or HPO jobs.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/1db57484-f85c-49a6-b870-471dade02b26/images/d80e7474-a975-4d92-8f66-2d34e33053fd.png)
 
 The diagram shows the following workflow:
 

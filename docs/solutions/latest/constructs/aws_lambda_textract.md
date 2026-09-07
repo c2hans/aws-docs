@@ -180,11 +180,11 @@ Out of the box implementation of the Construct without any override will set the
 
  **Default Implementation**
 
-![Diagram showing the Lambda function, Amazon Textract service, and IAM role created by the construct](http://docs.aws.amazon.com/solutions/latest/constructs/images/aws-lambda-textract.png)
+![Diagram showing the Lambda function, Amazon Textract service, and IAM role created by the construct](https://docs.aws.amazon.com/solutions/latest/constructs/images/aws-lambda-textract.png)
 
  **Default Implementation when asyncJobs = true**
 
-![Diagram showing the Lambda function, source and destination S3 buckets (when asyncJobs is true), SNS topic, Amazon Textract service, and IAM roles created by the construct](http://docs.aws.amazon.com/solutions/latest/constructs/images/aws-lambda-textract-async.png)
+![Diagram showing the Lambda function, source and destination S3 buckets (when asyncJobs is true), SNS topic, Amazon Textract service, and IAM roles created by the construct](https://docs.aws.amazon.com/solutions/latest/constructs/images/aws-lambda-textract-async.png)
 
 ## Github
 <a name="_github"></a>

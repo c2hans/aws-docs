@@ -34,7 +34,7 @@ The topologies we have used with customers include decentralized, centralized, a
 
 Large, global corporations that operate across different geographies or industry segments often use the decentralized model, which is illustrated in the following diagram. At these corporations, individual business units have their own IT provisions that can overlap with other regions or business units. However, this is often understood and accepted as a way to provide autonomy and specialization within the region.
 
-![Decentralized operating model](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cloud-operating-model/images/guide-img/9a407f0b-ea38-4662-8d39-755295f71238/images/bed0e312-afe0-4784-a07b-956759603532.png)
+![Decentralized operating model](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cloud-operating-model/images/guide-img/9a407f0b-ea38-4662-8d39-755295f71238/images/bed0e312-afe0-4784-a07b-956759603532.png)
 
 Using the decentralized approach means that each region or business unit has its own Cloud Operating Model that is tailored to the needs of that region or business unit.
 
@@ -43,7 +43,7 @@ Using the decentralized approach means that each region or business unit has its
 
 A centralized IT function is the model we see most frequently. When this model is in place, customers seek to maintain the same topology when establishing their Cloud Operating Model. This is illustrated in the following diagram.
 
-![Centralized operating model](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cloud-operating-model/images/guide-img/9a407f0b-ea38-4662-8d39-755295f71238/images/4aabcd39-311d-4b2f-9cc9-b96eb4d77eeb.png)
+![Centralized operating model](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cloud-operating-model/images/guide-img/9a407f0b-ea38-4662-8d39-755295f71238/images/4aabcd39-311d-4b2f-9cc9-b96eb4d77eeb.png)
 
 In this model, the central team provides a curated platform that can be used by workload teams that have their own Cloud Operating Models. With this approach, workload teams can focus on the value they provide to their end-customers without having to worry about the services, operations, or security of the platform they are using. This model works well for smaller companies. However, in large, global organizations, the number of workload teams can be in the hundreds or thousands. To manage at this scale without losing the benefits of a central platform, organizations frequently transition to the federated model, which is outlined in the next section.
 
@@ -52,7 +52,7 @@ In this model, the central team provides a curated platform that can be used by 
 
 Many organizations adopt the federated IT model because it provides a central function that's responsible for the cloud platform but allows for a variety of operating models at the workload level. This means that the central team can focus on providing the best possible platform for the organization without the constraint of working to the lowest common denominator. The following diagram illustrates the federated model.
 
-![Federated operating model](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cloud-operating-model/images/guide-img/9a407f0b-ea38-4662-8d39-755295f71238/images/8c366025-49b6-4931-bcf2-5a514f6aa3a8.png)
+![Federated operating model](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cloud-operating-model/images/guide-img/9a407f0b-ea38-4662-8d39-755295f71238/images/8c366025-49b6-4931-bcf2-5a514f6aa3a8.png)
 
 In large organizations, the federated model provides the autonomy required by engineering teams while ensuring that the central team provides the platform and undifferentiated heavy lifting that is common across all workloads. In this model, the central team has to work in the same product-centric way as the engineering teams, but their product is the platform.
 

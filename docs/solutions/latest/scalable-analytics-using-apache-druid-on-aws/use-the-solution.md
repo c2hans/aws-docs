@@ -17,7 +17,7 @@ This section provides a user guide for using the Scalable Analytics using Apache
 During the deployment process, an administrative user account is created with the username admin. To retrieve the password for this account from AWS Secrets Manager, search for the entry with a description *Administrator user credentials* for Druid cluster. You have the option to use the administrative user account to sign in, or create a new user account with reduced access permissions.
 
 1. After signing in, the Apache Druid web console is displayed. The web console displays the Druid components deployed in your AWS account using the configuration that you used during the deployment process.
-![Apache Druid web console.](http://docs.aws.amazon.com/solutions/latest/scalable-analytics-using-apache-druid-on-aws/images/image11.png)
+![Apache Druid web console.](https://docs.aws.amazon.com/solutions/latest/scalable-analytics-using-apache-druid-on-aws/images/image11.png)
 
 For more information on how to ingest external data, refer to the [Apache Druid tutorial documentation](https://druid.apache.org/docs/latest/tutorials/).
 
@@ -28,6 +28,6 @@ The Druid UI doesn’t have a sign out button. As an alternative, you can adjust
 
 The following images show examples of this procedure.
 
-![In your browser settings, search for cookies or cache. Select the option to delete cookies when the browser is closed.](http://docs.aws.amazon.com/solutions/latest/scalable-analytics-using-apache-druid-on-aws/images/delete-cookies.png)
+![In your browser settings, search for cookies or cache. Select the option to delete cookies when the browser is closed.](https://docs.aws.amazon.com/solutions/latest/scalable-analytics-using-apache-druid-on-aws/images/delete-cookies.png)
 
-![Delete your browsing history, cookies, and cached files.](http://docs.aws.amazon.com/solutions/latest/scalable-analytics-using-apache-druid-on-aws/images/delete-browsing-data.png)
+![Delete your browsing history, cookies, and cached files.](https://docs.aws.amazon.com/solutions/latest/scalable-analytics-using-apache-druid-on-aws/images/delete-browsing-data.png)

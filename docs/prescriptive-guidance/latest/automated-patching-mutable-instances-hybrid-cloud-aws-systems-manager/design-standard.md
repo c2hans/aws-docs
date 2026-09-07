@@ -18,7 +18,7 @@ For detailed information about the key stakeholders involved in a successful OS 
 
 The automated patching solution uses multiple AWS services that work in tandem to deploy the patches to the EC2 instances. This process involves AWS Config, AWS Lambda, Systems Manager, Amazon Simple Storage Service (Amazon S3), and Quick. The following diagram shows the reference architecture and workflow.
 
-![Reference architecture and workflow for a standard mutable Amazon EC2 instance patching process.](http://docs.aws.amazon.com/prescriptive-guidance/latest/automated-patching-mutable-instances-hybrid-cloud-aws-systems-manager/images/guide-img/9c36bc8c-880d-42f7-8b76-ddf8e3d52477/images/8a9dab85-84c7-4ffa-b27b-ac9b997ee237.png)
+![Reference architecture and workflow for a standard mutable Amazon EC2 instance patching process.](https://docs.aws.amazon.com/prescriptive-guidance/latest/automated-patching-mutable-instances-hybrid-cloud-aws-systems-manager/images/guide-img/9c36bc8c-880d-42f7-8b76-ddf8e3d52477/images/8a9dab85-84c7-4ffa-b27b-ac9b997ee237.png)
 
 The workflow includes these steps, where the step numbers match the callouts in the diagram:
 

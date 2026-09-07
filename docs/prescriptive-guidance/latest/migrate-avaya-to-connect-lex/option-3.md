@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-ava
 # Option 3: Ingress to Connect Customer and egress to Avaya
 <a name="option-3"></a>
 
-![Architecture diagram of ingress to Amazon Connect and egress to Avaya for agent transfer](http://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-avaya-to-connect-lex/images/guide-img/93ca74a8-da3b-48f9-a10f-4809a7f3384c/images/524cfd9b-79f8-471e-b0ff-07cf892cd7f9.png)
+![Architecture diagram of ingress to Amazon Connect and egress to Avaya for agent transfer](https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-avaya-to-connect-lex/images/guide-img/93ca74a8-da3b-48f9-a10f-4809a7f3384c/images/524cfd9b-79f8-471e-b0ff-07cf892cd7f9.png)
 
 1. A customer calls the Connect Customer contact center. Connect Customer greets the customer with welcome menu and provides the caller with self-servicing menu options.
 

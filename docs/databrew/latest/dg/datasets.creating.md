@@ -13,22 +13,22 @@ The dataset page has the following elements to help you explore your data.
 
 **Dataset preview** – On this tab, you can find connection information for the dataset and an overview of the overall structure of the dataset, as shown following.
 
-![Dataset details and preview showing metadata and sample rows from a JSON file stored in S3.](http://docs.aws.amazon.com/databrew/latest/dg/images/dataset-preview.png)
+![Dataset details and preview showing metadata and sample rows from a JSON file stored in S3.](https://docs.aws.amazon.com/databrew/latest/dg/images/dataset-preview.png)
 
 **Data profile overview** – On this tab, you can find a graphical data profile of statistics and volumetrics for your dataset, as shown following.
 
-![Data profile overview showing dataset summary, data types, missing cells, and correlations.](http://docs.aws.amazon.com/databrew/latest/dg/images/data-profile-overview2.png)
+![Data profile overview showing dataset summary, data types, missing cells, and correlations.](https://docs.aws.amazon.com/databrew/latest/dg/images/data-profile-overview2.png)
 
 **Note**
 To create a data profile, run a DataBrew profile job on your dataset. For information about how to do this, see [Step 5: Create a data profile](getting-started.05.md).
 
 **Column statistics** – On this tab, you can find detailed statistics about each column in your dataset, as shown following.
 
-![Data profile overview showing column statistics, data quality, and value distribution for a dataset.](http://docs.aws.amazon.com/databrew/latest/dg/images/dataset-column-stats.png)
+![Data profile overview showing column statistics, data quality, and value distribution for a dataset.](https://docs.aws.amazon.com/databrew/latest/dg/images/dataset-column-stats.png)
 
 **Data lineage** – This tab shows a graphical representation of how your dataset was created and how it's used in DataBrew, as shown following.
 
-![Data lineage diagram showing dataset creation and usage flow in DataBrew.](http://docs.aws.amazon.com/databrew/latest/dg/images/dataset-lineage.png)
+![Data lineage diagram showing dataset creation and usage flow in DataBrew.](https://docs.aws.amazon.com/databrew/latest/dg/images/dataset-lineage.png)
 
 **Topics**
 + [Deleting a dataset](datasets.deleting.md)

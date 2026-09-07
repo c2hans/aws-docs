@@ -47,4 +47,4 @@ For more information on accessing the portal URL, see [Deploy the solution](depl
 
 Your profile is now configured and you are ready to start using the application.
 
-![Create profile on your client application](http://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/first-time-profile-setup.png)
+![Create profile on your client application](https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/first-time-profile-setup.png)

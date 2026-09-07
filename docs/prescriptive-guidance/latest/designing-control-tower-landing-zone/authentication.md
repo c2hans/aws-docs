@@ -19,7 +19,7 @@ For a new landing zone, if you choose the AWS Control Tower setup option, you ca
 
 You can also use an external identity provider as your identity source to manage access to your AWS accounts, resources, and cloud applications. During SAML-based authentication, users and groups are synchronized from your external identity provider by using System for Cross-domain Identity Management (SCIM) in IAM Identity Center. Users can complete this federation by using the IAM Identity Center portal. The following diagram illustrates how identify federation works.
 
-![Setting up authentication in a landing zone](http://docs.aws.amazon.com/prescriptive-guidance/latest/designing-control-tower-landing-zone/images/guide-img/156d118c-ed00-4c5b-9a02-63c2673a3342/images/acebedce-2258-4b5f-af09-a1c7c0023ac1.png)
+![Setting up authentication in a landing zone](https://docs.aws.amazon.com/prescriptive-guidance/latest/designing-control-tower-landing-zone/images/guide-img/156d118c-ed00-4c5b-9a02-63c2673a3342/images/acebedce-2258-4b5f-af09-a1c7c0023ac1.png)
 
 Direct access to AWS accounts must be limited only through the [AWS account root user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html) and [break glass identities](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/break-glass-access.html) (IAM roles or users that can access the accounts if the IAM Identity Center federation is broken or you are accidentally locked out of the environment).
 

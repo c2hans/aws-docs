@@ -16,7 +16,7 @@ Use value driver analysis when you want to examine and define the specific paths
 
 The following value driver analysis matrix shows the correlation between management influence and value impact.
 
-![How to manage value drivers based on their impact and management influence.](http://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-mobilize-team/images/guide-img/92b6ddba-987c-49cf-bc18-ab8ec8f36978/images/28e13573-ec06-4ef7-b83c-c3d0bd98f432.png)
+![How to manage value drivers based on their impact and management influence.](https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-mobilize-team/images/guide-img/92b6ddba-987c-49cf-bc18-ab8ec8f36978/images/28e13573-ec06-4ef7-b83c-c3d0bd98f432.png)
 
 As the matrix shows:
 + Value drivers that have a high impact to value and high degree of management influence should be managed actively.
@@ -31,7 +31,7 @@ Identifying and managing value drivers help the leadership team focus their atte
 
 There are three categories of value drivers: growth drivers, efficiency drivers, and financial drivers. As shown in the following diagram, companies tend to manage these value drivers in four ways: investing in value-creating growth opportunities, investing in operating efficiency, divesting from value eroding activities, and reducing capital cost. By focusing on value drivers, management can prioritize the specific activities that will affect performance in each area.
 
-![How value drivers link to value creation.](http://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-mobilize-team/images/guide-img/92b6ddba-987c-49cf-bc18-ab8ec8f36978/images/031f353b-8fc7-4a13-b315-a40c5c285239.png)
+![How value drivers link to value creation.](https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-mobilize-team/images/guide-img/92b6ddba-987c-49cf-bc18-ab8ec8f36978/images/031f353b-8fc7-4a13-b315-a40c5c285239.png)
 
 Examining and defining paths to value creation enables companies to identify and understand responsibilities by function and level within the organization. This, in turn, helps managers focus their attention on factors that really matter.
 
@@ -39,7 +39,7 @@ Often, IT organizations manage their business by treating every operating factor
 
 Early in the cloud journey, organizations should explicitly define the value that they want to derive from the cloud. The cloud can positively impact all three value drivers (growth, efficiency, and financial value). A common best practice is to develop value maps that define all cloud initiatives that will impact value drivers, as shown in the following example.
 
-![An example value map that identifies initiatives, metrics, stakeholders, and use cases.](http://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-mobilize-team/images/guide-img/92b6ddba-987c-49cf-bc18-ab8ec8f36978/images/799102eb-2b95-4b51-bb57-f29c3e48bda3.png)
+![An example value map that identifies initiatives, metrics, stakeholders, and use cases.](https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-mobilize-team/images/guide-img/92b6ddba-987c-49cf-bc18-ab8ec8f36978/images/799102eb-2b95-4b51-bb57-f29c3e48bda3.png)
 
 Value maps include the following information:
 + Business/value driver: The penultimate description of business value. These tend to be financial measures relating to increased revenue, decreased cost, improved margins, and so on.

@@ -13,7 +13,7 @@ You can connect services across different accounts and VPCs, and you don't need 
 
 The following architecture diagram shows how you can use PrivateLink and a Network Load Balancer to connect endpoints in your account to interface endpoints in a third-party account, such as the account of a software as a service (SaaS) provider. The third-party account hosts the Network Load Balancer.
 
-![Using PrivateLink and a Network Load Balancer to connect EC2 instances in different accounts](http://docs.aws.amazon.com/prescriptive-guidance/latest/integrate-third-party-services/images/guide-img/80f3a808-d645-486e-82c4-f574fdcf6710/images/d9332d6e-d661-4ffd-a474-0278653cc226.png)
+![Using PrivateLink and a Network Load Balancer to connect EC2 instances in different accounts](https://docs.aws.amazon.com/prescriptive-guidance/latest/integrate-third-party-services/images/guide-img/80f3a808-d645-486e-82c4-f574fdcf6710/images/d9332d6e-d661-4ffd-a474-0278653cc226.png)
 
 This architecture is the most commonly selected approach for integrating third-party services because it provides strong segregation between the third-party account and your account, without shared components. It allows for overlapping CIDR blocks, which is one of the most prominent challenges when integrating with an external account. It also abstracts the network communication path. However, it is limited to only TCP traffic and unidirectional communication. The third-party workloads cannot initiate communication back to your account.
 

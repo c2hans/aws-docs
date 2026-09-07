@@ -55,7 +55,7 @@ Use the console's built-in code editor to add your durable function code.
 1. Choose the **Code** tab.
 
    In the console's built-in code editor, you should see the function code that Lambda created. If you don't see the **index.mjs** tab in the code editor, select **index.mjs** in the file explorer as shown on the following diagram.
-![Diagram showing the console code editor and the index.mjs file in the file explorer.](http://docs.aws.amazon.com/lambda/latest/dg/images/durable-nodejs.png)
+![Diagram showing the console code editor and the index.mjs file in the file explorer.](https://docs.aws.amazon.com/lambda/latest/dg/images/durable-nodejs.png)
 
 1. Paste the following code into the **index.mjs** tab, replacing the code that Lambda created.
 
@@ -99,7 +99,7 @@ Use the console's built-in code editor to add your durable function code.
    ```
 
 1. In the **DEPLOY** section, choose **Deploy** to update your function's code:
-![Deploy button in the Lambda console code editor](http://docs.aws.amazon.com/lambda/latest/dg/images/getting-started-tutorial/deploy-console.png)
+![Deploy button in the Lambda console code editor](https://docs.aws.amazon.com/lambda/latest/dg/images/getting-started-tutorial/deploy-console.png)
 
 **Understanding your durable function code**
 Before you move to the next step, let's look at the function code and understand key durable function concepts.
@@ -127,7 +127,7 @@ Before you move to the next step, let's look at the function code and understand
 1. Choose the **Code** tab.
 
    In the console's built-in code editor, you should see the function code that Lambda created. If you don't see the **lambda\_function.py** tab in the code editor, select **lambda\_function.py** in the file explorer as shown on the following diagram.
-![Diagram showing the console code editor and the lambda_function.py file in the file explorer.](http://docs.aws.amazon.com/lambda/latest/dg/images/durable-python.png)
+![Diagram showing the console code editor and the lambda_function.py file in the file explorer.](https://docs.aws.amazon.com/lambda/latest/dg/images/durable-python.png)
 
 1. Paste the following code into the **lambda\_function.py** tab, replacing the code that Lambda created.
 
@@ -178,7 +178,7 @@ Before you move to the next step, let's look at the function code and understand
    ```
 
 1. In the **DEPLOY** section, choose **Deploy** to update your function's code:
-![Deploy button in the Lambda console code editor](http://docs.aws.amazon.com/lambda/latest/dg/images/getting-started-tutorial/deploy-console.png)
+![Deploy button in the Lambda console code editor](https://docs.aws.amazon.com/lambda/latest/dg/images/getting-started-tutorial/deploy-console.png)
 
 **Understanding your durable function code**
 Before you move to the next step, let's look at the function code and understand key durable function concepts.
@@ -225,7 +225,7 @@ Now create a test event to send to your function. The event is a JSON formatted 
 **To create the test event**
 
 1. In the **TEST EVENTS** section of the console code editor, choose **Create test event**.
-![Create test event button in the Lambda console code editor](http://docs.aws.amazon.com/lambda/latest/dg/images/getting-started-tutorial/test-event.png)
+![Create test event button in the Lambda console code editor](https://docs.aws.amazon.com/lambda/latest/dg/images/getting-started-tutorial/test-event.png)
 
 1. For **Event Name**, enter **myTestEvent**.
 
@@ -243,7 +243,7 @@ Now create a test event to send to your function. The event is a JSON formatted 
 
 In the **TEST EVENTS** section of the console code editor, choose the run icon next to your test event:
 
-![Run test event button in the Lambda console code editor.](http://docs.aws.amazon.com/lambda/latest/dg/images/getting-started-tutorial/run-test-event.png)
+![Run test event button in the Lambda console code editor.](https://docs.aws.amazon.com/lambda/latest/dg/images/getting-started-tutorial/run-test-event.png)
 
 Your durable function starts executing. Because it includes a 10-second wait, the initial invocation completes quickly, and the function resumes after the wait period. You can view the execution progress in the **Durable executions** tab.
 
@@ -268,7 +268,7 @@ You can also view your function's logs in CloudWatch Logs to see the console out
 1. Choose the log group for your function (`/aws/lambda/myDurableFunction`).
 
 1. Scroll down and choose the **Log stream** for the function invocations you want to look at.
-![List of log streams for a Lambda function.](http://docs.aws.amazon.com/lambda/latest/dg/images/log-stream.png)
+![List of log streams for a Lambda function.](https://docs.aws.amazon.com/lambda/latest/dg/images/log-stream.png)
 
    You should see log entries for each invocation of your function, including the initial execution and the replay after the wait.
 

@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-wor
 
  The following architecture diagram shows migration of workflows to AWS and a high-level architecture for running semiconductor design workflows. In this architecture diagram, the infrastructure that is running on AWS is similar to the previous on-premises environment diagram. This simple architecture helps you understand the high-level approach without the need for knowing the details about each of the services that is used.
 
-![This annotated diagram shows a high level architecture of implementing a semiconductor environment on the AWS Cloud.](http://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-workflows-on-aws/images/semiconductor-design-high-level.png)
+![This annotated diagram shows a high level architecture of implementing a semiconductor environment on the AWS Cloud.](https://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-workflows-on-aws/images/semiconductor-design-high-level.png)
 
 **Semiconductor and Electronics Design on AWS - High Level**
 

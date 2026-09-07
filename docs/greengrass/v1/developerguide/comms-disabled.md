@@ -22,7 +22,7 @@ End of support notice: On October 7th, 2026, AWS will discontinue support for AW
       ```
 
       Output similar to the following indicates successful communication between the computer and the AWS IoT Greengrass core device (0% packet loss):
-![Successful ping command output.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-075.5.png)
+![Successful ping command output.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-075.5.png)
 **Note**
 If you're unable to ping an EC2 instance that's running AWS IoT Greengrass, make sure that the inbound security group rules for the instance allow ICMP traffic for [Echo request](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules-reference.html#sg-rules-ping) messages. For more information, see [ Adding rules to a security group](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html#adding-security-group-rule) in the *Amazon EC2 User Guide*.
 On Windows host computers, in the Windows Firewall with Advanced Security app, you might also need to enable an inbound rule that allows inbound echo requests (for example, **File and Printer Sharing (Echo Request - ICMPv4-In)**), or create one.
@@ -60,10 +60,10 @@ Make sure that your [endpoints correspond to your certificate type](gg-core.md#c
       Every 20 seconds, the switch updates the shadow state to G, Y, and R, and the light displays its new state, as shown next.
 
       GG\_Switch output:
-![Screenshot of the output associated with GG_Switch.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-083.png)
+![Screenshot of the output associated with GG_Switch.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-083.png)
 
       GG\_TrafficLight output:
-![Screenshot of the output associated with GG_TrafficLight.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-084.png)
+![Screenshot of the output associated with GG_TrafficLight.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-084.png)
 
    When executed for the first time, each client device script runs the AWS IoT Greengrass discovery service to connect to the AWS IoT Greengrass core (through the internet). After a client device has discovered and successfully connected to the AWS IoT Greengrass core, future operations can be executed locally.
 **Note**

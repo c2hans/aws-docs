@@ -55,7 +55,7 @@ From the CloudFormation console, set the following parameters:
 
  **Configure Amazon Bedrock embeddings.**
 
-![image28](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image28.png)
+![image28](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image28.png)
 
 ### Using a custom Lambda function
 <a name="using-a-custom-lambda-function"></a>
@@ -89,7 +89,7 @@ When your Lambda function is ready, you can deploy the stack. To activate your L
 
  **Semantic search with Lambda function .**
 
-![image30](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image30.png)
+![image30](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image30.png)
 
 **Note**
 You can’t change these settings through the content designer **Settings** page. To correctly reconfigure your deployment, update your CloudFormation stack to modify these values.

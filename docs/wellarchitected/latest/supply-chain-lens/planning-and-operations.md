@@ -40,7 +40,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ## Reference architecture
 <a name="reference-architecture"></a>
 
-![Reference architecture displaying a planning and operations AWS architecture.](http://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens/images/image1.png)
+![Reference architecture displaying a planning and operations AWS architecture.](https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens/images/image1.png)
 
 ## Architecture description
 <a name="architecture-description"></a>

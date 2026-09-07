@@ -34,7 +34,7 @@ This pattern does not support the isolation of traffic between certain VPCs or t
 
 **Target architecture **
 
-![AWS Transit Gateway connects on-premises network to VPCs in multiple AWS accounts within a Region.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e23f5faf-e75e-42a3-80e3-142516a2db4e/images/1ecf7e04-bbf8-4304-88c8-6aceb7271d1e.jpeg)
+![AWS Transit Gateway connects on-premises network to VPCs in multiple AWS accounts within a Region.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e23f5faf-e75e-42a3-80e3-142516a2db4e/images/1ecf7e04-bbf8-4304-88c8-6aceb7271d1e.jpeg)
 
 ## Tools
 <a name="centralize-network-connectivity-using-aws-transit-gateway-tools"></a>

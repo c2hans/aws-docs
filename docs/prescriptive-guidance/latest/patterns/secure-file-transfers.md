@@ -52,7 +52,7 @@ The infrastructure as code (IaC) templates provided with this pattern help you d
 
 The following architecture diagram shows the resources that are deployed in this pattern. This solution uses Amazon Cognito for user authentication and authorization. An AWS Transfer Family SFTP server is used for file uploads. Files are stored in Amazon S3 buckets, and Amazon GuardDuty scans the files for malware. Amazon SNS sends an email notification if malware is detected.
 
-![Using GuardDuty and Cognito to securely transfer files to Amazon S3 buckets.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/39d98ebe-2844-4ccd-a497-9b796b7da5e8/images/05567010-e189-40e7-acab-74e77c4f8525.png)
+![Using GuardDuty and Cognito to securely transfer files to Amazon S3 buckets.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/39d98ebe-2844-4ccd-a497-9b796b7da5e8/images/05567010-e189-40e7-acab-74e77c4f8525.png)
 
 The diagram shows the following workflow:
 

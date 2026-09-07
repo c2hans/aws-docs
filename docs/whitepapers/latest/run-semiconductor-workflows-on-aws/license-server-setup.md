@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-wor
 
  The following figure shows how to set up your on-premises license servers on AWS, so you can both run your existing on-premises flows using the license servers hosted on AWS, and also use the same servers when migrating your flows over to AWS. As with the other infrastructure support instances, a moderately sized instance (e.g., M5.2xlarge) will suffice for testing and POC environments.
 
-![This diagram shows the services involved for the license server setup component of the semiconductor environment.](http://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-workflows-on-aws/images/semiconductor-license-server-setup.png)
+![This diagram shows the services involved for the license server setup component of the semiconductor environment.](https://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-workflows-on-aws/images/semiconductor-license-server-setup.png)
 
 **License server setup **
 
@@ -26,7 +26,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-wor
 
  The following figure shows three license server deployment scenarios – on premises only license server, cloud-only license server, and on-premises and cloud license servers. Your architecture depends on many factors, but these three options can provide guidance to build out a reliable and scalable licensing architecture. If you plan on using an on-premises license server while running on AWS, as many licensed applications are sensitive to network latency from client to server, a dedicated connection from your on-premises network to the nearest AWS Region using AWS Direct Connect can provide a reliable network connection with consistent latency.
 
-![This diagram shows the three license server deployment scenarios: on-premises license server, cloud-only license server, and on-premises and cloud license server.](http://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-workflows-on-aws/images/semiconductor-license-server-deployments.png)
+![This diagram shows the three license server deployment scenarios: on-premises license server, cloud-only license server, and on-premises and cloud license server.](https://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-workflows-on-aws/images/semiconductor-license-server-deployments.png)
 
 **License server deployment scenarios **
 

@@ -51,7 +51,7 @@ Key features of the solution include:
 
 The following diagram shows the workflow and architecture components for this pattern.
 
-![Workflow to deploy automated code quality assurance for release management using Amazon Q Developer.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/198312ed-e379-49a7-b706-8e79e2142f21/images/a977924c-957e-4f91-99d6-ed790e343ea6.png)
+![Workflow to deploy automated code quality assurance for release management using Amazon Q Developer.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/198312ed-e379-49a7-b706-8e79e2142f21/images/a977924c-957e-4f91-99d6-ed790e343ea6.png)
 
 The diagram shows the automated code quality assurance workflow:
 
@@ -112,7 +112,7 @@ To see screenshots of the notifications as they appear in a Slack channel, go to
 
 The following diagram shows an example of Step Functions step status after the quality gate pass fails.
 
-![Workflow of AWS Step Functions step status after quality gate pass fails.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/198312ed-e379-49a7-b706-8e79e2142f21/images/40b7ebf0-2518-4413-9717-0bfb7559adde.png)
+![Workflow of AWS Step Functions step status after quality gate pass fails.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/198312ed-e379-49a7-b706-8e79e2142f21/images/40b7ebf0-2518-4413-9717-0bfb7559adde.png)
 
 ## Tools
 <a name="deploy-chatops-solution-to-manage-sast-scan-results-tools"></a>

@@ -37,7 +37,7 @@ This pattern describes a step-by-step workflow for using Amazon Textract to auto
 
 This pattern’s workflow first runs Amazon Textract on a sample PDF file (*First-time run*) and then runs it on PDF files that have an identical format to the first PDF (*Repeat run*). The following diagram shows the combined *First-time run* and *Repeat run *workflow that automatically and repeatedly extracts content from PDF files with identical formats.
 
-![Using Amazon Textract to extract content from PDF files](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2d724523-2cab-42c9-a773-65857014d9ec/images/9e20070f-3e0c-46aa-aa98-a8b1eb3395dc.png)
+![Using Amazon Textract to extract content from PDF files](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2d724523-2cab-42c9-a773-65857014d9ec/images/9e20070f-3e0c-46aa-aa98-a8b1eb3395dc.png)
 
 The diagram shows the following workflow for this pattern:
 

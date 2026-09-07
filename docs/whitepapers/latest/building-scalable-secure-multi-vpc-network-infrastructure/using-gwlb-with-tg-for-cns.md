@@ -15,7 +15,7 @@ The centralized Security VPC consists of appliance subnets in each Availability 
 
 For more information on centralized security inspection with Gateway Load Balancer and Transit Gateway, refer to the [Centralized inspection architecture with AWS Gateway Load Balancer and AWS Transit Gateway](https://aws.amazon.com/blogs/networking-and-content-delivery/centralized-inspection-architecture-with-aws-gateway-load-balancer-and-aws-transit-gateway/) blog post.
 
-![A diagram depicting VPC-to-VPC and on-premises-to-VPC traffic inspection using Transit Gateway and AWS Gateway Load Balancer (route table design)](http://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/vpc-traffic-inspection-2.png)
+![A diagram depicting VPC-to-VPC and on-premises-to-VPC traffic inspection using Transit Gateway and AWS Gateway Load Balancer (route table design)](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/vpc-traffic-inspection-2.png)
 
 ## Key considerations for AWS Network Firewall and AWS Gateway Load Balancer
 <a name="key-considerations-3"></a>

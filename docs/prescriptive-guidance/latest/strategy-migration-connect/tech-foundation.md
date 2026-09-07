@@ -9,7 +9,7 @@ This workstream involves decisions that require significant rework if changed, s
 
 The technical foundation workstream consists of five phases: discovery and roadmap, design, build, test, deploy, and post go-live support.
 
-![Technical foundation workstream in contact center migrations](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/images/guide-img/c8027e22-fcd9-43b3-b8a7-234ec8eb0644/images/3d59eb12-aa74-43a6-9c6e-c01ce3a24442.png)
+![Technical foundation workstream in contact center migrations](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/images/guide-img/c8027e22-fcd9-43b3-b8a7-234ec8eb0644/images/3d59eb12-aa74-43a6-9c6e-c01ce3a24442.png)
 
 ## Discovery and roadmap
 <a name="discovery-and-roadmap.4c727502-3578-56cd-bb75-908cabea21d1"></a>

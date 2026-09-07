@@ -28,7 +28,7 @@ This example Python file is stored in the AWS IoT Greengrass Core SDK repository
    ```
 
    This results in a directory listing similar to the following:
-![Screenshot of directory listing showing carAggregator.py.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-095.png)
+![Screenshot of directory listing showing carAggregator.py.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-095.png)
 
 1. Compress the contents of the `car_aggregator` folder into a `.zip` file named `car_aggregator.zip`. (Compress the folder's contents, not the folder.) This is your Lambda function deployment package.
 
@@ -37,12 +37,12 @@ This example Python file is stored in the AWS IoT Greengrass Core SDK repository
    + For **Permissions**, keep the default setting. This creates an execution role that grants basic Lambda permissions. This role isn't used by AWS IoT Greengrass.
 
    Choose **Create function**.
-![Basic information section with Function name set to GG_Car_Aggregator and Runtime set to Python 3.7.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-095.5.png)
+![Basic information section with Function name set to GG_Car_Aggregator and Runtime set to Python 3.7.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-095.5.png)
 
 1. Upload your Lambda function deployment package:
 
    1. <a name="lambda-console-upload"></a>On the **Code** tab, under **Code source**, choose **Upload from**. From the dropdown, choose **.zip file**.
-![The Upload from dropdown with .zip file highlighted.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/lra-console/upload-deployment-package.png)
+![The Upload from dropdown with .zip file highlighted.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/lra-console/upload-deployment-package.png)
 
    1. Choose upload, and then choose your `car_aggregator.zip` deployment package. Then, choose **Save**.
 

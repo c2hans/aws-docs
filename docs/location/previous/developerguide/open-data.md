@@ -27,7 +27,7 @@ Open Data map styles support alternate [Political views](map-concepts.md#politic
 
 **Open Data Standard Light**
 
-![Street map showing Cambridge Street area with numbered routes including Route 28 and Route 3.](http://docs.aws.amazon.com/location/previous/developerguide/images/VectorOpenDataStandardLight.png)
+![Street map showing Cambridge Street area with numbered routes including Route 28 and Route 3.](https://docs.aws.amazon.com/location/previous/developerguide/images/VectorOpenDataStandardLight.png)
 
 **Map style name**: `VectorOpenDataStandardLight`
 
@@ -59,7 +59,7 @@ The fonts used by `VectorOpenDataStandardLight` are combined fonts that use `Ama
 
 **Open Data Standard Dark**
 
-![Map showing street layout of downtown area with Charles River, major roads, and landmarks.](http://docs.aws.amazon.com/location/previous/developerguide/images/VectorOpenDataStandardDark.png)
+![Map showing street layout of downtown area with Charles River, major roads, and landmarks.](https://docs.aws.amazon.com/location/previous/developerguide/images/VectorOpenDataStandardDark.png)
 
 **Map style name**: `VectorOpenDataStandardDark`
 
@@ -91,7 +91,7 @@ The fonts used by `VectorOpenDataStandardDark` are combined fonts that use `Amaz
 
 **Open Data Visualization Light**
 
-![Street map showing Cambridge Street area with surrounding roads and landmarks.](http://docs.aws.amazon.com/location/previous/developerguide/images/VectorOpenDataVisualizationLight.png)
+![Street map showing Cambridge Street area with surrounding roads and landmarks.](https://docs.aws.amazon.com/location/previous/developerguide/images/VectorOpenDataVisualizationLight.png)
 
 **Map style name**: `VectorOpenDataVisualizationLight`
 
@@ -123,7 +123,7 @@ The fonts used by `VectorOpenDataVisualizationLight` are combined fonts that use
 
 **Open Data Visualization Dark**
 
-![Dark-themed map showing street layout of downtown area with labeled roads and landmarks.](http://docs.aws.amazon.com/location/previous/developerguide/images/VectorOpenDataVisualizationDark.png)
+![Dark-themed map showing street layout of downtown area with labeled roads and landmarks.](https://docs.aws.amazon.com/location/previous/developerguide/images/VectorOpenDataVisualizationDark.png)
 
 **Map style name**: `VectorOpenDataVisualizationDark`
 

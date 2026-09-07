@@ -20,7 +20,7 @@ AWS offers a growing number of database options (15\+) with diverse data models 
 
  Choosing the right database, or multiple databases, requires you to make a series of decisions based on your organizational needs. This decision guide will help you ask the right questions, provide a clear path for implementation, and help you migrate from your existing database.
 
-[![AWS Videos](http://img.youtube.com/vi/MSB_mHUJUaA/0.jpg)](http://www.youtube.com/watch?v=MSB_mHUJUaA)
+[![AWS Videos](https://img.youtube.com/vi/MSB_mHUJUaA/0.jpg)](https://www.youtube.com/watch?v=MSB_mHUJUaA)
 
 ## Understand
 <a name="db-understand"></a>
@@ -29,7 +29,7 @@ AWS offers a growing number of database options (15\+) with diverse data models 
 
  This decision guide is designed to help you understand the range of choices that are available, establish the criteria for making your database choice, and provide you with detailed information on the unique properties of each database. Then you can learn more about the capabilities that each database offers.
 
-![Overview of AWS database services.](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/aws-database-services.png)
+![Overview of AWS database services.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/aws-database-services.png)
 
 **What are the properties of applications that people build with AWS databases?**
 + **Internet-scale applications:** These applications can handle 100 million\+ requests per second over hundreds of terabytes of data. They automatically scale vertically and horizontally to provide flexibility for your workloads.
@@ -37,7 +37,7 @@ AWS offers a growing number of database options (15\+) with diverse data models 
 + **Enterprise applications:** Enterprise applications manage core business processes (such as sales, billing, customer service, and human resources) and line-of-business processes (such as a reservation system at a hotel chain or a risk-management system at an insurance company). These applications need databases that are fast, scalable, secure, available, and reliable.
 + **Vector databases and vector search for use with generative AI applications:** Whatever database service you use will likely contain a wealth of domain-specific data (such as financial records, health records, genomic data, and supply chain information). This data can provide you with a unique and valuable perspective on your business and the broader industry that you work within. For generative AI usage, the domain-specific data you plan to use for semantic context must be encoded as a set of elements, each expressed internally as a “vector”. This contextually relevant data typically comes from your internal databases, data lakes, or unstructured data or document stores—the data stores that host your domain-specific data or knowledge. These data stores are generically called knowledge bases. [Retrieval Augmented Generation (RAG)](https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-foundation-models-customize-rag.html) is the process for retrieving facts from these knowledge bases to ground [large language models (LLMs)](https://aws.amazon.com/what-is/large-language-model/) with up-to-date, accurate, and insightful data. As outlined in the following diagram, [AWS has added vector capabilities to AWS database and search services](https://aws.amazon.com/blogs/database/the-role-of-vector-datastores-in-generative-ai-applications/) so you can store vector datasets where your data is, simplify your application architecture, and use tried, tested, and familiar tools. A vector database, or vector data store, simply means a database with vector capabilities. Such a database can also provide additional enhancements to the ways you use your data with generative AI.
 
-![AWS vector databases and vector search.](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/vector-db-new.png)
+![AWS vector databases and vector search.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/vector-db-new.png)
 
 **Note**
 This guide focuses on databases that are suitable for online transaction processing (OLTP) applications. If you need to store and analyze massive amounts of data quickly and efficiently (a requirement that is typically met by an OLAP application), AWS offers [Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html). Amazon Redshift is a fully managed, cloud-based data warehousing service that is designed to handle large-scale analytics workloads.

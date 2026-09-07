@@ -164,7 +164,7 @@ For example, this query:
 
 provides the output:
 
-![Output from querying Iceberg table metadata.](http://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/images/guide-img/ceffa39e-028d-47b6-a54a-6ef8526aee6a/images/25cd9e5f-eb1a-4ffd-b2c1-de25e1a2d5fb.png)
+![Output from querying Iceberg table metadata.](https://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/images/guide-img/ceffa39e-028d-47b6-a54a-6ef8526aee6a/images/25cd9e5f-eb1a-4ffd-b2c1-de25e1a2d5fb.png)
 
 ## Using time travel
 <a name="trino-time-travel"></a>

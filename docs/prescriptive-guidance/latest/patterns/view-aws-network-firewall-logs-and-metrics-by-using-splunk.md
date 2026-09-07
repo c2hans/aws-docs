@@ -30,7 +30,7 @@ To achieve this, you create a read-only AWS Identity and Access Management (IAM)
 ## Architecture
 <a name="view-aws-network-firewall-logs-and-metrics-by-using-splunk-architecture"></a>
 
-![AWS Network Firewall and Splunk logging architecture](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c6ce254a-841f-4bed-8f9f-b35e99f22e56/images/3dd420e9-70af-4a42-b24d-c54872c55e0b.png)
+![AWS Network Firewall and Splunk logging architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c6ce254a-841f-4bed-8f9f-b35e99f22e56/images/3dd420e9-70af-4a42-b24d-c54872c55e0b.png)
 
 The diagram illustrates the following:
 

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/guidance-for-multi-omic
 
  The following diagram describes the overall data lake architecture; how data is ingested, curated, cataloged, and queried.
 
-![Guidance for Multi-Omics and Multi-Modal Data Integration and Analysis on AWS data lake architecture](http://docs.aws.amazon.com/solutions/latest/guidance-for-multi-omics-and-multi-modal-data-integration-and-analysis-on-aws/images/multi-omics-data-lake-diagram.png)
+![Guidance for Multi-Omics and Multi-Modal Data Integration and Analysis on AWS data lake architecture](https://docs.aws.amazon.com/solutions/latest/guidance-for-multi-omics-and-multi-modal-data-integration-and-analysis-on-aws/images/multi-omics-data-lake-diagram.png)
 
  This guidance demonstrates how to ingest common multi-omics data sets into a centralized data lake and work with that data using Amazon Athena and Jupyter notebooks. There are example ingestion pipelines for clinical, mutation, gene expression, and copy number data (TCGA), and imaging metadata (TCIA). An Amazon Omics Reference Store, Variant Store and Annotation Store are also created for genomic variant calls data (1000 Genomes), annotation data (ClinVar) and an example individual Variant Call File (VCF) data.
 
@@ -33,7 +33,7 @@ The creation of Amazon Omics Variant and Annotation stores automatically shares 
 
  Deploying this guidance with the default parameters builds the following environment in the AWS Cloud.
 
-![AWS Cloud environment built after deploying this guidance with default parameters](http://docs.aws.amazon.com/solutions/latest/guidance-for-multi-omics-and-multi-modal-data-integration-and-analysis-on-aws/images/multi-omics-diagram.png)
+![AWS Cloud environment built after deploying this guidance with default parameters](https://docs.aws.amazon.com/solutions/latest/guidance-for-multi-omics-and-multi-modal-data-integration-and-analysis-on-aws/images/multi-omics-diagram.png)
 
  The AWS CloudFormation template creates six CloudFormation stacks in your AWS account including a `setup` stack to install the guidance. The other stacks include a landing zone (`zone`) stack containing the common resources and artifacts, a deployment pipeline (`pipe`) stack defining the guidance's CI/CD pipeline, and three codebase (`genomics`, `imaging`, and `omics`) stacks providing the ETL scripts, jobs, crawlers, Omics resources, a data catalog, and notebook resources. The installation also includes a seventh CloudFormation stack that can be launched via a quick start link to set up the QuickSight resources (`quicksight`).
 

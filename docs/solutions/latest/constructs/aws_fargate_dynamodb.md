@@ -120,7 +120,7 @@ Out of the box implementation of the Construct without any override will set the
 ## Architecture
 <a name="_architecture"></a>
 
-![Diagram showing the Fargate service, DynamoDB table, and IAM role created by the construct](http://docs.aws.amazon.com/solutions/latest/constructs/images/aws-fargate-dynamodb.png)
+![Diagram showing the Fargate service, DynamoDB table, and IAM role created by the construct](https://docs.aws.amazon.com/solutions/latest/constructs/images/aws-fargate-dynamodb.png)
 
 ## Github
 <a name="_github"></a>

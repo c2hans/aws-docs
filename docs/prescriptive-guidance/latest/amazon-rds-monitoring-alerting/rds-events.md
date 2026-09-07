@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-
 
 An *Amazon* *RDS event* indicates a change in the Amazon RDS environment. For example, when the DB instance status changes from *Starting* to *Available*, Amazon RDS generates the event `RDS-EVENT-0088 The DB instance has been started`. Amazon RDS delivers events to Amazon EventBridge in near real time. You can access events though the Amazon RDS console, the AWS CLI command [describe-events](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/describe-events.html), or the Amazon RDS API operation [DescribeEvents](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeEvents.html). The following screen illustration shows events and logs displayed on the Amazon RDS console.
 
-![events and logs displayed on the Amazon RDS console](http://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-monitoring-alerting/images/guide-img/9dd4cf9c-a2d9-4127-a3e3-2225b43b6c9a/images/a9688af2-3083-4829-8cf4-9a31cc64241b.png)
+![events and logs displayed on the Amazon RDS console](https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-monitoring-alerting/images/guide-img/9dd4cf9c-a2d9-4127-a3e3-2225b43b6c9a/images/a9688af2-3083-4829-8cf4-9a31cc64241b.png)
 
 Amazon RDS emits different types of events, including DB instance events, DB parameter group events, DB security group events, DB snapshot events, RDS Proxy events, and blue/green deployment events. The information includes:
 + Source name and source type; for example: `"SourceIdentifier": "database-1", "SourceType": "db-instance"`

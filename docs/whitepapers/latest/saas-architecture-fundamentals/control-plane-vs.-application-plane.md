@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
 
  The following diagram divides your SaaS environment into two distinct planes. On the right side is the control plane. This side of the diagram includes all the functionality and services that are used to onboard, authenticate, manage, operate, and analyze a multi-tenant environment.
 
-![A diagram depciting control plane vs. application plane.](http://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fundamentals/images/control-vs-application.png)
+![A diagram depciting control plane vs. application plane.](https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fundamentals/images/control-vs-application.png)
 
  This control plane is foundational to any multi-tenant SaaS model. Every SaaS solution—regardless of application deployment and isolation scheme—must include those services that give you the ability to manage and operate your tenants through a single, unified experience.
 

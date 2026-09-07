@@ -38,7 +38,7 @@ The WaitCondition hook is an AWS Cloud Development Kit (AWS CDK) construct thatâ
 
 The following diagram shows the construct architecture.
 
-![AWS Step Functions workflow of waitcondition-hook-for-aws-fargate-task construct.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e58680e3-f89f-422f-b0e1-e85605ae8bf9/images/598020df-908c-4486-9844-c05af759c18a.png)
+![AWS Step Functions workflow of waitcondition-hook-for-aws-fargate-task construct.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e58680e3-f89f-422f-b0e1-e85605ae8bf9/images/598020df-908c-4486-9844-c05af759c18a.png)
 
 The diagram shows the workflow of `waitcondition-hook-for-aws-fargate-task`:
 
@@ -52,7 +52,7 @@ The diagram shows the workflow of `waitcondition-hook-for-aws-fargate-task`:
 
 The following diagram shows an example of a workflow to perform a database migration.
 
-![Workflow of Amazon RDS database migration using WaitCondition hook construct.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e58680e3-f89f-422f-b0e1-e85605ae8bf9/images/3b83fc2a-80bb-4ba9-9637-782060493cf0.png)
+![Workflow of Amazon RDS database migration using WaitCondition hook construct.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e58680e3-f89f-422f-b0e1-e85605ae8bf9/images/3b83fc2a-80bb-4ba9-9637-782060493cf0.png)
 
 The example workflow uses the `waitcondition-hook-for-aws-fargate-task` construct to perform a database migration, as follows:
 

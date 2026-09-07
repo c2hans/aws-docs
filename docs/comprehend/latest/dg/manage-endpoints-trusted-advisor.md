@@ -45,7 +45,7 @@ The **Amazon Comprehend underutilized endpoints** check evaluates the throughput
 
 Here's an example which shows the CostOptimization category view on the Trusted Advisor console:
 
-![Example output of the cost optimization checks.](http://docs.aws.amazon.com/comprehend/latest/dg/images/TA_cost_optimization_new.png)
+![Example output of the cost optimization checks.](https://docs.aws.amazon.com/comprehend/latest/dg/images/TA_cost_optimization_new.png)
 
 ## Amazon Comprehend endpoint access risk
 <a name="manage-endpoints-trusted-advisor-endpoint-access-risk"></a>
@@ -75,7 +75,7 @@ The **Amazon Comprehend endpoint access risk** check evaluates the AWS Key Manag
 
 Here's an example of the FaultTolerance category view on the Trusted Advisor console:
 
-![Example output of the fault tolerance checks.](http://docs.aws.amazon.com/comprehend/latest/dg/images/TA_fault_tolerance_checks_new.png)
+![Example output of the fault tolerance checks.](https://docs.aws.amazon.com/comprehend/latest/dg/images/TA_fault_tolerance_checks_new.png)
 
 These checks and their results can also be viewed by referring the Trusted Advisor section of the AWS Support API.
 

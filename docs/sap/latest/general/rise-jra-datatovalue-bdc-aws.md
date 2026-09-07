@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/rise-jra-datatovalue-
 
 Non-SAP data from AWS data sources can be harmonized with SAP data via SAP Datasphere data fabric architecture with SAP BDC. The integration architecture supports multiple AWS services, each with specific modes of integration based on live data or replication:
 
-![SAP BDC with Managed Services.](http://docs.aws.amazon.com/sap/latest/general/images/rise-jra-datatovalue-01.png)
+![SAP BDC with Managed Services.](https://docs.aws.amazon.com/sap/latest/general/images/rise-jra-datatovalue-01.png)
 
  **A. Integration with Amazon Athena**
 

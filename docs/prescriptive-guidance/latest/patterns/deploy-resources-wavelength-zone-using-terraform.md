@@ -41,7 +41,7 @@ The following diagram shows how you can create a subnet and AWS resources in a W
 + Fixed wireless access for select Wavelength Zone partners. For more information, see [Multi-access AWS Wavelength](https://docs.aws.amazon.com/wavelength/latest/developerguide/multi-access.html).
 + Outbound traffic to public internet resources.
 
-![A carrier gateway connects AWS resources in the Wavelength Zone to the CSP network.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8c507de1-208c-4563-bb58-52388ab2fa6d/images/a4cc0699-0cbc-4f15-ab14-3ae569ced7f4.png)
+![A carrier gateway connects AWS resources in the Wavelength Zone to the CSP network.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8c507de1-208c-4563-bb58-52388ab2fa6d/images/a4cc0699-0cbc-4f15-ab14-3ae569ced7f4.png)
 
 ## Tools
 <a name="deploy-resources-wavelength-zone-using-terraform-tools"></a>

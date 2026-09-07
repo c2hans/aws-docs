@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-b
 1.  Sign in to your AWS account at [https://aws.amazon.com](https://aws.amazon.com) with an IAM user that has the necessary permissions. For details, see [Infrastructure preparation and planning](account-requirements.md#infrastructure-preparation-and-planning).
 
 1.  Ensure that your AWS account is configured correctly, as discussed in [Infrastructure preparation and planning](account-requirements.md#infrastructure-preparation-and-planning).
-![A screenshot of the sign-in screen for Amazon RDS for SQL Server.](http://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-best-practices/images/sql-server-signin.png)
+![A screenshot of the sign-in screen for Amazon RDS for SQL Server.](https://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-best-practices/images/sql-server-signin.png)
 
 1.  At this stage you need to define the Amazon VPC which will be linked to the SDDC during the onboarding phase. If you intend to use an existing VPC, skip Step 2 and continue from [Step 3](#step-3.-create-a-private-subnet-for-the-eni) to create a private subnet for ENI connectivity.
 
@@ -25,16 +25,16 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-b
 1.  Open the Amazon VPC console at [https://console.aws.amazon.com/vpc/](https://console.aws.amazon.com/vpc/).
 
 1.  In the navigation pane, choose **Your VPCs** > **VPCs.**
-![A screenshot of the Launch VPC Wizard. From the Amazon VPC Console, choose Your VPCs > VPCs .](http://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-best-practices/images/launch-vpc.png)
+![A screenshot of the Launch VPC Wizard. From the Amazon VPC Console, choose Your VPCs > VPCs .](https://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-best-practices/images/launch-vpc.png)
 
 1.  Choose **Create VPC.**
-![A screenshot of the Your VPCs page. Choose Create VPC.](http://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-best-practices/images/create-vpcs.png)
+![A screenshot of the Your VPCs page. Choose Create VPC.](https://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-best-practices/images/create-vpcs.png)
 
 1.  Enter the VPC details:
    +  **Name tag** — Optionally provide a name for your VPC. This creates a tag with a key of Name and the value that you specify.
    +  **IPv4 CIDR block** — Specify an IPv4 CIDR block for the VPC. The smallest CIDR block you can specify is `/26`, and the largest is `/16`. AWS recommends that you specify a CIDR block from the private (non-publicly routable) IP address ranges as specified in [RFC 1918](http://www.faqs.org/rfcs/rfc1918.html). For example, `10.0.0.0/16`, or `192.168.0.0/16`.
    +  **Tenancy** — Default.
-![A screenshot of the VPC Settings screen. Enter the VPC details and choose Create VPC .](http://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-best-practices/images/vpc-settings.png)
+![A screenshot of the VPC Settings screen. Enter the VPC details and choose Create VPC .](https://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-best-practices/images/vpc-settings.png)
 
 1.  Choose **Create VPC**.
 
@@ -53,23 +53,23 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-b
 1.  Open the Amazon VPC console at [https://console.aws.amazon.com/vpc/](https://console.aws.amazon.com/vpc/).
 
 1.  In the navigation pane, choose **Subnets**.
-![A screenshot of the Subnets screen. Choose Subnets.](http://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-best-practices/images/subnets.png)
+![A screenshot of the Subnets screen. Choose Subnets.](https://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-best-practices/images/subnets.png)
 
 1.  Choose **Create Subnet**.
-![A screenshot of the Subnets screen. Choose Create subnet.](http://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-best-practices/images/subnets2.png)
+![A screenshot of the Subnets screen. Choose Create subnet.](https://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-best-practices/images/subnets2.png)
 
 1.  In the **Create Subnet**dialog box, do the following:
    +  For **Name tag**, type an identifiable name such as “SDDC ENI private subnet”.
    +  For **Availability Zone**, choose the first Availability Zone in the list.
    +  For **CIDR block**, type the CIDR block to use for the subnet.
    +  Choose **Create**.
-![A screenshot of the Subnet settings screen. Enter subnet settings and choose Create subnet](http://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-best-practices/images/subnet-settings-screen.png)
+![A screenshot of the Subnet settings screen. Enter subnet settings and choose Create subnet](https://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-best-practices/images/subnet-settings-screen.png)
 
 1.  Repeat steps 2 and 3 to create subnets for each remaining Availability Zone in the Region.
 
 1.  In this example, you have three subnets attached to the VPC.
 
-![A screenshot showing the three subnets attached to the VPC .](http://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-best-practices/images/three-subnets.png)
+![A screenshot showing the three subnets attached to the VPC .](https://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-best-practices/images/three-subnets.png)
 
 You are now ready to activate your VMware Cloud on AWS service.
 
@@ -81,7 +81,7 @@ You are now ready to activate your VMware Cloud on AWS service.
  During the process of purchasing VMware Cloud on AWS, you specify an email contact for your Organization on the order form submitted to AWS. After the purchase is processed, AWS sends a welcome email to the email addresses specified.
 
 1.  After receiving the Welcome letter from AWS, choose the **Activate Service** link to be redirected to the VMware Cloud on AWS portal.
-![A screenshot of the VMware Cloud on AWS Welcome screen. Choose Activate Service.](http://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-best-practices/images/thank-you.png)
+![A screenshot of the VMware Cloud on AWS Welcome screen. Choose Activate Service.](https://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-best-practices/images/thank-you.png)
 
 **Important**
  The welcome email is sent from no-reply-vmware-cloud-on-aws@amazon.com. Ensure the email wasn’t processed by corporate spam filter.
@@ -94,10 +94,10 @@ You are now ready to activate your VMware Cloud on AWS service.
 1.  Choose **Next** to successfully complete the account activation. You will be redirected to the VMware Cloud on AWS console via [https://vmc.vmware.com](https://vmc.vmware.com).
 
 1.  Create an Organization linked to the VMware Customer Connect account. Each Organization corresponds to a group or line of business subscribed to VMware Cloud on AWS.
-![A screenshot of the Select or Create Organization screen. Create an Organization linked to the VMware Customer Connect account.](http://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-best-practices/images/create-organization.png)
+![A screenshot of the Select or Create Organization screen. Create an Organization linked to the VMware Customer Connect account.](https://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-best-practices/images/create-organization.png)
 
 1.  Enter the Organization name and address to provide a logical distinction for the organization. In the example below, `AWSTestOrg01` is used for the organization name.
-![The Organization and Payment screen. Enter the Organization name.](http://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-best-practices/images/org-screen.png)
+![The Organization and Payment screen. Enter the Organization name.](https://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-best-practices/images/org-screen.png)
 
 1.  Choose **Create Organization** and complete sign-up to successfully complete the process.
 
@@ -115,7 +115,7 @@ This organization has no relationship to AWS Organizations. Each organization ha
 
  For example, the VMware Cloud on AWS service enables you to assign Administrator, Administrator (Delete Restricted), NSX Cloud Auditor, and NSX Cloud Administrator roles.
 
-![A diagram depicting two types of role-based access roles .](http://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-best-practices/images/cloud-services.png)
+![A diagram depicting two types of role-based access roles .](https://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-best-practices/images/cloud-services.png)
 
 ## Federation
 <a name="federation"></a>

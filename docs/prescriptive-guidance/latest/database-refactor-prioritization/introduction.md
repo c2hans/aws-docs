@@ -24,7 +24,7 @@ The database replatform prioritization process discussed in this guide includes 
 
 1. [Run AWS Schema Conversion Tool (AWS SCT) reports to identify candidate databases](https://aws.amazon.com/prescriptive-guidance/latest/database-refactor-prioritization/sct.html)
 
-![Three steps for selecting and prioritizing SQL Server and Oracle databases to refactor on AWS](http://docs.aws.amazon.com/prescriptive-guidance/latest/database-refactor-prioritization/images/guide-img/d514dcdf-d1f9-43a2-ac0b-46dc109cf9b2/images/48a36a80-084f-4641-9b3f-6ee87d4ea2be.png)
+![Three steps for selecting and prioritizing SQL Server and Oracle databases to refactor on AWS](https://docs.aws.amazon.com/prescriptive-guidance/latest/database-refactor-prioritization/images/guide-img/d514dcdf-d1f9-43a2-ac0b-46dc109cf9b2/images/48a36a80-084f-4641-9b3f-6ee87d4ea2be.png)
 
 ## Attachments
 <a name="attachments-d514dcdf-d1f9-43a2-ac0b-46dc109cf9b2"></a>

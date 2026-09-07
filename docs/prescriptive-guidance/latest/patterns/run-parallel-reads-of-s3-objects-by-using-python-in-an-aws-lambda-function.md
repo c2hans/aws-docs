@@ -50,7 +50,7 @@ The [AWS Lambda Power Tuning](https://github.com/alexcasalboni/aws-lambda-power-
 
 The following diagram shows a Lambda function that reads objects from an S3 bucket in parallel. The diagram also has a Step Functions workflow for the AWS Lambda Power Tuning tool to fine-tune the Lambda function memory. This fine-tuning helps to achieve a good balance between cost and performance.
 
-![Diagram showing Lambda function, S3 bucket, and AWS Step Functions.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/b46e9b16-9842-4291-adfa-3ef012b89aec/images/828696e2-6df7-4536-9205-951c99449f4e.png)
+![Diagram showing Lambda function, S3 bucket, and AWS Step Functions.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/b46e9b16-9842-4291-adfa-3ef012b89aec/images/828696e2-6df7-4536-9205-951c99449f4e.png)
 
 **Automation and scale**
 
@@ -163,16 +163,16 @@ These tests were conducted in December 2024.
 
 The first test processed 2,500 object reads, with the following result.
 
-![Invocation time falling and invocation cost rising as memory increases.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/b46e9b16-9842-4291-adfa-3ef012b89aec/images/f6743412-1e52-4c4c-a51c-ac0f75b3b998.png)
+![Invocation time falling and invocation cost rising as memory increases.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/b46e9b16-9842-4291-adfa-3ef012b89aec/images/f6743412-1e52-4c4c-a51c-ac0f75b3b998.png)
 
 Starting at 3,009 MB, the processing-time level stayed almost the same for any memory increase, but the cost increased as the memory size increased.
 
 Another test investigated the range between 1,536 MB and 3,072 MB of memory, using values that were multiples of 256 MB and processing 10,000 object reads, with the following results.
 
-![Decreased difference between invocation time falling and invocation cost rising.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/b46e9b16-9842-4291-adfa-3ef012b89aec/images/c75d4443-74d8-4b93-9b4d-b2640869381e.png)
+![Decreased difference between invocation time falling and invocation cost rising.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/b46e9b16-9842-4291-adfa-3ef012b89aec/images/c75d4443-74d8-4b93-9b4d-b2640869381e.png)
 
 The best performance-to-cost ratio was with the 2,304 MB memory Lambda configuration.
 
 For comparison, a sequential process of 2,500 object reads took 47 seconds. The parallel process using the 2,304 MB Lambda configuration took 7 seconds, which is 85 percent less.
 
-![Chart showing the decrease in time when switching from sequential to parallel processing.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/b46e9b16-9842-4291-adfa-3ef012b89aec/images/f3dcc44d-ac20-4b75-897d-1d71f0d59781.png)
+![Chart showing the decrease in time when switching from sequential to parallel processing.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/b46e9b16-9842-4291-adfa-3ef012b89aec/images/f3dcc44d-ac20-4b75-897d-1d71f0d59781.png)

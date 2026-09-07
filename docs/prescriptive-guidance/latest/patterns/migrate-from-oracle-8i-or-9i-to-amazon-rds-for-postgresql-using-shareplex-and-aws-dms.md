@@ -51,7 +51,7 @@ The migration uses an Amazon Elastic Compute Cloud (Amazon EC2) instance with Or
 
 **Source and target architecture**
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/b6c30668-fc2e-4293-a59a-e01fd151f4bb/images/25082670-0bf3-4b20-8c80-99c6633b046f.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/b6c30668-fc2e-4293-a59a-e01fd151f4bb/images/25082670-0bf3-4b20-8c80-99c6633b046f.png)
 
 ## Tools
 <a name="migrate-from-oracle-8i-or-9i-to-amazon-rds-for-postgresql-using-shareplex-and-aws-dms-tools"></a>

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/serverless-multi-tier
 # Web application
 <a name="web-application"></a>
 
-![Architecture diagram showing client authentication flow through CloudFront, API Gateway, Cognito, and Lambda functions accessing DynamoDB.](http://docs.aws.amazon.com/whitepapers/latest/serverless-multi-tier-architectures-api-gateway-lambda/images/web-application.png)
+![Architecture diagram showing client authentication flow through CloudFront, API Gateway, Cognito, and Lambda functions accessing DynamoDB.](https://docs.aws.amazon.com/whitepapers/latest/serverless-multi-tier-architectures-api-gateway-lambda/images/web-application.png)
 
 * Architectural pattern for web application *
 

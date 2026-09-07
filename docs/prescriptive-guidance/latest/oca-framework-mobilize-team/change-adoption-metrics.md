@@ -75,7 +75,7 @@ The following table focuses on ways to measure change and people management comp
 
 The following example shows OCA metrics organized by the organizational change acceleration phase or point. Each OCA phase is likely to have a number of desired change outcomes and will therefore require a number of measures.
 
-![Example of OCA change adoption metrics scorecard for the change acceleration phase.](http://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-mobilize-team/images/guide-img/92b6ddba-987c-49cf-bc18-ab8ec8f36978/images/b3f39db9-7086-466c-96f4-3c3d34871873.png)
+![Example of OCA change adoption metrics scorecard for the change acceleration phase.](https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-mobilize-team/images/guide-img/92b6ddba-987c-49cf-bc18-ab8ec8f36978/images/b3f39db9-7086-466c-96f4-3c3d34871873.png)
 
 ## FAQ
 <a name="metrics-faq"></a>

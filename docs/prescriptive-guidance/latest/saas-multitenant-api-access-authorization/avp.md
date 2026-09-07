@@ -11,7 +11,7 @@ By using Verified Permissions to implement a PDP and implementing least privileg
 
 Verified Permissions provides some useful features for SaaS applications, such as the ability to enable multi-tenant authorization by using multiple identity providers such as Amazon Cognito, Google, and Facebook. Another Verified Permissions feature that is particularly helpful for SaaS applications is support for custom roles on a per-tenant basis. If you're designing a customer relationship management (CRM) system, one tenant might define granularity of access by sales opportunities based on one particular set of criteria. Another tenant might have another definition. The underlying permissions systems in Verified Permissions can support these variations, which makes it an excellent candidate for SaaS use cases. Verified Permissions also supports the ability to write policies that apply to all tenants, so it is straightforward to apply guardrail policies to prevent unauthorized access as a SaaS provider.
 
-![Using Amazon Verified Permissions to implement a PDP](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/760153f4-fc01-435a-9f20-8eea3eb12508.png)
+![Using Amazon Verified Permissions to implement a PDP](https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/760153f4-fc01-435a-9f20-8eea3eb12508.png)
 
 **Why use Verified Permissions?**
 

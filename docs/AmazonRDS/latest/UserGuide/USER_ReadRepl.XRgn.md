@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl
 
 With Amazon RDS, you can create a read replica in a different AWS Region from the source DB instance.
 
-![Cross-Region read replica configuration.](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/images/read-replica-cross-region.png)
+![Cross-Region read replica configuration.](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/images/read-replica-cross-region.png)
 
 You create a read replica in a different AWS Region to do the following:
 + Improve your disaster recovery capabilities.

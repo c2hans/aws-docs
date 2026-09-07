@@ -278,4 +278,4 @@ For an example of how tag keys appear in your billing report with cost allocatio
 
  **New cost and usage report example bar graph.**
 
-![image16](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image16.png)
+![image16](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image16.png)

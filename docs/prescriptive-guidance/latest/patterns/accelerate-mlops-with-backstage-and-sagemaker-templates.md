@@ -54,7 +54,7 @@ For more information about MLOps challenges, SageMaker AI MLOps modules, and how
 
 The following diagram shows the solution architecture for a unified developer portal that standardizes and accelerates ML infrastructure deployment with SageMaker AI across environments.
 
-![Architecture for unified developer portal with Backstage, CNOE, GitHub Actions, and Seed-Farmer.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c16160cf-d637-423e-93a7-485ffbb28646/images/233adab3-83cf-42f3-a1de-72d0b8ade5ae.png)
+![Architecture for unified developer portal with Backstage, CNOE, GitHub Actions, and Seed-Farmer.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c16160cf-d637-423e-93a7-485ffbb28646/images/233adab3-83cf-42f3-a1de-72d0b8ade5ae.png)
 
 In this architecture:
 

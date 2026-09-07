@@ -50,7 +50,7 @@ The solution also uses Amazon Elastic Compute Cloud (Amazon EC2) instances with 
 
 The following diagram shows an example workflow for migrating an Oracle database to a PostgreSQL-compatible AWS database by using AWS DMS and an Oracle bystander:
 
-![Migrating an on-premises Oracle database to PostgreSQL on AWS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6f5d5500-8b09-4bd1-8ef9-e670d58d07f8/images/1de98abd-c143-481a-b55f-e8d00eb96a38.png)
+![Migrating an on-premises Oracle database to PostgreSQL on AWS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6f5d5500-8b09-4bd1-8ef9-e670d58d07f8/images/1de98abd-c143-481a-b55f-e8d00eb96a38.png)
 
 ## Tools
 <a name="migrate-an-on-premises-oracle-database-to-amazon-rds-for-postgresql-by-using-an-oracle-bystander-and-aws-dms-tools"></a>

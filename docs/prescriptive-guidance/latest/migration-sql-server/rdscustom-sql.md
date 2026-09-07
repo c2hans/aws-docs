@@ -35,7 +35,7 @@ To use Amazon RDS Custom for SQL Server, review the [requirements](https://docs.
 
 For more information about these steps, see the [Amazon RDS Custom documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-sqlserver.workflow.html).
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-sql-server/images/guide-img/aa3b9357-4901-48ca-9fc9-a997d21ade3e/images/33431c87-6b7d-4c0c-9556-ffc8b9468916.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-sql-server/images/guide-img/aa3b9357-4901-48ca-9fc9-a997d21ade3e/images/33431c87-6b7d-4c0c-9556-ffc8b9468916.png)
 
 In Amazon RDS Custom for SQL Server, you can install software to run custom applications and agents. Because you have privileged access to the host, you can modify file systems to support legacy applications. You can also apply custom database patches or modify OS packages on your Amazon RDS Custom DB instances.
 

@@ -18,7 +18,7 @@ This section provides an overview of the architecture of this solution.
 
 Deploying this solution with the default parameters deploys the following components in your AWS account.
 
-![Architecture diagram showing DeepRacer on AWS components including AWS IoT Core for live race real-time data delivery](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/architecture-diagram.png)
+![Architecture diagram showing DeepRacer on AWS components including AWS IoT Core for live race real-time data delivery](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/architecture-diagram.png)
 
 ## Architectural components
 <a name="architecture-components"></a>

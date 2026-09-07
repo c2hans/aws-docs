@@ -9,7 +9,7 @@ The Lakehouse Analytics Starter Package deploys a complete analytics lakehouse: 
 
  **Lakehouse Analytics starter kit architecture**
 
-![Lakehouse Analytics starter kit — S3 storage with Glue ETL and Athena/Redshift/QuickSight consumption.](http://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/lakehouse_analytics.png)
+![Lakehouse Analytics starter kit — S3 storage with Glue ETL and Athena/Redshift/QuickSight consumption.](https://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/lakehouse_analytics.png)
 
 This architecture is particularly effective when:
 

@@ -40,7 +40,7 @@ Migrating a DB instance to another AWS account involves steps such as taking a m
 
 The following diagram shows the workflow for migrating an Amazon RDS DB instance to a different VPC in the same AWS account.
 
-![Workflow for migrating an Amazon RDS DB instance to a different VPC in the same AWS account](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/dabcee69-9cc6-47f9-9964-635e349caaaf/images/73e16544-6276-4f03-9ae2-42b8c7c20315.png)
+![Workflow for migrating an Amazon RDS DB instance to a different VPC in the same AWS account](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/dabcee69-9cc6-47f9-9964-635e349caaaf/images/73e16544-6276-4f03-9ae2-42b8c7c20315.png)
 
 The steps consist of the following. See the [Epics](#migrate-an-amazon-rds-db-instance-to-another-vpc-or-account-epics) section for detailed instructions.
 
@@ -54,7 +54,7 @@ The steps consist of the following. See the [Epics](#migrate-an-amazon-rds-db-in
 
 The following diagram shows the workflow for migrating an Amazon RDS DB instance to a different AWS account.
 
-![Workflow for migrating an Amazon RDS DB instance to a different AWS account](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/dabcee69-9cc6-47f9-9964-635e349caaaf/images/5536e69e-3965-4ca2-8a0b-2573659b5f8f.png)
+![Workflow for migrating an Amazon RDS DB instance to a different AWS account](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/dabcee69-9cc6-47f9-9964-635e349caaaf/images/5536e69e-3965-4ca2-8a0b-2573659b5f8f.png)
 
 The steps consist of the following. See the [Epics](#migrate-an-amazon-rds-db-instance-to-another-vpc-or-account-epics) section for detailed instructions.
 

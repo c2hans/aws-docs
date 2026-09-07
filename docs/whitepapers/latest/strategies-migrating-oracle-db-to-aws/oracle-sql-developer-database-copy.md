@@ -23,4 +23,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/strategies-migrating-
 
  The following screenshot shows the **Database Copy Wizard**.
 
-![Screen capture showing the Database Copy Wizard](http://docs.aws.amazon.com/whitepapers/latest/strategies-migrating-oracle-db-to-aws/images/database-copy-wizard.png)
+![Screen capture showing the Database Copy Wizard](https://docs.aws.amazon.com/whitepapers/latest/strategies-migrating-oracle-db-to-aws/images/database-copy-wizard.png)

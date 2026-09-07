@@ -57,6 +57,6 @@ Before connecting the ESC to the servo hat, **remove the center (power/positive)
 
 1. Proceed to [Install the software](custom-car-software.md).
 
-![Raspberry Pi 5 compute stack mounted on the Evo chassis top plate.](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/custom-car/deepracer_car_top_view.png)
+![Raspberry Pi 5 compute stack mounted on the Evo chassis top plate.](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/custom-car/deepracer_car_top_view.png)
 
-![Waveshare PCA9685 servo driver HAT mounted on GPIO header extender above Raspberry Pi 5.](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/custom-car/deepracer_servo_hat.png)
+![Waveshare PCA9685 servo driver HAT mounted on GPIO header extender above Raspberry Pi 5.](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/custom-car/deepracer_servo_hat.png)

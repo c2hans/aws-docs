@@ -32,7 +32,7 @@ Amazon Cognito is a good choice when you require a secure and cost-effective  u
 
 The following diagram illustrates some of these scenarios.
 
-![Using Amazon Cognito as a customer identity and access management (CIAM).](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-identity-management/images/guide-img/1bf8562a-50f2-4dfa-9a24-c4edfe7b936c/images/a0686cf2-db62-4731-bcda-e5c6beb02240.png)
+![Using Amazon Cognito as a customer identity and access management (CIAM).](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-identity-management/images/guide-img/1bf8562a-50f2-4dfa-9a24-c4edfe7b936c/images/a0686cf2-db62-4731-bcda-e5c6beb02240.png)
 
 1. The application authenticates with Amazon Cognito user pools and gets tokens.
 
@@ -64,7 +64,7 @@ The following sections discuss three patterns for integrating Amazon Cognito wit
 
 You can configure an Application Load Balancer with Amazon Cognito to authenticate application users, as illustrated in the following diagram.
 
-![Configuring an Application Load Balancer with Amazon Cognito for identification management.](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-identity-management/images/guide-img/1bf8562a-50f2-4dfa-9a24-c4edfe7b936c/images/af4db1f6-4833-4a1a-b295-6f8933c4ccd6.png)
+![Configuring an Application Load Balancer with Amazon Cognito for identification management.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-identity-management/images/guide-img/1bf8562a-50f2-4dfa-9a24-c4edfe7b936c/images/af4db1f6-4833-4a1a-b295-6f8933c4ccd6.png)
 
 By configuring the HTTPS listener default rule, you can offload user identification to the Application Load Balancer and create an automatic authentication process. For details, see [How do I set up an Application Load Balancer to authenticate users through an Amazon Cognito user pool](https://repost.aws/knowledge-center/cognito-user-pool-alb-authentication) in the AWS Knowledge Center. If your application is hosted on Kubernetes, see the AWS blog post [How to use Application Load Balancer and Amazon Cognito to authenticate users for your Kubernetes web apps](https://aws.amazon.com/blogs/containers/how-to-use-application-load-balancer-and-amazon-cognito-to-authenticate-users-for-your-kubernetes-web-apps/).
 
@@ -73,11 +73,11 @@ By configuring the HTTPS listener default rule, you can offload user identificat
 
 Amazon API Gateway is a fully managed, cloud-based API gateway service that makes it easy to create, publish and manage APIs at scale. It is an entry point for user traffic into the backend services. You can integrate Amazon Cognito with API Gateway to implement authentication and access control, either to protect the APIs from misuse or for any other security or business use case. There are two methods for securing access to API Gateway:  by using an Amazon Cognito authorizer (as illustrated in the following diagram) or by using an AWS Lambda authorizer. For more information about these implementations, see [How do I set up an Amazon Cognito user pool as an authorizer on an API Gateway REST API?](https://repost.aws/knowledge-center/api-gateway-cognito-user-pool-authorizer) in the AWS Knowledge Base.
 
-![Using an Amazon Cognito authorizer with API Gateway for identification management.](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-identity-management/images/guide-img/1bf8562a-50f2-4dfa-9a24-c4edfe7b936c/images/487ab392-fe78-4fca-a519-fc657caa9c4b.png)
+![Using an Amazon Cognito authorizer with API Gateway for identification management.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-identity-management/images/guide-img/1bf8562a-50f2-4dfa-9a24-c4edfe7b936c/images/487ab392-fe78-4fca-a519-fc657caa9c4b.png)
 
 ## Integration with Amazon OpenSearch Service
 <a name="cognito-opensearch"></a>
 
 You can use Amazon Cognito to secure Amazon OpenSearch Service domains. For example, if a user might need access to OpenSearch Dashboards from the internet, as illustrated in the following diagram. In this scenario, Amazon Cognito can provide access permissions, including fine-grained permissions, by mapping Amazon Cognito groups and users to internal OpenSearch Service permissions. For more information, see [Configuring Amazon Cognito authentication for OpenSearch Dashboards](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/cognito-auth.html) in the OpenSearch Service documentation.
 
-![Using an Amazon Cognito authorizer with API Gateway for identification management.](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-identity-management/images/guide-img/1bf8562a-50f2-4dfa-9a24-c4edfe7b936c/images/a335f878-28b0-4150-b6c9-7905fed65579.png)
+![Using an Amazon Cognito authorizer with API Gateway for identification management.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-identity-management/images/guide-img/1bf8562a-50f2-4dfa-9a24-c4edfe7b936c/images/a335f878-28b0-4150-b6c9-7905fed65579.png)

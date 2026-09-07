@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterpri
 
 For regulated customers, tracking all the artifacts used for a production model is an essential requirement for reproducing the model to meet regulatory and control requirements. The following diagram shows the various artifacts that need to be tracked and versioned to recreate the data processing, model training, and model deployment process.
 
-![A diagram showing artifacts needed for tracking.](http://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-20.png)
+![A diagram showing artifacts needed for tracking.](https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-20.png)
 
 *Artifacts needed for tracking*
 + **Code versioning** — Code repositories such as GitLab, Bitbucket, and CodeCommit support versioning of the code artifacts. You can check-in / check-out code by commit ID. Commit ID uniquely identifies a version of source code in a repository.

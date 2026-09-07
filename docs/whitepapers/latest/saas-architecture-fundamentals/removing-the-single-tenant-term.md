@@ -24,7 +24,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
 
  The following diagram provides an example of how siloed and pooled models are used more granularly in a SaaS environment:
 
-![A diagram depicting silo and pool models .](http://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fundamentals/images/silo-and-pool-models.png)
+![A diagram depicting silo and pool models .](https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fundamentals/images/silo-and-pool-models.png)
 
  This diagram includes a series of samples that are meant to illustrate the more targeted nature of the silo and pool models. If you follow this from left to right, you’ll see that we start out with an order microservice. This microservice has siloed compute and pooled storage. It interacts with a product service that has pooled compute and pooled storage.
 

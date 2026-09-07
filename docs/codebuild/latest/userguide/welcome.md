@@ -24,11 +24,11 @@ To get started with AWS, you need an AWS account. For information about creating
 
 You can use the AWS CodeBuild or AWS CodePipeline console to run CodeBuild. You can also automate the running of CodeBuild by using the AWS Command Line Interface (AWS CLI) or the AWS SDKs.
 
-![The diagram shows how CodeBuild works with AWS CLI or AWS SDKs.](http://docs.aws.amazon.com/codebuild/latest/userguide/images/overview.png)
+![The diagram shows how CodeBuild works with AWS CLI or AWS SDKs.](https://docs.aws.amazon.com/codebuild/latest/userguide/images/overview.png)
 
 As the following diagram shows, you can add CodeBuild as a build or test action to the build or test stage of a pipeline in AWS CodePipeline. AWS CodePipeline is a continuous delivery service that you can use to model, visualize, and automate the steps required to release your code. This includes building your code. A *pipeline* is a workflow construct that describes how code changes go through a release process.
 
-![The diagram shows how CodeBuild works with AWS CodePipeline.](http://docs.aws.amazon.com/codebuild/latest/userguide/images/pipeline.png)
+![The diagram shows how CodeBuild works with AWS CodePipeline.](https://docs.aws.amazon.com/codebuild/latest/userguide/images/pipeline.png)
 
 To use CodePipeline to create a pipeline and then add a CodeBuild build or test action, see [Use CodeBuild with CodePipeline](how-to-create-pipeline.md). For more information about CodePipeline, see the [AWS CodePipeline User Guide](https://docs.aws.amazon.com/codepipeline/latest/userguide/).
 

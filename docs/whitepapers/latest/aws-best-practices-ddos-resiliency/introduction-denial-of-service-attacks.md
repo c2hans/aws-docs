@@ -7,11 +7,11 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 
  A Denial of Service (DoS) attack, or event, is a deliberate attempt to make a website or application unavailable to users, such as by flooding it with network traffic. Attackers use a variety of techniques that consume large amounts of network bandwidth or tie up other system resources, disrupting access for legitimate users. In its simplest form, a lone attacker uses a single source to carry out a DoS attack against a target, as shown in the following figure.
 
-![A diagram depicting a DoS attack](http://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/images/dos-attack.png)
+![A diagram depicting a DoS attack](https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/images/dos-attack.png)
 
 In a DDoS attack, an attacker uses multiple sources to orchestrate an attack against a target. These sources can include distributed groups of malware infected computers, routers, IoT devices, and other endpoints. The following figure shows a network of compromised hosts that participate in the attack, generating a flood of packets or requests to overwhelm the target.
 
-![A diagram depicting a DDoS attack](http://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/images/ddos-attack.png)
+![A diagram depicting a DDoS attack](https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/images/ddos-attack.png)
 
  There are seven layers in the Open Systems Interconnection (OSI) model, described in the following table. DDoS attacks are most common at layers 3, 4, and 7.
 +  Layer 3 and 4 attacks correspond to the Network and Transport layers of the OSI model. Within this whitepaper, AWS refers to these collectively as *infrastructure layer attacks*.

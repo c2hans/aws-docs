@@ -36,11 +36,11 @@ You can change these defaults.
 
 1. Change the volume by doing one of the following:
    + Go to **Settings**, **Peripheral Devices**, **Sound**, and change the **Output-Speaker** by using the \+ and − icons.
-![Settings menu showing peripheral devices, with sound output speaker volume set to 73.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/sound2.png)
+![Settings menu showing peripheral devices, with sound output speaker volume set to 73.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/sound2.png)
 **Note**
 Your built-in speaker volume stays the same even if you restart the device or change the volume of the headset.
    + Press the \+ and − volume buttons on the top of the device to raise or lower the volume.
-![Smart speaker device with volume buttons on top and a blue light strip.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/volume-buttons.jpg)
+![Smart speaker device with volume buttons on top and a blue light strip.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/volume-buttons.jpg)
 
 **Changing the default volume (Output) of the headset**
 
@@ -48,9 +48,9 @@ Your built-in speaker volume stays the same even if you restart the device or ch
 
 1. Change the volume by doing the following:
    + Go to **Settings**, **Peripheral Devices**, **Sound**, and change the **Output-Speaker** by using the \+ and − icons.
-![Settings menu showing peripheral devices, with sound output speaker controls highlighted.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/sound1.png)
+![Settings menu showing peripheral devices, with sound output speaker controls highlighted.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/sound1.png)
    + Press the \+ and − volume buttons on the top of the device to raise or lower the volume.
-![](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/volume-buttons.jpg)
+![](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/volume-buttons.jpg)
    + If your headset has volume buttons attached to it, you can use them.
 
 ## Using Mute on WorkSpaces Thin Client
@@ -58,5 +58,5 @@ Your built-in speaker volume stays the same even if you restart the device or ch
 
 You can use the Mute function by doing one of the following:
 + If you want to mute all connected and built-in microphones on your WorkSpaces Thin Client, use the **Mute** button on the top of the device. The icon on the button will glow red when Mute is activated.
-![Cube-shaped device with light bar, microphones, and mute button for WorkSpaces Thin Client.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/mic-mute.jpg)
+![Cube-shaped device with light bar, microphones, and mute button for WorkSpaces Thin Client.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/mic-mute.jpg)
 + If you want to mute just the device microphone, connect a headset with microphone to the device. The device microphone is automatically muted.

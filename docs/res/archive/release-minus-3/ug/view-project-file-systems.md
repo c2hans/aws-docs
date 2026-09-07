@@ -7,4 +7,4 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-3/ug/view-proj
 
 When a project is selected, you can expand the **File Systems** pane at the bottom of the screen to view file systems associated with the project.
 
-![View file systems associated with a project](http://docs.aws.amazon.com/res/archive/release-minus-3/ug/images/res-projectfilesystems.jpg)
+![View file systems associated with a project](https://docs.aws.amazon.com/res/archive/release-minus-3/ug/images/res-projectfilesystems.jpg)

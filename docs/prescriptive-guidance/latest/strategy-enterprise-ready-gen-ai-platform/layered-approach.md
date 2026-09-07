@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-en
 
 To build a robust and scalable generative AI platform, organizations need a comprehensive environment that enables innovation while maintaining control and security. This strategy document recommends an enterprise-ready environment that consists of four essential layers, which are shown in the following image.
 
-![The four layers of an enterprise-ready generative AI environment.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-enterprise-ready-gen-ai-platform/images/guide-img/d1de6eb7-906b-4581-b4e9-93e995f9bb3c/images/d0d911df-cc0e-4b04-b200-879f64735e35.png)
+![The four layers of an enterprise-ready generative AI environment.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-enterprise-ready-gen-ai-platform/images/guide-img/d1de6eb7-906b-4581-b4e9-93e995f9bb3c/images/d0d911df-cc0e-4b04-b200-879f64735e35.png)
 
 Each of the following layers plays a crucial role in successful generative AI adoption and scaling across the enterprise:
 

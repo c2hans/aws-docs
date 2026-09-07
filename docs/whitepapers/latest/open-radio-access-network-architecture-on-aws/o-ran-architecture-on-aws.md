@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/open-radio-access-net
 
  As shown in the preceding figure, AWS can provide all required building blocks for O-RAN development and deployment. While non-RT RIC is located in the Region to use all the benefit of AWS data lakes and AI/ML gears, near-RT RIC and O-CU can be hosted at the edge site using the [AWS Outposts](https://aws.amazon.com/outposts/) and Amazon EKS services. At the far-edge site, O-DU can be placed on Amazon EKS Anywhere. Because this architecture is fully empowered by AWS services, service deployment and monitoring of each component can be done through AWS management and orchestration services such as [AWS Software Development Kits](https://aws.amazon.com/developer/tools/) (AWS SDKs), [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/), and [AWS CloudFormation](https://aws.amazon.com/cloudformation/), which provide true single panes of glass for the entire RAN operation. The following figure shows a reference architecture of O-RAN on AWS infrastructure hosting the O-RAN components.
 
-![A diagram depicting O-RAN reference architecture.](http://docs.aws.amazon.com/whitepapers/latest/open-radio-access-network-architecture-on-aws/images/o-ran-ra.png)
+![A diagram depicting O-RAN reference architecture.](https://docs.aws.amazon.com/whitepapers/latest/open-radio-access-network-architecture-on-aws/images/o-ran-ra.png)
 
 ## O-RAN components on AWS
 <a name="o-ran-components-on-aws"></a>
@@ -36,13 +36,13 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/open-radio-access-net
 
  All these functions interact with one another, and are enabled by a common radio network information base. The latter provides near-RT RIC functions with an overview of the network RIC supports. This is illustrated in the following figure.
 
-![A document depicting near-RT RIC components.](http://docs.aws.amazon.com/whitepapers/latest/open-radio-access-network-architecture-on-aws/images/near-rt-ric.png)
+![A document depicting near-RT RIC components.](https://docs.aws.amazon.com/whitepapers/latest/open-radio-access-network-architecture-on-aws/images/near-rt-ric.png)
 
  The near-RT RIC requires rapid low latency access to the network. This is enabled by AWS Outposts, which provides CSPs with a fully-managed service that offers the same AWS infrastructure, AWS services, APIs, and tools to their edge locations. AWS Outposts provides services such as Amazon EKS and Amazon ECS to support container-based applications, Amazon EMR clusters to support data analytics effort requiring immediate local processing, and Amazon RDS for relational databases.
 
  Near-RT RIC ISVs can use Amazon EKS on Outposts to deliver RIC functions such as QoS managements. Amazon EKS enables non-RT RIC to scale with network conditions, upgrades RIC functions independently from one another, supports canary deployment of the new RIC version, and supports third-party RAN applications.
 
-![A diagram depicting near-RT RIC AWS architecture.](http://docs.aws.amazon.com/whitepapers/latest/open-radio-access-network-architecture-on-aws/images/near-rt-architecture.png)
+![A diagram depicting near-RT RIC AWS architecture.](https://docs.aws.amazon.com/whitepapers/latest/open-radio-access-network-architecture-on-aws/images/near-rt-architecture.png)
 
  [Amazon ElastiCache](https://aws.amazon.com/elasticache/) provides a fully managed Redis database, simplifying the hosting of RIC Shared Data Storage in support of the O-RAN SDL libraries. It provides sub-millisecond latency to support near real-time RIC applications such as mobility management, and supports the scaling necessary to support the entire set of RIC applications.
 
@@ -56,7 +56,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/open-radio-access-net
 +  Hosting of non-real time applications (R-APP).
 +  Enrichment of A1 messages.
 
-![A diagram depicting non-RT RIC functional view.](http://docs.aws.amazon.com/whitepapers/latest/open-radio-access-network-architecture-on-aws/images/non-rt-ric.png)
+![A diagram depicting non-RT RIC functional view.](https://docs.aws.amazon.com/whitepapers/latest/open-radio-access-network-architecture-on-aws/images/non-rt-ric.png)
 
  To support operators that plan for a one-to-many relationship between non-RT RIC and near-RT-RIC, you can use AWS services such as Amazon API Gateway, AWS Lambda, AWS Step Functions, and [Amazon Simple Queue Service](https://aws.amazon.com/sqs/) (Amazon SQS).
 +  [Amazon API Gateway](https://aws.amazon.com/api-gateway/) provides you with scalable services that make it easy to publish, maintain, and monitor the A1 interfaces between non-RT and near-RT RIC.
@@ -66,7 +66,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/open-radio-access-net
 
  The following figure illustrates a reference architecture for developing Non-RT RIC on AWS:
 
-![A diagram depicting non-RT RIC on AWS.](http://docs.aws.amazon.com/whitepapers/latest/open-radio-access-network-architecture-on-aws/images/non-rt-ric2.png)
+![A diagram depicting non-RT RIC on AWS.](https://docs.aws.amazon.com/whitepapers/latest/open-radio-access-network-architecture-on-aws/images/non-rt-ric2.png)
 
  The AWS Cloud enables you to host modern R-APP applications, specially designed to run on the Non-RT RIC as code by using AWS Lambda. Similarly, Amazon EKS provides you with a managed container service to run and scale your Kubernetes-based R-APP applications.
 
@@ -81,7 +81,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/open-radio-access-net
 
  This section discusses how AWS services help you develop SMOs that benefit from scalability, performance, and reliability, and deploy them in minutes across your entire network. The following figure illustrates an SMO architecture on AWS.
 
-![A diagram depicting SMO architecture on AWS.](http://docs.aws.amazon.com/whitepapers/latest/open-radio-access-network-architecture-on-aws/images/smo-architecture.png)
+![A diagram depicting SMO architecture on AWS.](https://docs.aws.amazon.com/whitepapers/latest/open-radio-access-network-architecture-on-aws/images/smo-architecture.png)
 
  Ingestion of O1 messages is facilitated by [Amazon API Gateway](https://aws.amazon.com/api-gateway/), [Amazon Kinesis](https://aws.amazon.com/kinesis/), [Amazon MSK](https://aws.amazon.com/msk/), and [AWS Transfer Family](https://aws.amazon.com/aws-transfer-family/). For example, when an O-RAN network element (NE) has a large configuration change, a large log, or a large performance data available, Amazon API Gateway facilitates the implementation of a REST request to initiate a file retrieval from the NE. The data transfer is facilitated by the AWS Transfer Family. Similarly, Amazon Kinesis and Amazon MSK provide you with scalable, reliable, managed solutions to ingest near real-time network events and near real-time configuration messages. SMO functions and applications can subscribe to a fully scalable data bus, and provide the required RAN network management and orchestration.
 
@@ -112,7 +112,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/open-radio-access-net
 
  This full stack of AWS tools for building O-CU on AWS from the bottom layer (through AWS Outposts) to the top of O-CU application and additional monitoring and orchestration layers (through CloudFormation, CloudWatch) are shown in the following figure in a high-level view.
 
-![A diagram depicting full-stack view for O-CU design in AWS.](http://docs.aws.amazon.com/whitepapers/latest/open-radio-access-network-architecture-on-aws/images/full-stack-view.png)
+![A diagram depicting full-stack view for O-CU design in AWS.](https://docs.aws.amazon.com/whitepapers/latest/open-radio-access-network-architecture-on-aws/images/full-stack-view.png)
 
 ### O-DU and O-RU
 <a name="o-du-and-o-ru"></a>

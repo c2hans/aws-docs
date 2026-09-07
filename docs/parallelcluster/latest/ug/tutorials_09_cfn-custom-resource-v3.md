@@ -32,7 +32,7 @@ In this tutorial, you use a quick-create stack to deploy a CloudFormation templa
    + A nested CloudFormation stack with the default policies for managing the cluster.
    + A root CloudFormation stack for the nested stacks.
    + An AWS ParallelCluster cluster with the Slurm scheduler and a defined number of compute nodes.
-![The console CloudFormation quick-create user interface.](http://docs.aws.amazon.com/parallelcluster/latest/ug/images/cfn-quick-create.png)
+![The console CloudFormation quick-create user interface.](https://docs.aws.amazon.com/parallelcluster/latest/ug/images/cfn-quick-create.png)
 
 1. In the **Quick create stack** **Parameters** section, enter values for the following parameters:
 
@@ -149,7 +149,7 @@ View the CloudFormation cluster output to obtain useful cluster details. The add
 1. Navigate to the [CloudFormation console](https://console.aws.amazon.com/cloudformation/home) and select the stack that includes your AWS ParallelCluster custom resource.
 
 1. Choose **Stack details**, and select the **Outputs** tab.
-![The console CloudFormation outputs table showing values for HeadNodeIp and ValidationMessages.](http://docs.aws.amazon.com/parallelcluster/latest/ug/images/cfn-outputs.png)
+![The console CloudFormation outputs table showing values for HeadNodeIp and ValidationMessages.](https://docs.aws.amazon.com/parallelcluster/latest/ug/images/cfn-outputs.png)
 
    Validation messages might be truncated. For more information about how to retrieve logs, see [AWS ParallelCluster troubleshooting](troubleshooting-v3.md).
 

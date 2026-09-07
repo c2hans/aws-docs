@@ -30,7 +30,7 @@ AWS Cloud services not only provide additional innovation and speed of integrati
 
 CLM is a set of loosely interdependent and mandatory processes defining the business interaction of a client with its financial institution or insurer. The following figure provides a generalized overview of CLM stages for the banking and insurance industries:
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-banking-modernization-clm/images/guide-img/3dd14f64-3f68-43c4-8bd5-d6738253ef4f/images/b77dee94-ed1e-4ef7-b43d-9bbdd5de75ec.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-banking-modernization-clm/images/guide-img/3dd14f64-3f68-43c4-8bd5-d6738253ef4f/images/b77dee94-ed1e-4ef7-b43d-9bbdd5de75ec.png)
 
 Take into consideration that these processes vary by client segment. For example, commercial client onboarding is different from retail client onboarding. The processes can also vary from industry to industry. Onboarding a banking client is different from onboarding an insurance client. This strategy focuses on the banking retail client experience.
 

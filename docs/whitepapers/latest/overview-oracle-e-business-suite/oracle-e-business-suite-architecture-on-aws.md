@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-oracle-e-bus
 
  The following reference diagram illustrates how Oracle E-Business Suite can be deployed on AWS. The application and database tiers are deployed across multiple Availability Zones for high availability.
 
-![Diagram showing a sample Oracle E-Business Suite deployment on AWS](http://docs.aws.amazon.com/whitepapers/latest/overview-oracle-e-business-suite/images/sample-oracle-e-business-suite-deployment-on-aws.png)
+![Diagram showing a sample Oracle E-Business Suite deployment on AWS](https://docs.aws.amazon.com/whitepapers/latest/overview-oracle-e-business-suite/images/sample-oracle-e-business-suite-deployment-on-aws.png)
 
  User requests from the client tier are routed using Amazon Route53 DNS to the Oracle E-Business Suite application servers deployed on EC2 instances through Application Load Balancer. The OHS and the Oracle WLS are deployed on each application tier instance. The OHS accepts the requests from Application Load Balancer and routes them to the Oracle WLS. The Oracle WLS runs the appropriate business logic and communicates with the Oracle database.
 

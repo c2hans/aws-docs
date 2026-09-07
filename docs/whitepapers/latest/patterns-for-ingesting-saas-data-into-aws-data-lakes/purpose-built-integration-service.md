@@ -19,7 +19,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/patterns-for-ingestin
 
  The following diagram depicts the architecture of the solution where data from Salesforce is ingested into Amazon S3 using Amazon AppFlow. Once the data is ingested in Amazon S3, you can use an [AWS Glue crawler](https://docs.aws.amazon.com/glue/latest/dg/add-crawler.html) to populate the [AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/components-overview.html#data-catalog-intro) with tables and start consuming this data using SQL in [Amazon Athena](https://aws.amazon.com/athena).
 
-![This is a diagram that shows how Amazon AppFlow does data ingestion.](http://docs.aws.amazon.com/whitepapers/latest/patterns-for-ingesting-saas-data-into-aws-data-lakes/images/appflow-based-data-ingestion-pattern.png)
+![This is a diagram that shows how Amazon AppFlow does data ingestion.](https://docs.aws.amazon.com/whitepapers/latest/patterns-for-ingesting-saas-data-into-aws-data-lakes/images/appflow-based-data-ingestion-pattern.png)
 
 ### Usage patterns
 <a name="usage-patterns"></a>

@@ -9,7 +9,7 @@ The chime media stream pipeline must belong to the same AWS account as the Amazo
 
 The following diagram shows the architecture of an Amazon Chime SDK media stream pipeline. Numbers in the diagram correspond to the numbered text below.
 
-![Diagram showing an API call that creates a media stream pool.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/media-stream-pipe-architecture.png)
+![Diagram showing an API call that creates a media stream pool.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/media-stream-pipe-architecture.png)
 
 In the diagram:
 

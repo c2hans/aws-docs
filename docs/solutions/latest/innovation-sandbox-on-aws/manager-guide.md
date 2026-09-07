@@ -16,7 +16,7 @@ To create a lease template, navigate to **Lease Templates** in the web UI and ch
 
 On the **Basic details** page, configure the template’s name, description, visibility, and approval requirements.
 
-![Basic Details page](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/lease-template-wizard-step1-basic-details.png)
+![Basic Details page](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/lease-template-wizard-step1-basic-details.png)
 
 1. For **Name**, enter a descriptive name for your lease template so that you can keep track of it.
 
@@ -36,10 +36,10 @@ On the **Basic details** page, configure the template’s name, description, vis
 
 On the **Blueprint** page, you can associate a blueprint with this lease template to pre-deploy infrastructure when leases are created.
 
-![Blueprint page](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/lease-template-wizard-step2-blueprint.png)
+![Blueprint page](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/lease-template-wizard-step2-blueprint.png)
 
 1. Blueprint selection is enabled by default. To skip blueprint selection, turn off **Enable Blueprint Selection**.
-![Blueprint page with selection disabled](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/lease-template-wizard-step2-blueprint-disabled.png)
+![Blueprint page with selection disabled](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/lease-template-wizard-step2-blueprint-disabled.png)
 
 1. Choose a blueprint from the available options.
 
@@ -50,7 +50,7 @@ When you approve a lease, the blueprint deploys to the sandbox account. If deplo
 
 On the **Budget** page, configure spending limits and budget thresholds. See [Budget thresholds](#budget-thresholds) for detailed guidance.
 
-![Budget Settings page](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/lease-template-wizard-step3-budget.png)
+![Budget Settings page](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/lease-template-wizard-step3-budget.png)
 
 1. Choose whether to set a maximum budget:
    +  **Budget limit enabled**: Enter a value in **Maximum Spend** (measured in $USD).
@@ -68,7 +68,7 @@ On the **Budget** page, configure spending limits and budget thresholds. See [Bu
 
 On the **Lease Duration** page, configure time limits and duration thresholds. See [Duration thresholds](#duration-thresholds) for detailed guidance.
 
-![Lease Duration page](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/lease-template-wizard-step4-duration.png)
+![Lease Duration page](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/lease-template-wizard-step4-duration.png)
 
 1. Choose whether to set a maximum duration:
    +  **Duration limit enabled**: Enter a value in **Maximum Duration (in hours)**. This determines how long the lease remains active.
@@ -86,7 +86,7 @@ On the **Lease Duration** page, configure time limits and duration thresholds. S
 
 On the **Cost Report Group** page, optionally assign a cost report group to the lease template for cost attribution and reporting purposes.
 
-![Cost Report Group page](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/lease-template-wizard-step5-cost-report.png)
+![Cost Report Group page](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/lease-template-wizard-step5-cost-report.png)
 
 1. Choose whether to set a cost report group:
    +  **Cost reporting group enabled**: You must select a cost reporting group.
@@ -120,7 +120,7 @@ The new lease template will be available for users to request leases (if public)
 
 After creating a lease template, you can modify its configuration from the lease template details page. Each section of the template can be edited independently.
 
-![Lease Template Details page](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/lease-template-details-page.png)
+![Lease Template Details page](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/lease-template-details-page.png)
 
 To update a lease template:
 
@@ -149,7 +149,7 @@ Modifying a lease template will not affect any existing leases with the old conf
 
 You can delete lease templates that are no longer needed. Deleting a template removes it from the available templates list but does not affect existing leases created from that template.
 
-![Delete action in Actions dropdown](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/lease-template-delete-action.png)
+![Delete action in Actions dropdown](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/lease-template-delete-action.png)
 
 To delete a lease template:
 
@@ -215,7 +215,7 @@ Lease sharing is turned off by default. An administrator must turn on the **Enab
 ### Adding or removing users and groups on a lease
 <a name="lease-sharing-add"></a>
 
-![Assignments tab on the lease details page](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/lease-assignments-tab.png)
+![Assignments tab on the lease details page](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/lease-assignments-tab.png)
 
 You manage sharing from the **Assignments** tab on the lease details page. Changes you stage on this tab are applied together when you save, so you can add and remove several principals in a single update.
 
@@ -283,7 +283,7 @@ If you turn off **Enable Maximum Budget**, the lease will not automatically term
 
 You can still set thresholds on a lease with no budget. It is encouraged that you do so users can keep track of the lease usage and take action if necessary. The following figure shows an example of a lease with no budget but with thresholds set.
 
-![Setting thresholds and no budget](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/no-budget-thresholds.png)
+![Setting thresholds and no budget](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/no-budget-thresholds.png)
 
 **Setting thresholds with no budget**
 In this example, an alert is sent when the budget reaches $100, $500 and $750, and the account is frozen when the budget reaches $1000. Freezing the account prevents further user activity on the account, as any active resources will continue to incur costs. It gives managers time to investigate the spending, if needed. The user can also keep track on the spending using alerts.
@@ -300,7 +300,7 @@ The maximum budget you can set is limited by the **Max budget** setting in the *
 
 When you set a maximum budget a threshold is automatically created for you. This threshold will wipe the account once that budget is reached.
 
-![Default threshold when a budget is set](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/auto-budget-threshold.png)
+![Default threshold when a budget is set](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/auto-budget-threshold.png)
 
 **Default threshold when a budget is set**
 You can also set additional thresholds to send alerts or freeze the account at different budget levels. They can be used to keep track of the spending and take action if necessary.
@@ -316,7 +316,7 @@ Leases with no duration will only terminate if a maximum budget is set, if manua
 
 The duration configuration determines how long the account is available once leased to a user. The thresholds are measured in hours. It is important to note that the threshold’s actions are only triggered when a certain amount of hours is left.
 
-![Standard duration threshold](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/standard-duration-threshold.png)
+![Standard duration threshold](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/standard-duration-threshold.png)
 
 **Standard duration threshold**
 In this example, an alert is sent when 5 hours are left on the lease. It gives the user time to save their work if they want. Once the lease terminates, the account goes through the cleanup process.
@@ -328,7 +328,7 @@ As a Manager or Administrator, you can view and manage the status of leases. Lea
 
 A lease is owned by the user who requested it. When lease sharing is enabled, a lease can also be shared with additional users and groups for collaboration. For more information, refer to [Sharing a lease with additional users and groups](#lease-sharing).
 
-![Leases page showing the All Leases tab with property filter and Access Type column](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/leases-page.png)
+![Leases page showing the All Leases tab with property filter and Access Type column](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/leases-page.png)
 
 You can view all leases on the **Leases** page. The page organizes leases into three tabs: **All Leases**, **My Leases** (leases you own), and **Shared with me** (leases others have shared with you). The **Name** column identifies each lease as `<lease template name> (<first 8 characters of the lease UUID>)`. The **UUID** column shows the same value in full. Use the property filter to narrow the list by properties such as lease name, owner, status, lease template, AWS account, or access type, and use the table preferences to choose which columns are visible. By default, each tab shows leases in an active state (Pending Approval, Active, Frozen, and Provisioning).
 

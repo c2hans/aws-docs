@@ -44,4 +44,4 @@ The underlying technology of the Cloud Digital Interface is a live video SDK bui
 
  For more information on EFA, see [Elastic fabric adapter](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa.html) in the *Amazon Elastic Compute Cloud User Guide for Linux Instances*.
 
-![CDI SDK](http://docs.aws.amazon.com/CDI-SDK/latest/ug/images/CDISDK.png)
+![CDI SDK](https://docs.aws.amazon.com/CDI-SDK/latest/ug/images/CDISDK.png)

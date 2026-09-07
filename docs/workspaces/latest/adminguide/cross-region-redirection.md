@@ -299,7 +299,7 @@ To make sure your WorkSpaces users are using the connection string instead of th
 
 The following diagram describes the deployment process of cross-Region redirection.
 
-![Cross-Region redirection](http://docs.aws.amazon.com/workspaces/latest/adminguide/images/Doppel-admin-LT-MRR.png)
+![Cross-Region redirection](https://docs.aws.amazon.com/workspaces/latest/adminguide/images/Doppel-admin-LT-MRR.png)
 
 **Note**
 Cross-Region redirection only facilitates cross-Region failover and fallback. It doesn't facilitate creating and maintaining WorkSpaces in the secondary Region and doesn't allow cross-Region data replication. WorkSpaces in both the primary and secondary Regions should be managed separately.

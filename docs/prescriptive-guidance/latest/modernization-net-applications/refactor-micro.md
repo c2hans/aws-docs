@@ -56,4 +56,4 @@ AWS Professional Services offers custom tools and services to help you refactor 
 
 This migration and modernization approach is supported by AWS Lambda.
 
-![Re-architecting legacy .NET apps as microservices on AWS](http://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-net-applications/images/guide-img/e6435ff7-ff5b-43b9-841d-7a90ca834432/images/973f5bbd-9eae-48f3-ab47-9bd3529f205c.png)
+![Re-architecting legacy .NET apps as microservices on AWS](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-net-applications/images/guide-img/e6435ff7-ff5b-43b9-841d-7a90ca834432/images/973f5bbd-9eae-48f3-ab47-9bd3529f205c.png)

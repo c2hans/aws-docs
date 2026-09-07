@@ -13,7 +13,7 @@ With this architecture, you can:
 + Store customer device locations that you can analyze over time.
 + Analyze location history to identify trends and opportunities for optimization.
 
-![Architecture diagram showing location tracking flow from customers through mobile client to AWS services including EventBridge , Lambda , SNS, S3, and Redshift.](http://docs.aws.amazon.com/location/previous/developerguide/images/geomarketing.PNG)
+![Architecture diagram showing location tracking flow from customers through mobile client to AWS services including EventBridge , Lambda , SNS, S3, and Redshift.](https://docs.aws.amazon.com/location/previous/developerguide/images/geomarketing.PNG)
 
 The following is an overview of the steps required to build a user engagement and geomarketing application:
 

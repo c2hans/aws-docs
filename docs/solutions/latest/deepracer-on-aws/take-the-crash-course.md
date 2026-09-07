@@ -9,4 +9,4 @@ If you are just getting acquainted with DeepRacer on AWS and reinforcement learn
 
 From the home page, click **Get started** under Learning & Models, and click **Start the course**.
 
-![AWS DeepRacer Getting started with Reinforcement learning](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_getting_started_page.png)
+![AWS DeepRacer Getting started with Reinforcement learning](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_getting_started_page.png)

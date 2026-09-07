@@ -49,4 +49,4 @@ For more information about the pull approach, see the [OPA documentation](https:
 
 When you fetch external data by using bundling, replication, or a dynamic pull approach, we recommend that the authorization service facilitate this interaction. This is because the authorization service can retrieve external data and transform it into JSON for OPA to make authorization decisions. The following diagram shows how an authorization service can function with these three external data retrieval approaches.
 
-![Retrieving external data with OPA](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/f8c9bbba-e8dd-4f17-b509-7e9a6ae076dd.png)
+![Retrieving external data with OPA](https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/f8c9bbba-e8dd-4f17-b509-7e9a6ae076dd.png)

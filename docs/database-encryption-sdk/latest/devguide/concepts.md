@@ -43,7 +43,7 @@ The security of your encrypted data depends in part on protecting the data key t
 The AWS Database Encryption SDK encrypts each field with a unique data key. Then it encrypts each data key under the wrapping key you specify. It stores the encrypted data keys in the [material description](#material-description).
 To specify your wrapping key, you use a [keyring](#keyring-concept).
 
-![Envelope encryption with the AWS Database Encryption SDK](http://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/images/dbesdk-envelope.png)
+![Envelope encryption with the AWS Database Encryption SDK](https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/images/dbesdk-envelope.png)
 
 **Encrypting the same data under multiple wrapping keys**
 You can encrypt the data key with multiple wrapping keys. You might want to provide different wrapping keys for different users, or wrapping keys of different types, or in different locations. Each of the wrapping keys encrypts the same data key. The AWS Database Encryption SDK stores all of the encrypted data keys alongside the encrypted fields in the [material description](#material-description).
@@ -73,7 +73,7 @@ Each encrypted data key includes metadata, including the identifier of the wrapp
 
 A *wrapping key* is a key-encryption key that the AWS Database Encryption SDK uses to encrypt the [data key](#data-key) that encrypts your records. Each data key can be encrypted under one or more wrapping keys. You determine which wrapping keys are used to protect your data when you configure a [keyring](#keyring-concept).
 
-![Encrypt one data key with multiple wrapping keys](http://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/images/dbesdk-wrapping-key.png)
+![Encrypt one data key with multiple wrapping keys](https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/images/dbesdk-wrapping-key.png)
 
 The AWS Database Encryption SDK supports several commonly used wrapping keys, such as [AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#master_keys) (AWS KMS) symmetric encryption KMS keys (including [multi-Region AWS KMS keys](use-kms-keyring.md#config-mrks)) and asymmetric [RSA KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/asymmetric-key-specs.html#key-spec-rsa), raw AES-GCM (Advanced Encryption Standard/Galois Counter Mode) keys, and raw RSA keys. We recommend using KMS keys whenever possible. To decide which wrapping key you should use, see [Selecting wrapping keys](configure.md#config-keys).
 

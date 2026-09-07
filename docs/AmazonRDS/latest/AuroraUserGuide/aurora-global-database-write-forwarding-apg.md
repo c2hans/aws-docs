@@ -44,7 +44,7 @@ When you create a new secondary DB cluster, you enable write forwarding by selec
 
 The following screenshot shows the **Read replica write forwarding** section with the **Turn on global write forwarding** check box selected.
 
-![The Read replica write forwarding section, showing the Turn on global write forwarding check box selected.](http://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/images/aurora-global-db-enable-write-forwarding.png)
+![The Read replica write forwarding section, showing the Turn on global write forwarding check box selected.](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/images/aurora-global-db-enable-write-forwarding.png)
 
 #### Enabling or disabling write forwarding when modifying a secondary DB cluster
 <a name="aurora-global-database-write-forwarding-enabling-apg.Console.Modifying"></a>

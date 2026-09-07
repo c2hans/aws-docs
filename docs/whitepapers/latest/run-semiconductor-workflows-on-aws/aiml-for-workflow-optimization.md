@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-wor
 
  Using AWS artificial intelligence/machine learning (AI/ML) services, you can easily train models and do real-time inference in the cloud or on-premises. In the semiconductor industry, an example is optimizing job queues and license usage. The following figure shows a simple workflow for optimization using AI/ML.
 
-![This image shows the AI/ML workflow for job optimization.](http://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-workflows-on-aws/images/semiconductor-ai-ml-workflow.png)
+![This image shows the AI/ML workflow for job optimization.](https://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-workflows-on-aws/images/semiconductor-ai-ml-workflow.png)
 
 **AI/ML for workflow optimization **
 

@@ -22,7 +22,7 @@ For detailed instructions, see [Launch instances for testing](https://docs.aws.a
 
 It will take 15–30 minutes for the server instances to boot up. You can check the status manually by logging into the Amazon EC2 console, searching for the server name, and checking the status. You will see a "2/2 checks passed" message, which indicates that the instance is healthy from an infrastructure perspective.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-factory-cloudendure/images/guide-img/3ff8a3b6-fa4d-412f-ba5f-3d8aad3942a7/images/f5ea5253-7bf2-4660-90d8-cd18c2ececc7.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-factory-cloudendure/images/guide-img/3ff8a3b6-fa4d-412f-ba5f-3d8aad3942a7/images/f5ea5253-7bf2-4660-90d8-cd18c2ececc7.png)
 
 However, for a large-scale migration, it's time-consuming to check the status of each instance, so Cloud Migration Factory provides a single automation script to verify the 2/2 status for all machines in a given wave.
 

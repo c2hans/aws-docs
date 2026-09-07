@@ -12,7 +12,7 @@ The following sections provide several database restore options for SQL Server o
 
 This approach uses Amazon Simple Storage Service (Amazon S3) commands for the AWS Command Line Interface (AWS CLI) or the Amazon S3 API to upload the backup files directly to an S3 bucket.
 
-![Using Amazon S3 to restore your SQL Server database](http://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-ec2-ha-dr/images/guide-img/09ec13da-971b-4981-975f-0940015d7fc0/images/c098974a-7df7-402f-89a0-6e5d625e8dee.png)
+![Using Amazon S3 to restore your SQL Server database](https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-ec2-ha-dr/images/guide-img/09ec13da-971b-4981-975f-0940015d7fc0/images/c098974a-7df7-402f-89a0-6e5d625e8dee.png)
 
 The process consists of these steps:
 
@@ -33,7 +33,7 @@ The process consists of these steps:
 
 This SQL Server database restore approach uses AWS DataSync to transfer the backup files to Amazon FSx for Windows File Server.
 
-![Using AWS DataSync and Amazon FSx to restore your SQL Server database](http://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-ec2-ha-dr/images/guide-img/09ec13da-971b-4981-975f-0940015d7fc0/images/d9f2af98-d4f0-4417-8381-87298f019ae9.png)
+![Using AWS DataSync and Amazon FSx to restore your SQL Server database](https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-ec2-ha-dr/images/guide-img/09ec13da-971b-4981-975f-0940015d7fc0/images/d9f2af98-d4f0-4417-8381-87298f019ae9.png)
 
 The process consists of these steps:
 
@@ -57,7 +57,7 @@ Amazon EC2 offers [Microsoft SQL Server on Microsoft Windows Server AMIs](https
 
 You can use [Amazon S3 File Gateway](https://aws.amazon.com/blogs/storage/easily-store-your-sql-server-backups-in-amazon-s3-using-file-gateway/) to store native SQL Server backups to Amazon S3, as illustrated in the following diagram. Alternatively, there are tools such as [Commvault](https://www.commvault.com/) and [LiteSpeed](https://www.quest.com/products/litespeed-for-sql-server/) that help you manage file-level backups at scale and store them directly in Amazon S3. You can also use tools such as [Actifio ](https://www.actifio.com/solutions/cloud/aws/)and [SIOS DataKeeper](https://aws.amazon.com/quickstart/architecture/sios-datakeeper/) for backup/recovery and DR configuration.
 
-![Using S3 File Gateway to restore your SQL Server database](http://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-ec2-ha-dr/images/guide-img/09ec13da-971b-4981-975f-0940015d7fc0/images/4ecf9b41-fae6-4acd-b61b-a58a54351783.png)
+![Using S3 File Gateway to restore your SQL Server database](https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-ec2-ha-dr/images/guide-img/09ec13da-971b-4981-975f-0940015d7fc0/images/4ecf9b41-fae6-4acd-b61b-a58a54351783.png)
 
 The process consists of these steps:
 

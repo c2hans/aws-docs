@@ -14,7 +14,7 @@ It includes not only the technical aspect of building software but also the deve
 
 The following diagram represents different stages of a deployment pipeline. Each stage contains required and recommended steps to be implemented in a modernized mainframe workload deployment journey.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-devops-aws-mainframe-modernization/images/guide-img/a8679bf0-2999-4310-8cbd-8d5bbb590170/images/0427988c-c4dd-418b-a6e0-2ecbbcd6ad44.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-devops-aws-mainframe-modernization/images/guide-img/a8679bf0-2999-4310-8cbd-8d5bbb590170/images/0427988c-c4dd-418b-a6e0-2ecbbcd6ad44.png)
 
 Modernized mainframe workload deployment pipeline stages include the following:
 + **Source stage** – Required steps are configuration, dependency manifests, static assets, infrastructure source, test source, and application source. Recommended step is database source.

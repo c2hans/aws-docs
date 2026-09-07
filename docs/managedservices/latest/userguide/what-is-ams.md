@@ -28,7 +28,7 @@ To better understand AMS architecture, see [these diagrams](https://d1.awsstatic
 + [AMS Managed Active Directory](ams-managed-AD.md)
 + [AMS application deployments](ams-deployments.md)
 
-![AMS cloud services: What you get and when you get it.](http://docs.aws.amazon.com/managedservices/latest/userguide/images/certifications.png)
+![AMS cloud services: What you get and when you get it.](https://docs.aws.amazon.com/managedservices/latest/userguide/images/certifications.png)
 
 **Note**
 New AWS Regions are added frequently. For the most recent AMS-supported AWS Regions, and the most recent AMS-supported operating systems, see [Supported configurations](supported-configs.md).
@@ -40,7 +40,7 @@ AMS business hours are 24 hours a day, 7 days a week, 365 days a year.
 
 AMS follows a set of practices for IT service management (ITSM) that focuses on aligning IT services with the needs of your business.
 
-![AMS provides operational structure and control through a unique mix of programmatic interfaces and AWS expertise](http://docs.aws.amazon.com/managedservices/latest/userguide/images/vpcIntroC.png)
+![AMS provides operational structure and control through a unique mix of programmatic interfaces and AWS expertise](https://docs.aws.amazon.com/managedservices/latest/userguide/images/vpcIntroC.png)
 
 ## About this AMS user guide
 <a name="about-guide"></a>

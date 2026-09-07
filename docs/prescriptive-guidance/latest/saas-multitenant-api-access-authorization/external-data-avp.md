@@ -9,6 +9,6 @@ Amazon Verified Permissions doesn't support retrieving external data for a PDP, 
 
 The following diagram shows an example of how additional data can be retrieved and incorporated into a Verified Permissions authorization request. It might be necessary to use this method to retrieve data such as RBAC role mappings, to retrieve additional attributes that are relevant to resources or principals, or in cases where data resides in different parts of an application and cannot be provided through an identity provider (IdP) token.
 
-![Retrieving external data with Amazon Verified Permissions](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/e17aad23-26ba-4de7-9272-2914afb421ec.png)
+![Retrieving external data with Amazon Verified Permissions](https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/e17aad23-26ba-4de7-9272-2914afb421ec.png)
 
 The diagram includes a feature of Amazon API Gateway called a[ Lambda authorizer](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html). Although this feature might not be available for APIs that are provided by other services or applications, you can replicate the general model of using an authorizer to fetch additional data to incorporate into a Verified Permissions authorization request across a multitude of use cases.

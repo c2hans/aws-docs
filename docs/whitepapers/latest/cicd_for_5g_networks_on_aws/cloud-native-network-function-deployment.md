@@ -9,7 +9,7 @@ CNF deployment is about the application deployment. As part of the CNF deploymen
 
 The code pipeline is integrated with the third-party test automation framework. The code pipeline can directly call the test automation framework APIs to run the test on the deployed application, query the test results, and analyze the result. This simplifies the deployment and testing of the application.
 
-![A diagram depicting application deployment and update.](http://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_on_aws/images/cicd_5g8.png)
+![A diagram depicting application deployment and update.](https://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_on_aws/images/cicd_5g8.png)
 
 *Application deployment and update*
 
@@ -18,6 +18,6 @@ The following is an example of the deployment of the user plane function/session
 + Infra creation and application installation tasks are integrated as part of the pipeline.
 + FluentD and Prometheus agents are installed and created in Amazon CloudWatch dashboards.
 
-![Screenshots showing a deployment example of UPF/SMF CNFs.](http://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_on_aws/images/cicd_5g9.png)
+![Screenshots showing a deployment example of UPF/SMF CNFs.](https://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_on_aws/images/cicd_5g9.png)
 
 *Deployment example of UPF/SMF CNFs*

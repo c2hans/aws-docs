@@ -9,7 +9,7 @@ If we build agents that support multi-tenancy, we must start by considering how 
 
 At the most basic level, you can introduce tenant context into agents though the common tools and mechanisms that we use in classic multi-tenant architectures. This could be through an API key, OAuth, or various other validation mechanisms. Many examples of this focus on resolving an authenticated system or user to a JSON web token (JWT) key that holds tenant context. The JWT is then propagated through the system. This gets more interesting when we consider how to compose agentic systems. The following diagram shows an example of two varieties of agentic environments.
 
-![Composing agentic systems](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-multitenant/images/guide-img/2d1a9d67-004c-4c75-8cd2-68ceef9bbc6f/images/6c388090-1f1b-4558-9b0a-b277edb43c25.png)
+![Composing agentic systems](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-multitenant/images/guide-img/2d1a9d67-004c-4c75-8cd2-68ceef9bbc6f/images/6c388090-1f1b-4558-9b0a-b277edb43c25.png)
 
 *Figure 13. Composing agentic systems*
 
@@ -26,7 +26,7 @@ The challenge is that the scope, nature, and design of agents is anything but co
 
 It's less important to know exactly which strategies and patterns an agent uses. In a multi-tenant model, it's more important to identify how various parts of an agent are configured, accessed, and applied. Consider a potential agent environment that relies on a series of resources and mechanisms to achieve its goals. The following diagram shows an example of such an agent.
 
-![Moving parts of an agent](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-multitenant/images/guide-img/2d1a9d67-004c-4c75-8cd2-68ceef9bbc6f/images/d497a065-c3aa-4853-ac12-2f04d287c6e7.png)
+![Moving parts of an agent](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-multitenant/images/guide-img/2d1a9d67-004c-4c75-8cd2-68ceef9bbc6f/images/d497a065-c3aa-4853-ac12-2f04d287c6e7.png)
 
 *Figure 14. Moving parts of an agent*
 
@@ -38,7 +38,7 @@ We can now think about what it means to introduce multi-tenancy. Tenancy forces 
 
 Let's now consider how to modify this model to support multi-tenancy. The following diagram shows an example of a multi-agent model.
 
-![Building a tenant-aware agent](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-multitenant/images/guide-img/2d1a9d67-004c-4c75-8cd2-68ceef9bbc6f/images/9db99601-98e1-4793-84c9-7e69f810f8a4.png)
+![Building a tenant-aware agent](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-multitenant/images/guide-img/2d1a9d67-004c-4c75-8cd2-68ceef9bbc6f/images/9db99601-98e1-4793-84c9-7e69f810f8a4.png)
 
 *Figure 15. Building a tenant-aware agent*
 

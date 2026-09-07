@@ -79,7 +79,7 @@ After enabling Auto Mode, the workflow drains and deletes old node groups, updat
 
 **Target architecture **
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e1fa4e49-96a5-42ae-9886-766298664db4/images/a2c46a84-3bf5-4f1e-8216-ab29b4ba894e.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e1fa4e49-96a5-42ae-9886-766298664db4/images/a2c46a84-3bf5-4f1e-8216-ab29b4ba894e.png)
 
 1. The GitHub Actions Workflow is triggered from the GitHub Repository by the user.
 

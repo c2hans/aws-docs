@@ -45,7 +45,7 @@ This pattern should work with any version of AWS CDK v2 or npm. Node.js versions
 
 The following diagram shows the architecture workflow for pushing an event from one account and consuming it in another account.
 
-![The three-step process for connecting the Source producer account and Destination consumer account.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/34a5f3ae-511d-4636-999f-c73396770117/images/ccc4878a-6281-4a77-a483-4e6f299d7807.png)
+![The three-step process for connecting the Source producer account and Destination consumer account.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/34a5f3ae-511d-4636-999f-c73396770117/images/ccc4878a-6281-4a77-a483-4e6f299d7807.png)
 
 The workflow contains the following steps:
 

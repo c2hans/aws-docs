@@ -31,7 +31,7 @@ Review performance and resilience recommendations and make necessary configurati
 
 Screen-1: Cluster Insights under the Cluster Health tab
 
-![Insights panel showing Incorrect Cluster Manager Configuration recommendation with medium severity and active status.](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/images/ci_console_cluster_health.png)
+![Insights panel showing Incorrect Cluster Manager Configuration recommendation with medium severity and active status.](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/images/ci_console_cluster_health.png)
 
 ## Access Cluster Insights and detailed metrics through OpenSearch UI
 <a name="w2aac24b9"></a>
@@ -58,11 +58,11 @@ Accessing Cluster Insights requires an administrative role in the OpenSearch UI 
 
 Screen-2: Access Data Administrator from OpenSearch UI
 
-![Data administration option highlighted in the left navigation menu.](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/images/ci_data_admin.png)
+![Data administration option highlighted in the left navigation menu.](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/images/ci_data_admin.png)
 
 Screen-3: Cluster Insights under the Manage data section
 
-![Cluster insights card highlighted in the Manage data section of the data administration overview.](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/images/ci_manage_data.png)
+![Cluster insights card highlighted in the Manage data section of the data administration overview.](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/images/ci_manage_data.png)
 
 ## Understanding Cluster Insights
 <a name="w2aac24c13"></a>
@@ -76,7 +76,7 @@ The **Cluster Insights Overview** page, as shown in the following screenshot, pr
 
 Screen-4: Cluster Insights landing page in OpenSearch UI application.
 
-![Cluster Insights overview page showing cluster health status, insights trends, and severity-based insights table.](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/images/ci_overview.png)
+![Cluster Insights overview page showing cluster health status, insights trends, and severity-based insights table.](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/images/ci_overview.png)
 
 ### Current cluster status
 <a name="w2aac24c13b7"></a>
@@ -141,13 +141,13 @@ A table lists recent insights generated for the cluster, with the same detailed 
 
 Screen-5: Cluster Health overview provides key metrics, best practices, and Insights
 
-![Cluster health dashboard showing metrics, configuration scores, and severity-based insights.](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/images/ci_cluster_health.png)
+![Cluster health dashboard showing metrics, configuration scores, and severity-based insights.](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/images/ci_cluster_health.png)
 
 When you click on any insights, you can see details and impacted resources, recommendations. In addition, you can also see history of fixed resources.
 
 Screen-6: Insight details. Provides you details, recommendations, and historical timeline.
 
-![Large shard size insight showing 10 shards exceeding 50GB across 200 total shards.](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/images/ci_large_shard_size.png)
+![Large shard size insight showing 10 shards exceeding 50GB across 200 total shards.](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/images/ci_large_shard_size.png)
 
 ### Metrics Section
 <a name="w2aac24c13c29"></a>
@@ -169,7 +169,7 @@ The **Node**, **Index**, and **Shard views** use OpenSearch stats to provide det
 
 Screen-7: Node, Index, and Shard level metrics
 
-![Shard view table showing CPU utilization, heap allocation, indexing metrics, and search latency for cluster shards.](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/images/ci_shard_view.png)
+![Shard view table showing CPU utilization, heap allocation, indexing metrics, and search latency for cluster shards.](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/images/ci_shard_view.png)
 
 ### Query View
 <a name="w2aac24c13c33"></a>
@@ -213,7 +213,7 @@ Double-click any query to see:
 
 Screen-8: In-flight live view. You can also view Top-N queries
 
-![Query view dashboard showing active queries, performance metrics, distribution charts, and query details table.](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/images/ci_query_view.png)
+![Query view dashboard showing active queries, performance metrics, distribution charts, and query details table.](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/images/ci_query_view.png)
 
 ### Access Insights through Amazon EventBridge events
 <a name="w2aac24c13c35"></a>

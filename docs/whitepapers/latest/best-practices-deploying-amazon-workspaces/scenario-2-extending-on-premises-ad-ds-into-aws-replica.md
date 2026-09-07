@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 
  This scenario is similar to scenario 1. However, in this scenario, a replica of the customer AD DS is deployed on AWS in combination with AD Connector. This reduces latency of authentication or query requests to AD DS running on Amazon Elastic Compute Cloud (Amazon EC2). The following figure shows a high-level view of each of the components and the user authentication flow.
 
-![Sample architecture showing a replica of the customer AD DS is deployed on AWS in combination with AD Connector.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/extend-customer-ad-cloud.png)
+![Sample architecture showing a replica of the customer AD DS is deployed on AWS in combination with AD Connector.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/extend-customer-ad-cloud.png)
 
  As in scenario 1, AD Connector is used for all user or MFA authentication, which in turn is proxied to the customer AD DS (refer to [the previous figure](scenario-1-using-ad-connector-to-proxy-authentication-to-on-premises-active-directory-service.md#fig5)). In this scenario, the customer AD DS is deployed across AZs on Amazon EC2 instances that are promoted to be domain controllers in the customer’s on-premises [AD forest](https://ipwithease.com/what-is-a-forest-in-active-directory/), running in the AWS Cloud. Each domain controller is deployed into VPC private subnets to make AD DS highly available in the AWS Cloud. For best practices for deploying AD DS on AWS, refer to the [Design Considerations](using-multi-region-aws-managed-active-directory-with-amazon-workspaces.md) section of this document.
 

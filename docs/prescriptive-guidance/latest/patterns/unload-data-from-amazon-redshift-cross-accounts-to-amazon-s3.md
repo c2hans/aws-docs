@@ -46,7 +46,7 @@ For information about security considerations when using this pattern, see the [
 
 The following diagram shows the target architecture, with DEV and PROD accounts.
 
-![The Lambda VPC in the DEV account and the Amazon Redshift VPC in the PROD account.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5c83c617-3a85-4aea-a7a7-930f406d1cef/images/fa4d01df-483d-4454-9711-b391ebbe4629.png)
+![The Lambda VPC in the DEV account and the Amazon Redshift VPC in the PROD account.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5c83c617-3a85-4aea-a7a7-930f406d1cef/images/fa4d01df-483d-4454-9711-b391ebbe4629.png)
 
 The diagram shows the following workflow:
 
@@ -66,7 +66,7 @@ The diagram shows the following workflow:
 
 The following diagram shows the roles that are used to retrieve the Amazon Redshift credentials and connect to the Amazon Redshift cluster. The workflow is initiated by the Lambda function.
 
-![The three-step process for assuming roles across accounts.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5c83c617-3a85-4aea-a7a7-930f406d1cef/images/ab25b72c-773c-4d58-9012-4a3755c181ff.png)
+![The three-step process for assuming roles across accounts.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5c83c617-3a85-4aea-a7a7-930f406d1cef/images/ab25b72c-773c-4d58-9012-4a3755c181ff.png)
 
 The diagram shows the following workflow:
 
@@ -80,7 +80,7 @@ The diagram shows the following workflow:
 
 The following diagram shows the cross-account read-write process for extracting data and uploading it to Amazon S3. The workflow is initiated by the Lambda function. The pattern [chains IAM roles in Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/mgmt/authorizing-redshift-service.html#authorizing-redshift-service-chaining-roles). The unload command that comes from the Amazon Redshift cluster assumes the `CrossAccount-S3-Write-Role`, and then assumes the `S3-Write-Role`. This role chaining gives Amazon Redshift access to Amazon S3.
 
-![The roles that get credentials, access Amazon Redshift, and upload data to Amazon S3.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5c83c617-3a85-4aea-a7a7-930f406d1cef/images/d2982fc6-1d12-4f9d-9493-a99ce691d693.png)
+![The roles that get credentials, access Amazon Redshift, and upload data to Amazon S3.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5c83c617-3a85-4aea-a7a7-930f406d1cef/images/d2982fc6-1d12-4f9d-9493-a99ce691d693.png)
 
 The workflow includes the following steps:
 

@@ -10,7 +10,7 @@ We would love to hear from you. Please provide feedback on the AWS PRA by taking
 
 The Log Archive account is where you centralize infrastructure, service, and application log types. For more information about this account, see the [AWS Security Reference Architecture (AWS SRA)](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/log-archive.html). With a dedicated account for logs, you can apply consistent alerting across all log types and to confirm that incident responders can access an aggregate of these logs from one place. You can set up security controls and data retention policies all from one place as well, which can simplify the privacy operational overhead. The following diagram illustrates the AWS security and privacy services that are configured in the Log Archive account.
 
-![AWS services deployed in the Log Archive account in the Security organizational unit.](http://docs.aws.amazon.com/prescriptive-guidance/latest/privacy-reference-architecture/images/guide-img/a4379862-3434-48e4-8691-64db36363b08/images/f6b837ce-3d6b-4beb-b14d-96f24723469f.png)
+![AWS services deployed in the Log Archive account in the Security organizational unit.](https://docs.aws.amazon.com/prescriptive-guidance/latest/privacy-reference-architecture/images/guide-img/a4379862-3434-48e4-8691-64db36363b08/images/f6b837ce-3d6b-4beb-b14d-96f24723469f.png)
 
 ## Centralized log storage
 <a name="centralized-log-storage"></a>

@@ -47,7 +47,7 @@ For the API specification, see `CreateChannel`, `DescribeChannel`, `UpdateChanne
 
 The following diagram shows how records flow from an Amazon MSK Express broker topic through a Data Delivery channel to your destination, with unprocessable records routed to a dead-letter queue.
 
-![Data flow from an Amazon MSK Express broker topic through a Data Delivery channel to an Apache Iceberg table in Amazon S3 Tables, with unprocessable records routed to a dead-letter queue.](http://docs.aws.amazon.com/msk/latest/developerguide/images/msk-data-channel-dataflow.png)
+![Data flow from an Amazon MSK Express broker topic through a Data Delivery channel to an Apache Iceberg table in Amazon S3 Tables, with unprocessable records routed to a dead-letter queue.](https://docs.aws.amazon.com/msk/latest/developerguide/images/msk-data-channel-dataflow.png)
 
 ## Benefits
 <a name="msk-data-delivery-iceberg-benefits"></a>

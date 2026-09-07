@@ -17,7 +17,7 @@ You are also responsible for making your own independent assessment of the Third
 ## Amazon FSx for Windows File Server module
 <a name="amazon-fsx-for-windows-file-server-module"></a>
 
-![amazon fsx for windows file server module](http://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/images/amazon-fsx-for-windows-file-server-module.png)
+![amazon fsx for windows file server module](https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/images/amazon-fsx-for-windows-file-server-module.png)
 
 1. The solution deploys the Amazon FSx for Windows File Server file system and integrates it with the Microsoft Active Directory instance deployed by the Identity module.
 
@@ -26,7 +26,7 @@ You are also responsible for making your own independent assessment of the Third
 ## Amazon FSx for Lustre File Server module
 <a name="amazon-fsx-for-lustre-file-server-modules"></a>
 
-![amazon fsx for lustre file server module](http://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/images/amazon-fsx-for-lustre-file-server-module.png)
+![amazon fsx for lustre file server module](https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/images/amazon-fsx-for-lustre-file-server-module.png)
 
 1. You can mount this file system manually onto workstations started by the [Leostream Broker module](workstation-management-modules.md#leostream-broker-module) module.
 

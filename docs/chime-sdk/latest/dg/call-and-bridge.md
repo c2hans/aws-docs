@@ -211,11 +211,11 @@ The `CallAndBridge` action provides a different call signaling and audio experie
 
 The following diagram shows show the call flows with different parameters when an inbound call leg A is already connected.
 
-![The flow of an answered call through the CallAndBridge action.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/call-bridge-ans-2.png)
+![The flow of an answered call through the CallAndBridge action.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/call-bridge-ans-2.png)
 
 The following diagram shows the call flow for an unanswered call.
 
-![The flow of an unanswered call through the CallAndBridge action.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/SMA_Bridging_NotAns.png)
+![The flow of an unanswered call through the CallAndBridge action.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/SMA_Bridging_NotAns.png)
 
 **Additional Details**
 Remember these facts about the `CallAndBridge` action.

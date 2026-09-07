@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amaz
 
  You can download the CloudFormation template for this Guidance before deploying it.
 
-[![View template button.](http://docs.aws.amazon.com/solutions/latest/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3/images/view-template-button.png)](https://solutions-reference.s3.amazonaws.com/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3/latest/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3.template) **data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3.template** – Use this template to launch the Guidance and all associated components. The default configuration deploys the core and supporting services found in the [AWS services in this Guidance](architecture-details.md#aws-services-in-this-guidance) section, but you can customize the template to meet your specific needs.
+[![View template button.](https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3/images/view-template-button.png)](https://solutions-reference.s3.amazonaws.com/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3/latest/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3.template) **data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3.template** – Use this template to launch the Guidance and all associated components. The default configuration deploys the core and supporting services found in the [AWS services in this Guidance](architecture-details.md#aws-services-in-this-guidance) section, but you can customize the template to meet your specific needs.
 
 **Note**
  AWS CloudFormation resources are created from AWS Cloud Development Kit (AWS CDK) (AWS CDK) constructs.

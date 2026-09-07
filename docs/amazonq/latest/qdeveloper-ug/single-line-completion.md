@@ -10,35 +10,35 @@ When you start typing out single lines of code, Amazon Q makes suggestions based
 ------
 #### [ C\+\+ ]
 
-![An example of the single-line completion feature using C++.](http://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/images/single-line-completion-c-plus.gif)
+![An example of the single-line completion feature using C++.](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/images/single-line-completion-c-plus.gif)
 
 ------
 #### [ JavaScript ]
 
 In this example, Amazon Q completes a line of code that the developer begins.
 
-![An example of the single-line completion feature.](http://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/images/javascript_vscode_SingleLine.gif)
+![An example of the single-line completion feature.](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/images/javascript_vscode_SingleLine.gif)
 
 ------
 #### [ TypeScript ]
 
 In this example, the user enters a full comment, and then Amazon Q supplies the code that goes with it.
 
-![An example of the single-line completion feature.](http://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/images/typescript_vscode_single-line.gif)
+![An example of the single-line completion feature.](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/images/typescript_vscode_single-line.gif)
 
 ------
 #### [ C\# ]
 
 In this example, Amazon Q provides a single-line recommendation based on a comment.
 
-![An example of the single line completion feature.](http://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/images/c-sharp-single-line.gif)
+![An example of the single line completion feature.](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/images/c-sharp-single-line.gif)
 
 ------
 #### [ Shell ]
 
 In the image below, Amazon Q offers recommendations on how to complete a single line of code.
 
-![An example of the single-line completion feature.](http://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/images/jb-single-line-shell.gif)
+![An example of the single-line completion feature.](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/images/jb-single-line-shell.gif)
 
 ------
 #### [ Java ]
@@ -49,13 +49,13 @@ In the example below, in Java, a user enters the string `public` into an existin
 
 Based on the input, Amazon Q generates a suggestion for the signature of the main method.
 
-![An example of the single-line completion feature.](http://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/images/cw-c9-single-line-completion.gif)
+![An example of the single-line completion feature.](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/images/cw-c9-single-line-completion.gif)
 
 ------
 #### [ Python ]
 
 In this example, Amazon Q recommends a single line of code, based on the developer's comment.
 
-![An example of the single-line completion feature.](http://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/images/python_sagemakerstudio_singleline.gif)
+![An example of the single-line completion feature.](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/images/python_sagemakerstudio_singleline.gif)
 
 ------

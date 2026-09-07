@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-aw
 
 Based on the diagram in the previous section, you can select the stories to work on (marked as red and yellow), group them in enablement projects, and then build the roadmap needed to achieve your company's business goals. The following diagram shows this process.
 
-![Data strategy roadmap](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-aws-data/images/guide-img/7eadad47-3e6a-4775-bcac-a88d1e364e51/images/03c29f41-85d0-46b6-81a0-7d0e779f72cf.png)
+![Data strategy roadmap](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-aws-data/images/guide-img/7eadad47-3e6a-4775-bcac-a88d1e364e51/images/03c29f41-85d0-46b6-81a0-7d0e779f72cf.png)
 
 This diagram shows only the enablement capabilities that are necessary to achieve the business outcomes. It excludes capabilities that are already in place or are not required.
 

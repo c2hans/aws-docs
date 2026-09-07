@@ -9,7 +9,7 @@ The user journeys workstream also involves decisions that can be changed or reve
 
 The user journeys workstream consists of five phases: discovery, design, build, test, deploy, and post go-live support.
 
-![User journey workstream in contact center migrations](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/images/guide-img/c8027e22-fcd9-43b3-b8a7-234ec8eb0644/images/4c0ff840-b4b5-4c87-b2d0-f754b61a2bbb.png)
+![User journey workstream in contact center migrations](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/images/guide-img/c8027e22-fcd9-43b3-b8a7-234ec8eb0644/images/4c0ff840-b4b5-4c87-b2d0-f754b61a2bbb.png)
 
 ## Discovery
 <a name="discovery.81819d70-ac07-5b67-af38-ef789f39c47b"></a>

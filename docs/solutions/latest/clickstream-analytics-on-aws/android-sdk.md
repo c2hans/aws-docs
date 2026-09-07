@@ -38,7 +38,7 @@ If needed, you can synchronize your project with [the latest version](https://ce
 
  Find the `res` directory under your `project/app/src/main`, and manually create a raw folder in the `res` directory.
 
-![Project tree showing amplifyconfiguration.json file selected in the raw folder under res.](http://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/amplifyconfiguration.png)
+![Project tree showing amplifyconfiguration.json file selected in the raw folder under res.](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/amplifyconfiguration.png)
 
  Download your `amplifyconfiguration.json` file from your clickstream control plane, and paste it to the raw folder. The JSON file is like:
 

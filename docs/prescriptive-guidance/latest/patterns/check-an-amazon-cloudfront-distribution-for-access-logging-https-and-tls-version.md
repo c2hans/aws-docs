@@ -45,7 +45,7 @@ This pattern provides an AWS Lambda function that is initiated when Amazon Cloud
 
 **Target architecture **
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/1ae60f8f-3eaf-40f5-b01f-06e30e5604ce/images/e1521c48-99f6-4ec6-9e53-8713f3cf5776.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/1ae60f8f-3eaf-40f5-b01f-06e30e5604ce/images/e1521c48-99f6-4ec6-9e53-8713f3cf5776.png)
 
 **Automation and scale**
 + If you are using AWS Organizations, you can use [AWS Cloudformation StackSets](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html) to deploy the attached template across multiple accounts that you want to monitor.

@@ -9,9 +9,9 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-
 
 You can use AWS Direct Connect public VIFs to first establish a dedicated network connection between your network to public AWS resources, such as AWS Site-to-Site VPN endpoints. Once this connection is established, you can create an IPsec connection to AWS Transit Gateway. The following figure illustrates this option.
 
-![A diagram showing creating an IPsec connection.](http://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/aws-direct-connect-transit-gateway-site-to-site-vpn-public-vif.png)
+![A diagram showing creating an IPsec connection.](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/aws-direct-connect-transit-gateway-site-to-site-vpn-public-vif.png)
 
-![A diagram showing Direct Connect, Transit Gateway, and Site-to-Site VPN.](http://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/aws-direct-connect-and-aws-transit-gateway-and-vpn-with-transit-vif.png)
+![A diagram showing Direct Connect, Transit Gateway, and Site-to-Site VPN.](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/aws-direct-connect-and-aws-transit-gateway-and-vpn-with-transit-vif.png)
 
 Consider taking this approach when you want to simplify management and minimize the cost of IPsec VPN connections to multiple Amazon VPCs in the same region, with the low latency and consistent network experience benefits of a private dedicated connection over an internet-based VPN. A BGP session is established between AWS Direct Connect and your router using either the public or the transit VIF. Another BGP session or a static route will be established between AWS Transit Gateway and your router on the IPsec VPN tunnel.
 

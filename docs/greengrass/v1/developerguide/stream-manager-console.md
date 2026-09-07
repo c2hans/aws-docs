@@ -11,7 +11,7 @@ This tutorial shows you how to use the AWS IoT console to configure and deploy a
 
 Stream manager makes ingesting, processing, and exporting high-volume data streams more efficient and reliable. In this tutorial, you create a `TransferStream` Lambda function that consumes IoT data. The Lambda function uses the AWS IoT Greengrass Core SDK to create a stream in stream manager and then read and write to it. Stream manager then exports the stream to Kinesis Data Streams. The following diagram shows this workflow.
 
-![Diagram of the stream management workflow.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/stream-manager-scenario.png)
+![Diagram of the stream management workflow.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/stream-manager-scenario.png)
 
 The focus of this tutorial is to show how user-defined Lambda functions use the `StreamManagerClient` object in the AWS IoT Greengrass Core SDK to interact with stream manager. For simplicity, the Python Lambda function that you create for this tutorial generates simulated device data.
 
@@ -230,7 +230,7 @@ In this step, you use the AWS Lambda console to create a Lambda function and con
 1. Next, register the handler and upload your Lambda function deployment package.
 
    1. <a name="lambda-console-upload"></a>On the **Code** tab, under **Code source**, choose **Upload from**. From the dropdown, choose **.zip file**.
-![The Upload from dropdown with .zip file highlighted.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/lra-console/upload-deployment-package.png)
+![The Upload from dropdown with .zip file highlighted.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/lra-console/upload-deployment-package.png)
 
    1. Choose **Upload**, and then choose your `transfer_stream_python.zip` deployment package. Then, choose **Save**.
 

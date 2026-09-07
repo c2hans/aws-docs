@@ -43,7 +43,7 @@ This pattern uses a simple "ToDoList" app as an example, but you can use a simil
 
 The following diagram shows an example architecture for running a React Native mobile app’s backend in the AWS Cloud:
 
-![Workflow for running a React Native mobile app with AWS services.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c95e0150-5762-4c90-946c-efa3a22913e4/images/5beff5f9-9d14-49dc-a046-b74e5bfbd13f.png)
+![Workflow for running a React Native mobile app with AWS services.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c95e0150-5762-4c90-946c-efa3a22913e4/images/5beff5f9-9d14-49dc-a046-b74e5bfbd13f.png)
 
 The diagram shows the following architecture:
 

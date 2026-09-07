@@ -9,7 +9,7 @@ To elaborate on the previous RBAC example, you can expand your requirements to i
 
 Using the Per Tenant Policy Store design pattern is a best practice for maintaining tenant isolation while implementing access control with Verified Permissions. In this scenario, Tenant A and Tenant B user requests are verified against separate policy stores, `DATAMICROSERVICE_POLICYSTORE_A` and `DATAMICROSERVICE_POLICYSTORE_B`, respectively. For more information about Verified Permissions design considerations for multi-tenant SaaS applications, see the [Verified Permissions multi-tenant design considerations](avp-design-considerations.md) section.
 
-![Example of multi-tenant access control with RBAC, Amazon Verified Permissions, and Cedar](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/d4bab8ae-41ac-4206-978a-741397a733dd.png)
+![Example of multi-tenant access control with RBAC, Amazon Verified Permissions, and Cedar](https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/d4bab8ae-41ac-4206-978a-741397a733dd.png)
 
 The following policy resides in the `DATAMICROSERVICE_POLICYSTORE_A` policy store. It verifies that the principal will be a part of the group `allAccessRole` of type `Role`. In this case, the principal will be allowed to perform the `viewData` and `updateData` actions on all resources that are associated with Tenant A.
 

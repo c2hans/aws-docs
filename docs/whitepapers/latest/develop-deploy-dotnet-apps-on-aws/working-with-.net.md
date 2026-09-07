@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/develop-deploy-dotnet
 
 With the release of .NET 5, .NET is working to provide a uniform runtime to customers, allowing access to a single set of APIs, tools, and languages to target multiple platforms such as mobile, Internet of Things (IoT), and the cloud. The .NET Framework no longer receives any new features or updates, although it continues to be included in the Windows operating system. Although previous runtimes will continue to be supported for a while, both .NET Framework and .NET Core developers can now move on to use .NET 5 for new applications.
 
-![A chart depicting the layers of .NET unified runtime.](http://docs.aws.amazon.com/whitepapers/latest/develop-deploy-dotnet-apps-on-aws/images/dotnet-apps2.png)
+![A chart depicting the layers of .NET unified runtime.](https://docs.aws.amazon.com/whitepapers/latest/develop-deploy-dotnet-apps-on-aws/images/dotnet-apps2.png)
 
 *.NET 5 unified runtime *
 

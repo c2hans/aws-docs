@@ -17,7 +17,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/serverless-multi-tier
 
  You can configure a Lambda function to connect to private subnets in a virtual private cloud (VPC) in your AWS account if you want the Lambda function to access resources that you cannot expose publicly, like a private database instance. When you connect a function to a VPC, Lambda creates an elastic network interface for each subnet in your function's VPC configuration and elastic network interface is used to access your internal resources privately.
 
-![Lambda architecture pattern inside a VPC](http://docs.aws.amazon.com/whitepapers/latest/serverless-multi-tier-architectures-api-gateway-lambda/images/lambda-architecture-pattern.png)
+![Lambda architecture pattern inside a VPC](https://docs.aws.amazon.com/whitepapers/latest/serverless-multi-tier-architectures-api-gateway-lambda/images/lambda-architecture-pattern.png)
 
 * Lambda architecture pattern inside a VPC *
 

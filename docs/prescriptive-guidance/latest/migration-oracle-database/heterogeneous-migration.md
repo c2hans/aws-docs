@@ -19,7 +19,7 @@ In heterogeneous database migrations, the source and target databases engines ar
 + Step 1. Convert the source schema and code to match that of the target database. You can use AWS SCT for this conversion.
 + Step 2. Migrate data from the source database to the target database.  You can use AWS DMS for this process.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-oracle-database/images/guide-img/b6e66b32-33d8-4097-909d-dcc9b3b4a45a/images/12887387-43a9-411a-96c5-34143e5075c4.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-oracle-database/images/guide-img/b6e66b32-33d8-4097-909d-dcc9b3b4a45a/images/12887387-43a9-411a-96c5-34143e5075c4.png)
 
 AWS DMS handles all required data type conversions automatically during migration. The source database can be located in your own premises outside AWS, it can be a database that's running on an EC2 instance, or it can be an Amazon RDS database (see [Sources for data migration](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.html) in the AWS DMS documentation). The target can be a database in Amazon EC2, Amazon RDS, or Amazon Aurora.
 

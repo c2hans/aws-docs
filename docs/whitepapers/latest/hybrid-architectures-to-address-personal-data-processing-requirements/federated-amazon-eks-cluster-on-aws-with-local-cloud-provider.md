@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-
 
  AWS services – [Amazon EKS](https://aws.amazon.com/eks/)
 
-![Federated Amazon EKS cluster on AWS](http://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-to-address-personal-data-processing-requirements/images/federated-eks-cluster-on-aws.png)
+![Federated Amazon EKS cluster on AWS](https://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-to-address-personal-data-processing-requirements/images/federated-eks-cluster-on-aws.png)
 
  Federated Amazon EKS cluster on AWS
 

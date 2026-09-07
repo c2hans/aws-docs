@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-
 
  AWS PrivateLink enables you to connect to some AWS services, services hosted by other AWS accounts (referred to as *endpoint services*), and supported AWS Marketplace partner services, via private IP addresses in your VPC. The interface endpoints are created directly inside of your VPC, using elastic network interfaces and IP addresses in your VPC’s subnets. That means that VPC Security Groups can be used to manage access to the endpoints.
 
-![A diagram showing AWS Privatelink.](http://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/aws-privatelink.png)
+![A diagram showing AWS Privatelink.](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/aws-privatelink.png)
 
 We recommend this approach if you want to use services offered by another VPC securely within an AWS network, using private IP addresses. Alternatively, AWS PrivateLink is a good solution when the VPCs have overlapped IP addresses.
 

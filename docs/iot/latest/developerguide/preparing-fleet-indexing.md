@@ -20,7 +20,7 @@ Enabling fleet indexing for Software Package Catalog incurs standard service cos
 ## Metrics displayed in the console
 <a name="metrics-displayed-in-console"></a>
 
-![Standard metrics image](http://docs.aws.amazon.com/iot/latest/developerguide/images/package-catalog-discovery-metrics.png)
+![Standard metrics image](https://docs.aws.amazon.com/iot/latest/developerguide/images/package-catalog-discovery-metrics.png)
 
 On the AWS IoT console software package details page, the **Discovery** panel displays standard metrics ingested through the `$package` shadow.
 + The **Current version distribution** chart shows the number of devices and percentage for the 10 most recent package versions that are associated to an AWS IoT thing from all the devices associated to this software package. **Note:** If the software package has more package versions than those labeled in the chart, you can find them grouped within **Other**.

@@ -19,13 +19,13 @@ You can use the Toolkit for Visual Studio to create an RDS security group. If yo
 **To create an Amazon RDS security group**
 
 1. In AWS Explorer, expand the **Amazon RDS** node, open the context (right-click) menu for the **DB Security Groups** subnode and choose **Create**.
-![AWS Explorer showing Amazon RDS expanded with context menu on DB Security Groups subnode.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/rds-sg-create-menu.png)
+![AWS Explorer showing Amazon RDS expanded with context menu on DB Security Groups subnode.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/rds-sg-create-menu.png)
 
    Alternatively, on the **Security Groups** tab, choose **Create Security Group**. If this tab isn't displayed, open the context (right-click) menu for the **DB Security Groups** subnode and choose **View**.
-![DB Security Groups tab showing default security group with owner ID and VPC ID columns.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/rds-sg-create-dashboard.png)
+![DB Security Groups tab showing default security group with owner ID and VPC ID columns.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/rds-sg-create-dashboard.png)
 
 1. In the **Create Security Group** dialog box, type a name and description for the security group, and then choose **OK**.
-![Create Security Group dialog box with name my-RDS-sg and description field completed.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/rds-sg-create.png)
+![Create Security Group dialog box with name my-RDS-sg and description field completed.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/rds-sg-create.png)
 
 ## Set Access Permissions for an Amazon RDS Security Group
 <a name="tkv-set-access-permissions-for-rds-security-group"></a>
@@ -39,11 +39,11 @@ By default, a new Amazon RDS security group provides no network access. To enabl
    If no **Security Group** tabs appear, in AWS Explorer, open the context (right-click) menu for the **DB Security Groups** subnode and choose **View**.
 
 1. Choose **Add Permission**.
-![DB Security Groups page with myrds-sg selected and Add Permission button highlighted.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/rds-sg-add-permission.png)
+![DB Security Groups page with myrds-sg selected and Add Permission button highlighted.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/rds-sg-add-permission.png)
 
     **Add Permissions** button on the **Security Groups** tab
 
 1. In the **Add Permission** dialog box, you can use CIDR notation to specify which IP addresses can access your RDS instance, or you can specify which EC2 security groups can access your RDS instance. When you choose **EC2 Security Group**, you can specify access for all EC2 instances associated with an AWS account have access, or you can choose a EC2 security group from the drop-down list.
-![Add Permission dialog box with CIDR/IP and EC2 Security Group options for RDS access.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/rds-sg-cidr-ec2.png)
+![Add Permission dialog box with CIDR/IP and EC2 Security Group options for RDS access.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/rds-sg-cidr-ec2.png)
 
    The AWS Toolkit attempts to determine your IP address and auto-populate the dialog box with the appropriate CIDR specification. However, if your computer accesses the Internet through a firewall, the CIDR determined by the Toolkit may not be accurate.

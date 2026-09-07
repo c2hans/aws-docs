@@ -18,7 +18,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/swift-customer-securi
 #### Scope of the secure zone
 <a name="scope-of-the-secure-zone"></a>
 
-![Example of a SWIFT secure zone architected by AWS .](http://docs.aws.amazon.com/whitepapers/latest/swift-customer-security-controls-framework-2021/images/swift-secure-zone.jpeg)
+![Example of a SWIFT secure zone architected by AWS .](https://docs.aws.amazon.com/whitepapers/latest/swift-customer-security-controls-framework-2021/images/swift-secure-zone.jpeg)
 
  SWIFT provides general guidance on which components should be in scope for the secure zone depending on the architecture the customers select to satisfy their business requirements. The preceding diagram shows an example of a SWIFT secure zone architected on AWS.
 

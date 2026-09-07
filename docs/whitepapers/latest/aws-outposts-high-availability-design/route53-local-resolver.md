@@ -9,7 +9,7 @@ When the AWS Outposts service link gets impacted by a temporary disconnect, the 
 
 Route 53 resolver Inbound endpoints forward DNS queries they receive from outside the VPC to the Resolver running in Outposts. In contrast, Route 53 Resolver Outbound enable Route 53 Resolvers to forward DNS queries to DNS resolvers that you manage on your on-premises network as is illustrated in the following diagram.
 
-![Diagram showing Route 53 resolver on Outposts](http://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/page-51-route53-resolver-outposts.png)
+![Diagram showing Route 53 resolver on Outposts](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/page-51-route53-resolver-outposts.png)
 
 ## Route 53 Resolver on Outposts considerations
 <a name="route53-considerations"></a>

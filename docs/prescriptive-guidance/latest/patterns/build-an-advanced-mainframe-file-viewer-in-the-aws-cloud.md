@@ -46,7 +46,7 @@ An input file and its corresponding common business-oriented language (COBOL) co
 
 The following diagram shows the process of parsing and converting a mainframe input file to an OpenSearch Service document for browsing and searching.
 
-![Process to parse and convert mainframe input file to OpenSearch Service.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/36d72b00-d163-455f-9e59-e2c872e7c28a/images/cce68438-bcf2-48c1-b86b-01242235ec76.png)
+![Process to parse and convert mainframe input file to OpenSearch Service.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/36d72b00-d163-455f-9e59-e2c872e7c28a/images/cce68438-bcf2-48c1-b86b-01242235ec76.png)
 
 The diagram shows the following workflow:
 
@@ -128,7 +128,7 @@ The code for this pattern is available in the GitHub [gfs-mainframe-patterns](ht
 
 The following example shows a Step Functions graph. The graph shows the execution run status for the Lambda functions used in this pattern.
 
-![Step Functions graph shows execution run status for the Lambda functions used in this pattern.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/36d72b00-d163-455f-9e59-e2c872e7c28a/images/11093e5d-2f9e-4bbf-8abc-f3b2980dd550.png)
+![Step Functions graph shows execution run status for the Lambda functions used in this pattern.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/36d72b00-d163-455f-9e59-e2c872e7c28a/images/11093e5d-2f9e-4bbf-8abc-f3b2980dd550.png)
 
 **CloudWatch delivery logs**
 

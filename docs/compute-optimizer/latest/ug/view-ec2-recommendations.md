@@ -78,7 +78,7 @@ You can change an EBS volume's IOPS or throughput specifications by using Amazon
 
 When viewing Amazon EC2 instance recommendations, you can view the price and performance impact of running your workload on AWS Graviton-based instances. To do so, choose **Graviton (aws-arm64)** in the **CPU architecture preference** dropdown. Otherwise, choose **Current** to view recommendations that are based on the same CPU vendor and architecture as the current instance.
 
-![Graviton based instance recommendations](http://docs.aws.amazon.com/compute-optimizer/latest/ug/images/ec2-graviton-based-recommendations.png)
+![Graviton based instance recommendations](https://docs.aws.amazon.com/compute-optimizer/latest/ug/images/ec2-graviton-based-recommendations.png)
 
 **Note**
 The **Current price**, **Recommended price**, **Price difference**, **Price difference (%)**, and **Estimated monthly savings** columns are updated to provide a price comparison between the current instance type and the instance type of the selected CPU architecture preference. For example, if you choose **Graviton (aws-arm64)**, prices are compared between the current instance type and the recommended Graviton-based instance type.

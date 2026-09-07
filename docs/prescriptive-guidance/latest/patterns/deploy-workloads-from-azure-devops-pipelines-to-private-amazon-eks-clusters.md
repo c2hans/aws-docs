@@ -45,7 +45,7 @@ This pattern creates the following:
 
 The following diagram shows the architecture of deploying a self-hosted Azure DevOps agent on a private Amazon EKS cluster and deploying a sample application on the same cluster.
 
-![Deployment of self-hosted Azure DevOps agent and sample application on private Amazon EKS cluster.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a965834f-a1e2-4679-bd8c-15eed4f57b55/images/ee22bd3e-311c-46e0-8024-9b7e7752080a.png)
+![Deployment of self-hosted Azure DevOps agent and sample application on private Amazon EKS cluster.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a965834f-a1e2-4679-bd8c-15eed4f57b55/images/ee22bd3e-311c-46e0-8024-9b7e7752080a.png)
 
 The diagram shows the following workflow:
 

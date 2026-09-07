@@ -63,19 +63,19 @@ The following code samples demonstrate how to create online evaluation configura
 Run this from inside an AgentCore project directory (created with `agentcore create` ).
 
 1. Enter a name for your online evaluation configuration.
-![Online eval config name input](http://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/images/tui/online-eval-add-name.png)
+![Online eval config name input](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/images/tui/online-eval-add-name.png)
 
 1. Select the evaluators to include. You can choose from built-in evaluators and any custom evaluators you have created.
-![Evaluator multi-select list](http://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/images/tui/online-eval-add-evaluators.png)
+![Evaluator multi-select list](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/images/tui/online-eval-add-evaluators.png)
 
 1. Set the sampling rate — the percentage of agent requests that will be evaluated.
-![Sampling rate input](http://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/images/tui/online-eval-add-sampling-rate.png)
+![Sampling rate input](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/images/tui/online-eval-add-sampling-rate.png)
 
 1. Choose whether to enable evaluation automatically after deployment.
-![Enable on deploy selection](http://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/images/tui/online-eval-add-enable.png)
+![Enable on deploy selection](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/images/tui/online-eval-add-enable.png)
 
 1. Review the configuration and press Enter to confirm.
-![Review online eval configuration](http://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/images/tui/online-eval-add-confirm.png)
+![Review online eval configuration](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/images/tui/online-eval-add-confirm.png)
 
 1.
 

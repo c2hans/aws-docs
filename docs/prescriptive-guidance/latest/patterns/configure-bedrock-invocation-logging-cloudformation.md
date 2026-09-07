@@ -46,7 +46,7 @@ The CloudFormation template provisions the following resources in your target AW
 
 The following diagram shows how invocation logs are stored after you deploy the CloudFormation stack associated with this pattern. Amazon Bedrock publishes log data when the foundation model delivers text, an image, a video, or embedding data. As shown in the diagram, the Amazon S3 buckets and the CloudWatch Logs log group are encrypted with an AWS KMS key.
 
-![Workflow for logging invocations of an Amazon Bedrock foundation model.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a55e7495-ec84-4d41-886e-5c37b37aac67/images/a958d52f-9072-40af-80cb-360f6c1c7fd5.png)
+![Workflow for logging invocations of an Amazon Bedrock foundation model.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a55e7495-ec84-4d41-886e-5c37b37aac67/images/a958d52f-9072-40af-80cb-360f6c1c7fd5.png)
 
 The diagram shows the following workflow:
 

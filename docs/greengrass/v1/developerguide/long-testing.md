@@ -55,10 +55,10 @@ In this step, you create subscriptions that allow the Lambda function and AWS Io
    The **Greengrass\_HelloWorld\_Counter** to **IoT Cloud** subscription allows the function to send messages to AWS IoT on the `hello/world/counter` topic. The **IoT Cloud** to **Greengrass\_HelloWorld\_Counter** subscription allows AWS IoT to send messages to the function on the `hello/world/counter/trigger` topic.
 
 1. To test the long-lived lifecycle, invoke the Lambda function by publishing a message to the `hello/world/counter/trigger` topic. You can use the default message.
-![Default Hello from AWS IoT console message sent to hello/world/counter/trigger with the Publish to topic button highlighted.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-057.png)
+![Default Hello from AWS IoT console message sent to hello/world/counter/trigger with the Publish to topic button highlighted.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-057.png)
 **Note**
  The `Greengrass_HelloWorld_Counter` function ignores the content of received messages. It just runs the code in `function_handler`, which sends a message to the `hello/world/counter` topic. You can review this code from the [AWS IoT Greengrass Core SDK for Python](https://github.com/aws/aws-greengrass-core-sdk-python/blob/master/examples/HelloWorldCounter/greengrassHelloWorldCounter.py) on GitHub.
 
 Every time a message is published to the `hello/world/counter/trigger` topic, the `my_counter` variable is incremented. This invocation count is shown in the messages sent from the Lambda function. Because the function handler includes a 20-second sleep cycle (`time.sleep(20)`), repeatedly triggering the handler queues up responses from the AWS IoT Greengrass core.
 
-![Screenshot showing the incrementing of Invocation Count from 1, 2, and 3.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-058.png)
+![Screenshot showing the incrementing of Invocation Count from 1, 2, and 3.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-058.png)

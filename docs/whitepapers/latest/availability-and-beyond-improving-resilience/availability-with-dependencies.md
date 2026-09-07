@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyo
 
  We might want to try and calculate the theoretical maximum availability of a workload. This is the product of the availability of all of the dependencies, including the software itself, (*α**n* is the availability of a single subsystem) because each one must be operational.
 
-![Picture of equation. A = α1 X α2 X ... X αnsubscript>](http://docs.aws.amazon.com/whitepapers/latest/availability-and-beyond-improving-resilience/images/equation4.png)
+![Picture of equation. A = α1 X α2 X ... X αnsubscript>](https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyond-improving-resilience/images/equation4.png)
 
  The availability numbers used in these calculations are usually associated with things like SLAs or Service-Level Objectives (SLOs). SLAs define the expected level of service customers will receive, the metrics by which the service is measured, and remediations or penalties (usually monetary) should the service levels not be achieved.
 

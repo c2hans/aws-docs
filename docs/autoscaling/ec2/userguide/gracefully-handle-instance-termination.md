@@ -91,11 +91,11 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/gracefully-han
 
 | Feature | Controls healthy instances | Controls unhealthy instances |
 | --- | --- | --- |
-| Custom termination policies | ![](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/negative_icon.png) No |
-| Scale-in protection | ![](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/negative_icon.png) No |
-|  Suspend HealthCheck, ReplaceUnhealthy, or Terminate process  | ![](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/success_icon.png) Yes |
-| Lifecycle hooks | ![](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/success_icon.png) Yes |
-| Instance lifecycle policy | ![](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/success_icon.png) Yes |
+| Custom termination policies | ![](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/success_icon.png) Yes | ![](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/negative_icon.png) No |
+| Scale-in protection | ![](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/success_icon.png) Yes | ![](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/negative_icon.png) No |
+|  Suspend HealthCheck, ReplaceUnhealthy, or Terminate process  | ![](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/success_icon.png) Yes | ![](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/success_icon.png) Yes |
+| Lifecycle hooks | ![](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/success_icon.png) Yes | ![](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/success_icon.png) Yes |
+| Instance lifecycle policy | ![](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/success_icon.png) Yes | ![](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/success_icon.png) Yes |
 
 ### Lifecycle hooks alone do not guarantee graceful shutdown
 <a name="gracefully-handle-instance-termination-hooks-no-guarantee"></a>

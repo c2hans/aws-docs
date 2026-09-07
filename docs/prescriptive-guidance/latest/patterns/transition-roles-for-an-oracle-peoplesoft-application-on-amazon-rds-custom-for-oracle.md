@@ -38,7 +38,7 @@ This pattern focuses on the steps to perform an Oracle Data Guard switchover, or
 
 The following diagram shows an Amazon RDS Custom DB instance and an Amazon RDS Custom read replica. Oracle Data Guard provides role transition during failover for DR.
 
-![Oracle Data Guard switchover for a primary RDS Custom DB instance with a read replica database.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/da3b011c-1668-4de4-9079-0982888a74b4/images/4e2a2f3b-b5bd-44b7-9b5a-13a663ee3be6.png)
+![Oracle Data Guard switchover for a primary RDS Custom DB instance with a read replica database.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/da3b011c-1668-4de4-9079-0982888a74b4/images/4e2a2f3b-b5bd-44b7-9b5a-13a663ee3be6.png)
 
 For a representative architecture using Oracle PeopleSoft on AWS, see [Set up a highly available PeopleSoft architecture on AWS](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/set-up-a-highly-available-peoplesoft-architecture-on-aws.html).
 

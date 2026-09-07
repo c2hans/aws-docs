@@ -48,11 +48,11 @@ The tagging and analysis workflow consists of these steps:
 
 The following diagram shows how to apply tags to track usage costs for Amazon RDS or Aurora instances.
 
-![Applying tags to track usage costs for database instances and clusters](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/eab5001d-5115-4aa6-bdd2-23063b08b262/images/63292b18-01d6-4523-b8ac-2c3b12b11b84.png)
+![Applying tags to track usage costs for database instances and clusters](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/eab5001d-5115-4aa6-bdd2-23063b08b262/images/63292b18-01d6-4523-b8ac-2c3b12b11b84.png)
 
 The following architecture diagram shows how the cost allocation report is integrated with Amazon Athena for analysis.
 
-![Querying cost allocation reports in Athena](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/eab5001d-5115-4aa6-bdd2-23063b08b262/images/9c028405-1e93-4f6a-a0e5-36154e2b8eab.png)
+![Querying cost allocation reports in Athena](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/eab5001d-5115-4aa6-bdd2-23063b08b262/images/9c028405-1e93-4f6a-a0e5-36154e2b8eab.png)
 
 The monthly cost allocation report is stored in an Amazon S3 bucket that you specify. When you set up Athena with the AWS CloudFormation template, as described in the *Epics* section, the template provisions several additional resources, including an AWS Glue crawler, an AWS Glue database, an Amazon Simple Notification System (Amazon SNS) event, AWS Lambda functions, and AWS Identity and Access Management (IAM) roles for the Lambda functions. As new cost data files arrive in the S3 bucket, event notifications are used to forward these files to a Lambda function for processing. The Lambda function initiates an AWS Glue crawler job to create or update the table in the AWS Glue Data Catalog. This table is then used to query data in Athena.
 

@@ -23,7 +23,7 @@ Key benefits of rule-based orchestration with Step Functions include the followi
 
 The following diagram shows the workflow of an example use case of document ingestion and processing.
 
-![Rule-based orchestration example of document ingestion and processing.](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-serverless/images/guide-img/ba00558a-f1cc-4853-9196-e287a2ba5ba5/images/92383708-ecef-4a30-82c2-aee88b03afa9.png)
+![Rule-based orchestration example of document ingestion and processing.](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-serverless/images/guide-img/ba00558a-f1cc-4853-9196-e287a2ba5ba5/images/92383708-ecef-4a30-82c2-aee88b03afa9.png)
 
 In this example, a legal firm automates the analysis of uploaded contracts in the following steps:
 
@@ -66,7 +66,7 @@ Key benefits of AI-native orchestration with Amazon Bedrock Agents include the f
 
 The following diagram shows the workflow of an example use case of customer support automation with Amazon Bedrock Agents.
 
-![Workflow using AI orchestration through Amazon Bedrock Agents.](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-serverless/images/guide-img/ba00558a-f1cc-4853-9196-e287a2ba5ba5/images/720c62fa-4fb6-484f-9711-a7ac06c13a28.png)
+![Workflow using AI orchestration through Amazon Bedrock Agents.](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-serverless/images/guide-img/ba00558a-f1cc-4853-9196-e287a2ba5ba5/images/720c62fa-4fb6-484f-9711-a7ac06c13a28.png)
 
 In this example, a user on a retail website types a message in the support chatbot. The following workflow occurs:
 
@@ -98,7 +98,7 @@ Amazon Bedrock Agents focus on orchestrating reasoning and action sequences for 
 
 The following diagram shows the workflow of an example use case of customer support automation with AgentCore.
 
-![Workflow of customer support automation using Eventbridge, AgentCore, and Lambda.](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-serverless/images/guide-img/ba00558a-f1cc-4853-9196-e287a2ba5ba5/images/817e4b4a-799b-4055-9f10-016be899f181.png)
+![Workflow of customer support automation using Eventbridge, AgentCore, and Lambda.](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-serverless/images/guide-img/ba00558a-f1cc-4853-9196-e287a2ba5ba5/images/817e4b4a-799b-4055-9f10-016be899f181.png)
 
 This example follows the same actions as the earlier Amazon Bedrock Agents example: a user on a retail website types a message in the support chatbot. The following workflow occurs:
 

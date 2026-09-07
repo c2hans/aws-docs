@@ -43,7 +43,7 @@ The **Design** mode UI has 7 main sections, as labeled and described in the foll
 
 1. Info links: Opens a panel with contextual information when you need help. These panels also include links to related topics in the *AWS Step Functions* Developer Guide.
 
-![The Design mode of the Workflow Studio UI in the AWS Toolkit](http://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/SFNWFS022025.png)
+![The Design mode of the Workflow Studio UI in the AWS Toolkit](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/SFNWFS022025.png)
 
 ## Using single-state tests during design
 <a name="w2aac17c55b9b9"></a>
@@ -66,7 +66,7 @@ The test-state UI has 3 main tabs, **Test input**, **Arguments & Output**, **Sta
 
 The following screenshot shows the test-state UI, which includes a topic-resources definition.
 
-![The Workflow Studio test state UI in the AWS Toolkit](http://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/SFNWFSteststate022025.png)
+![The Workflow Studio test state UI in the AWS Toolkit](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/SFNWFSteststate022025.png)
 
 ## Disabling Workflow Studio by default
 <a name="w2aac17c55b9c11"></a>

@@ -11,9 +11,9 @@ Only admins and race facilitators can create and manage races.
 ## Creating a race
 <a name="creating-a-race"></a>
 
-![Create a race screenshot #1](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_create_race_001_a.png)
+![Create a race screenshot #1](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_create_race_001_a.png)
 
-![Create a race screenshot #2](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_create_race_002_a.png)
+![Create a race screenshot #2](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_create_race_002_a.png)
 
 Races allow participants to test their trained models against those of other participants in a competitive setting. Races are open to all users on a given deployment to participate in, and operate by offering a pre-selected window of time during which users can submit their models. When a user submits one or more trained models to a race, those models are evaluated as they arrive and, when completed, the race leaderboard is updated to include the results of those evaluations. When the time window that the race is open for expires, the race will close and the leaderboard will become final. No submissions are allowed once a race is closed.
 

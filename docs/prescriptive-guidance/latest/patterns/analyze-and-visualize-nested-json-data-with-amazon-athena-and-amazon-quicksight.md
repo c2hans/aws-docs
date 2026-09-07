@@ -30,7 +30,7 @@ You can use JSON-formatted data for API-powered data feeds from operational syst
 
 The following diagram shows the architecture and workflow for this pattern. The nested data structures are stored in Amazon Simple Storage Service (Amazon S3) in JSON format. In Athena, the JSON data is mapped to an Athena data structure. You then create a view to analyze the data, and visualize the data structure in Quick Sight.
 
-![Analyzing and visualizing nested JSON data on AWS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e9ad39a1-e0a4-4429-bdc0-594b68707761/images/474e8747-626f-468c-9c27-c007af79bf2d.png)
+![Analyzing and visualizing nested JSON data on AWS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e9ad39a1-e0a4-4429-bdc0-594b68707761/images/474e8747-626f-468c-9c27-c007af79bf2d.png)
 
 ## Tools
 <a name="analyze-and-visualize-nested-json-data-with-amazon-athena-and-amazon-quicksight-tools"></a>

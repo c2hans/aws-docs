@@ -33,7 +33,7 @@ For additional information, see the [Argo CD documentation](https://argo-cd.read
 
 The following diagram illustrates a GitOps-driven CD workflow that uses Argo CD within an EKS cluster. For detailed information, see the [Argo CD documentation](https://argo-cd.readthedocs.io/en/stable/operator-manual/architecture/).
 
-![Argo CD architecture and workflow on AWS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/eks-gitops-tools/images/guide-img/b6f49161-b2c5-42aa-b1d8-b0781836edb7/images/27c10271-89d8-4143-ab7b-52249b327e42.png)
+![Argo CD architecture and workflow on AWS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-gitops-tools/images/guide-img/b6f49161-b2c5-42aa-b1d8-b0781836edb7/images/27c10271-89d8-4143-ab7b-52249b327e42.png)
 
 where:
 + **Step 1: Pull request (PR) merge**. A developer commits changes to Kubernetes manifests or Helm charts that are stored in a Git repository. When the PR has been reviewed and merged into the main branch, the desired state of the application is updated in source control.

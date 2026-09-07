@@ -17,6 +17,6 @@ Without clear, aggressive goals and business ownership, teams languish in decisi
 
 Empower your teams to make these decisions, push them to move quickly, experiment, and fail. Enable collaboration and do the hard change work to distribute decision-making. Break up the traditional sequential “hand off” approach to delivery. With the north star vision of high performing teams moving towards “full stack” responsibilities (run what you build), and cost and performance driven architecture, there is no limit to what you can deliver to your customers.
 
-![A diagram showing business-strategy-driven transformation](http://docs.aws.amazon.com/whitepapers/latest/cloud-driven-enterprise-transformation-on-aws/images/CloudTransformation2.png)
+![A diagram showing business-strategy-driven transformation](https://docs.aws.amazon.com/whitepapers/latest/cloud-driven-enterprise-transformation-on-aws/images/CloudTransformation2.png)
 
 * Business-strategy-driven transformation *

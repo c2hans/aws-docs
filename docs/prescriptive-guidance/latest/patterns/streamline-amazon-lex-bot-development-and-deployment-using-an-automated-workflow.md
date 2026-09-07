@@ -42,7 +42,7 @@ By automating the Amazon Lex bot release process, teams can deliver features fas
 
 The following diagram displays the high-level architecture and key components of the solution.
 
-![Workflow to automate development and deployment of Amazon Lex bots.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/3c7f9d16-9708-43c4-afa6-9d804d6b9dad/images/cdc73e82-a777-4e88-8bf8-a73c9bacb47f.png)
+![Workflow to automate development and deployment of Amazon Lex bots.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/3c7f9d16-9708-43c4-afa6-9d804d6b9dad/images/cdc73e82-a777-4e88-8bf8-a73c9bacb47f.png)
 
 Key components include the following:
 + **Lex bot repo** – A Git repository that stores the IaC definitions for the Amazon Lex bots.

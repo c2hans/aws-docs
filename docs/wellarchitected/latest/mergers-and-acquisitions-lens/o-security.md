@@ -26,11 +26,11 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/mergers-and-acqui
 +  Establish mitigation process to respond and recover from security incidents
 +  Define process to ensure privacy compliance as per combined company requirement
 
-![Figure 3: Security considerations for an AWS buyer and on-premises seller](http://docs.aws.amazon.com/wellarchitected/latest/mergers-and-acquisitions-lens/images/image3.png)
+![Figure 3: Security considerations for an AWS buyer and on-premises seller](https://docs.aws.amazon.com/wellarchitected/latest/mergers-and-acquisitions-lens/images/image3.png)
 
  Network connectivity is utmost to ensure data security and optimize data transfer cost. Design secure, cost-optimized network architecture using AWS services like AWS Direct Connect, AWS Transit Gateway, or AWS Site-to-Site VPN. We also recommend securing workloads and protecting applications from security attacks like DDoS, malware, and ransomware using AWS services.
 
-![Figure 4: Security considerations for AWS to AWS mergers and acquisitions](http://docs.aws.amazon.com/wellarchitected/latest/mergers-and-acquisitions-lens/images/image4.png)
+![Figure 4: Security considerations for AWS to AWS mergers and acquisitions](https://docs.aws.amazon.com/wellarchitected/latest/mergers-and-acquisitions-lens/images/image4.png)
 
  In this scenario (as shown in Figure 4), customer should use AWS technologies for integration. Both buyer and seller have adopted AWS as their primary cloud provider. They need to establish secure network communication between multiple AWS accounts that may be within a single Region or between multiple Regions. AWS Organizations allows you to consolidate multiple AWS accounts into a single organization. This can be beneficial for a number of reasons, including:
 +  **Centralized management and governance:** Manage all AWS resources from a single console, making it easier to track and manage your spending, security, and compliance.

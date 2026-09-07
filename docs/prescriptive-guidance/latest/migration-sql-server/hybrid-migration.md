@@ -33,7 +33,7 @@ AWS Storage Gateway enables you to store and retrieve files by using a Server Me
 
 The following diagram shows how to store and access backups by using AWS Storage Gateway and Amazon S3. For more information, see the [Storage Gateway documentation](https://docs.aws.amazon.com/storagegateway/latest/userguide/WhatIsStorageGateway.html).
 
-![Hybrid migration with &AWSSG; and &S3;](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-sql-server/images/guide-img/aa3b9357-4901-48ca-9fc9-a997d21ade3e/images/5708a19d-d68b-4b34-8159-4113ae150eee.png)
+![Hybrid migration with &AWSSG; and &S3;](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-sql-server/images/guide-img/aa3b9357-4901-48ca-9fc9-a997d21ade3e/images/5708a19d-d68b-4b34-8159-4113ae150eee.png)
 
 ## Using AWS DMS and AWS SCT
 <a name="hybrid-dms-sct"></a>

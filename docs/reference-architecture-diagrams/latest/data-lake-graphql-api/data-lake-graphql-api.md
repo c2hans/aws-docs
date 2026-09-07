@@ -12,7 +12,7 @@ This architecture shows how to build a data lake using [Lake Formation](https://
 ## Expose Your Data Lake as a GraphQL API
 <a name="diagram1"></a>
 
-![Architecture diagram showing how to expose a data lake as a GraphQL API using Amazon AppSync, Athena, Lake Formation, and AWS Glue.](http://docs.aws.amazon.com/reference-architecture-diagrams/latest/data-lake-graphql-api/images/data-lake-graphql-api.png)
+![Architecture diagram showing how to expose a data lake as a GraphQL API using Amazon AppSync, Athena, Lake Formation, and AWS Glue.](https://docs.aws.amazon.com/reference-architecture-diagrams/latest/data-lake-graphql-api/images/data-lake-graphql-api.png)
 
 The following steps describe the architecture:
 

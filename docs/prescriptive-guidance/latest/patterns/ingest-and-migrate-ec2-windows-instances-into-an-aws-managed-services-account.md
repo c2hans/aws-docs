@@ -43,7 +43,7 @@ Amazon EC2 Windows instance managed by AWS Managed Services (AMS)
 
 **Target architecture**
 
-![Process to migrate and ingest Amazon EC2 Windows instances into an AWS Managed Services account.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/393c21cb-b6c6-4446-b597-b62e29fdb7f8/images/0b2fa855-7460-49f8-9e7f-3485e6ce1745.png)
+![Process to migrate and ingest Amazon EC2 Windows instances into an AWS Managed Services account.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/393c21cb-b6c6-4446-b597-b62e29fdb7f8/images/0b2fa855-7460-49f8-9e7f-3485e6ce1745.png)
 
 ## Tools
 <a name="ingest-and-migrate-ec2-windows-instances-into-an-aws-managed-services-account-tools"></a>

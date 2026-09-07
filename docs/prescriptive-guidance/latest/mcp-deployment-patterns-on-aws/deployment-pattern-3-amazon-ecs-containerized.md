@@ -9,7 +9,7 @@ Amazon Elastic Container Service (ECS) with API gateway orchestrates Docker cont
 
 Sample implementation: [https://github.com/aws-samples/sample-mcp-deployment-patterns/tree/main/deploy-ecs](https://github.com/aws-samples/sample-mcp-deployment-patterns/tree/main/deploy-ecs)
 
-![Deployment Pattern of Amazon ECS (Containerized)](http://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-deployment-patterns-on-aws/images/guide-img/596b5834-b415-44f3-9601-59b1ced57c6b/images/3e9f7765-04d2-4329-8586-eca256dcad75.png)
+![Deployment Pattern of Amazon ECS (Containerized)](https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-deployment-patterns-on-aws/images/guide-img/596b5834-b415-44f3-9601-59b1ced57c6b/images/3e9f7765-04d2-4329-8586-eca256dcad75.png)
 
 **Architecture Characteristics**
 + Pros: Backend stays private: ALB and ECS are not internet-exposed; only API Gateway is public. Centralized security controls at API Gateway, Centralized throttling, quotas, and logging management.

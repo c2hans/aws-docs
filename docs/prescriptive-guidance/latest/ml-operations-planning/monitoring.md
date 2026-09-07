@@ -17,7 +17,7 @@ Ideally, data transformations should be logged in a few key stages during proces
 
 The following diagram illustrates these stages.
 
-![Logging model for data transformations](http://docs.aws.amazon.com/prescriptive-guidance/latest/ml-operations-planning/images/guide-img/a60efcae-df25-477e-83cb-1abd305f3971/images/2189f195-9a28-4f9f-9c5f-7262a77a0503.png)
+![Logging model for data transformations](https://docs.aws.amazon.com/prescriptive-guidance/latest/ml-operations-planning/images/guide-img/a60efcae-df25-477e-83cb-1abd305f3971/images/2189f195-9a28-4f9f-9c5f-7262a77a0503.png)
 
 You can use [SageMaker Model Monitor](https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor-data-capture.html) to automatically capture input and output data and store it in Amazon Simple Storage Service (Amazon S3). You can implement other types of intermediate logging by adding logs to a [custom serving container](https://docs.aws.amazon.com/sagemaker/latest/dg/your-algorithms-inference-code.html).
 
@@ -31,6 +31,6 @@ Monitoring the data that a model receives both in development time and in runtim
 
 You can also create ongoing monitoring jobs that sample training data and inference data and compare their distributions. You can create these jobs for both model input and model output, and plot the data against time to visualize any sudden or gradual drift. This is illustrated in the following chart.
 
-![Monitoring training and inference data for drifts](http://docs.aws.amazon.com/prescriptive-guidance/latest/ml-operations-planning/images/guide-img/a60efcae-df25-477e-83cb-1abd305f3971/images/2700f94a-81a4-43e4-a3ff-f9c892e930d8.png)
+![Monitoring training and inference data for drifts](https://docs.aws.amazon.com/prescriptive-guidance/latest/ml-operations-planning/images/guide-img/a60efcae-df25-477e-83cb-1abd305f3971/images/2700f94a-81a4-43e4-a3ff-f9c892e930d8.png)
 
 To better understand the drift profile of the data, such as how often the data distribution significantly changes, at what rate, or how sudden, we recommend that you continuously deploy new model versions and monitor their performance. For example, if your team deploys a new model every week and observes that the model performance significantly improves every time, they can determine that they should deliver new models in less than a week at the minimum.

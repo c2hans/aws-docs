@@ -58,7 +58,7 @@ You can create a PrivateLink cluster only at installation time. You cannot chang
 
 The following diagram illustrates the PrivateLink architecture for a ROSA cluster that uses Direct Connect to connect to the on-premises and ARO environments.
 
-![ROSA cluster that uses AWS Direct Connect and AWS PrivateLink.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/527cedfb-ec21-42be-bf21-d4e4e4f9db51/images/eff9b017-6fc7-4874-b610-849a42071ef4.png)
+![ROSA cluster that uses AWS Direct Connect and AWS PrivateLink.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/527cedfb-ec21-42be-bf21-d4e4e4f9db51/images/eff9b017-6fc7-4874-b610-849a42071ef4.png)
 
 **AWS permissions to ROSA**
 
@@ -73,7 +73,7 @@ This pattern assumes a common use case where you have an on-premises Git, JFrog 
 
 The following diagram shows the workflow for this method.
 
-![Migrating containers from ARO to ROSA by using the CI/CD method.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/527cedfb-ec21-42be-bf21-d4e4e4f9db51/images/f658590e-fbd9-4297-a02c-0b516694d436.png)
+![Migrating containers from ARO to ROSA by using the CI/CD method.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/527cedfb-ec21-42be-bf21-d4e4e4f9db51/images/f658590e-fbd9-4297-a02c-0b516694d436.png)
 
 **MTC method**
 
@@ -81,7 +81,7 @@ You can use the [Migration Toolkit for Containers (MTC)](https://docs.openshift.
 
 The following diagram shows the workflow for this method.
 
-![Migrating containers from ARO to ROSA by using the MTC method.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/527cedfb-ec21-42be-bf21-d4e4e4f9db51/images/979bbc7b-2e39-4dd1-b4f0-ea1032880a38.png)
+![Migrating containers from ARO to ROSA by using the MTC method.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/527cedfb-ec21-42be-bf21-d4e4e4f9db51/images/979bbc7b-2e39-4dd1-b4f0-ea1032880a38.png)
 
 ## Tools
 <a name="migrate-container-workloads-from-aro-to-rosa-tools"></a>

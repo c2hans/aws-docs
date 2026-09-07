@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-with-aws
 
  The following figure provides a view of the technical architecture for Dropbox’s hybrid software stack built with AWS.
 
-![Dropbox’s hybrid software stack](http://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-with-aws/images/dropbox-hybrid-sw-stack.png)
+![Dropbox’s hybrid software stack](https://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-with-aws/images/dropbox-hybrid-sw-stack.png)
 
 * Dropbox’s hybrid software stack *
 

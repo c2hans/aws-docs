@@ -22,7 +22,7 @@ Designing the right architecture for your SAS environment is critical to the suc
 
 It's a best practice to separate these environments so that you can independently test and validate changes before promoting changes from the test environment to the production environment. The following diagram illustrates the decoupling architecture.
 
-![Architecture diagram for decoupling data storage](http://docs.aws.amazon.com/prescriptive-guidance/latest/data-storage-decoupling-sas-fsx/images/guide-img/f83bb357-cf26-4b94-abb6-1bd9d91feaa4/images/ba4ef9c9-67c9-4ce5-83cf-1be3b1148313.png)
+![Architecture diagram for decoupling data storage](https://docs.aws.amazon.com/prescriptive-guidance/latest/data-storage-decoupling-sas-fsx/images/guide-img/f83bb357-cf26-4b94-abb6-1bd9d91feaa4/images/ba4ef9c9-67c9-4ce5-83cf-1be3b1148313.png)
 
 The two accounts include user-facing Citrix terminal servers. End users in your organization can connect to these terminal servers by using a Citrix client or the Citrix web publishing portal, and then launch the SAS Enterprise Guide SAS client. The shared infrastructure management account can include all the automation and CI/CD tooling that's required for deploying your infrastructure components into each AWS account and AWS Region.
 

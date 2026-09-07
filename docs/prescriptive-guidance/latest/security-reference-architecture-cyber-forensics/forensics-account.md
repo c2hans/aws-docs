@@ -15,7 +15,7 @@ We make no claim as to the suitability of this guidance in the detection or inve
 
 The following diagram illustrates the AWS security services that can be configured in a dedicated Forensics account. For context, the diagram shows the [Security Tooling account](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/security-tooling.html) in the AWS SRA core architecture to depict the AWS services that are used to provide detection or notifications in the Forensics account.
 
-![Forensics account on AWS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-cyber-forensics/images/guide-img/4107c52b-4ef3-48bd-b4b6-a184f0f0df58/images/a3ff2913-539d-44e4-8270-27cf95e6029d.png)
+![Forensics account on AWS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-cyber-forensics/images/guide-img/4107c52b-4ef3-48bd-b4b6-a184f0f0df58/images/a3ff2913-539d-44e4-8270-27cf95e6029d.png)
 
 The Forensics account is a separate and dedicated type of Security Tooling account that is within the Security OU. The purpose of the Forensics account is to provide a standard, preconfigured, and repeatable clean room to allow an organization's forensics team to implement all phases of the forensics process: collection, examination, analysis, and reporting. In addition, the quarantine and isolation process for in-scope resources are also included in this account.
 

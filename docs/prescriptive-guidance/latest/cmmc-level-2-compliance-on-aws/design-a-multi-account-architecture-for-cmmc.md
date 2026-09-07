@@ -25,7 +25,7 @@ This architecture is intentionally straightforward. It provides the minimum numb
 
 This figure shows the multi-account architecture in relation to CMMC scope and segmentation. The CUI boundary (red dashed border) wraps around your CUI Workload Account(s). The Management Account, Shared Services Account, and Security and Log Archive Account are Security Protection Assets that sit outside the CUI boundary but within your AWS Organizations structure, supporting the boundary with governance guardrails, centralized key management, aggregated security data, and evidence pipelines.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/cmmc-level-2-compliance-on-aws/images/guide-img/0fdea3e4-e685-4123-b5d4-00cba3e6b30c/images/d2689330-0eaa-46fa-9ef0-431c805db330.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/cmmc-level-2-compliance-on-aws/images/guide-img/0fdea3e4-e685-4123-b5d4-00cba3e6b30c/images/d2689330-0eaa-46fa-9ef0-431c805db330.png)
 
 Figure 1: CMMC Level 2 multi-account architecture on AWS.
 

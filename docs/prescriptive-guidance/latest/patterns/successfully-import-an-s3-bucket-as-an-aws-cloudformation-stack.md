@@ -26,7 +26,7 @@ This pattern provides steps to successfully import an S3 bucket as an AWS CloudF
 ## Architecture
 <a name="successfully-import-an-s3-bucket-as-an-aws-cloudformation-stack-architecture"></a>
 
-![Workflow to use CloudFormation template to create a CloudFormation stack to import an S3 bucket.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/aea7f6fe-8e67-46c4-8b90-1ab06b879111/images/ee143374-a0a4-42d9-b7ca-16593a597a84.png)
+![Workflow to use CloudFormation template to create a CloudFormation stack to import an S3 bucket.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/aea7f6fe-8e67-46c4-8b90-1ab06b879111/images/ee143374-a0a4-42d9-b7ca-16593a597a84.png)
 
 The diagram shows the following workflow:
 

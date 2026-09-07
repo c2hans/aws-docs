@@ -19,7 +19,7 @@ In the course of its operations, Amazon SWF interacts with a number of different
 
 The following diagram shows the Amazon SWF architecture, including Amazon SWF and its actors.
 
-![The different entities or "actors" in an Amazon SWF workflow.](http://docs.aws.amazon.com/amazonswf/latest/developerguide/images/swf-overview-actors.png)
+![The different entities or "actors" in an Amazon SWF workflow.](https://docs.aws.amazon.com/amazonswf/latest/developerguide/images/swf-overview-actors.png)
 
 ## Workflow Starters
 <a name="swf-dev-actors-starters"></a>

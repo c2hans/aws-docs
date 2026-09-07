@@ -33,7 +33,7 @@ The following diagram shows the extension of the AWS SRA [Workloads organization
 
 This account separation provides two key benefits. First, it enforces security controls through OU-specific and account-specific service control policies. Second, it simplifies implementing least-privilege access by grouping services based on application type. The reference architecture also includes foundational accounts that apply to all application types: Org Management, Security Tooling, Log Archive, Network, and Shared Services. For more information about these accounts, see [AWS Security Reference Architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/architecture.html) in the *AWS SRA – core architecture* guide.
 
-![AWS SRA architecture to support generative AI.](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-generative-ai/images/guide-img/a349f18f-a9fd-43a3-9a48-27534bf6412a/images/f9f7bb45-f187-428a-bd52-a31c0929d309.png)
+![AWS SRA architecture to support generative AI.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-generative-ai/images/guide-img/a349f18f-a9fd-43a3-9a48-27534bf6412a/images/f9f7bb45-f187-428a-bd52-a31c0929d309.png)
 
 **Design considerations**:
 + Merge the Application and Generative AI accounts if your architecture requires consolidating both services in one account, or if your generative AI usage spans your entire organization.

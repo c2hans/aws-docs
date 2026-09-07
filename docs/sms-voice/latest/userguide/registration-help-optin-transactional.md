@@ -7,9 +7,9 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/registration-
 
 Use this pattern when your campaign sends **transactional or informational** messages (order confirmations, account alerts, appointment reminders). Transactional messages have two variants depending on whether the phone number is optional or required for the service.
 
-![Transactional opt-in — optional phone, no checkbox](http://docs.aws.amazon.com/sms-voice/latest/userguide/images/optin-transactional-optional.png)
+![Transactional opt-in — optional phone, no checkbox](https://docs.aws.amazon.com/sms-voice/latest/userguide/images/optin-transactional-optional.png)
 
-![Transactional opt-in — required phone, separate checkbox](http://docs.aws.amazon.com/sms-voice/latest/userguide/images/optin-transactional-required.png)
+![Transactional opt-in — required phone, separate checkbox](https://docs.aws.amazon.com/sms-voice/latest/userguide/images/optin-transactional-required.png)
 
 ## What makes this compliant
 <a name="registration-help-optin-transactional-compliant"></a>

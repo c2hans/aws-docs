@@ -72,7 +72,7 @@ This pattern uses OpenSearch Service to store logs and telemetry data that are g
 
 The following workflow diagram illustrates the log workflow for Lambda functions when you use an OpenSearch cluster as the endpoint.
 
-![Workflow for sending telemetry data to an OpenSearch cluster.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/57fe8796-9f36-46cf-8304-f506242b9f04/images/283ccdcd-a0e1-40a2-a95a-3bd046bfa8ca.png)
+![Workflow for sending telemetry data to an OpenSearch cluster.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/57fe8796-9f36-46cf-8304-f506242b9f04/images/283ccdcd-a0e1-40a2-a95a-3bd046bfa8ca.png)
 
 The architecture includes these components:
 + Lambda function: The serverless function that generates logs and telemetry data during execution.

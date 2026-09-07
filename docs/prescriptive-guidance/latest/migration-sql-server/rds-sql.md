@@ -32,7 +32,7 @@ Amazon RDS provides high availability and failover support for databases that ar
 
 The following diagram illustrates the Amazon RDS for SQL Server Multi-AZ deployment option.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-sql-server/images/guide-img/aa3b9357-4901-48ca-9fc9-a997d21ade3e/images/94a305ee-57ca-43c4-abeb-2b5e76b01d3e.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-sql-server/images/guide-img/aa3b9357-4901-48ca-9fc9-a997d21ade3e/images/94a305ee-57ca-43c4-abeb-2b5e76b01d3e.png)
 
 When you set up SQL Server in a Multi-AZ configuration, Amazon RDS automatically configures standby database instance using database mirroring or Always On availability groups, based on the version of SQL Server that you deploy. The specific SQL Server versions and editions are listed in the [Amazon RDS documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_SQLServerMultiAZ.html).
 
@@ -64,7 +64,7 @@ Read replicas are available only with the following SQL Server versions and edit
 
 The following diagram illustrates an Amazon RDS for SQL Server DB instance in a Multi-AZ environment with a read replica in another Availability Zone within the same AWS Region. Not all AWS Regions offer more than two Availability Zones, so you should [check the Region](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) you're planning to use before adopting this strategy.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-sql-server/images/guide-img/aa3b9357-4901-48ca-9fc9-a997d21ade3e/images/20fe96ca-d2f4-4573-a23c-101ef248c0d7.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-sql-server/images/guide-img/aa3b9357-4901-48ca-9fc9-a997d21ade3e/images/20fe96ca-d2f4-4573-a23c-101ef248c0d7.png)
 
 A SQL Server read replica doesn't allow write operations. However, you can promote the read replica to make it writable. After you promote it, you cannot revert it back to a read replica. It will become a single, standalone DB instance that has no relationships with its original primary database instance. The data in the promoted read replica will match the data in the source DB instance up to the point when the request was made to promote it. The SQL Server DB engine version of the source DB instance and all of its read replicas will be the same.
 

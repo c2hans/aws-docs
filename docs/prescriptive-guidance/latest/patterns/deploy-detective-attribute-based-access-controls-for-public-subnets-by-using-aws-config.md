@@ -37,7 +37,7 @@ To achieve this, this pattern uses [AWS Config custom rules](https://docs.aws.am
 
 **Target architecture**
 
-![Using an AWS Config custom rule to detect noncompliant resources in public subnets](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/85d54ead-7f00-4381-89fb-cffe307c4cfc/images/a8c19913-d260-4b70-96ba-732bb1b9881f.png)
+![Using an AWS Config custom rule to detect noncompliant resources in public subnets](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/85d54ead-7f00-4381-89fb-cffe307c4cfc/images/a8c19913-d260-4b70-96ba-732bb1b9881f.png)
 
 The diagram illustrates the following:
 
@@ -54,7 +54,7 @@ The diagram illustrates the following:
 
 The following diagram shows the logic applied by the Lambda function to evaluate the compliance of the elastic network interface.
 
-![Diagram of Lambda function logic](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/85d54ead-7f00-4381-89fb-cffe307c4cfc/images/9575e20f-142b-4eba-b34d-3b9bda163144.png)
+![Diagram of Lambda function logic](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/85d54ead-7f00-4381-89fb-cffe307c4cfc/images/9575e20f-142b-4eba-b34d-3b9bda163144.png)
 
 **Automation and scale**
 

@@ -14,7 +14,7 @@ The ideal hardware requirements are based on:
 ## 2.1 Block diagram
 <a name="elpg-hardware-block-diagrams"></a>
 
-<a name="elpg-figure1"></a>![Figure 1 - Simplified block diagram](http://docs.aws.amazon.com/iot-expresslink/archive/v1.1.2/programmersguide/images/image1.png)
+<a name="elpg-figure1"></a>![Figure 1 - Simplified block diagram](https://docs.aws.amazon.com/iot-expresslink/archive/v1.1.2/programmersguide/images/image1.png)
 
 ## 2.2 Pin definitions
 <a name="elpg-hardware-pin-definitions"></a>

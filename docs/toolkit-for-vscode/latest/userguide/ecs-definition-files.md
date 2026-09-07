@@ -23,4 +23,4 @@ The following example shows you how you can take advantage of IntelliSense in Am
 1. Open the file in a VS Code editor and enter the initial curly braces.
 
 1. Enter the letter "c" as if you wanted to add `cpu` to the definition. Observe the IntelliSense dialog that opens, which is similar to the following.
-![IntelliSense dialog.](http://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/ecs-task-def-intellisense.png)
+![IntelliSense dialog.](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/ecs-task-def-intellisense.png)

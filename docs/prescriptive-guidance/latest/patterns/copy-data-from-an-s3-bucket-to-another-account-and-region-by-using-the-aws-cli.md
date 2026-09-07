@@ -35,7 +35,7 @@ This scenario requires IAM users with programmatic access and long-term credenti
 ## Architecture
 <a name="copy-data-from-an-s3-bucket-to-another-account-and-region-by-using-the-aws-cli-architecture"></a>
 
-![Copying Amazon S3 data to another account or Region](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a574c26b-fdd9-4472-842b-b34c3eb2bfe9/images/5e4dec53-dfc8-478b-a7c4-503d63c8ac4e.png)
+![Copying Amazon S3 data to another account or Region](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a574c26b-fdd9-4472-842b-b34c3eb2bfe9/images/5e4dec53-dfc8-478b-a7c4-503d63c8ac4e.png)
 
 ## Tools
 <a name="copy-data-from-an-s3-bucket-to-another-account-and-region-by-using-the-aws-cli-tools"></a>

@@ -66,7 +66,7 @@ Your project is now ready to publish to Lambda.
 
 The following procedure and image demonstrate how to upload your function to Lambda using the AWS Toolkit for Visual Studio.
 
-![Invoking the test function page](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/uploadnet8.png)
+![Invoking the test function page](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/uploadnet8.png)
 
 **Publishing your function to Lambda**
 
@@ -114,7 +114,7 @@ After the function uploads, your Lambda function is live. The **Function:** view
 1. From the **Test Function** tab, enter `hello lambda!` in the text-input field and then choose **Invoke** to manually invoke your Lambda function. Your text appears in the **Response** tab, converted to uppercase.
 **Note**
 You can reopen the **Function:** view at any time by double-clicking on your deployed instance located in the **AWS Explorer** under the **AWS Lambda** node.
-![Invoking the test function page](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/invokeBasic.PNG)
+![Invoking the test function page](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/invokeBasic.PNG)
 
 1. *(Optional)* To confirm that you successfully published your Lambda function, log into the AWS Management Console and then choose Lambda. The console displays all of your published Lambda functions, including the one you just created.
 

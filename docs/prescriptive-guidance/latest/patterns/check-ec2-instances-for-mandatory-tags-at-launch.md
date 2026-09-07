@@ -33,7 +33,7 @@ This pattern provides an AWS CloudFormation template to help you monitor EC2 ins
 
 **Workflow ****architecture **
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9cd74141-a87f-419e-94b3-0b28fd04a018/images/b48fd21b-a86b-4ec7-b9f6-4f1a64999437.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9cd74141-a87f-419e-94b3-0b28fd04a018/images/b48fd21b-a86b-4ec7-b9f6-4f1a64999437.png)
 
 **Automation and scale**
 + You can use the AWS CloudFormation template multiple times for different AWS Regions and accounts. You need to run the template only once in each Region or account.

@@ -55,13 +55,13 @@ data_pump_exp3:reinvexp3%U.dmp filesize=20G parallel=8 logfile=data_pump_exp1:re
 ENCRYPTION= all ENCRYPTION_PASSWORD=encryption_password job_name=reInvExp
 ```
 
-![Screen capture showing using Oracle Data Pump to export data from the source database instance](http://docs.aws.amazon.com/whitepapers/latest/strategies-migrating-oracle-db-to-aws/images/oracle-data-pump-export.png)
+![Screen capture showing using Oracle Data Pump to export data from the source database instance](https://docs.aws.amazon.com/whitepapers/latest/strategies-migrating-oracle-db-to-aws/images/oracle-data-pump-export.png)
 
  Spreading the output files across different disks enhances input/output (I/O) performance. In the following examples, three different disks are used to avoid I/O contention.
 
-![Screen capture showing parallel run in multiple threads writing to three different disks](http://docs.aws.amazon.com/whitepapers/latest/strategies-migrating-oracle-db-to-aws/images/export-in-multiple-threads.png)
+![Screen capture showing parallel run in multiple threads writing to three different disks](https://docs.aws.amazon.com/whitepapers/latest/strategies-migrating-oracle-db-to-aws/images/export-in-multiple-threads.png)
 
-![Screen capture showing dump files generated in each disk](http://docs.aws.amazon.com/whitepapers/latest/strategies-migrating-oracle-db-to-aws/images/dump-files.png)
+![Screen capture showing dump files generated in each disk](https://docs.aws.amazon.com/whitepapers/latest/strategies-migrating-oracle-db-to-aws/images/dump-files.png)
 
  The most time-consuming part of this entire process is the file transportation to AWS, so optimizing the file transport significantly reduces the time required for the data migration. The following steps show how to optimize the file transport:
 

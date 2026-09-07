@@ -21,10 +21,10 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 
  **Application Insights section showing problems by severity and option to set up monitoring.**
 
-![image9](http://docs.aws.amazon.com/solutions/latest/migration-assistant-for-amazon-opensearch-service/images/image9.png)
+![image9](https://docs.aws.amazon.com/solutions/latest/migration-assistant-for-amazon-opensearch-service/images/image9.png)
 
 Monitoring for your applications is now activated and the following status box appears:
 
  **Application monitoring enabled message with setup complete status and auto-configuration details.**
 
-![image10](http://docs.aws.amazon.com/solutions/latest/migration-assistant-for-amazon-opensearch-service/images/image10.png)
+![image10](https://docs.aws.amazon.com/solutions/latest/migration-assistant-for-amazon-opensearch-service/images/image10.png)

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-shadow-deploym
 
  You can use SageMaker AI Model Shadow Deployments to create long running shadow variants to validate any new candidate component of your model serving stack before promoting it to production. The following diagram shows how shadow variants work in more detail.
 
-![Details of a shadow variant.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/juxtaposer/shadow-variant.png)
+![Details of a shadow variant.](https://docs.aws.amazon.com/sagemaker/latest/dg/images/juxtaposer/shadow-variant.png)
 
 ## Deploy shadow variants
 <a name="model-shadow-deployment-deploy"></a>

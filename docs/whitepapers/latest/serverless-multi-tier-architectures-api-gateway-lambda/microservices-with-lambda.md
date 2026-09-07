@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/serverless-multi-tier
 # Microservices with Lambda
 <a name="microservices-with-lambda"></a>
 
-![Cross-account architecture with API Gateways and Lambda functions in two AWS accounts.](http://docs.aws.amazon.com/whitepapers/latest/serverless-multi-tier-architectures-api-gateway-lambda/images/microservices-with-lambda.png)
+![Cross-account architecture with API Gateways and Lambda functions in two AWS accounts.](https://docs.aws.amazon.com/whitepapers/latest/serverless-multi-tier-architectures-api-gateway-lambda/images/microservices-with-lambda.png)
 
 * Architectural pattern for microservices with Lambda *
 

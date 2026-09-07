@@ -24,7 +24,7 @@ Amazon S3 supports HTTP POST requests so that users can upload content directly 
 
 The following figure shows an Amazon S3 upload using a POST request.
 
-![Comparison of S3 PUT workflow with customer to server to S3, versus POST workflow with direct customer to S3 transfer.](http://docs.aws.amazon.com/AmazonS3/latest/developerguide/images/s3_post.png)
+![Comparison of S3 PUT workflow with customer to server to S3, versus POST workflow with direct customer to S3 transfer.](https://docs.aws.amazon.com/AmazonS3/latest/developerguide/images/s3_post.png)
 
 1.  The user accesses your page from a web browser.
 
@@ -50,7 +50,7 @@ For authenticated requests, the HTML form must include fields for a security pol
 + A security policy (see [POST Policy](sigv4-HTTPPOSTConstructPolicy.md)) controls what is allowed in the request.
 + The security policy is the `StringToSign` (see [Introduction to Signing Requests](sig-v4-authenticating-requests.md#signing-request-intro)) in your signature calculation.
 
-![StringToSign, Signing Key, and Signature.](http://docs.aws.amazon.com/AmazonS3/latest/developerguide/images/sigV4-post.png)
+![StringToSign, Signing Key, and Signature.](https://docs.aws.amazon.com/AmazonS3/latest/developerguide/images/sigV4-post.png)
 
 **To Calculate a signature**
 

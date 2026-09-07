@@ -13,4 +13,4 @@ Large language models (LLMs) represent a convergence of scale, architecture, and
 
 This section explores the history of software agents from foundational theory to modern practice, as illustrated in the following diagram. It highlights the convergence of distributed artificial intelligence (DAI) and transformer-based generative AI, and identifies the key milestones that have shaped the emergence of agentic AI.
 
-![The evolution of software agents, from the 1950s to the current day.](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-foundations/images/guide-img/bf0cde42-baef-4bee-8fff-ca482667d2b6/images/2d337fd8-4b3d-4334-a4e8-4ddfeeec5d09.png)
+![The evolution of software agents, from the 1950s to the current day.](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-foundations/images/guide-img/bf0cde42-baef-4bee-8fff-ca482667d2b6/images/2d337fd8-4b3d-4334-a4e8-4ddfeeec5d09.png)

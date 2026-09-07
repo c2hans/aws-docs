@@ -30,7 +30,7 @@ The inputs for the reorder quantity (RoQ) calculation is the target inventory le
 ## Calculation logic
 <a name="por-policy2"></a>
 
-![Calculation logic for absolute inventory level](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/AbsoluteInventoryLevel.png)
+![Calculation logic for absolute inventory level](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/AbsoluteInventoryLevel.png)
 
 The reorder quantity is the difference between the target inventory level and the current inventory level. If the current inventory level is higher than the target inventory level, the reorder quantity is 0.
 

@@ -9,7 +9,7 @@ This automated CloudFormation template deploys the spoke for Cost Optimizer for 
 
 1. Sign in to the [AWS Management Console](https://console.aws.amazon.com/console/) and select the button to launch the `cost-optimizer-for-amazon-workspaces-spoke` AWS CloudFormation template.
 
-    [![Solution launch button](http://docs.aws.amazon.com/solutions/latest/cost-optimizer-for-workspaces/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?templateURL=https:%2F%2Fsolutions-reference.s3.amazonaws.com%2Fcost-optimizer-for-amazon-workspaces%2Flatest%2Fcost-optimizer-for-amazon-workspaces-spoke.template&redirectId=ImplementationGuide)
+    [![Solution launch button](https://docs.aws.amazon.com/solutions/latest/cost-optimizer-for-workspaces/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?templateURL=https:%2F%2Fsolutions-reference.s3.amazonaws.com%2Fcost-optimizer-for-amazon-workspaces%2Flatest%2Fcost-optimizer-for-amazon-workspaces-spoke.template&redirectId=ImplementationGuide)
 
 1. The template launches in the US East (N. Virginia) Region by default. To launch Cost Optimizer for Amazon WorkSpaces in a different AWS Region, use the Region selector in the console navigation bar.
 **Note**

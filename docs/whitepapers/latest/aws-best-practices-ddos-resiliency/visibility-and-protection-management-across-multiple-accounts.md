@@ -15,6 +15,6 @@ As of writing, the Shield Advanced event doesn't appear in the Firewall Manager 
 
 For example, when Firewall Manager evaluates accounts within the scope of a Shield Advanced policy and finds a resource that isn't yet protected by Shield Advanced, it generates a non-compliance. If the policy is configured for automatic remediation, Firewall Manager brings the resource into compliance by associating Shield Advanced protection with it. After the resource is protected, Shield Advanced begins establishing a traffic baseline for it, and any subsequently detected anomalous traffic is surfaced as a Shield Advanced finding in Security Hub CSPM, alongside CloudWatch metrics and events.
 
-![Architecture diagram showing monitoring AWS Shield-protected resources with Firewall Manager and Security Hub CSPM](http://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/images/shield-protected-resources-ref-arch.jpg)
+![Architecture diagram showing monitoring AWS Shield-protected resources with Firewall Manager and Security Hub CSPM](https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/images/shield-protected-resources-ref-arch.jpg)
 
 For more information about central monitoring of Shield protected resources, refer to [Set up centralized monitoring for DDoS events and auto-remediate noncompliant resources](https://aws.amazon.com/blogs/security/set-up-centralized-monitoring-for-ddos-events-and-auto-remediate-noncompliant-resources).

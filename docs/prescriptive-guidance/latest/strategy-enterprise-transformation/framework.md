@@ -9,7 +9,7 @@ The AWS Enterprise Transformation Framework is designed to develop executable an
 
 When the framework is applied through an integrated approach, it increases the pace and magnitude of business outcomes across four transformation capability pillars, as illustrated in the following diagram: **business and strategy**, **FinOps**, **operations**, and **people and culture**. Together, these pillars address common blockers to cloud adoption, such as unclear cloud business strategy and objectives, cultural clashes, disconnection between IT and business units, unclear financial strategies, and the effects of emerging technologies such as generative AI  on people, processes, and technology.
 
-![Four pillars of the AWS Enterprise Transformation Framework.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-enterprise-transformation/images/guide-img/2d221fda-ae0d-490b-b51b-592f55e8b0d3/images/ebbaa594-0f1e-417d-bc1f-14b660b14db4.png)
+![Four pillars of the AWS Enterprise Transformation Framework.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-enterprise-transformation/images/guide-img/2d221fda-ae0d-490b-b51b-592f55e8b0d3/images/ebbaa594-0f1e-417d-bc1f-14b660b14db4.png)
 
 The framework is applicable when digital transformation incites changes in financial operations, ways of working, operating model, business strategy, or culture (for example, migrations, data center exits, end-to-end transformation initiatives, or any technology implementation). Companies that have a highly tenured workforce, have long-standing, traditional ways of working, or are struggling to attract future generations of talent will greatly benefit from this framework. (Examples include contact centers, SaaS transformations, and generative AI.)
 

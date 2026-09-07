@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-res
 
  To address both situations, control plane actions are required to update the configuration of the resource. The pattern will work for any service whose network configuration can be updated, for example, EC2 Auto Scaling, Amazon ECS, Lambda, and more. It requires writing code for each service, but the business logic follows a standard pattern. The code should be executed locally by an operator responding to the event in order to minimize the dependencies required. The basic flow of the script logic is shown in the following figure.
 
-![Diagram showing control plane update to evacuate an Availability Zone](http://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-resilience-patterns/images/control-plane-evacuation.png)
+![Diagram showing control plane update to evacuate an Availability Zone](https://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-resilience-patterns/images/control-plane-evacuation.png)
 
 1.  The script lists all of the resources of the specified type, such as Auto Scaling group, ECS service, or Lambda function, and retrieves their subnets from the resource information. The supported resources depend on what the script has been configured to support.
 
@@ -23,7 +23,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-res
 
  Because step four records the updates that were made, this approach also lends itself to being easily reversible when you’re ready to recover, as shown in the following figure.
 
-![Diagram showing control plane update to recover from Availability Zone evacuation](http://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-resilience-patterns/images/control-plane-evacuation-recovery.png)
+![Diagram showing control plane update to recover from Availability Zone evacuation](https://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-resilience-patterns/images/control-plane-evacuation-recovery.png)
 
 Recovery steps:
 

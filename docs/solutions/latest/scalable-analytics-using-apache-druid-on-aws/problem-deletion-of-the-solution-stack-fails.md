@@ -9,7 +9,7 @@ When deleting the guidance stack, you may see the following error from AWS Cloud
 
  **Screenshot of delete guidance stack - error message.**
 
-![troubleshooting1](http://docs.aws.amazon.com/solutions/latest/scalable-analytics-using-apache-druid-on-aws/images/troubleshooting1.png)
+![troubleshooting1](https://docs.aws.amazon.com/solutions/latest/scalable-analytics-using-apache-druid-on-aws/images/troubleshooting1.png)
 
 ## Resolution
 <a name="resolution"></a>

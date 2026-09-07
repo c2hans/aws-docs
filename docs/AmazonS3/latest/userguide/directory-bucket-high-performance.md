@@ -18,7 +18,7 @@ The Amazon S3 Express One Zone storage class is designed for 99.95 percent avail
 
 S3 Express One Zone is ideal for any application where it's important to minimize the latency required to access an object. Such applications can be human-interactive workflows, like video editing, where creative professionals need responsive access to content from their user interfaces. S3 Express One Zone also benefits analytics and machine learning workloads that have similar responsiveness requirements from their data, especially workloads with lots of smaller accesses or large numbers of random accesses. S3 Express One Zone can be used with other AWS services to support analytics and artificial intelligence and machine learning (AI/ML) workloads, such as Amazon EMR, Amazon SageMaker AI, and Amazon Athena.
 
-![Diagram showing how S3 Express One Zone works.](http://docs.aws.amazon.com/AmazonS3/latest/userguide/images/s3-express-one-zone.png)
+![Diagram showing how S3 Express One Zone works.](https://docs.aws.amazon.com/AmazonS3/latest/userguide/images/s3-express-one-zone.png)
 
 For the directory buckets that use the S3 Express One Zone storage class, data is stored across multiple devices within a single Availability Zone but doesn't store data redundantly across Availability Zones. When you create a directory bucket to use the S3 Express One Zone storage class, we recommend that you specify an AWS Region and an Availability Zone that's local to your Amazon EC2, Amazon Elastic Kubernetes Service, or Amazon Elastic Container Service (Amazon ECS) compute instances to optimize performance.
 

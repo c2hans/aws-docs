@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/po
 # Amazon Polly examples
 <a name="polly-examples"></a>
 
-![JavaScript code example that applies to Node.js execution](http://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/nodeicon.png)
+![JavaScript code example that applies to Node.js execution](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/nodeicon.png)
 
 **This Node.js code example shows:**
 + Upload audio recorded using Amazon Polly to Amazon S3
@@ -76,7 +76,7 @@ The stack name must be unique within an AWS Region and AWS account. You can spec
    For more information on the `create-stack` command parameters, see the [AWS CLI Command Reference guide](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html), and the [CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-cli-creating-stack.html).
 
 1. Navigate to the CloudFormation management console, choose **Stacks**, choose the stack name, and choose the **Resources** tab to view a list of the created resources.
-![CloudFormation resources](http://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/cfn_polly.png)
+![CloudFormation resources](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/cfn_polly.png)
 
 ## Upload audio recorded using Amazon Polly to Amazon S3
 <a name="polly-example-synthesize-to-s3-example"></a>

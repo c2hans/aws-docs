@@ -11,7 +11,7 @@ This section provides a detailed strategy for how Amazon vendors and sellers can
 
 The following architecture diagram shows how you use AWS Glue to discover, prepare, move, and integrate the data in the data lake so that you can use it for analytics and insights.
 
-![Using analytics services and AWS Glue to unlock insights from the Amazon Selling Partner API data](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-selling-partner-api/images/guide-img/fd951ab0-b7f5-4ded-9451-ea838cf4c59a/images/128d7652-9056-400a-a328-b5c8cba378ea.png)
+![Using analytics services and AWS Glue to unlock insights from the Amazon Selling Partner API data](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-selling-partner-api/images/guide-img/fd951ab0-b7f5-4ded-9451-ea838cf4c59a/images/128d7652-9056-400a-a328-b5c8cba378ea.png)
 
 The architecture diagram includes the following components:
 

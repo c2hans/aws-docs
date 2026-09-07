@@ -14,4 +14,4 @@ Using the Amazon Connect integration wizard, follow these steps to connect QnABo
 1. Follow the step-by-step directions in the wizard to create a contact center using the guidance to answer caller’s questions.
 
     **Amazon Connect integration wizard**
-![image22](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image22.png)
+![image22](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image22.png)

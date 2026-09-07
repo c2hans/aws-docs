@@ -71,15 +71,15 @@ The default set of metrics is divided into three major categories:
 
  AWS Request Metrics
 + Covers areas such as the latency of the HTTP request/response, number of requests, exceptions, and retries.
-![RequestMetric 131111](http://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/images/RequestMetric-131111.png)
+![RequestMetric 131111](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/images/RequestMetric-131111.png)
 
  AWS service Metrics
 + Include AWS service-specific data, such as the throughput and byte count for S3 uploads and downloads.
-![ServiceMetric 131111](http://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/images/ServiceMetric-131111.png)
+![ServiceMetric 131111](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/images/ServiceMetric-131111.png)
 
 Machine Metrics
 + Cover the runtime environment, including heap memory, number of threads, and open file descriptors.
-![MachineMetric 131111](http://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/images/MachineMetric-131111.png)
+![MachineMetric 131111](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/images/MachineMetric-131111.png)
 
   If you want to exclude Machine Metrics, add `excludeMachineMetrics` to the system property:
 

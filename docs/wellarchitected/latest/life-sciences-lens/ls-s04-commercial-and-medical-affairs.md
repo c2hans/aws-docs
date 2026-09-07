@@ -17,4 +17,4 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ## Reference architecture
 <a name="reference-architecture"></a>
 
-![Commercial medical affairs reference architecture](http://docs.aws.amazon.com/wellarchitected/latest/life-sciences-lens/images/commercial-medical-affairs-reference-architecture.png)
+![Commercial medical affairs reference architecture](https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-lens/images/commercial-medical-affairs-reference-architecture.png)

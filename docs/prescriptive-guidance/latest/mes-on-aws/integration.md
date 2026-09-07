@@ -16,21 +16,21 @@ The following functional patterns provide guidelines on selecting the right tech
 
 In a synchronous communications pattern, the calling service is blocked until it receives a response from the endpoint. The endpoint can typically call other services for additional processing. MES requires synchronous communications for latency-sensitive transactions. For example, consider a continuous production line where one user completes an operation on an order. The next user would expect to see that order immediately arrive for the next operation. Any delay in such transactions could negatively impact the product's cycle time and plant performance KPIs, and could cause additional wait time and under-utilization of resources.
 
-![Synchronous communications in MES](http://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/images/guide-img/093538ca-c7c9-4311-a0e9-8a876ae66d65/images/f65d09de-3792-4aa2-8665-bc47e7b42253.png)
+![Synchronous communications in MES](https://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/images/guide-img/093538ca-c7c9-4311-a0e9-8a876ae66d65/images/f65d09de-3792-4aa2-8665-bc47e7b42253.png)
 
 ## Asynchronous communications
 <a name="asynchronous-communications.593489f4-7d75-5224-bdc8-d7b063c72ebc"></a>
 
 In this communication pattern, the caller doesn't wait for a response from the endpoint or from another service. MES adopts this pattern when it can tolerate latency without negatively affecting the business transaction. For example, when a user completes an operation by using a machine, you might want to report the run hours of that machine to the maintenance microservice. This communication can be asynchronous, because updating run hours doesn't immediately initiate an event or affect the operation's completion.
 
-![Asynchronous communications in MES](http://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/images/guide-img/093538ca-c7c9-4311-a0e9-8a876ae66d65/images/7166a2e8-70a5-448e-b4bb-4ef416802d6f.png)
+![Asynchronous communications in MES](https://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/images/guide-img/093538ca-c7c9-4311-a0e9-8a876ae66d65/images/7166a2e8-70a5-448e-b4bb-4ef416802d6f.png)
 
 ## Pub/sub pattern
 <a name="pub-sub-pattern.a918a812-c10b-50e6-b912-b90a04fba402"></a>
 
 The publish/subscribe (pub/sub) pattern further extends asynchronous communications. Managing interdependent communications can become challenging as the MES matures and the number of microservices grows. You might not want to change a caller service every time you add a new service that has to listen to it. The pub/sub pattern solves this by enabling asynchronous communications among multiple microservices without tight coupling. In this pattern, a microservice publishes event messages to a channel that subscriber microservices can listen to. Therefore, when you add a new service, you subscribe to the channel without changing the publishing service. For example, a production report or operation-complete transaction might update several log and transaction history records. Instead of modifying these transactions whenever you add new logging services for machines, labor, inventory, external systems, and so on, you can subscribe each new service to the original transaction's message and handle it separately.
 
-![Pub/sub communications in MES](http://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/images/guide-img/093538ca-c7c9-4311-a0e9-8a876ae66d65/images/355bb00e-ce3a-4c9c-a8ba-2d698dedb7ce.png)
+![Pub/sub communications in MES](https://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/images/guide-img/093538ca-c7c9-4311-a0e9-8a876ae66d65/images/355bb00e-ce3a-4c9c-a8ba-2d698dedb7ce.png)
 
 ## Hybrid communications
 <a name="hybrid-communications.d2f2604e-fadf-57a9-a2cc-5dc49953f831"></a>

@@ -29,11 +29,11 @@ This pattern explains the steps for configuring cross-account access to Amazon D
 
 The following diagram shows a single-account architecture. AWS Lambda, Amazon Elastic Compute Cloud (Amazon EC2), and DynamoDB are all in the same account. In this scenario, Lambda functions and Amazon EC2 instances can access DynamoDB. To grant access to the DynamoDB table, you can create an identity-based policy in IAM, or you can create a resource-based policy in DynamoDB.
 
-![Using IAM permissions to access a DynamoDB table in the same account.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/bfc32fe8-5db0-4cac-a30f-b870a1a82875/images/cbb009eb-422d-4833-a1bc-0c571d83c21f.png)
+![Using IAM permissions to access a DynamoDB table in the same account.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/bfc32fe8-5db0-4cac-a30f-b870a1a82875/images/cbb009eb-422d-4833-a1bc-0c571d83c21f.png)
 
 The following diagram shows a multi-account architecture. If resources in one AWS account require access to a DynamoDB table in a different account, you need to set up a resource-based policy in DynamoDB to grant the required access. For example, in the following diagram, access to the DynamoDB table in Account A is granted to a Lambda function in Account B by using a resource-based policy.
 
-![Using a resource-based policy to access a DynamoDB table in a different account.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/bfc32fe8-5db0-4cac-a30f-b870a1a82875/images/9f9165a8-b767-4427-a2ae-31b5b8c83326.png)
+![Using a resource-based policy to access a DynamoDB table in a different account.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/bfc32fe8-5db0-4cac-a30f-b870a1a82875/images/9f9165a8-b767-4427-a2ae-31b5b8c83326.png)
 
 This pattern describes cross-account access between Lambda and DynamoDB. You can use similar steps for other AWS services if the appropriate permissions are configured on both accounts. For example, if you want to provide a Lambda function access to an Amazon Simple Storage Service (Amazon S3) bucket in Account A, you can create a [resource-based policy](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html) in Amazon S3 and add the permissions to the [Lambda execution role](https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html) in Account B.
 

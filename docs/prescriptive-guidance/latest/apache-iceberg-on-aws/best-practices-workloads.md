@@ -32,7 +32,7 @@ Important: Currently, Iceberg integration with MRAP works only with Apache Spark
 
 The CRR and MRAP features help you build a cross-Region replication solution for Iceberg tables, as illustrated in the following diagram.
 
-![Cross-region replication for Iceberg tables](http://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/images/guide-img/ceffa39e-028d-47b6-a54a-6ef8526aee6a/images/0ed52165-ab05-44d1-a171-0d9c663646a9.png)
+![Cross-region replication for Iceberg tables](https://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/images/guide-img/ceffa39e-028d-47b6-a54a-6ef8526aee6a/images/0ed52165-ab05-44d1-a171-0d9c663646a9.png)
 
 To set up this cross-Region replication architecture:
 

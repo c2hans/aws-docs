@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-so
 
  The following figure shows a simplified representation of a LoRaWAN network architecture:
 
-![Diagram showing a LoRaWAN network architecture (simplified)](http://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/lorawan-network-architecture.png)
+![Diagram showing a LoRaWAN network architecture (simplified)](https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/lorawan-network-architecture.png)
 
  **LoRaWAN radio gateway**
 

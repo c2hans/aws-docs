@@ -49,7 +49,7 @@ The approach in this pattern provides these benefits:
 ## Architecture
 <a name="p-automate-blue-green-deployments-aurora-global-databases-iac-architecture"></a>
 
-![Using GTID replication to sync blue and green environments in different Regions.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/19922266-c2e5-460b-9a0f-22e6d6736094/images/7a8c3095-7904-4080-906f-0c403c289a4f.png)
+![Using GTID replication to sync blue and green environments in different Regions.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/19922266-c2e5-460b-9a0f-22e6d6736094/images/7a8c3095-7904-4080-906f-0c403c289a4f.png)
 
 The diagram illustrates the following:
 + Global database setup: An Aurora global database cluster is strategically deployed across two AWS Regions. This configuration enables geographic distribution and Regional redundancy for enhanced disaster recovery capabilities.

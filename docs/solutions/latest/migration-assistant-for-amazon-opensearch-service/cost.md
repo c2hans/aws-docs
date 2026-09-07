@@ -15,13 +15,13 @@ In the following example, we outline the cost of a 15-day migration with the fol
 
  **Depicts an example 15-day migration schedule from deployment to teardown**
 
-![cost migration schedule](http://docs.aws.amazon.com/solutions/latest/migration-assistant-for-amazon-opensearch-service/images/cost-migration-schedule.png)
+![cost migration schedule](https://docs.aws.amazon.com/solutions/latest/migration-assistant-for-amazon-opensearch-service/images/cost-migration-schedule.png)
 
 To understand the costs, we need to map these steps into cost components, including data retention periods as applicable. This yields the following schedule:
 
  **Depicts an example 15-day migration schedule mapped to this solution’s components**
 
-![cost migration schedule components](http://docs.aws.amazon.com/solutions/latest/migration-assistant-for-amazon-opensearch-service/images/cost-migration-schedule-components.png)
+![cost migration schedule components](https://docs.aws.amazon.com/solutions/latest/migration-assistant-for-amazon-opensearch-service/images/cost-migration-schedule-components.png)
 
 + Core Services - 15 days
 + Capture Proxy - 6 days

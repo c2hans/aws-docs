@@ -34,15 +34,15 @@ So, you see that the distribution in reality isn’t even. However, you might be
 
  How do you calculate the probability of this outcome? You use the *χ2* statistic that provides very well-studied distributions and can be used to determine the probability of getting a result this extreme or more extreme using this formula.
 
-![Formulas for Ei, Oi, and X2](http://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-resilience-patterns/images/formulas1.png)
+![Formulas for Ei, Oi, and X2](https://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-resilience-patterns/images/formulas1.png)
 
  For our example, this results in:
 
-![Formulas for Ei, Oi, and X2 using our example, resulting in an answer of 6.](http://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-resilience-patterns/images/formulas2.png)
+![Formulas for Ei, Oi, and X2 using our example, resulting in an answer of 6.](https://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-resilience-patterns/images/formulas2.png)
 
  So, what does `6` mean in terms of our probability? You need to look at a chi-squared distribution with the appropriate degree of freedom. The following figure shows several chi-squared distributions for different degrees of freedom.
 
-![Graph showing chi-squared distributions for different degrees of freedom](http://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-resilience-patterns/images/chi-squared-distributions.png)
+![Graph showing chi-squared distributions for different degrees of freedom](https://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-resilience-patterns/images/chi-squared-distributions.png)
 
  The degree of freedom is calculated as one less than the number of choices in the test. In this case, because there are four Availability Zones, the degree of freedom is three. Then, you want to know the area under the curve (the integral) for *x ≥ 6* on the *k = 3* plot. You can also use a pre-calculated table with commonly used values to approximate that value.
 
@@ -69,6 +69,6 @@ Collect the error count metric for each AZ and Controller/Action in a specified 
 
 Then, add these alarms to your existing Availability Zone availability alarm for the Controller and Action combination, shown in the following figure.
 
-![Diagram showing integrating the chi-squared statistics test with composite alarms](http://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-resilience-patterns/images/statistics-test-with-composite-alarms.png)
+![Diagram showing integrating the chi-squared statistics test with composite alarms](https://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-resilience-patterns/images/statistics-test-with-composite-alarms.png)
 
 As mentioned previously, when you onboard new functionality in your workload, you only need to create the appropriate CloudWatch metric alarms that are specific to that new functionality and update the next tier in the composite alarm hierarchy to include those alarms. The rest of the alarm structure remains static.

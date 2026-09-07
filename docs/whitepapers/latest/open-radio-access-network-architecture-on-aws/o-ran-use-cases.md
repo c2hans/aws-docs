@@ -16,7 +16,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/open-radio-access-net
 
  Co-hosting of CU and UPF-like network functions (NFs) and MEC applications on the AWS brings the benefit of a single pane of glass for the orchestration for all network and service applications.
 
-![A diagram depicting MEC and O-RAN collocation on the AWS.](http://docs.aws.amazon.com/whitepapers/latest/open-radio-access-network-architecture-on-aws/images/mec-and-o-ran.png)
+![A diagram depicting MEC and O-RAN collocation on the AWS.](https://docs.aws.amazon.com/whitepapers/latest/open-radio-access-network-architecture-on-aws/images/mec-and-o-ran.png)
 
 ## RIC-CU/DU operation to optimize radio resources (traffic steering and QoE optimization)
 <a name="ric-cudu-operation-to-optimize-radio-resources-traffic-steering-and-qoe-optimization"></a>
@@ -44,7 +44,7 @@ AWS enables you easily use data from a multitude of sources when combined into a
 
  All the created slices and allocated resources can be monitored by the network slicing manager, which provides full visibility to the operator via a graphical view. In addition, AWS provides APIs to allocate resources on AWS Outposts, which are placed in the operator's own data centers or corporate edge sites so that the network slicing manager can control the on-premises resources. The following figure shows the 5G network architecture and the AWS services for network slicing.
 
-![A diagram depicting network slicing manager architecture on AWS.](http://docs.aws.amazon.com/whitepapers/latest/open-radio-access-network-architecture-on-aws/images/network-slicing.png)
+![A diagram depicting network slicing manager architecture on AWS.](https://docs.aws.amazon.com/whitepapers/latest/open-radio-access-network-architecture-on-aws/images/network-slicing.png)
 
  All management operations are performed via AWS APIs, which enables network operators to have no dependency on specific resource mapping across a wide range of network domains. The consistent infrastructure APIs further allows the development of new services such as AI-powered monitoring and service assurance, by using AWS services such as Amazon SageMaker AI.
 

@@ -17,7 +17,7 @@ This section outlines the specifications of the following important functional a
 
 The following diagram shows an architecture for separating a SAS integration and SAS production environment.
 
-![Architecture diagram for separating SAS integration and production environments](http://docs.aws.amazon.com/prescriptive-guidance/latest/data-storage-decoupling-sas-fsx/images/guide-img/f83bb357-cf26-4b94-abb6-1bd9d91feaa4/images/241db150-4fd7-4abb-84b5-6c56ceacb17d.png)
+![Architecture diagram for separating SAS integration and production environments](https://docs.aws.amazon.com/prescriptive-guidance/latest/data-storage-decoupling-sas-fsx/images/guide-img/f83bb357-cf26-4b94-abb6-1bd9d91feaa4/images/241db150-4fd7-4abb-84b5-6c56ceacb17d.png)
 
 ## Infrastructure components
 <a name="infrastructure-components"></a>

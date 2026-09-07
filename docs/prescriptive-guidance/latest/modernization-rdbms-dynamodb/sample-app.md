@@ -29,7 +29,7 @@ The source technology stack consisted of the following:
 + ADO.NET Data Services
 + Microsoft SQL Server 2016
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-rdbms-dynamodb/images/guide-img/bb14de26-e912-4fbe-b307-0ec4123e45b0/images/8cd850d3-6816-4c98-91d9-287da97d46c8.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-rdbms-dynamodb/images/guide-img/bb14de26-e912-4fbe-b307-0ec4123e45b0/images/8cd850d3-6816-4c98-91d9-287da97d46c8.png)
 
 ## New data access pattern
 <a name="new-data-access-pattern.507548ef-23c7-5d61-ac78-111479e8fdb7"></a>
@@ -43,4 +43,4 @@ The new technology stack consists of the following:
 + AWS SDK ─ Provides programmatic access to DynamoDB and other AWS services.
 + DynamoDB ─ Database for storing application data.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-rdbms-dynamodb/images/guide-img/bb14de26-e912-4fbe-b307-0ec4123e45b0/images/9dd07c11-ffa6-4c6e-8f20-b39a144a18c4.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-rdbms-dynamodb/images/guide-img/bb14de26-e912-4fbe-b307-0ec4123e45b0/images/9dd07c11-ffa6-4c6e-8f20-b39a144a18c4.png)

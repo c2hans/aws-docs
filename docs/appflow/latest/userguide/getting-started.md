@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/getting-started
 
 This section provides an introduction to Amazon AppFlow with prerequisites for getting started. The following diagram illustrates how you can use Amazon AppFlow to transfer and enrich data from a data source to a data destination in your flow:
 
-![Amazon AppFlow overview page.](http://docs.aws.amazon.com/appflow/latest/userguide/images/appflow-ov.png)
+![Amazon AppFlow overview page.](https://docs.aws.amazon.com/appflow/latest/userguide/images/appflow-ov.png)
 
 **Topics**
 + [Sign up for an AWS account](#sign-up-for-aws)

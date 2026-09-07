@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-infe
 
 As shown in the following diagram, AWS provides a multi-layer AI inference stack to address customers' diverse inference needs.
 
-![Layers of the AWS inference stack: Serverless, managed inference, and self-managed inference.](http://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-inference-architecture-and-best-practices-on-aws/images/guide-img/1e4a4636-9247-4346-9ab7-62170783f8a2/images/a8ce5552-4b09-408b-bcd1-c306c0e137b0.png)
+![Layers of the AWS inference stack: Serverless, managed inference, and self-managed inference.](https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-inference-architecture-and-best-practices-on-aws/images/guide-img/1e4a4636-9247-4346-9ab7-62170783f8a2/images/a8ce5552-4b09-408b-bcd1-c306c0e137b0.png)
 
 Following are descriptions of each layer of the AI inference stack.
 

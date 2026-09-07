@@ -19,15 +19,15 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/using-connectors-unified-
 
  The connection version is visible on Connection details:
 
-![Screenshot shows the connections detail on the v2 connection.](http://docs.aws.amazon.com/glue/latest/dg/images/connections-v2-connection-details-2.png)
+![Screenshot shows the connections detail on the v2 connection.](https://docs.aws.amazon.com/glue/latest/dg/images/connections-v2-connection-details-2.png)
 
  The connection version is also visible when viewing all your Connections.
 
-![Screenshot shows the connections detail on the v2 connection.](http://docs.aws.amazon.com/glue/latest/dg/images/connections-list-view-v2-2.png)
+![Screenshot shows the connections detail on the v2 connection.](https://docs.aws.amazon.com/glue/latest/dg/images/connections-list-view-v2-2.png)
 
  Finally, connection version is visible in the Job details tab for a job.
 
-![Screenshot shows the connections detail on the v2 connection.](http://docs.aws.amazon.com/glue/latest/dg/images/connections-v2-job-details-tab.png)
+![Screenshot shows the connections detail on the v2 connection.](https://docs.aws.amazon.com/glue/latest/dg/images/connections-v2-job-details-tab.png)
 
  With version 2 connections, you have the following expanded data connectivity capabilities:
 +  **Connection type discovery**: Support for creating connections using standardized templates. AWS Glue automatically discovers the connection types accessible by you and the required and optional inputs for a given connection type.

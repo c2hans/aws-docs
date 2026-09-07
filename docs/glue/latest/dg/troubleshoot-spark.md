@@ -83,7 +83,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/troubleshoot-spark.html
 
 1.  When the troubleshooting analysis is complete, you can view the root-cause analysis and recommendations in the **Troubleshooting analysis** tab at the bottom of the screen.
 
-![The GIF shows an end to end implementation of a failed run and the troubleshoot with AI feature running.](http://docs.aws.amazon.com/glue/latest/dg/images/troubleshoot_spark_option_1_jobs_list.gif)
+![The GIF shows an end to end implementation of a failed run and the troubleshoot with AI feature running.](https://docs.aws.amazon.com/glue/latest/dg/images/troubleshoot_spark_option_1_jobs_list.gif)
 
 ### Option 2: Using the Job Run Monitoring page
 <a name="troubleshoot-spark-job-run-monitoring-page"></a>
@@ -96,7 +96,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/troubleshoot-spark.html
 
 1.  Choose **Troubleshoot with AI**.
 
-![The GIF shows an end to end implementation of a failed run and the troubleshoot with AI feature running.](http://docs.aws.amazon.com/glue/latest/dg/images/troubleshoot_spark_option_2_job_monitoring.gif)
+![The GIF shows an end to end implementation of a failed run and the troubleshoot with AI feature running.](https://docs.aws.amazon.com/glue/latest/dg/images/troubleshoot_spark_option_2_job_monitoring.gif)
 
 ### Option 3: From the Job Run Details page
 <a name="troubleshoot-spark-job-run-details-page"></a>

@@ -31,7 +31,7 @@ Amazon RDS provides high availability and failover support for databases that ar
 
 The following diagram illustrates the Amazon RDS for Oracle Multi-AZ deployment option. The database application and users connect to the primary Oracle database, and all changes are synchronously replicated to the secondary database, which is in a different Availability Zone. The secondary database is not available to users until the failover is complete. After failover, the endpoint remains the same, so users and database applications can resume database operations without any manual intervention.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-oracle-database/images/guide-img/b6e66b32-33d8-4097-909d-dcc9b3b4a45a/images/c4bb3d8e-0d3d-43a7-99db-030ee48ee4cb.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-oracle-database/images/guide-img/b6e66b32-33d8-4097-909d-dcc9b3b4a45a/images/c4bb3d8e-0d3d-43a7-99db-030ee48ee4cb.png)
 
 ## Read replicas
 <a name="rds-oracle-replicas"></a>
@@ -49,7 +49,7 @@ To use the read replica feature, you must use the Bring Your Own License (BYOL) 
 
 The following diagram illustrates an Amazon RDS for Oracle DB instance in a Multi-AZ environment with a read replica in another Availability Zone within the same AWS Region. Not all AWS Regions offer more than two Availability Zones, so you should [check the Region](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) you're planning to use before adopting this strategy.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-oracle-database/images/guide-img/b6e66b32-33d8-4097-909d-dcc9b3b4a45a/images/5b8d1a93-5f38-477e-a4fa-24679024c855.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-oracle-database/images/guide-img/b6e66b32-33d8-4097-909d-dcc9b3b4a45a/images/5b8d1a93-5f38-477e-a4fa-24679024c855.png)
 
 ### Using a read replica in another AWS Region
 <a name="using-a-read-replica-in-another-aws-region.f3309f3c-cd3e-5026-978f-b74da509f819"></a>
@@ -64,7 +64,7 @@ You can promote an Oracle read replica to a standalone DB instance explicitly, o
 
 The following diagram shows the configuration of Amazon RDS for Oracle cross-Region read replicas.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-oracle-database/images/guide-img/b6e66b32-33d8-4097-909d-dcc9b3b4a45a/images/68626e32-5a5d-4c2c-8f7e-252936c87107.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-oracle-database/images/guide-img/b6e66b32-33d8-4097-909d-dcc9b3b4a45a/images/68626e32-5a5d-4c2c-8f7e-252936c87107.png)
 
 The data transferred for cross-Region replication incurs Amazon RDS data transfer charges.
 

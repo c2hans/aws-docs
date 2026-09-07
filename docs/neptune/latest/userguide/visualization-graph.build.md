@@ -26,6 +26,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/visualization-g
 
  Writers are configured to write or update both Labelled Property Graph(LPG) and Resource Description Framework(RDF) graph models in target graph databases, like Amazon Neptune and Neptune Analytics.
 
-![Ontology model designer showing semantic graph with entities such as Airport, Route, City, and Airline connected by relationships.](http://docs.aws.amazon.com/neptune/latest/userguide/images/graph-build-screenshot.png)
+![Ontology model designer showing semantic graph with entities such as Airport, Route, City, and Airline connected by relationships.](https://docs.aws.amazon.com/neptune/latest/userguide/images/graph-build-screenshot.png)
 
  [Request a demo](https://graph.build/enquire/book-a-demo) today.

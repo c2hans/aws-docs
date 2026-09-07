@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-static-websites
 
  Amazon S3 provides HTTP web-serving capabilities, and the content can be viewed by any browser. You must also configure [Amazon Route 53](https://aws.amazon.com/route53), a managed Domain Name System (DNS) service, to point your domain to your Amazon S3 bucket. The following figure illustrates this architecture, where `example.com` is the domain.
 
-![A diagram depicting Amazon S3 website hosting.](http://docs.aws.amazon.com/whitepapers/latest/build-static-websites-aws/images/s3-web-hosting.png)
+![A diagram depicting Amazon S3 website hosting.](https://docs.aws.amazon.com/whitepapers/latest/build-static-websites-aws/images/s3-web-hosting.png)
 
  In this solution, there are no Windows or Linux servers to manage, and no need to provision machines, install operating systems, or fine-tune web server configurations. There’s also no need to manage storage infrastructure (such as, SAN, NAS) because Amazon S3 provides practically limitless cloud-based storage. Fewer moving parts means fewer troubleshooting headaches.
 
@@ -65,7 +65,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-static-websites
 
  For non-root subdomains (such as `www.example.com`), any DNS service (including Amazon Route 53) can create a `CNAME` entry to the subdomain. See the [Amazon Simple Storage Service Developer Guide](https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html) for more details on how to associate domain names with your website.
 
-![A screenshot that shows configuring static website hosting using the Amazon S3 console.](http://docs.aws.amazon.com/whitepapers/latest/build-static-websites-aws/images/configure-static.jpeg)
+![A screenshot that shows configuring static website hosting using the Amazon S3 console.](https://docs.aws.amazon.com/whitepapers/latest/build-static-websites-aws/images/configure-static.jpeg)
 
  The Amazon S3 website hosting configuration screen in the Amazon S3 console presents additional options to configure. Some of the key options are as follows:
 +  You can configure a default page that users see if they visit the domain name directly (without specifying a specific page). (For Microsoft IIS web servers, this is equivalent to `default.html`. For Apache web servers, this is equivalent to `index.html`.)
@@ -78,7 +78,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-static-websites
 
  In Amazon S3, a bucket is a flat container of objects. It doesn’t provide a hierarchical organization the way the file system on your computer does. However, there is a straightforward mapping between a file system’s folders/files to Amazon S3 objects. The example that follows shows how folders/files are mapped to Amazon S3 objects. Most third-party tools, as well as the AWS Management Console and AWS Command Line Interface (AWS CLI), [handle this mapping transparently](https://docs.aws.amazon.com/AmazonS3/latest/dev/IndexDocumentSupport.html) for you. For consistency, we recommend that you use lowercase characters for file and folder names.
 
-![Code for a hierarchical file system.](http://docs.aws.amazon.com/whitepapers/latest/build-static-websites-aws/images/heirarchical-system.jpeg)
+![Code for a hierarchical file system.](https://docs.aws.amazon.com/whitepapers/latest/build-static-websites-aws/images/heirarchical-system.jpeg)
 
 ## Uploading content
 <a name="uploading-content"></a>

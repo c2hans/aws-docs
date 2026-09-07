@@ -21,6 +21,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-wor
 
  Deploying your workload across multiple Availability Zones in an AWS Region is part of a high availability strategy designed to protect workloads by isolating issues to one Availability Zone, and uses the redundancy of the other Availability Zones to continue serving requests. A Multi-AZ architecture is also part of a DR strategy designed to make workloads better isolated and protected from issues such as power outages, lightning strikes, tornadoes, earthquakes, and more. DR strategies may also make use of multiple AWS Regions. For example in an active/passive configuration, service for the workload will fail over from its active region to its DR region if the active Region can no longer serve requests.
 
-![Diagram showing how resiliency is a shared responsibility between AWS and the customer.](http://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/images/shared-responsibility-of-resiliency.png)
+![Diagram showing how resiliency is a shared responsibility between AWS and the customer.](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/images/shared-responsibility-of-resiliency.png)
 
 *Figure 2 - Resiliency is a shared responsibility between AWS and the customer*

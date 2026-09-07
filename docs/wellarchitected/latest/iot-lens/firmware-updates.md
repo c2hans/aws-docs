@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/firmware
 
  To implement firmware updates using AWS IoT Device Management and AWS IoT Jobs, see the following diagram.
 
-![Updating firmware on devices](http://docs.aws.amazon.com/wellarchitected/latest/iot-lens/images/image6.png)
+![Updating firmware on devices](https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/images/image6.png)
 
 1.  A device subscribes to the IoT job notification topic $aws/things/<<thingName>>/jobs/notify-next upon which IoT job notification messages will arrive.
 

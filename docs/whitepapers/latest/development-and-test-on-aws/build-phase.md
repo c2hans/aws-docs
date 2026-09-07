@@ -29,7 +29,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/development-and-test-
 
  You can define scaling conditions using [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/), a monitoring service for AWS Cloud resources. For example, Amazon CloudWatch can monitor the number of messages in the build queue and notify Auto Scaling that more or less capacity is needed depending on the number of messages in the queue. The following diagram summarizes this scenario:
 
-![A diagram that shows how Amazon CloudWatch can monitor the number of messages in the build queue and notify Auto Scaling that more or less capacity is needed .](http://docs.aws.amazon.com/whitepapers/latest/development-and-test-on-aws/images/cloudwatch.png)
+![A diagram that shows how Amazon CloudWatch can monitor the number of messages in the build queue and notify Auto Scaling that more or less capacity is needed .](https://docs.aws.amazon.com/whitepapers/latest/development-and-test-on-aws/images/cloudwatch.png)
 
 ## Storing build artifacts
 <a name="storing-build-artifacts"></a>

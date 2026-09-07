@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-bu
 
  [AWS Transform MGN](https://aws.amazon.com/application-migration-service/) (AWS MGN) is a migration and replication tool available from AWS which can be used for migrating the applications as well as for setting up DR environments on AWS. It works by migrating or replicating the blocks of storage devices from source to target. Because it operates at the block level, it can migrate various workloads, including enterprise resource planning (ERP) applications from virtual machines (VMs), cloud, or physical data center. AWS MGN supports migration from any OS to AWS. Following is an architecture showing various components of AWS MGN and how they work together to migrate workloads on AWS.
 
-![Reference architecture diagram showing AWS MGN migration/disaster recovery](http://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-business-suite/images/aws-mgn-migration-dr.jpg)
+![Reference architecture diagram showing AWS MGN migration/disaster recovery](https://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-business-suite/images/aws-mgn-migration-dr.jpg)
 
  The AWS MGN orchestration engine automatically launches a fully operational Oracle E-Business Suite environment in the target AWS Region, enabling a recovery time objective (RTO) of minutes. The AWS MGN automated machine conversion process takes approximately 30 seconds, and ensures that OS machines replicated from physical, virtual, and cloud-based infrastructure will natively boot and run transparently in AWS, by automatically handling all hypervisor and OS configuration changes, boot process changes, and OS activation and installation of target infrastructure guest agents.
 

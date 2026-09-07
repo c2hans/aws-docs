@@ -14,14 +14,14 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-e2e-data-driven
 
  These three stages in turn lead to the development of a modern data strategy on AWS, as illustrated in the following figure. This strategy gives you the best of both data lakes and purpose-built stores. It enables you to store any amount of data at a low cost, and in open-standards data formats. This helps you avoid the risks of getting locked into a proprietary format. It helps you break down data silos and empower your teams to run analytics or ML at scale, using your preferred tools and techniques.
 
-![A diagram depicting modern data strategy on AWS .](http://docs.aws.amazon.com/whitepapers/latest/build-e2e-data-driven-applications/images/modern-data-strategy.png)
+![A diagram depicting modern data strategy on AWS .](https://docs.aws.amazon.com/whitepapers/latest/build-e2e-data-driven-applications/images/modern-data-strategy.png)
 
 ## Modern data architecture
 <a name="modern-data-architecture"></a>
 
  AWS modern data architecture connects your data lake, your data warehouse, and all other purpose-built stores into a coherent whole. The following figure depicts a modern data architecture on AWS.
 
-![A diagram depicting modern data architecture on AWS.](http://docs.aws.amazon.com/whitepapers/latest/build-e2e-data-driven-applications/images/modern-data-architecture.png)
+![A diagram depicting modern data architecture on AWS.](https://docs.aws.amazon.com/whitepapers/latest/build-e2e-data-driven-applications/images/modern-data-architecture.png)
 
  **Key:**
 
@@ -44,7 +44,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-e2e-data-driven
 
  Many organizations also use non-relational databases such as MongoDB and Redis as document and in-memory databases for use cases such as content management, personalization, mobile apps, catalogs, and near real-time use cases such as caching, gaming leaderboards, and session stores. The most straightforward and simple solution for many organizations who are struggling to maintain their own non-relational databases at scale is a move to a managed database service (for example, moving self-managed MongoDB databases to Amazon DocumentDB or moving self-managed in-memory databases such as Redis and ElastiCache to [Amazon ElastiCache](https://aws.amazon.com/elasticache/)). In most cases, these organizations can migrate workloads and applications to a managed service without needing to re-architect their applications, and their teams can continue to use the same database skill sets.
 
-![A diagram that shows purpose-built database services on AWS.](http://docs.aws.amazon.com/whitepapers/latest/build-e2e-data-driven-applications/images/purpose-built-databases.png)
+![A diagram that shows purpose-built database services on AWS.](https://docs.aws.amazon.com/whitepapers/latest/build-e2e-data-driven-applications/images/purpose-built-databases.png)
 
 ## Purpose-built data analytics services
 <a name="purpose-built-data-analytics-services"></a>
@@ -53,7 +53,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-e2e-data-driven
 
  AWS provides a portfolio of purpose-built data analytics services, which include [AWS Glue](https://aws.amazon.com/glue/), [Amazon EMR](https://aws.amazon.com/emr/), [Amazon Athena](https://aws.amazon.com/athena/), [Amazon Kinesis](https://aws.amazon.com/kinesis/), [Amazon Managed Streaming for Apache Kafka](https://aws.amazon.com/msk/) (Amazon MSK), [Amazon OpenSearch Service](https://aws.amazon.com/opensearch-service/), [Amazon Redshift](https://aws.amazon.com/redshift/), and [Quick](https://aws.amazon.com/quicksight/) for various unique analytics use cases. These are managed services, so organizations don’t need to worry about administration tasks such as software provisioning, configuration, backups, patching, and recovery. Instead, organizations can focus on getting insights from their data and creating a business value, not managing the infrastructure. These purpose-built data analytics services are optimized for specific use cases, because one size solution doesn’t fit for all use cases and leads to compromises in analytics. The purpose-built-analytics capabilities are illustrated in the following figure.
 
-![A diagram depicting purpose-built data analytics services on AWS .](http://docs.aws.amazon.com/whitepapers/latest/build-e2e-data-driven-applications/images/purpose-built-analytics.png)
+![A diagram depicting purpose-built data analytics services on AWS .](https://docs.aws.amazon.com/whitepapers/latest/build-e2e-data-driven-applications/images/purpose-built-analytics.png)
 
 ## ML and AI services
 <a name="ml-and-ai-services"></a>
@@ -65,4 +65,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-e2e-data-driven
 +  **For data scientists and ML developers**, AWS provides [Amazon SageMaker AI](https://aws.amazon.com/sagemaker/). SageMaker AI was built from the ground up to simplify the process of ML with tools for every step of the ML development, including labeling, data preparation, feature engineering, statistical bias detection, auto-ML, training, tuning, hosting, explainability, monitoring, and workflows.
 +  **For developers and business users**, AWS provides pre-trained AI services that provide ready-made intelligence for applications and workflows, and end-to-end solutions that can solve business needs right out of the box using [AutoML](https://docs.aws.amazon.com/sagemaker/latest/dg/use-auto-ml.html) technology. These services address common use cases such as personalized recommendations, contact center intelligence, document processing, intelligent search, business metrics analysis, and more. AWS also provides industry-specific AI services for both industrial and healthcare industries.
 
-![A diagram describing AWS ML and AI services.](http://docs.aws.amazon.com/whitepapers/latest/build-e2e-data-driven-applications/images/ml-ai-services.png)
+![A diagram describing AWS ML and AI services.](https://docs.aws.amazon.com/whitepapers/latest/build-e2e-data-driven-applications/images/ml-ai-services.png)

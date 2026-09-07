@@ -54,7 +54,7 @@ The following are the colors associated with the response time line graph (the t
 **Example – Response time distribution**
 The response time distribution is a chart that shows the number of traces with a given response time. Click and drag to make selections within the response time distribution. This selects and creates a filter on the working trace set named `responseTime` for all traces within a specific response time.
 
-![A chart that shows the response time distribution of traces.](http://docs.aws.amazon.com/xray/latest/devguide/images/analytics-responseTime.png)
+![A chart that shows the response time distribution of traces.](https://docs.aws.amazon.com/xray/latest/devguide/images/analytics-responseTime.png)
 
 ## Time series activity
 <a name="xray-console-analytics-time"></a>
@@ -64,7 +64,7 @@ The time series activity chart shows the number of traces at a given time period
 **Example – Time series activity**
 Click and drag to make selections within the time series activity graph. This selects and creates a filter named `timerange` on the working trace set for all traces within a specific range of time.
 
-![Make a selection and create filter](http://docs.aws.amazon.com/xray/latest/devguide/images/analytics-timeSeries.png)
+![Make a selection and create filter](https://docs.aws.amazon.com/xray/latest/devguide/images/analytics-timeSeries.png)
 
 ## Workflow examples
 <a name="xray-console-analytics-workflows"></a>
@@ -78,7 +78,7 @@ The trace map indicates the health of each node by coloring it based on the rati
 
 For more information about how to read the trace map, see [Viewing the trace map](https://docs.aws.amazon.com/xray/latest/devguide/xray-console.html#xray-console-servicemap).
 
-![Observe a fault](http://docs.aws.amazon.com/xray/latest/devguide/images/scorekeep-gettingstarted-servicemap-before-2021.png)
+![Observe a fault](https://docs.aws.amazon.com/xray/latest/devguide/images/scorekeep-gettingstarted-servicemap-before-2021.png)
 
 ## Identify response time peaks
 <a name="xray-console-analytics-response-peaks"></a>
@@ -87,7 +87,7 @@ Using the response time distribution, you can observe peaks in response time. By
 
 When you click and drag, X-Ray selects and creates a filter. It's shown in a gray shadow on top of the graphed lines. You can now drag that shadow left and right along the distribution to update your selection and filter.
 
-![Make a selection and create filter](http://docs.aws.amazon.com/xray/latest/devguide/images/analytics-showFilterf.png)
+![Make a selection and create filter](https://docs.aws.amazon.com/xray/latest/devguide/images/analytics-showFilterf.png)
 
 ## View all traces marked with a status code
 <a name="xray-console-analytics-response-peaks"></a>
@@ -106,7 +106,7 @@ Compare across various users and their POST requests to find other discrepancies
 
 To proceed, define a new set of filters to apply to trace set B. This second set is represented by a green line. The following example shows different lines according to the blue and green color scheme.
 
-![Line graph comparison](http://docs.aws.amazon.com/xray/latest/devguide/images/analytics-compareLines.png)
+![Line graph comparison](https://docs.aws.amazon.com/xray/latest/devguide/images/analytics-compareLines.png)
 
 ## Identify a trace of interest and view its details
 <a name="xray-console-analytics-identify"></a>

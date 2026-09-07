@@ -14,7 +14,7 @@ This pattern is useful for iterative development, reinforcement learning (RL), a
 
 The following diagram shows a simulation or test-bed agent:
 
-![Simulation and test-bed agents.](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-patterns/images/guide-img/cde5ee68-ed86-4053-9fb1-d0dbf7199e24/images/d5aa2568-41a9-4442-b73a-a54aa5b0a9ae.png)
+![Simulation and test-bed agents.](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-patterns/images/guide-img/cde5ee68-ed86-4053-9fb1-d0dbf7199e24/images/d5aa2568-41a9-4442-b73a-a54aa5b0a9ae.png)
 
 ## Description
 <a name="description.8cc69d2d-1ab3-5628-b292-e39356868e2c"></a>

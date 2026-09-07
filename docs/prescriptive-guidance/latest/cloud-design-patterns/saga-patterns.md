@@ -11,7 +11,7 @@ This sequence of local transactions helps achieve a business workflow by using c
 
 For example, when a user purchases a book from an online retailer, the process consists of a sequence of transactions―such as order creation, inventory update, payment, and shipping―that represents a business workflow. In order to complete this workflow, the distributed architecture issues a sequence of local transactions to create an order in the order database, update the inventory database, and update the payment database. When the process is successful, these transactions are invoked sequentially to complete the business workflow, as the following diagram shows. However, if any of these local transactions fails, the system should be able to decide on an appropriate next step―that is, either a forward recovery or a backward recovery.
 
-![Business workflows](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/dbf35a03-02f9-4292-8bb9-4e9f5d14a304.png)
+![Business workflows](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/dbf35a03-02f9-4292-8bb9-4e9f5d14a304.png)
 
 The following two scenarios help determine whether the next step is forward recovery or backward recovery:
 + Platform-level failure, where something goes wrong with the underlying infrastructure and causes the transaction to fail. In this case, the saga pattern can perform a forward recovery by retrying the local transaction and continuing the business process.
@@ -28,7 +28,7 @@ The saga choreography pattern depends on the events published by the microservic
 
 The saga choreography pattern is suitable when there are only a few participants in the saga, and you need a simple implementation with no single point of failure. When more participants are added, it becomes harder to track the dependencies between the participants by using this pattern.
 
-![Saga choreography pattern](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/4e92e053-6d80-4959-9ffb-067d67d205d7.png)
+![Saga choreography pattern](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/4e92e053-6d80-4959-9ffb-067d67d205d7.png)
 
 ## Saga orchestration
 <a name="saga-orchestration.6a38a249-1551-54ac-a92b-4fce80cf3e99"></a>
@@ -37,4 +37,4 @@ The saga orchestration pattern has a central coordinator called an *orchestrator
 
 The saga orchestration pattern is suitable when there are many participants, and loose coupling is required between saga participants. The orchestrator encapsulates the complexity in the logic by making the participants loosely coupled. However, the orchestrator can become a single point of failure because it controls the entire workflow.
 
-![Saga orchestration pattern](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/f2c495f6-ccfe-4488-9dc6-f0fd913c897d.png)
+![Saga orchestration pattern](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/f2c495f6-ccfe-4488-9dc6-f0fd913c897d.png)

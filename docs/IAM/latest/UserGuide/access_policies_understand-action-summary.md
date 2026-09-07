@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_und
 
 Policies are summarized in three tables: the [policy summary](access_policies_understand-policy-summary.md), the [service summary](access_policies_understand-service-summary.md), and the action summary. The *action summary* table includes a list of resources and the associated conditions that apply to the chosen action.
 
-![policy summaries diagram that illustrates the 3 tables and their relationship.](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/policy_summaries-action-sum.png)
+![policy summaries diagram that illustrates the 3 tables and their relationship.](https://docs.aws.amazon.com/IAM/latest/UserGuide/images/policy_summaries-action-sum.png)
 
 To view an action summary for each action that grants permissions, choose the link in the service summary. The action summary table includes details about the resource, including its **Region** and **Account**. You can also view the conditions that apply to each resource. This shows you conditions that apply to some resources but not others.
 
@@ -16,7 +16,7 @@ To view an action summary for each action that grants permissions, choose the li
 
 The example below is the action summary for the `PutObject` (Write) action from the Amazon S3 service summary (see [Service summary (list of actions)](access_policies_understand-service-summary.md)). For this action, the policy defines multiple conditions on a single resource.
 
-![Action summary dialog image.](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/policies-summary-resource-dialog.png)
+![Action summary dialog image.](https://docs.aws.amazon.com/IAM/latest/UserGuide/images/policies-summary-resource-dialog.png)
 
 The action summary page includes the following information:
 

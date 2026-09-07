@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-concep
 
 Amazon RDS Custom architecture is based on Amazon RDS, with important differences. The following diagram shows the key components of the RDS Custom architecture.
 
-![RDS Custom architecture components.](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/images/RDS_Custom_gen_architecture.png)
+![RDS Custom architecture components.](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/images/RDS_Custom_gen_architecture.png)
 
 **Topics**
 + [VPC](#custom-concept.components.VPC)
@@ -20,7 +20,7 @@ Amazon RDS Custom architecture is based on Amazon RDS, with important difference
 
 As in Amazon RDS, your RDS Custom DB instance resides in a virtual private cloud (VPC).
 
-![RDS Custom DB instance components.](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/images/RDS_Custom_instance.png)
+![RDS Custom DB instance components.](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/images/RDS_Custom_instance.png)
 
 Your RDS Custom DB instance consists of the following main components:
 + Amazon EC2 instance

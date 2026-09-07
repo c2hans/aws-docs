@@ -11,7 +11,7 @@ An Amazon Aurora *DB cluster* consists of one or more DB instances and a cluster
 
 The following diagram illustrates the relationship between the cluster volume, the writer DB instance, and reader DB instances in an Aurora DB cluster.
 
-![Amazon Aurora DB cluster architecture diagram showing storage layer, database instances, and client connections.](http://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/images/aurora_architecture.png)
+![Amazon Aurora DB cluster architecture diagram showing storage layer, database instances, and client connections.](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/images/aurora_architecture.png)
 
 **Note**
 The preceding information applies to all Aurora DB clusters—provisioned, parallel query, Aurora Global Database, Aurora Serverless, Aurora MySQL-Compatible, and Aurora PostgreSQL-Compatible.

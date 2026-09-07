@@ -28,11 +28,11 @@ In the **Insights** panel, the **PII** tab displays results for two analysis mod
 
 The **Offsets** analysis mode identifies the location of PII in your text documents. For more information, see [Locate PII entities](how-pii.md#how-pii-locate).
 
-![The PII offsets analysis mode.](http://docs.aws.amazon.com/comprehend/latest/dg/images/gs-console-pii.png)
+![The PII offsets analysis mode.](https://docs.aws.amazon.com/comprehend/latest/dg/images/gs-console-pii.png)
 
 ## Labels
 <a name="realtime-analysis-console-pii-labels"></a>
 
 The **Labels** analysis mode returns the labels of identified PII entity types. For more information, see [Labeling PII entities](how-pii-labels.md).
 
-![The PII labels analysis mode.](http://docs.aws.amazon.com/comprehend/latest/dg/images/gs-console-pii-labels.png)
+![The PII labels analysis mode.](https://docs.aws.amazon.com/comprehend/latest/dg/images/gs-console-pii-labels.png)

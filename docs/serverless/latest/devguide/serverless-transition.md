@@ -9,7 +9,7 @@ Event-driven architecture (EDA) is the first step on the serverless learning pat
 
 In this chapter, you will dive into the transition from traditional to event-driven architecture.
 
- ![Serverless learning path showing Event Driven Architecture as the first concept on the path, connected by a dotted line to an Event Driven Architecture block with "event 1" connected with arrows to blocks for Service A and Service B. Service A has an arrow connecting to Service B with "event 2" in a box on that arrow. The next concept is a Workshop:Intro to Serverless icons for API Gateway, Lambda, and DynamoDB. The legend has a green check mark for essential and a red heart for Important items. Event Driven Architecture has a green check box.](http://docs.aws.amazon.com/serverless/latest/devguide/images/path-serverless-eda.png)
+ ![Serverless learning path showing Event Driven Architecture as the first concept on the path, connected by a dotted line to an Event Driven Architecture block with "event 1" connected with arrows to blocks for Service A and Service B. Service A has an arrow connecting to Service B with "event 2" in a box on that arrow. The next concept is a Workshop:Intro to Serverless icons for API Gateway, Lambda, and DynamoDB. The legend has a green check mark for essential and a red heart for Important items. Event Driven Architecture has a green check box.](https://docs.aws.amazon.com/serverless/latest/devguide/images/path-serverless-eda.png)
 
  Let's start by thinking about event-driven components of a food delivery service.
 
@@ -17,7 +17,7 @@ In this chapter, you will dive into the transition from traditional to event-dri
 
  You can handle long-running tasks asynchronously. For example you can implement a queue using Amazon SQS to manage order submission on. You can then use Step Functions to manage a workflow that updates user information, and inventory counts after every order is processed. Along the way, you will need to log actions, monitor app activity, and trace data flows to debug.
 
- ![Diagram showing various services communicating through events.](http://docs.aws.amazon.com/serverless/latest/devguide/images/serverless-conceptual.png)
+ ![Diagram showing various services communicating through events.](https://docs.aws.amazon.com/serverless/latest/devguide/images/serverless-conceptual.png)
 
 If you're new to serverless development, you might be more familiar with traditional frameworks. Let us look at the steps in a traditional request/response cycle for comparison:
 
@@ -41,7 +41,7 @@ Now, let us compare a similar work flow implemented with event-driven architectu
 
 This diagram represents a microservice that retrieves data from a database, for example, retrieving shopping cart items for a customer order.
 
- ![Diagram of flow for a microservice with authentication. A client box with Web & Mobile labels, connects by an arrow to an API Gateway (HTTP) block. API Gateway block connects by an arrow with red diamond with text "Event" inside to a Lambda (compute) box. Lambda box is connected by a double ended arrow with an API label to a DynamoDB (Data) icon. Lambda box is also connected by an arrow with a different colored "event" diamond back to API Gateway. API Gateway connects through a lighter arrow back to the Client.](http://docs.aws.amazon.com/serverless/latest/devguide/images/arch-serverless-essentials.png)
+ ![Diagram of flow for a microservice with authentication. A client box with Web & Mobile labels, connects by an arrow to an API Gateway (HTTP) block. API Gateway block connects by an arrow with red diamond with text "Event" inside to a Lambda (compute) box. Lambda box is connected by a double ended arrow with an API label to a DynamoDB (Data) icon. Lambda box is also connected by an arrow with a different colored "event" diamond back to API Gateway. API Gateway connects through a lighter arrow back to the Client.](https://docs.aws.amazon.com/serverless/latest/devguide/images/arch-serverless-essentials.png)
 
 First, a web or mobile client makes an HTTP request to `GET /cart/{{A1234B56}}` for a list items in a cart.
 
@@ -87,7 +87,7 @@ A dedicated API service might at first seem unnecessary, but implementing this a
 
 For example: an item placed in a shopping cart, a file uploaded to a storage system, or an order becoming ready to ship. Events can either carry the state, such as: quantity (qty), item price (itemPx), and currency; or simply contain *identifiers* needed to look up related information, such as: customerId and orderId, as shown in the following example of a `NewOrderEvent`:
 
- ![Example of a NewOrderEvent with various JSON fields for source, detail, and two products in a cart array.](http://docs.aws.amazon.com/serverless/latest/devguide/images/event-example-new-order.png)
+ ![Example of a NewOrderEvent with various JSON fields for source, detail, and two products in a cart array.](https://docs.aws.amazon.com/serverless/latest/devguide/images/event-example-new-order.png)
 
 Next, API Gateway integrates with Lambda, a compute service, to handle the new event. Lambda function code parses the parameters in the inbound event, connects to the data store, and retrieves the cart. The function queries the database API through an SDK library. Because the DynamoDB database is also serverless and built to respond with low latency, there is no need for a connection pool.
 
@@ -114,7 +114,7 @@ Let’s revisit the diagram with various services connected through events. We c
 
 Think of it like looking down on a big city with messengers moving packages and letters between people and businesses. The sources and destinations range from the suburbs to the city core. Inbound requests could be managed by a dispatcher, like API Gateway, Lambda Function URLs, or Amazon EventBridge. Or, some messages might be dropped in a box for asynchronous delivery. This would be like events routed to queues or orchestrated in complex work flows with Step Functions. The monitoring, tracing, and metrics services, CloudWatch and AWS X-Ray, are like managers, watching the stream of events to make sure packages are delivered, and if not, to troubleshoot the problem. After drop-off at a business, some packages are transferred by in-house delivery agents to their final destination. This situation is similar to how services that store data and files, may stream events to compute services, which triggers ever more actions.
 
- ![Diagram showing various services communicating through events.](http://docs.aws.amazon.com/serverless/latest/devguide/images/serverless-conceptual.png)
+ ![Diagram showing various services communicating through events.](https://docs.aws.amazon.com/serverless/latest/devguide/images/serverless-conceptual.png)
 
 Connecting services with **events** and **event-driven architecture** gives you a consistent and scalable way to build solutions with hundreds of services.
 

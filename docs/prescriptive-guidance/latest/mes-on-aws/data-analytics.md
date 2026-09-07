@@ -14,7 +14,7 @@ Traditional monolithic MES systems had limited or no analytics capabilities. Man
 
 The following diagram shows a sample architecture for data and analytics that combines data from IoT, MES, PLM, and ERP. This architecture is built only on AWS services. However, as mentioned previously, you can use an AWS Partner solution for data analytics, and address the unique requirements of your environment by combining services from AWS and AWS Partners.
 
-![MES architecture for data and analytics](http://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/images/guide-img/093538ca-c7c9-4311-a0e9-8a876ae66d65/images/f5ec8ea0-99d7-4218-b363-2fcc67d16948.png)
+![MES architecture for data and analytics](https://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/images/guide-img/093538ca-c7c9-4311-a0e9-8a876ae66d65/images/f5ec8ea0-99d7-4218-b363-2fcc67d16948.png)
 
 1. The OT data sources to be combined are available on the local network.
 

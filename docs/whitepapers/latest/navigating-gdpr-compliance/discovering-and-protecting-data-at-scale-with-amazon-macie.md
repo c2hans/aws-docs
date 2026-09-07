@@ -17,7 +17,7 @@ Having an ongoing data classification process is critical for adjusting security
 
 Amazon Macie continually evaluates the objects inside the buckets and automatically provides a summary of findings (Figure 4) for any unencrypted or publicly accessible data discovered that match with the defined data category. This data can include alerts for any unencrypted, publicly accessible objects or buckets shared with AWS accounts outside those you have defined in AWS Organizations. Amazon Macie is integrated with other AWS services, such as [AWS Security Hub](https://aws.amazon.com/security-hub/), to generate actionable security findings and provide an automatic and reactive action to the finding (Figure 5).
 
-![Macie findings dashboard showing sensitive data objects detected in various resources with high severity.](http://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compliance/images/macie-findings-dashboard.png)
+![Macie findings dashboard showing sensitive data objects detected in various resources with high severity.](https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compliance/images/macie-findings-dashboard.png)
 
 *Figure 4 – Data inspections and finding example *
 

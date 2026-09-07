@@ -18,4 +18,4 @@ The following diagram shows three tiers: `Standard Tier`, `Enterprise Tier`, and
 **Note**
 The application, deployment, and tenant onboarding in the premium tier are identical to the standard and enterprise tiers. The only difference is that the premium tier onboarding workflow begins with the provisioning of a new tier infrastructure.
 
-![Amazon Verified Permissions tiered deployment model](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/30d8589a-484e-437f-98ab-4bf5b8591b28.png)
+![Amazon Verified Permissions tiered deployment model](https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/30d8589a-484e-437f-98ab-4bf5b8591b28.png)

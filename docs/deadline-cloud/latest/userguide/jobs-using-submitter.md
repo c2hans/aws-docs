@@ -35,7 +35,7 @@ The submitter has four tabs.
 ## Shared job settings tab
 <a name="submiter-shared"></a>
 
-![The shared job settings tab of the Blender submitter. The settings in the tab are the defaults.](http://docs.aws.amazon.com/deadline-cloud/latest/userguide/images/submitter-shared.png)
+![The shared job settings tab of the Blender submitter. The settings in the tab are the defaults.](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/images/submitter-shared.png)
 
 The shared job settings tab contains the settings that are common to all jobs sent to Deadline Cloud using the submitter. The three sections are:
 + Job properties – Sets the overall properties of the job. These properties are present in submitters for all DCC applications.
@@ -45,14 +45,14 @@ The shared job settings tab contains the settings that are common to all jobs se
 ## Job-specific settings tab
 <a name="submiter-job-settings"></a>
 
-![The job-specific settings tab of the Blender submitter.](http://docs.aws.amazon.com/deadline-cloud/latest/userguide/images/submitter-job-settings.png)
+![The job-specific settings tab of the Blender submitter.](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/images/submitter-job-settings.png)
 
 The job-specific settings tab contains the settings specific to your DCC application. Specify these settings based on the options available in your application.
 
 ## Job attachments tab
 <a name="submiter-attachments"></a>
 
-![The shared job attachments tab of the Blender submitter.](http://docs.aws.amazon.com/deadline-cloud/latest/userguide/images/submitter-attachments.png)
+![The shared job attachments tab of the Blender submitter.](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/images/submitter-attachments.png)
 
 The job attachments tab shows all of the files needed to complete a render. The submitter tries to find all of the files required for the render. The files that it identifies appear in the lists in italics.
 
@@ -63,7 +63,7 @@ If your job writes files to multiple output directories, you must specify the di
 ## Host requirements tab
 <a name="submiter-host"></a>
 
-![The shared host requirements tab of the Blender submitter.](http://docs.aws.amazon.com/deadline-cloud/latest/userguide/images/submitter-host.png)
+![The shared host requirements tab of the Blender submitter.](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/images/submitter-host.png)
 
 The host requirements tab sets the fleet capabilities required to process the job. Capabilities are specified for the entire fleet, not individual workers in the fleet.
 

@@ -31,7 +31,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-so
 
  The following figure shows examples for common patterns of using both confirmable and non-confirmable requests. For the requests from the CoAP client to the CoAP server, the figure specifies a CoAP method (for example, POST), URI-path (for example, /temperature), type of message (CONfirmable or NON-confirmable), and—where applicable—payload (for example, “36.6”). For the responses from the CoAP server to the CoAP client, the figure specifies the response code (for example, 2.05 which means “Content”) and—where applicable—payload.
 
-![Diagram showing the types of CoAP requests](http://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/coap-requests.png)
+![Diagram showing the types of CoAP requests](https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/coap-requests.png)
 
  As mentioned previously, an IoT device can act as a CoAP client, CoAP server, or both. For the use case of telemetry ingestion from battery-operated LPWAN devices, the IoT device will act as a CoAP client.
 
@@ -42,7 +42,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-so
 
  In the following example, a payload with the size of 384 bytes needs to be sent from the server to the client, over a connection limiting the maximum payload size per UDP datagram to 128 bytes. CoAP client performs a GET request, and CoAP server sends three blocks of 128 bytes each.
 
-![Example of CoAP block-wise transfer](http://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/coap-block-wise-transfer.png)
+![Example of CoAP block-wise transfer](https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/coap-block-wise-transfer.png)
 
 ## Encryption in transit and device authentication
 <a name="encryption-in-transit-and-device-authentication"></a>
@@ -65,14 +65,14 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-so
 
  The following diagram illustrates three patterns, including two variations of the latter one:
 
-![Diagram of patterns for implementing IoT solutions with AWS using CoAP](http://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/dtls-patterns-1.png)![Diagram of patterns for implementing IoT solutions with AWS using CoAP](http://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/dtls-patterns-2.png)
+![Diagram of patterns for implementing IoT solutions with AWS using CoAP](https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/dtls-patterns-1.png)![Diagram of patterns for implementing IoT solutions with AWS using CoAP](https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/dtls-patterns-2.png)
 
  The following sections contain a detailed description of each of these patterns.
 
 ### Pattern 1: CoAP components are operated by telco
 <a name="pattern-1-coap-components-are-operated-by-telco"></a>
 
-![Architecture for CoAP server operated by telco](http://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/telco-coap-server.png)
+![Architecture for CoAP server operated by telco](https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/telco-coap-server.png)
 
  In this pattern, the telecom provider operates a CoAP endpoint, which acts as a CoAP server. Customers can configure the CoAP endpoint to integrate with the customer’s AWS account. Each time the CoAP client on the IoT device sends a message to the CoAP server, the CoAP server will perform the steps of encapsulation, enrichment, and ingestion into the customer’s account.
 
@@ -92,7 +92,7 @@ The binary payload remains unchanged in this step. If necessary, binary decoding
 ### Pattern 2: CoAP components are operated by an AWS Partner
 <a name="pattern-2-coap-components-are-operated-by-an-aws-partner"></a>
 
-![Architecture for CoAP server operated by an AWS Partner](http://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/partner-coap-server.png)
+![Architecture for CoAP server operated by an AWS Partner](https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/partner-coap-server.png)
 
  In this pattern, an AWS Partner operates a CoAP endpoint, which acts as a CoAP server. Customers can configure the CoAP endpoint to integrate with a customer’s AWS account. Each time the CoAP client on the IoT device sends a message to the CoAP server, it will perform the steps of encapsulation and ingestion into the customer’s account.
 
@@ -109,7 +109,7 @@ The binary payload remains unchanged in this step. If necessary, binary decoding
 ### Pattern 3: CoAP components are operated by the customer
 <a name="pattern-3-coap-components-are-operated-by-the-customer"></a>
 
-![Architecture for CoAP server and client operated by customer](http://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/customer-coap-server.png)
+![Architecture for CoAP server and client operated by customer](https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/customer-coap-server.png)
 
  In this pattern, the AWS customer operates a CoAP endpoint in their AWS account. Depending on the use case requirements, the CoAP endpoint can operate as CoAP server, CoAP client, or both. The CoAP endpoint can handle forwarding the incoming CoAP messages to AWS IoT Core, and sending CoAP messages to the IoT devices. To ingest messages to AWS IoT Core, AWS recommends using [AWS IoT data plane APIs](https://docs.aws.amazon.com/iot/latest/apireference/API_Operations_AWS_IoT_Data_Plane.html) authorized by IAM mechanisms.
 
@@ -118,7 +118,7 @@ The binary payload remains unchanged in this step. If necessary, binary decoding
 ### Securing data in transit with a VPN connection between telco and customer’s AWS account
 <a name="securing-data-in-transit-with-a-vpn-connection-between-telco-and-customers-aws-account"></a>
 
-![Using VPN to secure data in transit](http://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/telco-customer-vpn-secured.png)
+![Using VPN to secure data in transit](https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/telco-customer-vpn-secured.png)
 
  In this variant, customers rely on the telco provider’s infrastructure for protection data in transit between the IoT device and the telco provider’s infrastructure. No protocol-level security is used, and CoAP is used in NoSec mode. To protect data in transit between telco provider’s infrastructure and the customer’s AWS account, a VPN connection is established between the telco provider and the customer’s AWS account.
 
@@ -127,6 +127,6 @@ The binary payload remains unchanged in this step. If necessary, binary decoding
 ### Securing data in transit with protocols as DTLS
 <a name="securing-data-in-transit-with-protocols-as-dtls"></a>
 
-![Using DTLS to secure data in transit](http://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/dtls-secure-data-in-transit.png)
+![Using DTLS to secure data in transit](https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/dtls-secure-data-in-transit.png)
 
  In this variant, customers use DTLS protocol as a mechanism for infrastructure for protection data in transit between the IoT device and telco provider’s infrastructure, and between telco provider’s infrastructure and the customer’s AWS account.

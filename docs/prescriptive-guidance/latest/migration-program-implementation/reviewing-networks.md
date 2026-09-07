@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-p
 
 When organizations contemplate migrating to AWS at scale, they are somewhere along the path of what is called the *stages of adoption*, as shown in the following ﬁgure. The four stages are project, foundation, migration, and reinvention.
 
-![Stages of adoption.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-program-implementation/images/guide-img/c368ac72-b4ba-4de5-80d0-24d311a6c244/images/2e699a54-53e0-4b13-b45c-5f8b5c21d55a.png)
+![Stages of adoption.](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-program-implementation/images/guide-img/c368ac72-b4ba-4de5-80d0-24d311a6c244/images/2e699a54-53e0-4b13-b45c-5f8b5c21d55a.png)
 
 + **Project **– The organization evaluates the AWS Cloud as a viable option and determines whether it addresses their specific needs. AWS skills aren't required at this stage.
 + **Foundation **– The organization starts extending their data centers to AWS. Specifically, the organization:

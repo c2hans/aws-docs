@@ -30,7 +30,7 @@ To create a data mapping, you define an object type mapping that describes what 
 1. Open the Connect Customer console at [https://console.aws.amazon.com/connect/](https://console.aws.amazon.com/connect/).
 
 1. On the instances page, choose the instance alias. The instance alias is also your **instance name**, which appears in your Connect Customer URL. The following image shows the **Connect Customer virtual contact center instances** page, with a box around the instance alias.
-![The Connect Customer virtual contact center instances page, the instance alias.](http://docs.aws.amazon.com/connect/latest/adminguide/images/instance.png)
+![The Connect Customer virtual contact center instances page, the instance alias.](https://docs.aws.amazon.com/connect/latest/adminguide/images/instance.png)
 
 1. In the navigation pane, choose **Customer profiles**, **Data mappings**.
 
@@ -65,7 +65,7 @@ On the **Map *type* attributes** page, you'll see the field mappings table fille
 
 The following image shows an example of the page filled with customer attributes from the template.
 
-![The Connect Customer navigation menu, the Map customer attributes page.](http://docs.aws.amazon.com/connect/latest/adminguide/images/customer-profiles-data-mapping-2.png)
+![The Connect Customer navigation menu, the Map customer attributes page.](https://docs.aws.amazon.com/connect/latest/adminguide/images/customer-profiles-data-mapping-2.png)
 
 You can remove what you don’t want populated in the customer profile, change the source, and add custom attributes.
 
@@ -74,7 +74,7 @@ This mapping uses your data source to populate customer contact information, suc
 **Tip**
 If you choose to add custom attributes, the destination will always have the prefix `Attributes.` added to it. This enables Connect Customer to recognize that it is a custom attribute.
 
-![Customer attribute mapping interface showing source fields mapped to destination fields.](http://docs.aws.amazon.com/connect/latest/adminguide/images/custom-attribute-cp.png)
+![Customer attribute mapping interface showing source fields mapped to destination fields.](https://docs.aws.amazon.com/connect/latest/adminguide/images/custom-attribute-cp.png)
 
 Agents can now view custom attributes in the Connect Agent Application under the **Additional Information** tab sorted in alphabetical order. You can create the name of your choice for each attribute that will be displayed to agents by using the following format: `/^Attributes\.[a-zA-Z0-9]+(?:[ _\-]+[a-zA-Z0-9]+)*$/`
 All ingested custom attributes will be displayed in the Connect Agent Application. If you do not wish to show certain information to your agents, do not ingest custom attributes at this time.
@@ -123,4 +123,4 @@ If the search attributes in your data source objects contain mostly the same val
 
 After the data mapping is created, you can choose **Add data source integration** to use this object type.
 
-![Connect Customer Customer Profiles interface showing sample data mapping details and integration status.](http://docs.aws.amazon.com/connect/latest/adminguide/images/customer-profiles-data-mapping-3.png)
+![Connect Customer Customer Profiles interface showing sample data mapping details and integration status.](https://docs.aws.amazon.com/connect/latest/adminguide/images/customer-profiles-data-mapping-3.png)

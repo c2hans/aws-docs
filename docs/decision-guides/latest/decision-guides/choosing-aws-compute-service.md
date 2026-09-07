@@ -31,7 +31,7 @@ To get the most from your investment in these services, it's important to choose
 
  This guide will help you select the AWS compute services and tools that are the best fit for your needs and your organization.
 
-[![AWS Videos](http://img.youtube.com/vi/E0dYLPXrX_w?si=UdTT-QeG3-TCNAOx&start=1577&end=1704/0.jpg)](http://www.youtube.com/watch?v=E0dYLPXrX_w?si=UdTT-QeG3-TCNAOx&start=1577&end=1704)
+[![AWS Videos](https://img.youtube.com/vi/E0dYLPXrX_w?si=UdTT-QeG3-TCNAOx&start=1577&end=1704/0.jpg)](https://www.youtube.com/watch?v=E0dYLPXrX_w?si=UdTT-QeG3-TCNAOx&start=1577&end=1704)
 
 ## Understand
 <a name="understand"></a>
@@ -40,7 +40,7 @@ To get the most from your investment in these services, it's important to choose
 
  Furthermore, AWS Batch facilitates batch computing. AWS hybrid and edge services such as [AWS Local Zones](https://docs.aws.amazon.com/local-zones/latest/ug/what-is-aws-local-zones.html) and [AWS Outposts](https://docs.aws.amazon.com/outposts/latest/userguide/what-is-outposts.html) bring AWS infrastructure and services to metropolitan areas, on-premises locations, and edge sites, addressing requirements for low latency, digital sovereignty, and local data processing. Additionally, Amazon EC2 Auto Scaling automatically adjusts capacity. These services cater to different workload needs, from basic virtual machines (VMs) to fully managed serverless and container solutions.
 
-![](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/understand.png)
+![](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/understand.png)
 
  **Amazon EC2 services**
 

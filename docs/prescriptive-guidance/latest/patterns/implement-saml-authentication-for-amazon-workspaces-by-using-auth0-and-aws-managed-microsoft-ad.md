@@ -31,7 +31,7 @@ Some AWS services aren’t available in all AWS Regions. For Region availability
 
 The SAML 2.0 authentication process for a WorkSpaces client application consists of five steps that are illustrated in the following diagram. These steps represent a typical workflow for logging in. You can use this distributed approach to authentication after you follow the instructions in this pattern, to help provide a structured and secure method for user access.
 
-![Workflow for the SAML 2.0 authentication process for a WorkSpaces client application.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5a0f227c-c111-495b-9fde-98ae7832bb10/images/957b2a11-e898-4c4f-ae4e-c2e85bfa93a0.png)
+![Workflow for the SAML 2.0 authentication process for a WorkSpaces client application.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5a0f227c-c111-495b-9fde-98ae7832bb10/images/957b2a11-e898-4c4f-ae4e-c2e85bfa93a0.png)
 
  Workflow:
 

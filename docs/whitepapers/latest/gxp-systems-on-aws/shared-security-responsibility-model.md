@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/sh
 
  The following figure provides an overview of the [shared responsibility model](https://aws.amazon.com/compliance/shared-responsibility-model/). This differentiation of responsibility is commonly referred to as Security “of” the Cloud versus Security “in” the Cloud, which will be explained in more detail below.
 
-![AWS Shared Responsibility Model](http://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/images/shared-responsibility-model.png)
+![AWS Shared Responsibility Model](https://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/images/shared-responsibility-model.png)
 
 * AWS Shared Responsibility Model*
 

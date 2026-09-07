@@ -34,7 +34,7 @@ Create an Amazon Machine Image (AMI) based on an existing standalone EC2 instanc
 
 The following shows this change type in the AMS console.
 
-![Change type details for creating an Amazon Machine Image (AMI) from an EC2 instance.](http://docs.aws.amazon.com/managedservices/latest/ctref/images/guiAmiCreateCT.png)
+![Change type details for creating an Amazon Machine Image (AMI) from an EC2 instance.](https://docs.aws.amazon.com/managedservices/latest/ctref/images/guiAmiCreateCT.png)
 
 **Important**
 Before you begin, prepare the EC2 instance that you will use to create the AMI. Without proper preparation, the create AMI RFC is likely to be rejected or fail. For information about preparing your instance to successfully create an AMI, see the instructions included in this tutorial.

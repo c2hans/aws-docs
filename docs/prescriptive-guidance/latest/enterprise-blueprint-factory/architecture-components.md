@@ -92,7 +92,7 @@ The first time that you invoke the config pipeline, it creates two additional po
 
 The following image shows the stages in the config pipeline and the resources that the pipeline interacts with. Each stage in the pipeline is an [AWS CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html) project.
 
-![The stages in the Enterprise Blueprint Factory configuration pipeline.](http://docs.aws.amazon.com/prescriptive-guidance/latest/enterprise-blueprint-factory/images/guide-img/fbe4d444-882e-464d-9768-c5b4c6cfd79b/images/d03071bf-14ba-46f5-b2ae-39eff7d105ea.png)
+![The stages in the Enterprise Blueprint Factory configuration pipeline.](https://docs.aws.amazon.com/prescriptive-guidance/latest/enterprise-blueprint-factory/images/guide-img/fbe4d444-882e-464d-9768-c5b4c6cfd79b/images/d03071bf-14ba-46f5-b2ae-39eff7d105ea.png)
 
 The following are the stages of the configuration pipeline:
 
@@ -115,14 +115,14 @@ The release pipeline includes proactive controls that automate security and comp
 
 The first time that you invoke the configuration pipeline, it creates a Service Catalog product that is named `Bootstrapping-Admin-Product`. This product is the CloudFormation template for the release pipeline. As shown in the following figure, the configuration pipeline uses the `Bootstrapping-Admin-Product` product to create a dedicated release pipeline for each new blueprint. There is a one-to-one relationship between blueprints and release pipelines.
 
-![The config pipeline uses a product to create a release pipeline for each blueprint.](http://docs.aws.amazon.com/prescriptive-guidance/latest/enterprise-blueprint-factory/images/guide-img/fbe4d444-882e-464d-9768-c5b4c6cfd79b/images/49789395-fc19-437a-8cb2-53a73d808da2.png)
+![The config pipeline uses a product to create a release pipeline for each blueprint.](https://docs.aws.amazon.com/prescriptive-guidance/latest/enterprise-blueprint-factory/images/guide-img/fbe4d444-882e-464d-9768-c5b4c6cfd79b/images/49789395-fc19-437a-8cb2-53a73d808da2.png)
 
 ### Release pipeline stages
 <a name="release-pipeline-stages.4491c7d1-0a80-5c32-8776-297c072471b7"></a>
 
 The following image shows the default stages in the release pipeline and the resources that the pipeline interacts with. Each stage in the pipeline is a CodeBuild project.
 
-![The stages in the Enterprise Blueprint Factory release pipeline.](http://docs.aws.amazon.com/prescriptive-guidance/latest/enterprise-blueprint-factory/images/guide-img/fbe4d444-882e-464d-9768-c5b4c6cfd79b/images/59809a25-bed7-4fb9-9f52-d57bcbd26121.png)
+![The stages in the Enterprise Blueprint Factory release pipeline.](https://docs.aws.amazon.com/prescriptive-guidance/latest/enterprise-blueprint-factory/images/guide-img/fbe4d444-882e-464d-9768-c5b4c6cfd79b/images/59809a25-bed7-4fb9-9f52-d57bcbd26121.png)
 
 The following are the stages of the release pipeline:
 

@@ -36,7 +36,7 @@ In the following diagram, two flow logs are deployed for each VPC. One sends log
 **Note**
 As of November 2023, AWS now supports the [aws:SourceOrgID condition key](https://aws.amazon.com/about-aws/whats-new/2023/11/organization-wide-iam-condition-keys-restrict-aws-service-to-service-requests/). This condition allows you to deny writing to the centralized bucket for accounts outside of your AWS Organizations organization.
 
-![From each VPC one flow log sends logs to CloudWatch and another sends logs to the S3 bucket.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/718c29f4-a035-47ab-9c58-bd7d5c1ca77e/images/0b502d82-a6ce-4832-b854-99181d2ed834.png)
+![From each VPC one flow log sends logs to CloudWatch and another sends logs to the S3 bucket.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/718c29f4-a035-47ab-9c58-bd7d5c1ca77e/images/0b502d82-a6ce-4832-b854-99181d2ed834.png)
 
 **Automation and scale**
 

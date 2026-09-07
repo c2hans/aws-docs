@@ -88,7 +88,7 @@ Your query editor v2 administrator must specify the common Amazon S3 bucket in t
 
 1. Confirm that you are connected to the target database in the tree-view panel of query editor v2. You can create a connection using the context menu (right-click) to the cluster or workgroup where the data will be loaded.
 
-1. Choose ![Load](http://docs.aws.amazon.com/redshift/latest/mgmt/images/qev2-upload.png)**Load data**.
+1. Choose ![Load](https://docs.aws.amazon.com/redshift/latest/mgmt/images/qev2-upload.png)**Load data**.
 
 1. For **Data source**, choose **Load from local file**.
 
@@ -124,7 +124,7 @@ Your query editor v2 administrator must specify the common Amazon S3 bucket in t
 
 1. Confirm that you are connected to the target database in the tree-view panel of query editor v2. You can create a connection using the context menu (right-click) to the cluster or workgroup where the data will be loaded.
 
-1. Choose ![Load](http://docs.aws.amazon.com/redshift/latest/mgmt/images/qev2-upload.png)**Load data**.
+1. Choose ![Load](https://docs.aws.amazon.com/redshift/latest/mgmt/images/qev2-upload.png)**Load data**.
 
 1. For **Data source**, choose **Load from local file**.
 

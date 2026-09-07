@@ -59,7 +59,7 @@ During the migration, you might also use the following, depending on your requir
 
 **Target architecture **
 
-![Architecture to migrate an F5 BIG-IP workload to an F5 BIG-IP VE workload.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/586fe806-fac1-48d3-9eb1-45a6c86430dc/images/16d7fc09-1ffe-4721-b503-d971db84cbae.png)
+![Architecture to migrate an F5 BIG-IP workload to an F5 BIG-IP VE workload.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/586fe806-fac1-48d3-9eb1-45a6c86430dc/images/16d7fc09-1ffe-4721-b503-d971db84cbae.png)
 
 ## Tools
 <a name="migrate-an-f5-big-ip-workload-to-f5-big-ip-ve-on-the-aws-cloud-tools"></a>

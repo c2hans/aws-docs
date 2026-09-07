@@ -10,7 +10,7 @@ We would love to hear from you. Please provide feedback on the AWS PRA by taking
 
 The Security Tooling account is dedicated to operating security and privacy foundational services, monitoring AWS accounts, and automating security and privacy alerting and response. For more information about this account, see the [AWS Security Reference Architecture (AWS SRA)](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/security-tooling.html). The following diagram illustrates the AWS security and privacy services that are configured in the Security Tooling account.
 
-![AWS services deployed in the Security Tooling account in the Security organizational unit.](http://docs.aws.amazon.com/prescriptive-guidance/latest/privacy-reference-architecture/images/guide-img/a4379862-3434-48e4-8691-64db36363b08/images/747b485a-2cd0-43e3-82b0-c1dc66741c75.png)
+![AWS services deployed in the Security Tooling account in the Security organizational unit.](https://docs.aws.amazon.com/prescriptive-guidance/latest/privacy-reference-architecture/images/guide-img/a4379862-3434-48e4-8691-64db36363b08/images/747b485a-2cd0-43e3-82b0-c1dc66741c75.png)
 
 This section provides more detailed information about the following in this account:
 + [AWS CloudTrail](#aws-cloudtrail)

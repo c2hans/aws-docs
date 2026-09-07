@@ -34,7 +34,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/serverless-multi-tier
 
  The three-tier architecture is the most popular implementation of a multi-tier architecture and consists of a single presentation tier, logic tier, and data tier. The following illustration shows an example of a simple, generic three-tier application.
 
-![Architectural pattern for a three-tier application](http://docs.aws.amazon.com/whitepapers/latest/serverless-multi-tier-architectures-api-gateway-lambda/images/image2.png)
+![Architectural pattern for a three-tier application](https://docs.aws.amazon.com/whitepapers/latest/serverless-multi-tier-architectures-api-gateway-lambda/images/image2.png)
 
 * Architectural pattern for a three-tier application *
 

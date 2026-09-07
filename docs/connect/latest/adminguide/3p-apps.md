@@ -79,7 +79,7 @@ To add an integration to your instances, make sure that your instance is using a
 1. In the navigation pane, choose **Integrations**. If you don't see this menu, then 3P apps are not available in your AWS Region. To check where 3P apps are available, see [Availability of Connect Customer features by Region](regions.md).
 
 1. On the **Integrations** page, choose **Add integration**.
-![The Integrations page on the Connect Customer console.](http://docs.aws.amazon.com/connect/latest/adminguide/images/integrations-list.png)
+![The Integrations page on the Connect Customer console.](https://docs.aws.amazon.com/connect/latest/adminguide/images/integrations-list.png)
 
 1. On the **Add integration** page, complete the **Integration information** fields:
    + **Display name**: A friendly name for the 3P app. The name appears on security profiles and on the tab in the agent workspace. You can change it later.
@@ -106,7 +106,7 @@ For MCP servers, you can choose only the instance that is configured with the se
 1. Choose **Add integration**.
 
 1. If the integration is created successfully, the **Integration details** page appears with a success banner.
-![The Integration details page with a success banner.](http://docs.aws.amazon.com/connect/latest/adminguide/images/integrations-view.png)
+![The Integration details page with a success banner.](https://docs.aws.amazon.com/connect/latest/adminguide/images/integrations-view.png)
 
    You can edit some attributes of an existing integration, such as its display name, access URL, and permissions.
 
@@ -137,15 +137,15 @@ The following example shows how to onboard a new application and assign permissi
 
 **Basic information and access details**
 
-![The Add integration page showing basic information and access fields.](http://docs.aws.amazon.com/connect/latest/adminguide/images/integrations-add-basic-info.png)
+![The Add integration page showing basic information and access fields.](https://docs.aws.amazon.com/connect/latest/adminguide/images/integrations-add-basic-info.png)
 
 **Permissions for workspace data integration**
 
-![The permissions section of the Add integration page.](http://docs.aws.amazon.com/connect/latest/adminguide/images/integrations-add-permissions.png)
+![The permissions section of the Add integration page.](https://docs.aws.amazon.com/connect/latest/adminguide/images/integrations-add-permissions.png)
 
 **Iframe configuration**
 
-![The iframe configuration section of the Add integration page.](http://docs.aws.amazon.com/connect/latest/adminguide/images/integrations-add-iframe-config.png)
+![The iframe configuration section of the Add integration page.](https://docs.aws.amazon.com/connect/latest/adminguide/images/integrations-add-iframe-config.png)
 
 ## Delete integrations
 <a name="delete-3p-apps"></a>
@@ -159,7 +159,7 @@ If you no longer need an integration, you can delete it. To stop using an integr
 **Tip**
 If you created an integration before December 15, 2023, you might have trouble updating its association with instances. You need to update your IAM policy first.
 
-![IAM error when trying to delete an integration due to insufficient permissions.](http://docs.aws.amazon.com/connect/latest/adminguide/images/delete-3p-apps.png)
+![IAM error when trying to delete an integration due to insufficient permissions.](https://docs.aws.amazon.com/connect/latest/adminguide/images/delete-3p-apps.png)
 
 Update your IAM policy to include the following permissions:
 + `app-integrations:CreateApplicationAssociation`

@@ -50,7 +50,7 @@ This pattern can help you achieve the following:
 
 The following diagram shows the logical constructs of the target architecture. A *scope* is the highest-level container in IP Address Manager. Each scope represents the IP address space for a single network. The *pools* are collections of contiguous IP address ranges (or CIDR ranges) within the scope. Pools help you organize your IP addresses according to your routing and security needs. This diagram shows four hierarchical levels of pools: a top-level pool, Regional pools, business unit pools, and environment pools.
 
-![A private scope and four levels of pools in a single AWS Region in a Network account.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/780e344e-37f7-4b70-8d7c-94ec67a29305/images/1e23b2a7-a274-4a19-9097-61d8a31dfbf8.png)
+![A private scope and four levels of pools in a single AWS Region in a Network account.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/780e344e-37f7-4b70-8d7c-94ec67a29305/images/1e23b2a7-a274-4a19-9097-61d8a31dfbf8.png)
 
 This solution establishes a clear hierarchy of IP Address Manager pools:
 
@@ -82,7 +82,7 @@ This solution is designed to prevent deployment of invalid configurations. When 
 
 The following diagram shows an example of how developers or administrators can create new VPCs and allocate IP addresses from the pool levels.
 
-![A private scope and four levels of pools in a single AWS Region in a Network account.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/780e344e-37f7-4b70-8d7c-94ec67a29305/images/7c3de2e3-e71b-4fc0-abcd-7e88cfab5c87.png)
+![A private scope and four levels of pools in a single AWS Region in a Network account.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/780e344e-37f7-4b70-8d7c-94ec67a29305/images/7c3de2e3-e71b-4fc0-abcd-7e88cfab5c87.png)
 
 The diagram shows the following workflow:
 

@@ -9,7 +9,7 @@ Follow the step-by-step instructions in this section to deploy the solution into
 
  **Time to deploy:** Approximately five minutes
 
- [![Launch solution](http://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-aws/images/launch-solution-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?templateURL=https://s3.amazonaws.com/solutions-reference/instance-scheduler-on-aws/latest/instance-scheduler-on-aws.template&redirectId=ImplementationGuide)
+ [![Launch solution](https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-aws/images/launch-solution-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?templateURL=https://s3.amazonaws.com/solutions-reference/instance-scheduler-on-aws/latest/instance-scheduler-on-aws.template&redirectId=ImplementationGuide)
 
 1. Sign in to the [AWS Management Console](https://console.aws.amazon.com/) and select the button to launch the\* instance-scheduler-on-aws.template\* AWS CloudFormation template.
 

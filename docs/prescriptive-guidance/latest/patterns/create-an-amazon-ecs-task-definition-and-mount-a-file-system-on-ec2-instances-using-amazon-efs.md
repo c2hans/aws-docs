@@ -32,7 +32,7 @@ To use Amazon EFS with Amazon ECS, you can add one or more volume definitions to
 
 The following diagram shows an example of an application that uses Amazon ECS to create a task definition and mount an Amazon EFS file system on EC2 instances in ECS containers.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/090a3f03-a4c6-47e3-b1ae-b0eb5c5b269c/images/343e0f1d-44ee-4ec2-8392-aeddc0e48b83.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/090a3f03-a4c6-47e3-b1ae-b0eb5c5b269c/images/343e0f1d-44ee-4ec2-8392-aeddc0e48b83.png)
 
 The diagram shows the following workflow:
 

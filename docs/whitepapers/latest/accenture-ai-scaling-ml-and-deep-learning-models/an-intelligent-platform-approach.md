@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/accenture-ai-scaling-
 
  For businesses to derive value, ML and DL models need to be productionized, run at scale, and reused across organizations. Lack of scalability, repeatability, and manual processes diminish any value that would be otherwise realized from these powerful models.
 
-![A diagram that shows a complete solution for scaling and productionizing DL models with automated pipelines .](http://docs.aws.amazon.com/whitepapers/latest/accenture-ai-scaling-ml-and-deep-learning-models/images/dl-models.png)
+![A diagram that shows a complete solution for scaling and productionizing DL models with automated pipelines .](https://docs.aws.amazon.com/whitepapers/latest/accenture-ai-scaling-ml-and-deep-learning-models/images/dl-models.png)
 
  This proposed architecture in the previous diagram is designed to help achieve three goals:
 +  Greater, systematic reuse of features and architectures

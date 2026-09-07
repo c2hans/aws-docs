@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-
 
  This approach allows customers to transfer, store, and read personal data in the AWS cloud while keeping primary copy on-premises.
 
-![Transfer, store, and read personal data in the AWS Cloud](http://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-to-address-personal-data-processing-requirements/images/personal-data-external-region-on-prem.png)
+![Transfer, store, and read personal data in the AWS Cloud](https://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-to-address-personal-data-processing-requirements/images/personal-data-external-region-on-prem.png)
 
  Transfer, store, and read personal data in the AWS Cloud
 

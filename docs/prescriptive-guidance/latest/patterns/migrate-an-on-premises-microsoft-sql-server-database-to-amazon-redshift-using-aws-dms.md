@@ -34,7 +34,7 @@ This pattern provides guidance for migrating an on-premises Microsoft SQL Server
 
 **Data migration architecture**
 
-![Architecture for migrating an on-premises SQL Server database to Amazon Redshift using AWS DMS](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/65b2be1b-740e-4d4d-99a8-f77c4ea6553d/images/3a094bf2-be31-4d83-8dd2-9dc078321055.png)
+![Architecture for migrating an on-premises SQL Server database to Amazon Redshift using AWS DMS](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/65b2be1b-740e-4d4d-99a8-f77c4ea6553d/images/3a094bf2-be31-4d83-8dd2-9dc078321055.png)
 
 ## Tools
 <a name="migrate-an-on-premises-microsoft-sql-server-database-to-amazon-redshift-using-aws-dms-tools"></a>

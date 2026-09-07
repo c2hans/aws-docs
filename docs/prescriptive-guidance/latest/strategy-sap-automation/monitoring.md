@@ -23,4 +23,4 @@ The following image and process describe how you set up this automation to monit
 
 1. The user can access SAP applications, data, and metrics through a custom CloudWatch dashboard.
 
-![Architecture diagram showing the automation of monitoring SAP databases.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sap-automation/images/guide-img/029e7e61-9fe5-41b5-83f4-177d03384b91/images/c272e96e-e588-4196-9643-5bce440cd6b5.png)
+![Architecture diagram showing the automation of monitoring SAP databases.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sap-automation/images/guide-img/029e7e61-9fe5-41b5-83f4-177d03384b91/images/c272e96e-e588-4196-9643-5bce440cd6b5.png)

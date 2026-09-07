@@ -20,7 +20,7 @@ Implement coded logic for deterministic execution. Use AI functionality where it
 
 The following image shows an agent with internal logic flow. Standard programming logic is used instead of prompting the LLM for validation, normalization, or user communication tasks. This is a clear example of perceive, reason, and act. The perceive layer gathers and normalizes the input, the reason layer (LLM inference) summarizes content, and then the act layer sends the email back to the user.
 
-![An agent that follows the perceive, reason, and act logic flow.](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-security/images/guide-img/562fab0c-abe0-4a40-a738-87a61cbd8d2a/images/8eb433ee-9204-460e-8cff-f6e932d83bee.png)
+![An agent that follows the perceive, reason, and act logic flow.](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-security/images/guide-img/562fab0c-abe0-4a40-a738-87a61cbd8d2a/images/8eb433ee-9204-460e-8cff-f6e932d83bee.png)
 
 This approach limits the impact of prompt injection attacks by reducing the scope of the system prompt and what the LLM response is used for. It reduces the attack surface by treating the LLM interaction similar to how a system might interact with a public user. The prompt to the LLM is normalized and prepared before inference, and the LLM response has guardrails applied to it before output.
 
@@ -41,7 +41,7 @@ Where an LLM response is used to drive tool selection or interface with another 
 
 Consider the scope of agent and tool interactions that each agent is directly responsible for. Consider the following example, where two agents are responsible for four tools. The left side of the image shows a *super agent* approach, and the right side shows a *disparate worker agent* approach. While both approaches are reasonable, there are several factors that you should consider during system design.
 
-![Two approaches to agent system design: super agent and disparate worker agents.](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-security/images/guide-img/562fab0c-abe0-4a40-a738-87a61cbd8d2a/images/186426f7-f4b6-4b98-a545-ab3ba88ec117.png)
+![Two approaches to agent system design: super agent and disparate worker agents.](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-security/images/guide-img/562fab0c-abe0-4a40-a738-87a61cbd8d2a/images/186426f7-f4b6-4b98-a545-ab3ba88ec117.png)
 
 The disparate worker approach typically has the following advantages:
 + Reduces risk of second-tier agent performing actions that the orchestrator agent didn't intend

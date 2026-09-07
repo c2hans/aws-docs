@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 
 The scope of this capability is to secure tool access and authentication for AI applications. The following diagram illustrates the AWS services recommended for the Generative AI account for this capability.
 
-![Services recommended for the Generative AI account.](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-generative-ai/images/guide-img/a349f18f-a9fd-43a3-9a48-27534bf6412a/images/9e20180d-f6ad-463e-91e2-43e939820376.jpeg)
+![Services recommended for the Generative AI account.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-generative-ai/images/guide-img/a349f18f-a9fd-43a3-9a48-27534bf6412a/images/9e20180d-f6ad-463e-91e2-43e939820376.jpeg)
 
 ## Rationale
 <a name="customization-rationale"></a>

@@ -37,7 +37,7 @@ To add or remove columns from the list, choose the settings icon at the top of t
 **To verify the size of your Auto Scaling group after making changes**
 The **Instances** column shows the number of instances that are currently running. While an instance is being launched or terminated, the **Status** column displays a status of *Updating capacity*, as shown in the following image.
 
-![Updating the capacity of an Auto Scaling group.](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/asg-console-updating-capacity.png)
+![Updating the capacity of an Auto Scaling group.](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/asg-console-updating-capacity.png)
 
 Wait for a few minutes, and then refresh the view to see the latest status. After a scaling activity completes, the **Instances** column shows an updated value.
 

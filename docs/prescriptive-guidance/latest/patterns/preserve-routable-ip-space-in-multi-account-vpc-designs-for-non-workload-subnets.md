@@ -34,7 +34,7 @@ This pattern uses a non-routable CIDR range for the TGW attachment subnet and th
 
 In this example, the /23 routable CIDR is divided up and fully allocated to routable subnets.
 
-![TGW-attached VPC with ingress routing to an appliance.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/0171d91d-ab1e-41ca-a425-1e6e610080e1/images/adad1c83-cdc2-4c5e-aa35-f47fc31af384.png)
+![TGW-attached VPC with ingress routing to an appliance.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/0171d91d-ab1e-41ca-a425-1e6e610080e1/images/adad1c83-cdc2-4c5e-aa35-f47fc31af384.png)
 
 **Architecture 2 – TGW-attached VPC**
 
@@ -42,7 +42,7 @@ The following diagram represents another reference architecture for a VPC that s
 
 In this example, the /23 routable CIDR is divided up and fully allocated to routable subnets.
 
-![VPC spans 2 availability zones with TGW attachment for egress from private subnets to separate VPC.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/0171d91d-ab1e-41ca-a425-1e6e610080e1/images/31a2a241-5be6-425e-93e9-5ff7ffeca3a9.png)
+![VPC spans 2 availability zones with TGW attachment for egress from private subnets to separate VPC.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/0171d91d-ab1e-41ca-a425-1e6e610080e1/images/31a2a241-5be6-425e-93e9-5ff7ffeca3a9.png)
 
 ## Tools
 <a name="preserve-routable-ip-space-in-multi-account-vpc-designs-for-non-workload-subnets-tools"></a>

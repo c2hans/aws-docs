@@ -58,7 +58,7 @@ EC2 Fleet integrates with [Amazon EventBridge](https://aws.amazon.com/eventbridg
 
  In the second approach, the 20,000 vCPUs are provisioned at the outset using On-Demand Instances to provide confidence in the batch delivery, but 70,000 vCPUs based on low-cost Spot Instances are also added. Because of the volume of Spot Instances, the batch completes much more quickly (in about three hours) and at a significantly reduced cost. However, if the Spot Instances were not available for any reason, the batch would still complete on time with the On-Demand Instances provisioned.
 
-![Diagrams showing two contrasting AWS instance provisioning strategies](http://docs.aws.amazon.com/whitepapers/latest/financial-services-grid-computing/images/instance-provisioning-strategies.png)
+![Diagrams showing two contrasting AWS instance provisioning strategies](https://docs.aws.amazon.com/whitepapers/latest/financial-services-grid-computing/images/instance-provisioning-strategies.png)
 
 ## Attribute-based instance type selection
 <a name="attribute-based-instance-type-selection"></a>

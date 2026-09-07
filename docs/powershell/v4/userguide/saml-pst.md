@@ -25,7 +25,7 @@ You must have the following in place before you try to use SAML support for the 
 
 The following process describes, at a high level, how an Active Directory (AD) user is federated by AD FS to gain access to AWS resources.
 
-![Federated user authentication flow from ADFS through AWS STS to access Service APIs.](http://docs.aws.amazon.com/powershell/v4/userguide/images/powershell_ADFSauth_using_vsd.png)
+![Federated user authentication flow from ADFS through AWS STS to access Service APIs.](https://docs.aws.amazon.com/powershell/v4/userguide/images/powershell_ADFSauth_using_vsd.png)
 
 1. The client on federated user's computer authenticates against AD FS.
 
@@ -42,7 +42,7 @@ The following process describes, at a high level, how an Active Directory (AD) u
 
 This section describes how AWS Tools for PowerShell cmdlets enable configuration of SAML-based identity federation for users.
 
-![Workflow showing Active Directory federation with AWS using SAML and temporary credentials.](http://docs.aws.amazon.com/powershell/v4/userguide/images/Powershell_SamlAuth_using_vsd.png)
+![Workflow showing Active Directory federation with AWS using SAML and temporary credentials.](https://docs.aws.amazon.com/powershell/v4/userguide/images/Powershell_SamlAuth_using_vsd.png)
 
 1. AWS Tools for PowerShell authenticates against AD FS by using the Windows user's current credentials, or interactively, when the user tries to run a cmdlet that requires credentials to call into AWS.
 

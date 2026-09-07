@@ -47,7 +47,7 @@ Typically, a hotfix is deployed to address critical or security issues reported 
 
 The diagrams in this section provide workflows for a create lifecycle event and for a delete lifecycle event.
 
-![Workflow to create a lifecycle event.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/64311acc-8c0f-4734-aa1b-74345d86c752/images/3939f77c-4221-4c23-a3a1-3e8a294b2b32.png)
+![Workflow to create a lifecycle event.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/64311acc-8c0f-4734-aa1b-74345d86c752/images/3939f77c-4221-4c23-a3a1-3e8a294b2b32.png)
 
 The preceding diagram for creating a lifecycle event shows the following:
 
@@ -71,7 +71,7 @@ The preceding diagram for creating a lifecycle event shows the following:
 
 1. The deploy stage to the production environment updates Amazon ECS with the latest container image that includes the hotfix. The hotfix is deployed by creating and executing a CloudFormation change set.
 
-![Workflow to delete a lifecycle event.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/64311acc-8c0f-4734-aa1b-74345d86c752/images/192aa897-bd9b-4a9f-804e-340371612b3b.png)
+![Workflow to delete a lifecycle event.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/64311acc-8c0f-4734-aa1b-74345d86c752/images/192aa897-bd9b-4a9f-804e-340371612b3b.png)
 
 The preceding diagram for deleting a lifecycle event shows the following:
 

@@ -10,7 +10,7 @@ We would love to hear from you. Please provide feedback on the AWS PRA by taking
 
 The Org Management account is primarily used to manage resource configuration drift for the foundational privacy controls across all of the accounts in your organization, which is managed by AWS Organizations. This account is also where you can deploy new member accounts consistently, with many of the same security and privacy controls. For more information about this account, see the [AWS Security Reference Architecture (AWS SRA)](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/org-management.html). The following diagram illustrates the AWS security and privacy services that are configured in the Org Management account.
 
-![AWS services deployed in the Org Management account](http://docs.aws.amazon.com/prescriptive-guidance/latest/privacy-reference-architecture/images/guide-img/a4379862-3434-48e4-8691-64db36363b08/images/604c8fa7-4814-46fe-a1be-7de672f43b4a.png)
+![AWS services deployed in the Org Management account](https://docs.aws.amazon.com/prescriptive-guidance/latest/privacy-reference-architecture/images/guide-img/a4379862-3434-48e4-8691-64db36363b08/images/604c8fa7-4814-46fe-a1be-7de672f43b4a.png)
 
 This section provides more detailed information about the following AWS services that are used in this account:
 + [AWS Artifact](#aws-artifact)

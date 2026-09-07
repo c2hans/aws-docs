@@ -31,13 +31,13 @@ This pattern describes how to attach a secondary elastic network interface to EC
 
 The source could be a Cassandra cluster on an on-premises virtual machine (VM) or on EC2 instances in the AWS Cloud. The following diagram illustrates the second scenario. This example includes four cluster nodes: three seed nodes and one management node. In the source architecture, each node has a single network interface attached.
 
-![Four Amazon EC2 cluster nodes that each have a single network interface attached.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/47ca4dbc-0922-4e65-b66c-4db5122fc4ac/images/5d80cfc9-4b72-4c72-aefd-b77cc0fb58e3.png)
+![Four Amazon EC2 cluster nodes that each have a single network interface attached.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/47ca4dbc-0922-4e65-b66c-4db5122fc4ac/images/5d80cfc9-4b72-4c72-aefd-b77cc0fb58e3.png)
 
 **Target architecture**
 
 The destination cluster is hosted on EC2 instances with a secondary elastic network interface attached to each node, as illustrated in the following diagram.
 
-![Four Amazon EC2 cluster nodes that each have a secondary elastic network interface attached.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/47ca4dbc-0922-4e65-b66c-4db5122fc4ac/images/d1e22017-f041-426b-9204-31ac158a407d.png)
+![Four Amazon EC2 cluster nodes that each have a secondary elastic network interface attached.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/47ca4dbc-0922-4e65-b66c-4db5122fc4ac/images/d1e22017-f041-426b-9204-31ac158a407d.png)
 
 **Automation and scale**
 

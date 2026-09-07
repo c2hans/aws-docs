@@ -15,6 +15,6 @@ CNF continuous delivery and deployment can be broadly classified into the follow
 + **Automation** can be achieved by configuring AWS CodePipeline with the blue/green and canary-based deployment stages. The approval stage may be manually driven initially during provisioning, but later it should be fully automated. In the test environments, it is good practice to always test with a rollback action to validate forward and backward compatibility, before deploying into production. The blue/green deployment on clusters with service mesh depend on the support provided by the end-application and the routing gateway for the service mesh to accomplish a graceful transition.
 +  [** AWS Systems Manager **](https://aws.amazon.com/systems-manager/) provides a unified user interface so you can view operational data from multiple AWS Services used by network functions deployed by CI/CD. Systems Manager enables you to automate operational tasks across your AWS resources.
 
-![A diagram depicting Canary deployment.](http://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_on_aws/images/cicd_5g10.png)
+![A diagram depicting Canary deployment.](https://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_on_aws/images/cicd_5g10.png)
 
 *Canary deployment*

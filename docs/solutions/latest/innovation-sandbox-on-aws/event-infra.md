@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 # Event infrastructure
 <a name="event-infra"></a>
 
-![Diagram showing the event infrastructure producers and consumers including Lambda functions EventBridge schedules and Step Functions workflows](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/diagrams/event-infrastructure.drawio.png)
+![Diagram showing the event infrastructure producers and consumers including Lambda functions EventBridge schedules and Step Functions workflows](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/diagrams/event-infrastructure.drawio.png)
 
 **Event infrastructure**
 The event infrastructure performs the solution’s monitoring actions and responds to the events produced. The resources in the diagram can be categorized into event **producers** and **consumers**.

@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/quantum-technologies.html
 ---
 
-# ![AWS Management Console icon](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/quantum-technologies-icon.jpg)Quantum technologies
+# ![AWS Management Console icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/quantum-technologies-icon.jpg)Quantum technologies
 <a name="quantum-technologies"></a>
 
 ------

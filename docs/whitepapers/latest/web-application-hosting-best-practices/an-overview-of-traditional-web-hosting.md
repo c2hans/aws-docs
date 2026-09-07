@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/web-application-hosti
 
  Scalable web hosting is a well-known problem space. The following image depicts a traditional web hosting architecture that implements a common three-tier web application model. In this model, the architecture is separated into presentation, application, and persistence layers. Scalability is provided by adding hosts at these layers. The architecture also has built-in performance, failover, and availability features. The traditional web hosting architecture is easily ported to the AWS Cloud with only a few modifications.
 
-![Three-tier web architecture with firewalls, load balancers, web and app server tiers, and data tier with primary and standby databases.](http://docs.aws.amazon.com/whitepapers/latest/web-application-hosting-best-practices/images/webarchitecture.png)
+![Three-tier web architecture with firewalls, load balancers, web and app server tiers, and data tier with primary and standby databases.](https://docs.aws.amazon.com/whitepapers/latest/web-application-hosting-best-practices/images/webarchitecture.png)
 
 * A traditional web hosting architecture *
 

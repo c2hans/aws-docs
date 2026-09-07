@@ -12,4 +12,4 @@ End of support notice: On May 31, 2026, AWS will end support for AWS Panorama. A
 
 This is the * AWS Panorama API Reference*. For an introduction to the service, see [What is AWS Panorama?](https://docs.aws.amazon.com/panorama/latest/dev/panorama-welcome.html) in the * AWS Panorama Developer Guide*.
 
-This document was last published on September 4, 2026.
+This document was last published on September 7, 2026.

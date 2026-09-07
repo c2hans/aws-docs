@@ -38,7 +38,7 @@ Follow these steps to register Slack, associate a channel, and optionally enable
 
 1. Under **Communications**, choose **Add** or **Add integration**.
 
-![The Communications section with the Add integration button.](http://docs.aws.amazon.com/devopsagent/latest/userguide/images/slack-step1-communications.png)
+![The Communications section with the Add integration button.](https://docs.aws.amazon.com/devopsagent/latest/userguide/images/slack-step1-communications.png)
 
 ### Step 2: Register Slack
 <a name="step-2-register-slack"></a>
@@ -47,7 +47,7 @@ If Slack is already registered with your AWS account, choose **Add** under **Com
 
 1. In the **Add a capability** dialog, search for **Slack** and choose **Register**.
 
-![Add a capability dialog showing Slack under Communication with the Register option.](http://docs.aws.amazon.com/devopsagent/latest/userguide/images/slack-step2-register.png)
+![Add a capability dialog showing Slack under Communication with the Register option.](https://docs.aws.amazon.com/devopsagent/latest/userguide/images/slack-step2-register.png)
 
 ### Step 3: Review registration instructions
 <a name="step-3-review-registration-instructions"></a>
@@ -56,7 +56,7 @@ If Slack is already registered with your AWS account, choose **Add** under **Com
 
 1. Choose **Next** to begin the Slack authorization flow.
 
-![Register Slack with DevOps Agent page showing the workspace installation steps.](http://docs.aws.amazon.com/devopsagent/latest/userguide/images/slack-step3-registration-steps.png)
+![Register Slack with DevOps Agent page showing the workspace installation steps.](https://docs.aws.amazon.com/devopsagent/latest/userguide/images/slack-step3-registration-steps.png)
 
 **Note** If you use Slack Enterprise Grid, install the app directly to a workspace. Do not select an Enterprise Grid organization.
 
@@ -67,7 +67,7 @@ If Slack is already registered with your AWS account, choose **Add** under **Com
 
 1. Review the permissions that the app requests, and choose **Allow**.
 
-![Slack authorization page showing the workspace selector, requested permissions, and the Allow button.](http://docs.aws.amazon.com/devopsagent/latest/userguide/images/slack-step4-authorize.png)
+![Slack authorization page showing the workspace selector, requested permissions, and the Allow button.](https://docs.aws.amazon.com/devopsagent/latest/userguide/images/slack-step4-authorize.png)
 
 After authorization, Slack redirects you to the AWS DevOps Agent console and displays a success message.
 
@@ -78,7 +78,7 @@ After authorization, Slack redirects you to the AWS DevOps Agent console and dis
 
 To find the channel ID, open the channel in Slack, choose the channel name at the top, and copy the **Channel ID** from the channel details panel.
 
-![Associate this Agent Space to your Slack channel page showing the Channel ID field and the Bidirectional communication section.](http://docs.aws.amazon.com/devopsagent/latest/userguide/images/slack-step5-channel-id.png)
+![Associate this Agent Space to your Slack channel page showing the Channel ID field and the Bidirectional communication section.](https://docs.aws.amazon.com/devopsagent/latest/userguide/images/slack-step5-channel-id.png)
 
 ### Step 6: (Optional) Enable bidirectional communication
 <a name="step-6-optional-enable-bidirectional-communication"></a>
@@ -98,7 +98,7 @@ To enable bidirectional communication:
 
 1. Choose **Next**.
 
-![Bidirectional communication section with Bidirectional mode enabled and IAM role configuration options.](http://docs.aws.amazon.com/devopsagent/latest/userguide/images/slack-step6-bidirectional.png)
+![Bidirectional communication section with Bidirectional mode enabled and IAM role configuration options.](https://docs.aws.amazon.com/devopsagent/latest/userguide/images/slack-step6-bidirectional.png)
 
 ### Step 7: Invite DevOps Agent to the channel
 <a name="step-7-invite-devops-agent-to-the-channel"></a>
@@ -117,14 +117,14 @@ For example, for an Agent Space in Europe (Frankfurt):
 
 ```text /invite @AWS DevOps Agent - EU (Frankfurt) ```
 
-![Instructions for inviting the AWS DevOps Agent app to a private Slack channel with the /invite command.](http://docs.aws.amazon.com/devopsagent/latest/userguide/images/slack-step7-invite.png)
+![Instructions for inviting the AWS DevOps Agent app to a private Slack channel with the /invite command.](https://docs.aws.amazon.com/devopsagent/latest/userguide/images/slack-step7-invite.png)
 
 ### Step 8: Confirm the invite in Slack
 <a name="step-8-confirm-the-invite-in-slack"></a>
 
 1. In Slack, verify that you see a confirmation that the app was added to the channel. The message includes the full regional app name.
 
-![Slack message bar showing the /invite command with the regional AWS DevOps Agent app name.](http://docs.aws.amazon.com/devopsagent/latest/userguide/images/slack-step8-invite-slack.png)
+![Slack message bar showing the /invite command with the regional AWS DevOps Agent app name.](https://docs.aws.amazon.com/devopsagent/latest/userguide/images/slack-step8-invite-slack.png)
 
 ### Step 9: Complete the association
 <a name="step-9-complete-the-association"></a>
@@ -133,7 +133,7 @@ For example, for an Agent Space in Europe (Frankfurt):
 
 1. Choose **Add** to create the channel association.
 
-![Step 2 of the Add Slack channel wizard showing the Invite DevOps Agent instructions and the Add button to complete the association.](http://docs.aws.amazon.com/devopsagent/latest/userguide/images/slack-step9-add.png)
+![Step 2 of the Add Slack channel wizard showing the Invite DevOps Agent instructions and the Add button to complete the association.](https://docs.aws.amazon.com/devopsagent/latest/userguide/images/slack-step9-add.png)
 
 ### Step 10: Verify the association
 <a name="step-10-verify-the-association"></a>
@@ -142,7 +142,7 @@ For example, for an Agent Space in Europe (Frankfurt):
 
 1. If you enabled bidirectional communication, verify that the **Bidirectional** column shows **Enabled** and the **Bidirectional role** column shows the IAM role ARN.
 
-![Communications page showing two Slack integrations with Bidirectional Enabled and IAM role ARNs.](http://docs.aws.amazon.com/devopsagent/latest/userguide/images/slack-step10-success.png)
+![Communications page showing two Slack integrations with Bidirectional Enabled and IAM role ARNs.](https://docs.aws.amazon.com/devopsagent/latest/userguide/images/slack-step10-success.png)
 
 Your Agent Space is now connected to Slack.
 
@@ -155,7 +155,7 @@ After you complete the association with bidirectional mode enabled, set up the c
 
 ```text @AWS DevOps Agent - <Region> setup ```
 
-![A Slack message sending the setup command to the AWS DevOps Agent app.](http://docs.aws.amazon.com/devopsagent/latest/userguide/images/slack-setup-command.png)
+![A Slack message sending the setup command to the AWS DevOps Agent app.](https://docs.aws.amazon.com/devopsagent/latest/userguide/images/slack-setup-command.png)
 
 1. If the channel has one eligible Agent Space association, AWS DevOps Agent configures the binding and posts a confirmation.
 
@@ -174,9 +174,9 @@ To start a conversation, mention the AWS DevOps Agent app in a new top-level mes
 
 AWS DevOps Agent replies in a thread under your message. Open the thread to view the response, and send follow-up messages in the same thread to continue the conversation.
 
-![A Slack channel showing a message that mentions the AWS DevOps Agent app with a reply indicator.](http://docs.aws.amazon.com/devopsagent/latest/userguide/images/slack-chat-channel.png)
+![A Slack channel showing a message that mentions the AWS DevOps Agent app with a reply indicator.](https://docs.aws.amazon.com/devopsagent/latest/userguide/images/slack-chat-channel.png)
 
-![A conversation thread showing the AWS DevOps Agent app responding with a list of capabilities.](http://docs.aws.amazon.com/devopsagent/latest/userguide/images/slack-chat-thread.png)
+![A conversation thread showing the AWS DevOps Agent app responding with a list of capabilities.](https://docs.aws.amazon.com/devopsagent/latest/userguide/images/slack-chat-thread.png)
 
 Mention the app in each message, including replies within the thread. Replace `<Region>` with the AWS Region suffix shown in your app name. For example:
 

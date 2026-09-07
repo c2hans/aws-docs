@@ -41,7 +41,7 @@ This security control is regional. You must deploy the security control in each 
 
 The following diagram shows how to automate encryption enforcement in AWS Glue.
 
-![Diagram shows how to automate encryption enforcement in AWS Glue using a CloudFormation template.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/d50d0659-5592-44d0-8fcb-7a2983712640/images/272a7fb2-ecbc-41f7-a556-d555e4e39a59.png)
+![Diagram shows how to automate encryption enforcement in AWS Glue using a CloudFormation template.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/d50d0659-5592-44d0-8fcb-7a2983712640/images/272a7fb2-ecbc-41f7-a556-d555e4e39a59.png)
 
 The diagram shows the following workflow:
 

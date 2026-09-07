@@ -15,7 +15,7 @@ For this hypothetical use case, let's say that your Iceberg table ingests credit
 **Note**
 This is just an example. The optimal configuration depends on your data and requirements.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/images/guide-img/ceffa39e-028d-47b6-a54a-6ef8526aee6a/images/108be8b9-8667-4e45-a026-5ce532c8b621.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/images/guide-img/ceffa39e-028d-47b6-a54a-6ef8526aee6a/images/108be8b9-8667-4e45-a026-5ce532c8b621.png)
 
 Recommendations:
 + File size: 128 MB, because Apache Spark tasks process data in 128 MB chunks.

@@ -247,15 +247,15 @@ This section provides examples of behavior to be expected from Amazon S3 when mu
 
 In this example, both W1 (write 1) and W2 (write 2) finish before the start of R1 (read 1) and R2 (read 2). Because S3 is strongly consistent, R1 and R2 both return `color = ruby`.
 
-![An example of two clients writing to the same items with different values but returning the same read results.](http://docs.aws.amazon.com/AmazonS3/latest/userguide/images/consistency1.png)
+![An example of two clients writing to the same items with different values but returning the same read results.](https://docs.aws.amazon.com/AmazonS3/latest/userguide/images/consistency1.png)
 
 In the next example, W2 does not finish before the start of R1. Therefore, R1 might return `color = ruby` or `color = garnet`. However, because W1 and W2 finish before the start of R2, R2 returns `color = garnet`.
 
-![An example of two clients writing to the same items with different values but returning the same or different read results.](http://docs.aws.amazon.com/AmazonS3/latest/userguide/images/consistency2.png)
+![An example of two clients writing to the same items with different values but returning the same or different read results.](https://docs.aws.amazon.com/AmazonS3/latest/userguide/images/consistency2.png)
 
 In the last example, W2 begins before W1 has received an acknowledgment. Therefore, these writes are considered concurrent. Amazon S3 internally uses last-writer-wins semantics to determine which write takes precedence. However, the order in which Amazon S3 receives the requests and the order in which applications receive acknowledgments cannot be predicted because of various factors, such as network latency. For example, W2 might be initiated by an Amazon EC2 instance in the same Region, while W1 might be initiated by a host that is farther away. The best way to determine the final value is to perform a read after both writes have been acknowledged.
 
-![An example of two clients writing to the same items with different values but returning concurrent results.](http://docs.aws.amazon.com/AmazonS3/latest/userguide/images/consistency3.png)
+![An example of two clients writing to the same items with different values but returning concurrent results.](https://docs.aws.amazon.com/AmazonS3/latest/userguide/images/consistency3.png)
 
 ## Related services
 <a name="RelatedAmazonWebServices"></a>

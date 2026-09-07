@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 
  The six phases for the ML lifecycle referenced in this lens are illustrated in Figure 2 in a sequence.
 
-![Diagram of the phases of the machine learning lifecycle](http://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/images/ml-lifecycle-phases.png)
+![Diagram of the phases of the machine learning lifecycle](https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/images/ml-lifecycle-phases.png)
 
  The following sections describe Well-Architected machine learning for each of the lifecycle phases.
 

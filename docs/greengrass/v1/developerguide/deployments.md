@@ -19,7 +19,7 @@ A group must include a [core](gg-core.md), which is an AWS IoT device that runs 
 
 You manage your Greengrass group in the AWS Cloud and then deploy it to a core. The deployment copies the group configuration to the `group.json` file on the core device. This file is located in `{{greengrass-root}}/ggc/deployments/group`.
 
-![Cloud definition of Greengrass group deployed to a core device.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/group-deploy.png)
+![Cloud definition of Greengrass group deployed to a core device.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/group-deploy.png)
 
 **Note**
 During a deployment, the Greengrass daemon process on the core device stops and then restarts.
@@ -145,14 +145,14 @@ When programming with the AWS IoT Greengrass API, it's helpful to understand the
 
 In the AWS IoT Greengrass API, the top-level `Group` object consists of metadata and a list of `GroupVersion` objects. `GroupVersion` objects are associated with a `Group` by ID.
 
-![A diagram of a group, which consists of metadata and a list of group versions.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/om-group.png)
+![A diagram of a group, which consists of metadata and a list of group versions.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/om-group.png)
 
 ### Group versions
 <a name="api-overview-versions"></a>
 
 `GroupVersion` objects define group membership. Each `GroupVersion` references a `CoreDefinitionVersion` and other component versions by ARN. These references determine which entities to include in the group.
 
-![A diagram of a group version that references other version types by ARN.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/om-groupversion.png)
+![A diagram of a group version that references other version types by ARN.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/om-groupversion.png)
 
 For example, to include three Lambda functions, one device, and two subscriptions in the group, the `GroupVersion` references:
 + The `CoreDefinitionVersion` that contains the required core.
@@ -181,7 +181,7 @@ Components that you add to groups have a three-level hierarchy:
 
 The following example `DeviceDefinition` references three `DeviceDefinitionVersion` objects that each contain multiple `Device` objects. Only one `DeviceDefinitionVersion` at a time is used in a group.
 
-![A diagram of a device hierarchy, which consists of DeviceDefinition, DeviceDefinitionVersion, and Device objects.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/om-devicedefinition.png)
+![A diagram of a device hierarchy, which consists of DeviceDefinition, DeviceDefinitionVersion, and Device objects.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/om-devicedefinition.png)
 
 ### Updating groups
 <a name="api-update-groups"></a>

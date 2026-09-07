@@ -195,14 +195,14 @@ If a new version is available, you can download it and upgrade the SDK version i
    + For **Runtime**, choose **Python 3.7**.
 
    For **Permissions**, keep the default setting. This creates an execution role that grants basic Lambda permissions. This role isn't used by AWS IoT Greengrass.
-![The Basic information section of the Create function page.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/ml-dlc-inference/gg-dlr-lambda-creation.png)
+![The Basic information section of the Create function page.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/ml-dlc-inference/gg-dlr-lambda-creation.png)
 
 1. Choose **Create function**.
 
 Now, upload your Lambda function deployment package and register the handler.
 
 1. <a name="lambda-console-upload"></a>On the **Code** tab, under **Code source**, choose **Upload from**. From the dropdown, choose **.zip file**.
-![The Upload from dropdown with .zip file highlighted.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/lra-console/upload-deployment-package.png)
+![The Upload from dropdown with .zip file highlighted.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/lra-console/upload-deployment-package.png)
 
 1. Choose your `optimizedImageClassification.zip` deployment package, and then choose **Save**.
 
@@ -211,7 +211,7 @@ Now, upload your Lambda function deployment package and register the handler.
    + For **Handler**, enter **inference.handler**.
 
    Choose **Save**.
-![The Runtime settings section with Upload highlighted.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/ml-dlc-inference/gg-ml2-lambda-upload.png)
+![The Runtime settings section with Upload highlighted.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/ml-dlc-inference/gg-ml2-lambda-upload.png)
 
 Next, publish the first version of your Lambda function. Then, create an [alias for the version](https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html).
 
@@ -219,12 +219,12 @@ Next, publish the first version of your Lambda function. Then, create an [alias 
 Greengrass groups can reference a Lambda function by alias (recommended) or by version. Using an alias makes it easier to manage code updates because you don't have to change your subscription table or group definition when the function code is updated. Instead, you just point the alias to the new function version.
 
 1. From the **Actions** menu, choose **Publish new version**.
-![The Publish new version option in the Actions menu.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/ml-dlc-inference/gg-ml2-publish-new.png)
+![The Publish new version option in the Actions menu.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/ml-dlc-inference/gg-ml2-publish-new.png)
 
 1. For **Version description**, enter **First version**, and then choose **Publish**.
 
 1. On the **optimizedImageClassification: 1** configuration page, from the **Actions** menu, choose **Create alias**.
-![The Create alias option in the Actions menu.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/ml-dlc-inference/gg-ml2-create-alias.png)
+![The Create alias option in the Actions menu.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/ml-dlc-inference/gg-ml2-create-alias.png)
 
 1. On the **Create a new alias** page, use the following values:
    + For **Name**, enter **mlTestOpt**.
@@ -324,7 +324,7 @@ If using the NVIDIA Jetson example, you need to use the `resnet18` directory in 
 1.  In the AWS IoT Greengrass console tab, locate and choose your Amazon S3 bucket. Locate your uploaded `resnet50.zip` file, and choose **Select**. You might need to refresh the page to update the list of available buckets and files.
 
 1.  In **Destination path**, enter **/ml\_model**.
-![The updated destination path.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/ml-dlc-inference/local-path.png)
+![The updated destination path.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/ml-dlc-inference/local-path.png)
 
     This is the destination for the local model in the Lambda runtime namespace. When you deploy the group, AWS IoT Greengrass retrieves the source model package and then extracts the contents to the specified directory.
 **Note**

@@ -17,7 +17,7 @@ Modern inference engines like [vLLM](https://github.com/vllm-project/vllm), [SGL
 
 The diagram below shows how the scheduler works at the iteration level. Each **iteration** (column) is one forward pass processing both prefill tokens (from new requests) and decode tokens (from active requests). Sequences flow through prefill (blue) → decode (green) → complete, with overflow going to queue (gray).
 
-![Continuous batching diagram showing iteration-level scheduling with sequences flowing through prefill (blue) and decode (green) phases, illustrating max_num_seqs concurrency cap and max_num_batched_tokens budget constraints](http://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-inference-architecture-and-best-practices-on-aws/images/guide-img/1e4a4636-9247-4346-9ab7-62170783f8a2/images/8d042c97-d551-47bb-a1c7-4759054f7687.png)
+![Continuous batching diagram showing iteration-level scheduling with sequences flowing through prefill (blue) and decode (green) phases, illustrating max_num_seqs concurrency cap and max_num_batched_tokens budget constraints](https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-inference-architecture-and-best-practices-on-aws/images/guide-img/1e4a4636-9247-4346-9ab7-62170783f8a2/images/8d042c97-d551-47bb-a1c7-4759054f7687.png)
 
 ### Core Parameters and Their Implications
 <a name="core-parameters-and-their-implications.a5f34a53-afa7-534a-a494-f03563368b9a"></a>
@@ -142,7 +142,7 @@ GPU memory is finite. Once the KV cache pool is full, the system must evict cach
 
 Several tools provide tiered caching capabilities. [LMCache](https://github.com/LMCache/LMCache) is one of them, an open-source library that works with vLLM and SGLang, while NVIDIA Dynamo includes KVBM (KV Block Manager) which is tightly integrated with its disaggregation features (covered in the next section). These capabilities sit between the inference engine and storage tiers, coordinating KV block movement and cross-engine sharing:
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-inference-architecture-and-best-practices-on-aws/images/guide-img/1e4a4636-9247-4346-9ab7-62170783f8a2/images/17f7ea45-bbea-4dbe-8a6f-9bf69d7c53a6.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-inference-architecture-and-best-practices-on-aws/images/guide-img/1e4a4636-9247-4346-9ab7-62170783f8a2/images/17f7ea45-bbea-4dbe-8a6f-9bf69d7c53a6.png)
 
 **Deployment example (LMCache with vLLM):**
 
@@ -223,7 +223,7 @@ Disaggregation adds architectural complexity (separate pools, KV transfer overhe
 
 How Disaggregation Works
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-inference-architecture-and-best-practices-on-aws/images/guide-img/1e4a4636-9247-4346-9ab7-62170783f8a2/images/80e3a1e5-b0e7-4fed-8457-6e2b2a3eab15.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-inference-architecture-and-best-practices-on-aws/images/guide-img/1e4a4636-9247-4346-9ab7-62170783f8a2/images/80e3a1e5-b0e7-4fed-8457-6e2b2a3eab15.png)
 
 **Request flow:**
 + Router directs incoming request to prefill worker (optimized for compute)

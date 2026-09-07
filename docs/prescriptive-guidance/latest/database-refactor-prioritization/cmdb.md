@@ -26,7 +26,7 @@ When the data has been collected and consolidated, filter out the databases that
 
 This filtering reduces your candidate database list significantly (typically more than 50%) by filtering out the non-production databases). Sort the remaining databases by size (in ascending order) in preparation for [step 2](pl-sql.md).
 
-![Criteria for filtering the initial dataset in a CMDB](http://docs.aws.amazon.com/prescriptive-guidance/latest/database-refactor-prioritization/images/guide-img/d514dcdf-d1f9-43a2-ac0b-46dc109cf9b2/images/1ccd221c-1cb1-4228-845b-32917db49193.png)
+![Criteria for filtering the initial dataset in a CMDB](https://docs.aws.amazon.com/prescriptive-guidance/latest/database-refactor-prioritization/images/guide-img/d514dcdf-d1f9-43a2-ac0b-46dc109cf9b2/images/1ccd221c-1cb1-4228-845b-32917db49193.png)
 
 ## Best practices
 <a name="cmdb-best-practices"></a>

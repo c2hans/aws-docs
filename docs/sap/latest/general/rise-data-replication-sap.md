@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/rise-data-replication
 # Replicating data using SAP services
 <a name="rise-data-replication-sap"></a>
 
-![Data replication using SAP Services.](http://docs.aws.amazon.com/sap/latest/general/images/rise-data-replication-sap-services.png)
+![Data replication using SAP Services.](https://docs.aws.amazon.com/sap/latest/general/images/rise-data-replication-sap-services.png)
 
  **SAP BDC / Datasphere**
 

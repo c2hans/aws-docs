@@ -18,7 +18,7 @@ In summary, terminating a VPN at a transit gateway is a default starting point f
 
 The following diagram shows how you can connect an on-premises environment to your VPCs on AWS by using AWS Site-to-Site VPN.
 
-![Connecting on-premises environment to VPCs by using AWS Site-to-Site VPN.](http://docs.aws.amazon.com/prescriptive-guidance/latest/designing-control-tower-landing-zone/images/guide-img/156d118c-ed00-4c5b-9a02-63c2673a3342/images/c49b8730-4480-447e-adb9-fade1078baf8.png)
+![Connecting on-premises environment to VPCs by using AWS Site-to-Site VPN.](https://docs.aws.amazon.com/prescriptive-guidance/latest/designing-control-tower-landing-zone/images/guide-img/156d118c-ed00-4c5b-9a02-63c2673a3342/images/c49b8730-4480-447e-adb9-fade1078baf8.png)
 
 For end-to-end network performance, you can use Direct Connect to enable consistent, low-latency, high-bandwidth, dedicated fiber connectivity between your on-premises data centers and AWS. Direct Connect provides dedicated connections at bandwidths of 1 Gbps, 10 Gbps, 100 Gbps, and 400 Gbps. Hosted connections provided by Direct Connect Partners use pre-established network links and are available from 50 Mbps up to 25 Gbps.
 

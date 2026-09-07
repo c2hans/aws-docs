@@ -9,7 +9,7 @@ Create an [app client](user-pool-settings-client-apps.md#user-pool-settings-clie
 
 The following diagram shows each tenant with a dedicated app client in a shared user pool.
 
-![A diagram of a one-to-one multi-tenancy model where each tenant has their own app client in a shared user pool.](http://docs.aws.amazon.com/cognito/latest/developerguide/images/multi-tenancy-app-client.png)
+![A diagram of a one-to-one multi-tenancy model where each tenant has their own app client in a shared user pool.](https://docs.aws.amazon.com/cognito/latest/developerguide/images/multi-tenancy-app-client.png)
 
 **When to implement app-client multi-tenancy**
 When you can choose a universal configuration for settings at the user-pool level, like Lambda triggers, password policy, and the content and delivery methods of email and SMS messages. Because users in a shared user pool can sign in to any app client, app-client multi-tenancy is ideal for sign-in with app-client-specific IdPs or the Amazon Cognito user pools API. App-client multi-tenancy is also well-suited for one-to-many environments where you want to permit users to transition between multiple applications.

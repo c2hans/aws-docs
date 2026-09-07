@@ -33,7 +33,7 @@ This is optional. Leave empty and QnABot on AWS will not act as a `BotRouter` fo
 
  **Bot routing**
 
-![botrouting](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/botrouting.png)
+![botrouting](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/botrouting.png)
 
 The example image shows an integration we’ve developed which communicates with the Nutritionix bot.
 + Bot name or Lambda function - You can configure and existing Lex bot or configure a specialty `BotRouter` implemented via a Lambda function.

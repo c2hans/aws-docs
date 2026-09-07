@@ -47,7 +47,7 @@ The code for this pattern is provided in [GitHub](https://github.com/aws-samples
 
 The following diagram illustrates the architecture for the CloudFormation implementation. Note that you can also implement this pattern by using the AWS Cloud Development Kit (AWS CDK).
 
-![AWS CloudFormation implementation for remediating unencrypted Amazon RDS instances.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7f7195e3-98c4-4b18-9192-c0400ac5b891/images/8c1466fa-15b3-44ef-aa7e-7958f80cb699.png)
+![AWS CloudFormation implementation for remediating unencrypted Amazon RDS instances.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7f7195e3-98c4-4b18-9192-c0400ac5b891/images/8c1466fa-15b3-44ef-aa7e-7958f80cb699.png)
 
 ## Tools
 <a name="automatically-remediate-unencrypted-amazon-rds-db-instances-and-clusters-tools"></a>

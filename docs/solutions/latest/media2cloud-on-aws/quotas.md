@@ -29,4 +29,4 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/quot
 
  The Amazon Rekognition Custom Labels setting is currently limited to running up to two models. For more information, refer to [Guidelines and quotas in Amazon Rekognition Custom Labels](https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/limits.html) in the *Amazon Rekognition Custom Labels Guide*.
 
-![Amazon Rekognition default detection settings.](http://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/image19.png)
+![Amazon Rekognition default detection settings.](https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/image19.png)

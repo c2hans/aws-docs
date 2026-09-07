@@ -11,6 +11,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-wor
 
  The following figure shows transferring the GDSII file over to the foundry using [AWS Transfer for SFTP](https://aws.amazon.com/aws-transfer-family/). The [AWS Transfer Family](https://aws.amazon.com/aws-transfer-family) provides fully managed support for file transfers directly into and out of Amazon S3 or Amazon EFS.
 
-![This image shows the components involved with transferring the GDSII file to the foundry.](http://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-workflows-on-aws/images/semiconductor-transfer-gdsii.png)
+![This image shows the components involved with transferring the GDSII file to the foundry.](https://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-workflows-on-aws/images/semiconductor-transfer-gdsii.png)
 
 **Transfer GDSII file to foundry**

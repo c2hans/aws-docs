@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/applying-security-pra
 
 An example architecture of a 5GC workload with AWS Outposts. The 5G control plane and user plane are running on-premises.
 
-![5GC architecture with control plane in AWS Region and user plane on AWS Outposts premises.](http://docs.aws.amazon.com/whitepapers/latest/applying-security-practices-to-network-workload-for-csps/images/architecture-5g-core-outposts.png)
+![5GC architecture with control plane in AWS Region and user plane on AWS Outposts premises.](https://docs.aws.amazon.com/whitepapers/latest/applying-security-practices-to-network-workload-for-csps/images/architecture-5g-core-outposts.png)
 
 **Security description of the example architecture of 5G core network function on AWS Outposts: **
 

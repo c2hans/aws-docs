@@ -20,11 +20,11 @@ The scalable ML framework enables data consumers (for example, data scientists o
 
 The following diagram highlights the end-to-end flow of the framework and the simplified route to live for ML use cases.
 
-![MLOps workflow showing development, test, and production accounts with CI/CD pipeline.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-unlock-value-data-financial-services/images/guide-img/df6a63f0-7c4b-47a6-8429-cafdc3b6250c/images/3becf73a-86de-4e21-9397-f635b0473378.png)
+![MLOps workflow showing development, test, and production accounts with CI/CD pipeline.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-unlock-value-data-financial-services/images/guide-img/df6a63f0-7c4b-47a6-8429-cafdc3b6250c/images/3becf73a-86de-4e21-9397-f635b0473378.png)
 
 In the wider context, data consumers use a serverless accelerator called *data.all* to source data across multiple data lakes and then use the data to train their models, as the following diagram illustrates.
 
-![MLOps architecture showing data flow from domain sources through data producers to model within secure environment, generating business value.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-unlock-value-data-financial-services/images/guide-img/df6a63f0-7c4b-47a6-8429-cafdc3b6250c/images/fd666851-a919-46de-adcc-103b18e60369.png)
+![MLOps architecture showing data flow from domain sources through data producers to model within secure environment, generating business value.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-unlock-value-data-financial-services/images/guide-img/df6a63f0-7c4b-47a6-8429-cafdc3b6250c/images/fd666851-a919-46de-adcc-103b18e60369.png)
 
 At a lower level, the scalable ML framework contains the following:
 + **Self-service infrastructure deployment** – Reduce your dependency on centralized teams.

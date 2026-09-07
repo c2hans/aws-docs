@@ -20,7 +20,7 @@ A critical first step in creating a migration strategy is collecting application
 
 After you complete this initial portfolio analysis, you should have an initial plan for how each application will be migrated. This plan should be regularly optimized for future migration waves and teams, based on lessons learned and new data that becomes available during the migration process. The following diagram illustrates the strategy planning process.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-retiring-applications/images/guide-img/11b5b0ce-2bf2-40a9-9f55-c87adb6560a5/images/fc1da705-63cc-405b-8e86-650886d4c129.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-retiring-applications/images/guide-img/11b5b0ce-2bf2-40a9-9f55-c87adb6560a5/images/fc1da705-63cc-405b-8e86-650886d4c129.png)
 
 Deciding if applications should be retired can often become complex and involves a level of risk. This can result in action being postponed, especially if subject matter experts (SMEs) have left an organization. Also, documentation about legacy systems can be sparse.
 

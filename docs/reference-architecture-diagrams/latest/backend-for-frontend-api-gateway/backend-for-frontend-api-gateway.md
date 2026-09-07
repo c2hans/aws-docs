@@ -12,7 +12,7 @@ This architecture shows how frontend client applications apply the Backend for F
 ## Backend for Frontend Using API Gateway
 <a name="diagram1"></a>
 
-![Architecture diagram showing a Backend for Frontend pattern using Amazon API Gateway, AWS Lambda, Amazon DynamoDB, and Amazon Cognito for real-time UI updates.](http://docs.aws.amazon.com/reference-architecture-diagrams/latest/backend-for-frontend-api-gateway/images/backend-for-frontend-api-gateway.png)
+![Architecture diagram showing a Backend for Frontend pattern using Amazon API Gateway, AWS Lambda, Amazon DynamoDB, and Amazon Cognito for real-time UI updates.](https://docs.aws.amazon.com/reference-architecture-diagrams/latest/backend-for-frontend-api-gateway/images/backend-for-frontend-api-gateway.png)
 
 The following steps describe the architecture:
 

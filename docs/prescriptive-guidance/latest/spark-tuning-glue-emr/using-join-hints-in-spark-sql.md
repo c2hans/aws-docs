@@ -69,7 +69,7 @@ The follow image shows a Directed Acyclic Graph (DAG) visualization of a Shuffle
 | Note: Some of the stages in this image show as *skipped* because those steps were completed in previous stages. That data was cached or persisted for use in these stages. |
 | --- |
 
-![A DAG visualization of a Shuffle Sort Merge join](http://docs.aws.amazon.com/prescriptive-guidance/latest/spark-tuning-glue-emr/images/guide-img/03a14f27-75e9-4b79-afab-d8b743354a10/images/04e27c46-259e-4a03-bc47-ae7f81666754.png)
+![A DAG visualization of a Shuffle Sort Merge join](https://docs.aws.amazon.com/prescriptive-guidance/latest/spark-tuning-glue-emr/images/guide-img/03a14f27-75e9-4b79-afab-d8b743354a10/images/04e27c46-259e-4a03-bc47-ae7f81666754.png)
 
 The following is a physical plan that indicates a Sort Merge join.
 
@@ -96,7 +96,7 @@ The *Shuffle Hash* join, as the name indicates, works by shuffling both datasets
 
 Sorting is not needed with Shuffle Hash joins inside of the partitions. The following image shows the phases of the Shuffle Hash join. The data is read initially, then it's shuffled across, and then a hash is created and used for the join.
 
-![Phases of the Shuffle Hash join: Scan JSON read data, exchange, ShuffleHashJoin, and Hash Aggregate](http://docs.aws.amazon.com/prescriptive-guidance/latest/spark-tuning-glue-emr/images/guide-img/03a14f27-75e9-4b79-afab-d8b743354a10/images/68a58fcd-a1b7-45d2-815f-da3590fcc721.png)
+![Phases of the Shuffle Hash join: Scan JSON read data, exchange, ShuffleHashJoin, and Hash Aggregate](https://docs.aws.amazon.com/prescriptive-guidance/latest/spark-tuning-glue-emr/images/guide-img/03a14f27-75e9-4b79-afab-d8b743354a10/images/68a58fcd-a1b7-45d2-815f-da3590fcc721.png)
 
 By default, the optimizer chooses Shuffle Hash join when the Broadcast Hash join cannot be used. Based on the Broadcast Hash join threshold size (`spark.sql.autoBroadcastJoinThreshold`) and the number of shuffle partitions (`spark.sql.shuffle.partitions`) chosen, it uses the Shuffle Hash join when the single partition of the logical SQL is small enough to build a local hash table.
 

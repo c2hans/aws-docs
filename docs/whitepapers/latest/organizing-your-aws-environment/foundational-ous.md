@@ -123,7 +123,7 @@ Depending on your initial requirements, you might not need to establish all of t
 
  The following example structure represents the recommended Security OU at a basic level. Note that within Control Tower governed environments, the accounts within the Security OU are limited to the Log Archive and Security Tooling (also known as Audit by default for AWS Control Tower deployments).
 
-![Diagram showing example structure of Security OU](http://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/example-security-ou.png)
+![Diagram showing example structure of Security OU](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/example-security-ou.png)
 
 ## Infrastructure OU
 <a name="infrastructure-ou"></a>
@@ -317,4 +317,4 @@ Depending on your initial requirements, you might not need to establish all of t
 
  The following example structure represents the recommended Infrastructure OU at a basic level. For general guidance on separating production and non-production workloads, refer to [Organizing workload-oriented OUs](advanced-ous.md#organizing-workload-oriented-ous).
 
-![Diagram showing an example structure of Infrastructure OU](http://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/example-infrastructure-ou.png)
+![Diagram showing an example structure of Infrastructure OU](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/example-infrastructure-ou.png)

@@ -736,7 +736,7 @@ For the FTDI C232HM-DDHSL-0 cable, these are the connections to the ESP32-WROVER
 These tables were developed from the [ FTDI C232HM-DDHSL-0 datasheet](https://www.ftdichip.com/Support/Documents/DataSheets/Cables/DS_C232HM_MPSSE_CABLE.pdf). For more information, see the section "C232HM MPSSE Cable Connection and Mechanical Details in the data sheet.
 To enable JTAG on the ESP-WROVER-KIT, place jumpers on the TMS, TDO, TDI, TCK, and S\_TDI pins as shown here.
 
-![Jumper placement](http://docs.aws.amazon.com/freertos/latest/userguide/images/JP8-jumpers.png)
+![Jumper placement](https://docs.aws.amazon.com/freertos/latest/userguide/images/JP8-jumpers.png)
 
 **Debugging on Windows (ESP-IDF v4.2)**
 

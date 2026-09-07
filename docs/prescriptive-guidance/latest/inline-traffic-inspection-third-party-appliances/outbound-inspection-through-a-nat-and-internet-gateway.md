@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/inline-traf
 
 The following diagram shows the workflow if you need to inspect outbound traffic originating from a VPC to the internet.
 
-![Inspecting traffic from a VPC to the internet through a NAT gateway and internet gateway](http://docs.aws.amazon.com/prescriptive-guidance/latest/inline-traffic-inspection-third-party-appliances/images/guide-img/7951faf9-5db9-4729-86ff-47c734d59b19/images/dc1ee160-2546-472d-8001-de273e07e1a7.png)
+![Inspecting traffic from a VPC to the internet through a NAT gateway and internet gateway](https://docs.aws.amazon.com/prescriptive-guidance/latest/inline-traffic-inspection-third-party-appliances/images/guide-img/7951faf9-5db9-4729-86ff-47c734d59b19/images/dc1ee160-2546-472d-8001-de273e07e1a7.png)
 
 The diagram shows the following workflow:
 

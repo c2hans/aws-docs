@@ -7,7 +7,7 @@ The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you 
 # Getting Started in a Browser Script
 <a name="getting-started-browser"></a>
 
-![JavaScript code example that applies to browser execution](http://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/browsericon.png)
+![JavaScript code example that applies to browser execution](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/browsericon.png)
 
 **This browser script example shows you:**
 + How to access AWS services from a browser script using Amazon Cognito Identity.
@@ -24,7 +24,7 @@ The example shows how to set up and run a simple browser script that takes text 
 **Note**
 Playback of the synthesized speech in this example depends on running in a browser that supports HTML 5 audio.
 
-![Illustration of how a browser script interacts with Amazon Cognito Identity and Amazon Polly services](http://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/browserscenario.png)
+![Illustration of how a browser script interacts with Amazon Cognito Identity and Amazon Polly services](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/browserscenario.png)
 
 The browser script uses the SDK for JavaScript to synthesize text by using these APIs:
 + [`AWS.CognitoIdentityCredentials`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CognitoIdentityCredentials.html) constructor
@@ -175,7 +175,7 @@ After you create the presigner object, call the `getSynthesizeSpeechUrl` method 
 
 To run the sample app, load `polly.html` into a web browser. This is what the browser presentation should resemble.
 
-![Web application browser interface](http://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/browsergetstarted.png)
+![Web application browser interface](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/browsergetstarted.png)
 
 Enter a phrase you want turned to speech in the input box, then choose **Synthesize**. When the audio is ready to play, a message appears. Use the audio player controls to hear the synthesized speech.
 

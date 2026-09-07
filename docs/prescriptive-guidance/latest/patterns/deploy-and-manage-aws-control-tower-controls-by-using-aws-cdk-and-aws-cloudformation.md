@@ -58,7 +58,7 @@ In most cases, the value for `<PARTITION>` is `aws`.
 
 This section provides a high-level overview of this solution and the architecture established by the sample code. The following diagram shows controls deployed across the various accounts in the OU.
 
-![Architecture diagram of controls deployed across all AWS accounts in the organizational unit.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7d0d5e37-58ac-4621-b6b0-cb8c1c767ab0/images/47264166-3294-4a53-b0a4-5911086d636f.png)
+![Architecture diagram of controls deployed across all AWS accounts in the organizational unit.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7d0d5e37-58ac-4621-b6b0-cb8c1c767ab0/images/47264166-3294-4a53-b0a4-5911086d636f.png)
 
 AWS Control Tower controls are categorized according to their *behavior* and their *guidance*.
 

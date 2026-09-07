@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/creat
 
  In the following figure, the account owner of VPC B is a service provider and has a service running on instances in subnet B. The owner of VPC B has a service endpoint (vpce-svc-1234) with an associated Network Load Balancer that points to the instances in subnet B as targets. Instances in subnet A of VPC A use an interface endpoint to access the services in subnet B.
 
-![A diagram that depicts detailed Amazon VPC-to-VPC connectivity with AWS PrivateLink.](http://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/images/connectivity-with-privatelink.jpeg)
+![A diagram that depicts detailed Amazon VPC-to-VPC connectivity with AWS PrivateLink.](https://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/images/connectivity-with-privatelink.jpeg)
 
  When an interface endpoint is created, endpoint-specific Domain Name System (DNS) hostnames are generated that can be used to communicate with the service. After creating the endpoint, requests can be submitted to the provider’s service through one of the following methods:
 
@@ -51,4 +51,4 @@ myservice.example.com
 
  In the following figure, the owner of VPC B is the service provider, and has configured a Network Load Balancer with targets in two different Availability Zones. The service consumer (VPC A) has created interface endpoints in the same two Availability Zones in their Amazon VPC. Requests to the service from instances in VPC A can use either interface endpoint. The DNS name resolution of the Endpoint Specific Regional DNS Hostname will alternate between the two IP addresses. NLB attribute: Client routing policy (DNS Record) will not influence the DNS name resolution of the Endpoint Specific Regional DNS Hostname.
 
-![A diagram depicting round-robin DNS load balancing.](http://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/images/round-robin-dns.jpeg)
+![A diagram depicting round-robin DNS load balancing.](https://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/images/round-robin-dns.jpeg)

@@ -41,7 +41,7 @@ For specific permissions that define allowable API operations on remote resource
 1. In the **AWS Explorer**, right-click **Resources** and choose **Show Resources**.
 
    A pane displays a list of resource types that are available for selection.
-![Selecting resources to configure.](http://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/show-resources.png)
+![Selecting resources to configure.](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/show-resources.png)
 
 1. In the selection pane, select the resource types to add to the **AWS Explorer** and press **Return** or choose **OK** to confirm.
 
@@ -62,7 +62,7 @@ If you've already added a resource type to the **AWS Explorer** and then clear t
    + **Delete**: Delete the resource by confirming the deletion in a dialog box that is displayed. (Deleting resources is currently an [experimental feature](#experimental-feature-warning) in this version of AWS Toolkit for Visual Studio Code.)
 **Warning**
 If you delete a resource, any AWS CloudFormation stack that uses that resource will fail to update. To fix this update failure, you need to either recreate the resource or remove the reference to it in the stack's CloudFormation template. For more information, see this [Knowledge Center article](https://aws.amazon.com/premiumsupport/knowledge-center/failing-stack-updates-deleted/).
-![Menu options for a selected resource.](http://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/resource-menu-options-updated.png)
+![Menu options for a selected resource.](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/resource-menu-options-updated.png)
 
 ## Creating and editing resources
 <a name="create-resources"></a>
@@ -79,12 +79,12 @@ For example, a resource that belongs to the `AWS Toolkit:SageMaker::UserProfile`
 1. After the resource type is added under **Resources**, choose the plus ("\+") icon to open the template file in a new editor.
 
    Alternatively, you can right-click the resource type's name and choose **Create**. You can also access information about how to model the resource by choosing **View Documentation**.
-![Menu options for a selected resource type.](http://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/resource-create.png)
+![Menu options for a selected resource type.](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/resource-create.png)
 
 1. In the editor, start to define properties that make up the resource template. The autocomplete feature suggests property names that conform with your template's schema. When you hover over a property type, a pane displays a description of what it's used for. For detailed information about the schema, choose **View Documentation**.
 
    Any text that doesn't conform to the resource schema is indicated by a wavy red underline.
-![Editor displaying the template that describes a resource type.](http://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/resource-template.png)
+![Editor displaying the template that describes a resource type.](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/resource-template.png)
 
 1. After you finish declaring your resource, choose the **Save** icon to validate your template and save the resource to the remote AWS Cloud.
 

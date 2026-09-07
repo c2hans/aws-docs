@@ -33,7 +33,7 @@ This pattern outlines steps for migrating an on-premises Microsoft SQL Server so
 
 **Data migration architecture**
 
-![Migrating a SQL Server database to Amazon Redshift by using AWS SCT data extraction agents.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6975f67a-0705-47b4-a1b8-90aaa2597a04/images/dbff958b-7601-442e-9e23-4d07edd0ccfd.png)
+![Migrating a SQL Server database to Amazon Redshift by using AWS SCT data extraction agents.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6975f67a-0705-47b4-a1b8-90aaa2597a04/images/dbff958b-7601-442e-9e23-4d07edd0ccfd.png)
 
 ## Tools
 <a name="migrate-an-on-premises-microsoft-sql-server-database-to-amazon-redshift-using-aws-sct-data-extraction-agents-tools"></a>

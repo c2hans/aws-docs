@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/govern-arch
 
 This layer consists of existing business systems, whether off-the-shelf software, custom-built applications, or industry-specific platforms, that integrate bidirectionally with agentic AI capabilities. These applications are not inherently agentic but can consume agentic AI services or expose their functions as tools that agents can invoke to perform business operations.
 
-![Architecture non-generative AI solutions](http://docs.aws.amazon.com/prescriptive-guidance/latest/govern-architect-agentic-ai/images/guide-img/5961cc11-38d0-411b-a5ab-a75afdc073b4/images/00f684ba-dd79-4d10-855f-9f71faf74185.png)
+![Architecture non-generative AI solutions](https://docs.aws.amazon.com/prescriptive-guidance/latest/govern-architect-agentic-ai/images/guide-img/5961cc11-38d0-411b-a5ab-a75afdc073b4/images/00f684ba-dd79-4d10-855f-9f71faf74185.png)
 
 ## Purpose and characteristics
 <a name="purpose-and-characteristics"></a>

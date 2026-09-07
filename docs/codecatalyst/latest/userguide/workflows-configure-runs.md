@@ -38,7 +38,7 @@ Here's how things will transpire as the workflow runs finish processing:
 
 **Figure 1**: A workflow configured in 'queued run mode'
 
-![A workflow configured in 'queued run mode'](http://docs.aws.amazon.com/codecatalyst/latest/userguide/images/flows/RunMode-Queued.png)
+![A workflow configured in 'queued run mode'](https://docs.aws.amazon.com/codecatalyst/latest/userguide/images/flows/RunMode-Queued.png)
 
 Use queued run mode if:
 + **You want to keep a one-to-one relationship between features and runs – these features may be grouped when using superseded mode**. For example, when you merge feature 1 in commit 1, run 1 starts, and when you merge feature 2 in commit 2, run 2 starts, and so on. If you were to use superseded mode instead of queued mode, your features (and commits) will be grouped together in the run that supersedes the others.

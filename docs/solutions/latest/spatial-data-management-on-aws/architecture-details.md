@@ -10,7 +10,7 @@ This section provides detailed technical information about the Spatial Data Mana
 ## Architecture Components and Flow
 <a name="architecture-components-and-flow"></a>
 
-![Detailed architecture diagram showing the complete Spatial Data Management on AWS architecture with numbered data flows](http://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/architecture-diagram.svg)
+![Detailed architecture diagram showing the complete Spatial Data Management on AWS architecture with numbered data flows](https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/architecture-diagram.svg)
 
 The diagram shows the complete Spatial Data Management on AWS architecture with numbered data flows indicating the sequence of operations across different layers.
 

@@ -6,7 +6,7 @@ Version 4 (V4) of the AWS SDK for .NET has been released\!
 
 For information about breaking changes and migrating your applications, see the [migration topic](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html).
 
- [![Orange button with text "Click here for details".](http://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
+ [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
 # Single sign-on with the AWS SDK for .NET
 <a name="sso"></a>
@@ -152,7 +152,7 @@ static AWSCredentials LoadSsoCredentials()
 
 If an appropriate SSO token isn't available, the default browser window is launched and the appropriate sign-in page is opened. For example, if you’re using IAM Identity Center as the **Identity source**, the user sees a sign-in page similar to the following:
 
-![AWS IAM Identity Center sign-in page.](http://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/SSO-login.png)
+![AWS IAM Identity Center sign-in page.](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/SSO-login.png)
 
 **Note**
 The text string that you provide for `SSOAWSCredentials.Options.ClientName` can't have spaces. If the string does have spaces, you'll get a *runtime* exception.

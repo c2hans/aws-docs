@@ -20,7 +20,7 @@ Migrating 300 or more servers is considered a large migration. The people, proce
 
 The following figure shows the other documents in this series. Review the strategy first, then the guides, and then proceed to the playbooks. To access the complete series, see [Large migrations to the AWS Cloud](https://aws.amazon.com/prescriptive-guidance/large-migrations/).
 
-![The structure of the AWS large migration document series](http://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-migration-playbook/images/guide-img/0d30bbed-378d-4378-8100-0dcb44a0211f/images/87e66cc2-2cff-4e58-a503-c32149e3e6df.png)
+![The structure of the AWS large migration document series](https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-migration-playbook/images/guide-img/0d30bbed-378d-4378-8100-0dcb44a0211f/images/87e66cc2-2cff-4e58-a503-c32149e3e6df.png)
 
 ## About the runbooks, tools, and templates
 <a name="about-components"></a>

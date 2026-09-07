@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/monitoring-river-leve
  The primary purpose of the Lambda decoder function is to intercept the incoming LoRaWAN bytes encoded in base64, and to convert them into a data format that is meaningful to downstream applications. In this solution, the Lambda function performs this conversion, reconstructs the river level reading from each of the respective bytes, and publishes this datapoint along with a timestamp as a JSON document. This data is published to the chosen topic in AWS IoT Core using MQTT, from where any number of rules and actions can be configured to forward the data to the required AWS service.
 
 1.  First, create an AWS rule for the destination under **Act > Rules**.
-![Screen showing creating an AWS IoT rule](http://docs.aws.amazon.com/whitepapers/latest/monitoring-river-levels-using-lorawan/images/creating-iot-core-rule.png)
+![Screen showing creating an AWS IoT rule](https://docs.aws.amazon.com/whitepapers/latest/monitoring-river-levels-using-lorawan/images/creating-iot-core-rule.png)
 
     This rule has an action to invoke the Lambda function, called (for the purpose of this paper) `myLoRaDecoderFunction`.
 
@@ -62,7 +62,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/monitoring-river-leve
  AWS account number `{{111111111111}}` is used for demonstration purposes only. This value must be replaced with the account number of the actual AWS account in use. It is also necessary to modify the Region specified in this example policy, if the deployment is not in `{{eu-west-1}}`.
 
     By monitoring this topic using the AWS IoT console under **Test**, you can see the expected data being published in JSON format.
-![Screen showing confirming the receipt of decoded data](http://docs.aws.amazon.com/whitepapers/latest/monitoring-river-levels-using-lorawan/images/confirm-receipt-of-decoded-data.png)
+![Screen showing confirming the receipt of decoded data](https://docs.aws.amazon.com/whitepapers/latest/monitoring-river-levels-using-lorawan/images/confirm-receipt-of-decoded-data.png)
 
  From here, you can configure rules to implement any number of out-of-the-box AWS IoT actions to forward this data to the intended AWS service.
 

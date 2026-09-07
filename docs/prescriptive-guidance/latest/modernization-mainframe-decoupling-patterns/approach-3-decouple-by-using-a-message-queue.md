@@ -18,7 +18,7 @@ We recommend that you use this approach when:
 
 When applications are too big to be grouped into the same migration wave, you can migrate them in multiple waves, as shown in the following diagram, and maintain service continuity during migration. With this approach, you can modernize your applications in phases without bundling them together.
 
-![Applications A and B grouped in the save wave.](http://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-mainframe-decoupling-patterns/images/guide-img/a6175648-8ce0-4ab7-9a68-cebf41995535/images/eb1ad205-be1b-4f0a-ac99-f6235df4eb0d.png)
+![Applications A and B grouped in the save wave.](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-mainframe-decoupling-patterns/images/guide-img/a6175648-8ce0-4ab7-9a68-cebf41995535/images/eb1ad205-be1b-4f0a-ac99-f6235df4eb0d.png)
 
  If you're using this approach, follow these steps:
 

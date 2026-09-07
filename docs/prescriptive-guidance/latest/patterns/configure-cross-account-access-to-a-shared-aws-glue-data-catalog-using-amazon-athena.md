@@ -37,7 +37,7 @@ This pattern works with [Athena engine version 2](https://docs.aws.amazon.com/at
 
 The following diagram shows an architecture that uses IAM permissions to share data in an S3 bucket in one AWS account (data account) with another AWS account (consumer account) through the AWS Glue Data Catalog.
 
-![Sharing a dataset in an S3 bucket between a data account and a consumer account by using the AWS Glue Data Catalog.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/4ee1d6f5-f8e1-4acb-8a9c-7601c832a87d/images/e73a2b47-c0b1-49f1-be66-9c563c11c9f9.png)
+![Sharing a dataset in an S3 bucket between a data account and a consumer account by using the AWS Glue Data Catalog.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/4ee1d6f5-f8e1-4acb-8a9c-7601c832a87d/images/e73a2b47-c0b1-49f1-be66-9c563c11c9f9.png)
 
 The diagram shows the following workflow:
 

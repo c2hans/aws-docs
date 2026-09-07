@@ -46,7 +46,7 @@ The pattern uses an AWS CloudFormation template to deploy a security control tha
 
 **Target architecture**
 
-![Workflow for ensuring that Amazon EMR logging to Amazon S3 is enabled at launch.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/079af32e-0418-4bb2-bc20-c67ea5ac3b6e/images/3ba125cb-018a-4ace-838f-8c20992ecc20.png)
+![Workflow for ensuring that Amazon EMR logging to Amazon S3 is enabled at launch.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/079af32e-0418-4bb2-bc20-c67ea5ac3b6e/images/3ba125cb-018a-4ace-838f-8c20992ecc20.png)
 
 **Automation and scale**
 + If you are using AWS Organizations, you can use [AWS CloudFormation StackSets](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html) to deploy this template in multiple accounts that you want to monitor.

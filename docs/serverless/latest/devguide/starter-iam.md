@@ -42,7 +42,7 @@ To get started with AWS, you need an AWS account. For information about creating
 
  A common confusion arises when signing in to AWS. Remember, for day to day activities, you should **not** be signing in as the root user.
 
- ![aws-signin.png](http://docs.aws.amazon.com/serverless/latest/devguide/images/s_iam/aws-signin.png)
+ ![aws-signin.png](https://docs.aws.amazon.com/serverless/latest/devguide/images/s_iam/aws-signin.png)
 
 ### Principals
 <a name="iam_principals"></a>
@@ -110,7 +110,7 @@ arn:partition:service:region:account-id:resource-type:resource-id
 
 When you set permissions, you attach a JSON policy to a principal. In the following example, an AWS managed policy named **AWSLambdaInvocation-DynamoDB** will be attached to a role that is related to a Lambda function:
 
- ![Screen shot of management console showing attaching a managed policy to a role.](http://docs.aws.amazon.com/serverless/latest/devguide/images/s_iam/iam-attach-policy.png)
+ ![Screen shot of management console showing attaching a managed policy to a role.](https://docs.aws.amazon.com/serverless/latest/devguide/images/s_iam/iam-attach-policy.png)
 
 You can also create custom policies with **statements **which *allow *or *deny *a list of **actions **to **resources**, with optional **conditions**.
 
@@ -169,7 +169,7 @@ For IAM principals, requests to AWS are implicitly ***denied***. This means that
 
 Next, if the principal does have an attached policy, and there is an explicit allow, the implicit deny is overridden. However, an explicit deny in any policy overrides any allows. In complex situations, there can be additional steps, but the following diagram represents this simplified model of how IAM evaluates identity based policies:
 
- ![Block diagram of policy evaluation workflow as explained in the text.](http://docs.aws.amazon.com/serverless/latest/devguide/images/s_iam/iam-policy-evaluation.png)
+ ![Block diagram of policy evaluation workflow as explained in the text.](https://docs.aws.amazon.com/serverless/latest/devguide/images/s_iam/iam-policy-evaluation.png)
 
 **Warning**
 Identity based policies do not affect the **root user**, so actions taken by the **root user** account are implicitly *****allowed*****.

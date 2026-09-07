@@ -46,7 +46,7 @@ Many customers use intermediate staging resources, such as on-premises Linux, Un
 
 The following diagram shows a reference architecture for using Transfer Family with SFTP to upload mainframe files directly to an S3 bucket.
 
-![Using Transfer Family with SFTP to upload mainframe files directly to an S3 bucket](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/1f4fa1fd-b681-41bc-81d8-d556426b14c2/images/110491d5-b58d-4451-8de9-e742756bb192.png)
+![Using Transfer Family with SFTP to upload mainframe files directly to an S3 bucket](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/1f4fa1fd-b681-41bc-81d8-d556426b14c2/images/110491d5-b58d-4451-8de9-e742756bb192.png)
 
 The diagram shows the following workflow:
 

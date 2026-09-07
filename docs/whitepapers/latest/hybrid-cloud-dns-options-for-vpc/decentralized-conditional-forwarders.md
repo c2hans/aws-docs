@@ -29,7 +29,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-dns-opti
 
  The following diagram shows how this solution functions in a single VPC:
 
-![A diagram depciting distributed forwarders in a single VPC.](http://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-dns-options-for-vpc/images/distributed-forwarders.jpeg)
+![A diagram depciting distributed forwarders in a single VPC.](https://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-dns-options-for-vpc/images/distributed-forwarders.jpeg)
 
 1.  Each instance in the VPC runs its own conditional forwarder (unbound). The resolv.conf has a single DNS Server entry pointing to `127.0.0.1`. A straightforward approach for modifying resolv.conf would be creating a DHCP options set that has `127.0.0.1` as the `domain-name-server` value. You may alternatively choose to overwrite any existing DHCP options settings using the supersede option in the `dhclient.conf`.
 
@@ -50,7 +50,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-dns-opti
 
  For this option, you localize instances in an Availability Zone (AZ) to forward queries to conditional forwarders only in the same Availability Zone of the Amazon VPC. For reasons discussed in the [*Linux Resolver*](key-concepts.md#linux-resolver) section, each instance can have up to three DNS servers in their `resolv.conf`, as shown in the following diagram:
 
-![A diagram depicting zonal forwarders with supersede option.](http://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-dns-options-for-vpc/images/zonal-forwarders.png)
+![A diagram depicting zonal forwarders with supersede option.](https://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-dns-options-for-vpc/images/zonal-forwarders.png)
 
 +  Instances in Availability Zone A are configured using the supersede option, which uses a list of DNS forwarders that are local to that Availability Zone. To avoid burdening any specific forwarder in the Availability Zone, randomize the order for the DNS forwarders across instances in the Availability Zone.
 

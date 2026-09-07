@@ -11,4 +11,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-b
 
  These features provide strong isolation of Availability Zones from each other, which we refer to as Availability Zone Independence (AZI). The logical construct of Availability Zones and their connectivity to the internet is depicted in the following figure.
 
-![This image shows how Availability Zones consist of one or more physical data centers that are redundantly connected to each other and the internet](http://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-boundaries/images/availability-zones.png)
+![This image shows how Availability Zones consist of one or more physical data centers that are redundantly connected to each other and the internet](https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-boundaries/images/availability-zones.png)

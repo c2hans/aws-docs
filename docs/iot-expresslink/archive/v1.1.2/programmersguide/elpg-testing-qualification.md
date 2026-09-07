@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/archive/v1.1.2/programme
 
 The ExpressLink testing and qualification process requires a Raspberry Pi 4 single board computer and a hardware harness providing the following connections:
 
-<a name="elpg-figure7"></a>![Figure 7 - RaspberryPi 4 I/O connections](http://docs.aws.amazon.com/iot-expresslink/archive/v1.1.2/programmersguide/images/image7.png)
+<a name="elpg-figure7"></a>![Figure 7 - RaspberryPi 4 I/O connections](https://docs.aws.amazon.com/iot-expresslink/archive/v1.1.2/programmersguide/images/image7.png)
 
 The ExpressLink candidate will be attached to the GPIO header of the PI using the following pins.
 

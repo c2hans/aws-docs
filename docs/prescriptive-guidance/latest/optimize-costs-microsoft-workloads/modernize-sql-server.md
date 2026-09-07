@@ -117,7 +117,7 @@ Babelfish for Aurora PostgreSQL extends Aurora PostgreSQL with the ability to ac
 
 The following diagram illustrates how an application using T-SQL connects to the default port 1433 in SQL Server and uses the Babelfish translator to communicate with the Aurora PostgreSQL database, while an application using PL/pgSQL can directly and simultaneously connect to the Aurora PostgreSQL database using the default port 5432 in Aurora PostgreSQL.
 
-![Babelfish for Aurora PostgreSQL](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/25476077-5267-4265-bce6-adbe528d9e5b.png)
+![Babelfish for Aurora PostgreSQL](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/25476077-5267-4265-bce6-adbe528d9e5b.png)
 
 Babelfish doesn't support certain SQL Server T-SQL features. For this reason, Amazon provides assessment tools to do a line-by-line analysis of your SQL statements and determine if any of them are unsupported by Babelfish.
 

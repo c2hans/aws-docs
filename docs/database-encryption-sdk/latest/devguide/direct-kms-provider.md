@@ -127,7 +127,7 @@ kms_cmp = AwsKmsCryptographicMaterialsProvider(key_id=us_west_key)
 
 The Direct KMS Provider returns encryption and signing keys that are protected by an AWS KMS key that you specify, as shown in the following diagram.
 
-![The input, processing, and output of the Direct KMS Provider in the DynamoDB Encryption Client](http://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/images/directKMS.png)
+![The input, processing, and output of the Direct KMS Provider in the DynamoDB Encryption Client](https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/images/directKMS.png)
 
 + To generate encryption materials, the Direct KMS Provider asks AWS KMS to [generate a unique data key](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey.html) for each item using an AWS KMS key that you specify. It derives encryption and signing keys for the item from the plaintext copy of the [data key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#data-keys), and then returns the encryption and signing keys, along with the encrypted data key, which is stored in the [material description attribute](DDBEC-legacy-concepts.md#legacy-material-description) of the item.
 

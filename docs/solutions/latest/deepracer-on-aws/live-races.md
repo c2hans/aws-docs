@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/live-r
 # Live races
 <a name="live-races"></a>
 
-![Live races](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_live_race_overview.png)
+![Live races](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_live_race_overview.png)
 
 When you want everyone in the room to watch each model race in real-time — whether in a classroom, workshop, or competition — community races fall short. They evaluate models asynchronously as submissions arrive, so there is no shared moment when the crowd watches together and a result is declared live. Live races solve this: a facilitator controls the pace, all participants watch the same video stream simultaneously, and the leaderboard updates in real-time as each evaluation completes.
 
@@ -18,7 +18,7 @@ Live races appear alongside community races on the **Races** page, distinguished
 
 Racers enter a live race by submitting a [trained model](train-and-evaluate-models.md), using the same workflow as community races. From the **Races** page, click on the "See race details" button from the live race card to view its details, then click **Enter race**. Select a model from the list of eligible trained models and confirm your submission.
 
-![Live race details page](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_live_race_details.png)
+![Live race details page](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_live_race_details.png)
 
 Whether you can submit a model depends on the submission period, which is controlled by the facilitator. If submissions are closed, the **Enter race** button will be disabled and a message will indicate that submissions are not currently being accepted. Models that have already been submitted to the race’s queue cannot be submitted again.
 
@@ -27,7 +27,7 @@ Whether you can submit a model depends on the submission period, which is contro
 
 Once a live race is in progress, click the **Watch live** button on the race details page to open the live race interface. This view is available to all users — you do not need to be a facilitator or have submitted a model to watch.
 
-![Live race participant view](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_live_race_participant.png)
+![Live race participant view](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_live_race_participant.png)
 
 The live race interface includes:
 +  **Video panel** — a real-time video stream of the vehicle currently being evaluated on the track. When no evaluation is running, the panel displays a status message (for example, "Waiting for launch" or "All evaluations complete").
@@ -51,7 +51,7 @@ Broadcast mode is a full-screen spectator view optimized for projecting onto a l
 + A progress bar
 + Participant notifications and winner overlay
 
-![Live race broadcast mode](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_live_race_broadcast.png)
+![Live race broadcast mode](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_live_race_broadcast.png)
 
 In broadcast mode, the mouse cursor automatically hides after 3 seconds of inactivity to keep the projected display clean.
 
@@ -63,7 +63,7 @@ Only [admins and race facilitators](types-of-users.md) can facilitate live races
 
 Facilitators manage the flow of a live race from the same live race interface that participants use, but with additional controls visible in the page header and queue panel. The facilitator view includes a **Launch** button, an **Actions** dropdown menu, and management controls within the queue panel.
 
-![Live race facilitator view](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_live_race_facilitator.png)
+![Live race facilitator view](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_live_race_facilitator.png)
 
 ### Launching evaluations
 <a name="launching-evaluations"></a>

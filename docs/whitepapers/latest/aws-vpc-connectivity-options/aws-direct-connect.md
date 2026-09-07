@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-
 +  **Public virtual interface** - Establish connectivity between AWS public endpoints and your data center, office, or colocation environment.
 +  **Transit virtual interface** - Establish private connectivity between AWS Transit Gateway and your data center, office, or colocation environment. This connectivity option is covered in the section [AWS Direct Connect \+ AWS Transit Gateway](aws-direct-connect-aws-transit-gateway.md).
 +  **Private virtual interface** - Establish private connectivity between Amazon VPC resources and your data center, office, or colocation environment. The use of private VIFs is shown in the following figure.
-![Diagram showing AWS Direct Connect.](http://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/aws-direct-connect.png)
+![Diagram showing AWS Direct Connect.](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/aws-direct-connect.png)
 
  You can establish connectivity to the AWS backbone using AWS Direct Connect by establishing a cross-connect to AWS devices in a [Direct Connect location](https://aws.amazon.com/directconnect/locations/). You can access any AWS Region from any of our Direct Connect locations (except China). If you don’t have equipment at a location, you can choose from an ecosystem of [WAN service providers](https://aws.amazon.com/directconnect/partners/) for integrating your AWS Direct Connect endpoint in an AWS Direct Connect location with your remote networks.
 
@@ -21,13 +21,13 @@ With AWS Direct Connect, you have two types of connection:
 
  When discussing high availability in AWS Direct Connect, we recommend using additional Direct Connect connections. The [Direct Connect Resiliency Toolkit](https://docs.aws.amazon.com/directconnect/latest/UserGuide/resiliency_toolkit.html) offers guidance in building highly resilient network connections between AWS and your data center, office, or colocation environment. The following figure shows you an example of a high-resiliency connectivity option, with two Direct Connect connections terminated in two different Direct Connect locations.
 
-![A diagram example that shows a high-resiliency connectivity option.](http://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/redundant-aws-direct-connect.png)
+![A diagram example that shows a high-resiliency connectivity option.](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/redundant-aws-direct-connect.png)
 
  AWS Direct Connect is not encrypted by default. For dedicated connections of 10 or 100 Gbps, you can use MAC security (MACsec) as an encryption option. For connections of 1 Gbps or less, you can create VPN tunnels on top of the connection – this option is covered in [AWS Direct Connect \+ AWS Site-to-Site VPN](aws-direct-connect-site-to-site-vpn.md) and [AWS Direct Connect \+ AWS Transit Gateway \+ AWS Site-to-Site VPN](aws-direct-connect-aws-transit-gateway-vpn.md) sections.
 
  One important resource in AWS Direct Connect is the Direct Connect gateway, which is a globally available resource to enable connections to multiple Amazon VPCs or Transit Gateways across different Regions or AWS accounts. This resource also allows you to connect to any participating VPC or Transit Gateway from one private VIF or transit VIF, reducing AWS Direct Connect management, as shown in the following figure.
 
-![Diagram that shows connecting to any participating VPC or Transit Gateway from one private VIF or transit VIF.](http://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/aws-direct-connect-gateway.png)
+![Diagram that shows connecting to any participating VPC or Transit Gateway from one private VIF or transit VIF.](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/aws-direct-connect-gateway.png)
 
 Regarding IP addressing, AWS Direct Connect virtual interfaces support both IPv4 and IPv6 BGP sessions for dual-stack operation.
 +  Private and transit VIFs IPv4 configuration make use of either AWS-generated IPv4 addresses or addresses configured by you. For public VIFs IPv4 BGP peering, you must specify an unique public /31 IPv4 CIDR that you own (or submit a request to have a CIDR block assigned).

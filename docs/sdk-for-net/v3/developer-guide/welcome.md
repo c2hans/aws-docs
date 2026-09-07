@@ -11,7 +11,7 @@ We recommend that you migrate to [AWS SDK for .NET V4](https://docs.aws.amazon.c
 
 The AWS SDK for .NET makes it easier to build .NET applications that tap into cost-effective, scalable, and reliable AWS services such as Amazon Simple Storage Service (Amazon S3) and Amazon Elastic Compute Cloud (Amazon EC2). The SDK simplifies the use of AWS services by providing a set of libraries that are consistent and familiar for .NET developers.
 
-![Overview of the AWS SDK for .NET](http://docs.aws.amazon.com/sdk-for-net/v3/developer-guide/images/overview.png)
+![Overview of the AWS SDK for .NET](https://docs.aws.amazon.com/sdk-for-net/v3/developer-guide/images/overview.png)
 
 (**OK, got it\!** I'm ready to [set up](net-dg-config.md) and [take a quick tour](quick-start.md).)
 

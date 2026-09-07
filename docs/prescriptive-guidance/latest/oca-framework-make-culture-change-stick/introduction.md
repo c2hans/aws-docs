@@ -15,7 +15,7 @@ The AWS Organizational Change Acceleration (OCA) 6-Point Framework is intended t
 
 The framework's six points align with an agile sprint cadence, from program initiation through sustainable long-term change. The following diagram shows these six points and their subpoints.
 
-![Make Culture Change Stick phase of the AWS OCA Framework.](http://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-make-culture-change-stick/images/guide-img/ca32f4a8-9a89-464f-aef6-558c45a74956/images/841a7210-5819-4d37-92a8-142e01f5315d.png)
+![Make Culture Change Stick phase of the AWS OCA Framework.](https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-make-culture-change-stick/images/guide-img/ca32f4a8-9a89-464f-aef6-558c45a74956/images/841a7210-5819-4d37-92a8-142e01f5315d.png)
 
 The sixth point, *Make Culture Change Stick*, takes the work of the OCA Framework and builds mechanisms to assess and sustain cloud adoption and culture change over time. In this phase, you create feedback loops for repeatable patterns and lessons learned, actively manage adoption, and create a post-implementation and sustainability plan so that the OCA team can be disbanded, and the changes, behaviors, and culture that have been created can be managed operationally and passively instead of actively. *Make Culture Change Stick *contains three subpoints:
 + [6.1 Feedback loops](feedback.md). Establish mechanisms to support two-way information sharing, involve key stakeholders throughout the project, and collect information to monitor communication effectiveness.

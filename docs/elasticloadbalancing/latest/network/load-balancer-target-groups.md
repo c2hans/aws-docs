@@ -102,7 +102,7 @@ For more information about allowing traffic to your instances, see [Target secur
 
 On premises resources linked through Direct Connect or a Site-to-Site VPN connection can serve as a target, when the target type is `ip`.
 
-![Connect a Network Load Balancer with on-premises servers using AWS Direct Connect or AWS Site-to-Site VPN.](http://docs.aws.amazon.com/elasticloadbalancing/latest/network/images/nlb-on-prem-resources.png)
+![Connect a Network Load Balancer with on-premises servers using AWS Direct Connect or AWS Site-to-Site VPN.](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/images/nlb-on-prem-resources.png)
 
 When using on premises resources, the IP addresses of these targets must still come from one of the following CIDR blocks:
 + 10.0.0.0/8 ([RFC 1918](https://tools.ietf.org/html/rfc1918))
@@ -243,7 +243,7 @@ The following example demonstrates how target group health settings are applied.
   + Routing failover - 50%
 + Six targets fail in Availability Zone B
 
-![A load balancer enabled for two zones. AZ A has 10 healthy targets and AZ B has 4 healthy targets and 6 unhealthy targets.](http://docs.aws.amazon.com/elasticloadbalancing/latest/network/images/tg-health-example.png)
+![A load balancer enabled for two zones. AZ A has 10 healthy targets and AZ B has 4 healthy targets and 6 unhealthy targets.](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/images/tg-health-example.png)
 
 **If cross-zone load balancing is off**
 + The load balancer node in each Availability Zone can send traffic only to the 10 targets in its Availability Zone.

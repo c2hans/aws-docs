@@ -17,7 +17,7 @@ To support data science workflows from experimentation to ML model productioniza
 
 Amazon S3 is the primary storage for building an ML platform on AWS. The datasets needed for machine learning workflow should be ingested into S3 for easy and secure access from other data processing and machine learning services. AWS recommends that you build a data lake on S3 to centrally manage data storage, ETL, data catalog, and security. You can consider the [AWS Lake Formation](https://aws.amazon.com/lake-formation/?whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc) service to build out the data lake architecture. The following figure shows a high-level data management architecture for machine learning.
 
-![A diagram showing data management architecture for analytics and machine learning.](http://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-8.png)
+![A diagram showing data management architecture for analytics and machine learning.](https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-8.png)
 
 *Data management architecture for analytics and machine learning*
 

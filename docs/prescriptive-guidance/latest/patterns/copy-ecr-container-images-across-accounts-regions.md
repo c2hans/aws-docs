@@ -44,7 +44,7 @@ The pattern has four main components:
 
 **Target architecture**
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/787185e7-664b-4ed8-b30f-1d9507f13377/images/cc7d9823-3dc8-4090-a203-910b1ac4447c.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/787185e7-664b-4ed8-b30f-1d9507f13377/images/cc7d9823-3dc8-4090-a203-910b1ac4447c.png)
 
 **Step Functions workflow**
 
@@ -55,7 +55,7 @@ The Step Functions state machine orchestrates the following, as shown in the fol
 + `CopyRepositories`** –** Handles parallel copying of repositories
 + `NotifySuccess`/`NotifyFailure`** –** Amazon Simple Notification Service (Amazon SNS) notifications based on execution outcome
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/787185e7-664b-4ed8-b30f-1d9507f13377/images/1b740084-ba2b-4956-aa12-ebbf52be5e7d.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/787185e7-664b-4ed8-b30f-1d9507f13377/images/1b740084-ba2b-4956-aa12-ebbf52be5e7d.png)
 
 ## Tools
 <a name="copy-ecr-container-images-across-accounts-regions-tools"></a>

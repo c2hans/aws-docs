@@ -28,7 +28,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployment
 
  Schema modifications in the second approach are often deletive. You can remove unneeded fields, entities, and relationships, or merge and consolidate them. After this removal, the earlier application version is no longer operational.
 
-![Workflow showing schema additions before code deployment, then schema deletions after.](http://docs.aws.amazon.com/whitepapers/latest/blue-green-deployments/images/code-deployment.png)
+![Workflow showing schema additions before code deployment, then schema deletions after.](https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployments/images/code-deployment.png)
 
 * Decoupled schema and code changes *
 

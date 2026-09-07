@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-
 
 The verify auth challenge trigger is a Lambda function that compares a user's provided response to a known answer. This function tells your user pool whether the user answered the challenge correctly. When the verify auth challenge trigger responds with an `answerCorrect` of `true`, the authentication sequence can continue.
 
-![Challenge Lambda triggers](http://docs.aws.amazon.com/cognito/latest/developerguide/images/lambda-challenges3.png)
+![Challenge Lambda triggers](https://docs.aws.amazon.com/cognito/latest/developerguide/images/lambda-challenges3.png)
 
 **Verify auth challenge response**
 Amazon Cognito invokes this trigger to verify if the response from the user for a custom Auth Challenge is valid or not. It is part of a user pool [custom authentication flow](https://docs.aws.amazon.com/cognito/latest/developerguide/amazon-cognito-user-pools-authentication-flow.html#amazon-cognito-user-pools-custom-authentication-flow).

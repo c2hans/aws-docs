@@ -16,7 +16,7 @@ You can read high level explanations of the core services here, and an example o
 
 The following diagram shows AWS services commonly used together to build serverless applications:
 
- ![Diagram of core services, grouped by category, and described in the following text.](http://docs.aws.amazon.com/serverless/latest/devguide/images/core-services.png)
+ ![Diagram of core services, grouped by category, and described in the following text.](https://docs.aws.amazon.com/serverless/latest/devguide/images/core-services.png)
 
 ### Networking & content delivery
 <a name="core_networking-content-delivery"></a>
@@ -92,4 +92,4 @@ Before returning the data, bundled into a new event, back to API Gateway, the fu
 
 The function finally wraps up the JSON weather data into a new event and sends it back to API gateway. Afterward, the function continues to handle hundreds of additional requests. Request from users slow down after 2AM, so after some time the Lambda service will tear down the function execution environment to conserve resources. As a Customer, you will only be charged for function usage.
 
- ![Sketch of a weather microservice,showing how a GET request for /weather/98109 connects through Route 53 to an AWS Region containing an API Gateway, Amazon Cognito, Lambda, CloudWatch, Amazon SQS, DynamoDB, Amazon Elastic Inference, and Amazon SNS.](http://docs.aws.amazon.com/serverless/latest/devguide/images/weather-microservice.png)
+ ![Sketch of a weather microservice,showing how a GET request for /weather/98109 connects through Route 53 to an AWS Region containing an API Gateway, Amazon Cognito, Lambda, CloudWatch, Amazon SQS, DynamoDB, Amazon Elastic Inference, and Amazon SNS.](https://docs.aws.amazon.com/serverless/latest/devguide/images/weather-microservice.png)

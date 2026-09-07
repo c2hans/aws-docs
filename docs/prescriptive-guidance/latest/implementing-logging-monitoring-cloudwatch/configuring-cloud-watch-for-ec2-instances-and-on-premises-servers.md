@@ -20,7 +20,7 @@ CloudWatch captures metrics and logs for Amazon EC2 and on-premises servers by u
 
 You can combine multiple CloudWatch agent configurations to form a composite CloudWatch agent configuration. One recommended approach is to define and divide configurations for your logs and metrics at the system and application level. The following diagram illustrates how multiple CloudWatch configuration file types for different requirements can be combined to form a composite CloudWatch configuration.
 
-![Configurations for different requirements are combined to form a composite CloudWatch configuration.](http://docs.aws.amazon.com/prescriptive-guidance/latest/implementing-logging-monitoring-cloudwatch/images/guide-img/b9e7cf06-b902-4bab-ad2d-f312917302bd/images/4e8f9e05-d18d-4af1-8d9f-a9f78f5dc59c.png)
+![Configurations for different requirements are combined to form a composite CloudWatch configuration.](https://docs.aws.amazon.com/prescriptive-guidance/latest/implementing-logging-monitoring-cloudwatch/images/guide-img/b9e7cf06-b902-4bab-ad2d-f312917302bd/images/4e8f9e05-d18d-4af1-8d9f-a9f78f5dc59c.png)
 
 These logs and metrics can also be further classified and configured for specific environments or requirements. For example, you could define a smaller subset of logs and metrics with lower precision for unregulated development environments, and a larger, more complete set with higher precision for regulated production environments.
 
@@ -37,7 +37,7 @@ The default log stream name is the same as the EC2 instance ID and the default l
 
 The following diagram shows a CloudWatch agent configuration for capturing logs. The log group is defined by the captured log files and contains separate log streams for each EC2 instance because the {instance\_id} variable is used for the log stream name and EC2 instance IDs are unique.
 
-![A CloudWatch agent configuration for capturing logs.](http://docs.aws.amazon.com/prescriptive-guidance/latest/implementing-logging-monitoring-cloudwatch/images/guide-img/b9e7cf06-b902-4bab-ad2d-f312917302bd/images/455e7c38-2684-4674-a9ea-81c73a9edaf9.png)
+![A CloudWatch agent configuration for capturing logs.](https://docs.aws.amazon.com/prescriptive-guidance/latest/implementing-logging-monitoring-cloudwatch/images/guide-img/b9e7cf06-b902-4bab-ad2d-f312917302bd/images/455e7c38-2684-4674-a9ea-81c73a9edaf9.png)
 
 Log groups define the retention, tags, security, metric filters, and search scope for the log streams that they contain. The default grouping behavior based on the log file name helps you search, create metrics, and alarm on data that is specific to a log file across EC2 instances in an account and Region. You should evaluate whether further log group refinement is required. For example, your account might be shared by multiple business units and have different technical or operations owners. This means that you must further refine the log group name to reflect the separation and ownership. This approach allows you to concentrate your analysis and troubleshooting on the relevant EC2 instance.
 
@@ -78,4 +78,4 @@ For example, you could aggregate the memory used against the InstanceType dimens
 
 The following diagram shows a sample CloudWatch metrics configuration that uses a custom namespace, added dimensions, and aggregation by InstanceType.
 
-![Example CloudWatch metrics configuration with CloudWatch agent.](http://docs.aws.amazon.com/prescriptive-guidance/latest/implementing-logging-monitoring-cloudwatch/images/guide-img/b9e7cf06-b902-4bab-ad2d-f312917302bd/images/cf29b866-3341-414c-b3fd-14ae5e4982df.png)
+![Example CloudWatch metrics configuration with CloudWatch agent.](https://docs.aws.amazon.com/prescriptive-guidance/latest/implementing-logging-monitoring-cloudwatch/images/guide-img/b9e7cf06-b902-4bab-ad2d-f312917302bd/images/cf29b866-3341-414c-b3fd-14ae5e4982df.png)

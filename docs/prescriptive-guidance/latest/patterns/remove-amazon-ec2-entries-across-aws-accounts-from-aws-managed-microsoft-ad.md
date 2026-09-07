@@ -54,7 +54,7 @@ When you use this pattern, you can get the following benefits:
 
 The following diagram displays the high-level architecture of the solution.
 
-![Process to use Lambda automation to remove EC2 entries from across AWS accounts.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c397d873-e10d-44b6-8352-5f1380ab94ca/images/bd6c80a7-e490-47db-bd47-165314e1ea8a.png)
+![Process to use Lambda automation to remove EC2 entries from across AWS accounts.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c397d873-e10d-44b6-8352-5f1380ab94ca/images/bd6c80a7-e490-47db-bd47-165314e1ea8a.png)
 
 The architecture diagram illustrates the following process:
 

@@ -51,7 +51,7 @@ This pattern includes steps and code to help you create and share IAM credential
 
 The following diagram shows an architecture for setting up a workflow that captures IAM credential report data from multiple AWS accounts.
 
-![The following screenshot illustrates the architecture diagram](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8724ff28-40f6-4c43-9c65-fbd18bbbfd0f/images/e780916a-4ab7-4fdc-8ecc-c837c7d90d13.png)
+![The following screenshot illustrates the architecture diagram](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8724ff28-40f6-4c43-9c65-fbd18bbbfd0f/images/e780916a-4ab7-4fdc-8ecc-c837c7d90d13.png)
 
 1. EventBridge invokes a Lambda function daily.
 

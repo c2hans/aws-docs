@@ -117,7 +117,7 @@ Now that we have updated the configurations, we will deploy the API for the chan
 1. Choose **Deploy API**.
 
     **Deploy API action**
-![image39](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image39.png)
+![image39](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image39.png)
 
 1. Choose the following:
    + Deployment stage: **prod**.
@@ -136,7 +136,7 @@ Once the API is deployed, the **Stage Editor** page appears.
 
  **Update stage variables**
 
-![image40](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image40.png)
+![image40](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image40.png)
 
 ## Step 7: Test the updates using the custom domain name
 <a name="step-7-test-the-updates-using-the-custom-domain-name"></a>

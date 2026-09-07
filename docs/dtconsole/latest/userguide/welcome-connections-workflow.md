@@ -22,4 +22,4 @@ If you are creating a connection to an installed provider type, such as GitHub E
 
 To create or update a connection using the console, you use the CodePipeline edit action page on the console to choose your third-party provider. The console prompts you to create an installation or use an existing installation for the connection, and then use the console to create the connection. The console completes the handshake and moves the connection from `pending` to an `available` state automatically.
 
-![Diagram showing the workflow of creating a connection to third-party provider.](http://docs.aws.amazon.com/dtconsole/latest/userguide/images/Connections-flowchart.png)
+![Diagram showing the workflow of creating a connection to third-party provider.](https://docs.aws.amazon.com/dtconsole/latest/userguide/images/Connections-flowchart.png)

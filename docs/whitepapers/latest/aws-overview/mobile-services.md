@@ -2,14 +2,14 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/mobile-services.html
 ---
 
-# ![AWS Frontend web and mobile category icon](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/front-end-web-and-mobile-icon.jpg)Frontend web and mobile services
+# ![AWS Frontend web and mobile category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/front-end-web-and-mobile-icon.jpg)Frontend web and mobile services
 <a name="mobile-services"></a>
 
 AWS offers a broad set of tools and services to support development workflows for native iOS, Android, React Native, and JavaScript developers. Discover how easy it is to develop, deploy, and operate your app, even if you are new to AWS.
 
 Each service is described after the diagram. To help you decide which service best meets your needs, see [Choosing AWS frontend web and mobile services](https://docs.aws.amazon.com/decision-guides/latest/front-end-on-aws-how-to-choose/front-end-on-aws-how-to-choose.html). For general information, see [Frontend Web and Mobile on AWS](https://aws.amazon.com/products/frontend-web-mobile/).
 
-![Diagram showing AWS frontend and mobile services](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/front-end-mobile-services.png)
+![Diagram showing AWS frontend and mobile services](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/front-end-mobile-services.png)
 
 **Topics**
 + [AWS Amplify](#aws-amplify)

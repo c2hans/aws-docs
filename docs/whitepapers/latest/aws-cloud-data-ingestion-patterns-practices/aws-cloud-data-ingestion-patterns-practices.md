@@ -32,7 +32,7 @@ Publication date: **July 23, 2021** ([Document revisions](document-revisions.md)
 
  At re:Invent 2020, we walked through a new modern approach to called the [Modern Data architecture](https://aws.amazon.com/big-data/datalakes-and-analytics/data-lake-house/). This architecture is shown in the following diagram.
 
-![A diagram depicting Modern Data architecture on AWS.](http://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/modern-data-architecture.png)
+![A diagram depicting Modern Data architecture on AWS.](https://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/modern-data-architecture.png)
 
  As data in these data lakes and purpose-built stores continues to grow, it becomes harder to move all this data around. We call this *data gravity*.
 

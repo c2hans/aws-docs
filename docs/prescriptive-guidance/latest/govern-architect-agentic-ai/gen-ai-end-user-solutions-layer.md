@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/govern-arch
 
 This layer includes user-facing applications that enable interaction with agentic AI systems. The components within this layer serve as the primary interface between end users and the underlying agentic infrastructure, providing conversational interfaces for natural language interaction, productivity features that augment workflows with AI assistance, and no-code tools that allow business users to create and deploy custom agents. They also provide interfaces to schedule and monitor the execution of agents.
 
-![Architecture diagram generative AI end-user solutions](http://docs.aws.amazon.com/prescriptive-guidance/latest/govern-architect-agentic-ai/images/guide-img/5961cc11-38d0-411b-a5ab-a75afdc073b4/images/273e816d-d871-4c5e-af86-932c5ab0e0bf.png)
+![Architecture diagram generative AI end-user solutions](https://docs.aws.amazon.com/prescriptive-guidance/latest/govern-architect-agentic-ai/images/guide-img/5961cc11-38d0-411b-a5ab-a75afdc073b4/images/273e816d-d871-4c5e-af86-932c5ab0e0bf.png)
 
 ## Purpose and characteristics
 <a name="purpose-and-characteristics"></a>

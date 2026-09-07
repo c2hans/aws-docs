@@ -29,7 +29,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfe
 ## Reference architecture
 <a name="reference-architecture-1"></a>
 
-![Secondary analysis reference architecture using AWS Step Functions and AWS Batch](http://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfer-analytics-and-machine-learning/images/image3.png)
+![Secondary analysis reference architecture using AWS Step Functions and AWS Batch](https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfer-analytics-and-machine-learning/images/image3.png)
 
  Figure 2 shows the reference architecture for the secondary analysis workflow using AWS Step Functions and AWS Batch.
 

@@ -15,7 +15,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 
  Deploying this guidance with the default parameters builds the following environment in AWS:
 
-![Clickstream Analytics on AWS architecture](http://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/clickstream-analytics-on-aws.png)
+![Clickstream Analytics on AWS architecture](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/clickstream-analytics-on-aws.png)
 
  This guidance deploys the AWS CloudFormation template in your AWS Cloud account and completes the following settings.
 
@@ -42,7 +42,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ### Ingestion module
 <a name="ingestion-module"></a>
 
-![Ingestion module architecture](http://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/ingestion-module-arch.png)
+![Ingestion module architecture](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/ingestion-module-arch.png)
 
  Suppose you create a data pipeline in the guidance. This guidance deploys the Amazon CloudFormation template in your AWS account and completes the following settings.
 
@@ -68,7 +68,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ### Data processing module
 <a name="data-processing-module"></a>
 
-![Data processing module architecture](http://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/data-processing-module-arch.png)
+![Data processing module architecture](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/data-processing-module-arch.png)
 
  Suppose you create a data pipeline in the guidance and enable data processing. This guidance deploys the Amazon CloudFormation template in your AWS Cloud account and completes the following settings.
 
@@ -85,7 +85,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ### Data modeling module
 <a name="data-modeling-module"></a>
 
-![Data modeling in Redshift architecture](http://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/data-modeling-module-arch.png)
+![Data modeling in Redshift architecture](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/data-modeling-module-arch.png)
 
  Suppose you create a data pipeline in the guidance and enable data modeling in Amazon Redshift. This guidance deploys the Amazon CloudFormation template in your AWS Cloud account and completes the following settings.
 
@@ -109,7 +109,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 
 1.  After all objects are loaded, the workflow ends.
 
-![Data modeling in Athena architecture](http://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/data-modeling-in-athena-arch.png)
+![Data modeling in Athena architecture](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/data-modeling-in-athena-arch.png)
 
  Suppose you create a data pipeline in the guidance and enable data modeling in Amazon Athena. This guidance deploys the Amazon CloudFormation template in your AWS Cloud account and completes the following settings.
 
@@ -126,7 +126,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ### Reporting module
 <a name="reporting-module"></a>
 
-![Reporting module architecture](http://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/reporting-module.png)
+![Reporting module architecture](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/reporting-module.png)
 
  Suppose you create a data pipeline in the guidance, enable data modeling in Amazon Redshift, and enable reporting in Quick. This guidance deploys the Amazon CloudFormation template in your AWS Cloud account and completes the following settings.
 
@@ -139,7 +139,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 
 Analytics Studio is a unified web interface for business analysts or data analysts to view and create dashboards, query and explore clickstream data, and manage metadata.
 
-![Analytics Studio architecture](http://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/analytics-studio-arch.png)
+![Analytics Studio architecture](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/analytics-studio-arch.png)
 
 1. When analysts access Analytics Studio, requests are sent to [Amazon CloudFront](https://aws.amazon.com/cloudfront/), which distributes the web application.
 

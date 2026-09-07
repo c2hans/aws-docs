@@ -7,11 +7,11 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 
 This section provides an overview of the main technology domains for containerization. The following diagram shows the architecture of a traditional Java EE application.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-containerize-javaee/images/guide-img/34f6e23c-ad3a-4f13-8f30-05bf7b07cc57/images/e77d30d0-f69a-43fd-af87-8cff09b5430e.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-containerize-javaee/images/guide-img/34f6e23c-ad3a-4f13-8f30-05bf7b07cc57/images/e77d30d0-f69a-43fd-af87-8cff09b5430e.png)
 
 The following diagram shows the architecture of a containerized Java EE application.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-containerize-javaee/images/guide-img/34f6e23c-ad3a-4f13-8f30-05bf7b07cc57/images/b290a220-6ed3-4da4-acab-ef672d98ce07.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-containerize-javaee/images/guide-img/34f6e23c-ad3a-4f13-8f30-05bf7b07cc57/images/b290a220-6ed3-4da4-acab-ef672d98ce07.png)
 
 ## 1. Session state
 <a name="session-state"></a>

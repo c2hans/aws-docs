@@ -14,7 +14,7 @@ Greengrass device setup is a script that sets up your core device in minutes, so
 1. Configure your cloud-based resources.
 
 1. Optionally deploy a Greengrass group with a Hello World Lambda function that sends MQTT messages to AWS IoT from the AWS IoT Greengrass core. This sets up the Greengrass environment shown in the following diagram.
-![Hello World Lambda function sending an MQTT message to AWS IoT from the AWS IoT Greengrass core.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/quick-start-gg-architecture.png)
+![Hello World Lambda function sending an MQTT message to AWS IoT from the AWS IoT Greengrass core.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/quick-start-gg-architecture.png)
 
 ## Requirements
 <a name="gg-device-setup-requirements"></a>
@@ -63,7 +63,7 @@ If you're running Greengrass device setup on a Raspbian or OpenWrt platform, mak
 1. Proceed through the command prompts for [input values](#gg-device-setup-input). You can press the **Enter** key to use the default value or type a custom value and then press **Enter**.
 
    The script writes status messages to the terminal that are similar to the following.
-![Output messages in the terminal.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/quick-start-in-progress.png)
+![Output messages in the terminal.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/quick-start-in-progress.png)
 
 1. If your core device is running Raspbian or OpenWrt, reboot the device when prompted, provide your credentials, and then restart the script.
 
@@ -100,7 +100,7 @@ For OpenWrt platforms:
 On platforms that require a reboot, your input values from the previous session, excluding credentials, are temporarily stored in the `GreengrassDeviceSetup.config.info` file.
 
    When the setup is complete, the terminal displays a success status message that's similar to the following.
-![Success message in the terminal output.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/quick-start-completed.png)
+![Success message in the terminal output.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/quick-start-completed.png)
 
 1. Review the new Greengrass group that the script configures using the input values you provide.
 
@@ -304,7 +304,7 @@ For OpenWrt platforms:
 On platforms that require a reboot, your input values from the previous session, excluding credentials, are temporarily stored in the `GreengrassDeviceSetup.config.info` file.
 
    When the setup is complete, the terminal displays a success status message that's similar to the following.
-![Success message in the terminal output.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/quick-start-completed.png)
+![Success message in the terminal output.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/quick-start-completed.png)
 
 1. <a name="quick-start-next-steps"></a>If you included the Hello World Lambda function, Greengrass device setup deploys the Greengrass group to your core device. To test the Lambda function, or for information about how to remove the Lambda function from the group, continue to [Verify the Lambda function is running on the core device](lambda-check.md) in Module 3-1 of the Getting Started tutorial.
 **Note**
@@ -374,7 +374,7 @@ For OpenWrt platforms:
 On platforms that require a reboot, your input values from the previous session, excluding credentials, are temporarily stored in the `GreengrassDeviceSetup.config.info` file.
 
    When the setup is complete, the terminal displays a success status message that's similar to the following.
-![Success message in the terminal output.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/quick-start-completed.png)
+![Success message in the terminal output.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/quick-start-completed.png)
 
 1. <a name="quick-start-next-steps"></a>If you included the Hello World Lambda function, Greengrass device setup deploys the Greengrass group to your core device. To test the Lambda function, or for information about how to remove the Lambda function from the group, continue to [Verify the Lambda function is running on the core device](lambda-check.md) in Module 3-1 of the Getting Started tutorial.
 **Note**

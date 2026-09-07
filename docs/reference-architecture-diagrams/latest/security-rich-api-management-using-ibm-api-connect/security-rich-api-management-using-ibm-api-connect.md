@@ -12,7 +12,7 @@ Take advantage of agility, security, and elasticity to create, manage, secure, a
 ## Security-rich API Management Using IBM API Connect on AWS Diagram
 <a name="diagram1"></a>
 
-![Reference architecture diagram showinghow to take advantage of agility, security, and elasticity to create, manage, secure, and socialize all of your APIs across the cloud in order to power digital applications with a market-leading and scalable API management solution.](http://docs.aws.amazon.com/reference-architecture-diagrams/latest/security-rich-api-management-using-ibm-api-connect/images/security-rich-api-management-using-ibm-api-connect.png)
+![Reference architecture diagram showinghow to take advantage of agility, security, and elasticity to create, manage, secure, and socialize all of your APIs across the cloud in order to power digital applications with a market-leading and scalable API management solution.](https://docs.aws.amazon.com/reference-architecture-diagrams/latest/security-rich-api-management-using-ibm-api-connect/images/security-rich-api-management-using-ibm-api-connect.png)
 
 1.  The API developer creates API endpoints, specifies access controls, and publishes the APIs to the developer portal for external discovery by app developers using IBM API Connect.
 

@@ -26,7 +26,7 @@ The AMI creation process is different for Amazon S3-backed AMIs. For more inform
 
 The following diagram summarizes the process for creating an Amazon EBS-backed AMI from a running EC2 instance: Start with an existing AMI, launch an instance, customize it, create a new AMI from it, and finally launch an instance of your new AMI. The numbers in the diagram match the numbers in the description that follows.
 
-![Workflow for creating an AMI from an instance.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/running-instance.png)
+![Workflow for creating an AMI from an instance.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/running-instance.png)
 
 **1 – AMI \#1: Start with an existing AMI**
 Find an existing AMI that is similar to the AMI that you'd like to create. This can be an AMI you have obtained from the AWS Marketplace, an AMI that you have created using [VM Import/Export](https://docs.aws.amazon.com/vm-import/latest/userguide/what-is-vmimport.html), or any other AMI that you can access. You'll customize this AMI for your needs.

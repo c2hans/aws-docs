@@ -20,7 +20,7 @@ Amazon Elastic Container Service (Amazon ECS) is a fully managed container orche
 
 The following diagram shows the Amazon ECS layers.
 
-![Diagram showing the capacity, controller, and provisioning layers.](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/images/ecs-layers.png)
+![Diagram showing the capacity, controller, and provisioning layers.](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/images/ecs-layers.png)
 
 The capacity is the infrastructure where your containers run. The following is an overview of the capacity options:
 + Amazon ECS Managed Instances is a compute option for Amazon ECS that enables you to run containerized workloads on a range of Amazon EC2 instance types while offloading infrastructure management to AWS. With Amazon ECS Managed Instances, you can access specific compute capabilities such as GPU acceleration, specific CPU architectures, high network performance, and specialized instances types, while AWS handles provisioning, patching, scaling, and maintenance of the underlying infrastructure.

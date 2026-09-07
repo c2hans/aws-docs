@@ -19,4 +19,4 @@ The following image and process describe how you can automate startup and shutdo
 
 1. After the SAP system has stopped or started, another EventBridge rule responds to the change in the EC2 instance state and uses a Lambda function handler to notify the stakeholders of the change.
 
-![Architecture diagram showing how you can automate startup or shutdown procedures for complex SAP systems.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sap-automation/images/guide-img/029e7e61-9fe5-41b5-83f4-177d03384b91/images/01641ff2-c243-4ea7-bff2-8b7df8a12684.png)
+![Architecture diagram showing how you can automate startup or shutdown procedures for complex SAP systems.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sap-automation/images/guide-img/029e7e61-9fe5-41b5-83f4-177d03384b91/images/01641ff2-c243-4ea7-bff2-8b7df8a12684.png)

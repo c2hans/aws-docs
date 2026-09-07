@@ -20,7 +20,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/
 
  The following diagram shows deploying AWS Serverless Application Model resources using CloudFormation and AWS CI/CD tools.
 
-![Diagram showing AWS Serverless Application Model (AWS SAM)](http://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/images/aws-sam.png)
+![Diagram showing AWS Serverless Application Model (AWS SAM)](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/images/aws-sam.png)
 
 ## Abstracting multi-tenancy complexities
 <a name="abstracting-multi-tenancy-complexities"></a>
@@ -36,4 +36,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/
 
  Figure 3 illustrates how API Gateway handles API calls and interacts with other components. Requests from mobile devices, websites, or other backend services are routed to the closest CloudFront Point of Presence (PoP) to reduce latency and provide an optimal user experience.
 
-![Diagram showing API Gateway call flow](http://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/images/api-gateway-call-flow.png)
+![Diagram showing API Gateway call flow](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/images/api-gateway-call-flow.png)

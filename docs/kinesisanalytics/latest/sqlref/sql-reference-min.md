@@ -106,7 +106,7 @@ CREATE OR REPLACE PUMP "STREAM_PUMP" AS
 
 The preceding examples output a stream similar to the following.
 
-![Table showing rowtime, ticker symbol, and minimum price data for stocks QXZ, WMT, QWE, and CRM.](http://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/images/sql-reference-min-example-1.png)
+![Table showing rowtime, ticker symbol, and minimum price data for stocks QXZ, WMT, QWE, and CRM.](https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/images/sql-reference-min-example-1.png)
 
 ### Example 2: Return the Minimum Value Using the OVER Clause
 <a name="w2aac22b7c44c13b6"></a>
@@ -128,7 +128,7 @@ CREATE OR REPLACE PUMP "STREAM_PUMP" AS
 
 The preceding example outputs a stream similar to the following.
 
-![Table showing rowtime, ticker symbol, and minimum price data for stocks NFS, NFLX, ASD, and DFG.](http://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/images/sql-reference-min-example-2.png)
+![Table showing rowtime, ticker symbol, and minimum price data for stocks NFS, NFLX, ASD, and DFG.](https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/images/sql-reference-min-example-2.png)
 
 ## Usage Notes
 <a name="w2aac22b7c44c15"></a>

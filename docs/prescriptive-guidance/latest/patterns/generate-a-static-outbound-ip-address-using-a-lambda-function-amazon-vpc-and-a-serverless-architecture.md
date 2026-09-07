@@ -27,7 +27,7 @@ The pattern’s approach helps you create an AWS Lambda function that uses an [E
 
 The following diagram shows the serverless architecture for this pattern.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/eb1d0b05-df33-45ae-b27e-36090055b300/images/c15cc6da-ce4e-4ea0-9feb-de1c845d3ce8.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/eb1d0b05-df33-45ae-b27e-36090055b300/images/c15cc6da-ce4e-4ea0-9feb-de1c845d3ce8.png)
 
 The diagram shows the following workflow:
 

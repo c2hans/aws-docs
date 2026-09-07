@@ -22,15 +22,15 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 
  The following figure illustrates a typical reference architecture web applications and maps its components to best practices that will be elaborated in the following sections of the chapter. These applications include the application layer of the Open Systems Interconnection (OSI) model and for that reason use CloudFront and AWS WAF at the edge for the protection.
 
-![DDoS-resilient reference architecture for web applications](http://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/images/ddos-resilient-ref-arch-web.png)
+![DDoS-resilient reference architecture for web applications](https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/images/ddos-resilient-ref-arch-web.png)
 
  The following figure illustrates a typical architecture for applications that operate at the transport layer of the OSI model and because of that the best practices include a different component for protection at the Edge.
 
-![DDoS-resilient reference architecture for TCP and UDP applications](http://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/images/ddos-resilient-ref-arch-tcp-udp.png)
+![DDoS-resilient reference architecture for TCP and UDP applications](https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/images/ddos-resilient-ref-arch-tcp-udp.png)
 
  With AWS service you can also protect applications that run inside corporate data centers, the following figure illustrates a collection of best practices applicable to that scenario.
 
-![DDoS-resilient reference architecture for web applications on-premises](http://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/images/ddos-resilient-ref-arch-on-premises.png)
+![DDoS-resilient reference architecture for web applications on-premises](https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/images/ddos-resilient-ref-arch-on-premises.png)
 
  These architectures include several AWS services that can help you improve your application's resiliency against DDoS attacks. The following table provides a summary of these services and the capabilities that they can provide. AWS has tagged each service with a best practice indicator (BP1, BP2) for easier reference within this document. For example, an upcoming section discusses the capabilities provided by Amazon CloudFront and Global Accelerator that includes the best practice indicator BP1.
 

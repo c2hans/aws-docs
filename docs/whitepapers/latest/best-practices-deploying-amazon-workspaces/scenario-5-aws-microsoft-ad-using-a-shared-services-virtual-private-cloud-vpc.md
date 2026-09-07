@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 
  To deploy WorkSpaces with a shared services VPC hosting Managed AD, deploy an AD Connector (ADC) with an ADC service account created in the Managed AD. The service account requires permissions to create computer objects in the WorkSpaces designated OU in the shared services Managed AD.
 
-![Sample architecture showing a WorkSpaces with a shared services VPC hosting Managed AD, deploy an AD Connector.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/microsoft-ad-shared-services-vpc.png)
+![Sample architecture showing a WorkSpaces with a shared services VPC hosting Managed AD, deploy an AD Connector.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/microsoft-ad-shared-services-vpc.png)
 
  This architecture uses the following components or constructs.
 

@@ -11,7 +11,7 @@ Follow the step-by-step instructions in this section to configure and deploy the
 
 1. Sign in to the [AWS Management Console](https://aws.amazon.com/console/) and select the button to launch the `scene-intelligence-with-rosbag-on-aws-create.template` CloudFormation template.
 
-    [![launch button](http://docs.aws.amazon.com/solutions/latest/scene-intelligence-with-rosbag-on-aws/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?stackName=Scene-intelligence-with-rosbag-on-aws-role&templateURL=https://solutions-reference.s3.amazonaws.com/scene-intelligence-with-rosbag-on-aws/latest/scene-intelligence-with-rosbag-on-aws-create.template&redirectId=ImplementationGuide)
+    [![launch button](https://docs.aws.amazon.com/solutions/latest/scene-intelligence-with-rosbag-on-aws/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?stackName=Scene-intelligence-with-rosbag-on-aws-role&templateURL=https://solutions-reference.s3.amazonaws.com/scene-intelligence-with-rosbag-on-aws/latest/scene-intelligence-with-rosbag-on-aws-create.template&redirectId=ImplementationGuide)
 
 1. The template launches in the US East (N. Virginia) Region by default. To launch the solution in a different AWS Region, use the Region selector in the console navigation bar.
 **Note**

@@ -15,4 +15,4 @@ source_url: https://docs.aws.amazon.com/sustainability/latest/userguide/methodol
 
 1.  Allocate water withdrawals associated with each cloud service to individual customer accounts. We use physical allocation for services with dedicated server racks, and economic allocation for other services.
 
-![A diagram of AWS water allocation, showing the three steps of logical workflow.](http://docs.aws.amazon.com/sustainability/latest/userguide/images/water_allocation.png)
+![A diagram of AWS water allocation, showing the three steps of logical workflow.](https://docs.aws.amazon.com/sustainability/latest/userguide/images/water_allocation.png)

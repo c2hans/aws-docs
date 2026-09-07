@@ -16,7 +16,7 @@ For more information about these two methods, see the [Centralized catalog](refe
 
 The following diagram shows how to onboard a new data producer to your data lake.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/data-lake-for-growth-scale/images/guide-img/dab5abfa-9d34-4ff1-9eb1-8a82c673378f/images/f031ec8a-d6a1-4694-a3d5-a751c4f8cb71.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/data-lake-for-growth-scale/images/guide-img/dab5abfa-9d34-4ff1-9eb1-8a82c673378f/images/f031ec8a-d6a1-4694-a3d5-a751c4f8cb71.png)
 
 The diagram shows the following onboarding process:
 
@@ -31,7 +31,7 @@ The diagram shows the following onboarding process:
 
 The following diagram shows how to onboard a new data consumer to your data lake.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/data-lake-for-growth-scale/images/guide-img/dab5abfa-9d34-4ff1-9eb1-8a82c673378f/images/c4bd5cc0-5a61-4c69-8e58-438d4c3ca364.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/data-lake-for-growth-scale/images/guide-img/dab5abfa-9d34-4ff1-9eb1-8a82c673378f/images/c4bd5cc0-5a61-4c69-8e58-438d4c3ca364.png)
 
 The diagram shows the following onboarding process:
 
@@ -55,7 +55,7 @@ The following diagram shows the process for granting [Select access](https://do
 **Note**
 When the data being shared is of low sensitivity, you can delegate access granting to the data consumer itself without requiring approval from the data producer. This is because trust and sharing are already established between them.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/data-lake-for-growth-scale/images/guide-img/dab5abfa-9d34-4ff1-9eb1-8a82c673378f/images/eab1e988-490b-4e30-9470-d9f9af414ea3.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/data-lake-for-growth-scale/images/guide-img/dab5abfa-9d34-4ff1-9eb1-8a82c673378f/images/eab1e988-490b-4e30-9470-d9f9af414ea3.png)
 
 The diagram shows the following process:
 

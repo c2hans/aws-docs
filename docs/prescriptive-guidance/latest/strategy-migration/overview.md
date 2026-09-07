@@ -9,7 +9,7 @@ To optimize your cloud adoption and migration, you must first assess and evaluat
 
 The iterative approach to cloud adoption discussed in this guide can be broken out into the three high-level phases of assess, mobilize, and migrate. These phases are shown in the following diagram.
 
-![Phases of the cloud migration process: assess, mobilize, and migrate.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration/images/guide-img/4bcc3604-59a4-4438-a144-c6d9862fed6b/images/2e84dd9a-1f2a-4d5b-8d03-b62eea5119a5.png)
+![Phases of the cloud migration process: assess, mobilize, and migrate.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration/images/guide-img/4bcc3604-59a4-4438-a144-c6d9862fed6b/images/2e84dd9a-1f2a-4d5b-8d03-b62eea5119a5.png)
 
 ## Assess
 <a name="overview-assess"></a>

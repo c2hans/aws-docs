@@ -49,7 +49,7 @@ In a publish-subscribe pattern, the asynchronous messaging subsystem known as a 
 + Creating an individual output channel per subscription. A *subscription* is the consumer's connection, where they listen for event messages that are associated with a specific input channel.
 + Copying messages from the input channel to the output channel for all consumers when the event is published.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/2449baf1-8239-4783-b872-e10082388898.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/2449baf1-8239-4783-b872-e10082388898.png)
 
 ### Implementation using AWS services
 <a name="implementation-using-aws-services.c575238e-a60c-5f67-a114-6c5b593dfda3"></a>
@@ -62,11 +62,11 @@ Amazon SNS is a fully managed publisher-subscriber service that provides applica
 Amazon SNS provides two types of topics: standard and first in, first out (FIFO).
 + Standard topics support an unlimited number of messages per second, and provide best-effort ordering and deduplication.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/07c60b92-b1b7-40c5-a0aa-9f5e9a256a26.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/07c60b92-b1b7-40c5-a0aa-9f5e9a256a26.png)
 
 + FIFO topics provide strict ordering and deduplication, and support up to 300 messages per second or 10 MB per second per FIFO topic (whichever comes first).
 
-![FIFO topics in Amazon SNS](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/5ef48fc2-cb4f-40fa-a8da-dd5705af2831.png)
+![FIFO topics in Amazon SNS](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/5ef48fc2-cb4f-40fa-a8da-dd5705af2831.png)
 
  The following illustration shows how you can use Amazon SNS to implement the publish-subscribe pattern. After a user makes a payment, an SNS message is sent by the `Payments` Lambda function to the `Payments` SNS topic. This SNS topic has three subscribers. Each subscriber receives a copy of the message and processes it.
 
@@ -75,7 +75,7 @@ Amazon SNS provides two types of topics: standard and first in, first out (FIFO)
 
 You can use Amazon EventBridge when you need more complex routing of messages from multiple producers across different protocols to subscribed consumers, or direct and fan-out subscriptions. EventBridge also supports content-based routing, filtering, sequencing, and splitting or aggregation. In the following illustration, EventBridge is used to build a version of the publish-subscribe pattern in which subscribers are defined by using event rules. After a user makes a payment, the `Payments` Lambda function sends a message to EventBridge by using the default event bus based on a custom schema that has three rules pointing to different targets. Each microservice processes the messages and performs the required actions.
 
-![How to use Amazon EventBridge to implement the publish-subscribe pattern.](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/e02df32b-2fd5-4386-a06d-bfd15c8daf97.png)
+![How to use Amazon EventBridge to implement the publish-subscribe pattern.](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/e02df32b-2fd5-4386-a06d-bfd15c8daf97.png)
 
 ## Workshop
 <a name="publish-subscribe-workshop"></a>

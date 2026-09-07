@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/what-
 
 AWS Supply Chain is a cloud-based supply chain management application that works with your existing enterprise resource planning (ERP) and supply chain management systems. Using AWS Supply Chain, you can connect and extract your inventory, supply, and demand related data from existing ERP or supply chain systems into one unified AWS Supply Chain data model.
 
-![Introduction to AWS Supply Chain](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/features.png)
+![Introduction to AWS Supply Chain](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/features.png)
 
 **Topics**
 + [Features of AWS Supply Chain](#servicename-feature-overview)

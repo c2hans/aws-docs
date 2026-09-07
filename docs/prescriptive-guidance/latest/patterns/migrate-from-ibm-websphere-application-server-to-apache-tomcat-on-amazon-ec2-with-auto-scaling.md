@@ -59,7 +59,7 @@ By using this pattern, you can achieve:
 
 **Target architecture**
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/52b91dab-7b3b-4751-abe2-25e7c7cd8d89/images/25125023-9a81-452a-9ada-184e2416cc02.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/52b91dab-7b3b-4751-abe2-25e7c7cd8d89/images/25125023-9a81-452a-9ada-184e2416cc02.png)
 
 ## Tools
 <a name="migrate-from-ibm-websphere-application-server-to-apache-tomcat-on-amazon-ec2-with-auto-scaling-tools"></a>

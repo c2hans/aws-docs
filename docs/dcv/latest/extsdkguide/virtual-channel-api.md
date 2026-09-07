@@ -25,7 +25,7 @@ The caller must specify the ID of the process that will open the client side of 
 
 The maximum number of open virtual channels (established or pending) for one extension is four, further setup requests will fail.
 
-![Sequence diagram showing virtual channel setup between Extension Client, DCV Client, and DCV Server.](http://docs.aws.amazon.com/dcv/latest/extsdkguide/images/setup-virtual-channel.jpg)
+![Sequence diagram showing virtual channel setup between Extension Client, DCV Client, and DCV Server.](https://docs.aws.amazon.com/dcv/latest/extsdkguide/images/setup-virtual-channel.jpg)
 
 **Request message:**
 
@@ -67,7 +67,7 @@ VirtualChannelReadyEvent
 
 One party (either the client extension or the server extension) can initiate the closure of a virtual channel with a `CloseVirtualChannelRequest`, the other party will be notified with a `VirtualChannelClosedEvent`.
 
-![Sequence diagram showing CloseVirtualChannelRequest and Response between DCV components, followed by VirtualChannelClosedEvent.](http://docs.aws.amazon.com/dcv/latest/extsdkguide/images/close-virtual-channel.jpg)
+![Sequence diagram showing CloseVirtualChannelRequest and Response between DCV components, followed by VirtualChannelClosedEvent.](https://docs.aws.amazon.com/dcv/latest/extsdkguide/images/close-virtual-channel.jpg)
 
 **Request message:**
 

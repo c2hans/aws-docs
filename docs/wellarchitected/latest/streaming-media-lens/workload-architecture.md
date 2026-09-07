@@ -33,7 +33,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 
  To achieve a highly available media streaming workflow, it is important to design for redundancy in every component of the chain. Let’s consider the components in a live workflow and the network paths between them:
 
-![An end-to-end live workflow showing dual-redundant system components delivering live programs to end user players.](http://docs.aws.amazon.com/wellarchitected/latest/streaming-media-lens/images/end-to-end-live-workflow.png)
+![An end-to-end live workflow showing dual-redundant system components delivering live programs to end user players.](https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-lens/images/end-to-end-live-workflow.png)
 
  A failure in either the video signal or the network path that it takes to reach AWS Cloud impacts the entire workload and subsequently the end customer experience. Design your live video ingest architecture to withstand individual source failure by ingesting redundant video signals that take diverse network paths to AWS.
 

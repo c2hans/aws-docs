@@ -9,7 +9,7 @@ You can view the procurement details for all the items ordered as part of a orde
 
 In the left navigation pane on the AWS Supply Chain dashboard, choose **Order Planning and Tracking**. The **Order Planning and Tracking** page appears. Choose the **Procurement** tab.
 
-![Viewing the procurement details](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Procurement.png)
+![Viewing the procurement details](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Procurement.png)
 
 You can choose **Filters** to filter the orders based on **Country/Location**, **Campaign**, **Revision** , **Main Work Center**, **Process Name**, and **Planner Group**. Once you set your filters, choose **Apply**. You can also choose **Save filter group** to save your filters.
 
@@ -22,7 +22,7 @@ You can use the expandable **Comments** feature to do the following:
 + Edit or delete a comment.
 + See other users' comments.
 
-![Comments feature on the Procurement page](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/comments-procurement.PNG)
+![Comments feature on the Procurement page](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/comments-procurement.PNG)
 
 The **Procurement** page, displays the following from your ERP or source system:
 

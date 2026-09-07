@@ -114,7 +114,7 @@ Using `0.0.0.0/0` allows all IPv4 addresses to access your instance using SSH. T
    Verify that the security group for the instance contains a rule to allow HTTP traffic on port 80. For more information, see [Add rules to security group](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/working-with-security-groups.html#adding-security-group-rule).
 **Important**
 If you are not using Amazon Linux, you may also need to configure the firewall on your instance to allow these connections. For more information about how to configure the firewall, see the documentation for your specific distribution.
-![The test of the server shows the Apache test page.](http://docs.aws.amazon.com/linux/al2/ug/images/apache_test_page_al2_2.4.png)
+![The test of the server shows the Apache test page.](https://docs.aws.amazon.com/linux/al2/ug/images/apache_test_page_al2_2.4.png)
 
 Apache **httpd** serves files that are kept in a directory called the Apache document root. The Amazon Linux Apache document root is `/var/www/html`, which by default is owned by root.
 
@@ -190,7 +190,7 @@ If your server is installed and running, and your file permissions are set corre
    ```
 
    You should see the PHP information page:
-![Test of the LAMP server shows the PHP information page.](http://docs.aws.amazon.com/linux/al2/ug/images/phpinfo7.2.10.png)
+![Test of the LAMP server shows the PHP information page.](https://docs.aws.amazon.com/linux/al2/ug/images/phpinfo7.2.10.png)
 
    If you do not see this page, verify that the `/var/www/html/phpinfo.php` file was created properly in the previous step. You can also verify that all of the required packages were installed with the following command.
 
@@ -320,7 +320,7 @@ We do not recommend using `phpMyAdmin` to access a LAMP server unless you have e
    ```
 
    You should see the phpMyAdmin login page:
-![Result of typing the URL of your phpMyAdmin installation is the phpMyAdmin login screen.](http://docs.aws.amazon.com/linux/al2/ug/images/phpmyadmin_login.png)
+![Result of typing the URL of your phpMyAdmin installation is the phpMyAdmin login screen.](https://docs.aws.amazon.com/linux/al2/ug/images/phpmyadmin_login.png)
 
 1. Log in to your phpMyAdmin installation with the `root` user name and the MySQL root password you created earlier.
 

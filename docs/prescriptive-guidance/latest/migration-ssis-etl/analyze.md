@@ -14,4 +14,4 @@ Analyzing the information from the discovery phase helps you understand the patt
 
 You can map each entry in the inventory to an estimated complexity, either in terms of duration (minutes or hours) or level (simple, medium, or complex). This expanded inventory, shown in the following table, is an outcome of the analysis phase.
 
-![SSIS ETL inventory mapped to estimated complexity, as a output of the analysis phase in migrations](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-ssis-etl/images/guide-img/ae5b08b7-f641-4524-9650-6ac5a0f71dd9/images/b985d8ed-ad92-4d13-aea7-79f7dc6905db.png)
+![SSIS ETL inventory mapped to estimated complexity, as a output of the analysis phase in migrations](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-ssis-etl/images/guide-img/ae5b08b7-f641-4524-9650-6ac5a0f71dd9/images/b985d8ed-ad92-4d13-aea7-79f7dc6905db.png)

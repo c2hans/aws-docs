@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/internal-de
 
 The following image shows the core components of an internal developer platform.
 
-![Core components of an internal developer platform](http://docs.aws.amazon.com/prescriptive-guidance/latest/internal-developer-platform/images/guide-img/f2111ed6-8e9c-4bdd-8ade-3154f49ca33b/images/ec915990-1fc1-4414-a6d7-4241674c2ee9.png)
+![Core components of an internal developer platform](https://docs.aws.amazon.com/prescriptive-guidance/latest/internal-developer-platform/images/guide-img/f2111ed6-8e9c-4bdd-8ade-3154f49ca33b/images/ec915990-1fc1-4414-a6d7-4241674c2ee9.png)
 
 AWS recommends that organizations adopt a [multi-account strategy](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/organizing-your-aws-environment.html) to isolate and manage their applications and data. The same principle applies when building an internal developer platform. Deploy the internal developer platform in a [shared services](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/infrastructure-ou-and-accounts.html#shared-service-accounts) or a [tooling](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/deployments-ou.html) AWS account that has access to the rest of your organization's accounts. This supports different development teams that use different AWS accounts for their environments. It also centralizes management and provides cost visibility for all of the different components that are managed by the internal developer platform.
 

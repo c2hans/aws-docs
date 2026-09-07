@@ -13,6 +13,7 @@ For additional details regarding new features and major updates, [see the MGN re
 
 | Change | Description | Date |
 | --- | --- | --- |
+| Added AlmaLinux 8 support | Added AlmaLinux 8.6, 8.7, 8.8, 8.9, and 8.10 to the list of supported Linux operating systems. | September 6, 2026 |
 | FSx for ONTAP target storage type is now generally available | FSx for ONTAP as a target storage type for migrated workloads is now generally available. You can migrate block storage workloads directly to FSx for ONTAP as part of the same migration wave. For setup instructions, see [FSx for ONTAP configuration](fsx-ontap.md). | August 30, 2026 |
 | Added RHEL, Rocky Linux, and AlmaLinux 10.2 support | Added RHEL 10.2, Rocky Linux 10.2, and AlmaLinux 10.2 to the list of supported Linux operating systems. | August 30, 2026 |
 | Added Oracle Linux 9.6 support | Added Oracle Linux 9.6 to the list of supported Linux operating systems. | August 23, 2026 |

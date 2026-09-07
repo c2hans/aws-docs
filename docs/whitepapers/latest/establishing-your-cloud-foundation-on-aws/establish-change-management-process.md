@@ -13,4 +13,4 @@ The change control practice ensures that* risks are properly assessed, authorizi
 
 There are multiple ways to establish network connections to ensure the traffic within your environment is secure. You can establish VPN connections between different networks or services, you can connect the different networks and access points through the route tables of your network benefiting from your cloud provider backbone network, or you can establish a physical connection between two locations.
 
-![A flow chart showing the change management process.](http://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/images/change-management-process.png)
+![A flow chart showing the change management process.](https://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/images/change-management-process.png)

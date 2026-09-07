@@ -54,7 +54,7 @@ The following describes how Client VPN works with Transit Gateway:
 
 1. **Client connection flow** — When a client connects, traffic flows from the client through the Client VPN endpoint to the Transit Gateway, and then to the destination network based on Transit Gateway route tables.
 
-![Transit Gateway traffic flow with Client VPN](http://docs.aws.amazon.com/vpn/latest/clientvpn-admin/images/cvpn-tgw-traffic-flow.png)
+![Transit Gateway traffic flow with Client VPN](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/images/cvpn-tgw-traffic-flow.png)
 
 ## Prerequisites
 <a name="cvpn-tgw-prerequisites"></a>

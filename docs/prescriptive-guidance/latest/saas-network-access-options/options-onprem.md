@@ -18,7 +18,7 @@ The following networking value map summarizes how each of these options scores f
 **Note**
 The provider-managed transit VPC option is excluded because the scores heavily depend on which services are being operated.
 
-![Radar chart that shows scores for each evaluation metric.](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-network-access-options/images/guide-img/c6ce66a8-c949-4e68-b09d-850373110e63/images/857f5319-acc8-4970-9056-ac9d301ca7d2.png)
+![Radar chart that shows scores for each evaluation metric.](https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-network-access-options/images/guide-img/c6ce66a8-c949-4e68-b09d-850373110e63/images/857f5319-acc8-4970-9056-ac9d301ca7d2.png)
 
 The radar chart shows the following values.
 
@@ -50,7 +50,7 @@ To increase fault tolerance, you can set up a second VPN connection to a second 
 
 The following diagram shows this architecture.
 
-![Connections from on-premises data centers to the AWS Cloud through a virtual gateway.](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-network-access-options/images/guide-img/c6ce66a8-c949-4e68-b09d-850373110e63/images/610e688a-6892-4599-92de-09ca072e08f2.png)
+![Connections from on-premises data centers to the AWS Cloud through a virtual gateway.](https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-network-access-options/images/guide-img/c6ce66a8-c949-4e68-b09d-850373110e63/images/610e688a-6892-4599-92de-09ca072e08f2.png)
 
 The following are the benefits of this approach:
 + Time to repair: Managed failover to secondary VPN tunnel
@@ -81,7 +81,7 @@ Compared to a virtual gateway, Transit Gateway supports ECMP. If the customer ga
 
 The following diagram shows this architecture.
 
-![Connections from on-premises data centers to the AWS Cloud through transit gateways.](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-network-access-options/images/guide-img/c6ce66a8-c949-4e68-b09d-850373110e63/images/8bd10258-88e8-4fe8-8e26-dc2af871be3d.png)
+![Connections from on-premises data centers to the AWS Cloud through transit gateways.](https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-network-access-options/images/guide-img/c6ce66a8-c949-4e68-b09d-850373110e63/images/8bd10258-88e8-4fe8-8e26-dc2af871be3d.png)
 
 The following are the benefits of this approach:
 + Time to repair: Managed failover to secondary VPN tunnel
@@ -114,7 +114,7 @@ To use the Direct Connect connection, consumers must create either a public, pri
 
 Consumers can connect using one to four Direct Connect connections from a total of one or two [Direct Connect locations](https://aws.amazon.com/directconnect/locations/), depending on the desired level of resiliency. For more information, see [Configure Direct Connect for maximum resiliency](https://docs.aws.amazon.com/directconnect/latest/UserGuide/max-resiliency-set-up.html). An AWS Site-to-Site VPN connection over the internet might also serve as a lower-cost backup path for an Direct Connect connection. Supported Direct Connect dedicated connections can use [MACsec](https://docs.aws.amazon.com/directconnect/latest/UserGuide/MACsec.html) to encrypt the link on Layer 2 between the Direct Connect location and the data center. It is common to have a Site-to-Site VPN connection for additional confidentiality of the data. The Site-to-Site VPN connection can terminate on the transit gateway by using a normal VPN attachment. The following diagram shows this architecture.
 
-![Connections from on-premises data centers to the AWS Cloud through AWS Direct Connect.](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-network-access-options/images/guide-img/c6ce66a8-c949-4e68-b09d-850373110e63/images/5c4093e5-5b61-4461-b526-057b05a45dd7.png)
+![Connections from on-premises data centers to the AWS Cloud through AWS Direct Connect.](https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-network-access-options/images/guide-img/c6ce66a8-c949-4e68-b09d-850373110e63/images/5c4093e5-5b61-4461-b526-057b05a45dd7.png)
 
 The following are the benefits of this approach:
 + Observability: Integration for managed active monitoring by using [Network Synthetic Monitor](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/what-is-network-monitor.html)
@@ -142,7 +142,7 @@ You can create the transit VPC and subnets with CIDR ranges that are compatible 
 
 In this approach, the SaaS provider leaves management of the transit VPCs up to the consumers. From a technical point of view, the SaaS provider's architecture is the same as when connecting to consumers in the AWS Cloud through AWS PrivateLink. From sales and product perspective, it is additional effort because some consumers don't have AWS accounts yet. They might be hesitant to open and operate an account. The SaaS provider should give guidance to their consumers about how to create AWS accounts and connect their on-premises data center. The following diagram shows a mix of public and private access, where the consumers own the transit VPCs.
 
-![The consumer manages a transit VPC in the AWS Cloud.](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-network-access-options/images/guide-img/c6ce66a8-c949-4e68-b09d-850373110e63/images/facca3c1-c561-4310-9f63-458838d40cad.png)
+![The consumer manages a transit VPC in the AWS Cloud.](https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-network-access-options/images/guide-img/c6ce66a8-c949-4e68-b09d-850373110e63/images/facca3c1-c561-4310-9f63-458838d40cad.png)
 
 The following are the benefits of this approach:
 + Time to repair: Operational overhead is largely offloaded to SaaS consumers
@@ -159,7 +159,7 @@ The following are the drawbacks of this approach:
 
 This approach uses the same technologies, but the account boundaries and responsibilities change. Here, the SaaS provider owns the transit VPCs, preferably in a separate account from the SaaS offering. This decoupling reduces costs, reduces risks, and allows the transit account to scale independently. For environments that require a high degree of isolation, you can create additional separation between tenants by using a subnet or by creating a separate transit VPC for each consumer. The consumers can then choose how to connect to the transit VPC. This approach provides more options to expand the total addressable market, but it has a higher TCO for the SaaS provider due to the need to operate and monitor additional architectural components.
 
-![The SaaS provider manages one or more transit VPCs in the AWS Cloud.](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-network-access-options/images/guide-img/c6ce66a8-c949-4e68-b09d-850373110e63/images/8089d241-fd4b-4916-bc2b-fd5121ef45bf.png)
+![The SaaS provider manages one or more transit VPCs in the AWS Cloud.](https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-network-access-options/images/guide-img/c6ce66a8-c949-4e68-b09d-850373110e63/images/8089d241-fd4b-4916-bc2b-fd5121ef45bf.png)
 
 The following are the benefits of this approach:
 + Adaptability: SaaS consumers can choose from different access options
@@ -177,7 +177,7 @@ Public internet access** **is also a valid option for providing access to a SaaS
 
 The architecture in this scenario is straightforward. The consumer connects to a public host (the SaaS provider) through the internet. The application can be hosted directly on a public Amazon Elastic Compute Cloud (Amazon EC2) instance with an [Elastic IP address](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html). The preferred option is to host it behind an Application Load Balancer or similar service. For better performance and caching static assets, you can use a content delivery network, such as [Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html). To serve an application with minimum latency over two global static Anycast IP addresses, you can place [AWS Global Accelerator](https://docs.aws.amazon.com/global-accelerator/latest/dg/what-is-global-accelerator.html) in front of an Amazon EC2 instance, Network Load Balancer, or Application Load Balancer. In addition, CloudFront, Application Load Balancers, AWS AppSync, and Amazon API Gateway all integrate with AWS WAF. The following diagram provides an overview of the public internet access connectivity options.
 
-![Connectivity to a SaaS offering through the public internet.](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-network-access-options/images/guide-img/c6ce66a8-c949-4e68-b09d-850373110e63/images/65e826b1-1382-4e43-a688-c1537735ae3f.png)
+![Connectivity to a SaaS offering through the public internet.](https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-network-access-options/images/guide-img/c6ce66a8-c949-4e68-b09d-850373110e63/images/65e826b1-1382-4e43-a688-c1537735ae3f.png)
 
 The following table describes supported protocols and integrations for this scenario.
 

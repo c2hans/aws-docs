@@ -66,7 +66,7 @@ For additional information about prerequisites, configurations, and limitations,
 
 The following diagram shows the cross-Region disaster recovery architecture for JD Edwards EnterpriseOne using Elastic Disaster Recovery.
 
-![Architecture for JD Edwards EnterpriseOne cross-Region DR on AWS](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9b0de5f0-f211-4086-a044-321d081604f9/images/978b7219-e54e-4e31-b3ff-4885784e2971.png)
+![Architecture for JD Edwards EnterpriseOne cross-Region DR on AWS](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9b0de5f0-f211-4086-a044-321d081604f9/images/978b7219-e54e-4e31-b3ff-4885784e2971.png)
 
 **Procedure**
 

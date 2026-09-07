@@ -14,7 +14,7 @@ These agents are a fundamental part of automation flows. They are particularly u
 
 A workflow orchestration agent is shown in the following diagram:
 
-![Workflow orchestration agent.](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-patterns/images/guide-img/cde5ee68-ed86-4053-9fb1-d0dbf7199e24/images/76487b41-e9ff-48dc-a409-3439418c30b9.png)
+![Workflow orchestration agent.](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-patterns/images/guide-img/cde5ee68-ed86-4053-9fb1-d0dbf7199e24/images/76487b41-e9ff-48dc-a409-3439418c30b9.png)
 
 ## Description
 <a name="description.0ae5e026-b46f-55d3-8a55-94a888790133"></a>

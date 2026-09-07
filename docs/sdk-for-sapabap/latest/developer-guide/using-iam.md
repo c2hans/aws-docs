@@ -65,7 +65,7 @@ Follow along these instructions to setup certificate-based authentication.
 1. Right-select the SSF application created in [Step 1 – Define an SSF application by using SAP's Secure Store and Forward (SSF)](#step1), and choose **Create**. Retain all other default settings, and select **Continue**.
 
 1. Select **Create Certificate Request**. See the following image. Retain the default options, and select **Continue**. Copy or export the generated certificate request, and provide it to your CA. Your CA verifies the request, and responds with a signed public-key certificate.
-![The icon for Create Certificate Request for the SSF AWS IAM Roles Anywhere Signing Certificate.](http://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/images/using-iam-image1.png)
+![The icon for Create Certificate Request for the SSF AWS IAM Roles Anywhere Signing Certificate.](https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/images/using-iam-image1.png)
 
    The signing process varies based on your CA, and the technology used by them. See [Issuing private end-entity certificates](https://docs.aws.amazon.com/privateca/latest/userguide/PcaIssueCert.html) with AWS Private Certificate Authority for an example.
 
@@ -94,7 +94,7 @@ Follow along these instructions to setup certificate-based authentication.
    + Create a new entry, and enter the information for your SAP system, and AWS Region.
    + Select **IAM Roles Anywhere** for the authentication method, and select **Save**.
    + Select **Enter Details**, and in the pop-up window, choose the SSF application created in [Step 1 – Define an SSF application by using SAP's Secure Store and Forward (SSF)](#step1). Enter the **Trust Anchor ARN**, and **Profile ARN** that were created in [Prerequisites](#using-iam-prerequisites). See the following image. Select **Continue**.
-![An example of the Amazon Resource Names (ARN) for the trust anchor and profile.](http://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/images/using-iam-image2.png)
+![An example of the Amazon Resource Names (ARN) for the trust anchor and profile.](https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/images/using-iam-image2.png)
 
 1. In the left pane, select **IAM Role Mapping**. Enter a name, and provide the IAM role's ARN provided by your IAM administrator.
 

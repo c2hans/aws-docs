@@ -23,7 +23,7 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 
  A disaster recovery matrix, like the following, can help you understand how workload criticality relates to recovery objectives. (Note that the actual values for the X and Y axes should be customized to your organization needs).
 
-![Chart showing the disaster recovery matrix](http://docs.aws.amazon.com/wellarchitected/2024-06-27/framework/images/disaster-recovery-matrix.png)
+![Chart showing the disaster recovery matrix](https://docs.aws.amazon.com/wellarchitected/2024-06-27/framework/images/disaster-recovery-matrix.png)
 
  **Common anti-patterns:**
 +  No defined recovery objectives.
@@ -120,7 +120,7 @@ For steps 2 and 3, you can use the [Implementation worksheet](#implementation-wo
 
  You can use this worksheet for implementation steps 2 and 3. You may adjust this worksheet to suit your specific needs, such as adding additional questions.
 
-<a name="worksheet"></a>![Worksheet](http://docs.aws.amazon.com/wellarchitected/2024-06-27/framework/images/worksheet.png)
+<a name="worksheet"></a>![Worksheet](https://docs.aws.amazon.com/wellarchitected/2024-06-27/framework/images/worksheet.png)
 
  **Level of effort for the Implementation Plan: **Low
 

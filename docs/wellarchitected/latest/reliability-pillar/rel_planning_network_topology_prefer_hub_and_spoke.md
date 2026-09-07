@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reliability-pilla
 
  AWS Transit Gateway is a managed, scalable, and highly-available service designed for construction of hub-and-spoke networks on AWS. It serves as the central hub of your network that provides network segmentation, centralized routing, and the simplified connection to both cloud and on-premises environments. The following figure illustrates how you can use AWS Transit Gateway to build your hub-and-spoke topology.
 
-![AWS Transit Gateway connecting to VPCs, customer gateway via VPN, Direct Connect , peering, and SDWAN.](http://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/images/hub-and-spoke.png)
+![AWS Transit Gateway connecting to VPCs, customer gateway via VPN, Direct Connect , peering, and SDWAN.](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/images/hub-and-spoke.png)
 
  **Desired outcome:** You have connected your Virtual Private Clouds (VPCs) and on-premises networks through a central hub. You configure your peering connections through the hub, which acts as a highly scalable cloud router. Routing is simplified because you do not have to work with complex peering relationships. Traffic between networks is encrypted, and you have the ability to isolate networks.
 

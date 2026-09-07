@@ -21,7 +21,7 @@ Amazon EC2 Auto Scaling paces instance replacements to honor the specified check
 
 Consider the following Auto Scaling group that has 10 instances. The checkpoint percentages are `[20,50,100]`, the minimum healthy percentage is 80 percent, and the maximum healthy percentage is 100 percent. To maintain the minimum healthy percentage, only two instances can be replaced at a time. The following diagram summarizes the process for replacing instances before a checkpoint is reached.
 
-![This diagram shows how checkpoints affect the flow of an instance refresh.](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/checkpoints-instance-refresh.png)
+![This diagram shows how checkpoints affect the flow of an instance refresh.](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/checkpoints-instance-refresh.png)
 
 In the above example, there is an instance warmup period for each new instance that starts. You might also have a lifecycle hook that puts an instance into a wait state and then performs a custom action as it's launching or terminating.
 

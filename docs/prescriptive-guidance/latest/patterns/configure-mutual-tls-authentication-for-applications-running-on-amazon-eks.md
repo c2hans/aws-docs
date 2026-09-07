@@ -35,7 +35,7 @@ This pattern uses self-signed certificates. We recommend that you use this patte
 ## Architecture
 <a name="configure-mutual-tls-authentication-for-applications-running-on-amazon-eks-architecture"></a>
 
-![Configuring mutual TLS authentication for applications running on Amazon EKS](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/ae2761e3-7ed2-4c2a-ba54-a4ddce8a1e7e/images/cefc60f9-2f29-4052-b7ae-df4eb6395e1c.png)
+![Configuring mutual TLS authentication for applications running on Amazon EKS](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/ae2761e3-7ed2-4c2a-ba54-a4ddce8a1e7e/images/cefc60f9-2f29-4052-b7ae-df4eb6395e1c.png)
 
 **Technology stack**
 + Amazon EKS

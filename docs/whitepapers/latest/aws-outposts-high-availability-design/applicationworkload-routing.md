@@ -11,7 +11,7 @@ There are two paths out of the Outpost for application workloads:
 
 You configure the Outpost subnet route tables to control which path to take to reach destination networks. Routes pointed to the LGW will direct traffic out the Local Gateway and to the on-premises network. Routes pointed to the services and resources in the Region, such as Internet Gateway, NAT Gateway, Virtual Private Gateway, and TGW, will use [service link](https://docs.aws.amazon.com/outposts/latest/userguide/region-connectivity.html) to reach these targets. If you have a VPC peering connection with multiple VPCs on the same Outpost, the traffic between the VPCs remains on the Outpost and doesn't use the service link back to the Region. For information on VPC peering, see [Connect VPCs using VPC peering](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-peering.html) in the *Amazon VPC User Guide*.
 
-![Diagram showing a visualization of the Outpost service link and LGW network paths](http://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/outpost-service-link-and-lgw-network-paths.png)
+![Diagram showing a visualization of the Outpost service link and LGW network paths](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/outpost-service-link-and-lgw-network-paths.png)
 
  You should take care when planning application routing to consider both normal operation and limited routing and service availability during network failures. The Service Link path is not available when an Outpost is disconnected from the Region.
 
@@ -31,7 +31,7 @@ You configure the Outpost subnet route tables to control which path to take to r
 
  For example, traffic between an EC2 instance running on the Outpost and a VPC Endpoint in the Region will always be routed over the service link.
 
-![Diagram showing local VPC routing through the implicit routers](http://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/local-vpc-routing-through-implicit-routers.png)
+![Diagram showing local VPC routing through the implicit routers](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/local-vpc-routing-through-implicit-routers.png)
 
 ## Recommended practices for application/workload routing
 <a name="recommended-practices-for-applicationworkload-routing"></a>

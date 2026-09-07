@@ -100,7 +100,7 @@ In this step, you create an AWS AppSync GraphQL API along with the DynamoDB tabl
       1. For **Required**, choose **Yes**.
 
       The following screenshot shows how your fields should be configured:
-![The channel, id, user, content, and createdAt fields configured in the AWS AppSync console.](http://docs.aws.amazon.com/appsync/latest/eventapi/images/tutorial-ddb-persist-messages-1.png)
+![The channel, id, user, content, and createdAt fields configured in the AWS AppSync console.](https://docs.aws.amazon.com/appsync/latest/eventapi/images/tutorial-ddb-persist-messages-1.png)
 
 1. **In the Configure model table** section, do the following:
 
@@ -111,7 +111,7 @@ In this step, you create an AWS AppSync GraphQL API along with the DynamoDB tabl
    1. For **Sort key**, select **id**.
 
    The following screenshot shows how your fields should be configured:
-![The Configure model table fields configured in the AWS AppSync console.](http://docs.aws.amazon.com/appsync/latest/eventapi/images/tutorial-ddb-persist-messages-3.png)
+![The Configure model table fields configured in the AWS AppSync console.](https://docs.aws.amazon.com/appsync/latest/eventapi/images/tutorial-ddb-persist-messages-3.png)
 
 1. Choose **Next**.
 
@@ -161,7 +161,7 @@ Now you can create your data source integration in your namespace.
 **To create a data source integration with a namespace**
 
 1. From your **messages** data source page, you need to return to the settings page for **my-event-api**. You can either use your browser's back button or you can choose **my-event-api** from the top menu in the console window. The following screenshot shows the location of the menu with **my-event-api** circled.
-![The location of my-event-api in the console window's top menu.](http://docs.aws.amazon.com/appsync/latest/eventapi/images/tutorial-ddb-persist-messages-2.png)
+![The location of my-event-api in the console window's top menu.](https://docs.aws.amazon.com/appsync/latest/eventapi/images/tutorial-ddb-persist-messages-2.png)
 
 1. Choose the **Namespaces** tab, then choose the **default** namespace.
 

@@ -52,11 +52,11 @@ This policy applies a transformation only when a request carries a specific head
 
  **Screenshot of the Create policy form in the Admin UI, configuring the quality output optimization.**
 
-![Admin UI Create policy form showing quality output configuration](http://docs.aws.amazon.com/solutions/latest/dynamic-image-transformation-for-amazon-cloudfront/images/admin-ui-create-policy-1.png)
+![Admin UI Create policy form showing quality output configuration](https://docs.aws.amazon.com/solutions/latest/dynamic-image-transformation-for-amazon-cloudfront/images/admin-ui-create-policy-1.png)
 
  **Screenshot of the Create policy form in the Admin UI, showing the optimization policy fully configured with all three output optimizations (format, quality, and autosize).**
 
-![Admin UI Create policy form with output optimizations configured](http://docs.aws.amazon.com/solutions/latest/dynamic-image-transformation-for-amazon-cloudfront/images/admin-ui-create-policy-2.png)
+![Admin UI Create policy form with output optimizations configured](https://docs.aws.amazon.com/solutions/latest/dynamic-image-transformation-for-amazon-cloudfront/images/admin-ui-create-policy-2.png)
 
 ## Using Management API
 <a name="using-management-api"></a>

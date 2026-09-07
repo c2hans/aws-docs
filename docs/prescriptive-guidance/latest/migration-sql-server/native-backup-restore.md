@@ -24,7 +24,7 @@ You can use Migration Hub Orchestrator to automate and orchestrate your SQL Serv
 
 The following diagram shows the native SQL Server backup/restore process. You can use Migration Hub Orchestrator to automate this process. You can use this process to back up and restore SQL Server databases to Amazon EC2 as well.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-sql-server/images/guide-img/aa3b9357-4901-48ca-9fc9-a997d21ade3e/images/d4be6875-264e-4b7c-a817-e4b66cbc92c9.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-sql-server/images/guide-img/aa3b9357-4901-48ca-9fc9-a997d21ade3e/images/d4be6875-264e-4b7c-a817-e4b66cbc92c9.png)
 
 To automate backup and restore, see the [Migration Hub Orchestrator documentation](https://docs.aws.amazon.com/migrationhub-orchestrator/latest/userguide/what-is-migrationhub-orchestrator.html).
 

@@ -20,7 +20,7 @@ Application integration is a suite of services that enables communication betwee
 
 Choosing an integration service that is the best fit for your organization and workloads can become difficult. This decision guide will help you ask the right questions to discover your requirements and provides clear guidance on how to evaluate and choose the right integration services for your workloads.
 
-[![AWS Videos](http://img.youtube.com/vi/Zrj7RD7G24Q?start=58&end=567/0.jpg)](http://www.youtube.com/watch?v=Zrj7RD7G24Q?start=58&end=567)
+[![AWS Videos](https://img.youtube.com/vi/Zrj7RD7G24Q?start=58&end=567/0.jpg)](https://www.youtube.com/watch?v=Zrj7RD7G24Q?start=58&end=567)
 
 ## Understand
 <a name="understand"></a>
@@ -29,7 +29,7 @@ One of the key benefits of modernization is the ability to shift operational res
 
 There is a spectrum of shared responsibility options across different levels of modernization, ranging from hosting your message broker on Amazon Elastic Compute Cloud (Amazon EC2)—where you are managing scaling, security configurations, provisioning, patching, and more—to serverless offerings where all of the underlying infrastructure is managed.
 
-![Diagram showing operational responsibility between AWS application integration services.](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/operational-responsibility.png)
+![Diagram showing operational responsibility between AWS application integration services.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/operational-responsibility.png)
 
 As you start to explore and understand your criteria, environment, and the suite of integration services that AWS offers, we recommend that you review some best practices. These best practices are applicable regardless of which service (or suite of services) you choose.
 

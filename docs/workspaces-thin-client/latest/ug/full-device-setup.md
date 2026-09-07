@@ -21,4 +21,4 @@ You are now ready to set up your WorkSpaces Thin Client service. Go to [Setting 
 **Note**
 If you set up two monitors, the primary monitor must be placed on the left side and the secondary monitor on the right side.
 
-![WorkSpaces Thin Client full setup](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/connected-all.jpg)
+![WorkSpaces Thin Client full setup](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/connected-all.jpg)

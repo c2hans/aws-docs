@@ -9,7 +9,7 @@ It's easy to think of agents as building blocks where agents are viewed as a ser
 
 Agent providers could support multiple models for deploying their agents to meet customer needs. The following diagram shows a conceptual view of the two main agent deployment models.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-multitenant/images/guide-img/2d1a9d67-004c-4c75-8cd2-68ceef9bbc6f/images/3ad05e20-9afc-4cbc-a530-0c3037fd309c.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-multitenant/images/guide-img/2d1a9d67-004c-4c75-8cd2-68ceef9bbc6f/images/3ad05e20-9afc-4cbc-a530-0c3037fd309c.png)
 
 *Figure 6. Agent deployment models*
 
@@ -21,7 +21,7 @@ There are two ways you can look at the AaaS model. The model above delivers the 
 
 The alternative approach to AaaS is where the context of clients influences the agent's experience and implementation. The following diagram provides a conceptual view of an AaaS agent footprint in this context.
 
-![AaaS with tenant context](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-multitenant/images/guide-img/2d1a9d67-004c-4c75-8cd2-68ceef9bbc6f/images/3c9d8139-b0c7-429f-a901-0f1596a9bd47.png)
+![AaaS with tenant context](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-multitenant/images/guide-img/2d1a9d67-004c-4c75-8cd2-68ceef9bbc6f/images/3c9d8139-b0c7-429f-a901-0f1596a9bd47.png)
 
 *Figure 7. AaaS with tenant context*
 
@@ -33,7 +33,7 @@ These qualities overlap with the same principles that drive the adoption of the 
 
 For a system that can treat all users equally and doesn't require the management of persistent, sensitive, or customer-specific data, the notion of tenancy would minimally affect their agents. For systems that are expected to serve multiple customers while preserving data isolation, customization, and context awareness, supporting multiple tenants could be an essential element of an agent's design, strategy, and goal. The following diagram shows how multi-tenancy can be used in agentic environments.
 
-![Multi-tenant agent](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-multitenant/images/guide-img/2d1a9d67-004c-4c75-8cd2-68ceef9bbc6f/images/4975a42a-45ea-4a45-b087-db1f0a4e17fe.png)
+![Multi-tenant agent](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-multitenant/images/guide-img/2d1a9d67-004c-4c75-8cd2-68ceef9bbc6f/images/4975a42a-45ea-4a45-b087-db1f0a4e17fe.png)
 
 *Figure 8. Multi-tenant agent*
 
@@ -56,7 +56,7 @@ Adding tenant context to individual agents isn't particularly challenging. In ma
 
 In general, the agentic domain requires a more cross-cutting identity model that aligns with the current and emerging needs of agentic systems. Agent providers require identity mechanisms that support unique security, compliance, and authorization models that come with operating agentic systems. This is especially challenging in environments where systems are composed by customers or other agents. Each onboarded agent must connect its identity and tenant context to agent interactions. The following diagram highlights the potential identity and tenant context challenges that are part of agent-to-agent (a2a) interactions.
 
-![Identity, tenant context, and agentic systems](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-multitenant/images/guide-img/2d1a9d67-004c-4c75-8cd2-68ceef9bbc6f/images/1371cf9b-99a8-42b6-ae01-7e05290a9853.png)
+![Identity, tenant context, and agentic systems](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-multitenant/images/guide-img/2d1a9d67-004c-4c75-8cd2-68ceef9bbc6f/images/1371cf9b-99a8-42b6-ae01-7e05290a9853.png)
 
 *Figure 9. Identity, tenant context, and agentic systems*
 

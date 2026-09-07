@@ -37,7 +37,7 @@ This automated solution maintains service continuity without additional routing 
 
 The following diagram shows the workflow and architecture components for this pattern.
 
-![Workflow to update CloudFront with new ALB DNS address detected through EventBridge rule.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/03c30b18-4dd7-4dd4-b960-5a5cc58cec63/images/28854767-0902-4398-80af-b19141dd94e4.png)
+![Workflow to update CloudFront with new ALB DNS address detected through EventBridge rule.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/03c30b18-4dd7-4dd4-b960-5a5cc58cec63/images/28854767-0902-4398-80af-b19141dd94e4.png)
 
 This solution performs the following steps:
 
@@ -123,7 +123,7 @@ The code for this pattern is available in the GitHub [aws-cloudfront-automation-
 
 **Problematic workflow**
 
-![Workflow that produces out-of-date ALB DNS entry in CloudFront.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/03c30b18-4dd7-4dd4-b960-5a5cc58cec63/images/bb3c2c93-c749-435d-9b1d-2bbf6f0cf085.png)
+![Workflow that produces out-of-date ALB DNS entry in CloudFront.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/03c30b18-4dd7-4dd4-b960-5a5cc58cec63/images/bb3c2c93-c749-435d-9b1d-2bbf6f0cf085.png)
 
 The diagram shows the following workflow:
 

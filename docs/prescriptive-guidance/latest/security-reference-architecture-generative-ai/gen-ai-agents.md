@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 
 RAG enables the LLM to provide up-to-date, context-specific responses by dynamically pulling relevant information from enterprise data sources. However, this integration introduces critical security challenges. Securing RAG implementations requires extending defense-in-depth principles from Capability 1 and Capability 2 to address how LLMs securely use data from external sources. The following diagram illustrates recommended AWS services for the Generative AI account RAG capability.
 
-![Recommended services for the Generative AI account RAG capability.](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-generative-ai/images/guide-img/a349f18f-a9fd-43a3-9a48-27534bf6412a/images/79ec66a6-987a-4982-842f-c5e2062b5bea.jpeg)
+![Recommended services for the Generative AI account RAG capability.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-generative-ai/images/guide-img/a349f18f-a9fd-43a3-9a48-27534bf6412a/images/79ec66a6-987a-4982-842f-c5e2062b5bea.jpeg)
 
 The Generative AI account includes services for storing embeddings in a vector database, storing conversations for users, and maintaining a prompt store. The account includes security services to implement security guardrails and centralized security governance. Create Amazon Simple Storage Service (Amazon S3) gateway endpoints for the model invocation logs, prompt store, and knowledge base data source buckets in Amazon S3 that the VPC environment accesses. Create an Amazon CloudWatch Logs gateway endpoint for the CloudWatch logs that the VPC environment accesses.
 

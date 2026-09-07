@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 
  The guidance provides modularized and configurable components of a data pipeline so that you can choose and customize the components to accelerate the building of a Well-Architected data pipeline from weeks to minutes. The purpose-built SDKs and guidance allow you to collect client-side data from different application platforms (for example, Android, iOS, and JavaScript) to AWS. In addition, ready-to-use dashboards and explorative analytics studio enable you to derive actionable business insights easily and quickly.
 
-![Data pipeline flow from clickstream ingestion through EMR processing to Redshift and QuickSight.](http://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/solution-overview.png)
+![Data pipeline flow from clickstream ingestion through EMR processing to Redshift and QuickSight.](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/solution-overview.png)
 
 Use this navigation table to quickly find answers to these questions:
 

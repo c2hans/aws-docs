@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/arch
 
  Deploying the Media2Cloud on AWS solution builds the following environment in the AWS Cloud.
 
-![Media2Cloud on AWS architecture on AWS](http://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-architecture-diagram.png)
+![Media2Cloud on AWS architecture on AWS](https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-architecture-diagram.png)
 
  The AWS CloudFormation template deploys the following infrastructure:
 

@@ -28,4 +28,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-bu
 
  In this setup, the on-premises data center can be connected to the VMware Cloud on AWS environment using DX or IPsec VPN and the actual migrations are performed using VMware HCX
 
-![Reference architecture diagram showing Oracle E-Business Suite Migration on VMWare Cloud on AWS](http://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-business-suite/images/vmware-hcx-migration.png)
+![Reference architecture diagram showing Oracle E-Business Suite Migration on VMWare Cloud on AWS](https://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-business-suite/images/vmware-hcx-migration.png)

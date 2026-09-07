@@ -15,7 +15,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/designing-next-genera
 
  With AWS IoT FleetWise the undifferentiated heavy lift of building this data collection platform is removed. These challenges of collecting vehicle data are now performed by a fully managed service that customers can use to collect, transform, and transfer vehicle data to the cloud in near real time. With AWS IoT FleetWise, automotive companies can now collect and organize data from vehicles with differing protocols and proprietary data formats. AWS IoT FleetWise helps to transform CAN and OBD telemetry binary frames into human-readable data and then standardizes that data into a vehicle model in the cloud for data analyses. Vehicle manufacturers can then define different data collection campaigns to remotely determine which vehicle data to collect and how frequently to transfer that data to the cloud.
 
-![High-level architecture for AWS IoT FleetWise](http://docs.aws.amazon.com/whitepapers/latest/designing-next-generation-vehicle-communication-aws-iot/images/fleetwise-refarch.jpg)
+![High-level architecture for AWS IoT FleetWise](https://docs.aws.amazon.com/whitepapers/latest/designing-next-generation-vehicle-communication-aws-iot/images/fleetwise-refarch.jpg)
 
  Figure : AWS IoT FleetWise - high-level architecture
 

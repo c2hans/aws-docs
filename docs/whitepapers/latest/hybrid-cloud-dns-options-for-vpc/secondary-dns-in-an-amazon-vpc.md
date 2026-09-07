@@ -23,7 +23,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-dns-opti
 
  The following diagram represents a sample architecture utilizing a secondary DNS within an Amazon VPC.
 
-![A diagram depciting secondary DNS running on Route 53 private hosted zones.](http://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-dns-options-for-vpc/images/secondary-dns.png)
+![A diagram depciting secondary DNS running on Route 53 private hosted zones.](https://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-dns-options-for-vpc/images/secondary-dns.png)
 
 1.  CloudWatch Events invokes a Lambda function. The scheduled event is configured based on a JSON string that is passed to the Lambda function that sets a number of parameters, including the DNS domain, source DNS server, and Route 53 zone ID. This configuration lets you reuse a single Lambda function for multiple zones.
 

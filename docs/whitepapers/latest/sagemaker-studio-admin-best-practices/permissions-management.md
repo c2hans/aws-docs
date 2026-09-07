@@ -14,7 +14,7 @@ This section discusses the best practices for setting up commonly used IAM roles
 
  As a best practice, you may want to first identify the relevant people and applications, known as principals involved in the ML lifecycle, and what AWS permissions you need to grant them. As SageMaker AI is a managed service, you also need to consider service principals which are AWS services that can make API calls on a user’s behalf. The following diagram illustrates the different IAM roles you may want to create, corresponding to the different personas in the organization.
 
-![A diagram depicting SageMaker AI IAM roles.](http://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/sagemaker-iam-roles.png)
+![A diagram depicting SageMaker AI IAM roles.](https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/sagemaker-iam-roles.png)
 
 These roles are described in detail, along with some examples of specific IAMpermissions they will need.
 +  **ML Admin user role** — This is a principal who provisions the environment for data scientists by creating studio domains and user profiles (`sagemaker:CreateDomain`, `sagemaker:CreateUserProfile`), creating AWS Key Management Service (AWS KMS) keys for users, creating S3 buckets for data scientists, and creating Amazon ECR repositories to house containers. They can also set default configurations and lifecycle scripts for users, build and attach custom images to the SageMaker AI Studio domain, and provide Service Catalog products such as custom projects, Amazon EMR templates.
@@ -38,7 +38,7 @@ This section, discusses how SageMaker AI Studio Notebook authorization works for
 
 Next, this paper walks you through the Data Scientist authorization workflow for each of those modes.
 
-![A diagram depicting authentication and authorization workflow for Studio users.](http://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/authentication-authorization-workflow.png)
+![A diagram depicting authentication and authorization workflow for Studio users.](https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/authentication-authorization-workflow.png)
 
 ### IAM Federation: SageMaker Studio Notebook workflows
 <a name="iam-federation-studio-notebook-workflow"></a>
@@ -67,7 +67,7 @@ Next, this paper walks you through the Data Scientist authorization workflow for
 
 In deployed environments such as system testing and production, jobs are run through automated scheduler and event triggers, and human access to those environments are restricted from SageMaker AI Studio Notebooks. This section discusses how IAM roles work with the SageMaker AI training pipeline in the deployed environment.
 
-![A diagram depicting a SageMaker AI training workflow in a managed production environment.](http://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/sagemaker-training-workflow-prod.png)
+![A diagram depicting a SageMaker AI training workflow in a managed production environment.](https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/sagemaker-training-workflow-prod.png)
 
 1. [Amazon EventBridge](https://aws.amazon.com/eventbridge/) scheduler triggers the SageMaker AI training pipeline job.
 
@@ -101,7 +101,7 @@ To utilize Lake Formation from SageMaker AI Studio, administrators can register 
    ```
 
 1. Use the SageMaker AI Studio native connectivity to Amazon EMR to read and write data at scale. Through use of Apache Livy and Amazon EMR runtime roles, SageMaker AI Studio has built native connectivity which allows you to pass your SageMaker AI execution IAM role (or other authorized role) to an Amazon EMR cluster for data access and processing. Refer to [Connect to an Amazon EMR Cluster from Studio](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-notebooks-emr-cluster-connect.html) for up-to-date instructions.
-![A diagram depicting an architecture for accessing data managed by Lake Formation from SageMaker Studio.](http://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/access-lf-data.png)
+![A diagram depicting an architecture for accessing data managed by Lake Formation from SageMaker Studio.](https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/access-lf-data.png)
 
 1. Use the SageMaker AI Studio native connectivity to [AWS Glue interactive sessions](https://docs.aws.amazon.com/glue/latest/dg/interactive-sessions.html) to read and write data at scale. SageMaker AI Studio Notebooks have built-in kernels that allow users to interactively run commands on [AWS Glue](https://aws.amazon.com/glue/). This enables the scalable use of Python, Spark, or Ray backends which can seamlessly read and write data at scale from governed data sources. The kernels allow users to pass their SageMaker execution or other authorized IAM roles. Refer to [Prepare Data using AWS Glue Interactive Sessions](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-notebooks-glue.html) for more information.
 

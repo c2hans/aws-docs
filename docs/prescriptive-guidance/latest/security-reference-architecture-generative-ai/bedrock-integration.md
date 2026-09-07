@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 
 The scope of this use case is to demonstrate a traditional cloud workload that is integrated with Amazon Bedrock to take advantage of generative AI capabilities. The following diagram illustrates the Generative AI account in conjunction with an example application account.
 
-![Integrating a traditional cloud workload with Amazon Bedrock.](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-generative-ai/images/guide-img/a349f18f-a9fd-43a3-9a48-27534bf6412a/images/f90b502b-0043-4fe7-abb1-5ec0fb5b04b2.jpeg)
+![Integrating a traditional cloud workload with Amazon Bedrock.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-generative-ai/images/guide-img/a349f18f-a9fd-43a3-9a48-27534bf6412a/images/f90b502b-0043-4fe7-abb1-5ec0fb5b04b2.jpeg)
 
 The *Generative AI account* provides generative AI functionality by using Amazon Bedrock. The *Application account* hosts an example workload. The AWS services that you use in this account depend on your requirements. Interactions between the Generative AI account and the Application account use the Amazon Bedrock APIs.
 

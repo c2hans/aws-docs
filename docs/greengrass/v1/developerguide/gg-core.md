@@ -829,7 +829,7 @@ For information about MQTT settings you can configure for AWS IoT Greengrass, se
 
 AWS IoT Greengrass supports quality of service (QoS) levels 0 or 1, depending on your configuration and the target and direction of the communication. The Greengrass core acts as a client for communication with AWS IoT Core and a message broker for communication on the local network.
 
-![The core as client and local message broker.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/mqtt-qos.png)
+![The core as client and local message broker.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/mqtt-qos.png)
 
 For more information about MQTT and QoS, see [Getting Started](https://mqtt.org/getting-started/) on the MQTT website.
 

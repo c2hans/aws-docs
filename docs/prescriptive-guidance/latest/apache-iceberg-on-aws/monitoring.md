@@ -16,7 +16,7 @@ Monitoring is crucial for performance management and troubleshooting. For exampl
 
 The following screen shows a table monitoring dashboard that was created in Amazon Quick Sight. This dashboard queries Iceberg metadata tables by using Spark SQL, and captures detailed metrics such as the number of active files and total storage. This information is then stored in AWS Glue tables for operational purposes. Finally, a Quick Sight dashboard, as shown in the following illustration, is created by using Amazon Athena. This information helps you identify and address specific problems in your systems.
 
-![QuickSight dashboard for monitoring Iceberg tables](http://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/images/guide-img/ceffa39e-028d-47b6-a54a-6ef8526aee6a/images/715cbc38-e0ea-461e-8c75-117b9aca3fe2.png)
+![QuickSight dashboard for monitoring Iceberg tables](https://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/images/guide-img/ceffa39e-028d-47b6-a54a-6ef8526aee6a/images/715cbc38-e0ea-461e-8c75-117b9aca3fe2.png)
 
 The example Quick Sight dashboard collects the following key performance indicators (KPIs) for an Iceberg table:
 
@@ -39,7 +39,7 @@ For more information about creating dashboards, see the [Quick Sight documentati
 
 The following example shows a monitoring dashboard that was created in Quick Sight to provide an overview of database-level KPIs for a collection of Iceberg tables.
 
-![QuickSight dashboard for database-level monitoring for Iceberg](http://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/images/guide-img/ceffa39e-028d-47b6-a54a-6ef8526aee6a/images/0ba002ef-2d8d-4be2-9e76-0fd8fe7aef57.png)
+![QuickSight dashboard for database-level monitoring for Iceberg](https://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/images/guide-img/ceffa39e-028d-47b6-a54a-6ef8526aee6a/images/0ba002ef-2d8d-4be2-9e76-0fd8fe7aef57.png)
 
 This dashboard collects the following KPIs:
 

@@ -16,7 +16,7 @@ Debugger's debugging functionality for *model optimization* is about analyzing n
 
 The following diagram shows the architecture of SageMaker Debugger. The blocks with bold boundary lines are what Debugger manages to analyze your training job.
 
-![Overview of how Amazon SageMaker Debugger works.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/debugger/debugger_new_diagram.png)
+![Overview of how Amazon SageMaker Debugger works.](https://docs.aws.amazon.com/sagemaker/latest/dg/images/debugger/debugger_new_diagram.png)
 
 Debugger stores the following data from your training jobs in your secured Amazon S3 bucket:
 + **Output tensors** – Collections of scalars and model parameters that are continuously updated during the forward and backward passes while training ML models. The output tensors include scalar values (accuracy and loss) and matrices (weights, gradients, input layers, and output layers).

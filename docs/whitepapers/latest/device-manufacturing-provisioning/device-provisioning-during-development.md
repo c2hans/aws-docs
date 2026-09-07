@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-
 
  The developer is responsible for manually provisioning the certificate and private key provided by AWS IoT Core to the device, where they are either added to the device’s file system or stored in the device’s firmware image.
 
-![A diagram that shows the process to provision devices during development using AWS IoT Core.](http://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-provisioning/images/provision-devices.png)
+![A diagram that shows the process to provision devices during development using AWS IoT Core.](https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-provisioning/images/provision-devices.png)
 
 This process should never be used in production because the private key is transmitted through an insecure environment such as the developer’s laptop. If the private key is stored on the developer’s local machine, even temporarily, it could be compromised by social engineering, user error, or a weak password. In production, the device private key should be generated on the device from a strong source of entropy and never exported.
 

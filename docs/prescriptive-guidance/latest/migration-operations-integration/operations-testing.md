@@ -30,8 +30,8 @@ As a best practice, you should test your IT operations starting with incident an
 
 **Prod or non-prod schedule**
 
-![Prod OR non-prod gameday schedule.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-operations-integration/images/guide-img/6545b5e3-3780-4eb8-a195-e92454bb488e/images/493d1eb8-8f18-47d0-890f-9b9c5ebc690e.png)
+![Prod OR non-prod gameday schedule.](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-operations-integration/images/guide-img/6545b5e3-3780-4eb8-a195-e92454bb488e/images/493d1eb8-8f18-47d0-890f-9b9c5ebc690e.png)
 
 **Prod and non-prod schedule**
 
-![Prod AND non-prod gameday schedule.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-operations-integration/images/guide-img/6545b5e3-3780-4eb8-a195-e92454bb488e/images/66e05bc8-fa43-4f72-b0df-a3713fc10633.png)
+![Prod AND non-prod gameday schedule.](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-operations-integration/images/guide-img/6545b5e3-3780-4eb8-a195-e92454bb488e/images/66e05bc8-fa43-4f72-b0df-a3713fc10633.png)

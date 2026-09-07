@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-
 
  AWS services – [Amazon EKS Anywhere](https://aws.amazon.com/eks/eks-anywhere/)
 
-![Amazon EKS Anywhere and AWS services at single management console](http://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-to-address-personal-data-processing-requirements/images/eks-anywhere-and-aws-services-single-management-console.png)
+![Amazon EKS Anywhere and AWS services at single management console](https://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-to-address-personal-data-processing-requirements/images/eks-anywhere-and-aws-services-single-management-console.png)
 
  Amazon EKS Anywhere and AWS services at single management console
 

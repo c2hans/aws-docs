@@ -12,7 +12,7 @@ To upload a model, you must have trained and evaluated the model. You can train 
  **To upload a trained model to your vehicle**
 
 1. Choose **Models** from the device console’s main navigation pane.
-![AWS DeepRacer device console Models page](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/operatingthevehicle-models-page.png)
+![AWS DeepRacer device console Models page](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/operatingthevehicle-models-page.png)
 
 1. On the **Models** page, choose **Upload** above the **Models** list.
 

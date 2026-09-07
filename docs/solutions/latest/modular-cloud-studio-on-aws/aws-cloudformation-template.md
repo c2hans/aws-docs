@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 
 You can download the CloudFormation template for this solution before deploying it.
 
- [![View Template](http://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/images/view-template.png)](https://solutions-reference.s3.amazonaws.com/modular-cloud-studio-on-aws/latest/ModularCloudStudioOnAwsStack.template) **ModularCloudStudioOnAwsStack.template** - Use this template to launch the solution and all associated components. The default configuration deploys the core and supporting solutions found in the [AWS services in this solution](architecture-details.md#aws-services-in-this-solution) section, but you can customize the template to meet your specific needs.
+ [![View Template](https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/images/view-template.png)](https://solutions-reference.s3.amazonaws.com/modular-cloud-studio-on-aws/latest/ModularCloudStudioOnAwsStack.template) **ModularCloudStudioOnAwsStack.template** - Use this template to launch the solution and all associated components. The default configuration deploys the core and supporting solutions found in the [AWS services in this solution](architecture-details.md#aws-services-in-this-solution) section, but you can customize the template to meet your specific needs.
 
 **Note**
 CloudFormation resources are created from AWS CDK constructs.

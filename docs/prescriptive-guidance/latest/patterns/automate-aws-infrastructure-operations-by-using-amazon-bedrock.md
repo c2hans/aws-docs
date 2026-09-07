@@ -45,7 +45,7 @@ The architecture employs Amazon Virtual Private Cloud (Amazon VPC) endpoints and
 
 The following diagram shows the workflow and architecture components for this pattern.
 
-![Workflow to automate common AWS infrastructure operations by using Amazon Bedrock.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/924e503f-bfc5-4452-abdf-d72a58d4d36f/images/bd56ad29-b435-4543-8ee8-dc4e1d38df18.png)
+![Workflow to automate common AWS infrastructure operations by using Amazon Bedrock.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/924e503f-bfc5-4452-abdf-d72a58d4d36f/images/bd56ad29-b435-4543-8ee8-dc4e1d38df18.png)
 
 The solution architecture consists of multiple layers that work together to process natural language requests and execute corresponding AWS operations:
 

@@ -48,7 +48,7 @@ Amazon Aurora PostgreSQL-Compatible database instance
 
 **Source and target architecture**
 
-![Changing data types from VARCHAR2(1) to Boolean](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5d4dc568-20d8-4883-a942-21c81039d8e6/images/9fd82ae2-56e6-439c-b4cd-9e74fe77b480.png)
+![Changing data types from VARCHAR2(1) to Boolean](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5d4dc568-20d8-4883-a942-21c81039d8e6/images/9fd82ae2-56e6-439c-b4cd-9e74fe77b480.png)
 
 ## Tools
 <a name="convert-varchar2-1-data-type-for-oracle-to-boolean-data-type-for-amazon-aurora-postgresql-tools"></a>

@@ -24,7 +24,7 @@ Every week, the solution triggers its Lambda functions to refresh the DynamoDB t
 ## Run remediations directly in the Web UI
 <a name="webui-guide-findings-and-remediation"></a>
 
-![Web UI Findings page showing Security Hub findings table](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/web-ui-findings-page.png)
+![Web UI Findings page showing Security Hub findings table](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/web-ui-findings-page.png)
 
 On the **Findings** page, Admin or Delegated Admin users can view all AWS Security Hub findings supported by the solution for remediation. This includes findings for Security Hub member accounts onboarded with the Security Hub primary account. If the solution is also deployed in the aggregation region, then findings in any onboarded region will also be displayed. To view the list of findings supported by the solution, see the [playbooks section.](playbooks-1.md)
 

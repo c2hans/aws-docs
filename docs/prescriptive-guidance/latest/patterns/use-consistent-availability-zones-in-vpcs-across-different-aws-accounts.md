@@ -14,7 +14,7 @@ On the Amazon Web Services (AWS) Cloud, an Availability Zone has a name that can
 
 To use the same Availability Zone across your accounts, you must map the Availability Zone name in each account to the same AZ ID. For example, the following diagram shows that the `use1-az6` AZ ID is named `us-east-1a` in AWS account A and `us-east-1c` in AWS account Z.
 
-![The use1-az6 AZ ID is named us-east-1a in AWS account A and us-east-1c in AWS account Z.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9954e7f9-d6ce-44bd-af99-0c6bb7cd3cb0/images/23c8a37b-2408-4534-a1e0-bccfa4d7fbe3.png)
+![The use1-az6 AZ ID is named us-east-1a in AWS account A and us-east-1c in AWS account Z.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9954e7f9-d6ce-44bd-af99-0c6bb7cd3cb0/images/23c8a37b-2408-4534-a1e0-bccfa4d7fbe3.png)
 
 This pattern helps ensure zonal consistency by providing a cross-account, scalable solution for using the same Availability Zones in your subnets. Zonal consistency ensures that your cross-account network traffic avoids cross-Availability Zone network paths, which helps reduce data transfer costs and lower network latency between your workloads.
 
@@ -35,7 +35,7 @@ This pattern is an alternative approach to the AWS CloudFormation [AvailabilityZ
 
 The following diagram shows the architecture that is deployed in an account and that creates AWS Systems Manager Parameter Store values. These Parameter Store values are consumed when you create a VPC in the account.
 
-![Workflow to create Systems Manager Parameter Store values for each AZ ID and store AZ name.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9954e7f9-d6ce-44bd-af99-0c6bb7cd3cb0/images/f1168464-55f8-4efc-9b28-6a0cda668b9e.png)
+![Workflow to create Systems Manager Parameter Store values for each AZ ID and store AZ name.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9954e7f9-d6ce-44bd-af99-0c6bb7cd3cb0/images/f1168464-55f8-4efc-9b28-6a0cda668b9e.png)
 
 The diagram shows the following workflow:
 
@@ -47,7 +47,7 @@ The diagram shows the following workflow:
 
 The following diagram shows the workflow for creating a VPC with this pattern's solution.
 
-![Workflow submits CloudFormation template to create a VPC with correct AZ IDs.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9954e7f9-d6ce-44bd-af99-0c6bb7cd3cb0/images/cd859430-ac25-479f-b56a-21da24cddf21.png)
+![Workflow submits CloudFormation template to create a VPC with correct AZ IDs.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9954e7f9-d6ce-44bd-af99-0c6bb7cd3cb0/images/cd859430-ac25-479f-b56a-21da24cddf21.png)
 
 The diagram shows the following workflow:
 

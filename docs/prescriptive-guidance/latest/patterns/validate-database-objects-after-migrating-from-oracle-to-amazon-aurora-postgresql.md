@@ -30,7 +30,7 @@ This pattern outlines usage scenarios and steps for database object validation; 
 ## Architecture
 <a name="validate-database-objects-after-migrating-from-oracle-to-amazon-aurora-postgresql-architecture"></a>
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7c028960-6dea-46ad-894d-e42cefd50c03/images/be5f8ae3-f5af-4c5e-9440-09ab410beaa1.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7c028960-6dea-46ad-894d-e42cefd50c03/images/be5f8ae3-f5af-4c5e-9440-09ab410beaa1.png)
 
 ## Tools
 <a name="validate-database-objects-after-migrating-from-oracle-to-amazon-aurora-postgresql-tools"></a>

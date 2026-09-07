@@ -32,7 +32,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 
  With the **AWS Media Services**, DRM systems are integrated into media processing and origination though the Secure Packager and Encoder Key Exchange or SPEKE. SPEKE provides an open standard proxy interface for any key provider to exchange key material and metadata. You can implement your own key service or use one of many DRM system providers that are part of the AWS Partner Network (APN).
 
-![The SPEKE architecture is shown with encryption components providing secure streaming delivery to end user players.](http://docs.aws.amazon.com/wellarchitected/latest/streaming-media-lens/images/secure-key-exchange-architecture.png)
+![The SPEKE architecture is shown with encryption components providing secure streaming delivery to end user players.](https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-lens/images/secure-key-exchange-architecture.png)
 
  No number of content protection schemes can ever fully protect content from being exploited by an attacker and, in fact, complex schemes can even increase the risk of problems for your paying viewers. Commit time to determine the appropriate content protection schemes for your specific content balancing cost with content value. Be sure to balance cost of additional resources on software licensing or operational burden versus the business value of the content being protected.
 

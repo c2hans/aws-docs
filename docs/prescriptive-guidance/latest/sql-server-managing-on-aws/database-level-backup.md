@@ -19,7 +19,7 @@ SQL Server on EC2 supports native backup and restore for SQL Server databases[.]
 
 The following diagram shows the architecture of a native backup and restore solution using Storage Gateway and Amazon S3.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-managing-on-aws/images/guide-img/465b5bfb-6afe-43d5-ad91-28d097c28a50/images/9b1c8752-3ab2-40cc-8a72-3c66e4353490.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-managing-on-aws/images/guide-img/465b5bfb-6afe-43d5-ad91-28d097c28a50/images/9b1c8752-3ab2-40cc-8a72-3c66e4353490.png)
 
 Native SQL Server backup with Storage Gateway provides the following benefits:
 + You can map a storage gateway as a Server Message Block (SMB) file share on the EC2 instance and send the backup to Amazon S3.
@@ -39,7 +39,7 @@ You can take a native backup of your SQL Server database and store the file in a
 
 The following diagram shows the architecture of a native backup to an EBS volume.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-managing-on-aws/images/guide-img/465b5bfb-6afe-43d5-ad91-28d097c28a50/images/42216fa9-f793-4bbf-8036-a994734af275.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-managing-on-aws/images/guide-img/465b5bfb-6afe-43d5-ad91-28d097c28a50/images/42216fa9-f793-4bbf-8036-a994734af275.png)
 
 SQL Server native backup to EBS volumes provides the following benefits:
 + You can take backups of individual databases on a SQL Server EC2 instance and restore an individual database instead of having to restore the complete instance.
@@ -60,7 +60,7 @@ When using native backup to EBS volumes, consider the following points:
 
 The following diagram shows the architecture of a native SQL Server backup to FSx for Windows File Server.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-managing-on-aws/images/guide-img/465b5bfb-6afe-43d5-ad91-28d097c28a50/images/3e6f0296-5a3c-4cf6-ba67-68d8100cd57d.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-managing-on-aws/images/guide-img/465b5bfb-6afe-43d5-ad91-28d097c28a50/images/3e6f0296-5a3c-4cf6-ba67-68d8100cd57d.png)
 
 This approach has the following benefits:
 + You can back up your SQL Server database to an Amazon FSx file share.

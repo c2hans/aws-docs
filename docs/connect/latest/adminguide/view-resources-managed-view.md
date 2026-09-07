@@ -19,7 +19,7 @@ Interactive [documentation](https://d3irlmavjxd3d8.cloudfront.net/?path=/docs/aw
 
 The following image shows an example of a **Detail view**. It has a page heading, description, and four examples.
 
-![The detail view, with the page heading, description, and four examples with attributes.](http://docs.aws.amazon.com/connect/latest/adminguide/images/details-view-page-heading-sq.png)
+![The detail view, with the page heading, description, and four examples with attributes.](https://docs.aws.amazon.com/connect/latest/adminguide/images/details-view-page-heading-sq.png)
 
 **Sections**
 + Content can be a static string, a TemplateString or a key-value pair. It can be a single data point or a list. For more information, see [TemplateString](https://d3irlmavjxd3d8.cloudfront.net/?path=/docs/aws-managed-views-common-configuration--page#templatestring) or [AtrributeSection](https://d3irlmavjxd3d8.cloudfront.net/?path=/docs/aws-managed-views-common-configuration--page#attribute-section).
@@ -85,7 +85,7 @@ Interactive [documentation](https://d3irlmavjxd3d8.cloudfront.net/?path=/docs/aw
 
 The following image shows an example of a List view. It has one column with three items in it.
 
-![The List view, one list item with link, and two items without links.](http://docs.aws.amazon.com/connect/latest/adminguide/images/list-view-column-sq.png)
+![The List view, one list item with link, and two items without links.](https://docs.aws.amazon.com/connect/latest/adminguide/images/list-view-column-sq.png)
 
 **Items**
 + Required, will display these items as a list.
@@ -169,7 +169,7 @@ Interactive [documentation](https://d3irlmavjxd3d8.cloudfront.net/?path=/docs/aw
 
 The following image shows an example of a Form view for a car rental reservation. It has location and date fields on it.
 
-![The form view with location and date fields as examples.](http://docs.aws.amazon.com/connect/latest/adminguide/images/form-view-sq.png)
+![The form view with location and date fields as examples.](https://docs.aws.amazon.com/connect/latest/adminguide/images/form-view-sq.png)
 
 **Sections**
 + Location in the **Form view** where input fields and display fields are located.
@@ -395,7 +395,7 @@ Interactive [documentation](https://d3irlmavjxd3d8.cloudfront.net/?path=/docs/aw
 
 The following image shows an example of a confirmation.
 
-![The confirmation view, a check mark and text to confirm the car rental.](http://docs.aws.amazon.com/connect/latest/adminguide/images/confirmation-view-check-sq.png)
+![The confirmation view, a check mark and text to confirm the car rental.](https://docs.aws.amazon.com/connect/latest/adminguide/images/confirmation-view-check-sq.png)
 
 **Next**
 + Required.
@@ -462,11 +462,11 @@ Interactive [documentation](https://d3irlmavjxd3d8.cloudfront.net/?path=/docs/aw
 
 *Present cards to your agents.* The following image shows an example of six cards that are presented to the agent: one to make a new reservation, and the others to review reservations for upcoming trips.
 
-![A set of six cards.](http://docs.aws.amazon.com/connect/latest/adminguide/images/solve-view-sq.png)
+![A set of six cards.](https://docs.aws.amazon.com/connect/latest/adminguide/images/solve-view-sq.png)
 
 *When agents choose a card, more info is revealed.* The following image shows an open card that displays details for a reservation.
 
-![An open card that shows details for a reservation.](http://docs.aws.amazon.com/connect/latest/adminguide/images/card-view-sq.png)
+![An open card that shows details for a reservation.](https://docs.aws.amazon.com/connect/latest/adminguide/images/card-view-sq.png)
 
 **Sections**
 + It is list of objects with Summary and Detail. It must be provided to create Card and Detail.

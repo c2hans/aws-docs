@@ -43,7 +43,7 @@ Depending on the container orchestration platform that you use, the resources th
 
 The following diagram shows the architecture of the Blu Age application within a Docker container.
 
-![Blu Age application in Docker container](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c1747094-357b-4222-b4eb-b1336d810f83/images/0554332d-eff5-49ca-9789-da39b5a10045.png)
+![Blu Age application in Docker container](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c1747094-357b-4222-b4eb-b1336d810f83/images/0554332d-eff5-49ca-9789-da39b5a10045.png)
 
 1. The entry point for the container is the wrapper script. This bash script is responsible for preparing the runtime environment for the Blu Age application and processing outputs.
 

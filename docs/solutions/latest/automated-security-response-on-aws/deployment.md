@@ -66,7 +66,7 @@ You can choose to use a Jira API key in place of your password by providing your
    1. Add the ARN of this secret as input to the stack.
 
        **Provide a stack name, Jira project information, and Jira API credentials.**
-![Jira ticket system integration stack configuration](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/ticket-system-integration-stack-jira.png)
+![Jira ticket system integration stack configuration](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/ticket-system-integration-stack-jira.png)
 
        **Jira Field Configuration**:
 
@@ -85,7 +85,7 @@ You can choose to use a Jira API key in place of your password by providing your
    1. Create a secret in Secrets Manager with the key `API_Key` and provide the secret ARN as input to the stack.
 
        **Provide a stack name, ServiceNow project information, and ServiceNow API credentials.**
-![ServiceNow ticket system integration stack configuration](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/ticket-system-integration-stack-servicenow.png)
+![ServiceNow ticket system integration stack configuration](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/ticket-system-integration-stack-servicenow.png)
 
        **To create a custom integration stack**: Include a Lambda function that the solution orchestrator Step Functions can call for each remediation. The Lambda function should take the input provided by Step Functions, construct a payload according to the requirements of your ticketing system, and make a request to your system to create the ticket.
 
@@ -102,7 +102,7 @@ You are responsible for the cost of the AWS services used while running this sol
 
 1. Sign in to the AWS Management Console from the account where the AWS Security Hub is currently configured, and choose the button below to launch the `automated-security-response-admin.template` AWS CloudFormation template.
 
-    [![automated-security-response-admin-template launch button](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=automated-security-response-on-aws-admin&templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Fautomated-security-response-on-aws%2Flatest%2Fautomated-security-response-admin.template&redirectId=ImplementationGuide)
+    [![automated-security-response-admin-template launch button](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=automated-security-response-on-aws-admin&templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Fautomated-security-response-on-aws%2Flatest%2Fautomated-security-response-admin.template&redirectId=ImplementationGuide)
 
    You can also [download the template](https://solutions-reference.s3.amazonaws.com/automated-security-response-on-aws/latest/automated-security-response-admin.template) as a starting point for your own implementation.
 
@@ -135,7 +135,7 @@ The `automated-security-response-member-roles.template` StackSet must be deploye
 
 1. Sign in to the AWS Management Console for each AWS Security Hub member account (including the admin account, which is also a member). Choose the button to launch the `automated-security-response-member-roles.template` AWS CloudFormation template. You can also [download the template](https://solutions-reference.s3.amazonaws.com/automated-security-response-on-aws/latest/automated-security-response-member-roles.template) as a starting point for your own implementation.
 
-    [![Launch solution](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=automated-security-response-on-aws-member-roles&templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Fautomated-security-response-on-aws%2Flatest%2Fautomated-security-response-member-roles.template&redirectId=ImplementationGuide)
+    [![Launch solution](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=automated-security-response-on-aws-member-roles&templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Fautomated-security-response-on-aws%2Flatest%2Fautomated-security-response-member-roles.template&redirectId=ImplementationGuide)
 
 1. The template launches in the US East (N. Virginia) Region by default. To launch this solution in a different AWS Region, use the Region selector in the AWS Management Console navigation bar.
 
@@ -164,7 +164,7 @@ The `automated-security-response-member` stack must be installed into each Secur
 
 1. Sign in to the AWS Management Console for each AWS Security Hub member account (including the admin account, which is also a member). Choose the button to launch the `automated-security-response-member.template` AWS CloudFormation template.
 
-    [![automated-security-response-member.template, Launch solution](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=automated-security-response-on-aws-member&templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Fautomated-security-response-on-aws%2Flatest%2Fautomated-security-response-member.template&redirectId=ImplementationGuide)
+    [![automated-security-response-member.template, Launch solution](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=automated-security-response-on-aws-member&templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Fautomated-security-response-on-aws%2Flatest%2Fautomated-security-response-member.template&redirectId=ImplementationGuide)
 
 You can also [download the template](https://solutions-reference.s3.amazonaws.com/automated-security-response-on-aws/latest/automated-security-response-member.template) as a starting point for your own implementation. . The template launches in the US East (N. Virginia) Region by default. To launch this solution in a different AWS Region, use the Region selector in the AWS Management Console navigation bar.
 
@@ -200,7 +200,7 @@ If you want to remove specific remediations from a member account, you can do so
 1. Select **Update nested stack** and choose **Update stack**.
 
     **Update nested stack**
-![Update nested stack dialog](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/nested-stack.png)
+![Update nested stack dialog](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/nested-stack.png)
 
 1. Select **Use current template** and choose **Next**.
 

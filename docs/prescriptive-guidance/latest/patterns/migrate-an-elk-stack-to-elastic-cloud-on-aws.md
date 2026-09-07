@@ -67,7 +67,7 @@ On-premises Elasticsearch 7.13 or later:
 
 The following diagram shows a typical on-premises architecture with different ingestion methods, node types, and Kibana. The different node types reflect the Elasticsearch cluster, authentication, and visualization roles.
 
-![Eight-step process including Beats, Logstash, Elasticsearch, and Kibana.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/23d1b437-22ff-420e-80ac-834f1116d234/images/937c4d22-429f-4673-86df-ae491d68389c.png)
+![Eight-step process including Beats, Logstash, Elasticsearch, and Kibana.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/23d1b437-22ff-420e-80ac-834f1116d234/images/937c4d22-429f-4673-86df-ae491d68389c.png)
 
 1. Ingestion from Beats to Logstash
 
@@ -98,7 +98,7 @@ Elastic Cloud is deployed to your software as a service (SaaS) account in multip
 
 **Target architecture **
 
-![Route 53 endpoints route traffic to Multi-AZ environments in two different Regions.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/23d1b437-22ff-420e-80ac-834f1116d234/images/16cbac49-0adb-4469-b546-ae4b1ca35357.png)
+![Route 53 endpoints route traffic to Multi-AZ environments in two different Regions.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/23d1b437-22ff-420e-80ac-834f1116d234/images/16cbac49-0adb-4469-b546-ae4b1ca35357.png)
 
 The managed Elastic Cloud infrastructure is:
 + Highly available, being present in multiple [Availability Zones](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) and multiple AWS Regions.
@@ -125,7 +125,7 @@ Elastic uses the Elastic Implementation Methodology to facilitate the delivery o
 
 The Elastic methodology combines traditional waterfall phasing with Scrum within the implementation phase. Configurations of technical requirements are delivered iteratively in a collaborative manner while minimizing risk.
 
-![Diagram showing the five stages of the Elastic Implementation Methodology.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/23d1b437-22ff-420e-80ac-834f1116d234/images/b041c61d-980e-49a0-a721-791c20edde64.png)
+![Diagram showing the five stages of the Elastic Implementation Methodology.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/23d1b437-22ff-420e-80ac-834f1116d234/images/b041c61d-980e-49a0-a721-791c20edde64.png)
 
 ## Tools
 <a name="migrate-an-elk-stack-to-elastic-cloud-on-aws-tools"></a>

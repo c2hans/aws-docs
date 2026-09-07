@@ -14,7 +14,7 @@ As a part of the [AWS Well-Architected Framework](https://aws.amazon.com/archite
 
 Deploy in under 30 minutes using CloudFormation templates or command-line tools to drive financial accountability, optimize costs, track usage, implement governance best practices, and achieve operational excellence at scale.
 
-![Cloud Intelligence Dashboard Framework](http://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashboards/images/CIDframework.png)
+![Cloud Intelligence Dashboard Framework](https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashboards/images/CIDframework.png)
 
 The Cloud Intelligence Dashboards offer various advantages, including, but not limited to:
 +  **Easy to Use**: All the data insights are presented in clear and understandable language, arranged by services, and include high-level summaries.
@@ -28,7 +28,7 @@ This documentation will walk you through deployment and usage of dashboards as w
 ## Cloud Intelligence Dashboards at re:invent 2023
 <a name="cloud-intelligence-dashboards-at-reinvent-2023"></a>
 
-[![AWS Videos](http://img.youtube.com/vi/keAfy8f84E0?rel=0/0.jpg)](http://www.youtube.com/watch?v=keAfy8f84E0?rel=0)
+[![AWS Videos](https://img.youtube.com/vi/keAfy8f84E0?rel=0/0.jpg)](https://www.youtube.com/watch?v=keAfy8f84E0?rel=0)
 
 ## Recommended User Journey
 <a name="recommended-user-journey"></a>

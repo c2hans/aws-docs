@@ -13,7 +13,7 @@ With this architecture, you can:
 + Store asset locations to initiate actions in your backend applications or to analyze data over time.
 + Analyze location history to identify trends and opportunities for optimization.
 
-![Architecture diagram showing asset tracking flow from mobile clients through AWS services to receiving user.](http://docs.aws.amazon.com/location/previous/developerguide/images/asset-tracking.PNG)
+![Architecture diagram showing asset tracking flow from mobile clients through AWS services to receiving user.](https://docs.aws.amazon.com/location/previous/developerguide/images/asset-tracking.PNG)
 
 The following provides an overview of the steps required to build an asset tracking application:
 

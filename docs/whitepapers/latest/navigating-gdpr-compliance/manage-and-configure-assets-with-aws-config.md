@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compl
 
 [AWS Config](https://aws.amazon.com/config/) provides a detailed view of the configuration of many types of AWS resources in your AWS account. This includes how the resources are related to one another, and how they were previously configured, so you can see how the configurations and relationships change over time.
 
-![AWS Config monitoring changing resources and applying rules for API access and storage.](http://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compliance/images/aws-config-architecture.png)
+![AWS Config monitoring changing resources and applying rules for API access and storage.](https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compliance/images/aws-config-architecture.png)
 
 *Figure 1 – Monitor configuration changes over time with AWS Config *
 

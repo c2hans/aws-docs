@@ -35,7 +35,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-direct-connect-fo
 **Note**
  If you do not apply any community tags, all AWS public IP addresses will be advertised into the customer network. Apply tags to limit the exposure into your network.
 
-![Reference diagram of advertising BGP Community Tags using Direct Connect.](http://docs.aws.amazon.com/whitepapers/latest/aws-direct-connect-for-amazon-connect/images/bgp-community-tags.png)
+![Reference diagram of advertising BGP Community Tags using Direct Connect.](https://docs.aws.amazon.com/whitepapers/latest/aws-direct-connect-for-amazon-connect/images/bgp-community-tags.png)
 
 1.  **Customer-advertised IP prefixes** – Public prefixes advertised to Amazon network
 
@@ -60,7 +60,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-direct-connect-fo
   +  Networks that peer with the AWS Global Network
   +  Amazon's transit providers
 
-![Reference diagram of public VIF routing of Amazon Connect traffic using Direct Connect.](http://docs.aws.amazon.com/whitepapers/latest/aws-direct-connect-for-amazon-connect/images/public-vif-routing.png)
+![Reference diagram of public VIF routing of Amazon Connect traffic using Direct Connect.](https://docs.aws.amazon.com/whitepapers/latest/aws-direct-connect-for-amazon-connect/images/public-vif-routing.png)
 
  As indicated by the number on the diagram:
 

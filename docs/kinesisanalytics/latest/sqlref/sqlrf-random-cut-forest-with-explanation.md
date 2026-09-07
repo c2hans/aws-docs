@@ -25,7 +25,7 @@ The algorithm accepts the `DOUBLE`, `INTEGER`, `FLOAT`, `TINYINT`, `SMALLINT`, `
 
 The following is a simple visual example of anomaly detection with different attribution scores in two-dimensional space. The diagram shows a cluster of blue data points and four outliers shown as red points. The red points have similar anomaly scores, but these four points are anomalous for different reasons. For points A1 and A2, most of the anomaly is attributable to their outlying y-values. In the case of A3 and A4, you can attribute most of the anomaly to their outlying x-values. Directionality is LOW for the y-value of A1, HIGH for the y-value of A2, HIGH for the x-value of A3, and LOW for the x-value of A4.
 
-![Anomaly detection chart showing 4 points that appear outside a cluster.](http://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/images/different_attributions.png)
+![Anomaly detection chart showing 4 points that appear outside a cluster.](https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/images/different_attributions.png)
 
 ## Syntax
 <a name="random-cut-forest-with-explanation-syntax"></a>
@@ -173,7 +173,7 @@ SELECT "ANOMALY_SCORE", "ANOMALY_EXPLANATION" FROM TABLE (RANDOM_CUT_FOREST_WITH
 
 The preceding example outputs a stream similar to the following.
 
-![Screenshot showing an output stream containing anomaly scores and explanation information.](http://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/images/anomaly_results.png)
+![Screenshot showing an output stream containing anomaly scores and explanation information.](https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/images/anomaly_results.png)
 
 ### Network and CPU Utilization Example
 <a name="random-cut-forest-with-explanation-examples-networkandcpu"></a>
@@ -194,7 +194,7 @@ This theoretical example shows two sets of data that follow an oscillating patte
 
   With the first anomaly in the idle CPU curve, this directionality curve shows a negative spike followed immediately by a smaller, positive spike. The second anomaly in the idle CPU curve produces a positive spike followed by a negative spike in directionality.
 
-![Stylized graph showing network utilization over time; idle CPU over time; anomaly score with explanation over time; directionality for network utilization; and directionality for idle CPU.](http://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/images/sql-reference-rcfwa-example-3.png)
+![Stylized graph showing network utilization over time; idle CPU over time; anomaly score with explanation over time; directionality for network utilization; and directionality for idle CPU.](https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/images/sql-reference-rcfwa-example-3.png)
 
 ### Blood Pressure Example
 <a name="random-cut-forest-with-explanation-examples-bloodpressure"></a>

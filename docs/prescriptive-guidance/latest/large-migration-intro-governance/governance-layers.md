@@ -9,7 +9,7 @@ Before the formal project kickoff, work with your project sponsor and stakeholde
 
 The following diagram shows a top-down approach in the governance layers. The top three layers are the management layers, which are responsible for establishing the large migration strategy, program governance, and the workstream approach. The bottom three layers are the delivery layers, which are responsible for governing the communication gates and regular meetings, such as infrastructure and operations meetings, and migration business hours.
 
-![Governance layers in order of management to delivery, as described in the following table.](http://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-intro-governance/images/guide-img/0ce37e8e-2c4b-4da7-ad35-503caa83d254/images/60c489a7-021e-4549-a71f-24ab4d29fefe.png)
+![Governance layers in order of management to delivery, as described in the following table.](https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-intro-governance/images/guide-img/0ce37e8e-2c4b-4da7-ad35-503caa83d254/images/60c489a7-021e-4549-a71f-24ab4d29fefe.png)
 
 The following table describes the objectives and typical participants for each governance layer.
 

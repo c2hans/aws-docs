@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 
  **Reference architecture**
 
-![Market data ingestion and distribution reference architecture diagram](http://docs.aws.amazon.com/wellarchitected/latest/financial-services-industry-lens/images/capital-markets-reference-architecture.png)
+![Market data ingestion and distribution reference architecture diagram](https://docs.aws.amazon.com/wellarchitected/latest/financial-services-industry-lens/images/capital-markets-reference-architecture.png)
 
  **Architecture description**
 

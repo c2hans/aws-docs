@@ -12,7 +12,7 @@ Logical replication is row-level replication. You can set up logical replication
 
 The following diagram shows the architecture for setting up HADR for your on-premises PostgreSQL database on Amazon EC2 by using logical replication.
 
-![Logical replication architecture](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-databases-postgresql-ec2/images/guide-img/d9d57133-1a8b-4b7f-bbe9-e908969d06b9/images/9452bde8-0fc5-4ecc-85a3-10aaafe0fe99.png)
+![Logical replication architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-databases-postgresql-ec2/images/guide-img/d9d57133-1a8b-4b7f-bbe9-e908969d06b9/images/9452bde8-0fc5-4ecc-85a3-10aaafe0fe99.png)
 
 In both physical and logical replication, you don't have the automatic failover option that you have in Amazon RDS and Amazon Aurora. However, you can use Patroni and etcd for automatic failover management.
 

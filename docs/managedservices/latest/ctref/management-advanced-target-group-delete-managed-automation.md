@@ -34,7 +34,7 @@ Delete target groups that are not attached to any load balancer. Before deleting
 
 Screenshot of this change type in the AMS console:
 
-![Delete Target Group page showing execution mode, version, classification path, and description.](http://docs.aws.amazon.com/managedservices/latest/ctref/images/guiTargetGroupDeleteCT.png)
+![Delete Target Group page showing execution mode, version, classification path, and description.](https://docs.aws.amazon.com/managedservices/latest/ctref/images/guiTargetGroupDeleteCT.png)
 
 **Note**
 When using manual CTs, AMS recommends that you use the ASAP **Scheduling** option (choose **ASAP** in the console, leave start and end time blank in the API/CLI) as these CTs require an AMS operator to examine the RFC, and possibly communicate with you before it can be approved and run. If you schedule these RFCs, be sure to allow at least 24 hours. If approval does not happen before the scheduled start time, the RFC is rejected automatically.

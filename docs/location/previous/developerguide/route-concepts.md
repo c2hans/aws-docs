@@ -25,7 +25,7 @@ For new code, use the latest `CalculateRoutes` operation under `geo-routes` inst
 
 The following shows you how to create and use a route calculator resource:
 
-![User selecting route points, SDK box in center, and map showing calculated route path.](http://docs.aws.amazon.com/location/previous/developerguide/images/illustration-route.PNG)
+![User selecting route points, SDK box in center, and map showing calculated route path.](https://docs.aws.amazon.com/location/previous/developerguide/images/illustration-route.PNG)
 
 1. First, you create a route calculator resource in your AWS account by selecting a data provider.
 

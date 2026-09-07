@@ -12,7 +12,7 @@ Align Leaders is designed to identify, onboard, and prepare key stakeholders and
 + [2.4 Assess organizational readiness](#align-readiness)
 + [2.5 Create a case for change](#align-case)
 
-![Align Leaders phase in AWS Change Acceleration 6-Point Framework and OCM Toolkit](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ocm/images/guide-img/f0dc8b97-6d82-45ff-86d7-7ed62d7be8b3/images/3b2cc5b9-e8b8-428a-abef-040e8a1ac33a.png)
+![Align Leaders phase in AWS Change Acceleration 6-Point Framework and OCM Toolkit](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ocm/images/guide-img/f0dc8b97-6d82-45ff-86d7-7ed62d7be8b3/images/3b2cc5b9-e8b8-428a-abef-040e8a1ac33a.png)
 
 ## 2.1 Align leadership
 <a name="align-leadership"></a>

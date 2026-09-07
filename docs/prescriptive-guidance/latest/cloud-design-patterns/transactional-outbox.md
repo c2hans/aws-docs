@@ -40,7 +40,7 @@ Use the transactional outbox pattern when:
 
 The following sequence diagram shows the order of events that happen during dual write operations.
 
-![Order of events during dual write operations](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/374adadf-6871-4750-a274-6e48948506e5.png)
+![Order of events during dual write operations](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/374adadf-6871-4750-a274-6e48948506e5.png)
 
 1. The flight service writes to the database and sends out an event notification to the payment service.
 
@@ -56,15 +56,15 @@ To demonstrate the pattern in the sequence diagram, we will use the following AW
 + The primary database is managed by [Amazon RDS](https://aws.amazon.com/rds/).
 + [Amazon Simple Queue Service (Amazon SQS)](https://aws.amazon.com/sqs/) acts as the message broker that receives event notifications.
 
-![Transactional outbox pattern with Lambda, Amazon RDS, and Amazon SQS](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/c50eba5b-3d62-480e-9b8e-232d88ae6258.png)
+![Transactional outbox pattern with Lambda, Amazon RDS, and Amazon SQS](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/c50eba5b-3d62-480e-9b8e-232d88ae6258.png)
 
 If the flight service fails after committing the transaction, this might result in the event notification not being sent.
 
-![Transactional failures after commit operation](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/f6f4bd29-004f-4fe3-87c9-6346d44d5f30.png)
+![Transactional failures after commit operation](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/f6f4bd29-004f-4fe3-87c9-6346d44d5f30.png)
 
 However, the transaction could fail and roll back, but the event notification might still be sent, causing the payment service to process the payment.
 
-![Transactional failures after commit operation with rollback](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/75e15962-7619-428e-9de7-755693ff6e06.png)
+![Transactional failures after commit operation with rollback](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/75e15962-7619-428e-9de7-755693ff6e06.png)
 
 To address this problem, you can use an outbox table or change data capture (CDC). The following sections discuss these two options and how you can implement them by using AWS services.
 
@@ -77,11 +77,11 @@ When the flight table is updated, the outbox table is also updated in the same t
 
 If the flight table update fails or the outbox table update fails, the entire transaction is rolled back, so there are no downstream data inconsistencies.
 
-![Rollback with no downstream data inconsistencies](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/8fa63f0b-09ad-4520-8b5f-e2e138f912ae.png)
+![Rollback with no downstream data inconsistencies](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/8fa63f0b-09ad-4520-8b5f-e2e138f912ae.png)
 
 In the following diagram, the transactional outbox architecture is implemented by using an Amazon RDS database. When the events processing service reads the outbox table, it recognizes only those rows that are part of a committed (successful) transaction, and then places the message for the event in the SQS queue, which is read by the payment service for further processing. This design resolves the dual write operations issue and preserves the order of messages and events by using timestamps and sequence numbers.
 
-![Design that resolves dual write operation issues](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/506e16e3-b26d-4067-b13e-d800bfaca7e0.png)
+![Design that resolves dual write operation issues](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/506e16e3-b26d-4067-b13e-d800bfaca7e0.png)
 
 #### Using change data capture (CDC)
 <a name="transactional-using-code-cdc"></a>
@@ -90,7 +90,7 @@ Some databases support the publishing of item-level modifications to capture cha
 
 [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) is a key-value NoSQL database that supports CDC updates. In the following sequence diagram, DynamoDB publishes item-level modifications to DynamoDB Streams. The event processing service reads from the streams and publishes the event notification to the payment service for further processing.
 
-![Transactional outbox with DynamoDB and DynamoDB Streams](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/ec594864-5c29-4399-a3b8-944800e60ca7.png)
+![Transactional outbox with DynamoDB and DynamoDB Streams](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/ec594864-5c29-4399-a3b8-944800e60ca7.png)
 
 DynamoDB Streams captures the flow of information relating to item-level changes in a DynamoDB table by using a time-ordered sequence.
 
@@ -98,7 +98,7 @@ You can implement a transactional outbox pattern by enabling streams on the Dyna
 + When the flight table is updated, the changed data is captured by DynamoDB steams, and the events processing service polls the stream for new records.
 + When new stream records become available, the Lambda function synchronously places the message for the event in the SQS queue for further processing. You can add an attribute to the DynamoDB item to capture timestamp and sequence number as needed to improve the robustness of the implementation.
 
-![Transactional outbox with CDC](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/aeecf61d-f51b-4240-a2dc-55aa31fe2615.png)
+![Transactional outbox with CDC](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/aeecf61d-f51b-4240-a2dc-55aa31fe2615.png)
 
 ## Sample code
 <a name="transactional-outbox-code"></a>

@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 ## Base module
 <a name="base-module"></a>
 
-![Secure Media Delivery at the Edge on AWS: Base module architecture diagram.](http://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/image3.png)
+![Secure Media Delivery at the Edge on AWS: Base module architecture diagram.](https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/image3.png)
 
  The base module includes solution components that are central to the solution, while the rest of the modules further expands on it. From a functional standpoint, it encompasses some of the key elements for providing the most fundamental outcomes for this solution, which are:
 +  A validator function implemented as a CloudFront Function code that you attach to your CloudFront distribution. This function inspects requests’ attached token and validates conditions.

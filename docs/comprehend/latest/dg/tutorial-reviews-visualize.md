@@ -92,7 +92,7 @@ The values in the **Fields list** depend on the column names you used to create 
 
 A pie chart similar to the following with positive, neutral, mixed, and negative sections is displayed. To see the count and percentage of a section, hover over it.
 
-![Console display of sentiment pie chart with sections positive, negative, neutral, and mixed.](http://docs.aws.amazon.com/comprehend/latest/dg/images/tutorial-reviews-pie.png)
+![Console display of sentiment pie chart with sections positive, negative, neutral, and mixed.](https://docs.aws.amazon.com/comprehend/latest/dg/images/tutorial-reviews-pie.png)
 
 ## Create an entities visualization
 <a name="tutorial-reviews-visualize-entities"></a>
@@ -115,7 +115,7 @@ Now create a second visualization with the entities dataset. You create a tree m
 
 A tree map similar to the following is displayed next to your pie chart. To see the count of a specific entity, hover over a block.
 
-![Console display of a tree map with blocks for each unique entity.](http://docs.aws.amazon.com/comprehend/latest/dg/images/tutorial-reviews-tree.png)
+![Console display of a tree map with blocks for each unique entity.](https://docs.aws.amazon.com/comprehend/latest/dg/images/tutorial-reviews-tree.png)
 
 ## Publish a dashboard
 <a name="tutorial-reviews-visualize-dashboard"></a>
@@ -138,7 +138,7 @@ After creating the visualizations, you can publish them as a dashboard. You can 
 
 You now have a dashboard with sentiment and entities visualizations that looks similar to the following example.
 
-![Console display of a QuickSight dashboard with a pie chart and a tree map.](http://docs.aws.amazon.com/comprehend/latest/dg/images/tutorial-reviews-dashboard.png)
+![Console display of a QuickSight dashboard with a pie chart and a tree map.](https://docs.aws.amazon.com/comprehend/latest/dg/images/tutorial-reviews-dashboard.png)
 
 **Tip**
  If you want to edit the visualizations in your dashboard, return to **Analyses** and edit the visualization that you want to update. Then, publish the dashboard again either as a new dashboard or as a replacement of the existing dashboard.

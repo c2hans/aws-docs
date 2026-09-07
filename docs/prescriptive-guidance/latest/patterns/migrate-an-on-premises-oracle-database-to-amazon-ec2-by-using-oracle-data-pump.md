@@ -45,7 +45,7 @@ Active Data Guard provides read-only access to a physical standby database and a
 
 The following image shows the target architecture if the primary and standby EC2 instances are in different AWS Regions.
 
-![Application connecting to the new database on the primary EC2 instance](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/bdd49395-2f99-43e2-ad1d-a1d09d90fb58/images/37fcd4dc-5516-416b-a280-0c5f002880de.png)
+![Application connecting to the new database on the primary EC2 instance](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/bdd49395-2f99-43e2-ad1d-a1d09d90fb58/images/37fcd4dc-5516-416b-a280-0c5f002880de.png)
 
 **Data migration architecture**
 
@@ -53,7 +53,7 @@ After you have finished setting up the target architecture, you use Oracle Data 
 
 The following image shows the architecture during the data migration. In this sample architecture, the primary and standby EC2 instances are in different AWS Regions.
 
-![The source DB connects to the target DB. Applications are disconnected from source and target DBs](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/bdd49395-2f99-43e2-ad1d-a1d09d90fb58/images/c58b669b-b11f-4d78-8911-c07b81b7c6a0.png)
+![The source DB connects to the target DB. Applications are disconnected from source and target DBs](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/bdd49395-2f99-43e2-ad1d-a1d09d90fb58/images/c58b669b-b11f-4d78-8911-c07b81b7c6a0.png)
 
 ## Tools
 <a name="migrate-an-on-premises-oracle-database-to-amazon-ec2-by-using-oracle-data-pump-tools"></a>

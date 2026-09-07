@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 
  **AWS log archiving architecture with EventBridge, Lambda, Kinesis, and S3 components.**
 
-![image5](http://docs.aws.amazon.com/solutions/latest/landing-zone-accelerator-on-aws/images/image5.png)
+![image5](https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerator-on-aws/images/image5.png)
 
 1. A CloudWatch log group update workflow runs during the **Logging** stage of the pipeline. A CloudFormation custom resource invokes a Lambda function that updates existing log groups to the increase log retention if it’s less than the solution log retention period, CloudWatch AWS KMS key, and subscription filter. The destination for the subscription filter is an Amazon Kinesis Data Stream deployed to the **Log Archive** account. For example, before solution is installed if there are existing log groups `LogGroupA` with 5 years retention and `LogGroupB` with 1 week retention. The solution is deployed with 1 year retention in global-config.yaml under `cloudwatchLogRetentionInDays`. Then `LogGroupA` will be unaffected with the update since 5 years is greater than 1 year but `LogGroupB` retention will change to 1 year. If in a subsequent update or initial update, solution is deployed with 10 years retention in global-config.yaml under `cloudwatchLogRetentionInDays`, then both log groups will change retention to 10 years.
 

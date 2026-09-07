@@ -23,9 +23,9 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/swift-customer-securi
 
  Leveraging container services greatly simplifies the security updates process for many customers. By using Amazon MQ and Amazon RDS for Oracle in the SWIFT secure zone, you do not need to worry about maintaining and patching the underlying EC2 instances. AWS is responsible for maintaining updates for the underlying EC2 instances for AWS Managed Services. In this model, it is your responsibility to upgrade the Amazon MQ broker version and Amazon RDS for Oracle major and minor versions. Refer to the following diagrams:
 
-![A diagram depicting The AWS Shared Responsibility Model for infrastructure services, container services, and abstracted services.](http://docs.aws.amazon.com/whitepapers/latest/swift-customer-security-controls-framework-2021/images/shared-responsibility-2.jpeg)
+![A diagram depicting The AWS Shared Responsibility Model for infrastructure services, container services, and abstracted services.](https://docs.aws.amazon.com/whitepapers/latest/swift-customer-security-controls-framework-2021/images/shared-responsibility-2.jpeg)
 
-![A diagram depicting AWS/customer management plan.](http://docs.aws.amazon.com/whitepapers/latest/swift-customer-security-controls-framework-2021/images/aws-customer-management.jpeg)
+![A diagram depicting AWS/customer management plan.](https://docs.aws.amazon.com/whitepapers/latest/swift-customer-security-controls-framework-2021/images/aws-customer-management.jpeg)
 
  You are responsible for maintaining security updates for the EC2 instances in the SWIFT secure zone. You can opt to use immutable infrastructure and [blue/green deployment strategy](https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-options/bluegreen-deployments.html) for deploying security updates for EC2 instances. In this topology, you would have a “golden” AMI pipeline to create the up-to-date operating system (OS) image, and another AMI pipeline to bundle the golden image with SWIFT applications and third-party libraries. The updated AMI is deployed and tested in the Dev / Test environment, and is subsequently promoted to the production environment. This testing and promotion process can be orchestrated in a pipeline created with AWS CodePipeline, or your existing CI / CD pipeline.
 

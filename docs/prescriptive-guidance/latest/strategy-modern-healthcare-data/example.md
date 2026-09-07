@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-mo
 
 AWS provides reference architectures that healthcare organizations can use to understand and build data platforms that support an agile approach to data. The following reference architecture illustrates a [data mesh architecture](https://aws.amazon.com/what-is/data-mesh/) for healthcare. In this architecture, data management responsibility is organized around business functions or technical domains. Users can search, share, and discover data at scale across organizational boundaries. Domain teams are responsible for collecting, transforming, and providing data related to or created by their business functions.
 
-![""](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-modern-healthcare-data/images/guide-img/767c667f-1cf9-4cc8-ab2a-cf7101055316/images/7dc8f390-07de-465e-92a6-7bb367f0e23d.png)
+![""](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-modern-healthcare-data/images/guide-img/767c667f-1cf9-4cc8-ab2a-cf7101055316/images/7dc8f390-07de-465e-92a6-7bb367f0e23d.png)
 
 The architecture diagram includes the following components:
 
@@ -49,7 +49,7 @@ A modern data strategy plays a critical role in generative AI solutions by helpi
 
 The following diagram shows an implementation of a modern health data strategy that uses a data mesh architecture to support generative AI solutions.
 
-![""](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-modern-healthcare-data/images/guide-img/767c667f-1cf9-4cc8-ab2a-cf7101055316/images/c497cbba-2897-451c-a430-b0d0aea53698.jpeg)
+![""](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-modern-healthcare-data/images/guide-img/767c667f-1cf9-4cc8-ab2a-cf7101055316/images/c497cbba-2897-451c-a430-b0d0aea53698.jpeg)
 
 The diagram shows the following:
 

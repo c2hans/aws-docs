@@ -19,7 +19,7 @@ You can run pg\_dump and pg\_restore from your target EC2 instance. We recommend
 
 The following diagram shows the architecture for migrating an on-premises PostgreSQL database to the AWS Cloud by using native PostgreSQL client applications.
 
-![Native PostgreSQL client application architecture](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-databases-postgresql-ec2/images/guide-img/d9d57133-1a8b-4b7f-bbe9-e908969d06b9/images/cc2228b2-7c9e-47af-8e31-243e987cd5c6.png)
+![Native PostgreSQL client application architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-databases-postgresql-ec2/images/guide-img/d9d57133-1a8b-4b7f-bbe9-e908969d06b9/images/cc2228b2-7c9e-47af-8e31-243e987cd5c6.png)
 
 The diagram shows the following workflow:
 

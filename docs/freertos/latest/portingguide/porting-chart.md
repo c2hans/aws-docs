@@ -7,4 +7,4 @@ source_url: https://docs.aws.amazon.com/freertos/latest/portingguide/porting-cha
 
 Use the porting flowchart below as a visual aid, as you port FreeRTOS to your board.
 
-![Flowchart for Configuring FreeRTOS with TLS Connectivity and MQTT.](http://docs.aws.amazon.com/freertos/latest/portingguide/images/afr-porting.png)
+![Flowchart for Configuring FreeRTOS with TLS Connectivity and MQTT.](https://docs.aws.amazon.com/freertos/latest/portingguide/images/afr-porting.png)

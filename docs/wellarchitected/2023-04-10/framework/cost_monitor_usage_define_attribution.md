@@ -28,7 +28,7 @@ Work with your finance team and other relevant stakeholders to understand the re
 
  As an example, the following diagram shows you how can you group your costs and usage information in your organization such as having multiple teams (cost category) having multiple environments (rules) and each environment having multiple resources or assets (dimensions).
 
-![Flowchart detailing the relationship between cost and usage within an organization.](http://docs.aws.amazon.com/wellarchitected/2023-04-10/framework/images/cost-usage-organization-chart.png)
+![Flowchart detailing the relationship between cost and usage within an organization.](https://docs.aws.amazon.com/wellarchitected/2023-04-10/framework/images/cost-usage-organization-chart.png)
 
 ## Implementation steps
 <a name="implementation-steps"></a>

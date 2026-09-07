@@ -38,7 +38,7 @@ Use the retry with backoff pattern when:
 
 The following diagram illustrates how Service A can retry the calls to Service B until a successful response is returned. If Service B doesn't return a successful response after a few tries, Service A can stop retrying and return a failure to its caller.
 
-![High-level architecture for retry with backoff pattern](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/603c4a69-5bf2-4b3e-adab-ca5ecdc570b6.png)
+![High-level architecture for retry with backoff pattern](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/603c4a69-5bf2-4b3e-adab-ca5ecdc570b6.png)
 
 ### Implementation using AWS services
 <a name="implementation-using-aws-services.a3aa1d68-6d1d-5ee0-8a0b-c44e38a75f2f"></a>
@@ -49,7 +49,7 @@ If the call to the `Get sentiment` Lambda function fails, the workflow retries t
 
 In this example, a maximum of three retries are configured with an increase multiplier of 1.5 seconds. If the first retry occurs after 3 seconds, the second retry occurs after 3 x 1.5 seconds = 4.5 seconds, and the third retry occurs after 4.5 x 1.5 seconds = 6.75 seconds. If the third retry is unsuccessful, the workflow fails. The backoff logic doesn't require any custom code―it's provided as a configuration by AWS Step Functions.
 
-![Retry with backoff pattern with AWS services](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/9c4b645d-1be4-45ec-84ad-89f2d12b7d1a.png)
+![Retry with backoff pattern with AWS services](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/9c4b645d-1be4-45ec-84ad-89f2d12b7d1a.png)
 
 ### Sample code
 <a name="sample-code.65fd18cf-e6d2-5794-aa63-fa601505e6ea"></a>

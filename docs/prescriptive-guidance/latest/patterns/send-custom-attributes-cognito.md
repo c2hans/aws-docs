@@ -40,7 +40,7 @@ The code and samples in this pattern are not recommended for production workload
 
 The following diagram shows the target architecture for this pattern. It also shows how the Node.js application might work with a backend to update databases. However, the backend database updates are outside the scope of this pattern.
 
-![A Node.js application issuing an access token with custom attributes to an Amazon Cognito user pool.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9f0855e6-77f9-48c2-846e-f9c317127e1f/images/8c52c88b-8954-4b4c-aed3-fd8c22f84c1d.png)
+![A Node.js application issuing an access token with custom attributes to an Amazon Cognito user pool.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9f0855e6-77f9-48c2-846e-f9c317127e1f/images/8c52c88b-8954-4b4c-aed3-fd8c22f84c1d.png)
 
 The diagram shows the following workflow:
 

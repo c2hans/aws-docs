@@ -18,4 +18,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-design-of-aw
 
  Hypervisors typically employ a general-purpose operating system to interface with a variety of system hardware, run device models, and run other management software for the virtualization system. This operating system is commonly implemented as a special privileged virtual machine which, for example, the [Xen Project calls the system’s dom0](https://wiki.xenproject.org/wiki/Dom0), and [Hyper-V calls the system’s root/parent partition](https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/reference/hyper-v-architecture). In early generation EC2 instances, this took the form of a special Amazon Linux VM running as what in Xen terminology is called *domain 0*, or *dom0*.
 
-![A diagram depicting classical virtualization architecture.](http://docs.aws.amazon.com/whitepapers/latest/security-design-of-aws-nitro-system/images/virtualization-architecture.png)
+![A diagram depicting classical virtualization architecture.](https://docs.aws.amazon.com/whitepapers/latest/security-design-of-aws-nitro-system/images/virtualization-architecture.png)

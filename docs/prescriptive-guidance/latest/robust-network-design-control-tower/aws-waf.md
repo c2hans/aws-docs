@@ -9,4 +9,4 @@ You can use AWS WAF as a source to help protect your application from vulnerabil
 
 The following diagram shows inbound traffic coming through AWS WAF to the Application Load Balancer in the network account. From the network account, the traffic is routed to the Network Load Balancers or Application Load Balancer in the OU accounts and sent to the target EC2 instances.
 
-![""](http://docs.aws.amazon.com/prescriptive-guidance/latest/robust-network-design-control-tower/images/guide-img/734c65f3-3001-4321-a428-6ffbda3b44b0/images/fca1cd0f-85c6-4b96-85fc-80fbb11c0ded.png)
+![""](https://docs.aws.amazon.com/prescriptive-guidance/latest/robust-network-design-control-tower/images/guide-img/734c65f3-3001-4321-a428-6ffbda3b44b0/images/fca1cd0f-85c6-4b96-85fc-80fbb11c0ded.png)

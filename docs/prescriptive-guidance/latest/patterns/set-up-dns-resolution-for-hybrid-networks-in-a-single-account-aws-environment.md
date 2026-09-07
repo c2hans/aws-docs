@@ -36,7 +36,7 @@ This pattern covers hybrid DNS resolution in an AWS single-account environment. 
 
 **Target architecture**
 
-![Workflow of Hybrid DNS resolution in an AWS single-account environment using Route 53 Resolver.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/120dedc8-cc6c-4aa7-be11-c70a7ee80642/images/7b75f534-1adc-4a39-86d6-5c4596ff7b6a.png)
+![Workflow of Hybrid DNS resolution in an AWS single-account environment using Route 53 Resolver.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/120dedc8-cc6c-4aa7-be11-c70a7ee80642/images/7b75f534-1adc-4a39-86d6-5c4596ff7b6a.png)
 
 ## Tools
 <a name="set-up-dns-resolution-for-hybrid-networks-in-a-single-account-aws-environment-tools"></a>

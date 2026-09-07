@@ -13,7 +13,7 @@ The [Generative AI and NLP approaches for healthcare and life sciences](hcls-opt
 
 By evaluating the known limitations of LLMs for medical domain tasks and your use case, you can choose which approach will work best for your task. The following decision tree can help you choose an LLM approach for your medical NLP task:
 
-![Decision tree for choosing an approach to solve a medical domain NLP task.](http://docs.aws.amazon.com/prescriptive-guidance/latest/generative-ai-nlp-healthcare/images/guide-img/30175f3c-77fd-446d-b6ec-cdf244f32c6e/images/958d362f-e528-40b3-b2f5-7a7878ea1b2a.png)
+![Decision tree for choosing an approach to solve a medical domain NLP task.](https://docs.aws.amazon.com/prescriptive-guidance/latest/generative-ai-nlp-healthcare/images/guide-img/30175f3c-77fd-446d-b6ec-cdf244f32c6e/images/958d362f-e528-40b3-b2f5-7a7878ea1b2a.png)
 
 The diagram shows the following workflow:
 

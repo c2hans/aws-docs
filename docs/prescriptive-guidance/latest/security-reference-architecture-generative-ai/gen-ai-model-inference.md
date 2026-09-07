@@ -75,7 +75,7 @@ Organizations implementing AI at scale should adopt a multi-account strategy tha
 + **AI inference account** – Production environment for AI model consumption and application hosting
 + **AI training account** – Secured environment for handling sensitive training data and production model development
 
-![Multi-account architecture for AI workloads.](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-generative-ai/images/guide-img/a349f18f-a9fd-43a3-9a48-27534bf6412a/images/9eb62ad9-5711-4135-8ee2-912542d0655d.png)
+![Multi-account architecture for AI workloads.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-generative-ai/images/guide-img/a349f18f-a9fd-43a3-9a48-27534bf6412a/images/9eb62ad9-5711-4135-8ee2-912542d0655d.png)
 
 ### AI development account
 <a name="ai-development-account.b32ad59a-0a72-5805-9a61-f2ed4ad1d323"></a>

@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/a
 +  AWS DXGW directly attached to the VPCs using VGW.
 +  Optional usage of AWS Transit Gateway for Inter-VPC communication.
 
-![Diagram showing AWS DX – DXGW with VGW, Single AWS Region](http://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/images/dxgw-with-vgw-single-region.png)
+![Diagram showing AWS DX – DXGW with VGW, Single AWS Region](https://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/images/dxgw-with-vgw-single-region.png)
 
  **Connectivity model attributes:**
 +  Provides the ability to connect to VPCs and DX connections in other Regions in the future.

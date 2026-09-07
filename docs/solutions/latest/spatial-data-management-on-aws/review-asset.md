@@ -14,7 +14,7 @@ When you select a file, the solution generates a preview to help you quickly ver
 
 The preview displays extracted content based on the file type. For example, the screenshot shows extracted panorama images and a simple low-resolution point cloud turntable view.
 
-![File preview showing panorama and point cloud](http://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/asset-create-complete-file-preview.png)
+![File preview showing panorama and point cloud](https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/asset-create-complete-file-preview.png)
 
 ## Review auto-extracted attributes
 <a name="review-extracted-attributes"></a>
@@ -33,7 +33,7 @@ Auto-extraction is currently supported for E57, LAZ, GLB, glTF, and image files.
 
 The accepted attributes are now saved as part of that files metadata.
 
-![Right-hand panel showing suggested attributes](http://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/auto-extracted-attribute-suggestions.png)
+![Right-hand panel showing suggested attributes](https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/auto-extracted-attribute-suggestions.png)
 
 ## Verify and approve assets
 <a name="verify-and-approve"></a>
@@ -48,4 +48,4 @@ Assets are created in `Draft` state by default. After verifying the asset conten
 
 The asset is now marked as reviewed, indicating it has been validated and is ready for use by other team members with appropriate permissions.
 
-![Asset details screen — mark reviewed actions menu](http://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/mark-reviewed.png)
+![Asset details screen — mark reviewed actions menu](https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/mark-reviewed.png)

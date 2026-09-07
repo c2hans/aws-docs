@@ -24,6 +24,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/cross-domain-solution
 
  Figure 1 shows a traditional cross-domain solution deployment between two security domains. Security Domain A is connected to Security Domain B using a CDS. If the CDS is an OWT device, resources deployed in Network A can communicate to resources deployed in Network B by sending data through the CDS. If instead, the CDS is a multidomain data guard, resources in either security domain can communicate with the other security domain by sending data through the CDS. In the following example, the CDS is administrated and physically located within the protections of Security Domain B.
 
-![Traditional cross-domain solution deployment between two security domains](http://docs.aws.amazon.com/whitepapers/latest/cross-domain-solutions/images/traditional-cross-domain-solution-deployment.png)
+![Traditional cross-domain solution deployment between two security domains](https://docs.aws.amazon.com/whitepapers/latest/cross-domain-solutions/images/traditional-cross-domain-solution-deployment.png)
 
  *Figure 1: Traditional CDS deployment*

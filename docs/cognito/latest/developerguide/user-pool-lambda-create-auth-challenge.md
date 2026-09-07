@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-
 
 The create auth challenge trigger is a Lambda function that has the details of each challenge declared by the define auth challenge trigger. It processes the challenge name declared by the define auth challenge trigger and returns a `publicChallengeParameters` that your application must present to the user. This function then provides your user pool with the answer to the challenge, `privateChallengeParameters`, that your user pool passes to the verify auth challenge trigger. Where your define auth challenge trigger manages the challenge sequence, your create auth challenge trigger manages the challenge contents.
 
-![Challenge Lambda triggers](http://docs.aws.amazon.com/cognito/latest/developerguide/images/lambda-challenges2.png)
+![Challenge Lambda triggers](https://docs.aws.amazon.com/cognito/latest/developerguide/images/lambda-challenges2.png)
 
 **Create auth challenge**
 Amazon Cognito invokes this trigger after **Define Auth Challenge** if a custom challenge has been specified as part of the **Define Auth Challenge** trigger. It creates a [custom authentication flow](https://docs.aws.amazon.com/cognito/latest/developerguide/amazon-cognito-user-pools-authentication-flow.html#amazon-cognito-user-pools-custom-authentication-flow).

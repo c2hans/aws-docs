@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation
 
  The general approach here fits very much with common design best practices. This usually translates into the creation libraries, modules, or lightweight frameworks that are shared by teams. The goal here is to move the mechanics of acquiring a scoped context into shared constructs that can be leveraged across your team. This diagram in Figure 20 provides a conceptual view of this notion of hiding away the details of isolation.
 
-![Diagram showing using libraries for isolation standardization.](http://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/images/using-libraries-for-isolation-standardization.jpg)
+![Diagram showing using libraries for isolation standardization.](https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/images/using-libraries-for-isolation-standardization.jpg)
 
  Here you’ll see that we have two microservices (product and order) that need to acquire credential to comply with the pooled isolation model of our system. What we’ve done here is moved all of the code and details of this process to shared libraries (these are not separate microservices). When our microservice needs scoped credentials, it will call into the isolation manager, passing in a JWT token that that was supplied to the microservices. This isolation manager will then get the tenantId from the token manager, which owns all the logic associated with cracking open the JWT and extracting tenant information. It will then get the policy for this tenant from the policy manager and use that policy to get a set of tenant-scoped credentials. These credentials would then be returned to the calling service.
 

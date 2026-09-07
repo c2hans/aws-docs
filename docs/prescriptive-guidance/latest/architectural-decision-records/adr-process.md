@@ -35,7 +35,7 @@ Every team member can create an ADR, but the team should establish a definition 
 
 The following diagram illustrates the ADR creation, ownership, and adoption process.
 
-![ADR creation, ownership, and adoption process](http://docs.aws.amazon.com/prescriptive-guidance/latest/architectural-decision-records/images/guide-img/19b175a3-1b40-432f-9670-fef30553db34/images/80b82b97-6bdf-41e5-81c3-e91d24787ce4.png)
+![ADR creation, ownership, and adoption process](https://docs.aws.amazon.com/prescriptive-guidance/latest/architectural-decision-records/images/guide-img/19b175a3-1b40-432f-9670-fef30553db34/images/80b82b97-6bdf-41e5-81c3-e91d24787ce4.png)
 
 After the team identifies an architectural decision and its owner, the ADR owner provides the ADR in the **Proposed** state at the beginning of the process. ADRs in the **Proposed** state are ready for review.
 
@@ -51,7 +51,7 @@ ADRs and the decision log they create represent decisions made by the team and p
 
 The following diagram shows the process of applying an ADR to validate if a change in a software component conforms to the agreed decisions.
 
-![Using an ADR to validate software component changes](http://docs.aws.amazon.com/prescriptive-guidance/latest/architectural-decision-records/images/guide-img/19b175a3-1b40-432f-9670-fef30553db34/images/c4195e76-f072-429e-94dc-89009b80fb88.png)
+![Using an ADR to validate software component changes](https://docs.aws.amazon.com/prescriptive-guidance/latest/architectural-decision-records/images/guide-img/19b175a3-1b40-432f-9670-fef30553db34/images/c4195e76-f072-429e-94dc-89009b80fb88.png)
 
 As a good practice, each software change should go through peer reviews and require at least one approval. During the code review, a code reviewer might find changes that violate one or more ADRs. In this case, the reviewer asks the author of the code change to update the code, and shares a link to the ADR. When the author updates the code, it is approved by peer reviewers and merged into the main code base.
 
@@ -60,4 +60,4 @@ As a good practice, each software change should go through peer reviews and requ
 
 The team should treat ADRs as immutable documents after the team accepts or rejects them. Changes to an existing ADR requires creating a new ADR, establishing a review process for the new ADR, and approving the ADR. If the team approves the new ADR, the owner should change the state of the old ADR to **Superseded**. The following diagram illustrates the update process.
 
-![ADR update process](http://docs.aws.amazon.com/prescriptive-guidance/latest/architectural-decision-records/images/guide-img/19b175a3-1b40-432f-9670-fef30553db34/images/1fe62de5-6dff-4b73-997d-7c3eadb75c04.png)
+![ADR update process](https://docs.aws.amazon.com/prescriptive-guidance/latest/architectural-decision-records/images/guide-img/19b175a3-1b40-432f-9670-fef30553db34/images/1fe62de5-6dff-4b73-997d-7c3eadb75c04.png)

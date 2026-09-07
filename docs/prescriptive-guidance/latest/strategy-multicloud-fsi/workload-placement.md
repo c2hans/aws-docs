@@ -38,7 +38,7 @@ Each workload might require a minimum score per capability to meet external cons
 
 After you select and enable your CSPs—including setting up a secure landing zone, training your IT staff, and establishing a CCoE—follow a prescriptive selection process to determine which CSP will host each workload in production. In rare instances, the same application might be placed concurrently in multiple CSPs; however, this is not typical except for ISV and SaaS workloads. The placement strategy can be documented in a flowchart that addresses the considerations discussed in this paper. The following diagram provides an example.
 
-![CSP selection process for multicloud.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-multicloud-fsi/images/guide-img/79fe34d7-841b-4bd6-a6da-96f5401c6a67/images/349f20f9-008c-4f62-8a4b-fea1971833e5.png)
+![CSP selection process for multicloud.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-multicloud-fsi/images/guide-img/79fe34d7-841b-4bd6-a6da-96f5401c6a67/images/349f20f9-008c-4f62-8a4b-fea1971833e5.png)
 
 We recommend that you follow a phased approach with checkpoints to develop your workload placement strategy. Remember that multicloud is a strategy, not a goal. It requires balancing business value, technological feasibility, product velocity, and cost.
 

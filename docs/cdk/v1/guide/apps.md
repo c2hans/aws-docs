@@ -142,7 +142,7 @@ The `App` construct doesn't require any initialization arguments, because it's t
 
 The following diagram shows the phases that the AWS CDK goes through when you call the **cdk deploy**. This command deploys the resources that your app defines.
 
-![CDK CLI workflow showing app source code through construct, prepare, validate, and synthesize phases to deployment.](http://docs.aws.amazon.com/cdk/v1/guide/images/Lifecycle.png)
+![CDK CLI workflow showing app source code through construct, prepare, validate, and synthesize phases to deployment.](https://docs.aws.amazon.com/cdk/v1/guide/images/Lifecycle.png)
 
 An AWS CDK app goes through the following phases in its lifecycle.
 

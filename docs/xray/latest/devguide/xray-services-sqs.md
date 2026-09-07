@@ -9,7 +9,7 @@ AWS X-Ray integrates with Amazon Simple Queue Service (Amazon SQS) to trace mess
 
 AWS X-Ray supports tracing event-driven applications using Amazon SQS and AWS Lambda. Use the CloudWatch console to see a connected view of each request as it's queued with Amazon SQS and processed by a downstream Lambda function. Traces from upstream message producers are automatically linked to traces from downstream Lambda consumer nodes, creating an end-to-end view of the application. For more information, see [tracing event-driven applications](xray-tracelinking.md).
 
-![Trace map from Lambda through the Amazon SQS queue.](http://docs.aws.amazon.com/xray/latest/devguide/images/console-batch-servicemap-linkededge.png)
+![Trace map from Lambda through the Amazon SQS queue.](https://docs.aws.amazon.com/xray/latest/devguide/images/console-batch-servicemap-linkededge.png)
 
 Amazon SQS supports the following tracing header instrumentation:
 + **Default HTTP Header** – The X-Ray SDK automatically populates the trace header as an HTTP header when you call Amazon SQS through the AWS SDK. The default trace header is carried by `X-Amzn-Trace-Id` and corresponds to all messages included in a [`SendMessage`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html) or [`SendMessageBatch`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessageBatch.html) request. To learn more about the default HTTP header, see [Tracing header](xray-concepts.md#xray-concepts-tracingheader).

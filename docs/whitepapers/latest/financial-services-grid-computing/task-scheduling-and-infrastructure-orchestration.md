@@ -28,7 +28,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/financial-services-gr
 
  Though financial services workloads are often composed of very large volumes of relatively short-running calculations, there are some cases where longer-running calculations need to be scheduled. In these situations, [AWS Batch](https://aws.amazon.com/batch/) could be a viable alternative or a complementary service. AWS Batch plans, schedules, and runs batch workloads while dynamically provisioning compute resources using containers. You can configure parallel computation and job dependencies to allow for workloads where the results of one job are used by another. AWS Batch is offered at no additional charge; only the AWS resources it consumes generate costs.
 
-![AWS Batch overview](http://docs.aws.amazon.com/whitepapers/latest/financial-services-grid-computing/images/aws-batch-overview.png)
+![AWS Batch overview](https://docs.aws.amazon.com/whitepapers/latest/financial-services-grid-computing/images/aws-batch-overview.png)
 
  AWS Batch decouples and templates the definition of jobs and submission into queues. Jobs are then run in compute environments linked to the queues. AWS Batch supports Amazon ECS, Fargate, and Amazon EKS as compute environments.
 
@@ -37,7 +37,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/financial-services-gr
 ## A simple HPC approach with Amazon SQS and Amazon EC2
 <a name="simple-approach-sqs-ec2"></a>
 
-![Diagram showing a simple HPC approach with Amazon SQS](http://docs.aws.amazon.com/whitepapers/latest/financial-services-grid-computing/images/simple-hpc-approach-with-sqs.png)
+![Diagram showing a simple HPC approach with Amazon SQS](https://docs.aws.amazon.com/whitepapers/latest/financial-services-grid-computing/images/simple-hpc-approach-with-sqs.png)
 
  Amazon SQS queues can be serviced by groups of Amazon EC2 instances that are managed by AWS Auto Scaling groups. You can configure the AWS Auto Scaling groups to scale capacity up or down based on metrics such as average CPU load, or the depth of the queue. AWS Auto Scaling groups can also incorporate provisioning strategies that can combine Amazon EC2 On-Demand Instances or Spot Instances to provide flexible and low-cost capacity.
 
@@ -48,12 +48,12 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/financial-services-gr
 
  You can also configure Lambda to process workloads from SQS, scaling out horizontally to consume messages in a queue. Lambda attempts to process the items from the queue as quickly as possible, and is constrained only by the maximum concurrency allowed by the account, memory, and runtime limits. You can also allocate up to 10GB of memory and six vCPUs to your functions, which also have support for the AVX2 instruction set. This makes Lambda functions suitable for a wide range of HPC applications. <a name="ServerlessHPC"></a>
 
-![Diagram showing a serverless, event-driven approach to HPC](http://docs.aws.amazon.com/whitepapers/latest/financial-services-grid-computing/images/serverless-event-driven-hpc-approach.png)
+![Diagram showing a serverless, event-driven approach to HPC](https://docs.aws.amazon.com/whitepapers/latest/financial-services-grid-computing/images/serverless-event-driven-hpc-approach.png)
 
 ## A serverless, event-driven approach to HPC
 <a name="serverless-event-driven-hpc"></a>
 
-![Diagram showing a cloud-native serverless scheduler architecture](http://docs.aws.amazon.com/whitepapers/latest/financial-services-grid-computing/images/cloud-native-serverless-scheduler-architecture.png)
+![Diagram showing a cloud-native serverless scheduler architecture](https://docs.aws.amazon.com/whitepapers/latest/financial-services-grid-computing/images/cloud-native-serverless-scheduler-architecture.png)
 
  Some FSI customers choose to relay on the existing container orchestration platforms such as Amazon ECS and Amazon EKS for their grid systems. These are fully managed AWS solutions that provide scalability, availability, load balancing, and integration with other AWS services. Both Amazon ECS and Amazon EKS have a concept of tasks (or jobs in EKS) which represent a unit of compute; in other words, a task can be submitted to a cluster, which in turn will deploy a container that will do the computation and will end the container when the task is completed.
 
@@ -63,7 +63,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/financial-services-gr
 
  Taking these concepts further, the blog [Cloud-native, high throughput grid computing using the HTC-Grid solution](https://aws.amazon.com/blogs/hpc/cloud-native-high-throughput-computing-with-aws-htc-grid/) describes an open-source, scalable, cloud-native high-throughput compute scheduling solution. HTC-Grid is an architectural blueprint that shows an example of a pull-base architecture built using different computational backends (ECS, EKS, or EC2). Note that HTC-Grid is not a supported AWS service offering; however, it can be used to validate the properties of such an architecture and evolve a custom solution based on fully managed, cloud-native services.
 
-![HTC-Grid - A cloud-native serverless scheduler architecture](http://docs.aws.amazon.com/whitepapers/latest/financial-services-grid-computing/images/htc-grid.png)
+![HTC-Grid - A cloud-native serverless scheduler architecture](https://docs.aws.amazon.com/whitepapers/latest/financial-services-grid-computing/images/htc-grid.png)
 
  When you explore these alternative cloud-native approaches, especially in comparison to established schedulers, it’s important to consider all of the features required to run what can be a critical system. Metrics gathering, data management, and management tooling are only some of the typical requirements that must be addressed and should not be overlooked.
 

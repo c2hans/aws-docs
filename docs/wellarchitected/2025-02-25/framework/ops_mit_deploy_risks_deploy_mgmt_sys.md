@@ -30,7 +30,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/ops
 
 | CodeDeploy workflow for Amazon EC2 | CodeDeploy workflow for Amazon ECS | CodeDeploy workflow for Lambda |
 | --- | --- | --- |
-|  ![Deployment process flow for Amazon EC2](http://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/images/deployment-process-ec2.png)  |  ![Deployment process flow for Amazon ECS](http://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/images/deployment-process-ecs.png)  |  ![Deployment process flow for Lambda](http://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/images/deployment-process-lambda.png)  |
+|  ![Deployment process flow for Amazon EC2](https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/images/deployment-process-ec2.png)  |  ![Deployment process flow for Amazon ECS](https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/images/deployment-process-ecs.png)  |  ![Deployment process flow for Lambda](https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/images/deployment-process-lambda.png)  |
 
 ### Implementation steps
 <a name="implementation-steps"></a>

@@ -17,7 +17,7 @@ It’s also possible that in some of the metrics that indicate the health of the
 +  **Latency** – Measure multiple percentiles of latency for successful work performed across critical operations.
 
    Once again, you can create the *in a row* and *m out of n* metric alarms for each metric in each metric category that you want to measure. As before, these can be combined into a composite alarm to determine that this shared resource is the source of impact across Availability Zones. You want to be able to identify impact to more than one Availability Zone with the composite alarms, but the impact does not necessarily need to be *all* Availability Zones. The high-level composite alarm structure for this kind of approach is shown in the following figure.
-![Diagram showing an example of creating alarms to detect impact to multiple Availability Zones caused by a single resource](http://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-resilience-patterns/images/creating-alarms-to-detect-impact.png)
+![Diagram showing an example of creating alarms to detect impact to multiple Availability Zones caused by a single resource](https://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-resilience-patterns/images/creating-alarms-to-detect-impact.png)
 
 You will notice that this diagram is less prescriptive about what type of metric alarms should be used and the hierarchy of the composite alarms. This is because discovering this kind of problem can be difficult and will require careful attention to the right signals for the shared resource. Those signals may also need to be evaluated in specific ways.
 

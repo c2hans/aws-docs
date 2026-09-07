@@ -6,14 +6,14 @@ Version 4 (V4) of the AWS SDK for .NET has been released\!
 
 For information about breaking changes and migrating your applications, see the [migration topic](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html).
 
- [![Orange button with text "Click here for details".](http://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
+ [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
 # What is the AWS SDK for .NET
 <a name="welcome"></a>
 
 The AWS SDK for .NET makes it easier to build .NET applications that tap into cost-effective, scalable, and reliable AWS services such as Amazon Simple Storage Service (Amazon S3) and Amazon Elastic Compute Cloud (Amazon EC2). The SDK simplifies the use of AWS services by providing a set of libraries that are consistent and familiar for .NET developers..
 
-![Overview of the AWS SDK for .NET](http://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/overview.png)
+![Overview of the AWS SDK for .NET](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/overview.png)
 
 (**OK, got it\!** I'm ready to [set up](net-dg-config.md) and [take a quick tour](quick-start.md).)
 

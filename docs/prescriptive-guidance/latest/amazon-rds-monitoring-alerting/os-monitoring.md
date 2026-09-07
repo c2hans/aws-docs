@@ -39,15 +39,15 @@ For a complete reference of all metrics that are published by Amazon RDS to Clou
 
 The following chart shows examples of CloudWatch metrics for Amazon RDS that are displayed on the Amazon RDS console.
 
-![CloudWatch metrics for Amazon RDS displayed on the Amazon RDS console](http://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-monitoring-alerting/images/guide-img/9dd4cf9c-a2d9-4127-a3e3-2225b43b6c9a/images/98949662-617e-4546-9243-f57fb7f9f7c7.png)
+![CloudWatch metrics for Amazon RDS displayed on the Amazon RDS console](https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-monitoring-alerting/images/guide-img/9dd4cf9c-a2d9-4127-a3e3-2225b43b6c9a/images/98949662-617e-4546-9243-f57fb7f9f7c7.png)
 
 The following chart shows similar metrics displayed in the CloudWatch dashboard.
 
-![CloudWatch metrics for Amazon RDS that are displayed on the CloudWatch console](http://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-monitoring-alerting/images/guide-img/9dd4cf9c-a2d9-4127-a3e3-2225b43b6c9a/images/af59f639-585c-454c-ab52-660cbf981279.png)
+![CloudWatch metrics for Amazon RDS that are displayed on the CloudWatch console](https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-monitoring-alerting/images/guide-img/9dd4cf9c-a2d9-4127-a3e3-2225b43b6c9a/images/af59f639-585c-454c-ab52-660cbf981279.png)
 
 The other set of OS metrics is collected by [Enhanced Monitoring](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Monitoring.OS.overview.html) for Amazon RDS. This tool gives you deeper visibility into the health of your Amazon RDS for MariaDB and Amazon RDS for MySQL DB instances, by providing real-time system metrics and OS process information. When you [enable Enhanced Monitoring](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Monitoring.OS.Enabling.html) on your DB instance and set the desired granularity, the tool collects the operating system metrics and process information, which you can display and analyze on the [Amazon RDS console](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Monitoring.html), as shown in the following screen illustration.
 
-![OS metrics collected by Enhanced Monitoring](http://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-monitoring-alerting/images/guide-img/9dd4cf9c-a2d9-4127-a3e3-2225b43b6c9a/images/37a57d7d-f622-43ab-8430-7a9ac1da60c5.png)
+![OS metrics collected by Enhanced Monitoring](https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-monitoring-alerting/images/guide-img/9dd4cf9c-a2d9-4127-a3e3-2225b43b6c9a/images/37a57d7d-f622-43ab-8430-7a9ac1da60c5.png)
 
 Some of the key metrics provided by Enhanced Monitoring are:
 + `cpuUtilization.total` ‒ The total percentage of the CPU in use.
@@ -65,7 +65,7 @@ On the Amazon RDS console, the OS process list provides details for each process
 
 The following screen illustration shows the OS process list in the Amazon RDS console.
 
-![OS process list in the Amazon RDS console](http://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-monitoring-alerting/images/guide-img/9dd4cf9c-a2d9-4127-a3e3-2225b43b6c9a/images/49ef1f56-1eeb-45c0-96cb-db69af8ca32a.png)
+![OS process list in the Amazon RDS console](https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-monitoring-alerting/images/guide-img/9dd4cf9c-a2d9-4127-a3e3-2225b43b6c9a/images/49ef1f56-1eeb-45c0-96cb-db69af8ca32a.png)
 
 Amazon RDS delivers the metrics from Enhanced Monitoring into your CloudWatch Logs account. The monitoring data that is shown on the Amazon RDS console is retrieved from CloudWatch Logs. You can also [retrieve the metrics for a DB instance as a log stream](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Monitoring.OS.CloudWatchLogs.html) from CloudWatch Logs. These metrics are stored in JSON format. You can consume the Enhanced Monitoring JSON output from CloudWatch Logs in a monitoring system of your choice.
 
@@ -73,6 +73,6 @@ In order to display graphs on the CloudWatch dashboard and create alarms that wo
 
 The following example illustrates the custom metric `CPU.User` in the `Custom/RDS` namespace. This custom metric is created by filtering the `cpuUtilization.user` Enhanced Monitoring metric from CloudWatch Logs.
 
-![CPU.User custom metric](http://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-monitoring-alerting/images/guide-img/9dd4cf9c-a2d9-4127-a3e3-2225b43b6c9a/images/d8f38639-c2b2-40f2-bc8a-04f1519ec718.png)
+![CPU.User custom metric](https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-monitoring-alerting/images/guide-img/9dd4cf9c-a2d9-4127-a3e3-2225b43b6c9a/images/d8f38639-c2b2-40f2-bc8a-04f1519ec718.png)
 
 When the metric is available in the CloudWatch repository, you can display and analyze it in CloudWatch dashboards, apply further math and query operations, and set an alarm to monitor this specific metric and generate alerts if the observed values are not in line with the defined alarm conditions.

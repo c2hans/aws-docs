@@ -21,7 +21,7 @@ The following diagram is designed to help you understand caching effectiveness. 
 
 The following chart shows the results of removing the need for dedicated read replicas that handle high read traffic.
 
-![Chart showsing results of removing dedicated read replicas](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/e8ef2317-aa29-4054-bace-cba365ee4cc8.png)
+![Chart showsing results of removing dedicated read replicas](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/e8ef2317-aa29-4054-bace-cba365ee4cc8.png)
 
 You can achieve significant cost savings by using local caching with no read replicas or by introducing DAX side by side with SQL Server on Amazon RDS as a caching layer. This layer offloads from SQL Server and reduces the size of the SQL Server required to run the database.
 
@@ -35,7 +35,7 @@ Local caching is one of the most commonly used ways to cache content for applica
 
 The diagram below illustrates a highly available SQL Server cluster with four nodes and two read replicas.
 
-![Highly available SQL Server cluster with 4 nodes and 2 read replicas](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/74ef05a7-f1e5-4560-87f7-f585be611dc8.png)
+![Highly available SQL Server cluster with 4 nodes and 2 read replicas](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/74ef05a7-f1e5-4560-87f7-f585be611dc8.png)
 
 With local caching, you might need to load balance traffic across multiple EC2 instances. Each instance must maintain its own local cache. If the cache stores stateful information, there needs to be regular commits to the database, and users may need to be forwarded to the same instance for each subsequent request (sticky session). This presents a challenge when trying to scale applications because some instances could be overutilized, while some are underutilized because of the uneven distribution of traffic.
 

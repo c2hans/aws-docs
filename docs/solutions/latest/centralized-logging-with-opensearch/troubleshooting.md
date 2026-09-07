@@ -30,7 +30,7 @@ Centralized Logging with OpenSearch only supports Amazon OpenSearch Service doma
 
  **Message labeled Oops, user is not authorized to perform sts:AssumeRole on resource.**
 
-![image47](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image47.png)
+![image47](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image47.png)
 
 If you see this error, make sure you have entered the correct information during [cross account setup](cross-account-ingestion.md), and then wait for several minutes.
 
@@ -69,7 +69,7 @@ You can get more information from Amazon EKS [IAM role configuration](https://do
 
  **Event with status of DELETE\_IN\_PROGRESS.**
 
-![image48](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image48.png)
+![image48](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image48.png)
 
 The Lambda function resides in a VPC, and you must wait for the associated elastic network interface resource to be deleted.
 

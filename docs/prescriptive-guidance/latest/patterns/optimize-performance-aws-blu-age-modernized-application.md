@@ -155,24 +155,24 @@ AWS Blu Age provides several powerful APIs in DAO interfaces that you can use to
 
 DAOManager serves as the primary interface for database operations in modernized applications. It offers multiple methods to enhance database operations and improve application performance, particularly for straightforward create, read, update, and delete (CRUD) operations and batch processing.
 + **Use SetMaxResults.** In the DAOManager API, you can use the **SetMaxResults** method to specify the maximum number of records to retrieve in a single database operation. By default, DAOManager retrieves only 10 records at a time, which can lead to multiple database calls when processing large datasets. Use this optimization when your application needs to process a large number of records and is currently making multiple database calls to retrieve them. This is particularly useful in batch processing scenarios where you're iterating through a large dataset. In the following example, the code on the left (before optimization) uses the default data retrieval value of 10 records. The code on the right (after optimization) sets **setMaxResults** to retrieve 100,000 records at a time.
-![Example of using SetMaxResults to avoid multiple database calls.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6b42fafd-1535-416d-8abd-1a5f9007ddba/images/beb9623e-e7a8-45ef-adc6-19a249224b05.png)
+![Example of using SetMaxResults to avoid multiple database calls.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6b42fafd-1535-416d-8abd-1a5f9007ddba/images/beb9623e-e7a8-45ef-adc6-19a249224b05.png)
 **Note**
 Choose larger batch sizes carefully and check object size, because this optimization increases the memory footprint.
 + **Replace SetOnGreatorOrEqual with SetOnEqual.** This optimization involves changing the method you use to set the condition for retrieving records. The **SetOnGreatorOrEqual** method retrieves records that are greater than or equal to a specified value, whereas **SetOnEqual** retrieves only records that exactly match the specified value.
 
   Use **SetOnEqual** as illustrated in the following code example, when you know that you need exact matches and you're currently using the **SetOnGreatorOrEqual** method followed by **readNextEqual()**. This optimization reduces unnecessary data retrieval.
-![Example of using SetOnEqual to retrieve records based on an exact match.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6b42fafd-1535-416d-8abd-1a5f9007ddba/images/5ce0dac9-f281-4862-a71f-1614493a83f0.png)
+![Example of using SetOnEqual to retrieve records based on an exact match.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6b42fafd-1535-416d-8abd-1a5f9007ddba/images/5ce0dac9-f281-4862-a71f-1614493a83f0.png)
 + **Use batch write and update operations.** You can use batch operations to group multiple write or update operations into a single database transaction. This reduces the number of database calls and can significantly improve performance for operations that involve multiple records.
 
   In the following example, the code on the left performs write operations in a loop, which slows down the application’s performance. You can optimize this code by using a batch write operation: During each iteration of the `WHILE` loop, you add records to a batch until the batch size reaches a predetermined size of 100. You can then flush the batch when it reaches the predetermined batch size, and then flush any remaining records to the database. This is particularly useful in scenarios where you process large datasets that require updates.
-![Example of grouping multiple operations into a single database transaction.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6b42fafd-1535-416d-8abd-1a5f9007ddba/images/e3bd60d4-06f5-4c1c-9cbd-463f6835a1ba.png)
+![Example of grouping multiple operations into a single database transaction.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6b42fafd-1535-416d-8abd-1a5f9007ddba/images/e3bd60d4-06f5-4c1c-9cbd-463f6835a1ba.png)
 + **Add indexes.** Adding indexes is a database-level optimization that can significantly improve query performance. An index allows the database to quickly locate rows with a specific column value without scanning the entire table. Use indexing on columns that are frequently used in `WHERE` clauses, `JOIN` conditions, or `ORDER BY` statements. This is particularly important for large tables or when quick data retrieval is crucial.
 
 **SQLExecutionBuilder**
 
 SQLExecutionBuilder is a flexible API that you can use to take control of the SQL queries that will be executed, fetch certain columns only, `INSERT` by using `SELECT`, and use dynamic table names. In the following example, SQLExecutorBuilder uses a custom query that you define.
 
-![Example of using SQLExecutorBuilder with a custom query.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6b42fafd-1535-416d-8abd-1a5f9007ddba/images/364e9fb1-0cbc-47d0-936d-46fb3b48b608.png)
+![Example of using SQLExecutorBuilder with a custom query.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6b42fafd-1535-416d-8abd-1a5f9007ddba/images/364e9fb1-0cbc-47d0-936d-46fb3b48b608.png)
 
 **Choosing between DAOManager and SQLExecutionBuilder**
 
@@ -190,11 +190,11 @@ The key to successful caching is identifying the right data to cache. In the fol
 
 Caching with DAOManager:
 
-![Example of caching optimizations with DAOManager.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6b42fafd-1535-416d-8abd-1a5f9007ddba/images/4efd3d22-c694-4f7d-a543-2bed341d1651.png)
+![Example of caching optimizations with DAOManager.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6b42fafd-1535-416d-8abd-1a5f9007ddba/images/4efd3d22-c694-4f7d-a543-2bed341d1651.png)
 
 Caching with SQLExecutionBuilder:
 
-![Example of caching optimizations with SQLExecutionBuilder.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6b42fafd-1535-416d-8abd-1a5f9007ddba/images/c8964804-96eb-4e26-b2bf-8742e62b4c33.png)
+![Example of caching optimizations with SQLExecutionBuilder.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6b42fafd-1535-416d-8abd-1a5f9007ddba/images/c8964804-96eb-4e26-b2bf-8742e62b4c33.png)
 
 *Optimization strategy: Business logic optimization*
 
@@ -204,11 +204,11 @@ This optimization approach goes beyond simple API tweaks and caching strategies.
 + **Updating data directly in the database. **Restructure your business logic by using direct SQL updates instead of multiple DAOManager operations with loops. For example, the following code (left side) makes multiple database calls and uses excessive memory. Specifically, it uses multiple database read and write operations within loops, individual updates instead of batch processing, and unnecessary object creation for each iteration.
 
   The following optimized code (right side) uses a single Direct SQL update operation. Specifically, it uses a single database call instead of multiple calls and doesn’t require loops because all updates are handled in a single statement. This optimization provides better performance and resource utilization, and reduces complexity. It prevents SQL injection, provides better query plan caching, and helps improve security.
-![Restructuring code by using direct SQL updates instead of DAOManager operations with loops.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6b42fafd-1535-416d-8abd-1a5f9007ddba/images/7d0a7879-8db2-4cc5-b41c-ee370b3f22e5.png)
+![Restructuring code by using direct SQL updates instead of DAOManager operations with loops.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6b42fafd-1535-416d-8abd-1a5f9007ddba/images/7d0a7879-8db2-4cc5-b41c-ee370b3f22e5.png)
 **Note**
 Always use parameterized queries to prevent SQL injection and ensure proper transaction management.
 + **Reducing redundant database calls.** Redundant database calls can significantly impact application performance, particularly when they occur within loops. A simple but effective optimization technique is to avoid repeating the same database query multiple times. The following code comparison demonstrates how moving the `retrieve()` database call outside the loop prevents redundant execution of identical queries, which improves efficiency.
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6b42fafd-1535-416d-8abd-1a5f9007ddba/images/da9c15f4-bcf1-4827-b91a-73212fe35cca.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6b42fafd-1535-416d-8abd-1a5f9007ddba/images/da9c15f4-bcf1-4827-b91a-73212fe35cca.png)
 + **Reducing database calls by using the SQL** `JOIN`** clause.** Implement SQLExecutionBuilder to minimize the calls to the database. SQLExecutionBuilder provides more control over SQL generation and is particularly useful for complex queries that DAOManager cannot handle efficiently. For example, the following code uses multiple DAOManager calls:
 
   ```

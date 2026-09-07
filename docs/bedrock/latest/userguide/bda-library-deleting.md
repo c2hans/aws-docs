@@ -35,7 +35,7 @@ aws bedrock-data-automation delete-data-automation-library \
 
 1. Choose "Delete library"
 
-![Custom vocabulary library details showing Library ID, ARN, status as Active, and creation date.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/bda/library-delete-console.png)
+![Custom vocabulary library details showing Library ID, ARN, status as Active, and creation date.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/bda/library-delete-console.png)
 
 ## Important:
 <a name="bda-library-deleting-notes"></a>

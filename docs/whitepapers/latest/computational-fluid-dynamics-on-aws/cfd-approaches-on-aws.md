@@ -23,7 +23,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/computational-fluid-d
 
  [AWS ParallelCluster](https://docs.aws.amazon.com/parallelcluster/latest/ug/what-is-aws-parallelcluster.html) is an example of a persistent cluster that simplifies the deployment and management of HPC clusters in the AWS Cloud. It enables you to quickly launch and terminate an HPC compute environment in AWS as needed. AWS ParallelCluster orchestrates the creation of the required resources (for example, compute nodes and shared filesystems) and provides an automatic scaling mechanism to adjust the size of the cluster to match the submitted workload. You can use AWS ParallelCluster with a variety of batch schedulers, including [Slurm](https://slurm.schedmd.com/overview.html) and [AWS Batch](https://aws.amazon.com/batch/).
 
-![An example AWS ParallelCluster architecture.](http://docs.aws.amazon.com/whitepapers/latest/computational-fluid-dynamics-on-aws/images/parallelcluster-architecture.png)
+![An example AWS ParallelCluster architecture.](https://docs.aws.amazon.com/whitepapers/latest/computational-fluid-dynamics-on-aws/images/parallelcluster-architecture.png)
 
  An AWS ParallelCluster architecture enables the following workflow:
 +  Creating a desired configuration through a text file

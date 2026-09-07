@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/e
 
 The **Edit configuration** dialog box contains two tabs: **Configuration** and **AWS Connection**.
 
-![The Configuration tab of the Edit configuration dialog box.](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/edit-configuration-dialog-ecs-configuration.png)
+![The Configuration tab of the Edit configuration dialog box.](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/edit-configuration-dialog-ecs-configuration.png)
 
 The **Configuration** tab of the **Edit configuration** dialog box contains the following items:
 
@@ -66,7 +66,7 @@ The following items apply to the selected container: **Platform**, **Remote Debu
 + For WebStorm, see [Before Launch options](https://www.jetbrains.com/help/webstorm/run-debug-configuration-node-js.html#before-launch-options) on the WebStorm; Help website.
 + For JetBrains Rider, see [Before Launch options](https://www.jetbrains.com/help/rider/Run_Debug_Configurations_dialog.html#before-launch-options) on the JetBrains Rider Help website.
 
-![The AWS Connection tab of the Edit configuration dialog box.](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/edit-configuration-dialog-ecs-aws-connection.png)
+![The AWS Connection tab of the Edit configuration dialog box.](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/edit-configuration-dialog-ecs-aws-connection.png)
 
 The **AWS Connection** tab of the **Edit configuration** dialog box contains the following items:
 

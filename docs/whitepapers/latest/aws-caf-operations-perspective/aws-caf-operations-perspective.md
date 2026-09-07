@@ -56,4 +56,4 @@ Publication date: **November 9, 2022** ([Document revisions](document-revisions.
 
  [AWS Enterprise Support](https://aws.amazon.com/premiumsupport/plans/enterprise/) customers can benefit from a number of [operational workshops and deep dives](https://aws.amazon.com/premiumsupport/technology-and-programs/proactive-services/) delivered by AWS Support experts. These services help you review the health of your cloud operations, optimize costs, and scale workloads efficiently.
 
-![A diagram that depicts the AWS CAF Operations perspective capabilities](http://docs.aws.amazon.com/whitepapers/latest/aws-caf-operations-perspective/images/caf-operations.png)
+![A diagram that depicts the AWS CAF Operations perspective capabilities](https://docs.aws.amazon.com/whitepapers/latest/aws-caf-operations-perspective/images/caf-operations.png)

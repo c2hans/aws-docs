@@ -19,7 +19,7 @@ To test your migration, follow these steps:
 
    1. **Choose Launch *x* Target Machine**, and then choose **Test Mode**.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-cloudendure/images/guide-img/bbb5871c-6fdf-4a96-872d-e22410dc477d/images/1492929e-b7a2-4267-887c-c79f9975b9dd.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-cloudendure/images/guide-img/bbb5871c-6fdf-4a96-872d-e22410dc477d/images/1492929e-b7a2-4267-887c-c79f9975b9dd.png)
 
 1. When you receive the confirmation prompt, choose **Continue** to launch the target machines. You can monitor the launch process on the **Job Progress** tab.
 

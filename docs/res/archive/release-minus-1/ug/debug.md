@@ -7,4 +7,4 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-1/ug/debug.htm
 
 The debugging panel displays message traffic associated with the virtual desktops. You can use this panel to observe activity between hosts. The Virtual Desktop Host tab displays instance specific activity, and the Virtual Desktop Sessions tab displays in-progress session activity.
 
-![Debugging panel](http://docs.aws.amazon.com/res/archive/release-minus-1/ug/images/res-evdi-debug-01.png)
+![Debugging panel](https://docs.aws.amazon.com/res/archive/release-minus-1/ug/images/res-evdi-debug-01.png)

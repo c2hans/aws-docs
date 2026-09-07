@@ -26,4 +26,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-static-websites
 
 A network firewall protects against unauthorized access. It’s common to deploy multiple web servers behind a load balancer for high availability (HA) and scalability. Since pages are static, the web servers don’t need to maintain any state or session information and the load balancer doesn’t need to implement session affinity (“sticky sessions”). The following diagram shows a traditional (non-AWS) hosting environment:
 
-![A diagram depciting the basic architecture of a traditional hosting environment .](http://docs.aws.amazon.com/whitepapers/latest/build-static-websites-aws/images/traditional-hosting.jpeg)
+![A diagram depciting the basic architecture of a traditional hosting environment .](https://docs.aws.amazon.com/whitepapers/latest/build-static-websites-aws/images/traditional-hosting.jpeg)

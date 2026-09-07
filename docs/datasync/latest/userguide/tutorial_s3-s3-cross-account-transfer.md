@@ -22,14 +22,14 @@ It's not uncommon to transfer data between AWS accounts, especially if you have 
 
 The following diagram illustrates a scenario where you transfer data from an S3 bucket to another S3 bucket that's in a different AWS account.
 
-![An example DataSync scenario of data moving from an S3 bucket in one AWS account (your source account) before making it into an S3 bucket in a different AWS account (your destination account).](http://docs.aws.amazon.com/datasync/latest/userguide/images/s3-s3-cross-account-same-region-diagram.png)
+![An example DataSync scenario of data moving from an S3 bucket in one AWS account (your source account) before making it into an S3 bucket in a different AWS account (your destination account).](https://docs.aws.amazon.com/datasync/latest/userguide/images/s3-s3-cross-account-same-region-diagram.png)
 
 ------
 #### [ Transfers across accounts and Regions ]
 
 The following diagram illustrates a scenario where you transfer data from an S3 bucket to another S3 bucket that's in a different AWS account and Region.
 
-![An example DataSync scenario of data moving from an S3 bucket in one AWS account (your source account) and Region before making it into an S3 bucket in a different AWS account (your destination account) and Region.](http://docs.aws.amazon.com/datasync/latest/userguide/images/s3-s3-cross-account-diff-region-diagram.png)
+![An example DataSync scenario of data moving from an S3 bucket in one AWS account (your source account) and Region before making it into an S3 bucket in a different AWS account (your destination account) and Region.](https://docs.aws.amazon.com/datasync/latest/userguide/images/s3-s3-cross-account-diff-region-diagram.png)
 
 ------
 

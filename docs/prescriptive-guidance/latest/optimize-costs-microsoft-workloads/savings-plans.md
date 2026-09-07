@@ -125,7 +125,7 @@ Discounts start with the usage that result in the highest discount and then down
 
 The following graphic shows the price after dividing Reserved Instances from Savings Plans. Both Compute and EC2 Instance Savings Plans apply to running instances first and then to the unused On-Demand Capacity Reservations.
 
-![Price after dividing Reserved Instances from Savings Plans](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/388680b2-a2d2-47e0-bc7c-582507d490fb.png)
+![Price after dividing Reserved Instances from Savings Plans](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/388680b2-a2d2-47e0-bc7c-582507d490fb.png)
 
 ## Cost optimization scenarios
 <a name="savings-plans-guided-scenarios"></a>

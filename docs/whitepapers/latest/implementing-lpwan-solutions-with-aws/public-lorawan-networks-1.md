@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-so
 
  When using a public LoRaWAN network, the LoRaWAN network operator is responsible for management and maintenance of both LoRaWAN gateways and LoRaWAN server components, as outlined in the following figure:
 
-![Example architecture for using a public LoRaWAN network with AWS](http://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/public-lorawan-network.png)
+![Example architecture for using a public LoRaWAN network with AWS](https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/public-lorawan-network.png)
 
  Most operators of public LoRaWAN networks offer integration capabilities with AWS IoT. Refer to the documentation for the respective LoRaWAN network, or contact the LoRaWAN network operator for additional information.
 

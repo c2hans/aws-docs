@@ -35,11 +35,11 @@ The pattern is intended for [AWS Systems Integrator (SI) Partners](https://aws.a
 
 The following diagram shows the Atlas Live Migration Service that is used to migrate data from a MongoDB Enterprise Advanced database and a MongoDB Community database to MongoDB Atlas on AWS. Use this service when you need to migrate large, complex databases to MongoDB Atlas with minimal downtime and continuous data synchronization. This pattern uses Atlas Live Migration Service.
 
-![Migrating data with MongoDB Atlas Live Migration Service.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/52cdb923-64ff-4ee2-b129-93b9a139e24b/images/372134c4-ba47-4e48-bd0d-8b43017773b8.png)
+![Migrating data with MongoDB Atlas Live Migration Service.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/52cdb923-64ff-4ee2-b129-93b9a139e24b/images/372134c4-ba47-4e48-bd0d-8b43017773b8.png)
 
 The following diagram shows the MongoDB mirror service (`mongomirror`) that you can also use to migrate data from a MongoDB Enterprise Advanced database and a MongoDB Community database to MongoDB Atlas on AWS over a secured [AWS PrivateLink](https://aws.amazon.com/privatelink/) connection. Use `mongomirror` for ongoing data replication between on-premises MongoDB and MongoDB Atlas. This tool is ideal for disaster recovery or phased migrations but is outside the scope of this pattern.
 
-![Migrating data with mongomirror tool.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/52cdb923-64ff-4ee2-b129-93b9a139e24b/images/53488a9b-2210-4b3d-b517-b618c1e0182c.png)
+![Migrating data with mongomirror tool.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/52cdb923-64ff-4ee2-b129-93b9a139e24b/images/53488a9b-2210-4b3d-b517-b618c1e0182c.png)
 
 For more MongoDB Atlas reference architectures that support different usage scenarios, see [Migrating to MongoDB Atlas on AWS](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-mongodb-atlas/architecture.html) on the AWS Prescriptive Guidance website.
 

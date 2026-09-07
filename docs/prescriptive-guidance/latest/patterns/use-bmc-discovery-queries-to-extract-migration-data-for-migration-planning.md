@@ -42,7 +42,7 @@ For on-premises versions of BMC Discovery, you must install the application on a
 
 The following diagram shows how asset managers can use BMC Discovery queries to scan BMC-modeled applications in both SaaS and on-premises environments.
 
-![Architecture that uses BMC Discovery to extract software, service, and dependency information.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5e549882-8deb-4459-8891-e39bbf80e320/images/0ebb3e68-5828-45aa-86f4-c741c7b6cd94.jpeg)
+![Architecture that uses BMC Discovery to extract software, service, and dependency information.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5e549882-8deb-4459-8891-e39bbf80e320/images/0ebb3e68-5828-45aa-86f4-c741c7b6cd94.jpeg)
 
 The diagram shows the following workflow: An asset manager uses BMC Discovery or BMC Helix Discovery to scan database and software instances running on virtual servers hosted on multiple physical servers. The tool can model applications with components spanning multiple virtual and physical servers.
 

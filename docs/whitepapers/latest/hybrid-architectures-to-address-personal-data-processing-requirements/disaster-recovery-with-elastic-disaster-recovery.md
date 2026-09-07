@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-
 
  AWS services – [Elastic Disaster Recovery](https://aws.amazon.com/disaster-recovery/)
 
-![Disaster recovery solution with AWS DRS](http://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-to-address-personal-data-processing-requirements/images/disaster-recovery-solution-aws-drs.png)
+![Disaster recovery solution with AWS DRS](https://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-to-address-personal-data-processing-requirements/images/disaster-recovery-solution-aws-drs.png)
 
  Disaster recovery solution with AWS DRS
 

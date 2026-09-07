@@ -55,7 +55,7 @@ order by stm, seg, step;
 
 The preceding query returns the following sample output.
 
-![Sample output of the previous query.](http://docs.aws.amazon.com/prescriptive-guidance/latest/query-best-practices-redshift/images/guide-img/0ed1f977-d92c-4ac8-bf6e-781c9fd51a62/images/ab652299-58f5-4100-94fb-47a0d69d3cf0.png)
+![Sample output of the previous query.](https://docs.aws.amazon.com/prescriptive-guidance/latest/query-best-practices-redshift/images/guide-img/0ed1f977-d92c-4ac8-bf6e-781c9fd51a62/images/ab652299-58f5-4100-94fb-47a0d69d3cf0.png)
 
 ## Know your table
 <a name="know-table"></a>

@@ -30,7 +30,7 @@ By adopting this mirroring strategy, you can gradually shift your development ef
 
 The following diagram shows how a distributed source code management system can mirror application components and maintain synchronization between the AWS Cloud and mainframe environments. The AWS Cloud environment uses CI/CD services such as [AWS CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html), [AWS CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html), and [AWS CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html) to build and deploy the application.
 
-![Architecture for gradual mainframe migration with application mirroring.](http://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-mainframe-apps-shared-db2/images/guide-img/b5c7b078-cfe6-46c4-b120-94b5824d3c88/images/6df9f2ab-5d88-4826-9188-9c6b855e6521.png)
+![Architecture for gradual mainframe migration with application mirroring.](https://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-mainframe-apps-shared-db2/images/guide-img/b5c7b078-cfe6-46c4-b120-94b5824d3c88/images/6df9f2ab-5d88-4826-9188-9c6b855e6521.png)
 
 In this workflow:
 

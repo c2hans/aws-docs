@@ -18,7 +18,7 @@ To view the device logs, follow the steps below.
 1. Choose **Logs** from the device console’s main navigation pane.
 
 1. To view the system events, scroll down the event list under **System event log**.
-![System event log display](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/operatingthevehicle-system-event-log.png)
+![System event log display](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/operatingthevehicle-system-event-log.png)
 
 1. To view the robot operating system events, scroll down the event list under **Robot operating system log**.
-![Robot operating system log display](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/operatingthevehicle-robot-os-log.png)
+![Robot operating system log display](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/operatingthevehicle-robot-os-log.png)

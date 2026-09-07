@@ -12,7 +12,7 @@ To update settings for the *remote* version of that same function (the function'
 
 This dialog box contains three tabs: **Configuration**, **SAM CLI**, and **AWS Connection**.
 
-![The Configuration tab of the Run/Debug Configurations dialog box for local function settings.](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/sam-run-debug-config-zip.png)
+![The Configuration tab of the Run/Debug Configurations dialog box for local function settings.](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/sam-run-debug-config-zip.png)
 
 The **Configuration** tab of the **Run/Debug Configurations** dialog box for local function settings contains the following items:
 
@@ -65,7 +65,7 @@ Either **File** or **Text** is required, but not both.
 + For WebStorm, see [Before Launch options](https://www.jetbrains.com/help/webstorm/run-debug-configuration-node-js.html#before-launch-options) on the WebStorm; Help website.
 + For JetBrains Rider, see [Before Launch options](https://www.jetbrains.com/help/rider/Run_Debug_Configurations_dialog.html#before-launch-options) on the JetBrains Rider Help website.
 
-![The SAM CLI tab of the Run/Debug Configurations dialog box for local function settings.](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/sam-run-debug-cli.png)
+![The SAM CLI tab of the Run/Debug Configurations dialog box for local function settings.](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/sam-run-debug-cli.png)
 
 The **SAM CLI** tab of the **Run/Debug Configurations** dialog box for local function settings contains the following items:
 
@@ -99,7 +99,7 @@ The **SAM CLI** tab of the **Run/Debug Configurations** dialog box for local fun
 + For WebStorm, see [Before Launch options](https://www.jetbrains.com/help/webstorm/run-debug-configuration-node-js.html#before-launch-options) on the WebStorm; Help website.
 + For JetBrains Rider, see [Before Launch options](https://www.jetbrains.com/help/rider/Run_Debug_Configurations_dialog.html#before-launch-options) on the JetBrains Rider Help website.
 
-![The AWS Connection tab of the Run/Debug Configurations dialog box for local function settings.](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/sam-run-debug-aws-connection.png)
+![The AWS Connection tab of the Run/Debug Configurations dialog box for local function settings.](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/sam-run-debug-aws-connection.png)
 
 The **AWS Connection** tab of the **Run/Debug Configurations** dialog box for local function settings contains the following items:
 

@@ -34,7 +34,7 @@ You can also use pattern matching to locate a log event in the pane. Click the *
 1. To filter log events according to time, right-click a log event, and then choose **Show Logs Around**.
 
     You can select **One Minute**, **Five Minutes**, or **Ten Minutes**. For example, if you select **Five Minutes**, the filtered list shows only log events that occurred five minutes before and after the selected entry.
-![Viewing and filtering log actions on the Log Events pane.](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/cloudwatch-filter-log-events.png)
+![Viewing and filtering log actions on the Log Events pane.](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/cloudwatch-filter-log-events.png)
 
 On the left of the **Log Events** pane, the [log actions](#working-with-log-actions) offer more ways to interact with log events.
 
@@ -43,7 +43,7 @@ On the left of the **Log Events** pane, the [log actions](#working-with-log-acti
 
 On the left of the **Log Events** pane, four log actions allow you to refresh, edit, tail, and wrap CloudWatch log events.
 
-![Viewing log actions on the Log Events pane.](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/cloudwatch-log-actions.png)
+![Viewing log actions on the Log Events pane.](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/cloudwatch-log-actions.png)
 
 1. To find log events to interact with, [open the **Log Streams**](#viewing-log-events) pane.
 

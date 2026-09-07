@@ -22,4 +22,4 @@ For a full list of input types and configuration details, refer to [Creating an 
 
  **AWS Elemental Link input configuration**
 
-![link input config](http://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws-with-amazon-s3/images/link-input-config.png)
+![link input config](https://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws-with-amazon-s3/images/link-input-config.png)

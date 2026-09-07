@@ -45,7 +45,7 @@ The AWS CAF provides guidance supporting coordination between different parts of
 
  Each of these aspects are explored and detailed in this guide. The following diagram shows the flow of these aspects, aligning with the previously mentioned NIST incident response lifecycle, but with operations encompassing detection and analysis with containment, eradication, and recovery.
 
-![Diagram showing the aspects of AWS incident response](http://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/images/aspects-of-aws-incident-response.png)
+![Diagram showing the aspects of AWS incident response](https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/images/aspects-of-aws-incident-response.png)
 
 ### AWS incident response principles and design goals
 <a name="incident-response-principles-and-design-goals"></a>
@@ -94,7 +94,7 @@ The AWS CAF provides guidance supporting coordination between different parts of
 
  The following diagram shows an example of a security event in the service domain based on an architectural anti-pattern. In this event, an unauthorized user obtains the long-term security credentials of an IAM user. The IAM user has an IAM policy that allows them to retrieve objects from an [Amazon Simple Storage Service](https://aws.amazon.com/s3/) (Amazon S3) bucket. To respond to this security event, you would use AWS APIs to analyze AWS logs such as [AWS CloudTrail](https://aws.amazon.com/cloudtrail/) and Amazon S3 access logs. You would also use AWS APIs to contain and recover from the incident.
 
-![Diagram of a service domain example](http://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/images/service-domain-example.png)
+![Diagram of a service domain example](https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/images/service-domain-example.png)
 
 #### Difference \#3: APIs for provisioning infrastructure
 <a name="difference-3"></a>

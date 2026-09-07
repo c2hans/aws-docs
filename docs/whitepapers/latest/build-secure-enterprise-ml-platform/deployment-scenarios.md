@@ -21,6 +21,6 @@ There are several ways to trigger a pipeline run, including:
 
 If source code change is used to trigger a pipeline run, you can either trigger the pipeline on any change in the source code repository, or only when a specific condition is met. If you use CodeCommit as the source, the following architecture pattern can be used to implement custom logic on whether to kick off a pipeline execution.
 
-![A diagram showing the architecture pattern for kicking off pipeline based on custom logic.](http://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-15.png)
+![A diagram showing the architecture pattern for kicking off pipeline based on custom logic.](https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-15.png)
 
 *Architecture pattern for kicking off pipeline based on custom logic*

@@ -41,7 +41,7 @@ AWS Transfer for SFTP is a member of the AWS Transfer Family. It is a secure tra
 
 **Target architecture **
 
-![Use AWS Transfer for SFTP to migrate an on-premises SFTP server to the AWS Cloud.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/ec0a905c-edef-48ba-9b5e-ea4a4040d320/images/f42aa711-bfe0-4ac6-9f66-5c18a1dd1c7a.png)
+![Use AWS Transfer for SFTP to migrate an on-premises SFTP server to the AWS Cloud.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/ec0a905c-edef-48ba-9b5e-ea4a4040d320/images/f42aa711-bfe0-4ac6-9f66-5c18a1dd1c7a.png)
 
 **Automation and scale**
 

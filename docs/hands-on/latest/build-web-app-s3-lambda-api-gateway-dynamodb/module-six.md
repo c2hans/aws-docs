@@ -27,7 +27,7 @@ In the Amplify console, in the left-hand navigation for the **profilesapp**, cho
 
 In the **General settings** section, choose **Delete app**.
 
-![The AWS Amplify Console showing the General Settings page for an app named 'profilesapp', highlighting the 'Delete app' option under App settings.](http://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/console-general-settings-delete-aecbb.png)
+![The AWS Amplify Console showing the General Settings page for an app named 'profilesapp', highlighting the 'Delete app' option under App settings.](https://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/console-general-settings-delete-aecbb.png)
 
 ## Congratulations
 <a name="congratulations"></a>

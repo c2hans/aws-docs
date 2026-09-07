@@ -13,4 +13,4 @@ At its core, the cognitive module of a software agent can be viewed as an LLM wr
 
 These augmentations are composed of workflows that define how the LLM is used over time and across tasks, transforming it from a stateless engine into a dynamic reasoning agent.
 
-![LLM augmentation.](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-patterns/images/guide-img/cde5ee68-ed86-4053-9fb1-d0dbf7199e24/images/29d1608e-21a3-4b49-82f1-0bcb102a7875.png)
+![LLM augmentation.](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-patterns/images/guide-img/cde5ee68-ed86-4053-9fb1-d0dbf7199e24/images/29d1608e-21a3-4b49-82f1-0bcb102a7875.png)

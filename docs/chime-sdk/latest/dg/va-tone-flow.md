@@ -15,7 +15,7 @@ The following diagram shows an example workflow for a voice tone analysis. Numbe
 **Note**
 The diagram assumes you have already configured an Amazon Chime SDK Voice Connector with a call analytics configuration that has a `VoiceAnalyticsProcessor`. For more information, see [Recording Voice Connector calls](record-vc-calls.md).
 
-![A diagram showing the data flow through a voice tone analysis.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/voice-tone-workflow-v2.png)
+![A diagram showing the data flow through a voice tone analysis.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/voice-tone-workflow-v2.png)
 
 In the diagram:
 

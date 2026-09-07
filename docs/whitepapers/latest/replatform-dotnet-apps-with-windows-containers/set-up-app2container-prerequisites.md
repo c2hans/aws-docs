@@ -22,42 +22,42 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-app
 1.  Select the **Programmatic access** type.
 
 1.  Choose **Next: Permissions**.
-![Screen showing Add User dialog](http://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/add-user.png)
+![Screen showing Add User dialog](https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/add-user.png)
 
 1.  Set permissions for the App2container user by choosing **Attach existing policies directory**.
 
 1.  Select **AdministratorAccess**, and choose **Next: Tags**.
 **Note**
 **AdministratorAccess** should be used only for demonstration purposes. Review the [official documentation](https://docs.aws.amazon.com/app2container/latest/UserGuide/iam-a2c.html) for real use cases.
-![Screen showing the selection of AdministratorAccess](http://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/select-admin.png)
+![Screen showing the selection of AdministratorAccess](https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/select-admin.png)
 
 1.  Review and create your user. On the following screen, download the **access key ID** and **secret access key** to your local machine.
-![Screen showing download of keys.](http://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/keys.jpg)
+![Screen showing download of keys.](https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/keys.jpg)
 
  App2Container uses AWS Secrets Manager to manage the credentials for connecting your worker machine to application servers to run remote commands. Secrets Manager encrypts your secrets for storage, and provides an [Amazon Resource Name](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) (ARN) for you to access the secret. When you run the remote configure command, you provide the secret ARN for App2Container to use to connect to your target server when running the remote command.
 
  To store a new secret:
 
 1.  Navigate to AWS Secrets Manager in the AWS Management Console, and choose **Store a new secret**.
-![Screen showing storing a new secret](http://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/secret-store.jpg)
+![Screen showing storing a new secret](https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/secret-store.jpg)
 
 1.  Choose **Other type of secrets** and add the following parameters. Choose **Next**.
-![Screen showing adding parameters](http://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/secret-parms.jpg)
+![Screen showing adding parameters](https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/secret-parms.jpg)
 
 1.  In **Name and description**, enter a secret name and description. Choose **Next**.
-![Screen showing entering secret name and description.](http://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/secret-name.jpg)
+![Screen showing entering secret name and description.](https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/secret-name.jpg)
 
 1.  On the next screen, leave the defaults in place, and choose **Next**.
 
 1.  After you store the password, choose it from the **Secrets** list. This will take you to a screen with the secret details. Copy the secret ARN to your local machine, because you will need this later.
-![Screen showing retrieval of secret ARN..](http://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/arn.jpg)
+![Screen showing retrieval of secret ARN..](https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/arn.jpg)
 
  Now that you have your IAM role and secret created, log in to your worker machine and configure the AWS CLI with these newly created access objects.
 
  To configure the AWS CLI:
 
 1.  Go to the EC2 service in the AWS Management Console, choose your worker machine instance, and choose **Connect** in the upper right of the screen.
-![Screen showing worker machine instance.](http://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/mach-instance.jpg)
+![Screen showing worker machine instance.](https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/mach-instance.jpg)
 
 1.  Follow the same steps as detailed earlier in the [*Connect to deployment*](connect-to-deployment.md) section to get the password for the worker machine. Copy that password to your local machine and use it to connect to the worker machine using Remote Desktop Connection.
 

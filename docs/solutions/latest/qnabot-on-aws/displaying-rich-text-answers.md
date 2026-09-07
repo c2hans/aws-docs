@@ -22,7 +22,7 @@ QnABot on AWS supports [Markdown](https://daringfireball.net/projects/markdown/s
    The answer now displays the heading, links, and emphasis specified in your markdown text.
 
     **Sample Markdown text**
-![image15](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image15.jpeg)
+![image15](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image15.jpeg)
 
    QnABot on AWS also supports inline HTML in the markdown field:
 

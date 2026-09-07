@@ -395,7 +395,7 @@ If the certificate fingerprint doesn't match, go to [Step 2](#local-debug-consol
         The local debug console opens.
 
      1. If the local debug console shows an error that says it can't connect to the WebSocket due to a failed TLS handshake, you must bypass the self-signed security warning for the WebSocket URL.
-![The WebSocket TLS handshake error in the local debug console.](http://docs.aws.amazon.com/greengrass/v2/developerguide/images/local-debug-console/websocket-tls-handshake-error.png)
+![The WebSocket TLS handshake error in the local debug console.](https://docs.aws.amazon.com/greengrass/v2/developerguide/images/local-debug-console/websocket-tls-handshake-error.png)
 
         Do the following:
 

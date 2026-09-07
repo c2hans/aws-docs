@@ -19,19 +19,19 @@ The following examples show how the MCP App renders interactive visualizations i
 
 **Top exposures** – Lists your most critical exposure findings, in an interactive table. The following image shows the top exposures table.
 
-![Interactive table listing the most critical Security Hub exposure findings.](http://docs.aws.amazon.com/securityhub/latest/userguide/images/securityhub-v2-mcp-app-top-exposures.png)
+![Interactive table listing the most critical Security Hub exposure findings.](https://docs.aws.amazon.com/securityhub/latest/userguide/images/securityhub-v2-mcp-app-top-exposures.png)
 
 **Finding detail** – Review a single exposure finding’s overview alongside its correlated-finding trait summary, attack path, and remediation guidance. The following image shows the finding detail view.
 
-![Finding detail view with overview, correlated findings, attack path, and remediation guidance.](http://docs.aws.amazon.com/securityhub/latest/userguide/images/securityhub-v2-mcp-app-finding-detail.png)
+![Finding detail view with overview, correlated findings, attack path, and remediation guidance.](https://docs.aws.amazon.com/securityhub/latest/userguide/images/securityhub-v2-mcp-app-finding-detail.png)
 
 **Attack path** – Visualize how an exposure is reachable as an interactive graph. Nodes represent resources, identities, and services. Edges represent the relationships between them. The following image shows the attack path graph.
 
-![Graph showing how an exposure is reachable across resources, identities, and services.](http://docs.aws.amazon.com/securityhub/latest/userguide/images/securityhub-v2-mcp-app-attack-path.png)
+![Graph showing how an exposure is reachable across resources, identities, and services.](https://docs.aws.amazon.com/securityhub/latest/userguide/images/securityhub-v2-mcp-app-attack-path.png)
 
 **Network path** – Explore the ordered network hops from the AWS edge to the target resource (for example, Internet Gateway to NACL to Security Group to ENI to Instance). The following image shows the network path.
 
-![Ordered network hops from the AWS edge through gateway, NACL, security group, and ENI to the target.](http://docs.aws.amazon.com/securityhub/latest/userguide/images/securityhub-v2-mcp-app-network-path.png)
+![Ordered network hops from the AWS edge through gateway, NACL, security group, and ENI to the target.](https://docs.aws.amazon.com/securityhub/latest/userguide/images/securityhub-v2-mcp-app-network-path.png)
 
 ## Key concepts
 <a name="securityhub-v2-mcp-app-concepts"></a>

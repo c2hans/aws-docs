@@ -9,7 +9,7 @@ You can use media replication to link a primary WebRTC session with multiple rep
 
 The following image shows media replication between a primary session with presenters sharing audio and video, and a replica session with participants consuming the media.
 
-![Presenters sharing in a primary session.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/replication-1.png)
+![Presenters sharing in a primary session.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/replication-1.png)
 
 **Note**
 The service quota *Chime SDK Meetings - replica meetings per primary meeting* has a default value of 4, and you can increase that limit on request. For more information about quotas, refer to [AWS service quotas](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html) in the *AWS General Reference*.
@@ -26,7 +26,7 @@ Participants connected to a replica session can be granted access to join the pr
 
 The following image shows a participant in a replica session using their WebRTC connection to switch to the primary session.
 
-![Diagram showing two participants switching from a replica meeting to the primary meeting.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/replication-2.png)
+![Diagram showing two participants switching from a replica meeting to the primary meeting.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/replication-2.png)
 
 ## Global participants
 <a name="global-participants"></a>
@@ -35,7 +35,7 @@ You can choose the AWS Region for each WebRTC media session. That allows you to 
 
 The following image shows a primary session and replicated sessions in different Regions.
 
-![Diagram showing participants in 3 Regions watching a presentation.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/replication-3.png)
+![Diagram showing participants in 3 Regions watching a presentation.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/replication-3.png)
 
 ## Session lifecycle
 <a name="session-lifecycle"></a>

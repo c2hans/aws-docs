@@ -93,6 +93,6 @@ The following image shows how an authorized user, such as a developer, can creat
 
 1. The **PermissionsBoundary** IAM policy is applied to the new IAM role.
 
-![User creating an IAM role that is subject to the permissions boundary in the member account.](http://docs.aws.amazon.com/prescriptive-guidance/latest/transitioning-to-multiple-aws-accounts/images/guide-img/b35f7443-fbaf-4ce8-bb48-32b6441d573f/images/76bc8b9a-7847-465b-92f4-9427011a76fb.png)
+![User creating an IAM role that is subject to the permissions boundary in the member account.](https://docs.aws.amazon.com/prescriptive-guidance/latest/transitioning-to-multiple-aws-accounts/images/guide-img/b35f7443-fbaf-4ce8-bb48-32b6441d573f/images/76bc8b9a-7847-465b-92f4-9427011a76fb.png)
 
 The **CloudFormationRole** role has the [AdministratorAccess](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_administrator) managed policy attached, but due to the **PermissionsBoundary** IAM policy, the **CloudFormationRole** role's effective permissions become equal to the **PermissionsBoundary** policy. The **PermissionsBoundary** policy references itself when allowing the `iam:CreateRole` action, which ensures that roles can be created only if the permissions boundary is applied.

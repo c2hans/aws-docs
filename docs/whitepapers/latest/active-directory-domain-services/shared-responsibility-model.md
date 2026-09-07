@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/active-directory-doma
 
  When operating in the AWS Cloud, Security and Compliance is a [shared responsibility](https://aws.amazon.com/compliance/shared-responsibility-model/) between AWS and the customer. AWS is responsible for security “of” the cloud, whereas customers are responsible for security “in” the cloud.
 
-![Diagram showing the Shared Responsibility Model when operating in AWS Cloud](http://docs.aws.amazon.com/whitepapers/latest/active-directory-domain-services/images/shared-responsibility-model.jpg)
+![Diagram showing the Shared Responsibility Model when operating in AWS Cloud](https://docs.aws.amazon.com/whitepapers/latest/active-directory-domain-services/images/shared-responsibility-model.jpg)
 
  AWS is responsible for securing its software, hardware, and the facilities where AWS services are located, including securing its computing, storage, networking, and database services. In addition, AWS is responsible for the security configuration of AWS Managed Services, like Amazon DynamoDB, Amazon Relational Database Service (Amazon RDS), Amazon Redshift, Amazon EMR, Amazon WorkSpaces, and so on.
 

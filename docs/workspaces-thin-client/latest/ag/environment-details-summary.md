@@ -9,7 +9,7 @@ End of support notice: On March 31, 2027, AWS will end support for Amazon WorkSp
 
 The Summary section provides a high-level overview of the key features of the WorkSpaces Thin Client Environment. The following table lists each element in the summary and how it functions.
 
-![Summary section showing environment details including name, service type, maintenance window, and timestamps.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ag/images/environment-details-summary.png)
+![Summary section showing environment details including name, service type, maintenance window, and timestamps.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/images/environment-details-summary.png)
 
 | Element | Description |
 | --- | --- |

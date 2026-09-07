@@ -15,7 +15,7 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 
  To further improve resiliency through loose coupling, make component interactions asynchronous where possible. This model is suitable for any interaction that does not need an immediate response and where an acknowledgment that a request has been registered will suffice. It involves one component that generates events and another that consumes them. The two components do not integrate through direct point-to-point interaction but usually through an intermediate durable storage layer, such as an SQS queue or a streaming data platform such as Amazon Kinesis, or AWS Step Functions.
 
-![Diagram showing dependencies such as queuing systems and load balancers are loosely coupled](http://docs.aws.amazon.com/wellarchitected/2023-04-10/framework/images/loosely-coupled-dependencies.png)
+![Diagram showing dependencies such as queuing systems and load balancers are loosely coupled](https://docs.aws.amazon.com/wellarchitected/2023-04-10/framework/images/loosely-coupled-dependencies.png)
 
  Amazon SQS queues and Elastic Load Balancers are just two ways to add an intermediate layer for loose coupling. Event-driven architectures can also be built in the AWS Cloud using Amazon EventBridge, which can abstract clients (event producers) from the services they rely on (event consumers). Amazon Simple Notification Service (Amazon SNS) is an effective solution when you need high-throughput, push-based, many-to-many messaging. Using Amazon SNS topics, your publisher systems can fan out messages to a large number of subscriber endpoints for parallel processing.
 

@@ -46,7 +46,7 @@ Amazon RDS for Oracle
 
 **Source and target architecture**
 
-![Migrating an Oracle database to Amazon RDS for Oracle by using an Oracle GoldenGate adapter.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/f34961f7-aa9a-41cb-b1ea-522e36ef2f67/images/21ef5177-e669-4591-aced-28d2f22decf2.png)
+![Migrating an Oracle database to Amazon RDS for Oracle by using an Oracle GoldenGate adapter.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/f34961f7-aa9a-41cb-b1ea-522e36ef2f67/images/21ef5177-e669-4591-aced-28d2f22decf2.png)
 
 1. Oracle GoldenGate extracts trails from the source database logs.
 

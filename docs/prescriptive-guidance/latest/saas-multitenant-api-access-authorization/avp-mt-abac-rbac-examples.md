@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multit
 
 To enhance the RBAC example in the previous section, you can add attributes to users to create a RBAC-ABAC hybrid approach for multi-tenant access control. This example includes the same roles from the previous example, but adds the user attribute `account_lockout_flag` and the context parameter `uses_mfa`. The example also takes a different approach to implementing multi-tenant access control by using both RBAC and ABAC, and uses one shared policy store instead of a different policy store for each tenant.
 
-![Example of multi-tenant access control with RBAC, ABAC, Amazon Verified Permissions, and Cedar](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/2c37b61d-2ff6-4d20-81e9-b9ecdfb648ff.png)
+![Example of multi-tenant access control with RBAC, ABAC, Amazon Verified Permissions, and Cedar](https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/2c37b61d-2ff6-4d20-81e9-b9ecdfb648ff.png)
 
 This example represents a multi-tenant SaaS solution in which you need to provide authorization decisions for Tenant A and Tenant B, similar to the previous example.
 

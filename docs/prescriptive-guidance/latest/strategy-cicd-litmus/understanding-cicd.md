@@ -11,7 +11,7 @@ CI/CD automates much or all of the manual processes traditionally required to ge
 
 Let's review the basic CI/CD process before discussing some of the ways that you can, knowingly or unknowingly, deviate from being fully CI/CD. The following diagram shows the CI/CD stages and activities in each stage.
 
-![The five stages of a CI/CD process and the activities and environments of each.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cicd-litmus/images/guide-img/de5d2132-0072-4b65-b7ac-e1e4c4852e08/images/de1d32ab-bd01-444e-9e65-7148b0aabdb2.png)
+![The five stages of a CI/CD process and the activities and environments of each.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cicd-litmus/images/guide-img/de5d2132-0072-4b65-b7ac-e1e4c4852e08/images/de1d32ab-bd01-444e-9e65-7148b0aabdb2.png)
 
 ## About continuous integration
 <a name="about-continuous-integration"></a>

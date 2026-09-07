@@ -28,7 +28,7 @@ To set up and run the FreeRTOS demos, follow the steps in [Get Started with Free
 
 The bootloader process is shown in the following state machine.
 
-![Start Bootloader state machine showing Initialization, Verification, Execution states and Error state with Notify Error option.](http://docs.aws.amazon.com/freertos/latest/userguide/images/bootloader-states.png)
+![Start Bootloader state machine showing Initialization, Verification, Execution states and Error state with Notify Error option.](https://docs.aws.amazon.com/freertos/latest/userguide/images/bootloader-states.png)
 
 The following table describes the bootloader states.
 
@@ -56,12 +56,12 @@ The bootloader is in an error state and no valid images are present on the devic
 
 The Microchip Curiosity PIC32MZEF platform contains an internal program flash of two megabytes (MB) divided into two banks. It supports memory map swapping between these two banks and live updates. The demo bootloader is programmed in a separate lower boot flash region.
 
-![Memory layout diagram showing Lower Boot Flash, Lower Program Flash of 1MB, and Upper Program Flash of 2MB regions mapped to Bootloader, Application Bank 0, and Application Bank 1 respectively.](http://docs.aws.amazon.com/freertos/latest/userguide/images/flash-device.png)
+![Memory layout diagram showing Lower Boot Flash, Lower Program Flash of 1MB, and Upper Program Flash of 2MB regions mapped to Bootloader, Application Bank 0, and Application Bank 1 respectively.](https://docs.aws.amazon.com/freertos/latest/userguide/images/flash-device.png)
 
 ## Application image structure
 <a name="application-image-structure"></a>
 
-![OTA Image structure showing header, descriptor, application binary (signed by signer service), and trailer sections with fields like magic code, sequence numbers, start and end addresses, execution address, hardware ID.](http://docs.aws.amazon.com/freertos/latest/userguide/images/application-image-structure.png)
+![OTA Image structure showing header, descriptor, application binary (signed by signer service), and trailer sections with fields like magic code, sequence numbers, start and end addresses, execution address, hardware ID.](https://docs.aws.amazon.com/freertos/latest/userguide/images/application-image-structure.png)
 
 The diagram shows the primary components of the application image stored on each bank of the device.
 

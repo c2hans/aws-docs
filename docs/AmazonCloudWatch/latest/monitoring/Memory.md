@@ -10,17 +10,17 @@ Understand how your agents store, retrieve, and use contextual information to pr
 + **Memory sessions** – Monitor memory usage within individual sessions
 + **Traces view** – Access detailed trace information for memory operations
 
-![Memory view.](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/images/Memory.png)
+![Memory view.](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/images/Memory.png)
 
 To understand short-term or long-memory, see [Add memory to your AI agent ](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory.html).
 
 Choose **View details** to view the memory metrics in graphs.
 
-![Memory metrics view.](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/images/Memory_metrics.png)
+![Memory metrics view.](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/images/Memory_metrics.png)
 
 Under **Memories**, you can view all the memories associated with your account. Choose a memory **Name** to view the memory details.
 
-![Memory metrics view.](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/images/Memory_details.png)
+![Memory metrics view.](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/images/Memory_details.png)
 
 On the **Memory details** page, you will see the following tabs:
 + **Overview** – Displays comprehensive memory performance metrics and usage patterns for the selected memory resource

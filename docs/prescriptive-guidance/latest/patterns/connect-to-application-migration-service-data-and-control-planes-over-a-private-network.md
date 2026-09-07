@@ -50,11 +50,11 @@ MGN isn’t currently available in all AWS Regions and operating systems.
 
 The following diagram illustrates the network architecture for a typical migration. For more information about this architecture, see the [MGN documentation](https://docs.aws.amazon.com/mgn/latest/ug/Network-Settings-Video.html) and the [MGN service architecture and network architecture video](https://youtu.be/ao8geVzmmRo).
 
-![Network architecture for Application Migration Service for a typical migration](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/21346c0f-0643-4f4f-b21f-fdfe24fc6a8f/images/546598b2-8026-4849-a441-eaa2bc2bf6bb.png)
+![Network architecture for Application Migration Service for a typical migration](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/21346c0f-0643-4f4f-b21f-fdfe24fc6a8f/images/546598b2-8026-4849-a441-eaa2bc2bf6bb.png)
 
 The following detailed view shows the configuration of interface VPC endpoints in the staging area VPC to connect Amazon S3 and MGN.
 
-![Network architecture for Application Migration Service for a typical migration - detailed view](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/21346c0f-0643-4f4f-b21f-fdfe24fc6a8f/images/bd0dfd42-4ab0-466f-b696-804dedcf4513.png)
+![Network architecture for Application Migration Service for a typical migration - detailed view](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/21346c0f-0643-4f4f-b21f-fdfe24fc6a8f/images/bd0dfd42-4ab0-466f-b696-804dedcf4513.png)
 
 ## Tools
 <a name="connect-to-application-migration-service-data-and-control-planes-over-a-private-network-tools"></a>

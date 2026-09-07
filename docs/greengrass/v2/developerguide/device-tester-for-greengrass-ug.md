@@ -16,7 +16,7 @@ Use AWS IoT Device Tester for AWS IoT Greengrass V2 to verify that the AWS IoT G
 
 If you want to add your hardware to the AWS Partner Device Catalog, run the AWS IoT Greengrass qualification suite to generate test reports that you can submit to AWS IoT. For more information, see [AWS Device Qualification Program](https://aws.amazon.com/partners/dqp/).
 
-![An overview of how the AWS IoT Device Tester for AWS IoT Greengrass V2 verifies that the AWS IoT Greengrass Core software runs on your hardware and can communicate with the AWS Cloud.](http://docs.aws.amazon.com/greengrass/v2/developerguide/images/devicetester_gg.png)
+![An overview of how the AWS IoT Device Tester for AWS IoT Greengrass V2 verifies that the AWS IoT Greengrass Core software runs on your hardware and can communicate with the AWS Cloud.](https://docs.aws.amazon.com/greengrass/v2/developerguide/images/devicetester_gg.png)
 
 IDT for AWS IoT Greengrass V2 organizes tests using the concepts of *test suites* and *test groups*.<a name="idt-test-suites-groups"></a>
 + A test suite is the set of test groups used to verify that a device works with particular versions of AWS IoT Greengrass.

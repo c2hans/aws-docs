@@ -23,7 +23,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/patterns-for-ingestin
 
  Once the data is streamed in Kafka, you can either directly send it to Amazon S3 or you can use the [Kinesis-Kafka Connector](https://github.com/awslabs/kinesis-kafka-connector) to extend the pipeline before the data is pushed into Amazon S3. The advantage of using Firehose in the streaming data pipeline is that you can now transform/normalize the events data, buffer it for a specific interval or a specific file size, and finally convert this data into Parquet file format before it lands in Amazon S3. You can also partition the data in Amazon S3 prefixes based on rules using Firehose.
 
-![This is a diagram that displays a data-based ingestion pattern between SaaS applications, Amazon Managed Kafka, Amazon Kinesis Firehose, and Amazon S3.](http://docs.aws.amazon.com/whitepapers/latest/patterns-for-ingesting-saas-data-into-aws-data-lakes/images/streaming-based-data-ingestion-pattern.png)
+![This is a diagram that displays a data-based ingestion pattern between SaaS applications, Amazon Managed Kafka, Amazon Kinesis Firehose, and Amazon S3.](https://docs.aws.amazon.com/whitepapers/latest/patterns-for-ingesting-saas-data-into-aws-data-lakes/images/streaming-based-data-ingestion-pattern.png)
 
 ### Usage patterns
 <a name="usage-patterns-3"></a>

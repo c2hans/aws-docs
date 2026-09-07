@@ -17,7 +17,7 @@ The following diagram shows how Amazon SageMaker AI spins up a Processing job. A
 **Note**
 Your input data must be stored in an Amazon S3 bucket. Alternatively, you can use Amazon Athena or Amazon Redshift as input sources.
 
-![Running a processing job.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/Processing-1.png)
+![Running a processing job.](https://docs.aws.amazon.com/sagemaker/latest/dg/images/Processing-1.png)
 
 **Tip**
 To learn best practices for distributed computing of machine learning (ML) training and processing jobs in general, see [Distributed computing with SageMaker AI best practices](distributed-training-options.md).

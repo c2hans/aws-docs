@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/quick-suite
 **Note**
 This access approach is available only for the Enterprise edition of Amazon Quick. For more information, see [User management for Enterprise edition](https://docs.aws.amazon.com/quicksuite/latest/userguide/editions.html#edition-user-management-enterprise) in the Quick documentation.
 
-![Architecture diagram of an Active Directory user accessing Quick Suite.](http://docs.aws.amazon.com/prescriptive-guidance/latest/quick-suite-access-approach/images/guide-img/ec03a023-a3ad-4a10-93bb-22dcf4ea49a5/images/83d22259-07c3-4bbe-8756-7a6b79764a07.png)
+![Architecture diagram of an Active Directory user accessing Quick Suite.](https://docs.aws.amazon.com/prescriptive-guidance/latest/quick-suite-access-approach/images/guide-img/ec03a023-a3ad-4a10-93bb-22dcf4ea49a5/images/83d22259-07c3-4bbe-8756-7a6b79764a07.png)
 
 The following are the characteristics of this architecture and access approach:
 + The Amazon Quick user record is linked to the user in Active Directory.

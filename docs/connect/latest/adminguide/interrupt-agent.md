@@ -44,7 +44,7 @@ There are two ways to specify the target agent in this block.
 
 Select an agent from the instance-level user list in the block's properties panel.
 
-![The Interrupt agent block configured with a manually selected agent.](http://docs.aws.amazon.com/connect/latest/adminguide/images/interrupt-agent-properties-manually.png)
+![The Interrupt agent block configured with a manually selected agent.](https://docs.aws.amazon.com/connect/latest/adminguide/images/interrupt-agent-properties-manually.png)
 
 ### Set dynamically
 <a name="interrupt-agent-properties-dynamic"></a>
@@ -54,7 +54,7 @@ Pass the agent's identity as a contact attribute. The following values are accep
 + User ID
 + Username
 
-![The Interrupt agent block configured with a dynamically set agent attribute.](http://docs.aws.amazon.com/connect/latest/adminguide/images/interrupt-agent-properties-dynamically.png)
+![The Interrupt agent block configured with a dynamically set agent attribute.](https://docs.aws.amazon.com/connect/latest/adminguide/images/interrupt-agent-properties-dynamically.png)
 
 ## Block branches
 <a name="interrupt-agent-branches"></a>
@@ -69,7 +69,7 @@ This block has the following branches:
 **Note**
 After the **Success** branch is taken, the caller remains in the queue flow while the agent decides whether to accept or reject the contact. The caller's experience while waiting depends on how you have configured the queue flow.
 
-![A configured Interrupt agent block showing Success and Error branches.](http://docs.aws.amazon.com/connect/latest/adminguide/images/interrupt-agent-flowblock.png)
+![A configured Interrupt agent block showing Success and Error branches.](https://docs.aws.amazon.com/connect/latest/adminguide/images/interrupt-agent-flowblock.png)
 
 ## Configuration tips
 <a name="interrupt-agent-tips"></a>

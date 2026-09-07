@@ -15,11 +15,11 @@ According to the [CNCF Annual Survey 2021](https://www.cncf.io/reports/cncf-annu
 
 The following infographic shows the cost savings that a business can achieve by consolidating their ASP.NET Framework applications onto Amazon Elastic Compute Cloud (Amazon EC2) instances based on an [AWS Optimization and Licensing Assessment (AWS OLA)](https://aws.amazon.com/optimization-and-licensing-assessment/) recommendation. The following infographic shows what additional savings can be achieved by moving applications to a Windows container.
 
-![ASP.NET consolidation](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/cc4e3b59-96d6-406d-9f53-01d065d1e6e0.png)
+![ASP.NET consolidation](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/cc4e3b59-96d6-406d-9f53-01d065d1e6e0.png)
 
 The AWS OLA recommended that the business do a lift and shift to individual t3.small instances. The business could accomplish these savings by running seven ASP.NET applications on on-premises servers, as the following performance utilization analysis shows.
 
-![Performance utilization analysis](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/b149d628-4b57-4aaa-b242-e47ee573dcd2.png)
+![Performance utilization analysis](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/b149d628-4b57-4aaa-b242-e47ee573dcd2.png)
 
 Further analysis revealed that the business could save even more on costs by running its workloads on containers. Containers reduce the operating system overhead on system resources like CPU, RAM, and disk usage (explained in the next section). In this scenario, the business could consolidate all seven applications onto one t3.large instance and still have 3 GB RAM to spare. Migrating to containers can help the business achieve an average of 64 percent cost savings across compute and storage by using containers instead of Amazon EC2.
 

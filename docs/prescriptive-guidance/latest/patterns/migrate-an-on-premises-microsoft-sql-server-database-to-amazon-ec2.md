@@ -37,16 +37,16 @@ This pattern describes how to migrate an on-premises Microsoft SQL Server databa
 
 **Target architecture**
 
-![Primary and standby Microsoft SQL Server instances on EC2 instances in two Availability Zones.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/f0a155b3-4977-4e1f-8332-89eab29c1e25/images/53e2c27d-ceb4-4d88-a022-93dd0b343eaf.png)
+![Primary and standby Microsoft SQL Server instances on EC2 instances in two Availability Zones.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/f0a155b3-4977-4e1f-8332-89eab29c1e25/images/53e2c27d-ceb4-4d88-a022-93dd0b343eaf.png)
 
 **Data migration architecture**
 + Using AWS DMS
 
-![Migrating on-premises SQL Server data to an EC2 instance by using AWS DMS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/f0a155b3-4977-4e1f-8332-89eab29c1e25/images/1cbe32ea-e285-4cac-9153-4428bad9b229.png)
+![Migrating on-premises SQL Server data to an EC2 instance by using AWS DMS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/f0a155b3-4977-4e1f-8332-89eab29c1e25/images/1cbe32ea-e285-4cac-9153-4428bad9b229.png)
 
 + Using native SQL Server tools
 
-![Migrating on-premises SQL Server data to an EC2 instance by using native SQL Server tools.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/f0a155b3-4977-4e1f-8332-89eab29c1e25/images/ad2caf54-7399-4038-91a3-acba9fa7da29.png)
+![Migrating on-premises SQL Server data to an EC2 instance by using native SQL Server tools.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/f0a155b3-4977-4e1f-8332-89eab29c1e25/images/ad2caf54-7399-4038-91a3-acba9fa7da29.png)
 
 ## Tools
 <a name="migrate-an-on-premises-microsoft-sql-server-database-to-amazon-ec2-tools"></a>

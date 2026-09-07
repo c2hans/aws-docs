@@ -53,15 +53,15 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-postgresql
 
  If the primary database server exhibits performance issues during a backup, a replicated secondary database server can be used for the backups to alleviate the backup load from the primary database server. One approach can be to back up from a secondary server's SSD data volume to a backup server's Throughput Optimized HDD (st1) volume. The high throughput of 500 MiB/s per volume and large 1 MiB I/O block size make it an ideal volume type for sequential backups meaning it can use the larger I/O blocks. The following diagram shows a backup server using the PostgreSQL secondary server to read the backup data.
 
-![Diagram that shows a backup server using the PostgreSQL secondary server to read the backup data.](http://docs.aws.amazon.com/whitepapers/latest/optimizing-postgresql-on-ec2-using-ebs/images/image3.png)
+![Diagram that shows a backup server using the PostgreSQL secondary server to read the backup data.](https://docs.aws.amazon.com/whitepapers/latest/optimizing-postgresql-on-ec2-using-ebs/images/image3.png)
 
  Regarding file system level backup, `pg_basebackup` is a widely used PostgreSQL backup tool that allows us to take an online and consistent file system level backup. These backups can be used for point-in-time-recovery or to set up a secondary PostgreSQL server. The following image shows PostgreSQL files system backup using `pg_basebackup` and streaming the write-ahead logs from a running PostgreSQL cluster:
 
-![Diagram that shows PostgreSQL files system backup using pg_basebackup and streaming the write-ahead logs from a running PostgreSQL cluster.](http://docs.aws.amazon.com/whitepapers/latest/optimizing-postgresql-on-ec2-using-ebs/images/image4.png)
+![Diagram that shows PostgreSQL files system backup using pg_basebackup and streaming the write-ahead logs from a running PostgreSQL cluster.](https://docs.aws.amazon.com/whitepapers/latest/optimizing-postgresql-on-ec2-using-ebs/images/image4.png)
 
  Another option is to have the PostgreSQL secondary server back up the database files directly to Amazon Elastic File System (Amazon EFS) or Amazon S3. Amazon EFS stores its data redundantly across multiple Availability Zones. Both the primary and the secondary instances can attach to Amazon EFS. The secondary instance can initiate a backup to Amazon EFS from where the primary instance can do a restore. Amazon S3 can also be used as a backup target. Amazon S3 can be used in a manner similar to Amazon EFS except that Amazon S3 is object-based storage rather than a file system. The following diagram depicts the option of using Amazon EFS or Amazon S3 as a backup target.
 
-![Diagram that depicts the option of using Amazon EFS or Amazon S3 as a backup target.](http://docs.aws.amazon.com/whitepapers/latest/optimizing-postgresql-on-ec2-using-ebs/images/image5.png)
+![Diagram that depicts the option of using Amazon EFS or Amazon S3 as a backup target.](https://docs.aws.amazon.com/whitepapers/latest/optimizing-postgresql-on-ec2-using-ebs/images/image5.png)
 
  Second approach of backing up PostgreSQL database is to use volume-level EBS snapshots. Snapshots are incremental backups, which means that only the blocks on the device that have changed after your most recent snapshot are saved. This minimizes the time required to create the snapshot and saves on storage costs. When you delete a snapshot, only the data unique to that snapshot is removed. Active snapshots contain all the information needed to restore your data to a new Amazon EBS volume.
 

@@ -49,7 +49,7 @@ This pattern covers how to accomplish a Db2 migration with a short outage window
 
 The following diagram shows one Db2 instance running on-premises with a virtual private network (VPN) connection to Db2 on Amazon EC2. The dotted lines represent the VPN tunnel between your data center and the AWS Cloud.
 
-![Workflow to accomplish a Db2 migration within short outage window using transaction log shipping.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7dec6e4a-a92e-4204-9e42-f89d7dcafbfa/images/a7e1c1d6-2ec1-4271-952d-a58260ad7c81.png)
+![Workflow to accomplish a Db2 migration within short outage window using transaction log shipping.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7dec6e4a-a92e-4204-9e42-f89d7dcafbfa/images/a7e1c1d6-2ec1-4271-952d-a58260ad7c81.png)
 
 ## Tools
 <a name="migrate-db2-for-luw-to-amazon-ec2-by-using-log-shipping-to-reduce-outage-time-tools"></a>

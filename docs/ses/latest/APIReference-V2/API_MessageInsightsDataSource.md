@@ -32,6 +32,7 @@ Required: No
 
  ** MaxResults **   <a name="SES-Type-MessageInsightsDataSource-MaxResults"></a>
 The maximum number of results.
+If you don't specify `MaxResults`, the export returns a maximum of 1,000 results.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 10000.
 Required: No

@@ -49,7 +49,7 @@ The code for this pattern is available in the GitHub [amazon-redshift-sql-deploy
 
 The following diagram illustrates how Terraform manages the Amazon Redshift database resources by handling both nonrepeatable and repeatable SQL queries.
 
-![Process for Terraform to manage Amazon Redshift database resources using SQL queries.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/0f4467ac-761b-4b6b-a32f-e18a2ca2245d/images/3b6ff9e8-e3d1-48ed-9fa1-4b14f7d3d65b.png)
+![Process for Terraform to manage Amazon Redshift database resources using SQL queries.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/0f4467ac-761b-4b6b-a32f-e18a2ca2245d/images/3b6ff9e8-e3d1-48ed-9fa1-4b14f7d3d65b.png)
 
 The diagram shows the following steps:
 

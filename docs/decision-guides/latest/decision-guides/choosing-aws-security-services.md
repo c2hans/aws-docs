@@ -28,7 +28,7 @@ Security, identity, and governance in the cloud are important components for you
 +  [Identity](https://aws.amazon.com/identity/) services help you securely manage identities, resources, and permissions in a scalable way. AWS provides identity services designed for workforce and customer-facing applications, and for managing access to your workloads and applications.
 +  [Cloud governance](https://aws.amazon.com/cloudops/cloud-governance/) is a set of rules, processes, and reports that guide your organization to follow best practices. You can establish cloud governance across your AWS resources, use built-in best practices and standards, and automate compliance and auditing processes. [Compliance](https://aws.amazon.com/compliance/) in the cloud refers to adhering to laws and regulations governing data protection and privacy. [AWS Compliance Programs](https://aws.amazon.com/compliance/programs/) provides information about the certifications, regulations, and frameworks that AWS aligns with.
 
-[![AWS Videos](http://img.youtube.com/vi/T4svAhNLNfc/0.jpg)](http://www.youtube.com/watch?v=T4svAhNLNfc)
+[![AWS Videos](https://img.youtube.com/vi/T4svAhNLNfc/0.jpg)](https://www.youtube.com/watch?v=T4svAhNLNfc)
 
 ## Understand AWS security, identity, and governance services
 <a name="understand"></a>
@@ -45,7 +45,7 @@ With an understanding of this model, you can understand the range of options ava
 ### You can combine AWS tools and services to help safeguard your workloads
 <a name="you-can-combine-aws-tools-and-services-to-help-safeguard-your-workloads"></a>
 
-![The five domains across security, identity, and governance include identity and access management, network and app protection, data protection, detection and response, and governance and compliance.](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/security-identity-governance-services.png)
+![The five domains across security, identity, and governance include identity and access management, network and app protection, data protection, detection and response, and governance and compliance.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/security-identity-governance-services.png)
 
 As shown in the previous diagram, AWS offers tools and services across five domains to help you achieve and maintain robust security, identity management, and governance in the cloud. You can use AWS services across these five domains to help you do the following:
 + Form a multilayered approach to safeguarding your data and environments

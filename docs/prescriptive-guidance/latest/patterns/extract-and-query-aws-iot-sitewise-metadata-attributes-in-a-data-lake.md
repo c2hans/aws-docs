@@ -32,7 +32,7 @@ You can use a Lambda function or an AWS Glue job to complete this process. We re
 
 The solution architecture and workflow are shown in the following diagram.
 
-![Architecture diagram showing the extraction and query process described.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/22b59ff7-3df3-4a5b-9973-d43967bd58fd/images/fa3d80bf-df9a-49fe-971c-a055339b2cd2.png)
+![Architecture diagram showing the extraction and query process described.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/22b59ff7-3df3-4a5b-9973-d43967bd58fd/images/fa3d80bf-df9a-49fe-971c-a055339b2cd2.png)
 
 1. The scheduled AWS Glue job or Lambda function runs. It extracts the asset metadata attributes from AWS IoT SiteWise and ingests them into an Amazon S3 bucket.
 

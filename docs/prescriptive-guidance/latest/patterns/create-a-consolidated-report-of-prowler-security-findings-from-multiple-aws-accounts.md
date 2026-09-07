@@ -40,7 +40,7 @@ This solution was designed with the following in mind:
 ## Architecture
 <a name="create-a-consolidated-report-of-prowler-security-findings-from-multiple-aws-accounts-architecture"></a>
 
-![Architecture diagram with Prowler deployed in a centralized security account.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/81ba9037-9958-4e4a-95b7-d68896075a5b/images/4a3c281c-f108-4e35-9683-72783ceb3336.png)
+![Architecture diagram with Prowler deployed in a centralized security account.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/81ba9037-9958-4e4a-95b7-d68896075a5b/images/4a3c281c-f108-4e35-9683-72783ceb3336.png)
 
 The diagram shows the following process:
 
@@ -193,12 +193,12 @@ The following commands removes rows that match more than one text string and the
 
 The following image is an example of the **Findings** worksheet in the report of consolidated Prowler findings.
 
-![Example of the Findings tab in the report of Prowler scan results](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/81ba9037-9958-4e4a-95b7-d68896075a5b/images/70311fc4-b919-4848-b200-40b35ce81826.png)
+![Example of the Findings tab in the report of Prowler scan results](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/81ba9037-9958-4e4a-95b7-d68896075a5b/images/70311fc4-b919-4848-b200-40b35ce81826.png)
 
 The following image is an example of the **Pass Fail** worksheet in the report of consolidated Prowler findings. (By default, pass results are excluded from the output.)
 
-![Example of the Pass Fail tab in the report of Prowler scan results](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/81ba9037-9958-4e4a-95b7-d68896075a5b/images/4823e2be-4d5e-4676-9fa3-d47b065dc6d8.png)
+![Example of the Pass Fail tab in the report of Prowler scan results](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/81ba9037-9958-4e4a-95b7-d68896075a5b/images/4823e2be-4d5e-4676-9fa3-d47b065dc6d8.png)
 
 The following image is an example of the **Severity** worksheet in the report of consolidated Prowler findings.
 
-![Example of the Severity tab in the report of Prowler scan results](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/81ba9037-9958-4e4a-95b7-d68896075a5b/images/b7cbbff1-bca3-4667-9a1e-cc92e2e4adcd.png)
+![Example of the Severity tab in the report of Prowler scan results](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/81ba9037-9958-4e4a-95b7-d68896075a5b/images/b7cbbff1-bca3-4667-9a1e-cc92e2e4adcd.png)

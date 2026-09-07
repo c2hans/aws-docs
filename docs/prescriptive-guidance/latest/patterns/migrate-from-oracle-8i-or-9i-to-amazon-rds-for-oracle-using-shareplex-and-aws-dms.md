@@ -47,7 +47,7 @@ Consider that several deprecated data types and features can impact a migration 
 
 The following diagram shows how to migrate an Oracle 8i or 9i database from an on-premises environment to an Amazon RDS for Oracle DB instance in the AWS Cloud.
 
-![Workflow for migrating an on-premises Oracle database to Amazon RDS on AWS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6e07d586-fd74-4f3d-8e81-79dd55c445c3/images/36e1a5ff-908b-4cb7-96f7-997eb105f1d6.png)
+![Workflow for migrating an on-premises Oracle database to Amazon RDS on AWS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6e07d586-fd74-4f3d-8e81-79dd55c445c3/images/36e1a5ff-908b-4cb7-96f7-997eb105f1d6.png)
 
 The diagram shows the following workflow:
 

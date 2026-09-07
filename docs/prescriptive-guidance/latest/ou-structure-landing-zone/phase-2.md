@@ -22,7 +22,7 @@ As a result of these, a new design was implemented in phase 2 and AWS accounts m
 
 The following diagram shows the OU architecture for phase 2.
 
-![Architecture design for phase 2 of the OU structure](http://docs.aws.amazon.com/prescriptive-guidance/latest/ou-structure-landing-zone/images/guide-img/dc8c0d6d-2fd2-4887-a8d0-2a424cc8ffb8/images/ce36cc11-de9b-4cb1-a017-abd9279bdfe6.png)
+![Architecture design for phase 2 of the OU structure](https://docs.aws.amazon.com/prescriptive-guidance/latest/ou-structure-landing-zone/images/guide-img/dc8c0d6d-2fd2-4887-a8d0-2a424cc8ffb8/images/ce36cc11-de9b-4cb1-a017-abd9279bdfe6.png)
 
 ## Security OU
 <a name="p2-security"></a>

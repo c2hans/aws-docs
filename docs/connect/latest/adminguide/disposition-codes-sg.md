@@ -15,4 +15,4 @@ After you've created your flow, you will be able to dynamically determine which 
 
 The following image shows the properties page for a [Set contact attributes](set-contact-attributes.md). It is configured to save the response in a user-defined attribute.
 
-![The properties page of the Set contact attributes block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/dispo-codes-sq.png)
+![The properties page of the Set contact attributes block.](https://docs.aws.amazon.com/connect/latest/adminguide/images/dispo-codes-sq.png)

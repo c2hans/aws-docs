@@ -39,7 +39,7 @@ This pattern outlines steps for using a distributed availability group to migrat
 
 **Migration architecture **
 
-![SQL Server with synchronous replication in availability groups on premises and on AWS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6e229e30-9b11-4ccb-bccd-cbe6601139c0/images/79ee7911-d68f-4db7-9b94-113dcf09c28b.png)
+![SQL Server with synchronous replication in availability groups on premises and on AWS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6e229e30-9b11-4ccb-bccd-cbe6601139c0/images/79ee7911-d68f-4db7-9b94-113dcf09c28b.png)
 
 *Terminology*
 + WSFC 1 – WSFC on premises

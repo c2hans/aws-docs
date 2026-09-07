@@ -16,11 +16,11 @@ While both manual and automated processes aim to uphold our security standards, 
 
 **Validation flow**
 
-![Validation flow](http://docs.aws.amazon.com/managedservices/latest/userguide/images/Validation-Flow.png)
+![Validation flow](https://docs.aws.amazon.com/managedservices/latest/userguide/images/Validation-Flow.png)
 
 **Validation and provisioning flow**
 
-![Validation and provisioning flow](http://docs.aws.amazon.com/managedservices/latest/userguide/images/Validation-and-Provisioning-Flow.png)
+![Validation and provisioning flow](https://docs.aws.amazon.com/managedservices/latest/userguide/images/Validation-and-Provisioning-Flow.png)
 
 **Note**
 This feature is suitable for teams that are experienced with AWS and IAM resources, and we do not recommend it for teams that are new to AWS. The automated validation process is designed to catch most errors and is helpful for teams to get quick reviews for changes to IAM, when they understand the permissions that they need. To use the new change types safely and effectively, we recommend you to have a good understanding of AWS IAM, and the [run-time checks](https://docs.aws.amazon.com/managedservices/latest/userguide/aip-runtime-checks.html) offered by the change types to determine whether they are suitable for your team.

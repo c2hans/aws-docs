@@ -35,7 +35,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mo
 
 The following diagram shows the end-to-end modernization of the legacy application and deployment to the AWS Cloud. Application and database credentials are stored in AWS Secrets Manager, and Amazon CloudWatch provides monitoring and logging capabilities.
 
-![AWS Transform modernizing a mainframe application and deployment through Terraform.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/78bc1e6e-cd3d-4c6d-ae4b-0675a6898fd9/images/332ccf35-f55a-449e-a05d-7e321b3867b7.png)
+![AWS Transform modernizing a mainframe application and deployment through Terraform.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/78bc1e6e-cd3d-4c6d-ae4b-0675a6898fd9/images/332ccf35-f55a-449e-a05d-7e321b3867b7.png)
 
 The diagram shows the following workflow:
 

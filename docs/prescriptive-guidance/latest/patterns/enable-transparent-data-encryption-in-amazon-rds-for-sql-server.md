@@ -37,7 +37,7 @@ For the latest information about supported versions and editions, see [Support f
 
 **Architecture**
 
-![Architecture for enabling TDE for Amazon RDS for SQL Server databases](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/f513ea66-fd14-48d3-a576-8eb281e77b21/images/8a121e67-9a90-42d2-988e-3bcab0e6bc35.png)
+![Architecture for enabling TDE for Amazon RDS for SQL Server databases](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/f513ea66-fd14-48d3-a576-8eb281e77b21/images/8a121e67-9a90-42d2-988e-3bcab0e6bc35.png)
 
 ## Tools
 <a name="enable-transparent-data-encryption-in-amazon-rds-for-sql-server-tools"></a>

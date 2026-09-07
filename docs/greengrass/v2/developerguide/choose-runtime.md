@@ -25,7 +25,7 @@ Note: Event source names use AWS IoT Greengrass V1 terminology. When migrating t
 ## Runtime selection decision flow
 <a name="runtime-selection-decision-flow"></a>
 
-![Decision flow diagram for choosing between Greengrass nucleus and Greengrass nucleus lite.](http://docs.aws.amazon.com/greengrass/v2/developerguide/images/runtime-selection-decision-flow.png)
+![Decision flow diagram for choosing between Greengrass nucleus and Greengrass nucleus lite.](https://docs.aws.amazon.com/greengrass/v2/developerguide/images/runtime-selection-decision-flow.png)
 
 ### Notes
 <a name="runtime-selection-notes"></a>

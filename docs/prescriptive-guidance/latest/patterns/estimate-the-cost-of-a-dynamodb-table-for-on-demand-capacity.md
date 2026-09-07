@@ -106,7 +106,7 @@ Every month, new things (components or products will be added, and the total num
 
 The following graph shows monthly RRU consumption and cost forecasting.
 
-![The RRU consumption rising more steeply than the cost.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/1797b48f-a183-4f25-811f-44921c3a48ee/images/3505bfc8-694d-4acc-8585-cd71258fa315.png)
+![The RRU consumption rising more steeply than the cost.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/1797b48f-a183-4f25-811f-44921c3a48ee/images/3505bfc8-694d-4acc-8585-cd71258fa315.png)
 
 Note that prices within the graph are for illustration only. To create accurate forecasts for your use case, check the AWS pricing page, and use those prices in the Excel sheet.
 
@@ -152,7 +152,7 @@ In the template, actual billable storage size is calculated by subtracting the f
 
 The following example chart forecasts monthly storage size in GB, billable storage cost, on-demand backup cost, and recovery cost for next 36 calendar months. All costs are in USD. From the graph, it’s clear that storage, backup, and recovery costs increase proportionally to increases in storage size.
 
-![The storage size rising above three thousand while the costs are less than one thousand.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/1797b48f-a183-4f25-811f-44921c3a48ee/images/fd9f06d0-bc9c-4b4e-8cbd-3e527fe09e88.png)
+![The storage size rising above three thousand while the costs are less than one thousand.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/1797b48f-a183-4f25-811f-44921c3a48ee/images/fd9f06d0-bc9c-4b4e-8cbd-3e527fe09e88.png)
 
 Note that prices used in the graph are for illustration purposes only. To create accurate prices for your use case, check the AWS pricing page, and use those prices in the Excel template.
 

@@ -78,6 +78,6 @@ In a production flow, ExpressLink customers can use any of a number of automated
 
 **10.3.1.4**   The host can query the state of the module using the CONNECT? command and inspecting the second numerical parameter provided in the response (see [3.7.1 CONNECT? ⁞  Request the connection status](elpg-commands.md#elpg-connectq-command)) without having to inspect the contents of the Endpoint configuration parameter (or knowing/assuming the default Endpoint value to compare against).
 
-<a name="elpg-figure6"></a>![Figure 6 - ExpressLink onboarding states diagram](http://docs.aws.amazon.com/iot-expresslink/archive/v1.0/programmersguide/images/image5.png)
+<a name="elpg-figure6"></a>![Figure 6 - ExpressLink onboarding states diagram](https://docs.aws.amazon.com/iot-expresslink/archive/v1.0/programmersguide/images/image5.png)
 
 Once onboarded, all ExpressLink modules behave as fully owned devices and connect to the customer/OEM account as the ExpressLink things are transferred to the chosen OEM registry. It is the responsibility of the OEM to manage the product life cycle, use the OTA services to apply module updates (with images provided by the ExpressLink module vendor) and apply host processor application updates as needed.

@@ -38,7 +38,7 @@ Organization design is the process of modifying organizational structures to bet
 
  The COM assessment can provide recommendations for future operating models and playbooks for increasing maturity. Based on where you are in your cloud journey, beginning testing new operating models at a small scale.
 
-![A diagram that depicts cloud operating model maturity.](http://docs.aws.amazon.com/whitepapers/latest/aws-caf-people-perspective/images/cloud-operating-model.png)
+![A diagram that depicts cloud operating model maturity.](https://docs.aws.amazon.com/whitepapers/latest/aws-caf-people-perspective/images/cloud-operating-model.png)
 
 ## Excel
 <a name="excel-5"></a>

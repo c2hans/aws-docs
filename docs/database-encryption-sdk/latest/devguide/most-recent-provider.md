@@ -127,7 +127,7 @@ The Most Recent Provider can work with any compatible CMP from any provider stor
 
 To request a CMP from its provider store, the Most Recent Provider supplies its material name and the version of an existing CMP it wants to use. For encryption materials, the Most Recent Provider always requests the maximum ("most recent") version. For decryption materials, it requests the version of the CMP that was used to create the encryption materials, as shown in the following diagram.
 
-![A Most Recent Provider](http://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/images/most-recent-provider-1.png)
+![A Most Recent Provider](https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/images/most-recent-provider-1.png)
 
 The Most Recent Provider saves versions of the CMPs that the provider store returns in a local Least Recently Used (LRU) cache in memory. The cache enables the Most Recent Provider to get the CMPs that it needs without calling the provider store for every item. You can clear the cache on demand.
 
@@ -142,7 +142,7 @@ A *MetaStore* is a [provider store](DDBEC-legacy-concepts.md#provider-store) tha
 
 The following diagram shows the components of the MetaStore and how it interacts with the Most Recent Provider.
 
-![A MetaStore](http://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/images/most-recent-provider-2.png)
+![A MetaStore](https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/images/most-recent-provider-2.png)
 
 The MetaStore generates the Wrapped CMPs, and then stores them (in encrypted form) in an internal DynamoDB table. The partition key is the name of the Most Recent Provider material; the sort key its version number. The materials in the table are protected by an internal DynamoDB Encryption Client, including an item encryptor and internal [cryptographic materials provider](DDBEC-legacy-concepts.md#concept-material-provider) (CMP).
 
@@ -190,7 +190,7 @@ You can schedule your Create New Provider calls based on time, the number of ite
 
 The Most Recent Provider uses the following process, shown in this diagram, to get the encryption materials that it returns to the item encryptor. The output depends on the type of CMP that the provider store returns. The Most Recent Provider can use any compatible provider store, including the MetaStore that is included in the DynamoDB Encryption Client.
 
-![Input, processing, and output of the Most Recent Provider in the DynamoDB Encryption Client](http://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/images/most-recent-provider-provider-store.png)
+![Input, processing, and output of the Most Recent Provider in the DynamoDB Encryption Client](https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/images/most-recent-provider-provider-store.png)
 
 When you create a Most Recent Provider by using the [`CachingMostRecentProvider` symbol](#mrp-versions), you specify a provider store, a name for the Most Recent Provider, and a [time-to-live](#most-recent-provider-ttl) (TTL) value. You can also optionally specify a cache size, which determines the maximum number of cryptographic materials that can exist in the cache.
 

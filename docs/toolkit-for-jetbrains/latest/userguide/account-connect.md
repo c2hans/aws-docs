@@ -35,7 +35,7 @@ To access the AWS Sign In panel at anytime, complete the following procedure.
 
 The following is an image of the **AWS Toolkit Sign In** panel.
 
-![AWS Toolkit sign-in panel with Workforce and IAM Credential options and Continue button.](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/awssigninpane2024.png)
+![AWS Toolkit sign-in panel with Workforce and IAM Credential options and Continue button.](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/awssigninpane2024.png)
 
 ## Connecting to AWS from the AWS Toolkit for JetBrains
 <a name="connecting-to-aws"></a>

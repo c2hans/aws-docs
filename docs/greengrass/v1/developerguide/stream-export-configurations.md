@@ -9,7 +9,7 @@ End of support notice: On October 7th, 2026, AWS will discontinue support for AW
 
 User-defined Lambda functions use `StreamManagerClient` in the AWS IoT Greengrass Core SDK to interact with stream manager. When a Lambda function [creates a stream](work-with-streams.md#streammanagerclient-create-message-stream) or [updates a stream](work-with-streams.md#streammanagerclient-create-message-stream), it passes a `MessageStreamDefinition` object that represents stream properties, including the export definition. The `ExportDefinition` object contains the export configurations defined for the stream. Stream manager uses these export configurations to determine where and how to export the stream.
 
-![Object model diagram of the ExportDefinition property type.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/stream-manager-exportconfigs.png)
+![Object model diagram of the ExportDefinition property type.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/stream-manager-exportconfigs.png)
 
 You can define zero or more export configurations on a stream, including multiple export configurations for a single destination type. For example, you can export a stream to two Kinesis data streams and one Amazon S3 bucket.
 
@@ -217,7 +217,7 @@ To create a stream that exports to Amazon S3, your Lambda functions use the `S3E
 
  This high-level workflow is shown in the following diagram.
 
-![Diagram of the stream manager workflow for Amazon S3 exports.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/stream-manager-s3.png)
+![Diagram of the stream manager workflow for Amazon S3 exports.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/stream-manager-s3.png)
 
 Stream manager uses the multipart upload threshold property, [minimum part size](configure-stream-manager.md#stream-manager-minimum-part-size) setting, and size of the input file to determine how to upload data. The multipart upload threshold must be greater or equal to the minimum part size. If you want to upload data in parallel, you can create multiple streams.
 

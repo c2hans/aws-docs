@@ -41,7 +41,7 @@ In this pattern, the following interactions occur:
 
 The following diagram illustrates the architecture for deploying CrewAI multi-agent systems by using Amazon Bedrock and Terraform.
 
-![Workflow to deploy CrewAI multi-agent systems using Terraform and Amazon Bedrock.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/b46069e9-4c38-405f-b0f0-310eabb06b06/images/b3296b17-e388-46ba-8d71-2ec7ce3ed3e0.png)
+![Workflow to deploy CrewAI multi-agent systems using Terraform and Amazon Bedrock.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/b46069e9-4c38-405f-b0f0-310eabb06b06/images/b3296b17-e388-46ba-8d71-2ec7ce3ed3e0.png)
 
 The diagram shows the following workflow:
 

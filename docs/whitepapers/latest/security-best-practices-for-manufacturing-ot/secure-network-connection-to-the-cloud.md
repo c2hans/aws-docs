@@ -16,6 +16,6 @@ The best practice to manage a secure cloud connection is to keep the network tra
 
 The following figure shows an example of an [IoT AWS IoT Greengrass gateway connected to the cloud via a proxy](https://docs.aws.amazon.com/greengrass/latest/developerguide/gg-core.html#alpn-network-proxy). Using a proxy allows you to inspect and monitor cloud traffic, enabling threat and malware detection. It also allows the security policies to be applied at the network layer. Firewall rules need to be established for HTTPS and MQTT traffic. To sustain the intermittent loss of network connection, the gateway should utilize “store and forward” methods like [AWS IoT Greengrass Stream Manager](https://docs.aws.amazon.com/greengrass/v2/developerguide/stream-manager-component.html) to locally buffer data until the connection is restored.
 
-![A diagram showing secure network connection to the cloud.](http://docs.aws.amazon.com/whitepapers/latest/security-best-practices-for-manufacturing-ot/images/secure-nw-connection.png)
+![A diagram showing secure network connection to the cloud.](https://docs.aws.amazon.com/whitepapers/latest/security-best-practices-for-manufacturing-ot/images/secure-nw-connection.png)
 
 * Secure network connection to the cloud *

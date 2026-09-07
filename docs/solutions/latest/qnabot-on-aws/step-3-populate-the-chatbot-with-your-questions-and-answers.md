@@ -14,7 +14,7 @@ Use the following procedure to get started with customizing your chatbot using t
 1. Enter the administrator username you provided when you launched the stack and your new password.
 
     **QnABot on AWS content designer web user interface — QUESTIONS tab**
-![image8](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image8.jpeg)
+![image8](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image8.jpeg)
 
 1. Choose **Add.**
 

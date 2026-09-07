@@ -66,7 +66,7 @@ The CloudFormation template automatically handles AWS resource creation. OpenSSL
 
 ** **
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2600dc9f-9c1a-442e-9523-1c925aff7620/images/309c3de5-255e-4257-8ad8-af58c1ce8855.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2600dc9f-9c1a-442e-9523-1c925aff7620/images/309c3de5-255e-4257-8ad8-af58c1ce8855.png)
 
 Figure 1 IAM Roles Anywhere certificate based authentication
 

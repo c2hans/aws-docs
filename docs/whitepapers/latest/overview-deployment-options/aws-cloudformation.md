@@ -25,6 +25,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-o
 
  The following diagram shows a common use case for CloudFormation. Here, CloudFormation templates are created to define all infrastructure components necessary to create a simple three-tier web application. In this example, we are using bootstrap scripts defined in CloudFormation to deploy the latest version of our application onto Amazon EC2 instances; however, it is also a common practice to combine additional deployment services with CloudFormation (using CloudFormation only for its infrastructure management and provisioning capabilities). Note that more than one CloudFormation template is used to create the infrastructure. In the diagram, CloudFormation is used to create all infrastructure components including IAM roles, VPCs, subnets, route tables, security groups, and Amazon S3 bucket policies. Separate CloudFormation templates are used to build each domain of the application architecture.
 
-![AWS CloudFormation use case](http://docs.aws.amazon.com/whitepapers/latest/overview-deployment-options/images/image2.png)
+![AWS CloudFormation use case](https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-options/images/image2.png)
 
 *AWS CloudFormation use case *

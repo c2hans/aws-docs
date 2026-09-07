@@ -11,7 +11,7 @@ With AWS DMS Serverless, similar to the current functionality of AWS DMS (referr
 
 The following diagram shows the AWS DMS Serverless replication process.
 
-![AWS DMS Serverless replication states](http://docs.aws.amazon.com/dms/latest/userguide/images/datarep-serverless-replication-process.png)
+![AWS DMS Serverless replication states](https://docs.aws.amazon.com/dms/latest/userguide/images/datarep-serverless-replication-process.png)
 
 **Note**
 The current engine version for AWS DMS Serverless is [ 3.5.4 ](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_ReleaseNotes.html#CHAP_ReleaseNotes.DMS354)

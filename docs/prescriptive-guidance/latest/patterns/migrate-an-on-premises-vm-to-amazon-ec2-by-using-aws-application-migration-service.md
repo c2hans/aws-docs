@@ -39,7 +39,7 @@ This pattern outlines the steps for migrating a supported virtual machine (VM) t
 
 The following diagram shows the high-level architecture and main components of the solution. In the on-premises data center, there are virtual machines with local disks. On AWS, there is a staging area with replication servers and a migrated resources area with EC2 instances for test and cutover. Both subnets contain EBS volumes.
 
-![Main components to migrate a supported VM to an Amazon EC2 instance on the AWS Cloud.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/58c8bafd-9a6d-42d4-a5ce-08c4b9a286a3/images/f8396fad-7ee9-4f75-800f-e819f509e151.png)
+![Main components to migrate a supported VM to an Amazon EC2 instance on the AWS Cloud.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/58c8bafd-9a6d-42d4-a5ce-08c4b9a286a3/images/f8396fad-7ee9-4f75-800f-e819f509e151.png)
 
 1. Initialize AWS Application Migration Service.
 
@@ -53,7 +53,7 @@ The following diagram shows the high-level architecture and main components of t
 
 The following diagram shows the high-level architecture and main components of the solution from the networking perspective, including required protocols and ports for communication between primary components in the on-premises data center and on AWS.
 
-![Networking components including protocols and ports for communication between data center and AWS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/58c8bafd-9a6d-42d4-a5ce-08c4b9a286a3/images/2f594daa-ddba-4841-8785-6067e8d83c2f.png)
+![Networking components including protocols and ports for communication between data center and AWS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/58c8bafd-9a6d-42d4-a5ce-08c4b9a286a3/images/2f594daa-ddba-4841-8785-6067e8d83c2f.png)
 
 ## Tools
 <a name="migrate-an-on-premises-vm-to-amazon-ec2-by-using-aws-application-migration-service-tools"></a>

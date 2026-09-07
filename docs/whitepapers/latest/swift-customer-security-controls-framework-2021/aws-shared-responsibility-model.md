@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/swift-customer-securi
 
  Security and Compliance is a [shared responsibility](https://aws.amazon.com/compliance/shared-responsibility-model/) between AWS and the customer. This shared model can help relieve the customer’s operational burden as AWS operates, manages, and controls the components from the host operating system and virtualization layer down to the physical security of the facilities in which the service operates.
 
-![A diagram depicting the AWS Shared Responsibility security model.](http://docs.aws.amazon.com/whitepapers/latest/swift-customer-security-controls-framework-2021/images/shared-responsibility.jpeg)
+![A diagram depicting the AWS Shared Responsibility security model.](https://docs.aws.amazon.com/whitepapers/latest/swift-customer-security-controls-framework-2021/images/shared-responsibility.jpeg)
 
  AWS is responsible for the security and compliance **of** the cloud, or the infrastructure that runs all of the services offered in the AWS Cloud. Cloud security at AWS is the highest priority. AWS customers benefit from a data center and network architecture that are built to meet the requirements of the most security-sensitive organizations and compliance frameworks. This infrastructure is composed of the hardware, software, networking, and facilities that run AWS Cloud services. This includes controls that maintain separation between customer resources and data, along with numerous other administrative, compliance, and security-related controls.
 

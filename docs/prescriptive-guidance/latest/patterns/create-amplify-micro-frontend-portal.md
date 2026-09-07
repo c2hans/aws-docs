@@ -50,7 +50,7 @@ Before committing to the micro-frontend approach, we recommend that you review [
 
 In a micro-frontend architecture, each team develops and deploys features independently. The following image shows how multiple DevOps teams work together. The portal team develops the shell application. The shell application acts as a container. It retrieves, displays, and integrates the micro-frontend applications that are published by other DevOps teams. You use AWS Amplify to publish the shell application and micro-frontend applications.
 
-![Publishing multiple micro-frontends to a shell app that the user accesses through a web portal.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/ddf82a69-bf1b-4ad1-8e60-3dd375699936/images/cf045bf1-11ea-46d9-93cb-3c603122450d.png)
+![Publishing multiple micro-frontends to a shell app that the user accesses through a web portal.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/ddf82a69-bf1b-4ad1-8e60-3dd375699936/images/cf045bf1-11ea-46d9-93cb-3c603122450d.png)
 
 The architecture diagram shows the following workflow:
 

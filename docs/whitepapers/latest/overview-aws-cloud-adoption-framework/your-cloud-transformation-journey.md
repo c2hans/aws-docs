@@ -9,7 +9,7 @@ Also available on [Audible](https://www.audible.com/pd/Cloud-Adoption-Framework-
 
 Each organization’s cloud journey is unique. To succeed in your transformation, you’ll need to envision your desired target state, understand your cloud readiness, and adopt an agile approach to closing the gaps. Transforming incrementally will allow you to demonstrate value quickly while minimizing the need to make far-reaching predictions. Adopting an iterative approach will help you maintain momentum and evolve your roadmap as you learn from experience. The AWS CAF recommends four iterative and incremental cloud transformation phases shown in the following figure.
 
-![A diagram depicting the cloud transformation journey.](http://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/images/cloud-adoption-3.png)
+![A diagram depicting the cloud transformation journey.](https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/images/cloud-adoption-3.png)
 
 *Cloud transformation journey*
 + **Envision phase** focuses on demonstrating how cloud will help accelerate your business outcomes. It does so by identifying and prioritizing transformation opportunities across each of the four transformation domains in line with your strategic business objectives. Associating your transformation initiatives with key stakeholders (senior individuals capable of influencing and driving change) and measurable business outcomes will help you demonstrate value as you progress through your transformation journey.
@@ -19,7 +19,7 @@ Each organization’s cloud journey is unique. To succeed in your transformation
 
 You may not need to tackle all the foundational capabilities at once. Evolve the foundational capabilities and improve your cloud readiness as you progress through your cloud transformation journey. Consider tailoring the suggested sequence shown in the following figure to your particular needs.
 
-![A diagram depicting the evolution of AWS CAF perspectives and foundational capabilities](http://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/images/cloud-adoption-4.png)
+![A diagram depicting the evolution of AWS CAF perspectives and foundational capabilities](https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/images/cloud-adoption-4.png)
 
 *Evolution of AWS CAF perspectives and foundational capabilities*
 

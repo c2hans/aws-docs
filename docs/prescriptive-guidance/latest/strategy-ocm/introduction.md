@@ -25,7 +25,7 @@ The six points can be aligned to an agile sprint cadence, beginning with program
 
 1. Make It Stick
 
-![AWS Change Acceleration Framework and OCM Toolkit](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ocm/images/guide-img/f0dc8b97-6d82-45ff-86d7-7ed62d7be8b3/images/024c4715-b1e8-4f13-8521-9d7f57437155.png)
+![AWS Change Acceleration Framework and OCM Toolkit](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ocm/images/guide-img/f0dc8b97-6d82-45ff-86d7-7ed62d7be8b3/images/024c4715-b1e8-4f13-8521-9d7f57437155.png)
 
 Each point breaks down into specific pieces of actionable work, and examples are provided throughout this publication. The AWS change acceleration approach has been designed with a focus on return on investment (ROI), to accelerate your organization's adoption of AWS services and solutions, minimize the effects on performance, and shorten project completion times. Improving your company's ability to change and adapt is key to transformational levels of success. As AWS continues to innovate at a rapid pace each year, and as your organization quickly adopts those solutions and further innovates, business value is enhanced. These initial cloud successes lead to faster, more efficient, and more cost-effective adoption, and the cycle of migration and modernization is repeated.
 

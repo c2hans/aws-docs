@@ -12,4 +12,4 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/c
 1. To view event logs for the stack, right-click the stack's name. The AWS Toolkit for JetBrains displays the event logs in the **CloudFormation** tool window.
 
    To hide or show the **CloudFormation** tool window, on the main menu, choose **View**, **Tool Windows**, **CloudFormation**.
-![Choosing to view event logs for an AWS CloudFormation stack starting from AWS Explorer](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/cloudformation-logs.png)
+![Choosing to view event logs for an AWS CloudFormation stack starting from AWS Explorer](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/cloudformation-logs.png)

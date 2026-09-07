@@ -32,4 +32,4 @@ To delete a load balancer and its related resources, complete the following task
 
 All Elastic Load Balancing operations are idempotent, which means that they complete at most one time. If you repeat an operation, it succeeds.
 
-This document was last published on September 4, 2026.
+This document was last published on September 7, 2026.

@@ -70,7 +70,7 @@ WHERE server_status = '404'
 ```
 The following image shows the results of the query in the Athena Query Editor.
 
-![Querying an Apache log from Athena for HTTP 404 entries.](http://docs.aws.amazon.com/athena/latest/ug/images/querying-apache-logs-1.png)
+![Querying an Apache log from Athena for HTTP 404 entries.](https://docs.aws.amazon.com/athena/latest/ug/images/querying-apache-logs-1.png)
 
 **Example – Filter for successful requests**
 The following example query selects the user ID, request received time, text of the client request, and server status code from the `apache_logs` table. The `WHERE` clause filters for HTTP status code `200` (successful).
@@ -82,7 +82,7 @@ WHERE server_status = '200'
 ```
 The following image shows the results of the query in the Athena Query Editor.
 
-![Querying an Apache log from Athena for HTTP 200 entries.](http://docs.aws.amazon.com/athena/latest/ug/images/querying-apache-logs-2.png)
+![Querying an Apache log from Athena for HTTP 200 entries.](https://docs.aws.amazon.com/athena/latest/ug/images/querying-apache-logs-2.png)
 
 **Example – Filter by timestamp**
 The following example queries for records whose request received time is greater than the specified timestamp.

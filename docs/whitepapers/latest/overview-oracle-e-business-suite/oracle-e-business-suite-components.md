@@ -11,9 +11,9 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-oracle-e-bus
 
  Database tier for Oracle E-Business Suite can be deployed either on Amazon RDS Custom for Oracle managed service or self-managed Oracle Database on Amazon EC2.
 
-![Diagram showing Oracle E-Business Suite three-tier architecture with database tier on RDS Custom for Oracle](http://docs.aws.amazon.com/whitepapers/latest/overview-oracle-e-business-suite/images/e-business-suite-three-tier-architecture.png)
+![Diagram showing Oracle E-Business Suite three-tier architecture with database tier on RDS Custom for Oracle](https://docs.aws.amazon.com/whitepapers/latest/overview-oracle-e-business-suite/images/e-business-suite-three-tier-architecture.png)
 
-![Diagram showing Oracle E-Business Suite three-tier architecture with database tier on Amazon EC2](http://docs.aws.amazon.com/whitepapers/latest/overview-oracle-e-business-suite/images/e-business-suite-arch-with-ec2.png)
+![Diagram showing Oracle E-Business Suite three-tier architecture with database tier on Amazon EC2](https://docs.aws.amazon.com/whitepapers/latest/overview-oracle-e-business-suite/images/e-business-suite-arch-with-ec2.png)
 
  The client tier contains the client user interface, which is provided through HTML or Java applets in a web browser for forms-based applications.
 

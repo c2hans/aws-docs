@@ -24,7 +24,7 @@ The following diagram shows a RAG implementation:
 
 1. Applications can now query the vector database in response to use cases such as semantic search and content recommendation.
 
-![Embedding model converts content to vector embeddings stored in vector db to respond to queries.](http://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-an-aws-vector-database-for-rag-use-cases/images/guide-img/34bd35bb-382d-4951-8f14-111521edb094/images/7ee46b17-983e-46a9-a10a-1dd44cb7d6ff.png)
+![Embedding model converts content to vector embeddings stored in vector db to respond to queries.](https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-an-aws-vector-database-for-rag-use-cases/images/guide-img/34bd35bb-382d-4951-8f14-111521edb094/images/7ee46b17-983e-46a9-a10a-1dd44cb7d6ff.png)
 
 Choosing an inappropriate vector database for a RAG solution can lead to significant struggles and limitations including the following:
 + Poor query performance

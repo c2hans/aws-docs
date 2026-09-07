@@ -33,7 +33,7 @@ When you're troubleshooting issues in the cluster, installing SSM Agent on deman
 
 The following diagram illustrates the architecture for this pattern.
 
-![Using Kubernetes DaemonSet to install SSM Agent on Amazon EKS worker nodes.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/016d53f3-45c1-4913-b542-67124e1462b8/images/3a6dfd00-e54b-44d5-843a-4c26ce9826c9.png)
+![Using Kubernetes DaemonSet to install SSM Agent on Amazon EKS worker nodes.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/016d53f3-45c1-4913-b542-67124e1462b8/images/3a6dfd00-e54b-44d5-843a-4c26ce9826c9.png)
 
 ## Tools
 <a name="install-ssm-agent-on-amazon-eks-worker-nodes-by-using-kubernetes-daemonset-tools"></a>

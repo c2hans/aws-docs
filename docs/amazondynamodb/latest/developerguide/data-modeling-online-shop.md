@@ -33,7 +33,7 @@ An online store lets users browse through different products and eventually purc
 
 This is the entity relationship diagram (ERD) we'll be using to model DynamoDB as a data store for an online shop.
 
-![ERD for an online store's data model with entities, such as Product, Order, Payment, and Customer.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-1-ERD.png)
+![ERD for an online store's data model with entities, such as Product, Order, Payment, and Customer.](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-1-ERD.png)
 
 ## Access patterns
 <a name="data-modeling-schema-online-shop-access-patterns"></a>
@@ -97,7 +97,7 @@ To address this access pattern, a `GetItem` operation can be used with `PK=wareh
 
 **Base table:**
 
-![DynamoDB table design with prefixes and EntityType to get warehouse data by its ID.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-2-Step3.png)
+![DynamoDB table design with prefixes and EntityType to get warehouse data by its ID.](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-2-Step3.png)
 
 **Step 4: Address access pattern 4 (`getProductInventoryByProductId`)**
 
@@ -109,7 +109,7 @@ For more information about `begins_with()` and other expressions that can be app
 
 **Base table:**
 
-![Table design to query ProductID and warehouseId for tracking product inventory in a given warehouse.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-3-Step4.png)
+![Table design to query ProductID and warehouseId for tracking product inventory in a given warehouse.](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-3-Step4.png)
 
 **Step 5: Address access patterns 5 (`getOrderDetailsByOrderId`) and 6 (`getProductByOrderId`)**
 
@@ -119,13 +119,13 @@ To address access pattern 5 (`getOrderDetailsByOrderId`), query the table with `
 
 **Base table:**
 
-![Table design to query using orderId for getting information about all ordered products.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-4-Step5.png)
+![Table design to query using orderId for getting information about all ordered products.](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-4-Step5.png)
 
 To address access pattern 6 (`getProductByOrderId`), we need to read products in an `order` only. Query the table with `PK=orderId` and `SK begins_with “p#”` to accomplish this.
 
 **Base table:**
 
-![Table design to query using orderId and productId for getting products in an order.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-5-Step5.png)
+![Table design to query using orderId and productId for getting products in an order.](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-5-Step5.png)
 
 **Step 6: Address access pattern 7 (`getInvoiceByOrderId`)**
 
@@ -133,7 +133,7 @@ Import [AnOnlineShop\_8.json](https://github.com/aws-samples/amazon-dynamodb-des
 
 **Base table:**
 
-![Table design with invoice entity in the order item collection to get an invoice by orderId.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-6-Step6.png)
+![Table design with invoice entity in the order item collection to get an invoice by orderId.](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-6-Step6.png)
 
 **Step 7: Address access pattern 8 (`getShipmentByOrderId`)**
 
@@ -143,7 +143,7 @@ To get shipments by `orderId`, you can perform a query operation with `PK=orderI
 
 **Base table:**
 
-![Table design with shipment entity added to the order item collection to get shipments by order ID.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-7-Step7.png)
+![Table design with shipment entity added to the order item collection to get shipments by order ID.](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-7-Step7.png)
 
 **Step 8: Address access pattern 9 (`getOrderByProductIdForDateRange`)**
 
@@ -155,11 +155,11 @@ To address access pattern 9, perform a query on `GSI1` with `GSI1-PK=productId` 
 
 **Base table:**
 
-![Table design with a GSI to get order data from several order item collections.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-8-Step8-Base.png)
+![Table design with a GSI to get order data from several order item collections.](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-8-Step8-Base.png)
 
 **GSI1:**
 
-![GSI design with ProductID and Date as partition and sort keys to get orders by product ID and date.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-9-Step8-GSI.png)
+![GSI design with ProductID and Date as partition and sort keys to get orders by product ID and date.](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-9-Step8-GSI.png)
 
 **Step 9: Address access patterns 10 (`getInvoiceByInvoiceId`) and 11 (`getPaymentByInvoiceId`)**
 
@@ -172,7 +172,7 @@ To address access pattern 10 and 11, query `GSI1` with `GSI1-PK=invoiceId` and `
 
 **GSI1:**
 
-![GSI design with invoiceId as both partition and sort key to get invoice and payment by invoice ID.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-10-Step9.png)
+![GSI design with invoiceId as both partition and sort key to get invoice and payment by invoice ID.](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-10-Step9.png)
 
 **Step 10: Address access patterns 12 (`getShipmentDetailsByShipmentId`) and 13 (`getShipmentByWarehouseId`)**
 
@@ -182,19 +182,19 @@ Notice that `shipmentItem` entities are added to the *order* item collection on 
 
 **Base table:**
 
-![Table design with shipmentItem entity in the order item collection to get all order details.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-11-Step10.png)
+![Table design with shipmentItem entity in the order item collection to get all order details.](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-11-Step10.png)
 
 The `GSI1` partition and sort keys have already been used to model a one-to-many relationship between `shipment` and `shipmentItem`. To address access pattern 12 (`getShipmentDetailsByShipmentId`), query `GSI1` with `GSI1-PK=shipmentId` and `GSI1-SK=shipmentId`.
 
 **GSI1:**
 
-![GSI1 design with shipmentId as partition and sort key to get shipment details by shipment ID.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-12-Step10-GSI.png)
+![GSI1 design with shipmentId as partition and sort key to get shipment details by shipment ID.](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-12-Step10-GSI.png)
 
 We’ll need to create another GSI (`GSI2`) to model the new one-to-many relationship between `warehouse` and `shipment` for access pattern 13 (`getShipmentByWarehouseId`). To address this access pattern, query `GSI2` with `GSI2-PK=warehouseId` and `GSI2-SK begins_with “sh#”`.
 
 **GSI2:**
 
-![GSI2 design with warehouseId and shipmentId as partition and sort keys to get shipments by warehouse.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-13-Step10-GSI2.png)
+![GSI2 design with warehouseId and shipmentId as partition and sort keys to get shipments by warehouse.](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-13-Step10-GSI2.png)
 
 **Step 11: Address access patterns 14 (`getProductInventoryByWarehouseId`) 15 (`getInvoiceByCustomerIdForDateRange`), and 16 (`getProductsByCustomerIdForDateRange`)**
 
@@ -202,19 +202,19 @@ Import [AnOnlineShop\_13.json](https://github.com/aws-samples/amazon-dynamodb-de
 
 **GSI2:**
 
-![GSI2 design with warehouseId and productId as partition and sort keys to address access pattern 14.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-14-Step11-GSI2.png)
+![GSI2 design with warehouseId and productId as partition and sort keys to address access pattern 14.](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-14-Step11-GSI2.png)
 
 To address access pattern 15 (`getInvoiceByCustomerIdForDateRange`), query `GSI2` with `GSI2-PK=customerId` and `GSI2-SK between (i#date1, i#date2)`.
 
 **GSI2:**
 
-![GSI2 design with customerId and invoice date range as partition and sort keys to address access pattern 15.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-15-Step11-GSI2.png)
+![GSI2 design with customerId and invoice date range as partition and sort keys to address access pattern 15.](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-15-Step11-GSI2.png)
 
 To address access pattern 16 (`getProductsByCustomerIdForDateRange`), query `GSI2` with `GSI2-PK=customerId` and `GSI2-SK between (p#date1, p#date2)`.
 
 **GSI2:**
 
-![GSI2 design with customerId and product date range as partition and sort keys to address access pattern 16](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-16-Step11-GSI2.png)
+![GSI2 design with customerId and product date range as partition and sort keys to address access pattern 16](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-16-Step11-GSI2.png)
 
 **Note**
 In [NoSQL Workbench](workbench.md), *facets* represent an application's different data access patterns for DynamoDB. Facets give you a way to view a subset of the data in a table, without having to see records that don't meet the constraints of the facet. Facets are considered a visual data modeling tool, and don't exist as a usable construct in DynamoDB as they are purely an aid for modeling access patterns.
@@ -248,15 +248,15 @@ Here are the final schema designs. To download this schema design as a JSON file
 
 **Base table**
 
-![Final schema of base table for an online shop with attributes, such as EntityName and Name.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-17-Final-BaseTable.png)
+![Final schema of base table for an online shop with attributes, such as EntityName and Name.](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-17-Final-BaseTable.png)
 
 **GSI1**
 
-![Final GSI1 schema for an online shop's base table with attributes, such as EntityType.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-18-Final-GSI1.png)
+![Final GSI1 schema for an online shop's base table with attributes, such as EntityType.](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-18-Final-GSI1.png)
 
 **GSI2**
 
-![Final GSI2 schema for an online shop's base table with attributes, such as EntityType.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-19-Final-GSI2.png)
+![Final GSI2 schema for an online shop's base table with attributes, such as EntityType.](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-19-Final-GSI2.png)
 
 ## Using NoSQL Workbench with this schema design
 <a name="data-modeling-schema-online-shop-nosql"></a>

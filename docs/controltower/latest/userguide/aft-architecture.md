@@ -20,4 +20,4 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/aft-archit
 
 **AWS Control Tower Account Factory for Terraform – account provisioning workflow **
 
-![Figure: AFT Workflow Diagram](http://docs.aws.amazon.com/controltower/latest/userguide/images/high-level-aft-diagram.png)
+![Figure: AFT Workflow Diagram](https://docs.aws.amazon.com/controltower/latest/userguide/images/high-level-aft-diagram.png)

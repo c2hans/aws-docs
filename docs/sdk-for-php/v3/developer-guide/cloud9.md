@@ -119,6 +119,6 @@ You can also manually create new run configurations. On the menu bar, choose **R
 + 2: Command. AWS Cloud9 populates the **Command** text box with the path and file name to the file you run. If your code expects any command line parameters to be passed in, these can be added to the command line in the same way that you would when running the code through a terminal window.
 + 3: Runner. AWS Cloud9 detects that your file extension is `.php` and selects the **PHP (built-in web server)** Runner to run your code. Select **PHP (`cli`)** to run this example instead.
 
-![Choosing Run from the top menu bar of the AWS Cloud9 IDE opens a new tab with the Command box populated and the PHP runner already selected.](http://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/images/cloud9_runconfig.png)
+![Choosing Run from the top menu bar of the AWS Cloud9 IDE opens a new tab with the Command box populated and the PHP runner already selected.](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/images/cloud9_runconfig.png)
 
 Any output generated from the running code displays in the tab.

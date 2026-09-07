@@ -44,7 +44,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-e2e-data-driven
 
  The following diagram illustrates customer 360 architecture on AWS.
 
-![A diagram depicting Customer 360 architecture on AWS.](http://docs.aws.amazon.com/whitepapers/latest/build-e2e-data-driven-applications/images/customer-360.png)
+![A diagram depicting Customer 360 architecture on AWS.](https://docs.aws.amazon.com/whitepapers/latest/build-e2e-data-driven-applications/images/customer-360.png)
 
  The steps that data follows through the architecture are as follows:
 
@@ -74,7 +74,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-e2e-data-driven
 
  The following diagram illustrates event-driven IOT sensor data for near real-time predictive analytics.
 
-![A diagram that shows how you can derive near real-time predictive analytics from IOT data .](http://docs.aws.amazon.com/whitepapers/latest/build-e2e-data-driven-applications/images/iot-data.png)
+![A diagram that shows how you can derive near real-time predictive analytics from IOT data .](https://docs.aws.amazon.com/whitepapers/latest/build-e2e-data-driven-applications/images/iot-data.png)
 
  The steps that data follows through the architecture are as follows:
 
@@ -100,7 +100,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-e2e-data-driven
 
  The following diagram illustrates the system for building personalized recommendations on AWS.
 
-![A diagram that shows how you can build real-time recommendations on AWS .](http://docs.aws.amazon.com/whitepapers/latest/build-e2e-data-driven-applications/images/real-time-recs.png)
+![A diagram that shows how you can build real-time recommendations on AWS .](https://docs.aws.amazon.com/whitepapers/latest/build-e2e-data-driven-applications/images/real-time-recs.png)
 
  The steps through the architecture are as follows:
 
@@ -124,7 +124,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-e2e-data-driven
 +  **Marketing efficiency** – Collecting streaming event data such as opens and clicks, and allowing analysis of an ongoing campaign. Stream this data directly into your data lake, and augment this data with other data located there
 +  **Customer engagement** – Use transactional messaging to communicate with customers based upon information that has just happened.
 
-![A diagram that depicts near real-time customer engagement architecture on AWS .](http://docs.aws.amazon.com/whitepapers/latest/build-e2e-data-driven-applications/images/customer-engagement.png)
+![A diagram that depicts near real-time customer engagement architecture on AWS .](https://docs.aws.amazon.com/whitepapers/latest/build-e2e-data-driven-applications/images/customer-engagement.png)
 
  The steps in this architecture are as follows:
 
@@ -147,7 +147,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-e2e-data-driven
 +  **Fraud detection** – Organizations with online businesses have to be on guard constantly for fraudulent activity, such as fake accounts or payments made with stolen credit cards.
 +  **Near real-time analytics** – Use this architecture to understand the fraudulent activities data that you have streaming.
 
-![A diagram depicting a fraud detection architecture on AWS .](http://docs.aws.amazon.com/whitepapers/latest/build-e2e-data-driven-applications/images/fraud-detection.png)
+![A diagram depicting a fraud detection architecture on AWS .](https://docs.aws.amazon.com/whitepapers/latest/build-e2e-data-driven-applications/images/fraud-detection.png)
 
  The steps through the architecture are as follows:
 

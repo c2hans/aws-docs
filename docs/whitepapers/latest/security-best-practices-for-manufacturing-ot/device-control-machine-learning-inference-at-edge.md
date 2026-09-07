@@ -13,7 +13,7 @@ AI/ML at the edge is one such augmentation. AWS provides a set of tools that mak
 
 Process orchestration and control using [AWS IoT Greengrass](https://aws.amazon.com/greengrass/) is another way to augment local control capabilities. Lambda functions and microservices running in docker containers can be deployed via AWS IoT Greengrass. AWS IoT Greengrass provides a centralized way to manage and deploy code from the cloud. This allows you the flexibility to manage code at scale, helping to reduce the dependency for on-site expertise and support. Figure 4 represents an example of process orchestration, as demonstrated in the [“AWS IoT and Industrial Automation at Amazon”](https://www.youtube.com/watch?v=_y9-2VjTw3Y) re:Invent session.
 
-![A diagram showing an example of process orchestration with AWS IoT Greengrass](http://docs.aws.amazon.com/whitepapers/latest/security-best-practices-for-manufacturing-ot/images/greengrass-process-example.png)
+![A diagram showing an example of process orchestration with AWS IoT Greengrass](https://docs.aws.amazon.com/whitepapers/latest/security-best-practices-for-manufacturing-ot/images/greengrass-process-example.png)
 
 *Example of process orchestration with AWS IoT Greengrass *
 

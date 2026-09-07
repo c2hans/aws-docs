@@ -20,6 +20,6 @@ Publication date: **December 17, 2021** ([Document history](document-revisions.m
 
  This whitepaper focuses on LPWAN connectivity technologies. First, it will help you to decide if LPWAN connectivity technologies are appropriate for a specific use case. Next, it provides you with information about the differences between individual LPWAN technologies, allowing you to make better trade-off decisions. Finally, it provides you with guidelines for implementing individual LPWAN technologies using AWS. The scope of this whitepaper is illustrated in the following diagram:
 
-![Diagram showing various connectivity technologies, such as near field, short range, WiFi, cellular networks, and satellite networks.](http://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/connectivity-tech.png)
+![Diagram showing various connectivity technologies, such as near field, short range, WiFi, cellular networks, and satellite networks.](https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/connectivity-tech.png)
 
  When building IoT solutions, a decision for any connectivity technology shall be based on the requirements of the use cases and applications. The next section explores a framework you can use to evaluate these requirements.

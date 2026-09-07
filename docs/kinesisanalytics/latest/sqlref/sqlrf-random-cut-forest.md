@@ -21,7 +21,7 @@ DECIMAL is not a supported type. Use DOUBLE instead.
 
 The following is an example of anomaly detection. The diagram shows three clusters and a few anomalies randomly interjected. The red squares show the records that received the highest anomaly score according to the `RANDOM_CUT_FOREST` function. The blue diamonds represent the remaining records.  Note how the highest scoring records tend to be outside the clusters.
 
-![Scatter plot showing three clusters of blue data points and several red outlier points.](http://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/images/rcf-10.png)
+![Scatter plot showing three clusters of blue data points and several red outlier points.](https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/images/rcf-10.png)
 
 For a sample application with step-by-step instructions, see [Detect Anomalies](https://docs.aws.amazon.com/kinesisanalytics/latest/dev/app-anomaly-detection.html).
 
@@ -126,11 +126,11 @@ The following example illustrates how you can catch anomalies when you monitor t
 
 Consider this stylized one-dimensional stream represented as a sine wave, intended to capture a circadian rhythm.  This curve illustrates the typical number of orders that an eCommerce site receives per hour, the number of users logged into a server, the number of ad clicks received per hour, etc.  A severe dip of 20 consecutive records is artificially injected in the middle of the plot.
 
-![Sine wave graph showing regular oscillations with an anomaly spike in the third cycle.](http://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/images/rcf-20.png)
+![Sine wave graph showing regular oscillations with an anomaly spike in the third cycle.](https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/images/rcf-20.png)
 
 We ran the `RANDOM_CUT_FOREST` function with a shingle size of four records. The result is shown below. The red line shows the anomaly score.  Note that the beginning and the end of the anomaly received high scores.
 
-![Graph showing sine wave with anomaly and anomaly score over time, with a spike in both lines.](http://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/images/rcf-30.png)
+![Graph showing sine wave with anomaly and anomaly score over time, with a spike in both lines.](https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/images/rcf-30.png)
 
 When you use this function, we recommend that you investigate the highest scoring points as potential anomalies.
 

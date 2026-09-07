@@ -13,7 +13,7 @@ With this architecture, you can:
 + Store the locations of delivery agents so that you can act on them in your backend application or analyze them over time.
 + Analyze location history to identify trends and opportunities for optimization.
 
-![Architecture diagram showing delivery tracking workflow using AWS services like Lambda , EventBridge , and Location Services.](http://docs.aws.amazon.com/location/previous/developerguide/images/delivery.PNG)
+![Architecture diagram showing delivery tracking workflow using AWS services like Lambda , EventBridge , and Location Services.](https://docs.aws.amazon.com/location/previous/developerguide/images/delivery.PNG)
 
 The following is an overview of the steps required to build a delivery application:
 

@@ -74,7 +74,7 @@ static_cmp = StaticCryptographicMaterialsProvider(
 
 The Static Provider passes the encryption and signing keys that you supply to the item encryptor, where they are used directly to encrypt and sign your table items. Unless you supply different keys for each item, the same keys are used for every item.
 
-![The input, processing, and output of the Static Materials Provider in the DynamoDB Encryption Client](http://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/images/staticCMP.png)
+![The input, processing, and output of the Static Materials Provider in the DynamoDB Encryption Client](https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/images/staticCMP.png)
 
 ### Get encryption materials
 <a name="static-cmp-get-encryption-materials"></a>

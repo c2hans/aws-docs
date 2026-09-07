@@ -22,4 +22,4 @@ The prescriptive model that we describe in this guide is built on direct custome
 
 The following diagram describes the various phases of the overall migration process, including assessment, readiness and planning, and migrations. It also includes details about the workstreams that are part of the readiness and planning phase.
 
-![The phases of the migration process, including assessment, readiness and planning, and migrations.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-program-implementation/images/guide-img/c368ac72-b4ba-4de5-80d0-24d311a6c244/images/4f58ef62-5da8-4ed7-b8b7-f2f5996fecff.png)
+![The phases of the migration process, including assessment, readiness and planning, and migrations.](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-program-implementation/images/guide-img/c368ac72-b4ba-4de5-80d0-24d311a6c244/images/4f58ef62-5da8-4ed7-b8b7-f2f5996fecff.png)

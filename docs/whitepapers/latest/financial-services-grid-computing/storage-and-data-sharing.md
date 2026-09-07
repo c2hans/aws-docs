@@ -27,15 +27,15 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/financial-services-gr
 
  Note that in some cases it might be possible to pull binaries on-demand from Amazon S3 by using [MountPoint for Amazon S3](https://aws.amazon.com/s3/features/mountpoint/), an open-source client that you can mount an S3 bucket on a compute instance. Your application can then access the files as needed as a local file system. MountPoint automatically translates local file system calls to REST API calls on S3 objects.
 
-![Architecture diagram showing data distribution architecture using Amazon SNS messages and S3 Object Storage](http://docs.aws.amazon.com/whitepapers/latest/financial-services-grid-computing/images/data-distribution-architecture.png)
+![Architecture diagram showing data distribution architecture using Amazon SNS messages and S3 Object Storage](https://docs.aws.amazon.com/whitepapers/latest/financial-services-grid-computing/images/data-distribution-architecture.png)
 
  The second data distribution challenge in HPC is managing data related to the tasks being processed. Typically, this is bi-directional, with data flowing to the engines that support the processing and resulting data passed back to the clients. There are three common approaches for this process:
 +  In the first approach, communications are *inbound* (see the following figure) with all data passing through the grid scheduler along with task data. This is less common because it can cause a performance bottleneck as the cluster grows.
-![Diagram showing An inbound data distribution approach](http://docs.aws.amazon.com/whitepapers/latest/financial-services-grid-computing/images/inbound-data-distribution-approach.png)
+![Diagram showing An inbound data distribution approach](https://docs.aws.amazon.com/whitepapers/latest/financial-services-grid-computing/images/inbound-data-distribution-approach.png)
 +  In another approach, tasks pass through the scheduler, but the data is handled *out-of-bounds* through a shared, scalable data store or an in-memory data grid (see the following figure). The task data contains a reference to the data’s location and the compute instances can retrieve it as required.
-![Diagram showing an out-of-bounds data distribution approach](http://docs.aws.amazon.com/whitepapers/latest/financial-services-grid-computing/images/out-of-bounds-data-distribution-approach.png)
+![Diagram showing an out-of-bounds data distribution approach](https://docs.aws.amazon.com/whitepapers/latest/financial-services-grid-computing/images/out-of-bounds-data-distribution-approach.png)
 +  Finally, some schedulers support a direct data transfer (DDT) approach. In this model the scheduler grid broker allocates compute instances which then communicate directly with the client. This architecture can work well, especially with very short running tasks with little data. However, in a hybrid model, with thousands of engines running on AWS that need to access a single, on-premises client, this can present challenges to on-premises firewall rules, or to the availability of ephemeral ports on the client host.
-![Diagram showing DDT (direct data transfer) data distribution approach](http://docs.aws.amazon.com/whitepapers/latest/financial-services-grid-computing/images/ddt-data-distribution-approach.png)
+![Diagram showing DDT (direct data transfer) data distribution approach](https://docs.aws.amazon.com/whitepapers/latest/financial-services-grid-computing/images/ddt-data-distribution-approach.png)
 
  All of these approaches can be enhanced with caches located as close as possible to, or hosted on, the compute instances. Such caches help to minimize the distribution of data, especially if a significantly similar set is required for many calculations. Some schedulers support a form of data-aware scheduling that tries to ensure that tasks that require a specific dataset are scheduled to instances that already have that dataset. This cannot be guaranteed, but often provides a significant performance improvement at the cost of local memory or storage on each compute instance.
 
@@ -69,7 +69,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/financial-services-gr
 
  FSx for Lustre is ideal for HPC workloads because it provides a file system that’s optimized for the performance and costs of high-performance workloads, with file system access across thousands of EC2 instances.
 
-![Diagram showing an example of an Amazon FSx for Lustre implementation](http://docs.aws.amazon.com/whitepapers/latest/financial-services-grid-computing/images/amazon-fsx-for-lustre-implementation.png)
+![Diagram showing an example of an Amazon FSx for Lustre implementation](https://docs.aws.amazon.com/whitepapers/latest/financial-services-grid-computing/images/amazon-fsx-for-lustre-implementation.png)
 
 ## Amazon FSx for NetApp ONTAP
 <a name="amazon-fsx-for-netapp-ontap"></a>

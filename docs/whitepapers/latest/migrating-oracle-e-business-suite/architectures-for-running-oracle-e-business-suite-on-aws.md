@@ -16,7 +16,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-bu
 
  This whitepaper extends the same architecture and discusses a few other components that may require attention as part of your migration scenario.
 
-![Reference architecture diagram showing running Oracle E-Business Suite on Amazon RDS Custom for Oracle, HA](http://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-business-suite/images/ref-arch-oracle-rds.png)
+![Reference architecture diagram showing running Oracle E-Business Suite on Amazon RDS Custom for Oracle, HA](https://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-business-suite/images/ref-arch-oracle-rds.png)
 
  In the preceding architecture, we have shown multiple application servers deployed across Availability Zones for high availability. Some application tier nodes may reside in a subnet acting as a perimeter network (external applications) as part of customer-facing applications, such as Oracle Internet Expenses module within E-Business Suite.
 
@@ -35,7 +35,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-bu
 
 This instance may use [Amazon Elastic Block Store](https://aws.amazon.com/ebs/) (Amazon EBS) `io1` volumes to provide the Provisioned IOPS (PIOPS). Amazon EBS volumes can be provisioned from 4GiB up to 16TiB. Each volume provides up to 64K I/O operations per second (IOPS). On the other side of the spectrum, AWS has `io2` Block express volumes which can be from 4GiB to 64TiB per volume, with a maximum of 256K IOPS per volume. You can optionally use Oracle Automatic Storage Management (ASM) for striping and mirroring to achieve more IOPS and throughput than supported by a single EBS volume and for the HA at the database storage layer. Amazon RDS Custom manages the striping automatically using Logical Volume Management (LVM) across four underlying Amazon EBS volumes.
 
-![Reference architecture diagram showing running Oracle on Amazon EC2/Amazon RDS Custom HA architecture](http://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-business-suite/images/ref-arch-oracle-ec2-rds.jpg)
+![Reference architecture diagram showing running Oracle on Amazon EC2/Amazon RDS Custom HA architecture](https://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-business-suite/images/ref-arch-oracle-ec2-rds.jpg)
 
  For additional availability and reporting offloading capability within the same Region, you can deploy another read-only standby database instance running on an Amazon EC2 instance in a different Availability Zone (private subnet2/Region1) using Oracle Active Data Guard. You can configure Parallel Concurrent Processing (PCP) for the Oracle E-Business Suite environment, and offload specific read-only reporting jobs to active standby database instances.
 

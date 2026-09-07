@@ -11,9 +11,9 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 
  If you have only two such networks, you can simply connect them to each other, but as the number of networks grows, the complexity of such meshed connections becomes untenable. AWS Transit Gateway provides an easy to maintain hub-and-spoke model, allowing the routing of traffic across your multiple networks.
 
-![Diagram showing not using AWS Transit Gateway](http://docs.aws.amazon.com/wellarchitected/2023-10-03/framework/images/without-transit-gateway.png)
+![Diagram showing not using AWS Transit Gateway](https://docs.aws.amazon.com/wellarchitected/2023-10-03/framework/images/without-transit-gateway.png)
 
-![Diagram showing using AWS Transit Gateway](http://docs.aws.amazon.com/wellarchitected/2023-10-03/framework/images/with-transit-gateway.png)
+![Diagram showing using AWS Transit Gateway](https://docs.aws.amazon.com/wellarchitected/2023-10-03/framework/images/with-transit-gateway.png)
 
  **Common anti-patterns:**
 +  Using VPC peering to connect more than two VPCs.

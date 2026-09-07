@@ -39,7 +39,7 @@ The CloudFormation template creates an Amazon CloudWatch Events event and an AWS
 
 **Target architecture **
 
-![Process from user to IAM to CloudTrail to CloudWatch Events to Lambda and an S3 bucket, ending with SNS email notification.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5487fbff-72e7-4da4-a970-a4542e89824d/images/c73532fd-8e95-45a5-843d-1864eb4df227.png)
+![Process from user to IAM to CloudTrail to CloudWatch Events to Lambda and an S3 bucket, ending with SNS email notification.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5487fbff-72e7-4da4-a970-a4542e89824d/images/c73532fd-8e95-45a5-843d-1864eb4df227.png)
 
 **Automation and scale**
 

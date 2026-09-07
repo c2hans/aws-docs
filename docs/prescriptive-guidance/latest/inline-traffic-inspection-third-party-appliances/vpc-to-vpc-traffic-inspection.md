@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/inline-traf
 
 VPC-to-VPC traffic inspection occurs when traffic originates from one VPC and is destined for another VPC. The traffic is redirected to an appliance VPC for traffic inspection before arriving at the destination VPC. The following diagram shows how traffic flows if an Amazon Elastic Compute Cloud (Amazon EC2) instance in `Workload spoke VPC1` needs to communicate with an EC2 instance in `Workload spoke VPC2`.
 
-![Architecture diagram of traffic inspection between two spoke VPCs and an appliance VPC](http://docs.aws.amazon.com/prescriptive-guidance/latest/inline-traffic-inspection-third-party-appliances/images/guide-img/7951faf9-5db9-4729-86ff-47c734d59b19/images/8656b746-f214-4329-8b26-de61ead6f3a5.png)
+![Architecture diagram of traffic inspection between two spoke VPCs and an appliance VPC](https://docs.aws.amazon.com/prescriptive-guidance/latest/inline-traffic-inspection-third-party-appliances/images/guide-img/7951faf9-5db9-4729-86ff-47c734d59b19/images/8656b746-f214-4329-8b26-de61ead6f3a5.png)
 
 1. The packet from an EC2 instance in `Workload spoke VPC1` in Availability Zone 1 goes to the Transit Gateway elastic network interface in the transit gateway subnet in Availability Zone 1.
 

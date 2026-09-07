@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-wor
 
  The following figure shows all of the necessary resources to run your entire semiconductor design workflow on AWS. The previous section provided the details and guidance for determining what compute, storage, file systems, and networking options are required. Using [Scale-Out Computing on AWS](https://aws.amazon.com/solutions/implementations/scale-out-computing-on-aws/), you can quickly (less than an hour) launch a turnkey solution that is capable of running jobs, monitoring queues, adding users, and many other features that are advantageous to chip design workflows.
 
-![This figure shows all of the necessary resources to run your entire semiconductor design workflow on AWS.](http://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-workflows-on-aws/images/semiconductor-launch-configure-entire-workflow.png)
+![This figure shows all of the necessary resources to run your entire semiconductor design workflow on AWS.](https://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-workflows-on-aws/images/semiconductor-launch-configure-entire-workflow.png)
 
  **Launch and configure the entire semiconductor design workflow**
 

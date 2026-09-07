@@ -19,7 +19,7 @@ You can achieve up to 45 percent savings when you switch to Graviton. After you 
 
 The example in the following table shows the potential for performance improvements that you can achieve by migrating to Graviton instances.
 
-![Graviton performance graph](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/c9fea413-050b-48bf-8e2c-fad5f8fce72c.png)
+![Graviton performance graph](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/c9fea413-050b-48bf-8e2c-fad5f8fce72c.png)
 
 For a full breakdown and explanation of the benchmarking approach used to create the results in the preceding diagram, see [Powering .NET 5 with AWS Graviton2: Benchmarks](https://aws.amazon.com/blogs/compute/powering-net-5-with-aws-graviton2-benchmark-results/) in the AWS Compute Blog.
 

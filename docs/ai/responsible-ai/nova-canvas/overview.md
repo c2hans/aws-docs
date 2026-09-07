@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/ai/responsible-ai/nova-canvas/overview.h
 # Amazon Nova Canvas
 <a name="overview"></a>
 
-![Banner background image](http://docs.aws.amazon.com/ai/responsible-ai/nova-canvas/images/card-background.jpg)
+![Banner background image](https://docs.aws.amazon.com/ai/responsible-ai/nova-canvas/images/card-background.jpg)
 
 An AWS AI Service Card explains the use cases for which the service is intended, how machine learning (ML) is used by the service, and key considerations in the responsible design and use of the service. A Service Card will evolve as AWS receives customer feedback, and as the service progresses through its lifecycle. AWS recommends that customers assess the performance of any AI service on their own content for each use case they need to solve. For more information, please see [AWS Responsible Use of AI Guide](https://d1.awsstatic.com/products/generative-ai/responsbile-ai/AWS-Responsible-Use-of-AI-Guide-Final.pdf) and the references at the end. Please also be sure to review the [AWS Responsible AI Policy](https://aws.amazon.com/ai/responsible-ai/policy/), [AWS Acceptable Use Policy](https://aws.amazon.com/aup/), and [AWS Service Terms](https://aws.amazon.com/service-terms/) for the services you plan to use.
 
@@ -49,8 +49,8 @@ Consider the following use case of utilizing Amazon Nova Canvas as a creative to
 
 | Input Image | Output Image |
 | --- | --- |
-|  ![Blue and yellow box of cornflakes](http://docs.aws.amazon.com/ai/responsible-ai/nova-canvas/images/cornflake-box.png)  |  ![Blue and yellow box of cornflakes and a small glass of milk placed amid some scattered cornflakes on a wooden table with windows in the background.](http://docs.aws.amazon.com/ai/responsible-ai/nova-canvas/images/generated-cornflake-box-setting.jpg)  |
-|  ![White bottle of shampoo](http://docs.aws.amazon.com/ai/responsible-ai/nova-canvas/images/shampoo-bottle.png)  |  ![White bottle of shampoo on a marble table surrounded by green plants.](http://docs.aws.amazon.com/ai/responsible-ai/nova-canvas/images/generated-shampoo-bottle-setting.jpg)  |
+|  ![Blue and yellow box of cornflakes](https://docs.aws.amazon.com/ai/responsible-ai/nova-canvas/images/cornflake-box.png)  |  ![Blue and yellow box of cornflakes and a small glass of milk placed amid some scattered cornflakes on a wooden table with windows in the background.](https://docs.aws.amazon.com/ai/responsible-ai/nova-canvas/images/generated-cornflake-box-setting.jpg)  |
+|  ![White bottle of shampoo](https://docs.aws.amazon.com/ai/responsible-ai/nova-canvas/images/shampoo-bottle.png)  |  ![White bottle of shampoo on a marble table surrounded by green plants.](https://docs.aws.amazon.com/ai/responsible-ai/nova-canvas/images/generated-shampoo-bottle-setting.jpg)  |
 
 Amazon Nova Canvas has a number of limitations requiring careful consideration.
 

@@ -19,10 +19,10 @@ source_url: https://docs.aws.amazon.com/solutions/latest/generative-ai-applicati
 
  **Application Insights dashboard showing no detected problems and option to auto-configure.**
 
-![appreg1](http://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/appreg1.png)
+![appreg1](https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/appreg1.png)
 
 Monitoring for your applications is now activated and the following status box appears:
 
  **Application Insights dashboard showing successful monitoring activation message.**
 
-![appreg2](http://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/appreg2.png)
+![appreg2](https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/appreg2.png)

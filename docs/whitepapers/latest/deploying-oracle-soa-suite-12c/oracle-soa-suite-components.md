@@ -16,7 +16,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/deploying-oracle-soa-
 
  The following diagram shows these components of Oracle SOA Suite when deployed on an Oracle WebLogic Server.
 
-![A diagram depicting Oracle SOA Suite components deployed on Oracle WebLogic Server.](http://docs.aws.amazon.com/whitepapers/latest/deploying-oracle-soa-suite-12c/images/soa-components.jpeg)
+![A diagram depicting Oracle SOA Suite components deployed on Oracle WebLogic Server.](https://docs.aws.amazon.com/whitepapers/latest/deploying-oracle-soa-suite-12c/images/soa-components.jpeg)
 
  Each WebLogic Server deployment has a WebLogic domain, which typically contains multiple WebLogic Server instances (Managed Servers). A WebLogic domain is the basic unit of administration for WebLogic Server instances: it is a group of logically- related WebLogic Server resources. For example, you can have one WebLogic domain for each component of Oracle SOA Suite.
 

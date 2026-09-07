@@ -42,7 +42,7 @@ An EFA device can be attached to an EC2 instance in two ways:
 
 The EFA device provides capabilities like built-in OS-bypass and congestion control through the Scalable Reliable Datagram (SRD) protocol. The EFA device features enable low-latency, reliable transport functionality that allows EFA interface to provide better application performance for HPC and ML applications on Amazon EC2. While the ENA device offers traditional IP networking. For guidance on which instance configuration to use based on your use case, see [Maximize network bandwidth](efa-acc-inst-types.md).
 
-![Contrasting a traditional HPC software stack with one that uses an EFA.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/efa_stack.png)
+![Contrasting a traditional HPC software stack with one that uses an EFA.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/efa_stack.png)
 
 Traditionally, AI/ML applications use NCCL and NIXL (for disaggregated inference). HPC applications use the Message Passing Interface (MPI) to interface with the system's network transport. In the AWS cloud, this has meant that applications interface with NCCL, NIXL, or MPI, which then uses the operating system's TCP/IP stack and the ENA device driver to enable network communication between instances.
 

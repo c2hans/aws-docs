@@ -18,7 +18,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/model-based-systems-e
 +  Bring **AI/ML for MBSE** to provide NLP for MBSE for ontology, legacy document integration, obtain valuable insights and analytics based on overall operations/events and data mentioned before.
 +  Employ **Shared Services Platform (SSP)** to centrally manage, govern your applications as well provide secure environment for IT and engineering experimentation.
 
-![Diagram showing Modules and AWS services for MBSE on AWS (High-level Architecture)](http://docs.aws.amazon.com/whitepapers/latest/model-based-systems-engineering/images/mbse-architecture-diagram.png)
+![Diagram showing Modules and AWS services for MBSE on AWS (High-level Architecture)](https://docs.aws.amazon.com/whitepapers/latest/model-based-systems-engineering/images/mbse-architecture-diagram.png)
 
 ## Digital Continuity Layer
 <a name="digital-continuity-layer"></a>
@@ -45,7 +45,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/model-based-systems-e
 
  **Digital Continuity **will act as a “hub” location of orchestration MBSE and MBSE-related services, which would, otherwise, look like “point-to-point” as shown in the diagram below. However, this approach would not allow flexibility, such as any change in the “points” (services, APIs, edge-locations, etc.) would hinder the overall performance and availability of the solution. As a result, every new service or replacement of an existing service (“point”) would be plugged into the **orchestrator**.
 
-![Diagram showing Orchestration and continuity of tools, locations and platforms via Digital Continuity.](http://docs.aws.amazon.com/whitepapers/latest/model-based-systems-engineering/images/digital-continuity.png)
+![Diagram showing Orchestration and continuity of tools, locations and platforms via Digital Continuity.](https://docs.aws.amazon.com/whitepapers/latest/model-based-systems-engineering/images/digital-continuity.png)
 
  Under the hood, **message broker/event orchestrator** acts as the single source - like a “hub” in the hub-and-spoke architecture. The orchestrator is made of **messaging/queuing** and **translator**.
 
@@ -62,7 +62,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/model-based-systems-e
 
  Even though there are tools for almost every activity, they are not always used by all engineers, so this is the place where you can bring more macro to micro-level activities. Eventually, this will bring **automation** to repeatable processes, enable **transparency in daily activities**, employing single-source of data resources for those daily outputs **without worrying about cataloging them**.
 
-![Diagram showing Workflow Management built on MBSE](http://docs.aws.amazon.com/whitepapers/latest/model-based-systems-engineering/images/workload-management-on-mbse.png)
+![Diagram showing Workflow Management built on MBSE](https://docs.aws.amazon.com/whitepapers/latest/model-based-systems-engineering/images/workload-management-on-mbse.png)
 
  The diagram above explains the concept of engineering collaboration based on MBSE. Here, MBSE is treated as the “single source of truth”. Then, the **workflows** are a combination of **automation** and **human workflows**.
 
@@ -74,7 +74,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/model-based-systems-e
 
  For example, a team of structural analysis engineers can query the stress results of an older design to see how they can use the lessons learned from it. The overall workflow can be defined using **AWS Step Functions** or **AWS Managed Apache Airflow**, if open-source is preferred. Please note that you can specify the authorization and authentication in that process if you would like to provide **granular access management and control** to engineers due to confidentiality issues.
 
-![Diagram showing Artifact Store and Artifact Catalog](http://docs.aws.amazon.com/whitepapers/latest/model-based-systems-engineering/images/artifact-store-and-catalog.png)
+![Diagram showing Artifact Store and Artifact Catalog](https://docs.aws.amazon.com/whitepapers/latest/model-based-systems-engineering/images/artifact-store-and-catalog.png)
 
  You can bring almost any workflow in this setting. For example, if the team requires an automatically-deployed HPC cluster to perform the simulation, the deployment can be integrated into this workflow. The results and the operation status can alert the engineering or relevant stakeholders. The human workflow then kicks in and the operation continues like this.
 

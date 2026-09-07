@@ -124,7 +124,7 @@ Out of the box implementation of the Construct without any override will set the
 ## Architecture
 <a name="_architecture"></a>
 
-![Diagram showing the S3 bucket and Access Log bucket created by the factory.](http://docs.aws.amazon.com/solutions/latest/constructs/images/aws-constructs-factories-s3.png)
+![Diagram showing the S3 bucket and Access Log bucket created by the factory.](https://docs.aws.amazon.com/solutions/latest/constructs/images/aws-constructs-factories-s3.png)
 
 ## Step Functions State Machines
 <a name="step-functions-state-machines-docs"></a>
@@ -203,7 +203,7 @@ Out of the box implementation of the Construct without any override will set the
 ## Architecture
 <a name="_architecture_2"></a>
 
-![Diagram showing the State Machine, CloudWatch Logs and Alarms, and IAM Role launched by the factory.](http://docs.aws.amazon.com/solutions/latest/constructs/images/aws-constructs-factories-sf.png)
+![Diagram showing the State Machine, CloudWatch Logs and Alarms, and IAM Role launched by the factory.](https://docs.aws.amazon.com/solutions/latest/constructs/images/aws-constructs-factories-sf.png)
 
 ## SQS Queues
 <a name="sqs-queues-docs"></a>
@@ -276,7 +276,7 @@ Out of the box implementation of the Construct without any override will set the
 ## Architecture
 <a name="_architecture_3"></a>
 
-![Diagram showing the KMS keys, SQS Queue and Dead Letter Queue launched by the factory.](http://docs.aws.amazon.com/solutions/latest/constructs/images/aws-constructs-factories-sqs.png)
+![Diagram showing the KMS keys, SQS Queue and Dead Letter Queue launched by the factory.](https://docs.aws.amazon.com/solutions/latest/constructs/images/aws-constructs-factories-sqs.png)
 
 ## Virtual Private Cloud (VPC)
 <a name="vpc-docs"></a>
@@ -348,7 +348,7 @@ The minimal implementation of the VPC requires the client to specify what types 
 
 Wnile the architecture deployed will vary depending on the Subnet configuration, the diagram below represents what is deployed if the client requests PUBLIC and PRIVATE\_WITH\_EGRESS subnet.
 
-![Diagram showing the VPC, Subnets, Route Tables, Internet Gateway, NAT Gateways, Interface Endpoint and Flow Log.](http://docs.aws.amazon.com/solutions/latest/constructs/images/aws-constructs-factories-vpc.png)
+![Diagram showing the VPC, Subnets, Route Tables, Internet Gateway, NAT Gateways, Interface Endpoint and Flow Log.](https://docs.aws.amazon.com/solutions/latest/constructs/images/aws-constructs-factories-vpc.png)
 
 ## Github
 <a name="_github"></a>

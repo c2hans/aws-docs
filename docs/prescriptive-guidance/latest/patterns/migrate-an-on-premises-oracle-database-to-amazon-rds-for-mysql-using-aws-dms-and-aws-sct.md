@@ -37,7 +37,7 @@ This pattern walks you through the migration of an on-premises Oracle database t
 
 **Data migration architecture**
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/0385e5ad-a1ca-4c29-945b-592321d95f9d/images/c872e033-b13a-4436-b503-0632b5d437ae.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/0385e5ad-a1ca-4c29-945b-592321d95f9d/images/c872e033-b13a-4436-b503-0632b5d437ae.png)
 
 ## Tools
 <a name="migrate-an-on-premises-oracle-database-to-amazon-rds-for-mysql-using-aws-dms-and-aws-sct-tools"></a>

@@ -32,7 +32,7 @@ The following image and process explains, at a high level, how you use Launch Wi
 
 1. Launch Wizard creates a ready-to-use application that is integrated with AWS management and monitoring services.
 
-![Process diagram explaining the high-level steps of how to use AWS Launch Wizard.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sap-automation/images/guide-img/029e7e61-9fe5-41b5-83f4-177d03384b91/images/b9f69ada-a04d-4dfa-9b49-2fa5968e3dc6.png)
+![Process diagram explaining the high-level steps of how to use AWS Launch Wizard.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sap-automation/images/guide-img/029e7e61-9fe5-41b5-83f4-177d03384b91/images/b9f69ada-a04d-4dfa-9b49-2fa5968e3dc6.png)
 
 ## Infrastructure as code
 <a name="iac"></a>

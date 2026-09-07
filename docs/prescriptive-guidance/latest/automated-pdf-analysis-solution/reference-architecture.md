@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/automated-p
 
 The following diagram shows the workflow after you apply this guide's automated solution to a daily operations report. When new files are ingested into Amazon Simple Storage Service (Amazon S3), they can be immediately visualized in an Amazon Quick Sight dashboard after they are processed.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/automated-pdf-analysis-solution/images/guide-img/689cce75-c135-4cff-9a10-7c6bc4f61a19/images/bffd2f1d-e70f-4982-91be-108fb5c56d6b.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/automated-pdf-analysis-solution/images/guide-img/689cce75-c135-4cff-9a10-7c6bc4f61a19/images/bffd2f1d-e70f-4982-91be-108fb5c56d6b.png)
 
 The diagram shows the following four phases:
 

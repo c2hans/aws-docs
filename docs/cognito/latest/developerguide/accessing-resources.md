@@ -18,7 +18,7 @@ After a successful authentication, your app will receive user pool tokens from A
 
 For more information, see [An example authentication session](authentication.md#amazon-cognito-user-pools-authentication-flow) and [Understanding user pool JSON web tokens (JWTs)](amazon-cognito-user-pools-using-tokens-with-identity-providers.md).
 
-![Authentication overview.](http://docs.aws.amazon.com/cognito/latest/developerguide/images/scenario-authentication-cup.png)
+![Authentication overview.](https://docs.aws.amazon.com/cognito/latest/developerguide/images/scenario-authentication-cup.png)
 
 **Topics**
 + [Authorizing access to client or server resources with Amazon Verified Permissions](scenario-backend.md)

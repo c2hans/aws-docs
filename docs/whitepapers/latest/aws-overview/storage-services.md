@@ -2,14 +2,14 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/storage-services.html
 ---
 
-# ![AWS Storage category icon](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/storage-icon.jpg)Storage
+# ![AWS Storage category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/storage-icon.jpg)Storage
 <a name="storage-services"></a>
 
 AWS provides a broad portfolio of storage services with deep functionality for storing, accessing, protecting, and analyzing your data.
 
 Each service is described after the diagram. To help you decide which service best meets your needs, see [Choosing an AWS storage service](https://docs.aws.amazon.com/decision-guides/latest/storage-on-aws-how-to-choose/choosing-aws-storage-service.html). For general information, see [Cloud Storage on AWS](https://aws.amazon.com/products/storage/).
 
-![Diagram showing AWS storage services](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/storage-services.png)
+![Diagram showing AWS storage services](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/storage-services.png)
 
 **Topics**
 + [AWS Backup](#aws-backup)

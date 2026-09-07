@@ -14,7 +14,7 @@ These agents excel where traditional monitoring lacks adaptability or reasoning,
 
 The following diagram shows an observer and monitoring agent:
 
-![Observer and monitoring agents.](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-patterns/images/guide-img/cde5ee68-ed86-4053-9fb1-d0dbf7199e24/images/5bdf9ca5-584f-4206-85a9-e9c5c4be2f59.png)
+![Observer and monitoring agents.](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-patterns/images/guide-img/cde5ee68-ed86-4053-9fb1-d0dbf7199e24/images/5bdf9ca5-584f-4206-85a9-e9c5c4be2f59.png)
 
 ## Description
 <a name="description.c9d26ac8-3228-5df1-ba94-27582df16d47"></a>

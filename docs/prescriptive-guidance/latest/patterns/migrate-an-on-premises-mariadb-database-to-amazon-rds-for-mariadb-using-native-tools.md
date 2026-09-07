@@ -36,11 +36,11 @@ This pattern provides guidance for migrating an on-premises MariaDB database to 
 
 **Target architecture**
 
-![Architecture diagram with primary and standby RDS DB instances in different Availability Zones.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7be644e0-da42-4515-87b7-04da7a054adb/images/eca8eb55-579a-42e2-96ce-9b14b097b4c9.png)
+![Architecture diagram with primary and standby RDS DB instances in different Availability Zones.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7be644e0-da42-4515-87b7-04da7a054adb/images/eca8eb55-579a-42e2-96ce-9b14b097b4c9.png)
 
 **Data migration architecture**
 
-![Architecture diagram of migrating an on-premises MariaDB database to Amazon RDS](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7be644e0-da42-4515-87b7-04da7a054adb/images/daba40e2-a2b1-44f8-8e69-31458206a823.png)
+![Architecture diagram of migrating an on-premises MariaDB database to Amazon RDS](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7be644e0-da42-4515-87b7-04da7a054adb/images/daba40e2-a2b1-44f8-8e69-31458206a823.png)
 
 ## Tools
 <a name="migrate-an-on-premises-mariadb-database-to-amazon-rds-for-mariadb-using-native-tools-tools"></a>

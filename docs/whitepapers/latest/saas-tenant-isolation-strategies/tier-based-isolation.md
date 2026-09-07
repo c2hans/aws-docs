@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation
 
  While most of our discussion of isolation focuses on the mechanics of preventing cross-tenant access, there are also scenarios where the tiering of your offering might influence your isolation strategy. In this case, it’s less about how you’re isolating tenants and more about how you might package and offer different flavors of isolation to different tenants with different profiles. Still, this is another consideration that could determine which models of isolation you’ll need to support to address the full spectrum of customers you want to engage. The diagram in Figure 4 provides an example of how isolation might vary across tiers.
 
-![Diagram showing tenant tiering and isolation with multiple tenants.](http://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/images/tenant-tiering-and-isolation.png)
+![Diagram showing tenant tiering and isolation with multiple tenants.](https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/images/tenant-tiering-and-isolation.png)
 
 Here you’ll see a scenario where we a mix of silo and pool isolation models that have been offered up as tiers to our tenants. Tenants in the silver tier are running in the pooled environment. While these tenants are running in a shared infrastructure model, they still fully expect that their resources will be protected from any cross-tenant access. The tenant on the right has required you to offer them a completely dedicated (silo) environment. To support this, the SaaS provider has created a premium tier model that enables tenants to run in this dedicated model at what we would assume would be a substantially higher price point.
 

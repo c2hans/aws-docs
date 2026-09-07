@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-wor
 
  The following figure shows connectivity from on-premises systems to AWS infrastructure. The additional launched services and resources are [AWS Directory Service](https://aws.amazon.com/directoryservice), login server, scheduling server, and a remote desktop using [NICE DCV](https://aws.amazon.com/hpc/dcv). The login and scheduler servers, remote desktop instance, testing, and POC should all use moderately sized [instance types](https://aws.amazon.com/ec2/instance-types/). For example, M5.2xlarge, T2, or T3 instance types should suffice for these applications. We provide additional details about which instances to use in the [Amazon Elastic Compute Cloud (Amazon EC2)](launch-aws-services-needed-to-run-a-poc.md#amazon-elastic-compute-cloud-amazon-ec2) section.
 
-![This diagram shows the user access and remote desktops component of the semiconductor environment on AWS.](http://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-workflows-on-aws/images/semiconductor-user-access-remote-desktops.png)
+![This diagram shows the user access and remote desktops component of the semiconductor environment on AWS.](https://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-workflows-on-aws/images/semiconductor-user-access-remote-desktops.png)
 
 **User access and remote desktops **
 

@@ -31,7 +31,7 @@ The function initiates an Amazon CloudWatch Events event on the following API ca
 
 **Target architecture**
 
-![Ensuring that load balancers require TLS termination.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/da99cda2-ac34-4791-a2bd-d37264d8d3d9/images/af92b3c8-32bb-45eb-a2a8-d8276fb3e824.png)
+![Ensuring that load balancers require TLS termination.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/da99cda2-ac34-4791-a2bd-d37264d8d3d9/images/af92b3c8-32bb-45eb-a2a8-d8276fb3e824.png)
 
 **Automation and scale**
 + If you are using [AWS Organizations](https://aws.amazon.com/organizations/), you can use [AWS Cloudformation StackSets](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html) to deploy this template in multiple accounts that you want to monitor.

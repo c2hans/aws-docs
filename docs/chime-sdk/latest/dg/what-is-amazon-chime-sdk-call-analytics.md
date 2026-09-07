@@ -9,7 +9,7 @@ Amazon Chime SDK call analytics is a low-code solution for generating cost-effec
 
 You follow these steps to use call analytics:
 
-![Image showing the process of setting up Amazon Chime SDK call analytics.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/CallAnalyticsOverview.png)
+![Image showing the process of setting up Amazon Chime SDK call analytics.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/CallAnalyticsOverview.png)
 
 In the diagram:
 

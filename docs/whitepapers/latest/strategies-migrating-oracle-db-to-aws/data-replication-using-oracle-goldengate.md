@@ -21,15 +21,15 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/strategies-migrating-
 
  GoldenGate Replicat is a key part of the entire system. You can run it from a server in the source environment, but AWS recommends that you run the Replicat process in an Amazon EC2 instance within AWS for better performance. This Amazon EC2 instance is referred to as a *GoldenGate Hub*. You can have multiple GoldenGate Hubs, especially if you are migrating data from one source to multiple destinations.
 
-![Diagram showing the Oracle GoldenGate replication data flow process](http://docs.aws.amazon.com/whitepapers/latest/strategies-migrating-oracle-db-to-aws/images/goldengate-replication-data-flow.jpg)
+![Diagram showing the Oracle GoldenGate replication data flow process](https://docs.aws.amazon.com/whitepapers/latest/strategies-migrating-oracle-db-to-aws/images/goldengate-replication-data-flow.jpg)
 
  **Reference architecture for Amazon EC2:**
 
-![Oracle GoldenGate replication from on-premises to Oracle Database on Amazon EC2](http://docs.aws.amazon.com/whitepapers/latest/strategies-migrating-oracle-db-to-aws/images/goldengate-replication-ec2.png)
+![Oracle GoldenGate replication from on-premises to Oracle Database on Amazon EC2](https://docs.aws.amazon.com/whitepapers/latest/strategies-migrating-oracle-db-to-aws/images/goldengate-replication-ec2.png)
 
  **Reference architecture for RDS:**
 
-![Oracle GoldenGate replication from on-premises to RDS Oracle Database on AWS](http://docs.aws.amazon.com/whitepapers/latest/strategies-migrating-oracle-db-to-aws/images/goldengate-replication-rds.png)
+![Oracle GoldenGate replication from on-premises to RDS Oracle Database on AWS](https://docs.aws.amazon.com/whitepapers/latest/strategies-migrating-oracle-db-to-aws/images/goldengate-replication-rds.png)
 
 ## Setting up Oracle GoldenGate Hub on Amazon EC2
 <a name="setting-up-oracle-goldengate-hub-on-amazon-ec2"></a>

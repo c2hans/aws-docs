@@ -42,7 +42,7 @@ This pattern includes the following features:
 
 The following diagram shows the workflow of the policy management pipeline and its associated resources.
 
-![Releasing SCPs and RCPs through a policy management pipeline.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/372a1ace-5b2e-4f93-9f88-b5b0519ded48/images/a2cceb99-2b93-48e0-b072-bc61a572201f.png)
+![Releasing SCPs and RCPs through a policy management pipeline.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/372a1ace-5b2e-4f93-9f88-b5b0519ded48/images/a2cceb99-2b93-48e0-b072-bc61a572201f.png)
 
 The diagram shows the following workflow:
 

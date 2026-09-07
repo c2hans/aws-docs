@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/using-power-bi-with-a
 
 Using the Microsoft Power BI Desktop in the AWS Cloud is a popular solution for many of the challenges described in the previous section. In this model, customers host the Microsoft Power BI Desktop in the AWS Cloud, and then access it remotely on premises. The following diagram shows an example.
 
-![A diagram depicting Microsoft Power BI Desktop deployed in the AWS Cloud](http://docs.aws.amazon.com/whitepapers/latest/using-power-bi-with-aws-cloud/images/powerbi5.png)
+![A diagram depicting Microsoft Power BI Desktop deployed in the AWS Cloud](https://docs.aws.amazon.com/whitepapers/latest/using-power-bi-with-aws-cloud/images/powerbi5.png)
 
 *Microsoft Power BI Desktop deployed in the AWS Cloud *
 

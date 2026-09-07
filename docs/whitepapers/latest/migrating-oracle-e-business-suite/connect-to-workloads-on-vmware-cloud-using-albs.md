@@ -9,4 +9,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-bu
 
  Once the migration is completed, the Oracle E-Business Suite can be accessed using Application Load Balancers and protected using AWS WAF. The VMware Cloud on AWS environment is connected to the Application Load Balancer and AWS WAF using a private ENI.
 
-![Reference architecture diagram showing using AWS Application Load Balancer with Oracle VMs](http://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-business-suite/images/aws-alb-after-migration.png)
+![Reference architecture diagram showing using AWS Application Load Balancer with Oracle VMs](https://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-business-suite/images/aws-alb-after-migration.png)

@@ -31,6 +31,6 @@ Both channels feed into the evidence pipeline within the Security and Log Archiv
 
 This figure illustrates how SPD flows from source services in the CUI Workload Account(s) through the two pipeline channels and into the evidence pipeline that produces assessment-ready artifacts.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/cmmc-level-2-compliance-on-aws/images/guide-img/0fdea3e4-e685-4123-b5d4-00cba3e6b30c/images/b715b563-4492-45b9-8c99-798e1875d55e.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/cmmc-level-2-compliance-on-aws/images/guide-img/0fdea3e4-e685-4123-b5d4-00cba3e6b30c/images/b715b563-4492-45b9-8c99-798e1875d55e.png)
 
  Figure 2: Security protection data flow architecture. Source services in the CUI Workload Account(s) feed into two parallel channels: the findings pipeline (aggregated in Security Hub) and the raw log pipeline (stored in Amazon S3 with Object Lock). Both channels feed into the evidence pipeline, which produces SSP artifacts, control-mapped evidence, POA&M tracking, and SPRS score calculations.

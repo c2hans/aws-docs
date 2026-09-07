@@ -61,7 +61,7 @@ The pattern uses AWS SCT to convert database schema objects from Amazon RDS for 
 
 The following diagram shows the migration of an Amazon RDS for Oracle DB instance to an Amazon RDS for PostgreSQL DB instance using AWS DMS and Python scripts.
 
-![Migrating RDS for Oracle DB instance to RDS for PostgreSQL DB instance using AWS DMS and Python.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5e041494-2e64-4f09-b6ec-0e0cba3a4972/images/77022e13-46fb-4aa8-ab49-85b0ca4c317a.png)
+![Migrating RDS for Oracle DB instance to RDS for PostgreSQL DB instance using AWS DMS and Python.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5e041494-2e64-4f09-b6ec-0e0cba3a4972/images/77022e13-46fb-4aa8-ab49-85b0ca4c317a.png)
 
 The diagram shows the following migration workflow:
 

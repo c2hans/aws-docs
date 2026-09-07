@@ -17,7 +17,7 @@ The following are the phases of developing an image classification model:
 
 The following image shows the phases and considerations that you must account for when choosing and deploying an image classification model.
 
-![Phases of choosing and deploying an image classification model](http://docs.aws.amazon.com/prescriptive-guidance/latest/image-classification/images/guide-img/3c71b76a-1e6e-4c69-b783-1676c6b7fb2d/images/ed4ff4a0-e31a-453c-baf7-14db055ce327.png)
+![Phases of choosing and deploying an image classification model](https://docs.aws.amazon.com/prescriptive-guidance/latest/image-classification/images/guide-img/3c71b76a-1e6e-4c69-b783-1676c6b7fb2d/images/ed4ff4a0-e31a-453c-baf7-14db055ce327.png)
 
 Although these phases are ordered to show dependence, the bulk of the decisions occur in the second phase, choosing a model. In this phase, you perform a cost-benefit analysis of the options that meet the requirements you defined in the first phase. This is because each modeling option is associated with different deployment and maintenance possibilities.
 

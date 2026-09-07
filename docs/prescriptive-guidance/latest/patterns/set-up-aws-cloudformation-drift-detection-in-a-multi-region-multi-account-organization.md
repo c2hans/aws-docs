@@ -31,7 +31,7 @@ This pattern provides a prescriptive solution that efficiently solves the proble
 
 The following diagram shows AWS Organizations set up with multiple accounts. AWS Config rules communicate between the accounts.
 
-![Five-step process for monitoring stacks in two AWS Organizations accounts.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/735d0987-b953-47f8-a9bc-b02a88957ee5/images/340cee9a-5a4e-49ea-bd73-d37dcea5e098.png)
+![Five-step process for monitoring stacks in two AWS Organizations accounts.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/735d0987-b953-47f8-a9bc-b02a88957ee5/images/340cee9a-5a4e-49ea-bd73-d37dcea5e098.png)
 
  The workflow includes the following steps:
 

@@ -91,7 +91,7 @@ $uploadPromise = $transferManager->upload(
 
 The following example shows sample console output from the built-in `SingleProgressTracker` for the upload progress of a file named `MyFile.txt`:
 
-![Console output showing a progress bar for uploading MyFile.txt with percentage complete and transfer speed](http://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/images/s3_TM_console_output_single_progress_tracker.png)
+![Console output showing a progress bar for uploading MyFile.txt with percentage complete and transfer speed](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/images/s3_TM_console_output_single_progress_tracker.png)
 
 ## Tracking a single directory operation
 <a name="directory-op-progress-tracking"></a>
@@ -154,7 +154,7 @@ $uploadDirPromise = $transferManager->uploadDirectory(
 
 The following example shows sample console output from the built-in `MultiProgressTracker` for the upload progress of a directory:
 
-![Console output showing multiple progress bars for uploading multiple files with a summary progress bar at the bottom](http://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/images/s3_TM_console_output_multi_progress_tracker.png)
+![Console output showing multiple progress bars for uploading multiple files with a summary progress bar at the bottom](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/images/s3_TM_console_output_multi_progress_tracker.png)
 
 The progress of each file is listed along with the summary progress in the last line.
 
@@ -294,7 +294,7 @@ print_r($result);
 
 The following image shows console output for a customized built-in `ConsoleProgressBar` with a width of 100 and character of "=":
 
-![Console output showing a customized progress bar using equals signs with width of 100 characters](http://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/images/s3_TM_console_output_custom_progress_tracker.png)
+![Console output showing a customized progress bar using equals signs with width of 100 characters](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/images/s3_TM_console_output_custom_progress_tracker.png)
 
 #### Customize by using the plain progress bar format
 <a name="customize-consoleprogressbar-plain-format"></a>
@@ -347,7 +347,7 @@ print_r($result);
 
 The following image shows console output for a customized built-in `ConsoleProgressBar` using a plain progress bar format with a width of 25 and character of "\*":
 
-![Console output showing a plain black progress bar using asterisks with width of 25 characters](http://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/images/s3_TM_console_output_custom-plain_progress_tracker.png)
+![Console output showing a plain black progress bar using asterisks with width of 25 characters](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/images/s3_TM_console_output_custom-plain_progress_tracker.png)
 
 #### Customize by creating a new bar format
 <a name="customize-consoleprogressbar-custom-format"></a>
@@ -424,7 +424,7 @@ print_r($result);
 
 The following image shows console output for a customized built-in `ConsoleProgressBar` using a custom progress bar format:
 
-![Console output showing a custom percentage-based progress format displaying object name and bytes transferred](http://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/images/s3_TM_console_output_custom-percentage_progress_tracker.png)
+![Console output showing a custom percentage-based progress format displaying object name and bytes transferred](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/images/s3_TM_console_output_custom-percentage_progress_tracker.png)
 
 A custom bar format accepts several parameters:
 + object\_name

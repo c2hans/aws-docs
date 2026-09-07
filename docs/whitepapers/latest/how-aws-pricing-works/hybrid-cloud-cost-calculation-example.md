@@ -48,4 +48,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works
 
  Considering these assumptions together with selected components will result in an architecture with a higher granularity of detail and will inﬂuence the overall cost of a hybrid cloud deployment (*Figure AWS Outpost with Amazon EKS Control Plane and Data Plane Architecture*).
 
-![Hybrid cloud architecture deployment example](http://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works/images/hybrid-cloud-architecture-deployment-example.png)
+![Hybrid cloud architecture deployment example](https://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works/images/hybrid-cloud-architecture-deployment-example.png)

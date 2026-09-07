@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/accenture-ai-scaling-
 # Monitoring for performance and bias
 <a name="monitoring-for-performance-and-bias"></a>
 
-![A diagram that shows bias detection with SageMaker AI Clarify and nearly continuous monitoring with SageMaker AI Model Monitor .](http://docs.aws.amazon.com/whitepapers/latest/accenture-ai-scaling-ml-and-deep-learning-models/images/bias-detection.png)
+![A diagram that shows bias detection with SageMaker AI Clarify and nearly continuous monitoring with SageMaker AI Model Monitor .](https://docs.aws.amazon.com/whitepapers/latest/accenture-ai-scaling-ml-and-deep-learning-models/images/bias-detection.png)
 
 DL models can be heavily impacted by data bias. Model and data bias detection and rectification should be constant underlying themes in an Enterprise AI system. You can use [SageMaker AI Clarify](https://aws.amazon.com/sagemaker/clarify/) extensively to perform evaluation for detecting data bias, during featuring engineering for evaluating feature importance, for assessing model bias during training/hyper-parameter tuning and finally with [SageMaker AI Model Monitor](https://aws.amazon.com/sagemaker/model-monitor/) to take actions on live models.
 

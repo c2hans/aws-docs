@@ -19,4 +19,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
 
  An example of technique and access containment can be seen in the following diagram, with an incident responder rotating access keys or removing an IAM policy to prevent an IAM user from accessing an Amazon S3 bucket.
 
-![Diagram showing a technique and access containment example](http://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/images/technique-and-access-containment.png)
+![Diagram showing a technique and access containment example](https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/images/technique-and-access-containment.png)

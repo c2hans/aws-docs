@@ -14,7 +14,7 @@ Deploying this solution with the default parameters builds the following environ
 
  **Automated Security Response on AWS architecture**
 
-![Two-account architecture with Security Hub](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/automated-security-response-on-aws-architecture-diagram.png)
+![Two-account architecture with Security Hub](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/automated-security-response-on-aws-architecture-diagram.png)
 
 **Note**
 AWS CloudFormation resources are created from AWS Cloud Development Kit (AWS CDK) constructs.

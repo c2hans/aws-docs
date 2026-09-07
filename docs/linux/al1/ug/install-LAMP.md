@@ -194,7 +194,7 @@ If your server is installed and running, and your file permissions are set corre
    ```
 
    You should see the PHP information page:
-![Test of LAMP server shows the PHP information page.](http://docs.aws.amazon.com/linux/al1/ug/images/phpinfo7.2.10.png)
+![Test of LAMP server shows the PHP information page.](https://docs.aws.amazon.com/linux/al1/ug/images/phpinfo7.2.10.png)
 
    If you do not see this page, verify that the `/var/www/html/phpinfo.php` file was created properly in the previous step. You can also verify that all of the required packages were installed with the following command. The package versions in the second column do not need to match this example output.
 
@@ -339,7 +339,7 @@ The Amazon Linux package management system does not currently support the automa
    ```
 
    You should see the phpMyAdmin login page:
-![Result of typing the URL of your phpMyAdmin installation is the phpMyAdmin login screen.](http://docs.aws.amazon.com/linux/al1/ug/images/phpmyadmin_login.png)
+![Result of typing the URL of your phpMyAdmin installation is the phpMyAdmin login screen.](https://docs.aws.amazon.com/linux/al1/ug/images/phpmyadmin_login.png)
 
 1. Log in to your phpMyAdmin installation with the `root` user name and the MySQL root password you created earlier.
 

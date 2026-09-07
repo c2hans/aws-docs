@@ -160,7 +160,7 @@ In this step, you install TypeScript by using Node Package Manager (** `npm` **)
    The sum of 5 and 9 is 14.
    ```
 
-![Node.js output after running the code in the AWS Cloud9 IDE](http://docs.aws.amazon.com/cloud9/latest/user-guide/images/ide-nodejs-simple.png)
+![Node.js output after running the code in the AWS Cloud9 IDE](https://docs.aws.amazon.com/cloud9/latest/user-guide/images/ide-nodejs-simple.png)
 
 **Note**
 Instead of creating a new run configuration in the IDE, you can also execute this code by running the command ** `node hello.js 5 9` ** from the terminal.

@@ -41,7 +41,7 @@ For more information, see the [Spinnaker documentation](https://spinnaker.io/doc
 
 The following diagram illustrates a GitOps-driven CD workflow that uses Spinnaker and Jenkins X. For detailed information, see the [Spinnaker documentation](https://spinnaker.io/docs/concepts/).
 
-![Spinnaker architecture and workflow on AWS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/eks-gitops-tools/images/guide-img/b6f49161-b2c5-42aa-b1d8-b0781836edb7/images/6601ff56-3d46-4dcf-ab6f-0ae4cca17e47.png)
+![Spinnaker architecture and workflow on AWS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-gitops-tools/images/guide-img/b6f49161-b2c5-42aa-b1d8-b0781836edb7/images/6601ff56-3d46-4dcf-ab6f-0ae4cca17e47.png)
 
 where:
 + **Step 1: Code commit**. Developers commit application code changes to a Git repository. These changes could include updates to the application itself, Dockerfiles, or Kubernetes manifests.

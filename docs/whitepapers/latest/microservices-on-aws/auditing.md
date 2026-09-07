@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/
 
  In a microservices architecture, it's crucial to have visibility into user actions across all services. AWS provides tools like AWS CloudTrail, which logs all API calls made in AWS, and AWS CloudWatch, which is used to capture application logs. This allows you to track changes and analyze behavior across your microservices. Amazon EventBridge can react to system changes quickly, notifying the right people or even automatically starting workflows to resolve issues.
 
-![Diagram showing auditing and remediation across your microservices](http://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/images/auditing-and-remediation.png)
+![Diagram showing auditing and remediation across your microservices](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/images/auditing-and-remediation.png)
 
 ## Resource inventory and change management
 <a name="resource-inventory-and-change-management"></a>
@@ -16,4 +16,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/
 
  For instance, if an API Gateway configuration in a microservice is altered to accept inbound HTTP traffic instead of only HTTPS requests, a predefined AWS Config rule can detect this security violation. It logs the change for auditing and triggers an SNS notification, restoring the compliant state.
 
-![Diagram showing how to detect security violations with AWS Config](http://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/images/detect-security-violations.png)
+![Diagram showing how to detect security violations with AWS Config](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/images/detect-security-violations.png)

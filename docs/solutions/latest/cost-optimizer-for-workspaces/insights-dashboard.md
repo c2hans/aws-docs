@@ -21,11 +21,11 @@ Sample data below:
 
  **Cost Optimizer for Amazon WorkSpaces overview**
 
-![insights](http://docs.aws.amazon.com/solutions/latest/cost-optimizer-for-workspaces/images/insights.png)
+![insights](https://docs.aws.amazon.com/solutions/latest/cost-optimizer-for-workspaces/images/insights.png)
 
  **Cost Optimizer for Amazon WorkSpaces insights**
 
-![insights2](http://docs.aws.amazon.com/solutions/latest/cost-optimizer-for-workspaces/images/insights2.png)
+![insights2](https://docs.aws.amazon.com/solutions/latest/cost-optimizer-for-workspaces/images/insights2.png)
 
  **Additional costs associated with this feature**
 

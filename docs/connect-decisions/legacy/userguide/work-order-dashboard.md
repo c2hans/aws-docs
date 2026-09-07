@@ -9,7 +9,7 @@ You can view all the orders that are at-risk, delivered, early, late, on time, o
 
 In the left navigation pane on the AWS Supply Chain dashboard, choose **Order Planning and Tracking**. The **Order Planning and Tracking** page appears.
 
-![Orders](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Work_order.png)
+![Orders](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Work_order.png)
 
 Choose **Filters** to filter the orders based on **Country/Location**, **Campaign**, **Revision** , **Main Work Center**, **Process Name**, and **Planner Group**. Once you set your filters, choose **Apply**. You can also choose **Save filter group** to save your filters.
 
@@ -85,7 +85,7 @@ You can view all the materials related to a order.
    + Add a comment (under 400 characters).
    + Edit or delete a comment.
    + See other users' comments.
-![Comments feature on the Orders page](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/comments-orders.png)
+![Comments feature on the Orders page](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/comments-orders.png)
 
 1. Expand the order you would like to view.
 
@@ -93,11 +93,11 @@ You can view all the materials related to a order.
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/work-order-dashboard.html)
 
 1. Choose the **Material** you would like to view in-detail. The **Material Summary** page appears and displays the summary of the material. You can use the same **Comments** feature mentioned in step 2 to add, update, and view comments.
-![Order material summary - working forwards process](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Insights_order.png)
-![Order material summary - forecasted completion](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/working_backwards.png)
-![Order material summary - working backwards process](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/working_backwards_new.png)
-![Comments feature on the Procurement page](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/comments1.PNG)
-![Comments feature on the Procurement page](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/comments2.PNG)
+![Order material summary - working forwards process](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Insights_order.png)
+![Order material summary - forecasted completion](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/working_backwards.png)
+![Order material summary - working backwards process](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/working_backwards_new.png)
+![Comments feature on the Procurement page](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/comments1.PNG)
+![Comments feature on the Procurement page](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/comments2.PNG)
 
    You can view the current milestone for the material and the recommendation AWS Supply Chain provides for each milestone.
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/work-order-dashboard.html)
@@ -105,11 +105,11 @@ You can view all the materials related to a order.
 1. Choose **Copy shareable link to clipboard** to share the material summary dashboard.
 
 1. Choose the **Edit** icon to edit the material summary view. Slide the data entity button to view the data field on the material summary page.
-![Edit material summary page](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/edit_material_summary.png)
+![Edit material summary page](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/edit_material_summary.png)
 
    You can drag and drop the data entities to rearrange the date entity view on the material summary page.
 
 1. Choose **Save Changes**.
 
 1. Slide the **Show Completed Milestones** button to view all the completed milestones for a material.
-![Viewing completed milestones](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/completed_milestones.png)
+![Viewing completed milestones](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/completed_milestones.png)

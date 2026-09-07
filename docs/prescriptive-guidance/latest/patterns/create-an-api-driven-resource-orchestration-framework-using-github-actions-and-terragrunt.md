@@ -30,7 +30,7 @@ The configurable pipeline architecture can be adapted to meet different organiza
 
 The following diagram shows the components and workflow of this pattern.
 
-![Workflow to automate resource provisioning with GitHub Actions and Terraform.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/bff5d70e-e8f1-454a-94bc-60e8cc16e69f/images/d4a768c8-4e11-493c-85ed-f4bf7e76ce60.png)
+![Workflow to automate resource provisioning with GitHub Actions and Terraform.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/bff5d70e-e8f1-454a-94bc-60e8cc16e69f/images/d4a768c8-4e11-493c-85ed-f4bf7e76ce60.png)
 
 The architecture diagram shows the following actions:
 

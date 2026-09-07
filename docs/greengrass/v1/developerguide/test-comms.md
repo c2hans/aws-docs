@@ -22,7 +22,7 @@ End of support notice: On October 7th, 2026, AWS will discontinue support for AW
       ```
 
       Output similar to the following indicates successful communication between the computer and the AWS IoT Greengrass core device (0% packet loss):
-![Successful ping command output.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-075.5.png)
+![Successful ping command output.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-075.5.png)
 **Note**
 If you're unable to ping an EC2 instance that's running AWS IoT Greengrass, make sure that the inbound security group rules for the instance allow ICMP traffic for [Echo request](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules-reference.html#sg-rules-ping) messages. For more information, see [ Adding rules to a security group](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html#adding-security-group-rule) in the *Amazon EC2 User Guide*.
 On Windows host computers, in the Windows Firewall with Advanced Security app, you might also need to enable an inbound rule that allows inbound echo requests (for example, **File and Printer Sharing (Echo Request - ICMPv4-In)**), or create one.
@@ -60,7 +60,7 @@ Run the following command from the folder that contains the `basicDiscovery.py` 
 **Note**
 If the script returns an `error: unrecognized arguments` message, change the single quotation marks to double quotation marks for the `--topic` and `--message` parameters and run the command again.
 To troubleshoot a connection issue, you can try using [manual IP detection](#corp-network-manual-detection).
-![Screenshot of the publisher output.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-076.png)
+![Screenshot of the publisher output.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-076.png)
 
 1. From the HelloWorld\_Subscriber client device window, run the following commands.
    + Replace {{path-to-certs-folder}} with the path to the folder that contains the certificates, keys, and `basicDiscovery.py`.
@@ -73,7 +73,7 @@ To troubleshoot a connection issue, you can try using [manual IP detection](#cor
    ```
 
    You should see the following output, which includes entries such as `Received message on topic hello/world/pubsub: {"message": "Hello, World! Sent from HelloWorld_Publisher", "sequence": 1}`.
-![Screenshot of the subscriber output.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-077.png)
+![Screenshot of the subscriber output.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-077.png)
 
 Close the HelloWorld\_Publisher window to stop messages from accruing in the HelloWorld\_Subscriber window.
 

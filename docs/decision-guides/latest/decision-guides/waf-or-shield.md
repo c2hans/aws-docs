@@ -24,7 +24,7 @@ While AWS Shield defends against large-scale, network-level attacks, with AWS Sh
 
 Here's a high-level view of the key differences between these services.
 
-|  **Category**  |  ![Image displaying AWS WAF logo](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/Arch_AWS-WAF_48.png) **AWS WAF**  |  ![Image displaying AWS Shield logo](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/Arch_AWS-Shield_48.png) **AWS Shield**  |
+|  **Category**  |  ![Image displaying AWS WAF logo](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/Arch_AWS-WAF_48.png) **AWS WAF**  |  ![Image displaying AWS Shield logo](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/Arch_AWS-Shield_48.png) **AWS Shield**  |
 | --- | --- | --- |
 | Primary Purpose  | Protects against exploits on web applications (such as SQL injection or XSS)  | Protects against DDoS attacks (such as SYN or UDP floods)  |
 | Layer of protection  | Application layer (L7)  | Network, transport, and application layers (L3/L4/L7)  |

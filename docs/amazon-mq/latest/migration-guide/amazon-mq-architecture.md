@@ -16,7 +16,7 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/migration-guide/amazon-
 
  The following diagram illustrates Amazon MQ configured across two regions with a linear connection between two active/standby brokers:
 
- ![Diagram showing two QM brokers connected by a network connector, with queues and apps.](http://docs.aws.amazon.com/amazon-mq/latest/migration-guide/images/ibm-amazon-mq-architecture-fig-1.PNG)
+ ![Diagram showing two QM brokers connected by a network connector, with queues and apps.](https://docs.aws.amazon.com/amazon-mq/latest/migration-guide/images/ibm-amazon-mq-architecture-fig-1.PNG)
 
  For *App 1* to communicate with *App 2*:
 

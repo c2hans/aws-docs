@@ -53,7 +53,7 @@ Microsoft SQL Server Standard edition with a failover cluster instance (FCI) can
 
 The following diagram shows the high-level architecture of Microsoft SQL Server FCI on Amazon EC2 using Amazon FSx for Windows File Server.
 
-![Architecture diagram for Microsoft Server FCI on Amazon EC2 using Amazon FSx for Windows File Server.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/208bf64a-8fef-4019-944a-723372450885/images/ba0c9169-9536-41c3-ae8e-7264dcc3e1ad.png)
+![Architecture diagram for Microsoft Server FCI on Amazon EC2 using Amazon FSx for Windows File Server.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/208bf64a-8fef-4019-944a-723372450885/images/ba0c9169-9536-41c3-ae8e-7264dcc3e1ad.png)
 
 **Network infrastructure**
 + Amazon VPC provides a network container that spans three Availability Zones.

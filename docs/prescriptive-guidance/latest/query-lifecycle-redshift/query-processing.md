@@ -12,7 +12,7 @@ Amazon Redshift routes a submitted SQL query through the parser and optimizer to
 
 The following diagram provides a high-level view of the query planning and execution workflow.
 
-![Query planning and execution workflow between the client, leader node, and compute nodes.](http://docs.aws.amazon.com/prescriptive-guidance/latest/query-lifecycle-redshift/images/guide-img/84453e49-6013-472a-b5b1-062248897e49/images/2766303e-53bb-4085-ba79-a0e2731b7a92.png)
+![Query planning and execution workflow between the client, leader node, and compute nodes.](https://docs.aws.amazon.com/prescriptive-guidance/latest/query-lifecycle-redshift/images/guide-img/84453e49-6013-472a-b5b1-062248897e49/images/2766303e-53bb-4085-ba79-a0e2731b7a92.png)
 
 The diagram shows the following workflow:
 
@@ -56,11 +56,11 @@ The following diagram shows the execution workflow of streams, segments, steps, 
 
 The following diagram shows a visual representation of streams, segments, and steps. Each segment contains multiple steps, and each stream contains multiple segments.
 
-![Each stream contains multiple segments, which contain multiple steps.](http://docs.aws.amazon.com/prescriptive-guidance/latest/query-lifecycle-redshift/images/guide-img/84453e49-6013-472a-b5b1-062248897e49/images/a0bac1f4-2b7e-4738-bbe9-8c64d9d4e08a.png)
+![Each stream contains multiple segments, which contain multiple steps.](https://docs.aws.amazon.com/prescriptive-guidance/latest/query-lifecycle-redshift/images/guide-img/84453e49-6013-472a-b5b1-062248897e49/images/a0bac1f4-2b7e-4738-bbe9-8c64d9d4e08a.png)
 
 The following diagram shows a visual representation of query executions and compute node slices. Each compute node contains multiple slices, streams, segments, and steps.
 
-![Slices, streams, segments, and steps in each compute node.](http://docs.aws.amazon.com/prescriptive-guidance/latest/query-lifecycle-redshift/images/guide-img/84453e49-6013-472a-b5b1-062248897e49/images/c18be91a-fe4e-4ba8-a82b-8c0c0b73bc81.png)
+![Slices, streams, segments, and steps in each compute node.](https://docs.aws.amazon.com/prescriptive-guidance/latest/query-lifecycle-redshift/images/guide-img/84453e49-6013-472a-b5b1-062248897e49/images/c18be91a-fe4e-4ba8-a82b-8c0c0b73bc81.png)
 
 ## Additional considerations
 <a name="additional-considerations"></a>

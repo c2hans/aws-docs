@@ -25,7 +25,7 @@ Here are some example key roles and responsibilities in the project team:
 + Training lead: Designs and develops the training strategy and plan. Works in collaboration with the learning and development or training lead to determine how to best advertise training, target users for training courses, handle training logistics, and roll out training within the customer's environment.
 + Specialty subject matter experts (as needed): Focus on variable aspects of the program such as culture analysis, diversity and inclusion, and strategic workforce planning.
 
-![Key roles in an OCA project.](http://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-mobilize-team/images/guide-img/92b6ddba-987c-49cf-bc18-ab8ec8f36978/images/1b04b183-dc89-4a84-b628-31fe2f181912.png)
+![Key roles in an OCA project.](https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-mobilize-team/images/guide-img/92b6ddba-987c-49cf-bc18-ab8ec8f36978/images/1b04b183-dc89-4a84-b628-31fe2f181912.png)
 
 For a majority of projects, three roles are key: people transformation or change acceleration lead, organizational readiness and communications lead, and training lead. These three roles are the foundation for the change acceleration team that supports a cloud transformation program. Additional resources can be added to the team as the scope of cloud transformation increases or timelines shift.
 

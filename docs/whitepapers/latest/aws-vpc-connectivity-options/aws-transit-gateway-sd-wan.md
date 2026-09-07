@@ -15,11 +15,11 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-
 
  When integrating your SD-WAN network to Transit Gateway using connect attachments, you have two common patterns. The first one is placing virtual appliances of the SD-WAN network in a VPC within AWS. Then, you use a VPC attachment as underlying transport for the Transit Gateway connect attachment between the virtual appliances and the Transit Gateway, as can be shown in the following figure.
 
-![A diagram that shows using a VPC attachment as underlying transport.](http://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/sd-wan-connectivity-with-transit-gateway.png)
+![A diagram that shows using a VPC attachment as underlying transport.](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/sd-wan-connectivity-with-transit-gateway.png)
 
  Alternatively, you can extend and segment your SD-WAN traffic to AWS without adding extra infrastructure. You can create Transit Gateway connect attachments using an AWS Direct Connect connection as underlying transport, as can be shown in the following figure.
 
-![A diagram that shows using a VPC attachment as underlying transport.](http://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/sd-wan-connectivity-with-transit-gateway-2.png)
+![A diagram that shows using a VPC attachment as underlying transport.](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/sd-wan-connectivity-with-transit-gateway-2.png)
 
  There are some considerations to be aware when using Transit Gateway connect attachments:
 +  You can create a connect attachments on existing Transit Gateways.

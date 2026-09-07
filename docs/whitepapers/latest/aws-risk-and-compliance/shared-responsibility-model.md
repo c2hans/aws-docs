@@ -13,6 +13,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-risk-and-complian
 
  The nature of this shared responsibility also provides the flexibility and customer control that permits customers to deploy solutions that meet industry-specific certification requirements.
 
-![Chart showing the AWS customer and AWS shared responsibility](http://docs.aws.amazon.com/whitepapers/latest/aws-risk-and-compliance/images/image2.png)
+![Chart showing the AWS customer and AWS shared responsibility](https://docs.aws.amazon.com/whitepapers/latest/aws-risk-and-compliance/images/image2.png)
 
  This shared responsibility model also extends to IT controls. Just as the responsibility to operate the IT environment is shared between AWS and its customers, the management, operation, and verification of IT controls is also a shared responsibility. AWS can help customers by managing those controls associated with the physical infrastructure deployed in the AWS environment. Customers can then use the AWS control and compliance documentation available to them to perform their control evaluation and verification procedures as required. For examples of how responsibility for certain controls is shared between AWS and its customers, see the [AWS Shared Responsibility Model](https://aws.amazon.com/compliance/shared-responsibility-model/).

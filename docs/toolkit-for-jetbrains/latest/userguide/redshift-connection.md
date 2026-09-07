@@ -36,7 +36,7 @@ You can also choose **Copy Arn** to add the cluster's Amazon Resource Name (ARN)
    + **Cluster ID** – The ID of the cluster you selected in **AWS Explorer**.
    + **Database** – The name of the database in the cluster you'll connect to.
    + **URL** – The URL that the JetBrains IDE will use to connect to the cluster's database.
-![Connection settings for a Amazon Redshift cluster with IAM credentials used for authentication.](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/redshift-auth-iam.png)
+![Connection settings for a Amazon Redshift cluster with IAM credentials used for authentication.](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/redshift-auth-iam.png)
 **Note**
 For a full description of the connection settings that you can configure using the **Data sources and drivers** dialog box, see the [documentation for the JetBrains IDE](https://www.jetbrains.com/help/) that you're using.
 
@@ -77,7 +77,7 @@ You can also choose **Copy Arn** to add the cluster's Amazon Resource Name (ARN)
    + **URL** – The URL that the JetBrains IDE will use to connect to the database.
 **Note**
 If you're using AWS Secrets Manager for authentication, there are no fields for specifying a user name and password for the cluster. This information is contained in the encrypted secret data portion of a secret.
-![Connection settings for a Amazon Redshift cluster with Secrets Manager used for authentication.](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/redshift-auth-asm.png)
+![Connection settings for a Amazon Redshift cluster with Secrets Manager used for authentication.](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/redshift-auth-asm.png)
 **Note**
 For a full description of the connection settings that you can configure using the **Data sources and drivers** dialog box, see the [documentation for the JetBrains IDE](https://www.jetbrains.com/help/) that you're using.
 

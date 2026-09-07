@@ -11,7 +11,7 @@ In addition to using HTTP header routing for actions, you can use it as a mechan
 
 The architecture for HTTP header routing typically has a thin routing layer in front of microservices that routes to the correct service and returns a response, as illustrated in the following diagram. This routing layer could cover all services or just a few services to enable an operation such as version-based routing.
 
-![HTTP header routing.](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/93e01f76-328c-4ea5-9108-4066d1a3fe94.png)
+![HTTP header routing.](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/93e01f76-328c-4ea5-9108-4066d1a3fe94.png)
 
 ## Pros
 <a name="pros.5168efcb-e88a-50a5-af1e-118df0e981d2"></a>

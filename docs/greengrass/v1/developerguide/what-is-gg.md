@@ -11,7 +11,7 @@ AWS IoT Greengrass is software that extends cloud capabilities to local devices.
 
 The following diagram shows the basic architecture of AWS IoT Greengrass.
 
-![Greengrass core enables local execution of Lambda, messaging, device shadows, and security. Greengrass core interacts with the AWS Cloud and works locally with intermittent connectivity.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/greengrass.png)
+![Greengrass core enables local execution of Lambda, messaging, device shadows, and security. Greengrass core interacts with the AWS Cloud and works locally with intermittent connectivity.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/greengrass.png)
 
 AWS IoT Greengrass makes it possible for customers to build IoT devices and application logic. Specifically, AWS IoT Greengrass provides cloud-based management of application logic that runs on devices. Locally deployed Lambda functions and connectors are triggered by local events, messages from the cloud, or other sources.
 
@@ -295,7 +295,7 @@ Initial version
 
 A Greengrass group is a collection of settings and components, such as a Greengrass core, devices, and subscriptions. Groups are used to define a scope of interaction. For example, a group might represent one floor of a building, one truck, or an entire mining site. The following diagram shows the components that can make up a Greengrass group.
 
-![AWS IoT Core, Greengrass, and Lambda components, with interconnected Core, Settings, Lambda functions, Subscriptions, Connectors, Devices, and Resources elements.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-group.png)
+![AWS IoT Core, Greengrass, and Lambda components, with interconnected Core, Settings, Lambda functions, Subscriptions, Connectors, Devices, and Resources elements.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-group.png)
 
 In the preceding diagram:
 
@@ -349,7 +349,7 @@ In a Greengrass group, you can create subscriptions that allow client devices to
 
 The following table shows how these device types are related.
 
-![AWS IoT Core and Device capabilities matrix showing configurations like Certificate, IoT Policy, IoT Thing supported on both Core and Device sides, with Device Gateway, Sensor/Actuator software, and Functions outside Greengrass Group permissions marked.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/devices.png)
+![AWS IoT Core and Device capabilities matrix showing configurations like Certificate, IoT Policy, IoT Thing supported on both Core and Device sides, with Device Gateway, Sensor/Actuator software, and Functions outside Greengrass Group permissions marked.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/devices.png)
 
 The AWS IoT Greengrass core device stores certificates in two locations:<a name="ggc-certificate-locations"></a>
 + Core device certificate in `/{{greengrass-root}}/certs`. Typically, the core device certificate is named `{{hash}}.cert.pem` (for example, `86c84488a5.cert.pem`). This certificate is used by the AWS IoT client for mutual authentication when the core connects to the AWS IoT Core and AWS IoT Greengrass services.

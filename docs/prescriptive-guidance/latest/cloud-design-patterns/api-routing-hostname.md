@@ -15,7 +15,7 @@ Routing by hostname is a mechanism for isolating API services by giving each API
 
 Routing by using hostnames reduces the amount of friction in releases, because nothing is shared between service teams. Teams are responsible for managing everything from DNS entries to service operations in production.
 
-![Hostname routing.](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/76355efe-b416-4cdc-81f8-e94a2851e264.png)
+![Hostname routing.](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/76355efe-b416-4cdc-81f8-e94a2851e264.png)
 
 ## Pros
 <a name="hostname-pros"></a>

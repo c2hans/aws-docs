@@ -41,7 +41,7 @@ S3DataSource_dsource1.write.format("parquet").mode("append").save(
 )
 ```
 
-![An example of asking Amazon Q data integration in AWS Glue for a generated ETL script.](http://docs.aws.amazon.com/glue/latest/dg/images/context-awareness-lakehouse-example.gif)
+![An example of asking Amazon Q data integration in AWS Glue for a generated ETL script.](https://docs.aws.amazon.com/glue/latest/dg/images/context-awareness-lakehouse-example.gif)
 
 ### Get data from Lakehouse and write to database
 <a name="q-context-awareness-examples-generated-script-2"></a>
@@ -77,7 +77,7 @@ CatalogConnectionHelper(spark).write(
 )
 ```
 
-![An example of asking Amazon Q data integration in AWS Glue for a generated ETL script.](http://docs.aws.amazon.com/glue/latest/dg/images/context-awareness-example-interactions.gif)
+![An example of asking Amazon Q data integration in AWS Glue for a generated ETL script.](https://docs.aws.amazon.com/glue/latest/dg/images/context-awareness-example-interactions.gif)
 
 ### Example: Full ETL workflow
 <a name="q-context-awareness-complex-example"></a>
@@ -119,7 +119,7 @@ FilterTransform_transform2.write.format("csv").mode("append").save(
 )
 ```
 
-![An example of asking Amazon Q data integration in AWS Glue for a generated ETL script.](http://docs.aws.amazon.com/glue/latest/dg/images/context-awareness-complex-example.gif)
+![An example of asking Amazon Q data integration in AWS Glue for a generated ETL script.](https://docs.aws.amazon.com/glue/latest/dg/images/context-awareness-complex-example.gif)
 
 ## Limitations
 <a name="q-context-awareness-limitations"></a>

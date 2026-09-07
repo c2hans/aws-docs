@@ -27,7 +27,7 @@ The chaos experiment lifecycle includes these steps:
 
  These steps are illustrated in the diagram and discussed in the following sections.
 
-![Eight steps in the chaos experiment lifecycle.](http://docs.aws.amazon.com/prescriptive-guidance/latest/chaos-engineering-on-aws/images/guide-img/4119a10b-a241-4431-9681-0b62a5da1a70/images/7cd7aa92-0181-488b-b9ac-2a9be4529fca.png)
+![Eight steps in the chaos experiment lifecycle.](https://docs.aws.amazon.com/prescriptive-guidance/latest/chaos-engineering-on-aws/images/guide-img/4119a10b-a241-4431-9681-0b62a5da1a70/images/7cd7aa92-0181-488b-b9ac-2a9be4529fca.png)
 
 ## Define objectives and set expectations
 <a name="define-objectives"></a>
@@ -49,7 +49,7 @@ Don't forget to map the mental gaps of people, processes, facilities information
 
 The following diagram shows the return on investment for running chaos experiments on different tiers of services.
 
-![ROI for running chaos experiments across different application tiers.](http://docs.aws.amazon.com/prescriptive-guidance/latest/chaos-engineering-on-aws/images/guide-img/4119a10b-a241-4431-9681-0b62a5da1a70/images/4a098ab9-acc2-49f9-a30e-20489be0c12f.png)
+![ROI for running chaos experiments across different application tiers.](https://docs.aws.amazon.com/prescriptive-guidance/latest/chaos-engineering-on-aws/images/guide-img/4119a10b-a241-4431-9681-0b62a5da1a70/images/4a098ab9-acc2-49f9-a30e-20489be0c12f.png)
 
 ## Align mental maps (application discovery)
 <a name="align-mental-maps"></a>

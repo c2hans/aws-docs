@@ -17,7 +17,7 @@ The preparation stage of the migration consists of these steps:
 
 1. Set up a backlog. Prioritize the use of "pre-baked" epics for all workstreams from existing migration patterns. Here are a few examples:
 
-![Backlog example.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-program-implementation/images/guide-img/c368ac72-b4ba-4de5-80d0-24d311a6c244/images/40f22208-eef7-489b-9a3a-14fe9ded0e51.png)
+![Backlog example.](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-program-implementation/images/guide-img/c368ac72-b4ba-4de5-80d0-24d311a6c244/images/40f22208-eef7-489b-9a3a-14fe9ded0e51.png)
 
 1. Assign a scrum leader and a product owner, who are responsible for managing the backlog.
 

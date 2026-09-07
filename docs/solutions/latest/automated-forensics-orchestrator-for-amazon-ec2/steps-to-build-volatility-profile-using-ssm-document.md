@@ -9,7 +9,7 @@ The below diagram explains the overall architecture of building volatility profi
 
  **steps to build volatility profile using SSM document**
 
-![volatility profile using ssm](http://docs.aws.amazon.com/solutions/latest/automated-forensics-orchestrator-for-amazon-ec2/images/volatility-profile-using-ssm.png)
+![volatility profile using ssm](https://docs.aws.amazon.com/solutions/latest/automated-forensics-orchestrator-for-amazon-ec2/images/volatility-profile-using-ssm.png)
 
 The diagram below details the usage of a Volatility profile in the memory investigation flow.
 

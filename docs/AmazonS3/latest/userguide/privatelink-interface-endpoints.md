@@ -212,7 +212,7 @@ You can use the AWS CLI or AWS SDKs to access buckets, S3 access points, and Ama
 
 The following image shows the VPC console **Details** tab, where you can find the DNS name of a VPC endpoint. In this example, the *VPC endpoint ID (vpce-id)* is `vpce-0e25b8cdd720f900e` and the *DNS name* is `*.vpce-0e25b8cdd720f900e-argc85vg.s3.us-east-1.vpce.amazonaws.com`.
 
-![The Details tab in the VPC console.](http://docs.aws.amazon.com/AmazonS3/latest/userguide/images/vpc-console-details-tab.png)
+![The Details tab in the VPC console.](https://docs.aws.amazon.com/AmazonS3/latest/userguide/images/vpc-console-details-tab.png)
 
 When using the DNS name to access a resource, replace {{\*}} with the appropriate value. The appropriate values to use in place of `*` are as follows:
 + `bucket`
@@ -411,7 +411,7 @@ When using endpoint-specific DNS names to access the interface endpoints for Ama
 
 Interface endpoints in your VPC can route both in-VPC applications and on-premises applications to Amazon S3 over the Amazon network, as illustrated in the following diagram.
 
-![Data-flow diagram showing access to Amazon S3 using an interface endpoint and AWS PrivateLink.](http://docs.aws.amazon.com/AmazonS3/latest/userguide/images/interface-endpoints.png)
+![Data-flow diagram showing access to Amazon S3 using an interface endpoint and AWS PrivateLink.](https://docs.aws.amazon.com/AmazonS3/latest/userguide/images/interface-endpoints.png)
 
 The diagram illustrates the following:
 + Your on-premises network uses Direct Connect or Site-to-Site VPN to connect to VPC A.
@@ -424,7 +424,7 @@ The diagram illustrates the following:
 
 You can create interface endpoints and retain the existing gateway endpoint in the same VPC, as the following diagram shows. By taking this approach, you allow in-VPC applications to continue accessing Amazon S3 through the gateway endpoint, which is not billed. Then, only your on-premises applications would use interface endpoints to access Amazon S3. To access Amazon S3 this way, you must update your on-premises applications to use endpoint-specific DNS names for Amazon S3.
 
-![Data-flow diagram showing access to Amazon S3 using gateway endpoints and interface endpoints.](http://docs.aws.amazon.com/AmazonS3/latest/userguide/images/interface-and-gateway-endpoints.png)
+![Data-flow diagram showing access to Amazon S3 using gateway endpoints and interface endpoints.](https://docs.aws.amazon.com/AmazonS3/latest/userguide/images/interface-and-gateway-endpoints.png)
 
 The diagram illustrates the following:
 + On-premises applications use endpoint-specific DNS names to send data to the interface endpoint within the VPC through Direct Connect (or Site-to-Site VPN). AWS PrivateLink moves the data from the interface endpoint to Amazon S3 over the AWS network.

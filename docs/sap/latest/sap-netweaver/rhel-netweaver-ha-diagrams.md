@@ -16,11 +16,11 @@ This guide covers two architectures for SAP cluster solutions on RHEL for SAP â€
 
 See the following image for more details.
 
-![Simple Mount Achitecture](http://docs.aws.amazon.com/sap/latest/sap-netweaver/images/image-pacemaker-nw-rhel-simplemount.png)
+![Simple Mount Achitecture](https://docs.aws.amazon.com/sap/latest/sap-netweaver/images/image-pacemaker-nw-rhel-simplemount.png)
 
 ## Pacemaker - classic architecture
 <a name="classic-diagram-nw-rhel"></a>
 
 See the following image for more details.
 
-![Classic Architecture.](http://docs.aws.amazon.com/sap/latest/sap-netweaver/images/image-pacemaker-nw-rhel-classic.png)
+![Classic Architecture.](https://docs.aws.amazon.com/sap/latest/sap-netweaver/images/image-pacemaker-nw-rhel-classic.png)

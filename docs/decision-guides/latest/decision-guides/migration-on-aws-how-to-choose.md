@@ -24,7 +24,7 @@ Once you have a migration plan in place, data is transferred to AWS, and applica
 
 AWS offers a wide range of tools, resources, and support to help with this process, catering to diverse migration strategies, such as lift-and-shift, re-platforming, and refactoring. This guide is designed to help you choose the right tools and services to do your migration.
 
-[![AWS Videos](http://img.youtube.com/vi/9FjxnEoH5wg?start=134&end=436/0.jpg)](http://www.youtube.com/watch?v=9FjxnEoH5wg?start=134&end=436)
+[![AWS Videos](https://img.youtube.com/vi/9FjxnEoH5wg?start=134&end=436/0.jpg)](https://www.youtube.com/watch?v=9FjxnEoH5wg?start=134&end=436)
 
 ## Understand
 <a name="understand"></a>
@@ -33,7 +33,7 @@ Moving applications and data from on-premises infrastructure to AWS involves a s
 
 It starts with a phase of assessment and mobilization, where you [build a business case for migrating to the cloud](https://d1.awsstatic.com/AWS_Navigating_the_Cloud_Migration_and_Modernization_Executive_Guidance.pdf).
 
-![Diagram showing AWS data migration services](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/migration-approach.png)
+![Diagram showing AWS data migration services](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/migration-approach.png)
 
 An assessment takes a snapshot of your current on-premises footprint to fine-tune licensing, view server and application dependencies, and deliver recommendations for migration and modernization scenarios.
 

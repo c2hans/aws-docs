@@ -11,7 +11,7 @@ Follow the step-by-step instructions in this section to configure and deploy the
 
 1. Sign in to the AWS Management Console and select the button to launch the account-assessment-for-aws-organizations-spoke.template CloudFormation template.
 
-    [![Launch Stack](http://docs.aws.amazon.com/solutions/latest/account-assessment-for-aws-organizations/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?templateURL=https://solutions-reference.s3.amazonaws.com/account-assessment-for-aws-organizations/latest/account-assessment-for-aws-organizations-spoke.template&redirectId=ImplementationGuide)
+    [![Launch Stack](https://docs.aws.amazon.com/solutions/latest/account-assessment-for-aws-organizations/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?templateURL=https://solutions-reference.s3.amazonaws.com/account-assessment-for-aws-organizations/latest/account-assessment-for-aws-organizations-spoke.template&redirectId=ImplementationGuide)
 
 1. Launch in the same region as the Hub stack.
 

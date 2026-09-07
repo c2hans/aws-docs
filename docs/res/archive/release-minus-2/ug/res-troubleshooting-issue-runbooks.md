@@ -130,7 +130,7 @@ The most probable cause of this issue is the inability of resource(s) to connect
 
 If the status is inactive, failed, or you see errors in the logs, then the instance was unable to join Active Directory.
 
-![SSM error log](http://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/instancecyclingssmerrors.png)
+![SSM error log](https://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/instancecyclingssmerrors.png)
 
 **To solve the issue:**
 + From the same command line instance, run `cat /root/bootstrap/logs/userdata.log` to investigate the logs.
@@ -357,7 +357,7 @@ This issue occurs when your SSO integration is misconfigured. To determine the i
 1. Choose **Run**.
 
 1. In the returned string, verify that the SSO configuration values are correct. If they are incorrect, change the value of the sso\_enabled key to **False**.
-![The DynamoDB console with the Edit item screen for the sso_enabled key value.](http://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-editssoenabledkeyvalue.png)
+![The DynamoDB console with the Edit item screen for the sso_enabled key value.](https://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-editssoenabledkeyvalue.png)
 
 1. Return to the RES user interface to reconfigure the SSO.
 
@@ -493,7 +493,7 @@ sudo chmod 770 /{{<project-name>}}
 
 Share Permissions can be configured using the share properties of a particular folder. For example, given a user `user_01` and a folder `myfolder`, you can set permissions of `Full Control`, `Change`, or `Read` to `Allow` or `Deny`:
 
-![Share permissions can be set to Allow or Deny for Full Control, Change, or Read](http://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-permissions-for-documents-dialog.png)
+![Share permissions can be set to Allow or Deny for Full Control, Change, or Read](https://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-permissions-for-documents-dialog.png)
 
 If the volume is going to be used by both Linux and Windows clients we need to set up a name mapping on SVM that will associate any Linux user name to the same user name with the NetBIOS domain name format of domain\\username. This is needed to translate between Linux and Windows users. For reference see [ Enabling multiprotocol workloads with Amazon FSx for NetApp ONTAP](https://aws.amazon.com/blogs/storage/enabling-multiprotocol-workloads-with-amazon-fsx-for-netapp-ontap/).
 
@@ -582,7 +582,7 @@ Another method is check the load balancers in the system. An indication that the
 
 An example of a normal appearance is shown here:
 
-![ec2 load balancers dashboard](http://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-ec2-load-balancers.png)
+![ec2 load balancers dashboard](https://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-ec2-load-balancers.png)
 
 If the Healthy entry is 0, that indicates that no Amazon EC2 instance is available to process requests.
 
@@ -615,7 +615,7 @@ When you launch or resume a large number of VDIs in batch, they may end up in th
 
 To get around this issue, you can change the maximum read / write capacity units of the `{{environment-name}}.vdc.dcv-broker.dcvServer` table in the AWS DynamoDB console based on the historical capacity usage data as shown here:
 
-![the edit read write capacity settings page with provisioned selected](http://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-edit-read-write-capacity.png)
+![the edit read write capacity settings page with provisioned selected](https://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-edit-read-write-capacity.png)
 
 Note that launching 5 VDIs requires about 1 WCU of write operations and changing the read / write capacity units may impact your cost on RES. Please check [Pricing for Provisioned Capacity](https://aws.amazon.com/dynamodb/pricing/provisioned/) on the *Amazon DynamoDB pricing page*for more details.
 
@@ -888,7 +888,7 @@ Check the tags on the Amazon EC2 instance and confirm that they match the above 
 
 If the eVDI module is failing it’s health check, it will show the following in the Environment Status section.
 
-![an example of the environment modules and status dashboard](http://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-environment-modules-status.png)
+![an example of the environment modules and status dashboard](https://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-environment-modules-status.png)
 
 In this case, the general path for debugging is to look into the **cluster-manager** [CloudWatch](https://console.aws.amazon.com/cloudwatch/home#logsV2:log-groups) logs. (Look for the log group named `<env-name>/cluster-manager`.)
 
@@ -942,7 +942,7 @@ The reason it is not able to get to the user account may be that RES was not con
 ### Windows desktop on login attempt says "Your account has been disabled. Please see your administrator"
 <a name="res-troubleshooting-vd-component-acct-disabled"></a>
 
-![account disabled error screen](http://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-disabled-account.png)
+![account disabled error screen](https://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-disabled-account.png)
 
 If the user is unable to log back in to a locked screen, this may indicate that the user has been disabled in the AD configured for RES after having successfully signed on via SSO.
 
@@ -972,7 +972,7 @@ If you are using an AD domain controller for your DHCP Options for your own VPC,
 
 A example is shown here. Without this configuration, the Windows desktop will give you **Transport error** , because RES/DCV looks for ip-10-0-x-xx.ec2.internal hostname.
 
-![domain name and domain name servers example](http://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-domain-name-and-servers.png)
+![domain name and domain name servers example](https://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-domain-name-and-servers.png)
 
 ........................
 
@@ -1007,23 +1007,23 @@ If you notice that the "res-xxx-cluster" stack is in "DELETE\_FAILED" state and 
 
 If you see the stack in a "DELETE\_FAILED" state, first try to manually delete it. It may pop up a dialog confirming Delete Stack. Choose **Delete**.
 
-![delete stack confirmation popup screen](http://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-delete-stack-popup.png)
+![delete stack confirmation popup screen](https://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-delete-stack-popup.png)
 
 Sometimes, even if you delete all the required stack resources, you may still see the message to select resources to retain. In that case, select all the resources as the "resources to retain" and choose **Delete**.
 
 You may see an error that looks like `Role: arn:aws:iam::... is Invalid or cannot be assumed`
 
-![CloudFormation stacks window showing an error of an invalid role](http://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-cloudformation-stacks-error.png)
+![CloudFormation stacks window showing an error of an invalid role](https://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-cloudformation-stacks-error.png)
 
 This means that the role required to delete the stack got deleted first before the stack. To get around this, copy the name of the role. Go to IAM console and create a role with that name using the parameters as shown here, which are:
 + For **Trusted entity type** choose **AWS service**.
 + For **Use case**, under `Use cases for other AWS services` choose `CloudFormation`.
 
-![IAM Roles create role step 1 window lets you select the trusted entity](http://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-select-trusted-entity.png)
+![IAM Roles create role step 1 window lets you select the trusted entity](https://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-select-trusted-entity.png)
 
 Choose **Next**. Make sure you give the role '`AWSCloudFormationFullAccess`' and '`AdministratorAccess`' permissions. Your review page should look like this:
 
-![this IAM screen lets you name, review and create a role](http://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-iam-name-review-create-role.png)
+![this IAM screen lets you name, review and create a role](https://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-iam-name-review-create-role.png)
 
 Then go back to the CloudFormation console and delete the stack. You should now be able to delete it since you created the role. Finally, go to IAM console and delete the role you created.
 

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-ava
 # Option 1: Ingress to Avaya and egress to Amazon Lex
 <a name="option-1"></a>
 
-![Architecture diagram of ingress to Avaya and egress to Amazon Lex by using call transfers](http://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-avaya-to-connect-lex/images/guide-img/93ca74a8-da3b-48f9-a10f-4809a7f3384c/images/bc4c83c0-0c4d-489e-a376-8bf6d09f7053.png)
+![Architecture diagram of ingress to Avaya and egress to Amazon Lex by using call transfers](https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-avaya-to-connect-lex/images/guide-img/93ca74a8-da3b-48f9-a10f-4809a7f3384c/images/bc4c83c0-0c4d-489e-a376-8bf6d09f7053.png)
 
 1. A customer calls the on-premises Avaya contact center. Avaya greets the caller with the welcome menu and provides the caller with self-servicing menu options.
 

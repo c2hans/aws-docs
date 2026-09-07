@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-c
 
 CloudEndure Migration simplifies, expedites, and automates large-scale migrations to AWS. Continuous data replication takes place in the background, without application disruption or performance impact, which ensures that data is synchronized in real time and minimizes cutover windows. When you initiate migration cutover, CloudEndure runs a highly automated machine conversion and orchestration process, which reduces the potential for human error. After migration, even the most complex applications and databases run natively on AWS, without compatibility issues and with minimal IT skills necessary.  The following diagram illustrates the migration process.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-cloudendure/images/guide-img/bbb5871c-6fdf-4a96-872d-e22410dc477d/images/0c0a76d2-d326-4b6d-9e19-cd5f2a0e19da.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-cloudendure/images/guide-img/bbb5871c-6fdf-4a96-872d-e22410dc477d/images/0c0a76d2-d326-4b6d-9e19-cd5f2a0e19da.png)
 
 Benefits of using CloudEndure Migration include:
 + **Easy migration**  – You can run complex, large-scale migration projects rapidly, regardless of the application type, while significantly reducing risk.
@@ -26,4 +26,4 @@ Migrating your workloads by using CloudEndure Migration involves four phases of 
 
 These phases are illustrated in the following diagram and described in detail in the following sections.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-cloudendure/images/guide-img/bbb5871c-6fdf-4a96-872d-e22410dc477d/images/d54335cc-e4f5-4d9e-b1eb-9e1fc44bfad6.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-cloudendure/images/guide-img/bbb5871c-6fdf-4a96-872d-e22410dc477d/images/d54335cc-e4f5-4d9e-b1eb-9e1fc44bfad6.png)

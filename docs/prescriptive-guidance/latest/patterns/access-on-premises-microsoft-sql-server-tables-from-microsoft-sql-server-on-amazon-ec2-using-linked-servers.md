@@ -36,7 +36,7 @@ This pattern describes how to access on-premises Microsoft SQL Server database t
 
 **Source and target database architecture**
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8e4a3222-0850-4980-8028-c710dcdb9186/images/fa157992-0ed9-46e1-8059-0cbbb74a98ec.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8e4a3222-0850-4980-8028-c710dcdb9186/images/fa157992-0ed9-46e1-8059-0cbbb74a98ec.png)
 
 ## Tools
 <a name="access-on-premises-microsoft-sql-server-tables-from-microsoft-sql-server-on-amazon-ec2-using-linked-servers-tools"></a>

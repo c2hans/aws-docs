@@ -44,7 +44,7 @@ This pattern builds an architecture in which trade data is written from a tradin
 
 The following architecture diagram displays the AWS services and workflows for the risk assessment system.
 
-![VaR calculation system with AWS services](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/eb615fc5-3cc3-445a-af2c-8446ee7b5276/images/c60aec03-ff6c-410c-8ee8-f1f6efa22cf7.png)
+![VaR calculation system with AWS services](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/eb615fc5-3cc3-445a-af2c-8446ee7b5276/images/c60aec03-ff6c-410c-8ee8-f1f6efa22cf7.png)
 
 The diagram illustrates the following:
 

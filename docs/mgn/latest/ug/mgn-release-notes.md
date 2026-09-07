@@ -7,6 +7,10 @@ NEW - You can now accelerate your migration and modernization with AWS Transform
 # Release notes
 <a name="mgn-release-notes"></a>
 
+## September 2026
+<a name="release-notes-sep-2026"></a>
++ Added support for local snapshots in the Istanbul, Türkiye Local Zone (eu-central-1-ist-1a), with the Europe (Frankfurt) Region as its parent Region. For more information, see [Store snapshots in AWS Local Zone](replication-server-settings.md#local-zone-snapshots).
+
 ## August 2026
 <a name="release-notes-aug-2026"></a>
 + Amazon FSx for NetApp ONTAP support as a target storage type is now generally available. You can migrate block storage workloads directly to FSx for ONTAP as part of the same migration wave, without intermediate storage or separate migration tools. For setup instructions, see [FSx for ONTAP configuration](fsx-ontap.md).

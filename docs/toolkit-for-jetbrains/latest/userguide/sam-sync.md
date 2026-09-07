@@ -37,7 +37,7 @@ To learn more about changing your AWS region from the AWS Toolkit for JetBrains,
 1. From the `template.yaml` context menu, choose **Sync Serverless Application (formerly Deploy)** to open the **Confirm development stack** dialog.
 
 1. Confirm that you are working from a development stack to open the **Sync Serverless Application** dialog.
-![Confirm development stack dialog](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/sam-sync-dev-stack.png)
+![Confirm development stack dialog](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/sam-sync-dev-stack.png)
 
 1. Complete the steps in the **Sync Serverless Application** dialog, then choose **Sync** to begin the AWS SAM Sync process. To learn more about the **Sync Serverless Application** dialog, see the [Sync Serverless Application Dialog](#sam-sync-serverless-app-dialog) section located below.
 

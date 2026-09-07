@@ -36,7 +36,7 @@ This pattern provides the following automations and benefits:
 ## Architecture
 <a name="set-up-uipath-rpa-bots-automatically-on-amazon-ec2-by-using-aws-cloudformation-architecture"></a>
 
-![Target architecture for setting up RPA bots on Amazon EC2](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5555a62d-91d4-4e81-9961-ff89faedd6ad/images/1893d2d3-8912-4473-adf1-6633b5badcd9.png)
+![Target architecture for setting up RPA bots on Amazon EC2](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5555a62d-91d4-4e81-9961-ff89faedd6ad/images/1893d2d3-8912-4473-adf1-6633b5badcd9.png)
 
 1. The administrator provides the base Windows AMI in the `ec2-image-builder.yaml` file and deploys the stack in the CloudFormation console.
 

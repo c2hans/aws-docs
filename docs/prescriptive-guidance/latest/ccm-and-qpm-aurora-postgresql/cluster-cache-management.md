@@ -25,7 +25,7 @@ CCM synchronizes the cache from the writer DB instance to the preferred reader D
 
 The following diagram shows how CCM synchronizes the buffer cache of the writer DB instance with the preferred reader DB instance.
 
-![Cluster cache management configured between Aurora DB instances in different Availability Zones.](http://docs.aws.amazon.com/prescriptive-guidance/latest/ccm-and-qpm-aurora-postgresql/images/guide-img/cffef437-8218-4d17-8fd1-5311668dbe92/images/533e323b-b2a7-4560-b033-18034e76f15c.png)
+![Cluster cache management configured between Aurora DB instances in different Availability Zones.](https://docs.aws.amazon.com/prescriptive-guidance/latest/ccm-and-qpm-aurora-postgresql/images/guide-img/cffef437-8218-4d17-8fd1-5311668dbe92/images/533e323b-b2a7-4560-b033-18034e76f15c.png)
 
 For more information about CCM, see [Fast recovery after failover with cluster cache management for Aurora PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraPostgreSQL.cluster-cache-mgmt.html) (Aurora documentation) and [Introduction to Aurora PostgreSQL cluster cache management](https://aws.amazon.com/blogs/database/introduction-to-aurora-postgresql-cluster-cache-management/) (AWS blog post). For instructions about how to configure CCM, see [Configuring cluster cache management](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraPostgreSQL.cluster-cache-mgmt.html#AuroraPostgreSQL.cluster-cache-mgmt.Configure) (Aurora documentation).
 

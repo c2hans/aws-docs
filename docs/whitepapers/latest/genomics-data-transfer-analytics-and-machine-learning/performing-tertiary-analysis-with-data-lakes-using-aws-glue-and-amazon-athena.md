@@ -41,7 +41,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfe
 ## Reference architecture
 <a name="reference-architecture-2"></a>
 
-![Tertiary analysis with data lakes reference architecture](http://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfer-analytics-and-machine-learning/images/image4.png)
+![Tertiary analysis with data lakes reference architecture](https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfer-analytics-and-machine-learning/images/image4.png)
 
 1.  A CloudWatch Events triggers an ingestion workflow for variant or annotation files into the Amazon S3 genomics data lake.
 

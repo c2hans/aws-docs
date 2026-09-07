@@ -46,7 +46,7 @@ After you create the dashboard, you generate a data story that explains the insi
 
 The following diagram shows an architecture for generating business insights from mainframe data by using AWS Mainframe Modernization file transfer with BMC and Amazon Q in Quick Sight.
 
-![Architecture diagram description follows the diagram.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/53572abb-06c6-4dd7-add4-8fad7e9bfa68/images/6fe0f1d9-961c-4089-a746-e5b8d5fd6c1e.png)
+![Architecture diagram description follows the diagram.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/53572abb-06c6-4dd7-add4-8fad7e9bfa68/images/6fe0f1d9-961c-4089-a746-e5b8d5fd6c1e.png)
 
 The diagram shows the following workflow:
 
@@ -184,11 +184,11 @@ return {
 
 The following data visual was created by Amazon Q in Quick Sight for the analysis question `show member distribution by region`*.*
 
-![Chart showing numbers of members for southwest, midwest, northeast, and southeast.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/53572abb-06c6-4dd7-add4-8fad7e9bfa68/images/e5c1d049-407d-42ff-bc51-28f9d2b24d4f.png)
+![Chart showing numbers of members for southwest, midwest, northeast, and southeast.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/53572abb-06c6-4dd7-add4-8fad7e9bfa68/images/e5c1d049-407d-42ff-bc51-28f9d2b24d4f.png)
 
 The following data visual was created by Amazon Q in Quick Sight for the question `show member distribution by Region who have not completed preventive immunization, in pie chart`.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/53572abb-06c6-4dd7-add4-8fad7e9bfa68/images/47efa1c1-54c9-47cc-b668-416090021d34.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/53572abb-06c6-4dd7-add4-8fad7e9bfa68/images/47efa1c1-54c9-47cc-b668-416090021d34.png)
 
 **Data story output**
 
@@ -196,11 +196,11 @@ The following screenshots show sections of the data story created by Amazon Q in
 
 In the introduction, the data story recommends choosing the region with the most members to gain the greatest impact from immunization efforts.
 
-![Introduction page for data story focusing on immunization completion rates.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/53572abb-06c6-4dd7-add4-8fad7e9bfa68/images/4612fcc7-51fd-48a5-bc58-b6b0aa9b0ef3.png)
+![Introduction page for data story focusing on immunization completion rates.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/53572abb-06c6-4dd7-add4-8fad7e9bfa68/images/4612fcc7-51fd-48a5-bc58-b6b0aa9b0ef3.png)
 
 The data story provides an analysis of member numbers for the top three regions, and names the Southwest as the leading region for focusing on immunization efforts.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/53572abb-06c6-4dd7-add4-8fad7e9bfa68/images/30d3b56b-3b92-4748-9cef-a73ff9339fee.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/53572abb-06c6-4dd7-add4-8fad7e9bfa68/images/30d3b56b-3b92-4748-9cef-a73ff9339fee.png)
 
 **Note**
 The Southwest and Northeast regions each have eight members. However, the Southwest has more members that aren't fully vaccinated, so it has more potential to benefit from initiatives to increase immunization rates.

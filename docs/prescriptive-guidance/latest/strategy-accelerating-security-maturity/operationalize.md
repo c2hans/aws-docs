@@ -14,7 +14,7 @@ The [AWS Cloud Adoption Framework (AWS CAF)](https://docs.aws.amazon.com/whitepa
 
 The following image shows the six perspectives in the AWS CAF and the capabilities in each perspective. For more information, see [Foundational capabilities](https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/foundational-capabilities.html) in *An Overview of the AWS Cloud Adoption Framework*.
 
-![The six perspectives in AWS CAF and the perspectives in each.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-accelerating-security-maturity/images/guide-img/2162f372-44e6-4f4b-80cc-427f9fca7a33/images/dc28632c-7a07-422f-a3ad-07f2811f64ac.png)
+![The six perspectives in AWS CAF and the perspectives in each.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-accelerating-security-maturity/images/guide-img/2162f372-44e6-4f4b-80cc-427f9fca7a33/images/dc28632c-7a07-422f-a3ad-07f2811f64ac.png)
 
 ## Expected outcomes
 <a name="expected-outcomes"></a>

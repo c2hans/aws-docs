@@ -57,4 +57,4 @@ To address this issue, install a later release of JetBrains (2023.2.1 or newer).
 
 If Amazon Q Developer Code Transformation fails to start at sign in and you receive the following error message (see image below), you need to re-authenticate your credentials. Re-authenticate, then initiate Amazon Q Developer Code Transformation.
 
-![Transform failed error message indicating user is not authorized to make this call.](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/amazonqtransformfail2023.png)
+![Transform failed error message indicating user is not authorized to make this call.](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/amazonqtransformfail2023.png)

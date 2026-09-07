@@ -34,7 +34,7 @@ AWS Backup supports cross-Region and cross-account backup and restoration of dat
 
 **Target architecture **
 
-![Description of copying tables between backup vaults follows the diagram.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/ef6e7393-edb6-4744-be26-43f1cbff9de9/images/fa9f3f2f-7a01-4093-9bd5-fc355e57ba67.png)
+![Description of copying tables between backup vaults follows the diagram.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/ef6e7393-edb6-4744-be26-43f1cbff9de9/images/fa9f3f2f-7a01-4093-9bd5-fc355e57ba67.png)
 
 1. Create the DynamoDB table backup in the AWS Backup backup vault in the source account.
 

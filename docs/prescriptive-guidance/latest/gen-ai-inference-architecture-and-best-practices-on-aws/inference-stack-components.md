@@ -12,7 +12,7 @@ A production AI inference stack typically consists of the following three core c
 
 These components communicate through standardized protocols like [gRPC](https://grpc.io/about/) for reliable and efficient model serving. The following diagram shows the high-level architecture of a real-time inference workload. It showcases the core components and how they communicate with each other.
 
-![Architecture showing core components of production AI inference stack.](http://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-inference-architecture-and-best-practices-on-aws/images/guide-img/1e4a4636-9247-4346-9ab7-62170783f8a2/images/735c174b-b85d-4ef7-ad78-3e83ba821267.png)
+![Architecture showing core components of production AI inference stack.](https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-inference-architecture-and-best-practices-on-aws/images/guide-img/1e4a4636-9247-4346-9ab7-62170783f8a2/images/735c174b-b85d-4ef7-ad78-3e83ba821267.png)
 
 This section provides details about each component.
 

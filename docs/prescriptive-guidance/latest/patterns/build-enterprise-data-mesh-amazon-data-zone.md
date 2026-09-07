@@ -53,7 +53,7 @@ For information about the objectives of this pattern and the solution scope, see
 
 The following diagram shows a data mesh reference architecture. The architecture is based on Amazon DataZone and uses Amazon Simple Storage Service (Amazon S3) and AWS Glue Data Catalog as data sources. The AWS services that you use with Amazon DataZone in your data mesh implementation might differ, based on your organization's requirements.
 
-![Five step workflow for members accounts and central governance account.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/79056dd9-e669-4302-afb8-21e3e0e8a136/images/eacbffca-4f25-405a-a7c8-f89d0fee5682.png)
+![Five step workflow for members accounts and central governance account.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/79056dd9-e669-4302-afb8-21e3e0e8a136/images/eacbffca-4f25-405a-a7c8-f89d0fee5682.png)
 
 1. In the producer accounts, raw data is either fit for consumption in its current form or it’s transformed for consumption by using AWS Glue. The technical metadata for the data is stored in Amazon S3 and is evaluated using a AWS Glue data crawler. The data quality is measured by using [AWS Glue Data Quality](https://docs.aws.amazon.com/glue/latest/dg/glue-data-quality.html). The source database in the Data Catalog is registered as an asset in the Amazon DataZone catalog. The Amazon DataZone catalog is hosted in the central governance account using Amazon DataZone data source jobs.
 

@@ -26,7 +26,7 @@ You can choose from two primary compute platforms to run your containers on AWS:
 
 The following chart shows the difference for equivalent containers using Fargate versus Amazon EC2. Because of the flexibility of Fargate, tasks for an application can run 12 hours per day, with zero utilization during off hours. However, for Amazon ECS, you must control compute capacity by using an [Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/auto-scaling-groups.html) of EC2 instances. This can lead to capacity running 24 hours a day, which can ultimately increase costs.
 
-![Fargate monthly costs vs EC2 monthly costs](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/aa2ad113-7e74-45d3-b547-1974eb8f473c.png)
+![Fargate monthly costs vs EC2 monthly costs](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/aa2ad113-7e74-45d3-b547-1974eb8f473c.png)
 
 ## Cost optimization recommendations
 <a name="net-containerize-rec"></a>
@@ -42,7 +42,7 @@ Another benefit of moving to modern .NET (that is, away from the .NET Framework)
 
 The following diagram illustrates the decision-making process for exploring modernization opportunities.
 
-![Replatforming decision tree](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/bdfdad39-96e2-454f-a366-a53efa3ad2d4.png)
+![Replatforming decision tree](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/bdfdad39-96e2-454f-a366-a53efa3ad2d4.png)
 
 ### Take advantage of Savings Plans
 <a name="take-advantage-of-9999999999999999sps-.6405f365-7438-5374-8731-b782e44f3dc2"></a>
@@ -58,7 +58,7 @@ It's important to ensure that Fargate tasks are correctly sized to achieve the m
 
 The following diagram shows how Compute Optimizer generates recommendations for the optimal task and container size.
 
-![Compute Optimizer recommendations for task and container size](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/c98dbd1d-849a-4a2a-8b09-c550be6579d1.png)
+![Compute Optimizer recommendations for task and container size](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/c98dbd1d-849a-4a2a-8b09-c550be6579d1.png)
 
 One approach is to use a load testing tool, such as the one described in [Distributed Load Testing on AWS](https://aws.amazon.com/solutions/implementations/distributed-load-testing-on-aws/), to establish a baseline for vCPU and memory utilization. After you run the load test to simulate a typical application load, then you can fine-tune the vCPU and memory configuration for the task until the baseline utilization is achieved.
 

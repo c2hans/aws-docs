@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-l
 
 The following diagram shows the high-level steps involved when using Amazon S3 File Gateway to transfer the backup file for an on-premises database to an S3 bucket in the AWS Cloud.
 
-![Diagram showing the transfer of a database backup file to the cloud by using Amazon S3 File Gateway.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-large-mysql-mariadb-databases/images/guide-img/49694e39-c5ff-41ab-af3d-e68e9b6e3ab5/images/3fd3b0d9-2188-4395-be8e-9fa80a366302.png)
+![Diagram showing the transfer of a database backup file to the cloud by using Amazon S3 File Gateway.](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-large-mysql-mariadb-databases/images/guide-img/49694e39-c5ff-41ab-af3d-e68e9b6e3ab5/images/3fd3b0d9-2188-4395-be8e-9fa80a366302.png)
 
 The following are the steps for using Amazon S3 File Gateway to transfer a database backup file from an on-premises data center to an S3 bucket in the AWS Cloud:
 

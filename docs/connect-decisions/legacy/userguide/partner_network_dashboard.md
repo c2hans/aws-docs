@@ -49,7 +49,7 @@ You can invite or add new partners from the dataset into the AWS Supply Chain ne
 1. On the **Partner Network** page, choose **Invite partners**.
 
    The **Invite Partners** page appears.
-![Inviting partners from the dataset](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Invite_partners.png)
+![Inviting partners from the dataset](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Invite_partners.png)
 
 1. Under **Select partners to invite**, to add an existing partner, under **Partner name**, select the partner from the list.
 
@@ -62,7 +62,7 @@ You can invite or add new partners from the dataset into the AWS Supply Chain ne
 1. Choose **Continue**.
 
 1. On the **Review invite message**, choose **Add custom text** to add a customized message to the partner invite.
-![Custom email to partners](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/partner_email_customtext.png)
+![Custom email to partners](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/partner_email_customtext.png)
 
 1. Choose **Save content**.
 

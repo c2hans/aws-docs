@@ -72,4 +72,4 @@ The Acquisition report includes the following metrics:
 
 Below image is a sample dashboard for your reference.
 
-![Dashboard showing user metrics, traffic sources, and geographic data with graphs and charts.](http://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/sample-dash.png)
+![Dashboard showing user metrics, traffic sources, and geographic data with graphs and charts.](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/sample-dash.png)

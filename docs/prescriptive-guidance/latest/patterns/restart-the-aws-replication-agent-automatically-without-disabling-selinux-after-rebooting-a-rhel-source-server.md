@@ -33,7 +33,7 @@ This pattern describes how to automatically restart the AWS Replication Agent wi
 
 The following image shows the architecture for this approach.
 
-![Automatically restarting the AWS Replication Agent after a RHEL reboot](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/3257dc61-bdc0-439e-b008-c0a62dd223ef/images/cf064194-1a34-4bb7-bd0b-b36db2c67b9d.png)
+![Automatically restarting the AWS Replication Agent after a RHEL reboot](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/3257dc61-bdc0-439e-b008-c0a62dd223ef/images/cf064194-1a34-4bb7-bd0b-b36db2c67b9d.png)
 
 ## Tools
 <a name="restart-the-aws-replication-agent-automatically-without-disabling-selinux-after-rebooting-a-rhel-source-server-tools"></a>

@@ -35,13 +35,13 @@ The following deployment instructions apply to AWS China Regions only. For deplo
 1.  Enter the **Application Name**, and **Subdomain**.
 
 1.  Save the App ID (that is, `client_id`) and Issuer to a text file from Endpoint Information, which will be used later.
-![Endpoint Information table with App ID and Issuer fields highlighted with red boxes.](http://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/oidc-app-setting-1.png)
+![Endpoint Information table with App ID and Issuer fields highlighted with red boxes.](https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/oidc-app-setting-1.png)
 
 1.  Update the **Login Callback URL** and **Logout Callback URL** to your ICP recorded domain name.
-![Authentication Configuration form with Subdomain, Login Callback URL, and Logout Callback URL fields.](http://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/oidc-app-setting-2.png)
+![Authentication Configuration form with Subdomain, Login Callback URL, and Logout Callback URL fields.](https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/oidc-app-setting-2.png)
 
 1.  Set the Authorization Configuration.
-![Authorization flow set to authorization_code, return type set to code, and RS256 selected.](http://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/oidc-app-setting-3.png)
+![Authorization flow set to authorization_code, return type set to code, and RS256 selected.](https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/oidc-app-setting-3.png)
 
 1.  Update login control.
 
@@ -104,7 +104,7 @@ You are responsible for the cost of the AWS services used while running this Gui
 
 1. Sign in to the AWS Management Console and select the button to launch the `DataTransferHub-openid.template` AWS CloudFormation template. Alternatively, you can [download the template](https://s3.amazonaws.com/solutions-reference/data-transfer-hub/latest/DataTransferHub-openid.template) as a starting point for your own implementation.
 
-   [![Blue oval button with white text reading "Launch solution".](http://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/launch-solution.png)](https://console.amazonaws.cn/cloudformation/home#/stacks/create/template?stackName=DataTransferHub&templateURL=https://s3.amazonaws.com/solutions-reference/data-transfer-hub/latest/DataTransferHub-openid.template)
+   [![Blue oval button with white text reading "Launch solution".](https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/launch-solution.png)](https://console.amazonaws.cn/cloudformation/home#/stacks/create/template?stackName=DataTransferHub&templateURL=https://s3.amazonaws.com/solutions-reference/data-transfer-hub/latest/DataTransferHub-openid.template)
 
 1.  The template launches in your console’s default Region. To launch the Guidance in a different AWS Region, use the Region selector in the console navigation bar.
 

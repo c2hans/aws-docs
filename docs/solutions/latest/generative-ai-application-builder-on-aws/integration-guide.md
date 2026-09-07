@@ -78,7 +78,7 @@ Out of the box, the solution comes pre-configured with the following Strands too
 
  **MCP Server and Tools selection in the Agent Builder wizard showing built-in Strands tools**
 
-![builtin strands tools](http://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/builtin-strands-tools.png)
+![builtin strands tools](https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/builtin-strands-tools.png)
 
 To extend your agents with additional Strands tools, follow the four-step process outlined in this section.
 
@@ -130,7 +130,7 @@ For example:
 
  **Advanced model parameters section showing ENV\_RETRIEVE\_KNOWLEDGE\_BASE\_ID configuration**
 
-![model parameters env vars](http://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/model-parameters-env-vars.png)
+![model parameters env vars](https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/model-parameters-env-vars.png)
 
 Refer to the specific tool’s documentation or source code to identify required environment variables. For the retrieve tool, you can find configuration options in the [source code](https://github.com/strands-agents/tools/blob/main/src/strands_tools/retrieve.py#L293).
 
@@ -157,7 +157,7 @@ For example, to use the retrieve tool with Amazon Bedrock Knowledge Bases:
 
  **IAM console showing the StrandsRetrieveToolKBAccess policy attached to the AgentCore Runtime execution role**
 
-![agent execution role update IAM](http://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/agent-execution-role-update-IAM.png)
+![agent execution role update IAM](https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/agent-execution-role-update-IAM.png)
 
 The specific permissions required will vary based on the tool. Consult the tool’s documentation and AWS service documentation to determine the appropriate IAM permissions.
 
@@ -168,7 +168,7 @@ After completing the configuration steps, test your agent to verify the tool is 
 
  **Agent successfully using the retrieve tool to answer a question about skate parks**
 
-![strands retrieve tool example](http://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/strands-retrieve-tool-example.png)
+![strands retrieve tool example](https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/strands-retrieve-tool-example.png)
 
 **Note**
 For a complete list of available Strands tools and their capabilities, refer to the [Strands Community Tools documentation](https://strandsagents.com/latest/documentation/docs/user-guide/concepts/tools/community-tools-package/).

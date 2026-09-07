@@ -24,6 +24,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-o
 
  Elastic Beanstalk makes it easy for web applications to be quickly deployed and managed in AWS. The following example shows a general use case for Elastic Beanstalk as it is used to deploy a simple web application. All application infrastructure (including security groups, IAM roles, and CloudWatch alarms) is created and managed by Elastic Beanstalk. The Amazon EC2 instances are automatically provisioned with runtime environment and deployment packages. Elastic Beanstalk environments can integrate with resources like Amazon Relational Database Service (Amazon RDS) that are created outside of Elastic Beanstalk.
 
-![Architecture diagram showing Elastic Beanstalk connecting to load balancer in public subnet and EC2 with RDS in private subnet.](http://docs.aws.amazon.com/whitepapers/latest/overview-deployment-options/images/image3.png)
+![Architecture diagram showing Elastic Beanstalk connecting to load balancer in public subnet and EC2 with RDS in private subnet.](https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-options/images/image3.png)
 
 * AWS Elastic Beanstalk use case *

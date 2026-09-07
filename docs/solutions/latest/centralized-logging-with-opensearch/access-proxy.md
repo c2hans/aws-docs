@@ -9,7 +9,7 @@ Centralized Logging with OpenSearch creates an [Auto Scaling group](https://docs
 
  **Centralized Logging with OpenSearch creates an Auto Scaling group together with an Application Load Balancer.**
 
-![image15](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image15.png)
+![image15](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image15.png)
 
 The workflow is as follows:
 

@@ -43,7 +43,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/se
 
 The following image shows the target architecture for this pattern. When an event or action occurs that initiates a notification or alert regarding the database instance, Amazon RDS for SQL Server uses Database Mail to send an email notification. Database Mail uses the on-premises SMTP server to send the email.
 
-![Amazon RDS for SQL server using an on-premises SMTP server to send email notifications to users.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e5599724-43cf-4fe1-8c5a-8fca1a424993/images/47efb12f-3505-4a60-ac43-194a176e71c8.png)
+![Amazon RDS for SQL server using an on-premises SMTP server to send email notifications to users.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e5599724-43cf-4fe1-8c5a-8fca1a424993/images/47efb12f-3505-4a60-ac43-194a176e71c8.png)
 
 ## Tools
 <a name="send-notifications-for-an-amazon-rds-for-sql-server-database-instance-by-using-an-on-premises-smtp-server-and-database-mail-tools"></a>

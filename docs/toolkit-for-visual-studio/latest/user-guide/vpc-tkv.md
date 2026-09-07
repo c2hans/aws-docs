@@ -28,7 +28,7 @@ For more information about network address translation (NAT), go to [NAT Instanc
  **To create a public-private subnet VPC**
 
 1. In the **Amazon VPC** node in AWS Explorer, open the **VPCs** subnode, then choose **Create VPC**.
-![AWS Explorer navigation tree with Amazon VPC expanded showing VPCs subnode selected.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/vpc-vpcs-aws-explorer.png)
+![AWS Explorer navigation tree with Amazon VPC expanded showing VPCs subnode selected.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/vpc-vpcs-aws-explorer.png)
 
 1. Configure the VPC as follows:
    + Type a name for your VPC.
@@ -40,17 +40,17 @@ For more information about network address translation (NAT), go to [NAT Instanc
    Type a name for your VPC. Select the **With Public Subnet** and the **With Private Subnet** check boxes. From the **Availability Zone** drop-down list box for each subnet, choose an Availability Zone. Be sure to use the same AZ for both subnets. For the private subnet, in **NAT Key Pair Name**, provide a key pair. This key pair is used for the Amazon EC2 instance that performs network address translation from the private subnet to the public Internet. Select the **Configure default security group to allow traffic to NAT** check box.
 
    Choose **OK**.
-![Create VPC dialog box with configuration fields for VPC name, CIDR blocks, and subnets.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/vpc-create.png)
+![Create VPC dialog box with configuration fields for VPC name, CIDR blocks, and subnets.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/vpc-create.png)
 
 You can view the new VPC in the **VPCs** tab in AWS Explorer.
 
-![VPCs tab showing myDeploymentVPC with ID vpc-1a2b3c4d in available state with CIDR 10.0.0.0/16.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/vpc-created-display.png)
+![VPCs tab showing myDeploymentVPC with ID vpc-1a2b3c4d in available state with CIDR 10.0.0.0/16.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/vpc-created-display.png)
 
 The NAT instance might take a few minutes to launch. When it is available, you can view it by expanding the **Amazon EC2** node in AWS Explorer and then opening the **Instances** subnode.
 
 An Amazon Elastic Block Store (Amazon EBS) volume is created for the NAT instance automatically. For more information about Amazon EBS, see the [Amazon Elastic Block Store (EBS)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEBS.html) topic in the *Amazon EC2 User Guide for Linux Instances*.
 
-![EC2 instance console showing running NAT instance with attached EBS volume in us-west-2b.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/vpc-nat-instance.png)
+![EC2 instance console showing running NAT instance with attached EBS volume in us-west-2b.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/vpc-nat-instance.png)
 
 If you [deploy an application to an AWS Elastic Beanstalk environment](deployment-beanstalk.md#tkv-deploy-beanstalk) and choose to launch the environment in a VPC, the Toolkit will populate the **Publish to Amazon Web Services** dialog box with the configuration information for your VPC.
 
@@ -58,7 +58,7 @@ The Toolkit populates the dialog box with information only from VPCs that were c
 
 The following screenshot from the Deployment Wizard shows an example of a dialog box populated with values from a VPC created in the Toolkit.
 
-![Publish to AWS dialog box with EC2 configuration fields including VPC, subnet, and security settings.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/deploy-pb-aeb-vpc-from-tkv.png)
+![Publish to AWS dialog box with EC2 configuration fields including VPC, subnet, and security settings.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/deploy-pb-aeb-vpc-from-tkv.png)
 
  **To delete a VPC**
 
@@ -73,7 +73,7 @@ To delete the VPC, you must first terminate any Amazon EC2 instances in the VPC.
    You do not need to delete the Amazon EBS volume associated with the NAT instance in order to delete the VPC. However, if you do not delete the volume, you will continue to be charged for it even if you delete the NAT instance and the VPC.
 
 1. On the **VPC** tab, choose the **Delete** link to delete the VPC.
-![US West Oregon VPCs tab with Delete button highlighted next to myDeploymentVPC entry.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/vpc-delete-link.png)
+![US West Oregon VPCs tab with Delete button highlighted next to myDeploymentVPC entry.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/vpc-delete-link.png)
 
 1. In the **Delete VPC** dialog box, choose **OK**.
-![Delete VPC dialog box listing associated objects to be deleted such as subnets and route tables.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/vpc-delete.png)
+![Delete VPC dialog box listing associated objects to be deleted such as subnets and route tables.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/vpc-delete.png)

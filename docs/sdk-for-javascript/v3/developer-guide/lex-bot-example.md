@@ -9,15 +9,15 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/le
 
 You can create an Amazon Lex chatbot within a web application to engage your web site visitors. An Amazon Lex chatbot is functionality that performs on-line chat conversation with users without providing direct contact with a person. For example, the following illustration shows an Amazon Lex chatbot that engages a user about booking a hotel room.
 
-![Chatbot interface demonstrating a hotel booking conversation with user inputs and bot responses.](http://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/lex_example/chatintro.png)
+![Chatbot interface demonstrating a hotel booking conversation with user inputs and bot responses.](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/lex_example/chatintro.png)
 
 The Amazon Lex chatbot created in this AWS tutorial is able to handle multiple languages. For example, a user who speaks French can enter French text and get back a response in French.
 
-![Chatbot interface demonstrating Amazon Lex integration with French language support.](http://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/lex_example/LanChatBot2.png)
+![Chatbot interface demonstrating Amazon Lex integration with French language support.](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/lex_example/LanChatBot2.png)
 
 Likewise, a user can communicate with the Amazon Lex chatbot in Italian.
 
-![Chatbot interface showing Italian conversation with user message on left and bot response on right.](http://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/lex_example/LanChatBot3.png)
+![Chatbot interface showing Italian conversation with user message on left and bot response on right.](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/lex_example/LanChatBot3.png)
 
 This AWS tutorial guides you through creating an Amazon Lex chatbot and integrating it into a Node.js web application. The AWS SDK for JavaScript (v3) is used to invoke these AWS services:
 + Amazon Lex
@@ -99,10 +99,10 @@ The first step is to create an Amazon Lex chatbot by using the Amazon Web Servic
 + Sign in to the Amazon Web Services Management Console and open the Amazon Lex console at [Amazon Web Services Console](https://console.aws.amazon.com/lex/).
 + On the Bots page, choose **Create**.
 + Choose **BookTrip** blueprint (leave the default bot name **BookTrip**).
-![BookTrip sample bot selected with bot name field showing BookTrip as the default name.](http://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/lex_example/pic2.png)
+![BookTrip sample bot selected with bot name field showing BookTrip as the default name.](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/lex_example/pic2.png)
 + Fill in the default settings and choose **Create** (the console shows the **BookTrip** bot). On the Editor tab, review the details of the preconfigured intents.
 + Test the bot in the test window. Start the test by typing *I want to book a hotel room*.
-![Chat interface showing user message about booking hotel room and bot response asking for city.](http://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/lex_example/ChatBotTest.png)
+![Chat interface showing user message about booking hotel room and bot response asking for city.](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/lex_example/ChatBotTest.png)
 + Choose **Publish** and specify an alias name (you will need this value when using the AWS SDK for JavaScript).
 
 **Note**

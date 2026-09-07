@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framewor
 
  Based on our experience, we found the companies building SaaS solutions on AWS fall naturally into four different types. Not all companies fit perfectly into one category and your company can be a blend of a few profiles. The following is a list of hypothetical profiles that represent the typical starting points for companies moving to SaaS:
 
-![Diagram showing icons for the hypothetical company profiles discussed in the paper.](http://docs.aws.amazon.com/whitepapers/latest/saas-journey-framework/images/hypothetical-company-profiles.png)
+![Diagram showing icons for the hypothetical company profiles discussed in the paper.](https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framework/images/hypothetical-company-profiles.png)
 
  **ToeDipper Software**
 
@@ -31,4 +31,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framewor
 
  Figure 3 visualizes the SaaS objectives of each company profile upon the following criteria: Time to Market and Business Goal
 
-![Diagram plotting the company profile objectives for the hypothetical companies.](http://docs.aws.amazon.com/whitepapers/latest/saas-journey-framework/images/company-profile-objectives.png)
+![Diagram plotting the company profile objectives for the hypothetical companies.](https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framework/images/company-profile-objectives.png)

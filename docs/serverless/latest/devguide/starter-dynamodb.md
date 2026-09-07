@@ -16,11 +16,11 @@ Amazon DynamoDB is a fully managed serverless NoSQL database service. DynamoDB s
 
 Data access is generally predictable and fast, in the millisecond (ms) range. If you need even faster response time, the DynamoDB Accelerator (DAX) provides in-memory acceleration for microsecond level access to data.
 
- ![DynamoDB icon connects with an arrow to a Table Icon, which has arrows to three Item Icons, which each have 1-2 connections to Attribute icons. A DAX icon connects to the table with an arrow that has microseconds on the connector, rather than milliseconds as ms on the normal connector. Placed above the Table icon is text for Primary Key with a bracket to Partition Key and Sort Key text (in italics)](http://docs.aws.amazon.com/serverless/latest/devguide/images/s_dynamodb/starter-dynamodb.png)
+ ![DynamoDB icon connects with an arrow to a Table Icon, which has arrows to three Item Icons, which each have 1-2 connections to Attribute icons. A DAX icon connects to the table with an arrow that has microseconds on the connector, rather than milliseconds as ms on the normal connector. Placed above the Table icon is text for Primary Key with a bracket to Partition Key and Sort Key text (in italics)](https://docs.aws.amazon.com/serverless/latest/devguide/images/s_dynamodb/starter-dynamodb.png)
 
 Traditional web frameworks maintain persistent network connections to SQL databases with *connection pools *to avoid latency accessing data. With serverless architecture and DynamoDB, connection pools are **not** necessary to rapidly connect and scale the database. Instead, you can adjust your tables' throughput capacity, as needed.
 
- ![Diagram showing persistent network connections for a relational database and transient Request and Responses for DynamoDB in the cloud](http://docs.aws.amazon.com/serverless/latest/devguide/images/s_dynamodb/SQLtoNoSQL.png)
+ ![Diagram showing persistent network connections for a relational database and transient Request and Responses for DynamoDB in the cloud](https://docs.aws.amazon.com/serverless/latest/devguide/images/s_dynamodb/SQLtoNoSQL.png)
 
 For rapid local development, modeling, and testing, AWS provides a downloadable version of DynamoDB that you can run on your computer. The local database instance provides the same API as the cloud-based service.
 
@@ -51,7 +51,7 @@ Watch an AWS Developer Advocate explain these core concepts in this video: [Tabl
 
 As mentioned in the video, the primary key for the following table consists of both a partition key and sort key. The sort keys “inventory::armor” and “inventory::weapons” contain double colons to add query flexibility to get all inventory. This is not a DynamoDB requirements, just a convention by the developer to make retrieval more flexible.
 
- ![represents inventory and login-data items with attributes in JSON for a table](http://docs.aws.amazon.com/serverless/latest/devguide/images/s_dynamodb/dynamodb-pk-sk.png)
+ ![represents inventory and login-data items with attributes in JSON for a table](https://docs.aws.amazon.com/serverless/latest/devguide/images/s_dynamodb/dynamodb-pk-sk.png)
 
 All of the data for account1234 will be stored in the same database partition to ensure retrieval of related data is quick.
 
@@ -122,7 +122,7 @@ You can do a lot just creating a DynamoDB table with a primary key. As you progr
 
 NoSQL Workbench is a cross-platform visual application that provides data modeling, data visualization, and query development features to help you design, create, query, and manage DynamoDB tables.
 
- ![Hexagonal blue icon with database towers in the background, cloud with lightning in the mid-ground, and a dynamo generator in the foreground. Under is text for NoSQL Workbench for Amazon DynamoDB](http://docs.aws.amazon.com/serverless/latest/devguide/images/s_dynamodb/NoSQLWorkbench-337x400.png)
+ ![Hexagonal blue icon with database towers in the background, cloud with lightning in the mid-ground, and a dynamo generator in the foreground. Under is text for NoSQL Workbench for Amazon DynamoDB](https://docs.aws.amazon.com/serverless/latest/devguide/images/s_dynamodb/NoSQLWorkbench-337x400.png)
 + **Data modeling** - build new data models, or design models based on existing data models.
 + **Data visualization **- map queries and visualize the access patterns (facets) of the application without writing code. Every facet corresponds to a different access pattern in DynamoDB. You can manually add data to your data model.
 + **Operation builder** - use the *operation builder* to develop and test queries, and query live datasets. You can also build and perform data plane operations, including creating projection and condition expressions, and generating sample code in multiple languages.
@@ -138,7 +138,7 @@ Related resources:
 
 DynamoDB Streams is an optional feature that captures data modification events. The data about these events appear in the stream in near-real time, and in the order that the events occurred, as a *stream record*.
 
- ![Diagram showing a block for your application, with three two-way connections to an AWS SDK block that contains a DynamoDB Web API and DynamoDB Streams Web API which connect to DynamoDB and DynamoDB Stream icons, respectively. The streams icon has a series of rectangular blocks extending out the right side of the icon.](http://docs.aws.amazon.com/serverless/latest/devguide/images/s_dynamodb/dynamodb-streams.png)
+ ![Diagram showing a block for your application, with three two-way connections to an AWS SDK block that contains a DynamoDB Web API and DynamoDB Streams Web API which connect to DynamoDB and DynamoDB Stream icons, respectively. The streams icon has a series of rectangular blocks extending out the right side of the icon.](https://docs.aws.amazon.com/serverless/latest/devguide/images/s_dynamodb/dynamodb-streams.png)
 
 If you enable a stream on a table, DynamoDB Streams writes a stream record whenever one of the following events occurs:
 + A new item is added to the table: the stream captures an image of the entire item, including all of its attributes.
@@ -204,4 +204,4 @@ In parallel to this guide, a group of Amazon engineers are building a series of 
 **Learn serverless techniques in an online workshop**
 Learn by doing in the **[Serverless Patterns Workshop](https://catalog.workshops.aws/serverless-patterns)**. The first module introduces a serverless microservice to retrieve data from DynamoDB with Lambda and API Gateway.
  Additional modules provide practical examples using infrastructure as code to deploy resources, test, and build with common architectural patterns used in serverless solutions.
- ![Architecture diagram for a REST microservice. Client icon connects through an arrow to REST API resource icon with API Gateway service icon placed above it. REST API is connected by a double arrow to Lambda function resource icon with Permissions Policy resource icon placed above it, and Lambda service icon placed above both. Lambda function resource is connected through an arrow pointing to Users Table resource with DynamoDB service icon placed above it. Dotted boxes enclose each of the services.](http://docs.aws.amazon.com/serverless/latest/devguide/images/workshop-m1-infra-complete.png)
+ ![Architecture diagram for a REST microservice. Client icon connects through an arrow to REST API resource icon with API Gateway service icon placed above it. REST API is connected by a double arrow to Lambda function resource icon with Permissions Policy resource icon placed above it, and Lambda service icon placed above both. Lambda function resource is connected through an arrow pointing to Users Table resource with DynamoDB service icon placed above it. Dotted boxes enclose each of the services.](https://docs.aws.amazon.com/serverless/latest/devguide/images/workshop-m1-infra-complete.png)

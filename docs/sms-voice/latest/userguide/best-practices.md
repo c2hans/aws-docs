@@ -114,7 +114,7 @@ If you don't have publicly accessible links to your Terms and Conditions and Pri
 
 The following example complies with the mobile carriers’ requirements for a multi-factor authentication use case.
 
-![Showing the workflow for multi-factor authentication.](http://docs.aws.amazon.com/sms-voice/latest/userguide/images/best-practices-usecase.png)
+![Showing the workflow for multi-factor authentication.](https://docs.aws.amazon.com/sms-voice/latest/userguide/images/best-practices-usecase.png)
 
 It contains finalized text and images, and it shows the entire opt-in flow, complete with annotations. In the opt-in flow, the customer must take distinct, intentional actions to provide their consent to receive text messages and contains all of the required disclosures.
 

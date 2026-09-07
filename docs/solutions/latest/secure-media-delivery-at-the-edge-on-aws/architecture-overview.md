@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 
  Deploying the Secure Media Delivery at the Edge on AWS solution in an existing environment with Amazon CloudFront and Media Origin service creates a number of resources. These resources play different roles and can be grouped into three functional modules as shown in the following reference architecture diagram.
 
-![Secure Media Delivery at the Edge on AWS architecture diagram](http://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/image2.png)
+![Secure Media Delivery at the Edge on AWS architecture diagram](https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/image2.png)
 
  **Base module**
 

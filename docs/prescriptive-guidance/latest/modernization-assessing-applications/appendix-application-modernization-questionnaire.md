@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 
 Use the questionnaire in this section as a starting point to gather information for the modernization assessment and planning phases of your project. You can [download this questionnaire](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-oracle-database/samples/oracle-database-migration.questionnaire.zip) in Microsoft Excel format and use it to record your information.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-assessing-applications/images/guide-img/320c9883-1671-4e97-a48a-f1a158592267/images/f891145c-afc8-47e1-80f4-2395e2251f88.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-assessing-applications/images/guide-img/320c9883-1671-4e97-a48a-f1a158592267/images/f891145c-afc8-47e1-80f4-2395e2251f88.png)
 
 [Download questionnaire](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-assessing-applications/samples/application-modernization-questionnaire.zip)
 

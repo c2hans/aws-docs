@@ -51,7 +51,7 @@ For a current list of supported versions and editions, see [Oracle on Amazon RDS
 **Target technology stack using native Oracle tools **
 + Amazon RDS for Oracle running Oracle Database SE2
 
-![Three-step process for migrating from on-premises Oracle DB to Amazon RDS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a1b28050-9bab-4de6-b2a9-b97b3e5070bd/images/bf765c5b-4b12-4a8c-b27c-c5e0bd605dd1.png)
+![Three-step process for migrating from on-premises Oracle DB to Amazon RDS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a1b28050-9bab-4de6-b2a9-b97b3e5070bd/images/bf765c5b-4b12-4a8c-b27c-c5e0bd605dd1.png)
 
 1. Export data by using Oracle Data Pump.
 
@@ -63,7 +63,7 @@ For a current list of supported versions and editions, see [Oracle on Amazon RDS
 + Amazon RDS for Oracle running Oracle Database SE2
 + AWS DMS
 
-![Four-step process for migrating from on-premises Oracle DB to Amazon RDS using AWS DMS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a1b28050-9bab-4de6-b2a9-b97b3e5070bd/images/fef4eced-1acb-4303-baaa-5c1c29650935.png)
+![Four-step process for migrating from on-premises Oracle DB to Amazon RDS using AWS DMS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a1b28050-9bab-4de6-b2a9-b97b3e5070bd/images/fef4eced-1acb-4303-baaa-5c1c29650935.png)
 
 1. Export data by using Oracle Data Pump with FLASHBACK\_SCN.
 

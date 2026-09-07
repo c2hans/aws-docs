@@ -15,7 +15,7 @@ You can set values, configure the next steps, and apply conditions after the clo
 
 If you don't supply a closing response, or if none of the conditions evaluates to true, Amazon Lex V2 ends the conversation with your bot.
 
-![The Amazon Lex V2 console showing the options for closing response.](http://docs.aws.amazon.com/lexv2/latest/dg/images/response-closing.png)
+![The Amazon Lex V2 console showing the options for closing response.](https://docs.aws.amazon.com/lexv2/latest/dg/images/response-closing.png)
 
 **Note**
 On August 17, 2022, Amazon Lex V2 released a change to the way conversations are managed with the user. This change gives you more control over the path that the user takes through the conversation. For more information, see [Changes to conversation flows in Amazon Lex V2](understanding-new-flows.md). Bots created before August 17, 2022 do not support dialog code hook messages, setting values, configuring next steps, and adding conditions.

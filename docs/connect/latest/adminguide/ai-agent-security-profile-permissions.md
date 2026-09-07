@@ -111,7 +111,7 @@ For administrators who will configure AI Agents:
 1. Enable **AI Prompts - All Access**
 
 1. Enable **AI Guardrails - All Access**
-![Security profile page showing AI agent designer permissions including AI Agents, AI Prompts.](http://docs.aws.amazon.com/connect/latest/adminguide/images/SecurityProfile_cloudscape_ai_permissions.png)
+![Security profile page showing AI agent designer permissions including AI Agents, AI Prompts.](https://docs.aws.amazon.com/connect/latest/adminguide/images/SecurityProfile_cloudscape_ai_permissions.png)
 
 1. Expand **Channels and Flows**
 
@@ -120,7 +120,7 @@ For administrators who will configure AI Agents:
 1. Enable **Flows - All Access**
 
 1. Enable **Flow Modules - All Access** (if using flow modules as tools)
-![Security profile page showing Channels and Flows permissions including Bots, Flows, and Flow Modules with All Access enabled.](http://docs.aws.amazon.com/connect/latest/adminguide/images/SecurityProfile_cloudscape_channels_flows.png)
+![Security profile page showing Channels and Flows permissions including Bots, Flows, and Flow Modules with All Access enabled.](https://docs.aws.amazon.com/connect/latest/adminguide/images/SecurityProfile_cloudscape_channels_flows.png)
 
 ### Step 4: Save Changes
 <a name="step-4-save-changes"></a>

@@ -42,7 +42,7 @@ The most current DoD approved external PKI certificate trust chains can be downl
 1.  Choose all installed DoD root and intermediate certificates that are desired for export.
 
 1.  Under **Export**, choose **PEM**.
-![A screenshot showing exporting the root and intermediate certificates with InstallRoot.](http://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/workspaces-smartcard15.png)
+![A screenshot showing exporting the root and intermediate certificates with InstallRoot.](https://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/workspaces-smartcard15.png)
 
    * Export root and intermediate certificates with InstallRoot *
 

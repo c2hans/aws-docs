@@ -14,7 +14,7 @@ Earlier SAS platforms, such as SAS 9.4 and SAS Grid Manager, run on AWS, and use
 + Subscription-based pricing choices
 + Overall reduced cost
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migrating-sas-viya-to-the-aws-cloud/images/guide-img/6af091bd-620c-4ae4-9607-2e103616429a/images/02bd0352-0d13-4972-85ca-5aa93562e3dc.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migrating-sas-viya-to-the-aws-cloud/images/guide-img/6af091bd-620c-4ae4-9607-2e103616429a/images/02bd0352-0d13-4972-85ca-5aa93562e3dc.png)
 
 The SAS Viya architecture contains the following components:
 + AWS Site-to-Site VPN allows SAS users to securely connect from their on-premises network or branch office to SAS Viya deployed on a virtual private cloud (VPC).

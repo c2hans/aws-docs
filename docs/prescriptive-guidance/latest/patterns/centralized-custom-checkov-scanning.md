@@ -31,7 +31,7 @@ This pattern is designed to be deployed as a GitHub repository that contains a G
 
 The following diagram shows the **Reusable GitHub workflows repository** and **Custom Checkov policies repository** as separate icons. However, you can implement these repositories either as separate repositories or a single repository. The example code uses a single repository, with files for workflows (`.github/workflows`) and files for custom policies (`custom_policies` folder and the `.checkov.yml` config file) in the same repository.
 
-![GitHub Actions uses reusable GitHub workflow and custom Checkov policies to evaluate IaC.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6c0c941f-14f9-4569-92da-9f81ab3e525c/images/a1539ce5-0ee6-4af1-bd01-cafad0f71708.png)
+![GitHub Actions uses reusable GitHub workflow and custom Checkov policies to evaluate IaC.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6c0c941f-14f9-4569-92da-9f81ab3e525c/images/a1539ce5-0ee6-4af1-bd01-cafad0f71708.png)
 
 The diagram shows the following workflow:
 

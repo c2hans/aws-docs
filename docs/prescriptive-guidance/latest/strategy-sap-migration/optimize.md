@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sa
 # Optimize phase
 <a name="optimize"></a>
 
-![https://1a9zxhkqsj.execute-api.us-west-2.amazonaws.com/v1/contents/2072f727-3a0b-4e29-9a4f-baa84a3343bb/images/0e96f82b-8a60-4ec3-bd9d-5be57fa6d8ce.png](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sap-migration/images/guide-img/2072f727-3a0b-4e29-9a4f-baa84a3343bb/images/8a472bf2-e6c8-4bbf-bb74-a9ef5c68e8bc.png)
+![https://1a9zxhkqsj.execute-api.us-west-2.amazonaws.com/v1/contents/2072f727-3a0b-4e29-9a4f-baa84a3343bb/images/0e96f82b-8a60-4ec3-bd9d-5be57fa6d8ce.png](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sap-migration/images/guide-img/2072f727-3a0b-4e29-9a4f-baa84a3343bb/images/8a472bf2-e6c8-4bbf-bb74-a9ef5c68e8bc.png)
 
 The optimize phase covers continuous process improvements for the infrastructure and ensures that security compliance is met. It focuses on operations that target further infrastructure automation, system fine-tuning, and AWS best practices. In this phase, the project team verifies that the objectives set in the design documents (developed during the mobilize phase) have been achieved, and, if required, adjusts the parameters of the platform for the SAP workloads. If necessary, adjustments are made to maximize performance and business benefits while minimizing risks and costs. The final operations on the platform are set up, reports are generated, and the project closure documentation is signed off.
 

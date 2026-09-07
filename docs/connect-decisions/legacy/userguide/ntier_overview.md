@@ -10,4 +10,4 @@ You can user the n-tier dashboard to navigate through partner onboarding and col
 + **Purchase Orders** – Displays purchase orders and receive confirmations from your partners on quantities and delivery dates.
 + **Forecast Commits** – Displays component-level forecasts generated from a supply plan with your partners and supply commitments.
 
-![Partner network- N-Tier Visibility dashboard](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/n-tier-sustainability-overview.png)
+![Partner network- N-Tier Visibility dashboard](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/n-tier-sustainability-overview.png)

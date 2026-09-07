@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-
 
  Alternatively, customers may decide not to move personal data to the AWS Cloud and implement some techniques on their side to anonymize or obfuscate the data—whatever is needed to remove the portion of the data that may be considered to be personal data.
 
-![Transfer and store non-personal data in the AWS Cloud](http://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-to-address-personal-data-processing-requirements/images/no-personal-data-external.png)
+![Transfer and store non-personal data in the AWS Cloud](https://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-to-address-personal-data-processing-requirements/images/no-personal-data-external.png)
 
  Transfer and store non-personal data in the AWS Cloud
 

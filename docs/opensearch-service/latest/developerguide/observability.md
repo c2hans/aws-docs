@@ -25,7 +25,7 @@ Amazon OpenSearch Service differentiates itself in three key ways:
 + **Unified logs, traces, and metrics in OpenSearch UI** – Analyze all three signal types from a single observability workspace. Correlate a slow trace to its application logs, or overlay Prometheus metrics on your service dashboards.
 + **Purpose-driven query languages** – Use [Piped Processing Language (PPL)](https://observability.opensearch.org/docs/ppl/) for logs and traces, and PromQL for metrics. Each language is optimized for its signal type, giving you expressive querying without compromise.
 
-![Architecture diagram showing OpenTelemetry data flow from microservices through OTel Collector to OpenSearch Observability Stack components.](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/images/otel-sdk-service.png)
+![Architecture diagram showing OpenTelemetry data flow from microservices through OTel Collector to OpenSearch Observability Stack components.](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/images/otel-sdk-service.png)
 
 **Note**
 The observability features described in this section are available only in OpenSearch UI. They are not available in OpenSearch Dashboards. For new observability workloads, we recommend setting up an [Using OpenSearch UI in Amazon OpenSearch Service](application.md) with an observability workspace.

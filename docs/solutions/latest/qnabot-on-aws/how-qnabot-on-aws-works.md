@@ -19,13 +19,13 @@ The following figure illustrates a reference architecture for how QnABot on AWS 
 
  **Reference architecture for QnABot on AWS integrations with external components**
 
-![ref architecture integrations](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/ref-architecture-integrations.png)
+![ref architecture integrations](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/ref-architecture-integrations.png)
 
 The following figure illustrates how Amazon Lex and Amazon OpenSearch Service help power the QnABot on AWS guidance.
 
  **How Amazon Lex and Amazon OpenSearch Service help power the QnABot on AWS guidance.**
 
-![arch data flow](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/arch-data-flow.png)
+![arch data flow](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/arch-data-flow.png)
 
 Asking QnABot on AWS questions initiates the following processes:
 

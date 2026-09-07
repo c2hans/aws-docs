@@ -16,7 +16,7 @@ When an order is ready to be fulfilled, it publishes a message to a topic. The F
 
 Consider the case where a system receives a request from an end user to make a payment, as illustrated in the following diagram. In this case, multiple downstream systems need to know that the request was made so that various actions can be taken. When you use Amazon SNS, payments are published to an SNS topic, and Lambda functions subscribe to the topic to update the customer and sales databases. Additionally, an email subscription (which must be confirmed by the customer) sends an email confirmation to the customer by using a subscription filter.
 
-![Amazon SNS process flow for messaging in microservices.](http://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-integrating-microservices/images/guide-img/89e63ee3-ec0f-41b0-920f-39a1fbded9a6/images/2429a4e4-0bcd-402d-93c0-8892f63d6667.png)
+![Amazon SNS process flow for messaging in microservices.](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-integrating-microservices/images/guide-img/89e63ee3-ec0f-41b0-920f-39a1fbded9a6/images/2429a4e4-0bcd-402d-93c0-8892f63d6667.png)
 
 ## Guidance
 <a name="sns-guidance"></a>

@@ -25,7 +25,7 @@ Extensions published by AWS do not require activation. They are always available
 
  **To activate a third-party extension through the AWS Management Console or see what resources are available**
 
-![activate cfn extension](http://docs.aws.amazon.com/cdk/v2/guide/images/activate-cfn-extension.png)
+![activate cfn extension](https://docs.aws.amazon.com/cdk/v2/guide/images/activate-cfn-extension.png)
 
 1. Sign in to the AWS account in which you want to use the extension, then switch to the Region where you want to use it.
 

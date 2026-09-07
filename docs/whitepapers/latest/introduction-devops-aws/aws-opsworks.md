@@ -11,6 +11,6 @@ For added flexibility AWS OpsWorks has you define your application in configurab
 
 Application stacks are organized into architectural layers so that stacks can be maintained independently. Example layers could include web tier, application tier, and database tier. Out of the box, AWS OpsWorks also simplifies setting up [AWS Auto Scaling](https://aws.amazon.com/autoscaling/) groups and [Elastic Load Balancing](https://aws.amazon.com/elasticloadbalancing/) (ELB) load balancers, further illustrating the DevOps principle of automation. Just like AWS Elastic Beanstalk, AWS OpsWorks supports application versioning, continuous deployment, and infrastructure configuration management
 
-![A diagram depicting OpsWorks showing DevOps features and architecture.](http://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/images/aws-opworks.png)
+![A diagram depicting OpsWorks showing DevOps features and architecture.](https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/images/aws-opworks.png)
 
  AWS OpsWorks also supports the DevOps practices of monitoring and logging (covered in the next section). Monitoring support is provided by Amazon CloudWatch. All lifecycle events are logged, and a separate Chef log documents any Chef recipes that are run, along with any exceptions.

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 
 In the context of today's AI-powered platforms, microservice architectures, and event-driven systems, software agents can be defined by three interdependent principles that distinguish them from standard services or automation scripts: autonomy, asynchronicity, and agency. In the following illustration and in subsequent diagrams, the triangle represents these three pillars of modern software agents.
 
-![Three pillars of modern sofware agents: agency, autonomy, asynchronicity.](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-foundations/images/guide-img/bf0cde42-baef-4bee-8fff-ca482667d2b6/images/b911214a-d0f4-439d-9741-38ea4eae9813.png)
+![Three pillars of modern sofware agents: agency, autonomy, asynchronicity.](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-foundations/images/guide-img/bf0cde42-baef-4bee-8fff-ca482667d2b6/images/b911214a-d0f4-439d-9741-38ea4eae9813.png)
 
 ## Autonomy
 <a name="autonomy"></a>

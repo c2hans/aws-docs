@@ -53,7 +53,7 @@ This pattern covers how to accomplish a Db2 migration with a short outage window
 
 In the following diagram, Db2 on premises is running on `db2-server1` as the primary. It has two HADR standby targets. One standby target is on premises and is optional. The other standby target, `db2-ec2`, is on Amazon EC2. After the database is cut over to AWS, `db2-ec2` becomes the primary.
 
-![Workflow to migrate with a short outage window an on-premises Db2 by using Db2 HADR.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2db43e4b-f0ea-4a92-96da-4cafb7d3368b/images/5295420e-3cd8-4127-9a18-ade971c36339.png)
+![Workflow to migrate with a short outage window an on-premises Db2 by using Db2 HADR.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2db43e4b-f0ea-4a92-96da-4cafb7d3368b/images/5295420e-3cd8-4127-9a18-ade971c36339.png)
 
 1. Logs are streamed from the primary on-premises database to the standby on-premises database.
 

@@ -22,7 +22,7 @@ Containers provide a discrete reproducible compute environment for building soft
 
 This decision guide helps you get started and choose the right AWS container service for your modern application development.
 
-[![AWS Videos](http://img.youtube.com/vi/xpFI6Jkdnhc?start=177&end=382/0.jpg)](http://www.youtube.com/watch?v=xpFI6Jkdnhc?start=177&end=382)
+[![AWS Videos](https://img.youtube.com/vi/xpFI6Jkdnhc?start=177&end=382/0.jpg)](https://www.youtube.com/watch?v=xpFI6Jkdnhc?start=177&end=382)
 
 ## Understand
 <a name="understand"></a>
@@ -35,7 +35,7 @@ Containers offer a number of advantages for packaging, deploying, and running ap
 + **Isolation:** Improve security and reliability with containers' process-level isolation, with which applications running in separate containers cannot interfere with each other, improving security and reliability.
 + **Agility:** Reduce the time that it takes to bring new features or applications to market by quickly packaging and deploying applications.
 
-![Diagram showing the options available for running containers on AWS](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/container-options-on-aws.png)
+![Diagram showing the options available for running containers on AWS](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/container-options-on-aws.png)
 
 You can think about the universe of AWS container services in three distinct layers:
 + The **Compute capacity layer** is where your containers actually run. This layer consists of:

@@ -25,7 +25,7 @@ Amazon Chime SDK audio, video, and content use User Datagram Protocol (UDP) tran
 
 The following diagram shows a typical network with an application that runs the Amazon Chime SDK.
 
-![A network configured to run an Amazon Chime SDK application, with two-way communication between the SDK and a meeting.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/net-config-diagram.png)
+![A network configured to run an Amazon Chime SDK application, with two-way communication between the SDK and a meeting.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/net-config-diagram.png)
 
 The Amazon Chime SDK uses the following destinations and ports for media and signaling.
 

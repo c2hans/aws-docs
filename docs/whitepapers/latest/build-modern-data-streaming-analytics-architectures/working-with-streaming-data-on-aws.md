@@ -37,7 +37,7 @@ In addition, you can run other streaming data platforms such as Apache Flume, Ap
 
  The following diagram illustrates the various streaming services available on AWS.
 
-![A document depicting real-time streaming on AWS.](http://docs.aws.amazon.com/whitepapers/latest/build-modern-data-streaming-analytics-architectures/images/near-real-time-streaming.png)
+![A document depicting real-time streaming on AWS.](https://docs.aws.amazon.com/whitepapers/latest/build-modern-data-streaming-analytics-architectures/images/near-real-time-streaming.png)
 
 ## Amazon Kinesis Data Streams
 <a name="amazon-kinesis-data-streams"></a>

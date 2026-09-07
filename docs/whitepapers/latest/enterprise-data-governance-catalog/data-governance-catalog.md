@@ -25,7 +25,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/enterprise-data-gover
 
  The following diagram depicts how a data governance catalog can create a relationship between various business and non-business assets across an organization to drive business growth.
 
-![Diagram showing business relationships between organization assets](http://docs.aws.amazon.com/whitepapers/latest/enterprise-data-governance-catalog/images/business-relationships-between-assets.png)
+![Diagram showing business relationships between organization assets](https://docs.aws.amazon.com/whitepapers/latest/enterprise-data-governance-catalog/images/business-relationships-between-assets.png)
 
  The Data Catalog creates mature data governance processes and adds value to the organization across several dimensions, including data-driven business decisions. The Data Catalog provides measures and metrics around datasets to guide strategic business decisions that align with the organization’s objectives and initiatives.
 
@@ -50,7 +50,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/enterprise-data-gover
 
  These capabilities make it easier for stakeholders to get an absolute view of their business data, so they can take appropriate business actions.
 
-![Diagram showing Data Catalog core features and supported functions](http://docs.aws.amazon.com/whitepapers/latest/enterprise-data-governance-catalog/images/core-features.png)
+![Diagram showing Data Catalog core features and supported functions](https://docs.aws.amazon.com/whitepapers/latest/enterprise-data-governance-catalog/images/core-features.png)
 
 ## Data Catalog benefits for technical stakeholders
 <a name="data-catalog-benefits-for-technical-stakeholders"></a>
@@ -65,7 +65,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/enterprise-data-gover
 
  A data dictionary and business glossary establish a standard business definition and arrange it consistently across the datasets. With robust metadata as the core of the Data Catalog, many other features and functions are available for an organization’s technical stakeholders, as seen in the following diagram.
 
-![Diagram showing Data Catalog features and functions](http://docs.aws.amazon.com/whitepapers/latest/enterprise-data-governance-catalog/images/features-and-functions.png)
+![Diagram showing Data Catalog features and functions](https://docs.aws.amazon.com/whitepapers/latest/enterprise-data-governance-catalog/images/features-and-functions.png)
 
 +  The **business glossary** establishes standard business definitions to enable a common understanding of data across the organization. A business glossary ensures organizations speak the same language by clearing up ambiguity in business terminology.
 +  The **data dictionary** is a collection of the names, definitions, and attributes for data elements. The data dictionary defines conventions for the project and consistency throughout the dataset. Without a data dictionary, there’s a higher risk of losing crucial information in translation and transition of data. Using a data dictionary helps data users analyze the datasets with ease later on.

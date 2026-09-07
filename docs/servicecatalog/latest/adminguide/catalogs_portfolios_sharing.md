@@ -31,7 +31,7 @@ For more information about launch constraints and launch roles, see [AWS Service
 
 This video shows you how to share portfolios across accounts in AWS Service Catalog.
 
-[![AWS Videos](http://img.youtube.com/vi/BVSohYOppjk/0.jpg)](http://www.youtube.com/watch?v=BVSohYOppjk)
+[![AWS Videos](https://img.youtube.com/vi/BVSohYOppjk/0.jpg)](https://www.youtube.com/watch?v=BVSohYOppjk)
 
 **Note**
 You cannot re-share products from a portfolio that has been imported or shared.

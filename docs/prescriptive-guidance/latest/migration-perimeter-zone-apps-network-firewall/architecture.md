@@ -10,14 +10,14 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-p
 
 In many organizations, internet-facing applications are "walled off" in a perimeter zone that's separated from an on-premises environment. As the following diagram shows, the application traffic is routed to the perimeter zone through a firewall, and the applications in the perimeter zone are separated from other applications and the network by another firewall.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-perimeter-zone-apps-network-firewall/images/guide-img/e9c77201-9323-4f46-9aa2-8c71588f3ec4/images/80b5b03d-65e4-4ddd-a4d4-9af53bd5fff9.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-perimeter-zone-apps-network-firewall/images/guide-img/e9c77201-9323-4f46-9aa2-8c71588f3ec4/images/80b5b03d-65e4-4ddd-a4d4-9af53bd5fff9.png)
 
 ## Perimeter zone architecture based on Network Firewall
 <a name="perimeter-zone-applications-network-firewall"></a>
 
 The following diagram shows an example network architecture of a perimeter zone application in the AWS Cloud:
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-perimeter-zone-apps-network-firewall/images/guide-img/e9c77201-9323-4f46-9aa2-8c71588f3ec4/images/b4c5a0aa-4b81-4733-8c89-05e60219c305.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-perimeter-zone-apps-network-firewall/images/guide-img/e9c77201-9323-4f46-9aa2-8c71588f3ec4/images/b4c5a0aa-4b81-4733-8c89-05e60219c305.png)
 
 In the above network architecture example, the application is protected through the following mechanisms:
 + A web application firewall from Amazon CloudFront serves as the first layer of protection against attacks on the application endpoint.
@@ -30,7 +30,7 @@ We recommend that you route all the egress traffic from the application to Trans
 
 The following diagram shows the data flow of traffic through a perimeter zone architecture that's based on Network Firewall:
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-perimeter-zone-apps-network-firewall/images/guide-img/e9c77201-9323-4f46-9aa2-8c71588f3ec4/images/52f994a2-42a2-41a8-a3a9-bc5b938fe958.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-perimeter-zone-apps-network-firewall/images/guide-img/e9c77201-9323-4f46-9aa2-8c71588f3ec4/images/52f994a2-42a2-41a8-a3a9-bc5b938fe958.png)
 
 The diagram shows the following workflow:
 

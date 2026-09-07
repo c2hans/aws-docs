@@ -7,13 +7,13 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/spark-tunin
 
 The following diagram depicts the architecture of the solution described in this guide. An AWS Glue job reads data from an [Amazon Simple Storage Service (Amazon S3)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) bucket, which is a cloud-based object storage service that helps you store, protect, and retrieve data. You can initiate the AWS Glue Spark job through the AWS Management Console, [AWS Command Line Interface (AWS CLI)](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html), or the AWS Glue API. The AWS Glue Spark job processes the raw data in an Amazon S3 bucket and then stores the processed data in a different bucket.
 
-![AWS Glue with Spark processing raw data in an Amazon S3 bucket](http://docs.aws.amazon.com/prescriptive-guidance/latest/spark-tuning-glue-emr/images/guide-img/03a14f27-75e9-4b79-afab-d8b743354a10/images/a4e34dfd-155f-44fc-bf54-2a47b9112de9.png)
+![AWS Glue with Spark processing raw data in an Amazon S3 bucket](https://docs.aws.amazon.com/prescriptive-guidance/latest/spark-tuning-glue-emr/images/guide-img/03a14f27-75e9-4b79-afab-d8b743354a10/images/a4e34dfd-155f-44fc-bf54-2a47b9112de9.png)
 
 For example purposes, this guide describes a basic [AWS Glue Spark job](https://docs.aws.amazon.com/glue/latest/dg/etl-jobs-section.html), which is written in Python and Spark (PySpark). This AWS Glue job is used to demonstrate best practices for Spark SQL tuning. Although this guide focuses on AWS Glue, the best practices in this guide also apply to [Amazon EMR Spark jobs](https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/jobs-spark.html).
 
 The following diagram depicts the lifecycle of a Spark SQL query. The Spark Catalyst Optimizer generates a query plan. A *query plan* is a series of steps, like instructions, that are used to access the data in a SQL relational database system. To develop a performance-optimized Spark SQL query plan, the first step is to view the `EXPLAIN` plan, interpret the plan, and then tune the plan. You can use the Spark user interface (UI) or the Spark History Server to visualize the plan.
 
-![Lifecycle of a Spark query to create a resilient distributed dataset (RDD)](http://docs.aws.amazon.com/prescriptive-guidance/latest/spark-tuning-glue-emr/images/guide-img/03a14f27-75e9-4b79-afab-d8b743354a10/images/a3a3d9b8-2f46-4203-8162-8eeb52bdae8d.png)
+![Lifecycle of a Spark query to create a resilient distributed dataset (RDD)](https://docs.aws.amazon.com/prescriptive-guidance/latest/spark-tuning-glue-emr/images/guide-img/03a14f27-75e9-4b79-afab-d8b743354a10/images/a3a3d9b8-2f46-4203-8162-8eeb52bdae8d.png)
 
 Spark Catalyst Optimizer converts the initial query plan into an optimized query plan as follows:
 

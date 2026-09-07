@@ -464,7 +464,7 @@ HelloEcsStack.MyWebServerServiceURLYYYYYYYY = http://Hello-MyWeb-ZZZZZZZZZZZZZ-Z
 
 Copy the URL from the deployment output and paste it into your web browser. The following welcome message from the web server is displayed.
 
-![Screenshot of the Amazon ECS sample application. The output indicates " Amazon ECS".](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/images/simple-php-app-congrats.png)
+![Screenshot of the Amazon ECS sample application. The output indicates " Amazon ECS".](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/images/simple-php-app-congrats.png)
 
 ## Step 4: Clean up
 <a name="ecs-web-server-cdk-step-4"></a>

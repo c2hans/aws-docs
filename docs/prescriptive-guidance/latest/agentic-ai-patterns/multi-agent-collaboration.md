@@ -23,7 +23,7 @@ Architecture
 
 The following diagram shows multi-agent collaboration:
 
-![Multiagent collaboration.](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-patterns/images/guide-img/cde5ee68-ed86-4053-9fb1-d0dbf7199e24/images/e1e47b6f-90d8-43f1-ad1a-94fa406557f6.png)
+![Multiagent collaboration.](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-patterns/images/guide-img/cde5ee68-ed86-4053-9fb1-d0dbf7199e24/images/e1e47b6f-90d8-43f1-ad1a-94fa406557f6.png)
 
 ## Description
 <a name="description.cb73930c-5a54-5bd0-9c72-0e73fb36d567"></a>

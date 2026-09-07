@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framewor
 
 The activities for an MVS are about defining a clear near-term deliverable that encompasses everything you would need to build, operate, and support this service. This is where thinking of this through the lens of a service is a key differentiating aspect of this exercise. While the activities for defining your MVS will likely differ significantly across different domains and starting points, this section captures some of the concepts that are often included in this exercise:
 
-![Diagram showing the MVS cycle of development.](http://docs.aws.amazon.com/whitepapers/latest/saas-journey-framework/images/mvs-cycle-of-development.jpg)
+![Diagram showing the MVS cycle of development.](https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framework/images/mvs-cycle-of-development.jpg)
 
 ## Defining the Target Early Adopters for the MVS release
 <a name="defining-the-target-early-adopters-for-the-mvs-release"></a>

@@ -43,7 +43,7 @@ To address this, you can use the infrastructure as code (IaC) solution provided 
 
 The following architecture diagram shows the deployment of the AWS resources within a single AWS account. You provision the resources by using a CloudFormation template directly through the CloudFormation console. If Security Hub CSPM is enabled, you can view the results in either AWS Config or Security Hub CSPM. If Security Hub CSPM is not enabled, you can view the results only in AWS Config.
 
-![Deployment of the IaC template as a CloudFormation stack in a single AWS account.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/caa8013b-3578-434b-b2c0-5ca7faf45d2d/images/01318e4c-49b5-415f-ac7a-e45451c374cf.png)
+![Deployment of the IaC template as a CloudFormation stack in a single AWS account.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/caa8013b-3578-434b-b2c0-5ca7faf45d2d/images/01318e4c-49b5-415f-ac7a-e45451c374cf.png)
 
 The diagram shows the following workflow:
 
@@ -61,7 +61,7 @@ The diagram shows the following workflow:
 
 The following diagram shows deployment of the pattern across multiple accounts that are managed through AWS Organizations and AWS Control Tower. You deploy the CloudFormation template through CfCT. The assessment outcomes are centralized in Security Hub CSPM in the delegated administrator account. The AWS CodePipeline workflow section of the diagram shows the background steps that occur during CfCT deployment.
 
-![Deployment of the IaC template as a CloudFormation stack set in an AWS organization.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/caa8013b-3578-434b-b2c0-5ca7faf45d2d/images/f4500347-a481-4cd3-ba14-25a034af7531.png)
+![Deployment of the IaC template as a CloudFormation stack set in an AWS organization.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/caa8013b-3578-434b-b2c0-5ca7faf45d2d/images/f4500347-a481-4cd3-ba14-25a034af7531.png)
 
 The diagram shows the following workflow:
 

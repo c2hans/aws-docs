@@ -31,7 +31,7 @@ These principles transform performance testing from a gate before launch into a 
 
 Performance validation is not a single activity. It is a pyramid of complementary techniques, each owned by different roles:
 
-![The Performance Validation Pyramid](http://docs.aws.amazon.com/solutions/latest/performance-testing/images/perf_pyramid.png)
+![The Performance Validation Pyramid](https://docs.aws.amazon.com/solutions/latest/performance-testing/images/perf_pyramid.png)
 
 | Level | Owner | Purpose | Frequency |
 | --- | --- | --- | --- |

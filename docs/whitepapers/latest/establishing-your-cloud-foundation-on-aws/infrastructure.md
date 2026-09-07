@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
 
 The capabilities within this area enable you to design, build, and manage a secure and highly available cloud infrastructure. Use practices such as Network Security to design and implement security policies and controls across different levels of the networking stack, and Workload Isolation to isolate environments that contain your newly migrated workloads. If you are migrating apps from on premises or building them natively in the cloud, the infrastructure that you build on should be both secure and reliable.
 
-![A chart showing which capabilities fall under each category.](http://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/images/infrastructure-category.png)
+![A chart showing which capabilities fall under each category.](https://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/images/infrastructure-category.png)
 
  Infrastructure capabilities include:
 +  **Network Security** enables you to design and implement security policies and controls across different levels of the networking stack to protect your resources from external or internal threats to ensure confidentiality, availability, integrity, and usability. This capability includes the prevention, detection, and blocking of anomalous network traffic based on monitoring of ingress/egress and lateral data movement.

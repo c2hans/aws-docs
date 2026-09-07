@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 
 The scope of this scenario is to secure model customization. This use case focuses on securing the resources and training environment for a model customization job as well as securing the invocation of a custom model. The following diagram illustrates the AWS services recommended for the Generative AI account for this capability.
 
-![Services recommended for model customization.](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-generative-ai/images/guide-img/a349f18f-a9fd-43a3-9a48-27534bf6412a/images/b1ca6b72-d43b-43fe-adfa-82e57b14ffe8.png)
+![Services recommended for model customization.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-generative-ai/images/guide-img/a349f18f-a9fd-43a3-9a48-27534bf6412a/images/b1ca6b72-d43b-43fe-adfa-82e57b14ffe8.png)
 
 The Generative AI account includes services required for customizing a model along with a suite of required security services to implement security guardrails and centralized security governance. To allow for private model customization, you should create Amazon S3 gateway endpoints for the training data and evaluation Amazon S3 buckets that a private VPC environment is configured to access.
 

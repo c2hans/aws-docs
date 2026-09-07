@@ -16,7 +16,7 @@ For the complete sample application, see [WebRTC Voice Agent with KVS TURN](http
 ## Architecture
 <a name="runtime-webrtc-kvs-architecture"></a>
 
-![Architecture diagram showing WebRTC on AgentCore Runtime with KVS TURN relaying through a VPC.](http://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/images/runtime-webrtc-architecture.png)
+![Architecture diagram showing WebRTC on AgentCore Runtime with KVS TURN relaying through a VPC.](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/images/runtime-webrtc-architecture.png)
 
 Browser client
 A web page that captures microphone audio using the browser WebRTC API and plays the agent’s audio response.

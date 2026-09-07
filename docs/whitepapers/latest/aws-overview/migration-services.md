@@ -2,14 +2,14 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/migration-services.html
 ---
 
-# ![AWS Migration and Transfer category icon](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/migration-transfer-icon.jpg)Migration and transfer
+# ![AWS Migration and Transfer category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/migration-transfer-icon.jpg)Migration and transfer
 <a name="migration-services"></a>
 
 AWS offers a wide range of migration tools, guidance, services, and programs to help you assess, migrate and modernize applications and data from building the business case to leveraging AWS services to deliver new experiences.
 
 Each service is described after the diagram. To help you decide which service best meets your needs, see [Choosing AWS migration services and tools](https://docs.aws.amazon.com/decision-guides/latest/migration-on-aws-how-to-choose/migration-on-aws-how-to-choose.html). For general information, see [Migrate and Modernize on AWS](https://aws.amazon.com/products/migration-and-transfer/).
 
-![Diagram showing AWS data migration services](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/data-migration-services.png)
+![Diagram showing AWS data migration services](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/data-migration-services.png)
 
 **Topics**
 + [AWS Application Discovery Service](#aws-application-discovery-service)

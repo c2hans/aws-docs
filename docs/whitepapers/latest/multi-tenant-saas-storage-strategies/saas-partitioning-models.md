@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-sto
 
  Each partitioning model takes a very different approach to managing, accessing, and separating tenant data. The following sections give a quick breakdown of the models, giving you the ability to explore the values and tenets of each model outside of the context of any specific storage technology.
 
-![A diagram depicting SaaS partitioning models.](http://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-storage-strategies/images/partitioning-models.png)
+![A diagram depicting SaaS partitioning models.](https://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-storage-strategies/images/partitioning-models.png)
 
 ## Silo model
 <a name="silo-model"></a>

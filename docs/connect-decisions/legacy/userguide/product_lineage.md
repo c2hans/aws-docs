@@ -9,28 +9,28 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/produ
 
 Product lineage supports the following patterns:
 + A single product has one lineage or alternate product = 1:1
-![Product lineage pattern = 1:1](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/product_lineage_pattern1.png)
+![Product lineage pattern = 1:1](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/product_lineage_pattern1.png)
 
   The following example shows an 1:1 scenario.
-![Product lineage pattern = 1:1](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/1 is to 1_example.png)
+![Product lineage pattern = 1:1](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/1 is to 1_example.png)
 + A single product has more than one product as lineage or alternate = Many:1
-![Product lineage pattern = Many:1](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/product_lineage_pattern2.png)
+![Product lineage pattern = Many:1](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/product_lineage_pattern2.png)
 
   Demand Planning supports product lineage relationship modeled as both *chain* or *flattened* methods.
   + **Chain format** – You can directly model lineage relationships like A to B and B to C. In the following example. Demand Planning will model the lineage relationship as A to B, B to C, and A to C.
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/product_lineage.html)
 
     The following example shows an Many:1 scenario - Chain format
-![Product lineage pattern = Chain format](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/chain_format.png)
+![Product lineage pattern = Chain format](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/chain_format.png)
   + **Flattened format** – Demand Planning will continue to support lineage information in A to B and A to C format. In the following example, Demand planning will model the lineage relationship as A to B and A to C. B to C is not considered.
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/product_lineage.html)
 **Note**
 Chain format only supports 6 levels of lineage relationship. If you have more than 6, you can use flattened format to model the lineage relationship.
 
   The following example shows an Many:1 scenario - Flattened format
-![Product lineage pattern = Flattened format](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/1 is to many_example.png)
+![Product lineage pattern = Flattened format](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/1 is to many_example.png)
 + A single product can be lineage or alternate for more than 1 product = 1 : Many
-![Product lineage pattern = 1:Many](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/product_lineage_pattern3.png)
+![Product lineage pattern = 1:Many](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/product_lineage_pattern3.png)
 
 To enable the product lineage feature, you can define the lineage relationship for the different versions of the products or alternates/substitutes in the *product\_alternate* data entity. For more information, see [Demand Planning](required_entities.md).
 

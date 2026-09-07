@@ -24,7 +24,7 @@ Before you start working with the Session Manager APIs, ensure that you're famil
 
 The following diagram shows the high-level components of Session Manager.
 
-![Amazon DCV Session Manager components](http://docs.aws.amazon.com/dcv/latest/sm-dev/images/components.png)
+![Amazon DCV Session Manager components](https://docs.aws.amazon.com/dcv/latest/sm-dev/images/components.png)
 
 ****Broker****
 The Broker is a web server that hosts and exposes the Session Manager APIs. It receives and processes *API* requests to manage Amazon DCV sessions from the *client*, and then passes the instructions to the relevant *Agents*. The Broker must be installed on a host that is separate from your Amazon DCV servers, but it must be accessible to the client, and it must be able to access the Agents.

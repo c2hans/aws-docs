@@ -15,7 +15,7 @@ Sandbox accounts have a CloudFormation StackSets instance deployed in the accoun
 ## Stack dependencies
 <a name="stack-dependencies"></a>
 
-![Diagram showing the deployment order of the AccountPool IDC Data and Compute stacks and their dependencies](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/diagrams/stack-dependencies.drawio.png)
+![Diagram showing the deployment order of the AccountPool IDC Data and Compute stacks and their dependencies](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/diagrams/stack-dependencies.drawio.png)
 
 **Solution stack dependencies**
 This diagram shows the order in which the stacks should be deployed. Some stacks depend on resources created by another stack to successfully deploy, so it is critical to deploy the stacks in the correct order for a successful deployment.
@@ -28,7 +28,7 @@ This diagram shows the order in which the stacks should be deployed. Some stacks
 
 As part of the deployment, the solution deploys these CloudFormation stacks.
 
-![Diagram showing the relationships between the ISB CloudFormation stacks and the accounts they deploy into](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/diagrams/stack-relationships.drawio.png)
+![Diagram showing the relationships between the ISB CloudFormation stacks and the accounts they deploy into](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/diagrams/stack-relationships.drawio.png)
 
 **ISB CloudFormation stacks**
 + The **AccountPool** stack, deployed into the AWS Organizations management account, is used to manage the lifecycle on sandbox accounts controlled by the solution. This stack contains three major types of resources:

@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation
 
  It’s pretty easy to see how the silo model of isolation maps very nicely for many SaaS companies. At the same, many companies that are moving to SaaS are seeking out the efficiency, agility, and cost benefits of being able to have their tenants share some or all of their underlying infrastructure. This shared infrastructure approach, which is referred to as a pool model, adds a level of complexity to the isolation story. The diagram in Figure 2 provides an illustration of the challenge associated with implementing isolation in a pooled model.
 
-![Diagram showing pooled isolation.](http://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/images/pooled-isolation.jpg)
+![Diagram showing pooled isolation.](https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/images/pooled-isolation.jpg)
 
 In this model, you’ll notice that our tenants are consuming infrastructure that is shared by all tenants. This enables the resources to scale in direct proportion to the actual load being imposed by the tenants. To the right of the diagram, we’ve zoomed into the compute of one of the services, highlighting the fact that tenants 1-N may all be running side-by-side within your shared compute at any given time. You’ll also notice that the storage in this example is also shared. Here we’ve represented a table that is indexed by individual tenant identifiers.
 

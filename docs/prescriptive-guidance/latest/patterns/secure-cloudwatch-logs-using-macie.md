@@ -37,7 +37,7 @@ This pattern helps security teams and compliance officers maintain data confiden
 
 The following diagram shows the workflow for using Macie to examine CloudWatch Logs log entries for sensitive data.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c9979070-09ab-4331-b969-5eff26fb2baa/images/d02f34ce-a7d1-4f96-a430-22975224eb9d.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c9979070-09ab-4331-b969-5eff26fb2baa/images/d02f34ce-a7d1-4f96-a430-22975224eb9d.png)
 
 The workflow shows the following steps:
 

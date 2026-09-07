@@ -87,4 +87,4 @@ To help you see the big picture and make informed decisions, this guide includes
 
 For example, the following image shows a sample radar chart. It includes only the metrics that we can help evaluate. We recommend that you create your own value map that includes the additional metrics that only you can evaluate.
 
-![A sample radar chart.](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-network-access-options/images/guide-img/c6ce66a8-c949-4e68-b09d-850373110e63/images/c49804da-ae07-41ff-be73-20c0ec3498ce.png)
+![A sample radar chart.](https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-network-access-options/images/guide-img/c6ce66a8-c949-4e68-b09d-850373110e63/images/c49804da-ae07-41ff-be73-20c0ec3498ce.png)

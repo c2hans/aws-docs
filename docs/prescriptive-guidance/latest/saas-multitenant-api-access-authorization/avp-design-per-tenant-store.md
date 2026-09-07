@@ -13,7 +13,7 @@ In a per-tenant policy store, tenant isolation is achieved by mapping a tenant's
 
 This example shows how the JWT that contains the `policyStoreId` and `tenant` of a user is passed from the an API endpoint to the policy evaluation point in an AWS Lambda authorizer, which routes the request to the correct policy store.
 
-![Per-tenant policy store model in Amazon Verified Permissions](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/c9e5139c-6a62-4793-9266-2ef50f30449b.png)
+![Per-tenant policy store model in Amazon Verified Permissions](https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/c9e5139c-6a62-4793-9266-2ef50f30449b.png)
 
 The following sample policy illustrates the per-tenant policy store design paradigm. The user `Alice` belongs to `TenantA.` The policyStoreId `store-a` is also mapped to the tenant identity of `Alice,` and enforces the use of the correct policy store. This ensures that the policies of `TenantA` are used.
 
@@ -130,7 +130,7 @@ With Verified Permissions, it is possible, but not required, to integrate an IdP
 
 When you integrate a policy store with an IdP, you can use only one [identity source](https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/identity-providers.html) per policy store. For example, if you choose to integrate Verified Permissions with Amazon Cognito, you have to mirror the strategy used for tenant isolation of Verified Permissions policy stores and Amazon Cognito user pools. The policy stores and user pools also have to be in the same AWS account.
 
-![Integrating Verified Permissions with Amazon Cognito in per-tenant design model](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/57860d3b-f683-4c62-9099-2138621e4faa.png)
+![Integrating Verified Permissions with Amazon Cognito in per-tenant design model](https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/57860d3b-f683-4c62-9099-2138621e4faa.png)
 
 On an operational level, the per-tenant policy store has an audit advantage, because you can easily query the [logged activity in ](https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/monitoring-overview.html)AWS CloudTrail independently for each tenant. However, we still recommend that you log additional custom metrics on a per-tenant dimension to Amazon CloudWatch.
 

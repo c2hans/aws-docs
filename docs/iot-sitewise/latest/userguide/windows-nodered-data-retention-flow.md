@@ -12,7 +12,7 @@ The flow consists of three key components working together to ensure your data i
 + **InfluxDB translator** - Converts AWS IoT SiteWise payload to InfluxDB format, preparing the data for efficient time-series storage
 + **InfluxDB writer** - Handles local storage, ensuring data persistence and availability for local applications
 
-![Node-RED data retention flow](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/gateway-open-source-nodered-data-retention.png)
+![Node-RED data retention flow](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/gateway-open-source-nodered-data-retention.png)
 
 ## Set up the MQTT subscription client
 <a name="windows-nodered-mqtt-subscriber"></a>
@@ -148,7 +148,7 @@ Find your organization name in the InfluxDB instance's left sidebar. The organiz
 After configuring all components of the data retention flow, you need to deploy and verify that the system is working correctly. This verification ensures that your industrial data is being properly stored locally for immediate access and analysis.
 
 1. Connect the three nodes as shown in the data retention flow diagram. This creates a complete pipeline from data subscription to local storage.
-![Node-RED data retention flow](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/gateway-open-source-nodered-data-retention.png)
+![Node-RED data retention flow](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/gateway-open-source-nodered-data-retention.png)
 
 1. Choose **Deploy** to apply your changes and activate the flow. This starts the data collection and storage process.
 

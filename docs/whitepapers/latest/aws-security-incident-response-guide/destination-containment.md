@@ -13,4 +13,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
 
  An example of destination containment is demonstrated in the following diagram with an incident response analyst adding an NACL to a subnet in order to block a network connection request from an unauthorized host.
 
-![Diagram showing an example of destination containment](http://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/images/destination-containment.png)
+![Diagram showing an example of destination containment](https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/images/destination-containment.png)

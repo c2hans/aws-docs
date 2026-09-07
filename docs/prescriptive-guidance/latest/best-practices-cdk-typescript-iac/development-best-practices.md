@@ -16,7 +16,7 @@ You can use TDD to write the test case first. This helps you validate the infras
 
 This guide focuses on unit test integration for TypeScript specifically. To enable testing, make sure that your `package.json` file has the following libraries: `@types/jest`, `jest`, and `ts-jest` in `devDependencies`. To add these packages, run the `cdk init lib --language=typescript` command. After you run the preceding command, you see the following structure.
 
-![Unit test structure](http://docs.aws.amazon.com/prescriptive-guidance/latest/best-practices-cdk-typescript-iac/images/guide-img/b7d5d887-7172-4d47-9f1f-1cf7ae181482/images/ace1c1b1-d95b-410f-8b6a-8c30621aec40.png)
+![Unit test structure](https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practices-cdk-typescript-iac/images/guide-img/b7d5d887-7172-4d47-9f1f-1cf7ae181482/images/ace1c1b1-d95b-410f-8b6a-8c30621aec40.png)
 
 The following code is an example of a `package.json` file that's enabled with the Jest library.
 

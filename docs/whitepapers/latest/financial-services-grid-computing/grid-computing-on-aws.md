@@ -13,4 +13,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/financial-services-gr
 
  The following sections include information about AWS services that are most relevant to HPC systems, particularly those that support financial services customers.
 
-![Diagram showing a typical HPC architecture with key components.](http://docs.aws.amazon.com/whitepapers/latest/financial-services-grid-computing/images/typical-hpc-architecture.png)
+![Diagram showing a typical HPC architecture with key components.](https://docs.aws.amazon.com/whitepapers/latest/financial-services-grid-computing/images/typical-hpc-architecture.png)

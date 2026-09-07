@@ -121,7 +121,7 @@ Any policy should follow the principle of least privileges, giving the user, gro
 
  The following figure illustrates how you access private APIs through interface VPC endpoints for API Gateway.
 
-![This diagram explains how to access private APIs through interface VPC endpoints for API Gateway](http://docs.aws.amazon.com/whitepapers/latest/security-overview-amazon-api-gateway/images/access-private-apis-through-interface-vpc-endpoints.png)
+![This diagram explains how to access private APIs through interface VPC endpoints for API Gateway](https://docs.aws.amazon.com/whitepapers/latest/security-overview-amazon-api-gateway/images/access-private-apis-through-interface-vpc-endpoints.png)
 
 ### API integration security
 <a name="api-integration-security"></a>
@@ -214,7 +214,7 @@ Any policy should follow the principle of least privileges, giving the user, gro
 
  [AWS WAF](https://aws.amazon.com/waf) is a managed web applications firewall (WAF) that can be used in conjunction with [API Gateway regional endpoints](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-api-endpoint-types.html#api-gateway-api-endpoint-types-regional), with or without customer-managed CloudFront distributions, as seen in the following figure.
 
-![This diagram shows Amazon WAF in conjunction with API Gateway Regional endpoints](http://docs.aws.amazon.com/whitepapers/latest/security-overview-amazon-api-gateway/images/amazon-waf-with-api-gateway-regional-endpoints.png)
+![This diagram shows Amazon WAF in conjunction with API Gateway Regional endpoints](https://docs.aws.amazon.com/whitepapers/latest/security-overview-amazon-api-gateway/images/amazon-waf-with-api-gateway-regional-endpoints.png)
 
  AWS WAF provides flexible options for implementing protections via AWS managed rules, partner provided rules, and custom rules that you can write yourself. Many of these rules are focused on protections against the [Open Web Application Security Project (OWASP) Top 10 application vulnerabilities](https://owasp.org/Top10/). AWS WAF has a number of rules that enable you to combine many types of rules in your Web access control list (ACL), to provide effective security for your API Gateway instances, including the following:
 +  Block or Allow based on IP-address or country of origin for the request
@@ -319,7 +319,7 @@ Any policy should follow the principle of least privileges, giving the user, gro
 
  It is important to apply security at all layers to enable a defense in-depth strategy. For a Serverless application, holistic security can include the following:
 
-![This diagram shows holistic security layers for a serverless application](http://docs.aws.amazon.com/whitepapers/latest/security-overview-amazon-api-gateway/images/holistic-security-layers.png)
+![This diagram shows holistic security layers for a serverless application](https://docs.aws.amazon.com/whitepapers/latest/security-overview-amazon-api-gateway/images/holistic-security-layers.png)
 
 +  Application identity is managed with a secure identity provider such as [Amazon Cognito](https://aws.amazon.com/cognito/), enabling secure sign-up, sign-in, and federation.
 +  DDoS protection is implemented with [AWS Shield](https://aws.amazon.com/shield) and [AWS WAF](https://aws.amazon.com/waf) to mitigate both network and application layer attacks. AWS WAF is configured to block [cross-site scripting](https://owasp.org/www-community/attacks/xss/), [SQL injection](https://owasp.org/www-community/attacks/SQL_Injection), bad bots and user agents, and more.

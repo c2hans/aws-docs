@@ -12,7 +12,7 @@ You can use AWS Application Migration Service to quickly migrate your applicatio
 
 The following diagram shows the architecture for migrating an on-premises PostgreSQL database to the AWS Cloud by using Application Migration Service.
 
-![Application Migration Service architecture](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-databases-postgresql-ec2/images/guide-img/d9d57133-1a8b-4b7f-bbe9-e908969d06b9/images/5e7fd64d-8a80-45dc-92a9-07d23a0d4426.png)
+![Application Migration Service architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-databases-postgresql-ec2/images/guide-img/d9d57133-1a8b-4b7f-bbe9-e908969d06b9/images/5e7fd64d-8a80-45dc-92a9-07d23a0d4426.png)
 
 The diagram shows the following workflow:
 + Install the AWS replication agents on source database servers.

@@ -194,12 +194,12 @@ Many of our packages have been re-synced to newer upstream versions. Some of the
 
 | Instance Family | HVM EBS-Backed 64-bit | HVM Instance Store 64-bit | PV EBS-Backed 64-bit | PV Instance Store 64-bit |
 | --- | --- | --- | --- | --- |
-| t2 | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |  |  |
-| m4 | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |  |  |
-| m3 | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |
-| c4 | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |  |  |
-| c3 | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |
-| r3 | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |  |
-| g2 | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |  |  |
-| i2 | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |  |
-| d2 | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |  |
+| t2 | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |  |  |
+| m4 | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |  |  |
+| m3 | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |
+| c4 | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |  |  |
+| c3 | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |
+| r3 | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |  |
+| g2 | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |  |  |
+| i2 | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |  |
+| d2 | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes | ![](https://docs.aws.amazon.com/linux/al1/ug/images/icon-yes.png) Yes |  |  |

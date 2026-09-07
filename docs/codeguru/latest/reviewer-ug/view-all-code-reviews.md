@@ -16,7 +16,7 @@ To learn about the types of recommendations, see [Amazon CodeGuru Reviewer Detec
 
 To view this page, in the navigation pane, choose **Reviewer**, **Code reviews**.
 
-![The Code review page in the CodeGuru Reviewer console](http://docs.aws.amazon.com/codeguru/latest/reviewer-ug/images/codereview_repo_analysis.png)
+![The Code review page in the CodeGuru Reviewer console](https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/images/codereview_repo_analysis.png)
 
 **Note**
 After 90 days have passed since a code review was done, you can't view that code review in the Amazon CodeGuru Reviewer console. But you might be able to view the recommendations from incremental code reviews in the repository source provider.

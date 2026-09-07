@@ -79,4 +79,4 @@ The Funnel visualization does not support grouping. If you need to group funnel 
 
  All configurations are as shown in the image below:
 
-![Funnel analysis configuration showing User number metric, The Day window, four funnel steps, and Web filter applied.](http://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/explore-funnel-en.png)
+![Funnel analysis configuration showing User number metric, The Day window, four funnel steps, and Web filter applied.](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/explore-funnel-en.png)

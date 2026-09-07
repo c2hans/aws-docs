@@ -58,7 +58,7 @@ For more information about using Amazon CloudWatch to detect DDoS attacks on you
 
 AWS includes several additional metrics and alarms to notify you about an attack and to help you monitor your application's resources. The [AWS Shield](https://aws.amazon.com/shield/) console or API provide a per-account event summary and details about attacks that have been detected.
 
-![Global activity detected by AWS Shield](http://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/images/global-activity-detected.png)
+![Global activity detected by AWS Shield](https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/images/global-activity-detected.png)
 
 In addition, the global threat environment dashboard provides summary information about all DDoS attacks that have been detected by AWS. This information can be useful to better understand DDoS threats across a larger population of applications in addition to attack trends, and comparing with attacks that you might have observed.
 

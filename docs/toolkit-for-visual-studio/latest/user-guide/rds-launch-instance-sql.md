@@ -12,10 +12,10 @@ For information about how to create an Amazon RDS instance, see [Launch an Amazo
  **To create a Microsoft SQL Server database**
 
 1. In AWS Explorer, open the context (right-click) menu for the node that corresponds to your RDS instance for Microsoft SQL Server, and choose **Create SQL Server Database**.
-![Context menu for RDS instance showing Create SQL Server Database option.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/rds-ms-sql-create-db.png)
+![Context menu for RDS instance showing Create SQL Server Database option.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/rds-ms-sql-create-db.png)
 
 1. In the **Create SQL Server Database** dialog box, type the password you specified when you created the RDS instance, type a name for the Microsoft SQL Server database, and then choose **OK**.
-![Create SQL Server Database dialog box with DB instance, credentials, and database name fields.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/rds-spec-ms-sql-db.png)
+![Create SQL Server Database dialog box with DB instance, credentials, and database name fields.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/rds-spec-ms-sql-db.png)
 
 1. The Toolkit for Visual Studio creates the Microsoft SQL Server database and adds it to the Visual Studio Server Explorer.
-![Server Explorer showing expanded Data Connections with aws-3.my-ms-sql-db database structure.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/rds-sql-svr-explorer.png)
+![Server Explorer showing expanded Data Connections with aws-3.my-ms-sql-db database structure.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/rds-sql-svr-explorer.png)

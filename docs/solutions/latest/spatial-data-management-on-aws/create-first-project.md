@@ -24,4 +24,4 @@ Projects organize related assets within the library. Create a project before upl
 
 Your project is now ready to receive assets.
 
-![Create project wizard](http://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/create-project-define-step.png)
+![Create project wizard](https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/create-project-define-step.png)

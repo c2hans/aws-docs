@@ -12,7 +12,7 @@ This section discusses the three expected outcomes from a cloud-readiness review
 
 When organizations contemplate large-scale migration to AWS, they generally fall somewhere along the path of what is called the *stages of adoption*, as illustrated the following diagram. The four stages—project, foundation, migration, and reinvention—are discussed in the blog post [The Journey Toward Cloud-First & the Stages of Adoption](https://aws.amazon.com/blogs/enterprise-strategy/the-journey-toward-cloud-first-the-stages-of-adoption/) on the AWS Cloud Enterprise Strategy blog. The purpose of a readiness assessment is to determine how far along in the stages of adoption the organization is currently at, and which parts of the organization's environment are sufficiently mature to move to the next stage.
 
-![Graph showing cloud adoption journey from project to reinvention, with stages of migration and cloud-native development.](http://docs.aws.amazon.com/prescriptive-guidance/latest/evaluating-migration-readiness/images/guide-img/bde27ed7-c694-4dae-aea7-c2ff62bb249a/images/1536d570-77ef-4d5b-bd03-cd142097df1d.png)
+![Graph showing cloud adoption journey from project to reinvention, with stages of migration and cloud-native development.](https://docs.aws.amazon.com/prescriptive-guidance/latest/evaluating-migration-readiness/images/guide-img/bde27ed7-c694-4dae-aea7-c2ff62bb249a/images/1536d570-77ef-4d5b-bd03-cd142097df1d.png)
 
 **Example:**
 
@@ -23,7 +23,7 @@ If an organization is planning their first workload to move to the cloud, they'r
 
 Identifying areas of strength and weakness is the second main outcome of a readiness assessment. Strengths determine the teams and practices that are ready for broad adoption across the organization. These are areas that don't require further work to enable successful cloud migrations at scale. Weaknesses are areas where actions need to be taken to improve the practices or capabilities to enable cloud migrations. Solving gaps early ensures a smooth migration process and eliminates the risk of project delays in building out foundational capabilities. The heat map illustrated in the following figure shows areas of strength and weakness across an organization. Action plans will need to be put in place for areas highlighted in yellow or red.
 
-![Project plan diagram showing various stages and components of a customer migration process.](http://docs.aws.amazon.com/prescriptive-guidance/latest/evaluating-migration-readiness/images/guide-img/bde27ed7-c694-4dae-aea7-c2ff62bb249a/images/c43666b7-c74f-4314-8ffe-36288e8f08da.png)
+![Project plan diagram showing various stages and components of a customer migration process.](https://docs.aws.amazon.com/prescriptive-guidance/latest/evaluating-migration-readiness/images/guide-img/bde27ed7-c694-4dae-aea7-c2ff62bb249a/images/c43666b7-c74f-4314-8ffe-36288e8f08da.png)
 
 **Example:**
 

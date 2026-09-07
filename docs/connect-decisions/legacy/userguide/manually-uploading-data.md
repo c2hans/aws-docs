@@ -23,4 +23,4 @@ To upload data to an Amazon S3 bucket associated with the AWS Supply Chain insta
 1. Navigate to the Amazon S3 path that you copied from the AWS Supply Chain dashboard.
 
 1. Choose **Upload**.
-![Uploading data to an Amazon S3 bucket](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/S3_console.png)
+![Uploading data to an Amazon S3 bucket](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/S3_console.png)

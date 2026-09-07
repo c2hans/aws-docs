@@ -63,7 +63,7 @@ The three steps included in the Dev stage are linting, security, and unit tests.
 
 The following diagram shows the workflow from the CodeCommit repository to the build and update processes performed by CodePipeline, the three Dev environment steps, and subsequent deployment and validation in each of the three environments.
 
-![Dev environment includes linting, security and unit testing, all include deploy and validate.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/d617e735-8624-4722-8a3d-073bcc356328/images/92504aac-03e3-4c95-b225-74505f8dd136.png)
+![Dev environment includes linting, security and unit testing, all include deploy and validate.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/d617e735-8624-4722-8a3d-073bcc356328/images/92504aac-03e3-4c95-b225-74505f8dd136.png)
 
 ## Tools
 <a name="set-up-a-ci-cd-pipeline-by-using-aws-codepipeline-and-aws-cdk-tools"></a>

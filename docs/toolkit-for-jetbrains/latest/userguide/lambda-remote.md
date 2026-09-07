@@ -20,7 +20,7 @@ To complete this procedure, you must first install the AWS Toolkit for JetBrains
    If you created the function by creating a code file that implements a function handler for [Java](https://docs.aws.amazon.com/lambda/latest/dg/java-programming-model-handler-types.html), [Python](https://docs.aws.amazon.com/lambda/latest/dg/python-programming-model-handler-types.html), [Node.js](https://docs.aws.amazon.com/lambda/latest/dg/nodejs-prog-model-handler.html), or [C\#](https://docs.aws.amazon.com/lambda/latest/dg/dotnet-programming-model-handler-types.html), then in the code file, choose the Lambda icon next to the function handler. Then choose **Create new AWS Lambda**. Complete the [Create Function](create-function-dialog.md) dialog box, and then choose **Create Function**.
 
 1. With **Lambda** open in **AWS Explorer**, right-click the name of the function, and then choose **Run '[Remote]'**.
-![Running the remote version of a Lambda function by starting from AWS Explorer](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/lambda-remote.png)
+![Running the remote version of a Lambda function by starting from AWS Explorer](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/lambda-remote.png)
 
 1. Complete the [Edit configuration (remote function settings)](run-debug-configurations-dialog-remote.md) dialog box if it's displayed, and then choose **Run** or **Debug**. Results are displayed in the **Run** or **Debug** tool window.
    + If the **Edit configuration** dialog box doesn't appear and you want to change the existing configuration, first change its configuration, and then repeat this procedure from the beginning.

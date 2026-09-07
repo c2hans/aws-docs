@@ -75,28 +75,28 @@ The system leverages Amazon Bedrock’s [Guardrails](https://aws.amazon.com/bedr
       + Step 1: Provide guardrail details : ** *TIP:* ** For Bedrock Guardrails, you can leave the default message unchanged `Sorry, the model cannot answer this question` as it is a pattern defined in `LLM_QA_NO_HITS_REGEX`. When a Guardrail has intervened, QnaBot will respond with ([Custom Don’t Know](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/using-keyword-filters-for.html#custom-dont-know-answers)) answers that you have defined, similar to when QnABot can’t find an answer. For pre-processing and post-processing guardrails, the default message from Amazon Bedrock Guardrail will be processed.
 
 **Provide Guardrail detail**
- ![provide guardrail detail](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/provide_guardrail_detail.png)
+ ![provide guardrail detail](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/provide_guardrail_detail.png)
       + Step 2: Configure content filters (optional) - Configure content filters by adjusting the degree of filtering to detect and block harmful user inputs and model responses that violate your usage policies.
 
 **Note**
 Please carefully note the strength of each of these filters. When they are low, content classified as harmful with HIGH confidence will be blocked while content classified as harmful with NONE, LOW, or MEDIUM confidence will be allowed. Please adjust the filters as per your requirements.
 
 **Content filters**
- ![content filters](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/content_filters.png)
+ ![content filters](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/content_filters.png)
 + Step 3: Add denied topics (optional)
 + Step 4: Add word filters (optional)
 + Step 5: Add sensitive information filters (optional)
 + Step 6: Contextual grounding check (optional) - From 7.0.0 of QnABot, this feature is supported only for Bedrock Guardrails and shouldn’t be configured for pre-processing and post-processing guardrails.
 + Step 7: Review and create guardrail
 
-  1. Once you have created a guardrail, you can test it with your testing data. After you have tested the guardrail, you can create a version. Once you have a version created, you can copy it and alongwith ID shown in the below screenshot. .Test Guardrail ![test guardrail](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/test_guardrail.png)
+  1. Once you have created a guardrail, you can test it with your testing data. After you have tested the guardrail, you can create a version. Once you have a version created, you can copy it and alongwith ID shown in the below screenshot. .Test Guardrail ![test guardrail](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/test_guardrail.png)
 
      1. Input the Guardrail configured in the previous section into the Content Designer’s settings page:
 
 Finally, input the copied ID and the copied version number from section B.2 in the QnaBot Content Designer settings : Amazon Bedrock Guardrails Integration fields. To do this navigate to the Content Designer - select the tools menu ( ☰ ) in top left corner, then select Settings - General Settings - Text Generation using LLMs - General Settings and update the settings as shown in the below screenshot. Then click Save.
 
 **Update settings**
- ![update settings](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/update_settings.png)
+ ![update settings](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/update_settings.png)
 
 ### Settings for Guardrail in QnABot on AWS:
 <a name="settings-for-guardrail-in-qnabot-on-aws"></a>

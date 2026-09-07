@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/ETSI-NFVO-compliant-o
 
  Due to the different approaches in cloud-native operations versus virtualized application operations, the day -1 to day 2 operations also look different in the two. In this section, we will go over typical day -1 to day 2 operations, and explore how a cloud native orchestration can be built using those requirements. The following diagram represents a grouping of relevant AWS services for implementation of a cloud-native network orchestrator. To maintain ease of reading, we have ignored some of the operational requirements such as reliability, security and recovery from the following diagram, however in a real implementation, it is important to consider those requirements as well.
 
-![A diagram depciting AWS constructs for a cloud-native CNF and infrastructure orchestrator.](http://docs.aws.amazon.com/whitepapers/latest/ETSI-NFVO-compliant-orchestration-in-kubernetes/images/cloud-native-cns.png)
+![A diagram depciting AWS constructs for a cloud-native CNF and infrastructure orchestrator.](https://docs.aws.amazon.com/whitepapers/latest/ETSI-NFVO-compliant-orchestration-in-kubernetes/images/cloud-native-cns.png)
 
  Motivation and tasks of each service in the preceding figure will become clear as the operational requirements are examined in detail in the following. Some guidelines to develop automation steps that are scalable while taking advantage of AWS and EKS native constructs for maximum flexibility is also presented.
 
@@ -85,6 +85,6 @@ Because network functions continuously emit performance data and Key Performance
 
  With the previous described AWS constructs, one possible implementation on AWS is be as follows:
 
-![Example implementation architecture of a cloud-native CNF and infrastructure orchestrator.](http://docs.aws.amazon.com/whitepapers/latest/ETSI-NFVO-compliant-orchestration-in-kubernetes/images/cloud-native-cns2.png)
+![Example implementation architecture of a cloud-native CNF and infrastructure orchestrator.](https://docs.aws.amazon.com/whitepapers/latest/ETSI-NFVO-compliant-orchestration-in-kubernetes/images/cloud-native-cns2.png)
 
  This diagram represents VPC constructs, EKS clusters, load-balancers and repositories, network connections, and so on in the context of Region, Availability Zones, and on-premises data centers. For ease of representation, we haven’t depicted some of the functionalities such as account and user administration, the creation of a landing zone, security, and DNS that were part of the earlier architecture, because many of those features will run in their own VPCs within control of cross-account permissions.

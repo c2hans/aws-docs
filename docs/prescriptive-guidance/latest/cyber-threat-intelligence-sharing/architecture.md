@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cyber-threa
 
 The following figure depicts a generalized architecture for using a threat feed to integrate cyber threat intelligence (CTI) into your AWS environment. The CTI is shared between your threat intelligence platform in the AWS Cloud, the selected cyber authority, and other trust community members.
 
-![CTI sharing between a global authority, community members, and your threat intelligence platform.](http://docs.aws.amazon.com/prescriptive-guidance/latest/cyber-threat-intelligence-sharing/images/guide-img/65270b8a-43a4-49d2-8123-9467febf488a/images/4e45c7e3-991a-4406-97ef-09300968cbf2.png)
+![CTI sharing between a global authority, community members, and your threat intelligence platform.](https://docs.aws.amazon.com/prescriptive-guidance/latest/cyber-threat-intelligence-sharing/images/guide-img/65270b8a-43a4-49d2-8123-9467febf488a/images/4e45c7e3-991a-4406-97ef-09300968cbf2.png)
 
 It shows the following workflow:
 

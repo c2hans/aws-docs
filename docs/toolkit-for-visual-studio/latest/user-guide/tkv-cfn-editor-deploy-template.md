@@ -8,13 +8,13 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
  **To deploy an CFN template**
 
 1. In Solution Explorer, open the context (right-click) menu for the template you want to deploy, and choose **Deploy to AWS CloudFormation**.
-![Solution Explorer showing CloudFormation template with context menu options for deployment.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/vs-editor-solution-explorer-deploy.png)
+![Solution Explorer showing CloudFormation template with context menu options for deployment.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/vs-editor-solution-explorer-deploy.png)
 
    Alternatively, to deploy the template you're currently editing, from the **Template** menu, choose **Deploy to AWS CloudFormation** .
-![Template menu options including Deploy to CloudFormation and Estimate Cost.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/vs-editor-template-menu-deploy.png)
+![Template menu options including Deploy to CloudFormation and Estimate Cost.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/vs-editor-template-menu-deploy.png)
 
 1. On the **Deploy Template** page, choose the AWS account to use to launch the stack and the region where it will be launched.
-![Deploy Template interface showing options to create or update a stack with account and region selection.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/vs-editor-cfn-deploy.png)
+![Deploy Template interface showing options to create or update a stack with account and region selection.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/vs-editor-cfn-deploy.png)
 
 1. Choose **Create New Stack** and type a name for your stack.
 

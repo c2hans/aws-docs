@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 
  As you begin to use the Secure Media Delivery at the Edge on AWS solution, keep track of the operational metrics relating to various workflows comprising the solution. A good place to start to get an overview of the metrics relevant for this solution is CloudWatch Dashboard which is created automatically when you launch the solution. You can find it in CloudWatch console in the Dashboards view, present under the **Custom Dashboards** list. For each deployed stack there is a corresponding dashboard named: **[Stack Name]**-**Secure-Media-Delivery.**
 
-![Screenshot of example monitoring dashboard.](http://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/image18.png)
+![Screenshot of example monitoring dashboard.](https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/image18.png)
 
  The metrics on the dashboard indicate if specific components and processes comprising the solution operate as expected, and if there are any anomalies that must be investigated. The metrics contained in the dashboard widgets indicate:
 +  Number of viewer tokens that CloudFront Function validation logic evaluated as valid and invalid.

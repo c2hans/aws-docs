@@ -111,7 +111,7 @@ SELECT
 
 The **Explain** page of the Athena query editor opens and shows you a distributed plan and a logical plan for the query. The following graph shows the logical plan for the example.
 
-![Graph of the query plan rendered by the Athena query editor.](http://docs.aws.amazon.com/athena/latest/ug/images/athena-explain-statement-tpch.png)
+![Graph of the query plan rendered by the Athena query editor.](https://docs.aws.amazon.com/athena/latest/ug/images/athena-explain-statement-tpch.png)
 
 **Important**
 Currently, some partition filters may not be visible in the nested operator tree graph even though Athena does apply them to your query. To verify the effect of such filters, run `EXPLAIN` or `EXPLAIN ANALYZE` on your query and view the results.
@@ -524,4 +524,4 @@ For additional information, see the following resources.
 + Trino [`EXPLAIN ANALYZE`](https://trino.io/docs/current/sql/explain-analyze.html) documentation
 +  [Optimize Federated Query Performance using EXPLAIN and EXPLAIN ANALYZE in Amazon Athena](https://aws.amazon.com/blogs/big-data/optimize-federated-query-performance-using-explain-and-explain-analyze-in-amazon-athena/) in the *AWS Big Data Blog*.
 
-[![AWS Videos](http://img.youtube.com/vi/7JUyTqglmNU/0.jpg)](http://www.youtube.com/watch?v=7JUyTqglmNU)
+[![AWS Videos](https://img.youtube.com/vi/7JUyTqglmNU/0.jpg)](https://www.youtube.com/watch?v=7JUyTqglmNU)

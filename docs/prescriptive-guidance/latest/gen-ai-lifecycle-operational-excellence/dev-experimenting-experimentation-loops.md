@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-life
 
 The core of any successful generative AI PoC is a robust and repeatable development loop. This loop is the engine room where ideas are tested, prompts are refined, and quality is measured. While it shares conceptual roots with traditional machine learning operations (MLOps), the unique nature of generative models necessitates a new set of practices and tools. The following diagram shows an experimentation and evaluation loop for generative AI.
 
-![An experimentation and evaluation loop for generative AI.](http://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-lifecycle-operational-excellence/images/guide-img/5b6a3e4a-ff13-48e9-83d7-177629049c97/images/55b0c3dd-c800-4320-959d-6d29df691dee.png)
+![An experimentation and evaluation loop for generative AI.](https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-lifecycle-operational-excellence/images/guide-img/5b6a3e4a-ff13-48e9-83d7-177629049c97/images/55b0c3dd-c800-4320-959d-6d29df691dee.png)
 
 The diagram shows the following workflow:
 

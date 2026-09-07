@@ -26,7 +26,7 @@ Publication date: **October 1, 2020** ([Document history](document-revisions.md)
 
  To help with this effort, the AWS SaaS Factory team has created a prescriptive framework to guide SaaS companies through this journey, provided targeted guidance that represents the patterns and strategies that we have observed across our efforts to transform other SaaS businesses. The framework helps companies prepare for the transformation through four phases, outlined in Figure 1:
 
-![Diagram showing the phases of the SaaS Journey Framework.](http://docs.aws.amazon.com/whitepapers/latest/saas-journey-framework/images/saas-journey-framework-phases.png)
+![Diagram showing the phases of the SaaS Journey Framework.](https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framework/images/saas-journey-framework-phases.png)
 
  The framework is a dynamic working process that is not necessarily linear. While working on the product strategy, for example, you might revisit your business case and update it. Some activities might take place simultaneously. This paper will guide you through the four framework phases and help you build a strategy and execution plan by outlining the key activities and the questions to consider along the SaaS journey.
 

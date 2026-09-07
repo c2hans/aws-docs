@@ -9,7 +9,7 @@ This section explains how to programmatically filter video backgrounds by using 
 
 The background filter processor uses a TensorFlow Lite machine learning model, JavaScript Web Workers, and WebAssembly to apply a filter to the background of each frame in the video stream. These assets are downloaded at runtime when you create a `VideoFxProcessor`.
 
-The [browser demo application on GitHub](https://github.com/aws/amazon-chime-sdk-js/tree/main/demos/browser) uses the new background blur and replacement filters. To try them, launch the demo with `npm run start`, join the meeting, then click the camera to enable video. Open the **Apply Filter** menu (![Button with a circle and a downward arrow.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/blur-apply-filter-initial.png)) and choose one of the **Background Blur 2.0** or **Background Replacement 2.0** options.
+The [browser demo application on GitHub](https://github.com/aws/amazon-chime-sdk-js/tree/main/demos/browser) uses the new background blur and replacement filters. To try them, launch the demo with `npm run start`, join the meeting, then click the camera to enable video. Open the **Apply Filter** menu (![Button with a circle and a downward arrow.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/blur-apply-filter-initial.png)) and choose one of the **Background Blur 2.0** or **Background Replacement 2.0** options.
 
 **Topics**
 + [About using background filters for the Amazon Chime SDK](about-bg-filters.md)

@@ -35,7 +35,7 @@ The pattern is intended for [AWS System Integrator (SI) Partners](https://aws.a
 
 The following diagram shows the migration from a relational database management system (RDBMS) database to MongoDB Atlas on AWS.
 
-![Architecture for migrating from RDBMS to MongoDB Atlas on AWS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/4e3ea0f1-21e8-4641-a9ee-732355f20baf/images/8eacf3ec-f480-4912-9002-6a50800fe9bf.png)
+![Architecture for migrating from RDBMS to MongoDB Atlas on AWS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/4e3ea0f1-21e8-4641-a9ee-732355f20baf/images/8eacf3ec-f480-4912-9002-6a50800fe9bf.png)
 
 For MongoDB Atlas reference architectures that support different usage scenarios, see[ Migrating to MongoDB Atlas on AWS](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-mongodb-atlas/architecture.html) on the AWS Prescriptive Guidance website.
 

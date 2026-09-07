@@ -22,7 +22,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/designing-mqtt-topics
 
  **Ensure MQTT topic levels structure follows a general to specific pattern.** As topic scheme flows left to right, the topic levels flow general to specific. For example, an HVAC system is associated with an IoT platform named **hv100**, is located in the **basement** of building **bld1518**, and has a Thing Name of **hvac719**. The topic structure begins with the general group, in this case, the name of the IoT platform, and ends with the most specific identity, the Thing Name. This example creates the following topic level structure:
 
-![MQTT topic structure showing hierarchy from general hv100/bld1518/basement to specific hvac719.](http://docs.aws.amazon.com/whitepapers/latest/designing-mqtt-topics-aws-iot-core/images/topic-level-structure.png)
+![MQTT topic structure showing hierarchy from general hv100/bld1518/basement to specific hvac719.](https://docs.aws.amazon.com/whitepapers/latest/designing-mqtt-topics-aws-iot-core/images/topic-level-structure.png)
 
  **Include any relevant routing information in the MQTT topic.** Relevant routing information includes, but is not limited to, the IoT application identifier, any groups the device may be a part of, such as installed location, and the unique identity of your IoT device. To continue with the previous HVAC system example, the MQTT topic `hv100/bld1518/basement/hvac719` includes all relevant routing information. Based on this MQTT topic, you can design a system that captures any data related to the entire application using the identifier, `hv100`, but also can target different areas of interest for subscribing to messages, such as the building location.
 

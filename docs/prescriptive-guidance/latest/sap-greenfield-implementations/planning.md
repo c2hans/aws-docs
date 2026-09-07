@@ -14,7 +14,7 @@ Building a responsibility assignment matrix for the infrastructure team is criti
 
 Here is an excerpt from a sample RACI matrix for a greenfield SAP implementation project. (To download the complete RACI matrix, see attachments.)
 
-![Excerpt from a RACI matrix for an SAP on AWS greenfield project.](http://docs.aws.amazon.com/prescriptive-guidance/latest/sap-greenfield-implementations/images/guide-img/3deae530-9b57-46ef-8dd1-542c426e8365/images/791525fd-71b7-46f4-8a0a-4f464e1b3de5.png)
+![Excerpt from a RACI matrix for an SAP on AWS greenfield project.](https://docs.aws.amazon.com/prescriptive-guidance/latest/sap-greenfield-implementations/images/guide-img/3deae530-9b57-46ef-8dd1-542c426e8365/images/791525fd-71b7-46f4-8a0a-4f464e1b3de5.png)
 
 ## Review the SoW
 <a name="sow"></a>
@@ -34,7 +34,7 @@ Build a high-level organization chart that depicts the teams and leadership stru
 
 The following diagram provides an example of a typical SAP on AWS infrastructure organization chart.
 
-![Example of an SAP on AWS infrastructure organization chart.](http://docs.aws.amazon.com/prescriptive-guidance/latest/sap-greenfield-implementations/images/guide-img/3deae530-9b57-46ef-8dd1-542c426e8365/images/c187731a-0631-486a-a30d-319e2c8950df.png)
+![Example of an SAP on AWS infrastructure organization chart.](https://docs.aws.amazon.com/prescriptive-guidance/latest/sap-greenfield-implementations/images/guide-img/3deae530-9b57-46ef-8dd1-542c426e8365/images/c187731a-0631-486a-a30d-319e2c8950df.png)
 
 ## Establish an engagement model with your in-house cloud team
 <a name="engagement-model"></a>
@@ -47,7 +47,7 @@ The engagement model or support agreement should also be part of the RACI matrix
 
 When you establish an engagement model, determine whether a waterfall, agile, or mixed approach will be the key method for moving forward. AWS Professional Services observed a 300 percent increase in task completion and 94 percent reduction in planning time in engagements that implemented an agile or mixed approach compared with a waterfall approach. In the planning phase, you should also select a communication plan and tooling approach with the help of the customer. The following table shows a sample communication plan.
 
-![Sample communication plan for SAP on AWS greenfield projects.](http://docs.aws.amazon.com/prescriptive-guidance/latest/sap-greenfield-implementations/images/guide-img/3deae530-9b57-46ef-8dd1-542c426e8365/images/54c861bf-439b-4a29-ad18-73811c1ef36a.png)
+![Sample communication plan for SAP on AWS greenfield projects.](https://docs.aws.amazon.com/prescriptive-guidance/latest/sap-greenfield-implementations/images/guide-img/3deae530-9b57-46ef-8dd1-542c426e8365/images/54c861bf-439b-4a29-ad18-73811c1ef36a.png)
 
 Lastly, make sure to identify the customer and the SAP Basis team that will support the project early. Training them as you implement and migrate new solutions is key to starting knowledge transfer sessions early.
 
@@ -56,7 +56,7 @@ Lastly, make sure to identify the customer and the SAP Basis team that will supp
 
 If your IT organization has an in-house cloud team, that team should document** **the cloud build and deployment process by using process flow diagrams and share these diagrams with the entire team. You want your key stakeholders to easily detect any bottlenecks or inefficiencies in the process, and understand the role that your existing internal processes play in creating inefficiencies or delays. In the following example, you can see how the Active Directory join and Domain Name System (DNS) update processes take the longest time to complete. Having this visual might motivate the teams to collaborate and figure out how to reduce the time involved in that step of the process.
 
-![Example of a process flow diagram for the cloud build and deployment process of an SAP on AWS greenfield implementation](http://docs.aws.amazon.com/prescriptive-guidance/latest/sap-greenfield-implementations/images/guide-img/3deae530-9b57-46ef-8dd1-542c426e8365/images/253f531f-c8ff-49fa-a187-ba3191061867.png)
+![Example of a process flow diagram for the cloud build and deployment process of an SAP on AWS greenfield implementation](https://docs.aws.amazon.com/prescriptive-guidance/latest/sap-greenfield-implementations/images/guide-img/3deae530-9b57-46ef-8dd1-542c426e8365/images/253f531f-c8ff-49fa-a187-ba3191061867.png)
 
 Considerations:
 + Document the help desk process and workflow separately, share this information with the infrastructure team, and make sure that everyone has access to the help desk tools so there is no reliance on one person.  Oftentimes, there can be a complicated and time-consuming ticket process for doing Active Directory joins, DNS updates, opening up firewalls, and requesting encryption keys.  It's critical to document these processes and to consider the Service Level Agreement (SLA) of each team in the project planning phase.  It also helps explain the reasons for a delay or bottleneck that requires special attention to remove.
@@ -67,18 +67,18 @@ Considerations:
 
 The following charts provide an example roadmap for a multi-year SAP on AWS greenfield project.
 
-![Sample roadmap for the first year of an SAP on AWS greenfield project.](http://docs.aws.amazon.com/prescriptive-guidance/latest/sap-greenfield-implementations/images/guide-img/3deae530-9b57-46ef-8dd1-542c426e8365/images/10a1d20a-e9e2-4b0b-9cce-8e1d653f5994.png)
+![Sample roadmap for the first year of an SAP on AWS greenfield project.](https://docs.aws.amazon.com/prescriptive-guidance/latest/sap-greenfield-implementations/images/guide-img/3deae530-9b57-46ef-8dd1-542c426e8365/images/10a1d20a-e9e2-4b0b-9cce-8e1d653f5994.png)
 
-![Sample roadmap for the second year of an SAP on AWS greenfield project.](http://docs.aws.amazon.com/prescriptive-guidance/latest/sap-greenfield-implementations/images/guide-img/3deae530-9b57-46ef-8dd1-542c426e8365/images/87fb7841-778d-48a9-88a5-612d4022db3c.png)
+![Sample roadmap for the second year of an SAP on AWS greenfield project.](https://docs.aws.amazon.com/prescriptive-guidance/latest/sap-greenfield-implementations/images/guide-img/3deae530-9b57-46ef-8dd1-542c426e8365/images/87fb7841-778d-48a9-88a5-612d4022db3c.png)
 
-![Sample roadmap for the third year of an SAP on AWS greenfield project.](http://docs.aws.amazon.com/prescriptive-guidance/latest/sap-greenfield-implementations/images/guide-img/3deae530-9b57-46ef-8dd1-542c426e8365/images/ae124f9f-8f50-4a5c-9d19-752bc83329de.png)
+![Sample roadmap for the third year of an SAP on AWS greenfield project.](https://docs.aws.amazon.com/prescriptive-guidance/latest/sap-greenfield-implementations/images/guide-img/3deae530-9b57-46ef-8dd1-542c426e8365/images/ae124f9f-8f50-4a5c-9d19-752bc83329de.png)
 
-![Sample roadmap for the final year of an SAP on AWS greenfield project.](http://docs.aws.amazon.com/prescriptive-guidance/latest/sap-greenfield-implementations/images/guide-img/3deae530-9b57-46ef-8dd1-542c426e8365/images/45509d64-7a3c-49c0-8e21-7e252e18cba3.png)
+![Sample roadmap for the final year of an SAP on AWS greenfield project.](https://docs.aws.amazon.com/prescriptive-guidance/latest/sap-greenfield-implementations/images/guide-img/3deae530-9b57-46ef-8dd1-542c426e8365/images/45509d64-7a3c-49c0-8e21-7e252e18cba3.png)
 
 The following chart shows example engagement timelines with AWS Professional Services for the same project.
 
-![Sample AWS Professional Services engagement timeline for an SAP on AWS greenfield project.](http://docs.aws.amazon.com/prescriptive-guidance/latest/sap-greenfield-implementations/images/guide-img/3deae530-9b57-46ef-8dd1-542c426e8365/images/4df44770-3988-4522-9012-8cc43e2ce7dd.png)
+![Sample AWS Professional Services engagement timeline for an SAP on AWS greenfield project.](https://docs.aws.amazon.com/prescriptive-guidance/latest/sap-greenfield-implementations/images/guide-img/3deae530-9b57-46ef-8dd1-542c426e8365/images/4df44770-3988-4522-9012-8cc43e2ce7dd.png)
 
 The following chart shows a go-live milestone tracker for this project.
 
-![Sample milestone tracker for an SAP on AWS greenfield project.](http://docs.aws.amazon.com/prescriptive-guidance/latest/sap-greenfield-implementations/images/guide-img/3deae530-9b57-46ef-8dd1-542c426e8365/images/e592217d-0ce2-4a5b-9528-73e3d10a5616.png)
+![Sample milestone tracker for an SAP on AWS greenfield project.](https://docs.aws.amazon.com/prescriptive-guidance/latest/sap-greenfield-implementations/images/guide-img/3deae530-9b57-46ef-8dd1-542c426e8365/images/e592217d-0ce2-4a5b-9528-73e3d10a5616.png)

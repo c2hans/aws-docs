@@ -17,7 +17,7 @@ To choose an architecture, these are the most important characteristics to consi
 
 The following figure is a decision chart to help you select an architecture for integrating third-party services in the AWS Cloud.
 
-![Decision tree to select implementation architecture](http://docs.aws.amazon.com/prescriptive-guidance/latest/integrate-third-party-services/images/guide-img/80f3a808-d645-486e-82c4-f574fdcf6710/images/2a55c7fd-6818-4ddd-8af6-47608573b103.png)
+![Decision tree to select implementation architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/integrate-third-party-services/images/guide-img/80f3a808-d645-486e-82c4-f574fdcf6710/images/2a55c7fd-6818-4ddd-8af6-47608573b103.png)
 
 The following table compares the integration architectures discussed in this guide.
 

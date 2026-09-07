@@ -9,7 +9,7 @@ Automated testing with a specialized framework and tools can reduce human interv
 
 Use DevOps pipelines in the different stages for performance testing.
 
-![Process diagram shows the five stages.](http://docs.aws.amazon.com/prescriptive-guidance/latest/performance-engineering-aws/images/guide-img/7c6508f5-55cf-496c-a7ac-ba285b7b71ef/images/560075e2-ae27-45d7-851c-d1960c655b23.png)
+![Process diagram shows the five stages.](https://docs.aws.amazon.com/prescriptive-guidance/latest/performance-engineering-aws/images/guide-img/7c6508f5-55cf-496c-a7ac-ba285b7b71ef/images/560075e2-ae27-45d7-851c-d1960c655b23.png)
 
 The five stages for the test automation pipeline are:
 

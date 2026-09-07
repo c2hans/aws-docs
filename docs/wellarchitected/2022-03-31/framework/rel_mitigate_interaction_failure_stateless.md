@@ -9,7 +9,7 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 
  Services should either not require state, or should offload state such that between different client requests, there is no dependence on locally stored data on disk and in memory. This enables servers to be replaced at will without causing an availability impact. Amazon ElastiCache or Amazon DynamoDB are good destinations for offloaded state.
 
-![In this stateless web application, session state is offloaded to Amazon ElastiCache.](http://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/images/stateless-webapp.png)
+![In this stateless web application, session state is offloaded to Amazon ElastiCache.](https://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/images/stateless-webapp.png)
 
  When users or services interact with an application, they often perform a series of interactions that form a session. A session is unique data for users that persists between requests while they use the application. A stateless application is an application that does not need knowledge of previous interactions and does not store session information.
 

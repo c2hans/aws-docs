@@ -17,7 +17,7 @@ If App-A is publicly available and used by many customers, an organization may w
 
 To use AppKeys and TenantIDs, you must have an HTTPS proxy server that allows adding HTTPS headers to a request. The following diagram shows how AppKeys and TenantIDs work.
 
-![Diagram showing how AppKeys and TenantIDs control application and tenant access to a WebRTC session.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/app-key-diagram.png)
+![Diagram showing how AppKeys and TenantIDs control application and tenant access to a WebRTC session.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/app-key-diagram.png)
 
 In the image, App-A has tenants A-1 and A-2, and App-B has tenants B-1 and B-2. In this case, the AppKey only allows App-A to connect to the WebRTC media session, and the tenant ID only admits Tenant A-1 to the session.
 

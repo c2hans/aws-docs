@@ -82,14 +82,14 @@ Run the below command to conduct the performance testing in each of the PostgreS
 
 The following diagram shows the gradual increase in TPS.
 
-![Graph that shows the gradual increase in TPS.](http://docs.aws.amazon.com/whitepapers/latest/optimizing-postgresql-on-ec2-using-ebs/images/image6.png)
+![Graph that shows the gradual increase in TPS.](https://docs.aws.amazon.com/whitepapers/latest/optimizing-postgresql-on-ec2-using-ebs/images/image6.png)
 
 The following graph shows the gradual decrease in latency.
 
-![Graph that shows the gradual decrease in latency.](http://docs.aws.amazon.com/whitepapers/latest/optimizing-postgresql-on-ec2-using-ebs/images/image7.png)
+![Graph that shows the gradual decrease in latency.](https://docs.aws.amazon.com/whitepapers/latest/optimizing-postgresql-on-ec2-using-ebs/images/image7.png)
 
  *Latency comparison for various Amazon EBS storage types*
 
  The below graph shows the gradual decrease in initial connection time.
 
-![Graph that shows the gradual decrease in initial connection time.](http://docs.aws.amazon.com/whitepapers/latest/optimizing-postgresql-on-ec2-using-ebs/images/image8.png)
+![Graph that shows the gradual decrease in initial connection time.](https://docs.aws.amazon.com/whitepapers/latest/optimizing-postgresql-on-ec2-using-ebs/images/image8.png)

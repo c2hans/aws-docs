@@ -14,4 +14,4 @@ An alien IP is a network or subnet range that is external to the VPC CIDR block 
 
 Using alien IP addresses does have implications for how you interconnect VPCs to other VPCs, as well as how you can interconnect VPCs to your data centers. The following diagram helps determine if an alien IP address is required.
 
-![Process flow for identifying if you require an alien IP address.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f5-big-ip/images/guide-img/migration-f5-big-ip/images/F5-alien-address.png)
+![Process flow for identifying if you require an alien IP address.](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f5-big-ip/images/guide-img/migration-f5-big-ip/images/F5-alien-address.png)

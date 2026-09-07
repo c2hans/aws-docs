@@ -60,7 +60,7 @@ You can optimize a prompt through using a playground or Prompt management in the
 
 1. To learn how to write a prompt in an Amazon Bedrock playground, follow the steps at [Generate responses in the console using playgrounds](playgrounds.md).
 
-1. After you write a prompt and select a model, choose the wand icon (![Sparkle icon representing cleaning or refreshing functionality.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/wand.png)). The **Optimize prompt** dialog box opens, and Amazon Bedrock begins optimizing your prompt.
+1. After you write a prompt and select a model, choose the wand icon (![Sparkle icon representing cleaning or refreshing functionality.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/wand.png)). The **Optimize prompt** dialog box opens, and Amazon Bedrock begins optimizing your prompt.
 
 1. When Amazon Bedrock finishes analyzing and optimizing your prompt, you can compare your original prompt side by side with the optimized prompt in the dialog box.
 
@@ -72,7 +72,7 @@ You can optimize a prompt through using a playground or Prompt management in the
 
 1. To learn how to write a prompt using Prompt management, follow the steps at [Create a prompt using Prompt management](prompt-management-create.md).
 
-1. After you write a prompt and select a model, choose **(![Sparkle icon representing cleaning or refreshing functionality.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/wand.png)) Optimize** at the top of the **Prompt** box.
+1. After you write a prompt and select a model, choose **(![Sparkle icon representing cleaning or refreshing functionality.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/wand.png)) Optimize** at the top of the **Prompt** box.
 
 1. When Amazon Bedrock finishes analyzing and optimizing your prompt, your optimized prompt is displayed as a variant side by side with the original prompt.
 

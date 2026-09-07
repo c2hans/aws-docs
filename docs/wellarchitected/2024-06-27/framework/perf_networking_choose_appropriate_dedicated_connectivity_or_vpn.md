@@ -41,7 +41,7 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 +  Validate your connectivity setup before deploying to production. Perform security and performance testing to assure it meets your bandwidth, reliability, latency, and compliance requirements.
 +  Regularly monitor your connectivity performance and usage and optimize if required.
 
-![A flowchart that describes the options you should consider when determining if you need deterministic performance in your networking or not.](http://docs.aws.amazon.com/wellarchitected/2024-06-27/framework/images/deterministic-networking-flowchart.png)
+![A flowchart that describes the options you should consider when determining if you need deterministic performance in your networking or not.](https://docs.aws.amazon.com/wellarchitected/2024-06-27/framework/images/deterministic-networking-flowchart.png)
 
 ## Resources
 <a name="resources"></a>

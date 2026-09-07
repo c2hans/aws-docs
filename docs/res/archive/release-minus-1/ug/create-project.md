@@ -20,7 +20,7 @@ The project ID cannot be changed after creation.
 1. The home directory filesystem may either use the Shared Home Filesystem (default), EFS, FSx for Lustre, FSx NetApp ONTAP, or EBS volume storage.
 
    It is important to note that the shared home filesystem, EFS, FSx for Lustre, and FSx NetApp ONTAP can be shared across multiple projects and VDIs. However, the EBS volume storage option will require every VDI in that project to have their own home directory that is not shared between other VDIs or projects.
-![Create a new project with resource configurations](http://docs.aws.amazon.com/res/archive/release-minus-1/ug/images/res-create-new-project.png)
+![Create a new project with resource configurations](https://docs.aws.amazon.com/res/archive/release-minus-1/ug/images/res-create-new-project.png)
 
 1. Assign users and/or groups the appropriate role ("Project Member" or "Project Owner"). See [Default permissions profiles](permission-matrix.md) for the actions each role can take.
 

@@ -45,7 +45,7 @@ To create a custom authentication UI component, you can run the Authenticator UI
 
 The following diagram shows an architecture that uses Amazon Cognito to authenticate users for a React web application.
 
-![Amazon Cognito authenticates users for a React web application.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/b2cea053-6931-4404-8aa8-c623ce2024ac/images/b7f69f20-a39d-4a78-8605-7dab73c59052.png)
+![Amazon Cognito authenticates users for a React web application.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/b2cea053-6931-4404-8aa8-c623ce2024ac/images/b7f69f20-a39d-4a78-8605-7dab73c59052.png)
 
 ## Tools
 <a name="authenticate-react-app-users-cognito-amplify-ui-tools"></a>

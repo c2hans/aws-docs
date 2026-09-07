@@ -50,7 +50,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-app
 
  As the baseline for the comparison, this guide uses an application running on Windows in Amazon EC2, as shown in the following diagram.
 
-![Architecture diagram showing a legacy .NET application on Amazon EC2 costing USD$192.57 a month.](http://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/legacy-dotnet-app-on-ec2-windows.png)
+![Architecture diagram showing a legacy .NET application on Amazon EC2 costing USD$192.57 a month.](https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/legacy-dotnet-app-on-ec2-windows.png)
 
 ### Summary by service
 <a name="summary-by-service"></a>

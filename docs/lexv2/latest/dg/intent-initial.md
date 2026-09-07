@@ -23,7 +23,7 @@ You can configure the following options within the initial response:
 
 In the absence of a condition or an explicit next step, Amazon Lex V2 moves to the next slot in priority order.
 
-![The advanced options for the initial response to a user's request.](http://docs.aws.amazon.com/lexv2/latest/dg/images/response-initial.png)
+![The advanced options for the initial response to a user's request.](https://docs.aws.amazon.com/lexv2/latest/dg/images/response-initial.png)
 
 **Note**
 On August 17, 2022, Amazon Lex V2 released a change to the way conversations are managed with the user. This change gives you more control over the path that the user takes through the conversation. For more information, see [Changes to conversation flows in Amazon Lex V2](understanding-new-flows.md). Bots created before August 17, 2022 do not support dialog code hook messages, setting values, configuring next steps, and adding conditions.

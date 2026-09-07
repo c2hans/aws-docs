@@ -41,7 +41,7 @@ Determine whether any of the instances that meet the previous criteria are close
 
 The following flow diagram illustrates how the default termination policy works for groups that use a launch template.
 
-![A flowchart showing how an Auto Scaling group uses the default termination policy to terminate instances.](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/termination-policy-default-flowchart-diagram.png)
+![A flowchart showing how an Auto Scaling group uses the default termination policy to terminate instances.](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/termination-policy-default-flowchart-diagram.png)
 
 ## Default termination policy and mixed instances groups
 <a name="default-termination-policy-mixed-instances-groups"></a>

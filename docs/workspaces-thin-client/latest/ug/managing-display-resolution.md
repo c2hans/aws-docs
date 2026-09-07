@@ -26,7 +26,7 @@ While primary 4K monitors and 4K ultra-wide monitors are capable of the maximum 
 
 2K and 4K resolution is only available through the primary monitor HDMI port located on your WorkSpaces Thin Client device.
 
-![Device back panel with HDMI IN and HDMI OUT ports, with HDMI OUT port indicated.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/monitor-port.jpg)
+![Device back panel with HDMI IN and HDMI OUT ports, with HDMI OUT port indicated.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/monitor-port.jpg)
 
 WorkSpaces Thin Client automatically recognizes ultra-high definition (2K or 4k) monitors when they are connected to the primary monitor HDMI port. For a list of supported 2K and 4K monitors, see [Supported peripherals](supported-peripherals.md).
 
@@ -60,7 +60,7 @@ The WorkSpaces Thin Client device must be shut down before connecting a new disp
 1. Go to **Display Resolution**.
 
 1. Select **Primary Monitor** to open the drop down menu.
-![Settings page showing Peripheral devices section with mouse, display, sound, and camera options.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/scaling.png)
+![Settings page showing Peripheral devices section with mouse, display, sound, and camera options.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/scaling.png)
 
 1. Select one of the following:
    + 3840x2160 – 4K resolution when using a single monitor that supports ultra-high definition.
@@ -69,7 +69,7 @@ The WorkSpaces Thin Client device must be shut down before connecting a new disp
 1. Select **Scaling** and select the desired setting from the drop down list.
 
 1. Restart your device by selecting **Yes** in the pop-up window.
-![Dialog box with No and Yes buttons to confirm resolution change and device restart.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/resolution_popup.png)
+![Dialog box with No and Yes buttons to confirm resolution change and device restart.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/resolution_popup.png)
 
 ## Resetting the display resolution
 <a name="reset-resolution"></a>

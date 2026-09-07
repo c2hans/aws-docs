@@ -9,7 +9,7 @@ Read this section if you decided that you should use the [simple option](scenari
 
 With the simple option, MediaLive users must have permissions to use the trusted entity wizard, which is in the **IAM Role** section on the **Channel and input details** pane:
 
-![IAM role configuration for AWS Elemental MediaLive channel with options to use or create roles.](http://docs.aws.amazon.com/medialive/latest/ug/images/medialiveaccessrole_withUpdateButton.png)
+![IAM role configuration for AWS Elemental MediaLive channel with options to use or create roles.](https://docs.aws.amazon.com/medialive/latest/ug/images/medialiveaccessrole_withUpdateButton.png)
 
 You must set up all MediaLive users with permissions to use the wizard to perform two types of activities:
 + Create and update the MediaLiveAccessRole trusted entity. The first user to create a MediaLive channel creates the trusted entity. Then each time MediaLive releases a new feature that requires new permissions, a user must press a button that automatically updates the trusted entity.

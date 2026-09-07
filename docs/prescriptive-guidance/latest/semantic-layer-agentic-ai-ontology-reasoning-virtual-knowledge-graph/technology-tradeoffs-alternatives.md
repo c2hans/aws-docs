@@ -185,4 +185,4 @@ While Neptune is the recommended managed option, the semantic layer architecture
 ## Decision Framework
 <a name="decision-framework.4ebd0208-8328-5d69-8c44-ec50939c0967"></a>
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/semantic-layer-agentic-ai-ontology-reasoning-virtual-knowledge-graph/images/guide-img/5cb278fc-4bbf-4e43-a830-4b4f72516d31/images/1d828026-c8dc-4a06-9558-099c79103ecd.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/semantic-layer-agentic-ai-ontology-reasoning-virtual-knowledge-graph/images/guide-img/5cb278fc-4bbf-4e43-a830-4b4f72516d31/images/1d828026-c8dc-4a06-9558-099c79103ecd.png)

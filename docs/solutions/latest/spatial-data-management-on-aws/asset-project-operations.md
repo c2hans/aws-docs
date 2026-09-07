@@ -7,11 +7,11 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 
 <a name="search"></a>===Search You can serach Files and Assets from the search functionality
 
-![Search screen — search by file name](http://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/search-example.png)
+![Search screen — search by file name](https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/search-example.png)
 
 Other options for search
 
-![Search Options](http://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/search-query-options.png)
+![Search Options](https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/search-query-options.png)
 
 ## Add users to a project
 <a name="add-users-to-project"></a>
@@ -32,4 +32,4 @@ You can grant users or groups access to a project and assign permission levels t
 
 The user or group now has access to the project with the specified permission level.
 
-![Access Management — add user or a group](http://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/add-user-to-project.png)
+![Access Management — add user or a group](https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/add-user-to-project.png)

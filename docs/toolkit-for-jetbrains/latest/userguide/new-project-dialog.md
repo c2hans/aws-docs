@@ -17,7 +17,7 @@ The **New Project** dialog box in the AWS Toolkit for JetBrains is displayed whe
 **Note**
 The following screenshot shows the **New Project** dialog box for IntelliJ IDEA, but the field descriptions also apply to PyCharm and WebStorm.
 
-![The New Project dialog box for IntelliJ IDEA.](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/sam-create-images.png)
+![The New Project dialog box for IntelliJ IDEA.](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/sam-create-images.png)
 
 The **New Project** dialog box contains the following items:
 
@@ -45,7 +45,7 @@ The **New Project** dialog box contains the following items:
 **Note**
 When you create a new solution, this dialog box contains the title **New Solution** instead of **New Project**. However, the dialog box's contents are the same.
 
-![The New Project dialog box for JetBrains Rider.](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/sam-create-images-rider.png)
+![The New Project dialog box for JetBrains Rider.](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/sam-create-images-rider.png)
 
 The **New Project** dialog box contains the following items:
 

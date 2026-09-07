@@ -11,7 +11,7 @@ The goal of the reinforcement learning in DeepRacer is to learn the optimal poli
 
 The following sketch illustrates this learning process:
 
-![Reinforcement learning process diagram](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer-reinforcement-learning-overview.png)
+![Reinforcement learning process diagram](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer-reinforcement-learning-overview.png)
 
 The agent embodies a neural network that represents a function to approximate the agent’s policy. The image from the vehicle’s front camera is the environment state and the agent action is defined by the agent’s speed and steering angles.
 

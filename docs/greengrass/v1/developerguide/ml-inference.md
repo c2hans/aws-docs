@@ -20,7 +20,7 @@ You can train your inference models anywhere, deploy them locally as *machine le
 
 The following diagram shows the AWS IoT Greengrass ML inference workflow.
 
-![Components of the machine learning workflow and the information flow between the core device, AWS IoT Greengrass service, and cloud-trained models.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/ml-inference/diagram-ml-overview.png)
+![Components of the machine learning workflow and the information flow between the core device, AWS IoT Greengrass service, and cloud-trained models.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/ml-inference/diagram-ml-overview.png)
 
 AWS IoT Greengrass ML inference simplifies each step of the ML workflow, including:
 + Building and deploying ML framework prototypes.

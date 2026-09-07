@@ -73,7 +73,7 @@ This section shows health of your AI-Agent initiated Self-Service interactions. 
 
 The following image shows an example **Self-service AI performance summary** chart.
 
-![The self-service AI agent performance summary chart.](http://docs.aws.amazon.com/connect/latest/adminguide/images/self-service-ai-performance-summary.png)
+![The self-service AI agent performance summary chart.](https://docs.aws.amazon.com/connect/latest/adminguide/images/self-service-ai-performance-summary.png)
 
 ## Agent assistance AI performance summary
 <a name="ai-agent-assistance-performance-summary-dashboard"></a>
@@ -97,7 +97,7 @@ This widget shows the health of your agent-assisted interactions where AI provid
 
 The following image shows an example **Agent assistance AI performance summary** chart.
 
-![The agent assistance AI performance summary chart.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ai-agent-assistance-performance-summary.png)
+![The agent assistance AI performance summary chart.](https://docs.aws.amazon.com/connect/latest/adminguide/images/ai-agent-assistance-performance-summary.png)
 
 ## AI agents performance
 <a name="ai-agents-performance"></a>
@@ -142,7 +142,7 @@ You can expand or collapse the use case rows to drill down into specific agent v
 
 The following image shows an example **AI agents performance** table.
 
-![The AI agents performance table.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ai-agents-performance.png)
+![The AI agents performance table.](https://docs.aws.amazon.com/connect/latest/adminguide/images/ai-agents-performance.png)
 
 ## AI agents by invocation success rate
 <a name="ai-agents-by-invocation-success-chart"></a>
@@ -151,7 +151,7 @@ The AI agents by invocation success rate chart displays the invocation success r
 
 The following image shows an example **AI agents by invocation success rate** chart.
 
-![The AI agents by invocation success rate chart.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ai-agents-by-invocation-success-chart.png)
+![The AI agents by invocation success rate chart.](https://docs.aws.amazon.com/connect/latest/adminguide/images/ai-agents-by-invocation-success-chart.png)
 
 ## Knowledge base usage
 <a name="knowledge-base-usage"></a>
@@ -163,7 +163,7 @@ This table provides a drill-down view of knowledge base articles referenced by y
 
 The following image shows an example **Knowledge base usage** table.
 
-![The knowledge base usage table.](http://docs.aws.amazon.com/connect/latest/adminguide/images/knowledge-base-usage.png)
+![The knowledge base usage table.](https://docs.aws.amazon.com/connect/latest/adminguide/images/knowledge-base-usage.png)
 
 ## AI agent performance trend
 <a name="ai-agent-performance-trend"></a>
@@ -178,7 +178,7 @@ For example:
 
 The following image shows an example **AI agent performance trend** chart.
 
-![The AI agent performance trend chart.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ai-agent-performance-trend.png)
+![The AI agent performance trend chart.](https://docs.aws.amazon.com/connect/latest/adminguide/images/ai-agent-performance-trend.png)
 
 ## AI tools usage
 <a name="ai-tools-usage"></a>
@@ -222,7 +222,7 @@ You can expand or collapse the AI agent type and tool type rows to drill down in
 
 The following image shows an example **AI tools usage** table.
 
-![The AI tools usage table.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ai-tools-usage.png)
+![The AI tools usage table.](https://docs.aws.amazon.com/connect/latest/adminguide/images/ai-tools-usage.png)
 
 ## AI prompt performance
 <a name="ai-prompt-performance"></a>
@@ -255,7 +255,7 @@ In addition to using the page filters, you can add filters to the table for spec
 
 The following image shows an example **AI prompt performance** table.
 
-![The AI prompt performance table.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ai-prompt-performance.png)
+![The AI prompt performance table.](https://docs.aws.amazon.com/connect/latest/adminguide/images/ai-prompt-performance.png)
 
 ## Proactive intents trend
 <a name="proactive-intents-trend"></a>
@@ -275,7 +275,7 @@ The proactive intents trend chart shows the Proactive intents detected (blue bar
 
 The following image shows an example **Proactive intents trend** chart.
 
-![The proactive intents trend chart.](http://docs.aws.amazon.com/connect/latest/adminguide/images/proactive-intents-trend.png)
+![The proactive intents trend chart.](https://docs.aws.amazon.com/connect/latest/adminguide/images/proactive-intents-trend.png)
 
 ## AI prompts by invocation latency
 <a name="ai-prompts-by-invocation-latency"></a>
@@ -284,7 +284,7 @@ The AI prompts by invocation latency chart displays the average invocation laten
 
 The following image shows an example **AI prompts by invocation latency** chart.
 
-![The AI prompts by invocation latency chart.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ai-prompts-by-invocation-latency.png)
+![The AI prompts by invocation latency chart.](https://docs.aws.amazon.com/connect/latest/adminguide/images/ai-prompts-by-invocation-latency.png)
 
 ## AI prompts by invocation success rate
 <a name="ai-prompts-by-invocation-success-rate"></a>
@@ -293,4 +293,4 @@ The AI prompts by invocation success rate chart displays the invocation success 
 
 The following image shows an example **AI prompts by invocation success rate** chart.
 
-![The AI prompts by invocation success rate chart.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ai-prompts-by-invocation-success-rate.png)
+![The AI prompts by invocation success rate chart.](https://docs.aws.amazon.com/connect/latest/adminguide/images/ai-prompts-by-invocation-success-rate.png)

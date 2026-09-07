@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/overvie
 
 Amazon Location Service provides access to location-based functionality and data providers through AWS resources. Amazon Location offers five types of AWS resources, depending on the type of functionality you need. Use the different resources together to create a full location-based application. You can create one or more of these resources by using the Amazon Location console, the Amazon Location APIs, or the SDKs.
 
-![Five Amazon Location Service resource types: Maps , Place indexes, Route calculators, Geofence collections, and Trackers.](http://docs.aws.amazon.com/location/previous/developerguide/images/how-it-works.PNG)
+![Five Amazon Location Service resource types: Maps , Place indexes, Route calculators, Geofence collections, and Trackers.](https://docs.aws.amazon.com/location/previous/developerguide/images/how-it-works.PNG)
 
 Each resource defines the underlying [data provider](what-is-data-provider.md) to be used (where applicable), and gives access to functionality related to its type.
 

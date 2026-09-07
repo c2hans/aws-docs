@@ -9,7 +9,7 @@ In a choreographed system, individual components receive a task, perform some wo
 
 In the following diagram, there is no coordination between the Lambda functions. Each function only processes messages in the subscribed queue. Each function is responsible for its own error handling and can control concurrency—for example, if a downstream dependency has a requests per second (RPS) limit.
 
-![How choreography works in a microservices architecture on AWS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-integrating-microservices/images/guide-img/89e63ee3-ec0f-41b0-920f-39a1fbded9a6/images/9363c951-0935-4851-bfbd-baa663484c70.png)
+![How choreography works in a microservices architecture on AWS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-integrating-microservices/images/guide-img/89e63ee3-ec0f-41b0-920f-39a1fbded9a6/images/9363c951-0935-4851-bfbd-baa663484c70.png)
 
 An EDA provides a number of benefits, such as loose coupling of services and extensibility. A full discussion of EDA principles is beyond the scope of this guide. For more information, see:
 + [AWS Well-Architected Framework – Serverless Application Lens](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/event-driven-architectures.html)

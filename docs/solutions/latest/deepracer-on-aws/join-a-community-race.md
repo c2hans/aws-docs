@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/join-a
 # Join a community race
 <a name="join-a-community-race"></a>
 
-![Community races](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_races.png)
+![Community races](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_races.png)
 
 Community races allow you to test your trained DeepRacer model against other participants in competitive events organized by admins or race facilitators. When a community race is created and opened for submissions, you can select one of your trained models and submit it to the race, where it will be evaluated by running multiple laps on the designated track to record its best lap time. Your model competes against other racers' submissions, with results displayed on a leaderboard that ranks all participants based on their fastest lap times, allowing you to see how your model performs compared to others without needing to race in real-time. Community races provide an exciting way to benchmark your reinforcement learning skills, experiment with different reward functions and hyperparameters, and iterate on your models to climb the rankings throughout the competition period.
 
@@ -18,7 +18,7 @@ You can see whether there are any open races that are accepting submissions by c
 
 You can enter a race by clicking the blue **Enter race** button at the upper-right corner of the race detail page. Doing so will bring you to a page which will reiterate the characteristics of that race in the **Race details** section, and will ask you to select which model you would like to submit to the race under the **Choose model** section. In the model selection dropdown, you will see a list of all the models you have trained that are eligible for submission.
 
-![Enter a race](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_enter_race.png)
+![Enter a race](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_enter_race.png)
 
 To enter the race, select a model from the list of options and click **Enter race**. You will be directed back to the race details page where you will be able to see your model in the **Your submissions** tab.
 

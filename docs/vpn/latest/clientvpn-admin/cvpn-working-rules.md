@@ -48,7 +48,7 @@ This section describes how authorization rules work for AWS Client VPN. It inclu
 
 The following diagram shows the example architecture that is used for the example scenarios found in this section.
 
-![Example Client VPN architecture](http://docs.aws.amazon.com/vpn/latest/clientvpn-admin/images/cvpn-auth-rules.png)
+![Example Client VPN architecture](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/images/cvpn-auth-rules.png)
 
 ### Access to a single destination
 <a name="auth-rules1"></a>

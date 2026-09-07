@@ -18,7 +18,7 @@ For example, you might have the following users:
 
 The following image illustrates this example.
 
-![An example of log file delivery for multiple trails](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/images/eu-shared-01.png)
+![An example of log file delivery for multiple trails](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/images/eu-shared-01.png)
 
 **Note**
 You can create up to five trails per AWS Region. A multi-Region trail counts as one trail per Region.

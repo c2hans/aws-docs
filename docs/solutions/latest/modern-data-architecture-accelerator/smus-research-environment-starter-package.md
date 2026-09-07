@@ -9,7 +9,7 @@ The SMUS Research Environment Starter Package deploys a SageMaker Unified Studio
 
  **SMUS Research Environment starter kit architecture**
 
-![SMUS Research Environment starter kit — multi-team SageMaker Unified Studio in one account.](http://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/smus_research_environment.png)
+![SMUS Research Environment starter kit — multi-team SageMaker Unified Studio in one account.](https://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/smus_research_environment.png)
 
 This architecture is particularly effective when:
 

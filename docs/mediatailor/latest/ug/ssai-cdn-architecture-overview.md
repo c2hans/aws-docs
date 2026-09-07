@@ -43,7 +43,7 @@ In this recommended architecture:
 
 This architecture ensures optimal performance while maintaining the security and flexibility benefits of using a CDN.
 
-![Diagram showing CDN positioned between client players and AWS Elemental MediaTailor Ad Insertion](http://docs.aws.amazon.com/mediatailor/latest/ug/images/cdn-recommended-positioning.png)
+![Diagram showing CDN positioned between client players and AWS Elemental MediaTailor Ad Insertion](https://docs.aws.amazon.com/mediatailor/latest/ug/images/cdn-recommended-positioning.png)
 
 **Note**
 This flow varies slightly between VOD and live content. For VOD, manifests can be cached longer, while live content requires more frequent manifest updates to maintain stream continuity.
@@ -91,7 +91,7 @@ In this sub-optimal architecture:
 
 1. This architecture introduces additional latency, potential caching issues, and complicates troubleshooting.
 
-![Diagram showing CDN positioned between content origin and MediaTailor](http://docs.aws.amazon.com/mediatailor/latest/ug/images/cdn-not-recommended-positioning.png)
+![Diagram showing CDN positioned between content origin and MediaTailor](https://docs.aws.amazon.com/mediatailor/latest/ug/images/cdn-not-recommended-positioning.png)
 
 ## Request and response flow
 <a name="understand-request-flow"></a>

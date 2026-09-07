@@ -22,7 +22,7 @@ During a shift, the resources no longer serving traffic should have very low uti
 
  When you detect that an Availability Zone has become impaired, you can initiate a zonal shift with Route 53 ARC. Once this operation completes and existing cached DNS responses expire, all new requests are only routed to resources in the remaining Availability Zones. The following figure shows how zonal shift works. In the following figure we have a Route 53 alias record for `www.example.com` that points to `my-example-nlb-4e2d1f8bb2751e6a.elb.us-east-1.amazonaws.com`. The zonal shift is performed for Availability Zone 3.
 
-![Diagram showing a zonal shift.](http://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-resilience-patterns/images/zonal-shift.png)
+![Diagram showing a zonal shift.](https://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-resilience-patterns/images/zonal-shift.png)
 
  In the example, if the primary database instance is not in Availability Zone 3, then performing the zonal shift is the only action required to achieve the first outcome for evacuation, preventing work from being processed in the impacted Availability Zone. If the primary node was in Availability Zone 3, then you could perform a manually initiated failover (which does rely on the Amazon RDS control plane) in coordination with the zonal shift, if Amazon RDS did not already failover automatically. This will be true for all of the data plane-controlled solutions in this section.
 
@@ -56,7 +56,7 @@ If the Availability Zone has been declared to be unhealthy, they have multiple o
 
  The following figure shows how this approach can be used for multiple types of workloads.
 
-![Diagram showing multiple workload types can all use the HTTP endpoint solution](http://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-resilience-patterns/images/http-endpoint-solution.png)
+![Diagram showing multiple workload types can all use the HTTP endpoint solution](https://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-resilience-patterns/images/http-endpoint-solution.png)
 
  There are multiple ways to implement the HTTP endpoint approach, two of them are outlined next.
 
@@ -77,7 +77,7 @@ If the Availability Zone has been declared to be unhealthy, they have multiple o
 
  Let’s assume that the Availability Zone `us-east-1a` is mapped to `use1-az3` in the account where we have a workload where we want to perform an Availability Zone evacuation. For the resource record set created for `us-east-1a.load-balancer-name.elb.us-east-1.amazonaws.com` would associate a health check that tests the URL `https://{{bucket-name}}.s3.us-east-1.amazonaws.com/use1-az3.txt`. When you want to initiate an Availability Zone evacuation for `use1-az3`, upload a file named `use1-az3.txt` to the bucket using the CLI or API. The file doesn’t need to contain any content, but it does need to be public so that the Route 53 health check can access it. The following figure demonstrates this implementation being used to evacuate `use1-az3`.
 
-![Diagram showing using Amazon S3 as the target for a Route 53 health check](http://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-resilience-patterns/images/s3-for-route53-health-check.png)
+![Diagram showing using Amazon S3 as the target for a Route 53 health check](https://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-resilience-patterns/images/s3-for-route53-health-check.png)
 
 ### Using API Gateway and DynamoDB
 <a name="using-api-gateway-and-dynamodb"></a>
@@ -95,7 +95,7 @@ If the Availability Zone has been declared to be unhealthy, they have multiple o
 
 If the attribute is `true` (or isn’t present), API Gateway responds to the health check with an HTTP 200, if it is false, it responds with an HTTP 500. This implementation is shown in the following figure.
 
-![Diagram showing the use of API Gateway and DynamoDB as the target of Route 53 health checks](http://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-resilience-patterns/images/apigw-ddb-route53-health-checks.png)
+![Diagram showing the use of API Gateway and DynamoDB as the target of Route 53 health checks](https://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-resilience-patterns/images/apigw-ddb-route53-health-checks.png)
 
  In this solution you need to use API Gateway in front of DynamoDB so that you can make the endpoint publicly accessible as well as manipulate the request URL into a `GetItem` request for DynamoDB. The solution also provides flexibility if you want to include additional data in the request. For example, if you wanted to create more granular statuses, like per application, you can configure the health check URL to provide an application ID in the path or query string that is also matched against the DynamoDB item.
 

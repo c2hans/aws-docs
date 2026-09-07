@@ -110,7 +110,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-of-
 +  Monitor Replication Server metrics such as CPU utilization, input/output (I/O) characteristics, and network throughput. These metrics can help you determine whether to optimize Replication Server EC2 instance sizes or [Amazon Elastic Block Store](https://aws.amazon.com/ebs/) (Amazon EBS) disk types.
 +  Monitor drill and recovery launch metrics, such as the amount of time since the last drill or recovery instance was launched. This helps validate that you are performing drills with the frequency defined by your disaster runbooks.
 
-![This image shows an example CloudWatch dashboard for Elastic Disaster Recovery monitoring.](http://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-of-on-premises-applications-to-aws/images/examplecloudwatchdashboardforelasticdisasterrecoverymonitoring.png)
+![This image shows an example CloudWatch dashboard for Elastic Disaster Recovery monitoring.](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-of-on-premises-applications-to-aws/images/examplecloudwatchdashboardforelasticdisasterrecoverymonitoring.png)
 
  You can also use [Amazon EventBridge](https://aws.amazon.com/eventbridge/) to create rules for Elastic Disaster Recovery events you want to monitor, and configure notification alerts using [Amazon Simple Notification Service](https://aws.amazon.com/sns) (Amazon SNS). For example, you can configure Amazon SNS notifications for an EventBridge rule to notify you in the event that replication has stalled for any source servers. Doing so can help your teams quickly identify and address replication issues that could affect RPO and RTO if you need to recover these servers.
 

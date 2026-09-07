@@ -72,7 +72,7 @@ However, starting with a complete rehost of all applications delays the greater 
 
 At this stage of assessment, the focus is to incorporate an initial model for guiding migration strategy selection. To validate the migration strategy for the initial applications, use the model in conjunction with the business drivers and the prioritization criteria. The default logic of the decision tree will help you to determine the initial treatment for the scope. In the tree, the most complex approaches, such as refactor, or re-architect, are reserved for your strategic workloads.
 
-![The 6 R decision process discussed in this guide.](http://docs.aws.amazon.com/prescriptive-guidance/latest/application-portfolio-assessment-guide/images/guide-img/252c3f6c-9941-4934-9262-6561a28cd5f7/images/089b1c22-02d9-4e67-a9f5-413a2a60d13c.png)
+![The 6 R decision process discussed in this guide.](https://docs.aws.amazon.com/prescriptive-guidance/latest/application-portfolio-assessment-guide/images/guide-img/252c3f6c-9941-4934-9262-6561a28cd5f7/images/089b1c22-02d9-4e67-a9f5-413a2a60d13c.png)
 
 The first step to an initial model is to update the business drivers at the top of the tree with those defined by your organization. Next, apply the tree to application components rather than applications as a whole. For example, in the case of a three-tier application that has three components (front-end, application layer, and database), each component should transit the tree independently and be assigned a specific strategy and pattern. This is because in some cases you might want to rehost or replatform a given tier and refactor (re-architect) other tiers.
 

@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 1.  When using viewer’s geolocation as one of the token attributes, make sure the same cache behaviors have origin request policies attached, which include CloudFront-Viewer-Country and CloudFront-Viewer-Country-Region headers.
 
 1.  For each cache behavior subject to token protection, associate a function created when solution’s stack was launched. From CloudFront’s console, open distribution settings and navigate to a specific cache behavior configuration. In **Function associations** section, from **Viewer Request** select **CloudFront Function** event and form **Function ARN / Name**, then select the **[Stack Name]\_checkJWTToken** function.
-![Screenshot of optional function associations.](http://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/image14.png)
+![Screenshot of optional function associations.](https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/image14.png)
 
 1.  Choose **Save Changes** and repeat the above steps for each distribution and cache behavior where token validation mechanism must be in place.
 

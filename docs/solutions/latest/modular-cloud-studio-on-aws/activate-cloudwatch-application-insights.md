@@ -19,8 +19,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 
 1. In the **Monitoring** tab, in **Application Insights**, select **Auto-configure Application Monitoring**.
 
-![application insights](http://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/images/application-insights.png)
+![application insights](https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/images/application-insights.png)
 
 Monitoring for your applications is now activated and the following status box appears:
 
-![application insights 2](http://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/images/application-insights-2.png)
+![application insights 2](https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/images/application-insights-2.png)

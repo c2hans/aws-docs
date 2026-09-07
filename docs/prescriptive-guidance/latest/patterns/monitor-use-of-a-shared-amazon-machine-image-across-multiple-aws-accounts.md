@@ -50,7 +50,7 @@ The following resources are provisioned as IaC through Terraform:
 
 **Target architecture**
 
-![Architecture for monitoring shared AMI use and alerting users if the AMI is unshared or deregistered](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2d709249-0c68-47d7-be5d-46e8a73071ed/images/8c48c4dd-d681-4c32-9ba8-8f5ad2d66f64.png)
+![Architecture for monitoring shared AMI use and alerting users if the AMI is unshared or deregistered](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2d709249-0c68-47d7-be5d-46e8a73071ed/images/8c48c4dd-d681-4c32-9ba8-8f5ad2d66f64.png)
 
 The diagram shows the following workflow:
 

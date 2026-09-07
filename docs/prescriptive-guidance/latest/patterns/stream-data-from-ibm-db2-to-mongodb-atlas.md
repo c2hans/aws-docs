@@ -39,13 +39,13 @@ This reference architecture uses AWS Glue Studio to create extract, transform, a
 
 **Batch data load**
 
-![Migrating data to MongoDB Atlas in batch mode.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/805a376f-35f4-44cc-b4b0-8bf4d95c1e5d/images/68d87202-95ba-4e2a-9b3b-27dd6db6165e.png)
+![Migrating data to MongoDB Atlas in batch mode.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/805a376f-35f4-44cc-b4b0-8bf4d95c1e5d/images/68d87202-95ba-4e2a-9b3b-27dd6db6165e.png)
 
 For more information about the batch data migration, see the AWS blog post [Compose your ETL jobs for MongoDB Atlas with AWS Glue](https://aws.amazon.com/blogs/big-data/compose-your-etl-jobs-for-mongodb-atlas-with-aws-glue/).
 
 **Data streaming**
 
-![Migrating data to MongoDB Atlas in data streaming mode.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/805a376f-35f4-44cc-b4b0-8bf4d95c1e5d/images/b007a116-f463-418f-9721-647d80177e3b.png)
+![Migrating data to MongoDB Atlas in data streaming mode.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/805a376f-35f4-44cc-b4b0-8bf4d95c1e5d/images/b007a116-f463-418f-9721-647d80177e3b.png)
 
 For MongoDB Atlas reference architectures that support different usage scenarios, see [Migrating to MongoDB Atlas on AWS](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-mongodb-atlas/architecture.html) on the AWS Prescriptive Guidance website.
 

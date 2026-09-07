@@ -11,7 +11,7 @@ In the event of a successful response, the API returns a 202 http status code al
 
 The following diagram shows the invocations made to the AWS Lambda function endpoint for an outbound call.
 
-![Diagram showing the programming flow for invocations made to the AWS Lambda endpoint.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/sip-api-1.png)
+![Diagram showing the programming flow for invocations made to the AWS Lambda endpoint.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/sip-api-1.png)
 
 The endpoint configured for the SIP media application is invoked for different statuses of the outbound call. When a customer initiates a call, The Amazon Chime SDK invokes the endpoint with a `NEW_OUTBOUND_CALL` invocation event type.
 

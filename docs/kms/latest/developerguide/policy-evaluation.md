@@ -13,7 +13,7 @@ When authorizing access to a KMS key, AWS KMS evaluates the following:
 
 AWS KMS evaluates these policy mechanisms together to determine whether access to the KMS key is allowed or denied. To do this, AWS KMS uses a process similar to the one depicted in the following flowchart. The following flowchart provides a visual representation of the policy evaluation process.
 
-![Flowchart that describes the policy evaluation process](http://docs.aws.amazon.com/kms/latest/developerguide/images/updated-kms-authz-diagram.png)
+![Flowchart that describes the policy evaluation process](https://docs.aws.amazon.com/kms/latest/developerguide/images/updated-kms-authz-diagram.png)
 
 This flowchart is divided into two parts. The parts appear to be sequential, but they are typically evaluated at the same time.
 + *Use authorization* determines whether you are permitted to use a KMS key based on its key policy, IAM policies, grants, and other applicable policies.
@@ -34,7 +34,7 @@ Alice is an IAM user in the 111122223333 AWS account. She was denied access to a
 
 In this case, Alice is denied access to the KMS key because there is no key policy, IAM policy, or grant that gives her the required permissions. The key policy of the KMS key allows the AWS account to use IAM policies to control access to the KMS key, but no IAM policy gives Alice permission to use the KMS key.
 
-![Flowchart that describes the policy evaluation process](http://docs.aws.amazon.com/kms/latest/developerguide/images/kms-auth-flow-Alice.png)
+![Flowchart that describes the policy evaluation process](https://docs.aws.amazon.com/kms/latest/developerguide/images/kms-auth-flow-Alice.png)
 
 Consider the relevant policies for this example.
 + The KMS key that Alice wants to use has the [default key policy](key-policy-default.md). This policy [allows the AWS account](key-policy-default.md#key-policy-default-allow-root-enable-iam) that owns the KMS key to use IAM policies to control access to the KMS key. This key policy satisfies the *Does the key policy ALLOW the callers account to use IAM policies to control access to the key?* condition in the flowchart.
@@ -76,7 +76,7 @@ When evaluating cross-account permissions, remember that the key policy is speci
 + Bob, a user in account 1, has permission to assume the `Engineering` role.
 + Bob can trust this KMS key, because even though it is not in his account, an IAM policy in his account gives him explicit permission to use this KMS key.
 
-![Flowchart that describes the policy evaluation process](http://docs.aws.amazon.com/kms/latest/developerguide/images/kms-auth-flow-Bob.png)
+![Flowchart that describes the policy evaluation process](https://docs.aws.amazon.com/kms/latest/developerguide/images/kms-auth-flow-Bob.png)
 
 Consider the policies that let Bob, a user in account 1, use the KMS key in account 2.
 + The key policy for the KMS key allows account 2 (444455556666, the account that owns the KMS key) to use IAM policies to control access to the KMS key. This key policy also allows account 1 (111122223333) to use the KMS key in cryptographic operations (specified in the `Action` element of the policy statement). However, no one in account 1 can use the KMS key in account 2 until account 1 defines IAM policies that give the principals access to the KMS key.

@@ -67,7 +67,7 @@ The transformation process uses intelligent test execution, automated debugging,
 
 **Target architecture**
 
-![target architecture diagram for using AWS Transform custom to transform EZT to modern code.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/71f15422-42cb-4c7e-94fa-051a4f130445/images/64cbe607-22d3-440c-b888-9a6a86074563.png)
+![target architecture diagram for using AWS Transform custom to transform EZT to modern code.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/71f15422-42cb-4c7e-94fa-051a4f130445/images/64cbe607-22d3-440c-b888-9a6a86074563.png)
 
 **Workflow**
 

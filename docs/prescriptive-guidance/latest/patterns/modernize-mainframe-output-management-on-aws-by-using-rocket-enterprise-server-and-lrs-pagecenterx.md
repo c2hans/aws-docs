@@ -53,7 +53,7 @@ The pattern is based on the [replatform](https://aws.amazon.com/blogs/apn/demyst
 
 The following diagram shows a typical current state architecture for a mainframe output-management workload.
 
-![Mainframe output process in seven steps.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/f9ad041d-b9f0-4a9a-aba7-40fdc3088b27/images/d170394a-c9b2-43c0-a3d4-677b5f7c2473.png)
+![Mainframe output process in seven steps.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/f9ad041d-b9f0-4a9a-aba7-40fdc3088b27/images/d170394a-c9b2-43c0-a3d4-677b5f7c2473.png)
 
 The diagram shows the following workflow:
 
@@ -85,7 +85,7 @@ The diagram shows the following workflow:
 
 The following diagram shows an architecture for a mainframe output-management workload that’s deployed in the AWS Cloud.
 
-![Target architecture for batch app and output management in seven steps.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/f9ad041d-b9f0-4a9a-aba7-40fdc3088b27/images/3e25ab03-bf3a-4fea-b5eb-38cea9e50138.png)
+![Target architecture for batch app and output management in seven steps.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/f9ad041d-b9f0-4a9a-aba7-40fdc3088b27/images/3e25ab03-bf3a-4fea-b5eb-38cea9e50138.png)
 
 The diagram shows the following workflow:
 
@@ -122,7 +122,7 @@ The target solution typically doesn’t require application changes to accommoda
 
 The following diagram shows a highly available and secure AWS infrastructure architecture for a mainframe output-management workload.
 
-![Multi-AZ AWS infrastructure with a workflow in seven steps.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/f9ad041d-b9f0-4a9a-aba7-40fdc3088b27/images/8d8aa995-b576-4ecd-8a7c-5f566740a515.png)
+![Multi-AZ AWS infrastructure with a workflow in seven steps.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/f9ad041d-b9f0-4a9a-aba7-40fdc3088b27/images/8d8aa995-b576-4ecd-8a7c-5f566740a515.png)
 
 The diagram shows the following workflow:
 

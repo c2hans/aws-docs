@@ -59,14 +59,14 @@ exit;
 1.  In the **Connections** pane, select the tables you want to extract data from.
 
 1.  From the **Tools** menu, choose the **Database Export** command, as shown in the following screenshot.
-![Screen capture showing the Database export command](http://docs.aws.amazon.com/whitepapers/latest/strategies-migrating-oracle-db-to-aws/images/database-export.png)
+![Screen capture showing the Database export command](https://docs.aws.amazon.com/whitepapers/latest/strategies-migrating-oracle-db-to-aws/images/database-export.png)
 
 1.  On the **Source/Destination** page of the **Export Wizard** (see the next screenshot), select the **Export DDL** option to generate the script for creating the table, which will simplify the entire process.
 
 1.  In the **Format** drop-down on the same page, choose **loader**.
 
 1.  In the **Save As** box on the same page, choose **Separate Files**.
-![Screen capture showing the Export Wizard options on the Source/Destination page](http://docs.aws.amazon.com/whitepapers/latest/strategies-migrating-oracle-db-to-aws/images/export-wizard-src-dest-page.png)
+![Screen capture showing the Export Wizard options on the Source/Destination page](https://docs.aws.amazon.com/whitepapers/latest/strategies-migrating-oracle-db-to-aws/images/export-wizard-src-dest-page.png)
 
  Continue to follow the Export Wizard steps to complete the export. The Export Wizard helps you create the data file, control file, and table creation script in one step for multiple tables in a schema, making it easier than using Oracle SQL\*Plus to do the same tasks.
 

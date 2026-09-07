@@ -17,7 +17,7 @@ At a high level, the Red Hat OpenShift infrastructure runs on AWS, and the clust
 
 The entire infrastructure, including the control plane, user nodes, and Network Load Balancer, runs on AWS.
 
-![Red Hat OpenShift architecture and high-level implementation process](http://docs.aws.amazon.com/prescriptive-guidance/latest/red-hat-openshift-on-aws-implementation/images/guide-img/bcbfa5c1-b077-4a7c-9aab-f667a34c404d/images/5e105ac5-4b09-425f-a345-40fe10190799.png)
+![Red Hat OpenShift architecture and high-level implementation process](https://docs.aws.amazon.com/prescriptive-guidance/latest/red-hat-openshift-on-aws-implementation/images/guide-img/bcbfa5c1-b077-4a7c-9aab-f667a34c404d/images/5e105ac5-4b09-425f-a345-40fe10190799.png)
 
 ## Infrastructure requirements
 <a name="infrastructure"></a>

@@ -15,7 +15,7 @@ The [shared responsibility model](https://aws.amazon.com/compliance/shared-respo
 
 The following diagram summarizes the shared responsibility between AWS, the ADDF core team, and the ADDF user.
 
-![The responsibilities of each entity in the shared responsibility model.](http://docs.aws.amazon.com/prescriptive-guidance/latest/addf-security-and-operations/images/guide-img/b7c99a03-2a36-4dc2-9b13-9b2a1cbf7eb9/images/b864d84d-5301-4571-bbb2-c3bab5ae5664.png)
+![The responsibilities of each entity in the shared responsibility model.](https://docs.aws.amazon.com/prescriptive-guidance/latest/addf-security-and-operations/images/guide-img/b7c99a03-2a36-4dc2-9b13-9b2a1cbf7eb9/images/b864d84d-5301-4571-bbb2-c3bab5ae5664.png)
 
 ## AWS responsibility
 <a name="aws-responsibility"></a>

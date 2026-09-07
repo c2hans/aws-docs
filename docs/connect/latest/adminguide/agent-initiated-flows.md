@@ -44,7 +44,7 @@ The required permissions are:
 + **Channels and flows - Views**
 + **Routing - Quick Connects**
 
-![Security profile permissions for agent-initiated flows.](http://docs.aws.amazon.com/connect/latest/adminguide/images/SecurityProfile_cloudscape_channels_flows.png)
+![Security profile permissions for agent-initiated flows.](https://docs.aws.amazon.com/connect/latest/adminguide/images/SecurityProfile_cloudscape_channels_flows.png)
 
 ## Create Quick Connect for agent-initiated flow
 <a name="agent-initiated-flows-create-quick-connect"></a>
@@ -59,7 +59,7 @@ The required permissions are:
 
 1. Choose **Save**.
 
-![Create Quick Connect for agent-initiated flow.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-initiated-flows-quick-connect-config.png)
+![Create Quick Connect for agent-initiated flow.](https://docs.aws.amazon.com/connect/latest/adminguide/images/agent-initiated-flows-quick-connect-config.png)
 
 ## Associate Quick Connect with queue
 <a name="agent-initiated-flows-associate-queue"></a>
@@ -72,7 +72,7 @@ The required permissions are:
 
 1. Choose **Save**.
 
-![Associate Quick Connect with queue.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-initiated-flows-add-quick-connect.png)
+![Associate Quick Connect with queue.](https://docs.aws.amazon.com/connect/latest/adminguide/images/agent-initiated-flows-add-quick-connect.png)
 
 For additional details on quick connects, see [Create quick connects in Connect Customer](quick-connects.md).
 
@@ -85,15 +85,15 @@ For additional details on quick connects, see [Create quick connects in Connect 
 
 1. Select **Add to chat**
 
-![Agent control panel Quick connect button.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-initiated-flows-agent-example-1.png)
+![Agent control panel Quick connect button.](https://docs.aws.amazon.com/connect/latest/adminguide/images/agent-initiated-flows-agent-example-1.png)
 
-![Form and Add to chat.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-initiated-flows-agent-example-2.png)
+![Form and Add to chat.](https://docs.aws.amazon.com/connect/latest/adminguide/images/agent-initiated-flows-agent-example-2.png)
 
 When the form is active, the agent might cancel the workflow. Agents will see events for the status of the workflow.
 
-![Active workflow status.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-initiated-flows-agent-example-3.png)
+![Active workflow status.](https://docs.aws.amazon.com/connect/latest/adminguide/images/agent-initiated-flows-agent-example-3.png)
 
-![Workflow events for agent.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-initiated-flows-agent-example-4.png)
+![Workflow events for agent.](https://docs.aws.amazon.com/connect/latest/adminguide/images/agent-initiated-flows-agent-example-4.png)
 
 ## Receive Form from Agent
 <a name="agent-initiated-flows-receive-form"></a>
@@ -101,6 +101,6 @@ When the form is active, the agent might cancel the workflow. Agents will see ev
 + Customers and agents continue ongoing conversation during the active form
 + Upon submission, the agent will be notified through new events
 
-![Customer receives form.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-initiated-flows-customer-example-1.png)
+![Customer receives form.](https://docs.aws.amazon.com/connect/latest/adminguide/images/agent-initiated-flows-customer-example-1.png)
 
-![Form submission notification.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-initiated-flows-customer-example-2.png)
+![Form submission notification.](https://docs.aws.amazon.com/connect/latest/adminguide/images/agent-initiated-flows-customer-example-2.png)

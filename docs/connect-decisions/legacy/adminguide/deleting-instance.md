@@ -13,7 +13,7 @@ When you delete an instance, information from the Amazon S3 bucket is not automa
 1. Open the AWS Supply Chain console at [https://console.aws.amazon.com/scn/home](https://console.aws.amazon.com/scn/home).
 
 1. On the AWS Supply Chain console dashboard, from the dropdown, select the instance that you want to delete.
-![Deleting an instance.](http://docs.aws.amazon.com/connect-decisions/legacy/adminguide/images/delete_instance.png)
+![Deleting an instance.](https://docs.aws.amazon.com/connect-decisions/legacy/adminguide/images/delete_instance.png)
 
 1. Choose **Delete**.
 

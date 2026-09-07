@@ -58,7 +58,7 @@ This pattern's approach works for two options: moving data from Db2 for z/OS to 
 
 **Target architecture**
 
-![Architecture for building COBOL Db2 programs on AWS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5895fa34-f05b-4cc3-a59f-a596f9116c66/images/0dda414a-21a7-41d1-b86b-7ff3b1c6fbda.png)
+![Architecture for building COBOL Db2 programs on AWS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5895fa34-f05b-4cc3-a59f-a596f9116c66/images/0dda414a-21a7-41d1-b86b-7ff3b1c6fbda.png)
 
 The diagram illustrates the following:
 

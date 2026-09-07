@@ -21,7 +21,7 @@ This solution uses a multi-retriever Retrieval Augmented Generation (RAG) framew
 
 The risk-scoring models quantify the inferences from the LLM into numerical scores. You can aggregate the scores into a hospital-level re-admission propensity score. This score defines each patient's risk exposure, and you can  calculate it periodically or on an as-needed basis. All inferences and risk scores are indexed and stored in Amazon OpenSearch Service so that care managers and clinicians can retrieve it. By integrating a conversational AI agent with this vector database, clinicians and care managers can seamlessly extract insights at an individual patient level, a facility-wide level, or by medical specialty. You can also set up automated alerts based on risk scores, which encourages proactive interventions.
 
-![Using AWS services and an LLM to predict patient re-admission risk.](http://docs.aws.amazon.com/prescriptive-guidance/latest/rag-healthcare-use-cases/images/guide-img/c2d53172-a932-4340-96f5-3132299b8691/images/bcd24c08-658e-42e8-8880-38a42492de10.png)
+![Using AWS services and an LLM to predict patient re-admission risk.](https://docs.aws.amazon.com/prescriptive-guidance/latest/rag-healthcare-use-cases/images/guide-img/c2d53172-a932-4340-96f5-3132299b8691/images/bcd24c08-658e-42e8-8880-38a42492de10.png)
 
 Building this solution consists of the following steps:
 + [Step 1: Predicting patient outcomes by using a medical knowledge graph](#case-2-step-1)
@@ -43,7 +43,7 @@ You can use the insights from the medical knowledge graph to fine-tune an LLM in
 
 The following image shows the sequential steps involved in fine-tuning an LLM in Amazon Bedrock by using a healthcare-specific training dataset. This data might include patient medical conditions and responses to treatments over time. This training dataset would help the model to make generalized predictions about patient outcomes.
 
-![Fine-tuning an LLM in Amazon Bedrock by using a patient outcome prediction dataset.](http://docs.aws.amazon.com/prescriptive-guidance/latest/rag-healthcare-use-cases/images/guide-img/c2d53172-a932-4340-96f5-3132299b8691/images/a4cc2509-4710-4a74-bbda-aa4ccea17da2.png)
+![Fine-tuning an LLM in Amazon Bedrock by using a patient outcome prediction dataset.](https://docs.aws.amazon.com/prescriptive-guidance/latest/rag-healthcare-use-cases/images/guide-img/c2d53172-a932-4340-96f5-3132299b8691/images/a4cc2509-4710-4a74-bbda-aa4ccea17da2.png)
 
 The diagram shows the following workflow:
 
@@ -234,7 +234,7 @@ Based on the above analyses and re-admission propensity score of a patient, clin
 
 The following diagram shows the workflow of a conversational AI agent that a clinician or care manager can use to retrieve insights on patient outcomes, expected behavior, and re-admission propensity. Users can retrieve insights at the patient-level, department-level, or hospital-level. The AI agent retrieves these insights, which are stored in an indexed form in an Amazon OpenSearch Service vector database. The agent uses the query to retrieve relevant data and provides tailored responses, including suggested actions for patients who have a high risk of re-admission. Based on the level of risk, the agent can also set up reminders for patients and care givers.
 
-![Proactive intervention by a clinician based on the re-admission risk of a patient.](http://docs.aws.amazon.com/prescriptive-guidance/latest/rag-healthcare-use-cases/images/guide-img/c2d53172-a932-4340-96f5-3132299b8691/images/893a3fe5-58fd-4afd-bc45-0e460802d836.png)
+![Proactive intervention by a clinician based on the re-admission risk of a patient.](https://docs.aws.amazon.com/prescriptive-guidance/latest/rag-healthcare-use-cases/images/guide-img/c2d53172-a932-4340-96f5-3132299b8691/images/893a3fe5-58fd-4afd-bc45-0e460802d836.png)
 
 The diagram shows the following workflow:
 

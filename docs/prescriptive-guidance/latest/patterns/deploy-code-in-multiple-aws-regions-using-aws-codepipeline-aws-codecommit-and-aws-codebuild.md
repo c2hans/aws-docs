@@ -31,7 +31,7 @@ Two AWS Identity and Access Management (IAM) roles for AWS CodeBuild and AWS Clo
 ## Architecture
 <a name="deploy-code-in-multiple-aws-regions-using-aws-codepipeline-aws-codecommit-and-aws-codebuild-architecture"></a>
 
-![An AWS CodePipeline job that deploys to three AWS Regions.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/d44c393c-7243-4d4e-8b84-88a8503af98f/images/5c27fc35-5e62-4292-8b18-a7bc7faf2631.png)
+![An AWS CodePipeline job that deploys to three AWS Regions.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/d44c393c-7243-4d4e-8b84-88a8503af98f/images/5c27fc35-5e62-4292-8b18-a7bc7faf2631.png)
 
 This pattern's multiple-Region architecture and workflow comprise the following steps.
 

@@ -19,7 +19,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scalable-analytics-usin
 
  **Application Insights dashboard showing no detected problems and option to auto-configure.**
 
-![appreg1](http://docs.aws.amazon.com/solutions/latest/scalable-analytics-using-apache-druid-on-aws/images/appreg1.png)
+![appreg1](https://docs.aws.amazon.com/solutions/latest/scalable-analytics-using-apache-druid-on-aws/images/appreg1.png)
 
 Monitoring for your applications is now activated and the following status box appears:
 

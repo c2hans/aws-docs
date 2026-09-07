@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-gi
 
 A GitHub Flow branching strategy commonly has the following branches.
 
-![The branches and environments in a GitHub Flow branching strategy.](http://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-git-branch-approach/images/guide-img/2c642ab1-73c3-487b-9aff-d887904354b7/images/5a124d59-766a-4f2e-81dc-092ac8e8f20c.png)
+![The branches and environments in a GitHub Flow branching strategy.](https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-git-branch-approach/images/guide-img/2c642ab1-73c3-487b-9aff-d887904354b7/images/5a124d59-766a-4f2e-81dc-092ac8e8f20c.png)
 
 ## feature branch
 <a name="feature-branch"></a>

@@ -20,7 +20,7 @@ AWS recommends that you install the Microsoft on-premises data gateway on an Ama
 
  The options presented in this section illustrate Amazon RDS, Amazon Redshift, and Amazon Athena. For a full discussion of all AWS data sources, refer to [Appendix: Microsoft Power BI supported AWS data sources](appendix-microsoft-power-bi-supported-aws-data-sources.md).
 
-![A diagram depicting AWS data sources connecting to the Microsoft Power BI service.](http://docs.aws.amazon.com/whitepapers/latest/using-power-bi-with-aws-cloud/images/powerbi6.png)
+![A diagram depicting AWS data sources connecting to the Microsoft Power BI service.](https://docs.aws.amazon.com/whitepapers/latest/using-power-bi-with-aws-cloud/images/powerbi6.png)
 
 *Connecting AWS data sources to the Microsoft Power BI service *
 

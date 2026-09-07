@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
 
 Create a secure, high-performing, and resilient foundation for your cloud environment. The capabilities within this area enable you to design and implement security policies and controls across different levels of the stack to protect your resources from external or internal vulnerabilities and threats. They ensure confidentiality, availability, integrity, and usability, while providing priorities and advice to assist with remediation.
 
-![A chart showing which capabilities fall under each category.](http://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/images/security-category.png)
+![A chart showing which capabilities fall under each category.](https://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/images/security-category.png)
 
  Security capabilities include:
 +  **Identity Management & Access Control** helps you build and monitor permissions in your environment. Use this capability to structure access to your resources within defined isolated groups following the principal of least privilege (PoLP). This capability will help your team develop a framework to manage your environment and provide access to your services.

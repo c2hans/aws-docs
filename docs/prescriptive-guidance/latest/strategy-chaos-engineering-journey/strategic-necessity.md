@@ -13,7 +13,7 @@ Whereas security safeguards an organization's ability to operate and protect ass
 
 The following diagram shows the evolution of chaos engineering from the grass roots to goals and ROI, to becoming a strategy.
 
-![Evolution starting with grassroots efforts, to goals, to ROI, to necessary strategy.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-chaos-engineering-journey/images/guide-img/4a45128d-5b70-46b6-b625-98d89da7e822/images/751a9b0e-f3d0-49f3-9999-61aec10ff374.png)
+![Evolution starting with grassroots efforts, to goals, to ROI, to necessary strategy.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-chaos-engineering-journey/images/guide-img/4a45128d-5b70-46b6-b625-98d89da7e822/images/751a9b0e-f3d0-49f3-9999-61aec10ff374.png)
 
 At the grassroots level, individual teams typically experiment independently, driven by local needs. These experiments are championed by passionate engineers who demonstrate value through reduced incidents and improved observability.
 

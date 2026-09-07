@@ -15,7 +15,7 @@ All the security measures, controls, and tasks in this scenario come *in additio
 
  The following reference architecture diagram shows a containerized build pipeline with its steps.
 
-![Reference architecture diagram of continuous integration pipeline for containerized applications](http://docs.aws.amazon.com/wellarchitected/latest/container-build-lens/images/continuous-integration-pipeline-containerized-apps.png)
+![Reference architecture diagram of continuous integration pipeline for containerized applications](https://docs.aws.amazon.com/wellarchitected/latest/container-build-lens/images/continuous-integration-pipeline-containerized-apps.png)
 
 1.  Developers push a code change to the source code repository.
 

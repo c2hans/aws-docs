@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/management-governance.html
 ---
 
-# ![AWS Management and Governance category icon](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/management-governance-icon.jpg)Management and governance
+# ![AWS Management and Governance category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/management-governance-icon.jpg)Management and governance
 <a name="management-governance"></a>
 
 With AWS Management and Governance services, you don't have to choose between innovating faster and maintaining control over cost, compliance, and security—you can do both.

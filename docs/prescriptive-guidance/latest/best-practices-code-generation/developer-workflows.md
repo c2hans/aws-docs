@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practi
 
 Developers follow a standard workflow encompassing the stages of requirement gathering, design and planning, coding, testing, code review, and deployment. This section focuses on how you can use Amazon Q Developer capabilities to optimize key development steps.
 
-![Code development tasks that Amazon Q Developer can do include design, writing, testing, and review.](http://docs.aws.amazon.com/prescriptive-guidance/latest/best-practices-code-generation/images/guide-img/f65a39c3-c47d-43b6-afa3-d8124e7bbe1f/images/469a246e-ba24-49d0-adea-a43d264ced44.png)
+![Code development tasks that Amazon Q Developer can do include design, writing, testing, and review.](https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practices-code-generation/images/guide-img/f65a39c3-c47d-43b6-afa3-d8124e7bbe1f/images/469a246e-ba24-49d0-adea-a43d264ced44.png)
 
 The previous diagram shows how Amazon Q Developer can accelerate and streamline the following common tasks in stages of code development:
 + Design and planning \| Environment setup \| Code organization

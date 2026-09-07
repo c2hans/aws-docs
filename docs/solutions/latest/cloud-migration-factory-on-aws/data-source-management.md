@@ -50,7 +50,7 @@ When you select a new sheet from your input file to import, an Auto map headers 
 
 WPM will leverage Generative AI to attempt to automatically map your input file headers to entity schema attributes. If it does not find a match, it may also recommend a new schema attribute name which can be automatically created in the entity alongside the data source. If it does make a recommendation, you’ll see 🤖 (NEW) appended to the end
 
-![header mapping](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/header-mapping.png)
+![header mapping](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/header-mapping.png)
 
 **Warning**
 Please be aware the generative AI capabilities of header mapping may not always be 100% accurate. Results should be reviewed and validated by users.
@@ -113,7 +113,7 @@ To support a large number of resources in a data import, it is an asynchronous p
 
 1. Choose the **Processed Items** tab to see a list of all resources that were successfully created or updated.
 
-![import job details](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/import-job-details.png)
+![import job details](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/import-job-details.png)
 
 ### To troubleshoot a failed import
 <a name="to-troubleshoot-a-failed-import"></a>
@@ -128,7 +128,7 @@ To support a large number of resources in a data import, it is an asynchronous p
 
 1. Choose the **Failed Import Items** tab to see a list of all resources that were not successfully created or updated. The table will detail the error for each entity.
 
-![import job details failures](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/import-job-details-failures.png)
+![import job details failures](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/import-job-details-failures.png)
 
 ### Required attributes vs Optional attributes
 <a name="required-attributes-vs-optional-attributes"></a>

@@ -55,7 +55,7 @@ In this architecture:
 
 The following diagram illustrates this workflow:
 
-![Diagram showing CDN integration with both channel assembly and ad insertion](http://docs.aws.amazon.com/mediatailor/latest/ug/images/ca-ssai-comb-cdn.png)
+![Diagram showing CDN integration with both channel assembly and ad insertion](https://docs.aws.amazon.com/mediatailor/latest/ug/images/ca-ssai-comb-cdn.png)
 
 ## Setting up the integration
 <a name="ssai-ca-integration-setup"></a>

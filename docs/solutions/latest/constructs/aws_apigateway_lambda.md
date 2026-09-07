@@ -121,7 +121,7 @@ Out of the box implementation of the Construct without any override will set the
 ## Architecture
 <a name="_architecture"></a>
 
-![Diagram showing interaction between Amazon API Gateway, AWS Lambda, and Amazon CloudWatch with roles.](http://docs.aws.amazon.com/solutions/latest/constructs/images/aws-apigateway-lambda.png)
+![Diagram showing interaction between Amazon API Gateway, AWS Lambda, and Amazon CloudWatch with roles.](https://docs.aws.amazon.com/solutions/latest/constructs/images/aws-apigateway-lambda.png)
 
 ## Github
 <a name="_github"></a>

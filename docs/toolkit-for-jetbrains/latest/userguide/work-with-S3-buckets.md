@@ -18,7 +18,7 @@ Every object you store in Amazon S3 resides in a bucket. You can use buckets to 
 1. Open AWS Explorer, if it isn't already open.
 
 1. Right-click the **Amazon S3** node and choose **Create S3 Bucket**.
-![Creating an AWS Lambda bucket in AWS Explorer](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/s3-bucket-create.png)
+![Creating an AWS Lambda bucket in AWS Explorer](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/s3-bucket-create.png)
 
 1. In the **Create S3 Bucket** dialog box, enter a name for the bucket.
 **Note**
@@ -42,7 +42,7 @@ Because Amazon S3 allows your bucket to be used as a URL that can be accessed pu
 1. Click the **Amazon S3** node to expand the list of buckets.
 
 1. Right-click the bucket to delete, and then choose **Delete S3 Bucket**.
-![Deleting an AWS Lambda bucket in AWS Explorer](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/s3-bucket-delete.png)
+![Deleting an AWS Lambda bucket in AWS Explorer](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/s3-bucket-delete.png)
 
 1. Enter the bucket's name to confirm the deletion, and then choose **OK**.
    + If the bucket contains objects, the bucket is emptied before deletion. A notification is displayed after the deletion is complete.

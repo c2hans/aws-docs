@@ -10,7 +10,7 @@ We would love to hear from you. Please provide feedback on the AWS PRA by taking
 
 In the Network account, you manage the networking between your virtual private clouds (VPCs) and the broader internet. In this account, you can implement broad disclosure control mechanisms by using AWS WAF, use AWS Resource Access Manager (AWS RAM) to share VPC subnets and AWS Transit Gateway attachments, and use Amazon CloudFront to support targeted service usage. For more information about this account, see the [AWS Security Reference Architecture (AWS SRA)](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/network.html). The following diagram illustrates the AWS security and privacy services that are configured in the Network account.
 
-![AWS services deployed in the Network account in the Infrastructure organizational unit.](http://docs.aws.amazon.com/prescriptive-guidance/latest/privacy-reference-architecture/images/guide-img/a4379862-3434-48e4-8691-64db36363b08/images/ff33f539-9a1b-49f9-8650-f67ed1e347f2.png)
+![AWS services deployed in the Network account in the Infrastructure organizational unit.](https://docs.aws.amazon.com/prescriptive-guidance/latest/privacy-reference-architecture/images/guide-img/a4379862-3434-48e4-8691-64db36363b08/images/ff33f539-9a1b-49f9-8650-f67ed1e347f2.png)
 
 This section provides more detailed information about the following AWS services that are used in this account:
 + [Amazon CloudFront](#cloudfront)

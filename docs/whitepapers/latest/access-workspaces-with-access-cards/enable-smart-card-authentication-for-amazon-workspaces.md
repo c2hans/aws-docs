@@ -15,7 +15,7 @@ To enable smart card authentication for Amazon WorkSpaces in AD Connector, use t
 
 If successful, AD Connector returns an HTTP 200 response with an empty HTTP body.
 
-![A screenshot showing enabled smart card authentication on AD Connector.](http://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/workspaces-smartcard17.png)
+![A screenshot showing enabled smart card authentication on AD Connector.](https://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/workspaces-smartcard17.png)
 
 *Enable smart card authentication on AD Connector *
 

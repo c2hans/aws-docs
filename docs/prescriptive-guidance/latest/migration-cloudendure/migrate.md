@@ -16,7 +16,7 @@ The CloudEndure User Console address (console.cloudendure.com) is used for all c
 
 In the CloudEndure User Console, you use the **Replication Settings** tab to define your source and target environments, and to configure the default replication servers in the staging area of the target infrastructure. For step-by-step instructions, see [Defining Replication Settings for AWS](https://docs.cloudendure.com/#Defining_Your_Replication_Settings/Defining_Replication_Settings_for_AWS/Defining_Replication_Settings_for_AWS.htm) in the CloudEndure documentation.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-cloudendure/images/guide-img/bbb5871c-6fdf-4a96-872d-e22410dc477d/images/2d7f9629-ddc7-469d-b9d9-89e546cae265.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-cloudendure/images/guide-img/bbb5871c-6fdf-4a96-872d-e22410dc477d/images/2d7f9629-ddc7-469d-b9d9-89e546cae265.png)
 
 ## Install CloudEndure Agent on source machines
 <a name="agent"></a>
@@ -33,7 +33,7 @@ After you've prepared your environment and configured your replication settings,
 
 When the Agent is installed, the source machine appears in the CloudEndure User Console, in the **Machines** tab, and the machine undergoes initial data replication (Initial Sync).
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-cloudendure/images/guide-img/bbb5871c-6fdf-4a96-872d-e22410dc477d/images/0d0552d7-925b-4d90-823d-154b9faa5a3d.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-cloudendure/images/guide-img/bbb5871c-6fdf-4a96-872d-e22410dc477d/images/0d0552d7-925b-4d90-823d-154b9faa5a3d.png)
 
 Use the **Machines** dashboard to monitor the Initial Sync process, which includes these steps:
 

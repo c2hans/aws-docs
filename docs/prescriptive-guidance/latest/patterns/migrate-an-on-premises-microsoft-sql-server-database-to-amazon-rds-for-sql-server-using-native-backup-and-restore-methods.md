@@ -36,7 +36,7 @@ This pattern describes how to migrate an on-premises Microsoft SQL Server databa
 
 **Data migration**** architecture**
 
-![Architecture to migrate an on-premises SQL Server DB to an Amazon RDS for SQL Server DB instance.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c2dcd6ab-deb1-4d5e-b3c5-3bf48c02ca4e/images/29f90473-6dd4-4574-bfbd-5c6a0481c40e.png)
+![Architecture to migrate an on-premises SQL Server DB to an Amazon RDS for SQL Server DB instance.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c2dcd6ab-deb1-4d5e-b3c5-3bf48c02ca4e/images/29f90473-6dd4-4574-bfbd-5c6a0481c40e.png)
 
 ## Tools
 <a name="migrate-an-on-premises-microsoft-sql-server-database-to-amazon-rds-for-sql-server-using-native-backup-and-restore-methods-tools"></a>

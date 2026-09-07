@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works
 
  The following example shows an Outpost deployment with distributed Amazon EKS service extending to on-premises environments.
 
-![AWS Outpost with Amazon EKS Control Plane and Data Plane Architecture](http://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works/images/aws-outpost-with-amazon-eks-control-plane-and-data-plane-architecture.png)
+![AWS Outpost with Amazon EKS Control Plane and Data Plane Architecture](https://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works/images/aws-outpost-with-amazon-eks-control-plane-and-data-plane-architecture.png)
 
 ## Architecture
 <a name="architecture-1"></a>

@@ -52,13 +52,13 @@ Demand Plan is generated at daily time-intervals per configuration. You can view
 
 You can also view the demand plan in monthly time interval by using the Time Interval filter and selecting the monthly option. System will aggregate values into Gregorian calendar month with start day as 1, because demand plan is available at daily granularity.
 
-![Time interval example](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Time-interval-example1.png)
+![Time interval example](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Time-interval-example1.png)
 
 **Time interval example 2**
 
 Demand plan is generated at weekly time-interval per configuration. You can view the Demand plan at monthly time interval by selecting the Time Interval filter. The time boundaries for month will not be strict Gregorian calendar month.
 
-![Time interval example](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Time_interval_example.png)
+![Time interval example](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Time_interval_example.png)
 
 ## Adding an override
 <a name="adding_overrides"></a>
@@ -107,7 +107,7 @@ To export the data plan, complete the following steps:
 1. On the **Enterprise demand plan** page, select the vertical ellipsis.
 
 1. Choose **Export Data Plan**.
-![Exporting data plans](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/export_data_plan.png)
+![Exporting data plans](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/export_data_plan.png)
 
 1. On the **Export** page, select the required data you would like to download.
 
@@ -127,7 +127,7 @@ To upload the forecast overrides through a .csv file, complete the following ste
 1. Choose **Import Forecast Overrides**.
 
    The **Import Forecast Overrides** page appears.
-![Importing forecast overrides](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/import_forecast_overrides.png)
+![Importing forecast overrides](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/import_forecast_overrides.png)
 
 1. Under **Upload files**, choose **Download CSV template** to download the .csv file you need to use to add the override values.
 

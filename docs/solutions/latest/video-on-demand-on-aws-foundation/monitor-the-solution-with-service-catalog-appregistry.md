@@ -13,4 +13,4 @@ source_url: https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws-
 
  The following figure depicts an example of the application view for the solution stack in Application Manager.
 
-![Depicts solution stack in Application Manager](http://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws-foundation/images/appregistry1.png)
+![Depicts solution stack in Application Manager](https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws-foundation/images/appregistry1.png)

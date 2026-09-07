@@ -24,7 +24,7 @@ For centralized management across all your accounts and applications in AWS Orga
 
 Using AWS Firewall Manager, you can easily roll out AWS WAF rules for your Application Load Balancers, API Gateway instances, and Amazon CloudFront distributions. AWS Firewall Manager integrates with AWS Managed Rules for AWS WAF, which gives you an easy way to deploy pre-configured, curated AWS WAF rules on your applications. For more information on centrally managing AWS WAF with AWS Firewall Manager, refer to [Centrally manage AWS WAF (API v2) and AWS Managed Rules at scale with AWS Firewall Manager](https://aws.amazon.com/blogs/security/centrally-manage-aws-waf-api-v2-and-aws-managed-rules-at-scale-with-firewall-manager/).
 
-![A diagram depicting centralized inbound traffic inspection using AWS WAF](http://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/inbound-traffic-inspection-with-waf.png)
+![A diagram depicting centralized inbound traffic inspection using AWS WAF](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/inbound-traffic-inspection-with-waf.png)
 
 In the preceding architecture, applications are running on Amazon EC2 instances in multiple availability zones in the private subnets. There is a public-facing Application Load Balancer (ALB) deployed in front of the Amazon EC2 instances, load balancing the requests between different targets. The AWS WAF is associated with the ALB.
 

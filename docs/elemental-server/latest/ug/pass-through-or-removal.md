@@ -23,7 +23,7 @@ Passthrough is enabled or disabled at the output level: only in outputs that hav
    + **SCTE-35**: Click to check.
    + **SCTE-35 PID**: Enter the ID of the PID where you want the SCTE-35 messages to go.
 
-![The file images/passthrough-archive.png.](http://docs.aws.amazon.com/elemental-server/latest/ug/images/passthrough-archive.png)
+![The file images/passthrough-archive.png.](https://docs.aws.amazon.com/elemental-server/latest/ug/images/passthrough-archive.png)
 
 **Result**
 All SCTE-35 messages from the input are included in the data stream of this output.
@@ -42,7 +42,7 @@ Passthrough is enabled or disabled individually for each output, which means it 
    1. Complete the following field:
       + **SCTE-35 PID** field: Enter the ID of the PID where you want the SCTE-35 messages to go.
 
-![The file images/passthrough-hls.png.](http://docs.aws.amazon.com/elemental-server/latest/ug/images/passthrough-hls.png)
+![The file images/passthrough-hls.png.](https://docs.aws.amazon.com/elemental-server/latest/ug/images/passthrough-hls.png)
 
 **Result**
 All SCTE-35 messages from the input are included in the data stream of the relevant output.
@@ -58,7 +58,7 @@ Passthrough is enabled or disabled individually for each output, which means it 
    + **SCTE-35**: Click to check.
    + **SCTE-35 PID**: Enter the ID of the PID where you want the SCTE-35 messages to go.
 
-![The file images/passthrough-udpts.png.](http://docs.aws.amazon.com/elemental-server/latest/ug/images/passthrough-udpts.png)
+![The file images/passthrough-udpts.png.](https://docs.aws.amazon.com/elemental-server/latest/ug/images/passthrough-udpts.png)
 
 **Result**
 All SCTE-35 messages from the input are included in the data stream of the relevant output.

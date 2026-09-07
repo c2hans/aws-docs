@@ -39,7 +39,7 @@ This approach provides the following benefits:
 
 The following diagram shows the components and workflow for this pattern.
 
-![Components and workflow to manage AWS permission sets using Terraform.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/69dc79c7-b4cd-4ad0-b0d2-d58cf0c7adaa/images/649e299c-1142-405a-8982-4a6b2e595d53.png)
+![Components and workflow to manage AWS permission sets using Terraform.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/69dc79c7-b4cd-4ad0-b0d2-d58cf0c7adaa/images/649e299c-1142-405a-8982-4a6b2e595d53.png)
 
 **AWS Control Tower events flow**
 

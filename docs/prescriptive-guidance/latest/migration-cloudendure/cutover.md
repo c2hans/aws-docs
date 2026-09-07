@@ -17,12 +17,12 @@ When you've completed your test and you're ready to cut over to the target envir
 
    1. **Choose Launch *x* Target Machine**, and then choose **Cutover Mode**.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-cloudendure/images/guide-img/bbb5871c-6fdf-4a96-872d-e22410dc477d/images/05afae8a-99cb-4fda-a3f8-abcf4582aced.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-cloudendure/images/guide-img/bbb5871c-6fdf-4a96-872d-e22410dc477d/images/05afae8a-99cb-4fda-a3f8-abcf4582aced.png)
 
    1. When you receive the confirmation prompt, choose **Continue** to launch the target machines. You can monitor the launch process on the **Job Progress** tab.
 
    1. Verify that the cutover completed successfully.
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-cloudendure/images/guide-img/bbb5871c-6fdf-4a96-872d-e22410dc477d/images/89a88c88-39f4-4079-b5f1-da46a927586f.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-cloudendure/images/guide-img/bbb5871c-6fdf-4a96-872d-e22410dc477d/images/89a88c88-39f4-4079-b5f1-da46a927586f.png)
 
    1. Verify service configuration and other settings.
 

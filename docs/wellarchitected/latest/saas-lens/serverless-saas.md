@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/serverl
 
  AWS offers a range of services that can be used to implement a serverless SaaS solution. The diagram in Figure 1 provides an example of a serverless architecture.
 
-![Serverless SaaS architecture](http://docs.aws.amazon.com/wellarchitected/latest/saas-lens/images/image2.png)
+![Serverless SaaS architecture](https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/images/image2.png)
 
 * Figure 1: Serverless SaaS architecture *
 

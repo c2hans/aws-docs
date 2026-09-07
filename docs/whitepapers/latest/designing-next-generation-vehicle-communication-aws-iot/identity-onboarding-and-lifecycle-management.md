@@ -19,7 +19,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/designing-next-genera
 
  The following figure demonstrates a flow through the typical setup leveraging a variety of AWS services and features.
 
-![Reference architecture diagram showing provisioning mTLS certificates for the vehicle gateway.](http://docs.aws.amazon.com/whitepapers/latest/designing-next-generation-vehicle-communication-aws-iot/images/provisioning-mtls-certs.jpg)
+![Reference architecture diagram showing provisioning mTLS certificates for the vehicle gateway.](https://docs.aws.amazon.com/whitepapers/latest/designing-next-generation-vehicle-communication-aws-iot/images/provisioning-mtls-certs.jpg)
 
 ### 1/ Initial activity as preparation for the flow
 <a name="initial-activity-as-preparation-for-the-flow"></a>
@@ -72,7 +72,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/designing-next-genera
 
  The guidance here would be to issue operational certificates for a limited scope for expiration and have a rotation process in place that is based on a trusted connection to the device, the possibility to rotate the certificate as well as the private key on the hardware with a process that is invoked and tracked from the cloud.
 
-![Reference architecture diagram showing how to rotate operational certificates on the vehicle](http://docs.aws.amazon.com/whitepapers/latest/designing-next-generation-vehicle-communication-aws-iot/images/rotate-operational-certificates.jpg)
+![Reference architecture diagram showing how to rotate operational certificates on the vehicle](https://docs.aws.amazon.com/whitepapers/latest/designing-next-generation-vehicle-communication-aws-iot/images/rotate-operational-certificates.jpg)
 
 ### Set up AWS IoT Jobs for invoking and tracking certificate rotation
 <a name="setup-aws-iot-jobs-for-invoking-and-tracking-certificate-rotation"></a>

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-security-l
 
 The first step in developing a robust security strategy for generative AI is to properly scope its use within your organization. See the [AWS Generative AI Security Scoping Matrix](https://aws.amazon.com/ai/generative-ai/security/scoping-matrix/) (shown in the following figure) to categorize your use cases.
 
-![Generative AI Security Scoping Matrix, a mental model to classify use cases.](http://docs.aws.amazon.com/whitepapers/latest/navigating-security-landscape-genai/images/gen-ai-security-scoping-matrix.png)
+![Generative AI Security Scoping Matrix, a mental model to classify use cases.](https://docs.aws.amazon.com/whitepapers/latest/navigating-security-landscape-genai/images/gen-ai-security-scoping-matrix.png)
 
  The scoping matrix includes five scopes. For Scope 1 or Scope 2 applications, which typically involve off-the-shelf AI solutions, adopt a buyer's perspective. Focus on risk management through data governance and carefully review enterprise agreements. It's crucial to clearly understand which data is authorized for sharing and under what circumstances. While Scope 2 applications would typically be built to support enterprise data security and compliance needs, Scope 1 applications most often are not.
 

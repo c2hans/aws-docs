@@ -47,7 +47,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/amazon-vp
 
  An elastic network interface placed into an IPv6 enabled subnet may be created with and modified to have an IPv6 address assigned. You can configure this behavior per elastic network interface, and you can choose to either have AWS auto assign one for you or specify an unused address in the subnet’s allocated range. In either case, the address configured remains constant throughout the elastic network interface’s life unless explicitly modified.
 
-![This is a diagram that shows a dual-stack Amazon VPC with two availability zones and four subnets.](http://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/images/dual-stack-amazon-VPC.png)
+![This is a diagram that shows a dual-stack Amazon VPC with two availability zones and four subnets.](https://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/images/dual-stack-amazon-VPC.png)
 
 ### IP addressing at the resource’s networking stack
 <a name="ip-addressing-at-the-resources-networking-stack"></a>

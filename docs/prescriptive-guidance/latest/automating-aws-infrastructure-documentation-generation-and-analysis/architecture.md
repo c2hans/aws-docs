@@ -12,7 +12,7 @@ The Infrastructure Documentation Generator is designed with a modular architectu
 
 Each phase follows a structured sequence of steps, as shown in the following diagram.
 
-![Workflow phases of resource scanning, documentation generation, and dependency mapping.](http://docs.aws.amazon.com/prescriptive-guidance/latest/automating-aws-infrastructure-documentation-generation-and-analysis/images/guide-img/1ecac3aa-b4fc-4e34-a08c-2c0eb2350189/images/e5f5fef3-e3bc-4874-b6c5-0b5c28bf61e2.png)
+![Workflow phases of resource scanning, documentation generation, and dependency mapping.](https://docs.aws.amazon.com/prescriptive-guidance/latest/automating-aws-infrastructure-documentation-generation-and-analysis/images/guide-img/1ecac3aa-b4fc-4e34-a08c-2c0eb2350189/images/e5f5fef3-e3bc-4874-b6c5-0b5c28bf61e2.png)
 
 ## Resource scanning phase
 <a name="resource-scanning-phase.ffa7169f-cc53-52a1-b462-3560baf8a194"></a>

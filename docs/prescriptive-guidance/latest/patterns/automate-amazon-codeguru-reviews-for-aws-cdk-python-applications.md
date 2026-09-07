@@ -37,7 +37,7 @@ This pattern showcases the integration of Amazon CodeGuru automated code reviews
 
 The following diagram shows the architecture for this solution.
 
-![Workflow to integrate CodeGuru code review for AWS CDK Python applications using GitHub Actions.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c5395e3e-ff2a-41cf-bd64-c73cc928b60b/images/18f880a2-9bc3-4d71-a598-bb83b68ee383.png)
+![Workflow to integrate CodeGuru code review for AWS CDK Python applications using GitHub Actions.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c5395e3e-ff2a-41cf-bd64-c73cc928b60b/images/18f880a2-9bc3-4d71-a598-bb83b68ee383.png)
 
 As shown in the diagram, when a developer creates a pull request (PR) for review, GitHub Actions triggers the following steps:
 

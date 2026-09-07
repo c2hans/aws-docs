@@ -38,11 +38,11 @@ For ESP32, the default lwIP configuration does not use core locking and therefor
 
 The following is an example output when you run the demo.
 
-![Console log output showing MQTT connection, publishing, and memory usage events for the DemoThing application.](http://docs.aws.amazon.com/freertos/latest/userguide/images/Defender_p4_supported.png)
+![Console log output showing MQTT connection, publishing, and memory usage events for the DemoThing application.](https://docs.aws.amazon.com/freertos/latest/userguide/images/Defender_p4_supported.png)
 
 If your board isn't using FreeRTOS\+TCP or a supported lwIP configuration, the output will look like the following.
 
-![Log messages showing MQTT connection establishment, topic subscription attempts, publishing payloads, and packet handling for a demo application.](http://docs.aws.amazon.com/freertos/latest/userguide/images/Defender_p4_unsupported.png)
+![Log messages showing MQTT connection establishment, topic subscription attempts, publishing payloads, and packet handling for a demo application.](https://docs.aws.amazon.com/freertos/latest/userguide/images/Defender_p4_unsupported.png)
 
 The source code of the demo is in your download in `{{freertos}}/demos/device_defender_for_aws/` directory or on the [GitHub](https://github.com/aws/amazon-freertos/tree/main/demos/device_defender_for_aws) website.
 

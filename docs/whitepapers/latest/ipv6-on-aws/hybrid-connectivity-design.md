@@ -56,7 +56,7 @@ An “Allowed Prefix” IPv6 CIDR must be of length /64 or less specific, but yo
 
  If you’re using AWS-assigned CIDR blocks for the VPCs, or BYOIPv6 with CIDRs that are marked as *advertisable* by AWS, you will receive over the public VIF peering the summary prefixes that contain the CIDRs of your VPCs. When using public VIFs in conjunction with private/transit VIFs, take into account that your device will receive the same prefixes (the ones for your VPCs) over both types of VIFs. At this point, route filtering on your customer device needs to be taken into consideration, to ensure symmetric flow of traffic over the different virtual interfaces.
 
-![This is a diagram that shows Direct Connect dual-stack support](http://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/images/direct-connect-dual-stack-support.png)
+![This is a diagram that shows Direct Connect dual-stack support](https://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/images/direct-connect-dual-stack-support.png)
 
 ## Amazon-managed VPN
 <a name="amazon-managed-vpn"></a>
@@ -98,4 +98,4 @@ Even if you specify a `/126`, the console displays the IPv6 tunnel CIDR as a `/1
 
  When using an AWS-generated tunnel IP, or specifying a `/128` CIDR range establishment of the BGP, peering will fail by default. The reason is that a `/128`, like a `/32` in IPv4, is a host route. You will need to define a static route pointing at the AWS side of the tunnel to establish the BGP peering.
 
-![This is a diagram that shows AWS VPN dual-stack configuration.](http://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/images/aws-vpn-dual-stack-configuration.png)
+![This is a diagram that shows AWS VPN dual-stack configuration.](https://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/images/aws-vpn-dual-stack-configuration.png)

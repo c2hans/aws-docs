@@ -11,7 +11,7 @@ To mitigate the implementation challenges of an all-in-one MES deployment, manu
 
  The following diagram shows examples of essential microservices in MES.
 
-![Decomposed, microservice-based MES](http://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/images/guide-img/093538ca-c7c9-4311-a0e9-8a876ae66d65/images/87c57c81-eadb-463e-a655-644e12312015.png)
+![Decomposed, microservice-based MES](https://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/images/guide-img/093538ca-c7c9-4311-a0e9-8a876ae66d65/images/87c57c81-eadb-463e-a655-644e12312015.png)
 
 These microservices include:
 + **Production scheduling service** creates work orders and schedules production runs. It might connect to other systems or microservices to track production status and ensure appropriate resource allocation.

@@ -37,7 +37,7 @@ Amazon Redshift doesn't currently support cross-Region features such as snapshot
 
 **Target architecture **
 
-![Migration of Amazon Redshift cluster data in S3 bucket in an AWS Region to bucket in a China Region.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/f7d241d9-b700-406b-95a0-3e47e7f0fa60/images/b6016e3d-76db-4176-8f99-f804da94d3f2.png)
+![Migration of Amazon Redshift cluster data in S3 bucket in an AWS Region to bucket in a China Region.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/f7d241d9-b700-406b-95a0-3e47e7f0fa60/images/b6016e3d-76db-4176-8f99-f804da94d3f2.png)
 
 ## Tools
 <a name="migrate-an-amazon-redshift-cluster-to-an-aws-region-in-china-tools"></a>

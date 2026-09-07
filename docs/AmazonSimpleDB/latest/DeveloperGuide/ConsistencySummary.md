@@ -30,7 +30,7 @@ This section provides examples of eventually consistent and consistent read requ
 
 In this example, both W1 (write 1) and W2 (write 2) complete (receive a successful response from the server) before the start of R1 (read 1) and R2 (read 2). For a consistent read, R1 and R2 both return `color = ruby`. For an eventually consistent read, R1 and R2 might return `color = red`, `color = ruby`, or no results, depending on the amount of time that has elapsed.
 
-![Timeline diagram showing two clients with write operations W1 and W2, and read operations R1 and R2.](http://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/images/consistency1.png)
+![Timeline diagram showing two clients with write operations W1 and W2, and read operations R1 and R2.](https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/images/consistency1.png)
 
 In the next example, W2 does not complete before the start of R1. Therefore, R1 might return `color = ruby` or `color = garnet` for either a consistent read or an eventually consistent read. Data is distributed among several servers. If R1 is sent to one server that does not have the W2 values, yet, then R1 returns W1 values. Also, depending on the amount of time that has elapsed, an eventually consistent read might return no results.
 
@@ -39,8 +39,8 @@ If a failure occurs during the second write operation (W2), the value might chan
 
 For a consistent read, R2 returns `color = garnet`. For an eventually consistent read, R2 might return `color = ruby`, `color = garnet`, or no results depending on the amount of time that has elapsed.
 
-![Timeline diagram showing two clients with write operations W1 and W2, and read operations R1 and R2.](http://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/images/consistency2.png)
+![Timeline diagram showing two clients with write operations W1 and W2, and read operations R1 and R2.](https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/images/consistency2.png)
 
 In the last example, Client 2 submits W2 before Amazon SimpleDB completes W1, so the outcome of the final value is unknown (`color = garnet` or `color = brick`). Any subsequent reads (consistent read or eventually consistent) might return either value. Also, depending on the amount of time that has elapsed, an eventually consistent read might return no results.
 
-![Diagram showing two clients, two write operations W1 and W2, and two read operations R1 and R2 on a timeline.](http://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/images/consistency3.png)
+![Diagram showing two clients, two write operations W1 and W2, and two read operations R1 and R2 on a timeline.](https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/images/consistency3.png)

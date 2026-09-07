@@ -13,7 +13,7 @@ Application Manager gives you an application-level view into this solution and i
 
 The following figure depicts an example of the application view for this solution stack in Application Manager.
 
-![mcs stack in application manager](http://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/images/mcs-stack-in-application-manager.png)
+![mcs stack in application manager](https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/images/mcs-stack-in-application-manager.png)
 
 **Note**
 You must activate CloudWatch Application Insights, AWS Cost Explorer, and cost allocation tags associated with this solution. They are not activated by default.

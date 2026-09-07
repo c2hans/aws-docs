@@ -11,7 +11,7 @@ After you specify the location of your data, knowledge bases for Amazon Bedrock 
 
 If you add knowledge bases to an Amazon Bedrock agent, the agent identifies the appropriate knowledge base based on the user input. The agent retrieves the relevant information and adds the information to the input prompt. The updated prompt provides the model with more context information to generate a response. To improve transparency and minimize hallucinations, the information retrieved from the knowledge base is traceable to its source.
 
-![The Amazon Bedrock agent retrieves information from the knowledge base and passes it to the LLM.](http://docs.aws.amazon.com/prescriptive-guidance/latest/retrieval-augmented-generation-options/images/guide-img/22e94edd-d3e5-4e29-8c94-48e327306335/images/e3452591-694b-40f4-aa19-d39040a44631.png)
+![The Amazon Bedrock agent retrieves information from the knowledge base and passes it to the LLM.](https://docs.aws.amazon.com/prescriptive-guidance/latest/retrieval-augmented-generation-options/images/guide-img/22e94edd-d3e5-4e29-8c94-48e327306335/images/e3452591-694b-40f4-aa19-d39040a44631.png)
 
 Amazon Bedrock supports the following two APIs for RAG:
 + [RetrieveAndGenerate](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) – You can use this API to query your knowledge base and generate responses from the information it retrieves. Internally, Amazon Bedrock converts the queries into embeddings, queries the knowledge base, augments the prompt with the search results as context information, and returns the LLM-generated response. Amazon Bedrock also manages the short-term memory of the conversation to provide more contextual results.

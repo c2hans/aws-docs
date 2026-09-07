@@ -14,7 +14,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/designing-mqtt-topics
 
  A point-to-point communication pattern is one of the basic building blocks of how devices commonly send and receive messages in MQTT. Two devices use a single MQTT topic as the communication channel. The device that receives the event subscribes to an MQTT topic. The thing that sends the message publishes to the same known MQTT topic. This approach is common in smart home scenarios where an end user receives updates about the thing in the home. In the following example, the room occupancy publishes a message on a topic subscribed to by an application running on the digital display outside the screening room.
 
-![One-to-one messaging in point-to-point communication](http://docs.aws.amazon.com/whitepapers/latest/designing-mqtt-topics-aws-iot-core/images/one-to-one-point-to-point.png)
+![One-to-one messaging in point-to-point communication](https://docs.aws.amazon.com/whitepapers/latest/designing-mqtt-topics-aws-iot-core/images/one-to-one-point-to-point.png)
 
 * One-to-one messaging in point-to-point communication *
 
@@ -22,7 +22,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/designing-mqtt-topics
 
 This approach is common in notification scenarios where an administrator sends distinct updates to specific devices. In the following example, the repair service uses a set of point-to-point communications to programmatically loop through a list of appliances and publish a message.
 
-![Repair service publishes messages to AWS IoT Core, which routes to subscribed devices.](http://docs.aws.amazon.com/whitepapers/latest/designing-mqtt-topics-aws-iot-core/images/one-to-many-point-to-point.png)
+![Repair service publishes messages to AWS IoT Core, which routes to subscribed devices.](https://docs.aws.amazon.com/whitepapers/latest/designing-mqtt-topics-aws-iot-core/images/one-to-many-point-to-point.png)
 
 * One-to-many messaging in point-to-point communication *
 
@@ -33,7 +33,7 @@ This approach is common in notification scenarios where an administrator sends d
 
  The following illustration depicts an example where a broadcast pattern sends a message on a weather topic that all delivery vehicles in the state subscribe to. The message includes weather conditions and detailed location coordinates. Based on the current location of the vehicle, it can ignore the message or take some action.
 
-![Weather station publishes snow forecast to AWS IoT Core, which broadcasts to vehicles.](http://docs.aws.amazon.com/whitepapers/latest/designing-mqtt-topics-aws-iot-core/images/one-to-many-broadcast.png)
+![Weather station publishes snow forecast to AWS IoT Core, which broadcasts to vehicles.](https://docs.aws.amazon.com/whitepapers/latest/designing-mqtt-topics-aws-iot-core/images/one-to-many-broadcast.png)
 
 * One-to-many messaging in broadcast communication *
 
@@ -48,7 +48,7 @@ Multiple devices publish on a shared or similar topic with a single subscriber t
 
 Rule: Select environment/building/lax002/airqual/\+
 
-![IoT sensors publishing temperature and PPM data to IoT Core, filtered by IoT Rule to Kinesis.](http://docs.aws.amazon.com/whitepapers/latest/designing-mqtt-topics-aws-iot-core/images/many-to-one-fan-in.png)
+![IoT sensors publishing temperature and PPM data to IoT Core, filtered by IoT Rule to Kinesis.](https://docs.aws.amazon.com/whitepapers/latest/designing-mqtt-topics-aws-iot-core/images/many-to-one-fan-in.png)
 
 * Many-to-one communication in a fan-in pattern *
 

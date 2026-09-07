@@ -19,7 +19,7 @@ The middleware performs the following functions.
 
 The block diagram below represents the architecture of the Zigbee middleware. The architecture of middlewares of other protocols like Z-Wave is also similar.
 
-![The protocol-specific middleware architecture and its components.](http://docs.aws.amazon.com/iot-mi/latest/devguide/images/iot-smarthome-sdk-v2-middleware-architecture.png)
+![The protocol-specific middleware architecture and its components.](https://docs.aws.amazon.com/iot-mi/latest/devguide/images/iot-smarthome-sdk-v2-middleware-architecture.png)
 
 The protocol-specific middleware has three main components.
 + **ACS Zigbee DPK**: The Zigbee Device Porting Kit (DPK) is used to provide abstraction from the underlying hardware and operating system, thereby enabling portability. Basically this can be considered as the hardware abstraction layer (HAL), which provides a common set APIs to control and communicate with the Zigbee radios from different vendors. The Zigbee middleware contains DPK API implementation for the Silicon Labs Zigbee Application framework.
@@ -31,8 +31,8 @@ The protocol-specific middleware has three main components.
 
 Here is an example of the command flow through the Zigbee middleware.
 
-![The protocol-specific middleware architecture and its components.](http://docs.aws.amazon.com/iot-mi/latest/devguide/images/iot-smarthome-sdk-v2-middleware-zigbee.png)
+![The protocol-specific middleware architecture and its components.](https://docs.aws.amazon.com/iot-mi/latest/devguide/images/iot-smarthome-sdk-v2-middleware-zigbee.png)
 
 Here is an example of the command flow through the Z-Wave middleware.
 
-![The protocol-specific middleware architecture and its components.](http://docs.aws.amazon.com/iot-mi/latest/devguide/images/iot-smarthome-sdk-v2-middleware-zwave.png)
+![The protocol-specific middleware architecture and its components.](https://docs.aws.amazon.com/iot-mi/latest/devguide/images/iot-smarthome-sdk-v2-middleware-zwave.png)

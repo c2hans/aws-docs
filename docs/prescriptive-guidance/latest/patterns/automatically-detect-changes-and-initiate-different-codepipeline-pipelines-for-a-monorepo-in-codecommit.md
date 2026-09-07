@@ -39,7 +39,7 @@ This pattern’s workflow is a proof of concept (PoC). We recommend that you use
 
 The following diagram shows how to use the AWS CDK to define an infrastructure with two AWS CloudFormation stacks: `MonoRepoStack` and `PipelinesStack`.
 
-![Workflow to use the AWS CDK to define an infrastructure with two CloudFormation stacks.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a3397158-a208-4033-844e-969af13ae8b6/images/b0bb1094-b598-4b3d-ab8b-ad9b0eb45f38.png)
+![Workflow to use the AWS CDK to define an infrastructure with two CloudFormation stacks.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a3397158-a208-4033-844e-969af13ae8b6/images/b0bb1094-b598-4b3d-ab8b-ad9b0eb45f38.png)
 
 The diagram shows the following workflow:
 
@@ -55,7 +55,7 @@ The diagram shows the following workflow:
 
 The following diagram shows the deployment of the AWS CloudFormation stacks `MonoRepoStack` and `PipelinesStack` in an account.
 
-![Deployment of the CloudFormation stacks MonoRepoStack and PipelinesStack in an AWS account.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a3397158-a208-4033-844e-969af13ae8b6/images/39e60e49-dea2-486d-8a2c-6cae438f69b4.png)
+![Deployment of the CloudFormation stacks MonoRepoStack and PipelinesStack in an AWS account.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a3397158-a208-4033-844e-969af13ae8b6/images/39e60e49-dea2-486d-8a2c-6cae438f69b4.png)
 
 1. A user changes code in one of the application’s microservices.
 

@@ -15,4 +15,4 @@ You can use your organization's business process or capabilities to decompose a 
 
 In the following diagram, an insurance monolith is decomposed into four microservices based on business capabilities.
 
-![Decompose by business capability pattern](http://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-decomposing-monoliths/images/guide-img/8e9fa68d-7532-4c4b-8c7b-74bc6afdb7b9/images/52518157-f36e-4cfc-bd31-b669586c3ecb.png)
+![Decompose by business capability pattern](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-decomposing-monoliths/images/guide-img/8e9fa68d-7532-4c4b-8c7b-74bc6afdb7b9/images/52518157-f36e-4cfc-bd31-b669586c3ecb.png)

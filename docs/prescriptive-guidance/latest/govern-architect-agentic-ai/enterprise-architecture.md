@@ -9,7 +9,7 @@ The reference architecture for enterprise agentic AI systems demonstrates how or
 
 The architecture is organized into layers that work together to enable AI agents while maintaining enterprise control. Observability, security and discoverability span multiple layers, ensuring that AI operations are monitored, auditable, and compliant with enterprise policies.
 
-![Architecture diagram with three layers](http://docs.aws.amazon.com/prescriptive-guidance/latest/govern-architect-agentic-ai/images/guide-img/5961cc11-38d0-411b-a5ab-a75afdc073b4/images/ae123839-aadb-4656-b85c-dcb20a97910b.png)
+![Architecture diagram with three layers](https://docs.aws.amazon.com/prescriptive-guidance/latest/govern-architect-agentic-ai/images/guide-img/5961cc11-38d0-411b-a5ab-a75afdc073b4/images/ae123839-aadb-4656-b85c-dcb20a97910b.png)
 
 **Applications layer:**
 + [**Generative AI End-User Applications **](gen-ai-end-user-solutions-layer.md)- These are user-facing applications that enable interaction with agentic AI systems. These applications may provide conversational interfaces for natural language interaction, productivity features that augment workflows with AI assistance, and no-code tools that allow business users to create and deploy custom agents. An application can be off the shelf, like integrated development environment (IDE) and productivity tools, or custom built.

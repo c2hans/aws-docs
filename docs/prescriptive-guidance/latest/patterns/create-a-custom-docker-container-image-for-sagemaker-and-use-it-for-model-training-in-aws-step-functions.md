@@ -37,7 +37,7 @@ In the example [SageMaker notebook](https://docs.aws.amazon.com/sagemaker/latest
 
 The following diagram shows an example workflow for creating a Docker container image for SageMaker, then using it for a training model in Step Functions:
 
-![Workflow to create Docker container image for SageMaker to use as a Step Functions training model.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7857d57f-3077-4b06-8971-fb5846387693/images/37755e38-0bc4-4dd0-90c7-135d95b00053.png)
+![Workflow to create Docker container image for SageMaker to use as a Step Functions training model.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7857d57f-3077-4b06-8971-fb5846387693/images/37755e38-0bc4-4dd0-90c7-135d95b00053.png)
 
 The diagram shows the following workflow:
 

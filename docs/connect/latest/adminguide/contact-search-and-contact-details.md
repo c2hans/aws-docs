@@ -34,7 +34,7 @@ To use the Active region filter:
 
 1. Choose one or more Regions.
 
-![The Active region filter dropdown showing available Regions to select.](http://docs.aws.amazon.com/connect/latest/adminguide/images/active-region-filter.png)
+![The Active region filter dropdown showing available Regions to select.](https://docs.aws.amazon.com/connect/latest/adminguide/images/active-region-filter.png)
 
 ### Region-Specific Resource Filters
 <a name="region-specific-resource-filters"></a>
@@ -74,7 +74,7 @@ When you open a contact details page, you see comprehensive information regardle
 
 The contact's active Region is displayed on the contact details page under **Global resiliency metadata**.
 
-![The contact details page showing the Global resiliency metadata section with the active Region information.](http://docs.aws.amazon.com/connect/latest/adminguide/images/global-resiliency-metadata.png)
+![The contact details page showing the Global resiliency metadata section with the active Region information.](https://docs.aws.amazon.com/connect/latest/adminguide/images/global-resiliency-metadata.png)
 
 **Note**
 If the contact's active Region is impaired, some information might be unavailable, including screen and audio recordings, chat transcripts, IVR interactions, email attachments and transcripts, and conversational analytics data.

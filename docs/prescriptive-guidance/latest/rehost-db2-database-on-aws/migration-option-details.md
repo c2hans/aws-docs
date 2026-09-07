@@ -42,7 +42,7 @@ Q Replication is a high-volume, low-latency replication solution that uses IBM M
 
 The most common configuration is shown in the following diagram.
 
-![Architecture diagram showing showing Db2 on premises connect through IBM MQ and Site-to-Site VPN to Db2 on EC2.](http://docs.aws.amazon.com/prescriptive-guidance/latest/rehost-db2-database-on-aws/images/guide-img/4110482b-c82b-44be-8423-7af4c399c9a0/images/870e1acf-8fa3-44c2-8328-d97d180ae600.png)
+![Architecture diagram showing showing Db2 on premises connect through IBM MQ and Site-to-Site VPN to Db2 on EC2.](https://docs.aws.amazon.com/prescriptive-guidance/latest/rehost-db2-database-on-aws/images/guide-img/4110482b-c82b-44be-8423-7af4c399c9a0/images/870e1acf-8fa3-44c2-8328-d97d180ae600.png)
 
 IBM MQ runs on the same server as Db2. There are two IBM MQ instances, one on the on-premises server and the other one on Amazon EC2. The Capture program runs on the source database. It reads the transaction logs and sends committed changes (insert, update, or delete) to IBM MQ on premises. IBM MQ on premises sends the messages through AWS Site-to-Site VPN to IBM MQ on Amazon EC2. The Apply program runs on the EC2 instance with the target database. First, it does a full load on tables. Then, it reads change data messages from IBM MQ on Amazon EC2 and applies them to the target tables.
 + Db2 on premises is the source and Db2 on Amazon EC2 is the target. Both databases are online.

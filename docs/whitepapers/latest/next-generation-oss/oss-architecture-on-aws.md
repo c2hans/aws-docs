@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/next-generation-oss/o
 
  This section introduces an OSS architecture framework on AWS that aligns with network characteristics and business drivers described in the previous chapter. The following reference architecture illustrates key enablers that apply to the entirety of the OSS stack, providing guidance in architecting principles to enable a next-generation OSS solution.
 
-![Diagram showing Key Enablers for Telco Digital Support System](http://docs.aws.amazon.com/whitepapers/latest/next-generation-oss/images/key-enablers-telco-digital-support-system.png)
+![Diagram showing Key Enablers for Telco Digital Support System](https://docs.aws.amazon.com/whitepapers/latest/next-generation-oss/images/key-enablers-telco-digital-support-system.png)
 
 **Topics**
 + [Governance & Network](governance-network.md)

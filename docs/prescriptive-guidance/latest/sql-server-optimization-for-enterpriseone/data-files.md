@@ -89,7 +89,7 @@ DBCC SHRINKFILE (JDE_PRIST920_Data, EMPTYFILE)
 
 The `EMPTYFILE `command generates an error because some content can't be moved to an NDF file. You can ignore this error message.
 
-![Error message when emptying the MDF file](http://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-optimization-for-enterpriseone/images/guide-img/1ded277e-59b3-4f6d-bcef-fa7d04f06c63/images/1e9a4313-7b87-4902-8a15-0cc341db2e6e.png)
+![Error message when emptying the MDF file](https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-optimization-for-enterpriseone/images/guide-img/1ded277e-59b3-4f6d-bcef-fa7d04f06c63/images/1e9a4313-7b87-4902-8a15-0cc341db2e6e.png)
 
 ## Resize the MDF file
 <a name="resize-mdf"></a>
@@ -141,4 +141,4 @@ AND type_desc = 'ROWS'
 
 The output should be similar to the following. The files will seldom be perfectly balanced, because some content can exist only in the MDF file.
 
-![Validating disk space utilization after balancing](http://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-optimization-for-enterpriseone/images/guide-img/1ded277e-59b3-4f6d-bcef-fa7d04f06c63/images/175af9bb-4a1f-4779-871b-e695e291cec0.png)
+![Validating disk space utilization after balancing](https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-optimization-for-enterpriseone/images/guide-img/1ded277e-59b3-4f6d-bcef-fa7d04f06c63/images/175af9bb-4a1f-4779-871b-e695e291cec0.png)

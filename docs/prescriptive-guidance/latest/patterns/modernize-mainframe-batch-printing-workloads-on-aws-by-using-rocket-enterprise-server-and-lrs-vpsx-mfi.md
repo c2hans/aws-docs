@@ -57,7 +57,7 @@ For more information about configuration considerations for mainframe batch prin
 
 The following diagram shows a typical current state architecture for a mainframe batch printing workload:
 
-![From user to mainframe service, Db2 for z/OS, job scheduler, batch job, and output in six steps.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/36de7312-4860-4702-a325-c01cf74c4f33/images/83d82435-0aa6-4eb8-a5c8-0920102afb09.png)
+![From user to mainframe service, Db2 for z/OS, job scheduler, batch job, and output in six steps.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/36de7312-4860-4702-a325-c01cf74c4f33/images/83d82435-0aa6-4eb8-a5c8-0920102afb09.png)
 
 The diagram shows the following workflow:
 
@@ -77,7 +77,7 @@ The diagram shows the following workflow:
 
 The following diagram shows an architecture for a mainframe batch printing workload that’s deployed in the AWS Cloud:
 
-![Batch application on AWS with scheduler, Rocket Enterprise Server, and database in four steps.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/36de7312-4860-4702-a325-c01cf74c4f33/images/8cdd4ef7-3cbd-476a-9aa4-c1c0924f17c6.png)
+![Batch application on AWS with scheduler, Rocket Enterprise Server, and database in four steps.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/36de7312-4860-4702-a325-c01cf74c4f33/images/8cdd4ef7-3cbd-476a-9aa4-c1c0924f17c6.png)
 
 The diagram shows the following workflow:
 
@@ -96,7 +96,7 @@ The target solution typically doesn’t require application changes to accommoda
 
 The following diagram shows a highly available and secure AWS infrastructure architecture for a mainframe batch printing workload:
 
-![Multi-AZ deployment on AWS with Rocket Software and LRS components in seven steps.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/36de7312-4860-4702-a325-c01cf74c4f33/images/287dd143-338c-4d83-a9b2-8e39214a81b0.png)
+![Multi-AZ deployment on AWS with Rocket Software and LRS components in seven steps.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/36de7312-4860-4702-a325-c01cf74c4f33/images/287dd143-338c-4d83-a9b2-8e39214a81b0.png)
 
 The diagram shows the following workflow:
 

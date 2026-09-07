@@ -61,23 +61,23 @@ Also, having separate Security and Forensics accounts allows for creating separa
 
 The following diagram shows only the interaction between the accounts. Details of each account are shown in subsequent diagrams, and a complete diagram is attached.
 
-![Interaction between member, security, and forensics accounts and users, the internet, and Slack.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7fc94597-d82d-4f6d-9c8b-5e0060010c53/images/6ed33293-d198-4458-9e38-74f6d20629c9.png)
+![Interaction between member, security, and forensics accounts and users, the internet, and Slack.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7fc94597-d82d-4f6d-9c8b-5e0060010c53/images/6ed33293-d198-4458-9e38-74f6d20629c9.png)
 
 The following diagram shows the member account.
 
-![Member account with AWS KMS key, IAM roles, Lambda functions, endpoints, VPC with two EC2 instances.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7fc94597-d82d-4f6d-9c8b-5e0060010c53/images/464fcefa-1418-4c9e-9902-5050a76ba9b9.png)
+![Member account with AWS KMS key, IAM roles, Lambda functions, endpoints, VPC with two EC2 instances.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7fc94597-d82d-4f6d-9c8b-5e0060010c53/images/464fcefa-1418-4c9e-9902-5050a76ba9b9.png)
 
 1. An event is sent to the Slack Amazon Simple Notification Service (Amazon SNS) topic.
 
 The following diagram shows the Security account.
 
-![Security account with EC2DdCopyInstance in the incident response VPC and with LiME memory modules.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7fc94597-d82d-4f6d-9c8b-5e0060010c53/images/89dda7a1-972a-403e-abf8-98fc422422b2.png)
+![Security account with EC2DdCopyInstance in the incident response VPC and with LiME memory modules.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7fc94597-d82d-4f6d-9c8b-5e0060010c53/images/89dda7a1-972a-403e-abf8-98fc422422b2.png)
 
 2. The Amazon SNS topic in the Security account initiates Forensics events.
 
 The following diagram shows the Forensics account.
 
-![Forensics account with forensics and victim EC2 instances, an Analysis VPC, and a Maintenance VPC.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7fc94597-d82d-4f6d-9c8b-5e0060010c53/images/da3bcfcc-cdca-4875-ada5-6131e8b666bc.png)
+![Forensics account with forensics and victim EC2 instances, an Analysis VPC, and a Maintenance VPC.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7fc94597-d82d-4f6d-9c8b-5e0060010c53/images/da3bcfcc-cdca-4875-ada5-6131e8b666bc.png)
 
 The Security account is where the two main AWS Step Functions workflows are created for memory and disk image acquisition. After the workflows are running, they access the member account that has the Amazon EC2 instances involved in an incident, and they initiate a set of Lambda functions that will gather a memory dump or a disk dump. Those artifacts are then stored in the Forensics account.
 
@@ -111,7 +111,7 @@ The following diagram shows the key steps of a workflow that includes the proces
 
 1. Attach the IAM role and security group to fully isolate the instance.
 
-![Workflow steps listed previously.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7fc94597-d82d-4f6d-9c8b-5e0060010c53/images/b319bd9b-8cb4-4048-b5c8-6e39e72908b0.png)
+![Workflow steps listed previously.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7fc94597-d82d-4f6d-9c8b-5e0060010c53/images/b319bd9b-8cb4-4048-b5c8-6e39e72908b0.png)
 
 **Automation and scale**
 

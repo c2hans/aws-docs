@@ -69,12 +69,12 @@ The following best practices can help you implement a database wrapper service:
 
 This section describes an example of how a fictitious company, named *AnyCompany Books*, could use the database wrapper pattern to control access to their monolithic database system. At AnyCompany Books, there are three critical services: Dispatch, Finance, and Order Processing. These services share access to a central database. Each service is maintained by a different team. Over time, they independently modify the database schema to meet their specific needs. This has led to a tangled web of dependencies and an increasingly complex database structure.
 
-![Three applications sharing access to a central database with multiple, modified schemas.](http://docs.aws.amazon.com/prescriptive-guidance/latest/database-decomposition/images/guide-img/6bdbec4e-98b8-4cd1-adda-f196258cf753/images/f6caaac6-d80b-4630-b9c9-23e649e59489.png)
+![Three applications sharing access to a central database with multiple, modified schemas.](https://docs.aws.amazon.com/prescriptive-guidance/latest/database-decomposition/images/guide-img/6bdbec4e-98b8-4cd1-adda-f196258cf753/images/f6caaac6-d80b-4630-b9c9-23e649e59489.png)
 
 The company's application or enterprise architect recognizes the need to decompose this monolithic database. Their goal is to give each service its own dedicated database to improve maintainability and reduce cross-team dependencies. However, they face a significant challenge—it's nearly impossible to decompose the database while all three teams continue to actively modify it for their ongoing projects. The constant schema changes and lack of coordination between teams make it extremely risky to attempt any significant restructuring.
 
 The architect uses the database wrapper service pattern to start controlling access to the monolithic database. First, they set up the database wrapper service for a particular module, called the Order service. Then, they redirect the Order Processing service to access the wrapper service instead of directly accessing the database. The following image shows the modified infrastructure.
 
-![Database access after implementing the wrapper service.](http://docs.aws.amazon.com/prescriptive-guidance/latest/database-decomposition/images/guide-img/6bdbec4e-98b8-4cd1-adda-f196258cf753/images/f88c0429-18a2-41f6-a897-f1a330fc1443.png)
+![Database access after implementing the wrapper service.](https://docs.aws.amazon.com/prescriptive-guidance/latest/database-decomposition/images/guide-img/6bdbec4e-98b8-4cd1-adda-f196258cf753/images/f88c0429-18a2-41f6-a897-f1a330fc1443.png)
 
 Gradually, AnyCompany Books can move all of the other services to use their respective wrapper services. The end goal is for each service have its own database, without going through the wrapper service. But the database wrapper service is an important and necessary intermediate step. Subsequent sections of this guide help you decompose further.

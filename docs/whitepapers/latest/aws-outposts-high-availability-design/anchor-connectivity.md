@@ -17,7 +17,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-ava
 
  The following diagram shows three Outposts with redundant network paths to their anchor AZs using AWS Direct Connect as well as public internet connectivity. Outpost A and Outpost B are anchored to different Availability Zones in the same Region. Outpost A connects to private anchor points in AZ 1 of region 1. Outpost B connects to public anchor points in AZ 2 of region 1. Outpost C connects to public anchors in AZ 1 of region 2.
 
-![Diagram showing Highly available anchor connectivity with AWS Direct Connect and public internet access](http://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/highly-available-anchor-connectivity.png)
+![Diagram showing Highly available anchor connectivity with AWS Direct Connect and public internet access](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/highly-available-anchor-connectivity.png)
 
  Outpost A has three redundant network paths to reach its private anchor point. Two paths are available through redundant Direct Connect circuits at a single Direct Connect location. The third path is available through a Direct Connect circuit at a second Direct Connect location. This design keeps Outpost A’s service link traffic on private networks and provides path redundancy that allows for failure of any one of the Direct Connect circuits or failure of an entire Direct Connect location.
 

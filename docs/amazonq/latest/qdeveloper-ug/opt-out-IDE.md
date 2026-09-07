@@ -65,7 +65,7 @@ To opt out of sharing your telemetry data in JetBrains, use this procedure:
 
 1. Deselect **Send usage metrics to AWS**.
 
-![The settings panel in JetBrains](http://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/images/JB-usage.png)
+![The settings panel in JetBrains](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/images/JB-usage.png)
 
 **Note**
 This is a decision for each developer to make inside their own IDE. If you are using Amazon Q as part of an enterprise, your administrator will not be able to change this setting for you.
@@ -200,7 +200,7 @@ At the Amazon Q Developer Free Tier, to opt out of sharing Amazon Q data in JetB
 
 1. Under **Data sharing**, deselect **Share Amazon Q content with AWS**.
 
-![Options for sharing Amazon Q data in VS Code.](http://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/images/JB-content.png)
+![Options for sharing Amazon Q data in VS Code.](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/images/JB-content.png)
 
 ------
 #### [ Eclipse ]

@@ -60,7 +60,7 @@ Leaderboards, such as the top 10 scores for a game, are computationally complex.
 
 In the following diagram, you can see how an ElastiCache gaming leaderboard works.
 
-![Image: ElastiCache Gaming leaderboard diagram](http://docs.aws.amazon.com/AmazonElastiCache/latest/dg/images/ElastiCache-Redis-Gaming.png)
+![Image: ElastiCache Gaming leaderboard diagram](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/images/ElastiCache-Redis-Gaming.png)
 
 **Example Valkey or Redis OSS Leaderboard**
 In this example, four gamers and their scores are entered into a sorted list using `ZADD`. The command `ZREVRANGEBYSCORE` lists the players by their score, high to low. Next, `ZADD` is used to update June's score by overwriting the existing entry. Finally, `ZREVRANGEBYSCORE` lists the players by their score, high to low. The list shows that June has moved up in the rankings.
@@ -101,7 +101,7 @@ When you send an email message, you send it to one or more specified recipients.
 
 Pub/sub functionality has no relation to any key space. Therefore, it doesn't interfere on any level. In the following diagram, you can find an illustration of ElastiCache messaging with Valkey and Redis OSS.
 
-![Image: ElastiCache messaging diagram](http://docs.aws.amazon.com/AmazonElastiCache/latest/dg/images/ElastiCache-Redis-PubSub.png)
+![Image: ElastiCache messaging diagram](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/images/ElastiCache-Redis-PubSub.png)
 
 ### Subscribing
 <a name="elasticache-use-cases-messaging-subscribing"></a>
@@ -210,7 +210,7 @@ RAG is the process of providing LLMs with up-to-date information in the prompt t
 
 The following diagram illustrates an example architecture using ElastiCache to implement a semantic cache, memory mechanisms, and RAG to enhance a generative AI application in production.
 
-![Diagram of a semantic search as performed by a generative AI assistant.](http://docs.aws.amazon.com/AmazonElastiCache/latest/dg/images/vector-search-gen-ai1.png)
+![Diagram of a semantic search as performed by a generative AI assistant.](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/images/vector-search-gen-ai1.png)
 
 **Semantic Search**
 

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/data-lake-f
 
 The following diagram shows the three components of this guide's reference architecture: data producers, data consumers, and the centralized catalog.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/data-lake-for-growth-scale/images/guide-img/dab5abfa-9d34-4ff1-9eb1-8a82c673378f/images/272b1faa-a96d-445f-ab66-a7318e19dfa6.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/data-lake-for-growth-scale/images/guide-img/dab5abfa-9d34-4ff1-9eb1-8a82c673378f/images/272b1faa-a96d-445f-ab66-a7318e19dfa6.png)
 
 The diagram shows the following components:
 
@@ -32,7 +32,7 @@ The following sections discuss the reference architecture's components:
 
 A data producer collects, processes, and stores data from their data domain, in addition to monitoring and ensuring the quality of their data assets. The following diagram shows the data producer account as a component of this guide's reference architecture.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/data-lake-for-growth-scale/images/guide-img/dab5abfa-9d34-4ff1-9eb1-8a82c673378f/images/fb46a4ae-3f92-4041-94a4-355e6bb00e62.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/data-lake-for-growth-scale/images/guide-img/dab5abfa-9d34-4ff1-9eb1-8a82c673378f/images/fb46a4ae-3f92-4041-94a4-355e6bb00e62.png)
 
 Each data producer has a private Data Catalog managed by AWS Lake Formation in their AWS account that is used by their internal data process. Data producers provide the centralized catalog with selective permissions to their data, which means that Lake Formation in the centralized catalog account can access data that the data producer wants to share.
 
@@ -54,7 +54,7 @@ The following table describes the two AWS services that data producers use to sh
 
 The following diagram shows how the centralized catalog connects data producers and data consumers in the data lake.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/data-lake-for-growth-scale/images/guide-img/dab5abfa-9d34-4ff1-9eb1-8a82c673378f/images/d6441264-4c5a-4a9c-9dcc-13be15126d71.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/data-lake-for-growth-scale/images/guide-img/dab5abfa-9d34-4ff1-9eb1-8a82c673378f/images/d6441264-4c5a-4a9c-9dcc-13be15126d71.png)
 
 The centralized catalog stores and manages the shared data catalog for the data producer accounts. The centralized catalog also hosts the shared data's technical metadata (for example, table name and schema) and is the location where data consumers come to access data.
 
@@ -90,7 +90,7 @@ You can also maintain table schema in AWS Glue by calling the AWS Glue API to cr
 
 Data consumers consume the data from the data producer after the centralized catalog shares it using AWS Lake Formation. The following diagram shows two data consumers in the data lake.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/data-lake-for-growth-scale/images/guide-img/dab5abfa-9d34-4ff1-9eb1-8a82c673378f/images/e7fc2a19-2b78-4b2f-b5e8-2e40cb4690a5.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/data-lake-for-growth-scale/images/guide-img/dab5abfa-9d34-4ff1-9eb1-8a82c673378f/images/e7fc2a19-2b78-4b2f-b5e8-2e40cb4690a5.png)
 
 There are two types of data consumer: *application* and *data-serving*. The following table describes these two types.
 

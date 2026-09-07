@@ -80,7 +80,7 @@ In many organizations, mainframe development follows the waterfall development m
 
 The following diagram shows multiple mainframe projects sharing mainframe hardware for their development. In mainframe hardware, it is expensive to scale out a development and test environment for more projects.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2359db4c-f351-45a6-8516-88a3b62e61f9/images/84e717fc-5aea-41a6-977a-d7e7a7ca5da7.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2359db4c-f351-45a6-8516-88a3b62e61f9/images/84e717fc-5aea-41a6-977a-d7e7a7ca5da7.png)
 
 *AWS*** architecture  **
 
@@ -132,7 +132,7 @@ To scale your mainframe test capability on AWS, the pattern builds out the Rocke
 
 An example mainframe development environment with Rocket Software on AWS is shown in the following diagram.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2359db4c-f351-45a6-8516-88a3b62e61f9/images/27da6a52-4573-44cb-8716-1ac49430f618.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2359db4c-f351-45a6-8516-88a3b62e61f9/images/27da6a52-4573-44cb-8716-1ac49430f618.png)
 
 *Target technology stack *
 
@@ -160,7 +160,7 @@ When the pipeline runs, it kicks off a CodeBuild project to use an AccuRev Linux
 
 The following diagram shows an AccuRev Server setup.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2359db4c-f351-45a6-8516-88a3b62e61f9/images/e60345cc-2283-4b03-8f57-e3dac1770978.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2359db4c-f351-45a6-8516-88a3b62e61f9/images/e60345cc-2283-4b03-8f57-e3dac1770978.png)
 
 **2. Enterprise Developer template**
 
@@ -182,7 +182,7 @@ When a developer instance starts, by associating with tags, Systems Manager uses
 
 The following diagram shows an Enterprise developer instance created by the Amazon EC2 template, with software and configuration applied to the instance by State Manager. Enterprise developer instances connect to AWS License Manager to activate their license.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2359db4c-f351-45a6-8516-88a3b62e61f9/images/7ca8f538-8362-4a11-a842-7ecff6fa0248.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2359db4c-f351-45a6-8516-88a3b62e61f9/images/7ca8f538-8362-4a11-a842-7ecff6fa0248.png)
 
 **3.  CI/CD pipelines**
 
@@ -198,15 +198,15 @@ In modern development, multiple test methodologies are used. For example, test-d
 
 The following diagram shows the team stream CI/CD pipeline.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2359db4c-f351-45a6-8516-88a3b62e61f9/images/da59f837-2f23-404f-948b-41402cc6fe0c.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2359db4c-f351-45a6-8516-88a3b62e61f9/images/da59f837-2f23-404f-948b-41402cc6fe0c.png)
 
 The following diagram shows the project CI/CD test report produced by CodePipeline in Mainframe3270 Robot Framework.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2359db4c-f351-45a6-8516-88a3b62e61f9/images/4752321a-c60d-455c-ac2f-6f0e2bc3dca0.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2359db4c-f351-45a6-8516-88a3b62e61f9/images/4752321a-c60d-455c-ac2f-6f0e2bc3dca0.png)
 
 The following diagram shows the project CI/CD test report produced by CodePipeline in Py3270 and Behave BDD.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2359db4c-f351-45a6-8516-88a3b62e61f9/images/d005466e-aeb8-4fd6-8342-743ed049f98a.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2359db4c-f351-45a6-8516-88a3b62e61f9/images/d005466e-aeb8-4fd6-8342-743ed049f98a.png)
 
 After project level tests are passed successfully, the tested code is manually promoted to the integration stream in AccuRev SCM. You can automate this step after the teams have a confidence on the tests coverage of their project pipeline.
 
@@ -220,7 +220,7 @@ After successfully testing of the mainframe programs, the artifact is stored, wi
 
 The following diagram shows a system integration CI/CD pipeline.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2359db4c-f351-45a6-8516-88a3b62e61f9/images/693212e5-1cd0-4f82-a910-39b00d977c38.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2359db4c-f351-45a6-8516-88a3b62e61f9/images/693212e5-1cd0-4f82-a910-39b00d977c38.png)
 
 After the artifact has been successfully tested in the system integration CI/CD pipelines, it can be promoted for production deployment.
 
@@ -228,7 +228,7 @@ If you need to deploy source code back to the mainframe, Rocket Software offers 
 
 The following diagram shows a production CI/CD pipeline deploying the artifact into Enterprise Servers. In this example, CodeDeploy orchestrates the deployment of the tested mainframe artifact into Enterprise Server.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2359db4c-f351-45a6-8516-88a3b62e61f9/images/56749c2a-e038-4e56-9487-b2ff83894725.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2359db4c-f351-45a6-8516-88a3b62e61f9/images/56749c2a-e038-4e56-9487-b2ff83894725.png)
 
 In addition to the architecture walkthrough of the CI/CD pipeline, see the AWS DevOps blog post [Automate thousands of mainframe tests on AWS with the Micro Focus Enterprise Suite](https://aws.amazon.com/blogs/devops/automate-mainframe-tests-on-aws-with-micro-focus/) for more information on testing mainframe applications in CodeBuild and CodePipeline. (Micro Focus is now Rocket Software.) Refer to the blog post for the best practices and details of doing mainframe tests on AWS.
 

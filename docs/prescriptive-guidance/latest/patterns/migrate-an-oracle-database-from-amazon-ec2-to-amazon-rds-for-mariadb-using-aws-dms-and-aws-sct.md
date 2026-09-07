@@ -41,11 +41,11 @@ Managing Oracle databases on EC2 instances requires more resources and is more c
 
 **Data migration architecture**
 
-![Using AWS DMS for the migration.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/0b4269c6-8ea3-4672-ad14-1ffac1dc14f3/images/ed191145-e5c2-4d61-8827-31f081450c03.png)
+![Using AWS DMS for the migration.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/0b4269c6-8ea3-4672-ad14-1ffac1dc14f3/images/ed191145-e5c2-4d61-8827-31f081450c03.png)
 
 **Target architecture**
 
-![Using AWS SCT for the migration.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/0b4269c6-8ea3-4672-ad14-1ffac1dc14f3/images/0171f548-37dd-4110-851c-7e74dfff3732.png)
+![Using AWS SCT for the migration.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/0b4269c6-8ea3-4672-ad14-1ffac1dc14f3/images/0171f548-37dd-4110-851c-7e74dfff3732.png)
 
 ## Tools
 <a name="migrate-an-oracle-database-from-amazon-ec2-to-amazon-rds-for-mariadb-using-aws-dms-and-aws-sct-tools"></a>

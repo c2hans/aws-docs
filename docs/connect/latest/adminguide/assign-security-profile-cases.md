@@ -12,23 +12,23 @@ This topic describes the security profiles permissions that are required to acce
 
 The following image shows the security permissions used to manage access to [Connect Customer Cases](cases.md) functionality:
 
-![Cases security profile permissions.](http://docs.aws.amazon.com/connect/latest/adminguide/images/SecurityProfile_cloudscape_cases.png)
+![Cases security profile permissions.](https://docs.aws.amazon.com/connect/latest/adminguide/images/SecurityProfile_cloudscape_cases.png)
 
 ## Required Customer Profiles permissions
 <a name="required-cases-cp-permissions"></a>
 
 To use Connect Customer Cases, your users also need permissions to Customer Profiles permissions, as shown in the following image.
 
-![Customer Profiles security profile permissions.](http://docs.aws.amazon.com/connect/latest/adminguide/images/cases-customer-profiles-permissions.png)
+![Customer Profiles security profile permissions.](https://docs.aws.amazon.com/connect/latest/adminguide/images/cases-customer-profiles-permissions.png)
 
 ## Required queue, quick connect, and user view permissions
 <a name="required-cases-queue-permissions"></a>
 
 To be able to assign case ownership to users or queues, agents need permissions to view queues, quick connects, and users. To be able to view the author name on comments, agents need permission to view users. These permissions are shown in the following two images.
 
-![Queue and quick connect View permissions.](http://docs.aws.amazon.com/connect/latest/adminguide/images/cases-security-queue-permissions.png)
+![Queue and quick connect View permissions.](https://docs.aws.amazon.com/connect/latest/adminguide/images/cases-security-queue-permissions.png)
 
-![User View permissions.](http://docs.aws.amazon.com/connect/latest/adminguide/images/cases-security-user-permissions.png)
+![User View permissions.](https://docs.aws.amazon.com/connect/latest/adminguide/images/cases-security-user-permissions.png)
 
 ## Description of Cases permissions
 <a name="case-permissions-description"></a>
@@ -72,14 +72,14 @@ To be able to assign case ownership to users or queues, agents need permissions 
 
 When users have permissions to **View Case Fields** and **View Case Templates**, they will see the **Case fields** and **Case templates** options in their left navigation menu, as shown in the following image:
 
-![The navigation menu, the agent applications option.](http://docs.aws.amazon.com/connect/latest/adminguide/images/cases-agent-application-case-fields-menu.png)
+![The navigation menu, the agent applications option.](https://docs.aws.amazon.com/connect/latest/adminguide/images/cases-agent-application-case-fields-menu.png)
 
 ## Required Agent Application permissions
 <a name="required-agent-application-permissions"></a>
 
 To be able to generate a summary for a case in the agent application, agents need permission to view AI agents in the agent application, as shown in the following image.
 
-![Screenshot showing AI agent permissions in security profile.](http://docs.aws.amazon.com/connect/latest/adminguide/images/case-summary-ai-agent-permissions.png)
+![Screenshot showing AI agent permissions in security profile.](https://docs.aws.amazon.com/connect/latest/adminguide/images/case-summary-ai-agent-permissions.png)
 
 ## Required Cases and Agent Applications permissions to generate AI-powered case summarization
 <a name="required-cases-agent-app-ai-summary-permissions"></a>
@@ -88,6 +88,6 @@ To generate an AI-powered case summary, agents need View permissions on Cases an
 
 **To save an AI-powered case summary, agents additionally need Edit permission on Cases.**
 
-![Cases permissions.](http://docs.aws.amazon.com/connect/latest/adminguide/images/cases-permissions.png)
+![Cases permissions.](https://docs.aws.amazon.com/connect/latest/adminguide/images/cases-permissions.png)
 
-![Agent Applications permissions.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-applications-permissions.png)
+![Agent Applications permissions.](https://docs.aws.amazon.com/connect/latest/adminguide/images/agent-applications-permissions.png)

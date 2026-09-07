@@ -52,15 +52,15 @@ This pattern deploys three modules to build the pipeline, network, and compute i
 
 *Pipeline architecture:*
 
-![Pipeline infrastructure for Amazon EKS multi-tenant architecture](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/97b700a7-74b6-4f9d-b53a-76de42409a8e/images/76a4a23d-4275-427a-ae36-51c9a3803128.png)
+![Pipeline infrastructure for Amazon EKS multi-tenant architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/97b700a7-74b6-4f9d-b53a-76de42409a8e/images/76a4a23d-4275-427a-ae36-51c9a3803128.png)
 
 *Network architecture:*
 
-![Network infrastructure for Amazon EKS multi-tenant architecture](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/97b700a7-74b6-4f9d-b53a-76de42409a8e/images/e542249a-19a3-4c99-b6f5-fdf80fee4edf.png)
+![Network infrastructure for Amazon EKS multi-tenant architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/97b700a7-74b6-4f9d-b53a-76de42409a8e/images/e542249a-19a3-4c99-b6f5-fdf80fee4edf.png)
 
 *Compute architecture:*
 
-![Compute infrastructure for Amazon EKS multi-tenant architecture](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/97b700a7-74b6-4f9d-b53a-76de42409a8e/images/91bd1ca8-17f0-433c-8600-4c8e6c474e31.png)
+![Compute infrastructure for Amazon EKS multi-tenant architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/97b700a7-74b6-4f9d-b53a-76de42409a8e/images/91bd1ca8-17f0-433c-8600-4c8e6c474e31.png)
 
 ## Tools
 <a name="simplify-amazon-eks-multi-tenant-application-deployment-by-using-flux-tools"></a>

@@ -16,7 +16,7 @@ At Amazon, we conduct weekly [Operational Readiness Reviews (ORRs)](https://docs
 
 Depending on the size of your organization, you can also have a business as usual (BAU) roster, where one member of each team is responsible for reporting on anomalies and trends, uncovering unknown-unknowns, removing unwanted instrumentation and alerts, improving dashboards, and ensuring that the observability solution continues to work for the team and is aligned to the team's objectives and success metrics. This could also be an opportunity to reassess the alerting strategy to be more responsive, proactive, and closer to the user. The goal with these reviews is to create a virtuous cycle, as shown in the following illustration, and to improve the maturity of your observability posture maturity, as described in the [AWS Observability Maturity Model](https://aws-observability.github.io/observability-best-practices/guides/observability-maturity-model).
 
-![Feedback and review cycle in the iterative observability process.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-accelerate-observability-outcomes/images/guide-img/81bb2e9d-84eb-4662-8792-f2a3fb2603f4/images/ff32aa65-699d-42ae-b029-224ea468b108.png)
+![Feedback and review cycle in the iterative observability process.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-accelerate-observability-outcomes/images/guide-img/81bb2e9d-84eb-4662-8792-f2a3fb2603f4/images/ff32aa65-699d-42ae-b029-224ea468b108.png)
 
 Identify the playbooks that are accessed most frequently and consider improving your application or adding more instrumentation. Identify the runbooks that are executed most frequently and consider automating those runbooks.
 

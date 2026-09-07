@@ -11,11 +11,11 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-
 
  AWS IoT provides APIs to generate large numbers of X.509 certificates and private keys in the cloud. The X.509 certificates are signed by an ephemeral AWS CA and are registered in the device maker’s AWS IoT registry at creation. Once created, the device maker must download the certificate and private key and deliver them to the device during manufacturing.
 
-![A diagram that shows the X.509 certificate and private key generated on AWS.](http://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-provisioning/images/AWSasCAGeneratedonAWS_sequence.png)
+![A diagram that shows the X.509 certificate and private key generated on AWS.](https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-provisioning/images/AWSasCAGeneratedonAWS_sequence.png)
 
  If the device already has a private key, a Certificate Signing Request can be sent to AWS to sign the certificate without exposing the private key on the device.
 
-![A diagram that shows a Certificate Signing Request made by device to AWS.](http://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-provisioning/images/AWSasCACSRFromDevice_sequence.png)
+![A diagram that shows a Certificate Signing Request made by device to AWS.](https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-provisioning/images/AWSasCACSRFromDevice_sequence.png)
 
  The certificates and private keys must be included in the firmware of each device, or provided to the contract manufacturer to deliver to the device. The device certificates are signed by a CA that is protected under the [AWS Shared Responsibility Model](https://aws.amazon.com/compliance/shared-responsibility-model/), and the device maker does not need to implement their own controls on the CA. The device maker is responsible for the authorization policies granted to users of the AWS account to ensure only authorized users can generate new certificates.
 
@@ -25,10 +25,10 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-
 
  If the device maker wants to maintain control of the CA and PKI, AWS IoT provides the option to use a customer-owned signing CA. Outside of the AWS cloud, devices typically interact with a customer-owned signing service through a secure network channel to provide a Certificate Signing Request to an intermediate signing CA during the manufacturing process. If the device cannot access the CA directly, the certificates and private keys can be pre-generated and loaded onto the device in firmware, on a hardware security module, or delivered over a secure local connection in the manufacturing process. The certificates must be registered and activated on AWS IoT before the device can connect.
 
-![A diagram that depicts a self-signed certificate authority and intermediate signer CA infrastructure.](http://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-provisioning/images/self-signed.png)
+![A diagram that depicts a self-signed certificate authority and intermediate signer CA infrastructure.](https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-provisioning/images/self-signed.png)
 
  [AWS Certificate Manager](https://aws.amazon.com/certificate-manager/) (ACM) is a managed service on AWS that can generate and sign X.509 certificates in the cloud. The flexibility of ACM allows customers to bring their own CA and perform certificate signing operations on AWS. AWS protects the physical infrastructure where the CA is held on the ACM service, and the device maker is responsible for enacting appropriate policies for users that have access to the ACM service in their account.
 
  If the device maker does not want to maintain its own CA, but still wants to control the PKI for their assets, they can use CA services from third parties. These CA service companies generate an intermediate signer CA that is customized to the device maker’s specification or they sign certificates from their own root CA. Third-party CAs give the device maker the ability to generate and sign X.509 certificates, but the third party maintains the physical security of the CA. Hardware security module vendors typically offer this service to pre-provision their modules before shipping them to the contract manufacturer.
 
-![A diagram depicting a third-party Certificate Authority with Hardware Security Modules.](http://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-provisioning/images/3P-certificate.png)
+![A diagram depicting a third-party Certificate Authority with Hardware Security Modules.](https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-provisioning/images/3P-certificate.png)

@@ -28,7 +28,7 @@ To consume packages across repository boundaries, you must have a private packag
 
 Dependencies on packages in the package repository are managed by your language's package manager (for example, npm for TypeScript or JavaScript applications). Your package manager makes sure that builds are repeatable by recording the specific versions of every package your application depends on and then lets you upgrade those dependencies in a controlled manner, as the following diagram shows.
 
-![Dependencies](http://docs.aws.amazon.com/prescriptive-guidance/latest/best-practices-cdk-typescript-iac/images/guide-img/b7d5d887-7172-4d47-9f1f-1cf7ae181482/images/5a85d0ba-77f0-4553-be4e-711b03e14933.png)
+![Dependencies](https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practices-cdk-typescript-iac/images/guide-img/b7d5d887-7172-4d47-9f1f-1cf7ae181482/images/5a85d0ba-77f0-4553-be4e-711b03e14933.png)
 
 ## Construct releasing for the AWS CDK
 <a name="construct-releasing-for-the-9999999999999999cdk-.390fdd6d-098a-59bd-805a-98b29b1e7509"></a>
@@ -37,7 +37,7 @@ We recommend that you create your own automated pipeline to build and release ne
 
 The following diagram shows a sample AWS CDK version release pipeline.
 
-![Release pipeline](http://docs.aws.amazon.com/prescriptive-guidance/latest/best-practices-cdk-typescript-iac/images/guide-img/b7d5d887-7172-4d47-9f1f-1cf7ae181482/images/774bf06e-57df-424d-81fe-9ec8317aaa1f.png)
+![Release pipeline](https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practices-cdk-typescript-iac/images/guide-img/b7d5d887-7172-4d47-9f1f-1cf7ae181482/images/774bf06e-57df-424d-81fe-9ec8317aaa1f.png)
 
 You can use the following sample commands to build, test, and publish npm packages. First, sign in to the artifact repository by running the following command.
 

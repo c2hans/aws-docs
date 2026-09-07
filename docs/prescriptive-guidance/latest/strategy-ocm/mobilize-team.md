@@ -15,7 +15,7 @@ Mobilize Team is designed to build a structure and to identify measures of succe
 + [1.7 Define business metrics](#mobilize-metrics)
 + [1.8 Define the budget](#mobilize-budget)
 
-![Mobilize Team phase in AWS Change Acceleration 6-Point Framework and OCM Toolkit](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ocm/images/guide-img/f0dc8b97-6d82-45ff-86d7-7ed62d7be8b3/images/2694ed0b-ac23-464e-b1a1-86ef6bd72dc5.png)
+![Mobilize Team phase in AWS Change Acceleration 6-Point Framework and OCM Toolkit](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ocm/images/guide-img/f0dc8b97-6d82-45ff-86d7-7ed62d7be8b3/images/2694ed0b-ac23-464e-b1a1-86ef6bd72dc5.png)
 
 ## 1.1 Develop change acceleration charter
 <a name="mobilize-charter"></a>

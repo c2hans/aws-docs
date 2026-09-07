@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/quick-suite
 **Note**
 This access approach is available only for the Enterprise edition of Amazon Quick. For more information, see [User management for Enterprise edition](https://docs.aws.amazon.com/quicksuite/latest/userguide/editions.html#edition-user-management-enterprise) in the Quick documentation.
 
-![Architecture diagram of an IAM Identity Center user accessing Quick Suite.](http://docs.aws.amazon.com/prescriptive-guidance/latest/quick-suite-access-approach/images/guide-img/ec03a023-a3ad-4a10-93bb-22dcf4ea49a5/images/1cb0a684-be79-4d60-90f6-3c87a7dfd0eb.png)
+![Architecture diagram of an IAM Identity Center user accessing Quick Suite.](https://docs.aws.amazon.com/prescriptive-guidance/latest/quick-suite-access-approach/images/guide-img/ec03a023-a3ad-4a10-93bb-22dcf4ea49a5/images/1cb0a684-be79-4d60-90f6-3c87a7dfd0eb.png)
 
 The following are the characteristics of this architecture and access approach:
 + Users and groups are managed in AWS IAM Identity Center through one of the following identity sources:

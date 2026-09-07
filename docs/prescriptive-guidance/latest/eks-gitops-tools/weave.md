@@ -39,7 +39,7 @@ For more information, see the [Weave GitOps documentation](https://docs.gitops.w
 
 The following diagram illustrates a GitOps-driven CD workflow that uses Weave GitOps within an EKS cluster. For detailed information, see the [Weave GitOps repository](https://github.com/weaveworks/weave-gitops).
 
-![Weave GitOps architecture and workflow on AWS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/eks-gitops-tools/images/guide-img/b6f49161-b2c5-42aa-b1d8-b0781836edb7/images/0eff2686-47f4-422e-92d1-4412bdc9af09.png)
+![Weave GitOps architecture and workflow on AWS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-gitops-tools/images/guide-img/b6f49161-b2c5-42aa-b1d8-b0781836edb7/images/0eff2686-47f4-422e-92d1-4412bdc9af09.png)
 
 where:
 + **Step 1: Pull request (PR) merge**. A developer commits changes to Kubernetes manifests or Helm charts that are stored in a Git repository. When the PR has been reviewed and merged into the main branch, the desired state of the application is updated in source control.

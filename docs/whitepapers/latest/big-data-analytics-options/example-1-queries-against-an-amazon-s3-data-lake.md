@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/big-data-analytics-op
 
 Data lakes are an increasingly popular way to store and analyze both structured and unstructured data. If you use an Amazon S3 data lake, AWS Glue can make all your data immediately available for analytics without moving the data. AWS Glue crawlers can scan your data lake and keep the AWS Glue Data Catalog in sync with the underlying data. You can then directly query your data lake with Amazon Athena and Amazon Redshift Spectrum. You can also use the AWS Glue Data Catalog as your external [Apache Hive Metastore](https://dzone.com/articles/hive-metastore-a-basic-introduction) for big data applications running on Amazon EMR.
 
-![Data flow from S3 through Glue Crawlers and Data Catalog to EMR, Redshift Spectrum, and BI tools.](http://docs.aws.amazon.com/whitepapers/latest/big-data-analytics-options/images/bigdata2.png)
+![Data flow from S3 through Glue Crawlers and Data Catalog to EMR, Redshift Spectrum, and BI tools.](https://docs.aws.amazon.com/whitepapers/latest/big-data-analytics-options/images/bigdata2.png)
 
 *Queries against an Amazon S3 data lake*
 

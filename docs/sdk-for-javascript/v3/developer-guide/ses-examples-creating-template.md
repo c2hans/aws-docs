@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/se
 # Working with email templates in Amazon SES
 <a name="ses-examples-creating-template"></a>
 
-![JavaScript code example that applies to Node.js execution](http://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/nodeicon.png)
+![JavaScript code example that applies to Node.js execution](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/nodeicon.png)
 
 **This Node.js code example shows:**
 + How to get a list of all of your email templates.

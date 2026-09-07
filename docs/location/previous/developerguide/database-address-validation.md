@@ -34,7 +34,7 @@ Sample code is available in the Amazon Location Service samples repository on [G
 ## Overview
 <a name="aurora-amazon-location-overview"></a>
 
-![Architecture diagram showing Amazon Aurora exchanging positions with Lambda and Location Service.](http://docs.aws.amazon.com/location/previous/developerguide/images/aurora_architecture.PNG)
+![Architecture diagram showing Amazon Aurora exchanging positions with Lambda and Location Service.](https://docs.aws.amazon.com/location/previous/developerguide/images/aurora_architecture.PNG)
 
 The architecture involves the following integrations:
 +  This solution uses an Amazon Location place index resource to support geocoding queries using the operation `SearchPlaceIndexForText`.
@@ -59,7 +59,7 @@ Once you configure your AWS account, you will need to:
 + Add the Lambda feature to Amazon Aurora. See Add the IAM role to a Amazon Aurora DB cluster in [Grant Amazon Aurora PostgreSQL access to AWS Lambda](#aurora-invoke-API).
 + Load the user-defined function into your database. See [Invoke the AWS Lambda function](#aurora-setup-table).
 
-[![Launch Stack button with orange background and play icon.](http://docs.aws.amazon.com/location/previous/developerguide/images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/quickcreate?templateUrl=https%3A%2F%2Famazon-location-cloudformation-templates.s3.us-west-2.amazonaws.com%2Faurora-udfs%2Ftemplate.yaml&stackName=AuroraUDFs)
+[![Launch Stack button with orange background and play icon.](https://docs.aws.amazon.com/location/previous/developerguide/images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/quickcreate?templateUrl=https%3A%2F%2Famazon-location-cloudformation-templates.s3.us-west-2.amazonaws.com%2Faurora-udfs%2Ftemplate.yaml&stackName=AuroraUDFs)
 
 ## Create a place index resource
 <a name="aurora-create-place-index"></a>

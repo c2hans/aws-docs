@@ -15,7 +15,7 @@ You can perform import and export by using the AWS Management Console, the AWS C
 
 The following diagram shows the data moving from DynamoDB in the source account to an S3 bucket in the target account and then to the target account's DynamoDB instance.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-full-table-copy-options/images/guide-img/b39c4f99-8119-4c72-9813-d6420f64f36c/images/fdae5ba6-f050-4e24-be45-5b81bea9135a.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-full-table-copy-options/images/guide-img/b39c4f99-8119-4c72-9813-d6420f64f36c/images/fdae5ba6-f050-4e24-be45-5b81bea9135a.png)
 
 At a high level, the following steps are required to export and import DynamoDB table from one account to another using Amazon S3:
 

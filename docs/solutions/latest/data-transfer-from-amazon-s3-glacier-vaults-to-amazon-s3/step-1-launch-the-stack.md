@@ -14,7 +14,7 @@ The archive transfer can take up to one day to complete. If you need to move you
 
 1. Sign in to the [AWS Management Console](https://aws.amazon.com/console/) and select the button to launch the `data-retrieval-from-amazon-s3-glacier-vaults-to-amazon-s3.template` AWS CloudFormation template.
 
-   [![Launch Guidance button.](http://docs.aws.amazon.com/solutions/latest/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create?stackName=DataTransferS3GlacierVaultsToS3&templateURL=https://solutions-reference.s3.amazonaws.com/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3/latest/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3.template&redirectId=ImplementationGuide)
+   [![Launch Guidance button.](https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create?stackName=DataTransferS3GlacierVaultsToS3&templateURL=https://solutions-reference.s3.amazonaws.com/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3/latest/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3.template&redirectId=ImplementationGuide)
 
 1.  The template launches in the US East (Ohio) Region by default. To launch the Guidance in a different AWS Region, use the Region selector in the console navigation bar.
 **Note**

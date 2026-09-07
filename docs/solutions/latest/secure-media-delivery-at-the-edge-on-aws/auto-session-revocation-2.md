@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 1.  Open DynamoDB table used as a data store for the session submitted for revocation. Table name can be found in the stack’s CloudFormation output tab associate to the key which starts with **[Stack name]-SessionToRevoke**. Locate that name in DynamoDB console in correct region on the **Explore items** page.
 
 1.  Use Filters fields to look up the blocked session ID.
-![Screeshot of Filters.](http://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/image19.png)
+![Screeshot of Filters.](https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/image19.png)
 
 1.  In the **Items returned** section an entry corresponding to this session will be displayed with a type attribute set to **AUTO**. Sum of **ip\_penalty**, **ip\_rate**, **referrer\_penalty**, **ua\_penalty** should equal to the final score attribute value which was above the threshold set.
 

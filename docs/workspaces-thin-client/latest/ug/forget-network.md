@@ -13,7 +13,7 @@ Your device can only forget known Wi-Fi networks. If your device has never joine
 
 Your device can not forget Ethernet connected networks.
 
-![Network settings page showing a connected Mobile network with options to Forget or Disconnect.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/forgetnetwork.png)
+![Network settings page showing a connected Mobile network with options to Forget or Disconnect.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/forgetnetwork.png)
 
 1. Go to **Settings**, **Network**, **Known Networks**.
 

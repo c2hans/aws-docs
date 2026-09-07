@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation
 
  Before we dig into some specific pool isolation techniques, let’s get a clear picture of how the pool model changes our approach to isolation. Generally, when we talk about isolating AWS resources, we focus on how AWS Identity and Access Management (IAM) can be used to control the interactions between resources. For a silo model, in fact, IAM represents a perfectly good model for expressing your tenant isolation policies. With the pool model, though, using these IAM constructs can be a bit more involved. The diagram in Figure 12 provides illustration of how silo and pool require separate isolation mindsets.
 
-![Diagram showing IAM and scoping access.](http://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/images/iam-and-scoping-access.jpg)
+![Diagram showing IAM and scoping access.](https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/images/iam-and-scoping-access.jpg)
 
 Here’s you’ll see two different ways of apply IAM policies to scope access of compute constructs. On the left we have two siloed deployments where tenants are running in their own infrastructure. These tenants are both accessing some other resource (in this case storage). When these instances were deployed, they were configured with separate IAM instance profiles for each tenant (tenant 1 and tenant 2). Since this binding was created at deployment time, we can be sure that these instances will be prevented from accessing the resources of another tenant.
 

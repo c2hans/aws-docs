@@ -13,7 +13,7 @@ When you must reboot or restart your WorkSpaces Thin Client, you can do this in 
 <a name="reboot-ui"></a>
 
 1. Select the circular arrow icon or select **Restart device** in the toolbar.
-![Circular arrow icon with Restart device text.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/restart-device.png)
+![Circular arrow icon with Restart device text.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/restart-device.png)
 
 1. Select **Yes** in the **Restart Device** window.
 

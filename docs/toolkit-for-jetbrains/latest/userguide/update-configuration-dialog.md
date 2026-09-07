@@ -9,11 +9,11 @@ The **Update Configuration** dialog box in the AWS Toolkit for JetBrains is disp
 
 The **Update Configuration** dialog box for the `Zip` package type:
 
-![The Update Configuration dialog box for Zip applications.](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/sam-update-config-zip.png)
+![The Update Configuration dialog box for Zip applications.](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/sam-update-config-zip.png)
 
 The **Update Configuration** dialog box for the `Image` package type:
 
-![The Update Configuration dialog box for Image applications.](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/sam-update-config-image.png)
+![The Update Configuration dialog box for Image applications.](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/sam-update-config-image.png)
 
 The **Update Configuration** dialog box contains the following items:
 

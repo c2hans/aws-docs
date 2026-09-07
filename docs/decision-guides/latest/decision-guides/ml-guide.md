@@ -25,7 +25,7 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/m
 
  This decision guide will help you ask the right questions, evaluate your criteria and business problem, and determine which services are the best fit for your needs.
 
-[![AWS Videos](http://img.youtube.com/vi/GBIkeMemh2E?start=110&end=495/0.jpg)](http://www.youtube.com/watch?v=GBIkeMemh2E?start=110&end=495)
+[![AWS Videos](https://img.youtube.com/vi/GBIkeMemh2E?start=110&end=495/0.jpg)](https://www.youtube.com/watch?v=GBIkeMemh2E?start=110&end=495)
 
 ## Understand
 <a name="understand"></a>
@@ -34,7 +34,7 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/m
 
  AWS provides a range of ML services designed to help organizations to build, train, and deploy ML models more quickly and easily. These services can be used to solve a wide range of business problems such as customer churn prediction, fraud detection, and image and speech recognition.
 
-![Diagram describing how machine learning (ML) and generative AI fit within artificial intelligence (AI).](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/what-is-ai-ml.png)
+![Diagram describing how machine learning (ML) and generative AI fit within artificial intelligence (AI).](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/what-is-ai-ml.png)
 
  Before diving deeper into AWS ML services, let's look at the relationship between AI and ML.
 +  At a high level, *artificial intelligence *is a way to describe any system that can replicate tasks that previously required human intelligence. Most AI use cases are looking for a probabilistic outcome—making a prediction or decision with a high degree of certainty, similar to human judgement.

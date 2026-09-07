@@ -23,6 +23,6 @@ If you're planning to use transactional replication for one-time migration of yo
 
 The following diagram shows the transactional replication process for databases on Amazon RDS and Amazon EC2.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-sql-server/images/guide-img/aa3b9357-4901-48ca-9fc9-a997d21ade3e/images/1d486d77-5620-452d-ab02-7ae465f15992.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-sql-server/images/guide-img/aa3b9357-4901-48ca-9fc9-a997d21ade3e/images/1d486d77-5620-452d-ab02-7ae465f15992.png)
 
 For more information about transactional replication, see the [Microsoft SQL Server documentation](https://docs.microsoft.com/en-us/sql/relational-databases/replication/transactional/transactional-replication) and [How to migrate to Amazon RDS for SQL Server using transactional replication](https://aws.amazon.com/blogs/database/how-to-migrate-to-amazon-rds-for-sql-server-using-transactional-replication/) on the AWS Database blog.

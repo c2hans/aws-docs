@@ -59,7 +59,7 @@ The following list of SAP documents covers known issues that are related to this
 
 An SAP HANA database is installed on the source environment. All the SAP application server connections and DB interfaces use the same hostname for client connections. The following diagram shows the example source hostname `hdbhost` and its corresponding IP address.
 
-![SAP HANA DB source hdbhost in a corporate data center with IP address 10.1.2.1.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/004781c1-96df-43dd-a52e-ed1db5bdf9ef/images/a1b28c3a-93b7-4f82-a5da-81008b74c9ae.png)
+![SAP HANA DB source hdbhost in a corporate data center with IP address 10.1.2.1.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/004781c1-96df-43dd-a52e-ed1db5bdf9ef/images/a1b28c3a-93b7-4f82-a5da-81008b74c9ae.png)
 
 **Target setup**
 
@@ -68,7 +68,7 @@ The AWS Cloud target environment uses the same hostname to run an SAP HANA datab
 + SAP application servers
 + EBS volumes
 
-![SAP HANA DB target hdbhost in the AWS Cloud with IP address 172.16.2.1.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/004781c1-96df-43dd-a52e-ed1db5bdf9ef/images/7f45d7aa-9b80-4413-bec9-1616492b650c.png)
+![SAP HANA DB target hdbhost in the AWS Cloud with IP address 172.16.2.1.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/004781c1-96df-43dd-a52e-ed1db5bdf9ef/images/7f45d7aa-9b80-4413-bec9-1616492b650c.png)
 
 **Intermediate configuration**
 
@@ -78,7 +78,7 @@ The intermediate configuration includes one of the following options:
 + AWS Client VPN with a Client VPN endpoint
 + Direct Connect connecting to a router
 
-![Source system to target AWS Cloud system with temp-host IP address 172.31.5.10.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/004781c1-96df-43dd-a52e-ed1db5bdf9ef/images/e2794477-2e8f-4974-bca3-2275f6809fce.png)
+![Source system to target AWS Cloud system with temp-host IP address 172.31.5.10.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/004781c1-96df-43dd-a52e-ed1db5bdf9ef/images/e2794477-2e8f-4974-bca3-2275f6809fce.png)
 
 SAP application servers on the AWS target environment can be installed either before replication setup or after the takeover. However, installing the application servers before replication setup can help with reduction of downtime during installation, configuration of high availability, and backups.
 
@@ -160,4 +160,4 @@ SAP documentation references are frequently updated by SAP. To stay up to date, 
 
 The changes performed by `hdblcm` as part of the hostname rename activity are consolidated in the following verbose log.
 
-![Code showing processes stopped on temp-host, starting on hdbhost, and SAP HANA DB system renamed.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/004781c1-96df-43dd-a52e-ed1db5bdf9ef/images/9e0c11ca-6555-484f-9639-107f60f725f5.png)
+![Code showing processes stopped on temp-host, starting on hdbhost, and SAP HANA DB system renamed.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/004781c1-96df-43dd-a52e-ed1db5bdf9ef/images/9e0c11ca-6555-484f-9639-107f60f725f5.png)

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-la
 
 Three key elements make up the building blocks of all programs and their relevance in large migrations: scope, strategy, and the timeline.
 
-![image.png](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-large-scale-migrations/images/guide-img/5d21bc8a-8f8a-4dd9-a6cb-7df7164767ad/images/d587b6c2-8d64-4dd5-883f-b9e9d63cb4c7.png)
+![image.png](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-large-scale-migrations/images/guide-img/5d21bc8a-8f8a-4dd9-a6cb-7df7164767ad/images/d587b6c2-8d64-4dd5-883f-b9e9d63cb4c7.png)
 
 To set the stage for your migration journey, these elements must be aligned and understood from the start of a migration program. Any changes to one of these elements will affect the others. Realignment must be factored into every change, no matter how basic or sensible the change might seem.
 

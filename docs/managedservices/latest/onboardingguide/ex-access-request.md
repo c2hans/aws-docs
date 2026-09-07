@@ -15,7 +15,7 @@ End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. 
 
 The following shows this change type in the AMS console.
 
-![Grant Stack Admin access change type showing ID, execution mode, version, and classification details.](http://docs.aws.amazon.com/managedservices/latest/onboardingguide/images/guiAccessAdminGrantCT.png)
+![Grant Stack Admin access change type showing ID, execution mode, version, and classification details.](https://docs.aws.amazon.com/managedservices/latest/onboardingguide/images/guiAccessAdminGrantCT.png)
 
 How it works:
 
@@ -127,7 +127,7 @@ For an example about requesting ReadOnly access, see [ReadOnly access: requestin
 
 The following shows this change type in the AMS console.
 
-![Grant Stack Read-Only access change type showing ID, execution mode, version, and classification details.](http://docs.aws.amazon.com/managedservices/latest/onboardingguide/images/guiAccessReadOnlyGrantCT.png)
+![Grant Stack Read-Only access change type showing ID, execution mode, version, and classification details.](https://docs.aws.amazon.com/managedservices/latest/onboardingguide/images/guiAccessReadOnlyGrantCT.png)
 
 How it works:
 

@@ -9,4 +9,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/
 
  Figure 12 illustrates how logs from various AWS services are directed to Amazon S3 and CloudWatch. These centralized logs can be further analyzed using Amazon OpenSearch Service, inclusive of Kibana for data visualization. Also, Amazon Athena can be employed for ad hoc queries against the logs stored in Amazon S3.
 
-![Diagram showing logging capabilities of AWS services](http://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/images/logging-capabilities.png)
+![Diagram showing logging capabilities of AWS services](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/images/logging-capabilities.png)

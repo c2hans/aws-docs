@@ -53,11 +53,11 @@ Each item in the table corresponds to a Security Hub control supported by the so
 
 To enable Lambda.1, under **Scan or query items** choose **Query**. Under **Partition key: controlId** enter `Lambda.1` and choose **Run**. You will see a single item returned corresponding to the Lambda.1 control.
 
-![DynamoDB table showing Lambda.1 remediation configuration](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/remediation-configuration-table.png)
+![DynamoDB table showing Lambda.1 remediation configuration](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/remediation-configuration-table.png)
 
 Now, select the `Lambda.1` item then choose **Actions > Edit item**.
 
-![DynamoDB Edit item dialog for remediation configuration](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/remediation-config-edit-item.png)
+![DynamoDB Edit item dialog for remediation configuration](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/remediation-config-edit-item.png)
 
 Finally, change the `automatedRemediationEnabled` attribute value to **True**. Choose **Save and Close**.
 

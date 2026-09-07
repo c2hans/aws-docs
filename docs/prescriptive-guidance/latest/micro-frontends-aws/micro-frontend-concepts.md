@@ -23,7 +23,7 @@ Evans doesn't define how small or large a bounded context should be. The size is
 
 In the context of micro-frontends, domain-driven design can be illustrated by the example of a complex web page such as a flight-booking page.
 
-![Example flight-search web application with inputs for departure and arrival and a list of results.](http://docs.aws.amazon.com/prescriptive-guidance/latest/micro-frontends-aws/images/guide-img/4cd7ea48-b17c-411c-a5b2-fa8a58f6a617/images/7517eb91-5a2e-4257-baaf-dfd84223d942.png)
+![Example flight-search web application with inputs for departure and arrival and a list of results.](https://docs.aws.amazon.com/prescriptive-guidance/latest/micro-frontends-aws/images/guide-img/4cd7ea48-b17c-411c-a5b2-fa8a58f6a617/images/7517eb91-5a2e-4257-baaf-dfd84223d942.png)
 
 On this page, the main building blocks are a search form, a filters panel, and the results list. To identify the boundaries, you must identify independent functional contexts. In addition, consider nonfunctional aspects, such as reusability, performance, and security. The most important indicator that "things that belong together" is their communication patterns. If some elements in an architecture must communicate frequently and exchange complex information, they likely share the same bounded context.
 

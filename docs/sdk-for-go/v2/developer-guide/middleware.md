@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/middleware
 
  You can customize AWS SDK for Go client requests by registering one or more middleware to a service operation's [stack](https://pkg.go.dev/github.com/aws/smithy-go/middleware#Stack). The stack is composed of a series of steps: Initialize, Serialize, Build, Finalize, and Deserialize. Each step contains zero or more middleware that operate on that step's input and output types. The following diagram and table provide an overview of how an operation's request and response traverses the stack.
 
- ![Middleware](http://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/images/middleware.png)
+ ![Middleware](https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/images/middleware.png)
 
 |  Stack Step  |  Description  |
 | --- | --- |

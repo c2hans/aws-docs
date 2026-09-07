@@ -9,7 +9,7 @@ The following detailed breakdown shows the steps involved in running a test scen
 
  **Test workflow**
 
-![Test workflow diagram](http://docs.aws.amazon.com/solutions/latest/distributed-load-testing-on-aws/images/test-workflow.png)
+![Test workflow diagram](https://docs.aws.amazon.com/solutions/latest/distributed-load-testing-on-aws/images/test-workflow.png)
 
 1. You use the web console to submit a test scenario that includes the configuration details to the solution’s API.
 
@@ -52,7 +52,7 @@ If you deploy the optional MCP Server integration, AI agents can access and anal
 
  **MCP Server workflow**
 
-![MCP Server workflow diagram](http://docs.aws.amazon.com/solutions/latest/distributed-load-testing-on-aws/images/mcp-server-workflow.png)
+![MCP Server workflow diagram](https://docs.aws.amazon.com/solutions/latest/distributed-load-testing-on-aws/images/mcp-server-workflow.png)
 
 1.  **Customer interaction** - The customer interacts with the Distributed Load Testing solution through an AI agent. The agent connects to the MCP Endpoint to request access to load testing data.
 

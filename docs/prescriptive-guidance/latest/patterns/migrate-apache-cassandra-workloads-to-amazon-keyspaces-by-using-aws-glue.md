@@ -39,7 +39,7 @@ This pattern shows you how to migrate your existing Apache Cassandra workloads t
 
 The following diagram shows an example architecture where a Cassandra cluster is hosted on EC2 instances and spread across three Availability Zones. The Cassandra nodes are hosted in private subnets.
 
-![Custom service role, Amazon Keyspaces, and Amazon S3, with AWS Glue connecting to the nodes VPC.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e08048da-8996-4f2c-b8ed-da49fe9e693b/images/76256ab3-a1e6-4c9e-9c40-dc78f51edf0f.png)
+![Custom service role, Amazon Keyspaces, and Amazon S3, with AWS Glue connecting to the nodes VPC.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e08048da-8996-4f2c-b8ed-da49fe9e693b/images/76256ab3-a1e6-4c9e-9c40-dc78f51edf0f.png)
 
 The diagram shows the following workflow:
 

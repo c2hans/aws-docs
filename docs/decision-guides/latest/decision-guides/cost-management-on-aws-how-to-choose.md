@@ -28,7 +28,7 @@ We offer services and tools to help you with cost management and optimization, i
 
 This decision guide will help you determine which cost management services and tools are the best fit for your needs.
 
-[![AWS Videos](http://img.youtube.com/vi/0aYZUqpwJKE?start=192&end=611/0.jpg)](http://www.youtube.com/watch?v=0aYZUqpwJKE?start=192&end=611)
+[![AWS Videos](https://img.youtube.com/vi/0aYZUqpwJKE?start=192&end=611/0.jpg)](https://www.youtube.com/watch?v=0aYZUqpwJKE?start=192&end=611)
 
 ## Understand AWS cost management
 <a name="understand"></a>
@@ -37,7 +37,7 @@ AWS cost management strategy can be broken down into several key areas:
 
 **Plan and evaluate:** When planning for future cloud spend, start by defining your key performance indicators (KPIs), such as the monthly cost of a specific project. Make sure that cloud resources related to a project are properly tagged with cost allocation tags, cost categories, or both. Then calculate and track the monthly cost of the project with the cost and usage data available in your AWS Cost Explorer and AWS Cost and Usage Report.
 
-![Diagram showing the AWS Cloud Financial Management Portfolio.](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/cfm-portfolio.png)
+![Diagram showing the AWS Cloud Financial Management Portfolio.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/cfm-portfolio.png)
 
 Decide the project budget based on the trend shown by your KPIs, and the available funds set aside for the project. Set the budget thresholds using AWS Budgets for cost or resource usage.
 
@@ -47,7 +47,7 @@ This team can be supported by services such as [AWS Identity and Access Manageme
 
 Use the [AWS Billing Console](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/billinginfo.html) to track your overall spend, view your cost breakdown by service and by account on your billing dashboard, and handle data exports with AWS CloudFormation.
 
-![Diagram showing the AWS Billing Conductor and AWS Application Cost Profiler.](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/billing-console-cost-profiler.png)
+![Diagram showing the AWS Billing Conductor and AWS Application Cost Profiler.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/billing-console-cost-profiler.png)
 
 **Track and allocate:** Tracking spending and allocating that spending to the right team can be vital to effective cost optimization. It's useful to know when you're spending more than you planned, but even more useful when you can clearly identify where that spending is happening. We offer several tools to help you get started.
 

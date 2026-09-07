@@ -9,6 +9,6 @@ End of support notice: On March 31, 2027, AWS will end support for Amazon WorkSp
 
 Select the language that you want your WorkSpaces Thin Client device to use.
 
-![WorkSpaces Thin Client language selection](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/oobe-language.png)
+![WorkSpaces Thin Client language selection](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/oobe-language.png)
 
 You can use your mouse to select a language.

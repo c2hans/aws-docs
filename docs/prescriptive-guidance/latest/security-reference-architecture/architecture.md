@@ -10,7 +10,7 @@ The following diagram illustrates the AWS SRA. This architectural diagram brings
 **Note**
 To customize the reference architecture diagrams in this guide based on your business needs, you can download the .zip file from the *Attachments* section of the *Introduction *chapter.
 
-![AWS Security Reference Architecture diagram.](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/images/guide-img/91d313fc-d5f1-45a8-a5a6-2f4fc7abc93a/images/a4175a63-9c19-4ca2-9860-d3f983993e81.png)
+![AWS Security Reference Architecture diagram.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/images/guide-img/91d313fc-d5f1-45a8-a5a6-2f4fc7abc93a/images/a4175a63-9c19-4ca2-9860-d3f983993e81.png)
 
 For this reference architecture, the actual web application and data tier are deliberately represented as simply as possible, through Amazon EC2 instances and an Amazon Aurora database, respectively. Most architecture diagrams focus and dive deep on the web, application, and data tiers. For readability, they often omit the security controls. This diagram flips that emphasis to show security wherever possible, and keeps the application and data tiers as simple as necessary to show security features meaningfully.
 

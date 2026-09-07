@@ -12,7 +12,7 @@ In this tutorial, you will create a AWS Client VPN endpoint that does the follow
 
 The following diagram represents the configuration of your VPC and Client VPN endpoint after you've completed this tutorial.
 
-![Client VPN accessing the internet](http://docs.aws.amazon.com/vpn/latest/clientvpn-admin/images/client-vpn-scenario-igw.png)
+![Client VPN accessing the internet](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/images/client-vpn-scenario-igw.png)
 
 **Topics**
 + [Prerequisites](#cvpn-getting-started-prereq)

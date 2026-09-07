@@ -21,7 +21,7 @@ End of support notice: On October 7th, 2026, AWS will discontinue support for AW
 
 Assuming the Lambda function is running on your device, it publishes messages similar to the following to the `hello/world` topic:
 
-![Screenshot of message sent to the hello/world topic with message highlighted.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-045.png)
+![Screenshot of message sent to the hello/world topic with message highlighted.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-045.png)
 
 Although the Lambda function continues to send MQTT messages to the `hello/world` topic, don't stop the AWS IoT Greengrass daemon. The remaining modules are written with the assumption that it's running.
 

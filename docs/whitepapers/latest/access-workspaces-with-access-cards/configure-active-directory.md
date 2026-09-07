@@ -14,7 +14,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/access-workspaces-wit
 1.  From the task bar, open the **Server Manager**.
 
 1.  Choose the triangular yellow notifications icon in the top navigation bar of the Server Manager window. The **Notifications** pane opens and displays a **Post-deployment Configuration** notification. Choose the **Promote this server to a domain controller** link that appears in the notification.
-![A screenshot showing post-deployment configuration](http://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/workspaces-smartcard6.png)
+![A screenshot showing post-deployment configuration](https://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/workspaces-smartcard6.png)
 
     *Active Directory post-deployment configuration *
 

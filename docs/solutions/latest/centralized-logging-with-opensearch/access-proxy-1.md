@@ -59,7 +59,7 @@ Once the access proxy is enabled, a link to the access proxy will be available.
 
 This automated AWS CloudFormation template deploys the *Centralized Logging with OpenSearch - NGINX access proxy* solution in the AWS Cloud.
 
-1. Log in to the AWS Management Console and select the button to launch the AWS CloudFormation template. [![Launch solution](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image17.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Fcentralized-logging-with-opensearch%2Flatest%2FNginxForOpenSearch.template)
+1. Log in to the AWS Management Console and select the button to launch the AWS CloudFormation template. [![Launch solution](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image17.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Fcentralized-logging-with-opensearch%2Flatest%2FNginxForOpenSearch.template)
 
 You can also [download the template](https://s3.amazonaws.com/solutions-reference/centralized-logging-with-opensearch/latest/NginxForOpenSearch.template) as a starting point for your own implementation. . To launch the stack in a different AWS Region, use the Region selector in the console navigation bar. . On the **Create stack** page, verify that the correct template URL shows in the **Amazon S3 URL** text box and choose **Next**. . On the **Specify stack details** page, assign a name to your stack. . Under **Parameters**, review the parameters for the template and modify them as necessary. This solution uses the following parameters.
 
@@ -127,7 +127,7 @@ After the DNS record takes effect, you can access the Amazon OpenSearch Service 
 
  **Example General configuration screen.**
 
-![image30](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image30.png)
+![image30](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image30.png)
 
 ## Delete a Proxy
 <a name="delete-a-proxy"></a>

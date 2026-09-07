@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation
 
  As you look to silo the compute resources of your application (like the microservices shown above), you’ll want to think about how the isolation models of different compute services might influence your approach. The unique attributes of the various AWS compute services may also require you to take specific measures to ensure that your resources are adequately isolated.
 
-![Diagram showing container silo isolation.](http://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/images/container-silo-isolation.png)
+![Diagram showing container silo isolation.](https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/images/container-silo-isolation.png)
 
  Let’s start by looking at what it would mean to implement the silo model with containers. The challenge of isolating containers is that there are cases where malicious code or poorly configured environments can *escape* a container and assume permissions that would enable one tenant to access the resources of another tenant. Fortunately, containers offer constructs that, when used properly, can implement a robust isolation model. The mechanisms that are used to prevent cross-tenant access can vary across the different AWS container services. With Amazon Elastic Container Service (Amazon ECS), for example, you’ll need to create a separate cluster for each tenant to achieve silo isolation. Amazon Elastic Kubernetes Service (Amazon EKS) introduces some additional mechanisms that will let you silo resources within an EKS cluster. The diagram in Figure 10 provides a look at how you would achieve silo isolation within and EKS cluster.
 
@@ -19,7 +19,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation
 
  (as we’ll see below) provides us a way around this, a fully siloed version of a Lambda function would mean that this function would not be executed by other tenants. The diagram in Figure 11 provides an example of how you might realize full isolation in a Lambda model.
 
-![Diagram showing Lambda Silo Isolation.](http://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/images/lambda-silo-isolation.png)
+![Diagram showing Lambda Silo Isolation.](https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/images/lambda-silo-isolation.png)
 
  This diagram includes two separate tenants that have been deployed in a Lambda silo model. Because we want to ensure that tenant will remain within tenant boundaries, we have deployed separate functions for each tenant where these functions are configured and deployed with a tenant specific role that constrains their access to resources that are associated with that tenant.
 

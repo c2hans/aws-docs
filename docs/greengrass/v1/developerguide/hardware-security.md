@@ -15,7 +15,7 @@ Search for devices that are qualified for this feature in the [AWS Partner Devic
 
 The following diagram shows the hardware security architecture for an AWS IoT Greengrass core.
 
-![Greengrass Core with hardware secure element routing messages to AWS IoT Core and local devices.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/hardware-security-arch.png)
+![Greengrass Core with hardware secure element routing messages to AWS IoT Core and local devices.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/hardware-security-arch.png)
 
 On a standard installation, AWS IoT Greengrass uses two private keys. One key is used by the AWS IoT client (IoT client) component during the Transport Layer Security (TLS) handshake when a Greengrass core connects to AWS IoT Core. (This key is also referred to as the core private key.) The other key is used by the local MQTT server, which enables Greengrass devices to communicate with the Greengrass core. If you want to use hardware security for both components, you can use a shared private key or separate private keys. For more information, see [Provisioning practices for AWS IoT Greengrass hardware security](#optional-provisioning).
 
@@ -159,7 +159,7 @@ The practice of rotating keys doesn't apply when private keys are generated on a
 The following diagram shows the IoT client component and local MQTT server on the AWS IoT Greengrass core. If you want to use an HSM configuration for both components, you can use the same private key or separate private keys. If you use separate keys, they must be stored in the same slot.
 AWS IoT Greengrass doesn't impose any limits on the number of keys that you store on the HSM, so you can store private keys for the IoT client, MQTT server, and secrets manager components. However, some HSM vendors might impose limits on the number of keys you can store in a slot.
 
-![Architecture diagram showing IoT Client and MQTT Server sending messages to AWS IoT Core and local devices.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/multi-key-diagram.png)
+![Architecture diagram showing IoT Client and MQTT Server sending messages to AWS IoT Core and local devices.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/multi-key-diagram.png)
 
 In general, the IoT client key is not used very frequently because the AWS IoT Greengrass Core software maintains long-lived connections to the cloud. However, the MQTT server key is used every time that a Greengrass device connects to the core. These interactions directly affect performance.
 When the MQTT server key is stored on the HSM, the rate at which devices can connect depends on the number of RSA signature operations per second that the HSM can perform. For example, if the HSM takes 300 milliseconds to perform an RSASSA-PKCS1-v1.5 signature on an RSA-2048 private key, then only three devices can connect to the Greengrass core per second. After the connections are made, the HSM is no longer used and the standard [quotas for AWS IoT Greengrass](https://docs.aws.amazon.com/general/latest/gr/greengrass.html#limits_greengrass) apply.

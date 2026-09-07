@@ -20,7 +20,7 @@ Amazon Web Services (AWS) offers managed services to help you build AI applicati
 
 The following diagram shows the AWS AI stack from silicon to agentic solutions.
 
-![Diagram showing the AWS AI stack from silicon to agentic solutions. From bottom to top: global infrastructure (39 Regions), AI chips (Trainium, Graviton, NVIDIA GPUs), data foundation, models training and inferencing (SageMaker, Bedrock), agent development and orchestration (Bedrock AgentCore), and agentic solutions (Kiro, Quick, Connect, Marketplace). Security, governance, and agent store span the full stack.](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/gen-ai-stack-dec-2024.png)
+![Diagram showing the AWS AI stack from silicon to agentic solutions. From bottom to top: global infrastructure (39 Regions), AI chips (Trainium, Graviton, NVIDIA GPUs), data foundation, models training and inferencing (SageMaker, Bedrock), agent development and orchestration (Bedrock AgentCore), and agentic solutions (Kiro, Quick, Connect, Marketplace). Security, governance, and agent store span the full stack.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/gen-ai-stack-dec-2024.png)
 
 When choosing which generative AI services to use, two services are often compared:
 
@@ -39,7 +39,7 @@ While both Amazon Bedrock and Amazon SageMaker AI enable the development of AI a
 
 The following is a high-level view of the key differences between these services to get you started.
 
-|  **Category**  |  ![Amazon Bedrock service icon.](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/Arch_Amazon-Bedrock_48.png) **Amazon Bedrock**  |  ![Brain icon with interconnected nodes representing artificial intelligence or machine learning.](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/Arch_Amazon-SageMaker_48.png) **Amazon SageMaker AI**  |
+|  **Category**  |  ![Amazon Bedrock service icon.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/Arch_Amazon-Bedrock_48.png) **Amazon Bedrock**  |  ![Brain icon with interconnected nodes representing artificial intelligence or machine learning.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/Arch_Amazon-SageMaker_48.png) **Amazon SageMaker AI**  |
 | --- | --- | --- |
 |  Use Cases  | Fully managed, serverless platform for building, running, and operating AI applications and agents at production scale | Optimized for convenient training, customizing, and deploying AI models with maximum user control for AI applications, predictive ML, and classical ML at production scale |
 |  Target Users  | Optimized for technical decision makers, developers, and teams building AI applications and agents | Optimized for ML practitioners, ML engineers, Data Scientists, AI platform teams and developers |

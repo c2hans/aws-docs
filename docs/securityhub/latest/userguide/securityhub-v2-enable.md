@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 
 For a brief demonstration of how to enable Security Hub watch the following video:
 
-[![AWS Videos](http://img.youtube.com/vi/prtnhCfjUpM/0.jpg)](http://www.youtube.com/watch?v=prtnhCfjUpM)
+[![AWS Videos](https://img.youtube.com/vi/prtnhCfjUpM/0.jpg)](https://www.youtube.com/watch?v=prtnhCfjUpM)
 
 ## Enable Security Hub for an AWS Organization
 <a name="securityhub-v2-enable-management-account"></a>

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 
 The command query responsibility segregation (CQRS) pattern separates the data mutation, or the command part of a system, from the query part. You can use the CQRS pattern to separate updates and queries if they have different requirements for throughput, latency, or consistency. The CQRS pattern splits the application into two parts: the command side and the query side. The command side handles `create`, `update`, and `delete` requests. The query side runs the `query` part by using the read replicas.
 
-![CQRS pattern](http://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-data-persistence/images/guide-img/44ded022-4fc5-47f3-9dda-29ff14ee9ef8/images/c7446d93-7ef4-4d44-9dff-ce1d5cdcf801.png)
+![CQRS pattern](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-data-persistence/images/guide-img/44ded022-4fc5-47f3-9dda-29ff14ee9ef8/images/c7446d93-7ef4-4d44-9dff-ce1d5cdcf801.png)
 
 The diagram shows the following process:
 
@@ -33,7 +33,7 @@ You can implement the CQRS pattern by using various combinations of databases, i
 
 In the following illustration, a NoSQL data store, such as DynamoDB, is used to optimize the write throughput and provide flexible query capabilities. This achieves high write scalability on workloads that have well-defined access patterns when you add data. A relational database, such as Amazon Aurora, provides complex query functionality. A DynamoDB stream sends data to a Lambda function that updates the Aurora table.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-data-persistence/images/guide-img/44ded022-4fc5-47f3-9dda-29ff14ee9ef8/images/48a87da4-6fcd-458a-9dd9-8078171e188f.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-data-persistence/images/guide-img/44ded022-4fc5-47f3-9dda-29ff14ee9ef8/images/48a87da4-6fcd-458a-9dd9-8078171e188f.png)
 
 Implementing the CQRS pattern with DynamoDB and Aurora provides these key benefits:
 + DynamoDB is a fully managed NoSQL database that can handle high-volume write operations, and Aurora offers high read scalability for complex queries on the query side.

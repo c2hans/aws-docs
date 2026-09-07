@@ -32,7 +32,7 @@ In the Custom Business Configuration application, you can group configurations b
 1. Select **Settings** > **Group**, and choose **Configuration Group** from the drop-down list. Select **OK**.
 
 1. The configurations are now available in a hierarchical structure as displayed in the image. To save the view, see [Views (Variant Management) - Components](https://www.sap.com/design-system/fiori-design-web/ui-elements/variant-management/).
-![An example of grouped configurations.](http://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/images/custom-business-configurations.png)
+![An example of grouped configurations.](https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/images/custom-business-configurations.png)
 
 This section covers the following topics.
 

@@ -23,7 +23,7 @@ This pattern describes how you can enable encrypted connections for an Amazon RD
 ## Architecture
 <a name="enable-encrypted-connections-for-postgresql-db-instances-in-amazon-rds-architecture"></a>
 
-![Enabling encrypted connections for PostgreSQL DB instances in Amazon RDS](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/4f87c6a3-b4ff-4248-96d3-a4a498659735/images/ccc5c880-1191-4c12-a255-6908b96b96a5.png)
+![Enabling encrypted connections for PostgreSQL DB instances in Amazon RDS](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/4f87c6a3-b4ff-4248-96d3-a4a498659735/images/ccc5c880-1191-4c12-a255-6908b96b96a5.png)
 
 ## Tools
 <a name="enable-encrypted-connections-for-postgresql-db-instances-in-amazon-rds-tools"></a>

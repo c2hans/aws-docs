@@ -20,9 +20,9 @@ The device control console is hosted on the vehicle and is accessed with the IP 
 1. Under **Unlock your AWS DeepRacer vehicle**, type the device console’s password in **Password** and then choose **Access vehicle**.
 
    You can find the default password printed on the bottom of your vehicle (under HostName).
-![AWS DeepRacer device console authentication page](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/operatingthevehicle-device-console-auth.png)
+![AWS DeepRacer device console authentication page](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/operatingthevehicle-device-console-auth.png)
 
 1. When you are successfully signed in, you see the device console’s home page as follows.
-![AWS DeepRacer device console home page](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/operatingthevehicle-device-console-home.png)
+![AWS DeepRacer device console home page](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/operatingthevehicle-device-console-home.png)
 
 You’re now ready to calibrate and operate your vehicle. If this is your first time operating the vehicle, proceed to calibrating the vehicle now.

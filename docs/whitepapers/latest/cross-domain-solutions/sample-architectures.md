@@ -17,7 +17,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/cross-domain-solution
 
  AWS Diode provides a service to allow native cloud-friendly transfer of data from one cloud security domain to another. The advantage of this service is that you do not need to maintain or manage the cross-domain system (which is a costly endeavor both in manpower and time). The AWS Diode service supports moving multiple file types as well as the option to move compiled code in support of CI/CD pipelines. The following image depicts the service architecture:
 
-![Cloud native CDS](http://docs.aws.amazon.com/whitepapers/latest/cross-domain-solutions/images/cloud-native-cds.png)
+![Cloud native CDS](https://docs.aws.amazon.com/whitepapers/latest/cross-domain-solutions/images/cloud-native-cds.png)
 
  *Figure 1 – Cloud Native CDS*
 
@@ -32,11 +32,11 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/cross-domain-solution
 
  Figure 2 shows two on-premises customer networks that are connected by a CDS using the traditional deployment. In this configuration, Security Domain A is extended to provide connectivity to an Amazon VPC in the AWS Cloud, while Security Domain B exists solely within the customer’s data center. The connectivity between Security Domain A and an Amazon VPC can be done using a secure IPSec tunnel or using AWS Direct Connect as depicted.
 
-![Two on-premises customer networks that are connected by a CDS using the traditional deployment](http://docs.aws.amazon.com/whitepapers/latest/cross-domain-solutions/images/onprem-networks-cds-connected.png)
+![Two on-premises customer networks that are connected by a CDS using the traditional deployment](https://docs.aws.amazon.com/whitepapers/latest/cross-domain-solutions/images/onprem-networks-cds-connected.png)
 
  *Figure 2 – Deploying a CDS through the internet*
 
-![Deploying a CDS through IPSEC or Direct Connect](http://docs.aws.amazon.com/whitepapers/latest/cross-domain-solutions/images/cds-through-ipsec-or-direct-connect.png)
+![Deploying a CDS through IPSEC or Direct Connect](https://docs.aws.amazon.com/whitepapers/latest/cross-domain-solutions/images/cds-through-ipsec-or-direct-connect.png)
 
  *Figure 3: Deploying a CDS through IPSEC or Direct Connect*
 
@@ -47,6 +47,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/cross-domain-solution
 
  Figure 4 shows two individual security domains connected to two separate AWS Regions. As shown earlier in Figure 2, the security domains are extended by using a combination of Direct Connect and a secure IPSEC VPN tunnel. All data flowing between the security domains flows from AWS to the customer’s data center first, where it is inspected by the CDS before flowing back to AWS.
 
-![Two individual security domains connected to two separate AWS Regions](http://docs.aws.amazon.com/whitepapers/latest/cross-domain-solutions/images/security-domains-connected-to-regions.png)
+![Two individual security domains connected to two separate AWS Regions](https://docs.aws.amazon.com/whitepapers/latest/cross-domain-solutions/images/security-domains-connected-to-regions.png)
 
  *Figure 4: Deploying a CDS across multiple regions*

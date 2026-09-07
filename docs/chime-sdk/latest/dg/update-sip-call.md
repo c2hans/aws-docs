@@ -16,7 +16,7 @@ To handle this case, the Lambda function has to implement the following logic.
 + When a new incoming call arrives, the Lambda is invoked with a `NEW_INBOUND_CALL` event. The Lambda calls the `MyMeetingService` and passes the `transactionId` that identifies the current call, and returns the `PlayAudio` action.
 + When the `MyMeetingService` is ready to add the caller to the meeting, the service calls the [UpdateSipMediaApplicationCall](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_UpdateSipMediaApplicationCall.html) API and passes the call's `transactionId` and `JoinToken` as part of its arguments. This API call triggers the Lambda function again, now with the `CALL_UPDATE_REQUESTED` event. The MyMeetingService passes the `JoinToken` to the Lambda function as part of the event, and the token is used to return the `JoinChimeMeeting` action to the SIP media application, which interrupts the `PlayAudio` action and connects the caller to the meeting.
 
-![Diagram showing the flow of data in the UpdateSipMediaApplicationCall API.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/update-sip-call-flow3.png)
+![Diagram showing the flow of data in the UpdateSipMediaApplicationCall API.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/update-sip-call-flow3.png)
 
 **Note**
 The [UpdateSipMediaApplicationCall](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_UpdateSipMediaApplicationCall.html) API returns HTTP 202 (Accepted). The SIP media application confirms that the call is in progress and can be updated, so it attempts to invoke the Lambda function. The invocation is performed asynchronously, so a successful response from the API doesn’t guarantee that the Lambda function has started or completed.
@@ -93,7 +93,7 @@ When a Lambda function returns a new list of actions while existing actions run,
 
 The following diagram shows a typical example. Text below the digram explains the logic.
 
-![Diagram showing how actions can be replaced during an ongoing SIP media application call.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/update-sip-actions.png)
+![Diagram showing how actions can be replaced during an ongoing SIP media application call.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/update-sip-actions.png)
 
 If Action 2 is interruptible, we stop it and run new Action 1 instead.
 

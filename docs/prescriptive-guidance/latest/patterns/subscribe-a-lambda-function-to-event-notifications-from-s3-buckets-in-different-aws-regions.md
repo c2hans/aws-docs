@@ -30,7 +30,7 @@ This pattern’s approach deploys a [fanout scenario](https://docs.aws.amazon.co
 
 The following diagram shows the architecture for this pattern’s approach.
 
-![Workflow uses Amazon SNS, S3, and SQS to process event notifications from cross-Region S3 buckets.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/cf6c1804-8c41-46f1-9f17-ff361708c595/images/760cf4c0-0cb3-48d1-92ae-1cf0fa8ae076.png)
+![Workflow uses Amazon SNS, S3, and SQS to process event notifications from cross-Region S3 buckets.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/cf6c1804-8c41-46f1-9f17-ff361708c595/images/760cf4c0-0cb3-48d1-92ae-1cf0fa8ae076.png)
 
 The diagram shows the following workflow:
 

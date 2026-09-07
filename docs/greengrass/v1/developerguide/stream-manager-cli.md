@@ -11,7 +11,7 @@ This tutorial shows you how to use the AWS CLI to configure and deploy an AWS Io
 
 Stream manager makes ingesting, processing, and exporting high-volume data streams more efficient and reliable. In this tutorial, you create a `TransferStream` Lambda function that consumes IoT data. The Lambda function uses the AWS IoT Greengrass Core SDK to create a stream in stream manager and then read and write to it. Stream manager then exports the stream to Kinesis Data Streams. The following diagram shows this workflow.
 
-![Diagram of the stream management workflow.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/stream-manager-scenario.png)
+![Diagram of the stream management workflow.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/stream-manager-scenario.png)
 
 The focus of this tutorial is to show how user-defined Lambda functions use the `StreamManagerClient` object in the AWS IoT Greengrass Core SDK to interact with stream manager. For simplicity, the Python Lambda function that you create for this tutorial generates simulated device data.
 

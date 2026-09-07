@@ -36,11 +36,11 @@ This pattern walks you through the steps for migrating an Amazon Relational Data
 **Source and target technology stacks**
 + Amazon RDS for Oracle DB instance
 
-![Source AWS account connecting to target AWS account that contains source and target Regions](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5ecd5359-884e-455c-b5d0-ef08eda2ea1f/images/e17fa7fe-d924-4f35-9707-b93572fa1227.png)
+![Source AWS account connecting to target AWS account that contains source and target Regions](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5ecd5359-884e-455c-b5d0-ef08eda2ea1f/images/e17fa7fe-d924-4f35-9707-b93572fa1227.png)
 
 **Ongoing replication architecture**
 
-![DB on an EC2 instance connecting through VPC peering to a replication instance and Amazon RDS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5ecd5359-884e-455c-b5d0-ef08eda2ea1f/images/b60b3500-5d29-487a-bbab-0ae9f3f386aa.png)
+![DB on an EC2 instance connecting through VPC peering to a replication instance and Amazon RDS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5ecd5359-884e-455c-b5d0-ef08eda2ea1f/images/b60b3500-5d29-487a-bbab-0ae9f3f386aa.png)
 
 ## Tools
 <a name="migrate-an-amazon-rds-for-oracle-database-to-another-aws-account-and-aws-region-using-aws-dms-for-ongoing-replication-tools"></a>

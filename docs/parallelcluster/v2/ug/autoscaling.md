@@ -13,7 +13,7 @@ The auto scaling strategy that's described in this topic applies to HPC clusters
 
 Clusters deployed with AWS ParallelCluster are elastic in several ways. Setting the [`initial_queue_size`](cluster-definition.md#configuration-initial-queue-size) specifies the minimum size value of the ComputeFleet Auto Scaling group, and also the desired capacity value. Setting the [`max_queue_size`](cluster-definition.md#configuration-max-queue-size) specifies the maximum size value of the ComputeFleet Auto Scaling group.
 
-![A basic Auto Scaling group.](http://docs.aws.amazon.com/parallelcluster/v2/ug/images/as-basic-diagram.png)
+![A basic Auto Scaling group.](https://docs.aws.amazon.com/parallelcluster/v2/ug/images/as-basic-diagram.png)
 
 ## Scaling up
 <a name="scaling-up"></a>

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/inline-traf
 
 Before describing the different traffic inspection use cases, it's important to understand how traffic flows through AWS Transit Gateway. The following diagram shows the flow of traffic through Transit Gateway.
 
-![Architecture diagram of a sample traffic flow through AWS Transit Gateway.](http://docs.aws.amazon.com/prescriptive-guidance/latest/inline-traffic-inspection-third-party-appliances/images/guide-img/7951faf9-5db9-4729-86ff-47c734d59b19/images/fc71c702-597f-42a9-8469-5eaba553cc42.png)
+![Architecture diagram of a sample traffic flow through AWS Transit Gateway.](https://docs.aws.amazon.com/prescriptive-guidance/latest/inline-traffic-inspection-third-party-appliances/images/guide-img/7951faf9-5db9-4729-86ff-47c734d59b19/images/fc71c702-597f-42a9-8469-5eaba553cc42.png)
 
 The diagram shows the traffic flow when a source Amazon Elastic Compute Cloud (Amazon EC2) instance in `Workload spoke VPC 1` in Availability Zone 1 sends traffic through Transit Gateway to a destination EC2 instance in `Workload spoke VPC2` in Availability Zone 2:
 

@@ -55,7 +55,7 @@ After updating the Network Firewall stateful rules in your test environment, mak
 
 The following diagram shows an example architecture for using AWS Network Firewall to filter a VPC's outbound traffic using DNS hostnames:
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/secure-outbound-network-traffic/images/guide-img/bce22483-dc0a-4eb3-b027-d2b6a2a1a92a/images/32feaac9-8496-4718-86c8-3ea25291597d.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/secure-outbound-network-traffic/images/guide-img/bce22483-dc0a-4eb3-b027-d2b6a2a1a92a/images/32feaac9-8496-4718-86c8-3ea25291597d.png)
 
 The diagram shows the following workflow:
 

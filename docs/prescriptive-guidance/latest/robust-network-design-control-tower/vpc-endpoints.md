@@ -27,6 +27,6 @@ In the outbound VPC, create the required VPC endpoints. For Amazon S3 and Dynamo
 
 The following diagram shows how applications hosted on EC2 instances or other services in other AWS accounts reach AWS services by using centralized VPC endpoints. In this architecture, the EC2 instance in another account in VPC B can resolve Systems Manager sessions by using VPC endpoints created in VPC A.
 
-![The architecture includes private subnets and a security group in account A.](http://docs.aws.amazon.com/prescriptive-guidance/latest/robust-network-design-control-tower/images/guide-img/734c65f3-3001-4321-a428-6ffbda3b44b0/images/a43f69dd-8b2e-4bbe-92e6-b3a63b1a9622.png)
+![The architecture includes private subnets and a security group in account A.](https://docs.aws.amazon.com/prescriptive-guidance/latest/robust-network-design-control-tower/images/guide-img/734c65f3-3001-4321-a428-6ffbda3b44b0/images/a43f69dd-8b2e-4bbe-92e6-b3a63b1a9622.png)
 
 This helps in cost savings because VPC endpoints are hosted in the single centralized network account that you can use across organizations. You can create and manage VPC endpoints from a single account.

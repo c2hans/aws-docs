@@ -47,14 +47,14 @@ One of the following:
 
 **Target architecture**
 
-![Target architecture for migrating Oracle databases to Aurora PostgreSQL-Compatible.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6de157c4-dcc9-4186-ae32-17efbbbee709/images/68beb634-926e-4908-97b1-edcd23e06a2b.png)
+![Target architecture for migrating Oracle databases to Aurora PostgreSQL-Compatible.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6de157c4-dcc9-4186-ae32-17efbbbee709/images/68beb634-926e-4908-97b1-edcd23e06a2b.png)
 
 **Data migration architecture**
 + From an Oracle database running in the AWS Cloud
-![Data migration architecture for an Oracle database on AWS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6de157c4-dcc9-4186-ae32-17efbbbee709/images/7fc32019-3db1-485b-93e5-6d5539be048c.png)
+![Data migration architecture for an Oracle database on AWS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6de157c4-dcc9-4186-ae32-17efbbbee709/images/7fc32019-3db1-485b-93e5-6d5539be048c.png)
 
 + From an Oracle database running in an on-premises data center
-![Data migration architecture for an Oracle database in an on-premises data center.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6de157c4-dcc9-4186-ae32-17efbbbee709/images/c70d8774-aef7-4414-9766-ce8f25757c4b.png)
+![Data migration architecture for an Oracle database in an on-premises data center.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6de157c4-dcc9-4186-ae32-17efbbbee709/images/c70d8774-aef7-4414-9766-ce8f25757c4b.png)
 
 ## Tools
 <a name="migrate-an-oracle-database-to-aurora-postgresql-using-aws-dms-and-aws-sct-tools"></a>

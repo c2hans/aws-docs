@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 
 This section describes how an account statuses and OU location changes throughout its lifecycle. In the following diagram, green arrows represent asynchronous system events and red arrows represent user-initiated actions.
 
-![Account lifecycle diagram showing the state transitions between the Entry](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/diagrams/sandbox-account-ou-lifecycle.drawio.png)
+![Account lifecycle diagram showing the state transitions between the Entry](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/diagrams/sandbox-account-ou-lifecycle.drawio.png)
 
 **Account lifecycle**
 

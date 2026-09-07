@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-gi
 
 A Gitflow branching strategy commonly has the following branches.
 
-![The branches and environments in a Gitflow branching strategy.](http://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-git-branch-approach/images/guide-img/2c642ab1-73c3-487b-9aff-d887904354b7/images/796ec7d6-dd2c-41d2-ac97-f004cfbd3f55.png)
+![The branches and environments in a Gitflow branching strategy.](https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-git-branch-approach/images/guide-img/2c642ab1-73c3-487b-9aff-d887904354b7/images/796ec7d6-dd2c-41d2-ac97-f004cfbd3f55.png)
 
 ## feature branch
 <a name="feature-branch"></a>

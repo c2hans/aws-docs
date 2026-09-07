@@ -36,7 +36,7 @@ IAM resources that AWS uses for authentication. Specify the entity as a Principa
 **IAM Identity**
 The IAM resource that's authorized in policies to perform actions and to access resources. Identities include IAM users, IAM groups, and IAM roles.
 
-![This diagram shows that the IAM user and IAM role are principals that are also entities and identities, but the root user is a principal that's neither an entity nor identity. The diagram also informs you that IAM groups are identities. IAM authentication controls the access of identities using policies, but root user has full AWS resource access and can't be restricted by identity or resource-based IAM policies.](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/iam-terms-2.png)
+![This diagram shows that the IAM user and IAM role are principals that are also entities and identities, but the root user is a principal that's neither an entity nor identity. The diagram also informs you that IAM groups are identities. IAM authentication controls the access of identities using policies, but root user has full AWS resource access and can't be restricted by identity or resource-based IAM policies.](https://docs.aws.amazon.com/IAM/latest/UserGuide/images/iam-terms-2.png)
 
 **Principals**
 An AWS account root user, IAM user or an IAM role that can make a request for an action or operation on an AWS resource. Principals include human users, workloads, federated principals, and assumed roles. After authentication, IAM grants the principal either permanent or temporary credentials to make requests to AWS, depending on the principal type.
@@ -65,7 +65,7 @@ The main difference between these two types of users is that users in IAM Identi
 
 If the users in your organization are already authenticated when they sign in to your corporate network, you don't have to create separate IAM users or users in IAM Identity Center for them. Instead, you can *federate* those user identities into AWS using either IAM or AWS IAM Identity Center. OIDC and SAML federated principals assume an IAM role that gives them permissions to access specific resources. For more information about roles, see [Roles terms and concepts](id_roles.md#id_roles_terms-and-concepts).
 
-![This diagram shows how a federated principal can get temporary AWS security credentials to access resources in your AWS account.](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/iam-intro-federation.diagram.png)
+![This diagram shows how a federated principal can get temporary AWS security credentials to access resources in your AWS account.](https://docs.aws.amazon.com/IAM/latest/UserGuide/images/iam-intro-federation.diagram.png)
 
 Federation is useful in these cases:
 + **Your users already exist in a corporate directory.**

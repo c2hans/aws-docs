@@ -52,7 +52,7 @@ This pattern is designed to help those who use on-premises infrastructure to run
 
 **Target architecture**
 
-![Architecture diagram of setting up the Amazon ECS cluster and CI/CD pipeline.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/b0f35986-a839-4b01-8eb0-4748182ddafc/images/85b8d4d9-3591-4d69-a54b-64aa543498f1.png)
+![Architecture diagram of setting up the Amazon ECS cluster and CI/CD pipeline.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/b0f35986-a839-4b01-8eb0-4748182ddafc/images/85b8d4d9-3591-4d69-a54b-64aa543498f1.png)
 
 This diagram represents two primary workflows described in this pattern, provisioning the Amazon ECS cluster and setting up the CI/CD pipeline that sets up and deploys the CI/CD pipeline, as follows:
 

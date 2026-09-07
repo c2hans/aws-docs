@@ -32,7 +32,7 @@ You can use this pattern for your data integration use cases. For example, trans
 
 The following diagram shows an example workflow for delivering records from DynamoDB to Amazon S3 by using Kinesis Data Streams and Firehose.
 
-![An example workflow for delivering records from DynamoDB to Amazon S3 using Kinesis Data Streams and Firehose.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e2a9c412-312e-4900-9774-19a281c578e4/images/6e6df998-e6c2-4eaf-b263-ace752194689.png)
+![An example workflow for delivering records from DynamoDB to Amazon S3 using Kinesis Data Streams and Firehose.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e2a9c412-312e-4900-9774-19a281c578e4/images/6e6df998-e6c2-4eaf-b263-ace752194689.png)
 
 The diagram shows the following workflow:
 

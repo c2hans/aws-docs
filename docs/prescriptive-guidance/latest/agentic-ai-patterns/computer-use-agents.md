@@ -14,7 +14,7 @@ This pattern is important for practical AI automations, where the agent function
 
 A computer-use agent pattern is shown in the following diagram:
 
-![Computer-use agent.](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-patterns/images/guide-img/cde5ee68-ed86-4053-9fb1-d0dbf7199e24/images/e56a2cef-9d10-4284-befb-fcf75f025f0a.png)
+![Computer-use agent.](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-patterns/images/guide-img/cde5ee68-ed86-4053-9fb1-d0dbf7199e24/images/e56a2cef-9d10-4284-befb-fcf75f025f0a.png)
 
 ## Description
 <a name="description.56d4c193-a6f1-54f3-abca-0b0f4ba08931"></a>

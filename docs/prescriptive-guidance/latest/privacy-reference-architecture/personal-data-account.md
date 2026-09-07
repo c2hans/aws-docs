@@ -16,7 +16,7 @@ Your organization might consider supporting a dedicated Data account, which is w
 
 The following diagram illustrates the AWS security and privacy services that are configured in the PD Application and Data accounts.
 
-![AWS services deployed in the Personal Data Application and Data accounts in the Personal Data OU.](http://docs.aws.amazon.com/prescriptive-guidance/latest/privacy-reference-architecture/images/guide-img/a4379862-3434-48e4-8691-64db36363b08/images/53bdfa83-d0d0-4347-8f0f-66c3e1949208.png)
+![AWS services deployed in the Personal Data Application and Data accounts in the Personal Data OU.](https://docs.aws.amazon.com/prescriptive-guidance/latest/privacy-reference-architecture/images/guide-img/a4379862-3434-48e4-8691-64db36363b08/images/53bdfa83-d0d0-4347-8f0f-66c3e1949208.png)
 
 This section provides more detailed information about the following AWS services that are used in these accounts:
 + [Amazon Athena](#athena)
@@ -178,7 +178,7 @@ There are also privacy challenges associated with [data lakes](https://aws.amazo
 
 You can use the [tag-based access control](https://docs.aws.amazon.com/lake-formation/latest/dg/tag-based-access-control.html) feature in Lake Formation. *Tag-based access control* is an authorization strategy that defines permissions based on attributes. In Lake Formation, these attributes are called *LF-Tags*. Using an LF-Tag, you can attach these tags to Data Catalog databases, tables, and columns and grant the same tags to IAM principals. Lake Formation allows operations on those resources when the principal has been granted access to a tag value that matches the resource tag value. The following image shows how you can assign LF-Tags and permissions to provide differentiated access to personal data.
 
-![LF-Tags control which table columns teams can access.](http://docs.aws.amazon.com/prescriptive-guidance/latest/privacy-reference-architecture/images/guide-img/a4379862-3434-48e4-8691-64db36363b08/images/b016d4ec-a7c2-41da-bb28-34bfec15b8cb.png)
+![LF-Tags control which table columns teams can access.](https://docs.aws.amazon.com/prescriptive-guidance/latest/privacy-reference-architecture/images/guide-img/a4379862-3434-48e4-8691-64db36363b08/images/b016d4ec-a7c2-41da-bb28-34bfec15b8cb.png)
 
 This example uses the hierarchal nature of tags. Both databases contain personally identifiable information (`PII:true`), but tags at the columnar level limits specific columns to different teams. In this example, IAM principals who have the `PII:true` LF-Tag can access the AWS Glue database resources that have this tag. Principals with the `LOB:DataScience` LF-Tag can access specific columns that have this tag, and principals with the `LOB:Marketing` LF-Tag can access only columns that have this tag. The marketing can access only PII that is relevant to marketing use cases, and the data science team can access only PII that is relevant to their use cases.
 
@@ -196,7 +196,7 @@ Nitro Enclaves deploy a kernel that is separated from the parent instance's kern
 
 One use case where Nitro Enclaves can be useful is joint processing between two data processors that are in separate AWS Regions and that might not trust each other. The following image shows how you can use an enclave for central processing, a KMS key for encrypting the personal data before it's sent to the enclave, and an AWS KMS key policy that verifies that the enclave requesting decryption has the unique measurements in its attestation document. For more information and instructions, see [Using cryptographic attestation with AWS KMS](https://docs.aws.amazon.com/enclaves/latest/user/kms.html). For a sample key policy, see [Require attestation to use an AWS KMS key](require-attestation-for-kms-key.md) in this guide.
 
-![Using AWS Nitro Enclave to process encrypted data in S3 buckets in different accounts.](http://docs.aws.amazon.com/prescriptive-guidance/latest/privacy-reference-architecture/images/guide-img/a4379862-3434-48e4-8691-64db36363b08/images/bf8591c5-b3dc-4dd1-be18-6b113aa67f13.png)
+![Using AWS Nitro Enclave to process encrypted data in S3 buckets in different accounts.](https://docs.aws.amazon.com/prescriptive-guidance/latest/privacy-reference-architecture/images/guide-img/a4379862-3434-48e4-8691-64db36363b08/images/bf8591c5-b3dc-4dd1-be18-6b113aa67f13.png)
 
 With this implementation, only the respective data processors and the underlying enclave have access to the plaintext personal data. The only place the data is exposed, outside of the respective data processors' environments, is in the enclave itself, which is designed to prevent access and tampering.
 

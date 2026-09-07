@@ -18,6 +18,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/modern-data-architect
 
  With a modern data architecture on AWS, customers can rapidly build scalable data lakes, use a broad and deep collection of purpose-built data services, ensure compliance with unified data access, security, and governance, scale their systems at a low cost without compromising performance, and easily share data across organizational boundaries, allowing them to make decisions with speed and agility at scale.
 
-![A diagram depicting modern data architecture on AWS .](http://docs.aws.amazon.com/whitepapers/latest/modern-data-architecture-rationales-on-aws/images/modern-data-arch-11.png)
+![A diagram depicting modern data architecture on AWS .](https://docs.aws.amazon.com/whitepapers/latest/modern-data-architecture-rationales-on-aws/images/modern-data-arch-11.png)
 
  Further details on this modern data architecture on AWS, including patterns and other services and features, can be found in the resources mentioned in the [Further reading](further-reading.md) section of this document.

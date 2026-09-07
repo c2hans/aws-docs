@@ -11,7 +11,7 @@ This workstream involves decisions that can be changed or reversed with little e
 
 The operational workstream consists of five phases: project governance, alignment, operating model definition, service introduction, and training.
 
-![Operational workstream in contact center migrations](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/images/guide-img/c8027e22-fcd9-43b3-b8a7-234ec8eb0644/images/bb84baf2-a2e1-490d-9f81-2cf4ba31a333.png)
+![Operational workstream in contact center migrations](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/images/guide-img/c8027e22-fcd9-43b3-b8a7-234ec8eb0644/images/bb84baf2-a2e1-490d-9f81-2cf4ba31a333.png)
 
 ## Program governance
 <a name="program-governance.7c597b72-eeca-508a-95aa-2abd384c2066"></a>
@@ -37,7 +37,7 @@ The activities in this phase define *who* will use the contact center solution a
 The operating model definition should include:
 + A responsible, accountable, supported, consulted, and informed (RASCI) matrix, so each team understands its roles and responsibilities, and how they will interact with other teams. The following provides an excerpt from a RASCI matrix.
 
-![Example RASCI matrix for contact center migrations](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/images/guide-img/c8027e22-fcd9-43b3-b8a7-234ec8eb0644/images/669b2f51-8045-4c16-9288-32d8c9343c6a.png)
+![Example RASCI matrix for contact center migrations](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/images/guide-img/c8027e22-fcd9-43b3-b8a7-234ec8eb0644/images/669b2f51-8045-4c16-9288-32d8c9343c6a.png)
 
 + Process flow swimlanes that define the end-to-end activities and who is responsible for each activity. For example, there should be a process flow for engaging out-of-hours support so it's clear who gets paged, what happens if they can't be reached, who logs the support ticket, and how the business criticality is judged. Another example is the emergency queuing message. The process flow should show who decides that it needs to be initiated, and what data they should use to make that decision.
 

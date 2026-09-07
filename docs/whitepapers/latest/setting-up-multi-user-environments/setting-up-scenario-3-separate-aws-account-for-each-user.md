@@ -25,7 +25,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/setting-up-multi-user
 
  Another benefit of this scenario is that in the AWS Management Console, users cannot see resources belonging to any other users in the group, since each user is working from their own AWS account. The following figure shows the architecture for this scenario.
 
-![Diagram showing separate AWS account for each user](http://docs.aws.amazon.com/whitepapers/latest/setting-up-multi-user-environments/images/separate-aws-account-per-user.png)
+![Diagram showing separate AWS account for each user](https://docs.aws.amazon.com/whitepapers/latest/setting-up-multi-user-environments/images/separate-aws-account-per-user.png)
 
 ## Account setup
 <a name="account-setup-2"></a>

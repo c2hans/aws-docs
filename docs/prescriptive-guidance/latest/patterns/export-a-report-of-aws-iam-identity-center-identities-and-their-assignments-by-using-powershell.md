@@ -16,7 +16,7 @@ For many, the ideal tool to view this information would be in a spreadsheet appl
 
 This pattern describes how to use AWS Tools for PowerShell to generate a report of SSO identity configurations in IAM Identity Center. The report is formatted as a CSV file, and it includes the identity name (principal), identity type (user or group), accounts the identity can access, and permission sets. After generating this report, you can open it in your preferred application to search, filter, and audit the data as needed. The following image shows sample data in a spreadsheet application.
 
-![PowerShell script results viewed in spreadsheet application.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/46c7dc7f-c726-4754-b590-2f09d657b167/images/bbc21d8b-fc5d-4b5d-b159-81197a89823e.png)
+![PowerShell script results viewed in spreadsheet application.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/46c7dc7f-c726-4754-b590-2f09d657b167/images/bbc21d8b-fc5d-4b5d-b159-81197a89823e.png)
 
 |
 |
@@ -57,7 +57,7 @@ This pattern describes how to use AWS Tools for PowerShell to generate a report 
 
 **Target architecture**
 
-![Script using AWS CLI named profile to create a report of SSO identities in IAM Identity Center.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/46c7dc7f-c726-4754-b590-2f09d657b167/images/ae5189aa-8197-4a05-88df-7c0294a679a1.png)
+![Script using AWS CLI named profile to create a report of SSO identities in IAM Identity Center.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/46c7dc7f-c726-4754-b590-2f09d657b167/images/ae5189aa-8197-4a05-88df-7c0294a679a1.png)
 
 1. The user runs the script in a PowerShell command line.
 

@@ -177,7 +177,7 @@ To test in-place migration with the `migrate` Spark procedure from an Amazon EMR
       ```
 
       Sample output:
-![Sample output from data validation during Iceberg table migration.](http://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/images/guide-img/ceffa39e-028d-47b6-a54a-6ef8526aee6a/images/fcf5b249-cca9-4d04-bb56-bc1de5946861.jpeg)
+![Sample output from data validation during Iceberg table migration.](https://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/images/guide-img/ceffa39e-028d-47b6-a54a-6ef8526aee6a/images/fcf5b249-cca9-4d04-bb56-bc1de5946861.jpeg)
 
 1. Use the Iceberg `migrate` procedure:
 
@@ -193,7 +193,7 @@ To test in-place migration with the `migrate` Spark procedure from an Amazon EMR
    ```
 
    The output dataframe contains the `migrated_files_count` (the numbers of files that were added to the Iceberg table):
-![Sample output from file count validation during Iceberg table migration.](http://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/images/guide-img/ceffa39e-028d-47b6-a54a-6ef8526aee6a/images/863b19b0-a6eb-4f5b-a7b2-b136e0e7328b.png)
+![Sample output from file count validation during Iceberg table migration.](https://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/images/guide-img/ceffa39e-028d-47b6-a54a-6ef8526aee6a/images/863b19b0-a6eb-4f5b-a7b2-b136e0e7328b.png)
 
 1. Confirm that the backup table was created:
 
@@ -202,7 +202,7 @@ To test in-place migration with the `migrate` Spark procedure from an Amazon EMR
    ```
 
    Sample output:
-![Sample output from backup validation during Iceberg table migration.](http://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/images/guide-img/ceffa39e-028d-47b6-a54a-6ef8526aee6a/images/026434f6-1793-474d-ac44-471e65cdd899.png)
+![Sample output from backup validation during Iceberg table migration.](https://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/images/guide-img/ceffa39e-028d-47b6-a54a-6ef8526aee6a/images/026434f6-1793-474d-ac44-471e65cdd899.png)
 
 1. Validate the operation by querying the Iceberg table:
 

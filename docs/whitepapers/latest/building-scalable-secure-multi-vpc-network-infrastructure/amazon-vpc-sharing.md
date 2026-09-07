@@ -21,7 +21,7 @@ Sharing VPCs is useful when network isolation between teams does not need to be 
 
  You can have one VPC per application portfolio (two VPCs total), and the VPC is shared with the different application owner accounts within that portfolio. App owners deploy apps into their respective shared VPC (in this case, in the different subnets for network route segmentation and isolation using NACLs). The two shared VPCs are connected via the Transit Gateway. With this setup, you could go from having to connect 10 VPCs to just two, as seen in the following figure.
 
-![A diagram depicting an example setup for shared VPC](http://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/example-setup-shared-vpc.png)
+![A diagram depicting an example setup for shared VPC](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/example-setup-shared-vpc.png)
 
 **Note**
  VPC sharing participants cannot create all AWS resources in a shared subnet. For more information, refer to the [Limitations](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html#vpc-share-limitations) section in the VPC Sharing documentation.

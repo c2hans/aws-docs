@@ -50,7 +50,7 @@ To view the active jobs and job concurrency limits and other AWS IoT Jobs quotas
 
 The following diagram shows how the job concurrency applies to in-progress jobs and jobs that are being canceled.
 
-![Image showing the different states of an AWS IoT job.](http://docs.aws.amazon.com/iot/latest/developerguide/images/job-states-concurrency.png)
+![Image showing the different states of an AWS IoT job.](https://docs.aws.amazon.com/iot/latest/developerguide/images/job-states-concurrency.png)
 
 **Note**
 New jobs with the optional `SchedulingConfig` will maintain an initial status state of `SCHEDULED` and update to `IN_PROGRESS` upon reaching the selected `startTime`. After the new job with the optional `SchedulingConfig` reaches the selected `startTime` and updates to `IN_PROGRESS`, it will count towards the active jobs limit and job concurrency limit. Jobs with a status state of `SCHEDULED` will count towards the active jobs limit, but will not count towards the job concurrency limit.

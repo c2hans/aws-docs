@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amaz
 
  Deploying this Guidance with the default parameters deploys the following components in your AWS account.
 
-![AWS Step Functions orchestrates Lambda functions that perform the data transfer between your S3 Glacier vault and an S3 bucket.](http://docs.aws.amazon.com/solutions/latest/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3/images/architecture-diagram.png)
+![AWS Step Functions orchestrates Lambda functions that perform the data transfer between your S3 Glacier vault and an S3 bucket.](https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3/images/architecture-diagram.png)
 
 **Note**
  AWS CloudFormation resources are created from [AWS Cloud Development Kit (AWS CDK)](https://aws.amazon.com/cdk/) (AWS CDK) constructs.
@@ -67,7 +67,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amaz
  To create the key name for each of the new objects in the Amazon S3 service, this Guidance uses the **ArchiveDescription** value for each **ArchiveId** listed in the Amazon Glacier inventory file. The following are examples.
 
 1.  If the **ArchiveDescription** is a single string value, such as `data01`, the Guidance translates that value to an S3 object key name in the destination S3 bucket.
-![Amazon S3 object labeled data01.](http://docs.aws.amazon.com/solutions/latest/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3/images/image3.png)
+![Amazon S3 object labeled data01.](https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3/images/image3.png)
 
 1.  If the **ArchiveDescription** value is blank, then the Guidance does the following:
 
@@ -76,11 +76,11 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amaz
    1.  Uses the **ArchiveId** as the S3 object key name.
 
    1.  Adds the prefix `00undefined` to the S3 object key names and stores the objects in the destination S3 bucket.
-![Amazon S3 object labeled with a randomized alpha-numeric name.](http://docs.aws.amazon.com/solutions/latest/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3/images/image4.png)
+![Amazon S3 object labeled with a randomized alpha-numeric name.](https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3/images/image4.png)
 
 1.  If multiple **ArchiveId** entries have the same value for the **ArchiveDescription** field (for example, `duplicatefile02.txt`), then the Guidance appends a timestamp suffix to the name of the original file. This resolves the potential issue of having duplicate S3 object key names copied over one another. The timestamp used is the CreationDate of the archive.
 
-![Three Amazon S3 objects labeled duplicatefile02.txt with timestamps.](http://docs.aws.amazon.com/solutions/latest/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3/images/image5.png)
+![Three Amazon S3 objects labeled duplicatefile02.txt with timestamps.](https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3/images/image5.png)
 
 ### Creating custom file names for S3 objects
 <a name="creating-custom-file-names-for-s3-objects"></a>

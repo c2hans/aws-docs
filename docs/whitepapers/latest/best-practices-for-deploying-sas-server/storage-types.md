@@ -28,7 +28,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 +
   +  Using [SAS/Access to Redshift](http://support.sas.com/kb/63/001.html), SAS Datasets can be loaded into Amazon S3/Amazon Redshift using Amazon S3 capabilities of multi-part upload, transfer acceleration, and COPY/UNLOAD to Amazon Redshift for relational storage.
 
-![Small diagram that shows directional bulk and standard loading from SAS into Amazon S3 or Amazon Redshift.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-for-deploying-sas-server/images/redshift-bulk-load.jpeg)
+![Small diagram that shows directional bulk and standard loading from SAS into Amazon S3 or Amazon Redshift.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-deploying-sas-server/images/redshift-bulk-load.jpeg)
 
 ### Temporary SAS data storage
 <a name="temporary-sas-data-storage"></a>

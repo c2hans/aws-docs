@@ -11,7 +11,7 @@ Assets are local files, directories, or Docker images that can be bundled into A
 
 The following tutorial video provides a comprehensive overview of CDK assets, and explains how you can use them in your infrastructure as code (IaC).
 
-[![AWS Videos](http://img.youtube.com/vi/jHNtXQmkKfw?rel=0/0.jpg)](http://www.youtube.com/watch?v=jHNtXQmkKfw?rel=0)
+[![AWS Videos](https://img.youtube.com/vi/jHNtXQmkKfw?rel=0/0.jpg)](https://www.youtube.com/watch?v=jHNtXQmkKfw?rel=0)
 
 You add assets through APIs that are exposed by specific AWS constructs. For example, when you define a [`lambda.Function`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Function.html) construct, the [`code`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Function.html#code) property lets you pass an [`asset`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Code.html#static-fromwbrassetpath-options) (directory). `Function` uses assets to bundle the contents of the directory and use it for the function’s code. Similarly, [`ecs.ContainerImage.fromAsset`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ecs.ContainerImage.html#static-fromwbrassetdirectory-props) uses a Docker image built from a local directory when defining an Amazon ECS task definition.
 

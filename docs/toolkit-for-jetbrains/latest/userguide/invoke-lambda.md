@@ -11,9 +11,9 @@ To run (invoke) or debug the local version of a Lambda function, and run (invoke
 
 1. Do one of the following:
    + In the code file that contains the function handler for [Java](https://docs.aws.amazon.com/lambda/latest/dg/java-programming-model-handler-types.html), [Python](https://docs.aws.amazon.com/lambda/latest/dg/python-programming-model-handler-types.html), [Node.js](https://docs.aws.amazon.com/lambda/latest/dg/nodejs-prog-model-handler.html), or [C\#](https://docs.aws.amazon.com/lambda/latest/dg/dotnet-programming-model-handler-types.html), choose the Lambda icon in the gutter next to the function handler. Choose **Run '[Local]'** or **Debug '[Local]'**.
-![Running or debugging the local version of a Lambda function by starting from the function handler in the code file](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/lambda-local-code.png)
+![Running or debugging the local version of a Lambda function by starting from the function handler in the code file](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/lambda-local-code.png)
    + With the **Project** tool window already open and displaying the project that contains the function, open the project's `template.yaml` file. Choose the **Run** icon in the gutter next to the function's resource definition, and then choose **Run '[Local]'** or **Debug '[Local]'**.
-![Running or debugging the local version of a Lambda function by starting from the function definition in the AWS SAM template file](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/lambda-local-template.png)
+![Running or debugging the local version of a Lambda function by starting from the function definition in the AWS SAM template file](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/lambda-local-template.png)
 
 1. Complete the [Edit configuration (local function settings)](run-debug-configurations-dialog-local.md) dialog box if it's displayed, and then choose **Run** or **Debug**. Results are displayed in the **Run** or **Debug** tool window.
    + If the **Edit configuration** dialog box doesn't appear and you want to change the existing configuration, first change its configuration, and then repeat this procedure from the beginning.

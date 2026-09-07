@@ -24,7 +24,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/h
 **Note**
 Hosted Virtual Interface (Hosted VIF) is a type of Private VIF where the VIF is assigned to a different AWS account than the AWS account which owns the AWS Direct Connect connection (which can include an AWS Direct Connect partner). AWS no longer allows new partners to offer this model. For more information, see [Creating a hosted virtual interface](https://docs.aws.amazon.com/directconnect/latest/UserGuide/createhostedvirtualinterface.html).
 
-![Diagram showing AWS Direct Connect Private and Public VIFs](http://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/images/private-public-vifs.png)
+![Diagram showing AWS Direct Connect Private and Public VIFs](https://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/images/private-public-vifs.png)
 
 ## Site-to-Site Virtual Private Network (VPN)
 <a name="site-to-site-virtual-private-network-vpn"></a>

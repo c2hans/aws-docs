@@ -15,7 +15,7 @@ Use connectors to accelerate your development life cycle. Connectors are prebuil
 
 In this tutorial, you configure and deploy the [ Twilio Notifications](twilio-notifications-connector.md) connector. The connector receives Twilio message information as input data, and then triggers a Twilio text message. The data flow is shown in following diagram.
 
-![Data flow from Lambda function to Twilio Notifications connector to Twilio.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/connectors/twilio-solution.png)
+![Data flow from Lambda function to Twilio Notifications connector to Twilio.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/connectors/twilio-solution.png)
 
 After you configure the connector, you create a Lambda function and a subscription.
 + The function evaluates simulated data from a temperature sensor. It conditionally publishes the Twilio message information to an MQTT topic. This is the topic that the connector subscribes to.

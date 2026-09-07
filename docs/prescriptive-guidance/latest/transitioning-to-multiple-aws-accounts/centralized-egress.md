@@ -13,7 +13,7 @@ You can also use the [Amazon Route 53 Resolver DNS Firewall](https://docs.aws.a
 
 The following image shows a sample architecture for centralized egress. Before network communication begins, DNS requests are sent to the Route 53 Resolver, where the DNS firewall allows or denies resolution of the IP address used for communication. Traffic destined to the internet is routed to a transit gateway in a centralized networking account. The transit gateway forwards the traffic to Network Firewall for inspection. If the firewall policy permits the egress traffic, the traffic routes through an NAT gateway, through an internet gateway, and to the internet. You can use AWS Firewall Manager to centrally manage DNS Firewall rule groups and Network Firewall policies across your multi-account infrastructure.
 
-![Traffic routing from other accounts through the network account and to the internet.](http://docs.aws.amazon.com/prescriptive-guidance/latest/transitioning-to-multiple-aws-accounts/images/guide-img/b35f7443-fbaf-4ce8-bb48-32b6441d573f/images/dc070c63-31ad-44d5-8d97-5e0031e65b61.png)
+![Traffic routing from other accounts through the network account and to the internet.](https://docs.aws.amazon.com/prescriptive-guidance/latest/transitioning-to-multiple-aws-accounts/images/guide-img/b35f7443-fbaf-4ce8-bb48-32b6441d573f/images/dc070c63-31ad-44d5-8d97-5e0031e65b61.png)
 
 ## Best practices for securing egress traffic
 <a name="best-practices-egress"></a>

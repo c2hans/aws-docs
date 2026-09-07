@@ -14,7 +14,7 @@ Deploying this solution with the default parameters deploys the following compon
 
  **Depicts Migration Assistant for Amazon OpenSearch Service architecture on AWS**
 
-![migration assistant for amazon opensearch service architecture diagram](http://docs.aws.amazon.com/solutions/latest/migration-assistant-for-amazon-opensearch-service/images/migration-assistant-for-amazon-opensearch-service-architecture-diagram.png)
+![migration assistant for amazon opensearch service architecture diagram](https://docs.aws.amazon.com/solutions/latest/migration-assistant-for-amazon-opensearch-service/images/migration-assistant-for-amazon-opensearch-service-architecture-diagram.png)
 
 **Note**
 AWS CloudFormation resources are created from AWS Cloud Development Kit (AWS CDK) constructs.

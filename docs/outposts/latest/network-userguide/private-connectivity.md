@@ -13,7 +13,7 @@ When you select the private connectivity option, a service link VPN connection i
 
 The following image shows both options to establish a service link VPN private connection between your Outposts and the AWS Region:
 
-![The service link private connection options.](http://docs.aws.amazon.com/outposts/latest/network-userguide/images/outpost-rack2ndgen-sl-private-connection-options.PNG)
+![The service link private connection options.](https://docs.aws.amazon.com/outposts/latest/network-userguide/images/outpost-rack2ndgen-sl-private-connection-options.PNG)
 
 **IP Address Planning for Private Connectivity**
 When configuring private connectivity for the Outposts service link, plan your IP addressing carefully to avoid future conflicts. Service Link VIFs are immutable. You should avoid creating CoIP pools or DVR subnet ranges assigned to the Local Gateway (LGW) that overlap with existing Service Link address ranges or VPC CIDR ranges used for the dedicated private connectivity VPC. Overlapping prefixes across the Service Link and LGW networks may result in BGP routing conflicts on the upstream network and disrupt Service Link functionality.

@@ -21,7 +21,7 @@ According to Accenture's [Modern Cloud Champions](https://www.accenture.com/cl-e
 
 New systems and strategies can be highly disruptive to an organization. A well-formulated strategy brings the project or change to life, and describes who it will impact in the organization and how. It minimizes gaps in perception and productivity, as shown in the following diagram.
 
-![Minimizing gaps in perception and productivity through OCA.](http://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-envision-future/images/guide-img/7134122a-df9a-4cfe-995a-6903c8a3790f/images/fdf3b7f2-5a52-44a8-b960-69e99e77a17f.png)
+![Minimizing gaps in perception and productivity through OCA.](https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-envision-future/images/guide-img/7134122a-df9a-4cfe-995a-6903c8a3790f/images/fdf3b7f2-5a52-44a8-b960-69e99e77a17f.png)
 
 [Accenture's study](https://www.accenture.com/cl-es/insights/consulting/cloud-workforce) revealed that emphasizing people as much as technology in cloud transformation leads to significant improvements. In their study, this approach led to:
 + 2.2x improved organizational agility and innovation

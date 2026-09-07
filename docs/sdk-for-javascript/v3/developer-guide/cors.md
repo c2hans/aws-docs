@@ -22,7 +22,7 @@ In the simplest case, your browser script makes a GET request for a resource fro
 
 If either the requesting domain or the type of HTTP request is not authorized, the request is denied. However, CORS makes it possible to preflight the request before actually submitting it. In this case, a preflight request is made in which the `OPTIONS` access request operation is sent. If the cross-origin server's CORS configuration grants access to the requesting domain, the server sends back a preflight response that lists all the HTTP request types that the requesting domain can make on the requested resource.
 
-![Process flow for CORS requests](http://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/cors-overview.png)
+![Process flow for CORS requests](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/cors-overview.png)
 
 ## Is CORS configuration required?
 <a name="the-need-for-cors-configuration"></a>

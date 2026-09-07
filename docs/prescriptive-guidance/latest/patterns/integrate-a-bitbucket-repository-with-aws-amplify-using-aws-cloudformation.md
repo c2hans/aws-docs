@@ -28,7 +28,7 @@ This pattern describes how to create a front-end continuous integration and cont
 ## Architecture
 <a name="integrate-a-bitbucket-repository-with-aws-amplify-using-aws-cloudformation-architecture"></a>
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/24ae87ed-aa5d-4114-9c5d-bdcb4d40a78b/images/25d73a9d-d2ae-40bc-9ebc-57f9bd13884a.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/24ae87ed-aa5d-4114-9c5d-bdcb4d40a78b/images/25d73a9d-d2ae-40bc-9ebc-57f9bd13884a.png)
 
 **Technology stack  **
 + Amplify

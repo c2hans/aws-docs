@@ -23,7 +23,7 @@ In this step, you:
    1. Copy the `greengrasssdk` folder into the `HelloWorldCounter` folder that contains `greengrassHelloWorldCounter.py`.
 
    1. Save `greengrassHelloWorldCounter.py` and the `greengrasssdk` folder to a `zip` file named `hello_world_counter_python_lambda.zip`. The `py` file and `greengrasssdk` folder must be in the root of the directory.
-![Screenshot showing zipped contents of hello_word_counter_python_lambda.zip.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-046.png)
+![Screenshot showing zipped contents of hello_word_counter_python_lambda.zip.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-046.png)
 
       On UNIX-like systems (including the Mac terminal) that have `zip` installed, you can use the following command to package the file and folder:
 
@@ -42,12 +42,12 @@ In this step, you:
    + For **Permissions**, keep the default setting. This creates an execution role that grants basic Lambda permissions. This role isn't used by AWS IoT Greengrass. Or, you can reuse the role that you created in Module 3-1.
 
    Choose **Create function**.
-![The "Basic information" section with the "Function name" field set to "Greengrass_HelloWorld_Counter" and the "Runtime" field set to "Python 3.7".](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-023-3.png)
+![The "Basic information" section with the "Function name" field set to "Greengrass_HelloWorld_Counter" and the "Runtime" field set to "Python 3.7".](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-023-3.png)
 
 1. Upload your Lambda function deployment package.
 
    1. <a name="lambda-console-upload"></a>On the **Code** tab, under **Code source**, choose **Upload from**. From the dropdown, choose **.zip file**.
-![The Upload from dropdown with .zip file highlighted.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/lra-console/upload-deployment-package.png)
+![The Upload from dropdown with .zip file highlighted.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/lra-console/upload-deployment-package.png)
 
    1. Choose **Upload**, and then choose your `hello_world_counter_python_lambda.zip` deployment package. Then, choose **Save**.
 
@@ -68,13 +68,13 @@ The **Test** button on the AWS Lambda console doesn't work with this function. T
 1. Create an alias for the function version.
 
    1. From the **Actions** menu at the top of the page, choose **Create alias**.
-![Screenshot of the Actions menu set to Create alias.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-028.png)
+![Screenshot of the Actions menu set to Create alias.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-028.png)
 
    1. For **Name**, enter **GG\_HW\_Counter**.
 
    1. For **Version**, choose **1**.
 
    1. Choose **Save**.
-![Create alias screenshot with the Name field set to GG_HW_Counter and the Version field set to 1.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-048.png)
+![Create alias screenshot with the Name field set to GG_HW_Counter and the Version field set to 1.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-048.png)
 
    Aliases create a single entity for your Lambda function that Greengrass devices can subscribe to. This way, you don't have to update subscriptions with new Lambda function version numbers every time the function is modified.

@@ -11,7 +11,7 @@ The Java application code inside the container is out of scope for this guide. A
 
 The following architecture is designed to run modernized mainframe workloads by using serverless AWS services, eliminating the need to manage and maintain on-premises infrastructure.
 
-![Architecture diagram of a modernized mainframe application running on AWS serverless infrastructure.](http://docs.aws.amazon.com/prescriptive-guidance/latest/run-bluage-modernized-mainframes/images/guide-img/8df97f4b-4eac-4953-975c-83ed512be5b7/images/07cd22fc-e59a-4722-9ea7-eb5a3c5495d0.png)
+![Architecture diagram of a modernized mainframe application running on AWS serverless infrastructure.](https://docs.aws.amazon.com/prescriptive-guidance/latest/run-bluage-modernized-mainframes/images/guide-img/8df97f4b-4eac-4953-975c-83ed512be5b7/images/07cd22fc-e59a-4722-9ea7-eb5a3c5495d0.png)
 
 The diagram shows the following process:
 

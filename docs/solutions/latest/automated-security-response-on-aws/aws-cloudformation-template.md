@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 # AWS CloudFormation templates
 <a name="aws-cloudformation-template"></a>
 
- [![View Template](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/view-template.png)](https://solutions-reference.s3.amazonaws.com/automated-security-response-on-aws/latest/automated-security-response-admin.template) **automated-security-response-admin.template** - Use this template to launch the Automated Security Response on AWS solution. The template installs the core components of the solution, a nested stack for the AWS Step Functions logs, and one nested stack for each security standard you choose to activate.
+ [![View Template](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/view-template.png)](https://solutions-reference.s3.amazonaws.com/automated-security-response-on-aws/latest/automated-security-response-admin.template) **automated-security-response-admin.template** - Use this template to launch the Automated Security Response on AWS solution. The template installs the core components of the solution, a nested stack for the AWS Step Functions logs, and one nested stack for each security standard you choose to activate.
 
 Services used include Amazon Simple Notification Service, AWS Key Management Service, AWS Identity and Access Management, AWS Lambda, AWS Step Functions, Amazon CloudWatch Logs, Amazon S3, and AWS Systems Manager.
 
@@ -35,12 +35,12 @@ The following templates are installed in the AWS Security Hub admin account to t
 ## Member roles
 <a name="member-roles"></a>
 
- [![View Template](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/view-template.png)](https://solutions-reference.s3.amazonaws.com/automated-security-response-on-aws/latest/automated-security-response-member-roles.template) **automated-security-response-member-roles.template** - Defines the remediation roles needed in each AWS Security Hub member account.
+ [![View Template](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/view-template.png)](https://solutions-reference.s3.amazonaws.com/automated-security-response-on-aws/latest/automated-security-response-member-roles.template) **automated-security-response-member-roles.template** - Defines the remediation roles needed in each AWS Security Hub member account.
 
 ## Member accounts
 <a name="member-accounts"></a>
 
- [![View Template](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/view-template.png)](https://solutions-reference.s3.amazonaws.com/automated-security-response-on-aws/latest/automated-security-response-member.template) **automated-security-response-member.template** - Use this template after you set up the core solution to install AWS Systems Manager automation runbooks and permissions in each of your AWS Security Hub member accounts (including the admin account). This template allows you to choose which security standard playbooks to install.
+ [![View Template](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/view-template.png)](https://solutions-reference.s3.amazonaws.com/automated-security-response-on-aws/latest/automated-security-response-member.template) **automated-security-response-member.template** - Use this template after you set up the core solution to install AWS Systems Manager automation runbooks and permissions in each of your AWS Security Hub member accounts (including the admin account). This template allows you to choose which security standard playbooks to install.
 
 The `automated-security-response-member.template` installs the following templates based on your selections:
 
@@ -67,8 +67,8 @@ The `automated-security-response-member.template` installs the following templat
 
 Use one of the following templates to integrate with your ticketing system.
 
- [![View Template](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/view-template.png)](https://solutions-reference.s3.amazonaws.com/automated-security-response-on-aws/latest/blueprints/JiraBlueprintStack.template) **JiraBlueprintStack.template** - Deploy if you use Jira as your ticketing system.
+ [![View Template](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/view-template.png)](https://solutions-reference.s3.amazonaws.com/automated-security-response-on-aws/latest/blueprints/JiraBlueprintStack.template) **JiraBlueprintStack.template** - Deploy if you use Jira as your ticketing system.
 
- [![View Template](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/view-template.png)](https://solutions-reference.s3.amazonaws.com/automated-security-response-on-aws/latest/blueprints/ServiceNowBlueprintStack.template) **ServiceNowBlueprintStack.template** - Deploy if you use ServiceNow as your ticketing system.
+ [![View Template](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/view-template.png)](https://solutions-reference.s3.amazonaws.com/automated-security-response-on-aws/latest/blueprints/ServiceNowBlueprintStack.template) **ServiceNowBlueprintStack.template** - Deploy if you use ServiceNow as your ticketing system.
 
 If you want to integrate a different external ticketing system, you can use either of these stacks as blueprint to understand how to implement your own custom integration.

@@ -9,7 +9,7 @@ The topics in this section provide an overview of the Amazon Chime SDK voice ana
 
 This diagram provides a high-level view of how data flows through voice analytics.
 
-![A diagram showing the high-level data flow through voice analytics.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/va-architecture-kvs.png)
+![A diagram showing the high-level data flow through voice analytics.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/va-architecture-kvs.png)
 
 In the diagram:
 

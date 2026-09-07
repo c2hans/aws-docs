@@ -16,7 +16,7 @@ A task is considered open from the time that it is scheduled until it is closed.
 
 The following diagram shows how workflow and decision timeouts are related to the lifetime of a workflow:
 
-![A workflow's lifetime, with timeouts](http://docs.aws.amazon.com/amazonswf/latest/developerguide/images/workflow_timeouts.png)
+![A workflow's lifetime, with timeouts](https://docs.aws.amazon.com/amazonswf/latest/developerguide/images/workflow_timeouts.png)
 
 There are two timeout types that are relevant to workflow and decision tasks:
 + **Workflow Start to Close (`timeoutType: START_TO_CLOSE`)** – This timeout specifies the maximum time that a workflow execution can take to complete. It is set as a default during workflow registration, but it can be overridden with a different value when the workflow is started. If this timeout is exceeded, Amazon SWF closes the workflow execution and adds an [event](http://docs.aws.amazon.com/amazonswf/latest/apireference/API_HistoryEvent.html) of type [WorkflowExecutionTimedOut](http://docs.aws.amazon.com/amazonswf/latest/apireference/API_WorkflowExecutionTimedOutEventAttributes.html) to the workflow execution history. In addition to the `timeoutType`, the event attributes specify the `childPolicy` that is in effect for this workflow execution. The child policy specifies how child workflow executions are handled if the parent workflow execution times out or otherwise terminates. For example, if the `childPolicy` is set to TERMINATE, then child workflow executions will be terminated. Once a workflow execution has timed out, you can't take any action on it other than visibility calls.
@@ -27,7 +27,7 @@ There are two timeout types that are relevant to workflow and decision tasks:
 
 The following diagram shows how timeouts are related to the lifetime of an activity task:
 
-![A task's lifetime, with timeouts](http://docs.aws.amazon.com/amazonswf/latest/developerguide/images/activity_timeouts.png)
+![A task's lifetime, with timeouts](https://docs.aws.amazon.com/amazonswf/latest/developerguide/images/activity_timeouts.png)
 
 There are four timeout types that are relevant to activity tasks:
 + **Activity Task Start to Close (`timeoutType: START_TO_CLOSE`)** – This timeout specifies the maximum time that an activity worker can take to process a task after the worker has received the task. Attempts to close a timed out activity task using [RespondActivityTaskCanceled](http://docs.aws.amazon.com/amazonswf/latest/apireference/API_RespondActivityTaskCanceled.html), [RespondActivityTaskCompleted](http://docs.aws.amazon.com/amazonswf/latest/apireference/API_RespondActivityTaskCompleted.html), and [RespondActivityTaskFailed](http://docs.aws.amazon.com/amazonswf/latest/apireference/API_RespondActivityTaskFailed.html) will fail.

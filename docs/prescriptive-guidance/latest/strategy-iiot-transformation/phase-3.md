@@ -44,7 +44,7 @@ To create a unified IT and OT data backbone in your blueprint, you need a functi
 
 The *building blocks* of an IIoT digital transformation journey are the various functional layers, considerations, and use cases that comprise the blueprint. The following image shows the high-level repeatable and reusable functional building blocks of a blueprint.
 
-![The high-level building blocks of the conceptual architecture in a blueprint.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-iiot-transformation/images/guide-img/2cc5efa2-2b32-4bb7-bd9d-d0a92a28e1ac/images/58b88f26-7653-4e44-a8a4-d95b0f220a6b.png)
+![The high-level building blocks of the conceptual architecture in a blueprint.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-iiot-transformation/images/guide-img/2cc5efa2-2b32-4bb7-bd9d-d0a92a28e1ac/images/58b88f26-7653-4e44-a8a4-d95b0f220a6b.png)
 
 The following are the layers of a blueprint:
 + **Data ingestion** – This edge layer collects data from various sources in your on-premises infrastructure or cloud environment. Typical IT/OT data sources might include telemetry data from supervisory control and data acquisition (SCADA) systems, distributed control systems (DCS), PLCs, secondary sensors, manufacturing execution systems (MES), software as a service (SaaS) and legacy applications, enterprise resource planning (ERP) systems, customer relationship management (CRM) systems, various supply chain systems, and data historians.

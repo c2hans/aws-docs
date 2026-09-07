@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modern-data
 
 Data preparation and cleaning is one of the most important yet most time-consuming stages of the data lifecycle. The following diagram shows how the data preparation and cleaning stage fits into the data engineering automation and access control lifecycle.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/modern-data-centric-use-cases/images/guide-img/058e3d2f-f726-4dc0-989b-0f15dcd3bc33/images/7188e577-3f8c-4520-bfe3-a383d5410673.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/modern-data-centric-use-cases/images/guide-img/058e3d2f-f726-4dc0-989b-0f15dcd3bc33/images/7188e577-3f8c-4520-bfe3-a383d5410673.png)
 
 Here are some examples of data preparation or cleaning:
 + Mapping text columns to codes
@@ -35,6 +35,6 @@ Existing customers will be able to use Amazon QLDB until end of support on 07/31
 + [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) stores key-value or document data in a NoSQL database.
 + [Amazon Redshift](https://aws.amazon.com/redshift/) stores workloads for structured data in a data warehouse.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/modern-data-centric-use-cases/images/guide-img/058e3d2f-f726-4dc0-989b-0f15dcd3bc33/images/4e689460-233a-457a-b330-9cd7290a44a7.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/modern-data-centric-use-cases/images/guide-img/058e3d2f-f726-4dc0-989b-0f15dcd3bc33/images/4e689460-233a-457a-b330-9cd7290a44a7.png)
 
 By using the right service with the correct configurations, you can store your data in the most efficient and effective way. This minimizes the effort involved in data retrieval.

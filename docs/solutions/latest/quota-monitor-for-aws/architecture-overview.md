@@ -12,7 +12,7 @@ This section provides a reference implementation architecture diagram for the co
 
 Deploying this solution with the default parameters deploys the following components in your AWS account.
 
-![Image depicts an architecture diagram for Quota Monitor for AWS.](http://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/images/quota-monitor-architecture-diagram.png)
+![Image depicts an architecture diagram for Quota Monitor for AWS.](https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/images/quota-monitor-architecture-diagram.png)
 
 Quota Monitor for AWS includes a **hub template** that you deploy in your monitoring account. Additionally, the solution provides a **Service Quotas spoke template** and a **Trusted Advisor spoke template**. You must deploy each of these templates in the member accounts that need quota monitoring. The solution won’t deploy the **Trusted Advisor spoke template** if the account doesn’t have a support plan that includes the Trusted Advisor service.
 

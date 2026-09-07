@@ -8,10 +8,10 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/adminguide/crea
 Advanced configuration allows you to customize your instance by setting your own parameters. To create an AWS Supply Chain instance using an advanced configuration of preset parameters, follow these steps.
 
 1. Select **Edit in advanced setup**.
-![Interface for creating Supply Chain application with options to create or edit in advanced setup.](http://docs.aws.amazon.com/connect-decisions/legacy/adminguide/images/create-instance.png)
+![Interface for creating Supply Chain application with options to create or edit in advanced setup.](https://docs.aws.amazon.com/connect-decisions/legacy/adminguide/images/create-instance.png)
 
    The **Instance properties** page will appear.
-![Instance properties form with fields for AWS region, instance name, description, and KMS key.](http://docs.aws.amazon.com/connect-decisions/legacy/adminguide/images/instance-properties.png)
+![Instance properties form with fields for AWS region, instance name, description, and KMS key.](https://docs.aws.amazon.com/connect-decisions/legacy/adminguide/images/instance-properties.png)
 
 1. Enter the following on the **Instance properties** page:
    + **Name** – Enter an instance name.

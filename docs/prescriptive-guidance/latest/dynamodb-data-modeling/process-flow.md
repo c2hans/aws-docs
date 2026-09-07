@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-da
 
 We recommend the following process when modeling data using Amazon DynamoDB. The steps are discussed in detail [later in this guide](steps.md).
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-data-modeling/images/guide-img/225c2600-95f1-4c8c-9e23-419bc7ae3c55/images/8b50f5f7-c678-4d07-9ef2-a1feedca427a.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-data-modeling/images/guide-img/225c2600-95f1-4c8c-9e23-419bc7ae3c55/images/8b50f5f7-c678-4d07-9ef2-a1feedca427a.png)
 
 ## RACI matrix
 <a name="raci-matrix"></a>

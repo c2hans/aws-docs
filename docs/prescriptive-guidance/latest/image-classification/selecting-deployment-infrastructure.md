@@ -23,7 +23,7 @@ The highest-effort solutions are more likely to have lower infrastructure costs.
 
 A common deployment pattern is to have an API gateway and Lambda function in front of an endpoint call, as shown in the following image. This is preferable in situations where the inference response from Amazon Rekognition needs further processing before it is sent back to the calling client through the Amazon API Gateway.
 
-![Common deployment pattern](http://docs.aws.amazon.com/prescriptive-guidance/latest/image-classification/images/guide-img/3c71b76a-1e6e-4c69-b783-1676c6b7fb2d/images/66a02f94-aa73-4163-9189-beca76f439be.png)
+![Common deployment pattern](https://docs.aws.amazon.com/prescriptive-guidance/latest/image-classification/images/guide-img/3c71b76a-1e6e-4c69-b783-1676c6b7fb2d/images/66a02f94-aa73-4163-9189-beca76f439be.png)
 
 However, situations where processing is quite heavy may necessitate a different workflow to reduce the network latency penalty resulting from the processing Lambda function. For very low latency, the Lambda function can be omitted at the cost of forcing the Amazon Rekognition API in the API Gateway call.
 

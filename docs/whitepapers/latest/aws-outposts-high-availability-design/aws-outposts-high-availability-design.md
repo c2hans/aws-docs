@@ -38,7 +38,7 @@ Publication date: **August 12, 2021** ([Document history](document-revisions.md)
 
  Perhaps the best conceptual model for AWS Outposts is to think of unplugging one or more racks from a data center in an AZ of an AWS Region, and installing it in your own data center or colocation facility. You roll the racks from the AZ data center to your data center. You then plug the racks into [anchor points](https://docs.aws.amazon.com/outposts/latest/userguide/region-connectivity.html) in the AZ data center with a (very) long cable so that the racks continue to function as a part of the AWS Region. You also plug them into your local network to provide low latency connectivity between your on-premises networks and the workloads running on those racks. This gives you the operational and API consistency of the AWS Cloud, while keeping your workload local.
 
-![Diagram showing an Outpost deployed in a customer data center and connected back to its anchor AZ and parent Region](http://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/outpost-deployed-in-customer-data-center.png)
+![Diagram showing an Outpost deployed in a customer data center and connected back to its anchor AZ and parent Region](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/outpost-deployed-in-customer-data-center.png)
 
  The Outpost functions as an extension of the AZ where it is anchored. AWS operates, monitors, and manages AWS Outposts infrastructure as part of the AWS Region. Instead of a very long physical cable, an Outpost connects back to its parent Region through a set of encrypted VPN tunnels called the Service Link.
 
@@ -69,7 +69,7 @@ Publication date: **August 12, 2021** ([Document history](document-revisions.md)
 
  With Outposts, you are responsible for providing resilient power and network connectivity to the Outpost racks to meet your availability requirements for workloads running on Outposts.
 
-![Diagram showing the AWS Shared Responsibility Model updated for AWS Outposts](http://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/aws-shared-responsibility-model.png)
+![Diagram showing the AWS Shared Responsibility Model updated for AWS Outposts](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/aws-shared-responsibility-model.png)
 
  With AWS Outposts, you are responsible for the physical security and access controls of the data center environment. You must provide sufficient power, space, and cooling to keep the Outpost operational and network connections to connect the Outpost back to the Region.
 
@@ -79,7 +79,7 @@ Publication date: **August 12, 2021** ([Document history](document-revisions.md)
 
  A central power shelf in each Outposts rack converts from AC to DC power and supplies power to servers in the rack via a bus bar architecture. With the bus bar architecture, half the power supplies in the rack can fail and all the servers will continue to run uninterrupted.
 
-![Photographs showing AWS Outposts AC-to-DC power supplies and bus bar power distribution](http://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/ac-dc-supplies-and-bus-bar-distribution1.png)![Photographs showing AWS Outposts AC-to-DC power supplies and bus bar power distribution](http://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/ac-dc-supplies-and-bus-bar-distribution2.png)
+![Photographs showing AWS Outposts AC-to-DC power supplies and bus bar power distribution](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/ac-dc-supplies-and-bus-bar-distribution1.png)![Photographs showing AWS Outposts AC-to-DC power supplies and bus bar power distribution](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/ac-dc-supplies-and-bus-bar-distribution2.png)
 
  The network switches and cabling within and between the Outposts racks are also fully redundant. A fiber patch panel provides connectivity between an Outpost rack and the on-premises network and serves as the demarcation point between the customer-managed data center environment and the managed AWS Outposts environment.
 

@@ -53,7 +53,7 @@ The following table highlights important components regarding vCPU, memory, and 
 
 The following diagram shows an example architecture for a hybrid deployment of Active Directory.
 
-![Architecture for hybrid deployment of Active Directory](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/107146a1-157e-4295-8bb2-d4c5457285ae.png)
+![Architecture for hybrid deployment of Active Directory](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/107146a1-157e-4295-8bb2-d4c5457285ae.png)
 
 As the diagram shows, you typically have an on-premises footprint and then expand this into the AWS Cloud. In the initial phases of a migration, you typically won't have all your users and servers deployed in AWS. That's why it's important to initially deploy a smaller sized footprint to save money on the migration efforts.
 

@@ -18,7 +18,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-static-websites
 
  You can also build out a custom analytics solution using AWS Lambda and Amazon OpenSearch Service. AWS Lambda functions can be [hooked to an Amazon S3 bucket](https://docs.aws.amazon.com/lambda/latest/dg/with-s3.html) to detect when new log files are available for processing. AWS Lambda function code can process the log files and send the data to an Amazon OpenSearch Service cluster. Users can then analyze the logs by querying OpenSearch Service or using the Kibana visual dashboard. Both AWS Lambda and OpenSearch Service are managed services, and there are no servers to manage.
 
-![A diagram that depicts using AWS Lambda to send logs from Amazon S3 to Amazon OpenSearch Service .](http://docs.aws.amazon.com/whitepapers/latest/build-static-websites-aws/images/lambda-logs.png)
+![A diagram that depicts using AWS Lambda to send logs from Amazon S3 to Amazon OpenSearch Service .](https://docs.aws.amazon.com/whitepapers/latest/build-static-websites-aws/images/lambda-logs.png)
 
 ## Archiving and purging logs
 <a name="archiving-and-purging-logs"></a>
@@ -35,4 +35,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-static-websites
 
  Data tiering is illustrated in the following figure.
 
-![A diagram that depicts data tiering using Amazon S3 lifecycle policies .](http://docs.aws.amazon.com/whitepapers/latest/build-static-websites-aws/images/s3-data-tiering.png)
+![A diagram that depicts data tiering using Amazon S3 lifecycle policies .](https://docs.aws.amazon.com/whitepapers/latest/build-static-websites-aws/images/s3-data-tiering.png)

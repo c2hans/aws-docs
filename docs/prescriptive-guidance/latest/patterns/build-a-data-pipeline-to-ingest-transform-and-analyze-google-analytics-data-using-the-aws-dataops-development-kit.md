@@ -44,7 +44,7 @@ This pattern describes how to build a data pipeline to ingest, transform, and an
 
 The following diagram shows the event-driven process that ingests, transforms, and analyzes Google Analytics data.
 
-![Ingesting, transforming, and analyzing Google Analytics data with AWS services.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/edf40222-2867-4d4a-9153-ab29785b6662/images/8c38b472-153b-4497-982c-8efb97d2f7a5.png)
+![Ingesting, transforming, and analyzing Google Analytics data with AWS services.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/edf40222-2867-4d4a-9153-ab29785b6662/images/8c38b472-153b-4497-982c-8efb97d2f7a5.png)
 
 The diagram shows the following workflow:
 

@@ -1410,4 +1410,4 @@ images.topic.AddSubscription(new SqsSubscription(queue));
 
 The following video provides a comprehensive overview of CDK constructs, and explains how you can use them in your CDK apps.
 
-[![AWS Videos](http://img.youtube.com/vi/PzU-i0rJPGw?rel=0/0.jpg)](http://www.youtube.com/watch?v=PzU-i0rJPGw?rel=0)
+[![AWS Videos](https://img.youtube.com/vi/PzU-i0rJPGw?rel=0/0.jpg)](https://www.youtube.com/watch?v=PzU-i0rJPGw?rel=0)

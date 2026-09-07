@@ -19,7 +19,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/patterns-for-ingestin
 
  The following diagram depicts the architecture of the solution where data from any of the SaaS applications can be ingested into Amazon S3 using AWS Glue. Once the data is ingested in Amazon S3, you can catalog it using AWS AWS Glue Data Catalog, and start consuming this data using SQL in Amazon Athena.
 
-![This is a diagram that shows data from Salesforce, Google BigQuery, and Data Warehouse being ingested into Amazon S3 using AWS Glue](http://docs.aws.amazon.com/whitepapers/latest/patterns-for-ingesting-saas-data-into-aws-data-lakes/images/aws-glue-based-data-ingestion-pattern.png)
+![This is a diagram that shows data from Salesforce, Google BigQuery, and Data Warehouse being ingested into Amazon S3 using AWS Glue](https://docs.aws.amazon.com/whitepapers/latest/patterns-for-ingesting-saas-data-into-aws-data-lakes/images/aws-glue-based-data-ingestion-pattern.png)
 
 ### Usage patterns
 <a name="usage-patterns-1"></a>

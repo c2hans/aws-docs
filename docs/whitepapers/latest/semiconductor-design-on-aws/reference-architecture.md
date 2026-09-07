@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/semiconductor-design-
 
 The previous section provided a path to migration. This section provides an annotated reference architecture diagram that reinforces these concepts. For a deep dive into the architecture and specific AWS Services that should be used, refer to [Run Semiconductor Design Workflows on AWS](https://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-workflows-on-aws/run-semiconductor-design-workflows-on-aws.html).
 
-![Reference architecture diagram depicting semiconductor design on AWS.](http://docs.aws.amazon.com/whitepapers/latest/semiconductor-design-on-aws/images/semiconductor_ra.png)
+![Reference architecture diagram depicting semiconductor design on AWS.](https://docs.aws.amazon.com/whitepapers/latest/semiconductor-design-on-aws/images/semiconductor_ra.png)
 
 *Reference architecture diagram depicting semiconductor design on AWS*
 

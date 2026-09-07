@@ -9,4 +9,4 @@ source_url: https://docs.aws.amazon.com/connect-participant/latest/APIReference/
 
 Use the Connect Customer Participant Service to manage participants (for example, agents, customers, and managers listening in), and to send messages and events within a chat contact. The APIs in the service enable the following: sending chat messages, attachment sharing, managing a participant's connection state and message events, and retrieving chat transcripts.
 
-This document was last published on September 4, 2026.
+This document was last published on September 7, 2026.

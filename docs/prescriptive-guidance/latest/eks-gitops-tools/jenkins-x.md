@@ -41,7 +41,7 @@ For more information, see the [Jenkins X documentation](https://jenkins-x.io/v3/
 
 The following diagram illustrates a GitOps-driven CD workflow that uses Jenkins X. For detailed information, see the [Jenkins X documentation](https://jenkins-x.io/v3/about/overview/).
 
-![Jenkins X architecture and workflow on AWS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/eks-gitops-tools/images/guide-img/b6f49161-b2c5-42aa-b1d8-b0781836edb7/images/0038b3b0-9652-4e04-b03b-bb67d53d3e9b.png)
+![Jenkins X architecture and workflow on AWS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-gitops-tools/images/guide-img/b6f49161-b2c5-42aa-b1d8-b0781836edb7/images/0038b3b0-9652-4e04-b03b-bb67d53d3e9b.png)
 
 where:
 + **Step 1: Pull request (PR) merge**. A developer creates a pull request that includes changes to Kubernetes manifests, Helm charts, or application code that's stored in a Git repository. After review and approval, the PR is merged into the main branch and updates the desired state in source control.

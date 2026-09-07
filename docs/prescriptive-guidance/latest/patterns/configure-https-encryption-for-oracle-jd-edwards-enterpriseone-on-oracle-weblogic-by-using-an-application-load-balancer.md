@@ -34,11 +34,11 @@ The process  described in this pattern configures encryption between the browse
 
 There are multiple approaches to perform SSL offloading. This pattern uses an Application Load Balancer and Oracle HTTP Server (OHS), as illustrated in the following diagram.
 
-![SSL offloading with a load balancer and OHS](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c62b976b-31e4-42ca-b7e8-13f7c9d9a187/images/2ae2d0eb-b9f3-41f8-ad86-9af3aade7072.png)
+![SSL offloading with a load balancer and OHS](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c62b976b-31e4-42ca-b7e8-13f7c9d9a187/images/2ae2d0eb-b9f3-41f8-ad86-9af3aade7072.png)
 
 The following diagram shows the JD Edwards EnterpriseOne, Application Load Balancer, and Java Application Server (JAS) JVM layout.
 
-![EnterpriseOne, load balancer, and JAS JVM layout](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c62b976b-31e4-42ca-b7e8-13f7c9d9a187/images/72ea35b0-2907-48b3-aeb7-0c5d9a3b831b.png)
+![EnterpriseOne, load balancer, and JAS JVM layout](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c62b976b-31e4-42ca-b7e8-13f7c9d9a187/images/72ea35b0-2907-48b3-aeb7-0c5d9a3b831b.png)
 
 ## Tools
 <a name="configure-https-encryption-for-oracle-jd-edwards-enterpriseone-on-oracle-weblogic-by-using-an-application-load-balancer-tools"></a>

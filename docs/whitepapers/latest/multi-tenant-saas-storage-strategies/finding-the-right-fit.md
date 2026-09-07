@@ -16,7 +16,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-sto
 
  If you were to put the three partitioning models—silo, bridge, and pool—on a spectrum, you’d see the natural tensions associated with adopting any one of these strategies. The qualities that are listed as strengths for one model are often represented as weaknesses in another model. For example, the tenets and value system of the silo model are often in opposition to those of the pool model.
 
-![A diagram depicting the partitioning model tradeoffs.](http://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-storage-strategies/images/partitioning-tradeoffs.png)
+![A diagram depicting the partitioning model tradeoffs.](https://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-storage-strategies/images/partitioning-tradeoffs.png)
 
  The preceding figure highlights these competing tenets. Across the top of the diagram, you’ll see the three partitioning models represented. On the left are the pros and cons associated with the silo model. On the right, we provide similar lists for the pool model. The bridge model is a bit of a hybrid of these considerations and, as such, represents a mix of the pros and cons shown at the extremes.
 
@@ -64,7 +64,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-sto
 
  One possible compromise is to build a solution that fully supports pooled storage as your foundation. Then, you can carve out a separate database for those tenants that demand a siloed storage solution. The following figure provides an example of this approach in action.
 
-![A diagram depicting hybrid silo/pool storage .](http://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-storage-strategies/images/hybrid-solo-pool-storage.png)
+![A diagram depicting hybrid silo/pool storage .](https://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-storage-strategies/images/hybrid-solo-pool-storage.png)
 
  Here, we have two tenants (Tenant 1 and Tenant 2) that are leveraging a silo model, and the remaining tenants are running in a pooled storage model. This is magically abstracted away by a data access layer that hides developers from the tenant’s underlying storage.
 

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/u
 
 The **Update Code** dialog box in the AWS Toolkit for JetBrains is displayed whenever you update an AWS Lambda function.
 
-![The Update Code dialog box.](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/sam-update-code.png)
+![The Update Code dialog box.](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/sam-update-code.png)
 
 The **Update Code** dialog box contains the following items:
 

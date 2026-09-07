@@ -11,6 +11,6 @@ AWS can also be leveraged. to implement the local central office (CO) or distrib
 
 When it’s time to implement the 5G network on AWS, AWS CI/CD tools, which are introduced in the following sections of this whitepaper, can facilitate the full automation of deployment, upgrade, and lifecycle management of 5G network functions.
 
-![A diagram depicting 5G network end-to-end architecture.](http://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_on_aws/images/cicd_5g5.png)
+![A diagram depicting 5G network end-to-end architecture.](https://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_on_aws/images/cicd_5g5.png)
 
 *5G network E2E architecture*

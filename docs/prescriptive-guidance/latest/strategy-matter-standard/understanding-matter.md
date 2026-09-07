@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ma
 # Understanding the Matter standard
 <a name="understanding-matter"></a>
 
-![Matter administrators managing Matter-compatible devices](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-matter-standard/images/guide-img/b77bbd58-038f-410c-901d-a12fcd0e950b/images/4b747b4c-20c7-4079-8b78-a53c95b60796.png)
+![Matter administrators managing Matter-compatible devices](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-matter-standard/images/guide-img/b77bbd58-038f-410c-901d-a12fcd0e950b/images/4b747b4c-20c7-4079-8b78-a53c95b60796.png)
 
 ## Matter protocol
 <a name="matter-protocol"></a>

@@ -127,7 +127,7 @@ Pricing is based on on-demand hourly pricing in the `us-east-1` Region.
 
 The following chart compares the prices of M series instances.
 
-![M series price comparison](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/82f42f70-6854-466e-a828-609458c082b2.png)
+![M series price comparison](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/82f42f70-6854-466e-a828-609458c082b2.png)
 
 ### Understand price performance differences across EC2 generations
 <a name="understand-price-performance-differences-across-ec2-generations.89cb41bf-1ed6-525d-af33-0ee92facc55a"></a>
@@ -147,7 +147,7 @@ Pricing is based on on-demand hourly pricing in the `us-east-1` Region.
 
 The following chart compares the costs of the different generations of C series instances.
 
-![C series price comparison](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/91e37e71-34f7-4afd-ae96-c1106dcb34c2.png)
+![C series price comparison](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/91e37e71-34f7-4afd-ae96-c1106dcb34c2.png)
 
 However, the 6th generation of instances are the same price as the 5th generation, as the following table shows.
 

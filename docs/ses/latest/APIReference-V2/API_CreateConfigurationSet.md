@@ -24,6 +24,9 @@ Content-type: application/json
       "SendingPoolName": "{{string}}",
       "TlsPolicy": "{{string}}"
    },
+   "MessageSecurityOptions": {
+      "SigningScheme": { ... }
+   },
    "ReputationOptions": {
       "LastFreshStart": {{number}},
       "ReputationMetricsEnabled": {{boolean}}
@@ -87,6 +90,11 @@ Required: Yes
  ** [DeliveryOptions](#API_CreateConfigurationSet_RequestSyntax) **   <a name="SES-CreateConfigurationSet-request-DeliveryOptions"></a>
 An object that defines the dedicated IP pool that is used to send emails that you send using the configuration set.
 Type: [DeliveryOptions](API_DeliveryOptions.md) object
+Required: No
+
+ ** [MessageSecurityOptions](#API_CreateConfigurationSet_RequestSyntax) **   <a name="SES-CreateConfigurationSet-request-MessageSecurityOptions"></a>
+The message security options to apply to the configuration set, such as the signing scheme used for messages that you send with the configuration set.
+Type: [MessageSecurityOptions](API_MessageSecurityOptions.md) object
 Required: No
 
  ** [ReputationOptions](#API_CreateConfigurationSet_RequestSyntax) **   <a name="SES-CreateConfigurationSet-request-ReputationOptions"></a>

@@ -15,7 +15,7 @@ You can also customize how Git panel runs commands and interacts with repositori
 
 Pause over the information icons to read brief descriptions of the settings.
 
-![Displaying the Git panel interface](http://docs.aws.amazon.com/cloud9/latest/user-guide/images/git-preferences.png)
+![Displaying the Git panel interface](https://docs.aws.amazon.com/cloud9/latest/user-guide/images/git-preferences.png)
 
 **Note**
 You can access detailed documentation on the Git commands listed from the official Git site: [https://git-scm.com/doc](https://git-scm.com/doc).
@@ -25,7 +25,7 @@ You can access detailed documentation on the Git commands listed from the offici
 
 You access the options on the **Git panel** menu by choosing the symbol opposite the repository's name.
 
-![Displaying the Git panel interface](http://docs.aws.amazon.com/cloud9/latest/user-guide/images/git-menu-access.png)
+![Displaying the Git panel interface](https://docs.aws.amazon.com/cloud9/latest/user-guide/images/git-menu-access.png)
 
 **Git panel menu**
 
@@ -64,7 +64,7 @@ You access the options on the **Git panel** menu by choosing the symbol opposite
 
  You can also access some supported Git command that aren't available in the Git panel menu by typing "git" in the search box:
 
-![Interface options for initializing and cloning a Git repository](http://docs.aws.amazon.com/cloud9/latest/user-guide/images/git-filter.png)
+![Interface options for initializing and cloning a Git repository](https://docs.aws.amazon.com/cloud9/latest/user-guide/images/git-filter.png)
 
 The following table provides a description of selected Git commands that you can access this way.
 

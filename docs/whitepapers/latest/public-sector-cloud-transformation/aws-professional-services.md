@@ -16,7 +16,7 @@ The AWS Professional Service offering uses a unique methodology based on Amazonâ
 
 AWS helps customers achieve specific outcomes related to cloud adoption. Each offering delivers a set of activities, best practices, and documentation reflecting AWS experience in supporting hundreds of customers in their journey to the AWS Cloud.
 
-![A graphic showing the benefits of AWS Professional Services.](http://docs.aws.amazon.com/whitepapers/latest/public-sector-cloud-transformation/images/cloud-transformation2.png)
+![A graphic showing the benefits of AWS Professional Services.](https://docs.aws.amazon.com/whitepapers/latest/public-sector-cloud-transformation/images/cloud-transformation2.png)
 
  *AWS Professional Services, accelerated business outcomes *
 

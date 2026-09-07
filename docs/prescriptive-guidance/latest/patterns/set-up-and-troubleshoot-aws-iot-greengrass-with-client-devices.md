@@ -49,7 +49,7 @@ This pattern describes how to install and configure these required components, a
 
 The following diagram shows the solution architecture for this pattern.
 
-![Solution architecture for setting up AWS IoT Greengrass with client devices](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a340e6ea-dcfa-42a4-a370-c16ee08a6842/images/0656c5ae-d979-4cf7-be92-a46fa81cab0d.png)
+![Solution architecture for setting up AWS IoT Greengrass with client devices](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a340e6ea-dcfa-42a4-a370-c16ee08a6842/images/0656c5ae-d979-4cf7-be92-a46fa81cab0d.png)
 
 The architecture includes:
 + Two client devices. Each device contains a private key, a device certificate, and a root certificate authority (CA) certificate. The AWS IoT Device SDK, which contains an MQTT client, is also installed on each client device.
@@ -144,13 +144,13 @@ This section provides additional information about the communications between th
 
 The MQTT broker listens on port 8883 in the core device for a TLS client connection attempt. The following illustration shows an example MQTT broker’s server certificate.
 
-![Example of MQTT broker server certificate](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a340e6ea-dcfa-42a4-a370-c16ee08a6842/images/b2c324a1-60cd-4194-80e7-e5184662146a.png)
+![Example of MQTT broker server certificate](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a340e6ea-dcfa-42a4-a370-c16ee08a6842/images/b2c324a1-60cd-4194-80e7-e5184662146a.png)
 
 The example certificate displays the following details:
 + The certificate is issued by the AWS IoT Greengrass Core CA, which is local and specific to the core device; that is, it acts as a local CA.
 + This certificate is automatically rotated every week by the client auth component as shown in the following illustration. You can set this interval in the client auth component configuration.
 
-![Rotating the MQTT broker's server certificate](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a340e6ea-dcfa-42a4-a370-c16ee08a6842/images/65bcdc5c-a71c-4f52-adcd-21910fabfc2a.png)
+![Rotating the MQTT broker's server certificate](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a340e6ea-dcfa-42a4-a370-c16ee08a6842/images/65bcdc5c-a71c-4f52-adcd-21910fabfc2a.png)
 
 + The subject alternative name (SAN) plays a critical role in the server name verification on the TLS client end. It helps the TLS client ensure that it connects to the correct server and helps avoid man-in-the-middle attacks during TLS session setup. In the example certificate, the SAN field indicates that this server is listening on localhost (the local Unix domain socket), and the network interface has the IP address 192.168.1.12.
 
@@ -160,4 +160,4 @@ Th IP detector component in AWS IoT Greengrass ensures that the correct IP addre
 
 The certificate in the example is signed by the AWS IoT Greengrass device acting as a local CA. The TLS client (MQTT client) isn’t aware of this CA, so we must provide a CA certificate that looks like the following.
 
-![Example CA certificate](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a340e6ea-dcfa-42a4-a370-c16ee08a6842/images/b08b3bcb-9e12-4f5a-9204-cf65ea32902f.png)
+![Example CA certificate](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a340e6ea-dcfa-42a4-a370-c16ee08a6842/images/b08b3bcb-9e12-4f5a-9204-cf65ea32902f.png)

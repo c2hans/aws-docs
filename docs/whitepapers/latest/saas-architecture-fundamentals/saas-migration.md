@@ -44,7 +44,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
 
  Now, as we look at migration, you’ll see that these same shared services play a key role in any migration story. The following diagram provides a conceptual view of the migration landscape.
 
-![A diagram that depcits migrating to SaaS.](http://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fundamentals/images/migrating-to-saas.png)
+![A diagram that depcits migrating to SaaS.](https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fundamentals/images/migrating-to-saas.png)
 
  This diagram represents the target experience for any migration path. It includes all the same shared services that were described previously. In the middle is a placeholder for your application.
 

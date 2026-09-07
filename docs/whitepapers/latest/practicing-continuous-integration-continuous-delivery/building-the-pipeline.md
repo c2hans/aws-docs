@@ -18,11 +18,11 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous
 
  Amazon CodeCatalyst [workflows](https://docs.aws.amazon.com/codecatalyst/latest/userguide/workflows-concepts.html) are continuous integration and continuous delivery (CI/CD) pipelines that enable you to easily build, test and deploy applications. CodeCatalyst Workflows help you reliably deliver high-quality application updates frequently, quickly and securely. CodeCatalyst uses a visual editor or YAML to quickly assemble and configure actions to compose workflows that automate your CI/CD pipeline, test reporting and other manual processes. You can get started with a new project from scratch or by using a blueprint from a library of blueprints for popular cloud architecture and application types. if you use a blueprint, a default workflow will be created from the main branch of your repository, that you can then customize. To create a new workflow, once you launch a new project in Amazon CodeCatalyst, navigate to CI/CD > Workflows and create a new workflow.
 
-![Screenshot showing create workflow.](http://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/create-workflow.png)
+![Screenshot showing create workflow.](https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/create-workflow.png)
 
  The following is an example of a workflow that includes actions to build, test and deploy backend and frontend code.
 
-![Screenshot showing an example workflow.](http://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/example-workflow.png)
+![Screenshot showing an example workflow.](https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/example-workflow.png)
 
  Amazon CodeCatalyst supports many purpose [build actions](https://docs.aws.amazon.com/codecatalyst/latest/userguide/workflows-actions-types.html) developed by AWS as well as third parties such as GitHub Actions. To deploy an application or resource through CodeCatalyst, you can specify a deploy action inside the workflow. A *deploy action* is a workflow building block that defines what you want to deploy, where you want to deploy it, and how you want to deploy it (for example, using a blue/green scheme). Using deploy actions within a workflow, allows for traceability, automatic rollbacks, and monitoring of your deployment as it progresses through the various stages of your workflow and deployment.
 
@@ -30,7 +30,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous
 
 The steps of AWS CodePipeline map directly to the [source, build, staging, and production CI/CD stages](https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/testing-stages-in-continuous-integration-and-continuous-delivery.html). While continuous delivery is desirable, you could start out with a simple two-step pipeline that checks the source repository and performs a build action:
 
-![Screenshot of AWS CodePipeline — source and build stages](http://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/source-and-build.png)
+![Screenshot of AWS CodePipeline — source and build stages](https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/source-and-build.png)
 
  For AWS CodePipeline, the source stage can accept inputs from GitHub, AWS CodeCommit, Atlassian Bitbucket, and Amazon Simple Storage Service (Amazon S3). Automating the build process is a critical first step for implementing continuous delivery and moving toward continuous deployment. Eliminating human involvement in producing build artifacts removes the burden from your team, minimizes errors introduced by manual packaging, and allows you to start packaging consumable artifacts more often.
 
@@ -38,11 +38,11 @@ The steps of AWS CodePipeline map directly to the [source, build, staging, and p
 
  For example, in the following build stage, three actions (unit testing, code style checks, and code metrics collection) run in parallel. Using AWS CodeBuild, these steps can be added as new projects without any further effort in building or installing build servers to handle the load.
 
-![Screenshot of AWS CodePipeline — build functionality](http://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/build-functionality.png)
+![Screenshot of AWS CodePipeline — build functionality](https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/build-functionality.png)
 
  The source and build stages shown in the figure *AWS CodePipeline — source and build stages*, along with supporting processes and automation, support your team’s transition toward a Continuous Integration. At this level of maturity, developers need to regularly pay attention to build and test results. They need to grow and maintain a healthy unit test base as well. This, in turn, bolsters the entire team’s confidence in the CI/CD pipeline and furthers its adoption.
 
-![Screenshot showing AWS CodePipeline stages](http://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/stages.png)
+![Screenshot showing AWS CodePipeline stages](https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/stages.png)
 
 ## Continuous delivery pipeline
 <a name="continuous-delivery-pipeline"></a>
@@ -59,7 +59,7 @@ The steps of AWS CodePipeline map directly to the [source, build, staging, and p
 
  After your team successfully automates the deployment of the application, deployment stages can be expanded with various tests. For example you can add other out-of-the-box integrations with services like Ghost Inspector, Runscope, and others as shown in the following figure.
 
-![Screenshot showing AWS CodePipeline—code tests in deployment stages](http://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/code-tests.png)
+![Screenshot showing AWS CodePipeline—code tests in deployment stages](https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/code-tests.png)
 
 ## Adding Lambda actions
 <a name="adding-lambda-actions"></a>
@@ -80,7 +80,7 @@ The steps of AWS CodePipeline map directly to the [source, build, staging, and p
 
  If the action is approved, the pipeline processing resumes. If the action is rejected—or if no one approves or rejects the action within seven days of the pipeline reaching the action and stopping—the result is the same as an action failing, and the pipeline processing does not continue.
 
-![Screenshot showing AWS CodeDeploy—manual approvals](http://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/manual-approvals.png)
+![Screenshot showing AWS CodeDeploy—manual approvals](https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/manual-approvals.png)
 
 ## Deploying infrastructure code changes in a CI/CD pipeline
 <a name="deploying-infrastructure-code-changes-in-a-cicd-pipeline"></a>

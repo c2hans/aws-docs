@@ -17,7 +17,7 @@ Amazon Web Services (AWS) offers 20\+ purpose-built networking and content deliv
 
 This decision guide will help you ask the right questions to choose the networking and content delivery services and tools that fit your needs.
 
-[![AWS Videos](http://img.youtube.com/vi/cRdDCkbE4es?start=123&end=373/0.jpg)](http://www.youtube.com/watch?v=cRdDCkbE4es?start=123&end=373)
+[![AWS Videos](https://img.youtube.com/vi/cRdDCkbE4es?start=123&end=373/0.jpg)](https://www.youtube.com/watch?v=cRdDCkbE4es?start=123&end=373)
 
 ## Understand
 <a name="understand"></a>
@@ -26,7 +26,7 @@ What you build in AWS depends on your business needs. In this guide, we use the 
 
 Networking and content delivery services at AWS fall into four categories: networking foundations, global and hybrid connectivity, edge networking and content delivery, and application networking.
 
-![Diagram showing AWS networking services for every application and workload](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/cloud-networking-from-aws.png)
+![Diagram showing AWS networking services for every application and workload](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/cloud-networking-from-aws.png)
 
 **Networking foundations**
 

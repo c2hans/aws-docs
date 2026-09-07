@@ -12,7 +12,7 @@ This section provides a reference implementation architecture diagram for the co
 
 Deploying this solution with the default parameters deploys the following components in your AWS account.
 
-![Graphic depicting Account Assessment for AWS Organizations architecture](http://docs.aws.amazon.com/solutions/latest/account-assessment-for-aws-organizations/images/account-assessment-for-aws-orgs-architecture-diagram.png)
+![Graphic depicting Account Assessment for AWS Organizations architecture](https://docs.aws.amazon.com/solutions/latest/account-assessment-for-aws-organizations/images/account-assessment-for-aws-orgs-architecture-diagram.png)
 
 1. Users access the solution by opening the [Amazon CloudFront url in their browser](https://aws.amazon.com/cloudfront/). CloudFront delivers the web UI content from an Amazon S3 bucket.
 

@@ -1117,7 +1117,7 @@ Use the **Connections** tab on the block configuration panel to quickly navigate
 
 The following GIF shows how to navigate through the flow designer canvas using these options.
 
-![GIF that shows how to navigate through the flow designer canvas.](http://docs.aws.amazon.com/connect/latest/adminguide/images/GIF/connection.gif)
+![GIF that shows how to navigate through the flow designer canvas.](https://docs.aws.amazon.com/connect/latest/adminguide/images/GIF/connection.gif)
 
 ##### Change connection
 <a name="change-connection"></a>
@@ -1128,7 +1128,7 @@ Use **free-text search** to quickly locate and connect to a specific block.
 
 To remove a connection, use the **Disconnect** option. The following GIF shows how to use **Disconnect**.
 
-![GIF that shows how to remove a connection using the Disconnect option.](http://docs.aws.amazon.com/connect/latest/adminguide/images/GIF/disconnection.gif)
+![GIF that shows how to remove a connection using the Disconnect option.](https://docs.aws.amazon.com/connect/latest/adminguide/images/GIF/disconnection.gif)
 
 ##### Create a new block
 <a name="create-a-new-block"></a>
@@ -1139,7 +1139,7 @@ You can create a new block directly from the **Connections** tab without leaving
 
 The following GIF shows how to add a new block (in this case a **Disconnect** block) from the **Connections** tab.
 
-![GIF that shows how to add a new block from the Connections tab.](http://docs.aws.amazon.com/connect/latest/adminguide/images/GIF/create-new-block.gif)
+![GIF that shows how to add a new block from the Connections tab.](https://docs.aws.amazon.com/connect/latest/adminguide/images/GIF/create-new-block.gif)
 
 #### Notes tab
 <a name="block-notes-tab"></a>
@@ -1148,7 +1148,7 @@ Use the **Notes** tab to view all notes attached to a block. You can create and 
 
 The following GIF shows the **Notes** tab for the **Set disconnect flow** block.
 
-![GIF that shows how to add and view notes on the Notes tab.](http://docs.aws.amazon.com/connect/latest/adminguide/images/GIF/block-notes-tab.gif)
+![GIF that shows how to add and view notes on the Notes tab.](https://docs.aws.amazon.com/connect/latest/adminguide/images/GIF/block-notes-tab.gif)
 
 #### Block error navigation
 <a name="block-error-navigation"></a>
@@ -1161,7 +1161,7 @@ When publishing, if a block contains errors, you can choose the associated error
 
 The following GIF shows how to navigate to the problematic blocks.
 
-![GIF that shows how to use Block Error Navigation.](http://docs.aws.amazon.com/connect/latest/adminguide/images/GIF/block-error-navigation.gif)
+![GIF that shows how to use Block Error Navigation.](https://docs.aws.amazon.com/connect/latest/adminguide/images/GIF/block-error-navigation.gif)
 
 ### Flow designer keyboard shortcuts and accessibility improvements
 <a name="flow-designer-keyboard-shortcuts-june25"></a>
@@ -1182,7 +1182,7 @@ Reflow Mode makes sure that panels and interface elements automatically rearrang
 
 The following GIF shows how to use Reflow Mode.
 
-![GIF that shows how to use Reflow Mode.](http://docs.aws.amazon.com/connect/latest/adminguide/images/GIF/reflow-mode.gif)
+![GIF that shows how to use Reflow Mode.](https://docs.aws.amazon.com/connect/latest/adminguide/images/GIF/reflow-mode.gif)
 
 #### Button-based movement
 <a name="button-based-movement"></a>
@@ -1191,7 +1191,7 @@ You can use the directional buttons on the flow designer canvas for precise bloc
 
 The following GIF shows how to use the directional buttons.
 
-![GIF that shows how to use the directional buttons on the flow designer canvas.](http://docs.aws.amazon.com/connect/latest/adminguide/images/GIF/entity-button.gif)
+![GIF that shows how to use the directional buttons on the flow designer canvas.](https://docs.aws.amazon.com/connect/latest/adminguide/images/GIF/entity-button.gif)
 
 #### High contrast lines
 <a name="high-contrast-lines"></a>
@@ -1200,11 +1200,11 @@ High contrast lines enhance the visual distinction between the three connector l
 
 The following GIF shows how to enable high contrast lines in the flow designer.
 
-![GIF that shows how to enable high contrast lines in the flow designer.](http://docs.aws.amazon.com/connect/latest/adminguide/images/GIF/high-contrast-lines.gif)
+![GIF that shows how to enable high contrast lines in the flow designer.](https://docs.aws.amazon.com/connect/latest/adminguide/images/GIF/high-contrast-lines.gif)
 
 The following image shows two flow designer canvases. The first one shows the default contrast. The second one shows high contrast lines.
 
-![Two images of the flow designer: first is default contrast, second is high contrast.](http://docs.aws.amazon.com/connect/latest/adminguide/images/high-contrast-lines-image.png)
+![Two images of the flow designer: first is default contrast, second is high contrast.](https://docs.aws.amazon.com/connect/latest/adminguide/images/high-contrast-lines-image.png)
 
 ### Enhanced audio treatment for customers in queue
 <a name="queue-audio-june25"></a>
@@ -1930,9 +1930,9 @@ There are two ways you can search resources on the Connect Customer admin websit
 + **Search box**: This option helps you find matches fast with minimal effort. It provides free-text type-ahead search, and supports searching with "contains" logic.
 
   For example, as you start typing the name of the resource, any results that match are returned. The following image shows the first part of the login name was typed in search. Connect Customer automatically returned users that matched the first two characters typed - "ja".
-![The search box on the User management page.](http://docs.aws.amazon.com/connect/latest/adminguide/images/search-freetext.png)
+![The search box on the User management page.](https://docs.aws.amazon.com/connect/latest/adminguide/images/search-freetext.png)
 + **Add filter**: This option enables you to perform more targeted searches using more advanced criteria. For example, you can specify multiple routing profiles, tags, or logins. The following image shows a Login filter. The search will return results for two logins: janedoe and johndoe.
-![The Add filter option on the User management page.](http://docs.aws.amazon.com/connect/latest/adminguide/images/search-advanced.png)
+![The Add filter option on the User management page.](https://docs.aws.amazon.com/connect/latest/adminguide/images/search-advanced.png)
 
 #### Automated rotation of agent shifts
 <a name="shift-rotation-patterns-july24"></a>
@@ -2607,7 +2607,7 @@ Added an option to specify that selected agents with this routing profile will n
 
 To help you distinguish blocks in a flow, you can customize the names of blocks. For example, you might rename a *Play Prompt* flow block to *Welcome message* or a *Get customer input* flow block to *Hotel booking Lex bot*. The following GIF shows how to customize the name of a flow block.
 
-![A block with a custom name.](http://docs.aws.amazon.com/connect/latest/adminguide/images/set-custom-flow-block-name-1.gif)
+![A block with a custom name.](https://docs.aws.amazon.com/connect/latest/adminguide/images/set-custom-flow-block-name-1.gif)
 
 For more information, see [Customize the name of a flow block in Connect Customer](set-custom-flow-block-name.md).
 
@@ -2628,7 +2628,7 @@ To add notes to a block, on the toolbar choose Annotation. Or, with your cursor 
 
 The following GIF shows how to move notes around the flow designer and attach them to a block.
 
-![Notes on the flow designer.](http://docs.aws.amazon.com/connect/latest/adminguide/images/flow-annotationsGIF.gif)
+![Notes on the flow designer.](https://docs.aws.amazon.com/connect/latest/adminguide/images/flow-annotationsGIF.gif)
 
 #### Use the mini-map to navigate a flow
 <a name="minimap-july23"></a>
@@ -2637,7 +2637,7 @@ On the flow designer, the mini-map view to helps you easily navigate the flow. T
 
 The following GIF shows an example of how you can use the mini-map to navigate a large flow.
 
-![A flow that shows the mini-map.](http://docs.aws.amazon.com/connect/latest/adminguide/images/flow-minimapgif.gif)
+![A flow that shows the mini-map.](https://docs.aws.amazon.com/connect/latest/adminguide/images/flow-minimapgif.gif)
 
 #### Restrict attributes to specific flows
 <a name="flow-attributes-july23"></a>
@@ -3086,7 +3086,7 @@ Press **Ctrl\+Shift\+F** to display a search box in the flow designer, and then 
 
 The following GIF shows how to use the search box to find flow blocks that have **attributes** in their title. It also shows how to display or hide the search box using the toggle.
 
-![The search box to find flow blocks that have attributes in their title.](http://docs.aws.amazon.com/connect/latest/adminguide/images/Search-Designer.gif)
+![The search box to find flow blocks that have attributes in their title.](https://docs.aws.amazon.com/connect/latest/adminguide/images/Search-Designer.gif)
 
 #### Released Connect Customer Cases for General Availability
 <a name="cases-oct-2022"></a>
@@ -3106,7 +3106,7 @@ When you search a contact and filter results by conversational analytics categor
 
 We've released a number of improvements to the flow designer experience to make building and editing flows easier.
 + Updated look and feel of block dock, blocks, and flow designer canvas.
-![The updated look and feel of the block dock, blocks, and flow designer canvas.](http://docs.aws.amazon.com/connect/latest/adminguide/images/NewOptIn.gif)
+![The updated look and feel of the block dock, blocks, and flow designer canvas.](https://docs.aws.amazon.com/connect/latest/adminguide/images/NewOptIn.gif)
 + Import / Export uses a standard flow language so you can interchangeably build flows in APIs or in the UI.
 **Important**
 To copy and paste flows and blocks in the updated flow designer, the flow must be in the new flow language. To convert a legacy flow into the new format, you have two options:
@@ -3114,19 +3114,19 @@ Option 1: In the flow designer user interface, opt in to the updated flow design
 Option 2: Manually [import](contact-flow-import-export.md) a legacy flow using the updated flow designer.
 This option is most useful for scenarios where you have stored your flows in JSON offline. For example, for configuration control, you might have flow configurations in an offline data store. To copy a part of that flow and paste it into the updated flow designer, you need to import it into the updated flow designer. The importing process converts it to the new flow language. After that, you can copy and paste within the updated flow designer. If you want to keep using your offline data store as a source of truth, update the flow with the new format.
 + You can use **Search** to filter blocks in the block dock.
-![The search option to filter blocks.](http://docs.aws.amazon.com/connect/latest/adminguide/images/FilterBlock.gif)
+![The search option to filter blocks.](https://docs.aws.amazon.com/connect/latest/adminguide/images/FilterBlock.gif)
 + Multi-line block metadata allows you to choose and expand to see block configurations.
-![Multi-line block metadata option to see block configurations.](http://docs.aws.amazon.com/connect/latest/adminguide/images/Metadata.gif)
+![Multi-line block metadata option to see block configurations.](https://docs.aws.amazon.com/connect/latest/adminguide/images/Metadata.gif)
 + Color-coded branches and connectors help you distinguish paths.
-![Color-coded branches and connectors in the flow designer helping to distinguish different paths.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ColorCodedBranches.gif)
+![Color-coded branches and connectors in the flow designer helping to distinguish different paths.](https://docs.aws.amazon.com/connect/latest/adminguide/images/ColorCodedBranches.gif)
 + Improved zooming.
-![Improved zooming functionality in the flow designer allowing users to zoom in and out of the workflow.](http://docs.aws.amazon.com/connect/latest/adminguide/images/Zoom.gif)
+![Improved zooming functionality in the flow designer allowing users to zoom in and out of the workflow.](https://docs.aws.amazon.com/connect/latest/adminguide/images/Zoom.gif)
 + Flow/module metadata appears at the bottom of the block dock.
-![Flowchart showing flow with check attributes, play prompt, and wait steps.](http://docs.aws.amazon.com/connect/latest/adminguide/images/AdditionalData.gif)
+![Flowchart showing flow with check attributes, play prompt, and wait steps.](https://docs.aws.amazon.com/connect/latest/adminguide/images/AdditionalData.gif)
 + New, more intuitive categories (**Check**, **Analyze**, and **Logic**) to make it easier to find the blocks you are looking for.
-![The new intuitive categories in the flow designer showing Check, Analyze, and Logic sections.](http://docs.aws.amazon.com/connect/latest/adminguide/images/NewCategories.gif)
+![The new intuitive categories in the flow designer showing Check, Analyze, and Logic sections.](https://docs.aws.amazon.com/connect/latest/adminguide/images/NewCategories.gif)
 + Updated user interface in the block **Property** pages.
-![The updated user interface in the block Property pages showing configuration options.](http://docs.aws.amazon.com/connect/latest/adminguide/images/Sidepanel.gif)
+![The updated user interface in the block Property pages showing configuration options.](https://docs.aws.amazon.com/connect/latest/adminguide/images/Sidepanel.gif)
 
 #### Search for Connect Customer users by first name, last name, login, and more
 <a name="search-users-sept-2022"></a>
@@ -3174,22 +3174,22 @@ You can search for contacts using the agent's first or last name. The filter nam
 
 The following image shows the Agent filter, and the option to choose agents by name.
 
-![The Agent filter, and the option to choose agents by name.](http://docs.aws.amazon.com/connect/latest/adminguide/images/contact-search-agent-name.png)
+![The Agent filter, and the option to choose agents by name.](https://docs.aws.amazon.com/connect/latest/adminguide/images/contact-search-agent-name.png)
 
 ##### Required permissions to "Agent" search filter
 <a name="users-view-permissions-contact-search"></a>
 
 To use the **Agent** filter on the **Contact search** page, in your Connect Customer security profile you must have **Users - View** permissions, as shown in the following image:
 
-![The Users - View security profile permissions.](http://docs.aws.amazon.com/connect/latest/adminguide/images/release-notes-contact-search.png)
+![The Users - View security profile permissions.](https://docs.aws.amazon.com/connect/latest/adminguide/images/release-notes-contact-search.png)
 
 When you have **Users - View** permissions, on the **Contact search** page the **Agent** filter appears, as shown in the following image:
 
-![The Agent filter as it appears on the Contact search page.](http://docs.aws.amazon.com/connect/latest/adminguide/images/release-notes-contact-search3.png)
+![The Agent filter as it appears on the Contact search page.](https://docs.aws.amazon.com/connect/latest/adminguide/images/release-notes-contact-search3.png)
 
 Without **User - View** permissions, the **Agent** filter is not visible, and searching contacts by Agent login is not supported, as shown in the following image:
 
-![The Agent filter when it is not visible.](http://docs.aws.amazon.com/connect/latest/adminguide/images/release-notes-contact-search2.png)
+![The Agent filter when it is not visible.](https://docs.aws.amazon.com/connect/latest/adminguide/images/release-notes-contact-search2.png)
 
 #### Released updates for rich text format rendering
 <a name="rich-text-formatting-july22"></a>
@@ -3218,13 +3218,13 @@ The following updates were released in June 2022.
 
 You can now schedule historical metrics to refresh every 15 minutes. To select 15-minute schedules, select generate this report **Hourly** every .25 hours (this is the top most option in the second dropdown), for the previous .25 hours. The following image shows the values that you need to select.
 
-![The values you need to select.](http://docs.aws.amazon.com/connect/latest/adminguide/images/hmr-15-minute-scheduled-reports.png)
+![The values you need to select.](https://docs.aws.amazon.com/connect/latest/adminguide/images/hmr-15-minute-scheduled-reports.png)
 
 **Filter Real-Time Metrics Agent Table by Agent**
 
 You can now filter the agent table on the Real-Time Metrics page by agent. This filter functions the same as the existing queues, routing profiles, and agent hierarchy filters.
 
-![The Agents filter.](http://docs.aws.amazon.com/connect/latest/adminguide/images/hmr-rtm-agent-filtering.png)
+![The Agents filter.](https://docs.aws.amazon.com/connect/latest/adminguide/images/hmr-rtm-agent-filtering.png)
 
 #### New contact transferred related metrics
 <a name="contact-transferred-whats-new"></a>
@@ -3602,15 +3602,15 @@ The feature has the following effect:
 
 To use the **Agent** filter on the **Contact search** page, in your Connect Customer security profile you must have **Users - View** permissions, as shown in the following image:
 
-![The Users - View permission.](http://docs.aws.amazon.com/connect/latest/adminguide/images/release-notes-contact-search.png)
+![The Users - View permission.](https://docs.aws.amazon.com/connect/latest/adminguide/images/release-notes-contact-search.png)
 
 When you have **Users - View** permissions, on the **Contact search** page the **Agent** filter appears, as shown in the following image:
 
-![The Agent filter on the Contact search page.](http://docs.aws.amazon.com/connect/latest/adminguide/images/release-notes-contact-search1.png)
+![The Agent filter on the Contact search page.](https://docs.aws.amazon.com/connect/latest/adminguide/images/release-notes-contact-search1.png)
 
 Without **User - View** permissions, the **Agent** filter is not visible, and searching contacts by Agent login is not supported, as shown in the following image:
 
-![The Agent filter when it is not in the list of filters.](http://docs.aws.amazon.com/connect/latest/adminguide/images/release-notes-contact-search2.png)
+![The Agent filter when it is not in the list of filters.](https://docs.aws.amazon.com/connect/latest/adminguide/images/release-notes-contact-search2.png)
 
 ### June 2021 Updates
 <a name="june21-release-notes"></a>
@@ -3651,13 +3651,13 @@ The following changes were release for Contact search:
 + Contact search supports Disconnect Reason as a new filter on the **Contact search** page.
 
   The following image shows how **Disconnect reason** appears in the user interface as a filter.
-![The Disconnect reason filter.](http://docs.aws.amazon.com/connect/latest/adminguide/images/contact-search-disconnectreason.png)
+![The Disconnect reason filter.](https://docs.aws.amazon.com/connect/latest/adminguide/images/contact-search-disconnectreason.png)
 
   The following image shows how you can filter by type of disconnect reason. For a definition of each disconnect reason, see the [ContactTraceRecord](ctr-data-model.md#ctr-ContactTraceRecord) section of the *Contact records data model* topic.
-![The Customer disconnect filter.](http://docs.aws.amazon.com/connect/latest/adminguide/images/contact-search-disconnectreason-choose.png)
+![The Customer disconnect filter.](https://docs.aws.amazon.com/connect/latest/adminguide/images/contact-search-disconnectreason-choose.png)
 
   The following image shows how you add **Disconnect reason** as a column to your search results.
-![Dialog box for selecting additional fields to display in contact center search results.](http://docs.aws.amazon.com/connect/latest/adminguide/images/contact-search-disconnectreason-additionfields.png)
+![Dialog box for selecting additional fields to display in contact center search results.](https://docs.aws.amazon.com/connect/latest/adminguide/images/contact-search-disconnectreason-additionfields.png)
 
 ### April 2021 Updates
 <a name="april21-release-notes"></a>
@@ -3741,7 +3741,7 @@ When customizing a historical metrics report, you have the option to select a 15
 
 The 15 minutes interval works the same as the 30 minutes interval. For example, you can query up to three days of data at a time, for the past 35 days.
 
-![The Interval and Time range settings.](http://docs.aws.amazon.com/connect/latest/adminguide/images/hmr-15-minute-interval.png)
+![The Interval and Time range settings.](https://docs.aws.amazon.com/connect/latest/adminguide/images/hmr-15-minute-interval.png)
 
 #### Chat: Add a chat user interface your website
 <a name="march21-chat"></a>
@@ -3800,13 +3800,13 @@ A new category of metrics appears on the **Table settings** page: **Contact Serv
 
 The following image shows this new category on the **Table settings** page, in an expandable group. Choose the arrow next to the group to view and select the metrics you want to add to your report.
 
-![The Contact Service Level category.](http://docs.aws.amazon.com/connect/latest/adminguide/images/rtm-csl-groups.png)
+![The Contact Service Level category.](https://docs.aws.amazon.com/connect/latest/adminguide/images/rtm-csl-groups.png)
 
 Use the **Contact Service Level** category to choose pre-set service level metrics, and to create custom service level metrics.
 
 The following image shows the user interface for creating custom service level metrics.
 
-![The interface for creating custom service level metrics.](http://docs.aws.amazon.com/connect/latest/adminguide/images/rtm-create-csl.png)
+![The interface for creating custom service level metrics.](https://docs.aws.amazon.com/connect/latest/adminguide/images/rtm-create-csl.png)
 
 ##### Historical metrics: New categories for metrics
 <a name="hmr-new-categories"></a>
@@ -3820,7 +3820,7 @@ To make it easier to find the historical metrics you want to add to a report, me
 
 Choose **Add Custom SL** to add custom service levels to your historical metrics report, as shown in the following image.
 
-![The Add Custom SL option.](http://docs.aws.amazon.com/connect/latest/adminguide/images/hmr-csl-group.png)
+![The Add Custom SL option.](https://docs.aws.amazon.com/connect/latest/adminguide/images/hmr-csl-group.png)
 
 ##### The order of the metric columns on the historical metrics reports has changed
 <a name="upcoming-changes-static-columns"></a>
@@ -3843,7 +3843,7 @@ You have the ability to add custom service level metrics. You can also choose fr
 
 The maximum duration for a custom service level is 7 days. That's because in Connect Customer you can't have a contact that goes longer than 7 days.
 
-![The Custom Service Level duration dropdown list.](http://docs.aws.amazon.com/connect/latest/adminguide/images/metrics-custom-servicelevels.png)
+![The Custom Service Level duration dropdown list.](https://docs.aws.amazon.com/connect/latest/adminguide/images/metrics-custom-servicelevels.png)
 
 ##### Group by channel in a historical metrics report
 <a name="metrics-changes-group-by-channel-hmr"></a>
@@ -3855,10 +3855,10 @@ The maximum duration for a custom service level is 7 days. That's because in Con
 1. Choose **Settings**.
 
 1. On the **Table Settings** page, choose the **Groupings** tab. Add **Channel**, and choose **Apply**.
-![The Groupings filter.](http://docs.aws.amazon.com/connect/latest/adminguide/images/hmr-grouping-channel.png)
+![The Groupings filter.](https://docs.aws.amazon.com/connect/latest/adminguide/images/hmr-grouping-channel.png)
 
 1. The table shows a column for **Channel**, as shown in the following image.
-![The Channel column in the historical metrics report.](http://docs.aws.amazon.com/connect/latest/adminguide/images/hmr-channel-label.png)
+![The Channel column in the historical metrics report.](https://docs.aws.amazon.com/connect/latest/adminguide/images/hmr-channel-label.png)
 
 ### January 2021 Updates
 <a name="january21-release-notes"></a>
@@ -4107,13 +4107,13 @@ The following updates were released in June 2020:
 **To group queues or routing profiles by channel on real-time metrics reports**
 
 1. On the navigation menu, choose **Analytics and optimization**, **Real-time metrics**, and then select either **Queues** or **Routing profiles**.
-![The real-time metrics page.](http://docs.aws.amazon.com/connect/latest/adminguide/images/rtm-queues-or-routing-profiles.png)
+![The real-time metrics page.](https://docs.aws.amazon.com/connect/latest/adminguide/images/rtm-queues-or-routing-profiles.png)
 
 1. Choose **Settings**.
-![The Real-time metrics report.](http://docs.aws.amazon.com/connect/latest/adminguide/images/rtm-settings.png)
+![The Real-time metrics report.](https://docs.aws.amazon.com/connect/latest/adminguide/images/rtm-settings.png)
 
 1. On the **Table Settings** page, choose the **Groupings** tab and then select **Queues grouped by channels**. Or, if you're setting up a **Routing profiles** report, choose **Routing profiles grouped by channels**.
-![The Groupings tab, the Queues grouped by channels option.](http://docs.aws.amazon.com/connect/latest/adminguide/images/rtm-group-by-channel.png)
+![The Groupings tab, the Queues grouped by channels option.](https://docs.aws.amazon.com/connect/latest/adminguide/images/rtm-group-by-channel.png)
 
 1. Choose **Apply**.
 
@@ -4129,11 +4129,11 @@ In the historical metrics report, when you group or filter metrics by **Queue**,
 
 Because of this, on the **Table Settings** page, **Metrics** tab, these metrics are inactive, as shown in the following image:
 
-![Inactive metrics on the Table Settings dialog box.](http://docs.aws.amazon.com/connect/latest/adminguide/images/hmr-inactive-metrics.png)
+![Inactive metrics on the Table Settings dialog box.](https://docs.aws.amazon.com/connect/latest/adminguide/images/hmr-inactive-metrics.png)
 
 In addition, in the historical metrics report, Connect Customer displays a hyphen (-) in place of results for these metrics, and the cells are inactive (gray).
 
-![The Agent on contact time and Agent idle time columns on a historical metrics report.](http://docs.aws.amazon.com/connect/latest/adminguide/images/hmr-null-metrics.png)
+![The Agent on contact time and Agent idle time columns on a historical metrics report.](https://docs.aws.amazon.com/connect/latest/adminguide/images/hmr-null-metrics.png)
 
 ##### Effect of queue grouping on saved and scheduled reports
 <a name="metrics-changes-june-2020-saved-scheduled-reports"></a>
@@ -4301,7 +4301,7 @@ For **On call**, the name change to **On Contact** applies to the Real-time metr
 
 Labels are the values returned in a report. For example, in the following image **Available** and **Basic Routing Profile** are labels.
 
-![The Available and Basic Routing labels.](http://docs.aws.amazon.com/connect/latest/adminguide/images/labels.png)
+![The Available and Basic Routing labels.](https://docs.aws.amazon.com/connect/latest/adminguide/images/labels.png)
 
 For **Agent Activity** and **Contact State**, we renamed some of the labels that describe what the agent's current activity is and what's happening with the contact they are currently working on. This way, the labels in the Real-Time Metrics report are more consistent with the labels the agent sees in the Contact Control Panel. They also align with the data returned about these different states in other parts of Connect Customer.
 

@@ -12,7 +12,7 @@ You are billed for instances as soon as they are launched, including the time th
 
 The following illustration shows the transitions between instance states in the Amazon EC2 Auto Scaling lifecycle.
 
-![The lifecycle of instances within an Auto Scaling group.](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/auto-scaling-instance-lifecycle.png)
+![The lifecycle of instances within an Auto Scaling group.](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/auto-scaling-instance-lifecycle.png)
 
 ## Scale out
 <a name="as-lifecycle-scale-out"></a>
@@ -30,7 +30,7 @@ If your Auto Scaling group is configured to receive traffic from an Elastic Load
 
 The following summarizes the steps for registering an instance with a load balancer for a scale-out event.
 
-![A high-level diagram of a scale-out event.](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/scale-out-diagram.png)
+![A high-level diagram of a scale-out event.](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/scale-out-diagram.png)
 
 ## Instances in service
 <a name="as-lifecycle-inservice"></a>
@@ -59,7 +59,7 @@ If you add a lifecycle hook to your Auto Scaling group, you can perform a custom
 
 The following summarizes the steps for deregistering an instance with a load balancer for a scale-in event.
 
-![A high-level diagram of a scale-in event.](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/scale-in-diagram.png)
+![A high-level diagram of a scale-in event.](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/scale-in-diagram.png)
 
 ## Detach an instance
 <a name="as-lifecycle-detach"></a>

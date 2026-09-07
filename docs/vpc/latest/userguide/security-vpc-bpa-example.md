@@ -689,7 +689,7 @@ In this section, EC2 instances in public subnets A and B are reachable from the 
 
 Diagram of a VPC without VPC BPA turned on:
 
-![Diagram showing a VPC without VPC BPA enabled.](http://docs.aws.amazon.com/vpc/latest/userguide/images/vpc-bpa-1.png)
+![Diagram showing a VPC without VPC BPA enabled.](https://docs.aws.amazon.com/vpc/latest/userguide/images/vpc-bpa-1.png)
 
 ### 1.1 Connect to instances
 <a name="vpc-bpa-scenario-1-connect-scen1-sub"></a>
@@ -872,7 +872,7 @@ In this section you'll turn on VPC BPA and block traffic to and from the interne
 
 Diagram showing VPC BPA Bidirectional mode turned on:
 
-![Diagram showing VPC with VPC BPA bidirectional enabled.](http://docs.aws.amazon.com/vpc/latest/userguide/images/vpc-bpa-2.png)
+![Diagram showing VPC with VPC BPA bidirectional enabled.](https://docs.aws.amazon.com/vpc/latest/userguide/images/vpc-bpa-2.png)
 
 ### 2.1 Enable VPC BPA bidirectional mode
 <a name="vpc-bpa-scenario-1-connect-scen2-sub1"></a>
@@ -1133,7 +1133,7 @@ In this section you'll change the VPC BPA traffic direction and allow only traff
 
 Diagram of VPC BPA Ingress-only mode turned on:
 
-![Diagram showing VPC with VPC BPA ingress-only enabled.](http://docs.aws.amazon.com/vpc/latest/userguide/images/vpc-bpa-3.png)
+![Diagram showing VPC with VPC BPA ingress-only enabled.](https://docs.aws.amazon.com/vpc/latest/userguide/images/vpc-bpa-3.png)
 
 ### 3.1 Change mode to ingress-only
 <a name="vpc-bpa-scenario-1-connect-scen3-sub1"></a>
@@ -1347,7 +1347,7 @@ In this example, we'll create an exclusion for Subnet A to show how traffic to e
 
 Diagram of VPC BPA Ingress-only mode turned on and Subnet A exclusion with Bidirectional mode turned on:
 
-![Diagram showing VPC with VPC BPA in ingress-only mode with an exclusion.](http://docs.aws.amazon.com/vpc/latest/userguide/images/vpc-bpa-4.png)
+![Diagram showing VPC with VPC BPA in ingress-only mode with an exclusion.](https://docs.aws.amazon.com/vpc/latest/userguide/images/vpc-bpa-4.png)
 
 ### 4.1 Create an exclusion for Subnet A
 <a name="vpc-bpa-scenario-1-connect-scen4-sub1"></a>
@@ -1596,7 +1596,7 @@ In this scenario, you'll change the exclusion mode to Egress-only. Note that whe
 
 Diagram of VPC BPA Ingress-only mode turned on and Subnet A exclusion with egress-only mode turned on:
 
-![Diagram showing VPC with VPC BPA in ingress-only mode, allowing outbound traffic through NAT gateway.](http://docs.aws.amazon.com/vpc/latest/userguide/images/vpc-bpa-5.png)
+![Diagram showing VPC with VPC BPA in ingress-only mode, allowing outbound traffic through NAT gateway.](https://docs.aws.amazon.com/vpc/latest/userguide/images/vpc-bpa-5.png)
 
 ### 5.1 Change exclusion allow direction to egress-only
 <a name="vpc-bpa-scenario-1-connect-scen5-sub1"></a>
@@ -1795,7 +1795,7 @@ In this section you'll change the VPC BPA block direction to see how it impacts 
 
 Diagram of VPC BPA Bidirectional mode turned on and Subnet A exclusion with egress-only mode turned on:
 
-![Diagram showing VPC with VPC BPA in ingress-only mode, allowing outbound traffic through NAT gateway.](http://docs.aws.amazon.com/vpc/latest/userguide/images/vpc-bpa-6.png)
+![Diagram showing VPC with VPC BPA in ingress-only mode, allowing outbound traffic through NAT gateway.](https://docs.aws.amazon.com/vpc/latest/userguide/images/vpc-bpa-6.png)
 
 ### 6.1 Change VPC BPA to bidirectional mode
 <a name="vpc-bpa-scenario-1-connect-scen6-sub1"></a>

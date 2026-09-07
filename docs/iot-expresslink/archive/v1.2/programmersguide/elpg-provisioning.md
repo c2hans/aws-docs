@@ -72,7 +72,7 @@ The Quick Connect demo application allows you to establish a connection with AWS
 
 The demo will connect to AWS IoT and give you a URL that you can use to visualize data flowing from the device to the cloud using AT\+SEND commands. The demo will run for up to two minutes, and afterwards, you will be able to type AT\+SEND commands yourself and see the data coming in on the visualizer.
 
-<a name="elpg-figure5"></a>![Figure 5 - ExpressLink evaluation kit Quick Connect flow](http://docs.aws.amazon.com/iot-expresslink/archive/v1.2/programmersguide/images/QuickConnect_Visualizer.r.png)
+<a name="elpg-figure5"></a>![Figure 5 - ExpressLink evaluation kit Quick Connect flow](https://docs.aws.amazon.com/iot-expresslink/archive/v1.2/programmersguide/images/QuickConnect_Visualizer.r.png)
 
 ## 11.3 ExpressLink Production Onboarding Flow
 <a name="elpg-provisioning-onboarding"></a>
@@ -122,7 +122,7 @@ The configuration parameter Endpoint (see [Table 2 - Configuration Dictionary Pe
 
 **11.3.2.5**   When (and only when) in the *onboarded* state, a connected ExpressLink module subscribes automatically to several AWS-reserved topics as required to support OTA and other core ExpressLink functionality. In the same way, features dependent on the AWS IoT Device Defender and AWS IoT Device Shadow services are supported only when a module is in the *onboarded* state.
 
-<a name="elpg-figure6"></a>![Figure 6 - ExpressLink onboarding states diagram](http://docs.aws.amazon.com/iot-expresslink/archive/v1.2/programmersguide/images/image5.png)
+<a name="elpg-figure6"></a>![Figure 6 - ExpressLink onboarding states diagram](https://docs.aws.amazon.com/iot-expresslink/archive/v1.2/programmersguide/images/image5.png)
 
 Once onboarded, all ExpressLink modules behave as fully owned devices and connect to the customer/OEM account as the ExpressLink things are transferred to the chosen OEM registry. It is the responsibility of the OEM to manage the product life cycle, use the OTA services to apply module updates (with images provided by the ExpressLink module vendor) and apply host processor application updates as needed.
 

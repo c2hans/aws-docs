@@ -40,7 +40,7 @@ You are likely familiar with how to use and setup back-end APIs in traditional a
 
  Let’s start with a high level work flow for an API request, pictured in the following diagram. Imagine a UI component that requests User data from the server to show a table of users:
 
- ![Arrow with text of API Gateway URL inside pointing to a root label. Placed above the arrow is a user icon with an arrow pointing to an Access Control icon. Between the user icon and Access Control icon is the number one. The root label points to a users GET label. Next to the users GET label is the number two and a Lambda function icon, a resource based permission icon with the number three. Next to the Lambda function icon is an arrow pointing to a DynamoDB icon. Next to the icon is the number four. Placed above the icon is an arrow pointing to a box with a status code and users table. Next to the box is the number five and an arrow pointing to the users icon.](http://docs.aws.amazon.com/serverless/latest/devguide/images/s_apigw/high-level-request-flow.png)
+ ![Arrow with text of API Gateway URL inside pointing to a root label. Placed above the arrow is a user icon with an arrow pointing to an Access Control icon. Between the user icon and Access Control icon is the number one. The root label points to a users GET label. Next to the users GET label is the number two and a Lambda function icon, a resource based permission icon with the number three. Next to the Lambda function icon is an arrow pointing to a DynamoDB icon. Next to the icon is the number four. Placed above the icon is an arrow pointing to a box with a status code and users table. Next to the box is the number five and an arrow pointing to the users icon.](https://docs.aws.amazon.com/serverless/latest/devguide/images/s_apigw/high-level-request-flow.png)
 
 1. API HTTP request for a user is received and authentication is verified.
 
@@ -68,7 +68,7 @@ You are likely familiar with how to use and setup back-end APIs in traditional a
 
 The following diagram shows the components of a URL request: API Endpoint, Stage, and Resource.
 
- ![Diagram shows the URL: https://{api-id}.execute-api.{region}.amazonaws.com denoted as the API endpoint, then /v2 denoted as the Stage Name, and finally /users/ denoted as the Resource.](http://docs.aws.amazon.com/serverless/latest/devguide/images/s_apigw/request-structure.png)
+ ![Diagram shows the URL: https://{api-id}.execute-api.{region}.amazonaws.com denoted as the API endpoint, then /v2 denoted as the Stage Name, and finally /users/ denoted as the Resource.](https://docs.aws.amazon.com/serverless/latest/devguide/images/s_apigw/request-structure.png)
 + **API Endpoint**: The hostname for the API. Unless you designate a custom domain name, all APIs created using API Gateway will have this structure.
 + **Stage Name:** An API deployment. You can deploy different snapshots of your API to various stages, for example: “v2", "latest", "dev", "qa".
 + **Resource**: The piece of your business logic provided by the request.
@@ -77,7 +77,7 @@ To create an REST API resource, you specify the resource path, then add a method
 
  After you are satisfied with your configuration, you must **deploy** the API to a **stage** so it will become available to process requests.
 
- ![Screenshot for creating a GET action on a users resource, with mock integration.](http://docs.aws.amazon.com/serverless/latest/devguide/images/s_apigw/api-gw-rest-example.png)
+ ![Screenshot for creating a GET action on a users resource, with mock integration.](https://docs.aws.amazon.com/serverless/latest/devguide/images/s_apigw/api-gw-rest-example.png)
 
 ### Integrate your API resources
 <a name="apigw_integrate-your-api-resources"></a>
@@ -249,4 +249,4 @@ If you want to handle the routing implementation outside of API Gateway, for exa
 **Learn how to use API Gateway in an online workshop**
 Learn by doing in the **[Serverless Patterns Workshop](https://catalog.workshops.aws/serverless-patterns)**. The first module introduces a serverless microservice to retrieve data from DynamoDB with Lambda and API Gateway.
  Additional modules provide practical examples using infrastructure as code to deploy resources, test, and build with common architectural patterns used in serverless solutions.
- ![Architecture diagram for a REST microservice. Client icon connects through an arrow to REST API resource icon with API Gateway service icon placed above it. REST API is connected by a double arrow to Lambda function resource icon with Permissions Policy resource icon placed above it, and Lambda service icon placed above both. Lambda function resource is connected through an arrow pointing to Users Table resource with DynamoDB service icon placed above it. Dotted boxes enclose each of the services.](http://docs.aws.amazon.com/serverless/latest/devguide/images/workshop-m1-infra-complete.png)
+ ![Architecture diagram for a REST microservice. Client icon connects through an arrow to REST API resource icon with API Gateway service icon placed above it. REST API is connected by a double arrow to Lambda function resource icon with Permissions Policy resource icon placed above it, and Lambda service icon placed above both. Lambda function resource is connected through an arrow pointing to Users Table resource with DynamoDB service icon placed above it. Dotted boxes enclose each of the services.](https://docs.aws.amazon.com/serverless/latest/devguide/images/workshop-m1-infra-complete.png)

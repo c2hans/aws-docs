@@ -46,7 +46,7 @@ Sample Implementation:
 + Amazon Bedrock AgentCore with IAM SigV4 sample implementation: [https://github.com/aws-samples/sample-mcp-deployment-patterns/tree/main/deploy-agentcore-iam](https://github.com/aws-samples/sample-mcp-deployment-patterns/tree/main/deploy-agentcore-iam)
 + Amazon Bedrock AgentCore with OAuth sample implementation: [https://github.com/aws-samples/sample-mcp-deployment-patterns/tree/main/deploy-agentcore-oauth](https://github.com/aws-samples/sample-mcp-deployment-patterns/tree/main/deploy-agentcore-iam)
 
-![Deploy MCP servers in AgentCore Runtime](http://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-deployment-patterns-on-aws/images/guide-img/596b5834-b415-44f3-9601-59b1ced57c6b/images/59c72693-ab7d-4dd8-8cb4-83a31e3e9d36.png)
+![Deploy MCP servers in AgentCore Runtime](https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-deployment-patterns-on-aws/images/guide-img/596b5834-b415-44f3-9601-59b1ced57c6b/images/59c72693-ab7d-4dd8-8cb4-83a31e3e9d36.png)
 
 **Architecture Characteristics**
 + Pros: infrastructure management (no servers, containers, or orchestration), built-in authentication and authorization, automatic scaling and high availability, integrated monitoring and logging, native AWS service access, rapid deployment (minutes vs hours/days).

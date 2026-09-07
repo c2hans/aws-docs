@@ -83,7 +83,7 @@ Visual Studio’s NuGet tools are accessible from **Tools** > **NuGet Package Ma
 **Note**
 All AWS Construct Library modules deemed "experimental" (see [AWS CDK versioning](versioning.md)) are flagged as prerelease in NuGet and have an `alpha` name suffix.
 
-![NuGet package manager showing Amazon CDK<shared id="AWS"/> alpha packages for various services.](http://docs.aws.amazon.com/cdk/v2/guide/images/visual-studio-nuget.png)
+![NuGet package manager showing Amazon CDK<shared id="AWS"/> alpha packages for various services.](https://docs.aws.amazon.com/cdk/v2/guide/images/visual-studio-nuget.png)
 
 Look on the **Updates** page to install new versions of your packages.
 

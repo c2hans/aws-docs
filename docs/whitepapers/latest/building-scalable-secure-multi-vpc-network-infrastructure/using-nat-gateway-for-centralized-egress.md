@@ -10,11 +10,11 @@ NAT gateway is a managed network address translation service. Deploying a NAT ga
 **Note**
 When you centralize NAT gateway using Transit Gateway, you pay an extra Transit Gateway data processing charge — compared to the decentralized approach of running a NAT gateway in every VPC. In some edge cases when you send huge amounts of data through NAT gateway from a VPC, keeping the NAT local in the VPC to avoid the Transit Gateway data processing charge might be a more cost-effective option.
 
-![A diagram depicting a decentralized high availability NAT gateway architecture](http://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/decentralized-ha-nat-gateway.png)
+![A diagram depicting a decentralized high availability NAT gateway architecture](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/decentralized-ha-nat-gateway.png)
 
-![A diagram depicting a centralized NAT gateway using Transit Gateway (overview)](http://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/centralized-nat-gateway-tg.png)
+![A diagram depicting a centralized NAT gateway using Transit Gateway (overview)](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/centralized-nat-gateway-tg.png)
 
-![A diagram depicting a centralized NAT gateway using Transit Gateway (route table design)](http://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/nat-gateway-tg-rt.png)
+![A diagram depicting a centralized NAT gateway using Transit Gateway (route table design)](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/nat-gateway-tg-rt.png)
 
 In this setup, spoke VPC attachments are associated with Route Table 1 (RT1) and are propagated to Route Table 2 (RT2). There is a [Blackhole](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-route-tables.html) route to disallow the two VPCs from communicating with each other. If you want to allow inter-VPC communication, you can remove the `10.0.0.0/8 -> Blackhole` route entry from RT1. This allows them to communicate via the transit gateway. You can also propagate the spoke VPC attachments to RT1 (or alternatively, you can use one route table and associate/propagate everything to that), enabling direct traffic ﬂow between the VPCs using Transit Gateway.
 

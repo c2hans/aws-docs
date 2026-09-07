@@ -13,7 +13,7 @@ Connecting SageMaker AI Canvas to the Amazon Kendra index requires a one-time se
 
 SageMaker AI Canvas manages the underlying communication between Amazon Kendra and the selected foundation model. For more information about the foundation models that SageMaker AI Canvas supports, see [Generative AI foundation models in SageMaker AI Canvas](https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-fm-chat.html). The following diagram shows how the document querying feature works after the cloud administrator has connected SageMaker AI Canvas to an Amazon Kendra index.
 
-![Workflow for the document querying feature in Amazon SageMaker Canvas.](http://docs.aws.amazon.com/prescriptive-guidance/latest/retrieval-augmented-generation-options/images/guide-img/22e94edd-d3e5-4e29-8c94-48e327306335/images/1aa440e8-131e-4bbb-a877-338cee073d4c.png)
+![Workflow for the document querying feature in Amazon SageMaker Canvas.](https://docs.aws.amazon.com/prescriptive-guidance/latest/retrieval-augmented-generation-options/images/guide-img/22e94edd-d3e5-4e29-8c94-48e327306335/images/1aa440e8-131e-4bbb-a877-338cee073d4c.png)
 
 The diagram shows the following workflow:
 

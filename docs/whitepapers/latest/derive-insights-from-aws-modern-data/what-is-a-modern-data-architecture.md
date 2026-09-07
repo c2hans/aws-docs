@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-
 
  Many organizations are moving their data from various silos into a data lake, where they have a single place to apply machine learning and analytics. The vast majority of data lakes are built on [Amazon Simple Storage Service](https://aws.amazon.com/s3/) (Amazon S3). At the same time, customers are leveraging purpose-built analytics stores that are optimized for specific use cases. Customers want the freedom to move data between their centralized data lakes and the surrounding purpose-built analytics stores in a seamless, secure, and compliant way, to get insights with speed and agility. We call this modern approach to analytics Modern Data architecture.
 
-![Diagram showing Modern Data architecture on AWS](http://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-aws-modern-data/images/modern-data-architecture.png)
+![Diagram showing Modern Data architecture on AWS](https://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-aws-modern-data/images/modern-data-architecture.png)
 
  Modern Data architecture is an evolution from data warehouse and data lake-based solutions. The following table lists this evolution from data and performance characteristics.
 

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/outposts/latest/userguide/network-troubl
 
 Use this checklist to help troubleshoot a service link that has a status of `DOWN`.
 
-![Virtual LANs.](http://docs.aws.amazon.com/outposts/latest/userguide/images/two-isolated-networks.png)
+![Virtual LANs.](https://docs.aws.amazon.com/outposts/latest/userguide/images/two-isolated-networks.png)
 
 ## Connectivity with Outpost network devices
 <a name="check-outpost-network-device"></a>

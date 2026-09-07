@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/res/latest/ug/groups.html
 
 All Groups synced from the active directory appear on the Groups page. For more information on group configuration and management, see the [Configuration guide](configuration-guide.md).
 
-![Groups](http://docs.aws.amazon.com/res/latest/ug/images/res-groups.jpg)
+![Groups](https://docs.aws.amazon.com/res/latest/ug/images/res-groups.jpg)
 
 From the **Groups** page, you can:
 

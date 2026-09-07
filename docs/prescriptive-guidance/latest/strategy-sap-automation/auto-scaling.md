@@ -19,4 +19,4 @@ The following image and process describe how you can automate scaling of the res
 
 1. If demand is above or below the threshold, the Lambda function directs AWS Systems Manager to start or stop additional EC2 instances to support the SAP applications.
 
-![Architecture diagram showing how you can automate starting or stopping EC2 instances to support the demand for your SAP applications.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sap-automation/images/guide-img/029e7e61-9fe5-41b5-83f4-177d03384b91/images/529bd45f-fb29-4598-b42c-4f9a3f0f6cea.png)
+![Architecture diagram showing how you can automate starting or stopping EC2 instances to support the demand for your SAP applications.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sap-automation/images/guide-img/029e7e61-9fe5-41b5-83f4-177d03384b91/images/529bd45f-fb29-4598-b42c-4f9a3f0f6cea.png)

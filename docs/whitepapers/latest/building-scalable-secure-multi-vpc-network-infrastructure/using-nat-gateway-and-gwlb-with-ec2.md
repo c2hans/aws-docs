@@ -15,7 +15,7 @@ You can enable appliance mode on Transit Gateway to maintain flow symmetry throu
 
 It is also possible to deploy GWLB endpoints in a distributed manner without Transit Gateway to enable egress inspection. Learn more about this architectural pattern in the [Introducing AWS Gateway Load Balancer: Supported architecture patterns](https://aws.amazon.com/blogs/networking-and-content-delivery/introducing-aws-gateway-load-balancer-supported-architecture-patterns/) blog post.
 
-![A diagram depicting Centralized egress with Gateway Load Balancer and EC2 instance (route table design)](http://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/centralized-egress-gwlb-and-ec2.png)
+![A diagram depicting Centralized egress with Gateway Load Balancer and EC2 instance (route table design)](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/centralized-egress-gwlb-and-ec2.png)
 
 ## High availability
 <a name="high-availabilty-2"></a>

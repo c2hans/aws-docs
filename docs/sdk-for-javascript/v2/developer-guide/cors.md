@@ -20,7 +20,7 @@ In the simplest case, your browser script makes a GET request for a resource fro
 
 If either the requesting domain or the type of HTTP request is not authorized, the request is denied. However, CORS makes it possible to preflight the request before actually submitting it. In this case, a preflight request is made in which the `OPTIONS` access request operation is sent. If the cross-origin server's CORS configuration grants access to the requesting domain, the server sends back a preflight response that lists all the HTTP request types that the requesting domain can make on the requested resource.
 
-![Process flow for CORS requests](http://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/cors-overview.png)
+![Process flow for CORS requests](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/cors-overview.png)
 
 ## Is CORS Configuration Required
 <a name="the-need-for-cors-configuration"></a>
@@ -35,7 +35,7 @@ You can configure an Amazon S3 bucket to use CORS in the Amazon S3 console.
 1. In the Amazon S3 console, choose the bucket you want to edit.
 
 1. Select the **Permissions** tab, and scoll down to the **Cross-origin resource sharing (CORS)** panel.
-![CORS Configuration Editor in Amazon S3 for setting CORS configuration of a bucket](http://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/cors_panel.png)
+![CORS Configuration Editor in Amazon S3 for setting CORS configuration of a bucket](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/cors_panel.png)
 
 1. Choose **Edit**, and type your CORS configuration in the **CORS Configuration Editor**, then choose **Save**.
 

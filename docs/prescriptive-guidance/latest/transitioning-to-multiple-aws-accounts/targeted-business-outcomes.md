@@ -22,7 +22,7 @@ For more information about the many benefits of using a multi-account architectu
 
 As a starting point, it is common for startup or small companies to use a single AWS Region and have two virtual private clouds (VPCs) that are connected by [VPC peering](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-peering.html). Each VPC contains compute resources, such as Amazon Elastic Compute Cloud (Amazon EC2) instances. The engineering team develops code directly in the **Development VPC**. The product team reviews the changes, and then the engineering team manually promotes the changes to the **Production VPC**. The finance team has access to the AWS account so they can review the AWS Billing and Cost Management console.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/transitioning-to-multiple-aws-accounts/images/guide-img/b35f7443-fbaf-4ce8-bb48-32b6441d573f/images/743baaf6-1cf2-493c-9cb4-6ffedff927eb.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/transitioning-to-multiple-aws-accounts/images/guide-img/b35f7443-fbaf-4ce8-bb48-32b6441d573f/images/743baaf6-1cf2-493c-9cb4-6ffedff927eb.png)
 
 The following are a few examples of challenges that a company might experience with this environment:
 + An engineer mistakenly deleted production data when they thought they were accessing a development database.

@@ -47,4 +47,4 @@ If no mapping matches, the request returns an error rather than being served.
 
  **Screenshot of the Create mapping form in the Admin UI.**
 
-![Admin UI Create mapping form](http://docs.aws.amazon.com/solutions/latest/dynamic-image-transformation-for-amazon-cloudfront/images/admin-ui-create-mapping.png)
+![Admin UI Create mapping form](https://docs.aws.amazon.com/solutions/latest/dynamic-image-transformation-for-amazon-cloudfront/images/admin-ui-create-mapping.png)

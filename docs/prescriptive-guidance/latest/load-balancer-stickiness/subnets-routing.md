@@ -12,7 +12,7 @@ Let's start with an illustration of how traffic flows when you configure an [App
 
 The following diagram illustrates the virtual private cloud (VPC) subnets and routing associated with the incoming traffic flow, with the return traffic removed from the diagram for clarity.
 
-![Inbound traffic path associated with an Application Load Balancer.](http://docs.aws.amazon.com/prescriptive-guidance/latest/load-balancer-stickiness/images/guide-img/698bb10a-1e2e-4f76-b428-a7d412d56d80/images/29ca40b5-196a-457b-b713-933704a871b1.png)
+![Inbound traffic path associated with an Application Load Balancer.](https://docs.aws.amazon.com/prescriptive-guidance/latest/load-balancer-stickiness/images/guide-img/698bb10a-1e2e-4f76-b428-a7d412d56d80/images/29ca40b5-196a-457b-b713-933704a871b1.png)
 
 1. Traffic from the internet flows in to the Application Load Balancer DNS name.
 
@@ -27,7 +27,7 @@ The following diagram illustrates the virtual private cloud (VPC) subnets and ro
 
 The following diagram illustrates the VPC subnets and routing associated with the traffic path back out to the internet, with the incoming traffic removed from the diagram for clarity.
 
-![Outbound traffic path associated with an Application Load Balancer.](http://docs.aws.amazon.com/prescriptive-guidance/latest/load-balancer-stickiness/images/guide-img/698bb10a-1e2e-4f76-b428-a7d412d56d80/images/291e24b9-3680-491a-9fe4-d2863aedadc2.png)
+![Outbound traffic path associated with an Application Load Balancer.](https://docs.aws.amazon.com/prescriptive-guidance/latest/load-balancer-stickiness/images/guide-img/698bb10a-1e2e-4f76-b428-a7d412d56d80/images/291e24b9-3680-491a-9fe4-d2863aedadc2.png)
 
 1. The EC2 instance in the private subnet routes the outbound traffic through the route table.
 
@@ -42,7 +42,7 @@ The following diagram illustrates the VPC subnets and routing associated with th
 
 The following diagram combines the inbound and return traffic flows to provide a complete illustration of load balancer routing.
 
-![Round trip traffic path associated with an Application Load Balancer.](http://docs.aws.amazon.com/prescriptive-guidance/latest/load-balancer-stickiness/images/guide-img/698bb10a-1e2e-4f76-b428-a7d412d56d80/images/dc21d14b-d1b6-42d3-81f2-e532314f4ae9.png)
+![Round trip traffic path associated with an Application Load Balancer.](https://docs.aws.amazon.com/prescriptive-guidance/latest/load-balancer-stickiness/images/guide-img/698bb10a-1e2e-4f76-b428-a7d412d56d80/images/dc21d14b-d1b6-42d3-81f2-e532314f4ae9.png)
 
 1. Traffic from the internet flows in to the Application Load Balancer DNS name.
 

@@ -108,7 +108,7 @@ For log events
 
  For the events log API, we need to get the event name and attributes for the events log API and pass them into the new API. Of course, you can also use the "Replace in File" feature to make quick changes, as shown in the image below.
 
-![Replace All dialog confirming replacement of logEvent with AnalyticsLogger.log across 2 files.](http://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/replace-in-file.png)
+![Replace All dialog confirming replacement of logEvent with AnalyticsLogger.log across 2 files.](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/replace-in-file.png)
 
 For log user attributes
 

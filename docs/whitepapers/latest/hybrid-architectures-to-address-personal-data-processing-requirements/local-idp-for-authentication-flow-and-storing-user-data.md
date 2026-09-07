@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-
 
  AWS services – [Amazon Cognito](https://aws.amazon.com/cognito/), [AWS AppSync](https://aws.amazon.com/appsync/), and [Amazon DynamoDB](https://aws.amazon.com/dynamodb/)
 
-![Local identity provider for cloud-based application](http://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-to-address-personal-data-processing-requirements/images/local-identity-provider-cloud-based-apps.png)
+![Local identity provider for cloud-based application](https://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-to-address-personal-data-processing-requirements/images/local-identity-provider-cloud-based-apps.png)
 
  Local identity provider for cloud-based application
 

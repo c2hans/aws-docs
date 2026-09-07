@@ -19,7 +19,7 @@ Centralized Logging with OpenSearch supports collecting logs from Amazon EC2 ins
 
  **Application log pipeline architecture for EC2/EKS.**
 
-![arch app ec2eks](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/arch-app-ec2eks.png)
+![arch app ec2eks](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/arch-app-ec2eks.png)
 
 The log pipeline runs the following workflow:
 
@@ -43,7 +43,7 @@ The log pipeline runs the following workflow:
 
  **Application log pipeline architecture for EC2/EKS.**
 
-![image8](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image8.png)
+![image8](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image8.png)
 
 The log pipeline runs the following workflow:
 
@@ -72,7 +72,7 @@ In this scenario, the solutions continuously read and parse logs whenever you up
 
  **Application log pipeline architecture for Amazon S3.**
 
-![image9](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image9.png)
+![image9](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image9.png)
 
 The log pipeline runs the following workflow:
 
@@ -94,7 +94,7 @@ In this scenario, the solution scans existing log files stored in the specified 
 
  **Application log pipeline architecture for Amazon S3.**
 
-![image10](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image10.png)
+![image10](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image10.png)
 
 The log pipeline runs the following workflow:
 
@@ -116,7 +116,7 @@ The log pipeline runs the following workflow:
 
  **Application log pipeline architecture for Amazon S3.**
 
-![image11](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image11.png)
+![image11](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image11.png)
 
 The log pipeline runs the following workflow:
 
@@ -145,7 +145,7 @@ The Network Load Balancer together with the Amazon ECS containers in the archite
 
  **Application log pipeline architecture for Syslog.**
 
-![image12](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image12.png)
+![image12](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image12.png)
 
 1. Syslog client (like [Rsyslog](https://www.rsyslog.com/)) sends logs to a Network Load Balancer in Centralized Logging with OpenSearch’s private subnets, and the Network Load Balancer routes to the Amazon ECS containers running Syslog servers.
 
@@ -163,7 +163,7 @@ The Network Load Balancer together with the Amazon ECS containers in the archite
 
  **Application log pipeline architecture for Syslog.**
 
-![image13](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image13.png)
+![image13](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image13.png)
 
 1. Syslog client (like Rsyslog) send logs to a Network Load Balancer in Centralized Logging with OpenSearch’s private subnets, and the Network Load Balancer routes to the Amazon ECS containers running Syslog servers.
 

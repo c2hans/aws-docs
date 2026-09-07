@@ -41,7 +41,7 @@ The CloudWatch dashboard also comes with predefined alarms that alert to common 
 
 All alarm thresholds can be modified to suit the individual deployment needs.
 
-![Automated Security Response on AWS Remediations Metrics Dashboard.](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/asr-remediations-metrics-dashboard.png)
+![Automated Security Response on AWS Remediations Metrics Dashboard.](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/asr-remediations-metrics-dashboard.png)
 
 ## Modifying alarm thresholds
 <a name="modifying-alarm-thresholds"></a>
@@ -50,11 +50,11 @@ All alarm thresholds can be modified to suit the individual deployment needs.
 
 1. Choose the Alarm you would like to modify, then choose **Actions**, and then choose **Edit**.
 
-![CloudWatch Alarms console showing ASR solution alarm states](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/cloudwatch-alarm-list.png)
+![CloudWatch Alarms console showing ASR solution alarm states](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/cloudwatch-alarm-list.png)
 
 1. Change the threshold to the desired value and save.
 
-![Edit alarm dialog with threshold value and condition fields](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/edit-options-for-alarms.png)
+![Edit alarm dialog with threshold value and condition fields](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/edit-options-for-alarms.png)
 
 1. Navigate to the [CloudWatch dashboard](https://console.aws.amazon.com/cloudwatch/home#dashboards:) to modify the charts there to match the new settings.
 
@@ -66,4 +66,4 @@ All alarm thresholds can be modified to suit the individual deployment needs.
 
    1. Modify the Alarm annotation to match the new settings.
 
-![Widget editor Options tab with horizontal annotation settings](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/modify-dashboard-widget.png)
+![Widget editor Options tab with horizontal annotation settings](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/modify-dashboard-widget.png)

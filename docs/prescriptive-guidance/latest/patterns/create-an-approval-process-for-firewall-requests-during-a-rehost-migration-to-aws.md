@@ -50,7 +50,7 @@ The following table shows the use cases for this pattern.
 
 The following diagram shows the steps for the firewall request approval process.
 
-![Process for firewall request approval from an InfoSec team during a rehost migration to AWS Cloud.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/cf9b58ad-ab6f-43d3-92da-968529c8d042/images/c672f7ce-6e9f-4dbc-bf2c-4272a6c4432b.png)
+![Process for firewall request approval from an InfoSec team during a rehost migration to AWS Cloud.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/cf9b58ad-ab6f-43d3-92da-968529c8d042/images/c672f7ce-6e9f-4dbc-bf2c-4272a6c4432b.png)
 
 ## Tools
 <a name="create-an-approval-process-for-firewall-requests-during-a-rehost-migration-to-aws-tools"></a>

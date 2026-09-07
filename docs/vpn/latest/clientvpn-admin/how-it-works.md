@@ -15,7 +15,7 @@ The *client* is the end user. This is the person who connects to the Client VPN 
 
 The following graphic illustrates the basic Client VPN architecture.
 
-![Client VPN architecture](http://docs.aws.amazon.com/vpn/latest/clientvpn-admin/images/architecture.png)
+![Client VPN architecture](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/images/architecture.png)
 
 ## Scenarios and examples for Client VPN
 <a name="scenario"></a>
@@ -35,7 +35,7 @@ AWS Client VPN is a fully-managed remote access VPN solution that you use to all
 
 The AWS Client VPN configuration for this scenario includes a single target VPC. We recommend this configuration if you need to give clients access to the resources inside a single VPC only.
 
-![Client VPN accessing a VPC](http://docs.aws.amazon.com/vpn/latest/clientvpn-admin/images/client-vpn-scenario-vpc.png)
+![Client VPN accessing a VPC](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/images/client-vpn-scenario-vpc.png)
 
 Before you begin, do the following:
 + Create or identify a VPC with at least one subnet. Identify the subnet in the VPC to associate with the Client VPN endpoint and note its IPv4 CIDR ranges.
@@ -60,7 +60,7 @@ The AWS Client VPN configuration for this scenario includes a target VPC (VPC A)
 **Note**
 The procedure for allowing access to a peered VPC (outlined following the network diagram) is required only if the Client VPN endpoint was configured for split-tunnel mode. In full-tunnel mode, access to the peered VPC is allowed by default.
 
-![Client VPN accessing a peer VPC](http://docs.aws.amazon.com/vpn/latest/clientvpn-admin/images/client-vpn-scenario-peer-vpc.png)
+![Client VPN accessing a peer VPC](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/images/client-vpn-scenario-peer-vpc.png)
 
 Before you begin, do the following:
 + Create or identify a VPC with at least one subnet. Identify the subnet in the VPC to associate with the Client VPN endpoint and note its IPv4 CIDR ranges.
@@ -88,7 +88,7 @@ Before you begin, do the following:
 
 The AWS Client VPN configuration for this scenario includes access to an on-premises network only. We recommend this configuration if you need to give clients access to the resources inside an on-premises network only.
 
-![Client VPN accessing an on-premises network](http://docs.aws.amazon.com/vpn/latest/clientvpn-admin/images/client-vpn-scenario-on-premises.png)
+![Client VPN accessing an on-premises network](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/images/client-vpn-scenario-on-premises.png)
 
 Before you begin, do the following:
 + Create or identify a VPC with at least one subnet. Identify the subnet in the VPC to associate with the Client VPN endpoint and note its IPv4 CIDR ranges.
@@ -118,7 +118,7 @@ The AWS Client VPN configuration for this scenario includes a single target VPC 
 
 If you completed the [Get started with AWS Client VPN](cvpn-getting-started.md) tutorial, then you've already implemented this scenario.
 
-![Client VPN accessing the internet](http://docs.aws.amazon.com/vpn/latest/clientvpn-admin/images/client-vpn-scenario-igw.png)
+![Client VPN accessing the internet](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/images/client-vpn-scenario-igw.png)
 
 Before you begin, do the following:
 + Create or identify a VPC with at least one subnet. Identify the subnet in the VPC to associate with the Client VPN endpoint and note its IPv4 CIDR ranges.
@@ -150,7 +150,7 @@ Before you begin, do the following:
 
 The AWS Client VPN configuration for this scenario enables clients to access a single VPC, and enables clients to route traffic to each other. We recommend this configuration if the clients that connect to the same Client VPN endpoint also need to communicate with each other. Clients can communicate with each other using the unique IP address that's assigned to them from the client CIDR range when they connect to the Client VPN endpoint.
 
-![Client-to-client access](http://docs.aws.amazon.com/vpn/latest/clientvpn-admin/images/client-vpn-scenario-client-to-client.png)
+![Client-to-client access](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/images/client-vpn-scenario-client-to-client.png)
 
 Before you begin, do the following:
 + Create or identify a VPC with at least one subnet. Identify the subnet in the VPC to associate with the Client VPN endpoint and note its IPv4 CIDR ranges.
@@ -186,7 +186,7 @@ To grant access to a specific resource, identify the security group that's assoc
 
 In the following diagram, security group A is the Client VPN security group, security group B is associated with an EC2 instance, and security group C is associated with an EC2 instance. If you add a rule to security group B that allows access from security group A, then clients can access the instance associated with security group B. If security group C does not have a rule that allows access from security group A, then clients can't access the instance associated with security group C.
 
-![Restricting access to resources in a VPC](http://docs.aws.amazon.com/vpn/latest/clientvpn-admin/images/client-vpn-scenario-security-groups.png)
+![Restricting access to resources in a VPC](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/images/client-vpn-scenario-security-groups.png)
 
 Before you begin, check if the Client VPN security group is associated with other resources in your VPC. If you add or remove rules that reference the Client VPN security group, you might grant or deny access for the other associated resources too. To prevent this, use a security group that is specifically created for use with your Client VPN endpoint.
 

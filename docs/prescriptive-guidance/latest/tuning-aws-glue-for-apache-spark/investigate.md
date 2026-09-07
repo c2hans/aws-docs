@@ -16,14 +16,14 @@ When you open the Spark UI, Spark applications are listed in a table. By default
 
 The **Jobs** tab shows a summary of all jobs in the Spark application. To determine any stage or task failures, check the total number of tasks. To find the bottlenecks, sort by choosing **Duration**. Drill down to the details of long-running jobs by choosing the link shown in the **Description** column.
 
-![Spark Jobs tab showing duration, stages succeeded/total, and tasks succeeded/total.](http://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/592d38b4-3c49-4bce-b4bc-84f5dde53bf9.png)
+![Spark Jobs tab showing duration, stages succeeded/total, and tasks succeeded/total.](https://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/592d38b4-3c49-4bce-b4bc-84f5dde53bf9.png)
 
 The **Details for Job** page lists the stages. On this page, you can see overall insights such as duration, the number of succeeded and total tasks, the number of inputs and outputs, and the amount of shuffle read and shuffle write.
 
-![""](http://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/c00dfc5f-dc43-4166-9d48-3f47b79371af.png)
+![""](https://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/c00dfc5f-dc43-4166-9d48-3f47b79371af.png)
 
 The **Executor** tab shows the Spark cluster capacity in detail. You can check the total number of cores. The cluster shown in the following screenshot contains 316 active cores and 512 cores in total. By default, each core can process one Spark task at the same time.
 
-![Executors page summary showing the number cores for executors.](http://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/e3186dc7-a352-4510-bb18-39d33dbd086b.png)
+![Executors page summary showing the number cores for executors.](https://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/e3186dc7-a352-4510-bb18-39d33dbd086b.png)
 
 Based on the value  `5/5` shown on the **Details for Job** page, stage 5 is the longest stage, but it uses only 5 cores out of 512. Because the parallelism for this stage is so low, but it takes a significant amount of time, you can identify it as a bottleneck. To improve performance, you want to understand why. To learn more about how to recognize and reduce the impact of common performance bottlenecks, see [Strategies for tuning Spark job performance](performance-tuning-strategies.md).

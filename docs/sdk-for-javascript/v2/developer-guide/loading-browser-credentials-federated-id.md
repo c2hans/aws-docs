@@ -47,7 +47,7 @@ After you obtain the application ID from an identity provider, go to the IAM con
 1. For **Grant access to web identity providers**, choose **Select**.
 
 1. From the **Identity Provider** list, choose the identity provider that you want to use for this IAM role.
-![Selecting Role for Identity Provider Access](http://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/iam-provider-select.png)
+![Selecting Role for Identity Provider Access](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/iam-provider-select.png)
 
 1. Type the application ID provided by the identity provider in **Application ID** and then choose **Next Step**.
 

@@ -12,7 +12,7 @@ Amazon FSx for Windows File Server offers the flexibility to choose throughput i
 
 The following diagram shows the relationship between throughput and storage settings.
 
-![Relationship between throughput and storage settings](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/6d89270d-872d-40ec-861d-9f7de6e9bcbe.png)
+![Relationship between throughput and storage settings](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/6d89270d-872d-40ec-861d-9f7de6e9bcbe.png)
 
 With HDD-based storage, you receive a 12 IOPS baseline with 80 burst disk IOPS (IOPs per TiB of storage) and throughput of 12 Megabytes/second baseline with 80 burst Megabytes/second (per TiB of storage). For example, if your share is 50 TB in size, you get 50 \* 12 = 600 as baseline for both throughput and IOPS.
 

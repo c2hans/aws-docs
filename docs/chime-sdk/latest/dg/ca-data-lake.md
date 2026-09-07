@@ -57,7 +57,7 @@ The Amazon Chime SDK data lake is available in the following Regions.
 
 The following diagram shows the data lake architecture. Numbers in the drawing correspond to the numbered text below.
 
-![The program flow through a data lake.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/call-analytics-data-lake-architecture.png)
+![The program flow through a data lake.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/call-analytics-data-lake-architecture.png)
 
 In the diagram, once you use the AWS console to deploy the CloudFormation template from the media insights pipeline configuration setup workflow, the following data flows to the Amazon S3 bucket:
 

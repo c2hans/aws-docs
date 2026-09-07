@@ -9,4 +9,4 @@ The ingest, processing, and publishing workflow AWS Lambda functions, and Amazon
 
  **Video on demand solution error handling overview**
 
-![video on demand error handling](http://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws/images/video-on-demand-error-handling.png)
+![video on demand error handling](https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws/images/video-on-demand-error-handling.png)

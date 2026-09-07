@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 # Auto session revocation module
 <a name="auto-session-revocation-module"></a>
 
-![Diagram of auto session revocation module: Detect compromised sessions workflow.](http://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/image7.png)
+![Diagram of auto session revocation module: Detect compromised sessions workflow.](https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/image7.png)
 
  The base and API module provide the ability to react when, through external analysis, you identified a compromised playback session, if it was confirmed that session was used through unallowed distribution channels. Alternatively, you can also deploy additional and optional modules which facilitate detecting sessions with a high probability of being compromised. As the process of detecting suspicious session is run regularly, the resulting session list is emitted to DynamoDB created under base module. These sessions are ordered and processed as explained in the [Base module: session revocation workflow](auto-session-revocation-1.md) section.
 

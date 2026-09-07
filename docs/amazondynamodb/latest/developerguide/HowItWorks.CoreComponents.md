@@ -16,7 +16,7 @@ The following video will give you an introductory look at tables, items, and att
 ## Tables, items, and attributes
 <a name="HowItWorks.CoreComponents.TablesItemsAttributes"></a>
 
-![Each DynamoDB table contains zero or more items that are made of one or more attributes.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/HowItWorksTables-2024.png)
+![Each DynamoDB table contains zero or more items that are made of one or more attributes.](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/HowItWorksTables-2024.png)
 
 The following are the basic DynamoDB components:
 + **Tables** – Similar to other database systems, DynamoDB stores data in tables. A *table* is a collection of data. For example, see the example table called *People* that you could use to store personal contact information about friends, family, or anyone else of interest. You could also have a *Cars* table to store information about vehicles that people drive.
@@ -202,7 +202,7 @@ Each stream record also contains the name of the table, the event timestamp, and
 
 You can use DynamoDB Streams together with AWS Lambda to create a *trigger*—code that runs automatically whenever an event of interest appears in a stream. For example, consider a *Customers* table that contains customer information for a company. Suppose that you want to send a "welcome" email to each new customer. You could enable a stream on that table, and then associate the stream with a Lambda function. The Lambda function would run whenever a new stream record appears, but only process new items added to the *Customers* table. For any item that has an `EmailAddress` attribute, the Lambda function would invoke Amazon Simple Email Service (Amazon SES) to send an email to that address.
 
-![Integration of DynamoDB Streams and Lambda to automatically send a welcome email to new customers.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/HowItWorksStreams.png)
+![Integration of DynamoDB Streams and Lambda to automatically send a welcome email to new customers.](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/HowItWorksStreams.png)
 
 **Note**
 In this example, the last customer, Craig Roe, will not receive an email because he doesn't have an `EmailAddress`.

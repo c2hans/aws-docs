@@ -44,7 +44,7 @@ Downtime or outage of your PeopleSoft production application impacts the availab
 
 We recommend that you design your PeopleSoft production application so that it is always highly available. You can achieve this by eliminating single points of failure, adding reliable crossover or failover points, and detecting failures. The following diagram illustrates an HA architecture for PeopleSoft on AWS.
 
-![Highly available architecture for PeopleSoft on AWS](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/0db96376-dadb-4545-b130-ebbe64acd4e9/images/5d585a8e-320a-495d-a049-97171633e90f.png)
+![Highly available architecture for PeopleSoft on AWS](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/0db96376-dadb-4545-b130-ebbe64acd4e9/images/5d585a8e-320a-495d-a049-97171633e90f.png)
 
 This architecture deployment uses Amazon RDS for Oracle as the PeopleSoft database, and EC2 instances that are running on Red Hat Enterprise Linux (RHEL). You can also use Amazon RDS for SQL Server as the Peoplesoft database.
 

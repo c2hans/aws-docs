@@ -48,7 +48,7 @@ The pattern uses [Amazon Titan Text Embeddings v2](https://docs.aws.amazon.com/b
 
 The following diagram shows the workflow and architecture components for this pattern.
 
-![Workflow to create a RAG-based application using Aurora PostgreSQL and LLMs on Amazon Bedrock.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8f184945-7f17-4760-8806-6d0eaeef372a/images/3771b7a0-05bd-4eb3-ad5b-199e22f86184.png)
+![Workflow to create a RAG-based application using Aurora PostgreSQL and LLMs on Amazon Bedrock.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8f184945-7f17-4760-8806-6d0eaeef372a/images/3771b7a0-05bd-4eb3-ad5b-199e22f86184.png)
 
 This diagram illustrates the following:
 

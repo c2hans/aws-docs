@@ -31,7 +31,7 @@ The key terminology for ADDF is as follows:
 
 The following diagram shows a high-level architecture for an ADDF instance in the AWS Cloud. It shows a multi-account architecture, including a dedicated toolchain account and two target accounts. This guide discusses the end-to-end process of using ADDF to deploy resources to the target accounts.
 
-![ADDF local code, deployment manifest file, and AWS architecture with toolchain and target accounts.](http://docs.aws.amazon.com/prescriptive-guidance/latest/addf-security-and-operations/images/guide-img/b7c99a03-2a36-4dc2-9b13-9b2a1cbf7eb9/images/1f24d28f-7e67-4f5d-bf05-a79f75b470b9.png)
+![ADDF local code, deployment manifest file, and AWS architecture with toolchain and target accounts.](https://docs.aws.amazon.com/prescriptive-guidance/latest/addf-security-and-operations/images/guide-img/b7c99a03-2a36-4dc2-9b13-9b2a1cbf7eb9/images/1f24d28f-7e67-4f5d-bf05-a79f75b470b9.png)
 
 1. **Create and bootstrap the ADDF AWS accounts.**
 

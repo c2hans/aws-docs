@@ -13,7 +13,7 @@ The Lambda function also performs a callback to let the lifecycle of the instanc
 
 The following illustration summarizes the flow for a scale-out event when you use a Lambda function to perform a custom action. After an instance launches, the lifecycle of the instance is paused until the lifecycle hook is completed, either by timing out or by Amazon EC2 Auto Scaling receiving a signal to continue.
 
-![The flow for a scale-out event when you use a Lambda function to perform a custom action.](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/lifecycle-hook-lambda-function.png)
+![The flow for a scale-out event when you use a Lambda function to perform a custom action.](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/lifecycle-hook-lambda-function.png)
 
 **Note**
 Depending on your use case, you can configure a lifecycle hook by following the steps below and creating an EventBridge rule. Or, you can use a Lambda function to configure a lifecycle hook directly without creating an EventBridge rule.

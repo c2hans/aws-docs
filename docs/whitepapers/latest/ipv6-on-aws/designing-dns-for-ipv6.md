@@ -80,4 +80,4 @@ It is up to an IPv6 enabled host’s operating system and network stack whether 
 
  The NAT gateway enables your IPv6-only workloads in an Amazon VPC subnet to communicate with IPv4-only services anywhere outside the subnet.
 
-![This is a diagram that shows DNS64 and NAT64.](http://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/images/dns64-and-nat64.png)
+![This is a diagram that shows DNS64 and NAT64.](https://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/images/dns64-and-nat64.png)

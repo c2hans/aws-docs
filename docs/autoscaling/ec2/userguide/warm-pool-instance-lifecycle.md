@@ -36,7 +36,7 @@ An Auto Scaling instance can transition through many states as part of its lifec
 
 The following diagram shows the transition between Auto Scaling states when you use a warm pool:
 
-![The lifecycle state transitions for instances in a warm pool.](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/warm-pools-lifecycle-diagram.png)
+![The lifecycle state transitions for instances in a warm pool.](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/warm-pools-lifecycle-diagram.png)
 
 ¹ This state varies based on the warm pool's pool state setting. If the pool state is set to `Running`, then this state is `Warmed:Running` instead. If the pool state is set to `Hibernated`, then this state is `Warmed:Hibernated` instead.
 
@@ -48,7 +48,7 @@ When you add lifecycle hooks, consider the following:
 
 The following summarizes the flow for a scale-out event.
 
-![A flow diagram of a scale-out event.](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/warm-pools-scale-out-event-diagram.png)
+![A flow diagram of a scale-out event.](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/warm-pools-scale-out-event-diagram.png)
 
 When instances reach a wait state, Amazon EC2 Auto Scaling sends a notification. Examples of these notifications are available in the EventBridge section of this guide. For more information, see [Warm pool example events and patterns](warm-pools-eventbridge-events.md).
 

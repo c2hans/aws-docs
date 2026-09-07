@@ -53,7 +53,7 @@ The scatter-gather pattern uses a root controller to distribute requests to reci
 
 In the scatter by distribution method, the root controller divides the incoming request into independent tasks and assigns them to available recipients (the *scatter* phase). Each recipient (process, container, or Lambda function) works independently and in parallel on its computation, and produces a portion of the response. When the recipients complete their tasks, they send their responses to an aggregator (the *gather* phase). The aggregator combines the partial responses and returns the final result to the client. The following diagram illustrates this workflow.
 
-![Scatter by distribution method for the scatter-gather pattern](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/c00f559a-a88a-4a4b-ba60-1dd8b2190dc9.png)
+![Scatter by distribution method for the scatter-gather pattern](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/c00f559a-a88a-4a4b-ba60-1dd8b2190dc9.png)
 
 The controller (data file processor) orchestrates the entire set of invocations, and is aware of all the booking endpoints to call. It can configure a timeout parameter to ignore responses that take too long. When the requests have been sent, the aggregator waits for the responses back from each endpoint. To implement resilience, each microservice can be deployed with multiple instances for load balancing. The aggregator gets the results, combines them into a single response message, and removes duplicate data before further processing. The responses that time out are ignored. The controller can also act as an aggregator instead of using a separate aggregator service.
 
@@ -64,7 +64,7 @@ If the controller isn't aware of the recipients or the recipients are loosely co
 
 For example, in the following diagram, the scatter by auction method is used to implement a flight booking service for an airline's website. The website allows users to search and display flights from the airline's own carrier and its partners' carriers, and must display the status of the search in real time. The flight booking service consists of three search microservices: non-stop flights, flights with stops, and partner airlines. The partner airline search calls the partner's API endpoints to get the responses.
 
-![Scatter by auction method for the scatter-gather pattern](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/4e616708-4372-4395-a653-ef927a908379.png)
+![Scatter by auction method for the scatter-gather pattern](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/4e616708-4372-4395-a653-ef927a908379.png)
 
 1. The flight booking service (controller) takes the search criteria as input from the client, and processes and publishes the request to the topic.
 
@@ -86,18 +86,18 @@ For example, in the following diagram, the scatter by auction method is used to 
 
 In the following architecture, the root controller is a data file processor (Amazon ECS) that splits the incoming request data into individual Amazon Simple Storage Service (Amazon S3) buckets and starts an AWS Step Functions workflow. The workflow downloads the data and initiates parallel file processing. The `Parallel` state waits for all the tasks to return a response. An AWS Lambda function aggregates the data and saves it back to Amazon S3.
 
-![Implementing the scatter by distribution method on AWS - architecture](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/8b68cf03-c874-479c-986e-8fddd1413e4c.png)
+![Implementing the scatter by distribution method on AWS - architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/8b68cf03-c874-479c-986e-8fddd1413e4c.png)
 
 The following diagram illustrates the Step Functions workflow with the `Parallel` state.
 
-![Implementing the scatter by distribution method on AWS - Step Functions workflow](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/a07fb547-098e-4501-a605-a72609ce98fd.png)
+![Implementing the scatter by distribution method on AWS - Step Functions workflow](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/a07fb547-098e-4501-a605-a72609ce98fd.png)
 
 #### Scatter by auction
 <a name="scatter-by-auction.a630a35c-038a-5885-89f9-31b48f5acba6"></a>
 
 The following diagram shows an AWS architecture for the scatter by auction method. The root controller **flight booking service **scatters the flight search request to multiple microservices. A publish-subscribe channel is implemented with Amazon Simple Notification Service (Amazon SNS), which is a managed messaging service for communications. Amazon SNS supports messages between decoupled microservice applications or direct communications to users. You can deploy the recipient microservices on Amazon Elastic Kubernetes Service (Amazon EKS) or Amazon Elastic Container Service (Amazon ECS) for better management and scalability. **The flight results service** returns the results to the client. It can be implemented in AWS Lambda or other container orchestration services such as Amazon ECS or Amazon EKS.
 
-![AWS architecture for scatter by auction method](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/de9ade8a-1f31-4bf2-875e-6c9ace06a239.png)
+![AWS architecture for scatter by auction method](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/de9ade8a-1f31-4bf2-875e-6c9ace06a239.png)
 
 1. The flight booking service (controller) takes the search criteria as input from the client, and processes and publishes the request to the SNS topic.
 

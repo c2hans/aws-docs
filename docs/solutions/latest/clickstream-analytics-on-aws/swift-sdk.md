@@ -27,7 +27,7 @@ Clickstream Swift SDK can help you easily collect in-app click stream data from 
 
  The guidance uses Swift Package Manager to distribute Clickstream Swift SDK. Open your project in Xcode and select **File** > **Add Packages**.
 
-![Xcode File menu with Add Packages option highlighted.](http://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/add-packages.png)
+![Xcode File menu with Add Packages option highlighted.](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/add-packages.png)
 
 1.  Copy the Clickstream Swift SDK GitHub repository URL and paste it into the search bar.
 
@@ -41,14 +41,14 @@ Clickstream Swift SDK can help you easily collect in-app click stream data from 
 
 1.  Choose **Add Package** again to finish the package installation.
 
-![Dialog box for choosing package products with Clickstream library selected for SwiftDemoApp target.](http://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/add-package-1.png)
+![Dialog box for choosing package products with Clickstream library selected for SwiftDemoApp target.](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/add-package-1.png)
 
 ### 2 Parameter configuration
 <a name="parameter-configuration"></a>
 
  Download your `amplifyconfiguration.json` file from your Clickstream guidance control plane. Copy and paste it to your project root folder:
 
-![Xcode project navigator showing amplifyconfiguration file highlighted in the project structure.](http://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/configure-parameter.png)
+![Xcode project navigator showing amplifyconfiguration file highlighted in the project structure.](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/configure-parameter.png)
 
  The JSON file will be as follows:
 

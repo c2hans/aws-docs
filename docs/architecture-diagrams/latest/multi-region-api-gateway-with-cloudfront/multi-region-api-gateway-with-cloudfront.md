@@ -12,7 +12,7 @@ This architecture shows how you can reduce latency for end-users, while increasi
 ## Multi-region API Gateway with CloudFront
 <a name="diagram1"></a>
 
-![Reference architecture diagram showing how you can reduce latency for end-users, while increasing an application’s availability by providing API Gateway endpoints in multiple AWS Regions. Each endpoint offers read-local write-global data synchronization supported by the Amazon Aurora Global Database.](http://docs.aws.amazon.com/architecture-diagrams/latest/multi-region-api-gateway-with-cloudfront/images/multi-region-gateway.png)
+![Reference architecture diagram showing how you can reduce latency for end-users, while increasing an application’s availability by providing API Gateway endpoints in multiple AWS Regions. Each endpoint offers read-local write-global data synchronization supported by the Amazon Aurora Global Database.](https://docs.aws.amazon.com/architecture-diagrams/latest/multi-region-api-gateway-with-cloudfront/images/multi-region-gateway.png)
 
 1. Deploy an API endpoint in two or more AWS Regions using **Amazon API Gateway**, then handle requests using **AWS Lambda** connected to an **Amazon Aurora** relational database.
 
@@ -38,7 +38,7 @@ To customize this reference architecture diagram based on your business needs, [
 ## Create a free AWS account
 <a name="create-a-free-aws-account"></a>
 
-[![Sign up for a free AWS account](http://docs.aws.amazon.com/architecture-diagrams/latest/multi-region-api-gateway-with-cloudfront/images/signup.png)](https://portal.aws.amazon.com/gp/aws/developer/registration/index.html)
+[![Sign up for a free AWS account](https://docs.aws.amazon.com/architecture-diagrams/latest/multi-region-api-gateway-with-cloudfront/images/signup.png)](https://portal.aws.amazon.com/gp/aws/developer/registration/index.html)
 
 Sign up for an AWS account. New accounts include 12 months of [AWS Free Tier](https://aws.amazon.com/free/) access, including the use of Amazon EC2, Amazon S3, and Amazon DynamoDB.
 

@@ -106,7 +106,7 @@ For more information, refer to the [Account lifecycle](account-lifecycle-in-isb.
 
 As an Administrator, you can manage any existing accounts. This allows you to manually perform account lifecycle actions such as removing accounts from the pool, and retrying the cleanup process.
 
-![Account management options](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/account-admin-actions.png)
+![Account management options](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/account-admin-actions.png)
 
 **Account management options**
 To manage accounts:
@@ -183,7 +183,7 @@ Every quarantine action, regardless of cause, is recorded for auditing purposes.
 
 As an Administrator, you can register CloudFormation StackSets as blueprints to provide pre-configured infrastructure to sandbox accounts. Blueprints enable users to receive accounts with ready-to-use resources, reducing manual setup.
 
-![Blueprints list page](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/blueprints-list-page.png)
+![Blueprints list page](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/blueprints-list-page.png)
 
 **Blueprints page**
 Blueprints are optional. You must create self-managed CloudFormation StackSets outside of Innovation Sandbox before registering them as blueprints.
@@ -268,14 +268,14 @@ To register a blueprint using the registration wizard:
    1.  *(Optional)* Add tags to provide metadata such as estimated cost, description, or support contact.
 
    1. Choose **Next**.
-![Blueprint Configuration page](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/blueprint-registration-wizard-step1.png)
+![Blueprint Configuration page](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/blueprint-registration-wizard-step1.png)
 
 1. On the **StackSet Selection** page:
 
    1. Select the StackSet you want to register as a blueprint from the list.
 
    1. Choose **Next**.
-![StackSet Selection page](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/blueprint-registration-wizard-step2.png)
+![StackSet Selection page](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/blueprint-registration-wizard-step2.png)
 
 1. On the **Deployment Configuration** page, configure deployment settings:
 
@@ -309,7 +309,7 @@ The available regions are determined by the **ISB Managed Regions** parameter co
 For new blueprints, use the **Default** strategy (0% failure tolerance) until you have validated that the StackSet deploys reliably. Switch to **Custom** with higher failure tolerance only when you understand the trade-off: users may receive accounts with missing resources in failed regions.
 
    1. Choose **Next**.
-![Deployment Configuration page](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/blueprint-registration-wizard-step3.png)
+![Deployment Configuration page](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/blueprint-registration-wizard-step3.png)
 
       1. On the **Review and Submit** page, review your configuration and choose **Register blueprint**.
 
@@ -343,7 +343,7 @@ To view blueprint health and deployment history:
 
 1. Select a blueprint name to view details.
 
-![Blueprint details page](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/blueprint-details-page.png)
+![Blueprint details page](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/blueprint-details-page.png)
 
 **Blueprint details page**
 The blueprint details page shows:
@@ -368,7 +368,7 @@ To update a blueprint:
    +  **Deployment configuration**: Update timeout, deployment strategy, or concurrency settings
 
 1. Make your changes and choose **Save**.
-![Edit deployment configuration page](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/blueprint-edit-deployment-config.png)
+![Edit deployment configuration page](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/blueprint-edit-deployment-config.png)
 
 **Note**
 Updating blueprint metadata does not affect existing leases. New leases will use the updated configuration.
@@ -381,7 +381,7 @@ To unregister a blueprint:
 1. On the **Blueprints** page, select one or more blueprints you want to unregister.
 
 1. Under **Actions**, choose **Unregister**.
-![Unregister action in Actions dropdown](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/blueprint-unregister-action.png)
+![Unregister action in Actions dropdown](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/blueprint-unregister-action.png)
 
 1. Review the blueprints to be unregistered and choose **Submit**.
 
@@ -393,7 +393,7 @@ You cannot unregister blueprints that are associated with active lease templates
 
 You can view and modify your Innovation Sandbox settings on the **Settings** page. From the left navigation pane, choose **Settings**. Administrators can edit every section; Managers see a read-only view of the same sections; sandbox users cannot access the **Settings** page.
 
-![Innovation Sandbox Settings page showing Leases & Cost](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/settings-page-overview.png)
+![Innovation Sandbox Settings page showing Leases & Cost](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/settings-page-overview.png)
 
 **Innovation Sandbox Settings page**
 As an Administrator, you can modify all global settings directly on the **Settings** page. Managers can open the **Settings** page to view the current values, but cannot change them.
@@ -434,7 +434,7 @@ Review each section and choose **Save** to apply it to your deployment. You can 
 
 Maintenance mode temporarily restricts the solution to Administrators. When maintenance mode is on, Managers and sandbox users lose access to the Innovation Sandbox web application. A maintenance banner displays on every page of the web UI. Their existing sandbox accounts are unaffected, and Administrators retain full access. Use maintenance mode when performing sensitive maintenance work, such as initial setup, troubleshooting, or upgrading the solution.
 
-![Settings page General tab with Maintenance Mode toggle](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/settings-general-maintenance.png)
+![Settings page General tab with Maintenance Mode toggle](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/settings-general-maintenance.png)
 
 **Maintenance Mode section on the General tab**
 To turn maintenance mode on or off:

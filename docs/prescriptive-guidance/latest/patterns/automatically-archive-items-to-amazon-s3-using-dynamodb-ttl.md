@@ -39,7 +39,7 @@ Items deleted by TTL can be identified in DynamoDB Streams, which captures a tim
 + AWS Lambda
 + Amazon S3
 
-![Four-step process from DynamoDB to the S3 bucket.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9dbc833f-cf3c-4574-8f09-d0b81134fe41/images/50d9da65-5398-4a99-bc8f-58afc80e9d7b.png)
+![Four-step process from DynamoDB to the S3 bucket.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9dbc833f-cf3c-4574-8f09-d0b81134fe41/images/50d9da65-5398-4a99-bc8f-58afc80e9d7b.png)
 
 1. Items are deleted by TTL.
 

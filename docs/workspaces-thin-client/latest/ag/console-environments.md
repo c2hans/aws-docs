@@ -17,7 +17,7 @@ Each WorkSpaces Thin Client device uses an individual virtual desktop environmen
 
 There are a number of parameters for your environment for you to review as well as some actions you can take.
 
-![Environments table showing name, virtual desktop service, activation code, device count, and time created columns.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ag/images/environment-list.png)
+![Environments table showing name, virtual desktop service, activation code, device count, and time created columns.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/images/environment-list.png)
 
 ### Environment list details
 <a name="environment-list-details"></a>

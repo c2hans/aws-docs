@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 
  After deactivating the demo website, you can retain the API Gateway endpoints and their integrations with Lambda functions and have your own services, which interact directly with the client applications, to treat that API Gateway endpoint as an internal token service. The security of interfacing API Gateway privately relies on IAM authorization as IAM authorizer is turned on by default in API Gateway configuration fronting Lambda functions that generate the tokens, and revoke the sessions. Another aspect is integrating your CMS with the Lambda function for token generation as you must provide the inputs that define token policy for a given video asset, unless the token policy is static and same token policy template can be used. The diagram below depicts the integration model:
 
-![Diagram of API Gateway workflow: Reuse and modify workflow.](http://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/image22.png)
+![Diagram of API Gateway workflow: Reuse and modify workflow.](https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/image22.png)
 
  To integrate your existing playback services with the API module provided in the solution, review the following steps:
 

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/govern-arch
 
 Organizations must make a fundamental architectural decision regarding how agents access foundation models. This choice shapes security enforcement, operational governance, and the overall system architecture.
 
-![Architecture diagram core services model access](http://docs.aws.amazon.com/prescriptive-guidance/latest/govern-architect-agentic-ai/images/guide-img/5961cc11-38d0-411b-a5ab-a75afdc073b4/images/d67af5cc-4c84-4325-aa12-ab2f7df11dfb.png)
+![Architecture diagram core services model access](https://docs.aws.amazon.com/prescriptive-guidance/latest/govern-architect-agentic-ai/images/guide-img/5961cc11-38d0-411b-a5ab-a75afdc073b4/images/d67af5cc-4c84-4325-aa12-ab2f7df11dfb.png)
 
 Two primary patterns exist for model access, each with advantages and disadvantages:
 + Cloud native

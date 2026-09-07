@@ -45,7 +45,7 @@ You can use this pattern if you want data persistence in your containerized appl
 ## Architecture
 <a name="run-stateful-workloads-with-persistent-data-storage-by-using-amazon-efs-on-amazon-eks-with-aws-fargate-architecture"></a>
 
-![Architecture diagram of running stateful workloads with persistent data storage by using Amazon EFS](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2487e285-269b-415b-a270-877f973e3aaf/images/ec8de63c-3307-4010-9e03-2bd7b9881fff.png)
+![Architecture diagram of running stateful workloads with persistent data storage by using Amazon EFS](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2487e285-269b-415b-a270-877f973e3aaf/images/ec8de63c-3307-4010-9e03-2bd7b9881fff.png)
 
 The target architecture is comprised of the following infrastructure:
 + A virtual private cloud (VPC)

@@ -11,6 +11,6 @@ With EKS Auto Mode, AWS is responsible for the configuration, patching, and heal
 
 EKS Auto Mode accomplishes this by using [EC2 managed](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/amazon-ec2-managed-instances.html) instances. Using managed instances, customers can delegate operational control over the instances to the Amazon EKS service. EKS is then responsible for patching the components that are delivered as part of the AMI. This combines with the 21-day maximum node lifetime for Auto Mode, so that nodes are regularly replaced with newer nodes running the most recently released version of the AMI, containing the latest patches.
 
-![Figure 2: Shared Responsibility Model with EKS Auto Mode](http://docs.aws.amazon.com/whitepapers/latest/security-overview-amazon-eks-auto-mode/images/image2.jpg)
+![Figure 2: Shared Responsibility Model with EKS Auto Mode](https://docs.aws.amazon.com/whitepapers/latest/security-overview-amazon-eks-auto-mode/images/image2.jpg)
 
 Figure 1: Shared Responsibility Model with EKS Auto Mode

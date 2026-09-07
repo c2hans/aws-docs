@@ -11,6 +11,6 @@ In this scenario, you configure a warm standby SQL Server database on an Amazon 
 
 This option supports all versions and editions of SQL Server. After you have migrated the database to the AWS Cloud, you can add a secondary replica by using an Always On availability group for high availability and resiliency purposes.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-sql-server/images/guide-img/aa3b9357-4901-48ca-9fc9-a997d21ade3e/images/e19f3ec5-7e60-44c5-ba6c-a05e580958de.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-sql-server/images/guide-img/aa3b9357-4901-48ca-9fc9-a997d21ade3e/images/e19f3ec5-7e60-44c5-ba6c-a05e580958de.png)
 
 For more information about using this method to achieve high availability, data protection, and disaster recovery for your SQL Server databases on Amazon EC2, see [Log shipping](ec2-sql-ha.md#ec2-log-shipping) in the *Amazon EC2 for SQL Server* section.

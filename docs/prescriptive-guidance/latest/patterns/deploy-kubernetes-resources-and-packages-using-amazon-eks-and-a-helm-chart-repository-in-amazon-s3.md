@@ -46,7 +46,7 @@ This pattern uses Amazon Elastic Kubernetes Service (Amazon EKS) for the Kuberne
 
 **Target architecture **
 
-![Client Helm and Kubectl deploy a Helm chart repo in Amazon S3 for Amazon EKS clusters.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/d3f993e6-4d96-4cb9-a075-c4debe431fd7/images/2f09f7bb-440a-4c4b-b29f-08d136d1ada4.png)
+![Client Helm and Kubectl deploy a Helm chart repo in Amazon S3 for Amazon EKS clusters.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/d3f993e6-4d96-4cb9-a075-c4debe431fd7/images/2f09f7bb-440a-4c4b-b29f-08d136d1ada4.png)
 
 **Automation and scale**
 + AWS CloudFormation can be used to automate the infrastructure creation. For more information, see [Creating Amazon EKS resources with AWS CloudFormation](https://docs.aws.amazon.com/eks/latest/userguide/creating-resources-with-cloudformation.html) in the Amazon EKS documentation.

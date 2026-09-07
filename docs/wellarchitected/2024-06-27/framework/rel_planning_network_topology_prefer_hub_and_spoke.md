@@ -11,7 +11,7 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 
  AWS Transit Gateway is a managed, scalable, and highly-available service designed for construction of hub-and-spoke networks on AWS. It serves as the central hub of your network that provides network segmentation, centralized routing, and the simplified connection to both cloud and on-premises environments. The following figure illustrates how you can use AWS Transit Gateway to build your hub-and-spoke topology.
 
-![Hub-and-spoke network topology with AWS Transit Gateway connecting VPN, Direct Connect , and VPCs.](http://docs.aws.amazon.com/wellarchitected/2024-06-27/framework/images/hub-and-spoke.png)
+![Hub-and-spoke network topology with AWS Transit Gateway connecting VPN, Direct Connect , and VPCs.](https://docs.aws.amazon.com/wellarchitected/2024-06-27/framework/images/hub-and-spoke.png)
 
  **Common anti-patterns:**
 +  You overcomplicate routing policies in a hub-and-spoke architecture, which reduces reduce network efficiency and complicates both troubleshooting and proactive management.

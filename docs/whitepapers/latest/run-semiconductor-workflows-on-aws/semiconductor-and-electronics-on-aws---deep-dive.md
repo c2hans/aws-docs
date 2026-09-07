@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-wor
 
  The following diagram is a complex architecture and gives a detailed guide for running your entire workflow, from customer specification, to silicon, to manufactured product. (For a PDF of this diagram, see [Reference Architecture: Semiconductor and Electronics on AWS](https://d1.awsstatic.com/architecture-diagrams/ArchitectureDiagrams/semiconductor-and-electronics-industry-on-aws-ra.pdf)). The following table provide links to the respective section in this paper describing each component of this architecture along with the specific AWS services involved.
 
-![This annotated diagram shows a detailed view of a semiconductor and electronics design environment on AWS.](http://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-workflows-on-aws/images/semiconductor-environment-deep-dive.png)
+![This annotated diagram shows a detailed view of a semiconductor and electronics design environment on AWS.](https://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-workflows-on-aws/images/semiconductor-environment-deep-dive.png)
 
 **Semiconductor and Electronics Design on AWS - Deep Dive**
 

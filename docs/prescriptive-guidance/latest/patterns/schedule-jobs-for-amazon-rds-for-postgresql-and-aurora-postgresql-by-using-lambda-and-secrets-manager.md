@@ -40,7 +40,7 @@ This stack has a Lambda function that uses the credentials stored in Secrets Man
 
 **Target architecture**
 
-![CloudWatch event starting a Lambda function that schedules jobs for the RDS DB instance.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8e0d1c90-0599-4909-a800-26a89b87f686/images/61f9ca34-9157-4565-96ba-5234d389ac2a.png)
+![CloudWatch event starting a Lambda function that schedules jobs for the RDS DB instance.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8e0d1c90-0599-4909-a800-26a89b87f686/images/61f9ca34-9157-4565-96ba-5234d389ac2a.png)
 
 ## Tools
 <a name="schedule-jobs-for-amazon-rds-for-postgresql-and-aurora-postgresql-by-using-lambda-and-secrets-manager-tools"></a>

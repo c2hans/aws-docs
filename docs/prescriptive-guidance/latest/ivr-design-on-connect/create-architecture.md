@@ -20,7 +20,7 @@ Using static values in the IVR system makes it difficult to track and change the
 
 Typically, while designing a multi-language IVR system, developers identify the customer's preferred language, and then create two versions of the same flow. The first version has prompt messages hard-coded in Language A, and the second version might have messages hard-coded in Language B, as the following diagram illustrates.
 
-![Static approach in designing an IVR system](http://docs.aws.amazon.com/prescriptive-guidance/latest/ivr-design-on-connect/images/guide-img/f2589901-9308-49b2-a33a-24321d4bafd8/images/dc980fc6-062f-40d8-899c-c053ef7492bf.png)
+![Static approach in designing an IVR system](https://docs.aws.amazon.com/prescriptive-guidance/latest/ivr-design-on-connect/images/guide-img/f2589901-9308-49b2-a33a-24321d4bafd8/images/dc980fc6-062f-40d8-899c-c053ef7492bf.png)
 
  This approach is difficult to scale because developers have to maintain different versions of the same flow. They also have to create a new version of the flow every time they add an new language.
 
@@ -30,7 +30,7 @@ Additionally, any changes they make to business logic in one flow must be replic
 
 The recommended approach to solve this problem is to assign prompt messages to variables instead of using static values in the prompt blocks of the IVR designer. Based on the customer's choice of language, invoke the values of the prompts from an external database and populate the variables to play those messages as shown in the following flowchart. When you use this approach, you can maintain a single IVR flow and easily scale to *n* number of languages. As a developer, you add language prompts to the external database and invoke them (by using an API) based on customer selection in the IVR system or on data returned from a CRM query. This also protects the IVR system from any changes in business logic. When you use this model, make sure that you have a default branch with a minimal set of static messages that can be used in the event of database or query failures.
 
-![Dynamic approach in designing an IVR system](http://docs.aws.amazon.com/prescriptive-guidance/latest/ivr-design-on-connect/images/guide-img/f2589901-9308-49b2-a33a-24321d4bafd8/images/1e8747b0-3f28-48ee-8713-054f9b809f03.png)
+![Dynamic approach in designing an IVR system](https://docs.aws.amazon.com/prescriptive-guidance/latest/ivr-design-on-connect/images/guide-img/f2589901-9308-49b2-a33a-24321d4bafd8/images/1e8747b0-3f28-48ee-8713-054f9b809f03.png)
 
 ## Identifying repeatable processes
 <a name="repeatable-processes"></a>

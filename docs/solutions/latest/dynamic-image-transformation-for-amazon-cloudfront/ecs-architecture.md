@@ -9,7 +9,7 @@ This high-performance container-based architecture supports images up to 100 MB 
 
  **ECS architecture for high-performance image processing**
 
-![ECS architecture diagram showing CloudFront](http://docs.aws.amazon.com/solutions/latest/dynamic-image-transformation-for-amazon-cloudfront/images/serverless-image-handler-alb-ecs-architecture.png)
+![ECS architecture diagram showing CloudFront](https://docs.aws.amazon.com/solutions/latest/dynamic-image-transformation-for-amazon-cloudfront/images/serverless-image-handler-alb-ecs-architecture.png)
 
 The high-level process flow for the ECS architecture is as follows:
 

@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/quick-suite
 **Note**
 An *IAM user* is an entity that you create in AWS Identity and Access Management (IAM). This type of entity accesses your AWS account by using long-term credentials. As a best practice, AWS recommends that you grant access through temporary credentials by using identity federation and IAM roles. For more information, see [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html).
 
-![Architecture diagram of an IAM user accessing Quick Suite.](http://docs.aws.amazon.com/prescriptive-guidance/latest/quick-suite-access-approach/images/guide-img/ec03a023-a3ad-4a10-93bb-22dcf4ea49a5/images/01bb1fdf-7a7f-42fb-a01a-90fc27c3f67e.png)
+![Architecture diagram of an IAM user accessing Quick Suite.](https://docs.aws.amazon.com/prescriptive-guidance/latest/quick-suite-access-approach/images/guide-img/ec03a023-a3ad-4a10-93bb-22dcf4ea49a5/images/01bb1fdf-7a7f-42fb-a01a-90fc27c3f67e.png)
 
 The following are the characteristics of this architecture and access approach:
 + The Amazon Quick user record is linked to the user in IAM.

@@ -23,7 +23,7 @@ Before migrating, you'll choose between two runtime options:
 
 The exact procedure that you follow depends on your device resources, required features, and specific environment requirements.
 
-![An overview of how to migrate from AWS IoT Greengrass V1 to AWS IoT Greengrass V2.](http://docs.aws.amazon.com/greengrass/v2/developerguide/images/migration-workflow-updated.png)
+![An overview of how to migrate from AWS IoT Greengrass V1 to AWS IoT Greengrass V2.](https://docs.aws.amazon.com/greengrass/v2/developerguide/images/migration-workflow-updated.png)
 
 1.
 

@@ -33,7 +33,7 @@ This pattern describes how to migrate small sets of data (5 TB or less) from on-
 
 **Source and target architecture**
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a9c016ff-3e68-4714-ac51-46cb4727397a/images/5c5bb9ea-d552-44e8-8d0d-df341f84f55d.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a9c016ff-3e68-4714-ac51-46cb4727397a/images/5c5bb9ea-d552-44e8-8d0d-df341f84f55d.png)
 
 ## Tools
 <a name="migrate-small-sets-of-data-from-on-premises-to-amazon-s3-using-aws-sftp-tools"></a>

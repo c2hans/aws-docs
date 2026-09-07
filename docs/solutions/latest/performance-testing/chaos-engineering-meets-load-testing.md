@@ -12,7 +12,7 @@ Load testing tells you how the system performs under expected conditions. Chaos 
 
 AWS Fault Injection Service (FIS) lets you inject controlled faults into your AWS environment: terminate instances, throttle APIs, add network latency, disrupt AZ connectivity. Running FIS experiments during an active DLT load test creates the most realistic validation of system resilience.
 
-![Chaos Engineering Meets Load Testing](http://docs.aws.amazon.com/solutions/latest/performance-testing/images/perf_chaos_load.png)
+![Chaos Engineering Meets Load Testing](https://docs.aws.amazon.com/solutions/latest/performance-testing/images/perf_chaos_load.png)
 
 ## Common DLT \+ FIS Experiment Combinations
 <a name="common-dlt-fis-combinations"></a>

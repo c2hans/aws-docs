@@ -46,7 +46,7 @@ When you migrate Internet Information Services (IIS)-hosted applications to Amaz
 
 The following diagram shows the workflow and architecture components for this pattern.
 
-![Workflow to migrate IIS-hosted applications to Amazon EC2.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2f9f7757-b2bc-4077-b51a-700de521424c/images/36aa9b7a-d0aa-4fa4-be47-9fee43b53c22.png)
+![Workflow to migrate IIS-hosted applications to Amazon EC2.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2f9f7757-b2bc-4077-b51a-700de521424c/images/36aa9b7a-d0aa-4fa4-be47-9fee43b53c22.png)
 
 The solution includes the following steps:
 

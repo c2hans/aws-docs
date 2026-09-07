@@ -42,7 +42,7 @@ For specific permissions that define allowable API operations on remote resource
    **Additional Explorer Resources** in the **Settings** pane displays a list of resource types that are available for selection.
 **Note**
 You can also display the list of resource types by double-clicking the **Add or remove resources** node, which is under **Resources**.
-![Selecting resources to configure.](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/add-resources-renamed.png)
+![Selecting resources to configure.](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/add-resources-renamed.png)
 
 1. In the **Additional Explorer Resources**, select the resource types to add to the **AWS Explorer** and press **Return** or choose **OK** to confirm.
 
@@ -65,7 +65,7 @@ You can also view the resource by double-clicking it.
    + **Delete resource**: Delete the resource by confirming the deletion in a dialog box that is displayed. (Deleting resources is currently an [experimental feature](#experimental-feature-warning) in this version of the AWS Toolkit for JetBrains.)
 **Warning**
 If you delete a resource, any AWS CloudFormation stack that uses that resource will fail to update. To fix this update failure, you need to either recreate the resource or remove the reference to it in the stack's CloudFormation template. For more information, see this [Knowledge Center article](https://aws.amazon.com/premiumsupport/knowledge-center/failing-stack-updates-deleted/).
-![Menu options for a selected resource.](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/resource-menu-options-renamed.png)
+![Menu options for a selected resource.](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/resource-menu-options-renamed.png)
 
 ## Creating and updating resources
 <a name="create-resources"></a>
@@ -80,12 +80,12 @@ For example, a resource that belongs to the `AWS::SageMaker::UserProfile` resour
 1. Add the resource type for the resource you want to create by right-clicking **Resources** and choosing **Add or remove resources**.
 
 1. After the resource type is added under **Resources**, right-click its name and choose **Create resource**. You can also access information about how to model the resource by choosing **View documentation**.
-![Menu options for a selected resource type.](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/resource-new.png)
+![Menu options for a selected resource type.](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/resource-new.png)
 
 1. In the editor, start to define properties that make up the resource template. The autocomplete feature suggests property names that conform with your template's schema. When your temple fully conforms with JSON syntax, the error count is replaced by a green checkmark. For detailed information about the schema, choose **View documentation**.
 **Note**
 As well as conforming to basic JSON syntax, your template must conform to the schema that models the resource type. Your template is validated against the schema model when you try to create or update the remote resource.
-![Editor displaying the template that describes a resource type.](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/resource-template.png)
+![Editor displaying the template that describes a resource type.](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/resource-template.png)
 
 1. After you finish declaring your resource, choose **Create** to validate your template and save the resource to the remote AWS Cloud. (Choose **Update** if you're modifying an existing resource.)
 

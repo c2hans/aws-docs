@@ -61,7 +61,7 @@ This solution was tested with the following versions:
 
 The following diagram shows the architecture for this solution.
 
-![Architecture to deploy SQL Server failover cluster instances across Windows Server Failover Cluster nodes on Amazon EC2.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/45f3ab19-d240-4353-ab6e-f6e565f537a4/images/0bff16f2-94e7-4e86-91ea-7ab5f3725620.png)
+![Architecture to deploy SQL Server failover cluster instances across Windows Server Failover Cluster nodes on Amazon EC2.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/45f3ab19-d240-4353-ab6e-f6e565f537a4/images/0bff16f2-94e7-4e86-91ea-7ab5f3725620.png)
 
 The diagram shows the following:
 + An IAM role providing the EC2 instances access to AWS KMS and Secrets Manager

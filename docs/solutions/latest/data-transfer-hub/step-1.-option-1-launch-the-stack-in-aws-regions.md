@@ -15,7 +15,7 @@ You are responsible for the cost of the AWS services used while running this Gui
 
 1. Sign in to the AWS Management Console and use the button below to launch the `DataTransferHub-cognito.template` CloudFormation template. Alternatively, you can [download the template](https://solutions-reference.s3.amazonaws.com/data-transfer-hub/latest/DataTransferHub-cognito.template) as a starting point for your own implementation.
 
-   [![Blue oval button with white text reading "Launch solution".](http://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/launch-solution.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/create/template?stackName=DataTransferHub&templateURL=https://s3.amazonaws.com/solutions-reference/data-transfer-hub/latest/DataTransferHub-cognito.template&redirectId=ImplementationGuide)
+   [![Blue oval button with white text reading "Launch solution".](https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/launch-solution.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/create/template?stackName=DataTransferHub&templateURL=https://s3.amazonaws.com/solutions-reference/data-transfer-hub/latest/DataTransferHub-cognito.template&redirectId=ImplementationGuide)
 
 1.  The template launches in the US East (N. Virginia) Region by default. To launch the Guidance in a different AWS Region, use the Region selector in the console navigation bar.
 

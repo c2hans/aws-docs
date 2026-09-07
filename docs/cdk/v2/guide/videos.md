@@ -15,24 +15,24 @@ Since the AWS CDK is always evolving, some of the code presented in these videos
 ## Infrastructure *is* Code with the AWS CDK
 <a name="videos-infrastructure-is-code"></a>
 
-[![AWS Videos](http://img.youtube.com/vi/ZWCvNFUN-sU?rel=0/0.jpg)](http://www.youtube.com/watch?v=ZWCvNFUN-sU?rel=0)
+[![AWS Videos](https://img.youtube.com/vi/ZWCvNFUN-sU?rel=0/0.jpg)](https://www.youtube.com/watch?v=ZWCvNFUN-sU?rel=0)
 
 ## Deep dive into AWS Cloud Development Kit (AWS CDK)
 <a name="videos-deep-dive"></a>
 
-[![AWS Videos](http://img.youtube.com/vi/9As_ZIjUGmY?rel=0/0.jpg)](http://www.youtube.com/watch?v=9As_ZIjUGmY?rel=0)
+[![AWS Videos](https://img.youtube.com/vi/9As_ZIjUGmY?rel=0/0.jpg)](https://www.youtube.com/watch?v=9As_ZIjUGmY?rel=0)
 
 ## Contributing to the AWS Construct Library
 <a name="videos-contributing"></a>
 
-[![AWS Videos](http://img.youtube.com/vi/LsYlf7ggyrY?rel=0/0.jpg)](http://www.youtube.com/watch?v=LsYlf7ggyrY?rel=0)
+[![AWS Videos](https://img.youtube.com/vi/LsYlf7ggyrY?rel=0/0.jpg)](https://www.youtube.com/watch?v=LsYlf7ggyrY?rel=0)
 
 ## Faster deployments with CDK Pipelines
 <a name="videos-pipelines"></a>
 
-[![AWS Videos](http://img.youtube.com/vi/1ps0Wh19MHQ?rel=0/0.jpg)](http://www.youtube.com/watch?v=1ps0Wh19MHQ?rel=0)
+[![AWS Videos](https://img.youtube.com/vi/1ps0Wh19MHQ?rel=0/0.jpg)](https://www.youtube.com/watch?v=1ps0Wh19MHQ?rel=0)
 
 ## How to contribute to the AWS CDK using GitPod
 <a name="videos-gitpod"></a>
 
-[![AWS Videos](http://img.youtube.com/vi/u6XcIgs-Nok?rel=0/0.jpg)](http://www.youtube.com/watch?v=u6XcIgs-Nok?rel=0)
+[![AWS Videos](https://img.youtube.com/vi/u6XcIgs-Nok?rel=0/0.jpg)](https://www.youtube.com/watch?v=u6XcIgs-Nok?rel=0)

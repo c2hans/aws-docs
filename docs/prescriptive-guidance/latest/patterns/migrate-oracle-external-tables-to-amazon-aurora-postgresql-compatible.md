@@ -44,7 +44,7 @@ We recommend thoroughly testing this solution before implementing it in a produc
 
 **Source architecture **
 
-![Diagram of data files going to a directory and table in the on-premises Oracle database.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/555e69af-36fc-4ff5-b66c-af22b4cf262a/images/3fbc507d-b0fa-4e05-b999-043dc7327ed7.png)
+![Diagram of data files going to a directory and table in the on-premises Oracle database.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/555e69af-36fc-4ff5-b66c-af22b4cf262a/images/3fbc507d-b0fa-4e05-b999-043dc7327ed7.png)
 
 **Target technology stack **
 + Amazon Aurora PostgreSQL-Compatible
@@ -58,7 +58,7 @@ We recommend thoroughly testing this solution before implementing it in a produc
 
 The following diagram shows a high-level representation of the solution.
 
-![The description is after the diagram.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/555e69af-36fc-4ff5-b66c-af22b4cf262a/images/5421540e-d2e3-4361-89cc-d8415fcb21fd.png)
+![The description is after the diagram.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/555e69af-36fc-4ff5-b66c-af22b4cf262a/images/5421540e-d2e3-4361-89cc-d8415fcb21fd.png)
 
 1. Files are uploaded to the S3 bucket.
 

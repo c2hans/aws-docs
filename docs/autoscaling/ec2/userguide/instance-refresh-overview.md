@@ -58,7 +58,7 @@ When the instance refresh has started, Amazon EC2 Auto Scaling will:
 
 The following flow diagram illustrates the launch before terminate behavior when you set the minimum healthy percentage to 100 percent.
 
-![A diagram showing how an instance refresh works when the minimum healthy percentage is set to 100 percent.](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/instance-refresh-high-level-flowchart-diagram.png)
+![A diagram showing how an instance refresh works when the minimum healthy percentage is set to 100 percent.](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/instance-refresh-high-level-flowchart-diagram.png)
 
 **Note**
 The minimum and maximum healthy percentages for an instance refresh only need to be specified if you have not set an instance maintenance policy, or if you need to override the existing policy. For more information, see [Instance maintenance policies](ec2-auto-scaling-instance-maintenance-policy.md).

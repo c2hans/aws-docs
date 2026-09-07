@@ -9,7 +9,7 @@ The AI/ML Starter Package establishes a comprehensive environment for developing
 
  **AI/ML (Basic Data Science) starter kit architecture**
 
-![AI/ML starter kit — SageMaker Studio team environment integrated with a governed data lake.](http://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/datascience.png)
+![AI/ML starter kit — SageMaker Studio team environment integrated with a governed data lake.](https://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/datascience.png)
 
 This implementation demonstrates AWS best practices for creating an enterprise-grade data science platform. It combines data lake capabilities with SageMaker Studio to provide data scientists with the tools they need while maintaining appropriate governance and security controls.
 

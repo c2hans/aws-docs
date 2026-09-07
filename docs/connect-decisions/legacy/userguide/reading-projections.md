@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/readi
 
 This section explains how to read the inventory projections.
 
-![Inventory projections](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/inventory_projections.png)
+![Inventory projections](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/inventory_projections.png)
 
 + What is **On Hand** and **Safety stock?** – Displays the on-hand inventory value from the latest snapshot for both past dates and current date. This information is extracted from the *inv\_level* data entity. When there are multiple records with different on-hand values for the same snapshot date, Insights will select the latest snapshot record for processing. The safety stock is the range specified in the inventory policy.
 + **How is demand calculated?** – Insights gathers data from the forecast, outbound sales orders, and the transfers orders (that is, products moving out of site for a given time frame) to calculate the total demand. When demand is available at a higher granularity, such as, weekly, monthly, and so on, Insights will spread the forecasted value across the given time frame.

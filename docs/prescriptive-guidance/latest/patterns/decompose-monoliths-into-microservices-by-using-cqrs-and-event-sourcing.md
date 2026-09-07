@@ -52,7 +52,7 @@ To learn more about CQRS and event sourcing, see the [Additional information](#d
 
 In the source architecture, the CRUD model contains both command and query interfaces in one application. For example code, see `CustomerDAO.cs` (attached).
 
-![Connections between application, service interface, customer CRUD model, and database.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9f1bc700-def4-4201-bb2d-f1fa27404f15/images/1cd3a84c-12c7-4306-99aa-23f2c53d3cd3.png)
+![Connections between application, service interface, customer CRUD model, and database.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9f1bc700-def4-4201-bb2d-f1fa27404f15/images/1cd3a84c-12c7-4306-99aa-23f2c53d3cd3.png)
 
 **Target technology stack **
 + Amazon DynamoDB
@@ -65,7 +65,7 @@ In the source architecture, the CRUD model contains both command and query inter
 
 In the target architecture, the command and query interfaces are separated. The architecture shown in the following diagram can be extended with API Gateway and Amazon SNS. For more information, see the [Additional information](#decompose-monoliths-into-microservices-by-using-cqrs-and-event-sourcing-additional) section.
 
-![Application connecting with serverless Customer Command and Customer Query microservices.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9f1bc700-def4-4201-bb2d-f1fa27404f15/images/1c665697-e3ac-4ef4-98d0-86c2cbf164c1.png)
+![Application connecting with serverless Customer Command and Customer Query microservices.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9f1bc700-def4-4201-bb2d-f1fa27404f15/images/1c665697-e3ac-4ef4-98d0-86c2cbf164c1.png)
 
 1. Command Lambda functions perform write operations, such as create, update, or delete, on the database.
 
@@ -172,7 +172,7 @@ The example code is attached. For instructions on deploying the example code, se
 
 The CQRS pattern separates a single conceptual operations model, such as a data access object single CRUD (create, read, update, delete) model, into command and query operations models. The command model refers to any operation, such as create, update, or delete, that changes the state. The query model refers to any operation that returns a value.
 
-![Architecture with service interface, CRUD model, and database.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9f1bc700-def4-4201-bb2d-f1fa27404f15/images/3f64756d-681e-4f0e-8034-746263d857b2.png)
+![Architecture with service interface, CRUD model, and database.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9f1bc700-def4-4201-bb2d-f1fa27404f15/images/3f64756d-681e-4f0e-8034-746263d857b2.png)
 
 1. The Customer CRUD model includes the following interfaces:
    + `Create Customer()`
@@ -186,7 +186,7 @@ The CQRS pattern separates a single conceptual operations model, such as a data 
 
 As your requirements become more complex, you can move from this single-model approach. CQRS uses a command model and a query model to separate the responsibility for writing and reading data. That way, the data can be independently maintained and managed. With a clear separation of responsibilities, enhancements to each model do not impact the other. This separation improves maintenance and performance, and it reduces the complexity of the application as it grows.
 
-![The application separated into command and query models, sharing a single database.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9f1bc700-def4-4201-bb2d-f1fa27404f15/images/12db023c-eb81-4c27-bbb9-b085b13176ae.png)
+![The application separated into command and query models, sharing a single database.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9f1bc700-def4-4201-bb2d-f1fa27404f15/images/12db023c-eb81-4c27-bbb9-b085b13176ae.png)
 
 1. Interfaces in the Customer Command model:
    + `Create Customer()`
@@ -205,7 +205,7 @@ For example code, see *Source code directory*.
 
 The CQRS pattern then decouples the database. This decoupling leads to the total independence of each service, which is the main ingredient of microservice architecture.
 
-![Separate databases for command and query models.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9f1bc700-def4-4201-bb2d-f1fa27404f15/images/016dbfa8-3bd8-42ee-afa1-38a98986c7d5.png)
+![Separate databases for command and query models.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9f1bc700-def4-4201-bb2d-f1fa27404f15/images/016dbfa8-3bd8-42ee-afa1-38a98986c7d5.png)
 
  Using CQRS in the AWS Cloud, you can further optimize each service. For example, you can set different compute settings or choose between a serverless or a container-based microservice. You can replace your on-premises caching with Amazon ElastiCache. If you have an on-premises publish/subscribe messaging, you can replace it with Amazon Simple Notification Service (Amazon SNS). Additionally, you can take advantage of pay-as-you-go pricing and the wide array of AWS services that you pay only for what you use.
 
@@ -235,7 +235,7 @@ The event-sourcing pattern ensures and records a full series of actions taken on
 
 The following diagram shows event sourcing used with CQRS on AWS.
 
-![Microservice architecture for the CQRS and event sourcing patterns using AWS serverless services.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9f1bc700-def4-4201-bb2d-f1fa27404f15/images/cc9bc84a-60b4-4459-9a5c-2334c69dbb4e.png)
+![Microservice architecture for the CQRS and event sourcing patterns using AWS serverless services.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9f1bc700-def4-4201-bb2d-f1fa27404f15/images/cc9bc84a-60b4-4459-9a5c-2334c69dbb4e.png)
 
 1. Command Lambda functions perform write operations, such as create, update, or delete, on the database.
 
@@ -333,7 +333,7 @@ Use the following table as a guide to the directory structure of the Visual Stud
 
 *CQRS On-Premises Code Sample solution directory*
 
-![Solution directory with Command and Query services expanded.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9f1bc700-def4-4201-bb2d-f1fa27404f15/images/4811c2c0-643b-410f-bb87-0b86ec5e194c.png)
+![Solution directory with Command and Query services expanded.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9f1bc700-def4-4201-bb2d-f1fa27404f15/images/4811c2c0-643b-410f-bb87-0b86ec5e194c.png)
 
 **Customer CRUD model**
 
@@ -355,7 +355,7 @@ The query microservice is under the solution folder `CQRS On-Premises Code Sampl
 
 *CQRS AWS Serverless code solution directory*
 
-![Solution directory showing both microservices and the event source expanded.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9f1bc700-def4-4201-bb2d-f1fa27404f15/images/23f8655c-95ad-422c-b20a-e29dc145e995.png)
+![Solution directory showing both microservices and the event source expanded.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9f1bc700-def4-4201-bb2d-f1fa27404f15/images/23f8655c-95ad-422c-b20a-e29dc145e995.png)
 
 This code is the AWS version of the on-premises code using AWS serverless services.
 

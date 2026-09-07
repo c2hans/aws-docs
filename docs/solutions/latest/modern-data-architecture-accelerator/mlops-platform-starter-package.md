@@ -9,7 +9,7 @@ The MLOps Platform Starter Package deploys an end-to-end ML lifecycle platform c
 
  **MLOps Platform starter kit architecture**
 
-![MLOps Platform starter kit — end-to-end SageMaker training and deployment with CI/CD.](http://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/mlops.png)
+![MLOps Platform starter kit — end-to-end SageMaker training and deployment with CI/CD.](https://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/mlops.png)
 
 This architecture is particularly effective when:
 

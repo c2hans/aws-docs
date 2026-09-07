@@ -54,7 +54,7 @@ This pattern uses the AWS Cloud Development Kit (AWS CDK) to build, deploy, and 
 
 The following diagram shows the architecture workflow.
 
-![Workflow using API mappings and custom domains to implement a path-based API versioning solution.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e1b32d2b-410f-4ace-967e-f0b8aaf0304c/images/fa9f04f1-efa6-4fb1-a541-ae3da4076b00.png)
+![Workflow using API mappings and custom domains to implement a path-based API versioning solution.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e1b32d2b-410f-4ace-967e-f0b8aaf0304c/images/fa9f04f1-efa6-4fb1-a541-ae3da4076b00.png)
 
 The diagram illustrates the following:
 

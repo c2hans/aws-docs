@@ -31,11 +31,11 @@ Amazon EKS uses [KMS v2](https://kubernetes.io/docs/tasks/administer-cluster/kms
 
 The diagram below depicts the generation and encryption of a DEK at the startup of the API server.
 
-![The diagram depicts the generation and encryption of a DEK at the startup of the API server](http://docs.aws.amazon.com/eks/latest/userguide/images/security-generate-dek.png)
+![The diagram depicts the generation and encryption of a DEK at the startup of the API server](https://docs.aws.amazon.com/eks/latest/userguide/images/security-generate-dek.png)
 
 The high-level diagram below depicts the encryption of a Kubernetes resource before it’s stored in etcd.
 
-![The high-level diagram depicts the encryption of a Kubernetes resource before it’s stored in etcd.](http://docs.aws.amazon.com/eks/latest/userguide/images/security-encrypt-request.png)
+![The high-level diagram depicts the encryption of a Kubernetes resource before it’s stored in etcd.](https://docs.aws.amazon.com/eks/latest/userguide/images/security-encrypt-request.png)
 
 ## Frequently asked questions
 <a name="_frequently_asked_questions"></a>

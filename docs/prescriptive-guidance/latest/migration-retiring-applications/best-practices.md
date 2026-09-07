@@ -55,7 +55,7 @@ You might decide to investigate those connections and assess the impact level. T
 **Note**
 AWS Application Discovery Service is no longer open to new customers. Alternatively, use AWS Transform which provides similar capabilities. For more information, see [AWS Application Discovery Service availability change](https://docs.aws.amazon.com/application-discovery/latest/userguide/application-discovery-service-availability-change.html). For example, the following screen illustration shows four source IP addresses connecting to the server on port 22 (destination = 172.31.1.117).
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-retiring-applications/images/guide-img/11b5b0ce-2bf2-40a9-9f55-c87adb6560a5/images/ec1c5cf3-0f47-4e03-be00-b0cdfc5d0556.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-retiring-applications/images/guide-img/11b5b0ce-2bf2-40a9-9f55-c87adb6560a5/images/ec1c5cf3-0f47-4e03-be00-b0cdfc5d0556.png)
 
 These are bastion hosts that are used by the system administrators and can be ignored. The image also shows two servers connecting to this application on port 80, which are in scope of a planned migration. At this stage, you would need to dive deeper and understand the connecting applications. This deeper analysis will allow you to assess if there will be any upstream impact after retirement.
 

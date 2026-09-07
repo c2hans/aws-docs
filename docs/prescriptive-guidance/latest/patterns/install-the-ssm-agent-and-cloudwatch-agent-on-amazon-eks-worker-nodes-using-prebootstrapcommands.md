@@ -36,7 +36,7 @@ This pattern provides code samples and steps to install the AWS Systems Manager 
 
 The following diagram shows an example of a user connecting to Amazon EKS worker nodes using SSM Agent which was installed using the `preBootstrapCommands`.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/b37a3cdb-204f-4014-8317-3600a793dac7/images/9a5760af-23bb-4616-97b0-b401a9d080cf.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/b37a3cdb-204f-4014-8317-3600a793dac7/images/9a5760af-23bb-4616-97b0-b401a9d080cf.png)
 
 The diagram shows the following workflow:
 

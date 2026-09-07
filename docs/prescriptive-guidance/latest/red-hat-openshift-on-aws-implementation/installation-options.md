@@ -11,7 +11,7 @@ There are two main ways to install Red Hat OpenShift on AWS:
 
 Both setups use the same installation program (`install-config.yaml`), which installs components based on targets and dependencies. Each target has its own dependencies, so the program can support multiple targets in parallel and ensure that the target can successfully run the cluster. The following diagram shows some of the targets and dependencies.
 
-![Targets and dependencies for Red Hat OpenShift on AWS](http://docs.aws.amazon.com/prescriptive-guidance/latest/red-hat-openshift-on-aws-implementation/images/guide-img/bcbfa5c1-b077-4a7c-9aab-f667a34c404d/images/2ebe28c5-273d-4c1d-a69f-f86502ed7cec.png)
+![Targets and dependencies for Red Hat OpenShift on AWS](https://docs.aws.amazon.com/prescriptive-guidance/latest/red-hat-openshift-on-aws-implementation/images/guide-img/bcbfa5c1-b077-4a7c-9aab-f667a34c404d/images/2ebe28c5-273d-4c1d-a69f-f86502ed7cec.png)
 
 ## Advantages and disadvantages of each approach
 <a name="adv-disadv"></a>

@@ -22,7 +22,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/data-warehousing-on-a
 
  An enterprise data warehouse solves this problem. It collects data from each of the three channels’ various systems, and from publicly available data such as weather and economic reports. Each data source sends data daily for consumption by the data warehouse. Clickstream data are streamed continuously and stored on S3. Because each data source might be structured differently, an ETL process is performed to reformat the data into a common structure. Then analytics can be performed across data from all sources simultaneously. To do this, we use the following data flow architecture:
 
-![Enterprise data warehouse workflow](http://docs.aws.amazon.com/whitepapers/latest/data-warehousing-on-aws/images/enterprise-warehouse-workflow.png)
+![Enterprise data warehouse workflow](https://docs.aws.amazon.com/whitepapers/latest/data-warehousing-on-aws/images/enterprise-warehouse-workflow.png)
 
  *Enterprise data warehouse workflow*
 

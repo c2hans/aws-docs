@@ -20,7 +20,7 @@ The AWS DeepRacer vehicle is powered by a brushed motor. The driving speed is co
 
 When you open your AWS DeepRacer vehicle box, you should find the following components and accessories:
 
-![AWS DeepRacer vehicle components and accessories](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/operatingthevehicle-vehicle-components.png)
+![AWS DeepRacer vehicle components and accessories](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/operatingthevehicle-vehicle-components.png)
 
 | Components | Comments |
 | --- | --- |
@@ -127,7 +127,7 @@ To turn off your AWS DeepRacer vehicle, unplug the vehicle from the external pow
 
 Your AWS DeepRacer vehicle has two sets of LED indicators for the vehicle status and for customizable visual identification of your vehicle, respectively.
 
-![AWS DeepRacer vehicle system LED indicators](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/operatingthevehicle-system-leds.png)
+![AWS DeepRacer vehicle system LED indicators](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/operatingthevehicle-system-leds.png)
 
 The details are discussed as follows.
 

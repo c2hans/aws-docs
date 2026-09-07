@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-o
 
 The following diagram shows a typical OpenText Customer Experience application architecture that uses OpenText core components, custom functionalities connected to the OpenText core components, and databases, files, and repositories. Although an OpenText architecture varies for each customer implementation, the diagram shows the typical components and these are covered by this guide.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-opentext-teamsite/images/guide-img/4dc6b761-306b-4432-a25a-66123a55e631/images/a6a38aaa-9c58-4d36-b954-0756542a710d.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-opentext-teamsite/images/guide-img/4dc6b761-306b-4432-a25a-66123a55e631/images/a6a38aaa-9c58-4d36-b954-0756542a710d.png)
 
 The main architectural elements that are targeted for migration by this guide are described in the following table.
 

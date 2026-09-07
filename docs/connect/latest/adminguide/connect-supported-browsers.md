@@ -61,7 +61,7 @@ To prevent impacts to your users (agents), we recommend that your users complete
 1. In your Firefox browser, choose **Settings**, **Privacy & Security**
 
 1. In the **Custom** box, for **Cookies** choose **Cross-site tracking cookies**, as shown in the following image.
-![The Privacy & Security page in Firefox.](http://docs.aws.amazon.com/connect/latest/adminguide/images/cross-site-cookies.png)
+![The Privacy & Security page in Firefox.](https://docs.aws.amazon.com/connect/latest/adminguide/images/cross-site-cookies.png)
 
 ## Firefox browser guidance for Microphone Access
 <a name="firefox-browser-mic"></a>
@@ -127,7 +127,7 @@ If your system has a dedicated GPU, you can improve performance by changing its 
 1. On your computer, open **Windows Settings**.
 
 1. Navigate to **Display**, **Graphics**, **Browse**. The following image shows the **Browse** button.
-![Windows Settings, Graphics, Browse button.](http://docs.aws.amazon.com/connect/latest/adminguide/images/firefox-display-graphics.png)
+![Windows Settings, Graphics, Browse button.](https://docs.aws.amazon.com/connect/latest/adminguide/images/firefox-display-graphics.png)
 
 1. Navigate to the installation folder:
    + For **Firefox**, it is typically located at path: `C:\Program Files\Mozilla Firefox`
@@ -136,9 +136,9 @@ If your system has a dedicated GPU, you can improve performance by changing its 
 1. Select `firefox.exe` or `chrome.exe`.
 
 1. Choose **Options** under Firefox or Chrome. The following image shows an example of the Firefox High performance **Options** button.
-![The Options button for Firefox High Performance.](http://docs.aws.amazon.com/connect/latest/adminguide/images/firefox-example.png)
+![The Options button for Firefox High Performance.](https://docs.aws.amazon.com/connect/latest/adminguide/images/firefox-example.png)
 
 1. Choose **High Performance** to use the dedicated GPU. The following image shows an example **Graphics preference** page with the **High performance** option.
-![The Graphic preference page, the High performance option.](http://docs.aws.amazon.com/connect/latest/adminguide/images/graphics-preference.png)
+![The Graphic preference page, the High performance option.](https://docs.aws.amazon.com/connect/latest/adminguide/images/graphics-preference.png)
 
 1. Save your changes and restart your browser.

@@ -14,7 +14,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-so
 
  The following diagram provides an overview of an IoT solution for processing uplink data from the Sigfox devices:
 
-![Example architecture for processing uplink data from Sigfox devices](http://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/sigfox-arch.png)
+![Example architecture for processing uplink data from Sigfox devices](https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/sigfox-arch.png)
 
  Sigfox Cloud supports integration of the uplink payloads with AWS IoT Core and Amazon Kinesis Data Streams. When using integration with AWS IoT Core, customer’s applications can access the uplink payloads by using [AWS IoT rules](https://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html), or by subscribing to an [MQTT topic of AWS IoT Core](https://docs.aws.amazon.com/iot/latest/developerguide/mqtt.html) message broker. When using integration with Amazon Kinesis Data Streams, customer’s application can access the uplink payloads by [reading data from Amazon Kinesis Data Streams](https://docs.aws.amazon.com/streams/latest/dev/building-consumers.html).
 
@@ -27,7 +27,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-so
 
  Because of this energy-saving feature, AWS Cloud applications require a mechanism to buffer the downlink data until the next uplink message arrives. After the next uplink message arrives, the buffered downlink message can be sent to the Sigfox device. To implement this approach, customers can use an example architecture as described in the following figure:
 
-![Example architecture for sending downlink data to Sigfox devices](http://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/sigfox-downlink-data.png)
+![Example architecture for sending downlink data to Sigfox devices](https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/sigfox-downlink-data.png)
 
  First, AWS customers configure a custom bidirectional callback in Sigfox Cloud. The callback specifies a REST API to be invoked each time an uplink message is sent. The REST API request will forward an uplink message to AWS Cloud. The REST API response can optionally contain a downlink payload. If the downlink payload is available in callback response, the Sigfox Cloud will send it to the Sigfox device.
 

@@ -12,7 +12,7 @@ From [docs.prebid.org](https://docs.prebid.org/prebid-server/use-cases/pbs-pbjs.
 
  **Workflow diagram of banner ads**
 
-![workflow](http://docs.aws.amazon.com/solutions/latest/prebid-server-deployment-on-aws/images/workflow.png)
+![workflow](https://docs.aws.amazon.com/solutions/latest/prebid-server-deployment-on-aws/images/workflow.png)
 
 1.  `Prebid.js` is set up to run auctions for one or more bidders through `s2sConfig`.
 

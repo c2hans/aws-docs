@@ -17,7 +17,7 @@ Modern cloud architectures, particularly those built on serverless and event-dri
 
 The following diagram shows a typical distributed system:
 
-![Event-driven architecture with data enrichment.](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-patterns/images/guide-img/cde5ee68-ed86-4053-9fb1-d0dbf7199e24/images/f817137b-0873-4d4b-9787-237b854cc7b3.png)
+![Event-driven architecture with data enrichment.](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-patterns/images/guide-img/cde5ee68-ed86-4053-9fb1-d0dbf7199e24/images/f817137b-0873-4d4b-9787-237b854cc7b3.png)
 
 1. A user submits a request to Amazon API Gateway.
 
@@ -34,7 +34,7 @@ This structure is both reliable and scalable, but it's fundamentally static. Bus
 
 Agentic architectures add cognitive augmentation to an event-driven system. The following diagram shows an agentic equivalent:
 
-![Cognition-augmented workflow.](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-patterns/images/guide-img/cde5ee68-ed86-4053-9fb1-d0dbf7199e24/images/b113f13d-0e76-48cc-a43d-a54008182569.png)
+![Cognition-augmented workflow.](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-patterns/images/guide-img/cde5ee68-ed86-4053-9fb1-d0dbf7199e24/images/b113f13d-0e76-48cc-a43d-a54008182569.png)
 
 1. A user submits a query through an SDK or API call.
 

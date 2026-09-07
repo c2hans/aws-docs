@@ -15,7 +15,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 1. Select **AWS Account Id**, then choose **Edit**.
 
     **Migration Factory web interface Attribute Details tab**
-![migration factory mgn attribute tab](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/migration-factory-mgn-attribute-tab.png)
+![migration factory mgn attribute tab](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/migration-factory-mgn-attribute-tab.png)
 
 1. On the **Amend attribute** page, update \* Value list\* with your target AWS account IDs and choose **Save**.
 

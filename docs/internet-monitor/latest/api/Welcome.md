@@ -13,4 +13,4 @@ To use Internet Monitor, you create a *monitor* and associate your application's
 
 For more information, see [Using Internet Monitor](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-InternetMonitor.html) in the *Amazon CloudWatch User Guide*.
 
-This document was last published on September 4, 2026.
+This document was last published on September 7, 2026.

@@ -29,7 +29,7 @@ To dock the toolbar to the top of the screen, choose **Preferences**, **General*
 
 The following table includes a description of all the available icons in the toolbar:
 
-![WorkSpaces Secure Browser architecure](http://docs.aws.amazon.com/workspaces-web/latest/adminguide/images/toolbar-icons-new.PNG)
+![WorkSpaces Secure Browser architecure](https://docs.aws.amazon.com/workspaces-web/latest/adminguide/images/toolbar-icons-new.PNG)
 
 **Note**
 The Clipboard and Files icons are hidden by default, unless your administrator grants these permissions. Only administrators can enable or disable clipboard and files on a web portal. If these icons are hidden and you need to access them, contact your administrator.

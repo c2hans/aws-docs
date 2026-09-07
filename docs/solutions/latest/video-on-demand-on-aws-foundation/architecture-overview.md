@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws-
 
  Deploying this solution with the default parameters deploys the following components in your AWS account.
 
-![Architecture diagram depicting the following steps.](http://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws-foundation/images/vod-on-aws-foundation-architecture-diagram.png)
+![Architecture diagram depicting the following steps.](https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws-foundation/images/vod-on-aws-foundation-architecture-diagram.png)
 
  The AWS CloudFormation template deploys the following infrastructure:
 

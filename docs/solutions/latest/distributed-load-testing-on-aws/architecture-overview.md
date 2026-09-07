@@ -12,7 +12,7 @@ Deploying this solution with the default parameters deploys the following compon
 
  **Distributed Load Testing on AWS architecture**
 
-![Distributed Load Testing on AWS architecture](http://docs.aws.amazon.com/solutions/latest/distributed-load-testing-on-aws/images/architecture-diagram.png)
+![Distributed Load Testing on AWS architecture](https://docs.aws.amazon.com/solutions/latest/distributed-load-testing-on-aws/images/architecture-diagram.png)
 
 **Note**
 AWS CloudFormation resources are created from AWS Cloud Development Kit (AWS CDK) constructs.

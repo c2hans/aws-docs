@@ -12,7 +12,7 @@ You can use streaming replication to keep WAL data or XLOG records current by c
 
 The following diagram shows the architecture for migrating an on-premises PostgreSQL database to the AWS Cloud by using streaming replication.
 
-![Streaming replication architecture](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-databases-postgresql-ec2/images/guide-img/d9d57133-1a8b-4b7f-bbe9-e908969d06b9/images/af71bfcc-3fa0-40dc-9291-f92786bbf09a.png)
+![Streaming replication architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-databases-postgresql-ec2/images/guide-img/d9d57133-1a8b-4b7f-bbe9-e908969d06b9/images/af71bfcc-3fa0-40dc-9291-f92786bbf09a.png)
 
 The diagram shows the following workflow:
 

@@ -64,7 +64,7 @@ Inquiries to the chat-based assistant are met with an initial intent classificat
 
 The AWS CDK code will deploy all the resources that are required to set up the chat-based assistant application in an AWS account. The chat-based assistant application shown in the following diagram is designed to answer SageMaker related queries from users. Users connect through an Application Load Balancer to a VPC that contains an Amazon ECS cluster hosting the Streamlit application. An orchestration Lambda function connects to the application. S3 bucket data sources provide data to the Lambda function through Amazon Kendra and AWS Glue. The Lambda function connects to Amazon Bedrock for answering queries (questions) from chat-based assistant users.
 
-![Architecture diagram.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/b4df6405-76ab-4493-a722-15ceca067254/images/4e5856cf-9489-41f8-a411-e3b8d8a50748.png)
+![Architecture diagram.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/b4df6405-76ab-4493-a722-15ceca067254/images/4e5856cf-9489-41f8-a411-e3b8d8a50748.png)
 
 1. The orchestration Lambda function sends the LLM prompt request to the Amazon Bedrock model (Claude 2).
 
@@ -74,7 +74,7 @@ The AWS CDK code will deploy all the resources that are required to set up the c
 
 When users ask a question through the Streamlit application, it invokes the orchestration Lambda function directly. The following diagram shows the logic flow when the Lambda function is invoked.
 
-![Architecture diagram.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/b4df6405-76ab-4493-a722-15ceca067254/images/70ae4736-06a6-4d3a-903a-edc5c10d78a0.png)
+![Architecture diagram.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/b4df6405-76ab-4493-a722-15ceca067254/images/70ae4736-06a6-4d3a-903a-edc5c10d78a0.png)
 
 + Step 1 – The input `query` (question) is classified into one of the three intents:
   + General SageMaker guidance questions

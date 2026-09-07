@@ -42,11 +42,11 @@ One of the following:
 **Data migration architecture**
 + From a Microsoft SQL Server database running in the AWS Cloud
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e2de4507-82a8-4bd6-b25b-1e830b197b9f/images/c675ada4-e92c-4ddb-b49f-69668f532504.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e2de4507-82a8-4bd6-b25b-1e830b197b9f/images/c675ada4-e92c-4ddb-b49f-69668f532504.png)
 
 + From a Microsoft SQL Server database running in an on-premises data center
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e2de4507-82a8-4bd6-b25b-1e830b197b9f/images/b6ce0199-fc56-4bf2-a8cc-67de161e3cf0.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e2de4507-82a8-4bd6-b25b-1e830b197b9f/images/b6ce0199-fc56-4bf2-a8cc-67de161e3cf0.png)
 
 ## Tools
 <a name="migrate-a-microsoft-sql-server-database-to-aurora-mysql-by-using-aws-dms-and-aws-sct-tools"></a>

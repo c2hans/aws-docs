@@ -53,7 +53,7 @@ Step Functions orchestrates pipeline creation by using multiple AWS services. Fo
 
 The following diagram shows an example workflow for creating dynamic CI pipelines for Java and Python projects automatically by using AWS developer tools.
 
-![Workflow to create dynamic CI pipelines for Java and Python projects automatically using AWS tools.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/bef2ccb8-68b3-4c0f-9ee7-4b93e9422d9c/images/b5ed003f-cf16-4130-8bfb-2bc2cb9a0d33.png)
+![Workflow to create dynamic CI pipelines for Java and Python projects automatically using AWS tools.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/bef2ccb8-68b3-4c0f-9ee7-4b93e9422d9c/images/b5ed003f-cf16-4130-8bfb-2bc2cb9a0d33.png)
 
 The diagram shows the following workflow:
 

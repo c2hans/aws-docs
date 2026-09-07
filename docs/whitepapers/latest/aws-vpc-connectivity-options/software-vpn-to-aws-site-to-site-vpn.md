@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-
 
  Amazon VPC provides the flexibility to combine the AWS managed VPN and software VPN options to connect multiple VPCs. With this design, you can create secure VPN tunnels between a software VPN appliance and a virtual private gateway, allowing instances in each VPC to seamlessly connect to each other using private IP addresses. This option uses a virtual private gateway in one Amazon VPC and a combination of an internet gateway and software VPN appliance in another Amazon VPC, as shown in the following figure.
 
-![Diagram that shows software VPN to AWS Site-to-Site VPN VPC-to-VPC Routing.](http://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/software-vpn-to-site-to-site-vpn-vpc-routing.png)
+![Diagram that shows software VPN to AWS Site-to-Site VPN VPC-to-VPC Routing.](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/software-vpn-to-site-to-site-vpn-vpc-routing.png)
 
  Note that this design introduces a potential single point of failure into the network design. For additional information, see [Appendix A: High-Level HA architecture for software VPN instances](appendix-a-high-level-ha-architecture-for-software-vpn-instances.md).
 

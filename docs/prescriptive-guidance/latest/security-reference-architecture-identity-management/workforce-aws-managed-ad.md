@@ -15,11 +15,11 @@ For strict access restriction, you can create a separate AWS account or AWS orga
 
 When you use AWS Managed Microsoft AD sharing by using AWS Organizations, you must deploy AWS Managed Microsoft AD to the Org Management account as shown in the following diagram.
 
-![AWS Managed Microsoft AD in Org Management account](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-identity-management/images/guide-img/1bf8562a-50f2-4dfa-9a24-c4edfe7b936c/images/b586e69e-2989-4b58-b25c-8b67a64b8386.png)
+![AWS Managed Microsoft AD in Org Management account](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-identity-management/images/guide-img/1bf8562a-50f2-4dfa-9a24-c4edfe7b936c/images/b586e69e-2989-4b58-b25c-8b67a64b8386.png)
 
 If you use sharing by using the handshake method, where consumer accounts accept the directory sharing request, you can deploy AWS Managed Microsoft AD to any account within or outside your organization in AWS Organizations. In the AWS SRA, AWS Managed Microsoft AD is deployed in the Shared Services account, as shown in the following diagram. This AWS Organizations sharing method makes it easier to share the directory within your organization because you can browse and validate the Active Directory consumer accounts.
 
-![AWS Managed Microsoft AD in Shared Services account.](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-identity-management/images/guide-img/1bf8562a-50f2-4dfa-9a24-c4edfe7b936c/images/cf401e11-cf93-4966-8763-cf5e803ac600.png)
+![AWS Managed Microsoft AD in Shared Services account.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-identity-management/images/guide-img/1bf8562a-50f2-4dfa-9a24-c4edfe7b936c/images/cf401e11-cf93-4966-8763-cf5e803ac600.png)
 
 All AWS services observe a [shared responsibility model](https://aws.amazon.com/compliance/shared-responsibility-model/). This model divides the responsibilities for AWS Managed Microsoft AD between AWS and customers.
 

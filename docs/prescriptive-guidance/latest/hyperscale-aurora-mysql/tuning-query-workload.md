@@ -19,7 +19,7 @@ When encountering hypergrowth, having a well-tuned work load is half the battle 
 
 Performance Insights tracks the load on the Aurora writer or reader instance based on the average active sessions (AAS). The AAS value is calculated by using sampling and the number of active sessions that are waiting for a CPU to pick up their query workload and process it. Performance Insights provides a graphical interface where you can check the SQL statements that are causing the highest load by waits for active sessions.
 
-![Performance Insights graphs and charts.](http://docs.aws.amazon.com/prescriptive-guidance/latest/hyperscale-aurora-mysql/images/guide-img/49d4e249-129b-4485-8b88-a230c0a689ca/images/99907e19-80ff-461f-899e-eb2566c029ac.png)
+![Performance Insights graphs and charts.](https://docs.aws.amazon.com/prescriptive-guidance/latest/hyperscale-aurora-mysql/images/guide-img/49d4e249-129b-4485-8b88-a230c0a689ca/images/99907e19-80ff-461f-899e-eb2566c029ac.png)
 
 In the previous screenshot, the call to the stored procedure `my_sqrt` is causing an average of 13.03 sessions to wait for their loads to be processed. The logical next step is to tune this procedure. You should identify SQL statements in your readers and writers that are causing load on their respective instance and tune them to improve the performance until the AAS values drop and stay below the Max vCPU dotted line in Performance Insights. If you have hit a ceiling with your tuning efforts and still see the AAS over the Max vCPU line, you can opt for a larger instance class to handle your workload. Do not opt for a larger instance without first trying to tune your query workload, because growing traffic will start exposing the fault lines created by bad queries in your workload.
 

@@ -30,7 +30,7 @@ You can augment your answers with image attachments that can be displayed on an 
    The photograph is displayed in the web UI chat.
 
     **Example image response in the web UI chat window**
-![image14](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image14.jpeg)
+![image14](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image14.jpeg)
 
 1. Optionally, you can use an Amazon Echo or Echo Dot to say: ` "Ask Q and A, What is an Echo Show?" `
 

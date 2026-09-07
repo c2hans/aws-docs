@@ -52,7 +52,7 @@ The Terraform code deploys the following resources:
 
 **Architecture and workflow**
 
-![Architecture diagram for centralizing software package distribution in AWS Organizations](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/da584449-e12b-4878-a61d-00d8cea3d3d7/images/2718f2c4-f816-4e34-89b8-8182c128e6db.png)
+![Architecture diagram for centralizing software package distribution in AWS Organizations](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/da584449-e12b-4878-a61d-00d8cea3d3d7/images/2718f2c4-f816-4e34-89b8-8182c128e6db.png)
 
 The diagram illustrates the following steps:
 

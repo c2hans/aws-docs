@@ -24,7 +24,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/cos
 
  As an example, the following diagram displays how to group your costs and usage information in your organization by having multiple teams (cost category), multiple environments (rules), and each environment having multiple resources or assets (dimensions).
 
-![Flowchart detailing the relationship between cost and usage within an organization.](http://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/images/cost-usage-organization-chart.png)
+![Flowchart detailing the relationship between cost and usage within an organization.](https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/images/cost-usage-organization-chart.png)
 
  You can create groupings of costs using cost categories as well. After you create the cost categories (allowing up to 24 hours after creating a cost category for your usage records to be updated with values), they appear in [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/), [AWS Budgets](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html), [AWS Cost and Usage Report](https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html), and [AWS Cost Anomaly Detection](https://aws.amazon.com/aws-cost-management/aws-cost-anomaly-detection/). In AWS Cost Explorer and AWS Budgets, a cost category appears as an additional billing dimension. You can use this to filter for the specific cost category value, or group by the cost category.
 

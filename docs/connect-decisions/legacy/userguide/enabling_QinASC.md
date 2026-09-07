@@ -15,7 +15,7 @@ To enable Amazon Q in AWS Supply Chain, perform the following procedure:
 1. Under **Organization**, choose **Organization Profile**.
 
    The **Organization Profile** page appears.
-![Amazon Q in AWS Supply Chain](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/QinASC.png)
+![Amazon Q in AWS Supply Chain](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/QinASC.png)
 
 1. Under **Enable access for Amazon Q...**, slide the **Amazon Q in AWS Supply Chain** button to enable Amazon Q in AWS Supply Chain and ask questions regarding your supply chain.
 

@@ -47,7 +47,7 @@ This version of the enhanced solution has been implemented and verified in an AW
 
 The following diagram shows how a user can access the monitoring dashboard for AWS ParallelCluster on the head node. The head node runs NICE DCV, Prometheus, Grafana, Prometheus Slurm Exporter, Prometheus Node Exporter, and NGINX Open Source. The compute nodes run Prometheus Node Exporter, and they also run NVIDIA DCGM-Exporter if the node contains GPUs. The head node retrieves information from the compute nodes and displays that data in the Grafana dashboard.
 
-![Accessing the monitoring dashboard for AWS ParallelCluster on the head node.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a2132c94-98e0-4b90-8be0-99ebfa546442/images/d2255792-f66a-4ef2-8f04-cc3d5482db5f.png)
+![Accessing the monitoring dashboard for AWS ParallelCluster on the head node.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a2132c94-98e0-4b90-8be0-99ebfa546442/images/d2255792-f66a-4ef2-8f04-cc3d5482db5f.png)
 
 In most cases, the head node is not heavily loaded because the job scheduler doesn't require a significant amount of CPU or memory. Users access the dashboard on the head node by using SSL on port 443.
 

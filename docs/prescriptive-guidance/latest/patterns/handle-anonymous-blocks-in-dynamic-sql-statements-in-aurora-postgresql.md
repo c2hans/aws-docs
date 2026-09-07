@@ -41,7 +41,7 @@ This pattern shows you how to avoid the error that you get when handling anonymo
 
 The following diagram shows how to use AWS SCT and Oracle `OUT` bind variables to scan your application code for embedded SQL statements and convert the code to a compatible format that an Aurora database can use.
 
-![Architecture diagram for using AWS SCT and Oracle OUT bind variables](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/ada89410-b866-4d39-af9c-021be6cc6ae5/images/7c004981-2ed0-4b67-989f-54d8691712ca.png)
+![Architecture diagram for using AWS SCT and Oracle OUT bind variables](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/ada89410-b866-4d39-af9c-021be6cc6ae5/images/7c004981-2ed0-4b67-989f-54d8691712ca.png)
 
 The diagram shows the following workflow:
 

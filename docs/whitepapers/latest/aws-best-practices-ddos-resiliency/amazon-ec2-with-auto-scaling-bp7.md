@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 
  For more information about using Amazon CloudWatch to invoke Auto Scaling, see [Monitoring Amazon CloudWatch metrics for your Auto Scaling groups and instances](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-instance-monitoring.html).
 
-![EC2 Auto Scaling group configuration showing minimum, desired, and maximum instance capacity ranges](http://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/images/ec2-auto-scaling-group.png)
+![EC2 Auto Scaling group configuration showing minimum, desired, and maximum instance capacity ranges](https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/images/ec2-auto-scaling-group.png)
 
  [Amazon EC2 Auto Scaling](https://aws.amazon.com/ec2/autoscaling/) groups are collections of Amazon EC2 instances that provide resizable compute capacity so that you can quickly scale up or down as requirements change. You can scale horizontally by automatically adding instances to your application by [scaling the size of your Amazon EC2 Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/scaling_plan.html), and you can scale vertically by using larger EC2 instance types.
 

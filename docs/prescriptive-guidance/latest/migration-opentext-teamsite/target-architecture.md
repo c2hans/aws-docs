@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-o
 
 The target architecture, migration strategy, and technical steps depend on the source architecture, connectivity constraints, security requirements, and other policies. They also depend on your organization's individual policies or requirements. The following diagram shows a sample architecture on the AWS Cloud that could host your OpenText platform.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-opentext-teamsite/images/guide-img/4dc6b761-306b-4432-a25a-66123a55e631/images/5d52d373-00f7-4fa7-a41c-e232b00d8de9.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-opentext-teamsite/images/guide-img/4dc6b761-306b-4432-a25a-66123a55e631/images/5d52d373-00f7-4fa7-a41c-e232b00d8de9.png)
 
 The following table provides an overview of the high-level steps required for a migration from a source environment to the target AWS architecture. Detailed steps for this migration are available in the pattern [Migrate OpenText TeamSite workloads to the AWS Cloud](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-opentext-teamsite-workloads-to-the-aws-cloud.html) on the AWS Prescriptive Guidance website.
 
@@ -36,4 +36,4 @@ Before you begin implementing these high-level migration steps, you must define 
 
 The implementation of the high-level steps will not happen in a clear sequence. There are tests, changes, re-implementations, and processes that run at the same time. These depend on the specific characteristics of each migration and the following diagrams shows a sample migration sequence.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-opentext-teamsite/images/guide-img/4dc6b761-306b-4432-a25a-66123a55e631/images/b72bcab8-0cff-44d8-8bbc-536b6fa712b2.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-opentext-teamsite/images/guide-img/4dc6b761-306b-4432-a25a-66123a55e631/images/b72bcab8-0cff-44d8-8bbc-536b6fa712b2.png)

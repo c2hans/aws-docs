@@ -11,7 +11,7 @@ I have properly configured my Client VPN endpoint routes, but my clients can't a
 **Solution**
 The following flow chart contains the steps to diagnose internet, peered VPC, and Amazon S3 connectivity issues.
 
-![Client VPN troubleshooting steps](http://docs.aws.amazon.com/vpn/latest/clientvpn-admin/images/cvpn-flow.png)
+![Client VPN troubleshooting steps](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/images/cvpn-flow.png)
 
 1. For access to the internet, add an authorization rule for `0.0.0.0/0`.
 

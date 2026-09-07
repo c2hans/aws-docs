@@ -23,7 +23,7 @@ Standardized data collection is a crucial aspect of managing bare-metal hardware
 
 The following image shows a sample architecture. In an on-premises Amazon Elastic Kubernetes Service (Amazon EKS) Anywhere container, you deploy Telegraf to monitor the worker nodes and control plane nodes. Telegraf sends the monitoring data to Amazon Managed Service for Prometheus in the AWS Cloud. Amazon Managed Grafana retrieves the data from Amazon Managed Service for Prometheus. You can query, correlate, and visualize the data in Amazon Managed Grafana.
 
-![Telegraf is deployed in an Amazon EKS Anywhere container and sends the data to the AWS Cloud.](http://docs.aws.amazon.com/prescriptive-guidance/latest/bare-metal-hardware-monitoring/images/guide-img/3b77512c-41d5-48a8-b53e-f2ea827bdbc5/images/91f47cd8-5540-4b45-b0c7-ddecf4f07ee0.png)
+![Telegraf is deployed in an Amazon EKS Anywhere container and sends the data to the AWS Cloud.](https://docs.aws.amazon.com/prescriptive-guidance/latest/bare-metal-hardware-monitoring/images/guide-img/3b77512c-41d5-48a8-b53e-f2ea827bdbc5/images/91f47cd8-5540-4b45-b0c7-ddecf4f07ee0.png)
 
 In Telegraf, you use a [configuration file](https://docs.influxdata.com/telegraf/v1/configuration/) to define what plugins to enable and what settings to use when Telegraf starts. Each plugin has different configuration options. The following is a sample Telegraf configuration file. The Telegraf agent sends the collected data to an Amazon Managed Service for Prometheus endpoint (`amp_remote_write_url`) in the target AWS Region (`region_name`):
 

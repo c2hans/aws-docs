@@ -12,7 +12,7 @@ To create an instance and use the AWS Supply Chain service, you need to either c
 1. If necessary, change the **AWS Region** by selecting **Select a Region** located at the top of the console. Choose your Region from the drop-down list.
 
 1. Select **Create AWS Supply Chain instance**. A notification will appear.
-![Email address input field with Continue button for Supply Chain user authentication.](http://docs.aws.amazon.com/connect-decisions/legacy/adminguide/images/idc-email-notification.png)
+![Email address input field with Continue button for Supply Chain user authentication.](https://docs.aws.amazon.com/connect-decisions/legacy/adminguide/images/idc-email-notification.png)
 
 1. Enter your email address and select **Continue**. IdC will verify if the email matches an existing user.
 

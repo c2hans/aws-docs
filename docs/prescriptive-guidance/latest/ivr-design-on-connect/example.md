@@ -55,7 +55,7 @@ The following diagram shows a sample architecture based on the IVR design method
 + Amazon Polly converts the text prompts to speech.
 + Amazon Simple Storage Service (Amazon S3) stores [Connect Customer contact records](https://docs.aws.amazon.com/connect/latest/adminguide/ctr-data-model.html).
 
-![Example IVR architecture with AWS services](http://docs.aws.amazon.com/prescriptive-guidance/latest/ivr-design-on-connect/images/guide-img/f2589901-9308-49b2-a33a-24321d4bafd8/images/841627c9-0f07-4802-b5a8-52833cd8327e.png)
+![Example IVR architecture with AWS services](https://docs.aws.amazon.com/prescriptive-guidance/latest/ivr-design-on-connect/images/guide-img/f2589901-9308-49b2-a33a-24321d4bafd8/images/841627c9-0f07-4802-b5a8-52833cd8327e.png)
 
 The IVR system implements the following steps:
 

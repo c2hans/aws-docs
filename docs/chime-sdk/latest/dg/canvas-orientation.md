@@ -9,7 +9,7 @@ In compositing, the *canvas* contains all your video streams. You can specify a 
 
 The following image shows the portrait orientation.
 
-![Image showing two video tiles in a portrait (vertical) window.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/compositing-portrait-with-tile.png)
+![Image showing two video tiles in a portrait (vertical) window.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/compositing-portrait-with-tile.png)
 
 The following example shows how to implement a portrait canvas with the video tile in the upper-right corner. In this example, the active speaker appears in the tile. For more information, see [ActiveSpeakerOnlyConfiguration](compositing-layouts.md#active-speaker-only)
 
@@ -31,7 +31,7 @@ The following example shows how to implement a portrait canvas with the video ti
 
 The following image shows the landscape orientation.
 
-![Image showing two video tiles in a landscape (horizontal) window.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/compositing-landscape-with-tile.png)
+![Image showing two video tiles in a landscape (horizontal) window.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/compositing-landscape-with-tile.png)
 
 **CanvasOrientation**
 *Description* – The orientation setting, Landscape or Portrait.

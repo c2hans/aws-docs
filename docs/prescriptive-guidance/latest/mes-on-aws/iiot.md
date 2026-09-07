@@ -17,7 +17,7 @@ AWSoffers a broad and deep range of solutions for unlocking your IoT data and ac
 
 A typical IoT data ingestion and processing architecture can take many shapes based on unique environmental factors. The most common use case is to collect data from machines on the local network and securely send this data to the cloud. Here is the sample architecture for this use case.
 
-![MES architecture for IIoT use cases](http://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/images/guide-img/093538ca-c7c9-4311-a0e9-8a876ae66d65/images/e8b88c3d-f05c-419f-aabc-48d635664177.png)
+![MES architecture for IIoT use cases](https://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/images/guide-img/093538ca-c7c9-4311-a0e9-8a876ae66d65/images/e8b88c3d-f05c-419f-aabc-48d635664177.png)
 
 1. Machine or data source: These could be smart machines that are connected to the network and can share the data on their own, or other data sources such as PLCs and historians. The data coming from these sources can be in different protocols, such as MQTT and OPC-UA.
 

@@ -21,7 +21,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/classic-intrusion-ana
 
  The AWS CAF organizes guidance into six areas of focus, known as *perspectives*. Each perspective covers distinct responsibilities owned or managed by functionally related stakeholders. In general, the Business, People, and Governance Perspectives focus on business capabilities, while the Platform, Security, and Operations Perspectives focus on technical capabilities.
 
-![This image shows the AWS CAF perspectives](http://docs.aws.amazon.com/whitepapers/latest/classic-intrusion-analysis-frameworks-for-aws-environments/images/aws-caf-perspectives.png)
+![This image shows the AWS CAF perspectives](https://docs.aws.amazon.com/whitepapers/latest/classic-intrusion-analysis-frameworks-for-aws-environments/images/aws-caf-perspectives.png)
 
  **AWS CAF perspectives**
 
@@ -29,7 +29,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/classic-intrusion-ana
 
  Numerous controls listed in *this paper* are from the AWS CAF Security perspective. To help you with your implementation, you can use the AWS CAF Security Epics. The Security Epics consist of groups of user stories (use cases and abuse cases) that you can work on during sprints. Each of these epics has multiple iterations that address increasingly complex requirements and layering in robustness. Although we advise the use of Agile methodologies, the epics can also be treated as general work streams or topics that help in prioritizing and structuring delivery using any other framework. Some CAF perspectives, such as the Operations and Platform perspectives, do not have epics.
 
-![This image shows the AWS CAF security epics.](http://docs.aws.amazon.com/whitepapers/latest/classic-intrusion-analysis-frameworks-for-aws-environments/images/aws-caf-security-epics.png)
+![This image shows the AWS CAF security epics.](https://docs.aws.amazon.com/whitepapers/latest/classic-intrusion-analysis-frameworks-for-aws-environments/images/aws-caf-security-epics.png)
 
  **AWS CAF Security Epics**
 
@@ -166,7 +166,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/classic-intrusion-ana
 
  **Table 13 – Example of an AWS Cloud Adoption Framework (AWS CAF) security control appearing multiple times in a Courses of Action Matrix**
 
-![This image shows an example of AWS CAF appearing multiple times in a courses of action matrix.](http://docs.aws.amazon.com/whitepapers/latest/classic-intrusion-analysis-frameworks-for-aws-environments/images/aws-caf-in-courses-of-action-matrix.png)
+![This image shows an example of AWS CAF appearing multiple times in a courses of action matrix.](https://docs.aws.amazon.com/whitepapers/latest/classic-intrusion-analysis-frameworks-for-aws-environments/images/aws-caf-in-courses-of-action-matrix.png)
 
  The following table shows each place in the *courses of action matrix* that each control number appears. You can use the control number for each control to help you prioritize your control implementations. For example, notice that control *Sec.Det.1* (Amazon GuardDuty) can provide Detection capabilities in all phases of the intrusion method analysis framework (except Exploit Development).
 

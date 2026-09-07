@@ -52,7 +52,7 @@ You can deploy this pattern as a stand-alone solution or integrate it with conta
 
 The following diagram shows an example target deployment architecture that uses Amazon ECS Anywhere, which is a container management tool.
 
-![Deployment architecture using Amazon ECS Anywhere.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2ecf5354-40e0-4fd9-9798-086719059784/images/5ed2652e-9604-4809-8962-b167e1991658.png)
+![Deployment architecture using Amazon ECS Anywhere.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2ecf5354-40e0-4fd9-9798-086719059784/images/5ed2652e-9604-4809-8962-b167e1991658.png)
 
 The diagram shows the following workflow:
 

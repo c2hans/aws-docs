@@ -16,7 +16,7 @@ Physical replication is block-level replication where a WAL file is shipped from
 
 The following diagram shows the architecture for setting up HADR for your on-premises PostgreSQL database on Amazon EC2 by using physical replication.
 
-![Physical replication architecture](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-databases-postgresql-ec2/images/guide-img/d9d57133-1a8b-4b7f-bbe9-e908969d06b9/images/ade2ef34-ba22-4e40-8a74-57b89b1aa40d.png)
+![Physical replication architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-databases-postgresql-ec2/images/guide-img/d9d57133-1a8b-4b7f-bbe9-e908969d06b9/images/ade2ef34-ba22-4e40-8a74-57b89b1aa40d.png)
 
 The diagram shows the following workflow:
 

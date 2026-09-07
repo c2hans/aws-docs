@@ -17,12 +17,12 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/migrating-magento-ope
 1.  Use the Region selector in the navigation bar to choose the AWS Region where you want to deploy the Magento cluster on AWS. For more information, see [Regions and Availability Zones](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html). Regions are dispersed and located in separate geographic areas. Each Region includes at least two Availability Zones that are isolated from one another but connected through low-latency links.
 **Important**
  This Quick Start uses Amazon Aurora, which might not be available in all AWS Regions. Before you launch this Quick Start, check the [Region table](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/) for availability.
-![Screen capture showing choosing an AWS Region](http://docs.aws.amazon.com/whitepapers/latest/migrating-magento-open-source-adobe-commerce-to-aws/images/region-selection.png)
+![Screen capture showing choosing an AWS Region](https://docs.aws.amazon.com/whitepapers/latest/migrating-magento-open-source-adobe-commerce-to-aws/images/region-selection.png)
 **Tip**
  Consider choosing a Region closest to your data center or corporate network to reduce network latency between systems running on AWS and the systems and users on your corporate network.
 
 1.  Create a [key pair](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html) in your preferred Region. In the navigation pane of the Amazon EC2 console, choose **Key Pairs**, **Create Key Pair**, type a name, and then choose **Create**.
-![Screen showing creating a key pair](http://docs.aws.amazon.com/whitepapers/latest/migrating-magento-open-source-adobe-commerce-to-aws/images/creating-key-pair.png)
+![Screen showing creating a key pair](https://docs.aws.amazon.com/whitepapers/latest/migrating-magento-open-source-adobe-commerce-to-aws/images/creating-key-pair.png)
 
     Amazon EC2 uses public-key cryptography to encrypt and decrypt login information. To be able to log into your instances, you must create a key pair. On Linux, we use the key pair to authenticate SSH login.
 
@@ -35,7 +35,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/migrating-magento-ope
    1.  Clear the `{"":""}` JSON format from the **Plaintext** section.
 
    1.  Copy and paste your private key.
-![Screen shot showing copying key](http://docs.aws.amazon.com/whitepapers/latest/migrating-magento-open-source-adobe-commerce-to-aws/images/copying-key.png)
+![Screen shot showing copying key](https://docs.aws.amazon.com/whitepapers/latest/migrating-magento-open-source-adobe-commerce-to-aws/images/copying-key.png)
 
    1.  Keep the `DefaultEncryptionKey` to encrypt your SSH Key secret. Click **Next**.
 
@@ -44,10 +44,10 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/migrating-magento-ope
    1.  Click **Next**. Leave the automatic rotation to disabled. Select **Next**.
 
    1.  Review and select **Store**.
-![Screenshot showing reviewing secrets](http://docs.aws.amazon.com/whitepapers/latest/migrating-magento-open-source-adobe-commerce-to-aws/images/reviewing-secrets.png)
+![Screenshot showing reviewing secrets](https://docs.aws.amazon.com/whitepapers/latest/migrating-magento-open-source-adobe-commerce-to-aws/images/reviewing-secrets.png)
 
 1.  If necessary, request a service quota increase for the instance types used for the deployment. You might need to request an increase if you need additional Elastic IP addresses or if you already have an existing deployment that uses the same instance types as this architecture. On the [Service Quotas](https://console.aws.amazon.com/servicequotas/home) console, for each instance type that you want a service quota increase, choose the instance type, choose **Request quota increase**, and then complete the fields in the quota increase form. It can take a few days for the new service quota to become effective.
-![Screenshot showing requesting a service quota increase](http://docs.aws.amazon.com/whitepapers/latest/migrating-magento-open-source-adobe-commerce-to-aws/images/request-service-quota-increase.png)
+![Screenshot showing requesting a service quota increase](https://docs.aws.amazon.com/whitepapers/latest/migrating-magento-open-source-adobe-commerce-to-aws/images/request-service-quota-increase.png)
 
 ## Step 2. Create Magento keys for deployment
 <a name="step-2.-create-magento-keys-for-deployment"></a>
@@ -60,7 +60,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/migrating-magento-ope
 
 For detailed instructions on creating keys, see the [Adobe documentation](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
 
-![Screenshot showing creating a new Magento access key](http://docs.aws.amazon.com/whitepapers/latest/migrating-magento-open-source-adobe-commerce-to-aws/images/new-magento-access-key.png)
+![Screenshot showing creating a new Magento access key](https://docs.aws.amazon.com/whitepapers/latest/migrating-magento-open-source-adobe-commerce-to-aws/images/new-magento-access-key.png)
 
 ## Step 3. Set up Terraform and a Terraform Cloud account
 <a name="step-3.-setup-terraform-and-a-terraform-cloud-account"></a>

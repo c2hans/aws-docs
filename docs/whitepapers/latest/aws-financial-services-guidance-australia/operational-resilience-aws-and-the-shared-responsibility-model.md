@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-financial-service
 
  However, operational resilience is a shared responsibility; AWS is responsible for making sure that the services used by our customers - the building blocks for their applications - are continuously available and making sure that we are prepared to handle a wide range of events that could affect our cloud infrastructure. AWS customers are responsible for designing, testing, and deploying their applications on AWS in a manner that achieves the availability and resiliency they need, including those mission-critical applications that require that AWS services are available when customers need them, even upon the occurrence of a service impairment and/or disruption.
 
-![Diagram showing the AWS shared responsibility model](http://docs.aws.amazon.com/whitepapers/latest/aws-financial-services-guidance-australia/images/shared-responsibility-model.png)
+![Diagram showing the AWS shared responsibility model](https://docs.aws.amazon.com/whitepapers/latest/aws-financial-services-guidance-australia/images/shared-responsibility-model.png)
 
  The AWS Shared Responsibility Model is fundamental to understanding the respective roles of AWS and its customers within the context of cloud services. AWS is responsible for the resiliency of the hardware, software, networking, and facilities that run the services offered by AWS.
 

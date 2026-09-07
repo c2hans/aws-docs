@@ -30,7 +30,7 @@ For more information, see [Working with Log Groups and Log Streams ](https://doc
    + Right-click the name of the log group, and then choose **View Log Streams**.
 
    The log group's contents are displayed in the **Log Streams** pane. For information about interacting with the log events in each stream, see [Working with CloudWatch log events](working-CloudWatch-log-events.md).
-![Viewing log streams in a CloudWatch log group in AWS Explorer](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/cloudwatch-view-log-streams.png)
+![Viewing log streams in a CloudWatch log group in AWS Explorer](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/cloudwatch-view-log-streams.png)
 
 ## Viewing log streams with the **Lambda** node
 <a name="viewing-lamba-log-groups"></a>

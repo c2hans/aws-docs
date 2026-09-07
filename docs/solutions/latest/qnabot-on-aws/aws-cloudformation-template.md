@@ -12,7 +12,7 @@ You can download the AWS CloudFormation templates for this guidance before deplo
 
  **View template**
 
- [![View Template](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/view-template.png)](https://solutions-reference.s3.amazonaws.com/qnabot-on-aws/latest/qnabot-on-aws-main.template)
+ [![View Template](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/view-template.png)](https://solutions-reference.s3.amazonaws.com/qnabot-on-aws/latest/qnabot-on-aws-main.template)
 
  **qnabot-on-aws-main.template** - Use this template to launch the guidance and all associated components. The default configuration deploys the core and supporting services found in the [AWS services in this guidance](architecture-details.md#aws-services-in-this-solution) section but you can customize the template to meet your specific needs.
 
@@ -21,7 +21,7 @@ You can download the AWS CloudFormation templates for this guidance before deplo
 
  **View template**
 
- [![View Template](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/view-template.png)](https://solutions-reference.s3.amazonaws.com/qnabot-on-aws/latest/qnabot-on-aws-vpc.template)
+ [![View Template](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/view-template.png)](https://solutions-reference.s3.amazonaws.com/qnabot-on-aws/latest/qnabot-on-aws-vpc.template)
 
  **qnabot-on-aws-vpc.template** - Use this template to launch the guidance and all associated components. The default configuration deploys the core and supporting services found in the [AWS services in this guidance](architecture-details.md#aws-services-in-this-solution) section but you can customize the template to meet your specific needs.
 

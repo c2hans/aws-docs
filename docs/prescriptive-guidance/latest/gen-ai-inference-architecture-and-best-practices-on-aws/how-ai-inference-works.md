@@ -34,7 +34,7 @@ Each layer transforms its input (a set of vectors representing the data) and pas
 
 Transformers can be organized in different ways depending on the task. The diagram below shows the original transformer architecture from the 2017 ["Attention Is All You Need" paper](https://arxiv.org/abs/1706.03762), which combines an **encoder** (left) and **decoder** (right):
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-inference-architecture-and-best-practices-on-aws/images/guide-img/1e4a4636-9247-4346-9ab7-62170783f8a2/images/f5c783c8-26d0-43b9-a990-34dd842f8ca5.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-inference-architecture-and-best-practices-on-aws/images/guide-img/1e4a4636-9247-4346-9ab7-62170783f8a2/images/f5c783c8-26d0-43b9-a990-34dd842f8ca5.png)
 
 The key architectural patterns are:
 + **Encoder-only**: Uses just the left side. Processes the entire input at once using **multi-head attention** (bidirectional — each token can attend to all others). Produces a fixed output like an embedding vector or classification score. Examples: BERT, embedding models.
@@ -95,13 +95,13 @@ After prefill, the model switches to **autoregressive decode**: generating outpu
 | **Output** | One token per step, with attention state updated |
 | **Metric impacted** | **Time Per Output Token (TPOT)**,**Tokens Per Second (TPS)** |
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-inference-architecture-and-best-practices-on-aws/images/guide-img/1e4a4636-9247-4346-9ab7-62170783f8a2/images/0f2d5c74-e45a-49e4-9078-a075626c061f.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-inference-architecture-and-best-practices-on-aws/images/guide-img/1e4a4636-9247-4346-9ab7-62170783f8a2/images/0f2d5c74-e45a-49e4-9078-a075626c061f.png)
 
 The distinction between prefill and decode is fundamentally about **arithmetic intensity** — the ratio of compute operations (FLOPs) to memory accesses (bytes moved):
 + **Prefill** has **high arithmetic intensity**: weights and inputs are loaded once, then many operations are performed across all tokens. The compute (FLOPS) is the bottleneck.
 + **Decode** has **very low arithmetic intensity**: the entire KV cache and weights are loaded from memory for each step, but only enough compute to produce a single token is performed. The **memory bandwidth** (GB/s) is the bottleneck.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-inference-architecture-and-best-practices-on-aws/images/guide-img/1e4a4636-9247-4346-9ab7-62170783f8a2/images/a64bc279-8323-4b5e-b599-6f258fecfbc3.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-inference-architecture-and-best-practices-on-aws/images/guide-img/1e4a4636-9247-4346-9ab7-62170783f8a2/images/a64bc279-8323-4b5e-b599-6f258fecfbc3.png)
 
 ### Optional: Vision encoding phase
 <a name="optional--vision-encoding-phase.10fbd910-9d43-547c-b178-1934851a5a84"></a>

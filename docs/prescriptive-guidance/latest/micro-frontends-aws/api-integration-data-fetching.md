@@ -19,10 +19,10 @@ As such, a BFF is owned by the micro-frontend, not by the domain service tier. B
 
 The following diagram shows that without the BFF pattern, micro-frontends must connect to individual microservice API endpoints to fetch and aggregate data.
 
-![Dashboard app that first fetches transactions and then fetches prices from decoupled microservices.](http://docs.aws.amazon.com/prescriptive-guidance/latest/micro-frontends-aws/images/guide-img/4cd7ea48-b17c-411c-a5b2-fa8a58f6a617/images/32e37d0c-d342-4ec8-9be2-bf1a61777fcf.png)
+![Dashboard app that first fetches transactions and then fetches prices from decoupled microservices.](https://docs.aws.amazon.com/prescriptive-guidance/latest/micro-frontends-aws/images/guide-img/4cd7ea48-b17c-411c-a5b2-fa8a58f6a617/images/32e37d0c-d342-4ec8-9be2-bf1a61777fcf.png)
 
 Instead, with the BFF pattern in the following diagram, micro-frontends can communicate with their own backend and fetch aggregated data.
 
-![The transactions view fetches aggregated data, including price information, from the BFF.](http://docs.aws.amazon.com/prescriptive-guidance/latest/micro-frontends-aws/images/guide-img/4cd7ea48-b17c-411c-a5b2-fa8a58f6a617/images/1cc136d8-f429-470e-9d8b-bfd52dc4aba8.png)
+![The transactions view fetches aggregated data, including price information, from the BFF.](https://docs.aws.amazon.com/prescriptive-guidance/latest/micro-frontends-aws/images/guide-img/4cd7ea48-b17c-411c-a5b2-fa8a58f6a617/images/1cc136d8-f429-470e-9d8b-bfd52dc4aba8.png)
 
 Teams can develop BFFs for different channels such as mobile, web, or specific views, with requirements to optimize backend interactions by reducing chattiness.

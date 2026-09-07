@@ -31,7 +31,7 @@ When data is stored in a data lake built on S3, you can share the data with mult
 
 S3 Object Lambda uses a Lambda function to automatically process and transform the data as it is being retrieved from an S3 bucket. The following figure shows an example of an S3 Object Lambda.
 
-![Using S3 Object Lambda to transform data before retrieval by applications](http://docs.aws.amazon.com/whitepapers/latest/building-data-lakes/images/storage-best-practices8.png)
+![Using S3 Object Lambda to transform data before retrieval by applications](https://docs.aws.amazon.com/whitepapers/latest/building-data-lakes/images/storage-best-practices8.png)
 
 S3 Object Lambda can be very useful in redacting PII data for analytics applications, format conversion, enriching data from other data sources, resizing objects, or even implementing custom authorization rules to access the data stored in your data lake built on Amazon S3.
 

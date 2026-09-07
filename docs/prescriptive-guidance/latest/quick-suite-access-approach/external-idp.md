@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/quick-suite
 # Configuring federated user access to Quick through IAM and an external IdP
 <a name="external-idp"></a>
 
-![Architecture diagram of a federated user from an external IdP accessing Quick Suite through an IAM role.](http://docs.aws.amazon.com/prescriptive-guidance/latest/quick-suite-access-approach/images/guide-img/ec03a023-a3ad-4a10-93bb-22dcf4ea49a5/images/6625c4f2-1107-426a-8688-6d06ea70c908.png)
+![Architecture diagram of a federated user from an external IdP accessing Quick Suite through an IAM role.](https://docs.aws.amazon.com/prescriptive-guidance/latest/quick-suite-access-approach/images/guide-img/ec03a023-a3ad-4a10-93bb-22dcf4ea49a5/images/6625c4f2-1107-426a-8688-6d06ea70c908.png)
 
 The following are the characteristics of this architecture:
 + The Amazon Quick user record is linked to an AWS Identity and Access Management (IAM) role and the username in the IdP, such as `QuickSightReader/DiegoRamirez@example.com`.

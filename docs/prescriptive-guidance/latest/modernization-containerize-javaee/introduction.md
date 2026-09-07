@@ -16,4 +16,4 @@ The "heart" of an application is the business logic and data model, which are ti
 
 The following diagram shows a design pattern for refactoring a traditional Java EE application into a containerized application.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-containerize-javaee/images/guide-img/34f6e23c-ad3a-4f13-8f30-05bf7b07cc57/images/aa0a279a-95ee-4008-950f-0a1b2007d43b.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-containerize-javaee/images/guide-img/34f6e23c-ad3a-4f13-8f30-05bf7b07cc57/images/aa0a279a-95ee-4008-950f-0a1b2007d43b.png)

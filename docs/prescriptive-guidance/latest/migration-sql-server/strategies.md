@@ -24,7 +24,7 @@ If you're trying to decide between rehosting or replatforming your SQL Server da
 
 Choosing the correct strategy depends on your business requirements, resource constraints, migration timeframe, and cost considerations. The following diagram shows the effort and complexity involved in migrations, including all seven strategies.
 
-![Comparison of SQL Server migration strategies.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-sql-server/images/guide-img/aa3b9357-4901-48ca-9fc9-a997d21ade3e/images/38d62954-e016-4185-b9f6-d19d207b6552.png)
+![Comparison of SQL Server migration strategies.](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-sql-server/images/guide-img/aa3b9357-4901-48ca-9fc9-a997d21ade3e/images/38d62954-e016-4185-b9f6-d19d207b6552.png)
 
 Refactoring your SQL Server database and migrating to an open-source or AWS cloud-native database such as Aurora PostgreSQL or Aurora MySQL can help you modernize and optimize your database. By moving to an open-source database, you can avoid expensive licenses (resulting in lower costs), vendor lock-in periods, and audits. However, depending on the complexity of your workload, refactoring your SQL Server database can be a complicated, time-consuming, and resource-intensive effort.
 

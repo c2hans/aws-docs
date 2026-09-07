@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/archi
 
  Deploying the Data Transfer Hub Guidance with the default parameters builds the following environment in the AWS Cloud.
 
-![Data Transfer Hub architecture on AWS](http://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/guidance-arch.png)
+![Data Transfer Hub architecture on AWS](https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/guidance-arch.png)
 
  The Guidance automatically deploys and configures a serverless architecture with the following services:
 
@@ -43,7 +43,7 @@ If you deploy this Guidance in AWS (Beijing) Region operated by Beijing Sinnet T
 
 **Amazon S3 plugin**
 
-![Data Transfer Hub Amazon S3 plugin architecture](http://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/guidance-s3-plugin.png)
+![Data Transfer Hub Amazon S3 plugin architecture](https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/guidance-s3-plugin.png)
 
  The Amazon S3 plugin runs the following workflows:
 
@@ -72,7 +72,7 @@ If an object (or part of an object) transfer failed, the JobWorker releases th
 
  **Amazon ECR plugin**
 
-![Data Transfer Hub Amazon ECR plugin architecture](http://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/guidance-ecr-plugin.png)
+![Data Transfer Hub Amazon ECR plugin architecture](https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/guidance-ecr-plugin.png)
 
  The Amazon ECR plugin runs the following workflows:
 

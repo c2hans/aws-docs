@@ -17,7 +17,7 @@ The following video can help you understand the capabilities of AWS AppConfig.
 **Video: Introduction to AWS AppConfig**
 View a video introduction to AWS AppConfig capabilities.
 
-[![AWS Videos](http://img.youtube.com/vi/rL_e6W6SlMM?si=kmR92RLEuyhJP_hf/0.jpg)](http://www.youtube.com/watch?v=rL_e6W6SlMM?si=kmR92RLEuyhJP_hf)
+[![AWS Videos](https://img.youtube.com/vi/rL_e6W6SlMM?si=kmR92RLEuyhJP_hf/0.jpg)](https://www.youtube.com/watch?v=rL_e6W6SlMM?si=kmR92RLEuyhJP_hf)
 
 View more AWS videos on the [Amazon Web Services YouTube Channel](https://www.youtube.com/user/AmazonWebServices).
 
@@ -54,7 +54,7 @@ AWS developed and validated AWS AppConfig safety controls with internal teams th
 
 This section provides a high-level description of how AWS AppConfig works.
 
-![A diagram of how AWS AppConfig works](http://docs.aws.amazon.com/appconfig/latest/userguide/images/AppConfigHowItWorks.png)
+![A diagram of how AWS AppConfig works](https://docs.aws.amazon.com/appconfig/latest/userguide/images/AppConfigHowItWorks.png)
 
 **1. Identify configuration data to manage in AWS AppConfig**
 Before creating a configuration profile, identify the configuration data in your code that you want to manage dynamically using AWS AppConfig. Common examples include feature flags, allow and block lists, logging levels, service limits, and throttling rules. These values tend to change frequently and can cause issues if misconfigured.

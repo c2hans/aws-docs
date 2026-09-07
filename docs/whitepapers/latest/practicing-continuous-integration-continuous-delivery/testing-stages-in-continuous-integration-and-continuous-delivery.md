@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous
 
  The three CI/CD teams should incorporate testing into the software development lifecycle at the different stages of the CI/CD pipeline. Overall, testing should start as early as possible. The following testing pyramid is a concept provided by Mike Cohn in *Succeeding with Agile*. It shows the various software tests in relation to their cost and speed at which they run.
 
-![Diagram showing CI/CD testing pyramid](http://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/ci-cd-testing-pyramid.png)
+![Diagram showing CI/CD testing pyramid](https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/ci-cd-testing-pyramid.png)
 
  Unit tests are on the bottom of the pyramid. They are both the fastest to run and the least expensive. Therefore, unit tests should make up the bulk of your testing strategy. A good rule of thumb is about 70 percent. Unit tests should have near-complete code coverage because bugs caught in this phase can be fixed quickly and cheaply.
 

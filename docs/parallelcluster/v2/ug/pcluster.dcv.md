@@ -73,4 +73,4 @@ Opens the default browser to connect to the Amazon DCV session running on the he
 
 A new Amazon DCV session is created if one isn't already started.
 
- ![A screenshot of the DCV console.](http://docs.aws.amazon.com/parallelcluster/v2/ug/images/Dcv-image.png)
+ ![A screenshot of the DCV console.](https://docs.aws.amazon.com/parallelcluster/v2/ug/images/Dcv-image.png)

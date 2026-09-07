@@ -176,7 +176,7 @@ In this step, you use the AWS Lambda console to create a Lambda function and con
 1. Next, register the handler and upload your Lambda function deployment package.
 
    1. <a name="lambda-console-upload"></a>On the **Code** tab, under **Code source**, choose **Upload from**. From the dropdown, choose **.zip file**.
-![The Upload from dropdown with .zip file highlighted.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/lra-console/upload-deployment-package.png)
+![The Upload from dropdown with .zip file highlighted.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/lra-console/upload-deployment-package.png)
 
    1. Choose **Upload**, then choose your `secret_test_python.zip` deployment package. Then, choose **Save**.
 

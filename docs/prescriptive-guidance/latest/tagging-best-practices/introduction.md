@@ -29,7 +29,7 @@ Tags are key-value pairs that you can use to report current status or to underst
 
 The following image shows object tags implemented on Amazon Simple Storage Service (Amazon S3).
 
-![Key-value pairs for tags shown on the console.](http://docs.aws.amazon.com/prescriptive-guidance/latest/tagging-best-practices/images/guide-img/fc2e4154-d614-4be6-b18a-2e052f9b7d57/images/0af01b87-1cbc-42b0-8cca-6c80f1bfb340.jpeg)
+![Key-value pairs for tags shown on the console.](https://docs.aws.amazon.com/prescriptive-guidance/latest/tagging-best-practices/images/guide-img/fc2e4154-d614-4be6-b18a-2e052f9b7d57/images/0af01b87-1cbc-42b0-8cca-6c80f1bfb340.jpeg)
 
 This guide covers how tagging can help you understand the metrics of an application after tags are applied to all the components, including the following:
 + Input files

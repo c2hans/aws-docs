@@ -18,7 +18,7 @@ For detailed descriptions of each metric, see [Monitor SageMaker AI with CloudWa
 
 The following screenshot shows the **Operational metrics** section for a serverless endpoint.
 
-![Screenshot of metrics graphs in the operational metrics section of the endpoint details page.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/hosting-operational-metrics.png)
+![Screenshot of metrics graphs in the operational metrics section of the endpoint details page.](https://docs.aws.amazon.com/sagemaker/latest/dg/images/hosting-operational-metrics.png)
 
 You can adjust the **Period** and **Statistic** that you want to track for the metrics in a given section, as well as the length of time for which you want to view metrics data. You can also add and remove metric widgets from the view for each section by choosing **Add widget**. In the **Add widget **dialog box, you can select and deselect the metrics that you want to see.
 

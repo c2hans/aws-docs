@@ -26,6 +26,6 @@ The Playground is an interactive interface for trying transformations against yo
 
  **Screenshot of the Playground showing a transformed image with its extended-metrics overlay.**
 
-![Playground UI showing a transformed image with metrics overlay](http://docs.aws.amazon.com/solutions/latest/dynamic-image-transformation-for-amazon-cloudfront/images/playground-ui-example.png)
+![Playground UI showing a transformed image with metrics overlay](https://docs.aws.amazon.com/solutions/latest/dynamic-image-transformation-for-amazon-cloudfront/images/playground-ui-example.png)
 
 The Playground routes requests through the deployed DIT instance, so results reflect production behavior. Extended metrics are returned only for authenticated Playground sessions; if metrics stop appearing, refresh your Admin UI session to obtain a current Cognito token.

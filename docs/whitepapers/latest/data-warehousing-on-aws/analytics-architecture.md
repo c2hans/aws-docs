@@ -19,7 +19,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/data-warehousing-on-a
 
 1.  Analyze and visualize the data
 
-![Analytics Pipeline](http://docs.aws.amazon.com/whitepapers/latest/data-warehousing-on-aws/images/analytics-pipeline.jpg)
+![Analytics Pipeline](https://docs.aws.amazon.com/whitepapers/latest/data-warehousing-on-aws/images/analytics-pipeline.jpg)
 
 *Analytics pipeline *
 

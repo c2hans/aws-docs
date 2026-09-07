@@ -37,7 +37,7 @@ The account creation workflow supports sequential executions to deploy a single 
 
 The following image shows the high-level architecture of automating creation of a new AWS account by using the Landing Zone Accelerator on AWS. AWS Step Functions orchestrates the automation. Each task in the Step Functions workflow is performed by one or more AWS Lambda functions.
 
-![Workflow to automate the creation of a new account by using the Landing Zone Accelerator on AWS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/d31abfaa-6854-4923-b896-3b817de9f4d9/images/dfd6503d-a4ed-43df-82d4-082f8153d473.png)
+![Workflow to automate the creation of a new account by using the Landing Zone Accelerator on AWS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/d31abfaa-6854-4923-b896-3b817de9f4d9/images/dfd6503d-a4ed-43df-82d4-082f8153d473.png)
 
 The diagram shows the following workflow:
 
@@ -198,7 +198,7 @@ We recommend the following naming conventions for the AWS CDK:
 
 The following image shows the states in the Step Functions workflow.
 
-![States in the Step Functions workflow.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/d31abfaa-6854-4923-b896-3b817de9f4d9/images/d93aa7bf-1144-4f25-9488-aacc534a7813.png)
+![States in the Step Functions workflow.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/d31abfaa-6854-4923-b896-3b817de9f4d9/images/d93aa7bf-1144-4f25-9488-aacc534a7813.png)
 
 **Arguments**
 

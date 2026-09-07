@@ -49,7 +49,7 @@ Db2 HADR implements a production-standby setup, where production acts as the pri
 
 VPC peering is used so that instances in the production Region and DR Region can communicate with each other. Amazon Route 53 routes end users to internet applications.
 
-![Db2 on AWS with cross-Region replication](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/06edfa4c-0827-4d05-95cf-2d2651e74323/images/e77c1e4e-36f3-4af4-89d0-8eec72348f0a.png)
+![Db2 on AWS with cross-Region replication](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/06edfa4c-0827-4d05-95cf-2d2651e74323/images/e77c1e4e-36f3-4af4-89d0-8eec72348f0a.png)
 
 1. [Create an AMI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html#creating-an-ami) of the application server in Region 1 and [copy the AMI](https://repost.aws/knowledge-center/copy-ami-region) to Region 2. Use the AMI to launch servers in Region 2 in the event of a disaster.
 

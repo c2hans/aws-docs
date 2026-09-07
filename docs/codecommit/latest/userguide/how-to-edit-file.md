@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-edit-
 
 You can use the CodeCommit console, AWS CLI, or a Git client to edit the contents of a file in a CodeCommit repository.
 
-![A view of editing a file in the CodeCommit console](http://docs.aws.amazon.com/codecommit/latest/userguide/images/codecommit-edit-file.png)
+![A view of editing a file in the CodeCommit console](https://docs.aws.amazon.com/codecommit/latest/userguide/images/codecommit-edit-file.png)
 
 **Topics**
 + [Edit a file (console)](#how-to-edit-file-console)

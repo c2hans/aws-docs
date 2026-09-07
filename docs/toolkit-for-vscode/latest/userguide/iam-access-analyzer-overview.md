@@ -20,7 +20,7 @@ The following prerequisites must be met before you can work with IAM Access Anal
 
 You can perform policy checks for CloudFormation templates, Terraform plans, and JSON Policy documents, using the AWS Toolkit for Visual Studio Code. Your check findings are viewable in the VS Code **Problems Panel**. The following image shows the VS Code **Problems Panel**.
 
-![VS Code Problems Panel displaying security warnings and missing version warnings for CloudFormation resources.](http://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/vscproblemspanel2024.png)
+![VS Code Problems Panel displaying security warnings and missing version warnings for CloudFormation resources.](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/vscproblemspanel2024.png)
 
 IAM Access Analyzer provides 4 types of checks:
 + Validate Policy

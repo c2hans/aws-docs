@@ -9,7 +9,7 @@ Although you can choose the appropriate instance types for your specific workloa
 
 The following diagram shows SAS Grid on AWS with data, metadata, middle tier, and server tiers. This high-availability architecture is deployed on two Availability Zones for an active-active disaster recovery failover strategy.
 
-![SAS Grid architecture on AWS with high availability and warm standby](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-sas-grid/images/guide-img/305d2670-30eb-46db-a41c-bed418267f47/images/601bad9c-3ffd-45f3-b167-b6571ebb41de.png)
+![SAS Grid architecture on AWS with high availability and warm standby](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-sas-grid/images/guide-img/305d2670-30eb-46db-a41c-bed418267f47/images/601bad9c-3ffd-45f3-b167-b6571ebb41de.png)
 
 This architecture includes the following components:
 + [Virtual private cloud (VPC)](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html) – A virtual network dedicated to your AWS account. This is logically isolated from other virtual networks in the AWS Cloud. You can also create a hardware virtual private network (VPN) connection between your corporate data center and your VPC, and use the AWS Cloud as an extension of your corporate data center. The VPC is configured with two Availability Zones, public subnets, and private subnets to provide the network infrastructure for SAS Grid on AWS.

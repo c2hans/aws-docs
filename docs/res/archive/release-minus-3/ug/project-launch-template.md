@@ -56,4 +56,4 @@ res:EnvironmentName/{{<res-environment>}}
 
 For **Arguments**, provide any arguments separated by a comma.
 
-![Example of a project configuration](http://docs.aws.amazon.com/res/archive/release-minus-3/ug/images/res-projectconfigexample.png)
+![Example of a project configuration](https://docs.aws.amazon.com/res/archive/release-minus-3/ug/images/res-projectconfigexample.png)

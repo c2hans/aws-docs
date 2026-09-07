@@ -37,7 +37,7 @@ AWS Data Exports does not support in-place table version updates within an exist
 #### Click to see the example
 <a name="focus-migration-step1-screenshot"></a>
 
-![Disable FOCUS 1.0 Export](http://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashboards/images/focus-migration-disable-1-0.png)
+![Disable FOCUS 1.0 Export](https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashboards/images/focus-migration-disable-1-0.png)
 
 ### Step 2: Enable FOCUS 1.2 Export in Source Account
 <a name="step-2-enable-focus-1-2-export-in-source-account"></a>
@@ -55,7 +55,7 @@ AWS Data Exports does not support in-place table version updates within an exist
 #### Click to see the example
 <a name="focus-migration-step2-screenshot"></a>
 
-![Enable FOCUS 1.2 in Source Account](http://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashboards/images/focus-migration-enable-1-2-source.png)
+![Enable FOCUS 1.2 in Source Account](https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashboards/images/focus-migration-enable-1-2-source.png)
 
 ### Step 3: Update Destination Account Stack
 <a name="step-3-update-destination-account-stack"></a>
@@ -73,7 +73,7 @@ AWS Data Exports does not support in-place table version updates within an exist
 #### Click to see the example
 <a name="focus-migration-step3-screenshot"></a>
 
-![Update Destination Account Stack](http://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashboards/images/focus-migration-enable-1-2-source.png)
+![Update Destination Account Stack](https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashboards/images/focus-migration-enable-1-2-source.png)
 
 ### Step 4: Update FOCUS Dashboard and Views
 <a name="step-4-update-focus-dashboard-and-views"></a>

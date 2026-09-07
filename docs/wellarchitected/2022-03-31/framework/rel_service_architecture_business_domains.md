@@ -11,7 +11,7 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 
  In designing a microservice architecture, it’s helpful to use Domain-Driven Design (DDD) to model the business problem using entities. For example, for the Amazon.com website, entities might include package, delivery, schedule, price, discount, and currency. Then the model is further divided into smaller models using [*Bounded Context*](https://martinfowler.com/bliki/BoundedContext.html), where entities that share similar features and attributes are grouped together. So, using the Amazon.com example package, delivery, and schedule would be part of the shipping context, while price, discount, and currency are part of the pricing context. With the model divided into contexts, a template for how to boundary microservices emerges.
 
-![Model template for how to boundary microservices](http://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/images/building-services.png)
+![Model template for how to boundary microservices](https://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/images/building-services.png)
 
  **Level of risk exposed if this best practice is not established:** High
 

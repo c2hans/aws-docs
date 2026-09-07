@@ -7,4 +7,4 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/Wel
 
 Definition of the public APIs exposed by Amazon Machine Learning
 
-This document was last published on September 4, 2026.
+This document was last published on September 7, 2026.

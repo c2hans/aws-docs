@@ -13,7 +13,7 @@ AWS defines resilience as the ability of an application to resist or recover fro
 
 Based on years of working with customers and internal teams, AWS has developed a resilience lifecycle framework that captures resilience learnings and best practices. The framework outlines five key stages that are illustrated in the following diagram. At each stage you can use strategies, services, and mechanisms  to improve your resilience posture.
 
-![Resilience lifecycle framework](http://docs.aws.amazon.com/prescriptive-guidance/latest/resilience-lifecycle-framework/images/guide-img/3fbf10f7-8a26-4fb7-b9c0-58902dbfe93c/images/f9b747e4-5196-48c9-832c-06fed270be40.png)
+![Resilience lifecycle framework](https://docs.aws.amazon.com/prescriptive-guidance/latest/resilience-lifecycle-framework/images/guide-img/3fbf10f7-8a26-4fb7-b9c0-58902dbfe93c/images/f9b747e4-5196-48c9-832c-06fed270be40.png)
 
 These stages are discussed in the following sections of this guide:
 + [Stage 1: Set objectives](stage-1.md)

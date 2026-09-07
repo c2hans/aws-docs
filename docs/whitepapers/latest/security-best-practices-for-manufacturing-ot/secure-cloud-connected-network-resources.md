@@ -23,7 +23,7 @@ AWS IoT Greengrass, for example, supports the use of hardware security modules (
 
 On a standard installation, AWS IoT Greengrass uses two private keys. One key is used by the AWS IoT client (IoT client) component during the Transport Layer Security (TLS) handshake when a AWS IoT Greengrass core connects to AWS IoT Core. (This key is also referred to as the core private key.) The other key is used by the local MQTT server, which enables AWS IoT Greengrass devices to communicate with the AWS IoT Greengrass core. Hardware security can be used for both components using shared or separate private keys. For more information, see [Provisioning Practices for AWS IoT Greengrass Hardware Security](https://docs.aws.amazon.com/greengrass/latest/developerguide/hardware-security.html#optional-provisioning).
 
-![A diagram showing hardware security architecture for AWS IoT Greengrass.](http://docs.aws.amazon.com/whitepapers/latest/security-best-practices-for-manufacturing-ot/images/hw-security-arch.png)
+![A diagram showing hardware security architecture for AWS IoT Greengrass.](https://docs.aws.amazon.com/whitepapers/latest/security-best-practices-for-manufacturing-ot/images/hw-security-arch.png)
 
 * Hardware security architecture for AWS IoT Greengrass *
 +  **Plan and manage security lifecycle of devices** — Planning the device and solution security lifecycle at design time reduces business risk and provides an opportunity to perform upfront infrastructure security analysis.
@@ -37,7 +37,7 @@ In case of AWS IoT, devices can connect using X.509 certificates or Amazon Cogni
 
 Unique identities should be assigned to each device and permissions should be managed for each device or group of devices. If device certificate or static credentials are used, those credentials should be rotated as appropriate, given the current best practices.
 
-![A diagram showing AWS IoT authentication and authorization.](http://docs.aws.amazon.com/whitepapers/latest/security-best-practices-for-manufacturing-ot/images/iot-authentication-auth.png)
+![A diagram showing AWS IoT authentication and authorization.](https://docs.aws.amazon.com/whitepapers/latest/security-best-practices-for-manufacturing-ot/images/iot-authentication-auth.png)
 
 * AWS IoT authentication and authorization *
 +  **Implement certificate rotation for AWS IoT, AWS IoT Greengrass core and AWS IoT Greengrass aware devices** — X.509 certificates used by AWS IoT, AWS IoT Greengrass Core, and AWS IoT Greengrass aware devices provide stronger client authentication over other schemes, such as sign-in credentials or bearer tokens, because the private key never leaves the device. The clock on the device is used to verify that a server certificate is still valid and not expired, therefore it is important to maintain accurate time on the device.
@@ -56,7 +56,7 @@ AWS IoT Greengrass-connected devices use the local MQTT server certificate for m
 
 [AWS IoT Greengrass](https://aws.amazon.com/greengrass/) offers built in integration with Secrets Manager. AWS IoT Greengrass extends Secrets Manager to AWS IoT Greengrass core devices, so [connectors](https://docs.aws.amazon.com/greengrass/latest/developerguide/connectors.html) and Lambda functions can use local secrets to interact with services and applications. For example, the [Twilio Notifications](https://www.twilio.com/) connector uses a locally stored authentication token. To integrate a secret into an AWS IoT Greengrass group, create a group resource that references the Secrets Manager secret. This secret resource references the cloud secret by ARN. To learn how to create, manage, and use secret resources, see [Working with secret resources](https://docs.aws.amazon.com/greengrass/latest/developerguide/secrets-using.html). AWS IoT Greengrass encrypts secrets while in transit and at rest. During group deployment, AWS IoT Greengrass fetches the secret from Secrets Manager and creates a local, encrypted copy on the AWS IoT Greengrass Core. After rotating the cloud secrets in Secrets Manager, redeploy the group to propagate the updated values to the core. Figure 10 shows the high-level process of deploying a secret to the core. Secrets are encrypted in transit and at rest.
 
-![A diagram that shows deploying a secret to AWS IoT Greengrass Core.](http://docs.aws.amazon.com/whitepapers/latest/security-best-practices-for-manufacturing-ot/images/deploy-secret-greengrass.png)
+![A diagram that shows deploying a secret to AWS IoT Greengrass Core.](https://docs.aws.amazon.com/whitepapers/latest/security-best-practices-for-manufacturing-ot/images/deploy-secret-greengrass.png)
 
 *Deploying a secret to AWS IoT Greengrass Core *
 +  **Ensure least privilege access controls for “edge gateways” and “agent software” accessing local and AWS resources** — Edge gateways and agent software should be configured to allow only the required access to both local and AWS resources. For edge gateways, access to local resources should be controlled via firewall on the southbound side to limit access only the needed local resources (for example, access to only required PLCs / OPC servers, IP addresses, and protocols). OS / Active Directory permissions should also be used to prevent access to local network resources like file servers.
@@ -65,6 +65,6 @@ Agent software is often installed on the host machine, generating the data to be
 
 Access to AWS resources should be controlled with appropriate IAM policies attached to the edge gateway, or the agent software AWS identity/role. [AWS Systems Manager](https://aws.amazon.com/systems-manager/), along with [AWS Config](https://aws.amazon.com/config/), can be used to gain visibility and track changes to OS configurations, system-level updates, installed applications, network configuration, and more.
 
-![A diagram that shows secure cloud connected network resources.](http://docs.aws.amazon.com/whitepapers/latest/security-best-practices-for-manufacturing-ot/images/secure-cloud-nw-reso.png)
+![A diagram that shows secure cloud connected network resources.](https://docs.aws.amazon.com/whitepapers/latest/security-best-practices-for-manufacturing-ot/images/secure-cloud-nw-reso.png)
 
  *Secure cloud connected network resources *

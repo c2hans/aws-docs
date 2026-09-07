@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/network-orchestration-a
 
 Follow the step-by-step instructions in this section to configure and deploy the hub stack into your hub account.
 
-1. Sign in to the AWS Management Console with your AWS network hub account and select the button to launch the `network-orchestration-hub.template` CloudFormation template. \+{ [![network orchestration hub launch button](http://docs.aws.amazon.com/solutions/latest/network-orchestration-aws-transit-gateway/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?stackName=STNO-role&templateURL=https://solutions-reference.s3.amazonaws.com/network-orchestration-for-aws-transit-gateway/latest/network-orchestration-hub.template&redirectId=ImplementationGuide)
+1. Sign in to the AWS Management Console with your AWS network hub account and select the button to launch the `network-orchestration-hub.template` CloudFormation template. \+{ [![network orchestration hub launch button](https://docs.aws.amazon.com/solutions/latest/network-orchestration-aws-transit-gateway/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?stackName=STNO-role&templateURL=https://solutions-reference.s3.amazonaws.com/network-orchestration-for-aws-transit-gateway/latest/network-orchestration-hub.template&redirectId=ImplementationGuide)
 
 1. The template launches in the US East (N. Virginia) Region by default. To launch this solution in a different AWS Region, use the Region selector in the console navigation bar. See [Supported AWS Regions](plan-your-deployment.md#supported-aws-regions) for more information on selecting a Region.
 

@@ -77,7 +77,7 @@ The Amazon RDS architecture includes the following resources:
 + An Amazon RDS read replica created in the secondary Region (`us-west-2`) with read-only access for clients
 + DR Orchestrator Framework deployed in both the primary and secondary Regions
 
-![Diagram of two-Region RDS architecture in a single AWS account.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8d39561f-924e-4b3e-8175-c5c3cab163bd/images/ad217033-600c-40da-929c-b9f9aecb4c2c.png)
+![Diagram of two-Region RDS architecture in a single AWS account.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8d39561f-924e-4b3e-8175-c5c3cab163bd/images/ad217033-600c-40da-929c-b9f9aecb4c2c.png)
 
 The diagram shows the following:
 
@@ -94,7 +94,7 @@ The Amazon Aurora architecture includes the following resources:
 + An Aurora DB cluster created in the secondary Region (`us-west-2`) with an inactive-writer endpoint
 + DR Orchestrator Framework deployed in both the primary and secondary Regions
 
-![Diagram of two-Region Aurora deployment in a single AWS account.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8d39561f-924e-4b3e-8175-c5c3cab163bd/images/524ec002-5aa7-47b2-8c8d-6d1a3b535e9e.png)
+![Diagram of two-Region Aurora deployment in a single AWS account.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8d39561f-924e-4b3e-8175-c5c3cab163bd/images/524ec002-5aa7-47b2-8c8d-6d1a3b535e9e.png)
 
 The diagram shows the following:
 
@@ -115,7 +115,7 @@ The Amazon ElastiCache (Redis OSS) architecture includes the following resources
 + An Amazon cross-Region link with TLS 1.2 encryption between the two clusters
 + DR Orchestrator Framework deployed in both primary and secondary Regions
 
-![Diagram of a two-Region ElastiCache deployment with Amazon cross-Region link.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8d39561f-924e-4b3e-8175-c5c3cab163bd/images/cf6620a0-dd42-4042-8dc2-012bf514ffc0.png)
+![Diagram of a two-Region ElastiCache deployment with Amazon cross-Region link.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8d39561f-924e-4b3e-8175-c5c3cab163bd/images/cf6620a0-dd42-4042-8dc2-012bf514ffc0.png)
 
 **Automation and scale**
 

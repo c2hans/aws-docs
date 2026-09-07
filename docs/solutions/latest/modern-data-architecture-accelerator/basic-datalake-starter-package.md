@@ -9,7 +9,7 @@ The Basic Data Lake Starter Package establishes a robust foundation for storing 
 
  **Basic Data Lake starter kit architecture**
 
-![Basic Data Lake starter kit — secure S3 data lake with Glue Data Catalog and Athena querying.](http://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/basic_datalake.png)
+![Basic Data Lake starter kit — secure S3 data lake with Glue Data Catalog and Athena querying.](https://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/basic_datalake.png)
 
 This S3 Data Lake implementation demonstrates best practices for creating an enterprise data lake on AWS. Access to the data lake can be granted to IAM and federated principals, with comprehensive access controls.
 

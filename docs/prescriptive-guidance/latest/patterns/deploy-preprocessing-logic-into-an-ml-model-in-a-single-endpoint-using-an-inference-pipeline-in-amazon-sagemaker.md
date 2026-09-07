@@ -41,7 +41,7 @@ The deployment in this pattern uses the ml.m4.2xlarge instance type. We recommen
 
 The following diagram shows the architecture for the deployment of an Amazon SageMaker pipeline model object.
 
-![Architecture for deployment of SageMaker pipeline model object](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/1105d51b-752f-46d7-962c-acef1fb3399f/images/12f06715-b1c2-4de0-b277-99ce87308152.png)
+![Architecture for deployment of SageMaker pipeline model object](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/1105d51b-752f-46d7-962c-acef1fb3399f/images/12f06715-b1c2-4de0-b277-99ce87308152.png)
 
 The diagram shows the following workflow:
 

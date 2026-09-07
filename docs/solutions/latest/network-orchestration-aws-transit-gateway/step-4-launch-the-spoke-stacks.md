@@ -12,7 +12,7 @@ You must wait for the hub stack deployment to complete before you launch the spo
 
 1. Sign in to your AWS spoke account using the AWS Management Console and select the button to launch the `network-orchestration-spoke.template` CloudFormation template.
 
-    [![network orchestration spoke launch button](http://docs.aws.amazon.com/solutions/latest/network-orchestration-aws-transit-gateway/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?stackName=STNO-role&templateURL=https://solutions-reference.s3.amazonaws.com/network-orchestration-for-aws-transit-gateway/latest/network-orchestration-spoke.template&redirectId=ImplementationGuide)
+    [![network orchestration spoke launch button](https://docs.aws.amazon.com/solutions/latest/network-orchestration-aws-transit-gateway/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?stackName=STNO-role&templateURL=https://solutions-reference.s3.amazonaws.com/network-orchestration-for-aws-transit-gateway/latest/network-orchestration-spoke.template&redirectId=ImplementationGuide)
 
 1. Launch this template in the same Region as the hub template. The template launches in the US East (N. Virginia) Region by default.
 

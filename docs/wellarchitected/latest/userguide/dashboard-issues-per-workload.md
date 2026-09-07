@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/dashboa
 
 The **Well-Architected Framework issues per workload** section displays information for each workload.
 
-![Picture showing the issues per workload section of the Dashboard.](http://docs.aws.amazon.com/wellarchitected/latest/userguide/images/dashboard-issues-per-workload.png)
+![Picture showing the issues per workload section of the Dashboard.](https://docs.aws.amazon.com/wellarchitected/latest/userguide/images/dashboard-issues-per-workload.png)
 
 The following information is displayed for each workload:
 

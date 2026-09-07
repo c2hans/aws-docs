@@ -38,7 +38,7 @@ To use SageMaker AI Notebook instances or Studio in an enterprise environment, d
 + **Amazon ECR (ECR)** — [ECR](https://aws.amazon.com/ecr/) is used to store training, processing, and inference containers. Data scientists and ML engineers can use ECR in the data science account to manage custom containers for experimentation.
 + **Artifacts repository** — Organizations with strict internet access control often do not allow its users to download and install library packages from public package repositories directly, such as the [Python Package Index](http://pypi.org/) (PyPi) or [Anaconda](https://www.anaconda.com/). Private package repositories such as [Artifactory](https://jfrog.com/artifactory), [AWS CodeArtifact](https://aws.amazon.com/codeartifact/), or mirroring PyPI servers can be created to support private packages management. These servers can be used to host private packages as well as a mirroring site for public package sites such as the PyPi for Pip or [Anaconda main package channel](http://repo.anaconda.com/pkgs/main) and [Conda-forge channel](https://conda.anaconda.org/conda-forge/) for Anaconda.
 
-![A diagram showing core components in the experimentation environment.](http://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-9.png)
+![A diagram showing core components in the experimentation environment.](https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-9.png)
 
 *Core components in the experimentation environment*
 
@@ -47,6 +47,6 @@ To use SageMaker AI Notebook instances or Studio in an enterprise environment, d
 
 To improve onboarding efficiency for data scientists and ML engineers, consider developing a self-service capability using the [Service Catalog](https://aws.amazon.com/servicecatalog/?aws-service-catalog.sort-by=item.additionalFields.createdDate&aws-service-catalog.sort-order=desc). The Service Catalog enables you to create self-service portfolio and products using CloudFormation scripts, and data scientists can directly request access to SageMaker AI Notebook / SageMaker AI Studio and other related AWS services without going through manual provisioning. Follow the instructions in [Enable self-service, secured data science using Amazon SageMaker AI notebooks and Service Catalog](https://aws.amazon.com/blogs/mt/enable-self-service-secured-data-science-using-amazon-sagemaker-notebooks-and-aws-service-catalog/) to enable self-service for data science products.
 
-![A diagram that shows enabling self-service for data science products with Service Catalog.](http://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-10.png)
+![A diagram that shows enabling self-service for data science products with Service Catalog.](https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-10.png)
 
 *Enabling self-service for data science products with Service Catalog*

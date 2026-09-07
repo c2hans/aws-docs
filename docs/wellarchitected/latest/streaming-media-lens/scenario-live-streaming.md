@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 
  The cloud is uniquely suited to handling these challenges, with its regional diversity, availability, and elastic scalability. By decoupling the various services involved in live streaming, reliable and performant workflows can be built that are cost effective and where the various architecture components can scale elastically to handle variations in demand or in live stream counts. It also allows flexibility to include value added services, such as machine learning technologies to perform actions such as automated closed caption/subtitle generation or content tagging/indexing. This type of redundancy, scalability, and developer flexibility is not possible with monolithic on-premises live streaming applications. The following diagram illustrates a sample live streaming workflow using redundant sources and a Multi-AZ architecture:
 
-![This diagram shows two live streams feeding dual redundant processing and delivery systems serving end user players.](http://docs.aws.amazon.com/wellarchitected/latest/streaming-media-lens/images/live-streaming-architecture.png)
+![This diagram shows two live streams feeding dual redundant processing and delivery systems serving end user players.](https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-lens/images/live-streaming-architecture.png)
 
 ## Considerations
 <a name="considerations-1"></a>

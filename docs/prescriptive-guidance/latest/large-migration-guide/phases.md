@@ -17,7 +17,7 @@ The assess and mobilize phases are the foundation of any large migration and pre
 
 The following figure shows the three phases of a large migration: assess, mobilize, and migrate and modernize. Migration is divided into two stages, initialize and implement.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/images/guide-img/a7434c46-8e52-4896-84b2-cc91433b5072/images/7105cf2e-2968-4996-a504-5dc697f07ce6.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/images/guide-img/a7434c46-8e52-4896-84b2-cc91433b5072/images/7105cf2e-2968-4996-a504-5dc697f07ce6.png)
 
 Even though this document set for large migration is focused on the migrate phase, we highly recommend you go through all three phases of a large migration in sequence. Completing the assess and mobilize phases builds a solid foundation to support the migration.
 

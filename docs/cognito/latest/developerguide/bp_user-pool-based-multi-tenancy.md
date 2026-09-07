@@ -11,7 +11,7 @@ Using this approach, you can set up a hosted UI for each tenant independently an
 
 The following diagram shows each tenant with a dedicated user pool.
 
-![A diagram of a one-to-one multi-tenancy model where each tenant has their own user pool.](http://docs.aws.amazon.com/cognito/latest/developerguide/images/multi-tenancy-user-pool.png)
+![A diagram of a one-to-one multi-tenancy model where each tenant has their own user pool.](https://docs.aws.amazon.com/cognito/latest/developerguide/images/multi-tenancy-user-pool.png)
 
 **When to implement user-pool multi-tenancy**
 When isolation and customization are your primary concerns. The relationship between users and tenants might be complex in an architecture with multiple user pools. Consider an example where you have two educational tenants. The same user might be a limited-access student in one app, and a teacher with a high level of permissions in another. You might require MFA in one app but not another, or have a different password policy. Because local users can sign in to multiple app clients in user pools with managed login, user-pool multi-tenancy is also ideal when you want more than one of your tenants to sign in with managed login.

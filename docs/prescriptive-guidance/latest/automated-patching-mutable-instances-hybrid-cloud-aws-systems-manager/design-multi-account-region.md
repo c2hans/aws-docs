@@ -12,7 +12,7 @@ You can extend the automated patching solution to support servers that span mult
 
 The following diagram illustrates the architecture for this scenario. This architecture includes CloudFormation StackSets and an AWS shared service account.
 
-![Reference architecture for patching mutable EC2 instances that span multiple accounts and Regions.](http://docs.aws.amazon.com/prescriptive-guidance/latest/automated-patching-mutable-instances-hybrid-cloud-aws-systems-manager/images/guide-img/9c36bc8c-880d-42f7-8b76-ddf8e3d52477/images/e85f1289-2c4e-4f44-b489-a8136bddccf9.png)
+![Reference architecture for patching mutable EC2 instances that span multiple accounts and Regions.](https://docs.aws.amazon.com/prescriptive-guidance/latest/automated-patching-mutable-instances-hybrid-cloud-aws-systems-manager/images/guide-img/9c36bc8c-880d-42f7-8b76-ddf8e3d52477/images/e85f1289-2c4e-4f44-b489-a8136bddccf9.png)
 
 The workflow is similar to the process described in the previous section, but involves the following additional steps, where the step numbers match the callouts in the diagram:
 

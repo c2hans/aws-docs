@@ -24,7 +24,7 @@ Keep in mind the following:
 
 This diagram illustrates the differences between shared tenancy instances and Dedicated Hosts.
 
-![Comparison of shared tenancy and Dedicated Hosts](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/48a38dd7-be5d-479a-89ae-550423687e68.png)
+![Comparison of shared tenancy and Dedicated Hosts](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/48a38dd7-be5d-479a-89ae-550423687e68.png)
 
 ### Homogenous Dedicated Hosts
 <a name="homogenous-dedicated-hosts.4b602fa9-043f-508b-a408-19fe80a38e40"></a>
@@ -38,14 +38,14 @@ For example:
 
 The following diagram shows the Dedicated Host options for M6 instances.
 
-![Dedicated Host options for M6 instances](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/4ac40d2c-9bdf-4185-8a63-9c7f0f29ad66.png)
+![Dedicated Host options for M6 instances](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/4ac40d2c-9bdf-4185-8a63-9c7f0f29ad66.png)
 
 ### Heterogenous Dedicated Hosts
 <a name="heterogenous-dedicated-hosts.fc7e13b9-bdfe-51da-b24e-3d7baeaf7aca"></a>
 
 Dedicated Hosts that support multiple instance sizes on the same host are referred to as a heterogenous Amazon EC2 Dedicated Hosts. The following diagram shows an example of C5, M5, and R5 Dedicated Hosts with various instance sizes, such as 2xlarge, xlarge, and 4xlarge.
 
-![C5, M5, and R5 Dedicated Host examples](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/1ee795af-7f97-4f49-a060-b5aefda7ad7e.png)
+![C5, M5, and R5 Dedicated Host examples](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/1ee795af-7f97-4f49-a060-b5aefda7ad7e.png)
 
 ### Dedicated Host management
 <a name="dedicated-host-management.1d7e60d0-1403-5da0-8791-ec6628d60a68"></a>
@@ -137,7 +137,7 @@ Consider a practical example to demonstrate the value of Amazon EC2 Dedicated Ho
 
 The following diagram compares AWS savings between Microsoft entitlements and SQL Server.
 
-![Comparison of Microsoft entitlement to SQL Server savings](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/b1406ad9-a8cc-4d18-8ad2-43554d5adb1b.png)
+![Comparison of Microsoft entitlement to SQL Server savings](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/b1406ad9-a8cc-4d18-8ad2-43554d5adb1b.png)
 
 By right sizing the instances on AWS shared tenancy, you can reduce SQL Server licenses down to 140 cores. This results in SA costs of $197,000.
 

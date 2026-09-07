@@ -21,7 +21,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/patterns-for-ingestin
 
  Athena Federated query connector allows Athena to connect to SaaS applications like Salesforce, Snowflake, and Google BigQuery. Once a connection is established, you can write SQL queries to retrieve data stored in these SaaS applications. To store data in Amazon S3 data lake, you can use Athena statements [Create Table as Select (CTAS) and INSERT INTO for ETL](https://docs.aws.amazon.com/athena/latest/ug/ctas-insert-into-etl.html), which then store the data in Amazon S3 and create a table in the AWS AWS Glue Data Catalog.
 
-![This diagram shows a data ingestion pattern involving Amazon Athena, Amazon S3, AWS Lambda, Salesforce, Snowflake, and Google BigQuery.](http://docs.aws.amazon.com/whitepapers/latest/patterns-for-ingesting-saas-data-into-aws-data-lakes/images/athena-based-data-ingestion-pattern.png)
+![This diagram shows a data ingestion pattern involving Amazon Athena, Amazon S3, AWS Lambda, Salesforce, Snowflake, and Google BigQuery.](https://docs.aws.amazon.com/whitepapers/latest/patterns-for-ingesting-saas-data-into-aws-data-lakes/images/athena-based-data-ingestion-pattern.png)
 
 ### Usage patterns
 <a name="usage-patterns-2"></a>

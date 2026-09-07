@@ -44,7 +44,7 @@ Ensure that the security group attached to the PostgreSQL database allows connec
 
 The following diagram shows using pgAdmin with an SSH tunnel to connect through an internet gateway to the EC2 instance, which connects to the database.
 
-![pgAdmin with SSH tunnel connects through internet gateway to EC2 instance that connects to database.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7d25d570-5685-4f1a-bef0-212e257cb589/images/4556d930-f9b3-4b65-be5d-d40dd9437d5a.png)
+![pgAdmin with SSH tunnel connects through internet gateway to EC2 instance that connects to database.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7d25d570-5685-4f1a-bef0-212e257cb589/images/4556d930-f9b3-4b65-be5d-d40dd9437d5a.png)
 
 ## Tools
 <a name="connect-by-using-an-ssh-tunnel-in-pgadmin-tools"></a>

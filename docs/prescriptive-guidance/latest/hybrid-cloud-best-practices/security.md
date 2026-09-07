@@ -43,7 +43,7 @@ For AWS Outposts, the service link is a necessary connection between your Outpos
 
 The AWS Outposts service link creates encrypted tunnels that establish control plane and data plane connectivity to the parent AWS Region, as illustrated in the following diagram.
 
-![Anchor VPC considerations.](http://docs.aws.amazon.com/prescriptive-guidance/latest/hybrid-cloud-best-practices/images/guide-img/117f803b-a3ee-4c57-ae66-84b53da14c2b/images/594dbd32-b42a-4147-9452-5e7f6dca0f2f.png)
+![Anchor VPC considerations.](https://docs.aws.amazon.com/prescriptive-guidance/latest/hybrid-cloud-best-practices/images/guide-img/117f803b-a3ee-4c57-ae66-84b53da14c2b/images/594dbd32-b42a-4147-9452-5e7f6dca0f2f.png)
 
 Each AWS Outposts host (compute and storage) requires these encrypted tunnels over well-known TCP and UDP ports to communicate with its parent Region. The following table shows the source and destination ports and addresses for the UDP and TCP protocols.
 
@@ -63,7 +63,7 @@ Local Zones are also connected to the parent Region through the redundant and ve
 
 When you stop or terminate an EC2 instance in AWS Outposts, the memory allocated to it is scrubbed (set to zero) by the hypervisor before it is allocated to a new instance, and every block of storage is reset. Deleting data from the Outpost hardware involves the use of specialized hardware. The NSK is a small device, illustrated in the following photograph, that attaches to the front of every compute or storage unit in an Outpost. It is designed to provide a mechanism to prevent your data from being exposed from your data center or colocation site. Data on the Outpost device is protected by wrapping keying material used to encrypt the device and storing the wrapped material on the NSK. When you return an Outpost host, you destroy the NSK by turning a small screw on the chip that crushes the NSK and physically destroys the chip. Destroying the NSK shreds the data cryptographically on your Outpost.
 
-![NSK device in Outposts.](http://docs.aws.amazon.com/prescriptive-guidance/latest/hybrid-cloud-best-practices/images/guide-img/117f803b-a3ee-4c57-ae66-84b53da14c2b/images/b96c33a1-9ae5-4d48-9676-b6fe817cd98b.jpeg)
+![NSK device in Outposts.](https://docs.aws.amazon.com/prescriptive-guidance/latest/hybrid-cloud-best-practices/images/guide-img/117f803b-a3ee-4c57-ae66-84b53da14c2b/images/b96c33a1-9ae5-4d48-9676-b6fe817cd98b.jpeg)
 
 ## Identity and access management
 <a name="security-iam"></a>
@@ -135,7 +135,7 @@ In this option, the workloads in the Outpost access the internet through the [se
 
 The following diagram shows traffic between the workload in the AWS Outposts instance and the internet going through the parent AWS Region.
 
-![Workloads in Outpost accessing the internet through the parent AWS Region.](http://docs.aws.amazon.com/prescriptive-guidance/latest/hybrid-cloud-best-practices/images/guide-img/117f803b-a3ee-4c57-ae66-84b53da14c2b/images/da2fa497-28e8-4672-8b62-e09fd5002dc6.png)
+![Workloads in Outpost accessing the internet through the parent AWS Region.](https://docs.aws.amazon.com/prescriptive-guidance/latest/hybrid-cloud-best-practices/images/guide-img/117f803b-a3ee-4c57-ae66-84b53da14c2b/images/da2fa497-28e8-4672-8b62-e09fd5002dc6.png)
 
 ### Internet access through your local data center's network
 <a name="internet-access-through-your-local-data-center9999999999999999apos-s-network.f948a3b3-e800-54b9-a935-c59929bb10fe"></a>
@@ -144,7 +144,7 @@ In this option, the workloads in the Outpost access the internet through your lo
 
 The following image shows traffic between a workload in the AWS Outposts subnet and the internet going through a data center.
 
-![Workloads in Outpost accessing the internet through a local network.](http://docs.aws.amazon.com/prescriptive-guidance/latest/hybrid-cloud-best-practices/images/guide-img/117f803b-a3ee-4c57-ae66-84b53da14c2b/images/ed0961d9-80a8-48fa-b1da-7125768086a4.png)
+![Workloads in Outpost accessing the internet through a local network.](https://docs.aws.amazon.com/prescriptive-guidance/latest/hybrid-cloud-best-practices/images/guide-img/117f803b-a3ee-4c57-ae66-84b53da14c2b/images/ed0961d9-80a8-48fa-b1da-7125768086a4.png)
 
 ## Infrastructure governance
 <a name="infrastructure-governance"></a>

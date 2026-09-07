@@ -34,13 +34,13 @@ You can use this pattern to achieve the following objectives:
 
 **Source state architecture**
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/95234758-cb8b-46e5-afd2-3d4aaf6ed668/images/776b453a-7fa0-43fd-b1ca-fb9e5cc21820.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/95234758-cb8b-46e5-afd2-3d4aaf6ed668/images/776b453a-7fa0-43fd-b1ca-fb9e5cc21820.png)
 
 **Target state architecture**
 
 In the target state, you migrate Microsoft SQL Server to Amazon RDS for Microsoft SQL Server by using linked servers. This architecture uses a Network Load Balancer to proxy the traffic from Amazon RDS for Microsoft SQL Server to on-premises servers running Microsoft SQL Server. The following diagram shows the reverse proxy capability for the Network Load Balancer.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/95234758-cb8b-46e5-afd2-3d4aaf6ed668/images/6bdbdfbf-b048-4fbd-acef-0aeb826edb50.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/95234758-cb8b-46e5-afd2-3d4aaf6ed668/images/6bdbdfbf-b048-4fbd-acef-0aeb826edb50.png)
 
 ## Tools
 <a name="migrate-an-on-premises-microsoft-sql-server-database-to-amazon-rds-for-sql-server-using-linked-servers-tools"></a>

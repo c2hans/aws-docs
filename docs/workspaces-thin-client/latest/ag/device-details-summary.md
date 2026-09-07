@@ -9,7 +9,7 @@ End of support notice: On March 31, 2027, AWS will end support for Amazon WorkSp
 
 The Summary section provides a high-level overview of the key features of the WorkSpaces Thin Client device. The following table lists each element in the summary and how it functions.
 
-![Summary section showing device details, enrollment status, and software information.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ag/images/device-details-summary.png)
+![Summary section showing device details, enrollment status, and software information.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/images/device-details-summary.png)
 
 | Element | Description |
 | --- | --- |
@@ -31,7 +31,7 @@ The Summary section provides a high-level overview of the key features of the Wo
 ## User log
 <a name="device-details-user-log"></a>
 
-![User activity details showing 5 device access timestamps from August 24 to August 28, 2023.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ag/images/device-details-user-log.png)
+![User activity details showing 5 device access timestamps from August 24 to August 28, 2023.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/images/device-details-user-log.png)
 
 | Element | Description |
 | --- | --- |

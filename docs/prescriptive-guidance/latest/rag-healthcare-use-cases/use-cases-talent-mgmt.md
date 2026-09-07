@@ -26,7 +26,7 @@ This cloud-based, automated solution is powered by machine learning services, LL
 
 The following image shows the end-to-end flow of the framework. The solution is built on fine-tuned LLMs in Amazon Bedrock. These LLMs retrieve data from the healthcare talent knowledge base in Amazon Neptune. Data-driven algorithms make recommendations for optimal learning pathways for each candidate.
 
-![A transformation framework for healthcare talent.](http://docs.aws.amazon.com/prescriptive-guidance/latest/rag-healthcare-use-cases/images/guide-img/c2d53172-a932-4340-96f5-3132299b8691/images/cedd9f6b-2658-4d96-a5b8-ea564a70b26b.png)
+![A transformation framework for healthcare talent.](https://docs.aws.amazon.com/prescriptive-guidance/latest/rag-healthcare-use-cases/images/guide-img/c2d53172-a932-4340-96f5-3132299b8691/images/cedd9f6b-2658-4d96-a5b8-ea564a70b26b.png)
 
 Building this solution consists of the following steps:
 + [Step 1: Extracting talent information and building a skills profile](#use-cases-talent-mgmt-step-1)
@@ -40,7 +40,7 @@ First, you fine-tune a large language model, such as Llama 2, in Amazon Bedrock 
 
 The following image shows the process to fine-tune a resume-parsing model by using Amazon Bedrock. Both real and synthetically created resumes are passed to an LLM in order to extract key information. A group of data scientists validate the extracted information against the original, raw text. The extracted information is then concatenated by using [chain-of-thought](https://en.wikipedia.org/wiki/Prompt_engineering#Chain-of-thought) prompting and the original text to derive a training dataset for fine-tuning. This dataset is then passed to an Amazon Bedrock customization job, which fine-tunes the model. An Amazon SageMaker AI batch job runs a model-evaluation framework that evaluates the fine-tuned model. If the model needs improvement, the job runs again with more data or different hyperparameters. After the evaluation meets the standards, you host the custom Model through Amazon Bedrock provisioned throughput.
 
-![Architecture for extracting talent info and building a skills profile.](http://docs.aws.amazon.com/prescriptive-guidance/latest/rag-healthcare-use-cases/images/guide-img/c2d53172-a932-4340-96f5-3132299b8691/images/021b70fa-4f5e-45de-9cdf-e887f9c0d10f.png)
+![Architecture for extracting talent info and building a skills profile.](https://docs.aws.amazon.com/prescriptive-guidance/latest/rag-healthcare-use-cases/images/guide-img/c2d53172-a932-4340-96f5-3132299b8691/images/021b70fa-4f5e-45de-9cdf-e887f9c0d10f.png)
 
 ## Step 2: Discovering role-to-skill relevance
 <a name="use-cases-talent-mgmt-step-2"></a>
@@ -56,7 +56,7 @@ Next, you develop a *Graph Retrieval Augmented Generation (Graph RAG)* applicati
 
 The following image shows the steps to build a knowledge graph from source data. You pass the structured and unstructured source data to the data ingestion pipeline. The pipeline extracts and transforms information to a CSV bulk load formation that is compatible with Amazon Neptune. The bulk loader API uploads the CSV files that are stored in an Amazon S3 bucket to the Neptune knowledge graph. For user queries related to talent future state, relevant roles, or skills, the fine-tuned LLM in Amazon Bedrock interacts with the knowledge graph through a LangChain orchestrator. The orchestrator retrieves the relevant context from the knowledge graph and push the responses to the insights table in Amazon Redshift. The LangChain orchestrator, like [GraphQAChain](https://python.langchain.com/api_reference/community/chains/langchain_community.chains.graph_qa.base.GraphQAChain.html), converts the natural language query from the user to an openCypher query in order to query the knowledge graph. The Amazon Bedrock fine-tuned model  generates a response based on the retrieved context.
 
-![Use Neptune to build a knowledge graph and then retrieve relevant context based on a user query.](http://docs.aws.amazon.com/prescriptive-guidance/latest/rag-healthcare-use-cases/images/guide-img/c2d53172-a932-4340-96f5-3132299b8691/images/cf249b0c-991b-438d-bd18-fb9e87a38f2d.png)
+![Use Neptune to build a knowledge graph and then retrieve relevant context based on a user query.](https://docs.aws.amazon.com/prescriptive-guidance/latest/rag-healthcare-use-cases/images/guide-img/c2d53172-a932-4340-96f5-3132299b8691/images/cf249b0c-991b-438d-bd18-fb9e87a38f2d.png)
 
 ## Step 3: Recommending training
 <a name="use-cases-talent-mgmt-step-3"></a>

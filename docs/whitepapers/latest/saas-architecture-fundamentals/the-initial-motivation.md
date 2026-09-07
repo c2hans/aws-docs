@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
 
  The following diagram provides a conceptual view of how several vendors have packaged and delivered their solutions.
 
-![A diagram depicting the classic model for packaging and delivering software solutions.](http://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fundamentals/images/classic-model.png)
+![A diagram depicting the classic model for packaging and delivering software solutions.](https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fundamentals/images/classic-model.png)
 
  In this diagram, we’ve described a collection of customer environments. These customers represent the different companies or entities that have purchased a vendor’s software. Each of these customers is essentially running in a standalone environment where they have installed a software provider’s product.
 

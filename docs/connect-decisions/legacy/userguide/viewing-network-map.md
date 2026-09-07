@@ -20,7 +20,7 @@ To view the network map, perform the following procedure.
 1. In the left navigation pane on the AWS Supply Chain dashboard, choose **Network Map**.
 
    The **Network Map** page appears.
-![Viewing the network map](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/insights_network_map.png)
+![Viewing the network map](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/insights_network_map.png)
 
 1. Select a ring and zoom in on a location that you need. You can view the details of the current and projected inventory for one or more particular items.
 

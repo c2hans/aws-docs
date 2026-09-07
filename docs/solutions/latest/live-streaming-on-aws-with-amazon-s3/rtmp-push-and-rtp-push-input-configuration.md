@@ -16,4 +16,4 @@ Refer to the [Creating an input](https://docs.aws.amazon.com/medialive/latest/ug
 
  **RTMP Push and RTP Push input configuration**
 
-![rtmp rtp input config](http://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws-with-amazon-s3/images/rtmp-rtp-input-config.png)
+![rtmp rtp input config](https://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws-with-amazon-s3/images/rtmp-rtp-input-config.png)

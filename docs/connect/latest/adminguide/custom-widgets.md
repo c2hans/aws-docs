@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/custom-widgets
 
 Create tailored dashboard components from the ground up to meet your specific business needs. With custom widgets, you can build unique visualizations without any predefined data.
 
-![Add customer widgets in the Profile explorer layout.](http://docs.aws.amazon.com/connect/latest/adminguide/images/custom-widgets-1.png)
+![Add customer widgets in the Profile explorer layout.](https://docs.aws.amazon.com/connect/latest/adminguide/images/custom-widgets-1.png)
 
 ## Available custom components
 <a name="available-custom-components"></a>
@@ -67,11 +67,11 @@ The custom table component provides flexible configuration options for displayin
 
 **Figure 1**
 
-![Custom table widget editing example.](http://docs.aws.amazon.com/connect/latest/adminguide/images/table-features-1.png)
+![Custom table widget editing example.](https://docs.aws.amazon.com/connect/latest/adminguide/images/table-features-1.png)
 
 **Figure 2**
 
-![Another custom table widget editing example.](http://docs.aws.amazon.com/connect/latest/adminguide/images/table-features-2.png)
+![Another custom table widget editing example.](https://docs.aws.amazon.com/connect/latest/adminguide/images/table-features-2.png)
 
 ### Example configuration
 <a name="table-example-configuration"></a>
@@ -137,11 +137,11 @@ Create dynamic data displays by defining custom key-value relationships. This co
 
 **Figure 1**
 
-![Custom key value pair widget editing example.](http://docs.aws.amazon.com/connect/latest/adminguide/images/key-value-pair-features-1.png)
+![Custom key value pair widget editing example.](https://docs.aws.amazon.com/connect/latest/adminguide/images/key-value-pair-features-1.png)
 
 **Figure 2**
 
-![Another custom key value pair widget editing example.](http://docs.aws.amazon.com/connect/latest/adminguide/images/key-value-pair-features-2.png)
+![Another custom key value pair widget editing example.](https://docs.aws.amazon.com/connect/latest/adminguide/images/key-value-pair-features-2.png)
 
 ### Example configuration
 <a name="key-value-pair-example-configuration"></a>
@@ -220,11 +220,11 @@ Create high-visibility metric displays that highlight important data points, tre
 
 **Figure 1**
 
-![Custom key metric widget editing example.](http://docs.aws.amazon.com/connect/latest/adminguide/images/key-metric-features-1.png)
+![Custom key metric widget editing example.](https://docs.aws.amazon.com/connect/latest/adminguide/images/key-metric-features-1.png)
 
 **Figure 2**
 
-![Another custom key metric widget editing example.](http://docs.aws.amazon.com/connect/latest/adminguide/images/key-metric-features-2.png)
+![Another custom key metric widget editing example.](https://docs.aws.amazon.com/connect/latest/adminguide/images/key-metric-features-2.png)
 
 ### Example configuration
 <a name="key-metric-example-configuration"></a>
@@ -304,11 +304,11 @@ Create dynamic sentiment visualizations by defining custom scoring criteria. Thi
 
 **Figure 1: Positive sentiment example**
 
-![Positive sentiment widget editing example.](http://docs.aws.amazon.com/connect/latest/adminguide/images/donut-chart-features-1.png)
+![Positive sentiment widget editing example.](https://docs.aws.amazon.com/connect/latest/adminguide/images/donut-chart-features-1.png)
 
 **Figure 2: Negative sentiment example**
 
-![Negative sentiment widget editing example.](http://docs.aws.amazon.com/connect/latest/adminguide/images/donut-chart-features-2.png)
+![Negative sentiment widget editing example.](https://docs.aws.amazon.com/connect/latest/adminguide/images/donut-chart-features-2.png)
 
 ### Example configuration
 <a name="donut-chart-example-configuration"></a>

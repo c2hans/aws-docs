@@ -10,13 +10,13 @@ With AWS Explorer, you can launch an instance of any of the database engines sup
  **To launch an Amazon RDS instance**
 
 1. In AWS Explorer, open the context (right-click) menu for the **Amazon RDS** node and choose **Launch DB Instance**.
-![AWS Explorer window showing Amazon RDS with context menu option to Launch DB Instance.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/rds-db-launch-menu.png)
+![AWS Explorer window showing Amazon RDS with context menu option to Launch DB Instance.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/rds-db-launch-menu.png)
 
    Alternatively, on the **DB Instances** tab, choose **Launch DB Instance**.
-![Database instances list showing multiple DB instances with their status and details.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/rds-db-launch-dashboard.png)
+![Database instances list showing multiple DB instances with their status and details.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/rds-db-launch-dashboard.png)
 
 1. In the **DB Engine Selection** dialog box, choose the type of database engine to launch. For this walkthrough, choose Microsoft SQL Server Standard Edition (sqlserver-se), and then choose **Next**.
-![DB Engine Selection dialog box showing oracle-ee, sqlserver-ex, sqlserver-se, and sqlserver-web options.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/rds-db-instance-db-engine.png)
+![DB Engine Selection dialog box showing oracle-ee, sqlserver-ex, sqlserver-se, and sqlserver-web options.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/rds-db-instance-db-engine.png)
 
 1. In the **DB Engine Instance Options** dialog box, choose configuration options.
 
@@ -53,7 +53,7 @@ Type a password for the administrator of the database instance.
 ** *Confirm Password* **
 Type the password again to verify it is correct.
 
-![Launch DB Instance dialog showing engine selection, instance class, and RDS database configuration fields.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/rds-db-instance-engine-options.png)
+![Launch DB Instance dialog showing engine selection, instance class, and RDS database configuration fields.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/rds-db-instance-engine-options.png)
 
 1. In the **Additional Options** dialog box, you can specify the following settings.
 ** *Database Port* **
@@ -66,7 +66,7 @@ Select an RDS security group (or groups) to associate with your instance. RDS se
 (Optional) From this drop-down list, choose a DB parameter group to associate with your instance. DB parameter groups enable you to change the default configuration for the instance. For more information, go to the [Amazon Relational Database Service User Guide](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithParamGroups.html) and [this article](https://aws.amazon.com/articles/2935).
 
    When you have specified settings on this dialog box, choose **Next**.
-![Launch DB Instance dialog showing database port, availability zone, and security group options.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/rds-db-instance-add-options.png)
+![Launch DB Instance dialog showing database port, availability zone, and security group options.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/rds-db-instance-add-options.png)
 
 1. The **Backup and Maintenance** dialog box enables you to specify whether Amazon RDS should back up your instance and if so, for how long the backup should be retained. You can also specify a window of time during which the backups should occur.
 
@@ -75,6 +75,6 @@ Select an RDS security group (or groups) to associate with your instance. RDS se
    The window of time you specify for system maintenance cannot overlap with the window specified for backups.
 
    Choose **Next**.
-![Backup and maintenance options interface for DB instance with automatic backup settings.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/rds-db-instance-back-up-maintenance.png)
+![Backup and maintenance options interface for DB instance with automatic backup settings.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/rds-db-instance-back-up-maintenance.png)
 
 1. The final dialog box in the wizard allows you to review the settings for your instance. If you need to modify settings, use the **Back** button. If all the settings are correct, choose **Launch**.

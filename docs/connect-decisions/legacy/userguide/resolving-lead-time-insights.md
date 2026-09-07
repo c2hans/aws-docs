@@ -9,7 +9,7 @@ AWS Supply Chain provides insights on the lead time deviation for a vendor, prod
 
 For example, for supplier S, product P, destination site D, source site S, and transportation mode like Truck, Ship, and so on, the **Miss Frequency** displays the frequency of time the lead time was missed, compared to the planned lead time (that is, contractual lead times) shared in the vendor\_lead\_time entity. Therefore, Insights recommends to update the planned lead time for the same vendor, product, and site to avoid future lead time issues.
 
-![Vendor lead time deviation](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/insights_leadtime_deviation.png)
+![Vendor lead time deviation](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/insights_leadtime_deviation.png)
 
 Choose **Export All Recommendations** to export the vendor lead time recommendations for the ingested product, site, or vendor combinations in a .csv file into your Amazon S3 bucket. Once the export is completed, you will receive an email and notification on the AWS Supply Chain web application with a link to the Amazon S3 bucket where the recommendations are exported.
 

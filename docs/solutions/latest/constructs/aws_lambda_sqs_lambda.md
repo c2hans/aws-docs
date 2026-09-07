@@ -145,7 +145,7 @@ Out-of-the-box implementation of this Construct (without any overridden properti
 ## Architecture
 <a name="_architecture"></a>
 
-![Diagram showing the Lambda functions, SQS queue and dlq, CloudWatch log groups and IAM roles created by the construct](http://docs.aws.amazon.com/solutions/latest/constructs/images/aws-lambda-sqs-lambda.png)
+![Diagram showing the Lambda functions, SQS queue and dlq, CloudWatch log groups and IAM roles created by the construct](https://docs.aws.amazon.com/solutions/latest/constructs/images/aws-lambda-sqs-lambda.png)
 
 ## Example Lambda Function Implementation
 <a name="_example_lambda_function_implementation"></a>

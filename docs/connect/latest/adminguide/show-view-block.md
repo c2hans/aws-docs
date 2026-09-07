@@ -75,7 +75,7 @@ You can configure the **Show view** block by using the Connect Customer admin we
 
 Connect Customer includes a set of views that you can add your agent's workspace. You specify the view in the **View** box, as shown in the following image:
 
-![The properties page of the Show view block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/show-view-block-form.png)
+![The properties page of the Show view block.](https://docs.aws.amazon.com/connect/latest/adminguide/images/show-view-block-form.png)
 
 Following is a brief description of these AWS managed views. For detailed information about each one, see [Set up AWS managed views for an agent's workspace in Connect Customer](view-resources-managed-view.md). Customer-managed views are also supported. For more information, see the [Customer-managed views](https://d3irlmavjxd3d8.cloudfront.net/?path=/docs/customer-managed-views-customer-managed-views--page) documentation.
 + **Detail view**: Display information to agents and provide them with a list of actions that they can take. A common use case of the Detail view is to surface a screen-pop to the agent at the start of a call.
@@ -86,7 +86,7 @@ Following is a brief description of these AWS managed views. For detailed inform
 
 The properties of the **Show view** block are dynamically populated depending on which **View** resource you choose. For example, if you choose **Form**, you would configure **Next** and **Previous** actions, which are displayed. These are just a couple of the actions on the view.
 
-![The View set to Form and Version set to 1.](http://docs.aws.amazon.com/connect/latest/adminguide/images/show-view-block-version2.png)
+![The View set to Form and Version set to 1.](https://docs.aws.amazon.com/connect/latest/adminguide/images/show-view-block-version2.png)
 
 The following sections explain how to configure the **Form** actions manually, dynamically, or by using the JSON option.
 
@@ -94,19 +94,19 @@ The following sections explain how to configure the **Form** actions manually, d
 <a name="view-setmanually"></a>
 
 1. On the **Properties** page, in the **View** section, choose **Form** from the dropdown menu, and set **Use version** to 1, the default. The following image shows a **Properties** page configured with these options.
-![The View set to Form and Version set to 1.](http://docs.aws.amazon.com/connect/latest/adminguide/images/show-view-block-version1.png)
+![The View set to Form and Version set to 1.](https://docs.aws.amazon.com/connect/latest/adminguide/images/show-view-block-version1.png)
 
 1. The **Properties** page displays a set of fields based on the Form view. Choose **Set manually** and enter text to be rendered on the View UI components. The following image shows the **Next** and **Previous** UI components. The display name of the components have been set manually to **Next** and **Previous**. That's what will appear on the agent workspace when the step-by-step guide is rendered.
-![The Next and Previous UI components set manually.](http://docs.aws.amazon.com/connect/latest/adminguide/images/show-view-block-version2.png)
+![The Next and Previous UI components set manually.](https://docs.aws.amazon.com/connect/latest/adminguide/images/show-view-block-version2.png)
 
 ### How to use the Set dynamically option
 <a name="view-setdynamically"></a>
 
 1. On the **Properties** page, in the **View** section, choose **Form** from the dropdown menu, and set **Use version** to 1, the default. The following image shows a **Properties** page configured with these options.
-![The View set to Form and Version set to 1.](http://docs.aws.amazon.com/connect/latest/adminguide/images/show-view-block-version1.png)
+![The View set to Form and Version set to 1.](https://docs.aws.amazon.com/connect/latest/adminguide/images/show-view-block-version1.png)
 
 1. The **Properties** page displays a set of fields based on the Form view. Choose **Set dynamically**. In the **Namespace** dropdown menu, choose the contact attribute, and then choose the key. The following image shows a **Heading** that will be rendered dynamically in the step-by-step guide to show the customer's last name.
-![A heading in the View UI template.](http://docs.aws.amazon.com/connect/latest/adminguide/images/show-view-block-dynamic.png)
+![A heading in the View UI template.](https://docs.aws.amazon.com/connect/latest/adminguide/images/show-view-block-dynamic.png)
 
 ### How to use the Set JSON option
 <a name="show-view-block-example-json"></a>
@@ -114,23 +114,23 @@ The following sections explain how to configure the **Form** actions manually, d
 This section walks through an example of how to use the **Set JSON** option.
 
 1. In the **View** section of the **Properties** page of the Show view block, choose **Form** from the dropdown menu and set **Version** to **1**, the default. These options are shown in the following image.
-![The View set to Form and Version set to 1.](http://docs.aws.amazon.com/connect/latest/adminguide/images/show-view-block-version1.png)
+![The View set to Form and Version set to 1.](https://docs.aws.amazon.com/connect/latest/adminguide/images/show-view-block-version1.png)
 
 1. When you choose the **Form** view, the input schema of the view is displayed on the **Properties** page. The schema has the following sections where you can add information: **Sections**, **AttributeBar**, **Back**, **Cancel**, **Edit**, **ErrorText**, and more.
 
 1. The following image shows the **AttributeBar** parameter, and the **Set using JSON** option. To view all of the JSON you pasted in, choose the corner of the box and pull down.
-![The input parameters.](http://docs.aws.amazon.com/connect/latest/adminguide/images/show-view-block-json.png)
+![The input parameters.](https://docs.aws.amazon.com/connect/latest/adminguide/images/show-view-block-json.png)
 **Tip**
 Fix any errors if the JSON is invalid. The following image shows an example error message because there's an extra comma.
 
-![An error message that JSON is not valid.](http://docs.aws.amazon.com/connect/latest/adminguide/images/show-view-block-json-invalid.png)
+![An error message that JSON is not valid.](https://docs.aws.amazon.com/connect/latest/adminguide/images/show-view-block-json-invalid.png)
 
 1. When selecting a custom view, you will likely want to set the values of dynamic inputs through the **Set JSON** option. When doing this, you can choose **Apply Sample Data** to pre-populate the input with a JSON schema that contains sample data.
 
    Make sure you [configure dynamic references](no-code-ui-builder-properties-dynamic-fields.md) for dynamic data (for example, $.Channel) in the UI builder to be populated at run time.
 
    The following image shows the **Apply Sample Data** option.
-![The Apply Sample Data option on the Show view block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/apply-sample-data.png)
+![The Apply Sample Data option on the Show view block.](https://docs.aws.amazon.com/connect/latest/adminguide/images/apply-sample-data.png)
 
 1. Choose **Save** and publish when you are ready.
 
@@ -242,7 +242,7 @@ The following code sample shows how this same configuration would be represented
 
 It's recommended that you enable **This view has sensitive data** when collecting credit card data, home addresses, or any other type of sensitive data from customers. By enabling this option, the data submitted by a customer will not be recorded in transcripts or contact records, or be visible to agents (by default). Remember to turn off logging if **Set Logging Behavior** is turned on in your contact flow, to ensure sensitive customer data is not included in your flow logs.
 
-![The sensitive data view check box.](http://docs.aws.amazon.com/connect/latest/adminguide/images/show-view-block-form-sensitive-data.png)
+![The sensitive data view check box.](https://docs.aws.amazon.com/connect/latest/adminguide/images/show-view-block-form-sensitive-data.png)
 
 **Tip**
 Build a [Flow module](contact-flow-modules.md) with a Show view block that has **This view has sensitive data** enabled, a Lambda function, and prompts to create a re-usable payment experience module that can be placed in an existing inbound contact flow.
@@ -252,7 +252,7 @@ Build a [Flow module](contact-flow-modules.md) with a Show view block that has *
 
 The following image shows an example of a configured **Show view** block. This block supports conditional branches—that is, the branches depend on which view is selected. It also supports **Error** and **Timeout** branches.
 
-![A configured Show view block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/show-view-block-sq-config.png)
+![A configured Show view block.](https://docs.aws.amazon.com/connect/latest/adminguide/images/show-view-block-sq-config.png)
 
 + Conditional branches: These branches are based on which view is selected on the **Show view** block. The previous image shows the block is configured for the **Form** view, and the following actions: **Back**, **Next**, and **No Match**.
   + For this particular configuration, at runtime, the chat contact is routed down the **Back** or **Next** branches depending on what the agent clicks on the view. **No match** is only possible if the user has an action component with a custom Action value.

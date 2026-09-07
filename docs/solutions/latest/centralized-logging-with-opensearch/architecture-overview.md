@@ -14,7 +14,7 @@ Deploying this solution with the default parameters builds the following environ
 
  **Architecture diagram, as described in text that follows.**
 
-![image1](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image1.png)
+![image1](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image1.png)
 
 This solution deploys the AWS CloudFormation template in your AWS Cloud account and completes the following settings.
 

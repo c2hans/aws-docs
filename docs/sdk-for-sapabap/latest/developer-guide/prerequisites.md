@@ -32,7 +32,7 @@ SDK for SAP ABAP is compatible with SAP NetWeaver 7.4 and higher. SDK for SAP AB
 
 The minimum supported SP-Level for `SAP_BASIS 740` is `SP 0008`. For more information, see [SAP Note 1856171 - Supporting form fields of the same name in CL\_HTTP\_ENTITY](https://launchpad.support.sap.com/#/notes/1856171) (requires SAP portal access). Based on your business requirements, you can choose a higher SP-Level, as shown in the following image.
 
-![An example of the Installed Software Component Versions tab in the portal.](http://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/images/sp-level.png)
+![An example of the Installed Software Component Versions tab in the portal.](https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/images/sp-level.png)
 
 There is no minimum SP-Level requirement for `SAP_BASIS 750` and higher releases.
 
@@ -80,7 +80,7 @@ All AWS API calls are made with encrypted HTTPS channels. The SAP system must be
 1. Under **Root CAs**, download all the certificates using the *PEM* link.
 
 1. Import these certificates in `STRUST` of your `SSL Client (Standard) PSE` on each of your SAP systems, as shown in the following image.
-![An example of the certificate list in the SSL client standard PSE.](http://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/images/https.png)
+![An example of the certificate list in the SSL client standard PSE.](https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/images/https.png)
 
 ### Access to Amazon EC2 instance metadata
 <a name="instance-metadata"></a>
@@ -108,7 +108,7 @@ Verify that your SAP system is configured for outbound HTTP connections with the
 1. Go to **Active Services**.
 
 1. Verify that you see a **green check mark** in the HTTP row, under *Active* column, as shown in the following image.
-![An example of a green checkmark for the HTTP protocol on the Active Services list.](http://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/images/http.png)
+![An example of a green checkmark for the HTTP protocol on the Active Services list.](https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/images/http.png)
 
 ## Prerequisites for AWS SDK for SAP ABAP - BTP edition
 <a name="sdk-btp"></a>

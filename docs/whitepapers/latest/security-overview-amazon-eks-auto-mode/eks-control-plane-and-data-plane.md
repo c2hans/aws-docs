@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-overview-ama
 
 Amazon EKS operates a control plane that handles the AWS API calls responsible for high-level cluster management (such as `eks:CreateCluster` and `eks:UpdateClusterConfig`). That control plane is not covered in detail in this document; instead, this document focuses on the cluster-specific Kubernetes control plane and data plane. For information about securing the AWS APIs for cluster management, see the [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) guide.
 
-![](http://docs.aws.amazon.com/whitepapers/latest/security-overview-amazon-eks-auto-mode/images/image3.png)
+![](https://docs.aws.amazon.com/whitepapers/latest/security-overview-amazon-eks-auto-mode/images/image3.png)
 
 **Topics**
 + [Amazon EKS control plane](amazon-eks-control-plane.md)

@@ -51,7 +51,7 @@ By automating these repetitive tasks, the utility significantly reduces the time
 
 The following diagram shows the workflow and components for this solution.
 
-![Workflow to create automated pull requests using GitHub Actions.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e211359a-03b1-4e69-b152-eb7c09bdb01a/images/6cee0660-5b44-4abe-970c-c0a3c830a9aa.png)
+![Workflow to create automated pull requests using GitHub Actions.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e211359a-03b1-4e69-b152-eb7c09bdb01a/images/6cee0660-5b44-4abe-970c-c0a3c830a9aa.png)
 
 The workflow consists of the following steps:
 

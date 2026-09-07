@@ -2,14 +2,14 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/security-services.html
 ---
 
-# ![AWS Security, Identity, and Compliance category icon](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/security-id-compliance-icon.jpg)Security, identity, and compliance
+# ![AWS Security, Identity, and Compliance category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/security-id-compliance-icon.jpg)Security, identity, and compliance
 <a name="security-services"></a>
 
 AWS is architected to be the most secure global cloud infrastructure on which to build, migrate, and manage applications and workloads.
 
 Each service is described after the diagram. To help you decide which service best meets your needs, see [Choosing AWS security, identity, and governance services](https://docs.aws.amazon.com/decision-guides/latest/security-on-aws-how-to-choose/choosing-aws-security-services.html). For general information, see [Security, Identity, and Compliance on AWS](https://aws.amazon.com/products/security/).
 
-![Diagram showing AWS security, identity, and governance services](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/security-identity-governance-services.png)
+![Diagram showing AWS security, identity, and governance services](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/security-identity-governance-services.png)
 
 **Topics**
 + [Amazon Cognito](#amazon-cognito)

@@ -16,7 +16,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-sto
 
  Before looking at how you might implement the silo model on DynamoDB, you must first consider how the service scopes and controls access to data. Unlike Amazon RDS, DynamoDB has no notion of a database instance. Instead, all tables created in DynamoDB are global to an account within a region. That means every table name in that region must be unique for a given account.
 
-![A diagrm depciting the silo model with DynamoDB tables .](http://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-storage-strategies/images/silo-with-dynamodb.png)
+![A diagrm depciting the silo model with DynamoDB tables .](https://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-storage-strategies/images/silo-with-dynamodb.png)
 
  If you implement a silo model on DynamoDB, you have to find some way to create a grouping of one or more tables that are associated with a specific tenant. The approach must also create a secure, controlled view of these tables to satisfy the security requirements of silo customers, preventing any possibility of cross-tenant data access.
 
@@ -56,7 +56,7 @@ The preceding figure shows one example of how you might achieve this tenant-scop
 
  Let’s look at one example of how you might bring such a solution to life. First, you need a separate table, which we’ll call the “tenant lookup table”, to capture and manage the mapping of tenants to their corresponding DynamoDB partition keys. The following figure represents an example of how you might structure your tenant lookup table.
 
-![A diagram introducing a tenant lookup table.](http://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-storage-strategies/images/tenant-lookup-table.png)
+![A diagram introducing a tenant lookup table.](https://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-storage-strategies/images/tenant-lookup-table.png)
 
  This table includes mappings for two tenants. The items associated with these tenants have attributes that contain sharding information for each table that is associated with a tenant. Here, our tenants both have sharding information for their Customer and Account tables. Also notice that for each tenant-table combination there are three pieces of information that represent the current sharding profile for a table. These are:
 +  **ShardCount** — An indication of how many shards are currently associated with the table.
@@ -67,7 +67,7 @@ The preceding figure shows one example of how you might achieve this tenant-scop
 
  Although introducing a tenant lookup table provides you with a way to address tenant data distribution, it does not come without a cost. This model now introduces a level of indirection that you have to address in your solution’s data access layer. Instead of using a tenant identifier to directly access your data, first consult the shard mappings for that tenant and use the union of those identifiers to access your tenant data. The following sample Customer table shows how data would be represented in this model.
 
-![A diagram depicting a customer table with shard IDs.](http://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-storage-strategies/images/shard-id.png)
+![A diagram depicting a customer table with shard IDs.](https://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-storage-strategies/images/shard-id.png)
 
  In this example, the ShardID is a direct mapping from the *tenant lookup* table. That tenant lookup table included two separate lists of shard identifiers for the Customer table, one for Tenant1 and one for Tenant2. These shard identifiers correlate directly to the values you see in this sample customer table. Notice that the actual tenant identifier never appears in this Customer table.
 

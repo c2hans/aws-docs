@@ -20,7 +20,7 @@ Use cases:
 + Stopping the test after critical validations are complete
 + Preventing unnecessary execution after the main test objectives are achieved
 
-![Action block configuration showing Test commands with End test control type selected.](http://docs.aws.amazon.com/connect/latest/adminguide/images/test-action-end-test.png)
+![Action block configuration showing Test commands with End test control type selected.](https://docs.aws.amazon.com/connect/latest/adminguide/images/test-action-end-test.png)
 
 ## Log data
 <a name="testing-simulation-action-log-data"></a>
@@ -39,11 +39,11 @@ Use cases:
 + Tracking how attributes change throughout the test
 + Recording important data points for test documentation
 
-![Action block configuration showing Test commands with Log data control type and key-value pair fields.](http://docs.aws.amazon.com/connect/latest/adminguide/images/test-action-log-data.png)
+![Action block configuration showing Test commands with Log data control type and key-value pair fields.](https://docs.aws.amazon.com/connect/latest/adminguide/images/test-action-log-data.png)
 
 Example logging configuration:
 + Log identifier: "Contact ID and Queue name" → Log value: This is the contact id: $.ContactId with the Queue name: $.Queue.Name
 
 This would capture both values at the point where the Log Data action executes, making them visible in your test results.
 
-![Example log data configuration showing Contact ID and Queue name logging with JSONPath expressions.](http://docs.aws.amazon.com/connect/latest/adminguide/images/test-action-log-data-example.png)
+![Example log data configuration showing Contact ID and Queue name logging with JSONPath expressions.](https://docs.aws.amazon.com/connect/latest/adminguide/images/test-action-log-data-example.png)

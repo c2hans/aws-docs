@@ -42,7 +42,7 @@ Amazon CloudWatch Synthetics is based on CloudWatch, Lambda, and Amazon Simple S
 
 This pattern simulates a private endpoint through an Amazon Elastic Compute Cloud (Amazon EC2) instance deployed in the targeted subnets. The Lambda function requires elastic network interfaces in the VPC where the private endpoint is deployed.
 
-![Description follows the diagram.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/73ed0103-ec45-4653-bb29-f402a88f0c64/images/39aaed0f-f259-4f2a-98fb-8e3a340d0b02.png)
+![Description follows the diagram.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/73ed0103-ec45-4653-bb29-f402a88f0c64/images/39aaed0f-f259-4f2a-98fb-8e3a340d0b02.png)
 
 The diagram shows the following:
 

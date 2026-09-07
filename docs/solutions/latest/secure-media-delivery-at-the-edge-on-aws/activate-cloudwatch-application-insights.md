@@ -17,8 +17,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 
 1. In the **Monitoring** tab, in **Application Insights**, select **Auto-configure Application Insights**.
 
-![Application Insights monitoring page showing advanced monitoring is not enabled message.](http://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/appregistry2.png)
+![Application Insights monitoring page showing advanced monitoring is not enabled message.](https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/appregistry2.png)
 
  Monitoring for your applications is now activated and the following status box appears:
 
-![Success message confirming application monitoring is enabled and results will display shortly.](http://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/appregistry3.png)
+![Success message confirming application monitoring is enabled and results will display shortly.](https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/appregistry3.png)

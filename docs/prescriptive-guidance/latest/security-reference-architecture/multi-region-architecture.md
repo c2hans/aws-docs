@@ -188,11 +188,11 @@ The following diagrams show the configuration needed for the multi-Region delega
 
 The following image shows a Multi-Region delegated architecture.
 
-![Multi-Region delegated architecture for GuardDuty.](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/images/guide-img/91d313fc-d5f1-45a8-a5a6-2f4fc7abc93a/images/4eacd5bd-5792-4304-a7a4-c59ef4129634.png)
+![Multi-Region delegated architecture for GuardDuty.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/images/guide-img/91d313fc-d5f1-45a8-a5a6-2f4fc7abc93a/images/4eacd5bd-5792-4304-a7a4-c59ef4129634.png)
 
 The following image shows a finding aggregation architecture.
 
-![Finding aggregation architecture for GuardDuty.](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/images/guide-img/91d313fc-d5f1-45a8-a5a6-2f4fc7abc93a/images/a24ca022-690a-4741-9e26-5e995c645eb8.png)
+![Finding aggregation architecture for GuardDuty.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/images/guide-img/91d313fc-d5f1-45a8-a5a6-2f4fc7abc93a/images/a24ca022-690a-4741-9e26-5e995c645eb8.png)
 
 ## Amazon Inspector
 <a name="multi-region-architecture-inspector"></a>
@@ -217,7 +217,7 @@ When working in multi-Regional deployment in Amazon Inspector you must aggregate
 
 The following diagram shows the high-level architecture of the delegated administrator configuration and the finding aggregation architecture.
 
-![For Amazon Inspector, the delegated administrator configuration and the finding aggregation architecture.](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/images/guide-img/91d313fc-d5f1-45a8-a5a6-2f4fc7abc93a/images/03899b26-00f4-42af-9ea7-41f30bca2040.png)
+![For Amazon Inspector, the delegated administrator configuration and the finding aggregation architecture.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/images/guide-img/91d313fc-d5f1-45a8-a5a6-2f4fc7abc93a/images/03899b26-00f4-42af-9ea7-41f30bca2040.png)
 
 ## AWS CloudTrail
 <a name="multi-region-architecture-cloudtrail"></a>
@@ -234,7 +234,7 @@ The [AWS SRA best practices for CloudTrail](checklist.md#checklist-cloudtrail) s
 
 The following diagram shows the high-level architecture of the CloudTrail configuration and event aggregation in a multi-account environment for the primary Region.
 
-![CloudTrail configuration and event aggregation in a multi-account environment for the primary Region.](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/images/guide-img/91d313fc-d5f1-45a8-a5a6-2f4fc7abc93a/images/fb0b9cd5-f0d2-4d0b-94cf-540b54f681d3.png)
+![CloudTrail configuration and event aggregation in a multi-account environment for the primary Region.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/images/guide-img/91d313fc-d5f1-45a8-a5a6-2f4fc7abc93a/images/fb0b9cd5-f0d2-4d0b-94cf-540b54f681d3.png)
 
 ## AWS Config
 <a name="multi-region-architecture-config"></a>
@@ -255,11 +255,11 @@ The following diagrams show the high-level overview of the delegated administrat
 
 Delegated administrator and aggregator configuration:
 
-![Delegated administrator and aggregator configuration for AWS Config.](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/images/guide-img/91d313fc-d5f1-45a8-a5a6-2f4fc7abc93a/images/5c36b9ce-fa93-4b38-b942-babac21a87b5.png)
+![Delegated administrator and aggregator configuration for AWS Config.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/images/guide-img/91d313fc-d5f1-45a8-a5a6-2f4fc7abc93a/images/5c36b9ce-fa93-4b38-b942-babac21a87b5.png)
 
 Log centralization configuration:
 
-![Log centralization configuration for AWS Config.](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/images/guide-img/91d313fc-d5f1-45a8-a5a6-2f4fc7abc93a/images/933e5ef9-fb89-49cb-9767-2c0f22db52e1.png)
+![Log centralization configuration for AWS Config.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/images/guide-img/91d313fc-d5f1-45a8-a5a6-2f4fc7abc93a/images/933e5ef9-fb89-49cb-9767-2c0f22db52e1.png)
 
 ## IAM Access Analyzer
 <a name="multi-region-architecture-iam-access-analyzer"></a>
@@ -284,7 +284,7 @@ When working in multi-Regional deployment in IAM Access Analyzer, you must aggre
 
 The following diagram shows the high-level architecture of the delegated administrator configuration and the finding aggregation architecture.
 
-![For IAM Access Analyzer, delegated administrator configuration and the finding aggregation architecture.](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/images/guide-img/91d313fc-d5f1-45a8-a5a6-2f4fc7abc93a/images/0a0d8bed-542b-4d01-8a5e-c954df594aa5.png)
+![For IAM Access Analyzer, delegated administrator configuration and the finding aggregation architecture.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/images/guide-img/91d313fc-d5f1-45a8-a5a6-2f4fc7abc93a/images/0a0d8bed-542b-4d01-8a5e-c954df594aa5.png)
 
 ## IAM Identity Center
 <a name="multi-region-architecture-identity-center"></a>
@@ -339,7 +339,7 @@ When working in multi-Regional deployment with AWS Organizations integration, Se
 
 The following diagram shows the high-level architecture of the delegated administrator configuration and the finding aggregation architecture.
 
-![For Security Hub, delegated administrator configuration and the finding aggregation architecture.](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/images/guide-img/91d313fc-d5f1-45a8-a5a6-2f4fc7abc93a/images/35385a28-c752-4198-900c-663db5b8d9ec.png)
+![For Security Hub, delegated administrator configuration and the finding aggregation architecture.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/images/guide-img/91d313fc-d5f1-45a8-a5a6-2f4fc7abc93a/images/35385a28-c752-4198-900c-663db5b8d9ec.png)
 
 ## AWS Security Hub CSPM
 <a name="multi-region-architecture-security-hub-cspm"></a>
@@ -368,7 +368,7 @@ When working in multi-Regional deployment with AWS Organizations integration, Se
 
 The following diagram shows the high-level architecture of the delegated administrator configuration, cross-Region aggregation, and the finding centralization architecture. Security Hub CSPM has a native cross-Region aggregation feature. All findings from all linked Regions flow natively to the home Region.
 
-![Delegated administrator configuration, cross-Region aggregation, and the finding centralization architecture for Security Hub CSPM.](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/images/guide-img/91d313fc-d5f1-45a8-a5a6-2f4fc7abc93a/images/e0171f79-0263-430d-937f-05ffe64e1bab.png)
+![Delegated administrator configuration, cross-Region aggregation, and the finding centralization architecture for Security Hub CSPM.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/images/guide-img/91d313fc-d5f1-45a8-a5a6-2f4fc7abc93a/images/e0171f79-0263-430d-937f-05ffe64e1bab.png)
 
 ## AWS Backup
 <a name="multi-region-architecture-backup"></a>
@@ -389,7 +389,7 @@ In AWS Backup you must consider that some of the resources involved are Regional
 
 The following diagram shows a high-level overview of the AWS Backup architecture and deployment for a multi-Region environment.
 
-![AWS Backup architecture and deployment for multiple Regions.](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/images/guide-img/91d313fc-d5f1-45a8-a5a6-2f4fc7abc93a/images/1d6f6ec9-bc81-499a-8d05-80b0dbe54133.png)
+![AWS Backup architecture and deployment for multiple Regions.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/images/guide-img/91d313fc-d5f1-45a8-a5a6-2f4fc7abc93a/images/1d6f6ec9-bc81-499a-8d05-80b0dbe54133.png)
 
 There are two flows:
 + **Deploy AWS Backup vaults** – For this task you can rely on AWS CloudFormation stack sets to deploy AWS Backup vaults in the selected Regions. For more information, see [Managing stacks across accounts and Regions with StackSets](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html).

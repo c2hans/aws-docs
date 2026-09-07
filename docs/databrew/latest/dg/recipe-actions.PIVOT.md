@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.PIVOT.
 
 Converts all the row values in a selected column into individual columns with values.
 
-![Diagram showing pivot column transformation: original table to new table with columns as values.](http://docs.aws.amazon.com/databrew/latest/dg/images/pivot.png)
+![Diagram showing pivot column transformation: original table to new table with columns as values.](https://docs.aws.amazon.com/databrew/latest/dg/images/pivot.png)
 
 **Parameters**
 + `sourceColumn` — The name of an existing column. The column can have a maximum of 10 distinct values.

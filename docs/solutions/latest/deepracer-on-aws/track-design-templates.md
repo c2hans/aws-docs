@@ -33,7 +33,7 @@ Due to their large size, the tracks cannot be easily printed on a single piece o
 
 The AWS DeepRacer A to Z Speedway (Basic) track is the most popular physical competition track in AWS DeepRacer history. It was originally released at AWS re:Invent 2018 and has the smallest footprint of all the AWS DeepRacer physical competition tracks.
 
-![AWS DeepRacer A to Z Speedway Basic track layout](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/buildtrack-atozspeedway-basic-layout.png)
+![AWS DeepRacer A to Z Speedway Basic track layout](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/buildtrack-atozspeedway-basic-layout.png)
 
 We recommend this track for beginner events and first-time racers. With a variety of runs and straightaways, it offers a compelling challenge for both first-time and experienced racers. The AWS DeepRacer A to Z Speedway (Basic) track is a 1:1 physical reproduction of the virtual track available in the console. It provides racers the opportunity to train a model in a virtual environment and then deploy the model to a physical AWS DeepRacer device for autonomous racing on a physical track.
 
@@ -41,7 +41,7 @@ To print or create your own A to Z Speedway (Basic) track, download the AWS Deep
 
 The AWS DeepRacer Smile Speedway track was originally released as the AWS DeepRacer Championship 2019 track.
 
-![AWS DeepRacer Smile Speedway Intermediate track layout](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/buildtrack-smile-speedway-intermediate-layout.png)
+![AWS DeepRacer Smile Speedway Intermediate track layout](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/buildtrack-smile-speedway-intermediate-layout.png)
 
 We recommend this intermediate track for events with experienced racers and larger physical spaces. It’s a 1:1 physical reproduction of the virtual track available in the console. It provides racers the opportunity to train a model in a virtual environment and then deploy the model to a physical AWS DeepRacer device for autonomous racing on a physical track.
 
@@ -49,7 +49,7 @@ To print or create your own AWS DeepRacer Smile Speedway (Intermediate) track, d
 
 The AWS DeepRacer RL Speedway (Advanced) track (aka AWS DeepRacer Summit Speedway) was originally released for AWS DeepRacer summits in 2022 and is the longest physical track in AWS DeepRacer history.
 
-![AWS DeepRacer RL Speedway Advanced track layout](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/buildtrack-rl-speedway-advanced-layout.png)
+![AWS DeepRacer RL Speedway Advanced track layout](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/buildtrack-rl-speedway-advanced-layout.png)
 
 We recommend the AWS DeepRacer RL Speedway (Advanced) track for events with experienced racers. It offers a compelling challenge for racers who enjoy going fast on straightaways. The AWS DeepRacer RL Speedway (Advanced) track is a 1:1 physical reproduction of the virtual track available in the console. It provides the opportunity for racers to train a model in a virtual environment and then deploy the model to a physical AWS DeepRacer device for autonomous racing on a physical track.
 
@@ -57,14 +57,14 @@ To print or create your own AWS RL Speedway (Advanced) track, download the AWS D
 
 This basic track template consists of two straight track segments connected by a curved track segment. Models trained with this track should make your AWS DeepRacer vehicle drive in straight line or make turns in one direction.
 
-![AWS DeepRacer Single-turn track template](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/buildtrack-single-turn-template.png)
+![AWS DeepRacer Single-turn track template](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/buildtrack-single-turn-template.png)
 
 The track is more complex than the single-turn track because the model needs to learn to make turns in two directions. You can easily extend the single-turn track construction instructions to this track by turning it in the opposite direction after the first turn.
 
-![AWS DeepRacer S-curve track template](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/buildtrack-s-curve-template.png)
+![AWS DeepRacer S-curve track template](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/buildtrack-s-curve-template.png)
 
 This regular loop track is a repeating, 90-degree, single-turn track. It requires a larger enclosing area for laying the entire track.
 
-![AWS DeepRacer Loop track template](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/buildtrack-loop-template.png)
+![AWS DeepRacer Loop track template](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/buildtrack-loop-template.png)
 
-![AWS DeepRacer Loop track visual](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/buildtrack-loop-visual.png)
+![AWS DeepRacer Loop track visual](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/buildtrack-loop-visual.png)

@@ -48,7 +48,7 @@ OpenSearch Service can be configured within a virtual private cloud (VPC), or i
 
 **Data migration architecture**
 
-![How to move data from an on-premises Oracle database to Amazon OpenSearch Service using Logstash.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/09f6d2de-de2f-4ed6-af93-34b71b75a263/images/df6a61fb-09fb-49d4-a7e8-b04e88c003df.png)
+![How to move data from an on-premises Oracle database to Amazon OpenSearch Service using Logstash.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/09f6d2de-de2f-4ed6-af93-34b71b75a263/images/df6a61fb-09fb-49d4-a7e8-b04e88c003df.png)
 
 ## Tools
 <a name="migrate-an-on-premises-oracle-database-to-amazon-opensearch-service-using-logstash-tools"></a>

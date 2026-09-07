@@ -24,7 +24,7 @@ Because the volume size changed on the resource outside the code repository, the
 
 The following diagram shows a problematic solution to the example scenario. The user, as part of the workflow, follows an IaC approach and provisions an EBS volume by using a CloudFormation template. The production monitoring team uses an EDP automation approach and creates an [Amazon CloudWatch Events](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/WhatIsCloudWatchEvents.html) rule. This rule is configured to invoke an [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) function when the EBS volume reaches a specific storage threshold. Then, the Lambda function calls the API to increase the EBS volume size.
 
-![Problematic scenario with EBS volume](http://docs.aws.amazon.com/prescriptive-guidance/latest/iac-edp-combo-approach/images/guide-img/1c2f9dce-c146-4233-a850-fc07cab4966b/images/8a32b708-f6a6-4fdc-82dc-71c0af73d4d8.png)
+![Problematic scenario with EBS volume](https://docs.aws.amazon.com/prescriptive-guidance/latest/iac-edp-combo-approach/images/guide-img/1c2f9dce-c146-4233-a850-fc07cab4966b/images/8a32b708-f6a6-4fdc-82dc-71c0af73d4d8.png)
 
 ## Recommended approach
 <a name="recommended-approach"></a>
@@ -33,4 +33,4 @@ The following diagram shows a recommended approach that aligns with the best pra
 
 You can use Parameter Store to see a history of the values and use it for values that change. Parameter Store also integrates with multiple services, such as CloudFormation and Lambda. The Lambda function in this scenario doesn't directly interact with the EBS volume to increase volume size. Instead, the Lambda function interacts with CloudFormation to update the API. As a result, CloudFormation stacks are safeguarded from drift. Finally, this approach relies on CloudFormation as the single source for performing updates.
 
-![Recommended scenario with EBS volume](http://docs.aws.amazon.com/prescriptive-guidance/latest/iac-edp-combo-approach/images/guide-img/1c2f9dce-c146-4233-a850-fc07cab4966b/images/02d49e50-00a7-476f-b1fc-31a2bf843339.png)
+![Recommended scenario with EBS volume](https://docs.aws.amazon.com/prescriptive-guidance/latest/iac-edp-combo-approach/images/guide-img/1c2f9dce-c146-4233-a850-fc07cab4966b/images/02d49e50-00a7-476f-b1fc-31a2bf843339.png)

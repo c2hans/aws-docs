@@ -53,7 +53,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/computational-fluid-d
 
  Your data lifecycle can occur only within AWS, or it can be combined with an on-premises workflow. For example, you may move case data, such as a case file, from your local computing facilities, to Amazon S3, and then to an EC2 cluster. Completed runs can traverse the same path in reverse back to your on-premises environment or to Amazon S3 where they can remain in the S3 Standard or S3 Infrequent Access storage class, or transitioned to [Amazon Glacier](https://aws.amazon.com/s3/storage-classes/glacier/) through a [lifecycle rule](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lifecycle-mgmt.html) for archiving. Amazon Glacier and S3 Glacier Deep Archive are S3 storage tiers that offer deep discounts on storage for archival data. The following figure is an example data lifecycle for CFD.
 
-![A diagram depicting data lifecycle.](http://docs.aws.amazon.com/whitepapers/latest/computational-fluid-dynamics-on-aws/images/data-lifecycle.png)
+![A diagram depicting data lifecycle.](https://docs.aws.amazon.com/whitepapers/latest/computational-fluid-dynamics-on-aws/images/data-lifecycle.png)
 
 1.  Transferring input data to AWS
 

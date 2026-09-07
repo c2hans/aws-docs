@@ -74,7 +74,7 @@ You can configure an Item ID with Amazon Kendra Redirect UI.
 
  **Amazon Kendra redirect configuration**
 
-![image26](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image26.png)
+![image26](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image26.png)
 
 1. Create a QnABot question as you would normally do by providing an Item ID and questions and utterances.
 

@@ -33,7 +33,7 @@ Another significant concern is the incompatibility of traditional response proce
 
 The following illustration shows a unified System and Organization Controls (SOC) architecture for IT and OT systems.
 
-![Unified IT/OT SOC architecture.](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-iot/images/guide-img/11475282-b3b8-4c97-8919-9954329a1c00/images/33d40d8e-384d-44d8-989e-be350eedd4a3.png)
+![Unified IT/OT SOC architecture.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-iot/images/guide-img/11475282-b3b8-4c97-8919-9954329a1c00/images/33d40d8e-384d-44d8-989e-be350eedd4a3.png)
 
 ## Remediations
 <a name="iot-monitoring-remediations"></a>

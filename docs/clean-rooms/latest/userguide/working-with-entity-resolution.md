@@ -11,7 +11,7 @@ First, you create a collaboration in AWS Clean Rooms and add the AWS accounts yo
 
 The following diagram summarizes how to work with AWS Entity Resolution in AWS Clean Rooms.
 
-![Diagram explaining how to work with AWS Entity Resolution data in AWS Clean Rooms](http://docs.aws.amazon.com/clean-rooms/latest/userguide/images/how-it-works-identity-data.png)
+![Diagram explaining how to work with AWS Entity Resolution data in AWS Clean Rooms](https://docs.aws.amazon.com/clean-rooms/latest/userguide/images/how-it-works-identity-data.png)
 
 **Note**
 The currently supported transcoding service provider is LiveRamp, which is available in the following AWS Regions: US East (N. Virginia), US East (Ohio), and US West (Oregon).

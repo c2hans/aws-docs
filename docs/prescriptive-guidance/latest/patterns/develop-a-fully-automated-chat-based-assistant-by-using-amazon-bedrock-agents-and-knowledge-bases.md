@@ -59,7 +59,7 @@ The [AWS Cloud Development Kit (AWS CDK)](https://docs.aws.amazon.com/cdk/v2/gui
 
 **Target architecture **
 
-![Architecture diagram using an Amazon Bedrock knowledge base and agent](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/15372718-3a5d-4918-9cfa-422c455f288d/images/ff19152e-0bb6-4758-a6dd-4f6140e55113.png)
+![Architecture diagram using an Amazon Bedrock knowledge base and agent](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/15372718-3a5d-4918-9cfa-422c455f288d/images/ff19152e-0bb6-4758-a6dd-4f6140e55113.png)
 
 The diagram shows a comprehensive AWS cloud-native setup within a single AWS Region, using multiple AWS services. The primary interface for the chat-based assistant is a [Streamlit](https://docs.streamlit.io/) application hosted on an Amazon ECS cluster. An [Application Load Balancer](https://aws.amazon.com/elasticloadbalancing/application-load-balancer/) manages accessibility. Queries made through this interface activate the `Invocation` Lambda function, which then interfaces with agents for Amazon Bedrock. This agent responds to user inquiries by either consulting the knowledge bases for Amazon Bedrock or by invoking an `Agent executor` Lambda function. This function triggers a set of actions associated with the agent, following a predefined API schema. The knowledge bases for Amazon Bedrock use an OpenSearch Serverless index as their vector database foundation. Additionally, the `Agent executor` function generates SQL queries that are executed against the AWS Glue database through Amazon Athena.
 

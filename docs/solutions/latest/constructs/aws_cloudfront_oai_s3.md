@@ -112,7 +112,7 @@ Out of the box implementation of the Construct without any override will set the
 ## Architecture
 <a name="_architecture"></a>
 
-![Diagram showing data flow between AWS services including CLoudFront, S3, and an Origin Access Identity](http://docs.aws.amazon.com/solutions/latest/constructs/images/aws-cloudfront-oai-s3.png)
+![Diagram showing data flow between AWS services including CLoudFront, S3, and an Origin Access Identity](https://docs.aws.amazon.com/solutions/latest/constructs/images/aws-cloudfront-oai-s3.png)
 
 ## Github
 <a name="_github"></a>

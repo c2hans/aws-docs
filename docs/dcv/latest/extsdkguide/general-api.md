@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/dcv/latest/extsdkguide/general-api.html
 
 This API provides a generic information about the Amazon DCV components, including the software version and architecture.
 
-![Diagram showing Extension Client or Server sending GetDcvInfoRequest to DCV Client or Server and receiving GetDcvInfoResponse.](http://docs.aws.amazon.com/dcv/latest/extsdkguide/images/get-dcv-info.jpg)
+![Diagram showing Extension Client or Server sending GetDcvInfoRequest to DCV Client or Server and receiving GetDcvInfoResponse.](https://docs.aws.amazon.com/dcv/latest/extsdkguide/images/get-dcv-info.jpg)
 
 **Helper structures:**
 

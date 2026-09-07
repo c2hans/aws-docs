@@ -36,7 +36,7 @@ The OCA team goal for this activity is to:
 
 The following illustration shows the key components of the engagement strategy and plan, what each component does, and the target audience.
 
-![Key components of OCA engagement strategy and plan.](http://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-envision-future/images/guide-img/7134122a-df9a-4cfe-995a-6903c8a3790f/images/b8e7fc08-1257-46a7-8145-39500ec53e68.png)
+![Key components of OCA engagement strategy and plan.](https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-envision-future/images/guide-img/7134122a-df9a-4cfe-995a-6903c8a3790f/images/b8e7fc08-1257-46a7-8145-39500ec53e68.png)
 
 The following table provides more information about each component.
 
@@ -67,18 +67,18 @@ After you develop the plan, place each stakeholder into one of the five stages o
 
 The following illustration describes ways to achieve these stages and desired outcomes.
 
-![Ways to achieve the five stakeholder stages and outcomes in OCA.](http://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-envision-future/images/guide-img/7134122a-df9a-4cfe-995a-6903c8a3790f/images/d795fdf5-b8e5-44c6-b32a-5a785d3b9127.png)
+![Ways to achieve the five stakeholder stages and outcomes in OCA.](https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-envision-future/images/guide-img/7134122a-df9a-4cfe-995a-6903c8a3790f/images/d795fdf5-b8e5-44c6-b32a-5a785d3b9127.png)
 
 Each stage requires a unique communication objective and mechanism to effectively engage the organization, as shown in the following illustration.
 
-![Communication objectives and channels for awareness, understanding, collaboration, commitment, and advocacy.](http://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-envision-future/images/guide-img/7134122a-df9a-4cfe-995a-6903c8a3790f/images/31212d08-ec3d-4b6a-b2cd-b1214ac7ada4.png)
+![Communication objectives and channels for awareness, understanding, collaboration, commitment, and advocacy.](https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-envision-future/images/guide-img/7134122a-df9a-4cfe-995a-6903c8a3790f/images/31212d08-ec3d-4b6a-b2cd-b1214ac7ada4.png)
 
 ### Prioritizing and mapping stakeholders
 <a name="prioritizing-and-mapping-stakeholders.9ee9650a-1565-5291-8edc-982d192485c7"></a>
 
 Stakeholder prioritization and mapping should occur after you conduct a [stakeholder assessment](https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-align-leaders/stakeholder-assessment.html). The OCA team needs to build and maintain strong relationships with these stakeholders. The team can use the following matrix and place stakeholders in the appropriate quadrant based on how critical they are to transformation success and the degree of impact to the stakeholder. After this mapping, the OCA team can develop a strategy to build and maintain the relationships.
 
-![Stakeholder prioritization matrix.](http://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-envision-future/images/guide-img/7134122a-df9a-4cfe-995a-6903c8a3790f/images/3dbae4ea-22d7-4500-82c0-102d71d96c81.png)
+![Stakeholder prioritization matrix.](https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-envision-future/images/guide-img/7134122a-df9a-4cfe-995a-6903c8a3790f/images/3dbae4ea-22d7-4500-82c0-102d71d96c81.png)
 
 The quadrants are:
 + Monitor and respond. Stakeholders in this quadrant are neither highly influential nor greatly affected by the changes, but they hold a stake in the results. These stakeholders require minimal communication activities; mass communications are usually sufficient. The main objective is to monitor their feedback to avoid problems.
@@ -102,9 +102,9 @@ Measuring the success of engagement activities, plans, and the strategy is criti
 
 The following illustrations provide examples of change activity plans that could be derived from the engagement strategy and plan.
 
-![First example of change activity plan derived from OCA engagement strategy and plan.](http://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-envision-future/images/guide-img/7134122a-df9a-4cfe-995a-6903c8a3790f/images/0d620655-4797-4260-ae62-c0a1a26779c2.png)
+![First example of change activity plan derived from OCA engagement strategy and plan.](https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-envision-future/images/guide-img/7134122a-df9a-4cfe-995a-6903c8a3790f/images/0d620655-4797-4260-ae62-c0a1a26779c2.png)
 
-![Second example of change activity plan derived from OCA engagement strategy and plan.](http://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-envision-future/images/guide-img/7134122a-df9a-4cfe-995a-6903c8a3790f/images/76f3667c-8a67-4396-98b3-470f7f9cb568.png)
+![Second example of change activity plan derived from OCA engagement strategy and plan.](https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-envision-future/images/guide-img/7134122a-df9a-4cfe-995a-6903c8a3790f/images/76f3667c-8a67-4396-98b3-470f7f9cb568.png)
 
 ## FAQ
 <a name="engagement-faq"></a>

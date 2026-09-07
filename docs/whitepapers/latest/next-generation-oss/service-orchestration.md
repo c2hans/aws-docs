@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/next-generation-oss/s
 
  AWS services enable an event-driven Service Orchestration (SO) architecture, which leverages AWS serverless services such as and [AWS Lambda](https://aws.amazon.com/lambda) and [AWS Step Functions](https://aws.amazon.com/step-functions/). The following reference architecture enables you to build SOs that are aligned with European Telecommunications Standards Institute (ETSI) Management and Orchestration (MANO) while enabling cost optimization, security, scalability, and innovation. Similarly, AWS Partners’ ecosystems enable you to leverage ready-to-be-deployed SO solution.
 
-![Diagram showing Service Orchestration Architecture on AWS](http://docs.aws.amazon.com/whitepapers/latest/next-generation-oss/images/service-orchestration-architecture.png)
+![Diagram showing Service Orchestration Architecture on AWS](https://docs.aws.amazon.com/whitepapers/latest/next-generation-oss/images/service-orchestration-architecture.png)
 
  This architecture highlights the exposure/integration layer of a service orchestration platform, which leverages [Amazon API Gateway](https://aws.amazon.com/api-gateway) (and integration services such as [AWS Step Functions](https://aws.amazon.com/step-functions/)/[EventBridge](https://aws.amazon.com/eventbridge) as mentioned in a previous section) for both internal API interactions (such as the other OSS modules highlighted, and BSS), as well as external API integrations (e.g., integrating with AWS Partners’ orchestrator or B2B digital platform).
 

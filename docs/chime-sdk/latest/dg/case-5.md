@@ -11,7 +11,7 @@ In the event of a successful response, the API returns a 202 http status code al
 
 The following diagram shows the invocations made to the AWS Lambda function endpoint for an outbound call.
 
-![The flow of data when you invoke the CreateSipMediaApplicationCall API. The API invokes a different endpoint when the status of an outbound call changes.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/sip-api-1.png)
+![The flow of data when you invoke the CreateSipMediaApplicationCall API. The API invokes a different endpoint when the status of an outbound call changes.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/sip-api-1.png)
 
 The endpoint configured for the SIP media application is invoked for different statuses of the outbound call. When a customer ands a call, the Amazon Chime SDK invokes the endpoint with a `HANGUP` invocation event type.
 

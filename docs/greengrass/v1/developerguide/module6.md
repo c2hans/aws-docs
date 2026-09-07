@@ -9,7 +9,7 @@ End of support notice: On October 7th, 2026, AWS will discontinue support for AW
 
 This advanced module shows you how AWS IoT Greengrass cores can interact with other AWS services in the cloud. It builds on the traffic light example from [Module 5](module5.md) and adds a Lambda function that processes shadow states and uploads a summary to an Amazon DynamoDB table.
 
-![AWS IoT connected to an AWS IoT Greengrass core, which is connected to a light switch device and a traffic light device shadow. The traffic light device shadow is connected to a Lambda function, which is connected to a DynamoDB table.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-089.5.png)
+![AWS IoT connected to an AWS IoT Greengrass core, which is connected to a light switch device and a traffic light device shadow. The traffic light device shadow is connected to a Lambda function, which is connected to a DynamoDB table.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-089.5.png)
 
 Before you begin, run the [Greengrass device setup](quick-start.md) script, or make sure that you have completed [Module 1](module1.md) and [Module 2](module2.md). You should also complete [Module 5](module5.md). You do not need other components or devices.
 

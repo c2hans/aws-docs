@@ -49,7 +49,7 @@ For implementation details, including runbook steps, parameters, and examples, s
 
 **Target architecture**
 
-![Architecture for running Systems Manager automation tasks synchronously from Step Functions](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/47c19e4f-d68d-4f91-bb68-202098757529/images/2d248aae-d858-4565-8af2-593cde0da780.png)
+![Architecture for running Systems Manager automation tasks synchronously from Step Functions](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/47c19e4f-d68d-4f91-bb68-202098757529/images/2d248aae-d858-4565-8af2-593cde0da780.png)
 
 **Automation and scale**
 + This pattern provides an AWS CloudFormation template that you can use to deploy the runbooks on multiple instances. (See the GitHub [Step Functions and Systems Manager implementation](https://github.com/aws-samples/amazon-stepfunctions-ssm-waitfortasktoken) repository.)

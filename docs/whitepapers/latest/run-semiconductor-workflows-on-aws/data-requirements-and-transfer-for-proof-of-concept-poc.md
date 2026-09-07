@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-wor
 
  Once the data has been transferred to an Amazon S3 bucket, you can quickly move data to an [Amazon FSx for Lustre](https://aws.amazon.com/fsx/lustre) file system or to another instance for testing and POCs.
 
-![This diagram shows the services used for data requirements and transfer for proof of concept: Amazon S3 data lake, Amazon FSx for Lustre, Amazon EC2, Amazon EBS.](http://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-workflows-on-aws/images/semiconductor-poc-components.png)
+![This diagram shows the services used for data requirements and transfer for proof of concept: Amazon S3 data lake, Amazon FSx for Lustre, Amazon EC2, Amazon EBS.](https://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-workflows-on-aws/images/semiconductor-poc-components.png)
 
 **Data requirements and transfer for proof of concept **
 

@@ -14,7 +14,7 @@ Amazon Cognito issues tokens as [base64url](https://datatracker.ietf.org/doc/htm
 **Authenticating with tokens**
 When a user signs into your app, Amazon Cognito verifies the login information. If the login is successful, Amazon Cognito creates a session and returns an ID token, an access token, and a refresh token for the authenticated user. You can use the tokens to grant your users access to downstream resources and APIs like Amazon API Gateway. Or you can exchange them for temporary AWS credentials to access other AWS services.
 
-![Authentication overview](http://docs.aws.amazon.com/cognito/latest/developerguide/images/scenario-authentication-cup2.png)
+![Authentication overview](https://docs.aws.amazon.com/cognito/latest/developerguide/images/scenario-authentication-cup2.png)
 
 **Storing tokens**
 Your app must be able to store tokens of varying sizes. Token size can change for reasons including, but not limited to, additional claims, changes in encoding algorithms, and changes in encryption algorithms. When you enable token revocation in your user pool, Amazon Cognito adds additional claims to JSON Web Tokens, increasing their size. The new claims `origin_jti` and `jti` are added to access and ID tokens. For more information about token revocation, see [Revoking tokens](https://docs.aws.amazon.com/cognito/latest/developerguide/token-revocation.html).

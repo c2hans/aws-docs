@@ -21,7 +21,7 @@ In this section, we'll create a security group. After it has been created, the s
 1. On the **EC2 Security Groups** tab, choose **Create Security Group**.
 
 1. In the **Create Security Group** dialog box, type a name and description for the security group, and then choose **OK**.
-![Create Security Group dialog box with name and description fields populated.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-ec2-sg-create.png)
+![Create Security Group dialog box with name and description fields populated.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-ec2-sg-create.png)
 
 ## Adding Permissions to Security Groups
 <a name="tkv-permission-sg"></a>
@@ -33,11 +33,11 @@ In this section, we'll add permissions to the security group to allow web traffi
 1. On the **EC2 Security Groups** tab, choose a security group and then choose the **Add Permission** button.
 
 1. In the **Add IP Permission** dialog box, choose the **Protocol, Port and Network** radio button, and then from the **Protocol** drop-down list, choose **HTTP**. The port range automatically adjusts to port 80, the default port for HTTP. The **Source CIDR** field defaults to 0.0.0.0/0, which specifies that HTTP network traffic will be accepted from any external IP address. Choose **OK**.
-![Add IP Permission dialog box with Protocol, Port and Network section showing HTTP protocol selected.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-ec2-sg-http.png)
+![Add IP Permission dialog box with Protocol, Port and Network section showing HTTP protocol selected.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-ec2-sg-http.png)
 
    Open port 80 (HTTP) for this security group
 
 1. Repeat this process for HTTPS and RDP. Your security groups permissions should now look like the following.
-![Security group permissions table showing HTTP port 80, HTTPS port 443, and RDP port 3389.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-ec2-sg-display.png)
+![Security group permissions table showing HTTP port 80, HTTPS port 443, and RDP port 3389.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-ec2-sg-display.png)
 
 You can also set permissions in the security group by specifying a user ID and security group name. In this case, Amazon EC2 instances in this security group will accept all incoming network traffic from Amazon EC2 instances in the specified security group. You must also specify the user ID as a way to disambiguate the security group name; security group names are not required to be unique across all of AWS. For more information about security groups, go to the [EC2 documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html).

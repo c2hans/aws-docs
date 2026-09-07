@@ -14,11 +14,11 @@ Deploying the default solution builds the following serverless environment in th
 
  **Cloud Migration Factory on AWS architecture diagram**
 
-![Cloud migration factory arch diagram](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/Cloud-migration-factory-arch-diagram.png)
+![Cloud migration factory arch diagram](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/Cloud-migration-factory-arch-diagram.png)
 
  **Optional Wave Planning Manager Component diagram**
 
-![optional wave planning manager component](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/optional-wave-planning-manager-component.png)
+![optional wave planning manager component](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/optional-wave-planning-manager-component.png)
 
 The solution’s AWS CloudFormation template launches the AWS services necessary to help enterprises migrate their servers.
 
@@ -42,7 +42,7 @@ This solution also deploys an optional migration tracker component that tracks t
 
  **Optional migration tracker component**
 
-![migration tracker](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/migration-tracker.png)
+![migration tracker](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/migration-tracker.png)
 
 The CloudFormation template deploys [AWS Glue](https://aws.amazon.com/glue/) to get the migration metadata from the Cloud Migration Factory DynamoDB table and exports the metadata to [Amazon Simple Storage Service](https://aws.amazon.com/s3/) (Amazon S3) twice a day (at 5:00 AM and 1:00 PM UTC). After the AWS Glue job completes, an Amazon Athena save query is initiated, and you can set up Amazon QuickSight to pull the data from the Athena query results. You can then create the visualizations and build a dashboard that meets your business needs. For guidance on creating visuals and building a dashboard, refer to [Build a migration tracker dashboard](build-migration-tracker-dashboard.md).
 

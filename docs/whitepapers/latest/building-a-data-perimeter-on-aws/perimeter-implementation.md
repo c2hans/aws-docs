@@ -20,7 +20,7 @@ When implementing data perimeter guardrails, it's still important to ensure that
 
  The following diagram demonstrates how these controls prevent untrusted identities from accessing your resources or using your networks.
 
-![A diagram that shows preventing untrusted identities in an RCP and a VPC endpoint policy](http://docs.aws.amazon.com/whitepapers/latest/building-a-data-perimeter-on-aws/images/prevent-unintended-principals.png)
+![A diagram that shows preventing untrusted identities in an RCP and a VPC endpoint policy](https://docs.aws.amazon.com/whitepapers/latest/building-a-data-perimeter-on-aws/images/prevent-unintended-principals.png)
 
  In certain cases, AWS services might use an AWS [service principal](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html) instead of an IAM role to interact with your resources. A service principal is not part of your AWS organization like IAM roles are. These are intended access patterns, but they need to be explicitly allowed in your RCPs and, in some cases, VPC endpoint policies. For example, AWS CloudTrail uses the service principal `cloudtrail.amazonaws.com` to deliver logs to your Amazon S3 bucket, which requires an exception in your RCP statements that enforce `aws:PrincipalOrgID` or related condition keys. Similarly, when you use a [presigned URL for wait condition signaling](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-waitcondition.html) from a VPC with AWS CloudFormation, you need to allow the `cloudformation.amazonaws.com` service principal. In Allow statements, the service principal can be listed explicitly. However, you might also have Deny statements that the service principal needs to be exempt from. You can’t use a `NotPrincipal` statement with an AWS service principal; instead, use the `aws:PrincipalIsAWSService` condition to exempt service principals from Deny statements.
 
@@ -35,7 +35,7 @@ Use the `aws:SourceOrgID` condition key in your RCPs to ensure that AWS services
 
  The primary way to ensure targeted resources belong to *my AWS* is by specifying the `aws:ResourceOrgID` IAM policy condition in SCPs and VPC endpoint policies. This ensures that the resource being considered during authorization, either being accessed directly or through a VPC endpoint, belongs to your AWS organization. The following diagram demonstrates how these policies prevent access to an untrusted resource.
 
-![A diagram that shows preventing access to untrusted resources with SCPs and VPC endpoint policies](http://docs.aws.amazon.com/whitepapers/latest/building-a-data-perimeter-on-aws/images/prevent-access-scps.jpg)
+![A diagram that shows preventing access to untrusted resources with SCPs and VPC endpoint policies](https://docs.aws.amazon.com/whitepapers/latest/building-a-data-perimeter-on-aws/images/prevent-access-scps.jpg)
 
 Using VPC endpoint policies in this way can be considered a defense in depth approach. This is because implementing the controls for the [Only trusted identities](#only-trusted-identities) objectives apply a policy on each endpoint that ensures only my principals can access resources from my networks. Then, the SCP used for this objective always applies to these principals to constrain what resources they can access. This indirectly accomplishes the same outcome as applying an `aws:ResourceOrgID` condition to your VPC endpoint policies.
 
@@ -54,7 +54,7 @@ Using VPC endpoint policies in this way can be considered a defense in depth app
 
 Within an SCP, you can define the expected networks by using an IP address with the `aws:SourceIp` condition key or a VPC identifier with the `aws:SourceVpc` condition. The following diagram shows how these policies prevent access from unexpected network locations.
 
-![A diagram that shows preventing access from unexpected networks with SCPs and RCPs](http://docs.aws.amazon.com/whitepapers/latest/building-a-data-perimeter-on-aws/images/prevent-access-3.jpg)
+![A diagram that shows preventing access from unexpected networks with SCPs and RCPs](https://docs.aws.amazon.com/whitepapers/latest/building-a-data-perimeter-on-aws/images/prevent-access-3.jpg)
 
  Applying a similar constraint with an RCP can also be considered a defense in depth approach. This is because applying the [Only trusted identities](#only-trusted-identities) objectives using an RCP helps ensure that only my principals can access those resources. Then, the network boundary SCP always applies to these principals to constrain the networks they can access resources from. This indirectly accomplishes the same outcome as applying an `aws:SourceIp` condition or `aws:SourceVpc` condition in your RCPs.
 
@@ -109,9 +109,9 @@ The data plane is the part of the service that provides the day-to-day functiona
 +  Use a centralized VPC endpoint approach for each Region and share Route 53 private hosted zones (PHZ) for the endpoints. This allows instances to resolve the out-of-Region endpoint domain name locally and send their request directly to the VPC endpoint. This pattern is described in more detail in [Centralized access to VPC private endpoints](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/centralized-access-to-vpc-private-endpoints.html).
 + If you use HTTP/S proxies in your environment, you can use them to forward out-of-Region requests. There are two variations for this option:
   + **Use proxy-chaining** - The proxy in the local Region forwards traffic to a peer proxy running in a VPC in the destination Region. The out-of-Region proxy delivers the traffic to the appropriate VPC endpoint in its Region. See [Appendix A – Proxy configuration example](appendix-a-proxy-configuration-example.md) for an example proxy configuration that implements this proxy-chaining solution. The following diagram demonstrates a high-level reference architecture.
-![A diagram that shows using proxy-chaining to send out-of-Region requests through VPC endpoints](http://docs.aws.amazon.com/whitepapers/latest/building-a-data-perimeter-on-aws/images/proxy-chaining.jpg)
+![A diagram that shows using proxy-chaining to send out-of-Region requests through VPC endpoints](https://docs.aws.amazon.com/whitepapers/latest/building-a-data-perimeter-on-aws/images/proxy-chaining.jpg)
   + **Implement a centralized VPC endpoint approach using shared Route 53 private hosted zones** - The local proxy uses AWS-provided VPC DNS and sends the request directly to the out-of-Region VPC endpoint. This eliminates the need to configure proxy-chaining, but does require the creation of a PHZ for each endpoint that will need to be shared with every VPC hosting a proxy. Refer to [Cross Region endpoint access](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/centralized-access-to-vpc-private-endpoints.html#interface-vpc-endpoints) for more details.
-![A diagram that shows forwarding out-of-Region requests using a shared Route 53 PHZ](http://docs.aws.amazon.com/whitepapers/latest/building-a-data-perimeter-on-aws/images/forwarding-out-of-region.jpg)
+![A diagram that shows forwarding out-of-Region requests using a shared Route 53 PHZ](https://docs.aws.amazon.com/whitepapers/latest/building-a-data-perimeter-on-aws/images/forwarding-out-of-region.jpg)
 
 ### Preventing access to temporary credentials
 <a name="preventing-access-to-temporary-credentials"></a>

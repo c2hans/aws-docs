@@ -23,7 +23,7 @@ To view the toolkit in your JetBrains IDE, complete the following steps:
 
 1. The AWS Toolkit for JetBrains is now open in the **Active Toolbar** window.
 
-![IDE welcome screen showing keyboard shortcuts for Search Everywhere, Project View, Go to File, Recent Files, and Navigation Bar.](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/viewtoolkit2024.gif)
+![IDE welcome screen showing keyboard shortcuts for Search Everywhere, Project View, Go to File, Recent Files, and Navigation Bar.](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/viewtoolkit2024.gif)
 
 ## The AWS Explorer
 <a name="w2aac13c15b9"></a>
@@ -43,7 +43,7 @@ To view your AWS services and resources from the AWS Toolkit for JetBrains Explo
 
 1. Open the context menu for (right-click) a resource to see a list of features for modifying your resource.
 
-![IntelliJ IDEA interface showing navigation shortcuts including Search Everywhere and Go to File.](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/awsexplorer2024.gif)
+![IntelliJ IDEA interface showing navigation shortcuts including Search Everywhere and Go to File.](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/awsexplorer2024.gif)
 
 ## Connecting to AWS
 <a name="w2aac13c15c11"></a>
@@ -62,4 +62,4 @@ For detailed instructions on how to connect to your AWS account from the AWS Too
 
 The following is an image of the AWS Sign In panel.
 
-![AWS Toolkit sign-in panel with Workforce and IAM Credential options and Continue button.](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/awssigninpane2024.png)
+![AWS Toolkit sign-in panel with Workforce and IAM Credential options and Continue button.](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/awssigninpane2024.png)

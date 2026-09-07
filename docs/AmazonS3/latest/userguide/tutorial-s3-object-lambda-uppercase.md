@@ -12,7 +12,7 @@ When you store data in Amazon S3, you can easily share it for use by multiple ap
 
 With [S3 Object Lambda](https://aws.amazon.com/s3/features/object-lambda), you can add your own code to process data retrieved from S3 before returning it to an application. Specifically, you can configure an AWS Lambda function and attach it to an S3 Object Lambda Access Point. When an application sends [standard S3 GET requests](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html) through the S3 Object Lambda Access Point, the specified Lambda function is invoked to process any data retrieved from the underlying data source through the supporting S3 access point. Then, the S3 Object Lambda Access Point returns the transformed result back to the application. You can author and execute your own custom Lambda functions, tailoring the S3 Object Lambda data transformation to your specific use case, all with no changes required to your applications.
 
-![This is an S3 Object Lambda workflow diagram.](http://docs.aws.amazon.com/AmazonS3/latest/userguide/images/ol-example-image-global.png)
+![This is an S3 Object Lambda workflow diagram.](https://docs.aws.amazon.com/AmazonS3/latest/userguide/images/ol-example-image-global.png)
 
 **Objective**
 In this tutorial, you learn how to add custom code to standard S3 GET requests to modify the requested object retrieved from S3 so that the object suit the needs of the requesting client or application. Specifically, you learn how to transform all the text in the original object stored in an S3 bucket to uppercase through S3 Object Lambda.

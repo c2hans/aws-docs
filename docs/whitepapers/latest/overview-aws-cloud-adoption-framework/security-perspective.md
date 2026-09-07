@@ -9,7 +9,7 @@ Also available on [Audible](https://www.audible.com/pd/Cloud-Adoption-Framework-
 
 The *security* perspective helps you achieve the confidentiality, integrity, and availability of your data and cloud workloads. It comprises nine capabilities shown in the following figure. Common stakeholders include CISO, CCO, internal audit leaders, and security architects and engineers.
 
-![A diagram depicting the AWS CAF Security perspective capabilities.](http://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/images/cloud-adoption-9.png)
+![A diagram depicting the AWS CAF Security perspective capabilities.](https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/images/cloud-adoption-9.png)
 
 *AWS CAF Security perspective capabilities*
 + **Security governance** – Develop, maintain, and effectively communicate security roles, responsibilities, accountabilities, policies, processes, and procedures. Ensuring clear lines of accountability is critical to the effectiveness of your security program. Understanding your assets, security risks, and [compliance](https://aws.amazon.com/compliance/programs/) requirements that apply to your industry and/or organization will help you prioritize your [security efforts](https://aws.amazon.com/security/?nc=sn&loc=0). Providing ongoing direction and advice will help accelerate your transformation by allowing your teams to move faster.

@@ -24,7 +24,7 @@ By default, Patroni configures PostgreSQL for asynchronous replication. Choosing
 
 The following diagram shows the architecture for setting up HADR for your on-premises PostgreSQL database on Amazon EC2 by using Patroni and etcd.
 
-![Patroni architecture](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-databases-postgresql-ec2/images/guide-img/d9d57133-1a8b-4b7f-bbe9-e908969d06b9/images/d12a60c9-7866-48e1-92f8-461c4c65ed77.png)
+![Patroni architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-databases-postgresql-ec2/images/guide-img/d9d57133-1a8b-4b7f-bbe9-e908969d06b9/images/d12a60c9-7866-48e1-92f8-461c4c65ed77.png)
 
 The diagram shows the following workflow:
 

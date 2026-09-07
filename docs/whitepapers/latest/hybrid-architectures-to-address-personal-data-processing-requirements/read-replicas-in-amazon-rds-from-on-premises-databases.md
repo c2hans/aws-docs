@@ -14,7 +14,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-
 
  AWS services – [Amazon RDS](https://aws.amazon.com/rds/), [AWS DMS](https://aws.amazon.com/dms/)
 
-![Read-replicas in Amazon RDS](http://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-to-address-personal-data-processing-requirements/images/read-replicas-amazon-rds.png)
+![Read-replicas in Amazon RDS](https://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-to-address-personal-data-processing-requirements/images/read-replicas-amazon-rds.png)
 
  Read-replicas in Amazon RDS
 

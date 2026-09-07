@@ -34,7 +34,7 @@ Encryption of Amazon Elastic Block Store (Amazon EBS) volumes is important to an
 
 **Automation workflow**
 
-![High-level architecture diagram showing the automation process and services](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/484fd5fe-e10a-41f6-aafe-260ea824883b/images/483f551c-ca1d-4c1e-b3c7-989df7d3b059.png)
+![High-level architecture diagram showing the automation process and services](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/484fd5fe-e10a-41f6-aafe-260ea824883b/images/483f551c-ca1d-4c1e-b3c7-989df7d3b059.png)
 
 1. AWS Config detects an unencrypted EBS volume.
 

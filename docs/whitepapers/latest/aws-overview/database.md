@@ -2,14 +2,14 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/database.html
 ---
 
-# ![AWS Database category icon](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/database-icon.jpg)Databases
+# ![AWS Database category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/database-icon.jpg)Databases
 <a name="database"></a>
 
 AWS databases offer a high-performance, secure, and reliable foundation to power generative AI solutions and data-driven applications that drive value for your business and customers.
 
 Each service is described after the diagram. To help you decide which service best meets your needs, see [Choosing an AWS database service](https://docs.aws.amazon.com/decision-guides/latest/databases-on-aws-how-to-choose/databases-on-aws-how-to-choose.html). For general information, see [AWS Cloud Databases](https://aws.amazon.com/products/databases/).
 
-![Diagram showing AWS database services](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/database-services.png)
+![Diagram showing AWS database services](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/database-services.png)
 
 **Topics**
 + [Compare AWS database services](#compare-database-services)

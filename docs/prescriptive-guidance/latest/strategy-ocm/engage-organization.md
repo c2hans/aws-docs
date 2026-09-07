@@ -12,7 +12,7 @@ Engage the Organization is intended to activate the strategies and plans that ha
 + [4.4 Deploy training plan](#engage-training)
 + [4.5 Monitor and manage risk mitigation](#engage-risk)
 
-![Engage the Organization phase in AWS Change Acceleration 6-Point Framework and OCM Toolkit](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ocm/images/guide-img/f0dc8b97-6d82-45ff-86d7-7ed62d7be8b3/images/f8edc71d-f73d-42f6-8762-1fd7f34259e4.png)
+![Engage the Organization phase in AWS Change Acceleration 6-Point Framework and OCM Toolkit](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ocm/images/guide-img/f0dc8b97-6d82-45ff-86d7-7ed62d7be8b3/images/f8edc71d-f73d-42f6-8762-1fd7f34259e4.png)
 
 ## 4.1 Implement change management plans
 <a name="engage-change"></a>

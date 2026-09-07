@@ -19,7 +19,7 @@ The DevOps user with access to the AWS Management Console must provide the admin
 
  **Depicts Deployment dashboard landing page - fresh deployment**
 
-![image8](http://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/image8.png)
+![image8](https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/image8.png)
 
 **Note**
 If you need to add additional users to your deployment, refer to the [Managing Cognito user pool](customization-guide.md#managing-cognito-user-pool) for more details.

@@ -7,7 +7,7 @@ The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you 
 # Viewing Photos in an Amazon S3 Bucket from a Browser
 <a name="s3-example-photos-view"></a>
 
-![JavaScript code example that applies to browser execution](http://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/browsericon.png)
+![JavaScript code example that applies to browser execution](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/browsericon.png)
 
 **This browser script code example shows:**
 + How to create a photo album in an Amazon Simple Storage Service (Amazon S3) bucket and allow unauthenticated users to view the photos.
@@ -17,7 +17,7 @@ The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you 
 
 In this example, a simple HTML page provides a browser-based application for viewing the photos in a photo album. The photo album is in an Amazon S3 bucket into which photos are uploaded.
 
-![JavaScript in a browser script using Amazon S3 buckets for photo albums.](http://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/s3-photo-album-example.png)
+![JavaScript in a browser script using Amazon S3 buckets for photo albums.](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/s3-photo-album-example.png)
 
 The browser script uses the SDK for JavaScript to interact with an Amazon S3 bucket. The script uses the [`listObjects`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#listObjects-property) method of the Amazon S3 client class to enable you to view the photo albums.
 

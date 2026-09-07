@@ -59,7 +59,7 @@ CloudWatch Observability Access Manager consists of two major components that en
 
 The following diagram illustrates Observability Access Manager and its components.
 
-![Architecture for cross-account observability with sinks and links.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/00603763-4f99-456e-85e7-a80d803b087d/images/5188caf9-348b-4d91-b560-2b3d6ea81191.png)
+![Architecture for cross-account observability with sinks and links.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/00603763-4f99-456e-85e7-a80d803b087d/images/5188caf9-348b-4d91-b560-2b3d6ea81191.png)
 
 ## Tools
 <a name="centralize-monitoring-by-using-amazon-cloudwatch-observability-access-manager-tools"></a>

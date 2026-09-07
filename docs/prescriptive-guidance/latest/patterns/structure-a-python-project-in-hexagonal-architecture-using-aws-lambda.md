@@ -52,7 +52,7 @@ To illustrate the implementation, this pattern deploys a serverless target archi
 | This pattern was tested in a PoC environment. You must conduct a security review to identify the threat model and create a secure code base before you deploy any architecture to a production environment.  |
 | --- |
 
-![Target architecture for structuring a Python project in hexagonal architecture](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/25bd7169-ea5e-4a21-a865-c91c30a3c0da/images/de0d4f0d-ad19-43ec-bd10-676b25477b64.png)
+![Target architecture for structuring a Python project in hexagonal architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/25bd7169-ea5e-4a21-a865-c91c30a3c0da/images/de0d4f0d-ad19-43ec-bd10-676b25477b64.png)
 
 The API supports five operations on a product entity:
 + `GET /products` returns all products.

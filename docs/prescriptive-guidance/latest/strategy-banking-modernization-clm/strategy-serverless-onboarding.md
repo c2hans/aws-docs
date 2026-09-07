@@ -31,7 +31,7 @@ The integration of these components with external applications is beyond the sco
 
 The following diagram illustrates a serverless architecture for interacting with customers through chatbots in the AWS Cloud:
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-banking-modernization-clm/images/guide-img/3dd14f64-3f68-43c4-8bd5-d6738253ef4f/images/0b45dff3-6316-47db-9f96-0d963f3a9f6f.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-banking-modernization-clm/images/guide-img/3dd14f64-3f68-43c4-8bd5-d6738253ef4f/images/0b45dff3-6316-47db-9f96-0d963f3a9f6f.png)
 
 **Note**
 The architecture is based on the QnA Bot on AWS solution and the updates to Amazon Rekognition. For more information, see [QnA Bot on AWS](https://aws.amazon.com/solutions/implementations/aws-qnabot/) in the AWS Solutions Library and [Amazon Rekognition announces updates to its face detection, analysis, and recognition capabilities](https://aws.amazon.com/blogs/machine-learning/amazon-rekognition-announces-updates-to-its-face-detection-analysis-and-recognition-capabilities/) in the AWS Machine Learning Blog.

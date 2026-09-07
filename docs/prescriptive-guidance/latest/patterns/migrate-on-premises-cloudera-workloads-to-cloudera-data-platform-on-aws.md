@@ -73,7 +73,7 @@ Building to the appropriate architecture is a critical step to ensure that migra
 
 The following diagram (reproduced with permission from the [Cloudera Shared Data Experience data sheet](https://www.cloudera.com/content/dam/www/marketing/resources/datasheets/cloudera-sdx-datasheet.pdf?daqp=true)) shows the infrastructure components for the CDP environment and how the tiers or infrastructure components interact.
 
-![CDP environment components](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/bb47435e-2638-425c-ac37-7d55053452ac/images/91d62277-7fde-4ec6-8e2b-86a446e2f6ee.png)
+![CDP environment components](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/bb47435e-2638-425c-ac37-7d55053452ac/images/91d62277-7fde-4ec6-8e2b-86a446e2f6ee.png)
 
 The architecture includes the following CDP components:
 + Data Hub is a service for launching and managing workload clusters powered by Cloudera Runtime. You can use the cluster definitions in Data Hub to provision and access workload clusters for custom use cases and define custom cluster configurations. For more information, see the [Cloudera website](https://docs.cloudera.com/data-hub/cloud/index.html).
@@ -92,7 +92,7 @@ The architecture includes the following CDP components:
 
 The following diagram (adapted with permission from the Cloudera website) shows the high-level architecture of CDP on AWS. CDP implements its [own security model](https://docs.cloudera.com/runtime/7.1.0/cdp-security-overview/topics/security-management-console-security.html) to manage both accounts and data flow. These are integrated with [IAM](https://aws.amazon.com/iam/) through the use of [cross-account roles](https://docs.cloudera.com/cdp-public-cloud/cloud/requirements-aws/topics/mc-aws-req-credential.html).
 
-![CDP on AWS high-level architecture](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/bb47435e-2638-425c-ac37-7d55053452ac/images/54420517-38b4-4e82-bd19-9ded50ed009c.png)
+![CDP on AWS high-level architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/bb47435e-2638-425c-ac37-7d55053452ac/images/54420517-38b4-4e82-bd19-9ded50ed009c.png)
 
 The CDP control plane resides in a Cloudera master account in its own VPC. Each customer account has its own sub-account and unique VPC. Cross-account IAM roles and SSL technologies route management traffic to and from the control plane to customer services that reside on internet-routable public subnets within each customer VPC. On the customer’s VPC, the Cloudera Shared Data Experience (SDX) provides enterprise-strength security with unified governance and compliance so you can get insights from your data faster. SDX is a design philosophy incorporated into all Cloudera products. For more information about [SDX](https://docs.cloudera.com/cdp-public-cloud/cloud/overview/topics/cdp-services.html) and the [CDP Public Cloud network architecture for AWS](https://docs.cloudera.com/cdp-public-cloud/cloud/aws-refarch/topics/cdp-pc-aws-refarch-overview.html), see the Cloudera documentation.
 

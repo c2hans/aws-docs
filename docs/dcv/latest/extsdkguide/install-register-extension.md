@@ -18,7 +18,7 @@ The per-machine key is `HKEY_LOCAL_MACHINE\SOFTWARE\Amazon\DCV Extensions`
 
 The per-user key is `HKEY_CURRENT_USER\SOFTWARE\Amazon\DCV Extensions`
 
-![Registry Editor showing DCV Extensions key with three extension entries and their manifest file paths.](http://docs.aws.amazon.com/dcv/latest/extsdkguide/images/register-ext.jpg)
+![Registry Editor showing DCV Extensions key with three extension entries and their manifest file paths.](https://docs.aws.amazon.com/dcv/latest/extsdkguide/images/register-ext.jpg)
 
 ## Registering the extension on Linux
 <a name="register-extension-linux"></a>

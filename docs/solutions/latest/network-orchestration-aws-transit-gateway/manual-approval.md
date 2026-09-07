@@ -12,7 +12,7 @@ If you don’t deploy the UI, you can’t approve or reject a network change. Al
 
  **Architecture diagram of AWS resources deployed to support manual approval of network requests.**
 
-![manual approval architecture](http://docs.aws.amazon.com/solutions/latest/network-orchestration-aws-transit-gateway/images/manual-approval-architecture.png)
+![manual approval architecture](https://docs.aws.amazon.com/solutions/latest/network-orchestration-aws-transit-gateway/images/manual-approval-architecture.png)
 
 1. If you set the **ApprovalRequired** tag key to `Yes` or `Conditional` in the **Transit gateway route table** parameter, the state machine skips changes depending on the rules set under the `Conditional` setting. To set up this flag, refer to [Transit Gateway route table tags](custom-compliance.md#add-tags-to-transit-gateway-route-table).
 

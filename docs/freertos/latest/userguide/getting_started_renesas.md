@@ -48,7 +48,7 @@ This tutorial contains instructions for the following getting started steps:
 
    Note that administrator privileges are required to install the drivers.
 
-![Embedded system board with various interfaces and connected peripherals.](http://docs.aws.amazon.com/freertos/latest/userguide/images/renesas-board3.png)
+![Embedded system board with various interfaces and connected peripherals.](https://docs.aws.amazon.com/freertos/latest/userguide/images/renesas-board3.png)
 
 ## Set up your development environment
 <a name="renesas-setup-env"></a>

@@ -13,4 +13,4 @@ An approach to avoid this behavior is to split the audio out of session, meaning
 
 Architecture Diagram
 
-![Image showing Connect Customer and WorkSpaces architecture](http://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/connect-workspaces-architecture.png)
+![Image showing Connect Customer and WorkSpaces architecture](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/connect-workspaces-architecture.png)

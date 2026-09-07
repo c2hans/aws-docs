@@ -18,7 +18,7 @@ The reductionist approach focuses on each individual component (IVR, ACD, Speech
 
 A holistic view of the contact center is shown in the following diagram:
 
-![A holistic view of the contact center.](http://docs.aws.amazon.com/connect/latest/adminguide/images/architecture/architecturaldesign.png)
+![A holistic view of the contact center.](https://docs.aws.amazon.com/connect/latest/adminguide/images/architecture/architecturaldesign.png)
 
 The holistic approach results focus on a more complete and cohesive experience for customers, and not which technology will provide which part of that experience.
 
@@ -26,11 +26,11 @@ Let the customer and what they want define and guide your efforts. The experienc
 
 You can start with the default experience, building out your flows, but refactoring your single flow into two to enable future segmentation:
 
-![Refactoring your single flow into two.](http://docs.aws.amazon.com/connect/latest/adminguide/images/architecture/architecturaldesign2.png)
+![Refactoring your single flow into two.](https://docs.aws.amazon.com/connect/latest/adminguide/images/architecture/architecturaldesign2.png)
 
 In your next iteration, identify additional experiences that you need to plan for and build routing and, if necessary, flows for each. For example, you might want to play different prompts for a contact that is past due on their bill or that might have tried to contact multiple times for the same purpose. With this approach, you are working towards personalized, dynamic experiences that are pertinent to your contacts and why they are contacting you. In addition to improving the quality of experience for your contacts and decreasing handle times, you’re encouraging contact self-service by providing a more intelligent and flexible experience. Your next iteration might look like the following illustration:
 
-![Next iteration of flow.](http://docs.aws.amazon.com/connect/latest/adminguide/images/architecture/architecturaldesign3.png)
+![Next iteration of flow.](https://docs.aws.amazon.com/connect/latest/adminguide/images/architecture/architecturaldesign3.png)
 
 ## Flow design
 <a name="contactflowdesign-bp"></a>
@@ -39,13 +39,13 @@ A flow defines the customer experience with your contact center from start to fi
 
 Many Large businesses support multiple phone numbers, business units, prompts, queues, and other Connect Customer resources. While it is possible to have unique flows for each phone number and line of business, it can lead to a one-to-one mapping of phone numbers and flows. This results in unnecessary service quota requests and a large number of flows to support and maintain. A one-to-one mapping of DNIS and Flow implementation is illustrated in the following figure:
 
-![Flow design example showing a one-to-one mapping of a DNIS and Flow implementation.](http://docs.aws.amazon.com/connect/latest/adminguide/images/architecture/contactflowdesign.png)
+![Flow design example showing a one-to-one mapping of a DNIS and Flow implementation.](https://docs.aws.amazon.com/connect/latest/adminguide/images/architecture/contactflowdesign.png)
 
 Alternatively, you should consider an approach that results in Multiple DNIS to one or few flows by using the dynamic nature of Connect Customer Flows. With this approach, you can store configuration information like Prompts, Queues, Business Hours, Whisper Prompts/Flows, Queues, Queue Treatments and Hold Messages, in NoSQL Database DynamoDB. In Connect Customer, you can associate multiple phone numbers to the same flow and use the Lambda function to look up configurations for that phone number. This helps you to dynamically define the contact’s experience based on the attributes returned from DynamoDB.
 
 For example, you can play prompts or use Text-to-Speech (TTS) to greet callers based upon the lookups in DynamoDB or associate queues using dynamic attributes supported in flow blocks. The result with this approach is a flow implementation that is efficient to build, maintain, and support:
 
-![An example flow design for using prompts and Text-to-Speech to greet callers.](http://docs.aws.amazon.com/connect/latest/adminguide/images/architecture/contactflowdesign2.png)
+![An example flow design for using prompts and Text-to-Speech to greet callers.](https://docs.aws.amazon.com/connect/latest/adminguide/images/architecture/contactflowdesign2.png)
 
 ## Load testing
 <a name="loadtesting-bp"></a>

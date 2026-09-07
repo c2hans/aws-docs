@@ -58,18 +58,18 @@ Provide a unique name and a meaningful description for the domain. The list of f
 
 For the Account Management domain, you can identify seeds based on transactions. Select files that have a type of **TRANSACTION**, and select the transactions **CAUP** and **CAVW**, as shown in the following screen illustration. Choose **Mark as seed** to identify these elements as seeds for the Account Management domain. Choose **Create** to create the domain.
 
-![Identifying seeds for a domain in mainframe decomposition.](http://docs.aws.amazon.com/prescriptive-guidance/latest/mainframe-decomposition-aws-transform/images/guide-img/b2468f31-0c9f-4fc4-9a0f-816b3ed5739c/images/78af476c-4c2b-4d9c-888c-815c0b6a9897.png)
+![Identifying seeds for a domain in mainframe decomposition.](https://docs.aws.amazon.com/prescriptive-guidance/latest/mainframe-decomposition-aws-transform/images/guide-img/b2468f31-0c9f-4fc4-9a0f-816b3ed5739c/images/78af476c-4c2b-4d9c-888c-815c0b6a9897.png)
 
 Repeat this process for the five remaining domains identified in step 1, by choosing **Create domain** from the **Actions** menu. The next screen provides a tabular view of the domains, the number of files you selected for each domain, and the number of seeds, as shown in the following illustration.
 
-![Tabular view of a domain in mainframe decomposition.](http://docs.aws.amazon.com/prescriptive-guidance/latest/mainframe-decomposition-aws-transform/images/guide-img/b2468f31-0c9f-4fc4-9a0f-816b3ed5739c/images/6eea8992-7d41-4793-937a-dd69d75fcddb.png)
+![Tabular view of a domain in mainframe decomposition.](https://docs.aws.amazon.com/prescriptive-guidance/latest/mainframe-decomposition-aws-transform/images/guide-img/b2468f31-0c9f-4fc4-9a0f-816b3ed5739c/images/6eea8992-7d41-4793-937a-dd69d75fcddb.png)
 
 ## Step 3: Configure decomposition and enable seed augmentation
 <a name="configure-decomposition"></a>
 
 After you define your domains and select seeds for decomposition, choose **Configure decomposition**. The **Domain configuration** tab, as shown in the next illustration, displays the threshold configuration that can be set at the domain level, to provide flexible domain sizes across different parts of the project.
 
-![Domain size thresholds in mainframe decomposition.](http://docs.aws.amazon.com/prescriptive-guidance/latest/mainframe-decomposition-aws-transform/images/guide-img/b2468f31-0c9f-4fc4-9a0f-816b3ed5739c/images/e2b6201f-b718-4a5a-b096-a062d87e79d2.png)
+![Domain size thresholds in mainframe decomposition.](https://docs.aws.amazon.com/prescriptive-guidance/latest/mainframe-decomposition-aws-transform/images/guide-img/b2468f31-0c9f-4fc4-9a0f-816b3ed5739c/images/e2b6201f-b718-4a5a-b096-a062d87e79d2.png)
 
 ## Step 4: Make additional changes before decomposition
 <a name="make-changes"></a>
@@ -81,11 +81,11 @@ You can export the domains as a JSON or CSV file, modify it, and upload it back 
 
 When you choose **Decompose**, the **View decomposition results** screen provides the results of the decomposition in table view, as shown in the following illustration. It displays the domain name, description, file percent (percentage of number of files compared with total files), number of files, number of seeds, and lines of code for each domain.
 
-![Tabular view of decomposition results in mainframe decomposition.](http://docs.aws.amazon.com/prescriptive-guidance/latest/mainframe-decomposition-aws-transform/images/guide-img/b2468f31-0c9f-4fc4-9a0f-816b3ed5739c/images/0357cf73-aed8-4634-bc20-ce7ced1313f6.png)
+![Tabular view of decomposition results in mainframe decomposition.](https://docs.aws.amazon.com/prescriptive-guidance/latest/mainframe-decomposition-aws-transform/images/guide-img/b2468f31-0c9f-4fc4-9a0f-816b3ed5739c/images/0357cf73-aed8-4634-bc20-ce7ced1313f6.png)
 
 When you choose a domain, the screen also displays the details of all files that have been identified as part of that domain, as shown in the following illustration.
 
-![Drilling down to see domain-specific information in mainframe decomposition.](http://docs.aws.amazon.com/prescriptive-guidance/latest/mainframe-decomposition-aws-transform/images/guide-img/b2468f31-0c9f-4fc4-9a0f-816b3ed5739c/images/f667a024-2be6-4689-902b-4c4e021502ba.png)
+![Drilling down to see domain-specific information in mainframe decomposition.](https://docs.aws.amazon.com/prescriptive-guidance/latest/mainframe-decomposition-aws-transform/images/guide-img/b2468f31-0c9f-4fc4-9a0f-816b3ed5739c/images/f667a024-2be6-4689-902b-4c4e021502ba.png)
 
 You can also choose the graph view to see graphical dependencies or domains at the domain level.
 
@@ -93,4 +93,4 @@ Based on the results of the decomposition, you can make additional changes to th
 
 When you are satisfied with the decomposition analysis, you can send this information to AWS Transform to complete the domain-based decomposition and create initial wave plans. After decomposition is complete, the dashboard, shown in the following screen illustration, displays a summary of decomposition results. It shows the number of files by domain along with the percentage of files in each domain.
 
-![AWS Transform dashboard with decomposition results.](http://docs.aws.amazon.com/prescriptive-guidance/latest/mainframe-decomposition-aws-transform/images/guide-img/b2468f31-0c9f-4fc4-9a0f-816b3ed5739c/images/63e6fa31-9394-4005-add0-e6de93a3b3ad.png)
+![AWS Transform dashboard with decomposition results.](https://docs.aws.amazon.com/prescriptive-guidance/latest/mainframe-decomposition-aws-transform/images/guide-img/b2468f31-0c9f-4fc4-9a0f-816b3ed5739c/images/63e6fa31-9394-4005-add0-e6de93a3b3ad.png)

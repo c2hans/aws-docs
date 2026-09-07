@@ -11,7 +11,7 @@ Once the user provides the feedback, the feedback is stored in an S3 bucket part
 
  **Depicts Deployment stack - Finding Feedback Bucket Name**
 
-![feedback bucket output](http://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/feedback-bucket-output.png)
+![feedback bucket output](https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/feedback-bucket-output.png)
 
 The user feedback is sent as an API request containing a minimal set of information:
 
@@ -162,7 +162,7 @@ You also have access to a **CloudWatch Dashboard** packaged with the solution th
 
  **Depicts Usecase CloudWatch Dashboard**
 
-![cloudwatch usecase dashboard](http://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/cloudwatch-usecase-dashboard.png)
+![cloudwatch usecase dashboard](https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/cloudwatch-usecase-dashboard.png)
 
 You can also build additional widgets in this Dashboard or create Amazon Quick Sight dashboards.
 

@@ -23,13 +23,13 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/reactive-systems-on-a
 
  Amazon ECS Service Auto Scaling supports several types of automatic scaling that influence the number of tasks for a given ECS service. Amazon ECS cluster auto scaling however is a capability for ECS to manage the scaling of Amazon EC2 Auto Scaling groups. With Amazon ECS cluster auto scaling you can configure ECS to scale your Auto Scaling groups automatically, and just focus on running your tasks. ECS will ensure the Auto Scaling groups scale in and out as needed with no further intervention required. ECS cluster auto scaling relies on ECS capacity providers, which provide the link between your ECS cluster and the Auto Scaling groups you want to use. For more information, refer to [Amazon ECS Cluster Auto Scaling](https://aws.amazon.com/blogs/containers/deep-dive-on-amazon-ecs-cluster-auto-scaling/).
 
-![Diagram showing Scaling with Amazon ECS](http://docs.aws.amazon.com/whitepapers/latest/reactive-systems-on-aws/images/scaling-with-ecs.png)
+![Diagram showing Scaling with Amazon ECS](https://docs.aws.amazon.com/whitepapers/latest/reactive-systems-on-aws/images/scaling-with-ecs.png)
 
  A similar approach is available for [Amazon EKS with Horizontal Pod Autoscaler](https://docs.aws.amazon.com/eks/latest/userguide/horizontal-pod-autoscaler.html). The Horizontal Pod Autoscaler is a standard API resource in Kubernetes that simply requires that a metrics source (such as the Kubernetes metrics server) is installed on your Amazon EKS cluster to work. You do not need to deploy or install the Horizontal Pod Autoscaler on your cluster to begin scaling your applications.
 
  The Horizontal Pod Autoscaler automatically scales the number of pods in a deployment, replication controller, or replica set based on that resource's CPU or memory utilization, custom metrics are also supported. This can help your applications scale out to meet increased demand or scale in when resources are not needed, thus freeing up your worker nodes for other applications. When you set a target CPU utilization percentage, the Horizontal Pod Autoscaler scales your application in or out to try to meet that target.
 
-![Diagram showing Scaling with Amazon EKS](http://docs.aws.amazon.com/whitepapers/latest/reactive-systems-on-aws/images/scaling-with-eks.png)
+![Diagram showing Scaling with Amazon EKS](https://docs.aws.amazon.com/whitepapers/latest/reactive-systems-on-aws/images/scaling-with-eks.png)
 
 ## Amazon Kinesis Data Streams
 <a name="kds"></a>

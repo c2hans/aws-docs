@@ -9,7 +9,7 @@ With Amazon Aurora MySQL-Compatible Edition clusters, you can use cross-Region A
 
 The following diagram shows the high-level architecture of a cross-Region Aurora Replica.
 
-![Description follows the diagram.](http://docs.aws.amazon.com/prescriptive-guidance/latest/aurora-replication-options/images/guide-img/51785086-3f1b-4c1a-91fa-c2aba26e3f1a/images/a7132127-d9e9-40f5-ae3f-774138a04313.png)
+![Description follows the diagram.](https://docs.aws.amazon.com/prescriptive-guidance/latest/aurora-replication-options/images/guide-img/51785086-3f1b-4c1a-91fa-c2aba26e3f1a/images/a7132127-d9e9-40f5-ae3f-774138a04313.png)
 
 The diagram shows the following transaction flow:
 

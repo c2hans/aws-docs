@@ -61,7 +61,7 @@ The common tenant solution provided in this pattern can help centralize the mana
 
 The following diagram shows an example workflow for managing tenant lifecycles across multiple SaaS products on a single control plane in the AWS Cloud.
 
-![Workflow for managing tenant lifecycles on a single control plane.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/4306bc76-22a7-45ca-a107-43df6c6f7ac8/images/700faf4d-c28f-4814-96aa-2d895cdcb518.png)
+![Workflow for managing tenant lifecycles on a single control plane.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/4306bc76-22a7-45ca-a107-43df6c6f7ac8/images/700faf4d-c28f-4814-96aa-2d895cdcb518.png)
 
  The diagram shows the following workflow:
 

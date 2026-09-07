@@ -39,7 +39,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-dns-opti
 
  *Outbound endpoints* serve as the path through which all queries are forwarded out of the VPC. Outbound endpoints are directly attached to the owner VPC and indirectly associated with other VPCs by rules. Therefore, if a forwarding rule is shared with VPC that does not own the outbound endpoint, all queries that match the forwarding rule pass through to the owner VPC and then forward out. It is important to realize this when you use queries to forward from one VPC to another. The outbound endpoint might reside in an entirely different Availability Zone than the VPC that originally sent the query, and there is potential for an Availability Zone outage in the owner VPC to impact query resolution in the VPC using the forwarding rule. This can be avoided by deploying outbound endpoints in multiple Availability Zones.
 
-![A diagram depicting Route 53 Resolver with outbound endpoint.](http://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-dns-options-for-vpc/images/outbound-endpoint.jpeg)
+![A diagram depicting Route 53 Resolver with outbound endpoint.](https://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-dns-options-for-vpc/images/outbound-endpoint.jpeg)
 
  Refer to [Getting Starting with Route 53 Resolver](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-getting-started.html) in the *Amazon Route 53 Developer Guide* for more information.
 

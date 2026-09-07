@@ -18,19 +18,19 @@ The **Overview** tab provides the following information.
   + ** Mean Absolute Percentage Error (MAPE)** – MAPE takes the absolute value of the percentage error between observed and predicted values for each unit of time and averages those values.
 
     The formula at granular and plan level is below:
-![Calculating MAPE](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/MAPE_formula.png)
+![Calculating MAPE](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/MAPE_formula.png)
 
     A MAPE less than 5% indicates the forecast is acceptably accurate. A MAPE greater than 10% but less than 25% indicates low, but acceptable accuracy, and MAPE greater than 25% indicates very low accuracy and the forecast is not acceptable.
   + **Weighted Average Percentage Error (WAPE)** – WAPE measures the overall deviation of forecasted values from observed values. WAPE is calculated by taking the sum of observed values and the sum of predicted values, and calculating the error between those two values. A lower value indicates a more accurate model.
 
     The formula at granular and plan level is below:
-![Calculating WAPE](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/WAPE_formula.png)
+![Calculating WAPE](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/WAPE_formula.png)
 
     A WAPE less than 5% is considered as acceptably accurate. A WAPE greater than 10% but less than 25% indicates low, but acceptable accuracy and WAPE greater than 25% indicates very low accuracy.
 
 See the following example:
 
-![WAPE calculation example](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Accuracy_metrics.png)
+![WAPE calculation example](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Accuracy_metrics.png)
 
 The metrics are not calculated when actual is zero or null. When a new forecast is generated subsequently, the previous reported metrics will no longer be available on the web application. Make sure the latest outbound\_order\_line dataset is updated and choose **Recalculate** to view the updated metrics.
 
@@ -77,7 +77,7 @@ Lags represent the time interval between when the forecast was created and the a
 
 Forecasts for the defined lags are generated for every planning cycle and the accuracy metrics can only be evaluated after the corresponding number of planning cycles. For example, if you choose lag six, accuracy metrics for lag six forecast will be calculated after six planning cycles.
 
-![Demand pattern example](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/demand_pattern.png)
+![Demand pattern example](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/demand_pattern.png)
 
 **Note**
 When you change the lag configuration, the drop-down values displayed are the newly selected lags. Choose **Refresh Metrics** to view the latest metrics. When you change the time interval (daily/weekly/monthly/yearly), or hierarchy (product/site/customer/channel) granularity, the previous lag metrics will no longer be available when you choose **Refresh Metrics**. The recalculation results will display the latest demand planning cycle as the only cycle in history.

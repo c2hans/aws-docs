@@ -18,7 +18,7 @@ If `Read and Write (R/W)` is selected, data isolation is still enforced based on
 + /%p
 + /%p/%u
 
-![Add bucket page with custom prefix dropdown shown](http://docs.aws.amazon.com/res/archive/release-minus-4/ug/images/add-bucket-custom-prefix.png)
+![Add bucket page with custom prefix dropdown shown](https://docs.aws.amazon.com/res/archive/release-minus-4/ug/images/add-bucket-custom-prefix.png)
 
 **No custom data isolation **
 When `No custom prefix` is selected for **Custom Prefix**, the bucket is added without any custom data isolation. This allows any projects associated with the bucket to have read and write access. For example, if an admin adds a bucket to RES using the ARN `arn:aws:s3:::{{bucket-name}}` with `No custom prefix` selected and associates this bucket with Project A and Project B, users launching VDIs from within Project A and Project B will have unrestricted read and write access to the bucket.

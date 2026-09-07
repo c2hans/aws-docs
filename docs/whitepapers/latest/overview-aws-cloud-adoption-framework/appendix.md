@@ -7,6 +7,6 @@ Also available on [Audible](https://www.audible.com/pd/Cloud-Adoption-Framework-
 # Appendix: AWS CAF capabilities poster
 <a name="appendix"></a>
 
-![A diagram depicting AWS CAF foundational capabilities.](http://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/images/cloud-adoption-11.png)
+![A diagram depicting AWS CAF foundational capabilities.](https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/images/cloud-adoption-11.png)
 
 *AWS CAF foundational capabilities*

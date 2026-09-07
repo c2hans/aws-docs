@@ -12,7 +12,7 @@ This solution is intended for customers with public applications who want to pro
 
  **Lambda architecture for cost-optimized image processing**
 
-![Lambda architecture diagram showing CloudFront](http://docs.aws.amazon.com/solutions/latest/dynamic-image-transformation-for-amazon-cloudfront/images/serverless-image-handler-architecture.png)
+![Lambda architecture diagram showing CloudFront](https://docs.aws.amazon.com/solutions/latest/dynamic-image-transformation-for-amazon-cloudfront/images/serverless-image-handler-architecture.png)
 
 **Note**
 AWS CloudFormation resources are created from [AWS Cloud Development Kit](https://aws.amazon.com/cdk/) (AWS CDK) constructs.

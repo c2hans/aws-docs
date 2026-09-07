@@ -14,7 +14,7 @@ For case summarization to work, a case summary field must exist on the case temp
 
 When an agent views a Case that is enabled with AI agents, they can use the **Generate** button to produce a summary of the Case and its Activity Feed.
 
-![Screenshot showing Generate button for case summary.](http://docs.aws.amazon.com/connect/latest/adminguide/images/case-summary-generate-button.png)
+![Screenshot showing Generate button for case summary.](https://docs.aws.amazon.com/connect/latest/adminguide/images/case-summary-generate-button.png)
 
 ## Case Summarization
 <a name="case-summarization-details"></a>
@@ -48,7 +48,7 @@ After a case summary is generated, the agent can:
 
 1. Choose the Thumbs up or Thumbs down icons to provide immediate feedback to their contact center manager so they can improve the AI agent responses. For more information, see [TRANSCRIPT\_RESULT\_FEEDBACK](https://docs.aws.amazon.com/connect/latest/adminguide/monitor-ai-agents.html#documenting-cw-events-ih).
 
-![Screenshot showing case summary action options.](http://docs.aws.amazon.com/connect/latest/adminguide/images/case-summary-actions.png)
+![Screenshot showing case summary action options.](https://docs.aws.amazon.com/connect/latest/adminguide/images/case-summary-actions.png)
 
 ## Configure case summarization
 <a name="configure-case-summarization"></a>

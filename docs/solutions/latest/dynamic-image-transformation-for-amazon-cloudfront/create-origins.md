@@ -37,8 +37,8 @@ After completing the fields, choose **Save** to create the origin.
 
  **Screenshot of the Origins > Create origin form in the Admin UI.**
 
-![Admin UI Create origin form](http://docs.aws.amazon.com/solutions/latest/dynamic-image-transformation-for-amazon-cloudfront/images/admin-ui-create-origin.png)
+![Admin UI Create origin form](https://docs.aws.amazon.com/solutions/latest/dynamic-image-transformation-for-amazon-cloudfront/images/admin-ui-create-origin.png)
 
  **Screenshot of the Origins list view in the Admin UI.**
 
-![Admin UI Origins list view](http://docs.aws.amazon.com/solutions/latest/dynamic-image-transformation-for-amazon-cloudfront/images/admin-ui-origins-list.png)
+![Admin UI Origins list view](https://docs.aws.amazon.com/solutions/latest/dynamic-image-transformation-for-amazon-cloudfront/images/admin-ui-origins-list.png)

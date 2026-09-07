@@ -21,7 +21,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingest
 
  You can build event-driven pipelines for ETL with AWS Glue ETL. Refer to the following example.
 
-![A diagram depicting AWS Glue ETL architecture.](http://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/aws-glue-etl.jpeg)
+![A diagram depicting AWS Glue ETL architecture.](https://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/aws-glue-etl.jpeg)
 
  You can use AWS Glue as a managed ETL tool to connect to your data centers for ingesting data from files while transforming data and then load the data into your data storage of choice in AWS (or example, Amazon S3 data lake storage or Amazon Redshift). For details on how to set up AWS Glue in a hybrid environment when you are ingesting data from on-premises data centers, refer to [How to access and analyze on-premises data stores using AWS Glue](https://aws.amazon.com/blogs/big-data/how-to-access-and-analyze-on-premises-data-stores-using-aws-glue/).
 
@@ -73,7 +73,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingest
 
  Finally, Firehose can invoke AWS Lambda functions to transform incoming source data and deliver it to Amazon S3. Common transformation functions include transforming Apache Log and Syslog formats to standardized JSON and/or CSV formats. The JSON and CSV formats can then be directly queried using Amazon Athena. If using a Lambda data transformation, you can optionally back up raw source data to another S3 bucket, as shown in the following figure.
 
-![A diagram that depicts delivering real-time streaming data with Amazon Kinesis Data Firehose to Amazon S2 with optional backup.](http://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/firehose-to-s3.png)
+![A diagram that depicts delivering real-time streaming data with Amazon Kinesis Data Firehose to Amazon S2 with optional backup.](https://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/firehose-to-s3.png)
 
 ### Sending data to an Amazon Data Firehose Delivery Stream
 <a name="sending-data-to-an-amazon-kinesis-data-firehose-delivery-stream"></a>
@@ -104,7 +104,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingest
 
  In our example scenario, we chose to use the agent to send streaming data to the delivery stream. The source is on-premises log files, so forwarding the log entries to Firehose was a simple installation and configuration of the agent. No additional code was needed to start streaming the data.
 
-![A diagram depicting Kinesis agent to monitor multiple fie directories.](http://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/kinesis-agent-1.png)
+![A diagram depicting Kinesis agent to monitor multiple fie directories.](https://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/kinesis-agent-1.png)
 
 ### Data transformation
 <a name="data-transformation"></a>
@@ -118,7 +118,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingest
 
  When you enable Firehose data transformation, Firehose buffers incoming data up to 3 MB or the buffering size you specified for the delivery stream, whichever is smaller. Firehose then invokes the specified Lambda function with each buffered batch asynchronously. The transformed data is sent from Lambda to Firehose for buffering. Transformed data is delivered to the destination when the specified buffering size or buffering interval is reached, whichever happens first. The following figure illustrates this process for a delivery stream that delivers data to Amazon S3.
 
-![A diagram depicting a Kinesis Agent to monitor multiple file directories and write to Kinesis Data Firehose.](http://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/kinesis-agent-2.png)
+![A diagram depicting a Kinesis Agent to monitor multiple file directories and write to Kinesis Data Firehose.](https://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/kinesis-agent-2.png)
 
 ### Amazon Kinesis Data Streams
 <a name="amazon-kinesis-data-streams"></a>
@@ -127,7 +127,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingest
 
  Kinesis Data Streams provide many more controls in terms of how you want to scale the service to meet high demand use cases, such as real-time analytics, gaming data feeds, mobile data captures, log and event data collection, and so on. You can then build applications that consume the data from Amazon Kinesis Data Streams to power real-time dashboards, generate alerts, implement dynamic pricing and advertising, and more. Amazon Kinesis Data Streams supports your choice of stream processing framework including Kinesis Client Library (KCL), Apache Storm, and Apache Spark Streaming.
 
-![A diagram depicting custom real-time pipelines using stream-processing frameworks .](http://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/custom-rt-pipelines.png)
+![A diagram depicting custom real-time pipelines using stream-processing frameworks .](https://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/custom-rt-pipelines.png)
 
 #### Sending data to Amazon Kinesis Data Streams
 <a name="sending-data-to-amazon-kinesis-data-streams"></a>
@@ -169,14 +169,14 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingest
 
  Amazon Managed Streaming for Apache Kafka (Amazon MSK) is a fully managed service that makes it easy for you to build and run applications that use Apache Kafka to process streaming data. Apache Kafka is an open-source platform for building real- time streaming data pipelines and applications. With Amazon MSK, you can use native Apache Kafka APIs to populate data lakes, stream changes to and from databases, and power machine learning and analytics applications. Amazon MSK is tailor made for use cases that require ultra-low latency (less than 20 milliseconds) and higher throughput through a single partition. With Amazon MSK, you can offload the overhead of maintaining and operating Apache Kafka to AWS which will result in significant cost savings when compared to running a self-hosted version of Apache Kafka.
 
-![A diagram depicting Managed Kafka for storing streaming data in an Amazon S3 data lake.](http://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/managed-kafka.jpeg)
+![A diagram depicting Managed Kafka for storing streaming data in an Amazon S3 data lake.](https://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/managed-kafka.jpeg)
 
 ### Other streaming solutions in AWS
 <a name="other-streaming-solutions-in-aws"></a>
 
  You can install streaming data platforms of your choice on Amazon EC2 and [Amazon EMR](https://aws.amazon.com/emr), and build your own stream storage and processing layers. By building your streaming data solution on Amazon EC2 and Amazon EMR, you can avoid the friction of infrastructure provisioning, and gain access to a variety of stream storage and processing frameworks. Options for streaming the data storage layer include [Amazon](https://aws.amazon.com/msk/) [MSK](https://aws.amazon.com/msk/) and [Apache Flume](https://flume.apache.org/). Options for streaming the processing layer include [Apache](https://spark.apache.org/streaming/) [Spark Streaming](https://spark.apache.org/streaming/) and [Apache Storm](https://storm.apache.org/).
 
-![A diagram that depicts moving data to AWS using Amazon EMR.](http://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/aws-using-emr.png)
+![A diagram that depicts moving data to AWS using Amazon EMR.](https://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/aws-using-emr.png)
 
 ## Relational data ingestion
 <a name="relational-data-ingestion"></a>
@@ -200,7 +200,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingest
 
  AWS Schema Conversion Tool (AWS SCT) is used to facilitate heterogeneous database assessment and migration by automatically converting the source database schema and code objects to a format that’s compatible with the target database engine. The custom code that it converts includes views, stored procedures, and functions. Any code that SCT cannot convert automatically is flagged for manual conversion.
 
-![A diagram that depicts the AWS Schema Conversion Tool.](http://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/schema-conversion-tool.jpeg)
+![A diagram that depicts the AWS Schema Conversion Tool.](https://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/schema-conversion-tool.jpeg)
 
 ### AWS Database Migration Service (AWS DMS)
 <a name="aws-database-migration-service-aws-dms"></a>
@@ -213,7 +213,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingest
 
  Once devices are received by AWS, the data is securely loaded into [Amazon Simple Storage Service](https://aws.amazon.com/s3/) (Amazon S3) and then ingested into an [Amazon Aurora](https://aws.amazon.com/rds/aurora) database engine. **N**etwork connectivity must be sized accordingly to that data can be initially loaded in a timely manner, and ongoing CDC does not incur latency lag.
 
-![A diagram depicting AWS Database Migration Service.](http://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/database-migration-service.jpeg)
+![A diagram depicting AWS Database Migration Service.](https://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/database-migration-service.jpeg)
 
  When moving data from on-premises databases or storing data in the cloud, security and access control of the data is an important aspect that must be accounted for in any architecture. AWS services use Transport Level Security (TLS) for securing data in transit. For securing data at rest, AWS offers a large number of encryption options for encrypting data automatically using [AWS provided keys](https://aws.amazon.com/kms/), customer provided keys, and even using [Hardware Security Module](https://aws.amazon.com/cloudhsm/) (HSM). Once data is loaded in AWS and securely stored, the pattern must account for providing controlled and auditable access to the data at the right level of granularity. In AWS, a combination of [AWS Identity and Access Management](https://aws.amazon.com/iam/) (IAM) and [AWS Lake Formation](https://aws.amazon.com/lake-formation) services can be used to achieve this requirement.
 
@@ -229,7 +229,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingest
 
  Migrating from commercial relational databases like Microsoft SQL Server or Oracle to [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) is challenging because of their difference in schema. There are many different schema design considerations [when moving from relational databases to NoSQL databases](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQLtoNoSQL.html).
 
-![A diagram that depicts migrating data from a relational data store to NoSQL data store .](http://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/migrating-to-nosql.jpeg)
+![A diagram that depicts migrating data from a relational data store to NoSQL data store .](https://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/migrating-to-nosql.jpeg)
 
  You can use [AWS Database Migration Service](https://aws.amazon.com/dms/) (AWS DMS) to migrate your data to and from the most widely used commercial and open-source databases. It supports homogeneous and heterogeneous migrations between different database platforms.
 
@@ -251,7 +251,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingest
 +  Tables within a relational database map to collections in Amazon DocumentDB.
 +  Records in a relational table map to documents in Amazon DocumentDB. Each document is constructed from data in the source record.
 
-![A diagram that depicts migrating data from a relational data store to DocumentDB.](http://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/migrating-to-documentdb.jpeg)
+![A diagram that depicts migrating data from a relational data store to DocumentDB.](https://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/migrating-to-documentdb.jpeg)
 
  AWS DMS reads records from the source endpoint, and constructs JSON documents based on the data it reads. For each JSON document, AWS DMS determines an \_id field to act as a unique identifier. It then writes the JSON document to an Amazon DocumentDB collection, using the \_id field as a primary key.
 
@@ -273,7 +273,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingest
 
  During a database migration when Amazon Redshift is the target for data warehousing use cases, AWS DMS first moves data to an Amazon S3 bucket. When the files reside in an Amazon S3 bucket, AWS DMS then transfers them to the proper tables in the Amazon Redshift data warehouse.
 
-![A diagram that depicts Migrating data from NoSQL store to Amazon Redshift .](http://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/migrating-to-redshift.jpeg)
+![A diagram that depicts Migrating data from NoSQL store to Amazon Redshift .](https://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/migrating-to-redshift.jpeg)
 
  AWS Database Migration Service supports both full load and change processing operations. AWS DMS reads the data from the source database and creates a series of comma-separated value (`.csv`) files. For full-load operations, AWS DMS creates files for each table. AWS DMS then copies the table files for each table to a separate folder in Amazon S3. When the files are uploaded to Amazon S3, AWS DMS sends a [COPY command](https://docs.aws.amazon.com/redshift/latest/dg/r_COPY.html) and the data in the files are copied into Amazon Redshift. For change- processing operations, AWS DMS copies the net changes to the .csv files. AWS DMS then uploads the net change files to Amazon S3 and copies the data to Amazon Redshift.
 
@@ -286,4 +286,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingest
 
  AWS DMS supports multithreaded full load to increase the speed of the transfer, and multithreaded CDC load to improve the performance of CDC. For the task settings and prerequisites that are required to be configured for these modes, refer to [Using an Amazon OpenSearch Service cluster as a target for AWS Database Migration Service](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.Elasticsearch.html).
 
-![A diagram that depicts migrating data from Amazon DocumentDB store to Amazon OpenSearch Service.](http://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/migrating-to-opensearch.png)
+![A diagram that depicts migrating data from Amazon DocumentDB store to Amazon OpenSearch Service.](https://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/migrating-to-opensearch.png)

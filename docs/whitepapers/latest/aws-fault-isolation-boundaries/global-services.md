@@ -14,7 +14,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-b
 
  Some global AWS services exist in each partition (referred to in this paper as *partitional* services). Partitional services provide their control plane in a single AWS Region. Some partitional services, such as AWS Network Manager, are control plane-only and orchestrate the data plane of other services. Other partitional services, such as IAM, have their own data plane that is isolated and distributed across all of the AWS Regions in the partition. Failures in a partitional service do not impact other partitions. In the `aws` partition, the IAM service’s control plane is in the `us-east-1` Region, with isolated data planes in each Region of the partition. Partitional services also have independent control planes and data planes in the `aws-us-gov` and `aws-cn` partitions. The separation of control plane and data plane for IAM is shown in the following diagram.
 
-![This image illustrates that IAM has a single control plane and regionalized data plane](http://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-boundaries/images/iam-single-control-plane-and-regionalized-data-plane.png)
+![This image illustrates that IAM has a single control plane and regionalized data plane](https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-boundaries/images/iam-single-control-plane-and-regionalized-data-plane.png)
 
  The following are partitional services and their control plane location in the `aws` partition:
 + AWS IAM (`us-east-1`)

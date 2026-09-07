@@ -30,7 +30,7 @@ To grant permission to use an AWS KMS key with Instance Scheduler, add the AWS K
 
  **KMS Key Arns for EC2**
 
-![image3](http://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-aws/images/image3.png)
+![image3](https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-aws/images/image3.png)
 
 This will automatically generate the following policy and add it to the scheduling role for that account:
 
@@ -79,7 +79,7 @@ To grant permission to use AWS License Manager with Instance Scheduler, add the 
 
  **License Manager Configuration ARNs for EC2**
 
-![license manager cfn param](http://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-aws/images/license-manager-cfn-param.png)
+![license manager cfn param](https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-aws/images/license-manager-cfn-param.png)
 
 This will automatically generate the following policy and add it to the scheduling role for that account:
 

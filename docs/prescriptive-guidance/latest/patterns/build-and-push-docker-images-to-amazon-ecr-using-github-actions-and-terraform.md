@@ -40,7 +40,7 @@ This reusable code has been tested only with GitHub Actions.
 
 **Target architecture**
 
-![Workflow to create reusable GitHub workflows to build Dockerfile and push image to Amazon ECR.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c39c110e-cbe5-459e-a0aa-de27e884fb10/images/298e0e16-3054-49b7-8695-db510e0df2df.png)
+![Workflow to create reusable GitHub workflows to build Dockerfile and push image to Amazon ECR.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c39c110e-cbe5-459e-a0aa-de27e884fb10/images/298e0e16-3054-49b7-8695-db510e0df2df.png)
 
 The diagram illustrates the following:
 

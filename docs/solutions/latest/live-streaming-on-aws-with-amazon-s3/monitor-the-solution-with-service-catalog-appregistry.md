@@ -17,7 +17,7 @@ The following figure depicts an example of the application view for the solution
 
  **Depicts solution stack in Application Manager**
 
-![appregistry1](http://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws-with-amazon-s3/images/appregistry1.png)
+![appregistry1](https://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws-with-amazon-s3/images/appregistry1.png)
 
 <a name="activate-cloudwatch-application-insights"></a>== Activate CloudWatch Application Insights . Sign in to the [Systems Manager console](https://console.aws.amazon.com/systems-manager). . In the navigation pane, choose **Application Manager**. . In **Applications**, search for the application name for this solution and select it.
 
@@ -27,13 +27,13 @@ The application name will have **App Registry** in the **Application Source** co
 
  **Application Insights dashboard showing no detected problems and option to auto-configure.**
 
-![appreg1](http://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws-with-amazon-s3/images/appreg1.png)
+![appreg1](https://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws-with-amazon-s3/images/appreg1.png)
 
 Monitoring for your applications is now activated and the following status box appears:
 
  **Application Insights dashboard showing successful monitoring activation message.**
 
-![appreg2](http://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws-with-amazon-s3/images/appreg2.png)
+![appreg2](https://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws-with-amazon-s3/images/appreg2.png)
 
 <a name="confirm-cost-tags-associated-with-the-solution"></a>== Confirm cost tags associated with the solution
 
@@ -50,7 +50,7 @@ After you activate cost allocation tags associated with the solution, you must c
 1. In the **Overview** tab, in **Cost**, select **Add user tag**.
 
     **Screenshot depicting the Application Cost add user tag screen**
-![AppManager 1](http://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws-with-amazon-s3/images/AppManager_1.png)
+![AppManager 1](https://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws-with-amazon-s3/images/AppManager_1.png)
 
 1. On the **Add user tag** page, enter `confirm`, then select **Add user tag**.
 

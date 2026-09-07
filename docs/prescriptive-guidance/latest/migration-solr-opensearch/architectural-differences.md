@@ -16,7 +16,7 @@ In this model, each component has a distinct responsibility. However, the need t
 
 The following diagram illustrates the Solr architecture.
 
-![Modular architecture in Apache Solr.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-solr-opensearch/images/guide-img/20cfd7ab-1afd-4038-9280-20666ff596e1/images/a1e5a352-bf7d-42bf-a9c5-edf73b7003d1.png)
+![Modular architecture in Apache Solr.](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-solr-opensearch/images/guide-img/20cfd7ab-1afd-4038-9280-20666ff596e1/images/a1e5a352-bf7d-42bf-a9c5-edf73b7003d1.png)
 
 In comparison, OpenSearch implements an integrated distributed cluster management model. The platform uses a master-eligible node concept where designated master nodes handle cluster state management. This self-contained approach integrates cluster management with cluster state information that's published to all nodes through internal communication channels. This model simplifies deployment scenarios.
 
@@ -24,7 +24,7 @@ You can deploy OpenSearch clusters without additional external cluster managemen
 
 The following diagram illustrates the OpenSearch architecture.
 
-![OpenSearch architecture in comparison with Apache Solr.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-solr-opensearch/images/guide-img/20cfd7ab-1afd-4038-9280-20666ff596e1/images/ffc5a297-c3ff-4182-b51e-f6adeaa36bc0.png)
+![OpenSearch architecture in comparison with Apache Solr.](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-solr-opensearch/images/guide-img/20cfd7ab-1afd-4038-9280-20666ff596e1/images/ffc5a297-c3ff-4182-b51e-f6adeaa36bc0.png)
 
 As the architecture diagram shows, OpenSearch offers a modern, cloud-native, distributed architecture that's designed for scalability and flexibility with specialized node roles, built-in security, and extensive plugin support. Solr follows a more traditional, monolithic design that's centered around nodes. Solr architecture is simpler but less adaptable to complex, large-scale deployments. OpenSearch is architected specifically for modern, scalable cloud deployments with advanced features such as machine learning, fine-grained security, multi-tier storage, and comprehensive observability. Although Solr remains a solid choice for traditional search applications, OpenSearch is better suited for organizations that require enterprise-grade security, advanced analytics, and cloud-native scalability.
 

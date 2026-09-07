@@ -51,7 +51,7 @@ The pattern involves these steps:
 
 1. CodeBuild zips the archive and uploads it to the S3 bucket that serves as the CodePipeline artifact store.
 
-![Workflow that uses third-party Git source repos as sources for AWS CodePipeline.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/84284bec-b39d-466a-9fd9-994be2c953df/images/85555dab-7317-40f5-86a7-ccb8987c5bf3.png)
+![Workflow that uses third-party Git source repos as sources for AWS CodePipeline.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/84284bec-b39d-466a-9fd9-994be2c953df/images/85555dab-7317-40f5-86a7-ccb8987c5bf3.png)
 
 ## Tools
 <a name="use-third-party-git-source-repositories-in-aws-codepipeline-tools"></a>

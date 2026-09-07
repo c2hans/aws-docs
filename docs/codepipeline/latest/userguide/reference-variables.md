@@ -220,7 +220,7 @@ In this example, the build action's configuration field shows environment variab
 
 Each time an action is executed as part of a pipeline execution, the variables it produces are available for use in any action that is guaranteed to occur after the producing action. To use these variables in a consuming action, you can add them to the consuming action's configuration using the syntax shown in the previous example. Before it performs a consuming action, CodePipeline resolves all of the variable references present in the configuration prior to initiating the action execution.
 
-![Example: Variables for multiple actions](http://docs.aws.amazon.com/codepipeline/latest/userguide/images/variables-workflow-example.png)
+![Example: Variables for multiple actions](https://docs.aws.amazon.com/codepipeline/latest/userguide/images/variables-workflow-example.png)
 
 ## Rules for variables
 <a name="reference-variables-rules"></a>

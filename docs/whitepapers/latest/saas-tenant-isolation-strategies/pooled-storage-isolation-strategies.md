@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation
 
  The general notion of pool storage isolation (for any storage service) is that the data for all tenants is represented in a shared storage construct. The diagram in Figure 16 provides an illustration of pooled storage.
 
-![Diagram showing pooled storage.](http://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/images/pooled-storage.jpg)
+![Diagram showing pooled storage.](https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/images/pooled-storage.jpg)
 
 Here you’ll see that we have a product microservice that is storing its data in a pooled model. The table has an index in the first column that represents the key for each tenant. All of the tenant product data resides in this one table.
 
@@ -21,11 +21,11 @@ Here you’ll see that we have a product microservice that is storing its data i
 
  The key area to focus on in this policy is the condition. This condition indicates that, when this policy is applied, all attempts to access the DynamoDB table will be limited to items that have key that matches the value of this leading key. So, in this case, the tenant identifier would be in the leading key, constraining access to data for a given tenant.
 
-![Screen capture showing an example IAM policy for DynamoDB isolation with leading keys.](http://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/images/dynamodb-isolation-with-leading-keys.jpg)
+![Screen capture showing an example IAM policy for DynamoDB isolation with leading keys.](https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/images/dynamodb-isolation-with-leading-keys.jpg)
 
  Now, if we look at employing this same isolation model to Amazon Aurora PostgreSQL, you’ll see that the mechanism is quite different. With Aurora PostgreSQL, you cannot use IAM to scope access to data at the row level. Instead, you’ll need to use the row level security (RLS) feature of PostgreSQL to isolate your tenant data. The diagram in Figure 18 provides a simple example of how you’d setup RLS for a product table in your system.
 
-![Screen capture showing creating pooled isolation with PostgreSQL RLS.](http://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/images/pooled-isolation-with-postgresql-rls.jpg)
+![Screen capture showing creating pooled isolation with PostgreSQL RLS.](https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/images/pooled-isolation-with-postgresql-rls.jpg)
 
  The first step in configuring RLS is to alter your table to enable row level security for that table. Then, you’ll create an isolation policy for that that requires the tenant\_id column to match the value of the current user (which is supplied contextually). Now, with these changes in place, all interactions with this table will be restricted to the rows that are valid for the current tenant.
 

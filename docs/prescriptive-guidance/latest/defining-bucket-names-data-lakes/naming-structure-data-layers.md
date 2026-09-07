@@ -9,7 +9,7 @@ The following sections provide naming structures for Amazon Simple Storage Servi
 
 The following diagram shows the recommended naming structure for Amazon S3 buckets in the recommended data lake layers. The naming structure separates multiple business units, file formats, and partitions.
 
-![The naming approach varies for S3 buckets according to the data layer that they are intended for.](http://docs.aws.amazon.com/prescriptive-guidance/latest/defining-bucket-names-data-lakes/images/guide-img/d76f2946-d940-4cf3-ac21-937dd4709e95/images/8c192691-f975-4408-b909-a1bbfa6dda88.png)
+![The naming approach varies for S3 buckets according to the data layer that they are intended for.](https://docs.aws.amazon.com/prescriptive-guidance/latest/defining-bucket-names-data-lakes/images/guide-img/d76f2946-d940-4cf3-ac21-937dd4709e95/images/8c192691-f975-4408-b909-a1bbfa6dda88.png)
 
 **Important**
 Amazon S3 buckets must follow the naming guidelines from [Bucket naming rules](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html) in the Amazon S3 documentation.

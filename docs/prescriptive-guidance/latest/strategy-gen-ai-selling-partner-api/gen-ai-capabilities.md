@@ -9,7 +9,7 @@ Amazon vendors and sellers can use generative artificial intelligence (generativ
 
 The following architecture diagram shows how you can use AWS services, such as [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) or [Amazon Q Business](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/what-is.html), to kick-start your generative AI journey on AWS. Using this architecture, you build a generative AI pipeline that uses a modern data analytics approach to derive insights from the data.
 
-![Using AWS generative AI services to unlock insights from the Amazon Selling Partner API data](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-selling-partner-api/images/guide-img/fd951ab0-b7f5-4ded-9451-ea838cf4c59a/images/9ccd931e-e334-4a06-bceb-913219a44821.png)
+![Using AWS generative AI services to unlock insights from the Amazon Selling Partner API data](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-selling-partner-api/images/guide-img/fd951ab0-b7f5-4ded-9451-ea838cf4c59a/images/9ccd931e-e334-4a06-bceb-913219a44821.png)
 
 The architecture diagram includes the following components:
 
@@ -35,18 +35,18 @@ The following examples show how Quick Q helps you understand data with executive
 
 You can ask Quick Q "What are the top sold items in 2023?" Quick Q gathers and analyzes the data in order to provide an executive summary.
 
-![An executive-level summary and chart.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-selling-partner-api/images/guide-img/fd951ab0-b7f5-4ded-9451-ea838cf4c59a/images/dcd82d3a-878f-4871-a34c-cc9a6ae13abb.png)
+![An executive-level summary and chart.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-selling-partner-api/images/guide-img/fd951ab0-b7f5-4ded-9451-ea838cf4c59a/images/dcd82d3a-878f-4871-a34c-cc9a6ae13abb.png)
 
 ### Example 2
 <a name="example-2.c1d14b25-2e3a-50d2-a370-1ae573299409"></a>
 
 You can ask Quick Q what are the top products that an enterprise sells on Amazon.
 
-![Prompts for data about top products.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-selling-partner-api/images/guide-img/fd951ab0-b7f5-4ded-9451-ea838cf4c59a/images/22bbbf15-f5d9-4793-9dec-336985edb9e8.png)
+![Prompts for data about top products.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-selling-partner-api/images/guide-img/fd951ab0-b7f5-4ded-9451-ea838cf4c59a/images/22bbbf15-f5d9-4793-9dec-336985edb9e8.png)
 
 ### Example 3
 <a name="example-3.b3aa8ba8-3e5e-5ee0-83a9-7113cd40fa20"></a>
 
 You can ask Quick Q to provide sales metrics for a product, based on month or year-to-date.
 
-![Prompts for sales metrics for different time periods.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-selling-partner-api/images/guide-img/fd951ab0-b7f5-4ded-9451-ea838cf4c59a/images/80ba0f0a-0c9e-4a4c-a3bb-f91e1084e0ea.png)
+![Prompts for sales metrics for different time periods.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-selling-partner-api/images/guide-img/fd951ab0-b7f5-4ded-9451-ea838cf4c59a/images/80ba0f0a-0c9e-4a4c-a3bb-f91e1084e0ea.png)

@@ -16,7 +16,7 @@ After you activate cost allocation tags associated with the solution, you must c
    The application name will have **App Registry** in the **Application Source** column, and will have a combination of the solution name, Region, account ID, or stack name.
 
 1. In the **Overview** tab, in **Cost**, select **Add user tag**.
-![Screenshot depicting the Application Cost add user tag screen](http://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws-foundation/images/AppManager_1.png)
+![Screenshot depicting the Application Cost add user tag screen](https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws-foundation/images/AppManager_1.png)
 
 1. On the **Add user tag** page, enter `confirm`, then select **Add user tag**.
 

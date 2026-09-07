@@ -42,7 +42,7 @@ The use cases for this pattern include the following.
 
 The following reference architecture diagram illustrates the deployment setup for an AWS landing zone that’s integrated with a MongoDB Atlas private endpoint. This reference architecture demonstrates how to establish a secure, scalable, and highly available AWS landing zone integrated with MongoDB Atlas. By combining AWS best practices such as Multi-AZ deployment, least-privilege security controls, and private connectivity, this design enables organizations to provision a robust environment for modern applications.
 
-![Multi-AZ architecture for AWS landing zone that's integrated with MongoDB Atlas.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/72d335b9-b5b1-4fe2-9972-65edbec60ab1/images/82a8cc98-6f22-4e28-a236-57a809930055.png)
+![Multi-AZ architecture for AWS landing zone that's integrated with MongoDB Atlas.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/72d335b9-b5b1-4fe2-9972-65edbec60ab1/images/82a8cc98-6f22-4e28-a236-57a809930055.png)
 
 This architecture consists of the following:
 

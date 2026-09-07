@@ -221,7 +221,7 @@ To learn more about data transfer prices for all AWS Regions, see [Amazon EC2 On
 
 For example, the following diagram shows a high-level view of the DataSync architecture for transferring data from in-cloud Network File System (NFS) to in-cloud NFS or Amazon S3.
 
-![Diagram showing data transfer between source Region containing a virtual private cloud (VPC) with an EFS file system and DataSync agent, and a destination Region with a DataSync endpoint and EFS file system.](http://docs.aws.amazon.com/datasync/latest/userguide/images/efs-efs-ec2.png)
+![Diagram showing data transfer between source Region containing a virtual private cloud (VPC) with an EFS file system and DataSync agent, and a destination Region with a DataSync endpoint and EFS file system.](https://docs.aws.amazon.com/datasync/latest/userguide/images/efs-efs-ec2.png)
 
 Remember the following when transferring between AWS storage services across AWS accounts:
 + When transferring between Amazon EFS file systems or Amazon FSx file systems using the NFS protocol, configure your source file system as an [NFS location](create-nfs-location.md).
@@ -232,7 +232,7 @@ Remember the following when transferring between AWS storage services across AWS
 
 The following diagram provides a high-level view of the DataSync architecture for transferring data from Amazon S3 to an AWS file system, such as Amazon EFS or Amazon FSx. You can use this architecture to transfer data from one AWS account to another, or to transfer data from Amazon S3 to a self-managed in-cloud file system.
 
-![Diagram showing data transfer between source Region containing an S3 bucket and DataSync endpoint, and a destination Region containing a VPC with an EFS file system and DataSync agent.](http://docs.aws.amazon.com/datasync/latest/userguide/images/s3-efs-ec2.png)
+![Diagram showing data transfer between source Region containing an S3 bucket and DataSync endpoint, and a destination Region containing a VPC with an EFS file system and DataSync agent.](https://docs.aws.amazon.com/datasync/latest/userguide/images/s3-efs-ec2.png)
 
 ## Deploying your Basic mode agent on AWS Outposts
 <a name="outposts-agent"></a>

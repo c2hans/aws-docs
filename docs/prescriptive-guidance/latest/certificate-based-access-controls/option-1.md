@@ -14,7 +14,7 @@ When an application assumes a role, the permissions are the convergence of what 
 
 The following image shows the access that each application has. Applications are denied access to some AWS resources because they are not explicitly granted access in both the IAM role and the IAM Roles Anywhere profile. If the Credential Helper call includes the Amazon Resource Name (ARN) for **Role 1**, then the application is granted temporary security credentials to access **Bucket 1** through **Role 1**. If the Credential Helper call includes the ARN for **Role 2**, then the application is granted temporary security credentials to access **Bucket 2** through **Role 2**.
 
-![Applications use the same certificate and can access multiple roles. Profiles limit access.](http://docs.aws.amazon.com/prescriptive-guidance/latest/certificate-based-access-controls/images/guide-img/e306828d-cb6f-41be-b1da-12c08a777c76/images/f4e02c38-c66b-4b4f-be73-ddfbb667efc4.png)
+![Applications use the same certificate and can access multiple roles. Profiles limit access.](https://docs.aws.amazon.com/prescriptive-guidance/latest/certificate-based-access-controls/images/guide-img/e306828d-cb6f-41be-b1da-12c08a777c76/images/f4e02c38-c66b-4b4f-be73-ddfbb667efc4.png)
 
 The **Role 1** and **Role 2** trust policies are configured to allow IAM Roles Anywhere to assume the role, set the source identity, and tag the sessions. The following is a sample trust policy that allows the applications to assume any role that is linked to an IAM Roles Anywhere profile:
 

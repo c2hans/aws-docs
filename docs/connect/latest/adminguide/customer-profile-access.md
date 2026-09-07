@@ -15,7 +15,7 @@ Make sure your agents have **Customer profiles** permissions in their security p
 
 Customer Profiles is already embedded alongside the Contact Control Panel (CCP). Your agents can access the CCP, Customer Profiles, and Connect Customer's Case management all in the same browser window by logging into their Connect Customer instance and choosing the **Agent Workspace** button located at the top right corner as shown in the following image.
 
-![The Customer Profiles page and the button highlighted that opens the agent workspace.](http://docs.aws.amazon.com/connect/latest/adminguide/images/customer-profiles-agent-workspace-open.png)
+![The Customer Profiles page and the button highlighted that opens the agent workspace.](https://docs.aws.amazon.com/connect/latest/adminguide/images/customer-profiles-agent-workspace-open.png)
 
 **Note**
 You can also access the agent workspace by using the following URL:
@@ -26,7 +26,7 @@ For help finding your instance name, see [Find your Connect Customer instance na
 
 Following is an example of what Customer Profiles looks like in the agent workspace.
 
-![The Customer Profiles tab and the CCP in the agent workspace.](http://docs.aws.amazon.com/connect/latest/adminguide/images/customer-profiles-agent-app.png)
+![The Customer Profiles tab and the CCP in the agent workspace.](https://docs.aws.amazon.com/connect/latest/adminguide/images/customer-profiles-agent-app.png)
 
 ## Option 2: Embed Customer Profiles into a custom agent workspace
 <a name="customer-profile-access-embed"></a>

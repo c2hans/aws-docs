@@ -33,13 +33,13 @@ Based on the configured inventory policy, different fields in this entity are re
 
 Forecasts may be different for daily planning compared to weekly planning. Here is an example of the daily and weekly planning forecast requirement.
 
-![Daily planning](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/daily-planning.png)
+![Daily planning](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/daily-planning.png)
 
 **Weekly planning**
 
 You can use the daily planning forecast example for weekly planning, or you can also use the following example for weekly planning.
 
-![Weekly planning](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/weekly-planning.png)
+![Weekly planning](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/weekly-planning.png)
 
 ## Sales history or demand
 <a name="demand"></a>

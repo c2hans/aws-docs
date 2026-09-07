@@ -19,7 +19,7 @@ You are also responsible for making your own independent assessment of the Third
 ## Leostream Broker module
 <a name="leostream-broker-module"></a>
 
-![leostream broker module](http://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/images/leostream-broker-module.png)
+![leostream broker module](https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/images/leostream-broker-module.png)
 
 1. A privately [hosted zone](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/route-53-concepts.html#route-53-concepts-hosted-zone) in [Amazon Route 53](https://aws.amazon.com/route53/) routes requests to an [Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html) that is accessible through a private subnet. This Application Load Balancer manages connections to an [Amazon EC2 Auto Scaling Group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/auto-scaling-groups.html).
 
@@ -40,7 +40,7 @@ You are also responsible for making your own independent assessment of the Third
 ## Spoke Leostream Broker module
 <a name="spoke-leostream-broker-module"></a>
 
-![spoke leostream broker module](http://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/images/spoke-leostream-broker-module.png)
+![spoke leostream broker module](https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/images/spoke-leostream-broker-module.png)
 
 1. The Leostream Broker cluster in the hub variant of this module manages workstations on [Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html).
 
@@ -49,7 +49,7 @@ You are also responsible for making your own independent assessment of the Third
 ## Leostream Gateway module
 <a name="leostream-gateway-module"></a>
 
-![leostream gateway module](http://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/images/leostream-gateway-module.png)
+![leostream gateway module](https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/images/leostream-gateway-module.png)
 
 1. Optionally, when a certificate and hosted zone are configured, a [hosted zone](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zones-working-with.html) on [Amazon Route 53](https://aws.amazon.com/route53) routes requests to [AWS Global Accelerator](https://docs.aws.amazon.com/global-accelerator/latest/dg/what-is-global-accelerator.html).
 
@@ -68,7 +68,7 @@ You are also responsible for making your own independent assessment of the Third
 ## Spoke Leostream Gateway module
 <a name="spoke-leostream-gateway-module"></a>
 
-![spoke leostream gateway module](http://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/images/spoke-leostream-gateway-module.png)
+![spoke leostream gateway module](https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/images/spoke-leostream-gateway-module.png)
 
 1. Auto Scaling events invoke workflows in [AWS Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html) via [Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/) to manage Leostream Gateway registrations.
 

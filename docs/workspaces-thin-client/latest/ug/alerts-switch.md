@@ -30,7 +30,7 @@ If needed, you can turn on these notifications. By default, notifications are se
 1. Select **Settings**, **About**, **SYSTEMS ALERT**.
 
 1. Select the switch to **On** to enable the notifications.
-![Settings interface showing options for About Device, Network Alerts, and System Alerts with toggle switches.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/notifications-system.png)
+![Settings interface showing options for About Device, Network Alerts, and System Alerts with toggle switches.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/notifications-system.png)
 
 ## Enabling network alerts
 <a name="network-alerts"></a>
@@ -49,4 +49,4 @@ If needed, you can turn on these notifications. By default, notifications are se
 1. Select **Settings**, **About**, **NETWORK CONDITIONS ALERT**.
 
 1. Select the switch to **On** to enable the notifications.
-![Settings interface showing network condition alerts off and system alerts on.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/notifications-network.png)
+![Settings interface showing network condition alerts off and system alerts on.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/notifications-network.png)

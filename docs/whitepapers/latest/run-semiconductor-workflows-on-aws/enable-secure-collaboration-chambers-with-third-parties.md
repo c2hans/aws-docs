@@ -25,7 +25,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-wor
 
  The following figure shows a collaboration VPC for test and regressions.
 
-![This image figure shows a collaboration VPC for test and regressions.](http://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-workflows-on-aws/images/semiconductor-collaboration-ip-isvs.png)
+![This image figure shows a collaboration VPC for test and regressions.](https://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-workflows-on-aws/images/semiconductor-collaboration-ip-isvs.png)
 
 **Collaboration with IP providers and EDA tool vendors (ISVs) **
 
@@ -36,7 +36,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-wor
 
  After sending your GDSII file to the foundry, the wafer fabrication process has traditionally been obfuscated from the chip design teams. Launching a separate VPC to enable collaboration with just your foundry can result in robust analytics, a reduction in time-to-market, and increased ROI. The following figure shows the wafer yield analysis from collaboration with your foundry.
 
-![This figure shows the wafer yield analysis from collaboration with your foundry.](http://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-workflows-on-aws/images/semiconductor-collaboration-foundry.png)
+![This figure shows the wafer yield analysis from collaboration with your foundry.](https://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-workflows-on-aws/images/semiconductor-collaboration-foundry.png)
 
 **Collaboration with foundry - wafer yield analysis **
 
@@ -49,7 +49,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-wor
 
  Similar to the way collaboration is enabled with the foundry, you can also enable collaboration with your packaging and contract manufacturers, as well as the devices in the field. The following figure shows the workflow for collaboration with packaging and contract manufacturers.
 
-![This image shows the workflow for collaboration with packaging and contract manufacturers.](http://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-workflows-on-aws/images/semiconductor-collaboration-packaging.png)
+![This image shows the workflow for collaboration with packaging and contract manufacturers.](https://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-workflows-on-aws/images/semiconductor-collaboration-packaging.png)
 
 **Collaboration with packaging and contract manufacturers **
 

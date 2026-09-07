@@ -16,7 +16,7 @@ A CCoE speeds up your ability to establish subject matter expertise, achieve agr
 
 When a CCoE is fully operational, it reflects your business and represents a microcosm of your current IT and business functions. You might have dedicated architecture teams for each CSP or create shared teams that support multiple CSPs. The shape of your CCoE must be appropriate for your business model. The following diagram provides an example of organizational structure that's derived from the best experiences of AWS FSI multicloud customers.
 
-![Multicloud-enabled CCoE for FSIs.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-multicloud-fsi/images/guide-img/79fe34d7-841b-4bd6-a6da-96f5401c6a67/images/d02accfa-7066-43ba-81cb-fa19793dfcda.png)
+![Multicloud-enabled CCoE for FSIs.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-multicloud-fsi/images/guide-img/79fe34d7-841b-4bd6-a6da-96f5401c6a67/images/d02accfa-7066-43ba-81cb-fa19793dfcda.png)
 
 ## Best practices for multicloud CCoEs
 <a name="ccoe-best-practices"></a>

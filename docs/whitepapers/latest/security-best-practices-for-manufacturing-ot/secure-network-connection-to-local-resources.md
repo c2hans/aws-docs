@@ -20,6 +20,6 @@ The best practice is to use the secure versions of protocols. If vendor support 
 
 Another recommendation is to functionally segregate the plant into multiple cell/area zones (grouping of ICS devices in a functional area like a machine shop, paint booth, or part assembly). In this scenario, the cell/area zone defines the trust boundary where devices are allowed to communicate unhindered and in real time, but traffic leaving or entering the cell/area zone is subject to inspection, as shown in figure 7. Consider using ICS specialized firewall/inspection products that understand the ICS protocols and can detect anomalous behavior in the control network.
 
-![A diagram showing secure connection to local resources.](http://docs.aws.amazon.com/whitepapers/latest/security-best-practices-for-manufacturing-ot/images/secure-conn-local-resources.png)
+![A diagram showing secure connection to local resources.](https://docs.aws.amazon.com/whitepapers/latest/security-best-practices-for-manufacturing-ot/images/secure-conn-local-resources.png)
 
  *Secure connection to local resources *

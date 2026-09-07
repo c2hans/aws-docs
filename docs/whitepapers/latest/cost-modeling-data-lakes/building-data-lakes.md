@@ -30,11 +30,11 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/cost-modeling-data-la
 
  Before we get started, let’s look at a common set of services that customers use to build data lakes for processing batch data.
 
-![A diagram showing common service sets that you can use to build a data lake.](http://docs.aws.amazon.com/whitepapers/latest/cost-modeling-data-lakes/images/common-data-lake-services.png)
+![A diagram showing common service sets that you can use to build a data lake.](https://docs.aws.amazon.com/whitepapers/latest/cost-modeling-data-lakes/images/common-data-lake-services.png)
 
  The following example architecture is relatively common. It uses AWS Glue, Amazon Athena, Amazon S3, and Quick.
 
-![A diagram showing an example architecture for batch processing.](http://docs.aws.amazon.com/whitepapers/latest/cost-modeling-data-lakes/images/batch-processing-example.jpeg)
+![A diagram showing an example architecture for batch processing.](https://docs.aws.amazon.com/whitepapers/latest/cost-modeling-data-lakes/images/batch-processing-example.jpeg)
 
  The preceding example shows a typical pipeline to ingest raw data from CSV files. AWS Glue automatically infers a schema to allow the data to be queried. AWS Glue jobs are used to extract, clean, curate, and rewrite the data in an optimized format (Parquet) before exposing visualizations to end users. This is all achieved using serverless technologies that reduce the operational burden to the analytics team.
 
@@ -52,10 +52,10 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/cost-modeling-data-la
 
  Before we get started, let’s look at a common set of services that customers use to build data lakes for processing real-time data.
 
-![A collection of service icons for common services that are used to build data lakes.](http://docs.aws.amazon.com/whitepapers/latest/cost-modeling-data-lakes/images/common-real-time-services.jpeg)
+![A collection of service icons for common services that are used to build data lakes.](https://docs.aws.amazon.com/whitepapers/latest/cost-modeling-data-lakes/images/common-real-time-services.jpeg)
 
  Our example architecture is relatively simple and uses the following services: Amazon Kinesis, AWS Lambda, AWS Glue, Amazon Athena, Amazon S3 and Quick.
 
-![A diagram that shows a real-time processing example architecture.](http://docs.aws.amazon.com/whitepapers/latest/cost-modeling-data-lakes/images/real-time-processing-example.jpeg)
+![A diagram that shows a real-time processing example architecture.](https://docs.aws.amazon.com/whitepapers/latest/cost-modeling-data-lakes/images/real-time-processing-example.jpeg)
 
  This example shows that many IoT devices send their telemetry to AWS IoT Core. AWS IoT allows users to securely manage billions of connected devices and route those messages to other AWS endpoints. In this case, AWS IoT Core passes the messages Amazon Kinesis, which ingests streaming data at any scale. The raw data is split into two streams, one that writes the raw data to Amazon S3 and a second that uses AWS Lambda (a serverless compute service) to filter, aggregate, and transform the data before again storing it on Amazon S3. The manipulated data is then cataloged in AWS Glue and made available to end users to run ad hoc queries using Amazon Athena and create visualizations using Quick.

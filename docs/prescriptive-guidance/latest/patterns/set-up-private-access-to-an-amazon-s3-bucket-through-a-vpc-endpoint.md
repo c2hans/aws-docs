@@ -46,7 +46,7 @@ The following AWS services are used in the target technology stack:
 
 **Target architecture**
 
-![Setting up private access to an S3 bucket through a VPC endpoing](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/683ca6a1-789c-4444-bcbf-e4e80d253df3/images/1ca7ee17-d346-4eb9-bf61-ccf42528a401.png)
+![Setting up private access to an S3 bucket through a VPC endpoing](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/683ca6a1-789c-4444-bcbf-e4e80d253df3/images/1ca7ee17-d346-4eb9-bf61-ccf42528a401.png)
 
 The diagram illustrates the following:
 

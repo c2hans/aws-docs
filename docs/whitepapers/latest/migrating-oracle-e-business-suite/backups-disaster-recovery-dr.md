@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-bu
 
  AWS recommends implementing a robust and reliable backup and recovery procedure as part of customers build on AWS. Backup and restore policies differ between organizations, which is typically dictated based on the RPO and RTO requirements. The following are some of the options available to customers:
 
-![Diagram showing backup architecture options.](http://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-business-suite/images/backup-architecture-options.png)
+![Diagram showing backup architecture options.](https://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-business-suite/images/backup-architecture-options.png)
 
 AWS Backup, a fully managed backup and recovery service that integrates with AWS services such as Amazon EC2, Amazon FSx, Amazon EFS, Amazon EBS, and Amazon S3
 +  RMAN backup weekly full (level 0)
@@ -44,7 +44,7 @@ The following architecture represents an Oracle E-Business Suite implementation 
 
 AWS does not provide licensing advice. We highly recommend that you consult with an Oracle licensing specialist to provide recommendations based on your environment.
 
-![Reference architecture diagram showing Oracle E-Business Suite Architecture – Storage replication with Amazon FSx for NetApp ONTAP.](http://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-business-suite/images/ebs-storage-replication.png)
+![Reference architecture diagram showing Oracle E-Business Suite Architecture – Storage replication with Amazon FSx for NetApp ONTAP.](https://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-business-suite/images/ebs-storage-replication.png)
 
  This architecture could provide the following benefits:
 +  Binaries and data files stored on Amazon FSx, potentially saving on licenses

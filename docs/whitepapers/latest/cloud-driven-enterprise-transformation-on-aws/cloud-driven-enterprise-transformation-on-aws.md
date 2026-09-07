@@ -32,6 +32,6 @@ Successful cloud transformation programs enable teams to work and collaborate us
 
 The [AWS Cloud Adoption Framework](https://docs.aws.amazon.com/whitepapers/latest/aws-migration-whitepaper/the-aws-cloud-adoption-framework-aws-caf.html) provides further details on the pillars of successful cloud adoption.
 
-![A diagram showing business strategy-driven transformation approach](http://docs.aws.amazon.com/whitepapers/latest/cloud-driven-enterprise-transformation-on-aws/images/CloudTransformation2.png)
+![A diagram showing business strategy-driven transformation approach](https://docs.aws.amazon.com/whitepapers/latest/cloud-driven-enterprise-transformation-on-aws/images/CloudTransformation2.png)
 
 *Business strategy-driven transformation approach*

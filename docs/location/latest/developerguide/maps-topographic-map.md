@@ -14,7 +14,7 @@ The terrain feature displays the earth's surface with elevation shading, represe
 
 Use the `terrain` parameter in your API request to display regional topography with elevation shading. This feature highlights variations in elevation and geographic features, helping users better visualize the physical landscape. See [How to create topographic maps](https://docs.aws.amazon.com/location/latest/developerguide/how-to-create-topographic-maps.html).
 
-![](http://docs.aws.amazon.com/location/latest/developerguide/images/map-topographic-terrain.gif)
+![](https://docs.aws.amazon.com/location/latest/developerguide/images/map-topographic-terrain.gif)
 
 ## 3D Terrain
 <a name="maps-topographic-3d-terrain"></a>
@@ -28,12 +28,12 @@ Combine 3D terrain with `contour-density` parameter in your API request for enha
 ------
 #### [ Satellite ]
 
-![](http://docs.aws.amazon.com/location/latest/developerguide/images/zoom-hybrid-3d-terrain.gif)
+![](https://docs.aws.amazon.com/location/latest/developerguide/images/zoom-hybrid-3d-terrain.gif)
 
 ------
 #### [ Standard ]
 
-![](http://docs.aws.amazon.com/location/latest/developerguide/images/zoom-3d-terrain.gif)
+![](https://docs.aws.amazon.com/location/latest/developerguide/images/zoom-3d-terrain.gif)
 
 ------
 
@@ -47,16 +47,16 @@ Use the `contour-density` parameter in your API request to render topographical 
 ------
 #### [ Low ]
 
-![](http://docs.aws.amazon.com/location/latest/developerguide/images/zoom-contours-low.gif)
+![](https://docs.aws.amazon.com/location/latest/developerguide/images/zoom-contours-low.gif)
 
 ------
 #### [ Medium ]
 
-![](http://docs.aws.amazon.com/location/latest/developerguide/images/zoom-contours-medium.gif)
+![](https://docs.aws.amazon.com/location/latest/developerguide/images/zoom-contours-medium.gif)
 
 ------
 #### [ High ]
 
-![](http://docs.aws.amazon.com/location/latest/developerguide/images/zoom-contours-high.gif)
+![](https://docs.aws.amazon.com/location/latest/developerguide/images/zoom-contours-high.gif)
 
 ------

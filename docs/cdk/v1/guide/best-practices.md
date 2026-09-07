@@ -11,7 +11,7 @@ The AWS CDK allows developers or administrators to define their cloud infrastruc
 
 The AWS CDK reflects careful consideration of the needs of our customers and internal teams and of the failure patterns that often arise during the deployment and ongoing maintenance of complex cloud applications. We discovered that failures are often related to "out-of-band" changes to an application, such as configuration changes, that were not fully tested. Therefore, we developed the AWS CDK around a model in which your entire application, not just business logic but also infrastructure and configuration, is defined in code. That way, proposed changes can be carefully reviewed, comprehensively tested in environments resembling production to varying degrees, and fully rolled back if something goes wrong.
 
-![Icons representing infrastructure, application code, source control, configuration, and deployment.](http://docs.aws.amazon.com/cdk/v1/guide/images/all-in-one.jpg)
+![Icons representing infrastructure, application code, source control, configuration, and deployment.](https://docs.aws.amazon.com/cdk/v1/guide/images/all-in-one.jpg)
 
 At deployment time, the AWS CDK synthesizes a cloud assembly that contains not only CloudFormation templates describing your infrastructure in all target environments, but file assets containing your runtime code and their supporting files. With the CDK, every commit in your application's main version control branch can represent a complete, consistent, deployable version of your application. Your application can then be deployed automatically whenever a change is made.
 
@@ -35,14 +35,14 @@ The CCoE also creates a "landing zone" that defines your organizational units wi
 
 Development teams should be able use their own accounts for testing and have the ability to deploy new resources in these accounts as needed. Individual developers can treat these resources as extensions of their own development workstation. Using [CDK Pipelines](cdk-pipeline.md), the AWS CDK applications can then be deployed via a CI/CD account to testing, integration, and production environments (each isolated in its own AWS region and/or account) by merging the developers' code into your organization's canonical repository.
 
-![Developers deploy via CDK to source control, triggering pipeline to deploy across multiple accounts.](http://docs.aws.amazon.com/cdk/v1/guide/images/best-practice-deploy-to-multiple-accounts.png)
+![Developers deploy via CDK to source control, triggering pipeline to deploy across multiple accounts.](https://docs.aws.amazon.com/cdk/v1/guide/images/best-practice-deploy-to-multiple-accounts.png)
 
 ## Coding best practices
 <a name="best-practices-code"></a>
 
 This section presents best practices for organizing your AWS CDK code. The diagram below shows the relationship between a team and that team's code repositories, packages, applications, and construct libraries.
 
-![Team owns code repositories containing packages that consist of CDK apps or construct libraries.](http://docs.aws.amazon.com/cdk/v1/guide/images/code-organization.jpg)
+![Team owns code repositories containing packages that consist of CDK apps or construct libraries.](https://docs.aws.amazon.com/cdk/v1/guide/images/code-organization.jpg)
 
 ### Start simple and add complexity only when you need it
 <a name="best-practices-code-kiss"></a>

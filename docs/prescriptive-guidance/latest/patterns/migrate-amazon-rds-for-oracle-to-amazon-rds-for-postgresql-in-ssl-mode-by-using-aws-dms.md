@@ -59,7 +59,7 @@ The following diagram shows the architecture for data migration architecture bet
 
 To encrypt connections for source and target databases, CA and SSL mode must be enabled in Amazon RDS and AWS DMS.
 
-![Data moving between RDS for Oracle and AWS DMS, and between AWS DMS and RDS for PostgreSQL.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7098e2a3-b456-4e14-8881-c97145aef483/images/55b50ff7-1e6a-4ff0-9bcd-2fd419d5316a.png)
+![Data moving between RDS for Oracle and AWS DMS, and between AWS DMS and RDS for PostgreSQL.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7098e2a3-b456-4e14-8881-c97145aef483/images/55b50ff7-1e6a-4ff0-9bcd-2fd419d5316a.png)
 
 ## Tools
 <a name="migrate-amazon-rds-for-oracle-to-amazon-rds-for-postgresql-in-ssl-mode-by-using-aws-dms-tools"></a>

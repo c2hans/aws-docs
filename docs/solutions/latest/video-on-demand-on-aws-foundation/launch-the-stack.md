@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws-
 
  **Time to deploy:** Approximately 10 minutes
 
-1.  Sign in to the [AWS Management Console](https://aws.amazon.com/console/) and select the button to launch the `video-on-demand-on-aws-foundation.template` CloudFormation template. [![Launch button for the Video on Demand on AWS Foundation solution.](http://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws-foundation/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?&templateURL=https://s3.amazonaws.com/solutions-reference/video-on-demand-on-aws-foundation/latest/video-on-demand-on-aws-foundation.template&redirectId=ImplementationGuide)
+1.  Sign in to the [AWS Management Console](https://aws.amazon.com/console/) and select the button to launch the `video-on-demand-on-aws-foundation.template` CloudFormation template. [![Launch button for the Video on Demand on AWS Foundation solution.](https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws-foundation/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?&templateURL=https://s3.amazonaws.com/solutions-reference/video-on-demand-on-aws-foundation/latest/video-on-demand-on-aws-foundation.template&redirectId=ImplementationGuide)
 
 1.  The template launches in the US East (N. Virginia) Region by default. To launch the solution in a different AWS Region, use the Region selector in the console navigation bar.
 **Note**

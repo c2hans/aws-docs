@@ -123,15 +123,15 @@ If your SDK for Swift project is a desktop application that you’re building in
 
 First, open the macOS target’s **Signing & Capabilities** panel, shown below.
 
-![Signing and Capabilities panel showing Automatically manage signing checkbox and fields for Team, Bundle Identifier, Provisioning Profile, and Signing Certificate.](http://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/images/xcode-add-capability-button.png)
+![Signing and Capabilities panel showing Automatically manage signing checkbox and fields for Team, Bundle Identifier, Provisioning Profile, and Signing Certificate.](https://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/images/xcode-add-capability-button.png)
 
 Click the **\+ Capability** button near the top left of this panel to bring up the box listing the available capabilities. In this box, locate the "App Sandbox" capability and double-click on it to add it to your target.
 
-![App Sandbox capability selected in the Capabilities panel showing description text.](http://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/images/xcode-capability-box.png)
+![App Sandbox capability selected in the Capabilities panel showing description text.](https://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/images/xcode-capability-box.png)
 
 Next, back in your target’s **Signing & Capabilities** panel, find the new **App Sandbox** section and make sure that next to **Network**, the **Outgoing Connections (Client)** checkbox is selected in the following image.
 
-![Signing and Capabilities panel showing App Sandbox section with Outgoing Connections selected.](http://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/images/xcode-app-sandbox.png)
+![Signing and Capabilities panel showing App Sandbox section with Outgoing Connections selected.](https://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/images/xcode-app-sandbox.png)
 
 ### Using AWS access keys on macOS
 <a name="using-access-keys-on-macos"></a>
@@ -144,7 +144,7 @@ When running projects from within Xcode, the environment you have set up for you
 
 This will open the scheme editor window for your project. Click on the **Run** phase in the left sidebar, then **Arguments** in the tab bar near the top of the window.
 
-![Arguments tab showing Environment Variables section with AWS credentials configured.](http://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/images/xcode-scheme-environ.png)
+![Arguments tab showing Environment Variables section with AWS credentials configured.](https://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/images/xcode-scheme-environ.png)
 
 Under **Environment Variables**, click the **\+** icon to add `AWS_REGION` and set its value to the desired region (in the screenshot above, it’s set to "us-east-2"). Then add `AWS_ACCESS_KEY_ID` and its value, then `AWS_SECRET_ACCESS_KEY` and its value. If you're using temporary credentials (which is recommended), also add the `AWS_SESSION_TOKEN` variable and its value. Close the window once you have these configured and your scheme’s Run configuration looks similar to the above.
 

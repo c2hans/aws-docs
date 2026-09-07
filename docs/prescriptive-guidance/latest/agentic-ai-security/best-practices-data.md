@@ -27,7 +27,7 @@ Restrict AI operations against critical data sources by implementing validation 
 
 The following image shows how you can use a deterministic broker tool to inspect user prompts for malicious attacks. On the left side of the image, without a deterministic broker tool, the agent might allow a malicious action on the data system. On the right side of the image, a deterministic broker tool provides an additional control layer. It implements adaptive authentication to inspect and govern high-risk data modifications. For more information about adaptive authentication, see [Working with adaptive authentication](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pool-settings-adaptive-authentication.html) in the Amazon Cognito documentation.
 
-![A broker tool inspects prompts for malicious actions and governs high-risk data modifications.](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-security/images/guide-img/562fab0c-abe0-4a40-a738-87a61cbd8d2a/images/745b9514-1977-4e65-9063-e6416f59e5b5.png)
+![A broker tool inspects prompts for malicious actions and governs high-risk data modifications.](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-security/images/guide-img/562fab0c-abe0-4a40-a738-87a61cbd8d2a/images/745b9514-1977-4e65-9063-e6416f59e5b5.png)
 
 ## 5.3 Establish a data governance framework (General)
 <a name="best-practices-5-data-governance"></a>

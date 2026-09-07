@@ -14,4 +14,4 @@ An [Amazon SageMaker AI Domain](https://docs.aws.amazon.com/sagemaker/latest/dg/
 
 The following diagram provides a high-level view of various components that constitute a SageMaker AIStudio domain:
 
-![A diagram depicting a high-level view of various components that constitute a SageMaker AI Studio Domain.](http://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/sagemaker-studio-domain.png)
+![A diagram depicting a high-level view of various components that constitute a SageMaker AI Studio Domain.](https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/sagemaker-studio-domain.png)

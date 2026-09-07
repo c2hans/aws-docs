@@ -39,7 +39,7 @@ The pattern involves creating a data dump file from the source database, storing
 
 **Source and target architecture**
 
-![Amazon S3 multipart upload from an on-premises Oracle DB to Amazon RDS by using Oracle Data Pump.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/d8d6e00f-753e-4ecc-80e5-e60e279a699b/images/1bb6095a-0a95-4469-be0e-7b7bd59b35ae.png)
+![Amazon S3 multipart upload from an on-premises Oracle DB to Amazon RDS by using Oracle Data Pump.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/d8d6e00f-753e-4ecc-80e5-e60e279a699b/images/1bb6095a-0a95-4469-be0e-7b7bd59b35ae.png)
 
 ## Tools
 <a name="migrate-an-on-premises-oracle-database-to-amazon-rds-for-oracle-using-oracle-data-pump-tools"></a>

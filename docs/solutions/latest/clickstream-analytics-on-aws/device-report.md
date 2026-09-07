@@ -58,4 +58,4 @@ This article describes the default report. You can customize the report by apply
 
 Below image is a sample dashboard for your reference.
 
-![Dashboard showing active users by platform, operating system, browser, device, and app version.](http://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/device.png)
+![Dashboard showing active users by platform, operating system, browser, device, and app version.](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/device.png)

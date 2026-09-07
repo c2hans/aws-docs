@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-hiberna
 
 The following diagram shows a basic overview of the hibernation process for EC2 instances.
 
-![Overview of the hibernation flow.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/hibernation-flow.png)
+![Overview of the hibernation flow.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/hibernation-flow.png)
 
 ## What happens when you hibernate an instance
 <a name="how-instance-hibernation-works"></a>

@@ -24,19 +24,19 @@ To demonstrate some of the benefits of Amazon EC2 Auto Scaling, consider a basic
 
 The following graph shows how much of the application's capacity is used over the course of a week.
 
-![An example of the capacity demand on an application.](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/capacity-example-diagram.png)
+![An example of the capacity demand on an application.](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/capacity-example-diagram.png)
 
 Traditionally, there are two ways to plan for these changes in capacity. The first option is to add enough servers so that the application always has enough capacity to meet demand. The downside of this option, however, is that there are days in which the application doesn't need this much capacity. The extra capacity remains unused and, in essence, raises the cost of keeping the application running.
 
-![An example showing how buying more capacity than needed can be inefficient from a cost perspective.](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/capacity-example-over-diagram.png)
+![An example showing how buying more capacity than needed can be inefficient from a cost perspective.](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/capacity-example-over-diagram.png)
 
 The second option is to have enough capacity to handle the average demand on the application. This option is less expensive, because you aren't purchasing equipment that you'll only use occasionally. However, you risk creating a poor customer experience when the demand on the application exceeds its capacity.
 
-![An example showing how buying less capacity than needed can cause a poor customer experience.](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/capacity-example-under-diagram.png)
+![An example showing how buying less capacity than needed can cause a poor customer experience.](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/capacity-example-under-diagram.png)
 
 By adding Amazon EC2 Auto Scaling to this application, you have a third option available. You can add new instances to the application only when necessary, and terminate them when they're no longer needed. Because Amazon EC2 Auto Scaling uses EC2 instances, you only have to pay for the instances you use, when you use them. You now have a cost-effective architecture that provides the best customer experience while minimizing expenses.
 
-![An example showing how Amazon EC2 Auto Scaling can adjust capacity as needed.](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/capacity-example-with-as-diagram.png)
+![An example showing how Amazon EC2 Auto Scaling can adjust capacity as needed.](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/capacity-example-with-as-diagram.png)
 
 ## Example: Web app architecture
 <a name="autoscaling-design-example"></a>
@@ -45,7 +45,7 @@ In a common web app scenario, you run multiple copies of your app simultaneously
 
 Amazon EC2 Auto Scaling manages the launch and termination of these EC2 instances on your behalf. You define a set of criteria (such as an Amazon CloudWatch alarm) that determines when the Auto Scaling group launches or terminates EC2 instances. Adding Auto Scaling groups to your network architecture helps make your application more highly available and fault tolerant.
 
-![A basic three tier architecture with an Auto Scaling group.](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/sample-3-tier-architecture-auto-scaling-diagram.png)
+![A basic three tier architecture with an Auto Scaling group.](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/sample-3-tier-architecture-auto-scaling-diagram.png)
 
 You can create as many Auto Scaling groups as you need. For example, you can create an Auto Scaling group for each tier.
 
@@ -62,7 +62,7 @@ When you create an Auto Scaling group, you must choose the VPC and subnets where
 
 The following image shows an overview of multi-tier architecture deployed across three Availability Zones.
 
-![A typical Auto Scaling group spanning three Availability Zones.](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/sample-3-tier-architecture-with-azs-diagram.png)
+![A typical Auto Scaling group spanning three Availability Zones.](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/sample-3-tier-architecture-with-azs-diagram.png)
 
 ### Instance distribution
 <a name="AutoScalingBehavior.Rebalancing"></a>

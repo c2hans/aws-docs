@@ -39,7 +39,7 @@ If you use AWS DMS with SQL Server in a self-managed context (hosted on Amazon E
 
 You add source and target databases as end points in AWS DMS, as illustrated in the following diagram. This service implements a logical replication process by using either MS-REPLICATION or MS-CDC. If you have a hybrid setup, you can configure AWS DMS for ongoing replication between on premises and AWS. During the cutover, the AWS DMS migration task can be stopped and the application will be able to connect to the database that is already in sync with the on-premises database without further delay. Using AWS DMS for SQL Server as a source has a few limitations, which are outlined in the [AWS DMS documentation](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.SQLServer.html#CHAP_Source.SQLServer.Limitations).
 
-![Using AWS DMS for HA/DR](http://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-ec2-ha-dr/images/guide-img/09ec13da-971b-4981-975f-0940015d7fc0/images/fccf89e1-30c4-48cb-8e77-aab12a417515.png)
+![Using AWS DMS for HA/DR](https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-ec2-ha-dr/images/guide-img/09ec13da-971b-4981-975f-0940015d7fc0/images/fccf89e1-30c4-48cb-8e77-aab12a417515.png)
 
 Consider using AWS DMS instead of native HA/DR methods in the following scenarios:
 + When you want to save on licensing costs. For example, if you're using an advanced version such as SQL Server Enterprise edition only for its Always On options, you might consider setting up AWS DMS instead, because it can provide a logical replication option without the cost of an Enterprise edition license.
@@ -50,7 +50,7 @@ Consider using AWS DMS instead of native HA/DR methods in the following scenario
 
 The following diagram shows an alternative approach to how AWS DMS can provide replication support. In this configuration, the source is a SQL Server Always On availability group cluster, and AWS DMS uses the change data capture (CDC) option to continuously replicate data to a target in a different AWS Region. For the most optimal performance, is critical to ensure that the replication instance is right-sized and remains in the source Region.
 
-![Using AWS DMS with CDC to continuously replicate data to another Region](http://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-ec2-ha-dr/images/guide-img/09ec13da-971b-4981-975f-0940015d7fc0/images/f664e1a5-f07c-45ab-a48a-4c278b38cac2.png)
+![Using AWS DMS with CDC to continuously replicate data to another Region](https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-ec2-ha-dr/images/guide-img/09ec13da-971b-4981-975f-0940015d7fc0/images/f664e1a5-f07c-45ab-a48a-4c278b38cac2.png)
 
 The source and target engines do not have to match. In the diagram, the primary and secondary nodes marked as (1) can be a SQL server cluster in a Single-AZ or Multi-AZ configuration. Or the source can be a single SQL Server node that supports MS-CDC or MS-REPLICATION.
 

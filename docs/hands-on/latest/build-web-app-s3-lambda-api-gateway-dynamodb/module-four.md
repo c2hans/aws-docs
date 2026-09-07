@@ -45,7 +45,7 @@ By default, your auth resource is configured allowing the user to sign up using 
      }
    });
    ```
-![The resource creation interface.](http://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/resource-creation-interface.png)
+![The resource creation interface.](https://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/resource-creation-interface.png)
 
 1. Start the sandbox, if necessary
 
@@ -58,12 +58,12 @@ By default, your auth resource is configured allowing the user to sign up using 
 1. View the confirmation message
 
    Once the cloud sandbox has been fully deployed, your terminal will display a **confirmation message**.
-![Interface element requiring manual review.](http://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/interface-interface-element.png)
+![Interface element requiring manual review.](https://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/interface-interface-element.png)
 
 1. View the file
 
    The **amplify\_outputs.json** file will be **generated/updated** and **added** to your **profilesapp** project.
-![Interface element requiring manual review.](http://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/interface.png)
+![Interface element requiring manual review.](https://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/interface.png)
 
 ## Conclusion
 <a name="conclusion"></a>

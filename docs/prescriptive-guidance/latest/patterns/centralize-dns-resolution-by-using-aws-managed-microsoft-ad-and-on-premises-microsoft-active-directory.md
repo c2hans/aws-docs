@@ -35,7 +35,7 @@ This pattern provides guidance for centralizing DNS resolution within an AWS mul
 
 **Target architecture **
 
-![Architecture for centralized DNS resolution on AWS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/91430e2a-f7f6-4dbe-9fe7-8abed1f764a7/images/9b5fc51d-590b-468f-80f7-1949f3b3b258.png)
+![Architecture for centralized DNS resolution on AWS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/91430e2a-f7f6-4dbe-9fe7-8abed1f764a7/images/9b5fc51d-590b-468f-80f7-1949f3b3b258.png)
 
 In this design, AWS Managed Microsoft AD is installed in the shared services AWS account. Although it is not a requirement, this pattern assumes this configuration. If you configure AWS Managed Microsoft AD in a different AWS account, you might have to modify the steps in the [Epics](#centralize-dns-resolution-by-using-aws-managed-microsoft-ad-and-on-premises-microsoft-active-directory-epics) section accordingly.
 

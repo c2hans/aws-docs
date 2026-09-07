@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/model-based-systems-e
 
  Today, industries work on extending the MBSE being a “capable systems engineering tool” towards being a **complete digital transformation** so called **Model Based Enterprise or Engineering (MBE)**. In this whitepaper, we did not differentiate MBSE with MBE but discussed MBSE under the light of MBE where it is a broader and more capable approach made of multiple technologies to harness physical and virtual aspects of complete product lifecycle.
 
-![Diagram showing MBE - Model Based Enterprise/Engineering at the center of a product lifecycle](http://docs.aws.amazon.com/whitepapers/latest/model-based-systems-engineering/images/mbe-product-lifecycle.png)
+![Diagram showing MBE - Model Based Enterprise/Engineering at the center of a product lifecycle](https://docs.aws.amazon.com/whitepapers/latest/model-based-systems-engineering/images/mbe-product-lifecycle.png)
 
  The diagram above attempts explain the MBE approach under a single setting divided into physical and virtual aspects of a complete product lifecycle. In virtual, it includes abstract concepts such as “dependencies” implying “relationships” or “configurations” both dynamic and static, whereas models and simulations are from all disciplines of engineering, management and operations.
 

@@ -11,7 +11,7 @@ The stories are technical capabilities, data sharing mechanisms, people, and pro
 
 The following diagram shows whether each story is required, based on business outcomes. It also shows the current status of each story based on information that you collected in technical assessments. The diagram is usually followed by a report that explains each status in detail.
 
-![Visualizing enablement stories for each data maturity phase](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-aws-data/images/guide-img/7eadad47-3e6a-4775-bcac-a88d1e364e51/images/f0c32d5f-2250-414f-8469-292279813457.png)
+![Visualizing enablement stories for each data maturity phase](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-aws-data/images/guide-img/7eadad47-3e6a-4775-bcac-a88d1e364e51/images/f0c32d5f-2250-414f-8469-292279813457.png)
 
 You work back from the right side (*Business outcomes*) to the left side to enable the stories. For example, to enable a story in the third stage (*Insights and reports*), you have to enable its dependencies in the second stage (*Data lake*) and first stage (*Data foundation*).
 

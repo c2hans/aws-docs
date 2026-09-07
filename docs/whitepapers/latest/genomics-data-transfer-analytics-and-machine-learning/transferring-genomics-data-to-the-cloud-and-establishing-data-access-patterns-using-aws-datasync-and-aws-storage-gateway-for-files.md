@@ -33,7 +33,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfe
 
  Transferring your organization’s genomics data to Amazon S3 using AWS DataSync starts with setting up your sequencing instruments to write data to a common folder on your on-premises storage system. Writing first to on-premises storage enables you to take advantage of the high availability (HA) built into your storage system and stage your data for processing before transferring to the cloud.
 
-![Process workflow using a run completion tracker script with AWS DataSync](http://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfer-analytics-and-machine-learning/images/image2.png)
+![Process workflow using a run completion tracker script with AWS DataSync](https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfer-analytics-and-machine-learning/images/image2.png)
 
  Figure 1 shows the process workflow using a run completion tracker script with AWS DataSync:
 

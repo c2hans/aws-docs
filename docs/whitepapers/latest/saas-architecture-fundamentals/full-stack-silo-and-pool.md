@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
 
  Silo and pool can also be used to describe an entire SaaS stack. In this approach, all the resources for a tenant are deployed in either a dedicated or shared manner. The following diagram provides an example of how this might land in a SaaS environment.
 
-![A diagram depicting full stack silo and pool models.](http://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fundamentals/images/silo-and-pool-models2.png)
+![A diagram depicting full stack silo and pool models.](https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fundamentals/images/silo-and-pool-models2.png)
 
  In this diagram, you’ll see that there are three different models for your full stack tenant deployments. First, you’ll see that there is a full stack pool environment. Tenants in this pool share all the resources (compute, storage, and so on).
 

@@ -44,4 +44,4 @@ Perform these phases in a logical manner in one or more sprints. Deliver functio
 
 The following diagram shows the 21 OI domains organized in 4 functions: core operations, security and control, business management, and supporting functions. These are described in detail in the [next section](best-practices.md).
 
-![Operations integration (OI) domains organized in 4 functions.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-operations-integration/images/guide-img/6545b5e3-3780-4eb8-a195-e92454bb488e/images/dde01325-c310-4aa4-a8be-c38b1d7ae65e.png)
+![Operations integration (OI) domains organized in 4 functions.](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-operations-integration/images/guide-img/6545b5e3-3780-4eb8-a195-e92454bb488e/images/dde01325-c310-4aa4-a8be-c38b1d7ae65e.png)

@@ -9,7 +9,7 @@ You can integrate MongoDB Atlas with [Amazon SageMaker AI Canvas](https://docs.a
 
 The following diagram shows an example reference architecture for detecting fraud.
 
-![Integrating MongoDB Atlas with Amazon SageMaker, to implement fraud detection.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-mongodb-atlas/images/guide-img/2acef6bf-a074-43c2-a021-70385dda418f/images/9c1c848d-db28-45de-8245-00f4d8a47d44.png)
+![Integrating MongoDB Atlas with Amazon SageMaker, to implement fraud detection.](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-mongodb-atlas/images/guide-img/2acef6bf-a074-43c2-a021-70385dda418f/images/9c1c848d-db28-45de-8245-00f4d8a47d44.png)
 
 [MongoDB website](https://www.mongodb.com/resources/products/unmasking-deception-harnessing-power-atlas-amazon-sage-maker-canvas-fraud-detection)
 

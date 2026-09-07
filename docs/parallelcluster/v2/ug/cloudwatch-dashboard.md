@@ -9,7 +9,7 @@ Starting with AWS ParallelCluster version 2.10.0, an Amazon CloudWatch dashboard
 
 The following image shows an example CloudWatch dashboard for a cluster.
 
- ![CloudWatch dashboard showing EC2 metrics and cluster health for ParallelCluster.](http://docs.aws.amazon.com/parallelcluster/v2/ug/images/CW-dashboard.png)
+ ![CloudWatch dashboard showing EC2 metrics and cluster health for ParallelCluster.](https://docs.aws.amazon.com/parallelcluster/v2/ug/images/CW-dashboard.png)
 
 The first section of the dashboard displays graphs of the Head Node EC2 metrics. If your cluster has shared storage, the next section shows shared storage metrics. The final section lists Head Node Logs grouped by ParallelCluster's logs, Scheduler's logs, NICE DCV integration logs, and System's logs.
 

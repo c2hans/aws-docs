@@ -83,7 +83,7 @@ You can also manage pipeline tasks in the visual representation of the pipeline 
 
  **Pipeline showing tasks for Install MGN Agents Validate Launch Template, and Verify Reading to Launch Test Instances.**
 
-![pipeline management](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/pipeline-management.png)
+![pipeline management](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/pipeline-management.png)
 
 ## Conditional Branching
 <a name="conditional-branching"></a>
@@ -179,7 +179,7 @@ Email notifications are triggered in three scenarios during pipeline execution:
 + For "Send Email" automation tasks ("Send Email" is a new type of automation that serves the sole purpose of sending an email with a custom body). A "Send Email" task might show a "Complete" status in the UI but this does not guarantee the delivery of the actual email notification. For the user to actually receive email from a email automation task they need to confirm SNS subscription. This is explained further in [Email Recipient User Management](#email-recipient-user-management).
 
    **Send Email Automation Task Details**
-![send email automation](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/send-email-automation.png)
+![send email automation](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/send-email-automation.png)
 
 ### Configuring email notification settings
 <a name="configuring-email-notification-settings"></a>
@@ -188,23 +188,23 @@ Email notifications can only be configured during pipeline creation by:
 + Enabling email notifications (checkbox). If disabled, no emails will be received from this pipeline and no email settings are visible.
 
    **Enable Email Notifications Toggle during Pipeline Creation**
-![enable email notifications button](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/enable-email-notifications-button.png)
+![enable email notifications button](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/enable-email-notifications-button.png)
 + If Enable Email Notifications is set to true, you have to populate at least one of the following default email settings:
   + Default email recipients
   + Default email groups
 
      **Email Notification Recipients Configuration**
-![pipeline creation email recipients](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/pipeline-creation-email-recipients.png)
+![pipeline creation email recipients](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/pipeline-creation-email-recipients.png)
 + Once email notifications are enabled using the Enable Email Notifications, and a pipeline template is selected, you can enable email notifications for each task individually or all tasks at once. If emails are disabled for all tasks, users will not receive any emails for any tasks despite pipeline level Enable Email Notifications being set to true.
 
    **Task Level Email Notification Toggle**
-![pipeline creation task level email notifications](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/pipeline-creation-task-level-email-notifications.png)
+![pipeline creation task level email notifications](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/pipeline-creation-task-level-email-notifications.png)
 + Once task level email notifications are enabled, you can optionally enable Override Defaults. If Override Defaults is enabled, at least one of the following needs to be populated, and these task level email settings are used, else the default email settings are used:
   + Email recipients
   + Email groups
 
      **Task Level Email Recipients Configuration**
-![pipeline creation task level email recipients](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/pipeline-creation-task-level-email-recipients.png)
+![pipeline creation task level email recipients](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/pipeline-creation-task-level-email-recipients.png)
 
 If a custom email body is not provided by the customer, Cloud Migration Factory sends a default email message based on the event that triggered the email. If custom email body is provided, it appears in addition to this default email message.
 
@@ -222,4 +222,4 @@ You can also manage pipeline tasks in the visual representation of the pipeline 
 
  **Pipeline showing tasks for Install MGN Agents Validate Launch Template, and Verify Reading to Launch Test Instances.**
 
-![pipeline management](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/pipeline-management.png)
+![pipeline management](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/pipeline-management.png)

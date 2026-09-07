@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/re
 # Reference architecture
 <a name="reference-architecture-1"></a>
 
-![Diagram showing a batch data processing reference architecture](http://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/images/batch-data-processing-reference-architecture.png)
+![Diagram showing a batch data processing reference architecture](https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/images/batch-data-processing-reference-architecture.png)
 
 1.  Batch data processing systems typically require a persistent data store for source data. When developing batch data processing applications on AWS, you can use data from various sources, including your on-premises data stores, Amazon RDS, Amazon S3, DynamoDB, and any other databases that are accessible in the cloud.
 

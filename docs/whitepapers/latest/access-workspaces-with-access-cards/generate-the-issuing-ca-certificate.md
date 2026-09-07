@@ -21,6 +21,6 @@ certutil -ca.cert ca_name.cer
 
  The following figure shows the certificate successfully installed into the NTAuth store.
 
-![A screenshot showing the installation of the issuing CA certificate into the NTAuth store using certutil](http://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/workspaces-smartcard10.png)
+![A screenshot showing the installation of the issuing CA certificate into the NTAuth store using certutil](https://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/workspaces-smartcard10.png)
 
  *Use certutil to install the issuing CA certificate into NTAuth store *

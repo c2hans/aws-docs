@@ -16,7 +16,7 @@ After you deploy the Innovation Sandbox on AWS solution:
 
 1. On the Stack details page, choose the **Outputs** tab. The web UI URL is the value assigned to the `CloudFrontDistributionUrl` key.
 
-![The Outputs tab of the Compute stack showing the CloudFront distribution URL](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/compute-stack-outputs.png)
+![The Outputs tab of the Compute stack showing the CloudFront distribution URL](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/compute-stack-outputs.png)
 
 **Web UI URL**
 

@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterpri
 
 Enterprise ML platforms built on AWS normally have requirements to access on-premises resources, such as on-premises code repositories or databases. Secure communications such as [AWS Direct Connect](https://aws.amazon.com/directconnect/) or VPN should be established. To enable flexible network routing across different AWS accounts and the on-prem network, consider using the [AWS Transit Gateway](https://aws.amazon.com/transit-gateway/) service. If you want all internet traffic to go through your corporate network, configure an internet egress route to allow internet traffic to go through the on-premises network. The following figure shows a network design with multiple accounts and an on-premises environment.
 
-![A diagram showing networking design.](http://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-5.png)
+![A diagram showing networking design.](https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-5.png)
 
 * Networking design*
 
@@ -30,6 +30,6 @@ Enterprise ML platforms built on AWS normally have requirements to access on-pre
 
  The following figure shows the networking architecture for SageMaker AI with private endpoints for all the dependent services.
 
-![A diagram showing networking architecture for Amazon SageMaker AI Studio inside a VPC.](http://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-6.png)
+![A diagram showing networking architecture for Amazon SageMaker AI Studio inside a VPC.](https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-6.png)
 
 * Networking architecture for Amazon SageMaker AI Studio inside a VPC (Not all VPC endpoints are shown for simplicity) *

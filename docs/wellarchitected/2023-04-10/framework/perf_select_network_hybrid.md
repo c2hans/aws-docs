@@ -42,7 +42,7 @@ Based on your bandwidth requirements, a single VPN or dedicated connection might
 
    1.  If you consider VPN connection, an AWS managed VPN is the recommended option. The AWS Site-to-Site VPN provides a managed VPN service supporting Internet Protocol security (IPsec) protocol. When a VPN connection is created, each VPN connection includes two tunnels for high availability. With AWS Transit Gateway, you can simplify the connectivity between multiple VPCs and also connect to any VPC attached to AWS Transit Gateway with a single VPN connection. AWS Transit Gateway also allows you to scale beyond the 1.25Gbps IPsec VPN throughput limit by allowing equal cost multi-path (ECMP) routing support over multiple VPN tunnels.
 
-![A flowchart that describes the options you should consider when determining if you need deterministic performance in your networking or not.](http://docs.aws.amazon.com/wellarchitected/2023-04-10/framework/images/deterministic-performance-flowchart.png)
+![A flowchart that describes the options you should consider when determining if you need deterministic performance in your networking or not.](https://docs.aws.amazon.com/wellarchitected/2023-04-10/framework/images/deterministic-performance-flowchart.png)
 
  **Level of effort for the implementation plan:** High. There is significant effort in evaluating workload needs for hybrid networks and implementing hybrid networking solutions.
 

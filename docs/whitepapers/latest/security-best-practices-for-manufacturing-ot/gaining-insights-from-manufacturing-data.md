@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-best-practic
 
 Manufacturers embrace the cloud to deliver digital innovation that scales across the enterprise, and want to leverage the cloud to holistically analyze and extract insights from the manufacturing data. In combination, the AWS Cloud and edge services address these use cases by helping manufacturers ingest, structure, and store data from a variety of current and legacy systems and equipment, and create a combined single source of contextual data set. This data allows for holistic analysis and easy consumption to digitally transform and improve business operations. The following figure shows the typical steps to get insights from factory data.
 
-![A diagram showing data to insights.](http://docs.aws.amazon.com/whitepapers/latest/security-best-practices-for-manufacturing-ot/images/data-to-insights.png)
+![A diagram showing data to insights.](https://docs.aws.amazon.com/whitepapers/latest/security-best-practices-for-manufacturing-ot/images/data-to-insights.png)
 
 *Data to insights*
 

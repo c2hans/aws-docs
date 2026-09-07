@@ -33,7 +33,7 @@ Amazon Comprehend supports the following metrics:
 
 To view the metrics for a Classifier, open the **Classifier Details** page in the console.
 
-![Custom Classifier Metrics](http://docs.aws.amazon.com/comprehend/latest/dg/images/classifierperformance.png)
+![Custom Classifier Metrics](https://docs.aws.amazon.com/comprehend/latest/dg/images/classifierperformance.png)
 
 ### Accuracy
 <a name="class-accuracy-metric"></a>

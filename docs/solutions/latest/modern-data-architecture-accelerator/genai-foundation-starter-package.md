@@ -9,7 +9,7 @@ The GenAI Foundation Starter Package delivers a production-ready foundation for 
 
  **GenAI Foundation starter kit architecture**
 
-![GenAI Foundation starter kit — Bedrock agent with RAG knowledge bases and guardrails.](http://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/genai_foundation.png)
+![GenAI Foundation starter kit — Bedrock agent with RAG knowledge bases and guardrails.](https://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/genai_foundation.png)
 
 Built on AWS best practices, this package provides the building blocks to create any type of agentic AI application. Whether you need sales assistants, technical troubleshooters, or domain-specific experts, the modular architecture adapts to your unique requirements.
 

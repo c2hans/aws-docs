@@ -41,7 +41,7 @@ You can onboard to this feature by updating your existing backup plan or creatin
 
 When you specify both a backup vault and a logically air-gapped vault as targets for your backup jobs, AWS Backup determines the appropriate workflow based on the resource type and encryption configuration.
 
-![Backup workflow diagram showing primary resources routing to backup vault and logically air-gapped vault.](http://docs.aws.amazon.com/aws-backup/latest/devguide/images/lag-vault-primary-backup-execution.png)
+![Backup workflow diagram showing primary resources routing to backup vault and logically air-gapped vault.](https://docs.aws.amazon.com/aws-backup/latest/devguide/images/lag-vault-primary-backup-execution.png)
 
 **Supported resources for primary backup to logically air-gapped vaults**
 To view the full list of supported resources for logically air-gapped vaults, [see AWS Backup feature availability](https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-feature-availability.html#features-for-all-resources). All resources that support logically air-gapped vaults follow the principle of maintaining only one copy of your backup, rather than storing two separate copies, when this feature is used.

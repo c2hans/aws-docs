@@ -11,7 +11,7 @@ If you plan on allow-listing only AWS Region public IPs (instead of 0.0.0.0/0) o
 
 The following image shows both options to establish a service link public connection between your Outposts and the AWS Region:
 
-![The service link public connection options.](http://docs.aws.amazon.com/outposts/latest/network-userguide/images/outpost-rack2ndgen-sl-public-connection-options.PNG)
+![The service link public connection options.](https://docs.aws.amazon.com/outposts/latest/network-userguide/images/outpost-rack2ndgen-sl-public-connection-options.PNG)
 
 **Note**
 Second-generation Outposts racks require a /24 or larger subnet for the service link infrastructure. This subnet is customer-provided IP address space used by Outpost networking devices to establish connectivity to AWS Region endpoints.

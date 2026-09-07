@@ -31,7 +31,7 @@ This guide provides instructions and examples of both auditing levels.
 
 The following flow chart illustrates the SQL Server auditing process. When a user or process logs in to the database system, their login credentials are validated. If the login is valid, the audit process checks for authorization. If the user or process is authorized to perform the action, they can complete the action, and the audited data is logged in the database audit table.
 
-![Auditing flowchart for SQL Server database instances](http://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-auditing-on-aws/images/guide-img/c5879391-b7a1-4ebd-9427-8f0779ed8c01/images/9358622d-3cf3-4cdb-953e-add2e788893b.png)
+![Auditing flowchart for SQL Server database instances](https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-auditing-on-aws/images/guide-img/c5879391-b7a1-4ebd-9427-8f0779ed8c01/images/9358622d-3cf3-4cdb-953e-add2e788893b.png)
 
 ## Advantages and disadvantages of auditing
 <a name="pros-cons"></a>

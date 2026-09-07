@@ -52,7 +52,7 @@ Each operational process has its own, responsible, accountable, consulted, and i
 
 The following diagram shows the different support models that you can apply to each AWS account.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/ams-accelerate-governance-best-practices/images/guide-img/6036bebd-169c-4167-8ede-cf3d4823dab9/images/4d0be365-0238-45d2-98c4-d6973a01de88.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/ams-accelerate-governance-best-practices/images/guide-img/6036bebd-169c-4167-8ede-cf3d4823dab9/images/4d0be365-0238-45d2-98c4-d6973a01de88.png)
 
 **Note**
 An [AWS Control Tower landing zone](https://docs.aws.amazon.com/controltower/latest/userguide/planning-your-deployment.html) that includes multiple AWS accounts can have more than one support model.

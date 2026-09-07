@@ -65,7 +65,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/e
 
  Based on inputs, the architecture team followed the decision tree from the Connectivity Design section. After anticipating that the number of VPCs is going to grow from 2 to 30 in the next 6 months, the architecture team decided to use AWS Transit Gateway as the termination gateway for the connection and for inter-VPC routing. Independent AWS Transit Gateways will terminate the VPN connection used for development and testing, and for the production connectivity with AWS Direct Connect. The usage of separated AWS Transit Gateways makes change management simpler and provides a clear demarcation between dev/test and production environments. For the production, AWS Direct Connect gateway is required because of AWS Transit Gateway. A public VIF will be used for access to AWS public endpoint services. Figure 14 illustrates the path taken on the decision tree based on requirements collected.
 
-![Diagram showing Example Corp. Automotive connection design decision tree](http://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/images/example-connection-design-decision-tree.png)
+![Diagram showing Example Corp. Automotive connection design decision tree](https://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/images/example-connection-design-decision-tree.png)
 
  After deciding on the solution to meet the scalability and communication model requirements, the next step is to capture the requirements associated with reliability. This is related to the required level of availability and resilience.
 
@@ -83,4 +83,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/e
 
  Figure 15 illustrates the path taken on the decision tree based on requirements collected.
 
-![Diagram showing Example Corp. Automotive reliability decision tree](http://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/images/example-reliability-decision-tree.png)
+![Diagram showing Example Corp. Automotive reliability decision tree](https://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/images/example-reliability-decision-tree.png)

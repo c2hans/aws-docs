@@ -16,4 +16,4 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/edit-proj
    For information on **Advanced Options**, see [Add a launch template](project-launch-template.md).
 
 1. Choose **Submit**.
-![Edit a project](http://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-editproject.png)
+![Edit a project](https://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-editproject.png)

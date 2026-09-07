@@ -28,7 +28,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/anal
 +  **Collect analysis results** - Collects outputs from each sub-state machine by calling the `Step Functions.DescribeExecution` API, parses, and joins the results.
 +  **Analysis completed** - Updates the `analysis` field of the DynamoDB ingestion table to indicate the types of analysis that have been run. The Lambda function also creates records on the  DynamoDB `aiml` table with information including *start time* and *end time* of each analysis detection, *pointers* to where the analysis metadata JSON results are stored in an Amazon S3 proxy bucket, the *job name* of the detection, and the ARN of the state machine run.
 
-![Analysis workflow diagram](http://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/analysis-workflow.png)
+![Analysis workflow diagram](https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/analysis-workflow.png)
 
 ## Video analysis sub-state machine
 <a name="video-analysis-sub-state-machine"></a>
@@ -62,7 +62,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/anal
 +  **Index custom analysis (iterator)** - Similar to **Index frame-based analysis (Iterator)** state. The difference is that it indexes the document to the customlabel index in the OpenSearch Service cluster.
 +  **Video analysis completed** – Merges all outputs from the parallel branches.
 
-![Video analysis sub-state machine workflow diagram](http://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-video-analysis-sub-state-machine.png)
+![Video analysis sub-state machine workflow diagram](https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-video-analysis-sub-state-machine.png)
 
 ## Audio analysis sub-state machine
 <a name="audio-analysis-sub-state-machine"></a>
@@ -87,7 +87,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/anal
 +  **Index custom entity results** - Downloads the metadata result and indexes the custom entity results to the OpenSearch Service cluster under the `customentity` index.
 +  **Custom entity skipped** - An end state indicates that there is no custom entity being detected.
 
-![Audio analysis sub-state machine workflow diagram](http://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-audio-analysis-sub-state-machine.png)
+![Audio analysis sub-state machine workflow diagram](https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-audio-analysis-sub-state-machine.png)
 
 ## Image analysis sub-state machine
 <a name="image-analysis-sub-state-machine"></a>
@@ -97,11 +97,11 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/anal
  **Start image analysis** - Runs the Amazon Rekognition Image APIs such as `RecognizeCelebrities`, `DetectFaces`, `SearchFacesByImage`, `DetectLabels`, `DetectModerationLabels`, and `DetectText` APIs to extract visual metadata from the image file and stores raw results to the proxy bucket: *s3://{{PROXY\_BUCKET}}/{{UUID}}/{{FILE\_BASENAME}}/raw/{{DATETIME}}/rekog-image/{{ANALYSIS\_TYPE}}/output.json* where `ANALYSIS_TYPE` is `celeb`, `label`, `face`, `faceMatch`, `text`, or `moderation`.
 +  **Index analysis results** - Indexes all the JSON results to the OpenSearch Service indices.
 
-![Image analysis sub-state machine workflow diagram](http://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-image-analysis-sub-state-machine.png)
+![Image analysis sub-state machine workflow diagram](https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-image-analysis-sub-state-machine.png)
 
 ## Document analysis sub-state machine
 <a name="document-analysis-sub-state-machine"></a>
 +  **Analyze document** – Calls the `AnalyzeDocument` API to extract tabular metadata of the document and stores the results in an S3 proxy bucket. The process repeats until all pages of the document has been processed or when the Lambda runtime is close to the 15-minute limit. In a case where more pages to be processed and the Lambda is approaching the 15-minute limit, the Lambda function sets $.status to **IN\_PROGRESS** and `$.data.cursor` to the current page index to prepare for re-entering the same state to continue where it leaves off.
 +  **Index analysis results** - Indexes the metadata to the OpenSearch service `textract` index.
 
-![Document analysis sub-state machine workflow diagram](http://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-document-analysis-sub-state-machine.png)
+![Document analysis sub-state machine workflow diagram](https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-document-analysis-sub-state-machine.png)

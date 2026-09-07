@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/re
 # Reference architecture
 <a name="reference-architecture-2"></a>
 
-![Reference architecture diagram for streaming data analytics](http://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/images/streaming-data-analytics-reference-architecture.png)
+![Reference architecture diagram for streaming data analytics](https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/images/streaming-data-analytics-reference-architecture.png)
 
  The preceding streaming reference architecture diagram is segmented into the previously described components of streaming scenarios:
 +  Data sources

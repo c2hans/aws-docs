@@ -11,7 +11,7 @@ You can use a split-tunnel Client VPN endpoint when you do not want all user tra
 
 In the following example, split-tunnel is enabled on the Client VPN endpoint. Only traffic that's destined for the VPC (`172.31.0.0/16`) is routed over the Client VPN tunnel. Traffic that's destined for on-premises resources is not routed over the Client VPN tunnel.
 
-![Split-tunnel Client VPN endpoint](http://docs.aws.amazon.com/vpn/latest/clientvpn-admin/images/client-vpn-split-tunnel.png)
+![Split-tunnel Client VPN endpoint](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/images/client-vpn-split-tunnel.png)
 
 ## Split-tunnel benefits
 <a name="split-tunnel-benefits"></a>

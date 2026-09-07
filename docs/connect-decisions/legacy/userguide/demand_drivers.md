@@ -23,10 +23,10 @@ Before ingesting data for demand drivers, make sure that the data meets the foll
 
 The following example illustrates how a Demand Plan is generated when the required demand driver columns are ingested in the *supplementary\_time\_series* data entity. Demand Planning recommends providing both historical and future demand driver data (if available). This data helps the learning model to learn and apply the pattern to the forecast.
 
-![Demand drivers example](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/demand_drivers_example.png)
+![Demand drivers example](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/demand_drivers_example.png)
 
 The following example illustrates how you can set up some common demand drivers in your dataset.
 
-![Demand drivers example](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/demand_drivers_example2.png)
+![Demand drivers example](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/demand_drivers_example2.png)
 
 When you provide leading indicators, Demand Planning highly recommends that you adjust the time series date. For example, say that a particular metric serves as a 20-day leading indicator with a 70% conversion rate. In this case, consider shifting the date in the time series by 20 days and then applying the appropriate conversion factor. While the learning model can learn patterns without such adjustments, aligning leading indicator data with corresponding outcome is more effective in pattern recognition. The magnitude of the value plays a significant role in this process, enhancing the model's ability to learn and interpret patterns accurately.

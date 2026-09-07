@@ -14,7 +14,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/real-time-communicati
 
  Each of the preceding solutions has some components in common (such as components that provide authentication, authorization and access control, transcoding, buffering and relay, and so on) and some components unique to the type of media transmitted (such as broadcast service, messaging server and queues, and so on). This section focuses on defining a voice- and video-based RTC system and all of the related components, as illustrated in the following figure.
 
-![A diagram depicting essential architectural components for RTC.](http://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/images/essential-rtc-components.png)
+![A diagram depicting essential architectural components for RTC.](https://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/images/essential-rtc-components.png)
 
 ## Softswitch/PBX
 <a name="softswitchpbx"></a>
@@ -55,7 +55,7 @@ WebRTC implementations are very common on mobile devices. Unlike web browsers, a
 
 [Amazon Simple Notification Service](https://aws.amazon.com/sns/) (Amazon SNS) lets you send push notifications to apps on mobile devices. These apps could be running on various operating systems such as Apple iOS or Android. The following figure shows a high-level overview of push-notifications flow, from a WebRTC notification server to WebRTC mobile endpoints.
 
-![A diagram depicting Amazon SNS for push notifications.](http://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/images/sns-push-notifications.jpg)
+![A diagram depicting Amazon SNS for push notifications.](https://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/images/sns-push-notifications.jpg)
 
 ## WebRTC and WebRTC gateway
 <a name="webrtc-and-webrtc-gateway"></a>
@@ -64,8 +64,8 @@ WebRTC implementations are very common on mobile devices. Unlike web browsers, a
 
 The following figure shows a design pattern for a highly available WebRTC architecture. The incoming traffic from WebRTC clients is balanced by an[ Application Load Balancer](https://aws.amazon.com/elasticloadbalancing/application-load-balancer/) (ALB) with WebRTC running on [Amazon Elastic Compute Cloud](https://aws.amazon.com/pm/ec2/?trk=36c6da98-7b20-48fa-8225-4784bced9843&sc_channel=ps&sc_campaign=acquisition&sc_medium=ACQ-P|PS-GO|Brand|Desktop|SU|Compute|EC2|US|EN|Text&s_kwcid=AL!4422!3!488982705492!e!!g!!amazon%20ec2&ef_id=CjwKCAjw_tWRBhAwEiwALxFPoZYgo0_abdA7JHP4hKKHfEsy2nGSZLqw3A4AutXy2sgGO6vBD8P7_xoCefAQAvD_BwE:G:s&s_kwcid=AL!4422!3!488982705492!e!!g!!amazon%20ec2) (Amazon EC2) instances that are part of an [Amazon EC2 Auto Scaling](https://aws.amazon.com/ec2/autoscaling/) group.
 
-![A basic topology of an RTC system for voice.](http://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/images/rtc-system-for-voice.jpg)
+![A basic topology of an RTC system for voice.](https://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/images/rtc-system-for-voice.jpg)
 
 Another design pattern for SIP and RTP traffic is to use pairs of SBCs on Amazon EC2 in active-passive mode across Availability Zones, as seen in the following figure. Here, an Elastic IP address can be dynamically moved between instances upon failure, where the Domain Name Service (DNS) cannot be used.
 
-![A diagram depicting RTC architecture using Amazon EC2 in a virtual private cloud (VPC).](http://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/images/rtc-with-ec2.jpg)
+![A diagram depicting RTC architecture using Amazon EC2 in a virtual private cloud (VPC).](https://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/images/rtc-with-ec2.jpg)

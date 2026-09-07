@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation
 
  While silo and pool have very distinct approaches to isolation, the isolation landscape for many SaaS providers is less absolute. As you look at real application problems and you decompose our systems into smaller services, you will often discover that your solution will require a mix of the silo and pool models. This mixed model is what we would refer to as a bridge model of isolation. The diagram in Figure 3 provides an example of how the bridge might be realized in a SaaS solution.
 
-![Diagram showing the bridge isolation model with three tenants.](http://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/images/bridge-isolation.jpg)
+![Diagram showing the bridge isolation model with three tenants.](https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/images/bridge-isolation.jpg)
 
  This diagram highlights how the bridge model enables you to combine of the silo and pool models. Here we have a monolithic architecture with classic web and application tiers. The web tier, for this solution, is deployed in a pool model that is shared by all tenants. While the web tier is shared, the underlying business logic and storage of our application are actually deployed in a silo model where each tenant has its own application tier and storage.
 

@@ -54,4 +54,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 
  In support of hackathons and other events, you might also find value in creating transient sandbox accounts for temporary teams of people.
 
-![Diagram showing example structure of Sandbox OU](http://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/example-sandbox-ou.png)
+![Diagram showing example structure of Sandbox OU](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/example-sandbox-ou.png)

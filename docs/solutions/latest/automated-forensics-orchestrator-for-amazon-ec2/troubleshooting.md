@@ -14,13 +14,13 @@ This section provides troubleshooting instructions for deploying and using the G
 
  **Troubleshooting - zero-byte files**
 
-![troubleshooting zero byte files](http://docs.aws.amazon.com/solutions/latest/automated-forensics-orchestrator-for-amazon-ec2/images/troubleshooting-zero-byte-files.png)
+![troubleshooting zero byte files](https://docs.aws.amazon.com/solutions/latest/automated-forensics-orchestrator-for-amazon-ec2/images/troubleshooting-zero-byte-files.png)
 
 This could be a problem with the Volatility symbol table. Review the symbol table associated with the instance as well as the error logs in the Run Command history.
 
  **Troubleshooting - Run Command history**
 
-![troubleshooting run command history](http://docs.aws.amazon.com/solutions/latest/automated-forensics-orchestrator-for-amazon-ec2/images/troubleshooting-run-command-history.png)
+![troubleshooting run command history](https://docs.aws.amazon.com/solutions/latest/automated-forensics-orchestrator-for-amazon-ec2/images/troubleshooting-run-command-history.png)
 
  **Resolution** : This is caused due to an error in SSM document run. Review the SSM error to fix the SSM document. It is necessary to review the Volatility symbol table and kernel version to ensure it matches the kernel version of running on the compromised EC2 instance.
 

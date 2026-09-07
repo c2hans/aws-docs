@@ -30,7 +30,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 
  All authentication traffic traverses the VPN or Direct Connect connection from the customer VPC to the customer gateway. The advantage of this scenario is the benefit of using a possibly already deployed AD environment without having to provision additional domain controllers in the customer VPC. The disadvantage is the sole dependency on the VPN or Direct Connect to authenticate and authorize users for the WorkSpaces Applications fleet. If there is any network connectivity issue, the WorkSpaces Applications fleet or Image Builders would be directly impacted. Providing dual VPN tunnels or Direct Connect connections with different paths mitigates this potential risk.
 
-![A diagram of Active Directory Domain Services (ADDS) deployed on-premises](http://docs.aws.amazon.com/whitepapers/latest/best-practices-for-deploying-amazon-appstream-2/images/adds-on-premises.png)
+![A diagram of Active Directory Domain Services (ADDS) deployed on-premises](https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-deploying-amazon-appstream-2/images/adds-on-premises.png)
 
  *Scenario 1 — Active Directory Domain Services (ADDS) deployed on-premises*
 
@@ -39,7 +39,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 
  The Active Directory is extended to your customer VPC. An Active Directory site should be created for the new domain controllers in the customer VPC. The authentication traffic is routed to the domain controllers in the AWS customer VPC instead of traversing the VPN or Direct Connect connection.
 
-![A diagram showing Extend Active Domain Services into AWS customer Virtual Private Cloud](http://docs.aws.amazon.com/whitepapers/latest/best-practices-for-deploying-amazon-appstream-2/images/extend-active-domain.png)
+![A diagram showing Extend Active Domain Services into AWS customer Virtual Private Cloud](https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-deploying-amazon-appstream-2/images/extend-active-domain.png)
 
  *Scenario 2 — Extend Active Domain Services into AWS customer Virtual Private Cloud*
 
@@ -48,7 +48,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 
  AWS Managed Microsoft AD is deployed in the AWS Cloud and is used as the identity and resource domain for the WorkSpaces Applications fleets and Image Builders.
 
-![A diagram of the AWS Managed Active Directory](http://docs.aws.amazon.com/whitepapers/latest/best-practices-for-deploying-amazon-appstream-2/images/aws-managed-directory.png)
+![A diagram of the AWS Managed Active Directory](https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-deploying-amazon-appstream-2/images/aws-managed-directory.png)
 
  *Scenario 3 — AWS Managed Active Directory*
 
@@ -69,7 +69,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 
  Defining the correct site topology ensures client affinity, meaning that clients (in this case, WorkSpaces Applications streaming instances) use their preferred local domain controller.
 
-![AD diagram of Active Directory sites and services — client affinity](http://docs.aws.amazon.com/whitepapers/latest/best-practices-for-deploying-amazon-appstream-2/images/active-directory-client-affinity.png)
+![AD diagram of Active Directory sites and services — client affinity](https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-deploying-amazon-appstream-2/images/active-directory-client-affinity.png)
 
  *Active Directory sites and services — client affinity*
 

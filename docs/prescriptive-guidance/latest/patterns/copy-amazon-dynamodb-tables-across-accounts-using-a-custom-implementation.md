@@ -38,7 +38,7 @@ The DynamoDB scan operation, which reads items from the source table, can fetch 
 
 The following diagram shows the custom implementation between the source and target AWS accounts. IAM policies and security tokens are used with the custom implementation. Data is read from Amazon DynamoDB in the source account and written to DynamoDB in the target account.
 
-![Source and target account architecture for copying by using the custom implementation.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/ba8175be-9809-4c2e-b2d1-6b9180ed056c/images/d9d4c2c8-ff04-443f-9137-e37b8e23ccb5.png)
+![Source and target account architecture for copying by using the custom implementation.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/ba8175be-9809-4c2e-b2d1-6b9180ed056c/images/d9d4c2c8-ff04-443f-9137-e37b8e23ccb5.png)
 
 **Automation and scale**
 

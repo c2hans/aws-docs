@@ -54,7 +54,7 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 
 1.  Regularly monitor your connectivity performance and usage and optimize if required.
 
-![A flowchart that describes the options you should consider when determining if you need deterministic performance in your networking or not.](http://docs.aws.amazon.com/wellarchitected/2023-10-03/framework/images/deterministic-networking-flowchart.png)
+![A flowchart that describes the options you should consider when determining if you need deterministic performance in your networking or not.](https://docs.aws.amazon.com/wellarchitected/2023-10-03/framework/images/deterministic-networking-flowchart.png)
 
 ## Resources
 <a name="resources"></a>

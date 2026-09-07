@@ -26,7 +26,7 @@ Using the WorkSpaces Console, follow the launch wizard to configure and launch a
 
 During the “Select Bundle” step of the wizard, be sure to select **only WSP enabled WorkSpace Bundles**. You must select a WSP-enabled bundle to use smart card authentication.
 
-![A screenshot showing the selection of WSP Bundle to use smart cards with WorkSpaces.](http://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/workspaces-smartcard18.png)
+![A screenshot showing the selection of WSP Bundle to use smart cards with WorkSpaces.](https://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/workspaces-smartcard18.png)
 
 *Select **WSP Bundle **to use smart cards with WorkSpaces *
 

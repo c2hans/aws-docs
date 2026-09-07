@@ -22,19 +22,19 @@ If you start an instance before the specified start time, the instance will run 
 
  **9-5 scheduled start and stop**
 
-![image6](http://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-aws/images/image6.png)
+![image6](https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-aws/images/image6.png)
 
 If you manually start that instance at 5 AM, the solution will stop the instance at 5 PM. If you use the [retain running field](schedule-reference.md#retain-running-field), the solution will not stop the instance at 5 PM.
 
  **5 AM scheduled stop**
 
-![image7](http://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-aws/images/image7.png)
+![image7](https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-aws/images/image7.png)
 
 If you stop an instance before the specified stop time, the instance will not run until the beginning of the next running period. Continuing from the previous example, if the user stops the instance at 1 PM on Wednesday, the solution will not start the instance until 9 AM on Thursday.
 
  **Timeline showing scheduled start at 9 am, manual stop at 1 pm, and scheduled stop at 5 pm.**
 
-![image8](http://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-aws/images/image8.png)
+![image8](https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-aws/images/image8.png)
 
 ### Adjacent periods
 <a name="adjacent-periods"></a>

@@ -41,7 +41,7 @@ This pattern can help you to configure AWS Lambda automation to quickly find and
 
 The following diagram shows the workflow and architecture components for this pattern.
 
-![Process to use Lambda automation to remove EC2 entries from Managed Microsoft AD.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6b50dcc5-4f4b-4eea-85a7-04cebc9f7454/images/b7fc5962-bfb8-4f5a-968e-7487b1d48c4f.png)
+![Process to use Lambda automation to remove EC2 entries from Managed Microsoft AD.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/6b50dcc5-4f4b-4eea-85a7-04cebc9f7454/images/b7fc5962-bfb8-4f5a-968e-7487b1d48c4f.png)
 
 The diagram shows the following workflow:
 

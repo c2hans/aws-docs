@@ -30,7 +30,7 @@ In this scenario, the service directly delivers logs to Amazon S3. This architec
 
  **Amazon S3 based service log pipeline architecture.**
 
-![image2](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image2.png)
+![image2](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image2.png)
 
 The log pipeline runs the following workflow:
 
@@ -57,7 +57,7 @@ In this scenario, the service cannot deliver their logs to Amazon S3 directly. T
 
  **Depicts Amazon S3 (via Firehose) based service log pipeline architecture**
 
-![image3](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image3.png)
+![image3](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image3.png)
 
 The log pipeline runs the following workflow:
 
@@ -81,7 +81,7 @@ In this scenario, a helper Lambda function periodically invokes AWS service APIs
 
  **Depicts API call-based service log pipeline architecture**
 
-![arch service api](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/arch-service-api.png)
+![arch service api](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/arch-service-api.png)
 
 The log pipeline runs the following workflow:
 
@@ -112,7 +112,7 @@ In this scenario, the service directly sends logs to Amazon S3. This architectur
 
  **Amazon S3 based service log pipeline architecture.**
 
-![image4](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image4.png)
+![image4](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image4.png)
 
 The log pipeline runs the following workflow:
 
@@ -142,7 +142,7 @@ In this scenario, the service directly delivers logs to Amazon Kinesis Data Stre
 
  **Amazon Kinesis Data Streams based service log pipeline architecture.**
 
-![image5](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image5.png)
+![image5](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image5.png)
 
 **Warning**
 This solution does not support cross-account ingestion for CloudFront real-time logs.
@@ -165,7 +165,7 @@ In this scenario, the service delivers the logs to CloudWatch Logs, and then Clo
 
  **Amazon Kinesis Data Streams (via CloudWatch Logs) based service log pipeline architecture.**
 
-![image6](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image6.png)
+![image6](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image6.png)
 
 The log pipeline runs the following workflow:
 

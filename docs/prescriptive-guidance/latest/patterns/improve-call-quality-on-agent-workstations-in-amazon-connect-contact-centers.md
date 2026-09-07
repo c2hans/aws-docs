@@ -41,7 +41,7 @@ For more information relating to these areas, see [Common Contact Control Panel 
 
 This pattern is architecture-agnostic because it targets agent workstation settings. As the following diagram shows, the voice path from the agent to the customer is affected by the agent’s headset, browser, operating system, workstation hardware, and network.
 
-![Voice path from agent to customer in Amazon Connect workstation calls](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/04ac4c80-30c4-4a48-8411-e3aac7bc2887/images/04e94efc-39d1-424d-a299-89ea17d40153.png)
+![Voice path from agent to customer in Amazon Connect workstation calls](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/04ac4c80-30c4-4a48-8411-e3aac7bc2887/images/04e94efc-39d1-424d-a299-89ea17d40153.png)
 
 In Amazon Connect contact centers, the user’s audio connectivity is established with WebRTC. Voice is encoded with the [Opus interactive audio codec](https://opus-codec.org/) and encrypted with the Secure Real-time Transport Protocol (SRTP) in transit. Other network architectures are possible, including VPN, private WAN/LAN, and ISP networks.
 

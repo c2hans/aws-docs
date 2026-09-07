@@ -29,7 +29,7 @@ The lifecycle for major SDKs and Tools versions consists of 5 phases, which are 
 
 *The following is a visual illustration of the SDK major version lifecycle. Please note that the timelines shown below are illustrative and not binding.*
 
-![Maintenance policy timelines](http://docs.aws.amazon.com/sdkref/latest/guide/images/maint-policy.png)
+![Maintenance policy timelines](https://docs.aws.amazon.com/sdkref/latest/guide/images/maint-policy.png)
 
 ## Dependency lifecycle
 <a name="dep-life-cycle"></a>

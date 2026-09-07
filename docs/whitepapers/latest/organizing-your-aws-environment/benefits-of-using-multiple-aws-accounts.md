@@ -67,7 +67,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 
  Organizations often have multiple IT operating models or ways in which they divide responsibilities among parts of the organization to deliver their application workloads and platform capabilities. The following figure shows three example operating models:
 
-![Diagram showing example operating models](http://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/example-operating-models.png)
+![Diagram showing example operating models](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/example-operating-models.png)
 
 + In the *Traditional Ops* model, teams who own custom and commercial off-the-shelf (COTS) applications are responsible for engineering their applications, but not for their production operations. A cloud platform engineering team is responsible for engineering the underlying platform capabilities. A separate cloud operations team is responsible for the operations of both applications and platform.
 + In the *CloudOps model*, application teams are also responsible for production operations of their applications. In this model, a common cloud platform engineering team is responsible for both engineering and operations of the underlying platform capabilities.

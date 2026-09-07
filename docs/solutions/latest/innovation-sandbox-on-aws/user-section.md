@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 
 This section contains all the information regarding actions available to an Innovation Sandbox user. After you log in to the web UI, the home page displays.
 
-![User home page](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/user-home-page.png)
+![User home page](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/user-home-page.png)
 
 **Innovation Sandbox home page (User view)**
 The home page header includes a **Request lease** button for requesting a new sandbox account lease. Below the header, the **Active Leases** section shows the sandbox accounts you can currently access, including leases you own and leases that others have shared with you. Each lease appears as a card that shows:
@@ -37,7 +37,7 @@ To request an account:
 1. Choose **Next**.
 
 1.  *(Optional)* On the **Share access** step, add the other users and groups you want to collaborate with in the account. This step appears only when your administrator has enabled lease sharing globally and the selected lease template allows the lease owner to share. The step is optional, so you can skip it and share the lease later from the lease details page. For more information, refer to [Sharing a lease with additional users and groups](manager-guide.md#lease-sharing).
-![Share access step in the request lease wizard](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/request-lease-share-access.png)
+![Share access step in the request lease wizard](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/request-lease-share-access.png)
 
 1. In the **Terms of Service** section, read the terms of service and check the box that says *I accept the terms of service*. Ensure that you understand the risks associated with owning a sandbox account lease.
 

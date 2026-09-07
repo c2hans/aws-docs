@@ -22,7 +22,7 @@ Similar to bucket policies, access-control lists are also used for managing perm
 
 For most data lake environments, AWS recommends using user policies, so that permissions to access data assets can also be linked to user roles and permissions for the data processing and analytics services and tools that your data lake users will use. User policies are also recommended to be used if you want to provide access to a user for objects in a bucket. User policies are associated with IAM, which allows you to securely control access to AWS services and resources. With IAM, you can create users, groups, and roles in accounts and then attach access policies to them that grant access to AWS resources, including S3. The model for user policies is shown inthe following figure. For more details and information on securing S3 with userpolicies and IAM, refer to [Amazon S3 security](https://docs.aws.amazon.com/AmazonS3/latest/userguide/security.html) and [Identity and access management in Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-access-control.html).
 
-![Model for user policies](http://docs.aws.amazon.com/whitepapers/latest/building-data-lakes/images/storage-best-policies9.png)
+![Model for user policies](https://docs.aws.amazon.com/whitepapers/latest/building-data-lakes/images/storage-best-policies9.png)
 
 ## Data Encryption with Amazon S3 and AWS KMS
 <a name="data-encryption-with-amazon-s3-and-aws-kms"></a>
@@ -39,7 +39,7 @@ For even greater levels of data lake protection, other services, such as Amazon 
 
 Based on the compliance requirements, PII data must be handled separately and setup encryption with dedicated hardware. However, using a dedicated hardware hosted in the security account will introduce additional latency during data processing. You can use AWS CloudHSM or HashiCorp Vault to store the keys. By using CloudHSM you can configure a CloudHSM cluster to store your custom keys and authorize AWS KMS to use it as a dedicated key store. The following figure shows the primary components of CloudHSM and a cluster of two CloudHSM instances connected to AWS KMS to create a customer-controlled key store.
 
-![Customer-controlled key store using AWS CloudHSM cluster and AWS KMS](http://docs.aws.amazon.com/whitepapers/latest/building-data-lakes/images/storage-best-policies10.png)
+![Customer-controlled key store using AWS CloudHSM cluster and AWS KMS](https://docs.aws.amazon.com/whitepapers/latest/building-data-lakes/images/storage-best-policies10.png)
 
 ## Protecting data with Amazon S3
 <a name="protecting-data-with-amazon-s3"></a>

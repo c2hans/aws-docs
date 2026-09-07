@@ -15,14 +15,14 @@ When it comes to historian modernization, you can take any of the following appr
 
 This approach involves the transfer of data and applications from the existing system to a modern platform that provides increased performance and scalability.
 
-![A containerized platform deployed across multiple factories.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-iiot-historian-modernization/images/guide-img/600bf5f6-76d8-4aa3-9ff9-c13baa9d233a/images/de0b5448-138c-461e-a528-d83c1b82e617.png)
+![A containerized platform deployed across multiple factories.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-iiot-historian-modernization/images/guide-img/600bf5f6-76d8-4aa3-9ff9-c13baa9d233a/images/de0b5448-138c-461e-a528-d83c1b82e617.png)
 
 ## Adopt an existing cloud-based solution
 <a name="existing-cloud-solution"></a>
 
 This approach involves using available cloud-based products, such as those available in the [AWS Marketplace](https://aws.amazon.com/marketplace), to store and manage data. The cloud provides increased scalability and can improve data security. Additionally, you can also use cloud-based solutions to automate and streamline the manufacturing process.
 
-![On-premises historians forwarding data to a modern application in the cloud.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-iiot-historian-modernization/images/guide-img/600bf5f6-76d8-4aa3-9ff9-c13baa9d233a/images/ee1dd272-df33-49f0-93d5-c113ea6d7611.png)
+![On-premises historians forwarding data to a modern application in the cloud.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-iiot-historian-modernization/images/guide-img/600bf5f6-76d8-4aa3-9ff9-c13baa9d233a/images/ee1dd272-df33-49f0-93d5-c113ea6d7611.png)
 
 ## Create a custom cloud-based solution
 <a name="custom-solution"></a>

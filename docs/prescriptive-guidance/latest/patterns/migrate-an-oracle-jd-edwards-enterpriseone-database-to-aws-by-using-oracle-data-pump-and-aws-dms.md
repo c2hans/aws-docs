@@ -48,7 +48,7 @@ This pattern is designed for migrating from on premises to AWS, but it was teste
 
 The following diagram shows a system that’s running EnterpriseOne on an Oracle database as the source database, and an Amazon RDS for Oracle database as the target database. The data is exported from the source Oracle database and imported into the target Amazon RDS for Oracle database by using Oracle Data Pump, and replicated for CDC updates by using AWS DMS.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c8ec3789-f80e-4f3a-a3f4-72a4541316b0/images/4e3e3477-2fe0-4a5d-b95e-05a8aafe8b68.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c8ec3789-f80e-4f3a-a3f4-72a4541316b0/images/4e3e3477-2fe0-4a5d-b95e-05a8aafe8b68.png)
 
 1. Oracle Data Pump extracts data from the source database, and the data is sent to the Amazon RDS for Oracle database target.
 

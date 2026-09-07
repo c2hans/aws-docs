@@ -39,7 +39,7 @@ If you're using SQL Server Enterprise edition just for a high availability [Alwa
 
 The following diagram shows an example architecture for a Windows Server Failover Cluster solution.
 
-![Windows Server Failover Cluster architecture](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/b175cc18-c1ba-4700-ad23-9dde46081b8f.png)
+![Windows Server Failover Cluster architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/b175cc18-c1ba-4700-ad23-9dde46081b8f.png)
 
 ## SQL Server Always On failover cluster instances
 <a name="sql-server-always-on-failover"></a>
@@ -59,7 +59,7 @@ Consider the following:
 
 The following diagram shows an example architecture for a SQL Server FCI by using FSx for Windows File Server.
 
-![FSx for Windows File Serve architecture](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/5d841057-d3f5-4bb7-9a0c-7cd0649eb29a.png)
+![FSx for Windows File Serve architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/5d841057-d3f5-4bb7-9a0c-7cd0649eb29a.png)
 
 ## SIOS DataKeeper
 <a name="sql-server-sios-datakeeper"></a>
@@ -79,7 +79,7 @@ Consider the following additional benefits of using SIOS DataKeeper:
 
 The following diagram shows an example architecture for a SQL Server FCI using a clustered virtual SAN solution.
 
-![SQL Server FCI using a clustered virtual SAN solution.](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/fb020d77-e4f4-45b3-ab77-31b232c410c4.png)
+![SQL Server FCI using a clustered virtual SAN solution.](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/fb020d77-e4f4-45b3-ab77-31b232c410c4.png)
 
 ## Always On availability groups
 <a name="sql-server-alwayson-avail-groups"></a>
@@ -88,7 +88,7 @@ You can use Always On availability groups for both high availability and disaste
 
 The following diagram shows an example architecture for a solution based on Always On availability groups. The replicas in Region 1 of the diagram are using a Synchronous Commit, which provides an automatic failover of the availability group. The replica in Region 2 is using an Asynchronous Commit, which will require a manual failover of the availability group.
 
-![Always On availability groups architecture](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/adb0c392-d829-4324-9e14-1724de5408af.png)
+![Always On availability groups architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/adb0c392-d829-4324-9e14-1724de5408af.png)
 
 ## Distributed availability groups
 <a name="sql-server-distributed-avail-groups"></a>
@@ -99,7 +99,7 @@ This architecture takes full advantage of the capabilities of Amazon FSx for Win
 
 The following diagram shows an example architecture for a multi-Region solution using distributed availability groups.
 
-![Multi-Region architecture](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/0ecd8634-bba5-430a-887d-ad384d61af60.png)
+![Multi-Region architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/0ecd8634-bba5-430a-887d-ad384d61af60.png)
 
 ## Log shipping
 <a name="sql-server-log-shipping"></a>
@@ -122,7 +122,7 @@ For more information, see [Extend SQL Server DR using log shipping for SQL Serve
 
 The following diagram shows an example architecture for a log shipping solution.
 
-![Log shipping architecture](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/03d7bff5-7fcf-431f-aafb-2191f423b19d.png)
+![Log shipping architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/03d7bff5-7fcf-431f-aafb-2191f423b19d.png)
 
 ## AWS Database Migration Service
 <a name="sql-server-aws-dms"></a>
@@ -133,7 +133,7 @@ AWS DMS is a cost-effective service. You are charged only for the CPU resources 
 
 The following diagram shows an example architecture for a solution based on AWS DMS.
 
-![AWS DMS architecture](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/ac2a7006-b989-4204-a5ee-d49ca2ef46d2.png)
+![AWS DMS architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/ac2a7006-b989-4204-a5ee-d49ca2ef46d2.png)
 
 ## AWS Elastic Disaster Recovery
 <a name="sql-server-aws-edr"></a>
@@ -148,7 +148,7 @@ For SQL Server, you can use Elastic Disaster Recovery as a cost-effective disast
 
 The following diagram shows an example architecture for a solution based on Elastic Disaster Recovery.
 
-![Elastic Disaster Recovery architecture](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/8bf86fd3-9b73-4565-97b0-a0d112fc417a.png)
+![Elastic Disaster Recovery architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/8bf86fd3-9b73-4565-97b0-a0d112fc417a.png)
 
 For more information, see [How to set up high availability for SQL Server at DR site that was restored using AWS Elastic Disaster Recovery](https://aws.amazon.com/blogs/modernizing-with-aws/set-up-high-availability-for-sql-server-at-dr-site-using-aws-elastic-disaster-recovery/) on the Microsoft Workloads on AWS Blog.
 

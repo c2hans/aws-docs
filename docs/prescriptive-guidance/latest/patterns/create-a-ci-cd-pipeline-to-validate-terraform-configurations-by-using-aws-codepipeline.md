@@ -57,7 +57,7 @@ Terraform is a command-line interface application that helps you use code to pro
 
 The following diagram shows an example CI/CD pipeline workflow for testing Terraform configurations in CodePipeline.
 
-![Architecture to test Terraform configurations by using an AWS CI/CD pipeline.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/4df7b1f8-8eef-4d85-a971-a7f158be9691/images/90b931c8-e745-4b52-92de-a367fb0f1f51.png)
+![Architecture to test Terraform configurations by using an AWS CI/CD pipeline.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/4df7b1f8-8eef-4d85-a971-a7f158be9691/images/90b931c8-e745-4b52-92de-a367fb0f1f51.png)
 
 The diagram shows the following workflow:
 

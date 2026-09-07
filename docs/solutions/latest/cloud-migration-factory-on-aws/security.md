@@ -85,14 +85,14 @@ You must enable the selected model in your AWS account through the Bedrock conso
 
 After deployment, you can find the selected model ARN in the CloudFormation stack outputs under the `GenAISelectedModelArn` field in the WPMStack.
 
-![CloudFormation stack output showing selected GenAI model ARN](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/cloudformation-genai-model-output.png)
+![CloudFormation stack output showing selected GenAI model ARN](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/cloudformation-genai-model-output.png)
 
-![Amazon Bedrock model enablement interface](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/bedrock-model-enablement.png)
+![Amazon Bedrock model enablement interface](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/bedrock-model-enablement.png)
 
 This solution’s default configuration will deploy Amazon Bedrock Guardrails in order to:
 + Filter out harmful content
 + Block prompt injections that are irrelevant to your use case
 
-![Amazon Bedrock Guardrails configuration interface](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/bedrock-guardrails.png)
+![Amazon Bedrock Guardrails configuration interface](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/bedrock-guardrails.png)
 
 For more information, refer to [Amazon Bedrock Guardrails](https://aws.amazon.com/bedrock/guardrails/). To opt out Guardrails in CMF solution, you can select false in template parameter section.

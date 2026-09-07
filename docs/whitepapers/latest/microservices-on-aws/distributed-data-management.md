@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/
 
  To help microservices stay in sync, a centralized data store can be used. This store, managed with tools like AWS Lambda, AWS Step Functions, and Amazon EventBridge, can assist in cleaning up and deduplicating data.
 
-![Saga execution coordinator](http://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/images/saga-coordinator.png)
+![Saga execution coordinator](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/images/saga-coordinator.png)
 
  A common approach in managing changes across microservices is *event sourcing*. Every change in the application is recorded as an event, creating a timeline of the system's state. This approach not only helps debug and audit but also allows different parts of an application to react to the same events.
 
@@ -21,6 +21,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/
 
  On AWS, you can implement these patterns using a combination of services. As you can see in Figure 7, Amazon Kinesis Data Streams can serve as your central event store, while Amazon S3 provides a durable storage for all event records. AWS Lambda, Amazon DynamoDB, and Amazon API Gateway work together to handle and process these events.
 
-![Diagram showing event sourcing pattern on AWS](http://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/images/event-sourcing-pattern.png)
+![Diagram showing event sourcing pattern on AWS](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/images/event-sourcing-pattern.png)
 
  Remember, in distributed systems, events might be delivered multiple times due to retries, so it's important to design your applications to handle this.

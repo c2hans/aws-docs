@@ -28,7 +28,7 @@ To save layout modifications:
 
 1. The layout will update for all users upon save completion.
 
-![Save your layout dialog in the explorer layout.](http://docs.aws.amazon.com/connect/latest/adminguide/images/saving-changes-1.png)
+![Save your layout dialog in the explorer layout.](https://docs.aws.amazon.com/connect/latest/adminguide/images/saving-changes-1.png)
 
 **Note**
 The appropriate permissions are needed to save layout changes. For information about required permissions, see [Enable Profile explorer](enabling-profile-explorer.md).

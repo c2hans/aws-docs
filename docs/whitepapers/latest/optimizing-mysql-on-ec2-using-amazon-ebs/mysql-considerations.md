@@ -30,7 +30,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-mysql-on-e
 
  MySQL supports different replication methods. There is the traditional binary log file position-based replication where the primary’s binary log is synchronized with the secondary’s relay log. The following diagram shows the binary log file position-based replication process.
 
-![Diagram showing the Binary log file position-based replication process](http://docs.aws.amazon.com/whitepapers/latest/optimizing-mysql-on-ec2-using-amazon-ebs/images/binary-log-replication-process.jpg)
+![Diagram showing the Binary log file position-based replication process](https://docs.aws.amazon.com/whitepapers/latest/optimizing-mysql-on-ec2-using-amazon-ebs/images/binary-log-replication-process.jpg)
 
  Replication between primary and secondary using global transaction identifiers (GTIDs) was introduced in MySQL 5.6. A GTID is a unique identifier created and associated with each transaction committed on the server of origin (primary). This identifier is unique not only to the server on which it originated, but is unique across all servers in a given replication setup. With GTID-based replication, it is no longer necessary to keep track of the binary log file or position on the primary to replay those events on the secondary. The benefits of this solution include a more malleable replication topology, simplified failover, and improved management of multi-tiered replication.
 

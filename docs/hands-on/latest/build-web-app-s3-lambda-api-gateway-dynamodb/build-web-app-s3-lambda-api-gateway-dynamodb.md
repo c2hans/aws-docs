@@ -43,7 +43,7 @@ The following diagram provides a visual representation of the services used in t
 
 As you go through the tutorial, you will learn about the services in detail and find resources that will help you get up to speed with them.
 
-![Interface element requiring manual review.](http://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/build-web-application-architecture.png)
+![Interface element requiring manual review.](https://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/build-web-application-architecture.png)
 
 ## Tasks
 <a name="tasks"></a>

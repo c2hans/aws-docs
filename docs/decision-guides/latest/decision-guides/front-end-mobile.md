@@ -26,14 +26,14 @@ In addition to using these services and tools to develop your app, you can:
 
 This decision guide helps you ask the right questions to build your web or mobile app on AWS. It explores how to articulate your business requirements and guides you through the architecture and hosting decisions you’ll need to make as you use AWS services to build your app.
 
-[![AWS Videos](http://img.youtube.com/vi/ihEZmQsz8zE?start=168&end=452/0.jpg)](http://www.youtube.com/watch?v=ihEZmQsz8zE?start=168&end=452)
+[![AWS Videos](https://img.youtube.com/vi/ihEZmQsz8zE?start=168&end=452/0.jpg)](https://www.youtube.com/watch?v=ihEZmQsz8zE?start=168&end=452)
 
 ## Understand
 <a name="understand"></a>
 
 Modern web and mobile apps require high performance and an engaging user experience. In addition, you probably have your own set of business requirements that support or extend upon these common needs. Along the app lifecycle, you develop, deliver, test, and monitor your app, and engage with end users, as shown in the following image.
 
-![Diagram showing the options available for running front-end and mobile services on AWS](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/front-end-mobile-services.png)
+![Diagram showing the options available for running front-end and mobile services on AWS](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/front-end-mobile-services.png)
 
 AWS offers a variety of services to support each stage of this lifecycle. The following provides a high-level description of these services. Later, this document guides you through choosing which services you want to use.
 

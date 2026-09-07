@@ -15,14 +15,14 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/people-
 
  This often results in gathering an unachievable list of backlog items. The STO helps you avoid this outcome, as they own the WAFR and are invested in the process.
 
-![Single-threaded owner](http://docs.aws.amazon.com/wellarchitected/latest/userguide/images/STO.png)
+![Single-threaded owner](https://docs.aws.amazon.com/wellarchitected/latest/userguide/images/STO.png)
 
 ## Required stakeholders
 <a name="required-stakeholders"></a>
 
  The STO can't answer all the questions. Many people and teams are involved in either architecting, developing, securing, or operating a workload. Depending on the organization and size of the workload, the number of stakeholders and teams involved will vary.
 
-![Team structure diagram showing single threaded owner above suggested WAFR participants](http://docs.aws.amazon.com/wellarchitected/latest/userguide/images/WorkloadTeam.png)
+![Team structure diagram showing single threaded owner above suggested WAFR participants](https://docs.aws.amazon.com/wellarchitected/latest/userguide/images/WorkloadTeam.png)
 
  Consider the following questions regarding stakeholders:
 
@@ -37,7 +37,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/people-
 
  The Well-Architected Framework consists of [six pillars](https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html). While defining an STO is crucial, it's as important to gather support from pillar-specific sponsors or champions to accelerate and increase the value of the WAFR process.
 
-![Team structure diagram showing single threaded owner above six pillar specific champions](http://docs.aws.amazon.com/wellarchitected/latest/userguide/images/Champions.png)
+![Team structure diagram showing single threaded owner above six pillar specific champions](https://docs.aws.amazon.com/wellarchitected/latest/userguide/images/Champions.png)
 
  Define pillar sponsors or champions who can:
 +  Attend specific parts of the WAFR to provide information or guidance

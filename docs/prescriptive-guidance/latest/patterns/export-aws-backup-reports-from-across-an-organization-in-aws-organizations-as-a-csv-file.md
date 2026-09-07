@@ -43,7 +43,7 @@ The solution provided in this pattern identifies AWS resources that are configur
 
 The following diagram shows an example workflow for exporting AWS Backup job reports from across an organization in AWS Organizations as a CSV file.
 
-![Using EventBridge, Lambda, AWS STS, and IAM to export AWS Backup job reports from across an organization in CSV format.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/74955aad-cc6d-488b-aa34-ae43f50fec60/images/5c39c79f-e731-4ad0-b404-51ebe0976420.png)
+![Using EventBridge, Lambda, AWS STS, and IAM to export AWS Backup job reports from across an organization in CSV format.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/74955aad-cc6d-488b-aa34-ae43f50fec60/images/5c39c79f-e731-4ad0-b404-51ebe0976420.png)
 
 The diagram shows the following workflow:
 

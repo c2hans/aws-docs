@@ -21,7 +21,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/demand-forecasting/ad
 
  Data is created at the edge, on your ecommerce site, or from social media by customers. You can use [external connectors](https://docs.aws.amazon.com/whitepapers/latest/patterns-for-ingesting-saas-data-into-aws-data-lakes/extract-transform-and-load-etl-using-custom-connectors-with-apache-spark.html) to direct data to your data storage on AWS. Use the [AWS Marketplace](https://aws.amazon.com/marketplace) to find other readily available connectors. This solution can be unified as a [data lake on AWS](https://aws.amazon.com/big-data/datalakes-and-analytics/what-is-a-data-lake/), where you can not only use ML inference for demand forecasting, you can also perform data lifecycle management and analytics. If you have data on-premises, you can keep your data on-premises if you want, and add a connection to your data through [AWS Storage Gateway](https://aws.amazon.com/storagegateway/). You can use data lakes on AWS to build a flexible and hybrid architecture.
 
-![A diagram that depicts external data ingestion.](http://docs.aws.amazon.com/whitepapers/latest/demand-forecasting/images/external-data-ingestion.png)
+![A diagram that depicts external data ingestion.](https://docs.aws.amazon.com/whitepapers/latest/demand-forecasting/images/external-data-ingestion.png)
 
  The other specific application for industrial, in-demand forecasting is the [Internet of Things](https://aws.amazon.com/iot/) (IoT). Some of our customers have IoT devices on their production or manufacturing sites, with sensors or telemetry data coming from the devices. These customers may want to use their IoT data in their demand forecasting. You can utilize [AWS IoT Analytics](https://docs.aws.amazon.com/iotanalytics/latest/userguide/welcome.html) solutions to incorporate an IoT workload into the solutions provided in this document.
 
@@ -39,7 +39,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/demand-forecasting/ad
 
  The following figure summarizes [a common pattern of Amazon SageMaker AI experience for data scientists or developers who perform demand forecasting](https://aws.amazon.com/blogs/machine-learning/deep-demand-forecasting-with-amazon-sagemaker/). It starts with training data located in an S3 bucket (step 1). Amazon SageMaker AI utilizes [Jupyter Notebook](https://docs.aws.amazon.com/sagemaker/latest/dg/notebooks.html) (step 2). Here, you can use [Amazon SageMaker AI SDK](https://sagemaker.readthedocs.io/en/stable/) for Python. [R practitioners can also use SageMaker AI](https://docs.aws.amazon.com/sagemaker/latest/dg/r-guide.html). Later, the model is trained (step 3) and the endpoint is deployed (step 4). Here you can [monitor and log your SageMaker AI deployment and endpoint using Amazon CloudWatch](https://docs.aws.amazon.com/sagemaker/latest/dg/monitoring-cloudwatch.html) (step 5) and finally using input data for inference located in S3, the prediction requests can be sent to the SageMaker AI endpoint and make predictions (step 6).
 
-![A diagram that depicts a common pattern of using Amazon SageMaker AI – training data in Amazon S3 and an inference endpoint deployed for production..](http://docs.aws.amazon.com/whitepapers/latest/demand-forecasting/images/common-pattern.png)
+![A diagram that depicts a common pattern of using Amazon SageMaker AI – training data in Amazon S3 and an inference endpoint deployed for production..](https://docs.aws.amazon.com/whitepapers/latest/demand-forecasting/images/common-pattern.png)
 
  Starting with a well-documented, organized, and well-architected solution can be the fastest and the productive step to take. Some data scientists may want to start with Amazon SageMaker AI deployment without an *empty-page*, meaning they may want to utilize a readily available, best practiced, and fully developed solution to start with.
 
@@ -82,7 +82,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/demand-forecasting/ad
 
  As shown in the following figure, you can input your historical demand data in Amazon Forecast (only target data or some optional related data). The service then automatically sets up a data pipeline, ingests the input data, and trains a model (out of many algorithms, it can automatically choose the best performing model). Forecast then generates forecasts. It also identifies features that apply the most to the algorithm, and automatically tunes hyperparameters. Forecast then hosts your models so you can easily query them when needed. In the background, Forecast automatically cleans up resources you no longer use.
 
-![A diagram that depicts time series forecasting with Amazon Forecast.](http://docs.aws.amazon.com/whitepapers/latest/demand-forecasting/images/time-series-forecasting.png)
+![A diagram that depicts time series forecasting with Amazon Forecast.](https://docs.aws.amazon.com/whitepapers/latest/demand-forecasting/images/time-series-forecasting.png)
 
  With all of this work done behind the scene, you can save by not building your own ML expert team or resources to maintain your own in-house models.
 
@@ -164,7 +164,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/demand-forecasting/ad
 
  Sometimes, the model needs investigations. For example, if the new event creates a new type of behavior in the predicting system or a horizon of the data has changed, reducing accuracy. Therefore, the overall loop of ML operations should include other teams, not limited to data science teams.
 
-![A diagram depicting the machine learning lifecycle.](http://docs.aws.amazon.com/whitepapers/latest/demand-forecasting/images/ml-lifecycle.png)
+![A diagram depicting the machine learning lifecycle.](https://docs.aws.amazon.com/whitepapers/latest/demand-forecasting/images/ml-lifecycle.png)
 
  If you are using Amazon SageMaker AI, this generally means (except in some cases with SageMaker AI Canvas) there are data scientists collaborating on the project. Therefore, in addition to the loop in the preceding figure, the engineers need to efficiently work on the same models.
 
@@ -180,11 +180,11 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/demand-forecasting/ad
 
  [AWS Glue](https://aws.amazon.com/glue/) automatically moves the data through an ETL pipeline to a S3 bucket, to be queried by and fed to [Quick](https://aws.amazon.com/quicksight/) by [Amazon Athena](https://aws.amazon.com/athena/) for the visualization of predictions and other data. You can deploy the following architecture through [AWS CloudFormation templates](https://aws.amazon.com/cloudformation/). Refer to [Improving Forecast Accuracy with Machine Learning](https://aws.amazon.com/solutions/implementations/improving-forecast-accuracy-with-machine-learning/) and the [Building AI-powered forecasting automation with Amazon Forecast by applying MLOps](https://aws.amazon.com/blogs/machine-learning/building-ai-powered-forecasting-automation-with-amazon-forecast-by-applying-mlops/) blog post for more information.
 
-![A diagram depicting ML operations with AWS Step Functions.](http://docs.aws.amazon.com/whitepapers/latest/demand-forecasting/images/ml-operations.png)
+![A diagram depicting ML operations with AWS Step Functions.](https://docs.aws.amazon.com/whitepapers/latest/demand-forecasting/images/ml-operations.png)
 
  The following figure shows an example AWS Step Function definition that goes through MLOps steps with Amazon Forecast. To better understand this behavior, review [Visualizing AWS Step Functions workflows from the AWS Batch console](https://aws.amazon.com/blogs/compute/visualizing-aws-step-functions-workflows-from-the-aws-batch-console/).
 
-![A diagram depicting AWS Step Function steps example for an ML forecasting workflow.](http://docs.aws.amazon.com/whitepapers/latest/demand-forecasting/images/step-function-steps.png)
+![A diagram depicting AWS Step Function steps example for an ML forecasting workflow.](https://docs.aws.amazon.com/whitepapers/latest/demand-forecasting/images/step-function-steps.png)
 
  AWS has developed the Well-Architected [Machine Learning Lens](https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/machine-learning-lens.html) to help you review your operations and deployment, to determine whether or not you follow the best practices proposed by AWS. This approach utilizes security, operational efficiency, reliability, cost effectiveness, and performance. To keep your AI/ML operations robust, we highly recommend having these reviews internally and/or with your Solutions Architects or AWS Partners, regularly. Following Well-Architected best practices ensures that the MLOps process will reach its full potential for your organization.
 
@@ -209,7 +209,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/demand-forecasting/ad
 
  The following diagram is an architecture for short-term electric demand forecasting that can be used for other demand forecasting use cases, as the concept is similar to other use cases. The proposed solution is using advanced Amazon Forecast features to solve forecasting problems. It is fully automated and event driven, with reduced manual processes. Also, it can scale as the forecasting needs increase.
 
-![Energy forecasting architecture.](http://docs.aws.amazon.com/whitepapers/latest/demand-forecasting/images/energy-forecasting.png)
+![Energy forecasting architecture.](https://docs.aws.amazon.com/whitepapers/latest/demand-forecasting/images/energy-forecasting.png)
 
  The solution includes these broad steps:
 +  **Module 1 -** Ingest and transform data from the on-premises system** **
@@ -234,4 +234,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/demand-forecasting/ad
 
  This solution works with [Amazon Vendor Central](https://vendorcentral.amazon.com/) (sign-in required), but it can be used for other in-house or commercial endpoints. This solution builds a serverless architecture which is an event-based or scheduled pattern, that consistently and constantly pulls data from the CPG info endpoint into a persistent datastore. The data is then cataloged and analyzed through Amazon Athena, AWS Glue crawlers, and Quick. Here, Amazon purchase order (PO) data is ingested into Amazon Forecast to generate predictive analysis to help CPG companies improve on-time, in-full (OTIF) performance. To learn more about this solution, refer to [CPG Companies: Improve Demand Forecasting to Boost Sales on Amazon](https://aws.amazon.com/blogs/industries/improve-demand-forecasting-to-boost-sales-on-amazon/).
 
-![Architecture to automate data collection for selling partners.](http://docs.aws.amazon.com/whitepapers/latest/demand-forecasting/images/automate-data-collection.png)
+![Architecture to automate data collection for selling partners.](https://docs.aws.amazon.com/whitepapers/latest/demand-forecasting/images/automate-data-collection.png)

@@ -56,4 +56,4 @@ Complete the following instructions to access the OpenSearch Service dashboard.
 
  **Example OpenSearch dashboard displaying indexed roasbag data.**
 
-![filtered rosbag data](http://docs.aws.amazon.com/solutions/latest/scene-intelligence-with-rosbag-on-aws/images/filtered-rosbag-data.png)
+![filtered rosbag data](https://docs.aws.amazon.com/solutions/latest/scene-intelligence-with-rosbag-on-aws/images/filtered-rosbag-data.png)

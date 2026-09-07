@@ -40,14 +40,14 @@ You can use this block in the following [flow types](create-contact-flow.md#cont
 
 The following image shows the **Properties** page of the **Transfer to agent** block. It does not have any options on it.
 
-![The properties page of the Transfer to agent block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/transfer-to-agent-properties.png)
+![The properties page of the Transfer to agent block.](https://docs.aws.amazon.com/connect/latest/adminguide/images/transfer-to-agent-properties.png)
 
 ## Configured block
 <a name="transfer-to-agent-block-configured"></a>
 
 The following image shows an example of what this block looks like when it is configured. It displays the status **Transferred**. It does not have any branches.
 
-![A configured Transfer to agent block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/transfer-to-agent-configured.png)
+![A configured Transfer to agent block.](https://docs.aws.amazon.com/connect/latest/adminguide/images/transfer-to-agent-configured.png)
 
 ## Scenarios
 <a name="transfer-to-agent-block-scenarios"></a>

@@ -9,7 +9,7 @@ Also available on [Audible](https://www.audible.com/pd/Cloud-Adoption-Framework-
 
 The cloud transformation value chain in the following figure shows that business outcomes are accelerated through cloud powered organizational change (transformation) that is enabled by a set of foundational capabilities. The transformation domains represent a value chain where technological transformation enables process transformation which enables organizational transformation that enables product transformation. Key business outcomes include reduced business risk, improved environmental, social and governance (ESG) performance, as well as increased revenue and operational efficiency.
 
-![A diagram depicting the cloud transformation value chain.](http://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/images/cloud-adoption-1.png)
+![A diagram depicting the cloud transformation value chain.](https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/images/cloud-adoption-1.png)
 
 *Cloud transformation value chain*
 + **Technological transformation** focuses on using cloud to [migrate and modernize](https://aws.amazon.com/migration-acceleration-program/) legacy infrastructure, applications, and [data](https://aws.amazon.com/products/databases/) and [analytics](https://aws.amazon.com/big-data/datalakes-and-analytics/) platforms. [Cloud Value Benchmarking ](https://pages.awscloud.com/CVFWhitepaper_eBook.html)shows that migrating from on-premises to AWS leads to a 27% reduction in cost per user, a 58% increase in VMs managed per admin, a 57% decrease in downtime, and a 34% decrease in security events.

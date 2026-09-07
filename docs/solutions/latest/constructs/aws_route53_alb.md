@@ -137,7 +137,7 @@ Out of the box implementation of the Construct without any override will set the
 ## Architecture
 <a name="_architecture"></a>
 
-![Diagram showing the Route53 ALIAS record in an existing hosted zone and Application Load Balancer created by the construct](http://docs.aws.amazon.com/solutions/latest/constructs/images/aws-route53-alb.png)
+![Diagram showing the Route53 ALIAS record in an existing hosted zone and Application Load Balancer created by the construct](https://docs.aws.amazon.com/solutions/latest/constructs/images/aws-route53-alb.png)
 
 ## Github
 <a name="_github"></a>

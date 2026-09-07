@@ -15,7 +15,7 @@ The AWS Organizational Change Acceleration (OCA) 6-Point Framework is intended t
 
 The framework's six points align with an agile sprint cadence, from program initiation through sustainable long-term change. The following diagram shows these six points and their subpoints.
 
-![Engage the Organization phase of the AWS OCA Framework.](http://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-engage-organization/images/guide-img/1054d355-f84e-40b1-be21-5be8aad05588/images/c677cdd8-ecd7-4c75-8965-d0d8cf3ea57c.png)
+![Engage the Organization phase of the AWS OCA Framework.](https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-engage-organization/images/guide-img/1054d355-f84e-40b1-be21-5be8aad05588/images/c677cdd8-ecd7-4c75-8965-d0d8cf3ea57c.png)
 
 The fourth point, *Engage the Organization*, helps you activate the strategies and plans created in the previous three points and use the insights gained from various assessments to actively transform the organization to the desired future state. As the transformation starts to take place, the burden begins to shift from the cloud transformation team and cross-functional leaders to the employee base. *Engage the Organization *contains five subpoints:
 + [4.1 Change acceleration implementation](change.md). Implement the change strategy and plan to enable cloud adoption and achieve desired business outcomes.

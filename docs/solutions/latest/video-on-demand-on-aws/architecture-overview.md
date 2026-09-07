@@ -14,7 +14,7 @@ Deploying this solution builds the following environment in the AWS Cloud.
 
  **Video on Demand on AWS architecture**
 
-![video on demand architecture](http://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws/images/video-on-demand-architecture.png)
+![video on demand architecture](https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws/images/video-on-demand-architecture.png)
 
 The high-level process flow for the solution components deployed with the AWS CloudFormation template is as follows:
 

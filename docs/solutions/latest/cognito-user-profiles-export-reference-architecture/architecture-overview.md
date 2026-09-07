@@ -9,7 +9,7 @@ Deploying this guidance with the default parameters builds the following environ
 
  **Cognito User Profiles Export Reference Architecture architecture on AWS**
 
-![user profiles export with amazon cognito](http://docs.aws.amazon.com/solutions/latest/cognito-user-profiles-export-reference-architecture/images/user-profiles-export-with-amazon-cognito.png)
+![user profiles export with amazon cognito](https://docs.aws.amazon.com/solutions/latest/cognito-user-profiles-export-reference-architecture/images/user-profiles-export-with-amazon-cognito.png)
 
 1. In the primary AWS Region, an [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/) scheduled [event](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/WhatIsCloudWatchEvents.html) invokes the [AWS Step Functions](https://aws.amazon.com/step-functions/) export workflow, which examines the primary [Amazon Cognito](https://aws.amazon.com/cognito/) user pool. It stores user profiles, groups, and group membership information in the global table.
 

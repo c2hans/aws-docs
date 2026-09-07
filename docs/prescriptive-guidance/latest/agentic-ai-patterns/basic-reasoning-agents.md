@@ -14,7 +14,7 @@ This pattern is useful for tasks that require single-step reasoning, classificat
 
 The flow of a basic reasoning agent is shown in the following diagram:
 
-![Basic reasoning agent.](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-patterns/images/guide-img/cde5ee68-ed86-4053-9fb1-d0dbf7199e24/images/6a28fb96-02f2-41e8-8b95-41880fe3e172.png)
+![Basic reasoning agent.](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-patterns/images/guide-img/cde5ee68-ed86-4053-9fb1-d0dbf7199e24/images/6a28fb96-02f2-41e8-8b95-41880fe3e172.png)
 
 ## Description
 <a name="description.33fcee2a-6bc8-5f74-9e92-6f6a2609b2cf"></a>
@@ -77,7 +77,7 @@ Retrieval-augmented generation (RAG) is a technique that combines information re
 
 The logic of the RAG pattern is illustrated in the following diagram:
 
-![Agent RAG.](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-patterns/images/guide-img/cde5ee68-ed86-4053-9fb1-d0dbf7199e24/images/6b0f8d0b-1755-407f-abb9-5bfc2c5447b1.png)
+![Agent RAG.](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-patterns/images/guide-img/cde5ee68-ed86-4053-9fb1-d0dbf7199e24/images/6b0f8d0b-1755-407f-abb9-5bfc2c5447b1.png)
 
 *Figure 3. Agent RAG*
 

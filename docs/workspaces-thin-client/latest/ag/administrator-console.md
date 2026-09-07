@@ -7,7 +7,7 @@ End of support notice: On March 31, 2027, AWS will end support for Amazon WorkSp
 # Using WorkSpaces Thin Client administrator console
 <a name="administrator-console"></a>
 
-![Admin management flow showing setup, code distribution, user registration, and device management.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ag/images/amazon-thin-client-start.png)
+![Admin management flow showing setup, code distribution, user registration, and device management.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/images/amazon-thin-client-start.png)
 
 Welcome to the WorkSpaces Thin Client Administrator Console\!
 

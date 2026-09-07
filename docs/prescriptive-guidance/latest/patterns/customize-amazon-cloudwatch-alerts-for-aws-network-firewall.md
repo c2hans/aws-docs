@@ -30,7 +30,7 @@ In this pattern, you generate Suricata-compatible firewall rules. [Suricata](htt
 ## Architecture
 <a name="customize-amazon-cloudwatch-alerts-for-aws-network-firewall-architecture"></a>
 
-![An EC2 instance request generates alert in Network Firewall, which forwards alert to CloudWatch](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/da6087a9-e942-4cfe-85e3-3b08de6f3ba5/images/778d85cd-bc87-4ed0-a161-d35eb5daa694.png)
+![An EC2 instance request generates alert in Network Firewall, which forwards alert to CloudWatch](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/da6087a9-e942-4cfe-85e3-3b08de6f3ba5/images/778d85cd-bc87-4ed0-a161-d35eb5daa694.png)
 
 The architecture diagram shows the following workflow:
 

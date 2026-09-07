@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 
  **Architecture diagram showing key management for accounts.**
 
-![image6](http://docs.aws.amazon.com/solutions/latest/landing-zone-accelerator-on-aws/images/image6.png)
+![image6](https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerator-on-aws/images/image6.png)
 
 The solution uses AWS KMS keys to provide encryption at rest capabilities for resources deployed by the solution. Some AWS KMS keys are deployed to every account and Region managed by the solution, while others are centralized in a single core account.
 

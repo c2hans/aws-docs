@@ -13,7 +13,7 @@ AWS Lambda is a compute service that enables you to run code without provisionin
 
 In this example, you create a Lambda function by using the Lambda JavaScript runtime API. This example invokes different AWS services to perform a specific use case. For example, assume that an organization sends a mobile text message to its employees that congratulates them at the one year anniversary date, as shown in this illustration.
 
-![DynamoDB table](http://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/apigateway_example/picPhone.png)
+![DynamoDB table](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/apigateway_example/picPhone.png)
 
 The example should take about 20 minutes to complete.
 
@@ -29,7 +29,7 @@ This AWS tutorial uses an Amazon DynamoDB table named Employee that contains the
 + **phone** - employee’s phone number.
 + **startDate** - employee’s start date.
 
-![DynamoDB table](http://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/apigateway_example/pic00.png)
+![DynamoDB table](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/apigateway_example/pic00.png)
 
 **Important**
 Cost to complete: The AWS services included in this document are included in the AWS Free Tier. However, be sure to terminate all of the resources after you have completed this example to ensure that you are not charged.
@@ -358,25 +358,25 @@ You can use the API Gateway console to create a rest endpoint for the Lambda fun
 1. Under Rest API, choose **Build**.
 
 1. Select **New API**.
-![DynamoDB table](http://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/apigateway_example/PicNewAPI.png)
+![DynamoDB table](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/apigateway_example/PicNewAPI.png)
 
 1. Specify **Employee** as the API name and provide a description.
-![DynamoDB table](http://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/apigateway_example/picEmployeeAPI.png)
+![DynamoDB table](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/apigateway_example/picEmployeeAPI.png)
 
 1. Choose **Create API**.
 
 1. Choose **Resources** under the **Employee** section.
-![DynamoDB table](http://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/apigateway_example/picResources.png)
+![DynamoDB table](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/apigateway_example/picResources.png)
 
 1. In the name field, specify **employees**.
 
 1. Choose **Create Resources**.
 
 1. From the **Actions** dropdown, choose **Create Resources**.
-![DynamoDB table](http://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/apigateway_example/picCreateResources.png)
+![DynamoDB table](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/apigateway_example/picCreateResources.png)
 
 1. Choose **/employees**, select **Create Method** from the **Actions**, then select **GET** from the drop-down menu below **/employees**. Choose the checkmark icon.
-![DynamoDB table](http://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/apigateway_example/picGet.png)
+![DynamoDB table](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/apigateway_example/picGet.png)
 
 1. Choose **Lambda function** and enter **mylambdafunction** as the Lambda function name. Choose **Save **.
 
@@ -385,7 +385,7 @@ You can use the API Gateway console to create a rest endpoint for the Lambda fun
 
 At this point in the tutorial, you can test the API Gateway method that invokes the **mylambdafunction** Lambda function. To test the method, choose **Test**, as shown in the following illustration.
 
-![DynamoDB table](http://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/apigateway_example/picTest.png)
+![DynamoDB table](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/apigateway_example/picTest.png)
 
 Once the Lambda function is invoked, you can view the log file to see a successful message.
 
@@ -395,18 +395,18 @@ Once the Lambda function is invoked, you can view the log file to see a successf
 After the test is successful, you can deploy the method from the [Amazon API Gateway console](https://console.aws.amazon.com/apigateway).
 
 1. Choose **Get**.
-![DynamoDB table](http://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/apigateway_example/picGetDeploy.png)
+![DynamoDB table](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/apigateway_example/picGetDeploy.png)
 
 1. From the **Actions** dropdown, select **Deploy API**.
-![DynamoDB table](http://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/apigateway_example/picDeployMethod.png)
+![DynamoDB table](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/apigateway_example/picDeployMethod.png)
 
 1. Fill in the **Deploy API** form and choose **Deploy**.
-![DynamoDB table](http://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/apigateway_example/picDeployMethod.png)
+![DynamoDB table](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/apigateway_example/picDeployMethod.png)
 
 1.  Choose **Save Changes**.
 
 1.  Choose **Get** again and notice that the URL changes. This is the invocation URL that you can use to invoke the Lambda function.
-![DynamoDB table](http://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/apigateway_example/picURL2.png)
+![DynamoDB table](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/apigateway_example/picURL2.png)
 
 ## Delete the resources
 <a name="api-gateway-invoking-lambda-destroy"></a>

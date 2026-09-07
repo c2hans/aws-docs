@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/satellite.html
 ---
 
-# ![AWS Satellite category icon](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/satellite-icon.jpg)Satellite
+# ![AWS Satellite category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/satellite-icon.jpg)Satellite
 <a name="satellite"></a>
 
 ------

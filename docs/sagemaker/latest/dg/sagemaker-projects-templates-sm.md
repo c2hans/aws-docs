@@ -109,7 +109,7 @@ The template creates the association between your project and the source control
 
 The instructions help you build the architecture shown in the following diagram, with GitHub as the source control repository in this example. As shown, you are attaching your Git repository to the project to check in and manage code versions. Jenkins initiates the model build pipeline when it detects changes to the model build code in the Git repository. You are also connecting the project to Jenkins to orchestrate your model deployment steps, which start when you approve the model registered in the model registry, or when Jenkins detects changes to the model deployment code.
 
-![The workflow of the pipeline built using the project template.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/projects/projects-templates-gitjenkins.png)
+![The workflow of the pipeline built using the project template.](https://docs.aws.amazon.com/sagemaker/latest/dg/images/projects/projects-templates-gitjenkins.png)
 
 In summary, the steps guide you through the following tasks:
 

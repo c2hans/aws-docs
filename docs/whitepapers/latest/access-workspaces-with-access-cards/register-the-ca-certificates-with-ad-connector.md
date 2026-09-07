@@ -38,6 +38,6 @@ To verify the status of a CA certificate registration or a list of registered CA
 
 The following screenshot shows the successful listing of certificates registered with the specified AD Connector.
 
-![A screenshot showing list certificates registered with AD Connector.](http://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/workspaces-smartcard16.png)
+![A screenshot showing list certificates registered with AD Connector.](https://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/workspaces-smartcard16.png)
 
 * List certificates registered with AD Connector *

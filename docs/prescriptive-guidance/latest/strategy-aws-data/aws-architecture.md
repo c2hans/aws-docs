@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-aw
 
 This guide doesn't describe how to implement a data strategy framework on AWS. That is an extensive topic that is covered in AWS documentation, blog posts, and other guides (see the *Resources* section). However, the following diagram provides a high-level overview. It illustrates the main components of a [modern data architecture on AWS](https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/modern-data-architecture.html) and covers most of the services that can be in your roadmap.
 
-![AWS data services](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-aws-data/images/guide-img/7eadad47-3e6a-4775-bcac-a88d1e364e51/images/4a390be6-431c-41b1-bbb2-2435a2e369da.png)
+![AWS data services](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-aws-data/images/guide-img/7eadad47-3e6a-4775-bcac-a88d1e364e51/images/4a390be6-431c-41b1-bbb2-2435a2e369da.png)
 
 The main components of this architecture support the technical tenets for a modern data strategy that were [discussed earlier](data-strategy-framework.md):
 

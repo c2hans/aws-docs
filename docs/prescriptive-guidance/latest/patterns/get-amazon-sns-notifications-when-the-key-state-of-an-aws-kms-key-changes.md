@@ -33,7 +33,7 @@ This pattern shows you how to monitor status changes to AWS KMS keys by using Am
 
 The following diagram shows an architecture for building an automated monitoring and notification process for detecting any changes to the state of an AWS KMS key.
 
-![Architecture for building an automated monitoring and notification process](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2534df87-a6fd-4360-9b5d-4a8b1f533de3/images/0cb6a6b0-405b-4d26-ad04-2067176aa086.png)
+![Architecture for building an automated monitoring and notification process](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2534df87-a6fd-4360-9b5d-4a8b1f533de3/images/0cb6a6b0-405b-4d26-ad04-2067176aa086.png)
 
 The diagram shows the following workflow:
 

@@ -14,7 +14,7 @@ A full-system migration is a four-step process: plan, back up, restore, and vali
 
 The following diagram illustrates the steps involved in migrating a Viya 3.x deployment to Viya4.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migrating-sas-viya-to-the-aws-cloud/images/guide-img/6af091bd-620c-4ae4-9607-2e103616429a/images/d4bec5d8-8da8-43c5-bad9-59ea83ecf41b.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migrating-sas-viya-to-the-aws-cloud/images/guide-img/6af091bd-620c-4ae4-9607-2e103616429a/images/d4bec5d8-8da8-43c5-bad9-59ea83ecf41b.png)
 
 ## Supported scenarios for full-system migration
 <a name="supported-scenarios-for-full-system-migration"></a>

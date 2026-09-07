@@ -71,7 +71,7 @@ The following steps explain how to use the Amazon Chime SDK console to create an
 **To use the console**
 
 1. Start the Amazon Chime SDK console at [ https://console.aws.amazon.com/chime-sdk/home](https://console.aws.amazon.com/chime-sdk/home), search for **QuickSight**, and in the search results choose **QuickSight**.
-![A search result that links to Quick.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/quicksightsetup-1.png)
+![A search result that links to Quick.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/quicksightsetup-1.png)
 
 1. Choose **Sign up for QuickSight**.
 
@@ -105,7 +105,7 @@ After you log in to your QuickSight account, you need to configure security and 
 **To configure security**
 
 1. Choose the profile icon in the upper-right corner, then choose **Manage QuickSight** from the resulting menu.
-![A menu with the Manage QuickSight command.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/quicksightsetup-1-a.png)
+![A menu with the Manage QuickSight command.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/quicksightsetup-1-a.png)
 
 1. In the navigation pane, choose **Security & permissions**.
 
@@ -162,7 +162,7 @@ After you create a data lake, you can create a QuickSight dashboard that visuali
 1. Navigate to your QuickSight account.
 
 1. In the top-right corner choose the profile icon, then choose **Manage QuickSight**.
-![The QuickSight account dialog box and Manage QuickSight command.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/quicksightsetup-1-a.png)
+![The QuickSight account dialog box and Manage QuickSight command.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/quicksightsetup-1-a.png)
 
 1. In the navigation pane, choose **Manage groups**, then choose the group created by the setup process.
 

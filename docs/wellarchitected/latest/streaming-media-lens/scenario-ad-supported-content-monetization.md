@@ -15,7 +15,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 
  A common approach to SSAI is shown in the following figure. In this architecture, we reflect cloud services for the origin server, ad insertion service, and the content delivery network. These cloud-native services are highly available, natively redundant, and ensure that the customer experience is not compromised in the event of host-level failure.
 
-![The server-side ad insertion system is shown consisting of ad processing and delivery components streaming ads to end user players.](http://docs.aws.amazon.com/wellarchitected/latest/streaming-media-lens/images/server-side-insertion-architecture.png)
+![The server-side ad insertion system is shown consisting of ad processing and delivery components streaming ads to end user players.](https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-lens/images/server-side-insertion-architecture.png)
 
 1.  Device requests content manifest to begin playback session.
 

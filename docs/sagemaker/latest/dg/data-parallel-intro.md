@@ -46,7 +46,7 @@ The following is the high-level workflow of the SMDDP `AllReduce` operation.
 
 The following architecture diagram shows an example of how the library sets up data parallelism for a cluster of 3 nodes.
 
-![SMDDP AllReduce and data parallelism architecture diagram.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/distributed/data-parallel/sdp-architecture.png)
+![SMDDP AllReduce and data parallelism architecture diagram.](https://docs.aws.amazon.com/sagemaker/latest/dg/images/distributed/data-parallel/sdp-architecture.png)
 
 ### SMDDP `AllGather` collective operation
 <a name="data-parallel-allgather"></a>

@@ -9,7 +9,7 @@ You can use AWS Lambda to replace scheduled processes such as automated system b
 
 To implement this example, first create a DynamoDB table and populate it with some test data for your function to query. Then, create a Python Lambda function with an EventBridge Scheduler trigger and an IAM execution role that gives the function permission to read, and delete, items from your table.
 
-![Diagram showing flow of data between an EventBridge Scheduler schedule, a Lambda function and a DynamoDB table.](http://docs.aws.amazon.com/lambda/latest/dg/images/ExampleApps/cron_app.png)
+![Diagram showing flow of data between an EventBridge Scheduler schedule, a Lambda function and a DynamoDB table.](https://docs.aws.amazon.com/lambda/latest/dg/images/ExampleApps/cron_app.png)
 
 **Tip**
 If you're new to Lambda, we recommend that you complete the tutorial [Create your first Lambda function](getting-started.md) before creating this example app.
@@ -556,7 +556,7 @@ First, create a function containing basic starter code. You then replace this co
    1. In the **Code source** pane, replace the Hello world code that Lambda created with the Python function code from the `lambda_function.py` file that you saved earlier.
 
    1. In the **DEPLOY** section, choose **Deploy** to update your function's code:
-![Deploy button in the Lambda console code editor](http://docs.aws.amazon.com/lambda/latest/dg/images/getting-started-tutorial/deploy-console.png)
+![Deploy button in the Lambda console code editor](https://docs.aws.amazon.com/lambda/latest/dg/images/getting-started-tutorial/deploy-console.png)
 
 **To configure the function memory and timeout (console)**
 

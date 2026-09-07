@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 
 This automated AWS CloudFormation template deploys the Landing Zone Accelerator on AWS in the AWS Cloud. You must complete the applicable steps in [Prerequisites](prerequisites.md) before launching the stack.
 
-1. Sign into [AWS Management Console](https://aws.amazon.com/console) and select the button to launch `AWSAccelerator-InstallerStack` CloudFormation template. [![Launch solution](http://docs.aws.amazon.com/solutions/latest/landing-zone-accelerator-on-aws/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?templateURL=https:%2F%2Fsolutions-reference.s3.amazonaws.com%2Flanding-zone-accelerator-on-aws%2Flatest%2FAWSAccelerator-InstallerStack.template&redirectId=ImplementationGuide)
+1. Sign into [AWS Management Console](https://aws.amazon.com/console) and select the button to launch `AWSAccelerator-InstallerStack` CloudFormation template. [![Launch solution](https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerator-on-aws/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?templateURL=https:%2F%2Fsolutions-reference.s3.amazonaws.com%2Flanding-zone-accelerator-on-aws%2Flatest%2FAWSAccelerator-InstallerStack.template&redirectId=ImplementationGuide)
 
 1. The template launches in the US East (N. Virginia) Region by default. To launch the solution in a different AWS Region, use the Region selector in the console navigation bar.
 **Note**

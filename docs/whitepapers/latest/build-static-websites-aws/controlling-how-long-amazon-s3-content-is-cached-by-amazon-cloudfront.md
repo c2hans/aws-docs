@@ -29,9 +29,9 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-static-websites
 
  In the following example, the banner and logo images are updated and receive new file names. However, because those images are referenced by the HTML files, the HTML markup must also be updated to reference the new image file names. Note that the HTML file names shouldn’t have version identifiers in order to provide stable URLs for end users.
 
-![Example of code for an updated static website.](http://docs.aws.amazon.com/whitepapers/latest/build-static-websites-aws/images/updated-static.jpeg)
+![Example of code for an updated static website.](https://docs.aws.amazon.com/whitepapers/latest/build-static-websites-aws/images/updated-static.jpeg)
 
-![Example of code for a website with images.](http://docs.aws.amazon.com/whitepapers/latest/build-static-websites-aws/images/website-with-images.jpeg)
+![Example of code for a website with images.](https://docs.aws.amazon.com/whitepapers/latest/build-static-websites-aws/images/website-with-images.jpeg)
 
  Content versioning has a clear benefit: it sidesteps CloudFront expiration behaviors altogether. Since new file names are involved, CloudFront immediately fetches the new files from Amazon S3 (and afterwards, cache them).
 
@@ -51,7 +51,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-static-websites
 
  You can configure Amazon S3 to return a `Cache-Control` HTTP header with the value of `max-age=<seconds>` when S3 serves up the content. This setting is on a file-by-file basis, and we recommend using different values depending on the file type (HTML, CSS, JavaScript, images, and so on). Since HTML files won’t have version identifiers in their file names, we recommend using smaller `max-age` values for HTML files so that CloudFront will expire the HTML files sooner than other content. You can set this by editing the Amazon S3 object metadata using the AWS Management Console.
 
-![A screenshot that shows setting Cache-Control values in the AWS Management Console.](http://docs.aws.amazon.com/whitepapers/latest/build-static-websites-aws/images/cache-control-values.jpeg)
+![A screenshot that shows setting Cache-Control values in the AWS Management Console.](https://docs.aws.amazon.com/whitepapers/latest/build-static-websites-aws/images/cache-control-values.jpeg)
 
  In practice, you should automate this as part of your Amazon S3 upload process. With AWS CLI, you can alter your deployment scripts like the following example:
 

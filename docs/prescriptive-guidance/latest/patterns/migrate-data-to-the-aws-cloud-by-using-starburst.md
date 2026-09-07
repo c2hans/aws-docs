@@ -44,7 +44,7 @@ The following high-level architecture diagram shows the typical deployment of St
 
 1. Starburst Enterprise connects directly to your existing on-premises data sources to read data real-time. In addition, if you have an existing Starburst Enterprise deployment in this environment, you can directly connect your new Starburst cluster in the AWS Cloud to this existing cluster.
 
-![High-level architecture diagram of Starburst Enterprise deployment in the AWS Cloud](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/12ae0463-9029-4a32-9d7b-70cdb5406fb0/images/e9975d3a-f75b-41a2-8c08-5b82539adf8c.png)
+![High-level architecture diagram of Starburst Enterprise deployment in the AWS Cloud](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/12ae0463-9029-4a32-9d7b-70cdb5406fb0/images/e9975d3a-f75b-41a2-8c08-5b82539adf8c.png)
 
 Please note the following:
 + Starburst is not a data virtualization platform. It is a SQL-based massively parallel processing (MPP) query engine that forms the basis of an overall data mesh strategy for analytics.
@@ -57,7 +57,7 @@ Please note the following:
 
 You can accelerate data migration projects by using Starburst because Starburst enables insights across all of your data, prior to migrating it. The following image shows the typical process for migrating data by using Starburst.
 
-![Process flow for migrating data to the AWS Cloud by using Starburst](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/12ae0463-9029-4a32-9d7b-70cdb5406fb0/images/e79b0084-7275-4824-8854-646236ec23dc.png)
+![Process flow for migrating data to the AWS Cloud by using Starburst](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/12ae0463-9029-4a32-9d7b-70cdb5406fb0/images/e79b0084-7275-4824-8854-646236ec23dc.png)
 
 **Roles**
 

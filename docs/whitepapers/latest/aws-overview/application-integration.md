@@ -2,14 +2,14 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/application-integration.html
 ---
 
-# ![AWS Application Integration category icon](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/application-integration-icon.jpg)Application integration
+# ![AWS Application Integration category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/application-integration-icon.jpg)Application integration
 <a name="application-integration"></a>
 
 Application integration on AWS is a suite of services that enable communication between decoupled components within microservices, distributed systems, and serverless applications. You don’t need to refactor your entire architecture to benefit—decoupling applications at any scale can reduce the impact of changes, making it easier to update and faster to release new features.
 
 Each service is described after the diagram. To help you decide which service best meets your needs, see [Choosing an AWS application integration service](https://docs.aws.amazon.com/decision-guides/latest/application-integration-on-aws-how-to-choose/application-integration-on-aws-how-to-choose.html) or [Amazon SQS, Amazon SNS, or Amazon EventBridge?](https://docs.aws.amazon.com/decision-guides/latest/sns-or-sqs-or-eventbridge/sns-or-sqs-or-eventbridge.html). For general information, see [Application Integration on AWS](https://aws.amazon.com/products/application-integration/).
 
-![Diagram showing AWS application integration services](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/operational-responsibility.png)
+![Diagram showing AWS application integration services](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/operational-responsibility.png)
 
 **Topics**
 + [AWS Step Functions](#aws-step-functions)

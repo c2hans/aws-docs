@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multit
 
 This section describes a scenario where OPA is used to make access decisions about which users are allowed to access information in a fictional Payroll microservice. Rego code snippets are provided to demonstrate how you can use Rego to render access control decisions. These examples are neither exhaustive nor a full exploration of Rego and OPA capabilities. For a more thorough overview of Rego, we recommend that you consult the [Rego documentation](https://www.openpolicyagent.org/docs/latest/#rego) on the OPA website.
 
-![Basic ABAC with OPA and Rego](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/f536805f-7e7a-4fcc-8be6-ae4fc823f9d5.png)
+![Basic ABAC with OPA and Rego](https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/f536805f-7e7a-4fcc-8be6-ae4fc823f9d5.png)
 
 **Basic OPA rules example**
 

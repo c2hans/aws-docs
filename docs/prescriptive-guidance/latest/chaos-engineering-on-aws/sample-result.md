@@ -30,7 +30,7 @@ Observability data:
 |
 | Expected | Observed (screenshot) |
 | --- |--- |
-| + LCP is less than 4 seconds for P99 of requests.<br />+ Response latency is less than 500 ms.<br />+ There are no 4XX or 5XX errors. | ![Steady state report 1 for chaos experiment.](http://docs.aws.amazon.com/prescriptive-guidance/latest/chaos-engineering-on-aws/images/guide-img/4119a10b-a241-4431-9681-0b62a5da1a70/images/ad6aab54-b8c2-476a-8ecf-af25c69f20cd.png)![Steady state report 2 for chaos experiment.](http://docs.aws.amazon.com/prescriptive-guidance/latest/chaos-engineering-on-aws/images/guide-img/4119a10b-a241-4431-9681-0b62a5da1a70/images/a71aa9bd-8487-423f-9431-218e181c5e4b.png) |
+| + LCP is less than 4 seconds for P99 of requests.<br />+ Response latency is less than 500 ms.<br />+ There are no 4XX or 5XX errors. | ![Steady state report 1 for chaos experiment.](https://docs.aws.amazon.com/prescriptive-guidance/latest/chaos-engineering-on-aws/images/guide-img/4119a10b-a241-4431-9681-0b62a5da1a70/images/ad6aab54-b8c2-476a-8ecf-af25c69f20cd.png)![Steady state report 2 for chaos experiment.](https://docs.aws.amazon.com/prescriptive-guidance/latest/chaos-engineering-on-aws/images/guide-img/4119a10b-a241-4431-9681-0b62a5da1a70/images/a71aa9bd-8487-423f-9431-218e181c5e4b.png) |
 
 ## Fault injection
 <a name="fault-injection"></a>
@@ -48,7 +48,7 @@ Observability data:
 |
 | Expected | Observed (screenshot) |
 | --- |--- |
-| + LCP should remain under 4 seconds for P99.<br />+ Response time should remain under 500 ms.<br />+ No 4XX or 5XX errors should be encountered. | ![Fault observation report 1 for chaos experiment.](http://docs.aws.amazon.com/prescriptive-guidance/latest/chaos-engineering-on-aws/images/guide-img/4119a10b-a241-4431-9681-0b62a5da1a70/images/bc050edb-6b1b-41fc-b24f-41bb7c2911ad.png)![Fault observation report 2 for chaos experiment.](http://docs.aws.amazon.com/prescriptive-guidance/latest/chaos-engineering-on-aws/images/guide-img/4119a10b-a241-4431-9681-0b62a5da1a70/images/31e90fe3-1dc9-43a1-b980-76fecfc1baea.png) |
+| + LCP should remain under 4 seconds for P99.<br />+ Response time should remain under 500 ms.<br />+ No 4XX or 5XX errors should be encountered. | ![Fault observation report 1 for chaos experiment.](https://docs.aws.amazon.com/prescriptive-guidance/latest/chaos-engineering-on-aws/images/guide-img/4119a10b-a241-4431-9681-0b62a5da1a70/images/bc050edb-6b1b-41fc-b24f-41bb7c2911ad.png)![Fault observation report 2 for chaos experiment.](https://docs.aws.amazon.com/prescriptive-guidance/latest/chaos-engineering-on-aws/images/guide-img/4119a10b-a241-4431-9681-0b62a5da1a70/images/31e90fe3-1dc9-43a1-b980-76fecfc1baea.png) |
 
 ## Recovery
 <a name="recovery"></a>
@@ -61,4 +61,4 @@ Observability data:
 |
 | Expected | Observed (screenshot) |
 | --- |--- |
-| LCP P99 should be under 4 seconds with the average under 2.5 seconds. |  ![Sample recovery results from chaos experiment.](http://docs.aws.amazon.com/prescriptive-guidance/latest/chaos-engineering-on-aws/images/guide-img/4119a10b-a241-4431-9681-0b62a5da1a70/images/5fafa73b-ee67-4d02-8daf-511ae18c44e1.png) |
+| LCP P99 should be under 4 seconds with the average under 2.5 seconds. |  ![Sample recovery results from chaos experiment.](https://docs.aws.amazon.com/prescriptive-guidance/latest/chaos-engineering-on-aws/images/guide-img/4119a10b-a241-4431-9681-0b62a5da1a70/images/5fafa73b-ee67-4d02-8daf-511ae18c44e1.png) |

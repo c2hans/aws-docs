@@ -11,7 +11,7 @@ Local MCP servers run directly on a developer's workstation or laptop, operating
 
 The local architecture eliminates network latency entirely, as communication occurs through standard input/output (stdio) streams or inter-process communication (IPC) mechanisms. AI applications like Kiro, Claude Desktop/Code, Cursor, or custom development tools connect to local MCP servers through configuration files that specify the server's executable path and startup parameters.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-deployment-patterns-on-aws/images/guide-img/596b5834-b415-44f3-9601-59b1ced57c6b/images/c42148ec-ff35-4172-afda-251cb0be02dd.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-deployment-patterns-on-aws/images/guide-img/596b5834-b415-44f3-9601-59b1ced57c6b/images/c42148ec-ff35-4172-afda-251cb0be02dd.png)
 
 [AWS Documentation MCP server](https://awslabs.github.io/mcp/servers/aws-documentation-mcp-server)
 

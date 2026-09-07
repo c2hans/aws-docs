@@ -15,4 +15,4 @@ AWS Systems Manager Application Manager gives you an application-level view into
 
  **Depicts an AWS Solution stack in Application Manager**
 
-![appregistry1](http://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws/images/appregistry1.png)
+![appregistry1](https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws/images/appregistry1.png)

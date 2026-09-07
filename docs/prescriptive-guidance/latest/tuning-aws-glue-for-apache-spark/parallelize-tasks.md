@@ -14,18 +14,18 @@ If you do not have enough parallelism, the following symptoms will be recorded i
 
 Check the **CPU Load** and **Memory Utilization**. If some executors are not processing during a phase of your job, it's appropriate to improve parallelism. In this case, during the visualized timeframe, **Executor 1** was performing a task, but the remaining executors (2, 3, and 4) were not. You can infer that those executors were not assigned tasks by the Spark driver.
 
-![Graph showing driver and only one executor.](http://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/ae5f1f45-5e8e-4a81-b065-1b168ccfce5a.png)
+![Graph showing driver and only one executor.](https://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/ae5f1f45-5e8e-4a81-b065-1b168ccfce5a.png)
 
 ## Spark UI
 <a name="parallelize-spark"></a>
 
 On the **Stage** tab in the Spark UI, you can see** **the* number of tasks *in a stage. In this case, Spark has performed only one task.
 
-![""](http://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/f09c19af-ae0c-4f59-900d-579ab263978f.png)
+![""](https://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/f09c19af-ae0c-4f59-900d-579ab263978f.png)
 
 Additionally, the event timeline shows **Executor 1** processing one task. This means that the work in this stage was performed entirely on one executor, while the others were idle.
 
-![Event timeline showing only one task.](http://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/027e75e3-a7c5-4430-9e5f-c2fc2d8b2f0d.png)
+![Event timeline showing only one task.](https://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/027e75e3-a7c5-4430-9e5f-c2fc2d8b2f0d.png)
 
 If you observe these symptoms, try the following solutions for each data source.
 

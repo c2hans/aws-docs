@@ -10,7 +10,7 @@ Enable Capacity creates organizational pull for changes by rewarding and recogni
 + [5.2 Redesign workstreams and roles](#capacity-workstreams)
 + [5.3 Discuss gaps and manage resistance](#capacity-gaps)
 
-![Enable Capacity phase in AWS Change Acceleration 6-Point Framework and OCM Toolkit](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ocm/images/guide-img/f0dc8b97-6d82-45ff-86d7-7ed62d7be8b3/images/697a04f2-52bd-4508-9437-89362726ba92.png)
+![Enable Capacity phase in AWS Change Acceleration 6-Point Framework and OCM Toolkit](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ocm/images/guide-img/f0dc8b97-6d82-45ff-86d7-7ed62d7be8b3/images/697a04f2-52bd-4508-9437-89362726ba92.png)
 
 ## 5.1 Provide rewards and recognition
 <a name="capacity-rewards"></a>

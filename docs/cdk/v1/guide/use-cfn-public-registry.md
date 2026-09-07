@@ -23,7 +23,7 @@ Extensions published by AWS do not require activation; they are always available
 
 To activate a third-party extension through the AWS Management Console, or to simply see what resources are available, follow these steps.
 
-![Registry Public extensions page showing filter options and AWSQS::EKS:: Cluster extension details.](http://docs.aws.amazon.com/cdk/v1/guide/images/activate-cfn-extension.png)
+![Registry Public extensions page showing filter options and AWSQS::EKS:: Cluster extension details.](https://docs.aws.amazon.com/cdk/v1/guide/images/activate-cfn-extension.png)
 
 1. Log in to the AWS account in which you want to use the extension, then switch to the region where you want to use it.
 

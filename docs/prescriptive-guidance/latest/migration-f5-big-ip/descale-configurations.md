@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f
 
 The following diagram helps you assess if descaling is appropriate for your needs and requirements.
 
-![Process flow for descaling a configuration.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f5-big-ip/images/guide-img/migration-f5-big-ip/images/F5-descale.png)
+![Process flow for descaling a configuration.](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f5-big-ip/images/guide-img/migration-f5-big-ip/images/F5-descale.png)
 
 The migration will also create new considerations in the following areas.
 + **Network topology** – AWS does not currently support `802.1q `tagged VLANs, so the number of instance interfaces (minus one for management) present a limit to the number of networks that an instance can support. If you require a specific topology, you need to evaluate it compared to the different instances that F5 supports in the AWS Cloud.

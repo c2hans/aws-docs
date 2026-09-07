@@ -15,7 +15,7 @@ As more and more businesses move their workloads to the cloud, optimizing costs 
 
 AWS offers a range of flexible cost optimization choices for licensing. These licensing options are designed to help you reduce costs, maintain compliance, and meet your business needs.
 
-![Review licensing options, such as purchasing or bringing licenses.](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/d4e0e89d-6a10-49c8-890e-8aec5b49de98.png)
+![Review licensing options, such as purchasing or bringing licenses.](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/d4e0e89d-6a10-49c8-890e-8aec5b49de98.png)
 
 AWS categorizes licenses into three main types:
 
@@ -66,7 +66,7 @@ Licensing at the physical core level enables you to license just the physical co
 
 As an example, consider an R5 dedicated host with 48 cores, which translates to 96 vCPUs. If you use Windows Server Datacenter edition, you only need 48 licenses. This enables you to deploy a combination of instances with up to 96 vCPUs, as the following diagram shows.
 
-![Physical-level licenses](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/e6a6f8fe-522f-4558-8a66-00d2ac4a0f09.png)
+![Physical-level licenses](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/e6a6f8fe-522f-4558-8a66-00d2ac4a0f09.png)
 
 This approach can be especially cost-effective if you have enough workloads to maximize the number of instances that you can run on a host. By licensing at the physical core level, you can avoid additional licensing costs for each instance and achieve the best possible value for your licensing investment.
 
@@ -82,7 +82,7 @@ As with the previous example of the R5 dedicated host, if you license SQL Server
 
 [SQL Server consolidation](consolidate-instances.md) is the process of combining multiple SQL Server instances onto one server. SQL Server requires a minimum of four core licenses per instance, even if the instance only has two vCPUs. This means that running SQL Server on servers with less than four cores can cause you to over-license these instances and use more licenses than necessary.
 
-![SQL Server consolidation](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/8869e137-c586-4733-a781-b73865658e34.png)
+![SQL Server consolidation](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/8869e137-c586-4733-a781-b73865658e34.png)
 
 For example, consolidating two instances with two vCPUs each into a single instance with four vCPUs can reduce the licensing requirement by 50 percent. This is because only four core licenses are required instead of eight.
 

@@ -14,7 +14,7 @@ Deploying this solution with the default parameters deploys the following compon
 
  **Live streaming on AWS with MediaStore architecture**
 
-![live streaming on aws with mediastore](http://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws-with-amazon-s3/images/live-streaming-on-aws-with-mediastore.png)
+![live streaming on aws with mediastore](https://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws-with-amazon-s3/images/live-streaming-on-aws-with-mediastore.png)
 
 The AWS CloudFormation template launches the AWS products and services necessary to ingest, transcode, and deliver live streaming video.
 

@@ -20,7 +20,7 @@ IDT for FreeRTOS generates test reports that you can submit to AWS Partner Netwo
 
 The following diagram shows the test infrastructure setup for FreeRTOS qualification.
 
-![Flowchart that shows how AWS IoT Core interacts with your computer and the microcontroller.](http://docs.aws.amazon.com/freertos/latest/userguide/images/devicetester_afr.png)
+![Flowchart that shows how AWS IoT Core interacts with your computer and the microcontroller.](https://docs.aws.amazon.com/freertos/latest/userguide/images/devicetester_afr.png)
 <a name="test-resources-desc"></a>
 
 IDT for FreeRTOS organizes test resources into test suites and test groups:

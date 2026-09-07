@@ -33,7 +33,7 @@ AWS Batch processes these jobs and uploads the backup data to an Amazon Simple S
 ## Architecture
 <a name="automate-backups-for-amazon-rds-for-postgresql-db-instances-by-using-aws-batch-architecture"></a>
 
-![Architecture to back up Amazon RDS for PostgreSQL DB instances by using the pg_dump utility.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/3283f739-980b-43d4-aca0-9d77a2ce3b85/images/352e2eab-1b7d-44ec-840a-a772a175e873.png)
+![Architecture to back up Amazon RDS for PostgreSQL DB instances by using the pg_dump utility.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/3283f739-980b-43d4-aca0-9d77a2ce3b85/images/352e2eab-1b7d-44ec-840a-a772a175e873.png)
 
 **Technology stack  **
 + Amazon CloudWatch Events

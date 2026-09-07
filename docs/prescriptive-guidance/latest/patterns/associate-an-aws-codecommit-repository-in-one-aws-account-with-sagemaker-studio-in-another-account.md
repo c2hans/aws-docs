@@ -40,7 +40,7 @@ This pattern applies to SageMaker AI Studio Classic only, not to RStudio on Amaz
 
 The following diagram shows an architecture that associates a CodeCommit repository from Account A to SageMaker AI Studio Classic in Account B.
 
-![Architecture diagram for cross-account association](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/d40df9eb-6ee2-4cb8-8257-051fa624e52a/images/abb89a66-fc8f-4e72-8f45-f0f44c2ec6ce.png)
+![Architecture diagram for cross-account association](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/d40df9eb-6ee2-4cb8-8257-051fa624e52a/images/abb89a66-fc8f-4e72-8f45-f0f44c2ec6ce.png)
 
 The diagram shows the following workflow:
 

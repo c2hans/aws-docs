@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-
 
  You can also move data in the other direction: from the *outside-in*. For example, you can copy query results for sales of products in a given Region from your data warehouse into your data lake, to run product recommendation algorithms against a larger data set using machine learning. Think of this concept as *outside-in data movement*.
 
-![Diagram showing outside-in data movement](http://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-aws-modern-data/images/outside-in-data-movement.png)
+![Diagram showing outside-in data movement](https://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-aws-modern-data/images/outside-in-data-movement.png)
 
 ## Derive insights from Amazon DynamoDB data for real-time prediction with Amazon SageMaker AI
 <a name="derive-insights-from-amazon-dynamodb-data-for-real-time-prediction-with-amazon-sagemaker"></a>
@@ -18,7 +18,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-
 
  The following diagram illustrates the Modern Data outside-in data movement with DynamoDB data to derive personalized recommendations.
 
-![Diagram showing how to derive insights from Amazon DynamoDB data for real-time prediction with Amazon SageMaker AI](http://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-aws-modern-data/images/real-time-prediction-insights.png)
+![Diagram showing how to derive insights from Amazon DynamoDB data for real-time prediction with Amazon SageMaker AI](https://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-aws-modern-data/images/real-time-prediction-insights.png)
 
  The steps that data follows through the architecture are as follows:
 
@@ -37,7 +37,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-
 
  The following diagram illustrates the Modern Data outside-in data movement with Amazon Aurora Postgres-changed data to derive analytics.
 
-![Diagram showing how to derive insights from Amazon Aurora data with Apache Hudi, AWS Glue, AWS DMS, and Amazon Redshift](http://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-aws-modern-data/images/insights-from-hudi-glue-dms.png)
+![Diagram showing how to derive insights from Amazon Aurora data with Apache Hudi, AWS Glue, AWS DMS, and Amazon Redshift](https://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-aws-modern-data/images/insights-from-hudi-glue-dms.png)
 
  The steps that data follows through the architecture are as follows:
 

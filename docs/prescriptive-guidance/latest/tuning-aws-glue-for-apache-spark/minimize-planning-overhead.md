@@ -13,14 +13,14 @@ As discussed [Key topics in Apache Spark](key-topics-apache-spark.md), the Spark
 Check** CPU Load** and **Memory Utilization** for the following situations:
 + Spark driver **CPU Load** and **Memory Utilization** are recorded as high. Normally, the Spark driver doesn't process your data, so CPU load and memory utilization don't spike. However, if the Amazon S3 data source has too many small files, listing all the S3 objects and managing a large number of tasks might cause resource utilization to be high.
 + There is a long gap before processing starts in Spark executor. In the following example screenshot, the Spark executor's CPU Load is too low until 10:57, even though the AWS Glue job started at 10:00. This indicates that the Spark driver might be taking a long time to generate an execution plan. In this example, retrieving the large number of partitions in the Data Catalog and listing the large number of small files in the Spark driver is taking a long time.
-![Graph showing driver and executors.](http://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/20b000ee-02ae-4653-8e07-2c9163c8ce47.png)
+![Graph showing driver and executors.](https://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/20b000ee-02ae-4653-8e07-2c9163c8ce47.png)
 
 ## Spark UI
 <a name="overhead-spark"></a>
 
 On the **Job** tab in the Spark UI, you can see the **Submitted** time. In the following example, the Spark driver started job0 at 10:56:46, even though the AWS Glue job started at 10:00:00.
 
-![""](http://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/50c144d1-8b21-4df0-ba9f-e90342229208.png)
+![""](https://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/50c144d1-8b21-4df0-ba9f-e90342229208.png)
 
 You can also see the **Tasks (for all stages): Succeeded/Total** time on the **Job** tab. In this case, the number of tasks is recorded as `58100`. As explained in the Amazon S3 section of the [Parallelize tasks](parallelize-tasks.md) page, the number of tasks approximately corresponds to the number of S3 objects. This means that there are about 58,100 objects in Amazon S3.
 

@@ -23,7 +23,7 @@ You can assess your shuffle performance in CloudWatch metrics and in the Spark U
 
 If the **Shuffle Bytes Written** value is high compared with **Shuffle Bytes Read**, your Spark job might use [shuffle operations](https://spark.apache.org/docs/latest/rdd-programming-guide.html#shuffle-operations) such as `join()` or `groupByKey()`.
 
-![Data Shuffle Across Executors (Bytes) graph showing a spike in shuffle bytes written.](http://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/2e033b62-cdff-4bb0-9bea-b8529167c960.png)
+![Data Shuffle Across Executors (Bytes) graph showing a spike in shuffle bytes written.](https://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/2e033b62-cdff-4bb0-9bea-b8529167c960.png)
 
 ## Spark UI
 <a name="shuffle-spark"></a>
@@ -34,7 +34,7 @@ In the following screenshot, each executor exchanges approximately 18.6GB/402000
 
 The **Shuffle Spill (Disk)** column shows a large amount of data spill memory to disk, which might cause a full disk or a performance issue.
 
-![""](http://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/fda93bf5-86f4-47b7-b04d-b1141ec6b987.png)
+![""](https://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/fda93bf5-86f4-47b7-b04d-b1141ec6b987.png)
 
 If you observe these symptoms and the stage takes too long when compared to your performance goals, or it fails with `Out Of Memory` or `No space left on device` errors, consider the following solutions.
 
@@ -77,7 +77,7 @@ Spark supports two types of join: shuffle join and broadcast hash join. A broadc
 
 The following diagram shows the high-level structure and steps of a broadcast hash join and a shuffle join.
 
-![Broadcast join with direct connections between tables and joined table, and shuffle join with two shuffle phases in between the tables and joined table.](http://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/09eae7f2-2f0f-4f42-8aec-39b27baf77fb.png)
+![Broadcast join with direct connections between tables and joined table, and shuffle join with two shuffle phases in between the tables and joined table.](https://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/09eae7f2-2f0f-4f42-8aec-39b27baf77fb.png)
 
 The details of each join are as follows:
 + Shuffle join:
@@ -129,7 +129,7 @@ SELECT /*+ SHUFFLE_REPLICATE_NL(t1) /  FROM t1 INNER JOIN t2 ON t1.key = t2.key;
 
 *The sort-merge join *requires two phases, shuffle and sort, and then merge. These two phases can overload the Spark executor and cause OOM and performance issues when some of the executors are merging and others are sorting simultaneously. In such cases, it might be possible to efficiently join by using [bucketing](https://spark.apache.org/docs/latest/sql-data-sources-load-save-functions.html#bucketing-sorting-and-partitioning). Bucketing will pre-shuffle and pre-sort your input on join keys, and then write that sorted data to an intermediary table. The cost of the shuffle and sort steps can be reduced when joining large tables by defining the sorted intermediary tables in advance.
 
-![Sort-merge join has the additional shuffle and sort steps.](http://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/ce03432b-a979-40da-ae19-0f7084968f38.png)
+![Sort-merge join has the additional shuffle and sort steps.](https://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/ce03432b-a979-40da-ae19-0f7084968f38.png)
 
 Bucketed tables are useful for the following:
 + Data joined frequently over the same key, such as `account_id`
@@ -161,9 +161,9 @@ Data skew is one of the most common causes of a bottleneck for Spark jobs. It oc
 
 To identify data skew, assess the following metrics in the Spark UI:
 + On the **Stage** tab in the Spark UI, examine the **Event Timeline** page. You can see an uneven distribution of tasks in the following screenshot. Tasks that are distributed unevenly or are taking too long to run can indicate data skew.
-![Executor computing time is much longer for one task than for the others.](http://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/1ceb4119-615b-42be-b563-83b3b66d703f.png)
+![Executor computing time is much longer for one task than for the others.](https://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/1ceb4119-615b-42be-b563-83b3b66d703f.png)
 + Another important page is **Summary Metrics**, which shows statistics for Spark tasks. The following screenshot shows metrics with percentiles for **Duration**, **GC Time**, **Spill (memory)**, **Spill (disk)**, and so on.
-![Summary Metrics table with the Duration row highlighted.](http://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/58037157-4a0f-4847-89f4-1a279a214068.png)
+![Summary Metrics table with the Duration row highlighted.](https://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/58037157-4a0f-4847-89f4-1a279a214068.png)
 
   When the tasks are evenly distributed, you will see similar numbers in all the percentiles. When there is data skew, you will see very biased values in each percentile. In the example, task duration is less than 13 seconds in **Min**, **25th percentile**, **Median**, and **75th percentile**. While the **Max** task processed 100 times more data than the **75th percentile**, its duration of 6.4 minutes is about 30 times longer. It means that at least one task (or up to 25 percent of the tasks) took far longer than the rest of the tasks.
 

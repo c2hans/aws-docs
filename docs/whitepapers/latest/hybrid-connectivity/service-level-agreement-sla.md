@@ -32,4 +32,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/s
 
 Review [AWS Direct Connect Resiliency Recommendations](https://aws.amazon.com/directconnect/resiliency-recommendation/) and [Resiliency Toolkit](https://docs.aws.amazon.com/directconnect/latest/UserGuide/resiliency_toolkit.html).
 
-![Diagram showing an SLA consideration decision tree](http://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/images/sla-decision-tree.png)
+![Diagram showing an SLA consideration decision tree](https://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/images/sla-decision-tree.png)

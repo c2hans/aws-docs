@@ -36,7 +36,7 @@ Migrating to Amazon RDS for Oracle enables you to focus on your business and app
 
 **Migration architecture**
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/4db0c731-0897-4eb8-a06f-b648c3d94b2c/images/636c2a69-5a78-482d-ae81-55e9ec975ead.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/4db0c731-0897-4eb8-a06f-b648c3d94b2c/images/636c2a69-5a78-482d-ae81-55e9ec975ead.png)
 
 ## Tools
 <a name="migrate-an-oracle-database-from-amazon-ec2-to-amazon-rds-for-oracle-using-aws-dms-tools"></a>

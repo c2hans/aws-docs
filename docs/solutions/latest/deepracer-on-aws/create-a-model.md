@@ -14,13 +14,13 @@ To create a model, find the **Your models** page in the left sidebar and click *
 
 First, you’ll give your model a **name** and a description (optional).
 
-![AWS DeepRacer Create Model](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_create_model_page1_1.png)
+![AWS DeepRacer Create Model](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_create_model_page1_1.png)
 
 Then, you’ll choose a **race type** to optimize your model for.
 +  **Time trial** - aims to go around the track as quickly as possible, while staying on the track.
 +  **Object avoidance** - aims to complete the fastest lap while avoiding objects on the track.
 
-![AWS DeepRacer Create Model - Race Type](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_create_model_page1_2.png)
+![AWS DeepRacer Create Model - Race Type](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_create_model_page1_2.png)
 
 If you select object avoidance, you’ll be presented with additional options that allow you to select the whether you’d like the objects to avoid to be in fixed or random locations, as well as the number of objects to place on the track. If you choose to have the objects placed in a fixed location, you can specify where you’d like them to be placed by selecting:
 +  **Lane placement** - whether the object is placed inside or outside of the lane.
@@ -32,7 +32,7 @@ Finally, you’ll set the **Minimum evaluation trials** parameter. Minimum evalu
 
 When you’re ready to move on to the next step, click **Next**.
 
-![AWS DeepRacer Create Model - choose vehicle sensors and hyperparameters](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_create_model_page2_1.png)
+![AWS DeepRacer Create Model - choose vehicle sensors and hyperparameters](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_create_model_page2_1.png)
 
 ## Vehicle sensors and hyperparameters
 <a name="vehicle-sensors-and-hyperparameters-2"></a>
@@ -81,7 +81,7 @@ You should experiment with different sensors on your AWS DeepRacer vehicle to pr
 ## Training algorithms and Hyperparameters
 <a name="training-algorithms-and-hyperparameters"></a>
 
-![AWS DeepRacer Create Model - Training algorithms and hyperparameters](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_create_model_page_2_2.png)
+![AWS DeepRacer Create Model - Training algorithms and hyperparameters](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_create_model_page_2_2.png)
 
 +  **PPO** - proximal policy optimization - teaches the vehicle by letting it practice driving and gradually improving its skills through small, careful adjustments based on what it just learned, similar to how you might refine your technique after each practice lap.
 +  **SAC** - soft actor-critic - allows the vehicle to learn from both its current driving attempts and past experiences, encouraging it to try new approaches while still aiming for the best lap times, making it more flexible but requiring more fine-tuning to get right.
@@ -110,9 +110,9 @@ When you’re ready to move on to the next step, click **Next**.
 ## Action space
 <a name="action-space"></a>
 
-![AWS DeepRacer Create Model - Action Space](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_create_model_page_3_1.png)
+![AWS DeepRacer Create Model - Action Space](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_create_model_page_3_1.png)
 
-![AWS DeepRacer Create Model - Action Space](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_create_model_page_3_2.png)
+![AWS DeepRacer Create Model - Action Space](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_create_model_page_3_2.png)
 
 In reinforcement learning, the **action space** is the complete set of choices available to the vehicle as it drives around the track. In the DeepRacer on AWS console, you can train your car using either a continuous action space or a discrete action space.
 
@@ -143,7 +143,7 @@ On this page, you’ll select a **vehicle shell**, which has no performance impa
 
 When you’re ready to move on to the next step, click **Next**.
 
-![AWS DeepRacer Create Model - vehicle shell](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_create_model_page_4.png)
+![AWS DeepRacer Create Model - vehicle shell](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_create_model_page_4.png)
 
 ## Reward function
 <a name="reward-function"></a>
@@ -158,7 +158,7 @@ The training will stop when the specified criteria is met. When your model has s
 
 When you’re ready to proceed, click **Train your model**.
 
-![AWS DeepRacer Create Model - reward function](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_create_model_page_5.png)
+![AWS DeepRacer Create Model - reward function](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_create_model_page_5.png)
 
 ### Input parameters
 <a name="input-parameters"></a>
@@ -215,11 +215,11 @@ A more detailed technical reference of the input parameters is as follows.
 
 A `Boolean` flag to indicate whether the agent is on-track or off-track. It’s off-track (`False`) if any of its wheels are outside of the track borders. It’s on-track (`True`) if all of the wheels are inside the two track borders. The following illustration shows that the agent is on-track.
 
-![Image showing agent being on-track](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/all-wheels-on-track-001.png)
+![Image showing agent being on-track](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/all-wheels-on-track-001.png)
 
 The following illustration shows that the agent is off-track.
 
-![Image showing agent being off-track](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/all-wheels-on-track-002.png)
+![Image showing agent being off-track](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/all-wheels-on-track-002.png)
 
  **Example:** *A reward function using the `all_wheels_on_track` parameter*
 
@@ -331,7 +331,7 @@ The zero-based indices of the two closest objects to the agent’s current posit
 
 Displacement, in meters, between the agent center and the track center. The observable maximum displacement occurs when any of the agent’s wheels are outside a track border and, depending on the width of the track border, can be slightly smaller or larger than half the `track_width`.
 
-![Image showing vehicle distance from center](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/distance-from-center-001.png)
+![Image showing vehicle distance from center](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/distance-from-center-001.png)
 
  **Example:** *A reward function using the `distance_from_center` parameter*
 
@@ -369,7 +369,7 @@ def reward_function(params):
 
 Heading direction, in degrees, of the agent with respect to the x-axis of the coordinate system.
 
-![Image showing vehicle heading](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/heading-001.png)
+![Image showing vehicle heading](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/heading-001.png)
 
  **Example:** See the [closest\_waypoints](#closest_waypoints) reward function for an example that uses the `heading` parameter.
 
@@ -482,7 +482,7 @@ Percentage of track completed.
 
 The observed speed of the agent, in meters per second (m/s).
 
-![Image showing agent speed](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/speed-001.png)
+![Image showing agent speed](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/speed-001.png)
 
  **Example:** See the [all\_wheels\_on\_track](#all_wheels_on_track) example for a reward function that uses the `progress` parameter.
 
@@ -495,7 +495,7 @@ The observed speed of the agent, in meters per second (m/s).
 
 Steering angle, in degrees, of the front wheels from the center line of the agent. The negative sign (-) means steering to the right and the positive (\+) sign means steering to the left. The agent center line is not necessarily parallel with the track center line as is shown in the following illustration.
 
-![Image showing agent steering angle](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/steering-angle-001.png)
+![Image showing agent steering angle](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/steering-angle-001.png)
 
  **Example:** *A reward function using the `steering_angle` parameter*
 
@@ -572,7 +572,7 @@ The track length in meters. `Lmax` is track-dependent.
 
 Track width in meters.
 
-![Image showing track width](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/track-width-001.png)
+![Image showing track width](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/track-width-001.png)
 
  **Example:** *A reward function using the `track_width` parameter*
 
@@ -608,7 +608,7 @@ def reward_function(params):
 
 Location, in meters, of the agent center along the x and y axes, of the simulated environment containing the track. The origin is at the lower-left corner of the simulated environment.
 
-![Image showing x-y coordinates of agent on track](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer-reward-function-input-x-y.png)
+![Image showing x-y coordinates of agent on track](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer-reward-function-input-x-y.png)
 
 #### waypoints
 <a name="waypoints"></a>
@@ -619,7 +619,7 @@ Location, in meters, of the agent center along the x and y axes, of the simulate
 
 An ordered list of track-dependent `Max` milestones along the track center. For a looped track, the first and last waypoints are the same. For a straight or other non-looped track, the first and last waypoints are different.
 
-![Image showing waypoints on track](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer-reward-function-input-waypoints.png)
+![Image showing waypoints on track](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer-reward-function-input-waypoints.png)
 
 ### Sample reward functions
 <a name="sample-reward-functions"></a>

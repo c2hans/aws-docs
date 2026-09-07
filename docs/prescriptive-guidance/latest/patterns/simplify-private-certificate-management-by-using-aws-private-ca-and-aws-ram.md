@@ -54,11 +54,11 @@ This pattern provides two options for sharing to AWS Organizations:
 
 **Option 1** ─ Create the share at the organization level. All accounts in the organization can issue the private certificates by using the shared CA, as shown in the following diagram.
 
-![Share a CA at the organization level](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/34701b79-c670-4c5d-8c8b-00c7fbd12d06/images/3765d327-3097-4134-a701-28753e1abb14.png)
+![Share a CA at the organization level](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/34701b79-c670-4c5d-8c8b-00c7fbd12d06/images/3765d327-3097-4134-a701-28753e1abb14.png)
 
 **Option 2 **─  Create the share at the organizational unit (OU) level. Only the accounts in the specified OU can issue the private certificates by using the shared CA. For example, in the following diagram, if the share is created at the Sandbox OU level, both Developer 1 and Developer 2 can issue private certificates by using the shared CA.
 
-![Share a CA at the OU level](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/34701b79-c670-4c5d-8c8b-00c7fbd12d06/images/b8385d18-42d1-4924-aa69-cc4a3e96bf56.png)
+![Share a CA at the OU level](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/34701b79-c670-4c5d-8c8b-00c7fbd12d06/images/b8385d18-42d1-4924-aa69-cc4a3e96bf56.png)
 
 ## Tools
 <a name="simplify-private-certificate-management-by-using-aws-private-ca-and-aws-ram-tools"></a>

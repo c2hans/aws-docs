@@ -32,7 +32,7 @@ Grab map styles that are not listed in this section are currently not supported.
 
 **Grab Standard Light Map**
 
-![An image of Grab's standard light map style.](http://docs.aws.amazon.com/location/previous/developerguide/images/VectorGrabMonoStreet.png)
+![An image of Grab's standard light map style.](https://docs.aws.amazon.com/location/previous/developerguide/images/VectorGrabMonoStreet.png)
 
 **Map style name**: `VectorGrabStandardLight`
 
@@ -50,7 +50,7 @@ Amazon Location serves fonts using `[GetMapGlyphs](https://docs.aws.amazon.com/l
 
 **Grab Standard Dark Map**
 
-![An image of Grab's standard dark map style.](http://docs.aws.amazon.com/location/previous/developerguide/images/VectorGrabDarkStreet.png)
+![An image of Grab's standard dark map style.](https://docs.aws.amazon.com/location/previous/developerguide/images/VectorGrabDarkStreet.png)
 
 **Map style name**: `VectorGrabStandardDark`
 

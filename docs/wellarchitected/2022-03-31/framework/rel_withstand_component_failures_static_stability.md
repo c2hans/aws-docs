@@ -11,7 +11,7 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 
  Static stability for compute deployment (such as EC2 instances or containers) will result in the highest reliability. This must be weighed against cost concerns. It’s less expensive to provision less compute capacity and rely on launching new instances in the case of a failure. But for large-scale failures (such as an Availability Zone failure) this approach is less effective because it relies on reacting to impairments as they happen, rather than being prepared for those impairments before they happen. Your solution should weigh reliability versus the cost needs for your workload. By using more Availability Zones, the amount of additional compute you need for static stability decreases.
 
-![Diagram showing static stability of EC2 instances across Availability Zones](http://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/images/static-stability.png)
+![Diagram showing static stability of EC2 instances across Availability Zones](https://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/images/static-stability.png)
 
  After traffic has shifted, use AWS Auto Scaling to asynchronously replace instances from the failed zone and launch them in the healthy zones.
 

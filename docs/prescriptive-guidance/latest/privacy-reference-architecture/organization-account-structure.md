@@ -12,7 +12,7 @@ We would love to hear from you. Please provide feedback on the AWS PRA by taking
 
 The following diagram shows the high-level account and organizational unit (OU) structure of the AWS PRA. For the most part, the organizational structure of the AWS PRA matches the [organizational structure of the AWS SRA](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/architecture.html).
 
-![The AWS Privacy Reference Architecture (AWS PRA) account structure in AWS Organizations.](http://docs.aws.amazon.com/prescriptive-guidance/latest/privacy-reference-architecture/images/guide-img/a4379862-3434-48e4-8691-64db36363b08/images/3419edeb-2b5b-4d49-b531-362393bb7405.png)
+![The AWS Privacy Reference Architecture (AWS PRA) account structure in AWS Organizations.](https://docs.aws.amazon.com/prescriptive-guidance/latest/privacy-reference-architecture/images/guide-img/a4379862-3434-48e4-8691-64db36363b08/images/3419edeb-2b5b-4d49-b531-362393bb7405.png)
 
 The deviations from the AWS SRA organization include:
 + The AWS PRA adds the Personal Data (PD) OU, which is dedicated for collecting, storing, and processing personal data. This structural separation provides flexibility so that you can define specific, fine-grained controls to help protect personal data from unintended disclosure.

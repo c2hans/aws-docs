@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-object-and-rule
 +  Request orchestration
 +  Automatic resource and rule synchronization, and ANFW configuration
 
-![Dynamic Object and Rule Extensions for AWS Network Firewall architecture](http://docs.aws.amazon.com/solutions/latest/dynamic-object-and-rule-extensions-for-aws-network-firewall/images/dynamic-object-and-rule-extensions-for-aws-network-firewall-architecture.png)
+![Dynamic Object and Rule Extensions for AWS Network Firewall architecture](https://docs.aws.amazon.com/solutions/latest/dynamic-object-and-rule-extensions-for-aws-network-firewall/images/dynamic-object-and-rule-extensions-for-aws-network-firewall-architecture.png)
 
 1.  The API Gateway provides the primary interface for the user to interact with this solution, including endpoints to manage the domain entities. Domain entities include rule, object, rule bundle, and list audit information. Refer to [API schema](https://github.com/aws-solutions/dynamic-object-and-rule-extensions-for-anfw/) in the GitHub repository for sample requests and information about updating the metadata.
 

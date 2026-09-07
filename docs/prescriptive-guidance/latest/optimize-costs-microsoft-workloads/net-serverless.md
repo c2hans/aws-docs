@@ -39,7 +39,7 @@ For example, increasing the memory for a .NET-based Lambda function can lead to 
 
 In the following example chart, the total invocation time improves as the memory increases for this Lambda function. This leads to a reduction in the cost for the total execution without affecting the original performance of the function. For this function, the optimal memory configuration for the function is 512 MB, as this is where the resource utilization is most efficient for the total cost of each invocation. This varies per function, and using the tool on your Lambda functions can identify if they benefit from right sizing.
 
-![Graph of invocation time](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/9379cdde-840b-4b97-88c4-9d1c4677ece8.png)
+![Graph of invocation time](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/9379cdde-840b-4b97-88c4-9d1c4677ece8.png)
 
 We recommend that you complete this exercise regularly, as part of any integration testing when new updates are released. If infrequently updated, then do this exercise periodically to ensure functions are tuned and right sized. After you have identified the appropriate memory setting for your Lambda functions, you can add right sizing to your processes. The AWS Lambda Power Tuning tool generates programmatic output that can be used by your CI/CD workflows during the release of new code. This enables you to automate memory configuration.
 
@@ -67,7 +67,7 @@ If you're running .NET Framework applications and want to take advantage of serv
 
 The following chart compares x86 and ARM/Graviton2 architecture results for a function that computes prime numbers.
 
-![Comparison x86 and ARM/Graviton2 architecture](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/8017c05a-ca63-4bba-82c1-2ebf3138d6c5.png)
+![Comparison x86 and ARM/Graviton2 architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/8017c05a-ca63-4bba-82c1-2ebf3138d6c5.png)
 
 The function is using a single thread. The lowest duration for both architectures is reported when memory is configured with 1.8 GB. Above that, Lambda functions have access to more than 1 vCPU, but in this case, the function can't use the additional power. For the same reason, costs are stable with memory up to 1.8 GB. With more memory, costs increase because there are no additional performance benefits for this workload. The Graviton2 processor is clearly providing better performance and lower costs for this compute-intensive function.
 

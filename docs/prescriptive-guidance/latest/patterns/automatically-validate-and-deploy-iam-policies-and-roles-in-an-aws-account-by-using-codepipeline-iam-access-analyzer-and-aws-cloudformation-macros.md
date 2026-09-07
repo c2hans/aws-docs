@@ -43,7 +43,7 @@ This pattern’s workflow is a proof of concept (POC) and we recommend that you 
 
 The following diagram shows you how to automatically validate and deploy IAM roles and policies to an account by using CodePipeline, IAM Access Analyzer, and AWS CloudFormation macros.
 
-![Steps for validating and deploying IAM policies and roles in an AWS account.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/df1add4d-f211-43e3-8976-5314da75f627/images/832bebaf-27a0-4949-9c30-99fc4c9982b8.png)
+![Steps for validating and deploying IAM policies and roles in an AWS account.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/df1add4d-f211-43e3-8976-5314da75f627/images/832bebaf-27a0-4949-9c30-99fc4c9982b8.png)
 
 The diagram shows the following workflow:
 

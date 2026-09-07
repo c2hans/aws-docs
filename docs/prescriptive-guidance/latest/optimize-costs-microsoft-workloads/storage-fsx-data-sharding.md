@@ -49,7 +49,7 @@ After you choose a sharding strategy, you can group the file systems for easy ac
 
 The following diagram shows how a single DFS Namespace can be used as the access point for multiple Amazon FSx file systems.
 
-![DFN Namespace access point](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/51f1471a-707f-43d9-bd39-7b520f1d295d.png)
+![DFN Namespace access point](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/51f1471a-707f-43d9-bd39-7b520f1d295d.png)
 
 Keep in mind the following:
 + You can add existing FSx for Windows File Server shares to a DFS tree.

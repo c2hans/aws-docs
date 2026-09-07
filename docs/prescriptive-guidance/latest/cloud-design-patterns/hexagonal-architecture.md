@@ -50,7 +50,7 @@ For example, in a loosely coupled architecture, an application component should 
 
 The application or application component contains the core business logic. It receives commands or queries from the ports, and sends requests out through the ports to external actors, which are implemented through adapters, as illustrated in the following diagram.
 
-![Hexagonal architecture pattern](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/d285f0c0-8da5-43b2-b35b-8200edb616cd.png)
+![Hexagonal architecture pattern](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/d285f0c0-8da5-43b2-b35b-8200edb616cd.png)
 
 ### Implementation using AWS services
 <a name="implementation-using-9999999999999999aws-services-.8beb07e9-d52a-53ee-a05b-21ca442c8a44"></a>
@@ -59,7 +59,7 @@ AWS Lambda functions often contain both business logic and database integration 
 
 In the following architecture, a Lambda function implements the hexagonal architecture pattern. The Lambda function is initiated by the Amazon API Gateway REST API. The function implements business logic and writes data to DynamoDB tables.
 
-![Implementing the hexagonal architecture pattern on AWS](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/f273b3f8-2959-4a44-a928-670044ecfa8f.png)
+![Implementing the hexagonal architecture pattern on AWS](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/f273b3f8-2959-4a44-a928-670044ecfa8f.png)
 
 ### Sample code
 <a name="sample-code.e1feab8e-6db3-51f4-a7ea-9e1dc7f625d2"></a>

@@ -151,6 +151,6 @@ If an agent is **on a contact** when their region changes due to traffic distrib
 
 We recommend you to adjust your run book and agent training guide to reflect this
 
-![The Agent Workspace UI showing a banner that highlights regional failover during TDG adjustments.](http://docs.aws.amazon.com/connect/latest/adminguide/images/acgr-failover-banner.png)
+![The Agent Workspace UI showing a banner that highlights regional failover during TDG adjustments.](https://docs.aws.amazon.com/connect/latest/adminguide/images/acgr-failover-banner.png)
 
-![The confirmation popup that appears when an agent selects Continue in Backup.](http://docs.aws.amazon.com/connect/latest/adminguide/images/acgr-failover-confirmation.png)
+![The confirmation popup that appears when an agent selects Continue in Backup.](https://docs.aws.amazon.com/connect/latest/adminguide/images/acgr-failover-confirmation.png)

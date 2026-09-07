@@ -27,14 +27,14 @@ You can also view the dataset errors and the affected modules after the first in
    + Demand Planning
    + Insights
    + Order Insights
-![Module filters dropdown box.](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/module_filters.png)
+![Module filters dropdown box.](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/module_filters.png)
 
 1. View the data quality errors under the **Impacted Module** and **Status Message** columns.
 
    The **Impacted Module** column displays the AWS Supply Chain application and the related feature that was impacted.
 
    The **Status Message** column displays the product entity and the number of errors under each product entity. For example, the "The field "channel\_id" has null or empty value..." error means that the "channel\_id" column in the ingested outbound\_order\_line file is missing data.
-![Impacted Module and Status Message columns.](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/data_quality_columns.png)
+![Impacted Module and Status Message columns.](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/data_quality_columns.png)
 
 ## Downloading data quality reports
 <a name="data_qual_reports"></a>
@@ -48,11 +48,11 @@ To download the data quality report, complete the following steps:
 1. Select the folder for the data entity you want to view.
 
    Individual folders for each data ingestion will appear.
-![Product data entity folder with data ingestion folders within.](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/data_entity_folder.png)
+![Product data entity folder with data ingestion folders within.](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/data_entity_folder.png)
 
 1. Select the folder for the data ingestion you want to view.
 
    The data quality report will appear.
-![Data quality report json file.](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/data_quality_report.png)
+![Data quality report json file.](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/data_quality_report.png)
 
 1. Select the file and choose **Download** to download the data quality report in json format.

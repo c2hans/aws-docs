@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-network-ins
 
  Deploying this guidance with the default parameters deploys the following components in your AWS account.
 
-![Guidance architecture diagram. Details are provided in the text that follows.](http://docs.aws.amazon.com/solutions/latest/centralized-network-inspection-on-aws/images/cross-network-traffic-inspection-with-aws-network-firewall.png)
+![Guidance architecture diagram. Details are provided in the text that follows.](https://docs.aws.amazon.com/solutions/latest/centralized-network-inspection-on-aws/images/cross-network-traffic-inspection-with-aws-network-firewall.png)
 
 **Note**
  [AWS CloudFormation](https://aws.amazon.com/cloudformation/) resources are created from [AWS Cloud Development Kit (AWS CDK)](https://aws.amazon.com/cdk/) (AWS CDK) constructs.

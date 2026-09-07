@@ -39,7 +39,7 @@ An effective risk mitigation strategy delivers significant benefits:
 
 The following illustration shows the inputs and outputs of a risk mitigation strategy.
 
-![OCA risk mitigation strategy inputs and outputs.](http://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-envision-future/images/guide-img/7134122a-df9a-4cfe-995a-6903c8a3790f/images/638a7f01-92e5-4a54-a129-b994c933f2e3.png)
+![OCA risk mitigation strategy inputs and outputs.](https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-envision-future/images/guide-img/7134122a-df9a-4cfe-995a-6903c8a3790f/images/638a7f01-92e5-4a54-a129-b994c933f2e3.png)
 
 The following table provides an example of a risk tracking tool.
 

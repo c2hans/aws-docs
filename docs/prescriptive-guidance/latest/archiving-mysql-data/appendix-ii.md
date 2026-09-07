@@ -44,9 +44,9 @@ It took around 3 hours, 44 minutes, and 29 seconds to archive 1,999,999 rows.
 
 The following graph shows that pt-archiver consumes very little CPU and resources when run on its own without any load existing in the system.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/archiving-mysql-data/images/guide-img/1d38fd71-63ca-45ea-bf1f-9f493d5364d0/images/842ca695-2414-4401-a2e8-18872393e0c8.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/archiving-mysql-data/images/guide-img/1d38fd71-63ca-45ea-bf1f-9f493d5364d0/images/842ca695-2414-4401-a2e8-18872393e0c8.png)
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/archiving-mysql-data/images/guide-img/1d38fd71-63ca-45ea-bf1f-9f493d5364d0/images/6756ce49-82a3-4a8d-a7fa-dabc644688fe.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/archiving-mysql-data/images/guide-img/1d38fd71-63ca-45ea-bf1f-9f493d5364d0/images/6756ce49-82a3-4a8d-a7fa-dabc644688fe.png)
 
 ## Archiving table that has a primary key (with load on the database)
 <a name="archiving-table-that-has-a-primary-key--with-load-on-the-database-.551a8bc8-e6cd-5123-a177-18940c22be03"></a>
@@ -64,8 +64,8 @@ It took around 9 hours, 43 minutes, and 36 seconds to archive 1999999 rows.
 
 The following graph shows that during the test, the CPU utilization was up to 15 percent due to the load applied by sysbench. After the load completed, pt-archiver continued to work consuming minimal CPU as expected to complete the archival.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/archiving-mysql-data/images/guide-img/1d38fd71-63ca-45ea-bf1f-9f493d5364d0/images/c845b1f2-dd80-4d23-b919-ae2c1325c4d9.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/archiving-mysql-data/images/guide-img/1d38fd71-63ca-45ea-bf1f-9f493d5364d0/images/c845b1f2-dd80-4d23-b919-ae2c1325c4d9.png)
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/archiving-mysql-data/images/guide-img/1d38fd71-63ca-45ea-bf1f-9f493d5364d0/images/e3083921-8dc0-415a-b696-0fb086f8a318.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/archiving-mysql-data/images/guide-img/1d38fd71-63ca-45ea-bf1f-9f493d5364d0/images/e3083921-8dc0-415a-b696-0fb086f8a318.png)
 
 As is evident from the graphs, pt-archiver doesn't archive aggressively when there is a load on your database.

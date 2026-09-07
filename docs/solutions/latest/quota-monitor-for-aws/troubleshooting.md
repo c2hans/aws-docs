@@ -85,7 +85,7 @@ If you don’t receive Slack notifications for WARN or ERROR events, check the C
 1. Look for the following error.
 
     **Example error for Quota Monitor for AWS**
-![quota monitor error](http://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/images/quota-monitor-error.png)
+![quota monitor error](https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/images/quota-monitor-error.png)
 
 ### Resolution
 <a name="resolution-1"></a>

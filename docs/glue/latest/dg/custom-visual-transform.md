@@ -25,4 +25,4 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/custom-visual-transform.h
 
 The following video provides an introduction to visual custom transforms and demonstrates how to use them.
 
-[![AWS Videos](http://img.youtube.com/vi/xFpAhANcVcg/0.jpg)](http://www.youtube.com/watch?v=xFpAhANcVcg)
+[![AWS Videos](https://img.youtube.com/vi/xFpAhANcVcg/0.jpg)](https://www.youtube.com/watch?v=xFpAhANcVcg)

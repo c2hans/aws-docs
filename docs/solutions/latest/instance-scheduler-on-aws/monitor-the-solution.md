@@ -122,7 +122,7 @@ The dashboard displays managed instance counts, running hours saved, and Lambda 
 
  **Operational insights dashboard overview**
 
-![OpsDashboardOverview](http://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-aws/images/OpsDashboardOverview.png)
+![OpsDashboardOverview](https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-aws/images/OpsDashboardOverview.png)
 
 **Note**
 The information in these graphs is dependent upon the scheduling interval configured on the solution hub stack. When updating the solution’s scheduling interval, the dashboard will only display scheduling metrics from after the most recent update to the scheduling interval.
@@ -131,7 +131,7 @@ Monitor Lambda execution times to ensure optimal performance (see [Quotas](solut
 
  **Lambda metrics showing duration and error counts**
 
-![OpsDashboardLambdaMetrics](http://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-aws/images/OpsDashboardLambdaMetrics.png)
+![OpsDashboardLambdaMetrics](https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-aws/images/OpsDashboardLambdaMetrics.png)
 
 ### Additional costs associated with this feature
 <a name="additional-costs-associated-with-this-feature"></a>

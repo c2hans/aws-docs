@@ -20,7 +20,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-dns-opti
 
  For more information about cross-account PHZ sharing, refer to [Associating an Amazon VPC and a private hosted zone that you created with different AWS accounts](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zone-private-associate-vpcs-different-accounts.html).
 
-![A diagram depicting a multi-account centralized DNS with Private Hosted Zone sharing.](http://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-dns-options-for-vpc/images/centralized-dns.png)
+![A diagram depicting a multi-account centralized DNS with Private Hosted Zone sharing.](https://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-dns-options-for-vpc/images/centralized-dns.png)
 
 1.  Instances within a VPC use the Route 53 Resolver (Amazon-provided DNS).
 
@@ -39,7 +39,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-dns-opti
 
  An organization might want to delegate DNS ownership and management to each AWS account. Advantages of this method include decentralization of control and isolating the blast radius for failure to a specific account. The ability to associate PHZs to VPCs between accounts again becomes useful in this scenario. Each VPC can have its own PHZ(s) and then associate it with multiple other VPCs, across accounts and across Regions. This architecture is depicted in the following diagram. For unified resolution with the on-premises environment, this requires only that the shared services VPC be associated with each VPC hosting a PHZ.
 
-![A diagram depicting multi-account DNS decentralized.](http://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-dns-options-for-vpc/images/dns-decentralized.png)
+![A diagram depicting multi-account DNS decentralized.](https://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-dns-options-for-vpc/images/dns-decentralized.png)
 
 1.  EC2 instances within a VPC use the Route 53 Resolver (Amazon-provided DNS).
 

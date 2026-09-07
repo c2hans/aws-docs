@@ -17,7 +17,7 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 
  [*Blue/green deployment*](https://martinfowler.com/bliki/BlueGreenDeployment.html) is similar to the canary deployment except that a full fleet of the application is deployed in parallel. You alternate your deployments across the two stacks (blue and green). Once again, you can send traffic to the new version, and fall back to the old version if you see problems with the deployment. Commonly all traffic is switched at once, however you can also use fractions of your traffic to each version to dial up the adoption of the new version using the weighted DNS routing capabilities of Amazon Route 53. AWS CodeDeploy and AWS Elastic Beanstalk can be configured with a deployment configuration that will enable a blue/green deployment.
 
-![Diagram showing blue/green deployment with AWS Elastic Beanstalk and Amazon Route 53](http://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/images/blue-green-deployment.png)
+![Diagram showing blue/green deployment with AWS Elastic Beanstalk and Amazon Route 53](https://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/images/blue-green-deployment.png)
 
  Benefits of immutable infrastructure:
 +  **Reduction in configuration drifts:** By frequently replacing servers from a base, known and version-controlled configuration, the infrastructure is **reset** to a known state, avoiding configuration drifts.

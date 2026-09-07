@@ -48,4 +48,4 @@ Publication date: **January 10, 2023** ([Document revisions](document-revisions.
 
  AWS and the [AWS Partner Network](https://aws.amazon.com/partners/find-a-partner/) (APN) provide tools and services that can help you along each step of the way. [AWS Professional Services](https://aws.amazon.com/professional-services/) is a global team of experts that provide assistance through a collection of AWS CAF aligned offerings that can help you achieve specific outcomes related to your cloud transformation.
 
-![A diagram depicting the AWS CAF People perspective capabilities.](http://docs.aws.amazon.com/whitepapers/latest/aws-caf-people-perspective/images/caf-people-perspective.png)
+![A diagram depicting the AWS CAF People perspective capabilities.](https://docs.aws.amazon.com/whitepapers/latest/aws-caf-people-perspective/images/caf-people-perspective.png)

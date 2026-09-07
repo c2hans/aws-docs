@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
 
  If you dig a bit more into MSP, however, you’ll find that MSP and SaaS are actually different. The following diagram provides a conceptual view of an MSP environment.
 
-![A diagram depicting the Managed Service Provider (MSP) model.](http://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fundamentals/images/msp-model.png)
+![A diagram depicting the Managed Service Provider (MSP) model.](https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fundamentals/images/msp-model.png)
 
  This diagram represents one approach to the MSP model. On the left you’ll see customers that run in the MSP model. Generally, the approach here would be to use whatever automation is available to provision each customer environment, and install the software for that customer.
 

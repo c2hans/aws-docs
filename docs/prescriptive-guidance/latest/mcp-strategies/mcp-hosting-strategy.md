@@ -19,7 +19,7 @@ Local hosting runs the MCP server as a subprocess on your local machine along wi
 
 Many customers get started with MCP using local servers. They allow engineers to rapidly iterate and solve a variety of problems from their local environment. Consider an MCP server that connects to a Git repository that an engineer's coding assistant us using. Keeping the MCP server local makes a lot of sense because it can use the engineer's unique credentials to access the repository, and it does not add an extra network call to a remote MCP server. The following image shows a locally hosted MCP server being used with a coding agent in an IDE.
 
-![Locally hosted MCP server being used with a coding agent in an IDE.](http://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-strategies/images/guide-img/2803ca34-2e01-4597-9d5d-d8b2e530a414/images/eb5a411f-5b63-449d-b6df-9230320ef9ce.png)
+![Locally hosted MCP server being used with a coding agent in an IDE.](https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-strategies/images/guide-img/2803ca34-2e01-4597-9d5d-d8b2e530a414/images/eb5a411f-5b63-449d-b6df-9230320ef9ce.png)
 
 For these types of deployments, you must consider how the MCP servers are developed and distributed. Most customers develop an MCP registry where servers can be registered and downloaded by end users. It's very similar to a container registry where a user can search for specific capabilities and find the MCP servers suited to their needs.
 
@@ -32,7 +32,7 @@ However, local hosting introduces operational challenges that organizations shou
 
 The second option is to host remote MCP servers that are accessed over HTTP or HTTPS. This provides access to any network-connected client. Using remote hosting allows you to centrally control access to MCP resources and capabilities, implement authentication and authorization, and control the versioning and updates of the MCP server logic. Remote hosting still requires the use of an MCP registry so that end-users can discover the MCP servers that they want to use with their agent. The following image shows the remote hosting approach.
 
-![Remote hosting approach.](http://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-strategies/images/guide-img/2803ca34-2e01-4597-9d5d-d8b2e530a414/images/b4c20570-0ec0-4d07-b96e-47d16950c1df.png)
+![Remote hosting approach.](https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-strategies/images/guide-img/2803ca34-2e01-4597-9d5d-d8b2e530a414/images/b4c20570-0ec0-4d07-b96e-47d16950c1df.png)
 
 From an agent development perspective, the experience is similar whether the MCP server is local or remote. The most significant change is implementing authentication and authorization, including both the agent's access to the MCP server and the server's access to external resources. Remote MCP server implementations must be carefully planned to consider multi-tenant access and privilege management. The [MCP governance strategy](mcp-governance-strategy.md) chapter contains more information about authentication and authorization considerations.
 
@@ -41,7 +41,7 @@ From an agent development perspective, the experience is similar whether the MCP
 
 The final option is using an MCP gateway. MCP gateways act as a centralized proxy between MCP clients and servers, and they orchestrate access to the registered MCP servers. Without a gateway, each agent needs to register every remote MCP server that it might want to use. A gateway allows the agent to connect to a single endpoint that manages the authentication, authorization, routing, and protocol translation. New MCP servers and tools can be added dynamically and made immediately available to the agent. The following image shows the MCP gateway approach.
 
-![MCP gateway approach.](http://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-strategies/images/guide-img/2803ca34-2e01-4597-9d5d-d8b2e530a414/images/17eabbda-835e-4f62-a258-6899523577a2.png)
+![MCP gateway approach.](https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-strategies/images/guide-img/2803ca34-2e01-4597-9d5d-d8b2e530a414/images/17eabbda-835e-4f62-a258-6899523577a2.png)
 
 Some gateway solutions, such as [Docker MCP Gateway](https://docs.docker.com/ai/mcp-catalog-and-toolkit/mcp-gateway/), also manage the lifecycle of the MCP servers, launching servers on-demand as needed. MCP gateways, such as [Amazon Bedrock AgentCore Gateway](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway.html), can also help manage tool discovery by providing [native semantic search capabilities](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-using-mcp-semantic-search.html). This provides agents with a single endpoint to connect with an MCP client and helps optimize their context window usage. The result is simple agents that can choose and use MCP tools effectively. However, it has similar identity-related challenges as the remote MCP server approach.
 

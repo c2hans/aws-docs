@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-spark-conn
 
 The following diagram describes the authentication between Amazon S3, Amazon Redshift, the Spark driver, and Spark executors.
 
-![This is a diagram of the spark connector authentication.](http://docs.aws.amazon.com/redshift/latest/mgmt/images/spark-connector-authentication.png)
+![This is a diagram of the spark connector authentication.](https://docs.aws.amazon.com/redshift/latest/mgmt/images/spark-connector-authentication.png)
 
 ## Authentication between Redshift and Spark
 <a name="redshift-spark-authentication"></a>

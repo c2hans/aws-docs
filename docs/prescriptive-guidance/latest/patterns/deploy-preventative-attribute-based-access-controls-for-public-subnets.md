@@ -40,7 +40,7 @@ This pattern describes how to help secure public subnets by implementing ABAC th
 
 **Target architecture**
 
-![The tags prevent users from deploying resources other than NAT gateways in public subnets](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/25f22f67-5bb6-42ac-8fd6-836e00c436f1/images/b8345c8c-0fc5-46a3-be60-c171979cf979.png)
+![The tags prevent users from deploying resources other than NAT gateways in public subnets](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/25f22f67-5bb6-42ac-8fd6-836e00c436f1/images/b8345c8c-0fc5-46a3-be60-c171979cf979.png)
 
 1. You create the `AutomationAdminRole` IAM role in the target account. This role has permissions to manage networking resources. Note the following permissions that are exclusive to this role:
    + This role can create VPCs and public subnets.

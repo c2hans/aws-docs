@@ -9,7 +9,7 @@ Follow the step-by-step instructions in this section to configure and deploy the
 
  **Time to deploy:** Approximately 10 minutes
 
-1. Sign in to the [AWS Management Console](https://aws.amazon.com/console) and select the button to launch the `generative-ai-application-builder-on-aws.template` CloudFormation template. [![Launch solution](http://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?templateURL=https://solutions-reference.s3.amazonaws.com/generative-ai-application-builder-on-aws/latest/generative-ai-application-builder-on-aws.template&stackName=&redirectId=ImplementationGuide)
+1. Sign in to the [AWS Management Console](https://aws.amazon.com/console) and select the button to launch the `generative-ai-application-builder-on-aws.template` CloudFormation template. [![Launch solution](https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?templateURL=https://solutions-reference.s3.amazonaws.com/generative-ai-application-builder-on-aws/latest/generative-ai-application-builder-on-aws.template&stackName=&redirectId=ImplementationGuide)
 
 1. The template launches in the US East (N. Virginia) Region by default. To launch the solution in a different AWS Region, use the Region selector in the console navigation bar.
 **Note**

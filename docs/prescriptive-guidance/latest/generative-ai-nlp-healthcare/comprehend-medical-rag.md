@@ -18,7 +18,7 @@ To illustrate this approach, this section uses the example of medical (diagnosis
 
 The following diagram illustrates a RAG approach for identifying ICD-10-CM diagnosis codes from patient notes. It uses Amazon Comprehend Medical as a knowledge source. In a RAG approach, the retrieval method commonly retrieves information from a vector database containing applicable knowledge. Instead of a vector database, this architecture uses Amazon Comprehend Medical for the retrieval task. The orchestrator sends the patient note information to Amazon Comprehend Medical and retrieves the ICD-10-CM code information. The orchestrator sends this context to the downstream foundation model (LLM), through Amazon Bedrock. The LLM generates a response by using the ICD-10-CM code information, and that response is sent back to the client application.
 
-![A RAG workflow that uses Amazon Comprehend Medical as a knowledge source.](http://docs.aws.amazon.com/prescriptive-guidance/latest/generative-ai-nlp-healthcare/images/guide-img/30175f3c-77fd-446d-b6ec-cdf244f32c6e/images/875f0a6d-c38d-4ca0-b221-cafcb92240a5.png)
+![A RAG workflow that uses Amazon Comprehend Medical as a knowledge source.](https://docs.aws.amazon.com/prescriptive-guidance/latest/generative-ai-nlp-healthcare/images/guide-img/30175f3c-77fd-446d-b6ec-cdf244f32c6e/images/875f0a6d-c38d-4ca0-b221-cafcb92240a5.png)
 
 The diagram shows the following RAG workflow:
 
@@ -121,7 +121,7 @@ Follow-up as scheduled
 
 In this patient note, Amazon Comprehend Medical detects the following entities.
 
-![Entity detection in Amazon Comprehend Medical.](http://docs.aws.amazon.com/prescriptive-guidance/latest/generative-ai-nlp-healthcare/images/guide-img/30175f3c-77fd-446d-b6ec-cdf244f32c6e/images/564b2486-16c9-4676-9417-eab4c91ff9be.png)
+![Entity detection in Amazon Comprehend Medical.](https://docs.aws.amazon.com/prescriptive-guidance/latest/generative-ai-nlp-healthcare/images/guide-img/30175f3c-77fd-446d-b6ec-cdf244f32c6e/images/564b2486-16c9-4676-9417-eab4c91ff9be.png)
 
 The entities link to the following ICD-10-CM codes for seizure and headaches.
 

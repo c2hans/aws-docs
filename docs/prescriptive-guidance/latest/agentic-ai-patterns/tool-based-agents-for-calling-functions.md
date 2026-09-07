@@ -14,7 +14,7 @@ This pattern enables agents to act rather than just providing responses. The too
 
 A tool-based agent for calling functions is shown in the following diagram:
 
-![Tool-based agent for calling functions.](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-patterns/images/guide-img/cde5ee68-ed86-4053-9fb1-d0dbf7199e24/images/43d85cc3-6a29-48d3-a5c9-4480fe0878e5.png)
+![Tool-based agent for calling functions.](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-patterns/images/guide-img/cde5ee68-ed86-4053-9fb1-d0dbf7199e24/images/43d85cc3-6a29-48d3-a5c9-4480fe0878e5.png)
 
 ## Description
 <a name="description.d186bc09-6d75-5791-a6dd-35a85d70fcf0"></a>

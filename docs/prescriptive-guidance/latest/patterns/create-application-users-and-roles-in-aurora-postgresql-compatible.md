@@ -49,7 +49,7 @@ This pattern contains the grants required for users and roles creation in Aurora
 
 The following diagram shows user roles and the schema architecture in the Aurora PostgreSQL-Compatible database.
 
-![User roles and schema architecture for the Aurora PostgreSQL-Comaptible database.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/80105a81-e3d1-4258-b3c1-77f3a5e78592/images/b95cb9bc-8bf7-47d1-92e7-66cfb37d7ce7.png)
+![User roles and schema architecture for the Aurora PostgreSQL-Comaptible database.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/80105a81-e3d1-4258-b3c1-77f3a5e78592/images/b95cb9bc-8bf7-47d1-92e7-66cfb37d7ce7.png)
 
 **Automation and scale**
 

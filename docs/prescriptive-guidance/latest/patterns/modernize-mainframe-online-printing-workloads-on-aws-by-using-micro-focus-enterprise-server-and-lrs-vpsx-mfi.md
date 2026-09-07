@@ -57,7 +57,7 @@ For more information about configuration considerations for mainframe online pri
 
 The following diagram shows a typical current state architecture for a mainframe online printing workload.
 
-![Six-step process to produce viewable output.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/924cdae7-9265-4fc9-8e5e-bb2da5368e7e/images/293368f5-d102-4f4e-b290-71da4aeff347.png)
+![Six-step process to produce viewable output.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/924cdae7-9265-4fc9-8e5e-bb2da5368e7e/images/293368f5-d102-4f4e-b290-71da4aeff347.png)
 
 The diagram shows the following workflow:
 
@@ -77,7 +77,7 @@ The diagram shows the following workflow:
 
 The following diagram shows an architecture for a mainframe online printing workload that’s deployed in the AWS Cloud:
 
-![Four-step process from initiate print request to processing on AWS to LRS printing.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/924cdae7-9265-4fc9-8e5e-bb2da5368e7e/images/07c97b6f-1a86-493d-a4e0-b8321b46f9b7.png)
+![Four-step process from initiate print request to processing on AWS to LRS printing.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/924cdae7-9265-4fc9-8e5e-bb2da5368e7e/images/07c97b6f-1a86-493d-a4e0-b8321b46f9b7.png)
 
 The diagram shows the following workflow:
 
@@ -96,7 +96,7 @@ The target solution typically doesn’t require application changes to accommoda
 
 The following diagram shows a highly available and secure AWS infrastructure architecture for a mainframe online printing workload:
 
-![Two Availability Zones with Micro Focus Enterprise server on EC2, Amazon RDS, and LRS printing.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/924cdae7-9265-4fc9-8e5e-bb2da5368e7e/images/093555a1-342c-420c-bb90-e9440d2e8650.png)
+![Two Availability Zones with Micro Focus Enterprise server on EC2, Amazon RDS, and LRS printing.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/924cdae7-9265-4fc9-8e5e-bb2da5368e7e/images/093555a1-342c-420c-bb90-e9440d2e8650.png)
 
 The diagram shows the following workflow:
 

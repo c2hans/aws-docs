@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/a
 +  AWS DXGW directly attached to more than 10 VPCs using VGW, up to 20 VPCs using VGW.
 +  Optional usage of AWS Transit Gateway for Inter-VPC and Inter-Region communication.
 
-![Diagram showing AWS DX – DXGW with VGW, Multi-Regions, and Public VIF](http://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/images/dxgw-with-vgw-multi-region-public-vif.png)
+![Diagram showing AWS DX – DXGW with VGW, Multi-Regions, and Public VIF](https://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/images/dxgw-with-vgw-multi-region-public-vif.png)
 
  **Connectivity model attributes:**
 + AWS DXGW directly attached to more than 10 VPCs using VGW up to 20 VPCs using VGW.

@@ -51,7 +51,7 @@ For this purpose, [mainframe scripts](https://github.com/aws-samples/unloaddb2-s
 
 The following diagram shows the process for generating, extracting, and transferring Db2 z/OS data in ASCII CSV format to an S3 bucket.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/66e6fa1a-1c7d-4b7a-8404-9ba85e433b24/images/87b13e0d-0be9-4462-bdbf-67342334416c.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/66e6fa1a-1c7d-4b7a-8404-9ba85e433b24/images/87b13e0d-0be9-4462-bdbf-67342334416c.png)
 
 1. A list of tables is selected for data migration from the Db2 catalog.
 
@@ -65,7 +65,7 @@ The following diagram shows the process for generating, extracting, and transfer
 
 The following diagram shows a logical flow of the entire process.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/66e6fa1a-1c7d-4b7a-8404-9ba85e433b24/images/d72f2572-10c9-43f9-b6c9-7e57c9a69d52.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/66e6fa1a-1c7d-4b7a-8404-9ba85e433b24/images/d72f2572-10c9-43f9-b6c9-7e57c9a69d52.png)
 
 1. The first JCL, called TABNAME, will use the Db2 utility DSNTIAUL to extract and generate the list of tables that you plan to unload from Db2. To choose your tables, you must manually adapt the SQL input to select and add filter criteria to include one or more Db2 schemas.
 

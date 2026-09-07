@@ -156,7 +156,7 @@ Amazon Location Service also provides the ability to search by name or address t
    This code declares a `marker` variable, that is populated each time the user selects a location, showing where they selected. The marker is automatically rendered by the map control, once it's added to the map with `.addTo(map);`. The code also checks for a previous marker, and removes it, so that there is only 1 marker on the screen at a time.
 
 1. Save the `main.js` file, and open the `quickstart.html` file in a browser. You can pan and zoom on the map, as before, but now if you choose a location, you will see details about the location that you chose.
-![Amazon Location Service quickstart application after a place search, showing a location pin on the map, address details panel, and the Places API JSON response with coordinates.](http://docs.aws.amazon.com/location/previous/developerguide/images/quickstart-search.png)
+![Amazon Location Service quickstart application after a place search, showing a location pin on the map, address details panel, and the Places API JSON response with coordinates.](https://docs.aws.amazon.com/location/previous/developerguide/images/quickstart-search.png)
 
 Your quick start application is complete. This tutorial has shown you how to create a static HTML application that:
 + Creates a map that users can interact with.

@@ -11,7 +11,7 @@ The following best practices provide guidelines to protect information, systems,
 
 The following figure shows the reference diagram for manufacturing OT security best practices. This diagram is used as a visual aid in subsequent sections of this document to highlight and describe best practices.
 
-![Manufacturing OT security best practices reference diagram](http://docs.aws.amazon.com/whitepapers/latest/security-best-practices-for-manufacturing-ot/images/ot-best-practices-ref-diag.png)
+![Manufacturing OT security best practices reference diagram](https://docs.aws.amazon.com/whitepapers/latest/security-best-practices-for-manufacturing-ot/images/ot-best-practices-ref-diag.png)
 
 * Manufacturing OT security best practices reference diagram *
 

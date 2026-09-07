@@ -30,7 +30,7 @@ ABC application is a packaged solution, which will be deployed to the customer's
 
 We use an adapted version of the [GitFlow workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) to develop ABC application.
 
-![GitFlow workflow, adapted for the ABC sample application](http://docs.aws.amazon.com/prescriptive-guidance/latest/architectural-decision-records/images/guide-img/19b175a3-1b40-432f-9670-fef30553db34/images/6594616b-db16-4b6f-b66d-4c3cf4d75303.png)
+![GitFlow workflow, adapted for the ABC sample application](https://docs.aws.amazon.com/prescriptive-guidance/latest/architectural-decision-records/images/guide-img/19b175a3-1b40-432f-9670-fef30553db34/images/6594616b-db16-4b6f-b66d-4c3cf4d75303.png)
 
 For simplicity, we will not be using the hotfix/\* and release/\* branches, because ABC application will be packaged instead of being deployed to a specific environment. For this reason, there is no need for additional complexity that might prevent us from reacting quickly to fix bugs in production releases, or testing releases in a separate environment.
 

@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation
 
  We started with accounts, then moved to VPC as our silo model. You can get even more granular with silo isolation by placing tenants in separate VPC subnets. With this approach, each tenant is placed in a separate subnet within a VPC. The diagram in Figure 8 provides an example of the subnet per tenant model.
 
-![Diagram showing subnet silo isolation.](http://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/images/subnet-silo-isolation.png)
+![Diagram showing subnet silo isolation.](https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/images/subnet-silo-isolation.png)
 
  Here you’ll see the same Multi-AZ VPC that we had with VPC isolation. However, now you’ll notice that the tenants are actually all within the subnets of a single VPC. The isolation of tenants in this model relies on network routing constructs to prevent any cross-tenant access.
 
@@ -20,7 +20,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation
 
  As we mentioned above, silo isolation can also be applied in a much more granular fashion where selective elements of your SaaS solution are deployed in a silo model. Each microservice of your system and each resource those services touch has the option of being configured in a silo model of isolation. How that silo isolation is realized will vary across each service or construct that makes up your application. Let’s look at some sample microservice to better understand how these different dimensions of silo isolation might land in an actual application. The diagram in Figure 9 provides a view of these two models.
 
-![Diagram showing microservice silo isolation.](http://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/images/microservice-silo-isolation.jpg)
+![Diagram showing microservice silo isolation.](https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/images/microservice-silo-isolation.jpg)
 
 In this diagram, you’ll see a system that has implemented three different microservices: product, order, and account. The deployment and storage models of each of these microservices highlights how isolation (for security or noisy neighbor) could land in a SaaS environment.
 

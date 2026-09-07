@@ -28,7 +28,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-
 
  When the device connects to AWS IoT Core for the first time, the device certificate must be sent during the [TLS handshake](https://www.ssl.com/article/ssl-tls-handshake-overview/). The signer CA must also be sent during the TLS handshake if the device does not send the Service Name Indicator (SNI) during the connection. The TLS handshake will fail at the first connection. This happens because the certificate has not been pre-loaded into the AWS IoT account. The device-supplied certificate is registered and activated in AWS IoT Core during the provisioning process. The device must have logic to reconnect to AWS IoT Core after a short time period. If the provisioning operation has succeeded, the device will connect to AWS IoT Core successfully.
 
-![A diagram that shows Just-in-Time Provisioning process.](http://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-provisioning/images/JustInTimeProvisioning-Nov22Refresh.png)
+![A diagram that shows Just-in-Time Provisioning process.](https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-provisioning/images/JustInTimeProvisioning-Nov22Refresh.png)
 
 ## Just-in-Time Registration
 <a name="just-in-time-registration"></a>
@@ -47,7 +47,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-
 
  Just like JITP, the client certificate must be sent during the TLS handshake, and the signer CA must be sent if the device does not support SNI. The device will fail to make the first connection to AWS IoT Core. The device must contain logic to reconnect to AWS IoT Core after the first failed connection. If the Lambda function activates the certificate, the second device connection will succeed.
 
-![A diagram that shows the Just-in-Time Registration process.](http://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-provisioning/images/JustInTimeRegistration-Nov22Refresh.png)
+![A diagram that shows the Just-in-Time Registration process.](https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-provisioning/images/JustInTimeRegistration-Nov22Refresh.png)
 
 ### Use cases for Just-in-Time Provisioning and Registration
 <a name="use-cases-for-just-in-time-provisioning-and-registration"></a>
@@ -71,7 +71,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-
 
  The device’s TLS stack must support the SNI extension, and the AWS IoT Core endpoint is passed in the SNI string from the device. No additional device logic is required.
 
-![A diagram that shows manual registration without a CA process.](http://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-provisioning/images/MultiAccountRegistration_sequence.png)
+![A diagram that shows manual registration without a CA process.](https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-provisioning/images/MultiAccountRegistration_sequence.png)
 
 ### Use cases for manual registration without a CA
 <a name="use-cases-for-manual-registration-without-a-ca"></a>
@@ -100,7 +100,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-
 
  Devices must have the ability to accept temporary credentials over a secure connection such as Bluetooth Low Energy, WiFi, or USB. Devices must implement the logic necessary to publish and subscribe to fleet provisioning MQTT topics, accept the permanent credentials, and write the credentials to secure storage.
 
-![A diagram that shows fleet provisioning by Trusted User process.](http://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-provisioning/images/FleetProvisioningTrustedUser.png)
+![A diagram that shows fleet provisioning by Trusted User process.](https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-provisioning/images/FleetProvisioningTrustedUser.png)
 
 #### Use cases for fleet provisioning by trusted user
 <a name="use-cases-for-fleet-provisioning-by-trusted-user"></a>
@@ -124,7 +124,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-
 
  Devices must implement the logic necessary to publish and subscribe to fleet provisioning MQTT topics, accept the permanent credentials, and write the credentials to secure storage.
 
-![A diagram depicting fleet provisioning by claim process.](http://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-provisioning/images/FleetProvisioningByClaim.png)
+![A diagram depicting fleet provisioning by claim process.](https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-provisioning/images/FleetProvisioningByClaim.png)
 
 #### Use cases for fleet provisioning by claim
 <a name="use-cases-for-fleet-provisioning-by-claim"></a>

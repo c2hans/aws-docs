@@ -49,7 +49,7 @@ When you access your Multi-AZ file system from outside of the file system's VPC,
 
 The following diagram illustrates using Transit Gateway for NFS access to a Multi-AZ file system that is in a different VPC than the clients that are accessing it.
 
-![Using Transit Gateway to access NFS endpoints with clients in a different VPC.](http://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/images/fsx-openzfs-multi-az-access-transit-gateway.png)
+![Using Transit Gateway to access NFS endpoints with clients in a different VPC.](https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/images/fsx-openzfs-multi-az-access-transit-gateway.png)
 
 **Note**
 Ensure that all of the route tables you're using are associated with your Multi-AZ file system. Doing so helps prevent loss of availability during a failover. For information about associating your Amazon VPC route tables with your file system, see [Updating an Amazon FSx for OpenZFS file system](updating-file-system.md).

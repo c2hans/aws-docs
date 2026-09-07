@@ -54,7 +54,7 @@ In an AWS Firewall Manager policy, you can configure logging for all of the AWS 
 
 The following image shows how you can use Firewall Manager to centrally log all AWS WAF data and send it to Splunk through Firehose.
 
-![Architecture diagram showing sending AWS WAF log data to Splunk through Amazon Data Firehose](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/3dfeaae0-985a-42b8-91c4-ece081f0b51b/images/669169b1-caa4-419b-9988-19806ded54eb.png)
+![Architecture diagram showing sending AWS WAF log data to Splunk through Amazon Data Firehose](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/3dfeaae0-985a-42b8-91c4-ece081f0b51b/images/669169b1-caa4-419b-9988-19806ded54eb.png)
 
 1. The AWS WAF web ACLs send firewall log data to Firewall Manager.
 

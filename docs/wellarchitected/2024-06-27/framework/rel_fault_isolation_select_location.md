@@ -9,7 +9,7 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 
  **Desired outcome:** For high availability, always (when possible) deploy your workload components to multiple Availability Zones (AZs). For workloads with extreme resilience requirements, carefully evaluate the options for a multi-Region architecture.
 
-![Diagram showing a resilient multi-AZ database deployment with backup to another AWS Region](http://docs.aws.amazon.com/wellarchitected/2024-06-27/framework/images/multi-az-architecture.png)
+![Diagram showing a resilient multi-AZ database deployment with backup to another AWS Region](https://docs.aws.amazon.com/wellarchitected/2024-06-27/framework/images/multi-az-architecture.png)
 
  **Common anti-patterns:**
 +  Choosing to design a multi-Region architecture when a multi-AZ architecture would satisfy requirements.

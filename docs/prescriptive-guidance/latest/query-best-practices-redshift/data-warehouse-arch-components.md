@@ -17,7 +17,7 @@ A data warehouse in Amazon Redshift consists of the following core architecture 
 
 The following diagram shows how the architecture components of an Amazon Redshift data warehouse work together to accelerate queries.
 
-![The leader node and compute nodes in an Amazon Redshift cluster processing a query from a client.](http://docs.aws.amazon.com/prescriptive-guidance/latest/query-best-practices-redshift/images/guide-img/0ed1f977-d92c-4ac8-bf6e-781c9fd51a62/images/23700f5b-7450-4933-aa53-fd4be253c863.png)
+![The leader node and compute nodes in an Amazon Redshift cluster processing a query from a client.](https://docs.aws.amazon.com/prescriptive-guidance/latest/query-best-practices-redshift/images/guide-img/0ed1f977-d92c-4ac8-bf6e-781c9fd51a62/images/23700f5b-7450-4933-aa53-fd4be253c863.png)
 
 There are seven stages of the query lifecycle:
 

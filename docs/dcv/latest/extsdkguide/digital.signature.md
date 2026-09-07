@@ -14,7 +14,7 @@ Adding the following registry key will allow DCV to load unsigned extensions exe
 
 `[HKEY_USERS\S-1-5-18\Software\GSettings\com\nicesoftware\dcv\extensions] load-policy=all `
 
-![Registry Editor showing the extensions folder with load-policy set to all.](http://docs.aws.amazon.com/dcv/latest/extsdkguide/images/digital-sign.jpg)
+![Registry Editor showing the extensions folder with load-policy set to all.](https://docs.aws.amazon.com/dcv/latest/extsdkguide/images/digital-sign.jpg)
 
 To start unsigned extensions on the client, use the following command line parameter:
 

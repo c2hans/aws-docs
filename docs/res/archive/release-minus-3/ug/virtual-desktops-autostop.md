@@ -15,7 +15,7 @@ Administrators can configure settings to allow idle VDIs to be Stopped or Termin
 
 1. Enforce Schedule: If selected, a session that has been stopped for being idle can be resumed by its daily schedule.
 
-![update session settings](http://docs.aws.amazon.com/res/archive/release-minus-3/ug/images/res-update-session-settings.png)
+![update session settings](https://docs.aws.amazon.com/res/archive/release-minus-3/ug/images/res-update-session-settings.png)
 
 These settings are present on the **Desktop Settings** page under the **Server** tab. Once you update the settings according to your requirements, click on **Submit** to save the settings. New sessions will use the updated settings, but note that existing sessions will still use the settings which they had when they were launched.
 

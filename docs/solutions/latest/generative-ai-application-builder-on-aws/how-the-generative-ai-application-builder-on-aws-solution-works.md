@@ -15,7 +15,7 @@ The admin user primarily interfaces with the Deployment dashboard to view, creat
 
  **Depicts Use case diagram for the admin user of the Deployment dashboard**
 
-![image4](http://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/image4.png)
+![image4](https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/image4.png)
 
 **Note**
 The admin user might not have direct access to the AWS console. In that case, the admin user must work with the DevOps user to support actions such as ingesting data into a Kendra knowledge base.
@@ -29,7 +29,7 @@ For the Text use case, the business user gets access to a user interface enablin
 
  **Depicts Use case diagram for the business user of the Text use case**
 
-![image5](http://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/image5.png)
+![image5](https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/image5.png)
 
 With the Bedrock Agent use case, the business user can access a UI for chatting with the configured Amazon Bedrock Agent. The admin user can configure these speciﬁcs in the deployment settings. In the Bedrock Agent use case, the business user has access to the following actions:
 + Send messages through the chat interface
@@ -38,4 +38,4 @@ With the Bedrock Agent use case, the business user can access a UI for chatting 
 
  **Depicts Use case diagram for the business user of the Bedrock Agent use case**
 
-![agent use case user diagram](http://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/agent-use-case-user-diagram.png)
+![agent use case user diagram](https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/agent-use-case-user-diagram.png)

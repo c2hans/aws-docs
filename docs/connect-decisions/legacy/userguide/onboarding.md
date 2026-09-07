@@ -81,7 +81,7 @@ The AWS Supply Chain assigned default model will be used if the user does not ch
        + Trim partial history – Set to *Yes*
        + Plan run date – Set to *Monday*
        + Forecast horizon – Four weeks
-![Trim partial history example](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Trim_history.png)
+![Trim partial history example](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Trim_history.png)
      +  Include Partial History – Select this option to include the partial history and use a filling strategy to fill the gaps.
 
        For example, if you are forecasting at a monthly level and your last month in history has only 10 days of data, you can choose to trim or exclude the 10 days of data. If you choose not to trim or exclude the 10 days of data, you can select a filling strategy to fill data for the rest of the month.

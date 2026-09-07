@@ -47,7 +47,7 @@ Furthermore, Neptune endpoints are accessible only within the VPC where the clus
 
 The following diagram shows the connection between Kubernetes pods in an Amazon EKS cluster and Neptune to provide access to a Neptune database.
 
-![Connecting pods in a Kubernetes node with Amazon Neptune.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2fcf9e00-1664-462a-825e-b0fdd962f478/images/86da67e5-340e-4b29-acc6-2da416ce57eb.png)
+![Connecting pods in a Kubernetes node with Amazon Neptune.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2fcf9e00-1664-462a-825e-b0fdd962f478/images/86da67e5-340e-4b29-acc6-2da416ce57eb.png)
 
 **Automation and scale**
 

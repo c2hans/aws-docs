@@ -21,4 +21,4 @@ As the migration date approaches, detailed application information, down to the 
 
 The following diagram shows the key activities for each stage of assessment and how they pivot between *portfolio-level* assessment (identification of sources of data, high-level discovery, initial inventory, prioritization, and directional business case) and *application-level* assessment (detailed discovery, AWS design, and migration strategy). Portfolio-level and application-level assessments represent the breadth and depth of information required.
 
-![Timeline for discovery, application assessment, migration planning, and continuous improvement.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-application-portfolio-assessment-migration/images/guide-img/7c9d894c-c8ca-4901-8b62-e1a8c08d1940/images/75c04ac9-0103-4877-af7d-5fcd7fe2a71d.png)
+![Timeline for discovery, application assessment, migration planning, and continuous improvement.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-application-portfolio-assessment-migration/images/guide-img/7c9d894c-c8ca-4901-8b62-e1a8c08d1940/images/75c04ac9-0103-4877-af7d-5fcd7fe2a71d.png)

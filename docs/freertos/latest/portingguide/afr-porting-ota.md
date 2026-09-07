@@ -218,7 +218,7 @@ FreeRTOS offers OTA (over-the-air) software updates to AWS IoT devices. The upda
 
 **Data Flow Diagram**
 
-![Data Flow Diagram for Embedded Device Security that contains Physical Access, Embedded Device, Internet Boundary, and other components.](http://docs.aws.amazon.com/freertos/latest/portingguide/images/bootloader-dataflow-diagram.png)
+![Data Flow Diagram for Embedded Device Security that contains Physical Access, Embedded Device, Internet Boundary, and other components.](https://docs.aws.amazon.com/freertos/latest/portingguide/images/bootloader-dataflow-diagram.png)
 
 #### Threats
 <a name="afr-threat-model-for-bootloader-threats"></a>

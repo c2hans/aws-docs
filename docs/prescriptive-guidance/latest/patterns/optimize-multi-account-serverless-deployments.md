@@ -34,7 +34,7 @@ By using these tools, organizations can efficiently manage cross-account resourc
 
 The following diagram shows the workflow and architecture components for this pattern.
 
-![Architecture of AWS CDK and GitHub Actions workflows for multi-account serverless infrastructure management.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8d61917b-bd27-44fa-ae95-55358aaf8812/images/a4b36793-95c7-42f7-a92f-99b4722c9c64.png)
+![Architecture of AWS CDK and GitHub Actions workflows for multi-account serverless infrastructure management.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8d61917b-bd27-44fa-ae95-55358aaf8812/images/a4b36793-95c7-42f7-a92f-99b4722c9c64.png)
 
 This solution performs the following steps:
 

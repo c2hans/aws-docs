@@ -33,7 +33,7 @@ For foundational information, the pattern also describes the components of a con
 
 The following diagram illustrates some of the components of a container image. These components are described after the diagram.
 
-![Manifest,configuration, file system layers, and digests.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7db5020c-6f5b-4e91-b91a-5b8ae844be1b/images/71b99c67-a934-4f94-8af8-2a8431fb91f5.png)
+![Manifest,configuration, file system layers, and digests.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7db5020c-6f5b-4e91-b91a-5b8ae844be1b/images/71b99c67-a934-4f94-8af8-2a8431fb91f5.png)
 
 **Terms and definitions**
 
@@ -55,7 +55,7 @@ The following terms are defined in the [Open Container Initiative (OCI) Image Sp
 
 The following diagram displays the high-level architecture of the solution provided by this pattern to identify duplicate container images by comparing images that are stored in Amazon ECR and private repositories.
 
-![Automatically detecting duplicates with CodePipeline and CodeBuild.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7db5020c-6f5b-4e91-b91a-5b8ae844be1b/images/5ee62bc8-db8d-48a3-9e79-f3392b6e9bf7.png)
+![Automatically detecting duplicates with CodePipeline and CodeBuild.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7db5020c-6f5b-4e91-b91a-5b8ae844be1b/images/5ee62bc8-db8d-48a3-9e79-f3392b6e9bf7.png)
 
 ## Tools
 <a name="identify-duplicate-container-images-automatically-when-migrating-to-ecr-repository-tools"></a>

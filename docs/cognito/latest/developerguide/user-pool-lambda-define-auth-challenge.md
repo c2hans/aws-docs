@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-
 
 The define auth challenge trigger is a Lambda function that maintains the challenge sequence in a custom authentication flow. It declares success or failure of the challenge sequence, and sets the next challenge if the sequence isn't yet complete.
 
-![Challenge Lambda triggers](http://docs.aws.amazon.com/cognito/latest/developerguide/images/lambda-challenges1.png)
+![Challenge Lambda triggers](https://docs.aws.amazon.com/cognito/latest/developerguide/images/lambda-challenges1.png)
 
 **Define auth challenge**
  Amazon Cognito invokes this trigger to initiate the [custom authentication flow](https://docs.aws.amazon.com/cognito/latest/developerguide/amazon-cognito-user-pools-authentication-flow.html#amazon-cognito-user-pools-custom-authentication-flow).

@@ -12,13 +12,13 @@ As an administrator, you can customize the order labels.
 1. Under **Organization**, choose **Organization Labels **.
 
    The **Organization Labels** page appears.
-![Order Planning and Tracking labels](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/organization_labels.png)
+![Order Planning and Tracking labels](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/organization_labels.png)
 
 1. Under **Change to Label**, enter the preferred name for each **Default Label**.
 **Note**
 Changing the default label will update your entire organization with the new label for Orders. For example, you will see the **Orders** table updated when you update the *Order*, *Order Description*, *Main Work Center*, and *Planner Group* labels under **Organization Labels** (see screenshot above).
 
-![Viewing order labels](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Work_order_custom_labels.png)
+![Viewing order labels](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Work_order_custom_labels.png)
 
 1. Choose **Save**.
 

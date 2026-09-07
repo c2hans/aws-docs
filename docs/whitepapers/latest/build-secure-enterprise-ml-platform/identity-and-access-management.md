@@ -33,6 +33,6 @@ Services roles are assumed by AWS services to perform different tasks such as ru
 
 The following figure shows the typical user and service roles for a SageMaker AI user and SageMaker AI service functions.
 
-![A diagram showing a user role and services roles for Sagemaker.](http://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-7.png)
+![A diagram showing a user role and services roles for Sagemaker.](https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-7.png)
 
 *User role and services roles for Sagemaker*

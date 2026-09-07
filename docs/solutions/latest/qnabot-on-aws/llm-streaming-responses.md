@@ -68,7 +68,7 @@ To turn on streaming support for QnABot: - Set the `EnableStreaming` CloudFormat
 
  **Sample Markdown text**
 
-![streamingqna](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/streamingqna.png)
+![streamingqna](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/streamingqna.png)
 
 ### Step B: Enable Streaming in Lex Web UI (0.26\+) and provide WebSocket Endpoint from QnABot
 <a name="step-b-enable-streaming-in-lex-web-ui-0-26-and-provide-websocket-endpoint-from-qnabot"></a>
@@ -77,4 +77,4 @@ To turn on streaming support for Lex Web UI: - Set the `AllowStreamingResponses`
 
  **Sample Markdown text**
 
-![streaminglexwebui](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/streaminglexwebui.png)
+![streaminglexwebui](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/streaminglexwebui.png)

@@ -19,13 +19,13 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployment
 
 The following figure shows how Amazon Route 53 manages the DNS hosted zone. By updating the [alias record](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-choosing-alias-non-alias.html), you can route traffic from the blue environment to the green environment.
 
-![Blue-green deployment with Route 53 routing traffic from blue to green environment.](http://docs.aws.amazon.com/whitepapers/latest/blue-green-deployments/images/classic-dns.png)
+![Blue-green deployment with Route 53 routing traffic from blue to green environment.](https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployments/images/classic-dns.png)
 
 * Classic DNS pattern *
 
  You can shift traffic all at once or you can do a weighted distribution. For weighted distribution with Amazon Route 53, you can define a percentage of traffic to go to the green environment and gradually update the weights until the green environment carries the full production traffic. This provides the ability to perform canary analysis where a small percentage of production traffic is introduced to a new environment. You can test the new code and monitor for errors, limiting the blast radius if any issues are encountered. It also allows the green environment to scale out to support the full production load if you’re using Elastic Load Balancing(ELB), for example. [ELB automatically scales its request-handling capacity](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html) to meet the inbound application traffic; the process of scaling isn’t instant, so we recommend that you test, observe, and understand your traffic patterns. Load balancers can also be pre-warmed (configured for optimum capacity) through a support request.
 
-![Blue-green deployment with Route 53 DNS endpoint directing 80% traffic to blue and 20% to green.](http://docs.aws.amazon.com/whitepapers/latest/blue-green-deployments/images/classic-dns-weighted.png)
+![Blue-green deployment with Route 53 DNS endpoint directing 80% traffic to blue and 20% to green.](https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployments/images/classic-dns-weighted.png)
 
 * Classic DNS-weighted distribution *
 

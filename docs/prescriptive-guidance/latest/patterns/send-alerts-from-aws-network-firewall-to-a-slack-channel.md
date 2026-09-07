@@ -51,7 +51,7 @@ All components except for the Slack channel are provisioned by the CloudFormatio
 
 This pattern sets up a decentralized network firewall with Slack integration. This architecture consists of a VPC with two Availability Zones. The VPC includes two protected subnets and two firewall subnets with network firewall endpoints. All traffic going into and out of the protected subnets can be monitored by [creating firewall policies](https://docs.aws.amazon.com/waf/latest/developerguide/network-firewall-policies.html) and rules. The network firewall is configured to place all alerts in an S3 bucket. This S3 bucket is configured to call a Lambda function when it receives a `put` event. The Lambda function fetches the configured Slack URL from Secrets Manager and sends the notification message to the Slack workspace.
 
-![Target architecture for a decentralized network firewall with Slack integration.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7207fd56-094e-4af4-9ecd-75b122b82275/images/b1320776-c010-49b9-96bf-15e97ebe09ba.png)
+![Target architecture for a decentralized network firewall with Slack integration.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7207fd56-094e-4af4-9ecd-75b122b82275/images/b1320776-c010-49b9-96bf-15e97ebe09ba.png)
 
 For more information about this architecture, see the AWS blog post [Deployment models for AWS Network Firewall](https://aws.amazon.com/blogs/networking-and-content-delivery/deployment-models-for-aws-network-firewall/).
 

@@ -67,7 +67,7 @@ wrapped_cmp = WrappedCryptographicMaterialsProvider(
 
 The Wrapped CMP generates a new item encryption key for every item. It uses the wrapping, unwrapping, and signing keys that you provide, as shown in the following diagram.
 
-![The input, processing, and output of the Wrapped Materials Provider in the DynamoDB Encryption Client](http://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/images/wrappedCMP.png)
+![The input, processing, and output of the Wrapped Materials Provider in the DynamoDB Encryption Client](https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/images/wrappedCMP.png)
 
 ### Get encryption materials
 <a name="wrapped-cmp-get-encryption-materials"></a>

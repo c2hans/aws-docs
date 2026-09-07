@@ -23,12 +23,12 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/g
 
  The guide is designed to help you choose the AWS cryptography services and tools that are the best fit for your needs and your organization.
 
-[![AWS Videos](http://img.youtube.com/vi/1vqaZBgPOiE?si=SoAZe1zQCWUlqF0K&start=475&end=535/0.jpg)](http://www.youtube.com/watch?v=1vqaZBgPOiE?si=SoAZe1zQCWUlqF0K&start=475&end=535)
+[![AWS Videos](https://img.youtube.com/vi/1vqaZBgPOiE?si=SoAZe1zQCWUlqF0K&start=475&end=535/0.jpg)](https://www.youtube.com/watch?v=1vqaZBgPOiE?si=SoAZe1zQCWUlqF0K&start=475&end=535)
 
 ## Understand
 <a name="understand"></a>
 
-![A diagram showing the suite of AWS services that enable data protection on AWS.](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/data-protection-on-aws-jan-2024.png)
+![A diagram showing the suite of AWS services that enable data protection on AWS.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/data-protection-on-aws-jan-2024.png)
 
  Choosing the right AWS cryptography services depends on your specific use case, data security requirements, compliance obligations, and operational preferences as outlined in the following tables.
 

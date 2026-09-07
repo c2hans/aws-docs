@@ -20,7 +20,7 @@ The HLS output group consists of:
 + One video output.
 + Three audio outputs (perhaps English, French, Spanish) that all belong to the same audio rendition group.
 
-![Diagram showing a box labeled "RIG 1" containing four smaller boxes: "Video 1" and three "Audio" boxes.](http://docs.aws.amazon.com/medialive/latest/ug/images/ARG_oneV_threeA.png)
+![Diagram showing a box labeled "RIG 1" containing four smaller boxes: "Video 1" and three "Audio" boxes.](https://docs.aws.amazon.com/medialive/latest/ug/images/ARG_oneV_threeA.png)
 
 ### Example 2
 <a name="ARG-example-2"></a>
@@ -31,7 +31,7 @@ The HLS output group consists of:
 + One *video low* output.
 + Three audio outputs (English, French, Spanish) that all belong to the same audio rendition group.
 
-![Diagram showing three video inputs connecting to a single audio group with three audio outputs.](http://docs.aws.amazon.com/medialive/latest/ug/images/ARG_threeV_threeA.png)
+![Diagram showing three video inputs connecting to a single audio group with three audio outputs.](https://docs.aws.amazon.com/medialive/latest/ug/images/ARG_threeV_threeA.png)
 
 ### Example 3
 <a name="ARG-3"></a>
@@ -44,4 +44,4 @@ The HLS output group consists of:
 + The video high output is associated with both audio rendition groups.
 + The video low output is associated only with the RG1 audio rendition group.
 
-![Diagram showing video inputs connected to AAC and Dolby audio group outputs.](http://docs.aws.amazon.com/medialive/latest/ug/images/ARG_twoV_twoA.png)
+![Diagram showing video inputs connected to AAC and Dolby audio group outputs.](https://docs.aws.amazon.com/medialive/latest/ug/images/ARG_twoV_twoA.png)

@@ -16,8 +16,8 @@ sysbench oltp_read_write --db-driver=mysql --mysql-db=employees --mysql-user=adm
 
 In the following graph, an OLTP workload was running, and the pt-archiver process started where arrow is marked.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/archiving-mysql-data/images/guide-img/1d38fd71-63ca-45ea-bf1f-9f493d5364d0/images/144a2f6d-7ff8-4238-9d47-105c9ae3ecfb.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/archiving-mysql-data/images/guide-img/1d38fd71-63ca-45ea-bf1f-9f493d5364d0/images/144a2f6d-7ff8-4238-9d47-105c9ae3ecfb.png)
 
 There is no significant change in the CPU utilization with pt-archiver running in parallel, which infers that pt-archiver doesn't impact OLTP queries while running.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/archiving-mysql-data/images/guide-img/1d38fd71-63ca-45ea-bf1f-9f493d5364d0/images/31e314cb-a05b-4bdf-8a4f-9c91659ecb00.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/archiving-mysql-data/images/guide-img/1d38fd71-63ca-45ea-bf1f-9f493d5364d0/images/31e314cb-a05b-4bdf-8a4f-9c91659ecb00.png)

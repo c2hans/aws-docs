@@ -14,7 +14,7 @@ You are responsible for the cost of the AWS services used while running this gui
 
     **Launch guidance**
 
-    [![Launch Stack](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/launch-solution.png)](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create?templateURL=https://solutions-reference.s3.amazonaws.com/qnabot-on-aws/latest/qnabot-on-aws-main.template&redirectId=ImplementationGuide)
+    [![Launch Stack](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/launch-solution.png)](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create?templateURL=https://solutions-reference.s3.amazonaws.com/qnabot-on-aws/latest/qnabot-on-aws-main.template&redirectId=ImplementationGuide)
 
    The template launches in the US East (N. Virginia) Region by default. To launch the guidance in a different AWS Region, use the Region selector in the console navigation bar.
 **Note**

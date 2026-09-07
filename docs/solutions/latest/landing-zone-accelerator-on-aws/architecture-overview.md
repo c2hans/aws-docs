@@ -14,7 +14,7 @@ Deploying this solution with the default parameters deploys the following compon
 
  **AWS architecture diagram showing Management, Log Archive, and Audit accounts with various services and their interactions.**
 
-![lza arch diagram](http://docs.aws.amazon.com/solutions/latest/landing-zone-accelerator-on-aws/images/lza-arch-diagram.png)
+![lza arch diagram](https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerator-on-aws/images/lza-arch-diagram.png)
 
 1. You use AWS CloudFormation to install the solution into your environment. Your environment must meet [prerequisites](prerequisites.md) before deploying the solution. The provided CloudFormation template deploys an [AWS CodePipeline](https://aws.amazon.com/codepipeline/) that contains the Landing Zone Accelerator on AWS installation engine.
 

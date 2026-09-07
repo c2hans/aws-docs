@@ -9,7 +9,7 @@ This solution features a guided deployment process using AWS Launch Wizard. Foll
 
 1. Sign in to the AWS Management Console and select the button below to start the deployment process.
 
-    [![Launch solution.](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/launch-button.png)](https://us-east-1.console.aws.amazon.com/launchwizard/home?region=us-east-1#/deployment/create/SO0310)
+    [![Launch solution.](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/launch-button.png)](https://us-east-1.console.aws.amazon.com/launchwizard/home?region=us-east-1#/deployment/create/SO0310)
 
 1. If there are more than one deployment patterns available for the solution, select the one that’s most applicable to your use case.
 

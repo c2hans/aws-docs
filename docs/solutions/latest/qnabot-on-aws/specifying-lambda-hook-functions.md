@@ -18,7 +18,7 @@ QnABot on AWS comes with a simple Lambda hook function example that you can cust
 1. Use the web UI to say, ` "What are Lambda hooks?" `. Note that the answer is prepended with a dynamic greeting based on the current time of day - in this case ` good afternoon `.
 
     **Example Lambda hook function.**
-![image18](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image18.jpeg)
+![image18](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image18.jpeg)
 
 1. Inspect the `ExampleJSLambdahook` Lambda function using the [AWS Lambda console](https://console.aws.amazon.com/lambda/home?region=us-east-1#/functions/qna-QnABot-hello?tab=graph).
 

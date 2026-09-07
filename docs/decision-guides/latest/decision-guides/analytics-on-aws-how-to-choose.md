@@ -22,7 +22,7 @@ Meeting these challenges means building a modern data architecture that breaks d
 
 This decision guide helps you ask the right questions to build your modern data architecture on AWS services. It explains how to break down your data silos (by connecting your data lake and data warehouses), your system silos (by connecting ML and analytics), and your people silos (by putting data in the hands of everyone in your organization).
 
-[![AWS Videos](http://img.youtube.com/vi/9Y1bwAmx0Do?start=397&end=848/0.jpg)](http://www.youtube.com/watch?v=9Y1bwAmx0Do?start=397&end=848)
+[![AWS Videos](https://img.youtube.com/vi/9Y1bwAmx0Do?start=397&end=848/0.jpg)](https://www.youtube.com/watch?v=9Y1bwAmx0Do?start=397&end=848)
 
 ## Understand AWS analytics services
 <a name="understand"></a>
@@ -37,7 +37,7 @@ A modern data strategy is built with a set of technology building blocks that he
 
 AWS offers a variety of services to help you achieve a modern data strategy. The following diagram depicts the AWS services for analytics that this guide covers. The tabs that follow provide additional details.
 
-![Diagram showing the AWS analytics services](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/analytics-services.png)
+![Diagram showing the AWS analytics services](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/analytics-services.png)
 
 ------
 #### [ Unified analytics and AI ]

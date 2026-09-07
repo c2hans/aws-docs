@@ -155,7 +155,7 @@ Use the console, AWS CLI, or Amazon RDS API to monitor storage initialization. B
 
  In the AWS Management Console, you see the progress of storage initialization with the DB instance status.
 
-![Storage initialization progress indicator for a blue-green deployment.](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/images/storage-initialization-bg.png)
+![Storage initialization progress indicator for a blue-green deployment.](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/images/storage-initialization-bg.png)
 
 ------
 #### [ AWS CLI ]
@@ -207,7 +207,7 @@ You can create a blue/green deployment using the AWS Management Console, the AWS
 1. Choose **Actions**, **Create blue/green deployment**.
 
    The **Create blue/green deployment** page appears.
-![Create blue-green deployment.](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/images/blue-green-deployment-create.png)
+![Create blue-green deployment.](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/images/blue-green-deployment-create.png)
 
 1. Review the blue database identifiers. Make sure that they match the DB instances that you expect in the blue environment. If they don't, choose **Cancel**.
 

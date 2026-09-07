@@ -9,7 +9,7 @@ While configuring aggregation and filling methods for demand drivers, a general 
 
 Note that the choice of aggregation and filling method configuration depends on the data characteristics and assumptions about missing values. Here is an example.
 
-![Demand driver recommendation](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/demand_driver_recommendation.png)
+![Demand driver recommendation](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/demand_driver_recommendation.png)
 
 Demand Planning recommends adjusting the demand driver configuration to best suit your dataset needs. The demand driver configuration will impact the forecast accuracy.
 

@@ -49,7 +49,7 @@ The pattern uses a hub-and-spoke design in which the hub requires connectivity t
 
 The following diagrams shows this pattern’s workflow.
 
-![Creating Infoblox objects using AWS CloudFormation custom resources and Amazon SNS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8d609d3f-6f5e-4084-849f-ca191db8055e/images/3594a064-e103-4211-84b7-da67c41ebb15.png)
+![Creating Infoblox objects using AWS CloudFormation custom resources and Amazon SNS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8d609d3f-6f5e-4084-849f-ca191db8055e/images/3594a064-e103-4211-84b7-da67c41ebb15.png)
 
 The diagram shows the following components for this pattern’s solution:
 

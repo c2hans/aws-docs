@@ -60,7 +60,7 @@ In the VPC route table, you might reference a prefix list which has additional r
 +  Resilient hybrid connectivity: Redundant VPN connections each provide the same performance capacity, support automated failover by using dynamic routing protocol (BGP), and speed up connection failure detection by using VPN dead peer detection.
 +  Performance efficiency: Configuring ECMP across both VPN connections to AWS Transit Gateway helps to maximize the overall VPN connection bandwidth. Alternatively, by advertising different, more specific, routes along with the site summary route, load can be managed independency across the two VPN connections
 
-![Diagram showing dual Site-to-Site VPN connections with more specific routes example](http://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/images/dual-s2s-example.png)
+![Diagram showing dual Site-to-Site VPN connections with more specific routes example](https://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/images/dual-s2s-example.png)
 
 ## Dual on-premises sites with multiple DX connections example
 <a name="dual-on-premises-sites-with-multiple-dx-connections-example"></a>
@@ -71,7 +71,7 @@ In the VPC route table, you might reference a prefix list which has additional r
 
  To maximize the reliability of the connectivity at the AWS Region level, each pair of AWS DX connections configures ECMP so that both can be utilized at the same time for data transfer between each on-premises site and AWS.
 
-![Diagram showing dual on-premises sites with multiple DX connections example](http://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/images/dual-dx-example.png)
+![Diagram showing dual on-premises sites with multiple DX connections example](https://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/images/dual-dx-example.png)
 
  With this design, the traffic flows destined to the on-premises networks (with the same advertised prefix length and BGP community) will be distributed across the dual DX connections per site using ECMP. However, if ECMP is not required across the DX connection, the same concept discussed earlier and described in the [Routing policies and BGP communities](https://docs.aws.amazon.com/directconnect/latest/UserGuide/routing-and-bgp.html) documentation can be used to further engineer the path selection at a DX connection level.
 
@@ -86,8 +86,8 @@ In the VPC route table, you might reference a prefix list which has additional r
 
  From the AWS Transit Gateway routing table’s point of view, the routes for the on-premises prefix are received both from the AWS DX connection (via DXGW) and from VPN, with the same prefix length. Following the r[oute priority logic of AWS Transit Gateway](https://docs.aws.amazon.com/vpc/latest/tgw/how-transit-gateways-work.html#tgw-route-evaluation-overview), routes received over Direct Connect have a higher preference than the ones received over Site-to-Site VPN, and thus the path over the AWS Direct Connect will be the preferred to reach the on-premises network(s).
 
-![Diagram showing a VPN connection as a backup to AWS DX connection example](http://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/images/vpn-as-backup-to-dx.png)
+![Diagram showing a VPN connection as a backup to AWS DX connection example](https://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/images/vpn-as-backup-to-dx.png)
 
  The following decision tree guides you through making the desired decision for achieving a resilient (which will result in a reliably) hybrid network connectivity. For more information, refer to [AWS Direct Connect Resiliency Toolkit](https://docs.aws.amazon.com/directconnect/latest/UserGuide/resilency_toolkit.html).
 
-![Diagram showing a reliability decision tree](http://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/images/reliability-decision-tree.png)
+![Diagram showing a reliability decision tree](https://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/images/reliability-decision-tree.png)

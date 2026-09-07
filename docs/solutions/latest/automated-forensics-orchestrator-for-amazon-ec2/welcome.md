@@ -11,7 +11,7 @@ This Guidance provides a framework to orchestrate and automate key forensics pro
 
  **Forensic workflow**
 
-![forensic workflow](http://docs.aws.amazon.com/solutions/latest/automated-forensics-orchestrator-for-amazon-ec2/images/forensic-workflow.png)
+![forensic workflow](https://docs.aws.amazon.com/solutions/latest/automated-forensics-orchestrator-for-amazon-ec2/images/forensic-workflow.png)
 
 Digital forensics is a four-step process of acquisition, isolation, investigation and reporting. The Automated Forensics Orchestrator for Amazon EC2 and EKS Guidance provides the capability to act on security events by imaging or acquisition of breached resources for examination and generating a forensic report about the security breach. In the event of a security breach, it allows customers to automatically capture and store targeted data for forensic examination and analysis, and their SOC to discover and analyze patterns of fraudulent activities. The Guidance supports EC2 instances and EKS clusters on EC2 instances distributed across multiple accounts and regions.
 

@@ -18,14 +18,14 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-oracle-e-bus
 
  Each Region has multiple, isolated locations known as Availability Zones. Each Availability Zone runs on its own physically distinct, independent infrastructure, and is engineered to be highly reliable. Common points of failure, such as generators and cooling equipment, are not shared across Availability Zones. Because Availability Zones are physically separate, even extremely uncommon disasters such as fires, tornados or flooding would only affect a single Availability Zone. Each Availability Zone is isolated, but the Availability Zones in a Region are connected through low-latency links. The following figure illustrates the relationship between Regions and Availability Zones.
 
-![Diagram showing the relationship between AWS Regions and Availability Zones](http://docs.aws.amazon.com/whitepapers/latest/overview-oracle-e-business-suite/images/regions-and-avaliability-zones.png)
+![Diagram showing the relationship between AWS Regions and Availability Zones](https://docs.aws.amazon.com/whitepapers/latest/overview-oracle-e-business-suite/images/regions-and-avaliability-zones.png)
 
  The following figure shows the Regions and the number of Availability Zones in each Region provided by an AWS account at the time of this publication. For the most current list of Regions and Availability Zones, see [Global Infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/).
 
 **Note**
 You can’t describe or access additional Regions from the AWS GovCloud (US) Region or China (Beijing) Region.
 
-![Map of AWS Regions and Availability Zones](http://docs.aws.amazon.com/whitepapers/latest/overview-oracle-e-business-suite/images/map-of-regions-and-availability-zones.png)
+![Map of AWS Regions and Availability Zones](https://docs.aws.amazon.com/whitepapers/latest/overview-oracle-e-business-suite/images/map-of-regions-and-availability-zones.png)
 
 ## Amazon Elastic Compute Cloud (Amazon EC2)
 <a name="amazon-elastic-compute-cloud-amazon-ec2"></a>

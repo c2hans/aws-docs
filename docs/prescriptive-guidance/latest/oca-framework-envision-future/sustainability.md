@@ -46,7 +46,7 @@ Leadership behaviors and activities:
 
 However, at some point, the journey to the cloud should stop being treated as a project or initiative and become business as usual.
 
-![Gradual transition from cloud project to business as usual.](http://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-envision-future/images/guide-img/7134122a-df9a-4cfe-995a-6903c8a3790f/images/3f84fb28-7300-4027-a710-37f182f6af09.png)
+![Gradual transition from cloud project to business as usual.](https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-envision-future/images/guide-img/7134122a-df9a-4cfe-995a-6903c8a3790f/images/3f84fb28-7300-4027-a710-37f182f6af09.png)
 
 Sustaining improvement gains over time requires a proactive and systematic approach for creating internal sustainability and ownership.
 

@@ -7,4 +7,4 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy
 
 Elastic Beanstalk uses the Amazon Simple Notification Service (Amazon SNS) to notify you of important events affecting your application. To enable Amazon SNS notifications, simply enter your email address in the **Email Address** box. To disable these notifications, remove your email address from the box.
 
-![Elastic Beanstalk notifications window](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/images/aeb-vs-notifications.png)
+![Elastic Beanstalk notifications window](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/images/aeb-vs-notifications.png)

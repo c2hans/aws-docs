@@ -26,7 +26,7 @@ These central teams strive to create standards for controlling costs, achieving 
 
 It is common to choose one of two operational models to meet this challenge: [serverless compute](https://aws.amazon.com/serverless/) or [Kubernetes](https://aws.amazon.com/kubernetes/).
 
-[![AWS Videos](http://img.youtube.com/vi/OJD3UMuU8Zk/0.jpg)](http://www.youtube.com/watch?v=OJD3UMuU8Zk)
+[![AWS Videos](https://img.youtube.com/vi/OJD3UMuU8Zk/0.jpg)](https://www.youtube.com/watch?v=OJD3UMuU8Zk)
 
 ## Understand
 <a name="understand"></a>
@@ -35,13 +35,13 @@ Developers and data engineers might have different compute requirements. For exa
 
 Alternatively, a data engineer might choose an open-source framework like KubeFlow or Ray on [Amazon Elastic Kubernetes Service](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html) (Amazon EKS) because it simplifies deployment of machine-learning models but allows access to the right high-powered instances.
 
-[![AWS Videos](http://img.youtube.com/vi/1hN9SuRsnNQ/0.jpg)](http://www.youtube.com/watch?v=1hN9SuRsnNQ)
+[![AWS Videos](https://img.youtube.com/vi/1hN9SuRsnNQ/0.jpg)](https://www.youtube.com/watch?v=1hN9SuRsnNQ)
 
 Each role tends to develop skills in technology stacks over time and has preferences about the tools they use. Both developers and data engineers look at their compute choice on a workload-by-workload basis, which means operational roles need to support a variety of workloads since they often work across teams. These roles include platform engineers, cloud administrators, or site reliability engineers (SREs).
 
 Those in operational roles are challenged to provide autonomy for developers and data engineers while making sure they can deploy, operate, and monitor all workloads consistently to meet security, performance, resiliency, and cost requirements. Over time, as you develop more modern applications, these roles need to standardize on the tools to automate the deployment and monitoring of their workloads.
 
-![Diagram showing the operational models for modular architecture patterns.](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/operational-models-for-modular-architecture.png)
+![Diagram showing the operational models for modular architecture patterns.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/operational-models-for-modular-architecture.png)
 
 The choice between serverless compute and Kubernetes as an operational model is often driven by the need to have the right balance between autonomy and standardization with the number of resources one dedicates to running and operating workloads. Many workloads can be built successfully using either of these options. But, for some workloads, there are inherent advantages of one over the other.
 

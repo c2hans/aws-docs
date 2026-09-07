@@ -48,7 +48,7 @@ This pattern doesn't provide the functionality to act as a replacement for the O
 
 The following diagram shows a high-level representation of the solution.
 
-![Data files are uploaded to an S3 bucket, processed using the aws_s3 extension, and sent to the Aurora instance.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/3aeecd46-1f87-41f9-a9cd-f8181f92e83f/images/4a6c5f5c-58fb-4355-b243-d09a15c1cec6.png)
+![Data files are uploaded to an S3 bucket, processed using the aws_s3 extension, and sent to the Aurora instance.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/3aeecd46-1f87-41f9-a9cd-f8181f92e83f/images/4a6c5f5c-58fb-4355-b243-d09a15c1cec6.png)
 
 1. Files are uploaded from the application into the S3 bucket.
 

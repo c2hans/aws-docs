@@ -13,4 +13,4 @@ AWS Systems Manager Application Manager gives you an application-level view into
 
  **Depicts Migration Assistant Traffic Replayer stack in Application Manager**
 
-![image8](http://docs.aws.amazon.com/solutions/latest/migration-assistant-for-amazon-opensearch-service/images/image8.png)
+![image8](https://docs.aws.amazon.com/solutions/latest/migration-assistant-for-amazon-opensearch-service/images/image8.png)

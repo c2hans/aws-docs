@@ -39,7 +39,7 @@ This pattern covers the build, run, and validate aspects of modern application d
 
 This pattern uses an [AWS CloudFormation template](https://console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/new?stackName=SSM-SSH-Demo&templateURL=https://aws-quickstart.s3.amazonaws.com/quickstart-examples/samples/session-manager-ssh/session-manager-example.yaml) to create the highly available architecture shown in the following diagram. An Amazon EC2 Linux instance is launched in a private subnet. AWS Systems Manager Session Manager is used to access the private Amazon EC2 Linux instance and to test the API running in the Docker container.
 
-![A user accessing the Amazon EC2 Linux instance and testing the API running in the Docker container.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/512e61b2-10ba-43be-bbd8-2bdc597c3de3/images/9c5206f6-32b1-47be-9037-360c0bff713c.png)
+![A user accessing the Amazon EC2 Linux instance and testing the API running in the Docker container.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/512e61b2-10ba-43be-bbd8-2bdc597c3de3/images/9c5206f6-32b1-47be-9037-360c0bff713c.png)
 
 1. Access to the Linux instance through Session Manager
 

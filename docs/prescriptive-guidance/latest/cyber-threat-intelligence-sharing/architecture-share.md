@@ -11,7 +11,7 @@ Sending CTI to the trust community happens at the same time as implementing prev
 
 The following image shows how you can use AWS services to generate CTI and then share it with your trust community, including cyber authorities and other community members.
 
-![Workflow for generating CTI and sharing it with your trust community.](http://docs.aws.amazon.com/prescriptive-guidance/latest/cyber-threat-intelligence-sharing/images/guide-img/65270b8a-43a4-49d2-8123-9467febf488a/images/110864b9-ec92-4376-b14b-ab46d1af66f6.png)
+![Workflow for generating CTI and sharing it with your trust community.](https://docs.aws.amazon.com/prescriptive-guidance/latest/cyber-threat-intelligence-sharing/images/guide-img/65270b8a-43a4-49d2-8123-9467febf488a/images/110864b9-ec92-4376-b14b-ab46d1af66f6.png)
 
 This diagram shows the following workflow:
 

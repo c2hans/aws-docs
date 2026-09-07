@@ -40,7 +40,7 @@ This cloud-native pattern leverages Amazon Elastic Kubernetes Service (Amazon EK
 
 The following diagram shows the architecture for AI-powered Kubernetes diagnostics using K8sGPT integrated with Amazon Bedrock in the AWS Cloud.
 
-![Workflow for Kubernetes diagnostics using K8sGPT integrated with Amazon Bedrock.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/09bc08f6-e191-4cef-b26b-dcb6225b15cc/images/8789891d-4a90-44b0-a108-387f6d96496b.png)
+![Workflow for Kubernetes diagnostics using K8sGPT integrated with Amazon Bedrock.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/09bc08f6-e191-4cef-b26b-dcb6225b15cc/images/8789891d-4a90-44b0-a108-387f6d96496b.png)
 
 The architecture shows the following workflow:
 

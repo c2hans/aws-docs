@@ -9,7 +9,7 @@ The Amazon Chime SDK media pipelines support compositing of audio, webcam videos
 
 Compositing uses a default screen layout called `GridView`, which has the following behaviors.
 + When only webcam videos are active, `GridView` organizes the streams in the following grid pattern:
-![A four-column, four-row grid showing the outlines of people.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/grid-no-content-share.png)
+![A four-column, four-row grid showing the outlines of people.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/grid-no-content-share.png)
 
   The grid displays a maximum of 25 webcam streams, and it orders the tiles by when users turn on their cameras.
 + `GridView` provides two canvas orientations, `Landscape` and `Portrait`. Landscape, the default orientation, supports video resolutions of 1280x720 and 1920x1080 for FHD. Portrait supports resolutions of 720x1280 and 1080x1920 for FHD.

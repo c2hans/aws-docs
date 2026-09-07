@@ -19,6 +19,6 @@ To delete a standalone Lambda function, do the following.
 1. Expand **Lambda**.
 
 1. Right-click the name of the function to delete, and then choose **Delete Function**.
-![Choosing the Delete Function command](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/lambda-delete.png)
+![Choosing the Delete Function command](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/lambda-delete.png)
 
 1. Enter the function's name to confirm the deletion, and then choose **OK**. If the function deletion succeeds, the AWS Toolkit for JetBrains removes the function name from the **Lambda** list.

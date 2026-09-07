@@ -2829,10 +2829,10 @@ Added support for AvroSerDe and OpenCSVSerDe, US East (Ohio) Region, and bulk ed
   + [Open CSV SerDe for processing CSV](csv-serde.md)
 + **US East (Ohio)** Region (**us-east-2**) launch. You can now run queries in this region.
 + You can now use the **Create Table From S3 bucket data** form to define table schema in bulk. In the query editor, choose **Create**, **S3 bucket data**, and then choose **Bulk add columns** in the **Column details** section.
-![The Bulk add columns option.](http://docs.aws.amazon.com/athena/latest/ug/images/bulk-add.png)
+![The Bulk add columns option.](https://docs.aws.amazon.com/athena/latest/ug/images/bulk-add.png)
 
   Type name value pairs in the text box and choose **Add**.
-![The Bulk add columns text box.](http://docs.aws.amazon.com/athena/latest/ug/images/bulk_column.png)
+![The Bulk add columns text box.](https://docs.aws.amazon.com/athena/latest/ug/images/bulk_column.png)
 
 #### Improvements
 <a name="release-note-2017-02-20-improvements"></a>

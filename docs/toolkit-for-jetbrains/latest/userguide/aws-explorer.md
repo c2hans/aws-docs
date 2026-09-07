@@ -9,13 +9,13 @@ AWS Explorer provides convenient access to several features in the AWS Toolkit f
 
 To open AWS Explorer, with the AWS Toolkit for JetBrains installed and with IntelliJ IDEA, PyCharm, WebStorm, or JetBrains Rider running, do one of the following:
 + On the tool window bar, choose **AWS Explorer**.
-![AWS Explorer tool window button.](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/aws-explorer-tool-window-button.png)
+![AWS Explorer tool window button.](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/aws-explorer-tool-window-button.png)
 + On the main menu, choose **View**, **Tool Windows**, **AWS Explorer**.
-![Opening AWS Explorer from the main menu.](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/aws-explorer-main-menu.png)
+![Opening AWS Explorer from the main menu.](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/aws-explorer-main-menu.png)
 
 In **AWS Explorer**, choose the settings icon (**Show Options Menu**) for the following options:
 
-![The AWS Explorer Show Options Menu.](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/aws-explorer.png)
+![The AWS Explorer Show Options Menu.](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/aws-explorer.png)
 
 **AWS Connection Settings**
 Contains the following options:
@@ -24,7 +24,7 @@ Contains the following options:
 + **All Credentials** – Lists all available connections that you can make from the AWS Toolkit for JetBrains to AWS accounts. The toolkit uses the selected connection. To have the toolkit use a different connection, choose that connection's name. To do other connection tasks, choose **AWS Edit Credential file(s)**.
 The **AWS Connection Settings** area in the status bar displays the AWS account connection and Region that the AWS Toolkit for JetBrains is currently using.
 
-![The AWS Connection Settings area in the status bar.](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/aws-connection-settings.png)
+![The AWS Connection Settings area in the status bar.](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/aws-connection-settings.png)
 
 Choose this area to view the same **AWS Connection Settings** options as the **Show Options Menu**.
 

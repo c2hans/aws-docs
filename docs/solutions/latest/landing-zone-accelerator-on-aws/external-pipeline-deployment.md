@@ -9,7 +9,7 @@ In a default Landing Zone Accelerator on AWS installation, the CodePipeline and 
 
  **External pipeline deployment**
 
-![external pipeline deployment](http://docs.aws.amazon.com/solutions/latest/landing-zone-accelerator-on-aws/images/external-pipeline-deployment.png)
+![external pipeline deployment](https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerator-on-aws/images/external-pipeline-deployment.png)
 
 Follow these instructions to implement this pattern:
 

@@ -35,7 +35,7 @@ To implement the floating IP pattern on AWS:
 
    Therefore, the application that was listening on the VIP associated with the secondary private IP address becomes available to endpoints via the standby node.
 
-![A diagram depicting failover between stateful EC2 instances using an elastic IP address.](http://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/images/failover-stateful.jpg)
+![A diagram depicting failover between stateful EC2 instances using an elastic IP address.](https://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/images/failover-stateful.jpg)
 
 #### Benefits
 <a name="benefits"></a>
@@ -74,7 +74,7 @@ To implement the floating IP pattern on AWS:
 
 The following figure shows the target topology.
 
-![A diagram depicting WebRTC scalability and high availability architecture.](http://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/images/webrtc-scalability.png)
+![A diagram depicting WebRTC scalability and high availability architecture.](https://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/images/webrtc-scalability.png)
 
 ## Implementation for SIP using Network Load Balancer or an AWS Marketplace product
 <a name="implementation-for-sip-using-network-load-balancer-or-aws-marketplace-product"></a>
@@ -85,4 +85,4 @@ The following figure shows the target topology.
 
  If SIP connections are initiated, another option is to use [AWS Marketplace](https://aws.amazon.com/marketplace) commercial off-the-shelf software (COTS). The AWS Marketplace offers many products that can handle UDP and other types of layer four connection load balancing. COTS typically include support for high availability and commonly integrate with features, such as Amazon EC2 Auto Scaling, to further enhance availability and scalability. The following figure shows the target topology:
 
-![A diagram depicting SIP-based RTC scalability with AWS Marketplace product.](http://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/images/sip-based-rtc-scalability.jpg)
+![A diagram depicting SIP-based RTC scalability with AWS Marketplace product.](https://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/images/sip-based-rtc-scalability.jpg)

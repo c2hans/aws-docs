@@ -22,11 +22,11 @@ Micro-frontends are similar to *microservices*. In fact, the term micro-frontend
 
 The following diagram shows a traditional microservices architecture, with a frontend monolith that uses an API gateway to connect to backend microservices.
 
-![Client-side frontend monolith connecting to server-side microservices.](http://docs.aws.amazon.com/prescriptive-guidance/latest/micro-frontends-aws/images/guide-img/4cd7ea48-b17c-411c-a5b2-fa8a58f6a617/images/55b8482c-7e32-4fd5-ac14-eea66e86b1a5.png)
+![Client-side frontend monolith connecting to server-side microservices.](https://docs.aws.amazon.com/prescriptive-guidance/latest/micro-frontends-aws/images/guide-img/4cd7ea48-b17c-411c-a5b2-fa8a58f6a617/images/55b8482c-7e32-4fd5-ac14-eea66e86b1a5.png)
 
 The following diagram shows a micro-frontend architecture with different implementations of microservices.
 
-![Client-side integration layer front-end modules and server-side microservices.](http://docs.aws.amazon.com/prescriptive-guidance/latest/micro-frontends-aws/images/guide-img/4cd7ea48-b17c-411c-a5b2-fa8a58f6a617/images/da7b5e30-d3d5-400d-b3c1-466f2971a877.png)
+![Client-side integration layer front-end modules and server-side microservices.](https://docs.aws.amazon.com/prescriptive-guidance/latest/micro-frontends-aws/images/guide-img/4cd7ea48-b17c-411c-a5b2-fa8a58f6a617/images/da7b5e30-d3d5-400d-b3c1-466f2971a877.png)
 
 As shown in the previous diagram, you can use micro-frontends with client-side rendering or server-side rendering architectures:
 + Client-side rendered micro-frontends can directly consume APIs exposed by a centralized API Gateway.

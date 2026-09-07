@@ -76,7 +76,7 @@ When you log in to Supply Planning for the first time, you can view the onboardi
 
 You can view the overall supply plan for your organization, as shown in the following example page.
 
-![Supply Planning Overview](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/supply_planning_overview.png)
+![Supply Planning Overview](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/supply_planning_overview.png)
 
 + **Supply Network** – Under supply network, you can view the current products, sites, and suppliers in the current supply plan.
 + **Inventory and Orders** – Displays the total inventory across sites, including inventory on-hand and the inventory that is currently on-order with the suppliers.
@@ -103,7 +103,7 @@ You can view current purchase order request details and status.
 1. You can use the **Filters** option to filter your purchase orders according to your search criteria. Your can search purchase orders based on vendors, products, sites, order value, order quantity, and requested delivery date.
 
 1. Choose **Apply** to apply your filter criteria to the current purchase orders, and choose **Save filter group** to save the search filter.
-![Supply Planning purchase order requests](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/supply_planning_purchase_order.png)
+![Supply Planning purchase order requests](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/supply_planning_purchase_order.png)
 
 1. Under **Order Quantity**, choose **Edit** to view and update the quantity.
 
@@ -119,7 +119,7 @@ You can view current purchase order request details and status.
 1. Choose **Update** to update the quantity request.
 
 1. Under **Product**, choose the product to view the planned demand for the product.
-![Supply Planning edits](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Edit_SP.png)
+![Supply Planning edits](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Edit_SP.png)
 
 1. Under **Planned Demand**, select the site to view the replenishment plan.
 

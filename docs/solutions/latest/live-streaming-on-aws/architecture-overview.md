@@ -15,7 +15,7 @@ Deploying this solution with the default parameters deploys the following compon
 
  **Depicts Live Streaming on AWS solution architecture**
 
-![live streaming on aws architecture](http://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws/images/live-streaming-on-aws-architecture.png)
+![live streaming on aws architecture](https://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws/images/live-streaming-on-aws-architecture.png)
 
 The solution’s AWS CloudFormation template launches the AWS products and services necessary to ingest, transcode, and deliver live streaming video.
 

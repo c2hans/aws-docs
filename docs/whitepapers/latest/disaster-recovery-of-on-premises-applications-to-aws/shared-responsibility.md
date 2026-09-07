@@ -21,4 +21,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-of-
 
  Your responsibility is determined by the AWS Cloud services that you select. This determines the amount of configuration work you must perform as part of your resiliency responsibilities. You are responsible for managing resiliency of your data and workloads, whether on AWS or outside of it, including disaster recovery, high availability, backup, versioning, and replication strategies.
 
-![This image shows an AWS shared responsibility model](http://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-of-on-premises-applications-to-aws/images/awssharedresponsibilitymodel.png)
+![This image shows an AWS shared responsibility model](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-of-on-premises-applications-to-aws/images/awssharedresponsibilitymodel.png)

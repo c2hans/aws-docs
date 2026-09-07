@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-
 
  AWS services – [AWS Site-to-Site VPN](https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html) and [AWS Direct Connect](https://aws.amazon.com/directconnect/)
 
-![Private AWS resources access](http://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-to-address-personal-data-processing-requirements/images/private-aws-resources-access.png)
+![Private AWS resources access](https://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-to-address-personal-data-processing-requirements/images/private-aws-resources-access.png)
 
  Private AWS resources access
 
@@ -29,7 +29,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-
 
  The Direct Connect connection consists of a single dedicated connection between ports on an AWS router and a Partner (or customer) router. We recommend establishing a second connection if redundancy is required. For additional resiliency, customers can implement an AWS Site-to-Site VPN connection over the internet, and configure routing to pass traffic through the VPN connection if the existing channel became unavailable. For more information, refer to the [AWS Direct Connect Resiliency Toolkit](https://docs.aws.amazon.com/directconnect/latest/UserGuide/resilency_toolkit.html).
 
-![Hybrid AWS resources access](http://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-to-address-personal-data-processing-requirements/images/hybrid-aws-resources-access.png)
+![Hybrid AWS resources access](https://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-to-address-personal-data-processing-requirements/images/hybrid-aws-resources-access.png)
 
  Hybrid AWS resources access
 

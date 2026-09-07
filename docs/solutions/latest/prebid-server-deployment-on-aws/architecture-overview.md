@@ -14,7 +14,7 @@ Deploying this solution with the default parameters deploys the following compon
 
  **Guidance for Deploying a Prebid Server on AWS architectural overview**
 
-![aws solution for prebid server architecture](http://docs.aws.amazon.com/solutions/latest/prebid-server-deployment-on-aws/images/aws-solution-for-prebid-server-architecture.png)
+![aws solution for prebid server architecture](https://docs.aws.amazon.com/solutions/latest/prebid-server-deployment-on-aws/images/aws-solution-for-prebid-server-architecture.png)
 
 **Note**
  [AWS CloudFormation](https://aws.amazon.com/cloudformation/) resources are created from AWS Cloud Development Kit (AWS CDK) constructs.

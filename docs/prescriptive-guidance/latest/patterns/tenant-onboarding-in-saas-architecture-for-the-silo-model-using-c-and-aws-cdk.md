@@ -68,7 +68,7 @@ This pattern is set up as an example. For production use, evaluate the following
 
 The following diagram shows the tenant stack creation flow. For more information about the control-plane and tenant technology stacks, see the *Additional information* section.
 
-![Workflow to create a tenant and provision a basic infrastructure for the tenant on AWS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5baef800-fe39-4eb8-b11d-2c23eb3175fc/images/0b579484-b87c-4acb-8c60-8c33c18370e3.png)
+![Workflow to create a tenant and provision a basic infrastructure for the tenant on AWS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5baef800-fe39-4eb8-b11d-2c23eb3175fc/images/0b579484-b87c-4acb-8c60-8c33c18370e3.png)
 
 **Tenant stack creation flow**
 

@@ -12,7 +12,7 @@ Registering your Auto Scaling group with an Elastic Load Balancing load balancer
 
 In this tutorial, we cover the basics steps for setting up a load-balanced application when the Auto Scaling group is created. When complete, your architecture should look similar to the following diagram:
 
-![An Auto Scaling group with an Application Load Balancer.](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/elb-tutorial-architecture-diagram.png)
+![An Auto Scaling group with an Application Load Balancer.](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/elb-tutorial-architecture-diagram.png)
 
 Elastic Load Balancing supports different types of load balancers. We recommend that you use an Application Load Balancer for this tutorial.
 

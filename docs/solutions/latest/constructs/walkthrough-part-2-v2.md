@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/constructs/walkthrough-
 
 This tutorial walks you through how to modify the "Hello Constructs" app created in [part 1](walkthrough-part-1-v2.md) . Our modification will add a site hit counter using the AWS Lambda to DynamoDB pattern from AWS Solutions Constructs. Modifying the Hello Constructs app will result in the following solution:
 
-![AWS Solutions Constructs diagram showing API Gateway, Lambda functions, DynamoDB, and CloudWatch interactions.](http://docs.aws.amazon.com/solutions/latest/constructs/images/tutorial-part2.png)
+![AWS Solutions Constructs diagram showing API Gateway, Lambda functions, DynamoDB, and CloudWatch interactions.](https://docs.aws.amazon.com/solutions/latest/constructs/images/tutorial-part2.png)
 
 ## Hit Counter Lambda code
 <a name="hit-counter-lambda-code"></a>
@@ -281,7 +281,7 @@ First, we are going to import our new dependency and move the "Hello" function o
 
 Next, we are going to add the `aws-lambda-dynamodb` pattern to build out the hit counter service for our updated architecture.
 
-![AWS Solutions Constructs diagram showing API Gateway, Lambda, DynamoDB, and CloudWatch interactions.](http://docs.aws.amazon.com/solutions/latest/constructs/images/tutorial-part2a.png)
+![AWS Solutions Constructs diagram showing API Gateway, Lambda, DynamoDB, and CloudWatch interactions.](https://docs.aws.amazon.com/solutions/latest/constructs/images/tutorial-part2a.png)
 
 The next update below defines the properties for the `aws-lambda-dynamodb` pattern by defining the AWS Lambda function with the Hit Counter handler. Additionally, the Amazon DynamoDB table is defined with a name of `SolutionsConstructsHits` and a partition key of `path` .
 
@@ -1278,7 +1278,7 @@ Now, let’s review the `SolutionsConstructsHits` Amazon DynamoDB table.
 1. Open the table and select "Items" or "Explore table items" (depending upon which version of the Dyamodb console you are using).
 
 1. You should see how many hits you got for each path (the data below reflects running the curl command 3 times with 3 different resources at the end of the URL).
-![Table showing paths and their corresponding hit counts, with three entries listed.](http://docs.aws.amazon.com/solutions/latest/constructs/images/tutorial-part2b.png)
+![Table showing paths and their corresponding hit counts, with three entries listed.](https://docs.aws.amazon.com/solutions/latest/constructs/images/tutorial-part2b.png)
 
 1. Try hitting a new path and refresh the Items view. You should see a new item with a `hits` count of one.
 

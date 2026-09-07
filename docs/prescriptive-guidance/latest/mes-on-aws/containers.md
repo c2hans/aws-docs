@@ -12,7 +12,7 @@ Containers are a popular choice for a modern MES that comprises microservices. C
 
 The architecture in the following diagram combines DNS and load balancing for a consistent user experience with backend containerized computing. It also includes a continuous integration and continuous deployment (CI/CD) pipeline for continuous updates.
 
-![MES container-based architecture](http://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/images/guide-img/093538ca-c7c9-4311-a0e9-8a876ae66d65/images/3d4dced7-8ccd-4f5c-8d21-ee6b7c4a970b.png)
+![MES container-based architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/images/guide-img/093538ca-c7c9-4311-a0e9-8a876ae66d65/images/3d4dced7-8ccd-4f5c-8d21-ee6b7c4a970b.png)
 
 1. The MES development team uses AWS CodePipeline to build, commit, and deploy the code.
 

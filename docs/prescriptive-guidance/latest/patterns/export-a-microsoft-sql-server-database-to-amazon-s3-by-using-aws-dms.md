@@ -45,7 +45,7 @@ The data is exported by using AWS Database Migration Service (AWS DMS). By defau
 
 **Target architecture **
 
-![Data migrates from SQL Server database through Direct Connect into AWS DMS and then to S3 bucket.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/75b8b20f-a1a8-4633-9816-1b370cc7e92c/images/85bd433c-4a0a-4825-8661-e53f53265191.png)
+![Data migrates from SQL Server database through Direct Connect into AWS DMS and then to S3 bucket.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/75b8b20f-a1a8-4633-9816-1b370cc7e92c/images/85bd433c-4a0a-4825-8661-e53f53265191.png)
 
 ## Tools
 <a name="export-a-microsoft-sql-server-database-to-amazon-s3-by-using-aws-dms-tools"></a>

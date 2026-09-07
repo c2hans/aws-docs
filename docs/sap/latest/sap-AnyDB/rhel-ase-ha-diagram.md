@@ -7,4 +7,4 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-AnyDB/rhel-ase-ha-diagram
 
 The following diagram shows the cold standby SAP ASE cluster setup with FSx for ONTAP.
 
-![Pacemaker Cluster for SAP ASE.](http://docs.aws.amazon.com/sap/latest/sap-AnyDB/images/rhel-ase-pacemaker.png)
+![Pacemaker Cluster for SAP ASE.](https://docs.aws.amazon.com/sap/latest/sap-AnyDB/images/rhel-ase-pacemaker.png)

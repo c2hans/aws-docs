@@ -62,7 +62,7 @@ After a stable period, you can decommission the mainframe transaction (blue) env
 
 The following diagram illustrates the cutover flow.
 
-![Cutover architecture for replatforming mainframe applications on AWS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-mainframe-apps-shared-db2/images/guide-img/b5c7b078-cfe6-46c4-b120-94b5824d3c88/images/024f696a-2549-407b-8c10-e794db21daae.png)
+![Cutover architecture for replatforming mainframe applications on AWS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-mainframe-apps-shared-db2/images/guide-img/b5c7b078-cfe6-46c4-b120-94b5824d3c88/images/024f696a-2549-407b-8c10-e794db21daae.png)
 
 The cutover process consists of the following:
 

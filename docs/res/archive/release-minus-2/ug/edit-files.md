@@ -8,6 +8,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/edit-file
 You can edit the content of text-based files within the web portal.
 
 1. Select the file you want to update. A modal will open with the file's content.
-![File browser](http://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-filebrowser.jpg)
+![File browser](https://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-filebrowser.jpg)
 
 1.  Make your updates and choose **Save**.

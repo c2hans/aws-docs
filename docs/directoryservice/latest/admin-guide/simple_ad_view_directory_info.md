@@ -13,4 +13,4 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/simp
 
 For more information about the **Status** field, see [Understanding your Simple AD directory status](simple_ad_directory_status.md).
 
-![Simple AD Directory details page.](http://docs.aws.amazon.com/directoryservice/latest/admin-guide/images/simple_ad_directory_details.png)
+![Simple AD Directory details page.](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/images/simple_ad_directory_details.png)

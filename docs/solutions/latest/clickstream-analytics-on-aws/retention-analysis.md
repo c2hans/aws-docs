@@ -72,4 +72,4 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 
  All configurations are as shown in the image below:
 
-![Retention analysis configuration with Start and Revisit metrics, filters for Android platform, and parameter grouping by app_info.install_source.](http://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/explore-retention-en.png)
+![Retention analysis configuration with Start and Revisit metrics, filters for Android platform, and parameter grouping by app_info.install_source.](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/explore-retention-en.png)

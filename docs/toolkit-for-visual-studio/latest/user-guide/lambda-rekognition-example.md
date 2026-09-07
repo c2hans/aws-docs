@@ -177,14 +177,14 @@ The preset values are retrieved from the `aws-lambda-tools-defaults.json` file.
 1. From the **Upload to AWS Lambda** window, enter a name into the **Function Name** field, then choose the **Next** button to advance to the **Advanced Function Details** window.
 **Note**
 This example, uses the **Function Name** **ImageRekognition**.
-![Upload Lambda Function dialog with fields for package type, runtime, architecture, and function name.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/lambda-upload-imgrek-03192024.png)
+![Upload Lambda Function dialog with fields for package type, runtime, architecture, and function name.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/lambda-upload-imgrek-03192024.png)
 
 1. From the **Advanced Function Details** window, select an IAM role that gives permission for your code to access your Amazon S3 and Amazon Rekognition resources.
 **Note**
 If you're following along with this example, select the `AWSLambda_FullAccess` role.
 
 1. Set the environment variable `MinConfidence` to 60, then choose **Upload** to launch the deployment process. The publishing process is complete when the **Function** view displays in the **AWS Explorer**.
-![Advanced Function Details dialog with MinConfidence environment variable set to 60.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/lambda-upload-imgrek-advanced-03192024.png)
+![Advanced Function Details dialog with MinConfidence environment variable set to 60.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/lambda-upload-imgrek-advanced-03192024.png)
 
 1. Following a successful deployment, configure Amazon S3 to send its events to your new function by navigating to the **Event Sources** tab.
 
@@ -199,4 +199,4 @@ Now that the function is deployed and an S3 bucket is configured as an event sou
 
 When the upload is complete, you can confirm that your function ran by looking at the logs from your function view. Or, right-click the images in the bucket browser and choose **Properties**. On the **Tags** tab, you can view the tags that were applied to your object.
 
-![Properties dialog showing metadata tags with tag names such as Dirt Road and Road with numerical values.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/lambda-object-properties.png)
+![Properties dialog showing metadata tags with tag names such as Dirt Road and Road with numerical values.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/lambda-object-properties.png)

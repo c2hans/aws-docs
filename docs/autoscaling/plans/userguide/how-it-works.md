@@ -10,12 +10,12 @@ AWS Auto Scaling lets you use scaling plans to configure a set of instructions f
 **What is a scaling strategy?**
 The scaling strategy tells AWS Auto Scaling how to optimize the utilization of resources in your scaling plan. You can optimize for availability, for cost, or a balance of both. Alternatively, you can also create your own custom strategy, per the metrics and thresholds you define. You can set separate strategies for each resource or resource type.
 
-![Scaling strategies include optimizing for availability versus cost, or a balance between them.](http://docs.aws.amazon.com/autoscaling/plans/userguide/images/strategies.png)
+![Scaling strategies include optimizing for availability versus cost, or a balance between them.](https://docs.aws.amazon.com/autoscaling/plans/userguide/images/strategies.png)
 
 **What is dynamic scaling?**
 Dynamic scaling creates target tracking scaling policies for the resources in your scaling plan. These scaling policies adjust resource capacity in response to live changes in resource utilization. The intention is to provide enough capacity to maintain utilization at the target value specified by the scaling strategy. This is similar to the way that your thermostat maintains the temperature of your home. You choose the temperature and the thermostat does the rest.
 
-![Graphs comparing utilization and capacity with and without dynamic scaling.](http://docs.aws.amazon.com/autoscaling/plans/userguide/images/dynamic-scaling.png)
+![Graphs comparing utilization and capacity with and without dynamic scaling.](https://docs.aws.amazon.com/autoscaling/plans/userguide/images/dynamic-scaling.png)
 
 For example, you can configure your scaling plan to keep the number of tasks that your Amazon Elastic Container Service (Amazon ECS) service runs at 75 percent of CPU. When the CPU utilization of your service exceeds 75 percent (meaning that more than 75 percent of the CPU that is reserved for the service is being used), then your scaling policy adds another task to your service to help out with the increased load.
 
@@ -26,7 +26,7 @@ Predictive scaling uses machine learning to analyze each resource's historical w
 If you use scaling plans only for predictive scaling, we strongly recommend that you set predictive scaling policies directly on your Auto Scaling resources instead. This option offers more features, such as using metrics aggregations to create new custom metrics or retain historical metric data across blue/green deployments. For more information about Amazon EC2 Auto Scaling, see [Predictive scaling for Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-predictive-scaling.html) in the *Amazon EC2 Auto Scaling User Guide*. For more information about Application Auto Scaling, see [Predictive scaling for Application Auto Scaling](https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-predictive-scaling.html) in the *Application Auto Scaling User Guide*.
 For a guide for migrating from scaling plans to Amazon EC2 Auto Scaling predictive scaling policies, see [Migrate your scaling plan](migrate-scaling-plan.md).
 
-![Graphs showing historical load, the generated forecast, and the scaling actions taken.](http://docs.aws.amazon.com/autoscaling/plans/userguide/images/predictive-scaling.png)
+![Graphs showing historical load, the generated forecast, and the scaling actions taken.](https://docs.aws.amazon.com/autoscaling/plans/userguide/images/predictive-scaling.png)
 
 For example, you can enable predictive scaling and configure your scaling strategy to keep the average CPU utilization of your Auto Scaling group at 50 percent. Your forecast calls for traffic spikes to occur every day at 8:00. Your scaling plan creates the future scheduled scaling actions to make sure that your Auto Scaling group is ready to handle that traffic ahead of time. This helps keep the application performance constant, with the aim of always having the capacity required to maintain resource utilization as close to 50 percent as possible at all times.
 

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/shari
 
 Supply Planning provides the following workflow to manage your manufacturing plans.
 
-![Manufacturing Plan business workflow](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/manufacturing_business_workflow.png)
+![Manufacturing Plan business workflow](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/manufacturing_business_workflow.png)
 
 + **Generate plan** – Supply Planning generates the manufacturing plan according to the configured schedule. The latest input data required to generate the plan is received from the AWS Supply Chain data lake. Supply Planning uses configuration data, transactional data, and plan settings to generate the manufacturing plan, which includes material, transfer, and production plans. The Manufacturing Plan is generated for the configured planning horizon in terms of the number of time periods. You can create plans with either daily or weekly details, and you can create them on a daily or weekly frequency. If multiple plans are created within the same planning cycle (daily or weekly), new plans will override the existing plans. Existing plans are versioned after a new plan is generated at the beginning of a new planning cycle (for example, a new week).
 + **Review plan exceptions** – Supply Planning generates plan exceptions for products or site combinations that do not have either required configuration data (lead time, sourcing schedule, and so on) or required transactional data, such as on-hand inventory. Planners can review exceptions and provide required data, and then they can rerun the plan to correct the issues and generate the supply plan for relevant product and site combinations.

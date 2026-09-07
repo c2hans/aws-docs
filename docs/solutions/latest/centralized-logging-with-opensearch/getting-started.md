@@ -74,7 +74,7 @@ You can create a NGINX proxy and create a DNS record pointing to the proxy, so t
 1. Choose the associated **Load Balancer SSL Certificate that** applies to the domain name.
 
     **NGINX Instance key name. Specify the EC2 key name of the NGINX proxy.**
-![image26](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image26.png)
+![image26](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image26.png)
 
 1. Choose **Create**.
 

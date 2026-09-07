@@ -61,7 +61,7 @@ You need to get the `flowARN` of the step-by-step guide that you want to associa
 1. In the flow designer, choose **About this flow**, then choose **View ARN**.
 
 1. Copy and save the `flowARN`. It is the entire string, as shown in the following image.
-![Dialog box displaying the complete flowARN (Amazon Resource Name) for a step-by-step guide.](http://docs.aws.amazon.com/connect/latest/adminguide/images/qic-flow-id.png)
+![Dialog box displaying the complete flowARN (Amazon Resource Name) for a step-by-step guide.](https://docs.aws.amazon.com/connect/latest/adminguide/images/qic-flow-id.png)
 
    You'll use the `flowARN` in [Step 2](#associate-guide-content).
 

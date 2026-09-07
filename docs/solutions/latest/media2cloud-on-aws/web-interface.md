@@ -9,4 +9,4 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/web-
 
  The web interface also provides a human-in-the-loop feature that allows customers to remediate cases where Amazon Rekognition cannot detect individuals in a video or cannot provide logical groupings of related individuals based on the customer’s specific use case, for example, Olympic athletes for a specific year. Using the web interface, customers can create face collections and index people in the video to that face collection.
 
-![Media2Cloud on AWS web interface architecture diagram](http://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-web-interface.png)
+![Media2Cloud on AWS web interface architecture diagram](https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-web-interface.png)

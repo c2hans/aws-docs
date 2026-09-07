@@ -14,7 +14,7 @@ Well-defined and autonomous workstreams improve overall project agility. Basing 
 
 The high-level plan in the following diagram shows the parallel workstreams and sequence of typical activities in an example contact center migration project.
 
-![Sprints, workstreams, and activities in a contact center migration project](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/images/guide-img/c8027e22-fcd9-43b3-b8a7-234ec8eb0644/images/ba528d35-95ed-4079-aee7-a0a275839862.png)
+![Sprints, workstreams, and activities in a contact center migration project](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/images/guide-img/c8027e22-fcd9-43b3-b8a7-234ec8eb0644/images/ba528d35-95ed-4079-aee7-a0a275839862.png)
 
 We recommend that you run at least three parallel workstreams: *operational***, ***technical foundation***, **and *user journeys. *The phasing and approach to project activities differ, depending on the nature of the workstream. Each workstream requires a different delivery approach, as explained in the following sections. As the diagram illustrates:
 + Tasks within each workstream are bundled into agile sprints.

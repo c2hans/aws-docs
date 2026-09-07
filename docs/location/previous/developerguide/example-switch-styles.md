@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/example
 # Example: Style a map
 <a name="example-switch-styles"></a>
 
-![Side-by-side comparison of light and dark map themes showing Vancouver area.](http://docs.aws.amazon.com/location/previous/developerguide/images/samples/map-styles-both_small.png)
+![Side-by-side comparison of light and dark map themes showing Vancouver area.](https://docs.aws.amazon.com/location/previous/developerguide/images/samples/map-styles-both_small.png)
 
 This code example shows how to switch between a satellite map and a vector road map, using MapLibre in JavaScript. Uses MapLibre, the Amazon Location authentication helper, and JavaScript.
 

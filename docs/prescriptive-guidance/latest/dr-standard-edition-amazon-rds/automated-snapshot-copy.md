@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dr-standard
 
 The following diagram shows using an AWS Backup plan and backup vault to take snapshots of the Amazon RDS instance at scheduled intervals and copy the snapshots to the DR Region.
 
-![""](http://docs.aws.amazon.com/prescriptive-guidance/latest/dr-standard-edition-amazon-rds/images/guide-img/d84bd0dc-b6eb-4d26-8602-78820cdf415f/images/06eda206-3cf6-4dd7-92b2-a6e0e633fe35.png)
+![""](https://docs.aws.amazon.com/prescriptive-guidance/latest/dr-standard-edition-amazon-rds/images/guide-img/d84bd0dc-b6eb-4d26-8602-78820cdf415f/images/06eda206-3cf6-4dd7-92b2-a6e0e633fe35.png)
 
 1. Snapshot restore points
 

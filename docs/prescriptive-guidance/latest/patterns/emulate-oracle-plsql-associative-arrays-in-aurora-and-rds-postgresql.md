@@ -60,7 +60,7 @@ This pattern was tested with the following versions:
 
 **Target architecture**
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a62d038c-ca3c-41e1-aa7e-74282d2e54f4/images/13aacf00-655a-4149-a4e7-42b66dbea4e1.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a62d038c-ca3c-41e1-aa7e-74282d2e54f4/images/13aacf00-655a-4149-a4e7-42b66dbea4e1.png)
 
 The diagram shows the following:
 + A source Amazon RDS for Oracle database instance

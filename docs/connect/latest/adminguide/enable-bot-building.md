@@ -12,12 +12,12 @@ Users can not edit LEX V1 bots or cross-regional bots from within Connect Custom
 1. Open the [Connect Customer console.](https://console.aws.amazon.com/connect/)
 
 1. Select the Connect Customer instance that you want to integrate with your Amazon Lex bot.
-![The Connect Customer virtual contact center instances page, the instance alias.](http://docs.aws.amazon.com/connect/latest/adminguide/images/instance.png)
+![The Connect Customer virtual contact center instances page, the instance alias.](https://docs.aws.amazon.com/connect/latest/adminguide/images/instance.png)
 
 1. On the navigation menu, choose **Flows**.
 
 1. Choose **Enable Lex Bot Management in Connect Customer** and **Enable Bot Analytics and Transcripts in Connect Customer**, and then **Save**.
-![The Amazon Lex bots page, the options to enable Lex bot management and analytics Connect Customer.](http://docs.aws.amazon.com/connect/latest/adminguide/images/lex-bot-service-linked-role.png)
+![The Amazon Lex bots page, the options to enable Lex bot management and analytics Connect Customer.](https://docs.aws.amazon.com/connect/latest/adminguide/images/lex-bot-service-linked-role.png)
 
 **Note**
 If you already have existing Service Control Policies (SCP) in place that block access to Lex, Connect Customer respects those policies and does not enable the Bot Management and Analytics feature. However, if you put those SCP policies in place after you've already enabled this feature, they won't be respected. In that case, you'll need to disable this feature.

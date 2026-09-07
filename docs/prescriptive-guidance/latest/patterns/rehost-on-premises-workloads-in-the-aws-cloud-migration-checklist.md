@@ -38,7 +38,7 @@ Amazon Macie can help identify sensitive data in your knowledge bases, stored as
 
 The following diagram illustrates rehosting (discovering and migrating servers from an on-premises source environment to AWS) by using Cloud Migration Factory and AWS Application Migration Service.
 
-![Rehosting servers on AWS by using Cloud Migration Factory and Application Migration Service](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8e2d2d72-30cc-4e98-8abd-ac2ef95e599b/images/735ad65b-2646-4803-82c9-f7f93369b3a5.png)
+![Rehosting servers on AWS by using Cloud Migration Factory and Application Migration Service](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8e2d2d72-30cc-4e98-8abd-ac2ef95e599b/images/735ad65b-2646-4803-82c9-f7f93369b3a5.png)
 
 ## Tools
 <a name="rehost-on-premises-workloads-in-the-aws-cloud-migration-checklist-tools"></a>

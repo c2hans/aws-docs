@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/image-class
 
 *Image classification* is a central task in computer vision, a subfield of machine learning (ML) and artificial intelligence (AI). Image classification algorithms analyze the pixels of an image and output labels for the entire image. For example, the following image might have the following labels: `person`, `dog`, or `outdoors`.
 
-![Woman hiking outdoors with a dog.](http://docs.aws.amazon.com/prescriptive-guidance/latest/image-classification/images/guide-img/3c71b76a-1e6e-4c69-b783-1676c6b7fb2d/images/bd475407-bd36-44cf-87ad-e79f65206875.png)
+![Woman hiking outdoors with a dog.](https://docs.aws.amazon.com/prescriptive-guidance/latest/image-classification/images/guide-img/3c71b76a-1e6e-4c69-b783-1676c6b7fb2d/images/bd475407-bd36-44cf-87ad-e79f65206875.png)
 
 Image classification does not localize the objects in an image or create bounding boxes (as is done in object detection). Example applications of image classification include sorting images into digital albums and processing car images for inventory at an automobile dealership.
 

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/stream-expo
 
 User-defined Greengrass components use `StreamManagerClient` in the Stream Manager SDK to interact with stream manager. When a component [creates a stream](work-with-streams.md#streammanagerclient-create-message-stream) or [updates a stream](work-with-streams.md#streammanagerclient-create-message-stream), it passes a `MessageStreamDefinition` object that represents stream properties, including the export definition. The `ExportDefinition` object contains the export configurations defined for the stream. Stream manager uses these export configurations to determine where and how to export the stream.
 
-![Object model diagram of the ExportDefinition property type.](http://docs.aws.amazon.com/greengrass/v2/developerguide/images/stream-manager-exportconfigs.png)
+![Object model diagram of the ExportDefinition property type.](https://docs.aws.amazon.com/greengrass/v2/developerguide/images/stream-manager-exportconfigs.png)
 
 You can define zero or more export configurations on a stream, including multiple export configurations for a single destination type. For example, you can export a stream to two Kinesis Data Streams data streams and one Amazon S3 destination.
 

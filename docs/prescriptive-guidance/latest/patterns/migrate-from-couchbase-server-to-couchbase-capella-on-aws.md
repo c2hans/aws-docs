@@ -63,7 +63,7 @@ The migration process also requires the roles and expertise described in the fol
 
 **Target architecture**
 
-![Couchbase Capella migration to Couchbase cluster in the Capella data plane on AWS in four steps.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/14ac5a81-eade-4708-9335-f5602fa07824/images/95cd7f33-742e-4d10-8e2c-37c7b4d9df45.png)
+![Couchbase Capella migration to Couchbase cluster in the Capella data plane on AWS in four steps.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/14ac5a81-eade-4708-9335-f5602fa07824/images/95cd7f33-742e-4d10-8e2c-37c7b4d9df45.png)
 
 1. You access Couchbase Capella by using the **Capella Control Plane**. You can use the Capella Control Plane to do the following:
    + Control and monitor your account.

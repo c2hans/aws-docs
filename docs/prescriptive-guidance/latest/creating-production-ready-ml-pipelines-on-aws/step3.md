@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/creating-pr
 # Step 3. Define the pipeline
 <a name="step3"></a>
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/creating-production-ready-ml-pipelines-on-aws/images/guide-img/38c6f8a0-9908-46ce-9db4-ad6b4c4bc218/images/e36b18ad-daff-4726-91e0-58150605b674.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/creating-production-ready-ml-pipelines-on-aws/images/guide-img/38c6f8a0-9908-46ce-9db4-ad6b4c4bc218/images/e36b18ad-daff-4726-91e0-58150605b674.png)
 
 In this step, the sequence and logic of actions that the pipeline will perform are defined. This includes discrete steps as well as their logical inputs and outputs. For example, what is the state of the data at the beginning of the pipeline? Does it come from multiple files that are at different levels of granularity or from a single flat file? If the data comes from multiple files, do you need a single step for all files or separate steps for each file to define the preprocessing logic? The decision depends on the complexity of the data sources and the extent to which they are preprocessed. In our reference implementation, we use [AWS Step Functions](https://aws.amazon.com/step-functions/), which is a serverless function orchestrator, to define the workflow steps. However, the [ML Max framework](https://github.com/awslabs/mlmax) also supports other pipeline or state machine systems such as Apache AirFlow (see the [Different engines for pipeline orchestration](step6.md#engines) section) to drive the development and deployment of ML pipelines.
 

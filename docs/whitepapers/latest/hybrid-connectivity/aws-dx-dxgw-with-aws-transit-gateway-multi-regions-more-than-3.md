@@ -15,7 +15,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/a
 +  High scale of VPCs per Region.
 +  Full mesh of peering between AWS Transit Gateways.
 
-![Diagram showing AWS DX – DXGW with AWS Transit Gateway, Multi-Regions (more than three)](http://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/images/dxgw-with-tg-multi-region.png)
+![Diagram showing AWS DX – DXGW with AWS Transit Gateway, Multi-Regions (more than three)](https://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/images/dxgw-with-tg-multi-region.png)
 
  **Connectivity model attributes:**
 +  Lowest operational overhead.
@@ -40,7 +40,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/a
 
  The following decision tree covers the scalability and communication model considerations:
 
-![Diagram showing scalability and communication model decision tree](http://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/images/scalability-communication-model-decision-tree.png)
+![Diagram showing scalability and communication model decision tree](https://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/images/scalability-communication-model-decision-tree.png)
 
 **Note**
 If the selected connection type is VPN, typically at the performance consideration, the decision should be made whether the VPN termination point is AWS VGW or AWS Transit Gateway AWS S2S VPN connection. If not made yet, then you can consider the required communication model between the VPC along with the number of required VPC to be connected to the VPN connection(s) to help you make the decision.

@@ -37,10 +37,10 @@ Operating models on AWS can be structured across three main paradigms: tradition
 
 The following diagram illustrates these three models.
 
-![Traditional, CloudOps, and DevOps operations models.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-operations-integration/images/guide-img/6545b5e3-3780-4eb8-a195-e92454bb488e/images/5cdac8a6-21b7-4d26-aa6e-d9878ce83645.png)
+![Traditional, CloudOps, and DevOps operations models.](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-operations-integration/images/guide-img/6545b5e3-3780-4eb8-a195-e92454bb488e/images/5cdac8a6-21b7-4d26-aa6e-d9878ce83645.png)
 
 The choice of operating model should align with your organization's cloud maturity, migration strategy, and business objectives. Organizations often evolve through these models as they progress in their cloud journey—starting with traditional operations and gradually moving toward DevOps as their cloud capabilities mature.
 
 The following diagram shows suggested operating models based on the [7Rs migration strategies](https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/migration-strategies.html) and approach to AWS.
 
-![Operating models mapped to 7 migration strategies.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-operations-integration/images/guide-img/6545b5e3-3780-4eb8-a195-e92454bb488e/images/8b0fd0e2-8c2c-4296-b011-8dbda1005e8b.png)
+![Operating models mapped to 7 migration strategies.](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-operations-integration/images/guide-img/6545b5e3-3780-4eb8-a195-e92454bb488e/images/8b0fd0e2-8c2c-4296-b011-8dbda1005e8b.png)

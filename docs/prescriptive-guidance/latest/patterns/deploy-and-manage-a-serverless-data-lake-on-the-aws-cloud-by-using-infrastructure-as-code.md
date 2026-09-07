@@ -32,7 +32,7 @@ AWS CloudFormation and AWS code services act as the IaC layer to provide reprodu
 ## Architecture
 <a name="deploy-and-manage-a-serverless-data-lake-on-the-aws-cloud-by-using-infrastructure-as-code-architecture"></a>
 
-![Implementing and administering a data lake on the AWS Cloud.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/f4fc3ad2-1c4f-45ea-bc86-2db13105a173/images/e0cfff30-f0f8-4fc1-8e84-a152ef615c58.png)
+![Implementing and administering a data lake on the AWS Cloud.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/f4fc3ad2-1c4f-45ea-bc86-2db13105a173/images/e0cfff30-f0f8-4fc1-8e84-a152ef615c58.png)
 
  The architecture diagram illustrates an event-driven process with the following steps.
 

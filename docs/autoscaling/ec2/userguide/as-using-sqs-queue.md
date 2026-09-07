@@ -43,7 +43,7 @@ There are three main parts to this configuration:
 
 The following diagram illustrates the architecture of this configuration.
 
-![Amazon EC2 Auto Scaling using queues architectural diagram](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/sqs-as-custom-metric-diagram.png)
+![Amazon EC2 Auto Scaling using queues architectural diagram](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/sqs-as-custom-metric-diagram.png)
 
 ## Limitations
 <a name="scale-sqs-queue-limitations"></a>

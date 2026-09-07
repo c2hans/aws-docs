@@ -15,13 +15,13 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployment
 
  To implement this technique, use Elastic Beanstalk to spin up the blue environment.
 
-![Elastic Beanstalk architecture with Route 53 DNS, load balancer, and auto scaling group.](http://docs.aws.amazon.com/whitepapers/latest/blue-green-deployments/images/elastic-beanstalk-environment.png)
+![Elastic Beanstalk architecture with Route 53 DNS, load balancer, and auto scaling group.](https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployments/images/elastic-beanstalk-environment.png)
 
 * Elastic Beanstalk environment *
 
  Elastic Beanstalk provides an environment URL when the application is up and running. The green environment is spun up with its own environment URL. At this time, two environments are up and running, but only the blue environment is serving production traffic.
 
-![Two Elastic Beanstalk environments with load balancers and auto scaling groups behind Route 53.](http://docs.aws.amazon.com/whitepapers/latest/blue-green-deployments/images/prepare-green-elastic.png)
+![Two Elastic Beanstalk environments with load balancers and auto scaling groups behind Route 53.](https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployments/images/prepare-green-elastic.png)
 
 * Prepare green Elastic Beanstalk environment *
 
@@ -37,6 +37,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployment
 
    To perform a rollback, select **Swap Environment URL** again.
 
-![Elastic Beanstalk architecture with Route 53 DNS endpoint routing to two containers in AWS Region.](http://docs.aws.amazon.com/whitepapers/latest/blue-green-deployments/images/decommission-blue-elastic.png)
+![Elastic Beanstalk architecture with Route 53 DNS endpoint routing to two containers in AWS Region.](https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployments/images/decommission-blue-elastic.png)
 
 * Decommission blue Elastic Beanstalk environment *

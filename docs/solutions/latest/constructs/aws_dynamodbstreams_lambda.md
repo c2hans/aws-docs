@@ -122,7 +122,7 @@ Out of the box implementation of the Construct without any override will set the
 ## Architecture
 <a name="_architecture"></a>
 
-![Diagram showing data flow between AWS services including DynamoDB, Lambda, CloudWatch and an IAM Role](http://docs.aws.amazon.com/solutions/latest/constructs/images/aws-dynamodbstreams-lambda.png)
+![Diagram showing data flow between AWS services including DynamoDB, Lambda, CloudWatch and an IAM Role](https://docs.aws.amazon.com/solutions/latest/constructs/images/aws-dynamodbstreams-lambda.png)
 
 ## Github
 <a name="_github"></a>

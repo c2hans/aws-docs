@@ -25,7 +25,7 @@ An *[on-demand](lambda-functions.md#lambda-lifecycle)* Lambda function is simila
    + For **Subscription topic**, enter **hello/world/counter**.
    + For **Quality of Service**, choose **0**.
    + For **MQTT payload display**, choose **Display payloads as strings**.
-![Screenshot of Subscriptions test page.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-056.png)
+![Screenshot of Subscriptions test page.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-056.png)
 
 1. Choose **Subscribe**.
 **Note**
@@ -34,12 +34,12 @@ You should not see any messages after you subscribe.
 1. To test the on-demand lifecycle, invoke the function by publishing a message to the `hello/world/counter/trigger` topic. You can use the default message.
 
    1. Choose **Publish** three times quickly, within five seconds of each press of the button.
-![Screenshot showing the Publish to topic button, which must be clicked rapidly three times.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-063.png)
+![Screenshot showing the Publish to topic button, which must be clicked rapidly three times.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-063.png)
 
       Each publish invokes the function handler and creates a container for each invocation. The invocation count is not incremented for the three times you triggered the function because each on-demand Lambda function has its own container/sandbox.
-![Screenshot showing Invocation Count fixed at 1.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-064.png)
+![Screenshot showing Invocation Count fixed at 1.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-064.png)
 
    1. After approximately 30 seconds, choose **Publish to topic**. The invocation count should be incremented to 2. This shows that a container created from an earlier invocation is being reused, and that preprocessing variables outside of the function handler were stored.
-![Screenshot showing Invocation Count now at 2.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-065.png)
+![Screenshot showing Invocation Count now at 2.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-065.png)
 
 You should now understand the two types of Lambda functions that can run on the AWS IoT Greengrass core. The next module, [Module 4](module4.md), shows you how local IoT devices can interact in an AWS IoT Greengrass group.

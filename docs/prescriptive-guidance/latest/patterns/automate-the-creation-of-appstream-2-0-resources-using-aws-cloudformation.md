@@ -29,7 +29,7 @@ This pattern provides code samples and steps to automate the creation of [Amazon
 
 The following diagram shows you how to automate the creation of WorkSpaces Applications resources by using a CloudFormation template.
 
-![Workflow for automatically creating WorkSpaces Applications resources.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/4f0205f5-5b91-4832-9f0f-2135ae866226/images/cb578939-d9af-4f60-93c9-286881df4c3a.png)
+![Workflow for automatically creating WorkSpaces Applications resources.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/4f0205f5-5b91-4832-9f0f-2135ae866226/images/cb578939-d9af-4f60-93c9-286881df4c3a.png)
 
 The diagram shows the following workflow:
 

@@ -41,7 +41,7 @@ For information about storage size limits, see the [Amazon Relational Database 
 
 The following diagram shows an example architecture for running Oracle BI 12c components in the AWS Cloud:
 
-![Example architecture for running Oracle BI 12c components in the AWS Cloud.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8bb72df1-7546-4208-bc70-5789767e3600/images/aae8f8f3-8125-4868-a8e5-eac1cc42812f.png)
+![Example architecture for running Oracle BI 12c components in the AWS Cloud.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8bb72df1-7546-4208-bc70-5789767e3600/images/aae8f8f3-8125-4868-a8e5-eac1cc42812f.png)
 
 This diagram shows the following architecture:
 

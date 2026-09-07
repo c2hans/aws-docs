@@ -30,7 +30,7 @@ Depending on where you deploy the migration execution server, choose one of the 
 1. Select the **Outputs** tab, under the **Key** column, locate `AutomationServerInstanceProfile` and record the **Value** to use later in the deployment.
 
     **Outputs tab**
-![cfn console outputs tab](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/cfn-console-outputs-tab.png)
+![cfn console outputs tab](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/cfn-console-outputs-tab.png)
 
 1. Navigate to the [Amazon Elastic Compute Cloud (EC2)](https://console.aws.amazon.com/ec2/v2/home) console.
 
@@ -41,7 +41,7 @@ Depending on where you deploy the migration execution server, choose one of the 
 1. Select the instance and select **Actions** on the menu.
 
 1. Select **Security** from the drop-down list, and then select **Modify IAM role**.
-![f6 ec2 console](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/f6-ec2-console.png)
+![f6 ec2 console](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/f6-ec2-console.png)
 
 1. From the list of IAM roles, locate and select the IAM role containing the value for `AutomationServerInstanceProfile` that you recorded earlier in this procedure and choose **Save**.
 
@@ -54,7 +54,7 @@ If the instance does not connect after a few minutes, try connecting by using RD
 1. Add the following tag to the migration automation server EC2 instance: **Key**= `role` and **Value** = `mf_automation`.
 
     **EC2 console**
-![add tag ec2](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/add-tag-ec2.png)
+![add tag ec2](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/add-tag-ec2.png)
 
 ### Option 2: Configure an on-premises migration automation server
 <a name="option-2"></a>
@@ -64,7 +64,7 @@ If the instance does not connect after a few minutes, try connecting by using RD
 1. Select the **Outputs** tab, under the **Key** column, locate `AutomationServerIAMPolicy` and record the value to use later in the deployment.
 
     **Outputs tab**
-![outputs automation server iam policy](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/outputs-automation-server-iam-policy.png)
+![outputs automation server iam policy](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/outputs-automation-server-iam-policy.png)
 
 1. Navigate to the [AWS Identity and Access Management (IAM)](https://console.aws.amazon.com/iam/home) console.
 
@@ -124,14 +124,14 @@ Keep the keys confidential to protect your AWS account and never email them. Do 
    1. After the SSM Agent is installed, in the SSM console, choose **Fleet Manager**. Identify the node ID that has the **mi-** prefix and an **Online** status.
 
        **Fleet Manager**
-![fleet manager](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/fleet-manager.png)
+![fleet manager](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/fleet-manager.png)
 
    1. Select the **Node ID** and make sure that the IAM role is the one you selected with **automation-server** suffix.
 
    1. Add the following tag for this Hybrid node: **Key** = `role` and **Value** = `mf_automation`. All lower case.
 
        **Tag - hybrid node**
-![tag hybrid node](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/tag-hybrid-node.png)
+![tag hybrid node](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/tag-hybrid-node.png)
 
 ## Install required software to support the automations
 <a name="installing-required-software"></a>
@@ -145,7 +145,7 @@ Keep the keys confidential to protect your AWS account and never email them. Do 
 1. Choose **Next**, and select **Install for all users** and **Add Python to environment variables**. Choose **Install**.
 
     **Migration Factory web interface Attribute Details tab**
-![python advanced options](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/python-advanced-options.png)
+![python advanced options](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/python-advanced-options.png)
 
 1. Verify that you have administrator privileges, open `cmd.exe`, and run the following commands to install the Python packages one at a time:
 

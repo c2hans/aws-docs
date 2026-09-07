@@ -22,4 +22,4 @@ For information on WorkSpaces Secure Browser, see [Getting started with Amazon W
 
 The following diagram shows the architecture of WorkSpaces Thin Client.
 
-![WorkSpaces Thin Client architecture](http://docs.aws.amazon.com/workspaces-thin-client/latest/ag/images/thin-client-diagram-customer-facing.png)
+![WorkSpaces Thin Client architecture](https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/images/thin-client-diagram-customer-facing.png)

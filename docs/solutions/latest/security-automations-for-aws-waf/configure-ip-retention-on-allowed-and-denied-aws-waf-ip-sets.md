@@ -12,7 +12,7 @@ You can configure IP retention on Allowed and Denied AWS WAF IP sets that the so
 
  **Architecture diagram depicting the AWS WAF allowed and denied lists and other AWS resources**
 
-![ip retention](http://docs.aws.amazon.com/solutions/latest/security-automations-for-aws-waf/images/ip-retention.png)
+![ip retention](https://docs.aws.amazon.com/solutions/latest/security-automations-for-aws-waf/images/ip-retention.png)
 
 1. When a user updates (add or delete an IP address) the Allowed or Denied WAF IP set, this action invokes an AWS WAF `UpdateIPSet` API call and creates an event.
 

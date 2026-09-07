@@ -12,7 +12,7 @@ The procedures in this topic show you how to migrate an existing project or loca
 + View files in the CodeCommit repository.
 + Share the CodeCommit repository with your team.
 
-![Migrating a local project to CodeCommit](http://docs.aws.amazon.com/codecommit/latest/userguide/images/codecommit-migrate-local.png)
+![Migrating a local project to CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/images/codecommit-migrate-local.png)
 
 **Topics**
 + [Step 0: Setup required for access to CodeCommit](#how-to-migrate-local-setup)

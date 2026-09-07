@@ -30,4 +30,4 @@ The CRT libraries form a complex net of relationships and dependencies. Knowing 
 
 *The following is an illustration of the hierarchical dependencies of the CRT libraries.*
 
-![CRT dependency diagram showing how the individual CRT libraries interrelate with each other.](http://docs.aws.amazon.com/sdkref/latest/guide/images/crt-dependency-graph.png)
+![CRT dependency diagram showing how the individual CRT libraries interrelate with each other.](https://docs.aws.amazon.com/sdkref/latest/guide/images/crt-dependency-graph.png)

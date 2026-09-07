@@ -11,7 +11,7 @@ Automate containment and recovery of an incident to reduce response times and or
 
 Once you create and practice the processes and tools from your playbooks, you can deconstruct the logic into a code-based solution, which can be used as a tool by many responders to automate the response and remove variance or guess-work by your responders. This can speed up the lifecycle of a response. The next goal is to enable this code to be fully automated by being invoked by the alerts or events themselves, rather than by a human responder, to create an event-driven response. These processes should also automatically add relevant data to your security systems. For example, an incident involving traffic from an unwanted IP address can automatically populate an AWS WAF block list or Network Firewall rule group to prevent further activity.
 
-![WAF WebACL logs flow through Kinesis Firehose , Lambda , and Event Bridge to update IPset.](http://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/images/aws-waf-automate-block.png)
+![WAF WebACL logs flow through Kinesis Firehose , Lambda , and Event Bridge to update IPset.](https://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/images/aws-waf-automate-block.png)
 
 *Figure 3: AWS WAF automate blocking of known malicious IP addresses.*
 

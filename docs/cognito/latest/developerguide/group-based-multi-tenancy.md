@@ -13,7 +13,7 @@ As an example, consider three tenants that each store application assets in thei
 
 The following diagram shows tenants sharing an app client and a user pool, with dedicated groups in the user pool that determine their eligibility for an IAM role.
 
-![A diagram of a many-to-one multi-tenancy model where each tenant has their own user group in a shared user pool.](http://docs.aws.amazon.com/cognito/latest/developerguide/images/multi-tenancy-group.png)
+![A diagram of a many-to-one multi-tenancy model where each tenant has their own user group in a shared user pool.](https://docs.aws.amazon.com/cognito/latest/developerguide/images/multi-tenancy-group.png)
 
 **When to implement group multi-tenancy**
 When access to AWS resources is your primary concern. Groups in Amazon Cognito user pools are a mechanism for role-based access control (RBAC). You can configure many groups in a user pool and make complex RBAC decisions with group priority. Identity pools can assign credentials for the role with the highest priority, any role in the groups claim, or from other claims in a user's tokens.

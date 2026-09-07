@@ -38,7 +38,7 @@ The code that automates this pattern is available on GitHub, in the [ETL Pipelin
 ## Architecture
 <a name="orchestrate-an-etl-pipeline-with-validation-transformation-and-partitioning-using-aws-step-functions-architecture"></a>
 
-![ETL process from S3 source bucket through Step Functions, AWS Glue, and Amazon SNS in 10 steps.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8eb792b0-d35b-4a63-ba2d-71eb8d2c1203/images/054c8e9d-76a2-4334-b21a-cbe76af45923.png)
+![ETL process from S3 source bucket through Step Functions, AWS Glue, and Amazon SNS in 10 steps.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8eb792b0-d35b-4a63-ba2d-71eb8d2c1203/images/054c8e9d-76a2-4334-b21a-cbe76af45923.png)
 
 The workflow illustrated in the diagram consists of these high-level steps:
 
@@ -149,8 +149,8 @@ To use the sample code, follow the instructions in the *Epics *section.
 
 The following diagram shows the AWS Step Functions workflow for a successful ETL pipeline, from the AWS Step Functions **Inspector **panel.** **
 
-![Step Functions workflow for validating the input .csv, crawling data, and running the AWS Glue job.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8eb792b0-d35b-4a63-ba2d-71eb8d2c1203/images/bd77de7b-4d04-44bb-95d2-3ec4599b3770.png)
+![Step Functions workflow for validating the input .csv, crawling data, and running the AWS Glue job.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8eb792b0-d35b-4a63-ba2d-71eb8d2c1203/images/bd77de7b-4d04-44bb-95d2-3ec4599b3770.png)
 
 The following diagram shows the AWS Step Functions workflow for an ETL pipeline that fails because of an input validation error, from the Step Functions **Inspector **panel.
 
-![Step Functions workflow with failure so the file moves to the error folder.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8eb792b0-d35b-4a63-ba2d-71eb8d2c1203/images/5fd7dd79-ba4c-4c20-b1f0-ad4b5f22bdfc.png)
+![Step Functions workflow with failure so the file moves to the error folder.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8eb792b0-d35b-4a63-ba2d-71eb8d2c1203/images/5fd7dd79-ba4c-4c20-b1f0-ad4b5f22bdfc.png)

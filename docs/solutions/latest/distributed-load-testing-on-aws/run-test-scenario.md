@@ -52,7 +52,7 @@ Test runs can have the following statuses:
 
 If you enabled live data when creating the test scenario, you can view real-time metrics while the test is running. The Real Time Metrics section displays four graphs that update continuously as the test progresses, with data aggregated at one-second intervals.
 
-![Real Time Metrics graphs showing live test performance data](http://docs.aws.amazon.com/solutions/latest/distributed-load-testing-on-aws/images/real-time-metrics.png)
+![Real Time Metrics graphs showing live test performance data](https://docs.aws.amazon.com/solutions/latest/distributed-load-testing-on-aws/images/real-time-metrics.png)
 
  **Graph descriptions**
 

@@ -28,7 +28,7 @@ This pattern outlines steps for migrating a PostgreSQL database (version 9.5 and
 
 **Data migration architecture**
 
-![Data migration architecture for PostgreSQL on Amazon RDS](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/29af3931-48de-499f-9c4b-e10a98e4bba5/images/5f5b906f-dc1a-49a5-ae3f-3e10ae854784.png)
+![Data migration architecture for PostgreSQL on Amazon RDS](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/29af3931-48de-499f-9c4b-e10a98e4bba5/images/5f5b906f-dc1a-49a5-ae3f-3e10ae854784.png)
 
 ## Tools
 <a name="migrate-from-postgresql-on-amazon-ec2-to-amazon-rds-for-postgresql-using-pglogical-tools"></a>

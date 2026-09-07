@@ -19,7 +19,7 @@ AWS CAF groups its capabilities in six perspectives:
 
 The Platform perspective focuses on accelerating the delivery of your cloud workloads with  an enterprise-grade, scalable, hybrid cloud environment. This environment comprises seven capabilities shown in the following diagram. These capabilities are managed by stakeholders who are functionally related in their [cloud transformation journey](https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/your-cloud-transformation-journey.html). Typical stakeholders include the chief technology officer (CTO), technology leaders, architects, and engineers.
 
-![AWS CAF Platform perspective capabilities](http://docs.aws.amazon.com/prescriptive-guidance/latest/aws-caf-platform-perspective/images/guide-img/dd3227e2-c412-498d-b95a-d8baa63246c9/images/e61770c6-b06e-40c9-9a40-cec4d6991797.jpeg)
+![AWS CAF Platform perspective capabilities](https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-caf-platform-perspective/images/guide-img/dd3227e2-c412-498d-b95a-d8baa63246c9/images/e61770c6-b06e-40c9-9a40-cec4d6991797.jpeg)
 
 These capabilities are discussed in detail in the following sections of this article. Each section provides guidelines on how to start, advance, and ultimately excel in a particular capability.
 + [Platform architecture](platform-arch.md)

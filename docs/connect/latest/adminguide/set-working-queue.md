@@ -37,7 +37,7 @@ You can use this block in the following [flow types](create-contact-flow.md#cont
 
 The following image shows the **Properties** page of the **Set working queue** block. It is set to the **BasicQueue**.
 
-![The properties page of the Set working queue block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/set-working-queue-properties.png)
+![The properties page of the Set working queue block.](https://docs.aws.amazon.com/connect/latest/adminguide/images/set-working-queue-properties.png)
 
 Note the following properties:
 + **By queue > Set dynamically**. To set the queue dynamically, you must specify the queue ID for the queue rather than the queue name. To find the queue ID, open the queue in the queue editor. The queue ID is included as the last part of the URL displayed in the browser address bar after `/queue`. For example, `aaaaaaaa-bbbb-cccc-dddd-111111111111`.
@@ -47,7 +47,7 @@ Note the following properties:
 
 The following image shows an example of what this block looks like when it is configured. It has the following branches: **Success** and **Error**.
 
-![A configured Set working queue block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/set-working-queue-configured.png)
+![A configured Set working queue block.](https://docs.aws.amazon.com/connect/latest/adminguide/images/set-working-queue-configured.png)
 
 ## Sample flows
 <a name="set-working-queue-samples"></a>

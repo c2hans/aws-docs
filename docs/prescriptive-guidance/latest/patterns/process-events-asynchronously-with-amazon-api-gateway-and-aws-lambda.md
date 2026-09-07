@@ -39,7 +39,7 @@ This pattern shows an example architecture to process events asynchronously usin
 
 The following diagram shows the interaction of the jobs API with the event-processing and error-handling Lambda functions, with events stored in an Amazon EventBridge event archive.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e027130c-44c1-41ab-bbe9-f196a49bd9ac/images/3c437b65-48e3-477d-aeea-6ff938cc3285.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e027130c-44c1-41ab-bbe9-f196a49bd9ac/images/3c437b65-48e3-477d-aeea-6ff938cc3285.png)
 
 A typical workflow includes the following steps:
 

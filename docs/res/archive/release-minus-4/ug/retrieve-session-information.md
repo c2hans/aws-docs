@@ -6,6 +6,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-4/ug/retrieve-
 <a name="retrieve-session-information"></a>
 
 1. Choose **Actions**.
-![Virtual desktops](http://docs.aws.amazon.com/res/archive/release-minus-4/ug/images/res-virtualdesktops.png)
+![Virtual desktops](https://docs.aws.amazon.com/res/archive/release-minus-4/ug/images/res-virtualdesktops.png)
 
 1. Choose **Show Info**.

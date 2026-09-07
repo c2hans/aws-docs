@@ -38,7 +38,7 @@ This pattern explains the steps to implement Amazon CloudWatch monitoring for a 
 
 **Target architecture**
 
-![Target architecture for monitoring GoldenGate logs on AWS](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/973a71d5-b6b3-4a2b-813e-cb4d8fd51ba5/images/1781aa9b-77b3-40c4-bc54-3cb91400899c.png)
+![Target architecture for monitoring GoldenGate logs on AWS](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/973a71d5-b6b3-4a2b-813e-cb4d8fd51ba5/images/1781aa9b-77b3-40c4-bc54-3cb91400899c.png)
 
 ## Tools
 <a name="monitor-oracle-goldengate-logs-by-using-amazon-cloudwatch-tools"></a>

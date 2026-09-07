@@ -9,7 +9,7 @@ This pattern uses an API composer, or aggregator, to implement a query by invoki
 
 The following diagram illustrates how this pattern is implemented.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-data-persistence/images/guide-img/44ded022-4fc5-47f3-9dda-29ff14ee9ef8/images/a2d3fb7d-3374-4e19-9050-0e554d4d6cd4.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-data-persistence/images/guide-img/44ded022-4fc5-47f3-9dda-29ff14ee9ef8/images/a2d3fb7d-3374-4e19-9050-0e554d4d6cd4.png)
 
 The diagram shows the following workflow:
 

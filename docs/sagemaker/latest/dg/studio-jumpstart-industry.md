@@ -62,7 +62,7 @@ The model notebooks are for demonstration purposes only. They should not be reli
 
 The following screenshot shows the pretrained model cards provided through the SageMaker AI JumpStart page on Studio Classic.
 
-![The pretrained model cards provided through the SageMaker AI JumpStart page on Studio Classic.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/jumpstart/jumpstart-finance-models.png)
+![The pretrained model cards provided through the SageMaker AI JumpStart page on Studio Classic.](https://docs.aws.amazon.com/sagemaker/latest/dg/images/jumpstart/jumpstart-finance-models.png)
 
 **Note**
 The SageMaker JumpStart Industry: Financial solutions, model cards, and example notebooks are hosted and runnable only through SageMaker Studio Classic. Log in to the [SageMaker AI console](https://console.aws.amazon.com/sagemaker), and launch SageMaker Studio Classic. For more information about how to find the model cards, see the previous topic at [SageMaker JumpStart](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html).

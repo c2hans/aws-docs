@@ -14,7 +14,7 @@ The following sections explain how a typical data lake's growth can cause scalin
 
 The following diagram shows a data lake's architecture after its initial deployment by Line of business A.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/data-lake-for-growth-scale/images/guide-img/dab5abfa-9d34-4ff1-9eb1-8a82c673378f/images/2ede26a7-96c8-48b5-8a76-0e460dc1d9b8.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/data-lake-for-growth-scale/images/guide-img/dab5abfa-9d34-4ff1-9eb1-8a82c673378f/images/2ede26a7-96c8-48b5-8a76-0e460dc1d9b8.png)
 
 The diagram shows the following components:
 + The data producer account collects and processes data, stores the processed data, and prepares it for consumption.
@@ -28,7 +28,7 @@ The diagram shows the following components:
 
 The following diagram shows that more data is brought into the data lake when Line of business A's data grows. The data lake then attracts more data consumers to leverage and gain value from the data.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/data-lake-for-growth-scale/images/guide-img/dab5abfa-9d34-4ff1-9eb1-8a82c673378f/images/ec8a9b4e-e527-451b-a2d9-04934444dc62.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/data-lake-for-growth-scale/images/guide-img/dab5abfa-9d34-4ff1-9eb1-8a82c673378f/images/ec8a9b4e-e527-451b-a2d9-04934444dc62.png)
 
 The diagram shows how an organization generates nearly continuous value from an existing data asset and that this attracts more data consumers. However, when data consumers increase, the data producer only has the following two options to accommodate this growth:
 + Manually manage data sharing and access by individual data consumers, which is not a scalable approach.
@@ -39,7 +39,7 @@ The diagram shows how an organization generates nearly continuous value from an 
 
 The following diagram shows the data lake architecture when multiple lines of business join as data producers.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/data-lake-for-growth-scale/images/guide-img/dab5abfa-9d34-4ff1-9eb1-8a82c673378f/images/c286682d-9cb3-4ddb-aafd-aba8763ff956.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/data-lake-for-growth-scale/images/guide-img/dab5abfa-9d34-4ff1-9eb1-8a82c673378f/images/c286682d-9cb3-4ddb-aafd-aba8763ff956.png)
 
 The data lake's architecture becomes increasingly complicated, even with only three data producers and three data consumers.
 

@@ -11,4 +11,4 @@ The following figure depicts an example of using Slack notifications with the so
 
  **Image depicts an example Quota Monitor Notification in Slack**
 
-![slack integration](http://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/images/slack-integration.png)
+![slack integration](https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/images/slack-integration.png)

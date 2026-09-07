@@ -21,7 +21,7 @@ This solution includes an option to send anonymized operational metrics to AWS. 
 
 <a name="aws-cloudformation-template"></a>== AWS CloudFormation template
 
- [![Live Streaming on AWS view template button](http://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws/images/view-template.png)](https://s3.amazonaws.com/solutions-reference/live-streaming-on-aws/latest/live-streaming-on-aws.template) **live-streaming-on-aws.template** - Use this template to launch the solution and all associated components. The default configuration deploys an AWS Lambda function, an AWS Elemental MediaLive input and channel, an AWS Elemental MediaPackage channel, two Amazon CloudFront distributions, and an Amazon Simple Storage Service (Amazon S3) bucket for the demo HTML preview player, but you can also customize the template based on your specific needs.
+ [![Live Streaming on AWS view template button](https://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws/images/view-template.png)](https://s3.amazonaws.com/solutions-reference/live-streaming-on-aws/latest/live-streaming-on-aws.template) **live-streaming-on-aws.template** - Use this template to launch the solution and all associated components. The default configuration deploys an AWS Lambda function, an AWS Elemental MediaLive input and channel, an AWS Elemental MediaPackage channel, two Amazon CloudFront distributions, and an Amazon Simple Storage Service (Amazon S3) bucket for the demo HTML preview player, but you can also customize the template based on your specific needs.
 
 <a name="step-1-launch-the-stack"></a>== Launch the stack
 
@@ -33,7 +33,7 @@ This automated AWS CloudFormation template deploys the Live Streaming on AWS sol
 
 1. Sign in to the [AWS Management Console](https://console.aws.amazon.com/) and select the button to launch the `live-streaming-on-aws` AWS CloudFormation template.
 
-    [![Live Streaming launch button](http://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=LiveStreaming&templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Flive-streaming-on-aws%2Flatest%2Flive-streaming-on-aws.template&redirectId=ImplementationGuide)
+    [![Live Streaming launch button](https://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=LiveStreaming&templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Flive-streaming-on-aws%2Flatest%2Flive-streaming-on-aws.template&redirectId=ImplementationGuide)
 
 1. The template launches in the US East (N. Virginia) Region by default. To launch this solution in a different AWS Region, use the Region selector in the console navigation bar.
 **Note**

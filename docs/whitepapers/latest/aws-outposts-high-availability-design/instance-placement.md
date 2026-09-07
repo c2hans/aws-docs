@@ -13,11 +13,11 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-ava
 
  A spread placement group provides a simple way distribute single instances across racks or hosts to reduce the potential for correlated failures. You may only deploy into the group as many instances as you have hosts in your Outpost.
 
-![Diagram showing EC2 spread placement group on an Outpost with three racks](http://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/ec2-spread-placement-group.png)
+![Diagram showing EC2 spread placement group on an Outpost with three racks](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/ec2-spread-placement-group.png)
 
  You can also distribute instances across multiple racks with partition placement groups. Use automatic distribution to spread instances across partitions in the group or deploy instances to selected target partitions. Deploying instances to target partitions allows you to deploy selected resources to the same rack while distributing other resources across racks. For example, if you have a logical Outpost with three racks, creating a partition placement group with three partitions allows you to distribute resources across the racks.
 
-![Diagram showing EC2 partition placement groups on an Outpost with three racks](http://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/ec2-partition-placement-groups.png)
+![Diagram showing EC2 partition placement groups on an Outpost with three racks](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/ec2-partition-placement-groups.png)
 
  **Creative server slotting** – if you have a single-rack Outpost or if the service you are using on Outposts does not support placement groups, you may be able to use creative slotting to ensure your instances do not deploy on the same physical server. If the related instances are the same EC2 instance size, you may be able to slot your servers to limit the number of slots of that size configured on each server – spreading the slots across the servers. Server slotting will limit the number of instances (of that size) that can run on a single server.
 

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 
 AMS works with you during account discovery to assess the current state of your account, and identify technical blockers for onboarding your account. AMS doesn't provide operational services during the account discovery stage. AMS uses the `AWSServiceRoleForSupport` service-linked role to identify technical blockers, and then works with you to remediate them, before moving to the Account-Level onboarding stage.
 
-![Account discovery flowchart.](http://docs.aws.amazon.com/managedservices/latest/accelerate-guide/images/acc-discovery.png)
+![Account discovery flowchart.](https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/images/acc-discovery.png)
 
 ## Account discovery process in Accelerate
 <a name="acct-disc-process"></a>

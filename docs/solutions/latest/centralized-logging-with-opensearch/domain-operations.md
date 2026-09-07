@@ -16,7 +16,7 @@ Once logged into the Centralized Logging with OpenSearch console, you can import
 1. Centralized Logging with OpenSearch supports OpenSearch clusters with [fine-grained access control](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/fgac.html) only. In the security configuration, the Access policy should look like the following image:
 
     **Sample access policy.**
-![image27](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image27.png)
+![image27](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image27.png)
 
 ## Import an Amazon OpenSearch Service Domain
 <a name="import-an-amazon-opensearch-service-domain"></a>
@@ -51,7 +51,7 @@ Automatic mode will create VPC peering and configure route table automatically. 
 
  **VPC peering connecting the solution and an OpenSearch VPC.**
 
-![setup vpc peering](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/setup-vpc-peering.png)
+![setup vpc peering](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/setup-vpc-peering.png)
 
 Follow this section to create VPC peering, update your security group, and update route tables.
 

@@ -55,7 +55,7 @@ Typically, organizations that run core business applications on mainframes use a
 
 The following diagram shows a reference architecture where BMC AMI Cloud Data software agents on a mainframe drive the legacy data backup and archive processes that store the data in Amazon S3.
 
-![BMC AMI Cloud Data software agents on a mainframe driving legacy data backup and archive processes](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/bde3b029-184e-4eb0-933b-f8caf6cc40ab/images/a24cd6c1-b131-49ea-8238-f3aea5ab8134.png)
+![BMC AMI Cloud Data software agents on a mainframe driving legacy data backup and archive processes](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/bde3b029-184e-4eb0-933b-f8caf6cc40ab/images/a24cd6c1-b131-49ea-8238-f3aea5ab8134.png)
 
 The diagram shows the following workflow:
 

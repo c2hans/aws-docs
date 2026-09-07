@@ -14,7 +14,7 @@ Unlike stateless agents, memory-augmented agents adapt by referencing historical
 
 A memory-augmented agent is shown in the following diagram:
 
-![Memory-augmented agents.](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-patterns/images/guide-img/cde5ee68-ed86-4053-9fb1-d0dbf7199e24/images/18a2fe3e-c0ed-4b18-8c36-bda63c828c00.png)
+![Memory-augmented agents.](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-patterns/images/guide-img/cde5ee68-ed86-4053-9fb1-d0dbf7199e24/images/18a2fe3e-c0ed-4b18-8c36-bda63c828c00.png)
 
 ## Description
 <a name="description.1b0ad68a-a5c6-5b38-9580-ac3fcde4156d"></a>

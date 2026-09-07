@@ -40,7 +40,7 @@ This pattern provides detailed steps to configure two separate maintenance windo
 
 The following diagram shows the workflow to automatically stop and start an Amazon RDS DB instance.
 
-![Workflow to automatically stop and start an Amazon RDS DB instance](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/45b81621-5674-4bcf-bf7c-75ae6f62524e/images/7d943830-716e-46a3-be44-7e668c3c01ff.png)
+![Workflow to automatically stop and start an Amazon RDS DB instance](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/45b81621-5674-4bcf-bf7c-75ae6f62524e/images/7d943830-716e-46a3-be44-7e668c3c01ff.png)
 
 The workflow has the following steps:
 

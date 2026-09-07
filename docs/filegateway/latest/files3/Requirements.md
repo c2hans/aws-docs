@@ -139,7 +139,7 @@ The following table lists the necessary ports and describes conditional requirem
 
 The following illustration shows network traffic flow for a basic S3 File Gateway deployment.
 
-![network resources connected to Storage Gateway using various ports.](http://docs.aws.amazon.com/filegateway/latest/files3/images/File-Gateway-Port-Diagram.png)
+![network resources connected to Storage Gateway using various ports.](https://docs.aws.amazon.com/filegateway/latest/files3/images/File-Gateway-Port-Diagram.png)
 
 ### Networking and firewall requirements for the Storage Gateway Hardware Appliance
 <a name="appliance-network-requirements"></a>
@@ -164,7 +164,7 @@ There are five physical network ports at the rear of the Dell PowerEdge R640 ser
 
 You can use the iDRAC port for remote server management.
 
-![network resources connected to hardware appliance using various ports.](http://docs.aws.amazon.com/filegateway/latest/files3/images/ApplianceFirewallRules.png)
+![network resources connected to hardware appliance using various ports.](https://docs.aws.amazon.com/filegateway/latest/files3/images/ApplianceFirewallRules.png)
 
 A hardware appliance requires the following ports to operate.
 
@@ -187,7 +187,7 @@ For an illustration showing the back of the server with its ports, see [Physical
 
 All IP addresses on the same network interface (NIC), whether for a gateway or a host, must be on the same subnet. The following illustration shows the addressing scheme.
 
-![host IP and service IP on a single subnet sharing one NIC.](http://docs.aws.amazon.com/filegateway/latest/files3/images/ApplianceAddressing.png)
+![host IP and service IP on a single subnet sharing one NIC.](https://docs.aws.amazon.com/filegateway/latest/files3/images/ApplianceAddressing.png)
 
 For more information about activating and configuring a hardware appliance, see [Using the AWS Storage Gateway Hardware Appliance](hardware-appliance.md).
 

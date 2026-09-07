@@ -49,7 +49,7 @@ To implement this pattern, we recommend that you are familiar with the following
 
 The following diagram shows a highly available CockroachDB deployment across three AWS Availability Zones within a virtual private cloud (VPC). The CockroachDB pods are managed through Amazon EKS. The architecture illustrates how users access the database through a Network Load Balancer, which distributes traffic to the CockroachDB pods. The pods run on Amazon Elastic Compute Cloud (Amazon EC2) instances in each Availability Zone, which provides resilience and fault tolerance.
 
-![A highly available CockroachDB deployment across three AWS Availability Zones within a VPC.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e22d81ab-b85c-4709-8579-4c9cdb4afdb6/images/4b163abf-6fdc-4310-840c-bda621ab25dd.png)
+![A highly available CockroachDB deployment across three AWS Availability Zones within a VPC.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e22d81ab-b85c-4709-8579-4c9cdb4afdb6/images/4b163abf-6fdc-4310-840c-bda621ab25dd.png)
 
 **Resources created**
 

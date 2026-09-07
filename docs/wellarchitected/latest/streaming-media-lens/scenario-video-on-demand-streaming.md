@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 
  You might need additional logic or steps in your workflow to extract content metadata, register content with content management systems, make intelligent processing decisions, or to introduce quality control steps. A common approach is through a serverless design that uses **AWS Step Functions** to model your workflow, **AWS Lambda** to run logic, and services like **AWS Elemental MediaConvert**, **AWS Batch**, and **Amazon ECS** to scale compute-intensive media processing.
 
-![A Video-on-Demand (VOD) workflow is shown consisting of processing, storage, and network components between the content file sources and end user players.](http://docs.aws.amazon.com/wellarchitected/latest/streaming-media-lens/images/vod-streaming-architecture.png)
+![A Video-on-Demand (VOD) workflow is shown consisting of processing, storage, and network components between the content file sources and end user players.](https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-lens/images/vod-streaming-architecture.png)
 
 1.  Content is uploaded through an application or file transfer tools.
 

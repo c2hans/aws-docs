@@ -60,7 +60,7 @@ Use a common, centralized logging and debugging tool that is easily integrated w
 
 ** Target architecture **
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/d5e7b3fa-062f-4559-af56-aa6058f96755/images/762193cf-aa68-4195-b3c7-6541caee61c9.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/d5e7b3fa-062f-4559-af56-aa6058f96755/images/762193cf-aa68-4195-b3c7-6541caee61c9.png)
 
 ## Tools
 <a name="migrate-from-oracle-weblogic-to-apache-tomcat-tomee-on-amazon-ecs-tools"></a>

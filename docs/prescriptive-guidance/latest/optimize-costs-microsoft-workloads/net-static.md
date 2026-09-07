@@ -20,11 +20,11 @@ Two common techniques include using [Amazon DynamoDB as a session state provider
 
 The following diagram shows an architecture that uses DynamoDB as a session state provider.
 
-![DynamoDB as a session state provider](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/44eff032-9618-408c-97f6-37b2aa0e4c1a.png)
+![DynamoDB as a session state provider](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/44eff032-9618-408c-97f6-37b2aa0e4c1a.png)
 
 The following diagram shows an architecture that uses ElastiCache (Redis OSS) as a session state provider.
 
-![ElastiCache for Redis as a session state provider](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/79040ef8-24fc-4e69-9b37-75054f536da0.png)
+![ElastiCache for Redis as a session state provider](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/79040ef8-24fc-4e69-9b37-75054f536da0.png)
 
 ## Cost impact
 <a name="net-static-cost"></a>
@@ -39,7 +39,7 @@ To determine the benefits of scaling for a production application, we recommend 
 
 The following diagram illustrates how this model takes advantage of elasticity in a .NET application rather than provisioning for peak usage. This results in a savings of approximately 68 percent.
 
-![Graph of Auto Scaling costs](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/e302f1ca-b323-4681-9f12-2d02f94a4b70.png)
+![Graph of Auto Scaling costs](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/e302f1ca-b323-4681-9f12-2d02f94a4b70.png)
 
 If you use DynamoDB as a session state storage mechanism, then use the following parameters:
 

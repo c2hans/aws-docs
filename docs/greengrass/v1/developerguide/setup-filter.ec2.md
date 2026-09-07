@@ -19,7 +19,7 @@ Or, to use a script that sets up your environment and installs the AWS IoT Green
 1. After your Amazon EC2 instance is running, enable port 8883 to allow incoming MQTT communications so that other devices can connect with the AWS IoT Greengrass core.
 
    1. In the navigation pane of the Amazon EC2 console, choose **Security Groups**.
-![Navigation pane with Security Groups highlighted.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-002.6.1.png)
+![Navigation pane with Security Groups highlighted.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-002.6.1.png)
 
    1. Select the security group for the instance that you just launched, and then choose the **Inbound rules** tab.
 

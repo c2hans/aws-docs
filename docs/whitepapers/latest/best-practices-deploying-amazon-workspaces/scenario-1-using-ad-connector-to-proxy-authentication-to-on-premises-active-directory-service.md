@@ -7,11 +7,11 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 
  This scenario is for customers who don’t want to extend their on-premises AD service into AWS, or where a new deployment of AD DS is not an option. The following figure shows at a high level, each of the components, and the user authentication flow.
 
-![Sample architecture showing at a high-level each component and user authentication flow.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/ad-connector-to-onprem.png)
+![Sample architecture showing at a high-level each component and user authentication flow.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/ad-connector-to-onprem.png)
 
  In this scenario, AWS Directory Service (AD Connector) is used for all user or MFA authentication that is proxied through the AD Connector to the customer on-premises AD DS (detailed in the following figure). For details on the protocols or encryption used for the authentication process, refer to the [Security](security.md) section of this document.
 
-![Sample architecture showing how AD Connector is used for all user or MFA authentication that is proxied through the AD Connector to the customer on-premises AD DS.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/user-authentication-auth-gateway.png)
+![Sample architecture showing how AD Connector is used for all user or MFA authentication that is proxied through the AD Connector to the customer on-premises AD DS.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/user-authentication-auth-gateway.png)
 
  Scenario 1 shows a hybrid architecture where the customer might already have resources in AWS, as well as resources in an on-premises data center that could be accessed via Amazon WorkSpaces. The customer can leverage their existing on-premises AD DS and RADIUS servers for user and MFA authentication.
 

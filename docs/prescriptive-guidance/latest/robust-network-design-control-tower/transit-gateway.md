@@ -25,4 +25,4 @@ For this transit gateway, create three different transit gateway route tables:
 
 The following diagram shows how the traffic from child account VPCs will be routed to and from the centralized network account and the internet or other VPCs.
 
-![Centralized transit gateway connects to spoke accounts through transit gateway attachments.](http://docs.aws.amazon.com/prescriptive-guidance/latest/robust-network-design-control-tower/images/guide-img/734c65f3-3001-4321-a428-6ffbda3b44b0/images/6ec9fa0a-33f5-490b-9b2b-f8431f73a8bc.png)
+![Centralized transit gateway connects to spoke accounts through transit gateway attachments.](https://docs.aws.amazon.com/prescriptive-guidance/latest/robust-network-design-control-tower/images/guide-img/734c65f3-3001-4321-a428-6ffbda3b44b0/images/6ec9fa0a-33f5-490b-9b2b-f8431f73a8bc.png)

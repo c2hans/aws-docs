@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/related-servic
 
 The following diagram shows some of the other AWS services you can use with Connect Customer.
 
-![Icons for all the services you can use with Connect Customer.](http://docs.aws.amazon.com/connect/latest/adminguide/images/connect-overview2.png)
+![Icons for all the services you can use with Connect Customer.](https://docs.aws.amazon.com/connect/latest/adminguide/images/connect-overview2.png)
 
 ## Development
 <a name="development-services"></a>

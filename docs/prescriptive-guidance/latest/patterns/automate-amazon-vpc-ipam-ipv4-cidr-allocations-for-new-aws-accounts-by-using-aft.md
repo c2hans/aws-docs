@@ -39,7 +39,7 @@ With IPAM, you can organize, assign, monitor, and audit IP addresses at scale, a
 
 The following diagram shows the workflow and components of this pattern.
 
-![Workflow to create Amazon VPC IPAM IPv4 CIDR allocation.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/986cfc7d-058b-4490-9029-6cd1eadd1dd2/images/f90b84dd-0420-460e-ac0f-9f22b4a9fdc4.png)
+![Workflow to create Amazon VPC IPAM IPv4 CIDR allocation.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/986cfc7d-058b-4490-9029-6cd1eadd1dd2/images/f90b84dd-0420-460e-ac0f-9f22b4a9fdc4.png)
 
 The workflow consists of the following main tasks:
 

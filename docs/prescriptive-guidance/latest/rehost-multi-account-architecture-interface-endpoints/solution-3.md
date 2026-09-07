@@ -25,7 +25,7 @@ Share VPC endpoints by using a shared staging area subnet, AWS Organizations, an
 
 The following diagram illustrates the architecture for this solution.
 
-![Traffic flow for rehosting multiple accounts by sharing VPC endpoints.](http://docs.aws.amazon.com/prescriptive-guidance/latest/rehost-multi-account-architecture-interface-endpoints/images/guide-img/7711a996-1484-4997-8795-d06bd903a940/images/a5129238-4cb3-40d1-b829-c528b15af832.png)
+![Traffic flow for rehosting multiple accounts by sharing VPC endpoints.](https://docs.aws.amazon.com/prescriptive-guidance/latest/rehost-multi-account-architecture-interface-endpoints/images/guide-img/7711a996-1484-4997-8795-d06bd903a940/images/a5129238-4cb3-40d1-b829-c528b15af832.png)
 
 The diagram illustrates the following traffic flow:
 

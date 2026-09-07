@@ -26,7 +26,7 @@ When you architect your solutions, a best practice is to seek to place computing
 
  Use Regions which provide lower prices for AWS services to deploy your workloads if you have no obligations in data privacy, security and business requirements. For example, if your default Region is ap-southeasth-2 (Sydney), and if there are no restrictions (data privacy, security, for example) to use other Regions, deploying non-critical (development and test) Amazon EC2 instances in north-east-1 (N. Virginia) Region will cost you less.
 
-![Chart showing different Regions with compliance, latency, cost, and services and features.](http://docs.aws.amazon.com/wellarchitected/2023-04-10/framework/images/region-feature-matrix.png)
+![Chart showing different Regions with compliance, latency, cost, and services and features.](https://docs.aws.amazon.com/wellarchitected/2023-04-10/framework/images/region-feature-matrix.png)
 
  The preceding matrix table shows us that Region 4 is the best option for this given scenario because latency is low compared to other regions, service is available, and it is the least expensive Region.
 

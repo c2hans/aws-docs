@@ -72,7 +72,7 @@ You can use Amazon Detective to investigate an entity such as an EC2 instance or
 
 At a high level, the following image shows the process for a Detective Investigation.
 
-![Diagram that shows the Detective Investigation process.](http://docs.aws.amazon.com/detective/latest/userguide/images/diagram_investigation_flow_entity.png)
+![Diagram that shows the Detective Investigation process.](https://docs.aws.amazon.com/detective/latest/userguide/images/diagram_investigation_flow_entity.png)
 
 **Step 1: Select the entity to investigate**
 When looking at a finding in GuardDuty, analysts can choose to investigate an associated entity in Detective. See [Pivoting to an entity profile or finding overview from Amazon GuardDuty or AWS Security Hub CSPM](navigate-to-profile.md#profile-pivot-from-service).

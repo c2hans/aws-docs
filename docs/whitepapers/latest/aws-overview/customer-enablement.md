@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/customer-enablement.html
 ---
 
-# ![AWS customer enablement category icon](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/customer-enablement-icon.png)Customer enablement
+# ![AWS customer enablement category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/customer-enablement-icon.png)Customer enablement
 <a name="customer-enablement"></a>
 
 ------

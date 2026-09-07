@@ -14,7 +14,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-
 
  AWS services – [Amazon Redshift](https://aws.amazon.com/redshift/), [AWS Glue](https://aws.amazon.com/glue/), [Amazon EMR](https://aws.amazon.com/emr/), [Amazon S3](https://aws.amazon.com/s3/), [AWS DataSync](https://aws.amazon.com/datasync/), [Amazon Athena](https://aws.amazon.com/athena/), [Amazon Kinesis](https://aws.amazon.com/kinesis/), [Amazon Managed Streaming for Apache Kafka](https://aws.amazon.com/msk/) (Amazon MSK), [AWS Database Migration Service](https://aws.amazon.com/dms/), and [Amazon SageMaker AI](https://aws.amazon.com/sagemaker/)
 
-![Amazon analytics and machine learning at the data lake](http://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-to-address-personal-data-processing-requirements/images/analytics-and-MA-data-lake.png)
+![Amazon analytics and machine learning at the data lake](https://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-to-address-personal-data-processing-requirements/images/analytics-and-MA-data-lake.png)
 
  Amazon analytics and machine learning at the data lake
 

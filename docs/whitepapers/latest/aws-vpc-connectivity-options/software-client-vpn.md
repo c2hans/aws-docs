@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-
 
  You can choose from an ecosystem of multiple partners and open source communities that have produced remote-access solutions that run on Amazon EC2. These solutions provide great flexibility on the security protocol use for remote-access into your Amazon VPCs, to securely access AWS resources and on-premises over the internet, as shown in the following figure.
 
-![Diagram showing securely accessing resources.](http://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/software-client-vpn-remote-access.png)
+![Diagram showing securely accessing resources.](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/software-client-vpn-remote-access.png)
 
  Remote-access solutions range in complexity, support multiple client authentication options (including multifactor authentication) and can be integrated with either Amazon VPC or remotely hosted identity and access management solutions (leveraging one of the network-to-Amazon VPC options) like Microsoft Active Directory or other LDAP/multifactor authentication solutions.
 

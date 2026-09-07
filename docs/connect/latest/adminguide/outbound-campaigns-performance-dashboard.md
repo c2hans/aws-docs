@@ -35,26 +35,26 @@ The following image shows an example chart for a telephony campaign. It shows th
 + The percentages are rounded up or down.
 + The colors that appear for the metrics indicate positive (green) or negative (red) compared to your benchmark.
 
-![The Telephony campaign performance overview chart.](http://docs.aws.amazon.com/connect/latest/adminguide/images/dashboard-oc-telephony-metrics.png)
+![The Telephony campaign performance overview chart.](https://docs.aws.amazon.com/connect/latest/adminguide/images/dashboard-oc-telephony-metrics.png)
 
 The following image shows an example chart for an SMS campaign.
 
-![The SMS campaign performance overview chart.](http://docs.aws.amazon.com/connect/latest/adminguide/images/dashboard-oc-sms-metrics.png)
+![The SMS campaign performance overview chart.](https://docs.aws.amazon.com/connect/latest/adminguide/images/dashboard-oc-sms-metrics.png)
 
 The following image shows an example chart for an email campaign.
 
-![The Email campaign performance overview chart.](http://docs.aws.amazon.com/connect/latest/adminguide/images/dashboard-oc-email-metrics.png)
+![The Email campaign performance overview chart.](https://docs.aws.amazon.com/connect/latest/adminguide/images/dashboard-oc-email-metrics.png)
 
 The following image shows an example chart for a WhatsApp campaign.
 
-![The WhatsApp campaign performance overview chart showing metrics including delivery attempts and read count.](http://docs.aws.amazon.com/connect/latest/adminguide/images/dashboard-oc-whatsapp-metrics.png)
+![The WhatsApp campaign performance overview chart showing metrics including delivery attempts and read count.](https://docs.aws.amazon.com/connect/latest/adminguide/images/dashboard-oc-whatsapp-metrics.png)
 
 **Note**
 The widget must be manually added to your dashboard. Refer to [Add or remove widgets on a dashboard](dashboard-customize-widgets.md#dashboard-add-widgets), then locate the `WhatsApp campaign performance` widget under the Campaign section.
 
 The following image shows an example chart for a web notification campaign.
 
-![The web notification campaign performance overview chart showing metrics including send attempts, web notification delivered rate, engaged, chat started, and chat engaged counts.](http://docs.aws.amazon.com/connect/latest/adminguide/images/dashboard-oc-webnotification-metrics.png)
+![The web notification campaign performance overview chart showing metrics including send attempts, web notification delivered rate, engaged, chat started, and chat engaged counts.](https://docs.aws.amazon.com/connect/latest/adminguide/images/dashboard-oc-webnotification-metrics.png)
 
 **Note**
 The widget must be manually added to your dashboard. Refer to [Add or remove widgets on a dashboard](dashboard-customize-widgets.md#dashboard-add-widgets), then locate the `Web notification campaign performance` widget under the Campaign section.
@@ -85,7 +85,7 @@ The Campaign progress chart is a time-series chart that displays the Dials attem
 
 To configure different time range intervals, choose **Interval**, as shown in the following image.
 
-![The campaign progress over time chart.](http://docs.aws.amazon.com/connect/latest/adminguide/images/dashboard-oc-campaign-progress.png)
+![The campaign progress over time chart.](https://docs.aws.amazon.com/connect/latest/adminguide/images/dashboard-oc-campaign-progress.png)
 
 The available intervals depend on the page-level time range filter. For example:
 + If you have a **Trailing** time range filter on your dashboard, you can only see an interval of 15min for the last 24 hours.
@@ -102,7 +102,7 @@ The Campaign progress comparison chart shows the Send attempts metric in its cur
 
 This widget holds up to 10 campaigns. If you are filtering for more than 10 campaigns, additional campaigns will not display in the visualization. You can select specific campaign(s) you want to see in this visual by using the campaign filter.
 
-![The campaign delivery breakdown chart.](http://docs.aws.amazon.com/connect/latest/adminguide/images/dashboard-oc-campaign-progress-comparison.png)
+![The campaign delivery breakdown chart.](https://docs.aws.amazon.com/connect/latest/adminguide/images/dashboard-oc-campaign-progress-comparison.png)
 
 ## Delivery classification stacked bar charts
 <a name="delivery-classification-chart"></a>
@@ -125,7 +125,7 @@ For the full list of available telephony classifications, see DisconnectReason f
 
 The following image shows a sample Telephony classification stacked bar chart.
 
-![The Telephony classification stacked bar chart.](http://docs.aws.amazon.com/connect/latest/adminguide/images/dashboard-oc-telephony-classification.png)
+![The Telephony classification stacked bar chart.](https://docs.aws.amazon.com/connect/latest/adminguide/images/dashboard-oc-telephony-classification.png)
 
 ### SMS classification stacked bar chart
 <a name="sms-classification-chart"></a>
@@ -140,7 +140,7 @@ For the full list of available SMS events, see `campaign_event_type` in the [Out
 
 The following image shows a sample SMS classification stacked bar chart.
 
-![The SMS classification stacked bar chart.](http://docs.aws.amazon.com/connect/latest/adminguide/images/dashboard-oc-sms-classification.png)
+![The SMS classification stacked bar chart.](https://docs.aws.amazon.com/connect/latest/adminguide/images/dashboard-oc-sms-classification.png)
 
 ### Email classification stacked bar chart
 <a name="email-classification-chart"></a>
@@ -155,7 +155,7 @@ For the full list of available email events, see `campaign_event_type` in the [O
 
 The following image shows a sample Email classification stacked bar chart.
 
-![The Email classification stacked bar chart.](http://docs.aws.amazon.com/connect/latest/adminguide/images/dashboard-oc-email-classification.png)
+![The Email classification stacked bar chart.](https://docs.aws.amazon.com/connect/latest/adminguide/images/dashboard-oc-email-classification.png)
 
 ### WhatsApp classification stacked bar chart
 <a name="whatsapp-classification-chart"></a>
@@ -169,7 +169,7 @@ For the full list of available WhatsApp events, see `campaign_event_type` in the
 
 The following image shows a sample WhatsApp classification stacked bar chart.
 
-![The WhatsApp classification stacked bar chart showing delivery outcomes by campaign.](http://docs.aws.amazon.com/connect/latest/adminguide/images/dashboard-oc-whatsapp-classification.png)
+![The WhatsApp classification stacked bar chart showing delivery outcomes by campaign.](https://docs.aws.amazon.com/connect/latest/adminguide/images/dashboard-oc-whatsapp-classification.png)
 
 **Note**
 The widget must be manually added to your dashboard. Refer to [Add or remove widgets on a dashboard](dashboard-customize-widgets.md#dashboard-add-widgets), then locate the `WhatsApp classification by campaign` widget under the Campaign section.
@@ -185,7 +185,7 @@ For the full list of available web notification events, see `campaign_event_type
 
 The following image shows a sample web notification classification stacked bar chart.
 
-![The web notification classification stacked bar chart showing delivery outcomes by campaign.](http://docs.aws.amazon.com/connect/latest/adminguide/images/dashboard-oc-webnotification-classification.png)
+![The web notification classification stacked bar chart showing delivery outcomes by campaign.](https://docs.aws.amazon.com/connect/latest/adminguide/images/dashboard-oc-webnotification-classification.png)
 
 **Note**
 The widget must be manually added to your dashboard. Refer to [Add or remove widgets on a dashboard](dashboard-customize-widgets.md#dashboard-add-widgets), then locate the `Web notification classification by campaign` widget under the Campaign section.
@@ -212,14 +212,14 @@ A detailed view of campaign send exclusions, including reasons why outbound enga
 Metrics include:
 + Campaign send exclusion: The count of outbound campaign send attempts that were excluded from the targeted segment during a campaign execution. Example exclusion reasons include: MISSING\_TIMEZONE, MISSING\_CHANNEL
 
-![Campaign metrics by recipients table screenshot.](http://docs.aws.amazon.com/connect/latest/adminguide/images/campaign-metrics-recipients-table.png)
+![Campaign metrics by recipients table screenshot.](https://docs.aws.amazon.com/connect/latest/adminguide/images/campaign-metrics-recipients-table.png)
 
 ## Campaign metrics table
 <a name="campaign-metrics-table"></a>
 
 A detailed view of outbound campaigns metrics aggregated over the selected time range.
 
-![The Campaign metrics table.](http://docs.aws.amazon.com/connect/latest/adminguide/images/campaign-metrics-table.png)
+![The Campaign metrics table.](https://docs.aws.amazon.com/connect/latest/adminguide/images/campaign-metrics-table.png)
 
 This table includes the following metrics.
 + **Campaign send attempts**: The count of outbound campaign send requests sent by Connect Customer for delivery. A campaign send request represents an attempt made to reach out to a recipient using email, SMS, telephony, WhatsApp, or web notification.

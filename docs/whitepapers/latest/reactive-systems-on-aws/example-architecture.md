@@ -11,7 +11,7 @@ To help explain how reactive principles can be applied to real world application
 
  Many ad-tracking companies collect large amounts of data in near-real-time. In many cases, these workloads are very spiky and heavily depend on the success of the ad-tech company’s customers; they also need to be responsive and resilient, as these systems form part of the backbone of many ad-tech companies.
 
-![Diagram showing an Example architecture](http://docs.aws.amazon.com/whitepapers/latest/reactive-systems-on-aws/images/example-architecture.png)
+![Diagram showing an Example architecture](https://docs.aws.amazon.com/whitepapers/latest/reactive-systems-on-aws/images/example-architecture.png)
 
 In this example architecture the system can be logically divided into one part focused on *data collection* and another part focuses on *core data updates*. The *data collection* subsystem is responsible for collecting, validating, and persisting the tracking data, potentially enriching it with some *core* data in the process. In the *core data update* subsystem, the data that is used to validate and enrich the incoming raw tracking data —this typically includes data on ad inventory, campaigns, publishers, publishers’ remaining campaign budgets, and etc.— receives updates from upstream back-office systems (not implemented in the example architecture) and notifies all subscribers about the changed and added data.
 

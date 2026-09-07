@@ -19,4 +19,4 @@ For more information on the orchestration targets supported by Amazon EventBridg
 
 The following diagram provides a high-level view of how event orchestration works.
 
-![Image of event orchestration flow.](http://docs.aws.amazon.com/frauddetector/latest/ug/images/event-orchestration-high-level.png)
+![Image of event orchestration flow.](https://docs.aws.amazon.com/frauddetector/latest/ug/images/event-orchestration-high-level.png)

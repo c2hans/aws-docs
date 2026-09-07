@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous
 
  Security must be applied to every component of the infrastructure, including CI/CD pipelines, from the moment a single line of code is written to the stages where it's deployed. That deployment can include multiple environments, identities, systems, and any applications which interact with it. During its journey, it's modified and updated continuously. The following image shows different stages of a typical CI/CD pipeline.
 
-![Diagram depicting CI/CD](http://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/cicd1.png)
+![Diagram depicting CI/CD](https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/cicd1.png)
 
  Due to the nature of continuous integration, every change needs to be monitored and made sure that it's safe to release towards the environment you are building. For every stage, there are multiple controls that can be embedded to the process whereas tool integrations are not sufficient by themselves for a secure CI/CD pipeline. From the people, process and technology perspective:
 +  People delivering, handling and monitoring the code must have the awareness towards secure coding practices. They should stick to these guidelines and must never abandon them to deliver faster.
@@ -18,7 +18,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous
 
  Security checks must be applied throughout the build process which will stop the process if a security concern exists. The following is a sample of some technologies that can be integrated throughout the CI/CD pipeline. Review the [Deployment Pipeline Reference Architecture](https://pipelines.devops.aws.dev/) for a more complete list.
 
-![Detailed diagram of Deployment Pipeline Reference Architecture](http://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/cicd2.png)
+![Detailed diagram of Deployment Pipeline Reference Architecture](https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/cicd2.png)
 
  Security is a shared responsibility between AWS and customers. Refer to the security [documentation](https://docs.aws.amazon.com/codecatalyst/latest/userguide/security.html) to understand how to apply the shared responsibility model when using Amazon CodeCatalyst.
 

@@ -14,7 +14,7 @@ Voice agents are particularly effective in hands-free, real-time, or accessibili
 
 A speech and voice agent is shown in the following diagram:
 
-![Speech and voice agents.](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-patterns/images/guide-img/cde5ee68-ed86-4053-9fb1-d0dbf7199e24/images/40d20568-97a0-48a1-99e2-2d789710fb39.png)
+![Speech and voice agents.](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-patterns/images/guide-img/cde5ee68-ed86-4053-9fb1-d0dbf7199e24/images/40d20568-97a0-48a1-99e2-2d789710fb39.png)
 
 ## Description
 <a name="description.a986784a-83be-52ec-a936-607d716e41f0"></a>

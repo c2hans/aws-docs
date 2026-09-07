@@ -22,7 +22,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/access-workspaces-wit
    ```
 
     The following figure shows the successful result of running of the `SetSpn` command.
-![A screenshot of the SetSpn command running successfully.](http://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/workspaces-smartcard7.png)
+![A screenshot of the SetSpn command running successfully.](https://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/workspaces-smartcard7.png)
 
     *`SetSpn` command running*
 
@@ -35,7 +35,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/access-workspaces-wit
 1.  Choose **Add**, **Users or Computers**, and then select **Advanced**.
 
 1.  Select **Find Now** to list all available resources, and then find your domain controller (DC) in the list.
-![A screenshot with a list of available resources.](http://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/find-domain-controller.png)
+![A screenshot with a list of available resources.](https://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/find-domain-controller.png)
 
 1.  Select your domain controller and then choose **OK** to display a list of available services used for delegation.
 

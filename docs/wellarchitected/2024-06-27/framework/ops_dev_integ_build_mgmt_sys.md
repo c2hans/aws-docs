@@ -31,7 +31,7 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 ### Implementation steps
 <a name="implementation-steps"></a>
 
-![Diagram showing a CI/CD pipeline using AWS CodePipeline and related services](http://docs.aws.amazon.com/wellarchitected/2024-06-27/framework/images/deployment-pipeline-tooling.png)
+![Diagram showing a CI/CD pipeline using AWS CodePipeline and related services](https://docs.aws.amazon.com/wellarchitected/2024-06-27/framework/images/deployment-pipeline-tooling.png)
 
 1.  Use AWS CodeCommit to version control, store, and manage assets (such as documents, source code, and binary files).
 

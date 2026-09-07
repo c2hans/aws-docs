@@ -42,7 +42,7 @@ You can also use this pattern to migrate an on-premises SQL Server or an Amazon 
 
 **Target architecture**
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/f186220b-5a94-48b2-840d-f04aedf51651/images/00962b85-8b71-49df-b84a-3adcbc9ad3a3.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/f186220b-5a94-48b2-840d-f04aedf51651/images/00962b85-8b71-49df-b84a-3adcbc9ad3a3.png)
 
 ## Tools
 <a name="migrate-a-microsoft-sql-server-database-from-amazon-ec2-to-amazon-documentdb-by-using-aws-dms-tools"></a>

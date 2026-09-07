@@ -47,7 +47,7 @@ This pattern provides a unique email address vending solution that enables AWS a
 
 **Target architecture **
 
-![Target architecture for registering multiple AWS accounts with a single email address](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/1be85b92-69e5-43b2-aeed-27b9509e145e/images/c7ae9d7a-d4e0-412e-97cb-0f3073e012e7.png)
+![Target architecture for registering multiple AWS accounts with a single email address](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/1be85b92-69e5-43b2-aeed-27b9509e145e/images/c7ae9d7a-d4e0-412e-97cb-0f3073e012e7.png)
 
 This diagram shows two flows:
 + **Email address vending flow: **In the diagram, the email address vending flow (lower section) begins typically with an account vending solution or outside automation, or is invoked manually. In the request, a Lambda function is called with a payload that contains the needed metadata. The function uses this information to generate a unique account name and email address, stores it in a DynamoDB database, and returns the values to the caller. These values can then be used to create a new AWS account (typically by using AWS Organizations).

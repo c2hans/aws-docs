@@ -14,7 +14,7 @@ The following Network modules are available in MCS after deployment:
 ## Managed VPC module
 <a name="managed-vpc-module"></a>
 
-![managed vpc module](http://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/images/managed-vpc-module.png)
+![managed vpc module](https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/images/managed-vpc-module.png)
 
 1. The Solution deploys a VPC with two Availability Zones. Each zone contains:
    + One public subnet - routes traffic to an [internet gateway](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html)
@@ -29,7 +29,7 @@ Pixel streaming traffic doesn’t travel through the NAT gateway.
 ## Unmanaged VPC module
 <a name="unmanaged-vpc-module"></a>
 
-![unmanaged vpc module](http://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/images/unmanaged-vpc-module.png)
+![unmanaged vpc module](https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/images/unmanaged-vpc-module.png)
 
 1. The solution can utilize an existing VPC for module deployment. However, any additional configuration required for module functionality must be managed by the MCS administrator.
 
@@ -43,7 +43,7 @@ If EventBridge EC2 Tagging Parameter is disabled at deployment, tagging infrastr
 ## Spoke Managed VPC module
 <a name="spoke-managed-vpc-module"></a>
 
-![spoke managed vpc module](http://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/images/spoke-managed-vpc-module.png)
+![spoke managed vpc module](https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/images/spoke-managed-vpc-module.png)
 
 1. The solution establishes a [VPC peering connection](https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) between the existing VPC in the hub Region and the VPC being created in this module, enabling inter-VPC communication.
 

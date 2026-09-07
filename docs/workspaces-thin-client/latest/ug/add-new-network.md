@@ -9,7 +9,7 @@ End of support notice: On March 31, 2027, AWS will end support for Amazon WorkSp
 
 If you have a specific Wi-Fi network that you would like to use, you can connect it to your WorkSpaces Thin Client device.
 
-![Network settings interface showing known networks, available networks, and option to add new network.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/network4.png)
+![Network settings interface showing known networks, available networks, and option to add new network.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/network4.png)
 
 1. Go to **Settings**, **Network**, **Add New Network**.
 

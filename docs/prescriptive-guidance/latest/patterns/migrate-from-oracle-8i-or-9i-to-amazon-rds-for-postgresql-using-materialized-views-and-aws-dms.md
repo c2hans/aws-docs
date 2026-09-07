@@ -50,7 +50,7 @@ The pattern uses Amazon Elastic Compute Cloud (Amazon EC2) instances with an Ora
 
 **Target architecture**
 
-![Architecture for migrating from a legacy Oracle database to Amazon RDS or Aurora](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8add9b21-1b62-46a2-bb8e-0350f36a924a/images/f34f9b0f-f1da-4c27-a385-71b12d16c375.png)
+![Architecture for migrating from a legacy Oracle database to Amazon RDS or Aurora](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8add9b21-1b62-46a2-bb8e-0350f36a924a/images/f34f9b0f-f1da-4c27-a385-71b12d16c375.png)
 
 ## Tools
 <a name="migrate-from-oracle-8i-or-9i-to-amazon-rds-for-postgresql-using-materialized-views-and-aws-dms-tools"></a>

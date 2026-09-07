@@ -35,7 +35,7 @@ Connect your Raspberry Pi to the *same* network that your computer is connected 
    ```
 
    You should see the following:
-![Raspberry Pi Software Configuration Tool (raspi-config) screenshot.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-001.png)
+![Raspberry Pi Software Configuration Tool (raspi-config) screenshot.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-001.png)
 
    Scroll down and choose **Interfacing Options** and then choose **P2 SSH**. When prompted, choose **Yes**. (Use the Tab key followed by Enter). SSH should now be enabled. Choose **OK**. Use the Tab key to choose **Finish** and then press Enter. If the Raspberry Pi doesn't reboot automatically, run the following command:
 
@@ -62,15 +62,15 @@ For the following, if you receive an ECDSA key fingerprint message (`Are you sur
    {{IP-address}} is the IP address of your Raspberry Pi that you obtained by using the `hostname -I` command.
 
    If you are using Windows, you need to install and configure [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). Expand **Connection**, choose **Data**, and make sure that **Prompt** is selected:
-![PuTTY window with Prompt selected.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-001.4.png)
+![PuTTY window with Prompt selected.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-001.4.png)
 
    Next, choose **Session**, enter the IP address of the Raspberry Pi, and then choose **Open** using default settings.
-![PuTTY window with IP address in the "Host Name (or IP address)" field.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-001.5.png)
+![PuTTY window with IP address in the "Host Name (or IP address)" field.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-001.5.png)
 
    If a PuTTY security alert is displayed, choose **Yes**.
 
    The default Raspberry Pi login and password are **pi** and **raspberry**, respectively.
-![Initial PuTTY terminal window.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-001.6.png)
+![Initial PuTTY terminal window.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-get-started-001.6.png)
 **Note**
 If your computer is connected to a remote network using VPN, you might have difficulty connecting from the computer to the Raspberry Pi using SSH.
 

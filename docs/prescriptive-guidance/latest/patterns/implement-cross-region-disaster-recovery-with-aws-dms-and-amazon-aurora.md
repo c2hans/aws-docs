@@ -41,7 +41,7 @@ This pattern guides you through a disaster recovery setup involving two Amazon A
 
 The following diagram shows a global database for two AWS Regions, one with the primary main and reporter databases and AWS DMS replication, and one with the secondary main and reporter databases.
 
-![Architecture diagram of the cross-Region global database.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/b01f5043-fcb5-4b1e-b79f-999792e89bed/images/3785384c-ed01-454f-b58c-fa09d223d57b.png)
+![Architecture diagram of the cross-Region global database.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/b01f5043-fcb5-4b1e-b79f-999792e89bed/images/3785384c-ed01-454f-b58c-fa09d223d57b.png)
 
 **Automation and scale**
 

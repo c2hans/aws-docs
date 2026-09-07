@@ -9,21 +9,21 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-app
 
  Amazon ECS provides multiple levels to secure your applications and clusters using IAM while containerized applications interact with other AWS services. The following diagram depicts the types of roles Amazon ECS supports when using the EC2 launch type.
 
-![Types of roles Amazon ECS supports when using the EC2 launch type](http://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/ecs-roles.png)
+![Types of roles Amazon ECS supports when using the EC2 launch type](https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/ecs-roles.png)
 
 ## Service-linked role
 <a name="service-linked-role"></a>
 
  There are multiple activities that the Amazon ECS runs while it orchestrates your container workloads. Amazon ECS uses a service-linked role for the permissions it requires to call other AWS services on your behalf. These include services such as Amazon EC2 to manage elastic network interfaces, ELB to manage targets, and [Amazon Route 53](https://aws.amazon.com/route53/) for creating health checks. A more detailed list can be found on the [Service-linked role for Amazon ECS](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/using-service-linked-roles.html) page.
 
-![Amazon ECS service-linked role architecture](http://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/ecs-service-linked-role.png)
+![Amazon ECS service-linked role architecture](https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/ecs-service-linked-role.png)
 
 ## Container instance role
 <a name="container-instance-role"></a>
 
  The [container instance role](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/instance_IAM_role.html) is the IAM role used as the Instance role by EC2 instances running your containers. This role is also used by the Amazon ECS container agent to make calls to AWS services and connect with the Amazon ECS to register container instances, report status, and get commands. Other examples include the agent starting a telemetry session, or creating the Amazon ECS cluster if one does not already exist. A more detailed list can be found on the [Amazon ECS container instance IAM role](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/instance_IAM_role.html) page.
 
-![Container instance role architecture](http://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/container-instance-role.png)
+![Container instance role architecture](https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/container-instance-role.png)
 
 ## Task execution role
 <a name="task-execution-role"></a>
@@ -43,7 +43,7 @@ Initialize-ECSAgent -Cluster '<cluster name>' -LoggingDrivers '["json-file","aws
 </PowerShell>
 ```
 
-![Task execution role architecture](http://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/task-execution-role.png)
+![Task execution role architecture](https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/task-execution-role.png)
 
 ## Task role
 <a name="task-role"></a>
@@ -72,4 +72,4 @@ New-NetRoute -DestinationPrefix 169.254.169.254/32 -InterfaceIndex $ifIndex -Nex
 
  Now that you know how to enable IAM roles for Amazon ECS Tasks on Windows, learn how your application code can assume the role.
 
-![Task role architecture](http://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/task-role-arch.png)
+![Task role architecture](https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/task-role-arch.png)

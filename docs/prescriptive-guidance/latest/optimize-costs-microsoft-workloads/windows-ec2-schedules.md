@@ -17,7 +17,7 @@ The Instance Scheduler on AWS also offers cross-account instance scheduling, aut
 
 Consider the example of a company that uses Instance Scheduler on AWS in a production environment to automatically stop instances outside of business hours every day. If this company leaves all of its instances running at full utilization, they can achieve up to 70 percent cost savings for those instances that are only necessary during regular business hours. The following chart shows how the weekly utilization is reduced from 168 hours to 50 hours.
 
-![Weekly utilization reduction chart](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/13cae0e2-2a45-4e2a-a1aa-97362d3e9b69.png)
+![Weekly utilization reduction chart](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/13cae0e2-2a45-4e2a-a1aa-97362d3e9b69.png)
 
 Consider another example. The electric utility company Jamaica Public Service Company Limited (JPS) migrated its database to Amazon RDS. Now, JPS uses Amazon EC2 to host API services and run other applications. For JPS, Instance Scheduler on AWS became the key tool for managing non-production environments. JPS used the Instance Scheduler on AWS to reduce development costs and manage EC2 instances based on team needs and work schedules. This helped JPS reduce costs by 40 percent. For more information, see the AWS case study [Jamaica Public Service Migrates Efficiently to the Cloud, Reduces Costs by 40% Using AWS Instance Scheduler](https://aws.amazon.com/solutions/case-studies/jamaica-public-service-case-study/#:~:text=%E2%80%9CMigrating%20to%20AWS%20has%20minimized,EC2%20and%20Amazon%20RDS%20instances.).
 
@@ -28,13 +28,13 @@ The following example scenario helps illustrate the cost advantages of using Ins
 
 The following diagram shows the monthly cost before optimization.
 
-![Monthly cost before optimization](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/1f652105-698c-4a6f-aaf5-52f6d4b8c10e.png)
+![Monthly cost before optimization](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/1f652105-698c-4a6f-aaf5-52f6d4b8c10e.png)
 
 For example, there are 31 days in the month of March, out of which 23 are weekdays. If the marketing team uses Instance Scheduler on AWS and operates their instances only when needed (that is, for 321 hours per month instead of 730 hours per month), they could potentially save $932.52 each month. This amounts to a 56 percent reduction in operating costs. The accounting team can experience significant advantages as well, with their instance usage time dropping from 730 hours per month to 230 hours. This results in a reduction of $1,140, or 68.5 percent. The company could save a combined total of $2,072.52 per month (equal to a 62 percent reduction), or $24,870.24 annually.
 
 The following diagram shows the monthly cost after optimization.
 
-![Monthly cost after optimization](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/7b79d7ed-dba7-47fa-a7dd-e2fae4ba37d9.png)
+![Monthly cost after optimization](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/7b79d7ed-dba7-47fa-a7dd-e2fae4ba37d9.png)
 
 **Note**
 The pricing for this example was determined by using the [AWS Pricing Calculator](https://calculator.aws/) in March 2023.
@@ -54,7 +54,7 @@ This section explains how to deploy and configure the Instance Scheduler on AWS 
 
 The following architecture diagram shows what's created in the AWS Cloud by the Instance Scheduler stack.
 
-![Instance Scheduler stack architecture](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/90b87bc8-8ad9-4be5-9982-cbbb6b158585.png)
+![Instance Scheduler stack architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/90b87bc8-8ad9-4be5-9982-cbbb6b158585.png)
 
 The diagram shows the following workflow steps:
 
@@ -237,29 +237,29 @@ The following charts illustrate the cost of operating workload A and workload B 
 
 **Combined total expenses of workloads A and B**
 
-![Combined total expenses of workloads A and B](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/b53344b0-7ec0-415b-9386-dafe7967f13b.png)
+![Combined total expenses of workloads A and B](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/b53344b0-7ec0-415b-9386-dafe7967f13b.png)
 
 **Workload A expenses**
 
-![Expenses for Workload A](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/53ef8187-0bfd-4bd4-a007-d244aaec6c25.png)
+![Expenses for Workload A](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/53ef8187-0bfd-4bd4-a007-d244aaec6c25.png)
 
 **Workload B expenses**
 
-![Expenses for Workload B](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/c7215478-1610-490c-b6c4-f1181c4aa222.png)
+![Expenses for Workload B](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/c7215478-1610-490c-b6c4-f1181c4aa222.png)
 
 In this scenario, Cost Explorer shows the cost reductions that result from implementing Instance Scheduler on AWS. The following charts depict the operational costs of workload A and workload B for a period of seven days (Monday–Sunday) post-optimization.
 
 **Combined total expenses of workload A and B**
 
-![Combined total expenses of workload A and B](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/44c5a962-c7c0-4b46-890d-1a89757f3c69.png)
+![Combined total expenses of workload A and B](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/44c5a962-c7c0-4b46-890d-1a89757f3c69.png)
 
 **Workload A expenses**
 
-![Expenses for Workload A](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/c08bc7ce-1c55-4448-8250-8046dfd03615.png)
+![Expenses for Workload A](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/c08bc7ce-1c55-4448-8250-8046dfd03615.png)
 
 **Workload B expenses**
 
-![Expenses for Workload B](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/03a8b43a-78a7-4236-bfaf-2f73b7cada3f.png)
+![Expenses for Workload B](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/03a8b43a-78a7-4236-bfaf-2f73b7cada3f.png)
 
 ## Additional resources
 <a name="windows-ec2-schedules-resources"></a>

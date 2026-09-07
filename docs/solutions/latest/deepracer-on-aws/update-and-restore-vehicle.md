@@ -25,7 +25,7 @@ Updating to the new AWS DeepRacer software stack will wipe all data on your AWS 
 1. Choose **Settings** on the navigation pane.
 
 1. Check the **About** section to verify which software version your AWS DeepRacer Vehicle is currently running.
-![AWS DeepRacer device software version in About section](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/updaterestore-about-section-software-version.png)
+![AWS DeepRacer device software version in About section](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/updaterestore-about-section-software-version.png)
 
 ## Prepare to update your AWS DeepRacer device to the Ubuntu 20.04 software stack
 <a name="prepare-to-update"></a>
@@ -157,7 +157,7 @@ Follow the instructions here to use an Ubuntu computer, including your AWS DeepR
    1. For **Drive**, choose the drive path for your BOOT partition, in our case `/dev/sda1`.
 
    1. Choose **OK**.
-![UNetbootin configuration for Ubuntu](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/updaterestore-unetbootin-ubuntu-configuration.png)
+![UNetbootin configuration for Ubuntu](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/updaterestore-unetbootin-ubuntu-configuration.png)
 
 **Tip**
 If you get a `/dev/sda1 not mounted` alert message, choose **OK** to close the message, unplug the USB drive, plug in the drive again, and then follow the preceding steps to create the Ubuntu ISO image.
@@ -256,7 +256,7 @@ Follow the instructions here to use a Windows computer to prepare the update med
    1. For **Drive**, choose the drive letter corresponding to the FAT32 partition you created. In our case, it’s `E:\`.
 
    1. Choose **OK**.
-![UNetbootin configuration on Windows](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/updaterestore-windows-unetbootin-configuration.png)
+![UNetbootin configuration on Windows](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/updaterestore-windows-unetbootin-configuration.png)
 
 ##### To extract the AWS DeepRacer update files to the NTFS partition
 <a name="windows-extract-update-files"></a>

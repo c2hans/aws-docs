@@ -14,7 +14,7 @@ The Application log parser helps protect against scanners and probes.
 
  **Application log parser flow.**
 
-![app log parser flow](http://docs.aws.amazon.com/solutions/latest/security-automations-for-aws-waf/images/app-log-parser-flow.png)
+![app log parser flow](https://docs.aws.amazon.com/solutions/latest/security-automations-for-aws-waf/images/app-log-parser-flow.png)
 
 1. When CloudFront or an ALB receives requests on behalf of your web application, it sends access logs to an Amazon S3 bucket.
 
@@ -39,7 +39,7 @@ If you select `yes - AWS Lambda log parser` or `yes - Amazon Athena log parser` 
 
  **AWS WAF log parser flow.**
 
-![waf log parser flow](http://docs.aws.amazon.com/solutions/latest/security-automations-for-aws-waf/images/waf-log-parser-flow.png)
+![waf log parser flow](https://docs.aws.amazon.com/solutions/latest/security-automations-for-aws-waf/images/waf-log-parser-flow.png)
 
 1. When AWS WAF receives access logs, it sends the logs to an Firehose endpoint. Firehose then delivers the logs to a partitioned bucket in Amazon S3 named {{<customer-bucket>}} `/AWSLogs/` {{<optional-prefix>}} `/year=` {{<YYYY>}} `/month=` {{<MM>}} `/day=` {{<DD>}} `/hour=` {{<HH>}} `/`
 
@@ -58,7 +58,7 @@ The Bad bot log parser inspects requests to the honeypot endpoint to extract the
 
  **Bad bot log parser flow.**
 
-![badbot log parser flow](http://docs.aws.amazon.com/solutions/latest/security-automations-for-aws-waf/images/badbot-log-parser-flow.png)
+![badbot log parser flow](https://docs.aws.amazon.com/solutions/latest/security-automations-for-aws-waf/images/badbot-log-parser-flow.png)
 
 1. If `Bad Bot Protection` is activated and both HTTP Flood Protection and Scanner & Probe Protection features are disabled: The system will use the Log Lambda parser, which logs only bad bot requests based on [WAF label filters](https://docs.aws.amazon.com/waf/latest/developerguide/waf-labels.html).
 
@@ -73,7 +73,7 @@ The `IP Lists Parser` Lambda function helps protect against known attackers iden
 
  **IP eputation lists parser flow.**
 
-![ip reputation lists flow](http://docs.aws.amazon.com/solutions/latest/security-automations-for-aws-waf/images/ip-reputation-lists-flow.png)
+![ip reputation lists flow](https://docs.aws.amazon.com/solutions/latest/security-automations-for-aws-waf/images/ip-reputation-lists-flow.png)
 
 1. An hourly Amazon CloudWatch event invokes the `IP Lists Parser` Lambda function.
 

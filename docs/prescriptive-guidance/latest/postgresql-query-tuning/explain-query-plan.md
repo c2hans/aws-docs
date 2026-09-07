@@ -39,7 +39,7 @@ A PostgreSQL query plan is a tree structure consisting of several nodes*.* The `
 
 The following screenshot shows the query plan for a sequential scan.
 
-![Query plan shown on the Data Output tab in pgAdmin.](http://docs.aws.amazon.com/prescriptive-guidance/latest/postgresql-query-tuning/images/guide-img/7b8a9711-9513-471f-b676-8df14916e186/images/30249088-2899-462f-8b65-fd26730cccdb.png)
+![Query plan shown on the Data Output tab in pgAdmin.](https://docs.aws.amazon.com/prescriptive-guidance/latest/postgresql-query-tuning/images/guide-img/7b8a9711-9513-471f-b676-8df14916e186/images/30249088-2899-462f-8b65-fd26730cccdb.png)
 
 The cost estimate `(cost=0.00..32.60 rows=2260 width=8)` means that PostgreSQL expects that the query will require 32.60 units of computation to return results.
 

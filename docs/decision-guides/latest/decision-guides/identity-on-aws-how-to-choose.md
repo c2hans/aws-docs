@@ -18,7 +18,7 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/i
 
  Identity and access management helps ensure that only authenticated and authorized users can access only the cloud resources that they need to perform their tasks, and that they can do it in a secure and compliant way.
 
-![Diagram showing identity, authentication, and authorization.](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/understand-identity-services.png)
+![Diagram showing identity, authentication, and authorization.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/understand-identity-services.png)
 
 As shown in the preceding diagram, identity is the unique identification of an entity, authentication is the process of verifying the identity, and authorization is the process of determining what the authenticated entity is allowed to do.
 
@@ -113,11 +113,11 @@ IAM Access Analyzer guides you to least privilege by providing features to set, 
 
 The following image shows the IAM Access Analyzer dashboard with external and internal access findings.
 
-![Dashboard showing external and internal access findings in IAM Access Analyzer](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/analyzer-findings-01.png)
+![Dashboard showing external and internal access findings in IAM Access Analyzer](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/analyzer-findings-01.png)
 
 The following image shows unused access findings in the IAM Access Analyzer dashboard.
 
-![Dashboard showing unused access findings analysis with 100 active findings, including 40 unused roles, 15 unused credentials, and 45 unused permissions.](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/unused-access-analyzer-dashboard.png)
+![Dashboard showing unused access findings analysis with 100 active findings, including 40 unused roles, 15 unused credentials, and 45 unused permissions.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/unused-access-analyzer-dashboard.png)
 
 #### IAM Roles Anywhere
 <a name="for-your-workloads-iam-roles-anywhere"></a>
@@ -144,7 +144,7 @@ Verified Permissions is a fully managed authorization service, which uses the ea
 
 The following image shows an example of permissions policy details from Verified Permissions and to whom the policy grants access.
 
-![An AWS policy configuration showing a permission that allows SalesTeam members to maintain customer account data.](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/customer-data-policy.png)
+![An AWS policy configuration showing a permission that allows SalesTeam members to maintain customer account data.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/customer-data-policy.png)
 
 ## Explore other AWS services
 <a name="explore"></a>

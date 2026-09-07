@@ -16,7 +16,7 @@ This pattern can be implemented by using either Amazon Kinesis Data Streams or A
 
 In the following illustration, Kinesis Data Streams is the main component of a centralized event store. The event store captures application changes as events and persists them on Amazon Simple Storage Service (Amazon S3).
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-data-persistence/images/guide-img/44ded022-4fc5-47f3-9dda-29ff14ee9ef8/images/843bc123-7084-4005-aa3d-d06876ab9beb.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-data-persistence/images/guide-img/44ded022-4fc5-47f3-9dda-29ff14ee9ef8/images/843bc123-7084-4005-aa3d-d06876ab9beb.png)
 
 The workflow consists of the following steps:
 
@@ -29,7 +29,7 @@ The workflow consists of the following steps:
 
 The architecture in the following illustration uses EventBridge. EventBridge is a serverless service that uses events to connect application components, which makes it easier for you to build scalable, event-driven applications. Event-driven architecture is a style of building loosely coupled software systems that work together by emitting and responding to events. EventBridge provides a [default event bus ](https://docs.aws.amazon.com/eventbridge/latest/userguide/create-event-bus.html)for events that are published by AWS services, and you can also create a [custom event bus](https://docs.aws.amazon.com/eventbridge/latest/userguide/create-event-bus.html) for domain-specific buses.
 
-![Amazon EventBridge implementation of the event sourcing pattern](http://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-data-persistence/images/guide-img/44ded022-4fc5-47f3-9dda-29ff14ee9ef8/images/d230e443-ac21-406e-966c-6e15b22457d2.png)
+![Amazon EventBridge implementation of the event sourcing pattern](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-data-persistence/images/guide-img/44ded022-4fc5-47f3-9dda-29ff14ee9ef8/images/d230e443-ac21-406e-966c-6e15b22457d2.png)
 
 The workflow consists of the following steps:
 

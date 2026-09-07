@@ -17,7 +17,7 @@ The following diagram demonstrates the WebSocket protocol message flow between t
 
 **WebSocket protocol overview**
 
-![The WebSocket protocol message flow overview.](http://docs.aws.amazon.com/appsync/latest/eventapi/images/WebSocket-protocol.png)
+![The WebSocket protocol message flow overview.](https://docs.aws.amazon.com/appsync/latest/eventapi/images/WebSocket-protocol.png)
 
 In the preceeding diagram, the following WebSocket steps occur in the message flow.
 + A client establishes a WebSocket connection with the AWS AppSync real-time endpoint. If there is a network error, the client should do a jittered exponential backoff. For more information, see [Exponential backoff and jitter](https://aws.amazon.com/blogs/architecture/exponential-backoff-and-jitter/) on the *AWS Architecture Blog*.

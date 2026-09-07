@@ -42,7 +42,7 @@ Your metric math ID and expression are the following.
 
 The following diagram illustrates the architecture for this metric:
 
-![Application Auto Scaling using queues architectural diagram](http://docs.aws.amazon.com/autoscaling/application/userguide/images/sqs-custom-metric-diagram.png)
+![Application Auto Scaling using queues architectural diagram](https://docs.aws.amazon.com/autoscaling/application/userguide/images/sqs-custom-metric-diagram.png)
 
 **To use this metric math to create a target tracking scaling policy (AWS CLI)**
 

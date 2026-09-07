@@ -10,7 +10,7 @@ Make It Stick takes the work of the change acceleration framework and builds sus
 + [6.2 Create adoption management checklist](#sustain-adoption)
 + [6.3 Develop post-implementation and sustainability plan](#sustain-post-implementation)
 
-![Make It Stick phase in AWS Change Acceleration 6-Point Framework and OCM Toolkit](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ocm/images/guide-img/f0dc8b97-6d82-45ff-86d7-7ed62d7be8b3/images/8c0bab0e-d2c3-43a3-a831-c6a590f17ff9.png)
+![Make It Stick phase in AWS Change Acceleration 6-Point Framework and OCM Toolkit](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ocm/images/guide-img/f0dc8b97-6d82-45ff-86d7-7ed62d7be8b3/images/8c0bab0e-d2c3-43a3-a831-c6a590f17ff9.png)
 
 ## 6.1 Establish feedback loop
 <a name="sustain-feedback"></a>

@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/business-applications.html
 ---
 
-# ![AWS Business Applications category icon](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/business-applications-icon.jpg)Business applications
+# ![AWS Business Applications category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/business-applications-icon.jpg)Business applications
 <a name="business-applications"></a>
 
 Innovative business applications with the same on-demand scalability, reliability, pay-as-you go pricing, and machine learning that drives AWS cloud infrastructure.

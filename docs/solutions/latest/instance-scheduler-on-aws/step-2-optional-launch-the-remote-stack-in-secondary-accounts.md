@@ -10,7 +10,7 @@ The remote stack must be deployed in the same Region as the hub stack.
 
 This automated AWS CloudFormation template configures secondary account permissions that will allow the hub stack to schedule instances in other accounts. Install the remote template only after the primary/hub stack has been successfully installed in the Hub account.
 
- [![Launch solution](http://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-aws/images/launch-solution-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?templateURL=https://s3.amazonaws.com/solutions-reference/instance-scheduler-on-aws/latest/instance-scheduler-on-aws-remote.template&redirectID=ImplementationGuide)
+ [![Launch solution](https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-aws/images/launch-solution-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?templateURL=https://s3.amazonaws.com/solutions-reference/instance-scheduler-on-aws/latest/instance-scheduler-on-aws-remote.template&redirectID=ImplementationGuide)
 
 1. Sign in to the AWS Management Console of the applicable secondary account and select the button to launch the instance-scheduler-on-aws-remote AWS CloudFormation template.
 

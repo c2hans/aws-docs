@@ -51,7 +51,7 @@ One drawback of using AWS SCT extensions is its slow performance in running and 
 
 The following diagram represents the database migration architecture between the source Oracle and target PostgreSQL databases. The architecture involves AWS Cloud, a virtual private cloud (VPC), Availability Zones, a private subnet, an Amazon RDS for Oracle database, AWS SCT, an Amazon RDS for PostgreSQL or Aurora PostgreSQL-Compatible database, extensions for Oracle (`aws_oracle_ext` and `orafce`), and structured query language (SQL) files.
 
-![The process is explained in the following list.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/158847bb-27ef-4915-a9ca-7d87073792c1/images/234b824a-bfe5-4ef0-9fa7-8401370b92a5.png)
+![The process is explained in the following list.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/158847bb-27ef-4915-a9ca-7d87073792c1/images/234b824a-bfe5-4ef0-9fa7-8401370b92a5.png)
 
 1. Launch Amazon RDS for Oracle DB instance (source DB).
 

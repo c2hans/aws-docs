@@ -41,7 +41,7 @@ This pattern uses AWS Secrets Manager while configuring the AWS DMS endpoints. S
 
 The following diagram shows the architecture for exporting data from the Amazon RDS instance to the Amazon S3 bucket with the help of AWS DMS.
 
-![Description follows the diagram.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7ba5756d-44a5-4aa3-97b6-fa3684ae6ce6/images/90f918e1-3ec2-4434-82b8-3ff4ad340fb9.png)
+![Description follows the diagram.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7ba5756d-44a5-4aa3-97b6-fa3684ae6ce6/images/90f918e1-3ec2-4434-82b8-3ff4ad340fb9.png)
 
 1. The AWS DMS migration task connecting to the source Amazon RDS instance through the source endpoint
 

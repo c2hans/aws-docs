@@ -14,7 +14,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/a
 +  AWS DXGW with AWS Transit Gateway.
 +  High scale of VPCs per Region.
 
-![Diagram showing AWS DX – DXGW with AWS Transit Gateway, Multi-Regions, and AWS Public VIF](http://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/images/dxgw-with-tg-multi-region-public-peering.png)
+![Diagram showing AWS DX – DXGW with AWS Transit Gateway, Multi-Regions, and AWS Public VIF](https://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/images/dxgw-with-tg-multi-region-public-peering.png)
 
  **Connectivity model attributes:**
 +  AWS DX public VIF is used to access AWS public resources such as S3 directly over the AWS DX connections.

@@ -57,7 +57,7 @@ When scaling micro-frontend development across multiple cross-functional teams, 
 
 The following diagram shows the enablement team providing tools, libraries, standards and testing to three micro-frontend teams. The platform team provides infrastructure, shared runtime capabilities, and domain services to those same three micro-frontend teams.
 
-![Enablement and platform teams contributing to three micro-frontend teams.](http://docs.aws.amazon.com/prescriptive-guidance/latest/micro-frontends-aws/images/guide-img/4cd7ea48-b17c-411c-a5b2-fa8a58f6a617/images/932edbc8-66de-45ba-b80e-37a0dc75153d.png)
+![Enablement and platform teams contributing to three micro-frontend teams.](https://docs.aws.amazon.com/prescriptive-guidance/latest/micro-frontends-aws/images/guide-img/4cd7ea48-b17c-411c-a5b2-fa8a58f6a617/images/932edbc8-66de-45ba-b80e-37a0dc75153d.png)
 
 The platform team supports the micro-frontend teams by freeing them from undifferentiated heavy lifting. This support can include infrastructure services such as container runtimes, CI/CD pipelines, collaboration tooling, and monitoring. However, setting up a platform team should not lead to an organization in which development is detached from operations. The opposite is true: The platform team offers an engineering product, and micro-frontend teams have ownership and runtime responsibility of their services on the platform.
 

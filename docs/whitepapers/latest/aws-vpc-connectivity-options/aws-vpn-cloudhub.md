@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-
 
  The following figure shows the Site-to-Site VPN CloudHub architecture, with lines indicating network traffic between remote sites being routed over their Site-to-Site VPN connections.
 
-![VPC with EC2 instances connecting through Virtual Private Gateway to multiple customer networks via IPsec VPN.](http://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/aws-vpn-cloudhub.png)
+![VPC with EC2 instances connecting through Virtual Private Gateway to multiple customer networks via IPsec VPN.](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/aws-vpn-cloudhub.png)
 
 * Site-to-Site VPN CloudHub *
 

@@ -45,7 +45,7 @@ This migration pattern primarily focuses on manually converting the JSON-related
 
 **Target architecture **
 
-![Description follows the diagram.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5e2c3b07-9ef5-417f-b049-bcea58f2c3ec/images/2ff8b00b-8849-4ef1-9be1-579f7b51be10.png)
+![Description follows the diagram.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5e2c3b07-9ef5-417f-b049-bcea58f2c3ec/images/2ff8b00b-8849-4ef1-9be1-579f7b51be10.png)
 
 1. Use AWS SCT with the JSON function code to convert the source code from Oracle to PostgreSQL.
 

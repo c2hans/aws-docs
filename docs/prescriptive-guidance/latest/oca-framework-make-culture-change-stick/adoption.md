@@ -24,7 +24,7 @@ Adoption management assumes that all foundational OCA plans, including change, c
 
 In the context of AWS Cloud adoption, effective adoption management is the difference between organizations that just use cloud services and organizations that truly harness the transformative power of the cloud to revolutionize their business models, customer experiences, and operational efficiencies. The following diagram illustrates how AWS services and the OCA Framework help organizations achieve improved innovation, speed to market, and ROI.
 
-![Achieving improved innovation, speed to market, and ROI requires OCA.](http://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-make-culture-change-stick/images/guide-img/ca32f4a8-9a89-464f-aef6-558c45a74956/images/bdf6c7cc-e50b-4c37-bafa-8d338590eade.png)
+![Achieving improved innovation, speed to market, and ROI requires OCA.](https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-make-culture-change-stick/images/guide-img/ca32f4a8-9a89-464f-aef6-558c45a74956/images/bdf6c7cc-e50b-4c37-bafa-8d338590eade.png)
 
 ## Best practices
 <a name="adoption-best-practices"></a>

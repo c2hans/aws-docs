@@ -18,7 +18,7 @@ You can do a screen capture on a selected active window in your display or the e
 
 To use the Print Screen key, you need to enable the **Print Screen** keyboard shortcut in your Windows settings.
 
-![Print Screen shortcut settings page with toggle switched to On position.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/printscreen.png)
+![Print Screen shortcut settings page with toggle switched to On position.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/printscreen.png)
 
 **Capturing an image on the display**
 

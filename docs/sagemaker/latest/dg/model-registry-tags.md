@@ -101,7 +101,7 @@ Model packages in the SageMaker Model Registry do not support tags—these are v
 
 1. Sign in to Amazon SageMaker Studio Classic. For more information, see [Launch Amazon SageMaker Studio Classic](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-launch.html).
 
-1. In the left navigation pane, choose the **Home** icon ( ![Home icon.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/studio/icons/house.png)).
+1. In the left navigation pane, choose the **Home** icon ( ![Home icon.](https://docs.aws.amazon.com/sagemaker/latest/dg/images/studio/icons/house.png)).
 
 1. Choose **Models**, and then **Model registry**.
 
@@ -115,7 +115,7 @@ Model packages in the SageMaker Model Registry do not support tags—these are v
 
 1. Sign in to Amazon SageMaker Studio Classic. For more information, see [Amazon SageMaker AI domain overview](gs-studio-onboard.md).
 
-1. In the left navigation pane, choose the **Home** icon ( ![Home icon.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/studio/icons/house.png)).
+1. In the left navigation pane, choose the **Home** icon ( ![Home icon.](https://docs.aws.amazon.com/sagemaker/latest/dg/images/studio/icons/house.png)).
 
 1. Choose **Models**, and then **Model registry**.
 
@@ -139,7 +139,7 @@ Model packages in the SageMaker Model Registry do not support tags—these are v
 
 1. Sign in to Amazon SageMaker Studio Classic. For more information, see [Amazon SageMaker AI domain overview](gs-studio-onboard.md).
 
-1. In the left navigation pane, choose the **Home** icon ( ![Home icon.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/studio/icons/house.png)).
+1. In the left navigation pane, choose the **Home** icon ( ![Home icon.](https://docs.aws.amazon.com/sagemaker/latest/dg/images/studio/icons/house.png)).
 
 1. Choose **Models**, and then **Model registry**.
 
@@ -159,7 +159,7 @@ Model packages in the SageMaker Model Registry do not support tags—these are v
 
 1. Sign in to Amazon SageMaker Studio Classic. For more information, see [Amazon SageMaker AI domain overview](gs-studio-onboard.md).
 
-1. In the left navigation pane, choose the **Home** icon ( ![Home icon.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/studio/icons/house.png)).
+1. In the left navigation pane, choose the **Home** icon ( ![Home icon.](https://docs.aws.amazon.com/sagemaker/latest/dg/images/studio/icons/house.png)).
 
 1. Choose **Models**, and then **Model registry**.
 

@@ -119,6 +119,6 @@ Now add the CSS for the webpage. This will set the style of the text and placeho
 1. Save the file.
 
 1. You can now view the `quickstart.html` file in a browser to see the layout of the application.
-![Browser window showing the Amazon Location Service quickstart web application with an empty map and JSON Response panel, before any API calls are made.](http://docs.aws.amazon.com/location/previous/developerguide/images/quickstart-blank.png)
+![Browser window showing the Amazon Location Service quickstart web application with an empty map and JSON Response panel, before any API calls are made.](https://docs.aws.amazon.com/location/previous/developerguide/images/quickstart-blank.png)
 
 Next, you will add the map control to the application.

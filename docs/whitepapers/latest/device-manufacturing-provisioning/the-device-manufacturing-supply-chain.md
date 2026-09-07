@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-
 # The device manufacturing supply chain
 <a name="the-device-manufacturing-supply-chain"></a>
 
-![A diagram that shows the IoT device manufacturing process.](http://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-provisioning/images/device-manufacturing.png)
+![A diagram that shows the IoT device manufacturing process.](https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-provisioning/images/device-manufacturing.png)
 
  As an IoT project moves from a development phase to production, a supply chain is necessary between the device maker through to the customer.
 

@@ -39,14 +39,14 @@ You can use this block in the following [flow types](create-contact-flow.md#cont
 
 The following image shows the **Properties** page of the **Set event flow** block.
 
-![The properties page of the Set event flow block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/set-event-flow-properties.png)
+![The properties page of the Set event flow block.](https://docs.aws.amazon.com/connect/latest/adminguide/images/set-event-flow-properties.png)
 
 ## Configured block
 <a name="set-event-flow-configured"></a>
 
 The following image shows an example of what this block looks like when it is configured. It has the following branches: **Success** and **Error**.
 
-![A configured Set event flow block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/set-event-flow-configured.png)
+![A configured Set event flow block.](https://docs.aws.amazon.com/connect/latest/adminguide/images/set-event-flow-configured.png)
 
 ## Scenarios
 <a name="set-event-flow-scenario"></a>

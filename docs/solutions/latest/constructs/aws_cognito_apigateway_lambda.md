@@ -226,7 +226,7 @@ Out of the box implementation of the Construct without any override will set the
 ## Architecture
 <a name="_architecture"></a>
 
-![Diagram showing data flow between AWS services including Cognito, API Gateway, Lambda, CloudWatch and IAM Roles](http://docs.aws.amazon.com/solutions/latest/constructs/images/aws-cognito-apigateway-lambda.png)
+![Diagram showing data flow between AWS services including Cognito, API Gateway, Lambda, CloudWatch and IAM Roles](https://docs.aws.amazon.com/solutions/latest/constructs/images/aws-cognito-apigateway-lambda.png)
 
 ## Github
 <a name="_github"></a>

@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterpri
 
 Operations against AWS services are logged by AWS CloudTrail, and log files are stored in S3. Access details such as Event Name, User Identity, Event Time, Event Source, and Source IP are all captured in CloudTrail.
 
-![A diagram that shows a sample audit trail architecture.](http://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-19.png)
+![A diagram that shows a sample audit trail architecture.](https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-19.png)
 
 *Sample audit trail architecture*
 

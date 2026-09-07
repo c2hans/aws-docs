@@ -11,4 +11,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/model-based-systems-e
 +  MBSE Application Migration to AWS
 +  MBSE Innovation with AWS
 
-![Diagram showing single view of MBSE on AWS and the value delivering technology domains.](http://docs.aws.amazon.com/whitepapers/latest/model-based-systems-engineering/images/single-view-of-mbse.png)
+![Diagram showing single view of MBSE on AWS and the value delivering technology domains.](https://docs.aws.amazon.com/whitepapers/latest/model-based-systems-engineering/images/single-view-of-mbse.png)

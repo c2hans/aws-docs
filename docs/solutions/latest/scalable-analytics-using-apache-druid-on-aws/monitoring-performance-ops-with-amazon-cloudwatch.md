@@ -25,7 +25,7 @@ You must activate the CloudWatch Application Insights before you can use CloudWa
 
  **CloudWatch dashboard for Scalable Analytics using Apache Druid on AWS.**
 
-![image4](http://docs.aws.amazon.com/solutions/latest/scalable-analytics-using-apache-druid-on-aws/images/image4.png)
+![image4](https://docs.aws.amazon.com/solutions/latest/scalable-analytics-using-apache-druid-on-aws/images/image4.png)
 
 The dashboard provides the following information for your Druid deployment.
 
@@ -68,6 +68,6 @@ To view metrics for the Druid deployment:
 1. On the Metrics page, under Custom namespaces, select `AWSSolutions/Druid`. This will display all metrics for the Druid deployment.
 
     **Screenshot of metrics for Scalable Analytics using Apache Druid on AWS in CloudWatch.**
-![image5](http://docs.aws.amazon.com/solutions/latest/scalable-analytics-using-apache-druid-on-aws/images/image5.png)
+![image5](https://docs.aws.amazon.com/solutions/latest/scalable-analytics-using-apache-druid-on-aws/images/image5.png)
 
 1. Choose to select a relevant dimension to view additional information. The dimensions page provides a breakdown of individual Druid services, source, query, and other metrics.

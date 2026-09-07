@@ -179,7 +179,7 @@ To address these issues, the `Scan` operation can logically divide a table or se
 
 The following diagram shows how a multithreaded application performs a parallel `Scan` with three degrees of parallelism.
 
-![A multithreaded application that performs a parallel scan by dividing a table into three segments.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/ParallelScan.png)
+![A multithreaded application that performs a parallel scan by dividing a table into three segments.](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/ParallelScan.png)
 
 In this diagram, the application spawns three threads and assigns each thread a number. (Segments are zero-based, so the first number is always 0.) Each thread issues a `Scan` request, setting `Segment` to its designated number and setting `TotalSegments` to 3. Each thread scans its designated segment, retrieving data 1 MB at a time, and returns the data to the application's main thread.
 

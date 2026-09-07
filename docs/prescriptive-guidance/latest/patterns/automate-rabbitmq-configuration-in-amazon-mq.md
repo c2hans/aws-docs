@@ -47,7 +47,7 @@ You can use this pattern to configure any RabbitMQ cluster. All it requires is c
 
 There are many ways to configure RabbitMQ. This pattern uses the import configuration functionality, where a single JSON file contains all the configurations. This file applies all settings and can be managed by a version-control system such as Bitbucket or Git. This pattern uses Ansible to implement the configuration through the **rabbitmqadmin **CLI.
 
-![Automating RabbitMQ configuration in Amazon MQ](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/294120b6-c95f-4cc5-bf85-5ad7e2abdad5/images/292e1284-5c9e-4c82-bb41-010fa84d8d74.png)
+![Automating RabbitMQ configuration in Amazon MQ](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/294120b6-c95f-4cc5-bf85-5ad7e2abdad5/images/292e1284-5c9e-4c82-bb41-010fa84d8d74.png)
 
 ## Tools
 <a name="automate-rabbitmq-configuration-in-amazon-mq-tools"></a>

@@ -86,7 +86,7 @@ order by nodeid;
 
 The preceding query returns the following output.
 
-![Output of a query that returns the query plan nodes.](http://docs.aws.amazon.com/prescriptive-guidance/latest/query-lifecycle-redshift/images/guide-img/84453e49-6013-472a-b5b1-062248897e49/images/74cb8a7f-ed68-48fc-9a3f-4cb7db247c23.png)
+![Output of a query that returns the query plan nodes.](https://docs.aws.amazon.com/prescriptive-guidance/latest/query-lifecycle-redshift/images/guide-img/84453e49-6013-472a-b5b1-062248897e49/images/74cb8a7f-ed68-48fc-9a3f-4cb7db247c23.png)
 
 The `EXPLAIN` plan returns useful metrics for each operation, including metrics on cost, rows, and width. For example, line 7 from the preceding query returns the following:
 

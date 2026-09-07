@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dr-standard
 
 The following diagram shows the ongoing replication of data from the primary Region to the standby Region by using AWS DMS.
 
-![""](http://docs.aws.amazon.com/prescriptive-guidance/latest/dr-standard-edition-amazon-rds/images/guide-img/d84bd0dc-b6eb-4d26-8602-78820cdf415f/images/e8840c41-9324-4d31-bbd5-60d7fefc8541.png)
+![""](https://docs.aws.amazon.com/prescriptive-guidance/latest/dr-standard-edition-amazon-rds/images/guide-img/d84bd0dc-b6eb-4d26-8602-78820cdf415f/images/e8840c41-9324-4d31-bbd5-60d7fefc8541.png)
 
 1. In the primary Region, data is copied from the Amazon RDS DB instance to AWS DMS.
 

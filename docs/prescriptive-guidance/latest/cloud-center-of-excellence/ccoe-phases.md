@@ -15,7 +15,7 @@ The AWS CAF recommends four iterative and incremental cloud transformation phase
 
 The following diagram shows CCoE phases that are mapped to different phases of the AWS CAF.
 
-![Responsibilities and dedicated resources increase with each phase of the CCoE.](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-center-of-excellence/images/guide-img/5a9c0e30-7fc0-49df-9354-3cdd4639f644/images/66360f92-62d7-438e-be05-159e1b1f33a7.png)
+![Responsibilities and dedicated resources increase with each phase of the CCoE.](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-center-of-excellence/images/guide-img/5a9c0e30-7fc0-49df-9354-3cdd4639f644/images/66360f92-62d7-438e-be05-159e1b1f33a7.png)
 
 + **Advisory phase** – In this phase, the central CCoE team focuses on gaining organizational awareness and alignment on building a business through AWS. It serves as an early adopter for cloud projects, and it identifies and promotes the value of these engagements within the involved entities. To secure long-term goals for the AWS practice, the central team removes preliminary blockers and identifies early needs such as headcount, skills, and material resources. The Advisory CCoE phase relates to the Envision and Align phases in the AWS CAF.
 + **Catalyst phase** – The central CCoE team becomes the AWS champion. It's proactive in driving how the AWS part of the business is run in the context of the organization's overall business strategy, and it supports the other entities with technical developments, AWS enablement, and go-to-market strategies. Its main goals will be defined by the challenges that prompted the formation of the CCoE, which can be different for your business:

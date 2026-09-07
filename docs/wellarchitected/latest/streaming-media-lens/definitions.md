@@ -18,4 +18,4 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 
  AWS provides over 200 cloud infrastructure services and a network of thousands of AWS Partners to power your streaming media experiences. In this section, we define two conceptual layers and several components that you will find in any streaming media workload regardless of specific implementation. The examples throughout this paper feature AWS Media Services, but the concepts should apply to any streaming media workload.
 
-![A general streaming media architecture is pictured with typical components used between the media sources and end-user player devices.](http://docs.aws.amazon.com/wellarchitected/latest/streaming-media-lens/images/streaming-media-conceptual-components.png)
+![A general streaming media architecture is pictured with typical components used between the media sources and end-user player devices.](https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-lens/images/streaming-media-conceptual-components.png)

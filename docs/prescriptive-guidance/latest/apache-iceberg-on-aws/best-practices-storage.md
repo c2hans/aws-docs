@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceb
 
 Updating or deleting data in an Iceberg table increases the number of copies of your data, as illustrated in the following diagram. The same is true for running compaction: It increases the number of data copies in Amazon S3. That's because Iceberg treats the files underlying all tables as immutable.
 
-![Results of updating or deleting data in an Iceberg table](http://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/images/guide-img/ceffa39e-028d-47b6-a54a-6ef8526aee6a/images/c7c62753-4861-4a7e-8b34-86aa38234f33.png)
+![Results of updating or deleting data in an Iceberg table](https://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/images/guide-img/ceffa39e-028d-47b6-a54a-6ef8526aee6a/images/c7c62753-4861-4a7e-8b34-86aa38234f33.png)
 
 Follow the best practices in this section to manage storage costs.
 

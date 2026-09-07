@@ -16,7 +16,7 @@ The following concepts are important for understanding how CodeBuild works.
 
 The following diagram shows what happens when you run a build with CodeBuild:
 
-![A diagram of how running a build with CodeBuild works.](http://docs.aws.amazon.com/codebuild/latest/userguide/images/arch.png)
+![A diagram of how running a build with CodeBuild works.](https://docs.aws.amazon.com/codebuild/latest/userguide/images/arch.png)
 
 1. As input, you must provide CodeBuild with a build project. A *build project* includes information about how to run a build, including where to get the source code, which build environment to use, which build commands to run, and where to store the build output. A *build environment* represents a combination of operating system, programming language runtime, and tools that CodeBuild uses to run a build. For more information, see:
    + [Create a build project](create-project.md)

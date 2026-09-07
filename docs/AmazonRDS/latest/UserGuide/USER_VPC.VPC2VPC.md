@@ -9,7 +9,7 @@ You can use the AWS Management Console to move your DB instance to a different V
 
 For information about modifying a DB instance, see [Modifying an Amazon RDS DB instance](Overview.DBInstance.Modifying.md). In the **Connectivity** section of the modify page, shown following, enter the new DB subnet group for **DB subnet group**. The new subnet group must be a subnet group in a new VPC.
 
-![Modify the DB instance subnet group.](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/images/EC2-VPC.png)
+![Modify the DB instance subnet group.](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/images/EC2-VPC.png)
 
 You can't change the VPC for a DB instance if the following conditions apply:
 + The DB instance is in multiple Availability Zones. You can convert the DB instance to a single Availability Zone, move it to a new VPC, and then convert it back to a Multi-AZ DB instance. For more information, see [Configuring and managing a Multi-AZ deployment for Amazon RDS](Concepts.MultiAZ.md).

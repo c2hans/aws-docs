@@ -23,11 +23,11 @@ Automated tags enable Administrators to track, report, and monitor your ML spend
 
 To use the attached tags for cost analysis, they must first be activated in the **[Cost allocation tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html)** section of the AWS Billing console. It can take up to 24 hours for tags to show up in the cost allocate tag panel, so you’ll need to create a SageMaker AI resource prior to enabling them.
 
-![A diagram that shows a space ARN enabled as cost allocation tags on Cost Explorer.](http://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/space-arn.png)
+![A diagram that shows a space ARN enabled as cost allocation tags on Cost Explorer.](https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/space-arn.png)
 
 After you have enabled a cost allocation tag, AWS will begin tracking your tagged resources, and after 24-48 hours, the tags will show up as selectable filters in cost explorer.
 
-![A diagram that shows costs grouped by shared space for a sample domain.](http://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/costs-grouped-by-shared-space.png)
+![A diagram that shows costs grouped by shared space for a sample domain.](https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/costs-grouped-by-shared-space.png)
 
 ## Cost control
 <a name="cost-control"></a>

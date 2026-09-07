@@ -26,7 +26,7 @@ Map data and other geolocation information, including exact locations, can vary 
 
 The following shows you how to create and use place index resources:
 
-![User click flows through SDK to place index resource using geographic coordinates.](http://docs.aws.amazon.com/location/previous/developerguide/images/illustration-places.PNG)
+![User click flows through SDK to place index resource using geographic coordinates.](https://docs.aws.amazon.com/location/previous/developerguide/images/illustration-places.PNG)
 
 1. First, you create a place index resource in your AWS account by selecting a data provider.
 
@@ -83,7 +83,7 @@ The search results include a label for the full address (`123 Main St, Anytown, 
 
 Addresses in the place index data includes exact address matches. For example, suppose that there is a street, `9th street` and one block has 2 houses, `220` and `240`, as in the following image.
 
-![A map of a single block with two existing houses, and one new house added between them.](http://docs.aws.amazon.com/location/previous/developerguide/images/address-inference.png)
+![A map of a single block with two existing houses, and one new house added between them.](https://docs.aws.amazon.com/location/previous/developerguide/images/address-inference.png)
 
 The data provider creates the geolocation data with those two known addresses. You can search for those two addresses, and they are found. After the data provider creates the map data, let's suppose that a new house is added, between the first two addresses. This new house is given the address `230`. If you search for **230 S 9th St**, the data provider will still find a result. Instead of using a known address, it will interpolate between the already known addresses, and estimate the position of the new address from those. In this case, it might assume that 230 is halfway between 220 and 240 (and on the same side of the street), and return an approximate location based on that.
 

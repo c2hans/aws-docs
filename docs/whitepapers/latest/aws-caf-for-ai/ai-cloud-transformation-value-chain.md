@@ -13,7 +13,7 @@ Notably, the business problem space to which AI can be applied is not a single f
 
 As an example, the emergent capabilities of large AI models to perform domain-specific functions with little additional data are taking organizations by storm and help business to differentiate. The discipline that these mainly fall into is generative AI, which has captured widespread attention and imagination. However, developing, applying, and tuning such models can be complex.
 
-![Diagram showing the elements of the AWS CAF-AI transformation value chain.](http://docs.aws.amazon.com/whitepapers/latest/aws-caf-for-ai/images/caf-ai-transformation-value-chain.png)
+![Diagram showing the elements of the AWS CAF-AI transformation value chain.](https://docs.aws.amazon.com/whitepapers/latest/aws-caf-for-ai/images/caf-ai-transformation-value-chain.png)
 
 The preceding figure provides an orientation on how to think about Artificial Intelligence adoption in the face of a changing market landscape and the rapidly accelerating field.
 

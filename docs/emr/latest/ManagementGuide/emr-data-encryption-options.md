@@ -9,7 +9,7 @@ With Amazon EMR releases 4.8.0 and higher, you can use a security configuration 
 
 The following diagram shows the different data encryption options available with security configurations.
 
-![There are several in-transit and at-rest encryption options available with Amazon EMR.](http://docs.aws.amazon.com/emr/latest/ManagementGuide/images/emr-encryption-options.png)
+![There are several in-transit and at-rest encryption options available with Amazon EMR.](https://docs.aws.amazon.com/emr/latest/ManagementGuide/images/emr-encryption-options.png)
 
 The following encryption options are also available and are not configured using a security configuration:
 + Optionally, with Amazon EMR versions 4.1.0 and later, you can choose to configure transparent encryption in HDFS. For more information, see [Transparent encryption in HDFS on Amazon EMR](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-encryption-tdehdfs.html) in the *Amazon EMR Release Guide*.

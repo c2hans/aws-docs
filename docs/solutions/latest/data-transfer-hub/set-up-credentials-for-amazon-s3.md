@@ -101,4 +101,4 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/set-u
 1.  Review the user details, and choose **Create User**.
 
 1.  Make sure you copied/saved the credential, and then choose **Close**.
-![Success message for user creation with access key ID and secret access key displayed.](http://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/user.png)
+![Success message for user creation with access key ID and secret access key displayed.](https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/user.png)

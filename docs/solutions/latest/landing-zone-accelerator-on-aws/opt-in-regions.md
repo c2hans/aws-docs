@@ -29,7 +29,7 @@ To launch the Landing Zone Accelerator on AWS solution into opt-in AWS Regions, 
 
  **Architecture diagram depicting Landing Zone Accelerator on AWS architecture in opt-in (Target) Regions.**
 
-![image12](http://docs.aws.amazon.com/solutions/latest/landing-zone-accelerator-on-aws/images/image12.png)
+![image12](https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerator-on-aws/images/image12.png)
 
 ## Deployment
 <a name="opt-in-deployment"></a>

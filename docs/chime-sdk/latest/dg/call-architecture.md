@@ -9,12 +9,12 @@ The PSTN audio service can operate on one or more call legs. For example, you ha
 
 The following diagram shows the flow of a single-leg call.
 
-![Diagram of the architecture of a single call leg.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/single-leg-architecture.png)
+![Diagram of the architecture of a single call leg.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/single-leg-architecture.png)
 
 The following diagram shows the architecture of a multi-leg call.
 
-![Diagram of the architecture of a multi-leg call.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/multi-leg-architecture.png)
+![Diagram of the architecture of a multi-leg call.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/multi-leg-architecture.png)
 
 The following diagram shows the flow of a multi-leg bridged call.
 
-![Diagram of the architecture of a multi-leg bridged call.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/Multi-Leg-Architecture-w-Bridge.png)
+![Diagram of the architecture of a multi-leg bridged call.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/Multi-Leg-Architecture-w-Bridge.png)

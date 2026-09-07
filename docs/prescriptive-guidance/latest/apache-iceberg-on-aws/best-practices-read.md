@@ -134,14 +134,14 @@ For example, in tables that are partitioned by date (`yyyy-mm-dd`) where most of
 
 The following diagram illustrates how the efficiency of column statistics improves when tables are sorted. In the example, the sorted table needs to open only a single file, and maximally benefits from Iceberg's partition and file. In the unsorted table, any `uuid` can potentially exist in any data file, so the query has to open all data files.
 
-![Setting sort order in Iceberg tables](http://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/images/guide-img/ceffa39e-028d-47b6-a54a-6ef8526aee6a/images/511015a2-4318-4282-9d1b-a91b243c9302.png)
+![Setting sort order in Iceberg tables](https://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/images/guide-img/ceffa39e-028d-47b6-a54a-6ef8526aee6a/images/511015a2-4318-4282-9d1b-a91b243c9302.png)
 
 Changing the sort order doesn't affect existing data files. You can use Iceberg compaction to apply the sort order on those.
 
 Using Iceberg sorted tables might decrease costs for your workload, as illustrated in the following graph.
 
-![Comparison costs for Iceberg and Parquet tables](http://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/images/guide-img/ceffa39e-028d-47b6-a54a-6ef8526aee6a/images/670693e0-7f83-4b76-beff-745cf6e59310.png)
+![Comparison costs for Iceberg and Parquet tables](https://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/images/guide-img/ceffa39e-028d-47b6-a54a-6ef8526aee6a/images/670693e0-7f83-4b76-beff-745cf6e59310.png)
 
-![Results of TPC-H benchmark for Parquet vs. Iceberg tables](http://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/images/guide-img/ceffa39e-028d-47b6-a54a-6ef8526aee6a/images/f2f2ef7d-e926-4bb9-a547-2f3d2557e259.png)
+![Results of TPC-H benchmark for Parquet vs. Iceberg tables](https://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/images/guide-img/ceffa39e-028d-47b6-a54a-6ef8526aee6a/images/f2f2ef7d-e926-4bb9-a547-2f3d2557e259.png)
 
 These graphs summarize the results of running the TPC-H benchmark for Hive (Parquet) tables compared with Iceberg sorted tables. However, the results might be different for other datasets or workloads.

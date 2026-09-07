@@ -38,7 +38,7 @@ This pattern shows an example architecture to process events asynchronously usin
 
 The following diagram shows the interaction of the jobs API with the `jobs` Amazon DynamoDB table, the event-processing Fargate service, and the error-handling AWS Lambda function. Events are stored in an Amazon EventBridge event archive.
 
-![Architecture diagram with description following the diagram.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8a03149c-8f34-4593-84d5-accc1800a0a2/images/5e1071aa-4fbc-495c-bc22-8e62a32a136b.png)
+![Architecture diagram with description following the diagram.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8a03149c-8f34-4593-84d5-accc1800a0a2/images/5e1071aa-4fbc-495c-bc22-8e62a32a136b.png)
 
 A typical workflow includes the following steps:
 

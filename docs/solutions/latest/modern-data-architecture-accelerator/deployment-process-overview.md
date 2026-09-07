@@ -129,7 +129,7 @@ This section provides instructions for deploying the Modern Data Architecture Ac
 
 1. Select the button to launch the Modern Data Architecture Accelerator CloudFormation template.
 
-    [![Launch solution](http://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?&templateURL=https:%2F%2Fsolutions-reference.s3.amazonaws.com%2Fmodern-data-architecture-accelerator%2Flatest%2FMdaaInstallerStack.template&redirectId=SolutionWeb)
+    [![Launch solution](https://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?&templateURL=https:%2F%2Fsolutions-reference.s3.amazonaws.com%2Fmodern-data-architecture-accelerator%2Flatest%2FMdaaInstallerStack.template&redirectId=SolutionWeb)
 
 1. The template launches in the US East (N. Virginia) Region by default. To launch the solution in a different AWS Region, use the Region selector in the console navigation bar.
 

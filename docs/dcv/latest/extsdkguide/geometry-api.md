@@ -13,7 +13,7 @@ This API is supported by, and only available on, Amazon DCV Windows clients only
 
 Move the local cursor pointer to a specific position over a streaming area of the Amazon DCV client. Extensions issue a `SetCursorPointRequest` and receive a synchronous `SetCursorPointResponse`.
 
-![Sequence diagram showing SetCursorPointRequest from Extension Client to DCV Client with SUCCESS response.](http://docs.aws.amazon.com/dcv/latest/extsdkguide/images/set-cursor-point.jpg)
+![Sequence diagram showing SetCursorPointRequest from Extension Client to DCV Client with SUCCESS response.](https://docs.aws.amazon.com/dcv/latest/extsdkguide/images/set-cursor-point.jpg)
 
 **Helper structures:**
 
@@ -50,7 +50,7 @@ Extensions issue a `GetStreamingViewRequest` and receive a synchronous `GetStrea
 
 After the first GetStreamingViewsRequest is issued DCV will also start sending asynchronous `StreamingViewsChangedEvent` messages whenever the geometry of the local streaming views is changed (e.g. the client window is resized or moved) or the geometry of the remote desktop is changed (e.g. a monitor is added or removed).
 
-![Sequence diagram showing GetStreamingViewsRequest and response between Extension Client and DCV Client, followed by asynchronous StreamingViewsChangedEvent notifications.](http://docs.aws.amazon.com/dcv/latest/extsdkguide/images/get-streaming-views.jpg)
+![Sequence diagram showing GetStreamingViewsRequest and response between Extension Client and DCV Client, followed by asynchronous StreamingViewsChangedEvent notifications.](https://docs.aws.amazon.com/dcv/latest/extsdkguide/images/get-streaming-views.jpg)
 
 **Helper structures:**
 
@@ -126,7 +126,7 @@ Query whether a position on the local desktop of the client host lies inside a v
 
 Extensions issue a `IsPointInsideStreamingViewsRequest` and receive a synchronous `IsPointInsideStreamingViewsResponse`.
 
-![Sequence diagram showing Extension Client sending IsPointInsideStreamingViewsRequest to DCV Client and receiving SUCCESS response.](http://docs.aws.amazon.com/dcv/latest/extsdkguide/images/is-points-inside-streaming-views.jpg)
+![Sequence diagram showing Extension Client sending IsPointInsideStreamingViewsRequest to DCV Client and receiving SUCCESS response.](https://docs.aws.amazon.com/dcv/latest/extsdkguide/images/is-points-inside-streaming-views.jpg)
 
 **Helper structures:**
 

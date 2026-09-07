@@ -18,7 +18,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 +  Middle tier that enables users to access intelligence data and functionality through a web browser, and provides shared services used by the platform’s applications
 +  Client tier that provides desktop access to intelligence data and functionality through easy-to-use interfaces
 
-![Diagram that shows the intelligence platform architecture with the four columns listed previously.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-for-deploying-sas-server/images/intelligence-platform-architecture.jpeg)
+![Diagram that shows the intelligence platform architecture with the four columns listed previously.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-deploying-sas-server/images/intelligence-platform-architecture.jpeg)
 
  *Figure 1: SAS 9.4 Intelligence Platform Architecture*
 
@@ -30,7 +30,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 +  Accelerated processing allows users to distribute subtasks of individual SAS jobs to a shared pool of resources.
 +  Scheduling jobs allows users to schedule automatically routed tasks to the shared resource pool.
 
-![Diagram that shows the SAS Grid architecture.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-for-deploying-sas-server/images/sas-grid-architecture.jpeg)
+![Diagram that shows the SAS Grid architecture.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-deploying-sas-server/images/sas-grid-architecture.jpeg)
 
 ## SAS Viya
 <a name="sas-viya"></a>
@@ -40,4 +40,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 +  SAS Viya supports a standardized code base that enables programming in SAS and other languages like Python, R, Java, and Lua.
 +  SAS Viya is highly available with distributed processing crafted to handle multiple users distributing operations across the cores of a single server, or nodes of massive compute clusters.
 
-![Diagram that shows an SAS Viya architecture.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-for-deploying-sas-server/images/sas-viya-architecture.png)
+![Diagram that shows an SAS Viya architecture.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-deploying-sas-server/images/sas-viya-architecture.png)

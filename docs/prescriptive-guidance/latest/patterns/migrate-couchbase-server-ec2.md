@@ -33,7 +33,7 @@ For more information about key benefits, see the [Additional information](#migra
 
 The following diagram shows the high-level architecture for migrating Couchbase Server to AWS.
 
-![Migration architecture for rehosting Couchbase Server on AWS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/4cedced2-3528-4f12-b19e-7d389e820cc1/images/ac22133a-895f-4999-b1e1-57f69e83a326.png)
+![Migration architecture for rehosting Couchbase Server on AWS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/4cedced2-3528-4f12-b19e-7d389e820cc1/images/ac22133a-895f-4999-b1e1-57f69e83a326.png)
 
 From the on-premises Couchbase cluster, data moves through a customer gateway by using [AWS Direct Connect](https://aws.amazon.com/directconnect/). The data passes through a router and an Direct Connect route and reaches the VPC through an [AWS Virtual Private Network (Site-to-Site VPN)](https://aws.amazon.com/vpn/) gateway. The VPC contains an EC2 instance that is running Couchbase Server. The AWS infrastructure also includes [AWS Identity and Access Management (IAM)](https://aws.amazon.com/iam/) for access control, [AWS Key Management Service (AWS KMS)](https://aws.amazon.com/kms/) for data encryption, [Amazon Elastic Block Store (Amazon EBS)](https://aws.amazon.com/ebs/) for block storage, and [Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3/) for data storage.
 

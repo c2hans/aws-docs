@@ -48,7 +48,7 @@ This pattern is recommended for users who have experience with Kubernetes, TLS, 
 
 The following diagram shows the workflow and architecture components for this pattern.
 
-![Workflow to set up encryption for applications on Amazon EKS using cert-manager and Let's Encrypt.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9aa3ee9e-73db-41f5-a467-b5c47fef496e/images/40692ede-6fb3-474e-8c9e-85c51529e8ad.png)
+![Workflow to set up encryption for applications on Amazon EKS using cert-manager and Let's Encrypt.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9aa3ee9e-73db-41f5-a467-b5c47fef496e/images/40692ede-6fb3-474e-8c9e-85c51529e8ad.png)
 
 The diagram shows the following workflow:
 

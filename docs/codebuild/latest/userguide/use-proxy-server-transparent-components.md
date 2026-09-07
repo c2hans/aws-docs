@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/use-proxy-ser
 
  The following diagram shows how the components interact.
 
-![The diagram shows how the components interact.](http://docs.aws.amazon.com/codebuild/latest/userguide/images/codebuild-proxy-transparent.png)
+![The diagram shows how the components interact.](https://docs.aws.amazon.com/codebuild/latest/userguide/images/codebuild-proxy-transparent.png)
 
 ## Set up a VPC, subnets, and a network gateway
 <a name="use-proxy-server-transparent-setup"></a>

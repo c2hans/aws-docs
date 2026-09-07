@@ -28,7 +28,7 @@ This pattern shows how to track the usage costs of AWS Glue data integration job
 
 The following diagram shows how you can apply tags to track usage costs for AWS Glue jobs.
 
-![Creating and applying tags in AWS Glue jobs to track usage costs in AWS Cost Explorer.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e0ae6643-713d-423a-9013-b41b30638053/images/f2b74ef1-494d-439b-9aec-5a9d601126a6.png)
+![Creating and applying tags in AWS Glue jobs to track usage costs in AWS Cost Explorer.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e0ae6643-713d-423a-9013-b41b30638053/images/f2b74ef1-494d-439b-9aec-5a9d601126a6.png)
 
 The diagram shows the following workflow:
 

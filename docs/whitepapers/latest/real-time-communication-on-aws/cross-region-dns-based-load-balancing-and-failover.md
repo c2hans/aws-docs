@@ -19,4 +19,4 @@ The Amazon Route 53 Traffic Flow feature makes it easy for you to manage traffi
 
 AWS Global Accelerator continually monitors the health of your application endpoints, and automatically redirects traffic to the nearest healthy endpoints in the event of current endpoints turning unhealthy. For additional security requirements, Accelerated Site-to-Site VPN uses AWS Global Accelerator to improve the performance of VPN connections by intelligently routing traffic through the AWS Global Network and AWS edge locations.
 
-![A diagram depicting inter-Region high availability design using AWS Global Accelerator or Amazon Route 53.](http://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/images/inter-region-ha-design.png)
+![A diagram depicting inter-Region high availability design using AWS Global Accelerator or Amazon Route 53.](https://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/images/inter-region-ha-design.png)

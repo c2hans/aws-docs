@@ -36,7 +36,7 @@ Windows servers use .pfx or .p12 files to contain the public key file (SSL certi
 
 **Source architecture**
 
-![Source architecture for migrating Windows SSL certificates to Application Load Balancer using ACM](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/cad6e465-da39-4819-970e-10e1c30e0a1f/images/e63efb6f-205b-4e20-a043-6bc954470191.png)
+![Source architecture for migrating Windows SSL certificates to Application Load Balancer using ACM](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/cad6e465-da39-4819-970e-10e1c30e0a1f/images/e63efb6f-205b-4e20-a043-6bc954470191.png)
 
 **Target technology stack**
 + ACM certificates in your AWS account
@@ -45,7 +45,7 @@ Windows servers use .pfx or .p12 files to contain the public key file (SSL certi
 
 **Target architecture**
 
-![Target architecture for migrating Windows SSL certificates to Application Load Balancer using ACM](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/cad6e465-da39-4819-970e-10e1c30e0a1f/images/45ac7fba-fbad-4c74-9b1f-80ca212dae08.png)
+![Target architecture for migrating Windows SSL certificates to Application Load Balancer using ACM](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/cad6e465-da39-4819-970e-10e1c30e0a1f/images/45ac7fba-fbad-4c74-9b1f-80ca212dae08.png)
 
 ## Tools
 <a name="migrate-windows-ssl-certificates-to-an-application-load-balancer-using-acm-tools"></a>

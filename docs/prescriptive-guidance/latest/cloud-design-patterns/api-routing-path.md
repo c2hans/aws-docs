@@ -35,7 +35,7 @@ server {
 
 The following diagram illustrates the HTTP service reverse proxy method.
 
-![Using an HTTP service reverse proxy for path routing.](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/9470aa6b-8f8f-4d71-8402-29c57b6e5727.png)
+![Using an HTTP service reverse proxy for path routing.](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/9470aa6b-8f8f-4d71-8402-29c57b6e5727.png)
 
 This approach might be sufficient for some use cases that don't use additional configurations to start processing requests, allowing for the downstream API to collect metrics and logs.
 
@@ -58,7 +58,7 @@ The [Amazon API Gateway](https://aws.amazon.com/api-gateway/) service (REST APIs
 
 You probably don't want to get too granular by mapping every path in every service in the root or core API gateway. Instead, opt for wildcard paths such as `/billing/*` to forward requests to the billing service. By not mapping every path in the root or core API gateway, you gain more flexibility over your APIs, because you don't have to update the root API gateway with every API change.
 
-![Path routing through API Gateway.](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/ebde498e-50ef-4c74-9688-626d9e30795c.png)
+![Path routing through API Gateway.](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/ebde498e-50ef-4c74-9688-626d9e30795c.png)
 
 **Pros**
 
@@ -82,7 +82,7 @@ You can use the [dynamic origin selection feature](https://docs.aws.amazon.com/A
 
 The routing logic lives as code within the Lambda@Edge function, so it supports highly customizable routing mechanisms such as A/B testing, canary releases, feature flagging, and path rewriting. This is illustrated in the following diagram.
 
-![Path routing through Amazon CloudFront.](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/0e0a6fbf-6813-4365-8e0e-b8fa1fc69b21.png)
+![Path routing through Amazon CloudFront.](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/0e0a6fbf-6813-4365-8e0e-b8fa1fc69b21.png)
 
 **Pros**
 

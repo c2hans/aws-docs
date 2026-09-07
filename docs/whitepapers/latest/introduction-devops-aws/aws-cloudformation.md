@@ -9,7 +9,7 @@ AWS CloudFormation is a service that enables developers to create AWS resources 
 
 A CloudFormation template is deployed into the AWS environment as a stack. You can manage stacks through the AWS Management Console, AWS Command Line Interface, or CloudFormation APIs. If you need to make changes to the running resources in a stack you update the stack. Before making changes to your resources, you can generate a change set, which is a summary of your proposed changes. Change sets enable you to see how your changes might impact your running resources, especially for critical resources, before implementing them.
 
-![A diagram depicting AWS CloudFormation creating an entire environment (stack) from one template](http://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/images/figure-1.png)
+![A diagram depicting AWS CloudFormation creating an entire environment (stack) from one template](https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/images/figure-1.png)
 
 You can use a single template to create and update an entire environment, or separate templates to manage multiple layers within an environment. This enables templates to be modularized, and also provides a layer of governance that is important to many organizations.
 

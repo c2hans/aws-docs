@@ -35,7 +35,7 @@ The pattern’s approach creates a production environment and non-production env
 ## Architecture
 <a name="automatically-build-ci-cd-pipelines-and-amazon-ecs-clusters-for-microservices-using-aws-cdk-architecture"></a>
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/05ac2cad-408e-433f-8150-0a2b71f63cfd/images/6fa3dbef-88de-4b3f-ae41-dfa90256a058.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/05ac2cad-408e-433f-8150-0a2b71f63cfd/images/6fa3dbef-88de-4b3f-ae41-dfa90256a058.png)
 
 The diagram shows the following workflow:
 

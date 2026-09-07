@@ -31,7 +31,7 @@ To use Amazon RDS Custom for Oracle, you follow these steps, which are illustrat
 
 For more information about these steps, see the [Amazon RDS Custom documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-concept.workflow.html).
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-oracle-database/images/guide-img/b6e66b32-33d8-4097-909d-dcc9b3b4a45a/images/d901aafe-a569-4e2c-b3da-6c11edbc75e6.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-oracle-database/images/guide-img/b6e66b32-33d8-4097-909d-dcc9b3b4a45a/images/d901aafe-a569-4e2c-b3da-6c11edbc75e6.png)
 
 To provision your Amazon RDS Custom for Oracle DB instance, review the [requirements](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-reqs-limits.html#custom-reqs-limits.reqs) in the Amazon RDS Custom for Oracle documentation.
 

@@ -27,7 +27,7 @@ The following figure depicts an example of deploying the solution in your monito
 
  **Image depicts the workflow for deploying a monitoring account**
 
-![deployment workflow](http://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/images/deployment-workflow.png)
+![deployment workflow](https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/images/deployment-workflow.png)
 
 After you choose the deployment mode, the resources needed for that mode are provisioned. The deployment workflow is invoked when you update the deployed Systems Manager Parameter Store.
 + The `helper` Lambda function updates the permissions on the centralized EventBridge bus, so all monitored accounts can send their quota utilization events to the monitoring account.
@@ -46,7 +46,7 @@ You are responsible for the cost of the AWS services used while running this sol
 
 The following flowchart depicts which templates you need to deploy, depending on your deployment scenario.
 
-![Image depicts a decision diagram for selecting the templates for your deployment scenario](http://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/images/choose-deployment-scenario.png)
+![Image depicts a decision diagram for selecting the templates for your deployment scenario](https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/images/choose-deployment-scenario.png)
 
 The following table summarizes the decision criteria for choosing templates, regions, and accounts for monitoring your quotas.
 

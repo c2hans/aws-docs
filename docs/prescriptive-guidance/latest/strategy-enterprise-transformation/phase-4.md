@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-en
 
 This phase focuses on replicating success patterns to scale, building lasting capabilities, reprioritizing and reinforcing performance KPIs** **and expectations, and operating at scale based on outputs from the transformation roadmap. Leaders take ownership of the methods and frameworks that best replicate accelerated outcomes for their use cases and lines of business to make sure that cultural changes stick. This phase is illustrated in the following diagram.
 
-![Focus areas and outcomes of the Transform phase of enterprise transformations.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-enterprise-transformation/images/guide-img/2d221fda-ae0d-490b-b51b-592f55e8b0d3/images/c13ddbf8-6837-489b-8c84-727d0af2fc07.png)
+![Focus areas and outcomes of the Transform phase of enterprise transformations.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-enterprise-transformation/images/guide-img/2d221fda-ae0d-490b-b51b-592f55e8b0d3/images/c13ddbf8-6837-489b-8c84-727d0af2fc07.png)
 
  By the end of this phase, organizations have established transformation leadership fluency, matured their cloud operating model, developed lasting digital culture capabilities, transformed their workforce, mechanized continuous improvements, refined KPIs, and standardized cloud ways of working.
 

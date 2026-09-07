@@ -17,8 +17,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/acti
 
 1.  In the **Monitoring** tab, in **Application Insights**, select **Auto-configure Application Insights**.
 
-![Application Insights dashboard showing no detected problems and option to auto-configure.](http://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/appreg1.png)
+![Application Insights dashboard showing no detected problems and option to auto-configure.](https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/appreg1.png)
 
  Monitoring for your applications is now activated and the following status box appears:
 
-![Application Insights dashboard showing successful monitoring activation message.](http://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/appreg2.png)
+![Application Insights dashboard showing successful monitoring activation message.](https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/appreg2.png)

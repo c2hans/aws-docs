@@ -118,7 +118,7 @@ The following table provides a side-by-side comparison of key differences betwee
 
  In Fargate, each task runs in its isolated environment. Scaling involves launching additional tasks or stopping them based on the load. The Amazon ECS service scheduler can launch up to 500 tasks in less than a minute per service. This applies to web and other long-running services. Amazon ECS also supports predictive scaling. It uses historical patterns to proactively increase tasks before demand spikes occur. Target tracking policies for CPU and memory utilization support 20-second metric resolution. This enables faster scaling signal detection. Amazon ECS can also automatically rebalance service tasks across Availability Zones. This maintains high availability. Fargate integrates with AWS Fault Injection Service (FIS). With FIS, you can run controlled fault injection experiments to test application resilience.
 
-![Diagram showing task launch differences between Fargate and Lambda.](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/task-launches.png)
+![Diagram showing task launch differences between Fargate and Lambda.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/task-launches.png)
 
  For **Lambda**, *concurrency* is the number of in-flight requests that your AWS Lambda function is handling at the same time. This differs from concurrency in Fargate. Each Fargate task can handle concurrent requests as long as there are available compute and network resources. For each concurrent request, Lambda provisions a separate instance of your execution environment. As your functions receive more requests, Lambda automatically scales the number of execution environments. This continues until you reach your account concurrency limit. By default, Lambda provides your account with a total concurrency limit of 1,000 concurrent executions. This limit applies across all functions in an AWS Region. You can request a quota increase if needed.
 
@@ -126,7 +126,7 @@ The following table provides a side-by-side comparison of key differences betwee
 
  For each Lambda function using the default compute type, the concurrency scaling rate is 1,000 execution instances every 10 seconds. This continues up to the maximum account concurrency. For more information, see [Lambda functions now scale 12 times faster when handling high-volume requests](https://aws.amazon.com/blogs/aws/aws-lambda-functions-now-scale-12-times-faster-when-handling-high-volume-requests/) on the AWS Compute blog. If the number of requests in a 10 second period exceeds 1,000, the additional requests are throttled. The following graph demonstrates how Lambda scaling works assuming an account concurrency of 7000.
 
-![Bar graph showing how instances are throttled when number exceeds 1000.](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/instance-throttling.png)
+![Bar graph showing how instances are throttled when number exceeds 1000.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/instance-throttling.png)
 
 ------
 #### [ Cold start and cold-start mitigation ]

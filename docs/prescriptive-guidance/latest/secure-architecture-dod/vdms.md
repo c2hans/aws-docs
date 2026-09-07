@@ -25,7 +25,7 @@ The following table contains the minimum requirements for the VDMS. It explains 
 
 As shown in the following image, the LZA lays the foundational components to meet the VDMS base requirements. There are some additional components that you need to configure after the LZA is deployed to help you meet VDMS standards. In the previous table, make sure that you review the links in the **Additional resources** column. These links either help you configure these additional items or provide further security enhancements.
 
-![Architecture diagram of the LZA components that help you meet the SCCA VDMS requirements.](http://docs.aws.amazon.com/prescriptive-guidance/latest/secure-architecture-dod/images/guide-img/9ef8ed3c-685a-4e51-9cc4-4701568d9bae/images/f6be98dd-5b0b-46de-bb69-34938621b995.png)
+![Architecture diagram of the LZA components that help you meet the SCCA VDMS requirements.](https://docs.aws.amazon.com/prescriptive-guidance/latest/secure-architecture-dod/images/guide-img/9ef8ed3c-685a-4e51-9cc4-4701568d9bae/images/f6be98dd-5b0b-46de-bb69-34938621b995.png)
 
 ## Supplemental service integration
 <a name="supplemental-service-integration"></a>

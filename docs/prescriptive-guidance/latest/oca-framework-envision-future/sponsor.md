@@ -70,9 +70,9 @@ To be an effective sponsor:
 
 Here are two examples of sponsor roadmaps, in the form of worksheets for leadership action plans.
 
-![First example of sponsor roadmap.](http://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-envision-future/images/guide-img/7134122a-df9a-4cfe-995a-6903c8a3790f/images/fc65927e-cd85-48e4-8faf-18bb1b0090c6.png)
+![First example of sponsor roadmap.](https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-envision-future/images/guide-img/7134122a-df9a-4cfe-995a-6903c8a3790f/images/fc65927e-cd85-48e4-8faf-18bb1b0090c6.png)
 
-![Second example of sponsor roadmap.](http://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-envision-future/images/guide-img/7134122a-df9a-4cfe-995a-6903c8a3790f/images/533bc685-42e9-4b29-b22c-fc1d3cb9406f.png)
+![Second example of sponsor roadmap.](https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-envision-future/images/guide-img/7134122a-df9a-4cfe-995a-6903c8a3790f/images/533bc685-42e9-4b29-b22c-fc1d3cb9406f.png)
 
 ## FAQ
 <a name="sponsor-faq"></a>

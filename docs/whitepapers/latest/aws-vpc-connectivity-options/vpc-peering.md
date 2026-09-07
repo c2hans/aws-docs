@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-
 
  Traffic using inter-region VPC Peering always stays on the global AWS backbone and never traverses the public internet, thereby reducing threat vectors, such as common exploits and DDoS attacks.
 
-![Diagram that shows VPC-to-VPC Peering](http://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/vpc-to-vpc-peering.png)
+![Diagram that shows VPC-to-VPC Peering](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/vpc-to-vpc-peering.png)
 
  AWS uses the existing infrastructure of a VPC to create VPC peering connections and does not rely on a separate piece of physical hardware. Therefore, they do not introduce a potential single point of failure or network bandwidth bottleneck between VPCs. Additionally, VPC routing tables, security groups, and network access control lists can be leveraged to control which subnets or instances are able to utilize the VPC peering connection.
 

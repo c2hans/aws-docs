@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multit
 
 This example uses Verified Permissions and Cedar to demonstrate basic RBAC. As mentioned previously, Cedar's basic construct is an entity. Developers define their own entities and can optionally create relationships between entities. The following example includes three type of entities: `Users`, `Roles`, and `Problems`. `Students` and `Teachers` can be considered entities of the type `Role,` and each `User` can be associated with zero or any of the `Roles`.
 
-![Example of a basic RBAC implementation with Amazon Verified Permissions and Cedar to implement a PDP](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/d46a0b34-79c7-4169-948f-35e16cca934d.png)
+![Example of a basic RBAC implementation with Amazon Verified Permissions and Cedar to implement a PDP](https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/d46a0b34-79c7-4169-948f-35e16cca934d.png)
 
 In Cedar, these relationships are expressed by linking the `Role` `Student` to the `User` `Bob` as its parent. This association logically groups all the student users in one group. For more information about grouping in Cedar, see the [Cedar documentation](https://docs.cedarpolicy.com/overview/terminology.html#term-group).
 

@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-wordpr
 
 The based AMI in the GitHub was changed from Amazon Linux1 to Amazon Linux2 in July 2021. However, deployment templates at S3 were not changed yet. It is recommended to use templates at GitHub if there is an issue to deploy the reference architecture with templates at S3.
 
-![Reference architecture for hosting WordPress on AWS](http://docs.aws.amazon.com/whitepapers/latest/best-practices-wordpress/images/image4.png)
+![Reference architecture for hosting WordPress on AWS](https://docs.aws.amazon.com/whitepapers/latest/best-practices-wordpress/images/image4.png)
 
 * Reference architecture for hosting WordPress on AWS *
 

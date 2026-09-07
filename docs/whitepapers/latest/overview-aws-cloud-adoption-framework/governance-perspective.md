@@ -9,7 +9,7 @@ Also available on [Audible](https://www.audible.com/pd/Cloud-Adoption-Framework-
 
 The *governance* perspective focuses on orchestrating your cloud initiatives while maximizing organizational benefits and minimizing transformation-related risks. It comprises seven capabilities shown in the following figure. Common stakeholders include chief transformation officer, CIO, CTO, CFO, CDO, and CRO.
 
-![A diagram depicting the AWS CAF Governance perspective capabilities.](http://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/images/cloud-adoption-7.png)
+![A diagram depicting the AWS CAF Governance perspective capabilities.](https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/images/cloud-adoption-7.png)
 
 *AWS CAF Governance perspective capabilities*
 + **Program and project management** – Deliver interdependent cloud initiatives in a flexible and coordinated manner. Complex cross-functional cloud transformation initiatives require careful coordination, especially in more traditionally structured organizations. Program management is especially critical since many of these interdependencies only become obvious during delivery. Manage interdependencies by aligning multiple initiatives for optimized or integrated costs, schedule, effort, and benefits.

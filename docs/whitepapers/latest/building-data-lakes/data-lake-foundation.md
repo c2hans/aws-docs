@@ -11,7 +11,7 @@ Amazon S3 provides the foundation for building a data lake, along with integrati
 
 The following figure depicts a sample data lake and the transformation journey data goes through in its lifecycle.
 
-![Sample data lake transformation journey](http://docs.aws.amazon.com/whitepapers/latest/building-data-lakes/images/storage-best-practices4.png)
+![Sample data lake transformation journey](https://docs.aws.amazon.com/whitepapers/latest/building-data-lakes/images/storage-best-practices4.png)
 
 This section provides a recommended bucket strategy for building a data lake foundation.
 

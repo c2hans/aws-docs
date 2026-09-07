@@ -55,7 +55,7 @@ This pattern shows you how to migrate and replicate Virtual Storage Access Metho
 
 The following diagram shows how to migrate VSAM files to a relational database, such as Amazon RDS, in real time or near real time by using the CDC agent/publisher in the source environment (on-premises mainframe) and the [Apply Engine](https://help.precisely.com/r/Connect-CDC-SQData/4.1.43/en-US/Connect-CDC-SQData-Help/Source-and-Target-Configuration/Apply-engine) in the target environment (AWS Cloud).
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/4ee183bd-1c0d-449d-8cdc-eb6e2c41a695/images/47cefbde-e0c8-4c36-ba48-cccc2c443074.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/4ee183bd-1c0d-449d-8cdc-eb6e2c41a695/images/47cefbde-e0c8-4c36-ba48-cccc2c443074.png)
 
 The diagram shows the following batch workflow:
 
@@ -81,7 +81,7 @@ The diagram shows the following online workflow:
 
 The following diagram shows how to stream VSAM data structures from a mainframe to Amazon MSK in high-performance mode and automatically generate JSON or AVRO schema conversions that integrate with Amazon MSK.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/4ee183bd-1c0d-449d-8cdc-eb6e2c41a695/images/13eb27ad-c0d2-489b-91e1-5b2a729fb8dd.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/4ee183bd-1c0d-449d-8cdc-eb6e2c41a695/images/13eb27ad-c0d2-489b-91e1-5b2a729fb8dd.png)
 
 The diagram shows the following batch workflow:
 

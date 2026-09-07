@@ -52,7 +52,7 @@ If you are upgrading to the latest version from any version between 3.3.11 and 3
 
 1. Delete the spoke stack.
    + If the role is in use, the deletion fails. Select **Retain resource** for `TransitGatewayServiceLinkedRole` and delete the stack.
-![DELETE_FAILED state for TransitGatewayServiceLinkedRole](http://docs.aws.amazon.com/solutions/latest/network-orchestration-aws-transit-gateway/images/delete-failed.png)
+![DELETE_FAILED state for TransitGatewayServiceLinkedRole](https://docs.aws.amazon.com/solutions/latest/network-orchestration-aws-transit-gateway/images/delete-failed.png)
    + If the role is not in use, the stack deletion cleans up the role.
 
 1. Deploy the spoke template with the latest version. For details, see [Step 4: Launch the spoke stack(s)](step-4-launch-the-spoke-stacks.md).

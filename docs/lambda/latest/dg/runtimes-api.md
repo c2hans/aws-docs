@@ -10,7 +10,7 @@ AWS Lambda provides an HTTP API for [custom runtimes](runtimes-custom.md) to rec
 **Lambda Managed Instances support concurrent requests**
 Lambda Managed Instances use the same runtime API as Lambda (default) functions. The key difference is that Managed Instances can accept concurrent `/next` and `/response` requests up to the configured `AWS_LAMBDA_MAX_CONCURRENCY` limit. This enables multiple invocations to be processed simultaneously within a single execution environment. For more information about Managed Instances, see [Understanding the Lambda Managed Instances execution environment](lambda-managed-instances-execution-environment.md).
 
-![Architecture diagram of the execution environment.](http://docs.aws.amazon.com/lambda/latest/dg/images/telemetry-api-concept-diagram.png)
+![Architecture diagram of the execution environment.](https://docs.aws.amazon.com/lambda/latest/dg/images/telemetry-api-concept-diagram.png)
 
 The OpenAPI specification for the runtime API version **2018-06-01** is available in [runtime-api.zip](samples/runtime-api.zip)
 

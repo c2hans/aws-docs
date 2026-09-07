@@ -27,7 +27,7 @@ These are the facility requirements for compute racks.
 + **Clearance** – The rack is 80 inches (203 cm) high by 24 inches (61 cm) wide by 48 inches (122 cm) deep. Any doorways, hallways, turns, ramps, and elevators must provide sufficient clearance. At the final resting position, there must be a 24 inch (61 cm) wide by 48 inch (122 cm) deep area for the Outpost, with an additional 48 inches (122 cm) of front clearance and 24 inches (61 cm) of rear clearance. The total minimum area required for the Outpost is 24 inch (61 cm) wide by 10 feet (305 cm) deep.
 
   The following diagram shows the total minimum area required for the Outposts compute rack, including clearance.
-![Outpost top-level view of required clearance.](http://docs.aws.amazon.com/outposts/latest/network-userguide/images/outpost-rack2ndgen-compute-rack-clearance.png)
+![Outpost top-level view of required clearance.](https://docs.aws.amazon.com/outposts/latest/network-userguide/images/outpost-rack2ndgen-compute-rack-clearance.png)
 + **Seismic bracing** – To the extent required by regulation or code, you will install and maintain appropriate seismic anchorage and bracing for the rack while it is in your facility. AWS provides floor brackets that provide protection for up to 2.0G of seismic activity with all Outposts racks.
 + **Bonding point** – We recommend that you provide a bonding wire/point at the rack position so that your electrician can bond the racks during installation which will be validated by the AWS-certified technician.
 + **Facility access** – You will not change the facility in a way that negatively affects the ability of AWS to access, service, or remove the Outpost.
@@ -57,7 +57,7 @@ These are the facility requirements for network racks.
 + **Clearance** – The Outposts network racks is 80 inches (203 cm) high, 30 inches (76 cm) wide, and 48 inches (122 cm) deep.
 
   The following diagram shows the total minimum area required for the Outposts network rack, including clearance.
-![Outposts network racks top-level view of required clearance.](http://docs.aws.amazon.com/outposts/latest/network-userguide/images/outpost-rack2ndgen-network-rack-clearance.png)
+![Outposts network racks top-level view of required clearance.](https://docs.aws.amazon.com/outposts/latest/network-userguide/images/outpost-rack2ndgen-network-rack-clearance.png)
 
 ### Network connectivity requirements
 <a name="facility-networking"></a>
@@ -104,17 +104,17 @@ Provide either a single-mode fiber (SMF) with Lucent Connector (LC), multimode f
 
 In the following image, the physical demarcation is the fiber patch panel in each Outpost. You provide the fiber cables that are required to connect the Outpost to the patch panel.
 
-![Fiber cables connect the Outpost to the patch panel.](http://docs.aws.amazon.com/outposts/latest/network-userguide/images/outpost-rack2ndgen-fiber.png)
+![Fiber cables connect the Outpost to the patch panel.](https://docs.aws.amazon.com/outposts/latest/network-userguide/images/outpost-rack2ndgen-fiber.png)
 
 The following images show the networking connection topologies supported on Outposts network racks.
 
 The following image shows the four Outposts networking devices in the Outposts network rack connected to two upstream customer devices:
 
-![Four Outposts networking devices in the Outposts network rack connected to two upstream customer devices.](http://docs.aws.amazon.com/outposts/latest/network-userguide/images/outpost-rack2ndgen-connection-to-2customer-devices.png)
+![Four Outposts networking devices in the Outposts network rack connected to two upstream customer devices.](https://docs.aws.amazon.com/outposts/latest/network-userguide/images/outpost-rack2ndgen-connection-to-2customer-devices.png)
 
 The following image shows the four Outposts networking devices in the Outposts network rack connected to four upstream customer devices:
 
-![Four Outposts networking devices in the Outposts network rack connected to four upstream customer devices.](http://docs.aws.amazon.com/outposts/latest/network-userguide/images/outpost-rack2ndgen-connection-to-4customer-devices.png)
+![Four Outposts networking devices in the Outposts network rack connected to four upstream customer devices.](https://docs.aws.amazon.com/outposts/latest/network-userguide/images/outpost-rack2ndgen-connection-to-4customer-devices.png)
 
 #### Uplink speed, ports, and fiber
 <a name="uplink-ports-fiber"></a>

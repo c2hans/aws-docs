@@ -43,7 +43,7 @@ Define a process for handing off the workloads to the Cloud Ops team when the hy
 
 The following image shows an example of a hypercare process and the teams involved. Communications are built into this process to facilitate tasks and transfer ownership. After cutover, the application owner validates the migration was successful. They then notify the migration team and also communicate any concerns or issues that arise during the hypercare period directly to the migration team. When the hypercare period is complete, the migration team reviews the handoff checklist with the Cloud Ops team. The Cloud Ops team emails the application owners and other stakeholders to notify them that the hypercare period is complete. Application owners can then use the organization's service desk system to request ongoing support for the application.
 
-![Workflow diagram of tasks and task owners during the cutover, hypercare, and ongoing support periods.](http://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-intro-governance/images/guide-img/0ce37e8e-2c4b-4da7-ad35-503caa83d254/images/a6ad3981-f4c2-4dae-b08c-257db6916ee9.png)
+![Workflow diagram of tasks and task owners during the cutover, hypercare, and ongoing support periods.](https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-intro-governance/images/guide-img/0ce37e8e-2c4b-4da7-ad35-503caa83d254/images/a6ad3981-f4c2-4dae-b08c-257db6916ee9.png)
 
 ## Security
 <a name="security"></a>
@@ -57,7 +57,7 @@ In the [migration factory](https://docs.aws.amazon.com/prescriptive-guidance/lat
 
 For each wave, the portfolio workstream runs 1–2 weeks, and the migration workstream typically runs 3–4 weeks. The portfolio workstream is five waves ahead of the migration workstream, so there is always a buffer between the portfolio and migration workstreams. Throughout the implementation stage, both the portfolio team and the migration team continue to process waves, and the buffer prevents the migration workstream from running out of servers to migrate. The following is an example of a wave schedule.
 
-![Wave plan showing portfolio team preparing waves for the migration team.](http://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-intro-governance/images/guide-img/0ce37e8e-2c4b-4da7-ad35-503caa83d254/images/a9af9dc5-c35b-49ba-99b2-e068fa4dda3e.png)
+![Wave plan showing portfolio team preparing waves for the migration team.](https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-intro-governance/images/guide-img/0ce37e8e-2c4b-4da7-ad35-503caa83d254/images/a9af9dc5-c35b-49ba-99b2-e068fa4dda3e.png)
 
 The portfolio team prioritizes applications and then assigns them to waves in logical move groups. When planning waves, the portfolio team considers migration complexity, application similarities, and application and infrastructure dependencies. This helps make sure that the applications and their dependencies are migrated in their entirety. For more information about wave planning, see the [Portfolio playbook for AWS large migrations](https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-portfolio-playbook/welcome.html). For project governance, you manage and track information about the waves and sprints, including the applications, servers, and application owners. You might use a dashboard on a Confluence site, a list in Microsoft Excel, or a combination of tools.
 

@@ -58,8 +58,8 @@ This automated AWS CloudFormation template deploys the *Centralized Logging with
 
 |  | Launch in AWS Management Console | Download Template |
 | --- | --- | --- |
-| AWS Standard Regions |  [![Launch solution](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image17.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?templateURL=https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/ConfigLog.template)  |  [Template](https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/ConfigLog.template)  |
-| AWS China Regions |  [![Launch solution](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image17.png)](https://console.amazonaws.cn/cloudformation/home#/stacks/new?templateURL=https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/ConfigLog.template)  |  [Template](https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/ConfigLog.template)  |
+| AWS Standard Regions |  [![Launch solution](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image17.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?templateURL=https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/ConfigLog.template)  |  [Template](https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/ConfigLog.template)  |
+| AWS China Regions |  [![Launch solution](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image17.png)](https://console.amazonaws.cn/cloudformation/home#/stacks/new?templateURL=https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/ConfigLog.template)  |  [Template](https://solutions-reference.s3.amazonaws.com/centralized-logging-with-opensearch/latest/ConfigLog.template)  |
 
 1. Log in to the AWS Management Console and select the preceding button to launch the AWS CloudFormation template. You can also download the template as a starting point for your own implementation.
 
@@ -109,4 +109,4 @@ You can access the built-in dashboard in Amazon OpenSearch Service to view log d
 
  **AWS Config logs sample dashboard.**
 
-![image46](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image46.png)
+![image46](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image46.png)

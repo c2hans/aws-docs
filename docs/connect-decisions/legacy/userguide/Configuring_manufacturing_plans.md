@@ -108,7 +108,7 @@ You can view the overall manufacturing plan for your organization.
 1. Choose **Export** to download the *Material Plans*, *Production Plans*, or *Transfer Plans* to your Amazon S3 bucket.
 
 1. Choose the **Plan Overview** tab.
-![Manufacturing Plan overview](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/manufacturing_plan_overview.png)
+![Manufacturing Plan overview](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/manufacturing_plan_overview.png)
    + **Plan Summary** – Displays the overall manufacturing plan.
 **Note**
 Plan Summary metrics will not be available for new users. You can view the Plan Summary metrics after the next supply planning cycle.
@@ -139,7 +139,7 @@ You can view the overall manufacturing plan for your organization.
 1. Choose the **Plan Outputs** tab.
 
    Choose **Filters** to filter the list based on Products or Sites.
-![Manufacturing Plan outputs](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/manufacturing_plan_outputs.png)
+![Manufacturing Plan outputs](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/manufacturing_plan_outputs.png)
    + **Material Plan** – Displays the overall material plan for end components from the supply plan generated.
    + **Transfer Plan** – Displays the overall transfer plan for any materials or finished goods between sites from the supply plan generated.
    + **Production Plan** – Displays the overall production plan for finished goods from the supply plan generated.
@@ -149,7 +149,7 @@ You can view the overall manufacturing plan for your organization.
 1. Under **Item**, choose the **Supply Plan Details** for the selected item.
 
    The **Supply Plan Details** page appears.
-![Viewing the supply Plan details](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/supply_plan_details.png)
+![Viewing the supply Plan details](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/supply_plan_details.png)
 
    The **Supply Plan Details** section displays item details and attributes. Choose **View all attributes** to view all the attributes of an item.
 

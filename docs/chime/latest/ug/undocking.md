@@ -14,7 +14,7 @@ At least one meeting attendee must have their camera on in order to undock video
 
 **To undock video tiles**
 
-1. On the left toolbar, open the **Media layout** menu (![An icon showing a stylized app window with three panels.](http://docs.aws.amazon.com/chime/latest/ug/images/left-control-5.png)).
+1. On the left toolbar, open the **Media layout** menu (![An icon showing a stylized app window with three panels.](https://docs.aws.amazon.com/chime/latest/ug/images/left-control-5.png)).
 
 1. Choose **Undock video from meeting window**.
 
@@ -22,6 +22,6 @@ At least one meeting attendee must have their camera on in order to undock video
 
 **To dock video tiles**
 
-1. On the left toolbar, open the **Media layout** menu (![An icon showing a stylized app window with three panels.](http://docs.aws.amazon.com/chime/latest/ug/images/left-control-5.png)).
+1. On the left toolbar, open the **Media layout** menu (![An icon showing a stylized app window with three panels.](https://docs.aws.amazon.com/chime/latest/ug/images/left-control-5.png)).
 
 1. Choose **Dock video to meeting window**.

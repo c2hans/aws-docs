@@ -48,7 +48,7 @@ Secret resources always include the `AWSCURRENT` staging label, and they can opt
 
 In the AWS IoT Greengrass console, you create and manage secret resources from the **Secrets** tab on the group's **Resources** page. For tutorials that create a secret resource and add it to a group, see [How to create a secret resource (console)](secrets-console.md) and [Getting started with Greengrass connectors (console)](connectors-console.md).
 
-![A secret resource on the Secret tab on the Resources page.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/connectors/secret-resource-twilio-auth-token.png)
+![A secret resource on the Secret tab on the Resources page.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/connectors/secret-resource-twilio-auth-token.png)
 
 **Note**
 Alternatively, the console allows you to create a secret and secret resource when you configure a connector or Lambda function. You can do this from the connector's **Configure parameters** page or the Lambda function's **Resources** page.

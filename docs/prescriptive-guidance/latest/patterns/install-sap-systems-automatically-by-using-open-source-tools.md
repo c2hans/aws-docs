@@ -53,7 +53,7 @@ The example code provided in this pattern works for both high-availability (HA) 
 
 The following diagram shows an example workflow that uses open-source tools to automate SAP systems installation in an AWS account:
 
-![Example workflow uses open-source tools to automate SAP systems installation in an AWS account.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/aaf11dac-38cc-4e89-be86-51d4409cf238/images/d7902f9d-f1be-461f-b69b-cf3c663c8f2f.png)
+![Example workflow uses open-source tools to automate SAP systems installation in an AWS account.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/aaf11dac-38cc-4e89-be86-51d4409cf238/images/d7902f9d-f1be-461f-b69b-cf3c663c8f2f.png)
 
 The diagram shows the following workflow:
 

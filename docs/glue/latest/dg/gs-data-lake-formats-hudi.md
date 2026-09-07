@@ -17,7 +17,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/gs-data-lake-formats-hudi
 1.  In the **Data source properties** tab, choose a database and table.
 
 1.  AWS Glue Studio displays the format type as Apache Hudi and the Amazon S3 URL.
-![The screenshot shows the data source properties tab for the Data Catalog source node.](http://docs.aws.amazon.com/glue/latest/dg/images/data_lake_formats_data_catalog_hudi.png)
+![The screenshot shows the data source properties tab for the Data Catalog source node.](https://docs.aws.amazon.com/glue/latest/dg/images/data_lake_formats_data_catalog_hudi.png)
 
 ## Using Hudi framework in Amazon S3 data sources
 <a name="gs-data-lake-formats-hudi-source-s3.title"></a>
@@ -40,7 +40,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/gs-data-lake-formats-hudi
 1.  Click **Infer schema**. You can then view the output schema by clicking on the **Output schema** tab.
 
 1.  Choose **Additional options** to enter a key-value pair.
-![The screenshot shows the Additional options section in the Data source properties tab for an Amazon S3 data source node.](http://docs.aws.amazon.com/glue/latest/dg/images/data_lake_formats_additional_options.png)
+![The screenshot shows the Additional options section in the Data source properties tab for an Amazon S3 data source node.](https://docs.aws.amazon.com/glue/latest/dg/images/data_lake_formats_additional_options.png)
 
 ## Using Apache Hudi framework in data targets
 <a name="gs-data-lake-formats-hudi-target"></a>
@@ -59,7 +59,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/gs-data-lake-formats-hudi
 
  Enter values or select from the available options to configure Apache Hudi format. For more information on Apache Hudi, see [Apache Hudi documentation](https://hudi.apache.org/docs/overview).
 
-![The screenshot shows the Additional options section in the Data source properties tab for an Amazon S3 data source node.](http://docs.aws.amazon.com/glue/latest/dg/images/hudi_s3_target_properties.png)
+![The screenshot shows the Additional options section in the Data source properties tab for an Amazon S3 data source node.](https://docs.aws.amazon.com/glue/latest/dg/images/hudi_s3_target_properties.png)
 
 +  **Hudi Table Name** — this is the name of your hudi table.
 +  **Hudi Storage Type** — choose from two options:

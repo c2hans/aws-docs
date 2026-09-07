@@ -48,7 +48,7 @@ Users upload meeting transcripts through a Streamlit web interface, and the syst
 
 The solution deploys a multi-agent AI system using Strands Agents SDK on AWS Fargate with the following architecture :
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/dfd870ca-7a7d-48cc-a62a-b14c8c3c7bb6/images/8f9c0497-153f-4361-80cd-791dc0fec8c5.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/dfd870ca-7a7d-48cc-a62a-b14c8c3c7bb6/images/8f9c0497-153f-4361-80cd-791dc0fec8c5.png)
 
 1. Users upload meeting transcripts through a Streamlit web application hosted locally or on a remote server.
 
@@ -228,7 +228,7 @@ The solution orchestrates meeting processing through four specialized agents tha
 
 **UI Integration & Outputs**
 + Streamlit UI shows backend connection, transcript input area, and Generate Minutes after uploading meeting transcript through** S3 Pre-signed URL** to initiate jobs.
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/dfd870ca-7a7d-48cc-a62a-b14c8c3c7bb6/images/f608a187-91bf-4524-a849-907eb5efb182.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/dfd870ca-7a7d-48cc-a62a-b14c8c3c7bb6/images/f608a187-91bf-4524-a849-907eb5efb182.png)
 + Once processing completes, the structured text, audio, and PDF outputs are made available for download via **Pre-signed S3 URL**s, accessible through clickable buttons in the UI.
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/dfd870ca-7a7d-48cc-a62a-b14c8c3c7bb6/images/b4fa32f4-32c3-43ae-b140-0f6a58ebe245.png)
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/dfd870ca-7a7d-48cc-a62a-b14c8c3c7bb6/images/eb878259-f90e-4d9f-8a4d-42627d04bdd1.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/dfd870ca-7a7d-48cc-a62a-b14c8c3c7bb6/images/b4fa32f4-32c3-43ae-b140-0f6a58ebe245.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/dfd870ca-7a7d-48cc-a62a-b14c8c3c7bb6/images/eb878259-f90e-4d9f-8a4d-42627d04bdd1.png)

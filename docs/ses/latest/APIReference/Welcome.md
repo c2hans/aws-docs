@@ -16,4 +16,4 @@ This documentation contains reference information related to the following:
 +  [Common Parameters](https://docs.aws.amazon.com/ses/latest/APIReference/CommonParameters.html)
 +  [Common Errors](https://docs.aws.amazon.com/ses/latest/APIReference/CommonErrors.html)
 
-This document was last published on September 4, 2026.
+This document was last published on September 7, 2026.

@@ -242,7 +242,7 @@ The SSID and password should be enclosed in double quotes.
    ```
 
    Make sure you get the same output as shown in the following example.
-![Command terminal output showing FreeRTOS build configuration details for a Marvell mw300_rd wireless microcontroller board.](http://docs.aws.amazon.com/freertos/latest/userguide/images/mw32x-build-demo-app1.png)
+![Command terminal output showing FreeRTOS build configuration details for a Marvell mw300_rd wireless microcontroller board.](https://docs.aws.amazon.com/freertos/latest/userguide/images/mw32x-build-demo-app1.png)
 
 1. Navigate to the build directory.
 
@@ -257,7 +257,7 @@ The SSID and password should be enclosed in double quotes.
    ```
 
    Make sure you get the same output as shown in the following figure:
-![Terminal output showing the build process of C object files and linking into a static library and executable for AWS demos.](http://docs.aws.amazon.com/freertos/latest/userguide/images/mw32x-build-demo-app2.png)
+![Terminal output showing the build process of C object files and linking into a static library and executable for AWS demos.](https://docs.aws.amazon.com/freertos/latest/userguide/images/mw32x-build-demo-app2.png)
 
 1. Use the following commands to build a test application.
 
@@ -281,7 +281,7 @@ The SSID and password should be enclosed in double quotes.
       The `flashprog` command initiates the following:
       + Layout – The flashprog utility is first instructed to write a layout to the flash. The layout is similar to partition information for the flash. The default layout is located at `/lib/third_party/mcu_vendor/marvell/WMSDK/mw320/sdk/tools/OpenOCD/mw300/layout.txt`.
       + Boot2 – This is the boot-loader used by the WMSDK. The `flashprog` command also writes a bootloader to the flash. It's the bootloader's job to load the microcontroller's firmware image after it's flashed. Make sure you get the same output as shown in the figure below.
-![Output of the command to flash Layout and boot2 elements.](http://docs.aws.amazon.com/freertos/latest/userguide/images/mw32x-output-flash-layout.png)
+![Output of the command to flash Layout and boot2 elements.](https://docs.aws.amazon.com/freertos/latest/userguide/images/mw32x-output-flash-layout.png)
 
    1. The firmware uses the Wi-Fi chipset for its functionality, and the Wi-Fi chipset has its own firmware that must also be present in the flash. You use the `flashprog.py` utility to flash the Wi-Fi firmware in the same way that you did to flash the Boot2 boot-loader and the MCU firmware. Use the following commands to flash the Wi-Fi firmware.
 
@@ -291,7 +291,7 @@ The SSID and password should be enclosed in double quotes.
       ```
 
       Make sure the output of the command is similar to the figure below.
-![Flashing the Wi-Fi firmware](http://docs.aws.amazon.com/freertos/latest/userguide/images/mw32x-flash-wifi-firmware.png)
+![Flashing the Wi-Fi firmware](https://docs.aws.amazon.com/freertos/latest/userguide/images/mw32x-flash-wifi-firmware.png)
 
    1.  Use the following commands to flash the MCU firmware.
 
@@ -310,10 +310,10 @@ The SSID and password should be enclosed in double quotes.
       ```
 
       Your command output should be similar to the one shown in the figure below.
-![Flashing the MCU Firmware](http://docs.aws.amazon.com/freertos/latest/userguide/images/mw32x-flash-mcu-firmware.png)
+![Flashing the MCU Firmware](https://docs.aws.amazon.com/freertos/latest/userguide/images/mw32x-flash-mcu-firmware.png)
 
 1. After you flash the firmware and reset the board, the demo app should start as shown in the figure below.
-![Demo App Start](http://docs.aws.amazon.com/freertos/latest/userguide/images/mw32x-demo-app-start.png)
+![Demo App Start](https://docs.aws.amazon.com/freertos/latest/userguide/images/mw32x-demo-app-start.png)
 
 1. (Optional) As an alternative method to test your image, use the flashprog utility to copy the microcontroller image from the host directly into the microcontroller RAM. The image isn't copied in the flash, so it will be lost after you reboot the microcontroller.
 
@@ -327,7 +327,7 @@ The SSID and password should be enclosed in double quotes.
    ```
 
    The command output is shown in the figure below.
-![Loading the firmware image into the SRAM](http://docs.aws.amazon.com/freertos/latest/userguide/images/mw32x-load-firmware-sram.png)
+![Loading the firmware image into the SRAM](https://docs.aws.amazon.com/freertos/latest/userguide/images/mw32x-load-firmware-sram.png)
 
    When the command execution is complete, you should see the logs of the demo app.
 
@@ -350,16 +350,16 @@ The SSID and password should be enclosed in double quotes.
 Run the `cmake` command every time you switch between the `aws_demos` project and the `aws_tests` project.
 
 1. Open Eclipse and, when prompted, choose your Eclipse workspace as shown in the figure below.
-![Selecting the Eclipse workspace](http://docs.aws.amazon.com/freertos/latest/userguide/images/mw32x-select-eclipse-workspace.png)
+![Selecting the Eclipse workspace](https://docs.aws.amazon.com/freertos/latest/userguide/images/mw32x-select-eclipse-workspace.png)
 
 1. Choose the option to create a **Makefile Project: with Existing Code** as shown in the figure below.
-![Creating a Makefile project with existing code](http://docs.aws.amazon.com/freertos/latest/userguide/images/mw32x-create-makefile-project.png)
+![Creating a Makefile project with existing code](https://docs.aws.amazon.com/freertos/latest/userguide/images/mw32x-create-makefile-project.png)
 
 1. Choose **Browse**, specify the directory of the existing code, and then choose **Finish**.
-![Browsing to locate the existing code](http://docs.aws.amazon.com/freertos/latest/userguide/images/mw32x-locate-existing-code.png)
+![Browsing to locate the existing code](https://docs.aws.amazon.com/freertos/latest/userguide/images/mw32x-locate-existing-code.png)
 
 1. In the navigation pane, choose **aws\_demos** in the project explorer. Right-click **aws\_demos** to open the menu, then choose **Build**.
-![Building the aws_demos project](http://docs.aws.amazon.com/freertos/latest/userguide/images/mw32x-building-aws_demos.png)
+![Building the aws_demos project](https://docs.aws.amazon.com/freertos/latest/userguide/images/mw32x-building-aws_demos.png)
 
    If the build succeeds, it generates the `build/cmake/vendors/marvell/mw300_rd/aws_demos.bin` file.
 
@@ -375,7 +375,7 @@ Run the `cmake` command every time you switch between the `aws_demos` project an
       The `flashprog` command initiates the following:
       + Layout – The flashprog utility is first instructed to write a layout to the flash. The layout is similar to partition information for the flash. The default layout is located at `/lib/third_party/mcu_vendor/marvell/WMSDK/mw320/sdk/tools/OpenOCD/mw300/layout.txt`.
       + Boot2 – This is the boot-loader used by the WMSDK. The flashprog command also writes a bootloader to the flash. It is the bootloader's job to load the microcontroller's firmware image after it is flashed. Make sure you get the same output as shown in the figure below.
-![Output of the command to flash Layout and boot2 elements](http://docs.aws.amazon.com/freertos/latest/userguide/images/mw32x-output-flash-layout.png)
+![Output of the command to flash Layout and boot2 elements](https://docs.aws.amazon.com/freertos/latest/userguide/images/mw32x-output-flash-layout.png)
 
    1. The firmware uses the Wi-Fi chipset for its functionality, and the Wi-Fi chipset has its own firmware that must also be present in the flash. You use the `flashprog.py` utility to flash the Wi-Fi firmware in the same way that you did to flash the boot2 boot-loader and the MCU firmware. Use the following commands to flash the Wi-Fi firmware.
 
@@ -385,7 +385,7 @@ Run the `cmake` command every time you switch between the `aws_demos` project an
       ```
 
       Make sure the output of the command is similar to the figure below.
-![Flashing the Wi-Fi firmware](http://docs.aws.amazon.com/freertos/latest/userguide/images/mw32x-flash-wifi-firmware.png)
+![Flashing the Wi-Fi firmware](https://docs.aws.amazon.com/freertos/latest/userguide/images/mw32x-flash-wifi-firmware.png)
 
    1.  Use the following commands to flash the MCU firmware.
 
@@ -404,12 +404,12 @@ Run the `cmake` command every time you switch between the `aws_demos` project an
       ```
 
       Your command output should be similar to the one shown in the figure below.
-![Flashing the MCU Firmware](http://docs.aws.amazon.com/freertos/latest/userguide/images/mw32x-flash-mcu-firmware.png)
+![Flashing the MCU Firmware](https://docs.aws.amazon.com/freertos/latest/userguide/images/mw32x-flash-mcu-firmware.png)
 
 ## Debugging
 <a name="gsg-mw32x-debugging"></a>
 + Start Eclipse and choose **Help** and then choose **Install new software**. In the **Work with** menu, choose **All Available Sites**. Enter the filter text `GDB Hardware`. Select the **C/C\+\+ GDB Hardware Debugging** option and install the plugin.
-![Screenshot of Install window in software interface, showing GDB Hardware Debugging item selected for installation under gdb hardware category.](http://docs.aws.amazon.com/freertos/latest/userguide/images/mw32x-debugging.png)
+![Screenshot of Install window in software interface, showing GDB Hardware Debugging item selected for installation under gdb hardware category.](https://docs.aws.amazon.com/freertos/latest/userguide/images/mw32x-debugging.png)
 
 ## Troubleshooting
 <a name="gsg-mw32x-troubleshooting"></a>

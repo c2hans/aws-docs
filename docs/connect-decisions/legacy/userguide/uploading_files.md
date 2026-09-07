@@ -31,7 +31,7 @@ Auto-association using the Large Language Models (LLM) is only supported when da
 1. On the **Select your data source** page, choose **Upload files**.
 
 1. Choose **Continue**.
-![Uploading your source files](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/data_lake.png)
+![Uploading your source files](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/data_lake.png)
 
 1. On the **Which capabilities do you want to run** page, choose the AWS Supply Chain modules that you want to use. You can choose more than one module.
 
@@ -50,12 +50,12 @@ Auto-association using the Large Language Models (LLM) is only supported when da
 1. Under **Manage your source tables**, the following source tables and the columns listed will be auto associated and imported into data lake.
 
    Choose **Delete table** to delete any of the source tables before importing into data lake.
-![Managing your source files](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/data_lake1.png)
+![Managing your source files](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/data_lake1.png)
 
 1. Choose **Accept all and Continue**.
 
    A message on auto-associating your tables to AWS Supply Chain data lake is displayed.
-![Managing destination flows](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/data_lake3.png)
+![Managing destination flows](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/data_lake3.png)
 
 1. Under **Manage Destination Flows**, you can review each auto-associated table.
 

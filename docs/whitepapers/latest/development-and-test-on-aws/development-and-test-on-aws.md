@@ -37,7 +37,7 @@ Publication date: **June 29, 2021** ([Document revisions](document-revisions.md)
 
  The software lifecycle typically consists of the following main elements:
 
-![A diagram showing the elements of the software lifecycle.](http://docs.aws.amazon.com/whitepapers/latest/development-and-test-on-aws/images/software-lifecycle.png)
+![A diagram showing the elements of the software lifecycle.](https://docs.aws.amazon.com/whitepapers/latest/development-and-test-on-aws/images/software-lifecycle.png)
 
  This whitepaper covers aspects of the development, build, and test phases. For each of these phases, you need different types of IT infrastructure. AWS provides multiple benefits to software development teams. AWS offers on-demand access to a wide range of cloud infrastructure services, charging only for the resources that are used.
 

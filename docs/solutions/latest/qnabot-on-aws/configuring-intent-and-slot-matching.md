@@ -46,7 +46,7 @@ For each slot, provide the slot type and one or more prompts that Amazon Lex V2 
 
  **Intent and slot configuration**
 
-![image19](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image19.png)
+![image19](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image19.png)
 
 Additional **Slots** attributes:
 +  **Cache slot value for re-use during a session**? The slot value can be stored in session variables and accessed via **qnabotcontext.slots.slotName**. When a slot value is stored in a session attribute, it is used automatically as the value for other slots with the same name without reprompting the user. This can be beneficial when you are capturing a user’s profile information to support different conversational workflows, and don’t want to ask the same profile information again from the user.
@@ -60,7 +60,7 @@ In addition to using built-in slot types, you can also create custom slot types.
 +  **Slot value resolution** - Determines how slot values are resolved. If you don’t choose `Restrict to` slot values, Amazon Lex V2 uses the values as representative values for training. If you choose `Restrict to` slot values, the allowed values for the slot are restricted to the ones that you provide.
 
    **Creating a custom slot type**
-![image20](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image20.png)
+![image20](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image20.png)
 
 ## Accessing slot values
 <a name="accessing-slot-values"></a>

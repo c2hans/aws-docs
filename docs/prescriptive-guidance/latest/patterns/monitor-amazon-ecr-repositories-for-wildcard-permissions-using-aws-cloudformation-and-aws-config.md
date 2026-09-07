@@ -34,7 +34,7 @@ However, you must make sure that the `ecr:*` wildcard permission is not used in 
 
 The following diagram shows how AWS Config evaluates Amazon ECR repository policy statements.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/01bbf5f8-27aa-4c64-9a03-7fcccc0955b8/images/49bbf14b-0a18-4d4a-86ab-162d37708e01.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/01bbf5f8-27aa-4c64-9a03-7fcccc0955b8/images/49bbf14b-0a18-4d4a-86ab-162d37708e01.png)
 
 The diagram shows the following workflow:
 

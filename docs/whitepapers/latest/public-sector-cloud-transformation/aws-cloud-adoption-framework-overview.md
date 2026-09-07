@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/public-sector-cloud-t
 +  **Realize Value** — Recognize and measure incremental business value and iterate to deliver against plans. Continually evaluate your cloud strategy to align with envisioned outcomes and identify additional cloud projects to realize ongoing value.
 
    The AWS CAF organizes guidance into six areas of focus, called *perspectives*. Each perspective is used to create workstreams that uncover gaps in your existing skills and processes, which are recorded as inputs. These perspectives cover distinct responsibilities owned or managed by functionally related stakeholders. In general, the Business, People, and Governance perspectives focus on business capabilities, while the Platform, Security, and Operations perspectives focus on technical capabilities.
-![A diagram showing AWS CAF perspectives.](http://docs.aws.amazon.com/whitepapers/latest/public-sector-cloud-transformation/images/cloud-transformation3.png)
+![A diagram showing AWS CAF perspectives.](https://docs.aws.amazon.com/whitepapers/latest/public-sector-cloud-transformation/images/cloud-transformation3.png)
 
 * AWS CAF perspectives *
 

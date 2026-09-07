@@ -11,7 +11,7 @@ To use these models, we can turn to services such as [Amazon Bedrock](https://do
 
 Although LLMs excel at capturing patterns and generating coherent text, they often lack access to up-to-date or specialized information. RAG combines the generative power of LLMs with a retrieval component that can access and incorporate relevant information from external sources, as part of the materialized LLM prompt. Examples of external sources include [Knowledge Bases](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html) for Amazon Bedrock, intelligent search systems such as [Amazon Kendra](https://docs.aws.amazon.com/kendra/latest/dg/what-is-kendra.html), or vector databases such as [Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/what-is.html).
 
-![The workflow of how a RAG-based application answers a user's query.](http://docs.aws.amazon.com/prescriptive-guidance/latest/writing-best-practices-rag/images/guide-img/287ab470-c0b9-440f-83c9-fae640906b4c/images/be62a373-43d0-461b-90c3-87e5a6f770ec.png)
+![The workflow of how a RAG-based application answers a user's query.](https://docs.aws.amazon.com/prescriptive-guidance/latest/writing-best-practices-rag/images/guide-img/287ab470-c0b9-440f-83c9-fae640906b4c/images/be62a373-43d0-461b-90c3-87e5a6f770ec.png)
 
 The diagram describes the following workflow:
 

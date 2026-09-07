@@ -16,7 +16,7 @@ This whitepaper describes best practices for creating scalable and secure networ
 
 AWS customers begin by building resources in a single AWS account that represents a management boundary which segments permissions, costs, and services. However, as the customer’s organization grows, greater segmentation of services becomes necessary to monitor costs, control access, and provide easier environmental management. A multi-account solution solves these issues by providing specific accounts for IT services and users within an organization. AWS provides several tools to manage and configure this infrastructure, including [AWS Control Tower](https://aws.amazon.com/controltower/).
 
-![A diagram depicting AWS Control Tower initial deployment](http://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/control-tower-deployment.png)
+![A diagram depicting AWS Control Tower initial deployment](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/control-tower-deployment.png)
 
 When you set up your multi-account environment using AWS Control Tower, it creates two Organizational Units (OUs):
 + **Security OU** – Within this OU, AWS Control Tower creates two accounts:
@@ -28,7 +28,7 @@ When you set up your multi-account environment using AWS Control Tower, it creat
 
  The following diagram shows the OUs initially deployed by AWS Control Tower. You can expand your AWS environment to implement any of the recommended OUs included in the diagram, to meet your requirements.
 
-![A diagram depicting AWS organizational OUs.](http://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/organization-ous.png)
+![A diagram depicting AWS organizational OUs.](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/organization-ous.png)
 
 For further details on multi-account environment using AWS Control Tower, refer to [*Appendix E*](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/appendix-e-establish-multi-account.html) in the *Organizing Your AWS Environment Using Multiple Accounts* whitepaper.
 

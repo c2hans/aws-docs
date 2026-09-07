@@ -55,7 +55,7 @@ Once the checks are completed, the script will return a final result for each se
 
  **Script final result**
 
-![script final result](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/script-final-result.png)
+![script final result](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/script-final-result.png)
 
 If the server failed one or more prerequisites checks, you can identify the faulty server by either reviewing the detailed error message provided at the completion of the check or by scrolling through the log details.
 
@@ -90,7 +90,7 @@ The installation starts on the Windows, then proceeds to the Linux for each AWS 
 
  **Install replication agents**
 
-![install replication agents](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/install-replication-agents.png)
+![install replication agents](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/install-replication-agents.png)
 
 **Note**
 You might get a security warning like the following when the PowerShell script is not trusted. Run the following command in PowerShell to resolve the issue:
@@ -103,7 +103,7 @@ Results are displayed after the script finishes installing the replication agent
 
  **Agent install result**
 
-![install agent result](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/install-agent-result.png)
+![install agent result](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/install-agent-result.png)
 
 The script also provides the migration status in the Migration Factory web interface as shown in the following screenshot of an example project.
 
@@ -158,7 +158,7 @@ The following screenshot of an example wave shows that all servers in the curren
 
  **Agent install result**
 
-![replication status](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/replication-status.png)
+![replication status](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/replication-status.png)
 
 Optionally, you can verify status in the **Migration Factory** web interface.
 

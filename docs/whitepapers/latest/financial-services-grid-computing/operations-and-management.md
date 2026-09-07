@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/financial-services-gr
 
  By architecting HPC systems for multiple AWS Availability Zones, financial services you can benefit from high levels of resiliency and utilization. In the unlikely event of the loss of an Availability Zone, additional instances can be automatically provisioned in the remaining Availability Zones to enable workloads to continue without any loss of data and only a brief interruption in service.
 
-![Diagram showing a sample HPC architecture for a Multi-AZ deployment](http://docs.aws.amazon.com/whitepapers/latest/financial-services-grid-computing/images/multi-az-hpc-architecture.png)
+![Diagram showing a sample HPC architecture for a Multi-AZ deployment](https://docs.aws.amazon.com/whitepapers/latest/financial-services-grid-computing/images/multi-az-hpc-architecture.png)
 
  The high-level architecture in the preceding figure shows the use of multiple Availability Zones and separate subnets for the stateful scheduler infrastructure (including schedulers, brokers, data stores) and the compute instances. You can base your scheduler instances on long-running instances (procured with a Savings Plan) with static IP addresses to help them communicate with on-premises infrastructure by simplifying firewall rules.
 
@@ -21,7 +21,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/financial-services-gr
 
  With the Compute Instances being inherently ephemeral and with potentially limited connectivity needs, it can be beneficial to have them sit within separate private address ranges to avoid the need for you to manage demand for and allocate IPs from your own pools. This can be a significant benefit to organizations that might not want to allocate large IPv4 address ranges to an HPC platform that can scale to many thousands of instances. This can be achieved either through a [secondary CIDR on the VPC](https://docs.aws.amazon.com/vpc/latest/userguide/working-with-vpcs.html#add-ipv4-cidr), or with a separate VPC for the compute infrastructure, connected through [VPC peering](https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html).
 
-![An example network architecture using AWS Direct Connect for private connectivity and a combination of Public/Routable and Private/Non-routable subnets](http://docs.aws.amazon.com/whitepapers/latest/financial-services-grid-computing/images/direct-connect-private-connectivity.png)
+![An example network architecture using AWS Direct Connect for private connectivity and a combination of Public/Routable and Private/Non-routable subnets](https://docs.aws.amazon.com/whitepapers/latest/financial-services-grid-computing/images/direct-connect-private-connectivity.png)
 
  The majority of AWS services relevant to financial services customers are accessible from within the VPC using [AWS PrivateLink](https://docs.aws.amazon.com/vpc/latest/privatelink/integrated-services-vpce-list.html), which offers private connectivity to those services, and services hosted by other AWS accounts and supported AWS Marketplace partner solutions. Traffic between your VPC and the service does not leave the Amazon network and is not exposed to the public internet.
 

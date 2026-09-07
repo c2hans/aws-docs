@@ -15,7 +15,7 @@ Amazon EMR on EKS enables your team to collaborate more efficiently and process 
 
 The following diagram shows the two different deployment models for Amazon EMR.
 
-![Amazon EMR deployment options](http://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/images/emr-on-eks-deployment.png)
+![Amazon EMR deployment options](https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/images/emr-on-eks-deployment.png)
 
 **Topics**
 + [Architecture for Amazon EMR on EKS](emr-eks-overview.md)

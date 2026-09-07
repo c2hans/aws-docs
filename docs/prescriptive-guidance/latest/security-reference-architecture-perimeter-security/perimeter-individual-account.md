@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 
 The following diagram illustrates the architecture pattern where the perimeter services are deployed and managed independently in individual Application accounts.
 
-![Deploying perimeter services into individual Application accounts.](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-perimeter-security/images/guide-img/36fc75a2-a16a-4cf6-bea6-724dfeddb825/images/3d839907-7ccf-4461-976d-695e5de9cb39.png)
+![Deploying perimeter services into individual Application accounts.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-perimeter-security/images/guide-img/36fc75a2-a16a-4cf6-bea6-724dfeddb825/images/3d839907-7ccf-4461-976d-695e5de9cb39.png)
 
 There are several benefits of deploying the perimeter services into** **Application accounts:
 + This design provides the autonomy for individual workload accounts to customize service configurations based on their needs. This approach removes the dependency on a specialized team to implement changes to resources in a shared account, and enables developers in each team to manage configurations independently.

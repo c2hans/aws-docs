@@ -81,4 +81,4 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 
  All configurations are as shown in the image below:
 
-![Attribution analysis interface with multiple dropdown menus and input fields for data analysis.](http://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/attribution.png)
+![Attribution analysis interface with multiple dropdown menus and input fields for data analysis.](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/attribution.png)

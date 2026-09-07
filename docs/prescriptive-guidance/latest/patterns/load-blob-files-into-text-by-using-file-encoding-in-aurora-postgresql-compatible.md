@@ -63,7 +63,7 @@ Amazon Linux 2 is nearing end of support. For more information, see the [Amazon 
 
 From an on-premises server, a file containing an email template with multibyte characters and custom formatting is transferred to Amazon S3. The custom database function provided by this pattern uses the `aws_s3.table_import_from_s3` function with `file_encoding` to load files into the database and return query results  as the `TEXT` data type.
 
-![Four-step process from the on-premises server to the TEXT output from the Aurora database.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/cbf63cac-dcea-4e18-ab4f-c4f6296f60e7/images/9c46b385-e8a0-4e50-b856-d522c44d79e3.png)
+![Four-step process from the on-premises server to the TEXT output from the Aurora database.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/cbf63cac-dcea-4e18-ab4f-c4f6296f60e7/images/9c46b385-e8a0-4e50-b856-d522c44d79e3.png)
 
 1. Files are transferred to the staging S3 bucket.
 
@@ -77,7 +77,7 @@ From an on-premises server, a file containing an email template with multibyte c
 
 A file from an on-premises server or a local file system is converted into a hex dump. Then the file is imported into PostgreSQL as a `TEXT` field.
 
-![Three-step process using Hex dump.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/cbf63cac-dcea-4e18-ab4f-c4f6296f60e7/images/563038ca-f890-4874-85df-d0f82d99800a.png)
+![Three-step process using Hex dump.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/cbf63cac-dcea-4e18-ab4f-c4f6296f60e7/images/563038ca-f890-4874-85df-d0f82d99800a.png)
 
 1. Convert the file to a hex dump in the command line by using the `xxd -p` option.
 

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/guidance/latest/automotive-data-platform
 
 The Predictive Maintenance solution follows a multi-stage architecture that processes vehicle telemetry data through parallel prediction pipelines.
 
-![Predictive Maintenance Architecture](http://docs.aws.amazon.com/guidance/latest/automotive-data-platform-on-aws/images/predictive.png)
+![Predictive Maintenance Architecture](https://docs.aws.amazon.com/guidance/latest/automotive-data-platform-on-aws/images/predictive.png)
 
 ## High-Level Architecture
 <a name="high-level-architecture"></a>

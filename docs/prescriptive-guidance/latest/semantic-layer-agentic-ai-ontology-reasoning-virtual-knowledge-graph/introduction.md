@@ -44,7 +44,7 @@ The semantic data foundations architecture embraces **neurosymbolic AI** — the
 ### Data-Information-Knowledge-Wisdom (DIKW) Hierarchy
 <a name="data-information-knowledge-wisdom--dikw--hierarchy.a7b7acfe-5452-5668-9514-09184cbc2ae8"></a>
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/semantic-layer-agentic-ai-ontology-reasoning-virtual-knowledge-graph/images/guide-img/5cb278fc-4bbf-4e43-a830-4b4f72516d31/images/7d2f223e-a6da-429d-9f08-ceebbfdc0d3d.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/semantic-layer-agentic-ai-ontology-reasoning-virtual-knowledge-graph/images/guide-img/5cb278fc-4bbf-4e43-a830-4b4f72516d31/images/7d2f223e-a6da-429d-9f08-ceebbfdc0d3d.png)
 
 The **DIKW hierarchy** provides a conceptual framework for understanding how raw data evolves into actionable wisdom - a progression that inspired the layered architecture of the Semantic Layer for Agentic AI. While the architecture aligns closely with DIKW's four tiers, it extends the framework with an Intelligence tier that addresses enterprise requirements for continuous self-assessment and semantic evolution.
 

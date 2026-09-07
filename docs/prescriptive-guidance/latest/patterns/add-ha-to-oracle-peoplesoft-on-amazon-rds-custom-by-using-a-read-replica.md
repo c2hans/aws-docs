@@ -51,7 +51,7 @@ Using a replica in read-only mode requires the [Oracle Active Data Guard](https:
 
 The following diagram shows an Amazon RDS Custom DB instance and an Amazon RDS Custom read replica. The read replica uses Oracle Active Data Guard to replicate to another Availability Zone. You can also use the read replica to offload read traffic on the primary database and for reporting purposes.
 
-![The VPC includes AWS Secrets Manager, Amazon EFS, an application tier, and the database tier.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7df4b2d0-b833-4ba3-98e4-a178db395d9d/images/463aefbe-70ad-4cd3-9ddc-0d8347e848c6.png)
+![The VPC includes AWS Secrets Manager, Amazon EFS, an application tier, and the database tier.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7df4b2d0-b833-4ba3-98e4-a178db395d9d/images/463aefbe-70ad-4cd3-9ddc-0d8347e848c6.png)
 
 For a representative architecture using Oracle PeopleSoft on AWS, see [Set up a highly available PeopleSoft architecture on AWS](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/set-up-a-highly-available-peoplesoft-architecture-on-aws.html).
 

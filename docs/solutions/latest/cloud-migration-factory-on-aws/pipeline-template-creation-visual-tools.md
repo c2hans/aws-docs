@@ -77,12 +77,12 @@ Before creating your diagram, understand these key elements that enable successf
          1. Right-click circle → Edit Data
 
              **DrawIO Shape Right-click panel**
-![create drawio right click panel](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/create-drawio-right-click-panel.png)
+![create drawio right click panel](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/create-drawio-right-click-panel.png)
 
          1. Add Data Attribute key "Start" and value (e.g., "Wave 1 Migration")
 
              **DrawIO Shape Data**
-![create drawio shape data](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/create-drawio-shape-data.png)
+![create drawio shape data](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/create-drawio-shape-data.png)
 
 1. Manual Task:
 
@@ -97,7 +97,7 @@ Before creating your diagram, understand these key elements that enable successf
       1. Add Data Attribute key "TaskType" with value "Manual"
 
           **DrawIO Manual Task Configuration**
-![create drawio manual task data](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/create-drawio-manual-task-data.png)
+![create drawio manual task data](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/create-drawio-manual-task-data.png)
 
 1. Automated task:
 
@@ -122,12 +122,12 @@ Before creating your diagram, understand these key elements that enable successf
             1. Browse or search for your desired script
 
                 **CMF Scripts List**
-![scripts list](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/scripts-list.png)
+![scripts list](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/scripts-list.png)
 
             1. Use the script name as your AutomationID in your diagram
 
                 **DrawIO Automated Task Configuration**
-![create drawio automated task data](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/create-drawio-automated-task-data.png)
+![create drawio automated task data](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/create-drawio-automated-task-data.png)
 
 1. Set template name
 
@@ -146,14 +146,14 @@ Before creating your diagram, understand these key elements that enable successf
    1. Click on "Actions" and select "Import"
 
        **Pipeline Templates Action→Import**
-![pipeline template action import](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/pipeline-template-action-import.png)
+![pipeline template action import](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/pipeline-template-action-import.png)
 
    1. Choose your saved .drawio file
 
    1. Click "Submit" to complete the import
 
        **Template Import Submit**
-![pipeline template import submit](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/pipeline-template-import-submit.png)
+![pipeline template import submit](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/pipeline-template-import-submit.png)
 
 ### After drawIO import is complete
 <a name="after-drawio-import-is-complete"></a>
@@ -166,14 +166,14 @@ Before creating your diagram, understand these key elements that enable successf
    + You’ll see a visual representation of your workflow under Visual task Editor
 
       **Pipeline Template Visual Task Editor**
-![pipeline template visual](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/pipeline-template-visual.png)
+![pipeline template visual](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/pipeline-template-visual.png)
    + Each shape from your diagram is now a task in CMF
    + Click on a task to view its details:
      + Task names correspond to the labels you gave shapes
      + For automated tasks, you’ll see the assigned AutomationID under Scripts dropdown.
 
         **Pipeline Template Task Edit**
-![pipeline template task edit](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/pipeline-template-task-edit.png)
+![pipeline template task edit](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/pipeline-template-task-edit.png)
 
 ## Creating Templates in Lucid Chart
 <a name="creating-templates-in-lucid-chart"></a>
@@ -195,7 +195,7 @@ Follow these steps to create pipeline templates using Lucid Chart:
       1. Add Data Attribute key "Start" and value (e.g., "Rehost Servers")
 
           **Lucid Chart Start Node Configuration**
-![create lucid data tab](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/create-lucid-data-tab.png)
+![create lucid data tab](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/create-lucid-data-tab.png)
 
 1. Add Manual Tasks
 
@@ -212,7 +212,7 @@ Follow these steps to create pipeline templates using Lucid Chart:
       1. Add Data Attribute key "TaskType" with value "Manual"
 
           **Lucid Chart Manual Task Configuration**
-![create lucid manual task data](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/create-lucid-manual-task-data.png)
+![create lucid manual task data](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/create-lucid-manual-task-data.png)
 
 1. Add Automated Tasks
 
@@ -239,12 +239,12 @@ Follow these steps to create pipeline templates using Lucid Chart:
             1. Browse or search for your desired script
 
                 **CMF Scripts List**
-![create drawio scripts list](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/create-drawio-scripts-list.png)
+![create drawio scripts list](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/create-drawio-scripts-list.png)
 
             1. Use the script name as your AutomationID in your diagram
 
                 **Lucid Chart Automated Task Configuration**
-![create lucid automated task data](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/create-lucid-automated-task-data.png)
+![create lucid automated task data](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/create-lucid-automated-task-data.png)
 
 1. Set template name
 
@@ -263,14 +263,14 @@ Follow these steps to create pipeline templates using Lucid Chart:
    1. Click on "Actions" and select "Import"
 
        **Pipeline Templates Action→Import**
-![pipeline template action import](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/pipeline-template-action-import.png)
+![pipeline template action import](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/pipeline-template-action-import.png)
 
    1. Choose your saved lucid file
 
    1. Click "Submit" to complete the import
 
        **Template Import Submit**
-![pipeline template import submit](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/pipeline-template-import-submit.png)
+![pipeline template import submit](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/pipeline-template-import-submit.png)
 
 ### After Lucid import is complete
 <a name="after-lucid-import-is-complete"></a>
@@ -283,11 +283,11 @@ Follow these steps to create pipeline templates using Lucid Chart:
    + You’ll see a visual representation of your workflow under Visual task Editor
 
       **Pipeline Template Visual Task Editor**
-![pipeline template visual](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/pipeline-template-visual.png)
+![pipeline template visual](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/pipeline-template-visual.png)
    + Each shape from your diagram is now a task in CMF
    + Click on a task to view its details:
      + Task names correspond to the labels you gave shapes
      + For automated tasks, you’ll see the assigned AutomationID under Scripts dropdown.
 
         **Pipeline Template Task Edit**
-![pipeline template task edit](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/pipeline-template-task-edit.png)
+![pipeline template task edit](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/pipeline-template-task-edit.png)

@@ -42,7 +42,7 @@ Amazon EC2 Windows instance
 
 **Target architecture**
 
-![AWS architecture for migrating SQL Server Always On availability using AWS MGN.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/aa94040b-5ecf-42f9-90e3-929d0fa5e715/images/0b85c613-51df-475b-9598-3da3f9cd47c6.png)
+![AWS architecture for migrating SQL Server Always On availability using AWS MGN.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/aa94040b-5ecf-42f9-90e3-929d0fa5e715/images/0b85c613-51df-475b-9598-3da3f9cd47c6.png)
 
 ## Tools
 <a name="migrate-microsoft-sql-server-always-on-group-using-mgn-tools"></a>

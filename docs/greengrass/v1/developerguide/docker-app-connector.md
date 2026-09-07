@@ -180,7 +180,7 @@ Use the retrieved user name, password, and registry URL to create a secret for e
 **To create secrets (console)**
 In the AWS Secrets Manager console, choose **Other type of secrets**. Under **Specify the key-value pairs to be stored for this secret**, add rows for `username`, `password`, and `registryUrl`. For more information, see [Creating a basic secret](https://docs.aws.amazon.com/secretsmanager/latest/userguide/manage_create-basic-secret.html) in the *AWS Secrets Manager User Guide*.
 
-![Creating a secret with username, password, and registryUrl keys.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/connectors/secret-docker-trusted-registry.png)
+![Creating a secret with username, password, and registryUrl keys.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/connectors/secret-docker-trusted-registry.png)
 
 **To create secrets (CLI)**
 In the AWS CLI, use the Secrets Manager `create-secret` command, as shown in the following example. For more information, see [create-secret](https://docs.aws.amazon.com/cli/latest/reference/secretsmanager/create-secret.html) in the *AWS CLI Command Reference*.

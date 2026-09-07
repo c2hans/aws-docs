@@ -45,7 +45,7 @@ When the transport is running on one database, it doesn’t affect other databas
 ## Architecture
 <a name="transport-postgresql-databases-between-two-amazon-rds-db-instances-using-pg-transport-architecture"></a>
 
-![Transporting PostgreSQL databases between Amazon RDS DB instances](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/d5fb7ea3-32b7-4602-b382-3cf5c075c7c9/images/aec4d8d2-37a8-4136-9042-f9667ac4aebb.png)
+![Transporting PostgreSQL databases between Amazon RDS DB instances](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/d5fb7ea3-32b7-4602-b382-3cf5c075c7c9/images/aec4d8d2-37a8-4136-9042-f9667ac4aebb.png)
 
 ## Tools
 <a name="transport-postgresql-databases-between-two-amazon-rds-db-instances-using-pg-transport-tools"></a>

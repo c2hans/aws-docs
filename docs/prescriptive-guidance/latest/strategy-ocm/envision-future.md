@@ -14,7 +14,7 @@ Envision the Future is designed to create a change acceleration strategy and pla
 + [3.6 Develop sponsor roadmap](#envision-sponsor)
 + [3.7 Develop sustainability plan](#envision-sustainability)
 
-![Envision the Future phase in AWS Change Acceleration 6-Point Framework and OCM Toolkit](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ocm/images/guide-img/f0dc8b97-6d82-45ff-86d7-7ed62d7be8b3/images/83918e8d-f2d3-418c-a688-4c8d1f6baf1f.png)
+![Envision the Future phase in AWS Change Acceleration 6-Point Framework and OCM Toolkit](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ocm/images/guide-img/f0dc8b97-6d82-45ff-86d7-7ed62d7be8b3/images/83918e8d-f2d3-418c-a688-4c8d1f6baf1f.png)
 
 ## 3.1 Create change acceleration strategy and plan
 <a name="envision-change"></a>

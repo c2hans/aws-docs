@@ -16,7 +16,7 @@ Geomaps allow you to view and customize the world map using geospatial data. You
 **Note**
 You can add your own geospatial data on top of basemap layers provides by AWS. The basemap layers must all come from [https://tiles.maps.search-services.aws.a2z.com](https://tiles.maps.search-services.aws.a2z.com).
 
-![An image showing an example of a geomap visualization in Grafana.](http://docs.aws.amazon.com/grafana/latest/userguide/images/viz/geomap-panel-example.png)
+![An image showing an example of a geomap visualization in Grafana.](https://docs.aws.amazon.com/grafana/latest/userguide/images/viz/geomap-panel-example.png)
 
 ## Map View
 <a name="v12-panels-geomap-view"></a>
@@ -117,7 +117,7 @@ Markers have many customization options.
 
 The heatmap layer clusters various data points to visualize locations with different densities.
 
-![An image showing an example of heatmap using the geomap visualization in Grafana.](http://docs.aws.amazon.com/grafana/latest/userguide/images/viz/geomap-heatmap-example.png)
+![An image showing an example of heatmap using the geomap visualization in Grafana.](https://docs.aws.amazon.com/grafana/latest/userguide/images/viz/geomap-heatmap-example.png)
 
 To add a heatmap layer:
 
@@ -150,7 +150,7 @@ The GeoJSON layer allows you to select and load a static GeoJSON file from the f
 
 The Night / Day layer displays night and day regions based on the current time range.
 
-![An image showing an example of a night / day layer using the geomap visualization in Grafana.](http://docs.aws.amazon.com/grafana/latest/userguide/images/viz/geomap-day-night-example.png)
+![An image showing an example of a night / day layer using the geomap visualization in Grafana.](https://docs.aws.amazon.com/grafana/latest/userguide/images/viz/geomap-day-night-example.png)
 
 **Options**
 + **Show** toggles the time source from panel time range.
@@ -170,7 +170,7 @@ The Route layer renders data points as a route.
 **Note**
 The Route layer is currently in public preview. Grafana Labs offers limited support, and breaking changes might occur prior to the feature being made generally available.
 
-![An image showing an example of a route layer using the geomap visualization in Grafana.](http://docs.aws.amazon.com/grafana/latest/userguide/images/viz/geomap-route-layer-example.png)
+![An image showing an example of a route layer using the geomap visualization in Grafana.](https://docs.aws.amazon.com/grafana/latest/userguide/images/viz/geomap-route-layer-example.png)
 
 **Options**
 + **Size** sets the route thickness. Fixed value by default. When field data is selected, you can set the Min and Max range in which field data can scale.
@@ -219,7 +219,7 @@ The Network layer renders a network graph. This layers supports the same data fo
 **Note**
 The Network layer is currently in public preview. Grafana Labs offers limited support, and breaking changes might occur prior to the feature being made generally available.
 
-![An image showing examples of network visualizations within a geomap in Grafana.](http://docs.aws.amazon.com/grafana/latest/userguide/images/viz/geomap-network-layer-example.png)
+![An image showing examples of network visualizations within a geomap in Grafana.](https://docs.aws.amazon.com/grafana/latest/userguide/images/viz/geomap-network-layer-example.png)
 
 **Note**
 The Network layer is currently in public preview. Grafana Labs offers limited support, and breaking changes might occur prior to the feature being made generally available.

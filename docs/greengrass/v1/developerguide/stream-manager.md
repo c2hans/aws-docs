@@ -30,7 +30,7 @@ Your IoT applications can include multiple user-defined Lambda functions that re
 
 An example workflow is shown in the following diagram.
 
-![Diagram of the stream manager workflow.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/stream-manager-architecture.png)
+![Diagram of the stream manager workflow.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/stream-manager-architecture.png)
 
 To use stream manager, start by configuring stream manager parameters to define group-level runtime settings that apply to all streams on the Greengrass core. These customizable settings allow you to control how stream manager stores, processes, and exports streams based on your business need and environment constraints. For more information, see [Configure AWS IoT Greengrass stream manager](configure-stream-manager.md).
 

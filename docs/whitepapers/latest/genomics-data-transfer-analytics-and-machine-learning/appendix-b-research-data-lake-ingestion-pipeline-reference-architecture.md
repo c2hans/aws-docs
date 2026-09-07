@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfe
 
  The following reference architecture shows an example end-to-end research data lake data ingestion AWS Glue pipeline using the data lake reference architectures described in this paper. The AWS Glue workflows enable you to construct data pipelines using extract, transform, and load (ETL) functions, crawlers, and triggers.
 
-![Data pipeline using AWS Glue workflows](http://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfer-analytics-and-machine-learning/images/image7.png)
+![Data pipeline using AWS Glue workflows](https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfer-analytics-and-machine-learning/images/image7.png)
 
 1.  An AWS Glue trigger is run either on-demand or on a schedule.
 

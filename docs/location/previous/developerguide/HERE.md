@@ -28,7 +28,7 @@ HERE map styles that are not listed in this section are currently not supported.
 
 **HERE Explore**
 
-![Map showing Boston area including Beacon Hill, Cambridge Street, and waterways with street labels.](http://docs.aws.amazon.com/location/previous/developerguide/images/StyleVectorHere.png)
+![Map showing Boston area including Beacon Hill, Cambridge Street, and waterways with street labels.](https://docs.aws.amazon.com/location/previous/developerguide/images/StyleVectorHere.png)
 
 **Map style name**: `VectorHereExplore`
 
@@ -51,7 +51,7 @@ Amazon Location serves fonts using `[GetMapGlyphs](https://docs.aws.amazon.com/l
 
 **HERE Imagery**
 
-![](http://docs.aws.amazon.com/location/previous/developerguide/images/here_satellite_raster.png)
+![](https://docs.aws.amazon.com/location/previous/developerguide/images/here_satellite_raster.png)
 
 **Map style name**: `RasterHereExploreSatellite`
 
@@ -64,7 +64,7 @@ HERE Imagery provides high resolution satellite imagery with global coverage.
 
 **HERE Hybrid**
 
-![](http://docs.aws.amazon.com/location/previous/developerguide/images/here_satellite_hybrid.png)
+![](https://docs.aws.amazon.com/location/previous/developerguide/images/here_satellite_hybrid.png)
 
 **Map style name**: `HybridHereExploreSatellite`
 
@@ -90,7 +90,7 @@ Amazon Location serves fonts using `[GetMapGlyphs](https://docs.aws.amazon.com/l
 
 **HERE Contrast (Berlin)**
 
-![Map of Boston showing streets, waterways, and neighborhoods with major roads highlighted in yellow.](http://docs.aws.amazon.com/location/previous/developerguide/images/HERE_contrast_2000x1200.png)
+![Map of Boston showing streets, waterways, and neighborhoods with major roads highlighted in yellow.](https://docs.aws.amazon.com/location/previous/developerguide/images/HERE_contrast_2000x1200.png)
 
 **Map style name**: `VectorHereContrast`
 
@@ -112,7 +112,7 @@ This style was renamed from `VectorHereBerlin` (HERE Berlin maps). `VectorHereBe
 
 **HERE Explore Truck**
 
-![Map of Boston showing purple highway routes with red circular truck restriction icons at various locations.](http://docs.aws.amazon.com/location/previous/developerguide/images/StyleVectorHereTruck.png)
+![Map of Boston showing purple highway routes with red circular truck restriction icons at various locations.](https://docs.aws.amazon.com/location/previous/developerguide/images/StyleVectorHereTruck.png)
 
 **Map style name**: `VectorHereExploreTruck`
 

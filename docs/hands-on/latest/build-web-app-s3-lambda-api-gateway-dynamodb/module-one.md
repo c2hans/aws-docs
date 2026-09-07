@@ -42,12 +42,12 @@ In this task, you will start by creating a new React application and pushing it 
    npm install
    npm run dev
    ```
-![The resource creation interface.](http://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/create-the-app.png)
+![The resource creation interface.](https://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/create-the-app.png)
 
 1. View the app
 
    In the terminal window, select and open the **Local link** to view the Vite \+ React application.
-![The resource creation interface.](http://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/resource-creation-interface-1.png)
+![The resource creation interface.](https://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/resource-creation-interface-1.png)
 
 ### Step 2: Install the Amplify packages
 <a name="install-the-amplify-packages"></a>
@@ -55,14 +55,14 @@ In this task, you will start by creating a new React application and pushing it 
 1. Open GitHub
 
    Sign in to GitHub at [https://github.com/](https://github.com/).
-![The navigation interface.](http://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/basic-navigation-interface.png)
+![The navigation interface.](https://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/basic-navigation-interface.png)
 
 1. Start repository
 
    In the Start a new repository section, make the following selections:
    + For **Repository name**, enter **profilesapp**, and choose the **Public** radio button.
    + Then select, **Create a new repository**.
-![The resource creation interface.](http://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/resource-creation-interface-2.png)
+![The resource creation interface.](https://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/resource-creation-interface-2.png)
 
 1. Push the app to GitHub
 
@@ -89,12 +89,12 @@ Replace the SSH GitHub URL in the command with your GitHub URL.
    ```
    npm create amplify@latest -y
    ```
-![The resource creation interface.](http://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/resource-creation-interface-3.png)
+![The resource creation interface.](https://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/resource-creation-interface-3.png)
 
 1. View the project directory
 
    Running the previous command will scaffold a lightweight Amplify project in the app’s directory.
-![File directory view showing a "profilesapp" folder with subfolders "amplify," "auth," and "data," containing TypeScript files and configuration files.](http://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/ptbhu-project-file-directory-view.png)
+![File directory view showing a "profilesapp" folder with subfolders "amplify," "auth," and "data," containing TypeScript files and configuration files.](https://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/ptbhu-project-file-directory-view.png)
 
 1. Push the changes to the repository
 
@@ -105,7 +105,7 @@ Replace the SSH GitHub URL in the command with your GitHub URL.
    git commit -m 'installing amplify'
    git push origin main
    ```
-![Interface element requiring manual review.](http://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/push-to-repo.png)
+![Interface element requiring manual review.](https://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/push-to-repo.png)
 
 ### Step 4: Deploy your app with AWS Amplify
 <a name="deploy-your-app-with-aws-amplify"></a>
@@ -117,39 +117,39 @@ In this step, you will connect the GitHub repository you just created to AWS Amp
    **Sign in** to the AWS Management console in a new browser window, and open the AWS Amplify console at [https://console.aws.amazon.com/amplify/apps](https://console.aws.amazon.com/amplify/apps).
 
    Choose **Create new app**.
-![The resource creation interface.](http://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/resource-creation-interface-4.png)
+![The resource creation interface.](https://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/resource-creation-interface-4.png)
 
 1. Choose GitHub as your Git provider
 
    On the **Start building with Amplify** page, for **Deploy your app**, select **GitHub**, and select **Next**.
-![The selection interface.](http://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/selection-interface.png)
+![The selection interface.](https://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/selection-interface.png)
 
 1. Add repository and branch
 
    When prompted, **authenticate** with GitHub. You will be automatically redirected back to the Amplify console. Choose the **repository** and **main branch** you created earlier. Then select **Next**.
-![The resource creation interface.](http://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/resource-creation-interface-5.png)
+![The resource creation interface.](https://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/resource-creation-interface-5.png)
 
 1. Review build settings
 
    Leave the default **build settings**, and select **Next**.
-![The review and confirmation interface.](http://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/confirmation-interface.png)
+![The review and confirmation interface.](https://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/confirmation-interface.png)
 
 1. Deploy the app
 
    Review the inputs selected, and choose **Save and deploy**.
-![Interface element requiring manual review.](http://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/interface-1.png)
+![Interface element requiring manual review.](https://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/interface-1.png)
 
 1. Monitor build status
 
    AWS Amplify will now **build** your source code and **deploy** your app at **https://...amplifyapp.com**, and on every git push your deployment instance will update.
 
    It may take up to 5 minutes to deploy your app.
-![Interface element requiring manual review.](http://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/interface-2.png)
+![Interface element requiring manual review.](https://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/interface-2.png)
 
 1. View the deployed app
 
    Once the build completes, select the **Visit deployed URL** button to see your web app up and running live.
-![The interface controls and buttons.](http://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/interface-controls-buttons.png)
+![The interface controls and buttons.](https://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/images/interface-controls-buttons.png)
 
 ## Conclusion
 <a name="conclusion"></a>

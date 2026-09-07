@@ -68,7 +68,7 @@ WHERE server_status = '404'
 ```
 The following image shows the results of the query in the Athena Query Editor.
 
-![Querying an IIS NCSA log from Athena for HTTP 404 entries.](http://docs.aws.amazon.com/athena/latest/ug/images/querying-iis-logs-3.png)
+![Querying an IIS NCSA log from Athena for HTTP 404 entries.](https://docs.aws.amazon.com/athena/latest/ug/images/querying-iis-logs-3.png)
 
 **Example – Filtering for successful requests from a particular domain**
 The following example query selects the user ID, request received time, text of the client request, and server status code from the `iis_ncsa_logs` table. The `WHERE` clause filters for requests with HTTP status code `200` (successful) from users in the `AnyCompany` domain.
@@ -80,4 +80,4 @@ WHERE server_status = '200' AND user_id LIKE 'AnyCompany%'
 ```
 The following image shows the results of the query in the Athena Query Editor.
 
-![Querying an IIS NCSA log from Athena for HTTP 200 entries.](http://docs.aws.amazon.com/athena/latest/ug/images/querying-iis-logs-4.png)
+![Querying an IIS NCSA log from Athena for HTTP 200 entries.](https://docs.aws.amazon.com/athena/latest/ug/images/querying-iis-logs-4.png)

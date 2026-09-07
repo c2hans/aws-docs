@@ -14,7 +14,7 @@ You can check read bytes from Amazon S3 in [CloudWatch metrics](https://docs.aws
 
 You can see the approximate read size from Amazon S3 in [ETL Data Movement (Bytes)](https://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html). This metric shows the number of bytes read from Amazon S3 by all executors since the previous report. You can use it to monitor ETL data movement from Amazon S3, and you can compare reads to ingestion rates from external data sources.
 
-![ETL Data Movement (Bytes) Graph metrics tab showing S3 bytes written and S3 bytes read.](http://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/a978933c-dc68-492a-9ef0-c87f092e8033.png)
+![ETL Data Movement (Bytes) Graph metrics tab showing S3 bytes written and S3 bytes read.](https://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/a978933c-dc68-492a-9ef0-c87f092e8033.png)
 
 If you observe a larger **S3 Bytes Read** data point than you expected, consider the following solutions.
 
@@ -23,11 +23,11 @@ If you observe a larger **S3 Bytes Read** data point than you expected, consider
 
 On the **Stage** tab in the AWS Glue for Spark UI, you can see the **Input** and** Output **size. In the following example, stage 2 reads 47.4 GiB input and 47.7 GiB output, while stage 5 reads 61.2 MiB input and 56.6 MiB output.
 
-![""](http://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/ceb06773-a8fe-4b67-9023-bb41ce287fc2.png)
+![""](https://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/ceb06773-a8fe-4b67-9023-bb41ce287fc2.png)
 
 When you use the Spark SQL or DataFrame approaches in your AWS Glue job, the **SQL / DataFrame** tab show more statistics about these stages. In this case, stage 2 shows** number of files read: 430**, **size of files read: 47.4 GiB**, and **number of output rows: 160,796,570**.
 
-![""](http://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/bd50cf68-587a-48a2-a4ce-0d8d3a67b590.png)
+![""](https://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/bd50cf68-587a-48a2-a4ce-0d8d3a67b590.png)
 
 If you observe that there is a substantial difference in size between the data you are reading in and the data you are using, try the following solutions.
 
@@ -58,7 +58,7 @@ To reduce the amount of data loaded into your job when reading from Amazon S3, c
   + *Splittable* compression formats, such as bzip2 or LZO (indexed), allow partial decompression of a file, which can be parallelized.
 
   For Spark (and other common distributed-processing engines), you will split up your source data file into chunks your engine can process in parallel. These units are often referred to as *splits*. After your data is in a splittable format, the optimized AWS Glue readers can retrieve splits from an S3 object by providing the `Range` option to the `GetObject` API to retrieve only specific blocks. Consider the following diagram to see how this would work in practice.
-![Each of the three AWS Glue workers connects to a file split on Amazon S3.](http://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/a801a7bf-d7f4-40f2-8614-ed9ee4f25ad0.png)
+![Each of the three AWS Glue workers connects to a file split on Amazon S3.](https://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/a801a7bf-d7f4-40f2-8614-ed9ee4f25ad0.png)
 
   Compressed data can speed up your application significantly, as long as the files are either of an optimal size or the files are splittable. The smaller data sizes reduce the data scanned from Amazon S3 and the network traffic from Amazon S3 to your Spark cluster. On the other hand, more CPU is required to compress and decompress data. The amount of compute required scales with the compression ratio of your compression algorithm. Consider this trade-off when choosing your splittable compression format.
 **Note**

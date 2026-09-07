@@ -14,7 +14,7 @@ WorkSpaces Thin Client environments are run on a virtual desktop interface. Each
 
 WorkSpaces Thin Client environments run on Amazon WorkSpaces use directories to create and run their virtual desktops. The following table lists each element in the details and how it functions.
 
-![WorkSpaces directory details showing ID, name, organization, type, registration, and status.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ag/images/environment-details-ws.png)
+![WorkSpaces directory details showing ID, name, organization, type, registration, and status.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/images/environment-details-ws.png)
 
 | Element | Description |
 | --- | --- |
@@ -30,7 +30,7 @@ WorkSpaces Thin Client environments run on Amazon WorkSpaces use directories to 
 
 WorkSpaces Thin Client environments run on Amazon WorkSpaces Secure Browser use web portals to create and run their virtual desktops. The following table lists each element in the details and how it functions.
 
-![WorkSpaces Web portal details table showing name, time created, and endpoint for a custom portal.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ag/images/environment-details-wsw.png)
+![WorkSpaces Web portal details table showing name, time created, and endpoint for a custom portal.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/images/environment-details-wsw.png)
 
 | Element | Description |
 | --- | --- |
@@ -43,7 +43,7 @@ WorkSpaces Thin Client environments run on Amazon WorkSpaces Secure Browser use 
 
 WorkSpaces Thin Client environments run on WorkSpaces Applications information stacks to create and run their virtual desktops. The following table lists each element in the details and how it functions.
 
-![WorkSpaces Applications details table showing stack name, IdP login URL, and creation time.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ag/images/environment-details-as.png)
+![WorkSpaces Applications details table showing stack name, IdP login URL, and creation time.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/images/environment-details-as.png)
 
 | Element | Description |
 | --- | --- |

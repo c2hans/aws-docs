@@ -9,7 +9,7 @@ This diagram shows the flow of a call through the Amazon Chime SDK PSTN audio se
 
 Numbers in the diagram correspond to the numbered explanations below the diagram.
 
-![Diagram of basic call flow through the PSTN audio service and AWS Lambda functions.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/pstn-call-flow-diagram.png)
+![Diagram of basic call flow through the PSTN audio service and AWS Lambda functions.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/pstn-call-flow-diagram.png)
 
 In the diagram:
 

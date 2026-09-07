@@ -43,7 +43,7 @@ This pattern is designed for migrating from on premises to AWS, but it was teste
 
 The following diagram shows an instance running an Oracle database as the source database and an Amazon RDS for Oracle database as the target database. The data is exported and imported from the source Oracle database to the target Amazon RDS for Oracle database using Oracle Data Pump and replicated for CDC changes using AWS DMS.
 
-![Five-step process from on-premises DB instance to Amazon RDS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c8ec3789-f80e-4f3a-a3f4-72a4541316b0/images/4e3e3477-2fe0-4a5d-b95e-05a8aafe8b68.png)
+![Five-step process from on-premises DB instance to Amazon RDS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c8ec3789-f80e-4f3a-a3f4-72a4541316b0/images/4e3e3477-2fe0-4a5d-b95e-05a8aafe8b68.png)
 
 1. The initial step involves extracting data from the source database by using Oracle Data Pump, followed by sending it to the Amazon RDS for Oracle database target.
 

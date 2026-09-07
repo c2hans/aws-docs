@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-creat
 
 You can use the CodeCommit console, AWS CLI, or a Git client to add a file to a repository. You can upload a file from your local computer to the repository, or you can use the code editor in the console to create the file. The editor is a quick and easy way to add a simple file, such as a readme.md file, to a branch in a repository.
 
-![A view of uploading a file in the CodeCommit console](http://docs.aws.amazon.com/codecommit/latest/userguide/images/codecommit-commit-first-file.png)
+![A view of uploading a file in the CodeCommit console](https://docs.aws.amazon.com/codecommit/latest/userguide/images/codecommit-commit-first-file.png)
 
 **Topics**
 + [Create or upload a file (console)](#how-to-create-file-console)

@@ -9,7 +9,7 @@ The Minimal Starter Package deploys the foundational governance layer required b
 
  **Minimal starter kit architecture**
 
-![Minimal starter kit — foundational governance with IAM roles and Lake Formation settings.](http://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/minimal.png)
+![Minimal starter kit — foundational governance with IAM roles and Lake Formation settings.](https://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/minimal.png)
 
 This architecture is particularly effective when:
 

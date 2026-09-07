@@ -35,7 +35,7 @@ The [Cache policy](https://docs.aws.amazon.com/AmazonCloudFront/latest/Developer
    1. Complete the CloudFormation wizard until your new stack is created.
 
 1. In your web app, edit the **Access endpoint**, updating the **Custom URL** to the URL that you want to use.
-![Screen showing a custom access endpoint for a Transfer Family web app.](http://docs.aws.amazon.com/transfer/latest/userguide/images/webapp-custom-name.png)
+![Screen showing a custom access endpoint for a Transfer Family web app.](https://docs.aws.amazon.com/transfer/latest/userguide/images/webapp-custom-name.png)
 
 1. Create DNS records to route traffic for your custom domain name to the CloudFront distribution. If you're using Route 53 for the zone, you can create an Alias or CNAME record to the CloudFront distribution name (for example, **xxxx.cloudfront.net**). For information about using Amazon Route 53 with CloudFront, see [Configuring Amazon Route 53 to route traffic to a CloudFront distribution](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-to-cloudfront-distribution.html#routing-to-cloudfront-distribution-config).
 

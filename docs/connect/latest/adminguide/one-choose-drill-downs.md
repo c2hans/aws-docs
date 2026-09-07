@@ -12,22 +12,22 @@ In real-time metrics reports, for **Routing profiles** and **Queues** tables, yo
 
 For example, at a **Queues** table, choose the dropdown and then choose **View routing profiles**, as shown in the following image.
 
-![The real-time metrics report, queues table, dropdown, view routing profiles option.](http://docs.aws.amazon.com/connect/latest/adminguide/images/rtm-quick-filter-queue-table.png)
+![The real-time metrics report, queues table, dropdown, view routing profiles option.](https://docs.aws.amazon.com/connect/latest/adminguide/images/rtm-quick-filter-queue-table.png)
 
 Below the **Queues** table, a **Routing profiles** table appears, as shown in the following image. It is filtered to display only the routing profiles associated with the queue. On the **Routing profiles** table, you can choose quick filters to display queues or agents *only associated with that routing profile*.
 
-![The queues table with a box around queue name A, the routing profiles table for queue name A.](http://docs.aws.amazon.com/connect/latest/adminguide/images/rtm-quick-filter-routing-profiles.png)
+![The queues table with a box around queue name A, the routing profiles table for queue name A.](https://docs.aws.amazon.com/connect/latest/adminguide/images/rtm-quick-filter-routing-profiles.png)
 
 ## Example 2: Queues table -> Agents table
 <a name="one-choose-drill-downs-example2"></a>
 
 At the **Queues** table, choose **View agents**. Below the **Queues** table, an **Agents** table appears. It is filtered to display all the agents working that queue, as shown in the following image. The agents might be associated with different routing profiles.
 
-![The queues table, view agents option, the agents table.](http://docs.aws.amazon.com/connect/latest/adminguide/images/rtm-quick-filter-queues-agents.png)
+![The queues table, view agents option, the agents table.](https://docs.aws.amazon.com/connect/latest/adminguide/images/rtm-quick-filter-queues-agents.png)
 
 ## Example 3: Queues table -> Steps table
 <a name="one-choose-drill-downs-example3"></a>
 
 At the **Queues** table, choose **View Steps**. Below the **Queues** table, a **Steps** table appears. It is filtered to display all the routing steps that are being used on active contacts in that queue, as shown in the following image.
 
-![The queues table, view steps option, the steps table.](http://docs.aws.amazon.com/connect/latest/adminguide/images/one-choose-drill-downs-example3.png)
+![The queues table, view steps option, the steps table.](https://docs.aws.amazon.com/connect/latest/adminguide/images/one-choose-drill-downs-example3.png)

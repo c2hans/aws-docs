@@ -16,7 +16,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployment
 
  Blue/green deployments provide releases with near zero-downtime and rollback capabilities. The fundamental idea behind blue/green deployment is to shift traffic between two identical environments that are running different versions of your application. The blue environment represents the current application version serving production traffic. In parallel, the green environment is staged running a different version of your application. After the green environment is ready and tested, production traffic is redirected from blue to green. If any problems are identified, you can roll back by reverting traffic back to the blue environment.
 
-![Basic blue/green example](http://docs.aws.amazon.com/whitepapers/latest/blue-green-deployments/images/blue-green-example.png)
+![Basic blue/green example](https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployments/images/blue-green-example.png)
 
 * Blue/green example *
 

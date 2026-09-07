@@ -79,4 +79,4 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 
  All configurations are shown below:
 
-![Event analysis interface showing metrics configuration, filters, and parameter grouping settings.](http://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/explore-event-en.png)
+![Event analysis interface showing metrics configuration, filters, and parameter grouping settings.](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/explore-event-en.png)

@@ -9,11 +9,11 @@ You can view OS metrics reported by Enhanced Monitoring in the RDS console by ch
 
 The following example shows the Enhanced Monitoring page. For descriptions of the Enhanced Monitoring metrics, see [OS metrics in Enhanced Monitoring](USER_Monitoring-Available-OS-Metrics.md).
 
-![Dashboard view.](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/images/metrics1.png)
+![Dashboard view.](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/images/metrics1.png)
 
 Some DB instances use more than one disk for the DB instance's data storage volume. On those DB instances, the **Physical Devices** graphs show metrics for each one of the disks. For example, the following graph shows metrics for four disks.
 
-![Graph with multiple disks.](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/images/enhanced-monitoring-multiple-disks.png)
+![Graph with multiple disks.](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/images/enhanced-monitoring-multiple-disks.png)
 
 **Note**
 Currently, **Physical Devices** graphs are not available for Microsoft SQL Server DB instances.
@@ -24,11 +24,11 @@ When you are viewing aggregated **Disk I/O** graphs, the **rdsdbdata** device re
 
 The **rdsdev** device name is deprecated. The **rdsdev** device only relates to the primary `/rdsdbdata` storage volume and does not include metrics from additional storage volumes.
 
-![Graph showing file system usage.](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/images/enhanced-monitoring-filesystem.png)
+![Graph showing file system usage.](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/images/enhanced-monitoring-filesystem.png)
 
 If the DB instance is a Multi-AZ deployment, you can view the OS metrics for the primary DB instance and its Multi-AZ standby replica. In the **Enhanced monitoring** view, choose **primary** to view the OS metrics for the primary DB instance, or choose **secondary** to view the OS metrics for the standby replica.
 
-![Primary and secondary choice for Enhanced Monitoring.](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/images/enhanced-monitoring-primary-secondary.png)
+![Primary and secondary choice for Enhanced Monitoring.](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/images/enhanced-monitoring-primary-secondary.png)
 
 For more information about Multi-AZ deployments, see [Configuring and managing a Multi-AZ deployment for Amazon RDS](Concepts.MultiAZ.md).
 
@@ -39,7 +39,7 @@ If you want to see details for the processes running on your DB instance, choose
 
 The **Process List** view is shown following.
 
-![Process list view.](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/images/metrics2.png)
+![Process list view.](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/images/metrics2.png)
 
 The Enhanced Monitoring metrics shown in the **Process list** view are organized as follows:
 + **RDS child processes** – Shows a summary of the RDS processes that support the DB instance, for example `mysqld` for MySQL DB instances. Process threads appear nested beneath the parent process. Process threads show CPU utilization only as other metrics are the same for all threads for the process. The console displays a maximum of 100 processes and threads. The results are a combination of the top CPU consuming and memory consuming processes and threads. If there are more than 50 processes and more than 50 threads, the console displays the top 50 consumers in each category. This display helps you identify which processes are having the greatest impact on performance.

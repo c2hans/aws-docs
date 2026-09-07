@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/ai/responsible-ai/nova-multimodal-embedd
 # Amazon Nova Multimodal Embeddings
 <a name="overview"></a>
 
-![Banner background image](http://docs.aws.amazon.com/ai/responsible-ai/nova-multimodal-embeddings/images/card-background.jpg)
+![Banner background image](https://docs.aws.amazon.com/ai/responsible-ai/nova-multimodal-embeddings/images/card-background.jpg)
 
 An AWS AI Service Card explains the use cases for which the service is intended, how machine learning (ML) is used by the service, and key considerations in the responsible design and use of the service. A Service Card will evolve as AWS receives customer feedback, and as the service progresses through its lifecycle. AWS recommends that customers assess the performance of any AI service on their own content for each use case they need to solve. For more information, please see [AWS Responsible Use of AI Guide](https://d1.awsstatic.com/products/generative-ai/responsbile-ai/AWS-Responsible-Use-of-AI-Guide-Final.pdf) and the references at the end. Please also be sure to review the [AWS Responsible AI Policy](https://aws.amazon.com/ai/responsible-ai/policy/), [AWS Acceptable Use Policy](https://aws.amazon.com/aup/), and [AWS Service Terms](https://aws.amazon.com/service-terms/) for the services you plan to use.
 

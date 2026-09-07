@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/hybrid-clou
 
 The reliability pillar encompasses the ability of a workload to perform its intended function correctly and consistently when it is expected to. This includes the ability to operate and test the workload through its lifecycle. In this sense, when you design a resilient architecture at the edge, you must first consider which infrastructures you will use to deploy that architecture. There are three possible combinations to implement by using AWS Local Zones and AWS Outposts: *Outpost to Outpost*, *Outpost to Local Zone*, and *Local Zone to Local Zone*, as illustrated in the following diagram. Although there are other possibilities for resilient architectures, such as combining AWS edge services with traditional on-premises infrastructure or AWS Regions, this guide focuses on these three combinations that apply to the design of hybrid cloud services
 
-![Implementing resiliency at the edge with Local Zones and Outposts.](http://docs.aws.amazon.com/prescriptive-guidance/latest/hybrid-cloud-best-practices/images/guide-img/117f803b-a3ee-4c57-ae66-84b53da14c2b/images/d1218fa6-03e4-4bcb-8202-779bbf71f1d5.png)
+![Implementing resiliency at the edge with Local Zones and Outposts.](https://docs.aws.amazon.com/prescriptive-guidance/latest/hybrid-cloud-best-practices/images/guide-img/117f803b-a3ee-4c57-ae66-84b53da14c2b/images/d1218fa6-03e4-4bcb-8202-779bbf71f1d5.png)
 
 ## Infrastructure considerations
 <a name="infrastructure-considerations"></a>
@@ -60,7 +60,7 @@ In this example, the Miami Local Zone (`us-east-1d-mia-1a1`) is anchored in the 
 
 The following diagram provides examples of highly available edge infrastructures.
 
-![Highly available edge architectures.](http://docs.aws.amazon.com/prescriptive-guidance/latest/hybrid-cloud-best-practices/images/guide-img/117f803b-a3ee-4c57-ae66-84b53da14c2b/images/b07b726d-56bc-4edb-8a47-c6a0e0ee280b.png)
+![Highly available edge architectures.](https://docs.aws.amazon.com/prescriptive-guidance/latest/hybrid-cloud-best-practices/images/guide-img/117f803b-a3ee-4c57-ae66-84b53da14c2b/images/b07b726d-56bc-4edb-8a47-c6a0e0ee280b.png)
 
 ## Networking considerations
 <a name="networking-considerations"></a>
@@ -85,7 +85,7 @@ In contrast to Local Zones, Outposts have redundant connectivity for accessing w
 | 10 Gbps | 1, 2, 4, 8, 12, or 16 |
 | 40 or 100 Gbps | 1, 2, or 4 |
 
-![Resiliency networking for Outposts](http://docs.aws.amazon.com/prescriptive-guidance/latest/hybrid-cloud-best-practices/images/guide-img/117f803b-a3ee-4c57-ae66-84b53da14c2b/images/6b2b0fcc-087a-4901-aacf-2dd4d0c8e9b9.png)
+![Resiliency networking for Outposts](https://docs.aws.amazon.com/prescriptive-guidance/latest/hybrid-cloud-best-practices/images/guide-img/117f803b-a3ee-4c57-ae66-84b53da14c2b/images/6b2b0fcc-087a-4901-aacf-2dd4d0c8e9b9.png)
 
 For more information about this connectivity, see [Local network connectivity for Outposts Racks](https://docs.aws.amazon.com/outposts/latest/userguide/local-rack.html) in the AWS Outposts documentation.
 
@@ -93,11 +93,11 @@ For an optimal experience and resiliency, AWSrecommends that you use redundant c
 
 The following diagram illustrates this architecture for a highly available private connection.
 
-![Resiliency architecture for a highly available private connection.](http://docs.aws.amazon.com/prescriptive-guidance/latest/hybrid-cloud-best-practices/images/guide-img/117f803b-a3ee-4c57-ae66-84b53da14c2b/images/643c53a1-946a-44c6-87c1-2de62d4cd7f8.png)
+![Resiliency architecture for a highly available private connection.](https://docs.aws.amazon.com/prescriptive-guidance/latest/hybrid-cloud-best-practices/images/guide-img/117f803b-a3ee-4c57-ae66-84b53da14c2b/images/643c53a1-946a-44c6-87c1-2de62d4cd7f8.png)
 
 The following diagram illustrates this architecture for a highly available public connection.
 
-![Resiliency architecture for a highly available public connection.](http://docs.aws.amazon.com/prescriptive-guidance/latest/hybrid-cloud-best-practices/images/guide-img/117f803b-a3ee-4c57-ae66-84b53da14c2b/images/33811393-4915-4529-831d-e88de6721b2d.png)
+![Resiliency architecture for a highly available public connection.](https://docs.aws.amazon.com/prescriptive-guidance/latest/hybrid-cloud-best-practices/images/guide-img/117f803b-a3ee-4c57-ae66-84b53da14c2b/images/33811393-4915-4529-831d-e88de6721b2d.png)
 
 ### Scaling Outposts rack deployments with ACE racks
 <a name="scaling-outposts-rack-deployments-with-ace-racks.b7083b2e-015a-5b61-86df-25ca3cae4582"></a>
@@ -109,7 +109,7 @@ The Aggregation, Core, Edge (ACE) rack serves as a critical aggregation point fo
 
 Outposts and Local Zones have a finite number of compute servers. If your application deploys multiple related instances, these instances might deploy on the same server or on servers in the same rack unless they are configured differently. In addition to the default options, you can distribute instances across servers to mitigate the risk of running related instances on the same infrastructure. You can also distribute instances across multiple racks by using partition placement groups. This is called the *spread rack* distribution model. Use automatic distribution to spread instances across partitions in the group, or deploy instances to selected target partitions. By deploying instances to target partitions, you can deploy selected resources to the same rack while distributing other resources across racks. Outposts also provides another option called *spread host* that lets you distribute your workload at the host level. The following diagram shows the spread rack and spread host distribution options.
 
-![Spread rack and spread host distribution options for Outposts and Local Zones.](http://docs.aws.amazon.com/prescriptive-guidance/latest/hybrid-cloud-best-practices/images/guide-img/117f803b-a3ee-4c57-ae66-84b53da14c2b/images/28226237-b5d0-4280-b387-a1b273fc2bd3.png)
+![Spread rack and spread host distribution options for Outposts and Local Zones.](https://docs.aws.amazon.com/prescriptive-guidance/latest/hybrid-cloud-best-practices/images/guide-img/117f803b-a3ee-4c57-ae66-84b53da14c2b/images/28226237-b5d0-4280-b387-a1b273fc2bd3.png)
 
 ## Amazon RDS Multi-AZ in AWS Outposts
 <a name="rds-multi-az"></a>
@@ -123,7 +123,7 @@ Multi-AZ deployments are available for all supported versions of MySQL and Postg
 
 The following diagram shows the architecture for Amazon RDS on Outposts Multi-AZ configurations.
 
-![Multi-AZ configurations for Amazon RDS on Outposts.](http://docs.aws.amazon.com/prescriptive-guidance/latest/hybrid-cloud-best-practices/images/guide-img/117f803b-a3ee-4c57-ae66-84b53da14c2b/images/19ab19b0-9073-498e-ba28-8f5edcc50467.png)
+![Multi-AZ configurations for Amazon RDS on Outposts.](https://docs.aws.amazon.com/prescriptive-guidance/latest/hybrid-cloud-best-practices/images/guide-img/117f803b-a3ee-4c57-ae66-84b53da14c2b/images/19ab19b0-9073-498e-ba28-8f5edcc50467.png)
 
 ## Failover mechanisms
 <a name="failover-mechanisms"></a>
@@ -135,11 +135,11 @@ Elastic Load Balancing (ELB) automatically distributes your incoming application
 
 The following diagram illustrates how an Application Load Balancer manages workloads on Amazon EC2 in AWS Outposts.
 
-![Load balancing for Amazon EC2 workloads in Outposts.](http://docs.aws.amazon.com/prescriptive-guidance/latest/hybrid-cloud-best-practices/images/guide-img/117f803b-a3ee-4c57-ae66-84b53da14c2b/images/5a019801-dbd0-47f9-a3f9-1825ddfb8849.png)
+![Load balancing for Amazon EC2 workloads in Outposts.](https://docs.aws.amazon.com/prescriptive-guidance/latest/hybrid-cloud-best-practices/images/guide-img/117f803b-a3ee-4c57-ae66-84b53da14c2b/images/5a019801-dbd0-47f9-a3f9-1825ddfb8849.png)
 
 The following diagram illustrates a similar architecture for Amazon EC2 in Local Zones.
 
-![Load balancing for Amazon EC2 workloads in Local Zones.](http://docs.aws.amazon.com/prescriptive-guidance/latest/hybrid-cloud-best-practices/images/guide-img/117f803b-a3ee-4c57-ae66-84b53da14c2b/images/243fc91e-8c25-4eb1-be49-b8995e03cceb.png)
+![Load balancing for Amazon EC2 workloads in Local Zones.](https://docs.aws.amazon.com/prescriptive-guidance/latest/hybrid-cloud-best-practices/images/guide-img/117f803b-a3ee-4c57-ae66-84b53da14c2b/images/243fc91e-8c25-4eb1-be49-b8995e03cceb.png)
 
 **Note**
 Application Load Balancers are available in both AWS Outposts and Local Zones. However, to use an Application Load Balancer in AWS Outposts, you need to size the Amazon EC2 capacity to provide the scalability that the load balancer requires. For more information about sizing a load balancer in AWS Outposts, see the AWS blog post [Configuring an Application Load Balancer on AWS Outposts](https://aws.amazon.com/blogs/networking-and-content-delivery/configuring-an-application-load-balancer-on-aws-outposts/).
@@ -151,7 +151,7 @@ When you have more than one resource performing the same function—for example,
 
 The following diagram illustrates Route 53 failover mechanisms.
 
-![Route 53 failover mechanisms for Outposts and Local Zones.](http://docs.aws.amazon.com/prescriptive-guidance/latest/hybrid-cloud-best-practices/images/guide-img/117f803b-a3ee-4c57-ae66-84b53da14c2b/images/08a543da-06a8-493e-8087-da3c6625e249.png)
+![Route 53 failover mechanisms for Outposts and Local Zones.](https://docs.aws.amazon.com/prescriptive-guidance/latest/hybrid-cloud-best-practices/images/guide-img/117f803b-a3ee-4c57-ae66-84b53da14c2b/images/08a543da-06a8-493e-8087-da3c6625e249.png)
 
 **Note**
 

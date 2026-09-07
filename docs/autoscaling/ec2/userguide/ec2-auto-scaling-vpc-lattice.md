@@ -13,7 +13,7 @@ To associate an Auto Scaling group to a VPC Lattice service, create a target gro
 
 After you attach the target group, it's the entry point for all incoming requests to your Auto Scaling group. As the example in the following diagram shows, incoming requests can then be routed to the appropriate target group using listener rules specified for a VPC Lattice service.
 
-![VPC Lattice routes traffic to registered targets in two Auto Scaling groups using path-based routing.](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/vpc-lattice-diagram-auto-scaling-groups.png)
+![VPC Lattice routes traffic to registered targets in two Auto Scaling groups using path-based routing.](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/vpc-lattice-diagram-auto-scaling-groups.png)
 
 When traffic is routed through VPC Lattice to your Auto Scaling group, VPC Lattice balances requests among the instances in the group using round robin load balancing. VPC Lattice also can monitor the health of its registered instances and route traffic only to healthy instances.
 

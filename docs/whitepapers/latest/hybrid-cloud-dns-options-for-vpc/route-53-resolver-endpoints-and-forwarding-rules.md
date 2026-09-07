@@ -21,7 +21,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-dns-opti
 
  The following diagram represents a sample architecture utilizing Route 53 Resolver endpoints to resolve domain names in a hybrid fashion.
 
-![A diagram depciting Route 53 Resolver endpoints and forwarding rules.](http://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-dns-options-for-vpc/images/forwarding-rules.jpeg)
+![A diagram depciting Route 53 Resolver endpoints and forwarding rules.](https://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-dns-options-for-vpc/images/forwarding-rules.jpeg)
 
 1.  Private Hosted Zones are associated with a Shared Service VPC.
 

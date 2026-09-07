@@ -43,7 +43,7 @@ You can also use this pattern to migrate an on-premises Oracle database to Amazo
 
 **Data migration architecture**
 
-![Migrating an Oracle database to Aurora PostgreSQL-Compatible](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/49f9b03e-6d33-4ac0-94ad-d3e6d02e6d63/images/0038a36b-fb7d-4f2d-8376-8d38290b0736.png)
+![Migrating an Oracle database to Aurora PostgreSQL-Compatible](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/49f9b03e-6d33-4ac0-94ad-d3e6d02e6d63/images/0038a36b-fb7d-4f2d-8376-8d38290b0736.png)
 
 ## Tools
 <a name="migrate-data-from-an-on-premises-oracle-database-to-aurora-postgresql-tools"></a>

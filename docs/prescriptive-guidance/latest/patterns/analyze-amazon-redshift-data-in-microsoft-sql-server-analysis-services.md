@@ -35,7 +35,7 @@ Amazon Redshift is a fully managed, petabyte-scale data warehouse service in the
 
 **Source and target architecture**
 
-![Analyzing Amazon Redshift data in Microsoft SQL Server Analysis Services](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e444fec0-e00f-4cc6-acc6-4ffc61b654a0/images/6f29dab5-1ea7-452f-9b07-d1d23ae469a2.png)
+![Analyzing Amazon Redshift data in Microsoft SQL Server Analysis Services](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e444fec0-e00f-4cc6-acc6-4ffc61b654a0/images/6f29dab5-1ea7-452f-9b07-d1d23ae469a2.png)
 
 ## Tools
 <a name="analyze-amazon-redshift-data-in-microsoft-sql-server-analysis-services-tools"></a>

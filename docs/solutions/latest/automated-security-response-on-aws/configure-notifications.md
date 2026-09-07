@@ -32,7 +32,7 @@ The solution reads credentials for the Slack, JIRA, and ServiceNow channels from
 1. Open the Web UI and go to the **Notifications** page.
 
 1. Choose **Create notification configuration**.
-![Create notification configuration.](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/create-notification-configuration-popup.png)
+![Create notification configuration.](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/create-notification-configuration-popup.png)
 
 1.  **Basic information** – Enter a configuration name and choose the notification type:
 
@@ -41,16 +41,16 @@ The solution reads credentials for the Slack, JIRA, and ServiceNow channels from
    1.  **Remediation** – Notify when remediations are executed.
 
 1.  **Delivery channels** – Select one or more channels and provide their configuration. At least one channel must be enabled.
-![Notification delivery channels.](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/create-notification-delivery-channels-popup.png)
+![Notification delivery channels.](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/create-notification-delivery-channels-popup.png)
 
 1. (Optional) **Filters** – Narrow the events the configuration matches by severity, remediation status (remediation type only), control IDs, or resource filters. Leaving a filter set to **All** applies no restriction on that dimension.
-![Notification filters.](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/create-notification-notification-filter-popup.png)
+![Notification filters.](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/create-notification-notification-filter-popup.png)
 
 1. (Optional) **Batching** – Enable a batch window to group multiple events into a single notification. The batch window duration must be within these ranges: 5–60 minutes, 1–24 hours, 1–365 days.
-![Notification batching.](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/create-notification-notification-batching-popup.png)
+![Notification batching.](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/create-notification-notification-batching-popup.png)
 
 1.  **Content options** – Choose what each message includes. See [Notification content options](#notification-content-options).
-![Notification content options.](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/create-notification-notification-content-popup.png)
+![Notification content options.](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/create-notification-notification-content-popup.png)
 
 1. Choose **Submit**.
 

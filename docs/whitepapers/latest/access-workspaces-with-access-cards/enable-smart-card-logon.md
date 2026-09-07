@@ -51,7 +51,7 @@ The UPN consists of two parts: the *generic name* and the *domain identifier suf
 1.  Change the **User Logon Name** to match the **UPN** of this user.
 
 1.  Select the **@mil extension** from the **domain suffix** drop-down box to match the domain suffix in the user’s certificate UPN value. Do not change the User logon name (pre-Windows 2000) fields.
-![A screenshot showing the selection of the user's domain suffix](http://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/workspaces-smartcard13.png)
+![A screenshot showing the selection of the user's domain suffix](https://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/workspaces-smartcard13.png)
 
    * Select user's domain suffix to match UPN value *
 
@@ -75,7 +75,7 @@ The UPN consists of two parts: the *generic name* and the *domain identifier suf
 1.  In **Values to add**, add the strong attribution value for the user in this format: *X509IssuerSerialNumber*. An example of a strong mapping value might be **X509:<I>IssuerName<SR>1234567890**.
 
     In the following screenshot, the mapping value is **X509:<I>DC=com,DC=contoso,CN=CONTOSO-DC-CA<SR>1200000000AC11000000002B**.
-![A screenshot that shows adding a strong mapping value example.](http://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/add-strong-mapping-value.png)
+![A screenshot that shows adding a strong mapping value example.](https://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/add-strong-mapping-value.png)
 **Note**
  There are some fields associated with the certificate, such as Issuer, Subject, and Serial Number, that are reported in a *forward* format. Because of this, they will need to be reversed when you add them to the mapping string of the altSecurityIdentities attribute. For example, when adding the *X509IssuerSerialNumber* mapping to a user to be authenticated, search for the `Issuer` and `Serial Number` fields of the certificate you intend to map to the user and reverse the order in which they are given. To find these values, find the certificate to map the user, double-click the file and choose **Details**.
 See the following sample output:
@@ -84,7 +84,7 @@ See the following sample output:
  Then, update the user’s altSecurityIdentities attribute in Active Directory with the following string: **X509:<I>DC=com,DC=contoso,CN=CONTOSO-DC-CA<SR>1200000000AC11000000002B**
  Here are some other examples of strong attribution according to the Microsoft documentation:
 
-![A screenshot that shows example strong mapping values.](http://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/strong-mapping-value-examples.png)
+![A screenshot that shows example strong mapping values.](https://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/strong-mapping-value-examples.png)
 
 1.  Select **OK**, then **Apply**.
 
@@ -98,7 +98,7 @@ See the following sample output:
 1.  Enter the user’s information, similar to the screen shot below. Enter the user’s real name information, but for the **User Logon Name**, enter the EDI-PI of the user with the appropriate domain suffix: EDIPI@mil domain suffix
 
 1.  Form the **User Logon Name** (pre-Windows 2000) as it would conform to the proper username convention of your network. Choose **Next**.
-![A screenshot showing the creation of a new user with domain suffix and UPN value.](http://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/workspaces-smartcard14.png)
+![A screenshot showing the creation of a new user with domain suffix and UPN value.](https://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/workspaces-smartcard14.png)
 
    *Create new user with domain suffix and UPN value *
 

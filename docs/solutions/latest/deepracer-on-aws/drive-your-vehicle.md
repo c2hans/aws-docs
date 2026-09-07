@@ -24,7 +24,7 @@ To drive a AWS DeepRacer vehicle manually, follow the steps below.
 1. With your AWS DeepRacer vehicle connected to the Wi-Fi network, follow the instructions to sign into the vehicle’s device control console.
 
 1. On the **Control vehicle** page, choose **Manual driving** under **Controls**.
-![Manual driving controls interface](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/operatingthevehicle-manual-driving-controls.png)
+![Manual driving controls interface](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/operatingthevehicle-manual-driving-controls.png)
 
 1. Under **Click or touch to drive**, click or touch a position within the driving pad to drive the vehicle. Images captured from the vehicle’s front camera are displayed in the video player under **Camera stream**.
 
@@ -39,14 +39,14 @@ To start autonomous driving, place the vehicle on a physical track and do the fo
 1. Follow the instructions to sign into the vehicle’s device console, and then do the following for autonomous driving:
 
 1. On the **Control vehicle** page, choose **Autonomous driving** under **Controls**.
-![Autonomous driving controls interface](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/operatingthevehicle-autonomous-driving-controls.png)
+![Autonomous driving controls interface](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/operatingthevehicle-autonomous-driving-controls.png)
 
 1. From the **Select a model** drop-down list, choose an uploaded model. Then choose **Load model**. This will start loading the model into the inference engine. The process takes about 10 seconds to complete.
 
 1. Adjust the **Maximum speed** setting of the vehicle to be a percentage of the maximum speed used in training the model.
 
    Certain factors, such as surface friction of the real track, can reduce the maximum speed of the vehicle from the maximum speed used in the training. You’ll need to experiment to find the optimal setting.
-![Autonomous driving controls interface #2](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/operatingthevehicle-autonomous-driving-controls-002.png)
+![Autonomous driving controls interface #2](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/operatingthevehicle-autonomous-driving-controls-002.png)
 
 1. Choose **Start vehicle** to set the vehicle to drive autonomously.
 

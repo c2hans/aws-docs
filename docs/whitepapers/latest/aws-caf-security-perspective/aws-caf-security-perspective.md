@@ -34,7 +34,7 @@ Publication date: **December 12, 2023** ([Document history](document-revisions.m
 
  The *Security* perspective helps you achieve the confidentiality, integrity, and availability of your data and cloud workloads. It comprises nine capabilities shown in Figure 1. These are managed by stakeholders who are functionally related in their [cloud transformation journey](https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/your-cloud-transformation-journey.html). Common stakeholders include the Board of Directors and chief executive officer (CEO). It can also include other individuals *directly* responsible for mitigating and managing risk, such as chief information security officer (CISO), chief compliance officer (CCO), internal audit leaders, and security architects and engineers.
 
-![ADD ALTERNATE TEXT HERE for people using assistive technology.](http://docs.aws.amazon.com/whitepapers/latest/aws-caf-security-perspective/images/security-perspective-capabilities.png)
+![ADD ALTERNATE TEXT HERE for people using assistive technology.](https://docs.aws.amazon.com/whitepapers/latest/aws-caf-security-perspective/images/security-perspective-capabilities.png)
 
  The goal of the Security perspective is to help you achieve the confidentiality, integrity, and availability of your data and workloads in the AWS Cloud, while improving your security posture. This whitepaper organizes the principles of the nine capabilities that will help you drive the transformation of your organization's security culture. For each capability, we'll discuss specific actions you can take and methods to measure progress.
 

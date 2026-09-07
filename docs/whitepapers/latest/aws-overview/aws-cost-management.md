@@ -2,14 +2,14 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/aws-cost-management.html
 ---
 
-# ![AWS Cost Management category icon](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/cost-management-icon.jpg)Cloud Financial Management
+# ![AWS Cost Management category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/cost-management-icon.jpg)Cloud Financial Management
 <a name="aws-cost-management"></a>
 
 Whether you were born in the cloud, or you are just starting your migration journey to the cloud, AWS has a set of solutions to help you manage and optimize your spend.
 
 Each service is described after the diagram. To help you decide which service best meets your needs, see [Choosing an AWS cost management strategy](https://docs.aws.amazon.com/decision-guides/latest/cost-management-on-aws-how-to-choose/cost-management-on-aws-how-to-choose.html). For general information, see [Cloud Financial Management with AWS](https://aws.amazon.com/aws-cost-management/).
 
-![Diagram showing the AWS Cloud Financial Management Portfolio](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/cfm-portfolio.png)
+![Diagram showing the AWS Cloud Financial Management Portfolio](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/cfm-portfolio.png)
 
 **Topics**
 + [AWS Billing Conductor](#aws-billing-conductor)

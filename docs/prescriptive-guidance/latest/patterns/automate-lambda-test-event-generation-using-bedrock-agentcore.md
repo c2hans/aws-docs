@@ -77,7 +77,7 @@ To successfully implement this pattern, make sure that the following are in plac
 
 The following diagram shows the architecture and workflow for this pattern:
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c9fc8d32-56ec-4231-8b57-34769d9bd6d3/images/b57ae65b-60a7-4d32-97d1-155c50f102ce.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c9fc8d32-56ec-4231-8b57-34769d9bd6d3/images/b57ae65b-60a7-4d32-97d1-155c50f102ce.png)
 
 In this workflow:
 

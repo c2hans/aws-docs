@@ -19,7 +19,7 @@ Any large technological adoption agenda is a long journey, especially when adopt
 
 1. Your **foundational capabilities** that, above all else, drive success or failure when adopting AI.
 
-![Diagram showing the AWS CAF-AI cloud transformation journey.](http://docs.aws.amazon.com/whitepapers/latest/aws-caf-for-ai/images/caf-ai-cloud-transformation-journey.png)
+![Diagram showing the AWS CAF-AI cloud transformation journey.](https://docs.aws.amazon.com/whitepapers/latest/aws-caf-for-ai/images/caf-ai-cloud-transformation-journey.png)
 
  When approaching this journey, base it on iterative and incremental improvements. We also suggest you reach out to your AWS contacts (for example, your account team) to get assistance from AWS ML strategists, enterprise strategists, and ML advisors. After an initial assessment, the adoption cycle begins, and it is based on four stages:
 +  **Envision:** This first phase focuses on envisioning how AI can help accelerate your business outcomes. This means identifying and prioritizing transformation opportunities in line with your business objectives. Associate your transformation initiatives with key stakeholders (that is, senior individuals capable of influencing and driving change) and measurable business outcomes. Be sure to also identify in this early phase what data assets and sources these initiatives and opportunities rely upon. Work backwards from your opportunities towards data requirements.

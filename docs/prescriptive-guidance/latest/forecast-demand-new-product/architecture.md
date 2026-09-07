@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/forecast-de
 
 As you scale your AI/ML pipeline to multiple products and regions, it is recommended that you follow machine learning operations (MLOps) best practices for reproducibility, reliability, and scalability. For more information, see [Implement MLOps](https://docs.aws.amazon.com/sagemaker/latest/dg/mlops.html) in the Amazon SageMaker AI documentation. The following image shows an example AWS architecture for implementing an ML model that forecasts demand for new product introductions.
 
-![An AWS architecture that consists of data engineering, DevOps, and data science layers.](http://docs.aws.amazon.com/prescriptive-guidance/latest/forecast-demand-new-product/images/guide-img/df47c28b-2a51-49d3-b80f-80efbc2bf4a0/images/df6ce993-8a4e-4649-80ee-ce7bd574713b.png)
+![An AWS architecture that consists of data engineering, DevOps, and data science layers.](https://docs.aws.amazon.com/prescriptive-guidance/latest/forecast-demand-new-product/images/guide-img/df47c28b-2a51-49d3-b80f-80efbc2bf4a0/images/df6ce993-8a4e-4649-80ee-ce7bd574713b.png)
 
 The example AWS architecture consists of three layers: Data engineering, DevOps, and Data science.
 

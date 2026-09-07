@@ -34,7 +34,7 @@ This architecture is especially beneficial for customers with strict policies or
 
 The following diagram shows the target architecture and workflow for this pattern.
 
-![Components and workflow for presigned URL generation and object download.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e19ebcb5-2138-481e-952e-3cfee9ad9e97/images/effd197c-d4d7-4990-8b66-3eb1c64aab4c.png)
+![Components and workflow for presigned URL generation and object download.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e19ebcb5-2138-481e-952e-3cfee9ad9e97/images/effd197c-d4d7-4990-8b66-3eb1c64aab4c.png)
 
 The diagram illustrates the following concept and workflow:
 

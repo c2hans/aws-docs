@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_
 
 CI/CD can be pictured as a pipeline, where new code is submitted on one end, tested over a series of stages (source, build, test, staging, and production), and then published as production-ready code.
 
-![A diagram depicting an example of the AWS code pipeline](http://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_on_aws/images/cicd_5g2.png)
+![A diagram depicting an example of the AWS code pipeline](https://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_on_aws/images/cicd_5g2.png)
 
 *CICD pipeline overview*
 
@@ -22,7 +22,7 @@ Code pipelines can integrate with other services. These can be AWS Services, suc
 + Functional, integration, and performance tests for containerized network function/virtual network function (CNF/VNF), including baseline and regression testing
 + Reliability and disaster recovery (DR) testing.
 
-![A diagram depicting AWS CICD pipeline components](http://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_on_aws/images/cicd_5g3.png)
+![A diagram depicting AWS CICD pipeline components](https://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_on_aws/images/cicd_5g3.png)
 
 *AWS CICD pipeline components*
 
@@ -47,7 +47,7 @@ The CI/CD process includes the following steps:
 + **Cloud Network Function (CNF) deployment **– In this stage, CNF is deployed onto EKS clusters using [ Kubectl ](https://kubernetes.io/docs/reference/kubectl/overview/) and Helm charts tools. This stage also deploys any specific applications or tools needed by the CNFs to work efficiently (such as [ Prometheus ](https://prometheus.io/) or [ Fluentd ](https://www.fluentd.org/)). CNFs can either be deployed via Lambda functions or with AWS CodeBuild.
 + Continuous updates and deployment – These are a sequence of steps that are carried out iteratively to deploy changes that are part of container/configuration changes resulting in upgrades. Similar to the CNF deployment case, continuous updates and deployment can be automated using AWS Services, with the trigger from [AWS CodeCommit](https://aws.amazon.com/codecommit/), [ Amazon Elastic Container Registry ](https://aws.amazon.com/ecr/) (Amazon ECR), or a third-party source system such as [ GitLab Webhooks ](https://docs.gitlab.com/ee/user/project/integrations/webhooks.html).
 
-![A diagram depicting AWS CICD pipeline flow.](http://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_on_aws/images/cicd_5g4.png)
+![A diagram depicting AWS CICD pipeline flow.](https://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_on_aws/images/cicd_5g4.png)
 
 *AWS CICD pipeline flow diagram*
 

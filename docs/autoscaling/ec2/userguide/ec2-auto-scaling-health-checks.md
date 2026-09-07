@@ -18,7 +18,7 @@ When Amazon EC2 Auto Scaling determines that an `InService` instance is unhealth
 
 The following flow diagram illustrates the process of launching a new instance in an Auto Scaling group. It begins by launching the instance. If the launch succeeds, the instance gets added to the Auto Scaling group. Then, Amazon EC2 Auto Scaling performs health checks on the instance by using the built-in Amazon EC2 status checks, and after a grace period, any optional health checks that you enabled for the group. These health checks continue periodically. If any of the health checks fail, the instance is replaced.
 
-![A high-level diagram showing when health checks start.](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/how-health-checks-work.png)
+![A high-level diagram showing when health checks start.](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/how-health-checks-work.png)
 
 Unhealthy instances can also occur when an instance terminates unexpectedly, such as from a Spot Instance interruption or manual termination by a user. Again, Amazon EC2 Auto Scaling will automatically launch a replacement instance in these cases to maintain the desired capacity.
 

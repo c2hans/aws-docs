@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 
 The scope of this capability is to secure autonomous agent functionality for generative AI applications. The following diagram illustrates the AWS services recommended for the Generative AI account for this capability.
 
-![Services for implementing generative AI agents.](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-generative-ai/images/guide-img/a349f18f-a9fd-43a3-9a48-27534bf6412a/images/062194d1-d580-4fa1-b650-7ee796052c27.png)
+![Services for implementing generative AI agents.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-generative-ai/images/guide-img/a349f18f-a9fd-43a3-9a48-27534bf6412a/images/062194d1-d580-4fa1-b650-7ee796052c27.png)
 
 ## Rationale
 <a name="gen-auto-agents-rationale"></a>

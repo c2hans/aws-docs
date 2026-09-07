@@ -16,9 +16,9 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/active-directory-doma
 
  The following diagrams depict how Active Directory can be deployed in a single Region in a single VPC or multiple VPCs.
 
-![Diagram showing deploying Active Directory on EC2 instances in a single Region for single VPC](http://docs.aws.amazon.com/whitepapers/latest/active-directory-domain-services/images/deploying-ad-in-region-for-single-vpc.png)
+![Diagram showing deploying Active Directory on EC2 instances in a single Region for single VPC](https://docs.aws.amazon.com/whitepapers/latest/active-directory-domain-services/images/deploying-ad-in-region-for-single-vpc.png)
 
-![Diagram showing deploying Active Directory on EC2 instances in a single Region for multiple VPCs](http://docs.aws.amazon.com/whitepapers/latest/active-directory-domain-services/images/deploying-ad-in-region-for-multiple-vpcs.png)
+![Diagram showing deploying Active Directory on EC2 instances in a single Region for multiple VPCs](https://docs.aws.amazon.com/whitepapers/latest/active-directory-domain-services/images/deploying-ad-in-region-for-multiple-vpcs.png)
 
  Consider the following points when deploying Active Directory in this architecture:
 +  We recommend deploying at least two domain controllers (DCs) in a Region. These domain controllers should be placed in different AZs for availability reasons.
@@ -36,7 +36,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/active-directory-doma
 
  The following diagrams depict how Active Directory can be deployed in multiple Regions. In this example, we are showing Active Directory deployed in three Regions that are interconnected to each other using cross-Region VPC peering. In addition, these Regions are also connected to the corporate network using [AWS Direct Connect](https://aws.amazon.com/directconnect/) and VPN.
 
-![Diagram showing deploying Active Directory on EC2 instances in multiple Regions with multiple VPCs](http://docs.aws.amazon.com/whitepapers/latest/active-directory-domain-services/images/deploying-ad-in-multiple-regions-with-multiple-vpcs.png)
+![Diagram showing deploying Active Directory on EC2 instances in multiple Regions with multiple VPCs](https://docs.aws.amazon.com/whitepapers/latest/active-directory-domain-services/images/deploying-ad-in-multiple-regions-with-multiple-vpcs.png)
 
  Consider the following recommendations when deploying Active Directory in this architecture:
 +  Deploy at least two domain controllers in each Region. These domain controllers should be placed in different AZs for availability reasons.

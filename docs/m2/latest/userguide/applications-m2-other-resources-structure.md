@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/m2/latest/userguide/applications-m2-othe
 
 If you use the AWS Transform for mainframe refactoring pattern, the AWS Transform for mainframe runtime engine expects the following structure in the folder specified by `app-location` in your application definition:
 
-![The expected structure within the application-name folder.](http://docs.aws.amazon.com/m2/latest/userguide/images/ba-app-structure.png)
+![The expected structure within the application-name folder.](https://docs.aws.amazon.com/m2/latest/userguide/images/ba-app-structure.png)
 
 **config**
 Contains the YAML files for your project. These are the YAML files specific to your application, typically named something like `application-planetsdemo.yaml` and not the `application-main.yaml` file that AWS Mainframe Modernization supplies and sets up automatically for you.

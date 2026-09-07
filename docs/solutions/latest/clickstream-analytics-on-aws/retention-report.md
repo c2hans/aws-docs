@@ -50,4 +50,4 @@ This article describes the default report. You can customize the report by apply
 
 Below image is a sample dashboard for your reference.
 
-![Dashboard showing user retention metrics including new versus returning users and activity trends.](http://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/retention.png)
+![Dashboard showing user retention metrics including new versus returning users and activity trends.](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/retention.png)

@@ -29,6 +29,6 @@ Deploy the Oracle Database instance in a private subnet and allow only applicati
 
 Create appropriate security groups that allow access only to specific IP addresses through the designated ports. These recommendations apply to Oracle Database regardless of whether you’re using Amazon RDS or Amazon EC2.
 
-![Oracle Database in private subnet of an Amazon VPC](http://docs.aws.amazon.com/whitepapers/latest/oracle-database-aws-best-practices/images/oracle-db-private-subnet.png)
+![Oracle Database in private subnet of an Amazon VPC](https://docs.aws.amazon.com/whitepapers/latest/oracle-database-aws-best-practices/images/oracle-db-private-subnet.png)
 
  Oracle Database in private subnet of an Amazon VPC

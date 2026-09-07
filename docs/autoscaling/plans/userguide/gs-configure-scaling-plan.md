@@ -26,7 +26,7 @@ For the introductory tutorial, complete only the first step of the following pro
 1. On the **Specify scaling strategy** page, for **Scaling plan details**, **Name**, enter a name for your scaling plan. The name of your scaling plan must be unique within your set of scaling plans for the Region. It can have a maximum of 128 characters, and it must not contain pipes "\|", forward slashes "/", or colons ":".
 
 1. All included resources are listed by resource type. For **Auto Scaling groups**, do the following:
-![Overview of scaling strategies for Auto Scaling group.](http://docs.aws.amazon.com/autoscaling/plans/userguide/images/aws-as-gs-choose-scaling-strategy.PNG)
+![Overview of scaling strategies for Auto Scaling group.](https://docs.aws.amazon.com/autoscaling/plans/userguide/images/aws-as-gs-choose-scaling-strategy.PNG)
 
    1. Skip this step to use the default scaling strategy and metrics. To use a different scaling strategy or metrics instead, proceed with the following steps:
 

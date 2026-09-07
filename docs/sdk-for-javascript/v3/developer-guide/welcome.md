@@ -11,7 +11,7 @@ Welcome to the AWS SDK for JavaScript Developer Guide. This guide provides gener
 
 The [AWS SDK for JavaScript v3 API Reference Guide](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/) provides a JavaScript API for AWS services. You can use the JavaScript API to build libraries or applications for [Node.js](https://nodejs.org/en/) or the browser.
 
-![Relationship between JavaScript environments, the SDK, and Amazon Web Services](http://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/sdk-overview-v3.png)
+![Relationship between JavaScript environments, the SDK, and Amazon Web Services](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/sdk-overview-v3.png)
 
 ## Get started with the SDK
 <a name="get-started-with-the-jssdkv3"></a>

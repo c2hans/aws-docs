@@ -41,4 +41,4 @@ This article describes the default report. You can customize the report by apply
 
 Below image is a sample dashboard for your reference.
 
-![Dashboard displaying event details, custom parameters, and user attributes tables.](http://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/details.png)
+![Dashboard displaying event details, custom parameters, and user attributes tables.](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/images/details.png)

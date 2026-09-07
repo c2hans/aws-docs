@@ -43,7 +43,7 @@ Defense-in-depth is a cybersecurity approach that uses layers of security contro
 
 The specific security controls that you need depends on the nature of your generative AI application. The [AWS Generative AI Security Scoping Matrix](https://aws.amazon.com/blogs/security/securing-generative-ai-an-introduction-to-the-generative-ai-security-scoping-matrix/) (AWS blog post) provides a framework for understanding the security requirements based on your deployment scope. The following image shows the generative AI security scoping matrix, which is a mental model to classify use cases.
 
-![A security scoping matrix for generative AI applications.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-enterprise-ready-gen-ai-platform/images/guide-img/d1de6eb7-906b-4581-b4e9-93e995f9bb3c/images/670c910f-2af8-4a13-b4f6-c7e43d7932a9.png)
+![A security scoping matrix for generative AI applications.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-enterprise-ready-gen-ai-platform/images/guide-img/d1de6eb7-906b-4581-b4e9-93e995f9bb3c/images/670c910f-2af8-4a13-b4f6-c7e43d7932a9.png)
 
 The matrix helps organizations identify the appropriate security controls based on factors such as:
 + Whether the application is consumer-facing or internal to the enterprise

@@ -40,7 +40,7 @@ In this pattern, you use an AWS CloudFormation template to deploy the monitoring
 
 The following diagram illustrates the building blocks of the implementation.
 
-![An event in a spoke account creating an email notification in a hub account](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/175f356b-f9df-4d33-82fc-fe33b2c88b05/images/6147e5b5-616e-49a4-b330-dbb7e3381fe7.png)
+![An event in a spoke account creating an email notification in a hub account](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/175f356b-f9df-4d33-82fc-fe33b2c88b05/images/6147e5b5-616e-49a4-b330-dbb7e3381fe7.png)
 
 1. When the IAM root user credentials are used, CloudWatch and CloudTrail record the activity in the log and trail, respectively.
 

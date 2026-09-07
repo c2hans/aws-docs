@@ -212,7 +212,7 @@ Running the DLR test with a model compiled by SageMaker AI might take 4 or 5 min
    + [dlr-noncompiled-model-1.0.tar.gz](https://docs.aws.amazon.com/greengrass/latest/developerguide/download-dlr-noncompiled-model-1.0.html)
 
 1. <a name="compile-dlr-decompress-uncompiled-model"></a>Decompress the tarball. This command generates the following directory structure.
-![The resnet18 directory contains three files.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/idt/idt-ml-qualification-dlr-uncompiled.png)
+![The resnet18 directory contains three files.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/idt/idt-ml-qualification-dlr-uncompiled.png)
 
 1. Move `synset.txt` out of the `resnet18` directory. Make a note of the new location. You copy this file to compiled model directory later.
 
@@ -239,7 +239,7 @@ Running the DLR test with a model compiled by SageMaker AI might take 4 or 5 min
 1. Change the name of the compiled model directory to `resnet18`.
 
    Your compiled model directory must have the following directory structure.
-![The resnet18 compiled model directory contains four files.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/idt/idt-ml-qualification-dlr-compiled-sm.png)
+![The resnet18 compiled model directory contains four files.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/idt/idt-ml-qualification-dlr-compiled-sm.png)
 
 ### Option 2: Use TVM to compile the DLR model
 <a name="ml-qualification-compile-dlr-option-2"></a>
@@ -253,7 +253,7 @@ We recommend that you compile the model on your target device. This practice is 
    + [dlr-noncompiled-model-1.0.tar.gz](https://docs.aws.amazon.com/greengrass/latest/developerguide/download-dlr-noncompiled-model-1.0.html)
 
 1. <a name="compile-dlr-decompress-uncompiled-model"></a>Decompress the tarball. This command generates the following directory structure.
-![The resnet18 directory contains three files.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/idt/idt-ml-qualification-dlr-uncompiled.png)
+![The resnet18 directory contains three files.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/idt/idt-ml-qualification-dlr-uncompiled.png)
 
 1. Follow the instructions in the TVM documentation to [build and install TVM from source for your platform](https://docs.tvm.ai/install/from_source.html).
 
@@ -302,6 +302,6 @@ We recommend that you compile the model on your target device. This practice is 
 1. Copy the compiled model directory to your host computer. Then copy `synset.txt` from the uncompiled model that you downloaded in step 1 into the compiled model directory.
 
    Your compiled model directory must have the following directory structure.
-![The resnet18 compiled model directory contains four files.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/idt/idt-ml-qualification-dlr-compiled-tvm.png)
+![The resnet18 compiled model directory contains four files.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/idt/idt-ml-qualification-dlr-compiled-tvm.png)
 
 Next, [configure your AWS credentials and `device.json` file](set-config.md).

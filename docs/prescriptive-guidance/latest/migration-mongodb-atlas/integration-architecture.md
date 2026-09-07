@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-m
 
 MongoDB Atlas integrates seamlessly with most AWS services, as shown in the following diagram.
 
-![Integration between MongoDB Atlas and AWS services, by category.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-mongodb-atlas/images/guide-img/2acef6bf-a074-43c2-a021-70385dda418f/images/309673f8-11a0-495f-9f44-553a2e0a966e.png)
+![Integration between MongoDB Atlas and AWS services, by category.](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-mongodb-atlas/images/guide-img/2acef6bf-a074-43c2-a021-70385dda418f/images/309673f8-11a0-495f-9f44-553a2e0a966e.png)
 
 The following sections describe reference architectures to integrate MongoDB Atlas on AWS with AWS AppSync, Amazon SageMaker AI, Amazon EventBridge, Amazon Data Firehose, and Amazon Managed Streaming for Apache Kafka (Amazon MSK).
 

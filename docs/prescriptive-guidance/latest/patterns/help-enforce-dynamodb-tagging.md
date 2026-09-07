@@ -39,7 +39,7 @@ The pattern uses an AWS CloudFormation template, which creates an Amazon CloudWa
 
 **Target architecture **
 
-![Missing DynamoDB tag triggers CloudWatch event and Lambda function to send Amazon SNS notification.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/638d2b87-e031-4a53-8677-2d62e563746b/images/acc448c5-c39b-40b7-94c0-3534d2e725d7.png)
+![Missing DynamoDB tag triggers CloudWatch event and Lambda function to send Amazon SNS notification.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/638d2b87-e031-4a53-8677-2d62e563746b/images/acc448c5-c39b-40b7-94c0-3534d2e725d7.png)
 
 **Automation and scale**
 

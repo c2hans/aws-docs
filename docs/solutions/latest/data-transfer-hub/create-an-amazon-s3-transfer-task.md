@@ -163,7 +163,7 @@ This tutorial provides guidance for the backend-only version. For more details, 
      "secret_access_key": "<Your Access Key Secret>"
    }
    ```
-![AWS Secrets Manager interface for storing a new secret, with options for secret type and key/value pairs.](http://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/secret.png)
+![AWS Secrets Manager interface for storing a new secret, with options for secret type and key/value pairs.](https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/secret.png)
 
 1. Choose **Next** to specify a secret name, and choose **Create**.
 
@@ -178,10 +178,10 @@ This tutorial provides guidance for the backend-only version. For more details, 
 1.  Choose the following to launch the CloudFormation Stack.
    +  For AWS China Regions
 
-      [![Blue rectangular button labeled "Launch Stack" with a play icon.](http://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/launch-stack.png)](https://console.amazonaws.cn/cloudformation/home#/stacks/create/template?stackName=DTHS3Stack&templateURL=https:%2F%2Fsolutions-reference.s3.amazonaws.com/data-transfer-hub/latest/DataTransferS3Stack.template)
+      [![Blue rectangular button labeled "Launch Stack" with a play icon.](https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/launch-stack.png)](https://console.amazonaws.cn/cloudformation/home#/stacks/create/template?stackName=DTHS3Stack&templateURL=https:%2F%2Fsolutions-reference.s3.amazonaws.com/data-transfer-hub/latest/DataTransferS3Stack.template)
    +  For AWS Global Regions
 
-      [![Blue rectangular button labeled "Launch Stack" with a play icon.](http://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/launch-stack.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/create/template?stackName=DTHS3Stack&templateURL=https://solutions-reference.s3.amazonaws.com/data-transfer-hub/latest/DataTransferS3Stack.template)
+      [![Blue rectangular button labeled "Launch Stack" with a play icon.](https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/launch-stack.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/create/template?stackName=DTHS3Stack&templateURL=https://solutions-reference.s3.amazonaws.com/data-transfer-hub/latest/DataTransferS3Stack.template)
 
 1. Choose **Next**. Specify values to parameters accordingly. Change the stack name if required.
 

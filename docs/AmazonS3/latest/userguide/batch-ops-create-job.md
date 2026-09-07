@@ -11,7 +11,7 @@ When you create an S3 Batch Operations job, you can request a completion report 
 
 The following video provides a brief demonstration of how to create a Batch Operations job by using the Amazon S3 console.
 
-[![AWS Videos](http://img.youtube.com/vi/qpwHUrwAiUI//0.jpg)](http://www.youtube.com/watch?v=qpwHUrwAiUI/)
+[![AWS Videos](https://img.youtube.com/vi/qpwHUrwAiUI//0.jpg)](https://www.youtube.com/watch?v=qpwHUrwAiUI/)
 
 **Topics**
 + [Batch Operations job request elements](#batch-ops-create-job-request-elements)

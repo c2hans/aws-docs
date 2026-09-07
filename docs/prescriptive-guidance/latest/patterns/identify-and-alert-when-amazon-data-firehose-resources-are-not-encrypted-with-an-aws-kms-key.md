@@ -40,7 +40,7 @@ The solution uses serverless technology and the following services:
 
 **Target architecture **
 
-![Process for generating alerts when Data Firehose resources aren't encrypted.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/897ba8cf-d1c2-4149-98e7-09d3d90d13d6/images/d694f718-bd0c-4d14-a2e4-e0ea58dc048e.png)
+![Process for generating alerts when Data Firehose resources aren't encrypted.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/897ba8cf-d1c2-4149-98e7-09d3d90d13d6/images/d694f718-bd0c-4d14-a2e4-e0ea58dc048e.png)
 
 The diagram illustrates these steps:
 

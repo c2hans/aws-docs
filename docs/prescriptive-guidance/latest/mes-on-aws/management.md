@@ -14,7 +14,7 @@ Some transactions within MES might involve multiple microservices from productio
 
 To simplify such complex orchestration, AWS offers [AWS Step Functions](https://aws.amazon.com/step-functions/). This fully managed service makes it easier to coordinate the components of distributed applications and microservices by using visual workflows. It provides a graphical console to arrange and visualize the components of your application as a series of steps, as shown in the following diagram. The visualized arrangement makes it easier to build and run multi-step applications.
 
-![Orchestration technologies for MES architectures on AWS](http://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/images/guide-img/093538ca-c7c9-4311-a0e9-8a876ae66d65/images/e8bccd88-c7e8-4678-a852-f3cd69617675.png)
+![Orchestration technologies for MES architectures on AWS](https://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/images/guide-img/093538ca-c7c9-4311-a0e9-8a876ae66d65/images/e8bccd88-c7e8-4678-a852-f3cd69617675.png)
 
 ## Auditing
 <a name="auditing"></a>

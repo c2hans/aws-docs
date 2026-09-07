@@ -18,4 +18,4 @@ Refer to [Creating an input](https://docs.aws.amazon.com/medialive/latest/ug/cre
 
  **URL Pull (HLS) input configuration**
 
-![hls input config](http://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws-with-amazon-s3/images/hls-input-config.png)
+![hls input config](https://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws-with-amazon-s3/images/hls-input-config.png)

@@ -12,7 +12,7 @@ To customize your dashboard, complete the following procedure:
 1. On the AWS Supply Chain dashboard, choose **Manage dashboard**.
 
    The **Build your dashboard** page appears.
-![AWS Supply Chain Dashboard](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/asc_dashboard.png)
+![AWS Supply Chain Dashboard](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/asc_dashboard.png)
 
 1. Depending on your user permission role, you will see cards that you can use for customizing your dashboard. For each card that you want to add to your dashboard, select its check box.
 

@@ -29,6 +29,6 @@ Here is the infrastructure sequence orchestrated by Terraform and explained in t
 
 1. Observability tools that collect and centralize logs and metrics are deployed as services in all the nodes, and provide almost real-time data that can be visualized in [ Grafana ](https://grafana.com/) or [ OpenSearch Dashboards ](https://www.elastic.co/kibana)
 
-![A diagram depicting infrastructure deployment with Terraform.](http://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_on_aws/images/cicd_5g12.png)
+![A diagram depicting infrastructure deployment with Terraform.](https://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_on_aws/images/cicd_5g12.png)
 
 *Network function deployment and configuration*

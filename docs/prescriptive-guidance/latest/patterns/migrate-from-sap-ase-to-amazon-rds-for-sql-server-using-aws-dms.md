@@ -40,11 +40,11 @@ This pattern provides guidance for migrating an SAP Adaptive Server Enterprise (
 
 *From an SAP ASE database on Amazon EC2 to an Amazon RDS for SQL Server DB instance:*
 
-![Target architecture for SAP ASE on Amazon EC2 to Amazon RDS for SQL Server](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5ca697a2-9ca3-4231-b457-c1dc59ada5f1/images/957bdcf0-ab58-4b6d-a71a-d0ecbc31822c.png)
+![Target architecture for SAP ASE on Amazon EC2 to Amazon RDS for SQL Server](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5ca697a2-9ca3-4231-b457-c1dc59ada5f1/images/957bdcf0-ab58-4b6d-a71a-d0ecbc31822c.png)
 
 *From an on-premises SAP ASE database to an Amazon RDS for SQL Server DB instance:*
 
-![Target architecture for on-premises SAP ASE to Amazon RDS for SQL Server](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5ca697a2-9ca3-4231-b457-c1dc59ada5f1/images/65aab2f5-0e63-4c34-97e2-cd4ac23751a4.png)
+![Target architecture for on-premises SAP ASE to Amazon RDS for SQL Server](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5ca697a2-9ca3-4231-b457-c1dc59ada5f1/images/65aab2f5-0e63-4c34-97e2-cd4ac23751a4.png)
 
 ## Tools
 <a name="migrate-from-sap-ase-to-amazon-rds-for-sql-server-using-aws-dms-tools"></a>

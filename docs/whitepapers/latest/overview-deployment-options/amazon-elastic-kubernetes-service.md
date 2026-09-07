@@ -40,7 +40,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-o
 
  Amazon EKS allows organizations to leverage open source Kubernetes tools and plugins, and can be a good choice for organizations migrating to AWS with existing Kubernetes environments. The following diagram illustrates Amazon EKS being used to manage a general containerized application.
 
-![EKS control plane managing pods across three availability zones using different node group types.](http://docs.aws.amazon.com/whitepapers/latest/overview-deployment-options/images/image6.png)
+![EKS control plane managing pods across three availability zones using different node group types.](https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-options/images/image6.png)
 
 ## Amazon EKS Anywhere
 <a name="eks-anywhere"></a>

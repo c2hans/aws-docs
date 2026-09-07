@@ -23,7 +23,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-o
 
  The following diagram illustrates Amazon ECS being used to manage a simple containerized application. In this example, infrastructure components are created outside of Amazon ECS, and Amazon ECS is used to manage the deployment and operation of application containers on the cluster
 
-![Users access containers in ECS through Application Load Balancer, with tasks pulling from ECR.](http://docs.aws.amazon.com/whitepapers/latest/overview-deployment-options/images/image5.png)
+![Users access containers in ECS through Application Load Balancer, with tasks pulling from ECR.](https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-options/images/image5.png)
 
 * Amazon ECS use case *
 
@@ -42,7 +42,7 @@ Application infrastructure (including Amazon Elastic Container Registry (Amazon 
 
  With Amazon ECS Anywhere, you can also leverage other AWS services, such as IAM, CloudFormation, and Amazon ECR, to manage your containerized applications. This can help to ensure that your applications are secure, compliant, and integrated with other AWS services.
 
-![On-premises server with ECS Agent, SSM Agent, and containers connecting to Amazon ECS and Systems Manager.](http://docs.aws.amazon.com/whitepapers/latest/overview-deployment-options/images/image4-1.png)
+![On-premises server with ECS Agent, SSM Agent, and containers connecting to Amazon ECS and Systems Manager.](https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-options/images/image4-1.png)
 
 ## Amazon Elastic Container Service on AWS Outposts
 <a name="ecs-on-outposts"></a>

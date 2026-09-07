@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/amazon-connect
 
 In-app notifications are on-screen alerts that appear in the Connect Customer workspace header. They provide a central way to communicate important information to users that are logged into Connect Customer. Notifications can be sent to administrators and agents. No matter what page a user is on, the header icon will indicate if they have unread messages.
 
-![The notifications widget showing three unread notifications.](http://docs.aws.amazon.com/connect/latest/adminguide/images/header-notifications.png)
+![The notifications widget showing three unread notifications.](https://docs.aws.amazon.com/connect/latest/adminguide/images/header-notifications.png)
 
 ### Supported use cases
 <a name="supported-use-cases"></a>
@@ -24,7 +24,7 @@ Notifications support the following use cases:
 
 Notifications display in the Connect Customer workspace header with an icon that indicates unread messages. Choose the icon to view messages.
 
-![The notifications widget showing notifications for a user.](http://docs.aws.amazon.com/connect/latest/adminguide/images/notifications-widget.png)
+![The notifications widget showing notifications for a user.](https://docs.aws.amazon.com/connect/latest/adminguide/images/notifications-widget.png)
 
 The notification panel shows:
 + **Priority indicator** – Urgent messages are emphasized

@@ -9,7 +9,7 @@ Deploying this solution with the default parameters builds the following environ
 
  **Architecture diagram depicting AWS GovCloud (US) deployment.**
 
-![image10](http://docs.aws.amazon.com/solutions/latest/landing-zone-accelerator-on-aws/images/image10.png)
+![image10](https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerator-on-aws/images/image10.png)
 
 The AWS CloudFormation template includes a set of configuration files that have been specifically customized for AWS GovCloud (US) Regions. By following these instructions, you can deploy an environment that includes:
 

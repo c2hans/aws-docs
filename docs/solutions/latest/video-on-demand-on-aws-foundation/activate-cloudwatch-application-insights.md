@@ -17,8 +17,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws-
 
 1.  In the **Monitoring** tab, in **Application Insights**, select **Auto-configure Application Insights**.
 
-![Application Insights monitoring tab showing no applications configured with prompt to auto-configure.](http://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws-foundation/images/appreg1.png)
+![Application Insights monitoring tab showing no applications configured with prompt to auto-configure.](https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws-foundation/images/appreg1.png)
 
  Monitoring for your applications is now activated and the following status box appears:
 
-![Success message confirming application monitoring is enabled and results will display shortly.](http://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws-foundation/images/appreg2.png)
+![Success message confirming application monitoring is enabled and results will display shortly.](https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws-foundation/images/appreg2.png)

@@ -14,7 +14,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous
 
 CI/CD can be pictured as a workflow or pipeline (refer to the following figure), where new code is submitted on one end, tested over a series of stages (source, build, staging, and production), and then published as production-ready code. If your organization is new to CI/CD it can approach this pipeline in an iterative fashion. This means that you should start small, and iterate at each stage so that you can understand and develop your code in a way that will help your organization grow.
 
-![Block diagram showing a CI/CD pipeline.](http://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/ci-cd-pipeline.png)
+![Block diagram showing a CI/CD pipeline.](https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/ci-cd-pipeline.png)
 
  Each stage of the CI/CD pipeline is structured as a logical unit in the delivery process. In addition, each stage acts as a gate that vets a certain aspect of the code. As the code progresses through the pipeline, the assumption is that the quality of the code is higher in the later stages because more aspects of it continue to be verified. Problems uncovered in an early stage stop the code from progressing through the pipeline. Results from the tests are immediately sent to the team, and all further builds and releases are stopped if software does not pass the stage.
 
@@ -27,7 +27,7 @@ CI/CD can be pictured as a workflow or pipeline (refer to the following figure),
 ### Continuous integration
 <a name="continuous-integration-1"></a>
 
-![Diagram showing continuous integration, source and build.](http://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/continuous-integration.png)
+![Diagram showing continuous integration, source and build.](https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/continuous-integration.png)
 
  The first phase in the CI/CD journey is to develop maturity in continuous integration. You should make sure that all of the developers regularly commit their code to a central repository (such as one hosted in CodeCatalyst, CodeCommit or GitHub) and merge all changes to a release branch for the application. No developer should be holding code in isolation. If a feature branch is needed for a certain period of time, it should be kept up to date by merging from upstream as often as possible. Frequent commits and merges with complete units of work are recommended for the team to develop discipline and are encouraged by the process. A developer who merges code early and often, will likely have fewer integration issues down the road.
 
@@ -38,21 +38,21 @@ CI/CD can be pictured as a workflow or pipeline (refer to the following figure),
 ### Continuous delivery: creating a staging environment
 <a name="continuous-delivery-creating-a-staging-environment"></a>
 
-![Diagram showing continuous delivery, staging.](http://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/continuous-delivery.png)
+![Diagram showing continuous delivery, staging.](https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/continuous-delivery.png)
 
  Continuous delivery (CD) is the next phase and entails deploying the application code in a staging environment, which is a replica of the production stack, and running more functional tests. The staging environment could be a static environment premade for testing, or you could provision and configure a dynamic environment with committed infrastructure and configuration code for testing and deploying the application code.
 
 ### Continuous delivery: creating a production environment
 <a name="continuous-delivery-creating-a-production-environment"></a>
 
-![Diagram showing continuous delivery, staging.](http://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/continuous-delivery-production.png)
+![Diagram showing continuous delivery, staging.](https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/continuous-delivery-production.png)
 
  In the deployment/delivery pipeline sequence, after the staging environment, is the production environment, which is also built using infrastructure as code (IaC).
 
 ### Continuous deployment
 <a name="continuous-deployment"></a>
 
-![Diagram showing Continuous deployment.](http://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/continuous-deployment.png)
+![Diagram showing Continuous deployment.](https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/continuous-deployment.png)
 
  The final phase in the CI/CD deployment pipeline is continuous deployment, which may include full automation of the entire software release process including deployment to the production environment. In a fully mature CI/CD environment, the path to the production environment is fully automated, which allows code to be deployed with high confidence.
 
@@ -73,7 +73,7 @@ CI/CD can be pictured as a workflow or pipeline (refer to the following figure),
 
  AWS recommends organizing three developer teams for implementing a CI/CD environment: an application team, an infrastructure team, and a tools team (refer to the following figure). This organization represents a set of best practices that have been developed and applied in fast-moving startups, large enterprise organizations, and in Amazon itself.
 
-![Diagram representing application, infrastructure, and tools teams](http://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/teams.jpeg)
+![Diagram representing application, infrastructure, and tools teams](https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/teams.jpeg)
 
 ### Application team
 <a name="application-team"></a>

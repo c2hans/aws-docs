@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-ava
 
 In Multi-AZ deployments, Amazon RDS creates a primary DB instance on one AWS Outposts and RDS synchronously replicates the data to a standby DB instance on a different Outposts. In order to provide a resilient architecture, the two AWS Outposts must be anchored to different Availability Zones in a given region and must be operating on Customer-owned IP (CoIP) model. In order to allow the replication between the primary instance and the standby, there must be a network link between the two Outposts with a round-trip time (RTT) latency of single-digit milliseconds. We recommend 5 milliseconds or less. Also consider sizing the replication link between Outposts with sufficient bandwidth to avoid queuing replication jobs.
 
-![Amazon RDS on Outpost with multi AZ](http://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/page-45-rds-outposts-multi-az.png)
+![Amazon RDS on Outpost with multi AZ](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/page-45-rds-outposts-multi-az.png)
 
 ## Considerations for Amazon RDS on Outposts with Multi-AZ
 <a name="rds-outpost-multi-az-considerations"></a>

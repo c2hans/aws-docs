@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-
 
  Creating a fully resilient VPC connection for software VPN instances requires the setup and configuration of multiple VPN instances and a monitoring instance to monitor the health of the VPN connections.
 
-![VPC with redundant VPN appliances across availability zones connecting to customer network.](http://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/high-level-software-vpn-ha.png)
+![VPC with redundant VPN appliances across availability zones connecting to customer network.](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/high-level-software-vpn-ha.png)
 
 * High-Level Software VPN HA *
 

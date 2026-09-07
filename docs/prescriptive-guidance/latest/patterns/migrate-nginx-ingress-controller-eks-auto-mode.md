@@ -32,7 +32,7 @@ A *blue/green deployment* is a deployment strategy in which you create two separ
 
 The following image shows the migration of Network Load Balancers from two different NGINX Ingress Controller instances when enabling EKS Auto Mode. You use a blue/green deployment to shift traffic between the two Network Load Balancers.
 
-![Using a blue/green deployment strategy to migrate NGINX Ingress Controller instances.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/57e8c14f-cb50-4027-8ef6-ce8ea3f2db25/images/211a029a-90d8-4c92-8200-19e54062f936.png)
+![Using a blue/green deployment strategy to migrate NGINX Ingress Controller instances.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/57e8c14f-cb50-4027-8ef6-ce8ea3f2db25/images/211a029a-90d8-4c92-8200-19e54062f936.png)
 
 The original namespace is the *blue* namespace. This is where the original NGINX Ingress Controller service and instance run, before you enable EKS Auto Mode. The original service and instance connect to a Network Load Balancer that has a DNS name that is configured in Route 53. The [AWS Load Balancer Controller](https://kubernetes-sigs.github.io/aws-load-balancer-controller/v2.11/) deployed this Network Load Balancer in the target virtual private cloud (VPC).
 

@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-wor
 
  When launching services on AWS for your test or POC, you should be using repeatable mechanisms. For example, [AWS CloudFormation](https://aws.amazon.com/cloudformation) (referred to as infrastructure as code) allows for a repeatable method for deploying infrastructure. The environment shown in following figure can be launched with an [AWS CloudFormation](https://aws.amazon.com/cloudformation) template, or using the AWS Solutions Implementation which automates the process and allows you to launch this environment quickly and repeatedly. For more information, see the [AWS Solutions Implementation: Scale-Out Computing on AWS](#aws-solutions-implementation-scale-out-computing-on-aws) section.
 
-![This diagram shows the AWS services required to run a proof-of-concept semiconductor design workflow.](http://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-workflows-on-aws/images/semiconductor-services-needed-for-poc.png)
+![This diagram shows the AWS services required to run a proof-of-concept semiconductor design workflow.](https://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-workflows-on-aws/images/semiconductor-services-needed-for-poc.png)
 
 **Services needed to run a POC**
 
@@ -118,7 +118,7 @@ AWS uses vCPU to denote processors or symmetric multi-threading. This table uses
 
  The following figure shows the process of customizing an AMI.
 
-![This figure shows the process of customizing an AMI.](http://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-workflows-on-aws/images/ami-workflow.png)
+![This figure shows the process of customizing an AMI.](https://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-workflows-on-aws/images/ami-workflow.png)
 
 **Use the Amazon provided AMI to build a customized AMI**
 

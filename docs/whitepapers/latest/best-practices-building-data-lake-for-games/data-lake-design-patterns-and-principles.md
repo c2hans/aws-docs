@@ -15,18 +15,18 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-buildi
 ### 10,000 foot view
 <a name="ft-view"></a>
 
-![This is a 10,000 foot (high level) view of how analytics systems work with source and destination systems.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-building-data-lake-for-games/images/ten-thousand-foot.png)
+![This is a 10,000 foot (high level) view of how analytics systems work with source and destination systems.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-building-data-lake-for-games/images/ten-thousand-foot.png)
 
 ### 5000 foot view
 <a name="ft-view-1"></a>
 
-![This is a 5,000 foot (mid-level) view of how analytics systems work with source and destination systems.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-building-data-lake-for-games/images/five-thousand-foot.png)
+![This is a 5,000 foot (mid-level) view of how analytics systems work with source and destination systems.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-building-data-lake-for-games/images/five-thousand-foot.png)
 
  Diving deeper into the framework, there are data streamers, data collectors, data aggregators, and data transformers that collect the data from the data producers (sources). Depending on the use-case, data is then consumed for analysis or downstream consumers and cataloged into a data lake for governed access.
 
 ### 1000 foot view
 <a name="ft-view-2"></a>
 
-![This is a 1,000 foot (detailed) view of how analytics systems work with source and destination systems.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-building-data-lake-for-games/images/one-thousand-foot.png)
+![This is a 1,000 foot (detailed) view of how analytics systems work with source and destination systems.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-building-data-lake-for-games/images/one-thousand-foot.png)
 
  Diving deeper in the framework, Some AWS services are added as an example to show data flow. This layout is a common pattern AWS observed with its customers.

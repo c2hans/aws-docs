@@ -14,14 +14,14 @@ Isolation of EC2 instance or EKS cluster is done based on the Security Hub actio
 
  **"Forensic memory disk acquisition**
 
-![interaction step"](http://docs.aws.amazon.com/solutions/latest/automated-forensics-orchestrator-for-amazon-ec2/images/forensic-memory-disk-acquisition-interaction.png)
+![interaction step"](https://docs.aws.amazon.com/solutions/latest/automated-forensics-orchestrator-for-amazon-ec2/images/forensic-memory-disk-acquisition-interaction.png)
 
 ## Implementation view
 <a name="memory-forensics-acquisition-workflow-implementation"></a>
 
  **Memory forensics acquisition workflow implementation**
 
-![memory forensics acquisition workflow implementation](http://docs.aws.amazon.com/solutions/latest/automated-forensics-orchestrator-for-amazon-ec2/images/memory-forensics-acquisition-workflow-implementation.png)
+![memory forensics acquisition workflow implementation](https://docs.aws.amazon.com/solutions/latest/automated-forensics-orchestrator-for-amazon-ec2/images/memory-forensics-acquisition-workflow-implementation.png)
 
 The *Forensic triage* Step Function initiates the *memory acquisition* flow. . The *Memory acquisition* Lambda function in workflow leverages the SSM command to run SSM document in the compromised instance. . The *Memory acquisition* Lambda function assumes a role in the application account and passes the SSM document to be run along with credentials to copy the memory dump into an S3 bucket. . AWS Systems Manager runs a memory acquisition document via the Run Command.
 

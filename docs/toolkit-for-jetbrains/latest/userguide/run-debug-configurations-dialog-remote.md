@@ -11,7 +11,7 @@ This dialog box displays whenever you update settings for the *remote* version o
 To update settings for the *local* version of that same function, see [Run/Debug Configurations dialog box (local function settings)](run-debug-configurations-dialog-local.md) instead.
 Although the name of the dialog box is **Run/Debug Configurations**, you cannot use the AWS Toolkit for JetBrains to debug the remote version of a Lambda function. You can only run the function.
 
-![The Run/Debug Configurations dialog box for remote function settings.](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/run-debug-configurations-dialog-remote.png)
+![The Run/Debug Configurations dialog box for remote function settings.](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/run-debug-configurations-dialog-remote.png)
 
 The **Run/Debug Configurations** dialog box for remote function settings contains the following items:
 

@@ -9,7 +9,7 @@ You can also use Verified Permissions to implement RBAC filtering of UI elements
 
 In the following example, `Users` of the `Role` `viewer` are not allowed to perform updates. For these users, the UI should not render any update buttons.
 
-![Example of UI filtering with Amazon Verified Permissions and Cedar](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/38d54b9a-3a03-470e-9b9a-1353b63e3bd5.png)
+![Example of UI filtering with Amazon Verified Permissions and Cedar](https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/38d54b9a-3a03-470e-9b9a-1353b63e3bd5.png)
 
 In this example, a single-page web application has four buttons. Which buttons are visible depends on the `Role` of the user who is currently logged in to the application. As the single-page web application renders the UI, it queries Verified Permissions to determine which actions the user is authorized to perform, and then generates the buttons based on the authorization decision.
 

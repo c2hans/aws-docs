@@ -11,7 +11,7 @@ The following dashboard screenshot shows an example of a custom baseline monitor
 
  **Screenshot of CloudFront dashboard**
 
-![waf monitoring dashboard](http://docs.aws.amazon.com/solutions/latest/security-automations-for-aws-waf/images/waf-monitoring-dashboard.png)
+![waf monitoring dashboard](https://docs.aws.amazon.com/solutions/latest/security-automations-for-aws-waf/images/waf-monitoring-dashboard.png)
 
 The dashboard displays the following metrics:
 +  **Allowed vs Blocked Requests** - Shows if you receive a surge in allowed access (twice the normal peak access) or blocked access (any period that identifies more than 1K blocked requests). CloudWatch sends an alert to a Slack channel. You can use this metric to track known DDoS attacks (when blocked requests increase) or a new version of an attack (when the requests are allowed to access the system).

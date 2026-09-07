@@ -35,7 +35,7 @@ SAML providers have to be created separately in each account, so each AWS accoun
 
 The following diagram illustrates the multi-account IAM federation pattern.
 
-![Multi-account IAM federation pattern.](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-identity-management/images/guide-img/1bf8562a-50f2-4dfa-9a24-c4edfe7b936c/images/87d24665-c238-4bcb-adbb-bf567003d972.png)
+![Multi-account IAM federation pattern.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-identity-management/images/guide-img/1bf8562a-50f2-4dfa-9a24-c4edfe7b936c/images/87d24665-c238-4bcb-adbb-bf567003d972.png)
 
 ## Single-account IAM federation (hub-and-spoke model)
 <a name="workforce-iam-federation-single"></a>
@@ -45,7 +45,7 @@ Use this design pattern for the specific scenarios described in this section. Fo
 
 In the single-account federation pattern, the SAML trust relationship is established between the IdP and a single AWS account (the identity account). The permissions are mapped and provisioned through the centralized identity account. This design pattern provides simplicity and efficiency. The identity provider provides SAML assertions that are mapped to specific IAM roles (and permissions) in the identity account. Federated users can then assume cross-account-roles to access other AWS accounts from the identity account. The following diagram illustrates the single-account IAM federation pattern.
 
-![Single-account IAM federation pattern.](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-identity-management/images/guide-img/1bf8562a-50f2-4dfa-9a24-c4edfe7b936c/images/7c326c0a-b48b-44ff-aadf-e1e3a9b57009.png)
+![Single-account IAM federation pattern.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-identity-management/images/guide-img/1bf8562a-50f2-4dfa-9a24-c4edfe7b936c/images/7c326c0a-b48b-44ff-aadf-e1e3a9b57009.png)
 
 **Use cases: **
 + Companies that have a single AWS account, but sometimes need to create short-lived AWS accounts for isolated sandbox or testing.

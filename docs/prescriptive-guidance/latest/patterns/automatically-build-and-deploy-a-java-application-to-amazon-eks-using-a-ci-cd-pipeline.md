@@ -52,7 +52,7 @@ AWS Security Hub CSPM is enabled as part of the CloudFormation templates that ar
 
 **Target architecture**
 
-![Workflow for deploying a Java application to Amazon EKS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/95a5b5c2-d7fb-41eb-9089-455318c0d585/images/4f5fd8c2-2b6d-4945-aa64-fcf317521711.png)
+![Workflow for deploying a Java application to Amazon EKS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/95a5b5c2-d7fb-41eb-9089-455318c0d585/images/4f5fd8c2-2b6d-4945-aa64-fcf317521711.png)
 
 The diagram shows the following workflow:
 

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/channe
 
 The CRON expression is composed of five parts, separated by spaces, representing minute, hour, day of month, month, and day of week respectively, as illustrated below.
 
-![The CRON expression is composed of five parts, separated by spaces, representing minute, hour, day of month, month, and day of week respectively.](http://docs.aws.amazon.com/elemental-cl3/latest/apireference/images/channel-scheduling-cron-syntax.png)
+![The CRON expression is composed of five parts, separated by spaces, representing minute, hour, day of month, month, and day of week respectively.](https://docs.aws.amazon.com/elemental-cl3/latest/apireference/images/channel-scheduling-cron-syntax.png)
 
 The channel runs when the fields in the expression match the current time and date. An asterisk (\*) acts as a wildcard and represents all values. If both “day of month” and “day of week” are specified (not \*s), then the schedule will run for both.
 

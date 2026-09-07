@@ -50,7 +50,7 @@ This pattern mitigates those issues by performing a direct import on the Amazon 
 
 The following diagram shows the architecture for migrating from an on-premises Oracle database to Amazon RDS for Oracle in a Single-AZ environment. The arrow directions depict the data flow in the architecture. The diagram doesn't show what component is initiating the connection.
 
-![Full-load migration for an on-premises Oracle database.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/d54e7777-dcd2-4039-9b76-97e1019ef112/images/78429a29-e110-485a-a501-9764decd7e92.png)
+![Full-load migration for an on-premises Oracle database.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/d54e7777-dcd2-4039-9b76-97e1019ef112/images/78429a29-e110-485a-a501-9764decd7e92.png)
 
 1. The Amazon RDS for Oracle instance connects to the on-premises source Oracle database to perform a full-load migration over the database link.
 

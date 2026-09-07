@@ -24,12 +24,12 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/c
 
  The guide is designed to help you decide which AWS cloud governance services are the best fit for your organization, to strengthen operational resilience, optimize costs, and build controls to help comply with regulations or corporate standards, while maintaining development speed and accelerating innovation.
 
-[![AWS Videos](http://img.youtube.com/vi/U0y9l5V3mMQ?start=131&end=501/0.jpg)](http://www.youtube.com/watch?v=U0y9l5V3mMQ?start=131&end=501)
+[![AWS Videos](https://img.youtube.com/vi/U0y9l5V3mMQ?start=131&end=501/0.jpg)](https://www.youtube.com/watch?v=U0y9l5V3mMQ?start=131&end=501)
 
 ## Understand AWS cloud governance
 <a name="understand"></a>
 
-![Diagram showing AWS services used in cloud governance applications, including defining requirements, deploying and operating, and measuring and assessing.](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/cloudgov-understanding.png)
+![Diagram showing AWS services used in cloud governance applications, including defining requirements, deploying and operating, and measuring and assessing.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/cloudgov-understanding.png)
 
  The previous diagram shows how cloud governance draws on multiple AWS services, which allow you to define your governance requirements, deploy and operate your systems, and measure and assess their performance. The services provide built-in governance control, resource provisioning to align with your governance policies, and operations tools to help you monitor and manage your environment.
 

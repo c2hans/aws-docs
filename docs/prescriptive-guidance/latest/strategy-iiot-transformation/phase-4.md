@@ -11,4 +11,4 @@ You can use the IIoT data to identify challenges and opportunities. Furthermore,
 
 Finally, AWS Professional Services can help you build your own data flywheel by defining main elements to enable a virtuous cycle for innovation, just like the [Amazon flywheel](https://youtu.be/DEDd4d_16dM?t=693) (YouTube video). The following image is an example of a flywheel.
 
-![Using the IIoT data from the product, factory and design to cyclically innovate and increase revenue](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-iiot-transformation/images/guide-img/2cc5efa2-2b32-4bb7-bd9d-d0a92a28e1ac/images/3fec017e-fa4d-4b31-9e82-b16bd1437587.png)
+![Using the IIoT data from the product, factory and design to cyclically innovate and increase revenue](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-iiot-transformation/images/guide-img/2cc5efa2-2b32-4bb7-bd9d-d0a92a28e1ac/images/3fec017e-fa4d-4b31-9e82-b16bd1437587.png)

@@ -9,7 +9,7 @@ Also available on [Audible](https://www.audible.com/pd/Cloud-Adoption-Framework-
 
 Each of the transformation domains described in the preceding section is enabled by a set of foundational capabilities shown in the following figure. A capability is an organizational ability to leverage processes to deploy resources (people, technology, and any other tangible or intangible assets) to achieve a particular outcome. AWS CAF capabilities provide best practice guidance that helps you improve your cloud readiness (your ability to effectively leverage cloud to digitally transform). AWS CAF groups its capabilities in six perspectives: Business, People, Governance, Platform, Security, and Operations. Each perspective comprises a set of capabilities that functionally related stakeholders own or manage in your cloud transformation journey.
 
-![A diagram depicting AWS CAF foundational capabilities.](http://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/images/cloud-adoption-2.png)
+![A diagram depicting AWS CAF foundational capabilities.](https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/images/cloud-adoption-2.png)
 
 *AWS CAF perspectives and foundational capabilities*
 + **Business perspective** helps ensure that your cloud investments accelerate your digital transformation ambitions and business outcomes. Common stakeholders include chief executive officer (CEO), chief financial officer (CFO), chief operations officer (COO), chief information officer (CIO), and chief technology officer (CTO).

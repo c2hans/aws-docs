@@ -14,13 +14,13 @@ If you have an existing Xcode project, you can add the SDK for Swift to it. Open
 
  ****Swift Packages** tab in Xcode**
 
-![The location of the Swift Packages tab in Xcode.](http://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/images/xcode-project-packages-tab.png)
+![The location of the Swift Packages tab in Xcode.](https://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/images/xcode-project-packages-tab.png)
 
 This shows a list of the Swift packages currently in use by your project. If you haven't added any Swift packages, the list will be empty, as shown in the preceding image. To add the AWS SDK for Swift package to your project, choose the **\+** button under the package list.
 
  **Find and select packages to import**
 
-![The package selection dialog box in Xcode.](http://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/images/xcode-add-packages-panel.png)
+![The package selection dialog box in Xcode.](https://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/images/xcode-add-packages-panel.png)
 
 Next, specify the package or packages to add to your project. You can choose from standard Apple-provided packages or enter the URL of a custom package in the search box at the top of the window. Enter the URL of the AWS SDK for Swift as follows: ` [https://github.com/awslabs/aws-sdk-swift.git](https://github.com/awslabs/aws-sdk-swift.git) `.
 
@@ -28,13 +28,13 @@ After you enter the SDK URL, you can configure version requirements and other op
 
  **Configure dependency rules for the SDK for Swift package**
 
-![The Xcode dependency rule configuration panel during package import.](http://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/images/xcode-package-settings.png)
+![The Xcode dependency rule configuration panel during package import.](https://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/images/xcode-package-settings.png)
 
 Configure the dependency rule. Make sure that **Add to Project** is set to your project — "Supergame" in this case — and choose **Add Package**. You will see a progress bar while the SDK and all its dependencies are processed and retrieved.
 
  **Fetching the AWS SDK for Swift package and its product list**
 
-![The Xcode Verifying aws-sdk-swift package window.](http://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/images/xcode-verifying-package.png)
+![The Xcode Verifying aws-sdk-swift package window.](https://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/images/xcode-verifying-package.png)
 
 Next, select specific *products* from the AWS SDK for Swift package to include in your project. Each product is generally one AWS API or service. Each package is listed by package name, starting with `AWS` and followed by the shorthand name of the service or toolkit.
 
@@ -42,13 +42,13 @@ For the Supergame project, select `AWSS3`, `AWSDynamoDB`, and `AWSGameLift`. Ass
 
  **Choose package products for specific AWS services and toolkits**
 
-![The Choose Package Products dialog box in Xcode.](http://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/images/xcode-package-products.png)
+![The Choose Package Products dialog box in Xcode.](https://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/images/xcode-package-products.png)
 
 Your project is now configured to import the AWS SDK for Swift package and to include the desired APIs in the build for that target. To see a list of the AWS libraries, open the target's **General** tab and scroll down to **Frameworks, Libraries, and Embedded Content**.
 
  **AWS SDK for Swift libraries in the Xcode target**
 
-![The Xcode target's list of libraries, including AWS libraries.](http://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/images/xcode-libraries-list.png)
+![The Xcode target's list of libraries, including AWS libraries.](https://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/images/xcode-libraries-list.png)
 
 If your project is a multi-platform project, you also need to add the AWS libraries to the other targets in your project. For each platform's target, navigate to the **Frameworks, Libraries, and Embedded Content** section under the **General** tab and choose **\+** to open the library picker window.
 
@@ -56,7 +56,7 @@ Then, you can scroll to find and select all of the needed libraries and choose *
 
  **Find and add SDK for Swift libraries using the Xcode library picker window**
 
-![Add SDK for Swift libraries by using the Xcode library picker.](http://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/images/xcode-library-picker.png)
+![Add SDK for Swift libraries by using the Xcode library picker.](https://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/images/xcode-library-picker.png)
 
 You're now ready to import the libraries and any needed dependencies into individual Swift source code files and start using the AWS services in your project. Build your project by using the Xcode **Build** option in the **Product** menu.
 

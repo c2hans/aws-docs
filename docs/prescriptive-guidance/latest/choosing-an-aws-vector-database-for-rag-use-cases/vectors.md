@@ -20,7 +20,7 @@ The following diagram provides a high-level overview of the embedding process:
 
 1. The embedding model converts the raw data from the object files in the Amazon S3 bucket into vector embeddings. For example, `Object1` is converted into a vector `[0.6, 0.7, ...]` that represents its content in a multi-dimensional space.
 
-![Embedding model converts objects in Amazon S3 bucket to vector embeddings.](http://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-an-aws-vector-database-for-rag-use-cases/images/guide-img/34bd35bb-382d-4951-8f14-111521edb094/images/36c98d6b-eab5-49b1-abee-f1dd2bb99fb6.png)
+![Embedding model converts objects in Amazon S3 bucket to vector embeddings.](https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-an-aws-vector-database-for-rag-use-cases/images/guide-img/34bd35bb-382d-4951-8f14-111521edb094/images/36c98d6b-eab5-49b1-abee-f1dd2bb99fb6.png)
 
 Word embeddings are crucial for natural language processing (NLP) because they do the following:
 + Capture semantic relationships between words

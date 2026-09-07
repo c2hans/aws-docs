@@ -2,14 +2,14 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/compute-services.html
 ---
 
-# ![AWS Compute Services category icon](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/compute-icon.jpg)Compute
+# ![AWS Compute Services category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/compute-icon.jpg)Compute
 <a name="compute-services"></a>
 
 Millions of organizations run diverse workloads using AWS compute services.
 
 Each service is described after the diagram. To help you decide which service best meets your needs, see [Choosing an AWS compute service](https://docs.aws.amazon.com/decision-guides/latest/compute-on-aws-how-to-choose/choosing-aws-compute-service.html) or [Amazon Lightsail, AWS Elastic Beanstalk, or Amazon EC2?](https://docs.aws.amazon.com/decision-guides/latest/lightsail-elastic-beanstalk-ec2/lightsail-elastic-beanstalk-ec2.html). For general information, see [Compute on AWS](https://aws.amazon.com/products/compute/).
 
-![Diagram showing AWS compute services](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/compute-services.png)
+![Diagram showing AWS compute services](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/compute-services.png)
 
 **Topics**
 + [Compare AWS compute services](#compare-AWS-compute-services)

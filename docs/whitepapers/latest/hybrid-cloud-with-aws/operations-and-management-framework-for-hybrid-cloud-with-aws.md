@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-with-aws
 
  The operations and management framework detailed here identifies the building blocks for architecting and implementing a hybrid cloud environment with AWS. This framework helps you identify the components and the corresponding considerations for building a hybrid cloud with AWS. This section also identifies AWS services and solutions to address the needs for each building block.
 
-![Operations and management framework for hybrid cloud with AWS](http://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-with-aws/images/hybrid-cloud-framework.png)
+![Operations and management framework for hybrid cloud with AWS](https://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-with-aws/images/hybrid-cloud-framework.png)
 
 * Operations and management framework for hybrid cloud with AWS *
 

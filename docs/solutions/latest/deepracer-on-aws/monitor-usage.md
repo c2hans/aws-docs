@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/monito
 # Monitor usage
 <a name="monitor-usage"></a>
 
-![Monitor usage](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_resource_usage.png)
+![Monitor usage](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_resource_usage.png)
 
 The usage graph on the home page shows how many **compute hours** you’ve used out of the number of compute hours that you’ve been allowed to use. Training and evaluating models on DeepRacer on AWS requires compute power, which is provided by Amazon SageMaker AI training jobs. Compute usage is measured in hours, and is accrued as-you-go.
 

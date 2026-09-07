@@ -16,7 +16,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/access-workspaces-wit
 1.  Choose the **Default Domain Policy Group Policy** object, and then choose **Edit**. A new window opens.
 
 1.  In the left pane, choose **Computer Configuration**, **Policies**, **Windows Settings**, **Security Settings**, **Public Key Policies**.
-![A screenshot showing the expanded folder structure to navigate to Trusted Root Certification Authorities.](http://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/navigate-to-trusted-root-certification-authorities.png)
+![A screenshot showing the expanded folder structure to navigate to Trusted Root Certification Authorities.](https://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/navigate-to-trusted-root-certification-authorities.png)
 
 1.  Right-click **Trusted Root Certification Authorities**.
 

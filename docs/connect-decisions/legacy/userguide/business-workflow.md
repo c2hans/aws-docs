@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/busin
 
 Auto Replenishment provides the following workflow for you to manage your inventory replenishment process.
 
-![Auto replenishment workflow to manage your inventory replenishment](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/business_workflow.png)
+![Auto replenishment workflow to manage your inventory replenishment](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/business_workflow.png)
 
 + Generate replenishment plan – Supply Planning generates the replenishment plan according to the configured schedule. Recent input data required to generate replenishment plans is retrieved from the AWS Supply Chain data lake. Supply Planning uses configuration data, transactional data, and plan settings to generate the replenishment plan that includes purchase order requests.
 + Review plan exceptions – Supply Planning generates *Plan Exceptions* for products and site combinations that do not have either required configuration data (lead time, sourcing schedule, and so on) or required transactional data, such as on-hand inventory. Planners can review exceptions and provide required data before the next planning cycle in order to correct the issues and generate the replenishment plan.

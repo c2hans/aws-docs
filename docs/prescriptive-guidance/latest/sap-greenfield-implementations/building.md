@@ -25,7 +25,7 @@ Use a single build specification spreadsheet for all environments and landscapes
 
 Here's an example of a template used to capture key server build metadata with one sample server requirement.
 
-![Build specification for capturing server metadata for an SAP on AWS greenfield project](http://docs.aws.amazon.com/prescriptive-guidance/latest/sap-greenfield-implementations/images/guide-img/3deae530-9b57-46ef-8dd1-542c426e8365/images/61a644c7-466b-485f-9889-70db9155792f.png)
+![Build specification for capturing server metadata for an SAP on AWS greenfield project](https://docs.aws.amazon.com/prescriptive-guidance/latest/sap-greenfield-implementations/images/guide-img/3deae530-9b57-46ef-8dd1-542c426e8365/images/61a644c7-466b-485f-9889-70db9155792f.png)
 
 ## Be aware of AWS service quotas
 <a name="quotas"></a>

@@ -34,7 +34,7 @@ In AWS Explorer, the following operations are available when you open a context 
 
 Displays a view of the objects contained in the bucket. From here, you can create folders or upload files or entire directories and folders from your local computer. The lower pane displays status messages about the upload process. To clear these messages, choose the **Clear** icon. You can also access this view of the bucket by double-clicking the bucket name in AWS Explorer.
 
-![Empty S3 bucket interface with options to upload files, create folders, and view status.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-s3-bucket-browse-empty.png)
+![Empty S3 bucket interface with options to upload files, create folders, and view status.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-s3-bucket-browse-empty.png)
 
  *Properties*
 
@@ -80,15 +80,15 @@ If you upload files or folders that have the same name as files or folders that 
 1. In the **File-Open** dialog box, navigate to the files to upload, choose them, and then choose **Open**. If you are uploading a folder, navigate to and choose that folder, and then choose **Open**.
 
    The **Upload Settings** dialog box enables you to set metadata and permissions on the files or folder you are uploading. Selecting the **Make everything public** check box is equivalent to setting **Open/Download** permissions to **Everyone**. You can select the option to use [Reduced Redundancy Storage](https://aws.amazon.com/s3/faqs/#What_is_RRS) for the uploaded files.
-![Upload Settings dialog with options for storage, visibility, and permissions configuration.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-s3-file-upload.png)
-![S3 bucket interface showing a single uploaded file with details and upload progress.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-s3-file-upload-complete.png)
+![Upload Settings dialog with options for storage, visibility, and permissions configuration.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-s3-file-upload.png)
+![S3 bucket interface showing a single uploaded file with details and upload progress.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-s3-file-upload-complete.png)
 
 ## Amazon S3 File Operations from AWS Toolkit for Visual Studio
 <a name="tkv-s3-file-ops"></a>
 
 If you choose a file in the Amazon S3 view and open the context (right-click) menu, you can perform various operations on the file.
 
-![Context menu for a file in Amazon S3 view, showing options like Upload, Download, and Delete.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-s3-file-ops-menu.png)
+![Context menu for a file in Amazon S3 view, showing options like Upload, Download, and Delete.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-s3-file-ops-menu.png)
 
  *Create Folder*
 
@@ -134,7 +134,7 @@ Enables you to cut, copy, and paste files or folders between folders or between 
 
 Displays a dialog box that enables you to set metadata and permissions for the file, as well as toggle storage for the file between Reduced Redundancy Storage (RRS) and Standard, and set server-side encryption for the file. This dialog box also displays an https link to the file. If you choose this link, the Toolkit for Visual Studio opens the file in your default browser. If you have permissions on the file set to **Open/Download** and **Everyone**, other people will be able to access the file through this link. Rather than distributing this link, we recommend you create and distribute pre-signed URLs.
 
-![Properties dialog for an S3 object showing metadata, permissions, and encryption options.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-s3-properties-file.png)
+![Properties dialog for an S3 object showing metadata, permissions, and encryption options.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-s3-properties-file.png)
 
  *Create Pre-Signed URL*
 
@@ -152,4 +152,4 @@ You can create a pre-signed URL for a bucket or files in a bucket. Other people 
 1. Choose the **Generate** button.
 
 1. To copy the URL to the clipboard, choose **Copy**.
-![Dialog box for creating a pre-signed URL with options for expiration, S3 bucket, object key, and action.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-s3-presigned-url.png)
+![Dialog box for creating a pre-signed URL with options for expiration, S3 bucket, object key, and action.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-s3-presigned-url.png)

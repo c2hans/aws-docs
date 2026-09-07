@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/qu
 
  To better scope the Qualification Strategy the architecture should be viewed in its entirety. Enterprise scale customers typically define the architecture similar to the following:
 
-![Layered architecture](http://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/images/layered-architecture.png)
+![Layered architecture](https://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/images/layered-architecture.png)
 
 *Layered architecture *
 
@@ -27,7 +27,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/qu
 
  The situation also changes slightly if the customer leverages a service provider, like [AWS Managed Services](https://aws.amazon.com/managed-services), where the build, operation and maintenance of the landing zone is done by the service provider. Conversely, for workloads that must remain on-premises, [AWS Outposts](https://aws.amazon.com/outposts/) extends AWS services including compute, storage and networking to customer sites. Data can be configured to be stored locally, and customers are responsible for controlling access around Outposts equipment. Data that is processed and stored on-premises is accessible over the customer’s local network. In this case, customer responsibility extends into the *AWS Services* box (*Figure 3*).
 
-![Layered architecture with service provider](http://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/images/layered-arch-service-provider.png)
+![Layered architecture with service provider](https://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/images/layered-arch-service-provider.png)
 
 *Layered architecture with service provider *
 
@@ -44,7 +44,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/qu
 +  GAMP Good Practice Guide: IT Infrastructure Control and Compliance 2nd Edition
 +  GAMP 5: A Risk-Based Approach to Compliant GxP Computerized Systems
 
-![Mapping industry guidance to architecture layers](http://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/images/map-industry-guidance.png)
+![Mapping industry guidance to architecture layers](https://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/images/map-industry-guidance.png)
 
 * Mapping industry guidance to architecture layers *
 

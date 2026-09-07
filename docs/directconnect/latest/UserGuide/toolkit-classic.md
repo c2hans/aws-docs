@@ -290,7 +290,7 @@ After you have established virtual interfaces to the AWS Cloud or to Amazon VPC,
 
 To provide for failover, we recommend that you request and configure two dedicated connections to AWS, as shown in the following figure. These connections can terminate on one or two routers in your network.
 
-![Redundant connection diagram](http://docs.aws.amazon.com/directconnect/latest/UserGuide/images/redundant_connection.png)
+![Redundant connection diagram](https://docs.aws.amazon.com/directconnect/latest/UserGuide/images/redundant_connection.png)
 
 There are different configuration choices available when you provision two dedicated connections:
 + Active/Active (BGP multipath). This is the default configuration, where both connections are active. Direct Connect supports multipathing to multiple virtual interfaces within the same location, and traffic is load-shared between interfaces based on flow. If one connection becomes unavailable, all traffic is routed through the other connection.

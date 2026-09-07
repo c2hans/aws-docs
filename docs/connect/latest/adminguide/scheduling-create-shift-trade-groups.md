@@ -16,7 +16,7 @@ You can create up to 500 trade groups per Connect Customer instance. You can cre
 1. On the Connect Customer navigation menu, select **Analytics and optimization**, **Scheduling**.
 
 1. On the **Scheduling** page, choose the **Shift trade groups** tab, and then choose **Create**, as shown in the following image.
-![The Scheduling page, the Shift trade groups tab, the Create button.](http://docs.aws.amazon.com/connect/latest/adminguide/images/shiftexchange-landingpage.png)
+![The Scheduling page, the Shift trade groups tab, the Create button.](https://docs.aws.amazon.com/connect/latest/adminguide/images/shiftexchange-landingpage.png)
 
 1. On the **Add shift trade group** page, complete the following boxes:
 

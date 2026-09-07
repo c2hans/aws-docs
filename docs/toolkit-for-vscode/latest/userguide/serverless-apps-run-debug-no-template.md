@@ -24,7 +24,7 @@ The Lambda handlers that are detected by CodeLens depend on the language and run
 1. From the application folder (for example, *my-sample-app*), expand the function folder (in this case, *hello-world*) and open the `app.js` file.
 
 1. In the CodeLens indicator that identifies an eligible Lambda function handler, choose `Add Debug Configuration`.
-![Access the Add Debug Configuration option in the CodeLens indicator for a Lambda function handler.](http://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/sam-codelens-lambda.png)
+![Access the Add Debug Configuration option in the CodeLens indicator for a Lambda function handler.](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/sam-codelens-lambda.png)
 
 1. In the **Command Palette**, select the runtime in which your AWS SAM application will run.
 
@@ -39,7 +39,7 @@ The Lambda handlers that are detected by CodeLens depend on the language and run
      + `"path"`: A path to the file that's used as the event payload.
 
      In the example below, the `"json"` option defines the payload.
-![Configuring the launch.json file for directly invoking Lambda functions.](http://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/direct_invoke_config_updated_with_payload_field.png)
+![Configuring the launch.json file for directly invoking Lambda functions.](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/direct_invoke_config_updated_with_payload_field.png)
 
    For more information about these and other entries in the `launch.json` file, see [Configuration options for debugging serverless applications](serverless-apps-run-debug-config-ref.md).
 

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 
 The following diagram provides a decision matrix for your migration assessment.
 
-![Decision matrix for ETL assessment before Solr to OpenSearch migration.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-solr-opensearch/images/guide-img/20cfd7ab-1afd-4038-9280-20666ff596e1/images/3782a66d-1acf-4aa3-8045-5e6c18160bad.png)
+![Decision matrix for ETL assessment before Solr to OpenSearch migration.](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-solr-opensearch/images/guide-img/20cfd7ab-1afd-4038-9280-20666ff596e1/images/3782a66d-1acf-4aa3-8045-5e6c18160bad.png)
 
 The following sections describe the process illustrated in the diagram in more detail.
 
@@ -117,7 +117,7 @@ Purpose-built tools simplify your migration journey by providing streamlined mig
 
 OSI provides a managed service for migrating your data to Amazon OpenSearch Service. This section guides you through the implementation process, from initial assessment to production deployment, as illustrated in the following diagram.
 
-![OSI assessment and implementation for Solr migration.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-solr-opensearch/images/guide-img/20cfd7ab-1afd-4038-9280-20666ff596e1/images/73e4e071-1872-4d92-b9e7-25d4f5bb7351.png)
+![OSI assessment and implementation for Solr migration.](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-solr-opensearch/images/guide-img/20cfd7ab-1afd-4038-9280-20666ff596e1/images/73e4e071-1872-4d92-b9e7-25d4f5bb7351.png)
 
 1. **Initial assessment**. Begin your implementation journey by evaluating your migration requirements. Consider your current data volumes, throughput needs, and transformation requirements. During this phase, analyze:
    + Your application's performance requirements

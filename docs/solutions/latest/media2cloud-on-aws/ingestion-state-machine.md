@@ -18,7 +18,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/inge
 +  **Update record** - Collects all results from the states such as locations of the proxies, thumbnail images, and either MediaInfo (for videos) or embedded technical metadata within videos or images and updates the results to the ingest DynamoDB table.
 +  **Index ingestion results** - Indexes the technical metadata to OpenSearch Service cluster.
 
-![Ingestion state machine workflow diagram](http://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-ingestion-state-machine.png)
+![Ingestion state machine workflow diagram](https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-ingestion-state-machine.png)
 
 ## Ingestion fixity sub-state machine
 <a name="ingestion-fixity-sub-state-machine"></a>
@@ -28,7 +28,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/inge
 +  **Compute checksum** - Incrementally computes the MD5 checksum of a 20 GB chunk of the file using the `S3.GetObject` byte range. This process also involves a choice state to check if the checksum is completed. If not, it computes the MD5 checksum on the next 25GB chunk of the file.
 +  **Validate checksum** – Compares the computed checksum value of the file against the previously computed MD5 checksum that is stored in the object metadata.
 
-![Ingestion fixity sub-state machine workflow diagram](http://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-ingestion-fixity-sub-state-machine.png)
+![Ingestion fixity sub-state machine workflow diagram](https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-ingestion-fixity-sub-state-machine.png)
 
 ## Video ingestion sub-state machine
 <a name="video-ingestion-sub-state-machine"></a>
@@ -37,7 +37,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/inge
 +  **Run mediainfo** – Runs the [MediaInfo](https://mediaarea.net/en/MediaInfo) tool to extract technical metadata from the video. The raw MediaInfo XML result is stored in an S3 proxy bucket.
 +  **Start and wait for mediaconvert job** - Creates a job template based on the media information extracted by MediaInfo. If the video file contains multiple audio tracks (an MXF file can contain eight to 16 audio tracks), the Lambda function selects the best combination of audio tracks, and runs AWS Elemental MediaConvert to create the proxy files and thumbnails. The proxy files and thumbnail images are stored in an S3 proxy bucket.
 
-![Video ingestion sub-state machine workflow diagram](http://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-video-ingestion-sub-state-machine.png)
+![Video ingestion sub-state machine workflow diagram](https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-video-ingestion-sub-state-machine.png)
 
 ## Image ingestion sub-state machine
 <a name="image-ingestion-sub-state-machine"></a>
@@ -45,7 +45,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/inge
  The image ingestion sub-state machine processes images using AWS Lambda. This state machine coordinates the following process:
 +  **Run imageinfo** - Runs [exiftool](https://exiftool.org/) to extract EXIF information from the image file, generates an image proxy file, and stores the proxies to an S3 proxy bucket.
 
-![Image ingestion sub-state machine workflow diagram](http://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-image-ingestion-sub-state-machine.png)
+![Image ingestion sub-state machine workflow diagram](https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-image-ingestion-sub-state-machine.png)
 
 ## Audio ingestion sub-state machine
 <a name="audio-ingestion-sub-state-machine"></a>
@@ -54,7 +54,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/inge
 +  **Run mediainfo** – Runs the [MediaInfo](https://mediaarea.net/en/MediaInfo) tool to extract technical metadata and cover art from the audio file. The raw MediaInfo XML result is stored in an S3 proxy bucket.
 +  **Start and wait for transcode job** – Uses AWS Elemental MediaConvert service to create a M4A audio proxy file for Amazon Transcribe processing and for streaming to the web application. The proxy files are stored in an S3 proxy bucket.
 
-![Audio ingestion sub-state machine workflow diagram](http://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-audio-ingestion-sub-state-machine.png)
+![Audio ingestion sub-state machine workflow diagram](https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-audio-ingestion-sub-state-machine.png)
 
 ## Document ingestion sub-state machine
 <a name="document-ingestion-sub-state-machine"></a>
@@ -62,4 +62,4 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/inge
  The document ingestion sub-state machine processes document files using AWS Lambda. This state machine coordinates the following process:
 +  **Run PDFinfo and extract pages** – Runs the PDF.JS tool to extract document metadata and converts pages to PNG image proxies. The PNG image proxies are stored in an S3 proxy bucket.
 
-![Document ingestion sub-state machine workflow diagram](http://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-document-ingestion-sub-state-machine.png)
+![Document ingestion sub-state machine workflow diagram](https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/images/media2cloud-document-ingestion-sub-state-machine.png)

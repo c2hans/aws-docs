@@ -49,7 +49,7 @@ Flask is a lightweight framework for developing web applications in Python. It i
 
 The `application.py` script contains the web application's core functionality, which consists of four Flask routes. The following diagram shows these Flask routes.
 
-![The four Flask routes that make up the web application's core functionality.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/03d80cf1-ec97-43f7-adb5-2746a9ec70e6/images/9ca6bad1-26e2-4262-98d0-d54c172336bf.png)
+![The four Flask routes that make up the web application's core functionality.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/03d80cf1-ec97-43f7-adb5-2746a9ec70e6/images/9ca6bad1-26e2-4262-98d0-d54c172336bf.png)
 
 + `/` is the application's root and directs users to the `upload.html` page (stored in the `templates` directory).
 + `/saveFile` is a route that is invoked after a user uploads a file. This route receives a `POST` request via an HTML form, which contains the file uploaded by the user. The file is saved in the `userData` directory and the route redirects users to the `/dashboard` route.
@@ -58,7 +58,7 @@ The `application.py` script contains the web application's core functionality, w
 
 **Deployment architecture**
 
-![Architecture diagram for using Flask and Elastic Beanstalk to visualize AI/ML model results.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/03d80cf1-ec97-43f7-adb5-2746a9ec70e6/images/d691bfd2-e2ec-4830-8bff-ffa1e3a95c4a.png)
+![Architecture diagram for using Flask and Elastic Beanstalk to visualize AI/ML model results.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/03d80cf1-ec97-43f7-adb5-2746a9ec70e6/images/d691bfd2-e2ec-4830-8bff-ffa1e3a95c4a.png)
 
 [Design considerations](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.concepts.design.html)
 

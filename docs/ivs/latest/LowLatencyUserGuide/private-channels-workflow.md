@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/private-c
 
 This diagram illustrates the workflow for setting up IVS private channels:
 
-![The workflow for private channels: using a network request from the browser to fetch tokens.](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/images/Private_Channels_Workflow.png)
+![The workflow for private channels: using a network request from the browser to fetch tokens.](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/images/Private_Channels_Workflow.png)
 
 1. When a viewer tries to load the webpage for a private stream, the browser requests an access token. (The customer provides the browser code to do this.)
 

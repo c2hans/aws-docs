@@ -64,4 +64,4 @@ For some customers, it might be the case that the source and target platforms ha
 
  Incremental backup is supported only for the same platforms, and from big endian platforms to Linux OS only. Following is the typical flow for migration using incremental backups when using XTTS.
 
-![Diagram showing the typical flow for migration using incremental backups using XTTS](http://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-business-suite/images/typical-migration-flow-using-xtts.jpg)
+![Diagram showing the typical flow for migration using incremental backups using XTTS](https://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-business-suite/images/typical-migration-flow-using-xtts.jpg)

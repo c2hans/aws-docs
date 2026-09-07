@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 # API module
 <a name="api-module"></a>
 
-![Architecture diagram of API module.](http://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/image6.png)
+![Architecture diagram of API module.](https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/image6.png)
 
  The API module is made available in the solution to represent an example of how to integrate token management process into the `Playback` API Gateway API section of customer architecture. The API Gateway with two Lambda integrations is the central element of this module, responsible for performing token-related operations, that is generating the token and revoking a given session ID associated with the token. The two routes defined in HTTP API Gateway configuration are:
 +  `/sessionrevoke` (allowed for POST requests)

@@ -62,4 +62,4 @@ You can choose from five deployment options:
 + If you want the container to be managed by Kubernetes, but you want to manage the compute resources of the container yourself: deploy your application as a Linux container on Amazon EKS.
 + If you want the container to be managed by Amazon ECS, but you want to manage the compute resources of the container yourself: deploy your application as a Linux container on Amazon ECS.
 
-![Re-architecting legacy .NET apps as microservices in Linux containers on AWS](http://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-net-applications/images/guide-img/e6435ff7-ff5b-43b9-841d-7a90ca834432/images/ff6e0b59-be97-405e-abcf-2c08b13a9272.png)
+![Re-architecting legacy .NET apps as microservices in Linux containers on AWS](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-net-applications/images/guide-img/e6435ff7-ff5b-43b9-841d-7a90ca834432/images/ff6e0b59-be97-405e-abcf-2c08b13a9272.png)

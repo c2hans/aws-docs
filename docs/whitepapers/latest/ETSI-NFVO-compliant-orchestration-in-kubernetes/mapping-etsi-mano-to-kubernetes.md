@@ -17,7 +17,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/ETSI-NFVO-compliant-o
 
  The traditional ETSI MANO framework was developed in the context of virtual machines (VM). The following figure indicates ETSI MANO architecture along with major functions performed by each of its components. Network slice management and its associated functions such as Network Slice Subnet Management Function (NSSMF) and Network Function Management Function (NFMF) are part of [3GPP](https://www.3gpp.org/) specifications and are beyond the realm of MANO framework; however, they are shown in the figure to provide complete view of network and service management.
 
-![A diagram depicting the traditional ETSI MANO framework as defined in the context of virtual machines along with 3GPP management functions..](http://docs.aws.amazon.com/whitepapers/latest/ETSI-NFVO-compliant-orchestration-in-kubernetes/images/etsi-mano-framework.jpg)
+![A diagram depicting the traditional ETSI MANO framework as defined in the context of virtual machines along with 3GPP management functions..](https://docs.aws.amazon.com/whitepapers/latest/ETSI-NFVO-compliant-orchestration-in-kubernetes/images/etsi-mano-framework.jpg)
 
 ## Mapping VIM and VNFM to Kubernetes
 <a name="mapping-vim-and-vnfm-to-kubernetes"></a>
@@ -67,7 +67,7 @@ When mapping ETSI MANO to Kubernetes and the cloud, it is important to re-interp
 
  In light of the previous discussions, in the following diagram, we propose a way to map the same ETSI defined functions to corresponding Kubernetes and associated objects. Notice that the mapping is not 1-1, and Kubernetes and associated services such as ECR and [Helm](https://helm.sh/) cover more than one element of the ETSI MANO architecture.
 
-![A diagram depicting the ETSI MANO Framework and Kubernetes and associated constructs.](http://docs.aws.amazon.com/whitepapers/latest/ETSI-NFVO-compliant-orchestration-in-kubernetes/images/etsi-mano-framework2.png)
+![A diagram depicting the ETSI MANO Framework and Kubernetes and associated constructs.](https://docs.aws.amazon.com/whitepapers/latest/ETSI-NFVO-compliant-orchestration-in-kubernetes/images/etsi-mano-framework2.png)
 
  This creates some difficulties in applying understandings gained from ETSI MANO NFV to Kubernetes operational environments. Some of these difficulties are discussed next.
 

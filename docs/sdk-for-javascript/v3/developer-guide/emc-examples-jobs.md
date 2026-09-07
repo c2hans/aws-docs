@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/em
 # Creating and managing transcoding jobs in MediaConvert
 <a name="emc-examples-jobs"></a>
 
-![JavaScript code example that applies to Node.js execution](http://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/nodeicon.png)
+![JavaScript code example that applies to Node.js execution](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/nodeicon.png)
 
 **This Node.js code example shows:**
 + How to create transcoding jobs in MediaConvert.

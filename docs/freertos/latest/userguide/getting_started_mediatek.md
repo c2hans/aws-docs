@@ -161,9 +161,9 @@ If you are having trouble debugging an application, your debugger settings might
 1. Right-click the `aws_demos` project, choose **Options**, and under the **Utilities** tab, choose **Settings**, next to **“-- Use Debug Driver --”**.
 
 1. Verify that the settings under the **Debug** tab appear as follows:
-![CMSIS-DAP Cortex-M Target Driver Setup dialog with serial number, firmware version, adapter type, SW device options, and config settings.](http://docs.aws.amazon.com/freertos/latest/userguide/images/mediatek-debug-2.png)
+![CMSIS-DAP Cortex-M Target Driver Setup dialog with serial number, firmware version, adapter type, SW device options, and config settings.](https://docs.aws.amazon.com/freertos/latest/userguide/images/mediatek-debug-2.png)
 
 1. Verify that the settings under the **Flash Download** tab appear as follows:
-![Cortex-M Target Driver Setup window with options for Download Function, RAM for Algorithm, Programming Algorithm description and device details.](http://docs.aws.amazon.com/freertos/latest/userguide/images/mediatek-debug-3.png)
+![Cortex-M Target Driver Setup window with options for Download Function, RAM for Algorithm, Programming Algorithm description and device details.](https://docs.aws.amazon.com/freertos/latest/userguide/images/mediatek-debug-3.png)
 
 For general troubleshooting information about Getting Started with FreeRTOS, see [Troubleshooting getting started](gsg-troubleshooting.md).

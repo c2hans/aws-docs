@@ -33,23 +33,23 @@ Agents can pause a task from their Contact Control Panel (CCP) or agent workspac
 
 The following image shows the **Pause** button on the CCP.
 
-![The Pause button on the CCP.](http://docs.aws.amazon.com/connect/latest/adminguide/images/tasks-pause-button-ccp.png)
+![The Pause button on the CCP.](https://docs.aws.amazon.com/connect/latest/adminguide/images/tasks-pause-button-ccp.png)
 
 The following image shows the **Pause** button on the agent workspace.
 
-![The Pause button on the agent workspace.](http://docs.aws.amazon.com/connect/latest/adminguide/images/tasks-pause-button-agentworkspace.png)
+![The Pause button on the agent workspace.](https://docs.aws.amazon.com/connect/latest/adminguide/images/tasks-pause-button-agentworkspace.png)
 
 After an agent pauses or resumes a task, a banner is displayed that notifies them of the current status of the task. The following image of the CCP shows the Pause banner.
 
-![Pause and Resume banners on the CCP.](http://docs.aws.amazon.com/connect/latest/adminguide/images/tasks-paused-ccp.png)
+![Pause and Resume banners on the CCP.](https://docs.aws.amazon.com/connect/latest/adminguide/images/tasks-paused-ccp.png)
 
 The following image of the agent workspace shows the Resume banner.
 
-![Pause and Resume banners on the agent workspace.](http://docs.aws.amazon.com/connect/latest/adminguide/images/tasks-resumed.png)
+![Pause and Resume banners on the agent workspace.](https://docs.aws.amazon.com/connect/latest/adminguide/images/tasks-resumed.png)
 
 When an agent has multiple tasks open and they pause any one of them, the icon updates in the task list to notify them of the state of the task. The following image shows an example of a Paused icon.
 
-![A task status icon.](http://docs.aws.amazon.com/connect/latest/adminguide/images/tasks-pause-agentworkspace.png)
+![A task status icon.](https://docs.aws.amazon.com/connect/latest/adminguide/images/tasks-pause-agentworkspace.png)
 
 ## How many tasks an agent can pause
 <a name="pause-tasks-number"></a>
@@ -79,7 +79,7 @@ When pausing and resuming a task, a corresponding flow can be configured to run 
 
 Configure a [Set event flow](set-event-flow.md) block to pause and resume tasks. The following image shows the **Properties** page of a **Set event flow** block configured to pause a flow.
 
-![The properties page of the Set event flow block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/tasks-set-event-flow.png)
+![The properties page of the Set event flow block.](https://docs.aws.amazon.com/connect/latest/adminguide/images/tasks-set-event-flow.png)
 
 Following are a couple of scenarios you might want to configure in your flows:
 + For flows that run at contact pause, configure them to notify supervisors when a task has been paused.
@@ -92,15 +92,15 @@ When tasks are paused and resumed, new events are generated for PAUSED and RESUM
 
 The following image shows an example of a PAUSED event in the contact event stream.
 
-![PAUSED event in the contact event stream.](http://docs.aws.amazon.com/connect/latest/adminguide/images/tasks-pause-ces.png)
+![PAUSED event in the contact event stream.](https://docs.aws.amazon.com/connect/latest/adminguide/images/tasks-pause-ces.png)
 
 The following image shows an example of a RESUMED event in the contact event stream.
 
-![RESUMED event in the contact event stream.](http://docs.aws.amazon.com/connect/latest/adminguide/images/tasks-resumed-ces.png)
+![RESUMED event in the contact event stream.](https://docs.aws.amazon.com/connect/latest/adminguide/images/tasks-resumed-ces.png)
 
 The following image shows an example of PAUSED tasks in the agent event stream.
 
-![PAUSED events in the agent event stream.](http://docs.aws.amazon.com/connect/latest/adminguide/images/tasks-aes.png)
+![PAUSED events in the agent event stream.](https://docs.aws.amazon.com/connect/latest/adminguide/images/tasks-aes.png)
 
 ## Pause and resume task events in contact records
 <a name="ctr-pause-and-resume-tasks"></a>
@@ -150,15 +150,15 @@ The following metrics display active, paused, and resumed time.
 
 The following image of the **Real-time Metrics** page shows the task contact state as **Paused**.
 
-![The real-time metrics page, task in paused contact state.](http://docs.aws.amazon.com/connect/latest/adminguide/images/tasks-paused-rtm.png)
+![The real-time metrics page, task in paused contact state.](https://docs.aws.amazon.com/connect/latest/adminguide/images/tasks-paused-rtm.png)
 
 The following image of the **Real-time Metrics** page shows **Avg Active Time**, **AHT** and **Avg Agent Pause Time**.
 
-![The real-time metrics page, task in paused contact state.](http://docs.aws.amazon.com/connect/latest/adminguide/images/tasks-rtm-2.png)
+![The real-time metrics page, task in paused contact state.](https://docs.aws.amazon.com/connect/latest/adminguide/images/tasks-rtm-2.png)
 
 ### Agent Activity Audit report
 <a name="agent-audit-tasks-ui"></a>
 
 The following image of the **Agent Activity Audit report** shows the Paused status when a contact is paused by the agent.
 
-![The agent activity audit report, paused status.](http://docs.aws.amazon.com/connect/latest/adminguide/images/tasks-agent-activity-report.png)
+![The agent activity audit report, paused status.](https://docs.aws.amazon.com/connect/latest/adminguide/images/tasks-agent-activity-report.png)

@@ -16,7 +16,7 @@ In both of these approaches, users can self-provision their own Quick access. If
 ## Configuring permissions by using permission sets
 <a name="permission-sets"></a>
 
-![Architecture diagram of a federated user gaining Quick Suite access through a permission set in IAM Identity Center.](http://docs.aws.amazon.com/prescriptive-guidance/latest/quick-suite-access-approach/images/guide-img/ec03a023-a3ad-4a10-93bb-22dcf4ea49a5/images/c33b1a45-3150-4f00-8ca3-ca8cc069cf0f.png)
+![Architecture diagram of a federated user gaining Quick Suite access through a permission set in IAM Identity Center.](https://docs.aws.amazon.com/prescriptive-guidance/latest/quick-suite-access-approach/images/guide-img/ec03a023-a3ad-4a10-93bb-22dcf4ea49a5/images/c33b1a45-3150-4f00-8ca3-ca8cc069cf0f.png)
 
 The following are the characteristics of this architecture and access approach:
 
@@ -45,7 +45,7 @@ After you create the permission set, provision it to the target AWS account wher
 ## Configuring permissions by using IAM roles
 <a name="iam-roles"></a>
 
-![Architecture diagram of a federated user gaining Quick Suite access through an IAM role](http://docs.aws.amazon.com/prescriptive-guidance/latest/quick-suite-access-approach/images/guide-img/ec03a023-a3ad-4a10-93bb-22dcf4ea49a5/images/b7fe9af9-f62e-486a-94c6-d240989c1025.png)
+![Architecture diagram of a federated user gaining Quick Suite access through an IAM role](https://docs.aws.amazon.com/prescriptive-guidance/latest/quick-suite-access-approach/images/guide-img/ec03a023-a3ad-4a10-93bb-22dcf4ea49a5/images/b7fe9af9-f62e-486a-94c6-d240989c1025.png)
 
 The following are the characteristics of this architecture and access approach:
 

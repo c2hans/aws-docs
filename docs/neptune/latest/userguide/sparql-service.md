@@ -39,7 +39,7 @@ SELECT * WHERE {
 
 This flow is shown in the following diagram.
 
-![Flow diagram showing SPARQL federated query patterns being evaluated and responses sent back to client.](http://docs.aws.amazon.com/neptune/latest/userguide/images/federated.png)
+![Flow diagram showing SPARQL federated query patterns being evaluated and responses sent back to client.](https://docs.aws.amazon.com/neptune/latest/userguide/images/federated.png)
 
 **Note**
 "By default, the optimizer determines at what point in query execution that the `SERVICE` instruction is executed. You can override this placement using the [joinOrder](sparql-query-hints-joinOrder.md) query hint.

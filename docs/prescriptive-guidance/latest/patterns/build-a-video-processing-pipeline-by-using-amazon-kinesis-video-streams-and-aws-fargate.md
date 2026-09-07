@@ -45,7 +45,7 @@ This pattern is intended as a proof of concept, or as a basis for further develo
 
 **Target architecture**
 
-![Architecture for using Kinesis Video Streams and Fargate to build a video processing pipeline.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9d1442c2-f3ee-47fd-8cce-90d9206ce4d4/images/a60e585f-27be-4dd6-897b-c38adf1d283f.png)
+![Architecture for using Kinesis Video Streams and Fargate to build a video processing pipeline.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9d1442c2-f3ee-47fd-8cce-90d9206ce4d4/images/a60e585f-27be-4dd6-897b-c38adf1d283f.png)
 
 The user creates a Kinesis video stream, uploads a video, and sends a JSON message that contains details about the input Kinesis video stream and the output S3 bucket to an SQS queue. AWS Fargate, which is running the main application in a container, pulls the message from the SQS queue and starts extracting frames. Each frame is saved in an image file and stored in the target S3 bucket.
 

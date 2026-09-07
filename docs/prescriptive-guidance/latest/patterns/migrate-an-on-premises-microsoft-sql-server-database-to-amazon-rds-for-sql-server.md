@@ -38,11 +38,11 @@ This pattern provides guidance for migrating from an on-premises Microsoft SQL S
 
 *Using AWS DMS: *
 
-![Architecture for migration from on-premises SQL Server to Amazon RDS using AWS DMS](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/27942833-c294-405c-90e6-32cc197e36ee/images/69b9877c-2d56-4d64-8475-a3dae789c5de.png)
+![Architecture for migration from on-premises SQL Server to Amazon RDS using AWS DMS](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/27942833-c294-405c-90e6-32cc197e36ee/images/69b9877c-2d56-4d64-8475-a3dae789c5de.png)
 
 *Using native SQL Server tools: *
 
-![Architecture for migration from on-premises SQL Server to Amazon RDS using SQL Server tools](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/27942833-c294-405c-90e6-32cc197e36ee/images/45ee14e4-3c7e-4b35-a2c9-3e8e3c7e6cee.png)
+![Architecture for migration from on-premises SQL Server to Amazon RDS using SQL Server tools](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/27942833-c294-405c-90e6-32cc197e36ee/images/45ee14e4-3c7e-4b35-a2c9-3e8e3c7e6cee.png)
 
 ## Tools
 <a name="migrate-an-on-premises-microsoft-sql-server-database-to-amazon-rds-for-sql-server-tools"></a>

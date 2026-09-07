@@ -13,7 +13,7 @@ You can use Amazon Kinesis Video Streams, a fully managed AWS service, to stream
 
 The following diagram provides an overview of how Kinesis Video Streams works.
 
-![Diagram showing interaction of producers and consumers in Kinesis Video Streams.](http://docs.aws.amazon.com/kinesisvideostreams/latest/dg/images/acuity-arch-3a.png)
+![Diagram showing interaction of producers and consumers in Kinesis Video Streams.](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/images/acuity-arch-3a.png)
 
 The diagram demonstrates the interaction among the following components:
 + **Producer** – Any source that puts data into a Kinesis video stream. A producer can be any video-generating device, such as a security camera, a body-worn camera, a smart phone camera, or a dashboard camera. A producer can also send non-video data, such as audio feeds, images, or RADAR data.

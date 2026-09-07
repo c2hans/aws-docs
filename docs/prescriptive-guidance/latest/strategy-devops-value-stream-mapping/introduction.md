@@ -13,7 +13,7 @@ DevOps teams commonly work with complex systems that involve people, processes, 
 
 For each step in your software development process, you identify the lead time (LT), process time (PT), and percent complete and accurate (%CA). You outline the *happy path*, which is the process flow if no exceptions or errors are encountered during development. You also outline the *failure path*, which is the flow that occurs when the product fails any step in the development process. The following image is an example of a completed DVSM.
 
-![Sample development value stream map for identifying constraints in DevOps outcomes.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-devops-value-stream-mapping/images/guide-img/72315763-d7a6-461b-a0a7-2945fd258610/images/eeda2db4-1e61-418a-b1d3-70f383653384.png)
+![Sample development value stream map for identifying constraints in DevOps outcomes.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-devops-value-stream-mapping/images/guide-img/72315763-d7a6-461b-a0a7-2945fd258610/images/eeda2db4-1e61-418a-b1d3-70f383653384.png)
 
 ## Intended audience
 <a name="intended-audience"></a>

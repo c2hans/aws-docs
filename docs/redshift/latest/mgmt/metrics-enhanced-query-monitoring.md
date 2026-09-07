@@ -93,7 +93,7 @@ To access the Query and Database Monitoring page, do the following:
 
 The **Query and database monitoring** console page appears as follows:
 
-![Query and database monitoring console showing data warehouses table with metrics.](http://docs.aws.amazon.com/redshift/latest/mgmt/images/metrics_eqm_homepage.png)
+![Query and database monitoring console showing data warehouses table with metrics.](https://docs.aws.amazon.com/redshift/latest/mgmt/images/metrics_eqm_homepage.png)
 
 The **Query and database monitoring** page has the following components:
 + **Data warehouse overview** — Monitor the average query performance for your provisioned clusters and serverless workgroups. You can quickly see performance issues for a specific cluster or workgroup by examining the statistics on this page for spikes or periods of high activity.
@@ -109,7 +109,7 @@ The **Query and database monitoring** page has the following components:
 
 When you choose **Query performance summary** from the **Query and database monitoring** page, or a cluster or workgroup from the **Data warehouse overview** page, the console shows a summary of the performance for an individual provisioned cluster or serverless workgroup.
 
-![Query history graph showing lock wait, queue, planning, compile, execution, and elapsed times.](http://docs.aws.amazon.com/redshift/latest/mgmt/images/metrics_eqm_clusterdetails.png)
+![Query history graph showing lock wait, queue, planning, compile, execution, and elapsed times.](https://docs.aws.amazon.com/redshift/latest/mgmt/images/metrics_eqm_clusterdetails.png)
 
 This page has the following components:
 + **Cluster or workgroup dropdown** — Choose the cluster or workgroup you want to analyze.
@@ -131,7 +131,7 @@ This page has the following components:
 
 When you choose a query from the **Data warehouse performance** or **Query history** pane of the cluster or workgroup detail page, the **Query details** page opens.
 
-![Query details page showing query metadata, execution timeline bar chart, and SQL code.](http://docs.aws.amazon.com/redshift/latest/mgmt/images/metrics_eqm_querydetails.png)
+![Query details page showing query metadata, execution timeline bar chart, and SQL code.](https://docs.aws.amazon.com/redshift/latest/mgmt/images/metrics_eqm_querydetails.png)
 
 For information about the **Query details** page, see [Query details page](using-query-plan-profiler.md#using-query-plan-profiler-ui-query-details).
 
@@ -140,7 +140,7 @@ For information about the **Query details** page, see [Query details page](using
 
 You can see a history of queries with the same pattern by choosing the **View query pattern** button in the **Query history** pane of the **Query performance summary** page. The **Query pattern** page shows all of the queries from the past week that are retrieved by a SQL statement that you specify.
 
-![Query pattern page showing performance trend graph and table of queries with execution details.](http://docs.aws.amazon.com/redshift/latest/mgmt/images/metrics_eqm_querypattern.png)
+![Query pattern page showing performance trend graph and table of queries with execution details.](https://docs.aws.amazon.com/redshift/latest/mgmt/images/metrics_eqm_querypattern.png)
 
 The **Query pattern** page has the following components:
 + **Query pattern** — The SQL statement that retrieves the queries being analyzed.

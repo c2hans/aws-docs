@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 
 The following diagram illustrates mainframe applications A and B that run a shared program called program AB.1. This case is also applicable when applications A and B include programs that call shared subprograms.
 
-![Mainframe applications A and B that run a shared program called program AB.1.](http://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-mainframe-decoupling-patterns/images/guide-img/a6175648-8ce0-4ab7-9a68-cebf41995535/images/7cad29af-ece8-4ae8-a068-e55aafd768e8.png)
+![Mainframe applications A and B that run a shared program called program AB.1.](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-mainframe-decoupling-patterns/images/guide-img/a6175648-8ce0-4ab7-9a68-cebf41995535/images/7cad29af-ece8-4ae8-a068-e55aafd768e8.png)
 
  **Steps for analysis**
 

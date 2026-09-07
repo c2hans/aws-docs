@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-scalable-sec
 
 With Application Load Balancer (ALB) as target of NLB, you can now combine ALB advanced routing capabilities with AWS PrivateLink. Refer to [Application Load Balancer-type Target Group for Network Load Balancer](https://aws.amazon.com/blogs/networking-and-content-delivery/application-load-balancer-type-target-group-for-network-load-balancer/) for reference architectures and detailed configuration.
 
-![A diagram depicting AWS PrivateLink for connectivity to other VPCs and AWS Services](http://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/aws-privatelink.png)
+![A diagram depicting AWS PrivateLink for connectivity to other VPCs and AWS Services](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/aws-privatelink.png)
 
  The choice between Transit Gateway, VPC peering, and AWS PrivateLink is dependent on connectivity.
 +  **AWS PrivateLink** — Use AWS PrivateLink when you have a client/server set up where you want to allow one or more consumer VPCs unidirectional access to a specific service or set of instances in the service provider VPC or certain AWS services. Only the clients with access in the consumer VPC can initiate a connection to the service in the service provider VPC or AWS service. This is also a good option when client and servers in the two VPCs have overlapping IP addresses because AWS PrivateLink uses ENIs within the client VPC in a manner that ensures that are no IP conflicts with the service provider. You can access AWS PrivateLink endpoints over VPC peering, VPN, Transit Gateway, Cloud WAN, and AWS Direct Connect.

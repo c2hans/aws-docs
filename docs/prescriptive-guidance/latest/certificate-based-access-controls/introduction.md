@@ -19,7 +19,7 @@ Without proper policy configurations for IAM roles, any certificate issued by AW
 
 The following diagram shows the workflow of how an application can request access through IAM Roles Anywhere and then perform the permitted actions in the target AWS account.
 
-![Using certificate-based authentication to gain temporary access credentials for AWS resources.](http://docs.aws.amazon.com/prescriptive-guidance/latest/certificate-based-access-controls/images/guide-img/e306828d-cb6f-41be-b1da-12c08a777c76/images/fa80f90e-e9b5-493a-a98c-397bfa12de0b.png)
+![Using certificate-based authentication to gain temporary access credentials for AWS resources.](https://docs.aws.amazon.com/prescriptive-guidance/latest/certificate-based-access-controls/images/guide-img/e306828d-cb6f-41be-b1da-12c08a777c76/images/fa80f90e-e9b5-493a-a98c-397bfa12de0b.png)
 
 The diagram shows the following workflow:
 

@@ -14,7 +14,7 @@ In the Deployment dashboard wizard, you must choose between the following:
 
  **Shows five options: Create Text use case, Create Bedrock Agent use case, Create MCP Server Use Case, Create Agent Builder Use Case, or Create Workflow Use Case.**
 
-![deploy a use case](http://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/deploy-a-use-case.png)
+![deploy a use case](https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/deploy-a-use-case.png)
 
 ## Step 3a: Deploy a Text use case
 <a name="step-3a-deploy-a-text-use-case"></a>

@@ -54,7 +54,7 @@ This solution will also help the leadership team obtain insights about the resou
 
 The AWS CDK code will deploy all the resources that are required to set up resource-assessment capabilities in an AWS account. The following diagram shows the process of sending CloudTrail logs to AWS Glue, Amazon Athena, and Quick Sight.
 
-![AWS resource assessment with AWS Glue, Amazon Athena, and Amazon QuickSight in a six-step process.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a504774e-db7a-4c36-a22c-ce56d252fb58/images/8f2b549d-33a8-4cbf-86fd-33244716b668.png)
+![AWS resource assessment with AWS Glue, Amazon Athena, and Amazon QuickSight in a six-step process.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a504774e-db7a-4c36-a22c-ce56d252fb58/images/8f2b549d-33a8-4cbf-86fd-33244716b668.png)
 
 1. CloudTrail sends logs to an S3 bucket for storage.
 

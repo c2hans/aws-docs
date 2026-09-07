@@ -28,7 +28,7 @@ To perform a failover, run the `DR Orchestrator FAILOVER` state machine. At this
 
 The following diagram shows the concepts of the failover process for Amazon Aurora when using DR Orchestrator. Amazon Aurora and Amazon ElastiCache use the same workflow but with different state machines and Lambda functions.
 
-![Architecture diagram of the cross-Region failover process.](http://docs.aws.amazon.com/prescriptive-guidance/latest/automate-dr-solution-relational-database/images/guide-img/d246ab63-9f04-4f98-b5ad-efa34d559323/images/0a87461a-8e51-44b3-b2a9-78ac8640d403.png)
+![Architecture diagram of the cross-Region failover process.](https://docs.aws.amazon.com/prescriptive-guidance/latest/automate-dr-solution-relational-database/images/guide-img/d246ab63-9f04-4f98-b5ad-efa34d559323/images/0a87461a-8e51-44b3-b2a9-78ac8640d403.png)
 
 1. The `DR Orchestrator FAILOVER` state machine reads the input JSON parameters.
 
@@ -56,7 +56,7 @@ After replication is established between the two Regions, you can initiate the f
 
 The following diagram shows the concepts of the failback process for Amazon Aurora when using DR Orchestrator.
 
-![Architecture diagram of the cross-Region failback process.](http://docs.aws.amazon.com/prescriptive-guidance/latest/automate-dr-solution-relational-database/images/guide-img/d246ab63-9f04-4f98-b5ad-efa34d559323/images/0f870212-9fa8-49fe-bbaf-8f0507bae1b5.png)
+![Architecture diagram of the cross-Region failback process.](https://docs.aws.amazon.com/prescriptive-guidance/latest/automate-dr-solution-relational-database/images/guide-img/d246ab63-9f04-4f98-b5ad-efa34d559323/images/0f870212-9fa8-49fe-bbaf-8f0507bae1b5.png)
 
 1. Before beginning failback, take a manual DB snapshot to use when performing root cause analysis (RCA).
 
@@ -85,7 +85,7 @@ Use the `DR Orchestrator FAILOVER` state machine in the DR event when the primar
 
 The function can be called to fail over single or multiple databases in parallel.
 
-![State machine diagram showing failover for different resource types.](http://docs.aws.amazon.com/prescriptive-guidance/latest/automate-dr-solution-relational-database/images/guide-img/d246ab63-9f04-4f98-b5ad-efa34d559323/images/bd15b16b-e388-477c-9cd3-ea6a23aaeab3.jpeg)
+![State machine diagram showing failover for different resource types.](https://docs.aws.amazon.com/prescriptive-guidance/latest/automate-dr-solution-relational-database/images/guide-img/d246ab63-9f04-4f98-b5ad-efa34d559323/images/bd15b16b-e388-477c-9cd3-ea6a23aaeab3.jpeg)
 
 The state machine accepts parameters in the JSON format as shown in the following code:
 
@@ -138,7 +138,7 @@ The following table shows the parameters used by the `DR Orchestrator FAILOVER` 
 
 Use the `DR Orchestrator FAILBACK` state machine after the DR event, when the former primary Region (`us-east-1`) is up. You can create the [read replica](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html#USER_ReadRepl.Create) for Amazon RDS in the former primary Region from the new primary Region (`us-west-2`) to be compliant with your DR strategy. Because this is a planned event, you can schedule this activity over the weekend or during off-peak business hours with an estimated downtime.
 
-![State machine diagram showing the resource types for failback.](http://docs.aws.amazon.com/prescriptive-guidance/latest/automate-dr-solution-relational-database/images/guide-img/d246ab63-9f04-4f98-b5ad-efa34d559323/images/82105c06-f621-48a2-81b7-1deda944f9e7.jpeg)
+![State machine diagram showing the resource types for failback.](https://docs.aws.amazon.com/prescriptive-guidance/latest/automate-dr-solution-relational-database/images/guide-img/d246ab63-9f04-4f98-b5ad-efa34d559323/images/82105c06-f621-48a2-81b7-1deda944f9e7.jpeg)
 
 The state machine accepts parameters in the JSON format as shown in the following code:
 

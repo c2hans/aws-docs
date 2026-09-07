@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-operational-resil
 
  Customers have to make many decisions: where to place their content, where to run their applications, and how to achieve higher levels of availability and resiliency. For example, a financial institution can choose to run its mobile banking application in a single AWS Region to take advantage of multiple AZs.
 
-![Example of Multi-AZ Design](http://docs.aws.amazon.com/whitepapers/latest/aws-operational-resilience/images/multi-az-design.png)
+![Example of Multi-AZ Design](https://docs.aws.amazon.com/whitepapers/latest/aws-operational-resilience/images/multi-az-design.png)
 
  *Figure 1: Example of Multi-AZ Design*
 
@@ -27,6 +27,6 @@ Let’s take the example of a deployment across two AZs to illustrate how AZ ind
 
  To achieve assurance about the resiliency of their applications, we recommend that financial institution customers perform continuous performance, load, and failure testing; extensively use logging, metrics, and alarms; maintain runbooks for reporting and performance tracking; and validate their architecture through realistic, full-scale tests known as “game day” exercises. Per the regulatory requirements in their jurisdictions, financial institutions may provide evidence of such tests, runbooks, and exercises to their financial regulatory authorities.
 
-![Example of multi-Region desig](http://docs.aws.amazon.com/whitepapers/latest/aws-operational-resilience/images/multi-region-design.png)
+![Example of multi-Region desig](https://docs.aws.amazon.com/whitepapers/latest/aws-operational-resilience/images/multi-region-design.png)
 
  *Figure 2: Example of multi-Region design*

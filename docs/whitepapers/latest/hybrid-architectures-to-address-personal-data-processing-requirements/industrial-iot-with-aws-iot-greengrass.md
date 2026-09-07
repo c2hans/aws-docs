@@ -14,7 +14,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-
 
  AWS services – [AWS IoT Greengrass](https://aws.amazon.com/greengrass/) and [AWS IoT Core](https://aws.amazon.com/iot-core/)
 
-![Industrial IoT with AWS IoT Greengrass](http://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-to-address-personal-data-processing-requirements/images/industrial-iot-with-aws-iot-greengrass.png)
+![Industrial IoT with AWS IoT Greengrass](https://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-to-address-personal-data-processing-requirements/images/industrial-iot-with-aws-iot-greengrass.png)
 
  Industrial IoT with AWS IoT Greengrass
 

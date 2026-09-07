@@ -11,7 +11,7 @@ To contribute to this user guide, choose the **Edit this page on GitHub** link t
 
  **Applies to**: Linux `IPv4` Fargate nodes, Linux nodes with Amazon EC2 instances
 
-![Diagram of node with multiple network interfaces](http://docs.aws.amazon.com/eks/latest/userguide/images/cn-image.png)
+![Diagram of node with multiple network interfaces](https://docs.aws.amazon.com/eks/latest/userguide/images/cn-image.png)
 
 By default, when the Amazon VPC CNI plugin for Kubernetes creates secondary [elastic network interfaces](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html) (network interfaces) for your Amazon EC2 node, it creates them in the same subnet as the node’s primary network interface. It also associates the same security groups to the secondary network interface that are associated to the primary network interface. For one or more of the following reasons, you might want the plugin to create secondary network interfaces in a different subnet or want to associate different security groups to the secondary network interfaces, or both:
 + There’s a limited number of `IPv4` addresses that are available in the subnet that the primary network interface is in. This might limit the number of Pods that you can create in the subnet. By using a different subnet for secondary network interfaces, you can increase the number of available `IPv4` addresses available for Pods.

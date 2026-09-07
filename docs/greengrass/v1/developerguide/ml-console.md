@@ -211,7 +211,7 @@ If a new version is available, you can download it and upgrade the SDK version i
 1. Choose your Lambda function and upload your Lambda function deployment package.
 
    1. <a name="lambda-console-upload"></a>On the **Code** tab, under **Code source**, choose **Upload from**. From the dropdown, choose **.zip file**.
-![The Upload from dropdown with .zip file highlighted.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/lra-console/upload-deployment-package.png)
+![The Upload from dropdown with .zip file highlighted.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/lra-console/upload-deployment-package.png)
 
    1. Choose **Upload**, and then choose your `greengrassObjectClassification.zip` deployment package. Then, choose **Save**.
 
@@ -226,12 +226,12 @@ If a new version is available, you can download it and upgrade the SDK version i
 Greengrass groups can reference a Lambda function by alias (recommended) or by version. Using an alias makes it easier to manage code updates because you don't have to change your subscription table or group definition when the function code is updated. Instead, you just point the alias to the new function version.
 
 1. From the **Actions** menu, choose **Publish new version**.
-![The Publish new version option in the Actions menu.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/ml-inference/lambda-publish-version.png)
+![The Publish new version option in the Actions menu.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/ml-inference/lambda-publish-version.png)
 
 1. For **Version description**, enter **First version**, and then choose **Publish**.
 
 1. On the **greengrassObjectClassification: 1** configuration page, from the **Actions** menu, choose **Create alias**.
-![The Create alias option in the Actions menu.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/ml-inference/lambda-create-alias.png)
+![The Create alias option in the Actions menu.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/ml-inference/lambda-create-alias.png)
 
 1. On the **Create a new alias** page, use the following values:
    + For **Name**, enter **mlTest**.
@@ -410,7 +410,7 @@ The version in the path depends on the AWS IoT Greengrass Core software version 
       ```
 
 1. On the group configuration page, choose **Deploy**.
-![The group page with Deployments and Deploy highlighted.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/console-group-deployments-deploy.png)
+![The group page with Deployments and Deploy highlighted.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/console-group-deployments-deploy.png)
 
 1. In the **Lambda functions** tab, under the **System Lambda functions** section, select **IP detector** and choose **Edit**.
 
@@ -443,7 +443,7 @@ If a monitor is attached to the Raspberry Pi, the live camera feed is displayed 
 1. Choose **Subscribe**.
 
    If the test is successful, the messages from the Lambda function appear at the bottom of the page. Each message contains the top five prediction results of the image, using the format: probability, predicted class ID, and corresponding class name.
-![The Subscriptions page showing test results with message data.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/ml-inference/prediction-results.png)
+![The Subscriptions page showing test results with message data.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/ml-inference/prediction-results.png)
 
 ### Troubleshooting AWS IoT Greengrass ML inference
 <a name="ml-inference-troubleshooting"></a>

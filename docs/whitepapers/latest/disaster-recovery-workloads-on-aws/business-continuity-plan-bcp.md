@@ -27,7 +27,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-wor
 
  When creating a Disaster Recovery (DR) strategy, organizations most commonly plan for the Recovery Time Objective (RTO) and Recovery Point Objective (RPO).
 
-![Image showing relationship of recovery objectives.](http://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/images/recovery-objectives.png)
+![Image showing relationship of recovery objectives.](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/images/recovery-objectives.png)
 
 *Figure 3 - Recovery objectives*
 
@@ -35,7 +35,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-wor
 
  There are broadly four DR strategies discussed in this paper: backup and restore, pilot light, warm standby, and multi-site active/active (see [Disaster Recovery Options in the Cloud](disaster-recovery-options-in-the-cloud.md)). In the following diagram, the business has determined their maximum permissible RTO as well as the limit of what they can spend on their service restoration strategy. Given the business’ objectives, the DR strategies Pilot Light or Warm Standby will satisfy both the RTO and the cost criteria.
 
-![Graph showing recovery time objective as a relationship of costs and complexity versus length of service interruption.](http://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/images/recovery-time-objective.png)
+![Graph showing recovery time objective as a relationship of costs and complexity versus length of service interruption.](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/images/recovery-time-objective.png)
 
 *Figure 4 - Recovery time objective*
 
@@ -43,7 +43,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-wor
 
  In the following diagram, the business has determined their maximum permissible RPO as well as the limit of what they can spend on their data recovery strategy. Of the four DR strategies, either Pilot Light or Warm Standby DR strategy meet both criteria for RPO and cost.
 
-![Graph showing recovery point objective as a relationship of costs and complexity versus data loss before service interruption.](http://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/images/recovery-point-objective.png)
+![Graph showing recovery point objective as a relationship of costs and complexity versus data loss before service interruption.](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/images/recovery-point-objective.png)
 
 *Figure 5 - Recovery point objective*
 

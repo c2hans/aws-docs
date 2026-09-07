@@ -36,11 +36,11 @@ This pattern shows you how to host a gRPC-based application that runs on Kuberne
 
 The following diagram shows the architecture implemented by this pattern.
 
-![Architecture for gRPC-based application on Amazon EKS](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/abf727c1-ff8b-43a7-923f-bce825d1b459/images/281936fa-bc43-4b4e-a343-ba1eab97df38.png)
+![Architecture for gRPC-based application on Amazon EKS](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/abf727c1-ff8b-43a7-923f-bce825d1b459/images/281936fa-bc43-4b4e-a343-ba1eab97df38.png)
 
 The following diagram shows a workflow where SSL/TLS traffic is received from a gRPC client that offloads to an Application Load Balancer. Traffic is forwarded in plaintext to the gRPC server because it comes from a virtual private cloud (VPC).
 
-![Workflow for sending SSL/TLS traffic to a gRPC server](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/abf727c1-ff8b-43a7-923f-bce825d1b459/images/09e0c3f6-0c39-40b7-908f-8c4c693a5f02.png)
+![Workflow for sending SSL/TLS traffic to a gRPC server](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/abf727c1-ff8b-43a7-923f-bce825d1b459/images/09e0c3f6-0c39-40b7-908f-8c4c693a5f02.png)
 
 ## Tools
 <a name="deploy-a-grpc-based-application-on-an-amazon-eks-cluster-and-access-it-with-an-application-load-balancer-tools"></a>

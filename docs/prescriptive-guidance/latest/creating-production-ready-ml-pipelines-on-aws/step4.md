@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/creating-pr
 # Step 4. Create the pipeline
 <a name="step4"></a>
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/creating-production-ready-ml-pipelines-on-aws/images/guide-img/38c6f8a0-9908-46ce-9db4-ad6b4c4bc218/images/8e062f26-a42c-4552-9a3e-9e66c772a3cf.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/creating-production-ready-ml-pipelines-on-aws/images/guide-img/38c6f8a0-9908-46ce-9db4-ad6b4c4bc218/images/8e062f26-a42c-4552-9a3e-9e66c772a3cf.png)
 
 After you define the pipeline logically, it's time to create the infrastructure to support the pipeline. This step requires the following  capabilities, at a minimum:
 + Storage, to host and manage pipeline inputs and outputs, including code, model artifacts, and data used in training and inference runs.

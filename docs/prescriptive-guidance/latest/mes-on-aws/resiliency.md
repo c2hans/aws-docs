@@ -14,7 +14,7 @@ Resiliency can be divided into two main factors: availability and disaster recov
 
 We define *availability* as the percentage of time that a microservice is available for use, as represented in the following formula. This percentage is calculated over a period of time, such as a month, a year, or trailing three years.
 
-![Availability formula for MES architectures](http://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/images/guide-img/093538ca-c7c9-4311-a0e9-8a876ae66d65/images/483b039c-b09f-4d6a-baf8-d22e904d76e2.png)
+![Availability formula for MES architectures](https://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/images/guide-img/093538ca-c7c9-4311-a0e9-8a876ae66d65/images/483b039c-b09f-4d6a-baf8-d22e904d76e2.png)
 
 This formula requires an understanding of three metrics that are common in manufacturing and equipment maintenance:
 + **Mean time between failures (MTBF)**: The average time between the start of regular operations for a microservice and its subsequent failure.
@@ -23,7 +23,7 @@ This formula requires an understanding of three metrics that are common in manuf
 
 The following diagram illustrates these availability metrics.
 
-![Availability metrics for MES architectures](http://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/images/guide-img/093538ca-c7c9-4311-a0e9-8a876ae66d65/images/1e1bd0c7-3d3d-4cc8-8fdb-63d8f876748c.png)
+![Availability metrics for MES architectures](https://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/images/guide-img/093538ca-c7c9-4311-a0e9-8a876ae66d65/images/1e1bd0c7-3d3d-4cc8-8fdb-63d8f876748c.png)
 
 A resilient, highly available MES aims to reduce MTTR and MTTD and increase MTBF. Although an ideal design would eliminate failures, it isn't realistic. The traditional, monolithic MES failures were hard to detect and took longer to repair. Modern, cloud-native MES allows for faster detection, quick repairs, and business continuity through Multi-AZ deployments. For best practices for highly available modern systems with relevant AWS services , see the white paper, [Availability and Beyond: Understanding and Improving the Resilience of Distributed Systems on AWS](https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyond-improving-resilience/availability-and-beyond-improving-resilience.html).
 
@@ -36,10 +36,10 @@ Disaster recovery refers to the process of preparing for, and recovering from, a
 
 The following diagram illustrates these disaster recovery metrics.
 
-![Disaster recovery metrics for MES architectures](http://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/images/guide-img/093538ca-c7c9-4311-a0e9-8a876ae66d65/images/8592c06c-39b2-4063-afd7-515c68904d85.png)
+![Disaster recovery metrics for MES architectures](https://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/images/guide-img/093538ca-c7c9-4311-a0e9-8a876ae66d65/images/8592c06c-39b2-4063-afd7-515c68904d85.png)
 
 The following diagram depicts different disaster recovery strategies.
 
-![Disaster recovery strategies for MES architectures](http://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/images/guide-img/093538ca-c7c9-4311-a0e9-8a876ae66d65/images/5b21738d-6f99-411c-982a-59c8a173780f.png)
+![Disaster recovery strategies for MES architectures](https://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/images/guide-img/093538ca-c7c9-4311-a0e9-8a876ae66d65/images/5b21738d-6f99-411c-982a-59c8a173780f.png)
 
 You can find detailed guidance on implementing these strategies in the AWS Well-Architected Framework guide, [Disaster Recovery of Workloads on AWS: Recovery in the Cloud](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-workloads-on-aws.html).

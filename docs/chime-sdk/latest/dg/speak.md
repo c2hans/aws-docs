@@ -151,7 +151,7 @@ This table lists and describes the error messages thrown by the the `Speak` acti
 
 The following diagram shows the program flow that enables the `Speak` action for a caller. In this example, the caller hears text that
 
-![Diagram showing the program flow for enabling the Speak action for a caller.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/Speak1.png)
+![Diagram showing the program flow for enabling the Speak action for a caller.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/Speak1.png)
 
 **In the diagram**
 Using a soft phone, a caller enters a number registered to a SIP media application. The application uses the SIP `INVITE` method and sends the caller a `Trying (100)` response. That indicates that the next-hop server received the call request. The SIP application then uses `INVITE` to contact the endpoint. Once the connection is established, the applications sends `Ringing (180)` response to the caller, and alerting begins.
@@ -162,7 +162,7 @@ If the `Speak` action succeeds and converts the text to speech, it returns an `A
 
 The following diagram shows the program flow than enables the `Speak` action for a callee.
 
-![Diagram showing the program flow for enabling the Speak action for a callee. You can do this on any bridged call.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/Speak2.png)
+![Diagram showing the program flow for enabling the Speak action for a callee. You can do this on any bridged call.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/Speak2.png)
 
 **In the diagram**
 A caller enters a number registered to a SIP media application, and the application responds as described for the previous diagram. When the Lambda function receives the `NEW_INBOUND_CALL` event, it returns the [CallAndBridge](call-and-bridge.md) action to the SIP application. The application then uses the SIP `INVITE` method to send the `Trying (100)` and `Ringing (180)` responses to the callee.

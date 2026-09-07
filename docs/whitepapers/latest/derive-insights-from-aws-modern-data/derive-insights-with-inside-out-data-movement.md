@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-
 
  To get the most from your data lakes and these purpose-built stores, you need to move data between these systems easily. For example, clickstream data from web applications can be collected directly in a data lake and a portion of that data can be moved out to a data warehouse for daily reporting. We think of this concept as *inside-out data movement*.
 
-![Diagram showing inside-out data movement](http://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-aws-modern-data/images/inside-out-data-movement.png)
+![Diagram showing inside-out data movement](https://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-aws-modern-data/images/inside-out-data-movement.png)
 
 ## Derive real time event-based visualization insights from your Lake house with Amazon Redshift and Amazon Quick
 <a name="derive-real-time-event-based-visualization-insights-from-your-lake-house-with-amazon-redshift-and-amazon-quicksight"></a>
@@ -18,7 +18,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-
 
  The following diagram illustrates the Modern Data inside-out data movement with Amazon Redshift and [Amazon Quick](https://aws.amazon.com/quicksight/) to perform data visualization insights.
 
-![Reference architecture diagram showing deriving real time event-based visualization insights with Amazon Redshift and Amazon Quick.](http://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-aws-modern-data/images/data-visualization.png)
+![Reference architecture diagram showing deriving real time event-based visualization insights with Amazon Redshift and Amazon Quick.](https://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-aws-modern-data/images/data-visualization.png)
 
  The steps that data follows through the architecture are as follows:
 
@@ -39,7 +39,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-
 
  The following diagram illustrates the Modern Data inside-out data movement with AWS [Glue DataBrew](https://aws.amazon.com/glue/features/databrew/), Amazon Athena, Amazon Redshift, and Amazon Quick to perform persona-centric data analytics.
 
-![Diagram showing how to derive persona-centric insights from your Modern Data with AWS Glue DataBrew, Amazon Athena, Amazon Redshift, and Amazon Quick](http://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-aws-modern-data/images/persona-centric-insights.png)
+![Diagram showing how to derive persona-centric insights from your Modern Data with AWS Glue DataBrew, Amazon Athena, Amazon Redshift, and Amazon Quick](https://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-aws-modern-data/images/persona-centric-insights.png)
 
  The steps that data follows through the architecture are as follows:
 

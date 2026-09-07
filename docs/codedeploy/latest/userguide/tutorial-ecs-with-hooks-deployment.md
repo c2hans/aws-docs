@@ -39,4 +39,4 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/tutorial-ecs
 
  You can monitor your deployment in **Deployment status**. After 100% of production traffic is routed to the replacement task set, you can choose **Terminate original task set** to immediately terminate the original task set. If you do not choose **Terminate original task set**, the original task set terminates after the duration you specified when you created your deployment group.
 
-![The deployment status section of the CodeDeploy console.](http://docs.aws.amazon.com/codedeploy/latest/userguide/images/ecs-tutorial-deployment-status-with-test-listener.png)
+![The deployment status section of the CodeDeploy console.](https://docs.aws.amazon.com/codedeploy/latest/userguide/images/ecs-tutorial-deployment-status-with-test-listener.png)

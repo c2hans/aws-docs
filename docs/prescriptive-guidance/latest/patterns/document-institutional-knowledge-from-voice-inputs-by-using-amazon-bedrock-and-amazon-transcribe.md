@@ -40,7 +40,7 @@ This pattern explains how to capture institutional knowledge through voice recor
 
 The architecture represents a serverless workflow on AWS. [AWS Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html) orchestrates Lambda functions for audio processing, text analysis, and document generation. The following diagram shows the Step Functions workflow, also known as a *state machine*.
 
-![Architecture diagram of Step Functions state machine generating a document](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/f1e0106d-b046-4adc-9718-c299efb7b436/images/e90298ca-1b7f-4c3e-97bd-311a9d5a4997.png)
+![Architecture diagram of Step Functions state machine generating a document](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/f1e0106d-b046-4adc-9718-c299efb7b436/images/e90298ca-1b7f-4c3e-97bd-311a9d5a4997.png)
 
 Each step in the state machine is handled by a distinct Lambda function. The following are the steps in the document generation process:
 

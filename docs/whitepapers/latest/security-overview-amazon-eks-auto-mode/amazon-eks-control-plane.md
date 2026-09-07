@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-overview-ama
 
 The Kubernetes control plane managed by Amazon EKS runs inside an EKS-managed VPC. This control plane is single tenant, meaning that for each EKS cluster there is a unique EKS managed VPC and Kubernetes control plane. The EKS control plane comprises the Kubernetes API server nodes and [etcd](https://etcd.io/) cluster. Kubernetes API server nodes run components such as the API server, scheduler, and `kube-controller-manager` in an auto-scaling group. EKS runs a minimum of two API server nodes in distinct Availability Zones within an AWS Region. Likewise, for durability, the etcd server nodes also run in an auto-scaling group that spans three Availability Zones. EKS runs a NAT gateway in each Availability Zone, and API servers and etcd servers run in a private subnet. This architecture protects cluster availability so that an event in a single Availability Zone doesn't affect the EKS cluster's availability.
 
-![EKS control plane architecture with API servers and etcd across three Availability Zones.](http://docs.aws.amazon.com/whitepapers/latest/security-overview-amazon-eks-auto-mode/images/image4.png)
+![EKS control plane architecture with API servers and etcd across three Availability Zones.](https://docs.aws.amazon.com/whitepapers/latest/security-overview-amazon-eks-auto-mode/images/image4.png)
 
 ## Kubernetes API data
 <a name="kubernetes-api-data"></a>

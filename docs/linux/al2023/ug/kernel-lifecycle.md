@@ -20,7 +20,7 @@ After four years, the kernel reaches end of life and no longer receives security
 
 The following chart shows the support timeline for current Amazon Linux LTS kernels:
 
-![Timeline showing kernel versions 6.1, 6.12, 6.18, and 7.x with full support and maintenance phases from 2023 to 2029.](http://docs.aws.amazon.com/linux/al2023/ug/images/kernel-lifecycle-chart.png)
+![Timeline showing kernel versions 6.1, 6.12, 6.18, and 7.x with full support and maintenance phases from 2023 to 2029.](https://docs.aws.amazon.com/linux/al2023/ug/images/kernel-lifecycle-chart.png)
 
 ## Kernel Updates
 <a name="kernel-updates"></a>

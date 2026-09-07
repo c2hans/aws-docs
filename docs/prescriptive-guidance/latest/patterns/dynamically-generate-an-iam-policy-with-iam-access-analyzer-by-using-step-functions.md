@@ -41,7 +41,7 @@ This pattern includes options for implementing the solution with AWS Cloud Devel
 
 **Target architecture **
 
-![The Step Functions workflow generating a new policy and storing it in CodeCommit.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/cb9ee0c9-3fe0-43d9-9dd2-1aedb705c78f/images/eb13a5db-f803-40b1-9a8c-4ef13d584cd4.png)
+![The Step Functions workflow generating a new policy and storing it in CodeCommit.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/cb9ee0c9-3fe0-43d9-9dd2-1aedb705c78f/images/eb13a5db-f803-40b1-9a8c-4ef13d584cd4.png)
 
 1. A regularly scheduled Amazon EventBridge event rule starts a Step Functions workflow. You define this regeneration schedule as part of setting up this solution.
 

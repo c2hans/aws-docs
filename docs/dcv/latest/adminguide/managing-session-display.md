@@ -62,7 +62,7 @@ For example, the following display layout descriptor specifies two screens:
 + Screen 1: 1920x1080 resolution offset to x=0, y=0
 + Screen 2: 800x600 resolution offset to x=1920, y=0 so that it appears to the right of screen 1.
 
-![Screen layout with two screens.](http://docs.aws.amazon.com/dcv/latest/adminguide/images/eg2.png)
+![Screen layout with two screens.](https://docs.aws.amazon.com/dcv/latest/adminguide/images/eg2.png)
 
 ```
 1920x1080+0+0,800x600+1920+0
@@ -73,7 +73,7 @@ The following display layout descriptor specifies three screens.
 + Screen 2: 1920x1080 resolution offset to x=1920, y=0 so that it appears to the right of screen 1.
 + Screen 3: 1024x768 resolution offset to x=-1024, y=0 so that it appears to the left of screen 1.
 
-![Screen layout with three screens.](http://docs.aws.amazon.com/dcv/latest/adminguide/images/eg1.png)
+![Screen layout with three screens.](https://docs.aws.amazon.com/dcv/latest/adminguide/images/eg1.png)
 
 ```
 1920x1080+0+0,1920x1080+1920+0,1024x768-1024+0

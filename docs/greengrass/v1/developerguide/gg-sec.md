@@ -11,7 +11,7 @@ AWS IoT Greengrass uses X.509 certificates, AWS IoT policies, and IAM policies a
 
 The following diagram shows the components of the AWS IoT Greengrass security model:
 
-![Greengrass service architecture diagram showing AWS services, Greengrass core and connected devices, and their certificate interactions.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-security.png)
+![Greengrass service architecture diagram showing AWS services, Greengrass core and connected devices, and their certificate interactions.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/gg-security.png)
 
 A - Greengrass service role
 A customer-created IAM role assumed by AWS IoT Greengrass when accessing to your AWS resources from AWS IoT Core, AWS Lambda, and other AWS services. For more information, see [Greengrass service role](service-role.md).

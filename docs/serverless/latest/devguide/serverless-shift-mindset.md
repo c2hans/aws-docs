@@ -23,7 +23,7 @@ Web frameworks help you build solutions faster by including common tools and fea
 
 The following diagram represents some of the complex mix of components that are included with frameworks. Routers send URLs to classes or functions to handle requests and return responses. Utility classes retrieve form data, query strings, headers, and cookies. A bundled abstraction layer stores and retrieves data in SQL or NoSQL databases. Additional components manage connections to external services through synchronous API calls or asynchronous message queues. Extension points exist to bolt-on even more components, such as asynchronous hooks, or single sign-on authentication.
 
- ![Decorative image showing a the internal and external complexity of a traditional web application framework and related services such as Data, 3rd Party, and Storage.](http://docs.aws.amazon.com/serverless/latest/devguide/images/traditional-webdev-complex.png)
+ ![Decorative image showing a the internal and external complexity of a traditional web application framework and related services such as Data, 3rd Party, and Storage.](https://docs.aws.amazon.com/serverless/latest/devguide/images/traditional-webdev-complex.png)
 
 We call these solutions *traditional* because request/response has been the model for web applications for decades. We call them *monolithic* because everything is provided in one package.
 
@@ -85,7 +85,7 @@ Event-driven architecture (EDA) is a modern architecture pattern built from smal
 
 The following diagram shows an event-driven serverless microservice. A client request is converted by an API Gateway into an event that is sent to a Lambda compute service. A Lambda function retrieves info from a DynamoDB data store. That data is returned in an event to API Gateway, which sends a response to the client with all the appropriate headers, cookies, and security tokens.
 
- ![Diagram of flow for a microservice. A client box with Web & Mobile labels, connects by an arrow to an API Gateway (HTTP) block. API Gateway block connects by an arrow with red diamond with text "Event" inside to a Lambda (compute) box. Lambda box is connected by double ended arrow with an API label to a DynamoDB (Data) icon. Lambda box is also connected by an arrow with a different colored "event" diamond back to API Gateway. API Gateway connects through a lighter arrow back to the Client.](http://docs.aws.amazon.com/serverless/latest/devguide/images/arch-serverless-essentials.png)
+ ![Diagram of flow for a microservice. A client box with Web & Mobile labels, connects by an arrow to an API Gateway (HTTP) block. API Gateway block connects by an arrow with red diamond with text "Event" inside to a Lambda (compute) box. Lambda box is connected by double ended arrow with an API label to a DynamoDB (Data) icon. Lambda box is also connected by an arrow with a different colored "event" diamond back to API Gateway. API Gateway connects through a lighter arrow back to the Client.](https://docs.aws.amazon.com/serverless/latest/devguide/images/arch-serverless-essentials.png)
 
 Many traditional systems are designed to run periodically and process batches of transactions that have built up over time. For example, a banking application may run every hour to process ATM transactions into central ledgers. In Lambda-based applications, the custom processing should be triggered by every event, allowing the service to scale up concurrency as needed, to provide near-real time processing of transactions.
 

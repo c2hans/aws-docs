@@ -42,11 +42,11 @@ The .NET web application is deployed to AWS Elastic Beanstalk, which runs in an
 
 **Migration architecture**
 
-![Kudu accesses Azure App Service content, gets deployment package, uploads it to Elastic Beanstalk.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/df606a2d-b0a8-4035-b377-0a760e7300c9/images/dd15f97b-9cf2-4bcc-af45-44df1c4ca4a5.png)
+![Kudu accesses Azure App Service content, gets deployment package, uploads it to Elastic Beanstalk.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/df606a2d-b0a8-4035-b377-0a760e7300c9/images/dd15f97b-9cf2-4bcc-af45-44df1c4ca4a5.png)
 
 **Deployment workflow**
 
-![Deployment workflow to create app, publish it to launch environment, and then manage environment.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/df606a2d-b0a8-4035-b377-0a760e7300c9/images/accec77d-c753-4166-8f27-bd4932b3d884.png)
+![Deployment workflow to create app, publish it to launch environment, and then manage environment.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/df606a2d-b0a8-4035-b377-0a760e7300c9/images/accec77d-c753-4166-8f27-bd4932b3d884.png)
 
 ## Tools
 <a name="migrate-a-net-application-from-microsoft-azure-app-service-to-aws-elastic-beanstalk-tools"></a>

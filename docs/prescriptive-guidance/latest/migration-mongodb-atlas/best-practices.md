@@ -30,7 +30,7 @@ You can use AWS PrivateLink to connect MongoDB Atlas to your AWS applications an
 
 The following diagram illustrates the private network connectivity option.
 
-![Integrating MongoDB Atlas with AWS PrivateLink, for private network connectivity.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-mongodb-atlas/images/guide-img/2acef6bf-a074-43c2-a021-70385dda418f/images/af2a19b7-a894-4383-9552-fbd0bcce716d.png)
+![Integrating MongoDB Atlas with AWS PrivateLink, for private network connectivity.](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-mongodb-atlas/images/guide-img/2acef6bf-a074-43c2-a021-70385dda418f/images/af2a19b7-a894-4383-9552-fbd0bcce716d.png)
 
 AWS PrivateLink provides these benefits:
 + One-way connection: no extension of the network trust boundary.
@@ -42,7 +42,7 @@ AWS PrivateLink provides these benefits:
 
 Atlas supports SAML 2.0 authentication through integration with IAM Identity Center and other identity management providers. SAML 2.0 authentication is an open standard for exchanging identity and security information between applications and service providers. Atlas administrators can centralize user management and single sign-on by using identity management services such as IAM Identity Center or existing corporate directory services. The following diagram shows how you can use IAM Identity Center with Atlas. For more information, see the AWS blog post [How to Integrate AWS Single Sign-On with MongoDB Atlas](https://aws.amazon.com/blogs/apn/how-to-integrate-aws-single-sign-on-with-mongodb-atlas/).
 
-![Integrating MongoDB Atlas with IAM Identity Center, to implement SAML authentication.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-mongodb-atlas/images/guide-img/2acef6bf-a074-43c2-a021-70385dda418f/images/50910bee-d6d5-437b-9b6d-eac08e303e07.png)
+![Integrating MongoDB Atlas with IAM Identity Center, to implement SAML authentication.](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-mongodb-atlas/images/guide-img/2acef6bf-a074-43c2-a021-70385dda418f/images/50910bee-d6d5-437b-9b6d-eac08e303e07.png)
 
 [AWS Partner Network Blog](https://aws.amazon.com/blogs/apn/tag/mongodb-atlas/)
 

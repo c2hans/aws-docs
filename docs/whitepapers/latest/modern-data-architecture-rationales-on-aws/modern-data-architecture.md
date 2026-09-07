@@ -25,11 +25,11 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/modern-data-architect
 +  Support diverse consumption mechanisms.
 +  Secure and governed.
 
-![A diagram depicting a modern data architecture ecosystem.](http://docs.aws.amazon.com/whitepapers/latest/modern-data-architecture-rationales-on-aws/images/modern-data-arch-3.png)
+![A diagram depicting a modern data architecture ecosystem.](https://docs.aws.amazon.com/whitepapers/latest/modern-data-architecture-rationales-on-aws/images/modern-data-arch-3.png)
 
  Before looking into details of the tools that make up a modern data architecture, it’s important to understand the different layers through which the data passes, and the significance of each of these layers.
 
-![A diagram depicting data layers of modern data architecture.](http://docs.aws.amazon.com/whitepapers/latest/modern-data-architecture-rationales-on-aws/images/modern-data-arch-4.png)
+![A diagram depicting data layers of modern data architecture.](https://docs.aws.amazon.com/whitepapers/latest/modern-data-architecture-rationales-on-aws/images/modern-data-arch-4.png)
 
 ## Raw layer
 <a name="raw-layer"></a>

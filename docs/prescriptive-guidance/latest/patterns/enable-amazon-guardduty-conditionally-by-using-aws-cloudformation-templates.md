@@ -43,7 +43,7 @@ The pattern uses CloudFormation for infrastructure as code (IaC). You use a Clou
 
 The following high-level architecture diagram shows the process of enabling GuardDuty by deploying a CloudFormation template:
 
-![Using a CloudFormation stack to enable GuardDuty in an AWS account.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/3abd7cb7-0937-41fe-8eaa-79aedb182732/images/71624052-eebc-474a-9aa3-8606d87fc51d.png)
+![Using a CloudFormation stack to enable GuardDuty in an AWS account.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/3abd7cb7-0937-41fe-8eaa-79aedb182732/images/71624052-eebc-474a-9aa3-8606d87fc51d.png)
 
 1. You deploy a CloudFormation template to create a CloudFormation stack.
 

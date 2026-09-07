@@ -28,7 +28,7 @@ You can also use [AWS Fargate](https://docs.aws.amazon.com/AmazonECS/latest/deve
 ## Architecture
 <a name="access-container-applications-privately-on-amazon-ecs-by-using-aws-privatelink-and-a-network-load-balancer-architecture"></a>
 
-![Using AWS PrivateLink to access a container app on Amazon ECS behind a Network Load Balancer.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a316bf46-24db-4514-957d-abc60f8f6962/images/573951ed-74bb-4023-9d9c-43e77e4f8eda.png)
+![Using AWS PrivateLink to access a container app on Amazon ECS behind a Network Load Balancer.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a316bf46-24db-4514-957d-abc60f8f6962/images/573951ed-74bb-4023-9d9c-43e77e4f8eda.png)
 
 **Technology stack**
 + Amazon CloudWatch

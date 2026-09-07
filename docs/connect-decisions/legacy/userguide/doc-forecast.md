@@ -27,12 +27,12 @@ For inventory policy based on days of coverage, the days to cover is the *target
 ## Calculation logic for DOC\_fcst policy
 <a name="reorder-quantity"></a>
 
-![Calculation logic for DOC_fcst policy](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/doc_fcst.png)
+![Calculation logic for DOC_fcst policy](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/doc_fcst.png)
 
 ## Calculation Logic for doc\_dem policy
 <a name="calculation-logic"></a>
 
-![Calculation logic for doc_dem policy](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/doc_dem.png)
+![Calculation logic for doc_dem policy](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/doc_dem.png)
 
 The goal of days of coverage policy is to make sure on each review date that there is enough on-hand inventory to cover the configured days of coverage. The first part of the formula computes the days of coverage from the next review date until the end of days of coverage configured. The total covering period is *DOCP,S*​ for product *P* and site *S*. The second part of the formula computes the extra demand before the target review date (the first review date after delivery). The covering period starts from the expected deliver date and ends with the target review date. If the current on-hand inventory on the delivery date is able to cover demand of this period, the system reorders 0. The max function determines whether we must order extra.
 
@@ -41,6 +41,6 @@ The goal of days of coverage policy is to make sure on each review date that the
 
 The input for the reorder quantity calculation is the target inventory level and the current inventory level. If the inventory level record is missing, the system generates plan exceptions for you to review.
 
-![Calculation of reorder quantity](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/roq_calculation.png)
+![Calculation of reorder quantity](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/roq_calculation.png)
 
 The reorder quantity of product *P*, site *S*, and date *D* is the difference between the target inventory level and the current inventory level. If the current inventory level is higher than the target inventory level, the reorder quantity is 0.

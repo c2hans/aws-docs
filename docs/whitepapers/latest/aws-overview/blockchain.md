@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/blockchain.html
 ---
 
-# ![AWS Blockchain category icon](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/blockchain-icon.jpg)Blockchain
+# ![AWS Blockchain category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/blockchain-icon.jpg)Blockchain
 <a name="blockchain"></a>
 
 ------

@@ -11,7 +11,7 @@ In this scenario, multiple data producers generate data, encrypt it, and write t
 
 You can find the source code for these examples in [Java and Python](sample-cache-example-code.md). The sample also includes a CloudFormation template that defines the resources for the samples.
 
-![This diagram shows how data producers and consumers use the AWS KMS, Amazon Kinesis Data Streams, and Amazon DynamoDB.](http://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/images/simplecache-example.png)
+![This diagram shows how data producers and consumers use the AWS KMS, Amazon Kinesis Data Streams, and Amazon DynamoDB.](https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/images/simplecache-example.png)
 
 ## Local cache results
 <a name="caching-example-impact"></a>

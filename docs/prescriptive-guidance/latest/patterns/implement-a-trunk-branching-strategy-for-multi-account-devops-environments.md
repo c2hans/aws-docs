@@ -30,7 +30,7 @@ This guide provides a diagram that shows how an organization might implement the
 
 The following diagram can be used like a [Punnett square](https://en.wikipedia.org/wiki/Punnett_square) (Wikipedia). You line up the branches on the vertical axis with the AWS environments on the horizontal axis to determine what actions to perform in each scenario. The numbers indicate the sequence of the actions in the workflow. This example takes you from a `feature` branch through deployment in production.
 
-![Punnett square of the Trunk activities in each branch and environment](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5df23e4d-84fe-4ab3-a54f-96b6406abc57/images/ad549ef4-90ad-47c1-bd01-f21d6ce5511a.png)
+![Punnett square of the Trunk activities in each branch and environment](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5df23e4d-84fe-4ab3-a54f-96b6406abc57/images/ad549ef4-90ad-47c1-bd01-f21d6ce5511a.png)
 
 For more information about the AWS accounts, environments, and branches in a Trunk approach, see [Choosing a Git branching strategy for multi-account DevOps environments](https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-git-branch-approach).
 

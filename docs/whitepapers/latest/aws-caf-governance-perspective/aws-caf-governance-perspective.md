@@ -41,7 +41,7 @@ Publication date: **August 26, 2022** ([Document revisions](document-revisions.m
 
  AWS and the [AWS Partner Network](https://aws.amazon.com/partners/find-a-partner/) (APN) provide tools and services that can help you along each step of the way. [AWS Professional Services](https://aws.amazon.com/professional-services/) is a global team of experts that provides assistance through a collection of AWS CAF aligned offerings that can help you achieve specific outcomes related to your cloud transformation.
 
-![A diagram that shows AWS CAF Governance perspective capabilities .](http://docs.aws.amazon.com/whitepapers/latest/aws-caf-governance-perspective/images/caf-governance.png)
+![A diagram that shows AWS CAF Governance perspective capabilities .](https://docs.aws.amazon.com/whitepapers/latest/aws-caf-governance-perspective/images/caf-governance.png)
 
 ## Are you Well-Architected?
 <a name="are-you-well-architected"></a>

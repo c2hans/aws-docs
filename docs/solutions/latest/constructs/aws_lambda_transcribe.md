@@ -153,7 +153,7 @@ Out of the box implementation of the Construct without any override will set the
 ## Architecture
 <a name="_architecture"></a>
 
-![Diagram showing the Lambda function, source and destination S3 buckets, Amazon Transcribe service, and IAM roles created by the construct](http://docs.aws.amazon.com/solutions/latest/constructs/images/aws-lambda-transcribe.png)
+![Diagram showing the Lambda function, source and destination S3 buckets, Amazon Transcribe service, and IAM roles created by the construct](https://docs.aws.amazon.com/solutions/latest/constructs/images/aws-lambda-transcribe.png)
 
 ## Example Lambda Function Implementation
 <a name="_example_lambda_function_implementation"></a>

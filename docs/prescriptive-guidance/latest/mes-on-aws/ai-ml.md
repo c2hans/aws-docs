@@ -21,7 +21,7 @@ Here are some of the prominent AWS ML services for industrials:
 
 In manufacturing quality management, automated quality inspection is one of the most popular use cases for computer vision and machine learning. Manufacturers can place a camera at a location such as a conveyor belt, mixer chute, packaging station, stock room, or laboratory to get visuals. The camera can provide a good-quality picture of visual defects or anomalies, help manufacturers perform inspections of up to 100 percent of all parts or products with improved inspection accuracy, and unlock insight for further improvements. The following diagram shows a typical architecture for automated quality inspection.
 
-![MES architecture for AI/ML use cases](http://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/images/guide-img/093538ca-c7c9-4311-a0e9-8a876ae66d65/images/b9c85a8c-0f85-434b-a65a-f63429ecad5e.png)
+![MES architecture for AI/ML use cases](https://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/images/guide-img/093538ca-c7c9-4311-a0e9-8a876ae66d65/images/b9c85a8c-0f85-434b-a65a-f63429ecad5e.png)
 
 1. A camera that is capable of communicating on the network shares the image.
 

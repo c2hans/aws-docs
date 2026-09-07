@@ -22,7 +22,7 @@ To better understand how factories work, consider the example of a car manufactu
 
 The following TypeScript sample project, as shown in the following image, includes a **common** folder where you can keep all your constructs or common functionalities.
 
-![Common folder](http://docs.aws.amazon.com/prescriptive-guidance/latest/best-practices-cdk-typescript-iac/images/guide-img/b7d5d887-7172-4d47-9f1f-1cf7ae181482/images/f62f4ebc-a544-47a2-85cf-6a5cd5b92219.png)
+![Common folder](https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practices-cdk-typescript-iac/images/guide-img/b7d5d887-7172-4d47-9f1f-1cf7ae181482/images/f62f4ebc-a544-47a2-85cf-6a5cd5b92219.png)
 
 For example, the **compute** folder (residing in the **common** folder) holds all the logic for different compute constructs. New developers can easily add new compute constructs without impacting the other resources. All the other constructs won't need to create new resources internally. Instead, these constructs simply call the common construct factory. You can organize other constructs, such as storage, in the same way.
 

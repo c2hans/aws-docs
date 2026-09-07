@@ -16,19 +16,19 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-wor
 
  Disaster recovery can be compared to *availability*, which is another important component of your resiliency strategy. Whereas disaster recovery measures objectives for one-time events, availability objectives measure mean values over a period of time.
 
-![Image showing resiliency objectives for disaster recovery (RTO, RPO) and Availability (MTBF, MTTR).](http://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/images/resiliency-objectives.png)
+![Image showing resiliency objectives for disaster recovery (RTO, RPO) and Availability (MTBF, MTTR).](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/images/resiliency-objectives.png)
 
 *Figure 1 - Resiliency Objectives *
 
  Availability is calculated using Mean Time Between Failures (MTBF) and Mean Time to Recover (MTTR):
 
-![Availability equals Available for Use Time divided by Total Time equals MTBF divided by MTBF plus MTTR.](http://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/images/availability-calculation-time-based.png)
+![Availability equals Available for Use Time divided by Total Time equals MTBF divided by MTBF plus MTTR.](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/images/availability-calculation-time-based.png)
 
  This approach is often referred to as “nines”, where a 99.9% availability target is referred to as “three nines”.
 
  For your workload, it may be easier to count successful and failed requests instead of using a time-based approach. In this case, the following calculation can be used:
 
-![Availability equals successful responses divided by valid requests.](http://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/images/availability-calculation-successful-failed-requests.png)
+![Availability equals successful responses divided by valid requests.](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/images/availability-calculation-successful-failed-requests.png)
 
  Disaster recovery focuses on disaster events, whereas availability focuses on more common disruptions of smaller scale such as component failures, network issues, software bugs, and load spikes. The objective of disaster recovery is business continuity, whereas availability concerns maximizing the time that a workload is available to perform its intended business functionality. Both should be part of your resiliency strategy.
 

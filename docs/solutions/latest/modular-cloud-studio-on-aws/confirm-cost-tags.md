@@ -16,7 +16,7 @@ After you activate cost allocation tags associated with the solution, you must c
 1. In the **Overview** tab, in **Cost**, select **Add user tag**.
 
     **Cost tab**
-![cost tab](http://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/images/cost-tab.png)
+![cost tab](https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/images/cost-tab.png)
 
 1. On the **Add user tag** page, enter `confirm`, then select **Add user tag**.
 

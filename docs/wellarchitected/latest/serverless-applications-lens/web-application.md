@@ -19,7 +19,7 @@ Web applications often have demanding requirements to ensure a consistent, secur
 ## Reference architecture
 <a name="webapp-ref-arch"></a>
 
-![Reference architecture diagram for a web application](http://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/images/reference-architecture-for-web-application.png)
+![Reference architecture diagram for a web application](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/images/reference-architecture-for-web-application.png)
 
 1.  **Amazon Cognito user pools** provides user management and identity provider features for your web application. Tokens issued by Amazon Cognito are used to authenticate users when making request to Amazon API Gateway.
 

@@ -34,7 +34,7 @@ This procedure shows how to create a serverless application with the Toolkit for
 1. To open the **Command Palette**, choose **View**, **Command Palette**, and then enter **AWS**.
 
 1. Choose **AWS Toolkit Create Lambda SAM Application**.
-![Command palette dialog box.](http://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/sam-create-app-cmdlet-updated.png)
+![Command palette dialog box.](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/sam-create-app-cmdlet-updated.png)
 **Note**
 If the AWS SAM CLI isn't installed, you get an error in the lower-right corner of the VS Code editor. If this happens, verify that you've met all the [assumptions and prerequisites](#serverless-apps-assumptions).
 
@@ -121,7 +121,7 @@ If you use a template with a name that's different from `template.yaml`, the Cod
 1. In the editor for `template.yaml`, go to the `Resources` section of the template that defines serverless resources. In this case, this is the `HelloWorldFunction` resource of type `AWS::Serverless::Function`.
 
    In the CodeLens indicator for this resource, choose **Add Debug Configuration**.
-![Using the CodeLens indicator in the template.yaml file to add a debug configuration.](http://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/yaml_template_debug.png)
+![Using the CodeLens indicator in the template.yaml file to add a debug configuration.](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/yaml_template_debug.png)
 
 1. In the **Command Palette**, select the runtime in which your AWS SAM application will run.
 
@@ -130,7 +130,7 @@ If you use a template with a name that's different from `template.yaml`, the Cod
    + `"target"` – Ensure that the value is `"template"` so that the AWS SAM template is the entry point for the debug session.
    + `"templatePath"` – Enter a relative or absolute path for the `template.yaml` file.
    + `"logicalId"` – Ensure that the name matches the one specified in the **Resources** section of the AWS SAM template. In this case, it's the `HelloWorldFunction` of type `AWS::Serverless::Function`.
-![Configuring the launch.json file for template-based debugging.](http://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/template_based_config_updated.png)
+![Configuring the launch.json file for template-based debugging.](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/template_based_config_updated.png)
 
    For more information about these and other entries in the `launch.json` file, see [Configuration options for debugging serverless applications](serverless-apps-run-debug-config-ref.md).
 
@@ -148,7 +148,7 @@ The following procedure describes how to deploy your serverless applications to 
 1. From the main menu in VS Code, open the **Command Palette** by expanding **View** and choosing **Command Palette**.
 
 1. From the **Command Palette** search for **AWS** and choose **Sync SAM Application** to start setting up your sync.
-![Command to sync a serverless application.](http://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/samsync032023.png)
+![Command to sync a serverless application.](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/samsync032023.png)
 
 1. Choose the AWS Region to sync your serverless application to.
 
@@ -167,7 +167,7 @@ The Amazon S3 bucket name must be globally unique across all existing bucket nam
 Stacks used in previous deployments are recalled per workspace and region.
 
 1. During the syncing process, the status of your deployment is captured in the **Terminal** tab of VS Code. Verify that your sync was successful from the terminal tab, if an error occurs you receive a notification.
-![An error pop-up while deploying a serverless application.](http://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/sam-deploy-error.png)
+![An error pop-up while deploying a serverless application.](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/sam-deploy-error.png)
 **Note**
 For additional details about your sync, the AWS Toolkit for Visual Studio Code logs are accessible from the **Command Palette**.
 

@@ -46,7 +46,7 @@ The cost of an execution plan is an estimate that the optimizer makes to compare
 
 The following image shows how a plan is chosen for a given SQL statement when query plan management is active, and when it's not.
 
-![Aurora PostgreSQL query plan management workflow.](http://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/images/aurora-query-plan-mgmt_processing-flow.png)
+![Aurora PostgreSQL query plan management workflow.](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/images/aurora-query-plan-mgmt_processing-flow.png)
 
 The flow is as follows:
 

@@ -30,7 +30,7 @@ After you capture the SNI data that passes through Network Firewall, you can use
 
 The following diagram shows how to use Network Firewall to collect SNI data from outbound network traffic, and then publish that data to an SNS topic by using CloudWatch Logs and Lambda.
 
-![Workflow between Network Firewall, CloudWatch Logs, Lambda, and Amazon SNS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9eb1e9e3-f459-4ea3-8e6d-60fec6b7ea98/images/1094b5f6-33e3-42bc-8fb8-7409b5b826b0.png)
+![Workflow between Network Firewall, CloudWatch Logs, Lambda, and Amazon SNS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9eb1e9e3-f459-4ea3-8e6d-60fec6b7ea98/images/1094b5f6-33e3-42bc-8fb8-7409b5b826b0.png)
 
 The diagram shows the following workflow:
 

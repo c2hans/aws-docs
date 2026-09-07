@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-gi
 
 A Trunk branching strategy commonly has the following branches.
 
-![The branches and environments in a Trunk branching strategy.](http://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-git-branch-approach/images/guide-img/2c642ab1-73c3-487b-9aff-d887904354b7/images/710dd758-9c16-4f6c-8f4e-c44bbbc5a926.png)
+![The branches and environments in a Trunk branching strategy.](https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-git-branch-approach/images/guide-img/2c642ab1-73c3-487b-9aff-d887904354b7/images/710dd758-9c16-4f6c-8f4e-c44bbbc5a926.png)
 
 ## feature branch
 <a name="feature-branch"></a>

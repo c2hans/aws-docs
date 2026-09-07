@@ -11,4 +11,4 @@ Setting a solid foundation with measurable key performance indicators (KPIs) is 
 
 The following diagram illustrates the AWS Enterprise Transformation program. The sub-sections that follow the diagram describe each phase in detail.
 
-![AWS Enterprise Transformation program phases: Prioritize, Ready, Enable, Transform.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-enterprise-transformation/images/guide-img/2d221fda-ae0d-490b-b51b-592f55e8b0d3/images/5c029dfc-e4f5-409f-ad13-c6e265157f28.png)
+![AWS Enterprise Transformation program phases: Prioritize, Ready, Enable, Transform.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-enterprise-transformation/images/guide-img/2d221fda-ae0d-490b-b51b-592f55e8b0d3/images/5c029dfc-e4f5-409f-ad13-c6e265157f28.png)

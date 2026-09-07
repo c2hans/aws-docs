@@ -92,12 +92,12 @@ Looking for technical support? [Open an Support ticket here](https://console.aws
 This step is required. Your request will not be processed if you do not attach these forms.
 
    The following image shows an example of a completed ticket:
-![An example completed ticket.](http://docs.aws.amazon.com/connect/latest/adminguide/images/abc-sample-use-case-description.png)
+![An example completed ticket.](https://docs.aws.amazon.com/connect/latest/adminguide/images/abc-sample-use-case-description.png)
 
 1. Choose **Next step**.
 
 1. Choose **Contact us**, choose your **Preferred contact language**, and then choose **Web** as the contact method, if it's not selected by default.
-![The contact methods.](http://docs.aws.amazon.com/connect/latest/adminguide/images/abc-contact-support-options.png)
+![The contact methods.](https://docs.aws.amazon.com/connect/latest/adminguide/images/abc-contact-support-options.png)
 
 1. Choose **Submit**.
 

@@ -11,7 +11,7 @@ These actions use an AWS FIS managed extension to inject faults. To use **aws:la
 
 When you run an AWS FIS experiment targeting **aws:lambda:function**, AWS FIS reads the Amazon S3 configuration from your Lambda function and writes fault injection information to the specified Amazon S3 location, as shown in the diagram below.
 
-![Diagram showing the configuration of the AWS Fault Injection Service Lambda extension.](http://docs.aws.amazon.com/fis/latest/userguide/images/Serverless-config-distro-3.png)
+![Diagram showing the configuration of the AWS Fault Injection Service Lambda extension.](https://docs.aws.amazon.com/fis/latest/userguide/images/Serverless-config-distro-3.png)
 
 ## Actions
 <a name="supported-lambda-actions"></a>
@@ -154,7 +154,7 @@ You can configure the AWS FIS Lambda extension to emit EMF logs by setting the `
 
 Within the `aws-fis-extension` namespace, you can select certain metrics to be displayed in a graph. The example below shows some of the available metrics in the `aws-fis-extension` namespace.
 
-![Example graph of output EMF metrics in the CloudWatch dashboard.](http://docs.aws.amazon.com/fis/latest/userguide/images/emf-metrics-graph.png)
+![Example graph of output EMF metrics in the CloudWatch dashboard.](https://docs.aws.amazon.com/fis/latest/userguide/images/emf-metrics-graph.png)
 
 ## Advanced topics
 <a name="lambda-actions-advanced-topics"></a>
@@ -183,7 +183,7 @@ You may target the same Lambda functions with multiple actions concurrently. If 
 
  The figure below shows two conflicting actions, **aws:lambda:invocation-error** and **aws:lambda:invocation-http-integration-response**, overlapping. Initially, **aws:lambda:invocation-error** ramps up at 11:38 and runs for 2 minutes. Then, **aws:lambda:invocation-http-integration-response** attempts to start at 11:39, but does not come into effect until 11:40 after the first action has concluded. To maintain experiment timing, **aws:lambda:invocation-http-integration-response** still finishes at the originally intended time of 11:41.
 
-![Error and response code graphs showing two actions overlapping from 11:38 to 11:41 on x86 and arm.](http://docs.aws.amazon.com/fis/latest/userguide/images/understanding-concurrency.png)
+![Error and response code graphs showing two actions overlapping from 11:38 to 11:41 on x86 and arm.](https://docs.aws.amazon.com/fis/latest/userguide/images/understanding-concurrency.png)
 
 ### Understanding invocation percentage
 <a name="understanding-invocation-percentage"></a>
@@ -207,7 +207,7 @@ The Lambda extension uses the AWS Lambda Runtime API proxy to intercept function
 
 The following diagram shows the configuration for a single extension using the Lambda Runtime API proxy:
 
-![The default configuration.](http://docs.aws.amazon.com/fis/latest/userguide/images/Proxy-1.png)
+![The default configuration.](https://docs.aws.amazon.com/fis/latest/userguide/images/Proxy-1.png)
 
 To use the AWS FIS Lambda extension with another extension using the AWS Lambda Runtime API proxy pattern, you will need to chain the proxies using a custom bootstrap script. The AWS FIS Lambda extension accepts the following environment variables:
 + `AWS_FIS_PROXY_RUNTIME_API_ENDPOINT` ‐ Takes a string in the form `127.0.0.1:9876` representing the local IP and listener port for the AWS Lambda Runtime API. This could be the original value of `AWS_LAMBDA_RUNTIME_API` or the location of another proxy.
@@ -215,7 +215,7 @@ To use the AWS FIS Lambda extension with another extension using the AWS Lambda 
 
 With these settings you can chain the AWS FIS extension with another extension using the Lambda Runtime API proxy in two different orders.
 
-![Two chained extensions using the Lambda API proxy.](http://docs.aws.amazon.com/fis/latest/userguide/images/lambda-runtime-api-proxy.png)
+![Two chained extensions using the Lambda API proxy.](https://docs.aws.amazon.com/fis/latest/userguide/images/lambda-runtime-api-proxy.png)
 
 For more information on the AWS Lambda Runtime API proxy, see [ Enhancing runtime security and governance with the AWS Lambda Runtime API proxy extension](https://aws.amazon.com/blogs/compute/enhancing-runtime-security-and-governance-with-the-aws-lambda-runtime-api-proxy-extension/) and [Using the Lambda runtime API for custom runtimes](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-api.html) in the *AWS Lambda user guide*.
 

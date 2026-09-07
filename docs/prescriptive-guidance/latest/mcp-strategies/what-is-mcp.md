@@ -14,7 +14,7 @@ We can give the LLM access to additional systems and context through tools**. **
 
 The following image shows how each agent manages its own tool set for each target.
 
-![Each agent manages its own tool set for each target.](http://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-strategies/images/guide-img/2803ca34-2e01-4597-9d5d-d8b2e530a414/images/b3d95a08-521d-4cd0-ae0d-af254e6eebd1.png)
+![Each agent manages its own tool set for each target.](https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-strategies/images/guide-img/2803ca34-2e01-4597-9d5d-d8b2e530a414/images/b3d95a08-521d-4cd0-ae0d-af254e6eebd1.png)
 
 Scaling tool access can present challenges for agentic AI solutions:
 + If every developer is creating their own tool for the same external capabilities, there is a lot of duplicated effort and non-standardized ways of interacting with these external capabilities. This produces inconsistent implementations across your agents. While you could solve that problem by developing standard tools in libraries and distributing them, this lacks centralized governance. This makes it difficult to enforce security policies, track tool usage, manage versioning across teams, or ensure compliance with organizational standards. Additionally, when you embed tools directly with the agent, you must redeploy your agent every time a new tool is created or an existing one is updated.
@@ -26,7 +26,7 @@ MCP establishes a universal standard for connecting agents to external capabilit
 
 The following figure shows agents using MCP to access external resources.
 
-![Using Model Context Protocol to access external resources.](http://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-strategies/images/guide-img/2803ca34-2e01-4597-9d5d-d8b2e530a414/images/2216dbc3-8b92-4547-8657-3aed5e294957.png)
+![Using Model Context Protocol to access external resources.](https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-strategies/images/guide-img/2803ca34-2e01-4597-9d5d-d8b2e530a414/images/2216dbc3-8b92-4547-8657-3aed5e294957.png)
 
 However, the MCP standard does not solve all scaling and governance challenges. Implementation of MCP servers must be combined with effective tool design, hosting, and enterprise governance strategies. This guide provides best practices for each strategy to help you build and use MCP as part of your agentic AI solutions.
 

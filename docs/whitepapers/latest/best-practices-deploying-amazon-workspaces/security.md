@@ -103,7 +103,7 @@ For more infomation about adding a security group to a WorkSpaces directory or e
 
  Once the ENI is located, it can be directly managed by security groups. When manually assigning security groups to the primary network interface, consider the port requirements of Amazon WorkSpaces. For more information, refer to [Network Interfaces](https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.html#network-interfaces) in the *Amazon Workspaces Administration Guide*.
 
-![Screenshot showing a WorkSpaces client with MFA enabled](http://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/pre-session-authentication.png)
+![Screenshot showing a WorkSpaces client with MFA enabled](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/pre-session-authentication.png)
 
 ## Network Access Control Lists (ACLs)
 <a name="network-access-control-lists-acls"></a>
@@ -146,7 +146,7 @@ Due to the added complexity in managing yet another firewall, Network ACLs are c
 
  Often preferred in multiple EUC deployments in an AWS Region, simplifying the administration of the AWS Network Firewall’s stateful and stateless rules. Existing VPC peers will be replaced with Transit Gateways, as this design necessitates the use of Transit Gateway attachments as well as the inspection routing that can only be configured through those attachments. Greater degree of control is exercised over this configuration as well, and enables security beyond the default WorkSpaces experience.
 
-![Sample architecture using Transit Gateway attachments.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/transit-gateway-attach.png)
+![Sample architecture using Transit Gateway attachments.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/transit-gateway-attach.png)
 
 ## Encrypted WorkSpaces
 <a name="encrypted-workspaces"></a>
@@ -163,7 +163,7 @@ Due to the added complexity in managing yet another firewall, Network ACLs are c
 
  Encryption for a WorkSpace should be specified when launching (creating) the WorkSpace. WorkSpaces volumes can be encrypted only at launch time: after launch, the volume encryption status cannot be changed. The following figure shows the Amazon WorkSpaces console page for choosing encryption during the launch of a new WorkSpace.
 
-![Screenshot of WorkSpaces console and how to excrypt the root volume](http://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/root-volume.png)
+![Screenshot of WorkSpaces console and how to excrypt the root volume](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/root-volume.png)
 
 ### How is a new WorkSpace encrypted?
 <a name="how-is-a-new-workspace-encrypted"></a>
@@ -221,7 +221,7 @@ Amazon WorkSpaces provides customers options to manage which client devices can 
 
  These metrics, like all CloudWatch metrics, can be viewed in the AWS Management Console (shown in the following figure), accessed via the CloudWatch APIs, and monitored by CloudWatch alarms and third-party tools.
 
-![Screenshot of metrics in the console](http://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/cloudwatch-metrics.png)
+![Screenshot of metrics in the console](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/cloudwatch-metrics.png)
 
 By default, the following metrics are enabled and are available at no extra cost:
 +  **Available** — WorkSpaces that respond to a status check are counted in this metric.
@@ -235,7 +235,7 @@ By default, the following metrics are enabled and are available at no extra cost
 
  Additionally, alarms can be created, as shown in the following figure.
 
-![Screenshot showing a CloudWatch alarm for connection errors](http://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/cloudwatch-alarm.png)
+![Screenshot showing a CloudWatch alarm for connection errors](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/cloudwatch-alarm.png)
 
 ### Amazon CloudWatch Events for WorkSpaces
 <a name="amazon-cloudwatch-events-for-workspaces"></a>

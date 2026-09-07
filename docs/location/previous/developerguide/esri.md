@@ -30,7 +30,7 @@ The Esri vector styles support alternate [Political views](map-concepts.md#polit
 
 **Esri Navigation**
 
-![Map showing Boston neighborhoods including Beacon Hill, East Cambridge, and waterfront areas.](http://docs.aws.amazon.com/location/previous/developerguide/images/EsriNav.png)
+![Map showing Boston neighborhoods including Beacon Hill, East Cambridge, and waterfront areas.](https://docs.aws.amazon.com/location/previous/developerguide/images/EsriNav.png)
 
 **Map style name**: `VectorEsriNavigation`
 
@@ -57,7 +57,7 @@ Amazon Location serves fonts using `[GetMapGlyphs](https://docs.aws.amazon.com/l
 
 **Esri Imagery**
 
-![](http://docs.aws.amazon.com/location/previous/developerguide/images/EsriImagery.png)
+![](https://docs.aws.amazon.com/location/previous/developerguide/images/EsriImagery.png)
 
 **Map style name**: `RasterEsriImagery`
 
@@ -72,7 +72,7 @@ For more information, see [Esri World Imagery](https://www.arcgis.com/home/item.
 
 **Esri Light**
 
-![Map of Boston showing Beacon Hill neighborhood with MBTA stations and major streets.](http://docs.aws.amazon.com/location/previous/developerguide/images/EsriWorldTopo.png)
+![Map of Boston showing Beacon Hill neighborhood with MBTA stations and major streets.](https://docs.aws.amazon.com/location/previous/developerguide/images/EsriWorldTopo.png)
 
 **Map style name**: `VectorEsriTopographic`
 
@@ -94,7 +94,7 @@ Amazon Location serves fonts using `[GetMapGlyphs](https://docs.aws.amazon.com/l
 
 **Esri Light Gray Canvas**
 
-![Map of Boston area showing streets, neighborhoods, and landmarks in grayscale.](http://docs.aws.amazon.com/location/previous/developerguide/images/EsriLightGray.png)
+![Map of Boston area showing streets, neighborhoods, and landmarks in grayscale.](https://docs.aws.amazon.com/location/previous/developerguide/images/EsriLightGray.png)
 
 **Map style name**: `VectorEsriLightGrayCanvas`
 
@@ -117,7 +117,7 @@ Amazon Location serves fonts using `[GetMapGlyphs](https://docs.aws.amazon.com/l
 
 **Esri Street Map**
 
-![Map showing Beacon Hill neighborhood with MBTA stations and surrounding Boston areas.](http://docs.aws.amazon.com/location/previous/developerguide/images/EsriStreet.png)
+![Map showing Beacon Hill neighborhood with MBTA stations and surrounding Boston areas.](https://docs.aws.amazon.com/location/previous/developerguide/images/EsriStreet.png)
 
 **Map style name**: `VectorEsriStreets`
 
@@ -141,7 +141,7 @@ Amazon Location serves fonts using `[GetMapGlyphs](https://docs.aws.amazon.com/l
 
 **Esri Dark Gray Canvas**
 
-![Map of Boston area showing neighborhoods, streets, and landmarks in dark gray style.](http://docs.aws.amazon.com/location/previous/developerguide/images/EsriDarkGray.png)
+![Map of Boston area showing neighborhoods, streets, and landmarks in dark gray style.](https://docs.aws.amazon.com/location/previous/developerguide/images/EsriDarkGray.png)
 
 **Map style name**: `VectorEsriDarkGrayCanvas`
 

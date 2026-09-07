@@ -216,11 +216,11 @@ The following table indicates which types of components the AWS IoT Greengrass C
 
 | Component type | Configure component user |
 | --- | --- |
-| Nucleus | <a name="polaris-no-para"></a> ![](http://docs.aws.amazon.com/greengrass/v2/developerguide/images/icon-no.png) No  |
-| Plugin | <a name="polaris-no-para"></a> ![](http://docs.aws.amazon.com/greengrass/v2/developerguide/images/icon-no.png) No  |
-| Generic | <a name="polaris-yes-para"></a> ![](http://docs.aws.amazon.com/greengrass/v2/developerguide/images/icon-yes.png) Yes  |
-| Lambda (non-containerized) | <a name="polaris-yes-para"></a> ![](http://docs.aws.amazon.com/greengrass/v2/developerguide/images/icon-yes.png) Yes  |
-| Lambda (containerized) | <a name="polaris-yes-para"></a> ![](http://docs.aws.amazon.com/greengrass/v2/developerguide/images/icon-yes.png) Yes  |
+| Nucleus | <a name="polaris-no-para"></a> ![](https://docs.aws.amazon.com/greengrass/v2/developerguide/images/icon-no.png) No  |
+| Plugin | <a name="polaris-no-para"></a> ![](https://docs.aws.amazon.com/greengrass/v2/developerguide/images/icon-no.png) No  |
+| Generic | <a name="polaris-yes-para"></a> ![](https://docs.aws.amazon.com/greengrass/v2/developerguide/images/icon-yes.png) Yes  |
+| Lambda (non-containerized) | <a name="polaris-yes-para"></a> ![](https://docs.aws.amazon.com/greengrass/v2/developerguide/images/icon-yes.png) Yes  |
+| Lambda (containerized) | <a name="polaris-yes-para"></a> ![](https://docs.aws.amazon.com/greengrass/v2/developerguide/images/icon-yes.png) Yes  |
 
 You must create the component user before you can specify it in a deployment configuration. On Windows-based devices, you must also store the user name and password for the user in the credential manager instance of the LocalSystem account. For more information, see [Set up a component user on Windows devices](#create-component-user-windows).
 
@@ -329,11 +329,11 @@ The following table shows the types of components that support system resource l
 
 | Component type | Configure system resource limits |
 | --- | --- |
-| Nucleus | <a name="polaris-no-para"></a> ![](http://docs.aws.amazon.com/greengrass/v2/developerguide/images/icon-no.png) No  |
-| Plugin | <a name="polaris-no-para"></a> ![](http://docs.aws.amazon.com/greengrass/v2/developerguide/images/icon-no.png) No  |
-| Generic | <a name="polaris-yes-para"></a> ![](http://docs.aws.amazon.com/greengrass/v2/developerguide/images/icon-yes.png) Yes  |
-| Lambda (non-containerized) | <a name="polaris-yes-para"></a> ![](http://docs.aws.amazon.com/greengrass/v2/developerguide/images/icon-yes.png) Yes  |
-| Lambda (containerized) | <a name="polaris-no-para"></a> ![](http://docs.aws.amazon.com/greengrass/v2/developerguide/images/icon-no.png) No  |
+| Nucleus | <a name="polaris-no-para"></a> ![](https://docs.aws.amazon.com/greengrass/v2/developerguide/images/icon-no.png) No  |
+| Plugin | <a name="polaris-no-para"></a> ![](https://docs.aws.amazon.com/greengrass/v2/developerguide/images/icon-no.png) No  |
+| Generic | <a name="polaris-yes-para"></a> ![](https://docs.aws.amazon.com/greengrass/v2/developerguide/images/icon-yes.png) Yes  |
+| Lambda (non-containerized) | <a name="polaris-yes-para"></a> ![](https://docs.aws.amazon.com/greengrass/v2/developerguide/images/icon-yes.png) Yes  |
+| Lambda (containerized) | <a name="polaris-no-para"></a> ![](https://docs.aws.amazon.com/greengrass/v2/developerguide/images/icon-no.png) No  |
 
 **Important**
 System resource limits aren't supported when you [run AWS IoT Greengrass Core software in a Docker container](run-greengrass-docker.md).

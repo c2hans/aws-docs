@@ -15,4 +15,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-buildi
 
  Refer to [Derive Insights from AWS Modern Data](https://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-aws-modern-data/derive-insights-from-aws-modern-data.html) for more details, and the [Build a Lake House Architecture on AWS](https://aws.amazon.com/blogs/big-data/build-a-lake-house-architecture-on-aws/) blog entry for a deep dive.
 
-![A diagram depicting AWS lake house architecture.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-building-data-lake-for-games/images/lake-house-architecture.png)
+![A diagram depicting AWS lake house architecture.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-building-data-lake-for-games/images/lake-house-architecture.png)

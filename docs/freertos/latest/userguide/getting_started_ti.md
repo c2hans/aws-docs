@@ -79,7 +79,7 @@ Install [Uniflash](http://www.ti.com/tool/UNIFLASH). CCS Uniflash is a standalon
 
 1. Choose **Browse**, and then navigate to where you installed the CC3220SF SimpleLink SDK. The service pack is located at `ti/simplelink_cc32xx_sdk_{{VERSION}}/tools/cc32xx_tools/servicepack-cc3x20/sp_{{VERSION}}.bin`.
 
-1. Choose the **Burn** (![Feather icon representing a lightweight or simplified feature or concept.](http://docs.aws.amazon.com/freertos/latest/userguide/images/flame.png)) button, and then choose **Program Image (Create & Program)** to install the service pack. Remember to switch the SOP jumper back to position 0 and reset the board.
+1. Choose the **Burn** (![Feather icon representing a lightweight or simplified feature or concept.](https://docs.aws.amazon.com/freertos/latest/userguide/images/flame.png)) button, and then choose **Program Image (Create & Program)** to install the service pack. Remember to switch the SOP jumper back to position 0 and reset the board.
 
 ### Configure Wi-Fi provisioning
 <a name="wifi-provision"></a>

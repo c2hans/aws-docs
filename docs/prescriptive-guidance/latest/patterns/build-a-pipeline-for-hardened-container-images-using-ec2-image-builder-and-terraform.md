@@ -90,7 +90,7 @@ For the source code, see the GitHub repository [Terraform EC2 Image Builder Cont
 
 **Target architecture**
 
-![Architecture and workflow for building a pipeline for hardened container images](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/4b16bdfa-4f34-41e9-a69a-d023253c8585/images/23443eca-132f-46ac-98bd-32a9e9359a77.png)
+![Architecture and workflow for building a pipeline for hardened container images](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/4b16bdfa-4f34-41e9-a69a-d023253c8585/images/23443eca-132f-46ac-98bd-32a9e9359a77.png)
 
 The diagram illustrates the following workflow:
 

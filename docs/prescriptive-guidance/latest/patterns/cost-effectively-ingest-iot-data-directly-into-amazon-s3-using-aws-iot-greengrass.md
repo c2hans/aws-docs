@@ -41,7 +41,7 @@ The amount and speed of IoT data that you ingest is limited only by your edge ha
 
 The following diagram shows an architecture designed to ingest IoT sensor data and store that data in an S3 bucket.
 
-![Architecture diagram](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/b9032ae2-fffb-4750-b161-09810e19d878/images/8c28e639-5dcf-4950-b4a6-8015ec1a2894.png)
+![Architecture diagram](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/b9032ae2-fffb-4750-b161-09810e19d878/images/8c28e639-5dcf-4950-b4a6-8015ec1a2894.png)
 
 The diagram shows the following workflow:
 

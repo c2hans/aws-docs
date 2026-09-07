@@ -9,13 +9,13 @@ You can view OS metrics reported by Enhanced Monitoring in the RDS console by ch
 
 The following example shows the Enhanced Monitoring page. For descriptions of the Enhanced Monitoring metrics, see [OS metrics in Enhanced Monitoring](USER_Monitoring-Available-OS-Metrics.md).
 
-![Dashboard view.](http://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/images/metrics1.png)
+![Dashboard view.](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/images/metrics1.png)
 
 If you want to see details for the processes running on your DB instance, choose **OS process list** for **Monitoring**.
 
 The **Process List** view is shown following.
 
-![Process list view.](http://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/images/metrics2.png)
+![Process list view.](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/images/metrics2.png)
 
 The Enhanced Monitoring metrics shown in the **Process list** view are organized as follows:
 + **RDS child processes** – Shows a summary of the RDS processes that support the DB instance, for example `aurora` for Amazon Aurora DB clusters. Process threads appear nested beneath the parent process. Process threads show CPU utilization only as other metrics are the same for all threads for the process. The console displays a maximum of 100 processes and threads. The results are a combination of the top CPU consuming and memory consuming processes and threads. If there are more than 50 processes and more than 50 threads, the console displays the top 50 consumers in each category. This display helps you identify which processes are having the greatest impact on performance.

@@ -58,7 +58,7 @@ Before you migrate your production workloads, we recommend that you run a proof 
 
 The following diagram shows the migration of an Amazon RDS for Oracle DB instance to an Amazon RDS for PostgreSQL DB instance.
 
-![Migration workflow from Amazon RDS for Oracle to Amazon RDS for PostgreSQL.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c7eed517-e496-4e8e-a520-c1e43397419e/images/bfbbed5e-db13-4a22-99aa-1a17f00f5faf.png)
+![Migration workflow from Amazon RDS for Oracle to Amazon RDS for PostgreSQL.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c7eed517-e496-4e8e-a520-c1e43397419e/images/bfbbed5e-db13-4a22-99aa-1a17f00f5faf.png)
 
 The diagram shows the following migration workflow:
 

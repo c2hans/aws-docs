@@ -37,7 +37,7 @@ You can use this block in the following [flow types](create-contact-flow.md#cont
 
 The following image shows the **Properties** page of the **Change routing priority / age** block. It is configured to add 8 seconds to the routing age of the contact.
 
-![The properties page of the Change routing priority or age block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/change-routing-priority-properties.png)
+![The properties page of the Change routing priority or age block.](https://docs.aws.amazon.com/connect/latest/adminguide/images/change-routing-priority-properties.png)
 
 This block gives you two options for changing a contact's position in queue:
 + **Set priority**. The default priority for new contacts is 5. You can raise the priority of a contact - compared to other contacts in the queue - by assigning them a higher priority, such as 1 or 2.
@@ -63,7 +63,7 @@ Here's how this block works:
 
 The following image shows an example of what this block looks like when it is configured. It shows the **Queue time** is set to \+8 seconds, and it has a **Success** branch.
 
-![A configured Change routing priority age block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/change-routing-priority-configured.png)
+![A configured Change routing priority age block.](https://docs.aws.amazon.com/connect/latest/adminguide/images/change-routing-priority-configured.png)
 
 ## Sample flows
 <a name="change-routing-priority-samples"></a>

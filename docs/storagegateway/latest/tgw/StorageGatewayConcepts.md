@@ -14,7 +14,7 @@ Tape Gateway offers a durable, cost-effective solution to archive your data in t
 
 The following diagram provides an overview of Tape Gateway deployment.
 
-![Storage Gateway connecting tape backup applications to Amazon S3 and Glacier cloud storage.](http://docs.aws.amazon.com/storagegateway/latest/tgw/images/Gateway-VTL-Architecture2-diagram.png)
+![Storage Gateway connecting tape backup applications to Amazon S3 and Glacier cloud storage.](https://docs.aws.amazon.com/storagegateway/latest/tgw/images/Gateway-VTL-Architecture2-diagram.png)
 
 The diagram identifies the following Tape Gateway components:
 + **Virtual tape** – A virtual tape is like a physical tape cartridge. However, virtual tape data is stored in the Amazon Web Services Cloud. Like physical tapes, virtual tapes can be blank or can have data written on them. You can create virtual tapes either by using the Storage Gateway console or programmatically by using the Storage Gateway API. Each gateway can contain up to 1,500 tapes or up to 1 PiB of total tape data at a time. The size of each virtual tape, which you can configure when you create the tape, is between 100 GiB and 15 TiB.

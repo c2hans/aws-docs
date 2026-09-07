@@ -36,7 +36,7 @@ AWS has defined a set of 29 capabilities that span six categories to help you es
 
  This section includes high-level definitions for each foundational capability organized by their category. For a deeper dive into a specific capability and what it includes, refer to [Appendix A](appendix-a-capability-structure-and-example.md).
 
-![A chart showing which capabilities fall under each category.](http://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/images/category.png)
+![A chart showing which capabilities fall under each category.](https://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/images/category.png)
 
 Topics
 + [Governance, Risk Management, and Compliance](governance.md)

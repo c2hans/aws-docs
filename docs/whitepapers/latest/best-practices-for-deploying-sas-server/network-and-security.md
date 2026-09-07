@@ -17,4 +17,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 
  Internet Gateway can be used for connectivity between the internet and SAS Servers in a VPC for hosting public websites
 
-![Diagram that shows the SAS 9.4 intelligence platform architecture on AWS.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-for-deploying-sas-server/images/sas-intelligence-platform-on-aws.jpeg)
+![Diagram that shows the SAS 9.4 intelligence platform architecture on AWS.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-deploying-sas-server/images/sas-intelligence-platform-on-aws.jpeg)

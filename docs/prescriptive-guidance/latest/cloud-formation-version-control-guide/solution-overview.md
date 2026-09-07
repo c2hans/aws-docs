@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-forma
 
 AWS CodePipeline integrates with source control repositories and automatically triggers pipeline execution when code is committed. In this deployment strategy, the pipeline references an environment configuration file to select the appropriate version for each target environment. By using a centralized version-mapping configuration, the pipeline fetches the corresponding CloudFormation template versions for specific environments, providing consistent and controlled deployments across development, staging, and production.
 
-![Centralized version-mapping configuration.](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-formation-version-control-guide/images/guide-img/4fdaca28-ded7-44f0-99b8-4fbec0ad28d6/images/efe75dfe-317a-4703-8f2e-3cd67191d50e.png)
+![Centralized version-mapping configuration.](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-formation-version-control-guide/images/guide-img/4fdaca28-ded7-44f0-99b8-4fbec0ad28d6/images/efe75dfe-317a-4703-8f2e-3cd67191d50e.png)
 
 ## Code versioning and tagging
 <a name="code-versioning-and-tagging"></a>
@@ -177,7 +177,7 @@ Example IAM policy for cross-account role assumption:
 
 The `deployment_map.json` file handles target specification. The `deploy.py` script automatically reads target accounts and Regions from `deployment_map.json` and maps versions to specific environments. For detailed IAM role setup instructions, see [Grant self-managed permissions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-prereqs-self-managed.html) in the CloudFormation documentation. This is the CI/CD workflow for version-controlled CloudFormation deployments across environments:
 
-![CI/CD workflow for version-controlled CloudFormation deployments across environments.](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-formation-version-control-guide/images/guide-img/4fdaca28-ded7-44f0-99b8-4fbec0ad28d6/images/1ab88171-d99f-433e-a42a-8ee31e8c112d.png)
+![CI/CD workflow for version-controlled CloudFormation deployments across environments.](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-formation-version-control-guide/images/guide-img/4fdaca28-ded7-44f0-99b8-4fbec0ad28d6/images/1ab88171-d99f-433e-a42a-8ee31e8c112d.png)
 
 ## Hotfix deployments
 <a name="hotfix-deployments"></a>

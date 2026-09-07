@@ -9,7 +9,7 @@ The *write to your Region* write mode, illustrated in the following diagram, wor
 
 This mode is similar to *write to one Region* except that it enables lower-latency write operations, because the data associated with each user can be placed in closer network proximity to that user. It also spreads the surrounding infrastructure more evenly between Regions and requires less work to build out infrastructure during a failover scenario, because all Regions have a portion of their infrastructure already active.
 
-![Write to your Region write mode](http://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-global-tables/images/guide-img/a90e395c-d4d5-48a9-a714-90406b23d110/images/1d3532d5-dc62-4a9e-aec0-a9132b60780f.png)
+![Write to your Region write mode](https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-global-tables/images/guide-img/a90e395c-d4d5-48a9-a714-90406b23d110/images/1d3532d5-dc62-4a9e-aec0-a9132b60780f.png)
 
 You can determine the home Region for items in several ways:
 + Intrinsic: Some aspect of the data, such as a special attribute or a value embedded within its partition key, makes its home Region clear. This technique is described in the blog post [Use Region pinning to set a home Region for items in an Amazon DynamoDB global table](https://aws.amazon.com/blogs/database/use-region-pinning-to-set-a-home-region-for-items-in-an-amazon-dynamodb-global-table/).

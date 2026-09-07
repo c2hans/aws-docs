@@ -9,7 +9,7 @@ The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you 
 
 The [AWS SDK for JavaScript](aws-jsdk-reference.md) provides a JavaScript API for AWS services. You can use the JavaScript API to build libraries or applications for [Node.js](https://nodejs.org/en/) or the browser.
 
-![Relationship between JavaScript environments, the SDK, and Amazon Web Services](http://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/sdk-overview.png)
+![Relationship between JavaScript environments, the SDK, and Amazon Web Services](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/images/sdk-overview.png)
 
 Not all services are immediately available in the SDK. To find out which services are currently supported by the AWS SDK for JavaScript, see [ https://github.com/aws/aws-sdk-js/blob/master/SERVICES.md]( https://github.com/aws/aws-sdk-js/blob/master/SERVICES.md). For information about the SDK for JavaScript on GitHub, see [Additional Resources](resources.md).
 

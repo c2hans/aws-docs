@@ -42,7 +42,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/active-directory-doma
 
  Share centralized Route 53 Resolver endpoints across all VPC in your organization. Create conditional forwarders on your on-premises DNS servers for all Route 53 DNS zones and DNS zones on AWS Managed AD and point them to Route 53 Resolver Endpoints.
 
-![Diagram showing Route 53 resolver configuration for hybrid network](http://docs.aws.amazon.com/whitepapers/latest/active-directory-domain-services/images/route53-resolver-configuration.png)
+![Diagram showing Route 53 resolver configuration for hybrid network](https://docs.aws.amazon.com/whitepapers/latest/active-directory-domain-services/images/route53-resolver-configuration.png)
 
  Here are design considerations for DNS resolution:
 +  Make all Active Directory DNS domains resolvable for all clients, because they are using it to locate Active Directory services and register their DNS names using dynamic updates.

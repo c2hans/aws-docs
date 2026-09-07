@@ -50,7 +50,7 @@ By implementing this framework, you can achieve the following benefits:
 
 The following diagram shows how this framework identifies the target CloudFormation stack and the additional resources associated with it.
 
-![The phases that discover, process, and delete CloudFormation stacks and their associated resources.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/ab7c3b56-3476-41a3-8ece-68915605a546/images/a7fceb1c-d624-47b3-957d-f910ef2f44d7.png)
+![The phases that discover, process, and delete CloudFormation stacks and their associated resources.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/ab7c3b56-3476-41a3-8ece-68915605a546/images/a7fceb1c-d624-47b3-957d-f910ef2f44d7.png)
 
 The diagram shows the following workflow:
 

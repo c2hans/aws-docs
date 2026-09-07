@@ -30,7 +30,7 @@ This pattern describes how to use CloudWatch anomaly detection for custom metric
 ## Architecture
 <a name="create-alarms-for-custom-metrics-using-amazon-cloudwatch-anomaly-detection-architecture"></a>
 
-![CloudWatch using an Amazon SNS topic to send an email notification when an alarm initiates.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/d47e6f7f-e469-4cb9-b34b-8c4b78d71820/images/49f30340-9552-430a-893a-d0608bb09e38.png)
+![CloudWatch using an Amazon SNS topic to send an email notification when an alarm initiates.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/d47e6f7f-e469-4cb9-b34b-8c4b78d71820/images/49f30340-9552-430a-893a-d0608bb09e38.png)
 
  The diagram shows the following workflow:
 

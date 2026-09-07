@@ -23,7 +23,7 @@ The Apache Ranger plugin for Hive on EMR supports all the functionality of the o
 
 The Apache Hive plugin is compatible with the existing Hive service definition within Apache Hive Hadoop SQL.
 
-![Apache Hive service definition for Hadoop SQL.](http://docs.aws.amazon.com/emr/latest/ManagementGuide/images/ranger_service_mgr.png)
+![Apache Hive service definition for Hadoop SQL.](https://docs.aws.amazon.com/emr/latest/ManagementGuide/images/ranger_service_mgr.png)
 
 If you do not have an instance of the service under Hadoop SQL, like shown above, you can create one. Click on the **\+** next to Hadoop SQL.
 
@@ -31,7 +31,7 @@ If you do not have an instance of the service under Hadoop SQL, like shown above
 
 1. **Display Name**: Enter the name to be displayed for the service. The suggested value is **amazonemrhive**.
 
-![Apache Hive service details for Hadoop SQL.](http://docs.aws.amazon.com/emr/latest/ManagementGuide/images/ranger_create_service.png)
+![Apache Hive service details for Hadoop SQL.](https://docs.aws.amazon.com/emr/latest/ManagementGuide/images/ranger_create_service.png)
 
 The Apache Hive Config Properties are used to establish a connection to your Apache Ranger Admin server with a HiveServer2 to implement auto complete when creating policies. The properties below are not required to be accurate if you do not have a persistent HiveServer2 process and can be filled with any information.
 + **Username**: Enter a user name for the JDBC connection to an instance of an HiveServer2 instance.
@@ -40,11 +40,11 @@ The Apache Hive Config Properties are used to establish a connection to your Apa
 + **jdbc.url**: Enter the JDBC connection string to use when connecting to HiveServer2.
 + **Common Name for Certificate**: The CN field within the certificate used to connect to the admin server from a client plugin. This value must match the CN field in your TLS certificate that was created for the plugin.
 
-![Apache Hive service configuration properties.](http://docs.aws.amazon.com/emr/latest/ManagementGuide/images/ranger_config_props.png)
+![Apache Hive service configuration properties.](https://docs.aws.amazon.com/emr/latest/ManagementGuide/images/ranger_config_props.png)
 
 The **Test Connection** button tests whether the values above can be used to successfully connect to the HiveServer2 instance. Once the service is successfully created, the Service Manager should look like below:
 
-![Connected to the HiveServer2 instance](http://docs.aws.amazon.com/emr/latest/ManagementGuide/images/ranger_config_connected.png)
+![Connected to the HiveServer2 instance](https://docs.aws.amazon.com/emr/latest/ManagementGuide/images/ranger_config_connected.png)
 
 ## Considerations
 <a name="emr-ranger-hive-considerations"></a>

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sa
 # Mobilize phase
 <a name="mobilize"></a>
 
-![https://1a9zxhkqsj.execute-api.us-west-2.amazonaws.com/v1/contents/2072f727-3a0b-4e29-9a4f-baa84a3343bb/images/aeafd8e5-5b53-40ee-bff8-7bc4da136ebe.png](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sap-migration/images/guide-img/2072f727-3a0b-4e29-9a4f-baa84a3343bb/images/4265ed75-72cd-4e76-b171-cfcbef961b60.png)
+![https://1a9zxhkqsj.execute-api.us-west-2.amazonaws.com/v1/contents/2072f727-3a0b-4e29-9a4f-baa84a3343bb/images/aeafd8e5-5b53-40ee-bff8-7bc4da136ebe.png](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sap-migration/images/guide-img/2072f727-3a0b-4e29-9a4f-baa84a3343bb/images/4265ed75-72cd-4e76-b171-cfcbef961b60.png)
 
 The mobilize phase focuses on refining and blueprinting your target SAP on AWS architecture, supporting the implementation of proof of concept (PoC) projects, and defining migration tooling and planning. This phase builds the foundation for the migration process. It specifies detailed, non-functional requirements, SAP on AWS architecture, landing zone, details of the migration approach, and the refined migration plan. In this phase, the majority of the migration team will be onboarded and briefed for the migration project. The preparation for the migration of SAP workloads will be finalized, to ensure a successful start to the next phase (migration).
 
@@ -39,4 +39,4 @@ To see how Covestro, one of the leading suppliers of premium polymers, chose AWS
 
 The following illustration provides a simplified example of a typical SAP mobilization project team.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sap-migration/images/guide-img/2072f727-3a0b-4e29-9a4f-baa84a3343bb/images/223ab819-be23-4bc5-8123-14fade6da928.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sap-migration/images/guide-img/2072f727-3a0b-4e29-9a4f-baa84a3343bb/images/223ab819-be23-4bc5-8123-14fade6da928.png)

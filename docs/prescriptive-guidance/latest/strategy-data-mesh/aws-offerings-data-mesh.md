@@ -44,7 +44,7 @@ The AWS services that you use in your implementation might differ, based on your
 
 If you want to use a fully managed service, consider using Amazon DataZone to implement data mesh for your organization. Amazon DataZone is a data management service for cataloging, discovering, sharing, and governing data stored across AWS, on premises, and third-party sources. The following diagram shows a data mesh reference architecture based on Amazon DataZone.
 
-![Multiple producer and consumer accounts with a central governance account and Amazon DataZone.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-data-mesh/images/guide-img/8ee4070d-6c71-44bc-a40f-f010d4d931e6/images/7c6fc335-2979-47b2-b678-8f74ea478d11.png)
+![Multiple producer and consumer accounts with a central governance account and Amazon DataZone.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-data-mesh/images/guide-img/8ee4070d-6c71-44bc-a40f-f010d4d931e6/images/7c6fc335-2979-47b2-b678-8f74ea478d11.png)
 
 In the reference architecture, the member accounts belong to the data domains. They're grouped into data producers and data consumers. The architecture diagram contains following components:
 
@@ -61,7 +61,7 @@ In the reference architecture, the member accounts belong to the data domains. T
 
 If you understand open source and want to build and manage your own solution, consider using open source frameworks such as [data.all](https://awslabs.github.io/aws-dataall/). Data.all is a modern data marketplace that supports collaboration among diverse users. Data.all simplifies data discovery, sharing, and granular data access management while builders use the AWS portfolio of data and analytics services. The following diagram shows a data mesh reference architecture based on data.all.
 
-![Multiple producer and consumer accounts with a central governance account and data.all.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-data-mesh/images/guide-img/8ee4070d-6c71-44bc-a40f-f010d4d931e6/images/7222d6f0-c8e3-44dd-a93a-ae31e247b47c.png)
+![Multiple producer and consumer accounts with a central governance account and data.all.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-data-mesh/images/guide-img/8ee4070d-6c71-44bc-a40f-f010d4d931e6/images/7222d6f0-c8e3-44dd-a93a-ae31e247b47c.png)
 
 The architecture diagram contains following components:
 
@@ -78,7 +78,7 @@ The architecture diagram contains following components:
 
 If you want to build a custom data mesh solution from the ground up and manage it, consider using AWS Lake Formation. Lake Formation helps you centrally govern, secure, and globally share data for analytics and machine learning. The following diagram shows a data mesh reference architecture based on Lake Formation.
 
-![Multiple producer and consumer accounts with a central governance account and AWS Lake Formation.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-data-mesh/images/guide-img/8ee4070d-6c71-44bc-a40f-f010d4d931e6/images/6b61250a-f8f1-480f-8cd1-f4de0c0394a2.png)
+![Multiple producer and consumer accounts with a central governance account and AWS Lake Formation.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-data-mesh/images/guide-img/8ee4070d-6c71-44bc-a40f-f010d4d931e6/images/6b61250a-f8f1-480f-8cd1-f4de0c0394a2.png)
 
 The architecture diagram contains following components:
 

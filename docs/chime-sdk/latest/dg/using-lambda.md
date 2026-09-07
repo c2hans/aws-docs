@@ -9,7 +9,7 @@ Before you can use the PSTN audio service, an Amazon Chime SDK administrator mus
 
 This image shows the relationship between the managed objects that comprise the PSTN audio service. Numbers in the image correspond to numbers in the text below the image.
 
-![Managed objects in the Amazon Chime SDK PSTN audio service.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/pstn-diagram2.png)
+![Managed objects in the Amazon Chime SDK PSTN audio service.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/pstn-diagram2.png)
 
 You can only assign phone numbers and Amazon Chime SDK Voice Connectors (1) to SIP rules (2). Also, you must provision the phone number or Voice Connector in your PSTN audio service. Upon receiving an inbound call to a phone number, or an outbound call request from a Voice Connector, the SIP rule invokes a SIP media application and an associated AWS Lambda function (4). The AWS Lambda function runs a predefined set of actions, such as playing on-hold music or joining a meeting. To provide multi-region resiliency, SIP rules can specify alternate target SIP media applications in different AWS Regions (3) by order of priority for failover. If one target fails, the PSTN audio service tries the next one and so on. Note that each alternate target must reside in a different AWS Region.
 

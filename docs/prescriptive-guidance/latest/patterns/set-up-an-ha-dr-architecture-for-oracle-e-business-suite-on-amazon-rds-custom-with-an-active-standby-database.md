@@ -38,7 +38,7 @@ For Oracle Database versions and instance classes supported by Amazon RDS Custom
 
 The following diagram illustrates a representative architecture for E-Business Suite on AWS that includes multiple Availability Zones and application tiers in an active/passive setup. The database uses an Amazon RDS Custom DB instance and Amazon RDS Custom read replica. The read replica uses Active Data Guard to replicate to another Availability Zone. You can also use the read replica to offload read traffic on the primary database and for reporting purposes.
 
-![Multi-AZ architecture for Oracle E-Business Suite on AWS](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a17947e8-56b1-4d92-91df-096c02ff4c19/images/ffdaa2d4-123b-44a0-8d52-b1352a4eee44.png)
+![Multi-AZ architecture for Oracle E-Business Suite on AWS](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a17947e8-56b1-4d92-91df-096c02ff4c19/images/ffdaa2d4-123b-44a0-8d52-b1352a4eee44.png)
 
 For more information, see [Working with read replicas for Amazon RDS Custom for Oracle](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-rr.html) in the Amazon RDS documentation.
 

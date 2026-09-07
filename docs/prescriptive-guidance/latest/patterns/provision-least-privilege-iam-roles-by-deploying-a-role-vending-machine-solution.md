@@ -38,7 +38,7 @@ The RVM uses an IAM role (configured during bootstrap). This role has permission
 
 The following diagram illustrates the workflow for this pattern.
 
-![Workflow to automate IAM role creation and deployment by using GitHub Actions.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/215c590e-0c84-411d-be6e-b1739f1e19d2/images/82fcdc9f-9576-4e7c-b7fe-b45046ba79d2.png)
+![Workflow to automate IAM role creation and deployment by using GitHub Actions.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/215c590e-0c84-411d-be6e-b1739f1e19d2/images/82fcdc9f-9576-4e7c-b7fe-b45046ba79d2.png)
 
 The workflow for the typical usage of the role vending machine consists of the following steps:
 

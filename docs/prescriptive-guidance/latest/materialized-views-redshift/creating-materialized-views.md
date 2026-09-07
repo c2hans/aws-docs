@@ -14,4 +14,4 @@ When you create a materialized view, Amazon Redshift runs the user-specified SQL
 
 The following illustration provides an overview of a materialized view called `mv_total_orders`. This view is defined by a SQL query that uses two base tables: customer and order.
 
-![SQL query with two base tables](http://docs.aws.amazon.com/prescriptive-guidance/latest/materialized-views-redshift/images/guide-img/fd96a9bf-2877-4487-8c53-466d142e055c/images/45279be2-b622-466b-b80e-1889ef956cb7.png)
+![SQL query with two base tables](https://docs.aws.amazon.com/prescriptive-guidance/latest/materialized-views-redshift/images/guide-img/fd96a9bf-2877-4487-8c53-466d142e055c/images/45279be2-b622-466b-b80e-1889ef956cb7.png)

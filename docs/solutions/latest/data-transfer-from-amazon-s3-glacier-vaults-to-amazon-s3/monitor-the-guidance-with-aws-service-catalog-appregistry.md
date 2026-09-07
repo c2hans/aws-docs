@@ -13,4 +13,4 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amaz
 
    The following figure depicts an example of the application view for the Guidance stack in Application Manager.
 
-![Depicts a Guidance stack in Application Manager](http://docs.aws.amazon.com/solutions/latest/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3/images/appregistry1.png)
+![Depicts a Guidance stack in Application Manager](https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3/images/appregistry1.png)

@@ -15,7 +15,7 @@ For information about how to use map resources in practice, see [Using Amazon Lo
 
 The following is an overview of how to create and use map resources:
 
-![](http://docs.aws.amazon.com/location/previous/developerguide/images/illustration-maps.PNG)
+![](https://docs.aws.amazon.com/location/previous/developerguide/images/illustration-maps.PNG)
 
 1. You create a map resource in your AWS account by selecting a map style from a data provider.
 
@@ -30,7 +30,7 @@ The following is an overview of how to create and use map resources:
 
 When you create a map resource, you must choose a map style for that resource. Map styles define the look of the rendered map. For example, the following image shows the same data provider with two different styles from different map resources in Amazon Location. One style is a typical road style, based on the vector data in the map. The other includes raster data showing satellite imagery. The style may change as you zoom in or out on the map, but typically styles have a consistent theme. It's possible to override parts or all of the style information before passing it to the map rendering library.
 
-![An image showing the same area of the world, drawn with two different styles: a road style and a satellite imagery style.](http://docs.aws.amazon.com/location/previous/developerguide/images/map-styles-concepts.png)
+![An image showing the same area of the world, drawn with two different styles: a road style and a satellite imagery style.](https://docs.aws.amazon.com/location/previous/developerguide/images/map-styles-concepts.png)
 
 ## Political views
 <a name="political-views"></a>
@@ -74,7 +74,7 @@ The map rendering library pulls data from Amazon Location Service at runtime, re
 
 The following image shows how the map resource is used in Amazon Location Service along with a map rendering library to create the final map.
 
-![An image showing a user creating a map resource in Amazon Location Service and an app using that resource to get map data and render a map.](http://docs.aws.amazon.com/location/previous/developerguide/images/RenderMapInApp.png)
+![An image showing a user creating a map resource in Amazon Location Service and an app using that resource to get map data and render a map.](https://docs.aws.amazon.com/location/previous/developerguide/images/RenderMapInApp.png)
 
 1. You create a map resource in Amazon Location Service, using the AWS Management Console or AWS CLI. This defines the data provider and the map style that you want to use.
 

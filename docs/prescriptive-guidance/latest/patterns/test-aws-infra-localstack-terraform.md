@@ -48,7 +48,7 @@ The following diagram shows the architecture for this solution. The primary comp
 + An AWS Step Functions state machine for orchestrating multi-step workflows
 + An Amazon DynamoDB table for storing NoSQL data
 
-![A CI/CD pipeline builds and tests the LocalStack Docker container and AWS resources.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/34bfbdbf-14e7-42a0-9022-c85a9c30cdcd/images/dc61fac9-b92c-4841-9132-ff8bb865eed9.png)
+![A CI/CD pipeline builds and tests the LocalStack Docker container and AWS resources.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/34bfbdbf-14e7-42a0-9022-c85a9c30cdcd/images/dc61fac9-b92c-4841-9132-ff8bb865eed9.png)
 
 The diagram shows the following workflow:
 

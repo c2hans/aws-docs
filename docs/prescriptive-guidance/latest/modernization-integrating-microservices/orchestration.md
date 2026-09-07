@@ -26,7 +26,7 @@ Step Functions offers a visual editor for designing complex workflows, which sim
 
 For example, consider a loan approval process in a financial services application, which is illustrated in the following diagram. The process starts when a loan application is submitted.
 
-![Using AWS Step Functions to build complex workflows for microservice integration.](http://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-integrating-microservices/images/guide-img/89e63ee3-ec0f-41b0-920f-39a1fbded9a6/images/d468f2ed-f17a-4e73-a434-2089f0eea5a3.png)
+![Using AWS Step Functions to build complex workflows for microservice integration.](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-integrating-microservices/images/guide-img/89e63ee3-ec0f-41b0-920f-39a1fbded9a6/images/d468f2ed-f17a-4e73-a434-2089f0eea5a3.png)
 
 In the state machine that's illustrated in the previous diagram, Step Functions orchestrates the following steps:
 + Validate application data (Lambda function)
@@ -54,7 +54,7 @@ For more information, see the [Step Functions documentation](https://docs.aws.am
 
 If your organization already uses Apache Airflow, Amazon MWAA is a natural choice as a workflow orchestrator. In Apache Airflow, you build your workflows as directed acyclic graphs (DAGs) by using Python. The DAG representation of the state machine that's illustrated in the Step Functions section might look like this:
 
-![Using Amazon MWAA and DAGs to build complex workflows for microservice integration.](http://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-integrating-microservices/images/guide-img/89e63ee3-ec0f-41b0-920f-39a1fbded9a6/images/b3501d9d-63f4-4647-bf9f-4f0b6e9ca329.png)
+![Using Amazon MWAA and DAGs to build complex workflows for microservice integration.](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-integrating-microservices/images/guide-img/89e63ee3-ec0f-41b0-920f-39a1fbded9a6/images/b3501d9d-63f4-4647-bf9f-4f0b6e9ca329.png)
 
 For information about working with DAGs, see the [Amazon MWAA documentation](https://docs.aws.amazon.com/mwaa/latest/userguide/working-dags.html).
 

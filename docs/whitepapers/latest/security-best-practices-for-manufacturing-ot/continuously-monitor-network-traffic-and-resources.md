@@ -28,10 +28,10 @@ AWS IoT Device Defender can send alerts to the AWS IoT Console, Amazon CloudWatc
 
 Refer to the “[Elevate your IoT security with AWS multi-layered security approach](https://www.youtube.com/watch?v=6ayOaqCRoKo)” re:Invent talk for the principles of IoT defense in depth, and a demonstration of AWS IoT Device Defender capabilities.
 
-![A diagram showing AWS IoT Device Defender.](http://docs.aws.amazon.com/whitepapers/latest/security-best-practices-for-manufacturing-ot/images/iot-device-defender.png)
+![A diagram showing AWS IoT Device Defender.](https://docs.aws.amazon.com/whitepapers/latest/security-best-practices-for-manufacturing-ot/images/iot-device-defender.png)
 
 *AWS IoT Device Defender *
 
-![A diagram showing continuously monitoring network traffic and resources.](http://docs.aws.amazon.com/whitepapers/latest/security-best-practices-for-manufacturing-ot/images/monitor-nw-traffic.png)
+![A diagram showing continuously monitoring network traffic and resources.](https://docs.aws.amazon.com/whitepapers/latest/security-best-practices-for-manufacturing-ot/images/monitor-nw-traffic.png)
 
 Continuously monitoring network traffic and resources

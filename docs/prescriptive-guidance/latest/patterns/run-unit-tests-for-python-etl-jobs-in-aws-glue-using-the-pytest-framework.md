@@ -28,7 +28,7 @@ You can run unit tests for Python extract, transform, and load (ETL) jobs for AW
 
 The following diagram describes how to incorporate unit testing for AWS Glue ETL processes that are based on Python into a typical enterprise-scale AWS DevOps pipeline.
 
-![Unit testing for AWS Glue ETL processes.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/82781ca8-4da0-4df0-bf23-32992fece231/images/6286dafc-f1e0-4967-beed-4dedc6047c10.png)
+![Unit testing for AWS Glue ETL processes.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/82781ca8-4da0-4df0-bf23-32992fece231/images/6286dafc-f1e0-4967-beed-4dedc6047c10.png)
 
 The diagram shows the following workflow:
 

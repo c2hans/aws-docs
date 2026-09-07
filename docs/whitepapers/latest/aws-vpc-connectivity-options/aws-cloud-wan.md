@@ -23,7 +23,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-
 +  Cloud WAN supports both IPv4 and IPv6.
 +  For large networks with many changes, consider creating a separate development and testing global network where you can validate changes.
 
-![Diagram showing AWS Cloud WAN.](http://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/image26.png)
+![Diagram showing AWS Cloud WAN.](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/image26.png)
 
 ## Additional resources
 <a name="additional-resources-17"></a>

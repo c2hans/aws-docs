@@ -18,7 +18,7 @@ Access to the Controls page follows the same roles as the rest of the Web UI. Ad
 The Controls page lists every security control that the solution supports, with its current automated remediation status, description, and applied filters. You can search and sort the table by control ID or filter name.
 
 1. Open the Web UI and go to the **Controls** page.
-![Controls table in the Web UI.](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/controls-table-view.png)
+![Controls table in the Web UI.](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/controls-table-view.png)
 
 1. Set the automated remediation status for one or more controls.
 
@@ -40,7 +40,7 @@ A resource filter is a reusable definition that scopes which findings the soluti
 
 To create a filter, open the **Filters** page and choose **Create filter**, then enter a unique name and the criteria to match.
 
-![Create resource filter.](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/create-resource-filter-popup.png)
+![Create resource filter.](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/create-resource-filter-popup.png)
 
 You apply a filter to a single control from the Controls page, or to every control at once with the **Apply to all controls** action on the Filters page. Removing a filter works the same way. Deleting a filter removes it from every control that references it.
 

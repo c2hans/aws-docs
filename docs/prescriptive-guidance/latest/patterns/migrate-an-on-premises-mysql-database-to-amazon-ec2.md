@@ -42,7 +42,7 @@ The pattern is primarily for DBAs and solutions architects. It can be used in sm
 
 The following diagram illustrates the target Amazon EC2 implementation after cutover.
 
-![A MySQL DB instance on Amazon EC2 with replication to a standby MySQL DB instance.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/d22b3e25-4d3b-4bd7-ad07-501748d67752/images/34cab6f9-9107-4c3b-98ec-a6d7fa9f298a.png)
+![A MySQL DB instance on Amazon EC2 with replication to a standby MySQL DB instance.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/d22b3e25-4d3b-4bd7-ad07-501748d67752/images/34cab6f9-9107-4c3b-98ec-a6d7fa9f298a.png)
 
 **AWS data migration architecture**
 
@@ -50,13 +50,13 @@ The following diagram illustrates the target Amazon EC2 implementation after cut
 
 The following diagram illustrates the data migration workflow based on AWS DMS for sending full and incremental changes to the target MySQL database until cutover. The network connection from on premises to AWS depends on the requirements of the SQL client and is outside the scope of this pattern.
 
-![Using AWS DMS to send data to a target MySQL DB on Amazon EC2.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/d22b3e25-4d3b-4bd7-ad07-501748d67752/images/c906c45d-fac5-4bb9-b8c8-55e2f9f05fd8.png)
+![Using AWS DMS to send data to a target MySQL DB on Amazon EC2.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/d22b3e25-4d3b-4bd7-ad07-501748d67752/images/c906c45d-fac5-4bb9-b8c8-55e2f9f05fd8.png)
 
 *Using other MySQL tools:*
 
 The following diagram illustrates the data migration workflow based on using MySQL tools to generate export dump files from the on-premises database. These files are moved to Amazon Simple Storage Service (Amazon S3) and imported into the target MySQL database before cutover. The network connection from on premises to AWS depends on the requirements of the SQL client and is outside the scope of this pattern.
 
-![Using native MySQL tools to send data to a target MySQL DB on Amazon EC2.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/d22b3e25-4d3b-4bd7-ad07-501748d67752/images/18e88877-7879-4a99-b985-25c56bf7c35f.png)
+![Using native MySQL tools to send data to a target MySQL DB on Amazon EC2.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/d22b3e25-4d3b-4bd7-ad07-501748d67752/images/18e88877-7879-4a99-b985-25c56bf7c35f.png)
 
 Notes:
 + Depending on down time considerations and the size of the database for the final cutover, you can use AWS DMS or another change data capture (CDC) tool to minimize the cutover time. When you use a CDC tool such as AWS DMS, you can migrate to the target database in minutes.

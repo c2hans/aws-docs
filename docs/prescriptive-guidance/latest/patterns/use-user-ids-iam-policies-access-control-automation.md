@@ -62,7 +62,7 @@ To address this issue, we recommend that you incorporate user IDs into your Clou
 
 The following diagram shows how CloudFormation uses a custom resource backed by AWS Lambda to retrieve the IAM user ID.
 
-![Getting the IAM user ID by using a CloudFormation custom resource.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/71698647-274e-4911-92f0-549e444b53f6/images/7e507df4-f597-499e-bd5b-6d7a55e64146.png)
+![Getting the IAM user ID by using a CloudFormation custom resource.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/71698647-274e-4911-92f0-549e444b53f6/images/7e507df4-f597-499e-bd5b-6d7a55e64146.png)
 
 **Automation and scale**
 

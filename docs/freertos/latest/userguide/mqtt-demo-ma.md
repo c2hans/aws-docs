@@ -28,11 +28,11 @@ The demo creates a single application task that loops through a set of examples 
 
 A successful completion of the demo will generate an output similar to the following image.
 
-![MQTT demo terminal output on successful completion](http://docs.aws.amazon.com/freertos/latest/userguide/images/coremqtt-mad-output.png)
+![MQTT demo terminal output on successful completion](https://docs.aws.amazon.com/freertos/latest/userguide/images/coremqtt-mad-output.png)
 
 The AWS IoT console will generate an output similar to the following image.
 
-![MQTT demo console output on successful completion](http://docs.aws.amazon.com/freertos/latest/userguide/images/coremqtt-mad-console.png)
+![MQTT demo console output on successful completion](https://docs.aws.amazon.com/freertos/latest/userguide/images/coremqtt-mad-console.png)
 
 ## Retry logic with exponential backoff and jitter
 <a name="mqtt-demo-ma-retry-logic"></a>

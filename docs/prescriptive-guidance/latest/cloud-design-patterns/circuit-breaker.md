@@ -51,23 +51,23 @@ In the following example, the caller is the order service and the callee is the 
 
 When there are no failures, the order service routes all calls to the payment service by the circuit breaker, as the following diagram shows.
 
-![Circuit breaker pattern with no failures.](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/1d9485fb-d1d2-4143-b16b-cd1c9671fc6d.png)
+![Circuit breaker pattern with no failures.](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/1d9485fb-d1d2-4143-b16b-cd1c9671fc6d.png)
 
 If the payment service times out, the circuit breaker can detect the timeout and track the failure.
 
-![Circuit breaker pattern with service timeout.](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/4d529568-a3ba-441c-8056-a16a53a08c8e.png)
+![Circuit breaker pattern with service timeout.](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/4d529568-a3ba-441c-8056-a16a53a08c8e.png)
 
 If the timeouts exceed a specified threshold, the application opens the circuit. When the circuit is open, the circuit breaker object doesn't route the calls to the payment service. It returns an immediate failure when the order service calls the payment service.
 
-![Circuit breaker pattern with open circuit.](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/5ac967d1-3aa1-45e6-add7-b3e8342879be.png)
+![Circuit breaker pattern with open circuit.](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/5ac967d1-3aa1-45e6-add7-b3e8342879be.png)
 
 The circuit breaker object periodically tries to see if the calls to the payment service are successful.
 
-![Circuit breaker pattern with retries.](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/fff55b95-436f-4789-a0ea-e119bfeefa09.png)
+![Circuit breaker pattern with retries.](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/fff55b95-436f-4789-a0ea-e119bfeefa09.png)
 
 When the call to payment service succeeds, the circuit is closed, and all further calls are routed to the payment service again.
 
-![Circuit breaker pattern after successful retry.](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/831f24cc-1e1c-490b-8a46-e8a17c5a740d.png)
+![Circuit breaker pattern after successful retry.](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/831f24cc-1e1c-490b-8a46-e8a17c5a740d.png)
 
 ### Implementation using AWS services
 <a name="implementation-using-aws-services.ae554801-ca7e-512d-9b6b-663e6a1dea3e"></a>
@@ -80,7 +80,7 @@ When a service wants to call another service, it starts the workflow with the na
 
 If the `CircuitStatus` table doesn't contain a record for the callee or contains an expired record, the service is operational. The `ExecuteLambda` step in the state machine definition calls the Lambda function that's sent through a parameter value. If the call succeeds, the Step Functions workflow exits with a `SUCCESS` state.
 
-![Circuit breaker implementation with AWS Step Functions and DynamoDB](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/5b791b30-fe6b-4592-9a73-0b1ecb2caafa.png)
+![Circuit breaker implementation with AWS Step Functions and DynamoDB](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/5b791b30-fe6b-4592-9a73-0b1ecb2caafa.png)
 
 If the service call fails or a timeout occurs, the application retries with exponential backoff for a defined number of times. If the service call fails after the retries, the workflow inserts a record in the `CircuitStatus` table for the service with the an `ExpiryTimeStamp`, and the workflow exits with a `FAIL` state. Subsequent calls to the same service return an immediate failure as long as the circuit breaker is open. The `Get Circuit Status` step in the state machine definition checks the service availability based on the `ExpiryTimeStamp` value. Expired items are deleted from the `CircuitStatus` table by using the DynamoDB time to live (TTL) feature.
 

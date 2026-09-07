@@ -10,7 +10,7 @@ Performance testing delivers the most value when it runs automatically on every 
 ## Where Performance Tests Fit in the Pipeline
 <a name="where-performance-tests-fit"></a>
 
-![Where Performance Tests Fit in the Pipeline](http://docs.aws.amazon.com/solutions/latest/performance-testing/images/perf_cicd_pipeline.png)
+![Where Performance Tests Fit in the Pipeline](https://docs.aws.amazon.com/solutions/latest/performance-testing/images/perf_cicd_pipeline.png)
 
 ## Integration Approach: Tool Agnostic
 <a name="integration-approach"></a>

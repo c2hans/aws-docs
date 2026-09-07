@@ -14,7 +14,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-bu
 
  RMAN is a backup/restore tool for Oracle database. The Oracle Secure Backup (OSB) plugin allows you to copy your backup directly to Amazon S3 and restore it to an Amazon EC2, or RDS Custom instance. Refer the following figure.
 
-![Reference architecture diagram showing Oracle RMAN backup and restore](http://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-business-suite/images/oracle-rman-backup-restore.jpg)
+![Reference architecture diagram showing Oracle RMAN backup and restore](https://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-business-suite/images/oracle-rman-backup-restore.jpg)
 
 ## Oracle Data Guard
 <a name="oracle-data-guard"></a>

@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-serverless-data-a
 
  The following diagram illustrates the architecture of a data lake centric analytics platform.
 
-![A diagram depicting architecture of a data lake centric analytics platform .](http://docs.aws.amazon.com/whitepapers/latest/aws-serverless-data-analytics-pipeline/images/dl-analytics.png)
+![A diagram depicting architecture of a data lake centric analytics platform .](https://docs.aws.amazon.com/whitepapers/latest/aws-serverless-data-analytics-pipeline/images/dl-analytics.png)
 
  You can think of a data lake centric analytics architecture as a stack of six logical layers, where each layer is composed of multiple components. A layered, component-oriented architecture promotes separation of concerns, decoupling of tasks, and flexibility. This provides the agility needed to quickly integrate new data sources, support new analytics methods, and add tools required to keep up with the accelerating pace of changes in the analytics landscape. In the following sections, we look at the key responsibilities, capabilities, and integrations of each logical layer.
 

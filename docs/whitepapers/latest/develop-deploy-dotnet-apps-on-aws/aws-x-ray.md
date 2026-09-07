@@ -13,13 +13,13 @@ One of the challenges of modern applications is they are built from a number of 
 
 For each request into your application, data is recorded as a series of segments that are grouped into a trace. Once a trace is recorded, you can view it from the trace history, allowing you to inspect your application’s performance and behavior to help focus on potential problems.
 
-![A screenshot of an AWS X-Ray trace](http://docs.aws.amazon.com/whitepapers/latest/develop-deploy-dotnet-apps-on-aws/images/dotnet-apps7.png)
+![A screenshot of an AWS X-Ray trace](https://docs.aws.amazon.com/whitepapers/latest/develop-deploy-dotnet-apps-on-aws/images/dotnet-apps7.png)
 
 *AWS X-Ray trace example *
 
 AWS X-Ray can also display service graphs, which show graphical views of the services used by your application, helping to isolate various issues, including faults, latency spikes, and possible bottlenecks.
 
-![An AWS X-Ray service graph example showing integration across various components](http://docs.aws.amazon.com/whitepapers/latest/develop-deploy-dotnet-apps-on-aws/images/dotnet-apps8.png)
+![An AWS X-Ray service graph example showing integration across various components](https://docs.aws.amazon.com/whitepapers/latest/develop-deploy-dotnet-apps-on-aws/images/dotnet-apps8.png)
 
 *AWS X-Ray service graph example showing integration across various components *
 

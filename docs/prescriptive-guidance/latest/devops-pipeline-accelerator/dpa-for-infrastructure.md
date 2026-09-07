@@ -11,11 +11,11 @@ This section describes how to use DPA to implement centralized pipeline template
 
 The following image shows the DPA architecture for infrastructure provisioning. You use the CI/CD pipeline templates to provision infrastructure by using Terraform, CodePipeline, and AWS CDK.
 
-![The DPA architecture for infrastructure provisioning.](http://docs.aws.amazon.com/prescriptive-guidance/latest/devops-pipeline-accelerator/images/guide-img/e56ba347-e180-48ee-bbf9-0b76e10e70f2/images/c0449d88-9345-4bee-90ae-ef257db6abb3.png)
+![The DPA architecture for infrastructure provisioning.](https://docs.aws.amazon.com/prescriptive-guidance/latest/devops-pipeline-accelerator/images/guide-img/e56ba347-e180-48ee-bbf9-0b76e10e70f2/images/c0449d88-9345-4bee-90ae-ef257db6abb3.png)
 
 The following image shows a reference pipeline for a Terraform-based application, which consumes the Terraform entry point. At the end of the post-deploy stage, the code enters a release pipeline for deployment to staging and production environments.
 
-![A reference pipeline for a Terraform-based application](http://docs.aws.amazon.com/prescriptive-guidance/latest/devops-pipeline-accelerator/images/guide-img/e56ba347-e180-48ee-bbf9-0b76e10e70f2/images/1e6a599c-5f38-4ca3-8c7c-9bdc7d855d90.png)
+![A reference pipeline for a Terraform-based application](https://docs.aws.amazon.com/prescriptive-guidance/latest/devops-pipeline-accelerator/images/guide-img/e56ba347-e180-48ee-bbf9-0b76e10e70f2/images/1e6a599c-5f38-4ca3-8c7c-9bdc7d855d90.png)
 
 Note the following when using DPA for infrastructure provisioning:
 + The type of events that occur in a repository affect the pipeline construction. For example, `pull` requests don't provision resources to the AWS Cloud. However, when a `pull` request merges into the main branch, the pipeline provisions the resources to the AWS Cloud.

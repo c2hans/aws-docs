@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/registration-
 
 Use this pattern for **physical signage** (in-store displays, receipts, mailers, posters) with a QR code or NFC tag. All required disclosures must be printed directly on the signage — the user sees them before scanning. Scanning the QR code deeplinks to the native messaging app to send an inbound message to the registered number.
 
-![QR code physical signage example](http://docs.aws.amazon.com/sms-voice/latest/userguide/images/optin-qrcode.png)
+![QR code physical signage example](https://docs.aws.amazon.com/sms-voice/latest/userguide/images/optin-qrcode.png)
 
 ## What makes this compliant
 <a name="registration-help-optin-qrcode-compliant"></a>

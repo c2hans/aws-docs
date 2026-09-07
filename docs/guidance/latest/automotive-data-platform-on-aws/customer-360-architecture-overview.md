@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/guidance/latest/automotive-data-platform
 
 The solution combines Quick Suite analytics with Bedrock AI agents in a three-tier architecture.
 
-![Customer 360 Analytics Architecture](http://docs.aws.amazon.com/guidance/latest/automotive-data-platform-on-aws/images/customer360.png)
+![Customer 360 Analytics Architecture](https://docs.aws.amazon.com/guidance/latest/automotive-data-platform-on-aws/images/customer360.png)
 
 ## Architecture layers
 <a name="architecture-layers"></a>

@@ -48,7 +48,7 @@ For existing instances:
 **Note**
 When you enable message streaming using the console, the required `lex:RecognizeMessageAsync` permission is automatically added to the bot alias resource-based policy. When using the API, you must add this permission manually.
 
-![Enable message streaming option in the Amazon Connect console.](http://docs.aws.amazon.com/connect/latest/adminguide/images/message-streaming-ai-chat-enablement.png)
+![Enable message streaming option in the Amazon Connect console.](https://docs.aws.amazon.com/connect/latest/adminguide/images/message-streaming-ai-chat-enablement.png)
 
 ## Update Lex bot permissions
 <a name="message-streaming-lex-permissions"></a>

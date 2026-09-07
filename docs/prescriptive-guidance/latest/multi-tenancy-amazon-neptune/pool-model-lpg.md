@@ -17,7 +17,7 @@ With LPGs, users can add key-value pair properties to nodes, or vertices, and ed
 
 The following diagram shows this model. The two disconnected subgraphs have various labeled nodes and edges, with the tenant property key represented by `TId`. Every node and edge from one subgraph has a `TId` value of `1`. In the other subgraph, every node and edge has a `TId` value of `2`.
 
-![Nodes and their relationships.](http://docs.aws.amazon.com/prescriptive-guidance/latest/multi-tenancy-amazon-neptune/images/guide-img/d9a33330-1308-4d3e-b2de-9b5b65b34e0f/images/89c0183e-e639-4f19-90e9-edac2d28aec8.png)
+![Nodes and their relationships.](https://docs.aws.amazon.com/prescriptive-guidance/latest/multi-tenancy-amazon-neptune/images/guide-img/d9a33330-1308-4d3e-b2de-9b5b65b34e0f/images/89c0183e-e639-4f19-90e9-edac2d28aec8.png)
 
 Within labeled property graphs, there are two ways to manage this. The Gremlin query language offers the  [PartitionStrategy](https://tinkerpop.apache.org/docs/current/reference/#partitionstrategy) traversal library to help manage data partitioning of the data. The code in the following example expects every node and edge to have a property called `TId`:
 
@@ -90,7 +90,7 @@ If performance is a top concern, we highly recommend considering the prefix-labe
 
 In the prefix-label strategy, you label each node with a combination of tenant identifier and node label. For example, if the tenant has an identifier of `"1"` and the node label is `"Label1"`, you specify the node label as `"1-Label1"`. The following diagram shows two disconnected subgraphs that use this model.
 
-![Nodes with labels that include prefixes, and node relationships.](http://docs.aws.amazon.com/prescriptive-guidance/latest/multi-tenancy-amazon-neptune/images/guide-img/d9a33330-1308-4d3e-b2de-9b5b65b34e0f/images/63e9d001-757f-4c92-8142-f598f4ef50f6.png)
+![Nodes with labels that include prefixes, and node relationships.](https://docs.aws.amazon.com/prescriptive-guidance/latest/multi-tenancy-amazon-neptune/images/guide-img/d9a33330-1308-4d3e-b2de-9b5b65b34e0f/images/63e9d001-757f-4c92-8142-f598f4ef50f6.png)
 
 When writing data in Gremlin, you can add an identifying number to any node's label:
 
@@ -127,7 +127,7 @@ There are two primary drawbacks to the prefix label approach. First, it's diffic
 
 The third option is to use a multiple-label strategy. For this approach, you add extra labels to every node on the graph. For example, if you need to filter across all of the data for a given tenant, add the tenant ID label. If you need to filter across all data for a given label regardless of tenant, add that label. The following diagram shows the multiple-label strategy applied by using three labels for each node.
 
-![Nodes and their relationships, where each node has LabelX, X, X-LabelX.](http://docs.aws.amazon.com/prescriptive-guidance/latest/multi-tenancy-amazon-neptune/images/guide-img/d9a33330-1308-4d3e-b2de-9b5b65b34e0f/images/afa0545d-d140-4ee5-9577-afdc81e4ca9a.png)
+![Nodes and their relationships, where each node has LabelX, X, X-LabelX.](https://docs.aws.amazon.com/prescriptive-guidance/latest/multi-tenancy-amazon-neptune/images/guide-img/d9a33330-1308-4d3e-b2de-9b5b65b34e0f/images/afa0545d-d140-4ee5-9577-afdc81e4ca9a.png)
 
 You can now access the graph by using three different patterns:
 + Filter on `Label1` to return all nodes with `Label1` across all tenants.

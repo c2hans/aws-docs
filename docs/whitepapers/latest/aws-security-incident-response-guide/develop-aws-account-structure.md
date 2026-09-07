@@ -15,4 +15,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
 
  The following diagram displays a sample account structure including a forensics OU with per-Region forensics accounts:
 
-![Diagram of a per-region account structure for incident response](http://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/images/incident-response-account-structure.png)
+![Diagram of a per-region account structure for incident response](https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/images/incident-response-account-structure.png)

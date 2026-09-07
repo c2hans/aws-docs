@@ -20,7 +20,7 @@ For usage in Generative AI Application Builder solution, a Guardrail must be con
 
  **Depicts Deployment wizard - enabling Amazon Bedrock Guardrails**
 
-![guardrails for bedrock](http://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/guardrails-for-bedrock.png)
+![guardrails for bedrock](https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/guardrails-for-bedrock.png)
 
 ## Provisioned Throughput for Amazon Bedrock
 <a name="provisioned-throughput-for-amazon-bedrock"></a>
@@ -31,7 +31,7 @@ Once Provisioned Throughput is purchased within the Amazon Bedrock console, a Mo
 
  **Depicts Deployment wizard - Enabling Provisioned Throughput for Amazon Bedrock**
 
-![provisioned throughput for bedrock](http://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/provisioned-throughput-for-bedrock.png)
+![provisioned throughput for bedrock](https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/images/provisioned-throughput-for-bedrock.png)
 
 **Note**
 Your guardrail and provisioned throughput must be in the same Region as the deployed Deployment Dashboard and use case stacks.

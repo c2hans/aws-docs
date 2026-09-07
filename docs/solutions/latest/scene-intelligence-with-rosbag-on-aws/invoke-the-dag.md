@@ -14,14 +14,14 @@ Complete the following steps to invoke the DAG.
 1. Select `addf-aws-solutions-core-mwaa-environment` and choose **Open Airflow UI**. This opens a new window to the Airflow DAG.
 
     **Example Airflow environments screen listing addf-aws-solutions-core-mwaa-environment and Open Airflow UI link.**
-![airflow dag](http://docs.aws.amazon.com/solutions/latest/scene-intelligence-with-rosbag-on-aws/images/airflow-dag.png)
+![airflow dag](https://docs.aws.amazon.com/solutions/latest/scene-intelligence-with-rosbag-on-aws/images/airflow-dag.png)
 
 1. Choose the `vsi-image-pipeline` DAG.
 
 1. Choose **Play** and select **Trigger DAG w/ config**.
 
     **Example vsi\_image\_pipeline screen with Trigger Dag w/ config option in upper right corner.**
-![vsi image pipeline](http://docs.aws.amazon.com/solutions/latest/scene-intelligence-with-rosbag-on-aws/images/vsi-image-pipeline.png)
+![vsi image pipeline](https://docs.aws.amazon.com/solutions/latest/scene-intelligence-with-rosbag-on-aws/images/vsi-image-pipeline.png)
 
 1. Provide the paths to the staged rosbag files. The following is an example, where you replace {{<vehicle-name>}} with the vehicle name, {{<bucket>}} with the S3 bucket name, and {{<prefix-to-dag>}} with your prefix:
 
@@ -63,6 +63,6 @@ The following image shows the previous example code in the Airflow DAG window:
 
  **Example vsi\_image\_pipeline screen displaying previous sample code and Trigger button.**
 
-![vsi image pipeline trigger](http://docs.aws.amazon.com/solutions/latest/scene-intelligence-with-rosbag-on-aws/images/vsi-image-pipeline-trigger.png)
+![vsi image pipeline trigger](https://docs.aws.amazon.com/solutions/latest/scene-intelligence-with-rosbag-on-aws/images/vsi-image-pipeline-trigger.png)
 
 1. Choose **Trigger**. Wait for the DAG to complete running (approximately 20 minutes).

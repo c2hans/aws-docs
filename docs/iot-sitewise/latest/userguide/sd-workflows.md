@@ -68,109 +68,109 @@ Scenario Discovery uses tasks and pipelines to process and ingest your data. A t
 
 From your workspace, choose the **Tasks** tab. This is where you manage all your container tasks. If you haven't created any tasks yet, the list is empty.
 
-![Tasks tab in your workspace](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image11.png)
+![Tasks tab in your workspace](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image11.png)
 
 ### Step 2: Create a new task
 <a name="sd-step2-create-task"></a>
 
 Choose **Create task** and fill in the basic details: give your task a name (for example, "S3 to EFS"), add an optional description, and select "Container" as the task type.
 
-![Creating a new task with name and type](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image12.png)
+![Creating a new task with name and type](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image12.png)
 
 ### Step 3: Configure the container image and execution role
 <a name="sd-step3-configure-container"></a>
 
 Point the task to your container image by entering its ECR URI (your image address in Amazon Elastic Container Registry). Then select the IAM execution role that grants the container permission to access your AWS resources like S3 buckets.
 
-![Configuring the container image ECR URI](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image13.png)
+![Configuring the container image ECR URI](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image13.png)
 
-![Selecting the IAM execution role](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image14.png)
+![Selecting the IAM execution role](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image14.png)
 
 ### Step 4: Set processing parameters
 <a name="sd-step4-processing-params"></a>
 
 Choose how much compute your task needs. Select "Generic compute" for standard CPU workloads or "Hardware accelerated" for GPU tasks. Pick a processing unit size (for example, 16 units), set the startup command (for example, "python main.py"), and specify a timeout in seconds (for example, 3600 for one hour).
 
-![Setting compute type and processing parameters](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image15.png)
+![Setting compute type and processing parameters](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image15.png)
 
-![Configuring startup command and timeout](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image16.png)
+![Configuring startup command and timeout](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image16.png)
 
 ### Step 5: Add environment variables
 <a name="sd-step5-env-vars"></a>
 
 Add any environment variables your container needs at runtime. Common examples include the AWS region, S3 bucket paths, workspace name, and role ARNs. These are key-value pairs that configure how your container behaves.
 
-![Adding environment variables to your task](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image17.png)
+![Adding environment variables to your task](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image17.png)
 
 ### Step 6: Review the created task
 <a name="sd-step6-review-task"></a>
 
 Choose **Create task** to finish. A green banner confirms that the task was created successfully. You can review all your settings on the task details page and use the Edit or Delete buttons if you need to make changes.
 
-![Reviewing the created task details](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image18.png)
+![Reviewing the created task details](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image18.png)
 
 ### Step 7: Create additional tasks
 <a name="sd-step7-additional-tasks"></a>
 
 Create additional tasks as needed for your pipeline. For example, you might create a separate "ingest" task that handles data ingestion into Scenario Discovery. Each task can use a different container image and configuration.
 
-![Creating an additional ingestion task](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image19.png)
+![Creating an additional ingestion task](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image19.png)
 
 ### Step 8: Navigate to the Pipelines tab
 <a name="sd-step8-pipelines-tab"></a>
 
 Go back to your workspace and choose the **Pipelines** tab. Choose **Create pipeline** to start building a multi-step workflow. Give your pipeline a name (for example, "ingestdatapipeline") and an optional description.
 
-![Creating a new pipeline](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image20.png)
+![Creating a new pipeline](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image20.png)
 
 ### Step 9: Add compute nodes to the pipeline
 <a name="sd-step9-add-nodes"></a>
 
 Choose **\+ Add node** to add processing steps to your pipeline. For each node, give it a name and select which task it should run. You can add multiple nodes to chain tasks together (for example, first transfer data from S3, then ingest it into Scenario Discovery).
 
-![Adding compute nodes to the pipeline](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image21.png)
+![Adding compute nodes to the pipeline](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image21.png)
 
-![Selecting tasks for each node](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image22.png)
+![Selecting tasks for each node](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image22.png)
 
 ### Step 10: Define the pipeline graph and dependencies
 <a name="sd-step10-define-dag"></a>
 
 The visual editor shows your pipeline as a flowchart. Connect nodes with arrows to define the execution order. For example, the data transfer node runs first, and the ingestion node starts only after it completes. Choose **Create pipeline** when your graph looks correct.
 
-![Defining the pipeline DAG with node dependencies](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image23.png)
+![Defining the pipeline DAG with node dependencies](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image23.png)
 
 ### Step 11: Review the created pipeline
 <a name="sd-step11-review-pipeline"></a>
 
 Once created, the pipeline details page confirms that your pipeline is active and shows its structure. You can see the node graph, execution history, and use the buttons at the top to edit, delete, monitor, or execute the pipeline.
 
-![Executing the pipeline with environment overrides](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image24.png)
+![Executing the pipeline with environment overrides](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image24.png)
 
 ### Step 12: Monitor pipeline execution
 <a name="sd-step12-monitor-execution"></a>
 
 The monitoring screen shows your pipeline's progress in real time. Each node is color-coded: blue means running, green means completed, and red means failed. Choose any node to see its details and access logs for troubleshooting.
 
-![Monitoring pipeline execution in real time](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image25.png)
+![Monitoring pipeline execution in real time](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image25.png)
 
 You can monitor the data pipeline by choosing **Monitor**. The Monitor tab shows the execution history of the particular pipeline over time. You can see how long different nodes in the pipeline take to execute, the number of successful executions, failed executions, and when the pipeline was last executed. Additionally, the monitor window gives you an indication of average execution time per node over many runs throughout the pipeline usage.
 
-![Pipeline execution node status](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image26.png)
+![Pipeline execution node status](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image26.png)
 
-![Accessing node logs for troubleshooting](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image27.png)
+![Accessing node logs for troubleshooting](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image27.png)
 
-![Completed pipeline execution status](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image28.png)
+![Completed pipeline execution status](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image28.png)
 
 ### Step 13: Verify pipeline completion
 <a name="sd-step13-verify-pipeline"></a>
 
 Once the pipeline finishes, go back to the Pipelines tab to confirm it ran successfully. Your pipeline is listed with its status, and you can re-run it anytime.
 
-![Verifying pipeline completion in the Pipelines tab](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image29.png)
+![Verifying pipeline completion in the Pipelines tab](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image29.png)
 
 ### Step 14: Verify session datasets
 <a name="sd-step14-verify-session-datasets"></a>
 
 After ingestion completes, check the **Session datasets** tab in your workspace to confirm your data is now available. You should see your recordings listed with an ACTIVE status.
 
-![Session datasets showing active ingested recordings](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image30.png)
+![Session datasets showing active ingested recordings](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sd-image30.png)

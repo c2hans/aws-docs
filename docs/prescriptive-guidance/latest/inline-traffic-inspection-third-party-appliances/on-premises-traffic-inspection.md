@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/inline-traf
 
 The following diagram shows the traffic flow if an Amazon Elastic Compute Cloud (Amazon EC2) instance in `Workload spoke VPC1` wants to communicate with an on-premises server.
 
-![The traffic flow between an EC2 instance in spoke VPC 1 and an on-premises server](http://docs.aws.amazon.com/prescriptive-guidance/latest/inline-traffic-inspection-third-party-appliances/images/guide-img/7951faf9-5db9-4729-86ff-47c734d59b19/images/693e5646-fd5f-4e31-9928-1e74affb79d7.png)
+![The traffic flow between an EC2 instance in spoke VPC 1 and an on-premises server](https://docs.aws.amazon.com/prescriptive-guidance/latest/inline-traffic-inspection-third-party-appliances/images/guide-img/7951faf9-5db9-4729-86ff-47c734d59b19/images/693e5646-fd5f-4e31-9928-1e74affb79d7.png)
 
 The diagram shows the following workflow:
 

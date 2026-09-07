@@ -14,7 +14,7 @@ A large toy maker has been growing very quickly and expanding their product line
 
 Capturing the data from various social networks is relatively easy but the challenge is building the intelligence programmatically. After the data is ingested, the company wants to be able to analyze and classify the data in a cost-effective and programmatic way. To do this, they can use the architecture in the following figure.
 
-![Architecture diagram showing Twitter data flowing through Kinesis, Lambda, S3, to analytics services.](http://docs.aws.amazon.com/whitepapers/latest/big-data-analytics-options/images/bigdata4.png)
+![Architecture diagram showing Twitter data flowing through Kinesis, Lambda, S3, to analytics services.](https://docs.aws.amazon.com/whitepapers/latest/big-data-analytics-options/images/bigdata4.png)
 
 *Sentiment analysis of social media *
 

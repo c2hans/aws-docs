@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-direct-connect-fo
 
  The following diagram shows you what each port is used for:
 
-![Diagram of Amazon Connect port and fully qualified domain name (FQDN) usage.](http://docs.aws.amazon.com/whitepapers/latest/aws-direct-connect-for-amazon-connect/images/amazon-connect-port.png)
+![Diagram of Amazon Connect port and fully qualified domain name (FQDN) usage.](https://docs.aws.amazon.com/whitepapers/latest/aws-direct-connect-for-amazon-connect/images/amazon-connect-port.png)
 
 ## Allow IP address ranges
 <a name="allow-ip-address-ranges"></a>

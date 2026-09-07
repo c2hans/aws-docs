@@ -12,7 +12,7 @@ You connect only one application to each iSCSI target.
 
 The following diagram highlights the iSCSI target in the larger picture of the Storage Gateway architecture. For more information on Storage Gateway architecture, see [How Tape Gateway works (architecture)](https://docs.aws.amazon.com/storagegateway/latest/tgw/StorageGatewayConcepts.html).
 
-![Storage Gateway tape drives and media changers as iSCSI targets connected to backup applications.](http://docs.aws.amazon.com/storagegateway/latest/tgw/images/Gateway-VTL-iSCSI-vtl-diagram.png)
+![Storage Gateway tape drives and media changers as iSCSI targets connected to backup applications.](https://docs.aws.amazon.com/storagegateway/latest/tgw/images/Gateway-VTL-iSCSI-vtl-diagram.png)
 
 **To connect your Windows client to the VTL devices**
 

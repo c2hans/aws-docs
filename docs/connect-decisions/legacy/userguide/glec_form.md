@@ -20,7 +20,7 @@ To send a transport emissions data request form, follow the procedure below:
 1. On the **Data Requests** page, choose **Create data request**.
 
    The **Create data requests** page appears.
-![Transport Emissions data forms](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/sustanability_glec.png)
+![Transport Emissions data forms](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/sustanability_glec.png)
 
 1. Depending on your request type, under **Data request type**, choose **Transport Emissions (GLEC) by Parcel v0.1** or **Transport Emissions (GLEC) by Account**
 

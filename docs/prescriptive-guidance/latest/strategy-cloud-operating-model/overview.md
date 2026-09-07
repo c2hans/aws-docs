@@ -36,7 +36,7 @@ Defining a new operating model is not a one-time exercise. You need to build a m
 
 The AWS Cloud Operating Model (COM) Framework consists of 73 capabilities, grouped into 17 domains and 5 perspectives, as illustrated in the following diagram.
 
-![The AWS Cloud Operating Model Framework](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cloud-operating-model/images/guide-img/9a407f0b-ea38-4662-8d39-755295f71238/images/a2a0b318-a057-4ffa-839d-245b0c38ed2c.png)
+![The AWS Cloud Operating Model Framework](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cloud-operating-model/images/guide-img/9a407f0b-ea38-4662-8d39-755295f71238/images/a2a0b318-a057-4ffa-839d-245b0c38ed2c.png)
 
 |
 |

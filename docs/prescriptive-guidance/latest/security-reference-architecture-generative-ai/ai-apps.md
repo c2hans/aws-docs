@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 
 The scope of this capability is to secure user-facing AI applications that provide direct access to AI capabilities. The following diagram illustrates the AWS services recommended for the Generative AI account for this capability.
 
-![Services recommended for user-facing AI applications.](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-generative-ai/images/guide-img/a349f18f-a9fd-43a3-9a48-27534bf6412a/images/902df093-a7fa-41b1-b1dc-676237165932.png)
+![Services recommended for user-facing AI applications.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-generative-ai/images/guide-img/a349f18f-a9fd-43a3-9a48-27534bf6412a/images/902df093-a7fa-41b1-b1dc-676237165932.png)
 
 ## Rationale
 <a name="ai-apps-rationale"></a>

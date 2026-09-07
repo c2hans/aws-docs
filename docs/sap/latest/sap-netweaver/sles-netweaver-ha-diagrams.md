@@ -16,11 +16,11 @@ This guide covers two architectures for SAP cluster solutions on SLES for SAP â€
 
 See the following image for more details.
 
-![Simple Mount Achitecture](http://docs.aws.amazon.com/sap/latest/sap-netweaver/images/image-pacemaker-nw-sles-simplemount.png)
+![Simple Mount Achitecture](https://docs.aws.amazon.com/sap/latest/sap-netweaver/images/image-pacemaker-nw-sles-simplemount.png)
 
 ## Pacemaker - classic architecture
 <a name="classic-diagram-nw-sles"></a>
 
 See the following image for more details.
 
-![Classic Architecture.](http://docs.aws.amazon.com/sap/latest/sap-netweaver/images/image-pacemaker-nw-sles-classic.png)
+![Classic Architecture.](https://docs.aws.amazon.com/sap/latest/sap-netweaver/images/image-pacemaker-nw-sles-classic.png)

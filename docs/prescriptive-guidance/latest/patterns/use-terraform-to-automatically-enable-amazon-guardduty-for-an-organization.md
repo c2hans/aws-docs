@@ -67,7 +67,7 @@ Amazon Linux 2 is nearing end of support. For more information, see the [Amazon 
 
 This section gives a high-level overview of this solution and the architecture established by the sample code. The following diagram shows the resources deployed across the various accounts in the organization, within a single AWS Region.
 
-![Architecture diagram showing resources in management, security, logging, and member accounts.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c9b68627-b68e-47a6-9933-d0f36ea10ae2/images/86193749-eef9-4d63-8a7f-daa0cd03fbfe.png)
+![Architecture diagram showing resources in management, security, logging, and member accounts.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c9b68627-b68e-47a6-9933-d0f36ea10ae2/images/86193749-eef9-4d63-8a7f-daa0cd03fbfe.png)
 
 1. Terraform creates the **GuardDutyTerraformOrgRole** AWS Identity and Access Management (IAM) role in the security account and the logging account.
 

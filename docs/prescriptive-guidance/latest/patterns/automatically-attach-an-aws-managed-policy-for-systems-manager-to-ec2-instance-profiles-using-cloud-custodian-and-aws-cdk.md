@@ -48,7 +48,7 @@ AWS Command Line Interface (AWS CLI), installed and configured. For testing purp
 ## Architecture
 <a name="automatically-attach-an-aws-managed-policy-for-systems-manager-to-ec2-instance-profiles-using-cloud-custodian-and-aws-cdk-architecture"></a>
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/169a7bde-789e-4ebd-b4ca-80eb28ac9927/images/8ec0b6b4-d4b0-42e5-833d-24d1e6098fd9.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/169a7bde-789e-4ebd-b4ca-80eb28ac9927/images/8ec0b6b4-d4b0-42e5-833d-24d1e6098fd9.png)
 
 The diagram shows the following workflow:
 

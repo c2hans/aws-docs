@@ -36,7 +36,7 @@ If you have a complex networking infrastructure, such as multi-Region and multi-
 
 **Target architecture**
 
-![AWS CDK creating Service Catalog portfolios and provisioning products in the target account.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e8f217a7-aec4-4c85-8f6b-f91995506be0/images/1f027b82-14c3-485a-909b-1544e974b90a.png)
+![AWS CDK creating Service Catalog portfolios and provisioning products in the target account.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e8f217a7-aec4-4c85-8f6b-f91995506be0/images/1f027b82-14c3-485a-909b-1544e974b90a.png)
 
 1. In the portfolio (or *source*) account, you update the **config.json** file with the AWS account, AWS Region, IAM role, portfolio, and product information for your use case.
 

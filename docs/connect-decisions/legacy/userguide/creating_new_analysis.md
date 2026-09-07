@@ -15,7 +15,7 @@ Granular access based on Location and Product is not supported in AWS Supply Cha
 1. Choose **New dataset**
 
    The **Create a Dataset** page appears. You will see the AWS Supply Chain data lake as an existing dataset for you to pick. For example, ask-datalake-*your instance id*.
-![Creating a dataset for AWS Supply Chain Analytics](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Analytics_dataset.png)
+![Creating a dataset for AWS Supply Chain Analytics](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Analytics_dataset.png)
 
 1. Choose the data source.
 **Note**
@@ -28,7 +28,7 @@ Select the blue Quick logo to navigate to the Quick menu to view the datasets or
    + asc\_custom\_data\_<your instance id>: Contains original, non-transformed data as provided. You can query these datasets to access and analyze your raw data directly and build dashboards out of them.
 
 1. Under **Tables: contain the data you can visualize**, choose the dataset from the list of AWS Supply Chain datasets.
-![Choosing a dataset category to create AWS Supply Chain Analytics dashboard](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Analytics_dataset1.png)
+![Choosing a dataset category to create AWS Supply Chain Analytics dashboard](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Analytics_dataset1.png)
 
 1. Choose **Select**.
 

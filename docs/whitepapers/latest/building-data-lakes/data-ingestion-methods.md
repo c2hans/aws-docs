@@ -25,7 +25,7 @@ Firehose also allows you to invoke Lambda functions to perform transformations o
 
 Firehose also provides the ability to group and partition the target files using custom prefixes such as dates for S3 objects. This facilitates faster querying by the use of the partitioning and incremental processing further with the same feature.
 
-![Delivering real-time streaming data with Kinesis Data Firehose to different destinations with optional backup](http://docs.aws.amazon.com/whitepapers/latest/building-data-lakes/images/storage-best-practices2.png)
+![Delivering real-time streaming data with Kinesis Data Firehose to different destinations with optional backup](https://docs.aws.amazon.com/whitepapers/latest/building-data-lakes/images/storage-best-practices2.png)
 
 Firehose also natively integrates with Amazon Managed Service for Apache Flink which provides you with an efficient way to analyze and transform streaming data using Apache Flink and SQL applications. Apache Flink is an open-source framework and engine for processing streaming data using Java and Scala. Using Managed Service for Apache Flink, you can develop applications to perform time series analytics, feed real-time dashboards, and create real-time metrics. You can also use Managed Service for Apache Flink for transforming the incoming stream and create a new data stream that can be written back into Firehose before it is delivered to a destination.
 
@@ -49,7 +49,7 @@ Data is transferred from the Snowball Edge device to your data lake built on Ama
 
 [AWS Glue](https://aws.amazon.com/glue/) is a fully managed serverless ETL service that makes it easier to categorize, clean, transform, and reliably transfer data between different data stores in a simple and cost-effective way. The core components of AWS Glue consists of a central metadata repository known as [AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/components-overview.html) which is a drop-in replacement for an Apache Hive metastore (refer to the [**Catalog and search**](data-cataloging.md) section of this document for more information) and an ETL job system that automatically generates Python and Scala code and manages ETL jobs. The following figure depicts the high-level architecture of an AWS Glue environment.
 
-![Architecture of an AWS Glue environment](http://docs.aws.amazon.com/whitepapers/latest/building-data-lakes/images/storage-best-practices3.png)
+![Architecture of an AWS Glue environment](https://docs.aws.amazon.com/whitepapers/latest/building-data-lakes/images/storage-best-practices3.png)
 
 To ETL the data from source to target, you create a job in AWS Glue, which involves the following steps:
 

@@ -37,7 +37,7 @@ When an error occurs in a Step Functions workflow, this pattern shows how the er
 
 The following diagram shows the workflow and architecture components for this pattern.
 
-![Workflow for error handling and notification using Step Functions, Amazon Bedrock, and Amazon SNS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/78f86c74-c9de-4562-adcc-105b87a77a54/images/d8eda499-ea1d-45e5-8a36-e04a44ad5c4b.png)
+![Workflow for error handling and notification using Step Functions, Amazon Bedrock, and Amazon SNS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/78f86c74-c9de-4562-adcc-105b87a77a54/images/d8eda499-ea1d-45e5-8a36-e04a44ad5c4b.png)
 
 The diagram shows the automated workflow for error handling and notification in a Step Functions state machine:
 

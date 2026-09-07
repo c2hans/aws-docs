@@ -12,7 +12,7 @@ A base backup is for rehosting to the AWS Cloud without changing your database a
 
 The following diagram shows the architecture for migrating an on-premises PostgreSQL database to the AWS Cloud by using a base backup.
 
-![Base backup architecture](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-databases-postgresql-ec2/images/guide-img/d9d57133-1a8b-4b7f-bbe9-e908969d06b9/images/05218c96-50c3-43e8-b0e4-5a8d09de4e8a.png)
+![Base backup architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-databases-postgresql-ec2/images/guide-img/d9d57133-1a8b-4b7f-bbe9-e908969d06b9/images/05218c96-50c3-43e8-b0e4-5a8d09de4e8a.png)
 
 The diagram shows the following workflow:
 

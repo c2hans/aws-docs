@@ -40,7 +40,7 @@ However, there is a common architectural limitation to the standard, recommended
 
 The following image shows the suggested architecture when you need to use CloudFront to serve static content from an S3 bucket through a VPC.
 
-![Traffic flow through Application Load Balancers in the VPC to the Lambda function.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e0dd6928-4fe0-47ab-954f-9de5563349d8/images/b42c7dd9-4a72-4998-bf88-195c8f90ed3e.png)
+![Traffic flow through Application Load Balancers in the VPC to the Lambda function.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e0dd6928-4fe0-47ab-954f-9de5563349d8/images/b42c7dd9-4a72-4998-bf88-195c8f90ed3e.png)
 
 1. The client requests the URL of CloudFront distribution to get a particular website file in the S3 bucket.
 

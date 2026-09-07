@@ -12,7 +12,7 @@ With this architecture, you can deploy Siemens Teamcenter on AWS for high availa
 ## Siemens Teamcenter PLM architecture diagram
 <a name="stp-diagram"></a>
 
-![Architecture diagram for Siemens Teamcenter product lifecycle management on AWS.](http://docs.aws.amazon.com/reference-architecture-diagrams/latest/siemens-teamcenter-plm/images/siemens-teamcenter-ra.png)
+![Architecture diagram for Siemens Teamcenter product lifecycle management on AWS.](https://docs.aws.amazon.com/reference-architecture-diagrams/latest/siemens-teamcenter-plm/images/siemens-teamcenter-ra.png)
 
 The following steps describe the architecture:
 

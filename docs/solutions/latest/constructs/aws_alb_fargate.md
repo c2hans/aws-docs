@@ -171,7 +171,7 @@ Out of the box implementation of the Construct without any override will set the
 ## Architecture
 <a name="_architecture"></a>
 
-![Application Load Balancer directing traffic to AWS Fargate and Amazon S3 services.](http://docs.aws.amazon.com/solutions/latest/constructs/images/aws-alb-fargate.png)
+![Application Load Balancer directing traffic to AWS Fargate and Amazon S3 services.](https://docs.aws.amazon.com/solutions/latest/constructs/images/aws-alb-fargate.png)
 
 ## Github
 <a name="_github"></a>

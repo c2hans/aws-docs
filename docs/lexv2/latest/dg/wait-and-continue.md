@@ -40,7 +40,7 @@ To test the wait and continue functionality, configure your bot to wait for user
 
 You may need to turn off the wait and continue responses. Use the **Active** toggle to set whether or not the wait and continue responses are used.
 
-![The active toggle for the wait and continue response.](http://docs.aws.amazon.com/lexv2/latest/dg/images/wait-and-continue.png)
+![The active toggle for the wait and continue response.](https://docs.aws.amazon.com/lexv2/latest/dg/images/wait-and-continue.png)
 
 **Note**
 Wait and continue is available in the following locales: ca-ES, de-AT, de-DE, en-AU, en-GB, en-IN, en-US, en-ZA, es-419, es-ES, es-US, fr-CA, fr-FR, it-IT, ja-JP, ko-KR, pt-BR, pt-PT, zh-CN, zh-HK.

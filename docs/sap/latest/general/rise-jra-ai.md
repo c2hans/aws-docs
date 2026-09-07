@@ -15,7 +15,7 @@ In this documentation, we will focus into JRA aspect as these components create 
 
  ** AWS-SAP Joint Reference Architecture in Generative AI**
 
-![Joint Reference Architecture in Generative AI Hub.](http://docs.aws.amazon.com/sap/latest/general/images/rise-jra-ai-genaihub.png)
+![Joint Reference Architecture in Generative AI Hub.](https://docs.aws.amazon.com/sap/latest/general/images/rise-jra-ai-genaihub.png)
 
 Key components from the architecture:
 +  [Amazon Bedrock](https://aws.amazon.com/bedrock/) is a service that provides access to various Foundational Models (FMs) through API interfaces. It features models like [Amazon Titan](https://aws.amazon.com/bedrock/amazon-models/titan/), [Amazon Nova](https://aws.amazon.com/ai/generative-ai/nova/) and [Anthropic Claude](https://www.anthropic.com/claude), which are comprehensive new generation FMs with industry leading price performance. These models are versatile and can handle many different applications.
@@ -30,7 +30,7 @@ You can find out more from SAP Architecture Center under [Generative AI and SAP 
 
  ** AWS-SAP Joint Reference Architecture in Agent2Agent**
 
-![Joint Reference Architecture in Agent2Agent.](http://docs.aws.amazon.com/sap/latest/general/images/rise-jra-ai-a2a.png)
+![Joint Reference Architecture in Agent2Agent.](https://docs.aws.amazon.com/sap/latest/general/images/rise-jra-ai-a2a.png)
 
 Key components from the architecture:
 +  [Amazon Bedrock Agents](https://aws.amazon.com/bedrock/) is a service that provides capability of reasoning of foundation models, APIs and data to break down user requests, gathers relevant information, and efficiently completes tasks. With its multi-agent collaboration, it allows developers to build, deploy, and manage multiple specialized agents seamlessly working together to address increasingly complex business workflows.

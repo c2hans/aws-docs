@@ -30,7 +30,7 @@ By using the AWS Cloud Development Kit (AWS CDK), this pattern uses as an infras
 ## Architecture
 <a name="synchronize-data-between-amazon-efs-file-systems-in-different-aws-regions-by-using-aws-datasync-architecture"></a>
 
-![Architecture diagram for replicating data to an EFS file system in a different Region](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e28ba6c2-ab8b-4812-932e-f038106d5496/images/18b35ae9-a22e-43e7-b7a3-30e40321c44e.png)
+![Architecture diagram for replicating data to an EFS file system in a different Region](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e28ba6c2-ab8b-4812-932e-f038106d5496/images/18b35ae9-a22e-43e7-b7a3-30e40321c44e.png)
 
 This solution deploys the following AWS CDK stacks:
 + **Amazon VPC stack** –­ This stack sets up virtual private cloud (VPC) resources, including subnets, an internet gateway, and a NAT gateway in both the primary and secondary AWS Regions.

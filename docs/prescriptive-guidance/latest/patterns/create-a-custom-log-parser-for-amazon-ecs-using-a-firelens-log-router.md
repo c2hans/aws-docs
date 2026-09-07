@@ -28,7 +28,7 @@ This pattern uses a Firelens log router with a custom parser to push logs to Clo
 ## Architecture
 <a name="create-a-custom-log-parser-for-amazon-ecs-using-a-firelens-log-router-architecture"></a>
 
-![Using a Firelens log router to push logs to CloudWatch from an application running on Amazon ECS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e82b4992-c4e0-4af5-b87e-cb0b1c1ed8c9/images/ef60e087-965a-40e9-9f80-35edbda2befe.png)
+![Using a Firelens log router to push logs to CloudWatch from an application running on Amazon ECS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e82b4992-c4e0-4af5-b87e-cb0b1c1ed8c9/images/ef60e087-965a-40e9-9f80-35edbda2befe.png)
 
 **Technology stack  **
 + CloudWatch

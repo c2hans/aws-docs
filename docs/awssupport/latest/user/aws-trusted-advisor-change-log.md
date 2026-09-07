@@ -519,8 +519,8 @@ Trusted Advisor now refreshes this check for you automatically. This check can't
 Any access keys that you excluded before this update will no longer be excluded and will appear as affected resources. You can't exclude access keys from your check results. For more information, see [Exposed Access Keys](security-checks.md#exposed-access-keys).
 
 **Note**
-If you created your AWS account after April 25, 2022, the check results for Exposed Access Keys initially shows the gray icon (![Circular icon with a sad face emoticon, representing negative feedback or dissatisfaction.](http://docs.aws.amazon.com/awssupport/latest/user/images/gray.png)) even for unexposed access keys. This means that Trusted Advisor hasn't identified any changes to the check.
-If Trusted Advisor identifies a resource at risk, the status changes to the action recommended icon (![Red circle with white X inside, indicating an error or cancellation symbol.](http://docs.aws.amazon.com/awssupport/latest/user/images/red.png)). After you fix or delete the resource, the check result shows the check mark icon (![Green checkmark icon indicating success or approval.](http://docs.aws.amazon.com/awssupport/latest/user/images/green.png)).
+If you created your AWS account after April 25, 2022, the check results for Exposed Access Keys initially shows the gray icon (![Circular icon with a sad face emoticon, representing negative feedback or dissatisfaction.](https://docs.aws.amazon.com/awssupport/latest/user/images/gray.png)) even for unexposed access keys. This means that Trusted Advisor hasn't identified any changes to the check.
+If Trusted Advisor identifies a resource at risk, the status changes to the action recommended icon (![Red circle with white X inside, indicating an error or cancellation symbol.](https://docs.aws.amazon.com/awssupport/latest/user/images/red.png)). After you fix or delete the resource, the check result shows the check mark icon (![Green checkmark icon indicating success or approval.](https://docs.aws.amazon.com/awssupport/latest/user/images/green.png)).
 
 ## Updated checks for AWS Direct Connect
 <a name="updated-checks-for-aws-direct-connect"></a>
@@ -534,9 +534,9 @@ Trusted Advisor updated the following checks on March 29, 2022.
 | AWS Direct Connect Virtual Interface Redundancy | Fault tolerance | `4g3Nt5M1Th` |
 + The value for the **Region** column now shows the AWS Region code instead of the full name. For example, resources in US East (N. Virginia) will now have the `us-east-1` value.
 + The value for the **Time Stamp** column now appears in the RFC 3339 format, such as `2022-03-30T01:02:27.000Z`.
-+ Resources that don't have any detected problems will now appear in the check table. These resources will have a check mark icon (![](http://docs.aws.amazon.com/awssupport/latest/user/images/green.png)) next to them.
++ Resources that don't have any detected problems will now appear in the check table. These resources will have a check mark icon (![](https://docs.aws.amazon.com/awssupport/latest/user/images/green.png)) next to them.
 
-  Previously, only resources that Trusted Advisor recommended that you investigate appeared in the table. These resources have a warning icon (![Warning triangle symbol with an exclamation mark inside.](http://docs.aws.amazon.com/awssupport/latest/user/images/warning.png)) next to them.
+  Previously, only resources that Trusted Advisor recommended that you investigate appeared in the table. These resources have a warning icon (![Warning triangle symbol with an exclamation mark inside.](https://docs.aws.amazon.com/awssupport/latest/user/images/warning.png)) next to them.
 
 ## AWS Security Hub CSPM controls added to the AWS Trusted Advisor console
 <a name="new-security-hub-controls-for-trusted-advisor"></a>

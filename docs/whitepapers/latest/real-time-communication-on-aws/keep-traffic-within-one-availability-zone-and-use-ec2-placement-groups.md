@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/real-time-communicati
 
 Also known as Availability Zone Affinity, this best practice also applies to the rare event of a complete Availability Zone failure. It is recommended that you eliminate any cross-AZ traffic such that any SIP or RTP traffic that enters one Availability Zone should remain in that Availability Zone until it exits the Region.
 
-![A diagram depicting Availability Zone affinity (at most, 50% of active calls are lost) .](http://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/images/availability-zone-affinity.png)
+![A diagram depicting Availability Zone affinity (at most, 50% of active calls are lost) .](https://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/images/availability-zone-affinity.png)
 
 The preceding figure shows a simplified architecture that uses Availability Zone affinity. The comparative advantage of this approach becomes clear if one accounts for the effects of a complete Availability Zone outage. As depicted in the diagram, if Availability Zone 2 is lost, 50% of active calls are affected at most (assuming equal load balancing between Availability Zones). Had Availability Zone Affinity not been implemented, some calls would flow between Availability Zones in one Region and a failure would most likely affect more than 50% of active calls.
 

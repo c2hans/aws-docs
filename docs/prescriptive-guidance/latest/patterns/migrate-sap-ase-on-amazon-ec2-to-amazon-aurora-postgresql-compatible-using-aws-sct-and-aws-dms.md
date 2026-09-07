@@ -53,7 +53,7 @@ Detailed instructions for both phases are provided in the *Epics* section. For i
 
 **Migration architecture **
 
-![Migrating an SAP ASE database to Aurora PostgreSQL-Compatible by using AWS SCT and AWS DMS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/07fbdea1-0242-40ae-8e5f-2ce4a620a047/images/a3b018f3-2e7b-4c37-a218-870c56132acb.png)
+![Migrating an SAP ASE database to Aurora PostgreSQL-Compatible by using AWS SCT and AWS DMS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/07fbdea1-0242-40ae-8e5f-2ce4a620a047/images/a3b018f3-2e7b-4c37-a218-870c56132acb.png)
 
 ## Tools
 <a name="migrate-sap-ase-on-amazon-ec2-to-amazon-aurora-postgresql-compatible-using-aws-sct-and-aws-dms-tools"></a>

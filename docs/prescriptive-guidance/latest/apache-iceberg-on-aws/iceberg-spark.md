@@ -281,4 +281,4 @@ spark.read.format("iceberg").load("{CATALOG_NAME}.{DB_NAME}.{TABLE_NAME}.history
 
 Sample output:
 
-![Sample metadata output from an Iceberg table](http://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/images/guide-img/ceffa39e-028d-47b6-a54a-6ef8526aee6a/images/92081edb-bc77-4951-81c9-b1f4ca4dd963.png)
+![Sample metadata output from an Iceberg table](https://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/images/guide-img/ceffa39e-028d-47b6-a54a-6ef8526aee6a/images/92081edb-bc77-4951-81c9-b1f4ca4dd963.png)

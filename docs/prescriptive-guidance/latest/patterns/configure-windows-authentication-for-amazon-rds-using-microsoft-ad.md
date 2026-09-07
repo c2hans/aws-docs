@@ -53,7 +53,7 @@ This configuration enhances security by leveraging existing Active Directory inf
 
 **Target architecture**
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e02f6059-6631-46f6-819c-5961af7ba4ae/images/1aa50e3b-b4f6-4d44-9f9e-6cbb248a159c.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e02f6059-6631-46f6-819c-5961af7ba4ae/images/1aa50e3b-b4f6-4d44-9f9e-6cbb248a159c.png)
 
 The architecture includes the following:
 + An IAM role that joins the Amazon EC2 instance to the AWS Managed Microsoft AD domain.

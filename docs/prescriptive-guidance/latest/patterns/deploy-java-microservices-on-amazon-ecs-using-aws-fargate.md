@@ -32,7 +32,7 @@ This pattern provides guidance for deploying containerized Java microservices on
 
 **Source architecture**
 
-![Source architecture for Java microservices deployed on Docker](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/65185957-2b8b-43a6-964c-95ce0a45ba17/images/0a946ca8-fe37-4ede-85cb-a80a1c36105d.png)
+![Source architecture for Java microservices deployed on Docker](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/65185957-2b8b-43a6-964c-95ce0a45ba17/images/0a946ca8-fe37-4ede-85cb-a80a1c36105d.png)
 
 **Target technology stack**
 + An Amazon ECS cluster that hosts each microservice by using Fargate
@@ -41,7 +41,7 @@ This pattern provides guidance for deploying containerized Java microservices on
 
 **Target architecture**
 
-![Target architecture on Java microservices on Amazon ECS](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/65185957-2b8b-43a6-964c-95ce0a45ba17/images/b21349ea-21fc-4688-b76a-1bde479858aa.png)
+![Target architecture on Java microservices on Amazon ECS](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/65185957-2b8b-43a6-964c-95ce0a45ba17/images/b21349ea-21fc-4688-b76a-1bde479858aa.png)
 
 ## Tools
 <a name="deploy-java-microservices-on-amazon-ecs-using-aws-fargate-tools"></a>

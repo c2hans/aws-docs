@@ -14,7 +14,7 @@ The following Identity modules are available in MCS after deployment:
 ## Managed Active Directory module
 <a name="managed-active-directory-module"></a>
 
-![managed active directory module](http://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/images/managed-active-directory-module.png)
+![managed active directory module](https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/images/managed-active-directory-module.png)
 
 1.  [Directory Service](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html) deploys an instance of [AWS Managed Microsoft AD](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html) under standard edition.
 

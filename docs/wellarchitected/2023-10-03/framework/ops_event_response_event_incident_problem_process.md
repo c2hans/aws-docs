@@ -59,7 +59,7 @@ AnyCompany Retail has a portion of their internal wiki devoted to processes for 
 1.  Problems
    +  Problems must be identified and tracked in your ITSM system.
    +  Identify all known problems and prioritize them by effort to fix and impact to workload.
-![Action priority matrix for prioritizing problems.](http://docs.aws.amazon.com/wellarchitected/2023-10-03/framework/images/impact-effort-chart.png)
+![Action priority matrix for prioritizing problems.](https://docs.aws.amazon.com/wellarchitected/2023-10-03/framework/images/impact-effort-chart.png)
    +  Solve problems that are high impact and low effort first. Once those are solved, move on to problems to that fall into the low impact low effort quadrant.
    +  You can use [Systems Manager OpsCenter](https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter.html) to identify these problems, attach runbooks to them, and track them.
 

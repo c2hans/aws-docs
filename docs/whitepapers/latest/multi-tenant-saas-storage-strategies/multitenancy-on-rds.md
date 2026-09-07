@@ -18,7 +18,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-sto
 
  You can achieve the silo pattern on AWS in multiple ways. However, the most common and simplest approach for achieving isolation is to create separate database instances for each tenant. Through instances, you can achieve a level of separation that typically satisfies the compliance needs of customers without the overhead of provisioning entirely separate accounts.
 
-![A diagram depicting Amazon RDS instances as silos.](http://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-storage-strategies/images/rds-as-silos.png)
+![A diagram depicting Amazon RDS instances as silos.](https://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-storage-strategies/images/rds-as-silos.png)
 
  The preceding figure shows a basic silo model as it could be realized on top of Amazon RDS. Here, two separate instances are provisioned for each tenant.
 
@@ -33,13 +33,13 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-sto
 
  The following figure provides an example of one way you can implement the bridge model on Amazon RDS. In this diagram, you have a single Amazon RDS database instance that contains separate customer tables for Tenant1 and Tenant2.
 
-![A diagram depicting an example of a bridge model on Amazon RDS.](http://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-storage-strategies/images/bridge-model-rds.png)
+![A diagram depicting an example of a bridge model on Amazon RDS.](https://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-storage-strategies/images/bridge-model-rds.png)
 
  This example highlights the ability to have schema variation at the tenant level. Tenant1’s schema has a Status column, while that column is removed and replaced by the Gender column used by Tenant2.
 
  Another option here would be to introduce the notion of separate databases for each tenant within an instance. The terminology varies for each flavor of Amazon RDS. Some Amazon RDS storage containers refer to this as a database; others label it as a schema.
 
-![A document depicting an Amazon RDS bridge with separate tables/schemas.](http://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-storage-strategies/images/rds-bridge.png)
+![A document depicting an Amazon RDS bridge with separate tables/schemas.](https://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-storage-strategies/images/rds-bridge.png)
 
 The preceding figure provides an illustration of this alternate bridge model. Notice that we created databases for each of the tenants, and the tenants then have their own collection of tables. For some SaaS organizations, this scopes the management of their tenant data more naturally, avoiding the need to propagate the naming to individual tables.
 
@@ -52,7 +52,7 @@ The preceding figure provides an illustration of this alternate bridge model. No
 
  The pool model for Amazon RDS relies on traditional relational indexing schemes to partition tenant data. As part of moving all the tenant data into a shared infrastructure model, you store the tenant data in a single Amazon RDS instance and the tenants share common tables. These tables are indexed with a unique tenant identifier that is used to access and manage each tenant’s data.
 
-![A diagram depicting an Amazon RDS pool model with shared schema .](http://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-storage-strategies/images/rds-pool-model.png)
+![A diagram depicting an Amazon RDS pool model with shared schema .](https://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-storage-strategies/images/rds-pool-model.png)
 
  The preceding figure provides an example of the pool model in action. Here a single Amazon RDS instance with *one* Customer table holds data for all of the application’s tenants. Amazon RDS is an RDBMS, so all tenants must use the same schema version. Amazon RDS is not like DynamoDB, which has a flexible schema that allows each tenant to have a unique schema within a single table.
 

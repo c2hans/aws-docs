@@ -81,4 +81,4 @@ AWS CDK will deploy a stack with the specified name and provisioned resources fo
 + Select the stack name to view the provisioned resources.
 
    **guidance provisioned resources**
-![image3](http://docs.aws.amazon.com/solutions/latest/scalable-analytics-using-apache-druid-on-aws/images/image3.png)
+![image3](https://docs.aws.amazon.com/solutions/latest/scalable-analytics-using-apache-druid-on-aws/images/image3.png)

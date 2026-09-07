@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/registration-
 
 Use this pattern when your campaign sends **promotional or marketing** messages (offers, discounts, product announcements). Marketing messages require express written consent under TCPA, which means the user must actively check a box — providing a phone number alone is not sufficient.
 
-![Marketing opt-in form example](http://docs.aws.amazon.com/sms-voice/latest/userguide/images/optin-marketing.png)
+![Marketing opt-in form example](https://docs.aws.amazon.com/sms-voice/latest/userguide/images/optin-marketing.png)
 
 ## What makes this form compliant
 <a name="registration-help-optin-marketing-compliant"></a>

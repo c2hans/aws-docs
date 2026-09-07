@@ -18,7 +18,7 @@ Automated MLOps pipelines can enable formal and repeatable data processing, mode
 
 The following figure illustrates one MLOps pipeline reference architecture that works across multiple AWS accounts to build a custom container, process data, train a model, and deploy a model to an endpoint.
 
-![A diagram showing cross account CI/CD flow for model training and deployment.](http://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-11.png)
+![A diagram showing cross account CI/CD flow for model training and deployment.](https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-11.png)
 
 *Cross-account CI/CD flow for model training and deployment*
 
@@ -33,7 +33,7 @@ The pipeline in the figure consists of the following five stages:
 1. **Model building stage** — Upon the successful Docker image build, the model training step is kicked off across the account (from the Shared Services account to the Test / UAT account) by launching a CloudFormation script in the Test/UAT account. The CloudFormation script first creates an AWS Step Functions state machine workflow consisting of a SageMaker AI processing step, a SageMaker AI model training step, and an endpoint deployment step in the test / UAT account for testing purposes. After the state machine is created, the CodePipeline triggers the Step Functions state machine to run all the steps defined in the state machine. The processing step and training step use containers hosted in the Shared Services account Amazon ECR or public containers (built-in algorithms or managed containers) hosted by the SageMaker AI platform.
 
    In addition to Step Functions, other workflow orchestration tools such as [SageMaker AI Pipeline](https://aws.amazon.com/sagemaker/pipelines/) and AirFlow can also be used to orchestrate model training steps such as data processing, model training and model registration. SageMaker AI Pipeline enables you to create a workflow definition using the SageMaker AI SDK or a JSON pipeline definition. The CodeBuild job in the Shared Service account builds the SageMaker AI pipeline definition and runs the pipeline in the Test / UAT account by assuming an across-account role. You can also directly visualize the pipelines and track the running of differently pipelines directly inside SageMaker AI Studio.
-![A diagram showing CI/CD pipeline with SageMaker AI Pipeline.](http://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-12.png)
+![A diagram showing CI/CD pipeline with SageMaker AI Pipeline.](https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-12.png)
 
    *CI/CD pipeline with SageMaker AI Pipeline*
 
@@ -46,7 +46,7 @@ The pipeline in the figure consists of the following five stages:
 
 When you create a pipeline with actions from multiple accounts, you must configure your actions with proper permission so that they can access resources within the limitations of cross-account pipelines. The following section reviews some of the key steps and components you need to enable a cross-account pipeline.
 
-![A diagram showing cross account pipeline access.](http://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-13.png)
+![A diagram showing cross account pipeline access.](https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-13.png)
 
 *Cross account pipeline access*
 
@@ -63,7 +63,7 @@ In the preceding figure, **CodePipeline A** represents the training pipeline, an
 
 To ensure all network communication takes place within the private network, private endpoints should be used for accessing resources within the same AWS account or across different AWS accounts.
 
-![A diagram showing access resources across account via VPC endpoint.](http://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-14.png)
+![A diagram showing access resources across account via VPC endpoint.](https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-14.png)
 
 *Access resources across account via VPC endpoint*
 

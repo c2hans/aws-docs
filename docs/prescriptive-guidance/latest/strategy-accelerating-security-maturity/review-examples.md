@@ -18,7 +18,7 @@ The following are examples of the mature phase. These examples dive deeper into 
 
 You can also throttle Assisted Log Enabler up or down. After you complete your dry run, close the event, and resolve the issue, you realize that you no longer need this level of logging. You can quickly clean up the deployment to stop logging. This feature allows you to use Assisted Log Enabler as a triage tool.
 
-![Use Assisted Log Enabler to see which services have logging enabled or disabled](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-accelerating-security-maturity/images/guide-img/2162f372-44e6-4f4b-80cc-427f9fca7a33/images/3dee80dc-ab64-4167-9f73-a58fd1de60aa.png)
+![Use Assisted Log Enabler to see which services have logging enabled or disabled](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-accelerating-security-maturity/images/guide-img/2162f372-44e6-4f4b-80cc-427f9fca7a33/images/3dee80dc-ab64-4167-9f73-a58fd1de60aa.png)
 
 The following are the key features of Assisted Log Enabler for AWS:
 + You can run it in a single-account or multi-account environment.

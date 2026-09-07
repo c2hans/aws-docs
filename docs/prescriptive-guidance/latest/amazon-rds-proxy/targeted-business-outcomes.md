@@ -17,7 +17,7 @@ This section discusses the following business outcomes:
 
 An application's scalability depends on its database's ability to handle concurrent connections. The number of concurrent connections depends on the database instance type. For example, a t3.small instance type can support 187 concurrent database connections. Additional client connection attempts to the database will result in a failure. Using an Amazon RDS Proxy endpoint to interact with the database enables the application to continue working even when the client connections required exceed the maximum connections supported by the instance type, as shown in the following diagram.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-proxy/images/guide-img/a636f483-11c8-4c7b-ad56-b8c47e65c2ef/images/bb2b8139-18a7-460f-9564-d153038feb1e.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-proxy/images/guide-img/a636f483-11c8-4c7b-ad56-b8c47e65c2ef/images/bb2b8139-18a7-460f-9564-d153038feb1e.png)
 
 Because RDS Proxy uses connection pooling, a test application using an RDS Proxy endpoint was able to scale to 20,000 client connections even when the database instance was capped at 187 concurrent connections.
 

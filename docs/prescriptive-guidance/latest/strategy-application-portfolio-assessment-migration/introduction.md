@@ -30,7 +30,7 @@ Other migration program activities, such as governance, people and skills, landi
 
 The following diagram shows how the stages of portfolio assessment correspond to the AWS phases of migration. The discovery acceleration and initial planning stage begins in the assess phase, typically during the first five weeks. Prioritized applications assessment, in the sixth and seventh weeks, spans the assess and mobilize phases. The portfolio analysis and migration planning stage happens in weeks 8–14, in the mobilize phase. The continuous assessment and improvement stage happens in the migrate and modernize phase, from week 15 until the end of the migration program. This timeline is indicative. The actual duration of the stages will depend on the overall program organization.
 
-![Activities during the assess, mobilize, and migrate and modernize phases.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-application-portfolio-assessment-migration/images/guide-img/7c9d894c-c8ca-4901-8b62-e1a8c08d1940/images/14259955-53b8-46df-a2ce-30996fbd0c15.png)
+![Activities during the assess, mobilize, and migrate and modernize phases.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-application-portfolio-assessment-migration/images/guide-img/7c9d894c-c8ca-4901-8b62-e1a8c08d1940/images/14259955-53b8-46df-a2ce-30996fbd0c15.png)
 
 Long-term portfolio assessment outcomes, such as maintaining an up-to-date inventory of IT assets and dependencies, remain constant throughout the journey. However, data requirements, specific objectives, and key stakeholders vary at each stage. In this strategy, the portfolio journey is represented as four main stages aligned to data requirements for the portfolio job at hand:
 

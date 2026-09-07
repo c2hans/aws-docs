@@ -20,15 +20,15 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 
  When verified against CloudFront distribution configuration, make sure that after token insertion appropriate cache behaviors match modified URL path including unique token values. Cache behavior requires the use of a wildcard at the beginning of the URL path pattern to match the arbitrary token value included in each request. In a common configuration in which you separate cache behavior for manifest files and video segments would like this:
 
-![Screenshot of cache behavior - wildcard .](http://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/image8.png)
+![Screenshot of cache behavior - wildcard .](https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/image8.png)
 
  That configuration requires no changes in the path pattern definition as preceding wildcard covers additional path component introduced by token presence. However, if you have more explicit path pattern definitions (for example, when you run multiple streaming channels), your cache behaviors configuration may resemble this:
 
-![Screenshot of cache behavior – explicit path pattern.](http://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/image9.png)
+![Screenshot of cache behavior – explicit path pattern.](https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/image9.png)
 
  In that scenario, requests originated from the viewers with token included will not match with any of the listed cache behaviors as it starts with a fixed path pattern that does not accommodate part of an arbitrary token value at the beginning of the path. To change that, referenced path patterns can be modified as follows:
 
-![Screenshot of cache behavior – non-fixed path pattern.](http://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/image10.png)
+![Screenshot of cache behavior – non-fixed path pattern.](https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/image10.png)
 
 +  Because the token validation logic is operated by CloudFront Functions code generated as one of the solution resources, before that function can be associated with viewer request triggers for the appropriate cache behaviors, you must make sure there is no Lambda@Edge function associated with either viewer request or viewer response triggers for the same set of cache behaviors. It is not possible to combine Lambda@Edge and CloudFront Functions associations for the same cache behavior.
 +  If you plan to leverage the session revocation feature offered by the solution, an AWS WAF web ACL must be created first and associated with the CloudFront distribution that will be integrated with the solution. If you run multiple CloudFront distributions that require token-based protection and session revocation capability, we recommend you run multiple stacks of the solution and associate created WAF rule group with separate AWS WAF web ACL dedicated for each distribution. This ensures efficient use of WAF Capacity Units (WCU) as each rule group will only store the sessions that are in use for a given distribution.

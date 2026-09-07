@@ -11,7 +11,7 @@ The following tutorial shows you how to get started using a user data script and
 
 The following illustration summarizes the flow for a scale-out event when you use a user data script to perform a custom action. After an instance launches, the lifecycle of the instance is paused until the lifecycle hook is completed, either by timing out or by Amazon EC2 Auto Scaling receiving a signal to continue.
 
-![The flow for a scale-out event when you use a user data script to perform a custom action.](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/lifecycle-hook-user-data-script.png)
+![The flow for a scale-out event when you use a user data script to perform a custom action.](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/lifecycle-hook-user-data-script.png)
 
 **Topics**
 + [Step 1: Create an IAM role with permissions to complete lifecycle actions](#instance-metadata-create-iam-role)

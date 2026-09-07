@@ -42,21 +42,21 @@ The steps described in this pattern also apply to target PostgreSQL databases on
 
 **Source architecture**
 
-![Source architecture for on-premises PostgreSQL database](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/82114165-8102-44a2-8b12-485ac9eb8989/images/a8621ad3-781b-45a9-86a8-d0b0ec5c79ea.png)
+![Source architecture for on-premises PostgreSQL database](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/82114165-8102-44a2-8b12-485ac9eb8989/images/a8621ad3-781b-45a9-86a8-d0b0ec5c79ea.png)
 
 **Target architecture**
 
-![Target architecture for PostgreSQL database on Amazon Aurora](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/82114165-8102-44a2-8b12-485ac9eb8989/images/fc2ec0cb-7b9b-4cc0-b70c-40e47c2f4c45.png)
+![Target architecture for PostgreSQL database on Amazon Aurora](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/82114165-8102-44a2-8b12-485ac9eb8989/images/fc2ec0cb-7b9b-4cc0-b70c-40e47c2f4c45.png)
 
 **Data migration architecture**
 
 *Using AWS DMS*
 
-![Migrating an on-premises PostgreSQL database to Aurora by using AWS DMS](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/82114165-8102-44a2-8b12-485ac9eb8989/images/5336adb4-e9eb-47d0-a5b5-d149261b1638.png)
+![Migrating an on-premises PostgreSQL database to Aurora by using AWS DMS](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/82114165-8102-44a2-8b12-485ac9eb8989/images/5336adb4-e9eb-47d0-a5b5-d149261b1638.png)
 
 *Using native PostgreSQL tools*
 
-![Migrating an on-premises PostgreSQL database to Aurora by using pg_dump and pg_restore](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/82114165-8102-44a2-8b12-485ac9eb8989/images/3c6fb533-45ff-443e-bfb1-97e60cbdd583.png)
+![Migrating an on-premises PostgreSQL database to Aurora by using pg_dump and pg_restore](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/82114165-8102-44a2-8b12-485ac9eb8989/images/3c6fb533-45ff-443e-bfb1-97e60cbdd583.png)
 
 ## Tools
 <a name="migrate-an-on-premises-postgresql-database-to-aurora-postgresql-tools"></a>

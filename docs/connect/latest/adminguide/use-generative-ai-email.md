@@ -17,7 +17,7 @@ When an agent accepts an email contact that is [enabled](ai-agent-initial-setup.
 
 These response types are shown in the following image.
 
-![Three types of responses in the Connect assistant panel.](http://docs.aws.amazon.com/connect/latest/adminguide/images/qic-email-automation.png)
+![Three types of responses in the Connect assistant panel.](https://docs.aws.amazon.com/connect/latest/adminguide/images/qic-email-automation.png)
 
 ## Email conversation overview
 <a name="email-conversation-overview"></a>
@@ -69,7 +69,7 @@ When an agent chooses **Reply all**, they can:
 
 These options are shown in the following image.
 
-![The agent workspace when an agent chooses Reply all to an email contact.](http://docs.aws.amazon.com/connect/latest/adminguide/images/qic-generated-email-responses.png)
+![The agent workspace when an agent chooses Reply all to an email contact.](https://docs.aws.amazon.com/connect/latest/adminguide/images/qic-generated-email-responses.png)
 
 By default, the content copied from generated email responses in raw HTML format works best with the Connect Customer rich text editor for agents responding to email contacts. To customize the output of this response, edit **QinConnectEmailGenerativeAnswerPrompt** as part of the **QinConnectEmailGenerativeAnswerAIAgent** to output the response in your preferred format (for example, plain text or markdown).
 

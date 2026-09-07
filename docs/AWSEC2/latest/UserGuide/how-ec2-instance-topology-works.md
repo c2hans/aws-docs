@@ -13,7 +13,7 @@ Depending on the type of Capacity Reservation, you might see only 1, 2, or 3 net
 
 The following diagram provides a visual representation that you can use to understand EC2 topology. The network nodes are identified as **NN1** – **NN7**. The numerals **i**, **ii**, and **iii** identify the network layers. The numbers **1**, **2**, **3**, and **4** identify the EC2 instances. Instances connect to a node in the bottom layer, identified by **iii** in the following diagram. More than one instance can connect to the same node.
 
-![Graphic representation of the instance topology.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/instance-topology.png)
+![Graphic representation of the instance topology.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/instance-topology.png)
 
 In this example:
 + Instance 1 connects to network node 4 (NN4) in layer iii. NN4 connects to network node 2 (NN2) in layer ii, and NN2 connects to network node 1 (NN1) in layer i, which is the top of the network hierarchy in this example. The network node set comprises NN1, NN2, and NN4, expressed hierarchically from the upper layers to the bottom layer.

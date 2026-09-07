@@ -28,7 +28,7 @@ This scenario assumes the following details:
 
  The primary owner first publishes a command to the lock requesting a temporary access code created for an approved visitor. The command payload includes the identification of the homeowner’s mobile device, a randomly generated session identifier for tracking the current request, an action field that contains the type of command, and a topic field. The smart lock uses the topic in the topic field for publishing its response back to the homeowner.
 
-![Mobile user requests temporary credentials for the front door](http://docs.aws.amazon.com/whitepapers/latest/designing-mqtt-topics-aws-iot-core/images/image8.png)
+![Mobile user requests temporary credentials for the front door](https://docs.aws.amazon.com/whitepapers/latest/designing-mqtt-topics-aws-iot-core/images/image8.png)
 
 *Mobile user requests temporary credentials for the front door *
 
@@ -41,13 +41,13 @@ Augment MQTT messages using any internal standards for requests, responses, and 
 
  The single level wildcard command is backward compatible as the IoT application adds new command types. The following example is a simplified example to show the topic structure. Consider using device attributes and policy variables restricting the topic(s) that a device can subscribe or publish to.
 
-![AWS IoT Core sending command to Smart Lock 1 with JSON payload for passcode generation.](http://docs.aws.amazon.com/whitepapers/latest/designing-mqtt-topics-aws-iot-core/images/image9.png)
+![AWS IoT Core sending command to Smart Lock 1 with JSON payload for passcode generation.](https://docs.aws.amazon.com/whitepapers/latest/designing-mqtt-topics-aws-iot-core/images/image9.png)
 
 After receiving the MQTT payload, the smart lock parses the command request to determine what type of action to run. In this case, the command is related to credentials. The device also extracts the client ID, the session ID, and the response topic from the command payload.
 
 Because a home can have multiple authorized homeowners, the client ID determines which homeowner has requested this change. In this example, the action field includes the type of credentials request, generate-password, and the associated user for the temporary key. Last, the device obtains the response topic field in the MQTT message and uses this information to publish its response.
 
-![Smart Lock publishing response with client ID, session ID, passcode, and success code to AWS IoT Core.](http://docs.aws.amazon.com/whitepapers/latest/designing-mqtt-topics-aws-iot-core/images/image9b.png)
+![Smart Lock publishing response with client ID, session ID, passcode, and success code to AWS IoT Core.](https://docs.aws.amazon.com/whitepapers/latest/designing-mqtt-topics-aws-iot-core/images/image9b.png)
 
 * Smart lock response published to AWS IoT Core*
 
@@ -58,7 +58,7 @@ The homeowner's mobile client subscribes to command responses for any smart lock
 
 In this workflow, the application used a command topic for a single device. However, a similar workflow may be used to request commands for multiple devices in a group, such as locking all of the doors in the home.
 
-![Mobile client sending request to AWS IoT Core with JSON payload containing client ID, session ID, passcode, TTL, and response code.](http://docs.aws.amazon.com/whitepapers/latest/designing-mqtt-topics-aws-iot-core/images/image10.png)
+![Mobile client sending request to AWS IoT Core with JSON payload containing client ID, session ID, passcode, TTL, and response code.](https://docs.aws.amazon.com/whitepapers/latest/designing-mqtt-topics-aws-iot-core/images/image10.png)
 
 * Command response sent from AWS IoT Core to mobile client *
 
@@ -79,7 +79,7 @@ In this workflow, the application used a command topic for a single device. Howe
 
  Each occupancy sensor publishes an occupancy reading once per minute and whenever a person enters or leaves the room. Because the occupancy sensors do not correlate precisely to the state of the device and instead refer to the state of the room, the sensor publishes the room status on a telemetry topic. The payload includes a timestamp, occupancy count, and any efficiency countdown for turning off lights if a room is vacant. The occupancy sensor uses an MQTT topic that includes the contextual information about the position of the sensor within the building and its associated project. A AWS IoT Greengrass core receives all occupancy sensor data locally.
 
-![Occupancy sensor publishing to dt/acme/building-fresco/room4/occupancy-1 topic to AWS IoT Greengrass.](http://docs.aws.amazon.com/whitepapers/latest/designing-mqtt-topics-aws-iot-core/images/image15.png)
+![Occupancy sensor publishing to dt/acme/building-fresco/room4/occupancy-1 topic to AWS IoT Greengrass.](https://docs.aws.amazon.com/whitepapers/latest/designing-mqtt-topics-aws-iot-core/images/image15.png)
 
 * Local occupancy sensor publishes sensor reading to AWS IoT Greengrass *
 
@@ -90,6 +90,6 @@ In this workflow, the application used a command topic for a single device. Howe
 
 AWS IoT Greengrass adds building information to each message to show the overall usage of the building in 5-minute increments. AWS IoT Greengrass also augments the MQTT topic by including the appropriate application identifier, `acme`.
 
-![AWS IoT Greengrass publishing JSON payload with occupancy data to AWS IoT Core topic.](http://docs.aws.amazon.com/whitepapers/latest/designing-mqtt-topics-aws-iot-core/images/image16.png)
+![AWS IoT Greengrass publishing JSON payload with occupancy data to AWS IoT Core topic.](https://docs.aws.amazon.com/whitepapers/latest/designing-mqtt-topics-aws-iot-core/images/image16.png)
 
 *AWS IoT Greengrass aggregates and augments telemetry, then forwards messages to AWS IoT Core*

@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/game-tech.html
 ---
 
-# ![AWS Game Tech category icon](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/game-tech-icon.jpg)Game tech
+# ![AWS Game Tech category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/game-tech-icon.jpg)Game tech
 <a name="game-tech"></a>
 
 ------

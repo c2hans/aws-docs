@@ -63,7 +63,7 @@ This pattern describes how to install, configure, and use the AWS CLI on z/OS. Y
 
 The following diagram shows an AWS CLI deployment on IBM z/OS. You can invoke the AWS CLI from an interactive user session, such as SSH, and telnet sessions. You can also invoke it from a batch job by using job control language (JCL), or from any program that can call a z/OS Unix shell command.
 
-![AWS CLI on an IBM z/OS mainframe accessing AWS services.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/4e3188d8-287f-4ced-8c29-80a01cbbdf50/images/c3883500-bd00-4c56-982a-26d5e0b8b093.png)
+![AWS CLI on an IBM z/OS mainframe accessing AWS services.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/4e3188d8-287f-4ced-8c29-80a01cbbdf50/images/c3883500-bd00-4c56-982a-26d5e0b8b093.png)
 
 The AWS CLI communicates with AWS service endpoints over a TCP/IP network. This network connection can happen over the internet or through a private AWS Direct Connect connection from the customer data center to AWS Cloud data centers. The communication is authenticated with AWS credentials and encrypted.
 
@@ -138,11 +138,11 @@ You can explore the capabilities of an AWS service with the AWS CLI and develop 
 
 **USER.DATA.FIXED in ISPF option 3.4 (dataset list utility)**
 
-![Viewing the contents of the dataset in z/OS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/4e3188d8-287f-4ced-8c29-80a01cbbdf50/images/96c25145-3d4d-4007-99f6-5eeb9e88642d.png)
+![Viewing the contents of the dataset in z/OS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/4e3188d8-287f-4ced-8c29-80a01cbbdf50/images/96c25145-3d4d-4007-99f6-5eeb9e88642d.png)
 
 **SYSOUT of the submitted batch job**
 
-![Standard output from job log.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/4e3188d8-287f-4ced-8c29-80a01cbbdf50/images/03fffbd2-7d2b-43b2-bf14-736b3d150e38.png)
+![Standard output from job log.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/4e3188d8-287f-4ced-8c29-80a01cbbdf50/images/03fffbd2-7d2b-43b2-bf14-736b3d150e38.png)
 
 ## Attachments
 <a name="attachments-4e3188d8-287f-4ced-8c29-80a01cbbdf50"></a>

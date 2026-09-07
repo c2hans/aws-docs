@@ -57,7 +57,7 @@ In the Amazon EC2 Auto Scaling console, you can review the forecast of the previ
 
 The following image shows the **Load** and **Capacity** graphs when forecasts have been applied multiple times. Predictive scaling forecasts load based on your historical load data. The load your application generates is represented as the sum of the CPU utilization, network in/out, received requests, or custom metric for each instance in the Auto Scaling group. Predictive scaling calculates future capacity needs based on the load forecast and the target utilization that you want to achieve for the scaling metric.
 
-![Predictive scaling graphs](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/predictive-scaling-graphs.png)
+![Predictive scaling graphs](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/predictive-scaling-graphs.png)
 
 **Compare data in the **Load** graph**
 Each horizontal line represents a different set of data points reported in one-hour intervals:

@@ -30,7 +30,7 @@ This tutorial contains instructions for the following getting started steps:
 
 The following diagram might be helpful when you set up the MicroZed hardware:
 
-![AVNet microcontroller board with Power Good LED, User LED and push button, JTAG access, 10/100/1000 Ethernet and USB host, microSD slot, USB-UART, Done LED, Reset button, and Boot MODE jumpers highlighted.](http://docs.aws.amazon.com/freertos/latest/userguide/images/microzed.png)
+![AVNet microcontroller board with Power Good LED, User LED and push button, JTAG access, 10/100/1000 Ethernet and USB host, microSD slot, USB-UART, Done LED, Reset button, and Boot MODE jumpers highlighted.](https://docs.aws.amazon.com/freertos/latest/userguide/images/microzed.png)
 
 **To set up the MicroZed board**
 
@@ -152,14 +152,14 @@ To build individual projects, select the project you want to build, choose **Pro
 <a name="xilinx-jtag"></a>
 
 1. Set your MicroZed board's boot mode jumpers to the JTAG boot mode.
-![Circuit board header connectors and jumper settings.](http://docs.aws.amazon.com/freertos/latest/userguide/images/xilinx-jtag.png)
+![Circuit board header connectors and jumper settings.](https://docs.aws.amazon.com/freertos/latest/userguide/images/xilinx-jtag.png)
 
 1. Insert your MicroSD card into the MicroSD card slot located directly under the USB-UART port.
 **Note**
 Before you debug, be sure to back up any content that you have on the MicroSD card.
 
    Your board should look similar to the following:
-![FreeRTOS evaluation board with connectivity options.](http://docs.aws.amazon.com/freertos/latest/userguide/images/xilinx-jtag-full-board.png)
+![FreeRTOS evaluation board with connectivity options.](https://docs.aws.amazon.com/freertos/latest/userguide/images/xilinx-jtag-full-board.png)
 
 1. In the XSDK IDE, right-click **aws\_demos**, choose **Debug As**, and then choose **1 Launch on System Hardware (System Debugger)**.
 
@@ -186,7 +186,7 @@ Format the MicroSD card that is provided with the Xilinx MicroZed Industrial IoT
 1. Insert the card into the MicroSD card slot directly under the USB-UART port.
 
 1. Set the MicroZed boot mode jumpers to SD boot mode.
-![SD Card with three slots labeled JP1, JP2, JP3 and a coin cell battery holder.](http://docs.aws.amazon.com/freertos/latest/userguide/images/xilinx-sd.png)
+![SD Card with three slots labeled JP1, JP2, JP3 and a coin cell battery holder.](https://docs.aws.amazon.com/freertos/latest/userguide/images/xilinx-sd.png)
 
 1. Press the RST button to reset the device and start booting the application. You can also unplug the USB-UART cable from the USB-UART port, and then reinsert the cable.
 
@@ -194,7 +194,7 @@ Format the MicroSD card that is provided with the Xilinx MicroZed Industrial IoT
 <a name="xilinx-build-boot-qspi"></a>
 
 1. Set your MicroZed board's boot mode jumpers to the JTAG boot mode.
-![Circuit board header connectors and jumper settings.](http://docs.aws.amazon.com/freertos/latest/userguide/images/xilinx-jtag.png)
+![Circuit board header connectors and jumper settings.](https://docs.aws.amazon.com/freertos/latest/userguide/images/xilinx-jtag.png)
 
 1. Verify that your computer is connected to the USB-UART and JTAG Access ports. The green Power Good LED light should be illuminated.
 

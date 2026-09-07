@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfe
 
  The following shows an example end-to-end genomics report pipeline architecture using the reference architectures described in this paper.
 
-![Genomics report pipeline reference architecture](http://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfer-analytics-and-machine-learning/images/image6.png)
+![Genomics report pipeline reference architecture](https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfer-analytics-and-machine-learning/images/image6.png)
 
 1.  A technician loads a genomic sample on a sequencer.
 

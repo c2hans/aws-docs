@@ -171,9 +171,9 @@ The output lineage node will be connected to an asset's lineage node where the a
 arn:aws:glue:us-east-1:123456789012:table/testlfdb/testlftb-1
 ```
 
-![The screen shot shows the source identifier of an asset.](http://docs.aws.amazon.com/datazone/latest/userguide/images/troubleshoot-lineage1.png)
+![The screen shot shows the source identifier of an asset.](https://docs.aws.amazon.com/datazone/latest/userguide/images/troubleshoot-lineage1.png)
 
-![The screen shot shows the source identifier of an asset.](http://docs.aws.amazon.com/datazone/latest/userguide/images/troubleshoot-lineage2.png)
+![The screen shot shows the source identifier of an asset.](https://docs.aws.amazon.com/datazone/latest/userguide/images/troubleshoot-lineage2.png)
 
 #### Amazon Redshift ARN
 <a name="troubleshooting-lineage-constructing-redshift-arn"></a>

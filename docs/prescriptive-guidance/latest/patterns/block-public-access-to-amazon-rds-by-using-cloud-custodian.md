@@ -29,7 +29,7 @@ This pattern provides instructions for using Cloud Custodian on AWS to enforce r
 
 The following diagram shows Cloud Custodian deploying the policy to AWS Lambda, AWS CloudTrail initiating the `CreateDBInstance` event, and the Lambda function setting `PubliclyAccessible` to false on Amazon RDS.
 
-![Using Cloud Custodian on AWS to restrict public access to Amazon RDS instances.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/90f9537e-9365-4da2-8a28-da0ff374743c/images/6d04ca3b-6aa4-4c62-ade9-8b7474928c5e.png)
+![Using Cloud Custodian on AWS to restrict public access to Amazon RDS instances.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/90f9537e-9365-4da2-8a28-da0ff374743c/images/6d04ca3b-6aa4-4c62-ade9-8b7474928c5e.png)
 
 ## Tools
 <a name="block-public-access-to-amazon-rds-by-using-cloud-custodian-tools"></a>

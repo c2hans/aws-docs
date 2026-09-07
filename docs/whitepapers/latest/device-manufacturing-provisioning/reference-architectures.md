@@ -28,14 +28,14 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-
 
  A ZTP reference implementation is provided on the `aws-samples` Github repository, which includes a CloudFormation template, AWS Lambda sample code, a sample third-party CA, a deployment script, and a testing script. The reference implementation sets up a secure API and IAM role in the device maker’s account. The ZTP service provider assumes the IAM role and sends an HTTP POST to the secure API with a device certificate. The device certificate is verified against a known certificate authority. The device certificate, IoT Thing name, and an IoT Policy are set up in the device maker’s account. The device maker’s AWS IoT broker endpoint is returned to the ZTP service provider to forward to the device. The device can then connect to the device maker’s AWS IoT endpoint.
 
-![A diagram that shows zero-touch provisioning reference architecture.](http://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-provisioning/images/ZTPCloudDemoArchitecture.png)
+![A diagram that shows zero-touch provisioning reference architecture.](https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-provisioning/images/ZTPCloudDemoArchitecture.png)
 
 ## Device lobby
 <a name="device-lobby"></a>
 
  The IoT device lobby architecture establishes an entry point in AWS Cloud infrastructure to route or bootstrap devices to end cloud services. It provides a serverless infrastructure to associate a device identity by using the X.509 fingerprint to a target AWS account or Region, regardless of whether a device is turned on. The device fingerprint can be printed as a QR code for easy scanning and onboarding of devices to target accounts and Regions by the administrator APIs at any point in a device lifecycle without reprovisioning. This helps fleet operators take advantage of the AWS IoT global footprint, and can effectively decouple the manufacturing and provisioning of devices from the end cloud services where they connect once deployed in the field.
 
-![A diagram that shows device lobby onboarding architecture.](http://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-provisioning/images/device-lobby.png)
+![A diagram that shows device lobby onboarding architecture.](https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-provisioning/images/device-lobby.png)
 
  The architecture combines JITR and manual registration methods described earlier in this whitepaper with the inclusion of a global Amazon DynamoDB table to act as the device ledger and an administrative interface for managing the ledger to claim and route devices. JITR enables the initial connection to the lobby for previously unseen devices when they present a certificate signed by a CA trusted by the Device Lobby account. Manual registration without a CA is then used by the backend to register devices into target accounts or Regions once claimed by an administrator. MQTT topics are used to control the interaction with the device and service.
 

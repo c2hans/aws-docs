@@ -17,7 +17,7 @@ This solution includes both a \*hub account template \*(deployed first) for a ce
 
  **Cost Optimizer for Amazon WorkSpaces architecture**
 
-![workspaces cost optimizer architecture](http://docs.aws.amazon.com/solutions/latest/cost-optimizer-for-workspaces/images/workspaces-cost-optimizer-architecture.png)
+![workspaces cost optimizer architecture](https://docs.aws.amazon.com/solutions/latest/cost-optimizer-for-workspaces/images/workspaces-cost-optimizer-architecture.png)
 
 1. The spoke template creates a [custom resource](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-custom-resources.html) that invokes an [AWS Lambda](https://aws.amazon.com/lambda/) function to register the account as a spoke account in an [Amazon DynamoDB](https://aws.amazon.com/dynamodb) table in the hub account.
 

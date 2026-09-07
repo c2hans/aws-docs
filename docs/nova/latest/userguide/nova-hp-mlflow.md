@@ -54,7 +54,7 @@ https://app-LGZEOZ2UY4NZ.mlflow.sagemaker.us-east-1.app.aws/auth?authToken=eyJhb
 
 View
 
-![Example nova image.](http://docs.aws.amazon.com/nova/latest/userguide/images/screenshot-nova-model-1.png)
+![Example nova image.](https://docs.aws.amazon.com/nova/latest/userguide/images/screenshot-nova-model-1.png)
 
 ***Pass to recipe under run block of your SageMaker HyperPod recipe***
 
@@ -67,4 +67,4 @@ run
 
 View
 
-![Example nova image.](http://docs.aws.amazon.com/nova/latest/userguide/images/screenshot-nova-model-2.png)
+![Example nova image.](https://docs.aws.amazon.com/nova/latest/userguide/images/screenshot-nova-model-2.png)

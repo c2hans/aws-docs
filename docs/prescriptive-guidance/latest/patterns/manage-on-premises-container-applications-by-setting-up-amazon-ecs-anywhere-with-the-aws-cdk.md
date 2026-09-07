@@ -54,7 +54,7 @@ The following diagram illustrates a high-level system architecture of ECS Anywhe
 
 1. When the external instance is registered and configured with the Amazon ECS cluster, it can run multiple containers on your VM, which is registered as an external instance.
 
-![ECS Anywhere setup using the AWS CDK with TypeScript.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/3ed63c00-40e7-4831-bb9d-63049c3490aa/images/ff7dc774-830d-4b9f-8262-7314afe7a033.png)
+![ECS Anywhere setup using the AWS CDK with TypeScript.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/3ed63c00-40e7-4831-bb9d-63049c3490aa/images/ff7dc774-830d-4b9f-8262-7314afe7a033.png)
 
 **Automation and scale**
 

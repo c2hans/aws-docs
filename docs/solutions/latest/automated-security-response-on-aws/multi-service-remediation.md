@@ -25,11 +25,11 @@ The `AWSSupport-ContainIAMPrincipal` runbook contains a long-term IAM user (its 
 
  **GuardDuty.IAMUser rollback button in the Web UI Remediation History**
 
-![GuardDuty.IAMUser rollback button in the Remediation History table.](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/remediation-history-showing-rollback-button-guard-duty-finding.png)
+![GuardDuty.IAMUser rollback button in the Remediation History table.](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/remediation-history-showing-rollback-button-guard-duty-finding.png)
 
  **GuardDuty.IAMUser rollback warning in the Web UI**
 
-![GuardDuty.IAMUser rollback warning.](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/guarddutyrollback-warning-popup.png)
+![GuardDuty.IAMUser rollback warning.](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/guarddutyrollback-warning-popup.png)
 
 ## Finding formats
 <a name="finding-formats"></a>

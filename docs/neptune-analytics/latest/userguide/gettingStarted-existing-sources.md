@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/getti
 ------
 #### [ AWS console ]
 
-![Image showing the AWS console, with the available options and settings configurations.](http://docs.aws.amazon.com/neptune-analytics/latest/userguide/images/getting-started/gettingStartedExistingData.png)
+![Image showing the AWS console, with the available options and settings configurations.](https://docs.aws.amazon.com/neptune-analytics/latest/userguide/images/getting-started/gettingStartedExistingData.png)
 
 ------
 #### [ AWS CLI ]

@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-app
 
  This walkthrough uses the [MvcMusicStore](https://github.com/aws-samples/dotnet-modernization-music-store) application to demonstrate how to replatform an ASP.NET MVC and Entity Framework-based application that runs on Internet Information Services (IIS) to Windows containers. You will use a tool named [AWS App2Container](https://aws.amazon.com/app2container/) to containerize and deploy it. This tool is provided free of charge and it automates many of the steps necessary to convert an existing VM-based IIS application to one hosted in a container. Additionally, the tool can be used to deploy the containerized application to AWS and create a CI/CD pipeline so that changes to the application can be reliably pushed to the deployment environment. This walkthrough focuses on only the application component (not the database migration) of the following architecture.
 
-![Diagram showing application architecture for MvcMusicStore](http://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/application-architecture.png)
+![Diagram showing application architecture for MvcMusicStore](https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/application-architecture.png)
 
  For this walkthrough, there are three stages:
 

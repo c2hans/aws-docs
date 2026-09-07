@@ -13,12 +13,12 @@ Only admins can perform the functions in this section, unless otherwise noted.
 
 The Manage instance page provides a consolidated interface for managing the different facets of a DeepRacer on AWS deployment.
 
-![Manage instance page](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_instance_management.png)
+![Manage instance page](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_instance_management.png)
 
 ### Usage summary
 <a name="usage-summary"></a>
 
-![Usage summary](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_manage_instance_usage_summary_closeup.png)
+![Usage summary](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_manage_instance_usage_summary_closeup.png)
 
 The usage summary on the **Manage instance** page provides key metrics for your deployment at-a-glance. From this view, you can see:
 +  **Training and evaluation hours used** - the number of hours that have been spent on training and evaluating machine learning users on your deployment.
@@ -34,7 +34,7 @@ The usage summary on the **Manage instance** page provides key metrics for your 
 ### Users table
 <a name="users-table"></a>
 
-![Users table](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_manage_instance_users_table_closeup.png)
+![Users table](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_manage_instance_users_table_closeup.png)
 
 The users table on the **Manage instance** page shows all of the users who are registered to your deployment. This table allows you to search by email address or alias. It also shows the following attributes for each user:
 +  **Email address** - the email address that the user used when creating their account.
@@ -57,7 +57,7 @@ This section provides an overview of how to manage users in the DeepRacer on AWS
 ### Invite a user
 <a name="invite-a-user"></a>
 
-![Invite a user](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_instance_manage_invite_user.png)
+![Invite a user](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_instance_manage_invite_user.png)
 
 Admins can invite users to an instance via the Manage instance page by clicking **Actions > Invite user**. The **Actions** menu is in the upper-right corner of the Users section. Users are invited to the instance using their email address. Once you provide the email address of the user you’d like to invite, click **Invite**.
 
@@ -68,7 +68,7 @@ Users who are invited to the instance are assigned to the **Racer** role by defa
 ### Change user permissions
 <a name="change-user-permissions"></a>
 
-![Change user role](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_manage_instance_change_role.png)
+![Change user role](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_manage_instance_change_role.png)
 
 Admins can change the permission level that a given user has via the **Manage instance** page by selecting the user in the Users table, clicking **Actions > Change role**, and selecting the desired role from the list of options. Click **Change** to save your selection when ready.
 
@@ -80,7 +80,7 @@ For more information on each type of user and their permissions, see the Types o
 ### Delete a user
 <a name="delete-a-user"></a>
 
-![Delete a user](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_manage_instance_delete_user.png)
+![Delete a user](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_manage_instance_delete_user.png)
 
 Admins can delete a user from the instance via the **Manage instance** page by selecting the user in the Users table and clicking **Actions > Delete user**. Click **Delete** in the pop-up modal to confirm your choice.
 
@@ -95,7 +95,7 @@ DeepRacer on AWS provides a robust set of controls allowing admins to manage cos
 ### Global limits
 <a name="global-limits"></a>
 
-![Set global usage limit](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_manage_instance_set_global_quota.png)
+![Set global usage limit](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_manage_instance_set_global_quota.png)
 
 Global limits allow compute and storage usage limits to be set at the instance level. These limits prevent the instance as a whole from exceeding a certain number of compute hours or storage capacity in a given month. This can help admins stay within a certain operating budget, mitigate against unexpected volume, and/or control variable costs.
 
@@ -110,7 +110,7 @@ Global limits allow compute and storage usage limits to be set at the instance l
 ### Individual limits
 <a name="individual-limits"></a>
 
-![Set individual usage limit](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_manage_instance_update_user_usage_quota.png)
+![Set individual usage limit](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_manage_instance_update_user_usage_quota.png)
 
 Individual limits allow compute and storage usage limits to be set at the individual user level. These limits prevent a specific user from exceeding a certain number of compute hours or storage capacity in a given month.
 
@@ -123,7 +123,7 @@ The **individual model limit** for a given user controls the number of models th
 ### New user limits
 <a name="new-user-limits"></a>
 
-![Set new user limit usage limit](http://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_manage_instance_set_new_user_quota.png)
+![Set new user limit usage limit](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_manage_instance_set_new_user_quota.png)
 
 New user limits are default limits that are applied to any new users that are created after the limit is set.
 

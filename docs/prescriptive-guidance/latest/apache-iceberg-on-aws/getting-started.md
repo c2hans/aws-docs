@@ -106,7 +106,7 @@ where color = 'red' limit 10;
 
 Sample output:
 
-![Sample input from an INSERT statement](http://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/images/guide-img/ceffa39e-028d-47b6-a54a-6ef8526aee6a/images/e97a8db8-fb5a-44c3-8f98-a182fc2f7401.png)
+![Sample input from an INSERT statement](https://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/images/guide-img/ceffa39e-028d-47b6-a54a-6ef8526aee6a/images/e97a8db8-fb5a-44c3-8f98-a182fc2f7401.png)
 
 For more information, see the [Athena documentation](https://docs.aws.amazon.com/athena/latest/ug/querying-iceberg-updating-iceberg-table-data.html).
 
@@ -127,7 +127,7 @@ SELECT * FROM "iceberg_db"."ice_table" FOR TIMESTAMP AS OF TIMESTAMP '2023-01-04
 
 Sample output:
 
-![Sample output from an Iceberg time travel query](http://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/images/guide-img/ceffa39e-028d-47b6-a54a-6ef8526aee6a/images/d6a10a40-b520-4e66-a26d-25a0cf5b6605.png)
+![Sample output from an Iceberg time travel query](https://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/images/guide-img/ceffa39e-028d-47b6-a54a-6ef8526aee6a/images/d6a10a40-b520-4e66-a26d-25a0cf5b6605.png)
 
 For syntax and additional examples of time travel queries, see the [Athena documentation](https://docs.aws.amazon.com/athena/latest/ug/querying-iceberg-table-data.html#querying-iceberg-time-travel-and-version-travel-queries).
 
@@ -140,7 +140,7 @@ To enable the features [described earlier](data-lakes.md#iceberg-intro) in this 
 
 The following diagram portrays the organization of an Iceberg table through two perspectives: the AWS services used to store the table and the file placement in Amazon S3.
 
-![Anatomy of an Iceberg table](http://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/images/guide-img/ceffa39e-028d-47b6-a54a-6ef8526aee6a/images/0fbc54c9-adeb-4ea9-a334-3857f2b2945e.png)
+![Anatomy of an Iceberg table](https://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/images/guide-img/ceffa39e-028d-47b6-a54a-6ef8526aee6a/images/0fbc54c9-adeb-4ea9-a334-3857f2b2945e.png)
 
 As shown in the diagram, an Iceberg table consists of three main layers:
 + **Iceberg catalog**: AWS Glue Data Catalog integrates natively with Iceberg and is, for most use cases, the best option for workloads that run on AWS. Services that interact with Iceberg tables (for example, Athena) use the catalog to find the current snapshot version of the table, either to read or to write data.

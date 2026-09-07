@@ -68,13 +68,13 @@ You can deploy this solution either by using automated GitHub Actions workflows 
 
 The following diagram shows the automated deployment option that uses GitHub Actions workflows. JFrog Artifactory is used for artifacts management. It stores resource information and outputs for use in a multi-repository deployment.
 
-![Automated deployment option that uses GitHub Actions workflows and JFrog.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2f0b78b0-a174-4703-b533-d66b3fb005e0/images/d454a5c5-ed51-421c-a87f-ff74cfcb30be.png)
+![Automated deployment option that uses GitHub Actions workflows and JFrog.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2f0b78b0-a174-4703-b533-d66b3fb005e0/images/d454a5c5-ed51-421c-a87f-ff74cfcb30be.png)
 
 **Manual deployment with Terraform**
 
 The following diagram shows the manual deployment option through Terraform. Instead of JFrog Artifactory, Amazon S3 is used for artifacts management.
 
-![Manual deployment option using Terraform and Amazon S3.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2f0b78b0-a174-4703-b533-d66b3fb005e0/images/1130e728-44d5-4ae7-9586-1e497f54352a.png)
+![Manual deployment option using Terraform and Amazon S3.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2f0b78b0-a174-4703-b533-d66b3fb005e0/images/1130e728-44d5-4ae7-9586-1e497f54352a.png)
 
 **Deployment workflow**
 

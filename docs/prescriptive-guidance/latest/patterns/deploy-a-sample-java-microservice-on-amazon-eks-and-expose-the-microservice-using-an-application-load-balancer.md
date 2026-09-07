@@ -37,7 +37,7 @@ This pattern describes how to deploy a sample Java microservice as a containeriz
 
 The following diagram shows an architecture for containerizing a Java microservice on Amazon EKS.
 
-![A Java microservice deployed as a containerized application on Amazon EKS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e1dd8ab0-9e1e-4d2b-b7af-89d3e583e57c/images/aaca4fd9-5aaa-4df5-aebd-02a2ed881c3b.png)
+![A Java microservice deployed as a containerized application on Amazon EKS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e1dd8ab0-9e1e-4d2b-b7af-89d3e583e57c/images/aaca4fd9-5aaa-4df5-aebd-02a2ed881c3b.png)
 
 ## Tools
 <a name="deploy-a-sample-java-microservice-on-amazon-eks-and-expose-the-microservice-using-an-application-load-balancer-tools"></a>

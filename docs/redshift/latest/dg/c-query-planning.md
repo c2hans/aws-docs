@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/c-query-planning.html
 
 The following illustration provides a high-level view of the query planning and execution workflow.
 
-![The query planning and execution workflow for a leader node.](http://docs.aws.amazon.com/redshift/latest/dg/images/07-QueryPlanning.png)
+![The query planning and execution workflow for a leader node.](https://docs.aws.amazon.com/redshift/latest/dg/images/07-QueryPlanning.png)
 
 The query planning and execution workflow follow these steps:
 

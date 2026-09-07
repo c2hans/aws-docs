@@ -18,10 +18,10 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-bu
 
  Customers have been running Oracle applications workloads on AWS for over a decade. Migrating Oracle E-Business Suite to AWS allows customers to get all the benefits of a mature cloud platform (including cost reduction, performance improvements, and higher availability), without making big upfront investments. With more than 200 AWS Cloud services, Oracle customers gain choice, flexibility, and tighter cost control.
 
-![Graphic diagram showing the customer drivers of ERP migrations to the cloud](http://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-business-suite/images/customer-drivers-of-erp-migrations.png)
+![Graphic diagram showing the customer drivers of ERP migrations to the cloud](https://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-business-suite/images/customer-drivers-of-erp-migrations.png)
 
  For more details, refer to [Benefits of Oracle E-Business Suite on AWS](https://docs.aws.amazon.com/whitepapers/latest/overview-oracle-e-business-suite/benefits-of-oracle-e-business-suite-on-aws.html) in the *Overview of Oracle E-Business Suite on AWS* whitepaper.
 
-![Graphic showing business outcomes of migration, including a 413% five-year ROI, higher revenue, and lower costs](http://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-business-suite/images/business-outcomes.png)
+![Graphic showing business outcomes of migration, including a 413% five-year ROI, higher revenue, and lower costs](https://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-business-suite/images/business-outcomes.png)
 
 Source, [IDC - The Business Value of Amazon Web Services, June 2022](https://pages.awscloud.com/rs/112-TZM-766/images/IDC-Whitepaper-The-Business-Value-of-AWS-Global.pdf)

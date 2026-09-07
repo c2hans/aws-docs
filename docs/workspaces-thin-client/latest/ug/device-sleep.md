@@ -26,4 +26,4 @@ You can change the Sleep mode setting by doing the following:
    + 2 hours
    + Never
 
-![Power and Sleep dropdown menu showing time intervals from 5 minutes to Never, with 2 hours selected.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/sleep.png)
+![Power and Sleep dropdown menu showing time intervals from 5 minutes to Never, with 2 hours selected.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/sleep.png)

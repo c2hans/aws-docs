@@ -25,7 +25,7 @@ Create VPC endpoints in a central AWS networking account and use Transit Gateway
 
 The following diagram illustrates the architecture for this solution.
 
-![Traffic flow for rehosting multiple accounts in the same Region.](http://docs.aws.amazon.com/prescriptive-guidance/latest/rehost-multi-account-architecture-interface-endpoints/images/guide-img/7711a996-1484-4997-8795-d06bd903a940/images/11f6d63e-5294-4f50-9d81-949d1d283322.png)
+![Traffic flow for rehosting multiple accounts in the same Region.](https://docs.aws.amazon.com/prescriptive-guidance/latest/rehost-multi-account-architecture-interface-endpoints/images/guide-img/7711a996-1484-4997-8795-d06bd903a940/images/11f6d63e-5294-4f50-9d81-949d1d283322.png)
 
 In the diagram, the numbers represent the following traffic flow:
 

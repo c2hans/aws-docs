@@ -25,4 +25,4 @@ resource "aws_secretsmanager_secret_rotation" "createrotation" {
 
 The following architecture diagram shows how you can use Secrets Manager, an Amazon VPC endpoint, and a Lambda function to rotate sensitive data in an AWS account.
 
-![Automatically schedule an AWS Lambda function that rotates secrets on a regular schedule.](http://docs.aws.amazon.com/prescriptive-guidance/latest/secure-sensitive-data-secrets-manager-terraform/images/guide-img/e6185df2-3707-4018-a94c-6edc793f0353/images/37a32a01-6350-41b2-a7fb-2e54fa1c45dc.png)
+![Automatically schedule an AWS Lambda function that rotates secrets on a regular schedule.](https://docs.aws.amazon.com/prescriptive-guidance/latest/secure-sensitive-data-secrets-manager-terraform/images/guide-img/e6185df2-3707-4018-a94c-6edc793f0353/images/37a32a01-6350-41b2-a7fb-2e54fa1c45dc.png)

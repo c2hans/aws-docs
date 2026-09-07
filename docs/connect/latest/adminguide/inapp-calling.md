@@ -16,7 +16,7 @@ The Connect Customer in-app, web, and video calling capabilities enable your cus
 
 To set up in-app, web, and video calling, you use the **Communication widgets** page. It supports chat, voice, video, and screen sharing. The following image shows the **Communication options** section of the page when it's configured for all of these options.
 
-![The Communication options section of the Create a communication widget page.](http://docs.aws.amazon.com/connect/latest/adminguide/images/comm-widget-all.png)
+![The Communication options section of the Create a communication widget page.](https://docs.aws.amazon.com/connect/latest/adminguide/images/comm-widget-all.png)
 
 ## Multi-user in-app, web, and video calling
 <a name="multi-user"></a>

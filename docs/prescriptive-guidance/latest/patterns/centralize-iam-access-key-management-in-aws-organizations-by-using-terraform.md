@@ -51,7 +51,7 @@ AWS CodePipeline jobs create the following resources in the deployment account:
 
 **Architecture**
 
-![Architecture for centralizing IAM access key management in AWS Organizations](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/0217275c-cb4c-4bdf-b105-ad9abfd4fded/images/844512f0-67b3-4d41-aaaa-fbd9e341c438.png)
+![Architecture for centralizing IAM access key management in AWS Organizations](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/0217275c-cb4c-4bdf-b105-ad9abfd4fded/images/844512f0-67b3-4d41-aaaa-fbd9e341c438.png)
 
 The diagram illustrates the following:
 

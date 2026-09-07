@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/desktop-s
 
 You can use the Desktop Settings page to configure resources associated with virtual desktops.
 
-![Desktop settings](http://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-virtual-desktop-settings.png)
+![Desktop settings](https://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-virtual-desktop-settings.png)
 
 **General**
 
@@ -41,4 +41,4 @@ The default size of the root volume on virtual desktop sessions.
 **Allowed instance types**
 The list of instance families and sizes that can be launched for this RES environment. Instance family and instance size combinations are both accepted. For example, if you specify 'm7a', all sizes of the m7a family will be available to launch as VDI sessions. If you specify 'm7a.24xlarge', only m7a.24xlarge will be available to launch as a VDI session. This list affects all projects in the environment.
 
-![Desktop settings](http://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-virtual-desktop-settings2.png)
+![Desktop settings](https://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-virtual-desktop-settings2.png)

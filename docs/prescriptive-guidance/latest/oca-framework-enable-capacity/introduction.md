@@ -15,7 +15,7 @@ The AWS Organizational Change Acceleration (OCA) 6-Point Framework is intended t
 
 The framework's six points align with an agile sprint cadence, from program initiation through sustainable long-term change. The following diagram shows these six points and their subpoints.
 
-![Enable Capacity phase of the AWS OCA Framework.](http://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-enable-capacity/images/guide-img/0d6d6311-0ee6-4d42-9d4a-8ad713c058e4/images/d1aece9a-d8eb-4644-83de-ea27b26d919d.png)
+![Enable Capacity phase of the AWS OCA Framework.](https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-enable-capacity/images/guide-img/0d6d6311-0ee6-4d42-9d4a-8ad713c058e4/images/d1aece9a-d8eb-4644-83de-ea27b26d919d.png)
 
 The fifth point, *Enable Capacity*, helps you create organizational pull for the change by rewarding and recognizing key behaviors, redesigning the workforce to match the needs and ongoing requirements for new capabilities, and managing stakeholder resistance that might emerge in the process. It contains three subpoints:
 + [5.1 Rewards and recognition](rewards.md). Build a rewards and recognition program that measurably affects behavior and improves performance results.

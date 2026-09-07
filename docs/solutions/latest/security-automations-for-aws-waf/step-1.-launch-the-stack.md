@@ -9,7 +9,7 @@ This automated AWS CloudFormation template deploys the solution on the AWS Cloud
 
 1. Sign into [AWS Management Console](https://aws.amazon.com/console) and select the **Launch Solution** to launch `waf-automation-on-aws.template` CloudFormation template.
 
-    [![Launch solution](http://docs.aws.amazon.com/solutions/latest/security-automations-for-aws-waf/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=WAFSecurityAutomations&templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Fsecurity-automations-for-aws-waf%2Flatest%2Faws-waf-security-automations.template&redirectId=ImplementationGuide)
+    [![Launch solution](https://docs.aws.amazon.com/solutions/latest/security-automations-for-aws-waf/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=WAFSecurityAutomations&templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Fsecurity-automations-for-aws-waf%2Flatest%2Faws-waf-security-automations.template&redirectId=ImplementationGuide)
 
 1. The template launches in the US East (N. Virginia) Region by default. To launch this solution in a different AWS Region, use the Region selector in the console navigation bar. If you choose `CloudFront` as your endpoint, you must deploy the solution in the US East (N. Virginia) (`us-east-1`) Region.
 **Note**

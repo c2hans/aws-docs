@@ -249,7 +249,7 @@ The following table helps you determine the broader purchasing options based on 
 
 The following diagram shows recommended EC2 purchasing strategies for common workload types.
 
-![Amazon EC2 purchasing options for common workload types](http://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/diagram_ec2_purchase_strategy.png)
+![Amazon EC2 purchasing options for common workload types](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/diagram_ec2_purchase_strategy.png)
 
 ### Hybrid EC2 purchasing strategy: Accelerating workloads with Spot without risking deadlines
 <a name="ec2-po-choose-spot"></a>

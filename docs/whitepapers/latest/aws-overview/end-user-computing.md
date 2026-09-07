@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/end-user-computing.html
 ---
 
-# ![AWS End User Computing category icon](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/end-user-computing-icon.jpg)End user computing
+# ![AWS End User Computing category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/end-user-computing-icon.jpg)End user computing
 <a name="end-user-computing"></a>
 
 ------

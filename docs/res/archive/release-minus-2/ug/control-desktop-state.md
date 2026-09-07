@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/control-d
 To control your desktop's state:
 
 1. Choose **Actions**.
-![Virtual desktops](http://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-virtualdesktops.png)
+![Virtual desktops](https://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-virtualdesktops.png)
 
 1. Choose **Virtual Desktop State**. You have four states to select from:
    + **Stop**

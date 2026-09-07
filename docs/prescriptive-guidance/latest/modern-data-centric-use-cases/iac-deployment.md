@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modern-data
 
 Modern architecture is incomplete without a mechanism for an infrastructure as code (IaC) deployment. The following diagram shows the AWS services related to IaC deployment.
 
-![IaC deployment diagram](http://docs.aws.amazon.com/prescriptive-guidance/latest/modern-data-centric-use-cases/images/guide-img/058e3d2f-f726-4dc0-989b-0f15dcd3bc33/images/a9309ae1-8a02-4a4d-8448-69d0da7d0890.png)
+![IaC deployment diagram](https://docs.aws.amazon.com/prescriptive-guidance/latest/modern-data-centric-use-cases/images/guide-img/058e3d2f-f726-4dc0-989b-0f15dcd3bc33/images/a9309ae1-8a02-4a4d-8448-69d0da7d0890.png)
 
 We recommend that any deployed infrastructure is always backed by code using IaC tools. For example, you can use [AWS CloudFormation](https://aws.amazon.com/cloudformation/) or [AWS Cloud Development Kit (AWS CDK)](https://docs.aws.amazon.com/cdk/v2/guide/home.html). AWS CDK is a wrapper around CloudFormation.
 

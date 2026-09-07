@@ -38,7 +38,7 @@ Benefits of this approach:
 
 **Target architecture**
 
-![User manages AWS Service Catalog product using AWS CloudFormation template and StackSets.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/16458fcd-861d-4ed4-8b91-47e19289a6bb/images/97d23325-b5c6-4ca9-8288-8dec1650c975.png)
+![User manages AWS Service Catalog product using AWS CloudFormation template and StackSets.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/16458fcd-861d-4ed4-8b91-47e19289a6bb/images/97d23325-b5c6-4ca9-8288-8dec1650c975.png)
 
 1. The user creates an AWS CloudFormation template to provision AWS resources, in JSON or YAML format.
 

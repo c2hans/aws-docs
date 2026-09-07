@@ -9,7 +9,7 @@ Conceptually, an AWS Flow Framework application consists of three basic componen
 
 This diagram represents a basic AWS Flow Framework application:
 
-![Schematic AWS Flow Framework application](http://docs.aws.amazon.com/amazonswf/latest/awsflowguide/images/swf-application-model.png)
+![Schematic AWS Flow Framework application](https://docs.aws.amazon.com/amazonswf/latest/awsflowguide/images/swf-application-model.png)
 
 **Note**
 Implementing these components in three separate applications is convenient conceptually, but you can create applications to implement this functionality in a variety of ways. For example, you can use a single host application for the activity and workflow workers, or use separate activity and workflow hosts. You can also have multiple activity workers, each handling a different set of activities on separate hosts, and so on.

@@ -88,7 +88,7 @@ Separating your daily-use file workloads from your archive workloads can help yo
 
 The following diagram shows how a single DFS Namespace can be used as the frontend access point for different backend storage options.
 
-![Using a DFS Namespace as the frontend access point.](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/b3de5cb4-be4e-4daa-97be-09c873943feb.png)
+![Using a DFS Namespace as the frontend access point.](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/b3de5cb4-be4e-4daa-97be-09c873943feb.png)
 
 Clients are directed to a folder structure, such as **\\\\example.com\\storage**. This main directory contains the sub-directories. An FSx for Windows File Server file system contains the file shares accessed on a normal basis. You can use a file share created on Storage Gateway for archive data. Users can manually archive items to the archive folder or you can build a process to automate moving some files from your normal file shares to the archive folder.
 

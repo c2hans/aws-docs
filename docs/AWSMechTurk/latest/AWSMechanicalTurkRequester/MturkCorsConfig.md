@@ -38,4 +38,4 @@ You can add a CORS policy to an S3 bucket that contains input data in the S3 con
 
 The following image demonstrates the instructions found in the Amazon S3 documentation to add a CORS header policy using the Amazon S3 console. For procedures on adding a CORS configuration to an S3 bucket using the S3 console, AWS SDKs, and REST API, see [Configuring cross-origin resource sharing (CORS)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/enabling-cors-examples.html) in the Amazon Simple Storage Service User Guide.
 
-![](http://docs.aws.amazon.com/AWSMechTurk/latest/AWSMechanicalTurkRequester/images/cors-config.gif)
+![](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMechanicalTurkRequester/images/cors-config.gif)

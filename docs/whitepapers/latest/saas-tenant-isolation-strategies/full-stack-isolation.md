@@ -16,7 +16,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation
 
  Let’s take a closer look at a sample architecture that uses the account-based pool isolation model. The diagram in Figure 6 illustrates two tenants deployed into two separate accounts.
 
-![Diagram showing account-based silos and isolation](http://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/images/account-based-silo-isolation.jpg)
+![Diagram showing account-based silos and isolation](https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/images/account-based-silo-isolation.jpg)
 
  The architecture shown here is just an example. The actual infrastructure that lands in your account would vary based on the technologies that were part of your SaaS application’s technology stack. This could use containers, be serverless, or any mix of the various AWS architecture models. The key point here is that every tenant is running the same stack in each of these separate accounts.
 
@@ -27,7 +27,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation
 
  The next level of isolation to consider is within a single account. This brings us into the realm of networking constructs where we essentially use the boundaries of the network for each of our siloed tenant environments. The Amazon Virtual Private Cloud (Amazon VPC) provides a natural mechanism for network-based isolation. The diagram shown in Figure 7 provides a sample of a VPC silo model:
 
-![Diagram showing VPC silo isolation.](http://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/images/vpc-silo-isolation.png)
+![Diagram showing VPC silo isolation.](https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/images/vpc-silo-isolation.png)
 
 Here you’ll notice that we have two separate tenant environments, each hosted in its own VPC. The VPCs represented here using multiple availability zones to convey the typical AWS architecture best practices. As with accounts, the resources configured in each VPC could vary significantly for each SaaS provider. The key aspect of this solution is that the tenants are isolated from one another via the networking constructs that are enforced by the VPC.
 

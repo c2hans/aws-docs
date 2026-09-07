@@ -42,7 +42,7 @@ This pattern describes how to modernize EBCDIC data by converting it to ASCII fo
 
 **Target architecture**
 
-![EBCDIC data converted to ASCII on an EC2 instance by using Python scripts and a COBOL copybook](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/f5907bfe-7dff-4cd0-8523-57015ad48c4b/images/4f97b1dd-3f20-4966-a291-22180680ea99.png)
+![EBCDIC data converted to ASCII on an EC2 instance by using Python scripts and a COBOL copybook](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/f5907bfe-7dff-4cd0-8523-57015ad48c4b/images/4f97b1dd-3f20-4966-a291-22180680ea99.png)
 
 The architecture diagram shows the process of converting an EBCDIC file to an ASCII file on an EC2 instance:
 

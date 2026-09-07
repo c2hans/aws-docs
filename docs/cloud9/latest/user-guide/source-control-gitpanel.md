@@ -21,7 +21,7 @@ To access and interact with the interface, choose **Window**, **Source Control**
 
 The key combination **Ctrl-Shift-G** can also be used to toggle the display of Git panel.
 
-![Displaying the Git panel interface](http://docs.aws.amazon.com/cloud9/latest/user-guide/images/select-git-panel.png)
+![Displaying the Git panel interface](https://docs.aws.amazon.com/cloud9/latest/user-guide/images/select-git-panel.png)
 
 **Note**
 Screenshots for Git panel documentation show the AWS Cloud9 IDE with the *Jett Dark* theme applied. Some interface elements are displayed differently if you're using the IDE with a different theme. To open the Git panel, you may choose a link with the label **Source Control** instead of the Git icon.

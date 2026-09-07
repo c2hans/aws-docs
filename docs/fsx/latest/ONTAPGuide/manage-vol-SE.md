@@ -29,7 +29,7 @@ Inactive data compression consumes additional CPU and disk IOPS and can be a res
 
 The following image illustrates the storage savings that can be achieved by compressing data blocks.
 
-![Illustrates the storage savings that can be achieved by compressing data blocks with compression groups.](http://docs.aws.amazon.com/fsx/latest/ONTAPGuide/images/fsx-ontap-before-compression.png)
+![Illustrates the storage savings that can be achieved by compressing data blocks with compression groups.](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/images/fsx-ontap-before-compression.png)
 
 ## Deduplication of data blocks
 <a name="deduplication-SE"></a>
@@ -45,7 +45,7 @@ FSx for ONTAP doesn't support cross-volume deduplication.
 
 The following image illustrates the storage savings that can be achieved with deduplication.
 
-![Illustrates the storage savings that can be achieved with deduplication.](http://docs.aws.amazon.com/fsx/latest/ONTAPGuide/images/fsx-ontap-before-deduplication.png)
+![Illustrates the storage savings that can be achieved with deduplication.](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/images/fsx-ontap-before-deduplication.png)
 
 ## Compaction of data blocks
 <a name="compaction-SE"></a>
@@ -56,11 +56,11 @@ By default, data is compacted inline to optimize the layout of data as it's writ
 
 The following image illustrates the storage savings that can be achieved with compaction.
 
-![Illustrates the storage savings that can be achieved with compaction.](http://docs.aws.amazon.com/fsx/latest/ONTAPGuide/images/fsx-ontap-before-compaction.png)
+![Illustrates the storage savings that can be achieved with compaction.](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/images/fsx-ontap-before-compaction.png)
 
 ## Example: storage efficiencies
 <a name="example-SE"></a>
 
 The following image illustrates how storage efficiencies are applied to data.
 
-![Illustrates how storage efficiencies are applied to data.](http://docs.aws.amazon.com/fsx/latest/ONTAPGuide/images/fsx-ontap-se-example.png)
+![Illustrates how storage efficiencies are applied to data.](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/images/fsx-ontap-se-example.png)

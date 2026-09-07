@@ -43,7 +43,7 @@ This pattern is particularly useful for Microsoft SQL Server migration to MongoD
 
 **Architecture**
 
-![Architecture to assess query performance for migrating SQL Server database to MongoDB Atlas on AWS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/25f0ab73-d587-4bd0-9fc0-ac675d5aa349/images/717caae4-d52e-4c78-bb7d-2ecb5acccd42.png)
+![Architecture to assess query performance for migrating SQL Server database to MongoDB Atlas on AWS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/25f0ab73-d587-4bd0-9fc0-ac675d5aa349/images/717caae4-d52e-4c78-bb7d-2ecb5acccd42.png)
 
 PeerIslands Test Data Generator and Performance Analyzer is built by using Java and Angular, and stores its generated data on Amazon Elastic Block Store (Amazon EBS). The tool consists of two workflows: test data generation and performance testing.
 + In test data generation, you create a template, which is the JSON representation of the data model that has to be generated. After you create the template, you can generate the data in a target collection, as defined by the load generation configuration.

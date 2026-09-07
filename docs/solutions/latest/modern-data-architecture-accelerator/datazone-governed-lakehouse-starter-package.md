@@ -9,7 +9,7 @@ The DataZone Governed Lakehouse Starter Package delivers an enterprise-ready dat
 
  **DataZone Governed Lakehouse starter kit architecture**
 
-![DataZone Governed Lakehouse starter kit — enterprise lakehouse governed by DataZone and Lake Formation.](http://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/governed_lakehouse.png)
+![DataZone Governed Lakehouse starter kit — enterprise lakehouse governed by DataZone and Lake Formation.](https://docs.aws.amazon.com/solutions/latest/modern-data-architecture-accelerator/images/governed_lakehouse.png)
 
 Built on AWS best practices, this package combines the flexibility of a data lake with the governance and structure of a data warehouse. It enables organizations to implement data mesh architectures while maintaining centralized governance and compliance controls.
 

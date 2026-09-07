@@ -12,7 +12,7 @@ This section provides a reference implementation architecture diagram for the co
 
 Deploying this solution with the default parameters builds the following environment in your AWS account.
 
-![Innovation Sandbox on AWS high-level architecture diagram](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/diagrams/high-level.drawio.png)
+![Innovation Sandbox on AWS high-level architecture diagram](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/diagrams/high-level.drawio.png)
 
 **Innovation Sandbox on AWS architecture**
 The high-level process flow for the solution components deployed with the AWS CloudFormation templates is as follows:

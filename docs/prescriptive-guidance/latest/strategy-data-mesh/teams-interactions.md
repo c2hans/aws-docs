@@ -65,7 +65,7 @@ One implication of Conway's law is that not all communication is helpful, and th
 
 The following diagram illustrates the grouping of the teams involved in the data mesh strategy and their interactions. The teams are grouped in concentric circles.
 
-![Diagram of interteam communications.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-data-mesh/images/guide-img/8ee4070d-6c71-44bc-a40f-f010d4d931e6/images/4a1157b6-6996-4e14-aedd-93706ae8f365.png)
+![Diagram of interteam communications.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-data-mesh/images/guide-img/8ee4070d-6c71-44bc-a40f-f010d4d931e6/images/4a1157b6-6996-4e14-aedd-93706ae8f365.png)
 
 1. At the center are the core teams of the data mesh: the self-service data platform team and the domain teams. The self-service data platform team communicates frequently with the domain teams to provide technical support and speed up creation of business value.
 

@@ -9,7 +9,7 @@ Before we discuss architectural details, we should outline the different roles t
 
 At the outermost level, we need to start by classifying the role and nature of agents. This is challenging because there's a wide range of scenarios where agents can be applied to any number of problems. For this discussion, though, we focus on what it means to introduce an agent into an application or system. In this model, we emphasize how and where agents can best enrich your system's experience. The options you choose influence how your agents are built, integrated, and applied to different domains and use cases. The following diagram shows two agentic patterns that builders use.
 
-![Categorizing agent roles](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-multitenant/images/guide-img/2d1a9d67-004c-4c75-8cd2-68ceef9bbc6f/images/eb730e56-8561-4964-808b-67072149665b.png)
+![Categorizing agent roles](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-multitenant/images/guide-img/2d1a9d67-004c-4c75-8cd2-68ceef9bbc6f/images/eb730e56-8561-4964-808b-67072149665b.png)
 
 *Figure 1. Categorizing agent roles*
 
@@ -19,7 +19,7 @@ In contrast, the task-based system on the right-hand side of the diagram represe
 
 We also need terms that characterize how and where we deploy agents. Where an agent lives within your system's footprint can influence how it's built, scoped, and secured. The following diagram outlines two distinct models that could be applied to agents.
 
-![Public and private agent models](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-multitenant/images/guide-img/2d1a9d67-004c-4c75-8cd2-68ceef9bbc6f/images/4ec56dee-c01b-4cf5-99eb-d538e2d60333.png)
+![Public and private agent models](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-multitenant/images/guide-img/2d1a9d67-004c-4c75-8cd2-68ceef9bbc6f/images/4ec56dee-c01b-4cf5-99eb-d538e2d60333.png)
 
 *Figure 2. Public and private agent models*
 
@@ -29,7 +29,7 @@ In contrast, the diagram on the right-hand side shows agents within the solution
 
 Much of an agent's value focuses on the public model where providers may be publishing their agents with the intention of integrating them with other third-party agents. The agents would then be part of a mesh or web of interconnected services that, collectively, are able to address many use cases. While these agents could be used in many domains, the business-to-business use case is a natural fit. The following diagram provides a conceptualized view of what it might look like to assemble a collection agent that solves a specific problem.
 
-![Basic agentic system](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-multitenant/images/guide-img/2d1a9d67-004c-4c75-8cd2-68ceef9bbc6f/images/e549ee44-a516-4e4b-ae50-c59edfa39207.png)
+![Basic agentic system](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-multitenant/images/guide-img/2d1a9d67-004c-4c75-8cd2-68ceef9bbc6f/images/e549ee44-a516-4e4b-ae50-c59edfa39207.png)
 
 *Figure 3. Basic agentic system*
 
@@ -37,7 +37,7 @@ The diagram shows four business agents that work together to achieve a set of ob
 
 Both approaches offer viable pathways for agent integration. Some agents are built with the expectation that they will be integrated into specific systems where they can maximize their value, reach, and impact. This notion of agentic systems also raises questions about how agents are acquired, and there could be many ways to address this. The following diagram provides examples of how these agents and systems can be created through transactional experiences.
 
-![Acquiring agents through a marketplace](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-multitenant/images/guide-img/2d1a9d67-004c-4c75-8cd2-68ceef9bbc6f/images/ec89c63f-280c-45b2-b4bd-e7078ee8ab9b.png)
+![Acquiring agents through a marketplace](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-multitenant/images/guide-img/2d1a9d67-004c-4c75-8cd2-68ceef9bbc6f/images/ec89c63f-280c-45b2-b4bd-e7078ee8ab9b.png)
 
 *Figure 4. Acquiring agents through a marketplace*
 

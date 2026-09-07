@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 
  This section provides details on the recommended OUs and, when applicable, a set of recommended AWS accounts.
 
-![Diagram showing recommended OUs](http://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/recommended-ous.png)
+![Diagram showing recommended OUs](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/recommended-ous.png)
 
  Depending on your requirements, you might not need to establish all the recommended OUs. As you adopt AWS and learn more about your needs, you can expand the overall set of OUs. Refer to the Patterns for organizing your AWS accounts for examples of how you might begin to organize your AWS accounts.
 

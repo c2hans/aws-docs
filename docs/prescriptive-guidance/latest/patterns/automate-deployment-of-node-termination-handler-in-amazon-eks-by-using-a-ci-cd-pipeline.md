@@ -67,7 +67,7 @@ If you're using [EKS managed node groups](https://docs.aws.amazon.com/eks/latest
 
 The following diagram shows the high-level view of the end-to-end steps when the node termination is started.
 
-![A VPC with an Auto Scaling group, an EKS cluster with Node Termination Handler, and an SQS queue.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/970dfb73-9526-4942-a974-e8eef6416596/images/9e0125ae-d55b-49dd-ae70-ccaedf03832a.png)
+![A VPC with an Auto Scaling group, an EKS cluster with Node Termination Handler, and an SQS queue.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/970dfb73-9526-4942-a974-e8eef6416596/images/9e0125ae-d55b-49dd-ae70-ccaedf03832a.png)
 
 The workflow shown in the diagram consists of the following high-level steps:
 

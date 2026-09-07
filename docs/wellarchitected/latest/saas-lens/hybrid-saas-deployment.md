@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/hybrid-
 
  There are, however, architectural and operational strategies that can embrace this model without fully compromising your SaaS vision. The diagram in Figure 9 provides a conceptual view of how you could address this challenge.
 
-![Pool model with multiple tenants sharing microservices versus silo model with dedicated resources.](http://docs.aws.amazon.com/wellarchitected/latest/saas-lens/images/image10.png)
+![Pool model with multiple tenants sharing microservices versus silo model with dedicated resources.](https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/images/image10.png)
 
 * Figure 9: Hybrid deployment model *
 

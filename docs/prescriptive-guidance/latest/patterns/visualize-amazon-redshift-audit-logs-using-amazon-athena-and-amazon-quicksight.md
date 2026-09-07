@@ -26,7 +26,7 @@ Security is an integral part of database operations on the Amazon Web Services (
 ## Architecture
 <a name="visualize-amazon-redshift-audit-logs-using-amazon-athena-and-amazon-quicksight-architecture"></a>
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/90e69009-001e-4ced-bef0-3c361f93ae87/images/9fde7f01-17ab-4207-8a59-a12daf85a382.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/90e69009-001e-4ced-bef0-3c361f93ae87/images/9fde7f01-17ab-4207-8a59-a12daf85a382.png)
 
 **Technology stack  **
 + Athena

@@ -11,7 +11,7 @@ Site-to-Site VPN creates encrypted tunnels between your network and your AWS VPN
 
 VPN traffic from both Site-to-Site VPN and Client VPN connections stops in your VPC. As such, it can route to private IP addresses so your instances no longer need public-facing IP addresses. For services with a data path accessible from a publicly facing service endpoint, such as Athena, these service requests can either be routed over the internet, or over the VPN connection and through a VPC endpoint.
 
-![A diagram depicting how Power BI Desktop connects to AWS data sources over Site-to-Site VPN and Client VPN.](http://docs.aws.amazon.com/whitepapers/latest/using-power-bi-with-aws-cloud/images/powerbi3.png)
+![A diagram depicting how Power BI Desktop connects to AWS data sources over Site-to-Site VPN and Client VPN.](https://docs.aws.amazon.com/whitepapers/latest/using-power-bi-with-aws-cloud/images/powerbi3.png)
 
 *Connecting Power BI Desktop to AWS data sources over Site-to-Site VPN and Client VPN*
 

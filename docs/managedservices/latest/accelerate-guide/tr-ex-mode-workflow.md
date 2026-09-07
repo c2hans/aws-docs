@@ -7,4 +7,4 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 
 There are multiple levels to configure execution mode for your resources and each Trusted Advisor check. The following diagram shows how Trusted Remediator decides which execution mode to use based on your configurations:
 
-![An illustration of Trusted Remediator execution mode decision workflow.](http://docs.aws.amazon.com/managedservices/latest/accelerate-guide/images/tr-ex-mode-workflow.png)
+![An illustration of Trusted Remediator execution mode decision workflow.](https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/images/tr-ex-mode-workflow.png)

@@ -9,7 +9,7 @@ Amazon Textract extracts PDF file contents as strings that cannot be directly us
 
 After the AWS Lambda function is initiated in the [Ingestion phase](ingestion-phase.md), it runs the steps shown in the following diagram.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/automated-pdf-analysis-solution/images/guide-img/689cce75-c135-4cff-9a10-7c6bc4f61a19/images/46fec87a-b1a6-48a1-bb16-5de50578c62c.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/automated-pdf-analysis-solution/images/guide-img/689cce75-c135-4cff-9a10-7c6bc4f61a19/images/46fec87a-b1a6-48a1-bb16-5de50578c62c.png)
 
 The diagram shows the Lambda function implementing the following steps:
 

@@ -12,7 +12,7 @@ This section provides a reference implementation architecture diagram for the co
 
 Deploying this solution with the default parameters deploys the following components in the your AWS account.
 
-![architecture diagram](http://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/images/architecture-diagram.png)
+![architecture diagram](https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/images/architecture-diagram.png)
 
 **Note**
 AWS CloudFormation resources are created from AWS Cloud Development Kit (AWS CDK) constructs.

@@ -9,7 +9,7 @@ Deploying this solution with the default parameters deploys the following compon
 
  **Architecture diagram of AWS resources deployed to automate managing Transit Gateway attachments.**
 
-![network orchestration aws transit gateway architecture](http://docs.aws.amazon.com/solutions/latest/network-orchestration-aws-transit-gateway/images/network-orchestration-aws-transit-gateway-architecture.png)
+![network orchestration aws transit gateway architecture](https://docs.aws.amazon.com/solutions/latest/network-orchestration-aws-transit-gateway/images/network-orchestration-aws-transit-gateway-architecture.png)
 
 **Note**
 CloudFormation resources are created from AWS Cloud Development Kit (AWS CDK) constructs.

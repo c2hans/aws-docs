@@ -27,8 +27,8 @@ You should have received this equipment. If you are missing anything on this lis
 
 **Equipment provided**
 + WorkSpaces Thin Client device equipped with one USB-A port, one HDMI-Out port, and one Ethernet port
-![WorkSpaces Thin Client device (front)](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/meet-device.jpg)
-![WorkSpaces Thin Client device (back)](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/thin-client-back-whole.jpg)
+![WorkSpaces Thin Client device (front)](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/meet-device.jpg)
+![WorkSpaces Thin Client device (back)](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/thin-client-back-whole.jpg)
 
 **Required equipment (may not be provided)**
 + USB hub that supports USB-A input - connects into the device

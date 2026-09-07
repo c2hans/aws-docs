@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-4/ug/dashboard
 # Dashboard
 <a name="dashboard"></a>
 
-![Session management dashboard](http://docs.aws.amazon.com/res/archive/release-minus-4/ug/images/virtualdesktopdashboard.jpg)
+![Session management dashboard](https://docs.aws.amazon.com/res/archive/release-minus-4/ug/images/virtualdesktopdashboard.jpg)
 
 The Session Management Dashboard provides administrators with a quick view into:
 

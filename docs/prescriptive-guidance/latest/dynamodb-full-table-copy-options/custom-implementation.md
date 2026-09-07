@@ -15,7 +15,7 @@ You can create a console app (or a new API endpoint, if you work on a web API) t
 
 1. Copy data from the source account to the target account, using the DynamoDB batch write operation in AWS SDK to reduce the number of service calls to DynamoDB.
 
-![The custom implementation uses security tokens to access the IAM policies that provide access to the source and target accounts.](http://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-full-table-copy-options/images/guide-img/b39c4f99-8119-4c72-9813-d6420f64f36c/images/8f905e4f-ab6f-449c-96bd-0770b9ac2155.png)
+![The custom implementation uses security tokens to access the IAM policies that provide access to the source and target accounts.](https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-full-table-copy-options/images/guide-img/b39c4f99-8119-4c72-9813-d6420f64f36c/images/8f905e4f-ab6f-449c-96bd-0770b9ac2155.png)
 
 This solution best suits DynamoDB tables that are small in size (less than 500 MB).
 

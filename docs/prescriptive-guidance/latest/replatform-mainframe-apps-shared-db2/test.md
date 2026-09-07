@@ -61,7 +61,7 @@ AWS Mainframe Modernization Service (Managed Runtime Environment experience) is 
 
 The following diagram shows how AWS Application Testing works at a high level.
 
-![Testing mainframe migrations with AWS Mainframe Modernization.](http://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-mainframe-apps-shared-db2/images/guide-img/b5c7b078-cfe6-46c4-b120-94b5824d3c88/images/df92e945-43c1-47dd-9262-20e842df96fc.png)
+![Testing mainframe migrations with AWS Mainframe Modernization.](https://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-mainframe-apps-shared-db2/images/guide-img/b5c7b078-cfe6-46c4-b120-94b5824d3c88/images/df92e945-43c1-47dd-9262-20e842df96fc.png)
 
 The process consists of these steps:
 

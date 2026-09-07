@@ -9,7 +9,7 @@ Ensuring consistent identity management across core systems is key to successful
 
 Many of these institutions still maintain identity management and directory services such as Active Directory and Shibboleth for their on-premises environments. These can be integrated with cloud-based solutions to enable centralized identity management and single sign-on for your students, faculty, and staff. Cloud solution providers should have robust, easy-to-integrate identity management platforms that allow you to federate identities through cloud identity providers to your existing applications, your SaaS solutions, and cloud services. The following diagram shows an example architecture.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-education-hybrid-multicloud/images/guide-img/72d1214e-0148-413e-9e71-1a181ad4845c/images/e41b1f5c-c6f0-4d6d-896c-a5d3476dd2c4.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-education-hybrid-multicloud/images/guide-img/72d1214e-0148-413e-9e71-1a181ad4845c/images/e41b1f5c-c6f0-4d6d-896c-a5d3476dd2c4.png)
 
 This architecture  follows these recommendations:
 + **Select a primary, strategic cloud provider. **This architecture uses AWS as the primary cloud provider. By integrating with a cloud identity provider and existing identity management and directory services on premises, this architecture supports automated provisioning and management of access both to the primary cloud provider's services and to other applications and SaaS solutions. This ensures that security and governance requirements are met in a consistent, easy to manage way as more applications and services are added to the institution's technology portfolio.

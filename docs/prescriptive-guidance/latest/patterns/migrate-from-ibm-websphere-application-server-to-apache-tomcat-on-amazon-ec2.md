@@ -55,7 +55,7 @@ For more information about the Oracle versions supported by Amazon RDS, see the 
 
 **Target architecture**
 
-![Architecture for migrating from IBM WebSphere to Apache Tomcat on Amazon EC2](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/96f91201-e0a6-4d3f-a94e-7bd68a59cc4e/images/11afe7c0-b400-423b-9dfe-02a915fe47ff.png)
+![Architecture for migrating from IBM WebSphere to Apache Tomcat on Amazon EC2](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/96f91201-e0a6-4d3f-a94e-7bd68a59cc4e/images/11afe7c0-b400-423b-9dfe-02a915fe47ff.png)
 
 ## Tools
 <a name="migrate-from-ibm-websphere-application-server-to-apache-tomcat-on-amazon-ec2-tools"></a>

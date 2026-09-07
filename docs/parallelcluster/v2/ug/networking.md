@@ -34,7 +34,7 @@ The [`use_public_ips`](vpc-section.md#use-public-ips) setting cannot be set to `
 ## AWS ParallelCluster using two subnets
 <a name="aws-parallelcluster-using-two-subnets"></a>
 
-![AWS ParallelCluster using two subnets](http://docs.aws.amazon.com/parallelcluster/v2/ug/images/networking_two_subnets.jpg)
+![AWS ParallelCluster using two subnets](https://docs.aws.amazon.com/parallelcluster/v2/ug/images/networking_two_subnets.jpg)
 
 The configuration to create a new private subnet for compute instances requires the following settings:
 
@@ -61,7 +61,7 @@ Both of these configurations require a [NAT gateway](https://docs.aws.amazon.com
 ## AWS ParallelCluster in a single private subnet connected using AWS Direct Connect
 <a name="aws-parallelcluster-in-a-single-private-subnet-connected-using-direct-connect"></a>
 
-![Private AWS ParallelCluster with AWS Direct Connect](http://docs.aws.amazon.com/parallelcluster/v2/ug/images/networking_private_dx.jpg)
+![Private AWS ParallelCluster with AWS Direct Connect](https://docs.aws.amazon.com/parallelcluster/v2/ug/images/networking_private_dx.jpg)
 
 The configuration for this architecture requires the following settings:
 
@@ -92,7 +92,7 @@ When using Amazon ECS Task Networking, the `awsvpc` network mode doesn't provide
 
 You must configure a NAT gateway in order to enable the cluster to run multi-node parallel jobs.
 
-![AWS ParallelCluster networking with awsbatch scheduler](http://docs.aws.amazon.com/parallelcluster/v2/ug/images/networking_batch.jpg)
+![AWS ParallelCluster networking with awsbatch scheduler](https://docs.aws.amazon.com/parallelcluster/v2/ug/images/networking_batch.jpg)
 
 For more information, see the following topics:
 +  [AWS Batch managed compute environments](https://docs.aws.amazon.com/batch/latest/userguide/compute_environments.html#managed_compute_environments)

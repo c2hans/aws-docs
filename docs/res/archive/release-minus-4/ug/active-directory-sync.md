@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-4/ug/active-di
 
 All the CFN parameters related to Active Directory (AD) are optional during installation.
 
-![Active directory optional details](http://docs.aws.amazon.com/res/archive/release-minus-4/ug/images/active-directory-details.png)
+![Active directory optional details](https://docs.aws.amazon.com/res/archive/release-minus-4/ug/images/active-directory-details.png)
 
 For any secret ARN provided at runtime (for example, `ServiceAccountCredentialsSecretArn` or `DomainTLSCertificateSecretArn`), make sure to add the following tags to the secret for RES to get permissions to read the secret value:
 + key: `res:EnvironmentName`, value: `{{<your RES environment name>}}`
@@ -20,9 +20,9 @@ Any AD configuration updates in the web portal will be picked up automatically d
 
 After the initial installation, administrators can view or edit the AD configuration in the RES web portal under the **Identity management** page:
 
-![Active directory domain configuration settings details](http://docs.aws.amazon.com/res/archive/release-minus-4/ug/images/res-active-directory-domain.png)
+![Active directory domain configuration settings details](https://docs.aws.amazon.com/res/archive/release-minus-4/ug/images/res-active-directory-domain.png)
 
-![Active directory synchronization pop-out](http://docs.aws.amazon.com/res/archive/release-minus-4/ug/images/active-directory-synchronization.png)
+![Active directory synchronization pop-out](https://docs.aws.amazon.com/res/archive/release-minus-4/ug/images/active-directory-synchronization.png)
 
 ### Additional settings
 <a name="active-directory-sync-addl-settings"></a>
@@ -45,7 +45,7 @@ Some common custom SSSD settings are:
 
 For a full description of the SSSD configuration file, see the Linux man pages for `SSSD`.
 
-![Additional SSSD configurations](http://docs.aws.amazon.com/res/archive/release-minus-4/ug/images/res-additional-sssd-config1.png)
+![Additional SSSD configurations](https://docs.aws.amazon.com/res/archive/release-minus-4/ug/images/res-additional-sssd-config1.png)
 
 The SSSD parameters and values must be compatible with the RES SSSD configuration as described here:
 + `id_provider` is set internally by RES and must not be modified.
@@ -53,22 +53,22 @@ The SSSD parameters and values must be compatible with the RES SSSD configuratio
 
 The following example enables debug level for SSSD logs:
 
-![Additional SSSD configurations showing new key and value pair entered](http://docs.aws.amazon.com/res/archive/release-minus-4/ug/images/res-additional-sssd-config2.png)
+![Additional SSSD configurations showing new key and value pair entered](https://docs.aws.amazon.com/res/archive/release-minus-4/ug/images/res-additional-sssd-config2.png)
 
 ## How to manually start or stop the sync (release 2025.03 and later)
 <a name="active-directory-sync-start-stop"></a>
 
 Navigate to the **Identity management** page, and choose the **Start AD Synchronization** button in the **Active Directory Domain** container to trigger an AD sync on demand.
 
-![Active Directory domain configurations](http://docs.aws.amazon.com/res/archive/release-minus-4/ug/images/res-ad-directory-sync1.png)
+![Active Directory domain configurations](https://docs.aws.amazon.com/res/archive/release-minus-4/ug/images/res-ad-directory-sync1.png)
 
 To stop an ongoing AD sync, select the **Stop AD Synchronization** button in the **Active Directory Domain** container.
 
-![Active Directory domain configurations page showing option to stop synchronization](http://docs.aws.amazon.com/res/archive/release-minus-4/ug/images/res-ad-directory-sync2.png)
+![Active Directory domain configurations page showing option to stop synchronization](https://docs.aws.amazon.com/res/archive/release-minus-4/ug/images/res-ad-directory-sync2.png)
 
 You can also check the AD sync status and the latest sync time in the **Active Directory Domain** container.
 
-![Active Directory domain configurations page showing latest synchronization time](http://docs.aws.amazon.com/res/archive/release-minus-4/ug/images/res-ad-directory-sync3.png)
+![Active Directory domain configurations page showing latest synchronization time](https://docs.aws.amazon.com/res/archive/release-minus-4/ug/images/res-ad-directory-sync3.png)
 
 ## How to manually run the sync (release 2024.12 and 2024.12.01)
 <a name="active-directory-sync-manually"></a>

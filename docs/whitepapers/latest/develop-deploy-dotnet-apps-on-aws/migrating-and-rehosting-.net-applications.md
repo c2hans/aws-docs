@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/develop-deploy-dotnet
 
 When migrating any type of application to AWS, including legacy .NET Framework applications, there are a number of different approaches. These approaches are known as the [six Rs of migration](https://docs.aws.amazon.com/whitepapers/latest/aws-migration-whitepaper/the-6-rs-6-application-migration-strategies.html).
 
-![A chart depicting the six Rs of migration: rehost, replatform, repurchase, refactor, retain, and retire.](http://docs.aws.amazon.com/whitepapers/latest/develop-deploy-dotnet-apps-on-aws/images/dotnet-apps5.png)
+![A chart depicting the six Rs of migration: rehost, replatform, repurchase, refactor, retain, and retire.](https://docs.aws.amazon.com/whitepapers/latest/develop-deploy-dotnet-apps-on-aws/images/dotnet-apps5.png)
 
 * Six Rs of migration*
 

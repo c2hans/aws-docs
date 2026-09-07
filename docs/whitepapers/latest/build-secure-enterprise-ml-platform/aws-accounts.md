@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterpri
 
 Building an ML platform on AWS starts with setting up AWS accounts, and it is recommended to set up a multi-accounts architecture to meet the needs of an enterprise and its busines units. The following section discusses one multi-account pattern for building out an enterprise ML platform.
 
-![A diagram showing AWS account design.](http://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-2.png)
+![A diagram showing AWS account design.](https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-2.png)
 
 *AWS account design*
 + **Shared Services account** — A Shared Services account is used to deploy and operate common services and resources within an enterprise ML platform. Common resources like shared code repositories, library package repositories, Docker image repositories, service catalog factory, and model repository can be hosted in the Shared Services Account. In addition to common resources, the Shared Services account would also host automation pipelines for end-to-end ML workflows. While it is not explicitly listed here, you also need to establish lower environments for the development and testing of common resources and services in the Shared Services account.
@@ -20,7 +20,7 @@ Building an ML platform on AWS starts with setting up AWS accounts, and it is re
 
 You can use [AWS Control Tower](https://aws.amazon.com/controltower/) to build such a multi-account environment. You can determine what accounts are needed based on your requirements for account isolation requirements such business units or projects. AWS Control Tower offers you a mechanism to easily set up and govern a new, secure multi-account AWS environment. In AWS Control Tower, [AWS Organizations](https://docs.aws.amazon.com/controltower/latest/userguide/organizations.html) helps centrally manage billing, access, control, compliance, security, and share resources across your member AWS accounts. Accounts are grouped into logical groups, called organizational units (OUs), as shown in the following figure.
 
-![A diagram showing AWS Organizations organizational units.](http://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-3.png)
+![A diagram showing AWS Organizations organizational units.](https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-3.png)
 
 * AWS Organizations *
 
@@ -31,7 +31,7 @@ The creation of OUs enables you to set up organizational level pre-defined guard
 +  Disallow S3 buckets that are not encrypted.
 + Disallow S3 buckets that don't have versioning enabled.
 
-![A screenshot showing AWS Control Tower guardrails.](http://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-4.png)
+![A screenshot showing AWS Control Tower guardrails.](https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/images/build-ml-4.png)
 
 * AWS Control Tower Guardrails *
 

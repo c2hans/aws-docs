@@ -14,7 +14,7 @@ It's important to understand the guardrails that are put in place to protect you
 
 To see the quotas that apply to your account, navigate to the [Service Quotas dashboard](https://console.aws.amazon.com/servicequotas/home). Here, you can view your service quotas, request a quota increase, and view current utilization. From here, you can drill down to a specific AWS service, such as Lambda:
 
-![The Service Quotas console showing Lambda quotas with current utilization.](http://docs.aws.amazon.com/lambda/latest/dg/images/application-design-figure-1.png)
+![The Service Quotas console showing Lambda quotas with current utilization.](https://docs.aws.amazon.com/lambda/latest/dg/images/application-design-figure-1.png)
 
 The following sections list default quotas and limits in Lambda by category.
 

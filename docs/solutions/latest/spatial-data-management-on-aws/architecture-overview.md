@@ -10,7 +10,7 @@ This document describes the technical architecture of Spatial Data Management on
 ## High-Level Architecture
 <a name="high-level-architecture"></a>
 
-![High-level architecture diagram showing the three main layers of Spatial Data Management on AWS](http://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/high_level_architecture_interfaces.svg)
+![High-level architecture diagram showing the three main layers of Spatial Data Management on AWS](https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/high_level_architecture_interfaces.svg)
 
 The Spatial Data Management on AWS solution is deployed entirely within your AWS account. The architecture consists of three main layers:
 

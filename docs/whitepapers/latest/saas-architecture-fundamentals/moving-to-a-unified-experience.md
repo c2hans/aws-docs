@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
 
  The following diagram provides a conceptual view of an environment where all of the customers are managed, onboarded, billed, and operated through a shared model.
 
-![A diagram showing a conceptual view of an environment where all of the customers are managed, onboarded, billed, and operated through a shared model.](http://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fundamentals/images/unified-environment.png)
+![A diagram showing a conceptual view of an environment where all of the customers are managed, onboarded, billed, and operated through a shared model.](https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fundamentals/images/unified-environment.png)
 
  At first glance, this may not seem all that different than the prior model. However, as we dig in a bit further, you’ll see that there are fundamental, significant differences in these two approaches.
 

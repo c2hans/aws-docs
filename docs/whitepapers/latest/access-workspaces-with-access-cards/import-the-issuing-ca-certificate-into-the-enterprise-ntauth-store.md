@@ -15,7 +15,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/access-workspaces-wit
 
  The following figure shows the successful import of the certificate into the NTAuth store.
 
-![A screenshot showing the import of the issuing CA certificate into the Enterprise NTAuth store](http://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/workspaces-smartcard11.png)
+![A screenshot showing the import of the issuing CA certificate into the Enterprise NTAuth store](https://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/workspaces-smartcard11.png)
 
  *Import the issuing CA certificate into Enterprise NTAuth store *
 
@@ -33,6 +33,6 @@ certutil -enterprise -addstore NTAuth issuing_ca_name.cer
 
  The following figure shows the successful insert of the certificate into the registry location.
 
-![A screenshot showing the import of the issuing CA certificate into Enterprise NTAuth store.](http://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/workspaces-smartcard12.png)
+![A screenshot showing the import of the issuing CA certificate into Enterprise NTAuth store.](https://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/workspaces-smartcard12.png)
 
 * Import the issuing CA certificate into Enterprise NTAuth store *

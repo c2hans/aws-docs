@@ -109,7 +109,7 @@ You can choose to use a Jira API key in place of your password by providing your
    1. Add the ARN of this secret as input to the stack.
 
        **Provide a stack name, Jira project information, and Jira API credentials.**
-![Jira ticket system integration stack configuration](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/ticket-system-integration-stack-jira.png)
+![Jira ticket system integration stack configuration](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/ticket-system-integration-stack-jira.png)
 
        **Jira Field Configuration**:
 
@@ -157,7 +157,7 @@ You can choose to use a Jira API key in place of your password by providing your
    1. Create a secret in Secrets Manager with the key `API_Key` and provide the secret ARN as input to the stack.
 
        **Provide a stack name, ServiceNow project information, and ServiceNow API credentials.**
-![ServiceNow ticket system integration stack configuration](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/ticket-system-integration-stack-servicenow.png)
+![ServiceNow ticket system integration stack configuration](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/ticket-system-integration-stack-servicenow.png)
 
        **To create a custom integration stack**: Include a Lambda function that the solution orchestrator Step Functions can call for each remediation. The Lambda function should take the input provided by Step Functions, construct a payload according to the requirements of your ticketing system, and make a request to your system to create the ticket.
 
@@ -189,7 +189,7 @@ You can choose to use a Jira API key in place of your password by providing your
 
  **Configure StackSet options**
 
-![Configure StackSet options page](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/configure-stackset-options.png)
+![Configure StackSet options page](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/configure-stackset-options.png)
 
 1. For the **Account numbers** parameter, enter the account ID of the AWS Security Hub admin account.
 
@@ -219,7 +219,7 @@ Use a service-managed StackSets to deploy the [member roles template](https://so
    You can view the status of the StackSet operation in the AWS CloudFormation console on the StackSet details page. You should receive a **SUCCEEDED** operation status in approximately 5 minutes.
 
     **Specify StackSet details**
-![Specify StackSet details page](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/specify-stackset-details.png)
+![Specify StackSet details page](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/specify-stackset-details.png)
 
 ## Step 3: Launch the member stack into each AWS Security Hub member account and Region
 <a name="step-3-stackset"></a>
@@ -246,7 +246,7 @@ Because the [member stack](https://solutions-reference.s3.amazonaws.com/automate
 
  **Accounts**
 
-![Accounts deployment configuration page](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/accounts.png)
+![Accounts deployment configuration page](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/accounts.png)
 
  **Deployment locations**: You can specify a list of account numbers or organizational units.
 

@@ -202,7 +202,7 @@ You can set the CPU cores and the threads per CPU core for a DB instance class u
 
 When you are creating, modifying, or restoring a DB instance, you set the DB instance class in the AWS Management Console. The **Instance specifications** section shows options for the processor. The following image shows the processor features options.
 
-![Configure processor options.](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/images/vcpu-config.png)
+![Configure processor options.](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/images/vcpu-config.png)
 
 Set the following options to the appropriate values for your DB instance class under **Processor features**:
 + **Core count – **Set the number of CPU cores using this option. The value must be equal to or less than the maximum number of CPU cores for the DB instance class.
@@ -212,7 +212,7 @@ When you modify or restore a DB instance, you can also set the CPU cores and the
 
 When you view the details for a DB instance in the console, you can view the processor information for its DB instance class on the **Configuration** tab. The following image shows a DB instance class with one CPU core and multiple threads per core enabled.
 
-![View processor options.](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/images/vcpu-view.png)
+![View processor options.](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/images/vcpu-view.png)
 
 For Oracle DB instances, the processor information only appears for Bring Your Own License (BYOL) DB instances.
 

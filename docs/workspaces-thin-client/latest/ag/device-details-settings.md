@@ -17,7 +17,7 @@ Device settings information is updated only when device is online. If device is 
 
 WorkSpaces Thin Client device details provides an overview of the device's network connections. The following table lists each element and how it functions.
 
-![Network section showing connection type as ETHERNET with Connected status.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ag/images/device-settings-network.png)
+![Network section showing connection type as ETHERNET with Connected status.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/images/device-settings-network.png)
 
 | Element | Description |
 | --- | --- |
@@ -32,7 +32,7 @@ WorkSpaces Thin Client device details provides an overview of the device's netwo
 
 WorkSpaces Thin Client device details provide a list of any connected peripherals connect to a device. The following table lists each element and how it functions.
 
-![Bluetooth and peripheral devices settings showing 5 connected USB devices including mouse, keyboard, speaker, microphone, and webcam.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ag/images/device-settings-peripheral.png)
+![Bluetooth and peripheral devices settings showing 5 connected USB devices including mouse, keyboard, speaker, microphone, and webcam.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/images/device-settings-peripheral.png)
 
 | Element | Description |
 | --- | --- |
@@ -44,7 +44,7 @@ WorkSpaces Thin Client device details provide a list of any connected peripheral
 
 Each WorkSpaces Thin Client device has a power saving mode. The following table lists the status of this mode.
 
-![Power and sleep section showing Turn off display after setting configured to Never.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ag/images/device-settings-power.png)
+![Power and sleep section showing Turn off display after setting configured to Never.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/images/device-settings-power.png)
 
 | Element | Description |
 | --- | --- |

@@ -39,7 +39,7 @@ The example in this pattern uses Docker images from a public gallery to create t
 
 The following diagram shows the architecture components for this pattern.
 
-![Workflow to authenticate with mutual TLS using Application Load Balancer.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a343fa4e-097f-416b-9c83-01a28eb57dc3/images/e1371297-b987-4487-9b13-8120933c921f.png)
+![Workflow to authenticate with mutual TLS using Application Load Balancer.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/a343fa4e-097f-416b-9c83-01a28eb57dc3/images/e1371297-b987-4487-9b13-8120933c921f.png)
 
  The diagram shows the following workflow:
 

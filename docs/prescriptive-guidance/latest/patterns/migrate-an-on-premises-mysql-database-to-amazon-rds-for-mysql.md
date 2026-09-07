@@ -38,7 +38,7 @@ This pattern provides guidance for migrating an on-premises MySQL database to Am
 
 The following diagram shows the target Amazon RDS for MySQL implementation after migration.
 
-![Target Amazon RDS for MySQL implementation after cutover.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/808809dd-030f-42af-a5a7-c4ba40456193/images/2e10114e-e389-4d24-9b6a-fa56beee5369.png)
+![Target Amazon RDS for MySQL implementation after cutover.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/808809dd-030f-42af-a5a7-c4ba40456193/images/2e10114e-e389-4d24-9b6a-fa56beee5369.png)
 
 **AWS data migration architecture**
 
@@ -46,13 +46,13 @@ The following diagram shows the target Amazon RDS for MySQL implementation after
 
 The following diagram shows the data migration architecture when you use AWS DMS to send full and incremental changes until cutover. The network connection from on premises to AWS depends on your requirements and is out of scope for this pattern.
 
-![Data migration architecture to AWS when you use AWS DMS.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/808809dd-030f-42af-a5a7-c4ba40456193/images/ecc9b282-1897-4971-99ed-83223b17000d.png)
+![Data migration architecture to AWS when you use AWS DMS.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/808809dd-030f-42af-a5a7-c4ba40456193/images/ecc9b282-1897-4971-99ed-83223b17000d.png)
 
 ** Using native MySQL tools:**
 
 The following diagram shows the data migration architecture when you use native MySQL tools. The export dump files are copied to Amazon Simple Storage Service (Amazon S3) and imported into the Amazon RDS for MySQL database in AWS before the cutover. The network connection from on premises to AWS depends on your requirements and is out of scope for this pattern.
 
-![Data migration to AWS architecture when you use native MySQL tools.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/808809dd-030f-42af-a5a7-c4ba40456193/images/3bbec989-c3eb-473e-ba4a-032d6a4271c5.png)
+![Data migration to AWS architecture when you use native MySQL tools.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/808809dd-030f-42af-a5a7-c4ba40456193/images/3bbec989-c3eb-473e-ba4a-032d6a4271c5.png)
 
 **Notes:**
 + Depending on downtime requirements and the size of the database, using AWS DMS or a change data capture (CDC) tool minimizes cutover time. AWS DMS can help reduce cutover time to the new target to a minimum (typically minutes). An offline strategy with **mysqldump **can suffice if the size of the database and network latency allow for a short window. (We recommend testing to get an approximate time.)

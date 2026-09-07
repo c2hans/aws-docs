@@ -126,7 +126,7 @@ Your account is charged for accessing method-level CloudWatch metrics, but not t
 After you customize the stage-level settings, you can override them for each API method. Some of these options might result in additional charges to your AWS account.
 
 1. To configure method overrides, expand the stage under the secondary navigation pane, and then choose a method.
-![Expand the stage under the secondary navigation pane, and choose a method.](http://docs.aws.amazon.com/apigateway/latest/developerguide/images/method-override-view-new-console.png)
+![Expand the stage under the secondary navigation pane, and choose a method.](https://docs.aws.amazon.com/apigateway/latest/developerguide/images/method-override-view-new-console.png)
 
 1. For **Method overrides**, choose **Edit**.
 

@@ -18,7 +18,7 @@ Seller agreements include the following:
 
 The following graphic shows the contract structure for AWS Marketplace.
 
-![Contractual structure for buyers, sellers, and AWS.](http://docs.aws.amazon.com/marketplace/latest/buyerguide/images/contract-structure.png)
+![Contractual structure for buyers, sellers, and AWS.](https://docs.aws.amazon.com/marketplace/latest/buyerguide/images/contract-structure.png)
 
 ## EULA updates
 <a name="eula-updates"></a>

@@ -11,7 +11,7 @@ In the left navigation pane on the AWS Supply Chain dashboard, choose **Order Pl
 
 The **Order Planning and Tracking** page appears. Choose the **Logistics** tab.
 
-![Viewing the logistics details](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Logistics.png)
+![Viewing the logistics details](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Logistics.png)
 
 You can choose **Filters** to filter the orders based on **Country/Location**, **Campaign**, **Revision** , **Main Work Center**, **Process Name**, and **Planner Group**. Once you set your filters, choose **Apply**. You can also choose **Save filter group** to save your filters.
 
@@ -24,7 +24,7 @@ You can use the expandable **Comments** feature to do the following:
 + Edit or delete a comment.
 + See other users' comments.
 
-![Comments feature on the Logistics page](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/comments-logistics.PNG)
+![Comments feature on the Logistics page](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/comments-logistics.PNG)
 
 The **Logistics** page, displays the following from your ERP or source system:
 

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/creating-pr
 # Step 5. Run the pipeline
 <a name="step5"></a>
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/creating-production-ready-ml-pipelines-on-aws/images/guide-img/38c6f8a0-9908-46ce-9db4-ad6b4c4bc218/images/9164a5b0-a802-43af-b53e-b8183952aa1a.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/creating-production-ready-ml-pipelines-on-aws/images/guide-img/38c6f8a0-9908-46ce-9db4-ad6b4c4bc218/images/9164a5b0-a802-43af-b53e-b8183952aa1a.png)
 
 This step runs the training or inference pipeline that was created in the AWS CloudFormation stacks in step 4. The pipeline can't be run until its internal placeholder parameters have been populated with concrete values. This action of assigning values to placeholder parameters is the primary activity of step 5. Example placeholder parameters include:
 + The location of input, output, and intermediate datasets

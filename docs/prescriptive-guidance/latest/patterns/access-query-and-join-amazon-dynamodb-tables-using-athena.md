@@ -32,7 +32,7 @@ There is a cost for querying DynamoDB tables. Table sizes exceeding a few gigaby
 
 The following diagram shows how a user can run a SQL query on a DynamoDB table from Athena.
 
-![Workflow for connecting Athena and DynamoDB to run a SQL query.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e6ff94af-d208-40c7-94e4-af257755a603/images/bc8e0132-b578-463b-bf55-3c39ce359c17.png)
+![Workflow for connecting Athena and DynamoDB to run a SQL query.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e6ff94af-d208-40c7-94e4-af257755a603/images/bc8e0132-b578-463b-bf55-3c39ce359c17.png)
 
 The diagram shows the following workflow:
 

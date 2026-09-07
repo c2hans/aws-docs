@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/accept-calls.h
 <a name="accept-calls"></a>
 
 1. Whenever you set your status in the CCP to **Available**, Connect Customer can deliver calls to you, based on the settings in your [routing profile](routing-profiles.md).
-![The CCP set to available, incoming call.](http://docs.aws.amazon.com/connect/latest/adminguide/images/incoming-call-ccp2.png)
+![The CCP set to available, incoming call.](https://docs.aws.amazon.com/connect/latest/adminguide/images/incoming-call-ccp2.png)
 
 1. When a call arrives, choose the **Accept call** button.
 **Note**
@@ -18,4 +18,4 @@ The **Accept call** button does not appear if your admin has enabled [Auto-accep
 1. You're now talking to the contact.
 
 1. You have 20 seconds to accept or reject a contact. If you miss a call, it will look similar to the following image. Choose **Close contact** so you can accept another call.
-![The CCP set to available, missed call, Close contact button.](http://docs.aws.amazon.com/connect/latest/adminguide/images/missed-call-banner.png)
+![The CCP set to available, missed call, Close contact button.](https://docs.aws.amazon.com/connect/latest/adminguide/images/missed-call-banner.png)

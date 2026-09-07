@@ -40,7 +40,7 @@ The volume of the data and the type of target (that is, Amazon EC2 or Amazon RDS
 <a name="microsoft-sql-server-database-as-a-source-and-a-target"></a>
 +  **Native SQL Server backup/restore -** Using native backup (\*.bak) files is the simplest way to back up and restore SQL Server databases. You can use this method to migrate databases to or from Amazon RDS. You can back up and restore single databases instead of entire database (DB) instances. You can also move databases between Amazon RDS for SQL Server DB instances. When you use Amazon RDS, you can store and transfer backup files in Amazon Simple Storage Service (Amazon S3), for an added layer of protection for disaster recovery. You can use this process to back up and restore SQL Server databases to Amazon EC2 as well (refer to the following diagram).
 
-![A diagram showing Microsoft SQL Server to Amazon RDS or Amazon EC2.](http://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/sql-server-to-rds.jpeg)
+![A diagram showing Microsoft SQL Server to Amazon RDS or Amazon EC2.](https://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/sql-server-to-rds.jpeg)
 
 +  **Database mirroring —** You can use database mirroring to set up a hybrid cloud environment for your SQL Server databases. This option requires SQL Server Enterprise edition. In this scenario, your principal SQL Server database runs on- premises, and you create a warm standby solution in the cloud. You replicate your data asynchronously, and perform a manual failover when you’re ready for cutover.
 +  **Always On availability groups —** SQL Server Always On availability groups is an advanced, enterprise-level feature to provide high availability and disaster recovery solutions. This feature is available if you are using SQL Server 2012 and later versions. You can also use an Always On availability group to migrate your on-premises SQL Server databases to Amazon EC2 on AWS. This approach enables you to migrate your databases either with downtime or with minimal downtime.
@@ -87,7 +87,7 @@ To read ongoing changes from the source database, AWS DMS uses engine-specific A
 
  For the MySQL, MariaDB, PostgreSQL, Oracle, and MS SQL Server database engines, Amazon RDS creates a second DB instance using a snapshot of the source DB instance. It then uses the engines' native asynchronous replication to update the read replica whenever there is a change to the source DB instance. The read replica operates as a DB instance that allows only read-only connections; applications can connect to a read replica just as they would to any DB instance. Amazon RDS replicates all databases in the source DB instance. Check vendor specific licensing before using the read replicas feature in Amazon RDS.
 
-![A diagram showing a common OLTP and AWS read replica scenario.](http://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/oltp-and-aws.jpeg)
+![A diagram showing a common OLTP and AWS read replica scenario.](https://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/oltp-and-aws.jpeg)
 
 ## Homogeneous data files ingestion
 <a name="homogeneous-data-files-ingestion"></a>
@@ -115,7 +115,7 @@ The following tools can cater to both one-time or continuous file ingestion need
 
  File Gateway can be deployed either as a virtual or hardware appliance. It enables for you to present a NFS such as Server Message Block (SMB) in your on-premises environment, which interfaces with Amazon S3. In Amazon S3, File Gateway preserves file metadata, such as permissions and timestamps for objects it stores in Amazon S3.
 
-![An image showing File Gateway architecture.](http://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/file-gateway.jpeg)
+![An image showing File Gateway architecture.](https://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/file-gateway.jpeg)
 
 ### Data synchronization between on-premises data platforms and AWS
 <a name="data-synchronization-between-on-premises-data-platforms-and-aws"></a>
@@ -130,7 +130,7 @@ The following tools can cater to both one-time or continuous file ingestion need
 
  It’s simple to use. You deploy the DataSync agent as a virtual appliance in a network that has access to AWS, where you define your source, target, and transfer options per transfer task. It allows for simplified data transfers from your SMB and NFS file shares, and self-managed object storage, directly to any of the [Amazon S3 storage classes](https://aws.amazon.com/s3/storage-classes/). It also supports Amazon Elastic File System (Amazon EFS) and Amazon FSx for Windows File Server for data movement of file data, where it can preserve the file and folder attributes.
 
-![A diagram showing AWS DataSync architecture.](http://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/aws-datasync.jpeg)
+![A diagram showing AWS DataSync architecture.](https://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/images/aws-datasync.jpeg)
 
 ### Data synchronization between on-premises environments and AWS
 <a name="data-synchronization-between-on-premises-environments-and-aws"></a>

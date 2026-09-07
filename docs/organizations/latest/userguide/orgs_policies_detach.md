@@ -32,7 +32,7 @@ You can detach an SCP by either navigating to the policy or to the root, OU, or 
 
 1. Sign in to the [AWS Organizations console](https://console.aws.amazon.com/organizations/v2). You must sign in as an IAM user, assume an IAM role, or sign in as the root user ([not recommended](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#lock-away-credentials)) in the organization’s management account.
 
-1. On the **[AWS accounts](https://console.aws.amazon.com/organizations/v2/home/accounts)** page navigate to the Root, OU, or account that you want to detach a policy from. You might have to expand OUs (choose the ![Gray cloud icon representing cloud computing or storage services.](http://docs.aws.amazon.com/organizations/latest/userguide/images/console-expand.png)) to find the OU or account that you want. Choose the name of the Root, OU, or account.
+1. On the **[AWS accounts](https://console.aws.amazon.com/organizations/v2/home/accounts)** page navigate to the Root, OU, or account that you want to detach a policy from. You might have to expand OUs (choose the ![Gray cloud icon representing cloud computing or storage services.](https://docs.aws.amazon.com/organizations/latest/userguide/images/console-expand.png)) to find the OU or account that you want. Choose the name of the Root, OU, or account.
 
 1. On the **Policies** tab, choose the radio button next to the SCP that you want to detach, and then choose **Detach**.
 
@@ -46,7 +46,7 @@ You can detach an SCP by either navigating to the policy or to the root, OU, or 
 
 1. On the **[Service control policies](https://console.aws.amazon.com/organizations/v2/home/policies/service-control-policy)** page, choose the name of the policy that you want to detach from a root, OU, or account.
 
-1. On the **Targets** tab, choose the radio button next to the root, OU, or account that you want to detach the policy from. You might have to expand OUs (choose the ![Gray cloud icon representing cloud computing or storage services.](http://docs.aws.amazon.com/organizations/latest/userguide/images/console-expand.png)) to find the OU or account that you want.
+1. On the **Targets** tab, choose the radio button next to the root, OU, or account that you want to detach the policy from. You might have to expand OUs (choose the ![Gray cloud icon representing cloud computing or storage services.](https://docs.aws.amazon.com/organizations/latest/userguide/images/console-expand.png)) to find the OU or account that you want.
 
 1. Choose **Detach**.
 
@@ -67,7 +67,7 @@ The `RCPFullAWSAccess` policy is automatically attached to the root, every OU, a
 
 1. Sign in to the [AWS Organizations console](https://console.aws.amazon.com/organizations/v2). You must sign in as an IAM user, assume an IAM role, or sign in as the root user ([not recommended](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#lock-away-credentials)) in the organization’s management account.
 
-1. On the **[AWS accounts](https://console.aws.amazon.com/organizations/v2/home/accounts)** page navigate to the Root, OU, or account that you want to detach a policy from. You might have to expand OUs (choose the ![Gray cloud icon representing cloud computing or storage services.](http://docs.aws.amazon.com/organizations/latest/userguide/images/console-expand.png)) to find the OU or account that you want. Choose the name of the Root, OU, or account.
+1. On the **[AWS accounts](https://console.aws.amazon.com/organizations/v2/home/accounts)** page navigate to the Root, OU, or account that you want to detach a policy from. You might have to expand OUs (choose the ![Gray cloud icon representing cloud computing or storage services.](https://docs.aws.amazon.com/organizations/latest/userguide/images/console-expand.png)) to find the OU or account that you want. Choose the name of the Root, OU, or account.
 
 1. On the **Policies** tab, choose the radio button next to the RCP that you want to detach, and then choose **Detach**.
 
@@ -81,7 +81,7 @@ The `RCPFullAWSAccess` policy is automatically attached to the root, every OU, a
 
 1. On the **Resource control policy** page, choose the name of the policy that you want to detach from a root, OU, or account.
 
-1. On the **Targets** tab, choose the radio button next to the root, OU, or account that you want to detach the policy from. You might have to expand OUs (choose the ![Gray cloud icon representing cloud computing or storage services.](http://docs.aws.amazon.com/organizations/latest/userguide/images/console-expand.png)) to find the OU or account that you want.
+1. On the **Targets** tab, choose the radio button next to the root, OU, or account that you want to detach the policy from. You might have to expand OUs (choose the ![Gray cloud icon representing cloud computing or storage services.](https://docs.aws.amazon.com/organizations/latest/userguide/images/console-expand.png)) to find the OU or account that you want.
 
 1. Choose **Detach**.
 
@@ -98,7 +98,7 @@ You can detach a declarative policy by either navigating to the policy or to the
 
 1. Sign in to the [AWS Organizations console](https://console.aws.amazon.com/organizations/v2). You must sign in as an IAM user, assume an IAM role, or sign in as the root user ([not recommended](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#lock-away-credentials)) in the organization’s management account.
 
-1. On the **[AWS accounts](https://console.aws.amazon.com/organizations/v2/home/accounts)** page navigate to the Root, OU, or account that you want to detach a policy from. You might have to expand OUs (choose the ![Gray cloud icon representing cloud computing or storage services.](http://docs.aws.amazon.com/organizations/latest/userguide/images/console-expand.png)) to find the OU or account that you want. Choose the name of the Root, OU, or account.
+1. On the **[AWS accounts](https://console.aws.amazon.com/organizations/v2/home/accounts)** page navigate to the Root, OU, or account that you want to detach a policy from. You might have to expand OUs (choose the ![Gray cloud icon representing cloud computing or storage services.](https://docs.aws.amazon.com/organizations/latest/userguide/images/console-expand.png)) to find the OU or account that you want. Choose the name of the Root, OU, or account.
 
 1. On the **Policies** tab, choose the radio button next to the declarative policy that you want to detach, and then choose **Detach**.
 
@@ -112,7 +112,7 @@ You can detach a declarative policy by either navigating to the policy or to the
 
 1. On the ** [Declarative policies](https://console.aws.amazon.com/organizations/v2/home/policies/declarative-policy-ec2)** page, choose the name of the policy that you want to detach from a root, OU, or account.
 
-1. On the **Targets** tab, choose the radio button next to the root, OU, or account that you want to detach the policy from. You might have to expand OUs (choose the ![Gray cloud icon representing cloud computing or storage services.](http://docs.aws.amazon.com/organizations/latest/userguide/images/console-expand.png)) to find the OU or account that you want.
+1. On the **Targets** tab, choose the radio button next to the root, OU, or account that you want to detach the policy from. You might have to expand OUs (choose the ![Gray cloud icon representing cloud computing or storage services.](https://docs.aws.amazon.com/organizations/latest/userguide/images/console-expand.png)) to find the OU or account that you want.
 
 1. Choose **Detach**.
 
@@ -129,7 +129,7 @@ You can detach a backup policy by either navigating to the policy or to the root
 
 1. Sign in to the [AWS Organizations console](https://console.aws.amazon.com/organizations/v2). You must sign in as an IAM user, assume an IAM role, or sign in as the root user ([not recommended](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#lock-away-credentials)) in the organization’s management account.
 
-1. On the **[AWS accounts](https://console.aws.amazon.com/organizations/v2/home/accounts)** page navigate to the Root, OU, or account that you want to detach a policy from. You might have to expand OUs (choose the ![Gray cloud icon representing cloud computing or storage services.](http://docs.aws.amazon.com/organizations/latest/userguide/images/console-expand.png)) to find the OU or account that you want. Choose the name of the Root, OU, or account.
+1. On the **[AWS accounts](https://console.aws.amazon.com/organizations/v2/home/accounts)** page navigate to the Root, OU, or account that you want to detach a policy from. You might have to expand OUs (choose the ![Gray cloud icon representing cloud computing or storage services.](https://docs.aws.amazon.com/organizations/latest/userguide/images/console-expand.png)) to find the OU or account that you want. Choose the name of the Root, OU, or account.
 
 1. On the **Policies** tab, choose the radio button next to the backup policy that you want to detach, and then choose **Detach**.
 
@@ -143,7 +143,7 @@ You can detach a backup policy by either navigating to the policy or to the root
 
 1. On the **[Backup policies](https://console.aws.amazon.com/organizations/v2/home/policies/backup-policy)** page, choose the name of the policy that you want to detach from a root, OU, or account.
 
-1. On the **Targets** tab, choose the radio button next to the root, OU, or account that you want to detach the policy from. You might have to expand OUs (choose the ![Gray cloud icon representing cloud computing or storage services.](http://docs.aws.amazon.com/organizations/latest/userguide/images/console-expand.png)) to find the OU or account that you want.
+1. On the **Targets** tab, choose the radio button next to the root, OU, or account that you want to detach the policy from. You might have to expand OUs (choose the ![Gray cloud icon representing cloud computing or storage services.](https://docs.aws.amazon.com/organizations/latest/userguide/images/console-expand.png)) to find the OU or account that you want.
 
 1. Choose **Detach**.
 
@@ -160,7 +160,7 @@ You can detach a tag policy by either navigating to the policy or to the root, O
 
 1. Sign in to the [AWS Organizations console](https://console.aws.amazon.com/organizations/v2). You must sign in as an IAM user, assume an IAM role, or sign in as the root user ([not recommended](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#lock-away-credentials)) in the organization’s management account.
 
-1. On the **[AWS accounts](https://console.aws.amazon.com/organizations/v2/home/accounts)** page navigate to the Root, OU, or account that you want to detach a policy from. You might have to expand OUs (choose the ![Gray cloud icon representing cloud computing or storage services.](http://docs.aws.amazon.com/organizations/latest/userguide/images/console-expand.png)) to find the OU or account that you want. Choose the name of the Root, OU, or account.
+1. On the **[AWS accounts](https://console.aws.amazon.com/organizations/v2/home/accounts)** page navigate to the Root, OU, or account that you want to detach a policy from. You might have to expand OUs (choose the ![Gray cloud icon representing cloud computing or storage services.](https://docs.aws.amazon.com/organizations/latest/userguide/images/console-expand.png)) to find the OU or account that you want. Choose the name of the Root, OU, or account.
 
 1. On the **Policies** tab, choose the radio button next to the tag policy that you want to detach, and then choose **Detach**.
 
@@ -174,7 +174,7 @@ You can detach a tag policy by either navigating to the policy or to the root, O
 
 1. On the **[Tag policies](https://console.aws.amazon.com/organizations/v2/home/policies/tag-policy)** page, choose the name of the policy that you want to detach from a root, OU, or account.
 
-1. On the **Targets** tab, choose the radio button next to the root, OU, or account that you want to detach the policy from. You might have to expand OUs (choose the ![Gray cloud icon representing cloud computing or storage services.](http://docs.aws.amazon.com/organizations/latest/userguide/images/console-expand.png)) to find the OU or account that you want.
+1. On the **Targets** tab, choose the radio button next to the root, OU, or account that you want to detach the policy from. You might have to expand OUs (choose the ![Gray cloud icon representing cloud computing or storage services.](https://docs.aws.amazon.com/organizations/latest/userguide/images/console-expand.png)) to find the OU or account that you want.
 
 1. Choose **Detach**.
 
@@ -191,7 +191,7 @@ You can detach a chat applications policy by either navigating to the policy or 
 
 1. Sign in to the [AWS Organizations console](https://console.aws.amazon.com/organizations/v2). You must sign in as an IAM user, assume an IAM role, or sign in as the root user ([not recommended](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#lock-away-credentials)) in the organization’s management account.
 
-1. On the **[AWS accounts](https://console.aws.amazon.com/organizations/v2/home/accounts)** page navigate to the Root, OU, or account that you want to detach a policy from. You might have to expand OUs (choose the ![Gray cloud icon representing cloud computing or storage services.](http://docs.aws.amazon.com/organizations/latest/userguide/images/console-expand.png)) to find the OU or account that you want. Choose the name of the Root, OU, or account.
+1. On the **[AWS accounts](https://console.aws.amazon.com/organizations/v2/home/accounts)** page navigate to the Root, OU, or account that you want to detach a policy from. You might have to expand OUs (choose the ![Gray cloud icon representing cloud computing or storage services.](https://docs.aws.amazon.com/organizations/latest/userguide/images/console-expand.png)) to find the OU or account that you want. Choose the name of the Root, OU, or account.
 
 1. On the **Policies** tab, choose the radio button next to the chat applications policy that you want to detach, and then choose **Detach**.
 
@@ -205,7 +205,7 @@ You can detach a chat applications policy by either navigating to the policy or 
 
 1. On the **[Chatbot policies](https://console.aws.amazon.com/organizations/v2/home/policies/chatbot-policy)** page, choose the name of the policy that you want to detach from a root, OU, or account.
 
-1. On the **Targets** tab, choose the radio button next to the root, OU, or account that you want to detach the policy from. You might have to expand OUs (choose the ![Gray cloud icon representing cloud computing or storage services.](http://docs.aws.amazon.com/organizations/latest/userguide/images/console-expand.png)) to find the OU or account that you want.
+1. On the **Targets** tab, choose the radio button next to the root, OU, or account that you want to detach the policy from. You might have to expand OUs (choose the ![Gray cloud icon representing cloud computing or storage services.](https://docs.aws.amazon.com/organizations/latest/userguide/images/console-expand.png)) to find the OU or account that you want.
 
 1. Choose **Detach**.
 
@@ -222,7 +222,7 @@ You can detach an AI services opt-out policy by either navigating to the policy 
 
 1. Sign in to the [AWS Organizations console](https://console.aws.amazon.com/organizations/v2). You must sign in as an IAM user, assume an IAM role, or sign in as the root user ([not recommended](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#lock-away-credentials)) in the organization’s management account.
 
-1. On the **[AWS accounts](https://console.aws.amazon.com/organizations/v2/home/accounts)** page navigate to the Root, OU, or account that you want to detach a policy from. You might have to expand OUs (choose the ![Gray cloud icon representing cloud computing or storage services.](http://docs.aws.amazon.com/organizations/latest/userguide/images/console-expand.png)) to find the OU or account that you want. Choose the name of the Root, OU, or account.
+1. On the **[AWS accounts](https://console.aws.amazon.com/organizations/v2/home/accounts)** page navigate to the Root, OU, or account that you want to detach a policy from. You might have to expand OUs (choose the ![Gray cloud icon representing cloud computing or storage services.](https://docs.aws.amazon.com/organizations/latest/userguide/images/console-expand.png)) to find the OU or account that you want. Choose the name of the Root, OU, or account.
 
 1. On the **Policies** tab, choose the radio button next to the AI services opt-out policy that you want to detach, and then choose **Detach**.
 
@@ -236,7 +236,7 @@ You can detach an AI services opt-out policy by either navigating to the policy 
 
 1. On the **[AI services opt-out policies](https://console.aws.amazon.com/organizations/v2/home/policies/aiservices-opt-out-policy)** page, choose the name of the policy that you want to detach from a root, OU, or account.
 
-1. On the **Targets** tab, choose the radio button next to the root, OU, or account that you want to detach the policy from. You might have to expand OUs (choose the ![Gray cloud icon representing cloud computing or storage services.](http://docs.aws.amazon.com/organizations/latest/userguide/images/console-expand.png)) to find the OU or account that you want.
+1. On the **Targets** tab, choose the radio button next to the root, OU, or account that you want to detach the policy from. You might have to expand OUs (choose the ![Gray cloud icon representing cloud computing or storage services.](https://docs.aws.amazon.com/organizations/latest/userguide/images/console-expand.png)) to find the OU or account that you want.
 
 1. Choose **Detach**.
 
@@ -253,7 +253,7 @@ You can detach a Security Hub policy by either navigating to the policy or to th
 
 1. Sign in to the [AWS Organizations console](https://console.aws.amazon.com/organizations/v2). You must sign in as an IAM user, assume an IAM role, or sign in as the root user ([not recommended](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#lock-away-credentials)) in the organization’s management account.
 
-1. On the **[AWS accounts](https://console.aws.amazon.com/organizations/v2/home/accounts)** page navigate to the Root, OU, or account that you want to detach a policy from. You might have to expand OUs (choose the ![Gray cloud icon representing cloud computing or storage services.](http://docs.aws.amazon.com/organizations/latest/userguide/images/console-expand.png)) to find the OU or account that you want. Choose the name of the Root, OU, or account.
+1. On the **[AWS accounts](https://console.aws.amazon.com/organizations/v2/home/accounts)** page navigate to the Root, OU, or account that you want to detach a policy from. You might have to expand OUs (choose the ![Gray cloud icon representing cloud computing or storage services.](https://docs.aws.amazon.com/organizations/latest/userguide/images/console-expand.png)) to find the OU or account that you want. Choose the name of the Root, OU, or account.
 
 1. On the **Policies** tab, choose the radio button next to the Security Hub policy that you want to detach, and then choose **Detach**.
 
@@ -267,7 +267,7 @@ You can detach a Security Hub policy by either navigating to the policy or to th
 
 1. On the **[Security Hub policies](https://console.aws.amazon.com/organizations/v2/home/policies/securityhub-policy)** page, choose the name of the policy that you want to detach from a root, OU, or account.
 
-1. On the **Targets** tab, choose the radio button next to the root, OU, or account that you want to detach the policy from. You might have to expand OUs (choose the ![Gray cloud icon representing cloud computing or storage services.](http://docs.aws.amazon.com/organizations/latest/userguide/images/console-expand.png)) to find the OU or account that you want.
+1. On the **Targets** tab, choose the radio button next to the root, OU, or account that you want to detach the policy from. You might have to expand OUs (choose the ![Gray cloud icon representing cloud computing or storage services.](https://docs.aws.amazon.com/organizations/latest/userguide/images/console-expand.png)) to find the OU or account that you want.
 
 1. Choose **Detach**.
 

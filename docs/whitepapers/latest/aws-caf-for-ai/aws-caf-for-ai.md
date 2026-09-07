@@ -31,7 +31,7 @@ Together, these sub-disciplines and techniques represent the layered and interre
 **Note**
 Moving forward, the term *Artificial Intelligence (AI)* is used as an umbrella term encompassing all its various sub-disciplines. When referring to specialized areas within AI, they are specified by name, such as *generative AI* or *Machine Learning*, to distinguish them from the broader field of AI.
 
-![Diagram showing the taxonomy of artificial intelligence, machine learning, deep learning, and generative AI](http://docs.aws.amazon.com/whitepapers/latest/aws-caf-for-ai/images/taxonomy-of-ai-ml-deeplearning-and-genai.png)
+![Diagram showing the taxonomy of artificial intelligence, machine learning, deep learning, and generative AI](https://docs.aws.amazon.com/whitepapers/latest/aws-caf-for-ai/images/taxonomy-of-ai-ml-deeplearning-and-genai.png)
 
 ## Introduction to AWS CAF-AI
 <a name="introduction-to-caf-ai"></a>

@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-sto
 
  The following figure shows a conceptual view of how Linked Accounts are used to implement the silo model. Here you have two tenants with separate accounts, each of which is associated with a payer account. With this flavor of isolation, you have the freedom to leverage any of the available AWS storage technologies to house your tenant’s data.
 
-![A document depicting the silo model with linked accounts.](http://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-storage-strategies/images/silo-model.png)
+![A document depicting the silo model with linked accounts.](https://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-storage-strategies/images/silo-model.png)
 
  At first blush, this can seem like a very appealing strategy for those SaaS providers that require a silo environment. It certainly can simplify some aspects of management and migration of individual tenants. Assembling a view of your tenant costs would also be more straightforward because you can summarize the AWS expenses at the Linked Account level.
 

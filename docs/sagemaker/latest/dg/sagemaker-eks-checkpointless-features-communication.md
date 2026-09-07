@@ -39,7 +39,7 @@ The implementation of these optimizations involves modifying NCCL, Gloo, and PyT
 
 The following graph shows the architecture of the distributed training libraries and the changes made in checkpointless training.
 
-![The following graph shows the architecture of the distributed training libraries and the changes made in checkpointless training.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/hyperpod/hyperpod-checkpointless-training-libraries.png)
+![The following graph shows the architecture of the distributed training libraries and the changes made in checkpointless training.](https://docs.aws.amazon.com/sagemaker/latest/dg/images/hyperpod/hyperpod-checkpointless-training-libraries.png)
 
 ### NCCL and Gloo
 <a name="sagemaker-eks-checkpointless-features-communication-nccl-gloo"></a>

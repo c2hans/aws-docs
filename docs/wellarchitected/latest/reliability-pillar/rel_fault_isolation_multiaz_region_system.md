@@ -42,7 +42,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reliability-pilla
 
  If you are using self-managed storage, such as [Amazon Elastic Block Store (EBS)](https://aws.amazon.com/ebs/) volumes or Amazon EC2 instance storage, you must manage multi-AZ replication yourself.
 
-![Diagram showing multi-tier architecture deployed across three Availability Zones. Note that Amazon S3 and Amazon DynamoDB are always Multi-AZ automatically. The ELB also is deployed to all three zones.](http://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/images/multi-tier-architecture.png)
+![Diagram showing multi-tier architecture deployed across three Availability Zones. Note that Amazon S3 and Amazon DynamoDB are always Multi-AZ automatically. The ELB also is deployed to all three zones.](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/images/multi-tier-architecture.png)
 
  **Using multiple AWS Regions**
 

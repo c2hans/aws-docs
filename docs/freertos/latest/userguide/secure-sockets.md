@@ -28,7 +28,7 @@ The FreeRTOS Secure Sockets library depends on a TCP/IP stack and on a TLS imple
 
 The dependency diagram below shows the reference implementation included with the FreeRTOS Secure Sockets library. This reference implementation supports TLS and TCP/IP over Ethernet and Wi-Fi with FreeRTOS\+TCP and mbedTLS as dependencies. For more information about the FreeRTOS TLS layer, see [Transport Layer Security](security-tls.md).
 
-![Secure Sockets Library architecture with FreeRTOS+TCP, TLS Layer, and TLS components.](http://docs.aws.amazon.com/freertos/latest/userguide/images/sockets-dependencies.png)
+![Secure Sockets Library architecture with FreeRTOS+TCP, TLS Layer, and TLS components.](https://docs.aws.amazon.com/freertos/latest/userguide/images/sockets-dependencies.png)
 
 ## Features
 <a name="freertos-secure-sockets-features"></a>

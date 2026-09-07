@@ -12,7 +12,7 @@ As a Partner, you can accept or decline Partner requests, review and respond to 
 
  You will receive a daily digest letting you know if you have received any data requests within the last 24 hour period. Select the link in the email to view any new data requests.
 
-![Reviewing data requests](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/reviewing_data_requests_example.png)
+![Reviewing data requests](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/reviewing_data_requests_example.png)
 
 1. On the **Sustainability** page, under **Data Requests**, you will see all the data requests from your partners.
 
@@ -71,13 +71,13 @@ If you choose to decline the invite, you must provide a reason on the **Decline 
 
 After you receive an emission data form request, you will view the request details and check the collaboration history.
 
-![Partner response to emission data forms](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/emission_data_form4.png)
+![Partner response to emission data forms](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/emission_data_form4.png)
 
 1. Under **Add country**, enter the countries where you have facilities and products within those facilities.
-![Partner response to emission data forms - Add countries](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/emission_data_form5.png)
+![Partner response to emission data forms - Add countries](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/emission_data_form5.png)
 
 1. Choose **Add emission information** to add emission information for each country.
-![Partner response to emission data forms - Add emission information](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/emission_data_form6.png)
+![Partner response to emission data forms - Add emission information](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/emission_data_form6.png)
 
 1. Enter the emission information. All fields are mandatory.
 
@@ -86,7 +86,7 @@ After you receive an emission data form request, you will view the request detai
 
 After you receive a transportation emission data form request, you will view the request details and check the collaboration history.
 
-![Partner response to transportation (GLEC) emission data forms](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/GLEC_partner_response.png)
+![Partner response to transportation (GLEC) emission data forms](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/GLEC_partner_response.png)
 
 Under **Transport Emissions by Parcel**, download the .csv files, populate the .csv with the transport emissions, and upload the file. Choose **Submit**.
 

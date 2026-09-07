@@ -47,7 +47,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 
  The Amazon WorkSpaces client has a built-in network status check. This utility shows users whether their network can support a connection by way of a status indicator on the bottom right of the application. The following figure shows a more detailed view of the network status can be accessed by choosing **Network** on the top-right side of the client.
 
-![Image showing WorkSpaces client browser network check window](http://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/workspaces-client-network-check.png)
+![Image showing WorkSpaces client browser network check window](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/workspaces-client-network-check.png)
 
 A user initiates a connection from their client to the Amazon WorkSpaces service by supplying their login information for the directory used by the Directory Service construct, typically their corporate directory. The login information is sent via HTTPS to the authentication gateways of the Amazon WorkSpaces service in the Region where the WorkSpace is located. The authentication gateway of the Amazon WorkSpaces service then forwards the traffic to the specific AWS Directory Service construct associated with your WorkSpace.
 
@@ -89,7 +89,7 @@ If you are using the default DHCP options set, and you require other hosts in yo
 
 Similarly, a [Route 53 Resolver Inbound Endpoint](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-forwarding-inbound-queries.html) can be used to allow DNS resolution of DNS records of your WorkSpaces Active Directory domain from your on-premises network.
 
-![Image showing WorkSpaces DNS resolution](http://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/workspaces-route-53-dns-resolution.png)
+![Image showing WorkSpaces DNS resolution](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/workspaces-route-53-dns-resolution.png)
 
 + Your Amazon WorkSpaces will use the AWS Directory Service for Microsoft Active Directory (AWS Managed Microsoft AD) DNS service for DNS resolution. The AWS Managed Microsoft AD DNS service resolves the `example.aws` domain, and forwards all other DNS queries to the default Route 53 DNS Resolver at the VPC CIDR base IP address \+2 to enable DNS resolution
 
@@ -125,7 +125,7 @@ Similarly, a [Route 53 Resolver Inbound Endpoint](https://docs.aws.amazon.com/R
 
  Given that all WorkSpaces are granted some form of internet access, and given that they are hosted in a private subnet, you also must create public subnets that can access the internet through an internet gateway. You need a NAT gateway for the full-time employees, allowing them to access the internet, and a Proxy-NAT server for the consultants and contractors, to limit their access to specific internal websites. To plan for failure, design for high availability, and limit cross-AZ traffic charges, you should have two NAT gateways and NAT or proxy servers in two different subnets in a multi-AZ deployment. The two AZs that you select as public subnets will match the two AZs that you use for your WorkSpaces subnets, in regions that have more than two zones. You can route all traffic from each WorkSpaces AZ to the corresponding public subnet to limit cross-AZ traffic charges and provide easier management. The following figure shows the VPC configuration.
 
-![Sample architecture showing an example VPC configuration with NAT gateway](http://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/high-level-vpc-design.png)
+![Sample architecture showing an example VPC configuration with NAT gateway](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/high-level-vpc-design.png)
 
  The following information describes how to configure the two different WorkSpaces types:
 
@@ -152,7 +152,7 @@ Similarly, a [Route 53 Resolver Inbound Endpoint](https://docs.aws.amazon.com/R
 **Note**
  The security group applies only to the ENI that is in the VPC (`eth1` on the WorkSpace), and access to the WorkSpace from the WorkSpaces client is not restricted as a result of a security group. The following figure shows the final WorkSpaces VPC design.
 
-![Sample architecture showing an example of a final WorkSpaces VPC design.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/workspaces-design-user-personas.png)
+![Sample architecture showing an example of a final WorkSpaces VPC design.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/workspaces-design-user-personas.png)
 
 ## AWS Directory Service
 <a name="aws-directory-service"></a>

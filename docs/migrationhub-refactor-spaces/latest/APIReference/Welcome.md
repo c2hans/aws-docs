@@ -9,4 +9,4 @@ This API reference provides descriptions, syntax, and other details about each o
 
 To share Refactor Spaces environments with other AWS accounts or with AWS Organizations and their OUs, use AWS Resource Access Manager's `CreateResourceShare` API. See [CreateResourceShare](https://docs.aws.amazon.com/ram/latest/APIReference/API_CreateResourceShare.html) in the * AWS RAM API Reference*.
 
-This document was last published on September 4, 2026.
+This document was last published on September 7, 2026.

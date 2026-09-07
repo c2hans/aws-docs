@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-bu
 
  This section describes, at a high level, how corporate on-premises customers can migrate Oracle E-Business Suite to the AWS Cloud.
 
-![Diagram showing a representative Oracle E-Business Suite migration approach](http://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-business-suite/images/migration-approach.png)
+![Diagram showing a representative Oracle E-Business Suite migration approach](https://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-business-suite/images/migration-approach.png)
 
 **Sequence:**
 

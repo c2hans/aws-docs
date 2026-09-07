@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f
 
 The following diagram shows the automation scripts included in Cloud Migration Factory. These scripts cover most of the automation tasks for rehost migration using AWS Transform MGN (AWS MGN). Automation scripts can be connected to the source machines or to AWS APIs, as shown in the following diagram.
 
-![The Cloud Migration Factory automation and orchestration scripts](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-factory-cloudendure/images/guide-img/3ff8a3b6-fa4d-412f-ba5f-3d8aad3942a7/images/e800d01c-0a47-4086-a57c-be15068bedac.png)
+![The Cloud Migration Factory automation and orchestration scripts](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-factory-cloudendure/images/guide-img/3ff8a3b6-fa4d-412f-ba5f-3d8aad3942a7/images/e800d01c-0a47-4086-a57c-be15068bedac.png)
 
 Cloud Migration Factory includes scripts for the following phases and tasks:
 + Build phase:

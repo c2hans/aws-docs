@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multit
 
 This example uses OPA and Rego to demonstrate how access control can be implemented on an API for a multi-tenant application with custom roles defined by tenant users. It also demonstrates how access can be restricted based on a tenant. This model shows how OPA can make *granular permission decisions* based on information that is provided in a high-level role.
 
-![User-defined RBAC with OPA and Rego](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/f65ed0f1-d92f-4e28-ba54-ab6d636e25bd.png)
+![User-defined RBAC with OPA and Rego](https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/f65ed0f1-d92f-4e28-ba54-ab6d636e25bd.png)
 
 The roles for the tenants are stored in external data (RBAC data) that is used to make access decisions for OPA:
 

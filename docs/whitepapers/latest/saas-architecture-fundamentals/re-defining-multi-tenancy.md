@@ -21,7 +21,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
 
  What’s new is the microservices that we’ve included. The diagram includes three sample microservices: *product*, *order*, and *catalog*. If you look closely at the tenancy model of each of these services, you’ll notice they all employ slightly different patterns of tenancy.
 
-![A diagram depciting SaaS and multi-tenancy .](http://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fundamentals/images/saas-multi-tenancy.png)
+![A diagram depciting SaaS and multi-tenancy .](https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fundamentals/images/saas-multi-tenancy.png)
 
  The product service shares all of its resources (compute and storage) with all tenants. This aligns with the classic definition of multi-tenancy. However, if you look at the order service, you’ll see that it has shared compute, but separate storage for each tenant.
 
@@ -38,7 +38,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
 
  To better highlight this notion of tenancy, let’s look at a SaaS model that has tenants that share zero resources. The following diagram provides a sample SaaS environment that is employed by some SaaS providers.
 
-![A diagram depicting stack per tenant.](http://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fundamentals/images/stack-per-tenant.png)
+![A diagram depicting stack per tenant.](https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fundamentals/images/stack-per-tenant.png)
 
  In this diagram, you’ll see that we still have our common environment surrounding these tenants. However, each tenant is deployed with a dedicated collection of resources. Nothing is shared by the tenants in this model.
 

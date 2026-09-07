@@ -12,14 +12,14 @@ After the instance is created and an identity source is connected, follow these 
 1. Open the AWS Supply Chain console dashboard.
 
 1. Go to **Select application owner** and select a user to be an AWS Supply Chain application owner. Search results only show users matching the search criteria.
-![Supply Chain instance page showing instance details, user access management, and application owner sections.](http://docs.aws.amazon.com/connect-decisions/legacy/adminguide/images/instance-details.png)
+![Supply Chain instance page showing instance details, user access management, and application owner sections.](https://docs.aws.amazon.com/connect-decisions/legacy/adminguide/images/instance-details.png)
 
 1. (Optional) Choose **Go to IAM Identity Center** to add more users. For more information on adding users, see [Manage your identity source](https://docs.aws.amazon.com/singlesignon/latest/userguide/manage-your-identity-source.html) in *AWS IAM Identity Center User Guide* and for more information on user permission roles, see [User permission roles](https://docs.aws.amazon.com/aws-supply-chain/latest/adminguide/adding-users-groups.html).
 **Note**
 You can only add one user at a time from the AWS Supply Chain Console. You cannot add a group as an application owner in AWS Supply Chain.
 
 1. Choose **Send Invite**. An email is sent to the web application administrator. Once the web application administrator receives the invite email, they will be able to select the application URL and log into the AWS Supply Chain.
-![Email invitation showing Supply Chain application URL and username for new user access.](http://docs.aws.amazon.com/connect-decisions/legacy/adminguide/images/confirmation-email-owner.png)
+![Email invitation showing Supply Chain application URL and username for new user access.](https://docs.aws.amazon.com/connect-decisions/legacy/adminguide/images/confirmation-email-owner.png)
 
 On the AWS Supply Chain console dashboard, you will see the user listed under **Application owner**.
 

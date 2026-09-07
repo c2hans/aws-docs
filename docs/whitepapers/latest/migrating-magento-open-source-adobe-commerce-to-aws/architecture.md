@@ -14,7 +14,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/migrating-magento-ope
 ## Architecture flow of AWS components
 <a name="architecture-flow-of-aws-components"></a>
 
-![Reference architecture diagram showing components deployed by AWS Quick Start for Magento Open Source](http://docs.aws.amazon.com/whitepapers/latest/migrating-magento-open-source-adobe-commerce-to-aws/images/quick-start-magento-reference-architecture.png)
+![Reference architecture diagram showing components deployed by AWS Quick Start for Magento Open Source](https://docs.aws.amazon.com/whitepapers/latest/migrating-magento-open-source-adobe-commerce-to-aws/images/quick-start-magento-reference-architecture.png)
 
 1.  Amazon CloudFront is deployed as a content delivery network (CDN). CloudFront speeds up distribution of static and dynamic web content.
 

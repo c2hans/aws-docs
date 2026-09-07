@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_
 
 The design construct of the infrastructure is stored in the form of code using declarative language. This enables the CSP to have a repeatable reproduction of the infrastructure with the same expected behavior as needed. The code is maintained in the code repository, and a pipeline is set up to orchestrate updates to the deployed stacks (for example, AWS CDK and CloudFormation). AWS can help build Infrastructure as Code (IaC) for agile onboarding of Independent Software Vendor (ISV) functions.
 
-![A diagram depicting code pipeline flow.](http://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_on_aws/images/cicd_5g6.png)
+![A diagram depicting code pipeline flow.](https://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_on_aws/images/cicd_5g6.png)
 
 *Code pipeline flow*
 
@@ -23,7 +23,7 @@ The CodePipeline source stage looks for changes in configuration files. The vali
 
 CI/CD pipeline design should account for critical deployment steps such as initial deployment, testing, and promotion to production after test results are aligned with expectations and verified against the baseline. Every stage of the pipeline process provides data artifacts, which enable comparison and data-driven decisions.
 
-![A diagram depicting application CI/CD pipeline steps: Change, Deploy, Test, Promote, Monitor.](http://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_on_aws/images/cicd_5g7.png)
+![A diagram depicting application CI/CD pipeline steps: Change, Deploy, Test, Promote, Monitor.](https://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_on_aws/images/cicd_5g7.png)
 
 *Application CI/CD pipeline steps*
 

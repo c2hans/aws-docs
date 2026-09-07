@@ -34,7 +34,7 @@ AWS Control Tower provides a framework that combines and integrates the capabili
 
 The following diagram illustrates the migration process and reference architecture. This pattern migrates the AWS account from the source organization to a target organization that is governed by AWS Control Tower.
 
-![AWS Control Tower enrollment process for an AWS account that's migrated to another organization and moved to a registered OU.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/1fc2c2f0-fa5d-4068-a2b2-9e57cea2aff5/images/0654d242-0faa-4810-9e53-40ef89305b5b.png)
+![AWS Control Tower enrollment process for an AWS account that's migrated to another organization and moved to a registered OU.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/1fc2c2f0-fa5d-4068-a2b2-9e57cea2aff5/images/0654d242-0faa-4810-9e53-40ef89305b5b.png)
 
 The enrollment process consists of these steps:
 

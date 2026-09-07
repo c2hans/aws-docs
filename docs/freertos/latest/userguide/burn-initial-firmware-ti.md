@@ -26,11 +26,11 @@ These steps are written with the assumption that you have already built the `aws
 
 1. Under **Advanced**, **Files**, choose **User Files**.
 
-1. In the **File** selector pane, choose the **Add File** icon ![Document icon representing a file or page.](http://docs.aws.amazon.com/freertos/latest/userguide/images/add-file.png).
+1. In the **File** selector pane, choose the **Add File** icon ![Document icon representing a file or page.](https://docs.aws.amazon.com/freertos/latest/userguide/images/add-file.png).
 
 1. Browse to the `/Applications/Ti/simplelink_cc32xx_sdk_{{version}}/tools/cc32xx_tools/certificate-playground` directory, select `dummy-root-ca-cert`, choose **Open**, and then choose **Write**.
 
-1. In the **File** selector pane, choose the **Add File** icon ![Document icon representing a file or page.](http://docs.aws.amazon.com/freertos/latest/userguide/images/add-file.png).
+1. In the **File** selector pane, choose the **Add File** icon ![Document icon representing a file or page.](https://docs.aws.amazon.com/freertos/latest/userguide/images/add-file.png).
 
 1. Browse to the working directory where you created the code-signing certificate and private key, choose `tisigner.crt.der`, choose **Open**, and then choose **Write**.
 
@@ -60,9 +60,9 @@ These steps are written with the assumption that you have already built the `aws
 
 1. Under **Signature Source File**, choose **Browse**, choose **simplelink\_cc32xx\_sdk\_{{version}}/tools/cc32xx\_tools/certificate-playground/certcatalogPlayGround20160911.lst.signed\_3220.bin**, and then choose **Open**.
 
-1. Choose the ![Floppy disk icon representing a save or storage function.](http://docs.aws.amazon.com/freertos/latest/userguide/images/save.png) button to save your project.
+1. Choose the ![Floppy disk icon representing a save or storage function.](https://docs.aws.amazon.com/freertos/latest/userguide/images/save.png) button to save your project.
 
-1. Choose the ![Feather icon representing a lightweight or simplified feature or concept.](http://docs.aws.amazon.com/freertos/latest/userguide/images/flame.png) button.
+1. Choose the ![Feather icon representing a lightweight or simplified feature or concept.](https://docs.aws.amazon.com/freertos/latest/userguide/images/flame.png) button.
 
 1. Choose **Program Image (Create and Program)**.
 

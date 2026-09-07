@@ -18,7 +18,7 @@ Confirm your webcam and microphone are properly connected to your WorkSpaces Thi
 1. Select **Peripheral Devices**.
 
 1. Verify that your webcam and microphone are listed.
-![Peripheral devices settings showing connected mouse, sound devices, and camera listed.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/confirm_webcam_microphone.png)
+![Peripheral devices settings showing connected mouse, sound devices, and camera listed.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/confirm_webcam_microphone.png)
 
 1. Verify that your microphone and webcam are enabled on your VDI. Depending on what VDI you are using, do one of the following:
    + For Windows, use [Enabling permissions in Windows](#enabling-mic-webcam-windows).
@@ -34,13 +34,13 @@ Confirm your webcam and microphone are properly connected to your WorkSpaces Thi
 1. Select the **Settings** icon.
 
 1. Select the **Privacy** icon from the **Settings** menu.
-![Windows Settings menu with Privacy option highlighted in red box.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/windows-settings-privacy.jpg)
+![Windows Settings menu with Privacy option highlighted in red box.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/windows-settings-privacy.jpg)
 
 1. Do one of the following:
    + Select **Camera** from the list on the left, and change **Allow apps to access your camera** to **On**.
-![Camera settings page with Camera option selected in left navigation menu.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/windows-settings-camera.jpg)
+![Camera settings page with Camera option selected in left navigation menu.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/windows-settings-camera.jpg)
    + Select **Microphone** from the list on the left, and change **Allow apps to access your camera** to **On**.
-![Microphone settings page with Microphone selected in left navigation and toggle options.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/windows-settings-microphone.jpg)
+![Microphone settings page with Microphone selected in left navigation and toggle options.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/windows-settings-microphone.jpg)
 
 After you have enabled permissions in Windows, you will need to enable them from your web browser. See [Enabling permissions in the web browser](#enabling-mic-webcam-browser).
 
@@ -55,17 +55,17 @@ WorkSpaces Thin Client is compatible with the webcams and headsets listed in the
 
 Confirm your webcam and microphone are properly connected to your WorkSpaces Thin Client.
 
-![Windows desktop showing default blue background with desktop icons and taskbar.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/dcv-toolbar.png)
+![Windows desktop showing default blue background with desktop icons and taskbar.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/dcv-toolbar.png)
 
 The icons for **Microphone** and **Webcam** will indicate their status.
 
 | Icon | Status |
 | --- | --- |
-| ![Circular icon with an X symbol inside, representing cancellation or closure.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/cam-off.png)  | Camera is not on. |
-| ![Blue circular icon with a white webcam or video camera symbol inside.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/cam-enabled.png)  | Camera is on but not streaming. |
-| ![Webcam icon with circular target symbol in the center, representing video capture.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/cam-streaming.png)  | Camera is on and streaming. |
-|  ![Microphone icon with a zero and multiplication symbol, indicating muted audio.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/mic-off.png)  | Microphone is not on. |
-| ![Microphone icon enclosed in a blue circle, representing audio input or voice recording.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/mic-enabled.png)  | Microphone is on. |
+| ![Circular icon with an X symbol inside, representing cancellation or closure.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/cam-off.png)  | Camera is not on. |
+| ![Blue circular icon with a white webcam or video camera symbol inside.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/cam-enabled.png)  | Camera is on but not streaming. |
+| ![Webcam icon with circular target symbol in the center, representing video capture.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/cam-streaming.png)  | Camera is on and streaming. |
+|  ![Microphone icon with a zero and multiplication symbol, indicating muted audio.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/mic-off.png)  | Microphone is not on. |
+| ![Microphone icon enclosed in a blue circle, representing audio input or voice recording.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/mic-enabled.png)  | Microphone is on. |
 
 After you have confirmed that your peripheral is enabled in Amazon WorkSpaces, you will need to enable them from your web browser. See [Enabling permissions in the web browser](#enabling-mic-webcam-browser)
 
@@ -88,12 +88,12 @@ After you have confirmed that your peripheral is enabled in either WorkSpaces Ap
 <a name="enabling-mic-webcam-browser"></a>
 
 1. A pop-up window will appear asking for Microphone and Webcam permissions. If you do not see the pop-up, you can select the icon next to the address bar.
-![Permission dialog requesting access to camera and microphone with Allow and Block buttons.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/enable_browser.png)
+![Permission dialog requesting access to camera and microphone with Allow and Block buttons.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/enable_browser.png)
 
 1. Select Allow in the pop up window.
 
 1. Select the **Settings** icon on the browser search bar and make sure **Microphone** and **Webcam** are enabled.
-![Browser permissions panel showing Camera, Microphone, and Notifications enabled for app.chime.aws.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/confirm_broswer.png)
+![Browser permissions panel showing Camera, Microphone, and Notifications enabled for app.chime.aws.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/confirm_broswer.png)
 
 **Note**
 You may need to repeat the above step every time you want to use your webcam and microphone in a website.

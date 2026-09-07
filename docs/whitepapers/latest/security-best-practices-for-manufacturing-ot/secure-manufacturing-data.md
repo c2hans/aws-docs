@@ -31,6 +31,6 @@ Ensuring business continuity requires a more careful consideration on how quickl
 
 For manufacturing, some low latency workloads may not be able run in cloud even for a shorter duration during disruption. As such disaster recovery plans should include consideration for running on-premises workload on a separate on-premises infrastructure (such as [AWS Snowball Edge Edge](https://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html) or [AWS Outposts](https://aws.amazon.com/outposts/)).
 
-![A diagram showing secure manufacturing data.](http://docs.aws.amazon.com/whitepapers/latest/security-best-practices-for-manufacturing-ot/images/secure-manufacturing-data.png)
+![A diagram showing secure manufacturing data.](https://docs.aws.amazon.com/whitepapers/latest/security-best-practices-for-manufacturing-ot/images/secure-manufacturing-data.png)
 
 * Secure manufacturing data *

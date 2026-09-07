@@ -10,7 +10,7 @@ The following decision tree diagram presents the options as different migration 
 + A short outage window (less than 15 minutes, with time unrelated to database size) compared with a long outage window (more than 15 minutes, with time related to the database size)
 + [Data Partitioning Feature (DPF)](https://www.ibm.com/docs/en/db2/11.5?topic=environment-setting-up-partitioned-database) has been used or not
 
-![Options shown in the diagram are described in the following tables.](http://docs.aws.amazon.com/prescriptive-guidance/latest/rehost-db2-database-on-aws/images/guide-img/4110482b-c82b-44be-8423-7af4c399c9a0/images/9e25b02a-2526-431d-be44-bece1e4adcfd.png)
+![Options shown in the diagram are described in the following tables.](https://docs.aws.amazon.com/prescriptive-guidance/latest/rehost-db2-database-on-aws/images/guide-img/4110482b-c82b-44be-8423-7af4c399c9a0/images/9e25b02a-2526-431d-be44-bece1e4adcfd.png)
 
 |
 |

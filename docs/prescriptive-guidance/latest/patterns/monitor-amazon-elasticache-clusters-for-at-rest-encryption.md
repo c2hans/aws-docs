@@ -49,7 +49,7 @@ This pattern provides a security control that monitors for API calls and generat
 
 **Workflow architecture**
 
-![Workflow for monitoring ElastiCache clusters.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2917ebc2-3cfe-4530-887d-2c7eb7085453/images/59a36936-e9a8-4f12-a49d-776ff7959053.png)
+![Workflow for monitoring ElastiCache clusters.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2917ebc2-3cfe-4530-887d-2c7eb7085453/images/59a36936-e9a8-4f12-a49d-776ff7959053.png)
 
 1. The user launches an ElastiCache replication group through the AWS Management Console, the AWS Command Line Interface (AWS CLI), or an API call.
 

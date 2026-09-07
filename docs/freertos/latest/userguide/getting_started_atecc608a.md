@@ -55,7 +55,7 @@ Before you can interact with your Microchip ATECC608A device, you must first pro
 
 Your setup should look like the following.
 
-![Breadboard with USB cable labeled "Target USB", connected to an external device labeled "Connected to EXT 1", notches that match default jumper positions.](http://docs.aws.amazon.com/freertos/latest/userguide/images/samd21.png)
+![Breadboard with USB cable labeled "Target USB", connected to an external device labeled "Connected to EXT 1", notches that match default jumper positions.](https://docs.aws.amazon.com/freertos/latest/userguide/images/samd21.png)
 
 ## Set up your development environment
 <a name="gsg-atecc608a-setup-dev-env"></a>

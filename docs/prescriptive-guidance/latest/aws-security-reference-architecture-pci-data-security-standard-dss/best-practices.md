@@ -97,7 +97,7 @@ The recommended account structure maps as follows:
 
 The following diagram provides a visual representation of different OU types as described in the AWS SRA and their corresponding PCI DSS scope consideration.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/aws-security-reference-architecture-pci-data-security-standard-dss/images/guide-img/348f03a4-c34e-48e6-ab09-09381dffd794/images/5a8918da-bc42-44e0-9563-3c3297d4a202.jpeg)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-security-reference-architecture-pci-data-security-standard-dss/images/guide-img/348f03a4-c34e-48e6-ab09-09381dffd794/images/5a8918da-bc42-44e0-9563-3c3297d4a202.jpeg)
 
 ### Segmentation Boundary Enforcement Across the OU Structure
 <a name="segmentation-boundary-enforcement-across-the-ou-structure.7f5d3320-b80a-5656-bffb-bf7df760eac9"></a>
@@ -178,6 +178,6 @@ Together, these services ensure that the PCI DSS inventory is not a point-in-tim
 
 The following diagram depicts the different collections layers for inventory, centralization and output layer architecture.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/aws-security-reference-architecture-pci-data-security-standard-dss/images/guide-img/348f03a4-c34e-48e6-ab09-09381dffd794/images/a74c120c-3909-4595-9a66-5281b54ae0c9.jpeg)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-security-reference-architecture-pci-data-security-standard-dss/images/guide-img/348f03a4-c34e-48e6-ab09-09381dffd794/images/a74c120c-3909-4595-9a66-5281b54ae0c9.jpeg)
 
 The flow moves left to right across three stages. On the left, the four collection layers feed in parallel — AWS Config Aggregator  discovers all infrastructure resources and change history; SSM Inventory  enriches managed nodes with software and OS metadata; Amazon Inspector  contributes vulnerability findings and SBOM exports; and Tag Policies with Config Rules enforce PCI scope classification across the organization. In the center, all streams converge into the Centralized Inventory Store (S3 \+ Athena), which acts as the single queryable source of truth for the complete PCI DSS asset inventory. On the right, the inventory store feeds two outputs —Security Hub for the live compliance dashboard, and the QSA Evidence Package that directly satisfies Requirements 12.5.1,12.5.2 and 6.3.2.

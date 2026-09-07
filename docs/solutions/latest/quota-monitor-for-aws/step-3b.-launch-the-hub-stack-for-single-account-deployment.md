@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/s
 
 1. Sign in to the AWS Management Console and select the button to launch the `quota-monitor-hub-no-ou.template` CloudFormation template.
 
-    [![launch button](http://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Fquota-monitor-for-aws%2Flatest%2Fquota-monitor-hub-no-ou.template&redirectId=ImplementationGuide)
+    [![launch button](https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Fquota-monitor-for-aws%2Flatest%2Fquota-monitor-hub-no-ou.template&redirectId=ImplementationGuide)
 
 1. The template launches in the US East (N. Virginia) Region by default. To launch the solution in a different AWS Region, use the Region selector in the console navigation bar.
 **Note**

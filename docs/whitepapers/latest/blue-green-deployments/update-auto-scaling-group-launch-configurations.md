@@ -11,19 +11,19 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployment
 
  To implement this technique, start with an Auto Scaling group and an Elastic Load Balancing load balancer. The current launch configuration has the blue environment as shown in the following figure.
 
-![AWS architecture diagram showing Auto Scaling group with blue and green launch configs connecting to various AWS services.](http://docs.aws.amazon.com/whitepapers/latest/blue-green-deployments/images/launch-configuration-update.png)
+![AWS architecture diagram showing Auto Scaling group with blue and green launch configs connecting to various AWS services.](https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployments/images/launch-configuration-update.png)
 
 * Launch configuration update pattern *
 
  To deploy the new version of the application in the green environment, update the Auto Scaling group with the new launch configuration, and then scale the Auto Scaling group to twice its original size.
 
-![AWS architecture diagram showing Auto Scaling group with blue and green launch configurations.](http://docs.aws.amazon.com/whitepapers/latest/blue-green-deployments/images/scale-up-green-launch.png)
+![AWS architecture diagram showing Auto Scaling group with blue and green launch configurations.](https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployments/images/scale-up-green-launch.png)
 
 * Scale up green launch configuration *
 
 The next step is to shrink the Auto Scaling group back to the original size. By default, instances with the old launch configuration are removed first. You can also utilize a group’s Standby state to [temporarily remove instances](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-enter-exit-standby.html) from an Auto Scaling group. Having the instance in Standby state helps in quick rollbacks, if required. As soon as you’re confident about the newly deployed version of the application, you can permanently remove instances in Standby state.
 
-![AWS architecture diagram showing user traffic flow through Route 53, load balancing, and auto scaling group to various AWS services.](http://docs.aws.amazon.com/whitepapers/latest/blue-green-deployments/images/scale-down-blue-launch.png)
+![AWS architecture diagram showing user traffic flow through Route 53, load balancing, and auto scaling group to various AWS services.](https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployments/images/scale-down-blue-launch.png)
 
 * Scale down blue launch configuration *
 

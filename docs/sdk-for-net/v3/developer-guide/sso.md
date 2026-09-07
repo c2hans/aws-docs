@@ -149,7 +149,7 @@ static AWSCredentials LoadSsoCredentials()
 
 If an appropriate SSO token isn't available, the default browser window is launched and the appropriate sign-in page is opened. For example, if you’re using IAM Identity Center as the **Identity source**, the user sees a sign-in page similar to the following:
 
-![AWS IAM Identity Center sign-in page.](http://docs.aws.amazon.com/sdk-for-net/v3/developer-guide/images/SSO-login.png)
+![AWS IAM Identity Center sign-in page.](https://docs.aws.amazon.com/sdk-for-net/v3/developer-guide/images/SSO-login.png)
 
 **Note**
 The text string that you provide for `SSOAWSCredentials.Options.ClientName` can't have spaces. If the string does have spaces, you'll get a *runtime* exception.

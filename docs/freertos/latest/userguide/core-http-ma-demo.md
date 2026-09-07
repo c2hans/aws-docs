@@ -27,11 +27,11 @@ This demo creates a single application task with examples that show how to compl
 
 After you complete these steps, the demo generates output similar to the following screenshot.
 
-![Log output showing AWS IoT demo initialization, TLS session establishment, HTTP POST requests, and memory metrics indicating successful demo completion.](http://docs.aws.amazon.com/freertos/latest/userguide/images/coreHTTP.output.png)
+![Log output showing AWS IoT demo initialization, TLS session establishment, HTTP POST requests, and memory metrics indicating successful demo completion.](https://docs.aws.amazon.com/freertos/latest/userguide/images/coreHTTP.output.png)
 
 The AWS IoT console generates output similar to the following screenshot.
 
-![AWS IoT console showing "Hello from AWS IoT console" message published to a topic on November 20, 2020 at 19:09:09 UTC.](http://docs.aws.amazon.com/freertos/latest/userguide/images/coreHTTP.console.png)
+![AWS IoT console showing "Hello from AWS IoT console" message published to a topic on November 20, 2020 at 19:09:09 UTC.](https://docs.aws.amazon.com/freertos/latest/userguide/images/coreHTTP.console.png)
 
 ## Source code organization
 <a name="core-http-s3-ma-demo-source-code-organization"></a>

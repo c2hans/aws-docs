@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/setting-up-multi-user
 
  This scenario is a good match for simpler use cases in which users do not need to launch new AWS services. The following figure shows the architecture for this scenario.
 
-![Diagram showing individual server environments](http://docs.aws.amazon.com/whitepapers/latest/setting-up-multi-user-environments/images/individual-server-environments.png)
+![Diagram showing individual server environments](https://docs.aws.amazon.com/whitepapers/latest/setting-up-multi-user-environments/images/individual-server-environments.png)
 
  An administrator can give users their own unique SSH keys for Linux and password for Windows for security and separation between users. For labs that do not require security among users (such as collaborative labs), the administrator can keep the keys or access credentials common for all the servers, and provide the unique access public DNS names of instances to the users. The administrator can choose the level of security and management appropriate for their needs.
 

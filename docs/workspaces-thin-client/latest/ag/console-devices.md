@@ -16,7 +16,7 @@ From this console, you can order devices for your team.
 
 There are a number of parameters for any device in your network for you to review as well as some actions you can take.
 
-![Devices table showing device ID G0723H08 with active status and no device name assigned.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ag/images/device-list.png)
+![Devices table showing device ID G0723H08 with active status and no device name assigned.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/images/device-list.png)
 
 ### Device list details
 <a name="device-list-details"></a>

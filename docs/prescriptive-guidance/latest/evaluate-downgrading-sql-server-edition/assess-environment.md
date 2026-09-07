@@ -40,18 +40,18 @@ DROP TABLE ##EntFeatures
 
 If the script returns a single row with the message **Ready to move\! You are running a(n) <your SQL Sever edition>**, as shown in the following screen illustration, your SQL Server database can be a candidate for downgrading from Enterprise edition to Standard edition.
 
-![Status message indicating that there are no dependencies.](http://docs.aws.amazon.com/prescriptive-guidance/latest/evaluate-downgrading-sql-server-edition/images/guide-img/4f72b44a-289d-4c64-8325-b36e4aec7488/images/766828e8-e2d2-41c9-b188-903268a0effe.png)
+![Status message indicating that there are no dependencies.](https://docs.aws.amazon.com/prescriptive-guidance/latest/evaluate-downgrading-sql-server-edition/images/guide-img/4f72b44a-289d-4c64-8325-b36e4aec7488/images/766828e8-e2d2-41c9-b188-903268a0effe.png)
 
 If the script returns a list of databases and Enterprise edition features, you must evaluate the possible consequences of removing Enterprise features from those databases.
 
-![Script results listing databases that have dependencies on Enterprise edition.](http://docs.aws.amazon.com/prescriptive-guidance/latest/evaluate-downgrading-sql-server-edition/images/guide-img/4f72b44a-289d-4c64-8325-b36e4aec7488/images/637eea90-9c4a-48a4-90d4-550cf7bf55f5.png)
+![Script results listing databases that have dependencies on Enterprise edition.](https://docs.aws.amazon.com/prescriptive-guidance/latest/evaluate-downgrading-sql-server-edition/images/guide-img/4f72b44a-289d-4c64-8325-b36e4aec7488/images/637eea90-9c4a-48a4-90d4-550cf7bf55f5.png)
 
 ## Using AWS SCT to assess a SQL Server database
 <a name="using-aws-sct-to-assess-a-sql-server-database.ae323d93-77c1-5643-9544-c1e20eeb0c92"></a>
 
 When you create a database migration assessment report in AWS SCT, the **License Evaluation and Cloud Support** section of the report lists the SQL Server features that your source database is using. You can use this list to make an informed decision while migrating to Amazon RDS for SQL Server.
 
-![List of dependencies that need to be removed before downgrading and features that cannot be supported after downgrading.](http://docs.aws.amazon.com/prescriptive-guidance/latest/evaluate-downgrading-sql-server-edition/images/guide-img/4f72b44a-289d-4c64-8325-b36e4aec7488/images/164750ba-6d2f-4eeb-ba6c-12324ff68c76.png)
+![List of dependencies that need to be removed before downgrading and features that cannot be supported after downgrading.](https://docs.aws.amazon.com/prescriptive-guidance/latest/evaluate-downgrading-sql-server-edition/images/guide-img/4f72b44a-289d-4c64-8325-b36e4aec7488/images/164750ba-6d2f-4eeb-ba6c-12324ff68c76.png)
 
 ## Scaling the SQL Server assessment
 <a name="scaling-the-sql-server-assessment.ecfeacc5-c323-51dc-b9f3-04ca9fbe5892"></a>

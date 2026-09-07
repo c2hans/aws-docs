@@ -45,7 +45,7 @@ By default, the client opens in the classic experience. If your administrator ha
 **Note**
 Switching experiences may take a few moments.
 
-![The WorkSpaces Windows client with the Try New WorkSpaces link in the upper-right corner.](http://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-try-new.png)
+![The WorkSpaces Windows client with the Try New WorkSpaces link in the upper-right corner.](https://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-try-new.png)
 
 If your administrator has set a policy that requires a specific experience (new or classic), the option to switch is hidden and the client uses the experience your administrator selected. For more information, contact your administrator.
 
@@ -57,14 +57,14 @@ If you switched to the new experience and want to return to classic, choose the 
 **Note**
 Switching back may take a few moments.
 
-![The new client experience with the Return to classic option in the upper-right corner.](http://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-return-to-classic.png)
+![The new client experience with the Return to classic option in the upper-right corner.](https://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-return-to-classic.png)
 
 ### Preview badge
 <a name="windows-preview-badge"></a>
 
 While the new experience is in Public Preview, a **Preview** badge appears in the client. Choose the badge to see release notes, known limitations, and a link to send your feedback to AWS.
 
-![The Preview badge in the new client experience.](http://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-preview-badge.png)
+![The Preview badge in the new client experience.](https://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-preview-badge.png)
 
 ### What's different in the new client experience?
 <a name="windows-whats-different"></a>
@@ -73,38 +73,38 @@ The new experience includes the following changes and improvements:
 + **Updated interface** — a redesigned user interface with a cleaner layout, easier-to-find settings and tools, and a modern look-and-feel.
 + **Simplified connection and sign-in flow** — a revised flow for registering and connecting to a WorkSpace, and additional customization options for managing WorkSpaces you frequently access. For more details, see [Connecting to your WorkSpace](#windows_connecting) and [Managing your sign-in information](#manage-login-info-windows).
 + **Support for color themes** — choose between light, dark, or follow your system's theme settings. Change this from the **WorkSpaces** menu > **Settings** > **Appearance**.
-![The Appearance settings showing light, dark, and system theme options in the new client experience.](http://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-appearance-themes.png)
+![The Appearance settings showing light, dark, and system theme options in the new client experience.](https://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-appearance-themes.png)
 + **New toolbar** — a consolidated toolbar available during your WorkSpace session, providing access to keyboard shortcuts, device controls you can use for your session (camera, microphone, audio, USB devices), file transfer options, and a new Session Health feature. In addition, the new toolbar includes a set of window actions you can take – minimize, maximize / full screen, and disconnect / close.
   + When your session is in **windowed mode**, the toolbar appears at the top of the session window, as part of the window title, so it does not block your session view.
-![The new client toolbar at the top of the session window in windowed mode.](http://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-toolbar-windowed.png)
+![The new client toolbar at the top of the session window in windowed mode.](https://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-toolbar-windowed.png)
   + When your session is in **full screen mode**, the toolbar floats near the top of the screen for a few seconds, and then automatically hides away to help you focus.
     + If you need to move it out of the way, click-and-hold anywhere on it, drag it alongside the top edge of the screen, and drop it into any other horizontal position.
     + If you want the toolbar to reappear, move your mouse near the top edge of the screen near the minimized toolbar and it will reappear in full.
     + If you want to keep the toolbar always visible, choose **Pin the toolbar** (pin icon).
-![The floating in-session toolbar in full screen mode with the Pin the toolbar control.](http://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-toolbar-pin.png)
+![The floating in-session toolbar in full screen mode with the Pin the toolbar control.](https://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-toolbar-pin.png)
 + **Session Health** — a new feature that monitors session quality conditions (including network status, service reachability, Wi-Fi signal strength, network latency, bandwidth, and local device metrics which may sometimes affect your session, such as local device CPU utilization and memory usage) and suggests actions you can take to resolve issues.
   + The **Session health** icon will change color if anything needs attention, and choosing the icon will open the panel on the right side where details will be provided. Choose the relevant questions at the bottom of the panel to learn more.
   + If you need to move the panel out of the way, choose **Undock** (undock icon) on the top right of the panel, and you can move it freely around the session. Choose **Dock** (dock icon) to move it back to the right side.
-![The Session Health panel open on the right side of the session.](http://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-session-health.png)
-![The Session Health panel showing network status, service reachability, and latency.](http://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-session-health-panel1.png)
-![The Session Health panel showing local device metrics and recommended actions.](http://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-session-health-panel2.png)
+![The Session Health panel open on the right side of the session.](https://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-session-health.png)
+![The Session Health panel showing network status, service reachability, and latency.](https://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-session-health-panel1.png)
+![The Session Health panel showing local device metrics and recommended actions.](https://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-session-health-panel2.png)
 + **Simplified full screen mode and usage of multiple external displays** — For more details, see [Full screen mode and using multiple displays](#full-screen-mode).
 + **New Devices panel to manage local devices you can use in your WorkSpace session** — including your local speakers, microphone, and camera, in addition to other USB devices that have been enabled by your administrator.
-![The Devices panel for managing local speakers, microphone, camera, and USB devices.](http://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-devices-panel.png)
+![The Devices panel for managing local speakers, microphone, camera, and USB devices.](https://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-devices-panel.png)
 + **New File transfer experience to move files to and from your WorkSpace** — when this feature is enabled by your administrator.
   + Choose the **File transfer** (folder icon) in the toolbar to get started.
   + Choose the **Back**, **Forward**, **Up**, and **Refresh** icons to navigate your WorkSpace storage folders.
   + Choose **Upload here** to select a file from your local device to transfer to your WorkSpace.
   + Select a file on your WorkSpace and choose **Download** to transfer it to your local device.
   + Navigate to your desired location on your WorkSpace storage hierarchy and choose **New folder** to create a new folder in that location.
-![The File transfer window with upload, download, and folder navigation controls.](http://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-file-transfer.png)
+![The File transfer window with upload, download, and folder navigation controls.](https://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-file-transfer.png)
 + **New My WorkSpace Details panel** — providing key information about your WorkSpace at a glance, with the ability to copy and paste it.
-![The My WorkSpace Details panel showing key information about the WorkSpace.](http://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-workspace-details.png)
+![The My WorkSpace Details panel showing key information about the WorkSpace.](https://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-workspace-details.png)
 + **Improved error messaging** — connection errors and disconnection events now include descriptions of what happened and, where applicable, steps you can take to resolve the issue.
 + **Updated diagnostic logging support** — a new option to send logs on demand, with a reference code for AWS Support, in addition to the existing automatic diagnostic logging option. For more details, see [Diagnostic logging](#diagnostic-log-uploads-users).
 + **A way for you to send feedback to AWS** — available anytime by choosing **Amazon WorkSpaces** > **Help** > **Send feedback to AWS**. Your feedback submission is governed by the [AWS Privacy Notice](https://aws.amazon.com/privacy/).
-![The Help menu with the Send feedback to AWS option in the new client experience.](http://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-send-feedback.png)
-![The feedback form for sending feedback to AWS in the new client experience.](http://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-feedback-form.png)
+![The Help menu with the Send feedback to AWS option in the new client experience.](https://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-send-feedback.png)
+![The feedback form for sending feedback to AWS in the new client experience.](https://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-feedback-form.png)
 
 ### Known limitations
 <a name="windows-known-issues"></a>
@@ -138,7 +138,7 @@ Choose **Amazon WorkSpaces** > **About Amazon WorkSpaces**.
 
 Choose **Amazon WorkSpaces** > **About**.
 
-![The About dialog showing the client version in the new client experience.](http://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-about.png)
+![The About dialog showing the client version in the new client experience.](https://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-about.png)
 
 ## Client updates
 <a name="windows_update_client"></a>
@@ -191,9 +191,9 @@ The new client experience is currently supported in English only. Support for ad
 
 1. To enter a different registration code, choose **Change** next to the currently selected WorkSpace, choose from other saved WorkSpaces in the list, or choose **Add a new WorkSpace** to enter your new registration code.
 
-![The registration screen for adding a WorkSpace with a registration code and friendly name.](http://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-add-workspace.png)
+![The registration screen for adding a WorkSpace with a registration code and friendly name.](https://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-add-workspace.png)
 
-![The WorkSpace list with options to set default, rename, change color, and remove a WorkSpace.](http://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-workspace-list.png)
+![The WorkSpace list with options to set default, rename, change color, and remove a WorkSpace.](https://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-workspace-list.png)
 
 ## Managing your sign-in information
 <a name="manage-login-info-windows"></a>
@@ -211,7 +211,7 @@ To view and manage your saved WorkSpaces, choose **Change** next to the currentl
 + Choose **Remove** (trash icon) to remove a WorkSpace you no longer need.
 + Choose **Add a new WorkSpace** at the bottom of the list to add a new WorkSpace.
 
-![The WorkSpace list with options to set default, rename, change color, and remove a WorkSpace.](http://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-workspace-list.png)
+![The WorkSpace list with options to set default, rename, change color, and remove a WorkSpace.](https://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-workspace-list.png)
 
 ## Network connectivity and reconnecting to your WorkSpace
 <a name="windows-network-connectivity"></a>
@@ -245,7 +245,7 @@ By default, the new client experience prefers an IPv6 connection for streaming w
 
 1. Disable the **Use IPv6 when available** toggle.
 
-![The Connections settings with the Use IPv6 when available toggle.](http://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-connections-ipv6.png)
+![The Connections settings with the Use IPv6 when available toggle.](https://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-connections-ipv6.png)
 
 **Note**
 If you are in an active WorkSpace session, changes to IPv6 connection settings will take effect on the next session.
@@ -277,7 +277,7 @@ By default, the classic client experience uses the proxy server settings specifi
    + **Use your computer's proxy settings** to use the proxy server settings from your local computer. Choose **Open your computer's proxy settings** to view and change these settings locally.
    + **Use a custom HTTPS proxy server** to use a custom proxy server. Enter the IP address or URL and port number for your custom proxy server. Choose **Save**.
 
-![The Connections settings showing proxy server options.](http://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-connections-proxy.png)
+![The Connections settings showing proxy server options.](https://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-connections-proxy.png)
 
 **Note**
 If you are in an active WorkSpace session, changes to proxy server settings will take effect on the next session.
@@ -336,13 +336,13 @@ To configure your default full screen mode:
 You'll need to select displays that are adjacent to each other.
 To make changes to your connected displays, display layout, or other display settings, visit your local device display settings.
 
-![The Display settings showing full screen mode options in the new client experience.](http://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-display-fullscreen.png)
+![The Display settings showing full screen mode options in the new client experience.](https://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-display-fullscreen.png)
 
-![The Display settings with the full screen on selected displays option.](http://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-display-selected.png)
+![The Display settings with the full screen on selected displays option.](https://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-display-selected.png)
 
-![The monitor selection screen for choosing which connected displays to use.](http://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-display-select-monitors.png)
+![The monitor selection screen for choosing which connected displays to use.](https://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-display-select-monitors.png)
 
-![The Maximize and Full screen icon in the upper-right corner of the new client experience.](http://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-maximize-icon.png)
+![The Maximize and Full screen icon in the upper-right corner of the new client experience.](https://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-maximize-icon.png)
 
 ## Keyboard shortcuts
 <a name="keyboard-shortcuts"></a>
@@ -363,7 +363,7 @@ In the new client experience, in addition to the supported keyboard shortcuts de
 + Choose **Keyboard shortcuts** (keyboard icon) > **Send Ctrl \+ Alt \+ Del**.
 + Press **Ctrl \+ Alt \+ End** on your local device keyboard.
 
-![The Keyboard shortcuts menu with the Send Ctrl+Alt+Del option.](http://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-keyboard-shortcuts.png)
+![The Keyboard shortcuts menu with the Send Ctrl+Alt+Del option.](https://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-keyboard-shortcuts.png)
 
 ## Disconnecting and exiting
 <a name="windows_disconnect"></a>
@@ -391,14 +391,14 @@ To disconnect from and end your WorkSpace session, use one of the following meth
 + Choose **Amazon WorkSpaces** > **Exit**. Your WorkSpace session will end, and the client application will close.
 + You can also sign out from the WorkSpace itself. Your WorkSpace session will end, and the client continues running in case you want to sign in again.
 
-![The Amazon WorkSpaces menu showing the Disconnect option in the new client experience.](http://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-disconnect.png)
+![The Amazon WorkSpaces menu showing the Disconnect option in the new client experience.](https://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-disconnect.png)
 
-![The Amazon WorkSpaces menu showing the Exit option in the new client experience.](http://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-exit.png)
+![The Amazon WorkSpaces menu showing the Exit option in the new client experience.](https://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-exit.png)
 
 **Note**
 The new client experience will prompt you to confirm before disconnecting or exiting. You can disable this prompt by choosing **Don't ask me again**. If you want to change this later, choose **Amazon WorkSpaces** > **Settings** > **Appearance** and manage the settings under **Confirmation dialogs**.
 
-![The Appearance settings with the Confirmation dialogs options.](http://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-confirmation-dialogs.png)
+![The Appearance settings with the Confirmation dialogs options.](https://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-confirmation-dialogs.png)
 
 ## Clipboard support
 <a name="windows_clipboard_support"></a>
@@ -434,7 +434,7 @@ To send your current logs:
 
 Your client device ID is also displayed on this screen and can be copied for reference.
 
-![The Logging settings with automatic upload and Send logs to AWS options.](http://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-logging.png)
+![The Logging settings with automatic upload and Send logs to AWS options.](https://docs.aws.amazon.com/workspaces/latest/userguide/images/wsp-windows-newclient-logging.png)
 
 ## Release notes
 <a name="windows-release-notes"></a>

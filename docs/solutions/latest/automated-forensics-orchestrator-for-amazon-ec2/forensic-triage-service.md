@@ -12,14 +12,14 @@ The diagram below represents the logical interaction view of the forensic triage
 
  **Forensic triage workflow**
 
-![forensic triage workflow](http://docs.aws.amazon.com/solutions/latest/automated-forensics-orchestrator-for-amazon-ec2/images/forensic-triage-workflow.png)
+![forensic triage workflow](https://docs.aws.amazon.com/solutions/latest/automated-forensics-orchestrator-for-amazon-ec2/images/forensic-triage-workflow.png)
 
 ## Implementation view
 <a name="implementation-view"></a>
 
  **Forensic triage - implementation view**
 
-![forensic triage implementation view](http://docs.aws.amazon.com/solutions/latest/automated-forensics-orchestrator-for-amazon-ec2/images/forensic-triage-implementation-view.png)
+![forensic triage implementation view](https://docs.aws.amazon.com/solutions/latest/automated-forensics-orchestrator-for-amazon-ec2/images/forensic-triage-implementation-view.png)
 
 AWS Security Hub operating in AWS application account is reported with details of the compromised instance and the findings get aggregated to AWS Security Hub administrator AWS master Account. . The security administrator initiates one of the following forensic actions in Security Hub.
 

@@ -58,7 +58,7 @@ As DTH deployment VPC has public internet access (IGW or NAT), EC2 worker/finder
 
  In this scenario, DTH is deployed in the destination side and within a VPC without public access (isolated VPC), and the source bucket is also in an isolated network. For details, refer to [the tutorial](https://github.com/awslabs/data-transfer-hub/blob/main/docs/tutorial-directconnect-isolated.md).
 
-![Two AWS accounts connected via Direct Connect with VPCs, gateways, and S3 buckets in isolated networks.](http://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/dx-arch.png)
+![Two AWS accounts connected via Direct Connect with VPCs, gateways, and S3 buckets in isolated networks.](https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/dx-arch.png)
 
  DTH worker nodes running on EC2 transfer data from bucket in one AWS account to bucket in another AWS account.
 +  To access bucket in the account where DTH is deployed, DTH worker nodes use S3 Gateway Endpoint

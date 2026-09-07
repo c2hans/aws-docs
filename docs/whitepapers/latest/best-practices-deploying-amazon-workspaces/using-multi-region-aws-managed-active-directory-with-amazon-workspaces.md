@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 ## Architecture
 <a name="architecture"></a>
 
-![Sample architecture showing AD Connectors with MAD is to create an AD Connector for each business unit within your WorkSpaces environment.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/registering-replicated-mad-region.png)
+![Sample architecture showing AD Connectors with MAD is to create an AD Connector for each business unit within your WorkSpaces environment.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/images/registering-replicated-mad-region.png)
 
 ## Implementation
 <a name="implementation"></a>

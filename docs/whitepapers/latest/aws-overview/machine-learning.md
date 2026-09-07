@@ -2,14 +2,14 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/machine-learning.html
 ---
 
-# ![AWS Machine Learning category icon](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/ml-icon.jpg)Machine Learning (ML) and Artificial Intelligence (AI)
+# ![AWS Machine Learning category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/ml-icon.jpg)Machine Learning (ML) and Artificial Intelligence (AI)
 <a name="machine-learning"></a>
 
 AWS helps you at every stage of your ML adoption journey with the most comprehensive set ML services and purpose-built infrastructure. Our pretrained AI services provide ready-made intelligence for your applications and workflows.
 
 Each service is described after the diagram. To help you decide which service best meets your needs, see [Choosing an AWS machine learning service](https://docs.aws.amazon.com/decision-guides/latest/machine-learning-on-aws-how-to-choose/guide.html), [Choosing a generative AI service](https://docs.aws.amazon.com/decision-guides/latest/generative-ai-on-aws-how-to-choose/guide.html), and [Amazon Bedrock or Amazon SageMaker AI?](https://docs.aws.amazon.com/decision-guides/latest/bedrock-or-sagemaker/bedrock-or-sagemaker.html). For general information, see [Build and scale the next wave of AI innovation on AWS](https://aws.amazon.com/ai/).
 
-![Diagram showing AWS artificial intelligence stack](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/ai-stack.png)
+![Diagram showing AWS artificial intelligence stack](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/ai-stack.png)
 
 **Topics**
 + [Amazon Augmented AI](#amazon-augmented-ai)

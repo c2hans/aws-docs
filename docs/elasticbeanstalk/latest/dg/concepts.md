@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.html
 
 Becoming familiar with the concepts and terms will help you gain an understanding needed for deploying your applications with Elastic Beanstalk.
 
-![Illustrative diagram showing the relationship between an Elastic Beanstalk application and web/worker environments.](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/images/aeb-overview.png)
+![Illustrative diagram showing the relationship between an Elastic Beanstalk application and web/worker environments.](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/images/aeb-overview.png)
 
 ## Application
 <a name="concepts-application"></a>

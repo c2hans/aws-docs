@@ -21,6 +21,6 @@ The following diagram shows the conceptual relationship between cloud resources 
 
  **Diagram showing overview of resources and their related CloudWatch alarms**
 
-![aws solution for prebid server cloudwatch alarms](http://docs.aws.amazon.com/solutions/latest/prebid-server-deployment-on-aws/images/aws-solution-for-prebid-server-cloudwatch-alarms.png)
+![aws solution for prebid server cloudwatch alarms](https://docs.aws.amazon.com/solutions/latest/prebid-server-deployment-on-aws/images/aws-solution-for-prebid-server-cloudwatch-alarms.png)
 
 Network traffic flow is monitored by ALB, CloudFront, NAT gateway, and AWS WAF alarms. ECS alarms focus on problems related to creating new instances. EFS alarms monitor throughput problems. Glue alarms change state on failures of the periodic AWS Glue job. The customer is responsible for subscribing to these alarms to a notification mechanism, such as email or text message.

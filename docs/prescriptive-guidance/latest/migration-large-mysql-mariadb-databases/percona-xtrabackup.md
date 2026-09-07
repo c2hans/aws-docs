@@ -14,7 +14,7 @@ This tool uses the physical migration approach. It directly copies the MySQL or 
 
 The following diagram shows the high-level steps involved in migrating a database by using an Percona XtraBackup backup file. Depending on the size of the backup file, there are two options available for transferring the backup to an Amazon Simple Storage Service (Amazon S3) bucket in the AWS Cloud.
 
-![Diagram of migrating a Percona XtraBackup file and restoring it on an Amazon DB instance.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-large-mysql-mariadb-databases/images/guide-img/49694e39-c5ff-41ab-af3d-e68e9b6e3ab5/images/fae4f7b5-34d2-43eb-a128-22c2182dd7ef.png)
+![Diagram of migrating a Percona XtraBackup file and restoring it on an Amazon DB instance.](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-large-mysql-mariadb-databases/images/guide-img/49694e39-c5ff-41ab-af3d-e68e9b6e3ab5/images/fae4f7b5-34d2-43eb-a128-22c2182dd7ef.png)
 
 The following are the steps for using Percona XtraBackup to migrate a database to the AWS Cloud:
 

@@ -38,7 +38,7 @@ The desktop application uses a three-step wizard to create and upload assets.
 
 1. Choose **Next**
 
-![Create asset wizard — Define your asset](http://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/create-asset-step-1.png)
+![Create asset wizard — Define your asset](https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/create-asset-step-1.png)
 
  **Step 2: Select Files to Upload**
 
@@ -54,7 +54,7 @@ If you have the Amazon S3 Import connector configured, you can also import files
 
 1. Choose **Next**
 
-![Create asset wizard — choose your initial content](http://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/file-upload-screen.png)
+![Create asset wizard — choose your initial content](https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/file-upload-screen.png)
 
  **Step 3: Review and Create**
 
@@ -66,7 +66,7 @@ If you have the Amazon S3 Import connector configured, you can also import files
 
 The application displays upload progress. Large files may take several minutes to upload.
 
-![Create asset wizard — review asset content](http://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/review-asset.png)
+![Create asset wizard — review asset content](https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/review-asset.png)
 
 ## Verify Your Upload
 <a name="verify-upload"></a>
@@ -85,4 +85,4 @@ After the upload completes:
    + Metadata is correctly populated
    + Asset state shows as `Draft`
 
-![Asset details screen](http://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/upload-complete.png)
+![Asset details screen](https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/upload-complete.png)

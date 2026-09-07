@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/next-generation-oss/n
 
  This section presents a network analytics architecture on AWS that provides flexibility, scalability, and innovation through Machine Learning (ML) integration. The components to a network analytics solution can be divided in four categories: ingestion, storage, processing and analysis, and consumption. The following reference architecture illustrates the AWS services that support the proposed architecture.
 
-![Diagram showing Network Analytics Architecture on AWS](http://docs.aws.amazon.com/whitepapers/latest/next-generation-oss/images/network-analytics-architecture.png)
+![Diagram showing Network Analytics Architecture on AWS](https://docs.aws.amazon.com/whitepapers/latest/next-generation-oss/images/network-analytics-architecture.png)
 
  Data can be ingested through [AWS Transfer for Secure File Transfer Protocol](https://aws.amazon.com/aws-transfer-family) (SFTP) to periodically collect data from NFx, Domain Managers, Custom Edge collectors, and legacy network performance analytics solutions. Similarly, you can leverage [Kinesis](https://aws.amazon.com/kinesis/) and/or [Amazon MSK](https://aws.amazon.com/msk/) to inject real-time performance data such as events-driven messages (for example, UE attach). Kinesis supports real-time data streaming where data collected is available in milliseconds to enable real-time analytics use cases.
 

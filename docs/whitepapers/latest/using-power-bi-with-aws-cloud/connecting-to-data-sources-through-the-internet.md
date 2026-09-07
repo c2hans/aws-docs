@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/using-power-bi-with-a
 
  In this model, the Power BI Desktop application places an outbound connection that is routed over the internet to an IP address of an internet-accessible AWS data source. For example, Amazon RDS and Amazon Redshift, which are instantiated within a customers’ Amazon Virtual Private Cloud (Amazon Amazon VPC), support the *public accessibility* option to make instances accessible over the internet. Amazon Athena can be queried directly from the internet by using the service endpoint for your specific Region.
 
-![A diagram depicting Power BI connectivity to AWS data sources over the internet.](http://docs.aws.amazon.com/whitepapers/latest/using-power-bi-with-aws-cloud/images/powerbi2.png)
+![A diagram depicting Power BI connectivity to AWS data sources over the internet.](https://docs.aws.amazon.com/whitepapers/latest/using-power-bi-with-aws-cloud/images/powerbi2.png)
 
 *Power BI connectivity to AWS data sources over the internet *
 

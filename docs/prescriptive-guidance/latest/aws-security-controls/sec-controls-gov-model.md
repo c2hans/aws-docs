@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-securit
 
 It is important to plan from a foundational level. How does one start? The following figure shows how you can build a security governance strategy based on a policy, control objectives, standards, and security controls.
 
-![The layers of a security governance framework.](http://docs.aws.amazon.com/prescriptive-guidance/latest/aws-security-controls/images/guide-img/4d22877b-9cac-4bc5-8ae8-4555441015fe/images/dba2aaf8-ee84-4add-996e-9ab35817ce75.png)
+![The layers of a security governance framework.](https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-security-controls/images/guide-img/4d22877b-9cac-4bc5-8ae8-4555441015fe/images/dba2aaf8-ee84-4add-996e-9ab35817ce75.png)
 
 The following are the hierarchical components of a governance strategy for security:
 + **Policy** – A *policy* is the foundation of any cybersecurity governance strategy. It is a document that states the expectations of the company, such as statutory, regulatory, or contractual obligations that it must meet. Policies can vary by industry and region.

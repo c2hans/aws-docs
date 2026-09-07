@@ -31,7 +31,7 @@ This pattern describes how to migrate from an on-premises Microsoft SQL Server d
 
 **Database migration architecture**
 
-![Architecture diagram to migrate an on-premises SQL Server database to a Linux EC2 instance.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/f331ad15-2d41-4087-a6d1-60e3443e2acf/images/f50a779a-ce5d-44b1-8d37-dedd6400a12c.png)
+![Architecture diagram to migrate an on-premises SQL Server database to a Linux EC2 instance.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/f331ad15-2d41-4087-a6d1-60e3443e2acf/images/f50a779a-ce5d-44b1-8d37-dedd6400a12c.png)
 
 ## Tools
 <a name="migrate-an-on-premises-microsoft-sql-server-database-to-microsoft-sql-server-on-amazon-ec2-running-linux-tools"></a>

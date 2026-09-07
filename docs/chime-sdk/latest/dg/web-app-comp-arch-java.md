@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/web-app-comp-arch-ja
 
 This diagram shows the architecture of an Amazon Chime SDK web client application:
 
-![Diagram showing the architecture of an Amazon Chime SDK web application.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/architecture-2.png)
+![Diagram showing the architecture of an Amazon Chime SDK web application.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/architecture-2.png)
 
 A web application typically consists of an HTML and CSS user interface layer powered by the application business logic layer. You can build the web application in plain HTML and JavaScript, or you can use UI frameworks such as React and Angular.
 

@@ -34,7 +34,7 @@ The maximum number of AWS Glue jobs per trigger is 50. For more information, see
 
 The following diagram depicts an example architecture centered around an AWS Glue job that writes its output (that is, sample files) to an S3 bucket.
 
-![Workflow shows AWS CLI initiates AWS Glue job that writes output to S3 bucket.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/f35943e8-3b2b-410e-a3f0-05e1ebd357d0/images/452ccbda-71f2-42b8-976d-bcc968bb1dab.png)
+![Workflow shows AWS CLI initiates AWS Glue job that writes output to S3 bucket.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/f35943e8-3b2b-410e-a3f0-05e1ebd357d0/images/452ccbda-71f2-42b8-976d-bcc968bb1dab.png)
 
 The diagram includes the following workflow:
 

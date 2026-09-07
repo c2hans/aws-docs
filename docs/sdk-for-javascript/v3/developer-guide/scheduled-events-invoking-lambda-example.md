@@ -13,7 +13,7 @@ AWS Lambda is a compute service that enables you to run code without provisionin
 
 In this tutorial, you create a Lambda function by using the Lambda JavaScript runtime API. This example invokes different AWS services to perform a specific use case. For example, assume that an organization sends a mobile text message to its employees that congratulates them at the one year anniversary date, as shown in this illustration.
 
-![DynamoDB table](http://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/apigateway_example/picPhone.png)
+![DynamoDB table](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/apigateway_example/picPhone.png)
 
 The tutorial should take about 20 minutes to complete.
 
@@ -25,7 +25,7 @@ This AWS tutorial uses an Amazon DynamoDB table named Employee that contains the
 + **phone** - employee’s phone number.
 + **startDate** - employee’s start date.
 
-![DynamoDB table](http://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/apigateway_example/pic00.png)
+![DynamoDB table](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/apigateway_example/pic00.png)
 
 **Important**
 Cost to complete: The AWS services included in this document are included in the AWS Free Tier. However, be sure to terminate all of the resources after you have completed this tutorial to ensure that you are not charged.

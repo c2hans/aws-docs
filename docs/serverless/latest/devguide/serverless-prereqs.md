@@ -16,7 +16,7 @@ Topics are shown in orange boxes. Large topics may be broken down into several s
 + [AWS cloud infrastructure](#prereq_aws-infrastructure)
 + [Security model](#prereq_security-model)
 
- ![Learning path for serverless prerequisites](http://docs.aws.amazon.com/serverless/latest/devguide/images/path-serverless-prereq.png)
+ ![Learning path for serverless prerequisites](https://docs.aws.amazon.com/serverless/latest/devguide/images/path-serverless-prereq.png)
 
 ## Amazon Web Services account
 <a name="prereq_aws-account"></a>
@@ -79,7 +79,7 @@ Every solution you build that runs in the AWS cloud will be deployed to at least
 + **Availability Zone** or "AZ" - one or more discrete data centers with redundant power, networking, and connectivity *within* a Region
 + **Data center** – a physical location that contains servers, data storage drives, and network equipment
 
-![Diagram showing US map with three regions (GovCloud, Oregon, N. California) and availability zones inside the us-west-1 region (aka N. California).](http://docs.aws.amazon.com/serverless/latest/devguide/images/regions-availability-zones.png)
+![Diagram showing US map with three regions (GovCloud, Oregon, N. California) and availability zones inside the us-west-1 region (aka N. California).](https://docs.aws.amazon.com/serverless/latest/devguide/images/regions-availability-zones.png)
 
 Amazon has many regions all across the globe. Inside each region, there are one or more Availability Zones located tens of miles apart. The distance is near enough for low latency — the gap between requesting and receiving a response, and far enough to reduce the chance that multiple zones are affected if a disaster happens.
 
@@ -126,7 +126,7 @@ Security is a top priority for AWS. Before you start building serverless solutio
 
 Amazon Web Services has a *shared responsibility model:*
 
- ![Block diagram showing elements of the shared security model. Details in the Cloud Security link.](http://docs.aws.amazon.com/serverless/latest/devguide/images/shared-responsibility-model.jpg)
+ ![Block diagram showing elements of the shared security model. Details in the Cloud Security link.](https://docs.aws.amazon.com/serverless/latest/devguide/images/shared-responsibility-model.jpg)
 
 A shared security model means that Amazon manages certain aspects of security, and you are responsible for others.
 + AWS is responsible for the security *of* the cloud. This includes such thing as the physical security of the data centers.

@@ -14,7 +14,7 @@ Deploying this guidance with the default parameters deploys the following compon
 
  **QnABot on AWS architecture on AWS**
 
-![arch diagram](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/arch-diagram.png)
+![arch diagram](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/arch-diagram.png)
 
 The high-level process flow for the guidance components deployed with the AWS CloudFormation template is as follows:
 

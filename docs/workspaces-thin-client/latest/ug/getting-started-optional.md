@@ -13,13 +13,13 @@ You can also connect your WorkSpaces Thin Client device to a headset, camera, or
 Do not connect or disconnect any of the accessories while the WorkSpaces Thin Client device is on. The WorkSpaces Thin Client device will not recognize the accessory.
 If you disconnect an accessory while the WorkSpaces Thin Client device is on, turn off the device, reconnect the accessory, and then turn the device back on.
 
-![USB hub with four ports labeled 1, 2, and 3, and a power button on the left end.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/hub-opt-connect.jpg)
+![USB hub with four ports labeled 1, 2, and 3, and a power button on the left end.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/hub-opt-connect.jpg)
 
 | Number | Device | Instruction |
 | --- | --- | --- |
-| 1 | ![Customer support icon with headset and microphone.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/headset-symbol.jpg)  | Connect your headset to a USB-A port your hub. |
-| 2 | ![Orange circular icon with concentric rings and a center dot on a stand.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/webcam-symbol.jpg)  | Connect your webcam to a USB-A port your hub. |
-| 3 | ![](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/monitor-symbol.jpg)  | Connect a second monitor to the HDMI port at the end of the USB hub. Connect the HDMI port on your second monitor to the HDMI port at the end of your hub with an HDMI cable (not included). |
+| 1 | ![Customer support icon with headset and microphone.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/headset-symbol.jpg)  | Connect your headset to a USB-A port your hub. |
+| 2 | ![Orange circular icon with concentric rings and a center dot on a stand.](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/webcam-symbol.jpg)  | Connect your webcam to a USB-A port your hub. |
+| 3 | ![](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/monitor-symbol.jpg)  | Connect a second monitor to the HDMI port at the end of the USB hub. Connect the HDMI port on your second monitor to the HDMI port at the end of your hub with an HDMI cable (not included). |
 
 **Note**
 If you are using the USB docking station, see [Using a USB docking station](using-docking-station.md).

@@ -12,7 +12,7 @@ Tool-based agents for servers enhance function-calling agents by delegating tool
 
 The following is a pattern for tool-based agents for servers:
 
-![Tool-based agents for servers.](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-patterns/images/guide-img/cde5ee68-ed86-4053-9fb1-d0dbf7199e24/images/358e8438-9ebf-470a-8579-d91e26cf57b8.png)
+![Tool-based agents for servers.](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-patterns/images/guide-img/cde5ee68-ed86-4053-9fb1-d0dbf7199e24/images/358e8438-9ebf-470a-8579-d91e26cf57b8.png)
 
 ## Description
 <a name="description.70b5e24c-9607-5c58-8c06-8aeaf2aa2fbc"></a>

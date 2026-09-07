@@ -14,7 +14,7 @@ The following sections provide useful pointers for using AWS SCT, AWS Glue, and 
 
 The following screen illustration shows an AWS Glue job script that was converted by AWS SCT.
 
-![AWS Glue job script converted by AWS SCT](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-ssis-etl/images/guide-img/ae5b08b7-f641-4524-9650-6ac5a0f71dd9/images/ee349bd8-f30d-48ed-b169-3f89a4b77935.png)
+![AWS Glue job script converted by AWS SCT](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-ssis-etl/images/guide-img/ae5b08b7-f641-4524-9650-6ac5a0f71dd9/images/ee349bd8-f30d-48ed-b169-3f89a4b77935.png)
 
 AWS SCT can convert SSIS packages to AWS Glue jobs in bulk. You can edit the script to update existing logic or to add new logic, based on your new design. We recommend that you follow the naming conventions in the AWS SCT converted scripts to customize the scripts. For more information, see [Converting SSIS to AWS Glue using AWS SCT](https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP-converting-aws-glue-ssis.html) in the AWS SCT documentation.
 
@@ -23,7 +23,7 @@ AWS SCT can convert SSIS packages to AWS Glue jobs in bulk. You can edit the scr
 
 AWS Glue Studio provides a graphical interface and a development experience that's similar to SSIS, as illustrated in the following screen.
 
-![AWS Glue Studio UI](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-ssis-etl/images/guide-img/ae5b08b7-f641-4524-9650-6ac5a0f71dd9/images/c8a26ced-2605-443e-a528-42f458fc01f8.png)
+![AWS Glue Studio UI](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-ssis-etl/images/guide-img/ae5b08b7-f641-4524-9650-6ac5a0f71dd9/images/c8a26ced-2605-443e-a528-42f458fc01f8.png)
 
 If you prefer not to use a graphical interface, you can also run your custom scripts with the required Python libraries from the AWS Glue console. For more information, see [Providing your own custom scripts](https://docs.aws.amazon.com/glue/latest/dg/console-custom-created.html) in the AWS Glue documentation.
 
@@ -40,7 +40,7 @@ You can run custom scripts (written in Python or Scala) or compiled Python libra
 + Start with memory optimized instance types while creating Amazon EMR clusters with the Spark framework. (SSIS uses memory buffers.)
 + Build generic Python methods that are equivalent to each SSIS task or transformation. For example, in the following illustration, a method that takes two dataframes as input produces a third dataframe that has matching records from the two dataframes as output. This works as a [merge join](https://learn.microsoft.com/en-us/sql/integration-services/data-flow/transformations/merge-join-transformation) transformation.
 
-![Sample Python merge function for SSIS tasks](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-ssis-etl/images/guide-img/ae5b08b7-f641-4524-9650-6ac5a0f71dd9/images/33366daf-7f94-49e4-8a77-1776665f385d.png)
+![Sample Python merge function for SSIS tasks](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-ssis-etl/images/guide-img/ae5b08b7-f641-4524-9650-6ac5a0f71dd9/images/33366daf-7f94-49e4-8a77-1776665f385d.png)
 
 ## Testing
 <a name="test"></a>

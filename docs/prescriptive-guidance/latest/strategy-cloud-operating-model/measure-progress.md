@@ -13,7 +13,7 @@ To understand why this question is important and what can be done about it, see 
 
 The following graphic highlights what can happen at The Great Stall, and Eric discusses ways to get through that phase. We can take that discussion further to say that progression beyond The Great Stall and managing the journey require that you establish measures and have the ability to correct your course.
 
-![Measuring progress](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cloud-operating-model/images/guide-img/9a407f0b-ea38-4662-8d39-755295f71238/images/7978f0b4-085a-4f55-b7cf-386a6fa5eb3e.png)
+![Measuring progress](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cloud-operating-model/images/guide-img/9a407f0b-ea38-4662-8d39-755295f71238/images/7978f0b4-085a-4f55-b7cf-386a6fa5eb3e.png)
 
 The adoption and consumption of cloud services enable this transformation journey, so the absence of a functional Cloud Operating Model and the lack of visibility into the journey can cause adoption to enter The Great Stall. Therefore, we recommend that cloud leaders look to establish observability in the form of a [balanced scorecard](https://www.investopedia.com/terms/b/balancedscorecard.asp). This scorecard consists of a set of metrics that are aligned to the digital or cloud transformation. It provides a way to understand your current position and foresee any trouble ahead.
 
@@ -32,7 +32,7 @@ Our Transformation Dashboard balanced scorecard has four segments:
 
 In this scorecard, two segments highlight the values associated with time to market, agility, innovation, and gaining an advantage over competitors (in a commercial environment). The other two segments focus on measuring how the organization is becoming more efficient, effective, and resilient, and avoiding being at a disadvantage when compared with competitors. The scorecard is shown in the following diagram.
 
-![Visualizing metrics](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cloud-operating-model/images/guide-img/9a407f0b-ea38-4662-8d39-755295f71238/images/7111fedd-b76c-45e0-91ac-4482ba6bdfb8.png)
+![Visualizing metrics](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cloud-operating-model/images/guide-img/9a407f0b-ea38-4662-8d39-755295f71238/images/7111fedd-b76c-45e0-91ac-4482ba6bdfb8.png)
 
 By plotting data points on this matrix you can represent the focus of your organization. This helps you understand whether your Cloud Operating Model is being developed to *avoid disadvantage* or to *gain advantage*. If it's the former, we recommend that you correct your course to ensure that you're developing capabilities to focus on the latter, because gaining advantage is where you can realize the greatest value.
 

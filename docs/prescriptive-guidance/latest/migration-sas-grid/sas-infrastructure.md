@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 
 The following diagram shows the infrastructure components of SAS Grid Manager. The illustration is simplified to highlight major components that provide end-user functionality or that must be considered when planning resource allocations for processing, memory, network, and I/O.
 
-![SAS Grid infrastructure components (simplified)](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-sas-grid/images/guide-img/305d2670-30eb-46db-a41c-bed418267f47/images/3c331566-cf27-4714-9f70-69703f954a67.png)
+![SAS Grid infrastructure components (simplified)](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-sas-grid/images/guide-img/305d2670-30eb-46db-a41c-bed418267f47/images/3c331566-cf27-4714-9f70-69703f954a67.png)
 
 + **SAS Metadata Server** is the central hub of SAS Grid that client, server, and intermediate software components rely on. It provides information regarding software processes, manages user authentication and authorization to resources, and maintains user content.
 + **SAS Web Server** hosts static collateral and also acts as a reverse proxy, providing a single point of contact to the web apps in their Java Virtual Machines (JVMs).
@@ -21,7 +21,7 @@ The following diagram shows the infrastructure components of SAS Grid Manager. T
 
 The following architecture diagram shows how the tiers or infrastructure components interact.
 
-![SAS Grid infrastructure components (with tiers)](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-sas-grid/images/guide-img/305d2670-30eb-46db-a41c-bed418267f47/images/74d5de12-b402-494c-a7c5-3f375af1fcb3.png)
+![SAS Grid infrastructure components (with tiers)](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-sas-grid/images/guide-img/305d2670-30eb-46db-a41c-bed418267f47/images/74d5de12-b402-494c-a7c5-3f375af1fcb3.png)
 
 **Note**
 The five tiers represent categories of software that perform similar types of computing tasks and require similar types of resources. The tiers **do not necessarily** represent separate computers or groups of computers. For more information about each tier, use the links to the SAS documentation in the following list.

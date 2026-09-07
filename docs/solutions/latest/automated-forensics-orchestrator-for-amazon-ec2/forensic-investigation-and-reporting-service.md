@@ -12,14 +12,14 @@ The diagram below represents the logical interaction view of forensic memory and
 
  **Forensic investigation and reporting service - interaction view**
 
-![forensic investigation and reporting interaction](http://docs.aws.amazon.com/solutions/latest/automated-forensics-orchestrator-for-amazon-ec2/images/forensic-investigation-and-reporting-interaction.png)
+![forensic investigation and reporting interaction](https://docs.aws.amazon.com/solutions/latest/automated-forensics-orchestrator-for-amazon-ec2/images/forensic-investigation-and-reporting-interaction.png)
 
 ## Implementation view
 <a name="forensic-investigation-and-reporting-service-implementation"></a>
 
  **Forensic investigation and reporting service**
 
-![forensic investigation and reporting service](http://docs.aws.amazon.com/solutions/latest/automated-forensics-orchestrator-for-amazon-ec2/images/forensic-investigation-and-reporting-service.png)
+![forensic investigation and reporting service](https://docs.aws.amazon.com/solutions/latest/automated-forensics-orchestrator-for-amazon-ec2/images/forensic-investigation-and-reporting-service.png)
 
 ## Forensic investigation and reporting workflow
 <a name="forensics-investigation-and-reporting-workflow"></a>

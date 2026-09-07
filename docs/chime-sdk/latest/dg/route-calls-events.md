@@ -16,7 +16,7 @@ Next, the administrator provisions at least one target SIP media application. Op
 
 Once the necessary SIP rules and SIP media applications are provisioned, the PSTN audio service routes incoming calls to your AWS Lambda function. The following diagram shows a typical sequence using the **To phone number** trigger type.
 
-![Diagram of a SIP rule and SIP media application workflow rule that uses a To phone number trigger type.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/SMA Images-CS-2021-05-05-SIP Rules-PSTN-W-Lambda.png)
+![Diagram of a SIP rule and SIP media application workflow rule that uses a To phone number trigger type.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/SMA Images-CS-2021-05-05-SIP Rules-PSTN-W-Lambda.png)
 
 In the diagram:
 
@@ -32,7 +32,7 @@ In the diagram:
 
 The following diagram shows a typical rule that uses a **Request URI hostname** trigger type.
 
-![Diagram of a rule that uses a Request URI Hostname trigger type.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/SMA Images-CS-2021-05-05-SIP Rules-VC-W-Lambda.png)
+![Diagram of a rule that uses a Request URI Hostname trigger type.](https://docs.aws.amazon.com/chime-sdk/latest/dg/images/SMA Images-CS-2021-05-05-SIP Rules-VC-W-Lambda.png)
 
 In the diagram:
 

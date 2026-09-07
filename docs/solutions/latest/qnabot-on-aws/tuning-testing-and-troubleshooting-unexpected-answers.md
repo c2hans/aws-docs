@@ -104,7 +104,7 @@ Use the following process to visualize the usage logs and feedback using [OpenSe
 1. Choose the **QnABot on AWS** dashboard to visualize usage history and sentiment, all logged utterances, no hits utterances, positive user feedback, and negative user feedback.
 
     **Sample OpenSearch Dashboard**
-![image23](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image23.png)
+![image23](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image23.png)
 
 1. Edit [OpenSearch Dashboards](https://opensearch.org/docs/latest/dashboards/) to change the time span, customize and build your own visualizations, or to run your own queries.
 
@@ -120,7 +120,7 @@ The guidance’s metrics and logs are available in an Amazon CloudWatch dashboar
    1. Choose the **menu** tool in the upper right of the `Fulfillment` Lambda widget, select **View logs**, then and choose the **AWS Lambda** function **0**
 
        **FulfillmentLambda function**
-![image24](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image24.jpeg)
+![image24](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image24.jpeg)
 
    1. Inspect the log messages. Each interaction with the guidance is delimited by **START** and **END** messages. Between these messages are insights into how the guidance processes the question.
 

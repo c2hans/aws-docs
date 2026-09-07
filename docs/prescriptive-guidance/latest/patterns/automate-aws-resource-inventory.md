@@ -53,7 +53,7 @@ Infrastructure, security, and finance teams often face visibility and collaborat
 
 The following diagram shows a streamlined process for collecting, organizing, analyzing, and visualizing configuration and compliance data across multiple accounts in an AWS organization.
 
-![Collecting and visualizing configuration and compliance data across an organization.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/67a9667a-da19-4dcb-a2fe-62bc94a0541b/images/c9245de1-ac85-4a9e-a0c0-dbcc27a8bb5d.png)
+![Collecting and visualizing configuration and compliance data across an organization.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/67a9667a-da19-4dcb-a2fe-62bc94a0541b/images/c9245de1-ac85-4a9e-a0c0-dbcc27a8bb5d.png)
 
 The diagram shows the following workflow:
 

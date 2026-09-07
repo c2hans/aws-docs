@@ -29,7 +29,7 @@ This pattern describes the required integrations and provides sample code for he
 
 The following diagram shows the architecture on AWS, including the integration flow between the CDN and other AWS components.
 
-![Architecture for header modification by using Amazon CloudFront and Lambda@Edge](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/00abbe3c-2453-4291-9b24-b488dced4868/images/4ee9a19e-6da2-4c5a-a8bc-19d3918a166e.png)
+![Architecture for header modification by using Amazon CloudFront and Lambda@Edge](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/00abbe3c-2453-4291-9b24-b488dced4868/images/4ee9a19e-6da2-4c5a-a8bc-19d3918a166e.png)
 
 ## Tools
 <a name="modify-http-headers-when-you-migrate-from-f5-to-an-application-load-balancer-on-aws-tools"></a>

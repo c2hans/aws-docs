@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/ge
 
 This tutorial shows you how you can create a React Native app using [React Native CLI](https://reactnative.dev/docs/environment-setup).
 
-![JavaScript code example that applies to React Native.](http://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/browsericon.png)
+![JavaScript code example that applies to React Native.](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/browsericon.png)
 
 **This tutorial shows you:**
 + How to install and include the AWS SDK for JavaScript version 3 (V3) modules that your project uses.
@@ -328,7 +328,7 @@ Starting: Intent { cmp=com.reactnativeapp/.MainActivity }
 
 Enter the bucket name you want to create or delete and click on either **Create Bucket** or **Delete Bucket**. The respective command will be sent to Amazon S3, and success or error message will be displayed.
 
-![Success message showing bucket test-bucket-name-123 created with Create Bucket and Delete Bucket options.](http://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/react-app-running.png)
+![Success message showing bucket test-bucket-name-123 created with Create Bucket and Delete Bucket options.](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/react-app-running.png)
 
 ## Possible Enhancements
 <a name="getting-started-react-native-variations"></a>

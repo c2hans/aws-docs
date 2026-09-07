@@ -23,14 +23,14 @@ Before using the **Publish Container to AWS** wizard to deploy your ASP.NET Core
 
 To deploy an ASP.NET Core 2.0 containerized application targeting Linux, right-click the project in the Solution Explorer and select **Publish Container to AWS**.
 
-![Context menu with Publish Container to AWS option highlighted.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/wiz-ecspub-fargate-step0a.png)
+![Context menu with Publish Container to AWS option highlighted.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/wiz-ecspub-fargate-step0a.png)
 
 You can also select **Publish Container to AWS** on the Visual Studio Build menu.
 
 ## Publish Container to AWS Wizard
 <a name="tkv-deploy-ecs-pubtoaws"></a>
 
-![Publish Container to AWS dialog with profile, Docker image, and ECS deployment settings.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/wiz-ecspub-fargate-step1.png)
+![Publish Container to AWS dialog with profile, Docker image, and ECS deployment settings.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/wiz-ecspub-fargate-step1.png)
 
  **Account profile to use** - Select an account profile to use.
 
@@ -49,7 +49,7 @@ You can also select **Publish Container to AWS** on the Visual Studio Build menu
 ## Launch Configuration page
 <a name="tkv-deploy-ecs-launch-configuration"></a>
 
-![Launch Configuration dialog showing ECS cluster , launch type, compute capacity, and network settings.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/wiz-ecspub-fargate-step2.png)
+![Launch Configuration dialog showing ECS cluster , launch type, compute capacity, and network settings.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/wiz-ecspub-fargate-step2.png)
 
  **ECS Cluster** - Pick the cluster that will run your Docker image. If you choose to create an empty cluster, provide a name for your new cluster.
 
@@ -72,7 +72,7 @@ A security group acts as a firewall for associated Amazon EC2 instances, control
 ## Service Configuration page
 <a name="tkv-deploy-ecs-service"></a>
 
-![Service Configuration page with fields for number of tasks, minimum healthy percent, and maximum percent.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/wiz-ecspub-fargate-step3.png)
+![Service Configuration page with fields for number of tasks, minimum healthy percent, and maximum percent.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/wiz-ecspub-fargate-step3.png)
 
  **Service** - Select one of the services in the drop-down to deploy your container into an existing service. Or choose **Create New** to create a new service. Service names must be unique within a cluster, but you can have similarly named services in multiple clusters within a region or across multiple regions.
 
@@ -85,7 +85,7 @@ A security group acts as a firewall for associated Amazon EC2 instances, control
 ## Application Load Balancer page
 <a name="tkv-deploy-ecs-app-load-balancer"></a>
 
-![Application Load Balancer Configuration dialog with load balancer and target group settings.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/wiz-ecspub-fargate-step4.png)
+![Application Load Balancer Configuration dialog with load balancer and target group settings.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/wiz-ecspub-fargate-step4.png)
 
  **Configure Application Load Balancer** - Check to configure an application load balancer.
 
@@ -104,7 +104,7 @@ If you deploy multiple services, and each service will be deployed to a differen
 ## Task Definition page
 <a name="tkv-deploy-ecs-task-definition"></a>
 
-![Task Definition page showing configuration for ASPNETCoreSample container deployment to AWS .](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/wiz-ecspub-fargate-step5.png)
+![Task Definition page showing configuration for ASPNETCoreSample container deployment to AWS .](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/wiz-ecspub-fargate-step5.png)
 
  **Task Definition** - Select an existing task definition or choose **Create New** and type in the new task definition name.
 
@@ -123,7 +123,7 @@ When you are satisfied with the configuration, click **Publish** to begin the de
 ## Publishing Container to AWS
 <a name="tkv-deploy-ecs-publishing"></a>
 
-![Publishing Container to AWS wizard showing deployment progress with completed tasks.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/wiz-ecspub-fargate-step6.png)
+![Publishing Container to AWS wizard showing deployment progress with completed tasks.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/wiz-ecspub-fargate-step6.png)
 
 Events are displayed during deployment. The wizard is automatically closed on successful completion. You can override this by unchecking the box at the bottom of the page.
 

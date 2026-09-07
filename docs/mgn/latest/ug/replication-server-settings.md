@@ -83,7 +83,11 @@ AWS Transform MGN supports two target storage types for replication. You can sel
 
 MGN does not require special configuration for Local Zones. If you select a subnet in a Local Zone, MGN launches the replication server in that Local Zone the same way it would in any Availability Zone.
 
-When you replicate to a Local Zone, you can store Amazon EBS snapshots in the Local Zone instead of the parent AWS Region. By default, snapshots of Amazon EBS volumes in a Local Zone are stored in the parent AWS Region. If you replicate to a Local Zone that supports local snapshots, you can store the snapshots locally in the Local Zone to meet data residency requirements. This setting is available only when the staging area subnet is in a supported Local Zone. For more information about local snapshots in Local Zones, see [Local snapshots in Local Zones](https://docs.aws.amazon.com/ebs/latest/userguide/snapshots-localzones.html) in the Amazon EBS User Guide.
+When you replicate to a Local Zone, you can store Amazon EBS snapshots in the Local Zone instead of the parent AWS Region. By default, snapshots of Amazon EBS volumes in a Local Zone are stored in the parent AWS Region. If you replicate to a Local Zone that supports local snapshots, you can store the snapshots locally in the Local Zone to meet data residency requirements.
+
+Local snapshots are supported only in Local Zones where MGN offers this feature. If MGN supports local snapshots in the Local Zone that contains your staging area subnet, the option to store snapshots locally is available. If MGN does not support the Local Zone, the option is not available and snapshots are stored in the parent AWS Region. Local snapshots are supported in the Istanbul, Türkiye Local Zone (eu-central-1-ist-1a), which has the Europe (Frankfurt) Region as its parent Region, and in additional Local Zones.
+
+For more information about local snapshots in Local Zones, see [Local snapshots in Local Zones](https://docs.aws.amazon.com/ebs/latest/userguide/snapshots-localzones.html) in the Amazon EBS User Guide.
 
 ## Always use AWS Transform MGN security group
 <a name="cirrus-security-group"></a>
@@ -142,7 +146,7 @@ You should use this option if you want to:
 
  The following diagram illustrates the high-level interaction between the different replication system components when using private IP or VPC endpoint.
 
-![MGN network architecture diagram featuring a private link/VPC](http://docs.aws.amazon.com/mgn/latest/ug/images/AWS-MGN-Network-Architecture-Private-Link.png)
+![MGN network architecture diagram featuring a private link/VPC](https://docs.aws.amazon.com/mgn/latest/ug/images/AWS-MGN-Network-Architecture-Private-Link.png)
 
 #### Create public IP
 <a name="public-ip"></a>

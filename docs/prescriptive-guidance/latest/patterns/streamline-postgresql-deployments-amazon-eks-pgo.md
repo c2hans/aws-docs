@@ -49,7 +49,7 @@ This integration provides the following key benefits:
 
 **Target architecture **
 
-![Architecture for using PGO with three Availability Zones and two replicas, PgBouncer, and PGO operator.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/4c164012-7527-4ebe-b6a7-c129600328d6/images/26a5572b-405b-4634-b96a-91254c3ea2c1.png)
+![Architecture for using PGO with three Availability Zones and two replicas, PgBouncer, and PGO operator.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/4c164012-7527-4ebe-b6a7-c129600328d6/images/26a5572b-405b-4634-b96a-91254c3ea2c1.png)
 
 This pattern builds an architecture that contains an Amazon EKS cluster with three nodes. Each node runs on a set of EC2 instances in the backend. This PostgreSQL setup follows a primary replica architecture, which is particularly effective for read-heavy use cases. The architecture includes the following components:
 + **Primary database container (pg-primary)** hosts the main PostgreSQL instance where all write operations are directed.

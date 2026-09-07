@@ -60,7 +60,7 @@ After you create the dashboard, you generate a data story that explains the insi
 
 The following diagram shows an architecture for generating business insights from mainframe data by using [AWS Mainframe Modernization Data Replication with Precisely](https://aws.amazon.com/mainframe-modernization/capabilities/data-replication/) and Amazon Q in Quick Sight.
 
-![Seven-step process from z/OS mainframe to Amazon QuickSight.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/18e72bcb-1b9a-406a-8220-83aca7743ad2/images/cddb6d20-14ae-4276-90d8-14df435db824.png)
+![Seven-step process from z/OS mainframe to Amazon QuickSight.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/18e72bcb-1b9a-406a-8220-83aca7743ad2/images/cddb6d20-14ae-4276-90d8-14df435db824.png)
 
 The diagram shows the following workflow:
 
@@ -280,11 +280,11 @@ FROM CDCIN;
 
 The following data visual was created by Amazon Q in Quick Sight for the analysis question `show member distribution by region`*.*
 
-![Northeast and Southwest have 8 members, Southwest has 5 members, Midwest has 4 members.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/18e72bcb-1b9a-406a-8220-83aca7743ad2/images/b40a784c-c1fc-444b-b6df-8bd1f7a6abaa.png)
+![Northeast and Southwest have 8 members, Southwest has 5 members, Midwest has 4 members.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/18e72bcb-1b9a-406a-8220-83aca7743ad2/images/b40a784c-c1fc-444b-b6df-8bd1f7a6abaa.png)
 
 The following data visual was created by Amazon Q in Quick Sight for the question `show member distribution by Region who have not completed preventive immunization, in pie chart`.
 
-![Southeast shows 6, Southwest shows 5, and Midwest shows 4.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/18e72bcb-1b9a-406a-8220-83aca7743ad2/images/8a95da3c-df4a-458b-9cfe-44e34f80a235.png)
+![Southeast shows 6, Southwest shows 5, and Midwest shows 4.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/18e72bcb-1b9a-406a-8220-83aca7743ad2/images/8a95da3c-df4a-458b-9cfe-44e34f80a235.png)
 
 **Data story output**
 
@@ -292,21 +292,21 @@ The following screenshots show sections of the data story created by Amazon Q in
 
 In the introduction, the data story recommends choosing the region with the most members to gain the greatest impact from immunization efforts.
 
-![Introduction screen for analysis based on geographic, demographic, and age of the member base.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/18e72bcb-1b9a-406a-8220-83aca7743ad2/images/40f13957-2db4-42b7-b7a4-a0dd3dad6899.png)
+![Introduction screen for analysis based on geographic, demographic, and age of the member base.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/18e72bcb-1b9a-406a-8220-83aca7743ad2/images/40f13957-2db4-42b7-b7a4-a0dd3dad6899.png)
 
 The data story provides an analysis of member numbers for the four regions. The Northeast, Southwest, and Southeast regions have the most members.
 
-![Northeast and Southwest regions have 8 members, Southeast has 6 members, and Midwest has 4 members.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/18e72bcb-1b9a-406a-8220-83aca7743ad2/images/fc6ed0a0-b79c-4397-95ac-a2fc4c87482a.png)
+![Northeast and Southwest regions have 8 members, Southeast has 6 members, and Midwest has 4 members.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/18e72bcb-1b9a-406a-8220-83aca7743ad2/images/fc6ed0a0-b79c-4397-95ac-a2fc4c87482a.png)
 
 The data story presents an analysis of members by age.
 
-![Chart showing that the member base skews toward younger and middle-aged adults.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/18e72bcb-1b9a-406a-8220-83aca7743ad2/images/8c56f1ec-3a2e-47a6-bbc4-3631782aa333.png)
+![Chart showing that the member base skews toward younger and middle-aged adults.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/18e72bcb-1b9a-406a-8220-83aca7743ad2/images/8c56f1ec-3a2e-47a6-bbc4-3631782aa333.png)
 
 The data story focuses on immunization efforts in the Midwest.
 
-![Recommendation for personal outreach campaign and regional challenges.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/18e72bcb-1b9a-406a-8220-83aca7743ad2/images/84a647e8-c7d5-4637-94f0-03a611f899b3.png)
+![Recommendation for personal outreach campaign and regional challenges.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/18e72bcb-1b9a-406a-8220-83aca7743ad2/images/84a647e8-c7d5-4637-94f0-03a611f899b3.png)
 
-![Continuation of data story analysis, with anticipated outcomes and conclusion.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/18e72bcb-1b9a-406a-8220-83aca7743ad2/images/fc9094fc-2a20-485d-b238-e5e4ec70f1d3.png)
+![Continuation of data story analysis, with anticipated outcomes and conclusion.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/18e72bcb-1b9a-406a-8220-83aca7743ad2/images/fc9094fc-2a20-485d-b238-e5e4ec70f1d3.png)
 
 ## Attachments
 <a name="attachments-18e72bcb-1b9a-406a-8220-83aca7743ad2"></a>

@@ -20,7 +20,7 @@ include_space = false
 
 Using random secrets generation when you deploy IaC help you protect sensitive data from the very start, known as *zero hours*. The sensitive data is never known to anyone, right from the deployment phase.
 
-![Terraform using AWS Secrets Manager to create and use a random secret.](http://docs.aws.amazon.com/prescriptive-guidance/latest/secure-sensitive-data-secrets-manager-terraform/images/guide-img/e6185df2-3707-4018-a94c-6edc793f0353/images/3b1be47e-430d-4226-a46c-76070a44636b.png)
+![Terraform using AWS Secrets Manager to create and use a random secret.](https://docs.aws.amazon.com/prescriptive-guidance/latest/secure-sensitive-data-secrets-manager-terraform/images/guide-img/e6185df2-3707-4018-a94c-6edc793f0353/images/3b1be47e-430d-4226-a46c-76070a44636b.png)
 
 1. Through Terraform, use AWS Secrets Manager to generate a random password secret.
 

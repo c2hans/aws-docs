@@ -38,7 +38,7 @@ In the next phase, CodeBuild performs these tasks:
 
 1. Initiates CodeDeploy deployment to an Amazon Elastic Compute Cloud (Amazon EC2) instance by using the combined archive.
 
-![Pipeline creation in unsupported AWS Region](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e27750de-b597-424e-b5bf-4d58dc9b60cc/images/95fc815e-a762-4142-b0fd-2a716823e498.png)
+![Pipeline creation in unsupported AWS Region](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e27750de-b597-424e-b5bf-4d58dc9b60cc/images/95fc815e-a762-4142-b0fd-2a716823e498.png)
 
 ## Tools
 <a name="create-a-pipeline-in-aws-regions-that-don-t-support-aws-codepipeline-tools"></a>

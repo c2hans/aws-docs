@@ -15,7 +15,7 @@ The single CCoE should serve as the central governing body that establishes stan
 
 The following diagram illustrates how a CCoE can provide a centralized approach and governance across multiple lines of business (LOBs), cloud engineering teams, and Cloud Business Office (CBO) teams.
 
-![CCoE structure in a multicloud environment.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-multicloud/images/guide-img/8816e8ab-0d53-4fd1-b9e5-e4a8b4620ced/images/bfe0628a-fe90-4908-9db0-cf44ac9e7f9a.png)
+![CCoE structure in a multicloud environment.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-multicloud/images/guide-img/8816e8ab-0d53-4fd1-b9e5-e4a8b4620ced/images/bfe0628a-fe90-4908-9db0-cf44ac9e7f9a.png)
 
 **Our guidance:**
 + Structure your CCoE to maintain strategic oversight while embedding specialized expertise for each cloud provider. Focus on recruiting deep expertise in individual cloud platforms instead of seeking rare multicloud specialists, and foster internal knowledge sharing to build organizational capabilities.

@@ -9,7 +9,7 @@ The [agile approach](https://docs.aws.amazon.com/prescriptive-guidance/latest/mi
 
 An agile process allows for more dynamic and adaptive solutions, instead of relying solely on the capabilities of a specific tool. *Fail fast* is a philosophy that uses frequent and incremental testing to reduce the development lifecycle, and it is a critical part of an agile approach. Make a change, test it out, and then decide whether to continue with the current approach or switch to an alternate one. If the teams work in this cycle, it helps your organization stay current with the fast-paced nature of the cloud. Focused training is also crucial, and you should provide training that is specific to a particular domain of cloud security.
 
-![Create specialized roles that correspond to the AWS CAF capabilities in the security pillar.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-accelerating-security-maturity/images/guide-img/2162f372-44e6-4f4b-80cc-427f9fca7a33/images/2d651d3d-d15b-4e61-abce-6ba50996285f.png)
+![Create specialized roles that correspond to the AWS CAF capabilities in the security pillar.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-accelerating-security-maturity/images/guide-img/2162f372-44e6-4f4b-80cc-427f9fca7a33/images/2d651d3d-d15b-4e61-abce-6ba50996285f.png)
 
 |
 |

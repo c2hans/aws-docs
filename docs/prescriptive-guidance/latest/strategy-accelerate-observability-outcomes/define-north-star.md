@@ -31,11 +31,11 @@ Make observability a responsibility for every member of the engineering, operati
 
 Based on the architectural complexity and size of your business, you might need to set up a dedicated team that focuses on observability. This team will be responsible for configuring the observability tools and setting up the observability platform for other teams. We also recommend setting up a dedicated team if you choose a standard OpenTelemetry implementation. In smaller organizations, you can assign observability as an additional responsibility for every team member and also appoint observability champions who evangelize and enforce best practices across teams. These champions volunteer a part of their day to define processes and set standards for the organization. They work either as a self-norming team or can be led by dedicated observability specialists. The following diagram shows how your investment can determine your organizational approach.
 
-![How to determine responsibility for observability based on investments.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-accelerate-observability-outcomes/images/guide-img/81bb2e9d-84eb-4662-8792-f2a3fb2603f4/images/608a6dd3-738e-4c0e-9a97-5e0490368694.png)
+![How to determine responsibility for observability based on investments.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-accelerate-observability-outcomes/images/guide-img/81bb2e9d-84eb-4662-8792-f2a3fb2603f4/images/608a6dd3-738e-4c0e-9a97-5e0490368694.png)
 
 The champions could be fully embedded in teams (as shown for Team 2 in the following illustration) or be part of an enabling team that rotates across the teams to establish and promote best practices (Team 1 in the illustration).
 
-![Setting up enabling teams or embedding observability champions.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-accelerate-observability-outcomes/images/guide-img/81bb2e9d-84eb-4662-8792-f2a3fb2603f4/images/58424583-46f1-4ad5-ac46-43265cfdde06.png)
+![Setting up enabling teams or embedding observability champions.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-accelerate-observability-outcomes/images/guide-img/81bb2e9d-84eb-4662-8792-f2a3fb2603f4/images/58424583-46f1-4ad5-ac46-43265cfdde06.png)
 
 ## Track cost allocation
 <a name="cost-allocation"></a>

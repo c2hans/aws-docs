@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/retrieval-a
 
 Retrieval Augmented Generation (RAG) is a technique used to augment a large language model (LLM) with external data, such as a company's internal documents. This provides the model with the context it needs to produce accurate and useful output for your specific use case. RAG is a pragmatic and effective approach to using LLMs in an enterprise. The following diagram shows a high-level overview of how a RAG approach works.
 
-![An orchestrator performs a semantic search on custom documents and then provides inputs to the LLM.](http://docs.aws.amazon.com/prescriptive-guidance/latest/retrieval-augmented-generation-options/images/guide-img/22e94edd-d3e5-4e29-8c94-48e327306335/images/2dadb23f-cff6-4b90-9433-08c0d2e3d9cf.png)
+![An orchestrator performs a semantic search on custom documents and then provides inputs to the LLM.](https://docs.aws.amazon.com/prescriptive-guidance/latest/retrieval-augmented-generation-options/images/guide-img/22e94edd-d3e5-4e29-8c94-48e327306335/images/2dadb23f-cff6-4b90-9433-08c0d2e3d9cf.png)
 
 Broadly speaking, the RAG process is four steps. The first step is done once, and the other three steps are done as many times as needed:
 

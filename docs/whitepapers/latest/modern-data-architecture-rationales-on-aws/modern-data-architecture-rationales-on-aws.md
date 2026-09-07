@@ -39,7 +39,7 @@ This paper also provides context around how Amazon Web Service (AWS) Cloud analy
 
  This approach suggests gradual building of the data warehouse by adding new data marts. Data marts are added by adding new [fact tables](https://en.wikipedia.org/wiki/Fact_table) to represent transactional and event data, and by adding new dimensions or attributes to existing conformed dimensions.
 
-![A diagram depicting the bottom-up EDW approach.](http://docs.aws.amazon.com/whitepapers/latest/modern-data-architecture-rationales-on-aws/images/modern-data-arch-1.png)
+![A diagram depicting the bottom-up EDW approach.](https://docs.aws.amazon.com/whitepapers/latest/modern-data-architecture-rationales-on-aws/images/modern-data-arch-1.png)
 
  The various combination of dimensions and facts form a logical data mart for a specific business use case.
 
@@ -63,7 +63,7 @@ This paper also provides context around how Amazon Web Service (AWS) Cloud analy
 
  According to this approach, data from all the source systems is unified, formatted, type casted, and semantically translated (mapped to the same vocabulary up front). To achieve this, organizations must put in significant amounts of time and effort to define a unified data model to align all the data elements from the source systems.
 
-![A diagram depicting the top-down EDW approach.](http://docs.aws.amazon.com/whitepapers/latest/modern-data-architecture-rationales-on-aws/images/modern-data-arch-2.png)
+![A diagram depicting the top-down EDW approach.](https://docs.aws.amazon.com/whitepapers/latest/modern-data-architecture-rationales-on-aws/images/modern-data-arch-2.png)
 
 ##### Benefits:
 <a name="benefits-1"></a>

@@ -25,7 +25,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-modern-data-str
 
  The following diagram illustrates the modern data architecture with access logs data as an input to derive near real-time dashboards and notifications.
 
-![Access logs streaming applications for anomaly detection using Amazon Kinesis Data Analytics and Amazon OpenSearch Service](http://docs.aws.amazon.com/whitepapers/latest/build-modern-data-streaming-analytics-architectures/images/anomaly-detection.png)
+![Access logs streaming applications for anomaly detection using Amazon Kinesis Data Analytics and Amazon OpenSearch Service](https://docs.aws.amazon.com/whitepapers/latest/build-modern-data-streaming-analytics-architectures/images/anomaly-detection.png)
 
  The steps that follow the architecture are:
 
@@ -44,7 +44,7 @@ Customers want to stream near real-time data from diverse source systems such as
 
 The following diagram illustrates the modern data architecture with input stream data to derive near real-time dashboards.
 
-![Derive insights from input data coming from diverse source systems for near real-time dashboards with Amazon QuickSight.](http://docs.aws.amazon.com/whitepapers/latest/build-modern-data-streaming-analytics-architectures/images/input-data.png)
+![Derive insights from input data coming from diverse source systems for near real-time dashboards with Amazon QuickSight.](https://docs.aws.amazon.com/whitepapers/latest/build-modern-data-streaming-analytics-architectures/images/input-data.png)
 
  The steps that follow the architecture are:
 
@@ -59,7 +59,7 @@ The following diagram illustrates the modern data architecture with input stream
 
  Customers want low-latency near real-time analytics to process user behavior and respond almost instantaneously with relevant offers and recommendations. The customer’s attention will be lost if these recommendations are not available for days, hours, or even minutes – they need to happen in near real-time. The following diagram illustrates a typical modern data architecture for a streaming data pipeline to keep the application up to date, and to store streaming data into a data lake for offline analysis.
 
-![A diagram depicting building a serverless streaming data pipeline .](http://docs.aws.amazon.com/whitepapers/latest/build-modern-data-streaming-analytics-architectures/images/serverless-data-pipeline.png)
+![A diagram depicting building a serverless streaming data pipeline .](https://docs.aws.amazon.com/whitepapers/latest/build-modern-data-streaming-analytics-architectures/images/serverless-data-pipeline.png)
 
  The steps that follow the architecture are:
 
@@ -84,7 +84,7 @@ You can use both DynamoDB and OpenSearch Service to build a near real-time searc
 
 The following diagram illustrates the modern data architecture with Amazon DynamoDB and Amazon OpenSearch Service.
 
-![Derive insights from Amazon DynamoDB data by setting up near real-time search using Amazon OpenSearch Service .](http://docs.aws.amazon.com/whitepapers/latest/build-modern-data-streaming-analytics-architectures/images/derive-insights.png)
+![Derive insights from Amazon DynamoDB data by setting up near real-time search using Amazon OpenSearch Service .](https://docs.aws.amazon.com/whitepapers/latest/build-modern-data-streaming-analytics-architectures/images/derive-insights.png)
 
  The steps that follow the architecture are:
 
@@ -103,7 +103,7 @@ Organizations with online businesses have to be on guard constantly for fraudule
 
 The following diagram illustrates the modern streaming data architecture for building fraud prevention system using Amazon MSK, Amazon Managed Service for Apache Flink, and Amazon Fraud Detector.
 
-![Reference architecture diagram depicting a fraud detection system.](http://docs.aws.amazon.com/whitepapers/latest/build-modern-data-streaming-analytics-architectures/images/build-fraud-detection-on-aws.png)
+![Reference architecture diagram depicting a fraud detection system.](https://docs.aws.amazon.com/whitepapers/latest/build-modern-data-streaming-analytics-architectures/images/build-fraud-detection-on-aws.png)
 
 The first use case demonstrates fraud prevention by identifying fraudulent transactions, flagging them to be blocked, and sending an alert notification. The second writes all transactions in real time to Amazon OpenSearch Service, which enables real-time transaction reporting using OpenSearch dashboards.
 
@@ -132,7 +132,7 @@ The Game Analytics Pipeline solution helps game developers launch a scalable ser
 
 The following diagram illustrates the modern data streaming architecture with streaming games data from various devices to derive real-time insights.
 
-![Reference architecture diagram that shows real-time persona-centric games insights from various devices.](http://docs.aws.amazon.com/whitepapers/latest/build-modern-data-streaming-analytics-architectures/images/derive-gaming-insights.png)
+![Reference architecture diagram that shows real-time persona-centric games insights from various devices.](https://docs.aws.amazon.com/whitepapers/latest/build-modern-data-streaming-analytics-architectures/images/derive-gaming-insights.png)
 
 The steps that follow the architecture are:
 

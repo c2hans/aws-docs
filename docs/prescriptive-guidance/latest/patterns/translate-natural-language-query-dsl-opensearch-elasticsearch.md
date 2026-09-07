@@ -93,7 +93,7 @@ This solution was tested in Amazon OpenSearch Service. If you want to use Elasti
 
 The following diagram illustrates the architecture for this pattern.
 
-![Architecture for translating natural language to query DSL in Amazon Bedrock.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/75296405-2893-4328-9551-9bcc6ec7fd3e/images/ffb1b893-d23c-4e1c-b679-8063b4f85a8a.png)
+![Architecture for translating natural language to query DSL in Amazon Bedrock.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/75296405-2893-4328-9551-9bcc6ec7fd3e/images/ffb1b893-d23c-4e1c-b679-8063b4f85a8a.png)
 
 where:
 

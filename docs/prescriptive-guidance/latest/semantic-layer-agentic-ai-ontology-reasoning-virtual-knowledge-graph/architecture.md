@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/semantic-la
 ## High-Level Architecture (HLA)
 <a name="high-level-architecture--hla-.4ebd0208-8328-5d69-8c44-ec50939c0967"></a>
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/semantic-layer-agentic-ai-ontology-reasoning-virtual-knowledge-graph/images/guide-img/5cb278fc-4bbf-4e43-a830-4b4f72516d31/images/572339e9-7723-42b9-95db-8637c67bef72.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/semantic-layer-agentic-ai-ontology-reasoning-virtual-knowledge-graph/images/guide-img/5cb278fc-4bbf-4e43-a830-4b4f72516d31/images/572339e9-7723-42b9-95db-8637c67bef72.png)
 
 ## Target technology stack
 <a name="target-technology-stack.234aa248-3086-5037-b974-544e4afae998"></a>

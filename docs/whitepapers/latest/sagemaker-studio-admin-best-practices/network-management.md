@@ -61,11 +61,11 @@ SageMaker AI and participating AWS services inject [elastic network interfaces](
 
  The **public internet only** option allows SageMaker AI API services to use public internet via the internet gateway provisioned in the VPC, managed by the SageMaker AI service account, as seen in the following diagram:
 
-![Default mode: Internet access via SageMaker AI service account.](http://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/default-mode.png)
+![Default mode: Internet access via SageMaker AI service account.](https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/default-mode.png)
 
  The **VPC only** option disables internet routing from the VPC managed by the SageMaker AI service account, and allows customer to configure the traffic to be routed over VPC endpoints, as seen in the following diagram:
 
-![VPC only mode: No internet access via SageMaker AI service account.](http://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/vpc-only-mode.png)
+![VPC only mode: No internet access via SageMaker AI service account.](https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/images/vpc-only-mode.png)
 
  For a domain set up in VPC only mode, set up a security group per user profile to ensure complete isolation of underlying instances. Each domain in an AWS account can have its own VPC configuration and internet mode. For more details regarding setting up the VPC network configuration, refer to [Connect SageMaker AI Studio Notebooks in a VPC to External Resources](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-notebooks-and-internet-access.html).
 

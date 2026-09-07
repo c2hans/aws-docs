@@ -15,7 +15,7 @@ The AWS Organizational Change Acceleration (OCA) 6-Point Framework is intended t
 
 The framework's six points align with an agile sprint cadence, from program initiation through sustainable long-term change. The following diagram shows these six points and their subpoints.
 
-![AWS OCA 6-Point Framework points and subpoints.](http://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-mobilize-team/images/guide-img/92b6ddba-987c-49cf-bc18-ab8ec8f36978/images/64a8051f-8148-4b5a-aa90-12783536c7db.png)
+![AWS OCA 6-Point Framework points and subpoints.](https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-mobilize-team/images/guide-img/92b6ddba-987c-49cf-bc18-ab8ec8f36978/images/64a8051f-8148-4b5a-aa90-12783536c7db.png)
 
 The first point, *Mobilize Team*, helps you start building structure and measures of success and governance around your change acceleration effort and activities. It contains eight subpoints:
 + [1.1 OCA program charter](program-charter.md). Describes the goals, sponsors, scope, structure, and processes of the change acceleration workstream, so you can lead the organization through the overall change acceleration effort effectively.

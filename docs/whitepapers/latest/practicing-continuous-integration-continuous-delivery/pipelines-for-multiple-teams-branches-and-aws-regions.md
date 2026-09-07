@@ -22,7 +22,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous
 
  You can view detailed history of each build using the CodeBuild dashboard. Events are stored as Amazon CloudWatch Logs log files.
 
-![Screenshot showing CloudWatch Logs log files in AWS CodeBuild](http://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/cloudwatch-logs.png)
+![Screenshot showing CloudWatch Logs log files in AWS CodeBuild](https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/cloudwatch-logs.png)
 
 ## Pipeline integration with Jenkins
 <a name="pipeline-integration-with-jenkins"></a>
@@ -35,4 +35,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous
 
  The following figure shows a sample Jenkins pipeline, with four defined stages visualized by the Pipeline Stage View Plugin.
 
-![Showing Defined stages of Jenkins pipeline visualized by the Pipeline Stage View Plugin](http://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/jenkins-pipeline-visual.png)
+![Showing Defined stages of Jenkins pipeline visualized by the Pipeline Stage View Plugin](https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/images/jenkins-pipeline-visual.png)

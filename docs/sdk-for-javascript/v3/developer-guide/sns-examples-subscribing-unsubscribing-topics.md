@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/sn
 # Managing Subscriptions in Amazon SNS
 <a name="sns-examples-subscribing-unsubscribing-topics"></a>
 
-![JavaScript code example that applies to Node.js execution](http://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/nodeicon.png)
+![JavaScript code example that applies to Node.js execution](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/nodeicon.png)
 
 **This Node.js code example shows:**
 + How to list all subscriptions to an Amazon SNS topic.
@@ -194,7 +194,7 @@ Define the parameters, including the `TOPIC_ARN` and `TOKEN`, and define a value
 
 The token is a short-lived token sent to the owner of an endpoint during a previous `SUBSCRIBE` action. For example, for an email endpoint the `TOKEN` is in the URL of the Confirm Subscription email sent to the email owner. For example, `abc123` is the token in the following URL.
 
-![Subscription confirmed message showing an email address subscribed to an SNS topic.](http://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/token.png)
+![Subscription confirmed message showing an email address subscribed to an SNS topic.](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/images/token.png)
 
 To call the `ConfirmSubscriptionCommand` method, create an asynchronous function invoking an Amazon SNS client service object, passing the parameters object.
 

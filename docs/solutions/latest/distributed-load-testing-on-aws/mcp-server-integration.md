@@ -27,7 +27,7 @@ Before configuring any MCP client, you need to retrieve your MCP Server endpoint
 **Important**
 Keep your access token secure and do not share it publicly. The token provides read-only access to your Distributed Load Testing solution through the MCP interface.
 
-![MCP Server credentials page showing endpoint and access token](http://docs.aws.amazon.com/solutions/latest/distributed-load-testing-on-aws/images/mcp-credentials.png)
+![MCP Server credentials page showing endpoint and access token](https://docs.aws.amazon.com/solutions/latest/distributed-load-testing-on-aws/images/mcp-credentials.png)
 
 ## Step 2: Test with MCP Inspector
 <a name="mcp-inspector-setup"></a>
@@ -55,7 +55,7 @@ MCP Inspector requires version 0.17 or later. All requests can also be made with
 
 1. Choose **Connect** to establish the connection.
 
-![MCP Inspector configuration screen](http://docs.aws.amazon.com/solutions/latest/distributed-load-testing-on-aws/images/mcp-inspector-config.png)
+![MCP Inspector configuration screen](https://docs.aws.amazon.com/solutions/latest/distributed-load-testing-on-aws/images/mcp-inspector-config.png)
 
  **Invoke tools**
 
@@ -69,7 +69,7 @@ Once connected, you can test the available MCP tools:
 
 1. Choose **Invoke** to execute the tool and view the response.
 
-![MCP Inspector showing available tools and invocation](http://docs.aws.amazon.com/solutions/latest/distributed-load-testing-on-aws/images/mcp-inspector-tools.png)
+![MCP Inspector showing available tools and invocation](https://docs.aws.amazon.com/solutions/latest/distributed-load-testing-on-aws/images/mcp-inspector-tools.png)
 
 ## Step 3: Configure AI development clients
 <a name="configuring-ai-clients"></a>

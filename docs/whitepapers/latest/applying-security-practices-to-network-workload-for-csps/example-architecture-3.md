@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/applying-security-pra
 
  An example architecture of a 5GC workload on the AWS Region, RAN CU on an [AWS Local Zone](https://aws.amazon.com/about-aws/global-infrastructure/localzones/), and RAN distributed unit (DU) on customer premise.
 
-![5G network architecture showing AWS Region with core functions, Local Zone with RAN vCU, and customer premise with RAN vDU.](http://docs.aws.amazon.com/whitepapers/latest/applying-security-practices-to-network-workload-for-csps/images/architecture-5g-core-ran.png)
+![5G network architecture showing AWS Region with core functions, Local Zone with RAN vCU, and customer premise with RAN vDU.](https://docs.aws.amazon.com/whitepapers/latest/applying-security-practices-to-network-workload-for-csps/images/architecture-5g-core-ran.png)
 
  Security description of the example architecture of 5G RAN network function on AWS Local Zones and customer on-premises network:
 

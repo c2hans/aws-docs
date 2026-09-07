@@ -28,7 +28,7 @@ Always map technical debt to business value by prioritizing effort along strateg
 
  Navigating those three strategies across your business applications portfolio will enable the flywheel for your cloud transformation.
 
-![A diagram showing business strategy-driven transformation approach](http://docs.aws.amazon.com/whitepapers/latest/cloud-driven-enterprise-transformation-on-aws/images/CT3.jpg)
+![A diagram showing business strategy-driven transformation approach](https://docs.aws.amazon.com/whitepapers/latest/cloud-driven-enterprise-transformation-on-aws/images/CT3.jpg)
 
 *Cloud transformation flywheel model *
 
@@ -38,7 +38,7 @@ With so many options, analysis paralysis can set in. Tackle the change volume th
 
 Evaluating options that are not realistic based on team skills, resources, or other priorities get a lot of companies stuck in analysis paralysis. Embracing a mindset of data-driven, continuous improvement permits teams to focus on incremental change, smaller steps, and using performance data and feedback to inform the ongoing path of modernization and optimization.
 
-![A diagram of the application portfolio rationalization decision model](http://docs.aws.amazon.com/whitepapers/latest/cloud-driven-enterprise-transformation-on-aws/images/CloudTransformation4.png)
+![A diagram of the application portfolio rationalization decision model](https://docs.aws.amazon.com/whitepapers/latest/cloud-driven-enterprise-transformation-on-aws/images/CloudTransformation4.png)
 
 *Application portfolio rationalization decision model *
 

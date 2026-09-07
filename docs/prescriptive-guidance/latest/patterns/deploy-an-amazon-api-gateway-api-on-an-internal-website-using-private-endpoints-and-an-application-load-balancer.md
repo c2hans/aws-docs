@@ -40,7 +40,7 @@ For more information about quotas (formerly referred to as limits) for load bala
 
 The following diagram shows how an Application Load Balancer is deployed in a VPC that directs web traffic to a website target group or API Gateway target group based on Application Load Balancer listener rules. The API Gateway target group is a list of IP addresses for the VPC endpoint in API Gateway. API Gateway is configured to make the API private with its resource policy. The policy denies all calls that are not from a specific VPC endpoint. Custom domain names in API gateway are updated to use api.domain.com for the API and its stage. Application Load Balancer rules are added to route traffic based on the host name.
 
-![Architecture that uses Application Load Balancer listener rules to direct web traffic.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/83145062-4535-4ad0-8947-4ea8950cd174/images/12715186-26ea-4123-b9ef-e3105a934ff3.png)
+![Architecture that uses Application Load Balancer listener rules to direct web traffic.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/83145062-4535-4ad0-8947-4ea8950cd174/images/12715186-26ea-4123-b9ef-e3105a934ff3.png)
 
 The diagram shows the following workflow:
 

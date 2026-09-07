@@ -26,7 +26,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 
  To implement an industrial data catalog, we must ingest and catalog data from diverse OT and IT sources. AWS offers scalable ingestion services to collect factory data into a central data lake, where it can be cataloged. The following diagram illustrates a reference architecture for an Industry 4.0 data environment on AWS, highlighting how data flows from edge devices to the cloud data lake and into the AWS AWS Glue Data Catalog:
 
-![ADD ALTERNATE TEXT HERE for people using assistive technology.](http://docs.aws.amazon.com/wellarchitected/latest/modern-industrial-data-technology-lens/images/image2.png)
+![ADD ALTERNATE TEXT HERE for people using assistive technology.](https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial-data-technology-lens/images/image2.png)
 
  Data ingestion from the factory floor can be achieved using multiple services, depending on data type and latency requirements:
 +  **Real-time IoT streams**: Use AWS IoT services at the edge and cloud to collect IIoT telemetry. For example, deploy AWS IoT Greengrass on plant floor gateways to preprocess data, then send sensor streams through AWS IoT Core. From IoT Core, you can route data to Amazon Data Firehose, which reliably buffers and delivers the streaming data into Amazon S3 (your data lake) in near real-time. This path is ideal for high-volume telemetry (like vibration or temperature) from PLCs or CNC machines that needs to be stored for analysis.

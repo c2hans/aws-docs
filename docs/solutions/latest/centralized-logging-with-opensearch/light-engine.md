@@ -78,7 +78,7 @@ The Log Archiver manages the lifecycle of data stored in Amazon S3, and cleanup 
 
  **Light Engine architecture.**
 
-![image14](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image14.png)
+![image14](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/images/image14.png)
 
 The Light Engine runs the following workflow:
 

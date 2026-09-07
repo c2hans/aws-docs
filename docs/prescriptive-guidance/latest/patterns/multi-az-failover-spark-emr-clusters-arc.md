@@ -41,7 +41,7 @@ Under standard conditions, the primary Availability Zone hosts an active EMR clu
 
 **Target architecture**
 
-![Architecture for an automated recovery mechanism with Application Recovery Cotnroller.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e5ecdb66-0eef-4a6a-8367-982a55104748/images/e982d580-13db-4bdd-9f6b-6400d7c31c01.png)
+![Architecture for an automated recovery mechanism with Application Recovery Cotnroller.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e5ecdb66-0eef-4a6a-8367-982a55104748/images/e982d580-13db-4bdd-9f6b-6400d7c31c01.png)
 
 This architecture provides application resilience by using multiple Availability Zones and implementing an automated recovery mechanism through the Application Recovery Controller.
 

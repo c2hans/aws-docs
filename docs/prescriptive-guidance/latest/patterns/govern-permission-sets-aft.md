@@ -75,7 +75,7 @@ custom_fields = {
 
 The following diagram shows a step-by-step workflow of how the solution updates permissions sets for users and groups in the target AWS accounts at scale. When the user initiates an account creation request, AFT initiates the `aft-account-provisioning-framework` Step Functions state machine. This state machine starts the `extract-alternate-sso` Lambda function. The Lambda function assigns permissions sets to users and groups in the target AWS accounts. These users or groups can be from any configured identity source in IAM Identity Center. Examples of identity sources include Okta, Active Directory, or Ping Identity.
 
-![Workflow of updating permission sets when an account is created or updated.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/14751255-3781-48db-a6b7-1a03e28c1020/images/d1de252d-8ac9-4f7d-a559-4ab3e852f325.png)
+![Workflow of updating permission sets when an account is created or updated.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/14751255-3781-48db-a6b7-1a03e28c1020/images/d1de252d-8ac9-4f7d-a559-4ab3e852f325.png)
 
 The diagram shows the following workflow when new accounts are created:
 
@@ -157,7 +157,7 @@ The code repository for AFT is available in the GitHub [AWS Control Tower Accoun
 
 You can choose to integrate this solution with a ticket or issue management tool, such as Jira or ServiceNow. The following diagram shows an example workflow for this option. You can integrate the ticket management tool with the AFT solution repositories by using your tool’s connectors. For Jira connectors, see [Integrate Jira with GitHub](https://support.atlassian.com/jira-cloud-administration/docs/integrate-jira-software-with-github/). For ServiceNow connectors, see [Integrating with GitHub](https://www.servicenow.com/docs/bundle/washingtondc-it-asset-management/page/product/software-asset-management2/concept/integrate-with-github.html). You can even build custom solutions that require users to provide a ticket ID as part of the pull request approval. If a request to create a new AWS account by using AFT is approved, that event could initiate a workflow that adds custom fields to the `aft-account-request` GitHub repository. You can design any custom workflow that meets the requirements of your use case.
 
-![Workflow that uses GitHub Actions and a ticket management tool.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/14751255-3781-48db-a6b7-1a03e28c1020/images/83763f65-32ea-4de0-932f-14a1b2d1d3ad.png)
+![Workflow that uses GitHub Actions and a ticket management tool.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/14751255-3781-48db-a6b7-1a03e28c1020/images/83763f65-32ea-4de0-932f-14a1b2d1d3ad.png)
 
 The diagram shows the following workflow:
 

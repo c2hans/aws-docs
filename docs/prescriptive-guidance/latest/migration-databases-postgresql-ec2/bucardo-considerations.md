@@ -16,7 +16,7 @@ Here are the most common use cases for Bucardo:
 
 The following diagram shows the architecture for migrating an on-premises PostgreSQL database to the AWS Cloud by using Bucardo.
 
-![Bucardo architecture](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-databases-postgresql-ec2/images/guide-img/d9d57133-1a8b-4b7f-bbe9-e908969d06b9/images/2133fb23-8f26-4cb7-a58c-96286e1f60a6.png)
+![Bucardo architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-databases-postgresql-ec2/images/guide-img/d9d57133-1a8b-4b7f-bbe9-e908969d06b9/images/2133fb23-8f26-4cb7-a58c-96286e1f60a6.png)
 
 The diagram shows the following workflow:
 

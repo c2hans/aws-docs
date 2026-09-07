@@ -16,7 +16,7 @@ The following diagram shows the key components that you'll use in this tutorial:
 + **A security group** – Acts as a virtual firewall to control inbound and outbound traffic.
 + **An EBS volume** – A root volume is required for the image. You can optionally add data volumes.
 
-![An instance with a security group, key pair, and EBS root volume.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/get-started-diagram.png)
+![An instance with a security group, key pair, and EBS root volume.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/get-started-diagram.png)
 
 **Cost for this tutorial**
 When you create your AWS account, you can get started with Amazon EC2 for free using the [AWS Free Tier](https://aws.amazon.com/free/).

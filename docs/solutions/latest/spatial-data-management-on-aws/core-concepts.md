@@ -22,7 +22,7 @@ Spatial Data Management on AWS is a solution for managing large-scale spatial da
 
 The Spatial Data Management on AWS solution organizes resources in a hierarchical structure:
 
-![Resource model diagram](http://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/resource-hierarchy.svg)
+![Resource model diagram](https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/resource-hierarchy.svg)
 
 ## Key Resources
 <a name="key-resources"></a>

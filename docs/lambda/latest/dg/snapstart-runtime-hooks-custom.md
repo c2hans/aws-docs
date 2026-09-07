@@ -37,7 +37,7 @@ These pre-requisites are not required if you use Lambda managed base images for 
 
 The following diagram shows the order of Runtime API calls that a SnapStart custom runtime is expected to make. All calls are part of the Runtime API contract; while calls \#3, \#4, \#5, and \#6 are specific to SnapStart.
 
-![Sequence diagram showing the order of Runtime API calls for a SnapStart custom runtime: init, before-snapshot hooks, GET /runtime/restore/next, after-restore hooks, and the standard invoke loop.](http://docs.aws.amazon.com/lambda/latest/dg/images/snapstart-custom-runtime-lifecycle.png)
+![Sequence diagram showing the order of Runtime API calls for a SnapStart custom runtime: init, before-snapshot hooks, GET /runtime/restore/next, after-restore hooks, and the standard invoke loop.](https://docs.aws.amazon.com/lambda/latest/dg/images/snapstart-custom-runtime-lifecycle.png)
 
 ## Implementing SnapStart lifecycle hooks
 <a name="snapstart-custom-implement"></a>

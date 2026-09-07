@@ -36,11 +36,11 @@ This pattern's *Epics *section provides two options for copying products. You c
 
 The following diagram shows the copying of AWS Service Catalog products from a source account to a destination account.
 
-![A cross-account role in Region 1, a Lambda execution role and a Lambda function in Region 2.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7ede5d17-89eb-4455-928f-6953d145ac9f/images/26738220-1ed2-4f84-911b-3c88e954b60e.png)
+![A cross-account role in Region 1, a Lambda execution role and a Lambda function in Region 2.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7ede5d17-89eb-4455-928f-6953d145ac9f/images/26738220-1ed2-4f84-911b-3c88e954b60e.png)
 
  The following diagram shows the copying of AWS Service Catalog products from a source Region to a destination Region.
 
-![Products copied by using the Lambda scProductCopy function in Region 2.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7ede5d17-89eb-4455-928f-6953d145ac9f/images/0a936792-3bdc-45c2-ba05-17e828615061.png)
+![Products copied by using the Lambda scProductCopy function in Region 2.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7ede5d17-89eb-4455-928f-6953d145ac9f/images/0a936792-3bdc-45c2-ba05-17e828615061.png)
 
 **Technology stack  **
 + Amazon CloudWatch

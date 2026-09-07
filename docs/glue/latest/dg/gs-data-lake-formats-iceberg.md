@@ -27,7 +27,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/gs-data-lake-formats-iceb
   +  **Database ** – Choose the database from the Data Catalog.
   +  **Table Name** – Enter the value for your table name. Apache Iceberg table names must be in all lower case. Use underscores if needed since spaces are not allowed. For example "data\_lake\_format\_tables".
 
-![The screenshot shows the Data target properties when using Apache Iceberg framework in Amazon S3 data targets.](http://docs.aws.amazon.com/glue/latest/dg/images/apache-iceberg-data-target-properties.png)
+![The screenshot shows the Data target properties when using Apache Iceberg framework in Amazon S3 data targets.](https://docs.aws.amazon.com/glue/latest/dg/images/apache-iceberg-data-target-properties.png)
 
 ## Using Apache Iceberg framework in Amazon S3 data sources
 <a name="gs-data-lake-formats-iceberg-source"></a>
@@ -41,7 +41,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/gs-data-lake-formats-iceb
 
 1.  AWS Glue Studio displays the format type as Apache Iceberg and the Amazon S3 URL.
 
-![The screenshot shows the Data target properties when using Apache Iceberg framework in Data Catalog data sources.](http://docs.aws.amazon.com/glue/latest/dg/images/apache-iceberg-data-source-properties.png)
+![The screenshot shows the Data target properties when using Apache Iceberg framework in Data Catalog data sources.](https://docs.aws.amazon.com/glue/latest/dg/images/apache-iceberg-data-source-properties.png)
 
 ### Using Apache Iceberg framework in Amazon S3 data sources
 <a name="gs-data-lake-formats-iceberg-source-s3"></a>

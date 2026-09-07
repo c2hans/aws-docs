@@ -17,7 +17,7 @@ To collect compliance documents from your partners, you can do the following:
 + **Ask for a text response** – Select *No* to make this field mandatory.
 + **Ask for a file response** – Select *Yes* to make this field mandatory.
 
-![Collect compliance documents example](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Compliance_example.png)
+![Collect compliance documents example](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Compliance_example.png)
 
 ## Collect emissions documents
 <a name="emissions_example"></a>
@@ -29,7 +29,7 @@ To collect emissions information, you can do the following:
 + **Ask for a text response** – Not selected
 + **Ask for a file response** – Select *Yes* to make this field mandatory.
 
-![Collect emissions data example](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Collect_emissions_example.png)
+![Collect emissions data example](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Collect_emissions_example.png)
 
 ## Collect pilot ESG data
 <a name="pilot_example"></a>
@@ -41,4 +41,4 @@ To collect pilot ESG data, you can do the following:
 + **Ask for a text response** – Select *Yes* to make this field mandatory.
 + **Ask for a file response** – Select *Yes* to make this field mandatory.
 
-![Pilot ESG data example](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Pilot_ESG_example.png)
+![Pilot ESG data example](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Pilot_ESG_example.png)

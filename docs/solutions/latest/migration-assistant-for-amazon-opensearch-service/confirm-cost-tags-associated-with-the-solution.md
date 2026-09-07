@@ -16,7 +16,7 @@ After you activate cost allocation tags associated with the solution, you must c
 1. In the **Overview** tab, in **Cost**, select **Add user tag**.
 
     **Screenshot depicting the Application Cost add user tag screen**
-![AppManager 1](http://docs.aws.amazon.com/solutions/latest/migration-assistant-for-amazon-opensearch-service/images/AppManager_1.png)
+![AppManager 1](https://docs.aws.amazon.com/solutions/latest/migration-assistant-for-amazon-opensearch-service/images/AppManager_1.png)
 
 1. On the **Add user tag** page, enter `confirm`, then select **Add user tag**.
 

@@ -54,7 +54,7 @@ From the CloudFormation console, set the following parameters:
 
  **QnABot on AWS Amazon Bedrock models.**
 
-![image32](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image32.png)
+![image32](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image32.png)
 
 ### Using a custom Lambda Function
 <a name="using-a-custom-lambda-function-1"></a>
@@ -74,7 +74,7 @@ To deploy the stack using a custom Lambda function:
 
  **LLM LAMBDA integration**
 
-![image34](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image34.png)
+![image34](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image34.png)
 
 Your Lambda function is passed as an event:
 
@@ -165,7 +165,7 @@ For example, with these LLM QA features enabled, QnABot on AWS can answer questi
 
  **RAG based text generation using Amazon Kendra fallback.**
 
-![image35](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image35.png)
+![image35](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image35.png)
 
 It can even generate answers to yes or no questions, like:
 +  *"Is Lambda a database service?"* → **No, Lambda is not a database service.**
@@ -175,7 +175,7 @@ It can even generate answers to yes or no questions, like:
 +  *"Are there any upfront fees with ECS?"*
 
    **RAG based text generation using Amazon Bedrock knowledge base.**
-![image36](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image36.png)
+![image36](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image36.png)
 
 Even if you aren’t using Amazon Kendra or Amazon Bedrock knowledge base, QnABot on AWS can answer questions based on passages created or imported into the content designer, such as:
 +  *"Where did Humpty Dumpty sit?"* → **On the wall.**
@@ -186,13 +186,13 @@ all from a text passage item that contains the nursery rhyme.
 
  **LLM response from a passage within content designer UI.**
 
-![image37](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image37.png)
+![image37](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image37.png)
 
 You can use disambiguation and generative question answering together:
 
  **Disambiguation and generative question answering.**
 
-![image38](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image38.png)
+![image38](https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image38.png)
 
 ## Settings available for text generation LLMs configuration
 <a name="settings-available-for-text-generation-llms-configuration"></a>

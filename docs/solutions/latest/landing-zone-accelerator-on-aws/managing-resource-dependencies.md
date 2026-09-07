@@ -216,4 +216,4 @@ If the image is difficult to read on your screen, open it in a new tab.
 
  **Sample diagream of resource dependencies.**
 
-![network dependency.drawio](http://docs.aws.amazon.com/solutions/latest/landing-zone-accelerator-on-aws/images/network-dependency.drawio.png)
+![network dependency.drawio](https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerator-on-aws/images/network-dependency.drawio.png)

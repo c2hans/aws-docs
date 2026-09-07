@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/performance
 
 The following reference architecture demonstrates performance engineering pillars for testing a specific API.
 
-![Diagram of data movement through the test process to the dashboard.](http://docs.aws.amazon.com/prescriptive-guidance/latest/performance-engineering-aws/images/guide-img/7c6508f5-55cf-496c-a7ac-ba285b7b71ef/images/81c12b6f-3c0e-4b42-a74d-bf2313a1ce3b.png)
+![Diagram of data movement through the test process to the dashboard.](https://docs.aws.amazon.com/prescriptive-guidance/latest/performance-engineering-aws/images/guide-img/7c6508f5-55cf-496c-a7ac-ba285b7b71ef/images/81c12b6f-3c0e-4b42-a74d-bf2313a1ce3b.png)
 
 1. Logging, monitoring, and tracing data is sent from the target API to the backend.
 

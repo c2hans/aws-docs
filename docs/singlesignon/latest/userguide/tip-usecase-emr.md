@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/tip-usecas
 
 The following diagram shows a trusted identity propagation configuration for Amazon EMR Studio using Amazon EMR on Amazon EC2 with access control provided by AWS Lake Formation and Amazon S3 Access Grants.
 
-![Diagram of trusted identity propagation using Amazon EMR, Lake Formation, and IAM Identity Center](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/emr-tip-diagram.png)
+![Diagram of trusted identity propagation using Amazon EMR, Lake Formation, and IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/images/emr-tip-diagram.png)
 
 **Supported client-facing applications**
 + Amazon EMR Studio

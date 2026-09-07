@@ -11,7 +11,7 @@ Sometimes it isn't necessary or feasible to implement the silo model because of 
 
 The following diagram shows the pool model, with tenant data is placed in a single Amazon Neptune cluster, and all tenants share a common database.
 
-![The architecture including IAM and a tenant policy.](http://docs.aws.amazon.com/prescriptive-guidance/latest/multi-tenancy-amazon-neptune/images/guide-img/d9a33330-1308-4d3e-b2de-9b5b65b34e0f/images/32d2bc8c-dcea-45e3-8b81-b0b85d7cb287.png)
+![The architecture including IAM and a tenant policy.](https://docs.aws.amazon.com/prescriptive-guidance/latest/multi-tenancy-amazon-neptune/images/guide-img/d9a33330-1308-4d3e-b2de-9b5b65b34e0f/images/32d2bc8c-dcea-45e3-8b81-b0b85d7cb287.png)
 
 This [pool-isolation model](https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/pool-isolation.html) reduces the management overhead and can improve the operational efficiency because there are fewer clusters to manage. Also, compute resources can be shared across multiple customers instead of remaining idle during customer inactive periods.
 

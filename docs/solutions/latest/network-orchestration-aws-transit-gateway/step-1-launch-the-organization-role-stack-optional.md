@@ -9,7 +9,7 @@ Follow the step-by-step instructions in this section to configure and deploy the
 
 1. Sign in to your AWS Organizations management account using the AWS Management Console and select the button to launch the `network-orchestration-organization-role.template` AWS CloudFormation template.
 
-    [![network orchestration organization role launch button](http://docs.aws.amazon.com/solutions/latest/network-orchestration-aws-transit-gateway/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?stackName=STNO-role&templateURL=https://solutions-reference.s3.amazonaws.com/network-orchestration-for-aws-transit-gateway/latest/network-orchestration-organization-role.template&redirectID=ImplementationGuide)
+    [![network orchestration organization role launch button](https://docs.aws.amazon.com/solutions/latest/network-orchestration-aws-transit-gateway/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?stackName=STNO-role&templateURL=https://solutions-reference.s3.amazonaws.com/network-orchestration-for-aws-transit-gateway/latest/network-orchestration-organization-role.template&redirectID=ImplementationGuide)
 
 1. Launch this template in the same Region as you plan to launch the hub and spoke templates. The organization role template launches in the US East (N. Virginia) Region by default.
 

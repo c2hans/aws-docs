@@ -18,7 +18,7 @@ We recommend that you make an AWS OLA the first step on your [cost optimization 
 
 The following diagram provides an overview of the assessment process.
 
-![Full AWS OLA process](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/94961a8b-a59d-47be-81fb-b5143c07a14a.png)
+![Full AWS OLA process](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/94961a8b-a59d-47be-81fb-b5143c07a14a.png)
 
 ## Assessment options
 <a name="aws-ola-options"></a>
@@ -58,7 +58,7 @@ Data collection usually takes two to three weeks when CPU utilization, RAM utili
 
 The following dashboard view shows an example of infrastructure costs that can be captured by an assessment.
 
-![Infrastructure costs dashboard](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/bf561587-751e-4720-862a-777cf8e790a1.png)
+![Infrastructure costs dashboard](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/bf561587-751e-4720-862a-777cf8e790a1.png)
 
 ### Analyze data
 <a name="analyze-data.32f92605-370d-5e8b-a310-7c8c42939d2f"></a>
@@ -67,7 +67,7 @@ AWS delivers a debrief presentation after the data collection is completed. AWS 
 
 The following shows an example analysis based on the data collected by the assessment.
 
-![AWS OLA analysis output](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/82e1b75d-3027-4492-bfc9-88b716573999.png)
+![AWS OLA analysis output](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/82e1b75d-3027-4492-bfc9-88b716573999.png)
 
 Common optimization scenarios include identifying both AWS resource optimization opportunities and third-party license savings.
 
@@ -89,7 +89,7 @@ Examples of third-party license savings:
 
 Finally, AWS uses the collected performance data to estimate specific workload sizing and cost. AWS can also look in aggregate at your scoped environment and provide a quantitative analysis. This can help you determine if the best option is an on-premises refresh or a migration to AWS. You can build a cloud economic business case by using the TCO analysis summary (as shown in the following example) provided at the end of an AWS OLA.
 
-![TCO analysis summary from an AWS OLA](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/9f0dd9d0-c4d4-4685-91a4-5037c2f89cb0.png)
+![TCO analysis summary from an AWS OLA](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/9f0dd9d0-c4d4-4685-91a4-5037c2f89cb0.png)
 
 An AWS OLA also provides insight into the impact that modernization can have on your existing workloads by making suggestions such as the following:
 + Move to a Linux operating system.
@@ -99,11 +99,11 @@ An AWS OLA also provides insight into the impact that modernization can have on 
 
 The following diagram shows the cost savings that can be achieved through modernization techniques such as moving from Windows to Linux or from SQL Server to Aurora.
 
-![Migration costs diagram](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/c4ba252c-3143-459b-beef-3effd7bf723e.png)
+![Migration costs diagram](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/c4ba252c-3143-459b-beef-3effd7bf723e.png)
 
 The full AWS OLA process takes roughly 45 days from start to finish. The following diagram shows an example timeline.
 
-![Full AWS OLA process workflow](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/ce8d6761-9302-4b00-aaae-0ae843bc714b.png)
+![Full AWS OLA process workflow](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/ce8d6761-9302-4b00-aaae-0ae843bc714b.png)
 
 If you have a pure VMware environment and can provide output from RVTools, then you can reduce this timeline to one business week. Additionally, AWS can analyze a flat file that includes asset and utilization data, such as CPU average, CPU peak, RAM average, and RAM peak.
 

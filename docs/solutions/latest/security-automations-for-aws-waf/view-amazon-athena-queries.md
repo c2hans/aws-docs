@@ -31,7 +31,7 @@ This workgroup exists only if you selected `Yes - Amazon Athena log parser` for 
 
  **Screenshot of Athena query editor showing no queries**
 
-![athena query editor](http://docs.aws.amazon.com/solutions/latest/security-automations-for-aws-waf/images/athena-query-editor.png)
+![athena query editor](https://docs.aws.amazon.com/solutions/latest/security-automations-for-aws-waf/images/athena-query-editor.png)
 
 1. Select the **History** tab.
 

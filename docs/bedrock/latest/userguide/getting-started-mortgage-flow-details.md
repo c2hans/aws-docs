@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/getting-started
 
 The visual representation of the mortgage processing flow in the AWS Management Console is as follows:
 
-![Mortgage processing flow.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/cloudformation/mortgage-processing-flow.png)
+![Mortgage processing flow.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/cloudformation/mortgage-processing-flow.png)
 
 ## Steps in the flow
 <a name="getting-started-mortgage-flow-steps"></a>

@@ -129,7 +129,7 @@ Out of the box implementation of the Construct without any overrides will set th
 ## Architecture
 <a name="_architecture"></a>
 
-![Diagram showing the Fargate service, Kinesis firehose and IAM role created by the construct. A VPC is shown that can be created by the construct or provided by the client.](http://docs.aws.amazon.com/solutions/latest/constructs/images/aws-fargate-kinesisfirehose.png)
+![Diagram showing the Fargate service, Kinesis firehose and IAM role created by the construct. A VPC is shown that can be created by the construct or provided by the client.](https://docs.aws.amazon.com/solutions/latest/constructs/images/aws-fargate-kinesisfirehose.png)
 
 ## Github
 <a name="_github"></a>

@@ -9,7 +9,7 @@ Multi-tenant best practices often divide implementations into two distinct parts
 
 This division of responsibility also applies to agentic models. A multi-tenant agent requires a degree of centralized management, operation, and insights, and it makes sense to continually address these needs through a control plane. The following diagram shows a conceptual view of how these planes are divided within an agent as a service (AaaS) environment.
 
-![Control and application planes with agents](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-multitenant/images/guide-img/2d1a9d67-004c-4c75-8cd2-68ceef9bbc6f/images/f1b75932-2da5-499a-810e-d177413646e6.png)
+![Control and application planes with agents](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-multitenant/images/guide-img/2d1a9d67-004c-4c75-8cd2-68ceef9bbc6f/images/f1b75932-2da5-499a-810e-d177413646e6.png)
 
 *Figure 16. Control and application planes with agents*
 
@@ -19,7 +19,7 @@ This model introduces additional layers of complexity, especially in agent lifec
 
 This scenario becomes more complex if you consider a multi-agent system that incorporates agents from various providers. The following diagram shows an example of such a model.
 
-![Control planes with agents from multiple providers](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-multitenant/images/guide-img/2d1a9d67-004c-4c75-8cd2-68ceef9bbc6f/images/1fe29281-0a66-4adf-ad35-9de801d56d53.png)
+![Control planes with agents from multiple providers](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-multitenant/images/guide-img/2d1a9d67-004c-4c75-8cd2-68ceef9bbc6f/images/1fe29281-0a66-4adf-ad35-9de801d56d53.png)
 
 *Figure 17. Control planes with agents from multiple providers*
 
@@ -36,7 +36,7 @@ Onboarding is typically a vital part of any AaaS environment. How you create, co
 
 Your approach to agent onboarding is influenced by the footprint and tenancy model of your agentic environment. Siloed and pooled agents each have their own nuances, and the choice of using either a single agent or multiple agents also affects the onboarding process. The following diagram shows a conceptual view of how onboarding affects an agent's configuration.
 
-![Onboarding tenants to agents](http://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-multitenant/images/guide-img/2d1a9d67-004c-4c75-8cd2-68ceef9bbc6f/images/9a622ddc-25e9-4c38-9e86-f4cfb92c2265.png)
+![Onboarding tenants to agents](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-multitenant/images/guide-img/2d1a9d67-004c-4c75-8cd2-68ceef9bbc6f/images/9a622ddc-25e9-4c38-9e86-f4cfb92c2265.png)
 
 *Figure 18. Onboarding tenants to agents*
 

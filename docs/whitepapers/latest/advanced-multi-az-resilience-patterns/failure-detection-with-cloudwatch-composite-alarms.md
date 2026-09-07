@@ -16,11 +16,11 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-res
 
  Using this construct, consider a workload that uses `Controller`, `Action`, `InstanceId`, `AZ-ID`, and `Region` as dimensions. The workload has two controllers, Products and Home, and one action per controller, List and Index respectively. It operates in three Availability Zones in the `us-east-1` Region. You would create two alarms for availability for each `Controller` and `Action` combination in each Availability Zone as well as two alarms for latency for each. Then, you can optionally choose to create a composite alarm for availability for each `Controller` and `Action` combination. Finally, you create a composite alarm that aggregates all of the availability alarms for the Availability Zone. This is shown in the following figure for a single Availability Zone, `use1-az1`, using the optional composite alarm for each `Controller` and `Action` combination (similar alarms would exist for the `use1-az2` and `use1-az3` Availability Zones as well, but are not shown for simplicity).
 
-![Diagram showing a composite alarm structure for availability in use1-az1](http://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-resilience-patterns/images/composite-alarm-structure-availability.png)
+![Diagram showing a composite alarm structure for availability in use1-az1](https://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-resilience-patterns/images/composite-alarm-structure-availability.png)
 
  You would also build a similar alarm structure for latency as well, shown in the next figure.
 
-![A diagram showing a Composite alarm structure for latency in use1-az1](http://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-resilience-patterns/images/composite-alarm-structure-latency.png)
+![A diagram showing a Composite alarm structure for latency in use1-az1](https://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-resilience-patterns/images/composite-alarm-structure-latency.png)
 
 For the remainder of the figures in this section, only the `az1-availability` and `az1-latency` composite alarms will be shown at the top level. These composite alarms, `az1-availability` and `az1-latency`, will tell you if either availability drops below or latency rises above defined thresholds in a particular Availability Zone for any part of your workload. You might also want to consider measuring throughput to detect impact that prevents your workload in a single Availability Zone from receiving work. You can integrate alarms produced from the metrics emitted by your canaries into these composite alarms as well. That way, if either the server-side or client-side see impacts in availability or latency, the alarm will create an alert.
 
@@ -29,7 +29,7 @@ For the remainder of the figures in this section, only the `az1-availability` an
 
 Another set of composite alarms can be used to ensure that only an isolated Availability Zone event causes the alarm to be activated. This is performed by ensuring that an Availability Zone composite alarm is in the `ALARM` state while the composite alarms for the other Availability Zones are in the `OK` state. This will result in one composite alarm per Availability Zone that you use. An example is shown in the following figure (remember that there are alarms for latency and availability in `use1-az2` and `use1-az3`, `az2-latency`, `az2-availability`, `az3-latency`, and `az3-availability`, that are not pictured for simplicity).
 
-![A diagram showing a composite alarm structure to detect impact isolated to a single AZ](http://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-resilience-patterns/images/composite-alarm-structure-impact.png)
+![A diagram showing a composite alarm structure to detect impact isolated to a single AZ](https://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-resilience-patterns/images/composite-alarm-structure-impact.png)
 
 ## Ensure the impact isn’t caused by a single instance
 <a name="ensure-the-impact-isnt-caused-by-a-single-instance"></a>
@@ -94,7 +94,7 @@ You can define an alarm when this metric is greater than a threshold; for this e
 
 The following figure shows the complete composite alarm structure for a single Availability Zone:
 
-![A diagram showing a complete composite alarm structure for determining single-AZ impact](http://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-resilience-patterns/images/composite-alarm-structure-complete.png)
+![A diagram showing a complete composite alarm structure for determining single-AZ impact](https://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-resilience-patterns/images/composite-alarm-structure-complete.png)
 
  The final composite alarm, `use1-az1-isolated-impact`, is activated when the composite alarm indicating isolated Availability Zone impact from latency or availability, `use1-az1-aggregate-alarm`, is in `ALARM` state and when the alarm based on the Contributor Insights rule for that same Availability Zone, `not-single-instance-use1-az1`, is also in `ALARM` state (meaning that the impact is more than a single instance). You would create this stack of alarms for each Availability Zone that your workload uses.
 

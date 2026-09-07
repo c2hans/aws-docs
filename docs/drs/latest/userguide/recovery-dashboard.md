@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/recovery-dashboard.
 
 The **Recovery dashboard** tab allows you to monitor the server, its data replication status, and view events and metrics in CloudTrail.
 
-![Recovery dashboard showing last recovery details and data replication status.](http://docs.aws.amazon.com/drs/latest/userguide/images/drs-new-ss12-details-dashboard.png)
+![Recovery dashboard showing last recovery details and data replication status.](https://docs.aws.amazon.com/drs/latest/userguide/images/drs-new-ss12-details-dashboard.png)
 
 **Topics**
 + [Last recovery](#lifecycle)
@@ -20,7 +20,7 @@ The **Recovery dashboard** tab allows you to monitor the server, its data replic
 
 The **Last recovery** box provides an overview of the recovery process for the server.
 
-![Recovery job details showing start time, job ID, and current status as healthy.](http://docs.aws.amazon.com/drs/latest/userguide/images/drs-new-ss12-details-recovery.png)
+![Recovery job details showing start time, job ID, and current status as healthy.](https://docs.aws.amazon.com/drs/latest/userguide/images/drs-new-ss12-details-recovery.png)
 
 Here, you can see the following:
 + **Job type** – The type of recovery job performed (drill or recovery)

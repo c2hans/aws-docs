@@ -13,7 +13,7 @@ First, you create a collaboration in AWS Clean Rooms and add the AWS accounts yo
 
 The following diagram summarizes how to work with event data in AWS Clean Rooms.
 
-![Diagram explaining how to work with event data in AWS Clean Rooms](http://docs.aws.amazon.com/clean-rooms/latest/userguide/images/how-it-works-event-data.png)
+![Diagram explaining how to work with event data in AWS Clean Rooms](https://docs.aws.amazon.com/clean-rooms/latest/userguide/images/how-it-works-event-data.png)
 
 **Topics**
 + [Creating a configured table in AWS Clean Rooms](create-configured-table.md)

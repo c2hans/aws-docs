@@ -24,7 +24,7 @@ To initiate a job from the Control-M user interface, do the following:
 
 The following screenshot shows the Control-M Planning view of the basic job flow.
 
-![Job flow on the left and properties on the right.](http://docs.aws.amazon.com/prescriptive-guidance/latest/control-m-batch-scheduler/images/guide-img/ca7d4793-feac-4eba-a6cd-6ca4d6395925/images/8de53763-0da1-4c96-a2ff-e82966d9cfe5.png)
+![Job flow on the left and properties on the right.](https://docs.aws.amazon.com/prescriptive-guidance/latest/control-m-batch-scheduler/images/guide-img/ca7d4793-feac-4eba-a6cd-6ca4d6395925/images/8de53763-0da1-4c96-a2ff-e82966d9cfe5.png)
 
 *Image provided courtesy of BMC Software, Inc. ©2022*
 

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-ava
 # Option 2: Ingress to Avaya and egress to Connect Customer
 <a name="option-2"></a>
 
-![Architecture diagram of ingress to Avaya and egress to Amazon Connect by using a conference call](http://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-avaya-to-connect-lex/images/guide-img/93ca74a8-da3b-48f9-a10f-4809a7f3384c/images/80e47f86-d554-4a5a-bdca-ae18710ac9b8.png)
+![Architecture diagram of ingress to Avaya and egress to Amazon Connect by using a conference call](https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-avaya-to-connect-lex/images/guide-img/93ca74a8-da3b-48f9-a10f-4809a7f3384c/images/80e47f86-d554-4a5a-bdca-ae18710ac9b8.png)
 
 1. A customer calls the on-premises Avaya contact center. Avaya greets the caller with the welcome menu and provides the caller with self-servicing menu options.
 

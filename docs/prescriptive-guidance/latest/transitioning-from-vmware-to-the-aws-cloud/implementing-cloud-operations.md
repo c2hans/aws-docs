@@ -21,7 +21,7 @@ The following diagram provides an overview of an AWS Cloud environment:
   + Documentation and knowledge sharing
   + Network management
 
-![Example of a typical AWS Cloud environment.](http://docs.aws.amazon.com/prescriptive-guidance/latest/transitioning-from-vmware-to-the-aws-cloud/images/guide-img/fa2c0c2d-160c-453b-9ba1-4a8c54d378c9/images/1d9a280e-4eee-480c-9c0e-bfd673204446.png)
+![Example of a typical AWS Cloud environment.](https://docs.aws.amazon.com/prescriptive-guidance/latest/transitioning-from-vmware-to-the-aws-cloud/images/guide-img/fa2c0c2d-160c-453b-9ba1-4a8c54d378c9/images/1d9a280e-4eee-480c-9c0e-bfd673204446.png)
 
 To effectively transition from VMware to the AWS Cloud, organizations should use the following steps:
 

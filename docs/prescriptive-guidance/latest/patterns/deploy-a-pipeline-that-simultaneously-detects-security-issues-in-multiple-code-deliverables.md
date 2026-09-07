@@ -37,7 +37,7 @@ Before SCSP, scanning code using this particular suite of tools required develop
 
 The SCSP for static code analysis is a DevOps project designed to give security feedback on deliverable code.
 
-![The SCSP performing code analysis in an AWS Region.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/61fe4f99-7dfc-48a8-90e4-a25253cc140d/images/fbc13150-0970-48d6-87bc-84dfaed90d4b.png)
+![The SCSP performing code analysis in an AWS Region.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/61fe4f99-7dfc-48a8-90e4-a25253cc140d/images/fbc13150-0970-48d6-87bc-84dfaed90d4b.png)
 
 1. In the AWS Management Console, log into the target AWS account. Confirm that you are in the AWS Region where you want to deploy the pipeline.
 

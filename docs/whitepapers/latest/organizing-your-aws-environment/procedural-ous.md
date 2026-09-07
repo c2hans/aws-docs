@@ -78,7 +78,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 
  In support of testing SCPs and tag policies that are intended to be applied at the OU level, your teams should first apply them to one of the test child OUs. SCPs and tag policies that are applied to a specific account require creation of a test account under the appropriate test child OU.
 
-![Diagram showing example structure of Policy Staging OU](http://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/example-policy-ou.png)
+![Diagram showing example structure of Policy Staging OU](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/example-policy-ou.png)
 
 ## Suspended OU
 <a name="suspended-ou"></a>

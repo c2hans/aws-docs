@@ -31,7 +31,7 @@ The first question you should ask concerns the value of moving a classic web app
 
  The following figure provides another look at that classic web application architecture and how it can leverage the AWS Cloud computing infrastructure.
 
-![AWS architecture with VPC across two availability zones, load balancers, auto scaling groups, and database tier.](http://docs.aws.amazon.com/whitepapers/latest/web-application-hosting-best-practices/images/image4.png)
+![AWS architecture with VPC across two availability zones, load balancers, auto scaling groups, and database tier.](https://docs.aws.amazon.com/whitepapers/latest/web-application-hosting-best-practices/images/image4.png)
 
 * An example of a web hosting architecture on AWS*
 

@@ -41,7 +41,7 @@ This pattern uses [AWS Schema Conversion Tool (AWS SCT)](https://docs.aws.amazon
 
 The following diagram shows the data migration architecture between the source Db2 and target Aurora MySQL-Compatible databases. The architecture on the AWS Cloud includes a virtual private cloud (VPC) (Virtual Private Cloud), an Availability Zone, a public subnet for the Db2 instance and the AWS DMS replication instance, and a private subnet for the Aurora MySQL-Compatible database.
 
-![Architecture of data migration between source Db2 and target Aurora MySQL-Compatible databases.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5abfccc4-148c-4794-8d80-e3c122679125/images/f30664f8-2d6a-4448-8d5c-cff3988a52c7.png)
+![Architecture of data migration between source Db2 and target Aurora MySQL-Compatible databases.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/5abfccc4-148c-4794-8d80-e3c122679125/images/f30664f8-2d6a-4448-8d5c-cff3988a52c7.png)
 
 ## Tools
 <a name="migrate-a-db2-database-from-amazon-ec2-to-aurora-mysql-compatible-by-using-aws-dms-tools"></a>

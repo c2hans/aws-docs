@@ -51,7 +51,7 @@ The following sections of this guidance expand on each capability, discuss the c
 
 The architecture illustrated in the following diagram is an extension of the [AWS SRA diagram](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/architecture.html) depicted in the *AWS SRA – core architecture* guide. It adds the following elements: customer site and industrial IoT edge, industrial isolation zone account, and IoT, IIoT, or OT software as a service (SaaS) security solutions from AWS Partners.
 
-![AWS services and account structure recommended for IoT functionality.](http://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-iot/images/guide-img/11475282-b3b8-4c97-8919-9954329a1c00/images/c4a7d60e-7c06-480c-88c0-ab1ffa174251.png)
+![AWS services and account structure recommended for IoT functionality.](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture-iot/images/guide-img/11475282-b3b8-4c97-8919-9954329a1c00/images/c4a7d60e-7c06-480c-88c0-ab1ffa174251.png)
 
 [AWS SRA – core architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/architecture.html)
 

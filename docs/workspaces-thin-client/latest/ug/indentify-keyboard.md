@@ -11,11 +11,11 @@ Next, you tell the WorkSpaces Thin Client device to identify your keyboard.
 
 Begin by pressing and holding the key to the immediate RIGHT of the Shift key on the LEFT side of the keyboard.
 
-![WorkSpaces Thin Client identify keyboard, part one](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/oobe-id-keyboard.png)
+![WorkSpaces Thin Client identify keyboard, part one](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/oobe-id-keyboard.png)
 
 Next, press and hold the key to the immediate LEFT of the Shift key on the RIGHT side of the keyboard.
 
-![WorkSpaces Thin Client identify keyboard, part two](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/oobe-id-keyboard1.png)
+![WorkSpaces Thin Client identify keyboard, part two](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/oobe-id-keyboard1.png)
 
 Great\! The keyboard is now identified.
 
@@ -23,4 +23,4 @@ You now tell the WorkSpaces Thin Client device what type of keyboard you are usi
 
 To verify your keyboard layout, see examples of each compatible keyboard in [Keyboard layouts](keyboard-layouts.md).
 
-![WorkSpaces Thin Client identify keyboard, part three](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/oobe_keyboard_id_screen.jpg)
+![WorkSpaces Thin Client identify keyboard, part three](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/oobe_keyboard_id_screen.jpg)

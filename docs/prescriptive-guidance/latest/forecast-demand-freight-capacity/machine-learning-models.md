@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/forecast-de
 
 The following image shows an example of the training data. The target is what you want to predict, and related time series 1 and 2 are input features that are relevant to predict the target. Historical data is used for training and validation, and you withhold a period of the historical data for model validation.
 
-![Line chart showing historical data, holdout data, and forecast](http://docs.aws.amazon.com/prescriptive-guidance/latest/forecast-demand-freight-capacity/images/guide-img/4600072e-6d1e-414c-b39d-f89e1eed9438/images/0216f52a-67b0-4d8e-b55c-6295304190e2.png)
+![Line chart showing historical data, holdout data, and forecast](https://docs.aws.amazon.com/prescriptive-guidance/latest/forecast-demand-freight-capacity/images/guide-img/4600072e-6d1e-414c-b39d-f89e1eed9438/images/0216f52a-67b0-4d8e-b55c-6295304190e2.png)
 
 In demand forecasting, the output (or target) is the demand volume that you want to predict. The input features are time series data related to the output. To train an ML model to make an accurate forecast of demand volume, two machine learning models are needed in the solution. The first model makes a time series forecast for the input features, including both internal and external data. The second model makes the final demand forecast by using all features. By using these two models together, you can effectively capture both the time series trend and the relationship between the target and the inputs.
 

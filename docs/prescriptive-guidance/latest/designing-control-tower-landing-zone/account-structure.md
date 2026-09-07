@@ -14,7 +14,7 @@ One of the key principles of account structure design is to start with a basic s
 
 The following diagram provides an example of an AWS Control Tower‒based account structure that includes various accounts and OUs and follows AWS best practices. You can customize this architecture based on the account structure that's suitable for your enterprise.
 
-![AWS Control Tower-based account structure for a landing zone](http://docs.aws.amazon.com/prescriptive-guidance/latest/designing-control-tower-landing-zone/images/guide-img/156d118c-ed00-4c5b-9a02-63c2673a3342/images/101dd11a-d8b3-49fd-ae5f-5480a1c91607.png)
+![AWS Control Tower-based account structure for a landing zone](https://docs.aws.amazon.com/prescriptive-guidance/latest/designing-control-tower-landing-zone/images/guide-img/156d118c-ed00-4c5b-9a02-63c2673a3342/images/101dd11a-d8b3-49fd-ae5f-5480a1c91607.png)
 
 The account in which AWS Control Tower is deployed is automatically configured as the AWS Control Tower management account. The management account consolidates billing of all accounts in the landing zone. This account is used to [provision new AWS accounts with AWS Control Tower Account Factory](https://docs.aws.amazon.com/controltower/latest/userguide/account-factory.html), manage OUs and controls, and manage user access and permissions by using IAM Identity Center.
 

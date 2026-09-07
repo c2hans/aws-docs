@@ -30,7 +30,7 @@ The security of your encrypted object depends in part on protecting the data key
 **Protecting data keys**
 The Amazon S3 Encryption Client encrypts each object with a unique [data key](#data-key). Then it encrypts the data key under the wrapping key you specify. It stores the encrypted data key with the encrypted object that the `PutObject` request uploads to Amazon S3.
 
-![Envelope encryption with the Amazon S3 Encryption Client](http://docs.aws.amazon.com/amazon-s3-encryption-client/latest/developerguide/images/s3-envelope-encrypt-3.png)
+![Envelope encryption with the Amazon S3 Encryption Client](https://docs.aws.amazon.com/amazon-s3-encryption-client/latest/developerguide/images/s3-envelope-encrypt-3.png)
 
 **Combining the strengths of multiple algorithms**
 To encrypt your object, by default, the Amazon S3 Encryption Client uses a sophisticated algorithm suite with AES-GCM symmetric encryption. To encrypt the data key, you can specify a symmetric or asymmetric encryption algorithm appropriate to your wrapping key.
@@ -50,7 +50,7 @@ To protect your data keys, the Amazon S3 Encryption Client encrypts them under a
 
 A *wrapping key* is a key-encryption key that the Amazon S3 Encryption Client uses to encrypt the [data key](#data-key) that encrypts your object. You specify the wrapping key that is used to protect your data keys when you instantiate your Amazon S3 Encryption Client. Version 3.*x* of the Amazon S3 Encryption Client uses the wrapping key you specify and one of the [fully supported wrapping algorithms](encryption-algorithms.md#v3-algorithms) to encrypt and decrypt data keys.
 
-![Wrapping key encrypts data key](http://docs.aws.amazon.com/amazon-s3-encryption-client/latest/developerguide/images/wrapping-key-2.png)
+![Wrapping key encrypts data key](https://docs.aws.amazon.com/amazon-s3-encryption-client/latest/developerguide/images/wrapping-key-2.png)
 
 The Amazon S3 Encryption Client supports several commonly used wrapping keys, such as symmetric [AWS KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#master_keys), Raw AES-GCM (Advanced Encryption Standard/Galois Counter Mode) keys, and Raw RSA keys.
 

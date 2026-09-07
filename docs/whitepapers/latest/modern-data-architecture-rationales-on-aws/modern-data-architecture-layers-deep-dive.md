@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/modern-data-architect
 ## Staging layer
 <a name="staging-layer-1"></a>
 
-![A diagram depicting the staging layer of modern data architecture.](http://docs.aws.amazon.com/whitepapers/latest/modern-data-architecture-rationales-on-aws/images/modern-data-arch-5.png)
+![A diagram depicting the staging layer of modern data architecture.](https://docs.aws.amazon.com/whitepapers/latest/modern-data-architecture-rationales-on-aws/images/modern-data-arch-5.png)
 
  The *staging layer* in traditional data warehouses resided on RDBMS. It was a [schema on write](https://www.techopedia.com/definition/30899/schema-on-write) approach, which rejected any incompatible changes and needed tables to be dropped and re-created when incompatible schema changes occurred. However, this also meant that a well-defined interface (contract) was ensured for the data pipelines, which ensured minimal disruption by stopping incompatible changes at the door of the data platform.
 
@@ -38,7 +38,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/modern-data-architect
 
  Any incompatible changes, flagged in the invalid zone, need to be evaluated by data lake administrators so they can make informed decisions (such as creating a new version of the dataset).
 
-![A diagram depicting standardized layer activities.](http://docs.aws.amazon.com/whitepapers/latest/modern-data-architecture-rationales-on-aws/images/modern-data-arch-6.png)
+![A diagram depicting standardized layer activities.](https://docs.aws.amazon.com/whitepapers/latest/modern-data-architecture-rationales-on-aws/images/modern-data-arch-6.png)
 
 ## Conformed layer
 <a name="conformed-layer-1"></a>
@@ -52,7 +52,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/modern-data-architect
 
  For example, in the case of a customer entity, these are generic properties such as name, age, profession, address, and so on. This makes it easier to centrally manage and provide primary data information, especially from a governance point of view (such as PII/PCI management, and lineage and lifecycle management of such sensitive data).
 
-![A diagram depicting the centralized pattern for conformed layer.](http://docs.aws.amazon.com/whitepapers/latest/modern-data-architecture-rationales-on-aws/images/modern-data-arch-7.png)
+![A diagram depicting the centralized pattern for conformed layer.](https://docs.aws.amazon.com/whitepapers/latest/modern-data-architecture-rationales-on-aws/images/modern-data-arch-7.png)
 
  In the preceding image, metadata is logged in the central data catalog and data exchange is governed using the capabilities of [marketplace](https://research.aimultiple.com/data-marketplace/) data.
 
@@ -67,7 +67,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/modern-data-architect
 
  This is more distributed conformed layer, which is more domain driven. Because of its distributed nature, you see multiple datasets emerge for the common enterprise entities with properties where different domains are the golden source for specific properties. A way to enable discoverability of these datasets is cataloging the metadata and enabling governance for data exchange using a central data marketplace, with a data catalog and marketplace at its core.
 
-![A diagram depicting a distributed pattern for conformed layer](http://docs.aws.amazon.com/whitepapers/latest/modern-data-architecture-rationales-on-aws/images/modern-data-arch-8.png)
+![A diagram depicting a distributed pattern for conformed layer](https://docs.aws.amazon.com/whitepapers/latest/modern-data-architecture-rationales-on-aws/images/modern-data-arch-8.png)
 
  In the preceding diagram, the metadata is logged in the central data catalog and data exchange is governed using the capabilities of the marketplace data.
 
@@ -80,7 +80,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/modern-data-architect
 
  Based on the patterns discussed in the previous section, [Amazon Redshift](https://aws.amazon.com/redshift/) can be used to host conformed and enriched layers. Because it is a data warehouse solution, it allows for storing and managing data as per analytical models, and supports slowly changing dimensions.
 
-![A diagram depicting the Amazon Redshift approach for conformed layer .](http://docs.aws.amazon.com/whitepapers/latest/modern-data-architecture-rationales-on-aws/images/modern-data-arch-9.png)
+![A diagram depicting the Amazon Redshift approach for conformed layer .](https://docs.aws.amazon.com/whitepapers/latest/modern-data-architecture-rationales-on-aws/images/modern-data-arch-9.png)
 
 #### AWS Lake Formation governed table approach
 <a name="aws-lake-formation-governed-table-approach"></a>
@@ -93,7 +93,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/modern-data-architect
 
  This feature enables the creation of tables in a data lake (Amazon S3) and maintains history in those tables using [slowly changing dimension](https://en.wikipedia.org/wiki/Slowly_changing_dimension) (SCD) mechanisms. Because the transactions are ACID-compliant, the consumers get a consistent picture of the data from these tables.
 
-![A diagram depicting the AWS Lake Formation governed tabled approach for conformed layer .](http://docs.aws.amazon.com/whitepapers/latest/modern-data-architecture-rationales-on-aws/images/modern-data-arch-10.png)
+![A diagram depicting the AWS Lake Formation governed tabled approach for conformed layer .](https://docs.aws.amazon.com/whitepapers/latest/modern-data-architecture-rationales-on-aws/images/modern-data-arch-10.png)
 
 ## Enriched layer
 <a name="enriched-layer-1"></a>

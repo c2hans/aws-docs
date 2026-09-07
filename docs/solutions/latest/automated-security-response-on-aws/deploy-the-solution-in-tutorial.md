@@ -10,7 +10,7 @@ Gather the three Amazon S3 URLs for the admin, member, and member roles stack.
 ## Deploy the admin stack
 <a name="deploy-the-admin-stack"></a>
 
- [![Automated Security Response on AWS view main template button](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/view-template.png)](https://solutions-reference.s3.amazonaws.com/automated-security-response-on-aws/latest/automated-security-response-admin.template) **automated-security-response-admin.template**
+ [![Automated Security Response on AWS view main template button](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/view-template.png)](https://solutions-reference.s3.amazonaws.com/automated-security-response-on-aws/latest/automated-security-response-admin.template) **automated-security-response-admin.template**
 
 In the admin account, navigate to the [CloudFormation console](https://console.aws.amazon.com/cloudformation/) and deploy the admin stack into the Security Hub finding aggregation Region.
 
@@ -30,7 +30,7 @@ Wait until the admin stack completes deployment before continuing so a trust rel
 ## Deploy the member stack
 <a name="deploy-the-member-stack"></a>
 
- [![automated-security-response-member.template button](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/view-template.png)](https://solutions-reference.s3.amazonaws.com/automated-security-response-on-aws/latest/automated-security-response-member.template) **automated-security-response-member.template**
+ [![automated-security-response-member.template button](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/view-template.png)](https://solutions-reference.s3.amazonaws.com/automated-security-response-on-aws/latest/automated-security-response-member.template) **automated-security-response-member.template**
 
 In the admin account, navigate to the [CloudFormation StackSets console](https://console.aws.amazon.com/cloudformation/home#/stacksets) and deploy the member stack to each account and Region. Use the StackSets admin and execution roles created in this tutorial.
 

@@ -17,10 +17,10 @@ To generate a order insight, in addition to configuring the processes and milest
 1. Choose **Setup**.
 
 1. On the **Orders Setup** page, under **Getting Started with Orders**, choose **Create Process**.
-![Create a order planning and tracking process](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/orders-setup.png)
+![Create a order planning and tracking process](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/orders-setup.png)
 
    The **Edit Process** page appears.
-![Create a order planning and tracking process](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/create_process1.png)
+![Create a order planning and tracking process](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/create_process1.png)
 
 1. Under **Please enter the Process ID you expect this configuration to match** – Enter the Process ID. If the *work\_order\_plan* data entity is uploaded, the *Process ID* is derived from the *work\_order\_plan* data entity or AWS Supply Chain will generate an UUID that you can modify to match the process ID you know will be ingested.
 

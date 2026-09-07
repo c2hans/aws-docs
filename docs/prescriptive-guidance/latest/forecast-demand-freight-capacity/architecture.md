@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/forecast-de
 
 The following image shows the workflow of the solution, including data ingestion, data preparation, model building, and final output and monitoring.
 
-![Architecture diagram of a ML model for forecasting freight demand](http://docs.aws.amazon.com/prescriptive-guidance/latest/forecast-demand-freight-capacity/images/guide-img/4600072e-6d1e-414c-b39d-f89e1eed9438/images/27bc898f-2a60-451b-881d-b4dff3a1873c.png)
+![Architecture diagram of a ML model for forecasting freight demand](https://docs.aws.amazon.com/prescriptive-guidance/latest/forecast-demand-freight-capacity/images/guide-img/4600072e-6d1e-414c-b39d-f89e1eed9438/images/27bc898f-2a60-451b-881d-b4dff3a1873c.png)
 
 The solution architecture includes the following main components:
 

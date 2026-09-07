@@ -41,16 +41,16 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/cases-sla.html
 1. Log in to the Connect Customer admin website at https://{{instance name}}.my.connect.aws/.
 
 1. Open the **Agent Workspace**.
-![Open the Agent Workspace.](http://docs.aws.amazon.com/connect/latest/adminguide/images/cases-sla-viewing-1.png)
+![Open the Agent Workspace.](https://docs.aws.amazon.com/connect/latest/adminguide/images/cases-sla-viewing-1.png)
 
 1.  Choose the gear icon in the top right of the table.
-![The gear icon in the top right of the table.](http://docs.aws.amazon.com/connect/latest/adminguide/images/cases-sla-viewing-2.png)
+![The gear icon in the top right of the table.](https://docs.aws.amazon.com/connect/latest/adminguide/images/cases-sla-viewing-2.png)
 
 1.  Add the **Next SLA Breach** field to the active list.
-![Add the Next SLA Breach field to the active list.](http://docs.aws.amazon.com/connect/latest/adminguide/images/cases-sla-viewing-3.png)
+![Add the Next SLA Breach field to the active list.](https://docs.aws.amazon.com/connect/latest/adminguide/images/cases-sla-viewing-3.png)
 
 1.  Toggle the field from inactive to active.
-![You then toggle this new field to make it appear in the SLA dashboard.](http://docs.aws.amazon.com/connect/latest/adminguide/images/cases-sla-viewing-4.png)
+![You then toggle this new field to make it appear in the SLA dashboard.](https://docs.aws.amazon.com/connect/latest/adminguide/images/cases-sla-viewing-4.png)
 
 **Note**
  These settings persist unless you clear your cookies.

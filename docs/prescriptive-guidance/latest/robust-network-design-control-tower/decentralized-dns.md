@@ -19,7 +19,7 @@ You can also associate a hosted zone from other accounts. For example, if you ne
 
 The following diagram shows a Route 53 Profile sharing AWS Resource Access Manager (AWS RAM) configuration. Route 53 Profiles can be shared with a single account, an AWS Organizations organizational unit, or across your entire organization.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/robust-network-design-control-tower/images/guide-img/734c65f3-3001-4321-a428-6ffbda3b44b0/images/5d317e49-b056-4121-8c8e-fd7cccaa7a51.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/robust-network-design-control-tower/images/guide-img/734c65f3-3001-4321-a428-6ffbda3b44b0/images/5d317e49-b056-4121-8c8e-fd7cccaa7a51.png)
 
 The diagram shows the following workflow:
 

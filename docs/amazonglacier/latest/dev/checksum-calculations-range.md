@@ -32,7 +32,7 @@ If you specify a range to retrieve in the Initiate Job request that is not tree 
 
 Suppose you have a 6.5 MB archive in your vault and you want to retrieve 2 MB of the archive. How you specify the 2 MB range in the Initiate Job request determines if you receive data checksum values when you download your data. The following diagram illustrates two 2 MB ranges for the 6.5 MB archive that you could download. Both ranges are megabyte aligned, but only one is tree-hash aligned.
 
-![Diagram showing retrieval of an archive range that is tree-hash aligned.](http://docs.aws.amazon.com/amazonglacier/latest/dev/images/TreeHash-ArchiveWithRanges.png)
+![Diagram showing retrieval of an archive range that is tree-hash aligned.](https://docs.aws.amazon.com/amazonglacier/latest/dev/images/TreeHash-ArchiveWithRanges.png)
 
 ## Tree-Hash Aligned Range Specification
 <a name="tree-hash-algorithm"></a>

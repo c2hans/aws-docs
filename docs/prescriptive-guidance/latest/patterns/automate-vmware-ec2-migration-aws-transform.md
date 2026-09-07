@@ -81,7 +81,7 @@ The following diagram shows the high-level AWS Transform VMware migration archit
 
 1.  During testing and cutover, AWS Transform MGN launches Amazon EC2 instances from the replicated data in the target VPC.
 
-![](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7965c128-970b-4482-a730-1e4fdd849dfe/images/56c10889-8ef6-40c0-b5c1-4fdf8862d638.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/7965c128-970b-4482-a730-1e4fdd849dfe/images/56c10889-8ef6-40c0-b5c1-4fdf8862d638.png)
 
 **Automation and scale**
 +  AWS Transform provides a chat-based interface where you interact with AI agents using natural language prompts to drive each migration step.

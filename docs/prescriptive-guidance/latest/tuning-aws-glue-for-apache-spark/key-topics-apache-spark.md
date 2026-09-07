@@ -21,7 +21,7 @@ You use a `SparkContext` object to interact with the Spark driver for your job r
 
 A Spark executor is a worker for holding data and running tasks that are passed from the Spark driver. The number of Spark executors will go up and down with the size of your cluster.
 
-![Spark driver, cluster manager, and worker node connections with JVM executors in the worker nodes.](http://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/9f657149-094c-46cd-915e-1d2771abb382.png)
+![Spark driver, cluster manager, and worker node connections with JVM executors in the worker nodes.](https://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/9f657149-094c-46cd-915e-1d2771abb382.png)
 
 |
 |
@@ -35,7 +35,7 @@ Spark does the complex job of storing and tracking large data sets across Spark 
 
 The following figure shows the difference in how to store data in memory when a Python script is run in its typical environment and when it's run in the Spark framework (*PySpark*).
 
-![Python val [1,2,3 N], Apache Spark rdd = sc.parallelize[1,2,3 N].](http://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/2ac4d7ef-1c19-4744-a619-66e4126b1b53.png)
+![Python val [1,2,3 N], Apache Spark rdd = sc.parallelize[1,2,3 N].](https://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/2ac4d7ef-1c19-4744-a619-66e4126b1b53.png)
 
 + **Python** – Writing `val = [1,2,3...N]` in a Python script keeps the data in memory on the single machine where the code is running.
 + **PySpark** – Spark provides the RDD data structure to load and process data distributed across memory on multiple Spark executors. You can generate an RDD with code such as `rdd = sc.parallelize[1,2,3...N]`, and Spark can automatically distribute and hold data in memory across multiple Spark executors.
@@ -82,7 +82,7 @@ This section covers Spark application terminology. The Spark driver creates an *
 + ***Stages*** – Based on the *shuffles*** **created** **for an RDD. A stage consists of one or more tasks. The shuffle is Spark's mechanism for redistributing data so that it's grouped differently across RDD partitions. Certain transformations, such as `join()`, require a shuffle. Shuffle are discussed in more detail in the [Optimize shuffles](optimize-shuffles.md) tuning practice.
 + ***Tasks*** – A task is the minimum unit of processing scheduled by Spark. Tasks are created for each RDD partition, and the number of tasks is the maximum number of simultaneous executions in the stage.
 
-![Execution plan with jobs, stages, shuffle, and tasks.](http://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/a2a098e4-f0ba-413a-8137-d5f84c11909d.png)
+![Execution plan with jobs, stages, shuffle, and tasks.](https://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/a2a098e4-f0ba-413a-8137-d5f84c11909d.png)
 
 |
 |
@@ -96,7 +96,7 @@ Spark parallelizes tasks for loading and transforming data.
 
 Consider an example where you perform distributed processing of access log files (named `accesslog1 ... accesslogN`) on Amazon S3. The following diagram shows the distributed-processing flow.
 
-![""](http://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/802eab1b-c287-40e0-a105-963f2eeed72d.png)
+![""](https://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/802eab1b-c287-40e0-a105-963f2eeed72d.png)
 
 1. The Spark driver creates an execution plan for distributed processing across many Spark executors.
 
@@ -111,7 +111,7 @@ For more details about the initial number of partitions and optimization, see th
 
 Internally, Spark uses an engine called [Catalyst optimizer](https://www.databricks.com/glossary/catalyst-optimizer) to optimize execution plans. Catalyst has a query optimizer that you can use when running high-level Spark APIs, such as [Spark SQL](https://spark.apache.org/docs/latest/sql-programming-guide.html#sql), [DataFrame, and Datasets](https://spark.apache.org/docs/latest/sql-programming-guide.html#datasets-and-dataframes), as described in the following diagram.
 
-![Logical plan goes throuh Catalyst optimizer, which outputs an optimized plan that is sent to RDDs.](http://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/7b5448fb-a635-41f6-bf95-0fbc0d4489c7.png)
+![Logical plan goes throuh Catalyst optimizer, which outputs an optimized plan that is sent to RDDs.](https://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-glue-for-apache-spark/images/guide-img/ee14755c-1401-4ea5-afc7-732eb483b047/images/7b5448fb-a635-41f6-bf95-0fbc0d4489c7.png)
 
 Because the Catalyst optimizer doesn't work directly with the RDD API, the high-level APIs are generally faster than the low-level RDD API. For complex joins, the Catalyst optimizer can significantly improve performance by optimizing the job run plan. You can see the optimized plan of your Spark job on the **SQL** tab of the Spark UI.
 

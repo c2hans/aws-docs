@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-
 
  AWS services – [Amazon Route 53](https://aws.amazon.com/route53/), [Amazon CloudFront](https://aws.amazon.com/cloudfront/), [Amazon API Gateway](https://aws.amazon.com/api-gateway/), [Elastic Load Balancing](https://aws.amazon.com/elasticloadbalancing/), [Amazon S3](https://aws.amazon.com/s3/), [Amazon RDS](https://aws.amazon.com/rds/), and [Amazon VPC](https://aws.amazon.com/vpc/)
 
-![Website scenario with API engine and Database Management System in on-premises](http://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-to-address-personal-data-processing-requirements/images/website-scenario-with-api-engine.png)
+![Website scenario with API engine and Database Management System in on-premises](https://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-to-address-personal-data-processing-requirements/images/website-scenario-with-api-engine.png)
 
  Website scenario with API engine and Database Management System in on-premises
 

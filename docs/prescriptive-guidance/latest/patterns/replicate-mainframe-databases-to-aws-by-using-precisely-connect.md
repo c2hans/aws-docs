@@ -51,7 +51,7 @@ A mainframe environment that includes at least one of the following databases:
 
 The following diagram illustrates the replication of mainframe data to an AWS database such as DynamoDB, Amazon RDS, Amazon ElastiCache, or Amazon Keyspaces. The replication occurs in near real time by using Precisely Capture and Publisher in your on-premises mainframe environment, Precisely Dispatcher on Amazon EKS Anywhere in your on-premises distributed environment, and Precisely Apply Engine and database connectors in the AWS Cloud.
 
-![Replicating mainframe data to AWS databases](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/17ac53b7-86d5-4a8c-a55f-56b6338a1af3/images/777dd7da-48ed-4510-b8fa-9041be042671.png)
+![Replicating mainframe data to AWS databases](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/17ac53b7-86d5-4a8c-a55f-56b6338a1af3/images/777dd7da-48ed-4510-b8fa-9041be042671.png)
 
 The diagram shows the following workflow:
 
@@ -77,7 +77,7 @@ Business continuity is key to your organization’s success. The AWS Cloud provi
 
 The following diagram illustrates the DR workflow.
 
-![Disaster recovery workflow for replicating mainframe data on AWS](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/17ac53b7-86d5-4a8c-a55f-56b6338a1af3/images/9cccba7a-7a25-411e-829f-7cd5a7a20ab4.png)
+![Disaster recovery workflow for replicating mainframe data on AWS](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/17ac53b7-86d5-4a8c-a55f-56b6338a1af3/images/9cccba7a-7a25-411e-829f-7cd5a7a20ab4.png)
 
 The diagram shows the following:
 
@@ -93,7 +93,7 @@ The diagram shows the following:
 
 Database connectors are critical components in this pattern. Connectors follow a listener-based approach to collect data from Amazon MSK and send transactions to the database through high-throughput and low-latency processing for mission-critical applications (tiers 0 and 1). The following diagram illustrates this process.
 
-![Using database connectors to replicate mainframe data on AWS](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/17ac53b7-86d5-4a8c-a55f-56b6338a1af3/images/79479634-becb-4212-bbfc-1a3b17ae1bed.png)
+![Using database connectors to replicate mainframe data on AWS](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/17ac53b7-86d5-4a8c-a55f-56b6338a1af3/images/79479634-becb-4212-bbfc-1a3b17ae1bed.png)
 
 This pattern supports the development of a customized application with single-threaded consumption through a multithreaded processing engine.
 

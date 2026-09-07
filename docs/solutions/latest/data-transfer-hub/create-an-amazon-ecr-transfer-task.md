@@ -74,7 +74,7 @@ This tutorial provides instructions for the backend-only version. For more detai
 1.  Select Cluster Template. Choose **Network Only** type.
 
 1.  Specify a cluster name and click Create to create a cluster. If you want to also create a new VPC (public subnets only), please also check the **Create a new VPC for this cluster** option.
-![Configure cluster page with cluster name field and Create VPC checkbox highlighted.](http://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/cluster.png)
+![Configure cluster page with cluster name field and Create VPC checkbox highlighted.](https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/cluster.png)
 
  **Step 3. Configure credentials**
 
@@ -96,7 +96,7 @@ This tutorial provides instructions for the backend-only version. For more detai
      "secret_access_key": "<Your Access Key Secret>"
    }
    ```
-![Other type of secrets option selected with JSON format showing access key ID and secret key pairs.](http://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/secret.png)
+![Other type of secrets option selected with JSON format showing access key ID and secret key pairs.](https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/secret.png)
 
 1. Choose **Next** to specify a secret name, and choose **Create**.
 
@@ -109,10 +109,10 @@ This tutorial provides instructions for the backend-only version. For more detai
 1.  Choose the following to launch the CloudFormation Stack in that Region.
    +  For AWS China Regions
 
-      [![Blue rectangular button labeled "Launch Stack" with a play icon.](http://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/launch-stack.png)](https://console.amazonaws.cn/cloudformation/home#/stacks/create/template?stackName=DTHECRStack&templateURL=https://solutions-reference.s3.amazonaws.com/data-transfer-hub/latest/DataTransferECRStack.template)
+      [![Blue rectangular button labeled "Launch Stack" with a play icon.](https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/launch-stack.png)](https://console.amazonaws.cn/cloudformation/home#/stacks/create/template?stackName=DTHECRStack&templateURL=https://solutions-reference.s3.amazonaws.com/data-transfer-hub/latest/DataTransferECRStack.template)
    +  For AWS Global Regions
 
-      [![Blue rectangular button labeled "Launch Stack" with a play icon.](http://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/launch-stack.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/create/template?stackName=DTHECRStack&templateURL=https://solutions-reference.s3.amazonaws.com/data-transfer-hub/latest/DataTransferECRStack.template)
+      [![Blue rectangular button labeled "Launch Stack" with a play icon.](https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/images/launch-stack.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/create/template?stackName=DTHECRStack&templateURL=https://solutions-reference.s3.amazonaws.com/data-transfer-hub/latest/DataTransferECRStack.template)
 
 1.  Choose **Next**. Specify values to parameters accordingly. Change the stack name if required.
 

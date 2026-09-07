@@ -32,7 +32,7 @@ Use the following procedure while signed in to the migration factory web console
 
  **Migration status**
 
-![migration status](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/migration-status.png)
+![migration status](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/migration-status.png)
 
 ## Install the replication agents
 <a name="install-the-replication-agents"></a>
@@ -53,7 +53,7 @@ Use the following procedure to automatically install the Replication agents in t
 1. The script also provides the migration status in the Migration Factory web interface as shown in the following example screenshot.
 
     **Migration status**
-![migration status success](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/migration-status-success.png)
+![migration status success](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/migration-status-success.png)
 
 ## Push the post-launch scripts
 <a name="push-the-post-launch-scripts"></a>
@@ -92,7 +92,7 @@ Use the following procedure to verify the replication status.
 
  **Data replication status**
 
-![data replication status](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/data-replication-status.png)
+![data replication status](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/data-replication-status.png)
 
 **Note**
 Replication can take a while. You might not see the status update from the factory console for a few minutes. Optionally, you can also check the status in MGN service.
@@ -138,7 +138,7 @@ Use the following procedure to launch test instances.
 
  **Wave action success**
 
-![wave action success](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/wave-action-success.png)
+![wave action success](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/wave-action-success.png)
 
 **Note**
 This action will also update the migration status for the server launched.
@@ -164,7 +164,7 @@ Use the following procedure to verify the status of the target instance.
 
  **AWS Migration Management dashboard showing server list with migration status for 5 servers.**
 
-![migration 2by2 status](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/migration-2by2-status.png)
+![migration 2by2 status](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/migration-2by2-status.png)
 
 **Note**
 Instance boot up can take a while and you might not see the status update from the factory console for a few minutes. Migration factory also receives a status update from the script. Refresh the screen if necessary.
@@ -191,7 +191,7 @@ After some time, the validation will return a successful result.
 
  **Wave action ready for cutover**
 
-![wave action ready cutover](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/wave-action-ready-cutover.png)
+![wave action ready cutover](https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/wave-action-ready-cutover.png)
 
 ## Shut down the in-scope source servers
 <a name="shut-down-the-in-scope-source-servers"></a>

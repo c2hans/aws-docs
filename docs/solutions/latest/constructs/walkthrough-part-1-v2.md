@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/constructs/walkthrough-
 
 This tutorial walks you through how to create and deploy a simple "Hello Constructs" AWS CDK app that uses a pattern from AWS Solutions Constructs, from initializing the project to deploying the resulting AWS CloudFormation template. The Hello Constructs app will create the following simple solution:
 
-![Architecture Diagram](http://docs.aws.amazon.com/solutions/latest/constructs/images/tutorial-part1.png)
+![Architecture Diagram](https://docs.aws.amazon.com/solutions/latest/constructs/images/tutorial-part1.png)
 
 ## Hello Constructs
 <a name="hello-konstruk"></a>

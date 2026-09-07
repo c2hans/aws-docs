@@ -9,7 +9,7 @@ Amazon EC2 Auto Scaling helps you ensure that you have the correct number of Ama
 
 For example, the following Auto Scaling group has a minimum size of four instances, a desired capacity of six instances, and a maximum size of twelve instances. The scaling policies that you define adjust the number of instances, within your minimum and maximum number of instances, based on the criteria that you specify.
 
-![A basic architecture diagram of an Auto Scaling group within a VPC.](http://docs.aws.amazon.com/autoscaling/ec2/userguide/images/asg-basic-arch.png)
+![A basic architecture diagram of an Auto Scaling group within a VPC.](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/asg-basic-arch.png)
 
 ## Features of Amazon EC2 Auto Scaling
 <a name="ec2-auto-scaling-features"></a>

@@ -44,7 +44,7 @@ foreach (var item in response.S3Objects)
 
  This approach also simplifies certificate management since the certificates are now deployed to the load balancers instead of backend containers. Additionally, you can use [AWS Certificate Manager](https://aws.amazon.com/certificate-manager/) at no charge to securely store, expire, rotate, and update your certificates. This process involves adding a TLS listener to your load balancer, configuring the backend container to listen on an unencrypted port, such as part 80 (HTTP), and configuring the listener on the load balancer to forward traffic to the unencrypted port used by your container. Refer to the [TLS Termination for Network Load Balancers](https://aws.amazon.com/blogs/aws/new-tls-termination-for-network-load-balancers/) blog post for more information.
 
-![TLS termination at Application Load Balancer](http://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/tls-term.png)
+![TLS termination at Application Load Balancer](https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/tls-term.png)
 
 ## End-to-end encryption
 <a name="end-to-end-encryption"></a>
@@ -56,11 +56,11 @@ foreach (var item in response.S3Objects)
 
  This process involves adding an unencrypted listener to your load balancer, configuring backend containers to listen on the secure port and terminate HTTPS connections, and configuring the listener on the load balancer to forward traffic to the secure port used by the backend containers.
 
-![TLS termination at the container level](http://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/tls-term-container.png)
+![TLS termination at the container level](https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/tls-term-container.png)
 
 ## Decrypt and re-encrypt
 <a name="decrypt-and-re-encrypt"></a>
 
  This process involves adding a TLS listener to your load balancer, configuring backend containers to listen on the secure port, terminate HTTPS connections, using a self-signed certificate, and configuring the listener on the load balancer to forward traffic to the secure port used by the backend containers.
 
-![Re-encrypt traffic using self-signed certificate](http://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/reencrypt-traffic.png)
+![Re-encrypt traffic using self-signed certificate](https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/reencrypt-traffic.png)

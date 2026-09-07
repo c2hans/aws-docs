@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/designing-next-genera
 
  This scope of this whitepaper is not to provide a generalized solution to align for all business use cases, but will dive into a few considerations and explain the patterns we see repeated between OEMs.
 
-![Reference architecture diagram showing a global implementation for connected vehicles.](http://docs.aws.amazon.com/whitepapers/latest/designing-next-generation-vehicle-communication-aws-iot/images/global-implementation-connected-vehicles.png)
+![Reference architecture diagram showing a global implementation for connected vehicles.](https://docs.aws.amazon.com/whitepapers/latest/designing-next-generation-vehicle-communication-aws-iot/images/global-implementation-connected-vehicles.png)
 
 ## Global endpoints
 <a name="global-endpoints"></a>

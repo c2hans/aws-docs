@@ -25,7 +25,7 @@ You can also display either view by double-clicking the appropriate node.
 
 You can also choose the **Show/Hide** drop-down at the top of the view to configure which columns are displayed. Your choice of columns will persist if you close the view and reopen it.
 
-![Show/Hide drop-down menu with column selection options for AMI attributes and tag keys.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-ami-instance-show-hide-columns.png)
+![Show/Hide drop-down menu with column selection options for AMI attributes and tag keys.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-ami-instance-show-hide-columns.png)
 
  **Show/Hide Columns** UI for AMI and Instances views
 
@@ -38,7 +38,7 @@ For more information about tags, go to [Using Tags](https://docs.aws.amazon.com/
  *To add a tag*
 
 1. In the **Add** box, type a name for the tag. Choose the green button with the plus sign (\+), and then choose **Apply**.
-![Show/Hide Columns dialog with tag keys and image attributes checkboxes, and Add field.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-ec2-add-tag.png)
+![Show/Hide Columns dialog with tag keys and image attributes checkboxes, and Add field.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-ec2-add-tag.png)
 
    Add a tag to an AMI or Amazon EC2 instance
 
@@ -62,7 +62,7 @@ AWS Explorer provides all of the functionality required to launch an Amazon EC2 
 1. At the top of the AMIs view, in the drop-down list on the left, choose **Amazon Images**. In the drop-down list on the right, choose **Windows**. In the filter box, type `ebs` for Elastic Block Storage. It may take a few moments for the view to be refreshed.
 
 1. Choose an AMI in the list, open the context (right-click) menu, and then choose **Launch Instance**. .
-![Context menu showing Launch Instance, Edit Permission, Copy to Region, De-register AMI, and Properties options.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/ami-launch-list.png)
+![Context menu showing Launch Instance, Edit Permission, Copy to Region, De-register AMI, and Properties options.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/ami-launch-list.png)
 
    AMI list
 
@@ -86,14 +86,14 @@ Key pairs stored in the Toolkit are encrypted. you can find them at `%LOCALAPPDA
 The security group controls the type of network traffic the EC2 instance will accept. Choose a security group that will allow incoming traffic on port 3389, the port used by RDP, so that you can connect to the EC2 instance. For information about how to use the Toolkit to create security groups, see [Managing Security Groups from AWS Explorer](tkv-sg-create.md).
 ** *Instance Profile* **
 The instance profile is a logical container for an IAM role. When you choose an instance profile, you associate the corresponding IAM role with the EC2 instance. IAM roles are configured with policies that specify access to Amazon Web Services and account resources. When an EC2 instance is associated with an IAM role, application software that runs on the instance runs with the permissions specified by the IAM role. This enables the application software to run without having to specify any AWS credentials of its own, which makes the software more secure. For more information about IAM roles, go to the [IAM User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/WorkingWithRoles.html).
-![Launch new Amazon EC2 Instance dialog showing AMI selection and instance configuration options.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/ami-launch-ui-new.png)
+![Launch new Amazon EC2 Instance dialog showing AMI selection and instance configuration options.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/ami-launch-ui-new.png)
 
    EC2 **Launch AMI** dialog box
 
 1. Choose **Launch**.
 
    In AWS Explorer, on the **Instances** subnode of **Amazon EC2**, open the context (right-click) menu and then choose **View**. The AWS Toolkit displays the list of Amazon EC2 instances associated with the active account. You may need to choose **Refresh** to see your new instance. When the instance first appears, it may be in a pending state, but after a few moments, it transitions to a running state.
-![Context menu for EC2 instance showing options such as Get Windows Passwords and Terminate.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/ami-running-ec2-instancs.png)
+![Context menu for EC2 instance showing options such as Get Windows Passwords and Terminate.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/ami-running-ec2-instancs.png)
 
 ## Connecting to an Amazon EC2 Instance
 <a name="connect-ec2"></a>
@@ -105,14 +105,14 @@ You can use Windows Remote Desktop to connect to a Windows Server instance. For 
 1. In the EC2 instance list, right-click the Windows Server instance to which you want to connect. From the context menu, choose **Open Remote Desktop**.
 
    If you want to authenticate using the administrator password, you would choose **Get Windows Passwords**.
-![Context menu with Open Remote Desktop option highlighted.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-ec2-rdp-menu.png)
+![Context menu with Open Remote Desktop option highlighted.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-ec2-rdp-menu.png)
 
    EC2 Instance context menu
 
 1. In the **Open Remote Desktop** dialog box, choose **Use EC2 keypair to log on**, and then choose **OK**.
 
    If you did not store a key pair with the AWS Toolkit, specify the PEM file that contains the private key.
-![Remote Desktop connection dialog with Use EC2 keypair to log on option selected.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-ec2-rdp-open.png)
+![Remote Desktop connection dialog with Use EC2 keypair to log on option selected.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-ec2-rdp-open.png)
 
     **Open Remote Desktop** dialog box
 
@@ -121,12 +121,12 @@ You can use Windows Remote Desktop to connect to a Windows Server instance. For 
    If the EC2 instance has only recently started, you may not be able to connect for two possible reasons:
    + The Remote Desktop service might not yet be up and running. Wait a few minutes and try again.
    + Password information might not yet have been transferred to the instance. In this case, you will see a message box similar to the following.
-![Error dialog stating password generation not yet available and to wait 15 minutes after launch.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-ec2-rdp-no-joy.png)
+![Error dialog stating password generation not yet available and to wait 15 minutes after launch.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-ec2-rdp-no-joy.png)
 
    Password not yet available
 
    The following screenshot shows a user connected as administrator through Remote Desktop.
-![Remote Desktop session showing Administrator Command Prompt window and Start menu opened.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-ec2-rdt-desktop.png)
+![Remote Desktop session showing Administrator Command Prompt window and Start menu opened.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-ec2-rdt-desktop.png)
 
    Remote Desktop
 
@@ -142,25 +142,25 @@ Another possible way to end an instance is to use Remote Desktop to connect to t
  *To stop an Amazon EC2 instance*
 
 1. In AWS Explorer, expand the **Amazon EC2** node, open the context (right-click) menu for **Instances**, and then choose **View**. In the **Instances** list, right-click the instance you want to stop and choose **Stop** from the context menu. Choose **Yes** to confirm you want to stop the instance.
-![Context menu for EC2 instance showing options such as Stop, Start, Reboot, and Terminate.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-ec2-stop-menu.png)
+![Context menu for EC2 instance showing options such as Stop, Start, Reboot, and Terminate.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-ec2-stop-menu.png)
 
 1. At the top of the **Instances** list, choose **Refresh** to see the change in the status of the Amazon EC2 instance. Because we stopped rather than terminated the instance, the EBS volume associated with the instance is still active.
-![EC2 instance with stopped status and attached EBS volume shown as in-use in the Volumes list.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-ec2-stopped.png)
+![EC2 instance with stopped status and attached EBS volume shown as in-use in the Volumes list.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-ec2-stopped.png)
 
  *Terminated Instances Remain Visible*
 
 If you terminate an instance, it will continue to appear in the **Instance** list alongside running or stopped instances. Eventually, AWS reclaims these instances and they disappear from the list. You are not charged for instances in a terminated state.
 
-![EC2 console showing one running instance and one terminated instance in the instance list.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-ec2-instance-terminated-linger.png)
+![EC2 console showing one running instance and one terminated instance in the instance list.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-ec2-instance-terminated-linger.png)
 
  *To specify the behavior of an EC2 instance at shutdown*
 
 The AWS Toolkit enables you to specify whether an Amazon EC2 instance will stop or terminate if **Shutdown** is selected from the **Start** menu.
 
 1. In the **Instances** list, right-click an Amazon EC2 instance, and then choose **Change shutdown behavior**.
-![Context menu with Change Shutdown Behavior option highlighted.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-ec2-change-shutdown.png)
+![Context menu with Change Shutdown Behavior option highlighted.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-ec2-change-shutdown.png)
 
     **Change Shutdown Behavior** menu item
 
 1. In the **Change Shutdown Behavior** dialog box, from the **Shutdown Behavior** drop-down list, choose **Stop** or **Terminate**.
-![Change Shutdown Behavior dialog box with Shutdown Behavior dropdown showing stop and terminate options.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-ec2-change-shutdown-dlg.png)
+![Change Shutdown Behavior dialog box with Shutdown Behavior dropdown showing stop and terminate options.](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/tkv-ec2-change-shutdown-dlg.png)

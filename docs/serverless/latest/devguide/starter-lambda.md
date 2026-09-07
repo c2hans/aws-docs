@@ -21,7 +21,7 @@ Setting up, configuring and maintaining the frameworks, runtime environments, an
 
 In Lambda, you write function code. Lambda runs the functions. That’s it. There are no servers.
 
-![Image of Werner Vogels on stage in front of a banner.](http://docs.aws.amazon.com/serverless/latest/devguide/images/s_lambda/werner-no-server.jpg)
+![Image of Werner Vogels on stage in front of a banner.](https://docs.aws.amazon.com/serverless/latest/devguide/images/s_lambda/werner-no-server.jpg)
 
  *“No Server Is Easier To Manage Than No Server”* - Werner Vogels, VP and CTO
 
@@ -34,7 +34,7 @@ Serverless solutions are based on *event-driven architecture,* or EDA, where ser
 
 Within the Lambda service, your function code is stored in a code package, deployed as a .zip or a container image. All interaction with the code occurs through the Lambda API. There is no direct invocation of functions from outside of the Lambda service.
 
-![Diagram showing the Amazon Web Services Cloud as a box, with AWS Lambda service inside it within a grey box. Event text connects with an arrow to the Lambda API inside a blue box in the AWS Lambda service. The Lambda API connects with an arrow to a Lambda function icon labeled with the text: function code.](http://docs.aws.amazon.com/serverless/latest/devguide/images/s_lambda/lambda-arch-overview.png)
+![Diagram showing the Amazon Web Services Cloud as a box, with AWS Lambda service inside it within a grey box. Event text connects with an arrow to the Lambda API inside a blue box in the AWS Lambda service. The Lambda API connects with an arrow to a Lambda function icon labeled with the text: function code.](https://docs.aws.amazon.com/serverless/latest/devguide/images/s_lambda/lambda-arch-overview.png)
 
 What you will learn on your journey to building applications with Lambda:
 + How the event-driven programming model invokes Lambda functions
@@ -43,7 +43,7 @@ What you will learn on your journey to building applications with Lambda:
 + How to view logs and monitor your functions
 + Where to find hands-on opportunities to learn how to invoke functions
 
-![Image of learning path. Described in detail in the following text.](http://docs.aws.amazon.com/serverless/latest/devguide/images/s_lambda/path-lambda-fun.png)
+![Image of learning path. Described in detail in the following text.](https://docs.aws.amazon.com/serverless/latest/devguide/images/s_lambda/path-lambda-fun.png)
 
 ### Fundamentals - conceptual and practical paths
 <a name="lambda_fundamentals-conceptual-practical-paths-as-text"></a>
@@ -88,7 +88,7 @@ The Lambda learning path forks into two paths. The conceptual path focuses on th
 
 The Lambda service provides the same event-based programming model for all languages. The Lambda runtime passes an *invocation event* and *context* to your Lambda function *handler* which does some work and produces a resulting event:
 
- ![MISSING](http://docs.aws.amazon.com/serverless/latest/devguide/images/s_lambda/lambda-programming-model.png)
+ ![MISSING](https://docs.aws.amazon.com/serverless/latest/devguide/images/s_lambda/lambda-programming-model.png)
 
 The *invocation event* contains data, as a JSON packet, which varies from service to service. For example, API gateway events include path, HTTP method, query string parameters, headers, cookies, and more. DynamoDB events could contain updated or delete record data. S3 events include the bucket name and object key, among other things.
 
@@ -115,7 +115,7 @@ Lambda invokes your function in an *execution environment*, which contains a sec
 + A *runtime* provides a language-specific environment which relays invocation events, context information, and responses between the Lambda and your functions.
 + An *execution environment* manages the processes and resources that are required to run the function.
 
-![Runtime environment diagram. Lambda service box on left, Execution Environment box on right with dotted line surrounding a box for API Endpoints and a box for Processes. Lambda service is connected through three connection points to three API endpoints: Runtime API, Extensions API, and Telemetry API. These APIs are connected into the Process block. Runtime API connects to a Runtime + Function block. Extensions API and Telemetry API connect to an Extension.](http://docs.aws.amazon.com/serverless/latest/devguide/images/s_lambda/telemetry-api-concept-diagram.png)
+![Runtime environment diagram. Lambda service box on left, Execution Environment box on right with dotted line surrounding a box for API Endpoints and a box for Processes. Lambda service is connected through three connection points to three API endpoints: Runtime API, Extensions API, and Telemetry API. These APIs are connected into the Process block. Runtime API connects to a Runtime + Function block. Extensions API and Telemetry API connect to an Extension.](https://docs.aws.amazon.com/serverless/latest/devguide/images/s_lambda/telemetry-api-concept-diagram.png)
 
 You can use runtimes that Lambda provides for JavaScript (Node.js), TypeScript, Python, Java, Go, C\#, and PowerShell, or you can build your own custom runtime environment inside of a container.
 
@@ -257,7 +257,7 @@ Logging and debugging go hand in hand. Traces of events are available with Amazo
 + *resource policy*: Defines which events are authorized to invoke the function.
 + *execution role policy*: Limits what the Lambda function is authorized to do.
 
- ![Workflow diagram showing progress from event source to Lambda function, with a Resource-based policy, then Lambda to Other AWS resources, with an Execution role policy.](http://docs.aws.amazon.com/serverless/latest/devguide/images/s_lambda/lambda-security-flow.png)
+ ![Workflow diagram showing progress from event source to Lambda function, with a Resource-based policy, then Lambda to Other AWS resources, with an Execution role policy.](https://docs.aws.amazon.com/serverless/latest/devguide/images/s_lambda/lambda-security-flow.png)
 
 Using IAM roles to describe a Lambda function’s permissions, decouples security configuration from the code. This helps reduce the complexity of a lambda function, making it easier to maintain.
 
@@ -328,7 +328,7 @@ Related resources:
 
 Lambda SnapStart for Java can improve startup performance by up to 10x at no extra cost, typically with no changes to your function code. The largest contributor to startup latency (often referred to as cold start time) is the time that Lambda spends initializing the function, which includes loading the function's code, starting the runtime, and initializing the function code.
 
- ![Lambda function icon with performance monitoring dashboard showing metrics and gauges.](http://docs.aws.amazon.com/serverless/latest/devguide/images/s_lambda/snapstart-logo.png)
+ ![Lambda function icon with performance monitoring dashboard showing metrics and gauges.](https://docs.aws.amazon.com/serverless/latest/devguide/images/s_lambda/snapstart-logo.png)
 
 With SnapStart, Lambda initializes your function when you publish a function version. Lambda takes a [Firecracker microVM](http://aws.amazon.com/blogs/opensource/firecracker-open-source-secure-fast-microvm-serverless/) snapshot of the memory and disk state of the initialized [execution environment](https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtime-environment.html), encrypts the snapshot, and caches it for low-latency access.
 
@@ -362,4 +362,4 @@ Official AWS documentation:
 
 **Learn serverless techniques in an online workshop**
 Learn by doing in the **[Serverless Patterns Workshop](https://catalog.workshops.aws/serverless-patterns)**. The first module introduces a serverless microservice to retrieve data from DynamoDB with Lambda and API Gateway. Additional modules provide practical examples of unit and integration testing, using infrastructure as code to deploy resources, and how to build common architectural patterns used in serverless solutions.
- ![Architecture diagram for a REST microservice. Client icon connects through an arrow to REST API resource icon with API Gateway service icon placed above it. REST API is connected by a double arrow to Lambda function resource icon with Permissions Policy resource icon placed above it, and Lambda service icon placed above both. Lambda function resource is connected through an arrow pointing to Users Table resource with DynamoDB service icon placed above it. Dotted boxes enclose each of the services.](http://docs.aws.amazon.com/serverless/latest/devguide/images/workshop-m1-infra-complete.png)
+ ![Architecture diagram for a REST microservice. Client icon connects through an arrow to REST API resource icon with API Gateway service icon placed above it. REST API is connected by a double arrow to Lambda function resource icon with Permissions Policy resource icon placed above it, and Lambda service icon placed above both. Lambda function resource is connected through an arrow pointing to Users Table resource with DynamoDB service icon placed above it. Dotted boxes enclose each of the services.](https://docs.aws.amazon.com/serverless/latest/devguide/images/workshop-m1-infra-complete.png)

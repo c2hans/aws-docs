@@ -34,7 +34,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/access-workspaces-wit
     Repeat step 4 through step 7 for the remaining DoD Root CAs.
 
     The following figure shows the certificate successfully installed into the NTAuth store.
-![A screenshot showing the code publishing the certificate into the NTAuth certificate store.](http://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/workspaces-smartcard8.png)
+![A screenshot showing the code publishing the certificate into the NTAuth certificate store.](https://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/workspaces-smartcard8.png)
 
    * Publish certificate into the NTAuth certificate store *
 
@@ -47,7 +47,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/access-workspaces-wit
 1.  A new store called NTAuth is created. Choose the **Active Directory NTAuth** tab.
 
 1.  Confirm there is a green check mark beside **Install DoD Certificates**.
-![A screenshot showing DoD certificate installation.](http://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/workspaces-smartcard9.png)
+![A screenshot showing DoD certificate installation.](https://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/images/workspaces-smartcard9.png)
 
    * InstallRoot install DoD certificates*
 

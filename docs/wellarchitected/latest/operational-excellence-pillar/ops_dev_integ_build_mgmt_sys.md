@@ -29,7 +29,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/operational-excel
 ### Implementation steps
 <a name="implementation-steps"></a>
 
-![Diagram showing a CI/CD pipeline using AWS CodePipeline and related services](http://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/images/deployment-pipeline-tooling.png)
+![Diagram showing a CI/CD pipeline using AWS CodePipeline and related services](https://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/images/deployment-pipeline-tooling.png)
 
 1.  Use a version control system to store and manage assets (such as documents, source code, and binary files).
 

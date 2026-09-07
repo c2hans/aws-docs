@@ -45,7 +45,7 @@ This pattern walks you through all three implementations and describes the advan
 **Target technology stack  **
 + Aurora PostgreSQL-Compatible, Amazon RDS for PostgreSQL, or an EC2 instance with a PostgreSQL database
 
-![Converting an Oracle Database to PostgreSQL on AWS](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9a2ce994-4f68-4975-aab2-796cc20a3c82/images/6e7c2ef6-f440-476a-9003-f1f166718e15.png)
+![Converting an Oracle Database to PostgreSQL on AWS](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/9a2ce994-4f68-4975-aab2-796cc20a3c82/images/6e7c2ef6-f440-476a-9003-f1f166718e15.png)
 
 **Implementation options**
 

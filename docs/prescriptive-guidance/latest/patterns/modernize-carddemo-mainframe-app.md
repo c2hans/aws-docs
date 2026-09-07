@@ -35,7 +35,7 @@ This pattern offers step-by-step instructions to help you test the mainframe mod
 
 The following diagram shows the architecture that you set up in this pattern.
 
-![Using AWS Transform to modernize a mainframe application that is stored in an Amazon S3 bucket.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/0e539474-b733-452d-b0fb-6b3f4cbd5075/images/75be6d78-5b43-448c-ad07-bf74b9ae14ad.png)
+![Using AWS Transform to modernize a mainframe application that is stored in an Amazon S3 bucket.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/0e539474-b733-452d-b0fb-6b3f4cbd5075/images/75be6d78-5b43-448c-ad07-bf74b9ae14ad.png)
 
 The diagram shows the following workflow:
 

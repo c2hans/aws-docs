@@ -46,7 +46,7 @@ This pattern sets up an [AWS CloudFormation](https://docs.aws.amazon.com/AWSClou
 
 The following diagram shows the Step Functions workflow:
 
-![Step Functions workflow to call Lambda function to modify route tables for transit gateway peering.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/b678bb87-c7b9-4f7b-b26e-eaac650e5d1b/images/2f235f47-5d68-492c-b954-7dc170939cae.png)
+![Step Functions workflow to call Lambda function to modify route tables for transit gateway peering.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/b678bb87-c7b9-4f7b-b26e-eaac650e5d1b/images/2f235f47-5d68-492c-b954-7dc170939cae.png)
 
 The workflow contains the following steps:
 

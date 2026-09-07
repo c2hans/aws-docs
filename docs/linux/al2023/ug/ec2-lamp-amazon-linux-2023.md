@@ -201,7 +201,7 @@ If your server is installed and running, and your file permissions are set corre
    ```
 
    You should see the PHP information page:
-![Test of the LAMP server shows the PHP information page.](http://docs.aws.amazon.com/linux/al2023/ug/images/php-8.1.7-2022.png)
+![Test of the LAMP server shows the PHP information page.](https://docs.aws.amazon.com/linux/al2023/ug/images/php-8.1.7-2022.png)
 
    If you do not see this page, verify that the `/var/www/html/phpinfo.php` file was created properly in the previous step. You can also verify that all of the required packages were installed with the following command.
 
@@ -331,7 +331,7 @@ We do not recommend using `phpMyAdmin` to access a LAMP server unless you have e
    ```
 
    You should see the phpMyAdmin login page:
-![Result of typing the URL of your phpMyAdmin installation is the phpMyAdmin login screen.](http://docs.aws.amazon.com/linux/al2023/ug/images/phpmyadmin_login.png)
+![Result of typing the URL of your phpMyAdmin installation is the phpMyAdmin login screen.](https://docs.aws.amazon.com/linux/al2023/ug/images/phpmyadmin_login.png)
 
 1. Log in to your phpMyAdmin installation with the `root` user name and the MySQL root password you created earlier.
 

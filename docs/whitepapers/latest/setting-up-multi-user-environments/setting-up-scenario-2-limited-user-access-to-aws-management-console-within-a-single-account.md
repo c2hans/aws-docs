@@ -31,7 +31,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/setting-up-multi-user
 
  This scenario can be useful when the users need to access the AWS Management Console, launch new services, interact with services for complicated cloud-based application architectures, or exercise more control over accessing and sharing resources. The following figure shows the architecture for this scenario.
 
-![Diagram showing limited user access to AWS Management Console](http://docs.aws.amazon.com/whitepapers/latest/setting-up-multi-user-environments/images/limited-user-access-to-console.png)
+![Diagram showing limited user access to AWS Management Console](https://docs.aws.amazon.com/whitepapers/latest/setting-up-multi-user-environments/images/limited-user-access-to-console.png)
 
  As shown in the preceding figure, this scenario works well with a single AWS account. The administrator needs to create IAM users and groups to apply access control policies for the environment. Example IAM user policies for setting up this scenario are described in [Appendix B: Example IAM user policies](appendix-b.md).
 

@@ -34,7 +34,7 @@ The example in this pattern uses Python as the underlying programming language, 
 
 **Target architecture **
 
-![Four-step process to create the Lambda function.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e421cc58-d33e-493d-b0bb-c3ffe39c2eb9/images/7f36d3d8-d161-497a-b036-26d886a16c69.png)
+![Four-step process to create the Lambda function.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e421cc58-d33e-493d-b0bb-c3ffe39c2eb9/images/7f36d3d8-d161-497a-b036-26d886a16c69.png)
 
 1. You create a Git repository and commit the application code to the repository.
 

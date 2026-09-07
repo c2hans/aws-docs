@@ -71,7 +71,7 @@ Use this list to specify listeners for your load balancer. Each listener routes 
 **Note**
 Although you cannot delete the port 80 default listener, you can disable it, which achieves the same functionality by blocking traffic.
 
-![Classic Load Balancer configuration - editing listeners](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/images/aeb-config-clb-listeners.png)
+![Classic Load Balancer configuration - editing listeners](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/images/aeb-config-clb-listeners.png)
 
 **To configure an existing listener**
 
@@ -81,7 +81,7 @@ Although you cannot delete the port 80 default listener, you can disable it, whi
 
 For example, you can edit the default listener and change the **Protocol** from **HTTP** to **TCP** if you want the load balancer to forward a request as is. This prevents the load balancer from rewriting headers (including `X-Forwarded-For`). The technique doesn't work with sticky sessions.
 
-![Classic Load Balancer configuration - changing the default listener's protocol to TCP](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/images/aeb-config-clb-listeners-tcp.png)
+![Classic Load Balancer configuration - changing the default listener's protocol to TCP](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/images/aeb-config-clb-listeners-tcp.png)
 
 **To add a listener**
 
@@ -99,7 +99,7 @@ For more detail on configuring HTTPS and working with certificates in Elastic Be
 
 For **SSL certificate**, choose the ARN of your SSL certificate. For example, `arn:aws:iam::123456789012:server-certificate/abc/certs/build`, or `arn:aws:acm:us-east-2:123456789012:certificate/12345678-12ab-34cd-56ef-12345678`.
 
-![Classic Load Balancer configuration - adding a secure listener](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/images/aeb-config-clb-listeners-https.png)
+![Classic Load Balancer configuration - adding a secure listener](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/images/aeb-config-clb-listeners-https.png)
 
 For details about configuring HTTPS and working with certificates in Elastic Beanstalk, see [Configuring HTTPS for your Elastic Beanstalk environment](configuring-https.md).
 
@@ -108,21 +108,21 @@ For details about configuring HTTPS and working with certificates in Elastic Bea
 
 Select or clear the **Session stickiness enabled** box to enable or disable sticky sessions. Use **Cookie duration** to configure a sticky session's duration, up to **1000000** seconds. On the **Load balancer ports** list, select listener ports that the default policy (`AWSEB-ELB-StickinessPolicy`) applies to.
 
-![Classic Load Balancer settings for session stickiness and duration](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/images/aeb-config-elb-sessions.png)
+![Classic Load Balancer settings for session stickiness and duration](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/images/aeb-config-elb-sessions.png)
 
 ### Cross-zone load balancing
 <a name="using-features.managing.elb.cross-zone"></a>
 
 Select or clear the **Load balancing across multiple Availability Zones enabled** box to enable or disable cross-zone load balancing.
 
-![Classic Load Balancer settings for cross-zone load balancing](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/images/aeb-config-elb-cross-zone.png)
+![Classic Load Balancer settings for cross-zone load balancing](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/images/aeb-config-elb-cross-zone.png)
 
 ### Connection draining
 <a name="using-features.managing.elb.draining"></a>
 
 Select or clear the **Connection draining enabled** box to enable or disable connection draining. Set the **Draining timeout**, up to **3600** seconds.
 
-![Classic Load Balancer settings for connection draining and draining timeout](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/images/aeb-config-elb-draining.png)
+![Classic Load Balancer settings for connection draining and draining timeout](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/images/aeb-config-elb-draining.png)
 
 ### Health check
 <a name="using-features.managing.elb.healthchecks"></a>
@@ -133,7 +133,7 @@ Use the following settings to configure load balancer health checks:
 + **Interval** – The amount of time, in seconds, between health checks of an individual instance. The interval must be greater than the timeout.
 + **Unhealthy threshold**, **Healthy threshold** – The number of health checks that must fail or pass, respectively, before Elastic Load Balancing changes an instance's health state.
 
-![Classic Load Balancer settings for health check](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/images/aeb-config-elb-healthcheck.png)
+![Classic Load Balancer settings for health check](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/images/aeb-config-elb-healthcheck.png)
 
 **Note**
 The Elastic Load Balancing health check doesn't affect the health check behavior of an environment's Auto Scaling group. Instances that fail an Elastic Load Balancing health check are not automatically replaced by Amazon EC2 Auto Scaling unless you manually configure Amazon EC2 Auto Scaling to do so. See [Auto Scaling health check setting for your Elastic Beanstalk environment](environmentconfig-autoscaling-healthchecktype.md) for details.

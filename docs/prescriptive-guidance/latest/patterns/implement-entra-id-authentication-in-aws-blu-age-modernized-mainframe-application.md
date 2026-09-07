@@ -69,7 +69,7 @@ The following diagram illustrates the process flow.
 **Note**
 The diagram includes Amazon Aurora as an example of database modernization although Aurora isn’t included in the steps for this pattern.
 
-![Process flow for Entra ID-based authentication for an AWS Blu Age application.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e51f24b8-178f-4974-aae9-23a0cc8540f5/images/0fdcdb22-9e46-4b02-86b2-395cba3e2f81.png)
+![Process flow for Entra ID-based authentication for an AWS Blu Age application.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/e51f24b8-178f-4974-aae9-23a0cc8540f5/images/0fdcdb22-9e46-4b02-86b2-395cba3e2f81.png)
 
 where:
 

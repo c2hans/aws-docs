@@ -36,7 +36,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-buildi
 
  [Workflow Studio for AWS Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/workflow-studio.html) is a low-code visual workflow designer that lets you create serverless workflows by orchestrating AWS services. It makes it easy for game developers to build serverless workflows and empowers game developers to focus on building better gameplay while reducing the time spent writing configuration code for workflow definitions and building data transformations. Use drag-and-drop to create and edit workflows, control how input and output is filtered or transformed for each state, and configure error handling. As you create a workflow, Workflow Studio validates your work and generates code.
 
-![Sample design workflow](http://docs.aws.amazon.com/whitepapers/latest/best-practices-building-data-lake-for-games/images/sample-design-workflow.png)
+![Sample design workflow](https://docs.aws.amazon.com/whitepapers/latest/best-practices-building-data-lake-for-games/images/sample-design-workflow.png)
 
 ## Amazon Managed Workflows for Apache Airflow (MWAA)
 <a name="amazon-managed-workflows-for-apache-airflow-mwaa"></a>
@@ -47,7 +47,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-buildi
 
  Amazon MWAA orchestrates and schedules your workflows by using Directed Acyclic Graphs (DAGs) written in Python. To run DAGs in an Amazon MWAA environment, you copy your files to the Amazon S3, then let Amazon MWAA know where your DAGs and supporting files are located on the Amazon MWAA console. Amazon MWAA takes care of synchronizing the DAGs among workers, schedulers, and the web server.
 
-![A diagram showing how all of the components contained in the MWAA section appear as a single Amazon MWAA environment in your account.](http://docs.aws.amazon.com/whitepapers/latest/best-practices-building-data-lake-for-games/images/mwaa.jpg)
+![A diagram showing how all of the components contained in the MWAA section appear as a single Amazon MWAA environment in your account.](https://docs.aws.amazon.com/whitepapers/latest/best-practices-building-data-lake-for-games/images/mwaa.jpg)
 
  Amazon MWAA supports open-source integrations with Amazon Athena, AWS Batch, Amazon CloudWatch, Amazon DynamoDB, AWS DataSync, Amazon EMR, AWS Fargate, Amazon EKS, Amazon Data Firehose, AWS Glue, AWS Lambda, Amazon Redshift, Amazon SQS, Amazon SNS, Amazon SageMaker AI, and Amazon S3, as well as hundreds of built-in and community-created operators and sensors and third-party tools such as Apache Hadoop, Presto, Hive, and Spark to perform data processing tasks.
 

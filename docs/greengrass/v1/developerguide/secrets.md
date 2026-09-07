@@ -19,7 +19,7 @@ AWS IoT Greengrass encrypts your secrets while in transit and at rest. During gr
 
 The following diagram shows the high-level process of deploying a secret to the core. Secrets are encrypted in transit and at rest.
 
-![AWS IoT Greengrass fetches a secret from AWS Secrets Manager and deploys it as a secret resource to the core device, where it is available to connectors and Lambda functions.](http://docs.aws.amazon.com/greengrass/v1/developerguide/images/deploy-local-secret.png)
+![AWS IoT Greengrass fetches a secret from AWS Secrets Manager and deploys it as a secret resource to the core device, where it is available to connectors and Lambda functions.](https://docs.aws.amazon.com/greengrass/v1/developerguide/images/deploy-local-secret.png)
 
 Using AWS IoT Greengrass to store your secrets locally offers these advantages:
 + **Decoupled from code (not hard-coded).** This supports centrally managed credentials and helps protect sensitive data from the risk of compromise.

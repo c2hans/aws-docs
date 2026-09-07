@@ -23,4 +23,4 @@ When developing a capacity reservation model, consider and answer the following:
 
 To answer these questions, you can use the following matrix. The matrix includes an example of how you might distribute instance types for a total of 5,000 VDI users.
 
-![Decision chart for how plan reservations for EC2 instances for VDI users](http://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-vdi/images/guide-img/4216869b-a3c7-4a1b-8529-279b6b36f090/images/6c283fb5-936a-4e28-a7d0-dab2a44f888d.png)
+![Decision chart for how plan reservations for EC2 instances for VDI users](https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-vdi/images/guide-img/4216869b-a3c7-4a1b-8529-279b6b36f090/images/6c283fb5-936a-4e28-a7d0-dab2a44f888d.png)

@@ -21,6 +21,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-scalable-sec
 
 1.  Developers define the services, which are populated in the service directory and registered into the service network. VPC Lattice contains the address book of all services configured. Developers can also define routing polices to use blue/green deployments. Security is managed at the service network level where authentication and authorization policies are defined and at the service level where access policies with IAM are implemented.
 
-![A diagram depicting VPC Lattice communication flows](http://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/vpc-lattice.png)
+![A diagram depicting VPC Lattice communication flows](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/vpc-lattice.png)
 
  More details can be found in the [VPC Lattice user guide](https://docs.aws.amazon.com/vpc-lattice/latest/ug/what-is-vpc-lattice.html ).

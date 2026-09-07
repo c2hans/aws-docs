@@ -54,7 +54,7 @@ This pattern uses a sample EBCDIC file ([CLIENT.EBCDIC.txt](https://github.com/a
 
 The following diagram shows an architecture for converting mainframe EBCDIC files to ASCII files.
 
-![Architecture for converting mainframe EBCDIC files to ASCII files](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/97ab4129-2639-4733-86cb-962d91526df4/images/3ca7ca44-373a-434f-8c40-09e7c2abf5ec.png)
+![Architecture for converting mainframe EBCDIC files to ASCII files](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/97ab4129-2639-4733-86cb-962d91526df4/images/3ca7ca44-373a-434f-8c40-09e7c2abf5ec.png)
 
 The diagram shows the following workflow:
 

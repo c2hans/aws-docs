@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modern-data
 
 You can collect data from a variety of sources within AWS, but it's important to choose the right data collection tool for your use case. The following diagram shows how the data collection stage fits into the data engineering automation and access control lifecycle.
 
-![Data collection diagram](http://docs.aws.amazon.com/prescriptive-guidance/latest/modern-data-centric-use-cases/images/guide-img/058e3d2f-f726-4dc0-989b-0f15dcd3bc33/images/497abb56-a9d5-46e2-9439-c9e4177c81bb.png)
+![Data collection diagram](https://docs.aws.amazon.com/prescriptive-guidance/latest/modern-data-centric-use-cases/images/guide-img/058e3d2f-f726-4dc0-989b-0f15dcd3bc33/images/497abb56-a9d5-46e2-9439-c9e4177c81bb.png)
 
 AWS provides the following data collection tools:
 + [Amazon Kinesis](https://aws.amazon.com/kinesis/) helps you collect streaming data. Kinesis also offers seamless integration and processing capabilities.

@@ -43,11 +43,11 @@ One of the following:
 
 *From an Oracle database running in the AWS Cloud to Amazon Redshift:*
 
-![Migrating an Oracle database in the AWS Cloud to an Amazon Redshift data warehouse.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/22807be0-c7e0-49c6-8923-7d23bf83a50d/images/7140e819-81d6-45c4-805b-8e10828076a7.png)
+![Migrating an Oracle database in the AWS Cloud to an Amazon Redshift data warehouse.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/22807be0-c7e0-49c6-8923-7d23bf83a50d/images/7140e819-81d6-45c4-805b-8e10828076a7.png)
 
 *From an Oracle database running in an on-premises data center to Amazon Redshift:*
 
-![Migrating an on-premises Oracle database to an Amazon Redshift data warehouse.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/22807be0-c7e0-49c6-8923-7d23bf83a50d/images/d6654b48-0e1b-4b01-a261-5a640be01fd7.png)
+![Migrating an on-premises Oracle database to an Amazon Redshift data warehouse.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/22807be0-c7e0-49c6-8923-7d23bf83a50d/images/d6654b48-0e1b-4b01-a261-5a640be01fd7.png)
 
 ## Tools
 <a name="migrate-an-oracle-database-to-amazon-redshift-using-aws-dms-and-aws-sct-tools"></a>

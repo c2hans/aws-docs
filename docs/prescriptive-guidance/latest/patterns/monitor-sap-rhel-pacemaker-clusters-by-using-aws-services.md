@@ -46,7 +46,7 @@ You can create the AWS resources for this pattern by using AWS CloudFormation sc
 
 The following diagram illustrates the components and workflows for this solution.
 
-![Architecture for monitoring SAP RHEL Pacemaker clusters](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/ca4d282e-eadd-43fd-8506-3dbeb43e4db6/images/bfc96678-1fd3-47b6-8f09-bf7cf7c4a92c.png)
+![Architecture for monitoring SAP RHEL Pacemaker clusters](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/ca4d282e-eadd-43fd-8506-3dbeb43e4db6/images/bfc96678-1fd3-47b6-8f09-bf7cf7c4a92c.png)
 
 **Automation and scale**
 + You can automate the creation of AWS resources by using CloudFormation scripts. You can also use additional metric filters to scale and cover multiple clusters.

@@ -106,6 +106,6 @@ Now that you have a framework and a div placeholder, you can add the map control
 1. Save your JavaScript file, and open it with a browser. You now have a map on your page, where you can use pan and zoom actions.
 **Note**
 You can use this app to see how the MapLibre map control behaves. You can try using Ctrl or Shift while using a dragging operation, to see other ways to interact with the map. All of this functionality is customizable.
-![Map of Washington DC area with JSON Response heading, showing Amazon Location Service tutorial interface.](http://docs.aws.amazon.com/location/previous/developerguide/images/quickstart-map.png)
+![Map of Washington DC area with JSON Response heading, showing Amazon Location Service tutorial interface.](https://docs.aws.amazon.com/location/previous/developerguide/images/quickstart-map.png)
 
 Your app is nearly complete. In the next section, you will handle choosing a location on the map, and show the address of the location chosen. You will also show the resulting JSON on the page, to see the full results.

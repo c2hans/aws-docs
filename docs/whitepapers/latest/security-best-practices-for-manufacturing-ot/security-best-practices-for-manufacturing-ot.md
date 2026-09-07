@@ -25,13 +25,13 @@ This document describes the security best practices to design, deploy, and archi
 
 The Purdue model, as shown the following figure, is used as the backdrop to define cloud integration points and placement for resources for manufacturing workloads. The Purdue model is a reference model for the manufacturing industry, and is used as the basis for the International Society of Automation ISA-95 standard to define detailed information models for manufacturing and enterprise integration.
 
-![A diagram showing the Purdue enterprise reference architecture model.](http://docs.aws.amazon.com/whitepapers/latest/security-best-practices-for-manufacturing-ot/images/purdue-refarch-model.png)
+![A diagram showing the Purdue enterprise reference architecture model.](https://docs.aws.amazon.com/whitepapers/latest/security-best-practices-for-manufacturing-ot/images/purdue-refarch-model.png)
 
 *Purdue enterprise reference architecture model*
 
 Taking the Purdue reference model and applying it to an industrial control network illustrates the distribution of IT and OT functions, as seen in the following figure:
 
-![The Purdue Model representation of an industrial control network](http://docs.aws.amazon.com/whitepapers/latest/security-best-practices-for-manufacturing-ot/images/purdue-industrial-control-nw.png)
+![The Purdue Model representation of an industrial control network](https://docs.aws.amazon.com/whitepapers/latest/security-best-practices-for-manufacturing-ot/images/purdue-industrial-control-nw.png)
 
 *Purdue Model representation of an industrial control network*
 

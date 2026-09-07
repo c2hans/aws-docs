@@ -13,7 +13,7 @@ AWS ParallelCluster API is distributed as a self-contained [CloudFormation](http
 
 The following image shows a high-level architecture diagram of the AWS ParallelCluster API infrastructure.
 
- ![a high-level architecture diagram of the ParallelCluster API infrastructure](http://docs.aws.amazon.com/parallelcluster/latest/ug/images/API-Architecture-r2.png)
+ ![a high-level architecture diagram of the ParallelCluster API infrastructure](https://docs.aws.amazon.com/parallelcluster/latest/ug/images/API-Architecture-r2.png)
 
 ## AWS ParallelCluster API Documentation
 <a name="api-reference-documentation-v3"></a>

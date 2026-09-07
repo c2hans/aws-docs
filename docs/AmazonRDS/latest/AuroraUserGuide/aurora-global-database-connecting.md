@@ -40,7 +40,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 +  Writer – The connection endpoint for read/write requests to the primary DB cluster in the global database cluster.
 +  Reader – The connection endpoint for read-only requests to a primary or secondary DB cluster in the global database cluster. To minimize latency, choose whichever reader endpoint is in your AWS Region or the AWS Region closest to you.
 
-![The Connectivity and security tab showing the global writer endpoint.](http://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/images/aurora-global-databases-primary-cluster-connectivity-2.png)
+![The Connectivity and security tab showing the global writer endpoint.](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/images/aurora-global-databases-primary-cluster-connectivity-2.png)
 
 ### Console
 <a name="viewing-endpoints.console"></a>

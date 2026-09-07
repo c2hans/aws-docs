@@ -62,7 +62,7 @@ The migration process involves the following roles and responsibilities.
 
 The following diagram shows options for migrating your on-premises (Redis-based or other) data sources to AWS. It shows several migration tools that you can choose from, such as exporting Redis Database (RDB) files to Amazon Simple Storage Service (Amazon S3), using the Redis replication feature, or using AWS DMS.
 
-![Options for migrating on-premises data sources to Redis Enterprise Cloud on AWS](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/384309f6-7218-4a46-83a5-f37ff95c8832/images/4b242a29-d283-49a3-aaea-a970813db6be.png)
+![Options for migrating on-premises data sources to Redis Enterprise Cloud on AWS](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/384309f6-7218-4a46-83a5-f37ff95c8832/images/4b242a29-d283-49a3-aaea-a970813db6be.png)
 
 1. On-premises data sources: Databases that aren’t based on Redis, such as MySQL, PostgreSQL, Oracle, SQL Server, or MariaDB.
 
@@ -82,7 +82,7 @@ The following diagram shows options for migrating your on-premises (Redis-based 
 
 The following diagram shows a typical deployment architecture for Redis Enterprise Cloud on AWS and illustrates how it can be used with key AWS services.
 
-![Deployment architecture for Redis Enterprise Cloud on AWS, and use with AWS services](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/384309f6-7218-4a46-83a5-f37ff95c8832/images/f1351537-e710-4a68-8768-89d44870150f.png)
+![Deployment architecture for Redis Enterprise Cloud on AWS, and use with AWS services](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/384309f6-7218-4a46-83a5-f37ff95c8832/images/f1351537-e710-4a68-8768-89d44870150f.png)
 
 1. You can connect to the business applications that are backed by Redis Enterprise Cloud on AWS.
 

@@ -41,7 +41,7 @@ The solution simplifies working between Azure and AWS. You can use Azure for dev
 
 The target architecture integrates Azure DevOps with Amazon SageMaker AI, creating a cross-cloud ML workflow. It uses Azure for CI/CD processes and SageMaker AI for ML model training and deployment. It outlines the process of obtaining data (from sources such as Amazon S3, Snowflake, and Azure Data Lake) through model building and deployment. Key components include CI/CD pipelines for model building and deployment, data preparation, infrastructure management, and Amazon SageMaker AI for training and fine-tuning, evaluation, and deployment of ML models. This architecture is designed to provide efficient, automated, and scalable ML workflows across cloud platforms.
 
-![Architecture diagram of an MLOps workflow that uses Azure Devops and SageMaker.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/95fdf414-e561-4a93-9628-b41db39a577e/images/84ddcc36-54ef-473e-875f-154fae18cb13.png)
+![Architecture diagram of an MLOps workflow that uses Azure Devops and SageMaker.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/95fdf414-e561-4a93-9628-b41db39a577e/images/84ddcc36-54ef-473e-875f-154fae18cb13.png)
 
 The architecture consists of the following components:
 

@@ -266,19 +266,19 @@ This policy is different from the IAM policy created for the Amazon Cognito auth
    ```
 
 1. Confirm that your microcontroller appears under **Devices** on the Bluetooth Low Energy Mobile SDK demo app.
-![Device management page showing an ESP32 device with its unique identifier.](http://docs.aws.amazon.com/freertos/latest/userguide/images/ble-device-list1.png)
+![Device management page showing an ESP32 device with its unique identifier.](https://docs.aws.amazon.com/freertos/latest/userguide/images/ble-device-list1.png)
 **Note**
 All devices with FreeRTOS and the device information service (`{{freertos}}/.../device_information`) that are in range appear in the list.
 
 1. Choose your microcontroller from the list of devices. The application establishes a connection with the board, and a green line appears next to the connected device.
-![ESP32 device ID displayed.](http://docs.aws.amazon.com/freertos/latest/userguide/images/ble-device-list2.png)
+![ESP32 device ID displayed.](https://docs.aws.amazon.com/freertos/latest/userguide/images/ble-device-list2.png)
 
    You can disconnect from your microcontroller by dragging the line to the left.
-![Devices page showing an ESP32 device ID and another device ID.](http://docs.aws.amazon.com/freertos/latest/userguide/images/ble-device-list3.png)
+![Devices page showing an ESP32 device ID and another device ID.](https://docs.aws.amazon.com/freertos/latest/userguide/images/ble-device-list3.png)
 
 1. If prompted, pair your microcontroller and mobile device.
-![Console output showing BLE device disconnection, MQTT service disconnection, advertisement start, BLE connection to remote device, and a prompt for numeric comparison.](http://docs.aws.amazon.com/freertos/latest/userguide/images/pairing-board.png)
-![Bluetooth pairing request dialog for device "ESP32" showing code "465520" to confirm on "ESP32".](http://docs.aws.amazon.com/freertos/latest/userguide/images/pairing-mobile.png)
+![Console output showing BLE device disconnection, MQTT service disconnection, advertisement start, BLE connection to remote device, and a prompt for numeric comparison.](https://docs.aws.amazon.com/freertos/latest/userguide/images/pairing-board.png)
+![Bluetooth pairing request dialog for device "ESP32" showing code "465520" to confirm on "ESP32".](https://docs.aws.amazon.com/freertos/latest/userguide/images/pairing-mobile.png)
 
    If the code for numeric comparison is the same on both devices, pair the devices.
 
@@ -315,7 +315,7 @@ The AWS IoT broker endpoint and thing name must both be in the same region where
 1. Make sure that you have paired your board and your mobile device using the [FreeRTOS Bluetooth Low Energy Mobile SDK demo application](#ble-sdk-app).
 
 1. From the **Devices** list in the demo mobile app, choose your microcontroller, and then choose **MQTT Proxy** to open the MQTT proxy settings.
-![List of three ESP32 device IDs, with MQTT Proxy, Network Config, and Custom GATT MQTT options below.](http://docs.aws.amazon.com/freertos/latest/userguide/images/ble-device-list4.png)
+![List of three ESP32 device IDs, with MQTT Proxy, Network Config, and Custom GATT MQTT options below.](https://docs.aws.amazon.com/freertos/latest/userguide/images/ble-device-list4.png)
 
 1. After you enable the MQTT proxy, MQTT messages appear on the `{{thing-name}}/example/topic1` topic, and data is printed to the UART terminal.
 
@@ -342,22 +342,22 @@ The Wi-Fi Provisioning service is disabled by default.
 1. Make sure that you have paired your microcontroller and your mobile device using the [FreeRTOS Bluetooth Low Energy Mobile SDK demo application](#ble-sdk-app).
 
 1. From the **Devices** list in the demo mobile app, choose your microcontroller, and then choose **Network Config** to open the network configuration settings.
-![List of three ESP32 device IDs, with MQTT Proxy, Network Config, and Custom GATT MQTT options below.](http://docs.aws.amazon.com/freertos/latest/userguide/images/ble-device-list4.png)
+![List of three ESP32 device IDs, with MQTT Proxy, Network Config, and Custom GATT MQTT options below.](https://docs.aws.amazon.com/freertos/latest/userguide/images/ble-device-list4.png)
 
 1. After you choose **Network Config** for your board, the microcontroller sends a list of the networks in the vicinity to the mobile device. Available Wi-Fi networks appear in a list under **Scanned Networks**.
-![ESP32 device management interface showing no saved networks, two scanned open wi-fi networks, one with WPA2 security and RSSI of -29, the other with open security and RSSI of -50.](http://docs.aws.amazon.com/freertos/latest/userguide/images/ble-network-config1.png)
+![ESP32 device management interface showing no saved networks, two scanned open wi-fi networks, one with WPA2 security and RSSI of -29, the other with open security and RSSI of -50.](https://docs.aws.amazon.com/freertos/latest/userguide/images/ble-network-config1.png)
 
    From the **Scanned Networks** list, choose your network, and then enter the SSID and password, if required.
-![Wi-Fi network password entry dialog box with empty password field, Cancel and Save buttons.](http://docs.aws.amazon.com/freertos/latest/userguide/images/ble-wifi-password.png)
+![Wi-Fi network password entry dialog box with empty password field, Cancel and Save buttons.](https://docs.aws.amazon.com/freertos/latest/userguide/images/ble-wifi-password.png)
 
    The microcontroller connects to and saves the network. The network appears under **Saved Networks**.
-![Network interface showing saved and scanned WiFi networks, one secured by WPA2, the other open, with signal strength indicators.](http://docs.aws.amazon.com/freertos/latest/userguide/images/ble-network-config2.png)
+![Network interface showing saved and scanned WiFi networks, one secured by WPA2, the other open, with signal strength indicators.](https://docs.aws.amazon.com/freertos/latest/userguide/images/ble-network-config2.png)
 
 You can save several networks in the demo mobile app. When you restart the application and demo, the microcontroller connects to the first available saved network, starting from the top of the **Saved Networks** list.
 
 To change the network priority order or delete networks, on the **Network Configuration** page, choose **Editing Mode**. To change the network priority order, choose the right side of the network that you want to reprioritize, and drag the network up or down. To delete a network, choose the red button on the left side of the network that you want to delete.
 
-![Wifi network settings screen showing saved networks, editing options to delete or change priority, and scanned networks.](http://docs.aws.amazon.com/freertos/latest/userguide/images/ble-network-editing.png)
+![Wifi network settings screen showing saved networks, editing options to delete or change priority, and scanned networks.](https://docs.aws.amazon.com/freertos/latest/userguide/images/ble-network-editing.png)
 
 ## Generic Attributes Server
 <a name="ble-demo-server"></a>
@@ -381,7 +381,7 @@ The Bluetooth Low Energy GATT demo is disabled by default.
 1. Make sure that you have paired your board and your mobile device using the [FreeRTOS Bluetooth Low Energy Mobile SDK demo application](#ble-sdk-app).
 
 1. From the **Devices** list in the app, choose your board, and then choose **MQTT Proxy** to open the MQTT proxy options.
-![List of three ESP32 device IDs, with MQTT Proxy, Network Config, and Custom GATT MQTT options below.](http://docs.aws.amazon.com/freertos/latest/userguide/images/ble-device-list4.png)
+![List of three ESP32 device IDs, with MQTT Proxy, Network Config, and Custom GATT MQTT options below.](https://docs.aws.amazon.com/freertos/latest/userguide/images/ble-device-list4.png)
 
 1. Return to the **Devices** list, choose your board, and then choose **Custom GATT MQTT** to open the custom GATT service options.
 

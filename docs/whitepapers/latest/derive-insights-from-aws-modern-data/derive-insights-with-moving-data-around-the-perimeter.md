@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-
 
  In other situations, you want to move data from one purpose-built data store to another: data movement *around-the-perimeter*. For example, you may copy the product catalog data stored in your database to your search service to make it easier to look through your product catalog and offload the search queries from the database. We think of this concept as *data movement around the perimeter*.
 
-![Diagram showing data movement around the perimeter](http://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-aws-modern-data/images/data-movement-around-the-perimeter.png)
+![Diagram showing data movement around the perimeter](https://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-aws-modern-data/images/data-movement-around-the-perimeter.png)
 
 ## Derive insights from your data lake, data warehouse and operational databases
 <a name="derive-insights-from-your-data-lake-data-warehouse-and-operational-databases"></a>
@@ -27,7 +27,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-
 
  The following diagram illustrates the “moving the data around the perimeter” Modern Data approach with S3, Amazon Redshift, Amazon Aurora PostgreSQL, and Amazon EMR to derive analytics.
 
-![Diagram showing how to derive insights from your data lake, data warehouse and operational databases](http://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-aws-modern-data/images/insights-from-data-lakes-warehouses-and-databases.png)
+![Diagram showing how to derive insights from your data lake, data warehouse and operational databases](https://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-aws-modern-data/images/insights-from-data-lakes-warehouses-and-databases.png)
 
  The steps that data follows through the architecture are as follows:
 
@@ -50,4 +50,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-
 
  The following diagram illustrates the “moving the data around the perimeter” Modern Data approach with AWS Glue Elastic Views to derive insights.
 
-![Diagram showing the services available to derive insights from your data lake, data warehouse, and purpose-built analytics stores.](http://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-aws-modern-data/images/insights-lake-warehouse-analytics.png)
+![Diagram showing the services available to derive insights from your data lake, data warehouse, and purpose-built analytics stores.](https://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-aws-modern-data/images/insights-lake-warehouse-analytics.png)

@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/high-performance-
 
 Tightly coupled simulations typically rely on a Message Passing Interface (MPI) for inter-process communication. Multi-threading and shared memory parallelism through OpenMP can be used with MPI. Examples of tightly coupled HPC workloads include computational fluid dynamics (CFD), finite element analysis (FEA), weather prediction, and reservoir simulation.
 
-![An example of a tightly coupled workload; a high cell count Computational Fluid Dynamics simulation](http://docs.aws.amazon.com/wellarchitected/latest/high-performance-computing-lens/images/image2.png)
+![An example of a tightly coupled workload; a high cell count Computational Fluid Dynamics simulation](https://docs.aws.amazon.com/wellarchitected/latest/high-performance-computing-lens/images/image2.png)
 
  A suitable architecture attempts to minimize simulation runtimes. A tightly coupled HPC workload has the following key considerations:
 +  **Network**: The network requirements for tightly coupled calculations are demanding. Slow communication between nodes results in the slowdown of the entire calculation. Cluster placement groups and high-speed networking cards, such as the Elastic Fabric Adapter (EFA), help to achieve this in the cloud. Larger workloads run on HPC systems are more reliant on core or memory speed and can scale well across multiple instances. Smaller workloads with a lower total computational requirement find networking can be the bottleneck (due to the amount of communication between instances required) and can have the greatest demand on the network infrastructure. EFA enables running applications that require high levels of internode communications at scale on AWS.
@@ -34,7 +34,7 @@ Tightly coupled simulations typically rely on a Message Passing Interface (MPI) 
 
  AWS ParallelCluster can be deployed with a shared file system (for example, [Amazon Elastic File System](https://aws.amazon.com/efs/) or [Amazon FSx for Lustre](https://aws.amazon.com/fsx/lustre/)) that a head node, as well as any compute nodes, all have access to. With no running jobs on the cluster, Amazon EC2 compute instances remain in terminated state, and users are not billed for compute instance resource consumption. When a job is submitted to the cluster, EC2 instances are started using a specified Amazon Machine Image (AMI), and once provisioned and fully running, become available for the compute queue the job was submitted to. These machines remain available and used by the scheduler until they are idle for a cooldown period of time (10 minutes by default), at which point the EC2 instances will then be shut down and released back to AWS.
 
-![Reference architecture: AWS ParallelCluster](http://docs.aws.amazon.com/wellarchitected/latest/high-performance-computing-lens/images/image3.png)
+![Reference architecture: AWS ParallelCluster](https://docs.aws.amazon.com/wellarchitected/latest/high-performance-computing-lens/images/image3.png)
 
  **Workflow steps**
 
