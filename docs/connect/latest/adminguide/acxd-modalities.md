@@ -181,7 +181,7 @@ Use generated code to help validate modality payloads and support type-safe rend
 
 1. Open a flow in the Canvas.
 
-1. Add or select a supported node, such as User choice, User input, or an agent node.
+1. Add or select a supported node, such as a Basic, User choice, User input, Generative Journey, or Live Sync node.
 
 1. Select Add functionality on the node.
 
@@ -204,7 +204,7 @@ For agent nodes, attach the modality as a tool and provide instructions for when
 
 1. Open a flow in the Canvas.
 
-1. Add or select a supported node, such as User choice or User input.
+1. Add or select a supported node, such as a Basic, User choice, User input, Generative Journey, or Live Sync node.
 
 1. Open the node's functionality options.
 

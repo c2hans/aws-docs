@@ -24,11 +24,6 @@ Length Constraints: Minimum length of 0. Maximum length of 12.
 Pattern: `[a-z0-9]{12}`
 Required: Yes
 
- ** CreationTime **   <a name="sagemaker-Type-ClusterSchedulerConfigSummary-CreationTime"></a>
-Creation time of the cluster policy.
-Type: Timestamp
-Required: Yes
-
  ** Name **   <a name="sagemaker-Type-ClusterSchedulerConfigSummary-Name"></a>
 Name of the cluster policy.
 Type: String
@@ -52,11 +47,6 @@ Required: No
  ** ClusterSchedulerConfigVersion **   <a name="sagemaker-Type-ClusterSchedulerConfigSummary-ClusterSchedulerConfigVersion"></a>
 Version of the cluster policy.
 Type: Integer
-Required: No
-
- ** LastModifiedTime **   <a name="sagemaker-Type-ClusterSchedulerConfigSummary-LastModifiedTime"></a>
-Last modified time of the cluster policy.
-Type: Timestamp
 Required: No
 
 ## See Also

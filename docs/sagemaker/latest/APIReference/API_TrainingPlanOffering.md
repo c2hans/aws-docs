@@ -48,16 +48,6 @@ Type: Long
 Valid Range: Minimum value of 0. Maximum value of 59.
 Required: No
 
- ** RequestedEndTimeBefore **   <a name="sagemaker-Type-TrainingPlanOffering-RequestedEndTimeBefore"></a>
-The requested end time that the user specified when searching for the training plan offering.
-Type: Timestamp
-Required: No
-
- ** RequestedStartTimeAfter **   <a name="sagemaker-Type-TrainingPlanOffering-RequestedStartTimeAfter"></a>
-The requested start time that the user specified when searching for the training plan offering.
-Type: Timestamp
-Required: No
-
  ** ReservedCapacityOfferings **   <a name="sagemaker-Type-TrainingPlanOffering-ReservedCapacityOfferings"></a>
 A list of reserved capacity offerings associated with this training plan offering.
 Type: Array of [ReservedCapacityOffering](API_ReservedCapacityOffering.md) objects

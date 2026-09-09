@@ -10,11 +10,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Resour
 ## Contents
 <a name="API_ResourceCatalog_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-ResourceCatalog-CreationTime"></a>
- The time the `ResourceCatalog` was created.
-Type: Timestamp
-Required: Yes
-
  ** Description **   <a name="sagemaker-Type-ResourceCatalog-Description"></a>
  A free form description of the `ResourceCatalog`.
 Type: String

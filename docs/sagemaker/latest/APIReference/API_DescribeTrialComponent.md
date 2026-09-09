@@ -45,9 +45,7 @@ Required: Yes
       "UserProfileArn": "string",
       "UserProfileName": "string"
    },
-   "CreationTime": number,
    "DisplayName": "string",
-   "EndTime": number,
    "InputArtifacts": {
       "string" : {
          "MediaType": "string",
@@ -64,7 +62,6 @@ Required: Yes
       "UserProfileArn": "string",
       "UserProfileName": "string"
    },
-   "LastModifiedTime": number,
    "LineageGroupArn": "string",
    "MetadataProperties": {
       "CommitId": "string",
@@ -81,8 +78,7 @@ Required: Yes
          "MetricName": "string",
          "Min": number,
          "SourceArn": "string",
-         "StdDev": number,
-         "TimeStamp": number
+         "StdDev": number
       }
    ],
    "OutputArtifacts": {
@@ -107,7 +103,6 @@ Required: Yes
          "SourceType": "string"
       }
    ],
-   "StartTime": number,
    "Status": {
       "Message": "string",
       "PrimaryStatus": "string"
@@ -128,19 +123,11 @@ The following data is returned in JSON format by the service.
 Who created the trial component.
 Type: [UserContext](API_UserContext.md) object
 
- ** [CreationTime](#API_DescribeTrialComponent_ResponseSyntax) **   <a name="sagemaker-DescribeTrialComponent-response-CreationTime"></a>
-When the component was created.
-Type: Timestamp
-
  ** [DisplayName](#API_DescribeTrialComponent_ResponseSyntax) **   <a name="sagemaker-DescribeTrialComponent-response-DisplayName"></a>
 The name of the component as displayed. If `DisplayName` isn't specified, `TrialComponentName` is displayed.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 120.
 Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,119}`
-
- ** [EndTime](#API_DescribeTrialComponent_ResponseSyntax) **   <a name="sagemaker-DescribeTrialComponent-response-EndTime"></a>
-When the component ended.
-Type: Timestamp
 
  ** [InputArtifacts](#API_DescribeTrialComponent_ResponseSyntax) **   <a name="sagemaker-DescribeTrialComponent-response-InputArtifacts"></a>
 The input artifacts of the component.
@@ -152,10 +139,6 @@ Key Pattern: `.*`
  ** [LastModifiedBy](#API_DescribeTrialComponent_ResponseSyntax) **   <a name="sagemaker-DescribeTrialComponent-response-LastModifiedBy"></a>
 Who last modified the component.
 Type: [UserContext](API_UserContext.md) object
-
- ** [LastModifiedTime](#API_DescribeTrialComponent_ResponseSyntax) **   <a name="sagemaker-DescribeTrialComponent-response-LastModifiedTime"></a>
-When the component was last modified.
-Type: Timestamp
 
  ** [LineageGroupArn](#API_DescribeTrialComponent_ResponseSyntax) **   <a name="sagemaker-DescribeTrialComponent-response-LineageGroupArn"></a>
 The Amazon Resource Name (ARN) of the lineage group.
@@ -192,10 +175,6 @@ Type: [TrialComponentSource](API_TrialComponentSource.md) object
  ** [Sources](#API_DescribeTrialComponent_ResponseSyntax) **   <a name="sagemaker-DescribeTrialComponent-response-Sources"></a>
 A list of ARNs and, if applicable, job types for multiple sources of an experiment run.
 Type: Array of [TrialComponentSource](API_TrialComponentSource.md) objects
-
- ** [StartTime](#API_DescribeTrialComponent_ResponseSyntax) **   <a name="sagemaker-DescribeTrialComponent-response-StartTime"></a>
-When the component started.
-Type: Timestamp
 
  ** [Status](#API_DescribeTrialComponent_ResponseSyntax) **   <a name="sagemaker-DescribeTrialComponent-response-Status"></a>
 The status of the component. States include:

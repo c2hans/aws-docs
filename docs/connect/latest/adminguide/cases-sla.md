@@ -32,7 +32,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/cases-sla.html
 ## Viewing SLAs on Cases
 <a name="cases-sla-viewing"></a>
 
- Managers and agents can view case SLAs in the agent application to prioritize cases and identify those at risk of missing service goals.
+ Managers and agents can view case SLAs in the agent workspace to prioritize cases and identify those at risk of missing service goals.
 
 **Case summary page**
 
@@ -41,7 +41,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/cases-sla.html
 1. Log in to the Connect Customer admin website at https://{{instance name}}.my.connect.aws/.
 
 1. Open the **Agent Workspace**.
-![Open the Agent Workspace.](https://docs.aws.amazon.com/connect/latest/adminguide/images/cases-sla-viewing-1.png)
+![Open the agent workspace.](https://docs.aws.amazon.com/connect/latest/adminguide/images/cases-sla-viewing-1.png)
 
 1.  Choose the gear icon in the top right of the table.
 ![The gear icon in the top right of the table.](https://docs.aws.amazon.com/connect/latest/adminguide/images/cases-sla-viewing-2.png)

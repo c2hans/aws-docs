@@ -62,7 +62,7 @@ If you enabled chat barge-in before the release of multi-party chats in December
     When this bucket is created, evaluations are enabled at the instance level. The next step for setting up this feature is to [create an evaluation form](create-evaluation-forms.md).
   + **Screen recordings**: Choose **Edit**, specify the bucket and KMS key for recordings of agent screens, and then choose **Save**.
 
-    When this bucket is created, screen recording is enabled at the instance level. The next step for setting up this functionality is to download and install the agent app, and then enable screen recording in the Set recording and analytics behavior block. For more information, see [Enable screen recording for your Connect Customer instance](enable-sr.md).
+    When this bucket is created, screen recording is enabled at the instance level. The next step for setting up this functionality is to download and install the agent workspace, and then enable screen recording in the Set recording and analytics behavior block. For more information, see [Enable screen recording for your Connect Customer instance](enable-sr.md).
   + **Email messages**: Choose **Edit**, specify the bucket and KMS key for email messages, and then choose **Save**.
 
     When this bucket is created, the email channel is enabled at the instance level.

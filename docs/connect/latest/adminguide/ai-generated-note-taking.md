@@ -32,7 +32,7 @@ Notes can be generated at any point during a contact – not just at the end. Th
 ## How AI-generated note taking works
 <a name="ai-note-taking-how-it-works"></a>
 
-The GenerateNotes tool automatically processes conversation transcripts through the NoteTaking AI Prompt with RESULT\_TYPE: NOTES to produce and display HTML-formatted structured notes in the Agent Workspace.
+The GenerateNotes tool automatically processes conversation transcripts through the NoteTaking AI Prompt with RESULT\_TYPE: NOTES to produce and display HTML-formatted structured notes in the agent workspace.
 
 ![Sequence diagram showing the AI-generated note taking flow from Human Agent through Agent Assistance AI Agent.](https://docs.aws.amazon.com/connect/latest/adminguide/images/ai-generated-note-taking.png)
 

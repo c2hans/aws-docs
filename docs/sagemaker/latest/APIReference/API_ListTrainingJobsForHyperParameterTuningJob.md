@@ -75,7 +75,6 @@ Required: No
    "NextToken": "string",
    "TrainingJobSummaries": [
       {
-         "CreationTime": number,
          "FailureReason": "string",
          "FinalHyperParameterTuningJobObjectiveMetric": {
             "MetricName": "string",
@@ -83,12 +82,10 @@ Required: No
             "Value": number
          },
          "ObjectiveStatus": "string",
-         "TrainingEndTime": number,
          "TrainingJobArn": "string",
          "TrainingJobDefinitionName": "string",
          "TrainingJobName": "string",
          "TrainingJobStatus": "string",
-         "TrainingStartTime": number,
          "TunedHyperParameters": {
             "string" : "string"
          },

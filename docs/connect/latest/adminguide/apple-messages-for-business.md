@@ -9,7 +9,7 @@ Your customers can engage directly with your contact center from within their Me
 
 When you enable Apple Messages for Business, your customers can find answers to their questions and request help from agents to resolve issues, while using the familiar Messages application they use every day to chat with friends and family. Any time customers use Search, Safari, Spotlight, Siri, or Maps to call your registered phone number, they will be provided with the option to chat with your contact center.
 
-Through Apple Messages for Business integration with Connect Customer, you can use the same configuration, analytics, routing, and agent UI that you already use for [Connect Customer Chat](web-and-mobile-chat.md).
+Through Apple Messages for Business integration with Connect Customer, you can use the same configuration, analytics, routing, and agent workspace that you already use for [Connect Customer Chat](web-and-mobile-chat.md).
 
 ## Prerequisites: Determine if Apple Messages for Business is the right channel for your use case
 <a name="apple-messages-for-business-prerequisites"></a>

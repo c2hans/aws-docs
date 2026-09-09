@@ -20,10 +20,6 @@ You can quickly test the API using the following AWS CLI code.
 
 ```
 {
-   "CreationTimeAfter": {{number}},
-   "CreationTimeBefore": {{number}},
-   "LastModifiedTimeAfter": {{number}},
-   "LastModifiedTimeBefore": {{number}},
    "MaxResults": {{number}},
    "NameContains": "{{string}}",
    "NextToken": "{{string}}",
@@ -41,26 +37,6 @@ You can quickly test the API using the following AWS CLI code.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
-
- ** [CreationTimeAfter](#API_ListTrainingJobs_RequestSyntax) **   <a name="sagemaker-ListTrainingJobs-request-CreationTimeAfter"></a>
-A filter that returns only training jobs created after the specified time (timestamp).
-Type: Timestamp
-Required: No
-
- ** [CreationTimeBefore](#API_ListTrainingJobs_RequestSyntax) **   <a name="sagemaker-ListTrainingJobs-request-CreationTimeBefore"></a>
-A filter that returns only training jobs created before the specified time (timestamp).
-Type: Timestamp
-Required: No
-
- ** [LastModifiedTimeAfter](#API_ListTrainingJobs_RequestSyntax) **   <a name="sagemaker-ListTrainingJobs-request-LastModifiedTimeAfter"></a>
-A filter that returns only training jobs modified after the specified time (timestamp).
-Type: Timestamp
-Required: No
-
- ** [LastModifiedTimeBefore](#API_ListTrainingJobs_RequestSyntax) **   <a name="sagemaker-ListTrainingJobs-request-LastModifiedTimeBefore"></a>
-A filter that returns only training jobs modified before the specified time (timestamp).
-Type: Timestamp
-Required: No
 
  ** [MaxResults](#API_ListTrainingJobs_RequestSyntax) **   <a name="sagemaker-ListTrainingJobs-request-MaxResults"></a>
 The maximum number of training jobs to return in the response.
@@ -121,10 +97,7 @@ Required: No
    "NextToken": "string",
    "TrainingJobSummaries": [
       {
-         "CreationTime": number,
-         "LastModifiedTime": number,
          "SecondaryStatus": "string",
-         "TrainingEndTime": number,
          "TrainingJobArn": "string",
          "TrainingJobName": "string",
          "TrainingJobStatus": "string",

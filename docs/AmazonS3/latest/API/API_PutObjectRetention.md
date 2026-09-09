@@ -30,6 +30,11 @@ x-amz-expected-bucket-owner: {{ExpectedBucketOwner}}
 <Retention xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
    <Mode>{{string}}</Mode>
    <RetainUntilDate>{{timestamp}}</RetainUntilDate>
+   <EventHold>{{string}}</EventHold>
+   <EventHoldDuration>
+      <Days>{{integer}}</Days>
+      <Years>{{integer}}</Years>
+   </EventHoldDuration>
 </Retention>
 ```
 
@@ -79,6 +84,17 @@ The request accepts the following data in XML format.
  ** [Retention](#API_PutObjectRetention_RequestSyntax) **   <a name="AmazonS3-PutObjectRetention-request-Retention"></a>
 Root level tag for the Retention parameters.
 Required: Yes
+
+ ** [EventHold](#API_PutObjectRetention_RequestSyntax) **   <a name="AmazonS3-PutObjectRetention-request-EventHold"></a>
+The event hold status for the object. Set to `ON` to enable an event hold or `OFF` to disable it.
+Type: String
+Valid Values: `ON | OFF`
+Required: No
+
+ ** [EventHoldDuration](#API_PutObjectRetention_RequestSyntax) **   <a name="AmazonS3-PutObjectRetention-request-EventHoldDuration"></a>
+The event hold duration for the object. Specifies how long the object remains protected after the event hold is released.
+Type: [EventHoldDuration](API_EventHoldDuration.md) data type
+Required: No
 
  ** [Mode](#API_PutObjectRetention_RequestSyntax) **   <a name="AmazonS3-PutObjectRetention-request-Mode"></a>
 Indicates the Retention mode for the specified object.

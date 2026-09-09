@@ -10,11 +10,6 @@ A SageMaker AI image. A SageMaker AI image represents a set of container images 
 ## Contents
 <a name="API_Image_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-Image-CreationTime"></a>
-When the image was created.
-Type: Timestamp
-Required: Yes
-
  ** ImageArn **   <a name="sagemaker-Type-Image-ImageArn"></a>
 The ARN of the image.
 Type: String
@@ -33,11 +28,6 @@ Required: Yes
 The status of the image.
 Type: String
 Valid Values: `CREATING | CREATED | CREATE_FAILED | UPDATING | UPDATE_FAILED | DELETING | DELETE_FAILED`
-Required: Yes
-
- ** LastModifiedTime **   <a name="sagemaker-Type-Image-LastModifiedTime"></a>
-When the image was last modified.
-Type: Timestamp
 Required: Yes
 
  ** Description **   <a name="sagemaker-Type-Image-Description"></a>

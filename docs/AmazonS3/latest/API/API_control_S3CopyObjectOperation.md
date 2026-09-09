@@ -16,6 +16,14 @@ This functionality is not supported by directory buckets.
 Type: Array of [S3Grant](API_control_S3Grant.md) data types
 Required: No
 
+ ** AnnotationDirective **   <a name="AmazonS3-Type-control_S3CopyObjectOperation-AnnotationDirective"></a>
+Specifies whether the Batch Operations copy job copies object annotations from the source object or skips them. If this property isn't specified, `COPY` is the default behavior.
+Valid Values: `COPY | EXCLUDE`
+This functionality is not supported by directory buckets.
+Type: String
+Valid Values: `COPY | EXCLUDE`
+Required: No
+
  ** BucketKeyEnabled **   <a name="AmazonS3-Type-control_S3CopyObjectOperation-BucketKeyEnabled"></a>
 Specifies whether Amazon S3 should use an S3 Bucket Key for object encryption with server-side encryption using AWS KMS (SSE-KMS). Setting this header to `true` causes Amazon S3 to use an S3 Bucket Key for object encryption with SSE-KMS.
 Specifying this header with an *Copy* action doesn’t affect *bucket-level* settings for S3 Bucket Key.
@@ -56,6 +64,19 @@ Required: No
 Specifies a list of tags to add to the destination objects after they are copied. If `NewObjectTagging` is not specified, the tags of the source objects are copied to destination objects by default.
  **Directory buckets** - Tags aren't supported by directory buckets. If your source objects have tags and your destination bucket is a directory bucket, specify an empty tag set in the `NewObjectTagging` field to prevent copying the source object tags to the directory bucket.
 Type: Array of [S3Tag](API_control_S3Tag.md) data types
+Required: No
+
+ ** ObjectLockEventHold **   <a name="AmazonS3-Type-control_S3CopyObjectOperation-ObjectLockEventHold"></a>
+The event hold status to be applied to all objects in the Batch Operations copy job. Set to `ON` to enable an event hold or `OFF` to disable it.
+This functionality is not supported by directory buckets.
+Type: String
+Valid Values: `ON | OFF`
+Required: No
+
+ ** ObjectLockEventHoldDuration **   <a name="AmazonS3-Type-control_S3CopyObjectOperation-ObjectLockEventHoldDuration"></a>
+The event hold duration to be applied to all objects in the Batch Operations copy job. The duration specifies how long the object remains protected after the event hold is released.
+This functionality is not supported by directory buckets.
+Type: [S3ObjectLockEventHoldDuration](API_control_S3ObjectLockEventHoldDuration.md) data type
 Required: No
 
  ** ObjectLockLegalHoldStatus **   <a name="AmazonS3-Type-control_S3CopyObjectOperation-ObjectLockLegalHoldStatus"></a>

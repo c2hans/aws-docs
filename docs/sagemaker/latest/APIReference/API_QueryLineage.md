@@ -14,11 +14,7 @@ Use this action to inspect your lineage and discover relationships between entit
 {
    "Direction": "{{string}}",
    "Filters": {
-      "CreatedAfter": {{number}},
-      "CreatedBefore": {{number}},
       "LineageTypes": [ "{{string}}" ],
-      "ModifiedAfter": {{number}},
-      "ModifiedBefore": {{number}},
       "Properties": {
          "{{string}}" : "{{string}}"
       },

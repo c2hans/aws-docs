@@ -16,6 +16,9 @@ Daybreak Blue: GPT-5.6 Sol is a specialized OpenAI model for verified defenders 
 **Note**
 Access to this model is limited to eligible customers. To learn more, see [Accelerate cyber defense with OpenAI and AWS](https://aws.amazon.com/blogs/machine-learning/accelerate-cyber-defense-with-openai-and-aws-daybreak-red-daybreak-blue-now-available-to-eligible-customers-on-amazon-bedrock/).
 + **Model launch date:** August 12, 2026
++ **EOL no sooner than:** August 12, 2027
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
 + **Model lifecycle:** Active
@@ -23,6 +26,7 @@ Access to this model is limited to eligible customers. To learn more, see [Accel
 + **Languages:** English, Spanish, French, German, Portuguese, Italian, Dutch, Russian, Chinese (Simplified and Traditional), Japanese, Korean, Arabic, Hindi, Turkish, Polish, Ukrainian, and other languages.
 + **Fine-tuning supported:** No
 + **Supported use cases:** Vulnerability discovery, detection engineering, and incident response.
++ **Marketplace product ID:** `prod-kvlnq5lbvorj4`
 
 | **Input Modalities** | **Output Modalities** |
 | --- | --- |

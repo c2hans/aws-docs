@@ -48,7 +48,6 @@ Required: Yes
       "UserProfileArn": "string",
       "UserProfileName": "string"
    },
-   "CreationTime": number,
    "Description": "string",
    "LastModifiedBy": {
       "DomainId": "string",
@@ -60,7 +59,6 @@ Required: Yes
       "UserProfileArn": "string",
       "UserProfileName": "string"
    },
-   "LastModifiedTime": number,
    "LineageGroupArn": "string",
    "MetadataProperties": {
       "CommitId": "string",
@@ -108,10 +106,6 @@ Length Constraints: Minimum length of 0. Maximum length of 256.
 Information about the user who created or modified a SageMaker resource.
 Type: [UserContext](API_UserContext.md) object
 
- ** [CreationTime](#API_DescribeAction_ResponseSyntax) **   <a name="sagemaker-DescribeAction-response-CreationTime"></a>
-When the action was created.
-Type: Timestamp
-
  ** [Description](#API_DescribeAction_ResponseSyntax) **   <a name="sagemaker-DescribeAction-response-Description"></a>
 The description of the action.
 Type: String
@@ -121,10 +115,6 @@ Pattern: `.*`
  ** [LastModifiedBy](#API_DescribeAction_ResponseSyntax) **   <a name="sagemaker-DescribeAction-response-LastModifiedBy"></a>
 Information about the user who created or modified a SageMaker resource.
 Type: [UserContext](API_UserContext.md) object
-
- ** [LastModifiedTime](#API_DescribeAction_ResponseSyntax) **   <a name="sagemaker-DescribeAction-response-LastModifiedTime"></a>
-When the action was last modified.
-Type: Timestamp
 
  ** [LineageGroupArn](#API_DescribeAction_ResponseSyntax) **   <a name="sagemaker-DescribeAction-response-LineageGroupArn"></a>
 The Amazon Resource Name (ARN) of the lineage group.

@@ -67,7 +67,7 @@ To prevent impacts to your users (agents), we recommend that your users complete
 <a name="firefox-browser-mic"></a>
 
 The Connect Customer CCP conforms to Firefox microphone usage guidance, and only has access to connect to the user's microphone when the CCP tab is in focus. This might lead to missed call scenarios when the CCP tab is not in focus, for example, if the agent focused on a different tab or application.
-+ Agents must focus on the CCP or Agent Workspace Firefox browser tab when they accept and connect to a voice contact.
++ Agents must focus on the CCP or agent workspace Firefox browser tab when they accept and connect to a voice contact.
 
 ## Microsoft Edge v146 autoplay policy change
 <a name="edge-autoplay-issue"></a>

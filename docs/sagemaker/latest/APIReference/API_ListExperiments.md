@@ -12,8 +12,6 @@ Lists all the experiments in your account. The list can be filtered to show only
 
 ```
 {
-   "CreatedAfter": {{number}},
-   "CreatedBefore": {{number}},
    "MaxResults": {{number}},
    "NextToken": "{{string}}",
    "SortBy": "{{string}}",
@@ -27,16 +25,6 @@ Lists all the experiments in your account. The list can be filtered to show only
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
-
- ** [CreatedAfter](#API_ListExperiments_RequestSyntax) **   <a name="sagemaker-ListExperiments-request-CreatedAfter"></a>
-A filter that returns only experiments created after the specified time.
-Type: Timestamp
-Required: No
-
- ** [CreatedBefore](#API_ListExperiments_RequestSyntax) **   <a name="sagemaker-ListExperiments-request-CreatedBefore"></a>
-A filter that returns only experiments created before the specified time.
-Type: Timestamp
-Required: No
 
  ** [MaxResults](#API_ListExperiments_RequestSyntax) **   <a name="sagemaker-ListExperiments-request-MaxResults"></a>
 The maximum number of experiments to return in the response. The default value is 10.
@@ -70,15 +58,13 @@ Required: No
 {
    "ExperimentSummaries": [
       {
-         "CreationTime": number,
          "DisplayName": "string",
          "ExperimentArn": "string",
          "ExperimentName": "string",
          "ExperimentSource": {
             "SourceArn": "string",
             "SourceType": "string"
-         },
-         "LastModifiedTime": number
+         }
       }
    ],
    "NextToken": "string"

@@ -10,11 +10,6 @@ Summary of information about a processing job.
 ## Contents
 <a name="API_ProcessingJobSummary_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-ProcessingJobSummary-CreationTime"></a>
-The time at which the processing job was created.
-Type: Timestamp
-Required: Yes
-
  ** ProcessingJobArn **   <a name="sagemaker-Type-ProcessingJobSummary-ProcessingJobArn"></a>
 The Amazon Resource Name (ARN) of the processing job..
 Type: String
@@ -46,16 +41,6 @@ Required: No
 A string, up to one KB in size, that contains the reason a processing job failed, if it failed.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1024.
-Required: No
-
- ** LastModifiedTime **   <a name="sagemaker-Type-ProcessingJobSummary-LastModifiedTime"></a>
-A timestamp that indicates the last time the processing job was modified.
-Type: Timestamp
-Required: No
-
- ** ProcessingEndTime **   <a name="sagemaker-Type-ProcessingJobSummary-ProcessingEndTime"></a>
-The time at which the processing job completed.
-Type: Timestamp
 Required: No
 
 ## See Also

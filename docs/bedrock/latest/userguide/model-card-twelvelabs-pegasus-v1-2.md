@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-twel
 
 Pegasus v1.2 is TwelveLabs' video-to-text generation model that produces detailed descriptions, summaries, and answers about video content. For more information about model development and performance, see the [model/service card](https://docs.twelvelabs.io/docs/concepts/models/pegasus).
 + **Model launch date:** Feb 11, 2025
++ **EOL no sooner than:** Feb 11, 2026
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
 + **Model lifecycle:** Active

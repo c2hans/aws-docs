@@ -97,18 +97,18 @@ To perform this step you need the following prerequisites:
 1. You will see a list of destinations where that Segment sends data. Choose the EventBridge destination for Customer Profiles.
 ![The list of destinations page.](https://docs.aws.amazon.com/connect/latest/adminguide/images/customer-profiles-enable-segment-2.png)
 
-1. Choose the **Event Tester** tab. From this page you will send a test event to Customer Profiles. The event is ingested and turned into a customer profile that you can view in the Connect Customer agent application.
+1. Choose the **Event Tester** tab. From this page you will send a test event to Customer Profiles. The event is ingested and turned into a customer profile that you can view in the Connect Customer agent workspace.
 ![The event tester tab.](https://docs.aws.amazon.com/connect/latest/adminguide/images/customer-profiles-enable-segment-3.png)
 
 1. Select **Identify** as the event type, and select **Event Builder** as your input method.
 
-1. You can specify a **User ID** and some traits. Agents can search for these traits in the agent application.
+1. You can specify a **User ID** and some traits. Agents can search for these traits in the agent workspace.
 
 1. Choose **Send Event**.
 
 1. The event delivery should be almost instantaneous but allow it a minute for it to be delivered and create a customer profile.
 
-1. Open the Connect Customer agent application. Search for the user ID you entered in the **Event Builder**. You should be able to see the customer profile with the user ID and the traits you entered.
+1. Open the Connect Customer agent workspace. Search for the user ID you entered in the **Event Builder**. You should be able to see the customer profile with the user ID and the traits you entered.
 
 1. If you cannot see the customer profile, then there is a problem with your integration. To troubleshoot:
 

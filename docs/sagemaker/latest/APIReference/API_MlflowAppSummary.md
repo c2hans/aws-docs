@@ -17,16 +17,6 @@ Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:mlflow-app/.*`
 Required: No
 
- ** CreationTime **   <a name="sagemaker-Type-MlflowAppSummary-CreationTime"></a>
-The creation time of a listed MLflow App.
-Type: Timestamp
-Required: No
-
- ** LastModifiedTime **   <a name="sagemaker-Type-MlflowAppSummary-LastModifiedTime"></a>
-The last modified time of a listed MLflow App.
-Type: Timestamp
-Required: No
-
  ** MlflowVersion **   <a name="sagemaker-Type-MlflowAppSummary-MlflowVersion"></a>
 The version of a listed MLflow App.
 Type: String

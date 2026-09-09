@@ -12,6 +12,8 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 **Amazon OpenSearch Service console (Cluster Health tab):** Available for Elasticsearch 6.8 and later, and all OpenSearch versions (1.0\+).
 **OpenSearch Dashboards UI (via OpenSearch UI application):** Requires OpenSearch 2.17 or later. Domains running earlier versions can be associated as data sources but will not appear in the Cluster Insights Overview in the UI. Domains with OpenSearch versions 2.17 and 2.19 also need to be on the latest service software version update.
 **Query View tab (in OpenSearch Dashboards UI):** Requires OpenSearch 2.19 or later.
+You can use the [ListInsights](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_ListInsights.html) and [DescribeInsightDetails](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_DescribeInsightDetails.html) APIs to retrieve Insight details programmatically, which is useful for automation and agents.
+Insights are also available through additional channels, including [notifications](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/managedomains-notifications.html) and [Amazon EventBridge](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/monitoring-events.html).
 Note: Domains running OpenSearch versions earlier than 2.17 can be associated as data sources in the OpenSearch UI application, but will not appear in the Cluster Insights Overview. Only domains running OpenSearch 2.17 or later are fully supported for Cluster Insights in the Dashboards UI.
 
 ## Benefits

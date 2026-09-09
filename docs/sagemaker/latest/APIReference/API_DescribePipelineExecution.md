@@ -45,7 +45,6 @@ Required: Yes
       "UserProfileArn": "string",
       "UserProfileName": "string"
    },
-   "CreationTime": number,
    "FailureReason": "string",
    "LastModifiedBy": {
       "DomainId": "string",
@@ -57,7 +56,6 @@ Required: Yes
       "UserProfileArn": "string",
       "UserProfileName": "string"
    },
-   "LastModifiedTime": number,
    "MLflowConfig": {
       "MlflowExperimentName": "string",
       "MlflowResourceArn": "string"
@@ -97,10 +95,6 @@ The following data is returned in JSON format by the service.
 Information about the user who created or modified a SageMaker resource.
 Type: [UserContext](API_UserContext.md) object
 
- ** [CreationTime](#API_DescribePipelineExecution_ResponseSyntax) **   <a name="sagemaker-DescribePipelineExecution-response-CreationTime"></a>
-The time when the pipeline execution was created.
-Type: Timestamp
-
  ** [FailureReason](#API_DescribePipelineExecution_ResponseSyntax) **   <a name="sagemaker-DescribePipelineExecution-response-FailureReason"></a>
 If the execution failed, a message describing why.
 Type: String
@@ -110,10 +104,6 @@ Pattern: `.*`
  ** [LastModifiedBy](#API_DescribePipelineExecution_ResponseSyntax) **   <a name="sagemaker-DescribePipelineExecution-response-LastModifiedBy"></a>
 Information about the user who created or modified a SageMaker resource.
 Type: [UserContext](API_UserContext.md) object
-
- ** [LastModifiedTime](#API_DescribePipelineExecution_ResponseSyntax) **   <a name="sagemaker-DescribePipelineExecution-response-LastModifiedTime"></a>
-The time when the pipeline execution was modified last.
-Type: Timestamp
 
  ** [MLflowConfig](#API_DescribePipelineExecution_ResponseSyntax) **   <a name="sagemaker-DescribePipelineExecution-response-MLflowConfig"></a>
  The MLflow configuration of the pipeline execution.

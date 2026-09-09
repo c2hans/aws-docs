@@ -14,8 +14,8 @@ This topic defines the flow block for updating and creating cases.
 <a name="create-case-description"></a>
 + Gets, updates, and creates cases.
 + Searches for case linked to a contact.
-+ You can link a contact to a case, and then the contact will be recorded in the **Activity feed** of the case. When the agent accepts a contact that is linked to a case, the case automatically opens as a new tab in the agent application.
-+ While you can link contacts to multiple cases, there is a limit of five new case tabs automatically opening in the agent application. These will be the five most recently updated cases.
++ You can link a contact to a case, and then the contact will be recorded in the **Activity feed** of the case. When the agent accepts a contact that is linked to a case, the case automatically opens as a new tab in the agent workspace.
++ While you can link contacts to multiple cases, there is a limit of five new case tabs automatically opening in the agent workspace. These will be the five most recently updated cases.
 + For more information about cases, see [Connect Customer Cases](cases.md).
 
 ## Supported channels
@@ -89,7 +89,7 @@ When configuring properties to get a case id:
 + You can specify to **Link contact to case** (Yes/No). If "Yes," then you can choose from the following options:
   + **Current contact** is the contact on which the current flow is being executed.
   + **Related contact** is the contact that is [related](https://docs.aws.amazon.com/connect/latest/adminguide/chat-persistence.html#relatedcontactid) to this contact.
-+ If you link the contact to the case, then the contact and a link to contact details appear on the case that the agent sees in the agent application.
++ If you link the contact to the case, then the contact and a link to contact details appear on the case that the agent sees in the agent workspace.
 + You can specify the **Contact to search** to fetch a case linked to another contact in the current contact's [contact chain](https://docs.aws.amazon.com/connect/latest/adminguide/contacts-contact-chains-attributes.html#contact-chains). You can then link follow-up contacts such as email replies, call transfers, persistent chats, and queued callbacks to the same case more easily.
   + **Current contact**
   + **Initial contact**
@@ -149,7 +149,7 @@ When configuring properties to create a case:
 + You can specify values for fields other than the required ones in the Request fields section.
 
   You can either use attribute in the Cases namespace or set manually. If you set manually, see to the syntax in [How to persist fields throughout the flow](#cases-persist-fields).
-+ You can specify that a contact should be linked to case. If you link the contact to the case, then the contact and a link to contact details appear on the case that the agent sees in the agent application.
++ You can specify that a contact should be linked to case. If you link the contact to the case, then the contact and a link to contact details appear on the case that the agent sees in the agent workspace.
 + After creating a case, the case ID that is created will be persisted in the case namespace. It can be used in other blocks by accessing the case namespace case ID attribute value.
 + Contacts can be routed down the following branches:
   + **Success**: The case was created, and the contact was linked to the case.

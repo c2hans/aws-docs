@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-cohe
 
 Embed v4 is Cohere's unified multimodal embedding model that processes text, images, and mixed content in a single model for search and RAG. For more information about model development and performance, see the [model/service card](https://docs.cohere.com/docs/cohere-embed).
 + **Model launch date:** Apr 15, 2025
++ **EOL no sooner than:** Apr 15, 2026
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
 + **Model lifecycle:** Active

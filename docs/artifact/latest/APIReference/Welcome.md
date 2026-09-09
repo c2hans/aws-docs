@@ -7,4 +7,4 @@ source_url: https://docs.aws.amazon.com/artifact/latest/APIReference/Welcome.htm
 
 This reference provides descriptions of the low-level AWS Artifact Service API.
 
-This document was last published on September 7, 2026.
+This document was last published on September 9, 2026.

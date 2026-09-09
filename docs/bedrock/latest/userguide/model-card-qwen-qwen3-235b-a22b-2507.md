@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-qwen
 
 Qwen3 235B A22B is Qwen's 235-billion parameter mixture-of-experts model with 22 billion active parameters, supporting text and code generation with a 256K context window. For more information about model development and performance, see the [model/service card](https://qwen.ai/blog?id=qwen3).
 + **Model launch date:** Apr 28, 2025
++ **EOL no sooner than:** Apr 28, 2026
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507/blob/main/LICENSE)
 + **Model lifecycle:** Active

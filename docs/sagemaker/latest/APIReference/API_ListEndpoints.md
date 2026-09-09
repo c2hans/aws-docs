@@ -12,10 +12,6 @@ Lists endpoints.
 
 ```
 {
-   "CreationTimeAfter": {{number}},
-   "CreationTimeBefore": {{number}},
-   "LastModifiedTimeAfter": {{number}},
-   "LastModifiedTimeBefore": {{number}},
    "MaxResults": {{number}},
    "NameContains": "{{string}}",
    "NextToken": "{{string}}",
@@ -31,26 +27,6 @@ Lists endpoints.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
-
- ** [CreationTimeAfter](#API_ListEndpoints_RequestSyntax) **   <a name="sagemaker-ListEndpoints-request-CreationTimeAfter"></a>
-A filter that returns only endpoints with a creation time greater than or equal to the specified time (timestamp).
-Type: Timestamp
-Required: No
-
- ** [CreationTimeBefore](#API_ListEndpoints_RequestSyntax) **   <a name="sagemaker-ListEndpoints-request-CreationTimeBefore"></a>
-A filter that returns only endpoints that were created before the specified time (timestamp).
-Type: Timestamp
-Required: No
-
- ** [LastModifiedTimeAfter](#API_ListEndpoints_RequestSyntax) **   <a name="sagemaker-ListEndpoints-request-LastModifiedTimeAfter"></a>
- A filter that returns only endpoints that were modified after the specified timestamp.
-Type: Timestamp
-Required: No
-
- ** [LastModifiedTimeBefore](#API_ListEndpoints_RequestSyntax) **   <a name="sagemaker-ListEndpoints-request-LastModifiedTimeBefore"></a>
- A filter that returns only endpoints that were modified before the specified timestamp.
-Type: Timestamp
-Required: No
 
  ** [MaxResults](#API_ListEndpoints_RequestSyntax) **   <a name="sagemaker-ListEndpoints-request-MaxResults"></a>
 The maximum number of endpoints to return in the response. This value defaults to 10.
@@ -97,11 +73,9 @@ Required: No
 {
    "Endpoints": [
       {
-         "CreationTime": number,
          "EndpointArn": "string",
          "EndpointName": "string",
-         "EndpointStatus": "string",
-         "LastModifiedTime": number
+         "EndpointStatus": "string"
       }
    ],
    "NextToken": "string"

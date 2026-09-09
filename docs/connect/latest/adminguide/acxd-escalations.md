@@ -36,7 +36,7 @@ A common escalation pattern is:
 
 1. Add a message, if needed.
 
-1. Optionally add a Node payload to pass context back to a flow in Connect Customer.
+1. Optionally add a State modification to set a context variable to pass context back to a flow in Connect Customer.
 
 1. Connect any available failure, timeout, or continuation paths.
 
@@ -53,7 +53,7 @@ Connecting you to an agent now.
 ## Passing escalation context
 <a name="acxd-escalations-context"></a>
 
-You can pass context back to a Connect Customer flow from the Escalate node using Node payload.
+You can pass context back to a Connect Customer flow from the Escalate node using a context variable.
 
 Use this when you want the human agent or Connect Customer flow to receive information collected or generated during the AI conversation.
 
@@ -67,34 +67,9 @@ Examples of escalation context:
 + Selected product or reservation
 + Reason for escalation
 
-The Node payload must use key-value syntax:
+To pass data, add one or more State modifications to the Escalate node in your agentic CX designer flow that set one or more context variables.
 
-```
-summary={transferSummary}
-```
-
-The key on the left becomes the value available to Connect Customer. The value on the right references the agentic CX designer variable.
-
-Do not enter only the variable by itself.
-
-Avoid:
-
-```
-{transferSummary}
-```
-
-Use:
-
-```
-summary={transferSummary}
-```
-
-To pass multiple values, separate them with &:
-
-```
-summary={transferSummary}&customerIntent={customerIntent}
-&callbackNumber={callbackNumber}
-```
+For example, you may set a context variable `{summary}` to a variable generated upstream by a Generative text node that summarized the system transcript.
 
 ## Setting contact attributes in Connect Customer
 <a name="acxd-escalations-set-contact-attributes"></a>
@@ -111,7 +86,7 @@ Use this block to store the values returned from agentic CX designer so they can
 
 1. Enter the attribute key you want to create, such as `transferSummary`.
 
-1. Choose **Use attribute**.
+1. Choose **Set dynamically**.
 
 1. Select the **Agentic CX** namespace.
 
@@ -121,7 +96,7 @@ Use this block to store the values returned from agentic CX designer so they can
 
 Example mapping:
 
-| Contact attribute key | Returned context key |
+| Contact attribute key | Returned value from agentic CX designer |
 | --- | --- |
 | transferSummary | summary |
 | customerIntent | customerIntent |
@@ -177,7 +152,7 @@ Use this pattern when designing escalation from agentic CX designer to Connect C
 
 1. Add a user-facing escalation message.
 
-1. Add a Node payload using key={variable} syntax.
+1. Add a State modification to the Escalate node that sets a context variable, such as `{summary}`.
 
 1. Build and deploy the application.
 
@@ -190,10 +165,10 @@ Use this pattern when designing escalation from agentic CX designer to Connect C
 ## Troubleshooting escalations
 <a name="acxd-escalations-troubleshooting"></a>
 
-| Issue | Cause | Fix |
+| Issue | Likely cause | Fix |
 | --- | --- | --- |
 | Escalation does not leave agentic CX designer | The flow did not reach an Escalate node or the deployed build is outdated. | Confirm the Escalate node is connected, then create and deploy a new build. |
-| Returned context is missing in Connect Customer flow | Node payload was not configured or used the wrong format. | Use key={variable} format in the Escalate node's Node payload. |
+| Returned context is missing in Connect Customer flow | State modification was not used to set a context variable. | Use a State modification to Set a context variable in the flow of agentic CX designer when the Escalate or Exit application nodes are reached. |
 | Returned value is empty | The referenced variable was not in scope at the Escalate node. | Store the value as a context variable, Define output, Generative text output, or captured slot before escalation. |
 | Agent receives no summary | The Set contact attributes block was not added after the Agentic CX escalation path. | Add Set contact attributes before Set working queue or Transfer to queue. |
 | Wrong queue is selected | Queue routing logic does not use the returned context. | Use returned attributes to determine the correct queue before transfer. |

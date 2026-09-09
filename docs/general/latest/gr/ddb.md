@@ -69,6 +69,7 @@ Newer versions of the AWS SDK connect to Amazon DynamoDB using the AWS-account-b
 | US East (N. Virginia) | us-east-1 |  dax.us-east-1.amazonaws.com <br /> dax.us-east-1.api.aws  | HTTP and HTTPS<br />HTTPS |
 | US West (N. California) | us-west-1 |  dax.us-west-1.amazonaws.com <br /> dax.us-west-1.api.aws  | HTTP and HTTPS<br />HTTPS |
 | US West (Oregon) | us-west-2 |  dax.us-west-2.amazonaws.com <br /> dax.us-west-2.api.aws  | HTTP and HTTPS<br />HTTPS |
+| Asia Pacific (Hyderabad) | ap-south-2 |  dax.ap-south-2.amazonaws.com <br /> dax.ap-south-2.api.aws  | HTTP and HTTPS<br />HTTPS |
 | Asia Pacific (Mumbai) | ap-south-1 |  dax.ap-south-1.amazonaws.com <br /> dax.ap-south-1.api.aws  | HTTP and HTTPS<br />HTTPS |
 | Asia Pacific (Singapore) | ap-southeast-1 |  dax.ap-southeast-1.amazonaws.com <br /> dax.ap-southeast-1.api.aws  | HTTP and HTTPS<br />HTTPS |
 | Asia Pacific (Sydney) | ap-southeast-2 |  dax.ap-southeast-2.amazonaws.com <br /> dax.ap-southeast-2.api.aws  | HTTP and HTTPS<br />HTTPS |

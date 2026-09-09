@@ -36,8 +36,6 @@ Required: Yes
 ```
 {
    "Arn": "string",
-   "CompletionTime": number,
-   "CreationTime": number,
    "DataStorageConfig": {
       "ContentType": {
          "CsvContentTypes": [ "string" ],
@@ -54,7 +52,6 @@ Required: Yes
       "FailureReason": "string"
    },
    "KmsKey": "string",
-   "LastModifiedTime": number,
    "ModelVariants": [
       {
          "InfrastructureConfig": {
@@ -72,8 +69,6 @@ Required: Yes
    "Name": "string",
    "RoleArn": "string",
    "Schedule": {
-      "EndTime": number,
-      "StartTime": number
    },
    "ShadowModeConfig": {
       "ShadowModelVariants": [
@@ -103,14 +98,6 @@ Type: String
 Length Constraints: Minimum length of 0. Maximum length of 256.
 Pattern: `arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:inference-experiment/.*`
 
- ** [CompletionTime](#API_DescribeInferenceExperiment_ResponseSyntax) **   <a name="sagemaker-DescribeInferenceExperiment-response-CompletionTime"></a>
- The timestamp at which the inference experiment was completed.
-Type: Timestamp
-
- ** [CreationTime](#API_DescribeInferenceExperiment_ResponseSyntax) **   <a name="sagemaker-DescribeInferenceExperiment-response-CreationTime"></a>
-The timestamp at which you created the inference experiment.
-Type: Timestamp
-
  ** [DataStorageConfig](#API_DescribeInferenceExperiment_ResponseSyntax) **   <a name="sagemaker-DescribeInferenceExperiment-response-DataStorageConfig"></a>
 The Amazon S3 location and configuration for storing inference request and response data.
 Type: [InferenceExperimentDataStorageConfig](API_InferenceExperimentDataStorageConfig.md) object
@@ -130,10 +117,6 @@ Type: [EndpointMetadata](API_EndpointMetadata.md) object
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 2048.
 Pattern: `[a-zA-Z0-9:/_-]*`
-
- ** [LastModifiedTime](#API_DescribeInferenceExperiment_ResponseSyntax) **   <a name="sagemaker-DescribeInferenceExperiment-response-LastModifiedTime"></a>
-The timestamp at which you last modified the inference experiment.
-Type: Timestamp
 
  ** [ModelVariants](#API_DescribeInferenceExperiment_ResponseSyntax) **   <a name="sagemaker-DescribeInferenceExperiment-response-ModelVariants"></a>
  An array of `ModelVariantConfigSummary` objects. There is one for each variant in the inference experiment. Each `ModelVariantConfigSummary` object in the array describes the infrastructure configuration for deploying the corresponding variant.

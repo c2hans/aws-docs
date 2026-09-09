@@ -23,8 +23,10 @@ When working with training jobs that use capacity from [training plans](https://
 + The plan is in a `Scheduled` state: Jobs queued (in `Pending` status) before a plan's start date (waiting for scheduled start time)
 + Between capacity reservations: Jobs temporarily back to `Pending` status between two capacity reservation periods
  `MaxPendingTimeInSeconds` only increments when jobs are actively waiting for capacity in an `Active` plan.
++  `MaxPendingTimeInSeconds` takes effect only for jobs that request accelerated computing instance types, such as instances in the `ml.p`, `ml.g`, and `ml.trn` families. It has no effect on jobs that request CPU-only instance types.
++ If the job specifies `InstancePreferences`, `MaxPendingTimeInSeconds` bounds the total time SageMaker spends working through your list of instance types. It is not applied per instance type preference, and takes effect only when the list includes at least one accelerated computing instance type.
 Type: Integer
-Valid Range: Minimum value of 7200. Maximum value of 2419200.
+Valid Range: Minimum value of 1800. Maximum value of 2419200.
 Required: No
 
  ** MaxRuntimeInSeconds **   <a name="sagemaker-Type-StoppingCondition-MaxRuntimeInSeconds"></a>

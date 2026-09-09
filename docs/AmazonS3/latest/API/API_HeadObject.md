@@ -224,6 +224,9 @@ x-amz-tagging-count: {{TagCount}}
 x-amz-object-lock-mode: {{ObjectLockMode}}
 x-amz-object-lock-retain-until-date: {{ObjectLockRetainUntilDate}}
 x-amz-object-lock-legal-hold: {{ObjectLockLegalHoldStatus}}
+x-amz-object-lock-event-hold: {{ObjectLockEventHold}}
+x-amz-object-lock-event-hold-duration-days: {{ObjectLockEventHoldDurationDays}}
+x-amz-object-lock-event-hold-duration-years: {{ObjectLockEventHoldDurationYears}}
 ```
 
 ## Response Elements
@@ -320,6 +323,19 @@ This functionality is not supported for directory buckets.
  ** [x-amz-mp-parts-count](#API_HeadObject_ResponseSyntax) **   <a name="AmazonS3-HeadObject-response-header-PartsCount"></a>
 The count of parts this object has. This value is only returned if you specify `partNumber` in your request and the object was uploaded as a multipart upload.
 
+ ** [x-amz-object-lock-event-hold](#API_HeadObject_ResponseSyntax) **   <a name="AmazonS3-HeadObject-response-header-ObjectLockEventHold"></a>
+The event hold status for this object. This header is only returned if the requester has the `s3:GetObjectRetention` permission.
+This functionality is not supported for directory buckets.
+Valid Values: `ON | OFF`
+
+ ** [x-amz-object-lock-event-hold-duration-days](#API_HeadObject_ResponseSyntax) **   <a name="AmazonS3-HeadObject-response-header-ObjectLockEventHoldDurationDays"></a>
+The event hold duration in days for this object. Only returned when the event hold is enabled.
+This functionality is not supported for directory buckets.
+
+ ** [x-amz-object-lock-event-hold-duration-years](#API_HeadObject_ResponseSyntax) **   <a name="AmazonS3-HeadObject-response-header-ObjectLockEventHoldDurationYears"></a>
+The event hold duration in years for this object. Only returned when the event hold is enabled.
+This functionality is not supported for directory buckets.
+
  ** [x-amz-object-lock-legal-hold](#API_HeadObject_ResponseSyntax) **   <a name="AmazonS3-HeadObject-response-header-ObjectLockLegalHoldStatus"></a>
 Specifies whether a legal hold is in effect for this object. This header is only returned if the requester has the `s3:GetObjectLegalHold` permission. This header is not returned if the specified version of this object has never had a legal hold applied. For more information about S3 Object Lock, see [Object Lock](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lock.html).
 This functionality is not supported for directory buckets.
@@ -362,7 +378,7 @@ This functionality is not supported for directory buckets. Directory buckets onl
  ** [x-amz-server-side-encryption](#API_HeadObject_ResponseSyntax) **   <a name="AmazonS3-HeadObject-response-header-ServerSideEncryption"></a>
 The server-side encryption algorithm used when you store this object in Amazon S3 or Amazon FSx.
 When accessing data stored in Amazon FSx file systems using S3 access points, the only valid server side encryption option is `aws:fsx`.
-Valid Values: `AES256 | aws:fsx | aws:kms | aws:kms:dsse`
+Valid Values: `AES256 | aws:fsx | aws:backup | aws:kms | aws:kms:dsse`
 
  ** [x-amz-server-side-encryption-aws-kms-key-id](#API_HeadObject_ResponseSyntax) **   <a name="AmazonS3-HeadObject-response-header-SSEKMSKeyId"></a>
 If present, indicates the ID of the KMS key that was used for object encryption.
@@ -382,7 +398,7 @@ This functionality is not supported for directory buckets.
 Provides storage class information of the object. Amazon S3 returns this header for all objects except for S3 Standard storage class objects.
 For more information, see [Storage Classes](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-class-intro.html).
  **Directory buckets ** - Directory buckets only support `EXPRESS_ONEZONE` (the S3 Express One Zone storage class) in Availability Zones and `ONEZONE_IA` (the S3 One Zone-Infrequent Access storage class) in Dedicated Local Zones.
-Valid Values: `STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | ONEZONE_IA | INTELLIGENT_TIERING | GLACIER | DEEP_ARCHIVE | OUTPOSTS | GLACIER_IR | SNOW | EXPRESS_ONEZONE | FSX_OPENZFS | FSX_ONTAP`
+Valid Values: `STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | ONEZONE_IA | INTELLIGENT_TIERING | GLACIER | DEEP_ARCHIVE | OUTPOSTS | GLACIER_IR | SNOW | EXPRESS_ONEZONE | FSX_OPENZFS | FSX_ONTAP | AWS_BACKUP_WARM | AWS_BACKUP_LOW_COST_WARM`
 
  ** [x-amz-tagging-count](#API_HeadObject_ResponseSyntax) **   <a name="AmazonS3-HeadObject-response-header-TagCount"></a>
 The number of tags, if any, on the object, when you have the relevant permission to read object tags.

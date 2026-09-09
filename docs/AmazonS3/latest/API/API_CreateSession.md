@@ -64,7 +64,7 @@ Valid Values: `ReadOnly | ReadWrite`
 The server-side encryption algorithm to use when you store objects in the directory bucket.
 For directory buckets, there are only two supported options for server-side encryption: server-side encryption with Amazon S3 managed keys (SSE-S3) (`AES256`) and server-side encryption with AWS KMS keys (SSE-KMS) (`aws:kms`). By default, Amazon S3 encrypts data with SSE-S3. For more information, see [Protecting data with server-side encryption](https://docs.aws.amazon.com/AmazonS3/latest/userguide/serv-side-encryption.html) in the *Amazon S3 User Guide*.
  **S3 access points for Amazon FSx ** - When accessing data stored in Amazon FSx file systems using S3 access points, the only valid server side encryption option is `aws:fsx`. All Amazon FSx file systems have encryption configured by default and are encrypted at rest. Data is automatically encrypted before being written to the file system, and automatically decrypted as it is read. These processes are handled transparently by Amazon FSx.
-Valid Values: `AES256 | aws:fsx | aws:kms | aws:kms:dsse`
+Valid Values: `AES256 | aws:fsx | aws:backup | aws:kms | aws:kms:dsse`
 
  ** [x-amz-server-side-encryption-aws-kms-key-id](#API_CreateSession_RequestSyntax) **   <a name="AmazonS3-CreateSession-request-header-SSEKMSKeyId"></a>
 If you specify `x-amz-server-side-encryption` with `aws:kms`, you must specify the ` x-amz-server-side-encryption-aws-kms-key-id` header with the ID (Key ID or Key ARN) of the AWS KMS symmetric encryption customer managed key to use. Otherwise, you get an HTTP `400 Bad Request` error. Only use the key ID or key ARN. The key alias format of the KMS key isn't supported. Also, if the KMS key doesn't exist in the same account that't issuing the command, you must use the full Key ARN not the Key ID.
@@ -114,7 +114,7 @@ The response returns the following HTTP headers.
  ** [x-amz-server-side-encryption](#API_CreateSession_ResponseSyntax) **   <a name="AmazonS3-CreateSession-response-header-ServerSideEncryption"></a>
 The server-side encryption algorithm used when you store objects in the directory bucket.
 When accessing data stored in Amazon FSx file systems using S3 access points, the only valid server side encryption option is `aws:fsx`.
-Valid Values: `AES256 | aws:fsx | aws:kms | aws:kms:dsse`
+Valid Values: `AES256 | aws:fsx | aws:backup | aws:kms | aws:kms:dsse`
 
  ** [x-amz-server-side-encryption-aws-kms-key-id](#API_CreateSession_ResponseSyntax) **   <a name="AmazonS3-CreateSession-response-header-SSEKMSKeyId"></a>
 If you specify `x-amz-server-side-encryption` with `aws:kms`, this header indicates the ID of the AWS KMS symmetric encryption customer managed key that was used for object encryption.

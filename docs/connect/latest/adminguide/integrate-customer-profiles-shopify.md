@@ -180,7 +180,7 @@ You're now all set to receive events from your Shopify store. Next, verify your 
 
 1. The event delivery should be almost instantaneous but allow a minute for it to be delivered and to create a customer profile.
 
-1. Open the Connect Customer agent experience and look up the user by the email or phone number you entered into the Shopify Store. You should be able to see the customer profile with the same email or phone number.
+1. Open the Connect Customer agent workspace and look up the user by the email or phone number you entered into the Shopify Store. You should be able to see the customer profile with the same email or phone number.
 
 1. If you cannot see the customer profile, then there is a problem with your integration. To troubleshoot:
 

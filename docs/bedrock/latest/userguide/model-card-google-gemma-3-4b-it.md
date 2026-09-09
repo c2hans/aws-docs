@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-goog
 
 Gemma 3 4B IT is Google's compact 4-billion parameter open model with instruction tuning, designed for on-device and edge deployment. For more information about model development and performance, see the [model/service card](https://ai.google.dev/gemma/docs/core/model_card_3).
 + **Model launch date:** Mar 12, 2025
++ **EOL no sooner than:** Mar 12, 2026
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://ai.google.dev/gemma/terms)
 + **Model lifecycle:** Active

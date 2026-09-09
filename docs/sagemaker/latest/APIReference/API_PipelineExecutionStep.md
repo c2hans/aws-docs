@@ -20,11 +20,6 @@ If this pipeline execution step was cached, details on the cache hit.
 Type: [CacheHitResult](API_CacheHitResult.md) object
 Required: No
 
- ** EndTime **   <a name="sagemaker-Type-PipelineExecutionStep-EndTime"></a>
-The time that the step stopped executing.
-Type: Timestamp
-Required: No
-
  ** FailureReason **   <a name="sagemaker-Type-PipelineExecutionStep-FailureReason"></a>
 The reason why the step failed execution. This is only returned if the step failed its execution.
 Type: String
@@ -39,11 +34,6 @@ Required: No
  ** SelectiveExecutionResult **   <a name="sagemaker-Type-PipelineExecutionStep-SelectiveExecutionResult"></a>
 The ARN from an execution of the current pipeline from which results are reused for this step.
 Type: [SelectiveExecutionResult](API_SelectiveExecutionResult.md) object
-Required: No
-
- ** StartTime **   <a name="sagemaker-Type-PipelineExecutionStep-StartTime"></a>
-The time that the step started executing.
-Type: Timestamp
 Required: No
 
  ** StepDescription **   <a name="sagemaker-Type-PipelineExecutionStep-StepDescription"></a>

@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mist
 
 Mixtral 8x7B Instruct is Mistral AI's sparse mixture-of-experts model with 8 experts and 7B parameters each, delivering strong performance at faster inference speeds. For more information about model development and performance, see the [model/service card](https://docs.mistral.ai/getting-started/models).
 + **Model launch date:** Dec 10, 2023
++ **EOL no sooner than:** Dec 10, 2024
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** No sooner than 3/1/2025
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
 + **Model lifecycle:** Active

@@ -13,7 +13,14 @@ For example, if a user says "I'd like a large," the application can capture "lar
 
 To access custom slots, select **Resources** from your workspace menu, then choose **Slots**.
 
-Use a custom slot when the user should choose from a defined set of values.
+Use a custom slot when the user should choose from a defined set of values. Common examples include:
++ Yes / No
++ Small / Medium / Large
++ Standard / Deluxe / Suite
++ Billing / Technical support / Account access
++ Pickup / Delivery
++ Email / SMS / Phone
++ "I want to sign up" / "I want something else"
 
 Custom slots are especially useful with User choice nodes or agent nodes because they help the application capture a structured value and route the conversation based on that value.
 
@@ -47,6 +54,13 @@ You do not create built-in slots from the custom Slots resource. Instead, select
 
 Use a name that describes what the slot captures.
 
+Examples:
++ RoomType
++ AppointmentReason
++ SupportCategory
++ ShirtSize
++ CommunicationPreference
+
 ## Adding values
 <a name="acxd-custom-slots-values"></a>
 
@@ -64,7 +78,12 @@ Values are the allowed options for the custom slot.
 
 1. Save your changes.
 
-Avoid values that are too similar, because closely named values can make matching less clear. In that case, use one as the main value and add the other as a synonym.
+Example values for a RoomType slot:
++ standard
++ deluxe
++ suite
+
+Avoid values that are too similar, such as Yes and Yes, please, because closely named values can make matching less clear. In that case, use Yes as the main value and add Yes, please as a synonym.
 
 ## Synonyms
 <a name="acxd-custom-slots-synonyms"></a>
@@ -157,6 +176,10 @@ Custom slots are commonly used with User choice nodes.
 1. Add a No match path for unclear or unsupported responses.
 
 1. Save and test the flow.
+
+For example, a User choice node may ask: "What type of room would you like to book?"
+
+The custom RoomType slot captures whether the user selected standard, deluxe, or suite.
 
 ## Translations
 <a name="acxd-custom-slots-translations"></a>

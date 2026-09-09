@@ -140,7 +140,7 @@ The following tables list:
 | Restrict phone type settings | RestrictPhoneTypeSettings.Access | Block agents from changing their phone type (softphone or deskphone) in the Contact Control Panel.  |
 | Audio device settings | AudioDeviceSettings.Access | [Choose your preferred device for speaker, microphone, and ringer in the Contact Control Panel (CCP) or agent workspace](audio-device-settings.md).  |
 | Video calls | VideoContact.Access | [Enable agents to use video calling and screen sharing](config-com-widget1.md#agent-cx-cw).  |
-| Initiate email conversation | OutboundEmail.Create | Allows agents to initiate an outbound email from the Contact Control Panel / Agent workspace without first receiving an email contact from a customer. Allows agents to forward email contacts to external email addresses or distribution lists. Allows agents to reply to closed email contacts. |
+| Initiate email conversation | OutboundEmail.Create | Allows agents to initiate an outbound email from the Contact Control Panel / agent workspace without first receiving an email contact from a customer. Allows agents to forward email contacts to external email addresses or distribution lists. Allows agents to reply to closed email contacts. |
 | Allow self assigning of contacts | SelfAssignContacts.Access | To self assign tasks, agents also need to have the **Restrict Task Creation** permission disabled and have tasks enabled as a channel within their assigned routing profile.  |
 | Confirmation before ending contact | RequireEndContactConfirmation.Enabled | Requires agents to confirm before ending a contact. When enabled, agents see a confirmation dialog when they choose the **End** button for voice calls, chats, emails, and tasks. |
 
@@ -218,7 +218,7 @@ The following tables list:
 | Call recordings (unredacted) - Access | CallRecordings.Unredacted.Access | On the **Contact details** and **Contact search** pages for a contact, view unredacted audio recordings.<br />If you have BOTH **Call recordings (unredacted) - Access** and **Call recordings (redacted) - Access** permissions: +  If redaction is enabled on the flow, then redacted content is displayed on the **Contact details** and **Contact search** pages. <br />+  If redaction is disabled on the flow or the contact is not analyzed by conversational analytics, then unredacted content is displayed on the **Contact details** and **Contact search** pages. <br />You cannot access both the redacted and unredacted version of a conversation at the same time. |
 | Call recordings (redacted) - Access | CallRecordings.Redacted.Access | On the **Contact details** and **Contact search** pages for a contact, listen to call recordings in which the sensitive data has been redacted. |
 | Contact transcripts (unredacted) - Access | ContactTranscripts.Unredacted.Access | On the **Contact details** and **Contact search** pages for a contact, view unredacted chat and email conversations, and unredacted voice transcripts produced by conversational analytics.<br />If you have BOTH **Contact transcripts (unredacted) - Access** and **Contact transcripts (redacted) - Access** permissions:+  If redaction is enabled on the flow, then redacted content is displayed on the **Contact details** and **Contact search** pages. <br />+  If redaction is disabled on the flow or the contact is not analyzed by conversational analytics, then unredacted content is displayed on the **Contact details** and **Contact search** pages. <br />You cannot access both the redacted and unredacted version of a conversation at the same time. |
-| Contact transcripts (redacted) - Access | ContactTranscripts.Unredacted.Access | On the **Contact details** and **Contact search** pages for a contact, view chat and voice transcripts in which the sensitive data has been redacted. |
+| Contact transcripts (redacted) - Access | ContactTranscripts.Redacted.Access | On the **Contact details** and **Contact search** pages for a contact, view chat and voice transcripts in which the sensitive data has been redacted. |
 | Call recordings (unredacted) - Enable download button | CallRecordings.Unredacted.DownloadButton | Enables buttons to download call recordings when user is viewing the unredacted recording on the **Contact Search** and **Contact Details** pages. The **Enable download button** permission is selected by default when you select **Call recordings (unredacted)** permission, so they can [download call recordings](download-recordings.md) through the Connect Customer admin website. This permission only controls the ability to view the download button. They might still be able to download the contact recording without this permission if they have the **Call recordings (unredacted) - Access** permission.  |
 | Call recordings (redacted) - Enable download button | CallRecordings.Redacted.DownloadButton | Enables buttons to download call recordings when user is viewing the redacted recording on the **Contact Search** and **Contact Details** pages. The **Enable download button** permission is selected by default when you select **Call recordings (redacted)** permission, so they can [download call recordings](download-recordings.md) through the Connect Customer admin website. This permission only controls the ability to view the download button. They might still be able to download the contact recording without this permission if they have the **Call recordings (redacted) - Access** permission.  |
 | Contact transcripts (unredacted) - Enable download button | ContactTranscripts.Unredacted.DownloadButton | Enables buttons to download contact transcripts when user is viewing the unredacted transcript on the **Contact Search** and **Contact Details** pages. The **Enable download button** permission is selected by default when you select **Contact transcripts (unredacted)** permission so they can [download call recordings](download-recordings.md) through the Connect Customer admin website. This permission only controls the ability to view the download button. They might still be able to download the contact transcript without this permission if they have the **Contact transcript (unredacted) - Access** permission. <br />A button appears on the **Contact Search** and **Contact Details** pages to download unredacted transcripts for chat and email. |
@@ -269,9 +269,9 @@ The following table lists legacy permissions. You can not access these permissio
 
 | UI name | API name | Use |
 | --- | --- | --- |
-| Customer profiles - Create | CustomerProfiles.Create | [Create customer profiles in the agent application](ag-cp-create.md). |
-| Customer profiles - Edit | CustomerProfiles.Edit | Edit customer profiles in the agent application. |
-| Customer profiles - View | CustomerProfiles.View | View customer profiles in the agent application. |
+| Customer profiles - Create | CustomerProfiles.Create | [Create customer profiles in the agent workspace](ag-cp-create.md). |
+| Customer profiles - Edit | CustomerProfiles.Edit | Edit customer profiles in the agent workspace. |
+| Customer profiles - View | CustomerProfiles.View | View customer profiles in the agent workspace. |
 | Calculated Attributes - Create | CustomerProfiles.CalculatedAttributes.Create | [Create calculated attributes](calculated-attributes-admin-website-create.md).  |
 | Calculated Attributes - Edit | CustomerProfiles.CalculatedAttributes.Edit | [Edit calculated attributes](calculated-attributes-admin-website-edit.md).  |
 | Calculated Attributes - Delete | CustomerProfiles.CalculatedAttributes.Delete | [Delete calculated attributes](calculated-attributes-admin-website-delete.md).  |
@@ -305,8 +305,8 @@ The following table lists legacy permissions. You can not access these permissio
 | UI name | API name | Use |
 | --- | --- | --- |
 | Agent application schedule calendar | StaffCalendar.View<br />StaffCalendar.Edit | [Ability for agents to view their schedules](scheduling-view-schedule-agents.md). The **Edit** permission is required for agents to view and use the **Time off **widget on their schedule that they use to request time off. If they only have **View** permission, the **Time off** widget will not appear on their schedule.<br />For an example image that shows the **Time off** widget on an agent's schedule, see [Agent initiated time off request](create-time-off-to.md#to-agent). |
-| Custom views | CustomViews.Access | Use the [Agent Workspace guided experience](step-by-step-guided-experiences.md) guide. |
-| agent assist | Wisdom.View | [View real-time recommendations in the agent application](use-realtime-recommendations.md). |
+| Custom views | CustomViews.Access | Use the [step-by-step guides](step-by-step-guided-experiences.md) guide. |
+| agent assist | Wisdom.View | [View real-time recommendations in the agent workspace](use-realtime-recommendations.md). |
 | {{<3p app name}} - Access | {{<3p app name}}.Access | Allows agents to access a third-party application. |
 | {{Performance metrics}} - Access | Analytics.PerformanceMetrics.Access | Displays the **Performance metrics** option in the **Apps** dropdown menu in the agent workspace. For more information, see [Agent workspace performance dashboard](performance-dashboard-aw.md). |
 | {{Worklist}} - Access | ManualAssignAnyContact.Enable<br />ManualAssignMyContacts.Enable | Allows Agents to view the Worklist App that will display Contacts that can be Manually assigned. |
@@ -320,8 +320,8 @@ The following table lists legacy permissions. You can not access these permissio
 | Message templates - Edit |  | Edit message templates.  |
 | Message templates - Create |  | Create message templates.  |
 | Message templates - Delete |  | Delete message templates by using the Connect Customer admin website.  |
-| Quick responses - Create | ContentManagement.Create | [Set up a knowledge base to store quick responses](setup-knowledgebase.md). [Create](create-quick-responses.md), [import](add-data.md), and [view the import history](view-import-history.md) of quick responses that are displayed in the agent application.  |
-| Quick responses - Edit | ContentManagement.Edit |  [Edit](edit-quick-responses.md), [import](add-data.md), and [view the import history](view-import-history.md) of quick responses that are displayed in the agent application.  |
+| Quick responses - Create | ContentManagement.Create | [Set up a knowledge base to store quick responses](setup-knowledgebase.md). [Create](create-quick-responses.md), [import](add-data.md), and [view the import history](view-import-history.md) of quick responses that are displayed in the agent workspace.  |
+| Quick responses - Edit | ContentManagement.Edit |  [Edit](edit-quick-responses.md), [import](add-data.md), and [view the import history](view-import-history.md) of quick responses that are displayed in the agent workspace.  |
 | Quick responses - View | ContentManagement.View | View a list of quick responses in the Connect Customer admin website. |
 | Quick responses - Delete | ContentManagement.Delete |  [Delete quick responses](delete-qr.md) by using the Connect Customer admin website. |
 
@@ -330,10 +330,10 @@ The following table lists legacy permissions. You can not access these permissio
 
 | UI name | API name | Use |
 | --- | --- | --- |
-| Audit History - View | CaseHistory.View | View the audit history of cases in the agent application. |
-| Cases - Create | Cases.Create | [Create cases in the agent application](create-cases.md).  |
-| Cases - View | Cases.View | View cases in the agent application. |
-| Cases - Edit | Cases.Edit | Edit cases in the agent application. |
+| Audit History - View | CaseHistory.View | View the audit history of cases in the agent workspace. |
+| Cases - Create | Cases.Create | [Create cases in the agent workspace](create-cases.md).  |
+| Cases - View | Cases.View | View cases in the agent workspace. |
+| Cases - Edit | Cases.Edit | Edit cases in the agent workspace. |
 | Case Fields - Create | CaseFields.Create | [Create case fields](case-fields.md).  |
 | Case Fields - View | CaseFields.View | View case fields. |
 | Case Fields - Edit | CaseFields.Edit | Edit case fields. |

@@ -32,7 +32,7 @@ The request accepts the following data in JSON format.
  ** [mode](#API_PutAccountDataRetention_RequestSyntax) **   <a name="bedrock-PutAccountDataRetention-request-mode"></a>
 The data retention mode to set for the account.
 Type: String
-Valid Values: `default | none | provider_data_share | inherit`
+Valid Values: `default | none | aws_review | provider_data_share | inherit`
 Required: Yes
 
 ## Response Syntax
@@ -58,7 +58,7 @@ The following data is returned in JSON format by the service.
  ** [mode](#API_PutAccountDataRetention_ResponseSyntax) **   <a name="bedrock-PutAccountDataRetention-response-mode"></a>
 The data retention mode set for the account.
 Type: String
-Valid Values: `default | none | provider_data_share | inherit`
+Valid Values: `default | none | aws_review | provider_data_share | inherit`
 
  ** [updatedAt](#API_PutAccountDataRetention_ResponseSyntax) **   <a name="bedrock-PutAccountDataRetention-response-updatedAt"></a>
 The time at which the data retention mode was last updated.

@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-open
 
 GPT OSS 120B is OpenAI's 120-billion parameter open-source general-purpose model for text generation, coding, and reasoning tasks. For more information about model development and performance, see the [model/service card](https://cdn.openai.com/pdf/419b6906-9da6-406c-a19d-1bb078ac7637/oai_gpt-oss_model_card.pdf).
 + **Model launch date:** Aug 05, 2025
++ **EOL no sooner than:** Aug 05, 2026
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://huggingface.co/openai/gpt-oss-120b/blob/main/LICENSE)
 + **Model lifecycle:** Active

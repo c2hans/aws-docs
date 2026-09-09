@@ -12,6 +12,7 @@ When you restore using point in time recovery, DynamoDB restores your table data
 Along with data, the following are also included on the new restored table using point in time recovery:
 + Global secondary indexes (GSIs)
 + Local secondary indexes (LSIs)
++ Vector indexes
 + Provisioned read and write capacity
 + Encryption settings
 **Important**

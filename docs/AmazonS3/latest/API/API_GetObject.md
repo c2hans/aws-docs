@@ -239,6 +239,9 @@ x-amz-tagging-count: {{TagCount}}
 x-amz-object-lock-mode: {{ObjectLockMode}}
 x-amz-object-lock-retain-until-date: {{ObjectLockRetainUntilDate}}
 x-amz-object-lock-legal-hold: {{ObjectLockLegalHoldStatus}}
+x-amz-object-lock-event-hold: {{ObjectLockEventHold}}
+x-amz-object-lock-event-hold-duration-days: {{ObjectLockEventHoldDurationDays}}
+x-amz-object-lock-event-hold-duration-years: {{ObjectLockEventHoldDurationYears}}
 
 {{Body}}
 ```
@@ -285,7 +288,7 @@ Date and time when the object was last modified.
  **General purpose buckets ** - When you specify a `versionId` of the object in your request, if the specified version in the request is a delete marker, the response returns a `405 Method Not Allowed` error and the `Last-Modified: timestamp` response header.
 
  ** [x-amz-checksum-crc32](#API_GetObject_ResponseSyntax) **   <a name="AmazonS3-GetObject-response-header-ChecksumCRC32"></a>
-The Base64 encoded, 32-bit `CRC32` checksum of the object. This checksum is only present if the object was uploaded with the object. For more information, see [ Checking object integrity](https://docs.aws.amazon.com/AmazonS3/latest/userguide/checking-object-integrity.html) in the *Amazon S3 User Guide*.
+The Base64 encoded, 32-bit `CRC32` checksum of the object. This checksum is only present if the checksum was uploaded with the object. For more information, see [ Checking object integrity](https://docs.aws.amazon.com/AmazonS3/latest/userguide/checking-object-integrity.html) in the *Amazon S3 User Guide*.
 
  ** [x-amz-checksum-crc32c](#API_GetObject_ResponseSyntax) **   <a name="AmazonS3-GetObject-response-header-ChecksumCRC32C"></a>
 The Base64 encoded, 32-bit `CRC32C` checksum of the object. This checksum is only present if the checksum was uploaded with the object. For more information, see [ Checking object integrity](https://docs.aws.amazon.com/AmazonS3/latest/userguide/checking-object-integrity.html) in the *Amazon S3 User Guide*.
@@ -334,6 +337,19 @@ This functionality is not supported for directory buckets.
  ** [x-amz-mp-parts-count](#API_GetObject_ResponseSyntax) **   <a name="AmazonS3-GetObject-response-header-PartsCount"></a>
 The count of parts this object has. This value is only returned if you specify `partNumber` in your request and the object was uploaded as a multipart upload.
 
+ ** [x-amz-object-lock-event-hold](#API_GetObject_ResponseSyntax) **   <a name="AmazonS3-GetObject-response-header-ObjectLockEventHold"></a>
+The event hold status for this object. This header is only returned if the requester has the `s3:GetObjectRetention` permission.
+This functionality is not supported for directory buckets.
+Valid Values: `ON | OFF`
+
+ ** [x-amz-object-lock-event-hold-duration-days](#API_GetObject_ResponseSyntax) **   <a name="AmazonS3-GetObject-response-header-ObjectLockEventHoldDurationDays"></a>
+The event hold duration in days for this object. Only returned when the event hold is enabled.
+This functionality is not supported for directory buckets.
+
+ ** [x-amz-object-lock-event-hold-duration-years](#API_GetObject_ResponseSyntax) **   <a name="AmazonS3-GetObject-response-header-ObjectLockEventHoldDurationYears"></a>
+The event hold duration in years for this object. Only returned when the event hold is enabled.
+This functionality is not supported for directory buckets.
+
  ** [x-amz-object-lock-legal-hold](#API_GetObject_ResponseSyntax) **   <a name="AmazonS3-GetObject-response-header-ObjectLockLegalHoldStatus"></a>
 Indicates whether this object has an active legal hold. This field is only returned if you have permission to view an object's legal hold status.
 This functionality is not supported for directory buckets.
@@ -365,7 +381,7 @@ This functionality is not supported for directory buckets. Directory buckets onl
  ** [x-amz-server-side-encryption](#API_GetObject_ResponseSyntax) **   <a name="AmazonS3-GetObject-response-header-ServerSideEncryption"></a>
 The server-side encryption algorithm used when you store this object in Amazon S3 or Amazon FSx.
 When accessing data stored in Amazon FSx file systems using S3 access points, the only valid server side encryption option is `aws:fsx`.
-Valid Values: `AES256 | aws:fsx | aws:kms | aws:kms:dsse`
+Valid Values: `AES256 | aws:fsx | aws:backup | aws:kms | aws:kms:dsse`
 
  ** [x-amz-server-side-encryption-aws-kms-key-id](#API_GetObject_ResponseSyntax) **   <a name="AmazonS3-GetObject-response-header-SSEKMSKeyId"></a>
 If present, indicates the ID of the KMS key that was used for object encryption.
@@ -384,7 +400,7 @@ This functionality is not supported for directory buckets.
  ** [x-amz-storage-class](#API_GetObject_ResponseSyntax) **   <a name="AmazonS3-GetObject-response-header-StorageClass"></a>
 Provides storage class information of the object. Amazon S3 returns this header for all objects except for S3 Standard storage class objects.
  **Directory buckets ** - Directory buckets only support `EXPRESS_ONEZONE` (the S3 Express One Zone storage class) in Availability Zones and `ONEZONE_IA` (the S3 One Zone-Infrequent Access storage class) in Dedicated Local Zones.
-Valid Values: `STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | ONEZONE_IA | INTELLIGENT_TIERING | GLACIER | DEEP_ARCHIVE | OUTPOSTS | GLACIER_IR | SNOW | EXPRESS_ONEZONE | FSX_OPENZFS | FSX_ONTAP`
+Valid Values: `STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | ONEZONE_IA | INTELLIGENT_TIERING | GLACIER | DEEP_ARCHIVE | OUTPOSTS | GLACIER_IR | SNOW | EXPRESS_ONEZONE | FSX_OPENZFS | FSX_ONTAP | AWS_BACKUP_WARM | AWS_BACKUP_LOW_COST_WARM`
 
  ** [x-amz-tagging-count](#API_GetObject_ResponseSyntax) **   <a name="AmazonS3-GetObject-response-header-TagCount"></a>
 The number of tags, if any, on the object, when you have the relevant permission to read object tags.

@@ -10,11 +10,6 @@ Information about the status of the rule evaluation.
 ## Contents
 <a name="API_ProfilerRuleEvaluationStatus_Contents"></a>
 
- ** LastModifiedTime **   <a name="sagemaker-Type-ProfilerRuleEvaluationStatus-LastModifiedTime"></a>
-Timestamp when the rule evaluation status was last modified.
-Type: Timestamp
-Required: No
-
  ** RuleConfigurationName **   <a name="sagemaker-Type-ProfilerRuleEvaluationStatus-RuleConfigurationName"></a>
 The name of the rule configuration.
 Type: String

@@ -10,7 +10,7 @@ When a call or chat is connected to your Contact Control Panel (CCP), Connect Cu
 **Tip**
 You can change autopopulation behavior if you wish. For more information, see [ Use contact attributes to autopopulate customer profiles](https://docs.aws.amazon.com/connect/latest/adminguide/auto-pop-customer-profile.html).
 
-Before agents can access customer profiles, the Connect Customer administrator must enable the Customer Profiles feature, grant agents the appropriate permissions, and integrate Customer Profiles into your agent workspace. For more information, see [Enable Customer Profiles for your Connect Customer instance](enable-customer-profiles.md).
+Before agents can access customer profiles, the Connect Customer administrator must enable the Customer Profiles feature and grant agents the appropriate permissions. For more information, see [Enable Customer Profiles for your Connect Customer instance](enable-customer-profiles.md).
 
 **Topics**
 + [Auto-populate the customer profile](#example1-select-customer-profile)
@@ -44,7 +44,7 @@ This next example shows what it might look like after you've accepted and joined
 
 If no results are returned when a call or chat comes in, do the following:
 
-1. Search for the customer's profile using any search key available in the search drop down menu. For example: phone, name, email, account id, or any [custom search terms](https://docs.aws.amazon.com/connect/latest/adminguide/create-object-type-mapping.html#step2-how-to-map-attributes) you specify. For example, if you have *Social security number* (SSN) defined as one of your identifiers, SSN will automatically be available as a search term for agents to use in the Agent Workspace.
+1. Search for the customer's profile using any search key available in the search drop down menu. For example: phone, name, email, account id, or any [custom search terms](https://docs.aws.amazon.com/connect/latest/adminguide/create-object-type-mapping.html#step2-how-to-map-attributes) you specify. For example, if you have *Social security number* (SSN) defined as one of your identifiers, SSN will automatically be available as a search term for agents to use in the agent workspace.
 ![The SSN search option in the drop down.](https://docs.aws.amazon.com/connect/latest/adminguide/images/customer-profiles-search-ssn.png)
 ![Example of an SSN in the search box.](https://docs.aws.amazon.com/connect/latest/adminguide/images/customer-profiles-search-ssn-2.png)
 

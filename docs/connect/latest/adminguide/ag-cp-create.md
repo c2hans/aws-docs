@@ -16,7 +16,7 @@ Let's say you're on a chat and there's no customer profile for the contact. You 
 
    Enter information in the required boxes, and then choose **Save**.
 **Tip**
-Agents can use any of these customer Identifiers in the Agent Workspace to find the profile that belongs to the customer on the interaction.
+Agents can use any of these customer Identifiers in the agent workspace to find the profile that belongs to the customer on the interaction.
 ![The create profile page, the check box for This is the current connected customer.](https://docs.aws.amazon.com/connect/latest/adminguide/images/customer-profiles-create-profile-detail.png)
 
 1. You'll receive a verification page that the contact has been created.

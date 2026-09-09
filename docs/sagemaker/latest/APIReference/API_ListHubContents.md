@@ -12,8 +12,6 @@ List the contents of a hub.
 
 ```
 {
-   "CreationTimeAfter": {{number}},
-   "CreationTimeBefore": {{number}},
    "HubContentType": "{{string}}",
    "HubName": "{{string}}",
    "MaxResults": {{number}},
@@ -31,16 +29,6 @@ List the contents of a hub.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
-
- ** [CreationTimeAfter](#API_ListHubContents_RequestSyntax) **   <a name="sagemaker-ListHubContents-request-CreationTimeAfter"></a>
-Only list hub content that was created after the time specified.
-Type: Timestamp
-Required: No
-
- ** [CreationTimeBefore](#API_ListHubContents_RequestSyntax) **   <a name="sagemaker-ListHubContents-request-CreationTimeBefore"></a>
-Only list hub content that was created before the time specified.
-Type: Timestamp
-Required: No
 
  ** [HubContentType](#API_ListHubContents_RequestSyntax) **   <a name="sagemaker-ListHubContents-request-HubContentType"></a>
 The type of hub content to list.
@@ -100,7 +88,6 @@ Required: No
 {
    "HubContentSummaries": [
       {
-         "CreationTime": number,
          "DocumentSchemaVersion": "string",
          "HubContentArn": "string",
          "HubContentDescription": "string",
@@ -110,7 +97,6 @@ Required: No
          "HubContentStatus": "string",
          "HubContentType": "string",
          "HubContentVersion": "string",
-         "OriginalCreationTime": number,
          "SageMakerPublicHubContentArn": "string",
          "SupportStatus": "string"
       }

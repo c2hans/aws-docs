@@ -64,7 +64,6 @@ Required: Yes
       "LocalPath": "string",
       "S3Uri": "string"
    },
-   "CreationTime": number,
    "DebugHookConfig": {
       "CollectionConfigurations": [
          {
@@ -95,7 +94,6 @@ Required: Yes
    ],
    "DebugRuleEvaluationStatuses": [
       {
-         "LastModifiedTime": number,
          "RuleConfigurationName": "string",
          "RuleEvaluationJobArn": "string",
          "RuleEvaluationStatus": "string",
@@ -118,7 +116,6 @@ Required: Yes
    "FinalMetricDataList": [
       {
          "MetricName": "string",
-         "Timestamp": number,
          "Value": number
       }
    ],
@@ -165,7 +162,6 @@ Required: Yes
       }
    ],
    "LabelingJobArn": "string",
-   "LastModifiedTime": number,
    "MlflowConfig": {
       "MlflowExperimentName": "string",
       "MlflowResourceArn": "string",
@@ -211,7 +207,6 @@ Required: Yes
    ],
    "ProfilerRuleEvaluationStatuses": [
       {
-         "LastModifiedTime": number,
          "RuleConfigurationName": "string",
          "RuleEvaluationJobArn": "string",
          "RuleEvaluationStatus": "string",
@@ -246,8 +241,17 @@ Required: Yes
             }
          ]
       },
+      "InstancePreferences": [
+         {
+            "InstanceCount": number,
+            "InstanceType": "string",
+            "TrainingPlanArns": [ "string" ]
+         }
+      ],
       "InstanceType": "string",
       "KeepAlivePeriodInSeconds": number,
+      "SelectedInstanceCount": number,
+      "SelectedInstanceType": "string",
       "TrainingPlanArn": "string",
       "VolumeKmsKeyId": "string",
       "VolumeSizeInGB": number
@@ -259,8 +263,6 @@ Required: Yes
    "SecondaryStatus": "string",
    "SecondaryStatusTransitions": [
       {
-         "EndTime": number,
-         "StartTime": number,
          "Status": "string",
          "StatusMessage": "string"
       }
@@ -284,11 +286,9 @@ Required: Yes
       "LocalPath": "string",
       "S3OutputPath": "string"
    },
-   "TrainingEndTime": number,
    "TrainingJobArn": "string",
    "TrainingJobName": "string",
    "TrainingJobStatus": "string",
-   "TrainingStartTime": number,
    "TrainingTimeInSeconds": number,
    "TuningJobArn": "string",
    "VpcConfig": {
@@ -335,10 +335,6 @@ Valid Range: Minimum value of 0.
  ** [CheckpointConfig](#API_DescribeTrainingJob_ResponseSyntax) **   <a name="sagemaker-DescribeTrainingJob-response-CheckpointConfig"></a>
 Contains information about the output location for managed spot training checkpoint data.
 Type: [CheckpointConfig](API_CheckpointConfig.md) object
-
- ** [CreationTime](#API_DescribeTrainingJob_ResponseSyntax) **   <a name="sagemaker-DescribeTrainingJob-response-CreationTime"></a>
-A timestamp that indicates when the training job was created.
-Type: Timestamp
 
  ** [DebugHookConfig](#API_DescribeTrainingJob_ResponseSyntax) **   <a name="sagemaker-DescribeTrainingJob-response-DebugHookConfig"></a>
 Configuration information for the Amazon SageMaker Debugger hook parameters, metric and tensor collections, and storage paths. To learn more about how to configure the `DebugHookConfig` parameter, see [Use the SageMaker and Debugger Configuration API Operations to Create, Update, and Debug Your Training Job](https://docs.aws.amazon.com/sagemaker/latest/dg/debugger-createtrainingjob-api.html).
@@ -416,10 +412,6 @@ The Amazon Resource Name (ARN) of the SageMaker Ground Truth labeling job that c
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 2048.
 Pattern: `arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:labeling-job/.*`
-
- ** [LastModifiedTime](#API_DescribeTrainingJob_ResponseSyntax) **   <a name="sagemaker-DescribeTrainingJob-response-LastModifiedTime"></a>
-A timestamp that indicates when the status of the training job was last modified.
-Type: Timestamp
 
  ** [MlflowConfig](#API_DescribeTrainingJob_ResponseSyntax) **   <a name="sagemaker-DescribeTrainingJob-response-MlflowConfig"></a>
  The MLflow configuration using SageMaker managed MLflow.
@@ -533,10 +525,6 @@ Type: [StoppingCondition](API_StoppingCondition.md) object
 Configuration of storage locations for the Amazon SageMaker Debugger TensorBoard output data.
 Type: [TensorBoardOutputConfig](API_TensorBoardOutputConfig.md) object
 
- ** [TrainingEndTime](#API_DescribeTrainingJob_ResponseSyntax) **   <a name="sagemaker-DescribeTrainingJob-response-TrainingEndTime"></a>
-Indicates the time when the training job ends on training instances. You are billed for the time interval between the value of `TrainingStartTime` and this time. For successful jobs and stopped jobs, this is the time after model artifacts are uploaded. For failed jobs, this is the time when SageMaker detects a job failure.
-Type: Timestamp
-
  ** [TrainingJobArn](#API_DescribeTrainingJob_ResponseSyntax) **   <a name="sagemaker-DescribeTrainingJob-response-TrainingJobArn"></a>
 The Amazon Resource Name (ARN) of the training job.
 Type: String
@@ -560,10 +548,6 @@ SageMaker provides the following training job statuses:
 For more detailed information, see `SecondaryStatus`.
 Type: String
 Valid Values: `InProgress | Completed | Failed | Stopping | Stopped | Deleting`
-
- ** [TrainingStartTime](#API_DescribeTrainingJob_ResponseSyntax) **   <a name="sagemaker-DescribeTrainingJob-response-TrainingStartTime"></a>
-Indicates the time when the training job starts on training instances. You are billed for the time interval between this time and the value of `TrainingEndTime`. The start time in CloudWatch Logs might be later than this time. The difference is due to the time it takes to download the training data and to the size of the training container.
-Type: Timestamp
 
  ** [TrainingTimeInSeconds](#API_DescribeTrainingJob_ResponseSyntax) **   <a name="sagemaker-DescribeTrainingJob-response-TrainingTimeInSeconds"></a>
 The training time in seconds.

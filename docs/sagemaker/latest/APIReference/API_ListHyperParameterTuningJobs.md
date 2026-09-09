@@ -12,10 +12,6 @@ Gets a list of [HyperParameterTuningJobSummary](https://docs.aws.amazon.com/sage
 
 ```
 {
-   "CreationTimeAfter": {{number}},
-   "CreationTimeBefore": {{number}},
-   "LastModifiedTimeAfter": {{number}},
-   "LastModifiedTimeBefore": {{number}},
    "MaxResults": {{number}},
    "NameContains": "{{string}}",
    "NextToken": "{{string}}",
@@ -31,26 +27,6 @@ Gets a list of [HyperParameterTuningJobSummary](https://docs.aws.amazon.com/sage
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
-
- ** [CreationTimeAfter](#API_ListHyperParameterTuningJobs_RequestSyntax) **   <a name="sagemaker-ListHyperParameterTuningJobs-request-CreationTimeAfter"></a>
-A filter that returns only tuning jobs that were created after the specified time.
-Type: Timestamp
-Required: No
-
- ** [CreationTimeBefore](#API_ListHyperParameterTuningJobs_RequestSyntax) **   <a name="sagemaker-ListHyperParameterTuningJobs-request-CreationTimeBefore"></a>
-A filter that returns only tuning jobs that were created before the specified time.
-Type: Timestamp
-Required: No
-
- ** [LastModifiedTimeAfter](#API_ListHyperParameterTuningJobs_RequestSyntax) **   <a name="sagemaker-ListHyperParameterTuningJobs-request-LastModifiedTimeAfter"></a>
-A filter that returns only tuning jobs that were modified after the specified time.
-Type: Timestamp
-Required: No
-
- ** [LastModifiedTimeBefore](#API_ListHyperParameterTuningJobs_RequestSyntax) **   <a name="sagemaker-ListHyperParameterTuningJobs-request-LastModifiedTimeBefore"></a>
-A filter that returns only tuning jobs that were modified before the specified time.
-Type: Timestamp
-Required: No
 
  ** [MaxResults](#API_ListHyperParameterTuningJobs_RequestSyntax) **   <a name="sagemaker-ListHyperParameterTuningJobs-request-MaxResults"></a>
 The maximum number of tuning jobs to return. The default value is 10.
@@ -97,12 +73,9 @@ Required: No
 {
    "HyperParameterTuningJobSummaries": [
       {
-         "CreationTime": number,
-         "HyperParameterTuningEndTime": number,
          "HyperParameterTuningJobArn": "string",
          "HyperParameterTuningJobName": "string",
          "HyperParameterTuningJobStatus": "string",
-         "LastModifiedTime": number,
          "ObjectiveStatusCounters": {
             "Failed": number,
             "Pending": number,

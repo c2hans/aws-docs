@@ -10,11 +10,6 @@ A summary of the model card.
 ## Contents
 <a name="API_ModelCardSummary_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-ModelCardSummary-CreationTime"></a>
-The date and time that the model card was created.
-Type: Timestamp
-Required: Yes
-
  ** ModelCardArn **   <a name="sagemaker-Type-ModelCardSummary-ModelCardArn"></a>
 The Amazon Resource Name (ARN) of the model card.
 Type: String
@@ -38,11 +33,6 @@ The approval status of the model card within your organization. Different organi
 Type: String
 Valid Values: `Draft | PendingReview | Approved | Archived`
 Required: Yes
-
- ** LastModifiedTime **   <a name="sagemaker-Type-ModelCardSummary-LastModifiedTime"></a>
-The date and time that the model card was last modified.
-Type: Timestamp
-Required: No
 
 ## See Also
 <a name="API_ModelCardSummary_SeeAlso"></a>

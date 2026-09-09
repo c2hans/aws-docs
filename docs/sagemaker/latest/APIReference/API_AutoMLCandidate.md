@@ -27,16 +27,6 @@ Information about the candidate's steps.
 Type: Array of [AutoMLCandidateStep](API_AutoMLCandidateStep.md) objects
 Required: Yes
 
- ** CreationTime **   <a name="sagemaker-Type-AutoMLCandidate-CreationTime"></a>
-The creation time.
-Type: Timestamp
-Required: Yes
-
- ** LastModifiedTime **   <a name="sagemaker-Type-AutoMLCandidate-LastModifiedTime"></a>
-The last modified time.
-Type: Timestamp
-Required: Yes
-
  ** ObjectiveStatus **   <a name="sagemaker-Type-AutoMLCandidate-ObjectiveStatus"></a>
 The objective's status.
 Type: String
@@ -46,11 +36,6 @@ Required: Yes
  ** CandidateProperties **   <a name="sagemaker-Type-AutoMLCandidate-CandidateProperties"></a>
 The properties of an AutoML candidate job.
 Type: [CandidateProperties](API_CandidateProperties.md) object
-Required: No
-
- ** EndTime **   <a name="sagemaker-Type-AutoMLCandidate-EndTime"></a>
-The end time.
-Type: Timestamp
 Required: No
 
  ** FailureReason **   <a name="sagemaker-Type-AutoMLCandidate-FailureReason"></a>

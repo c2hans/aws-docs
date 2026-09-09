@@ -336,6 +336,118 @@ A variable may come from user input, a slot, a Data request, a context variable,
 
 To reference a variable, type { in a supported text field and choose from the placeholder menu.
 
+Use variables in:
++ Messages
++ Data request payloads
++ Split conditions
++ Prompt fields
++ Modality payloads
++ Knowledge base questions
++ Agent instructions
+
+Example:
+
+```
+Thanks, {firstName}. I found your reservation for {checkInDate}.
+```
+
+The following table describes the common variable types.
+
+| Variable type | Description | Color |
+| --- | --- | --- |
+| **Slot variables** | Values captured from the user through attached slots. | Green |
+| **Data request variables** | Values returned from a Data request node. | Orange |
+| **Context variables** | Values available across flows during a conversation session. | Pink |
+| **Local variables** | Values created inside a flow, such as Define, Loop, Generative text, or Knowledge base outputs. | Purple |
+| **System variables** | Values tracked automatically by Agentic CX Designer, such as the latest utterance or conversation ID. | Blue |
+| **MCP input variables** | Values passed into an MCP-enabled flow by an agent. | Pink |
+| **Secrets** | Reusable secure values that can be referenced in supported Data request fields. | Black |
+
+### Slot variables
+<a name="acxd-flows-variables-slot"></a>
+
+Slot variables store values captured from user responses.
+
+Examples:
++ `{CheckInDate}`
++ `{CheckoutDate}`
++ `{RoomType}`
++ `{CustomerEmail}`
+
+Slots are local to the flow where they are attached. If the same slot may be captured again later in the same session, clear or update the value using state modifications before asking again.
+
+To make a captured slot available in other flows, set it as a context variable.
+
+### Data request variables
+<a name="acxd-flows-variables-data-request"></a>
+
+Data request variables are returned by a Data request node.
+
+Use them after the Data request node has successfully run.
+
+Examples:
++ `{CustomerProfile.firstName}`
++ `{OrderStatus.status}`
++ `{AppointmentAvailability.times}`
++ `{Reservation.confirmationNumber}`
+
+If the Data request response contains a list, you may need to use a Loop or Transform node before referencing individual values or presenting them in a User choice node or modality.
+
+If the data may change during the session, enable Always retrigger on the Data request node so the latest values are fetched when the node is revisited.
+
+### Context variables
+<a name="acxd-flows-variables-context"></a>
+
+Context variables are available across flows during a conversation session.
+
+Use context variables when a value captured in one flow needs to be referenced later in another flow.
+
+Examples:
++ Authentication status
++ Customer profile
++ Selected reservation
++ Preferred language
++ Current task state
+
+Context variables begin empty unless they are set by another process, such as a Data request, Connect Customer contact flow, or state modification.
+
+### Local variables
+<a name="acxd-flows-variables-local"></a>
+
+Local variables are created inside a flow and are available while the user is active in that flow.
+
+Examples include outputs from:
++ Define nodes
++ Loop nodes
++ Generative text nodes
++ Knowledge base nodes
++ Transform nodes
+
+Use local variables when the value only matters inside the current flow. Use a context variable when the value needs to persist across flows.
+
+### System variables
+<a name="acxd-flows-variables-system"></a>
+
+System variables are tracked automatically by agentic CX designer.
+
+These include:
+
+| System variable | Use |
+| --- | --- |
+| `{System.utterance}` | The latest message from the user. |
+| `{System.conversationId}` | The unique ID for the current conversation. |
+| `{System.userId}` | User identifier for the conversation. Voice interactions use the customer's phone number. Chat interactions can populate this value when `nlx_userId` is passed on the Agentic CX block in a Connect Customer flow. |
+| `{System.transcript}` | The conversation transcript, with sensitive information redacted where supported. |
+| `{System.channelType}` | The channel the user is using. |
+| `{System.isVoice}` | Whether the user is communicating through voice. |
+| `{System.language}` | The detected or configured language. |
+| `{System.liveSyncTimeoutType}` | The reason for a Live Sync timeout (sessionStart = user did not engage; inactivity = user did not respond between steps) |
+| `{System.locale}` | The detected or configured locale. |
+| `{System.environment}` | The deployment environment. |
+| `{System.applicationName}` | The application using the flow. |
+
+Use system variables in Split logic, messages, prompts, and Data request payloads when the flow needs conversation-level context.
+
 **Topics**
 + [User intent and routing](#acxd-flows-intent)
 + [Creating a flow](#acxd-flows-create)

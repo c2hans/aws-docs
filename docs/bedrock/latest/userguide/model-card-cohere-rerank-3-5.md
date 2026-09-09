@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-cohe
 
 Rerank 3.5 is Cohere's relevance scoring model that reorders search results for improved accuracy in RAG pipelines and enterprise search. For more information about model development and performance, see the [model/service card](https://docs.cohere.com/docs/rerank).
 + **Model launch date:** Dec 2, 2024
++ **EOL no sooner than:** Dec 2, 2025
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
 + **Model lifecycle:** Active

@@ -36,12 +36,10 @@ Required: Yes
 ```
 {
    "CompilationJobName": "string",
-   "CreationTime": number,
    "EdgePackagingJobArn": "string",
    "EdgePackagingJobName": "string",
    "EdgePackagingJobStatus": "string",
    "EdgePackagingJobStatusMessage": "string",
-   "LastModifiedTime": number,
    "ModelArtifact": "string",
    "ModelName": "string",
    "ModelSignature": "string",
@@ -76,10 +74,6 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 63.
 Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
 
- ** [CreationTime](#API_DescribeEdgePackagingJob_ResponseSyntax) **   <a name="sagemaker-DescribeEdgePackagingJob-response-CreationTime"></a>
-The timestamp of when the packaging job was created.
-Type: Timestamp
-
  ** [EdgePackagingJobArn](#API_DescribeEdgePackagingJob_ResponseSyntax) **   <a name="sagemaker-DescribeEdgePackagingJob-response-EdgePackagingJobArn"></a>
 The Amazon Resource Name (ARN) of the edge packaging job.
 Type: String
@@ -100,10 +94,6 @@ Valid Values: `STARTING | INPROGRESS | COMPLETED | FAILED | STOPPING | STOPPED`
  ** [EdgePackagingJobStatusMessage](#API_DescribeEdgePackagingJob_ResponseSyntax) **   <a name="sagemaker-DescribeEdgePackagingJob-response-EdgePackagingJobStatusMessage"></a>
 Returns a message describing the job status and error messages.
 Type: String
-
- ** [LastModifiedTime](#API_DescribeEdgePackagingJob_ResponseSyntax) **   <a name="sagemaker-DescribeEdgePackagingJob-response-LastModifiedTime"></a>
-The timestamp of when the job was last updated.
-Type: Timestamp
 
  ** [ModelArtifact](#API_DescribeEdgePackagingJob_ResponseSyntax) **   <a name="sagemaker-DescribeEdgePackagingJob-response-ModelArtifact"></a>
 The Amazon Simple Storage (S3) URI where model artifacts ares stored.

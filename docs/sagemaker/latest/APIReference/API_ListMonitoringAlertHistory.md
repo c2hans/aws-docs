@@ -12,8 +12,6 @@ Gets a list of past alerts in a model monitoring schedule.
 
 ```
 {
-   "CreationTimeAfter": {{number}},
-   "CreationTimeBefore": {{number}},
    "MaxResults": {{number}},
    "MonitoringAlertName": "{{string}}",
    "MonitoringScheduleName": "{{string}}",
@@ -30,16 +28,6 @@ Gets a list of past alerts in a model monitoring schedule.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
-
- ** [CreationTimeAfter](#API_ListMonitoringAlertHistory_RequestSyntax) **   <a name="sagemaker-ListMonitoringAlertHistory-request-CreationTimeAfter"></a>
-A filter that returns only alerts created on or after the specified time.
-Type: Timestamp
-Required: No
-
- ** [CreationTimeBefore](#API_ListMonitoringAlertHistory_RequestSyntax) **   <a name="sagemaker-ListMonitoringAlertHistory-request-CreationTimeBefore"></a>
-A filter that returns only alerts created on or before the specified time.
-Type: Timestamp
-Required: No
 
  ** [MaxResults](#API_ListMonitoringAlertHistory_RequestSyntax) **   <a name="sagemaker-ListMonitoringAlertHistory-request-MaxResults"></a>
 The maximum number of results to display. The default is 100.
@@ -94,7 +82,6 @@ Required: No
    "MonitoringAlertHistory": [
       {
          "AlertStatus": "string",
-         "CreationTime": number,
          "MonitoringAlertName": "string",
          "MonitoringScheduleName": "string"
       }

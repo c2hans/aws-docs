@@ -10,11 +10,6 @@ A summary of the properties of an experiment. To get the complete set of propert
 ## Contents
 <a name="API_ExperimentSummary_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-ExperimentSummary-CreationTime"></a>
-When the experiment was created.
-Type: Timestamp
-Required: No
-
  ** DisplayName **   <a name="sagemaker-Type-ExperimentSummary-DisplayName"></a>
 The name of the experiment as displayed. If `DisplayName` isn't specified, `ExperimentName` is displayed.
 Type: String
@@ -39,11 +34,6 @@ Required: No
  ** ExperimentSource **   <a name="sagemaker-Type-ExperimentSummary-ExperimentSource"></a>
 The source of the experiment.
 Type: [ExperimentSource](API_ExperimentSource.md) object
-Required: No
-
- ** LastModifiedTime **   <a name="sagemaker-Type-ExperimentSummary-LastModifiedTime"></a>
-When the experiment was last modified.
-Type: Timestamp
 Required: No
 
 ## See Also

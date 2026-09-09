@@ -52,11 +52,6 @@ Length Constraints: Minimum length of 1. Maximum length of 63.
 Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
 Required: No
 
- ** DeploymentStartTime **   <a name="sagemaker-Type-DeviceDeploymentSummary-DeploymentStartTime"></a>
-The time when the deployment on the device started.
-Type: Timestamp
-Required: No
-
  ** Description **   <a name="sagemaker-Type-DeviceDeploymentSummary-Description"></a>
 The description of the device.
 Type: String

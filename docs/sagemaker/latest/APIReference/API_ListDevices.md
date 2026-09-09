@@ -13,7 +13,6 @@ A list of devices.
 ```
 {
    "DeviceFleetName": "{{string}}",
-   "LatestHeartbeatAfter": {{number}},
    "MaxResults": {{number}},
    "ModelName": "{{string}}",
    "NextToken": "{{string}}"
@@ -32,11 +31,6 @@ Filter for fleets containing this name in their device fleet name.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 63.
 Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
-Required: No
-
- ** [LatestHeartbeatAfter](#API_ListDevices_RequestSyntax) **   <a name="sagemaker-ListDevices-request-LatestHeartbeatAfter"></a>
-Select fleets where the job was updated after X
-Type: Timestamp
 Required: No
 
  ** [MaxResults](#API_ListDevices_RequestSyntax) **   <a name="sagemaker-ListDevices-request-MaxResults"></a>
@@ -72,14 +66,12 @@ Required: No
          "DeviceFleetName": "string",
          "DeviceName": "string",
          "IotThingName": "string",
-         "LatestHeartbeat": number,
          "Models": [
             {
                "ModelName": "string",
                "ModelVersion": "string"
             }
-         ],
-         "RegistrationTime": number
+         ]
       }
    ],
    "NextToken": "string"

@@ -72,11 +72,6 @@ Information about the user who created or modified an experiment, trial, trial c
 Type: [UserContext](API_UserContext.md) object
 Required: No
 
- ** LastModifiedTime **   <a name="sagemaker-Type-ModelPackage-LastModifiedTime"></a>
-The last time the model package was modified.
-Type: Timestamp
-Required: No
-
  ** MetadataProperties **   <a name="sagemaker-Type-ModelPackage-MetadataProperties"></a>
 Metadata properties of the tracking entity, trial, or trial component.
 Type: [MetadataProperties](API_MetadataProperties.md) object

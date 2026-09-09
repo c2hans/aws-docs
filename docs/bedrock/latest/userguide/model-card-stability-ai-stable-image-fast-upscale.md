@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-stab
 
 Stable Image Fast Upscale is Stability AI's model that quickly increases image resolution with minimal processing time. For more information about model development and performance, see the [model/service card](https://stability.ai/stable-image).
 + **Model launch date:** Sep 10, 2024
++ **EOL no sooner than:** Sep 10, 2025
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
 + **Model lifecycle:** Active

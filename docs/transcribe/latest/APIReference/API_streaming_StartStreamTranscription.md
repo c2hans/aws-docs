@@ -42,6 +42,7 @@ x-amzn-transcribe-identify-multiple-languages: {{IdentifyMultipleLanguages}}
 x-amzn-transcribe-vocabulary-names: {{VocabularyNames}}
 x-amzn-transcribe-vocabulary-filter-names: {{VocabularyFilterNames}}
 x-amzn-transcribe-session-resume-window: {{SessionResumeWindow}}
+x-amzn-transcribe-transcript-format: {{TranscriptFormat}}
 Content-type: application/json
 
 {
@@ -182,6 +183,13 @@ Valid Range: Minimum value of 1. Maximum value of 300.
 Enables speaker partitioning (diarization) in your transcription output. Speaker partitioning labels the speech from individual speakers in your media file.
 For more information, see [Partitioning speakers (diarization)](https://docs.aws.amazon.com/transcribe/latest/dg/diarization.html).
 
+ ** [TranscriptFormat](#API_streaming_StartStreamTranscription_RequestSyntax) **   <a name="transcribe-streaming_StartStreamTranscription-request-TranscriptFormat"></a>
+Specify how numbers, dates, and other alphanumeric entities are rendered in your transcription results.
++  `WRITTEN` renders these entities in their standard written form (for example, `$50`, `10:30 AM`, and `101`).
++  `SPOKEN` renders these entities as words, exactly as they were spoken (for example, `fifty dollars`, `ten thirty a m`, and `one oh one`).
+If you don't specify a value, Amazon Transcribe uses `WRITTEN` by default.
+Valid Values: `spoken | written`
+
  ** [VocabularyFilterMethod](#API_streaming_StartStreamTranscription_RequestSyntax) **   <a name="transcribe-streaming_StartStreamTranscription-request-VocabularyFilterMethod"></a>
 Specify how you want your vocabulary filter applied to your transcript.
 To replace words with `***`, choose `mask`.
@@ -266,6 +274,7 @@ x-amzn-transcribe-identify-multiple-languages: {{IdentifyMultipleLanguages}}
 x-amzn-transcribe-vocabulary-names: {{VocabularyNames}}
 x-amzn-transcribe-vocabulary-filter-names: {{VocabularyFilterNames}}
 x-amzn-transcribe-session-resume-window: {{SessionResumeWindow}}
+x-amzn-transcribe-transcript-format: {{TranscriptFormat}}
 Content-type: application/json
 
 {
@@ -409,6 +418,10 @@ Valid Range: Minimum value of 1. Maximum value of 300.
 
  ** [ShowSpeakerLabel](#API_streaming_StartStreamTranscription_ResponseSyntax) **   <a name="transcribe-streaming_StartStreamTranscription-response-ShowSpeakerLabel"></a>
 Shows whether speaker partitioning was enabled for your transcription.
+
+ ** [TranscriptFormat](#API_streaming_StartStreamTranscription_ResponseSyntax) **   <a name="transcribe-streaming_StartStreamTranscription-response-TranscriptFormat"></a>
+Provides the transcript format that you specified in your request.
+Valid Values: `spoken | written`
 
  ** [VocabularyFilterMethod](#API_streaming_StartStreamTranscription_ResponseSyntax) **   <a name="transcribe-streaming_StartStreamTranscription-response-VocabularyFilterMethod"></a>
 Provides the vocabulary filtering method used in your transcription.

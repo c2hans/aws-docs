@@ -54,11 +54,6 @@ The standard deviation of the metric.
 Type: Double
 Required: No
 
- ** TimeStamp **   <a name="sagemaker-Type-TrialComponentMetricSummary-TimeStamp"></a>
-When the metric was last updated.
-Type: Timestamp
-Required: No
-
 ## See Also
 <a name="API_TrialComponentMetricSummary_SeeAlso"></a>
 

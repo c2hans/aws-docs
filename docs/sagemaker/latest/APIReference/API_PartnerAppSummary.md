@@ -17,11 +17,6 @@ Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:partner-app\/app-[A-Z0-9]{12}`
 Required: No
 
- ** CreationTime **   <a name="sagemaker-Type-PartnerAppSummary-CreationTime"></a>
-The creation time of the SageMaker Partner AI App.
-Type: Timestamp
-Required: No
-
  ** Name **   <a name="sagemaker-Type-PartnerAppSummary-Name"></a>
 The name of the SageMaker Partner AI App.
 Type: String

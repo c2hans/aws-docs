@@ -10,6 +10,17 @@ Contains the S3 Object Lock retention mode to be applied to all objects in the S
 ## Contents
 <a name="API_control_S3Retention_Contents"></a>
 
+ ** EventHold **   <a name="AmazonS3-Type-control_S3Retention-EventHold"></a>
+The event hold status to be applied to all objects in the Batch Operations job. Set to `ON` to enable an event hold or `OFF` to disable it.
+Type: String
+Valid Values: `ON | OFF`
+Required: No
+
+ ** EventHoldDuration **   <a name="AmazonS3-Type-control_S3Retention-EventHoldDuration"></a>
+The event hold duration to be applied to all objects in the Batch Operations job. The duration specifies how long the object remains protected after the event hold is released.
+Type: [S3ObjectLockRetentionEventHoldDuration](API_control_S3ObjectLockRetentionEventHoldDuration.md) data type
+Required: No
+
  ** Mode **   <a name="AmazonS3-Type-control_S3Retention-Mode"></a>
 The Object Lock retention mode to be applied to all objects in the Batch Operations job.
 Type: String

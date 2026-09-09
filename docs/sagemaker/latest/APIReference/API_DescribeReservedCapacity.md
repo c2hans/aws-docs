@@ -39,12 +39,10 @@ Required: Yes
    "AvailableInstanceCount": number,
    "DurationHours": number,
    "DurationMinutes": number,
-   "EndTime": number,
    "InstanceType": "string",
    "InUseInstanceCount": number,
    "ReservedCapacityArn": "string",
    "ReservedCapacityType": "string",
-   "StartTime": number,
    "Status": "string",
    "TotalInstanceCount": number,
    "UltraServerSummary": {
@@ -85,10 +83,6 @@ The number of minutes for the duration of the reserved capacity. For example, if
 Type: Long
 Valid Range: Minimum value of 0. Maximum value of 59.
 
- ** [EndTime](#API_DescribeReservedCapacity_ResponseSyntax) **   <a name="sagemaker-DescribeReservedCapacity-response-EndTime"></a>
-The timestamp when the reserved capacity expires.
-Type: Timestamp
-
  ** [InstanceType](#API_DescribeReservedCapacity_ResponseSyntax) **   <a name="sagemaker-DescribeReservedCapacity-response-InstanceType"></a>
 The Amazon EC2 instance type used in the reserved capacity.
 Type: String
@@ -109,10 +103,6 @@ Pattern: `arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:reserved-capacity/.*`
 The type of reserved capacity.
 Type: String
 Valid Values: `UltraServer | Instance`
-
- ** [StartTime](#API_DescribeReservedCapacity_ResponseSyntax) **   <a name="sagemaker-DescribeReservedCapacity-response-StartTime"></a>
-The timestamp when the reserved capacity becomes active.
-Type: Timestamp
 
  ** [Status](#API_DescribeReservedCapacity_ResponseSyntax) **   <a name="sagemaker-DescribeReservedCapacity-response-Status"></a>
 The current status of the reserved capacity.

@@ -14,4 +14,4 @@ This is the AWS Elemental MediaPackage v2 Live REST API Reference. It describes 
 
 We assume that you have the IAM permissions that you need to use MediaPackage via the REST API. We also assume that you are familiar with the features and operations of MediaPackage, as described in the AWS Elemental MediaPackage User Guide.
 
-This document was last published on September 7, 2026.
+This document was last published on September 9, 2026.

@@ -19,7 +19,6 @@ You can add tags to a trial component and then use the [Search](https://docs.aws
 ```
 {
    "DisplayName": "{{string}}",
-   "EndTime": {{number}},
    "InputArtifacts": {
       "{{string}}" : {
          "MediaType": "{{string}}",
@@ -44,7 +43,6 @@ You can add tags to a trial component and then use the [Search](https://docs.aws
          "StringValue": "{{string}}"
       }
    },
-   "StartTime": {{number}},
    "Status": {
       "Message": "{{string}}",
       "PrimaryStatus": "{{string}}"
@@ -71,11 +69,6 @@ The name of the component as displayed. The name doesn't need to be unique. If `
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 120.
 Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,119}`
-Required: No
-
- ** [EndTime](#API_CreateTrialComponent_RequestSyntax) **   <a name="sagemaker-CreateTrialComponent-request-EndTime"></a>
-When the component ended.
-Type: Timestamp
 Required: No
 
  ** [InputArtifacts](#API_CreateTrialComponent_RequestSyntax) **   <a name="sagemaker-CreateTrialComponent-request-InputArtifacts"></a>
@@ -105,11 +98,6 @@ Type: String to [TrialComponentParameterValue](API_TrialComponentParameterValue.
 Map Entries: Minimum number of 0 items. Maximum number of 300 items.
 Key Length Constraints: Minimum length of 0. Maximum length of 320.
 Key Pattern: `.*`
-Required: No
-
- ** [StartTime](#API_CreateTrialComponent_RequestSyntax) **   <a name="sagemaker-CreateTrialComponent-request-StartTime"></a>
-When the component started.
-Type: Timestamp
 Required: No
 
  ** [Status](#API_CreateTrialComponent_RequestSyntax) **   <a name="sagemaker-CreateTrialComponent-request-Status"></a>

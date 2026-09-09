@@ -59,6 +59,11 @@ The event source to trigger the rule.
 Type: [RuleTriggerEventSource](API_RuleTriggerEventSource.md) object
 Required: Yes
 
+ ** PreEvaluationFilters **   <a name="connect-Type-RuleSearchSummary-PreEvaluationFilters"></a>
+The pre-evaluation filters for the rule, that restrict the rule to be applied to only certain resources based on the resource's attributes, such as tags assigned to a contact. The pre-evaluation filters are applied even before rule conditions are evaluated and are used to enforce tag-based-access-control while applying rules.
+Type: [PreEvaluationFilters](API_PreEvaluationFilters.md) object
+Required: No
+
  ** RuleCapabilityTiers **   <a name="connect-Type-RuleSearchSummary-RuleCapabilityTiers"></a>
 The list of capability tiers associated with the rule. Used for categorizing rules by capability (for example, `GenerativeAI`).
 Type: Array of strings

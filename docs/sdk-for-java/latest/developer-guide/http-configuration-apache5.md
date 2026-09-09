@@ -5,10 +5,21 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/http
 # Configure the Apache 5.x based HTTP client
 <a name="http-configuration-apache5"></a>
 
+The SDK's `Apache5HttpClient` is based on the Apache [HttpClient 5.x](https://hc.apache.org/httpcomponents-client-5.6.x/index.html).
+
 ## Access the Apache5HttpClient
 <a name="http-apache-5-dependency"></a>
 
-In order to use the `Apache5HttpClient` you must add a dependency on **apache5-client** and explicitly configure `Apache5HttpClient` on your service clients.
+In most situations, you use the `Apache5HttpClient` without any explicit configuration. You declare your service clients and the SDK will configure the `Apache5HttpClient` with standard values for you.
+
+If you want to explicitly configure the `Apache5HttpClient` or use it with multiple service clients, you need to make it available for configuration.
+
+### No configuration needed
+<a name="http-config-apache-5-no-config"></a>
+
+When you declare a dependency on a service client in Maven, the SDK adds a *runtime* dependency on the `apache5-client` artifact. This makes the `Apache5HttpClient` class available to your code at runtime, but not at compile time. If you are not configuring the Apache-based HTTP client, you do not need to specify a dependency for it.
+
+In the following XML snippet of a Maven `pom.xml` file, the dependency declared with `<artifactId>s3</artifactId>` automatically brings in the Apache-based HTTP client. You don't need to declare a dependency specifically for it.
 
 ```
 <dependencyManagement>
@@ -16,24 +27,56 @@ In order to use the `Apache5HttpClient` you must add a dependency on **apache5-c
         <dependency>
             <groupId>software.amazon.awssdk</groupId>
             <artifactId>bom</artifactId>
-            <version>{{2.41.0*}}</version>
+            <version>{{2.54.0*}}</version>
             <type>pom</type>
             <scope>import</scope>
         </dependency>
     </dependencies>
 </dependencyManagement>
-
 <dependencies>
+    <!-- The s3 dependency automatically adds a runtime dependency on the Apache5HttpClient-->
     <dependency>
         <groupId>software.amazon.awssdk</groupId>
         <artifactId>s3</artifactId>
     </dependency>
-
-    <dependency>
-        <groupId>software.amazon.awssdk</groupId>
-        <artifactId>apache5-client</artifactId>
-    </dependency>
 </dependencies>
+```
+
+\*Replace the version shown in red with the version of the Java SDK that you want to use. Find the latest on [Maven Central](https://central.sonatype.com/artifact/software.amazon.awssdk/bom).
+
+With these dependencies, you cannot make any explicit HTTP configuration changes, because the `Apache5HttpClient` library is only on the runtime classpath.
+
+### Configuration needed
+<a name="http-config-apache-5-yes-config"></a>
+
+To configure the `Apache5HttpClient`, you need to add a dependency on the `apache5-client` library at *compile* time.
+
+Refer to the following example of a Maven `pom.xml` file to configure the `Apache5HttpClient`.
+
+```
+    <dependencyManagement>
+	        <dependencies>
+	            <dependency>
+	                <groupId>software.amazon.awssdk</groupId>
+	                <artifactId>bom</artifactId>
+                    <version>{{2.54.0*}}</version>
+	                <type>pom</type>
+	                <scope>import</scope>
+	            </dependency>
+	        </dependencies>
+	    </dependencyManagement>
+	    <dependencies>
+	        <dependency>
+	            <groupId>software.amazon.awssdk</groupId>
+	            <artifactId>s3</artifactId>
+	        </dependency>
+	        <!-- By adding the apache5-client dependency, Apache5HttpClient will be added to
+	             the compile classpath so you can configure it. -->
+	        <dependency>
+	            <groupId>software.amazon.awssdk</groupId>
+	            <artifactId>apache5-client</artifactId>
+	        </dependency>
+	    </dependencies>
 ```
 
 \*Replace the version shown in red with the version of the Java SDK that you want to use. Find the latest on [Maven Central](https://central.sonatype.com/artifact/software.amazon.awssdk/bom).
@@ -84,7 +127,7 @@ To help keep resource and memory usage lower for your application, you can confi
 **Note**
 When an `Apache5HttpClient` instance is shared, you must close it when it is ready to be disposed. The SDK will not close the instance when the service client is closed.
 
-The following example configures an Apache-based HTTP client that is used by two service clients. The configured `ApacheHttpClient` instance is passed to the httpClient method of each builder. When the service clients and the HTTP client are no longer needed, the code explicitly closes them. The code closes the HTTP client last.
+The following example configures an Apache-based HTTP client that is used by two service clients. The configured `Apache5HttpClient` instance is passed to the httpClient method of each builder. When the service clients and the HTTP client are no longer needed, the code explicitly closes them. The code closes the HTTP client last.
 
 **Imports**
 

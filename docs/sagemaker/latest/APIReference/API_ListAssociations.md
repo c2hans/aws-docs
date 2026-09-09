@@ -13,8 +13,6 @@ Lists the associations in your account and their properties.
 ```
 {
    "AssociationType": "{{string}}",
-   "CreatedAfter": {{number}},
-   "CreatedBefore": {{number}},
    "DestinationArn": "{{string}}",
    "DestinationType": "{{string}}",
    "MaxResults": {{number}},
@@ -37,16 +35,6 @@ The request accepts the following data in JSON format.
 A filter that returns only associations of the specified type.
 Type: String
 Valid Values: `ContributedTo | AssociatedWith | DerivedFrom | Produced | SameAs`
-Required: No
-
- ** [CreatedAfter](#API_ListAssociations_RequestSyntax) **   <a name="sagemaker-ListAssociations-request-CreatedAfter"></a>
-A filter that returns only associations created on or after the specified time.
-Type: Timestamp
-Required: No
-
- ** [CreatedBefore](#API_ListAssociations_RequestSyntax) **   <a name="sagemaker-ListAssociations-request-CreatedBefore"></a>
-A filter that returns only associations created on or before the specified time.
-Type: Timestamp
 Required: No
 
  ** [DestinationArn](#API_ListAssociations_RequestSyntax) **   <a name="sagemaker-ListAssociations-request-DestinationArn"></a>
@@ -118,7 +106,6 @@ Required: No
             "UserProfileArn": "string",
             "UserProfileName": "string"
          },
-         "CreationTime": number,
          "DestinationArn": "string",
          "DestinationName": "string",
          "DestinationType": "string",

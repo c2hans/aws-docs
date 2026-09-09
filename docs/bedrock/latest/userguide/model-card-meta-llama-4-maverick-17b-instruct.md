@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta
 
 Llama 4 Maverick is Meta's 17-billion active parameter mixture-of-experts model with 128 experts, optimized for multimodal chat and instruction following. For more information about model development and performance, see the [model/service card](https://www.llama.com/docs/model-cards-and-prompt-formats/llama4/).
 + **Model launch date:** Apr 05, 2025
++ **EOL no sooner than:** Apr 05, 2026
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** No sooner than 4/28/2026
 + **End User License Agreements and Terms of Use:** [View](https://www.llama.com/llama4/license/)
 + **Model lifecycle:** Active

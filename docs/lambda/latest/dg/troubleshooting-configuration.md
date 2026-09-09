@@ -33,7 +33,7 @@ While Lambda doesn't allow you to modify CPU configuration directly, CPU is indi
 ## Timeouts
 <a name="timeouts"></a>
 
- [Timeouts](https://docs.aws.amazon.com/lambda/latest/dg/configuration-console.html) for Lambda functions can be set between 1 and 900 seconds (15 minutes). By default, the Lambda console sets this to 3 seconds. The timeout value is a safety valve that ensures functions do not run indefinitely. After the timeout value is reached, Lambda stops the function invocation.
+ [Timeouts](https://docs.aws.amazon.com/lambda/latest/dg/configuration-console.html) for Lambda functions can be set between 1 and 900 seconds (15 minutes). For functions using AWS Lambda Managed Instances, asynchronous invocations and event source mapping invocations (except Amazon MQ and Amazon DocumentDB) support a maximum allowed value of 5,400 seconds (90 minutes). By default, the Lambda console sets this to 3 seconds. The timeout value is a safety valve that ensures functions do not run indefinitely. After the timeout value is reached, Lambda stops the function invocation.
 
 If a timeout value is set close to the average duration of a function, this increases the risk that the function times out unexpectedly. The duration of a function can vary based on the amount of data transfer and processing, and the latency of any services the function interacts with. Common causes of timeout include:
 + When downloading data from S3 buckets or other data stores, the download is larger or takes longer than average.

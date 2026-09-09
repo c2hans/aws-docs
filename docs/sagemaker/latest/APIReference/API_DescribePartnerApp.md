@@ -61,8 +61,6 @@ Required: No
       "Version": "string"
    },
    "BaseUrl": "string",
-   "CreationTime": number,
-   "CurrentVersionEolDate": number,
    "EnableAutoMinorVersionUpgrade": boolean,
    "EnableIamSessionBasedIdentity": boolean,
    "Error": {
@@ -75,7 +73,6 @@ Required: No
       "InstanceArn": "string"
    },
    "KmsKeyId": "string",
-   "LastModifiedTime": number,
    "MaintenanceConfig": {
       "MaintenanceWindowStart": "string"
    },
@@ -120,14 +117,6 @@ The URL of the SageMaker Partner AI App that the Application SDK uses to support
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 2048.
 
- ** [CreationTime](#API_DescribePartnerApp_ResponseSyntax) **   <a name="sagemaker-DescribePartnerApp-response-CreationTime"></a>
-The time that the SageMaker Partner AI App was created.
-Type: Timestamp
-
- ** [CurrentVersionEolDate](#API_DescribePartnerApp_ResponseSyntax) **   <a name="sagemaker-DescribePartnerApp-response-CurrentVersionEolDate"></a>
-The end-of-life date for the current version of the SageMaker Partner AI App.
-Type: Timestamp
-
  ** [EnableAutoMinorVersionUpgrade](#API_DescribePartnerApp_ResponseSyntax) **   <a name="sagemaker-DescribePartnerApp-response-EnableAutoMinorVersionUpgrade"></a>
 Indicates whether the SageMaker Partner AI App is configured for automatic minor version upgrades during scheduled maintenance windows.
 Type: Boolean
@@ -155,10 +144,6 @@ The AWS KMS customer managed key used to encrypt the data at rest associated wit
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 2048.
 Pattern: `[a-zA-Z0-9:/_-]*`
-
- ** [LastModifiedTime](#API_DescribePartnerApp_ResponseSyntax) **   <a name="sagemaker-DescribePartnerApp-response-LastModifiedTime"></a>
-The time that the SageMaker Partner AI App was last modified.
-Type: Timestamp
 
  ** [MaintenanceConfig](#API_DescribePartnerApp_ResponseSyntax) **   <a name="sagemaker-DescribePartnerApp-response-MaintenanceConfig"></a>
 Maintenance configuration settings for the SageMaker Partner AI App.

@@ -48,7 +48,6 @@ Required: Yes
       "UserProfileArn": "string",
       "UserProfileName": "string"
    },
-   "CreationTime": number,
    "DefaultDomainIdList": [ "string" ],
    "KmsKeyId": "string",
    "LastModifiedBy": {
@@ -61,7 +60,6 @@ Required: Yes
       "UserProfileArn": "string",
       "UserProfileName": "string"
    },
-   "LastModifiedTime": number,
    "MaintenanceStatus": "string",
    "MlflowVersion": "string",
    "ModelRegistrationMode": "string",
@@ -100,10 +98,6 @@ Pattern: `(https|s3)://([^/]+)/?(.*)`
 Information about the user who created or modified a SageMaker resource.
 Type: [UserContext](API_UserContext.md) object
 
- ** [CreationTime](#API_DescribeMlflowApp_ResponseSyntax) **   <a name="sagemaker-DescribeMlflowApp-response-CreationTime"></a>
-The timestamp when the MLflow App was created.
-Type: Timestamp
-
  ** [DefaultDomainIdList](#API_DescribeMlflowApp_ResponseSyntax) **   <a name="sagemaker-DescribeMlflowApp-response-DefaultDomainIdList"></a>
 List of SageMaker Domain IDs for which this MLflow App is the default.
 Type: Array of strings
@@ -119,10 +113,6 @@ Pattern: `[a-zA-Z0-9:/_-]*`
  ** [LastModifiedBy](#API_DescribeMlflowApp_ResponseSyntax) **   <a name="sagemaker-DescribeMlflowApp-response-LastModifiedBy"></a>
 Information about the user who created or modified a SageMaker resource.
 Type: [UserContext](API_UserContext.md) object
-
- ** [LastModifiedTime](#API_DescribeMlflowApp_ResponseSyntax) **   <a name="sagemaker-DescribeMlflowApp-response-LastModifiedTime"></a>
-The timestamp when the MLflow App was last modified.
-Type: Timestamp
 
  ** [MaintenanceStatus](#API_DescribeMlflowApp_ResponseSyntax) **   <a name="sagemaker-DescribeMlflowApp-response-MaintenanceStatus"></a>
 Current maintenance status of the MLflow App.

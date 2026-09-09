@@ -12,10 +12,6 @@ Lists transform jobs.
 
 ```
 {
-   "CreationTimeAfter": {{number}},
-   "CreationTimeBefore": {{number}},
-   "LastModifiedTimeAfter": {{number}},
-   "LastModifiedTimeBefore": {{number}},
    "MaxResults": {{number}},
    "NameContains": "{{string}}",
    "NextToken": "{{string}}",
@@ -31,26 +27,6 @@ Lists transform jobs.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
-
- ** [CreationTimeAfter](#API_ListTransformJobs_RequestSyntax) **   <a name="sagemaker-ListTransformJobs-request-CreationTimeAfter"></a>
-A filter that returns only transform jobs created after the specified time.
-Type: Timestamp
-Required: No
-
- ** [CreationTimeBefore](#API_ListTransformJobs_RequestSyntax) **   <a name="sagemaker-ListTransformJobs-request-CreationTimeBefore"></a>
-A filter that returns only transform jobs created before the specified time.
-Type: Timestamp
-Required: No
-
- ** [LastModifiedTimeAfter](#API_ListTransformJobs_RequestSyntax) **   <a name="sagemaker-ListTransformJobs-request-LastModifiedTimeAfter"></a>
-A filter that returns only transform jobs modified after the specified time.
-Type: Timestamp
-Required: No
-
- ** [LastModifiedTimeBefore](#API_ListTransformJobs_RequestSyntax) **   <a name="sagemaker-ListTransformJobs-request-LastModifiedTimeBefore"></a>
-A filter that returns only transform jobs modified before the specified time.
-Type: Timestamp
-Required: No
 
  ** [MaxResults](#API_ListTransformJobs_RequestSyntax) **   <a name="sagemaker-ListTransformJobs-request-MaxResults"></a>
 The maximum number of transform jobs to return in the response. The default value is `10`.
@@ -98,10 +74,7 @@ Required: No
    "NextToken": "string",
    "TransformJobSummaries": [
       {
-         "CreationTime": number,
          "FailureReason": "string",
-         "LastModifiedTime": number,
-         "TransformEndTime": number,
          "TransformJobArn": "string",
          "TransformJobName": "string",
          "TransformJobStatus": "string"

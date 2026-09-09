@@ -10,11 +10,6 @@ Information about a project.
 ## Contents
 <a name="API_ProjectSummary_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-ProjectSummary-CreationTime"></a>
-The time that the project was created.
-Type: Timestamp
-Required: Yes
-
  ** ProjectArn **   <a name="sagemaker-Type-ProjectSummary-ProjectArn"></a>
 The Amazon Resource Name (ARN) of the project.
 Type: String

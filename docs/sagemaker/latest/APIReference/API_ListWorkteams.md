@@ -67,9 +67,7 @@ Required: No
    "NextToken": "string",
    "Workteams": [
       {
-         "CreateDate": number,
          "Description": "string",
-         "LastUpdatedDate": number,
          "MemberDefinitions": [
             {
                "CognitoMemberDefinition": {

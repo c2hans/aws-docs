@@ -65,7 +65,6 @@ Required: No
       "UserProfileArn": "string",
       "UserProfileName": "string"
    },
-   "CreationTime": number,
    "LastModifiedBy": {
       "DomainId": "string",
       "IamIdentity": {
@@ -76,7 +75,6 @@ Required: No
       "UserProfileArn": "string",
       "UserProfileName": "string"
    },
-   "LastModifiedTime": number,
    "ModelCardArn": "string",
    "ModelCardName": "string",
    "ModelCardProcessingStatus": "string",
@@ -112,17 +110,9 @@ Pattern: `.*`
 Information about the user who created or modified a SageMaker resource.
 Type: [UserContext](API_UserContext.md) object
 
- ** [CreationTime](#API_DescribeModelCard_ResponseSyntax) **   <a name="sagemaker-DescribeModelCard-response-CreationTime"></a>
-The date and time the model card was created.
-Type: Timestamp
-
  ** [LastModifiedBy](#API_DescribeModelCard_ResponseSyntax) **   <a name="sagemaker-DescribeModelCard-response-LastModifiedBy"></a>
 Information about the user who created or modified a SageMaker resource.
 Type: [UserContext](API_UserContext.md) object
-
- ** [LastModifiedTime](#API_DescribeModelCard_ResponseSyntax) **   <a name="sagemaker-DescribeModelCard-response-LastModifiedTime"></a>
-The date and time the model card was last modified.
-Type: Timestamp
 
  ** [ModelCardArn](#API_DescribeModelCard_ResponseSyntax) **   <a name="sagemaker-DescribeModelCard-response-ModelCardArn"></a>
 The Amazon Resource Name (ARN) of the model card.

@@ -29,11 +29,6 @@ The configuration of an Amazon Cognito workforce. A single Cognito workforce is 
 Type: [CognitoConfig](API_CognitoConfig.md) object
 Required: No
 
- ** CreateDate **   <a name="sagemaker-Type-Workforce-CreateDate"></a>
-The date that the workforce is created.
-Type: Timestamp
-Required: No
-
  ** FailureReason **   <a name="sagemaker-Type-Workforce-FailureReason"></a>
 The reason your workforce failed.
 Type: String
@@ -45,11 +40,6 @@ Required: No
 The IP address type you specify - either `IPv4` only or `dualstack` (`IPv4` and `IPv6`) - to support your labeling workforce.
 Type: String
 Valid Values: `ipv4 | dualstack`
-Required: No
-
- ** LastUpdatedDate **   <a name="sagemaker-Type-Workforce-LastUpdatedDate"></a>
-The most recent date that [UpdateWorkforce](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateWorkforce.html) was used to successfully add one or more IP address ranges ([CIDRs](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html)) to a private workforce's allow list.
-Type: Timestamp
 Required: No
 
  ** OidcConfig **   <a name="sagemaker-Type-Workforce-OidcConfig"></a>

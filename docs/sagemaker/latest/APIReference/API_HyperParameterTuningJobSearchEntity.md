@@ -20,20 +20,10 @@ The total amount of resources consumed by a hyperparameter tuning job.
 Type: [HyperParameterTuningJobConsumedResources](API_HyperParameterTuningJobConsumedResources.md) object
 Required: No
 
- ** CreationTime **   <a name="sagemaker-Type-HyperParameterTuningJobSearchEntity-CreationTime"></a>
-The time that a hyperparameter tuning job was created.
-Type: Timestamp
-Required: No
-
  ** FailureReason **   <a name="sagemaker-Type-HyperParameterTuningJobSearchEntity-FailureReason"></a>
 The error that was created when a hyperparameter tuning job failed.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1024.
-Required: No
-
- ** HyperParameterTuningEndTime **   <a name="sagemaker-Type-HyperParameterTuningJobSearchEntity-HyperParameterTuningEndTime"></a>
-The time that a hyperparameter tuning job ended.
-Type: Timestamp
 Required: No
 
  ** HyperParameterTuningJobArn **   <a name="sagemaker-Type-HyperParameterTuningJobSearchEntity-HyperParameterTuningJobArn"></a>
@@ -59,11 +49,6 @@ Required: No
 The status of a hyperparameter tuning job.
 Type: String
 Valid Values: `Completed | InProgress | Failed | Stopped | Stopping | Deleting | DeleteFailed`
-Required: No
-
- ** LastModifiedTime **   <a name="sagemaker-Type-HyperParameterTuningJobSearchEntity-LastModifiedTime"></a>
-The time that a hyperparameter tuning job was last modified.
-Type: Timestamp
 Required: No
 
  ** ObjectiveStatusCounters **   <a name="sagemaker-Type-HyperParameterTuningJobSearchEntity-ObjectiveStatusCounters"></a>

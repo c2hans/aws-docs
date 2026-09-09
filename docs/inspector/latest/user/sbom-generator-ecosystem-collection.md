@@ -37,9 +37,11 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/sbom-generator-eco
 | Kiro | Kiro CLI |
 | LM Studio | LM Studio |
 | MariaDB and MySQL | MariaDB Server (10.6\+, 11.x, 12.x)<br />Oracle MySQL Server Server (8.0, 8.4, 9.4\+) |
+| Metabase | Metabase |
 | Microsoft applications | PowerShell<br />NuGet CLI<br />Visual Studio Code<br />Microsoft Edge<br />SharePoint Server<br />Microsoft Defender<br />Exchange Server<br />Visual Studio<br />.NET Core Runtime<br />.NET Framework<br />ASP.NET Core Runtime<br />Microsoft Teams<br />Outlook for Windows<br />Microsoft Office<br />Microsoft 365 |
 | Microsoft SQL Server | Microsoft SQL Server |
 | MongoDB | MongoDB Server (7.0\+, 8.0\+) |
+| Mozilla | Firefox<br />Firefox ESR<br />Thunderbird |
 | Nginx | Nginx |
 | Node | Node |
 | Node.JS | node |

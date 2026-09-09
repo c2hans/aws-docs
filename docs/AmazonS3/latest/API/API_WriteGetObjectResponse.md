@@ -197,7 +197,7 @@ Provides information about object restoration operation and expiration time of t
  ** [x-amz-fwd-header-x-amz-server-side-encryption](#API_WriteGetObjectResponse_RequestSyntax) **   <a name="AmazonS3-WriteGetObjectResponse-request-header-ServerSideEncryption"></a>
  The server-side encryption algorithm used when storing requested object in Amazon S3 or Amazon FSx.
 When accessing data stored in Amazon FSx file systems using S3 access points, the only valid server side encryption option is `aws:fsx`.
-Valid Values: `AES256 | aws:fsx | aws:kms | aws:kms:dsse`
+Valid Values: `AES256 | aws:fsx | aws:backup | aws:kms | aws:kms:dsse`
 
  ** [x-amz-fwd-header-x-amz-server-side-encryption-aws-kms-key-id](#API_WriteGetObjectResponse_RequestSyntax) **   <a name="AmazonS3-WriteGetObjectResponse-request-header-SSEKMSKeyId"></a>
  If present, specifies the ID (Key ID, Key ARN, or Key Alias) of the AWS Key Management Service (AWS KMS) symmetric encryption customer managed key that was used for stored in Amazon S3 object.
@@ -214,7 +214,7 @@ Encryption algorithm used if server-side encryption with a customer-provided enc
  ** [x-amz-fwd-header-x-amz-storage-class](#API_WriteGetObjectResponse_RequestSyntax) **   <a name="AmazonS3-WriteGetObjectResponse-request-header-StorageClass"></a>
 Provides storage class information of the object. Amazon S3 returns this header for all objects except for S3 Standard storage class objects.
 For more information, see [Storage Classes](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-class-intro.html).
-Valid Values: `STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | ONEZONE_IA | INTELLIGENT_TIERING | GLACIER | DEEP_ARCHIVE | OUTPOSTS | GLACIER_IR | SNOW | EXPRESS_ONEZONE | FSX_OPENZFS | FSX_ONTAP`
+Valid Values: `STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | ONEZONE_IA | INTELLIGENT_TIERING | GLACIER | DEEP_ARCHIVE | OUTPOSTS | GLACIER_IR | SNOW | EXPRESS_ONEZONE | FSX_OPENZFS | FSX_ONTAP | AWS_BACKUP_WARM | AWS_BACKUP_LOW_COST_WARM`
 
  ** [x-amz-fwd-header-x-amz-tagging-count](#API_WriteGetObjectResponse_RequestSyntax) **   <a name="AmazonS3-WriteGetObjectResponse-request-header-TagCount"></a>
 The number of tags, if any, on the object.

@@ -10,21 +10,11 @@ A summary of the properties of a trial. To get the complete set of properties, c
 ## Contents
 <a name="API_TrialSummary_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-TrialSummary-CreationTime"></a>
-When the trial was created.
-Type: Timestamp
-Required: No
-
  ** DisplayName **   <a name="sagemaker-Type-TrialSummary-DisplayName"></a>
 The name of the trial as displayed. If `DisplayName` isn't specified, `TrialName` is displayed.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 120.
 Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,119}`
-Required: No
-
- ** LastModifiedTime **   <a name="sagemaker-Type-TrialSummary-LastModifiedTime"></a>
-When the trial was last modified.
-Type: Timestamp
 Required: No
 
  ** TrialArn **   <a name="sagemaker-Type-TrialSummary-TrialArn"></a>

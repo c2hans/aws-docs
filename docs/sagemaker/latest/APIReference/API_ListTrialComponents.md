@@ -15,8 +15,6 @@ Lists the trial components in your account. You can sort the list by trial compo
 
 ```
 {
-   "CreatedAfter": {{number}},
-   "CreatedBefore": {{number}},
    "ExperimentName": "{{string}}",
    "MaxResults": {{number}},
    "NextToken": "{{string}}",
@@ -33,16 +31,6 @@ Lists the trial components in your account. You can sort the list by trial compo
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
-
- ** [CreatedAfter](#API_ListTrialComponents_RequestSyntax) **   <a name="sagemaker-ListTrialComponents-request-CreatedAfter"></a>
-A filter that returns only components created after the specified time.
-Type: Timestamp
-Required: No
-
- ** [CreatedBefore](#API_ListTrialComponents_RequestSyntax) **   <a name="sagemaker-ListTrialComponents-request-CreatedBefore"></a>
-A filter that returns only components created before the specified time.
-Type: Timestamp
-Required: No
 
  ** [ExperimentName](#API_ListTrialComponents_RequestSyntax) **   <a name="sagemaker-ListTrialComponents-request-ExperimentName"></a>
 A filter that returns only components that are part of the specified experiment. If you specify `ExperimentName`, you can't filter by `SourceArn` or `TrialName`.
@@ -107,9 +95,7 @@ Required: No
             "UserProfileArn": "string",
             "UserProfileName": "string"
          },
-         "CreationTime": number,
          "DisplayName": "string",
-         "EndTime": number,
          "LastModifiedBy": {
             "DomainId": "string",
             "IamIdentity": {
@@ -120,8 +106,6 @@ Required: No
             "UserProfileArn": "string",
             "UserProfileName": "string"
          },
-         "LastModifiedTime": number,
-         "StartTime": number,
          "Status": {
             "Message": "string",
             "PrimaryStatus": "string"

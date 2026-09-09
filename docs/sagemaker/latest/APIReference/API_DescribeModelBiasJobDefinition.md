@@ -35,7 +35,6 @@ Required: Yes
 
 ```
 {
-   "CreationTime": number,
    "JobDefinitionArn": "string",
    "JobDefinitionName": "string",
    "JobResources": {
@@ -133,10 +132,6 @@ Required: Yes
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
-
- ** [CreationTime](#API_DescribeModelBiasJobDefinition_ResponseSyntax) **   <a name="sagemaker-DescribeModelBiasJobDefinition-response-CreationTime"></a>
-The time at which the model bias job was created.
-Type: Timestamp
 
  ** [JobDefinitionArn](#API_DescribeModelBiasJobDefinition_ResponseSyntax) **   <a name="sagemaker-DescribeModelBiasJobDefinition-response-JobDefinitionArn"></a>
 The Amazon Resource Name (ARN) of the model bias job.

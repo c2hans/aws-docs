@@ -10,21 +10,11 @@ Represents a secondary status transition for a job. Jobs progress through multip
 ## Contents
 <a name="API_JobSecondaryStatusTransition_Contents"></a>
 
- ** StartTime **   <a name="sagemaker-Type-JobSecondaryStatusTransition-StartTime"></a>
-The date and time that the status transition started.
-Type: Timestamp
-Required: Yes
-
  ** Status **   <a name="sagemaker-Type-JobSecondaryStatusTransition-Status"></a>
 The secondary status of the job at this transition point.
 Type: String
 Valid Values: `Starting | Downloading | Training | Uploading | Stopping | Stopped | MaxRuntimeExceeded | Interrupted | Failed | Completed | Restarting | Pending | Evaluating | Deleting | DeleteFailed`
 Required: Yes
-
- ** EndTime **   <a name="sagemaker-Type-JobSecondaryStatusTransition-EndTime"></a>
-The date and time that the status transition ended.
-Type: Timestamp
-Required: No
 
  ** StatusMessage **   <a name="sagemaker-Type-JobSecondaryStatusTransition-StatusMessage"></a>
 A detailed message about the status transition.

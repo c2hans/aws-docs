@@ -48,8 +48,6 @@ Required: Yes
 
 ```
 {
-   "CreationTime": number,
-   "EndTime": number,
    "FailureReason": "string",
    "JobArn": "string",
    "JobCategory": "string",
@@ -57,13 +55,10 @@ Required: Yes
    "JobConfigSchemaVersion": "string",
    "JobName": "string",
    "JobStatus": "string",
-   "LastModifiedTime": number,
    "RoleArn": "string",
    "SecondaryStatus": "string",
    "SecondaryStatusTransitions": [
       {
-         "EndTime": number,
-         "StartTime": number,
          "Status": "string",
          "StatusMessage": "string"
       }
@@ -83,14 +78,6 @@ Required: Yes
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
-
- ** [CreationTime](#API_DescribeJob_ResponseSyntax) **   <a name="sagemaker-DescribeJob-response-CreationTime"></a>
-The date and time that the job was created.
-Type: Timestamp
-
- ** [EndTime](#API_DescribeJob_ResponseSyntax) **   <a name="sagemaker-DescribeJob-response-EndTime"></a>
-The date and time that the job ended.
-Type: Timestamp
 
  ** [FailureReason](#API_DescribeJob_ResponseSyntax) **   <a name="sagemaker-DescribeJob-response-FailureReason"></a>
 If the job failed, the reason it failed.
@@ -129,10 +116,6 @@ Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
 The current status of the job.
 Type: String
 Valid Values: `InProgress | Completed | Failed | Stopping | Stopped | Deleting | DeleteFailed`
-
- ** [LastModifiedTime](#API_DescribeJob_ResponseSyntax) **   <a name="sagemaker-DescribeJob-response-LastModifiedTime"></a>
-The date and time that the job was last modified.
-Type: Timestamp
 
  ** [RoleArn](#API_DescribeJob_ResponseSyntax) **   <a name="sagemaker-DescribeJob-response-RoleArn"></a>
 The ARN of the IAM role associated with the job.

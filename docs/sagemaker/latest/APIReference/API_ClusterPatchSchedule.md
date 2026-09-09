@@ -10,10 +10,7 @@ The schedule configuration for automatic patching.
 ## Contents
 <a name="API_ClusterPatchSchedule_Contents"></a>
 
- ** NextPatchDate **   <a name="sagemaker-Type-ClusterPatchSchedule-NextPatchDate"></a>
-The date and time of the next scheduled automatic patch. The system sets this automatically when a patch is detected. Use this field to reschedule the patch to a different date.
-Type: Timestamp
-Required: No
+The members of this exception structure are context-dependent.
 
 ## See Also
 <a name="API_ClusterPatchSchedule_SeeAlso"></a>

@@ -57,16 +57,6 @@ Type: Integer
 Valid Range: Minimum value of 1.
 Required: No
 
- ** OptimizationEndTime **   <a name="sagemaker-Type-OptimizationJobSummary-OptimizationEndTime"></a>
-The time when the optimization job finished processing.
-Type: Timestamp
-Required: No
-
- ** OptimizationStartTime **   <a name="sagemaker-Type-OptimizationJobSummary-OptimizationStartTime"></a>
-The time when the optimization job started.
-Type: Timestamp
-Required: No
-
 ## See Also
 <a name="API_OptimizationJobSummary_SeeAlso"></a>
 

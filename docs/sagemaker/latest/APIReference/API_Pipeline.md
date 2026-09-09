@@ -15,24 +15,9 @@ Information about the user who created or modified a SageMaker resource.
 Type: [UserContext](API_UserContext.md) object
 Required: No
 
- ** CreationTime **   <a name="sagemaker-Type-Pipeline-CreationTime"></a>
-The creation time of the pipeline.
-Type: Timestamp
-Required: No
-
  ** LastModifiedBy **   <a name="sagemaker-Type-Pipeline-LastModifiedBy"></a>
 Information about the user who created or modified a SageMaker resource.
 Type: [UserContext](API_UserContext.md) object
-Required: No
-
- ** LastModifiedTime **   <a name="sagemaker-Type-Pipeline-LastModifiedTime"></a>
-The time that the pipeline was last modified.
-Type: Timestamp
-Required: No
-
- ** LastRunTime **   <a name="sagemaker-Type-Pipeline-LastRunTime"></a>
-The time when the pipeline was last run.
-Type: Timestamp
 Required: No
 
  ** ParallelismConfiguration **   <a name="sagemaker-Type-Pipeline-ParallelismConfiguration"></a>

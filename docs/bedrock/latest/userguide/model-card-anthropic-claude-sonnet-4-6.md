@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anth
 
 Claude Sonnet 4.6 is a full upgrade of Anthropic's mid-tier model with improved coding, computer use, long-context reasoning, and agent planning with a 1M token context window. For more information about model development and performance, see the [model/service card](https://www-cdn.anthropic.com/bbd8ef16d70b7a1665f14f306ee88b53f686aa75.pdf).
 + **Model launch date:** Feb 17, 2026
++ **EOL no sooner than:** Feb 17, 2027
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
 + **Model lifecycle:** Active

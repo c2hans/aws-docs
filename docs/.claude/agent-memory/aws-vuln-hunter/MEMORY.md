@@ -5,3 +5,5 @@
 - [Route53 / Media SSRF egress guards](project_route53-media-ssrf-egress-guards.md) — Route53 health-checker + MediaTailor/MediaLive fetcher egress-guard behavior (bundle C4/C5)
 - [Kendra/QuickSight SSRF env facts](project_kendra-quicksight-ssrf.md) — Kendra closed to new customers; QuickSight JDBC blind-SSRF fleet + subscription teardown recipe (bundle A3/A4)
 - [AWS IdP-metadata / OIDC fetchers](reference_aws-idp-metadata-fetchers.md) — Cognito/WorkSpaces Web server-side metadata fetcher egress IPs, UAs, guard characterization
+- [Bedrock KB SSRF testing](reference_bedrock-kb-ssrf-testing.md) — how to build a KB for fetcher SSRF (OSS required, aoss SigV4 sha256, log oracle) + which containments held (finding 16)
+- [infra.json race + buffering traps](feedback_infra-json-race-and-buffering.md) — don't let background jobs share a state file; flush background python stdout

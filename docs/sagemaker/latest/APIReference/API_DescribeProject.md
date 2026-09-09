@@ -45,7 +45,6 @@ Required: Yes
       "UserProfileArn": "string",
       "UserProfileName": "string"
    },
-   "CreationTime": number,
    "LastModifiedBy": {
       "DomainId": "string",
       "IamIdentity": {
@@ -56,7 +55,6 @@ Required: Yes
       "UserProfileArn": "string",
       "UserProfileName": "string"
    },
-   "LastModifiedTime": number,
    "ProjectArn": "string",
    "ProjectDescription": "string",
    "ProjectId": "string",
@@ -111,17 +109,9 @@ The following data is returned in JSON format by the service.
 Information about the user who created or modified a SageMaker resource.
 Type: [UserContext](API_UserContext.md) object
 
- ** [CreationTime](#API_DescribeProject_ResponseSyntax) **   <a name="sagemaker-DescribeProject-response-CreationTime"></a>
-The time when the project was created.
-Type: Timestamp
-
  ** [LastModifiedBy](#API_DescribeProject_ResponseSyntax) **   <a name="sagemaker-DescribeProject-response-LastModifiedBy"></a>
 Information about the user who created or modified a SageMaker resource.
 Type: [UserContext](API_UserContext.md) object
-
- ** [LastModifiedTime](#API_DescribeProject_ResponseSyntax) **   <a name="sagemaker-DescribeProject-response-LastModifiedTime"></a>
-The timestamp when project was last modified.
-Type: Timestamp
 
  ** [ProjectArn](#API_DescribeProject_ResponseSyntax) **   <a name="sagemaker-DescribeProject-response-ProjectArn"></a>
 The Amazon Resource Name (ARN) of the project.

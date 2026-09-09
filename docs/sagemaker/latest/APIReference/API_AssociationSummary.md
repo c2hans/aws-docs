@@ -21,11 +21,6 @@ Information about the user who created or modified a SageMaker resource.
 Type: [UserContext](API_UserContext.md) object
 Required: No
 
- ** CreationTime **   <a name="sagemaker-Type-AssociationSummary-CreationTime"></a>
-When the association was created.
-Type: Timestamp
-Required: No
-
  ** DestinationArn **   <a name="sagemaker-Type-AssociationSummary-DestinationArn"></a>
 The Amazon Resource Name (ARN) of the destination.
 Type: String

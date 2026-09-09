@@ -70,12 +70,9 @@ Required: No
    "AppName": "string",
    "AppType": "string",
    "BuiltInLifecycleConfigArn": "string",
-   "CreationTime": number,
    "DomainId": "string",
    "EffectiveTrustedIdentityPropagationStatus": "string",
    "FailureReason": "string",
-   "LastHealthCheckTimestamp": number,
-   "LastUserActivityTimestamp": number,
    "RecoveryMode": boolean,
    "ResourceSpec": {
       "InstanceType": "string",
@@ -121,11 +118,6 @@ Type: String
 Length Constraints: Minimum length of 0. Maximum length of 256.
 Pattern: `(arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:studio-lifecycle-config/.*|None)`
 
- ** [CreationTime](#API_DescribeApp_ResponseSyntax) **   <a name="sagemaker-DescribeApp-response-CreationTime"></a>
-The creation time of the application.
-After an application has been shut down for 24 hours, SageMaker AI deletes all metadata for the application. To be considered an update and retain application metadata, applications must be restarted within 24 hours after the previous application has been shut down. After this time window, creation of an application is considered a new application rather than an update of the previous application.
-Type: Timestamp
-
  ** [DomainId](#API_DescribeApp_ResponseSyntax) **   <a name="sagemaker-DescribeApp-response-DomainId"></a>
 The domain ID.
 Type: String
@@ -141,14 +133,6 @@ Valid Values: `ENABLED | DISABLED`
 The failure reason.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1024.
-
- ** [LastHealthCheckTimestamp](#API_DescribeApp_ResponseSyntax) **   <a name="sagemaker-DescribeApp-response-LastHealthCheckTimestamp"></a>
-The timestamp of the last health check.
-Type: Timestamp
-
- ** [LastUserActivityTimestamp](#API_DescribeApp_ResponseSyntax) **   <a name="sagemaker-DescribeApp-response-LastUserActivityTimestamp"></a>
-The timestamp of the last user's activity. `LastUserActivityTimestamp` is also updated when SageMaker AI performs health checks without user activity. As a result, this value is set to the same value as `LastHealthCheckTimestamp`.
-Type: Timestamp
 
  ** [RecoveryMode](#API_DescribeApp_ResponseSyntax) **   <a name="sagemaker-DescribeApp-response-RecoveryMode"></a>
  Indicates whether the application is launched in recovery mode.

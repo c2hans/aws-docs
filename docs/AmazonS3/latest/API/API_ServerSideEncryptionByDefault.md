@@ -19,7 +19,7 @@ Describes the default server-side encryption to apply to new objects in the buck
 Server-side encryption algorithm to use for the default encryption.
 For directory buckets, there are only two supported values for server-side encryption: `AES256` and `aws:kms`.
 Type: String
-Valid Values: `AES256 | aws:fsx | aws:kms | aws:kms:dsse`
+Valid Values: `AES256 | aws:fsx | aws:backup | aws:kms | aws:kms:dsse`
 Required: Yes
 
  ** KMSMasterKeyID **   <a name="AmazonS3-Type-ServerSideEncryptionByDefault-KMSMasterKeyID"></a>

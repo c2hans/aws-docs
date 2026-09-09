@@ -23,11 +23,6 @@ Type: String
 Valid Values: `MultiRecord | SingleRecord`
 Required: No
 
- ** CreationTime **   <a name="sagemaker-Type-TransformJob-CreationTime"></a>
-A timestamp that shows when the transform Job was created.
-Type: Timestamp
-Required: No
-
  ** DataCaptureConfig **   <a name="sagemaker-Type-TransformJob-DataCaptureConfig"></a>
 Configuration to control how SageMaker captures inference data for batch transform jobs.
 Type: [BatchDataCaptureConfig](API_BatchDataCaptureConfig.md) object
@@ -99,11 +94,6 @@ Type: Array of [Tag](API_Tag.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 50 items.
 Required: No
 
- ** TransformEndTime **   <a name="sagemaker-Type-TransformJob-TransformEndTime"></a>
-Indicates when the transform job has been completed, or has stopped or failed. You are billed for the time interval between this time and the value of `TransformStartTime`.
-Type: Timestamp
-Required: No
-
  ** TransformInput **   <a name="sagemaker-Type-TransformJob-TransformInput"></a>
 Describes the input source of a transform job and the way the transform job consumes it.
 Type: [TransformInput](API_TransformInput.md) object
@@ -143,11 +133,6 @@ Required: No
  ** TransformResources **   <a name="sagemaker-Type-TransformJob-TransformResources"></a>
 Describes the resources, including ML instance types and ML instance count, to use for transform job.
 Type: [TransformResources](API_TransformResources.md) object
-Required: No
-
- ** TransformStartTime **   <a name="sagemaker-Type-TransformJob-TransformStartTime"></a>
-Indicates when the transform job starts on ML instances. You are billed for the time interval between this time and the value of `TransformEndTime`.
-Type: Timestamp
 Required: No
 
 ## See Also

@@ -10,11 +10,6 @@ Provides summary information for an endpoint configuration.
 ## Contents
 <a name="API_EndpointConfigSummary_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-EndpointConfigSummary-CreationTime"></a>
-A timestamp that shows when the endpoint configuration was created.
-Type: Timestamp
-Required: Yes
-
  ** EndpointConfigArn **   <a name="sagemaker-Type-EndpointConfigSummary-EndpointConfigArn"></a>
 The Amazon Resource Name (ARN) of the endpoint configuration.
 Type: String

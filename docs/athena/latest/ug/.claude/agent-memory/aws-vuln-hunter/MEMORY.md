@@ -1,0 +1,3 @@
+- [Env & tooling setup](env_setup.md) — where AWS creds/venv live, PATH quirks, how to invoke both sessions
+- [Athena federation isolation model](athena_federation_isolation.md) — caller-identity gates the whole FEDERATED flow; F1-F8 refuted
+- [Federated catalog teardown quirks](teardown_quirks.md) — FEDERATED tombstones, Glue conn not auto-deleted on catalog delete

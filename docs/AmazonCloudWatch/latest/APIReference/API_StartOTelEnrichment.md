@@ -14,6 +14,10 @@ Before calling this operation, you must enable resource tags on telemetry for yo
 
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
+ ** ValidationError **
+The request failed validation. One or more input parameters do not satisfy the constraints that the operation requires.
+HTTP Status Code: 400
+
 ## See Also
 <a name="API_StartOTelEnrichment_SeeAlso"></a>
 

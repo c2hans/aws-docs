@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.h
 **Important**
 New AWS accounts have reduced concurrency and memory quotas for Lambda Functions and Lambda MicroVMs. AWS raises these quotas automatically based on your usage.
 
-AWS Lambda is designed to scale rapidly to meet demand, allowing your functions to scale up to serve traffic in your application. Lambda is designed for short-lived compute tasks that do not retain or rely upon state between invocations. Code can run for up to 15 minutes in a single invocation and a single function can use up to 10,240 MB of memory.
+AWS Lambda is designed to scale rapidly to meet demand, allowing your functions to scale up to serve traffic in your application. Lambda is designed for short-lived compute tasks that do not retain or rely upon state between invocations. Code can run for up to 15 minutes in a single invocation (up to 90 minutes for Lambda Managed Instances functions invoked asynchronously or through any event source mapping except Amazon MQ and Amazon DocumentDB) and a single function can use up to 10,240 MB of memory.
 
 It's important to understand the guardrails that are put in place to protect your account and the workloads of other customers. Service quotas exist in all AWS services and consist of hard limits, which you cannot change, and soft limits, which you can request increases for. By default, all new accounts are assigned a quota profile that allows exploration of AWS services.
 
@@ -51,7 +51,7 @@ The Lambda documentation, log messages, and console use the abbreviation MB (rat
 | Resource | Quota |
 | --- | --- |
 | Function [memory allocation](configuration-memory.md) | 128 MB to 10,240 MB, in 1-MB increments.<br />**Note:** Lambda allocates CPU power in proportion to the amount of memory configured. You can increase or decrease the memory and CPU power allocated to your function using the **Memory (MB)** setting. At 1,769 MB, a function has the equivalent of one vCPU. |
-| Function timeout | 900 seconds (15 minutes) |
+| Function timeout | 900 seconds (15 minutes). For functions using AWS Lambda Managed Instances, asynchronous invocations and event source mapping invocations (except Amazon MQ and Amazon DocumentDB) support a maximum allowed value of 5,400 seconds (90 minutes). |
 | Function [environment variables](configuration-envvars.md) | 4 KB, for all environment variables associated with the function, in aggregate |
 | Function [resource-based policy](access-control-resource-based.md) | 20 KB |
 | Function [layers](chapter-layers.md) | 5 layers |

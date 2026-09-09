@@ -10,11 +10,6 @@ A summary of the properties of an inference component.
 ## Contents
 <a name="API_InferenceComponentSummary_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-InferenceComponentSummary-CreationTime"></a>
-The time when the inference component was created.
-Type: Timestamp
-Required: Yes
-
  ** EndpointArn **   <a name="sagemaker-Type-InferenceComponentSummary-EndpointArn"></a>
 The Amazon Resource Name (ARN) of the endpoint that hosts the inference component.
 Type: String
@@ -40,11 +35,6 @@ The name of the inference component.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 63.
 Pattern: `[a-zA-Z0-9]([\-a-zA-Z0-9]*[a-zA-Z0-9])?`
-Required: Yes
-
- ** LastModifiedTime **   <a name="sagemaker-Type-InferenceComponentSummary-LastModifiedTime"></a>
-The time when the inference component was last updated.
-Type: Timestamp
 Required: Yes
 
  ** VariantName **   <a name="sagemaker-Type-InferenceComponentSummary-VariantName"></a>

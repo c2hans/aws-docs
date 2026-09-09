@@ -10,11 +10,6 @@ A hosted endpoint for real-time inference.
 ## Contents
 <a name="API_Endpoint_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-Endpoint-CreationTime"></a>
-The time that the endpoint was created.
-Type: Timestamp
-Required: Yes
-
  ** EndpointArn **   <a name="sagemaker-Type-Endpoint-EndpointArn"></a>
 The Amazon Resource Name (ARN) of the endpoint.
 Type: String
@@ -40,11 +35,6 @@ Required: Yes
 The status of the endpoint.
 Type: String
 Valid Values: `OutOfService | Creating | Updating | SystemUpdating | RollingBack | InService | Deleting | Failed | UpdateRollbackFailed`
-Required: Yes
-
- ** LastModifiedTime **   <a name="sagemaker-Type-Endpoint-LastModifiedTime"></a>
-The last time the endpoint was modified.
-Type: Timestamp
 Required: Yes
 
  ** DataCaptureConfig **   <a name="sagemaker-Type-Endpoint-DataCaptureConfig"></a>

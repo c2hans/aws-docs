@@ -10,20 +10,10 @@ The summary of the tracking server to list.
 ## Contents
 <a name="API_TrackingServerSummary_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-TrackingServerSummary-CreationTime"></a>
-The creation time of a listed tracking server.
-Type: Timestamp
-Required: No
-
  ** IsActive **   <a name="sagemaker-Type-TrackingServerSummary-IsActive"></a>
 The activity status of a listed tracking server.
 Type: String
 Valid Values: `Active | Inactive`
-Required: No
-
- ** LastModifiedTime **   <a name="sagemaker-Type-TrackingServerSummary-LastModifiedTime"></a>
-The last modified time of a listed tracking server.
-Type: Timestamp
 Required: No
 
  ** MlflowVersion **   <a name="sagemaker-Type-TrackingServerSummary-MlflowVersion"></a>

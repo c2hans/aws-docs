@@ -47,8 +47,6 @@ Required: Yes
       },
       "InstanceTypes": [ "string" ]
    },
-   "CreationTime": number,
-   "EndTime": number,
    "FailureReason": "string",
    "InferenceSpecification": {
       "Framework": "string"
@@ -135,7 +133,6 @@ Required: Yes
       }
    ],
    "RoleArn": "string",
-   "StartTime": number,
    "Tags": [
       {
          "Key": "string",
@@ -184,14 +181,6 @@ Pattern: `(arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:[a-z\-]*/)?([a-zA-Z0-
 The compute resource specification for the recommendation job.
 Type: [AIRecommendationComputeSpec](API_AIRecommendationComputeSpec.md) object
 
- ** [CreationTime](#API_DescribeAIRecommendationJob_ResponseSyntax) **   <a name="sagemaker-DescribeAIRecommendationJob-response-CreationTime"></a>
-A timestamp that indicates when the recommendation job was created.
-Type: Timestamp
-
- ** [EndTime](#API_DescribeAIRecommendationJob_ResponseSyntax) **   <a name="sagemaker-DescribeAIRecommendationJob-response-EndTime"></a>
-A timestamp that indicates when the recommendation job completed.
-Type: Timestamp
-
  ** [FailureReason](#API_DescribeAIRecommendationJob_ResponseSyntax) **   <a name="sagemaker-DescribeAIRecommendationJob-response-FailureReason"></a>
 If the recommendation job failed, the reason it failed.
 Type: String
@@ -227,10 +216,6 @@ The Amazon Resource Name (ARN) of the IAM role used by the recommendation job.
 Type: String
 Length Constraints: Minimum length of 20. Maximum length of 2048.
 Pattern: `arn:aws[a-z\-]*:iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+`
-
- ** [StartTime](#API_DescribeAIRecommendationJob_ResponseSyntax) **   <a name="sagemaker-DescribeAIRecommendationJob-response-StartTime"></a>
-A timestamp that indicates when the recommendation job started running.
-Type: Timestamp
 
  ** [Tags](#API_DescribeAIRecommendationJob_ResponseSyntax) **   <a name="sagemaker-DescribeAIRecommendationJob-response-Tags"></a>
 The tags associated with the recommendation job.

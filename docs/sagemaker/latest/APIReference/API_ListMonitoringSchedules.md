@@ -12,11 +12,7 @@ Returns list of all monitoring schedules.
 
 ```
 {
-   "CreationTimeAfter": {{number}},
-   "CreationTimeBefore": {{number}},
    "EndpointName": "{{string}}",
-   "LastModifiedTimeAfter": {{number}},
-   "LastModifiedTimeBefore": {{number}},
    "MaxResults": {{number}},
    "MonitoringJobDefinitionName": "{{string}}",
    "MonitoringTypeEquals": "{{string}}",
@@ -35,31 +31,11 @@ For information about the parameters that are common to all actions, see [Common
 
 The request accepts the following data in JSON format.
 
- ** [CreationTimeAfter](#API_ListMonitoringSchedules_RequestSyntax) **   <a name="sagemaker-ListMonitoringSchedules-request-CreationTimeAfter"></a>
-A filter that returns only monitoring schedules created after a specified time.
-Type: Timestamp
-Required: No
-
- ** [CreationTimeBefore](#API_ListMonitoringSchedules_RequestSyntax) **   <a name="sagemaker-ListMonitoringSchedules-request-CreationTimeBefore"></a>
-A filter that returns only monitoring schedules created before a specified time.
-Type: Timestamp
-Required: No
-
  ** [EndpointName](#API_ListMonitoringSchedules_RequestSyntax) **   <a name="sagemaker-ListMonitoringSchedules-request-EndpointName"></a>
 Name of a specific endpoint to fetch schedules for.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 63.
 Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
-Required: No
-
- ** [LastModifiedTimeAfter](#API_ListMonitoringSchedules_RequestSyntax) **   <a name="sagemaker-ListMonitoringSchedules-request-LastModifiedTimeAfter"></a>
-A filter that returns only monitoring schedules modified after a specified time.
-Type: Timestamp
-Required: No
-
- ** [LastModifiedTimeBefore](#API_ListMonitoringSchedules_RequestSyntax) **   <a name="sagemaker-ListMonitoringSchedules-request-LastModifiedTimeBefore"></a>
-A filter that returns only monitoring schedules modified before a specified time.
-Type: Timestamp
 Required: No
 
  ** [MaxResults](#API_ListMonitoringSchedules_RequestSyntax) **   <a name="sagemaker-ListMonitoringSchedules-request-MaxResults"></a>
@@ -120,9 +96,7 @@ Required: No
 {
    "MonitoringScheduleSummaries": [
       {
-         "CreationTime": number,
          "EndpointName": "string",
-         "LastModifiedTime": number,
          "MonitoringJobDefinitionName": "string",
          "MonitoringScheduleArn": "string",
          "MonitoringScheduleName": "string",

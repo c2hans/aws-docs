@@ -50,7 +50,6 @@ Required: Yes
          "S3OutputPath": "string"
       }
    },
-   "CreationTime": number,
    "DataCaptureConfig": {
       "CaptureStatus": "string",
       "CurrentSamplingPercentage": number,
@@ -132,7 +131,6 @@ Required: Yes
          "WaitIntervalInSeconds": number
       }
    },
-   "LastModifiedTime": number,
    "MetricsConfig": {
       "EnableDetailedObservability": boolean,
       "EnableEnhancedMetrics": boolean,
@@ -152,7 +150,6 @@ Required: Yes
             "CurrentWeight": number,
             "DeployedImages": [
                {
-                  "ResolutionTime": number,
                   "ResolvedImage": "string",
                   "SpecifiedImage": "string"
                }
@@ -191,7 +188,6 @@ Required: Yes
             "VariantName": "string",
             "VariantStatus": [
                {
-                  "StartTime": number,
                   "Status": "string",
                   "StatusMessage": "string"
                }
@@ -210,7 +206,6 @@ Required: Yes
             "CurrentWeight": number,
             "DeployedImages": [
                {
-                  "ResolutionTime": number,
                   "ResolvedImage": "string",
                   "SpecifiedImage": "string"
                }
@@ -249,14 +244,12 @@ Required: Yes
             "VariantName": "string",
             "VariantStatus": [
                {
-                  "StartTime": number,
                   "Status": "string",
                   "StatusMessage": "string"
                }
             ]
          }
-      ],
-      "StartTime": number
+      ]
    },
    "ProductionVariants": [
       {
@@ -284,7 +277,6 @@ Required: Yes
          "CurrentWeight": number,
          "DeployedImages": [
             {
-               "ResolutionTime": number,
                "ResolvedImage": "string",
                "SpecifiedImage": "string"
             }
@@ -322,7 +314,6 @@ Required: Yes
          "VariantName": "string",
          "VariantStatus": [
             {
-               "StartTime": number,
                "Status": "string",
                "StatusMessage": "string"
             }
@@ -355,7 +346,6 @@ Required: Yes
          "CurrentWeight": number,
          "DeployedImages": [
             {
-               "ResolutionTime": number,
                "ResolvedImage": "string",
                "SpecifiedImage": "string"
             }
@@ -393,7 +383,6 @@ Required: Yes
          "VariantName": "string",
          "VariantStatus": [
             {
-               "StartTime": number,
                "Status": "string",
                "StatusMessage": "string"
             }
@@ -413,10 +402,6 @@ The following data is returned in JSON format by the service.
  ** [AsyncInferenceConfig](#API_DescribeEndpoint_ResponseSyntax) **   <a name="sagemaker-DescribeEndpoint-response-AsyncInferenceConfig"></a>
 Returns the description of an endpoint configuration created using the [`CreateEndpointConfig`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpointConfig.html) API.
 Type: [AsyncInferenceConfig](API_AsyncInferenceConfig.md) object
-
- ** [CreationTime](#API_DescribeEndpoint_ResponseSyntax) **   <a name="sagemaker-DescribeEndpoint-response-CreationTime"></a>
-A timestamp that shows when the endpoint was created.
-Type: Timestamp
 
  ** [DataCaptureConfig](#API_DescribeEndpoint_ResponseSyntax) **   <a name="sagemaker-DescribeEndpoint-response-DataCaptureConfig"></a>
 The currently active data capture configuration used by your Endpoint.
@@ -466,10 +451,6 @@ Length Constraints: Minimum length of 0. Maximum length of 1024.
  ** [LastDeploymentConfig](#API_DescribeEndpoint_ResponseSyntax) **   <a name="sagemaker-DescribeEndpoint-response-LastDeploymentConfig"></a>
 The most recent deployment configuration for the endpoint.
 Type: [DeploymentConfig](API_DeploymentConfig.md) object
-
- ** [LastModifiedTime](#API_DescribeEndpoint_ResponseSyntax) **   <a name="sagemaker-DescribeEndpoint-response-LastModifiedTime"></a>
-A timestamp that shows when the endpoint was last modified.
-Type: Timestamp
 
  ** [MetricsConfig](#API_DescribeEndpoint_ResponseSyntax) **   <a name="sagemaker-DescribeEndpoint-response-MetricsConfig"></a>
 The configuration parameters for utilization metrics.

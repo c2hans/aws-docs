@@ -7,12 +7,14 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 
 The following actions are supported:
 +  [AssociateDatasetKmsKey](API_AssociateDatasetKmsKey.md)
++  [CreateResourceMetricsConfiguration](API_CreateResourceMetricsConfiguration.md)
 +  [DeleteAlarmMuteRule](API_DeleteAlarmMuteRule.md)
 +  [DeleteAlarms](API_DeleteAlarms.md)
 +  [DeleteAnomalyDetector](API_DeleteAnomalyDetector.md)
 +  [DeleteDashboards](API_DeleteDashboards.md)
 +  [DeleteInsightRules](API_DeleteInsightRules.md)
 +  [DeleteMetricStream](API_DeleteMetricStream.md)
++  [DeleteResourceMetricsConfiguration](API_DeleteResourceMetricsConfiguration.md)
 +  [DescribeAlarmContributors](API_DescribeAlarmContributors.md)
 +  [DescribeAlarmHistory](API_DescribeAlarmHistory.md)
 +  [DescribeAlarms](API_DescribeAlarms.md)
@@ -33,6 +35,7 @@ The following actions are supported:
 +  [GetMetricStream](API_GetMetricStream.md)
 +  [GetMetricWidgetImage](API_GetMetricWidgetImage.md)
 +  [GetOTelEnrichment](API_GetOTelEnrichment.md)
++  [GetResourceMetricsConfiguration](API_GetResourceMetricsConfiguration.md)
 +  [ListAlarmMuteRules](API_ListAlarmMuteRules.md)
 +  [ListDashboards](API_ListDashboards.md)
 +  [ListManagedInsightRules](API_ListManagedInsightRules.md)
@@ -56,3 +59,4 @@ The following actions are supported:
 +  [StopOTelEnrichment](API_StopOTelEnrichment.md)
 +  [TagResource](API_TagResource.md)
 +  [UntagResource](API_UntagResource.md)
++  [UpdateResourceMetricsConfiguration](API_UpdateResourceMetricsConfiguration.md)

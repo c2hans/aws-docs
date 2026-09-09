@@ -13,7 +13,6 @@ Updates one or more properties of a trial component.
 ```
 {
    "DisplayName": "{{string}}",
-   "EndTime": {{number}},
    "InputArtifacts": {
       "{{string}}" : {
          "MediaType": "{{string}}",
@@ -35,7 +34,6 @@ Updates one or more properties of a trial component.
       }
    },
    "ParametersToRemove": [ "{{string}}" ],
-   "StartTime": {{number}},
    "Status": {
       "Message": "{{string}}",
       "PrimaryStatus": "{{string}}"
@@ -56,11 +54,6 @@ The name of the component as displayed. The name doesn't need to be unique. If `
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 120.
 Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,119}`
-Required: No
-
- ** [EndTime](#API_UpdateTrialComponent_RequestSyntax) **   <a name="sagemaker-UpdateTrialComponent-request-EndTime"></a>
-When the component ended.
-Type: Timestamp
 Required: No
 
  ** [InputArtifacts](#API_UpdateTrialComponent_RequestSyntax) **   <a name="sagemaker-UpdateTrialComponent-request-InputArtifacts"></a>
@@ -106,11 +99,6 @@ The hyperparameters to remove from the component.
 Type: Array of strings
 Length Constraints: Minimum length of 0. Maximum length of 256.
 Pattern: `.*`
-Required: No
-
- ** [StartTime](#API_UpdateTrialComponent_RequestSyntax) **   <a name="sagemaker-UpdateTrialComponent-request-StartTime"></a>
-When the component started.
-Type: Timestamp
 Required: No
 
  ** [Status](#API_UpdateTrialComponent_RequestSyntax) **   <a name="sagemaker-UpdateTrialComponent-request-Status"></a>

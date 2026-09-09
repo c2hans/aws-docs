@@ -30,16 +30,6 @@ Type: String
 Valid Values: `InProgress | Completed | Failed | Stopping | Stopped`
 Required: Yes
 
- ** CreationTime **   <a name="sagemaker-Type-AIRecommendationJobSummary-CreationTime"></a>
-A timestamp that indicates when the recommendation job was created.
-Type: Timestamp
-Required: Yes
-
- ** EndTime **   <a name="sagemaker-Type-AIRecommendationJobSummary-EndTime"></a>
-A timestamp that indicates when the recommendation job completed.
-Type: Timestamp
-Required: No
-
 ## See Also
 <a name="API_AIRecommendationJobSummary_SeeAlso"></a>
 

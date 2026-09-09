@@ -10,16 +10,13 @@ Allows the SIP media application to record media from a given call ID. For examp
 **Note**
 Recordings made using this feature may be subject to laws or regulations regarding the recording of electronic communications. It is your and your end users’ responsibility to comply with all applicable laws regarding the recording, including properly notifying all participants in a recorded session or communication that the session or communication is being recorded, and obtaining their consent.
 
-The following example gives the `s3:PutObject` and `s3:PutObjectAcl` permission to the Amazon Chime SDK Voice Connector service principal.
+The following example IAM policy grants the `s3:PutObject` and `s3:PutObjectAcl` permissions to the Amazon Chime SDK Voice Connector service principal:
 
-------
-#### [ JSON ]
-
-****
+**Example : IAM policy for call recording**
 
 ```
 {
-    "Version":"2012-10-17",
+    "Version": "2012-10-17",
     "Statement": [
         {
             "Sid": "SMARead",
@@ -31,13 +28,16 @@ The following example gives the `s3:PutObject` and `s3:PutObjectAcl` permission 
                 "s3:PutObject",
                 "s3:PutObjectAcl"
             ],
-            "Resource": "arn:aws:s3:::{{bucket-name}}/*"
+            "Resource": "arn:aws:s3:::bucket-name/*",
+            "Condition": {
+                "StringEquals": {
+                    "aws:SourceAccount": "{{123456789012}}"
+                }
+            }
         }
     ]
 }
 ```
-
-------
 
 The following example stops recording when the caller presses the pound key (\#), or 10 seconds elapse with no activity, or the caller remains silent for 3 seconds, and it writes the resulting media file into the location defined by `RecordingDestination` parameter.
 

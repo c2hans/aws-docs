@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anth
 
 Claude Sonnet 5 is the most capable Sonnet model from Anthropic, built for coding, agents, and professional work at scale. It brings near-Opus intelligence to the model teams run every day, with the same balance of capability, cost, and speed teams already rely on Sonnet for.
 + **Model launch date:** June 30, 2026
++ **EOL no sooner than:** June 30, 2027
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [Third-party model terms](https://aws.amazon.com/legal/bedrock/third-party-models/)
 + **Model lifecycle:** Active

@@ -10,11 +10,6 @@ Provides summary information about a model.
 ## Contents
 <a name="API_ModelSummary_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-ModelSummary-CreationTime"></a>
-A timestamp that indicates when the model was created.
-Type: Timestamp
-Required: Yes
-
  ** ModelArn **   <a name="sagemaker-Type-ModelSummary-ModelArn"></a>
 The Amazon Resource Name (ARN) of the model.
 Type: String

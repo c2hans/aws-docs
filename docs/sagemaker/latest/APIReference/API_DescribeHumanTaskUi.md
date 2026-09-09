@@ -35,7 +35,6 @@ Required: Yes
 
 ```
 {
-   "CreationTime": number,
    "HumanTaskUiArn": "string",
    "HumanTaskUiName": "string",
    "HumanTaskUiStatus": "string",
@@ -52,10 +51,6 @@ Required: Yes
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
-
- ** [CreationTime](#API_DescribeHumanTaskUi_ResponseSyntax) **   <a name="sagemaker-DescribeHumanTaskUi-response-CreationTime"></a>
-The timestamp when the human task user interface was created.
-Type: Timestamp
 
  ** [HumanTaskUiArn](#API_DescribeHumanTaskUi_ResponseSyntax) **   <a name="sagemaker-DescribeHumanTaskUi-response-HumanTaskUiArn"></a>
 The Amazon Resource Name (ARN) of the human task user interface (worker task template).

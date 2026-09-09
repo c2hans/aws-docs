@@ -10,11 +10,6 @@ Provides summary information for an endpoint.
 ## Contents
 <a name="API_EndpointSummary_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-EndpointSummary-CreationTime"></a>
-A timestamp that shows when the endpoint was created.
-Type: Timestamp
-Required: Yes
-
  ** EndpointArn **   <a name="sagemaker-Type-EndpointSummary-EndpointArn"></a>
 The Amazon Resource Name (ARN) of the endpoint.
 Type: String
@@ -42,11 +37,6 @@ The status of the endpoint.
 To get a list of endpoints with a specified status, use the `StatusEquals` filter with a call to [ListEndpoints](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListEndpoints.html).
 Type: String
 Valid Values: `OutOfService | Creating | Updating | SystemUpdating | RollingBack | InService | Deleting | Failed | UpdateRollbackFailed`
-Required: Yes
-
- ** LastModifiedTime **   <a name="sagemaker-Type-EndpointSummary-LastModifiedTime"></a>
-A timestamp that shows when the endpoint was last modified.
-Type: Timestamp
 Required: Yes
 
 ## See Also

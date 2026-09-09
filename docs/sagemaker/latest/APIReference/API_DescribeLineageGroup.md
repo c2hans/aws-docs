@@ -45,7 +45,6 @@ Required: Yes
       "UserProfileArn": "string",
       "UserProfileName": "string"
    },
-   "CreationTime": number,
    "Description": "string",
    "DisplayName": "string",
    "LastModifiedBy": {
@@ -58,7 +57,6 @@ Required: Yes
       "UserProfileArn": "string",
       "UserProfileName": "string"
    },
-   "LastModifiedTime": number,
    "LineageGroupArn": "string",
    "LineageGroupName": "string"
 }
@@ -75,10 +73,6 @@ The following data is returned in JSON format by the service.
 Information about the user who created or modified a SageMaker resource.
 Type: [UserContext](API_UserContext.md) object
 
- ** [CreationTime](#API_DescribeLineageGroup_ResponseSyntax) **   <a name="sagemaker-DescribeLineageGroup-response-CreationTime"></a>
-The creation time of lineage group.
-Type: Timestamp
-
  ** [Description](#API_DescribeLineageGroup_ResponseSyntax) **   <a name="sagemaker-DescribeLineageGroup-response-Description"></a>
 The description of the lineage group.
 Type: String
@@ -94,10 +88,6 @@ Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,119}`
  ** [LastModifiedBy](#API_DescribeLineageGroup_ResponseSyntax) **   <a name="sagemaker-DescribeLineageGroup-response-LastModifiedBy"></a>
 Information about the user who created or modified a SageMaker resource.
 Type: [UserContext](API_UserContext.md) object
-
- ** [LastModifiedTime](#API_DescribeLineageGroup_ResponseSyntax) **   <a name="sagemaker-DescribeLineageGroup-response-LastModifiedTime"></a>
-The last modified time of the lineage group.
-Type: Timestamp
 
  ** [LineageGroupArn](#API_DescribeLineageGroup_ResponseSyntax) **   <a name="sagemaker-DescribeLineageGroup-response-LineageGroupArn"></a>
 The Amazon Resource Name (ARN) of the lineage group.

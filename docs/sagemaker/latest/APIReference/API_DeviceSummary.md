@@ -52,19 +52,9 @@ Length Constraints: Minimum length of 0. Maximum length of 128.
 Pattern: `[a-zA-Z0-9:_-]+`
 Required: No
 
- ** LatestHeartbeat **   <a name="sagemaker-Type-DeviceSummary-LatestHeartbeat"></a>
-The last heartbeat received from the device.
-Type: Timestamp
-Required: No
-
  ** Models **   <a name="sagemaker-Type-DeviceSummary-Models"></a>
 Models on the device.
 Type: Array of [EdgeModelSummary](API_EdgeModelSummary.md) objects
-Required: No
-
- ** RegistrationTime **   <a name="sagemaker-Type-DeviceSummary-RegistrationTime"></a>
-The timestamp of the last registration or de-reregistration.
-Type: Timestamp
 Required: No
 
 ## See Also

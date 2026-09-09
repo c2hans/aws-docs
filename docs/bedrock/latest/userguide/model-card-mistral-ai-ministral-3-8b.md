@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mist
 
 Ministral 3 8B is Mistral AI's 8-billion parameter compact model for edge and mobile deployment with efficient inference. For more information about model development and performance, see the [model/service card](https://docs.mistral.ai/getting-started/models).
 + **Model launch date:** Dec 02, 2025
++ **EOL no sooner than:** Dec 02, 2026
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
 + **Model lifecycle:** Active

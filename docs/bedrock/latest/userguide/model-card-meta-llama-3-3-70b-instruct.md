@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta
 
 Llama 3.3 70B Instruct is Meta's 70-billion parameter model with improved efficiency, delivering strong reasoning and coding performance with a 128K context window. For more information about model development and performance, see the [model/service card](https://www.llama.com/docs/model-cards-and-prompt-formats/llama3_3/).
 + **Model launch date:** Dec 06, 2024
++ **EOL no sooner than:** Dec 06, 2025
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** No sooner than 12/19/2025
 + **End User License Agreements and Terms of Use:** [View](https://github.com/meta-llama/llama-models/blob/main/models/llama3_3/LICENSE)
 + **Model lifecycle:** Active

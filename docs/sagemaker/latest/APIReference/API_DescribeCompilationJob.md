@@ -37,11 +37,9 @@ Required: Yes
 
 ```
 {
-   "CompilationEndTime": number,
    "CompilationJobArn": "string",
    "CompilationJobName": "string",
    "CompilationJobStatus": "string",
-   "CompilationStartTime": number,
    "CreationTime": number,
    "DerivedInformation": {
       "DerivedDataInputConfig": "string"
@@ -93,10 +91,6 @@ If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
- ** [CompilationEndTime](#API_DescribeCompilationJob_ResponseSyntax) **   <a name="sagemaker-DescribeCompilationJob-response-CompilationEndTime"></a>
-The time when the model compilation job on a compilation job instance ended. For a successful or stopped job, this is when the job's model artifacts have finished uploading. For a failed job, this is when Amazon SageMaker AI detected that the job failed.
-Type: Timestamp
-
  ** [CompilationJobArn](#API_DescribeCompilationJob_ResponseSyntax) **   <a name="sagemaker-DescribeCompilationJob-response-CompilationJobArn"></a>
 The Amazon Resource Name (ARN) of the model compilation job.
 Type: String
@@ -113,11 +107,6 @@ Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
 The status of the model compilation job.
 Type: String
 Valid Values: `INPROGRESS | COMPLETED | FAILED | STARTING | STOPPING | STOPPED`
-
- ** [CompilationStartTime](#API_DescribeCompilationJob_ResponseSyntax) **   <a name="sagemaker-DescribeCompilationJob-response-CompilationStartTime"></a>
-The time when the model compilation job started the `CompilationJob` instances.
-You are billed for the time between this timestamp and the timestamp in the `CompilationEndTime` field. In Amazon CloudWatch Logs, the start time might be later than this time. That's because it takes time to download the compilation job, which depends on the size of the compilation job container.
-Type: Timestamp
 
  ** [CreationTime](#API_DescribeCompilationJob_ResponseSyntax) **   <a name="sagemaker-DescribeCompilationJob-response-CreationTime"></a>
 The time that the model compilation job was created.

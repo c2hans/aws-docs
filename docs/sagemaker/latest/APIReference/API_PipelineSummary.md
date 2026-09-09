@@ -10,21 +10,6 @@ A summary of a pipeline.
 ## Contents
 <a name="API_PipelineSummary_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-PipelineSummary-CreationTime"></a>
-The creation time of the pipeline.
-Type: Timestamp
-Required: No
-
- ** LastExecutionTime **   <a name="sagemaker-Type-PipelineSummary-LastExecutionTime"></a>
-The last time that a pipeline execution began.
-Type: Timestamp
-Required: No
-
- ** LastModifiedTime **   <a name="sagemaker-Type-PipelineSummary-LastModifiedTime"></a>
-The time that the pipeline was last modified.
-Type: Timestamp
-Required: No
-
  ** PipelineArn **   <a name="sagemaker-Type-PipelineSummary-PipelineArn"></a>
  The Amazon Resource Name (ARN) of the pipeline.
 Type: String

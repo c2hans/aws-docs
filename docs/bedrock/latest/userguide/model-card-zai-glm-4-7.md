@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-zai-
 
 GLM 4.7 is Z.AI's large language model with strong multilingual capabilities and solid performance on reasoning, coding, and knowledge benchmarks. For more information about model development and performance, see the [model/service card](https://z.ai/blog/glm-4.7).
 + **Model launch date:** Dec 22, 2025
++ **EOL no sooner than:** Dec 22, 2026
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://github.com/zai-org/GLM-4/blob/main/LICENSE)
 + **Model lifecycle:** Active

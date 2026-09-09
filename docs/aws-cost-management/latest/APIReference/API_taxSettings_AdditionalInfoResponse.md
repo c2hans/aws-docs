@@ -85,6 +85,11 @@ Required: No
 Type: [MalaysiaAdditionalInfo](API_taxSettings_MalaysiaAdditionalInfo.md) object
 Required: No
 
+ ** monacoAdditionalInfo **   <a name="awscostmanagement-Type-taxSettings_AdditionalInfoResponse-monacoAdditionalInfo"></a>
+Additional tax information associated with your TRN in Monaco.
+Type: [MonacoAdditionalInfo](API_taxSettings_MonacoAdditionalInfo.md) object
+Required: No
+
  ** philippinesAdditionalInfo **   <a name="awscostmanagement-Type-taxSettings_AdditionalInfoResponse-philippinesAdditionalInfo"></a>
 Additional tax information associated with your TRN in the Philippines.
 Type: [PhilippinesAdditionalInfo](API_taxSettings_PhilippinesAdditionalInfo.md) object

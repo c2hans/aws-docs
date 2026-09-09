@@ -110,11 +110,9 @@ Required: No
          "DeploymentInstanceType": "string",
          "LastModifiedTime": number,
          "MaxInstanceCount": number,
-         "OptimizationEndTime": number,
          "OptimizationJobArn": "string",
          "OptimizationJobName": "string",
          "OptimizationJobStatus": "string",
-         "OptimizationStartTime": number,
          "OptimizationTypes": [ "string" ]
       }
    ]

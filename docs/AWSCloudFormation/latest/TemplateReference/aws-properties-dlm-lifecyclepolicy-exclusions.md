@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "[ExcludeBootVolumes](#cfn-dlm-lifecyclepolicy-exclusions-excludebootvolumes)" : {{Boolean}},
   "[ExcludeTags](#cfn-dlm-lifecyclepolicy-exclusions-excludetags)" : {{[ Tag, ... ]}},
-  "[ExcludeVolumeTypes](#cfn-dlm-lifecyclepolicy-exclusions-excludevolumetypes)" : {{[ Json, ... ]}}
+  "[ExcludeVolumeTypes](#cfn-dlm-lifecyclepolicy-exclusions-excludevolumetypes)" : {{[ String, ... ]}}
 }
 ```
 
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   [ExcludeTags](#cfn-dlm-lifecyclepolicy-exclusions-excludetags): {{
     - Tag}}
   [ExcludeVolumeTypes](#cfn-dlm-lifecyclepolicy-exclusions-excludevolumetypes): {{
-    - Json}}
+    - String}}
 ```
 
 ## Properties
@@ -56,7 +56,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 `ExcludeVolumeTypes`  <a name="cfn-dlm-lifecyclepolicy-exclusions-excludevolumetypes"></a>
 **[Default policies for EBS snapshots only]** Specifies the volume types to exclude. Volumes of the specified types will not be targeted by the policy.
 *Required*: No
-*Type*: Array of Json
+*Type*: Array of String
 *Minimum*: `0`
 *Maximum*: `6`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -15,21 +15,11 @@ Who created the trial component.
 Type: [UserContext](API_UserContext.md) object
 Required: No
 
- ** CreationTime **   <a name="sagemaker-Type-TrialComponent-CreationTime"></a>
-When the component was created.
-Type: Timestamp
-Required: No
-
  ** DisplayName **   <a name="sagemaker-Type-TrialComponent-DisplayName"></a>
 The name of the component as displayed. If `DisplayName` isn't specified, `TrialComponentName` is displayed.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 120.
 Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,119}`
-Required: No
-
- ** EndTime **   <a name="sagemaker-Type-TrialComponent-EndTime"></a>
-When the component ended.
-Type: Timestamp
 Required: No
 
  ** InputArtifacts **   <a name="sagemaker-Type-TrialComponent-InputArtifacts"></a>
@@ -43,11 +33,6 @@ Required: No
  ** LastModifiedBy **   <a name="sagemaker-Type-TrialComponent-LastModifiedBy"></a>
 Information about the user who created or modified a SageMaker resource.
 Type: [UserContext](API_UserContext.md) object
-Required: No
-
- ** LastModifiedTime **   <a name="sagemaker-Type-TrialComponent-LastModifiedTime"></a>
-When the component was last modified.
-Type: Timestamp
 Required: No
 
  ** LineageGroupArn **   <a name="sagemaker-Type-TrialComponent-LineageGroupArn"></a>
@@ -103,11 +88,6 @@ Required: No
  ** SourceDetail **   <a name="sagemaker-Type-TrialComponent-SourceDetail"></a>
 Details of the source of the component.
 Type: [TrialComponentSourceDetail](API_TrialComponentSourceDetail.md) object
-Required: No
-
- ** StartTime **   <a name="sagemaker-Type-TrialComponent-StartTime"></a>
-When the component started.
-Type: Timestamp
 Required: No
 
  ** Status **   <a name="sagemaker-Type-TrialComponent-Status"></a>

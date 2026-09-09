@@ -56,7 +56,7 @@ You must select **Don't generate a client secret**  when configuring the Amazo
 ### Grant Customer Profile permission(s) to security profiles (optional)
 <a name="apple-messages-for-business-grant-customer-profile-permissions"></a>
 
- To grant users (agent, admin) permissions to view/edit/publish Customer Profiles in Agent Workspace, see [Update Customer Profiles permissions for agents](security-profile-customer-profile-agent.md). After permission(s) are granted to security profile(s), users should be able to access the features in the Agent Workspace.
+ To grant users (agent, admin) permissions to view/edit/publish Customer Profiles in the agent workspace, see [Update Customer Profiles permissions for agents](security-profile-customer-profile-agent.md). After permission(s) are granted to security profile(s), users should be able to access the features in the agent workspace.
 
  For a detailed list of permissions, see [Customer Profiles security profile permissions](security-profile-list.md#customerprofiles-permissions-list).
 

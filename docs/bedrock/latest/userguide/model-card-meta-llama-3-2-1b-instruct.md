@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta
 
 Llama 3.2 1B Instruct is Meta's ultra-lightweight 1-billion parameter model optimized for on-device and edge deployment. For more information about model development and performance, see the [model/service card](https://www.llama.com/docs/model-cards-and-prompt-formats/llama3_2/).
 + **Model launch date:** Sep 25, 2024
++ **EOL no sooner than:** Sep 25, 2025
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** July 7, 2026
 + **End User License Agreements and Terms of Use:** [View](https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/LICENSE)
 + **Model lifecycle:** Legacy

@@ -120,6 +120,17 @@ Content-type: application/json
    ],
    "Function": "{{string}}",
    "Name": "{{string}}",
+   "PreEvaluationFilters": {
+      "AndConditions": [
+         {
+            "FilterKey": "{{string}}",
+            "FilterType": "{{string}}",
+            "FilterValue": "{{string}}",
+            "Operator": "{{string}}",
+            "ResourceType": "{{string}}"
+         }
+      ]
+   },
    "PublishStatus": "{{string}}"
 }
 ```
@@ -160,6 +171,11 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 200.
 Pattern: `^[0-9a-zA-Z._-]+`
 Required: Yes
+
+ ** [PreEvaluationFilters](#API_UpdateRule_RequestSyntax) **   <a name="connect-UpdateRule-request-PreEvaluationFilters"></a>
+The pre-evaluation filters for the rule, that restrict the rule to be applied to only certain resources based on the resource's attributes, such as tags assigned to a contact. The pre-evaluation filters are applied even before rule conditions are evaluated and are used to enforce tag-based-access-control while applying rules.
+Type: [PreEvaluationFilters](API_PreEvaluationFilters.md) object
+Required: No
 
  ** [PublishStatus](#API_UpdateRule_RequestSyntax) **   <a name="connect-UpdateRule-request-PublishStatus"></a>
 The publish status of the rule.

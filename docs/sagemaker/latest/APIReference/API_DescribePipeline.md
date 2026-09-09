@@ -52,7 +52,6 @@ Required: No
       "UserProfileArn": "string",
       "UserProfileName": "string"
    },
-   "CreationTime": number,
    "LastModifiedBy": {
       "DomainId": "string",
       "IamIdentity": {
@@ -63,8 +62,6 @@ Required: No
       "UserProfileArn": "string",
       "UserProfileName": "string"
    },
-   "LastModifiedTime": number,
-   "LastRunTime": number,
    "ParallelismConfiguration": {
       "MaxParallelExecutionSteps": number
    },
@@ -91,21 +88,9 @@ The following data is returned in JSON format by the service.
 Information about the user who created or modified a SageMaker resource.
 Type: [UserContext](API_UserContext.md) object
 
- ** [CreationTime](#API_DescribePipeline_ResponseSyntax) **   <a name="sagemaker-DescribePipeline-response-CreationTime"></a>
-The time when the pipeline was created.
-Type: Timestamp
-
  ** [LastModifiedBy](#API_DescribePipeline_ResponseSyntax) **   <a name="sagemaker-DescribePipeline-response-LastModifiedBy"></a>
 Information about the user who created or modified a SageMaker resource.
 Type: [UserContext](API_UserContext.md) object
-
- ** [LastModifiedTime](#API_DescribePipeline_ResponseSyntax) **   <a name="sagemaker-DescribePipeline-response-LastModifiedTime"></a>
-The time when the pipeline was last modified.
-Type: Timestamp
-
- ** [LastRunTime](#API_DescribePipeline_ResponseSyntax) **   <a name="sagemaker-DescribePipeline-response-LastRunTime"></a>
-The time when the pipeline was last run.
-Type: Timestamp
 
  ** [ParallelismConfiguration](#API_DescribePipeline_ResponseSyntax) **   <a name="sagemaker-DescribePipeline-response-ParallelismConfiguration"></a>
 Lists the parallelism configuration applied to the pipeline.

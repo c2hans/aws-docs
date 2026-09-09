@@ -12,11 +12,6 @@ If you used the `registry/repository[:tag]` form to specify the image path of th
 ## Contents
 <a name="API_DeployedImage_Contents"></a>
 
- ** ResolutionTime **   <a name="sagemaker-Type-DeployedImage-ResolutionTime"></a>
-The date and time when the image path for the model resolved to the `ResolvedImage`
-Type: Timestamp
-Required: No
-
  ** ResolvedImage **   <a name="sagemaker-Type-DeployedImage-ResolvedImage"></a>
 The specific digest path of the image hosted in this `ProductionVariant`.
 Type: String

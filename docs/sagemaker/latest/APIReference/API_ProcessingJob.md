@@ -22,11 +22,6 @@ Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:automl-job/.*`
 Required: No
 
- ** CreationTime **   <a name="sagemaker-Type-ProcessingJob-CreationTime"></a>
-The time the processing job was created.
-Type: Timestamp
-Required: No
-
  ** Environment **   <a name="sagemaker-Type-ProcessingJob-Environment"></a>
 Sets the environment variables in the Docker container.
 Type: String to string map
@@ -58,11 +53,6 @@ Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1024.
 Required: No
 
- ** LastModifiedTime **   <a name="sagemaker-Type-ProcessingJob-LastModifiedTime"></a>
-The time the processing job was last modified.
-Type: Timestamp
-Required: No
-
  ** MonitoringScheduleArn **   <a name="sagemaker-Type-ProcessingJob-MonitoringScheduleArn"></a>
 The ARN of a monitoring schedule for an endpoint associated with this processing job.
 Type: String
@@ -73,11 +63,6 @@ Required: No
  ** NetworkConfig **   <a name="sagemaker-Type-ProcessingJob-NetworkConfig"></a>
 Networking options for a job, such as network traffic encryption between containers, whether to allow inbound and outbound network calls to and from containers, and the VPC subnets and security groups to use for VPC-enabled jobs.
 Type: [NetworkConfig](API_NetworkConfig.md) object
-Required: No
-
- ** ProcessingEndTime **   <a name="sagemaker-Type-ProcessingJob-ProcessingEndTime"></a>
-The time that the processing job ended.
-Type: Timestamp
 Required: No
 
  ** ProcessingInputs **   <a name="sagemaker-Type-ProcessingJob-ProcessingInputs"></a>
@@ -114,11 +99,6 @@ Required: No
  ** ProcessingResources **   <a name="sagemaker-Type-ProcessingJob-ProcessingResources"></a>
 Identifies the resources, ML compute instances, and ML storage volumes to deploy for a processing job. In distributed training, you specify more than one instance.
 Type: [ProcessingResources](API_ProcessingResources.md) object
-Required: No
-
- ** ProcessingStartTime **   <a name="sagemaker-Type-ProcessingJob-ProcessingStartTime"></a>
-The time that the processing job started.
-Type: Timestamp
 Required: No
 
  ** RoleArn **   <a name="sagemaker-Type-ProcessingJob-RoleArn"></a>

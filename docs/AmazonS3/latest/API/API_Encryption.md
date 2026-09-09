@@ -13,7 +13,7 @@ Contains the type of server-side encryption used.
  ** EncryptionType **   <a name="AmazonS3-Type-Encryption-EncryptionType"></a>
 The server-side encryption algorithm used when storing job results in Amazon S3 (for example, AES256, `aws:kms`).
 Type: String
-Valid Values: `AES256 | aws:fsx | aws:kms | aws:kms:dsse`
+Valid Values: `AES256 | aws:fsx | aws:backup | aws:kms | aws:kms:dsse`
 Required: Yes
 
  ** KMSContext **   <a name="AmazonS3-Type-Encryption-KMSContext"></a>

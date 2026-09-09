@@ -12,8 +12,6 @@ Returns a list of AI recommendation jobs in your account. You can filter the res
 
 ```
 {
-   "CreationTimeAfter": {{number}},
-   "CreationTimeBefore": {{number}},
    "MaxResults": {{number}},
    "NameContains": "{{string}}",
    "NextToken": "{{string}}",
@@ -29,16 +27,6 @@ Returns a list of AI recommendation jobs in your account. You can filter the res
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
-
- ** [CreationTimeAfter](#API_ListAIRecommendationJobs_RequestSyntax) **   <a name="sagemaker-ListAIRecommendationJobs-request-CreationTimeAfter"></a>
-A filter that returns only jobs created after the specified time.
-Type: Timestamp
-Required: No
-
- ** [CreationTimeBefore](#API_ListAIRecommendationJobs_RequestSyntax) **   <a name="sagemaker-ListAIRecommendationJobs-request-CreationTimeBefore"></a>
-A filter that returns only jobs created before the specified time.
-Type: Timestamp
-Required: No
 
  ** [MaxResults](#API_ListAIRecommendationJobs_RequestSyntax) **   <a name="sagemaker-ListAIRecommendationJobs-request-MaxResults"></a>
 The maximum number of recommendation jobs to return in the response.
@@ -87,9 +75,7 @@ Required: No
       {
          "AIRecommendationJobArn": "string",
          "AIRecommendationJobName": "string",
-         "AIRecommendationJobStatus": "string",
-         "CreationTime": number,
-         "EndTime": number
+         "AIRecommendationJobStatus": "string"
       }
    ],
    "NextToken": "string"

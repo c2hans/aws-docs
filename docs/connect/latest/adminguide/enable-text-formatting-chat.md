@@ -16,7 +16,7 @@ With Connect Customer message formatting, you can enable your customers and agen
 ## Supported formatting types
 <a name="supported-format-types"></a>
 
-You can provide the following types of formatting on both the chat user interface and the agent application using markdown:
+You can provide the following types of formatting on both the chat user interface and the agent workspace using markdown:
 + Bold
 + Italic
 + Bulleted list

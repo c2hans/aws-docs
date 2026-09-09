@@ -92,7 +92,6 @@ Required: No
       "UserProfileArn": "string",
       "UserProfileName": "string"
    },
-   "CreationTime": number,
    "Description": "string",
    "FailureReason": "string",
    "LastModifiedBy": {
@@ -105,7 +104,6 @@ Required: No
       "UserProfileArn": "string",
       "UserProfileName": "string"
    },
-   "LastModifiedTime": number,
    "Name": "string",
    "Status": "string"
 }
@@ -157,10 +155,6 @@ Type: Integer
 Information about the user who created or modified a SageMaker resource.
 Type: [UserContext](API_UserContext.md) object
 
- ** [CreationTime](#API_DescribeComputeQuota_ResponseSyntax) **   <a name="sagemaker-DescribeComputeQuota-response-CreationTime"></a>
-Creation time of the compute allocation configuration.
-Type: Timestamp
-
  ** [Description](#API_DescribeComputeQuota_ResponseSyntax) **   <a name="sagemaker-DescribeComputeQuota-response-Description"></a>
 Description of the compute allocation definition.
 Type: String
@@ -175,10 +169,6 @@ Length Constraints: Minimum length of 0. Maximum length of 1024.
  ** [LastModifiedBy](#API_DescribeComputeQuota_ResponseSyntax) **   <a name="sagemaker-DescribeComputeQuota-response-LastModifiedBy"></a>
 Information about the user who created or modified a SageMaker resource.
 Type: [UserContext](API_UserContext.md) object
-
- ** [LastModifiedTime](#API_DescribeComputeQuota_ResponseSyntax) **   <a name="sagemaker-DescribeComputeQuota-response-LastModifiedTime"></a>
-Last modified time of the compute allocation configuration.
-Type: Timestamp
 
  ** [Name](#API_DescribeComputeQuota_ResponseSyntax) **   <a name="sagemaker-DescribeComputeQuota-response-Name"></a>
 Name of the compute allocation definition.

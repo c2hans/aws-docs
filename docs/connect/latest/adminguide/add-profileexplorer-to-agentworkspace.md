@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/add-profileexp
 # Add Profile explorer to the agent workspace
 <a name="add-profileexplorer-to-agentworkspace"></a>
 
-By default users who have the appropriate [security profile permissions](enabling-profile-explorer.md) can view Profile explorer on the Connect Customer admin website. You might also want your agents to have access to Profile explorer in their agent workspace. This topic explains how to do that.
+By default users who have the appropriate [security profile permissions](enabling-profile-explorer.md) can view Profile explorer on the Connect Customer admin website. You might also want your agents to have access to Profile explorer in the agent workspace. This topic explains how to do that.
 
 The following image shows an example of Profile explorer in the agent workspace.
 
@@ -81,7 +81,7 @@ In this step you need to assign agents permissions to access the new integration
 ## Tell agents to pin the new application
 <a name="assign-pe-agent-permissions"></a>
 
-Using your normal communication method, tell agents to pin the new application to their agent workspace. This allows them to access Profile explorer across workspace instances.
+Using your normal communication method, tell agents to pin the new application to the agent workspace. This allows them to access Profile explorer across workspace instances.
 + In the agent workspace, choose the more icon, then choose **Pin tab**, as shown in the following image.
 ![The agent workspace, the Pin tab option.](https://docs.aws.amazon.com/connect/latest/adminguide/images/pin-tab.png)
 

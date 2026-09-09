@@ -13,11 +13,15 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-open
 
 GPT-5.4 brings frontier reasoning, coding, computer use, long-context workflows, and tool use to Amazon Bedrock. It helps developers build AI applications and production workflows that can interpret context, interact with tools, operate software environments, and verify outputs across multiple steps. GPT-5.4 is well suited for professional workflows that require reliable reasoning and action across complex business systems. For more information about model development and performance, see the [model/service card](https://deploymentsafety.openai.com/gpt-5-4-thinking/gpt-5-4-thinking.pdf).
 + **Model launch date:** June 1, 2026
++ **EOL no sooner than:** June 1, 2027
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
 + **Model lifecycle:** Active
 + **Context window:** 272K tokens
 + **Max output tokens:** N/A
++ **Marketplace product ID:** `prod-3bbohv3635iau`
 
 | **Input Modalities** | **Output Modalities** |
 | --- | --- |

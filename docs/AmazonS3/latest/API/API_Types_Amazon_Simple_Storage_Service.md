@@ -53,6 +53,7 @@ The following data types are supported by Amazon S3:
 +  [ErrorDetails](API_ErrorDetails.md)
 +  [ErrorDocument](API_ErrorDocument.md)
 +  [EventBridgeConfiguration](API_EventBridgeConfiguration.md)
++  [EventHoldDuration](API_EventHoldDuration.md)
 +  [ExistingObjectReplication](API_ExistingObjectReplication.md)
 +  [FilterRule](API_FilterRule.md)
 +  [GetBucketMetadataConfigurationResult](API_GetBucketMetadataConfigurationResult.md)

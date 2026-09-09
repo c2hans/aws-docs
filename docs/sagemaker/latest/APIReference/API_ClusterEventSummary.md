@@ -30,11 +30,6 @@ Type: String
 Pattern: `[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}`
 Required: Yes
 
- ** EventTime **   <a name="sagemaker-Type-ClusterEventSummary-EventTime"></a>
-The timestamp when the event occurred.
-Type: Timestamp
-Required: Yes
-
  ** ResourceType **   <a name="sagemaker-Type-ClusterEventSummary-ResourceType"></a>
 The type of resource associated with the event. Valid values are `Cluster`, `InstanceGroup`, or `Instance`.
 Type: String

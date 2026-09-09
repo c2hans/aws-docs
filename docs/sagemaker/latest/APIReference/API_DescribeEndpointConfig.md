@@ -50,7 +50,6 @@ Required: Yes
          "S3OutputPath": "string"
       }
    },
-   "CreationTime": number,
    "DataCaptureConfig": {
       "CaptureContentTypeHeader": {
          "CsvContentTypes": [ "string" ],
@@ -231,10 +230,6 @@ The following data is returned in JSON format by the service.
  ** [AsyncInferenceConfig](#API_DescribeEndpointConfig_ResponseSyntax) **   <a name="sagemaker-DescribeEndpointConfig-response-AsyncInferenceConfig"></a>
 Returns the description of an endpoint configuration created using the [`CreateEndpointConfig`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpointConfig.html) API.
 Type: [AsyncInferenceConfig](API_AsyncInferenceConfig.md) object
-
- ** [CreationTime](#API_DescribeEndpointConfig_ResponseSyntax) **   <a name="sagemaker-DescribeEndpointConfig-response-CreationTime"></a>
-A timestamp that shows when the endpoint configuration was created.
-Type: Timestamp
 
  ** [DataCaptureConfig](#API_DescribeEndpointConfig_ResponseSyntax) **   <a name="sagemaker-DescribeEndpointConfig-response-DataCaptureConfig"></a>
 Configuration to control how SageMaker AI captures inference data.

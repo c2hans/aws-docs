@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-nvid
 
 Nemotron Nano 9B v2 is NVIDIA's 9-billion parameter model optimized for efficient text generation, reasoning, and coding on NVIDIA hardware. For more information about model development and performance, see the [model/service card](https://build.nvidia.com/nvidia/nvidia-nemotron-nano-9b-v2/modelcard).
 + **Model launch date:** Aug 18, 2025
++ **EOL no sooner than:** Aug 18, 2026
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/)
 + **Model lifecycle:** Active

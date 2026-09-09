@@ -104,8 +104,6 @@ Required: No
                "CandidateStepType": "string"
             }
          ],
-         "CreationTime": number,
-         "EndTime": number,
          "FailureReason": "string",
          "FinalAutoMLJobObjectiveMetric": {
             "MetricName": "string",
@@ -133,7 +131,6 @@ Required: No
                "ModelDataUrl": "string"
             }
          ],
-         "LastModifiedTime": number,
          "ObjectiveStatus": "string"
       }
    ],

@@ -28,11 +28,6 @@ The target entity to allocate compute resources to.
 Type: [ComputeQuotaTarget](API_ComputeQuotaTarget.md) object
 Required: Yes
 
- ** CreationTime **   <a name="sagemaker-Type-ComputeQuotaSummary-CreationTime"></a>
-Creation time of the compute allocation definition.
-Type: Timestamp
-Required: Yes
-
  ** Name **   <a name="sagemaker-Type-ComputeQuotaSummary-Name"></a>
 Name of the compute allocation definition.
 Type: String
@@ -68,11 +63,6 @@ Required: No
  ** ComputeQuotaVersion **   <a name="sagemaker-Type-ComputeQuotaSummary-ComputeQuotaVersion"></a>
 Version of the compute allocation definition.
 Type: Integer
-Required: No
-
- ** LastModifiedTime **   <a name="sagemaker-Type-ComputeQuotaSummary-LastModifiedTime"></a>
-Last modified time of the compute allocation definition.
-Type: Timestamp
 Required: No
 
 ## See Also

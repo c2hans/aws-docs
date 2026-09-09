@@ -14,10 +14,10 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/security_iam_regio
     {
       "Effect": "Allow",
       "Action": [
-        "neptune:DescribeGlobalClusters",
-        "neptune:DescribeDBClusters",
-        "neptune:FailoverGlobalCluster",
-        "neptune:SwitchoverGlobalCluster"
+        "rds:DescribeGlobalClusters",
+        "rds:DescribeDBClusters",
+        "rds:FailoverGlobalCluster",
+        "rds:SwitchoverGlobalCluster"
       ],
       "Resource": "*"
     }

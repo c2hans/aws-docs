@@ -10,16 +10,6 @@ Summary of information about the last monitoring job to run.
 ## Contents
 <a name="API_MonitoringExecutionSummary_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-MonitoringExecutionSummary-CreationTime"></a>
-The time at which the monitoring job was created.
-Type: Timestamp
-Required: Yes
-
- ** LastModifiedTime **   <a name="sagemaker-Type-MonitoringExecutionSummary-LastModifiedTime"></a>
-A timestamp that indicates the last time the monitoring job was modified.
-Type: Timestamp
-Required: Yes
-
  ** MonitoringExecutionStatus **   <a name="sagemaker-Type-MonitoringExecutionSummary-MonitoringExecutionStatus"></a>
 The status of the monitoring job.
 Type: String
@@ -31,11 +21,6 @@ The name of the monitoring schedule.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 63.
 Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
-Required: Yes
-
- ** ScheduledTime **   <a name="sagemaker-Type-MonitoringExecutionSummary-ScheduledTime"></a>
-The time the monitoring job was scheduled.
-Type: Timestamp
 Required: Yes
 
  ** EndpointName **   <a name="sagemaker-Type-MonitoringExecutionSummary-EndpointName"></a>

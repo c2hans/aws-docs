@@ -30,16 +30,6 @@ Type: String
 Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 
- ** CreationTime **   <a name="sagemaker-Type-ContextSummary-CreationTime"></a>
-When the context was created.
-Type: Timestamp
-Required: No
-
- ** LastModifiedTime **   <a name="sagemaker-Type-ContextSummary-LastModifiedTime"></a>
-When the context was last modified.
-Type: Timestamp
-Required: No
-
  ** Source **   <a name="sagemaker-Type-ContextSummary-Source"></a>
 The source of the context.
 Type: [ContextSource](API_ContextSource.md) object

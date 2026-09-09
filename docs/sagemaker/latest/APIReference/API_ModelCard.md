@@ -22,19 +22,9 @@ Information about the user who created or modified a SageMaker resource.
 Type: [UserContext](API_UserContext.md) object
 Required: No
 
- ** CreationTime **   <a name="sagemaker-Type-ModelCard-CreationTime"></a>
-The date and time that the model card was created.
-Type: Timestamp
-Required: No
-
  ** LastModifiedBy **   <a name="sagemaker-Type-ModelCard-LastModifiedBy"></a>
 Information about the user who created or modified a SageMaker resource.
 Type: [UserContext](API_UserContext.md) object
-Required: No
-
- ** LastModifiedTime **   <a name="sagemaker-Type-ModelCard-LastModifiedTime"></a>
-The date and time that the model card was last modified.
-Type: Timestamp
 Required: No
 
  ** ModelCardArn **   <a name="sagemaker-Type-ModelCard-ModelCardArn"></a>

@@ -11,8 +11,8 @@ This topic defines the flow block for specifying a flow to run during an interac
 <a name="set-event-flow-description"></a>
 + Specifies which flow to run during a contact event.
 + The following events are supported:
-  + **Default flow for agent UI**: specifies the flow to be invoked when a contact comes into the Agent Workspace. You can use this event to set up a [step-by-step](step-by-step-guided-experiences.md) guide to be played to the agent in this scenario.
-  + **Disconnect flow for agent UI**: specifies the flow to be invoked when a contact that is open in the Agent Workspace ends. You can use this event to set up a [step-by-step](step-by-step-guided-experiences.md) guide to be played to the agent in this scenario.
+  + **Default flow for agent UI**: specifies the flow to be invoked when a contact comes into the agent workspace. You can use this event to set up a [step-by-step](step-by-step-guided-experiences.md) guide to be played to the agent in this scenario.
+  + **Disconnect flow for agent UI**: specifies the flow to be invoked when a contact that is open in the agent workspace ends. You can use this event to set up a [step-by-step](step-by-step-guided-experiences.md) guide to be played to the agent in this scenario.
   + ** Flow at contact pause**: Specifies the flow to be invoked when a contact comes to paused state. For more information, see [Pause and resume tasks in Connect Customer Tasks](concepts-pause-and-resume-tasks.md).
   + **Flow at contact resume**: Specifies the flow to be invoked when a contact comes to resume from paused state. For more information, see [Pause and resume tasks in Connect Customer Tasks](concepts-pause-and-resume-tasks.md).
 

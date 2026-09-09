@@ -91,8 +91,6 @@ Required: Yes
             "CandidateStepType": "string"
          }
       ],
-      "CreationTime": number,
-      "EndTime": number,
       "FailureReason": "string",
       "FinalAutoMLJobObjectiveMetric": {
          "MetricName": "string",
@@ -120,16 +118,12 @@ Required: Yes
             "ModelDataUrl": "string"
          }
       ],
-      "LastModifiedTime": number,
       "ObjectiveStatus": "string"
    },
-   "CreationTime": number,
    "DataSplitConfig": {
       "ValidationFraction": number
    },
-   "EndTime": number,
    "FailureReason": "string",
-   "LastModifiedTime": number,
    "ModelDeployConfig": {
       "AutoGenerateEndpointName": boolean,
       "EndpointName": "string"
@@ -229,26 +223,14 @@ Valid Values: `ImageClassification | TextClassification | TimeSeriesForecasting 
 Information about the candidate produced by an AutoML training job V2, including its status, steps, and other properties.
 Type: [AutoMLCandidate](API_AutoMLCandidate.md) object
 
- ** [CreationTime](#API_DescribeAutoMLJobV2_ResponseSyntax) **   <a name="sagemaker-DescribeAutoMLJobV2-response-CreationTime"></a>
-Returns the creation time of the AutoML job V2.
-Type: Timestamp
-
  ** [DataSplitConfig](#API_DescribeAutoMLJobV2_ResponseSyntax) **   <a name="sagemaker-DescribeAutoMLJobV2-response-DataSplitConfig"></a>
 Returns the configuration settings of how the data are split into train and validation datasets.
 Type: [AutoMLDataSplitConfig](API_AutoMLDataSplitConfig.md) object
-
- ** [EndTime](#API_DescribeAutoMLJobV2_ResponseSyntax) **   <a name="sagemaker-DescribeAutoMLJobV2-response-EndTime"></a>
-Returns the end time of the AutoML job V2.
-Type: Timestamp
 
  ** [FailureReason](#API_DescribeAutoMLJobV2_ResponseSyntax) **   <a name="sagemaker-DescribeAutoMLJobV2-response-FailureReason"></a>
 Returns the reason for the failure of the AutoML job V2, when applicable.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1024.
-
- ** [LastModifiedTime](#API_DescribeAutoMLJobV2_ResponseSyntax) **   <a name="sagemaker-DescribeAutoMLJobV2-response-LastModifiedTime"></a>
-Returns the job's last modified time.
-Type: Timestamp
 
  ** [ModelDeployConfig](#API_DescribeAutoMLJobV2_ResponseSyntax) **   <a name="sagemaker-DescribeAutoMLJobV2-response-ModelDeployConfig"></a>
 Indicates whether the model was deployed automatically to an endpoint and the name of that endpoint if deployed automatically.

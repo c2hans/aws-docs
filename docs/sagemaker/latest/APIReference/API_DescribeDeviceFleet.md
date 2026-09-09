@@ -35,12 +35,10 @@ Required: Yes
 
 ```
 {
-   "CreationTime": number,
    "Description": "string",
    "DeviceFleetArn": "string",
    "DeviceFleetName": "string",
    "IotRoleAlias": "string",
-   "LastModifiedTime": number,
    "OutputConfig": {
       "KmsKeyId": "string",
       "PresetDeploymentConfig": "string",
@@ -57,10 +55,6 @@ Required: Yes
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
-
- ** [CreationTime](#API_DescribeDeviceFleet_ResponseSyntax) **   <a name="sagemaker-DescribeDeviceFleet-response-CreationTime"></a>
-Timestamp of when the device fleet was created.
-Type: Timestamp
 
  ** [Description](#API_DescribeDeviceFleet_ResponseSyntax) **   <a name="sagemaker-DescribeDeviceFleet-response-Description"></a>
 A description of the fleet.
@@ -83,10 +77,6 @@ Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
 The Amazon Resource Name (ARN) alias created in AWS Internet of Things (IoT).
 Type: String
 Pattern: `arn:aws[a-z\-]*:iam::\d{12}:rolealias/?[a-zA-Z_0-9+=,.@\-_/]+`
-
- ** [LastModifiedTime](#API_DescribeDeviceFleet_ResponseSyntax) **   <a name="sagemaker-DescribeDeviceFleet-response-LastModifiedTime"></a>
-Timestamp of when the device fleet was last updated.
-Type: Timestamp
 
  ** [OutputConfig](#API_DescribeDeviceFleet_ResponseSyntax) **   <a name="sagemaker-DescribeDeviceFleet-response-OutputConfig"></a>
 The output configuration for storing sampled data.

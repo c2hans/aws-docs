@@ -51,10 +51,10 @@ When creating or editing an AI Agent:
 
 1. Add instructions on how the AI agent should use the selected tool to optimize AI agent performance.
 
-### Agent Workspace Permissions
+### Agent workspace permissions
 <a name="agent-workspace-permissions"></a>
 
-For human agents using AI Agent assistance in the Agent Workspace, assign this permission to get access to the Connect Assistant that is powered by AI agents.
+For human agents using AI Agent assistance in the agent workspace, assign this permission to get access to the Connect Assistant that is powered by AI agents.
 
 | Permission | Location |
 | --- | --- |

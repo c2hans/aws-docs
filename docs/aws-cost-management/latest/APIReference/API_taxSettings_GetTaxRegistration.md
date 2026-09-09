@@ -72,6 +72,7 @@ Content-type: application/json
             "registryCommercialCode": "string"
          },
          "franceAdditionalInfo": {
+            "eInvoiceRoutingCode": "string",
             "sirenNumber": "string"
          },
          "georgiaAdditionalInfo": {
@@ -106,6 +107,9 @@ Content-type: application/json
             "businessRegistrationNumber": "string",
             "serviceTaxCodes": [ "string" ],
             "taxInformationNumber": "string"
+         },
+         "monacoAdditionalInfo": {
+            "businessNumber": "string"
          },
          "philippinesAdditionalInfo": {
             "isVatRegistered": boolean

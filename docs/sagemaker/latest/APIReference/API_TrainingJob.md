@@ -33,11 +33,6 @@ Contains information about the output location for managed spot training checkpo
 Type: [CheckpointConfig](API_CheckpointConfig.md) object
 Required: No
 
- ** CreationTime **   <a name="sagemaker-Type-TrainingJob-CreationTime"></a>
-A timestamp that indicates when the training job was created.
-Type: Timestamp
-Required: No
-
  ** DebugHookConfig **   <a name="sagemaker-Type-TrainingJob-DebugHookConfig"></a>
 Configuration information for the Amazon SageMaker Debugger hook parameters, metric and tensor collections, and storage paths. To learn more about how to configure the `DebugHookConfig` parameter, see [Use the SageMaker and Debugger Configuration API Operations to Create, Update, and Debug Your Training Job](https://docs.aws.amazon.com/sagemaker/latest/dg/debugger-createtrainingjob-api.html).
 Type: [DebugHookConfig](API_DebugHookConfig.md) object
@@ -122,11 +117,6 @@ The Amazon Resource Name (ARN) of the labeling job.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 2048.
 Pattern: `arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:labeling-job/.*`
-Required: No
-
- ** LastModifiedTime **   <a name="sagemaker-Type-TrainingJob-LastModifiedTime"></a>
-A timestamp that indicates when the status of the training job was last modified.
-Type: Timestamp
 Required: No
 
  ** ModelArtifacts **   <a name="sagemaker-Type-TrainingJob-ModelArtifacts"></a>
@@ -221,11 +211,6 @@ Configuration of storage locations for the Amazon SageMaker Debugger TensorBoard
 Type: [TensorBoardOutputConfig](API_TensorBoardOutputConfig.md) object
 Required: No
 
- ** TrainingEndTime **   <a name="sagemaker-Type-TrainingJob-TrainingEndTime"></a>
-Indicates the time when the training job ends on training instances. You are billed for the time interval between the value of `TrainingStartTime` and this time. For successful jobs and stopped jobs, this is the time after model artifacts are uploaded. For failed jobs, this is the time when SageMaker detects a job failure.
-Type: Timestamp
-Required: No
-
  ** TrainingJobArn **   <a name="sagemaker-Type-TrainingJob-TrainingJobArn"></a>
 The Amazon Resource Name (ARN) of the training job.
 Type: String
@@ -251,11 +236,6 @@ Training job statuses are:
 For more detailed information, see `SecondaryStatus`.
 Type: String
 Valid Values: `InProgress | Completed | Failed | Stopping | Stopped | Deleting`
-Required: No
-
- ** TrainingStartTime **   <a name="sagemaker-Type-TrainingJob-TrainingStartTime"></a>
-Indicates the time when the training job starts on training instances. You are billed for the time interval between this time and the value of `TrainingEndTime`. The start time in CloudWatch Logs might be later than this time. The difference is due to the time it takes to download the training data and to the size of the training container.
-Type: Timestamp
 Required: No
 
  ** TrainingTimeInSeconds **   <a name="sagemaker-Type-TrainingJob-TrainingTimeInSeconds"></a>

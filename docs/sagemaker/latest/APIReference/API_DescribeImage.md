@@ -35,14 +35,12 @@ Required: Yes
 
 ```
 {
-   "CreationTime": number,
    "Description": "string",
    "DisplayName": "string",
    "FailureReason": "string",
    "ImageArn": "string",
    "ImageName": "string",
    "ImageStatus": "string",
-   "LastModifiedTime": number,
    "RoleArn": "string"
 }
 ```
@@ -53,10 +51,6 @@ Required: Yes
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
-
- ** [CreationTime](#API_DescribeImage_ResponseSyntax) **   <a name="sagemaker-DescribeImage-response-CreationTime"></a>
-When the image was created.
-Type: Timestamp
 
  ** [Description](#API_DescribeImage_ResponseSyntax) **   <a name="sagemaker-DescribeImage-response-Description"></a>
 The description of the image.
@@ -91,10 +85,6 @@ Pattern: `[a-zA-Z0-9]([-.]?[a-zA-Z0-9]){0,62}`
 The status of the image.
 Type: String
 Valid Values: `CREATING | CREATED | CREATE_FAILED | UPDATING | UPDATE_FAILED | DELETING | DELETE_FAILED`
-
- ** [LastModifiedTime](#API_DescribeImage_ResponseSyntax) **   <a name="sagemaker-DescribeImage-response-LastModifiedTime"></a>
-When the image was last modified.
-Type: Timestamp
 
  ** [RoleArn](#API_DescribeImage_ResponseSyntax) **   <a name="sagemaker-DescribeImage-response-RoleArn"></a>
 The ARN of the IAM role that enables Amazon SageMaker AI to perform tasks on your behalf.

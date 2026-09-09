@@ -52,14 +52,12 @@ Required: No
 {
    "BaseImage": "string",
    "ContainerImage": "string",
-   "CreationTime": number,
    "FailureReason": "string",
    "Horovod": boolean,
    "ImageArn": "string",
    "ImageVersionArn": "string",
    "ImageVersionStatus": "string",
    "JobType": "string",
-   "LastModifiedTime": number,
    "MLFramework": "string",
    "Processor": "string",
    "ProgrammingLang": "string",
@@ -86,10 +84,6 @@ Pattern: `.*`
 The registry path of the container image that contains this image version.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
-
- ** [CreationTime](#API_DescribeImageVersion_ResponseSyntax) **   <a name="sagemaker-DescribeImageVersion-response-CreationTime"></a>
-When the version was created.
-Type: Timestamp
 
  ** [FailureReason](#API_DescribeImageVersion_ResponseSyntax) **   <a name="sagemaker-DescribeImageVersion-response-FailureReason"></a>
 When a create or delete operation fails, the reason for the failure.
@@ -124,10 +118,6 @@ Indicates SageMaker AI job type compatibility.
 +  `NOTEBOOK_KERNEL`: The image version is compatible with SageMaker AI notebook kernels.
 Type: String
 Valid Values: `TRAINING | INFERENCE | NOTEBOOK_KERNEL`
-
- ** [LastModifiedTime](#API_DescribeImageVersion_ResponseSyntax) **   <a name="sagemaker-DescribeImageVersion-response-LastModifiedTime"></a>
-When the version was last modified.
-Type: Timestamp
 
  ** [MLFramework](#API_DescribeImageVersion_ResponseSyntax) **   <a name="sagemaker-DescribeImageVersion-response-MLFramework"></a>
 The machine learning framework vended in the image version.

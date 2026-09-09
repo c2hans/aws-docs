@@ -52,6 +52,8 @@ The following data types are supported:
 +  [MuteTargets](API_MuteTargets.md)
 +  [PartialFailure](API_PartialFailure.md)
 +  [Range](API_Range.md)
++  [ResourceMetricsConfiguration](API_ResourceMetricsConfiguration.md)
++  [ResourceMetricSelection](API_ResourceMetricSelection.md)
 +  [Rule](API_Rule.md)
 +  [Schedule](API_Schedule.md)
 +  [ScheduleConfiguration](API_ScheduleConfiguration.md)
@@ -61,3 +63,4 @@ The following data types are supported:
 +  [StatisticSet](API_StatisticSet.md)
 +  [Tag](API_Tag.md)
 +  [WallClockWindow](API_WallClockWindow.md)
++  [WarmUpConfiguration](API_WarmUpConfiguration.md)

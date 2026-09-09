@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 <a name="API_taxSettings_ChileAdditionalInfo_Contents"></a>
 
  ** businessActivity **   <a name="awscostmanagement-Type-taxSettings_ChileAdditionalInfo-businessActivity"></a>
- The business activity of the taxpayer in Chile.
+ The business activity code of the taxpayer in Chile. This must be the activity code shown on your SII (Servicio de Impuestos Internos) tax profile. For the list of valid activity codes, see [SII activity codes](https://www.sii.cl/ayudas/ayudas_por_servicios/1956-codigos-1959.html).
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 200.
 Pattern: `[\s\S]*`

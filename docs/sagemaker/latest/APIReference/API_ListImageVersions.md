@@ -12,11 +12,7 @@ Lists the versions of a specified image and their properties. The list can be fi
 
 ```
 {
-   "CreationTimeAfter": {{number}},
-   "CreationTimeBefore": {{number}},
    "ImageName": "{{string}}",
-   "LastModifiedTimeAfter": {{number}},
-   "LastModifiedTimeBefore": {{number}},
    "MaxResults": {{number}},
    "NextToken": "{{string}}",
    "SortBy": "{{string}}",
@@ -31,32 +27,12 @@ For information about the parameters that are common to all actions, see [Common
 
 The request accepts the following data in JSON format.
 
- ** [CreationTimeAfter](#API_ListImageVersions_RequestSyntax) **   <a name="sagemaker-ListImageVersions-request-CreationTimeAfter"></a>
-A filter that returns only versions created on or after the specified time.
-Type: Timestamp
-Required: No
-
- ** [CreationTimeBefore](#API_ListImageVersions_RequestSyntax) **   <a name="sagemaker-ListImageVersions-request-CreationTimeBefore"></a>
-A filter that returns only versions created on or before the specified time.
-Type: Timestamp
-Required: No
-
  ** [ImageName](#API_ListImageVersions_RequestSyntax) **   <a name="sagemaker-ListImageVersions-request-ImageName"></a>
 The name of the image to list the versions of.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 63.
 Pattern: `[a-zA-Z0-9]([-.]?[a-zA-Z0-9]){0,62}`
 Required: Yes
-
- ** [LastModifiedTimeAfter](#API_ListImageVersions_RequestSyntax) **   <a name="sagemaker-ListImageVersions-request-LastModifiedTimeAfter"></a>
-A filter that returns only versions modified on or after the specified time.
-Type: Timestamp
-Required: No
-
- ** [LastModifiedTimeBefore](#API_ListImageVersions_RequestSyntax) **   <a name="sagemaker-ListImageVersions-request-LastModifiedTimeBefore"></a>
-A filter that returns only versions modified on or before the specified time.
-Type: Timestamp
-Required: No
 
  ** [MaxResults](#API_ListImageVersions_RequestSyntax) **   <a name="sagemaker-ListImageVersions-request-MaxResults"></a>
 The maximum number of versions to return in the response. The default value is 10.
@@ -90,12 +66,10 @@ Required: No
 {
    "ImageVersions": [
       {
-         "CreationTime": number,
          "FailureReason": "string",
          "ImageArn": "string",
          "ImageVersionArn": "string",
          "ImageVersionStatus": "string",
-         "LastModifiedTime": number,
          "Version": number
       }
    ],

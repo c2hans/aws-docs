@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-writ
 
 Palmyra Vision 7B is Writer's advanced multimodal language model, designed to interpret and generate text from images and video, providing robust visual analysis capabilities for enterprise needs. It excels at extracting handwritten text, interpreting complex charts and graphs, image-based compliance checks, and product description generation. For more information about model development and performance, see the [model/service card](https://writer.com/llms/palmyra-vision/).
 + **Model launch date:** Mar 26, 2026
++ **EOL no sooner than:** Mar 26, 2027
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
 + **Model lifecycle:** Active

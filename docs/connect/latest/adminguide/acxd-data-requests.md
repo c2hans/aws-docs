@@ -71,6 +71,13 @@ For example, a scheduling flow may collect a user's preferred date, send it to a
 
 Use a name and description that make the purpose easy for teammates to understand.
 
+Examples:
++ GetAppointmentAvailability
++ AuthenticateCustomer
++ GetOrderStatus
++ UpdateReservation
++ SendConfirmationEmail
+
 ## Implementation types
 <a name="acxd-data-requests-implementations"></a>
 
@@ -148,11 +155,14 @@ Use a request model when the API needs values from the conversation.
 You may select the Auto-generate option (star icon) to input sample JSON for easily constructing a complex schema structure.
 
 Examples:
-+ Send the user's email to retrieve a profile.
-+ Send a selected date to retrieve available times.
-+ Send an order number to retrieve order status.
-+ Send a reservation ID to update a booking.
-+ Send a confirmation message to an external notification service.
+
+| Request field | Example use |
+| --- | --- |
+| `email` | Send the user's email to retrieve a profile. |
+| `appointmentDate` | Send a selected date to retrieve available times. |
+| `orderId` | Send an order number to retrieve order status. |
+| `reservationId` | Send a reservation ID to update a booking. |
+| `message` | Send a confirmation message to an external notification service. |
 
 Fields in the request model can be populated dynamically from values captured in the conversation, such as slots, context variables, system variables, or prior data request results.
 
@@ -166,11 +176,14 @@ Use the response model to shape returned data so it can be referenced in the con
 You may select the Auto-generate option (star icon) to input sample JSON for easily constructing a complex schema structure.
 
 Examples:
-+ Personalize a greeting or confirmation.
-+ Present appointment options to the user.
-+ Tell the user where their order stands.
-+ Confirm a completed action.
-+ Show selectable return or exchange options.
+
+| Response data | How it might be used |
+| --- | --- |
+| `firstName` | Personalize a greeting or confirmation. |
+| `availableTimes` | Present appointment options to the user. |
+| `orderStatus` | Tell the user where their order stands. |
+| `confirmationNumber` | Confirm a completed action. |
+| `eligibleItems` | Show selectable return or exchange options. |
 
 A clear response model makes it easier to use returned values in later nodes, prompts, user choices, conditions, and messages.
 
@@ -281,6 +294,10 @@ If the test fails, review:
 1. Save and test the flow.
 
 After the data request returns successfully, use the returned values in downstream messages, conditions, user choices, or other nodes.
+
+Example:
+
+"I found three available times: {AvailableTimes}. Which one works best for you?"
 
 ## Using a data request as an agent tool
 <a name="acxd-data-requests-as-tool"></a>

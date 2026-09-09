@@ -17,10 +17,8 @@ For more information about how to reserve GPU capacity for your SageMaker traini
 ```
 {
    "DurationHours": {{number}},
-   "EndTimeBefore": {{number}},
    "InstanceCount": {{number}},
    "InstanceType": "{{string}}",
-   "StartTimeAfter": {{number}},
    "TargetResources": [ "{{string}}" ],
    "TrainingPlanArn": "{{string}}",
    "UltraServerCount": {{number}},
@@ -41,11 +39,6 @@ Type: Long
 Valid Range: Minimum value of 1. Maximum value of 87600.
 Required: No
 
- ** [EndTimeBefore](#API_SearchTrainingPlanOfferings_RequestSyntax) **   <a name="sagemaker-SearchTrainingPlanOfferings-request-EndTimeBefore"></a>
-A filter to search for reserved capacity offerings with an end time before a specified date.
-Type: Timestamp
-Required: No
-
  ** [InstanceCount](#API_SearchTrainingPlanOfferings_RequestSyntax) **   <a name="sagemaker-SearchTrainingPlanOfferings-request-InstanceCount"></a>
 The number of instances you want to reserve in the training plan offerings. This allows you to specify the quantity of compute resources needed for your SageMaker training jobs or SageMaker HyperPod clusters, helping you find reserved capacity offerings that match your requirements.
 Type: Integer
@@ -56,11 +49,6 @@ Required: No
 The type of instance you want to search for in the available training plan offerings. This field allows you to filter the search results based on the specific compute resources you require for your SageMaker training jobs or SageMaker HyperPod clusters. When searching for training plan offerings, specifying the instance type helps you find Reserved Instances that match your computational needs.
 Type: String
 Valid Values: `ml.p4d.24xlarge | ml.p5.48xlarge | ml.p5e.48xlarge | ml.p5en.48xlarge | ml.trn1.32xlarge | ml.trn2.48xlarge | ml.p6-b200.48xlarge | ml.p4de.24xlarge | ml.p6e-gb200.36xlarge | ml.p5.4xlarge | ml.p6-b300.48xlarge`
-Required: No
-
- ** [StartTimeAfter](#API_SearchTrainingPlanOfferings_RequestSyntax) **   <a name="sagemaker-SearchTrainingPlanOfferings-request-StartTimeAfter"></a>
-A filter to search for training plan offerings with a start time after a specified date.
-Type: Timestamp
 Required: No
 
  ** [TargetResources](#API_SearchTrainingPlanOfferings_RequestSyntax) **   <a name="sagemaker-SearchTrainingPlanOfferings-request-TargetResources"></a>
@@ -103,8 +91,6 @@ Required: No
          "AvailabilityZone": "string",
          "CurrencyCode": "string",
          "DurationHours": number,
-         "EndDate": number,
-         "StartDate": number,
          "TrainingPlanExtensionOfferingId": "string",
          "UpfrontFee": "string"
       }
@@ -114,20 +100,14 @@ Required: No
          "CurrencyCode": "string",
          "DurationHours": number,
          "DurationMinutes": number,
-         "RequestedEndTimeBefore": number,
-         "RequestedStartTimeAfter": number,
          "ReservedCapacityOfferings": [
             {
                "AvailabilityZone": "string",
                "DurationHours": number,
                "DurationMinutes": number,
-               "EndTime": number,
-               "ExtensionEndTime": number,
-               "ExtensionStartTime": number,
                "InstanceCount": number,
                "InstanceType": "string",
                "ReservedCapacityType": "string",
-               "StartTime": number,
                "UltraServerCount": number,
                "UltraServerType": "string"
             }

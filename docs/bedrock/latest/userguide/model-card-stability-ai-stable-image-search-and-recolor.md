@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-stab
 
 Stable Image Search and Recolor is Stability AI's model that identifies objects in images and changes their colors based on text prompts. For more information about model development and performance, see the [model/service card](https://stability.ai/stable-image).
 + **Model launch date:** Aug 19, 2024
++ **EOL no sooner than:** Aug 19, 2025
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
 + **Model lifecycle:** Active

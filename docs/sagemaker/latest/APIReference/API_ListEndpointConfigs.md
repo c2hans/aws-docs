@@ -12,8 +12,6 @@ Lists endpoint configurations.
 
 ```
 {
-   "CreationTimeAfter": {{number}},
-   "CreationTimeBefore": {{number}},
    "MaxResults": {{number}},
    "NameContains": "{{string}}",
    "NextToken": "{{string}}",
@@ -28,16 +26,6 @@ Lists endpoint configurations.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
-
- ** [CreationTimeAfter](#API_ListEndpointConfigs_RequestSyntax) **   <a name="sagemaker-ListEndpointConfigs-request-CreationTimeAfter"></a>
-A filter that returns only endpoint configurations with a creation time greater than or equal to the specified time (timestamp).
-Type: Timestamp
-Required: No
-
- ** [CreationTimeBefore](#API_ListEndpointConfigs_RequestSyntax) **   <a name="sagemaker-ListEndpointConfigs-request-CreationTimeBefore"></a>
-A filter that returns only endpoint configurations created before the specified time (timestamp).
-Type: Timestamp
-Required: No
 
  ** [MaxResults](#API_ListEndpointConfigs_RequestSyntax) **   <a name="sagemaker-ListEndpointConfigs-request-MaxResults"></a>
 The maximum number of training jobs to return in the response.
@@ -78,7 +66,6 @@ Required: No
 {
    "EndpointConfigs": [
       {
-         "CreationTime": number,
          "EndpointConfigArn": "string",
          "EndpointConfigName": "string"
       }

@@ -10,21 +10,11 @@ Lists a summary of the properties of a lineage group. A lineage group provides a
 ## Contents
 <a name="API_LineageGroupSummary_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-LineageGroupSummary-CreationTime"></a>
-The creation time of the lineage group summary.
-Type: Timestamp
-Required: No
-
  ** DisplayName **   <a name="sagemaker-Type-LineageGroupSummary-DisplayName"></a>
 The display name of the lineage group summary.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 120.
 Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,119}`
-Required: No
-
- ** LastModifiedTime **   <a name="sagemaker-Type-LineageGroupSummary-LastModifiedTime"></a>
-The last modified time of the lineage group summary.
-Type: Timestamp
 Required: No
 
  ** LineageGroupArn **   <a name="sagemaker-Type-LineageGroupSummary-LineageGroupArn"></a>

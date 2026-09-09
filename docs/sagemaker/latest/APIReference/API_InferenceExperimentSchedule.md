@@ -12,15 +12,7 @@ The maximum duration that you can set for an inference experiment is 30 days.
 ## Contents
 <a name="API_InferenceExperimentSchedule_Contents"></a>
 
- ** EndTime **   <a name="sagemaker-Type-InferenceExperimentSchedule-EndTime"></a>
-The timestamp at which the inference experiment ended or will end.
-Type: Timestamp
-Required: No
-
- ** StartTime **   <a name="sagemaker-Type-InferenceExperimentSchedule-StartTime"></a>
-The timestamp at which the inference experiment started or will start.
-Type: Timestamp
-Required: No
+The members of this exception structure are context-dependent.
 
 ## See Also
 <a name="API_InferenceExperimentSchedule_SeeAlso"></a>

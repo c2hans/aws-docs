@@ -18,13 +18,13 @@ You can attach `AmazonODBNetworkAdmin` to your users, groups, and roles.
 <a name="AmazonODBNetworkAdmin-details"></a>
 + **Type**: Job function policy
 + **Creation time**: August 07, 2026, 01:12 UTC
-+ **Edited time:** August 07, 2026, 01:12 UTC
++ **Edited time:** September 04, 2026, 21:37 UTC
 + **ARN**: `arn:aws:iam::aws:policy/job-function/AmazonODBNetworkAdmin`
 
 ## Policy version
 <a name="AmazonODBNetworkAdmin-version"></a>
 
-**Policy version:** v1 (default)
+**Policy version:** v2 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -75,12 +75,7 @@ The policy's default version is the version that defines the permissions for the
         "ec2:ModifyOdbNetworkPeering",
         "ec2:DeleteOdbNetworkPeering"
       ],
-      "Resource" : "*",
-      "Condition" : {
-        "ForAnyValue:StringEquals" : {
-          "aws:CalledVia" : "odb.amazonaws.com"
-        }
-      }
+      "Resource" : "*"
     },
     {
       "Sid" : "AllowSLRActions",

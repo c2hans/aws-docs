@@ -12,8 +12,6 @@ Retrieves the list of SageMaker HyperPod clusters.
 
 ```
 {
-   "CreationTimeAfter": {{number}},
-   "CreationTimeBefore": {{number}},
    "MaxResults": {{number}},
    "NameContains": "{{string}}",
    "NextToken": "{{string}}",
@@ -29,22 +27,6 @@ Retrieves the list of SageMaker HyperPod clusters.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
-
- ** [CreationTimeAfter](#API_ListClusters_RequestSyntax) **   <a name="sagemaker-ListClusters-request-CreationTimeAfter"></a>
-Set a start time for the time range during which you want to list SageMaker HyperPod clusters. Timestamps are formatted according to the ISO 8601 standard.
-Acceptable formats include:
-+  `YYYY-MM-DDThh:mm:ss.sssTZD` (UTC), for example, `2014-10-01T20:30:00.000Z`
-+  `YYYY-MM-DDThh:mm:ss.sssTZD` (with offset), for example, `2014-10-01T12:30:00.000-08:00`
-+  `YYYY-MM-DD`, for example, `2014-10-01`
-+ Unix time in seconds, for example, `1412195400`. This is also referred to as Unix Epoch time and represents the number of seconds since midnight, January 1, 1970 UTC.
-For more information about the timestamp format, see [Timestamp](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-parameters-types.html#parameter-type-timestamp) in the * AWS Command Line Interface User Guide*.
-Type: Timestamp
-Required: No
-
- ** [CreationTimeBefore](#API_ListClusters_RequestSyntax) **   <a name="sagemaker-ListClusters-request-CreationTimeBefore"></a>
-Set an end time for the time range during which you want to list SageMaker HyperPod clusters. A filter that returns nodes in a SageMaker HyperPod cluster created before the specified time. The acceptable formats are the same as the timestamp formats for `CreationTimeAfter`. For more information about the timestamp format, see [Timestamp](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-parameters-types.html#parameter-type-timestamp) in the * AWS Command Line Interface User Guide*.
-Type: Timestamp
-Required: No
 
  ** [MaxResults](#API_ListClusters_RequestSyntax) **   <a name="sagemaker-ListClusters-request-MaxResults"></a>
 Specifies the maximum number of clusters to evaluate for the operation (not necessarily the number of matching items). After SageMaker processes the number of clusters up to `MaxResults`, it stops the operation and returns the matching clusters up to that point. If all the matching clusters are desired, SageMaker will go through all the clusters until `NextToken` is empty.
@@ -95,7 +77,6 @@ Required: No
          "ClusterArn": "string",
          "ClusterName": "string",
          "ClusterStatus": "string",
-         "CreationTime": number,
          "ImageVersionStatus": "string",
          "TrainingPlanArns": [ "string" ]
       }

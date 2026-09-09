@@ -95,6 +95,10 @@ To call this API operation for specific countries, see the following country-spe
 
  **France**
 + You must specify the `sirenNumber` in the `franceAdditionalInfo` field of the `additionalTaxInformation` object.
++ You can optionally specify the `eInvoiceRoutingCode` in the `franceAdditionalInfo` field of the `additionalTaxInformation` object.
+
+ **Monaco**
++ You must specify the `businessNumber` in the `monacoAdditionalInfo` field of the `additionalTaxInformation` object.
 
  **Poland**
 + You can optionally specify the `taxRegistrationNumberType` in the `polandAdditionalInfo` field of the `additionalTaxInformation` object. Valid values are `EUTaxRegistrationNumber`, `LocalTaxRegistrationNumber`, or `LocalRegistrationNumber`.
@@ -132,6 +136,7 @@ Content-type: application/json
             "registryCommercialCode": "{{string}}"
          },
          "franceAdditionalInfo": {
+            "eInvoiceRoutingCode": "{{string}}",
             "sirenNumber": "{{string}}"
          },
          "georgiaAdditionalInfo": {
@@ -163,6 +168,9 @@ Content-type: application/json
             "businessRegistrationNumber": "{{string}}",
             "serviceTaxCodes": [ "{{string}}" ],
             "taxInformationNumber": "{{string}}"
+         },
+         "monacoAdditionalInfo": {
+            "businessNumber": "{{string}}"
          },
          "philippinesAdditionalInfo": {
             "isVatRegistered": {{boolean}}

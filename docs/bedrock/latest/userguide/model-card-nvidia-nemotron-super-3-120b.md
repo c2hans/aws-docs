@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-nvid
 
 NVIDIA Nemotron 3 Super is a 120B-parameter open hybrid MoE model, activating just 12B parameters for maximum compute efficiency and accuracy in complex multi-agent applications. It delivers up to 7x higher throughput, providing fast, cost-efficient inference for agentic tasks. A long context window gives the model long-term memory, preventing AI agents from losing focus on long, multi-step tasks and ensuring high-accuracy results. Fully open with weights, datasets, and recipes, it allows easy customization and secure deployment. For more information about model development and performance, see the [model/service card](https://build.nvidia.com/nvidia/nemotron-3-super-120b-a12b/modelcard).
 + **Model launch date:** Mar 11, 2026
++ **EOL no sooner than:** Mar 11, 2027
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/)
 + **Model lifecycle:** Active

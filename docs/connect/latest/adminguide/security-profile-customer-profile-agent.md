@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/security-profi
 
 Assign the following **Customer profiles** permissions as needed to the agent's security profile:
 + **View**: Enables agents to see the Customer profiles application. They can:
-  + View profiles that are autopopulated in the agent app.
+  + View profiles that are autopopulated in the agent workspace.
   + Search for profiles.
   + View details stored in customer profiles (for example, Name, Address).
   + Associate contact records to profiles, as shown in the following image.

@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anth
 
 Claude Opus 4.7 is an Anthropic Opus model built for coding, enterprise workflows, and long-running agentic tasks.
 + **Model launch date:** Apr 16, 2026
++ **EOL no sooner than:** Apr 16, 2027
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
 + **Model lifecycle:** Active

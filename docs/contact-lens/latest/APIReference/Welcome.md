@@ -11,4 +11,4 @@ Amazon Connect Contact Lens enables you to analyze conversations between custome
 
 Amazon Connect Contact Lens provides both real-time and post-call analytics of customer-agent conversations. For more information, see [Analyze conversations using speech analytics](https://docs.aws.amazon.com/connect/latest/adminguide/analyze-conversations.html) in the *Amazon Connect Administrator Guide*.
 
-This document was last published on September 7, 2026.
+This document was last published on September 9, 2026.

@@ -80,10 +80,10 @@ The caller who associates or uses the Dataset must have `kms:Decrypt` permission
             "Resource": "*",
             "Condition": {
                 "StringEquals": {
-                    "aws:SourceAccount": "{{account-id}}"
+                    "aws:SourceAccount": "{{111122223333}}"
                 },
                 "ArnLike": {
-                    "aws:SourceArn": "arn:aws:cloudwatch:{{region}}:{{account-id}}:dataset/default"
+                    "aws:SourceArn": "arn:aws:cloudwatch:{{us-east-1}}:{{111122223333}}:dataset/default"
                 }
             }
         },
@@ -102,11 +102,11 @@ The caller who associates or uses the Dataset must have `kms:Decrypt` permission
             "Resource": "*",
             "Condition": {
                 "StringEquals": {
-                    "aws:SourceAccount": "{{account-id}}",
-                    "kms:EncryptionContext:aws:cloudwatch:arn": "arn:aws:cloudwatch:{{region}}:{{account-id}}:dataset/default"
+                    "aws:SourceAccount": "{{111122223333}}",
+                    "kms:EncryptionContext:aws:cloudwatch:arn": "arn:aws:cloudwatch:{{us-east-1}}:{{111122223333}}:dataset/default"
                 },
                 "ArnLike": {
-                    "aws:SourceArn": "arn:aws:cloudwatch:{{region}}:{{account-id}}:dataset/default"
+                    "aws:SourceArn": "arn:aws:cloudwatch:{{us-east-1}}:{{111122223333}}:dataset/default"
                 }
             }
         },
@@ -114,14 +114,14 @@ The caller who associates or uses the Dataset must have `kms:Decrypt` permission
             "Sid": "AllowCallerDecrypt",
             "Effect": "Allow",
             "Principal": {
-                "AWS": "arn:aws:iam::{{account-id}}:role/{{YourApplicationRole}}"
+                "AWS": "arn:aws:iam::{{111122223333}}:role/{{YourApplicationRole}}"
             },
             "Action": "kms:Decrypt",
             "Resource": "*",
             "Condition": {
                 "StringEquals": {
-                    "kms:ViaService": "cloudwatch.{{region}}.amazonaws.com",
-                    "kms:EncryptionContext:aws:cloudwatch:arn": "arn:aws:cloudwatch:{{region}}:{{account-id}}:dataset/default"
+                    "kms:ViaService": "cloudwatch.{{us-east-1}}.amazonaws.com",
+                    "kms:EncryptionContext:aws:cloudwatch:arn": "arn:aws:cloudwatch:{{us-east-1}}:{{111122223333}}:dataset/default"
                 }
             }
         }
@@ -129,7 +129,7 @@ The caller who associates or uses the Dataset must have `kms:Decrypt` permission
 }
 ```
 
-Replace {{account-id}} and {{region}} with your own values.
+Replace the example account ID (`111122223333`) and the example AWS Region (`us-east-1`) with your own values.
 
 For more information about key policies, see [Key policies in AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/key-policies.html) in the AWS Key Management Service Developer Guide.
 
@@ -143,7 +143,7 @@ To associate a customer managed key by using the AWS CLI, run the following comm
 ```
 aws cloudwatch associate-dataset-kms-key \
     --dataset-name default \
-    --kms-key-arn arn:aws:kms:{{region}}:{{account-id}}:key/{{key-id}}
+    --kms-key-arn arn:aws:kms:{{us-east-1}}:{{111122223333}}:key/{{key-id}}
 ```
 
 ## Changing or removing encryption configuration
@@ -207,7 +207,7 @@ Call `AssociateDatasetKmsKey` with a new, valid KMS key ARN. CloudWatch validate
 ```
 aws cloudwatch associate-dataset-kms-key \
     --dataset-name default \
-    --kms-key-arn arn:aws:kms:{{region}}:{{account-id}}:key/{{new-key-id}}
+    --kms-key-arn arn:aws:kms:{{us-east-1}}:{{111122223333}}:key/{{new-key-id}}
 ```
 
 ### Error responses for unusable keys
@@ -242,7 +242,7 @@ Use the `kms:EncryptionContext:aws:cloudwatch:arn` condition key to restrict key
 ```
 "Condition": {
     "StringEquals": {
-        "kms:EncryptionContext:aws:cloudwatch:arn": "arn:aws:cloudwatch:{{region}}:{{account-id}}:dataset/default"
+        "kms:EncryptionContext:aws:cloudwatch:arn": "arn:aws:cloudwatch:{{us-east-1}}:{{111122223333}}:dataset/default"
     }
 }
 ```
@@ -253,10 +253,10 @@ Use the `aws:SourceArn` and `aws:SourceAccount` conditions to prevent cross-acco
 ```
 "Condition": {
     "StringEquals": {
-        "aws:SourceAccount": "{{account-id}}"
+        "aws:SourceAccount": "{{111122223333}}"
     },
     "ArnLike": {
-        "aws:SourceArn": "arn:aws:cloudwatch:{{region}}:{{account-id}}:dataset/default"
+        "aws:SourceArn": "arn:aws:cloudwatch:{{us-east-1}}:{{111122223333}}:dataset/default"
     }
 }
 ```
@@ -267,7 +267,7 @@ Use the `kms:ViaService` condition key to restrict key usage to requests that co
 ```
 "Condition": {
     "StringEquals": {
-        "kms:ViaService": "cloudwatch.{{region}}.amazonaws.com"
+        "kms:ViaService": "cloudwatch.{{us-east-1}}.amazonaws.com"
     }
 }
 ```

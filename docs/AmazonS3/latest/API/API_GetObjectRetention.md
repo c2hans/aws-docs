@@ -68,6 +68,11 @@ HTTP/1.1 200
 <Retention>
    <Mode>string</Mode>
    <RetainUntilDate>timestamp</RetainUntilDate>
+   <EventHold>string</EventHold>
+   <EventHoldDuration>
+      <Days>integer</Days>
+      <Years>integer</Years>
+   </EventHoldDuration>
 </Retention>
 ```
 
@@ -81,6 +86,15 @@ The following data is returned in XML format by the service.
  ** [Retention](#API_GetObjectRetention_ResponseSyntax) **   <a name="AmazonS3-GetObjectRetention-response-Retention"></a>
 Root level tag for the Retention parameters.
 Required: Yes
+
+ ** [EventHold](#API_GetObjectRetention_ResponseSyntax) **   <a name="AmazonS3-GetObjectRetention-response-EventHold"></a>
+The event hold status for the object. Set to `ON` to enable an event hold or `OFF` to disable it.
+Type: String
+Valid Values: `ON | OFF`
+
+ ** [EventHoldDuration](#API_GetObjectRetention_ResponseSyntax) **   <a name="AmazonS3-GetObjectRetention-response-EventHoldDuration"></a>
+The event hold duration for the object. Specifies how long the object remains protected after the event hold is released.
+Type: [EventHoldDuration](API_EventHoldDuration.md) data type
 
  ** [Mode](#API_GetObjectRetention_ResponseSyntax) **   <a name="AmazonS3-GetObjectRetention-response-Mode"></a>
 Indicates the Retention mode for the specified object.

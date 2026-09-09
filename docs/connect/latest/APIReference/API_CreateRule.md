@@ -121,7 +121,21 @@ Content-type: application/json
    "ClientToken": "{{string}}",
    "Function": "{{string}}",
    "Name": "{{string}}",
+   "PreEvaluationFilters": {
+      "AndConditions": [
+         {
+            "FilterKey": "{{string}}",
+            "FilterType": "{{string}}",
+            "FilterValue": "{{string}}",
+            "Operator": "{{string}}",
+            "ResourceType": "{{string}}"
+         }
+      ]
+   },
    "PublishStatus": "{{string}}",
+   "Tags": {
+      "{{string}}" : "{{string}}"
+   },
    "TriggerEventSource": {
       "EventSourceName": "{{string}}",
       "IntegrationAssociationId": "{{string}}"
@@ -167,11 +181,25 @@ Length Constraints: Minimum length of 1. Maximum length of 200.
 Pattern: `^[0-9a-zA-Z._-]+`
 Required: Yes
 
+ ** [PreEvaluationFilters](#API_CreateRule_RequestSyntax) **   <a name="connect-CreateRule-request-PreEvaluationFilters"></a>
+The pre-evaluation filters for the rule, that restrict the rule to be applied to only certain resources based on the resource's attributes, such as tags assigned to a contact. The pre-evaluation filters are applied even before rule conditions are evaluated and are used to enforce tag-based-access-control while applying rules.
+Type: [PreEvaluationFilters](API_PreEvaluationFilters.md) object
+Required: No
+
  ** [PublishStatus](#API_CreateRule_RequestSyntax) **   <a name="connect-CreateRule-request-PublishStatus"></a>
 The publish status of the rule.
 Type: String
 Valid Values: `DRAFT | PUBLISHED`
 Required: Yes
+
+ ** [Tags](#API_CreateRule_RequestSyntax) **   <a name="connect-CreateRule-request-Tags"></a>
+The tags used to organize, track, or control access for this resource. For example, { "Tags": {"key1":"value1", "key2":"value2"} }.
+Type: String to string map
+Map Entries: Maximum number of 50 items.
+Key Length Constraints: Minimum length of 1. Maximum length of 128.
+Key Pattern: `^(?!aws:)[\p{L}\p{Z}\p{N}_.:/=+\-@]*$`
+Value Length Constraints: Maximum length of 256.
+Required: No
 
  ** [TriggerEventSource](#API_CreateRule_RequestSyntax) **   <a name="connect-CreateRule-request-TriggerEventSource"></a>
 The event source to trigger the rule.

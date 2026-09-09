@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/create-object-
 # Create an object type mapping in Connect Customer Customer Profiles
 <a name="create-object-type-mapping"></a>
 
-An object type mapping tells Customer Profiles how to ingest a specific type of data from a source application—such as Salesforce, Zendesk, or S3—into a unified standard profile object. You can then display data in that object (for example, customer address and email) to your agents using the [Connect Customer agent application](customer-profile-access.md).
+An object type mapping tells Customer Profiles how to ingest a specific type of data from a source application—such as Salesforce, Zendesk, or S3—into a unified standard profile object. You can then display data in that object (for example, customer address and email) to your agents using the [Connect Customer agent workspace](customer-profile-access.md).
 
 The object type mapping provides Customer Profiles with the following information:
 + How data should be populated from the object and ingested into the standard profile object.
@@ -76,8 +76,8 @@ If you choose to add custom attributes, the destination will always have the pre
 
 ![Customer attribute mapping interface showing source fields mapped to destination fields.](https://docs.aws.amazon.com/connect/latest/adminguide/images/custom-attribute-cp.png)
 
-Agents can now view custom attributes in the Connect Agent Application under the **Additional Information** tab sorted in alphabetical order. You can create the name of your choice for each attribute that will be displayed to agents by using the following format: `/^Attributes\.[a-zA-Z0-9]+(?:[ _\-]+[a-zA-Z0-9]+)*$/`
-All ingested custom attributes will be displayed in the Connect Agent Application. If you do not wish to show certain information to your agents, do not ingest custom attributes at this time.
+Agents can now view custom attributes in the agent workspace under the **Additional Information** tab sorted in alphabetical order. You can create the name of your choice for each attribute that will be displayed to agents by using the following format: `/^Attributes\.[a-zA-Z0-9]+(?:[ _\-]+[a-zA-Z0-9]+)*$/`
+All ingested custom attributes will be displayed in the agent workspace. If you do not wish to show certain information to your agents, do not ingest custom attributes at this time.
 
 ### Step 3: Specify identifiers
 <a name="step3-how-to-specify-identifiers"></a>
@@ -95,7 +95,7 @@ The names `_profileId`, `_orderId`, `_caseId`, and `_assetId` are reserved for i
 
   You can have multiple customer identifiers.
 **Tip**
-Agents can use any of these customer Identifiers in the Agent Workspace to find the profile that belongs to customer on the interaction.
+Agents can use any of these customer Identifiers in the agent workspace to find the profile that belongs to customer on the interaction.
 + **Product identifier**: You must have at least one product identifier for your data to avoid an error when it is ingested. The identifier is also known as the asset key.
 
   Customer Profiles uses it to distinguish this data from other customer product purchase data. It is also used to determine if the data can be associated to an existing profile or used to create a new profile by searching other profiles for this identifier.

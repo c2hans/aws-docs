@@ -10,11 +10,6 @@ Provides summary information about a hyperparameter tuning job.
 ## Contents
 <a name="API_HyperParameterTuningJobSummary_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-HyperParameterTuningJobSummary-CreationTime"></a>
-The date and time that the tuning job was created.
-Type: Timestamp
-Required: Yes
-
  ** HyperParameterTuningJobArn **   <a name="sagemaker-Type-HyperParameterTuningJobSummary-HyperParameterTuningJobArn"></a>
 The Amazon Resource Name (ARN) of the tuning job.
 Type: String
@@ -50,16 +45,6 @@ Required: Yes
 The [TrainingJobStatusCounters](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_TrainingJobStatusCounters.html) object that specifies the numbers of training jobs, categorized by status, that this tuning job launched.
 Type: [TrainingJobStatusCounters](API_TrainingJobStatusCounters.md) object
 Required: Yes
-
- ** HyperParameterTuningEndTime **   <a name="sagemaker-Type-HyperParameterTuningJobSummary-HyperParameterTuningEndTime"></a>
-The date and time that the tuning job ended.
-Type: Timestamp
-Required: No
-
- ** LastModifiedTime **   <a name="sagemaker-Type-HyperParameterTuningJobSummary-LastModifiedTime"></a>
-The date and time that the tuning job was modified.
-Type: Timestamp
-Required: No
 
  ** ResourceLimits **   <a name="sagemaker-Type-HyperParameterTuningJobSummary-ResourceLimits"></a>
 The [ResourceLimits](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ResourceLimits.html) object that specifies the maximum number of training jobs and parallel training jobs allowed for this tuning job.

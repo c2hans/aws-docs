@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-moon
 
 Kimi K2 Thinking is Moonshot AI's reasoning model with chain-of-thought capabilities for complex problem solving in math, coding, and logic. For more information about model development and performance, see the [model/service card](https://platform.moonshot.ai/docs/guide/use-kimi-k2-thinking-model).
 + **Model launch date:** Nov 06, 2025
++ **EOL no sooner than:** Nov 06, 2026
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://huggingface.co/moonshotai/Kimi-K2-Thinking/blob/main/LICENSE)
 + **Model lifecycle:** Active

@@ -10,11 +10,6 @@ A summary of a specific version of the model card.
 ## Contents
 <a name="API_ModelCardVersionSummary_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-ModelCardVersionSummary-CreationTime"></a>
-The date and time that the model card version was created.
-Type: Timestamp
-Required: Yes
-
  ** ModelCardArn **   <a name="sagemaker-Type-ModelCardVersionSummary-ModelCardArn"></a>
 The Amazon Resource Name (ARN) of the model card.
 Type: String
@@ -43,11 +38,6 @@ Required: Yes
 A version of the model card.
 Type: Integer
 Required: Yes
-
- ** LastModifiedTime **   <a name="sagemaker-Type-ModelCardVersionSummary-LastModifiedTime"></a>
-The time date and time that the model card version was last modified.
-Type: Timestamp
-Required: No
 
 ## See Also
 <a name="API_ModelCardVersionSummary_SeeAlso"></a>

@@ -13,6 +13,7 @@ The following image shows actions that you can perform on your volumes as part o
 
 **Topics**
 + [Create a volume](ebs-creating-volume.md)
++ [Share a volume](share-volume.md)
 + [Copy a volume](ebs-copying-volume.md)
 + [Attach a volume to an instance](ebs-attaching-volume.md)
 + [Attach a volume to multiple instances](ebs-volumes-multi.md)

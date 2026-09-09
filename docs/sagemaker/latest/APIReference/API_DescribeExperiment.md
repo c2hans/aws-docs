@@ -45,7 +45,6 @@ Required: Yes
       "UserProfileArn": "string",
       "UserProfileName": "string"
    },
-   "CreationTime": number,
    "Description": "string",
    "DisplayName": "string",
    "ExperimentArn": "string",
@@ -60,7 +59,6 @@ Required: Yes
       "UserProfileArn": "string",
       "UserProfileName": "string"
    },
-   "LastModifiedTime": number,
    "Source": {
       "SourceArn": "string",
       "SourceType": "string"
@@ -78,10 +76,6 @@ The following data is returned in JSON format by the service.
  ** [CreatedBy](#API_DescribeExperiment_ResponseSyntax) **   <a name="sagemaker-DescribeExperiment-response-CreatedBy"></a>
 Who created the experiment.
 Type: [UserContext](API_UserContext.md) object
-
- ** [CreationTime](#API_DescribeExperiment_ResponseSyntax) **   <a name="sagemaker-DescribeExperiment-response-CreationTime"></a>
-When the experiment was created.
-Type: Timestamp
 
  ** [Description](#API_DescribeExperiment_ResponseSyntax) **   <a name="sagemaker-DescribeExperiment-response-Description"></a>
 The description of the experiment.
@@ -110,10 +104,6 @@ Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,119}`
  ** [LastModifiedBy](#API_DescribeExperiment_ResponseSyntax) **   <a name="sagemaker-DescribeExperiment-response-LastModifiedBy"></a>
 Who last modified the experiment.
 Type: [UserContext](API_UserContext.md) object
-
- ** [LastModifiedTime](#API_DescribeExperiment_ResponseSyntax) **   <a name="sagemaker-DescribeExperiment-response-LastModifiedTime"></a>
-When the experiment was last modified.
-Type: Timestamp
 
  ** [Source](#API_DescribeExperiment_ResponseSyntax) **   <a name="sagemaker-DescribeExperiment-response-Source"></a>
 The Amazon Resource Name (ARN) of the source and, optionally, the type.

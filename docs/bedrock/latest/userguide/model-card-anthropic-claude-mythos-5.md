@@ -15,6 +15,9 @@ Claude Mythos 5 is Anthropic's most capable model for cybersecurity and life sci
 
 This model is a Preview and is made available to you as a "Beta Service" as defined in the AWS Service Terms. It is subject to your Agreement with AWS, the AWS Service Terms, and the applicable model EULA.
 + **Model launch date:** June 9, 2026
++ **EOL no sooner than:** June 9, 2027
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
 + **Model lifecycle:** Active

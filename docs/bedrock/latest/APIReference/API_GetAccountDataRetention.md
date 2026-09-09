@@ -47,7 +47,7 @@ The following data is returned in JSON format by the service.
  ** [mode](#API_GetAccountDataRetention_ResponseSyntax) **   <a name="bedrock-GetAccountDataRetention-response-mode"></a>
 The data retention mode configured for the account.
 Type: String
-Valid Values: `default | none | provider_data_share | inherit`
+Valid Values: `default | none | aws_review | provider_data_share | inherit`
 
  ** [updatedAt](#API_GetAccountDataRetention_ResponseSyntax) **   <a name="bedrock-GetAccountDataRetention-response-updatedAt"></a>
 The time at which the data retention mode was last updated.

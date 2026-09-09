@@ -15,11 +15,6 @@ Input object for the batch transform job.
 Type: [BatchTransformInput](API_BatchTransformInput.md) object
 Required: No
 
- ** CreationTime **   <a name="sagemaker-Type-ModelDashboardMonitoringSchedule-CreationTime"></a>
-A timestamp that indicates when the monitoring schedule was created.
-Type: Timestamp
-Required: No
-
  ** EndpointName **   <a name="sagemaker-Type-ModelDashboardMonitoringSchedule-EndpointName"></a>
 The endpoint which is monitored.
 Type: String
@@ -31,11 +26,6 @@ Required: No
 If a monitoring job failed, provides the reason.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1024.
-Required: No
-
- ** LastModifiedTime **   <a name="sagemaker-Type-ModelDashboardMonitoringSchedule-LastModifiedTime"></a>
-A timestamp that indicates when the monitoring schedule was last updated.
-Type: Timestamp
 Required: No
 
  ** LastMonitoringExecutionSummary **   <a name="sagemaker-Type-ModelDashboardMonitoringSchedule-LastMonitoringExecutionSummary"></a>

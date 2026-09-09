@@ -32,16 +32,6 @@ Type: Integer
 Valid Range: Minimum value of 0. Maximum value of 4368.
 Required: No
 
- ** EndDate **   <a name="sagemaker-Type-TrainingPlanExtensionOffering-EndDate"></a>
-The end date of this extension offering.
-Type: Timestamp
-Required: No
-
- ** StartDate **   <a name="sagemaker-Type-TrainingPlanExtensionOffering-StartDate"></a>
-The start date of this extension offering.
-Type: Timestamp
-Required: No
-
  ** UpfrontFee **   <a name="sagemaker-Type-TrainingPlanExtensionOffering-UpfrontFee"></a>
 The upfront fee for this extension offering.
 Type: String

@@ -12,8 +12,6 @@ Lists model explainability job definitions that satisfy various filters.
 
 ```
 {
-   "CreationTimeAfter": {{number}},
-   "CreationTimeBefore": {{number}},
    "EndpointName": "{{string}}",
    "MaxResults": {{number}},
    "NameContains": "{{string}}",
@@ -29,16 +27,6 @@ Lists model explainability job definitions that satisfy various filters.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
-
- ** [CreationTimeAfter](#API_ListModelExplainabilityJobDefinitions_RequestSyntax) **   <a name="sagemaker-ListModelExplainabilityJobDefinitions-request-CreationTimeAfter"></a>
-A filter that returns only model explainability jobs created after a specified time.
-Type: Timestamp
-Required: No
-
- ** [CreationTimeBefore](#API_ListModelExplainabilityJobDefinitions_RequestSyntax) **   <a name="sagemaker-ListModelExplainabilityJobDefinitions-request-CreationTimeBefore"></a>
-A filter that returns only model explainability jobs created before a specified time.
-Type: Timestamp
-Required: No
 
  ** [EndpointName](#API_ListModelExplainabilityJobDefinitions_RequestSyntax) **   <a name="sagemaker-ListModelExplainabilityJobDefinitions-request-EndpointName"></a>
 Name of the endpoint to monitor for model explainability.
@@ -86,7 +74,6 @@ Required: No
 {
    "JobDefinitionSummaries": [
       {
-         "CreationTime": number,
          "EndpointName": "string",
          "MonitoringJobDefinitionArn": "string",
          "MonitoringJobDefinitionName": "string"

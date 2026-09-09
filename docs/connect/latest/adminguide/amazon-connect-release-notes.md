@@ -2530,7 +2530,7 @@ You can subscribe to an event type called `CONTACT_DATA_UPDATED`. The `Contact` 
 #### APIs to programmatically configure views in step-by-step guides
 <a name="views-sept23"></a>
 
-Connect Customer provides APIs to programmatically create and manage view resources used in step-by-step guides. View resources define what gets displayed in your agent's UI during a step-by-step guide. For more information, see the [Views: UI templates to customize an agent's workspace in Connect Customer](view-resources-sg.md) documentation.
+Connect Customer provides APIs to programmatically create and manage view resources used in step-by-step guides. View resources define what gets displayed in your agent's UI during a step-by-step guide. For more information, see the [Views: UI templates to customize the Connect Customer agent workspace](view-resources-sg.md) documentation.
 
 #### Support for UIFN in more than 60 countries
 <a name="uifn-sept23"></a>

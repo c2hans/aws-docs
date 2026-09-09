@@ -13,7 +13,6 @@ The IP rules of the IP access settings.
  ** ipRange **   <a name="workspacesweb-Type-IpRule-ipRange"></a>
 The IP range of the IP rule.
 Type: String
-Pattern: `\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}(?:/([0-9]|[12][0-9]|3[0-2])|)`
 Required: Yes
 
  ** description **   <a name="workspacesweb-Type-IpRule-description"></a>

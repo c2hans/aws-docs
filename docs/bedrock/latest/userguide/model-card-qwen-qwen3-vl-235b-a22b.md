@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-qwen
 
 Qwen3 VL 235B A22B is Qwen's vision-language mixture-of-experts model that processes text and images for visual reasoning and document understanding. For more information about model development and performance, see the [model/service card](https://qwen.ai/blog?id=qwen3).
 + **Model launch date:** Sep 23, 2025
++ **EOL no sooner than:** Sep 23, 2026
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://github.com/QwenLM/Qwen3-VL/blob/main/LICENSE)
 + **Model lifecycle:** Active

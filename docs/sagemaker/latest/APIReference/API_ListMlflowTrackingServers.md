@@ -12,8 +12,6 @@ Lists all MLflow Tracking Servers.
 
 ```
 {
-   "CreatedAfter": {{number}},
-   "CreatedBefore": {{number}},
    "MaxResults": {{number}},
    "MlflowVersion": "{{string}}",
    "NextToken": "{{string}}",
@@ -29,16 +27,6 @@ Lists all MLflow Tracking Servers.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
-
- ** [CreatedAfter](#API_ListMlflowTrackingServers_RequestSyntax) **   <a name="sagemaker-ListMlflowTrackingServers-request-CreatedAfter"></a>
-Use the `CreatedAfter` filter to only list tracking servers created after a specific date and time. Listed tracking servers are shown with a date and time such as `"2024-03-16T01:46:56+00:00"`. The `CreatedAfter` parameter takes in a Unix timestamp. To convert a date and time into a Unix timestamp, see [EpochConverter](https://www.epochconverter.com/).
-Type: Timestamp
-Required: No
-
- ** [CreatedBefore](#API_ListMlflowTrackingServers_RequestSyntax) **   <a name="sagemaker-ListMlflowTrackingServers-request-CreatedBefore"></a>
-Use the `CreatedBefore` filter to only list tracking servers created before a specific date and time. Listed tracking servers are shown with a date and time such as `"2024-03-16T01:46:56+00:00"`. The `CreatedBefore` parameter takes in a Unix timestamp. To convert a date and time into a Unix timestamp, see [EpochConverter](https://www.epochconverter.com/).
-Type: Timestamp
-Required: No
 
  ** [MaxResults](#API_ListMlflowTrackingServers_RequestSyntax) **   <a name="sagemaker-ListMlflowTrackingServers-request-MaxResults"></a>
 The maximum number of tracking servers to list.
@@ -86,9 +74,7 @@ Required: No
    "NextToken": "string",
    "TrackingServerSummaries": [
       {
-         "CreationTime": number,
          "IsActive": "string",
-         "LastModifiedTime": number,
          "MlflowVersion": "string",
          "TrackingServerArn": "string",
          "TrackingServerName": "string",

@@ -12,11 +12,7 @@ Lists the inference components in your account and their properties.
 
 ```
 {
-   "CreationTimeAfter": {{number}},
-   "CreationTimeBefore": {{number}},
    "EndpointNameEquals": "{{string}}",
-   "LastModifiedTimeAfter": {{number}},
-   "LastModifiedTimeBefore": {{number}},
    "MaxResults": {{number}},
    "NameContains": "{{string}}",
    "NextToken": "{{string}}",
@@ -34,31 +30,11 @@ For information about the parameters that are common to all actions, see [Common
 
 The request accepts the following data in JSON format.
 
- ** [CreationTimeAfter](#API_ListInferenceComponents_RequestSyntax) **   <a name="sagemaker-ListInferenceComponents-request-CreationTimeAfter"></a>
-Filters the results to only those inference components that were created after the specified time.
-Type: Timestamp
-Required: No
-
- ** [CreationTimeBefore](#API_ListInferenceComponents_RequestSyntax) **   <a name="sagemaker-ListInferenceComponents-request-CreationTimeBefore"></a>
-Filters the results to only those inference components that were created before the specified time.
-Type: Timestamp
-Required: No
-
  ** [EndpointNameEquals](#API_ListInferenceComponents_RequestSyntax) **   <a name="sagemaker-ListInferenceComponents-request-EndpointNameEquals"></a>
 An endpoint name to filter the listed inference components. The response includes only those inference components that are hosted at the specified endpoint.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 63.
 Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
-Required: No
-
- ** [LastModifiedTimeAfter](#API_ListInferenceComponents_RequestSyntax) **   <a name="sagemaker-ListInferenceComponents-request-LastModifiedTimeAfter"></a>
-Filters the results to only those inference components that were updated after the specified time.
-Type: Timestamp
-Required: No
-
- ** [LastModifiedTimeBefore](#API_ListInferenceComponents_RequestSyntax) **   <a name="sagemaker-ListInferenceComponents-request-LastModifiedTimeBefore"></a>
-Filters the results to only those inference components that were updated before the specified time.
-Type: Timestamp
 Required: No
 
  ** [MaxResults](#API_ListInferenceComponents_RequestSyntax) **   <a name="sagemaker-ListInferenceComponents-request-MaxResults"></a>
@@ -113,13 +89,11 @@ Required: No
 {
    "InferenceComponents": [
       {
-         "CreationTime": number,
          "EndpointArn": "string",
          "EndpointName": "string",
          "InferenceComponentArn": "string",
          "InferenceComponentName": "string",
          "InferenceComponentStatus": "string",
-         "LastModifiedTime": number,
          "VariantName": "string"
       }
    ],

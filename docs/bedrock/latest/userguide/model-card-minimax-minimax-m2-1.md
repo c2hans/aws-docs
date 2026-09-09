@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mini
 
 MiniMax M2.1 is MiniMax's updated model with improved reasoning, coding, and instruction following over M2. For more information about model development and performance, see the [model/service card](https://www.minimax.io/news/minimax-m21).
 + **Model launch date:** Dec 23, 2025
++ **EOL no sooner than:** Dec 23, 2026
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://github.com/MiniMax-AI/MiniMax-M2.1/blob/main/LICENSE)
 + **Model lifecycle:** Active

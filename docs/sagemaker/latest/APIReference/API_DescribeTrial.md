@@ -45,7 +45,6 @@ Required: Yes
       "UserProfileArn": "string",
       "UserProfileName": "string"
    },
-   "CreationTime": number,
    "DisplayName": "string",
    "ExperimentName": "string",
    "LastModifiedBy": {
@@ -58,7 +57,6 @@ Required: Yes
       "UserProfileArn": "string",
       "UserProfileName": "string"
    },
-   "LastModifiedTime": number,
    "MetadataProperties": {
       "CommitId": "string",
       "GeneratedBy": "string",
@@ -85,10 +83,6 @@ The following data is returned in JSON format by the service.
 Who created the trial.
 Type: [UserContext](API_UserContext.md) object
 
- ** [CreationTime](#API_DescribeTrial_ResponseSyntax) **   <a name="sagemaker-DescribeTrial-response-CreationTime"></a>
-When the trial was created.
-Type: Timestamp
-
  ** [DisplayName](#API_DescribeTrial_ResponseSyntax) **   <a name="sagemaker-DescribeTrial-response-DisplayName"></a>
 The name of the trial as displayed. If `DisplayName` isn't specified, `TrialName` is displayed.
 Type: String
@@ -104,10 +98,6 @@ Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,119}`
  ** [LastModifiedBy](#API_DescribeTrial_ResponseSyntax) **   <a name="sagemaker-DescribeTrial-response-LastModifiedBy"></a>
 Who last modified the trial.
 Type: [UserContext](API_UserContext.md) object
-
- ** [LastModifiedTime](#API_DescribeTrial_ResponseSyntax) **   <a name="sagemaker-DescribeTrial-response-LastModifiedTime"></a>
-When the trial was last modified.
-Type: Timestamp
 
  ** [MetadataProperties](#API_DescribeTrial_ResponseSyntax) **   <a name="sagemaker-DescribeTrial-response-MetadataProperties"></a>
 Metadata properties of the tracking entity, trial, or trial component.

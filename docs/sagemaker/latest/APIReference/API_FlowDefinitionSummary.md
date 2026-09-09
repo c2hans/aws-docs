@@ -10,11 +10,6 @@ Contains summary information about the flow definition.
 ## Contents
 <a name="API_FlowDefinitionSummary_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-FlowDefinitionSummary-CreationTime"></a>
-The timestamp when SageMaker created the flow definition.
-Type: Timestamp
-Required: Yes
-
  ** FlowDefinitionArn **   <a name="sagemaker-Type-FlowDefinitionSummary-FlowDefinitionArn"></a>
 The Amazon Resource Name (ARN) of the flow definition.
 Type: String

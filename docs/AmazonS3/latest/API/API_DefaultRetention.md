@@ -19,6 +19,11 @@ The number of days that you want to specify for the default retention period. Mu
 Type: Integer
 Required: No
 
+ ** DefaultEventHold **   <a name="AmazonS3-Type-DefaultRetention-DefaultEventHold"></a>
+The default event hold duration to be applied to new objects placed in the specified bucket. When configured, new objects will automatically have an event hold enabled with this duration.
+Type: [EventHoldDuration](API_EventHoldDuration.md) data type
+Required: No
+
  ** Mode **   <a name="AmazonS3-Type-DefaultRetention-Mode"></a>
 The default Object Lock retention mode you want to apply to new objects placed in the specified bucket. Must be used with either `Days` or `Years`.
 Type: String

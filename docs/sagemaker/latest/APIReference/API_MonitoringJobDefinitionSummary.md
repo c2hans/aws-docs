@@ -10,11 +10,6 @@ Summary information about a monitoring job.
 ## Contents
 <a name="API_MonitoringJobDefinitionSummary_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-MonitoringJobDefinitionSummary-CreationTime"></a>
-The time that the monitoring job was created.
-Type: Timestamp
-Required: Yes
-
  ** EndpointName **   <a name="sagemaker-Type-MonitoringJobDefinitionSummary-EndpointName"></a>
 The name of the endpoint that the job monitors.
 Type: String

@@ -21,7 +21,6 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "Type" : "AWS::SageMaker::NotebookInstance",
   "Properties" : {
-      "[AcceleratorTypes](#cfn-sagemaker-notebookinstance-acceleratortypes)" : {{[ String, ... ]}},
       "[AdditionalCodeRepositories](#cfn-sagemaker-notebookinstance-additionalcoderepositories)" : {{[ String, ... ]}},
       "[DefaultCodeRepository](#cfn-sagemaker-notebookinstance-defaultcoderepository)" : {{String}},
       "[DirectInternetAccess](#cfn-sagemaker-notebookinstance-directinternetaccess)" : {{String}},
@@ -47,8 +46,6 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 Type: AWS::SageMaker::NotebookInstance
 Properties:
-  [AcceleratorTypes](#cfn-sagemaker-notebookinstance-acceleratortypes): {{
-    - String}}
   [AdditionalCodeRepositories](#cfn-sagemaker-notebookinstance-additionalcoderepositories): {{
     - String}}
   [DefaultCodeRepository](#cfn-sagemaker-notebookinstance-defaultcoderepository): {{String}}
@@ -72,13 +69,6 @@ Properties:
 
 ## Properties
 <a name="aws-resource-sagemaker-notebookinstance-properties"></a>
-
-`AcceleratorTypes`  <a name="cfn-sagemaker-notebookinstance-acceleratortypes"></a>
-A list of Amazon Elastic Inference (EI) instance types to associate with the notebook instance. Currently, only one instance type can be associated with a notebook instance. For more information, see [Using Elastic Inference in Amazon SageMaker](https://docs.aws.amazon.com/sagemaker/latest/dg/ei.html).
-*Valid Values:*`ml.eia1.medium | ml.eia1.large | ml.eia1.xlarge | ml.eia2.medium | ml.eia2.large | ml.eia2.xlarge`.
-*Required*: No
-*Type*: Array of String
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `AdditionalCodeRepositories`  <a name="cfn-sagemaker-notebookinstance-additionalcoderepositories"></a>
 An array of up to three Git repositories associated with the notebook instance. These can be either the names of Git repositories stored as resources in your account, or the URL of Git repositories in [AWS CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/welcome.html) or in any other Git repository. These repositories are cloned at the same level as the default repository of your notebook instance. For more information, see [Associating Git Repositories with SageMaker AI Notebook Instances](https://docs.aws.amazon.com/sagemaker/latest/dg/nbi-git-repo.html).
@@ -141,9 +131,8 @@ The name of a lifecycle configuration to associate with the notebook instance. F
 The name of the new notebook instance.
 *Required*: No
 *Type*: String
-*Pattern*: `[a-zA-Z0-9](-*[a-zA-Z0-9])*`
-*Minimum*: `0`
-*Maximum*: `63`
+*Minimum*: `1`
+*Maximum*: `64`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `PlatformIdentifier`  <a name="cfn-sagemaker-notebookinstance-platformidentifier"></a>
@@ -229,8 +218,8 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 ####
 <a name="aws-resource-sagemaker-notebookinstance-return-values-fn--getatt-fn--getatt"></a>
 
-`Id`  <a name="Id-fn::getatt"></a>
-The name of the notebook instance.
+`NotebookInstanceArn`  <a name="NotebookInstanceArn-fn::getatt"></a>
+The Amazon Resource Name (ARN) of the notebook instance.
 
 `NotebookInstanceName`  <a name="NotebookInstanceName-fn::getatt"></a>
 The name of the notebook instance, such as `MyNotebookInstance`.

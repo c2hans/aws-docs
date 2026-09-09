@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-xai-
 
 Grok 4.3 is a reasoning-first model that offers always-on and configurable reasoning effort (none, low, medium, high). Because reasoning is always active rather than optional, it behaves more consistently across multi-step agent loops than models that can skip thinking. It also offers strong tool use and instruction-following capabilities for building multi-step agents, and token efficiency to help keep high-volume inference cost-effective. Grok 4.3 is especially well suited to enterprise workloads such as contract review, case law research, credit agreement analysis, and financial document Q&A, while delivering consistent, high-quality results across conversational AI, search, chat, and multi-turn workflows. Grok 4.3 runs on Mantle, a new inference engine in Amazon Bedrock designed for price performance, with support for tool calling, structured output, and response streaming.
 + **Model launch date:** June 15, 2026
++ **EOL no sooner than:** June 15, 2027
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
 + **Model lifecycle:** Active

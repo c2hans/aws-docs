@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/scheduling-vie
 # How supervisors view published schedules using the Connect Customer admin website
 <a name="scheduling-view-schedule-supervisors"></a>
 
-After a scheduler publishes a schedule, it's official. Agents can now view their individual scheduling using their agent workspace. Supervisors can also view their agents schedules using the Connect Customer admin website.
+After a scheduler publishes a schedule, it's official. Agents can now view their individual scheduling using the agent workspace. Supervisors can also view their agents schedules using the Connect Customer admin website.
 
 Supervisors who have **Scheduling**, **Schedule manager - Edit** permissions in their security profile can edit agent schedules.
 

@@ -381,6 +381,8 @@ The following data types are supported by Amazon Connect Service:
 +  [PredefinedAttributeSearchCriteria](API_PredefinedAttributeSearchCriteria.md)
 +  [PredefinedAttributeSummary](API_PredefinedAttributeSummary.md)
 +  [PredefinedAttributeValues](API_PredefinedAttributeValues.md)
++  [PreEvaluationFilter](API_PreEvaluationFilter.md)
++  [PreEvaluationFilters](API_PreEvaluationFilters.md)
 +  [Preview](API_Preview.md)
 +  [PrimaryAttributeAccessControlConfigurationItem](API_PrimaryAttributeAccessControlConfigurationItem.md)
 +  [PrimaryAttributeValue](API_PrimaryAttributeValue.md)

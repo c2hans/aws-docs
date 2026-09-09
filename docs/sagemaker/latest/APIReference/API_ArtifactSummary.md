@@ -30,16 +30,6 @@ Type: String
 Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 
- ** CreationTime **   <a name="sagemaker-Type-ArtifactSummary-CreationTime"></a>
-When the artifact was created.
-Type: Timestamp
-Required: No
-
- ** LastModifiedTime **   <a name="sagemaker-Type-ArtifactSummary-LastModifiedTime"></a>
-When the artifact was last modified.
-Type: Timestamp
-Required: No
-
  ** Source **   <a name="sagemaker-Type-ArtifactSummary-Source"></a>
 The source of the artifact.
 Type: [ArtifactSource](API_ArtifactSource.md) object

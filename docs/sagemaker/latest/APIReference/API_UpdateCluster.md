@@ -41,7 +41,6 @@ Updates a SageMaker HyperPod cluster.
             },
             "PatchingStrategy": "{{string}}",
             "PatchSchedule": {
-               "NextPatchDate": {{number}}
             }
          },
          "CapacityRequirements": {

@@ -130,6 +130,12 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: No
 
+ ** WarmUpConfiguration **
+The warm-up configuration for the alarm. A warm-up period delays alarm evaluation after you create or update the alarm. The warm-up period reduces alarm noise from missing data while a new resource or service starts publishing data.
+For more information, see [Alarm warm-up periods](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/alarm-warm-up.html) in the *Amazon CloudWatch User Guide*.
+Type: [WarmUpConfiguration](API_WarmUpConfiguration.md) object
+Required: No
+
 ## Errors
 <a name="API_PutLogAlarm_Errors"></a>
 

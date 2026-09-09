@@ -36,9 +36,7 @@ Required: Yes
 ```
 {
    "Workteam": {
-      "CreateDate": number,
       "Description": "string",
-      "LastUpdatedDate": number,
       "MemberDefinitions": [
          {
             "CognitoMemberDefinition": {

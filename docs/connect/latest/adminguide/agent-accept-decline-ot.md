@@ -21,6 +21,6 @@ To accept or decline the request, an agent must have **Agent application schedul
 ## Accept and Decline overtime buttons for agents
 <a name="buttons-for-agents-accept-decline-ot"></a>
 
-The following image shows the Accept and Decline buttons on the agent application.
+The following image shows the Accept and Decline buttons.
 
-![The Accept and Decline buttons on the agent application.](https://docs.aws.amazon.com/connect/latest/adminguide/images/accept-decline-buttons-wfm.png)
+![The Accept and Decline buttons.](https://docs.aws.amazon.com/connect/latest/adminguide/images/accept-decline-buttons-wfm.png)

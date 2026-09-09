@@ -53,7 +53,7 @@ Properties:
 Property description not available.
 *Required*: Yes
 *Type*: String
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `CertificateAuthority`  <a name="cfn-certificatemanager-acmeendpoint-certificateauthority"></a>
 Defines the certificate authority to use for an ACME endpoint.

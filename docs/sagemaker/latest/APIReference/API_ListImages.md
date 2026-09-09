@@ -12,10 +12,6 @@ Lists the images in your account and their properties. The list can be filtered 
 
 ```
 {
-   "CreationTimeAfter": {{number}},
-   "CreationTimeBefore": {{number}},
-   "LastModifiedTimeAfter": {{number}},
-   "LastModifiedTimeBefore": {{number}},
    "MaxResults": {{number}},
    "NameContains": "{{string}}",
    "NextToken": "{{string}}",
@@ -30,26 +26,6 @@ Lists the images in your account and their properties. The list can be filtered 
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
-
- ** [CreationTimeAfter](#API_ListImages_RequestSyntax) **   <a name="sagemaker-ListImages-request-CreationTimeAfter"></a>
-A filter that returns only images created on or after the specified time.
-Type: Timestamp
-Required: No
-
- ** [CreationTimeBefore](#API_ListImages_RequestSyntax) **   <a name="sagemaker-ListImages-request-CreationTimeBefore"></a>
-A filter that returns only images created on or before the specified time.
-Type: Timestamp
-Required: No
-
- ** [LastModifiedTimeAfter](#API_ListImages_RequestSyntax) **   <a name="sagemaker-ListImages-request-LastModifiedTimeAfter"></a>
-A filter that returns only images modified on or after the specified time.
-Type: Timestamp
-Required: No
-
- ** [LastModifiedTimeBefore](#API_ListImages_RequestSyntax) **   <a name="sagemaker-ListImages-request-LastModifiedTimeBefore"></a>
-A filter that returns only images modified on or before the specified time.
-Type: Timestamp
-Required: No
 
  ** [MaxResults](#API_ListImages_RequestSyntax) **   <a name="sagemaker-ListImages-request-MaxResults"></a>
 The maximum number of images to return in the response. The default value is 10.
@@ -90,14 +66,12 @@ Required: No
 {
    "Images": [
       {
-         "CreationTime": number,
          "Description": "string",
          "DisplayName": "string",
          "FailureReason": "string",
          "ImageArn": "string",
          "ImageName": "string",
-         "ImageStatus": "string",
-         "LastModifiedTime": number
+         "ImageStatus": "string"
       }
    ],
    "NextToken": "string"

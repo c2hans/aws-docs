@@ -90,8 +90,6 @@ Required: No
             }
          ]
       },
-      "LastSoftwareUpdateTime": number,
-      "LaunchTime": number,
       "LifeCycleConfig": {
          "OnCreate": "string",
          "OnInitComplete": "string",

@@ -10,11 +10,6 @@ The name, ARN, `CreationTime`, `FeatureGroup` values, `LastUpdatedTime` and `Ena
 ## Contents
 <a name="API_FeatureGroupSummary_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-FeatureGroupSummary-CreationTime"></a>
-A timestamp indicating the time of creation time of the `FeatureGroup`.
-Type: Timestamp
-Required: Yes
-
  ** FeatureGroupArn **   <a name="sagemaker-Type-FeatureGroupSummary-FeatureGroupArn"></a>
 Unique identifier for the `FeatureGroup`.
 Type: String

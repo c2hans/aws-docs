@@ -10,11 +10,6 @@ Information about hub content.
 ## Contents
 <a name="API_HubContentInfo_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-HubContentInfo-CreationTime"></a>
-The date and time that the hub content was created.
-Type: Timestamp
-Required: Yes
-
  ** DocumentSchemaVersion **   <a name="sagemaker-Type-HubContentInfo-DocumentSchemaVersion"></a>
 The version of the hub content document schema.
 Type: String
@@ -75,11 +70,6 @@ Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 50 items.
 Length Constraints: Minimum length of 0. Maximum length of 255.
 Pattern: `.*`
-Required: No
-
- ** OriginalCreationTime **   <a name="sagemaker-Type-HubContentInfo-OriginalCreationTime"></a>
-The date and time when the hub content was originally created, before any updates or revisions.
-Type: Timestamp
 Required: No
 
  ** SageMakerPublicHubContentArn **   <a name="sagemaker-Type-HubContentInfo-SageMakerPublicHubContentArn"></a>

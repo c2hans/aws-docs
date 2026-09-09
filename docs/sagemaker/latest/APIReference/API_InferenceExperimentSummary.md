@@ -10,16 +10,6 @@ Lists a summary of properties of an inference experiment.
 ## Contents
 <a name="API_InferenceExperimentSummary_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-InferenceExperimentSummary-CreationTime"></a>
-The timestamp at which the inference experiment was created.
-Type: Timestamp
-Required: Yes
-
- ** LastModifiedTime **   <a name="sagemaker-Type-InferenceExperimentSummary-LastModifiedTime"></a>
-The timestamp when you last modified the inference experiment.
-Type: Timestamp
-Required: Yes
-
  ** Name **   <a name="sagemaker-Type-InferenceExperimentSummary-Name"></a>
 The name of the inference experiment.
 Type: String
@@ -38,11 +28,6 @@ The type of the inference experiment.
 Type: String
 Valid Values: `ShadowMode`
 Required: Yes
-
- ** CompletionTime **   <a name="sagemaker-Type-InferenceExperimentSummary-CompletionTime"></a>
-The timestamp at which the inference experiment was completed.
-Type: Timestamp
-Required: No
 
  ** Description **   <a name="sagemaker-Type-InferenceExperimentSummary-Description"></a>
 The description of the inference experiment.

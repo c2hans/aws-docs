@@ -217,8 +217,17 @@ Create a machine learning algorithm that you can use in SageMaker and list in th
                         }
                      ]
                   },
+                  "InstancePreferences": [
+                     {
+                        "InstanceCount": {{number}},
+                        "InstanceType": "{{string}}",
+                        "TrainingPlanArns": [ "{{string}}" ]
+                     }
+                  ],
                   "InstanceType": "{{string}}",
                   "KeepAlivePeriodInSeconds": {{number}},
+                  "SelectedInstanceCount": {{number}},
+                  "SelectedInstanceType": "{{string}}",
                   "TrainingPlanArn": "{{string}}",
                   "VolumeKmsKeyId": "{{string}}",
                   "VolumeSizeInGB": {{number}}

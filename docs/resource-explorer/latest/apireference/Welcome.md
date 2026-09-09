@@ -20,4 +20,4 @@ The example HTTP query requests and responses in this guide are displayed with t
 
 Our goal is to help you get everything you can from Resource Explorer. If this guide helps you to do that, then let us know. If the guide isn't helping you, then we want to hear from you so we can address the issue. Use the **Feedback** link that's in the upper-right corner of every page. That sends your comments directly to the writers of this guide. We review every submission, looking for opportunities to improve the documentation. Thank you in advance for your help\!
 
-This document was last published on September 7, 2026.
+This document was last published on September 9, 2026.

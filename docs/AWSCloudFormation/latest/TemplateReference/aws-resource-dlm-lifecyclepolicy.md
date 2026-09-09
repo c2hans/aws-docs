@@ -185,6 +185,9 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 `Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the lifecycle policy.
 
+`PolicyId`  <a name="PolicyId-fn::getatt"></a>
+The identifier of the lifecycle policy.
+
 ## Examples
 <a name="aws-resource-dlm-lifecyclepolicy--examples"></a>
 

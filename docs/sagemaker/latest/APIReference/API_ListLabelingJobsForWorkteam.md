@@ -12,8 +12,6 @@ Gets a list of labeling jobs assigned to a specified work team.
 
 ```
 {
-   "CreationTimeAfter": {{number}},
-   "CreationTimeBefore": {{number}},
    "JobReferenceCodeContains": "{{string}}",
    "MaxResults": {{number}},
    "NextToken": "{{string}}",
@@ -29,16 +27,6 @@ Gets a list of labeling jobs assigned to a specified work team.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
-
- ** [CreationTimeAfter](#API_ListLabelingJobsForWorkteam_RequestSyntax) **   <a name="sagemaker-ListLabelingJobsForWorkteam-request-CreationTimeAfter"></a>
-A filter that returns only labeling jobs created after the specified time (timestamp).
-Type: Timestamp
-Required: No
-
- ** [CreationTimeBefore](#API_ListLabelingJobsForWorkteam_RequestSyntax) **   <a name="sagemaker-ListLabelingJobsForWorkteam-request-CreationTimeBefore"></a>
-A filter that returns only labeling jobs created before the specified time (timestamp).
-Type: Timestamp
-Required: No
 
  ** [JobReferenceCodeContains](#API_ListLabelingJobsForWorkteam_RequestSyntax) **   <a name="sagemaker-ListLabelingJobsForWorkteam-request-JobReferenceCodeContains"></a>
 A filter the limits jobs to only the ones whose job reference code contains the specified string.
@@ -86,7 +74,6 @@ Required: Yes
 {
    "LabelingJobSummaryList": [
       {
-         "CreationTime": number,
          "JobReferenceCode": "string",
          "LabelCounters": {
             "HumanLabeled": number,

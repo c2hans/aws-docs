@@ -12,8 +12,6 @@ Returns information about the flow definitions in your account.
 
 ```
 {
-   "CreationTimeAfter": {{number}},
-   "CreationTimeBefore": {{number}},
    "MaxResults": {{number}},
    "NextToken": "{{string}}",
    "SortOrder": "{{string}}"
@@ -26,16 +24,6 @@ Returns information about the flow definitions in your account.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
-
- ** [CreationTimeAfter](#API_ListFlowDefinitions_RequestSyntax) **   <a name="sagemaker-ListFlowDefinitions-request-CreationTimeAfter"></a>
-A filter that returns only flow definitions with a creation time greater than or equal to the specified timestamp.
-Type: Timestamp
-Required: No
-
- ** [CreationTimeBefore](#API_ListFlowDefinitions_RequestSyntax) **   <a name="sagemaker-ListFlowDefinitions-request-CreationTimeBefore"></a>
-A filter that returns only flow definitions that were created before the specified timestamp.
-Type: Timestamp
-Required: No
 
  ** [MaxResults](#API_ListFlowDefinitions_RequestSyntax) **   <a name="sagemaker-ListFlowDefinitions-request-MaxResults"></a>
 The total number of items to return. If the total number of available items is more than the value specified in `MaxResults`, then a `NextToken` will be provided in the output that you can use to resume pagination.
@@ -63,7 +51,6 @@ Required: No
 {
    "FlowDefinitionSummaries": [
       {
-         "CreationTime": number,
          "FailureReason": "string",
          "FlowDefinitionArn": "string",
          "FlowDefinitionName": "string",

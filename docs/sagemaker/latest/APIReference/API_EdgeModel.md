@@ -24,16 +24,6 @@ Length Constraints: Minimum length of 1. Maximum length of 30.
 Pattern: `[a-zA-Z0-9\ \_\.]+`
 Required: Yes
 
- ** LatestInference **   <a name="sagemaker-Type-EdgeModel-LatestInference"></a>
-The timestamp of the last inference that was made.
-Type: Timestamp
-Required: No
-
- ** LatestSampleTime **   <a name="sagemaker-Type-EdgeModel-LatestSampleTime"></a>
-The timestamp of the last data sample taken.
-Type: Timestamp
-Required: No
-
 ## See Also
 <a name="API_EdgeModel_SeeAlso"></a>
 

@@ -29,7 +29,7 @@ When you enable customer profiles, you are prompted to provide a friendly domain
 ### Data store
 <a name="enable-customer-profiles-data-store"></a>
 
-Data store is a long-term, service-managed data store of Customer Profiles data. It retains Customer Profiles data updated over the past 10 years. You must enable it to use segmentation powered by Spark SQL and predictive insights. Data store does not compute calculated attributes or populate Agent Workspace.
+Data store is a long-term, service-managed data store of Customer Profiles data. It retains Customer Profiles data updated over the past 10 years. You must enable it to use segmentation powered by Spark SQL and predictive insights. Data store does not compute calculated attributes or populate the agent workspace.
 
 After you enable Data store, it automatically stores the data you ingest into Customer Profiles. You cannot disable Data store after you enable it. To delete data from Data store, use the DeleteProfile API, or delete the object types or the Customer Profiles domain.
 
@@ -184,9 +184,9 @@ Your agents can [create new customer profiles](ag-cp-create.md) and view contact
 ## Next steps
 <a name="cp-setup-nextsteps"></a>
 
-1.  [Make Customer Profiles available through the agent application](customer-profile-access.md).
+1.  [Make Customer Profiles available through the agent workspace](customer-profile-access.md).
 
-1.  [Assign agents permissions to access Customer Profiles in the agent application](assign-security-profile-customer-profile.md).
+1.  [Assign agents permissions to access Customer Profiles in the agent workspace](assign-security-profile-customer-profile.md).
 
 1. [Integrate with external applications that profile customer profile data (optional)](integrate-external-apps-customer-profiles.md).
 

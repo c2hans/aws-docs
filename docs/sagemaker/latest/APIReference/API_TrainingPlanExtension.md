@@ -38,25 +38,10 @@ Type: Integer
 Valid Range: Minimum value of 0. Maximum value of 4368.
 Required: No
 
- ** EndDate **   <a name="sagemaker-Type-TrainingPlanExtension-EndDate"></a>
-The end date of the extension period.
-Type: Timestamp
-Required: No
-
- ** ExtendedAt **   <a name="sagemaker-Type-TrainingPlanExtension-ExtendedAt"></a>
-The timestamp when the extension was created.
-Type: Timestamp
-Required: No
-
  ** PaymentStatus **   <a name="sagemaker-Type-TrainingPlanExtension-PaymentStatus"></a>
 The payment processing status of the extension.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 256.
-Required: No
-
- ** StartDate **   <a name="sagemaker-Type-TrainingPlanExtension-StartDate"></a>
-The start date of the extension period.
-Type: Timestamp
 Required: No
 
  ** Status **   <a name="sagemaker-Type-TrainingPlanExtension-Status"></a>

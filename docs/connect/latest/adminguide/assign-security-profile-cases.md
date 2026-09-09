@@ -32,10 +32,10 @@ To be able to assign case ownership to users or queues, agents need permissions 
 
 ## Description of Cases permissions
 <a name="case-permissions-description"></a>
-+ **Audit History**: Manage who can access the audit history of cases in the agent application.
-  + **View Audit History**: Allows the user to view the audit history of cases in the agent application.
-+ **Cases**: Manage who can access cases by using the agent application.
-  + **View case**: Allows the user to view and search cases in the agent application. This includes viewing case data (for example, status, title, summary), contact history (for example, calls, chats, tasks with information such as start time, end time, duration), and comments.
++ **Audit History**: Manage who can access the audit history of cases in the agent workspace.
+  + **View Audit History**: Allows the user to view the audit history of cases in the agent workspace.
++ **Cases**: Manage who can access cases by using the agent workspace.
+  + **View case**: Allows the user to view and search cases in the agent workspace. This includes viewing case data (for example, status, title, summary), contact history (for example, calls, chats, tasks with information such as start time, end time, duration), and comments.
   + **Edit case**: Allows the user to edit cases, which includes editing case data (for example, update case status), add comments, and associate contacts to cases.
   + **Create case**: Allows the user to create new cases, and associate contacts to cases.
   + **Delete case**: Allows the user to delete any case in the domain.
@@ -77,7 +77,7 @@ When users have permissions to **View Case Fields** and **View Case Templates**,
 ## Required Agent Application permissions
 <a name="required-agent-application-permissions"></a>
 
-To be able to generate a summary for a case in the agent application, agents need permission to view AI agents in the agent application, as shown in the following image.
+To be able to generate a summary for a case in the agent workspace, agents need permission to view AI agents in the agent workspace, as shown in the following image.
 
 ![Screenshot showing AI agent permissions in security profile.](https://docs.aws.amazon.com/connect/latest/adminguide/images/case-summary-ai-agent-permissions.png)
 

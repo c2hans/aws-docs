@@ -57,7 +57,6 @@ Required: Yes
 
 ```
 {
-   "CreationTime": number,
    "DocumentSchemaVersion": "string",
    "FailureReason": "string",
    "HubArn": "string",
@@ -78,7 +77,6 @@ Required: Yes
    "HubContentType": "string",
    "HubContentVersion": "string",
    "HubName": "string",
-   "LastModifiedTime": number,
    "ReferenceMinVersion": "string",
    "SageMakerPublicHubContentArn": "string",
    "SupportStatus": "string"
@@ -91,10 +89,6 @@ Required: Yes
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
-
- ** [CreationTime](#API_DescribeHubContent_ResponseSyntax) **   <a name="sagemaker-DescribeHubContent-response-CreationTime"></a>
-The date and time that hub content was created.
-Type: Timestamp
 
  ** [DocumentSchemaVersion](#API_DescribeHubContent_ResponseSyntax) **   <a name="sagemaker-DescribeHubContent-response-DocumentSchemaVersion"></a>
 The document schema version for the hub content.
@@ -181,10 +175,6 @@ The name of the hub that contains the content.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 63.
 Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
-
- ** [LastModifiedTime](#API_DescribeHubContent_ResponseSyntax) **   <a name="sagemaker-DescribeHubContent-response-LastModifiedTime"></a>
-The last modified time of the hub content.
-Type: Timestamp
 
  ** [ReferenceMinVersion](#API_DescribeHubContent_ResponseSyntax) **   <a name="sagemaker-DescribeHubContent-response-ReferenceMinVersion"></a>
 The minimum version of the hub content.

@@ -107,6 +107,9 @@ x-amz-tagging: {{Tagging}}
 x-amz-object-lock-mode: {{ObjectLockMode}}
 x-amz-object-lock-retain-until-date: {{ObjectLockRetainUntilDate}}
 x-amz-object-lock-legal-hold: {{ObjectLockLegalHoldStatus}}
+x-amz-object-lock-event-hold: {{ObjectLockEventHold}}
+x-amz-object-lock-event-hold-duration-days: {{ObjectLockEventHoldDurationDays}}
+x-amz-object-lock-event-hold-duration-years: {{ObjectLockEventHoldDurationYears}}
 x-amz-expected-bucket-owner: {{ExpectedBucketOwner}}
 
 {{Body}}
@@ -229,6 +232,19 @@ Allows grantee to write the ACL for the applicable object.
 + This functionality is not supported for directory buckets.
 + This functionality is not supported for Amazon S3 on Outposts.
 
+ ** [x-amz-object-lock-event-hold](#API_PutObject_RequestSyntax) **   <a name="AmazonS3-PutObject-request-header-ObjectLockEventHold"></a>
+Specifies the event hold status to apply to this object. Set to `ON` to enable or `OFF` to disable.
+This functionality is not supported for directory buckets.
+Valid Values: `ON | OFF`
+
+ ** [x-amz-object-lock-event-hold-duration-days](#API_PutObject_RequestSyntax) **   <a name="AmazonS3-PutObject-request-header-ObjectLockEventHoldDurationDays"></a>
+Specifies the event hold duration in days to apply to this object. You cannot specify a duration in both days and years.
+This functionality is not supported for directory buckets.
+
+ ** [x-amz-object-lock-event-hold-duration-years](#API_PutObject_RequestSyntax) **   <a name="AmazonS3-PutObject-request-header-ObjectLockEventHoldDurationYears"></a>
+Specifies the event hold duration in years to apply to this object. You cannot specify a duration in both days and years.
+This functionality is not supported for directory buckets.
+
  ** [x-amz-object-lock-legal-hold](#API_PutObject_RequestSyntax) **   <a name="AmazonS3-PutObject-request-header-ObjectLockLegalHoldStatus"></a>
 Specifies whether a legal hold will be applied to this object. For more information about S3 Object Lock, see [Object Lock](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lock.html) in the *Amazon S3 User Guide*.
 This functionality is not supported for directory buckets.
@@ -276,7 +292,7 @@ The server-side encryption algorithm that was used when you store this object in
 **Note**
 When you use the CLI or the AWS SDKs, for `CreateSession`, the session token refreshes automatically to avoid service interruptions when a session expires. The CLI or the AWS SDKs use the bucket's default encryption configuration for the `CreateSession` request. It's not supported to override the encryption settings values in the `CreateSession` request. So in the Zonal endpoint API calls (except [CopyObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html) and [UploadPartCopy](https://docs.aws.amazon.com/AmazonS3/latest/API/API_UploadPartCopy.html)), the encryption request headers must match the default encryption configuration of the directory bucket.
 +  **S3 access points for Amazon FSx ** - When accessing data stored in Amazon FSx file systems using S3 access points, the only valid server side encryption option is `aws:fsx`. All Amazon FSx file systems have encryption configured by default and are encrypted at rest. Data is automatically encrypted before being written to the file system, and automatically decrypted as it is read. These processes are handled transparently by Amazon FSx.
-Valid Values: `AES256 | aws:fsx | aws:kms | aws:kms:dsse`
+Valid Values: `AES256 | aws:fsx | aws:backup | aws:kms | aws:kms:dsse`
 
  ** [x-amz-server-side-encryption-aws-kms-key-id](#API_PutObject_RequestSyntax) **   <a name="AmazonS3-PutObject-request-header-SSEKMSKeyId"></a>
 Specifies the AWS KMS key ID (Key ID, Key ARN, or Key Alias) to use for object encryption. If the KMS key doesn't exist in the same account that's issuing the command, you must use the full Key ARN not the Key ID.
@@ -309,7 +325,7 @@ This functionality is not supported for directory buckets.
 By default, Amazon S3 uses the STANDARD Storage Class to store newly created objects. The STANDARD storage class provides high durability and high availability. Depending on performance needs, you can specify a different Storage Class. For more information, see [Storage Classes](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-class-intro.html) in the *Amazon S3 User Guide*.
 + Directory buckets only support `EXPRESS_ONEZONE` (the S3 Express One Zone storage class) in Availability Zones and `ONEZONE_IA` (the S3 One Zone-Infrequent Access storage class) in Dedicated Local Zones.
 + Amazon S3 on Outposts only uses the OUTPOSTS Storage Class.
-Valid Values: `STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | ONEZONE_IA | INTELLIGENT_TIERING | GLACIER | DEEP_ARCHIVE | OUTPOSTS | GLACIER_IR | SNOW | EXPRESS_ONEZONE | FSX_OPENZFS | FSX_ONTAP`
+Valid Values: `STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | ONEZONE_IA | INTELLIGENT_TIERING | GLACIER | DEEP_ARCHIVE | OUTPOSTS | GLACIER_IR | SNOW | EXPRESS_ONEZONE | FSX_OPENZFS | FSX_ONTAP | AWS_BACKUP_WARM | AWS_BACKUP_LOW_COST_WARM`
 
  ** [x-amz-tagging](#API_PutObject_RequestSyntax) **   <a name="AmazonS3-PutObject-request-header-Tagging"></a>
 The tag-set for the object. The tag-set must be encoded as URL Query parameters. (For example, "Key1=Value1")
@@ -426,7 +442,7 @@ Valid Values: `requester`
  ** [x-amz-server-side-encryption](#API_PutObject_ResponseSyntax) **   <a name="AmazonS3-PutObject-response-header-ServerSideEncryption"></a>
 The server-side encryption algorithm used when you store this object in Amazon S3 or Amazon FSx.
 When accessing data stored in Amazon FSx file systems using S3 access points, the only valid server side encryption option is `aws:fsx`.
-Valid Values: `AES256 | aws:fsx | aws:kms | aws:kms:dsse`
+Valid Values: `AES256 | aws:fsx | aws:backup | aws:kms | aws:kms:dsse`
 
  ** [x-amz-server-side-encryption-aws-kms-key-id](#API_PutObject_ResponseSyntax) **   <a name="AmazonS3-PutObject-response-header-SSEKMSKeyId"></a>
 If present, indicates the ID of the KMS key that was used for object encryption.

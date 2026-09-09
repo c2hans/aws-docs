@@ -10,11 +10,6 @@ The container for the summary information about a training job.
 ## Contents
 <a name="API_HyperParameterTrainingJobSummary_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-HyperParameterTrainingJobSummary-CreationTime"></a>
-The date and time that the training job was created.
-Type: Timestamp
-Required: Yes
-
  ** TrainingJobArn **   <a name="sagemaker-Type-HyperParameterTrainingJobSummary-TrainingJobArn"></a>
 The Amazon Resource Name (ARN) of the training job.
 Type: String
@@ -65,21 +60,11 @@ Type: String
 Valid Values: `Succeeded | Pending | Failed`
 Required: No
 
- ** TrainingEndTime **   <a name="sagemaker-Type-HyperParameterTrainingJobSummary-TrainingEndTime"></a>
-Specifies the time when the training job ends on training instances. You are billed for the time interval between the value of `TrainingStartTime` and this time. For successful jobs and stopped jobs, this is the time after model artifacts are uploaded. For failed jobs, this is the time when SageMaker detects a job failure.
-Type: Timestamp
-Required: No
-
  ** TrainingJobDefinitionName **   <a name="sagemaker-Type-HyperParameterTrainingJobSummary-TrainingJobDefinitionName"></a>
 The training job definition name.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,63}`
-Required: No
-
- ** TrainingStartTime **   <a name="sagemaker-Type-HyperParameterTrainingJobSummary-TrainingStartTime"></a>
-The date and time that the training job started.
-Type: Timestamp
 Required: No
 
  ** TuningJobName **   <a name="sagemaker-Type-HyperParameterTrainingJobSummary-TuningJobName"></a>

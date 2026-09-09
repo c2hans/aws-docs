@@ -9,6 +9,7 @@ The following table describes the important changes to the documentation for AWS
 
 | Date | Change | Documentation updates | API versions updated |
 | --- | --- | --- | --- |
+| September 7, 2026 | Supplying cluster details and connecting to multiple clusters | Updated the login node configuration script topic to describe supplying cluster details on the command line to skip the AWS PCS API call. Also added guidance for connecting one login node to multiple AWS PCS clusters, including clusters in different AWS Regions. | Not applicable |
 | September 3, 2026 | AWS PCS released in Asia Pacific (New Zealand) | AWS PCS is now available in Asia Pacific (New Zealand) (ap-southeast-6).<br />CloudFormation templates are available to get started in the Asia Pacific (New Zealand) AWS Region. For more information, see [Use CloudFormation to create a sample AWS PCS cluster](get-started-cfn-create.md) and [CloudFormation templates to create a sample AWS PCS cluster](get-started-cfn-sample-templates.md). |  Not applicable  |
 | August 20, 2026 | Corrected Slurm REST API documentation | Corrected the example script for retrieving the JWT signing key to use `--version-id` instead of `--version-stage`, and updated endpoint URLs in the Slurm REST API topics to use `http://`, because the `slurmrestd` endpoint is HTTP only. | Not applicable |
 | August 14, 2026 | Updated node lifecycle actions best practices | Added guidance that AWS PCS does not support rebooting the instance during a lifecycle action script. | Not applicable |

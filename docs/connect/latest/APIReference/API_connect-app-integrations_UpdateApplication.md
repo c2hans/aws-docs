@@ -158,6 +158,10 @@ For information about the errors that are common to all actions, see [Common Err
 You do not have sufficient access to perform this action.
 HTTP Status Code: 403
 
+ ** ConflictException **
+The request conflicts with the current state of the resource. Verify the application's current state and retry the request.
+HTTP Status Code: 409
+
  ** InternalServiceError **
 Request processing failed due to an error or failure with the service.
 HTTP Status Code: 500

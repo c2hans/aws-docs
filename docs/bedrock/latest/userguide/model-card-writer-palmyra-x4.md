@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-writ
 
 Palmyra X4 is Writer's enterprise LLM optimized for business writing, content generation, and knowledge work with strong instruction following. For more information about model development and performance, see the [model/service card](https://writer.com/llms/palmyra-x4/).
 + **Model launch date:** Sep 2024
++ **EOL no sooner than:** Sep 2025
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** No sooner than 4/28/2026
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
 + **Model lifecycle:** Active

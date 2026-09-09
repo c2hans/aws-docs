@@ -12,8 +12,6 @@ Returns a list of AI benchmark jobs in your account. You can filter the results 
 
 ```
 {
-   "CreationTimeAfter": {{number}},
-   "CreationTimeBefore": {{number}},
    "MaxResults": {{number}},
    "NameContains": "{{string}}",
    "NextToken": "{{string}}",
@@ -29,16 +27,6 @@ Returns a list of AI benchmark jobs in your account. You can filter the results 
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
-
- ** [CreationTimeAfter](#API_ListAIBenchmarkJobs_RequestSyntax) **   <a name="sagemaker-ListAIBenchmarkJobs-request-CreationTimeAfter"></a>
-A filter that returns only jobs created after the specified time.
-Type: Timestamp
-Required: No
-
- ** [CreationTimeBefore](#API_ListAIBenchmarkJobs_RequestSyntax) **   <a name="sagemaker-ListAIBenchmarkJobs-request-CreationTimeBefore"></a>
-A filter that returns only jobs created before the specified time.
-Type: Timestamp
-Required: No
 
  ** [MaxResults](#API_ListAIBenchmarkJobs_RequestSyntax) **   <a name="sagemaker-ListAIBenchmarkJobs-request-MaxResults"></a>
 The maximum number of benchmark jobs to return in the response.
@@ -88,9 +76,7 @@ Required: No
          "AIBenchmarkJobArn": "string",
          "AIBenchmarkJobName": "string",
          "AIBenchmarkJobStatus": "string",
-         "AIWorkloadConfigName": "string",
-         "CreationTime": number,
-         "EndTime": number
+         "AIWorkloadConfigName": "string"
       }
    ],
    "NextToken": "string"

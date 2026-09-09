@@ -30,9 +30,9 @@ There are two types of case fields:
 
 1. Select the type of field you want to create. For example, you might choose **Text** if you want agents to be able to enter free form notes.
 
-1. Assign a name to the field. It will appear to agents in the agent application.
+1. Assign a name to the field. It will appear to agents in the agent workspace.
 
-1. Optionally, provide a description. It appears only to admins on the Connect Customer admin website. It does not appear to agents in the agent application.
+1. Optionally, provide a description. It appears only to admins on the Connect Customer admin website. It does not appear to agents in the agent workspace.
 
 1. Choose **Save**.
 
@@ -103,7 +103,7 @@ Single-select case fields can be active or inactive.
 
 Single-select options have two parts:
 
-1. Option name (shown to agents): The label that is displayed to agents in the agent application.
+1. Option name (shown to agents): The label that is displayed to agents in the agent workspace.
 
 1. Option value (internal reference): The data that's collected. For example, for AWS Region, you might want to display **US West (Oregon)** but collect the data as **PDX**.
 

@@ -10,6 +10,17 @@ A Retention configuration for an object.
 ## Contents
 <a name="API_ObjectLockRetention_Contents"></a>
 
+ ** EventHold **   <a name="AmazonS3-Type-ObjectLockRetention-EventHold"></a>
+The event hold status for the object. Set to `ON` to enable an event hold or `OFF` to disable it.
+Type: String
+Valid Values: `ON | OFF`
+Required: No
+
+ ** EventHoldDuration **   <a name="AmazonS3-Type-ObjectLockRetention-EventHoldDuration"></a>
+The event hold duration for the object. Specifies how long the object remains protected after the event hold is released.
+Type: [EventHoldDuration](API_EventHoldDuration.md) data type
+Required: No
+
  ** Mode **   <a name="AmazonS3-Type-ObjectLockRetention-Mode"></a>
 Indicates the Retention mode for the specified object.
 Type: String

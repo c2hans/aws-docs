@@ -201,6 +201,7 @@ HTTP/1.1 200
                   <Permission>string</Permission>
                </S3Grant>
             </AccessControlGrants>
+            <AnnotationDirective>string</AnnotationDirective>
             <BucketKeyEnabled>boolean</BucketKeyEnabled>
             <CannedAccessControlList>string</CannedAccessControlList>
             <ChecksumAlgorithm>string</ChecksumAlgorithm>
@@ -230,6 +231,11 @@ HTTP/1.1 200
                   <Value>string</Value>
                </S3Tag>
             </NewObjectTagging>
+            <ObjectLockEventHold>string</ObjectLockEventHold>
+            <ObjectLockEventHoldDuration>
+               <Days>integer</Days>
+               <Years>integer</Years>
+            </ObjectLockEventHoldDuration>
             <ObjectLockLegalHoldStatus>string</ObjectLockLegalHoldStatus>
             <ObjectLockMode>string</ObjectLockMode>
             <ObjectLockRetainUntilDate>timestamp</ObjectLockRetainUntilDate>
@@ -249,6 +255,11 @@ HTTP/1.1 200
          <S3PutObjectRetention>
             <BypassGovernanceRetention>boolean</BypassGovernanceRetention>
             <Retention>
+               <EventHold>string</EventHold>
+               <EventHoldDuration>
+                  <Days>integer</Days>
+                  <Years>integer</Years>
+               </EventHoldDuration>
                <Mode>string</Mode>
                <RetainUntilDate>timestamp</RetainUntilDate>
             </Retention>

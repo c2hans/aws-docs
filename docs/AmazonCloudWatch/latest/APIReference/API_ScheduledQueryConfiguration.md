@@ -13,7 +13,7 @@ The configuration of the CloudWatch Logs scheduled query that backs a log alarm.
  ** AggregationExpression **   <a name="ACW-Type-ScheduledQueryConfiguration-AggregationExpression"></a>
 The expression that defines how to aggregate query results into one or more scalar values for alarm evaluation. For example, `count(*)` or `avg(latency) by host | sort desc`. Length constraints: minimum 1 character, maximum 2048 characters.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 256.
+Length Constraints: Minimum length of 1. Maximum length of 2048.
 Required: Yes
 
  ** QueryString **   <a name="ACW-Type-ScheduledQueryConfiguration-QueryString"></a>

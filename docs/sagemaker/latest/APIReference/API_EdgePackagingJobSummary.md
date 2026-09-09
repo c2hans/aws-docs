@@ -37,16 +37,6 @@ Length Constraints: Minimum length of 1. Maximum length of 63.
 Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
 Required: No
 
- ** CreationTime **   <a name="sagemaker-Type-EdgePackagingJobSummary-CreationTime"></a>
-The timestamp of when the job was created.
-Type: Timestamp
-Required: No
-
- ** LastModifiedTime **   <a name="sagemaker-Type-EdgePackagingJobSummary-LastModifiedTime"></a>
-The timestamp of when the edge packaging job was last updated.
-Type: Timestamp
-Required: No
-
  ** ModelName **   <a name="sagemaker-Type-EdgePackagingJobSummary-ModelName"></a>
 The name of the model.
 Type: String

@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anth
 
 Claude 3.5 Haiku is Anthropic's next-generation fast model with improved coding and reasoning performance over Claude 3 Haiku at the same speed tier. For more information about model development and performance, see the [model/service card](https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf).
 + **Model launch date:** Nov 4, 2024
++ **EOL no sooner than:** Nov 4, 2025
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** June 19, 2026
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
 + **Model lifecycle:** Legacy

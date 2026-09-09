@@ -40,7 +40,6 @@ Required: Yes
    "AIWorkloadConfigs": {
       "WorkloadSpec": { ... }
    },
-   "CreationTime": number,
    "DatasetConfig": { ... },
    "Tags": [
       {
@@ -73,10 +72,6 @@ Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
  ** [AIWorkloadConfigs](#API_DescribeAIWorkloadConfig_ResponseSyntax) **   <a name="sagemaker-DescribeAIWorkloadConfig-response-AIWorkloadConfigs"></a>
 The benchmark tool configuration and workload specification.
 Type: [AIWorkloadConfigs](API_AIWorkloadConfigs.md) object
-
- ** [CreationTime](#API_DescribeAIWorkloadConfig_ResponseSyntax) **   <a name="sagemaker-DescribeAIWorkloadConfig-response-CreationTime"></a>
-A timestamp that indicates when the AI workload configuration was created.
-Type: Timestamp
 
  ** [DatasetConfig](#API_DescribeAIWorkloadConfig_ResponseSyntax) **   <a name="sagemaker-DescribeAIWorkloadConfig-response-DatasetConfig"></a>
 The dataset configuration for the workload.

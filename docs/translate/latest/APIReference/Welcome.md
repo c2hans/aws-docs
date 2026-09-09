@@ -18,4 +18,4 @@ The following resources provide additional information about the Amazon Translat
 +  *Amazon Web Services General Reference* — [Amazon Translate Endpoints for each region](https://docs.aws.amazon.com/general/latest/gr/translate-service.html).
 +  *AWS CLI* — [Amazon Translate CLI commands](https://docs.aws.amazon.com/cli/latest/reference/translate/index.html).
 
-This document was last published on September 7, 2026.
+This document was last published on September 9, 2026.

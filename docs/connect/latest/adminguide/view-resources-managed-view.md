@@ -2,10 +2,10 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/view-resources-managed-view.html
 ---
 
-# Set up AWS managed views for an agent's workspace in Connect Customer
+# Set up AWS managed views for the Connect Customer agent workspace
 <a name="view-resources-managed-view"></a>
 
-Connect Customer includes a set of views that you can add your agent's workspace. See the following for details on how to configure the different AWS managed views.
+Connect Customer includes a set of views that you can add to the agent workspace. See the following for details on how to configure the different AWS managed views.
 
 ------
 #### [ Detail view ]
@@ -29,7 +29,7 @@ The following image shows an example of a **Detail view**. It has a page heading
 + Is a list of objects with required properties, **Label**, **Value**, and optional properties **LinkType**, **ResourceId**, **Copyable** and **Url**. For more information see, [Attribute](https://d3irlmavjxd3d8.cloudfront.net/?path=/docs/aws-managed-views-common-configuration--page#attribute).
   + **LinkType** can be external or connect application such as case.
     + When it is *external*, a user can navigate to a new browser page, which is configured with **Url**.
-    + When it is *case*, a user can navigate to a new case detail on the Agent workspace, which configured with ResourceId.
+    + When it is *case*, a user can navigate to a new case detail on the agent workspace, which configured with ResourceId.
   + **Copyable** allows users to copy the ResourceId by choosing it with your input device.
 
 **Back (Optional)**
@@ -98,7 +98,7 @@ The following image shows an example of a List view. It has one column with thre
 + Is a list of objects with required properties, **Label**, **Value**, and optional properties **LinkType**, **ResourceId**, **Copyable** and **Url**. For more information see, [Attribute](https://d3irlmavjxd3d8.cloudfront.net/?path=/docs/aws-managed-views-common-configuration--page#attribute).
   + **LinkType** can be external or connect application such as case.
     + When it is *external*, a user can navigate to a new browser page, which is configured with **Url**.
-    + When it is *case*, a user can navigate to a new case detail on the Agent workspace, which configured with ResourceId.
+    + When it is *case*, a user can navigate to a new case detail on the agent workspace, which configured with ResourceId.
   + **Copyable** allows users to copy the ResourceId by choosing it with your input device.
 
 **Back (Optional)**
@@ -214,7 +214,7 @@ The following image shows an example of a Form view for a car rental reservation
 + Is a list of objects with required properties, **Label**, **Value**, and optional properties **LinkType**, **ResourceId**, **Copyable** and **Url**. For more information see, [Attribute](https://d3irlmavjxd3d8.cloudfront.net/?path=/docs/aws-managed-views-common-configuration--page#attribute).
   + **LinkType** can be external or connect application such as case.
     + When it is *external*, a user can navigate to a new browser page, which is configured with **Url**.
-    + When it is *case*, a user can navigate to a new case detail on the Agent workspace, which configured with ResourceId.
+    + When it is *case*, a user can navigate to a new case detail on the agent workspace, which configured with ResourceId.
   + **Copyable** allows users to copy the ResourceId by choosing it with your input device.
 
 **Heading (Optional)**
@@ -407,7 +407,7 @@ The following image shows an example of a confirmation.
 + Is a list of objects with required properties, **Label**, **Value**, and optional properties **LinkType**, **ResourceId**, **Copyable** and **Url**. For more information see, [Attribute](https://d3irlmavjxd3d8.cloudfront.net/?path=/docs/aws-managed-views-common-configuration--page#attribute).
   + **LinkType** can be external or connect application such as case.
     + When it is *external*, a user can navigate to a new browser page, which is configured with **Url**.
-    + When it is *case*, a user can navigate to a new case detail on the Agent workspace, which configured with ResourceId.
+    + When it is *case*, a user can navigate to a new case detail on the agent workspace, which configured with ResourceId.
   + **Copyable** allows users to copy the ResourceId by choosing it with your input device.
 
 **Heading (Optional)**
@@ -477,7 +477,7 @@ Interactive [documentation](https://d3irlmavjxd3d8.cloudfront.net/?path=/docs/aw
 + Is a list of objects with required properties, **Label**, **Value**, and optional properties **LinkType**, **ResourceId**, **Copyable** and **Url**. For more information, see [Attribute](https://d3irlmavjxd3d8.cloudfront.net/?path=/docs/aws-managed-views-common-configuration--page#attribute).
   + **LinkType** can be external or connect application such as case.
     + When it is *external*, a user can navigate to a new browser page, which is configured with **Url**.
-    + When it is *case*, a user can navigate to a new case detail on the Agent workspace, which configured with ResourceId.
+    + When it is *case*, a user can navigate to a new case detail on the agent workspace, which configured with ResourceId.
   + **Copyable** allows users to copy the ResourceId by choosing it with your input device.
 
 **Heading (Optional)**

@@ -63,8 +63,7 @@ Required: Yes
       "PresetDeploymentConfig": "string",
       "PresetDeploymentType": "string",
       "S3OutputLocation": "string"
-   },
-   "ReportGenerated": number
+   }
 }
 ```
 
@@ -107,10 +106,6 @@ Type: Array of [EdgeModelStat](API_EdgeModelStat.md) objects
  ** [OutputConfig](#API_GetDeviceFleetReport_ResponseSyntax) **   <a name="sagemaker-GetDeviceFleetReport-response-OutputConfig"></a>
 The output configuration for storing sample data collected by the fleet.
 Type: [EdgeOutputConfig](API_EdgeOutputConfig.md) object
-
- ** [ReportGenerated](#API_GetDeviceFleetReport_ResponseSyntax) **   <a name="sagemaker-GetDeviceFleetReport-response-ReportGenerated"></a>
-Timestamp of when the report was generated.
-Type: Timestamp
 
 ## Errors
 <a name="API_GetDeviceFleetReport_Errors"></a>

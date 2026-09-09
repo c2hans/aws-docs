@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/create-task-from-case.html
 ---
 
-# Create a task in the Contact Control Panel (CCP) agent workspace from a case
+# Create a task in the Contact Control Panel (CCP) or the agent workspace from a case
 <a name="create-task-from-case"></a>
 
 In the agent workspace, you can add a task from a case. In the Contact Control Panel (CCP), you will see the task creation form.

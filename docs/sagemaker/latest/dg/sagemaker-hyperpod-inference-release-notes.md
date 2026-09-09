@@ -9,6 +9,64 @@ This topic covers release notes that track updates, fixes, and new features for 
 
 For information about SageMaker HyperPod Inference capabilities and deployment options, see [Deploying models on Amazon SageMaker HyperPod](sagemaker-hyperpod-model-deployment.md).
 
+## SageMaker HyperPod Inference release notes: v3.5
+<a name="sagemaker-hyperpod-inference-release-notes-20260903"></a>
+
+**Release Date:** September 3, 2026
+
+**Summary**
+
+Amazon SageMaker HyperPod Inference Operator v3.5 gives you direct control over where model weights are pre-cached. You can now attach your own node affinity rules to the weights cache instead of relying solely on the instance-type targeting the operator derives from your deployment. This release also adds two Prometheus metrics for inbound request volume, and includes a few security fixes.
+
+Amazon SageMaker HyperPod Inference Operator v3.5 is available in all AWS Regions where SageMaker HyperPod is supported.
+
+**New Features**
++ **Node Affinity for Model Weights Caching** – Constrain which nodes pre-cache model weights by using the new `nodeAffinity` field under `modelCacheConfig.weightsCache` on your `InferenceEndpointConfig` or `JumpStartModel`. The field accepts the standard Kubernetes node affinity structure, so you get `requiredDuringSchedulingIgnoredDuringExecution` and `preferredDuringSchedulingIgnoredDuringExecution` terms. Multiple `nodeSelectorTerms` give you OR semantics, which lets you target node pools, Availability Zones, or custom label sets in one deployment.
+
+  The operator applies your rules in addition to the instance-type targeting it derives from `spec.instanceType` or `spec.instanceTypes`, so weights are cached only on nodes that satisfy both. Use this to pin the weights cache to a single Availability Zone or to specific HyperPod instance groups.
++ **Inbound Request Tracking** – Two new Prometheus metrics give you visibility into inbound inference request volume, so you can measure total demand, track shed load, and plan autoscaling and capacity accordingly.
+  + `model_requests_received_total` – Counts every request at the proxy entrypoint, before any admission control decision. This includes requests that are later shed.
+  + `model_requests_shed_total` – Counts requests rejected by admission control through throttling.
+
+### Upgrade to v3.5
+<a name="sagemaker-hyperpod-inference-v3-5-upgrade"></a>
+
+**Helm upgrade:**
+
+If you already have the Inference Operator installed by using Helm, use the following commands to upgrade:
+
+```
+helm get values -n kube-system hyperpod-inference-operator \
+> current-values.yaml
+
+cd sagemaker-hyperpod-cli/helm_chart/HyperPodHelmChart/\
+charts/inference-operator
+
+helm upgrade hyperpod-inference-operator . -n kube-system \
+  -f current-values.yaml --set image.tag=v3.5
+
+# Verification
+kubectl get deployment hyperpod-inference-operator-controller-manager \
+  -n hyperpod-inference-system \
+  -o jsonpath='{.spec.template.spec.containers[0].image}'
+```
+
+**EKS Add-on upgrade:**
+
+If you installed the Inference Operator as an EKS Add-on, upgrade to the latest version:
+
+```
+CLUSTER=EKS_CLUSTER_NAME
+REGION=REGION
+
+aws eks update-addon \
+  --cluster-name $CLUSTER \
+  --addon-name amazon-sagemaker-hyperpod-inference \
+  --addon-version v1.6.0-eksbuild.1 \
+  --resolve-conflicts OVERWRITE \
+  --region $REGION
+```
+
 ## SageMaker HyperPod Inference release notes: v3.4
 <a name="sagemaker-hyperpod-inference-release-notes-20260821"></a>
 

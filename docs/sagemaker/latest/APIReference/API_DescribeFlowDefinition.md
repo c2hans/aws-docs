@@ -35,7 +35,6 @@ Required: Yes
 
 ```
 {
-   "CreationTime": number,
    "FailureReason": "string",
    "FlowDefinitionArn": "string",
    "FlowDefinitionName": "string",
@@ -79,10 +78,6 @@ Required: Yes
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
-
- ** [CreationTime](#API_DescribeFlowDefinition_ResponseSyntax) **   <a name="sagemaker-DescribeFlowDefinition-response-CreationTime"></a>
-The timestamp when the flow definition was created.
-Type: Timestamp
 
  ** [FailureReason](#API_DescribeFlowDefinition_ResponseSyntax) **   <a name="sagemaker-DescribeFlowDefinition-response-FailureReason"></a>
 The reason your flow definition failed.

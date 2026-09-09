@@ -5,7 +5,10 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/http
 # Configure the Apache-based HTTP client
 <a name="http-configuration-apache"></a>
 
-Synchronous service clients in the AWS SDK for Java 2.x use an Apache-based HTTP client, [ApacheHttpClient](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/http/apache/ApacheHttpClient.html) by default. The SDK's `ApacheHttpClient` is based on the Apache [HttpClient](https://hc.apache.org/httpcomponents-client-4.5.x/index.html).
+**Note**
+`ApacheHttpClient` is deprecated because Apache HttpClient 4.x is in maintenance mode. Use the Apache HttpClient 5.x based [Apache5HttpClient](http-configuration-apache5.md).
+
+The SDK's `ApacheHttpClient` is based on the Apache [HttpClient 4.x](https://hc.apache.org/httpcomponents-client-4.5.x/index.html).
 
 The SDK also offers the [UrlConnectionHttpClient](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/http/urlconnection/UrlConnectionHttpClient.html), which loads more quickly, but has fewer features. For information about configuring the `UrlConnectionHttpClient`, see [Configure the URLConnection-based HTTP client](http-configuration-url.md).
 
@@ -14,44 +17,10 @@ To see the full set of configuration options available to you for the `ApacheHtt
 ## Access the `ApacheHttpClient`
 <a name="http-apache-dependency"></a>
 
-In most situations, you use the `ApacheHttpClient` without any explicit configuration. You declare your service clients and the SDK will configure the `ApacheHttpClient` with standard values for you.
-
-If you want to explicitly configure the `ApacheHttpClient` or use it with multiple service clients, you need to make it available for configuration.
-
-### No configuration needed
-<a name="http-config-apache-no-config"></a>
-
-When you declare a dependency on a service client in Maven, the SDK adds a *runtime* dependency on the `apache-client` artifact. This makes the `ApacheHttpClient` class available to your code at runtime, but not at compile time. If you are not configuring the Apache-based HTTP client, you do not need to specify a dependency for it.
-
-In the following XML snippet of a Maven `pom.xml` file, the dependency declared with `<artifactId>s3</artifactId>` automatically brings in the Apache-based HTTP client. You don't need to declare a dependency specifically for it.
-
-```
-<dependencyManagement>
-   <dependencies>
-        <dependency>
-            <groupId>software.amazon.awssdk</groupId>
-            <artifactId>bom</artifactId>
-            <version>2.27.21</version>
-            <type>pom</type>
-            <scope>import</scope>
-        </dependency>
-    </dependencies>
-</dependencyManagement>
-<dependencies>
-    <!-- The s3 dependency automatically adds a runtime dependency on the ApacheHttpClient-->
-    <dependency>
-        <groupId>software.amazon.awssdk</groupId>
-        <artifactId>s3</artifactId>
-    </dependency>
-</dependencies>
-```
-
-With these dependencies, you cannot make any explicit HTTP configuration changes, because the `ApacheHttpClient` library is only on the runtime classpath.
-
 ### Configuration needed
 <a name="http-config-apache-yes-config"></a>
 
-To configure the `ApacheHttpClient`, you need to add a dependency on the `apache-client` library at *compile* time.
+To use the `ApacheHttpClient`, you need to add a dependency on the `apache-client` library at *compile* time.
 
 Refer to the following example of a Maven `pom.xml` file to configure the `ApacheHttpClient`.
 
@@ -61,7 +30,7 @@ Refer to the following example of a Maven `pom.xml` file to configure the `Apach
             <dependency>
                 <groupId>software.amazon.awssdk</groupId>
                 <artifactId>bom</artifactId>
-                <version>2.27.21</version>
+                <version>2.54.0</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

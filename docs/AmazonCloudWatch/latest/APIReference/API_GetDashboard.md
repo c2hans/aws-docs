@@ -9,6 +9,8 @@ Displays the details of the dashboard that you specify.
 
 To copy an existing dashboard, use `GetDashboard`, and then use the data returned within `DashboardBody` as the template for the new dashboard when you call `PutDashboard` to create the copy.
 
+You might have recently enabled an [opt-in Region (Region that is disabled by default)](https://docs.aws.amazon.com/glossary/latest/reference/glos-chap.html#optinregion) for your account. In that Region, `GetDashboard` can return an access denied error for up to 24 hours after you enable the Region. This delay occurs while dashboard data propagates. The error does not indicate a problem with your permissions. Because dashboards are global, you can call `GetDashboard` in any other enabled Region, or retry after propagation completes.
+
 ## Request Parameters
 <a name="API_GetDashboard_RequestParameters"></a>
 

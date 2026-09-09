@@ -35,8 +35,6 @@ Required: Yes
 
 ```
 {
-   "CreationTime": number,
-   "LastModifiedTime": number,
    "StudioLifecycleConfigAppType": "string",
    "StudioLifecycleConfigArn": "string",
    "StudioLifecycleConfigContent": "string",
@@ -50,14 +48,6 @@ Required: Yes
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
-
- ** [CreationTime](#API_DescribeStudioLifecycleConfig_ResponseSyntax) **   <a name="sagemaker-DescribeStudioLifecycleConfig-response-CreationTime"></a>
-The creation time of the Amazon SageMaker AI Studio Lifecycle Configuration.
-Type: Timestamp
-
- ** [LastModifiedTime](#API_DescribeStudioLifecycleConfig_ResponseSyntax) **   <a name="sagemaker-DescribeStudioLifecycleConfig-response-LastModifiedTime"></a>
-This value is equivalent to CreationTime because Amazon SageMaker AI Studio Lifecycle Configurations are immutable.
-Type: Timestamp
 
  ** [StudioLifecycleConfigAppType](#API_DescribeStudioLifecycleConfig_ResponseSyntax) **   <a name="sagemaker-DescribeStudioLifecycleConfig-response-StudioLifecycleConfigAppType"></a>
 The App type that the Lifecycle Configuration is attached to.

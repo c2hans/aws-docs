@@ -10,11 +10,6 @@ Provides summary information about a job, returned by the `ListJobs` operation. 
 ## Contents
 <a name="API_JobSummary_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-JobSummary-CreationTime"></a>
-The date and time that the job was created.
-Type: Timestamp
-Required: Yes
-
  ** JobArn **   <a name="sagemaker-Type-JobSummary-JobArn"></a>
 The Amazon Resource Name (ARN) of the job.
 Type: String
@@ -46,16 +41,6 @@ The current status of the job.
 Type: String
 Valid Values: `InProgress | Completed | Failed | Stopping | Stopped | Deleting | DeleteFailed`
 Required: Yes
-
- ** LastModifiedTime **   <a name="sagemaker-Type-JobSummary-LastModifiedTime"></a>
-The date and time that the job was last modified.
-Type: Timestamp
-Required: Yes
-
- ** EndTime **   <a name="sagemaker-Type-JobSummary-EndTime"></a>
-The date and time that the job ended.
-Type: Timestamp
-Required: No
 
 ## See Also
 <a name="API_JobSummary_SeeAlso"></a>

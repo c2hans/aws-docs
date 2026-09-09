@@ -13,8 +13,6 @@ List the resource allocation definitions.
 ```
 {
    "ClusterArn": "{{string}}",
-   "CreatedAfter": {{number}},
-   "CreatedBefore": {{number}},
    "MaxResults": {{number}},
    "NameContains": "{{string}}",
    "NextToken": "{{string}}",
@@ -36,16 +34,6 @@ Filter for ARN of the cluster.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 256.
 Pattern: `arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:cluster/[a-z0-9]{12}`
-Required: No
-
- ** [CreatedAfter](#API_ListComputeQuotas_RequestSyntax) **   <a name="sagemaker-ListComputeQuotas-request-CreatedAfter"></a>
-Filter for after this creation time. The input for this parameter is a Unix timestamp. To convert a date and time into a Unix timestamp, see [EpochConverter](https://www.epochconverter.com/).
-Type: Timestamp
-Required: No
-
- ** [CreatedBefore](#API_ListComputeQuotas_RequestSyntax) **   <a name="sagemaker-ListComputeQuotas-request-CreatedBefore"></a>
-Filter for before this creation time. The input for this parameter is a Unix timestamp. To convert a date and time into a Unix timestamp, see [EpochConverter](https://www.epochconverter.com/).
-Type: Timestamp
 Required: No
 
  ** [MaxResults](#API_ListComputeQuotas_RequestSyntax) **   <a name="sagemaker-ListComputeQuotas-request-MaxResults"></a>
@@ -135,8 +123,6 @@ Required: No
             "TeamName": "string"
          },
          "ComputeQuotaVersion": number,
-         "CreationTime": number,
-         "LastModifiedTime": number,
          "Name": "string",
          "Status": "string"
       }

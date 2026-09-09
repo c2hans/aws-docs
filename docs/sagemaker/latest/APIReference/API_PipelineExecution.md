@@ -15,11 +15,6 @@ Information about the user who created or modified a SageMaker resource.
 Type: [UserContext](API_UserContext.md) object
 Required: No
 
- ** CreationTime **   <a name="sagemaker-Type-PipelineExecution-CreationTime"></a>
-The creation time of the pipeline execution.
-Type: Timestamp
-Required: No
-
  ** FailureReason **   <a name="sagemaker-Type-PipelineExecution-FailureReason"></a>
 If the execution failed, a message describing why.
 Type: String
@@ -30,11 +25,6 @@ Required: No
  ** LastModifiedBy **   <a name="sagemaker-Type-PipelineExecution-LastModifiedBy"></a>
 Information about the user who created or modified a SageMaker resource.
 Type: [UserContext](API_UserContext.md) object
-Required: No
-
- ** LastModifiedTime **   <a name="sagemaker-Type-PipelineExecution-LastModifiedTime"></a>
-The time that the pipeline execution was last modified.
-Type: Timestamp
 Required: No
 
  ** ParallelismConfiguration **   <a name="sagemaker-Type-PipelineExecution-ParallelismConfiguration"></a>

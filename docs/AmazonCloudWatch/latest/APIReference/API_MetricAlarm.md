@@ -203,6 +203,12 @@ Type: String
 Valid Values: `Seconds | Microseconds | Milliseconds | Bytes | Kilobytes | Megabytes | Gigabytes | Terabytes | Bits | Kilobits | Megabits | Gigabits | Terabits | Percent | Count | Bytes/Second | Kilobytes/Second | Megabytes/Second | Gigabytes/Second | Terabytes/Second | Bits/Second | Kilobits/Second | Megabits/Second | Gigabits/Second | Terabits/Second | Count/Second | None`
 Required: No
 
+ ** WarmUpConfiguration **   <a name="ACW-Type-MetricAlarm-WarmUpConfiguration"></a>
+The warm-up configuration for the alarm. A warm-up period delays alarm evaluation after you create or update the alarm. During the warm-up period, the alarm stays in `INSUFFICIENT_DATA` and does not perform alarm actions.
+For more information, see [Alarm warm-up periods](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/alarm-warm-up.html) in the *Amazon CloudWatch User Guide*.
+Type: [WarmUpConfiguration](API_WarmUpConfiguration.md) object
+Required: No
+
 ## See Also
 <a name="API_MetricAlarm_SeeAlso"></a>
 

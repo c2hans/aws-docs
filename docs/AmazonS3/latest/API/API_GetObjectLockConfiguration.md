@@ -54,6 +54,10 @@ HTTP/1.1 200
    <Rule>
       <DefaultRetention>
          <Days>integer</Days>
+         <DefaultEventHold>
+            <Days>integer</Days>
+            <Years>integer</Years>
+         </DefaultEventHold>
          <Mode>string</Mode>
          <Years>integer</Years>
       </DefaultRetention>

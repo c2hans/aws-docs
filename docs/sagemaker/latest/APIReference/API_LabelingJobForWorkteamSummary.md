@@ -10,11 +10,6 @@ Provides summary information for a work team.
 ## Contents
 <a name="API_LabelingJobForWorkteamSummary_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-LabelingJobForWorkteamSummary-CreationTime"></a>
-The date and time that the labeling job was created.
-Type: Timestamp
-Required: Yes
-
  ** JobReferenceCode **   <a name="sagemaker-Type-LabelingJobForWorkteamSummary-JobReferenceCode"></a>
 A unique identifier for a labeling job. You can use this to refer to a specific labeling job.
 Type: String

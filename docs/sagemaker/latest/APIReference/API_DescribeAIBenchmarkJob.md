@@ -40,8 +40,6 @@ Required: Yes
    "AIBenchmarkJobStatus": "string",
    "AIWorkloadConfigIdentifier": "string",
    "BenchmarkTarget": { ... },
-   "CreationTime": number,
-   "EndTime": number,
    "FailureReason": "string",
    "NetworkConfig": {
       "VpcConfig": {
@@ -64,7 +62,6 @@ Required: Yes
       "S3OutputLocation": "string"
    },
    "RoleArn": "string",
-   "StartTime": number,
    "Tags": [
       {
          "Key": "string",
@@ -109,14 +106,6 @@ The target endpoint that was benchmarked.
 Type: [AIBenchmarkTarget](API_AIBenchmarkTarget.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 
- ** [CreationTime](#API_DescribeAIBenchmarkJob_ResponseSyntax) **   <a name="sagemaker-DescribeAIBenchmarkJob-response-CreationTime"></a>
-A timestamp that indicates when the benchmark job was created.
-Type: Timestamp
-
- ** [EndTime](#API_DescribeAIBenchmarkJob_ResponseSyntax) **   <a name="sagemaker-DescribeAIBenchmarkJob-response-EndTime"></a>
-A timestamp that indicates when the benchmark job completed.
-Type: Timestamp
-
  ** [FailureReason](#API_DescribeAIBenchmarkJob_ResponseSyntax) **   <a name="sagemaker-DescribeAIBenchmarkJob-response-FailureReason"></a>
 If the benchmark job failed, the reason it failed.
 Type: String
@@ -135,10 +124,6 @@ The Amazon Resource Name (ARN) of the IAM role used by the benchmark job.
 Type: String
 Length Constraints: Minimum length of 20. Maximum length of 2048.
 Pattern: `arn:aws[a-z\-]*:iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+`
-
- ** [StartTime](#API_DescribeAIBenchmarkJob_ResponseSyntax) **   <a name="sagemaker-DescribeAIBenchmarkJob-response-StartTime"></a>
-A timestamp that indicates when the benchmark job started running.
-Type: Timestamp
 
  ** [Tags](#API_DescribeAIBenchmarkJob_ResponseSyntax) **   <a name="sagemaker-DescribeAIBenchmarkJob-response-Tags"></a>
 The tags associated with the benchmark job.

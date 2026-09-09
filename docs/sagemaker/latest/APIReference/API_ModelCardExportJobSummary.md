@@ -10,16 +10,6 @@ The summary of the Amazon SageMaker Model Card export job.
 ## Contents
 <a name="API_ModelCardExportJobSummary_Contents"></a>
 
- ** CreatedAt **   <a name="sagemaker-Type-ModelCardExportJobSummary-CreatedAt"></a>
-The date and time that the model card export job was created.
-Type: Timestamp
-Required: Yes
-
- ** LastModifiedAt **   <a name="sagemaker-Type-ModelCardExportJobSummary-LastModifiedAt"></a>
-The date and time that the model card export job was last modified..
-Type: Timestamp
-Required: Yes
-
  ** ModelCardExportJobArn **   <a name="sagemaker-Type-ModelCardExportJobSummary-ModelCardExportJobArn"></a>
 The Amazon Resource Name (ARN) of the model card export job.
 Type: String

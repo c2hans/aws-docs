@@ -20,7 +20,7 @@ You must not modify or delete this network interface. Modifying or deleting the 
 ## Always Use Connection Pooling
 <a name="always-use-connection-pooling"></a>
 
-In a scenario with a single producer and single consumer (such as the [Getting started: Creating and connecting to an ActiveMQ broker](getting-started-activemq.md) tutorial), you can use a single [`ActiveMQConnectionFactory`](https://activemq.apache.org/maven/apidocs/org/apache/activemq/ActiveMQConnectionFactory.html) class for every producer and consumer. For example:
+In a scenario with a single producer and single consumer (such as the [Getting started: Creating and connecting to an ActiveMQ broker](getting-started-activemq.md) tutorial), you can use a single `ActiveMQConnectionFactory` class for every producer and consumer. For more information, see [ActiveMQConnectionFactory](https://javadoc.io/doc/org.apache.activemq/activemq-client/latest/org/apache/activemq/ActiveMQConnectionFactory.html) on the javadoc.io website. For example:
 
 ```
 // Create a connection factory.
@@ -35,7 +35,7 @@ final Connection consumerConnection = connectionFactory.createConnection();
 consumerConnection.start();
 ```
 
-However, in more realistic scenarios with multiple producers and consumers, it can be costly and inefficient to create a large number of connections for multiple producers. In these scenarios, you should group multiple producer requests using the [`PooledConnectionFactory`](https://activemq.apache.org/maven/apidocs/org/apache/activemq/jms/pool/PooledConnectionFactory.html) class. For example:
+However, in more realistic scenarios with multiple producers and consumers, it can be costly and inefficient to create a large number of connections for multiple producers. In these scenarios, you should group multiple producer requests using the `PooledConnectionFactory` class. For more information, see [PooledConnectionFactory](https://javadoc.io/doc/org.apache.activemq/activemq-jms-pool/latest/org/apache/activemq/jms/pool/PooledConnectionFactory.html) on the javadoc.io website. For example:
 
 **Note**
 Message consumers should *never* use the `PooledConnectionFactory` class.
@@ -61,7 +61,7 @@ producerConnection.start();
 ## Always Use the Failover Transport to Connect to Multiple Broker Endpoints
 <a name="always-use-failover-transport-connect-to-multiple-broker-endpoints"></a>
 
-If you need your application to connect to multiple broker endpoints—for example, when you use an [active/standby](amazon-mq-broker-architecture.md#active-standby-broker-deployment) deployment mode or when you [migrate from an on-premises message broker to Amazon MQ](https://docs.aws.amazon.com/amazon-mq/latest/migration-guide/)—use the [Failover Transport](https://activemq.apache.org/failover-transport-reference.html) to allow your consumers to randomly connect to either one. For example:
+If you need your application to connect to multiple broker endpoints—for example, when you use an [active/standby](amazon-mq-broker-architecture.md#active-standby-broker-deployment) deployment mode or when you [migrate from an on-premises message broker to Amazon MQ](https://docs.aws.amazon.com/amazon-mq/latest/migration-guide/)—use the [Failover Transport](https://activemq.apache.org/components/classic/documentation/failover-transport-reference) to allow your consumers to randomly connect to either one. For example:
 
 ```
 failover:(ssl://b-1234a5b6-78cd-901e-2fgh-3i45j6k178l9-1.mq.us-east-2.amazonaws.com:61617,ssl://b-9876l5k4-32ji-109h-8gfe-7d65c4b132a1-2.mq.us-west-2.amazonaws.com:61617)?randomize=true
@@ -80,7 +80,7 @@ In general, avoid letting consumers route messages because, for optimal decoupli
 ## Prefer Virtual Destinations to Durable Subscriptions
 <a name="prefer-virtual-destinations-to-durable-subscriptions"></a>
 
-A [durable subscription](https://activemq.apache.org/how-do-durable-queues-and-topics-work.html) can help ensure that the consumer receives all messages published to a topic, for example, after a lost connection is restored. However, the use of durable subscriptions also precludes the use of competing consumers and might have performance issues at scale. Consider using [virtual destinations](https://activemq.apache.org/virtual-destinations.html) instead.
+A [durable subscription](https://activemq.apache.org/components/classic/documentation/how-do-durable-queues-and-topics-work) can help ensure that the consumer receives all messages published to a topic, for example, after a lost connection is restored. However, the use of durable subscriptions also precludes the use of competing consumers and might have performance issues at scale. Consider using [virtual destinations](https://activemq.apache.org/components/classic/documentation/virtual-destinations) instead.
 
 ## If using Amazon VPC peering, avoid client IPs in CIDR range `10.0.0.0/16`
 <a name="best-practices-activemq-vpc-cidr-restriction"></a>
@@ -122,7 +122,7 @@ To determine the best broker instance type for your application, we recommend te
 There are three common use cases when larger broker instance types improve throughput:
 + **Non-persistent mode** – When your application is less sensitive to losing messages during [broker instance failover](amazon-mq-broker-architecture.md#active-standby-broker-deployment) (for example, when broadcasting sports scores), you can often use ActiveMQ's non-persistent mode. In this mode, ActiveMQ writes messages to persistent storage only if the heap memory of the broker instance is full. Systems that use non-persistent mode can benefit from the higher amount of memory, faster CPU, and faster network available on larger broker instance types.
 + **Fast consumers** – When active consumers are available and the [`concurrentStoreAndDispatchQueues`](child-element-details.md#concurrentStoreAndDispatchQueues) flag is enabled, ActiveMQ allows messages to flow directly from producer to consumer without sending messages to storage (even in persistent mode). If your application can consume messages quickly (or if you can design your consumers to do this), your application can benefit from a larger broker instance type. To let your application consume messages more quickly, add consumer threads to your application instances or scale up your application instances vertically or horizontally.
-+ **Batched transactions** – When you use persistent mode and send multiple messages per transaction, you can achieve an overall higher message throughput by using larger broker instance types. For more information, see [Should I Use Transactions?](https://activemq.apache.org/should-i-use-transactions.html) in the ActiveMQ documentation.
++ **Batched transactions** – When you use persistent mode and send multiple messages per transaction, you can achieve an overall higher message throughput by using larger broker instance types. For more information, see [Should I Use Transactions?](https://activemq.apache.org/components/classic/documentation/should-i-use-transactions) in the ActiveMQ documentation.
 
 ## Choose the correct broker storage type for the best throughput
 <a name="broker-storage-types-choosing"></a>
@@ -135,9 +135,9 @@ To take advantage of high durability and replication across multiple Availabilit
 When you create a [network of brokers](network-of-brokers.md), configure it correctly for your application:
 + **Enable persistent mode** – Because (relative to its peers) each broker instance acts like a producer or a consumer, networks of brokers don't provide distributed replication of messages. The first broker that acts as a consumer receives a message and persists it to storage. This broker sends an acknowledgement to the producer and forwards the message to the next broker. When the second broker acknowledges the persistence of the message, the first broker deletes the message.
 
-  If persistent mode is disabled, the first broker acknowledges the producer without persisting the message to storage. For more information, see [Replicated Message Store](https://activemq.apache.org/replicated-message-store.html) and [What is the difference between persistent and non-persistent delivery?](https://activemq.apache.org/what-is-the-difference-between-persistent-and-non-persistent-delivery.html) in the Apache ActiveMQ documentation.
-+ **Don't disable advisory messages for broker instances** – For more information, see [Advisory Message](https://activemq.apache.org/advisory-message.html) in the Apache ActiveMQ documentation.
-+ **Don't use multicast broker discovery** – Amazon MQ doesn't support broker discovery using multicast. For more information, see [What is the difference between discovery, multicast, and zeroconf?](https://activemq.apache.org/multicast-transport-reference.html) in the Apache ActiveMQ documentation.
+  If persistent mode is disabled, the first broker acknowledges the producer without persisting the message to storage. For more information, see [Replicated Message Store](https://activemq.apache.org/components/classic/documentation/replicated-message-store) and [What is the difference between persistent and non-persistent delivery?](https://activemq.apache.org/components/classic/documentation/what-is-the-difference-between-persistent-and-non-persistent-delivery) in the Apache ActiveMQ documentation.
++ **Don't disable advisory messages for broker instances** – For more information, see [Advisory Message](https://activemq.apache.org/components/classic/documentation/advisory-message) in the Apache ActiveMQ documentation.
++ **Don't use multicast broker discovery** – Amazon MQ doesn't support broker discovery using multicast. For more information, see [What is the difference between discovery, multicast, and zeroconf?](https://activemq.apache.org/components/classic/documentation/multicast-transport) in the Apache ActiveMQ documentation.
 
 ## Avoid slow restarts by recovering prepared XA transactions
 <a name="recover-xa-transactions"></a>

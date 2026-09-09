@@ -112,6 +112,9 @@ x-amz-tagging: {{Tagging}}
 x-amz-object-lock-mode: {{ObjectLockMode}}
 x-amz-object-lock-retain-until-date: {{ObjectLockRetainUntilDate}}
 x-amz-object-lock-legal-hold: {{ObjectLockLegalHoldStatus}}
+x-amz-object-lock-event-hold: {{ObjectLockEventHold}}
+x-amz-object-lock-event-hold-duration-days: {{ObjectLockEventHoldDurationDays}}
+x-amz-object-lock-event-hold-duration-years: {{ObjectLockEventHoldDurationYears}}
 x-amz-expected-bucket-owner: {{ExpectedBucketOwner}}
 x-amz-source-expected-bucket-owner: {{ExpectedSourceBucketOwner}}
 ```
@@ -273,6 +276,19 @@ For directory buckets, annotations are not supported. Use `EXCLUDE` to copy obje
 When you copy objects using multipart upload (for example, when the AWS CLI or AWS SDKs use Transfer Manager for objects larger than approximately 8 MB), annotations are not copied by default. To include annotations, specify `--copy-props default` in the AWS CLI or the equivalent SDK configuration. With this opt-in, the SDK reads source annotations, completes the multipart upload, and then writes each annotation to the destination. Between the upload completion and the last annotation write, the destination object exists without all its annotations.
 Valid Values: `COPY | EXCLUDE`
 
+ ** [x-amz-object-lock-event-hold](#API_CopyObject_RequestSyntax) **   <a name="AmazonS3-CopyObject-request-header-ObjectLockEventHold"></a>
+The event hold status to apply to the object copy. Set to `ON` to enable or `OFF` to disable.
+This functionality is not supported for directory buckets.
+Valid Values: `ON | OFF`
+
+ ** [x-amz-object-lock-event-hold-duration-days](#API_CopyObject_RequestSyntax) **   <a name="AmazonS3-CopyObject-request-header-ObjectLockEventHoldDurationDays"></a>
+The event hold duration in days to apply to the object copy. You cannot specify a duration in both days and years.
+This functionality is not supported for directory buckets.
+
+ ** [x-amz-object-lock-event-hold-duration-years](#API_CopyObject_RequestSyntax) **   <a name="AmazonS3-CopyObject-request-header-ObjectLockEventHoldDurationYears"></a>
+The event hold duration in years to apply to the object copy. You cannot specify a duration in both days and years.
+This functionality is not supported for directory buckets.
+
  ** [x-amz-object-lock-legal-hold](#API_CopyObject_RequestSyntax) **   <a name="AmazonS3-CopyObject-request-header-ObjectLockLegalHoldStatus"></a>
 Specifies whether you want to apply a legal hold to the object copy.
 This functionality is not supported for directory buckets.
@@ -303,7 +319,7 @@ With server-side encryption, Amazon S3 encrypts your data as it writes your data
 + For directory buckets, there are only two supported options for server-side encryption: server-side encryption with Amazon S3 managed keys (SSE-S3) (`AES256`) and server-side encryption with AWS KMS keys (SSE-KMS) (`aws:kms`). We recommend that the bucket's default encryption uses the desired encryption configuration and you don't override the bucket default encryption in your `CreateSession` requests or `PUT` object requests. Then, new objects are automatically encrypted with the desired encryption settings. For more information, see [Protecting data with server-side encryption](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-serv-side-encryption.html) in the *Amazon S3 User Guide*. For more information about the encryption overriding behaviors in directory buckets, see [Specifying server-side encryption with AWS KMS for new object uploads](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-specifying-kms-encryption.html).
 + To encrypt new object copies to a directory bucket with SSE-KMS, we recommend you specify SSE-KMS as the directory bucket's default encryption configuration with a KMS key (specifically, a [customer managed key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#customer-cmk)). The [AWS managed key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#aws-managed-cmk) (`aws/s3`) isn't supported. Your SSE-KMS configuration can only support 1 [customer managed key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#customer-cmk) per directory bucket for the lifetime of the bucket. After you specify a customer managed key for SSE-KMS, you can't override the customer managed key for the bucket's SSE-KMS configuration. Then, when you perform a `CopyObject` operation and want to specify server-side encryption settings for new object copies with SSE-KMS in the encryption-related request headers, you must ensure the encryption key is the same customer managed key that you specified for the directory bucket's default encryption configuration.
 +  **S3 access points for Amazon FSx ** - When accessing data stored in Amazon FSx file systems using S3 access points, the only valid server side encryption option is `aws:fsx`. All Amazon FSx file systems have encryption configured by default and are encrypted at rest. Data is automatically encrypted before being written to the file system, and automatically decrypted as it is read. These processes are handled transparently by Amazon FSx.
-Valid Values: `AES256 | aws:fsx | aws:kms | aws:kms:dsse`
+Valid Values: `AES256 | aws:fsx | aws:backup | aws:kms | aws:kms:dsse`
 
  ** [x-amz-server-side-encryption-aws-kms-key-id](#API_CopyObject_RequestSyntax) **   <a name="AmazonS3-CopyObject-request-header-SSEKMSKeyId"></a>
 Specifies the AWS KMS key ID (Key ID, Key ARN, or Key Alias) to use for object encryption. All GET and PUT requests for an object protected by AWS KMS will fail if they're not made via SSL or using SigV4. For information about configuring any of the officially supported AWS SDKs and AWS CLI, see [Specifying the Signature Version in Request Authentication](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingAWSSDK.html#specify-signature-version) in the *Amazon S3 User Guide*.
@@ -345,7 +361,7 @@ Before using an object as a source object for the copy operation, you must resto
 + The storage class of the source object is `GLACIER` or `DEEP_ARCHIVE`.
 + The storage class of the source object is `INTELLIGENT_TIERING` and it's [S3 Intelligent-Tiering access tier](https://docs.aws.amazon.com/AmazonS3/latest/userguide/intelligent-tiering-overview.html#intel-tiering-tier-definition) is `Archive Access` or `Deep Archive Access`.
 For more information, see [RestoreObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_RestoreObject.html) and [Copying Objects](https://docs.aws.amazon.com/AmazonS3/latest/dev/CopyingObjectsExamples.html) in the *Amazon S3 User Guide*.
-Valid Values: `STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | ONEZONE_IA | INTELLIGENT_TIERING | GLACIER | DEEP_ARCHIVE | OUTPOSTS | GLACIER_IR | SNOW | EXPRESS_ONEZONE | FSX_OPENZFS | FSX_ONTAP`
+Valid Values: `STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | ONEZONE_IA | INTELLIGENT_TIERING | GLACIER | DEEP_ARCHIVE | OUTPOSTS | GLACIER_IR | SNOW | EXPRESS_ONEZONE | FSX_OPENZFS | FSX_ONTAP | AWS_BACKUP_WARM | AWS_BACKUP_LOW_COST_WARM`
 
  ** [x-amz-tagging](#API_CopyObject_RequestSyntax) **   <a name="AmazonS3-CopyObject-request-header-Tagging"></a>
 The tag-set for the object copy in the destination bucket. This value must be used in conjunction with the `x-amz-tagging-directive` if you choose `REPLACE` for the `x-amz-tagging-directive`. If you choose `COPY` for the `x-amz-tagging-directive`, you don't need to set the `x-amz-tagging` header, because the tag-set will be copied from the source object directly. The tag-set must be encoded as URL Query parameters.
@@ -439,7 +455,7 @@ Valid Values: `requester`
  ** [x-amz-server-side-encryption](#API_CopyObject_ResponseSyntax) **   <a name="AmazonS3-CopyObject-response-header-ServerSideEncryption"></a>
 The server-side encryption algorithm used when you store this object in Amazon S3 or Amazon FSx.
 When accessing data stored in Amazon FSx file systems using S3 access points, the only valid server side encryption option is `aws:fsx`.
-Valid Values: `AES256 | aws:fsx | aws:kms | aws:kms:dsse`
+Valid Values: `AES256 | aws:fsx | aws:backup | aws:kms | aws:kms:dsse`
 
  ** [x-amz-server-side-encryption-aws-kms-key-id](#API_CopyObject_ResponseSyntax) **   <a name="AmazonS3-CopyObject-response-header-SSEKMSKeyId"></a>
 If present, indicates the ID of the KMS key that was used for object encryption.
@@ -469,7 +485,7 @@ Root level tag for the CopyObjectResult parameters.
 Required: Yes
 
  ** [ChecksumCRC32](#API_CopyObject_ResponseSyntax) **   <a name="AmazonS3-CopyObject-response-ChecksumCRC32"></a>
-The Base64 encoded, 32-bit `CRC32` checksum of the object. This checksum is only present if the object was uploaded with the object. For more information, see [ Checking object integrity](https://docs.aws.amazon.com/AmazonS3/latest/userguide/checking-object-integrity.html) in the *Amazon S3 User Guide*.
+The Base64 encoded, 32-bit `CRC32` checksum of the object. This checksum is only present if the checksum was uploaded with the object. For more information, see [ Checking object integrity](https://docs.aws.amazon.com/AmazonS3/latest/userguide/checking-object-integrity.html) in the *Amazon S3 User Guide*.
 Type: String
 
  ** [ChecksumCRC32C](#API_CopyObject_ResponseSyntax) **   <a name="AmazonS3-CopyObject-response-ChecksumCRC32C"></a>

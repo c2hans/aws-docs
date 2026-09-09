@@ -35,7 +35,6 @@ Required: Yes
 
 ```
 {
-   "CreationTime": number,
    "JobDefinitionArn": "string",
    "JobDefinitionName": "string",
    "JobResources": {
@@ -130,10 +129,6 @@ Required: Yes
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
-
- ** [CreationTime](#API_DescribeModelExplainabilityJobDefinition_ResponseSyntax) **   <a name="sagemaker-DescribeModelExplainabilityJobDefinition-response-CreationTime"></a>
-The time at which the model explainability job was created.
-Type: Timestamp
 
  ** [JobDefinitionArn](#API_DescribeModelExplainabilityJobDefinition_ResponseSyntax) **   <a name="sagemaker-DescribeModelExplainabilityJobDefinition-response-JobDefinitionArn"></a>
 The Amazon Resource Name (ARN) of the model explainability job.

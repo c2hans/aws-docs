@@ -73,6 +73,9 @@ It’s important to note that topology aware routing is still in beta. This feat
 
 Introduced in Kubernetes 1.30 and made generally available in 1.33, [Traffic Distribution](https://kubernetes.io/docs/reference/networking/virtual-ips/#traffic-distribution) offers a simpler alternative to Topology Aware Routing for same-zone traffic preference. While Topology Aware Routing attempts to use an intelligent approach to traffic routing to avoid overloading endpoints, it resulted in unpredictable behavior. Traffic Distribution prioritizes predictability instead. The PreferClose option directs kube-proxy to create rules that route traffic to same-zone endpoints first based on the zonal *hint* set by the EndpointSlice Controller. When no same-zone endpoints are available, it falls back to distributing traffic across any cluster endpoint for the Service. This feature is designed for workloads that accept the tradeoff of optimizing for proximity rather than the attempted even distribution of load that Topology Aware Routing provides.
 
+**Naming update (Kubernetes 1.35):**
+In Kubernetes 1.35 ([KEP-3015](https://github.com/kubernetes/enhancements/issues/3015)), `PreferClose` was deprecated and renamed to `PreferSameZone`. `PreferClose` remains a functional alias for backward compatibility. The same update also introduced a new value, `PreferSameNode`, described below.
+
 Below is a code snippet on how to enable *traffic distribution* for a Service.
 
 ```
@@ -100,6 +103,67 @@ When enabling Traffic Distribution, a common challenge emerges: endpoints within
 To overcome this challenge:
 + Create separate deployments per zone which would have their own HPAs to scale independent of one another.
 + Leverage Topology Spread Constraints to ensure workload distribution across the cluster, which helps prevent endpoint overloads in high-traffic zones.
+
+#### PreferSameNode
+<a name="_prefersamenode"></a>
+
+ `PreferSameNode` extends locality routing one step further. It was introduced as an alpha feature in Kubernetes 1.33 and made generally available in Kubernetes 1.35 ([KEP-3015](https://github.com/kubernetes/enhancements/issues/3015)). It directs kube-proxy to preferentially route traffic to endpoints running on the **same node** as the client Pod. The fallback chain is:
++ same-node
++ same-zone
++ any healthy endpoint cluster-wide
+
+This is particularly useful for:
++  **DaemonSet-style services** (node-local DNS, log collectors, local caches) where a Pod runs on every node
++  **Ultra low-latency workloads** that benefit from eliminating all physical network hops
++  **Node-local service patterns** (for example, DaemonSet-backed services accessed via ClusterIP) where co-located communication eliminates network traversal, reducing latency for chatty microservice interactions
+
+The following code example shows how to enable same-node traffic distribution for a Service:
+
+```
+apiVersion: v1
+kind: Service
+metadata:
+  name: local-cache
+  namespace: platform
+spec:
+  trafficDistribution: PreferSameNode
+  selector:
+    app: local-cache
+  type: ClusterIP
+  ports:
+    - protocol: TCP
+      port: 6379
+      targetPort: 6379
+```
+
+##### Benefits
+<a name="_benefits"></a>
++ Lower latency when a local endpoint is available—traffic stays within the node’s network stack, avoiding physical network traversal. When falling back to remote endpoints, latency is equivalent to default routing.
++ No cross-AZ data transfer costs while local or same-zone endpoints are available. If all local or zonal endpoints are unavailable, traffic silently falls back to cluster-wide routing, which might incur standard inter-AZ charges.
++ Safe fallback — unlike `internalTrafficPolicy: Local`, traffic is never dropped. If no same-node endpoint is available, it gracefully falls back to same-zone and then cluster-wide endpoints.
+
+##### Risks and considerations
+<a name="_risks_and_considerations"></a>
++ Requires Pods on most or all nodes — `PreferSameNode` is only effective when server Pods are broadly distributed (DaemonSets or high-replica Deployments). If Pods are concentrated on a few nodes, most clients will fall back to remote endpoints, negating the benefit.
++ Node-level load imbalance — nodes receiving more inbound traffic will disproportionately load their local endpoint, potentially creating hotspots. HPA can scale Pod count globally but does not control which node new Pods land on.
++ Not a hard guarantee — `PreferSameNode` is a preference, not a strict policy. If your use case *requires* traffic to never leave the node (for example, for compliance or data sovereignty), use `internalTrafficPolicy: Local` instead - but accept that traffic will be dropped when no local endpoint exists.
++ Rolling updates can cause temporary fallback — when a local Pod is terminated during a rolling update, traffic from that node falls back to remote endpoints until the replacement Pod passes readiness checks.
++  `internalTrafficPolicy: Local` and `externalTrafficPolicy: Local` take precedence. If you configure both at the same time and no local endpoints are available, the service drops traffic.
++ Update `kube-proxy` to version 1.35 or later.
+
+##### Choosing between `PreferSameZone` and `PreferSameNode`
+<a name="_choosing_between_prefersamezone_and_prefersamenode"></a>
+
+The following table compares PreferSameZone with PreferSameNode across key dimensions.
+
+| Criteria |  `PreferSameZone`  |  `PreferSameNode`  |
+| --- | --- | --- |
+|  **Primary goal**  | Reduce cross-AZ data transfer costs | Minimize latency; eliminate all network hops |
+|  **Pod distribution needed**  | Pods spread across zones | Pods on most/all nodes (DaemonSets ideal) |
+|  **Fallback chain**  | Same-zone, then any healthy | Same-node, then same-zone, then any healthy |
+|  **Cost savings**  | Eliminates inter-AZ charges | Same (eliminates inter-AZ charges); additional benefit is lower latency |
+|  **Overload risk**  | Zone-level hotspots | Node-level hotspots |
+|  **Best workload fit**  | Standard multi-AZ Deployments | DaemonSets, node-local caches, high-replica services |
 
  **Using Autoscalers: Provision Nodes to a Specific AZ**
 

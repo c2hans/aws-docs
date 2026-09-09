@@ -12,10 +12,6 @@ Returns a list of edge packaging jobs.
 
 ```
 {
-   "CreationTimeAfter": {{number}},
-   "CreationTimeBefore": {{number}},
-   "LastModifiedTimeAfter": {{number}},
-   "LastModifiedTimeBefore": {{number}},
    "MaxResults": {{number}},
    "ModelNameContains": "{{string}}",
    "NameContains": "{{string}}",
@@ -32,26 +28,6 @@ Returns a list of edge packaging jobs.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
-
- ** [CreationTimeAfter](#API_ListEdgePackagingJobs_RequestSyntax) **   <a name="sagemaker-ListEdgePackagingJobs-request-CreationTimeAfter"></a>
-Select jobs where the job was created after specified time.
-Type: Timestamp
-Required: No
-
- ** [CreationTimeBefore](#API_ListEdgePackagingJobs_RequestSyntax) **   <a name="sagemaker-ListEdgePackagingJobs-request-CreationTimeBefore"></a>
-Select jobs where the job was created before specified time.
-Type: Timestamp
-Required: No
-
- ** [LastModifiedTimeAfter](#API_ListEdgePackagingJobs_RequestSyntax) **   <a name="sagemaker-ListEdgePackagingJobs-request-LastModifiedTimeAfter"></a>
-Select jobs where the job was updated after specified time.
-Type: Timestamp
-Required: No
-
- ** [LastModifiedTimeBefore](#API_ListEdgePackagingJobs_RequestSyntax) **   <a name="sagemaker-ListEdgePackagingJobs-request-LastModifiedTimeBefore"></a>
-Select jobs where the job was updated before specified time.
-Type: Timestamp
-Required: No
 
  ** [MaxResults](#API_ListEdgePackagingJobs_RequestSyntax) **   <a name="sagemaker-ListEdgePackagingJobs-request-MaxResults"></a>
 Maximum number of results to select.
@@ -106,11 +82,9 @@ Required: No
    "EdgePackagingJobSummaries": [
       {
          "CompilationJobName": "string",
-         "CreationTime": number,
          "EdgePackagingJobArn": "string",
          "EdgePackagingJobName": "string",
          "EdgePackagingJobStatus": "string",
-         "LastModifiedTime": number,
          "ModelName": "string",
          "ModelVersion": "string"
       }

@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-stab
 
 Stable Image Control Sketch is Stability AI's model that generates images guided by sketch inputs for controlled image creation. For more information about model development and performance, see the [model/service card](https://stability.ai/stable-image).
 + **Model launch date:** Jul 13, 2023
++ **EOL no sooner than:** Jul 13, 2024
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
 + **Model lifecycle:** Active

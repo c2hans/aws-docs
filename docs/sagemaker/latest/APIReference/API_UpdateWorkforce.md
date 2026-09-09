@@ -104,10 +104,8 @@ Required: No
          "ClientId": "string",
          "UserPool": "string"
       },
-      "CreateDate": number,
       "FailureReason": "string",
       "IpAddressType": "string",
-      "LastUpdatedDate": number,
       "OidcConfig": {
          "AuthenticationRequestExtraParams": {
             "string" : "string"

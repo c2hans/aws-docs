@@ -15,11 +15,6 @@ Who created the trial component.
 Type: [UserContext](API_UserContext.md) object
 Required: No
 
- ** CreationTime **   <a name="sagemaker-Type-TrialComponentSummary-CreationTime"></a>
-When the component was created.
-Type: Timestamp
-Required: No
-
  ** DisplayName **   <a name="sagemaker-Type-TrialComponentSummary-DisplayName"></a>
 The name of the component as displayed. If `DisplayName` isn't specified, `TrialComponentName` is displayed.
 Type: String
@@ -27,24 +22,9 @@ Length Constraints: Minimum length of 1. Maximum length of 120.
 Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,119}`
 Required: No
 
- ** EndTime **   <a name="sagemaker-Type-TrialComponentSummary-EndTime"></a>
-When the component ended.
-Type: Timestamp
-Required: No
-
  ** LastModifiedBy **   <a name="sagemaker-Type-TrialComponentSummary-LastModifiedBy"></a>
 Who last modified the component.
 Type: [UserContext](API_UserContext.md) object
-Required: No
-
- ** LastModifiedTime **   <a name="sagemaker-Type-TrialComponentSummary-LastModifiedTime"></a>
-When the component was last modified.
-Type: Timestamp
-Required: No
-
- ** StartTime **   <a name="sagemaker-Type-TrialComponentSummary-StartTime"></a>
-When the component started.
-Type: Timestamp
 Required: No
 
  ** Status **   <a name="sagemaker-Type-TrialComponentSummary-Status"></a>

@@ -10,16 +10,6 @@ Details of the Amazon SageMaker AI Studio Lifecycle Configuration.
 ## Contents
 <a name="API_StudioLifecycleConfigDetails_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-StudioLifecycleConfigDetails-CreationTime"></a>
-The creation time of the Amazon SageMaker AI Studio Lifecycle Configuration.
-Type: Timestamp
-Required: No
-
- ** LastModifiedTime **   <a name="sagemaker-Type-StudioLifecycleConfigDetails-LastModifiedTime"></a>
-This value is equivalent to CreationTime because Amazon SageMaker AI Studio Lifecycle Configurations are immutable.
-Type: Timestamp
-Required: No
-
  ** StudioLifecycleConfigAppType **   <a name="sagemaker-Type-StudioLifecycleConfigDetails-StudioLifecycleConfigAppType"></a>
 The App type to which the Lifecycle Configuration is attached.
 Type: String

@@ -11,7 +11,7 @@ Container for all response elements.
 <a name="API_CopyObjectResult_Contents"></a>
 
  ** ChecksumCRC32 **   <a name="AmazonS3-Type-CopyObjectResult-ChecksumCRC32"></a>
-The Base64 encoded, 32-bit `CRC32` checksum of the object. This checksum is only present if the object was uploaded with the object. For more information, see [ Checking object integrity](https://docs.aws.amazon.com/AmazonS3/latest/userguide/checking-object-integrity.html) in the *Amazon S3 User Guide*.
+The Base64 encoded, 32-bit `CRC32` checksum of the object. This checksum is only present if the checksum was uploaded with the object. For more information, see [ Checking object integrity](https://docs.aws.amazon.com/AmazonS3/latest/userguide/checking-object-integrity.html) in the *Amazon S3 User Guide*.
 Type: String
 Required: No
 

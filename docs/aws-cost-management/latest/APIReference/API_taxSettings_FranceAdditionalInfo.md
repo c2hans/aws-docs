@@ -16,6 +16,11 @@ Type: String
 Pattern: `[0-9]{9}`
 Required: Yes
 
+ ** eInvoiceRoutingCode **   <a name="awscostmanagement-Type-taxSettings_FranceAdditionalInfo-eInvoiceRoutingCode"></a>
+The routing code used for electronic invoicing (e-invoicing) for the company in France.
+Type: String
+Required: No
+
 ## See Also
 <a name="API_taxSettings_FranceAdditionalInfo_SeeAlso"></a>
 

@@ -13,10 +13,14 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-open
 
 GPT-5.6 Terra is the balanced model for everyday production work. It delivers superior performance to GPT-5.5 at a lower cost, completing tasks with fewer output tokens for stronger performance per dollar. Use Terra for code generation, content workflows, structured data extraction, and general-purpose agentic tasks. For more information about model development and performance, see the [model/service card](https://deploymentsafety.openai.com/gpt-5-6/gpt-5-6.pdf).
 + **Model launch date:** July 13, 2026
++ **EOL no sooner than:** July 13, 2027
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
 + **Model lifecycle:** Active
 + **Context window:** 1M tokens
++ **Marketplace product ID:** `prod-oxu3iqwrwktjm`
 
 | **Input Modalities** | **Output Modalities** |
 | --- | --- |

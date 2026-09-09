@@ -12,11 +12,7 @@ Lists the AppImageConfigs in your account and their properties. The list can be 
 
 ```
 {
-   "CreationTimeAfter": {{number}},
-   "CreationTimeBefore": {{number}},
    "MaxResults": {{number}},
-   "ModifiedTimeAfter": {{number}},
-   "ModifiedTimeBefore": {{number}},
    "NameContains": "{{string}}",
    "NextToken": "{{string}}",
    "SortBy": "{{string}}",
@@ -31,30 +27,10 @@ For information about the parameters that are common to all actions, see [Common
 
 The request accepts the following data in JSON format.
 
- ** [CreationTimeAfter](#API_ListAppImageConfigs_RequestSyntax) **   <a name="sagemaker-ListAppImageConfigs-request-CreationTimeAfter"></a>
-A filter that returns only AppImageConfigs created on or after the specified time.
-Type: Timestamp
-Required: No
-
- ** [CreationTimeBefore](#API_ListAppImageConfigs_RequestSyntax) **   <a name="sagemaker-ListAppImageConfigs-request-CreationTimeBefore"></a>
-A filter that returns only AppImageConfigs created on or before the specified time.
-Type: Timestamp
-Required: No
-
  ** [MaxResults](#API_ListAppImageConfigs_RequestSyntax) **   <a name="sagemaker-ListAppImageConfigs-request-MaxResults"></a>
 The total number of items to return in the response. If the total number of items available is more than the value specified, a `NextToken` is provided in the response. To resume pagination, provide the `NextToken` value in the as part of a subsequent call. The default value is 10.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 100.
-Required: No
-
- ** [ModifiedTimeAfter](#API_ListAppImageConfigs_RequestSyntax) **   <a name="sagemaker-ListAppImageConfigs-request-ModifiedTimeAfter"></a>
-A filter that returns only AppImageConfigs modified on or after the specified time.
-Type: Timestamp
-Required: No
-
- ** [ModifiedTimeBefore](#API_ListAppImageConfigs_RequestSyntax) **   <a name="sagemaker-ListAppImageConfigs-request-ModifiedTimeBefore"></a>
-A filter that returns only AppImageConfigs modified on or before the specified time.
-Type: Timestamp
 Required: No
 
  ** [NameContains](#API_ListAppImageConfigs_RequestSyntax) **   <a name="sagemaker-ListAppImageConfigs-request-NameContains"></a>
@@ -106,7 +82,6 @@ Required: No
                "MountPath": "string"
             }
          },
-         "CreationTime": number,
          "JupyterLabAppImageConfig": {
             "ContainerConfig": {
                "ContainerArguments": [ "string" ],
@@ -133,8 +108,7 @@ Required: No
                   "Name": "string"
                }
             ]
-         },
-         "LastModifiedTime": number
+         }
       }
    ],
    "NextToken": "string"

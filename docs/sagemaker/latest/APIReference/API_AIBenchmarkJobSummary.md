@@ -30,21 +30,11 @@ Type: String
 Valid Values: `InProgress | Completed | Failed | Stopping | Stopped`
 Required: Yes
 
- ** CreationTime **   <a name="sagemaker-Type-AIBenchmarkJobSummary-CreationTime"></a>
-A timestamp that indicates when the benchmark job was created.
-Type: Timestamp
-Required: Yes
-
  ** AIWorkloadConfigName **   <a name="sagemaker-Type-AIBenchmarkJobSummary-AIWorkloadConfigName"></a>
 The name of the AI workload configuration used by the benchmark job.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 63.
 Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
-Required: No
-
- ** EndTime **   <a name="sagemaker-Type-AIBenchmarkJobSummary-EndTime"></a>
-A timestamp that indicates when the benchmark job completed.
-Type: Timestamp
 Required: No
 
 ## See Also

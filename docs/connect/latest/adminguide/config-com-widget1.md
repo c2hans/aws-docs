@@ -80,9 +80,9 @@ We recommend using https:// for your production websites and applications.
 
 To enable agents to use video calling and screen sharing, assign the ** Contact Control Panel (CCP)**, **Video calls - Access** permissions to their security profile.
 
-The Connect Customer agent workspace supports Connect Customer in-app, web, and video calling, and screen sharing. You can use the same configuration, routing, analytics, and agent application as with telephone calls and chats. To get started, the only step is to enable your agent's security profiles with the permissions to have video calls and screen sharing.
+The Connect Customer agent workspace supports Connect Customer in-app, web, and video calling, and screen sharing. You can use the same configuration, routing, analytics, and agent workspace as with telephone calls and chats. To get started, the only step is to enable your agent's security profiles with the permissions to have video calls and screen sharing.
 
-For custom agent desktops, there are no changes required for the Connect Customer in-app and web calling. Enable your agent's security profiles with the permissions to have video calls and screen sharing, and follow the guide below on how to integrate video calling into your agent desktop.
+For custom agent applications, there are no changes required for the Connect Customer in-app and web calling. Enable your agent's security profiles with the permissions to have video calls and screen sharing, and follow the guide below on how to integrate video calling into your custom agent application.
 
 ## How a client device initiates an in-app or web call
 <a name="diagram-option1"></a>

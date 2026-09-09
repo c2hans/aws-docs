@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/analysis-lo
 
 The following examples show representative analysis log entries. The examples use fictional identifiers.
 
-**Example Query log when an analysis runs**
+**Example Query submission log**
 
 ```
 {
@@ -33,7 +33,7 @@ The following examples show representative analysis log entries. The examples us
 }
 ```
 
-**Example Query log when an analysis finishes**
+**Example Query completion log**
 
 ```
 {
@@ -49,7 +49,7 @@ The following examples show representative analysis log entries. The examples us
 }
 ```
 
-**Example Job log when an analysis runs**
+**Example Job submission log**
 
 ```
 {
@@ -72,7 +72,7 @@ The following examples show representative analysis log entries. The examples us
 }
 ```
 
-**Example Job log when an analysis finishes**
+**Example Job completion log**
 
 ```
 {

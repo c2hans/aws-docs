@@ -258,7 +258,7 @@ Valid Values: `requester`
 The server-side encryption algorithm used when storing this object in Amazon S3.
 When accessing data stored in Amazon FSx file systems using S3 access points, the only valid server side encryption option is `aws:fsx`.
 
-Valid Values: `AES256 | aws:fsx | aws:kms | aws:kms:dsse`
+Valid Values: `AES256 | aws:fsx | aws:backup | aws:kms | aws:kms:dsse`
 
  ** [x-amz-server-side-encryption-aws-kms-key-id](#API_CompleteMultipartUpload_ResponseSyntax) **   <a name="AmazonS3-CompleteMultipartUpload-response-header-SSEKMSKeyId"></a>
 If present, indicates the ID of the KMS key that was used for object encryption.

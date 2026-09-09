@@ -30,11 +30,6 @@ Type: String
 Valid Values: `Creating | Deleting | Failed | InService | RollingBack | SystemUpdating | Updating`
 Required: Yes
 
- ** CreationTime **   <a name="sagemaker-Type-ClusterSummary-CreationTime"></a>
-The time when the SageMaker HyperPod cluster is created.
-Type: Timestamp
-Required: Yes
-
  ** ImageVersionStatus **   <a name="sagemaker-Type-ClusterSummary-ImageVersionStatus"></a>
 The aggregate status of the image version across the cluster's instance groups.
 Type: String

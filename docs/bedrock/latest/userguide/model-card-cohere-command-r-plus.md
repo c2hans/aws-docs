@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-cohe
 
 Command R\+ is Cohere's model for complex RAG workflows, multi-step tool use, and enterprise tasks with a 128K context window. For more information about model development and performance, see the [model/service card](https://docs.cohere.com/docs/command-r-plus).
 + **Model launch date:** Aug 2024
++ **EOL no sooner than:** Aug 2025
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** August 19, 2026
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
 + **Model lifecycle:** Legacy

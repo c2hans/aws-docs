@@ -149,6 +149,6 @@ aws qconnect list-content-associations \
 
 Assign the following **Agent Applications** security profile permissions to the agents so they can view the knowledge base content and the step-by-step guides.
 + **agent assist - View**: Enables agents to search for and view content. They can also receive automatic recommendations during calls if conversational analytics is enabled.
-+ **Custom views - Access**: Enables agents to see step-by-step guides in their agent workspace.
++ **Custom views - Access**: Enables agents to see step-by-step guides in the agent workspace.
 
 For information about how to add more permissions to an existing security profile, see [Update security profiles in Connect Customer](update-security-profiles.md).

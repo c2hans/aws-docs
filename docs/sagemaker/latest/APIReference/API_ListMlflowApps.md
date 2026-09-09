@@ -13,8 +13,6 @@ Lists all MLflow Apps
 ```
 {
    "AccountDefaultStatus": "{{string}}",
-   "CreatedAfter": {{number}},
-   "CreatedBefore": {{number}},
    "DefaultForDomainId": "{{string}}",
    "MaxResults": {{number}},
    "MlflowVersion": "{{string}}",
@@ -36,16 +34,6 @@ The request accepts the following data in JSON format.
 Filter for MLflow Apps with the specified `AccountDefaultStatus`.
 Type: String
 Valid Values: `ENABLED | DISABLED`
-Required: No
-
- ** [CreatedAfter](#API_ListMlflowApps_RequestSyntax) **   <a name="sagemaker-ListMlflowApps-request-CreatedAfter"></a>
-Use the `CreatedAfter` filter to only list MLflow Apps created after a specific date and time. Listed MLflow Apps are shown with a date and time such as `"2024-03-16T01:46:56+00:00"`. The `CreatedAfter` parameter takes in a Unix timestamp.
-Type: Timestamp
-Required: No
-
- ** [CreatedBefore](#API_ListMlflowApps_RequestSyntax) **   <a name="sagemaker-ListMlflowApps-request-CreatedBefore"></a>
-Use the `CreatedBefore` filter to only list MLflow Apps created before a specific date and time. Listed MLflow Apps are shown with a date and time such as `"2024-03-16T01:46:56+00:00"`. The `CreatedAfter` parameter takes in a Unix timestamp.
-Type: Timestamp
 Required: No
 
  ** [DefaultForDomainId](#API_ListMlflowApps_RequestSyntax) **   <a name="sagemaker-ListMlflowApps-request-DefaultForDomainId"></a>
@@ -100,8 +88,6 @@ Required: No
    "Summaries": [
       {
          "Arn": "string",
-         "CreationTime": number,
-         "LastModifiedTime": number,
          "MlflowVersion": "string",
          "Name": "string",
          "Status": "string"

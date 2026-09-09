@@ -4423,7 +4423,7 @@ An estimate, in seconds, of how long a contact will wait in queue before being c
 + [GetCurrentMetricData](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetCurrentMetricData.html) API identifier: `ESTIMATED_WAIT_TIME`
 
 **Requirements**:
-+ To use Estimated Wait Time you must enable [Next Generation Connect Customer](enable-nextgeneration-amazonconnect.md) for your instance.
++ To use Estimated Wait Time you must enable [Connect Customer](enable-nextgeneration-amazonconnect.md) for your instance.
 
 **Notes**:
 + Estimated Wait Time (EWT) is an approximation of how long a contact will wait in queue before being connected to an agent.

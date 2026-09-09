@@ -91,6 +91,15 @@ If you are running an Amazon EKS cluster with Kubernetes version 1.28 or higher,
 
 If you have an existing customer managed key (CMK) in KMS that was used to envelope encrypt your Kubernetes Secrets, that same key will be used as the KEK for envelope encryption of all Kubernetes API data types in your cluster.
 
+### Do you still need to set the `resources` field in `EncryptionConfig`?
+<a name="_do_you_still_need_to_set_the_resources_field_in_encryptionconfig"></a>
+
+No. The `resources` field of `EncryptionConfig` is deprecated. For clusters running Kubernetes version 1.28 or higher, Amazon EKS encrypts all Kubernetes API data with envelope encryption by default. Because of this, the `resources` field no longer affects which resources are encrypted. Amazon EKS still accepts the `resources` field for backward compatibility. However, it has no effect on the scope of encryption.
+
+You can now omit `resources`, or pass a null or empty list, in a `CreateCluster` or `AssociateEncryptionConfig` request. Previously, this returned an `InvalidParameterException`. Now Amazon EKS accepts the request and defaults the field to `["secrets"]`. API responses therefore continue to return `["secrets"]`, which matches the previous API contract.
+
+If you do set `resources`, it must still be `["secrets"]`. You must still provide a `provider` (KMS key) when you supply an `EncryptionConfig`.
+
 ### Is there any additional cost to running an EKS cluster with default envelope encryption?
 <a name="_is_there_any_additional_cost_to_running_an_eks_cluster_with_default_envelope_encryption"></a>
 

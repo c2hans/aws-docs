@@ -95,7 +95,15 @@ Creates a processing job.
    "ProcessingResources": {
       "ClusterConfig": {
          "InstanceCount": {{number}},
+         "InstancePreferences": [
+            {
+               "InstanceCount": {{number}},
+               "InstanceType": "{{string}}"
+            }
+         ],
          "InstanceType": "{{string}}",
+         "SelectedInstanceCount": {{number}},
+         "SelectedInstanceType": "{{string}}",
          "VolumeKmsKeyId": "{{string}}",
          "VolumeSizeInGB": {{number}}
       }

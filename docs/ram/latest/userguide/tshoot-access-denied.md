@@ -45,14 +45,9 @@ To **attach permissions** to a resource share, you need the following permission
 
 The following example shows what such an IAM permission policy might look like.
 
-------
-#### [ JSON ]
-
-****
-
 ```
 {
-    "Version":"2012-10-17",
+    "Version": "2012-10-17",
     "Statement": [
         {
             "Effect": "Allow",
@@ -60,12 +55,10 @@ The following example shows what such an IAM permission policy might look like.
                 "ram:CreateResourceShare",
                 "ram:AssociateResourceShare",
                 "ram:GetResourceShares",
-                "{{resourceOwningService}}:{{PutPolicyAction}}"
+                "{{route53resolver:PutResolverRulePolicy}}"
             ],
             "Resource": "*"
         }
     ]
 }
 ```
-
-------

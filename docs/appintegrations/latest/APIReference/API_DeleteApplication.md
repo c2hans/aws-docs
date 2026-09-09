@@ -5,13 +5,13 @@ source_url: https://docs.aws.amazon.com/appintegrations/latest/APIReference/API_
 # DeleteApplication
 <a name="API_connect-app-integrations_DeleteApplication"></a>
 
-Deletes the Application. Only Applications that don't have any Application Associations can be deleted.
+Deletes an application. If the application has associations, you must delete them first. Alternatively, use the `force` option to delete the application and remove its associations.
 
 ## Request Syntax
 <a name="API_connect-app-integrations_DeleteApplication_RequestSyntax"></a>
 
 ```
-DELETE /applications/{{ApplicationIdentifier}} HTTP/1.1
+DELETE /applications/{{ApplicationIdentifier}}?force={{Force}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -24,6 +24,10 @@ The Amazon Resource Name (ARN) of the Application.
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `^(arn:aws:[A-Za-z0-9][A-Za-z0-9_/.-]{0,62}:[A-Za-z0-9_/.-]{0,63}:[A-Za-z0-9_/.-]{0,63}:[A-Za-z0-9][A-Za-z0-9:_/+=,@.-]{0,1023}|[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12})(:[\w\$]+)?$`
 Required: Yes
+
+ ** [Force](#API_connect-app-integrations_DeleteApplication_RequestSyntax) **   <a name="connect-connect-app-integrations_DeleteApplication-request-uri-Force"></a>
+Specifies whether to delete the application even if it still has application associations. If `true`, the operation removes the application and its associations. If `false` or absent, the delete fails when associations exist.
+Setting this parameter to `true` permanently removes all of the application's associations. Doing so might impact other resources that rely on and reference the application. This action can't be undone.
 
 ## Request Body
 <a name="API_connect-app-integrations_DeleteApplication_RequestBody"></a>

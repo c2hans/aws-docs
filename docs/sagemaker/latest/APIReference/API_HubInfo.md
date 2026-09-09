@@ -10,11 +10,6 @@ Information about a hub.
 ## Contents
 <a name="API_HubInfo_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-HubInfo-CreationTime"></a>
-The date and time that the hub was created.
-Type: Timestamp
-Required: Yes
-
  ** HubArn **   <a name="sagemaker-Type-HubInfo-HubArn"></a>
 The Amazon Resource Name (ARN) of the hub.
 Type: String
@@ -33,11 +28,6 @@ Required: Yes
 The status of the hub.
 Type: String
 Valid Values: `InService | Creating | Updating | Deleting | CreateFailed | UpdateFailed | DeleteFailed`
-Required: Yes
-
- ** LastModifiedTime **   <a name="sagemaker-Type-HubInfo-LastModifiedTime"></a>
-The date and time that the hub was last modified.
-Type: Timestamp
 Required: Yes
 
  ** HubDescription **   <a name="sagemaker-Type-HubInfo-HubDescription"></a>

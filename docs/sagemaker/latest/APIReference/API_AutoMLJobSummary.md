@@ -36,21 +36,6 @@ Type: String
 Valid Values: `Completed | InProgress | Failed | Stopped | Stopping`
 Required: Yes
 
- ** CreationTime **   <a name="sagemaker-Type-AutoMLJobSummary-CreationTime"></a>
-When the AutoML job was created.
-Type: Timestamp
-Required: Yes
-
- ** LastModifiedTime **   <a name="sagemaker-Type-AutoMLJobSummary-LastModifiedTime"></a>
-When the AutoML job was last modified.
-Type: Timestamp
-Required: Yes
-
- ** EndTime **   <a name="sagemaker-Type-AutoMLJobSummary-EndTime"></a>
-The end time of an AutoML job.
-Type: Timestamp
-Required: No
-
  ** FailureReason **   <a name="sagemaker-Type-AutoMLJobSummary-FailureReason"></a>
 The failure reason of an AutoML job.
 Type: String

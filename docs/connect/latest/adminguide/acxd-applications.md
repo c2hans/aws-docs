@@ -28,6 +28,13 @@ From the agentic CX designer application page, you can:
 
 Use a name that helps teammates quickly understand the purpose of the application.
 
+Examples:
++ Hotel Concierge
++ Appointment Scheduler
++ Retail Order Support
++ Internet Troubleshooting Assistant
++ Benefits Enrollment Support
+
 ## Adding flows to an application
 <a name="acxd-applications-flows"></a>
 

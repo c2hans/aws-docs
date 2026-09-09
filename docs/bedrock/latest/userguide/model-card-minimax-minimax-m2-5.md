@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mini
 
 MiniMax M2.5 is an agent-native frontier model trained explicitly to reason efficiently, decompose tasks optimally, and complete complex workflows under real-world time and cost constraints. It achieves task completion speeds comparable to or faster than leading proprietary frontier models by combining high inference throughput with reinforcement learning focused on token-efficient reasoning and better decision-making in agentic scaffolds. For more information about model development and performance, see the [model/service card](https://minimax.io/news/minimax-m2).
 + **Model launch date:** Feb 12, 2026
++ **EOL no sooner than:** Feb 12, 2027
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://github.com/MiniMax-AI/MiniMax-M2.1/blob/main/LICENSE)
 + **Model lifecycle:** Active

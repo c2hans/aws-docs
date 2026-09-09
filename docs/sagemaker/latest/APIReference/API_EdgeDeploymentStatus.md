@@ -31,11 +31,6 @@ Type: String
 Valid Values: `CREATING | READYTODEPLOY | STARTING | INPROGRESS | DEPLOYED | FAILED | STOPPING | STOPPED`
 Required: Yes
 
- ** EdgeDeploymentStageStartTime **   <a name="sagemaker-Type-EdgeDeploymentStatus-EdgeDeploymentStageStartTime"></a>
-The time when the deployment API started.
-Type: Timestamp
-Required: No
-
  ** EdgeDeploymentStatusMessage **   <a name="sagemaker-Type-EdgeDeploymentStatus-EdgeDeploymentStatusMessage"></a>
 A detailed message about deployment status in current stage.
 Type: String

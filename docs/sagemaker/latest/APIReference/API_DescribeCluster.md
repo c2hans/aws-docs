@@ -45,7 +45,6 @@ Required: Yes
    "ClusterName": "string",
    "ClusterRole": "string",
    "ClusterStatus": "string",
-   "CreationTime": number,
    "FailureMessage": "string",
    "InstanceGroups": [
       {
@@ -72,7 +71,6 @@ Required: Yes
          },
          "AutoPatchConfig": {
             "CurrentPatchSchedule": {
-               "NextPatchDate": number
             },
             "DeploymentConfig": {
                "AutoRollbackConfiguration": [
@@ -93,7 +91,6 @@ Required: Yes
                "WaitIntervalInSeconds": number
             },
             "DesiredPatchSchedule": {
-               "NextPatchDate": number
             },
             "PatchingStrategy": "string"
          },
@@ -313,10 +310,6 @@ Pattern: `arn:aws[a-z\-]*:iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+`
 The status of the SageMaker HyperPod cluster.
 Type: String
 Valid Values: `Creating | Deleting | Failed | InService | RollingBack | SystemUpdating | Updating`
-
- ** [CreationTime](#API_DescribeCluster_ResponseSyntax) **   <a name="sagemaker-DescribeCluster-response-CreationTime"></a>
-The time when the SageMaker Cluster is created.
-Type: Timestamp
 
  ** [FailureMessage](#API_DescribeCluster_ResponseSyntax) **   <a name="sagemaker-DescribeCluster-response-FailureMessage"></a>
 The failure message of the SageMaker HyperPod cluster.

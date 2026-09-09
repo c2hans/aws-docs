@@ -148,9 +148,9 @@ In the following image of the agent workspace, the agent is on a chat with Nikki
 
 You can use [Connect Customer agent assist](connect-ai-agent.md) to automatically detect customer intent during calls and chats. agent assist uses the real-time conversation with the customer, along with relevant company content, to automatically recommend what to say or what actions an agent should take to better assist the customer. This improves both agent productivity and customer satisfaction. Agents can also use natural language to search across connected knowledge sources to receive generated responses, recommended actions, and links to more information.
 
-The following image shows how an article might appear in the agent application when the agent is on a call.
+The following image shows how an article might appear in the agent workspace when the agent is on a call.
 
-![The agent application with an article displayed in it.](https://docs.aws.amazon.com/connect/latest/adminguide/images/wisdom-concepts-intro2.png)
+![The agent workspace with an article displayed in it.](https://docs.aws.amazon.com/connect/latest/adminguide/images/wisdom-concepts-intro2.png)
 
 ### Generative AI-powered post-contact summaries
 <a name="connect-intro-gen-acw"></a>
@@ -170,7 +170,7 @@ The following image shows the **Customer profile** tab in the agent workspace. I
 
 ![The agent workspace, customer profiles tab.](https://docs.aws.amazon.com/connect/latest/adminguide/images/whatisconnect-profiles.png)
 
-You can use Customer Profiles to access information during a self-service experience (for example, IVR or bot), or in other agent applications, or you can use it as a standalone service separate from Connect Customer.
+You can use Customer Profiles to access information during a self-service experience (for example, IVR or bot), or in custom agent applications, or you can use it as a standalone service separate from Connect Customer.
 
 ### Case management
 <a name="connect-intro-cm"></a>

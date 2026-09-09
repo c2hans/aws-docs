@@ -53,7 +53,6 @@ Required: Yes
 
 ```
 {
-   "AttachTime": number,
    "ClusterArn": "string",
    "DeviceName": "string",
    "NodeId": "string",
@@ -68,10 +67,6 @@ Required: Yes
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
-
- ** [AttachTime](#API_DetachClusterNodeVolume_ResponseSyntax) **   <a name="sagemaker-DetachClusterNodeVolume-response-AttachTime"></a>
- The original timestamp when your volume was initially attached to the node.
-Type: Timestamp
 
  ** [ClusterArn](#API_DetachClusterNodeVolume_ResponseSyntax) **   <a name="sagemaker-DetachClusterNodeVolume-response-ClusterArn"></a>
  The Amazon Resource Name (ARN) of your SageMaker HyperPod cluster where the volume detachment operation was performed.

@@ -48,5 +48,4 @@ The description of the IP rule.
 The IP range of the IP rule. This can either be a single IP address or a range using CIDR notation.
 *Required*: Yes
 *Type*: String
-*Pattern*: `\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}(?:/([0-9]|[12][0-9]|3[0-2])|)`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

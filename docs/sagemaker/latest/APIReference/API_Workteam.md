@@ -38,16 +38,6 @@ Length Constraints: Minimum length of 1. Maximum length of 63.
 Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
 Required: Yes
 
- ** CreateDate **   <a name="sagemaker-Type-Workteam-CreateDate"></a>
-The date and time that the work team was created (timestamp).
-Type: Timestamp
-Required: No
-
- ** LastUpdatedDate **   <a name="sagemaker-Type-Workteam-LastUpdatedDate"></a>
-The date and time that the work team was last updated (timestamp).
-Type: Timestamp
-Required: No
-
  ** NotificationConfiguration **   <a name="sagemaker-Type-Workteam-NotificationConfiguration"></a>
 Configures SNS notifications of available or expiring work items for work teams.
 Type: [NotificationConfiguration](API_NotificationConfiguration.md) object

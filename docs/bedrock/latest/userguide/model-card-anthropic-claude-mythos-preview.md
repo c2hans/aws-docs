@@ -15,6 +15,9 @@ According to Anthropic, Claude Mythos Preview (gated research preview) is a new 
 
 Available only as a gated research preview with access prioritized for defensive cybersecurity use cases.
 + **Model launch date:** Apr 07, 2026
++ **EOL no sooner than:** Apr 07, 2027
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
 + **Model lifecycle:** Preview

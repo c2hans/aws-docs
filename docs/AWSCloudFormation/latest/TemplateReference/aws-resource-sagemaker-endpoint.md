@@ -63,18 +63,16 @@ The deployment configuration for an endpoint, which contains the desired deploym
 The name of the [AWS::SageMaker::EndpointConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpointconfig.html) resource that specifies the configuration for the endpoint. For more information, see [CreateEndpointConfig](https://docs.aws.amazon.com/sagemaker/latest/dg/API_CreateEndpointConfig.html).
 *Required*: Yes
 *Type*: String
-*Pattern*: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
-*Minimum*: `0`
-*Maximum*: `63`
+*Minimum*: `1`
+*Maximum*: `64`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `EndpointName`  <a name="cfn-sagemaker-endpoint-endpointname"></a>
 The name of the endpoint. The name must be unique within an AWS Region in your AWS account. The name is case-insensitive in `CreateEndpoint`, but the case is preserved and must be matched in [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_runtime_InvokeEndpoint.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_runtime_InvokeEndpoint.html).
 *Required*: No
 *Type*: String
-*Pattern*: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
-*Minimum*: `0`
-*Maximum*: `63`
+*Minimum*: `1`
+*Maximum*: `64`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `ExcludeRetainedVariantProperties`  <a name="cfn-sagemaker-endpoint-excluderetainedvariantproperties"></a>

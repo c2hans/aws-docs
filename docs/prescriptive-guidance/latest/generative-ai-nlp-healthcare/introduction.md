@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/generative-
 # Using Amazon Comprehend Medical and LLMs for healthcare and life sciences
 <a name="introduction"></a>
 
-*Joe King, Ross Claytor, Ankith Ede, Jillian Forde, Clement Perrot, Rajesh Sitaraman, and Shivi Ummat, Amazon Web Services*
+*Joe King, Ross Claytor, Ankith Ede, Jillian Forde, Clement Perrot, Rajesh Sitaraman, and Shivesh Ummat, Amazon Web Services*
 
 ## Overview
 <a name="overview"></a>

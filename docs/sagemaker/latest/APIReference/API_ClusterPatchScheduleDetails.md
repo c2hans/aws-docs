@@ -10,10 +10,7 @@ The schedule details for automatic patching, including the next scheduled patch 
 ## Contents
 <a name="API_ClusterPatchScheduleDetails_Contents"></a>
 
- ** NextPatchDate **   <a name="sagemaker-Type-ClusterPatchScheduleDetails-NextPatchDate"></a>
-The date and time of the next scheduled automatic patch.
-Type: Timestamp
-Required: No
+The members of this exception structure are context-dependent.
 
 ## See Also
 <a name="API_ClusterPatchScheduleDetails_SeeAlso"></a>

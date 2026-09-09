@@ -13,6 +13,8 @@ The service creates paid-tier subscriptions in `PENDING_APPROVAL` status. Billin
 
 When you delete an active subscription, the cancellation is scheduled for the end of the current billing period. When you delete a subscription in `PENDING_APPROVAL` status, the service removes it immediately with no further charges.
 
+You can update the associated resources through a stack update, but you cannot change the plan tier or usage level. To change the tier or usage level, see [Common workflows](https://docs.aws.amazon.com/PricingPlanManager/latest/UserGuide/getting-started-pricingplanmanager-api.html#common-workflows) in the *AWS PricingPlanManager User Guide*, then update your template to match.
+
 ## Syntax
 <a name="aws-resource-pricingplanmanager-subscription-syntax"></a>
 
@@ -66,10 +68,7 @@ Paid tier billed at a flat monthly rate.
 Paid tier billed at a flat monthly rate.
  `PREMIUM`
 Paid tier billed at a flat monthly rate. Supports additional usage levels.
-Upgrades take effect immediately. Downgrades are scheduled for the end of the current billing period:
-+ Features exclusive to your current tier become unavailable immediately after you request the downgrade.
-+ Billing remains at the current tier until the effective date.
-+ While a downgrade is scheduled, `CurrentPlanTier` reports the tier you are being billed for.
+You cannot change the plan tier through a stack update. To change the tier, see [Common workflows](https://docs.aws.amazon.com/PricingPlanManager/latest/UserGuide/getting-started-pricingplanmanager-api.html#common-workflows) in the *AWS PricingPlanManager User Guide*, then update your template to match the new tier.
 *Required*: Yes
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -88,7 +87,7 @@ The usage level within the plan tier. Valid values depend on the plan family and
 The base usage level.
 `CF_PREMIUM_L2` through `CF_PREMIUM_L6`
 Increasing usage levels, each supporting higher traffic volumes.
-If you omit this property during an update, the usage level resets to the default level — it is not left unchanged. To preserve the current usage level, always specify it explicitly.
+You cannot change the usage level through a stack update. To change the usage level, see [Common workflows](https://docs.aws.amazon.com/PricingPlanManager/latest/UserGuide/getting-started-pricingplanmanager-api.html#common-workflows) in the *AWS PricingPlanManager User Guide*, then update your template to match the new usage level.
 *Required*: No
 *Type*: String
 *Allowed values*: `DEFAULT | CF_PREMIUM_L2 | CF_PREMIUM_L3 | CF_PREMIUM_L4 | CF_PREMIUM_L5 | CF_PREMIUM_L6 | CF_PREMIUM_L7`

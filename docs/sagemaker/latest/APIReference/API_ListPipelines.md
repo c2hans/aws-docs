@@ -12,8 +12,6 @@ Gets a list of pipelines.
 
 ```
 {
-   "CreatedAfter": {{number}},
-   "CreatedBefore": {{number}},
    "MaxResults": {{number}},
    "NextToken": "{{string}}",
    "PipelineNamePrefix": "{{string}}",
@@ -28,16 +26,6 @@ Gets a list of pipelines.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
-
- ** [CreatedAfter](#API_ListPipelines_RequestSyntax) **   <a name="sagemaker-ListPipelines-request-CreatedAfter"></a>
-A filter that returns the pipelines that were created after a specified time.
-Type: Timestamp
-Required: No
-
- ** [CreatedBefore](#API_ListPipelines_RequestSyntax) **   <a name="sagemaker-ListPipelines-request-CreatedBefore"></a>
-A filter that returns the pipelines that were created before a specified time.
-Type: Timestamp
-Required: No
 
  ** [MaxResults](#API_ListPipelines_RequestSyntax) **   <a name="sagemaker-ListPipelines-request-MaxResults"></a>
 The maximum number of pipelines to return in the response.
@@ -79,9 +67,6 @@ Required: No
    "NextToken": "string",
    "PipelineSummaries": [
       {
-         "CreationTime": number,
-         "LastExecutionTime": number,
-         "LastModifiedTime": number,
          "PipelineArn": "string",
          "PipelineDescription": "string",
          "PipelineDisplayName": "string",

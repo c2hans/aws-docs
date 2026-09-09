@@ -54,7 +54,6 @@ Required: Yes
    "OptimizationConfigs": [
       { ... }
    ],
-   "OptimizationEndTime": number,
    "OptimizationEnvironment": {
       "string" : "string"
    },
@@ -64,7 +63,6 @@ Required: Yes
    "OptimizationOutput": {
       "RecommendedInferenceImage": "string"
    },
-   "OptimizationStartTime": number,
    "OutputConfig": {
       "KmsKeyId": "string",
       "S3OutputLocation": "string",
@@ -125,10 +123,6 @@ Settings for each of the optimization techniques that the job applies.
 Type: Array of [OptimizationConfig](API_OptimizationConfig.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 10 items.
 
- ** [OptimizationEndTime](#API_DescribeOptimizationJob_ResponseSyntax) **   <a name="sagemaker-DescribeOptimizationJob-response-OptimizationEndTime"></a>
-The time when the optimization job finished processing.
-Type: Timestamp
-
  ** [OptimizationEnvironment](#API_DescribeOptimizationJob_ResponseSyntax) **   <a name="sagemaker-DescribeOptimizationJob-response-OptimizationEnvironment"></a>
 The environment variables to set in the model container.
 Type: String to string map
@@ -157,10 +151,6 @@ Valid Values: `INPROGRESS | COMPLETED | FAILED | STARTING | STOPPING | STOPPED`
  ** [OptimizationOutput](#API_DescribeOptimizationJob_ResponseSyntax) **   <a name="sagemaker-DescribeOptimizationJob-response-OptimizationOutput"></a>
 Output values produced by an optimization job.
 Type: [OptimizationOutput](API_OptimizationOutput.md) object
-
- ** [OptimizationStartTime](#API_DescribeOptimizationJob_ResponseSyntax) **   <a name="sagemaker-DescribeOptimizationJob-response-OptimizationStartTime"></a>
-The time when the optimization job started.
-Type: Timestamp
 
  ** [OutputConfig](#API_DescribeOptimizationJob_ResponseSyntax) **   <a name="sagemaker-DescribeOptimizationJob-response-OutputConfig"></a>
 Details for where to store the optimized model that you create with the optimization job.

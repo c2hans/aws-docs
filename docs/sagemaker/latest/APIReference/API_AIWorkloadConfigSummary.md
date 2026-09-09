@@ -24,11 +24,6 @@ Length Constraints: Minimum length of 1. Maximum length of 63.
 Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
 Required: Yes
 
- ** CreationTime **   <a name="sagemaker-Type-AIWorkloadConfigSummary-CreationTime"></a>
-A timestamp that indicates when the configuration was created.
-Type: Timestamp
-Required: Yes
-
 ## See Also
 <a name="API_AIWorkloadConfigSummary_SeeAlso"></a>
 

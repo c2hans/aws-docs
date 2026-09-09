@@ -10,11 +10,6 @@ An endpoint that hosts a model displayed in the Amazon SageMaker Model Dashboard
 ## Contents
 <a name="API_ModelDashboardEndpoint_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-ModelDashboardEndpoint-CreationTime"></a>
-A timestamp that indicates when the endpoint was created.
-Type: Timestamp
-Required: Yes
-
  ** EndpointArn **   <a name="sagemaker-Type-ModelDashboardEndpoint-EndpointArn"></a>
 The Amazon Resource Name (ARN) of the endpoint.
 Type: String
@@ -33,11 +28,6 @@ Required: Yes
 The endpoint status.
 Type: String
 Valid Values: `OutOfService | Creating | Updating | SystemUpdating | RollingBack | InService | Deleting | Failed | UpdateRollbackFailed`
-Required: Yes
-
- ** LastModifiedTime **   <a name="sagemaker-Type-ModelDashboardEndpoint-LastModifiedTime"></a>
-The last time the endpoint was modified.
-Type: Timestamp
 Required: Yes
 
 ## See Also

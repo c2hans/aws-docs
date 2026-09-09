@@ -12,8 +12,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListRe
 
 ```
 {
-   "CreationTimeAfter": {{number}},
-   "CreationTimeBefore": {{number}},
    "MaxResults": {{number}},
    "NameContains": "{{string}}",
    "NextToken": "{{string}}",
@@ -28,16 +26,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListRe
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
-
- ** [CreationTimeAfter](#API_ListResourceCatalogs_RequestSyntax) **   <a name="sagemaker-ListResourceCatalogs-request-CreationTimeAfter"></a>
- Use this parameter to search for `ResourceCatalog`s created after a specific date and time.
-Type: Timestamp
-Required: No
-
- ** [CreationTimeBefore](#API_ListResourceCatalogs_RequestSyntax) **   <a name="sagemaker-ListResourceCatalogs-request-CreationTimeBefore"></a>
- Use this parameter to search for `ResourceCatalog`s created before a specific date and time.
-Type: Timestamp
-Required: No
 
  ** [MaxResults](#API_ListResourceCatalogs_RequestSyntax) **   <a name="sagemaker-ListResourceCatalogs-request-MaxResults"></a>
  The maximum number of results returned by `ListResourceCatalogs`.
@@ -78,7 +66,6 @@ Required: No
    "NextToken": "string",
    "ResourceCatalogs": [
       {
-         "CreationTime": number,
          "Description": "string",
          "ResourceCatalogArn": "string",
          "ResourceCatalogName": "string"

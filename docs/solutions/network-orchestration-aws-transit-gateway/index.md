@@ -2,85 +2,52 @@
 source_url: https://docs.aws.amazon.com//solutions/network-orchestration-aws-transit-gateway//index.html
 ---
 
-# Network Orchestration for AWS Transit Gateway
-
-Automate setting up and managing your transit networks with AWS Transit Gateway
-
-- **Version**: 3.3.28
-- **Released**: 8/2026
-- **Author**: AWS
-- **Est. deployment time**: 25 mins
-- **Estimated cost**: [See details](https://docs.aws.amazon.com/solutions/latest/network-orchestration-aws-transit-gateway/cost.html)
+# Guidance for Network Orchestration for AWS Transit Gateway
 
 ## Overview
 
-The Network Orchestration for AWS Transit Gateway solution automates the process of setting up and managing transit networks in distributed AWS environments. This solution allows customers to visualize and monitor their global network from a single dashboard rather than toggling between Regions from the AWS Console. It creates a web interface to help control, audit, and approve transit network changes.
+This Guidance demonstrates how to automate the setup and management of transit networks across distributed AWS environments through centralized orchestration. By capturing subnet and VPC tagging events and coordinating Transit Gateway attachments, route configurations, and cross-account resource sharing from a hub account, it eliminates manual network provisioning tasks. Conditional approval rules based on AWS Organizations membership streamline governance by automatically processing network change requests. You gain a unified dashboard to visualize, monitor, control, and audit your global network topology, significantly reducing operational overhead while ensuring consistency and compliance across your entire AWS infrastructure.
 
 ## Benefits
 
-### Cross-account and cross-Region capability
+### Automate cross-account network connectivity
 
-Automate the process of setting up and managing transit networks in multi-account AWS environments.
+Eliminate manual networking tasks by using tag-based events to automatically trigger Transit Gateway attachment workflows across your AWS accounts. Your teams can connect VPCs without requiring deep networking expertise or raising tickets with a central network team.
 
-### Change management
+### Accelerate network provisioning with governance
 
-Use the web user interface to either accept or reject connectivity requests when manual approval is required.
+Apply organizational unit-based approval rules to automatically approve, reject, or escalate attachment requests, reducing provisioning time while maintaining consistent network governance. Real-time notifications keep administrators informed of attachment status throughout the workflow.
 
-### Web user interface
+### Gain centralized network visibility
 
-Deploy a web user interface to control, audit, and approve transit network changes.
-
-### Compliance
-
-Use rules to automatically accept or reject network changes based on the Organization Unit (OU).
+Maintain a complete, auditable record of all Transit Gateway attachments and workflow history in a single, durable data store. Your network operations teams can track attachment state and routing changes across all spoke accounts from one centralized location.
 
 ## How it works
 
-You can automatically deploy this architecture using the implementation guide and the accompanying AWS CloudFormation templates.
+This architecture diagram illustrates how Network Orchestration for AWS Transit Gateway works. It shows the key components and their interactions, providing an overview of the architecture's structure and functionality. [Download the architecture diagram](downloads/network-orchestration-aws-transit-gateway.pdf)
 
-[View implementation guide](/solutions/latest/network-orchestration-aws-transit-gateway/solution-overview.html)
+![Architecture diagram for Network Orchestration for AWS Transit Gateway](/images/solutions/network-orchestration-aws-transit-gateway/images/network-orchestration-aws-transit-gateway.png)
 
-![Architecture diagram](/images/solutions/network-orchestration-aws-transit-gateway/images/network-orchestration-aws-transit-gateway-1.png)
-
-1. **Step 1**: This template deploys an Amazon EventBridge rule that monitors specific VPC and subnet tag changes.
-1. **Step 2**: An EventBridge rule in the spoke account sends the tags to the EventBridge bus in the hub account.
-1. **Step 3**: The rules associated with the EventBridge bus invoke an AWS Lambda function to start the solution workflow. For more information about workflows, refer to [Architecture details](solutions/latest/network-orchestration-aws-transit-gateway/architecture-details.html).
-1. **Step 4**: AWS Step Functions (solution state machine) processes network requests from the spoke accounts.
-1. **Step 5**: The state machine workflow attaches a VPC to the transit gateway.
-1. **Step 6**: The state machine workflow updates the VPC route table associated with the tagged subnet.
-1. **Step 7**: The state machine workflow updates the transit gateway route table with association and propagation changes.
-1. **Step 8**: (Optional) The state machine workflow updates the attachment name with the VPC name and the Organizational Unit (OU) name for the spoke account (retrieved from the Org Management account).
-1. **Step 9**: The solution updates Amazon DynamoDB with the information extracted from the event and resources created, updated, or deleted in the workflow.
+1. **Step 1**: An administrator tags a subnet with Attach-to-TGW (to create a TGW attachment and add routes to subnet route table) and/or the VPC with Associate-with / Propagate-to (to configure TGW route table association and propagation). Amazon EventBridge in the spoke account captures the tag-change event and forwards it to the hub accounts' EventBridge Bus.
+1. **Step 2**: Amazon EventBridge (in the hub account) receives the cross-account event and triggers the orchestration workflow.
+1. **Step 3**: AWS Lambda processes the event and initiates the AWS Step Functions state machine.
+1. **Step 4**: AWS Step Functions orchestrates the multi-step attachment workflow: - Retrieve account metadata (name, OU path) from AWS Organizations for approval requiring routing decisions. - Create or validate the Transit Gateway VPC attachment via the shared TGW resource (shared through AWS Resource Access Manager). - Associate the attachment with the TGW Route table specified in the Associate-with tag, and enables route table propagation specified in the Propagate-to tag. - Updates the VPC route table in the spoke account with routes pointing to the TGW attachment.
+1. **Step 5**: AWS Resource Access Manager shares the Transit Gateway from hub account to the spoke account, enabling cross-account attachment.
+1. **Step 6**: AWS Transit Gateway in the hub account processes the attachment request and associates it with/propagates to the designated route table.
+1. **Step 7**: AWS Organizations is queried to retrieve account name and OU path. This information drives conditional approval rules (auto-approve / reject / require-approval based on OU membership) and is applied as tags to the TGW attachment for identification.
+1. **Step 8**: Amazon DynamoDB stores the state of all attachments, and workflow execution history.
+1. **Step 9**: Amazon Simple Notification Service sends notifications to administrators about the attachment status (success/failure/approval required).
+1. **Step 10**: The VPC route table in the spoke account is updated with routes directing traffic through the Transit Gateway attachment.
 ## Deploy with confidence
 
-- **We'll walk you through it**: Get started fast. Read the implementation guide for deployment steps, architecture details, cost information, and customization options.Open guide
+Everything you need to launch this Guidance in your account is right here.
 
-[Open guide](/solutions/latest/network-orchestration-aws-transit-gateway/solution-overview.html)
+- **We'll walk you through it**: Dive deep into the implementation guide for additional customization options and service configurations to tailor to your specific needs.
 
-- **Let's make it happen**: Ready to deploy? Open the CloudFormation template in the AWS Console to begin setting up the infrastructure you need. You'll be prompted to access your AWS account if you haven't yet logged in.Launch in the AWS Console
+[Open guide](https://docs.aws.amazon.com/solutions/latest/network-orchestration-aws-transit-gateway/guidance-overview.html)
 
-[Launch in the AWS Console](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?&templateURL=https:%2F%2Fsolutions-reference.s3.amazonaws.com%2Fnetwork-orchestration-for-aws-transit-gateway%2Flatest%2Fnetwork-orchestration-hub.template&redirectId=SolutionWeb)
+- **Let's make it happen**: Ready to deploy? Review the sample code on GitHub for detailed deployment instructions to deploy as-is or customize to fit your needs.
 
-## Deployment options
+[Go to sample code](https://github.com/aws-solutions-library-samples/network-orchestration-for-aws-transit-gateway)
 
-- **Implementation guide**: Follow the implementation guide for step-by-step actions to deploy this AWS Solution.
-
-[Download guide](/pdfs/solutions/latest/network-orchestration-aws-transit-gateway/network-orchestration-aws-transit-gateway.pdf#solution-overview)
-
-- **Source code**: The source code for this AWS Solution is available in GitHub.
-
-[Go to GitHub](https://github.com/aws-solutions/network-orchestration-for-aws-transit-gateway)
-
-- **CloudFormation templates**: View or modify the CloudFormation template to customize your deployment.
-
-[Download templates](/solutions/latest/network-orchestration-aws-transit-gateway/aws-cloudformation-templates.html?)
-
----
-
-## AWS Support
-
-- [Get support for this AWS Solution](/solutions/latest/network-orchestration-aws-transit-gateway/contact-aws-support.html)
-
-## RSS Feed
-
-- [Subscribe now to get updates on the latest release.](https://solutions-reference.s3.us-east-1.amazonaws.com/network-orchestration-for-aws-transit-gateway/latest/rss.xml)
+[Read usage guidelines](/solutions/guidance-disclaimers/)

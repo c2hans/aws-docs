@@ -34,7 +34,6 @@ Required: Yes
 
 ```
 {
-   "CreationTime": number,
    "FailureReason": "string",
    "HubArn": "string",
    "HubDescription": "string",
@@ -42,7 +41,6 @@ Required: Yes
    "HubName": "string",
    "HubSearchKeywords": [ "string" ],
    "HubStatus": "string",
-   "LastModifiedTime": number,
    "S3StorageConfig": {
       "S3OutputPath": "string"
    }
@@ -55,10 +53,6 @@ Required: Yes
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
-
- ** [CreationTime](#API_DescribeHub_ResponseSyntax) **   <a name="sagemaker-DescribeHub-response-CreationTime"></a>
-The date and time that the hub was created.
-Type: Timestamp
 
  ** [FailureReason](#API_DescribeHub_ResponseSyntax) **   <a name="sagemaker-DescribeHub-response-FailureReason"></a>
 The failure reason if importing hub content failed.
@@ -100,10 +94,6 @@ Pattern: `[^A-Z]*`
 The status of the hub.
 Type: String
 Valid Values: `InService | Creating | Updating | Deleting | CreateFailed | UpdateFailed | DeleteFailed`
-
- ** [LastModifiedTime](#API_DescribeHub_ResponseSyntax) **   <a name="sagemaker-DescribeHub-response-LastModifiedTime"></a>
-The date and time that the hub was last modified.
-Type: Timestamp
 
  ** [S3StorageConfig](#API_DescribeHub_ResponseSyntax) **   <a name="sagemaker-DescribeHub-response-S3StorageConfig"></a>
 The Amazon S3 storage configuration for the hub.

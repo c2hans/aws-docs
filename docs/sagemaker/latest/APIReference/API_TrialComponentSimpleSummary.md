@@ -15,11 +15,6 @@ Information about the user who created or modified a SageMaker resource.
 Type: [UserContext](API_UserContext.md) object
 Required: No
 
- ** CreationTime **   <a name="sagemaker-Type-TrialComponentSimpleSummary-CreationTime"></a>
-When the component was created.
-Type: Timestamp
-Required: No
-
  ** TrialComponentArn **   <a name="sagemaker-Type-TrialComponentSimpleSummary-TrialComponentArn"></a>
 The Amazon Resource Name (ARN) of the trial component.
 Type: String

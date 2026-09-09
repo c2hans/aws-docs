@@ -11,6 +11,7 @@ Use Translations to manage localized content across your workspace so users can 
 + Predefined flow messages
 + Custom slot values
 + Knowledge base content invoked via knowledge base node
++ Live Sync scripts (script step messages)
 
 Translations help keep multilingual experiences easier to manage because localized content can be reviewed from one place instead of editing every resource individually.
 

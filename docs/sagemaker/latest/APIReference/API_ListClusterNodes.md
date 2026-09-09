@@ -13,8 +13,6 @@ Retrieves the list of instances (also called *nodes* interchangeably) in a SageM
 ```
 {
    "ClusterName": "{{string}}",
-   "CreationTimeAfter": {{number}},
-   "CreationTimeBefore": {{number}},
    "IncludeNodeLogicalIds": {{boolean}},
    "InstanceGroupNameContains": "{{string}}",
    "MaxResults": {{number}},
@@ -37,22 +35,6 @@ Type: String
 Length Constraints: Minimum length of 0. Maximum length of 256.
 Pattern: `(arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:cluster/[a-z0-9]{12})|([a-zA-Z0-9](-*[a-zA-Z0-9]){0,62})`
 Required: Yes
-
- ** [CreationTimeAfter](#API_ListClusterNodes_RequestSyntax) **   <a name="sagemaker-ListClusterNodes-request-CreationTimeAfter"></a>
-A filter that returns nodes in a SageMaker HyperPod cluster created after the specified time. Timestamps are formatted according to the ISO 8601 standard.
-Acceptable formats include:
-+  `YYYY-MM-DDThh:mm:ss.sssTZD` (UTC), for example, `2014-10-01T20:30:00.000Z`
-+  `YYYY-MM-DDThh:mm:ss.sssTZD` (with offset), for example, `2014-10-01T12:30:00.000-08:00`
-+  `YYYY-MM-DD`, for example, `2014-10-01`
-+ Unix time in seconds, for example, `1412195400`. This is also referred to as Unix Epoch time and represents the number of seconds since midnight, January 1, 1970 UTC.
-For more information about the timestamp format, see [Timestamp](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-parameters-types.html#parameter-type-timestamp) in the * AWS Command Line Interface User Guide*.
-Type: Timestamp
-Required: No
-
- ** [CreationTimeBefore](#API_ListClusterNodes_RequestSyntax) **   <a name="sagemaker-ListClusterNodes-request-CreationTimeBefore"></a>
-A filter that returns nodes in a SageMaker HyperPod cluster created before the specified time. The acceptable formats are the same as the timestamp formats for `CreationTimeAfter`. For more information about the timestamp format, see [Timestamp](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-parameters-types.html#parameter-type-timestamp) in the * AWS Command Line Interface User Guide*.
-Type: Timestamp
-Required: No
 
  ** [IncludeNodeLogicalIds](#API_ListClusterNodes_RequestSyntax) **   <a name="sagemaker-ListClusterNodes-request-IncludeNodeLogicalIds"></a>
 Specifies whether to include nodes that are still being provisioned in the response. When set to true, the response includes all nodes regardless of their provisioning status. When set to `False` (default), only nodes with assigned `InstanceIds` are returned.
@@ -107,8 +89,6 @@ Required: No
             "Status": "string"
          },
          "InstanceType": "string",
-         "LastSoftwareUpdateTime": number,
-         "LaunchTime": number,
          "NodeLogicalId": "string",
          "PrivateDnsHostname": "string",
          "UltraServerInfo": {

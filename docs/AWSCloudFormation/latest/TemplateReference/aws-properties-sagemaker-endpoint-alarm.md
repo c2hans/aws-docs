@@ -37,7 +37,6 @@ To declare this entity in your CloudFormation template, use the following syntax
 The name of a CloudWatch alarm in your account.
 *Required*: Yes
 *Type*: String
-*Pattern*: `(?!\s*$).+`
 *Minimum*: `1`
 *Maximum*: `255`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

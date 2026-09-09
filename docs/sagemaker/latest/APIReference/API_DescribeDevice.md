@@ -57,18 +57,14 @@ Required: No
    "DeviceFleetName": "string",
    "DeviceName": "string",
    "IotThingName": "string",
-   "LatestHeartbeat": number,
    "MaxModels": number,
    "Models": [
       {
-         "LatestInference": number,
-         "LatestSampleTime": number,
          "ModelName": "string",
          "ModelVersion": "string"
       }
    ],
-   "NextToken": "string",
-   "RegistrationTime": number
+   "NextToken": "string"
 }
 ```
 
@@ -115,10 +111,6 @@ Type: String
 Length Constraints: Minimum length of 0. Maximum length of 128.
 Pattern: `[a-zA-Z0-9:_-]+`
 
- ** [LatestHeartbeat](#API_DescribeDevice_ResponseSyntax) **   <a name="sagemaker-DescribeDevice-response-LatestHeartbeat"></a>
-The last heartbeat received from the device.
-Type: Timestamp
-
  ** [MaxModels](#API_DescribeDevice_ResponseSyntax) **   <a name="sagemaker-DescribeDevice-response-MaxModels"></a>
 The maximum number of models.
 Type: Integer
@@ -132,10 +124,6 @@ The response from the last list when returning a list large enough to need token
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 8192.
 Pattern: `.*`
-
- ** [RegistrationTime](#API_DescribeDevice_ResponseSyntax) **   <a name="sagemaker-DescribeDevice-response-RegistrationTime"></a>
-The timestamp of the last registration or de-reregistration.
-Type: Timestamp
 
 ## Errors
 <a name="API_DescribeDevice_Errors"></a>

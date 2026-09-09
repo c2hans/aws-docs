@@ -10,11 +10,6 @@ A version of a SageMaker AI `Image`. A version represents an existing container 
 ## Contents
 <a name="API_ImageVersion_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-ImageVersion-CreationTime"></a>
-When the version was created.
-Type: Timestamp
-Required: Yes
-
  ** ImageArn **   <a name="sagemaker-Type-ImageVersion-ImageArn"></a>
 The ARN of the image the version is based on.
 Type: String
@@ -33,11 +28,6 @@ Required: Yes
 The status of the version.
 Type: String
 Valid Values: `CREATING | CREATED | CREATE_FAILED | DELETING | DELETE_FAILED`
-Required: Yes
-
- ** LastModifiedTime **   <a name="sagemaker-Type-ImageVersion-LastModifiedTime"></a>
-When the version was last modified.
-Type: Timestamp
 Required: Yes
 
  ** Version **   <a name="sagemaker-Type-ImageVersion-Version"></a>

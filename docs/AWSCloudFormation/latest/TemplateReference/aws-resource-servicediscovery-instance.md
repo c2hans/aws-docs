@@ -87,7 +87,7 @@ The health check isn't deleted immediately, so it will still appear for a while 
 Do not include sensitive information in `InstanceId` if the namespace is discoverable by public DNS queries and any `Type` member of `DnsRecord` for the service contains `SRV` because the `InstanceId` is discoverable by public DNS queries.
 *Required*: No
 *Type*: String
-*Pattern*: `^[0-9a-zA-Z_/:.@-]+$`
+*Minimum*: `1`
 *Maximum*: `64`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
@@ -95,6 +95,7 @@ Do not include sensitive information in `InstanceId` if the namespace is discove
 The ID or Amazon Resource Name (ARN) of the service that you want to use for settings for the instance. For services created in a shared namespace, specify the service ARN. For more information about shared namespaces, see [Cross-account AWS Cloud Map namespace sharing](https://docs.aws.amazon.com/cloud-map/latest/dg/sharing-namespaces.html) in the *AWS Cloud Map Developer Guide*.
 *Required*: Yes
 *Type*: String
+*Minimum*: `1`
 *Maximum*: `255`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
@@ -107,15 +108,6 @@ The ID or Amazon Resource Name (ARN) of the service that you want to use for set
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the value of `Id` for the instance, such as `i-abcd1234`.
 
 For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
-
-### Fn::GetAtt
-<a name="aws-resource-servicediscovery-instance-return-values-fn--getatt"></a>
-
-####
-<a name="aws-resource-servicediscovery-instance-return-values-fn--getatt-fn--getatt"></a>
-
-`InstanceId`  <a name="InstanceId-fn::getatt"></a>
-The ID of an instance that matches the values that you specified in the request.
 
 ## Examples
 <a name="aws-resource-servicediscovery-instance--examples"></a>

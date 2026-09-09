@@ -47,7 +47,6 @@ Required: Yes
       "UserProfileArn": "string",
       "UserProfileName": "string"
    },
-   "CreationTime": number,
    "IsActive": "string",
    "LastModifiedBy": {
       "DomainId": "string",
@@ -59,7 +58,6 @@ Required: Yes
       "UserProfileArn": "string",
       "UserProfileName": "string"
    },
-   "LastModifiedTime": number,
    "MlflowVersion": "string",
    "RoleArn": "string",
    "S3BucketOwnerAccountId": "string",
@@ -95,10 +93,6 @@ Type: Boolean
 Information about the user who created or modified a SageMaker resource.
 Type: [UserContext](API_UserContext.md) object
 
- ** [CreationTime](#API_DescribeMlflowTrackingServer_ResponseSyntax) **   <a name="sagemaker-DescribeMlflowTrackingServer-response-CreationTime"></a>
-The timestamp of when the described MLflow Tracking Server was created.
-Type: Timestamp
-
  ** [IsActive](#API_DescribeMlflowTrackingServer_ResponseSyntax) **   <a name="sagemaker-DescribeMlflowTrackingServer-response-IsActive"></a>
 Whether the described MLflow Tracking Server is currently active.
 Type: String
@@ -107,10 +101,6 @@ Valid Values: `Active | Inactive`
  ** [LastModifiedBy](#API_DescribeMlflowTrackingServer_ResponseSyntax) **   <a name="sagemaker-DescribeMlflowTrackingServer-response-LastModifiedBy"></a>
 Information about the user who created or modified a SageMaker resource.
 Type: [UserContext](API_UserContext.md) object
-
- ** [LastModifiedTime](#API_DescribeMlflowTrackingServer_ResponseSyntax) **   <a name="sagemaker-DescribeMlflowTrackingServer-response-LastModifiedTime"></a>
-The timestamp of when the described MLflow Tracking Server was last modified.
-Type: Timestamp
 
  ** [MlflowVersion](#API_DescribeMlflowTrackingServer_ResponseSyntax) **   <a name="sagemaker-DescribeMlflowTrackingServer-response-MlflowVersion"></a>
 The MLflow version used for the described tracking server.

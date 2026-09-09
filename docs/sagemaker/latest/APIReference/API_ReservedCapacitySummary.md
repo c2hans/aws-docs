@@ -62,20 +62,10 @@ Type: Long
 Valid Range: Minimum value of 0. Maximum value of 59.
 Required: No
 
- ** EndTime **   <a name="sagemaker-Type-ReservedCapacitySummary-EndTime"></a>
-The end time of the reserved capacity.
-Type: Timestamp
-Required: No
-
  ** ReservedCapacityType **   <a name="sagemaker-Type-ReservedCapacitySummary-ReservedCapacityType"></a>
 The type of reserved capacity.
 Type: String
 Valid Values: `UltraServer | Instance`
-Required: No
-
- ** StartTime **   <a name="sagemaker-Type-ReservedCapacitySummary-StartTime"></a>
-The start time of the reserved capacity.
-Type: Timestamp
 Required: No
 
  ** UltraServerCount **   <a name="sagemaker-Type-ReservedCapacitySummary-UltraServerCount"></a>

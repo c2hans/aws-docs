@@ -10,16 +10,6 @@ The properties of a job returned by the [Search](https://docs.aws.amazon.com/sag
 ## Contents
 <a name="API_Job_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-Job-CreationTime"></a>
-The date and time that the job was created.
-Type: Timestamp
-Required: No
-
- ** EndTime **   <a name="sagemaker-Type-Job-EndTime"></a>
-The date and time that the job ended.
-Type: Timestamp
-Required: No
-
  ** FailureReason **   <a name="sagemaker-Type-Job-FailureReason"></a>
 If the job failed, the reason it failed.
 Type: String
@@ -63,11 +53,6 @@ Required: No
 The current status of the job.
 Type: String
 Valid Values: `InProgress | Completed | Failed | Stopping | Stopped | Deleting | DeleteFailed`
-Required: No
-
- ** LastModifiedTime **   <a name="sagemaker-Type-Job-LastModifiedTime"></a>
-The date and time that the job was last modified.
-Type: Timestamp
 Required: No
 
  ** RoleArn **   <a name="sagemaker-Type-Job-RoleArn"></a>

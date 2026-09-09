@@ -30,16 +30,6 @@ Type: String
 Length Constraints: Minimum length of 0. Maximum length of 64.
 Required: No
 
- ** CreationTime **   <a name="sagemaker-Type-ActionSummary-CreationTime"></a>
-When the action was created.
-Type: Timestamp
-Required: No
-
- ** LastModifiedTime **   <a name="sagemaker-Type-ActionSummary-LastModifiedTime"></a>
-When the action was last modified.
-Type: Timestamp
-Required: No
-
  ** Source **   <a name="sagemaker-Type-ActionSummary-Source"></a>
 The source of the action.
 Type: [ActionSource](API_ActionSource.md) object

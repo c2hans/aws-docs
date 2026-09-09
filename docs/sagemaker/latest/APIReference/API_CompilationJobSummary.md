@@ -35,16 +35,6 @@ The time when the model compilation job was created.
 Type: Timestamp
 Required: Yes
 
- ** CompilationEndTime **   <a name="sagemaker-Type-CompilationJobSummary-CompilationEndTime"></a>
-The time when the model compilation job completed.
-Type: Timestamp
-Required: No
-
- ** CompilationStartTime **   <a name="sagemaker-Type-CompilationJobSummary-CompilationStartTime"></a>
-The time when the model compilation job started.
-Type: Timestamp
-Required: No
-
  ** CompilationTargetDevice **   <a name="sagemaker-Type-CompilationJobSummary-CompilationTargetDevice"></a>
 The type of device that the model will run on after the compilation job has completed.
 Type: String

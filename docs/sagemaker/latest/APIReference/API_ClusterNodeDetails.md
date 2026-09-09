@@ -84,16 +84,6 @@ The Kubernetes configuration applied to this node, showing both the current and 
 Type: [ClusterKubernetesConfigNodeDetails](API_ClusterKubernetesConfigNodeDetails.md) object
 Required: No
 
- ** LastSoftwareUpdateTime **   <a name="sagemaker-Type-ClusterNodeDetails-LastSoftwareUpdateTime"></a>
-The time when the cluster was last updated.
-Type: Timestamp
-Required: No
-
- ** LaunchTime **   <a name="sagemaker-Type-ClusterNodeDetails-LaunchTime"></a>
-The time when the instance is launched.
-Type: Timestamp
-Required: No
-
  ** LifeCycleConfig **   <a name="sagemaker-Type-ClusterNodeDetails-LifeCycleConfig"></a>
 The LifeCycle configuration applied to the instance.
 Type: [ClusterLifeCycleConfig](API_ClusterLifeCycleConfig.md) object

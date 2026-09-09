@@ -104,7 +104,7 @@ Voice settings include two groups: Speech and DTMF.
 
 | Speech setting | What it controls |
 | --- | --- |
-| **Interruption** | Lets the caller talk over the message. |
+| **Interruption** | Lets the caller talk over the message. ON by default unless toggled OFF. |
 | **Speech input** | Lets the caller answer by speaking. |
 | **No input timeout** | Controls how long the application waits for the user to start talking after the message. |
 | **End of speech timeout** | Controls how long a pause must last before the application decides the user has finished talking. |

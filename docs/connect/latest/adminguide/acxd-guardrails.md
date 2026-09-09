@@ -59,6 +59,14 @@ Guardrails can include multiple rules, so clear naming is important.
 
 Use descriptive rule names that make the purpose easy to understand at a glance.
 
+Examples:
++ Prompt injection detection
++ PII masking
++ Unsupported financial advice
++ Brand voice compliance
++ Hallucinated claim detection
++ Private account data disclosure
+
 Clear rule names make guardrails easier to review, test, troubleshoot, and maintain over time.
 
 ## Enforcement actions

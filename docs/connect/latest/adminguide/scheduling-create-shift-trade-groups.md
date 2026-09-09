@@ -44,7 +44,7 @@ You can create up to 500 trade groups per Connect Customer instance. You can cre
 
    1. **Override labor laws**: Do you want to allow agents to make trades that override the labor laws specified in staff rules? These rules are specified on the **Staff rules** page.
 
-      For example, say an agent cannot work more than 40 hours a week. But that agent wants to make a trade to work more than 40 hours, and the **Paid variance** setting allows it. If **Force trade** is set to **Enable**, then the agent is allowed to make the trade that overrides the 40 hour per week rule.
+      For example, say an agent cannot work more than 40 hours a week. But that agent wants to make a trade to work more than 40 hours, and the **Paid variance** setting allows it. If **Override labor laws** is set to **Enable**, then the agent is allowed to make the trade that overrides the 40 hour per week rule.
 
    1. **Staffing groups**
       + All staffing groups within the forecast group can trade shifts.

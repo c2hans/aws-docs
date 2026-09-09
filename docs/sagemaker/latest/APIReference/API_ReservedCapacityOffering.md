@@ -43,30 +43,10 @@ Type: Long
 Valid Range: Minimum value of 0. Maximum value of 59.
 Required: No
 
- ** EndTime **   <a name="sagemaker-Type-ReservedCapacityOffering-EndTime"></a>
-The end time of the reserved capacity offering.
-Type: Timestamp
-Required: No
-
- ** ExtensionEndTime **   <a name="sagemaker-Type-ReservedCapacityOffering-ExtensionEndTime"></a>
-The end time of the extension for the reserved capacity offering.
-Type: Timestamp
-Required: No
-
- ** ExtensionStartTime **   <a name="sagemaker-Type-ReservedCapacityOffering-ExtensionStartTime"></a>
-The start time of the extension for the reserved capacity offering.
-Type: Timestamp
-Required: No
-
  ** ReservedCapacityType **   <a name="sagemaker-Type-ReservedCapacityOffering-ReservedCapacityType"></a>
 The type of reserved capacity offering.
 Type: String
 Valid Values: `UltraServer | Instance`
-Required: No
-
- ** StartTime **   <a name="sagemaker-Type-ReservedCapacityOffering-StartTime"></a>
-The start time of the reserved capacity offering.
-Type: Timestamp
 Required: No
 
  ** UltraServerCount **   <a name="sagemaker-Type-ReservedCapacityOffering-UltraServerCount"></a>

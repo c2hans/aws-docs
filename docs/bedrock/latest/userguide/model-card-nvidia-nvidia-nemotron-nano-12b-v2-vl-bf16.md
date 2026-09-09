@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-nvid
 
 Nemotron Nano 12B v2 VL is NVIDIA's 12-billion parameter vision-language model for multimodal tasks including image understanding and visual Q&A. For more information about model development and performance, see the [model/service card](https://build.nvidia.com/nvidia/nemotron-nano-12b-v2-vl/modelcard).
 + **Model launch date:** Oct 28, 2025
++ **EOL no sooner than:** Oct 28, 2026
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/)
 + **Model lifecycle:** Active

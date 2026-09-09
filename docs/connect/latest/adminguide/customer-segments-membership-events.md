@@ -78,7 +78,7 @@ The following is a sample of the permissions to grant the Kinesis role.
             "Action": [
                 "kinesis:PutRecord",
                 "kinesis:PutRecords",
-                "kinesis:DescribeStream"
+                "kinesis:DescribeStreamSummary"
             ],
             "Resource": "arn:aws:kinesis:us-west-2:123456789012:stream/my-segment-events-stream"
         }

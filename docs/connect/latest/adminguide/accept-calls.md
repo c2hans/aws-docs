@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/accept-calls.h
 1. When a call arrives, choose the **Accept call** button.
 **Note**
 The **Accept call** button does not appear if your admin has enabled [Auto-accept](enable-auto-accept.md) for the voice channel in your user profile.
-**Firefox users**: If you are using the Firefox browser and using auto-accept for calls, you must keep the CCP or Agent Workspace browser tab in focus when you accept and connect to a voice contact. The CCP conforms to Firefox microphone usage guidance, and only has access to connect to the user's microphone when the CCP tab is in focus.
+**Firefox users**: If you are using the Firefox browser and using auto-accept for calls, you must keep the CCP or agent workspace browser tab in focus when you accept and connect to a voice contact. The CCP conforms to Firefox microphone usage guidance, and only has access to connect to the user's microphone when the CCP tab is in focus.
 
 1. Before you're connected to the contact, Connect Customer announces the name of the originating queue.
 

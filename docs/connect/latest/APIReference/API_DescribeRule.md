@@ -149,6 +149,17 @@ Content-type: application/json
       "LastUpdatedBy": "string",
       "LastUpdatedTime": number,
       "Name": "string",
+      "PreEvaluationFilters": {
+         "AndConditions": [
+            {
+               "FilterKey": "string",
+               "FilterType": "string",
+               "FilterValue": "string",
+               "Operator": "string",
+               "ResourceType": "string"
+            }
+         ]
+      },
       "PublishStatus": "string",
       "RuleArn": "string",
       "RuleCapabilityTiers": [ "string" ],

@@ -12,10 +12,6 @@ List all existing hubs.
 
 ```
 {
-   "CreationTimeAfter": {{number}},
-   "CreationTimeBefore": {{number}},
-   "LastModifiedTimeAfter": {{number}},
-   "LastModifiedTimeBefore": {{number}},
    "MaxResults": {{number}},
    "NameContains": "{{string}}",
    "NextToken": "{{string}}",
@@ -30,26 +26,6 @@ List all existing hubs.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
-
- ** [CreationTimeAfter](#API_ListHubs_RequestSyntax) **   <a name="sagemaker-ListHubs-request-CreationTimeAfter"></a>
-Only list hubs that were created after the time specified.
-Type: Timestamp
-Required: No
-
- ** [CreationTimeBefore](#API_ListHubs_RequestSyntax) **   <a name="sagemaker-ListHubs-request-CreationTimeBefore"></a>
-Only list hubs that were created before the time specified.
-Type: Timestamp
-Required: No
-
- ** [LastModifiedTimeAfter](#API_ListHubs_RequestSyntax) **   <a name="sagemaker-ListHubs-request-LastModifiedTimeAfter"></a>
-Only list hubs that were last modified after the time specified.
-Type: Timestamp
-Required: No
-
- ** [LastModifiedTimeBefore](#API_ListHubs_RequestSyntax) **   <a name="sagemaker-ListHubs-request-LastModifiedTimeBefore"></a>
-Only list hubs that were last modified before the time specified.
-Type: Timestamp
-Required: No
 
  ** [MaxResults](#API_ListHubs_RequestSyntax) **   <a name="sagemaker-ListHubs-request-MaxResults"></a>
 The maximum number of hubs to list.
@@ -90,14 +66,12 @@ Required: No
 {
    "HubSummaries": [
       {
-         "CreationTime": number,
          "HubArn": "string",
          "HubDescription": "string",
          "HubDisplayName": "string",
          "HubName": "string",
          "HubSearchKeywords": [ "string" ],
-         "HubStatus": "string",
-         "LastModifiedTime": number
+         "HubStatus": "string"
       }
    ],
    "NextToken": "string"

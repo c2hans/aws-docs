@@ -12,10 +12,6 @@ Request a list of jobs.
 
 ```
 {
-   "CreationTimeAfter": {{number}},
-   "CreationTimeBefore": {{number}},
-   "LastModifiedTimeAfter": {{number}},
-   "LastModifiedTimeBefore": {{number}},
    "MaxResults": {{number}},
    "NameContains": "{{string}}",
    "NextToken": "{{string}}",
@@ -31,26 +27,6 @@ Request a list of jobs.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
-
- ** [CreationTimeAfter](#API_ListAutoMLJobs_RequestSyntax) **   <a name="sagemaker-ListAutoMLJobs-request-CreationTimeAfter"></a>
-Request a list of jobs, using a filter for time.
-Type: Timestamp
-Required: No
-
- ** [CreationTimeBefore](#API_ListAutoMLJobs_RequestSyntax) **   <a name="sagemaker-ListAutoMLJobs-request-CreationTimeBefore"></a>
-Request a list of jobs, using a filter for time.
-Type: Timestamp
-Required: No
-
- ** [LastModifiedTimeAfter](#API_ListAutoMLJobs_RequestSyntax) **   <a name="sagemaker-ListAutoMLJobs-request-LastModifiedTimeAfter"></a>
-Request a list of jobs, using a filter for time.
-Type: Timestamp
-Required: No
-
- ** [LastModifiedTimeBefore](#API_ListAutoMLJobs_RequestSyntax) **   <a name="sagemaker-ListAutoMLJobs-request-LastModifiedTimeBefore"></a>
-Request a list of jobs, using a filter for time.
-Type: Timestamp
-Required: No
 
  ** [MaxResults](#API_ListAutoMLJobs_RequestSyntax) **   <a name="sagemaker-ListAutoMLJobs-request-MaxResults"></a>
 Request a list of jobs up to a specified limit.
@@ -101,10 +77,7 @@ Required: No
          "AutoMLJobName": "string",
          "AutoMLJobSecondaryStatus": "string",
          "AutoMLJobStatus": "string",
-         "CreationTime": number,
-         "EndTime": number,
          "FailureReason": "string",
-         "LastModifiedTime": number,
          "PartialFailureReasons": [
             {
                "PartialFailureMessage": "string"

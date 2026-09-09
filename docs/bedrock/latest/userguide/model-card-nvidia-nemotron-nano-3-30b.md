@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-nvid
 
 Nemotron Nano 3 30B is NVIDIA's 30-billion parameter model with strong reasoning and coding performance, optimized for deployment on NVIDIA GPUs. For more information about model development and performance, see the [model/service card](https://build.nvidia.com/nvidia/nemotron-3-nano-30b-a3b/modelcard).
 + **Model launch date:** Dec 15, 2025
++ **EOL no sooner than:** Dec 15, 2026
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/)
 + **Model lifecycle:** Active

@@ -21,9 +21,7 @@ Retrieves a list of training plans for the current account.
    "MaxResults": {{number}},
    "NextToken": "{{string}}",
    "SortBy": "{{string}}",
-   "SortOrder": "{{string}}",
-   "StartTimeAfter": {{number}},
-   "StartTimeBefore": {{number}}
+   "SortOrder": "{{string}}"
 }
 ```
 
@@ -65,16 +63,6 @@ Type: String
 Valid Values: `Ascending | Descending`
 Required: No
 
- ** [StartTimeAfter](#API_ListTrainingPlans_RequestSyntax) **   <a name="sagemaker-ListTrainingPlans-request-StartTimeAfter"></a>
-Filter to list only training plans with an actual start time after this date.
-Type: Timestamp
-Required: No
-
- ** [StartTimeBefore](#API_ListTrainingPlans_RequestSyntax) **   <a name="sagemaker-ListTrainingPlans-request-StartTimeBefore"></a>
-Filter to list only training plans with an actual start time before this date.
-Type: Timestamp
-Required: No
-
 ## Response Syntax
 <a name="API_ListTrainingPlans_ResponseSyntax"></a>
 
@@ -87,7 +75,6 @@ Required: No
          "CurrencyCode": "string",
          "DurationHours": number,
          "DurationMinutes": number,
-         "EndTime": number,
          "InUseInstanceCount": number,
          "ReservedCapacitySummaries": [
             {
@@ -95,18 +82,15 @@ Required: No
                "AvailabilityZoneId": "string",
                "DurationHours": number,
                "DurationMinutes": number,
-               "EndTime": number,
                "InstanceType": "string",
                "ReservedCapacityArn": "string",
                "ReservedCapacityType": "string",
-               "StartTime": number,
                "Status": "string",
                "TotalInstanceCount": number,
                "UltraServerCount": number,
                "UltraServerType": "string"
             }
          ],
-         "StartTime": number,
          "Status": "string",
          "StatusMessage": "string",
          "TargetResources": [ "string" ],

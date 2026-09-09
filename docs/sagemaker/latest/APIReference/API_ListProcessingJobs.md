@@ -12,10 +12,6 @@ Lists processing jobs that satisfy various filters.
 
 ```
 {
-   "CreationTimeAfter": {{number}},
-   "CreationTimeBefore": {{number}},
-   "LastModifiedTimeAfter": {{number}},
-   "LastModifiedTimeBefore": {{number}},
    "MaxResults": {{number}},
    "NameContains": "{{string}}",
    "NextToken": "{{string}}",
@@ -31,26 +27,6 @@ Lists processing jobs that satisfy various filters.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
-
- ** [CreationTimeAfter](#API_ListProcessingJobs_RequestSyntax) **   <a name="sagemaker-ListProcessingJobs-request-CreationTimeAfter"></a>
-A filter that returns only processing jobs created after the specified time.
-Type: Timestamp
-Required: No
-
- ** [CreationTimeBefore](#API_ListProcessingJobs_RequestSyntax) **   <a name="sagemaker-ListProcessingJobs-request-CreationTimeBefore"></a>
-A filter that returns only processing jobs created after the specified time.
-Type: Timestamp
-Required: No
-
- ** [LastModifiedTimeAfter](#API_ListProcessingJobs_RequestSyntax) **   <a name="sagemaker-ListProcessingJobs-request-LastModifiedTimeAfter"></a>
-A filter that returns only processing jobs modified after the specified time.
-Type: Timestamp
-Required: No
-
- ** [LastModifiedTimeBefore](#API_ListProcessingJobs_RequestSyntax) **   <a name="sagemaker-ListProcessingJobs-request-LastModifiedTimeBefore"></a>
-A filter that returns only processing jobs modified before the specified time.
-Type: Timestamp
-Required: No
 
  ** [MaxResults](#API_ListProcessingJobs_RequestSyntax) **   <a name="sagemaker-ListProcessingJobs-request-MaxResults"></a>
 The maximum number of processing jobs to return in the response.
@@ -96,11 +72,8 @@ Required: No
    "NextToken": "string",
    "ProcessingJobSummaries": [
       {
-         "CreationTime": number,
          "ExitMessage": "string",
          "FailureReason": "string",
-         "LastModifiedTime": number,
-         "ProcessingEndTime": number,
          "ProcessingJobArn": "string",
          "ProcessingJobName": "string",
          "ProcessingJobStatus": "string"

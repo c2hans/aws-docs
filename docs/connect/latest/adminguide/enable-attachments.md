@@ -171,7 +171,7 @@ To allow customers and agents to upload and download files, update your cross-or
 ## Step 5 (Optional): Integrate with the APIs to enhance your custom UIs
 <a name="step5-update-chat-ui"></a>
 
-If you are skipping the out-of-the-box Chat UI or Agent workspace, you can use the Connect Customer Participant attachments APIs, or Connect Customer attached files APIs to build your own UIs and provide attachments support for Cases and Chats. For the general steps in working with both sets of APIs, see [Working with attachments](https://docs.aws.amazon.com/connect/latest/APIReference/working-with-acps-api).
+If you are skipping the out-of-the-box Chat UI or agent workspace, you can use the Connect Customer Participant attachments APIs, or Connect Customer attached files APIs to build your own UIs and provide attachments support for Cases and Chats. For the general steps in working with both sets of APIs, see [Working with attachments](https://docs.aws.amazon.com/connect/latest/APIReference/working-with-acps-api).
 
 ## Next step
 <a name="nextsteps-attachments"></a>

@@ -41,7 +41,6 @@ Required: Yes
       "ImageUri": "string"
    },
    "AutoMLJobArn": "string",
-   "CreationTime": number,
    "Environment": {
       "string" : "string"
    },
@@ -53,7 +52,6 @@ Required: Yes
       "TrialName": "string"
    },
    "FailureReason": "string",
-   "LastModifiedTime": number,
    "MonitoringScheduleArn": "string",
    "NetworkConfig": {
       "EnableInterContainerTrafficEncryption": boolean,
@@ -63,7 +61,6 @@ Required: Yes
          "Subnets": [ "string" ]
       }
    },
-   "ProcessingEndTime": number,
    "ProcessingInputs": [
       {
          "AppManaged": boolean,
@@ -127,12 +124,19 @@ Required: Yes
    "ProcessingResources": {
       "ClusterConfig": {
          "InstanceCount": number,
+         "InstancePreferences": [
+            {
+               "InstanceCount": number,
+               "InstanceType": "string"
+            }
+         ],
          "InstanceType": "string",
+         "SelectedInstanceCount": number,
+         "SelectedInstanceType": "string",
          "VolumeKmsKeyId": "string",
          "VolumeSizeInGB": number
       }
    },
-   "ProcessingStartTime": number,
    "RoleArn": "string",
    "StoppingCondition": {
       "MaxRuntimeInSeconds": number
@@ -158,10 +162,6 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:automl-job/.*`
 
- ** [CreationTime](#API_DescribeProcessingJob_ResponseSyntax) **   <a name="sagemaker-DescribeProcessingJob-response-CreationTime"></a>
-The time at which the processing job was created.
-Type: Timestamp
-
  ** [Environment](#API_DescribeProcessingJob_ResponseSyntax) **   <a name="sagemaker-DescribeProcessingJob-response-Environment"></a>
 The environment variables set in the Docker container.
 Type: String to string map
@@ -186,10 +186,6 @@ A string, up to one KB in size, that contains the reason a processing job failed
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1024.
 
- ** [LastModifiedTime](#API_DescribeProcessingJob_ResponseSyntax) **   <a name="sagemaker-DescribeProcessingJob-response-LastModifiedTime"></a>
-The time at which the processing job was last modified.
-Type: Timestamp
-
  ** [MonitoringScheduleArn](#API_DescribeProcessingJob_ResponseSyntax) **   <a name="sagemaker-DescribeProcessingJob-response-MonitoringScheduleArn"></a>
 The ARN of a monitoring schedule for an endpoint associated with this processing job.
 Type: String
@@ -199,10 +195,6 @@ Pattern: `.*`
  ** [NetworkConfig](#API_DescribeProcessingJob_ResponseSyntax) **   <a name="sagemaker-DescribeProcessingJob-response-NetworkConfig"></a>
 Networking options for a processing job.
 Type: [NetworkConfig](API_NetworkConfig.md) object
-
- ** [ProcessingEndTime](#API_DescribeProcessingJob_ResponseSyntax) **   <a name="sagemaker-DescribeProcessingJob-response-ProcessingEndTime"></a>
-The time at which the processing job completed.
-Type: Timestamp
 
  ** [ProcessingInputs](#API_DescribeProcessingJob_ResponseSyntax) **   <a name="sagemaker-DescribeProcessingJob-response-ProcessingInputs"></a>
 The inputs for a processing job.
@@ -233,10 +225,6 @@ Type: [ProcessingOutputConfig](API_ProcessingOutputConfig.md) object
  ** [ProcessingResources](#API_DescribeProcessingJob_ResponseSyntax) **   <a name="sagemaker-DescribeProcessingJob-response-ProcessingResources"></a>
 Identifies the resources, ML compute instances, and ML storage volumes to deploy for a processing job. In distributed training, you specify more than one instance.
 Type: [ProcessingResources](API_ProcessingResources.md) object
-
- ** [ProcessingStartTime](#API_DescribeProcessingJob_ResponseSyntax) **   <a name="sagemaker-DescribeProcessingJob-response-ProcessingStartTime"></a>
-The time at which the processing job started.
-Type: Timestamp
 
  ** [RoleArn](#API_DescribeProcessingJob_ResponseSyntax) **   <a name="sagemaker-DescribeProcessingJob-response-RoleArn"></a>
 The Amazon Resource Name (ARN) of an IAM role that Amazon SageMaker can assume to perform tasks on your behalf.

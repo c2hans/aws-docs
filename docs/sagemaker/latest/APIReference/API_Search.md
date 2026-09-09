@@ -122,7 +122,6 @@ Required: No
    "Results": [
       {
          "Endpoint": {
-            "CreationTime": number,
             "DataCaptureConfig": {
                "CaptureStatus": "string",
                "CurrentSamplingPercentage": number,
@@ -135,24 +134,18 @@ Required: No
             "EndpointName": "string",
             "EndpointStatus": "string",
             "FailureReason": "string",
-            "LastModifiedTime": number,
             "MonitoringSchedules": [
                {
-                  "CreationTime": number,
                   "EndpointName": "string",
                   "FailureReason": "string",
-                  "LastModifiedTime": number,
                   "LastMonitoringExecutionSummary": {
-                     "CreationTime": number,
                      "EndpointName": "string",
                      "FailureReason": "string",
-                     "LastModifiedTime": number,
                      "MonitoringExecutionStatus": "string",
                      "MonitoringJobDefinitionName": "string",
                      "MonitoringScheduleName": "string",
                      "MonitoringType": "string",
-                     "ProcessingJobArn": "string",
-                     "ScheduledTime": number
+                     "ProcessingJobArn": "string"
                   },
                   "MonitoringScheduleArn": "string",
                   "MonitoringScheduleConfig": {
@@ -294,7 +287,6 @@ Required: No
                   "CurrentWeight": number,
                   "DeployedImages": [
                      {
-                        "ResolutionTime": number,
                         "ResolvedImage": "string",
                         "SpecifiedImage": "string"
                      }
@@ -332,7 +324,6 @@ Required: No
                   "VariantName": "string",
                   "VariantStatus": [
                      {
-                        "StartTime": number,
                         "Status": "string",
                         "StatusMessage": "string"
                      }
@@ -365,7 +356,6 @@ Required: No
                   "CurrentWeight": number,
                   "DeployedImages": [
                      {
-                        "ResolutionTime": number,
                         "ResolvedImage": "string",
                         "SpecifiedImage": "string"
                      }
@@ -403,7 +393,6 @@ Required: No
                   "VariantName": "string",
                   "VariantStatus": [
                      {
-                        "StartTime": number,
                         "Status": "string",
                         "StatusMessage": "string"
                      }
@@ -428,7 +417,6 @@ Required: No
                "UserProfileArn": "string",
                "UserProfileName": "string"
             },
-            "CreationTime": number,
             "Description": "string",
             "DisplayName": "string",
             "ExperimentArn": "string",
@@ -443,7 +431,6 @@ Required: No
                "UserProfileArn": "string",
                "UserProfileName": "string"
             },
-            "LastModifiedTime": number,
             "Source": {
                "SourceArn": "string",
                "SourceType": "string"
@@ -531,7 +518,6 @@ Required: No
          },
          "HyperParameterTuningJob": {
             "BestTrainingJob": {
-               "CreationTime": number,
                "FailureReason": "string",
                "FinalHyperParameterTuningJobObjectiveMetric": {
                   "MetricName": "string",
@@ -539,12 +525,10 @@ Required: No
                   "Value": number
                },
                "ObjectiveStatus": "string",
-               "TrainingEndTime": number,
                "TrainingJobArn": "string",
                "TrainingJobDefinitionName": "string",
                "TrainingJobName": "string",
                "TrainingJobStatus": "string",
-               "TrainingStartTime": number,
                "TunedHyperParameters": {
                   "string" : "string"
                },
@@ -553,9 +537,7 @@ Required: No
             "ConsumedResources": {
                "RuntimeInSeconds": number
             },
-            "CreationTime": number,
             "FailureReason": "string",
-            "HyperParameterTuningEndTime": number,
             "HyperParameterTuningJobArn": "string",
             "HyperParameterTuningJobConfig": {
                "HyperParameterTuningJobObjective": {
@@ -618,14 +600,12 @@ Required: No
             },
             "HyperParameterTuningJobName": "string",
             "HyperParameterTuningJobStatus": "string",
-            "LastModifiedTime": number,
             "ObjectiveStatusCounters": {
                "Failed": number,
                "Pending": number,
                "Succeeded": number
             },
             "OverallBestTrainingJob": {
-               "CreationTime": number,
                "FailureReason": "string",
                "FinalHyperParameterTuningJobObjectiveMetric": {
                   "MetricName": "string",
@@ -633,12 +613,10 @@ Required: No
                   "Value": number
                },
                "ObjectiveStatus": "string",
-               "TrainingEndTime": number,
                "TrainingJobArn": "string",
                "TrainingJobDefinitionName": "string",
                "TrainingJobName": "string",
                "TrainingJobStatus": "string",
-               "TrainingStartTime": number,
                "TunedHyperParameters": {
                   "string" : "string"
                },
@@ -776,8 +754,17 @@ Required: No
                         }
                      ]
                   },
+                  "InstancePreferences": [
+                     {
+                        "InstanceCount": number,
+                        "InstanceType": "string",
+                        "TrainingPlanArns": [ "string" ]
+                     }
+                  ],
                   "InstanceType": "string",
                   "KeepAlivePeriodInSeconds": number,
+                  "SelectedInstanceCount": number,
+                  "SelectedInstanceType": "string",
                   "TrainingPlanArn": "string",
                   "VolumeKmsKeyId": "string",
                   "VolumeSizeInGB": number
@@ -930,8 +917,17 @@ Required: No
                            }
                         ]
                      },
+                     "InstancePreferences": [
+                        {
+                           "InstanceCount": number,
+                           "InstanceType": "string",
+                           "TrainingPlanArns": [ "string" ]
+                        }
+                     ],
                      "InstanceType": "string",
                      "KeepAlivePeriodInSeconds": number,
+                     "SelectedInstanceCount": number,
+                     "SelectedInstanceType": "string",
                      "TrainingPlanArn": "string",
                      "VolumeKmsKeyId": "string",
                      "VolumeSizeInGB": number
@@ -966,7 +962,6 @@ Required: No
                "Stopped": number
             },
             "TuningJobCompletionDetails": {
-               "ConvergenceDetectedTime": number,
                "NumberOfTrainingJobsObjectiveNotImproving": number
             },
             "WarmStartConfig": {
@@ -979,8 +974,6 @@ Required: No
             }
          },
          "Job": {
-            "CreationTime": number,
-            "EndTime": number,
             "FailureReason": "string",
             "JobArn": "string",
             "JobCategory": "string",
@@ -988,13 +981,10 @@ Required: No
             "JobConfigSchemaVersion": "string",
             "JobName": "string",
             "JobStatus": "string",
-            "LastModifiedTime": number,
             "RoleArn": "string",
             "SecondaryStatus": "string",
             "SecondaryStatusTransitions": [
                {
-                  "EndTime": number,
-                  "StartTime": number,
                   "Status": "string",
                   "StatusMessage": "string"
                }
@@ -1009,17 +999,14 @@ Required: No
          "Model": {
             "Endpoints": [
                {
-                  "CreationTime": number,
                   "EndpointArn": "string",
                   "EndpointName": "string",
-                  "EndpointStatus": "string",
-                  "LastModifiedTime": number
+                  "EndpointStatus": "string"
                }
             ],
             "LastBatchTransformJob": {
                "AutoMLJobArn": "string",
                "BatchStrategy": "string",
-               "CreationTime": number,
                "DataCaptureConfig": {
                   "DestinationS3Uri": "string",
                   "GenerateInferenceId": boolean,
@@ -1054,7 +1041,6 @@ Required: No
                      "Value": "string"
                   }
                ],
-               "TransformEndTime": number,
                "TransformInput": {
                   "CompressionType": "string",
                   "ContentType": "string",
@@ -1080,8 +1066,7 @@ Required: No
                   "InstanceType": "string",
                   "TransformAmiVersion": "string",
                   "VolumeKmsKeyId": "string"
-               },
-               "TransformStartTime": number
+               }
             },
             "Model": {
                "Containers": [
@@ -1149,7 +1134,6 @@ Required: No
                      }
                   }
                ],
-               "CreationTime": number,
                "DeploymentRecommendation": {
                   "RealTimeInferenceRecommendations": [
                      {
@@ -1254,7 +1238,6 @@ Required: No
                   "UserProfileArn": "string",
                   "UserProfileName": "string"
                },
-               "CreationTime": number,
                "LastModifiedBy": {
                   "DomainId": "string",
                   "IamIdentity": {
@@ -1265,7 +1248,6 @@ Required: No
                   "UserProfileArn": "string",
                   "UserProfileName": "string"
                },
-               "LastModifiedTime": number,
                "ModelCardArn": "string",
                "ModelCardName": "string",
                "ModelCardStatus": "string",
@@ -1307,21 +1289,16 @@ Required: No
                      "S3InputMode": "string",
                      "StartTimeOffset": "string"
                   },
-                  "CreationTime": number,
                   "EndpointName": "string",
                   "FailureReason": "string",
-                  "LastModifiedTime": number,
                   "LastMonitoringExecutionSummary": {
-                     "CreationTime": number,
                      "EndpointName": "string",
                      "FailureReason": "string",
-                     "LastModifiedTime": number,
                      "MonitoringExecutionStatus": "string",
                      "MonitoringJobDefinitionName": "string",
                      "MonitoringScheduleName": "string",
                      "MonitoringType": "string",
-                     "ProcessingJobArn": "string",
-                     "ScheduledTime": number
+                     "ProcessingJobArn": "string"
                   },
                   "MonitoringAlertSummaries": [
                      {
@@ -1331,10 +1308,8 @@ Required: No
                            }
                         },
                         "AlertStatus": "string",
-                        "CreationTime": number,
                         "DatapointsToAlert": number,
                         "EvaluationPeriod": number,
-                        "LastModifiedTime": number,
                         "MonitoringAlertName": "string"
                      }
                   ],
@@ -1459,7 +1434,6 @@ Required: No
                "UserProfileArn": "string",
                "UserProfileName": "string"
             },
-            "CreationTime": number,
             "LastModifiedBy": {
                "DomainId": "string",
                "IamIdentity": {
@@ -1470,7 +1444,6 @@ Required: No
                "UserProfileArn": "string",
                "UserProfileName": "string"
             },
-            "LastModifiedTime": number,
             "ModelCardArn": "string",
             "ModelCardName": "string",
             "ModelCardStatus": "string",
@@ -1719,7 +1692,6 @@ Required: No
                "UserProfileArn": "string",
                "UserProfileName": "string"
             },
-            "LastModifiedTime": number,
             "MetadataProperties": {
                "CommitId": "string",
                "GeneratedBy": "string",
@@ -1921,7 +1893,6 @@ Required: No
                "UserProfileArn": "string",
                "UserProfileName": "string"
             },
-            "CreationTime": number,
             "LastModifiedBy": {
                "DomainId": "string",
                "IamIdentity": {
@@ -1932,8 +1903,6 @@ Required: No
                "UserProfileArn": "string",
                "UserProfileName": "string"
             },
-            "LastModifiedTime": number,
-            "LastRunTime": number,
             "ParallelismConfiguration": {
                "MaxParallelExecutionSteps": number
             },
@@ -1961,7 +1930,6 @@ Required: No
                "UserProfileArn": "string",
                "UserProfileName": "string"
             },
-            "CreationTime": number,
             "FailureReason": "string",
             "LastModifiedBy": {
                "DomainId": "string",
@@ -1973,7 +1941,6 @@ Required: No
                "UserProfileArn": "string",
                "UserProfileName": "string"
             },
-            "LastModifiedTime": number,
             "ParallelismConfiguration": {
                "MaxParallelExecutionSteps": number
             },
@@ -2014,7 +1981,6 @@ Required: No
                "UserProfileArn": "string",
                "UserProfileName": "string"
             },
-            "CreationTime": number,
             "LastExecutedPipelineExecutionArn": "string",
             "LastExecutedPipelineExecutionDisplayName": "string",
             "LastExecutedPipelineExecutionStatus": "string",
@@ -2028,7 +1994,6 @@ Required: No
                "UserProfileArn": "string",
                "UserProfileName": "string"
             },
-            "LastModifiedTime": number,
             "PipelineArn": "string",
             "PipelineVersionDescription": "string",
             "PipelineVersionDisplayName": "string",
@@ -2045,7 +2010,6 @@ Required: No
                "UserProfileArn": "string",
                "UserProfileName": "string"
             },
-            "CreationTime": number,
             "LastModifiedBy": {
                "DomainId": "string",
                "IamIdentity": {
@@ -2056,7 +2020,6 @@ Required: No
                "UserProfileArn": "string",
                "UserProfileName": "string"
             },
-            "LastModifiedTime": number,
             "ProjectArn": "string",
             "ProjectDescription": "string",
             "ProjectId": "string",
@@ -2131,7 +2094,6 @@ Required: No
                "LocalPath": "string",
                "S3Uri": "string"
             },
-            "CreationTime": number,
             "DebugHookConfig": {
                "CollectionConfigurations": [
                   {
@@ -2162,7 +2124,6 @@ Required: No
             ],
             "DebugRuleEvaluationStatuses": [
                {
-                  "LastModifiedTime": number,
                   "RuleConfigurationName": "string",
                   "RuleEvaluationJobArn": "string",
                   "RuleEvaluationStatus": "string",
@@ -2185,7 +2146,6 @@ Required: No
             "FinalMetricDataList": [
                {
                   "MetricName": "string",
-                  "Timestamp": number,
                   "Value": number
                }
             ],
@@ -2229,7 +2189,6 @@ Required: No
                }
             ],
             "LabelingJobArn": "string",
-            "LastModifiedTime": number,
             "ModelArtifacts": {
                "S3ModelArtifacts": "string"
             },
@@ -2269,8 +2228,17 @@ Required: No
                      }
                   ]
                },
+               "InstancePreferences": [
+                  {
+                     "InstanceCount": number,
+                     "InstanceType": "string",
+                     "TrainingPlanArns": [ "string" ]
+                  }
+               ],
                "InstanceType": "string",
                "KeepAlivePeriodInSeconds": number,
+               "SelectedInstanceCount": number,
+               "SelectedInstanceType": "string",
                "TrainingPlanArn": "string",
                "VolumeKmsKeyId": "string",
                "VolumeSizeInGB": number
@@ -2282,8 +2250,6 @@ Required: No
             "SecondaryStatus": "string",
             "SecondaryStatusTransitions": [
                {
-                  "EndTime": number,
-                  "StartTime": number,
                   "Status": "string",
                   "StatusMessage": "string"
                }
@@ -2303,11 +2269,9 @@ Required: No
                "LocalPath": "string",
                "S3OutputPath": "string"
             },
-            "TrainingEndTime": number,
             "TrainingJobArn": "string",
             "TrainingJobName": "string",
             "TrainingJobStatus": "string",
-            "TrainingStartTime": number,
             "TrainingTimeInSeconds": number,
             "TuningJobArn": "string",
             "VpcConfig": {
@@ -2331,7 +2295,6 @@ Required: No
                "UserProfileArn": "string",
                "UserProfileName": "string"
             },
-            "CreationTime": number,
             "DisplayName": "string",
             "ExperimentName": "string",
             "LastModifiedBy": {
@@ -2344,7 +2307,6 @@ Required: No
                "UserProfileArn": "string",
                "UserProfileName": "string"
             },
-            "LastModifiedTime": number,
             "MetadataProperties": {
                "CommitId": "string",
                "GeneratedBy": "string",
@@ -2374,7 +2336,6 @@ Required: No
                      "UserProfileArn": "string",
                      "UserProfileName": "string"
                   },
-                  "CreationTime": number,
                   "TrialComponentArn": "string",
                   "TrialComponentName": "string",
                   "TrialComponentSource": {
@@ -2396,9 +2357,7 @@ Required: No
                "UserProfileArn": "string",
                "UserProfileName": "string"
             },
-            "CreationTime": number,
             "DisplayName": "string",
-            "EndTime": number,
             "InputArtifacts": {
                "string" : {
                   "MediaType": "string",
@@ -2415,7 +2374,6 @@ Required: No
                "UserProfileArn": "string",
                "UserProfileName": "string"
             },
-            "LastModifiedTime": number,
             "LineageGroupArn": "string",
             "MetadataProperties": {
                "CommitId": "string",
@@ -2432,8 +2390,7 @@ Required: No
                   "MetricName": "string",
                   "Min": number,
                   "SourceArn": "string",
-                  "StdDev": number,
-                  "TimeStamp": number
+                  "StdDev": number
                }
             ],
             "OutputArtifacts": {
@@ -2467,7 +2424,6 @@ Required: No
                      "ImageUri": "string"
                   },
                   "AutoMLJobArn": "string",
-                  "CreationTime": number,
                   "Environment": {
                      "string" : "string"
                   },
@@ -2479,7 +2435,6 @@ Required: No
                      "TrialName": "string"
                   },
                   "FailureReason": "string",
-                  "LastModifiedTime": number,
                   "MonitoringScheduleArn": "string",
                   "NetworkConfig": {
                      "EnableInterContainerTrafficEncryption": boolean,
@@ -2489,7 +2444,6 @@ Required: No
                         "Subnets": [ "string" ]
                      }
                   },
-                  "ProcessingEndTime": number,
                   "ProcessingInputs": [
                      {
                         "AppManaged": boolean,
@@ -2553,12 +2507,19 @@ Required: No
                   "ProcessingResources": {
                      "ClusterConfig": {
                         "InstanceCount": number,
+                        "InstancePreferences": [
+                           {
+                              "InstanceCount": number,
+                              "InstanceType": "string"
+                           }
+                        ],
                         "InstanceType": "string",
+                        "SelectedInstanceCount": number,
+                        "SelectedInstanceType": "string",
                         "VolumeKmsKeyId": "string",
                         "VolumeSizeInGB": number
                      }
                   },
-                  "ProcessingStartTime": number,
                   "RoleArn": "string",
                   "StoppingCondition": {
                      "MaxRuntimeInSeconds": number
@@ -2599,7 +2560,6 @@ Required: No
                      "LocalPath": "string",
                      "S3Uri": "string"
                   },
-                  "CreationTime": number,
                   "DebugHookConfig": {
                      "CollectionConfigurations": [
                         {
@@ -2630,7 +2590,6 @@ Required: No
                   ],
                   "DebugRuleEvaluationStatuses": [
                      {
-                        "LastModifiedTime": number,
                         "RuleConfigurationName": "string",
                         "RuleEvaluationJobArn": "string",
                         "RuleEvaluationStatus": "string",
@@ -2653,7 +2612,6 @@ Required: No
                   "FinalMetricDataList": [
                      {
                         "MetricName": "string",
-                        "Timestamp": number,
                         "Value": number
                      }
                   ],
@@ -2697,7 +2655,6 @@ Required: No
                      }
                   ],
                   "LabelingJobArn": "string",
-                  "LastModifiedTime": number,
                   "ModelArtifacts": {
                      "S3ModelArtifacts": "string"
                   },
@@ -2737,8 +2694,17 @@ Required: No
                            }
                         ]
                      },
+                     "InstancePreferences": [
+                        {
+                           "InstanceCount": number,
+                           "InstanceType": "string",
+                           "TrainingPlanArns": [ "string" ]
+                        }
+                     ],
                      "InstanceType": "string",
                      "KeepAlivePeriodInSeconds": number,
+                     "SelectedInstanceCount": number,
+                     "SelectedInstanceType": "string",
                      "TrainingPlanArn": "string",
                      "VolumeKmsKeyId": "string",
                      "VolumeSizeInGB": number
@@ -2750,8 +2716,6 @@ Required: No
                   "SecondaryStatus": "string",
                   "SecondaryStatusTransitions": [
                      {
-                        "EndTime": number,
-                        "StartTime": number,
                         "Status": "string",
                         "StatusMessage": "string"
                      }
@@ -2771,11 +2735,9 @@ Required: No
                      "LocalPath": "string",
                      "S3OutputPath": "string"
                   },
-                  "TrainingEndTime": number,
                   "TrainingJobArn": "string",
                   "TrainingJobName": "string",
                   "TrainingJobStatus": "string",
-                  "TrainingStartTime": number,
                   "TrainingTimeInSeconds": number,
                   "TuningJobArn": "string",
                   "VpcConfig": {
@@ -2791,7 +2753,6 @@ Required: No
                "TransformJob": {
                   "AutoMLJobArn": "string",
                   "BatchStrategy": "string",
-                  "CreationTime": number,
                   "DataCaptureConfig": {
                      "DestinationS3Uri": "string",
                      "GenerateInferenceId": boolean,
@@ -2826,7 +2787,6 @@ Required: No
                         "Value": "string"
                      }
                   ],
-                  "TransformEndTime": number,
                   "TransformInput": {
                      "CompressionType": "string",
                      "ContentType": "string",
@@ -2852,11 +2812,9 @@ Required: No
                      "InstanceType": "string",
                      "TransformAmiVersion": "string",
                      "VolumeKmsKeyId": "string"
-                  },
-                  "TransformStartTime": number
+                  }
                }
             },
-            "StartTime": number,
             "Status": {
                "Message": "string",
                "PrimaryStatus": "string"

@@ -46,7 +46,6 @@ Required: No
    "Summaries": [
       {
          "Arn": "string",
-         "CreationTime": number,
          "Name": "string",
          "Status": "string",
          "Type": "string"

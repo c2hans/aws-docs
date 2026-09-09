@@ -10,11 +10,6 @@ A structure that contains runtime information about both current and completed h
 ## Contents
 <a name="API_HyperParameterTuningJobCompletionDetails_Contents"></a>
 
- ** ConvergenceDetectedTime **   <a name="sagemaker-Type-HyperParameterTuningJobCompletionDetails-ConvergenceDetectedTime"></a>
-The time in timestamp format that AMT detected model convergence, as defined by a lack of significant improvement over time based on criteria developed over a wide range of diverse benchmarking tests.
-Type: Timestamp
-Required: No
-
  ** NumberOfTrainingJobsObjectiveNotImproving **   <a name="sagemaker-Type-HyperParameterTuningJobCompletionDetails-NumberOfTrainingJobsObjectiveNotImproving"></a>
 The number of training jobs launched by a tuning job that are not improving (1% or less) as measured by model performance evaluated against an objective function.
 Type: Integer

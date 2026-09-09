@@ -9,6 +9,8 @@ Returns a list of the dashboards for your account. If you include `DashboardName
 
  `ListDashboards` returns up to 1000 results on one page. If there are more than 1000 dashboards, you can call `ListDashboards` again and include the value you received for `NextToken` in the first call, to receive the next 1000 results.
 
+You might have recently enabled an [opt-in Region (Region that is disabled by default)](https://docs.aws.amazon.com/glossary/latest/reference/glos-chap.html#optinregion) for your account. In that Region, `ListDashboards` can return an access denied error for up to 24 hours after you enable the Region. This delay occurs while dashboard data propagates. The error does not indicate a problem with your permissions. Because dashboards are global, you can call `ListDashboards` in any other enabled Region, or retry after propagation completes.
+
 ## Request Parameters
 <a name="API_ListDashboards_RequestParameters"></a>
 

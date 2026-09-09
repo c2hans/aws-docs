@@ -12,8 +12,6 @@ List existing versions of an Amazon SageMaker Model Card.
 
 ```
 {
-   "CreationTimeAfter": {{number}},
-   "CreationTimeBefore": {{number}},
    "MaxResults": {{number}},
    "ModelCardName": "{{string}}",
    "ModelCardStatus": "{{string}}",
@@ -29,16 +27,6 @@ List existing versions of an Amazon SageMaker Model Card.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
-
- ** [CreationTimeAfter](#API_ListModelCardVersions_RequestSyntax) **   <a name="sagemaker-ListModelCardVersions-request-CreationTimeAfter"></a>
-Only list model card versions that were created after the time specified.
-Type: Timestamp
-Required: No
-
- ** [CreationTimeBefore](#API_ListModelCardVersions_RequestSyntax) **   <a name="sagemaker-ListModelCardVersions-request-CreationTimeBefore"></a>
-Only list model card versions that were created before the time specified.
-Type: Timestamp
-Required: No
 
  ** [MaxResults](#API_ListModelCardVersions_RequestSyntax) **   <a name="sagemaker-ListModelCardVersions-request-MaxResults"></a>
 The maximum number of model card versions to list.
@@ -85,8 +73,6 @@ Required: No
 {
    "ModelCardVersionSummaryList": [
       {
-         "CreationTime": number,
-         "LastModifiedTime": number,
          "ModelCardArn": "string",
          "ModelCardName": "string",
          "ModelCardStatus": "string",

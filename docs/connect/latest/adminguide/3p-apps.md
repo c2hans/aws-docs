@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/3p-apps.html
 The Connect Customer agent workspace gives your agents the tools and step-by-step guidance to resolve issues quickly and provide better customer experiences with less training required. The agent workspace includes native, first-party applications, such as Customer Profiles, Cases, and agent assist. You can also integrate third-party applications.
 
 **Note**
-Third-party applications are supported only in the Connect Customer agent workspace; they are not supported in custom agent desktops.
+Third-party applications are supported only in the Connect Customer agent workspace; they are not supported in custom agent applications.
 
 For example, you can integrate a proprietary reservation system or a third-party claims management system dashboard into the agent workspace.
 

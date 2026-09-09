@@ -7,4 +7,4 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/Welcome.html
 
 Application Migration Service.
 
-This document was last published on September 7, 2026.
+This document was last published on September 9, 2026.

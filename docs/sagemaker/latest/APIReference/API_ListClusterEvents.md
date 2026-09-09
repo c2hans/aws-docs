@@ -13,8 +13,6 @@ Retrieves a list of event summaries for a specified HyperPod cluster. The operat
 ```
 {
    "ClusterName": "{{string}}",
-   "EventTimeAfter": {{number}},
-   "EventTimeBefore": {{number}},
    "InstanceGroupName": "{{string}}",
    "MaxResults": {{number}},
    "NextToken": "{{string}}",
@@ -38,16 +36,6 @@ Type: String
 Length Constraints: Minimum length of 0. Maximum length of 256.
 Pattern: `(arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:cluster/[a-z0-9]{12})|([a-zA-Z0-9](-*[a-zA-Z0-9]){0,62})`
 Required: Yes
-
- ** [EventTimeAfter](#API_ListClusterEvents_RequestSyntax) **   <a name="sagemaker-ListClusterEvents-request-EventTimeAfter"></a>
-The start of the time range for filtering events. Only events that occurred after this time are included in the results.
-Type: Timestamp
-Required: No
-
- ** [EventTimeBefore](#API_ListClusterEvents_RequestSyntax) **   <a name="sagemaker-ListClusterEvents-request-EventTimeBefore"></a>
-The end of the time range for filtering events. Only events that occurred before this time are included in the results.
-Type: Timestamp
-Required: No
 
  ** [InstanceGroupName](#API_ListClusterEvents_RequestSyntax) **   <a name="sagemaker-ListClusterEvents-request-InstanceGroupName"></a>
 The name of the instance group to filter events. If specified, only events related to this instance group are returned.
@@ -106,7 +94,6 @@ Required: No
          "Description": "string",
          "EventId": "string",
          "EventLevel": "string",
-         "EventTime": number,
          "InstanceGroupName": "string",
          "InstanceId": "string",
          "ResourceType": "string"

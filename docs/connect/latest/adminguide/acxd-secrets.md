@@ -51,6 +51,14 @@ Secrets help reduce exposure of sensitive information and make it easier to upda
 
 Use a clear name that helps teammates understand what the Secret is used for.
 
+Examples:
++ `prod_api_key`
++ `dev_api_key`
++ `authorization_token`
++ `mcp_server_token`
++ `webhook_secret`
++ `customer_profile_base_url`
+
 ## Sensitive setting
 <a name="acxd-secrets-sensitive"></a>
 

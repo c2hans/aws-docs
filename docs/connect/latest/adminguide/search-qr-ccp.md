@@ -13,7 +13,7 @@ Use any of the following methods to search for quick responses:
 The star icon only appears when contact is initiated.
 To see the star icon in CCP, you must have at least 1 activated quick response associated with the current agent routing profile.
 
-The following image shows a quick response found by entering a shortcut (**/\#G1**) in the agent application.
+The following image shows a quick response found by entering a shortcut (**/\#G1**).
 
 ![Chat window with a welcome message and /#G1.](https://docs.aws.amazon.com/connect/latest/adminguide/images/response-example.png)
 

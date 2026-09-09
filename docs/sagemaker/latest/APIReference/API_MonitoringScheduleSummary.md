@@ -10,16 +10,6 @@ Summarizes the monitoring schedule.
 ## Contents
 <a name="API_MonitoringScheduleSummary_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-MonitoringScheduleSummary-CreationTime"></a>
-The creation time of the monitoring schedule.
-Type: Timestamp
-Required: Yes
-
- ** LastModifiedTime **   <a name="sagemaker-Type-MonitoringScheduleSummary-LastModifiedTime"></a>
-The last time the monitoring schedule was modified.
-Type: Timestamp
-Required: Yes
-
  ** MonitoringScheduleArn **   <a name="sagemaker-Type-MonitoringScheduleSummary-MonitoringScheduleArn"></a>
 The Amazon Resource Name (ARN) of the monitoring schedule.
 Type: String

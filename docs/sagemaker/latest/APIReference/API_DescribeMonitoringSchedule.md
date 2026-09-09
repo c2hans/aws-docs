@@ -35,21 +35,16 @@ Required: Yes
 
 ```
 {
-   "CreationTime": number,
    "EndpointName": "string",
    "FailureReason": "string",
-   "LastModifiedTime": number,
    "LastMonitoringExecutionSummary": {
-      "CreationTime": number,
       "EndpointName": "string",
       "FailureReason": "string",
-      "LastModifiedTime": number,
       "MonitoringExecutionStatus": "string",
       "MonitoringJobDefinitionName": "string",
       "MonitoringScheduleName": "string",
       "MonitoringType": "string",
-      "ProcessingJobArn": "string",
-      "ScheduledTime": number
+      "ProcessingJobArn": "string"
    },
    "MonitoringScheduleArn": "string",
    "MonitoringScheduleConfig": {
@@ -167,10 +162,6 @@ If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
- ** [CreationTime](#API_DescribeMonitoringSchedule_ResponseSyntax) **   <a name="sagemaker-DescribeMonitoringSchedule-response-CreationTime"></a>
-The time at which the monitoring job was created.
-Type: Timestamp
-
  ** [EndpointName](#API_DescribeMonitoringSchedule_ResponseSyntax) **   <a name="sagemaker-DescribeMonitoringSchedule-response-EndpointName"></a>
  The name of the endpoint for the monitoring job.
 Type: String
@@ -181,10 +172,6 @@ Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
 A string, up to one KB in size, that contains the reason a monitoring job failed, if it failed.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1024.
-
- ** [LastModifiedTime](#API_DescribeMonitoringSchedule_ResponseSyntax) **   <a name="sagemaker-DescribeMonitoringSchedule-response-LastModifiedTime"></a>
-The time at which the monitoring job was last modified.
-Type: Timestamp
 
  ** [LastMonitoringExecutionSummary](#API_DescribeMonitoringSchedule_ResponseSyntax) **   <a name="sagemaker-DescribeMonitoringSchedule-response-LastMonitoringExecutionSummary"></a>
 Describes metadata on the last execution to run, if there was one.

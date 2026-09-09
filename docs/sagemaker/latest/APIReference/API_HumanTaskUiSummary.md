@@ -10,11 +10,6 @@ Container for human task user interface information.
 ## Contents
 <a name="API_HumanTaskUiSummary_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-HumanTaskUiSummary-CreationTime"></a>
-A timestamp when SageMaker created the human task user interface.
-Type: Timestamp
-Required: Yes
-
  ** HumanTaskUiArn **   <a name="sagemaker-Type-HumanTaskUiSummary-HumanTaskUiArn"></a>
 The Amazon Resource Name (ARN) of the human task user interface.
 Type: String

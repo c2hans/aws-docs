@@ -16,11 +16,6 @@ Type: Array of [ContainerDefinition](API_ContainerDefinition.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 15 items.
 Required: No
 
- ** CreationTime **   <a name="sagemaker-Type-Model-CreationTime"></a>
-A timestamp that indicates when the model was created.
-Type: Timestamp
-Required: No
-
  ** DeploymentRecommendation **   <a name="sagemaker-Type-Model-DeploymentRecommendation"></a>
 A set of recommended deployment configurations for the model.
 Type: [DeploymentRecommendation](API_DeploymentRecommendation.md) object

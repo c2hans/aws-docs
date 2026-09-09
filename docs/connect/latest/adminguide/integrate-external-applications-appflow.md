@@ -138,4 +138,4 @@ Your agent will need to have the appropriate security profile permissions to vie
 
 For more information on security profile permissions, see [Security profiles](https://docs.aws.amazon.com/connect/latest/adminguide/connect-security-profiles.html).
 
-Advanced users who want to build their own custom agent application and embedded customer profiles can use [StreamsJS](https://github.com/amazon-connect/amazon-connect-streams) which provides more customization over the agent application.
+Users who want to build their own custom agent application and embed customer profiles can use [StreamsJS](https://github.com/amazon-connect/amazon-connect-streams) which provides more customization over the agent workspace.

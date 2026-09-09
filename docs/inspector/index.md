@@ -12,12 +12,6 @@ Amazon Inspector is a security vulnerability assessment service that helps impro
 - [API Reference](/inspector/v2/APIReference/): Describes all the API operations for Amazon Inspector in detail. Also provides sample requests, responses, and errors for the supported web services protocols.
 - [Amazon Inspector section of the AWS CLI Reference](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/inspector2/index.html): Describes the AWS CLI commands that you can use to administer Amazon Inspector. Provides syntax, options, and usage examples for each command.
 
-## Amazon Inspector Classic
-
-- [User Guide](/inspector/v1/userguide/): Walks through how to set up Amazon Inspector Classic and evaluate your security configuration.
-- [API Reference](/inspector/v1/APIReference/): Describes all the API operations for Amazon Inspector Classic in detail. Also provides sample requests, responses, and errors for the supported web services protocols.
-- [Amazon Inspector Classic section of the AWS CLI Reference](/cli/latest/reference/inspector/index.html): Describes the AWS CLI commands that you can use to administer Amazon Inspector Classic. Provides syntax, options, and usage examples for each command.
-
 ---
 
 ## Related Links

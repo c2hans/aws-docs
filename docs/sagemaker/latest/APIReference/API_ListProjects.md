@@ -12,8 +12,6 @@ Gets a list of the projects in an AWS account.
 
 ```
 {
-   "CreationTimeAfter": {{number}},
-   "CreationTimeBefore": {{number}},
    "MaxResults": {{number}},
    "NameContains": "{{string}}",
    "NextToken": "{{string}}",
@@ -28,16 +26,6 @@ Gets a list of the projects in an AWS account.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
-
- ** [CreationTimeAfter](#API_ListProjects_RequestSyntax) **   <a name="sagemaker-ListProjects-request-CreationTimeAfter"></a>
-A filter that returns the projects that were created after a specified time.
-Type: Timestamp
-Required: No
-
- ** [CreationTimeBefore](#API_ListProjects_RequestSyntax) **   <a name="sagemaker-ListProjects-request-CreationTimeBefore"></a>
-A filter that returns the projects that were created before a specified time.
-Type: Timestamp
-Required: No
 
  ** [MaxResults](#API_ListProjects_RequestSyntax) **   <a name="sagemaker-ListProjects-request-MaxResults"></a>
 The maximum number of projects to return in the response.
@@ -79,7 +67,6 @@ Required: No
    "NextToken": "string",
    "ProjectSummaryList": [
       {
-         "CreationTime": number,
          "ProjectArn": "string",
          "ProjectDescription": "string",
          "ProjectId": "string",

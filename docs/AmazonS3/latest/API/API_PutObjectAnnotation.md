@@ -204,7 +204,7 @@ Valid Values: `requester`
 
  ** [x-amz-server-side-encryption](#API_PutObjectAnnotation_ResponseSyntax) **   <a name="AmazonS3-PutObjectAnnotation-response-header-ServerSideEncryption"></a>
 The server-side encryption algorithm used to encrypt the annotation.
-Valid Values: `AES256 | aws:fsx | aws:kms | aws:kms:dsse`
+Valid Values: `AES256 | aws:fsx | aws:backup | aws:kms | aws:kms:dsse`
 
 The following data is returned in XML format by the service.
 

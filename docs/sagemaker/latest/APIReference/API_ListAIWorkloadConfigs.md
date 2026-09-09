@@ -12,8 +12,6 @@ Returns a list of AI workload configurations in your account. You can filter the
 
 ```
 {
-   "CreationTimeAfter": {{number}},
-   "CreationTimeBefore": {{number}},
    "MaxResults": {{number}},
    "NameContains": "{{string}}",
    "NextToken": "{{string}}",
@@ -28,16 +26,6 @@ Returns a list of AI workload configurations in your account. You can filter the
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
-
- ** [CreationTimeAfter](#API_ListAIWorkloadConfigs_RequestSyntax) **   <a name="sagemaker-ListAIWorkloadConfigs-request-CreationTimeAfter"></a>
-A filter that returns only configurations created after the specified time.
-Type: Timestamp
-Required: No
-
- ** [CreationTimeBefore](#API_ListAIWorkloadConfigs_RequestSyntax) **   <a name="sagemaker-ListAIWorkloadConfigs-request-CreationTimeBefore"></a>
-A filter that returns only configurations created before the specified time.
-Type: Timestamp
-Required: No
 
  ** [MaxResults](#API_ListAIWorkloadConfigs_RequestSyntax) **   <a name="sagemaker-ListAIWorkloadConfigs-request-MaxResults"></a>
 The maximum number of AI workload configurations to return in the response.
@@ -79,8 +67,7 @@ Required: No
    "AIWorkloadConfigs": [
       {
          "AIWorkloadConfigArn": "string",
-         "AIWorkloadConfigName": "string",
-         "CreationTime": number
+         "AIWorkloadConfigName": "string"
       }
    ],
    "NextToken": "string"

@@ -29,11 +29,6 @@ The configuration for the file system and the runtime, such as the environment v
 Type: [CodeEditorAppImageConfig](API_CodeEditorAppImageConfig.md) object
 Required: No
 
- ** CreationTime **   <a name="sagemaker-Type-AppImageConfigDetails-CreationTime"></a>
-When the AppImageConfig was created.
-Type: Timestamp
-Required: No
-
  ** JupyterLabAppImageConfig **   <a name="sagemaker-Type-AppImageConfigDetails-JupyterLabAppImageConfig"></a>
 The configuration for the file system and the runtime, such as the environment variables and entry point.
 Type: [JupyterLabAppImageConfig](API_JupyterLabAppImageConfig.md) object
@@ -42,11 +37,6 @@ Required: No
  ** KernelGatewayImageConfig **   <a name="sagemaker-Type-AppImageConfigDetails-KernelGatewayImageConfig"></a>
 The configuration for the file system and kernels in the SageMaker AI image.
 Type: [KernelGatewayImageConfig](API_KernelGatewayImageConfig.md) object
-Required: No
-
- ** LastModifiedTime **   <a name="sagemaker-Type-AppImageConfigDetails-LastModifiedTime"></a>
-When the AppImageConfig was last modified.
-Type: Timestamp
 Required: No
 
 ## See Also

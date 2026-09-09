@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amaz
 
 Titan Text Embeddings V2 is Amazon's second-generation text embeddings model with configurable output dimensions and improved accuracy for retrieval tasks. For more information about model development and performance, see the [model/service card](/ai/responsible-ai/titan-text-embeddings/overview.html).
 + **Model launch date:** Apr 30, 2024
++ **EOL no sooner than:** Apr 30, 2025
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** No sooner than 4/30/2024
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
 + **Model lifecycle:** Active

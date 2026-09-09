@@ -9,6 +9,16 @@ Resource tags help you organize, search, and identify resources in an agentic CX
 
 A resource tag is a custom keyword or label that can be applied to workspace resources. Tags are useful when you want to group resources by purpose, team, environment, audience, status, or any other category that helps builders quickly find and understand them.
 
+For example, you might use tags such as:
++ production
++ development
++ customer
++ internal
++ billing
++ support
++ needs\_review
++ approved
+
 Resource tags are especially helpful in larger workspaces where many applications, flows, knowledge bases, guardrails, Data requests, or other resources may exist.
 
 To access Resource tags, select your username from your workspace menu, choose **Settings**, then select **Resource tags**.

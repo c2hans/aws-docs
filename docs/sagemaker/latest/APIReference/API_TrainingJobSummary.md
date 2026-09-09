@@ -10,11 +10,6 @@ Provides summary information about a training job.
 ## Contents
 <a name="API_TrainingJobSummary_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-TrainingJobSummary-CreationTime"></a>
-A timestamp that shows when the training job was created.
-Type: Timestamp
-Required: Yes
-
  ** TrainingJobArn **   <a name="sagemaker-Type-TrainingJobSummary-TrainingJobArn"></a>
 The Amazon Resource Name (ARN) of the training job.
 Type: String
@@ -35,20 +30,10 @@ Type: String
 Valid Values: `InProgress | Completed | Failed | Stopping | Stopped | Deleting`
 Required: Yes
 
- ** LastModifiedTime **   <a name="sagemaker-Type-TrainingJobSummary-LastModifiedTime"></a>
- Timestamp when the training job was last modified.
-Type: Timestamp
-Required: No
-
  ** SecondaryStatus **   <a name="sagemaker-Type-TrainingJobSummary-SecondaryStatus"></a>
 The secondary status of the training job.
 Type: String
 Valid Values: `Starting | LaunchingMLInstances | PreparingTrainingStack | Downloading | DownloadingTrainingImage | Training | Uploading | Stopping | Stopped | MaxRuntimeExceeded | Completed | Failed | Interrupted | MaxWaitTimeExceeded | Updating | Restarting | Pending`
-Required: No
-
- ** TrainingEndTime **   <a name="sagemaker-Type-TrainingJobSummary-TrainingEndTime"></a>
-A timestamp that shows when the training job ended. This field is set only if the training job has one of the terminal statuses (`Completed`, `Failed`, or `Stopped`).
-Type: Timestamp
 Required: No
 
  ** TrainingPlanArn **   <a name="sagemaker-Type-TrainingJobSummary-TrainingPlanArn"></a>

@@ -59,11 +59,6 @@ Type: String
 Valid Values: `PENDING | IN_PROGRESS | COMPLETED | FAILED | STOPPING | STOPPED | DELETING | DELETED`
 Required: Yes
 
- ** CompletionTime **   <a name="sagemaker-Type-InferenceRecommendationsJob-CompletionTime"></a>
-A timestamp that shows when the job completed.
-Type: Timestamp
-Required: No
-
  ** FailureReason **   <a name="sagemaker-Type-InferenceRecommendationsJob-FailureReason"></a>
 If the job fails, provides information why the job failed.
 Type: String

@@ -18,13 +18,13 @@ You can attach `AWSQuickSetupSSMDeploymentRolePolicy` to your users, groups, and
 <a name="AWSQuickSetupSSMDeploymentRolePolicy-details"></a>
 + **Type**: AWS managed policy
 + **Creation time**: November 15, 2024, 22:53 UTC
-+ **Edited time:** February 12, 2026, 17:58 UTC
++ **Edited time:** September 07, 2026, 12:27 UTC
 + **ARN**: `arn:aws:iam::aws:policy/AWSQuickSetupSSMDeploymentRolePolicy`
 
 ## Policy version
 <a name="AWSQuickSetupSSMDeploymentRolePolicy-version"></a>
 
-**Policy version:** v8 (default)
+**Policy version:** v9 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -68,35 +68,55 @@ The policy's default version is the version that defines the permissions for the
     {
       "Effect" : "Allow",
       "Action" : [
+        "cloudformation:TagResource",
+        "cloudformation:UntagResource"
+      ],
+      "Resource" : [
+        "arn:aws:cloudformation:*:*:stack/StackSet-AWS-QuickSetup-SSM-*"
+      ],
+      "Condition" : {
+        "StringEquals" : {
+          "cloudformation:CreateAction" : [
+            "CreateStack",
+            "UpdateStack",
+            "CreateChangeSet",
+            "ExecuteChangeSet"
+          ]
+        }
+      }
+    },
+    {
+      "Effect" : "Allow",
+      "Action" : [
         "lambda:CreateFunction",
         "lambda:TagResource"
       ],
+      "Resource" : [
+        "arn:aws:lambda:*:*:function:aws-quicksetup-lifecycle*"
+      ],
       "Condition" : {
+        "ForAllValues:StringLike" : {
+          "aws:TagKeys" : [
+            "QuickSetup*"
+          ]
+        },
         "ForAnyValue:StringEquals" : {
           "aws:CalledVia" : [
             "cloudformation.amazonaws.com"
           ]
         },
         "StringEquals" : {
+          "aws:RequestTag/QuickSetupDocument" : [
+            "AWSQuickSetupType-SSM"
+          ],
           "aws:ResourceAccount" : [
             "${aws:PrincipalAccount}"
           ],
           "aws:ResourceTag/QuickSetupDocument" : [
             "AWSQuickSetupType-SSM"
-          ],
-          "aws:RequestTag/QuickSetupDocument" : [
-            "AWSQuickSetupType-SSM"
-          ]
-        },
-        "ForAllValues:StringLike" : {
-          "aws:TagKeys" : [
-            "QuickSetup*"
           ]
         }
-      },
-      "Resource" : [
-        "arn:aws:lambda:*:*:function:aws-quicksetup-lifecycle*"
-      ]
+      }
     },
     {
       "Effect" : "Allow",
@@ -105,6 +125,9 @@ The policy's default version is the version that defines the permissions for the
         "lambda:DeleteFunction",
         "lambda:UpdateFunction*"
       ],
+      "Resource" : [
+        "arn:aws:lambda:*:*:function:aws-quicksetup-lifecycle*"
+      ],
       "Condition" : {
         "ForAnyValue:StringEquals" : {
           "aws:CalledVia" : [
@@ -119,16 +142,14 @@ The policy's default version is the version that defines the permissions for the
             "AWSQuickSetupType-SSM"
           ]
         }
-      },
-      "Resource" : [
-        "arn:aws:lambda:*:*:function:aws-quicksetup-lifecycle*"
-      ]
+      }
     },
     {
       "Effect" : "Allow",
       "Action" : [
         "lambda:GetFunction"
       ],
+      "Resource" : "arn:aws:lambda:*:*:function:aws-quicksetup-lifecycle*",
       "Condition" : {
         "ForAnyValue:StringEquals" : {
           "aws:CalledVia" : "cloudformation.amazonaws.com"
@@ -136,8 +157,7 @@ The policy's default version is the version that defines the permissions for the
         "StringEquals" : {
           "aws:ResourceAccount" : "${aws:PrincipalAccount}"
         }
-      },
-      "Resource" : "arn:aws:lambda:*:*:function:aws-quicksetup-lifecycle*"
+      }
     },
     {
       "Effect" : "Allow",
@@ -149,13 +169,6 @@ The policy's default version is the version that defines the permissions for the
         "ssm:GetDocument",
         "ssm:DescribeDocument"
       ],
-      "Condition" : {
-        "ForAnyValue:StringEquals" : {
-          "aws:CalledVia" : [
-            "cloudformation.amazonaws.com"
-          ]
-        }
-      },
       "Resource" : [
         "arn:aws:ssm:*::document/AWSQuickSetupType-EnableAREX",
         "arn:aws:ssm:*::document/AWSQuickSetupType-EnableDHMC",
@@ -166,7 +179,14 @@ The policy's default version is the version that defines the permissions for the
         "arn:aws:ec2:*:*:instance/*",
         "arn:aws:ssm:*:*:managed-instance/*",
         "arn:aws:ssm:*:*:association/*"
-      ]
+      ],
+      "Condition" : {
+        "ForAnyValue:StringEquals" : {
+          "aws:CalledVia" : [
+            "cloudformation.amazonaws.com"
+          ]
+        }
+      }
     },
     {
       "Sid" : "SSMSLRCreate",
@@ -189,31 +209,31 @@ The policy's default version is the version that defines the permissions for the
         "iam:CreateRole",
         "iam:TagRole"
       ],
+      "Resource" : [
+        "arn:aws:iam::*:role/AWS-QuickSetup-SSM-*",
+        "arn:aws:iam::*:role/AWS-SSM-Remediation*",
+        "arn:aws:iam::*:role/AWS-SSM-Diagnosis*"
+      ],
       "Condition" : {
-        "ForAnyValue:StringEquals" : {
-          "aws:CalledVia" : [
-            "cloudformation.amazonaws.com"
-          ]
-        },
         "ForAllValues:StringLike" : {
           "aws:TagKeys" : [
             "QuickSetup*"
           ]
         },
+        "ForAnyValue:StringEquals" : {
+          "aws:CalledVia" : [
+            "cloudformation.amazonaws.com"
+          ]
+        },
         "StringEquals" : {
-          "aws:ResourceTag/QuickSetupDocument" : [
+          "aws:RequestTag/QuickSetupDocument" : [
             "AWSQuickSetupType-SSM"
           ],
-          "aws:RequestTag/QuickSetupDocument" : [
+          "aws:ResourceTag/QuickSetupDocument" : [
             "AWSQuickSetupType-SSM"
           ]
         }
-      },
-      "Resource" : [
-        "arn:aws:iam::*:role/AWS-QuickSetup-SSM-*",
-        "arn:aws:iam::*:role/AWS-SSM-Remediation*",
-        "arn:aws:iam::*:role/AWS-SSM-Diagnosis*"
-      ]
+      }
     },
     {
       "Effect" : "Allow",
@@ -226,24 +246,27 @@ The policy's default version is the version that defines the permissions for the
         "iam:ListRolePolicies",
         "iam:ListRoleTags"
       ],
+      "Resource" : [
+        "arn:aws:iam::*:role/AWS-QuickSetup-SSM-*",
+        "arn:aws:iam::*:role/AWS-SSM-Remediation*",
+        "arn:aws:iam::*:role/AWS-SSM-Diagnosis*"
+      ],
       "Condition" : {
         "ForAnyValue:StringEquals" : {
           "aws:CalledVia" : [
             "cloudformation.amazonaws.com"
           ]
         }
-      },
-      "Resource" : [
-        "arn:aws:iam::*:role/AWS-QuickSetup-SSM-*",
-        "arn:aws:iam::*:role/AWS-SSM-Remediation*",
-        "arn:aws:iam::*:role/AWS-SSM-Diagnosis*"
-      ]
+      }
     },
     {
       "Effect" : "Allow",
       "Action" : [
         "iam:AttachRolePolicy",
         "iam:DetachRolePolicy"
+      ],
+      "Resource" : [
+        "arn:aws:iam::*:role/AWS-QuickSetup-SSM-LifecycleManagement-*"
       ],
       "Condition" : {
         "ArnEquals" : {
@@ -251,10 +274,7 @@ The policy's default version is the version that defines the permissions for the
             "arn:aws:iam::aws:policy/AWSQuickSetupSSMLifecycleManagementExecutionPolicy"
           ]
         }
-      },
-      "Resource" : [
-        "arn:aws:iam::*:role/AWS-QuickSetup-SSM-LifecycleManagement-*"
-      ]
+      }
     },
     {
       "Effect" : "Allow",
@@ -262,18 +282,22 @@ The policy's default version is the version that defines the permissions for the
         "iam:AttachRolePolicy",
         "iam:DetachRolePolicy"
       ],
+      "Resource" : "arn:aws:iam::*:role/AWS-QuickSetup-SSM-ManageResources-*",
       "Condition" : {
         "ArnEquals" : {
           "iam:PolicyARN" : "arn:aws:iam::aws:policy/AWSQuickSetupSSMManageResourcesExecutionPolicy"
         }
-      },
-      "Resource" : "arn:aws:iam::*:role/AWS-QuickSetup-SSM-ManageResources-*"
+      }
     },
     {
       "Effect" : "Allow",
       "Action" : [
         "iam:AttachRolePolicy",
         "iam:DetachRolePolicy"
+      ],
+      "Resource" : [
+        "arn:aws:iam::*:role/AWS-SSM-Remediation*",
+        "arn:aws:iam::*:role/AWS-SSM-Diagnosis*"
       ],
       "Condition" : {
         "ArnEquals" : {
@@ -286,11 +310,7 @@ The policy's default version is the version that defines the permissions for the
             "arn:aws:iam::aws:policy/AWS-SSM-DiagnosisAutomation-ExecutionRolePolicy"
           ]
         }
-      },
-      "Resource" : [
-        "arn:aws:iam::*:role/AWS-SSM-Remediation*",
-        "arn:aws:iam::*:role/AWS-SSM-Diagnosis*"
-      ]
+      }
     },
     {
       "Effect" : "Allow",
@@ -301,10 +321,6 @@ The policy's default version is the version that defines the permissions for the
         "arn:aws:iam::*:role/AWS-QuickSetup*"
       ],
       "Condition" : {
-        "StringEquals" : {
-          "iam:PassedToService" : "ssm.amazonaws.com",
-          "iam:ResourceTag/QuickSetupDocument" : "AWSQuickSetupType-SSM"
-        },
         "ArnLike" : {
           "iam:AssociatedResourceARN" : [
             "arn:aws:ssm:*::document/AWSQuickSetupType-EnableAREX",
@@ -313,6 +329,10 @@ The policy's default version is the version that defines the permissions for the
             "arn:aws:ssm:*::document/AWS-EnableExplorer",
             "arn:aws:ssm:*:*:association/*"
           ]
+        },
+        "StringEquals" : {
+          "iam:PassedToService" : "ssm.amazonaws.com",
+          "iam:ResourceTag/QuickSetupDocument" : "AWSQuickSetupType-SSM"
         }
       }
     },
@@ -325,14 +345,14 @@ The policy's default version is the version that defines the permissions for the
         "arn:aws:iam::*:role/AWS-QuickSetup-SSM-LifecycleManagement*"
       ],
       "Condition" : {
-        "StringEquals" : {
-          "iam:PassedToService" : "lambda.amazonaws.com",
-          "iam:ResourceTag/QuickSetupDocument" : "AWSQuickSetupType-SSM"
-        },
         "ArnLike" : {
           "iam:AssociatedResourceARN" : [
             "arn:aws:lambda:*:*:function:aws-quicksetup-lifecycle-*"
           ]
+        },
+        "StringEquals" : {
+          "iam:PassedToService" : "lambda.amazonaws.com",
+          "iam:ResourceTag/QuickSetupDocument" : "AWSQuickSetupType-SSM"
         }
       }
     },
@@ -343,17 +363,17 @@ The policy's default version is the version that defines the permissions for the
         "arn:aws:lambda:*:*:function:aws-quicksetup-lifecycle*"
       ],
       "Condition" : {
-        "ForAnyValue:StringEquals" : {
-          "aws:CalledVia" : "cloudformation.amazonaws.com"
-        },
         "ForAllValues:StringLike" : {
           "aws:TagKeys" : "QuickSetup*"
         },
-        "StringLike" : {
-          "aws:RequestTag/QuickSetupDocumentVersionName" : "*"
+        "ForAnyValue:StringEquals" : {
+          "aws:CalledVia" : "cloudformation.amazonaws.com"
         },
         "StringEquals" : {
           "aws:ResourceTag/QuickSetupDocument" : "AWSQuickSetupType-SSM"
+        },
+        "StringLike" : {
+          "aws:RequestTag/QuickSetupDocumentVersionName" : "*"
         }
       }
     },
@@ -368,17 +388,17 @@ The policy's default version is the version that defines the permissions for the
         "arn:aws:iam::*:role/AWS-SSM-Diagnosis*"
       ],
       "Condition" : {
-        "ForAnyValue:StringEquals" : {
-          "aws:CalledVia" : "cloudformation.amazonaws.com"
-        },
         "ForAllValues:StringLike" : {
           "aws:TagKeys" : "QuickSetup*"
         },
-        "StringLike" : {
-          "aws:RequestTag/QuickSetupDocumentVersionName" : "*"
+        "ForAnyValue:StringEquals" : {
+          "aws:CalledVia" : "cloudformation.amazonaws.com"
         },
         "StringEquals" : {
           "aws:ResourceTag/QuickSetupDocument" : "AWSQuickSetupType-SSM"
+        },
+        "StringLike" : {
+          "aws:RequestTag/QuickSetupDocumentVersionName" : "*"
         }
       }
     },
@@ -433,17 +453,17 @@ The policy's default version is the version that defines the permissions for the
         "ssm:AddTagsToResource",
         "ssm:RemoveTagsFromResource"
       ],
+      "Resource" : [
+        "arn:aws:ssm:*:*:automation-execution/*",
+        "arn:aws:ssm:*:*:association/*"
+      ],
       "Condition" : {
         "StringEquals" : {
           "aws:ResourceTag/QuickSetupDocument" : [
             "AWSQuickSetupType-SSM"
           ]
         }
-      },
-      "Resource" : [
-        "arn:aws:ssm:*:*:automation-execution/*",
-        "arn:aws:ssm:*:*:association/*"
-      ]
+      }
     },
     {
       "Effect" : "Allow",
@@ -451,6 +471,10 @@ The policy's default version is the version that defines the permissions for the
         "ssm:DescribeAssociationExecutions",
         "ssm:DescribeAssociationExecutionTargets",
         "ssm:GetAutomationExecution"
+      ],
+      "Resource" : [
+        "arn:aws:ssm:*:*:automation-execution/*",
+        "arn:aws:ssm:*:*:association/*"
       ],
       "Condition" : {
         "ForAnyValue:StringEquals" : {
@@ -463,11 +487,7 @@ The policy's default version is the version that defines the permissions for the
             "AWSQuickSetupType-SSM"
           ]
         }
-      },
-      "Resource" : [
-        "arn:aws:ssm:*:*:automation-execution/*",
-        "arn:aws:ssm:*:*:association/*"
-      ]
+      }
     },
     {
       "Effect" : "Allow",

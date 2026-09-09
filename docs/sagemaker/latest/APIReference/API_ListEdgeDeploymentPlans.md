@@ -12,11 +12,7 @@ Lists all edge deployment plans.
 
 ```
 {
-   "CreationTimeAfter": {{number}},
-   "CreationTimeBefore": {{number}},
    "DeviceFleetNameContains": "{{string}}",
-   "LastModifiedTimeAfter": {{number}},
-   "LastModifiedTimeBefore": {{number}},
    "MaxResults": {{number}},
    "NameContains": "{{string}}",
    "NextToken": "{{string}}",
@@ -32,31 +28,11 @@ For information about the parameters that are common to all actions, see [Common
 
 The request accepts the following data in JSON format.
 
- ** [CreationTimeAfter](#API_ListEdgeDeploymentPlans_RequestSyntax) **   <a name="sagemaker-ListEdgeDeploymentPlans-request-CreationTimeAfter"></a>
-Selects edge deployment plans created after this time.
-Type: Timestamp
-Required: No
-
- ** [CreationTimeBefore](#API_ListEdgeDeploymentPlans_RequestSyntax) **   <a name="sagemaker-ListEdgeDeploymentPlans-request-CreationTimeBefore"></a>
-Selects edge deployment plans created before this time.
-Type: Timestamp
-Required: No
-
  ** [DeviceFleetNameContains](#API_ListEdgeDeploymentPlans_RequestSyntax) **   <a name="sagemaker-ListEdgeDeploymentPlans-request-DeviceFleetNameContains"></a>
 Selects edge deployment plans with a device fleet name containing this name.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 63.
 Pattern: `[a-zA-Z0-9\-]+`
-Required: No
-
- ** [LastModifiedTimeAfter](#API_ListEdgeDeploymentPlans_RequestSyntax) **   <a name="sagemaker-ListEdgeDeploymentPlans-request-LastModifiedTimeAfter"></a>
-Selects edge deployment plans that were last updated after this time.
-Type: Timestamp
-Required: No
-
- ** [LastModifiedTimeBefore](#API_ListEdgeDeploymentPlans_RequestSyntax) **   <a name="sagemaker-ListEdgeDeploymentPlans-request-LastModifiedTimeBefore"></a>
-Selects edge deployment plans that were last updated before this time.
-Type: Timestamp
 Required: No
 
  ** [MaxResults](#API_ListEdgeDeploymentPlans_RequestSyntax) **   <a name="sagemaker-ListEdgeDeploymentPlans-request-MaxResults"></a>
@@ -98,14 +74,12 @@ Required: No
 {
    "EdgeDeploymentPlanSummaries": [
       {
-         "CreationTime": number,
          "DeviceFleetName": "string",
          "EdgeDeploymentFailed": number,
          "EdgeDeploymentPending": number,
          "EdgeDeploymentPlanArn": "string",
          "EdgeDeploymentPlanName": "string",
-         "EdgeDeploymentSuccess": number,
-         "LastModifiedTime": number
+         "EdgeDeploymentSuccess": number
       }
    ],
    "NextToken": "string"

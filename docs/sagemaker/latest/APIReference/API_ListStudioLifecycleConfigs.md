@@ -13,11 +13,7 @@ Lists the Amazon SageMaker AI Studio Lifecycle Configurations in your AWS Accoun
 ```
 {
    "AppTypeEquals": "{{string}}",
-   "CreationTimeAfter": {{number}},
-   "CreationTimeBefore": {{number}},
    "MaxResults": {{number}},
-   "ModifiedTimeAfter": {{number}},
-   "ModifiedTimeBefore": {{number}},
    "NameContains": "{{string}}",
    "NextToken": "{{string}}",
    "SortBy": "{{string}}",
@@ -38,30 +34,10 @@ Type: String
 Valid Values: `JupyterServer | KernelGateway | CodeEditor | JupyterLab`
 Required: No
 
- ** [CreationTimeAfter](#API_ListStudioLifecycleConfigs_RequestSyntax) **   <a name="sagemaker-ListStudioLifecycleConfigs-request-CreationTimeAfter"></a>
-A filter that returns only Lifecycle Configurations created on or after the specified time.
-Type: Timestamp
-Required: No
-
- ** [CreationTimeBefore](#API_ListStudioLifecycleConfigs_RequestSyntax) **   <a name="sagemaker-ListStudioLifecycleConfigs-request-CreationTimeBefore"></a>
-A filter that returns only Lifecycle Configurations created on or before the specified time.
-Type: Timestamp
-Required: No
-
  ** [MaxResults](#API_ListStudioLifecycleConfigs_RequestSyntax) **   <a name="sagemaker-ListStudioLifecycleConfigs-request-MaxResults"></a>
 The total number of items to return in the response. If the total number of items available is more than the value specified, a `NextToken` is provided in the response. To resume pagination, provide the `NextToken` value in the as part of a subsequent call. The default value is 10.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 100.
-Required: No
-
- ** [ModifiedTimeAfter](#API_ListStudioLifecycleConfigs_RequestSyntax) **   <a name="sagemaker-ListStudioLifecycleConfigs-request-ModifiedTimeAfter"></a>
-A filter that returns only Lifecycle Configurations modified after the specified time.
-Type: Timestamp
-Required: No
-
- ** [ModifiedTimeBefore](#API_ListStudioLifecycleConfigs_RequestSyntax) **   <a name="sagemaker-ListStudioLifecycleConfigs-request-ModifiedTimeBefore"></a>
-A filter that returns only Lifecycle Configurations modified before the specified time.
-Type: Timestamp
 Required: No
 
  ** [NameContains](#API_ListStudioLifecycleConfigs_RequestSyntax) **   <a name="sagemaker-ListStudioLifecycleConfigs-request-NameContains"></a>
@@ -98,8 +74,6 @@ Required: No
    "NextToken": "string",
    "StudioLifecycleConfigs": [
       {
-         "CreationTime": number,
-         "LastModifiedTime": number,
          "StudioLifecycleConfigAppType": "string",
          "StudioLifecycleConfigArn": "string",
          "StudioLifecycleConfigName": "string"

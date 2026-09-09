@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-zai-
 
 GLM 5 is a frontier-class, general-purpose large language model optimized for complex systems engineering and long-horizon agentic tasks. It builds on the GLM 4.5 agent-centric lineage and is designed to support multi-step reasoning, math (including AIME-style benchmarks), advanced coding, and tool-augmented workflows, with long context support suitable for sophisticated agents and enterprise applications. For more information about model development and performance, see the [model card](https://huggingface.co/zai-org/GLM-5-FP8).
 + **Model launch date:** Feb 11, 2026
++ **EOL no sooner than:** Feb 11, 2027
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://github.com/zai-org/GLM-5/blob/main/LICENSE)
 + **Model lifecycle:** Active

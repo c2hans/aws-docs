@@ -50,21 +50,21 @@ To enroll an existing instance, populate the specific UEFI firmware variables wi
    ```
 
 **Note**
-Amazon Linux AMIs currently don't support Nitro Trusted Platform Module (NitroTPM). If you need NitroTPM in addition to UEFI Secure Boot, use the information in the following section.
+Amazon Linux AMIs currently don't enable Nitro Trusted Platform Module (NitroTPM) by default with `BootMode` set to `uefi-preferred`. If you need NitroTPM in addition to UEFI Secure Boot, use the information in the following section.
 
 ## Register image from snapshot
 <a name="secure-boot-amis"></a>
 
 When registering an AMI from a snapshot of an Amazon EBS root volume using the Amazon EC2 `register-image` API, you can provision the AMI with a binary blob that contains the state of the UEFI variable store. By providing the AL2023 `UefiData`, you enable UEFI Secure Boot and don't need to follow the steps in the previous section.
 
-For more information about creating and using a binary blob, see [Create a binary blob containing a pre-filled variable store](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-ami-with-uefi-secure-boot.html#uefi-secure-boot-optionB) in the *Amazon EC2 User Guide*.
-
 AL2023 provides a pre-built binary blob that can be used directly on Amazon EC2 instances. The binary blob is located in `/usr/share/amazon-linux-sb-keys/uefi.vars` on an running instance. This blob is provided by the `amazon-linux-sb-keys` RPM package which is installed by default on AL2023 AMIs starting with release 2023.1.
 
 **Note**
 To ensure that you are using the latest version of keys and revocations, use the blob from the same release of AL2023 that you use to create the AMI.
 
-When registering an image, we recommend using the `BootMode` parameter of the [`RegisterImage`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RegisterImage.html) API set to `uefi`. This allows you to enable NitroTPM by setting the `TpmSupport` parameter to `v2.0`. Also, setting `BootMode` to `uefi` ensures that UEFI Secure Boot is enabled and can't be disabled by accident when switching to an instance type that doesn't support UEFI.
+If you would like to add custom binary blobs, use the keys in `/usr/share/amazon-linux-sb-keys`. Find more information about creating and using binary blobs at [Create a binary blob containing a pre-filled variable store](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-ami-with-uefi-secure-boot.html#uefi-secure-boot-optionB) in the *Amazon EC2 User Guide*.
+
+When registering an image, we recommend using the `BootMode` parameter of the [`RegisterImage`](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RegisterImage.html) API set to `uefi` instead of `uefi-preferred`. This allows you to enable NitroTPM by setting the `TpmSupport` parameter to `v2.0`. Also, setting `BootMode` to `uefi` prevents boot on BIOS instances, thus ensures that UEFI Secure Boot can't be disabled by accident when switching to an instance type that doesn't support UEFI.
 
 For more information about NitroTPM, see [NitroTPM for Amazon EC2 instances ](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/nitrotpm.html) in the *Amazon EC2 User Guide*.
 
@@ -73,7 +73,7 @@ For more information about NitroTPM, see [NitroTPM for Amazon EC2 instances ](ht
 
 It may be necessary for Amazon Linux to distribute a new version of the bootloader `grub2` or the Linux kernel signed with updated keys. In that case, the old key may need to be revoked to prevent the chance of allowing exploitable bugs from previous versions of the bootloader to bypass the UEFI Secure Boot verification process.
 
-Package updates to the `grub2`or `kernel` packages always automatically update the list of revocations into the UEFI variable store of the running instance. This means that with UEFI Secure Boot enabled, you can no longer run the old version of a package after installing a security update for the package.
+Package updates to the `grub2`or `kernel` packages always automatically update the list of revocations into the UEFI variable store of the running instance. This means that with UEFI Secure Boot enabled, you might no longer be able to run the old version of a package after installing a security update for the package.
 
 ## How UEFI Secure Boot works on AL2023
 <a name="shim-use"></a>

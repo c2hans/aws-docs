@@ -169,6 +169,7 @@ The following tables show which Amazon Bedrock endpoints support each model, org
 
 | Model name | `bedrock-runtime` | `bedrock-mantle` |
 | --- | --- | --- |
+| [GPT-6 Astra](model-card-openai-gpt-6-astra.md) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
 | [GPT-5.6 Sol](model-card-openai-gpt-56-sol.md) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
 | [Daybreak Red: GPT-5.6 Cyber](model-card-openai-gpt-56-cyber.md) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
 | [Daybreak Blue: GPT-5.6 Sol](model-card-openai-gpt-daybreak-blue-56-sol.md) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |

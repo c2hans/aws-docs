@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amaz
 
 Titan Image Generator G1 v2 is Amazon's image generation model that creates and edits realistic images from text prompts with built-in watermarking. For more information about model development and performance, see the [model/service card](/ai/responsible-ai/titan-text-embeddings/overview.html).
 + **Model launch date:** Nov 29, 2023
++ **EOL no sooner than:** Nov 29, 2024
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** June 30, 2026
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
 + **Model lifecycle:** Legacy

@@ -10,11 +10,6 @@ The summary of the pipeline version.
 ## Contents
 <a name="API_PipelineVersionSummary_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-PipelineVersionSummary-CreationTime"></a>
-The creation time of the pipeline version.
-Type: Timestamp
-Required: No
-
  ** LastExecutionPipelineExecutionArn **   <a name="sagemaker-Type-PipelineVersionSummary-LastExecutionPipelineExecutionArn"></a>
 The Amazon Resource Name (ARN) of the most recent pipeline execution created from this pipeline version.
 Type: String

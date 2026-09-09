@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-open
 
 GPT OSS Safeguard 20B is OpenAI's compact 20-billion parameter open-source safety model for lightweight content moderation and guardrail tasks. For more information about model development and performance, see the [model/service card](https://cdn.openai.com/pdf/419b6906-9da6-406c-a19d-1bb078ac7637/oai_gpt-oss_model_card.pdf).
 + **Model launch date:** Oct 29, 2025
++ **EOL no sooner than:** Oct 29, 2026
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://huggingface.co/openai/gpt-oss-safeguard-20b/blob/main/LICENSE)
 + **Model lifecycle:** Active

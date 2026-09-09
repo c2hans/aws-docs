@@ -16,11 +16,6 @@ Type: String
 Valid Values: `InAlert | OK`
 Required: Yes
 
- ** CreationTime **   <a name="sagemaker-Type-MonitoringAlertHistorySummary-CreationTime"></a>
-A timestamp that indicates when the first alert transition occurred in an alert history. An alert transition can be from status `InAlert` to `OK`, or from `OK` to `InAlert`.
-Type: Timestamp
-Required: Yes
-
  ** MonitoringAlertName **   <a name="sagemaker-Type-MonitoringAlertHistorySummary-MonitoringAlertName"></a>
 The name of a monitoring alert.
 Type: String

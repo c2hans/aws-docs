@@ -16,11 +16,7 @@ The following operations are related to `ListJobs`:
 
 ```
 {
-   "CreationTimeAfter": {{number}},
-   "CreationTimeBefore": {{number}},
    "JobCategory": "{{string}}",
-   "LastModifiedTimeAfter": {{number}},
-   "LastModifiedTimeBefore": {{number}},
    "MaxResults": {{number}},
    "NameContains": "{{string}}",
    "NextToken": "{{string}}",
@@ -37,31 +33,11 @@ For information about the parameters that are common to all actions, see [Common
 
 The request accepts the following data in JSON format.
 
- ** [CreationTimeAfter](#API_ListJobs_RequestSyntax) **   <a name="sagemaker-ListJobs-request-CreationTimeAfter"></a>
-A filter that returns only jobs created after the specified time.
-Type: Timestamp
-Required: No
-
- ** [CreationTimeBefore](#API_ListJobs_RequestSyntax) **   <a name="sagemaker-ListJobs-request-CreationTimeBefore"></a>
-A filter that returns only jobs created before the specified time.
-Type: Timestamp
-Required: No
-
  ** [JobCategory](#API_ListJobs_RequestSyntax) **   <a name="sagemaker-ListJobs-request-JobCategory"></a>
 The category of jobs to list.
 Type: String
 Valid Values: `AgentRFT | AgentRFTEvaluation`
 Required: Yes
-
- ** [LastModifiedTimeAfter](#API_ListJobs_RequestSyntax) **   <a name="sagemaker-ListJobs-request-LastModifiedTimeAfter"></a>
-A filter that returns only jobs modified after the specified time.
-Type: Timestamp
-Required: No
-
- ** [LastModifiedTimeBefore](#API_ListJobs_RequestSyntax) **   <a name="sagemaker-ListJobs-request-LastModifiedTimeBefore"></a>
-A filter that returns only jobs modified before the specified time.
-Type: Timestamp
-Required: No
 
  ** [MaxResults](#API_ListJobs_RequestSyntax) **   <a name="sagemaker-ListJobs-request-MaxResults"></a>
 The maximum number of jobs to return in the response. The default value is 50.
@@ -108,14 +84,11 @@ Required: No
 {
    "JobSummaries": [
       {
-         "CreationTime": number,
-         "EndTime": number,
          "JobArn": "string",
          "JobCategory": "string",
          "JobName": "string",
          "JobSecondaryStatus": "string",
-         "JobStatus": "string",
-         "LastModifiedTime": number
+         "JobStatus": "string"
       }
    ],
    "NextToken": "string"

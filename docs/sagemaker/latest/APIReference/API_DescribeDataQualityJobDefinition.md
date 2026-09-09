@@ -35,7 +35,6 @@ Required: Yes
 
 ```
 {
-   "CreationTime": number,
    "DataQualityAppSpecification": {
       "ContainerArguments": [ "string" ],
       "ContainerEntrypoint": [ "string" ],
@@ -136,10 +135,6 @@ Required: Yes
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
-
- ** [CreationTime](#API_DescribeDataQualityJobDefinition_ResponseSyntax) **   <a name="sagemaker-DescribeDataQualityJobDefinition-response-CreationTime"></a>
-The time that the data quality monitoring job definition was created.
-Type: Timestamp
 
  ** [DataQualityAppSpecification](#API_DescribeDataQualityJobDefinition_ResponseSyntax) **   <a name="sagemaker-DescribeDataQualityJobDefinition-response-DataQualityAppSpecification"></a>
 Information about the container that runs the data quality monitoring job.

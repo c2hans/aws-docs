@@ -181,7 +181,7 @@ This example illustrates one usage of CreateBucketMetadataConfiguration.
       "Resource": ["arn:aws:s3:::amzn-s3-demo-bucket/*"],
       "Condition": {
         "StringEquals": {
-          "aws:ResourceAccount": "{{Account}}"
+          "aws:ResourceAccount": "123456789012"
         }
       }
     },
@@ -195,7 +195,7 @@ This example illustrates one usage of CreateBucketMetadataConfiguration.
       "Resource": ["arn:aws:s3:::amzn-s3-demo-bucket"],
       "Condition": {
         "StringEquals": {
-          "aws:ResourceAccount": "{{Account}}"
+          "aws:ResourceAccount": "123456789012"
         }
       }
     },
@@ -206,17 +206,17 @@ This example illustrates one usage of CreateBucketMetadataConfiguration.
       "Condition": {
         "StringLike": {
           "kms:ViaService": [
-            "s3.{{Region}}.amazonaws.com"
+            "s3.us-east-1.amazonaws.com"
           ]
         },
         "ArnLike": {
           "kms:EncryptionContext:aws:s3:arn": [
-            "arn:aws:s3:::{{BucketName}}",
-            "arn:aws:s3:::{{BucketName}}/*"
+            "arn:aws:s3:::amzn-s3-demo-bucket",
+            "arn:aws:s3:::amzn-s3-demo-bucket/*"
           ]
         }
       },
-      "Resource": ["arn:aws:kms:{{Region}}:{{Account}}:key/{{KmsKeyId}}"]
+      "Resource": ["arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab"]
     }
   ]
 }

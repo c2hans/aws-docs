@@ -13,9 +13,9 @@ Choose from the following options:
 + **Enable Time off request for this staffing group**: This option enables the time off management feature for this group of agents and supervisors. Time offs are automatically approved or rejected based on the availability of [time off allowance](config-group-allowance-to.md).
 
   After you choose this option:
-  + Agents can see the **Time off** widget on the agent application. (Agents also require the **Agent application schedule calendar - Edit** security profile permission to see the widget.)
+  + Agents can see the **Time off** widget on the agent workspace. (Agents also require the **Agent application schedule calendar - Edit** security profile permission to see the widget.)
 
-    The following image shows an example of the **Time off **widget on the agent application.
+    The following image shows an example of the **Time off **widget on the agent workspace.
 ![The schedule calendar view, the request time off section for agents.](https://docs.aws.amazon.com/connect/latest/adminguide/images/create-time-off-to-agent.png)
   + Supervisors can see the **Make request** button on the **Published schedule calendar** page. Pending and completed requests are visible in the [request drawer](manager-agent-view-request-drawer-to.md).
 

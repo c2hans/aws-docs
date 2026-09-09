@@ -29,11 +29,6 @@ Type: Array of [PendingProductionVariantSummary](API_PendingProductionVariantSum
 Array Members: Minimum number of 1 item.
 Required: No
 
- ** StartTime **   <a name="sagemaker-Type-PendingDeploymentSummary-StartTime"></a>
-The start time of the deployment.
-Type: Timestamp
-Required: No
-
 ## See Also
 <a name="API_PendingDeploymentSummary_SeeAlso"></a>
 

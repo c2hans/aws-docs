@@ -31,13 +31,13 @@ By placing analytics tags at strategic points in a flow, you can better understa
 
 For example:
 
-| Tag placement | What it tells you |
-| --- | --- |
-| First node in a booking flow | How many users begin the booking process. |
-| Confirmation node | How many users complete the booking. |
-| Fallback or recovery path | How often users hit an error or unsupported path. |
-| Human handoff node | How often users request or require escalation. |
-| Decline path after an offer | How often users reject an offer. |
+| Tag | Where you might place it | What it helps track |
+| --- | --- | --- |
+| booking\_started | First node in a booking flow | How many users begin the booking process. |
+| booking\_completed | Confirmation node | How many users complete the booking. |
+| fallback\_reached | Fallback or recovery path | How often users hit an error or unsupported path. |
+| escalation\_requested | Human handoff node | How often users request or require escalation. |
+| offer\_declined | Decline path after an offer | How often users reject an offer. |
 
 These tags can help you identify completion rates, drop-off points, repeated issues, and opportunities to improve the experience.
 

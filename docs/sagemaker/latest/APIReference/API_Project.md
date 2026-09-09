@@ -15,19 +15,9 @@ Who created the project.
 Type: [UserContext](API_UserContext.md) object
 Required: No
 
- ** CreationTime **   <a name="sagemaker-Type-Project-CreationTime"></a>
-A timestamp specifying when the project was created.
-Type: Timestamp
-Required: No
-
  ** LastModifiedBy **   <a name="sagemaker-Type-Project-LastModifiedBy"></a>
 Information about the user who created or modified a SageMaker resource.
 Type: [UserContext](API_UserContext.md) object
-Required: No
-
- ** LastModifiedTime **   <a name="sagemaker-Type-Project-LastModifiedTime"></a>
-A timestamp container for when the project was last modified.
-Type: Timestamp
 Required: No
 
  ** ProjectArn **   <a name="sagemaker-Type-Project-ProjectArn"></a>

@@ -35,12 +35,10 @@ Required: Yes
 
 ```
 {
-   "CreatedAt": number,
    "ExportArtifacts": {
       "S3ExportArtifacts": "string"
    },
    "FailureReason": "string",
-   "LastModifiedAt": number,
    "ModelCardExportJobArn": "string",
    "ModelCardExportJobName": "string",
    "ModelCardName": "string",
@@ -59,10 +57,6 @@ If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
- ** [CreatedAt](#API_DescribeModelCardExportJob_ResponseSyntax) **   <a name="sagemaker-DescribeModelCardExportJob-response-CreatedAt"></a>
-The date and time that the model export job was created.
-Type: Timestamp
-
  ** [ExportArtifacts](#API_DescribeModelCardExportJob_ResponseSyntax) **   <a name="sagemaker-DescribeModelCardExportJob-response-ExportArtifacts"></a>
 The exported model card artifacts.
 Type: [ModelCardExportArtifacts](API_ModelCardExportArtifacts.md) object
@@ -71,10 +65,6 @@ Type: [ModelCardExportArtifacts](API_ModelCardExportArtifacts.md) object
 The failure reason if the model export job fails.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1024.
-
- ** [LastModifiedAt](#API_DescribeModelCardExportJob_ResponseSyntax) **   <a name="sagemaker-DescribeModelCardExportJob-response-LastModifiedAt"></a>
-The date and time that the model export job was last modified.
-Type: Timestamp
 
  ** [ModelCardExportJobArn](#API_DescribeModelCardExportJob_ResponseSyntax) **   <a name="sagemaker-DescribeModelCardExportJob-response-ModelCardExportJobArn"></a>
 The Amazon Resource Name (ARN) of the model card export job.

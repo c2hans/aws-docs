@@ -37,7 +37,6 @@ Required: Yes
 {
    "AutoMLJobArn": "string",
    "BatchStrategy": "string",
-   "CreationTime": number,
    "DataCaptureConfig": {
       "DestinationS3Uri": "string",
       "GenerateInferenceId": boolean,
@@ -66,7 +65,6 @@ Required: Yes
       "InvocationsTimeoutInSeconds": number
    },
    "ModelName": "string",
-   "TransformEndTime": number,
    "TransformInput": {
       "CompressionType": "string",
       "ContentType": "string",
@@ -92,8 +90,7 @@ Required: Yes
       "InstanceType": "string",
       "TransformAmiVersion": "string",
       "VolumeKmsKeyId": "string"
-   },
-   "TransformStartTime": number
+   }
 }
 ```
 
@@ -115,10 +112,6 @@ Specifies the number of records to include in a mini-batch for an HTTP inference
 To enable the batch strategy, you must set `SplitType` to `Line`, `RecordIO`, or `TFRecord`.
 Type: String
 Valid Values: `MultiRecord | SingleRecord`
-
- ** [CreationTime](#API_DescribeTransformJob_ResponseSyntax) **   <a name="sagemaker-DescribeTransformJob-response-CreationTime"></a>
-A timestamp that shows when the transform Job was created.
-Type: Timestamp
 
  ** [DataCaptureConfig](#API_DescribeTransformJob_ResponseSyntax) **   <a name="sagemaker-DescribeTransformJob-response-DataCaptureConfig"></a>
 Configuration to control how SageMaker captures inference data.
@@ -175,10 +168,6 @@ Type: String
 Length Constraints: Minimum length of 0. Maximum length of 63.
 Pattern: `[a-zA-Z0-9]([\-a-zA-Z0-9]*[a-zA-Z0-9])?`
 
- ** [TransformEndTime](#API_DescribeTransformJob_ResponseSyntax) **   <a name="sagemaker-DescribeTransformJob-response-TransformEndTime"></a>
-Indicates when the transform job has been completed, or has stopped or failed. You are billed for the time interval between this time and the value of `TransformStartTime`.
-Type: Timestamp
-
  ** [TransformInput](#API_DescribeTransformJob_ResponseSyntax) **   <a name="sagemaker-DescribeTransformJob-response-TransformInput"></a>
 Describes the dataset to be transformed and the Amazon S3 location where it is stored.
 Type: [TransformInput](API_TransformInput.md) object
@@ -207,10 +196,6 @@ Type: [TransformOutput](API_TransformOutput.md) object
  ** [TransformResources](#API_DescribeTransformJob_ResponseSyntax) **   <a name="sagemaker-DescribeTransformJob-response-TransformResources"></a>
 Describes the resources, including ML instance types and ML instance count, to use for the transform job.
 Type: [TransformResources](API_TransformResources.md) object
-
- ** [TransformStartTime](#API_DescribeTransformJob_ResponseSyntax) **   <a name="sagemaker-DescribeTransformJob-response-TransformStartTime"></a>
-Indicates when the transform job starts on ML instances. You are billed for the time interval between this time and the value of `TransformEndTime`.
-Type: Timestamp
 
 ## Errors
 <a name="API_DescribeTransformJob_Errors"></a>

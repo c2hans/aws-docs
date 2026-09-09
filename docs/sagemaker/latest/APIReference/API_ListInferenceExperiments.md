@@ -12,10 +12,6 @@ Returns the list of all inference experiments.
 
 ```
 {
-   "CreationTimeAfter": {{number}},
-   "CreationTimeBefore": {{number}},
-   "LastModifiedTimeAfter": {{number}},
-   "LastModifiedTimeBefore": {{number}},
    "MaxResults": {{number}},
    "NameContains": "{{string}}",
    "NextToken": "{{string}}",
@@ -32,26 +28,6 @@ Returns the list of all inference experiments.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
-
- ** [CreationTimeAfter](#API_ListInferenceExperiments_RequestSyntax) **   <a name="sagemaker-ListInferenceExperiments-request-CreationTimeAfter"></a>
-Selects inference experiments which were created after this timestamp.
-Type: Timestamp
-Required: No
-
- ** [CreationTimeBefore](#API_ListInferenceExperiments_RequestSyntax) **   <a name="sagemaker-ListInferenceExperiments-request-CreationTimeBefore"></a>
-Selects inference experiments which were created before this timestamp.
-Type: Timestamp
-Required: No
-
- ** [LastModifiedTimeAfter](#API_ListInferenceExperiments_RequestSyntax) **   <a name="sagemaker-ListInferenceExperiments-request-LastModifiedTimeAfter"></a>
-Selects inference experiments which were last modified after this timestamp.
-Type: Timestamp
-Required: No
-
- ** [LastModifiedTimeBefore](#API_ListInferenceExperiments_RequestSyntax) **   <a name="sagemaker-ListInferenceExperiments-request-LastModifiedTimeBefore"></a>
-Selects inference experiments which were last modified before this timestamp.
-Type: Timestamp
-Required: No
 
  ** [MaxResults](#API_ListInferenceExperiments_RequestSyntax) **   <a name="sagemaker-ListInferenceExperiments-request-MaxResults"></a>
 The maximum number of results to select.
@@ -104,15 +80,10 @@ Required: No
 {
    "InferenceExperiments": [
       {
-         "CompletionTime": number,
-         "CreationTime": number,
          "Description": "string",
-         "LastModifiedTime": number,
          "Name": "string",
          "RoleArn": "string",
          "Schedule": {
-            "EndTime": number,
-            "StartTime": number
          },
          "Status": "string",
          "StatusReason": "string",

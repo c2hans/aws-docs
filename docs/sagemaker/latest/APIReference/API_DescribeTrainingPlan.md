@@ -40,7 +40,6 @@ Required: Yes
    "CurrencyCode": "string",
    "DurationHours": number,
    "DurationMinutes": number,
-   "EndTime": number,
    "InUseInstanceCount": number,
    "ReservedCapacitySummaries": [
       {
@@ -48,18 +47,15 @@ Required: Yes
          "AvailabilityZoneId": "string",
          "DurationHours": number,
          "DurationMinutes": number,
-         "EndTime": number,
          "InstanceType": "string",
          "ReservedCapacityArn": "string",
          "ReservedCapacityType": "string",
-         "StartTime": number,
          "Status": "string",
          "TotalInstanceCount": number,
          "UltraServerCount": number,
          "UltraServerType": "string"
       }
    ],
-   "StartTime": number,
    "Status": "string",
    "StatusMessage": "string",
    "TargetResources": [ "string" ],
@@ -103,10 +99,6 @@ The additional minutes beyond whole hours in the total duration for this trainin
 Type: Long
 Valid Range: Minimum value of 0. Maximum value of 59.
 
- ** [EndTime](#API_DescribeTrainingPlan_ResponseSyntax) **   <a name="sagemaker-DescribeTrainingPlan-response-EndTime"></a>
-The end time of the training plan.
-Type: Timestamp
-
  ** [InUseInstanceCount](#API_DescribeTrainingPlan_ResponseSyntax) **   <a name="sagemaker-DescribeTrainingPlan-response-InUseInstanceCount"></a>
 The number of instances currently in use from this training plan.
 Type: Integer
@@ -116,10 +108,6 @@ Valid Range: Minimum value of 0.
 The list of Reserved Capacity providing the underlying compute resources of the plan.
 Type: Array of [ReservedCapacitySummary](API_ReservedCapacitySummary.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 5 items.
-
- ** [StartTime](#API_DescribeTrainingPlan_ResponseSyntax) **   <a name="sagemaker-DescribeTrainingPlan-response-StartTime"></a>
-The start time of the training plan.
-Type: Timestamp
 
  ** [Status](#API_DescribeTrainingPlan_ResponseSyntax) **   <a name="sagemaker-DescribeTrainingPlan-response-Status"></a>
 The current status of the training plan (e.g., Pending, Active, Expired). To see the complete list of status values available for a training plan, refer to the `Status` attribute within the ` [TrainingPlanSummary](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_TrainingPlanSummary.html) ` object.

@@ -10,11 +10,6 @@ Provides a summary of a transform job. Multiple `TransformJobSummary` objects ar
 ## Contents
 <a name="API_TransformJobSummary_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-TransformJobSummary-CreationTime"></a>
-A timestamp that shows when the transform Job was created.
-Type: Timestamp
-Required: Yes
-
  ** TransformJobArn **   <a name="sagemaker-Type-TransformJobSummary-TransformJobArn"></a>
 The Amazon Resource Name (ARN) of the transform job.
 Type: String
@@ -39,16 +34,6 @@ Required: Yes
 If the transform job failed, the reason it failed.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1024.
-Required: No
-
- ** LastModifiedTime **   <a name="sagemaker-Type-TransformJobSummary-LastModifiedTime"></a>
-Indicates when the transform job was last modified.
-Type: Timestamp
-Required: No
-
- ** TransformEndTime **   <a name="sagemaker-Type-TransformJobSummary-TransformEndTime"></a>
-Indicates when the transform job ends on compute instances. For successful jobs and stopped jobs, this is the exact time recorded after the results are uploaded. For failed jobs, this is when Amazon SageMaker detected that the job failed.
-Type: Timestamp
 Required: No
 
 ## See Also

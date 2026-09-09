@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-qwen
 
 Qwen3 Coder 30B A3B is Qwen's compact coding mixture-of-experts model with 30B total and 3B active parameters for efficient code generation. For more information about model development and performance, see the [model/service card](https://qwen.ai/blog?id=qwen3-coder).
 + **Model launch date:** Jul 31, 2025
++ **EOL no sooner than:** Jul 31, 2026
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/main/LICENSE)
 + **Model lifecycle:** Active

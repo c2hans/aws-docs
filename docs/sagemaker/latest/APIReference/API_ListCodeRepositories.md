@@ -14,8 +14,6 @@ Gets a list of the Git repositories in your account.
 {
    "CreationTimeAfter": {{number}},
    "CreationTimeBefore": {{number}},
-   "LastModifiedTimeAfter": {{number}},
-   "LastModifiedTimeBefore": {{number}},
    "MaxResults": {{number}},
    "NameContains": "{{string}}",
    "NextToken": "{{string}}",
@@ -38,16 +36,6 @@ Required: No
 
  ** [CreationTimeBefore](#API_ListCodeRepositories_RequestSyntax) **   <a name="sagemaker-ListCodeRepositories-request-CreationTimeBefore"></a>
 A filter that returns only Git repositories that were created before the specified time.
-Type: Timestamp
-Required: No
-
- ** [LastModifiedTimeAfter](#API_ListCodeRepositories_RequestSyntax) **   <a name="sagemaker-ListCodeRepositories-request-LastModifiedTimeAfter"></a>
-A filter that returns only Git repositories that were last modified after the specified time.
-Type: Timestamp
-Required: No
-
- ** [LastModifiedTimeBefore](#API_ListCodeRepositories_RequestSyntax) **   <a name="sagemaker-ListCodeRepositories-request-LastModifiedTimeBefore"></a>
-A filter that returns only Git repositories that were last modified before the specified time.
 Type: Timestamp
 Required: No
 

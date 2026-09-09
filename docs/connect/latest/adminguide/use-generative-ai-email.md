@@ -37,7 +37,7 @@ The [EmailResponse agent](default-ai-system.md) automatically suggests relevant 
 + [Knowledge articles](ai-agent-initial-setup.md#enable-ai-agents-step-3)
 + [Step-by-step guides associated with the knowledge article](integrate-guides-with-ai-agents.md)
 
-The agent can choose **Sources** to view the original knowledge base articles from which the recommendation came from and choose the specific knowledge base article link to open a preview of it in their agent workspace.
+The agent can choose **Sources** to view the original knowledge base articles from which the recommendation came from and choose the specific knowledge base article link to open a preview of it in the agent workspace.
 
 The EmailResponse and EmailQueryReformulation prompts are used to generate knowledge base and guide recommendations.
 

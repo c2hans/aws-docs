@@ -10,11 +10,6 @@ A schedule for a model monitoring job. For information about model monitor, see 
 ## Contents
 <a name="API_MonitoringSchedule_Contents"></a>
 
- ** CreationTime **   <a name="sagemaker-Type-MonitoringSchedule-CreationTime"></a>
-The time that the monitoring schedule was created.
-Type: Timestamp
-Required: No
-
  ** EndpointName **   <a name="sagemaker-Type-MonitoringSchedule-EndpointName"></a>
 The endpoint that hosts the model being monitored.
 Type: String
@@ -26,11 +21,6 @@ Required: No
 If the monitoring schedule failed, the reason it failed.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1024.
-Required: No
-
- ** LastModifiedTime **   <a name="sagemaker-Type-MonitoringSchedule-LastModifiedTime"></a>
-The last time the monitoring schedule was changed.
-Type: Timestamp
 Required: No
 
  ** LastMonitoringExecutionSummary **   <a name="sagemaker-Type-MonitoringSchedule-LastMonitoringExecutionSummary"></a>

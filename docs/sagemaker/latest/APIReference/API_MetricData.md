@@ -17,11 +17,6 @@ Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `.+`
 Required: No
 
- ** Timestamp **   <a name="sagemaker-Type-MetricData-Timestamp"></a>
-The date and time that the algorithm emitted the metric.
-Type: Timestamp
-Required: No
-
  ** Value **   <a name="sagemaker-Type-MetricData-Value"></a>
 The value of the metric.
 Type: Float

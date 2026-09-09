@@ -13,11 +13,15 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-open
 
 GPT-5.5 is OpenAI's most capable model, designed for advanced coding, research, analysis, software operation, document workflows, and long-running agentic tasks. GPT-5.5 can understand open-ended goals, use tools, reason across longer workflows, navigate ambiguity, and carry complex tasks through to completion with less orchestration. For more information about model development and performance, see the [model/service card](https://deploymentsafety.openai.com/gpt-5-5/gpt-5-5.pdf).
 + **Model launch date:** June 1, 2026
++ **EOL no sooner than:** June 1, 2027
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
 + **Model lifecycle:** Active
 + **Context window:** 272K tokens
 + **Max output tokens:** N/A
++ **Marketplace product ID:** `prod-indw4nwkcsyua`
 
 | **Input Modalities** | **Output Modalities** |
 | --- | --- |

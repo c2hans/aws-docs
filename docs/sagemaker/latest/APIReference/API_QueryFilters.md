@@ -10,31 +10,11 @@ A set of filters to narrow the set of lineage entities connected to the `StartAr
 ## Contents
 <a name="API_QueryFilters_Contents"></a>
 
- ** CreatedAfter **   <a name="sagemaker-Type-QueryFilters-CreatedAfter"></a>
-Filter the lineage entities connected to the `StartArn`(s) after the create date.
-Type: Timestamp
-Required: No
-
- ** CreatedBefore **   <a name="sagemaker-Type-QueryFilters-CreatedBefore"></a>
-Filter the lineage entities connected to the `StartArn`(s) by created date.
-Type: Timestamp
-Required: No
-
  ** LineageTypes **   <a name="sagemaker-Type-QueryFilters-LineageTypes"></a>
 Filter the lineage entities connected to the `StartArn`(s) by the type of the lineage entity.
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 4 items.
 Valid Values: `TrialComponent | Artifact | Context | Action`
-Required: No
-
- ** ModifiedAfter **   <a name="sagemaker-Type-QueryFilters-ModifiedAfter"></a>
-Filter the lineage entities connected to the `StartArn`(s) after the last modified date.
-Type: Timestamp
-Required: No
-
- ** ModifiedBefore **   <a name="sagemaker-Type-QueryFilters-ModifiedBefore"></a>
-Filter the lineage entities connected to the `StartArn`(s) before the last modified date.
-Type: Timestamp
 Required: No
 
  ** Properties **   <a name="sagemaker-Type-QueryFilters-Properties"></a>

@@ -15,11 +15,6 @@ Information about the user who created or modified a SageMaker resource.
 Type: [UserContext](API_UserContext.md) object
 Required: No
 
- ** CreationTime **   <a name="sagemaker-Type-PipelineVersion-CreationTime"></a>
-The creation time of the pipeline version.
-Type: Timestamp
-Required: No
-
  ** LastExecutedPipelineExecutionArn **   <a name="sagemaker-Type-PipelineVersion-LastExecutedPipelineExecutionArn"></a>
 The Amazon Resource Name (ARN) of the most recent pipeline execution created from this pipeline version.
 Type: String
@@ -43,11 +38,6 @@ Required: No
  ** LastModifiedBy **   <a name="sagemaker-Type-PipelineVersion-LastModifiedBy"></a>
 Information about the user who created or modified a SageMaker resource.
 Type: [UserContext](API_UserContext.md) object
-Required: No
-
- ** LastModifiedTime **   <a name="sagemaker-Type-PipelineVersion-LastModifiedTime"></a>
-The time when the pipeline version was last modified.
-Type: Timestamp
 Required: No
 
  ** PipelineArn **   <a name="sagemaker-Type-PipelineVersion-PipelineArn"></a>

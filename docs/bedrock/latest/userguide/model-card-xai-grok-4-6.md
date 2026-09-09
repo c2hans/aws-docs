@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-xai-
 
 Grok 4.6 is xAI's frontier model built for coding, agentic tasks, and knowledge work. It builds on previous generations of Grok with a particular focus on long-running agents and more ambitious interactive work. It offers 500K context window and configurable reasoning efforts (low, medium, high, xhigh).
 + **Model launch date:** August 18, 2026
++ **EOL no sooner than:** August 18, 2027
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
 + **Model lifecycle:** Active

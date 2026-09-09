@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deep
 
 DeepSeek-V3.1 is DeepSeek's 685B parameter mixture-of-experts model with strong performance across coding, math, and general reasoning tasks. For more information about model development and performance, see the [model/service card](https://api-docs.deepseek.com/news/news250821).
 + **Model launch date:** Aug 21, 2025
++ **EOL no sooner than:** Aug 21, 2026
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/main/LICENSE)
 + **Model lifecycle:** Active

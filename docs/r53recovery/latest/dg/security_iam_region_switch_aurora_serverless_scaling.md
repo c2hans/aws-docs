@@ -21,9 +21,9 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/security_iam_regio
         "rds:RebootDBInstance"
       ],
       "Resource": [
-        "arn:aws:rds:{{region}}:{{account-id}}:cluster:{{cluster-name}}",
-        "arn:aws:rds:{{region}}:{{account-id}}:db:{{instance-name}}",
-        "arn:aws:rds::{{account-id}}:global-cluster:{{global-cluster-name}}"
+        "arn:aws:rds:{{us-east-1}}:{{111122223333}}:cluster:{{cluster-name}}",
+        "arn:aws:rds:{{us-east-1}}:{{111122223333}}:db:{{instance-name}}",
+        "arn:aws:rds::{{111122223333}}:global-cluster:{{global-cluster-name}}"
       ]
     },
     {

@@ -13,6 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-qwen
 
 Qwen3 Coder Next is Qwen's coding model with improved code generation, debugging, and software engineering capabilities. For more information about model development and performance, see the [model/service card](https://qwen.ai/blog?id=qwen3-coder).
 + **Model launch date:** Feb 04, 2026
++ **EOL no sooner than:** Feb 04, 2027
++ **Legacy period:** at least 6 months
++ **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/main/LICENSE)
 + **Model lifecycle:** Active
