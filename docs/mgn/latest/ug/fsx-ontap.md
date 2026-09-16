@@ -134,7 +134,7 @@ For detailed instructions on creating and configuring FSx for ONTAP file systems
 ## Step 3: Configure certificate-based authentication
 <a name="fsx-ontap-step3-certificate-auth"></a>
 
-**Certificate-based authentication is required for MGN to access the ONTAP REST API and iSCSI targets.** MGN handles TLS validation internally using AWS Certificate Authorities.
+**Certificate-based authentication is required for MGN to access the ONTAP REST API.** MGN handles TLS validation internally using AWS Certificate Authorities.
 
 **Note**
 MGN does not use CHAP for iSCSI. iSCSI access is controlled via security groups, and MGN authenticates to the ONTAP management API using client certificates as described in this section.
@@ -157,7 +157,8 @@ The private key must be in PKCS\#8 format (`-----BEGIN PRIVATE KEY-----`). If yo
 
 ```
 [~]$ openssl pkcs8 -topk8 -inform PEM -outform PEM -nocrypt \
-  -in fsx-mgn-client.key -out fsx-mgn-client.key
+  -in fsx-mgn-client.key -out fsx-mgn-client.key.pk8
+[~]$ mv fsx-mgn-client.key.pk8 fsx-mgn-client.key
 ```
 
 ### Install client certificate on FSx for ONTAP

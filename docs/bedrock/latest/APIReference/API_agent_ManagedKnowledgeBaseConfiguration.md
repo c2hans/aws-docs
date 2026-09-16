@@ -33,6 +33,11 @@ Contains the configuration for server-side encryption for your managed knowledge
 Type: [ServerSideEncryptionConfiguration](API_agent_ServerSideEncryptionConfiguration.md) object
 Required: No
 
+ ** supplementalDataStorageConfiguration **   <a name="bedrock-Type-agent_ManagedKnowledgeBaseConfiguration-supplementalDataStorageConfiguration"></a>
+Use this object to specify the Amazon S3 location that the knowledge base uses to process and ingest multimodal content. This field is required when you use a native multimodal embedding model.
+Type: [SupplementalDataStorageConfiguration](API_agent_SupplementalDataStorageConfiguration.md) object
+Required: No
+
 ## See Also
 <a name="API_agent_ManagedKnowledgeBaseConfiguration_SeeAlso"></a>
 

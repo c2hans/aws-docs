@@ -36,6 +36,11 @@ The Unix timestamp (in milliseconds) for when the service job was created.
 Type: Long
 Required: No
 
+ ** isTerminated **   <a name="Batch-Type-ServiceJobSummary-isTerminated"></a>
+Indicates whether a termination request has been accepted for the service job. This field is only present when the value is `true`.
+Type: Boolean
+Required: No
+
  ** jobArn **   <a name="Batch-Type-ServiceJobSummary-jobArn"></a>
 The Amazon Resource Name (ARN) of the service job.
 Type: String

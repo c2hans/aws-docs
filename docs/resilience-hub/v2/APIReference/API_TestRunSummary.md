@@ -24,6 +24,7 @@ Required: Yes
  ** testRunId **   <a name="ngresiliencehub-Type-TestRunSummary-testRunId"></a>
 The unique identifier of the test run.
 Type: String
+Length Constraints: Minimum length of 1.
 Required: Yes
 
  ** testTemplateArn **   <a name="ngresiliencehub-Type-TestRunSummary-testTemplateArn"></a>

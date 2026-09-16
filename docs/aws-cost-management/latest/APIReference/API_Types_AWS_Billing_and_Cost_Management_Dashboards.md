@@ -8,6 +8,7 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 The following data types are supported by AWS Billing and Cost Management Dashboards:
 +  [BudgetQuery](API_bcmDashboards_BudgetQuery.md)
 +  [CostAndUsageQuery](API_bcmDashboards_CostAndUsageQuery.md)
++  [CostAnomalyDetectedQuery](API_bcmDashboards_CostAnomalyDetectedQuery.md)
 +  [CostCategoryValues](API_bcmDashboards_CostCategoryValues.md)
 +  [CostEfficiencyQuery](API_bcmDashboards_CostEfficiencyQuery.md)
 +  [DashboardReference](API_bcmDashboards_DashboardReference.md)

@@ -15,4 +15,4 @@ This reference guide describes the AWS access portal operations that you can cal
 **Note**
  AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms, such as Java, Ruby, .Net, iOS, or Android. The SDKs provide a convenient way to programmatically access IAM Identity Center and other AWS services. For more information about the AWS SDKs, including how to download and install them, see [Tools for Amazon Web Services](http://aws.amazon.com/tools/).
 
-This document was last published on September 9, 2026.
+This document was last published on September 15, 2026.

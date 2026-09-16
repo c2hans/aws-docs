@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Cre
 # CreateImagePipeline
 <a name="API_CreateImagePipeline"></a>
 
-Creates a new image pipeline. Image pipelines enable you to automate the creation and distribution of images.
+Creates a new image pipeline. Use image pipelines to automate the creation and distribution of images.
 
 ## Request Syntax
 <a name="API_CreateImagePipeline_RequestSyntax"></a>
@@ -19,6 +19,7 @@ Content-type: application/json
    "containerRecipeArn": "{{string}}",
    "description": "{{string}}",
    "distributionConfigurationArn": "{{string}}",
+   "dryRun": {{boolean}},
    "enhancedImageMetadataEnabled": {{boolean}},
    "executionRole": "{{string}}",
    "imageRecipeArn": "{{string}}",
@@ -81,7 +82,7 @@ The request does not use any URI parameters.
 The request accepts the following data in JSON format.
 
  ** [clientToken](#API_CreateImagePipeline_RequestSyntax) **   <a name="imagebuilder-CreateImagePipeline-request-clientToken"></a>
-Unique, case-sensitive identifier you provide to ensure idempotency of the request. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
+A unique, case-sensitive identifier you provide to ensure that the operation completes no more than one time. If this token matches a previous request, the service ignores the request, but does not return an error. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: Yes
@@ -99,13 +100,18 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
  ** [distributionConfigurationArn](#API_CreateImagePipeline_RequestSyntax) **   <a name="imagebuilder-CreateImagePipeline-request-distributionConfigurationArn"></a>
-The Amazon Resource Name (ARN) of the distribution configuration that will be used to configure and distribute images created by this image pipeline.
+The Amazon Resource Name (ARN) of the distribution configuration that configures and distributes images created by this image pipeline.
 Type: String
 Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws):distribution-configuration/[a-z0-9-_]+$`
 Required: No
 
+ ** [dryRun](#API_CreateImagePipeline_RequestSyntax) **   <a name="imagebuilder-CreateImagePipeline-request-dryRun"></a>
+Validates the required permissions and request parameters without making the request. If validation succeeds, the operation returns a `DryRunOperationException` error response.
+Type: Boolean
+Required: No
+
  ** [enhancedImageMetadataEnabled](#API_CreateImagePipeline_RequestSyntax) **   <a name="imagebuilder-CreateImagePipeline-request-enhancedImageMetadataEnabled"></a>
-Collects additional information about the image being created, including the operating system (OS) version and package list. This information is used to enhance the overall experience of using EC2 Image Builder. Enabled by default.
+Specifies whether to collect additional information about the image being created, including the operating system (OS) version and package list. Defaults to `true`.
 Type: Boolean
 Required: No
 
@@ -117,7 +123,7 @@ Pattern: `^(?:arn:aws(?:-[a-z]+)*:iam::[0-9]{12}:role/)?[a-zA-Z_0-9+=,.@\-_/]+$`
 Required: No
 
  ** [imageRecipeArn](#API_CreateImagePipeline_RequestSyntax) **   <a name="imagebuilder-CreateImagePipeline-request-imageRecipeArn"></a>
-The Amazon Resource Name (ARN) of the image recipe that will be used to configure images created by this image pipeline.
+The Amazon Resource Name (ARN) of the image recipe that configures images created by this image pipeline.
 Type: String
 Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws):image-recipe/[a-z0-9-_]+/(?:[0-9]+|x)\.(?:[0-9]+|x)\.(?:[0-9]+|x)$`
 Required: No
@@ -142,7 +148,7 @@ Type: [ImageTestsConfiguration](API_ImageTestsConfiguration.md) object
 Required: No
 
  ** [infrastructureConfigurationArn](#API_CreateImagePipeline_RequestSyntax) **   <a name="imagebuilder-CreateImagePipeline-request-infrastructureConfigurationArn"></a>
-The Amazon Resource Name (ARN) of the infrastructure configuration that will be used to build images created by this image pipeline.
+The Amazon Resource Name (ARN) of the infrastructure configuration that builds images created by this image pipeline.
 Type: String
 Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws):infrastructure-configuration/[a-z0-9-_]+$`
 Required: Yes
@@ -232,6 +238,10 @@ HTTP Status Code: 429
 These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
 HTTP Status Code: 400
 
+ ** DryRunOperationException **
+The dry run operation of the resource was successful, and no resources or mutations were actually performed due to the dry run flag in the request.
+HTTP Status Code: 412
+
  ** ForbiddenException **
 You are not authorized to perform the requested operation.
 HTTP Status Code: 403
@@ -276,5 +286,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/imagebuilder-2019-12-02/CreateImagePipeline)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/imagebuilder-2019-12-02/CreateImagePipeline)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/imagebuilder-2019-12-02/CreateImagePipeline)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/imagebuilder-2019-12-02/CreateImagePipeline)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/imagebuilder-2019-12-02/CreateImagePipeline)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/imagebuilder-2019-12-02/CreateImagePipeline)

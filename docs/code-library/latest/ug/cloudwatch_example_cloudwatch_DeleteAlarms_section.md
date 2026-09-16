@@ -12,8 +12,9 @@ The following code examples show how to use `DeleteAlarms`.
 Action examples are code excerpts from larger programs and must be run in context. You can see this action in context in the following code examples:
 +  [Learn the basics](cloudwatch_example_cloudwatch_GetStartedMetricsDashboardsAlarms_section.md)
 +  [Get started with alarms](cloudwatch_example_cloudwatch_Scenario_GettingStarted_section.md)
-+  [Manage metrics and alarms](cloudwatch_example_cloudwatch_Usage_MetricsAlarms_section.md)
++  [Manage custom metrics and alarms](cloudwatch_example_cloudwatch_Usage_MetricsAlarms_section.md)
 +  [Run CPU stress tests on virtual machine instances using fault injection](cloudwatch_example_iam_GettingStarted_069_section.md)
++  [Send OpenTelemetry metrics and alarm on them with PromQL](cloudwatch_example_cloudwatch_Scenario_OTelMetrics_section.md)
 
 ------
 #### [ .NET ]

@@ -7,6 +7,7 @@ source_url: https://docs.aws.amazon.com/directconnect/index.html
 Direct Connect establishes a dedicated network connection between your on-premises network and AWS. With this connection in place, you can create virtual interfaces directly to the AWS Cloud, bypassing your internet service provider. This can provide a more consistent network experience.
 
 - [User Guide](/directconnect/latest/UserGuide/): Describes key concepts and provides instructions for using the features of Direct Connect.
+- [Pricing Guide](/directconnect/latest/PricingGuide/): Describes pay-as-you-go and flat-rate pricing for Direct Connect.
 - [API Reference](/directconnect/latest/APIReference/Welcome.html): Describes the API operations for Direct Connect.
 - [Direct Connect section of the AWS CLI Reference](/cli/latest/reference/directconnect/index.html): Describes the AWS CLI commands for Direct Connect.
 

@@ -111,7 +111,11 @@ All snapshots of the instance’s volumes must be in the same location. Verify t
       + To tag the AMI and the snapshots with the *same* tags, choose **Tag image and snapshots together**. The same tags are applied to the AMI and every snapshot that is created.
       + To tag the AMI and the snapshots with *different* tags, choose **Tag image and snapshots separately**. Different tags are applied to the AMI and the snapshots that are created. However, all the snapshots get the same tags; you can't tag each snapshot with a different tag.
 
-      To add a tag, choose **Add tag**, and enter the key and value for the tag. Repeat for each tag.
+   1. **Boot mode override** – To create an AMI that only supports UEFI boot mode, choose `uefi`. Otherwise, keep the default so that the AMI inherits the boot mode of the instance.
+**Note**
+ This option works only if the current instance boot mode is UEFI. For more information, see [Set the boot mode of an Amazon EC2 AMI](set-ami-boot-mode.md).
+
+   1. To add a tag, choose **Add tag**, and enter the key and value for the tag. Repeat for each tag.
 
    1. When you're ready to create your AMI, choose **Create image**.
 

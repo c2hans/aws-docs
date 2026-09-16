@@ -19,7 +19,7 @@ The following example shows that the specified instance type supports both UEFI 
 ```
 aws ec2 describe-instance-types \
     --instance-types {{m5.2xlarge}} \
-    --query "InstanceTypes[*].SupportedBootModes"
+    --query 'InstanceTypes[*].SupportedBootModes'
 ```
 
 The following is example output.
@@ -38,7 +38,7 @@ The following example shows that `t2.xlarge` supports only Legacy BIOS.
 ```
 aws ec2 describe-instance-types \
     --instance-types t2.xlarge \
-    --query "InstanceTypes[*].SupportedBootModes"
+    --query 'InstanceTypes[*].SupportedBootModes'
 ```
 
 The following is example output.
@@ -95,7 +95,7 @@ The available instance types vary by AWS Region. To see the available instance t
 ```
 aws ec2 describe-instance-types \
     --filters Name=supported-boot-mode,Values=uefi \
-    --query "InstanceTypes[*].[InstanceType]" \
+    --query 'InstanceTypes[*].[InstanceType]' \
     --output text | sort
 ```
 
@@ -124,7 +124,7 @@ Use the [describe-instance-types](https://docs.aws.amazon.com/cli/latest/referen
 ```
 aws ec2 describe-instance-types \
     --filters Name=supported-boot-mode,Values=uefi Name=bare-metal,Values=false \
-    --query "InstanceTypes[*].[InstanceType]" \
+    --query 'InstanceTypes[*].[InstanceType]' \
     --output text | sort
 ```
 

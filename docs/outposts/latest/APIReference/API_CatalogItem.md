@@ -33,6 +33,12 @@ Required: No
 Type: Float
 Required: No
 
+ ** RackScalingType **   <a name="outposts-Type-CatalogItem-RackScalingType"></a>
+The rack scaling type supported by the catalog item. Valid values are `SINGLE_RACK` and `MULTI_RACK`.
+Type: String
+Valid Values: `SINGLE_RACK | MULTI_RACK`
+Required: No
+
  ** SupportedStorage **   <a name="outposts-Type-CatalogItem-SupportedStorage"></a>
  The supported storage options for the catalog item.
 Type: Array of strings

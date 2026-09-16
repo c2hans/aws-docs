@@ -89,7 +89,7 @@ The priority assigned to the rule. Each rule for a specific listener must have a
 *Required*: Yes
 *Type*: Integer
 *Minimum*: `1`
-*Maximum*: `100`
+*Maximum*: `2000`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ServiceIdentifier`  <a name="cfn-vpclattice-rule-serviceidentifier"></a>

@@ -294,7 +294,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/mq-2017-11-27/DescribeUser)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/mq-2017-11-27/DescribeUser)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/mq-2017-11-27/DescribeUser)
-+ [AWS SDK for Python](/goto/boto3/mq-2017-11-27/DescribeUser)
++ [AWS SDK for Python (Boto3)](/goto/boto3/mq-2017-11-27/DescribeUser)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/mq-2017-11-27/DescribeUser)
 
 ### CreateUser
@@ -307,7 +307,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/mq-2017-11-27/CreateUser)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/mq-2017-11-27/CreateUser)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/mq-2017-11-27/CreateUser)
-+ [AWS SDK for Python](/goto/boto3/mq-2017-11-27/CreateUser)
++ [AWS SDK for Python (Boto3)](/goto/boto3/mq-2017-11-27/CreateUser)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/mq-2017-11-27/CreateUser)
 
 ### UpdateUser
@@ -320,7 +320,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/mq-2017-11-27/UpdateUser)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/mq-2017-11-27/UpdateUser)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/mq-2017-11-27/UpdateUser)
-+ [AWS SDK for Python](/goto/boto3/mq-2017-11-27/UpdateUser)
++ [AWS SDK for Python (Boto3)](/goto/boto3/mq-2017-11-27/UpdateUser)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/mq-2017-11-27/UpdateUser)
 
 ### DeleteUser
@@ -333,5 +333,5 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/mq-2017-11-27/DeleteUser)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/mq-2017-11-27/DeleteUser)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/mq-2017-11-27/DeleteUser)
-+ [AWS SDK for Python](/goto/boto3/mq-2017-11-27/DeleteUser)
++ [AWS SDK for Python (Boto3)](/goto/boto3/mq-2017-11-27/DeleteUser)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/mq-2017-11-27/DeleteUser)

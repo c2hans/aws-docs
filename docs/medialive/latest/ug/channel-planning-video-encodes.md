@@ -25,3 +25,5 @@ You must decide on the number of video encodes and their codecs. Follow this pro
    + 15, 30, and 60 frames per second are compatible frame rates.
    + 29.97 and 30 frames per second are *not* compatible frame rates.
    + 30 and 59.94 frames per second are *not* compatible frame rates.
+
+If the output group will participate in Dynamic Multiview, the video encodes can be configured by following the instructions in [Setting Up Dynamic Multiview Outputs (Console)](dynamic-multiview-console.md).

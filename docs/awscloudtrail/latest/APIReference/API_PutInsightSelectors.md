@@ -130,6 +130,10 @@ The following is the format of a dashboard ARN: `arn:aws:cloudtrail:us-east-1:12
 The following is the format of a channel ARN: `arn:aws:cloudtrail:us-east-2:123456789012:channel/01234567890`
 HTTP Status Code: 400
 
+ ** ConflictException **
+This exception is thrown when the specified resource is not ready for an operation. This can occur when you try to run an operation on a resource before CloudTrail has time to fully load the resource, or because another operation is modifying the resource. If this exception occurs, wait a few minutes, and then try the operation again.
+HTTP Status Code: 400
+
  ** InsufficientEncryptionPolicyException **
 For the `CreateTrail` `PutInsightSelectors`, `UpdateTrail`, `StartQuery`, and `StartImport` operations, this exception is thrown when the policy on the S3 bucket or AWS KMS key does not have sufficient permissions for the operation.
 For all other operations, this exception is thrown when the policy for the AWS KMS key does not have sufficient permissions for the operation.
@@ -268,5 +272,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/cloudtrail-2013-11-01/PutInsightSelectors)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/cloudtrail-2013-11-01/PutInsightSelectors)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/cloudtrail-2013-11-01/PutInsightSelectors)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/cloudtrail-2013-11-01/PutInsightSelectors)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/cloudtrail-2013-11-01/PutInsightSelectors)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudtrail-2013-11-01/PutInsightSelectors)

@@ -5,7 +5,9 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_UpdateResponde
 # UpdateResponderGateway
 <a name="API_UpdateResponderGateway"></a>
 
-Updates a responder gateway. This operation updates the description, listener configuration, and managed endpoint configuration. To change the domain name, port, or protocol of a responder gateway, delete the gateway and create a new one.
+Updates the description, Auto Scaling group managed endpoint configuration, trust store configuration, and client routing policy of a responder gateway. This operation also updates the `protocols` list in the listener configuration.
+
+You cannot change the `domainName`, `port`, and `protocol` values that you set when you create a responder gateway. To change any of them, delete the gateway and create a new one.
 
 ## Request Syntax
 <a name="API_UpdateResponderGateway_RequestSyntax"></a>
@@ -15,6 +17,7 @@ POST /responder-gateway/{{gatewayId}}/update HTTP/1.1
 Content-type: application/json
 
 {
+   "clientRoutingPolicy": "{{string}}",
    "clientToken": "{{string}}",
    "description": "{{string}}",
    "domainName": "{{string}}",
@@ -45,6 +48,15 @@ Required: Yes
 <a name="API_UpdateResponderGateway_RequestBody"></a>
 
 The request accepts the following data in JSON format.
+
+ ** [clientRoutingPolicy](#API_UpdateResponderGateway_RequestSyntax) **   <a name="rtbfabric-UpdateResponderGateway-request-clientRoutingPolicy"></a>
+The client routing policy of the gateway. This policy controls which Availability Zones RTB Fabric uses to reach the gateway for the requester gateways that send traffic to it. Valid values are the following:
++  `AVAILABILITY_ZONE_AFFINITY`: RTB Fabric routes each requester's traffic to gateway capacity in the requester's own Availability Zone when the gateway has capacity available there. Otherwise, RTB Fabric routes the traffic to gateway capacity in the other Availability Zones of the gateway.
++  `ANY_AVAILABILITY_ZONE`: RTB Fabric routes each requester's traffic to gateway capacity in every Availability Zone that the subnets of the gateway span. The Availability Zone that the requester is in does not change this.
+If you don't specify a value, the gateway keeps its current client routing policy. Changing the policy sets the gateway status to `PENDING_UPDATE` until the change is complete. RTB Fabric does not support partial Availability Zone affinity, so `PARTIAL_AVAILABILITY_ZONE_AFFINITY` is not a valid value. For more information, see [Configuring Availability Zone affinity](https://docs.aws.amazon.com/rtb-fabric/latest/userguide/working-with-responder-gateways.html#configuring-availability-zone-affinity) in the * AWS RTB Fabric User Guide*.
+Type: String
+Valid Values: `AVAILABILITY_ZONE_AFFINITY | ANY_AVAILABILITY_ZONE`
+Required: No
 
  ** [clientToken](#API_UpdateResponderGateway_RequestSyntax) **   <a name="rtbfabric-UpdateResponderGateway-request-clientToken"></a>
 Specifies a unique, case-sensitive identifier that you provide to ensure the idempotency of the request. This lets you safely retry the request without accidentally performing the same operation a second time. Passing the same value to a later call to an operation requires that you also pass the same value for all other parameters. We recommend that you use a [UUID type of value](https://wikipedia.org/wiki/Universally_unique_identifier).
@@ -102,6 +114,7 @@ HTTP/1.1 200
 Content-type: application/json
 
 {
+   "clientRoutingPolicy": "string",
    "gatewayId": "string",
    "status": "string"
 }
@@ -113,6 +126,11 @@ Content-type: application/json
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
+
+ ** [clientRoutingPolicy](#API_UpdateResponderGateway_ResponseSyntax) **   <a name="rtbfabric-UpdateResponderGateway-response-clientRoutingPolicy"></a>
+The client routing policy of the gateway. If the operation changed this policy, the gateway uses the new policy after its status returns to `ACTIVE`. For more information, see [Configuring Availability Zone affinity](https://docs.aws.amazon.com/rtb-fabric/latest/userguide/working-with-responder-gateways.html#configuring-availability-zone-affinity) in the * AWS RTB Fabric User Guide*.
+Type: String
+Valid Values: `AVAILABILITY_ZONE_AFFINITY | ANY_AVAILABILITY_ZONE`
 
  ** [gatewayId](#API_UpdateResponderGateway_ResponseSyntax) **   <a name="rtbfabric-UpdateResponderGateway-response-gatewayId"></a>
 The unique identifier of the gateway.
@@ -166,5 +184,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/rtbfabric-2023-05-15/UpdateResponderGateway)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/rtbfabric-2023-05-15/UpdateResponderGateway)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/rtbfabric-2023-05-15/UpdateResponderGateway)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/rtbfabric-2023-05-15/UpdateResponderGateway)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/rtbfabric-2023-05-15/UpdateResponderGateway)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/rtbfabric-2023-05-15/UpdateResponderGateway)

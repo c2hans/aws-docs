@@ -13,7 +13,7 @@ This example uses Amazon Nova 2 Sonic. The program loads its input audio from a 
 + Use the SDK repository's [sample `test.pcm` file](https://github.com/aws/aws-sdk-python/blob/develop/clients/aws-sdk-bedrock-runtime/tests/integration/assets/test.pcm) on GitHub. The sample contains headerless, 16 kHz, signed 16-bit, mono PCM audio.
 + Use your own recording saved in the same format, and set `audio_file` in `main` to its path.
 
-For request and response details, see the [invoke\_model\_with\_bidirectional\_stream()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/bedrock-runtime/operations/invoke_model_with_bidirectional_stream/) API reference.
+For request and response details, see the [invoke\_model\_with\_bidirectional\_stream()](clients/bedrock-runtime/operations/invoke_model_with_bidirectional_stream/) API reference.
 
 Bidirectional streaming requires the AWS Common Runtime (CRT) HTTP client, which supports HTTP/2 bidirectional event streams. The SDK's default HTTP transport does not, so opt in by installing the client's `awscrt` extra and passing `transport=AWSCRTHTTPClient()` when you resolve the configuration. For more information, see [Use the AWS CRT client for bidirectional streaming](http-configuration.md#http-crt-streaming).
 

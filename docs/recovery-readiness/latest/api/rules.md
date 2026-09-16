@@ -110,5 +110,5 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/aws-meridian-beta-2019-12-02/ListRules)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/aws-meridian-beta-2019-12-02/ListRules)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/aws-meridian-beta-2019-12-02/ListRules)
-+ [AWS SDK for Python](/goto/boto3/aws-meridian-beta-2019-12-02/ListRules)
++ [AWS SDK for Python (Boto3)](/goto/boto3/aws-meridian-beta-2019-12-02/ListRules)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/aws-meridian-beta-2019-12-02/ListRules)

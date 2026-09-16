@@ -38,6 +38,6 @@ To declare this entity in your CloudFormation template, use the following syntax
 The types of logs to collect from the resource.
 *Required*: No
 *Type*: Array of String
-*Allowed values*: `APPLICATION_LOGS | USAGE_LOGS | SECURITY_FINDING_LOGS`
+*Allowed values*: `APPLICATION_LOGS | USAGE_LOGS | SECURITY_FINDING_LOGS | ALB_ACCESS_LOGS | ALB_CONNECTION_LOGS | ALB_HEALTH_CHECK_LOGS`
 *Minimum*: `1`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

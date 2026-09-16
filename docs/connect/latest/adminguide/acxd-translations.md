@@ -38,7 +38,7 @@ Before translating content, add the languages your workspace should support.
 
 1. Save your selection.
 
-1. Choose **Publish language** to make the language available across the workspace.
+1. Choose **Apply languages** to make the language available across the workspace.
 
 After a language is added, it can be used for translatable resources such as flows, slots, application messages, and supported knowledge base content.
 
@@ -79,20 +79,20 @@ Use auto-translation as a starting point, especially when you need to quickly pr
 
 1. Select the **Auto-translate** tab.
 
-1. Choose **New translation job**.
+1. Choose **Request auto-translation**.
 
 1. Select whether to translate specific resources or filter by application.
 
 1. Choose one or more target languages.
 
-1. Select **Start**.
+1. Select **Request translation**.
 
 Optional settings may include:
 
 |  |  |
 | --- |--- |
-| **Preserve existing** | Keeps existing translated content from being overwritten. |
-| **Mark as complete** | Marks generated translations as completed after the job finishes. |
+| **Exclude translations already marked** | Keeps existing translated content from being overwritten. |
+| **Mark as translated when finished** | Marks generated translations as completed after the job finishes. |
 
 Each auto-translation job displays status details so you can track progress.
 
@@ -100,7 +100,7 @@ Each auto-translation job displays status details so you can track progress.
 | --- |--- |
 | **Status** | Whether the translation job is completed or still in progress. |
 | **Languages** | The target language or languages included in the job. |
-| **Progress** | How many resources were translated successfully out of the total checked. |
+| **Succeeded** | How many resources were translated successfully out of the total checked. |
 | **Created** | When the translation job was created. |
 
 Review job results after completion and check any resources that did not translate successfully.

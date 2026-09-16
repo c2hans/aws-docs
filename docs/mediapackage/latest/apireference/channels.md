@@ -273,7 +273,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/mediapackage-2017-10-12/ListChannels)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/mediapackage-2017-10-12/ListChannels)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/mediapackage-2017-10-12/ListChannels)
-+ [AWS SDK for Python](/goto/boto3/mediapackage-2017-10-12/ListChannels)
++ [AWS SDK for Python (Boto3)](/goto/boto3/mediapackage-2017-10-12/ListChannels)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/mediapackage-2017-10-12/ListChannels)
 
 ### CreateChannel
@@ -286,5 +286,5 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/mediapackage-2017-10-12/CreateChannel)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/mediapackage-2017-10-12/CreateChannel)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/mediapackage-2017-10-12/CreateChannel)
-+ [AWS SDK for Python](/goto/boto3/mediapackage-2017-10-12/CreateChannel)
++ [AWS SDK for Python (Boto3)](/goto/boto3/mediapackage-2017-10-12/CreateChannel)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/mediapackage-2017-10-12/CreateChannel)

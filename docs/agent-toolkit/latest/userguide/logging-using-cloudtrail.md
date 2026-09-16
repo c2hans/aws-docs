@@ -46,7 +46,7 @@ MCP client shows: `aws___retrieve_skill`
 CloudTrail logs show: `retrieve_skill`
 This occurs because CloudTrail logs the tool name without the namespace prefix used by MCP clients.
 
-The following example shows a CloudTrail log entry that demonstrates the `CallTool` action.
+The following example shows a CloudTrail log entry that demonstrates the `CallReadWriteTool` action.
 
 ```
 {
@@ -57,13 +57,13 @@ The following example shows a CloudTrail log entry that demonstrates the `CallTo
       ...
   },
   "eventTime": "...",
-  "eventSource": "aws-mcp.us-east-1.api.aws",
-  "eventName": "CallTool",
+  "eventSource": "aws-mcp.amazonaws.com",
+  "eventName": "CallReadWriteTool",
   "awsRegion": "us-east-1",
   "sourceIPAddress": "...",
   "delegatedViaAWS": "...",
   "requestParameters": {
-    "method": "call_aws",
+    "method": "tools/call",
     "params": {
         // Exact copy of MCP request params
     },

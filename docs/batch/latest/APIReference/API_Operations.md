@@ -7,6 +7,7 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_Operations
 
 The following actions are supported:
 +  [CancelJob](API_CancelJob.md)
++  [CancelJobs](API_CancelJobs.md)
 +  [CreateComputeEnvironment](API_CreateComputeEnvironment.md)
 +  [CreateConsumableResource](API_CreateConsumableResource.md)
 +  [CreateJobQueue](API_CreateJobQueue.md)
@@ -42,7 +43,9 @@ The following actions are supported:
 +  [SubmitServiceJob](API_SubmitServiceJob.md)
 +  [TagResource](API_TagResource.md)
 +  [TerminateJob](API_TerminateJob.md)
++  [TerminateJobs](API_TerminateJobs.md)
 +  [TerminateServiceJob](API_TerminateServiceJob.md)
++  [TerminateServiceJobs](API_TerminateServiceJobs.md)
 +  [UntagResource](API_UntagResource.md)
 +  [UpdateComputeEnvironment](API_UpdateComputeEnvironment.md)
 +  [UpdateConsumableResource](API_UpdateConsumableResource.md)

@@ -19,6 +19,43 @@ Each example includes a link to the complete source code, where you can find ins
 ## Actions
 <a name="actions"></a>
 
+### `DeleteAlarmMuteRule`
+<a name="cloudwatch_DeleteAlarmMuteRule_cpp_1_topic"></a>
+
+The following code example shows how to use `DeleteAlarmMuteRule`.
+
+**SDK for C\+\+**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudwatch#code-examples).
+Include the required files.
+
+```
+#include <aws/core/Aws.h>
+#include <aws/monitoring/CloudWatchClient.h>
+#include <aws/monitoring/model/DeleteAlarmMuteRuleRequest.h>
+#include <iostream>
+```
+Delete the alarm mute rule.
+
+```
+        Aws::Client::ClientConfiguration clientConfig;
+        // Optional: Set to the AWS Region (overrides config file).
+        // clientConfig.region = "us-east-1";
+        Aws::CloudWatch::CloudWatchClient cw(clientConfig);
+
+        Aws::CloudWatch::Model::DeleteAlarmMuteRuleRequest request;
+        request.SetAlarmMuteRuleName(mute_rule_name);
+
+        auto outcome = cw.DeleteAlarmMuteRule(request);
+        if (!outcome.IsSuccess()) {
+            std::cerr << "Failed to delete alarm mute rule: "
+                      << outcome.GetError().GetMessage() << std::endl;
+        } else {
+            std::cout << "Successfully deleted alarm mute rule " << mute_rule_name
+                      << std::endl;
+        }
+```
++  For API details, see [DeleteAlarmMuteRule](https://docs.aws.amazon.com/goto/SdkForCpp/monitoring-2010-08-01/DeleteAlarmMuteRule) in *AWS SDK for C\+\+ API Reference*.
+
 ### `DeleteAlarms`
 <a name="cloudwatch_DeleteAlarms_cpp_1_topic"></a>
 
@@ -54,6 +91,84 @@ Delete the alarm.
         }
 ```
 +  For API details, see [DeleteAlarms](https://docs.aws.amazon.com/goto/SdkForCpp/monitoring-2010-08-01/DeleteAlarms) in *AWS SDK for C\+\+ API Reference*.
+
+### `DescribeAlarmContributors`
+<a name="cloudwatch_DescribeAlarmContributors_cpp_1_topic"></a>
+
+The following code example shows how to use `DescribeAlarmContributors`.
+
+**SDK for C\+\+**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudwatch#code-examples).
+Include the required files.
+
+```
+#include <aws/core/Aws.h>
+#include <aws/monitoring/CloudWatchClient.h>
+#include <aws/monitoring/model/AlarmContributor.h>
+#include <aws/monitoring/model/DescribeAlarmContributorsRequest.h>
+#include <iostream>
+```
+Describe the contributors to a PromQL alarm.
+
+```
+        Aws::Client::ClientConfiguration clientConfig;
+        // Optional: Set to the AWS Region (overrides config file).
+        // clientConfig.region = "us-east-1";
+        Aws::CloudWatch::CloudWatchClient cw(clientConfig);
+
+        Aws::CloudWatch::Model::DescribeAlarmContributorsRequest request;
+        request.SetAlarmName(alarm_name);
+
+        // Collect every page before reporting. A page can come back empty while still
+        // carrying a next token, so the loop must keep going until the token is empty
+        // rather than stopping at the first empty page.
+        Aws::Vector<Aws::CloudWatch::Model::AlarmContributor> contributors;
+        bool failed = false;
+        bool done = false;
+        while (!done) {
+            auto outcome = cw.DescribeAlarmContributors(request);
+            if (!outcome.IsSuccess()) {
+                std::cerr << "Failed to describe alarm contributors: "
+                          << outcome.GetError().GetMessage() << std::endl;
+                failed = true;
+                break;
+            }
+
+            const auto &page = outcome.GetResult().GetAlarmContributors();
+            contributors.insert(contributors.end(), page.begin(), page.end());
+
+            const auto &next_token = outcome.GetResult().GetNextToken();
+            request.SetNextToken(next_token);
+            done = next_token.empty();
+        }
+
+        if (!failed) {
+            if (contributors.empty()) {
+                std::cout << "No contributors yet. The query matched no series, "
+                             "which usually means no OTel metrics with these labels "
+                             "have arrived."
+                          << std::endl;
+            }
+            else {
+                std::cout << "Contributors for alarm " << alarm_name << ":" << std::endl;
+                for (const auto &contributor : contributors) {
+                    std::cout << "  " << contributor.GetContributorId() << ": ";
+                    bool first = true;
+                    for (const auto &label : contributor.GetContributorAttributes()) {
+                        if (!first) {
+                            std::cout << ", ";
+                        }
+                        std::cout << label.first << "=" << label.second;
+                        first = false;
+                    }
+                    std::cout << std::endl;
+                    std::cout << "    reason: " << contributor.GetStateReason()
+                              << std::endl;
+                }
+            }
+        }
+```
++  For API details, see [DescribeAlarmContributors](https://docs.aws.amazon.com/goto/SdkForCpp/monitoring-2010-08-01/DescribeAlarmContributors) in *AWS SDK for C\+\+ API Reference*.
 
 ### `DescribeAlarmsForMetric`
 <a name="cloudwatch_DescribeAlarmsForMetric_cpp_1_topic"></a>
@@ -224,6 +339,160 @@ Enable the alarm actions.
 ```
 +  For API details, see [EnableAlarmActions](https://docs.aws.amazon.com/goto/SdkForCpp/monitoring-2010-08-01/EnableAlarmActions) in *AWS SDK for C\+\+ API Reference*.
 
+### `GetAlarmMuteRule`
+<a name="cloudwatch_GetAlarmMuteRule_cpp_1_topic"></a>
+
+The following code example shows how to use `GetAlarmMuteRule`.
+
+**SDK for C\+\+**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudwatch#code-examples).
+Include the required files.
+
+```
+#include <aws/core/Aws.h>
+#include <aws/monitoring/CloudWatchClient.h>
+#include <aws/monitoring/model/AlarmMuteRuleStatus.h>
+#include <aws/monitoring/model/GetAlarmMuteRuleRequest.h>
+#include <iostream>
+```
+Get the alarm mute rule.
+
+```
+        Aws::Client::ClientConfiguration clientConfig;
+        // Optional: Set to the AWS Region (overrides config file).
+        // clientConfig.region = "us-east-1";
+        Aws::CloudWatch::CloudWatchClient cw(clientConfig);
+
+        Aws::CloudWatch::Model::GetAlarmMuteRuleRequest request;
+        request.SetAlarmMuteRuleName(mute_rule_name);
+
+        auto outcome = cw.GetAlarmMuteRule(request);
+        if (!outcome.IsSuccess()) {
+            std::cerr << "Failed to get alarm mute rule: "
+                      << outcome.GetError().GetMessage() << std::endl;
+        } else {
+            const auto &result = outcome.GetResult();
+            std::cout << "Mute rule " << result.GetName() << " is "
+                      << Aws::CloudWatch::Model::AlarmMuteRuleStatusMapper::
+                             GetNameForAlarmMuteRuleStatus(result.GetStatus())
+                      << "." << std::endl;
+            std::cout << "  ARN: " << result.GetAlarmMuteRuleArn() << std::endl;
+            std::cout << "  schedule: " << result.GetRule().GetSchedule().GetExpression()
+                      << " for " << result.GetRule().GetSchedule().GetDuration()
+                      << std::endl;
+
+            const auto &alarm_names = result.GetMuteTargets().GetAlarmNames();
+            if (!alarm_names.empty()) {
+                std::cout << "  muted alarms:";
+                for (const auto &alarm_name : alarm_names) {
+                    std::cout << " " << alarm_name;
+                }
+                std::cout << std::endl;
+            }
+        }
+```
++  For API details, see [GetAlarmMuteRule](https://docs.aws.amazon.com/goto/SdkForCpp/monitoring-2010-08-01/GetAlarmMuteRule) in *AWS SDK for C\+\+ API Reference*.
+
+### `GetOTelEnrichment`
+<a name="cloudwatch_GetOTelEnrichment_cpp_1_topic"></a>
+
+The following code example shows how to use `GetOTelEnrichment`.
+
+**SDK for C\+\+**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudwatch#code-examples).
+Include the required files.
+
+```
+#include <aws/core/Aws.h>
+#include <aws/monitoring/CloudWatchClient.h>
+#include <aws/monitoring/model/GetOTelEnrichmentRequest.h>
+#include <aws/monitoring/model/OTelEnrichmentStatus.h>
+#include <iostream>
+```
+Get the OpenTelemetry enrichment status.
+
+```
+        Aws::Client::ClientConfiguration clientConfig;
+        // Optional: Set to the AWS Region (overrides config file).
+        // clientConfig.region = "us-east-1";
+        Aws::CloudWatch::CloudWatchClient cw(clientConfig);
+
+        Aws::CloudWatch::Model::GetOTelEnrichmentRequest request;
+
+        auto outcome = cw.GetOTelEnrichment(request);
+        if (!outcome.IsSuccess()) {
+            std::cerr << "Failed to get OTel enrichment status: "
+                      << outcome.GetError().GetMessage() << std::endl;
+        } else {
+            auto status = outcome.GetResult().GetStatus();
+            std::cout << "OTel enrichment status is "
+                      << Aws::CloudWatch::Model::OTelEnrichmentStatusMapper::
+                             GetNameForOTelEnrichmentStatus(status)
+                      << "." << std::endl;
+
+            if (status == Aws::CloudWatch::Model::OTelEnrichmentStatus::Running) {
+                std::cout << "Vended metrics are queryable with PromQL." << std::endl;
+            } else {
+                std::cout << "Start enrichment to enrich vended metrics with resource "
+                             "ARN and tag labels."
+                          << std::endl;
+            }
+        }
+```
++  For API details, see [GetOTelEnrichment](https://docs.aws.amazon.com/goto/SdkForCpp/monitoring-2010-08-01/GetOTelEnrichment) in *AWS SDK for C\+\+ API Reference*.
+
+### `ListAlarmMuteRules`
+<a name="cloudwatch_ListAlarmMuteRules_cpp_1_topic"></a>
+
+The following code example shows how to use `ListAlarmMuteRules`.
+
+**SDK for C\+\+**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudwatch#code-examples).
+Include the required files.
+
+```
+#include <aws/core/Aws.h>
+#include <aws/monitoring/CloudWatchClient.h>
+#include <aws/monitoring/model/AlarmMuteRuleStatus.h>
+#include <aws/monitoring/model/ListAlarmMuteRulesRequest.h>
+#include <iostream>
+```
+List the alarm mute rules.
+
+```
+        Aws::Client::ClientConfiguration clientConfig;
+        // Optional: Set to the AWS Region (overrides config file).
+        // clientConfig.region = "us-east-1";
+        Aws::CloudWatch::CloudWatchClient cw(clientConfig);
+
+        Aws::CloudWatch::Model::ListAlarmMuteRulesRequest request;
+        if (argc == 2) {
+            request.SetAlarmName(argv[1]);
+        }
+
+        bool done = false;
+        while (!done) {
+            auto outcome = cw.ListAlarmMuteRules(request);
+            if (!outcome.IsSuccess()) {
+                std::cerr << "Failed to list alarm mute rules: "
+                          << outcome.GetError().GetMessage() << std::endl;
+                break;
+            }
+
+            for (const auto &summary : outcome.GetResult().GetAlarmMuteRuleSummaries()) {
+                std::cout << summary.GetAlarmMuteRuleArn() << " ("
+                          << Aws::CloudWatch::Model::AlarmMuteRuleStatusMapper::
+                                 GetNameForAlarmMuteRuleStatus(summary.GetStatus())
+                          << ")" << std::endl;
+            }
+
+            const auto &next_token = outcome.GetResult().GetNextToken();
+            request.SetNextToken(next_token);
+            done = next_token.empty();
+        }
+```
++  For API details, see [ListAlarmMuteRules](https://docs.aws.amazon.com/goto/SdkForCpp/monitoring-2010-08-01/ListAlarmMuteRules) in *AWS SDK for C\+\+ API Reference*.
+
 ### `ListMetrics`
 <a name="cloudwatch_ListMetrics_cpp_1_topic"></a>
 
@@ -304,6 +573,68 @@ List the metrics.
 ```
 +  For API details, see [ListMetrics](https://docs.aws.amazon.com/goto/SdkForCpp/monitoring-2010-08-01/ListMetrics) in *AWS SDK for C\+\+ API Reference*.
 
+### `PutAlarmMuteRule`
+<a name="cloudwatch_PutAlarmMuteRule_cpp_1_topic"></a>
+
+The following code example shows how to use `PutAlarmMuteRule`.
+
+**SDK for C\+\+**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudwatch#code-examples).
+Include the required files.
+
+```
+#include <aws/core/Aws.h>
+#include <aws/monitoring/CloudWatchClient.h>
+#include <aws/monitoring/model/MuteTargets.h>
+#include <aws/monitoring/model/PutAlarmMuteRuleRequest.h>
+#include <aws/monitoring/model/Rule.h>
+#include <aws/monitoring/model/Schedule.h>
+#include <iostream>
+```
+Create the alarm mute rule.
+
+```
+        Aws::Client::ClientConfiguration clientConfig;
+        // Optional: Set to the AWS Region (overrides config file).
+        // clientConfig.region = "us-east-1";
+        Aws::CloudWatch::CloudWatchClient cw(clientConfig);
+
+        // For a recurring window, use a five-field cron expression,
+        // cron(Minutes Hours Day-of-month Month Day-of-week). Note that this is five
+        // fields, not the six that Amazon EventBridge uses. For a one-time window, use
+        // an at expression such as at(2026-09-05T02:00).
+        Aws::CloudWatch::Model::Schedule schedule;
+        schedule.SetExpression("cron(0 2 * * SUN)");
+        // The duration is in ISO 8601 duration format, from PT1M (one minute) to
+        // P15D (15 days).
+        schedule.SetDuration("PT2H");
+        schedule.SetTimezone("America/Los_Angeles");
+
+        Aws::CloudWatch::Model::Rule rule;
+        rule.SetSchedule(schedule);
+
+        // Target up to 100 alarms. If MuteTargets is not set, the rule applies to every
+        // alarm in the account.
+        Aws::CloudWatch::Model::MuteTargets muteTargets;
+        muteTargets.AddAlarmNames(alarm_name);
+
+        Aws::CloudWatch::Model::PutAlarmMuteRuleRequest request;
+        request.SetName(mute_rule_name);
+        request.SetDescription("A mute rule created by the AWS SDK for C++.");
+        request.SetRule(rule);
+        request.SetMuteTargets(muteTargets);
+
+        auto outcome = cw.PutAlarmMuteRule(request);
+        if (!outcome.IsSuccess()) {
+            std::cerr << "Failed to put alarm mute rule: "
+                      << outcome.GetError().GetMessage() << std::endl;
+        } else {
+            std::cout << "Successfully put alarm mute rule " << mute_rule_name
+                      << std::endl;
+        }
+```
++  For API details, see [PutAlarmMuteRule](https://docs.aws.amazon.com/goto/SdkForCpp/monitoring-2010-08-01/PutAlarmMuteRule) in *AWS SDK for C\+\+ API Reference*.
+
 ### `PutMetricAlarm`
 <a name="cloudwatch_PutMetricAlarm_cpp_1_topic"></a>
 
@@ -311,7 +642,51 @@ The following code example shows how to use `PutMetricAlarm`.
 
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudwatch#code-examples).
-Include the required files.
+Include the required files for a PromQL alarm.
+
+```
+#include <aws/core/Aws.h>
+#include <aws/monitoring/CloudWatchClient.h>
+#include <aws/monitoring/model/AlarmPromQLCriteria.h>
+#include <aws/monitoring/model/EvaluationCriteria.h>
+#include <aws/monitoring/model/PutMetricAlarmRequest.h>
+#include <iostream>
+```
+Create an alarm that evaluates a PromQL query against OpenTelemetry metrics.
+
+```
+        Aws::Client::ClientConfiguration clientConfig;
+        // Optional: Set to the AWS Region (overrides config file).
+        // clientConfig.region = "us-east-1";
+        Aws::CloudWatch::CloudWatchClient cw(clientConfig);
+
+        Aws::CloudWatch::Model::AlarmPromQLCriteria promQLCriteria;
+        promQLCriteria.SetQuery(query);
+        // A contributor moves to ALARM after breaching continuously for 300 seconds,
+        // and back to OK after 120 seconds without breaching.
+        promQLCriteria.SetPendingPeriod(300);
+        promQLCriteria.SetRecoveryPeriod(120);
+
+        Aws::CloudWatch::Model::EvaluationCriteria evaluationCriteria;
+        evaluationCriteria.SetPromQLCriteria(promQLCriteria);
+
+        Aws::CloudWatch::Model::PutMetricAlarmRequest request;
+        request.SetAlarmName(alarm_name);
+        request.SetAlarmDescription("A PromQL alarm created by the AWS SDK for C++.");
+        request.SetEvaluationCriteria(evaluationCriteria);
+        // Valid values are 10, 20, 30, and any multiple of 60, up to 3600.
+        request.SetEvaluationInterval(30);
+
+        auto outcome = cw.PutMetricAlarm(request);
+        if (!outcome.IsSuccess()) {
+            std::cerr << "Failed to create PromQL alarm: "
+                      << outcome.GetError().GetMessage() << std::endl;
+        } else {
+            std::cout << "Successfully created PromQL alarm " << alarm_name
+                      << " for query " << query << std::endl;
+        }
+```
+Include the required files for a metric alarm.
 
 ```
 #include <aws/core/Aws.h>
@@ -403,3 +778,75 @@ Put data into the metric.
         }
 ```
 +  For API details, see [PutMetricData](https://docs.aws.amazon.com/goto/SdkForCpp/monitoring-2010-08-01/PutMetricData) in *AWS SDK for C\+\+ API Reference*.
+
+### `StartOTelEnrichment`
+<a name="cloudwatch_StartOTelEnrichment_cpp_1_topic"></a>
+
+The following code example shows how to use `StartOTelEnrichment`.
+
+**SDK for C\+\+**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudwatch#code-examples).
+Include the required files.
+
+```
+#include <aws/core/Aws.h>
+#include <aws/monitoring/CloudWatchClient.h>
+#include <aws/monitoring/model/StartOTelEnrichmentRequest.h>
+#include <iostream>
+```
+Start OpenTelemetry enrichment.
+
+```
+        Aws::Client::ClientConfiguration clientConfig;
+        // Optional: Set to the AWS Region (overrides config file).
+        // clientConfig.region = "us-east-1";
+        Aws::CloudWatch::CloudWatchClient cw(clientConfig);
+
+        Aws::CloudWatch::Model::StartOTelEnrichmentRequest request;
+
+        auto outcome = cw.StartOTelEnrichment(request);
+        if (!outcome.IsSuccess()) {
+            std::cerr << "Failed to start OTel enrichment: "
+                      << outcome.GetError().GetMessage() << std::endl;
+        } else {
+            std::cout << "Successfully started OTel enrichment for this account."
+                      << std::endl;
+        }
+```
++  For API details, see [StartOTelEnrichment](https://docs.aws.amazon.com/goto/SdkForCpp/monitoring-2010-08-01/StartOTelEnrichment) in *AWS SDK for C\+\+ API Reference*.
+
+### `StopOTelEnrichment`
+<a name="cloudwatch_StopOTelEnrichment_cpp_1_topic"></a>
+
+The following code example shows how to use `StopOTelEnrichment`.
+
+**SDK for C\+\+**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudwatch#code-examples).
+Include the required files.
+
+```
+#include <aws/core/Aws.h>
+#include <aws/monitoring/CloudWatchClient.h>
+#include <aws/monitoring/model/StopOTelEnrichmentRequest.h>
+#include <iostream>
+```
+Stop OpenTelemetry enrichment.
+
+```
+        Aws::Client::ClientConfiguration clientConfig;
+        // Optional: Set to the AWS Region (overrides config file).
+        // clientConfig.region = "us-east-1";
+        Aws::CloudWatch::CloudWatchClient cw(clientConfig);
+
+        Aws::CloudWatch::Model::StopOTelEnrichmentRequest request;
+
+        auto outcome = cw.StopOTelEnrichment(request);
+        if (!outcome.IsSuccess()) {
+            std::cerr << "Failed to stop OTel enrichment: "
+                      << outcome.GetError().GetMessage() << std::endl;
+        } else {
+            std::cout << "Successfully stopped OTel enrichment for this account."
+                      << std::endl;
+        }
+```
++  For API details, see [StopOTelEnrichment](https://docs.aws.amazon.com/goto/SdkForCpp/monitoring-2010-08-01/StopOTelEnrichment) in *AWS SDK for C\+\+ API Reference*.

@@ -86,6 +86,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[StreamSpecification](#cfn-dynamodb-globaltable-streamspecification)" : {{StreamSpecification}},
       "[TableName](#cfn-dynamodb-globaltable-tablename)" : {{String}},
       "[TimeToLiveSpecification](#cfn-dynamodb-globaltable-timetolivespecification)" : {{TimeToLiveSpecification}},
+      "[VectorIndexes](#cfn-dynamodb-globaltable-vectorindexes)" : {{[ VectorIndex, ... ]}},
       "[WarmThroughput](#cfn-dynamodb-globaltable-warmthroughput)" : {{WarmThroughput}},
       "[WriteOnDemandThroughputSettings](#cfn-dynamodb-globaltable-writeondemandthroughputsettings)" : {{WriteOnDemandThroughputSettings}},
       "[WriteProvisionedThroughputSettings](#cfn-dynamodb-globaltable-writeprovisionedthroughputsettings)" : {{WriteProvisionedThroughputSettings}}
@@ -125,6 +126,8 @@ Properties:
   [TableName](#cfn-dynamodb-globaltable-tablename): {{String}}
   [TimeToLiveSpecification](#cfn-dynamodb-globaltable-timetolivespecification): {{
     TimeToLiveSpecification}}
+  [VectorIndexes](#cfn-dynamodb-globaltable-vectorindexes): {{
+    - VectorIndex}}
   [WarmThroughput](#cfn-dynamodb-globaltable-warmthroughput): {{
     WarmThroughput}}
   [WriteOnDemandThroughputSettings](#cfn-dynamodb-globaltable-writeondemandthroughputsettings): {{
@@ -154,7 +157,7 @@ All replicas in your global table will have the same billing mode. If you use `P
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `GlobalSecondaryIndexes`  <a name="cfn-dynamodb-globaltable-globalsecondaryindexes"></a>
-Global secondary indexes to be created on the global table. You can create up to 20 global secondary indexes. Each replica in your global table will have the same global secondary index settings. You can only create or delete one global secondary index in a single stack operation.
+Global secondary indexes to be created on the global table. You can create up to 20 global secondary indexes. Each replica in your global table will have the same global secondary index settings. In a single stack operation, you can create or delete one index. This index can be a global secondary index or a vector index, but not one of each. To change more indexes, use a separate stack operation for each.
 Since the backfilling of an index could take a long time, CloudFormation does not wait for the index to become active. If a stack operation rolls back, CloudFormation might not delete an index that has been added. In that case, you will need to delete the index manually.
 *Required*: No
 *Type*: Array of [GlobalSecondaryIndex](aws-properties-dynamodb-globaltable-globalsecondaryindex.md)
@@ -247,6 +250,15 @@ If you specify a name, you cannot perform updates that require replacement of th
 Specifies the time to live (TTL) settings for the table. This setting will be applied to all replicas.
 *Required*: No
 *Type*: [TimeToLiveSpecification](aws-properties-dynamodb-globaltable-timetolivespecification.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`VectorIndexes`  <a name="cfn-dynamodb-globaltable-vectorindexes"></a>
+The vector indexes to create on the global table. Each vector index enables similarity search on a vector attribute.
+Vector indexes are supported only on tables that use on-demand capacity mode. To use vector indexes, you must set `BillingMode` to `PAY_PER_REQUEST`.
+In a single stack operation, you can create or delete one index. This index can be a global secondary index or a vector index, but not one of each. To change more indexes, use a separate stack operation for each.
+*Required*: No
+*Type*: Array of [VectorIndex](aws-properties-dynamodb-globaltable-vectorindex.md)
+*Minimum*: `1`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `WarmThroughput`  <a name="cfn-dynamodb-globaltable-warmthroughput"></a>

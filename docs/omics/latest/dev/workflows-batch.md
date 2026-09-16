@@ -32,7 +32,7 @@ With batch runs, you can:
 ## Batch run concepts
 <a name="batch-concepts"></a>
 + **Batch** — A collection of workflow runs that share common configuration, managed as a single resource with its own Amazon Resource Name (ARN) and lifecycle status.
-+ **Default run setting** (`defaultRunSetting`) — Workflow parameters shared across all runs in the batch, such as workflow ID, IAM role, output URI, and common parameters.
++ **Default run setting** (`defaultRunSetting`) — Workflow parameters shared across all runs in the batch, such as workflow ID, IAM role, output URI, session policy, and common parameters.
 + **Run-specific setting** (`inlineSettings` or `s3UriSettings`) — Per-run configurations that override or merge with the default run setting. Each entry must include a unique `runSettingId`.
 + **Run setting ID** (`runSettingId`) — A required, customer-provided unique identifier for each run configuration within a batch. After submission, use **ListRunsInBatch** to map each `runSettingId` to the HealthOmics-generated `runId`, allowing you to trace which run was created from which input configuration.
 + **Batch status** — The overall state of the batch operation. Possible values:
@@ -616,6 +616,26 @@ You can filter results using the following query parameters:
 | status | Filter by batch status. |
 | name | Filter by batch name. |
 | runGroupId | Filter by run group ID. |
+
+### Enable run metrics
+<a name="batch-enable-run-metrics"></a>
+
+Run metrics report near real-time resource utilization for the runs in a batch. To enable run metrics, the service role that you use for the batch must have the `cloudwatch:PutMetricData` permission. For more information, see [Run metrics for Private Workflows](monitoring-run-metrics.md).
+
+Add the following permission to the service role that you use for the batch.
+
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "cloudwatch:PutMetricData",
+      "Resource": "*"
+    }
+  ]
+}
+```
 
 ## Handling failed runs
 <a name="batch-handling-failures"></a>

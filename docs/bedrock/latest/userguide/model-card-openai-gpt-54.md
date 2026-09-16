@@ -19,7 +19,7 @@ GPT-5.4 brings frontier reasoning, coding, computer use, long-context workflows,
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
 + **Model lifecycle:** Active
-+ **Context window:** 272K tokens
++ **Context window:** 1M tokens
 + **Max output tokens:** N/A
 + **Marketplace product ID:** `prod-3bbohv3635iau`
 
@@ -53,10 +53,12 @@ The following tables show which endpoints and APIs are supported for GPT-5.4. Fo
 
 | **Messages** | **Responses** | **Chat Completions** | **Converse** | **Invoke** |
 | --- | --- | --- | --- | --- |
-| ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
+| ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
 
 **Note**
-This model is available on the `openai/v1/responses` path on the `bedrock-mantle` endpoint. This is different from the `v1/responses` path used by other models on the responses endpoint.
+On `bedrock-mantle`, both APIs use the `/openai/v1` base path, not `/v1`. Use either API with this model:
+For Responses, use `/openai/v1/responses`.
+For Chat Completions, use `/openai/v1/chat/completions`.
 
 ## Capabilities and Features
 <a name="model-card-openai-gpt-54-capabilities"></a>
@@ -72,17 +74,34 @@ This model is available on the `openai/v1/responses` path on the `bedrock-mantle
 ## Pricing
 <a name="model-card-openai-gpt-54-pricing"></a>
 
+All prices are in USD per 1 million tokens for the Standard tier.
+
+Commercial In-Region prices include a 10% fee over OpenAI rates. You do not need to add this fee.
+
+Long-context rates apply to all input and output tokens, not just tokens above 272K.
+
+*Priority and Flex tiers are not supported for this model.*
+
+### Commercial Regions — short context (272K input tokens or fewer)
+<a name="model-card-openai-gpt-54-pricing-commercial-short"></a>
+
 | **Inference option** | **Input** | **Input — 30m cache write** | **Input — cache read** | **Output** |
 | --- | --- | --- | --- | --- |
 | In-Region | $2.75 | — | $0.275 | $16.50 |
 
-**AWS GovCloud (US-West)**
+### Commercial Regions — long context (more than 272K input tokens)
+<a name="model-card-openai-gpt-54-pricing-commercial-long"></a>
+
+| **Inference option** | **Input** | **Input — 30m cache write** | **Input — cache read** | **Output** |
+| --- | --- | --- | --- | --- |
+| In-Region | $5.50 | — | $0.55 | $24.75 |
+
+### AWS GovCloud (US-West) — short context (272K input tokens or fewer)
+<a name="model-card-openai-gpt-54-pricing-govcloud-short"></a>
 
 | **Inference option** | **Input** | **Input — 30m cache write** | **Input — cache read** | **Output** |
 | --- | --- | --- | --- | --- |
 | In-Region | $3.30 | — | $0.33 | $19.80 |
-
-*All prices are per 1 million tokens. Pricing shown is for the Standard tier. Priority and Flex tiers are not supported for this model.*
 
 ## Programmatic Access
 <a name="model-card-openai-gpt-54-programmatic-access"></a>
@@ -136,8 +155,10 @@ Your AWS account has default quotas to maintain the performance of the service a
 
 **Step 3 - Get the SDK:** To use this getting started guide, you must have Python already installed. Then install the relevant software depending on the APIs you are using.
 
+For both APIs, choose the OpenAI SDK tab.
+
 ------
-#### [ Responses API ]
+#### [ OpenAI SDK ]
 
 ```
 pip install openai
@@ -145,7 +166,10 @@ pip install openai
 
 ------
 
-**Step 4 - Set environment variables:** Configure your environment to use the API key for authentication.
+### Step 4 - Set environment variables
+<a name="model-card-openai-gpt-54-sample-code-environment"></a>
+
+Configure your environment to use the API key for authentication.
 
 ------
 #### [ bedrock-mantle ]
@@ -157,10 +181,18 @@ OPENAI_BASE_URL="https://bedrock-mantle.us-west-2.api.aws/openai/v1"
 
 ------
 
-**Step 5 - Run your first inference request:** Save the file as `bedrock-first-request.py`
+### Step 5 - Run your first inference request
+<a name="model-card-openai-gpt-54-sample-code-request"></a>
+
+Save the file as `bedrock-first-request.py`
+
+#### bedrock-mantle
+<a name="model-card-openai-gpt-54-sample-code-mantle"></a>
+
+Use the settings from [Step 4 - Set environment variables](#model-card-openai-gpt-54-sample-code-environment). Choose the `bedrock-mantle` tab. The Chat tab uses the Chat Completions API.
 
 ------
-#### [ bedrock-mantle ]
+#### [ Responses API ]
 
 ```
 from openai import OpenAI
@@ -170,6 +202,21 @@ client = OpenAI()
 response = client.responses.create(
     model="openai.gpt-5.4",
     input="Can you explain the features of Amazon Bedrock?"
+)
+print(response)
+```
+
+------
+#### [ Chat ]
+
+```
+from openai import OpenAI
+
+client = OpenAI()
+
+response = client.chat.completions.create(
+    model="openai.gpt-5.4",
+    messages=[{"role": "user", "content": "Can you explain the features of Amazon Bedrock?"}]
 )
 print(response)
 ```

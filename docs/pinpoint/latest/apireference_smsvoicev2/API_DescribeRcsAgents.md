@@ -77,6 +77,14 @@ Required: No
       {
          "CreatedTimestamp": number,
          "DeletionProtectionEnabled": boolean,
+         "MessagingLimits": {
+            "DailyMessageCaps": {
+               "string" : number
+            },
+            "RateLimits": {
+               "string" : number
+            }
+         },
          "OptOutListName": "string",
          "PoolId": "string",
          "RcsAgentArn": "string",
@@ -166,5 +174,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/pinpoint-sms-voice-v2-2022-03-31/DescribeRcsAgents)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/pinpoint-sms-voice-v2-2022-03-31/DescribeRcsAgents)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/pinpoint-sms-voice-v2-2022-03-31/DescribeRcsAgents)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/pinpoint-sms-voice-v2-2022-03-31/DescribeRcsAgents)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/pinpoint-sms-voice-v2-2022-03-31/DescribeRcsAgents)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/pinpoint-sms-voice-v2-2022-03-31/DescribeRcsAgents)

@@ -14,7 +14,7 @@ An element in the search schema of a vector index.
 In the following list, the required parameters are described first.
 
  ** AttributeName **   <a name="DDB-Type-SearchSchemaElement-AttributeName"></a>
-The name of the attribute.
+The name of the attribute. This attribute must also be declared in the table's `AttributeDefinitions`.
 Type: String
 Length Constraints: Maximum length of 65535.
 Required: Yes

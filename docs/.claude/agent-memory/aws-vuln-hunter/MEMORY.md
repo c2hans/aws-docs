@@ -7,3 +7,4 @@
 - [AWS IdP-metadata / OIDC fetchers](reference_aws-idp-metadata-fetchers.md) — Cognito/WorkSpaces Web server-side metadata fetcher egress IPs, UAs, guard characterization
 - [Bedrock KB SSRF testing](reference_bedrock-kb-ssrf-testing.md) — how to build a KB for fetcher SSRF (OSS required, aoss SigV4 sha256, log oracle) + which containments held (finding 16)
 - [infra.json race + buffering traps](feedback_infra-json-race-and-buffering.md) — don't let background jobs share a state file; flush background python stdout
+- [EBS Volume Clones cross-account hunt](project_ebs-volume-clones-crossaccount.md) — RAM ec2:Volume + CopyVolumes + KMS re-encrypt: boundary held, all hypotheses refuted; RAM resource-policy is the enforcement point

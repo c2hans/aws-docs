@@ -337,7 +337,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/medialive-2017-10-14/ListEventBridgeRuleTemplates)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/medialive-2017-10-14/ListEventBridgeRuleTemplates)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/medialive-2017-10-14/ListEventBridgeRuleTemplates)
-+ [AWS SDK for Python](/goto/boto3/medialive-2017-10-14/ListEventBridgeRuleTemplates)
++ [AWS SDK for Python (Boto3)](/goto/boto3/medialive-2017-10-14/ListEventBridgeRuleTemplates)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/medialive-2017-10-14/ListEventBridgeRuleTemplates)
 
 ### CorsEventbridge\_rule\_templates
@@ -350,7 +350,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/medialive-2017-10-14/CorsEventbridge_rule_templates)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/medialive-2017-10-14/CorsEventbridge_rule_templates)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/medialive-2017-10-14/CorsEventbridge_rule_templates)
-+ [AWS SDK for Python](/goto/boto3/medialive-2017-10-14/CorsEventbridge_rule_templates)
++ [AWS SDK for Python (Boto3)](/goto/boto3/medialive-2017-10-14/CorsEventbridge_rule_templates)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/medialive-2017-10-14/CorsEventbridge_rule_templates)
 
 ### CreateEventBridgeRuleTemplate
@@ -363,5 +363,5 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/medialive-2017-10-14/CreateEventBridgeRuleTemplate)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/medialive-2017-10-14/CreateEventBridgeRuleTemplate)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/medialive-2017-10-14/CreateEventBridgeRuleTemplate)
-+ [AWS SDK for Python](/goto/boto3/medialive-2017-10-14/CreateEventBridgeRuleTemplate)
++ [AWS SDK for Python (Boto3)](/goto/boto3/medialive-2017-10-14/CreateEventBridgeRuleTemplate)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/medialive-2017-10-14/CreateEventBridgeRuleTemplate)

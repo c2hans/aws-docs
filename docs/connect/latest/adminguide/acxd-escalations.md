@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-escalations.html
 ---
 
-# Configuring escalations
+# Managing escalations
 <a name="acxd-escalations"></a>
 
 Escalations let an agentic CX designer conversation hand control back to a flow in Amazon Connect Customer when the user needs human support or the application should leave the conversational AI experience.
@@ -25,7 +25,7 @@ A common escalation pattern is:
 
 1. A **Transfer to queue** block transfers the customer to an agent.
 
-## Adding an escalation to a flow
+## Add an Escalate node
 <a name="acxd-escalations-add"></a>
 
 **To add an escalation to a flow**
@@ -50,7 +50,7 @@ Example escalation message:
 Connecting you to an agent now.
 ```
 
-## Passing escalation context
+## Pass context during escalation
 <a name="acxd-escalations-context"></a>
 
 You can pass context back to a Connect Customer flow from the Escalate node using a context variable.
@@ -71,7 +71,7 @@ To pass data, add one or more State modifications to the Escalate node in your a
 
 For example, you may set a context variable `{summary}` to a variable generated upstream by a Generative text node that summarized the system transcript.
 
-## Setting contact attributes in Connect Customer
+## Set returned context as contact attributes
 <a name="acxd-escalations-set-contact-attributes"></a>
 
 After the Agentic CX block's Escalation path, add a **Set contact attributes** block in a flow in Connect Customer.
@@ -116,7 +116,7 @@ A typical queue transfer sequence is:
 
 For example, if the AI determines that the user needs billing support, the escalation path can pass `customerIntent=billingSupport`. The Connect Customer flow can then use that value to route the customer to the correct queue.
 
-## Escalation context for agents
+## Use escalation context for the agent experience
 <a name="acxd-escalations-summary"></a>
 
 Escalation context helps the human agent understand what happened before the transfer.
@@ -139,7 +139,7 @@ requires agent verification. The customer provided their account email
 and confirmed they are the account holder.
 ```
 
-## Escalation design pattern
+## Recommended flow pattern
 <a name="acxd-escalations-design-pattern"></a>
 
 Use this pattern when designing escalation from agentic CX designer to Connect Customer:
@@ -162,7 +162,7 @@ Use this pattern when designing escalation from agentic CX designer to Connect C
 
 1. Route the contact with **Set working queue** and **Transfer to queue**.
 
-## Troubleshooting escalations
+## Common issues
 <a name="acxd-escalations-troubleshooting"></a>
 
 | Issue | Likely cause | Fix |

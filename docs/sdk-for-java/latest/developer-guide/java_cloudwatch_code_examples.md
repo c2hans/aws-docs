@@ -1694,6 +1694,37 @@ public class CloudWatchActions {
 ## Actions
 <a name="actions"></a>
 
+### `DeleteAlarmMuteRule`
+<a name="cloudwatch_DeleteAlarmMuteRule_java_topic"></a>
+
+The following code example shows how to use `DeleteAlarmMuteRule`.
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
+
+```
+    /**
+     * Deletes an alarm mute rule. The alarms it targeted resume firing their actions.
+     *
+     * @param cw   the CloudWatch client
+     * @param name the name of the mute rule
+     */
+    public static void deleteAlarmMuteRule(CloudWatchClient cw, String name) {
+        try {
+            cw.deleteAlarmMuteRule(DeleteAlarmMuteRuleRequest.builder()
+                    .alarmMuteRuleName(name)
+                    .build());
+
+            System.out.printf("Deleted alarm mute rule %s.%n", name);
+
+        } catch (CloudWatchException e) {
+            System.err.println(e.awsErrorDetails().errorMessage());
+            System.exit(1);
+        }
+    }
+```
++  For API details, see [DeleteAlarmMuteRule](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/DeleteAlarmMuteRule) in *AWS SDK for Java 2.x API Reference*.
+
 ### `DeleteAlarms`
 <a name="cloudwatch_DeleteAlarms_java_topic"></a>
 
@@ -1811,6 +1842,61 @@ The following code example shows how to use `DeleteDashboards`.
     }
 ```
 +  For API details, see [DeleteDashboards](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/DeleteDashboards) in *AWS SDK for Java 2.x API Reference*.
+
+### `DescribeAlarmContributors`
+<a name="cloudwatch_DescribeAlarmContributors_java_topic"></a>
+
+The following code example shows how to use `DescribeAlarmContributors`.
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
+
+```
+    /**
+     * Gets the contributors for a PromQL alarm. Each contributor is one series that the
+     * alarm's query matched, identified by its label set. This is how you find out which
+     * hosts, services, or pods are breaching, rather than only that something is.
+     *
+     * @param cw        the CloudWatch client
+     * @param alarmName the name of the PromQL alarm
+     * @return the list of contributors
+     */
+    public static List<AlarmContributor> describeAlarmContributors(CloudWatchClient cw, String alarmName) {
+        List<AlarmContributor> contributors = new ArrayList<>();
+        try {
+            String nextToken = null;
+            do {
+                DescribeAlarmContributorsRequest request = DescribeAlarmContributorsRequest.builder()
+                        .alarmName(alarmName)
+                        .nextToken(nextToken)
+                        .build();
+
+                DescribeAlarmContributorsResponse response = cw.describeAlarmContributors(request);
+                contributors.addAll(response.alarmContributors());
+                nextToken = response.nextToken();
+            } while (nextToken != null && !nextToken.isEmpty());
+
+            for (AlarmContributor contributor : contributors) {
+                StringBuilder labels = new StringBuilder();
+                for (Map.Entry<String, String> attribute : contributor.contributorAttributes().entrySet()) {
+                    if (labels.length() > 0) {
+                        labels.append(", ");
+                    }
+                    labels.append(attribute.getKey()).append("=").append(attribute.getValue());
+                }
+                System.out.printf("%s: %s%n", contributor.contributorId(), labels);
+                System.out.printf("  reason: %s%n", contributor.stateReason());
+            }
+            return contributors;
+
+        } catch (CloudWatchException e) {
+            System.err.println(e.awsErrorDetails().errorMessage());
+            System.exit(1);
+            return contributors;
+        }
+    }
+```
++  For API details, see [DescribeAlarmContributors](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/DescribeAlarmContributors) in *AWS SDK for Java 2.x API Reference*.
 
 ### `DescribeAlarmHistory`
 <a name="cloudwatch_DescribeAlarmHistory_java_topic"></a>
@@ -2197,6 +2283,41 @@ public class EnableAlarmActions {
 ```
 +  For API details, see [EnableAlarmActions](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/EnableAlarmActions) in *AWS SDK for Java 2.x API Reference*.
 
+### `GetAlarmMuteRule`
+<a name="cloudwatch_GetAlarmMuteRule_java_topic"></a>
+
+The following code example shows how to use `GetAlarmMuteRule`.
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
+
+```
+    /**
+     * Gets the full configuration of an alarm mute rule, including its schedule, the
+     * alarms it targets, and whether it is currently SCHEDULED, ACTIVE, or EXPIRED.
+     *
+     * @param cw   the CloudWatch client
+     * @param name the name of the mute rule
+     * @return the mute rule
+     */
+    public static GetAlarmMuteRuleResponse getAlarmMuteRule(CloudWatchClient cw, String name) {
+        try {
+            GetAlarmMuteRuleResponse response = cw.getAlarmMuteRule(GetAlarmMuteRuleRequest.builder()
+                    .alarmMuteRuleName(name)
+                    .build());
+
+            System.out.printf("Mute rule %s is %s.%n", response.name(), response.statusAsString());
+            return response;
+
+        } catch (CloudWatchException e) {
+            System.err.println(e.awsErrorDetails().errorMessage());
+            System.exit(1);
+            return null;
+        }
+    }
+```
++  For API details, see [GetAlarmMuteRule](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/GetAlarmMuteRule) in *AWS SDK for Java 2.x API Reference*.
+
 ### `GetMetricData`
 <a name="cloudwatch_GetMetricData_java_topic"></a>
 
@@ -2408,6 +2529,83 @@ The following code example shows how to use `GetMetricWidgetImage`.
 ```
 +  For API details, see [GetMetricWidgetImage](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/GetMetricWidgetImage) in *AWS SDK for Java 2.x API Reference*.
 
+### `GetOTelEnrichment`
+<a name="cloudwatch_GetOTelEnrichment_java_topic"></a>
+
+The following code example shows how to use `GetOTelEnrichment`.
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
+
+```
+    /**
+     * Gets the current OTel enrichment status for the account.
+     *
+     * @param cw the CloudWatch client
+     * @return the status, either {@code Running} or {@code Stopped}
+     */
+    public static String getOTelEnrichmentStatus(CloudWatchClient cw) {
+        try {
+            String status = cw.getOTelEnrichment(GetOTelEnrichmentRequest.builder().build())
+                    .statusAsString();
+            System.out.printf("OTel enrichment status is %s.%n", status);
+            return status;
+
+        } catch (CloudWatchException e) {
+            System.err.println(e.awsErrorDetails().errorMessage());
+            System.exit(1);
+            return null;
+        }
+    }
+```
++  For API details, see [GetOTelEnrichment](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/GetOTelEnrichment) in *AWS SDK for Java 2.x API Reference*.
+
+### `ListAlarmMuteRules`
+<a name="cloudwatch_ListAlarmMuteRules_java_topic"></a>
+
+The following code example shows how to use `ListAlarmMuteRules`.
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
+
+```
+    /**
+     * Lists the alarm mute rules in the account, optionally filtered to the rules that
+     * target one alarm.
+     *
+     * @param cw        the CloudWatch client
+     * @param alarmName when non-null, only rules that target this alarm are returned
+     * @return the list of mute rule summaries
+     */
+    public static List<AlarmMuteRuleSummary> listAlarmMuteRules(CloudWatchClient cw, String alarmName) {
+        List<AlarmMuteRuleSummary> summaries = new ArrayList<>();
+        try {
+            String nextToken = null;
+            do {
+                ListAlarmMuteRulesRequest request = ListAlarmMuteRulesRequest.builder()
+                        .alarmName(alarmName)
+                        .nextToken(nextToken)
+                        .build();
+
+                ListAlarmMuteRulesResponse response = cw.listAlarmMuteRules(request);
+                summaries.addAll(response.alarmMuteRuleSummaries());
+                nextToken = response.nextToken();
+            } while (nextToken != null && !nextToken.isEmpty());
+
+            for (AlarmMuteRuleSummary summary : summaries) {
+                System.out.printf("%s (%s)%n", summary.alarmMuteRuleArn(), summary.statusAsString());
+            }
+            return summaries;
+
+        } catch (CloudWatchException e) {
+            System.err.println(e.awsErrorDetails().errorMessage());
+            System.exit(1);
+            return summaries;
+        }
+    }
+```
++  For API details, see [ListAlarmMuteRules](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/ListAlarmMuteRules) in *AWS SDK for Java 2.x API Reference*.
+
 ### `ListDashboards`
 <a name="cloudwatch_ListDashboards_java_topic"></a>
 
@@ -2478,6 +2676,70 @@ The following code example shows how to use `ListMetrics`.
     }
 ```
 +  For API details, see [ListMetrics](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/ListMetrics) in *AWS SDK for Java 2.x API Reference*.
+
+### `PutAlarmMuteRule`
+<a name="cloudwatch_PutAlarmMuteRule_java_topic"></a>
+
+The following code example shows how to use `PutAlarmMuteRule`.
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
+
+```
+    /**
+     * Creates or updates an alarm mute rule. While a mute rule is active the targeted
+     * alarms keep evaluating and keep transitioning between states, but their configured
+     * actions do not fire. This is the supported way to suppress notifications during a
+     * known maintenance window instead of disabling alarm actions and hoping someone
+     * remembers to turn them back on.
+     *
+     * @param cw         the CloudWatch client
+     * @param name       the name of the mute rule
+     * @param expression when the rule activates. For a recurring window, use a
+     *                   five-field cron expression,
+     *                   {@code cron(Minutes Hours Day-of-month Month Day-of-week)},
+     *                   such as {@code cron(0 2 * * SUN)} for every Sunday at 2:00 AM.
+     *                   Note that this is five fields, not the six that Amazon
+     *                   EventBridge uses. For a one-time window, use
+     *                   {@code at(yyyy-MM-ddThh:mm)}, such as
+     *                   {@code at(2026-09-05T02:00)}.
+     * @param duration   how long the mute window lasts once it activates, in ISO 8601
+     *                   duration format, from {@code PT1M} (one minute) to
+     *                   {@code P15D} (15 days). For example, {@code PT2H} is two hours
+     *                   and {@code P2DT12H} is two days and 12 hours.
+     * @param timezone   the time zone the expression is evaluated in, such as
+     *                   {@code America/Los_Angeles}
+     * @param alarmNames the names of up to 100 alarms to mute. If empty, the rule
+     *                   applies to all alarms in the account.
+     */
+    public static void putAlarmMuteRule(CloudWatchClient cw, String name, String expression, String duration,
+            String timezone, List<String> alarmNames) {
+        try {
+            Schedule schedule = Schedule.builder()
+                    .expression(expression)
+                    .duration(duration)
+                    .timezone(timezone)
+                    .build();
+
+            PutAlarmMuteRuleRequest.Builder request = PutAlarmMuteRuleRequest.builder()
+                    .name(name)
+                    .description("Mute rule created by the AWS SDK for Java 2.x example.")
+                    .rule(Rule.builder().schedule(schedule).build());
+
+            if (alarmNames != null && !alarmNames.isEmpty()) {
+                request.muteTargets(MuteTargets.builder().alarmNames(alarmNames).build());
+            }
+
+            cw.putAlarmMuteRule(request.build());
+            System.out.printf("Put alarm mute rule %s.%n", name);
+
+        } catch (CloudWatchException e) {
+            System.err.println(e.awsErrorDetails().errorMessage());
+            System.exit(1);
+        }
+    }
+```
++  For API details, see [PutAlarmMuteRule](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/PutAlarmMuteRule) in *AWS SDK for Java 2.x API Reference*.
 
 ### `PutAnomalyDetector`
 <a name="cloudwatch_PutAnomalyDetector_java_topic"></a>
@@ -2588,6 +2850,67 @@ The following code example shows how to use `PutMetricAlarm`.
 
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
+Create an alarm that evaluates a PromQL query against OpenTelemetry metrics.
+
+```
+    /**
+     * Creates an alarm that evaluates a PromQL query.
+     *
+     * <p>A PromQL alarm differs from a classic metric alarm in a few ways. The query
+     * can match many series at once, and each matching series is tracked separately as
+     * a contributor. Instead of counting breaching periods, you specify durations: a
+     * contributor moves to ALARM after it breaches continuously for the pending period,
+     * and back to OK after it stops breaching for the recovery period. A PromQL alarm
+     * starts in the OK state rather than INSUFFICIENT_DATA.
+     *
+     * <p>{@link EvaluationCriteria} is a union and is mutually exclusive with the
+     * classic {@code metricName} and {@code metrics} parameters. When you use it you
+     * must also set {@code evaluationInterval}, and you must not set {@code period},
+     * {@code statistic}, {@code threshold}, {@code comparisonOperator},
+     * {@code evaluationPeriods}, {@code datapointsToAlarm}, or
+     * {@code treatMissingData}.
+     *
+     * @param cw                 the CloudWatch client
+     * @param alarmName          the name of the alarm, unique within the Region
+     * @param query              the PromQL query to evaluate, such as
+     *                           {@code avg(cpu_utilization_percent) > 80}. The
+     *                           comparison belongs in the query itself; there is no
+     *                           separate threshold parameter.
+     * @param evaluationInterval how often, in seconds, to run the query. Valid values
+     *                           are 10, 20, 30, and any multiple of 60, up to 3600.
+     * @param pendingPeriod      how long, in seconds, a contributor must breach
+     *                           continuously before it moves to ALARM
+     * @param recoveryPeriod     how long, in seconds, a contributor must stop breaching
+     *                           before it moves back to OK
+     */
+    public static void putPromQLMetricAlarm(CloudWatchClient cw, String alarmName, String query,
+            int evaluationInterval, int pendingPeriod, int recoveryPeriod) {
+        try {
+            AlarmPromQLCriteria promQLCriteria = AlarmPromQLCriteria.builder()
+                    .query(query)
+                    .pendingPeriod(pendingPeriod)
+                    .recoveryPeriod(recoveryPeriod)
+                    .build();
+
+            PutMetricAlarmRequest request = PutMetricAlarmRequest.builder()
+                    .alarmName(alarmName)
+                    .alarmDescription("PromQL alarm created by the AWS SDK for Java 2.x example.")
+                    .evaluationCriteria(EvaluationCriteria.builder()
+                            .promQLCriteria(promQLCriteria)
+                            .build())
+                    .evaluationInterval(evaluationInterval)
+                    .build();
+
+            cw.putMetricAlarm(request);
+            System.out.printf("Created PromQL alarm %s for query %s.%n", alarmName, query);
+
+        } catch (CloudWatchException e) {
+            System.err.println(e.awsErrorDetails().errorMessage());
+            System.exit(1);
+        }
+    }
+```
+Create an alarm that evaluates a single CloudWatch metric.
 
 ```
     /**
@@ -2725,6 +3048,68 @@ The following code example shows how to use `PutMetricData`.
 ```
 +  For API details, see [PutMetricData](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/PutMetricData) in *AWS SDK for Java 2.x API Reference*.
 
+### `StartOTelEnrichment`
+<a name="cloudwatch_StartOTelEnrichment_java_topic"></a>
+
+The following code example shows how to use `StartOTelEnrichment`.
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
+
+```
+    /**
+     * Turns on OTel enrichment for the account. Once enrichment is running, CloudWatch
+     * vended metrics that carry a resource identifier dimension, such as the EC2
+     * CPUUtilization metric with its InstanceId dimension, are decorated with resource
+     * ARN and resource tag labels and become queryable with PromQL.
+     *
+     * <p>Resource tags on telemetry must already be enabled for the account before you
+     * call this operation.
+     *
+     * @param cw the CloudWatch client
+     */
+    public static void startOTelEnrichment(CloudWatchClient cw) {
+        try {
+            cw.startOTelEnrichment(StartOTelEnrichmentRequest.builder().build());
+            System.out.println("Started OTel enrichment for this account.");
+
+        } catch (CloudWatchException e) {
+            System.err.println(e.awsErrorDetails().errorMessage());
+            System.exit(1);
+        }
+    }
+```
++  For API details, see [StartOTelEnrichment](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/StartOTelEnrichment) in *AWS SDK for Java 2.x API Reference*.
+
+### `StopOTelEnrichment`
+<a name="cloudwatch_StopOTelEnrichment_java_topic"></a>
+
+The following code example shows how to use `StopOTelEnrichment`.
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
+
+```
+    /**
+     * Turns off OTel enrichment for the account. Existing PromQL alarms are not
+     * deleted, but vended metrics stop being enriched with resource ARN and tag labels,
+     * so queries that select on those labels stop matching.
+     *
+     * @param cw the CloudWatch client
+     */
+    public static void stopOTelEnrichment(CloudWatchClient cw) {
+        try {
+            cw.stopOTelEnrichment(StopOTelEnrichmentRequest.builder().build());
+            System.out.println("Stopped OTel enrichment for this account.");
+
+        } catch (CloudWatchException e) {
+            System.err.println(e.awsErrorDetails().errorMessage());
+            System.exit(1);
+        }
+    }
+```
++  For API details, see [StopOTelEnrichment](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/StopOTelEnrichment) in *AWS SDK for Java 2.x API Reference*.
+
 ## Scenarios
 <a name="scenarios"></a>
 
@@ -2740,3 +3125,352 @@ The following code example shows how to configure an application's use of Dynamo
 **Services used in this example**
 + CloudWatch
 + DynamoDB
+
+### Send OpenTelemetry metrics and alarm on them with PromQL
+<a name="cloudwatch_Scenario_OTelMetrics_java_topic"></a>
+
+The following code example shows how to:
++ Send OTLP metrics to the CloudWatch metrics endpoint with an OpenTelemetry Collector.
++ Start OpenTelemetry enrichment so CloudWatch correlates those metrics with your resources.
++ Create an alarm that evaluates a PromQL query across every series the query returns.
++ Inspect the individual series, called contributors, that put the alarm in ALARM state.
++ Mute the alarm for a maintenance window, then clean up.
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
+A wrapper class for the CloudWatch OpenTelemetry SDK methods.
+
+```
+import software.amazon.awssdk.services.cloudwatch.CloudWatchClient;
+import software.amazon.awssdk.services.cloudwatch.model.AlarmContributor;
+import software.amazon.awssdk.services.cloudwatch.model.AlarmMuteRuleSummary;
+import software.amazon.awssdk.services.cloudwatch.model.AlarmPromQLCriteria;
+import software.amazon.awssdk.services.cloudwatch.model.CloudWatchException;
+import software.amazon.awssdk.services.cloudwatch.model.DeleteAlarmMuteRuleRequest;
+import software.amazon.awssdk.services.cloudwatch.model.DescribeAlarmContributorsRequest;
+import software.amazon.awssdk.services.cloudwatch.model.DescribeAlarmContributorsResponse;
+import software.amazon.awssdk.services.cloudwatch.model.EvaluationCriteria;
+import software.amazon.awssdk.services.cloudwatch.model.GetAlarmMuteRuleRequest;
+import software.amazon.awssdk.services.cloudwatch.model.GetAlarmMuteRuleResponse;
+import software.amazon.awssdk.services.cloudwatch.model.GetOTelEnrichmentRequest;
+import software.amazon.awssdk.services.cloudwatch.model.ListAlarmMuteRulesRequest;
+import software.amazon.awssdk.services.cloudwatch.model.ListAlarmMuteRulesResponse;
+import software.amazon.awssdk.services.cloudwatch.model.MuteTargets;
+import software.amazon.awssdk.services.cloudwatch.model.PutAlarmMuteRuleRequest;
+import software.amazon.awssdk.services.cloudwatch.model.PutMetricAlarmRequest;
+import software.amazon.awssdk.services.cloudwatch.model.Rule;
+import software.amazon.awssdk.services.cloudwatch.model.Schedule;
+import software.amazon.awssdk.services.cloudwatch.model.StartOTelEnrichmentRequest;
+import software.amazon.awssdk.services.cloudwatch.model.StopOTelEnrichmentRequest;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+public class CloudWatchOTelActions {
+
+    /**
+     * Turns on OTel enrichment for the account. Once enrichment is running, CloudWatch
+     * vended metrics that carry a resource identifier dimension, such as the EC2
+     * CPUUtilization metric with its InstanceId dimension, are decorated with resource
+     * ARN and resource tag labels and become queryable with PromQL.
+     *
+     * <p>Resource tags on telemetry must already be enabled for the account before you
+     * call this operation.
+     *
+     * @param cw the CloudWatch client
+     */
+    public static void startOTelEnrichment(CloudWatchClient cw) {
+        try {
+            cw.startOTelEnrichment(StartOTelEnrichmentRequest.builder().build());
+            System.out.println("Started OTel enrichment for this account.");
+
+        } catch (CloudWatchException e) {
+            System.err.println(e.awsErrorDetails().errorMessage());
+            System.exit(1);
+        }
+    }
+
+    /**
+     * Gets the current OTel enrichment status for the account.
+     *
+     * @param cw the CloudWatch client
+     * @return the status, either {@code Running} or {@code Stopped}
+     */
+    public static String getOTelEnrichmentStatus(CloudWatchClient cw) {
+        try {
+            String status = cw.getOTelEnrichment(GetOTelEnrichmentRequest.builder().build())
+                    .statusAsString();
+            System.out.printf("OTel enrichment status is %s.%n", status);
+            return status;
+
+        } catch (CloudWatchException e) {
+            System.err.println(e.awsErrorDetails().errorMessage());
+            System.exit(1);
+            return null;
+        }
+    }
+
+    /**
+     * Turns off OTel enrichment for the account. Existing PromQL alarms are not
+     * deleted, but vended metrics stop being enriched with resource ARN and tag labels,
+     * so queries that select on those labels stop matching.
+     *
+     * @param cw the CloudWatch client
+     */
+    public static void stopOTelEnrichment(CloudWatchClient cw) {
+        try {
+            cw.stopOTelEnrichment(StopOTelEnrichmentRequest.builder().build());
+            System.out.println("Stopped OTel enrichment for this account.");
+
+        } catch (CloudWatchException e) {
+            System.err.println(e.awsErrorDetails().errorMessage());
+            System.exit(1);
+        }
+    }
+
+    /**
+     * Creates an alarm that evaluates a PromQL query.
+     *
+     * <p>A PromQL alarm differs from a classic metric alarm in a few ways. The query
+     * can match many series at once, and each matching series is tracked separately as
+     * a contributor. Instead of counting breaching periods, you specify durations: a
+     * contributor moves to ALARM after it breaches continuously for the pending period,
+     * and back to OK after it stops breaching for the recovery period. A PromQL alarm
+     * starts in the OK state rather than INSUFFICIENT_DATA.
+     *
+     * <p>{@link EvaluationCriteria} is a union and is mutually exclusive with the
+     * classic {@code metricName} and {@code metrics} parameters. When you use it you
+     * must also set {@code evaluationInterval}, and you must not set {@code period},
+     * {@code statistic}, {@code threshold}, {@code comparisonOperator},
+     * {@code evaluationPeriods}, {@code datapointsToAlarm}, or
+     * {@code treatMissingData}.
+     *
+     * @param cw                 the CloudWatch client
+     * @param alarmName          the name of the alarm, unique within the Region
+     * @param query              the PromQL query to evaluate, such as
+     *                           {@code avg(cpu_utilization_percent) > 80}. The
+     *                           comparison belongs in the query itself; there is no
+     *                           separate threshold parameter.
+     * @param evaluationInterval how often, in seconds, to run the query. Valid values
+     *                           are 10, 20, 30, and any multiple of 60, up to 3600.
+     * @param pendingPeriod      how long, in seconds, a contributor must breach
+     *                           continuously before it moves to ALARM
+     * @param recoveryPeriod     how long, in seconds, a contributor must stop breaching
+     *                           before it moves back to OK
+     */
+    public static void putPromQLMetricAlarm(CloudWatchClient cw, String alarmName, String query,
+            int evaluationInterval, int pendingPeriod, int recoveryPeriod) {
+        try {
+            AlarmPromQLCriteria promQLCriteria = AlarmPromQLCriteria.builder()
+                    .query(query)
+                    .pendingPeriod(pendingPeriod)
+                    .recoveryPeriod(recoveryPeriod)
+                    .build();
+
+            PutMetricAlarmRequest request = PutMetricAlarmRequest.builder()
+                    .alarmName(alarmName)
+                    .alarmDescription("PromQL alarm created by the AWS SDK for Java 2.x example.")
+                    .evaluationCriteria(EvaluationCriteria.builder()
+                            .promQLCriteria(promQLCriteria)
+                            .build())
+                    .evaluationInterval(evaluationInterval)
+                    .build();
+
+            cw.putMetricAlarm(request);
+            System.out.printf("Created PromQL alarm %s for query %s.%n", alarmName, query);
+
+        } catch (CloudWatchException e) {
+            System.err.println(e.awsErrorDetails().errorMessage());
+            System.exit(1);
+        }
+    }
+
+    /**
+     * Gets the contributors for a PromQL alarm. Each contributor is one series that the
+     * alarm's query matched, identified by its label set. This is how you find out which
+     * hosts, services, or pods are breaching, rather than only that something is.
+     *
+     * @param cw        the CloudWatch client
+     * @param alarmName the name of the PromQL alarm
+     * @return the list of contributors
+     */
+    public static List<AlarmContributor> describeAlarmContributors(CloudWatchClient cw, String alarmName) {
+        List<AlarmContributor> contributors = new ArrayList<>();
+        try {
+            String nextToken = null;
+            do {
+                DescribeAlarmContributorsRequest request = DescribeAlarmContributorsRequest.builder()
+                        .alarmName(alarmName)
+                        .nextToken(nextToken)
+                        .build();
+
+                DescribeAlarmContributorsResponse response = cw.describeAlarmContributors(request);
+                contributors.addAll(response.alarmContributors());
+                nextToken = response.nextToken();
+            } while (nextToken != null && !nextToken.isEmpty());
+
+            for (AlarmContributor contributor : contributors) {
+                StringBuilder labels = new StringBuilder();
+                for (Map.Entry<String, String> attribute : contributor.contributorAttributes().entrySet()) {
+                    if (labels.length() > 0) {
+                        labels.append(", ");
+                    }
+                    labels.append(attribute.getKey()).append("=").append(attribute.getValue());
+                }
+                System.out.printf("%s: %s%n", contributor.contributorId(), labels);
+                System.out.printf("  reason: %s%n", contributor.stateReason());
+            }
+            return contributors;
+
+        } catch (CloudWatchException e) {
+            System.err.println(e.awsErrorDetails().errorMessage());
+            System.exit(1);
+            return contributors;
+        }
+    }
+
+    /**
+     * Creates or updates an alarm mute rule. While a mute rule is active the targeted
+     * alarms keep evaluating and keep transitioning between states, but their configured
+     * actions do not fire. This is the supported way to suppress notifications during a
+     * known maintenance window instead of disabling alarm actions and hoping someone
+     * remembers to turn them back on.
+     *
+     * @param cw         the CloudWatch client
+     * @param name       the name of the mute rule
+     * @param expression when the rule activates. For a recurring window, use a
+     *                   five-field cron expression,
+     *                   {@code cron(Minutes Hours Day-of-month Month Day-of-week)},
+     *                   such as {@code cron(0 2 * * SUN)} for every Sunday at 2:00 AM.
+     *                   Note that this is five fields, not the six that Amazon
+     *                   EventBridge uses. For a one-time window, use
+     *                   {@code at(yyyy-MM-ddThh:mm)}, such as
+     *                   {@code at(2026-09-05T02:00)}.
+     * @param duration   how long the mute window lasts once it activates, in ISO 8601
+     *                   duration format, from {@code PT1M} (one minute) to
+     *                   {@code P15D} (15 days). For example, {@code PT2H} is two hours
+     *                   and {@code P2DT12H} is two days and 12 hours.
+     * @param timezone   the time zone the expression is evaluated in, such as
+     *                   {@code America/Los_Angeles}
+     * @param alarmNames the names of up to 100 alarms to mute. If empty, the rule
+     *                   applies to all alarms in the account.
+     */
+    public static void putAlarmMuteRule(CloudWatchClient cw, String name, String expression, String duration,
+            String timezone, List<String> alarmNames) {
+        try {
+            Schedule schedule = Schedule.builder()
+                    .expression(expression)
+                    .duration(duration)
+                    .timezone(timezone)
+                    .build();
+
+            PutAlarmMuteRuleRequest.Builder request = PutAlarmMuteRuleRequest.builder()
+                    .name(name)
+                    .description("Mute rule created by the AWS SDK for Java 2.x example.")
+                    .rule(Rule.builder().schedule(schedule).build());
+
+            if (alarmNames != null && !alarmNames.isEmpty()) {
+                request.muteTargets(MuteTargets.builder().alarmNames(alarmNames).build());
+            }
+
+            cw.putAlarmMuteRule(request.build());
+            System.out.printf("Put alarm mute rule %s.%n", name);
+
+        } catch (CloudWatchException e) {
+            System.err.println(e.awsErrorDetails().errorMessage());
+            System.exit(1);
+        }
+    }
+
+    /**
+     * Gets the full configuration of an alarm mute rule, including its schedule, the
+     * alarms it targets, and whether it is currently SCHEDULED, ACTIVE, or EXPIRED.
+     *
+     * @param cw   the CloudWatch client
+     * @param name the name of the mute rule
+     * @return the mute rule
+     */
+    public static GetAlarmMuteRuleResponse getAlarmMuteRule(CloudWatchClient cw, String name) {
+        try {
+            GetAlarmMuteRuleResponse response = cw.getAlarmMuteRule(GetAlarmMuteRuleRequest.builder()
+                    .alarmMuteRuleName(name)
+                    .build());
+
+            System.out.printf("Mute rule %s is %s.%n", response.name(), response.statusAsString());
+            return response;
+
+        } catch (CloudWatchException e) {
+            System.err.println(e.awsErrorDetails().errorMessage());
+            System.exit(1);
+            return null;
+        }
+    }
+
+    /**
+     * Lists the alarm mute rules in the account, optionally filtered to the rules that
+     * target one alarm.
+     *
+     * @param cw        the CloudWatch client
+     * @param alarmName when non-null, only rules that target this alarm are returned
+     * @return the list of mute rule summaries
+     */
+    public static List<AlarmMuteRuleSummary> listAlarmMuteRules(CloudWatchClient cw, String alarmName) {
+        List<AlarmMuteRuleSummary> summaries = new ArrayList<>();
+        try {
+            String nextToken = null;
+            do {
+                ListAlarmMuteRulesRequest request = ListAlarmMuteRulesRequest.builder()
+                        .alarmName(alarmName)
+                        .nextToken(nextToken)
+                        .build();
+
+                ListAlarmMuteRulesResponse response = cw.listAlarmMuteRules(request);
+                summaries.addAll(response.alarmMuteRuleSummaries());
+                nextToken = response.nextToken();
+            } while (nextToken != null && !nextToken.isEmpty());
+
+            for (AlarmMuteRuleSummary summary : summaries) {
+                System.out.printf("%s (%s)%n", summary.alarmMuteRuleArn(), summary.statusAsString());
+            }
+            return summaries;
+
+        } catch (CloudWatchException e) {
+            System.err.println(e.awsErrorDetails().errorMessage());
+            System.exit(1);
+            return summaries;
+        }
+    }
+
+    /**
+     * Deletes an alarm mute rule. The alarms it targeted resume firing their actions.
+     *
+     * @param cw   the CloudWatch client
+     * @param name the name of the mute rule
+     */
+    public static void deleteAlarmMuteRule(CloudWatchClient cw, String name) {
+        try {
+            cw.deleteAlarmMuteRule(DeleteAlarmMuteRuleRequest.builder()
+                    .alarmMuteRuleName(name)
+                    .build());
+
+            System.out.printf("Deleted alarm mute rule %s.%n", name);
+
+        } catch (CloudWatchException e) {
+            System.err.println(e.awsErrorDetails().errorMessage());
+            System.exit(1);
+        }
+    }
+}
+```
++ For API details, see the following topics in *AWS SDK for Java 2.x API Reference*.
+  + [DeleteAlarmMuteRule](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/DeleteAlarmMuteRule)
+  + [DeleteAlarms](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/DeleteAlarms)
+  + [DescribeAlarmContributors](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/DescribeAlarmContributors)
+  + [GetAlarmMuteRule](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/GetAlarmMuteRule)
+  + [GetOTelEnrichment](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/GetOTelEnrichment)
+  + [ListAlarmMuteRules](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/ListAlarmMuteRules)
+  + [PutAlarmMuteRule](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/PutAlarmMuteRule)
+  + [PutMetricAlarm](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/PutMetricAlarm)
+  + [StartOTelEnrichment](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/StartOTelEnrichment)
+  + [StopOTelEnrichment](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/StopOTelEnrichment)

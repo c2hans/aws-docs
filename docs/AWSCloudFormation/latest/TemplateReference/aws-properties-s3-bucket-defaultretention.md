@@ -24,6 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[Days](#cfn-s3-bucket-defaultretention-days)" : {{Integer}},
+  "[DefaultEventHold](#cfn-s3-bucket-defaultretention-defaulteventhold)" : {{DefaultEventHold}},
   "[Mode](#cfn-s3-bucket-defaultretention-mode)" : {{String}},
   "[Years](#cfn-s3-bucket-defaultretention-years)" : {{Integer}}
 }
@@ -34,6 +35,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [Days](#cfn-s3-bucket-defaultretention-days): {{Integer}}
+  [DefaultEventHold](#cfn-s3-bucket-defaultretention-defaulteventhold): {{
+    DefaultEventHold}}
   [Mode](#cfn-s3-bucket-defaultretention-mode): {{String}}
   [Years](#cfn-s3-bucket-defaultretention-years): {{Integer}}
 ```
@@ -45,6 +48,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 The number of days that you want to specify for the default retention period. If Object Lock is turned on, you must specify `Mode` and specify either `Days` or `Years`.
 *Required*: Conditional
 *Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`DefaultEventHold`  <a name="cfn-s3-bucket-defaultretention-defaulteventhold"></a>
+The default Object Lock event hold duration that you want to apply to new objects placed in the specified bucket. When the event hold is released, Amazon S3 retains the object version for this duration.
+If you specify both a default retention period (`Days` or `Years`) and a `DefaultEventHold`, the event hold duration can't exceed the default retention period.
+*Required*: No
+*Type*: [DefaultEventHold](aws-properties-s3-bucket-defaulteventhold.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Mode`  <a name="cfn-s3-bucket-defaultretention-mode"></a>

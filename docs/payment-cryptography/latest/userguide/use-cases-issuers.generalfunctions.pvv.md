@@ -9,6 +9,7 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/us
 + [Create the key(s)](#use-cases-issuers.generalfunctions.pvv.setup)
 + [Generate a random pin, generate PVV and return the encrypted PIN and PVV](#use-cases-issuers.generalfunctions.pvv.generate)
 + [Validate encrypted PIN using PVV method](#use-cases-issuers.generalfunctions.pvv.verify)
++ [User Managed PINs](use-cases-issuers.generalfunctions.usermanagedpins.md)
 
 ## Create the key(s)
 <a name="use-cases-issuers.generalfunctions.pvv.setup"></a>

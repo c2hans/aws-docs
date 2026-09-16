@@ -67,7 +67,7 @@ Pattern: `^[-_A-Za-z-0-9][-_A-Za-z0-9 ]{1,126}[-_A-Za-z-0-9]$`
 Required: No
 
  ** placement **   <a name="imagebuilder-Type-InfrastructureConfiguration-placement"></a>
-The instance placement settings that define where the instances that are launched from your image will run.
+The instance placement settings that define where the instances that are launched from your image run.
 Type: [Placement](API_Placement.md) object
 Required: No
 
@@ -87,7 +87,7 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
  ** snsTopicArn **   <a name="imagebuilder-Type-InfrastructureConfiguration-snsTopicArn"></a>
-The Amazon Resource Name (ARN) for the SNS topic to which we send image build event notifications.
+The Amazon Resource Name (ARN) of the SNS topic to which Image Builder sends image build event notifications.
 EC2 Image Builder is unable to send notifications to SNS topics that are encrypted using keys from other accounts. The key that is used to encrypt the SNS topic must reside in the account that the Image Builder service runs under.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.

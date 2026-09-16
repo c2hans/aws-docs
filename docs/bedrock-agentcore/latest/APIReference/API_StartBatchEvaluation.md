@@ -31,6 +31,7 @@ Content-type: application/json
       }
    ],
    "kmsKeyArn": "{{string}}",
+   "outputConfig": { ... },
    "tags": {
       "{{string}}" : "{{string}}"
    }
@@ -95,6 +96,12 @@ The ARN of the AWS KMS key used to encrypt evaluation data. If provided, custome
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `arn:aws(|-cn|-us-gov):kms:[a-zA-Z0-9-]*:[0-9]{12}:key/[a-zA-Z0-9-]{36}`
+Required: No
+
+ ** [outputConfig](#API_StartBatchEvaluation_RequestSyntax) **   <a name="BedrockAgentCore-StartBatchEvaluation-request-outputConfig"></a>
+Output destination configuration.
+Type: [OutputConfig](API_OutputConfig.md) object
+ **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: No
 
  ** [tags](#API_StartBatchEvaluation_RequestSyntax) **   <a name="BedrockAgentCore-StartBatchEvaluation-request-tags"></a>
@@ -248,5 +255,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/bedrock-agentcore-2024-02-28/StartBatchEvaluation)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/bedrock-agentcore-2024-02-28/StartBatchEvaluation)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/bedrock-agentcore-2024-02-28/StartBatchEvaluation)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/bedrock-agentcore-2024-02-28/StartBatchEvaluation)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/bedrock-agentcore-2024-02-28/StartBatchEvaluation)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/bedrock-agentcore-2024-02-28/StartBatchEvaluation)

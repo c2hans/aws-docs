@@ -7,6 +7,10 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/working-with-
 
 Following, you can find instructions for creating, managing, and maintaining your RDS Custom for SQL Server DB instances.
 
+For information about using Windows Authentication with RDS Custom for SQL Server DB instances, see [Working with Microsoft Active Directory with RDS Custom for SQL Server](custom-sqlserver-WinAuth.md).
+
+For information about copying a DB snapshot for RDS Custom for SQL Server, see [Copying an Amazon RDS Custom for SQL Server DB snapshot](custom-copying-snapshot-sqlserver.md).
+
 **Topics**
 + [RDS Custom for SQL Server workflow](custom-sqlserver.workflow.md)
 + [Requirements and limitations for Amazon RDS Custom for SQL Server](custom-reqs-limits-MS.md)

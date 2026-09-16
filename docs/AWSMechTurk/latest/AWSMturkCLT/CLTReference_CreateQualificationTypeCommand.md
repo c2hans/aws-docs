@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkCLT/CLTReference_CreateQualificationTypeCommand.html
 ---
 
+**Amazon Mechanical Turk will permanently close on September 30, 2026.** For Workers and Requesters currently using the service, visit our [Amazon Mechanical Turk help page](https://www.mturk.com/help) to learn how you can prepare for this closure.
+
 |  |
 | --- |
 | **This software is not currently supported by Amazon Mechanical Turk**<br />The Amazon Mechanical Turk Command Line Tools (CLT) are not currently maintained by Amazon Mechanical Turk. If you would still like to use Amazon Mechanical Turk from the command line, use the `mturk` command in the AWS Command Line Interface (CLI). For more information, see the `mturk` section of the [ AWS CLI Command Reference ](https://docs.aws.amazon.com/cli/latest/reference/mturk/index.html).  |
@@ -10,12 +12,12 @@ source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkCLT/CLTRefere
 <a name="CLTReference_CreateQualificationTypeCommand"></a>
 
 ## Description
-<a name="w2aab9c19b2"></a>
+<a name="w2aac11c19b2"></a>
 
  The `createQualificationType` command creates a Qualification that can be used for your HITs. You can use the arguments to specify files that contain the Qualification test and the answers for the test. You can also create a Qualification that does not require a test. For more information about Qualifications, see the [Amazon Mechanical Turk Developer Guide](http://docs.aws.amazon.com/AWSMechTurk/latest/AWSMechanicalTurkRequester/).
 
 ## Arguments
-<a name="w2aab9c19b4"></a>
+<a name="w2aac11c19b4"></a>
 
  The following table describes the arguments for the `createQualificationType` command.
 
@@ -29,12 +31,12 @@ source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkCLT/CLTRefere
 | `-sandbox` |  Runs this command in the Amazon Mechanical Turk sandbox for testing. This argument takes precedence even if you specify the production web site in your `mturk.properties` file. <br /> Example:`-sandbox`  | No |
 
 ## Example
-<a name="w2aab9c19b6"></a>
+<a name="w2aac11c19b6"></a>
 
  The following examples for Unix and Windows show how to use the `createQualificationType` command. The examples use the property file `qualification.properties` and the question file `qualification.question`. These examples create the qualification in the test environment.
 
 ### Unix
-<a name="w2aab9c19b6b4"></a>
+<a name="w2aac11c19b6b4"></a>
 
  The following example demonstrates how to call this command from Unix.
 
@@ -43,7 +45,7 @@ source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkCLT/CLTRefere
 ```
 
 ### Windows
-<a name="w2aab9c19b6b6"></a>
+<a name="w2aac11c19b6b6"></a>
 
  The following example demonstrates how to call this command from Microsoft Windows.
 
@@ -52,7 +54,7 @@ createQualificationType -properties qualification.properties -question qualifica
 ```
 
 ## Output
-<a name="w2aab9c19b8"></a>
+<a name="w2aac11c19b8"></a>
 
  If this command completes successfully, it creates a `.success` file with the name specified in the `-properties` argument. For this example, the file is named `qualification.properties.success`. This file contains the Qualification Type ID of the newly created Qualification. This command also produces output similar to the following.
 
@@ -63,6 +65,6 @@ http://workersandbox.mturk.com/mturk/requestqualification?qualificationId=KYJ4GZ
 ```
 
 ## Related Commands
-<a name="w2aab9c19c10"></a>
+<a name="w2aac11c19c10"></a>
 
 +  [getQualificationRequests](CLTReference_GetQualificationRequestsCommand.md)

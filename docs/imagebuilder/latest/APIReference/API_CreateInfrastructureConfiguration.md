@@ -17,6 +17,7 @@ Content-type: application/json
 {
    "clientToken": "{{string}}",
    "description": "{{string}}",
+   "dryRun": {{boolean}},
    "instanceMetadataOptions": {
       "httpPutResponseHopLimit": {{number}},
       "httpTokens": "{{string}}"
@@ -61,7 +62,7 @@ The request does not use any URI parameters.
 The request accepts the following data in JSON format.
 
  ** [clientToken](#API_CreateInfrastructureConfiguration_RequestSyntax) **   <a name="imagebuilder-CreateInfrastructureConfiguration-request-clientToken"></a>
-Unique, case-sensitive identifier you provide to ensure idempotency of the request. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
+A unique, case-sensitive identifier you provide to ensure that the operation completes no more than one time. If this token matches a previous request, the service ignores the request, but does not return an error. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: Yes
@@ -70,6 +71,11 @@ Required: Yes
 The description of the infrastructure configuration.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
+Required: No
+
+ ** [dryRun](#API_CreateInfrastructureConfiguration_RequestSyntax) **   <a name="imagebuilder-CreateInfrastructureConfiguration-request-dryRun"></a>
+Validates the required permissions and request parameters without making the request. If validation succeeds, the operation returns a `DryRunOperationException` error response.
+Type: Boolean
 Required: No
 
  ** [instanceMetadataOptions](#API_CreateInfrastructureConfiguration_RequestSyntax) **   <a name="imagebuilder-CreateInfrastructureConfiguration-request-instanceMetadataOptions"></a>
@@ -85,7 +91,7 @@ Pattern: `^[\w+=,.@-]+$`
 Required: Yes
 
  ** [instanceTypes](#API_CreateInfrastructureConfiguration_RequestSyntax) **   <a name="imagebuilder-CreateInfrastructureConfiguration-request-instanceTypes"></a>
-The instance types of the infrastructure configuration. You can specify one or more instance types to use for this build. The service will pick one of these instance types based on availability.
+The instance types of the infrastructure configuration. You can specify one or more instance types to use for this build. Image Builder picks one of these instance types based on availability.
 Type: Array of strings
 Required: No
 
@@ -107,7 +113,7 @@ Pattern: `^[-_A-Za-z-0-9][-_A-Za-z0-9 ]{1,126}[-_A-Za-z-0-9]$`
 Required: Yes
 
  ** [placement](#API_CreateInfrastructureConfiguration_RequestSyntax) **   <a name="imagebuilder-CreateInfrastructureConfiguration-request-placement"></a>
-The instance placement settings that define where the instances that are launched from your image will run.
+The instance placement settings that define where the instances that are launched from your image run.
 Type: [Placement](API_Placement.md) object
 Required: No
 
@@ -127,7 +133,7 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
  ** [snsTopicArn](#API_CreateInfrastructureConfiguration_RequestSyntax) **   <a name="imagebuilder-CreateInfrastructureConfiguration-request-snsTopicArn"></a>
-The Amazon Resource Name (ARN) for the SNS topic to which we send image build event notifications.
+The Amazon Resource Name (ARN) of the SNS topic to which Image Builder sends image build event notifications.
 EC2 Image Builder is unable to send notifications to SNS topics that are encrypted using keys from other accounts. The key that is used to encrypt the SNS topic must reside in the account that the Image Builder service runs under.
 Type: String
 Pattern: `^arn:aws[^:]*:sns:[^:]+:[0-9]{12}:[a-zA-Z0-9-_]{1,256}$`
@@ -149,7 +155,7 @@ Value Length Constraints: Maximum length of 256.
 Required: No
 
  ** [terminateInstanceOnFailure](#API_CreateInfrastructureConfiguration_RequestSyntax) **   <a name="imagebuilder-CreateInfrastructureConfiguration-request-terminateInstanceOnFailure"></a>
-The terminate instance on failure setting of the infrastructure configuration. Set to false if you want Image Builder to retain the instance used to configure your AMI if the build or test phase of your workflow fails.
+Specifies whether to terminate the instance on failure. Set to false if you want Image Builder to retain the instance used to configure your AMI if the build or test phase of your workflow fails. Defaults to `true`.
 Type: Boolean
 Required: No
 
@@ -202,6 +208,10 @@ HTTP Status Code: 429
 These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
 HTTP Status Code: 400
 
+ ** DryRunOperationException **
+The dry run operation of the resource was successful, and no resources or mutations were actually performed due to the dry run flag in the request.
+HTTP Status Code: 412
+
  ** ForbiddenException **
 You are not authorized to perform the requested operation.
 HTTP Status Code: 403
@@ -246,5 +256,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/imagebuilder-2019-12-02/CreateInfrastructureConfiguration)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/imagebuilder-2019-12-02/CreateInfrastructureConfiguration)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/imagebuilder-2019-12-02/CreateInfrastructureConfiguration)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/imagebuilder-2019-12-02/CreateInfrastructureConfiguration)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/imagebuilder-2019-12-02/CreateInfrastructureConfiguration)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/imagebuilder-2019-12-02/CreateInfrastructureConfiguration)

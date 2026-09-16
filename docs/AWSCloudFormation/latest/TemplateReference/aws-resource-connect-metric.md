@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Connect::Metric
 <a name="aws-resource-connect-metric"></a>
 
-Creates a new metric definition for the specified Connect Customer instance. You can create custom metrics that use formulas referencing existing AWS-managed metrics, optionally with filters applied.
+Use the `AWS::Connect::Metric` resource to create a new Amazon Connect custom metric.
 
 ## Syntax
 <a name="aws-resource-connect-metric-syntax"></a>
@@ -71,13 +71,13 @@ The Amazon Resource Name (ARN) of the instance.
 
 `MetricCalculation`  <a name="cfn-connect-metric-metriccalculation"></a>
 The calculation definition for the metric.
-*Required*: No
+*Required*: Yes
 *Type*: [MetricCalculation](aws-properties-connect-metric-metriccalculation.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Name`  <a name="cfn-connect-metric-name"></a>
 The name of the metric.
-*Required*: No
+*Required*: Yes
 *Type*: String
 *Minimum*: `1`
 *Maximum*: `128`
@@ -92,7 +92,7 @@ How an increase in the metric value should be interpreted. Valid values: `POSITI
 
 `Status`  <a name="cfn-connect-metric-status"></a>
 The publish status of the metric. Valid values: `PUBLISHED` \| `SAVED`.
-*Required*: No
+*Required*: Yes
 *Type*: String
 *Allowed values*: `SAVED | PUBLISHED`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
@@ -106,7 +106,7 @@ The tags used to organize, track, or control access for this resource. For examp
 
 `Unit`  <a name="cfn-connect-metric-unit"></a>
 The display unit for the metric's data.
-*Required*: No
+*Required*: Yes
 *Type*: String
 *Allowed values*: `INTEGER | DOUBLE | PERCENT | SECONDS`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -119,6 +119,10 @@ The display unit for the metric's data.
 
 ### Fn::GetAtt
 <a name="aws-resource-connect-metric-return-values-fn--getatt"></a>
+
+The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-connect-metric-return-values-fn--getatt-fn--getatt"></a>
@@ -148,7 +152,12 @@ The region where the metric was last modified.
 The timestamp of when the metric was last modified.
 
 `MetricArn`  <a name="MetricArn-fn::getatt"></a>
-Property description not available.
+The Amazon Resource Name (ARN) of the metric.
+For example:
+
+```
+arn:<partition>:connect:<region>:<accountId>:instance/00000000-0000-0000-0000-000000000000/metric/00000000-0000-0000-0000-000000000000
+```
 
 `PrimaryEventSource`  <a name="PrimaryEventSource-fn::getatt"></a>
 The primary event source for the metric data.

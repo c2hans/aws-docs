@@ -6,8 +6,8 @@ source_url: https://docs.aws.amazon.com//solutions/deepracer-on-aws//index.html
 
 Developers of all skill levels can get hands on with machine learning through a 3D racing simulator and fully autonomous 1/18th scale race cars driven by reinforcement learning.
 
-- **Version**: 1.2.9
-- **Release**: 08/2026
+- **Version**: 1.2.11
+- **Release**: 09/2026
 - **Author**: AWS
 - **Est. deployment time**: 30 mins
 - **Estimated cost**: [See details](/solutions/latest/deepracer-on-aws/cost.html)
@@ -125,6 +125,12 @@ Follow these links for direct access to the artifacts for this AWS Solution.
 [Go to Guidance](https://aws.amazon.com/solutions/guidance/aws-deepracer-event-management/)
 
 ## Customer stories
+
+### ACADEMIA DE INVENTORES
+
+"At Academia de Inventores, our mission is to make AI education accessible to every student in Spain. As the educational delivery partner for the AWS Futuro IA program, we are organizing the country's first National Student Championship using DeepRacer on AWS, in collaboration with the Gobierno de Aragón through their Campus Digital initiative. With just an internet connection, thousands of students from high school, vocational training, and university train their own reinforcement-learning models, progressing from virtual qualifiers to a live national final in Aragón. DeepRacer turns AI from an abstract concept into a hands-on, competitive experience reaching every region of Spain. When you give a 16-year-old the power to train an AI model and compete nationally, you're not just teaching a skill, you're igniting a vocation."
+
+**Luis Martin, Founder & CEO**
 
 ### TOPAZ
 

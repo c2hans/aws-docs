@@ -397,7 +397,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/medialive-2017-10-14/ListCloudWatchAlarmTemplates)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/medialive-2017-10-14/ListCloudWatchAlarmTemplates)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/medialive-2017-10-14/ListCloudWatchAlarmTemplates)
-+ [AWS SDK for Python](/goto/boto3/medialive-2017-10-14/ListCloudWatchAlarmTemplates)
++ [AWS SDK for Python (Boto3)](/goto/boto3/medialive-2017-10-14/ListCloudWatchAlarmTemplates)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/medialive-2017-10-14/ListCloudWatchAlarmTemplates)
 
 ### CorsCloudwatch\_alarm\_templates
@@ -410,7 +410,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/medialive-2017-10-14/CorsCloudwatch_alarm_templates)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/medialive-2017-10-14/CorsCloudwatch_alarm_templates)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/medialive-2017-10-14/CorsCloudwatch_alarm_templates)
-+ [AWS SDK for Python](/goto/boto3/medialive-2017-10-14/CorsCloudwatch_alarm_templates)
++ [AWS SDK for Python (Boto3)](/goto/boto3/medialive-2017-10-14/CorsCloudwatch_alarm_templates)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/medialive-2017-10-14/CorsCloudwatch_alarm_templates)
 
 ### CreateCloudWatchAlarmTemplate
@@ -423,5 +423,5 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/medialive-2017-10-14/CreateCloudWatchAlarmTemplate)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/medialive-2017-10-14/CreateCloudWatchAlarmTemplate)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/medialive-2017-10-14/CreateCloudWatchAlarmTemplate)
-+ [AWS SDK for Python](/goto/boto3/medialive-2017-10-14/CreateCloudWatchAlarmTemplate)
++ [AWS SDK for Python (Boto3)](/goto/boto3/medialive-2017-10-14/CreateCloudWatchAlarmTemplate)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/medialive-2017-10-14/CreateCloudWatchAlarmTemplate)

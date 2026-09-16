@@ -22,7 +22,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[EmbeddingModelArn](#cfn-bedrock-knowledgebase-managedknowledgebaseconfiguration-embeddingmodelarn)" : {{String}},
   "[EmbeddingModelConfiguration](#cfn-bedrock-knowledgebase-managedknowledgebaseconfiguration-embeddingmodelconfiguration)" : {{EmbeddingModelConfiguration}},
   "[EmbeddingModelType](#cfn-bedrock-knowledgebase-managedknowledgebaseconfiguration-embeddingmodeltype)" : {{String}},
-  "[ServerSideEncryptionConfiguration](#cfn-bedrock-knowledgebase-managedknowledgebaseconfiguration-serversideencryptionconfiguration)" : {{ManagedKnowledgeBaseServerSideEncryptionConfiguration}}
+  "[ServerSideEncryptionConfiguration](#cfn-bedrock-knowledgebase-managedknowledgebaseconfiguration-serversideencryptionconfiguration)" : {{ManagedKnowledgeBaseServerSideEncryptionConfiguration}},
+  "[SupplementalDataStorageConfiguration](#cfn-bedrock-knowledgebase-managedknowledgebaseconfiguration-supplementaldatastorageconfiguration)" : {{SupplementalDataStorageConfiguration}}
 }
 ```
 
@@ -36,6 +37,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   [EmbeddingModelType](#cfn-bedrock-knowledgebase-managedknowledgebaseconfiguration-embeddingmodeltype): {{String}}
   [ServerSideEncryptionConfiguration](#cfn-bedrock-knowledgebase-managedknowledgebaseconfiguration-serversideencryptionconfiguration): {{
     ManagedKnowledgeBaseServerSideEncryptionConfiguration}}
+  [SupplementalDataStorageConfiguration](#cfn-bedrock-knowledgebase-managedknowledgebaseconfiguration-supplementaldatastorageconfiguration): {{
+    SupplementalDataStorageConfiguration}}
 ```
 
 ## Properties
@@ -67,4 +70,10 @@ Choose CUSTOM to provide your own Bedrock embedding model ARN. Choose MANAGED to
 Contains the configuration for server-side encryption for your managed knowledge base.
 *Required*: No
 *Type*: [ManagedKnowledgeBaseServerSideEncryptionConfiguration](aws-properties-bedrock-knowledgebase-managedknowledgebaseserversideencryptionconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`SupplementalDataStorageConfiguration`  <a name="cfn-bedrock-knowledgebase-managedknowledgebaseconfiguration-supplementaldatastorageconfiguration"></a>
+Use this object to specify the Amazon S3 location that the knowledge base uses to process and ingest multimodal content. This field is required when you use a native multimodal embedding model.
+*Required*: No
+*Type*: [SupplementalDataStorageConfiguration](aws-properties-bedrock-knowledgebase-supplementaldatastorageconfiguration.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

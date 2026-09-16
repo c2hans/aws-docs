@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateRep
 # CreateReplaceRootVolumeTask
 <a name="API_CreateReplaceRootVolumeTask"></a>
 
-Replaces the EBS-backed root volume for a `running` instance with a new volume that is restored to the original root volume's launch state, that is restored to a specific snapshot taken from the original root volume, or that is restored from an AMI that has the same key characteristics as that of the instance.
+Replaces the EBS-backed root volume for a `running` instance with a new volume that is restored to the original root volume's launch state, that is restored to a specific snapshot taken from the original root volume, that is restored from an AMI that has the same key characteristics as that of the instance, or that is replaced by a specified volume.
 
 For more information, see [Replace a root volume](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/replace-root.html) in the *Amazon EC2 User Guide*.
 
@@ -31,7 +31,7 @@ Required: No
 
  **ImageId**
 The ID of the AMI to use to restore the root volume. The specified AMI must have the same product code, billing information, architecture type, and virtualization type as that of the instance.
-If you want to restore the replacement volume from a specific snapshot, or if you want to restore it to its launch state, omit this parameter.
+If you want to restore the replacement volume from a specific snapshot, if you want to restore it to its launch state, or if you want to replace the root volume with a specified volume, omit this parameter.
 Type: String
 Required: No
 
@@ -42,13 +42,19 @@ Required: Yes
 
  **SnapshotId**
 The ID of the snapshot from which to restore the replacement root volume. The specified snapshot must be a snapshot that you previously created from the original root volume.
-If you want to restore the replacement root volume to the initial launch state, or if you want to restore the replacement root volume from an AMI, omit this parameter.
+If you want to restore the replacement root volume to the initial launch state, if you want to restore the replacement root volume from an AMI, or if you want to replace the root volume with a specified volume, omit this parameter.
 Type: String
 Required: No
 
  **TagSpecification.N**
 The tags to apply to the root volume replacement task.
 Type: Array of [TagSpecification](API_TagSpecification.md) objects
+Required: No
+
+ **VolumeId**
+The ID of the volume to use as the replacement root volume. The specified volume must be in the same Availability Zone as the instance, must be in the `available` state, and must not be attached to an instance. If the original root volume is encrypted, the specified volume must also be encrypted.
+If you want to restore the replacement root volume from a specific snapshot, an AMI, or to its launch state, omit this parameter.
+Type: String
 Required: No
 
  **VolumeInitializationRate**
@@ -93,5 +99,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/CreateReplaceRootVolumeTask)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/CreateReplaceRootVolumeTask)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/CreateReplaceRootVolumeTask)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CreateReplaceRootVolumeTask)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CreateReplaceRootVolumeTask)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CreateReplaceRootVolumeTask)

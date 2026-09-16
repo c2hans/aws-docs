@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Cre
 # CreateImage
 <a name="API_CreateImage"></a>
 
-Creates a new image. This request will create a new image along with all of the configured output resources defined in the distribution configuration. You must specify exactly one recipe for your image, using either a ContainerRecipeArn or an ImageRecipeArn.
+Creates a new image along with all configured output resources defined in the distribution configuration. You must specify exactly one recipe for your image, using either a ContainerRecipeArn or an ImageRecipeArn.
 
 ## Request Syntax
 <a name="API_CreateImage_RequestSyntax"></a>
@@ -66,7 +66,7 @@ The request does not use any URI parameters.
 The request accepts the following data in JSON format.
 
  ** [clientToken](#API_CreateImage_RequestSyntax) **   <a name="imagebuilder-CreateImage-request-clientToken"></a>
-Unique, case-sensitive identifier you provide to ensure idempotency of the request. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
+A unique, case-sensitive identifier you provide to ensure that the operation completes no more than one time. If this token matches a previous request, the service ignores the request, but does not return an error. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: Yes
@@ -84,7 +84,7 @@ Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws):distribution-config
 Required: No
 
  ** [enhancedImageMetadataEnabled](#API_CreateImage_RequestSyntax) **   <a name="imagebuilder-CreateImage-request-enhancedImageMetadataEnabled"></a>
-Collects additional information about the image being created, including the operating system (OS) version and package list. This information is used to enhance the overall experience of using EC2 Image Builder. Enabled by default.
+Specifies whether to collect additional information about the image being created, including the operating system (OS) version and package list. Defaults to `true`.
 Type: Boolean
 Required: No
 
@@ -118,7 +118,7 @@ Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws):infrastructure-conf
 Required: Yes
 
  ** [loggingConfiguration](#API_CreateImage_RequestSyntax) **   <a name="imagebuilder-CreateImage-request-loggingConfiguration"></a>
-Define logging configuration for the image build process.
+The logging configuration for the image build process.
 Type: [ImageLoggingConfiguration](API_ImageLoggingConfiguration.md) object
 Required: No
 
@@ -235,5 +235,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/imagebuilder-2019-12-02/CreateImage)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/imagebuilder-2019-12-02/CreateImage)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/imagebuilder-2019-12-02/CreateImage)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/imagebuilder-2019-12-02/CreateImage)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/imagebuilder-2019-12-02/CreateImage)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/imagebuilder-2019-12-02/CreateImage)

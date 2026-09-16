@@ -25,16 +25,19 @@ Logs are automatically exported from CloudWatch to S3 every 7 days. The 90-day C
 
 Innovation Sandbox provides several pre-populated Amazon CloudWatch Logs Insights queries to help you troubleshoot issues.
 
-To access log insights queries:
+To access the pre-populated queries:
 
-1. Sign in to the [Amazon CloudWatch Logs Insights console](https://console.aws.amazon.com/cloudwatch/home#logsV2:logs-insights).
+1. Sign in to the [Amazon CloudWatch Log Analytics console](https://console.aws.amazon.com/cloudwatch/home#log-analytics). You can also reach this page by choosing **Log Analytics** under **Logs** in the CloudWatch console navigation pane.
 
-1. Choose **Saved and sample queries**.
+1. Choose **Saved queries**.
 
-1. From the sample queries, run one of these queries:
+1. Expand the **ISB-<namespace>** folder, and run one of these queries:
    +  **LogQuery** — Search for all logs related to a specific account, lease, lease template, or user.
    +  **ErrorLogs** — View all recent errors. Some `WARN`-level entries are expected operational events (for example, `AccountQuarantined` and `LeaseRequestRateLimited`), not solution errors.
-   +  **AccountCleanupLogs** — View the logs from a specific cleanup execution.
+   +  **AccountCleanupLogs** — View the AWS Nuke output for a specific cleanup build, including individual resource deletion failures. For more information, see [Resolving Account Cleanup Failures](administrator-guide.md#resolving-account-cleanup-failures).
+
+**Log Analytics is now the default console experience**
+This experience combines the CloudWatch Logs Insights query editor with Live Tail and Contributor Insights. If you have opted out of Log Analytics, choose **Logs Insights** under **Logs** instead. The saved queries and the steps that follow are the same. For more information, refer to [Analyzing log data with CloudWatch Log Analytics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/LogAnalytics.html) in the *Amazon CloudWatch Logs User Guide*.
 
 ## AWS X-Ray
 <a name="aws-x-ray"></a>

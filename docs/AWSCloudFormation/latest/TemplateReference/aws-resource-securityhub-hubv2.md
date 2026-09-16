@@ -21,6 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "Type" : "AWS::SecurityHub::HubV2",
   "Properties" : {
+      "[NetworkScanning](#cfn-securityhub-hubv2-networkscanning)" : {{NetworkScanning}},
       "[Tags](#cfn-securityhub-hubv2-tags)" : {{{{{Key}}: {{Value}}, ...}}}
     }
 }
@@ -32,12 +33,20 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 Type: AWS::SecurityHub::HubV2
 Properties:
+  [NetworkScanning](#cfn-securityhub-hubv2-networkscanning): {{
+    NetworkScanning}}
   [Tags](#cfn-securityhub-hubv2-tags): {{
     {{Key}}: {{Value}}}}
 ```
 
 ## Properties
 <a name="aws-resource-securityhub-hubv2-properties"></a>
+
+`NetworkScanning`  <a name="cfn-securityhub-hubv2-networkscanning"></a>
+Property description not available.
+*Required*: No
+*Type*: [NetworkScanning](aws-properties-securityhub-hubv2-networkscanning.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tags`  <a name="cfn-securityhub-hubv2-tags"></a>
 The tags to add to the hub V2 resource when you enable Security Hub.

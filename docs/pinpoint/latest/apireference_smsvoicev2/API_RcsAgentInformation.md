@@ -46,6 +46,11 @@ When set to true you can receive incoming text messages from your end recipients
 Type: Boolean
 Required: Yes
 
+ ** MessagingLimits **   <a name="pinpoint-Type-RcsAgentInformation-MessagingLimits"></a>
+The messaging limits that apply to the RCS agent, including the per-capability send rates.
+Type: [MessagingLimits](API_MessagingLimits.md) object
+Required: No
+
  ** OptOutListName **   <a name="pinpoint-Type-RcsAgentInformation-OptOutListName"></a>
 The name of the OptOutList associated with the RCS agent.
 Type: String

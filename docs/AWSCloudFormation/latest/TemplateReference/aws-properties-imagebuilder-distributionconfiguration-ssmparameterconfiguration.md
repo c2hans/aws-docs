@@ -45,7 +45,7 @@ Specify the account that will own the Parameter in a given Region. During distri
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DataType`  <a name="cfn-imagebuilder-distributionconfiguration-ssmparameterconfiguration-datatype"></a>
-The data type specifies what type of value the Parameter contains. We recommend that you use data type `aws:ec2:image`.
+The type of value the parameter contains. We recommend the `aws:ec2:image` data type.
 *Required*: No
 *Type*: String
 *Allowed values*: `text | aws:ec2:image`

@@ -13,6 +13,9 @@ Before you start utilizing the mapping capabilities of Amazon Location Service, 
 To use a map in your application you must have a map resource, which specifies the map style and data provider to use in your maps.
 
 **Note**
+The latest API has no map resource and no data provider to select at resource-creation time. For new code, request tiles and styles directly with [`GetTile`](https://docs.aws.amazon.com/location/latest/APIReference/API_geomaps_GetTile.html) and [`GetStyleDescriptor`](https://docs.aws.amazon.com/location/latest/APIReference/API_geomaps_GetStyleDescriptor.html) under `geo-maps`. See the latest [Amazon Location Service Maps](https://docs.aws.amazon.com/location/latest/developerguide/maps.html) developer guide.
+
+**Note**
 If your application is tracking or routing assets you use in your business, such as delivery vehicles or employees, you must not use Esri as your geolocation provider. See section 82 of the [AWS service terms](https://aws.amazon.com/service-terms) for more details.
 
 You can create a map resource using the Amazon Location Service console, the AWS CLI, or the Amazon Location APIs.

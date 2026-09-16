@@ -29,6 +29,7 @@ The following data types are supported:
 +  [CustomLineItemListElement](API_CustomLineItemListElement.md)
 +  [CustomLineItemPercentageChargeDetails](API_CustomLineItemPercentageChargeDetails.md)
 +  [CustomLineItemVersionListElement](API_CustomLineItemVersionListElement.md)
++  [CustomTier](API_CustomTier.md)
 +  [DisassociateResourceResponseElement](API_DisassociateResourceResponseElement.md)
 +  [FreeTierConfig](API_FreeTierConfig.md)
 +  [LineItemFilter](API_LineItemFilter.md)

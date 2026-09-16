@@ -12,16 +12,16 @@ With Amazon Lightsail load balancers, you can secure your websites and applicati
 
 In the latter case, you might consider using Let's Encrypt to obtain a free SSL certificate. This tutorial shows you how to request a Let's Encrypt wildcard certificate using Certbot, and integrate it with your WordPress instance using the Really Simple SSL plugin.
 
- **Contents**
-+  [Step 1: Complete the prerequisites](#complete-the-prerequisites-lets-encrypt-wordpress-lightsail)
-+  [Step 2: Install Certbot on your Lightsail instance](#install-certbot-on-your-instance-wordpress-lightsail)
-+  [Step 3: Request a Let's Encrypt SSL wildcard certificate](#request-a-lets-encrypt-certificate-wordpress-lightsail)
-+  [Step 4: Add TXT records to your domain's DNS zone](#add-a-text-record-to-your-domains-dns-zone-lets-encrypt-wordpress-lightsail)
-+  [Step 5: Confirm that the TXT records have propagated](#confirm-the-text-records-have-propagated-lets-encrypt-wordpress-lightsail)
-+  [Step 6: Complete the Let's Encrypt SSL certificate request](#complete-the-lets-encrypt-ssl-certificate-request-wordpress-lightsail)
-+  [Step 7: Create certificate file links in the Apache directory](#wordpress-lightsail-certbot-link-certificate-files)
-+  [Step 8: Configure HTTPS redirection with the Really Simple SSL plug-in](#wordpress-lightsail-certbot-really-simple-ssl)
-+  [Step 9: Renew the Let's Encrypt certificates every 90 days](#renew-a-lets-encrypt-certificate-wordpress-lightsail)
+**Topics**
++ [Step 1: Complete the prerequisites](#complete-the-prerequisites-lets-encrypt-wordpress-lightsail)
++ [Step 2: Install Certbot on your Lightsail instance](#install-certbot-on-your-instance-wordpress-lightsail)
++ [Step 3: Request a Let’s Encrypt SSL wildcard certificate](#request-a-lets-encrypt-certificate-wordpress-lightsail)
++ [Step 4: Add TXT records to your domain’s DNS zone](#add-a-text-record-to-your-domains-dns-zone-lets-encrypt-wordpress-lightsail)
++ [Step 5: Confirm that the TXT records have propagated](#confirm-the-text-records-have-propagated-lets-encrypt-wordpress-lightsail)
++ [Step 6: Complete the Let's Encrypt SSL certificate request](#complete-the-lets-encrypt-ssl-certificate-request-wordpress-lightsail)
++ [Step 7: Create certificate file links in the Apache directory](#wordpress-lightsail-certbot-link-certificate-files)
++ [Step 8: Configure HTTPS redirection with the Really Simple SSL plug-in](#wordpress-lightsail-certbot-really-simple-ssl)
++ [Step 9: Renew the Let's Encrypt certificates every 90 days](#renew-a-lets-encrypt-certificate-wordpress-lightsail)
 
 ## Step 1: Complete the prerequisites
 <a name="complete-the-prerequisites-lets-encrypt-wordpress-lightsail"></a>

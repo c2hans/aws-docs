@@ -173,7 +173,7 @@ Assume role policy:
             "Effect": "Allow",
             "Principal": {
                 "Service": [
-                    "dms.amazonaws.com",
+                    "dms.amazonaws.com"
                 ]
             },
             "Action": "sts:AssumeRole"

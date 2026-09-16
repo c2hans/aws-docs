@@ -30,6 +30,7 @@ Required: Yes
  ** testId **   <a name="ngresiliencehub-Type-TestSummary-testId"></a>
 The unique identifier of the test.
 Type: String
+Length Constraints: Minimum length of 1.
 Required: Yes
 
  ** testTemplateArn **   <a name="ngresiliencehub-Type-TestSummary-testTemplateArn"></a>

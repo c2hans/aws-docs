@@ -67,6 +67,11 @@ The Amazon Resource Name (ARN) of the Outpost.
 Type: String
 Required: No
 
+ ** ownerId **
+The ID of the Amazon Web Services account that owns the volume.
+Type: String
+Required: No
+
  ** size **
 The size of the volume, in GiBs.
 Type: Integer
@@ -103,6 +108,11 @@ Required: No
  ** throughput **
 The throughput that the volume supports, in MiB/s.
 Type: Integer
+Required: No
+
+ ** volumeArn **
+The Amazon Resource Name (ARN) of the volume.
+Type: String
 Required: No
 
  ** volumeId **

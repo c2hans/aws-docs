@@ -11,4 +11,5 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::Macie::AllowList](aws-resource-macie-allowlist.md)
 + [AWS::Macie::CustomDataIdentifier](aws-resource-macie-customdataidentifier.md)
 + [AWS::Macie::FindingsFilter](aws-resource-macie-findingsfilter.md)
++ [AWS::Macie::Member](aws-resource-macie-member.md)
 + [AWS::Macie::Session](aws-resource-macie-session.md)

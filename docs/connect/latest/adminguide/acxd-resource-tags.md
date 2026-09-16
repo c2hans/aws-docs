@@ -21,7 +21,7 @@ For example, you might use tags such as:
 
 Resource tags are especially helpful in larger workspaces where many applications, flows, knowledge bases, guardrails, Data requests, or other resources may exist.
 
-To access Resource tags, select your username from your workspace menu, choose **Settings**, then select **Resource tags**.
+To access Resource tags, select your username from your workspace menu, choose **Workspace settings**, then select **Resource tags**.
 
 ## Reviewing resource tags
 <a name="acxd-resource-tags-review"></a>
@@ -43,7 +43,7 @@ You can assign colors to resource tags to make them easier to visually identify.
 
 **To color code a tag**
 
-1. Open **Settings**.
+1. Open **Workspace settings**.
 
 1. Select **Resource tags**.
 
@@ -62,7 +62,7 @@ Use colors to help distinguish tags by category, such as environment, team, stat
 
 **To see where a tag is used**
 
-1. Open **Settings**.
+1. Open **Workspace settings**.
 
 1. Select **Resource tags**.
 

@@ -44,7 +44,7 @@ You do not create built-in slots from the custom Slots resource. Instead, select
 
 1. Select **Slots**.
 
-1. Select **Create slot** or **Create**.
+1. Select **New slot** or **Add slot**.
 
 1. Enter a clear slot name.
 
@@ -70,7 +70,7 @@ Values are the allowed options for the custom slot.
 
 1. Open the custom slot.
 
-1. Select **Add value**.
+1. Select **Add new value**.
 
 1. Enter the value.
 
@@ -190,10 +190,10 @@ Custom slots used in multilingual flows should be translated for each language y
 
 Review translated slot values carefully, especially when values affect routing, compliance, or customer-facing choices.
 
-## Sensitive slot values
+## Sensitive setting
 <a name="acxd-custom-slots-sensitive"></a>
 
-Enable **Exclude from conversation history** when slot values should not appear in conversation transcripts.
+Enable **Sensitive** when slot values should not appear in conversation transcripts.
 
 Use this setting for values that may include:
 + Personal information

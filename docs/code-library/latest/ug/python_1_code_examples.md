@@ -4,10 +4,10 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/python_1_code_exa
 
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
-# Code examples for SDK for Python
+# Code examples for
 <a name="python_1_code_examples"></a>
 
-The following code examples show you how to use the AWS SDK for Python with AWS.
+The following code examples show you how to use the with AWS.
 
 *Basics* are code examples that show you how to perform the essential operations within a service.
 
@@ -18,7 +18,7 @@ The following code examples show you how to use the AWS SDK for Python with AWS.
 Some services contain additional example categories that show how to leverage libraries or functions specific to the service.
 
 **More resources**
-+  ** [ SDK for Python Developer Guide ](https://docs.aws.amazon.com/sdk-for-python/v1/guide/index.html) ** – More about using Python with AWS.
++  ** [ Developer Guide ](https://docs.aws.amazon.com/) ** – More about using Python with AWS.
 +  ** [AWS Developer Center ](https://aws.amazon.com/developer/code-examples/?awsf.sdk-code-examples-programming-language=programming-language%23python) ** – Code examples that you can filter by category or full-text search.
 +  ** [AWS SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) ** – GitHub repo with complete code in preferred languages. Includes instructions for setting up and running the code.
 

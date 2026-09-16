@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Get
 # GetWorkflowStepExecution
 <a name="API_GetWorkflowStepExecution"></a>
 
-Get the runtime information that was logged for a specific runtime instance of the workflow step.
+Retrieves runtime information for a specific runtime instance of the workflow step.
 
 ## Request Syntax
 <a name="API_GetWorkflowStepExecution_RequestSyntax"></a>
@@ -38,10 +38,12 @@ Content-type: application/json
 
 {
    "action": "string",
+   "attemptNumber": number,
    "description": "string",
    "endTime": "string",
    "imageBuildVersionArn": "string",
    "inputs": "string",
+   "maxAttempts": number,
    "message": "string",
    "name": "string",
    "onFailure": "string",
@@ -69,6 +71,11 @@ The name of the action that the specified step performs.
 Type: String
 Pattern: `^[A-Za-z][A-Za-z0-9-_]{1,99}$`
 
+ ** [attemptNumber](#API_GetWorkflowStepExecution_ResponseSyntax) **   <a name="imagebuilder-GetWorkflowStepExecution-response-attemptNumber"></a>
+The current attempt number for the specified runtime instance of the workflow step. The first run is attempt one. The number increases by one for each retry.
+Type: Integer
+Valid Range: Minimum value of 1.
+
  ** [description](#API_GetWorkflowStepExecution_ResponseSyntax) **   <a name="imagebuilder-GetWorkflowStepExecution-response-description"></a>
 Describes the specified workflow step.
 Type: String
@@ -86,6 +93,11 @@ Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):image/
  ** [inputs](#API_GetWorkflowStepExecution_ResponseSyntax) **   <a name="imagebuilder-GetWorkflowStepExecution-response-inputs"></a>
 Input parameters that Image Builder provided for the specified runtime instance of the workflow step.
 Type: String
+
+ ** [maxAttempts](#API_GetWorkflowStepExecution_ResponseSyntax) **   <a name="imagebuilder-GetWorkflowStepExecution-response-maxAttempts"></a>
+The maximum number of attempts allowed for the specified runtime instance of the workflow step, based on the retry configuration in the workflow document. If the step doesn't configure retries, the maximum is one attempt.
+Type: Integer
+Valid Range: Minimum value of 1.
 
  ** [message](#API_GetWorkflowStepExecution_ResponseSyntax) **   <a name="imagebuilder-GetWorkflowStepExecution-response-message"></a>
 The output message from the specified runtime instance of the workflow step, if applicable.
@@ -187,5 +199,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/imagebuilder-2019-12-02/GetWorkflowStepExecution)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/imagebuilder-2019-12-02/GetWorkflowStepExecution)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/imagebuilder-2019-12-02/GetWorkflowStepExecution)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/imagebuilder-2019-12-02/GetWorkflowStepExecution)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/imagebuilder-2019-12-02/GetWorkflowStepExecution)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/imagebuilder-2019-12-02/GetWorkflowStepExecution)

@@ -229,7 +229,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/apigatewayv2-2018-11-29/GetTags)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/apigatewayv2-2018-11-29/GetTags)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/apigatewayv2-2018-11-29/GetTags)
-+ [AWS SDK for Python](/goto/boto3/apigatewayv2-2018-11-29/GetTags)
++ [AWS SDK for Python (Boto3)](/goto/boto3/apigatewayv2-2018-11-29/GetTags)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/apigatewayv2-2018-11-29/GetTags)
 
 ### TagResource
@@ -242,7 +242,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/apigatewayv2-2018-11-29/TagResource)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/apigatewayv2-2018-11-29/TagResource)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/apigatewayv2-2018-11-29/TagResource)
-+ [AWS SDK for Python](/goto/boto3/apigatewayv2-2018-11-29/TagResource)
++ [AWS SDK for Python (Boto3)](/goto/boto3/apigatewayv2-2018-11-29/TagResource)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/apigatewayv2-2018-11-29/TagResource)
 
 ### UntagResource
@@ -255,5 +255,5 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/apigatewayv2-2018-11-29/UntagResource)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/apigatewayv2-2018-11-29/UntagResource)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/apigatewayv2-2018-11-29/UntagResource)
-+ [AWS SDK for Python](/goto/boto3/apigatewayv2-2018-11-29/UntagResource)
++ [AWS SDK for Python (Boto3)](/goto/boto3/apigatewayv2-2018-11-29/UntagResource)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/apigatewayv2-2018-11-29/UntagResource)

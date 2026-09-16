@@ -89,7 +89,7 @@ API Gateway supports several options to log API requests and monitor your APIs. 
 | [Amazon CloudWatch metrics](monitoring-cloudwatch.md) | ![](https://docs.aws.amazon.com/apigateway/latest/developerguide/images/success_icon.png) [Yes](monitoring-cloudwatch.md) | ![](https://docs.aws.amazon.com/apigateway/latest/developerguide/images/success_icon.png) [Yes](http-api-metrics.md) |
 | [Access logs to CloudWatch Logs](set-up-logging.md) | ![](https://docs.aws.amazon.com/apigateway/latest/developerguide/images/success_icon.png) [Yes](set-up-logging.md) | ![](https://docs.aws.amazon.com/apigateway/latest/developerguide/images/success_icon.png) [Yes](http-api-logging.md) |
 | [Access logs to Amazon Data Firehose](apigateway-logging-to-kinesis.md) | ![](https://docs.aws.amazon.com/apigateway/latest/developerguide/images/success_icon.png) Yes | ![](https://docs.aws.amazon.com/apigateway/latest/developerguide/images/negative_icon.png) No |
-| [Execution logs](set-up-logging.md) | ![](https://docs.aws.amazon.com/apigateway/latest/developerguide/images/success_icon.png) Yes | ![](https://docs.aws.amazon.com/apigateway/latest/developerguide/images/negative_icon.png) No |
+| [Execution logs](rest-api-execution-logging.md) | ![](https://docs.aws.amazon.com/apigateway/latest/developerguide/images/success_icon.png) Yes | ![](https://docs.aws.amazon.com/apigateway/latest/developerguide/images/negative_icon.png) No |
 | [AWS X-Ray tracing](apigateway-xray.md) | ![](https://docs.aws.amazon.com/apigateway/latest/developerguide/images/success_icon.png) Yes | ![](https://docs.aws.amazon.com/apigateway/latest/developerguide/images/negative_icon.png) No |
 
 ## Integrations

@@ -37,6 +37,7 @@ The following data types are supported:
 +  [OrderSummary](API_OrderSummary.md)
 +  [Outpost](API_Outpost.md)
 +  [PricingOption](API_PricingOption.md)
++  [PrivateConnectivityConfig](API_PrivateConnectivityConfig.md)
 +  [Quote](API_Quote.md)
 +  [QuoteCapacity](API_QuoteCapacity.md)
 +  [QuoteConstraint](API_QuoteConstraint.md)
@@ -50,3 +51,4 @@ The following data types are supported:
 +  [Site](API_Site.md)
 +  [Subscription](API_Subscription.md)
 +  [SubscriptionPricingDetails](API_SubscriptionPricingDetails.md)
++  [VpcInformation](API_VpcInformation.md)

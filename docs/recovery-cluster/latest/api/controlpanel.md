@@ -342,7 +342,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/route53-recovery-control-config-2020-11-02/CreateControlPanel)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/route53-recovery-control-config-2020-11-02/CreateControlPanel)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/route53-recovery-control-config-2020-11-02/CreateControlPanel)
-+ [AWS SDK for Python](/goto/boto3/route53-recovery-control-config-2020-11-02/CreateControlPanel)
++ [AWS SDK for Python (Boto3)](/goto/boto3/route53-recovery-control-config-2020-11-02/CreateControlPanel)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/route53-recovery-control-config-2020-11-02/CreateControlPanel)
 
 ### UpdateControlPanel
@@ -355,5 +355,5 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/route53-recovery-control-config-2020-11-02/UpdateControlPanel)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/route53-recovery-control-config-2020-11-02/UpdateControlPanel)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/route53-recovery-control-config-2020-11-02/UpdateControlPanel)
-+ [AWS SDK for Python](/goto/boto3/route53-recovery-control-config-2020-11-02/UpdateControlPanel)
++ [AWS SDK for Python (Boto3)](/goto/boto3/route53-recovery-control-config-2020-11-02/UpdateControlPanel)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/route53-recovery-control-config-2020-11-02/UpdateControlPanel)

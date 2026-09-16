@@ -22,6 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Type" : "AWS::Notifications::ManagedNotificationAdditionalChannelAssociation",
   "Properties" : {
       "[ChannelArn](#cfn-notifications-managednotificationadditionalchannelassociation-channelarn)" : {{String}},
+      "[IsSensitiveEventsSubscribed](#cfn-notifications-managednotificationadditionalchannelassociation-issensitiveeventssubscribed)" : {{Boolean}},
       "[ManagedNotificationConfigurationArn](#cfn-notifications-managednotificationadditionalchannelassociation-managednotificationconfigurationarn)" : {{String}}
     }
 }
@@ -34,6 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 Type: AWS::Notifications::ManagedNotificationAdditionalChannelAssociation
 Properties:
   [ChannelArn](#cfn-notifications-managednotificationadditionalchannelassociation-channelarn): {{String}}
+  [IsSensitiveEventsSubscribed](#cfn-notifications-managednotificationadditionalchannelassociation-issensitiveeventssubscribed): {{Boolean}}
   [ManagedNotificationConfigurationArn](#cfn-notifications-managednotificationadditionalchannelassociation-managednotificationconfigurationarn): {{String}}
 ```
 
@@ -46,6 +48,12 @@ Properties:
 *Type*: String
 *Pattern*: `^arn:[a-z-]{3,10}:(chatbot|consoleapp|notifications-contacts):[a-zA-Z0-9-]*:[0-9]{12}:[a-zA-Z0-9-_.@]+/[a-zA-Z0-9/_.@:-]+$`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`IsSensitiveEventsSubscribed`  <a name="cfn-notifications-managednotificationadditionalchannelassociation-issensitiveeventssubscribed"></a>
+Property description not available.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ManagedNotificationConfigurationArn`  <a name="cfn-notifications-managednotificationadditionalchannelassociation-managednotificationconfigurationarn"></a>
  The ARN of the `ManagedNotificationAdditionalChannelAssociation` associated with the `Channel`.

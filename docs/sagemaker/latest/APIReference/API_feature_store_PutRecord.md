@@ -53,10 +53,7 @@ Required: Yes
 The request accepts the following data in JSON format.
 
  ** [Record](#API_feature_store_PutRecord_RequestSyntax) **   <a name="sagemaker-feature_store_PutRecord-request-Record"></a>
-List of FeatureValues to be inserted. This will be a full over-write. If you only want to update few of the feature values, do the following:
-+ Use `GetRecord` to retrieve the latest record.
-+ Update the record returned from `GetRecord`.
-+ Use `PutRecord` to update feature values.
+A list of FeatureValues to insert. This is a full overwrite. To update individual feature values without overwriting the entire record, use the [UpdateRecord](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_feature_store_UpdateRecord.html) operation.
 Type: Array of [FeatureValue](API_feature_store_FeatureValue.md) objects
 Array Members: Minimum number of 1 item.
 Required: Yes
@@ -118,5 +115,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/sagemaker-featurestore-runtime-2020-07-01/PutRecord)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/sagemaker-featurestore-runtime-2020-07-01/PutRecord)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/sagemaker-featurestore-runtime-2020-07-01/PutRecord)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/sagemaker-featurestore-runtime-2020-07-01/PutRecord)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/sagemaker-featurestore-runtime-2020-07-01/PutRecord)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/sagemaker-featurestore-runtime-2020-07-01/PutRecord)

@@ -254,7 +254,7 @@ For a listing of the DB instance parameters for this same default DB cluster par
 | logging\_collector | Start a subprocess to capture stderr output and/or csvlogs into log files. | 1  |
 | log\_hostname | Logs the host name in the connection logs. | 0  |
 | logical\_decoding\_work\_mem | (kB) This much memory can be used by each internal reorder buffer before spilling to disk. | –  |
-| log\_line\_prefix | Controls information prefixed to each log line. | %t:%r:%u@%d:%p]:  |
+| log\_line\_prefix | Controls information prefixed to each log line. | %t:%r:%u@%d:[%p]:  |
 | log\_lock\_waits | Logs long lock waits. | –  |
 | log\_min\_duration\_sample | (ms) Sets the minimum execution time above which a sample of statements will be logged. Sampling is determined by log\_statement\_sample\_rate. | –  |
 | log\_min\_duration\_statement | (ms) Sets the minimum execution time above which statements will be logged. | –  |
@@ -308,7 +308,7 @@ For a listing of the DB instance parameters for this same default DB cluster par
 | pgaudit.log\_catalog | Specifies that session logging should be enabled in the case where all relations in a statement are in pg\_catalog. | –  |
 | pgaudit.log\_level | Specifies the log level that will be used for log entries. | –  |
 | pgaudit.log\_parameter | Specifies that audit logging should include the parameters that were passed with the statement. | –  |
-| pgaudit.log\_relation | Specifies whether session audit logging should create a separate log entry for each relation (TABLE, VIEW, etc.) referenced in a SELECT or DML statement. | –  |
+| pgaudit.log\_relation | Specifies whether session audit logging should create a separate log entry for each relation (TABLE, VIEW, and so on) referenced in a SELECT or DML statement. | –  |
 | pgaudit.log\_statement\_once | Specifies whether logging will include the statement text and parameters with the first log entry for a statement/substatement combination or with every entry. | –  |
 | pgaudit.role | Specifies the master role to use for object audit logging. | –  |
 | pg\_bigm.enable\_recheck | It specifies whether to perform Recheck which is an internal process of full text search. | on  |
@@ -589,7 +589,7 @@ For a listing of the DB cluster parameters for this same default DB parameter gr
 | logging\_collector | Start a subprocess to capture stderr output and/or csvlogs into log files. | 1  |
 | log\_hostname | Logs the host name in the connection logs. | 0  |
 | logical\_decoding\_work\_mem | (kB This much memory can be used by each internal reorder buffer before spilling to disk. | –  |
-| log\_line\_prefix | Controls information prefixed to each log line. | %t:%r:%u@%d:%p]:  |
+| log\_line\_prefix | Controls information prefixed to each log line. | %t:%r:%u@%d:[%p]:  |
 | log\_lock\_waits | Logs long lock waits. | –  |
 | log\_min\_duration\_sample | (ms Sets the minimum execution time above which a sample of statements will be logged. Sampling is determined by log\_statement\_sample\_rate. | –  |
 | log\_min\_duration\_statement | (ms Sets the minimum execution time above which statements will be logged. | –  |
@@ -634,7 +634,7 @@ For a listing of the DB cluster parameters for this same default DB parameter gr
 | pgaudit.log\_catalog | Specifies that session logging should be enabled in the case where all relations in a statement are in pg\_catalog. | –  |
 | pgaudit.log\_level | Specifies the log level that will be used for log entries. | –  |
 | pgaudit.log\_parameter | Specifies that audit logging should include the parameters that were passed with the statement. | –  |
-| pgaudit.log\_relation | Specifies whether session audit logging should create a separate log entry for each relation (TABLE, VIEW, etc. referenced in a SELECT or DML statement. | –  |
+| pgaudit.log\_relation | Specifies whether session audit logging should create a separate log entry for each relation (TABLE, VIEW, and so on) referenced in a SELECT or DML statement. | –  |
 | pgaudit.log\_statement\_once | Specifies whether logging will include the statement text and parameters with the first log entry for a statement/substatement combination or with every entry. | –  |
 | pgaudit.role | Specifies the master role to use for object audit logging. | –  |
 | pg\_bigm.enable\_recheck | It specifies whether to perform Recheck which is an internal process of full text search. | on  |

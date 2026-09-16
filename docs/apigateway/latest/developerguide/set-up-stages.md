@@ -114,7 +114,7 @@ Your account is charged for accessing method-level CloudWatch metrics, but not t
 
    The ARN format for Firehose is `arn:aws:firehose:{{{region}}}:{{{account-id}}}:deliverystream/amazon-apigateway-{{{your-stream-name}}}`. The name of your Firehose stream must be `amazon-apigateway-{{{your-stream-name}}}`.
 
-1. In **Log format**, enter a log format. To learn more about example log formats, see [CloudWatch log formats for API Gateway](set-up-logging.md#apigateway-cloudwatch-log-formats).
+1. In **Log format**, enter a log format. To learn more about example log formats, see [Access log formats](set-up-access-logging.md#apigateway-cloudwatch-log-formats).
 
 1. To enable [AWS X-Ray](https://docs.aws.amazon.com/xray/latest/devguide/xray-services-apigateway.html) tracing for the API stage, select ** X-Ray tracing**. For more information, see [Trace user requests to REST APIs using X-Ray in API Gateway](apigateway-xray.md).
 

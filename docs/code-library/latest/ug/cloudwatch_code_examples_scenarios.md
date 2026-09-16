@@ -14,7 +14,8 @@ Scenarios target an intermediate level of experience to help you understand serv
 **Topics**
 + [Creating a monitoring dashboard with function name as a variable](cloudwatch_example_cloudwatch_GettingStarted_031_section.md)
 + [Get started with alarms](cloudwatch_example_cloudwatch_Scenario_GettingStarted_section.md)
-+ [Manage metrics and alarms](cloudwatch_example_cloudwatch_Usage_MetricsAlarms_section.md)
++ [Manage custom metrics and alarms](cloudwatch_example_cloudwatch_Usage_MetricsAlarms_section.md)
 + [Monitor DynamoDB performance](cloudwatch_example_cross_MonitorDynamoDB_section.md)
 + [Run CPU stress tests on virtual machine instances using fault injection](cloudwatch_example_iam_GettingStarted_069_section.md)
++ [Send OpenTelemetry metrics and alarm on them with PromQL](cloudwatch_example_cloudwatch_Scenario_OTelMetrics_section.md)
 + [Using property variables in monitoring dashboards to monitor multiple serverless functions](cloudwatch_example_iam_GettingStarted_032_section.md)

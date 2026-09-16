@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Del
 # DeleteLifecyclePolicy
 <a name="API_DeleteLifecyclePolicy"></a>
 
-Delete the specified lifecycle policy resource.
+Deletes the specified lifecycle policy resource.
 
 ## Request Syntax
 <a name="API_DeleteLifecyclePolicy_RequestSyntax"></a>
@@ -100,5 +100,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/imagebuilder-2019-12-02/DeleteLifecyclePolicy)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/imagebuilder-2019-12-02/DeleteLifecyclePolicy)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/imagebuilder-2019-12-02/DeleteLifecyclePolicy)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/imagebuilder-2019-12-02/DeleteLifecyclePolicy)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/imagebuilder-2019-12-02/DeleteLifecyclePolicy)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/imagebuilder-2019-12-02/DeleteLifecyclePolicy)

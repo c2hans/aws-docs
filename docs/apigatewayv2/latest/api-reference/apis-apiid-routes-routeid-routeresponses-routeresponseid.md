@@ -270,7 +270,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/apigatewayv2-2018-11-29/GetRouteResponse)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/apigatewayv2-2018-11-29/GetRouteResponse)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/apigatewayv2-2018-11-29/GetRouteResponse)
-+ [AWS SDK for Python](/goto/boto3/apigatewayv2-2018-11-29/GetRouteResponse)
++ [AWS SDK for Python (Boto3)](/goto/boto3/apigatewayv2-2018-11-29/GetRouteResponse)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/apigatewayv2-2018-11-29/GetRouteResponse)
 
 ### DeleteRouteResponse
@@ -283,7 +283,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/apigatewayv2-2018-11-29/DeleteRouteResponse)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/apigatewayv2-2018-11-29/DeleteRouteResponse)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/apigatewayv2-2018-11-29/DeleteRouteResponse)
-+ [AWS SDK for Python](/goto/boto3/apigatewayv2-2018-11-29/DeleteRouteResponse)
++ [AWS SDK for Python (Boto3)](/goto/boto3/apigatewayv2-2018-11-29/DeleteRouteResponse)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/apigatewayv2-2018-11-29/DeleteRouteResponse)
 
 ### UpdateRouteResponse
@@ -296,5 +296,5 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/apigatewayv2-2018-11-29/UpdateRouteResponse)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/apigatewayv2-2018-11-29/UpdateRouteResponse)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/apigatewayv2-2018-11-29/UpdateRouteResponse)
-+ [AWS SDK for Python](/goto/boto3/apigatewayv2-2018-11-29/UpdateRouteResponse)
++ [AWS SDK for Python (Boto3)](/goto/boto3/apigatewayv2-2018-11-29/UpdateRouteResponse)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/apigatewayv2-2018-11-29/UpdateRouteResponse)

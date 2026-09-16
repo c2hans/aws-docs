@@ -72,6 +72,7 @@ The following actions are supported:
 +  [DiscardRegistrationVersion](API_DiscardRegistrationVersion.md)
 +  [GetProtectConfigurationCountryRuleSet](API_GetProtectConfigurationCountryRuleSet.md)
 +  [GetResourcePolicy](API_GetResourcePolicy.md)
++  [ListAvailablePhoneNumbers](API_ListAvailablePhoneNumbers.md)
 +  [ListNotifyCountries](API_ListNotifyCountries.md)
 +  [ListPoolOriginationIdentities](API_ListPoolOriginationIdentities.md)
 +  [ListProtectConfigurationRuleSetNumberOverrides](API_ListProtectConfigurationRuleSetNumberOverrides.md)

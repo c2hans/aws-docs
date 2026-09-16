@@ -27,8 +27,6 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[EdgeLocation](#cfn-networkmanager-connectattachment-edgelocation)" : {{String}},
       "[NetworkFunctionGroupName](#cfn-networkmanager-connectattachment-networkfunctiongroupname)" : {{String}},
       "[Options](#cfn-networkmanager-connectattachment-options)" : {{ConnectAttachmentOptions}},
-      "[ProposedNetworkFunctionGroupChange](#cfn-networkmanager-connectattachment-proposednetworkfunctiongroupchange)" : {{ProposedNetworkFunctionGroupChange}},
-      "[ProposedSegmentChange](#cfn-networkmanager-connectattachment-proposedsegmentchange)" : {{ProposedSegmentChange}},
       "[RoutingPolicyLabel](#cfn-networkmanager-connectattachment-routingpolicylabel)" : {{String}},
       "[Tags](#cfn-networkmanager-connectattachment-tags)" : {{[ Tag, ... ]}},
       "[TransportAttachmentId](#cfn-networkmanager-connectattachment-transportattachmentid)" : {{String}}
@@ -47,10 +45,6 @@ Properties:
   [NetworkFunctionGroupName](#cfn-networkmanager-connectattachment-networkfunctiongroupname): {{String}}
   [Options](#cfn-networkmanager-connectattachment-options): {{
     ConnectAttachmentOptions}}
-  [ProposedNetworkFunctionGroupChange](#cfn-networkmanager-connectattachment-proposednetworkfunctiongroupchange): {{
-    ProposedNetworkFunctionGroupChange}}
-  [ProposedSegmentChange](#cfn-networkmanager-connectattachment-proposedsegmentchange): {{
-    ProposedSegmentChange}}
   [RoutingPolicyLabel](#cfn-networkmanager-connectattachment-routingpolicylabel): {{String}}
   [Tags](#cfn-networkmanager-connectattachment-tags): {{
     - Tag}}
@@ -90,23 +84,11 @@ Options for connecting an attachment.
 *Type*: [ConnectAttachmentOptions](aws-properties-networkmanager-connectattachment-connectattachmentoptions.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
-`ProposedNetworkFunctionGroupChange`  <a name="cfn-networkmanager-connectattachment-proposednetworkfunctiongroupchange"></a>
-Describes proposed changes to a network function group.
-*Required*: No
-*Type*: [ProposedNetworkFunctionGroupChange](aws-properties-networkmanager-connectattachment-proposednetworkfunctiongroupchange.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
-
-`ProposedSegmentChange`  <a name="cfn-networkmanager-connectattachment-proposedsegmentchange"></a>
-Describes a proposed segment change. In some cases, the segment change must first be evaluated and accepted.
-*Required*: No
-*Type*: [ProposedSegmentChange](aws-properties-networkmanager-connectattachment-proposedsegmentchange.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
-
 `RoutingPolicyLabel`  <a name="cfn-networkmanager-connectattachment-routingpolicylabel"></a>
 Property description not available.
 *Required*: No
 *Type*: String
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tags`  <a name="cfn-networkmanager-connectattachment-tags"></a>
 The tags associated with the Connect attachment.

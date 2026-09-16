@@ -16,6 +16,9 @@ Before you begin geocoding, reverse geocoding or searching for places, follow th
 
 Begin by creating a place index resource in your AWS account.
 
+**Note**
+The latest API has no place index resource and no data provider to select at resource-creation time. For new code, call the `geo-places` operations directly, such as [`Geocode`](https://docs.aws.amazon.com/location/latest/APIReference/API_geoplaces_Geocode.html), [`SearchText`](https://docs.aws.amazon.com/location/latest/APIReference/API_geoplaces_SearchText.html), and [`ReverseGeocode`](https://docs.aws.amazon.com/location/latest/APIReference/API_geoplaces_ReverseGeocode.html). See the latest [Amazon Location Service Places](https://docs.aws.amazon.com/location/latest/developerguide/places.html) developer guide.
+
 When you create a place index resource, you can choose from the data providers available to support queries for geocoding, reverse geocoding, and searches:
 
 1. **Esri **– For more information about Esri's coverage in your region of interest, see [Esri geocoding coverage](https://developers.arcgis.com/rest/geocode/api-reference/geocode-coverage.htm) in the Esri documentation.
@@ -56,7 +59,7 @@ If your application is tracking or routing assets you use in your business, such
 
 **To create a place index resource using the Amazon Location APIs**
 
-Use the `[CreatePlaceIndex](https://docs.aws.amazon.com/location-places/latest/APIReference/API_CreatePlaceIndex.html)` operation from the Amazon Location Places APIs.
+Use the `[CreatePlaceIndex](https://docs.aws.amazon.com/location/previous/APIReference/API_CreatePlaceIndex.html)` operation from the Amazon Location Places APIs.
 
 The following example is an API request to create a place index resource called {{ExamplePlaceIndex}} using the data provider {{Esri}}.
 

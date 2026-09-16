@@ -26,6 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[AccessEndpoints](#cfn-appstream-imagebuilder-accessendpoints)" : {{[ AccessEndpoint, ... ]}},
       "[AppstreamAgentVersion](#cfn-appstream-imagebuilder-appstreamagentversion)" : {{String}},
       "[Description](#cfn-appstream-imagebuilder-description)" : {{String}},
+      "[DisableIMDSV1](#cfn-appstream-imagebuilder-disableimdsv1)" : {{Boolean}},
       "[DisplayName](#cfn-appstream-imagebuilder-displayname)" : {{String}},
       "[DomainJoinInfo](#cfn-appstream-imagebuilder-domainjoininfo)" : {{DomainJoinInfo}},
       "[EnableDefaultInternetAccess](#cfn-appstream-imagebuilder-enabledefaultinternetaccess)" : {{Boolean}},
@@ -53,6 +54,7 @@ Properties:
     - AccessEndpoint}}
   [AppstreamAgentVersion](#cfn-appstream-imagebuilder-appstreamagentversion): {{String}}
   [Description](#cfn-appstream-imagebuilder-description): {{String}}
+  [DisableIMDSV1](#cfn-appstream-imagebuilder-disableimdsv1): {{Boolean}}
   [DisplayName](#cfn-appstream-imagebuilder-displayname): {{String}}
   [DomainJoinInfo](#cfn-appstream-imagebuilder-domainjoininfo): {{
     DomainJoinInfo}}
@@ -98,6 +100,12 @@ The description to display.
 *Required*: No
 *Type*: String
 *Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`DisableIMDSV1`  <a name="cfn-appstream-imagebuilder-disableimdsv1"></a>
+Indicates whether Instance Metadata Service Version 1 (IMDSv1) is disabled for the image builder.
+*Required*: No
+*Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DisplayName`  <a name="cfn-appstream-imagebuilder-displayname"></a>

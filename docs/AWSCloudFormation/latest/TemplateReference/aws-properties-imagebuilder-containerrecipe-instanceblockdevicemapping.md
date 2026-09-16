@@ -49,13 +49,13 @@ The device to which these mappings apply.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Ebs`  <a name="cfn-imagebuilder-containerrecipe-instanceblockdevicemapping-ebs"></a>
-Use to manage Amazon EBS-specific configuration for this mapping.
+The Amazon EBS-specific configuration for this mapping.
 *Required*: No
 *Type*: [EbsInstanceBlockDeviceSpecification](aws-properties-imagebuilder-containerrecipe-ebsinstanceblockdevicespecification.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `NoDevice`  <a name="cfn-imagebuilder-containerrecipe-instanceblockdevicemapping-nodevice"></a>
-Use to remove a mapping from the base image.
+Specifies a mapping to remove from the base image.
 *Required*: No
 *Type*: String
 *Minimum*: `0`
@@ -63,7 +63,7 @@ Use to remove a mapping from the base image.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `VirtualName`  <a name="cfn-imagebuilder-containerrecipe-instanceblockdevicemapping-virtualname"></a>
-Use to manage instance ephemeral devices.
+The virtual device name for instance ephemeral devices.
 *Required*: No
 *Type*: String
 *Minimum*: `1`

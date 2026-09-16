@@ -5,10 +5,10 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/search-
 # Use place IDs with Amazon Location
 <a name="search-using-placeids"></a>
 
-Searching for places returns a list of results. Most results include a `PlaceId` for that result. You can use a `PlaceId` in a `[GetPlace](https://docs.aws.amazon.com/location-places/latest/APIReference/API_GetPlace.html)` operation to return the information about that place (including name, address, location, or other details).
+Searching for places returns a list of results. Most results include a `PlaceId` for that result. You can use a `PlaceId` in a `[GetPlace](https://docs.aws.amazon.com/location/previous/APIReference/API_GetPlace.html)` operation to return the information about that place (including name, address, location, or other details).
 
 **Note**
-Using [SearchPlaceIndexForSuggestions](https://docs.aws.amazon.com/location-places/latest/APIReference/API_SearchPlaceIndexForSuggestions.html) will return `PlaceId` results for any place indexes created with any data source. Using [SearchPlaceIndexForText](https://docs.aws.amazon.com/location-places/latest/APIReference/API_SearchPlaceIndexForText.html) or [SearchPlaceIndexForPosition](https://docs.aws.amazon.com/location-places/latest/APIReference/API_SearchPlaceIndexForPosition.html) will return a `PlaceId` only if the data source used is HERE.
+Using [SearchPlaceIndexForSuggestions](https://docs.aws.amazon.com/location/previous/APIReference/API_SearchPlaceIndexForSuggestions.html) will return `PlaceId` results for any place indexes created with any data source. Using [SearchPlaceIndexForText](https://docs.aws.amazon.com/location/previous/APIReference/API_SearchPlaceIndexForText.html) or [SearchPlaceIndexForPosition](https://docs.aws.amazon.com/location/previous/APIReference/API_SearchPlaceIndexForPosition.html) will return a `PlaceId` only if the data source used is HERE.
 
 Each `PlaceId` uniquely defines the place it refers to, but a single place can have more than one `PlaceId` over time, and based on the context. The following rules describe the uniqueness and longevity of a `PlaceId`.
 + The `PlaceId` returned in calls that you make is specific to your AWS account, to the AWS Region, and to the data provider in your `PlaceIndex` resource. `GetPlace` will find results only when these three attributes match the original call that created the `PlaceId`.

@@ -14,7 +14,7 @@ The `client` that is used in the following examples can be created from the snip
 ## Send a message
 <a name="sqs-send-message"></a>
 
-For request and response details, see the [send\_message()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/sqs/operations/send_message/) API reference.
+For request and response details, see the [send\_message()](clients/sqs/operations/send_message/) API reference.
 
 Send a message to a queue URL with `send_message`. Message attributes carry structured metadata separately from the body.
 
@@ -54,7 +54,7 @@ async def send_message(
 ## Receive messages
 <a name="sqs-receive-messages"></a>
 
-For request and response details, see the [receive\_message()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/sqs/operations/receive_message/) API reference.
+For request and response details, see the [receive\_message()](clients/sqs/operations/receive_message/) API reference.
 
 Receive up to 10 messages with `receive_message`. An empty response is valid, so poll with a bounded attempt count or an application shutdown condition. Message attributes are returned only when the request names them; this example requests all of them. To wait for messages instead of returning immediately, see [Configure long polling for Amazon SQS](sqs-long-polling.md).
 
@@ -90,7 +90,7 @@ async def receive_messages(
 ## Delete a message
 <a name="sqs-delete-message"></a>
 
-For request and response details, see the [delete\_message()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/sqs/operations/delete_message/) API reference.
+For request and response details, see the [delete\_message()](clients/sqs/operations/delete_message/) API reference.
 
 Receiving a message hides it for the visibility timeout but does not remove it. Process the body first, and call this function with the delivery's current receipt handle only after processing succeeds.
 
@@ -119,7 +119,7 @@ async def delete_message(
 ## Send and delete messages in batches
 <a name="sqs-batch-operations"></a>
 
-For request and response details, see the [send\_message\_batch()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/sqs/operations/send_message_batch/) and [delete\_message\_batch()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/sqs/operations/delete_message_batch/) API references.
+For request and response details, see the [send\_message\_batch()](clients/sqs/operations/send_message_batch/) and [delete\_message\_batch()](clients/sqs/operations/delete_message_batch/) API references.
 
 Use `send_message_batch` to send up to 10 entries to one queue. Entry IDs must be unique within the request. A successful request can contain per-entry failures, so associate failures with their IDs and retry only appropriate failed entries.
 

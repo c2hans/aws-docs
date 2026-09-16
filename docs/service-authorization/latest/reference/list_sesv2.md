@@ -25,6 +25,12 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_sesv2-actions-as-permissions).
 
+- **   AssociateEmailIdentityCertificate  **
+  - **IAM action:**  [ses:AssociateEmailIdentityCertificate](#list_sesv2-action-AssociateEmailIdentityCertificate)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   BatchGetMetricData  **
   - **IAM action:**  [ses:BatchGetMetricData](#list_sesv2-action-BatchGetMetricData)
   - **Condition key:**
@@ -181,6 +187,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   DeleteTenantResourceAssociation  **
   - **IAM action:**  [ses:DeleteTenantResourceAssociation](#list_sesv2-action-DeleteTenantResourceAssociation)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DisassociateEmailIdentityCertificate  **
+  - **IAM action:**  [ses:DisassociateEmailIdentityCertificate](#list_sesv2-action-DisassociateEmailIdentityCertificate)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
@@ -379,6 +391,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   ListEmailIdentities  **
   - **IAM action:**  [ses:ListEmailIdentities](#list_sesv2-action-ListEmailIdentities)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListEmailIdentityCertificates  **
+  - **IAM action:**  [ses:ListEmailIdentityCertificates](#list_sesv2-action-ListEmailIdentityCertificates)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
@@ -623,6 +641,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Tagging, Write
 
+- **   UpdateConfigurationSet  **
+  - **IAM action:**  [ses:UpdateConfigurationSet](#list_sesv2-action-UpdateConfigurationSet)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   UpdateConfigurationSetEventDestination  **
   - **IAM action:**  [ses:UpdateConfigurationSetEventDestination](#list_sesv2-action-UpdateConfigurationSetEventDestination)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** ses.amazonaws.com / **Access level:** Write
@@ -673,6 +697,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_sesv2-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
+
+- **   [AssociateEmailIdentityCertificate](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_AssociateEmailIdentityCertificate.html)  **
+  - **Description:** Grants permission to associate a certificate with an email identity
+  - **Resource types (\*required):** [identity\*](#list_sesv2-resource-identity)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_sesv2-aws_ResourceTag___TagKey_)<br />[ses:ApiVersion](#list_sesv2-ses_ApiVersion)<br />[ses:FromAddress](#list_sesv2-ses_FromAddress)
+  - **Access level:** Write
 
 - **   [BatchGetMetricData](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_BatchGetMetricData.html)  **
   - **Description:** Grants permission to get metric data on your activity
@@ -857,6 +887,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [identity\*](#list_sesv2-resource-identity) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_sesv2-aws_ResourceTag___TagKey_)<br />[ses:ApiVersion](#list_sesv2-ses_ApiVersion)
   - **Resource types (\*required):** [template\*](#list_sesv2-resource-template) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_sesv2-aws_ResourceTag___TagKey_)<br />[ses:ApiVersion](#list_sesv2-ses_ApiVersion)
   - **Resource types (\*required):** [tenant\*](#list_sesv2-resource-tenant) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_sesv2-aws_ResourceTag___TagKey_)<br />[ses:ApiVersion](#list_sesv2-ses_ApiVersion)
+  - **Access level:** Write
+
+- **   [DisassociateEmailIdentityCertificate](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DisassociateEmailIdentityCertificate.html)  **
+  - **Description:** Grants permission to disassociate a certificate from an email identity
+  - **Resource types (\*required):** [identity\*](#list_sesv2-resource-identity)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_sesv2-aws_ResourceTag___TagKey_)<br />[ses:ApiVersion](#list_sesv2-ses_ApiVersion)<br />[ses:FromAddress](#list_sesv2-ses_FromAddress)
   - **Access level:** Write
 
 - **   [GetAccount](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetAccount.html)  **
@@ -1057,6 +1093,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [ses:ApiVersion](#list_sesv2-ses_ApiVersion)
   - **Access level:** List
 
+- **   [ListEmailIdentityCertificates](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListEmailIdentityCertificates.html)  **
+  - **Description:** Grants permission to list the certificates associated with an email identity
+  - **Resource types (\*required):** [identity\*](#list_sesv2-resource-identity)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_sesv2-aws_ResourceTag___TagKey_)<br />[ses:ApiVersion](#list_sesv2-ses_ApiVersion)
+  - **Access level:** List
+
 - **   [ListEmailTemplates](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListEmailTemplates.html)  **
   - **Description:** Grants permission to list all of the email templates for your account
   - **Resource types (\*required):**
@@ -1093,7 +1135,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_sesv2-aws_ResourceTag___TagKey_)<br />[ses:ApiVersion](#list_sesv2-ses_ApiVersion)
   - **Access level:** List
 
-- **   [ListResourceTenants](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListResourceTenants)  **
+- **   [ListResourceTenants](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListResourceTenants.html)  **
   - **Description:** Grants permission to list all the tenants associated to a SES resource
   - **Resource types (\*required):** [configuration-set\*](#list_sesv2-resource-configuration-set) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_sesv2-aws_ResourceTag___TagKey_)<br />[ses:ApiVersion](#list_sesv2-ses_ApiVersion)
   - **Resource types (\*required):** [identity\*](#list_sesv2-resource-identity) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_sesv2-aws_ResourceTag___TagKey_)<br />[ses:ApiVersion](#list_sesv2-ses_ApiVersion)
@@ -1119,13 +1161,13 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [tenant](#list_sesv2-resource-tenant) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_sesv2-aws_ResourceTag___TagKey_)<br />[ses:ApiVersion](#list_sesv2-ses_ApiVersion)
   - **Access level:** Read
 
-- **   [ListTenantResources](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListTenantResources)  **
+- **   [ListTenantResources](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListTenantResources.html)  **
   - **Description:** Grants permission to list all the resources associated to a tenant
   - **Resource types (\*required):** [tenant\*](#list_sesv2-resource-tenant)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_sesv2-aws_ResourceTag___TagKey_)<br />[ses:ApiVersion](#list_sesv2-ses_ApiVersion)
   - **Access level:** List
 
-- **   [ListTenants](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListTenants)  **
+- **   [ListTenants](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListTenants.html)  **
   - **Description:** Grants permission to list all the tenants for your account
   - **Resource types (\*required):**
   - **Condition keys:** [ses:ApiVersion](#list_sesv2-ses_ApiVersion)
@@ -1327,6 +1369,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [tenant](#list_sesv2-resource-tenant) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_sesv2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_sesv2-aws_TagKeys)<br />[ses:ApiVersion](#list_sesv2-ses_ApiVersion)
   - **Access level:** Tagging, Write
 
+- **   [UpdateConfigurationSet](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_UpdateConfigurationSet.html)  **
+  - **Description:** Grants permission to update a configuration set
+  - **Resource types (\*required):** [configuration-set\*](#list_sesv2-resource-configuration-set)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_sesv2-aws_ResourceTag___TagKey_)<br />[ses:ApiVersion](#list_sesv2-ses_ApiVersion)<br />[ses:ConfigurationSetOptions](#list_sesv2-ses_ConfigurationSetOptions)
+  - **Access level:** Write
+
 - **   [UpdateConfigurationSetEventDestination](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_UpdateConfigurationSetEventDestination.html)  **
   - **Description:** Grants permission to update the configuration of an event destination for a configuration set
   - **Resource types (\*required):** [configuration-set\*](#list_sesv2-resource-configuration-set)
@@ -1380,7 +1428,13 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by Amazon Simple Email Service v2 but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-- **   ReplicateEmailIdentityDkimSigningKey  **
+- **   [ApplyTrackingConfigurationOverrides](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ConfigurationOverrides.html)  **
+  - **Description:** Grants permission to apply tracking configuration overrides when sending email
+  - **Resource types (\*required):**
+  - **Condition keys:** [ses:ClickTrackingEnabled](#list_sesv2-ses_ClickTrackingEnabled)<br />[ses:OpenTrackingEnabled](#list_sesv2-ses_OpenTrackingEnabled)
+  - **Access level:** Permissions management, Write
+
+- **   [ReplicateEmailIdentityDkimSigningKey](https://docs.aws.amazon.com/ses/latest/dg/send-email-authentication-dkim-deed.html)  **
   - **Description:** Grants permission to replicate email identity DKIM signing key
   - **Resource types (\*required):** [identity\*](#list_sesv2-resource-identity)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_sesv2-aws_ResourceTag___TagKey_)<br />[ses:ReplicaRegion](#list_sesv2-ses_ReplicaRegion)
@@ -1418,11 +1472,14 @@ Amazon Simple Email Service v2 defines the following condition keys that can be 
 |   [aws:ResourceTag/${TagKey}](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag)  | Filters access by tag key-value pairs attached to the resource | String |
 |   [aws:TagKeys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys)  | Filters access by the presence of tag keys in the request | ArrayOfString |
 |   [ses:ApiVersion](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys)  | Filters access by the SES API version | String |
+|   [ses:ClickTrackingEnabled](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys)  | Filters access by the click tracking override value specified in configuration overrides | String |
+|   [ses:ConfigurationSetOptions](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys)  | Filters access by the configuration set options included in the request | ArrayOfString |
 |   [ses:ExportSourceType](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys)  | Filters access by the export source type | String |
 |   [ses:FeedbackAddress](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys)  | Filters access by the "Return-Path" address, which specifies where bounces and complaints are sent by email feedback forwarding | String |
 |   [ses:FromAddress](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys)  | Filters access by the "From" address of a message | String |
 |   [ses:FromDisplayName](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys)  | Filters access by the "From" address that is used as the display name of a message | String |
 |   [ses:MultiRegionEndpointId](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys)  | Filters access by the multi-region endpoint ID that is used to send email | String |
+|   [ses:OpenTrackingEnabled](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys)  | Filters access by the open tracking override value specified in configuration overrides | String |
 |   [ses:Recipients](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys)  | Filters access by the recipient addresses of a message, which include the "To", "CC", and "BCC" addresses | ArrayOfString |
 |   [ses:ReplicaRegion](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys)  | Filters access by the replica regions for Replicating domain DKIM signing key | ArrayOfString |
 |   [ses:TenantName](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys)  | Filters access by the tenant name that is used to send email | String |

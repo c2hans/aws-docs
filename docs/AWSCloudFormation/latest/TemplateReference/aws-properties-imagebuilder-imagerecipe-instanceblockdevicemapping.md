@@ -49,7 +49,7 @@ The device to which these mappings apply.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Ebs`  <a name="cfn-imagebuilder-imagerecipe-instanceblockdevicemapping-ebs"></a>
-Use to manage Amazon EBS-specific configuration for this mapping.
+The Amazon EBS-specific configuration for this mapping.
 *Required*: No
 *Type*: [EbsInstanceBlockDeviceSpecification](aws-properties-imagebuilder-imagerecipe-ebsinstanceblockdevicespecification.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
@@ -63,7 +63,7 @@ The following is an example of an empty string value in the `NoDevice` field.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `VirtualName`  <a name="cfn-imagebuilder-imagerecipe-instanceblockdevicemapping-virtualname"></a>
-Use to manage instance ephemeral devices.
+The virtual device name for instance ephemeral devices.
 *Required*: No
 *Type*: String
 *Minimum*: `1`

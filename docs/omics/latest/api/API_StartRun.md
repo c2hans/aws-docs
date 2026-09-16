@@ -53,6 +53,7 @@ Content-type: application/json
    "runGroupId": "{{string}}",
    "runId": "{{string}}",
    "scratchStorageMode": "{{string}}",
+   "sessionPolicy": "{{string}}",
    "storageCapacity": {{number}},
    "storageType": "{{string}}",
    "tags": {
@@ -181,6 +182,15 @@ Optional configuration for enabling scratch ephemeral storage mounted at /tmp. I
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Valid Values: `LOCAL | SHARED`
+Required: No
+
+ ** [sessionPolicy](#API_StartRun_RequestSyntax) **   <a name="omics-StartRun-request-sessionPolicy"></a>
+Optional inline IAM policy document to scope down the permissions granted to the run. The policy restricts the permissions of the IAM role specified in `roleArn`. The effective permissions are the intersection of the role's permissions and the session policy. The session policy must be a valid JSON document with a maximum length of 2,048 characters.
+The session policy must include permissions for CloudWatch Logs (`logs:CreateLogStream` and `logs:PutLogEvents`) because the service uses the run's credentials to create and write to log groups.
+For more information about session policies, see [Session policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session) in the *IAM User Guide*.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `[\p{L}\p{M}\p{Z}\p{S}\p{N}\p{P}\t\n\r]+`
 Required: No
 
  ** [storageCapacity](#API_StartRun_RequestSyntax) **   <a name="omics-StartRun-request-storageCapacity"></a>
@@ -355,5 +365,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/omics-2022-11-28/StartRun)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/omics-2022-11-28/StartRun)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/omics-2022-11-28/StartRun)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/omics-2022-11-28/StartRun)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/omics-2022-11-28/StartRun)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/omics-2022-11-28/StartRun)

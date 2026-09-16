@@ -42,6 +42,11 @@ The total number of log events scanned during the query.
 Type: Double
 Required: No
 
+ ** resultCount **   <a name="CWL-Type-QueryStatistics-resultCount"></a>
+The number of rows in the final query result set. This value represents the total number of output rows across all pages. For queries that include post-aggregation filters (such as `stats count(*) by field | filter count > threshold`), this value might be less than `recordsMatched`. It reflects only the rows that survived all operations in the query.
+Type: Double
+Required: No
+
 ## See Also
 <a name="API_QueryStatistics_SeeAlso"></a>
 

@@ -257,7 +257,7 @@ The following artifact shows the trust relationship for `aws-controltower-ReadOn
 
 ------
 
-The following artifact shows the trust relationship for `aws-controltower-AuditAdministratorRole`:
+The following artifact shows the trust relationship for `aws-controltower-AuditReadOnlyRole`:
 
 ```
 {

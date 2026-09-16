@@ -22,6 +22,11 @@ Describes Amazon Athena features, improvements, and bug fixes by release date.
 ## Athena release notes for 2026
 <a name="release-notes-2026"></a>
 
+### August 28, 2026
+<a name="release-note-2026-08-28"></a>
+
+With Athena, you can now use JDBC driver version 3.8.1. This maintenance release upgrades the bundled Netty dependency to include security fixes, along with additional fixes and improvements. To help keep your connections to Athena secure, we recommend upgrading to this driver version. This driver version is available in all AWS Regions where Athena is supported. For more information about this version of the driver, see [Amazon Athena JDBC 3.x release notes](jdbc-v3-driver-release-notes.md). To download the latest JDBC driver, see [JDBC 3.x driver download](jdbc-v3-driver.md#jdbc-v3-driver-download).
+
 ### August 24, 2026
 <a name="release-note-2026-08-24"></a>
 

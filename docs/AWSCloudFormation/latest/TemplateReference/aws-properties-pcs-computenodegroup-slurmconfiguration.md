@@ -19,6 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[GresCustomSettings](#cfn-pcs-computenodegroup-slurmconfiguration-grescustomsettings)" : {{[ {{{Key}}: {{Value}}, ...}, ... ]}},
   "[ScaleDownIdleTimeInSeconds](#cfn-pcs-computenodegroup-slurmconfiguration-scaledownidletimeinseconds)" : {{Integer}},
   "[SlurmCustomSettings](#cfn-pcs-computenodegroup-slurmconfiguration-slurmcustomsettings)" : {{[ SlurmCustomSetting, ... ]}}
 }
@@ -28,6 +29,9 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-pcs-computenodegroup-slurmconfiguration-syntax.yaml"></a>
 
 ```
+  [GresCustomSettings](#cfn-pcs-computenodegroup-slurmconfiguration-grescustomsettings): {{
+    -
+    {{Key}}: {{Value}}}}
   [ScaleDownIdleTimeInSeconds](#cfn-pcs-computenodegroup-slurmconfiguration-scaledownidletimeinseconds): {{Integer}}
   [SlurmCustomSettings](#cfn-pcs-computenodegroup-slurmconfiguration-slurmcustomsettings): {{
     - SlurmCustomSetting}}
@@ -35,6 +39,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ## Properties
 <a name="aws-properties-pcs-computenodegroup-slurmconfiguration-properties"></a>
+
+`GresCustomSettings`  <a name="cfn-pcs-computenodegroup-slurmconfiguration-grescustomsettings"></a>
+The additional Slurm `gres.conf` records for the compute node group. Each item is a map of `gres.conf` attribute names to values that describes one `gres.conf` record, such as a GPU topology, MIG, MPS, or custom GRES entry. AWS PCS adds the `NodeName=` prefix and merges these records with the GPU record it derives from the instance type.
+*Required*: No
+*Type*: Array of Object
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ScaleDownIdleTimeInSeconds`  <a name="cfn-pcs-computenodegroup-slurmconfiguration-scaledownidletimeinseconds"></a>
 The time (in seconds) before an idle compute node is scaled down. Overrides the cluster-level ScaleDownIdleTimeInSeconds. If removed from the template, CloudFormation sets the value to -1, reverting to the cluster-level setting. Valid values: 1–10000000. Requires Slurm version 25.11 or later.

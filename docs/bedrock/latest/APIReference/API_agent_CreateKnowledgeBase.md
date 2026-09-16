@@ -46,6 +46,7 @@ Content-type: application/json
                ],
                "dimensions": {{number}},
                "embeddingDataType": "{{string}}",
+               "modelConfiguration": {{JSON value}},
                "video": [
                   {
                      "segmentationConfiguration": {
@@ -58,6 +59,16 @@ Content-type: application/json
          "embeddingModelType": "{{string}}",
          "serverSideEncryptionConfiguration": {
             "kmsKeyArn": "{{string}}"
+         },
+         "supplementalDataStorageConfiguration": {
+            "storageLocations": [
+               {
+                  "s3Location": {
+                     "uri": "{{string}}"
+                  },
+                  "type": "{{string}}"
+               }
+            ]
          }
       },
       "sqlKnowledgeBaseConfiguration": {
@@ -133,6 +144,7 @@ Content-type: application/json
                ],
                "dimensions": {{number}},
                "embeddingDataType": "{{string}}",
+               "modelConfiguration": {{JSON value}},
                "video": [
                   {
                      "segmentationConfiguration": {
@@ -327,6 +339,7 @@ Content-type: application/json
                   ],
                   "dimensions": number,
                   "embeddingDataType": "string",
+                  "modelConfiguration": JSON value,
                   "video": [
                      {
                         "segmentationConfiguration": {
@@ -339,6 +352,16 @@ Content-type: application/json
             "embeddingModelType": "string",
             "serverSideEncryptionConfiguration": {
                "kmsKeyArn": "string"
+            },
+            "supplementalDataStorageConfiguration": {
+               "storageLocations": [
+                  {
+                     "s3Location": {
+                        "uri": "string"
+                     },
+                     "type": "string"
+                  }
+               ]
             }
          },
          "sqlKnowledgeBaseConfiguration": {
@@ -414,6 +437,7 @@ Content-type: application/json
                   ],
                   "dimensions": number,
                   "embeddingDataType": "string",
+                  "modelConfiguration": JSON value,
                   "video": [
                      {
                         "segmentationConfiguration": {
@@ -566,6 +590,65 @@ Input validation failed. Check your request parameters and retry the request.
 A list of objects containing fields that caused validation errors and their corresponding validation error messages.
 HTTP Status Code: 400
 
+## Examples
+<a name="API_agent_CreateKnowledgeBase_Examples"></a>
+
+### Create a managed knowledge base with a multimodal embedding model configuration
+<a name="API_agent_CreateKnowledgeBase_Example_1"></a>
+
+The following example creates a managed knowledge base that uses a multimodal embedding model. The `modelConfiguration` field configures dynamic segmentation for audio and fixed-length segmentation for video.
+
+```
+PUT /knowledgebases/ HTTP/1.1
+Content-type: application/json
+
+{
+    "name": "my-multimodal-knowledge-base",
+    "roleArn": "arn:aws:iam::123456789012:role/AmazonBedrockExecutionRoleForKnowledgeBase",
+    "knowledgeBaseConfiguration": {
+        "type": "MANAGED",
+        "managedKnowledgeBaseConfiguration": {
+            "embeddingModelType": "CUSTOM",
+            "embeddingModelArn": "arn:aws:bedrock:us-east-1::foundation-model/twelvelabs.marengo-embed-3-0-v1:0",
+            "embeddingModelConfiguration": {
+                "bedrockEmbeddingModelConfiguration": {
+                    "embeddingDataType": "FLOAT32",
+                    "modelConfiguration": {
+                        "version": "1",
+                        "audio": {
+                            "segmentation": {
+                                "method": "dynamic",
+                                "dynamic": {
+                                    "minDurationSec": 4
+                                }
+                            }
+                        },
+                        "video": {
+                            "segmentation": {
+                                "method": "fixed",
+                                "fixed": {
+                                    "durationSec": 6
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "supplementalDataStorageConfiguration": {
+                "storageLocations": [
+                    {
+                        "type": "S3",
+                        "s3Location": {
+                            "uri": "s3://amzn-s3-demo-bucket"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
+```
+
 ## See Also
 <a name="API_agent_CreateKnowledgeBase_SeeAlso"></a>
 
@@ -578,5 +661,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/bedrock-agent-2023-06-05/CreateKnowledgeBase)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/bedrock-agent-2023-06-05/CreateKnowledgeBase)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/bedrock-agent-2023-06-05/CreateKnowledgeBase)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/bedrock-agent-2023-06-05/CreateKnowledgeBase)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/bedrock-agent-2023-06-05/CreateKnowledgeBase)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/bedrock-agent-2023-06-05/CreateKnowledgeBase)

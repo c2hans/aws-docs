@@ -9,3 +9,4 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 **Resource types**
 + [AWS::DocDBElastic::Cluster](aws-resource-docdbelastic-cluster.md)
++ [AWS::DocDBElastic::ClusterSnapshot](aws-resource-docdbelastic-clustersnapshot.md)

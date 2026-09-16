@@ -577,7 +577,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/medialive-2017-10-14/DeleteInput)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/medialive-2017-10-14/DeleteInput)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/medialive-2017-10-14/DeleteInput)
-+ [AWS SDK for Python](/goto/boto3/medialive-2017-10-14/DeleteInput)
++ [AWS SDK for Python (Boto3)](/goto/boto3/medialive-2017-10-14/DeleteInput)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/medialive-2017-10-14/DeleteInput)
 
 ### DescribeInput
@@ -590,7 +590,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/medialive-2017-10-14/DescribeInput)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/medialive-2017-10-14/DescribeInput)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/medialive-2017-10-14/DescribeInput)
-+ [AWS SDK for Python](/goto/boto3/medialive-2017-10-14/DescribeInput)
++ [AWS SDK for Python (Boto3)](/goto/boto3/medialive-2017-10-14/DescribeInput)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/medialive-2017-10-14/DescribeInput)
 
 ### UpdateInput
@@ -603,5 +603,5 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/medialive-2017-10-14/UpdateInput)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/medialive-2017-10-14/UpdateInput)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/medialive-2017-10-14/UpdateInput)
-+ [AWS SDK for Python](/goto/boto3/medialive-2017-10-14/UpdateInput)
++ [AWS SDK for Python (Boto3)](/goto/boto3/medialive-2017-10-14/UpdateInput)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/medialive-2017-10-14/UpdateInput)

@@ -31,7 +31,7 @@ Use `create_table` to create a new DynamoDB table. You construct table attribute
 ### Create a table with a simple primary key
 <a name="dynamodb-create-simple-table"></a>
 
-For request and response details, see the [create\_table()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/dynamodb/operations/create_table/) and [describe\_table()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/dynamodb/operations/describe_table/) API references.
+For request and response details, see the [create\_table()](clients/dynamodb/operations/create_table/) and [describe\_table()](clients/dynamodb/operations/describe_table/) API references.
 
 A simple primary key contains only a partition key.
 
@@ -85,7 +85,7 @@ async def create_table(
 ### Create a table with a composite primary key
 <a name="dynamodb-create-composite-table"></a>
 
-For request and response details, see the [create\_table()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/dynamodb/operations/create_table/) and [describe\_table()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/dynamodb/operations/describe_table/) API references.
+For request and response details, see the [create\_table()](clients/dynamodb/operations/create_table/) and [describe\_table()](clients/dynamodb/operations/describe_table/) API references.
 
 A composite primary key contains a partition key and a sort key. The item and query examples use this schema.
 
@@ -146,7 +146,7 @@ Applications normally create durable tables through an infrastructure deployment
 ## List tables
 <a name="dynamodb-list-tables"></a>
 
-For request and response details, see the [list\_tables()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/dynamodb/operations/list_tables/) API reference.
+For request and response details, see the [list\_tables()](clients/dynamodb/operations/list_tables/) API reference.
 
 `list_tables` can return a partial list. Continue with `last_evaluated_table_name` until DynamoDB returns no continuation name.
 
@@ -183,7 +183,7 @@ async def list_tables(
 ## Describe a table
 <a name="dynamodb-describe-table"></a>
 
-For request and response details, see the [describe\_table()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/dynamodb/operations/describe_table/) API reference.
+For request and response details, see the [describe\_table()](clients/dynamodb/operations/describe_table/) API reference.
 
 Use `describe_table` to inspect table metadata such as status, key schema, item count, and provisioned throughput.
 
@@ -212,7 +212,7 @@ async def describe_table(
 ## Update a table
 <a name="dynamodb-update-table"></a>
 
-For request and response details, see the [update\_table()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/dynamodb/operations/update_table/) and [describe\_table()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/dynamodb/operations/describe_table/) API references.
+For request and response details, see the [update\_table()](clients/dynamodb/operations/update_table/) and [describe\_table()](clients/dynamodb/operations/describe_table/) API references.
 
 You can modify your table's provisioned throughput values at any time with `update_table`. This example changes the provisioned read and write capacity, then waits until the table is active and confirms that DynamoDB reports the requested values.
 
@@ -268,7 +268,7 @@ async def update_table(
 ## Delete a table
 <a name="dynamodb-delete-table"></a>
 
-For request and response details, see the [delete\_table()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/dynamodb/operations/delete_table/) and [describe\_table()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/dynamodb/operations/describe_table/) API references.
+For request and response details, see the [delete\_table()](clients/dynamodb/operations/delete_table/) and [describe\_table()](clients/dynamodb/operations/describe_table/) API references.
 
 Delete each temporary table that you created after running the examples. The bounded loop confirms cleanup by waiting for the modeled `ResourceNotFoundException`.
 

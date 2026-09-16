@@ -14,7 +14,7 @@ Data requests can be used in two main ways:
 |  |  |
 | --- |--- |
 | **Data request node** | Trigger the data request at a specific point in a deterministic flow, then use the returned data in later nodes. |
-| **Agent tool** | Attach the data request as a tool to an agent node so the agent can call it when needed to complete a user task. |
+| **Agentic tool** | Attach the data request as a tool to an agent node so the agent can call it when needed to complete a user task. |
 
 To access data requests, select **Resources** from your workspace menu, then choose **Data requests**.
 
@@ -57,7 +57,7 @@ For example, a scheduling flow may collect a user's preferred date, send it to a
 
 1. Select **Data requests**.
 
-1. Select **Create data request**.
+1. Select **New data request**.
 
 1. Enter a clear name.
 
@@ -111,7 +111,7 @@ When configuring an external implementation, define details such as:
 + Request payload
 + Response structure
 
-External implementations can support separate Development and Production endpoint configurations. This lets you test safely against a development endpoint before using production systems.
+External implementations can support separate Production and Development endpoint configurations. This lets you test safely against a development endpoint before using production systems.
 
 If the endpoint requires authentication, use Secrets instead of hardcoding API keys, tokens, or credentials directly into headers or payloads.
 
@@ -135,7 +135,7 @@ From the **Tools** section, you can:
 
 Each tool can include a description and an argument schema that explains what information the tool expects.
 
-MCP implementations can support separate Development and Production endpoint configurations. This lets you test safely against a development endpoint before using production systems.
+MCP implementations can support separate Production and Development endpoint configurations. This lets you test safely against a development endpoint before using production systems.
 
 If the endpoint requires authentication, use Secrets instead of hardcoding API keys, tokens, or credentials directly into headers or payloads.
 
@@ -194,7 +194,7 @@ When defining request and response models, choose the property type that matches
 | **String** | A text value, such as a name, email, status, or confirmation message. |
 | **Number** | A numeric value, such as age, quantity, price, or count. |
 | **Boolean** | A true or false value, such as whether a customer is authenticated or eligible. |
-| **Array** | A list of values, such as available times, products, orders, or options. |
+| **List** | A list of values, such as available times, products, orders, or options. |
 | **Object** | A structured group of related values, such as a customer profile or reservation record. |
 
 Use Array when the response returns multiple values that may need to be presented as options. Use Object when the response returns a structured item with multiple properties.
@@ -210,7 +210,7 @@ Examples:
 
 A list can be used with a User choice node when the user should select from returned options.
 
-If the response contains a list of objects, use a Loop node to iterate over the nested values, or a Transform node or Define node to change the schema to a desired output and reference the correct nested properties depending on how you want to display or process the returned values.
+If the response contains a list of objects, use a Loop node to iterate over the nested values, or a Transform node or Generative text node to change the schema to a desired output and reference the correct nested properties depending on how you want to display or process the returned values.
 
 ## Sensitive fields
 <a name="acxd-data-requests-sensitive"></a>

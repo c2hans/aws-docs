@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/RequesterUI/Introduction.html
 ---
 
+**Amazon Mechanical Turk will permanently close on September 30, 2026.** For Workers and Requesters currently using the service, visit our [Amazon Mechanical Turk help page](https://www.mturk.com/help) to learn how you can prepare for this closure.
+
 # Welcome to the Amazon Mechanical Turk Requester User Interface Guide
 <a name="Introduction"></a>
 

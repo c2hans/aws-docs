@@ -13,30 +13,89 @@ Each form can contain multiple sections and questions.
 
 This topic explains how to create a form and configure automation using the Connect Customer admin website. To create and manage forms programmatically, see [Evaluation actions](https://docs.aws.amazon.com/connect/latest/APIReference/evaluation-api.html) in the *Connect Customer API Reference*.
 
-**Topics**
-+ [Step 1: Create an evaluation form with a title](#step-title)
+**Contents**
++ [Step 1: Create an evaluation form](#step-title)
+  + [Create a form from a sample template](#create-sample)
+  + [Import an evaluation form from a PDF using AI](#import-form-pdf)
+  + [Create a blank form and set a title](#create-blank)
+  + [Import an evaluation form from another instance](#import-form-json)
 + [Step 2: Add sections and questions](#step-sections)
 + [Step 3: Add answers](#step-answers)
 + [Step 4: Conditionally enable questions](#step-conditionally-enable-questions)
 + [Step 5: Assign scores and ranges to answers](#step-assignscores)
+  + [Step 5.1: Percentage-based scoring](#step-assignscores-percentage)
+  + [Step 5.2: Point-based scoring](#step-assignscores-pointbased)
+  + [Step 5.3: Assign performance thresholds](#step-assignscores-performance-thresholds)
 + [Step 6: Enable automated evaluations](#step-automate)
+  + [Choose a Gen AI version for automated evaluations](#step-automate-genai-version)
 + [Step 7: Preview the evaluation form](#step-preview)
 + [Step 8: Assign weights for final score](#step-weights)
+  + [Weight distribution mode](#weight-distribution-mode)
 + [Step 9: Validate the evaluation form](#step-validateform)
 + [Step 10: Activate an evaluation form](#step-activateform)
 
 Before you begin, make sure you have the required security profile permissions. For more information, see [Assign security profile permissions for performance evaluations and coaching](evaluation-and-coaching-permissions.md).
 
-## Step 1: Create an evaluation form with a title
+## Step 1: Create an evaluation form
 <a name="step-title"></a>
 
-The following steps explain how to create or duplicate an evaluation form and set a title.
+There are several ways to create an evaluation form. Choose the method that best fits how you work — each method opens the form in the editor, where you can refine it to fit your needs, then preview, validate, and activate it:
++ **Sample form** – Start from a pre-built template whose sections, questions, scoring, and automation are already configured, including questions mapped to business outcomes. See [Create a form from a sample template](#create-sample).
++ **Import from a PDF using AI** – Migrate a form from another quality management system by uploading a PDF. See [Import an evaluation form from a PDF using AI](#import-form-pdf).
++ **Blank form** – Build a form from scratch, adding every section, question, and score yourself. See [Create a blank form and set a title](#create-blank).
++ **Import from another instance** – Copy a form between Connect Customer instances (for example, from a test instance to a production instance) using JSON. See [Import an evaluation form from another instance](#import-form-json).
+
+Whichever method you choose, start by navigating to the **Evaluation forms** page:
 
 1. Log in to Connect Customer with a user account that has the following security profile permission: **Analytics and Optimization** - **Evaluation forms - manage form definitions** - **Create**.
 
 1. Choose **Analytics and optimization**, then choose **Evaluation forms**.
 
+### Create a form from a sample template
+<a name="create-sample"></a>
+
+Start from a sample form — a pre-built template with sections, questions, answers, scoring, and automation already configured. Sample forms cover both agent-handled and self-service interactions, and include questions that map to standard business outcomes so you can measure them without building the scoring from scratch.
+
 1. On the **Evaluation forms** page, choose **Create new form**.
+
+1. Choose **Use a sample form**, then select a template, such as **Agent Interaction Outcomes**. (Optional) Add tags to control access to the form. Choose **Create**.
+![The create new form page, the Use a sample form option with the list of sample templates.](https://docs.aws.amazon.com/connect/latest/adminguide/images/evaluation-forms-sample-form.png)
+
+   The form opens fully configured. Its sections, questions, and scoring are already set up, and questions that measure a business outcome are flagged as a **Business outcome metric**.
+![A pre-built sample form question, "Did the conversation result in customer churn?", with the Business outcome metric option selected and mapped to Churn propensity.](https://docs.aws.amazon.com/connect/latest/adminguide/images/evaluation-forms-sample-form-outcome.png)
+
+1. Review the form and edit it as needed. Because a sample form is already fully configured, you can typically skip ahead to [Step 7: Preview the evaluation form](#step-preview).
+
+A business outcome metric maps an evaluation question to a standard, normalized outcome. Sample forms use five industry-standard outcome metrics: customer satisfaction (CSAT), churn propensity, and successful sale for agent-handled interactions, and full and partial self-service success for self-service interactions. These outcomes roll up into analytics dashboards, where they are summarized across evaluations and broken down by agent.
+
+### Import an evaluation form from a PDF using AI
+<a name="import-form-pdf"></a>
+
+You can import an evaluation form from any quality management system by uploading a PDF. Connect Customer uses AI to extract the sections, questions, answer options, and scoring from the PDF and create a draft evaluation form that you can review and edit.
+
+1. On the **Evaluation forms** page, choose **Import form**, then choose **From PDF**.
+
+   The following image shows the **Import form** menu with the **From PDF** option.
+![The Evaluation forms page showing the Import form button with the From PDF menu option highlighted.](https://docs.aws.amazon.com/connect/latest/adminguide/images/evaluation-forms-import-pdf.png)
+
+1. In the **Import evaluation form with AI** dialog:
+   + **Evaluation form PDF** – Choose a PDF file (max 2 MB).
+   + **Scoring method** – Choose **Points-based**, **Percentage-based**, or **Not scored**.
+   + **Instructions (optional)** – Provide context to guide the extraction, for example: "This form is for outbound sales calls. Focus on upselling questions."
+![The Import evaluation form with AI dialog, showing fields for Evaluation form PDF, Scoring method, and Instructions.](https://docs.aws.amazon.com/connect/latest/adminguide/images/evaluation-forms-import-pdf-dialog.png)
+
+1. Choose **Import**. The import typically completes within one minute.
+
+1. After the import completes, the form appears as a draft. Open it to review that the sections, questions, and scoring were extracted correctly.
+
+1. Edit the form as needed, then activate it.
+
+### Create a blank form and set a title
+<a name="create-blank"></a>
+
+The following steps explain how to create a blank evaluation form (or duplicate an existing form) and set a title, then build it up using the remaining steps in this topic.
+
+1. On the **Evaluation forms** page, choose **Create new form**, choose **Create manually**, and then choose **Create**.
 
    —or—
 
@@ -53,36 +112,22 @@ The following steps explain how to create or duplicate an evaluation form and se
 
 1. Continue to the next step to add sections and questions.
 
-**Import evaluation forms from another instance**
-You can export an evaluation form from one Connect Customer instance (say a test instance) and import it into another instance (say a production instance).
-While viewing an existing evaluation form, choose **Actions**, **Export as JSON**.
+### Import an evaluation form from another instance
+<a name="import-form-json"></a>
 
+You can export an evaluation form from one Connect Customer instance (say a test instance) and import it into another instance (say a production instance).
+
+**To import an evaluation form from JSON**
+
+1. While viewing an existing evaluation form, choose **Actions**, **Export as JSON**.
 ![The evaluation form page, the export as json action.](https://docs.aws.amazon.com/connect/latest/adminguide/images/evaluation-forms-export-json.png)
 
-Open the instance where you want to import this form.
-On the **Evaluation forms** page, choose **Import form**. Choose **Choose File** to upload the previously exported JSON, then choose **Import**.
+1. Open the instance where you want to import this form.
 
+1. On the **Evaluation forms** page, choose **Import form**. Choose **Choose File** to upload the previously exported JSON, then choose **Import**.
 ![The evaluation forms page, the import form action.](https://docs.aws.amazon.com/connect/latest/adminguide/images/evaluation-forms-import-json.png)
 
 The form is created including questions, instructions, answers, scoring, and automation configuration. Instance-specific settings such as rule categories and tags are not present in the exported file.
-
-**Import an evaluation form from a PDF using AI**
-You can import an evaluation form from any quality management system by uploading a PDF. Connect Customer uses AI to extract the sections, questions, answer options, and scoring from the PDF and create a draft evaluation form that you can review and edit.
-On the **Evaluation forms** page, choose **Import form**, then choose **From PDF**.
-The following image shows the **Import form** menu with the **From PDF** option.
-
-![The Evaluation forms page showing the Import form button with the From PDF menu option highlighted.](https://docs.aws.amazon.com/connect/latest/adminguide/images/evaluation-forms-import-pdf.png)
-
-In the **Import evaluation form with AI** dialog:
-**Evaluation form PDF** – Choose a PDF file (max 2 MB).
-**Scoring method** – Choose **Points-based**, **Percentage-based**, or **Not scored**.
-**Instructions (optional)** – Provide context to guide the extraction, for example: "This form is for outbound sales calls. Focus on upselling questions."
-
-![The Import evaluation form with AI dialog, showing fields for Evaluation form PDF, Scoring method, and Instructions.](https://docs.aws.amazon.com/connect/latest/adminguide/images/evaluation-forms-import-pdf-dialog.png)
-
-Choose **Import**. The import typically completes within one minute.
-After the import completes, the form appears as a draft. Open it to review that the sections, questions, and scoring were extracted correctly.
-Edit the form as needed, then activate it.
 
 ## Step 2: Add sections and questions
 <a name="step-sections"></a>
@@ -313,6 +358,57 @@ After an evaluation form is activated with automation configured on some of the 
 1. Activate the evaluation form.
 
 1. Upon activation you will be asked to create a rule in conversational analytics that submits an automated evaluation. For more information, see [Create a rule in conversational analytics that submits an automated evaluation](contact-lens-rules-submit-automated-evaluation.md). With the rule, you can specify which contacts should be automatically evaluated using the evaluation form.
+
+### Choose a Gen AI version for automated evaluations
+<a name="step-automate-genai-version"></a>
+
+When you enable automated evaluations, Connect Customer uses generative AI to suggest answers for the automated questions on the form. The Gen AI configuration behind those suggestions improves over time as Connect Customer ships refined prompts and upgrades the underlying model. By default, a form automatically uses the latest generally available Gen AI version, so your automated evaluations benefit from these improvements without any action on your part.
+
+**Note**
+Gen AI version selection is not available to customers on Amazon Connect Customer Basic.
+
+If you want more control, choose the Gen AI version the form uses. On the evaluation form builder, choose the **Additional settings** tab. In the **Gen AI version** section, choose one of the following options.
+
+![The Gen AI version section on the Additional settings tab, showing the Latest, Preview, and Specific version options.](https://docs.aws.amazon.com/connect/latest/adminguide/images/evaluationforms-genai-version-selector.png)
+
+**Latest**
+Automatically upgrade to the latest Gen AI version for automating evaluations. This is the default. When Connect Customer promotes a new version to latest, forms set to **Latest** move to it automatically so you always benefit from the most recent improvements.
+
+**Preview**
+Try automated evaluations with an upcoming Gen AI version so you can make adjustments before the preview version becomes the latest. If no version is currently in preview, the form uses the latest version.
+
+**Specific version**
+Continue using a specific version until it reaches end of life. Choose this option for predictable automation. If your chosen version reaches end of life, the form automatically uses the latest version.
+
+When you choose **Specific version**, choose a version from the dropdown list. Each entry shows the version name and the date it was released, and a badge indicates the version's state. The versions that are available depend on your form type and your account's enrollment in cross-Region inference. The following tables describe the available versions.
+
+![The Specific version dropdown expanded, listing available versions with their release dates and state badges.](https://docs.aws.amazon.com/connect/latest/adminguide/images/evaluationforms-genai-specific-version.png)
+
+Versions that have reached end of life appear dimmed and cannot be selected for a new form version.
+
+**Agent evaluation versions** — available for agent evaluation forms when your account is enrolled in cross-Region inference.
+
+| Version | State | What changed |
+| --- | --- | --- |
+| AGENT\_EVALUATION\_2026-05-05 | Preview | Adjusts how strictly the model scores answers, to make automated suggestions less strict where earlier versions were too harsh. |
+| AGENT\_EVALUATION\_2026-04-16 | Latest | Reduces the rate of automated evaluations that fail to generate a suggested answer, so more questions receive an automated suggestion. |
+| AGENT\_EVALUATION\_2025-12-03 | Active | The first version with the model upgrade. |
+
+**Automated interaction (self-service) evaluation versions** — available for automated interaction evaluation forms when your account is enrolled in cross-Region inference.
+
+| Version | State | What changed |
+| --- | --- | --- |
+| SELF\_SERVICE\_EVALUATION\_2026-04-24 | Preview | Adjusts how strictly the model scores answers, making automated suggestions less strict than the previous version. |
+| SELF\_SERVICE\_EVALUATION\_2026-03-18 | Latest | The initial Gen AI version for automated interaction evaluations. |
+
+**Note**
+The Gen AI versions available to you depend on your form type, your AWS Region, and your account's enrollment in cross-Region inference. If no versions are available for your form's context, the version selector does not list any versions, and the form uses the latest version that Connect Customer resolves at evaluation time.
+
+The Gen AI version you choose is saved on the form version when you save the form, and it applies to that form version for its lifetime. You can change the selection while a form version is in **Draft**; after a form version is activated, its Gen AI version selection is fixed. To move a form to a different version, create a new form version and choose the version you want. Forms created before this feature was available do not have a selection, and Connect Customer uses the latest version for them at evaluation time.
+
+Each Gen AI version has a state, shown as a badge in the version selector: **Latest** is the current default; **Preview** is an upcoming version you can try before it becomes the default; **Active** is a stable version that is not the default but is still available to select; and **End of life** means the version is being retired and can no longer be selected for a new form version.
+
+When a version that one of your forms uses is approaching end of life, Connect Customer notifies you in advance through the AWS Health Dashboard and a warning banner on each affected form version's detail page. You do not need to take action to keep your evaluations running: if a form's selected version reaches end of life before you move the form, Connect Customer automatically uses the latest available version for that form's automated evaluations rather than failing them, so there are no gaps in your evaluations. We recommend that you review your form against the newer version to confirm accuracy, because a newer version can behave differently from the version your form was originally set to.
 
 ## Step 7: Preview the evaluation form
 <a name="step-preview"></a>

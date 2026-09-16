@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Connect::Metric Tag
 <a name="aws-properties-connect-metric-tag"></a>
 
-<a name="aws-properties-connect-metric-tag-description"></a>The `Tag` property type specifies Property description not available. for an [AWS::Connect::Metric](aws-resource-connect-metric.md).
+A key-value pair to associate with a resource.
 
 ## Syntax
 <a name="aws-properties-connect-metric-tag-syntax"></a>
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-connect-metric-tag-properties"></a>
 
 `Key`  <a name="cfn-connect-metric-tag-key"></a>
-Property description not available.
+The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, \_, ., /, =, \+, and -.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^(?!aws:)[a-zA-Z+-=._:/]+$`
@@ -45,7 +45,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Value`  <a name="cfn-connect-metric-tag-value"></a>
-Property description not available.
+The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, \_, ., /, =, \+, and -.
 *Required*: Yes
 *Type*: String
 *Maximum*: `256`

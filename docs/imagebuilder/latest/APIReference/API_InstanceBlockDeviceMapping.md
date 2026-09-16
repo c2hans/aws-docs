@@ -17,18 +17,18 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
  ** ebs **   <a name="imagebuilder-Type-InstanceBlockDeviceMapping-ebs"></a>
-Use to manage Amazon EBS-specific configuration for this mapping.
+The Amazon EBS-specific configuration for this mapping.
 Type: [EbsInstanceBlockDeviceSpecification](API_EbsInstanceBlockDeviceSpecification.md) object
 Required: No
 
  ** noDevice **   <a name="imagebuilder-Type-InstanceBlockDeviceMapping-noDevice"></a>
-Use to remove a mapping from the base image.
+Specifies a mapping to remove from the base image.
 Type: String
 Length Constraints: Fixed length of 0.
 Required: No
 
  ** virtualName **   <a name="imagebuilder-Type-InstanceBlockDeviceMapping-virtualName"></a>
-Use to manage instance ephemeral devices.
+The virtual device name for instance ephemeral devices.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No

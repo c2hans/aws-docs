@@ -44,7 +44,7 @@ The request does not use any URI parameters.
 The request accepts the following data in JSON format.
 
  ** [clientToken](#API_ImportVmImage_RequestSyntax) **   <a name="imagebuilder-ImportVmImage-request-clientToken"></a>
-Unique, case-sensitive identifier you provide to ensure idempotency of the request. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
+A unique, case-sensitive identifier you provide to ensure that the operation completes no more than one time. If this token matches a previous request, the service ignores the request, but does not return an error. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: Yes
@@ -56,7 +56,7 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
  ** [loggingConfiguration](#API_ImportVmImage_RequestSyntax) **   <a name="imagebuilder-ImportVmImage-request-loggingConfiguration"></a>
-Define logging configuration for the image build process.
+The logging configuration for the image build process.
 Type: [ImageLoggingConfiguration](API_ImageLoggingConfiguration.md) object
 Required: No
 
@@ -81,7 +81,7 @@ Required: Yes
  ** [semanticVersion](#API_ImportVmImage_RequestSyntax) **   <a name="imagebuilder-ImportVmImage-request-semanticVersion"></a>
 The semantic version to attach to the base image that was created during the import process. This version follows the semantic version syntax.
 The semantic version has four nodes: <major>.<minor>.<patch>/<build>. You can assign values for the first three, and can filter on all of them.
- **Assignment:** For the first three nodes you can assign any positive integer value, including zero, with an upper limit of 2^30-1, or 1073741823 for each node. Image Builder automatically assigns the build number to the fourth node.
+ **Assignment:** For the first three nodes, you can assign any positive integer value, including zero. The upper limit is 2^30-1, or 1073741823, for each node. Image Builder automatically assigns the build number to the fourth node.
  **Patterns:** You can use any numeric pattern that adheres to the assignment requirements for the nodes that you can assign. For example, you might choose a software version pattern, such as 1.0.0, or a date, such as 2021.01.01.
 Type: String
 Pattern: `^[0-9]+\.[0-9]+\.[0-9]+$`
@@ -166,5 +166,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/imagebuilder-2019-12-02/ImportVmImage)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/imagebuilder-2019-12-02/ImportVmImage)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/imagebuilder-2019-12-02/ImportVmImage)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/imagebuilder-2019-12-02/ImportVmImage)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/imagebuilder-2019-12-02/ImportVmImage)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/imagebuilder-2019-12-02/ImportVmImage)

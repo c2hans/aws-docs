@@ -8,6 +8,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/relnotes-2023
 These are the release notes for Amazon Linux 2023 (AL2023) version 2023.12.20260831.
 
 **Contents**
++ [Special Announcements](#announcements-2023.12.20260831)
 + [Release Summary](#release-summary-2023.12.20260831)
 + [Repository Updates](#repository-updates-2023.12.20260831)
   + [Core New Packages](#amis-2023.12.20260831.Core-New-Packages)
@@ -23,10 +24,23 @@ These are the release notes for Amazon Linux 2023 (AL2023) version 2023.12.20260
   + [Minimal Container](#amis-2023.12.20260831.Minimal-Container)
 + [Contact us](#amis-2023.12.20260831.contact-us)
 
+## Special Announcements
+<a name="announcements-2023.12.20260831"></a>
+
+**Note**
+Amazon Linux now includes a curated virtualization stack for development, testing, and CI use cases. This stack includes QEMU (system and userspace emulation for x86\_64 and aarch64), libvirt for VM lifecycle management, and boot firmware (SeaBIOS, EDK2 UEFI). It ships with modern virtio devices for storage and networking, with passt for unprivileged user-mode networking.
+This is not a production hypervisor. Features such as live migration, suspend/resume across QEMU versions, and legacy device emulation are not supported. We recommend Amazon EC2 for production virtualization workloads.
+Security patches are provided for all included components.
+The Amazon Linux team plans to update FreeRDP from version 3.6.3 to 3.31.0 in the next release. Plan to upgrade to FreeRDP 3.31 and recompile software that is bound to the old ABI. For a full list of changes, see the [FreeRDP releases page](https://github.com/FreeRDP/FreeRDP/releases) on the GitHub website.
+
 ## Release Summary
 <a name="release-summary-2023.12.20260831"></a>
 
 This release represents an update to the 12th quarterly release of AL2023. AL2023 is the next generation of Amazon Linux. It comes with five years of support and brings features such as deterministic updates and better optimizations for Graviton processors into Amazon Linux. AL2023 is ready for production workloads, and you can start migrating from previous versions of Amazon Linux today.
+
+**Notable updates**
++ `btrfs-progs` has been promoted from SPAL to the core repository and updated to version 7.1. This release is experimental. Before running production workloads, thoroughly test `btrfs-progs` and the btrfs filesystem in a non-production environment to confirm it meets your requirements. For usage and configuration, see the [official btrfs documentation](https://btrfs.readthedocs.io).
++ In FreeRDP, the embedded CLI and parsing of CLI options in `.rdp` files have been disabled. Update existing `.rdp` files to not use "/" options. For more information, see the official advisory.
 
 **Security updates**
 + For information on the CVEs addressed in this release, see the [ Amazon Linux Security Center](https://alas.aws.amazon.com/alas2023.html).

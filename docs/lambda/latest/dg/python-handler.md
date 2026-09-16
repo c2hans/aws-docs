@@ -202,7 +202,8 @@ Optionally, a handler can return a value, which must be JSON serializable. Commo
 
 What happens to the returned value depends on the [invocation type](lambda-invocation.md) and the [service](lambda-services.md) that invoked the function. For example:
 + If you use the `RequestResponse` invocation type to [invoke a Lambda function synchronously](invocation-sync.md), Lambda returns the result of the Python function call to the client invoking the Lambda function (in the HTTP response to the invocation request, serialized into JSON). For example, AWS Lambda console uses the `RequestResponse` invocation type, so when you invoke the function on the console, the console displays the returned value.
-+ If the handler returns objects that can't be serialized by `json.dumps`, the runtime returns an error.
++ If the handler returns objects that can't be serialized by `json.dumps`, the runtime returns an error. An exception to this is if the handler returns a `bytes` object.
++ If the handler returns a `bytes` object, the runtime passes it through as-is as raw binary data without JSON serialization, using a content type of `application/unknown`.
 + If the handler returns `None`, as Python functions without a `return` statement implicitly do, the runtime returns `null`.
 + If you use the `Event` invocation type (an [asynchronous invocation](invocation-async.md)), the value is discarded.
 
@@ -223,11 +224,11 @@ In Python 3.9 and later releases, Lambda includes the requestId of the invocatio
 ## Using the AWS SDK for Python (Boto3) in your handler
 <a name="python-handler-sdk"></a>
 
-Often, you'll use Lambda functions to interact with other AWS services and resources. The simplest way to interface with these resources is to use the AWS SDK for Python (Boto3). All [supported Lambda Python runtimes](lambda-runtimes.md#runtimes-supported) include a version of the SDK for Python.
+Often, you'll use Lambda functions to interact with other AWS services and resources. The simplest way to interface with these resources is to use the AWS SDK for Python (Boto3). All [supported Lambda Python runtimes](lambda-runtimes.md#runtimes-supported) include a version of the SDK for Python (Boto3).
 
 However, we strongly recommend that you include the SDK in your function's deployment package if your code needs to use it. Including the SDK in your deployment package gives you full control over your dependencies and reduces the risk of version misalignment issues with other libraries. See [Runtime dependencies in Python](python-package.md#python-package-dependencies) and [Backward compatibility](runtimes-update.md#runtime-update-compatibility) to learn more.
 
-To use the SDK for Python in your Lambda function, add the following statement to the import block at the beginning of your function code:
+To use the SDK for Python (Boto3) in your Lambda function, add the following statement to the import block at the beginning of your function code:
 
 ```
 import boto3

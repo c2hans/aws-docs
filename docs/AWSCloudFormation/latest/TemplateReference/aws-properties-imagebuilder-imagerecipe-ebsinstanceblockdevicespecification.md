@@ -48,19 +48,19 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-imagebuilder-imagerecipe-ebsinstanceblockdevicespecification-properties"></a>
 
 `DeleteOnTermination`  <a name="cfn-imagebuilder-imagerecipe-ebsinstanceblockdevicespecification-deleteontermination"></a>
-Use to configure delete on termination of the associated device.
+Specifies whether to delete the associated device on termination.
 *Required*: No
 *Type*: Boolean
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Encrypted`  <a name="cfn-imagebuilder-imagerecipe-ebsinstanceblockdevicespecification-encrypted"></a>
-Use to configure device encryption.
+Specifies whether to encrypt the device.
 *Required*: No
 *Type*: Boolean
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Iops`  <a name="cfn-imagebuilder-imagerecipe-ebsinstanceblockdevicespecification-iops"></a>
-Use to configure device IOPS.
+The IOPS value for the device. Required only when volumeType is io1 or io2.
 *Required*: No
 *Type*: Integer
 *Minimum*: `100`
@@ -92,7 +92,7 @@ The snapshot that defines the device contents.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `VolumeSize`  <a name="cfn-imagebuilder-imagerecipe-ebsinstanceblockdevicespecification-volumesize"></a>
-Use to override the device's volume size.
+Overrides the volume size for the device.
 *Required*: No
 *Type*: Integer
 *Minimum*: `1`
@@ -100,7 +100,7 @@ Use to override the device's volume size.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `VolumeType`  <a name="cfn-imagebuilder-imagerecipe-ebsinstanceblockdevicespecification-volumetype"></a>
-Use to override the device's volume type.
+Overrides the volume type for the device.
 *Required*: No
 *Type*: String
 *Allowed values*: `standard | io1 | io2 | io2a | gp2 | gp3 | gp3a | sc1 | st1`

@@ -168,5 +168,5 @@ The `finally` block requests and confirms table deletion even if writing or read
 ## Next steps
 <a name="getting-started-dynamodb-next-steps"></a>
 + For more Amazon DynamoDB operations and examples, see [Amazon DynamoDB](services-dynamodb.md).
-+ For generated client operations and model types, see the [Amazon DynamoDB API reference](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/dynamodb/).
++ For generated client operations and model types, see the [Amazon DynamoDB API reference](clients/dynamodb/).
 + For more information about typed inputs and outputs, see [Making requests and handling responses](using-requests.md).

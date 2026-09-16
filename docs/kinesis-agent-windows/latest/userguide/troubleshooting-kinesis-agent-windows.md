@@ -193,8 +193,7 @@ To resolve issues with data not streaming, perform the following steps:
       	    archiveFileName="${specialfolder:folder=CommonApplicationData}/Amazon/KinesisTap/logs/Archive-{################}.log"
       	    archiveNumbering="Date"
       	    archiveDateFormat="yyyy-MM-dd"
-      	    archiveEvery="Day"
-      	    />
+      	    archiveEvery="Day"/>
         </targets>
 
         <rules>

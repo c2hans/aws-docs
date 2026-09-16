@@ -181,6 +181,6 @@ This example creates no persistent AWS resources. It closes the input stream aft
 ## Next steps
 <a name="getting-started-transcribe-streaming-next-steps"></a>
 + For service concepts, audio requirements, and streaming best practices, see [Transcribing streaming audio](https://docs.aws.amazon.com/transcribe/latest/dg/streaming.html) in the *Amazon Transcribe Developer Guide*.
-+ For generated request and response types, see the [`start_stream_transcription()` API reference](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/transcribe-streaming/operations/start_stream_transcription/).
++ For generated request and response types, see the [`start_stream_transcription()` API reference](clients/transcribe-streaming/operations/start_stream_transcription/).
 + For more information about publishing and consuming event streams, see [Working with event streams](using-streaming.md).
 + For complete SDK repository examples, see the [Amazon Transcribe streaming examples](https://github.com/aws/aws-sdk-python/tree/develop/clients/aws-sdk-transcribe-streaming/examples). The directory includes one example for a prerecorded file and another for live microphone input.

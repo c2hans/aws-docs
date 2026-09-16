@@ -11,7 +11,7 @@ The following code examples show how to use `GetMetricStatistics`.
 
 Action examples are code excerpts from larger programs and must be run in context. You can see this action in context in the following code examples:
 +  [Learn the basics](cloudwatch_example_cloudwatch_GetStartedMetricsDashboardsAlarms_section.md)
-+  [Manage metrics and alarms](cloudwatch_example_cloudwatch_Usage_MetricsAlarms_section.md)
++  [Manage custom metrics and alarms](cloudwatch_example_cloudwatch_Usage_MetricsAlarms_section.md)
 
 ------
 #### [ .NET ]
@@ -60,8 +60,8 @@ Action examples are code excerpts from larger programs and must be run in contex
                 MetricName = metricName,
                 Dimensions = dimensions,
                 Statistics = statistics,
-                StartTimeUtc = DateTime.UtcNow.AddDays(-days),
-                EndTimeUtc = DateTime.UtcNow,
+                StartTime = DateTime.UtcNow.AddDays(-days),
+                EndTime = DateTime.UtcNow,
                 Period = period
             });
 

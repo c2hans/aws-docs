@@ -17,8 +17,8 @@ This page demonstrates patterns to run multiple operations using existing client
 Before scheduling one SDK call for each input item, check whether the service provides a batch operation. A batch operation is a service API, not a Python concurrency mechanism: it reduces the number of service requests by accepting multiple items in one request. When no suitable batch operation exists, independent SDK calls can make progress concurrently while they wait for service responses.
 
 Examples of batch operations include:
-+ **DynamoDB:** [batch\_get\_item()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/dynamodb/operations/batch_get_item/) and [batch\_write\_item()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/dynamodb/operations/batch_write_item/)
-+ **Amazon SQS:** [send\_message\_batch()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/sqs/operations/send_message_batch/)
++ **DynamoDB:** [batch\_get\_item()](clients/dynamodb/operations/batch_get_item/) and [batch\_write\_item()](clients/dynamodb/operations/batch_write_item/)
++ **Amazon SQS:** [send\_message\_batch()](clients/sqs/operations/send_message_batch/)
 
 A batch operation isn't necessarily atomic or all-or-nothing. Follow the operation-specific size limits and inspect its modeled response for failed entries or unprocessed work. Resubmit only eligible failed or unprocessed entries, with bounded attempts and a delay between attempts.
 

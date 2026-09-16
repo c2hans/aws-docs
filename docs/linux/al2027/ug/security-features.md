@@ -8,12 +8,13 @@ source_url: https://docs.aws.amazon.com/linux/al2027/ug/security-features.html
 **AL2027 Preview**
 AL2027 is currently available for preview. It is intended for evaluation and testing only and is not recommended for production workloads.
 
-AL2027 includes several security enhancements over AL2023
+AL2027 includes several security enhancements over AL2023. For the compile-time hardening flags applied to all packages, see [Compile-time hardening](compile-time-hardening.md).
 
 **Topics**
 + [SELinux enforcing by default](#setting-selinux)
 + [Post-Quantum Cryptography (PQC) by Default](#post-quantum-cryptography)
 + [SSH server default](#ssh-server-default)
++ [Supply chain protection for package managers](#supply-chain-protection)
 + [Manage updates](#security-manage-updates)
 + [Security in the cloud](#cloud-security)
 
@@ -47,6 +48,15 @@ AL2027 includes **OpenSSH 9.9p1**.
 + RSA keys <2048 bits are not allowed by default
 
 For more information, see [Default SSH server configuration](ssh-config.md).
+
+## Supply chain protection for package managers
+<a name="supply-chain-protection"></a>
+
+AL2027 ships default configurations, known as dependency cooldowns, that delay the installation of recently published packages through *npm* and *pip*. Dependency cooldowns give the security community time to detect and remove malicious packages before they reach your systems.
++ **npm**: `min-release-age=1` is set in the system-wide npm configuration file `/etc/npmrc`, so `npm install` skips package versions published less than one day ago. To override, use `--min-release-age=0` or set the option in a project-level `.npmrc`. For details, see [Security best practices](nodejs-security.md).
++ **pip**: `uploaded-prior-to = P1D` is set in `/etc/pip.conf`, so `pip install` skips package versions published less than one day ago. To override, use `--uploaded-prior-to=P0D` or edit `/etc/pip.conf` directly.
+
+For more information, see [Secure your npm and pip package updates in Amazon Linux](https://aws.amazon.com/blogs/security/secure-your-npm-and-pip-package-updates-in-amazon-linux/) on the AWS Security Blog.
 
 ## Manage updates
 <a name="security-manage-updates"></a>

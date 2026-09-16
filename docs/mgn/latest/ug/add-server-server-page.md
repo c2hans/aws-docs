@@ -26,7 +26,7 @@ If you want to install the AWS Replication Agent on a legacy Windows OS (Windows
 
   1. If you are adding a Windows source server to AWS MGN, download the installer onto the source server. The installer is downloaded from the AWS Region of your account. If you're adding a Linux source server, skip this step.
 
-  1. Copy the generated custom installation command and either input it into the command line on your source server. Proceed with [AWS Replication Agent installation as instructed in the documentation](agent-installation.md).
+  1. Copy the generated custom installation command and input it into the command line on your source server. Proceed with [AWS Replication Agent installation as instructed in the documentation](agent-installation.md).
 
 To run a variety of commands on your source servers, select one or more servers and choose the **Actions**, **Replication**, or **Test and cutover** menu.
 

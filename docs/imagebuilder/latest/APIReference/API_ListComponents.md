@@ -9,7 +9,7 @@ Returns the list of components that can be filtered by name, or by using the lis
 
 **Note**
 The semantic version has four nodes: <major>.<minor>.<patch>/<build>. You can assign values for the first three, and can filter on all of them.
- **Filtering:** With semantic versioning, you have the flexibility to use wildcards (x) to specify the most recent versions or nodes when selecting the base image or components for your recipe. When you use a wildcard in any node, all nodes to the right of the first wildcard must also be wildcards.
+ **Filtering:** You can use wildcards (x) to specify the most recent versions or nodes when selecting the base image or components for your recipe. When you use a wildcard in any node, all nodes to the right of the first wildcard must also be wildcards.
 
 ## Request Syntax
 <a name="API_ListComponents_RequestSyntax"></a>
@@ -60,13 +60,13 @@ Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Required: No
 
  ** [maxResults](#API_ListComponents_RequestSyntax) **   <a name="imagebuilder-ListComponents-request-maxResults"></a>
-Specify the maximum number of items to return in a request.
+The maximum number of items to return in a single request.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 25.
 Required: No
 
  ** [nextToken](#API_ListComponents_RequestSyntax) **   <a name="imagebuilder-ListComponents-request-nextToken"></a>
-A token to specify where to start paginating. This is the nextToken from a previously truncated response.
+A token to specify where to start paginating. Use the `nextToken` value from a previously truncated response.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 65535.
 Required: No
@@ -177,5 +177,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/imagebuilder-2019-12-02/ListComponents)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/imagebuilder-2019-12-02/ListComponents)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/imagebuilder-2019-12-02/ListComponents)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/imagebuilder-2019-12-02/ListComponents)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/imagebuilder-2019-12-02/ListComponents)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/imagebuilder-2019-12-02/ListComponents)

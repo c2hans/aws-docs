@@ -10,10 +10,16 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ## Contents
 <a name="API_Tiering_Contents"></a>
 
+ ** CustomTiers **   <a name="billingconductor-Type-Tiering-CustomTiers"></a>
+ The set of custom tiers for the pricing rule.
+Type: Array of [CustomTier](API_CustomTier.md) objects
+Array Members: Minimum number of 1 item. Maximum number of 10 items.
+Required: No
+
  ** FreeTier **   <a name="billingconductor-Type-Tiering-FreeTier"></a>
  The possible AWS Free Tier configurations.
 Type: [FreeTierConfig](API_FreeTierConfig.md) object
-Required: Yes
+Required: No
 
 ## See Also
 <a name="API_Tiering_SeeAlso"></a>

@@ -88,6 +88,11 @@ This flag may only be used when adding new source servers to MGN. You cannot use
    + --dualstack
 
      This parameter enables the agent to run in a dual-stack MGN configuration. When using this flag, you must also use the `--endpoint` flag to specify a MGN dual-stack endpoint.
+   + --proxy-address
+
+     Linux Installer only.
+
+     Use this parameter to configure the agent to use a specific proxy server: `--proxy-address https://PROXY:PORT/`. Make sure the proxy configuration has the trailing forward slash (/).
 
    The installer confirms that the installation of the AWS Replication Agent has started.
 ![Terminal output showing successful start of AWS Replication Agent installation.](https://docs.aws.amazon.com/mgn/latest/ug/images/sourceservers-linuxagent1.png)
@@ -98,18 +103,18 @@ This flag may only be used when adding new source servers to MGN. You cannot use
    If you want to install the Agent without answering the interactive prompts, you can pass your credentials to the installer through environment variables instead. We recommend that you use temporary credentials from AWS Security Token Service (AWS STS). First, set the `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, and `AWS_SESSION_TOKEN` environment variables. Then, run the installer with the `sudo -E` command (to preserve the environment variables) and the `--no-prompt` option. For example:
 
    ```
-   export AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
-   export AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
-   export AWS_SESSION_TOKEN=AQoDYXdzEJr//////////wEa8AMDSomethingEXAMPLE
-   chmod +x aws-replication-installer-init
-   sudo -E ./aws-replication-installer-init --region us-east-1 --no-prompt
+   $ export AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
+   $ export AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+   $ export AWS_SESSION_TOKEN=AQoDYXdzEJr//////////wEa8AMDSomethingEXAMPLE
+   $ chmod +x aws-replication-installer-init
+   $ sudo -E ./aws-replication-installer-init --region us-east-1 --no-prompt
    ```
 **Note**
 You can also pass the AWS Access Key ID and AWS Secret Access Key as command-line parameters. In the following example, replace `<region>` with the AWS Region into which you are replicating:
 
      ```
-     sudo chmod +x aws-replication-installer-init
-     sudo ./aws-replication-installer-init --region <region> --aws-access-key-id AKIAIOSFODNN7EXAMPLE --aws-secret-access-key wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+     $ sudo chmod +x aws-replication-installer-init
+     $ sudo ./aws-replication-installer-init --region <region> --aws-access-key-id AKIAIOSFODNN7EXAMPLE --aws-secret-access-key wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
      ```
 Credentials that you pass as command-line parameters are visible to other users on the source server through the process list (for example, through the `ps` command). To avoid exposing your credentials, use the environment variable method described in the previous step. If you do pass credentials as command-line parameters, use temporary credentials from AWS STS and rotate them after installation.
 If you do not enter these parameters as part of the installation script, you are prompted to enter them one by one as described in the previous step.
@@ -130,7 +135,7 @@ AWS Transform MGN replicates whole disks. Therefore, if you choose to replicate 
 Incorrect disks may be chosen by accident. Ensure that the correct disks have been chosen.
 **Important**
 If disks are disconnected from a server, AWS Transform MGN can no longer replicate them, so they are removed from the list of replicated disks. When they are reconnected, the AWS Replication Agent cannot know that these were the same disks that were disconnected and therefore does not add them automatically. To add the disks after they are reconnected, rerun the AWS Replication Agent installer on the server.
-Note that the returned disks need be replicated from the beginning. Any disk size changes are automatically identified, but this also causes a resync. Perform a test after installing the Agent to ensure that the correct disks have been added.
+Note that the returned disks need to be replicated from the beginning. Any disk size changes are automatically identified, but this also causes a resync. Perform a test after installing the Agent to ensure that the correct disks have been added.
 
 1. After all of the disks that are to be replicated have been successfully identified, the installer downloads and installs the AWS Replication Agent on the source server.
 ![Terminal output showing agent download and installation progress.](https://docs.aws.amazon.com/mgn/latest/ug/images/sourceservers-linuxagent6.png)

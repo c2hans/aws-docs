@@ -82,6 +82,7 @@ Content-type: application/json
    "runId": "string",
    "runOutputUri": "string",
    "scratchStorageMode": "string",
+   "sessionPolicy": "string",
    "startedBy": "string",
    "startTime": "string",
    "status": "string",
@@ -263,6 +264,12 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Valid Values: `LOCAL | SHARED`
 
+ ** [sessionPolicy](#API_GetRun_ResponseSyntax) **   <a name="omics-GetRun-response-sessionPolicy"></a>
+The inline IAM policy document that scopes down the permissions granted to the run. The policy restricts the permissions of the IAM role specified in `roleArn`. The effective permissions are the intersection of the role's permissions and the session policy.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `[\p{L}\p{M}\p{Z}\p{S}\p{N}\p{P}\t\n\r]+`
+
  ** [startedBy](#API_GetRun_ResponseSyntax) **   <a name="omics-GetRun-response-startedBy"></a>
 Who started the run.
 Type: String
@@ -391,5 +398,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/omics-2022-11-28/GetRun)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/omics-2022-11-28/GetRun)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/omics-2022-11-28/GetRun)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/omics-2022-11-28/GetRun)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/omics-2022-11-28/GetRun)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/omics-2022-11-28/GetRun)

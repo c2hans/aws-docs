@@ -8,6 +8,8 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 <a name="AWS_FMS"></a>
 
 **Resource types**
++ [AWS::FMS::ApplicationsList](aws-resource-fms-applicationslist.md)
 + [AWS::FMS::NotificationChannel](aws-resource-fms-notificationchannel.md)
 + [AWS::FMS::Policy](aws-resource-fms-policy.md)
++ [AWS::FMS::ProtocolsList](aws-resource-fms-protocolslist.md)
 + [AWS::FMS::ResourceSet](aws-resource-fms-resourceset.md)

@@ -12,7 +12,10 @@ This section guides you through how to send a simple reverse geocoding request.
 ## Reverse geocoding
 <a name="reverse-geocode"></a>
 
-You can submit a simple request to reverse geocode a set of coordinates and convert them to a meaningful address, a point of interest or a general location without an address using the `[SearchPlaceIndexForPosition](https://docs.aws.amazon.com/location-places/latest/APIReference/API_SearchPlaceIndexForPosition.html)` operation. A simple request contains the following required parameter:
+You can submit a simple request to reverse geocode a set of coordinates and convert them to a meaningful address, a point of interest or a general location without an address using the `[SearchPlaceIndexForPosition](https://docs.aws.amazon.com/location/previous/APIReference/API_SearchPlaceIndexForPosition.html)` operation. A simple request contains the following required parameter:
+
+**Note**
+In the latest API, this operation is `[ReverseGeocode](https://docs.aws.amazon.com/location/latest/APIReference/API_geoplaces_ReverseGeocode.html)` under `geo-places`, which does not require a place index resource.
 + `Position` – A set of coordinates that you want to convert to an address, point of interest, or general location. Defined using the format `[longitude,latitude]`.
 
 To specify a maximum number of results per pages, add the following optional parameter:
@@ -29,7 +32,7 @@ You can use the AWS CLI or the Amazon Location APIs.
 ------
 #### [ API ]
 
-The following example is a `[SearchPlaceIndexForPosition](https://docs.aws.amazon.com/location-places/latest/APIReference/API_SearchPlaceIndexForPosition.html)` request to search the place index resource, {{ExamplePlaceIndex}}, for a meaningful address, point of interest or general location near the position [{{122.3394}},{{47.6159}}].
+The following example is a `[SearchPlaceIndexForPosition](https://docs.aws.amazon.com/location/previous/APIReference/API_SearchPlaceIndexForPosition.html)` request to search the place index resource, {{ExamplePlaceIndex}}, for a meaningful address, point of interest or general location near the position [{{122.3394}},{{47.6159}}].
 
 ```
 POST /places/v0/indexes/{{ExamplePlaceIndex}}/search/position
@@ -62,7 +65,7 @@ aws location \
 <a name="reverse-geocoding-example-response"></a>
 
 **Example**
-The following is an example response when calling the `[SearchPlaceIndexForPosition](https://docs.aws.amazon.com/location-places/latest/APIReference/API_SearchPlaceIndexForPosition.html)` operation from the Amazon Location Places APIs. The results return relevant [places](https://docs.aws.amazon.com/location-places/latest/APIReference/API_Place.html) and the request [summary](https://docs.aws.amazon.com/location-places/latest/APIReference/API_SearchPlaceIndexForPositionSummary.html). Two responses are shown, based on selecting Esri or Here as the partner.
+The following is an example response when calling the `[SearchPlaceIndexForPosition](https://docs.aws.amazon.com/location/previous/APIReference/API_SearchPlaceIndexForPosition.html)` operation from the Amazon Location Places APIs. The results return relevant [places](https://docs.aws.amazon.com/location/previous/APIReference/API_Place.html) and the request [summary](https://docs.aws.amazon.com/location/previous/APIReference/API_SearchPlaceIndexForPositionSummary.html). Two responses are shown, based on selecting Esri or Here as the partner.
 
 ```
 POST /places/v0/indexes/ExamplePlaceIndex/search/position

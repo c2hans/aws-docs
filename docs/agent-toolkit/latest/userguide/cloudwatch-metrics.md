@@ -10,7 +10,7 @@ AWS MCP Server automatically publishes metrics to Amazon CloudWatch at no additi
 ## Metrics namespace
 <a name="cloudwatch-metrics-namespace"></a>
 
-All AWS MCP Server metrics are published under the `AWS-MCP` namespace in CloudWatch. Metrics are organized by tool name, allowing you to monitor which MCP tools you use most frequently (such as `aws___call_aws` or `aws___list_regions`) and track their success rates.
+All AWS MCP Server metrics are published under the `AWS-MCP` namespace in CloudWatch. Metrics are organized by tool name, allowing you to monitor which MCP tools you use most frequently (such as `aws___run_script` or `aws___list_regions`) and track their success rates.
 
 ## Available metrics
 <a name="available-metrics"></a>
@@ -31,7 +31,7 @@ The following metrics are available for AWS MCP Server. All metrics use standard
 Metrics include the following dimensions to help you filter and analyze your data:
 
 **Tool Name**
-The name of the specific MCP tool that was invoked. For example, `aws___call_aws`, `aws___list_regions`, or `aws___retrieve_skill`. For a complete list of available tools, see [Understanding the MCP Server tools](understanding-mcp-server-tools.md).
+The name of the specific MCP tool that was invoked. For example, `aws___run_script`, `aws___list_regions`, or `aws___retrieve_skill`. For a complete list of available tools, see [Understanding the MCP Server tools](understanding-mcp-server-tools.md).
 
 ## Using metrics
 <a name="using-metrics"></a>
@@ -61,7 +61,7 @@ For more information about working with CloudWatch metrics, see [Using Amazon Cl
 The following examples show how you can use AWS MCP Server metrics:
 
 Calculate success rate for API calls
-Filter metrics by `Tool Name = aws___call_aws` and compare `Success` to `Invocation` to calculate your API call success rate. Set up an alarm to notify you if the success rate drops below 95%.
+Filter metrics by `Tool Name = aws___run_script` and compare `Success` to `Invocation` to calculate your API call success rate. Set up an alarm to notify you if the success rate drops below 95%.
 
 Detect permission issues
 Monitor `UserError` metrics for specific tools. A spike in user errors often indicates IAM permission issues or incorrect API parameters.

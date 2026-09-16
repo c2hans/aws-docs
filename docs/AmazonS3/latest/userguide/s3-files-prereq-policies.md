@@ -214,7 +214,7 @@ Add the following two policies to the IAM role attached to your compute resource
   The IAM role must include permissions for the mount helper to connect to and interact with S3 file systems. You can attach an AWS managed policy such as `AmazonS3FilesClientFullAccess` managed policy if you want to grant the compute resource full read and write access to your S3 file system or the `AmazonS3FilesClientReadOnlyAccess` for read-only access. You can also attach the `AmazonElasticFileSystemsUtils` managed policy if you want to enable Amazon CloudWatch monitoring. For more information and a complete list of available managed policies for S3 Files, see [AWS managed policies for Amazon S3 Files](s3-files-security-iam-awsmanpol.md). You can also provide these permissions by adding individual IAM permissions such as `s3files:ClientMount` or `s3files:ClientWrite` (not required for read-only connections) to the IAM role of your compute resource.
 + **An inline policy that grants the compute resource read access to S3 objects**
 
-  Add the following inline policy to the IAM role. This policy grants the compute resource permissions to directly read objects from the linked S3 bucket in the same account to optimize read performance. Replace {{bucket}} with your S3 bucket name or bucket name with prefix.
+  Add the following inline policy to the IAM role. This policy lets the compute resource read objects directly from the linked S3 bucket in the same account. This improves read performance for large I/O operations. Replace {{bucket}} with your S3 bucket name, or with your bucket name and a prefix to scope access only to the objects that the compute resource needs.
 
   ```
   {
@@ -238,6 +238,8 @@ Add the following two policies to the IAM role attached to your compute resource
       ]
   }
   ```
+**POSIX permissions don't apply to direct S3 access**
+This policy grants direct `s3:GetObject` access to the bucket. Reads made directly against Amazon S3 are governed by IAM and bucket policies, not by POSIX permissions. For more information, see [POSIX permissions and direct S3 access](s3-files-posix-permissions.md#s3-files-posix-permissions-direct-s3-access).
 
 ## Security groups
 <a name="s3-files-prereq-security-groups"></a>

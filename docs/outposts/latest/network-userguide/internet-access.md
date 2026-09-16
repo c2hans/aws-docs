@@ -17,7 +17,7 @@ In this option, the workloads in the Outposts access the internet through the se
 For the route table setting on the Outposts subnet, see [Local gateway route tables](https://docs.aws.amazon.com/outposts/latest/network-userguide/routing.html).
 
 ### Considerations
-<a name="w2aac25c27b7b9"></a>
+<a name="w2aac27c27b7b9"></a>
 + Use this option when:
   + You need flexibility in securing the internet traffic with multiple AWS services in the AWS Region.
   + You do not have an internet point of presence in your data center or co-location facility.
@@ -37,7 +37,7 @@ In this option, the workloads residing in the Outposts access the internet throu
 For the route table setting on the Outposts subnet, see [Local gateway route tables](https://docs.aws.amazon.com/outposts/latest/network-userguide/routing.html).
 
 ### Considerations
-<a name="w2aac25c27b9b9"></a>
+<a name="w2aac27c27b9b9"></a>
 + Use this option when:
   + Your workloads require low latency access to internet services.
   + You prefer to avoid incurring Data Transfer Out (DTO) charges.

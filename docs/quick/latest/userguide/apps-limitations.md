@@ -7,6 +7,11 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/apps-limitations.
 
 The following limitations apply to apps in Amazon Quick in its current release.
 
+## Regional availability
+<a name="apps-regional-availability"></a>
+
+Apps in Amazon Quick is available in a subset of the AWS Regions that Amazon Quick supports: US East (N. Virginia), US West (Oregon), Europe (Ireland), and Asia Pacific (Sydney). Support for additional Regions is being added.
+
 ## Limits
 <a name="apps-limits-platform"></a>
 

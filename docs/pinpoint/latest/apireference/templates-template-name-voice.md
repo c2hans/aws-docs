@@ -340,7 +340,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/pinpoint-2016-12-01/GetVoiceTemplate)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/pinpoint-2016-12-01/GetVoiceTemplate)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/pinpoint-2016-12-01/GetVoiceTemplate)
-+ [AWS SDK for Python](/goto/boto3/pinpoint-2016-12-01/GetVoiceTemplate)
++ [AWS SDK for Python (Boto3)](/goto/boto3/pinpoint-2016-12-01/GetVoiceTemplate)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/pinpoint-2016-12-01/GetVoiceTemplate)
 
 ### CreateVoiceTemplate
@@ -353,7 +353,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/pinpoint-2016-12-01/CreateVoiceTemplate)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/pinpoint-2016-12-01/CreateVoiceTemplate)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/pinpoint-2016-12-01/CreateVoiceTemplate)
-+ [AWS SDK for Python](/goto/boto3/pinpoint-2016-12-01/CreateVoiceTemplate)
++ [AWS SDK for Python (Boto3)](/goto/boto3/pinpoint-2016-12-01/CreateVoiceTemplate)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/pinpoint-2016-12-01/CreateVoiceTemplate)
 
 ### UpdateVoiceTemplate
@@ -366,7 +366,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/pinpoint-2016-12-01/UpdateVoiceTemplate)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/pinpoint-2016-12-01/UpdateVoiceTemplate)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/pinpoint-2016-12-01/UpdateVoiceTemplate)
-+ [AWS SDK for Python](/goto/boto3/pinpoint-2016-12-01/UpdateVoiceTemplate)
++ [AWS SDK for Python (Boto3)](/goto/boto3/pinpoint-2016-12-01/UpdateVoiceTemplate)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/pinpoint-2016-12-01/UpdateVoiceTemplate)
 
 ### DeleteVoiceTemplate
@@ -379,5 +379,5 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/pinpoint-2016-12-01/DeleteVoiceTemplate)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/pinpoint-2016-12-01/DeleteVoiceTemplate)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/pinpoint-2016-12-01/DeleteVoiceTemplate)
-+ [AWS SDK for Python](/goto/boto3/pinpoint-2016-12-01/DeleteVoiceTemplate)
++ [AWS SDK for Python (Boto3)](/goto/boto3/pinpoint-2016-12-01/DeleteVoiceTemplate)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/pinpoint-2016-12-01/DeleteVoiceTemplate)

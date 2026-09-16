@@ -37,7 +37,7 @@ Secrets help reduce exposure of sensitive information and make it easier to upda
 
 1. Select **Secrets**.
 
-1. Select **Create Secret**.
+1. Select **Add secret**.
 
 1. Enter a clear name.
 
@@ -47,7 +47,7 @@ Secrets help reduce exposure of sensitive information and make it easier to upda
 
 1. Keep **Sensitive** enabled if the value should be hidden and redacted.
 
-1. Select **Save**.
+1. Select **Create secret**.
 
 Use a clear name that helps teammates understand what the Secret is used for.
 

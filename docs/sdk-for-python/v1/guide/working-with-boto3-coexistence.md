@@ -243,7 +243,7 @@ This example doesn't create persistent resources other than the output Amazon S3
 + For how the SDK resolves configuration values, see [Configuration resolution](config-resolution.md). For how it finds credentials, see [Credential providers](credential-providers.md).
 + For running blocking functions from an asynchronous application, see [Keeping blocking work off the event loop](using-async.md#using-async-blocking-work).
 + For more Amazon Bedrock Runtime operations and streaming behavior, see [Amazon Bedrock Runtime](services-bedrock.md).
-+ For generated Amazon Bedrock Runtime request, response, and event types, see the [ConverseStream API reference](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/bedrock-runtime/operations/converse_stream/).
++ For generated Amazon Bedrock Runtime request, response, and event types, see the [ConverseStream API reference](clients/bedrock-runtime/operations/converse_stream/).
 + For Boto3 S3 operations, see the [SDK for Python (Boto3) S3 API reference](https://docs.aws.amazon.com/boto3/latest/reference/services/s3.html).
 
 ## Scenario 2: Sync-primary application adding bidirectional streaming
@@ -482,7 +482,7 @@ The temporary local audio file is removed automatically. This example doesn't de
 + For how the SDK resolves configuration values, see [Configuration resolution](config-resolution.md). For how it finds credentials, see [Credential providers](credential-providers.md).
 + For running an asynchronous workflow from a synchronous application, see [Running asynchronous code](using-async.md#using-async-run).
 + For event-stream lifecycle and completion behavior, see [Working with event streams](using-streaming.md).
-+ For generated Amazon Transcribe Streaming request and event types, see the [StartStreamTranscription API reference](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/transcribe-streaming/operations/start_stream_transcription/).
++ For generated Amazon Transcribe Streaming request and event types, see the [StartStreamTranscription API reference](clients/transcribe-streaming/operations/start_stream_transcription/).
 + For Boto3 S3 operations, see the [SDK for Python (Boto3) S3 API reference](https://docs.aws.amazon.com/boto3/latest/reference/services/s3.html).
 
 ## Common pitfalls

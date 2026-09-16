@@ -53,9 +53,19 @@ The timestamp when the distribution was created.
 Type: Timestamp
 Required: No
 
+ ** customErrorResponses **   <a name="Lightsail-Type-LightsailDistribution-customErrorResponses"></a>
+An array of objects that describe the custom error responses configured for the distribution.
+Type: Array of [DistributionCustomErrorResponse](API_DistributionCustomErrorResponse.md) objects
+Required: No
+
  ** defaultCacheBehavior **   <a name="Lightsail-Type-LightsailDistribution-defaultCacheBehavior"></a>
 An object that describes the default cache behavior of the distribution.
 Type: [CacheBehavior](API_CacheBehavior.md) object
+Required: No
+
+ ** defaultRootObject **   <a name="Lightsail-Type-LightsailDistribution-defaultRootObject"></a>
+The object (for example, `index.html`) that the distribution returns when a viewer requests the root URL of the distribution (`/`) instead of a specific object.
+Type: String
 Required: No
 
  ** domainName **   <a name="Lightsail-Type-LightsailDistribution-domainName"></a>

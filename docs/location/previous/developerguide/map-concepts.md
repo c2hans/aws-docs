@@ -2,16 +2,18 @@
 source_url: https://docs.aws.amazon.com/location/previous/developerguide/map-concepts.html
 ---
 
-# Learn about Maps resources in Amazon Location Service
+# Maps (V1) concepts
 <a name="map-concepts"></a>
 
-**Note**
-We released a new version of the Maps API, see the updated [Maps Developer Guide](https://docs.aws.amazon.com/location/latest/developerguide/maps.html) for revised information.
+**Important**
+**This page documents the previous Maps API (V1). Use it only for existing applications.** The Maps V2 API is the latest version. Use it for all new applications; see the latest [Amazon Location Service Maps](https://docs.aws.amazon.com/location/latest/developerguide/maps.html) developer guide.
+The latest operations are `GetTile`, `GetStyleDescriptor`, `GetStaticMap`, `GetSprites`, and `GetGlyphs`. These operations are under the `geo-maps` namespace. They are exposed as `@aws-sdk/client-geo-maps` for JavaScript and `boto3.client('geo-maps')` for Python.
+The `GetMapTile`, `GetMapStyleDescriptor`, and `Map` resources described below are previous-generation. Use them only for existing applications.
 
 The Amazon Location Service *Map* resource gives you access to the underlying basemap data for a map. You use the Map resource with a map rendering library to add an interactive map to your application. You can add other functionality to your map, such as markers (or pins), routes, and polygon areas, as needed for your application.
 
 **Note**
-For information about how to use map resources in practice, see [Using Amazon Location Maps in your application](using-maps.md).
+For information about how to use map resources in practice, see [Using Maps (V1) in your application](using-maps.md).
 
 The following is an overview of how to create and use map resources:
 
@@ -72,6 +74,9 @@ To render a map in your application, you will typically use a map rendering libr
 
 The map rendering library pulls data from Amazon Location Service at runtime, rendering the map data based on the map resource you select. The map resource defines the data provider and map style that will be used.
 
+**Note**
+For new code, request tiles with the latest [`GetTile`](https://docs.aws.amazon.com/location/latest/APIReference/API_geomaps_GetTile.html) operation and styles with [`GetStyleDescriptor`](https://docs.aws.amazon.com/location/latest/APIReference/API_geomaps_GetStyleDescriptor.html), under `geo-maps`. These do not require a map resource, and the latest API also adds [`GetStaticMap`](https://docs.aws.amazon.com/location/latest/APIReference/API_geomaps_GetStaticMap.html) for server-rendered map images. See the latest [Amazon Location Service Maps](https://docs.aws.amazon.com/location/latest/developerguide/maps.html) developer guide.
+
 The following image shows how the map resource is used in Amazon Location Service along with a map rendering library to create the final map.
 
 ![An image showing a user creating a map resource in Amazon Location Service and an app using that resource to get map data and render a map.](https://docs.aws.amazon.com/location/previous/developerguide/images/RenderMapInApp.png)
@@ -85,6 +90,7 @@ The following image shows how the map resource is used in Amazon Location Servic
 
 **Map resource**
 Allows you to access map data from a selected provider. Use the map resource to fetch map tiles that contain map data and a style descriptor to specify how features render on a map.
+The latest API has no map resource. Tiles and style descriptors are requested directly with `GetTile` and `GetStyleDescriptor` under `geo-maps`. See the latest [Amazon Location Service Maps](https://docs.aws.amazon.com/location/latest/developerguide/maps.html) developer guide.
 
 **Basemap**
 Provides geographic context to your map, which is stored as vector tile layers. Tile layers include geographical context such as street names, buildings, and land use for visual reference.

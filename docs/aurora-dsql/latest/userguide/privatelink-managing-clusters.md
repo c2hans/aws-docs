@@ -258,7 +258,7 @@ aws ec2 create-vpc-endpoint \
 ```
 
 ------
-#### [ SDK for Python ]
+#### [ SDK for Python (Boto3) ]
 
 ```
 import boto3

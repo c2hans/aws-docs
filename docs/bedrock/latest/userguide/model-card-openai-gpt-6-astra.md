@@ -56,7 +56,10 @@ The following tables show which endpoints and APIs GPT-6 Astra supports. For mor
 | --- | --- | --- | --- | --- |
 | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
 
-*On `bedrock-mantle`, this model is served at `/openai/v1/responses` and `/openai/v1/chat/completions`.*
+**Note**
+On `bedrock-mantle`, both APIs use the `/openai/v1` base path, not `/v1`. Use either API with this model:
+For Responses, use `/openai/v1/responses`.
+For Chat Completions, use `/openai/v1/chat/completions`.
 
 ## Capabilities and Features
 <a name="model-card-openai-gpt-6-astra-capabilities"></a>
@@ -78,7 +81,14 @@ The following tables show which endpoints and APIs GPT-6 Astra supports. For mor
 ## Pricing
 <a name="model-card-openai-gpt-6-astra-pricing"></a>
 
-**Short Context Window (272K)**
+All prices are in USD per 1 million tokens for the Standard tier.
+
+Commercial In-Region prices include a 10% fee over OpenAI rates. You do not need to add this fee.
+
+*Priority and Flex tiers are not supported for this model.*
+
+### Commercial Regions — short context (272K input tokens or fewer)
+<a name="model-card-openai-gpt-6-astra-pricing-commercial-short"></a>
 
 | **Inference option** | **Input** | **Input — 30m cache write** | **Input — cache read** | **Output** |
 | --- | --- | --- | --- | --- |
@@ -86,15 +96,14 @@ The following tables show which endpoints and APIs GPT-6 Astra supports. For mor
 | Geo CRIS | $11.00 | $13.75 | $1.10 | $55.00 |
 | Global CRIS | $10.00 | $12.50 | $1.00 | $50.00 |
 
-**Long Context Window (1.05M)**
+### Commercial Regions — long context (more than 272K input tokens)
+<a name="model-card-openai-gpt-6-astra-pricing-commercial-long"></a>
 
 | **Inference option** | **Input** | **Input — 30m cache write** | **Input — cache read** | **Output** |
 | --- | --- | --- | --- | --- |
 | In-Region | $22.00 | $27.50 | $2.20 | $82.50 |
 | Geo CRIS | $22.00 | $27.50 | $2.20 | $82.50 |
 | Global CRIS | $20.00 | $25.00 | $2.00 | $75.00 |
-
-*All prices are per 1 million tokens. Pricing shown is for the Standard tier. Priority and Flex tiers are not supported for this model.*
 
 ## Programmatic Access
 <a name="model-card-openai-gpt-6-astra-programmatic-access"></a>
@@ -172,7 +181,10 @@ On the `bedrock-runtime` endpoint, limits are managed as tokens per minute (TPM)
 pip install openai
 ```
 
-**Step 4 - Set environment variables:** Set up your environment to use the API key for authentication.
+### Step 4 - Set environment variables
+<a name="model-card-openai-gpt-6-astra-sample-code-environment"></a>
+
+Set up your environment to use the API key for authentication.
 
 ------
 #### [ bedrock-mantle ]
@@ -195,10 +207,18 @@ OPENAI_BASE_URL="https://bedrock-runtime.us-west-2.amazonaws.com/openai/v1"
 **Note**
 On `bedrock-runtime`, name a cross-Region inference profile as the model: `us.openai.gpt-6-astra` or `global.openai.gpt-6-astra`. This model is not available for in-Region inference on that endpoint.
 
-**Step 5 - Run your first inference request:** Save the file as `bedrock-first-request.py`.
+### Step 5 - Run your first inference request
+<a name="model-card-openai-gpt-6-astra-sample-code-request"></a>
+
+Save the file as `bedrock-first-request.py`.
+
+#### bedrock-mantle
+<a name="model-card-openai-gpt-6-astra-sample-code-mantle"></a>
+
+Use the settings from [Step 4 - Set environment variables](#model-card-openai-gpt-6-astra-sample-code-environment). Choose the `bedrock-mantle` tab. The Chat tab uses the Chat Completions API.
 
 ------
-#### [ bedrock-mantle ]
+#### [ Responses API ]
 
 ```
 from openai import OpenAI
@@ -213,7 +233,29 @@ print(response)
 ```
 
 ------
-#### [ bedrock-runtime ]
+#### [ Chat ]
+
+```
+from openai import OpenAI
+
+client = OpenAI()
+
+response = client.chat.completions.create(
+    model="openai.gpt-6-astra",
+    messages=[{"role": "user", "content": "Can you explain the features of Amazon Bedrock?"}]
+)
+print(response)
+```
+
+------
+
+#### bedrock-runtime: OpenAI SDK
+<a name="model-card-openai-gpt-6-astra-sample-code-runtime-openai"></a>
+
+Use the settings from [Step 4 - Set environment variables](#model-card-openai-gpt-6-astra-sample-code-environment). Choose the `bedrock-runtime` tab. Send your request with the Responses API.
+
+------
+#### [ Responses API ]
 
 ```
 from openai import OpenAI

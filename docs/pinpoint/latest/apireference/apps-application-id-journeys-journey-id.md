@@ -954,7 +954,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/pinpoint-2016-12-01/GetJourney)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/pinpoint-2016-12-01/GetJourney)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/pinpoint-2016-12-01/GetJourney)
-+ [AWS SDK for Python](/goto/boto3/pinpoint-2016-12-01/GetJourney)
++ [AWS SDK for Python (Boto3)](/goto/boto3/pinpoint-2016-12-01/GetJourney)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/pinpoint-2016-12-01/GetJourney)
 
 ### UpdateJourney
@@ -967,7 +967,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/pinpoint-2016-12-01/UpdateJourney)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/pinpoint-2016-12-01/UpdateJourney)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/pinpoint-2016-12-01/UpdateJourney)
-+ [AWS SDK for Python](/goto/boto3/pinpoint-2016-12-01/UpdateJourney)
++ [AWS SDK for Python (Boto3)](/goto/boto3/pinpoint-2016-12-01/UpdateJourney)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/pinpoint-2016-12-01/UpdateJourney)
 
 ### DeleteJourney
@@ -980,5 +980,5 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/pinpoint-2016-12-01/DeleteJourney)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/pinpoint-2016-12-01/DeleteJourney)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/pinpoint-2016-12-01/DeleteJourney)
-+ [AWS SDK for Python](/goto/boto3/pinpoint-2016-12-01/DeleteJourney)
++ [AWS SDK for Python (Boto3)](/goto/boto3/pinpoint-2016-12-01/DeleteJourney)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/pinpoint-2016-12-01/DeleteJourney)

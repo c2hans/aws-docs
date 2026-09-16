@@ -11,4 +11,4 @@ Connect Customer Customer Profiles is a unified customer profile for your contac
 
 For more information about the Connect Customer Customer Profiles feature, see [Use Customer Profiles](https://docs.aws.amazon.com/connect/latest/adminguide/customer-profiles.html) in the *Connect Customer Administrator's Guide*.
 
-This document was last published on September 9, 2026.
+This document was last published on September 15, 2026.

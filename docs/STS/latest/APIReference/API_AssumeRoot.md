@@ -28,6 +28,12 @@ Type: Integer
 Valid Range: Minimum value of 0. Maximum value of 900.
 Required: No
 
+ ** MinimumSessionTokenSize **
+The minimum size, in bytes, of the session token that STS issues for the request. STS increases the session token to at least this size, regardless of its actual content. The value must not exceed 4,096 bytes. When set to 0 or not specified, the session token size is unchanged.
+Type: Integer
+Valid Range: Minimum value of 0. Maximum value of 4096.
+Required: No
+
  ** TargetPrincipal **
 The member account principal ARN or account ID.
 Type: String
@@ -53,6 +59,16 @@ The following elements are returned by the service.
 The temporary security credentials, which include an access key ID, a secret access key, and a security token.
 The size of the security token that AWS STS API operations return is not fixed. We strongly recommend that you make no assumptions about the maximum size.
 Type: [Credentials](API_Credentials.md) object
+
+ ** SessionTokenSize **
+The size, in bytes, of the session token returned in the Credentials for this response.
+Type: Integer
+Valid Range: Minimum value of 0.
+
+ ** SessionTokenUtilization **
+The percentage (0-100) of the maximum allowed session token size that the returned session token consumes.
+Type: Integer
+Valid Range: Minimum value of 0.
 
  ** SourceIdentity **
 The source identity specified by the principal that is calling the `AssumeRoot` operation.
@@ -133,5 +149,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/sts-2011-06-15/AssumeRoot)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/sts-2011-06-15/AssumeRoot)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/sts-2011-06-15/AssumeRoot)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/sts-2011-06-15/AssumeRoot)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/sts-2011-06-15/AssumeRoot)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/sts-2011-06-15/AssumeRoot)

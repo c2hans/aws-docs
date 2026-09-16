@@ -21,7 +21,7 @@ The following tabs show details within each feature area.
 ------
 #### [ Map Features ]
 
-The following table shows the map features by data provider. For more information about map concepts, see [Learn about Maps resources in Amazon Location Service](map-concepts.md).
+The following table shows the map features by data provider. For more information about map concepts, see [Maps (V1) concepts](map-concepts.md).
 
 | Data provider | Supported map types | Vector zoom levels | Raster zoom levels |
 | --- | --- | --- | --- |
@@ -37,7 +37,7 @@ MapLibre (and other map rendering engines) allow you to set minimum and maximum 
 ------
 #### [ Places and Search ]
 
-The following table shows the place and search features by data provider. For more information about place concepts, see [Learn about Places search in Amazon Location Service](places-concepts.md).
+The following table shows the place and search features by data provider. For more information about place concepts, see [Places (V1) concepts](places-concepts.md).
 
 | Data provider | Geocoding | Reverse Geocoding | Autocomplete | GetPlace |
 | --- | --- | --- | --- | --- |

@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkCLT/CLTReference_DeleteHITsCommand.html
 ---
 
+**Amazon Mechanical Turk will permanently close on September 30, 2026.** For Workers and Requesters currently using the service, visit our [Amazon Mechanical Turk help page](https://www.mturk.com/help) to learn how you can prepare for this closure.
+
 |  |
 | --- |
 | **This software is not currently supported by Amazon Mechanical Turk**<br />The Amazon Mechanical Turk Command Line Tools (CLT) are not currently maintained by Amazon Mechanical Turk. If you would still like to use Amazon Mechanical Turk from the command line, use the `mturk` command in the AWS Command Line Interface (CLI). For more information, see the `mturk` section of the [ AWS CLI Command Reference ](https://docs.aws.amazon.com/cli/latest/reference/mturk/index.html).  |
@@ -10,12 +12,12 @@ source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkCLT/CLTRefere
 <a name="CLTReference_DeleteHITsCommand"></a>
 
 ## Description
-<a name="w2aab9c22b2"></a>
+<a name="w2aac11c22b2"></a>
 
  The `deleteHITs` command deletes your HITs from Amazon Mechanical Turk. Use the arguments to specify how to handle assignments that have not been approved or are still available to Workers. You specify the HITs to delete in a file, which you generate as the output of [getResults](CLTReference_GetResultsCommand.md).
 
 ## Arguments
-<a name="w2aab9c22b4"></a>
+<a name="w2aac11c22b4"></a>
 
  The following table describes the arguments for the `deleteHITs` command.
 
@@ -29,12 +31,12 @@ source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkCLT/CLTRefere
 | `-successfile [filename]` |  Specifies the success file that contains the HITs to be deleted. For information about this file, see *The success file* in [Files Used by the Command Line Tools](CLTFilesArticle.md). <br />Example: `-successfile helloworld.success` | Yes |
 
 ## Example
-<a name="w2aab9c22b6"></a>
+<a name="w2aac11c22b6"></a>
 
  The following examples for Unix and Windows show how to use the `deleteHITs` command. This example deletes five assignments in the file `survey.success`. If any HITs in the file have been submitted, this example approves them. If any HITs are still available, this example expires them.
 
 ### Windows
-<a name="w2aab9c22b6b4"></a>
+<a name="w2aac11c22b6b4"></a>
 
  The following example demonstrates how to call this command from Microsoft Windows.
 
@@ -43,7 +45,7 @@ deleteHITs -successfile survey.success -approve -expire
 ```
 
 ### Unix
-<a name="w2aab9c22b6b6"></a>
+<a name="w2aac11c22b6b6"></a>
 
  The following example demonstrates how to call this command from Unix.
 
@@ -52,7 +54,7 @@ deleteHITs -successfile survey.success -approve -expire
 ```
 
 ## Output
-<a name="w2aab9c22b8"></a>
+<a name="w2aac11c22b8"></a>
 
 These examples produce the following output.
 

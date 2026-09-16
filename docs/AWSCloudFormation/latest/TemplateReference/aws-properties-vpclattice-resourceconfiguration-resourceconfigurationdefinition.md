@@ -23,6 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[ArnResource](#cfn-vpclattice-resourceconfiguration-resourceconfigurationdefinition-arnresource)" : {{String}},
+  "[CidrResource](#cfn-vpclattice-resourceconfiguration-resourceconfigurationdefinition-cidrresource)" : {{CidrResource}},
   "[DnsResource](#cfn-vpclattice-resourceconfiguration-resourceconfigurationdefinition-dnsresource)" : {{DnsResource}},
   "[IpResource](#cfn-vpclattice-resourceconfiguration-resourceconfigurationdefinition-ipresource)" : {{String}}
 }
@@ -33,6 +34,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [ArnResource](#cfn-vpclattice-resourceconfiguration-resourceconfigurationdefinition-arnresource): {{String}}
+  [CidrResource](#cfn-vpclattice-resourceconfiguration-resourceconfigurationdefinition-cidrresource): {{
+    CidrResource}}
   [DnsResource](#cfn-vpclattice-resourceconfiguration-resourceconfigurationdefinition-dnsresource): {{
     DnsResource}}
   [IpResource](#cfn-vpclattice-resourceconfiguration-resourceconfigurationdefinition-ipresource): {{String}}
@@ -48,6 +51,12 @@ The Amazon Resource Name (ARN) of the resource configuration. For the ARN syntax
 *Pattern*: `^arn.*`
 *Maximum*: `1224`
 *Update requires*: Updates are not supported.
+
+`CidrResource`  <a name="cfn-vpclattice-resourceconfiguration-resourceconfigurationdefinition-cidrresource"></a>
+Property description not available.
+*Required*: No
+*Type*: [CidrResource](aws-properties-vpclattice-resourceconfiguration-cidrresource.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DnsResource`  <a name="cfn-vpclattice-resourceconfiguration-resourceconfigurationdefinition-dnsresource"></a>
 The DNS name of the resource configuration.

@@ -15,8 +15,8 @@ The topics in this section provide you an overview of the Amazon Location core c
 
 **Topics**
 + [Overview](overview.md)
-+ [Learn about Maps resources](map-concepts.md)
-+ [Learn about Places search](places-concepts.md)
++ [Maps (V1)](map-concepts.md)
++ [Places (V1)](places-concepts.md)
 + [Routes (V1)](route-concepts.md)
 + [Learn about geofences and trackers](geofence-tracker-concepts.md)
 + [Common use cases](common-usecases.md)

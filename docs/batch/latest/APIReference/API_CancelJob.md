@@ -8,10 +8,10 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_CancelJob.
 Cancels a job in an AWS Batch job queue. Jobs that are in a `SUBMITTED`, `PENDING`, or `RUNNABLE` state are cancelled and the job status is updated to `FAILED`.
 
 **Note**
-A `PENDING` job is canceled after all dependency jobs are completed. Therefore, it may take longer than expected to cancel a job in `PENDING` status.
-When you try to cancel an array parent job in `PENDING`, AWS Batch attempts to cancel all child jobs. The array parent job is canceled when all child jobs are completed.
+A `PENDING` job is cancelled after all dependency jobs are completed. Therefore, it might take longer than expected to cancel a job in `PENDING` status.
+When you try to cancel an array parent job in `PENDING`, AWS Batch attempts to cancel all child jobs. The array parent job is cancelled when all child jobs are completed.
 
-Jobs that progressed to the `STARTING` or `RUNNING` state aren't canceled. However, the API operation still succeeds, even if no job is canceled. These jobs must be terminated with the [TerminateJob](API_TerminateJob.md) operation.
+Jobs that progressed to the `STARTING` or `RUNNING` state aren't cancelled. However, the API operation still succeeds, even if no job is cancelled. These jobs must be terminated with the [TerminateJob](API_TerminateJob.md) or [TerminateJobs](API_TerminateJobs.md) operation.
 
 ## Request Syntax
 <a name="API_CancelJob_RequestSyntax"></a>
@@ -42,8 +42,8 @@ Type: String
 Required: Yes
 
  ** [reason](#API_CancelJob_RequestSyntax) **   <a name="Batch-CancelJob-request-reason"></a>
-A message to attach to the job that explains the reason for canceling it. This message is returned by future [DescribeJobs](API_DescribeJobs.md) operations on the job. It is also recorded in the AWS Batch activity logs.
-This parameter has as limit of 1024 characters.
+A message to attach to the job that explains the reason for cancelling it. This message is returned by future [DescribeJobs](API_DescribeJobs.md) operations on the job. It is also recorded in the AWS Batch activity logs.
+This parameter has a limit of 1024 characters.
 Type: String
 Required: Yes
 
@@ -130,5 +130,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/batch-2016-08-10/CancelJob)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/batch-2016-08-10/CancelJob)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/batch-2016-08-10/CancelJob)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/batch-2016-08-10/CancelJob)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/batch-2016-08-10/CancelJob)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/batch-2016-08-10/CancelJob)

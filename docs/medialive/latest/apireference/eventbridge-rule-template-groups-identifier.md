@@ -301,7 +301,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/medialive-2017-10-14/DeleteEventBridgeRuleTemplateGroup)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/medialive-2017-10-14/DeleteEventBridgeRuleTemplateGroup)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/medialive-2017-10-14/DeleteEventBridgeRuleTemplateGroup)
-+ [AWS SDK for Python](/goto/boto3/medialive-2017-10-14/DeleteEventBridgeRuleTemplateGroup)
++ [AWS SDK for Python (Boto3)](/goto/boto3/medialive-2017-10-14/DeleteEventBridgeRuleTemplateGroup)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/medialive-2017-10-14/DeleteEventBridgeRuleTemplateGroup)
 
 ### GetEventBridgeRuleTemplateGroup
@@ -314,7 +314,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/medialive-2017-10-14/GetEventBridgeRuleTemplateGroup)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/medialive-2017-10-14/GetEventBridgeRuleTemplateGroup)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/medialive-2017-10-14/GetEventBridgeRuleTemplateGroup)
-+ [AWS SDK for Python](/goto/boto3/medialive-2017-10-14/GetEventBridgeRuleTemplateGroup)
++ [AWS SDK for Python (Boto3)](/goto/boto3/medialive-2017-10-14/GetEventBridgeRuleTemplateGroup)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/medialive-2017-10-14/GetEventBridgeRuleTemplateGroup)
 
 ### CorsEventbridge\_rule\_template\_groupsIdentifier
@@ -327,7 +327,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/medialive-2017-10-14/CorsEventbridge_rule_template_groupsIdentifier)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/medialive-2017-10-14/CorsEventbridge_rule_template_groupsIdentifier)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/medialive-2017-10-14/CorsEventbridge_rule_template_groupsIdentifier)
-+ [AWS SDK for Python](/goto/boto3/medialive-2017-10-14/CorsEventbridge_rule_template_groupsIdentifier)
++ [AWS SDK for Python (Boto3)](/goto/boto3/medialive-2017-10-14/CorsEventbridge_rule_template_groupsIdentifier)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/medialive-2017-10-14/CorsEventbridge_rule_template_groupsIdentifier)
 
 ### UpdateEventBridgeRuleTemplateGroup
@@ -340,5 +340,5 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/medialive-2017-10-14/UpdateEventBridgeRuleTemplateGroup)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/medialive-2017-10-14/UpdateEventBridgeRuleTemplateGroup)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/medialive-2017-10-14/UpdateEventBridgeRuleTemplateGroup)
-+ [AWS SDK for Python](/goto/boto3/medialive-2017-10-14/UpdateEventBridgeRuleTemplateGroup)
++ [AWS SDK for Python (Boto3)](/goto/boto3/medialive-2017-10-14/UpdateEventBridgeRuleTemplateGroup)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/medialive-2017-10-14/UpdateEventBridgeRuleTemplateGroup)

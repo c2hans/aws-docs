@@ -55,8 +55,12 @@ If you specify `BEDROCK_FOUNDATION_MODEL` as the parsing strategy for ingesting 
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `ParsingStrategy`  <a name="cfn-bedrock-datasource-parsingconfiguration-parsingstrategy"></a>
-The parsing strategy for the data source. Only `SMART_PARSING` can be selected for managed knowledge bases. For more information, see [Customize ingestion for managed knowledge bases](https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-customize-ingestion.html).
+The parsing strategy for the data source.
+For managed knowledge bases, the strategy that you can select depends on the embedding model that your knowledge base uses:
++ If your knowledge base uses a native multimodal embedding model, specify `MULTI_MODAL_EMBEDDINGS`. With this strategy, files are sent directly to the embedding model instead of being parsed into text. This is the only strategy that is supported for these knowledge bases.
++ Otherwise, specify `SMART_PARSING`.
+For more information, see [Customize ingestion for managed knowledge bases](https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-customize-ingestion.html).
 *Required*: Yes
 *Type*: String
-*Allowed values*: `BEDROCK_FOUNDATION_MODEL | BEDROCK_DATA_AUTOMATION | SMART_PARSING`
+*Allowed values*: `BEDROCK_FOUNDATION_MODEL | BEDROCK_DATA_AUTOMATION | SMART_PARSING | MULTI_MODAL_EMBEDDINGS`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

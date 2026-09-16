@@ -6,12 +6,14 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/route-c
 <a name="route-concepts"></a>
 
 **Important**
-**This page documents the previous Routes API (V1) and is only for existing applications.** The Routes V2 API is the latest version and is recommended for all new applications; see the [latest Routes Developer Guide](https://docs.aws.amazon.com/location/latest/developerguide/routes.html). The latest API is `CalculateRoutes` (plural, under the `geo-routes` namespace, exposed as `@aws-sdk/client-geo-routes` for JavaScript and `boto3.client('geo-routes')` for Python). The `CalculateRoute`, `CalculateRouteMatrix`, and `RouteCalculator` resources described below are previous-generation and only for existing applications.
+**This page documents the previous Routes API (V1). Use it only for existing applications.** The Routes V2 API is the latest version. Use it for all new applications; see the latest [Amazon Location Service Routes](https://docs.aws.amazon.com/location/latest/developerguide/routes.html) developer guide.
+The latest API is `CalculateRoutes` (plural). This operation is under the `geo-routes` namespace. It is exposed as `@aws-sdk/client-geo-routes` for JavaScript and `boto3.client('geo-routes')` for Python.
+The `CalculateRoute`, `CalculateRouteMatrix`, and `RouteCalculator` resources described below are previous-generation. Use them only for existing applications.
 
 This section provides an overview of the concepts around routing using Amazon Location Service.
 
 **Note**
-For information about how to use route resources in practice, see [Calculating routes using Amazon Location Service](calculating-routes.md).
+For information about how to use route resources in practice, see [Calculating routes with Routes (V1)](calculating-routes.md).
 
 ## Route calculator resources
 <a name="routes-overview"></a>
@@ -21,7 +23,7 @@ Route calculator resources allow you to find routes and estimate travel time bas
 You can use the Routes APIs to build features that allow your application to request the travel time, distance, and geometry of the route between any two locations. You can also use the Routes API to request travel time and distance between a set of departures and destinations in a single request to calculate a matrix.
 
 **Note**
-For new code, use the latest `CalculateRoutes` operation under `geo-routes` instead of creating a route calculator resource. See the [latest Routes Developer Guide](https://docs.aws.amazon.com/location/latest/developerguide/routes.html).
+For new code, use the latest `CalculateRoutes` operation under `geo-routes` instead of creating a route calculator resource. See the latest [Amazon Location Service Routes](https://docs.aws.amazon.com/location/latest/developerguide/routes.html) developer guide.
 
 The following shows you how to create and use a route calculator resource:
 
@@ -31,7 +33,7 @@ The following shows you how to create and use a route calculator resource:
 
 1. You can then select and install the SDK that matches your development environment and applications.
 
-1. Start using the Amazon Location Routes APIs . For more information about how to use the routing APIs, see the topic on [Calculating routes using Amazon Location Service](calculating-routes.md).
+1. Start using the Amazon Location Routes APIs . For more information about how to use the routing APIs, see the topic on [Calculating routes with Routes (V1)](calculating-routes.md).
 
 1. You can then integrate monitoring using services such as Amazon CloudWatch and AWS CloudTrail. For more information see, [Monitor Amazon Location Service with Amazon CloudWatch](monitoring-using-cloudwatch.md) and [Log and monitor with AWS CloudTrail](logging-using-cloudtrail.md).
 
@@ -95,13 +97,13 @@ Examples of details in a route include:
 + The distance from one position to another position.
 + The time it takes to travel from one position to the next position.
 + The LineString geometry representing the path of the route.
-For more information about routes, see the [response syntax for the CalculateRoute operation](https://docs.aws.amazon.com/location-routes/latest/APIReference/API_CalculateRoute.html) in the *Amazon Location Service Routes API reference*.
-For new code, see the [latest `CalculateRoutes` operation](https://docs.aws.amazon.com/geo-routes/latest/APIReference/API_CalculateRoutes.html) under `geo-routes`.
+For more information about routes, see the [response syntax for the CalculateRoute operation](https://docs.aws.amazon.com/location/previous/APIReference/API_CalculateRoute.html) in the *Amazon Location Service Routes API reference*.
+For new code, see the [`CalculateRoutes`](https://docs.aws.amazon.com/location/latest/APIReference/API_CalculateRoutes.html) under `geo-routes`.
 
 **Route matrix**
 A list of routes, from a set of departure positions to a set of destination positions. Useful as inputs into route planning or optimization software.
-For more information about calculating a route matrix, see the [syntax for the CalculateRouteMatrix operation](https://docs.aws.amazon.com/location-routes/latest/APIReference/API_CalculateRouteMatrix.html) in the *Amazon Location Service Routes API reference*.
-The latest API exposes the equivalent operation as [`CalculateRouteMatrix` under `geo-routes`](https://docs.aws.amazon.com/geo-routes/latest/APIReference/API_CalculateRouteMatrix.html), which does not require a route calculator resource.
+For more information about calculating a route matrix, see the [syntax for the CalculateRouteMatrix operation](https://docs.aws.amazon.com/location/previous/APIReference/API_CalculateRouteMatrix.html) in the *Amazon Location Service Routes API reference*.
+The latest API exposes the equivalent operation as [`CalculateRouteMatrix`](https://docs.aws.amazon.com/location/latest/APIReference/API_CalculateRouteMatrix.html) under `geo-routes`, which does not require a route calculator resource.
 
 **`LineString` geometry**
 An Amazon Location route consists of one or more legs (a route from one waypoint to another within the overall route). The geometry of each leg is a polyline represented as a `LineString`. A `LineString` is an ordered array of positions that can be used to plot a route on a map.

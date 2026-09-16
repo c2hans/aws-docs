@@ -1234,7 +1234,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/medialive-2017-10-14/DeleteSchedule)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/medialive-2017-10-14/DeleteSchedule)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/medialive-2017-10-14/DeleteSchedule)
-+ [AWS SDK for Python](/goto/boto3/medialive-2017-10-14/DeleteSchedule)
++ [AWS SDK for Python (Boto3)](/goto/boto3/medialive-2017-10-14/DeleteSchedule)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/medialive-2017-10-14/DeleteSchedule)
 
 ### DescribeSchedule
@@ -1247,7 +1247,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/medialive-2017-10-14/DescribeSchedule)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/medialive-2017-10-14/DescribeSchedule)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/medialive-2017-10-14/DescribeSchedule)
-+ [AWS SDK for Python](/goto/boto3/medialive-2017-10-14/DescribeSchedule)
++ [AWS SDK for Python (Boto3)](/goto/boto3/medialive-2017-10-14/DescribeSchedule)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/medialive-2017-10-14/DescribeSchedule)
 
 ### BatchUpdateSchedule
@@ -1260,5 +1260,5 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/medialive-2017-10-14/BatchUpdateSchedule)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/medialive-2017-10-14/BatchUpdateSchedule)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/medialive-2017-10-14/BatchUpdateSchedule)
-+ [AWS SDK for Python](/goto/boto3/medialive-2017-10-14/BatchUpdateSchedule)
++ [AWS SDK for Python (Boto3)](/goto/boto3/medialive-2017-10-14/BatchUpdateSchedule)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/medialive-2017-10-14/BatchUpdateSchedule)

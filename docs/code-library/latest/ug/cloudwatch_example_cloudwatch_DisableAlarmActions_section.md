@@ -11,7 +11,7 @@ The following code examples show how to use `DisableAlarmActions`.
 
 Action examples are code excerpts from larger programs and must be run in context. You can see this action in context in the following code examples:
 +  [Get started with alarms](cloudwatch_example_cloudwatch_Scenario_GettingStarted_section.md)
-+  [Manage metrics and alarms](cloudwatch_example_cloudwatch_Usage_MetricsAlarms_section.md)
++  [Manage custom metrics and alarms](cloudwatch_example_cloudwatch_Usage_MetricsAlarms_section.md)
 
 ------
 #### [ .NET ]

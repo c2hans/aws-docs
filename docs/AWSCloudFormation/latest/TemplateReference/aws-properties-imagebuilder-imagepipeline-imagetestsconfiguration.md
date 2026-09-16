@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-imagebuilder-imagepipeline-imagetestsconfiguration-properties"></a>
 
 `ImageTestsEnabled`  <a name="cfn-imagebuilder-imagepipeline-imagetestsconfiguration-imagetestsenabled"></a>
-Determines if tests should run after building the image. Image Builder defaults to enable tests to run following the image build, before image distribution.
+Specifies whether tests run after building the image. When enabled, tests run after the image build and before image distribution. Defaults to `true`.
 *Required*: No
 *Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

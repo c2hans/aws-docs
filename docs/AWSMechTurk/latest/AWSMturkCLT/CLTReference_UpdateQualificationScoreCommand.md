@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkCLT/CLTReference_UpdateQualificationScoreCommand.html
 ---
 
+**Amazon Mechanical Turk will permanently close on September 30, 2026.** For Workers and Requesters currently using the service, visit our [Amazon Mechanical Turk help page](https://www.mturk.com/help) to learn how you can prepare for this closure.
+
 |  |
 | --- |
 | **This software is not currently supported by Amazon Mechanical Turk**<br />The Amazon Mechanical Turk Command Line Tools (CLT) are not currently maintained by Amazon Mechanical Turk. If you would still like to use Amazon Mechanical Turk from the command line, use the `mturk` command in the AWS Command Line Interface (CLI). For more information, see the `mturk` section of the [ AWS CLI Command Reference ](https://docs.aws.amazon.com/cli/latest/reference/mturk/index.html).  |
@@ -10,12 +12,12 @@ source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkCLT/CLTRefere
 <a name="CLTReference_UpdateQualificationScoreCommand"></a>
 
 ## Description
-<a name="w2aab9c70b2"></a>
+<a name="w2aac11c70b2"></a>
 
  The `updateQualificationScore` command updates the Qualification scores for Workers.
 
 ## Arguments
-<a name="w2aab9c70b4"></a>
+<a name="w2aac11c70b4"></a>
 
  The following table describes the arguments for the `updateQualificationScores` command.
 
@@ -29,12 +31,12 @@ source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkCLT/CLTRefere
 | `-workerid [Worker ID]` |  The ID of the Worker you want to assign the score to. <br />Conditions: Required if the `input` argument is not specified.<br />Example: `-workerid A3C4G8DMXFG5PQ` | Conditional |
 
 ## Example
-<a name="w2aab9c70b6"></a>
+<a name="w2aac11c70b6"></a>
 
  The following examples for Unix and Windows show how to use the `updateQualificationScore` command. These examples update the score for one Worker.
 
 ### Unix
-<a name="w2aab9c70b6b4"></a>
+<a name="w2aac11c70b6b4"></a>
 
  The following example demonstrates how to call this command from Unix.
 
@@ -43,7 +45,7 @@ source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkCLT/CLTRefere
 ```
 
 ### Windows
-<a name="w2aab9c70b6b6"></a>
+<a name="w2aac11c70b6b6"></a>
 
  The following example demonstrates how to call this command from Microsoft Windows.
 
@@ -52,7 +54,7 @@ updateQualificationScore -qualtypeid RWFZTKZ55ZPZXN1C8TDZ score 50 -workerid A3C
 ```
 
 ## Output
-<a name="w2aab9c70b8"></a>
+<a name="w2aac11c70b8"></a>
 
 These examples produce the following output.
 

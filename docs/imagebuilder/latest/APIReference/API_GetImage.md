@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Get
 # GetImage
 <a name="API_GetImage"></a>
 
-Gets an image.
+Retrieves an image.
 
 ## Request Syntax
 <a name="API_GetImage_RequestSyntax"></a>
@@ -288,6 +288,32 @@ Content-type: application/json
                "name": "string",
                "region": "string",
                "state": {
+                  "failureContext": {
+                     "componentFailure": {
+                        "action": "string",
+                        "componentArn": "string",
+                        "errorMessage": "string",
+                        "phaseName": "string",
+                        "stepName": "string"
+                     },
+                     "distributionFailure": {
+                        "errorMessage": "string",
+                        "regionFailures": [
+                           {
+                              "errorMessage": "string",
+                              "imageConfigurationStep": "string",
+                              "region": "string",
+                              "status": "string",
+                              "targetAccountId": "string"
+                           }
+                        ]
+                     },
+                     "failedStep": "string",
+                     "imageStatus": "string",
+                     "stepExecutionId": "string",
+                     "workflowArn": "string",
+                     "workflowExecutionId": "string"
+                  },
                   "reason": "string",
                   "status": "string"
                }
@@ -308,6 +334,32 @@ Content-type: application/json
       "sourcePipelineArn": "string",
       "sourcePipelineName": "string",
       "state": {
+         "failureContext": {
+            "componentFailure": {
+               "action": "string",
+               "componentArn": "string",
+               "errorMessage": "string",
+               "phaseName": "string",
+               "stepName": "string"
+            },
+            "distributionFailure": {
+               "errorMessage": "string",
+               "regionFailures": [
+                  {
+                     "errorMessage": "string",
+                     "imageConfigurationStep": "string",
+                     "region": "string",
+                     "status": "string",
+                     "targetAccountId": "string"
+                  }
+               ]
+            },
+            "failedStep": "string",
+            "imageStatus": "string",
+            "stepExecutionId": "string",
+            "workflowArn": "string",
+            "workflowExecutionId": "string"
+         },
          "reason": "string",
          "status": "string"
       },
@@ -401,5 +453,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/imagebuilder-2019-12-02/GetImage)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/imagebuilder-2019-12-02/GetImage)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/imagebuilder-2019-12-02/GetImage)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/imagebuilder-2019-12-02/GetImage)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/imagebuilder-2019-12-02/GetImage)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/imagebuilder-2019-12-02/GetImage)

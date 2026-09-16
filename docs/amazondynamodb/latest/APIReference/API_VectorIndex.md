@@ -44,6 +44,7 @@ Required: Yes
 
  ** SearchSchema **   <a name="DDB-Type-VectorIndex-SearchSchema"></a>
 The search schema that defines partition key and inline filter attributes for the vector index.
+Every attribute that you reference in `SearchSchema` must also be declared in the table's `AttributeDefinitions`, the same way key attributes are declared for a global secondary index. Otherwise, the request fails with a `ValidationException`.
 Type: Array of [SearchSchemaElement](API_SearchSchemaElement.md) objects
 Array Members: Minimum number of 1 item.
 Required: No

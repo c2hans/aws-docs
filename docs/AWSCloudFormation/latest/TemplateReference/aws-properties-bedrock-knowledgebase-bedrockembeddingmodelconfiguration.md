@@ -22,6 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[Audio](#cfn-bedrock-knowledgebase-bedrockembeddingmodelconfiguration-audio)" : {{[ AudioConfiguration, ... ]}},
   "[Dimensions](#cfn-bedrock-knowledgebase-bedrockembeddingmodelconfiguration-dimensions)" : {{Integer}},
   "[EmbeddingDataType](#cfn-bedrock-knowledgebase-bedrockembeddingmodelconfiguration-embeddingdatatype)" : {{String}},
+  "[ModelConfiguration](#cfn-bedrock-knowledgebase-bedrockembeddingmodelconfiguration-modelconfiguration)" : {{Json}},
   "[Video](#cfn-bedrock-knowledgebase-bedrockembeddingmodelconfiguration-video)" : {{[ VideoConfiguration, ... ]}}
 }
 ```
@@ -34,6 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
     - AudioConfiguration}}
   [Dimensions](#cfn-bedrock-knowledgebase-bedrockembeddingmodelconfiguration-dimensions): {{Integer}}
   [EmbeddingDataType](#cfn-bedrock-knowledgebase-bedrockembeddingmodelconfiguration-embeddingdatatype): {{String}}
+  [ModelConfiguration](#cfn-bedrock-knowledgebase-bedrockembeddingmodelconfiguration-modelconfiguration): {{Json}}
   [Video](#cfn-bedrock-knowledgebase-bedrockembeddingmodelconfiguration-video): {{
     - VideoConfiguration}}
 ```
@@ -43,6 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 `Audio`  <a name="cfn-bedrock-knowledgebase-bedrockembeddingmodelconfiguration-audio"></a>
 Configuration settings for processing audio content in multimodal knowledge bases.
+This field is deprecated. Use `modelConfiguration` instead.
 *Required*: No
 *Type*: Array of [AudioConfiguration](aws-properties-bedrock-knowledgebase-audioconfiguration.md)
 *Minimum*: `1`
@@ -64,8 +67,17 @@ The data type for the vectors when using a model to convert text into vector emb
 *Allowed values*: `FLOAT32 | BINARY`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
+`ModelConfiguration`  <a name="cfn-bedrock-knowledgebase-bedrockembeddingmodelconfiguration-modelconfiguration"></a>
+Model-specific configuration for the embedding model, provided as a JSON object. Use this field to specify settings that apply to the embedding model that you selected, such as how audio and video files are divided into segments.
+The fields that this object accepts depend on the embedding model. For the settings that each model accepts, see the documentation for that model.
+For an example of a [CreateKnowledgeBase](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateKnowledgeBase.html) request that uses this field to configure a multimodal embedding model, see the [Examples](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateKnowledgeBase.html#API_agent_CreateKnowledgeBase_Examples) section of [CreateKnowledgeBase](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateKnowledgeBase.html).
+*Required*: No
+*Type*: Json
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
 `Video`  <a name="cfn-bedrock-knowledgebase-bedrockembeddingmodelconfiguration-video"></a>
 Configuration settings for processing video content in multimodal knowledge bases.
+This field is deprecated. Use `modelConfiguration` instead.
 *Required*: No
 *Type*: Array of [VideoConfiguration](aws-properties-bedrock-knowledgebase-videoconfiguration.md)
 *Minimum*: `1`

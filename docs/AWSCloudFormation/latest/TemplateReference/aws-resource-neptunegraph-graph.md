@@ -11,6 +11,9 @@ The `AWS::NeptuneGraph::Graph` resource creates an Amazon Neptune Analytics grap
 
 You can use `AWS::NeptuneGraph::Graph.DeletionProtection` to help guard against unintended deletion of your graph.
 
+**Important**
+ Ensure that the IAM role used to provision this resource includes the `neptune-graph:ListImportTasks` permission. This permission is required even if you are not using the import feature.
+
 ## Syntax
 <a name="aws-resource-neptunegraph-graph-syntax"></a>
 
@@ -25,6 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Properties" : {
       "[DeletionProtection](#cfn-neptunegraph-graph-deletionprotection)" : {{Boolean}},
       "[GraphName](#cfn-neptunegraph-graph-graphname)" : {{String}},
+      "[ImportTask](#cfn-neptunegraph-graph-importtask)" : {{ImportTask}},
       "[KmsKeyIdentifier](#cfn-neptunegraph-graph-kmskeyidentifier)" : {{String}},
       "[ProvisionedMemory](#cfn-neptunegraph-graph-provisionedmemory)" : {{Integer}},
       "[PublicConnectivity](#cfn-neptunegraph-graph-publicconnectivity)" : {{Boolean}},
@@ -43,6 +47,8 @@ Type: AWS::NeptuneGraph::Graph
 Properties:
   [DeletionProtection](#cfn-neptunegraph-graph-deletionprotection): {{Boolean}}
   [GraphName](#cfn-neptunegraph-graph-graphname): {{String}}
+  [ImportTask](#cfn-neptunegraph-graph-importtask): {{
+    ImportTask}}
   [KmsKeyIdentifier](#cfn-neptunegraph-graph-kmskeyidentifier): {{String}}
   [ProvisionedMemory](#cfn-neptunegraph-graph-provisionedmemory): {{Integer}}
   [PublicConnectivity](#cfn-neptunegraph-graph-publicconnectivity): {{Boolean}}
@@ -73,13 +79,20 @@ If you don't specify a graph name, a unique graph name is generated for you usin
 *Maximum*: `63`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
+`ImportTask`  <a name="cfn-neptunegraph-graph-importtask"></a>
+The details of the import task to use to create the graph. When specified, Neptune Analytics imports data from the supplied source.
+To use this feature, ensure that the IAM roles used to provision `AWS::NeptuneGraph::Graph` resources include the `neptune-graph:CreateGraphUsingImportTask`, `neptune-graph:CancelImportTask`, `neptune-graph:GetImportTask`, and `neptune-graph:ListImportTasks` permissions.
+*Required*: No
+*Type*: [ImportTask](aws-properties-neptunegraph-graph-importtask.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
 `KmsKeyIdentifier`  <a name="cfn-neptunegraph-graph-kmskeyidentifier"></a>
 The ARN of the KMS key used to encrypt data in the graph.
 If not specified, the graph is encrypted with an AWS managed key.
 You cannot change the KMS key after the graph is created.
 *Required*: No
 *Type*: String
-*Pattern*: `arn:aws(|-cn|-us-gov):kms:[a-zA-Z0-9-]*:[0-9]{12}:key/[a-zA-Z0-9-]{36}`
+*Pattern*: `arn:aws(|-cn|-us-gov|-iso|-iso-b|-iso-e|-iso-f|-eusc):kms:[a-zA-Z0-9-]*:[0-9]{12}:key/[a-zA-Z0-9-]{36}`
 *Minimum*: `1`
 *Maximum*: `1024`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

@@ -52,7 +52,12 @@ The following tables show which endpoints and APIs are supported for GPT OSS Saf
 
 | **Messages** | **Responses** | **Chat Completions** | **Converse** | **Invoke** |
 | --- | --- | --- | --- | --- |
-| ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
+| ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
+
+**Note**
+On `bedrock-mantle`, both APIs use the `/v1` base path, not `/openai/v1`. Use either API with this model:
+For Responses, use `/v1/responses`.
+For Chat Completions, use `/v1/chat/completions`.
 
 **Tip**
 Whenever possible, we recommend using the `bedrock-runtime` endpoint for new applications. See [Endpoints supported by Amazon Bedrock](endpoints.md) for details.
@@ -138,15 +143,17 @@ Your AWS account has default quotas to maintain the performance of the service a
 
 **Step 3 - Get the SDK:** To use this getting started guide, you must have Python already installed. Then install the relevant software depending on the APIs you are using.
 
+For Responses or Chat Completions, choose the OpenAI SDK tab. For Invoke or Converse, choose the Boto3 tab.
+
 ------
-#### [ Chat Completions API ]
+#### [ OpenAI SDK ]
 
 ```
 pip install boto3 openai
 ```
 
 ------
-#### [ Invoke/Converse API ]
+#### [ Boto3 ]
 
 ```
 pip install boto3
@@ -154,10 +161,23 @@ pip install boto3
 
 ------
 
-**Step 4 - Set environment variables:** Configure your environment to use the API key for authentication.
+### Step 4 - Set environment variables
+<a name="model-card-openai-gpt-oss-safeguard-120b-sample-code-environment"></a>
+
+Configure your environment to use the API key for authentication.
+
+Choose the tab for your SDK and endpoint.
 
 ------
-#### [ Chat Completions API ]
+#### [ bedrock-mantle ]
+
+```
+OPENAI_API_KEY="<provide your Bedrock API key>"
+OPENAI_BASE_URL="https://bedrock-mantle.<your-region>.api.aws/v1"
+```
+
+------
+#### [ bedrock-runtime ]
 
 ```
 OPENAI_API_KEY="<provide your Bedrock API key>"
@@ -165,7 +185,7 @@ OPENAI_BASE_URL="https://bedrock-runtime.<your-region>.amazonaws.com/openai/v1"
 ```
 
 ------
-#### [ Invoke/Converse API ]
+#### [ Boto3 ]
 
 ```
 AWS_BEARER_TOKEN_BEDROCK="<provide your Bedrock API key>"
@@ -173,10 +193,55 @@ AWS_BEARER_TOKEN_BEDROCK="<provide your Bedrock API key>"
 
 ------
 
-**Step 5 - Run your first inference request:** Save the file as `bedrock-first-request.py`
+### Step 5 - Run your first inference request
+<a name="model-card-openai-gpt-oss-safeguard-120b-sample-code-request"></a>
+
+Save the file as `bedrock-first-request.py`
+
+#### bedrock-mantle
+<a name="model-card-openai-gpt-oss-safeguard-120b-sample-code-mantle"></a>
+
+Use the settings from [Step 4 - Set environment variables](#model-card-openai-gpt-oss-safeguard-120b-sample-code-environment). Choose the `bedrock-mantle` tab. The Chat tab uses the Chat Completions API.
 
 ------
-#### [ Chat Completions API ]
+#### [ Responses API ]
+
+```
+from openai import OpenAI
+
+client = OpenAI()
+
+response = client.responses.create(
+    model="openai.gpt-oss-safeguard-120b",
+    input="Can you explain the features of Amazon Bedrock?"
+)
+print(response)
+```
+
+------
+#### [ Chat ]
+
+```
+from openai import OpenAI
+
+client = OpenAI()
+
+response = client.chat.completions.create(
+    model="openai.gpt-oss-safeguard-120b",
+    messages=[{"role": "user", "content": "Can you explain the features of Amazon Bedrock?"}]
+)
+print(response)
+```
+
+------
+
+#### bedrock-runtime: OpenAI SDK
+<a name="model-card-openai-gpt-oss-safeguard-120b-sample-code-runtime-openai"></a>
+
+Use the settings from [Step 4 - Set environment variables](#model-card-openai-gpt-oss-safeguard-120b-sample-code-environment). Choose the `bedrock-runtime` tab. This sample uses the Chat Completions API.
+
+**Note**
+To call the Responses API with this model, use `bedrock-mantle`. You can't call it on `bedrock-runtime`.
 
 ```
 from openai import OpenAI
@@ -189,6 +254,11 @@ response = client.chat.completions.create(
     )
 print(response)
 ```
+
+#### bedrock-runtime: Boto3
+<a name="model-card-openai-gpt-oss-safeguard-120b-sample-code-runtime-boto3"></a>
+
+Use the Boto3 settings from [Step 4 - Set environment variables](#model-card-openai-gpt-oss-safeguard-120b-sample-code-environment). Choose the API for your request.
 
 ------
 #### [ Invoke API ]

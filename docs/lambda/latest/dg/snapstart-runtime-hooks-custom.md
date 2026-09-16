@@ -44,7 +44,7 @@ The following diagram shows the order of Runtime API calls that a SnapStart cust
 
 To use SnapStart with your container image functions, follow the steps below:
 
-1. **Run before-snapshot hooks and trigger the snapshotting process:** As the last step of your function's initialization code, execute the before-snapshot hooks if required and trigger the snapshotting process. Perform these steps only if SnapStart is enabled, by checking that the value of the `AWS_LAMBDA_INITIALIZATION_TYPE` environment variable is set to `snap-start`. Run your registered before-snapshot hooks, then call `GET /runtime/restore/next` to trigger the snapshotting process. If a before-snapshot hook throws or returns an error, the runtime posts the error to the `/runtime/init/error` endpoint. See the pseudo-code samples below:
+1. **Run before-snapshot hooks and trigger the snapshotting process:** As the last step of your function's initialization code, execute the before-snapshot hooks if required and trigger the snapshotting process. Perform these steps only if SnapStart is enabled, by checking that the value of the `AWS_LAMBDA_INITIALIZATION_TYPE` environment variable is set to `snap-start`. Run your registered before-snapshot hooks, then call `GET /runtime/restore/next` to trigger the snapshotting process. If a before-snapshot hook throws or returns an error, the runtime posts the error to the `/runtime/init/error` endpoint. See the pseudo-code sample below:
 
    ```
    # After all initialization code has finished:
@@ -57,7 +57,7 @@ To use SnapStart with your container image functions, follow the steps below:
                EXECUTE registered before-snapshot hooks
            ON ERROR
                POST error to /runtime/init/error
-                   SET header  Lambda-Runtime-Function-Error-Type  TO  <Category>.<Reason>
+                   SET header  Lambda-Runtime-Function-Error-Type  TO  <Category.Reason>
                    SET body    TO  { errorMessage, errorType, stackTrace }
                EXIT process with non-zero code
 
@@ -70,7 +70,7 @@ To use SnapStart with your container image functions, follow the steps below:
 **Note**
 The init phase and before-snapshot hooks share a combined timeout of `max(function_timeout, 130 seconds)`. If this limit is exceeded, Lambda fails the PublishVersion request. Additionally, like `/runtime/invocation/next`, `/runtime/restore/next` call is a blocking call. It blocks until Lambda restores the execution environment from the snapshot.
 
-1. **Run after-restore hooks, then enter the invoke loop.** When `GET /runtime/restore/next` returns 200, your runtime must execute any registered after-restore hooks before proceeding to the invoke loop. If an after-restore hook fails, report the error to `/runtime/restore/error`. After the after-restore hooks complete, enter the standard invoke loop by calling `GET /runtime/invocation/next`. From this point on, the behavior is identical to a function that doesn't use SnapStart. See the pseudo-code samples below:
+1. **Run after-restore hooks, then enter the invoke loop.** When `GET /runtime/restore/next` returns 200, your runtime must execute any registered after-restore hooks before proceeding to the invoke loop. If an after-restore hook fails, report the error to `/runtime/restore/error`. After the after-restore hooks complete, enter the standard invoke loop by calling `GET /runtime/invocation/next`. From this point on, the behavior is identical to a function that doesn't use SnapStart. See the pseudo-code sample below:
 
    ```
    # After the snapshot has been restored
@@ -80,10 +80,11 @@ The init phase and before-snapshot hooks share a combined timeout of `max(functi
            EXECUTE registered after-restore hooks
        ON ERROR
            POST error to /runtime/restore/error
-               SET header  Lambda-Runtime-Function-Error-Type  TO  <Category>.<Reason>
+               SET header  Lambda-Runtime-Function-Error-Type  TO  <Category.Reason>
                SET body    TO  { errorMessage, errorType, stackTrace }
 
    # Proceed to the invoke loop
+          GET /runtime/invocation/next
    ```
 
 ## Error handling

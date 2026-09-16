@@ -103,7 +103,8 @@ Create two policies for AWS Elemental MediaConnect: one to provide read/write ac
               {
                   "Action": [
                       "mediaconnect:List*",
-                      "mediaconnect:Describe*"
+                      "mediaconnect:Describe*",
+                      "mediaconnect:Get*"
                   ],
                   "Effect": "Allow",
                   "Resource": "*"

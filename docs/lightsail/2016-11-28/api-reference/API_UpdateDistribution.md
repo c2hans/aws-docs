@@ -40,10 +40,20 @@ Use this action to update the configuration of your existing distribution.
       "minimumTTL": {{number}}
    },
    "certificateName": "{{string}}",
+   "customErrorResponses": [
+      {
+         "errorCachingMinTTL": {{number}},
+         "errorCode": {{number}},
+         "responseCode": "{{string}}",
+         "responsePagePath": "{{string}}"
+      }
+   ],
    "defaultCacheBehavior": {
       "behavior": "{{string}}"
    },
+   "defaultRootObject": "{{string}}",
    "distributionName": "{{string}}",
+   "enablePrivateOriginAccess": {{boolean}},
    "isEnabled": {{boolean}},
    "origin": {
       "ipAddressType": "{{string}}",
@@ -83,9 +93,19 @@ Type: String
 Pattern: `\w[\w\-]*\w`
 Required: No
 
+ ** [customErrorResponses](#API_UpdateDistribution_RequestSyntax) **   <a name="Lightsail-UpdateDistribution-request-customErrorResponses"></a>
+An array of objects that describe the custom error responses for the distribution. With a custom error response, you can specify the page to return when the origin responds with a given HTTP error code. You can also specify the HTTP status code to send to the viewer.
+Type: Array of [DistributionCustomErrorResponse](API_DistributionCustomErrorResponse.md) objects
+Required: No
+
  ** [defaultCacheBehavior](#API_UpdateDistribution_RequestSyntax) **   <a name="Lightsail-UpdateDistribution-request-defaultCacheBehavior"></a>
 An object that describes the default cache behavior for the distribution.
 Type: [CacheBehavior](API_CacheBehavior.md) object
+Required: No
+
+ ** [defaultRootObject](#API_UpdateDistribution_RequestSyntax) **   <a name="Lightsail-UpdateDistribution-request-defaultRootObject"></a>
+The object (for example, `index.html`) that the distribution returns when a viewer requests the root URL of the distribution (`/`) instead of a specific object. The object that you specify must be available from the origin.
+Type: String
 Required: No
 
  ** [distributionName](#API_UpdateDistribution_RequestSyntax) **   <a name="Lightsail-UpdateDistribution-request-distributionName"></a>
@@ -94,6 +114,14 @@ Use the `GetDistributions` action to get a list of distribution names that you c
 Type: String
 Pattern: `\w[\w\-]*\w`
 Required: Yes
+
+ ** [enablePrivateOriginAccess](#API_UpdateDistribution_RequestSyntax) **   <a name="Lightsail-UpdateDistribution-request-enablePrivateOriginAccess"></a>
+Specifies whether to enable private origin access for the distribution. With private origin access, the distribution can serve objects that aren't publicly accessible from a Lightsail bucket.
+Lightsail grants the distribution permission to read the bucket's objects. Enabling private origin access doesn't change the bucket's access settings, and you can still retrieve publicly accessible objects directly from the bucket's endpoint.
+When you include this parameter, you must also include the `origin` parameter with the resource name, even if the origin is not changing.
+You can enable private origin access only when the distribution's origin is a Lightsail bucket. If the origin is another resource type, the request fails.
+Type: Boolean
+Required: No
 
  ** [isEnabled](#API_UpdateDistribution_RequestSyntax) **   <a name="Lightsail-UpdateDistribution-request-isEnabled"></a>
 Indicates whether to enable the distribution.
@@ -196,5 +224,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/lightsail-2016-11-28/UpdateDistribution)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/lightsail-2016-11-28/UpdateDistribution)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/lightsail-2016-11-28/UpdateDistribution)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/lightsail-2016-11-28/UpdateDistribution)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/lightsail-2016-11-28/UpdateDistribution)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/lightsail-2016-11-28/UpdateDistribution)

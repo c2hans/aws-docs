@@ -31,6 +31,7 @@ Content-type: application/json
    "description": "{{string}}",
    "dockerfileTemplateData": "{{string}}",
    "dockerfileTemplateUri": "{{string}}",
+   "dryRun": {{boolean}},
    "imageOsVersionOverride": "{{string}}",
    "instanceConfiguration": {
       "blockDeviceMappings": [
@@ -79,7 +80,7 @@ The request does not use any URI parameters.
 The request accepts the following data in JSON format.
 
  ** [clientToken](#API_CreateContainerRecipe_RequestSyntax) **   <a name="imagebuilder-CreateContainerRecipe-request-clientToken"></a>
-Unique, case-sensitive identifier you provide to ensure idempotency of the request. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
+A unique, case-sensitive identifier you provide to ensure that the operation completes no more than one time. If this token matches a previous request, the service ignores the request, but does not return an error. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: Yes
@@ -110,8 +111,13 @@ Pattern: `[^\x00]+`
 Required: No
 
  ** [dockerfileTemplateUri](#API_CreateContainerRecipe_RequestSyntax) **   <a name="imagebuilder-CreateContainerRecipe-request-dockerfileTemplateUri"></a>
-The Amazon S3 URI for the Dockerfile that will be used to build your container image.
+The Amazon S3 URI for the Dockerfile that is used to build your container image.
 Type: String
+Required: No
+
+ ** [dryRun](#API_CreateContainerRecipe_RequestSyntax) **   <a name="imagebuilder-CreateContainerRecipe-request-dryRun"></a>
+Validates the required permissions and request parameters without making the request. If validation succeeds, the operation returns a `DryRunOperationException` error response.
+Type: Boolean
 Required: No
 
  ** [imageOsVersionOverride](#API_CreateContainerRecipe_RequestSyntax) **   <a name="imagebuilder-CreateContainerRecipe-request-imageOsVersionOverride"></a>
@@ -152,7 +158,7 @@ Required: No
  ** [semanticVersion](#API_CreateContainerRecipe_RequestSyntax) **   <a name="imagebuilder-CreateContainerRecipe-request-semanticVersion"></a>
 The semantic version of the container recipe. This version follows the semantic version syntax.
 The semantic version has four nodes: <major>.<minor>.<patch>/<build>. You can assign values for the first three, and can filter on all of them.
- **Assignment:** For the first three nodes you can assign any positive integer value, including zero, with an upper limit of 2^30-1, or 1073741823 for each node. Image Builder automatically assigns the build number to the fourth node.
+ **Assignment:** For the first three nodes, you can assign any positive integer value, including zero. The upper limit is 2^30-1, or 1073741823, for each node. Image Builder automatically assigns the build number to the fourth node.
  **Patterns:** You can use any numeric pattern that adheres to the assignment requirements for the nodes that you can assign. For example, you might choose a software version pattern, such as 1.0.0, or a date, such as 2021.01.01.
 Type: String
 Pattern: `^(?:[0-9]+|x)\.(?:[0-9]+|x)\.(?:[0-9]+|x)$`
@@ -237,6 +243,10 @@ HTTP Status Code: 429
 These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
 HTTP Status Code: 400
 
+ ** DryRunOperationException **
+The dry run operation of the resource was successful, and no resources or mutations were actually performed due to the dry run flag in the request.
+HTTP Status Code: 412
+
  ** ForbiddenException **
 You are not authorized to perform the requested operation.
 HTTP Status Code: 403
@@ -285,5 +295,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/imagebuilder-2019-12-02/CreateContainerRecipe)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/imagebuilder-2019-12-02/CreateContainerRecipe)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/imagebuilder-2019-12-02/CreateContainerRecipe)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/imagebuilder-2019-12-02/CreateContainerRecipe)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/imagebuilder-2019-12-02/CreateContainerRecipe)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/imagebuilder-2019-12-02/CreateContainerRecipe)

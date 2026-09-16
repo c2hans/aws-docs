@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gat
 # Tutorial: Create a REST API using AWS SDKs or the AWS CLI
 <a name="api-gateway-create-api-cli-sdk"></a>
 
-Use the following tutorial to create a PetStore API supporting the `GET /pets` and `GET /pets/{petId}` methods. The methods are integrated with an HTTP endpoint. You can follow this tutorial using the AWS SDK for JavaScript, the SDK for Python (Boto3), or the AWS CLI. You use the following functions or commands to set up your API:
+Use the following tutorial to create a PetStore API supporting the `GET /pets` and `GET /pets/{petId}` methods. The methods are integrated with an HTTP endpoint. You can follow this tutorial using the AWS SDK for JavaScript, the AWS SDK for Python (Boto3), or the AWS CLI. You use the following functions or commands to set up your API:
 
 ------
 #### [ JavaScript v3 ]
@@ -39,7 +39,7 @@ Use the following tutorial to create a PetStore API supporting the `GET /pets` a
 
 ------
 
-For more information about the AWS SDK for JavaScript v3, see [What's the AWS SDK for JavaScript?](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/welcome.html). For more information about the SDK for Python (Boto3), see [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/pythonsdk). For more information about the AWS CLI, see [What is the AWS CLI?](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html).
+For more information about the AWS SDK for JavaScript v3, see [What's the AWS SDK for JavaScript?](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/welcome.html). For more information about the SDK for Python (Boto3), see [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/sdk-for-python). For more information about the AWS CLI, see [What is the AWS CLI?](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html).
 
 ## Set up an edge-optimized PetStore API
 <a name="api-gateway-create-api-cli-sdk-tutorial"></a>

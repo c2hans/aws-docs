@@ -138,8 +138,8 @@ The SLES STONITH resource agent (`external/ec2`) requires permission to start an
         "ec2:StopInstances"
       ],
       "Resource": [
-        "arn:aws:ec2:us-east-1:123456789012:instance/arn:aws:ec2:us-east-1:123456789012:instance/i-1234567890abcdef0",
-        "arn:aws:ec2:us-east-1:123456789012:instance/arn:aws:ec2:us-east-1:123456789012:instance/i-1234567890abcdef0"
+        "arn:aws:ec2:us-east-1:123456789012:instance/i-1234567890abcdef0",
+        "arn:aws:ec2:us-east-1:123456789012:instance/i-0abcdef1234567890"
       ]
     }
   ]
@@ -692,8 +692,8 @@ In cluster account, create the following IAM policy, and attach it to an IAM rol
         "ec2:StopInstances"
       ],
       "Resource": [
-        "arn:aws:ec2:us-east-1:123456789012:instance/arn:aws:ec2:us-east-1:123456789012:instance/i-1234567890abcdef0",
-        "arn:aws:ec2:us-east-1:123456789012:instance/arn:aws:ec2:us-east-1:123456789012:instance/i-1234567890abcdef0"
+        "arn:aws:ec2:us-east-1:123456789012:instance/i-1234567890abcdef0",
+        "arn:aws:ec2:us-east-1:123456789012:instance/i-0abcdef1234567890"
       ]
     },
     {

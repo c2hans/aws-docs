@@ -22,6 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Type" : "AWS::Notifications::ManagedNotificationAccountContactAssociation",
   "Properties" : {
       "[ContactIdentifier](#cfn-notifications-managednotificationaccountcontactassociation-contactidentifier)" : {{String}},
+      "[IsSensitiveEventsSubscribed](#cfn-notifications-managednotificationaccountcontactassociation-issensitiveeventssubscribed)" : {{Boolean}},
       "[ManagedNotificationConfigurationArn](#cfn-notifications-managednotificationaccountcontactassociation-managednotificationconfigurationarn)" : {{String}}
     }
 }
@@ -34,6 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 Type: AWS::Notifications::ManagedNotificationAccountContactAssociation
 Properties:
   [ContactIdentifier](#cfn-notifications-managednotificationaccountcontactassociation-contactidentifier): {{String}}
+  [IsSensitiveEventsSubscribed](#cfn-notifications-managednotificationaccountcontactassociation-issensitiveeventssubscribed): {{Boolean}}
   [ManagedNotificationConfigurationArn](#cfn-notifications-managednotificationaccountcontactassociation-managednotificationconfigurationarn): {{String}}
 ```
 
@@ -46,6 +48,12 @@ The unique identifier of the notification contact associated with the AWS accoun
 *Type*: String
 *Allowed values*: `ACCOUNT_PRIMARY | ACCOUNT_ALTERNATE_SECURITY | ACCOUNT_ALTERNATE_OPERATIONS | ACCOUNT_ALTERNATE_BILLING`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`IsSensitiveEventsSubscribed`  <a name="cfn-notifications-managednotificationaccountcontactassociation-issensitiveeventssubscribed"></a>
+Property description not available.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ManagedNotificationConfigurationArn`  <a name="cfn-notifications-managednotificationaccountcontactassociation-managednotificationconfigurationarn"></a>
  The ARN of the `ManagedNotificationConfiguration` to be associated with the `Channel`.

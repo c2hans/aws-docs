@@ -11,7 +11,7 @@ Configure image tests for your pipeline build. Tests run after building the imag
 <a name="API_ImageTestsConfiguration_Contents"></a>
 
  ** imageTestsEnabled **   <a name="imagebuilder-Type-ImageTestsConfiguration-imageTestsEnabled"></a>
-Determines if tests should run after building the image. Image Builder defaults to enable tests to run following the image build, before image distribution.
+Specifies whether tests run after building the image. When enabled, tests run after the image build and before image distribution. Defaults to `true`.
 Type: Boolean
 Required: No
 

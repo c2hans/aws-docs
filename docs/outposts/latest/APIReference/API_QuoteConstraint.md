@@ -11,7 +11,7 @@ A physical constraint for a quote.
 <a name="API_QuoteConstraint_Contents"></a>
 
  ** QuoteConstraintType **   <a name="outposts-Type-QuoteConstraint-QuoteConstraintType"></a>
-The type of constraint. Valid values are `RACK_MAXIMUM`, `RACK_MAX_POWER_KVA`, and `RACK_MAX_WEIGHT_LBS`.
+The type of constraint. Valid values are `RACK_MAXIMUM`, `RACK_MAX_POWER_KVA`, `RACK_MAX_WEIGHT_LBS`, and `RACK_SPACE_CONSTRAINED`.
 Type: String
 Valid Values: `RACK_MAXIMUM | RACK_MAX_POWER_KVA | RACK_MAX_WEIGHT_LBS | RACK_SPACE_CONSTRAINED`
 Required: No

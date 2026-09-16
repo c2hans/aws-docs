@@ -365,7 +365,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/pinpoint-sms-voice-2018-09-05/GetConfigurationSetEventDestinations)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/pinpoint-sms-voice-2018-09-05/GetConfigurationSetEventDestinations)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/pinpoint-sms-voice-2018-09-05/GetConfigurationSetEventDestinations)
-+ [AWS SDK for Python](/goto/boto3/pinpoint-sms-voice-2018-09-05/GetConfigurationSetEventDestinations)
++ [AWS SDK for Python (Boto3)](/goto/boto3/pinpoint-sms-voice-2018-09-05/GetConfigurationSetEventDestinations)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/pinpoint-sms-voice-2018-09-05/GetConfigurationSetEventDestinations)
 
 ### CreateConfigurationSetEventDestination
@@ -378,5 +378,5 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/pinpoint-sms-voice-2018-09-05/CreateConfigurationSetEventDestination)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/pinpoint-sms-voice-2018-09-05/CreateConfigurationSetEventDestination)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/pinpoint-sms-voice-2018-09-05/CreateConfigurationSetEventDestination)
-+ [AWS SDK for Python](/goto/boto3/pinpoint-sms-voice-2018-09-05/CreateConfigurationSetEventDestination)
++ [AWS SDK for Python (Boto3)](/goto/boto3/pinpoint-sms-voice-2018-09-05/CreateConfigurationSetEventDestination)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/pinpoint-sms-voice-2018-09-05/CreateConfigurationSetEventDestination)

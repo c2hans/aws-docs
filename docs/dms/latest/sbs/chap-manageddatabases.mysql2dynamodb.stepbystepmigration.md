@@ -235,10 +235,10 @@ DMS creates the control tables “awsdms\_apply\_exceptions” and “awsdms\_fu
         "dynamodb:UpdateItem"
     ],
     "Resource": [
-    "arn:aws:dynamodb:us-west-2:account-id:table/name1",
-    "arn:aws:dynamodb:us-west-2:account-id:table/OtherName*",
-    "arn:aws:dynamodb:us-west-2:account-id:table/awsdms_apply_exceptions",
-    "arn:aws:dynamodb:us-west-2:account-id:table/awsdms_full_load_exceptions"
+    "arn:aws:dynamodb:us-west-2:111122223333:table/name1",
+    "arn:aws:dynamodb:us-west-2:111122223333:table/OtherName*",
+    "arn:aws:dynamodb:us-west-2:111122223333:table/awsdms_apply_exceptions",
+    "arn:aws:dynamodb:us-west-2:111122223333:table/awsdms_full_load_exceptions"
     ]
     },
     {

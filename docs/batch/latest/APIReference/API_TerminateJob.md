@@ -36,8 +36,8 @@ Type: String
 Required: Yes
 
  ** [reason](#API_TerminateJob_RequestSyntax) **   <a name="Batch-TerminateJob-request-reason"></a>
-A message to attach to the job that explains the reason for canceling it. This message is returned by future [DescribeJobs](API_DescribeJobs.md) operations on the job. It is also recorded in the AWS Batch activity logs.
-This parameter has as limit of 1024 characters.
+A message to attach to the job that explains the reason for terminating it. This message is returned by future [DescribeJobs](API_DescribeJobs.md) operations on the job. It is also recorded in the AWS Batch activity logs.
+This parameter has a limit of 1024 characters.
 Type: String
 Required: Yes
 
@@ -124,5 +124,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/batch-2016-08-10/TerminateJob)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/batch-2016-08-10/TerminateJob)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/batch-2016-08-10/TerminateJob)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/batch-2016-08-10/TerminateJob)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/batch-2016-08-10/TerminateJob)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/batch-2016-08-10/TerminateJob)

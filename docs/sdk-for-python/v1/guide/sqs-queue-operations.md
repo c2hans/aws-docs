@@ -14,7 +14,7 @@ The `client` that is used in the following examples can be created from the snip
 ## Create a queue
 <a name="sqs-create-queue"></a>
 
-For request and response details, see the [create\_queue()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/sqs/operations/create_queue/) API reference.
+For request and response details, see the [create\_queue()](clients/sqs/operations/create_queue/) API reference.
 
 Create a queue with `create_queue`. The response returns the queue URL, which SQS data-plane operations use. To configure long polling when creating a queue, see [Configure long polling for Amazon SQS](sqs-long-polling.md).
 
@@ -41,7 +41,7 @@ async def create_queue(client: AsyncSQSClient, queue_name: str) -> str:
 ## List queues
 <a name="sqs-list-queues"></a>
 
-For request and response details, see the [list\_queues()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/sqs/operations/list_queues/) API reference.
+For request and response details, see the [list\_queues()](clients/sqs/operations/list_queues/) API reference.
 
 Use `list_queues` to discover queues by name prefix. Continue with `next_token` until the service returns no token.
 
@@ -75,7 +75,7 @@ async def list_queues(client: AsyncSQSClient, prefix: str) -> list[str]:
 ## Get a queue URL
 <a name="sqs-get-queue-url"></a>
 
-For request and response details, see the [get\_queue\_url()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/sqs/operations/get_queue_url/) API reference.
+For request and response details, see the [get\_queue\_url()](clients/sqs/operations/get_queue_url/) API reference.
 
 If you have a queue name instead of its URL, resolve it with `get_queue_url`.
 
@@ -102,7 +102,7 @@ async def get_queue_url(client: AsyncSQSClient, queue_name: str) -> str:
 ## Get a queue ARN
 <a name="sqs-get-queue-arn"></a>
 
-For request and response details, see the [get\_queue\_attributes()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/sqs/operations/get_queue_attributes/) API reference.
+For request and response details, see the [get\_queue\_attributes()](clients/sqs/operations/get_queue_attributes/) API reference.
 
 SQS data-plane operations use the queue URL. Resource policies and service integrations use the same queue's ARN. Retrieve it with `get_queue_attributes`.
 
@@ -133,7 +133,7 @@ async def get_queue_arn(client: AsyncSQSClient, queue_url: str) -> str:
 ## Delete a queue
 <a name="sqs-delete-queue"></a>
 
-For request and response details, see the [delete\_queue()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/sqs/operations/delete_queue/) API reference.
+For request and response details, see the [delete\_queue()](clients/sqs/operations/delete_queue/) API reference.
 
 Delete a temporary queue by URL after its messages and integrations are no longer needed.
 

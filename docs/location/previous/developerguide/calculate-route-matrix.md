@@ -7,6 +7,9 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/calcula
 
 You can use Amazon Location Service to create inputs to your route planning and optimization software. You can create route results, including travel time and travel distance, for routes between a set of departure positions and a set of destination positions.
 
+**Note**
+For new code, use the latest [`CalculateRouteMatrix`](https://docs.aws.amazon.com/location/latest/APIReference/API_CalculateRouteMatrix.html) operation under `geo-routes`, which does not require a route calculator resource. See the latest [Amazon Location Service Routes](https://docs.aws.amazon.com/location/latest/developerguide/routes.html) developer guide.
+
 For example, given departure positions A and B, and destination positions X and Y, Amazon Location Service will return travel time and travel distance for routes from A to X, A to Y, B to X, and B to Y.
 
 You can calculate the routes with different modes of transportation, avoidances, and traffic conditions. For example, you can specify that the vehicle is a truck that is 35 feet long, and the route calculated will use those restrictions to determine the travel time and travel distance.
@@ -21,7 +24,7 @@ You can calculate a matrix of routes between a set of departure positions and a 
 **Prerequisite**
 + You must first create a route calculator resource and set up authentication for your requests to Amazon Location. For more information, see [Prerequisites for calculating routes using Amazon Location](routes-prerequisites.md).
 
-Submit a request by using the `[CalculateRouteMatrix](https://docs.aws.amazon.com/location-routes/latest/APIReference/API_CalculateRouteMatrix.html)` operation. A minimal request contains the following required fields:
+Submit a request by using the `[CalculateRouteMatrix](https://docs.aws.amazon.com/location/previous/APIReference/API_CalculateRouteMatrix.html)` operation. A minimal request contains the following required fields:
 + `DeparturePositions` – The set of starting positions for which to calculate the routes. Defined as an array of `[longitude, latitude]`
 + `DestinationPositions` – The set of end positions for which to calculate the routes. Defined as an array of `[longitude, latitude]`.
 
@@ -122,7 +125,7 @@ When calculating longer routes, keep these points in mind:
 ## Example response
 <a name="example-response-route-matrix"></a>
 
-The following is an example request with the corresponding response when calling the `[CalculateRouteMatrix](https://docs.aws.amazon.com/location-routes/latest/APIReference/API_CalculateRouteMatrix.html)` operation from the Amazon Location Routes API.
+The following is an example request with the corresponding response when calling the `[CalculateRouteMatrix](https://docs.aws.amazon.com/location/previous/APIReference/API_CalculateRouteMatrix.html)` operation from the Amazon Location Routes API.
 
 ------
 #### [ Example request ]

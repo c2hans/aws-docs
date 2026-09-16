@@ -41,10 +41,20 @@ A distribution is a globally distributed network of caching servers that improve
       "minimumTTL": {{number}}
    },
    "certificateName": "{{string}}",
+   "customErrorResponses": [
+      {
+         "errorCachingMinTTL": {{number}},
+         "errorCode": {{number}},
+         "responseCode": "{{string}}",
+         "responsePagePath": "{{string}}"
+      }
+   ],
    "defaultCacheBehavior": {
       "behavior": "{{string}}"
    },
+   "defaultRootObject": "{{string}}",
    "distributionName": "{{string}}",
+   "enablePrivateOriginAccess": {{boolean}},
    "ipAddressType": "{{string}}",
    "origin": {
       "ipAddressType": "{{string}}",
@@ -94,16 +104,33 @@ Type: String
 Pattern: `\w[\w\-]*\w`
 Required: No
 
+ ** [customErrorResponses](#API_CreateDistribution_RequestSyntax) **   <a name="Lightsail-CreateDistribution-request-customErrorResponses"></a>
+An array of objects that describe the custom error responses for the distribution. With a custom error response, you can specify the page to return when the origin responds with a given HTTP error code. You can also specify the HTTP status code to send to the viewer.
+Type: Array of [DistributionCustomErrorResponse](API_DistributionCustomErrorResponse.md) objects
+Required: No
+
  ** [defaultCacheBehavior](#API_CreateDistribution_RequestSyntax) **   <a name="Lightsail-CreateDistribution-request-defaultCacheBehavior"></a>
 An object that describes the default cache behavior for the distribution.
 Type: [CacheBehavior](API_CacheBehavior.md) object
 Required: Yes
+
+ ** [defaultRootObject](#API_CreateDistribution_RequestSyntax) **   <a name="Lightsail-CreateDistribution-request-defaultRootObject"></a>
+The object (for example, `index.html`) that the distribution returns when a viewer requests the root URL of the distribution (`/`) instead of a specific object. The object that you specify must be available from the origin.
+Type: String
+Required: No
 
  ** [distributionName](#API_CreateDistribution_RequestSyntax) **   <a name="Lightsail-CreateDistribution-request-distributionName"></a>
 The name for the distribution.
 Type: String
 Pattern: `\w[\w\-]*\w`
 Required: Yes
+
+ ** [enablePrivateOriginAccess](#API_CreateDistribution_RequestSyntax) **   <a name="Lightsail-CreateDistribution-request-enablePrivateOriginAccess"></a>
+Specifies whether to enable private origin access for the distribution. With private origin access, the distribution can serve objects that aren't publicly accessible from a Lightsail bucket.
+Lightsail grants the distribution permission to read the bucket's objects. Enabling private origin access doesn't change the bucket's access settings, and you can still retrieve publicly accessible objects directly from the bucket's endpoint.
+You can enable private origin access only when the distribution's origin is a Lightsail bucket. If the origin is another resource type, the request fails.
+Type: Boolean
+Required: No
 
  ** [ipAddressType](#API_CreateDistribution_RequestSyntax) **   <a name="Lightsail-CreateDistribution-request-ipAddressType"></a>
 The IP address type for the distribution.
@@ -168,9 +195,18 @@ Required: No
       },
       "certificateName": "string",
       "createdAt": number,
+      "customErrorResponses": [
+         {
+            "errorCachingMinTTL": number,
+            "errorCode": number,
+            "responseCode": "string",
+            "responsePagePath": "string"
+         }
+      ],
       "defaultCacheBehavior": {
          "behavior": "string"
       },
+      "defaultRootObject": "string",
       "domainName": "string",
       "ipAddressType": "string",
       "isEnabled": boolean,
@@ -181,6 +217,7 @@ Required: No
       "name": "string",
       "origin": {
          "ipAddressType": "string",
+         "isPrivateOriginAccessEnabled": boolean,
          "name": "string",
          "protocolPolicy": "string",
          "regionName": "string",
@@ -276,5 +313,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/lightsail-2016-11-28/CreateDistribution)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/lightsail-2016-11-28/CreateDistribution)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/lightsail-2016-11-28/CreateDistribution)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/lightsail-2016-11-28/CreateDistribution)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/lightsail-2016-11-28/CreateDistribution)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/lightsail-2016-11-28/CreateDistribution)

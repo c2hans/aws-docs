@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkCLT/CLTReference_ApproveQualificationRequestsCommand.html
 ---
 
+**Amazon Mechanical Turk will permanently close on September 30, 2026.** For Workers and Requesters currently using the service, visit our [Amazon Mechanical Turk help page](https://www.mturk.com/help) to learn how you can prepare for this closure.
+
 |  |
 | --- |
 | **This software is not currently supported by Amazon Mechanical Turk**<br />The Amazon Mechanical Turk Command Line Tools (CLT) are not currently maintained by Amazon Mechanical Turk. If you would still like to use Amazon Mechanical Turk from the command line, use the `mturk` command in the AWS Command Line Interface (CLI). For more information, see the `mturk` section of the [ AWS CLI Command Reference ](https://docs.aws.amazon.com/cli/latest/reference/mturk/index.html).  |
@@ -10,14 +12,14 @@ source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkCLT/CLTRefere
 <a name="CLTReference_ApproveQualificationRequestsCommand"></a>
 
 ## Description
-<a name="w2aab9b7b2"></a>
+<a name="w2aac11b7b2"></a>
 
  The `approveQualificationRequests` command approves a list of Qualification requests. You can obtain the list from a call to [getQualificationRequests](CLTReference_GetQualificationRequestsCommand.md).
 
  For information about Qualifications and Qualification requests, see the [Amazon Mechanical Turk Developer Guide](http://docs.aws.amazon.com/AWSMechTurk/latest/AWSMechanicalTurkRequester/).
 
 ## Arguments
-<a name="w2aab9b7b4"></a>
+<a name="w2aac11b7b4"></a>
 
  The following table describes the arguments for the `approveQualificationRequests` command.
 
@@ -31,12 +33,12 @@ source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkCLT/CLTRefere
 | `-score [value]` |  The default score to assign for each approved Qualification request. Any scores defined in the `approvefile` override this default. <br />Example: `-score 100` | No |
 
 ## Example
-<a name="w2aab9b7b6"></a>
+<a name="w2aac11b7b6"></a>
 
  The following examples for Unix and Windows show how to use the `approveQualificationRequests` command. The examples use a file named `qualifications.txt` that contains 10 requests. Each request in the file gets a score of 100.
 
 ### Unix
-<a name="w2aab9b7b6b4"></a>
+<a name="w2aac11b7b6b4"></a>
 
  The following example demonstrates how to call this command from Unix.
 
@@ -45,7 +47,7 @@ source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkCLT/CLTRefere
 ```
 
 ### Windows
-<a name="w2aab9b7b6b6"></a>
+<a name="w2aac11b7b6b6"></a>
 
  The following example demonstrates how to call this command from Microsoft Windows.
 
@@ -54,7 +56,7 @@ approveQualificationRequests -approvefile qualifications.txt -score 100
 ```
 
 ## Output
-<a name="w2aab9b7b8"></a>
+<a name="w2aac11b7b8"></a>
 
 These examples produce output similar to the following, but all 10 requests are listed.
 
@@ -66,7 +68,7 @@ To confirm this operation, please press ENTER (or press Ctrl+C to abort):
 ```
 
 ## Related Commands
-<a name="w2aab9b7c10"></a>
+<a name="w2aac11b7c10"></a>
 
 +  [rejectQualificationRequests](CLTReference_RejectQualificationRequestsCommand.md)
 +  [revokeQualification](CLTReference_RevokeQualificationCommand.md)

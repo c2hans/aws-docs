@@ -36,7 +36,11 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-medialive-channel-webvttdestinationsettings-properties"></a>
 
 `StyleControl`  <a name="cfn-medialive-channel-webvttdestinationsettings-stylecontrol"></a>
-Controls whether the color and position of the source captions is passed through to the WebVTT output captions. PASSTHROUGH - Valid only if the source captions are EMBEDDED or TELETEXT. NO\_STYLE\_DATA - Don't pass through the style. The output captions will not contain any font styling information.
+Controls whether the color and position of the source captions is passed through to the WebVTT output captions. Valid values:
++ `PASSTHROUGH` – Valid only if the source captions are EMBEDDED, TELETEXT, or SMART SUBTITLES.
++ `NO_STYLE_DATA` – Don't pass through the style. The output captions will not contain any font styling information.
++ `MANUAL` – Applies the specified styling and positioning. All other styling and positioning is given default values.
+If you don't specify this field, the default is `NO_STYLE_DATA`.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

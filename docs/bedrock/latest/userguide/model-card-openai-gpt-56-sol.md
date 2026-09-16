@@ -54,7 +54,10 @@ The following tables show which endpoints and APIs are supported for GPT-5.6 Sol
 | --- | --- | --- | --- | --- |
 | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
 
-*On `bedrock-mantle`, this model is served at `/openai/v1/responses`, not the default `/v1/responses`.*
+**Note**
+On `bedrock-mantle`, both APIs use the `/openai/v1` base path, not `/v1`. Use either API with this model:
+For Responses, use `/openai/v1/responses`.
+For Chat Completions, use `/openai/v1/chat/completions`.
 
 **Tip**
 Whenever possible, we recommend using the `bedrock-runtime` endpoint for new applications. See [Endpoints supported by Amazon Bedrock](endpoints.md) for details.
@@ -79,7 +82,14 @@ Whenever possible, we recommend using the `bedrock-runtime` endpoint for new app
 ## Pricing
 <a name="model-card-openai-gpt-56-sol-pricing"></a>
 
-**Short Context Window (272K)**
+All prices are in USD per 1 million tokens for the Standard tier.
+
+Commercial In-Region prices include a 10% fee over OpenAI rates. You do not need to add this fee.
+
+*Priority and Flex tiers are not supported for this model.*
+
+### Commercial Regions — short context (272K input tokens or fewer)
+<a name="model-card-openai-gpt-56-sol-pricing-commercial-short"></a>
 
 | **Inference option** | **Input** | **Input — 30m cache write** | **Input — cache read** | **Output** |
 | --- | --- | --- | --- | --- |
@@ -87,15 +97,14 @@ Whenever possible, we recommend using the `bedrock-runtime` endpoint for new app
 | Geo CRIS | $4.40 | $5.50 | $0.44 | $22.00 |
 | Global CRIS | $4.00 | $5.00 | $0.40 | $20.00 |
 
-**Long Context Window (1M)**
+### Commercial Regions — long context (more than 272K input tokens)
+<a name="model-card-openai-gpt-56-sol-pricing-commercial-long"></a>
 
 | **Inference option** | **Input** | **Input — 30m cache write** | **Input — cache read** | **Output** |
 | --- | --- | --- | --- | --- |
 | In-Region | $8.80 | $11.00 | $0.88 | $33.00 |
 | Geo CRIS | $8.80 | $11.00 | $0.88 | $33.00 |
 | Global CRIS | $8.00 | $10.00 | $0.80 | $30.00 |
-
-*All prices are per 1 million tokens. Pricing shown is for the Standard tier. Priority and Flex tiers are not supported for this model.*
 
 ## Programmatic Access
 <a name="model-card-openai-gpt-56-sol-programmatic-access"></a>
@@ -187,8 +196,10 @@ On the `bedrock-runtime` endpoint, limits are managed as tokens per minute (TPM)
 
 **Step 3 - Get the SDK:** To use this getting started guide, you must have Python already installed. Then install the relevant software depending on the APIs you are using.
 
+For both APIs, choose the OpenAI SDK tab.
+
 ------
-#### [ Responses API ]
+#### [ OpenAI SDK ]
 
 ```
 pip install openai
@@ -196,7 +207,10 @@ pip install openai
 
 ------
 
-**Step 4 - Set environment variables:** Configure your environment to use the API key for authentication.
+### Step 4 - Set environment variables
+<a name="model-card-openai-gpt-56-sol-sample-code-environment"></a>
+
+Configure your environment to use the API key for authentication.
 
 ------
 #### [ bedrock-mantle ]
@@ -219,10 +233,18 @@ OPENAI_BASE_URL="https://bedrock-runtime.us-east-1.amazonaws.com/openai/v1"
 **Note**
 On `bedrock-runtime`, name a cross-Region inference profile as the model — `us.openai.gpt-5.6-sol` or `global.openai.gpt-5.6-sol`. This model is not available for in-Region inference on that endpoint. Your IAM identity also needs `bedrock:InvokeModel` on your account's default project (`arn:aws:bedrock:{region}:{account-id}:project/default`) in addition to the inference profile.
 
-**Step 5 - Run your first inference request:** Save the file as `bedrock-first-request.py`
+### Step 5 - Run your first inference request
+<a name="model-card-openai-gpt-56-sol-sample-code-request"></a>
+
+Save the file as `bedrock-first-request.py`
+
+#### bedrock-mantle
+<a name="model-card-openai-gpt-56-sol-sample-code-mantle"></a>
+
+Use the settings from [Step 4 - Set environment variables](#model-card-openai-gpt-56-sol-sample-code-environment). Choose the `bedrock-mantle` tab. The Chat tab uses the Chat Completions API.
 
 ------
-#### [ bedrock-mantle ]
+#### [ Responses API ]
 
 ```
 from openai import OpenAI
@@ -237,7 +259,29 @@ print(response)
 ```
 
 ------
-#### [ bedrock-runtime ]
+#### [ Chat ]
+
+```
+from openai import OpenAI
+
+client = OpenAI()
+
+response = client.chat.completions.create(
+    model="openai.gpt-5.6-sol",
+    messages=[{"role": "user", "content": "Can you explain the features of Amazon Bedrock?"}]
+)
+print(response)
+```
+
+------
+
+#### bedrock-runtime: OpenAI SDK
+<a name="model-card-openai-gpt-56-sol-sample-code-runtime-openai"></a>
+
+Use the settings from [Step 4 - Set environment variables](#model-card-openai-gpt-56-sol-sample-code-environment). Choose the `bedrock-runtime` tab. Send your request with the Responses API.
+
+------
+#### [ Responses API ]
 
 ```
 from openai import OpenAI

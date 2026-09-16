@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkCLT/CLTReference_GetResultsCommand.html
 ---
 
+**Amazon Mechanical Turk will permanently close on September 30, 2026.** For Workers and Requesters currently using the service, visit our [Amazon Mechanical Turk help page](https://www.mturk.com/help) to learn how you can prepare for this closure.
+
 |  |
 | --- |
 | **This software is not currently supported by Amazon Mechanical Turk**<br />The Amazon Mechanical Turk Command Line Tools (CLT) are not currently maintained by Amazon Mechanical Turk. If you would still like to use Amazon Mechanical Turk from the command line, use the `mturk` command in the AWS Command Line Interface (CLI). For more information, see the `mturk` section of the [ AWS CLI Command Reference ](https://docs.aws.amazon.com/cli/latest/reference/mturk/index.html).  |
@@ -10,12 +12,12 @@ source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkCLT/CLTRefere
 <a name="CLTReference_GetResultsCommand"></a>
 
 ## Description
-<a name="w2aab9c37b2"></a>
+<a name="w2aac11c37b2"></a>
 
  The `getResults` command retrieves the results of HITs submitted to Amazon Mechanical Turk. You must supply the name of a file that contains the IDs of the HITs. You can get this file from a call to [loadHITs](CLTReference_LoadHITsCommand.md).
 
 ## Arguments
-<a name="w2aab9c37b4"></a>
+<a name="w2aac11c37b4"></a>
 
  The following table describes the arguments for the `getResults` command.
 
@@ -30,12 +32,12 @@ source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkCLT/CLTRefere
  This command creates an output file that contains the results of submitted HITs. The file contains all data related to the submitted HITs and assignments. Each HIT in this file has a link to your **Manage HITs** page on the [Requester website](http://requester.mturk.com/mturk/dashboard). Use these links to manually reject assignments, pay bonuses, or send emails to Workers.
 
 ## Example
-<a name="w2aab9c37b6"></a>
+<a name="w2aac11c37b6"></a>
 
  The following examples for Unix and Windows show how to use the `getResults` command.
 
 ### Unix
-<a name="w2aab9c37b6b4"></a>
+<a name="w2aac11c37b6b4"></a>
 
  The following example demonstrates how to call this command from Unix.
 
@@ -44,7 +46,7 @@ source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkCLT/CLTRefere
 ```
 
 ### Windows
-<a name="w2aab9c37b6b6"></a>
+<a name="w2aac11c37b6b6"></a>
 
  The following example demonstrates how to call this command from Microsoft Windows.
 
@@ -53,7 +55,7 @@ getResults -successfile survey.success -outputfile survey.results
 ```
 
 ## Output
-<a name="w2aab9c37b8"></a>
+<a name="w2aac11c37b8"></a>
 
 This example writes the results to the survey.results file and produces output similar to the following:
 
@@ -79,7 +81,7 @@ Assignments completed: 30/30 (100%)
 ```
 
 ## Related Commands
-<a name="w2aab9c37c10"></a>
+<a name="w2aac11c37c10"></a>
 
 +  [approveWork](CLTReference_ApproveWorkCommand.md)
 +  [rejectWork](CLTReference_RejectWorkCommand.md)

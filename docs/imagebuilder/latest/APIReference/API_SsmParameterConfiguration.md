@@ -24,7 +24,7 @@ Pattern: `^[0-9]{12}$`
 Required: No
 
  ** dataType **   <a name="imagebuilder-Type-SsmParameterConfiguration-dataType"></a>
-The data type specifies what type of value the Parameter contains. We recommend that you use data type `aws:ec2:image`.
+The type of value the parameter contains. We recommend the `aws:ec2:image` data type.
 Type: String
 Valid Values: `text | aws:ec2:image`
 Required: No

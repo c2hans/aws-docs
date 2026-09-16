@@ -35,6 +35,7 @@ Required: Yes
  ** testId **   <a name="ngresiliencehub-Type-Test-testId"></a>
 The unique identifier of the test.
 Type: String
+Length Constraints: Minimum length of 1.
 Required: Yes
 
  ** testTemplateArn **   <a name="ngresiliencehub-Type-Test-testTemplateArn"></a>
@@ -72,8 +73,8 @@ Required: No
  ** roleName **   <a name="ngresiliencehub-Type-Test-roleName"></a>
 The name of the IAM execution role used to run the test.
 Type: String
-Length Constraints: Minimum length of 2. Maximum length of 60.
-Pattern: `[A-Za-z0-9][A-Za-z0-9_\-]{1,59}`
+Length Constraints: Minimum length of 1. Maximum length of 576.
+Pattern: `([A-Za-z0-9_+=,.@\-]+/)*[A-Za-z0-9_+=,.@\-]+`
 Required: No
 
  ** stopConditions **   <a name="ngresiliencehub-Type-Test-stopConditions"></a>

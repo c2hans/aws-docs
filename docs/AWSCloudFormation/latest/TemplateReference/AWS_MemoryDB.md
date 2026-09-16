@@ -12,5 +12,6 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::MemoryDB::Cluster](aws-resource-memorydb-cluster.md)
 + [AWS::MemoryDB::MultiRegionCluster](aws-resource-memorydb-multiregioncluster.md)
 + [AWS::MemoryDB::ParameterGroup](aws-resource-memorydb-parametergroup.md)
++ [AWS::MemoryDB::Snapshot](aws-resource-memorydb-snapshot.md)
 + [AWS::MemoryDB::SubnetGroup](aws-resource-memorydb-subnetgroup.md)
 + [AWS::MemoryDB::User](aws-resource-memorydb-user.md)

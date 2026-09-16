@@ -14,23 +14,23 @@ If you have an AMI with a previous version of the Slurm software installed on it
 
 1.  Connect to the same temporary instance where you installed the AWS PCS software.
 
-1.  Download the Slurm installer software. The Slurm installer is packaged into a compressed tarball (`.tar.gz`) file. To download the latest *stable* version, use the following command. Substitute {{region}} with the AWS Region of your temporary instance, such as `us-east-1`.
+1.  Download the Slurm installer software. The Slurm installer is packaged into a compressed tarball (`.tar.gz`) file. To download the latest *stable* version, use the following command. Substitute {{us-east-1}} with the AWS Region of your temporary instance.
 
    ```
-   curl https://aws-pcs-repo-{{region}}.s3.{{region}}.amazonaws.com/aws-pcs-slurm/aws-pcs-slurm-25.11-installer-25.11.8-1.tar.gz \
-        -o aws-pcs-slurm-25.11-installer-25.11.8-1.tar.gz
+   curl https://aws-pcs-repo-{{us-east-1}}.s3.{{us-east-1}}.amazonaws.com/aws-pcs-slurm/aws-pcs-slurm-26.05-installer-26.05.4-1.tar.gz \
+        -o aws-pcs-slurm-26.05-installer-26.05.4-1.tar.gz
    ```
 
-   You can also get the latest version by replacing the version number with `latest` in the preceding command (for example: `aws-pcs-slurm-25.11-installer-latest.tar.gz`). For a complete list of available versions with checksums, see [Verify installers using a checksum](working-with_ami_installers.md#working-with_ami_installers_verify).
+   You can also get the latest version by replacing the version number with `latest` in the preceding command (for example: `aws-pcs-slurm-26.05-installer-latest.tar.gz`). For a complete list of available versions with checksums, see [Verify installers using a checksum](working-with_ami_installers.md#working-with_ami_installers_verify).
 **Note**
 This might change in future releases of the Slurm installer software.
 
 1. (Optional) Verify the authenticity and integrity of the Slurm installer tarball. We recommend that you do this to verify the identity of the software publisher and to check that the file has not been altered or corrupted since it was published.
 
-   1. Download the public GPG key for AWS PCS and import it into your keyring. Substitute {{region}} with the AWS Region where you launched your temporary instance. The command should return a key value. Record the key value; you use it in the next step.
+   1. Download the public GPG key for AWS PCS and import it into your keyring. Substitute {{us-east-1}} with the AWS Region where you launched your temporary instance. The command should return a key value. Record the key value; you use it in the next step.
 
       ```
-      wget https://aws-pcs-repo-public-keys-{{region}}.s3.{{region}}.amazonaws.com/aws-pcs-public-key.pub && \
+      wget https://aws-pcs-repo-public-keys-{{us-east-1}}.s3.{{us-east-1}}.amazonaws.com/aws-pcs-public-key.pub && \
           gpg --import aws-pcs-public-key.pub
       ```
 
@@ -48,18 +48,18 @@ This might change in future releases of the Slurm installer software.
 **Important**
 Don't run the Slurm installation script if the fingerprint doesn't match. Contact [AWS Support](https://console.aws.amazon.com/support).
 
-   1. Download the signature file and verify the signature of the Slurm installer tarball file. Replace {{region}} with the AWS Region where you launched your temporary instance, such as `us-east-1`.
+   1. Download the signature file and verify the signature of the Slurm installer tarball file. Replace {{us-east-1}} with the AWS Region where you launched your temporary instance.
 
       ```
-      wget https://aws-pcs-repo-{{region}}.s3.{{region}}.amazonaws.com/aws-pcs-slurm/aws-pcs-slurm-25.11-installer-25.11.8-1.tar.gz.sig && \
-           gpg --verify ./aws-pcs-slurm-25.11-installer-25.11.8-1.tar.gz.sig
+      wget https://aws-pcs-repo-{{us-east-1}}.s3.{{us-east-1}}.amazonaws.com/aws-pcs-slurm/aws-pcs-slurm-26.05-installer-26.05.4-1.tar.gz.sig && \
+           gpg --verify ./aws-pcs-slurm-26.05-installer-26.05.4-1.tar.gz.sig
       ```
 
       The output should be similar to the following:
 
       ```
-      gpg: assuming signed data in './aws-pcs-slurm-25.11-installer-25.11.8-1.tar.gz'
-      gpg: Signature made Thu 26 Mar 2026 08:57:11 AM UTC using RSA key ID ECC0AE5C
+      gpg: assuming signed data in './aws-pcs-slurm-26.05-installer-26.05.4-1.tar.gz'
+      gpg: Signature made Thu 03 Sep 2026 09:05:02 AM UTC using RSA key ID ECC0AE5C
       gpg: Good signature from "AWS PCS Packages (AWS PCS Packages)"
       gpg: WARNING: This key is not certified with a trusted signature!
       gpg:          There is no indication that the signature belongs to the owner.
@@ -74,8 +74,8 @@ Don't run the Slurm installation script if the fingerprint doesn't match. Contac
 1. Extract the files from the compressed `.tar.gz` file and navigate into the extracted directory.
 
    ```
-   tar -xf aws-pcs-slurm-25.11-installer-25.11.8-1.tar.gz && \
-       cd aws-pcs-slurm-25.11-installer
+   tar -xf aws-pcs-slurm-26.05-installer-26.05.4-1.tar.gz && \
+       cd aws-pcs-slurm-26.05-installer
    ```
 
 1. Install Slurm. The installer downloads, compiles, and installs Slurm and its dependencies. It takes several minutes, depending on the specifications of the temporary instance you selected.
@@ -87,13 +87,13 @@ Don't run the Slurm installation script if the fingerprint doesn't match. Contac
 1. Check the scheduler version file to confirm the installation.
 
    ```
-   cat /opt/aws/pcs/scheduler/slurm-25.11/version
+   cat /opt/aws/pcs/scheduler/slurm-26.05/version
    ```
 
    The output should be similar to the following:
 
    ```
-   SLURM_INSTALL_DATE='Thu Mar 26 15:15:37 UTC 2026'
-   SLURM_VERSION='25.11.8'
+   SLURM_INSTALL_DATE='Thu Sep  3 15:15:37 UTC 2026'
+   SLURM_VERSION='26.05.4'
    PCS_SLURM_RELEASE='1'
    ```

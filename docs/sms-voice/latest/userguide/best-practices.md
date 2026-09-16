@@ -294,6 +294,8 @@ The phone numbers that you use for SMS or MMS messages—including short codes, 
 
 In some countries, you can also use multiple types of phone numbers for added redundancy. For example, in the United States, you can request short codes, 10DLC numbers, and toll-free numbers. Each of these phone number types takes a different route to the recipient. Having multiple phone number types available—either in the same AWS Region or spread across multiple AWS Regions—provides an additional layer of redundancy, which can help improve resiliency.
 
+You can further improve delivery resilience by configuring phone pools that contain multiple origination identities. The service monitors delivery receipts (DLRs) for each identity in a pool and automatically routes messages away from identities that are experiencing delivery failures. When the affected identity recovers, normal routing resumes without manual intervention. For the broadest coverage, include different number types in the same pool, such as a short code and a toll-free number. For more information about phone pools, see [Phone pools in AWS End User Messaging SMS](phone-pool.md).
+
 ### Handling deactivated phone numbers
 <a name="channels-sms-best-practices-deactivated"></a>
 

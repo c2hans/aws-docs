@@ -95,7 +95,7 @@ The Amazon Resource Name (ARN) of the distribution configuration that defines an
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `EnhancedImageMetadataEnabled`  <a name="cfn-imagebuilder-image-enhancedimagemetadataenabled"></a>
-Collects additional information about the image being created, including the operating system (OS) version and package list. This information is used to enhance the overall experience of using EC2 Image Builder. Enabled by default.
+Specifies whether to collect additional information about the image being created, including the operating system (OS) version and package list. Defaults to `true`.
 *Required*: No
 *Type*: Boolean
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

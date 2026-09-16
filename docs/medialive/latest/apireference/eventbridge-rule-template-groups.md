@@ -285,7 +285,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/medialive-2017-10-14/ListEventBridgeRuleTemplateGroups)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/medialive-2017-10-14/ListEventBridgeRuleTemplateGroups)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/medialive-2017-10-14/ListEventBridgeRuleTemplateGroups)
-+ [AWS SDK for Python](/goto/boto3/medialive-2017-10-14/ListEventBridgeRuleTemplateGroups)
++ [AWS SDK for Python (Boto3)](/goto/boto3/medialive-2017-10-14/ListEventBridgeRuleTemplateGroups)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/medialive-2017-10-14/ListEventBridgeRuleTemplateGroups)
 
 ### CorsEventbridge\_rule\_template\_groups
@@ -298,7 +298,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/medialive-2017-10-14/CorsEventbridge_rule_template_groups)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/medialive-2017-10-14/CorsEventbridge_rule_template_groups)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/medialive-2017-10-14/CorsEventbridge_rule_template_groups)
-+ [AWS SDK for Python](/goto/boto3/medialive-2017-10-14/CorsEventbridge_rule_template_groups)
++ [AWS SDK for Python (Boto3)](/goto/boto3/medialive-2017-10-14/CorsEventbridge_rule_template_groups)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/medialive-2017-10-14/CorsEventbridge_rule_template_groups)
 
 ### CreateEventBridgeRuleTemplateGroup
@@ -311,5 +311,5 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/medialive-2017-10-14/CreateEventBridgeRuleTemplateGroup)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/medialive-2017-10-14/CreateEventBridgeRuleTemplateGroup)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/medialive-2017-10-14/CreateEventBridgeRuleTemplateGroup)
-+ [AWS SDK for Python](/goto/boto3/medialive-2017-10-14/CreateEventBridgeRuleTemplateGroup)
++ [AWS SDK for Python (Boto3)](/goto/boto3/medialive-2017-10-14/CreateEventBridgeRuleTemplateGroup)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/medialive-2017-10-14/CreateEventBridgeRuleTemplateGroup)

@@ -121,5 +121,5 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/mediaconvert-2017-08-29/TagResource)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/mediaconvert-2017-08-29/TagResource)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/mediaconvert-2017-08-29/TagResource)
-+ [AWS SDK for Python](/goto/boto3/mediaconvert-2017-08-29/TagResource)
++ [AWS SDK for Python (Boto3)](/goto/boto3/mediaconvert-2017-08-29/TagResource)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/mediaconvert-2017-08-29/TagResource)

@@ -22,12 +22,18 @@ Valid Range for `VOICE`: Minimum value of 1. Maximum value of 1.
 Valid Range for `CHAT`: Minimum value of 1. Maximum value of 10.
 Valid Range for `TASK`: Minimum value of 1. Maximum value of 10.
 Type: Integer
-Valid Range: Minimum value of 1. Maximum value of 10.
-Required: Yes
+Valid Range: Minimum value of 0. Maximum value of 10.
+Required: No
 
  ** CrossChannelBehavior **   <a name="connect-Type-MediaConcurrency-CrossChannelBehavior"></a>
 Defines the cross-channel routing behavior for each channel that is enabled for this Routing Profile. For example, this allows you to offer an agent a different contact from another channel when they are currently working with a contact from a Voice channel.
 Type: [CrossChannelBehavior](API_CrossChannelBehavior.md) object
+Required: No
+
+ ** WorkloadTypeConcurrencies **   <a name="connect-Type-MediaConcurrency-WorkloadTypeConcurrencies"></a>
+Defines the list of workload type concurrency configurations for a channel. When provided, enables granular concurrency control based on workload type values.
+Type: Array of [WorkloadTypeConcurrency](API_WorkloadTypeConcurrency.md) objects
+Array Members: Minimum number of 1 item. Maximum number of 5 items.
 Required: No
 
 ## See Also

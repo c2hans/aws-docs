@@ -45,6 +45,9 @@ Strengthen your website and increase its performance by taking advantage of TLS 
 **Application optimization**
 Easily optimize your distributions for a variety of applications, including WordPress and static websites. Using a distribution to cache and serve your content also reduces the load on your origin, because most requests are served by your distribution and not your instance, container service, load balancer, or bucket.
 
+**Did you know?**
+ You can host a static website on Lightsail using a bucket and a distribution. For more information, see [ Host a static website using an Amazon Lightsail bucket and distribution ](https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lightsail-static-site-hosting-tutorial.html) .
+
 ## Configure your distribution
 <a name="configure-distribution"></a>
 

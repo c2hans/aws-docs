@@ -80,6 +80,13 @@ Content-type: application/json
          "Scope": "string",
          "Service": "string",
          "Tiering": {
+            "CustomTiers": [
+               {
+                  "BeginRangeInclusive": number,
+                  "EndRangeExclusive": number,
+                  "RateValue": number
+               }
+            ],
             "FreeTier": {
                "Activated": boolean
             }
@@ -152,5 +159,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/billingconductor-2021-07-30/ListPricingRules)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/billingconductor-2021-07-30/ListPricingRules)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/billingconductor-2021-07-30/ListPricingRules)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/billingconductor-2021-07-30/ListPricingRules)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/billingconductor-2021-07-30/ListPricingRules)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/billingconductor-2021-07-30/ListPricingRules)

@@ -27,9 +27,9 @@ This chapter describes many of the tasks that are common to applications using l
 
 **Topics**
 + [Prerequisites for using Amazon Location Service](gs-prereqs.md)
-+ [Using Amazon Location Maps in your application](using-maps.md)
-+ [Searching place and geolocation data using Amazon Location](searching-for-places.md)
-+ [Calculating routes using Amazon Location Service](calculating-routes.md)
++ [Using Maps (V1) in your application](using-maps.md)
++ [Searching place and geolocation data with Places (V1)](searching-for-places.md)
++ [Calculating routes with Routes (V1)](calculating-routes.md)
 + [Geofencing an area of interest using Amazon Location](geofence-an-area.md)
 + [Tag your Amazon Location Service resources](tagging.md)
 + [Grant access to Amazon Location Service](how-to-access.md)

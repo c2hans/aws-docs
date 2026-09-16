@@ -41,7 +41,7 @@ Required: Yes
  ** name **   <a name="deadlinecloud-Type-BatchGetStepItem-name"></a>
 The name of the step.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 64.
+Length Constraints: Minimum length of 1. Maximum length of 512.
 Required: Yes
 
  ** queueId **   <a name="deadlinecloud-Type-BatchGetStepItem-queueId"></a>

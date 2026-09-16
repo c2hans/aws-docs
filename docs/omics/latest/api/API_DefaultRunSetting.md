@@ -123,6 +123,15 @@ Length Constraints: Minimum length of 1. Maximum length of 64.
 Valid Values: `LOCAL | SHARED`
 Required: No
 
+ ** sessionPolicy **   <a name="omics-Type-DefaultRunSetting-sessionPolicy"></a>
+Optional inline IAM policy document to scope down the permissions granted to the run. The policy restricts the permissions of the IAM role specified in `roleArn`. The effective permissions are the intersection of the role's permissions and the session policy. The session policy must be a valid JSON document with a maximum length of 2,048 characters.
+The session policy must include permissions for CloudWatch Logs (`logs:CreateLogStream` and `logs:PutLogEvents`) because the service uses the run's credentials to create and write to log groups.
+For more information about session policies, see [Session policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session) in the *IAM User Guide*.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `[\p{L}\p{M}\p{Z}\p{S}\p{N}\p{P}\t\n\r]+`
+Required: No
+
  ** storageCapacity **   <a name="omics-Type-DefaultRunSetting-storageCapacity"></a>
 The filesystem size in gibibytes (GiB) provisioned for each workflow run and shared by all tasks in that run. Defaults to 1200 GiB if not specified.
 Type: Integer

@@ -36,7 +36,8 @@ Depending on your domain's TLD requirements, other contact field changes might a
 The specific fields that trigger ownership changes vary by TLD and are determined by the domain registry's policies.
 
 **Warning**
-**Service interruption risk:** When an ownership change is triggered, you will receive an authorization email. If you don't respond to this email within 3-15 days (depending on your TLD), your domain registration will be cancelled as required by ICANN, which will interrupt your website and email services.
+**Important:** When an ownership change is triggered, you may receive an authorization email. If you don't respond to this email within 3-15 days (depending on your TLD), we may cancel the change request.
+If the change triggers email verification and you don't confirm within 3-15 days (depending on your TLD), we may suspend your domain, which can interrupt your website and email services.
 Always make sure you can access the registrant contact email address before making any contact changes.
 
 Note the following about changing the owner of a domain:
@@ -93,7 +94,8 @@ You must complete and submit a form to AWS Support. See [Changing the owner of a
 To update contact information for a domain, perform the following procedure.
 
 **Warning**
-**Service interruption risk:** If your contact changes trigger the owner change process, you will receive an authorization email. If you don't respond to this email within 3-15 days (depending on your TLD), your domain registration will be cancelled as required by ICANN, which will interrupt your website and email services.
+**Important:** If your contact changes trigger the owner change process, you may receive an authorization email. If you don't respond to this email within 3-15 days (depending on your TLD), we may cancel the change request.
+If the change triggers email verification and you don't confirm within 3-15 days (depending on your TLD), we may suspend your domain, which can interrupt your website and email services.
 Ensure you can access the registrant contact email address before making any contact changes.
 
 ### Before updating domain contacts
@@ -105,7 +107,7 @@ Before making any changes to your domain's registrant contact information, compl
 
 1. **☐ Understand owner change triggers** - Review [What triggers a domain ownership change?](#domain-update-contacts-who-is-domain-owner) to understand what changes might trigger the owner change process
 
-1. **☐ Plan for potential downtime** - If owner change is triggered, you have 3-15 days to respond to the authorization email or your domain will be cancelled<a name="domain-update-contacts-procedure-new"></a>
+1. **☐ Plan for authorization** - If owner change is triggered, you have 3-15 days to respond to the authorization email or we may cancel the change request<a name="domain-update-contacts-procedure-new"></a>
 
 **To update contact information for a domain**
 

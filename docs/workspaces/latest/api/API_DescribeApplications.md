@@ -37,7 +37,7 @@ Required: No
  ** [ComputeTypeNames](#API_DescribeApplications_RequestSyntax) **   <a name="WorkSpaces-DescribeApplications-request-ComputeTypeNames"></a>
 The compute types supported by the applications.
 Type: Array of strings
-Valid Values: `VALUE | STANDARD | PERFORMANCE | POWER | GRAPHICS | POWERPRO | GENERALPURPOSE_4XLARGE | GENERALPURPOSE_8XLARGE | GRAPHICSPRO | GRAPHICS_G4DN | GRAPHICSPRO_G4DN | GRAPHICS_G6_XLARGE | GRAPHICS_G6_2XLARGE | GRAPHICS_G6_4XLARGE | GRAPHICS_G6_8XLARGE | GRAPHICS_G6_16XLARGE | GRAPHICS_GR6_4XLARGE | GRAPHICS_GR6_8XLARGE | GRAPHICS_G6F_LARGE | GRAPHICS_G6F_XLARGE | GRAPHICS_G6F_2XLARGE | GRAPHICS_G6F_4XLARGE | GRAPHICS_GR6F_4XLARGE`
+Valid Values: `VALUE | STANDARD | PERFORMANCE | POWER | GRAPHICS | POWERPRO | GENERALPURPOSE_4XLARGE | GENERALPURPOSE_8XLARGE | GRAPHICSPRO | GRAPHICS_G4DN | GRAPHICSPRO_G4DN | GRAPHICS_G6_XLARGE | GRAPHICS_G6_2XLARGE | GRAPHICS_G6_4XLARGE | GRAPHICS_G6_8XLARGE | GRAPHICS_G6_16XLARGE | GRAPHICS_GR6_4XLARGE | GRAPHICS_GR6_8XLARGE | GRAPHICS_G6F_LARGE | GRAPHICS_G6F_XLARGE | GRAPHICS_G6F_2XLARGE | GRAPHICS_G6F_4XLARGE | GRAPHICS_GR6F_4XLARGE | GRAPHICS_G7_2XLARGE | GRAPHICS_G7_4XLARGE | GRAPHICS_G7_8XLARGE | GRAPHICS_G7_12XLARGE`
 Required: No
 
  ** [LicenseType](#API_DescribeApplications_RequestSyntax) **   <a name="WorkSpaces-DescribeApplications-request-LicenseType"></a>
@@ -151,5 +151,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/workspaces-2015-04-08/DescribeApplications)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/workspaces-2015-04-08/DescribeApplications)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/workspaces-2015-04-08/DescribeApplications)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/workspaces-2015-04-08/DescribeApplications)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/workspaces-2015-04-08/DescribeApplications)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/workspaces-2015-04-08/DescribeApplications)

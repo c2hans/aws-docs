@@ -768,7 +768,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/mq-2017-11-27/DescribeBroker)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/mq-2017-11-27/DescribeBroker)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/mq-2017-11-27/DescribeBroker)
-+ [AWS SDK for Python](/goto/boto3/mq-2017-11-27/DescribeBroker)
++ [AWS SDK for Python (Boto3)](/goto/boto3/mq-2017-11-27/DescribeBroker)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/mq-2017-11-27/DescribeBroker)
 
 ### UpdateBroker
@@ -781,7 +781,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/mq-2017-11-27/UpdateBroker)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/mq-2017-11-27/UpdateBroker)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/mq-2017-11-27/UpdateBroker)
-+ [AWS SDK for Python](/goto/boto3/mq-2017-11-27/UpdateBroker)
++ [AWS SDK for Python (Boto3)](/goto/boto3/mq-2017-11-27/UpdateBroker)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/mq-2017-11-27/UpdateBroker)
 
 ### DeleteBroker
@@ -794,5 +794,5 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/mq-2017-11-27/DeleteBroker)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/mq-2017-11-27/DeleteBroker)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/mq-2017-11-27/DeleteBroker)
-+ [AWS SDK for Python](/goto/boto3/mq-2017-11-27/DeleteBroker)
++ [AWS SDK for Python (Boto3)](/goto/boto3/mq-2017-11-27/DeleteBroker)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/mq-2017-11-27/DeleteBroker)

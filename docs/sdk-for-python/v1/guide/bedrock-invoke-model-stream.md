@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-python/v1/guide/bedrock-invoke-m
 
 InvokeModelWithResponseStream accepts the same model-native request format as InvokeModel but returns the response as a stream of model-native events, so your application can process output as the model generates it instead of waiting for the complete response. Use it for interactive applications that work in a model's native format. The request and event schemas depend on the selected model.
 
-The following example sends one Amazon Nova 2 Messages API request, prints the reply as the model generates it, and then verifies that the stream completed. For request and response details, see the [invoke\_model\_with\_response\_stream()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/bedrock-runtime/operations/invoke_model_with_response_stream/) API reference.
+The following example sends one Amazon Nova 2 Messages API request, prints the reply as the model generates it, and then verifies that the stream completed. For request and response details, see the [invoke\_model\_with\_response\_stream()](clients/bedrock-runtime/operations/invoke_model_with_response_stream/) API reference.
 
  **Imports**
 

@@ -2,11 +2,13 @@
 source_url: https://docs.aws.amazon.com/location/previous/developerguide/using-maps.html
 ---
 
-# Using Amazon Location Maps in your application
+# Using Maps (V1) in your application
 <a name="using-maps"></a>
 
-**Note**
-We released a new version of the Maps API, see the updated [Maps Developer Guide](https://docs.aws.amazon.com/location/latest/developerguide/maps.html) or [Maps API](https://docs.aws.amazon.com/location/latest/APIReference/API_Operations_Amazon_Location_Service_Maps_V2.html) for revised information.
+**Important**
+**This page documents the previous Maps API (V1). Use it only for existing applications.** The Maps V2 API is the latest version. Use it for all new applications; see the latest [Amazon Location Service Maps](https://docs.aws.amazon.com/location/latest/developerguide/maps.html) developer guide.
+The latest operations are `GetTile`, `GetStyleDescriptor`, `GetStaticMap`, `GetSprites`, and `GetGlyphs`. These operations are under the `geo-maps` namespace. They are exposed as `@aws-sdk/client-geo-maps` for JavaScript and `boto3.client('geo-maps')` for Python.
+The map resources and tutorials described below are previous-generation. Use them only for existing applications.
 
 Amazon Location maps are cost-effective and interactive. You can replace an existing map in your application to save money, or add a new one to display location-based data visually, such as your store location.
 
@@ -17,11 +19,11 @@ Amazon Location Service lets you choose a data provider for map operations by cr
 After you create your resource, you can send requests by using the AWS SDK directly, or by using a library made specifically for rendering maps in your environment.
 
 **Note**
-For an overview of map concepts, see [Learn about Maps resources in Amazon Location Service](map-concepts.md).
+For an overview of map concepts, see [Maps (V1) concepts](map-concepts.md).
 
 **Topics**
 + [Prerequisites for using Amazon Location maps](map-prerequisites.md)
 + [Display a map in your application with Amazon Location](display-map.md)
 + [Drawing data features on a map](drawing-on-a-map.md)
 + [Setting extents for a map using MapLibre](setting-map-extents.md)
-+ [Managing your map resources with Amazon Location](managing-maps.md)
++ [Managing your map resources (V1)](managing-maps.md)

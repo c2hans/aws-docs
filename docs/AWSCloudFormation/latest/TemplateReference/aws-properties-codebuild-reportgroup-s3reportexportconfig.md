@@ -75,7 +75,7 @@ The AWS account identifier of the owner of the Amazon S3 bucket. This allows rep
 + `ZIP`: CodeBuild creates a ZIP file with the raw data in the output bucket.
 *Required*: No
 *Type*: String
-*Allowed values*: `NONE | ZIP`
+*Allowed values*: `ZIP | NONE`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Path`  <a name="cfn-codebuild-reportgroup-s3reportexportconfig-path"></a>

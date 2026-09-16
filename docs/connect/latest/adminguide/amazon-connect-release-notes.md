@@ -17,6 +17,44 @@ Connect Customer Global Resiliency now supports routing contacts to agents acros
 
 To request access to this feature, contact your AWS account team. Unified routing, analytics, and contact search are now enabled by default for all new ACGR instances created on or after September 1, 2026. Existing ACGR instances can opt into this feature set on request. For more details, see [Global routing across ACGR Regions](global-routing-across-acgr-regions.md).
 
+### Amazon Connect Customer now sets concurrency limits by workload type for Tasks and Emails
+<a name="sep26-workload-concurrency"></a>
+
+With Connect Customer, you can now set concurrency and interruption limits for specific kinds of Task and Email work instead of applying one limit to an entire channel. A single channel-level limit forced a tradeoff: set it low to protect agents on complex contacts and you throttle throughput on simple ones; set it high and agents get buried in the hard ones. You can now classify Task and Email contacts into workload types by complexity, priority, or business function, and give each its own limits. For example, agents can take up to 3 simple, low-effort Tasks at once while complex, high-attention Tasks are capped at 1.
+
+On the channels and concurrency page, define your workload types and set each one's limits. For more information, see the [Amazon Connect Administrator Guide](https://docs.aws.amazon.com/connect/latest/adminguide/channels-and-concurrency.html).
+
+Available in all AWS commercial Regions and the AWS GovCloud (US-West) Region where Connect Customer is offered.
+
+### Amazon Connect Customer announces general availability of Agentic CX designer
+<a name="sep26-agentic-cx-designer"></a>
+
+With Connect Customer, you can now build voice and digital customer experiences on Agentic CX designer, a no-code conversational canvas, without the rigid menus that leave complex problems unsolved. On a visual canvas, business teams pair the open-ended conversations of agentic AI with deterministic steps for the moments that must go exactly right, such as authentication, verification, and required disclosures. This handles cases rigid menus never could, like a complex insurance claim or a transaction dispute, while keeping control where it matters. For example, a business team can take an experience from design to production in weeks rather than months.
+
+For more information, see [Agentic CX designer](https://docs.aws.amazon.com/connect/latest/adminguide/acxd.html).
+
+Available in US East (N. Virginia), US West (Oregon), Asia Pacific (Tokyo), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Canada (Central), Europe (Frankfurt), and Europe (London).
+
+### Amazon Connect Customer now supports compact mode on analytics dashboards
+<a name="sep26-compact-mode-dashboards"></a>
+
+With Connect Customer, supervisors can now see more operational data at once without scrolling, using compact mode on analytics dashboards. Compact mode reduces widget size and font and minimizes filters to maximize screen space. For example, a supervisor on a 13-inch laptop can toggle compact mode to view all team agents on a single widget and spot non-adherent agents faster.
+
+On the dashboard page, turn on the Compact mode toggle.
+
+For more information, see [Analytics dashboards](https://docs.aws.amazon.com/connect/latest/adminguide/dashboards.html).
+
+Available in all AWS Regions where Connect Customer is offered.
+
+### Amazon Connect Customer now supports Malay for automated performance evaluations
+<a name="sep26-malay-evaluations"></a>
+
+Connect Customer now supports Malay for generative AI performance evaluations of human and AI agents, so multilingual contact centers can apply a consistent evaluation framework across more of their workforce. Managers specify their evaluation criteria in natural language and receive AI-generated evaluations with justifications.
+
+For more information, see [generative AI performance evaluations](https://docs.aws.amazon.com/connect/latest/adminguide/generative-ai-performance-evaluations.html).
+
+Available in the AWS Regions where Connect Customer performance evaluations are offered.
+
 ## August 2026 Updates
 <a name="aug26-release-notes"></a>
 
@@ -40,6 +78,116 @@ For more information, see [Toggle between table and bar chart](queue-performance
 When you select **Enable persistent connection** for an agent, the agent's softphone maintains its media connection to Connect Customer for a few minutes after login and after each call ends. This enables subsequent calls to connect faster. If the agent remains idle for an extended period of time, the softphone drops the media connection to reduce agent workstation and network resource consumption. This does not impact the agent's ability to receive calls. The media connection is re-established when the agent receives the next call.
 
 To learn more, see [Enable persistent connection](enable-persistent-connection.md).
+
+### Amazon Connect Customer now lets managers chat with their data (Preview)
+<a name="aug26-manager-chat-data"></a>
+
+With Connect Customer, managers can now ask questions about their contact center in plain language and get back the answer, the evidence behind it, and a recommended next step in seconds, instead of digging through dashboards to work out what is driving performance. It searches across more than 150 metrics spanning self-service, agent performance, and queue performance to surface what matters, explain why, and recommend what to do next. For example, a manager can ask which queues are the best candidates for automation and receive a prioritized list with confidence scores and projected impact, based on where handle time and after-contact work run highest.
+
+This capability is in preview. For more information, see [Manager assist in Connect Customer](https://docs.aws.amazon.com/connect/latest/adminguide/manager-assist.html).
+
+Available in all AWS Regions where Connect Customer AI Agents are supported.
+
+### Amazon Connect Customer now automatically refreshes scheduling metrics
+<a name="aug26-scheduling-metrics-refresh"></a>
+
+With Connect Customer, managers now see the impact of a schedule change right away, because schedule metrics on the scheduling page refresh on their own in under a minute instead of requiring a manual refresh. Metrics such as net available headcount and projected service level update automatically as changes are made. For example, when a new team meeting is added for 10 agents from 10 AM to 11 AM, the affected metrics update on their own so managers can make faster, informed decisions throughout the day.
+
+For more information, see [Forecasting, capacity planning, and scheduling](https://docs.aws.amazon.com/connect/latest/adminguide/forecasting-capacity-planning-scheduling.html).
+
+Available in all AWS Regions where Connect Customer agent scheduling is available.
+
+### Amazon Connect Customer now supports unplanned shrinkage in agent schedules
+<a name="aug26-unplanned-shrinkage"></a>
+
+With Connect Customer, managers can now account for unscheduled absences such as late logins or unplanned sick leave, giving a more accurate picture of staffing than a schedule that assumes everyone is present. Managers upload unplanned shrinkage assumptions directly into a schedule and immediately see scheduled headcount, net staffing, and projected service level adjusted for it. For example, if 10% of the agents scheduled at 8 AM next Monday are expected to be unavailable, projected service level falls from 90% to 85%, so managers can proactively address the gap.
+
+On the Published calendar page under Scheduling, upload unplanned shrinkage data from the Actions menu, and scheduling metrics refresh automatically.
+
+For more information, see [Forecasting, capacity planning, and scheduling](https://docs.aws.amazon.com/connect/latest/adminguide/forecasting-capacity-planning-scheduling.html).
+
+Available in all AWS Regions where Connect Customer agent scheduling is available.
+
+### Amazon Connect Customer now supports points-based scoring in performance evaluations
+<a name="aug26-points-based-scoring"></a>
+
+With Connect Customer, managers can now score evaluations by assigning points to each criterion based on its importance to the business, rather than balancing weights that must add up to 100% as in percentage-based scoring. The score is the sum of the points earned, and managers can combine criteria into one question, exclude the call reason from scoring, or award bonus points. For example, an evaluation might award 40 points for resolving the customer's problem, 20 for meeting compliance requirements, and 10 for a proper greeting.
+
+For more information, see [points-based scoring](https://docs.aws.amazon.com/connect/latest/adminguide/about-pointbased-scoring.html).
+
+Available in the AWS Regions where Connect Customer performance evaluations are offered.
+
+### Amazon Connect Customer now lets you update the customer profile on a case
+<a name="aug26-update-case-profile"></a>
+
+With Connect Customer, agents can now change the profile on a case or add one after the case is opened, so case histories stay accurate even when the wrong profile was linked or none was identified at creation. If a case is linked to the wrong customer, agents can update the profile, and for a contact such as a call from a shared phone number, agents can add the profile once the customer is identified. For example, an agent verifying a caller's identity partway through a contact can attach the correct profile once confirmed.
+
+For more information, see [Cases in Connect Customer](https://docs.aws.amazon.com/connect/latest/adminguide/cases.html).
+
+Available in US East (N. Virginia), US West (Oregon), Canada (Central), Europe (Frankfurt), Europe (London), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), and Africa (Cape Town).
+
+### Amazon Connect Customer now supports information extraction for voice and chat conversations
+<a name="aug26-information-extraction"></a>
+
+With Connect Customer, you can now capture key data from voice and chat interactions automatically, reducing manual data entry and freeing agents and supervisors to focus on the customer. Information extraction captures verbatim values such as account numbers, reservation IDs, and product names, as well as derived insights such as reason for contact, resolution provided, and next steps promised. You define conversational analytics rules for what to extract, and because extraction runs on raw content before redaction, you can capture the values you need while still redacting sensitive data. For example, an extracted account number can flow directly into a rule action that creates a case, turning an unstructured conversation into an automated workflow.
+
+For more information, see [Information extraction](https://docs.aws.amazon.com/connect/latest/adminguide/information-extraction.html).
+
+Available in the AWS Regions listed in availability of Connect Customer features by Region.
+
+### Amazon Connect Customer now supports reporting on routing steps and agent proficiencies
+<a name="aug26-routing-steps-reporting"></a>
+
+With Connect Customer, supervisors can now monitor and optimize how contacts are matched to agents, using new dashboard reporting on routing steps and agent proficiencies. Supervisors can filter agents by their assigned proficiencies, group metrics by routing step, and track new metrics such as the number of contacts queued in a routing step. For example, a supervisor who sees a spike in contacts queued at a step requiring highly skilled agents can relax the routing criteria to expand the agent pool and reduce wait times.
+
+For more information, see [Analytics dashboards](https://docs.aws.amazon.com/connect/latest/adminguide/dashboards.html).
+
+Available in all AWS commercial Regions and the AWS GovCloud (US-West) Region where Connect Customer is offered.
+
+### Amazon Connect Customer now supports manual assignment of queued agent-first callbacks
+<a name="aug26-manual-assign-callbacks"></a>
+
+With Connect Customer, agents can now view and self-assign queued agent-first callbacks alongside emails, tasks, and chats, so they can prioritize follow-ups that need immediate attention or where they already have context. No new permissions are required, because the same security profile and routing profile settings that enable manual assignment for emails, tasks, and chats now apply to agent-first callbacks. For example, an agent already familiar with a customer's issue can assign the callback to themselves from the Worklist app, avoiding another handoff.
+
+For more information, see [Set up queued callbacks](https://docs.aws.amazon.com/connect/latest/adminguide/setup-queued-cb.html).
+
+Available in the AWS Regions where Connect Customer manual assignment is offered.
+
+### Amazon Connect Customer launches a performance dashboard for Cases
+<a name="aug26-cases-performance-dashboard"></a>
+
+With Connect Customer, managers can now monitor case volume, resolution trends, and performance against service level agreement (SLA) targets from a dedicated Cases performance dashboard. Managers can compare current and prior-period performance across metrics such as cases created, average resolution time, first-contact resolution percentage, and SLA achievement rate, and analyze trends by case template, assigned user, or assigned queue. For example, a manager can see that the billing team missed more SLA targets for refund cases than in the prior period and prioritize process improvements.
+
+For more information, see [Cases performance dashboard](https://docs.aws.amazon.com/connect/latest/adminguide/cases-performance-dashboard.html).
+
+Available in US East (N. Virginia), US West (Oregon), Canada (Central), Europe (Frankfurt), Europe (London), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), and Africa (Cape Town).
+
+### Amazon Connect Customer now provides schedule adherence metrics on dashboards
+<a name="aug26-schedule-adherence-metrics"></a>
+
+With Connect Customer, supervisors can now see how well agents followed their schedules, using historical adherence metrics on dashboards including scheduled time, adherent time, non-adherent time, and adherence percentage. You can group these metrics by shift activity, such as work, break, or training, to understand adherence patterns across an agent's day. For example, a supervisor reviewing weekly performance can identify that an agent consistently returns late from lunch and follow up with targeted coaching.
+
+For more information, see [Analytics dashboards](https://docs.aws.amazon.com/connect/latest/adminguide/dashboards.html).
+
+Available in all AWS Regions where Connect Customer agent scheduling is available.
+
+### Amazon Connect Customer now supports one-click drill-down on real-time metrics dashboards
+<a name="aug26-dashboard-drill-down"></a>
+
+With Connect Customer, you can now move from a summary view to a pre-filtered routing profile, queue, agent, or routing step widget in one click, without building a new widget. When a widget is grouped by queue or routing profile, a drill-down menu next to each resource creates the filtered widget you choose. For example, a supervisor who sees a spike in queue wait times can drill down to agent activity for that queue and reassign agents to reduce the backlog.
+
+For more information, see [Analytics dashboards](https://docs.aws.amazon.com/connect/latest/adminguide/dashboards.html).
+
+Available in all AWS commercial Regions and the AWS GovCloud (US-West) Region where Connect Customer is offered.
+
+### Amazon Connect Customer now supports capacity planning in 15 or 30 minute intervals
+<a name="aug26-capacity-planning-intervals"></a>
+
+With Connect Customer, workforce planners can now see staffing requirements at the interval level, generating capacity plans in 15-minute or 30-minute intervals across voice, chat, task, and email. Interval-level plans capture how demand shifts through the day, such as a lunchtime surge in chats or an end-of-day change in call volume, so you can staff precisely for each part of the day and reduce over- and under-staffing. For example, a planner can provide shrinkage assumptions and available headcount per interval and see required headcount and net staffing with and without shrinkage applied.
+
+For more information, see [Capacity planning in Connect Customer](https://docs.aws.amazon.com/connect/latest/adminguide/capacity-planning.html).
+
+Available in all AWS Regions where Connect Customer agent scheduling is available.
 
 ## July 2026 Updates
 <a name="jul26-release-notes"></a>
@@ -115,6 +263,24 @@ You can use the exported CSV file to do the following:
 + Analyze case data offline in a spreadsheet application
 
 To use this feature, you must have the **Cases - Export** permission in your security profile. To learn more, see [Export cases to CSV](case-bulk-export.md).
+
+### Amazon Connect Customer now automatically finds example evaluations for coaching
+<a name="jul26-example-evaluations-coaching"></a>
+
+With Connect Customer, managers preparing coaching feedback now get relevant examples of an agent's evaluations surfaced automatically, so they can ground coaching in specific contacts without searching for them by hand. For example, a manager coaching an agent on compliance can immediately see recent evaluations where that criterion was missed and walk through them together.
+
+For more information, see [performance evaluations](https://docs.aws.amazon.com/connect/latest/adminguide/evaluations.html).
+
+Available in the AWS Regions where Connect Customer performance evaluations are offered.
+
+### Amazon Connect Customer Outbound Campaigns now supports digital channels in the Africa (Cape Town) Region
+<a name="jul26-outbound-campaigns-capetown"></a>
+
+With Connect Customer, businesses in the Africa (Cape Town) Region can now run proactive, personalized outreach over digital channels, as Outbound Campaigns support for SMS, WhatsApp, and email is now available in the Region. You configure and manage campaigns through the Connect Customer admin website and Outbound Campaigns APIs, with built-in analytics and event-based triggers. For example, a retail business can segment customers by purchase behavior and start a campaign automatically when a customer completes a purchase or misses an appointment.
+
+For more information, see [Outbound campaigns](https://docs.aws.amazon.com/connect/latest/adminguide/outbound-campaigns.html).
+
+Available in the Africa (Cape Town) Region.
 
 ## June 2026 Updates
 <a name="jun26-release-notes"></a>
@@ -283,6 +449,15 @@ This capability is available in all AWS Regions where Connect Customer Outbound 
 Connect Customer Cases now automatically reassociates cases when duplicate customer profiles are merged through Identity Resolution in Customer Profiles. When the same customer has multiple profiles—such as when they reach out through different channels or provide different contact details—Identity Resolution detects and merges those duplicates, and Cases brings all associated cases together under the unified profile. Agents see a complete case history for each customer without searching across profiles or piecing together history manually.
 
 This feature is available in the following AWS Regions: US East (N. Virginia), US West (Oregon), Canada (Central), Europe (Frankfurt), Europe (London), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), and Africa (Cape Town).
+
+### Amazon Connect Customer AI assistant is now available in the UI builder
+<a name="may26-ai-assistant-ui-builder"></a>
+
+With Connect Customer, you can now create and modify agent workspace views using natural language, as the Connect assistant is now integrated within the UI builder. You describe the view you want, and the assistant generates the corresponding UI components for you to review before saving. For example, a manager can ask for a feedback form with rating and comment fields and get a ready-to-review layout without hand-building each component.
+
+For more information, see [Use the Connect assistant in the UI builder](https://docs.aws.amazon.com/connect/latest/adminguide/connect-assistant-ui-builder.html).
+
+Available in the AWS Regions where the Connect Customer UI builder is offered.
 
 ## April 2026 Updates
 <a name="apr26-release-notes"></a>

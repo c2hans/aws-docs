@@ -82,7 +82,7 @@ The following example uses an account-level subscription policy to forward all l
        "Principal": { "Service": "logs.amazonaws.com" },
        "Action": "sts:AssumeRole",
        "Condition": {
-           "StringLike": { "aws:SourceArn": "arn:aws:logs:{{region}}:123456789012:*" }
+           "ArnLike": { "aws:SourceArn": "arn:aws:logs:{{region}}:123456789012:*" }
         }
       }
    }
@@ -518,7 +518,7 @@ Before you create the Firehose stream, calculate the volume of log data that wil
        "Principal": { "Service": "logs.amazonaws.com" },
        "Action": "sts:AssumeRole",
        "Condition": {
-            "StringLike": {
+            "ArnLike": {
                 "aws:SourceArn": "arn:aws:logs:{{region}}:{{123456789012}}:*"
             }
         }

@@ -320,10 +320,9 @@ When compact mode is on, the following changes apply:
 + Compact mode hides widget descriptions.
 + The last updated time appears next to the widget name as a relative time, for example **Now** or **5 seconds ago**. To see the exact time, pause on it.
 + Compact mode hides widget filters behind a filter icon. Choose the icon to **Show filters** or **Hide filters** for that widget.
-
-The following image shows the filter icon used to show or hide filters for a widget.
-
-![The filter icon used to show or hide filters in compact mode.](https://docs.aws.amazon.com/connect/latest/adminguide/images/dashboard-show-hide-filter-toggle.png)
+![The filter icon used to show or hide widget filters in compact mode.](https://docs.aws.amazon.com/connect/latest/adminguide/images/dashboard-compact-mode-widget-level-show-hide-filter-toggle.png)
++ Compact mode hides dashboard level filters behind a filter icon. Choose the icon to **Show filters** or **Hide filters** for the dashboard.
+![The filter icon used to show or hide dashboard filters in compact mode.](https://docs.aws.amazon.com/connect/latest/adminguide/images/dashboard-compact-mode-show-hide-filter-toggle.png)
 
 ## Widget pagination
 <a name="dashboard-widget-pagination"></a>

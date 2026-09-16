@@ -150,7 +150,7 @@ Before starting either migration option, complete the following prerequisite ste
 
    1. Oracle Automatic Storage Management (ASM)
       + If your workload requires ASM, install and configure standalone ASM on the EC2 instance
-      + Adjust all path parameters in the init file accordingly to use ASM disk groups (e.g., \+DATA, \+FRA)
+      + Adjust all path parameters in the init file accordingly to use ASM disk groups (for example, \+DATA, \+FRA)
       + The migration process is similar for ASM, with path adjustments
 
 1. Set up file transfer mechanism
@@ -218,7 +218,7 @@ Before starting either migration option, complete the following prerequisite ste
    chown -R oracle:oinstall /u01/app/oracle/backup
    ```
 **Note**
-RDS Custom for Oracle uses Oracle Managed Files (OMF) for PDB data files with GUID-based subdirectories (e.g., `/rdsdbdata/db/pdb/RDSCDB_A/{{{GUID}}}/datafile/`). The migration process will automatically create the necessary subdirectory structure on the target. You only need to create the parent directories.
+RDS Custom for Oracle uses Oracle Managed Files (OMF) for PDB data files with GUID-based subdirectories (for example, `/rdsdbdata/db/pdb/RDSCDB_A/{{{GUID}}}/datafile/`). The migration process will automatically create the necessary subdirectory structure on the target. You only need to create the parent directories.
 
    **Storage strategy**: Consider using a separate EBS volume for /u01/app/oracle/backup to easily detach and remove it after migration completes, freeing up storage costs.
 
@@ -878,7 +878,7 @@ While RMAN duplication is running, you can monitor its progress using several me
    ```
 
 **This query shows:**
-   + `opname`: Operation name (e.g., "RMAN: full datafile restore")
+   + `opname`: Operation name (for example, "RMAN: full datafile restore")
    + `sofar`: Blocks processed so far
    + `totalwork`: Total blocks to process
    + `pct_complete`: Percentage complete
@@ -1453,7 +1453,7 @@ RMAN> restore standby controlfile from '/u01/app/oracle/backup/standby.ctl';
 RMAN> alter database mount;
 ```
 
-If data file paths differ (e.g., using ASM), use `SET NEWNAME`:
+If data file paths differ (for example, using ASM), use `SET NEWNAME`:
 
 ```
 RMAN> run {
@@ -2605,7 +2605,7 @@ After successful migration, complete these additional tasks to ensure your self-
 + Test all application functionality thoroughly
 
 **For Multitenant:**
-+ Point your applications to the new EC2 instance PDB service names (e.g., ORCLDB or your specific PDB names)
++ Point your applications to the new EC2 instance PDB service names (for example, ORCLDB or your specific PDB names)
 + Ensure applications connect to the correct PDB, not the CDB
 + Update connection strings to use PDB service names
 + Test all application functionality for each PDB
@@ -2763,7 +2763,7 @@ Before decommissioning the RDS Custom instance:
 **For Multitenant:**
 + Test each PDB independently
 + Verify PDB isolation and resource allocation
-+ Test PDB-specific operations (clone, unplug/plug, etc.)
++ Test PDB-specific operations (clone, unplug/plug, and so on)
 
 **Decommission RDS Custom instance**
 
@@ -2833,7 +2833,7 @@ The following table summarizes the key differences between migrating non-CDB and
 
 |  **Aspect**  |  **Non-CDB migration**  |  **Multitenant (CDB with PDBs) migration**  |
 | --- | --- | --- |
-| **Database type** | Single-instance non-CDB (e.g., ORCL) | CDB (source: RDSCDB, target: ORCL) with CDB$ROOT \+ PDB$SEED \+ one or more PDBs |
+| **Database type** | Single-instance non-CDB (for example, ORCL) | CDB (source: RDSCDB, target: ORCL) with CDB$ROOT \+ PDB$SEED \+ one or more PDBs |
 | **Migration scope** | Single database | Entire CDB (all PDBs included automatically) |
 | **RMAN duplication scope** | Duplicates single database | Duplicates entire CDB (all containers) |
 | **Data Guard scope** | Protects single database | Protects entire CDB (all PDBs included automatically) |

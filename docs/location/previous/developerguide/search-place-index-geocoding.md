@@ -12,7 +12,10 @@ This section guides you through how to send a simple geocoding request, and how 
 ## Geocoding
 <a name="geocoding"></a>
 
-You can submit a simple request to geocode using the `[SearchPlaceIndexForText](https://docs.aws.amazon.com/location-places/latest/APIReference/API_SearchPlaceIndexForText.html)` operation to convert an address to a set of coordinates. A simple request contains the following required parameter:
+You can submit a simple request to geocode using the `[SearchPlaceIndexForText](https://docs.aws.amazon.com/location/previous/APIReference/API_SearchPlaceIndexForText.html)` operation to convert an address to a set of coordinates. A simple request contains the following required parameter:
+
+**Note**
+In the latest API, use `[Geocode](https://docs.aws.amazon.com/location/latest/APIReference/API_geoplaces_Geocode.html)` for addresses and `[SearchText](https://docs.aws.amazon.com/location/latest/APIReference/API_geoplaces_SearchText.html)` for free-form place and business queries, under `geo-places`. Neither requires a place index resource.
 + `Text` – An address, name, city, or region to convert to a set of coordinates. For example, the string `Any Town`.
 
 To specify a maximum number of results per pages, use the following optional parameter:
@@ -23,7 +26,7 @@ You can use the AWS CLI or the Amazon Location APIs.
 ------
 #### [ API ]
 
-The following example is a `[SearchPlaceIndexForText](https://docs.aws.amazon.com/location-places/latest/APIReference/API_SearchPlaceIndexForText.html)` request to search the place index resource, {{ExamplePlaceIndex}}, for an address, name, city or region called {{Any Town}}.
+The following example is a `[SearchPlaceIndexForText](https://docs.aws.amazon.com/location/previous/APIReference/API_SearchPlaceIndexForText.html)` request to search the place index resource, {{ExamplePlaceIndex}}, for an address, name, city or region called {{Any Town}}.
 
 ```
 POST /places/v0/indexes/{{ExamplePlaceIndex}}/search/text
@@ -56,7 +59,7 @@ aws location \
 When geocoding, you can geocode near a given position with the following optional parameter:
 + `BiasPosition` – The position you want to search nearby. This narrows your search by searching for results closest to the given position. Defined as `[longitude, latitude]`
 
-The following example is a `[SearchPlaceIndexForText](https://docs.aws.amazon.com/location-places/latest/APIReference/API_SearchPlaceIndexForText.html)` request to search the place index resource for an address, name, city or region called {{Any Town}} near the position [{{-123.4567}},{{45.6789}}].
+The following example is a `[SearchPlaceIndexForText](https://docs.aws.amazon.com/location/previous/APIReference/API_SearchPlaceIndexForText.html)` request to search the place index resource for an address, name, city or region called {{Any Town}} near the position [{{-123.4567}},{{45.6789}}].
 
 ```
 POST /places/v0/indexes/ExamplePlaceIndex/search/text
@@ -76,7 +79,7 @@ You can geocode within a bounding box to narrow your results to coordinates with
 **Note**
 A request can't contain both the `FilterBBox` and `BiasPosition` parameters. Specifying both parameters in the request returns a `ValidationException` error.
 
-The following example is a `[SearchPlaceIndexForText](https://docs.aws.amazon.com/location-places/latest/APIReference/API_SearchPlaceIndexForText.html)` request to search within a bounding box for an address, name, city or region called {{Any Town}}. The bounding box follows that:
+The following example is a `[SearchPlaceIndexForText](https://docs.aws.amazon.com/location/previous/APIReference/API_SearchPlaceIndexForText.html)` request to search within a bounding box for an address, name, city or region called {{Any Town}}. The bounding box follows that:
 + The longitude of the southwest corner is {{-124.1450}}.
 + The latitude of the southwest corner is {{41.7045}}.
 + The longitude of the northeast corner is {{-124.1387}}.
@@ -101,7 +104,7 @@ Content-type: application/json
 You can geocode within one or more countries you specify by using the following optional parameter:
 + `FilterCountries` – The country or region you want to geocode within. You can define up to 100 countries in one request using a [ISO 3166](https://www.iso.org/iso-3166-country-codes.html) three letter country code. For example, use `AUS` for Australia.
 
-The following example is a `[SearchPlaceIndexForText](https://docs.aws.amazon.com/location-places/latest/APIReference/API_SearchPlaceIndexForText.html)` request to search for an address, name, city or region called {{Any Town}} in Germany and France.
+The following example is a `[SearchPlaceIndexForText](https://docs.aws.amazon.com/location/previous/APIReference/API_SearchPlaceIndexForText.html)` request to search for an address, name, city or region called {{Any Town}} in Germany and France.
 
 ```
 POST /places/v0/indexes/ExamplePlaceIndex/search/text
@@ -119,7 +122,7 @@ Content-type: application/json
 You can filter the categories that are returned in your geocode request by using the following optional parameter:
 + `FilterCategories` – The categories of results you want returned in your query. You can specify up to 5 categories in one request. You can find the list of Amazon Location Service categories in the [Categories](category-filtering.md) section. For example, you can specify `Hotel` to specify only returning hotels in your query.
 
-The following example is a `[SearchPlaceIndexForText](https://docs.aws.amazon.com/location-places/latest/APIReference/API_SearchPlaceIndexForText.html)` request to search for an coffee shop called {{Hometown Coffee}} in the United States.
+The following example is a `[SearchPlaceIndexForText](https://docs.aws.amazon.com/location/previous/APIReference/API_SearchPlaceIndexForText.html)` request to search for an coffee shop called {{Hometown Coffee}} in the United States.
 
 ```
 POST /places/v0/indexes/ExamplePlaceIndex/search/text
@@ -158,7 +161,7 @@ Content-type: application/json
 <a name="geocoding-example-response"></a>
 
 **Example**
-The following is an example response when you call the `[SearchPlaceIndexForText](https://docs.aws.amazon.com/location-places/latest/APIReference/API_SearchPlaceIndexForText.html)` operation from the Amazon Location Places APIs. The results include relevant [places](https://docs.aws.amazon.com/location-places/latest/APIReference/API_Place.html) and the request [summary](https://docs.aws.amazon.com/location-places/latest/APIReference/API_SearchPlaceIndexForTextSummary.html). Two responses are shown, based on selecting Esri or HERE as the partner.
+The following is an example response when you call the `[SearchPlaceIndexForText](https://docs.aws.amazon.com/location/previous/APIReference/API_SearchPlaceIndexForText.html)` operation from the Amazon Location Places APIs. The results include relevant [places](https://docs.aws.amazon.com/location/previous/APIReference/API_Place.html) and the request [summary](https://docs.aws.amazon.com/location/previous/APIReference/API_SearchPlaceIndexForTextSummary.html). Two responses are shown, based on selecting Esri or HERE as the partner.
 
 ```
 POST /places/v0/indexes/ExamplePlaceIndex/search/text

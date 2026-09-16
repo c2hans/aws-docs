@@ -910,6 +910,29 @@ suspend fun listNameSpaces(): ArrayList<String> {
 ## Actions
 <a name="actions"></a>
 
+### `DeleteAlarmMuteRule`
+<a name="cloudwatch_DeleteAlarmMuteRule_kotlin_1_topic"></a>
+
+The following code example shows how to use `DeleteAlarmMuteRule`.
+
+**SDK for Kotlin**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
+
+```
+suspend fun deleteAlarmMuteRule(muteRuleName: String) {
+    val request =
+        DeleteAlarmMuteRuleRequest {
+            alarmMuteRuleName = muteRuleName
+        }
+
+    CloudWatchClient.fromEnvironment { region = "us-east-1" }.use { cwClient ->
+        cwClient.deleteAlarmMuteRule(request)
+        println("Successfully deleted alarm mute rule $muteRuleName")
+    }
+}
+```
++  For API details, see [DeleteAlarmMuteRule](https://sdk.amazonaws.com/kotlin/api/latest/index.html) in *AWS SDK for Kotlin API reference*.
+
 ### `DeleteAlarms`
 <a name="cloudwatch_DeleteAlarms_kotlin_1_topic"></a>
 
@@ -990,6 +1013,55 @@ suspend fun deleteDashboard(dashboardName: String) {
 }
 ```
 +  For API details, see [DeleteDashboards](https://sdk.amazonaws.com/kotlin/api/latest/index.html) in *AWS SDK for Kotlin API reference*.
+
+### `DescribeAlarmContributors`
+<a name="cloudwatch_DescribeAlarmContributors_kotlin_1_topic"></a>
+
+The following code example shows how to use `DescribeAlarmContributors`.
+
+**SDK for Kotlin**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
+
+```
+suspend fun describeAlarmContributors(alarmNameVal: String): List<AlarmContributor> {
+    val contributors = mutableListOf<AlarmContributor>()
+
+    CloudWatchClient.fromEnvironment { region = "us-east-1" }.use { cwClient ->
+        var token: String? = null
+        do {
+            val response =
+                cwClient.describeAlarmContributors(
+                    DescribeAlarmContributorsRequest {
+                        alarmName = alarmNameVal
+                        nextToken = token
+                    },
+                )
+
+            response.alarmContributors?.let { contributors.addAll(it) }
+            token = response.nextToken
+        } while (token != null)
+
+        if (contributors.isEmpty()) {
+            println(
+                "No contributors yet. The query matched no series, which usually means no " +
+                    "OTel metrics with these labels have arrived",
+            )
+        }
+
+        contributors.forEach { contributor ->
+            val labels =
+                contributor.contributorAttributes
+                    ?.entries
+                    ?.sortedBy { it.key }
+                    ?.joinToString(", ") { "${it.key}=${it.value}" }
+            println("${contributor.contributorId}: $labels")
+            println("  reason: ${contributor.stateReason}")
+        }
+    }
+    return contributors
+}
+```
++  For API details, see [DescribeAlarmContributors](https://sdk.amazonaws.com/kotlin/api/latest/index.html) in *AWS SDK for Kotlin API reference*.
 
 ### `DescribeAlarmHistory`
 <a name="cloudwatch_DescribeAlarmHistory_kotlin_1_topic"></a>
@@ -1191,6 +1263,34 @@ suspend fun enableActions(alarm: String) {
 ```
 +  For API details, see [EnableAlarmActions](https://sdk.amazonaws.com/kotlin/api/latest/index.html) in *AWS SDK for Kotlin API reference*.
 
+### `GetAlarmMuteRule`
+<a name="cloudwatch_GetAlarmMuteRule_kotlin_1_topic"></a>
+
+The following code example shows how to use `GetAlarmMuteRule`.
+
+**SDK for Kotlin**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
+
+```
+suspend fun getAlarmMuteRule(muteRuleName: String): GetAlarmMuteRuleResponse {
+    CloudWatchClient.fromEnvironment { region = "us-east-1" }.use { cwClient ->
+        val response =
+            cwClient.getAlarmMuteRule(
+                GetAlarmMuteRuleRequest {
+                    alarmMuteRuleName = muteRuleName
+                },
+            )
+
+        println("Mute rule ${response.name} is ${response.status?.value}")
+        println("  ARN: ${response.alarmMuteRuleArn}")
+        println("  schedule: ${response.rule?.schedule?.expression} for ${response.rule?.schedule?.duration}")
+        response.muteTargets?.alarmNames?.let { println("  muted alarms: ${it.joinToString(", ")}") }
+        return response
+    }
+}
+```
++  For API details, see [GetAlarmMuteRule](https://sdk.amazonaws.com/kotlin/api/latest/index.html) in *AWS SDK for Kotlin API reference*.
+
 ### `GetMetricData`
 <a name="cloudwatch_GetMetricData_kotlin_1_topic"></a>
 
@@ -1358,6 +1458,68 @@ suspend fun getAndOpenMetricImage(fileName: String) {
 ```
 +  For API details, see [GetMetricWidgetImage](https://sdk.amazonaws.com/kotlin/api/latest/index.html) in *AWS SDK for Kotlin API reference*.
 
+### `GetOTelEnrichment`
+<a name="cloudwatch_GetOTelEnrichment_kotlin_1_topic"></a>
+
+The following code example shows how to use `GetOTelEnrichment`.
+
+**SDK for Kotlin**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
+
+```
+suspend fun getOTelEnrichmentStatus(): OTelEnrichmentStatus? {
+    CloudWatchClient.fromEnvironment { region = "us-east-1" }.use { cwClient ->
+        val response = cwClient.getOTelEnrichment(GetOTelEnrichmentRequest {})
+        val status = response.status
+        when (status) {
+            is OTelEnrichmentStatus.Running ->
+                println("OTel enrichment is running. Vended metrics are queryable with PromQL")
+            is OTelEnrichmentStatus.Stopped ->
+                println("OTel enrichment is stopped. Start it to enrich vended metrics")
+            else -> println("OTel enrichment status is ${status?.value}")
+        }
+        return status
+    }
+}
+```
++  For API details, see [GetOTelEnrichment](https://sdk.amazonaws.com/kotlin/api/latest/index.html) in *AWS SDK for Kotlin API reference*.
+
+### `ListAlarmMuteRules`
+<a name="cloudwatch_ListAlarmMuteRules_kotlin_1_topic"></a>
+
+The following code example shows how to use `ListAlarmMuteRules`.
+
+**SDK for Kotlin**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
+
+```
+suspend fun listAlarmMuteRules(alarmNameVal: String? = null): List<AlarmMuteRuleSummary> {
+    val summaries = mutableListOf<AlarmMuteRuleSummary>()
+
+    CloudWatchClient.fromEnvironment { region = "us-east-1" }.use { cwClient ->
+        var token: String? = null
+        do {
+            val response =
+                cwClient.listAlarmMuteRules(
+                    ListAlarmMuteRulesRequest {
+                        alarmName = alarmNameVal
+                        nextToken = token
+                    },
+                )
+
+            response.alarmMuteRuleSummaries?.let { summaries.addAll(it) }
+            token = response.nextToken
+        } while (token != null)
+
+        summaries.forEach { summary ->
+            println("${summary.alarmMuteRuleArn} (${summary.status?.value})")
+        }
+    }
+    return summaries
+}
+```
++  For API details, see [ListAlarmMuteRules](https://sdk.amazonaws.com/kotlin/api/latest/index.html) in *AWS SDK for Kotlin API reference*.
+
 ### `ListDashboards`
 <a name="cloudwatch_ListDashboards_kotlin_1_topic"></a>
 
@@ -1409,6 +1571,60 @@ suspend fun listMets(namespaceVal: String?): ArrayList<String>? {
 }
 ```
 +  For API details, see [ListMetrics](https://sdk.amazonaws.com/kotlin/api/latest/index.html) in *AWS SDK for Kotlin API reference*.
+
+### `PutAlarmMuteRule`
+<a name="cloudwatch_PutAlarmMuteRule_kotlin_1_topic"></a>
+
+The following code example shows how to use `PutAlarmMuteRule`.
+
+**SDK for Kotlin**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
+
+```
+suspend fun putAlarmMuteRule(
+    muteRuleName: String,
+    expressionVal: String,
+    durationVal: String,
+    alarmNamesVal: List<String>,
+    timezoneVal: String = "America/Los_Angeles",
+) {
+    // For a recurring window, use a five-field cron expression,
+    // cron(Minutes Hours Day-of-month Month Day-of-week), such as cron(0 2 * * SUN).
+    // Note that this is five fields, not the six that Amazon EventBridge uses. For a
+    // one-time window, use at(yyyy-MM-ddThh:mm), such as at(2026-09-05T02:00). The
+    // duration is in ISO 8601 duration format, from PT1M (one minute) to P15D (15 days).
+    val scheduleOb =
+        Schedule {
+            expression = expressionVal
+            duration = durationVal
+            timezone = timezoneVal
+        }
+
+    val request =
+        PutAlarmMuteRuleRequest {
+            name = muteRuleName
+            description = "A mute rule created by the Kotlin SDK"
+            rule =
+                Rule {
+                    schedule = scheduleOb
+                }
+            // Target up to 100 alarms. If muteTargets is omitted, the rule applies to
+            // every alarm in the account.
+            if (alarmNamesVal.isNotEmpty()) {
+                muteTargets =
+                    MuteTargets {
+                        alarmNames = alarmNamesVal
+                    }
+            }
+        }
+
+    CloudWatchClient.fromEnvironment { region = "us-east-1" }.use { cwClient ->
+        cwClient.putAlarmMuteRule(request)
+        println("Successfully put alarm mute rule $muteRuleName")
+    }
+}
+```
++  For API details, see [PutAlarmMuteRule](https://sdk.amazonaws.com/kotlin/api/latest/index.html) in *AWS SDK for Kotlin API reference*.
 
 ### `PutAnomalyDetector`
 <a name="cloudwatch_PutAnomalyDetector_kotlin_1_topic"></a>
@@ -1490,6 +1706,47 @@ The following code example shows how to use `PutMetricAlarm`.
 
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
+Create an alarm that evaluates a PromQL query against OpenTelemetry metrics.
+
+```
+suspend fun putPromQlMetricAlarm(
+    alarmNameVal: String,
+    queryVal: String,
+    evaluationIntervalVal: Int = 60,
+    pendingPeriodVal: Int = 300,
+    recoveryPeriodVal: Int = 120,
+) {
+    // The comparison belongs in the query itself. A PromQL alarm has no separate
+    // threshold, comparison operator, statistic, period, or evaluation periods.
+    //
+    // Note that the Kotlin SDK spells this AlarmPromQlCriteria, with a lowercase l in
+    // "Ql". Every other AWS SDK spells it PromQL, so don't be thrown by the difference
+    // when comparing this example against the other language versions.
+    val promQlCriteria =
+        AlarmPromQlCriteria {
+            query = queryVal
+            pendingPeriod = pendingPeriodVal
+            recoveryPeriod = recoveryPeriodVal
+        }
+
+    // EvaluationCriteria is a union and is mutually exclusive with the classic
+    // metricName and metrics parameters. When you use it, you must also set
+    // evaluationInterval.
+    val request =
+        PutMetricAlarmRequest {
+            alarmName = alarmNameVal
+            alarmDescription = "A PromQL alarm created by the Kotlin SDK"
+            evaluationCriteria = EvaluationCriteria.PromQlCriteria(promQlCriteria)
+            evaluationInterval = evaluationIntervalVal
+        }
+
+    CloudWatchClient.fromEnvironment { region = "us-east-1" }.use { cwClient ->
+        cwClient.putMetricAlarm(request)
+        println("Successfully created PromQL alarm $alarmNameVal for query $queryVal")
+    }
+}
+```
+Create an alarm that evaluates a single CloudWatch metric.
 
 ```
 suspend fun putMetricAlarm(
@@ -1582,3 +1839,39 @@ suspend fun addMetricDataForAlarm(fileName: String?) {
 }
 ```
 +  For API details, see [PutMetricData](https://sdk.amazonaws.com/kotlin/api/latest/index.html) in *AWS SDK for Kotlin API reference*.
+
+### `StartOTelEnrichment`
+<a name="cloudwatch_StartOTelEnrichment_kotlin_1_topic"></a>
+
+The following code example shows how to use `StartOTelEnrichment`.
+
+**SDK for Kotlin**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
+
+```
+suspend fun startOTelEnrichment() {
+    CloudWatchClient.fromEnvironment { region = "us-east-1" }.use { cwClient ->
+        cwClient.startOTelEnrichment(StartOTelEnrichmentRequest {})
+        println("Successfully started OTel enrichment for this account")
+    }
+}
+```
++  For API details, see [StartOTelEnrichment](https://sdk.amazonaws.com/kotlin/api/latest/index.html) in *AWS SDK for Kotlin API reference*.
+
+### `StopOTelEnrichment`
+<a name="cloudwatch_StopOTelEnrichment_kotlin_1_topic"></a>
+
+The following code example shows how to use `StopOTelEnrichment`.
+
+**SDK for Kotlin**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
+
+```
+suspend fun stopOTelEnrichment() {
+    CloudWatchClient.fromEnvironment { region = "us-east-1" }.use { cwClient ->
+        cwClient.stopOTelEnrichment(StopOTelEnrichmentRequest {})
+        println("Successfully stopped OTel enrichment for this account")
+    }
+}
+```
++  For API details, see [StopOTelEnrichment](https://sdk.amazonaws.com/kotlin/api/latest/index.html) in *AWS SDK for Kotlin API reference*.

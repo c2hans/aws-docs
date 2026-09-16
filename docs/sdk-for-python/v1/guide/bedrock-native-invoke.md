@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-python/v1/guide/bedrock-native-i
 
 InvokeModel sends a request in the selected model's native JSON format and returns the model's complete native response. Use it when you need model-specific request or response features that the portable Converse format doesn't expose. The request and response schemas depend on the selected model.
 
-The following example sends one Amazon Nova 2 Messages API request and prints the reply text. For request and response details, see the [invoke\_model()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/bedrock-runtime/operations/invoke_model/) API reference.
+The following example sends one Amazon Nova 2 Messages API request and prints the reply text. For request and response details, see the [invoke\_model()](clients/bedrock-runtime/operations/invoke_model/) API reference.
 
  **Imports**
 

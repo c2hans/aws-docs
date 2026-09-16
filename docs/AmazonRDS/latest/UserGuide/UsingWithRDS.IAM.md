@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.
 
 AWS Identity and Access Management (IAM) is an AWS service that helps an administrator securely control access to AWS resources. IAM administrators control who can be *authenticated* (signed in) and *authorized* (have permissions) to use Amazon RDS resources. IAM is an AWS service that you can use with no additional charge.
 
+For information about updates to the AWS managed policies for Amazon RDS, see [Amazon RDS updates to AWS managed policies](rds-manpol-updates.md).
+
 **Topics**
 + [Audience](#security_iam_audience)
 + [Authenticating with identities](#security_iam_authentication)

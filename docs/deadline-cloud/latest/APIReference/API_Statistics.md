@@ -56,7 +56,7 @@ Required: No
  ** jobName **   <a name="deadlinecloud-Type-Statistics-jobName"></a>
 The job name.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 128.
+Length Constraints: Minimum length of 1. Maximum length of 512.
 Required: No
 
  ** licenseProduct **   <a name="deadlinecloud-Type-Statistics-licenseProduct"></a>

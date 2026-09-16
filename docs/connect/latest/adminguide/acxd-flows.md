@@ -15,14 +15,20 @@ A single application can include multiple flows, and a flow can also be reused a
 
 After a flow is attached to an application and included in a deployed build, the application can execute that flow during conversations.
 
-To access flows, select **Flows** from your workspace menu, then choose **Canvas**.
+To access flows, select **Resources** from your workspace menu, then choose **Flows**.
 
 ## User intent and flow routing
 <a name="acxd-flows-intent"></a>
 
 A user's intent is what they are trying to do.
 
-The application can recognize that the user wants to book a room and route the conversation to a flow designed for that purpose, such as a Room Booking flow.
+For example:
+
+```
+"I want to book a room."
+```
+
+The application can recognize that the user wants to book a room and route the conversation to a flow designed for that purpose, such as BookRoom.
 
 Inside that flow, the application may ask for details such as check-in date, checkout date, number of guests, and room preference. The flow defines how those details are collected, what systems are called, and what happens next.
 
@@ -32,26 +38,26 @@ Use routing descriptions, default behavior, and Redirect nodes together to contr
 
 |  |  |
 | --- |--- |
-| **Default behavior** | A flow runs when assigned as the application's Welcome, Unknown, Fallback, or Escalation behavior. |
-| **User input routing** | A User input node captures what the user says and attempts to match it to one of the flows attached to the application via provided routing data. |
-| **User choice routing** | A User choice node can route to another flow if the user's response does not match the expected choices but does match another flow attached to the application via provided routing data. |
-| **Redirect** | A flow deliberately sends the user to another flow or page. |
-| **MCP tool** | A flow is exposed as a tool that an agent node can invoke. |
+| **Application default behavior** | A flow runs when assigned as the application's Welcome, Unknown, Fallback, or Escalation behavior. |
+| **User input recognition** | A User input node captures what the user says and attempts to match it to one of the flows attached to the application via provided routing data. |
+| **User choice recognition** | A User choice node can route to another flow if the user's response does not match the expected choices but does match another flow attached to the application via provided routing data. |
+| **Redirect node** | A flow deliberately sends the user to another flow or page. |
+| **MCP-enabled flow** | A flow is exposed as a tool that an agent node can invoke. |
 
 ## Creating a flow
 <a name="acxd-flows-create"></a>
 
 **To create a flow**
 
-1. Open **Flows** from the workspace menu.
+1. Open **Resources** from the workspace menu.
 
-1. Select **Canvas**.
+1. Select **Flows**.
 
-1. Select **Create flow**.
+1. Select **New flow**.
 
 1. Enter a clear flow name (no spaces or special characters).
 
-1. Select **Create**.
+1. Select **Create flow**.
 
 ## The Canvas
 <a name="acxd-flows-canvas"></a>
@@ -76,11 +82,11 @@ Toolbar options include:
 
 |  |  |
 | --- |--- |
-| **Application selector** | Switch between applications where the flow is attached. |
-| **Flow selector** | Switch between flows attached to the selected application. |
-| **Pages** | Create or navigate between pages within the current flow. Pages organize large flows into smaller sections, especially when a flow has many branches, repeated steps, or subprocesses. Use **Move to page** from the canvas shortcut menu to move selected nodes into a separate page and automatically create the Redirect nodes needed to connect the conversation path. |
+| **Application** | Switch between applications where the flow is attached. |
+| **Flow** | Switch between flows attached to the selected application. |
+| **Pages** | Create or navigate between pages within the current flow. Pages organize large flows into smaller sections, especially when a flow has many branches, repeated steps, or subprocesses. Use **Extract to new page** from the canvas shortcut menu to move selected nodes into a separate page and automatically create the Redirect nodes needed to connect the conversation path. |
 | **Analytics** | View traffic data for deployed applications and review user paths. |
-| **Issues** | Show issues such as disconnected paths, missing handling, or possible loops. |
+| **Validation** | Show issues such as disconnected paths, missing handling, or possible loops. |
 | **Settings** | Configure routing, MCP, attached slots, languages, versions, and flow details. |
 | **Save** | Save changes made on the Canvas. |
 | **Test** | Open the test widget to test from the current flow. |
@@ -114,7 +120,7 @@ You may also duplicate a flow when you want to reuse an existing flow structure 
 
 1. Select the **Advanced** tab.
 
-1. Choose **Duplicate**.
+1. Choose **Duplicate flow**.
 
 1. Enter a name for the duplicated flow.
 
@@ -133,11 +139,11 @@ Common controls include:
 | --- |--- |
 | **Zoom** | Zoom in or out of the Canvas. |
 | **Pan** | Move around the Canvas. |
-| **Auto-layout** | Align nodes into a cleaner layout. |
+| **Magic layout** | Align nodes into a cleaner layout. |
 | **Search** | Find nodes or trigger quick commands. |
-| **Notes** | Add internal notes for builders. |
+| **Add note** | Add internal notes for builders. |
 | **Undo/Redo** | Reverse or restore recent Canvas changes. |
-| **Flags** | Mark important nodes or areas for easier review. |
+| **Bookmark or highlight** | Mark important nodes or areas for easier review. |
 
 You can also right-click the Canvas or an individual node to open shortcut menu options.
 
@@ -271,7 +277,7 @@ Attach slots when the flow needs to collect or reference structured values from 
 
 1. Open the **Attached slots** tab.
 
-1. Select **Add slot**.
+1. Select **Attach new slot**.
 
 1. Choose a custom or built-in slot.
 
@@ -317,7 +323,7 @@ Use flow-level languages when a flow needs specific localization support or when
 
 1. Open the **Languages** tab.
 
-1. Select **Add language**.
+1. Select **Add new language**.
 
 1. Choose the language or locale.
 

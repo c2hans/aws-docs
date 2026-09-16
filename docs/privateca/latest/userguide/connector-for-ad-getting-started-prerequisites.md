@@ -7,6 +7,9 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/connector-for
 
 The steps in this section are prerequisites to using Connector for AD. It assumes that you've already created an AWS account. After you complete the steps on this page, you can get started with creating a connector for AD.
 
+**Multi-Region directory support**
+For multi-Region AWS Managed Microsoft AD directories, you can only create Connector for AD connectors and directory registrations in the directory's primary Region. For information about multi-Region replication, see [Multi-Region replication](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_configure_multi_region_replication.html) in the *AWS Directory Service Administration Guide*.
+
 ## Step 1: Create a private CA using AWS Private CA
 <a name="prereq-pca"></a>
 
@@ -54,6 +57,9 @@ For the latest version of the script and usage details, refer to the README in t
 <a name="prereq-iam"></a>
 
 To create a connector for AD, you need an IAM policy that allows you to create connector resources, share your private CA with the Connector for AD service, and authorize the Connector for AD service with your directory.
+
+**Note**
+In the AWS GovCloud (US) Regions, replace `arn:aws` with `arn:aws-us-gov` in all ARN patterns in the following policy examples. For example, the template ARN becomes `arn:aws-us-gov:acm-pca:::template/BlankEndEntityCertificate_APIPassthrough/V*`.
 
 This is an example a user managed policy:
 
@@ -192,6 +198,18 @@ $  aws ram create-resource-share \
     --name {{MyPcaConnectorAdResourceShare}} \
     --permission-arns arn:aws:ram::aws:permission/AWSRAMBlankEndEntityCertificateAPIPassthroughIssuanceCertificateAuthority \
     --resource-arns arn:aws:acm-pca:{{region}}:{{account}}:certificate-authority/{{CA_ID}} \
+    --principals pca-connector-ad.amazonaws.com \
+    --sources {{account}}
+```
+
+For the AWS GovCloud (US) Regions, use the `aws-us-gov` partition and an AWS GovCloud (US) Region:
+
+```
+$  aws ram create-resource-share \
+    --region {{us-gov-west-1}} \
+    --name {{MyPcaConnectorAdResourceShare}} \
+    --permission-arns arn:aws-us-gov:ram::aws:permission/AWSRAMBlankEndEntityCertificateAPIPassthroughIssuanceCertificateAuthority \
+    --resource-arns arn:aws-us-gov:acm-pca:{{us-gov-west-1}}:{{account}}:certificate-authority/{{CA_ID}} \
     --principals pca-connector-ad.amazonaws.com \
     --sources {{account}}
 ```

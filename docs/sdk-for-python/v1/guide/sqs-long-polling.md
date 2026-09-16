@@ -16,7 +16,7 @@ Queue attribute values are strings. Valid values for `ReceiveMessageWaitTimeSeco
 ## Enable long polling when creating a queue
 <a name="sqs-long-polling-create"></a>
 
-For request and response details, see the [create\_queue()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/sqs/operations/create_queue/) API reference.
+For request and response details, see the [create\_queue()](clients/sqs/operations/create_queue/) API reference.
 
 Set `ReceiveMessageWaitTimeSeconds` in the queue attributes to establish the default when the queue is created.
 
@@ -52,7 +52,7 @@ async def create_long_polling_queue(
 ## Enable long polling on an existing queue
 <a name="sqs-long-polling-existing"></a>
 
-For request and response details, see the [set\_queue\_attributes()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/sqs/operations/set_queue_attributes/) API reference.
+For request and response details, see the [set\_queue\_attributes()](clients/sqs/operations/set_queue_attributes/) API reference.
 
 Use `set_queue_attributes` to change the default for an existing queue. Queue attribute changes can take up to 60 seconds to propagate.
 
@@ -83,7 +83,7 @@ async def set_long_polling(
 ## Enable long polling for a receive request
 <a name="sqs-long-polling-request"></a>
 
-For request and response details, see the [receive\_message()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/sqs/operations/receive_message/) API reference.
+For request and response details, see the [receive\_message()](clients/sqs/operations/receive_message/) API reference.
 
 Set `wait_time_seconds` on `receive_message` to configure one request. Ensure that the client's response timeout is longer than the wait time. An empty response is still valid when the wait time expires.
 

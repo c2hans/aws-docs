@@ -291,7 +291,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/apigatewayv2-2018-11-29/GetAuthorizer)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/apigatewayv2-2018-11-29/GetAuthorizer)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/apigatewayv2-2018-11-29/GetAuthorizer)
-+ [AWS SDK for Python](/goto/boto3/apigatewayv2-2018-11-29/GetAuthorizer)
++ [AWS SDK for Python (Boto3)](/goto/boto3/apigatewayv2-2018-11-29/GetAuthorizer)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/apigatewayv2-2018-11-29/GetAuthorizer)
 
 ### DeleteAuthorizer
@@ -304,7 +304,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/apigatewayv2-2018-11-29/DeleteAuthorizer)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/apigatewayv2-2018-11-29/DeleteAuthorizer)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/apigatewayv2-2018-11-29/DeleteAuthorizer)
-+ [AWS SDK for Python](/goto/boto3/apigatewayv2-2018-11-29/DeleteAuthorizer)
++ [AWS SDK for Python (Boto3)](/goto/boto3/apigatewayv2-2018-11-29/DeleteAuthorizer)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/apigatewayv2-2018-11-29/DeleteAuthorizer)
 
 ### UpdateAuthorizer
@@ -317,5 +317,5 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/apigatewayv2-2018-11-29/UpdateAuthorizer)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/apigatewayv2-2018-11-29/UpdateAuthorizer)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/apigatewayv2-2018-11-29/UpdateAuthorizer)
-+ [AWS SDK for Python](/goto/boto3/apigatewayv2-2018-11-29/UpdateAuthorizer)
++ [AWS SDK for Python (Boto3)](/goto/boto3/apigatewayv2-2018-11-29/UpdateAuthorizer)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/apigatewayv2-2018-11-29/UpdateAuthorizer)

@@ -65,7 +65,6 @@ In the following table, you can find the DB instance classes that support settin
   <tr><td>db.m6i.xlarge</td><td>4</td><td>2</td><td>2</td><td>2</td><td>1, 2</td></tr>
   <tr><td>db.m6i.2xlarge</td><td>8</td><td>4</td><td>2</td><td>2, 4</td><td>1, 2</td></tr>
   <tr><td>db.m6i.4xlarge</td><td>16</td><td>8</td><td>2</td><td>2, 4, 6, 8</td><td>1, 2</td></tr>
-  <tr><td>db.m6i.4xlarge</td><td>16</td><td>8</td><td>2</td><td>2, 4, 6, 8</td><td>1, 2</td></tr>
   <tr><td>db.m6i.8xlarge</td><td>32</td><td>16</td><td>2</td><td>2, 4, 6, 8, 10, 12, 14, 16</td><td>1, 2</td></tr>
   <tr><td>db.m6i.12xlarge</td><td>48</td><td>24</td><td>2</td><td>2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24</td><td>1, 2</td></tr>
   <tr><td>db.m6i.16xlarge</td><td>64</td><td>32</td><td>2</td><td>2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32</td><td>1, 2</td></tr>

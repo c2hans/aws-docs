@@ -30,6 +30,15 @@ When using the CreateImage action:
 Type: Array of [BlockDeviceMapping](API_BlockDeviceMapping.md) objects
 Required: No
 
+ **BootModeOverride**
+The boot mode of the new image, which overrides the default boot mode. By default, if you do not specify this parameter, the new image inherits the `boot-mode` from the source instance.
+A value of `uefi` indicates that the image only supports UEFI boot mode. You can specify this parameter only if the `current-instance-boot-mode` of the source instance is `uefi`. To find the `boot-mode` or `current-instance-boot-mode` of an instance, see [DescribeInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeInstances.html).
+The operating system contained in the AMI must be configured to support the specified boot mode.
+For more information, see [Instance launch behavior with Amazon EC2 boot modes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-boot.html) in the *Amazon EC2 User Guide*.
+Type: String
+Valid Values: `uefi`
+Required: No
+
  **Description**
 A description for the new image.
 Type: String
@@ -196,5 +205,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/CreateImage)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/CreateImage)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/CreateImage)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CreateImage)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CreateImage)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CreateImage)

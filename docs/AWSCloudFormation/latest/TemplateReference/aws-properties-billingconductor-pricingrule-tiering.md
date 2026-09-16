@@ -19,6 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[CustomTiers](#cfn-billingconductor-pricingrule-tiering-customtiers)" : {{[ CustomTier, ... ]}},
   "[FreeTier](#cfn-billingconductor-pricingrule-tiering-freetier)" : {{FreeTier}}
 }
 ```
@@ -27,12 +28,22 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-billingconductor-pricingrule-tiering-syntax.yaml"></a>
 
 ```
+  [CustomTiers](#cfn-billingconductor-pricingrule-tiering-customtiers): {{
+    - CustomTier}}
   [FreeTier](#cfn-billingconductor-pricingrule-tiering-freetier): {{
     FreeTier}}
 ```
 
 ## Properties
 <a name="aws-properties-billingconductor-pricingrule-tiering-properties"></a>
+
+`CustomTiers`  <a name="cfn-billingconductor-pricingrule-tiering-customtiers"></a>
+ The set of custom tiers for the pricing rule.
+*Required*: No
+*Type*: Array of [CustomTier](aws-properties-billingconductor-pricingrule-customtier.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `FreeTier`  <a name="cfn-billingconductor-pricingrule-tiering-freetier"></a>
  The possible AWS Free Tier configurations.

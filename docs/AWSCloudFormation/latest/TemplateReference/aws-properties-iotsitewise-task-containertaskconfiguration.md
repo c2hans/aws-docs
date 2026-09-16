@@ -22,6 +22,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[Command](#cfn-iotsitewise-task-containertaskconfiguration-command)" : {{[ String, ... ]}},
   "[EcrUri](#cfn-iotsitewise-task-containertaskconfiguration-ecruri)" : {{String}},
   "[EnvironmentVariables](#cfn-iotsitewise-task-containertaskconfiguration-environmentvariables)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[EphemeralStorageConfiguration](#cfn-iotsitewise-task-containertaskconfiguration-ephemeralstorageconfiguration)" : {{EphemeralStorageConfiguration}},
+  "[Mounts](#cfn-iotsitewise-task-containertaskconfiguration-mounts)" : {{[ Mount, ... ]}},
   "[ProcessingType](#cfn-iotsitewise-task-containertaskconfiguration-processingtype)" : {{String}},
   "[ProcessingUnit](#cfn-iotsitewise-task-containertaskconfiguration-processingunit)" : {{String}},
   "[TaskExecutionRole](#cfn-iotsitewise-task-containertaskconfiguration-taskexecutionrole)" : {{String}},
@@ -38,6 +40,10 @@ To declare this entity in your CloudFormation template, use the following syntax
   [EcrUri](#cfn-iotsitewise-task-containertaskconfiguration-ecruri): {{String}}
   [EnvironmentVariables](#cfn-iotsitewise-task-containertaskconfiguration-environmentvariables): {{
     {{Key}}: {{Value}}}}
+  [EphemeralStorageConfiguration](#cfn-iotsitewise-task-containertaskconfiguration-ephemeralstorageconfiguration): {{
+    EphemeralStorageConfiguration}}
+  [Mounts](#cfn-iotsitewise-task-containertaskconfiguration-mounts): {{
+    - Mount}}
   [ProcessingType](#cfn-iotsitewise-task-containertaskconfiguration-processingtype): {{String}}
   [ProcessingUnit](#cfn-iotsitewise-task-containertaskconfiguration-processingunit): {{String}}
   [TaskExecutionRole](#cfn-iotsitewise-task-containertaskconfiguration-taskexecutionrole): {{String}}
@@ -68,6 +74,20 @@ Property description not available.
 *Type*: Object of String
 *Pattern*: `^[a-zA-Z_][a-zA-Z0-9_]*$`
 *Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`EphemeralStorageConfiguration`  <a name="cfn-iotsitewise-task-containertaskconfiguration-ephemeralstorageconfiguration"></a>
+Property description not available.
+*Required*: No
+*Type*: [EphemeralStorageConfiguration](aws-properties-iotsitewise-task-ephemeralstorageconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Mounts`  <a name="cfn-iotsitewise-task-containertaskconfiguration-mounts"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of [Mount](aws-properties-iotsitewise-task-mount.md)
+*Minimum*: `0`
+*Maximum*: `5`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ProcessingType`  <a name="cfn-iotsitewise-task-containertaskconfiguration-processingtype"></a>

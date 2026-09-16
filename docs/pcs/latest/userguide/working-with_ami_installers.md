@@ -28,21 +28,21 @@ For more information about the AWS PCS agent software, see [AWS PCS agent versio
  The Slurm installer downloads, compiles, and installs relevant versions of Slurm and its dependencies. You can use the Slurm installer to build custom AMIs for AWS PCS. You can also use your own mechanisms if they are consistent with the software configuration that the Slurm installer provides. For more information about AWS PCS support for Slurm, see [Slurm versions in AWS PCS](slurm-versions.md).
 
 The AWS-provided software installs the following:
-+  [Slurm](https://slurm.schedmd.com/) at the requested major and maintenance version (currently version 25.11.x) - [License GPL 2](https://github.com/SchedMD/slurm?tab=License-1-ov-file)
++  [Slurm](https://slurm.schedmd.com/) at the requested major and maintenance version (currently version 26.05.x) - [License GPL 2](https://github.com/SchedMD/slurm?tab=License-1-ov-file)
   +  Slurm is built with `--sysconfdir` set to `/etc/slurm`
   +  Slurm is built with the option `--enable-pam` and `--without-munge`
   +  Slurm is built with the option `--sharedstatedir=/run/slurm/`
   +  Slurm is built with PMIX and JWT support
-  +  Slurm is installed at `/opt/aws/pcs/schedulers/slurm-25.11`
+  +  Slurm is installed at `/opt/aws/pcs/scheduler/slurm-{{version}}`, for example `/opt/aws/pcs/scheduler/slurm-26.05`
 +  [OpenPMIX](https://openpmix.github.io/) (version 4.2.6) – [License](https://github.com/openpmix/openpmix?tab=License-1-ov-file)
   +  OpenPMIX is installed as a subdirectory of `/opt/aws/pcs/scheduler/`
 +  [libjwt](https://benmcollins.github.io/libjwt/) (version 1.17.0) – [License MPL-2.0](https://github.com/benmcollins/libjwt?tab=MPL-2.0-1-ov-file#readme)
   +  libjwt is installed as a subdirectory of `/opt/aws/pcs/scheduler/`
 
  The AWS-provided software changes the system configuration as follows:
-+  The Slurm `systemd` file created by the build is copied to `/etc/systemd/system/` with file name `slurmd-25.11.service`.
++  The Slurm `systemd` file created by the build is copied to `/etc/systemd/system/` with file name `slurmd-{{version}}.service`, for example `slurmd-26.05.service`.
 +  If they don't exist, a Slurm user and group (`slurm:slurm`) are created with UID/GID of `401`.
-+  The folder `/etc/aws/pcs/scheduler/slurm-25.11/plugstack.conf.d/` is created, to store your [Extend Slurm functionality on AWS PCS with SPANK plugins](spank.md) configuration.
++  The folder `/etc/aws/pcs/scheduler/slurm-{{version}}/plugstack.conf.d/` is created, to store your [Extend Slurm functionality on AWS PCS with SPANK plugins](spank.md) configuration.
 +  On Amazon Linux 2 and Rocky Linux 9 the installation adds the EPEL repository to install the required software to build Slurm or its dependencies.
 +  On RHEL9 the installation will enable `codeready-builder-for-rhel-9-rhui-rpms` and `epel-release-latest-9` from `fedoraproject` to install the required software to build Slurm or its dependencies.
 
@@ -88,16 +88,16 @@ Compare the checksum value returned by the command with the checksum value provi
 **Important**
 If the checksums don't match, don't run the installation script. Contact [Support](https://console.aws.amazon.com/support).
 
-For example, the following command generates the SHA256 checksum for the Slurm 25.11.8-1 tarball:
+For example, the following command generates the SHA256 checksum for the Slurm 26.05.4-1 tarball:
 
 ```
-$ sha256sum aws-pcs-slurm-25.11-installer-25.11.8-1.tar.gz
+$ sha256sum aws-pcs-slurm-26.05-installer-26.05.4-1.tar.gz
 ```
 
 Example output:
 
 ```
-70bf017a088223524949ffd5ef0d0b0eea45b22f904bcad1fbc0c9d92ea4a9c9 aws-pcs-slurm-25.11-installer-25.11.8-1.tar.gz
+e5e618fd1a4433878de417e28179785e117874bdde0e2a5da8fee344eeb1a94d aws-pcs-slurm-26.05-installer-26.05.4-1.tar.gz
 ```
 
 The following tables list the checksums for recent versions of the installers. Replace {{us-east-1}} with the AWS Region where you use AWS PCS.
@@ -125,6 +125,7 @@ The following tables list the checksums for recent versions of the installers. R
 
 | Installer | Download URL | SHA256 checksum |
 | --- | --- | --- |
+| Slurm 26.05.4-1 |  <pre>https://aws-pcs-repo-{{us-east-1}}.s3.{{us-east-1}}.amazonaws.com/aws-pcs-slurm/aws-pcs-slurm-26.05-installer-26.05.4-1.tar.gz</pre>  |  <pre>e5e618fd1a4433878de417e28179785e117874bdde0e2a5da8fee344eeb1a94d</pre>  |
 | Slurm 25.11.8-1 |  <pre>https://aws-pcs-repo-{{us-east-1}}.s3.{{us-east-1}}.amazonaws.com/aws-pcs-slurm/aws-pcs-slurm-25.11-installer-25.11.8-1.tar.gz</pre>  |  <pre>70bf017a088223524949ffd5ef0d0b0eea45b22f904bcad1fbc0c9d92ea4a9c9</pre>  |
 | Slurm 25.11.7-3 |  <pre>https://aws-pcs-repo-{{us-east-1}}.s3.{{us-east-1}}.amazonaws.com/aws-pcs-slurm/aws-pcs-slurm-25.11-installer-25.11.7-3.tar.gz</pre>  |  <pre>906bd06dc1b4036dff7d1af2e49b0495a5e9e86e971020f869d4dc8bf56d7cb6</pre>  |
 | Slurm 25.11.7-1 |  <pre>https://aws-pcs-repo-{{us-east-1}}.s3.{{us-east-1}}.amazonaws.com/aws-pcs-slurm/aws-pcs-slurm-25.11-installer-25.11.7-1.tar.gz</pre>  |  <pre>901305999c4b572229aade737d66865fcb6b52fe0c9c1f27d03f1ffda3b9cf13</pre>  |

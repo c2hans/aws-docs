@@ -482,6 +482,7 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/poli
 + [AmazonSageMakerGroundTruthExecution](AmazonSageMakerGroundTruthExecution.md)
 + [AmazonSageMakerHyperPodGatedModelAccess](AmazonSageMakerHyperPodGatedModelAccess.md)
 + [AmazonSageMakerHyperPodInferenceAccess](AmazonSageMakerHyperPodInferenceAccess.md)
++ [AmazonSageMakerHyperPodInferenceGatewayAccess](AmazonSageMakerHyperPodInferenceGatewayAccess.md)
 + [AmazonSageMakerHyperPodObservabilityAdminAccess](AmazonSageMakerHyperPodObservabilityAdminAccess.md)
 + [AmazonSageMakerHyperPodServiceRolePolicy](AmazonSageMakerHyperPodServiceRolePolicy.md)
 + [AmazonSageMakerHyperPodTrainingOperatorAccess](AmazonSageMakerHyperPodTrainingOperatorAccess.md)

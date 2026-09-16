@@ -37,7 +37,7 @@ The request accepts the following data in JSON format.
  ** [ComputeType](#API_ImportCustomWorkspaceImage_RequestSyntax) **   <a name="WorkSpaces-ImportCustomWorkspaceImage-request-ComputeType"></a>
 The supported compute type for the WorkSpace image.
 Type: String
-Valid Values: `BASE | GRAPHICS_G4DN | GRAPHICS_G6`
+Valid Values: `BASE | GRAPHICS_G4DN | GRAPHICS_G6 | GRAPHICS_G7`
 Required: Yes
 
  ** [ImageDescription](#API_ImportCustomWorkspaceImage_RequestSyntax) **   <a name="WorkSpaces-ImportCustomWorkspaceImage-request-ImageDescription"></a>
@@ -170,5 +170,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/workspaces-2015-04-08/ImportCustomWorkspaceImage)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/workspaces-2015-04-08/ImportCustomWorkspaceImage)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/workspaces-2015-04-08/ImportCustomWorkspaceImage)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/workspaces-2015-04-08/ImportCustomWorkspaceImage)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/workspaces-2015-04-08/ImportCustomWorkspaceImage)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/workspaces-2015-04-08/ImportCustomWorkspaceImage)

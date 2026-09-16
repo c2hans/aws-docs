@@ -44,7 +44,7 @@ The software AWS PCS uses to manage cluster scaling and job scheduling.
 
 `Version`  <a name="cfn-pcs-cluster-scheduler-version"></a>
 The version of the specified scheduling software that AWS PCS uses to manage cluster scaling and job scheduling. You can update this version using the `UpdateCluster` API action. For more information, see [Updating the scheduler version on a cluster](https://docs.aws.amazon.com/pcs/latest/userguide/working-with_clusters_version_update.html) and [Slurm versions in AWS PCS](https://docs.aws.amazon.com/pcs/latest/userguide/slurm-versions.html) in the *AWS PCS User Guide*.
-Valid Values: `23.11 | 24.05 | 24.11 | 25.05 | 25.11`
+Valid Values: `23.11 | 24.05 | 24.11 | 25.05 | 25.11 | 26.05`
 *Required*: Yes
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

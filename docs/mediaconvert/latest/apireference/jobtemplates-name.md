@@ -11060,7 +11060,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/mediaconvert-2017-08-29/GetJobTemplate)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/mediaconvert-2017-08-29/GetJobTemplate)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/mediaconvert-2017-08-29/GetJobTemplate)
-+ [AWS SDK for Python](/goto/boto3/mediaconvert-2017-08-29/GetJobTemplate)
++ [AWS SDK for Python (Boto3)](/goto/boto3/mediaconvert-2017-08-29/GetJobTemplate)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/mediaconvert-2017-08-29/GetJobTemplate)
 
 ### UpdateJobTemplate
@@ -11073,7 +11073,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/mediaconvert-2017-08-29/UpdateJobTemplate)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/mediaconvert-2017-08-29/UpdateJobTemplate)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/mediaconvert-2017-08-29/UpdateJobTemplate)
-+ [AWS SDK for Python](/goto/boto3/mediaconvert-2017-08-29/UpdateJobTemplate)
++ [AWS SDK for Python (Boto3)](/goto/boto3/mediaconvert-2017-08-29/UpdateJobTemplate)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/mediaconvert-2017-08-29/UpdateJobTemplate)
 
 ### DeleteJobTemplate
@@ -11086,5 +11086,5 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/mediaconvert-2017-08-29/DeleteJobTemplate)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/mediaconvert-2017-08-29/DeleteJobTemplate)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/mediaconvert-2017-08-29/DeleteJobTemplate)
-+ [AWS SDK for Python](/goto/boto3/mediaconvert-2017-08-29/DeleteJobTemplate)
++ [AWS SDK for Python (Boto3)](/goto/boto3/mediaconvert-2017-08-29/DeleteJobTemplate)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/mediaconvert-2017-08-29/DeleteJobTemplate)

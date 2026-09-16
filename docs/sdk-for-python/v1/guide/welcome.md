@@ -54,7 +54,7 @@ In addition to this guide, the following are valuable online resources for AWS S
 + GitHub:
   + [SDK source](https://github.com/aws/aws-sdk-python) on GitHub
   + [SDK issues](https://github.com/aws/aws-sdk-python/issues) on GitHub
-+ [AWS SDK for Python API Reference](https://docs.aws.amazon.com/sdk-for-python/v1/reference/)
++ []()
 + [Python developer blog](https://aws.amazon.com/blogs/developer/category/programing-language/python/)
 + The [AWS Code Sample Catalog](https://docs.aws.amazon.com/code-samples/latest/catalog/)
 + [SDK License](https://aws.amazon.com/apache2.0/)

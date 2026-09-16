@@ -8,7 +8,9 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 <a name="AWS_FSx"></a>
 
 **Resource types**
++ [AWS::FSx::Backup](aws-resource-fsx-backup.md)
 + [AWS::FSx::DataRepositoryAssociation](aws-resource-fsx-datarepositoryassociation.md)
++ [AWS::FSx::FileCache](aws-resource-fsx-filecache.md)
 + [AWS::FSx::FileSystem](aws-resource-fsx-filesystem.md)
 + [AWS::FSx::S3AccessPointAttachment](aws-resource-fsx-s3accesspointattachment.md)
 + [AWS::FSx::Snapshot](aws-resource-fsx-snapshot.md)

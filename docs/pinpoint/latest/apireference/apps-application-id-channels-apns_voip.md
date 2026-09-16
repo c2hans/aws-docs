@@ -251,7 +251,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/pinpoint-2016-12-01/GetApnsVoipChannel)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/pinpoint-2016-12-01/GetApnsVoipChannel)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/pinpoint-2016-12-01/GetApnsVoipChannel)
-+ [AWS SDK for Python](/goto/boto3/pinpoint-2016-12-01/GetApnsVoipChannel)
++ [AWS SDK for Python (Boto3)](/goto/boto3/pinpoint-2016-12-01/GetApnsVoipChannel)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/pinpoint-2016-12-01/GetApnsVoipChannel)
 
 ### UpdateApnsVoipChannel
@@ -264,7 +264,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/pinpoint-2016-12-01/UpdateApnsVoipChannel)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/pinpoint-2016-12-01/UpdateApnsVoipChannel)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/pinpoint-2016-12-01/UpdateApnsVoipChannel)
-+ [AWS SDK for Python](/goto/boto3/pinpoint-2016-12-01/UpdateApnsVoipChannel)
++ [AWS SDK for Python (Boto3)](/goto/boto3/pinpoint-2016-12-01/UpdateApnsVoipChannel)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/pinpoint-2016-12-01/UpdateApnsVoipChannel)
 
 ### DeleteApnsVoipChannel
@@ -277,5 +277,5 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/pinpoint-2016-12-01/DeleteApnsVoipChannel)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/pinpoint-2016-12-01/DeleteApnsVoipChannel)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/pinpoint-2016-12-01/DeleteApnsVoipChannel)
-+ [AWS SDK for Python](/goto/boto3/pinpoint-2016-12-01/DeleteApnsVoipChannel)
++ [AWS SDK for Python (Boto3)](/goto/boto3/pinpoint-2016-12-01/DeleteApnsVoipChannel)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/pinpoint-2016-12-01/DeleteApnsVoipChannel)

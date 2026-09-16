@@ -29,6 +29,11 @@ Type: String
 Length Constraints: Minimum length of 0. Maximum length of 15.
 Required: No
 
+ ** ProxyConfig **   <a name="TransferFamily-Type-ProtocolDetails-ProxyConfig"></a>
+The configuration for PROXY protocol version 2 (PPv2) support on the AWS Transfer Family server. For more information, see [Working with Network Load Balancers](https://docs.aws.amazon.com/transfer/latest/userguide/working-with-nlb.html).
+Type: [ProxyConfig](API_ProxyConfig.md) object
+Required: No
+
  ** SetStatOption **   <a name="TransferFamily-Type-ProtocolDetails-SetStatOption"></a>
 Use the `SetStatOption` to ignore the error that is generated when the client attempts to use `SETSTAT` on a file you are uploading to an S3 bucket.
 Some SFTP file transfer clients can attempt to change the attributes of remote files, including timestamp and permissions, using commands, such as `SETSTAT` when uploading the file. However, these commands are not compatible with object storage systems, such as Amazon S3. Due to this incompatibility, file uploads from these clients can result in errors even when the file is otherwise successfully uploaded.

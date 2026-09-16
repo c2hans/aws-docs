@@ -51,7 +51,7 @@ Pattern: `^[-_A-Za-z-0-9][-_A-Za-z0-9 ]{1,126}[-_A-Za-z-0-9]$`
 Required: No
 
  ** placement **   <a name="imagebuilder-Type-InfrastructureConfigurationSummary-placement"></a>
-The instance placement settings that define where the instances that are launched from your image will run.
+The instance placement settings that define where the instances that are launched from your image run.
 Type: [Placement](API_Placement.md) object
 Required: No
 

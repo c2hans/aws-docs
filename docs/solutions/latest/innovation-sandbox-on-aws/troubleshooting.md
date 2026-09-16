@@ -111,15 +111,11 @@ To resolve an account that has failed cleanup:
 
 1. Log in to the web UI as an Admin, and from the left, under **Administration**, choose **Accounts**.
 
-1. Confirm the account that has failed the cleanup process. You will need this to view log information in the AWS Console.
+1. Choose the account ID of the account that failed the cleanup process to open the account details page.
 
-1. Log in to the AWS Console using the Hub account, and navigate to the **CloudWatch > Logs Insights** page.
+1. Under **Recent cleanups**, choose the failed cleanup report. The **Step timeline** identifies which step failed and shows its error details.
 
-1. From the right pane, under Sample queries, choose the ISB group, and from the dropdown, choose the `AccountCleanupLogs` saved query, and choose **Apply**.
-
-1. In the query window, choose a time frame that includes when the account was last cleaned up (for example: last 3 days) and paste the 'Last Cleanup ReferenceID' into the indicated section.
-
-1. Choose **Run query** to see related events. The log information is displayed under the *Logs* tab.
+1. If an AWS Nuke phase failed, choose **View build logs** on that step to read the AWS Nuke output in the AWS CodeBuild console. To review only the resource deletion failures, run the `AccountCleanupLogs` saved query against that build. For the full procedure, including how to filter the AWS Nuke configuration for protected resources, see [Resolving Account Cleanup Failures](administrator-guide.md#resolving-account-cleanup-failures).
 
 1. To manually handle any deletion failures in the affected account, navigate back to the **Accounts** page, and log in to the account using the **Login** option.
 
@@ -163,9 +159,9 @@ If the account has a lease in `Provisioning` status (a blueprint deployment in p
 
 1. Copy the LeaseID from the Lease Summary page. You will need this to view lease history in the AWS Console.
 
-1. Log in to the AWS Console, and navigate to the **CloudWatch > Logs Insights** page.
+1. Log in to the AWS Console, and navigate to the **CloudWatch > Logs > Log Analytics** page.
 
-1. From the right pane, under Sample queries, choose the ISB group, and from the dropdown, choose `LogQuery` saved query and choose **Apply**.
+1. From the right pane, under **Saved queries**, expand the **ISB-<namespace>** folder, choose the `LogQuery` saved query, and choose **Apply**.
 
 1. In the query window, choose the time frame to view logs for and paste the LeaseID into the indicated section.
 
@@ -181,9 +177,9 @@ Terminated leases distinguish who ended them. When a leaseholder terminates thei
 
 1. From the Accounts page, confirm the user email address you want to view history for. You will need this to view user/account history in the AWS Console.
 
-1. Log in to the AWS Console, and navigate to the **CloudWatch > Logs Insights** page.
+1. Log in to the AWS Console, and navigate to the **CloudWatch > Logs > Log Analytics** page.
 
-1. From the right pane, under Sample queries, choose the ISB group, and from the dropdown, choose `LogQuery` saved query and choose **Apply**.
+1. From the right pane, under **Saved queries**, expand the **ISB-<namespace>** folder, choose the `LogQuery` saved query, and choose **Apply**.
 
 1. In the query window, choose the time frame to view logs for and paste the email address into the indicated section.
 
@@ -322,7 +318,7 @@ To investigate messages in the dead-letter queue:
 
 1. Choose the queue, then choose **Send and receive messages** and **Poll for messages** to view the failed messages. Each message identifies the affected `leaseId`, `principalId`, `principalType`, and `intent`.
 
-1. Use the `leaseId` to review related logs. Navigate to **CloudWatch > Logs Insights**, and use the `LogQuery` saved query with the lease ID to identify the underlying error. For more information, refer to [Viewing a specific Lease history](#viewing-lease-history).
+1. Use the `leaseId` to review related logs. Navigate to **CloudWatch > Logs > Log Analytics**, and use the `LogQuery` saved query with the lease ID to identify the underlying error. For more information, refer to [Viewing a specific Lease history](#viewing-lease-history).
 
 1. After resolving the underlying cause (for example, IAM Identity Center throttling subsides, or a deleted principal is removed from the lease), retry the operation by resubmitting the assignments from the **Assignments** tab on the lease details page.
 

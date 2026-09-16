@@ -2,8 +2,13 @@
 source_url: https://docs.aws.amazon.com/location/previous/developerguide/managing-place-indexes.html
 ---
 
-# Managing your place index resources with Amazon Location
+# Managing your place index resources (V1)
 <a name="managing-place-indexes"></a>
+
+**Important**
+**This page documents the previous Places API (V1). Use it only for existing applications.** The Places V2 API is the latest version. Use it for all new applications; see the latest [Amazon Location Service Places](https://docs.aws.amazon.com/location/latest/developerguide/places.html) developer guide.
+The latest API calls `Geocode`, `ReverseGeocode`, `SearchText`, `SearchNearby`, `Suggest`, `Autocomplete`, and `GetPlace` directly. These operations are under the `geo-places` namespace. They are exposed as `@aws-sdk/client-geo-places` for JavaScript and `boto3.client('geo-places')` for Python.
+There is no `PlaceIndex` resource to create, describe, or delete.
 
 You can manage your place index resources using the Amazon Location console, the AWS CLI, or the Amazon Location APIs.
 
@@ -26,7 +31,7 @@ You can view your place index resources list using the Amazon Location console, 
 ------
 #### [ API ]
 
-Use the `[ListPlaceIndexes](https://docs.aws.amazon.com/location-places/latest/APIReference/API_ListPlaceIndexes.html)` operation from the Amazon Location Places APIs.
+Use the `[ListPlaceIndexes](https://docs.aws.amazon.com/location/previous/APIReference/API_ListPlaceIndexes.html)` operation from the Amazon Location Places APIs.
 
 The following example is an API request to get a list of place index resources in the AWS account.
 
@@ -34,7 +39,7 @@ The following example is an API request to get a list of place index resources i
 POST /places/v0/list-indexes
 ```
 
-The following is an example response for `[ListPlaceIndexes](https://docs.aws.amazon.com/location-places/latest/APIReference/API_ListPlaceIndexes.html)`:
+The following is an example response for `[ListPlaceIndexes](https://docs.aws.amazon.com/location/previous/APIReference/API_ListPlaceIndexes.html)`:
 
 ```
 {
@@ -83,7 +88,7 @@ You can get details about any place index resource in your AWS account using the
 ------
 #### [ API ]
 
-Use the `[DescribePlaceIndex](https://docs.aws.amazon.com/location-places/latest/APIReference/API_DescribePlaceIndex.html)` operation from the Amazon Location Place APIs.
+Use the `[DescribePlaceIndex](https://docs.aws.amazon.com/location/previous/APIReference/API_DescribePlaceIndex.html)` operation from the Amazon Location Place APIs.
 
 The following example is an API request to get the place index resource details for {{ExamplePlaceIndex}}.
 
@@ -91,7 +96,7 @@ The following example is an API request to get the place index resource details 
 GET /places/v0/indexes/{{ExamplePlaceIndex}}
 ```
 
-The following is an example response for `[DescribePlaceIndex](https://docs.aws.amazon.com/location-places/latest/APIReference/API_DescribePlaceIndex.html)`:
+The following is an example response for `[DescribePlaceIndex](https://docs.aws.amazon.com/location/previous/APIReference/API_DescribePlaceIndex.html)`:
 
 ```
 {
@@ -148,7 +153,7 @@ This operation deletes the resource permanently.
 ------
 #### [ API ]
 
-Use the `[DeletePlaceIndex](https://docs.aws.amazon.com/location-places/latest/APIReference/API_DeletePlaceIndex.html)` operation from the Amazon Location Places APIs.
+Use the `[DeletePlaceIndex](https://docs.aws.amazon.com/location/previous/APIReference/API_DeletePlaceIndex.html)` operation from the Amazon Location Places APIs.
 
 The following example is an API request to delete the place index resource {{ExamplePlaceIndex}}.
 
@@ -156,7 +161,7 @@ The following example is an API request to delete the place index resource {{Exa
 DELETE /places/v0/indexes/{{ExamplePlaceIndex}}
 ```
 
-The following is an example success response for `[DeletePlaceIndex](https://docs.aws.amazon.com/location-places/latest/APIReference/API_DeletePlaceIndex.html)`:
+The following is an example success response for `[DeletePlaceIndex](https://docs.aws.amazon.com/location/previous/APIReference/API_DeletePlaceIndex.html)`:
 
 ```
 HTTP/1.1 200

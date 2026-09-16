@@ -50,6 +50,7 @@ Required: No
  ** testRunId **   <a name="ngresiliencehub-Type-ReportGenerationResult-testRunId"></a>
 The unique identifier of a test run.
 Type: String
+Length Constraints: Minimum length of 1.
 Required: No
 
  ** testTemplateArn **   <a name="ngresiliencehub-Type-ReportGenerationResult-testTemplateArn"></a>

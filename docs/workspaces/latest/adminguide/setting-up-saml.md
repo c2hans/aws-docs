@@ -84,43 +84,40 @@ To create an IAM role for SAML IdP
 
 1.  For **Role type**, choose **SAML 2.0 federation**.
 
-1.  For **SAML Provider** select the SAML IdP that you created.
-**Important**
-Don't choose either of the two SAML 2.0 access methods, **Allow programmatic access only** or **Allow programmatic and Amazon Web Services Management Console access**.
+1.  For **SAML Provider**, select the SAML IdP that you created.
 
-1. For **Attribute**, choose **SAML:sub\_type**.
+1. For **Condition**, choose **Add condition**, and then do the following:
 
-1. For **Value** enter `persistent`. This value restricts role access to SAML user streaming requests that include a SAML subject type assertion with a value of persistent. If the SAML:sub\_type is persistent, your IdP sends the same unique value for the NameID element in all SAML requests from a particular user. For more information about the SAML:sub\_type assertion, see the **Uniquely identifying users in SAML-based federation** section in [ Using SAML-based federation for API access to AWS](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_saml.html#CreatingSAML-configuring).
+   1. For **Key**, choose **SAML:sub\_type**.
 
-1. Review your SAML 2.0 trust information, confirming the correct trusted entity and condition, and then choose **Next: Permissions**.
+   1. For **Condition**, choose **StringEquals**.
 
-1. On the **Attach permissions policies** page, choose **Next: Tags**.
+   1. For **Value**, enter `persistent`.
 
-1. (Optional) Enter a key and value for each tag that you want to add. For more information, see [Tagging IAM users and roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_tags.html).
+   This value restricts role access to SAML user streaming requests. The request must include a SAML subject type assertion with a value of persistent. If the SAML:sub\_type attribute is set to persistent, your IdP sends the same unique value for the NameID element in all SAML requests from a particular user. For more information about the SAML:sub\_type assertion, see the **Uniquely identifying users in SAML-based federation** section in [ Using SAML-based federation for API access to AWS](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_saml.html#CreatingSAML-configuring).
 
-1. When you're done, choose **Next: Review**. You'll create and embed an inline policy for this role later.
+1. Choose **Next**.
 
-1. For **Role name**, enter a name that identifies the purpose of this role. Because multiple entities might reference the role, you can't edit the role's name once it is created.
+1. On the **Add permissions** page, choose **Next**. Don't add a permissions policy here. You embed an inline policy for this role later, in [Step 3: Embed an inline policy for the IAM role](#embed-inline-policy).
 
-1. (Optional) For **Role description**, enter a description for the new role.
+1. On the **Name, review, and create** page, for **Role name**, enter a name that identifies the purpose of this role. Because multiple entities might reference the role, you can't edit the role's name after it is created.
 
-1. Review the role details and choose **Create role**.
+1. (Optional) For **Description**, enter a description for the new role.
 
-1. Add the sts:TagSession permission to your new IAM role's trust policy. For more information, see [Passing session tags in AWS STS](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_session-tags.html). In your new IAM role's details, choose the **Trust relationships** tab, and then choose **Edit trust relationship\***. When Edit Trust Relationship policy editor opens, add the **sts:TagSession\*** permission, as follows:
+1. (Optional) Under **Step 3: Add tags**, choose **Add new tag** and enter a key and value for each tag that you want to add. For more information, see [Tagging IAM users and roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_tags.html).
 
-------
-#### [ JSON ]
+1. Choose **Create role**.
 
-****
+1. Add the `sts:TagSession` permission to your new IAM role's trust policy. For more information, see [Passing session tags in AWS STS](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_session-tags.html). In your new IAM role's details, choose the **Trust relationships** tab, and then choose **Edit trust policy**. When the Edit trust policy editor opens, add the `sts:TagSession` permission so that the policy matches the following:
 
    ```
    {
-       "Version":"2012-10-17",
+       "Version": "2012-10-17",
        "Statement": [
            {
                "Effect": "Allow",
                "Principal": {
-                   "Federated": "arn:aws:iam::{{111122223333}}:saml-provider/IDENTITY-PROVIDER"
+                   "Federated": "arn:aws:iam::{{111122223333}}:saml-provider/{{IDENTITY-PROVIDER}}"
                },
                "Action": [
                    "sts:AssumeRoleWithSAML",
@@ -128,7 +125,10 @@ Don't choose either of the two SAML 2.0 access methods, **Allow programmatic acc
                ],
                "Condition": {
                    "StringEquals": {
-                       "SAML:aud": "https://signin.aws.amazon.com/saml"
+                       "SAML:sub_type": "persistent"
+                   },
+                   "StringLike": {
+                       "SAML:aud": "https://*signin.aws.amazon.com/saml*"
                    }
                }
            }
@@ -136,9 +136,7 @@ Don't choose either of the two SAML 2.0 access methods, **Allow programmatic acc
    }
    ```
 
-------
-
-Replace `IDENTITY-PROVIDER` with the name of the SAML IdP you created in Step 1. Then choose **Update Trust Policy**.
+In the policy, {{IDENTITY-PROVIDER}} matches the name of the SAML IdP that you selected in Step 1, and {{111122223333}} is your AWS account ID. After you add the `sts:TagSession` permission, choose **Update policy**.
 
 ## Step 3: Embed an inline policy for the IAM role
 <a name="embed-inline-policy"></a>

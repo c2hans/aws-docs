@@ -80,6 +80,13 @@ Length Constraints: Minimum length of 1. Maximum length of 18.
 Pattern: `[0-9]+`
 Required: No
 
+ ** uuid **   <a name="omics-Type-TaskListItem-uuid"></a>
+The universally unique identifier (UUID) for the workflow task.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Pattern: `[\p{L}||\p{M}||\p{Z}||\p{S}||\p{N}||\p{P}]+`
+Required: No
+
 ## See Also
 <a name="API_TaskListItem_SeeAlso"></a>
 

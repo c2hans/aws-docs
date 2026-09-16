@@ -806,4 +806,5 @@ The following actions are supported:
 +  [UpdateInterruptibleCapacityReservationAllocation](API_UpdateInterruptibleCapacityReservationAllocation.md)
 +  [UpdateSecurityGroupRuleDescriptionsEgress](API_UpdateSecurityGroupRuleDescriptionsEgress.md)
 +  [UpdateSecurityGroupRuleDescriptionsIngress](API_UpdateSecurityGroupRuleDescriptionsIngress.md)
++  [ValidateSecurityGroupQuotasForInterface](API_ValidateSecurityGroupQuotasForInterface.md)
 +  [WithdrawByoipCidr](API_WithdrawByoipCidr.md)

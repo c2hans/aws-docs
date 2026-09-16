@@ -10,4 +10,4 @@ Amazon Data Firehose was previously known as Amazon Kinesis Data Firehose.
 
 Amazon Data Firehose is a fully managed service that delivers real-time streaming data to destinations such as Amazon Simple Storage Service (Amazon S3), Amazon OpenSearch Service, Amazon Redshift, Splunk, and various other supported destinations.
 
-This document was last published on September 9, 2026.
+This document was last published on September 15, 2026.

@@ -16,7 +16,7 @@ The examples on this page use the composite-key table created in [Create a table
 ## Put an item
 <a name="dynamodb-put-item"></a>
 
-For request and response details, see the [put\_item()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/dynamodb/operations/put_item/) API reference.
+For request and response details, see the [put\_item()](clients/dynamodb/operations/put_item/) API reference.
 
 Pass a complete map of typed attributes to `put_item`. A put replaces an existing item with the same primary key unless you add a condition.
 
@@ -52,7 +52,7 @@ async def put_item(client: AsyncDynamoDBClient, table_name: str) -> None:
 ## Get an item
 <a name="dynamodb-get-item"></a>
 
-For request and response details, see the [get\_item()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/dynamodb/operations/get_item/) API reference.
+For request and response details, see the [get\_item()](clients/dynamodb/operations/get_item/) API reference.
 
 Supply every primary-key attribute to `get_item`. This example requests a strongly consistent read and returns the optional item.
 
@@ -95,7 +95,7 @@ if item:
 ## Update an item
 <a name="dynamodb-update-item"></a>
 
-For request and response details, see the [update\_item()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/dynamodb/operations/update_item/) API reference.
+For request and response details, see the [update\_item()](clients/dynamodb/operations/update_item/) API reference.
 
 Use an update expression to change selected attributes. Expression-name placeholders safely represent attribute names, and `ALL_NEW` returns the item after the update.
 
@@ -139,7 +139,7 @@ async def update_item(
 ## Delete an item
 <a name="dynamodb-delete-item"></a>
 
-For request and response details, see the [delete\_item()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/dynamodb/operations/delete_item/) API reference.
+For request and response details, see the [delete\_item()](clients/dynamodb/operations/delete_item/) API reference.
 
 Delete one item by supplying its complete primary key.
 
@@ -169,7 +169,7 @@ async def delete_item(client: AsyncDynamoDBClient, table_name: str) -> None:
 ## Protect a write with a condition expression
 <a name="dynamodb-expressions"></a>
 
-For request and response details, see the [put\_item()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/dynamodb/operations/put_item/) API reference.
+For request and response details, see the [put\_item()](clients/dynamodb/operations/put_item/) API reference.
 
 A condition expression is evaluated before DynamoDB changes the item. This conditional put prevents replacement of an item that already has the same key. A false condition raises the modeled `ConditionalCheckFailedException` and does not change the item.
 

@@ -64,7 +64,7 @@ Valid Values: `DEPRECATED | DISABLED | ACTIVE`
 Required: No
 
  ** supportedOsVersions **   <a name="imagebuilder-Type-ComponentVersion-supportedOsVersions"></a>
-he operating system (OS) version supported by the component. If the OS information is available, a prefix match is performed against the base image OS version during image recipe creation.
+The operating system (OS) version supported by the component. If OS information is available, Image Builder performs a prefix match against the base image OS version during image recipe creation.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 25 items.
 Length Constraints: Minimum length of 1.
@@ -79,9 +79,9 @@ Required: No
  ** version **   <a name="imagebuilder-Type-ComponentVersion-version"></a>
 The semantic version of the component.
 The semantic version has four nodes: <major>.<minor>.<patch>/<build>. You can assign values for the first three, and can filter on all of them.
- **Assignment:** For the first three nodes you can assign any positive integer value, including zero, with an upper limit of 2^30-1, or 1073741823 for each node. Image Builder automatically assigns the build number to the fourth node.
+ **Assignment:** For the first three nodes, you can assign any positive integer value, including zero. The upper limit is 2^30-1, or 1073741823, for each node. Image Builder automatically assigns the build number to the fourth node.
  **Patterns:** You can use any numeric pattern that adheres to the assignment requirements for the nodes that you can assign. For example, you might choose a software version pattern, such as 1.0.0, or a date, such as 2021.01.01.
- **Filtering:** With semantic versioning, you have the flexibility to use wildcards (x) to specify the most recent versions or nodes when selecting the base image or components for your recipe. When you use a wildcard in any node, all nodes to the right of the first wildcard must also be wildcards.
+ **Filtering:** You can use wildcards (x) to specify the most recent versions or nodes when selecting the base image or components for your recipe. When you use a wildcard in any node, all nodes to the right of the first wildcard must also be wildcards.
 Type: String
 Pattern: `^[0-9]+\.[0-9]+\.[0-9]+$`
 Required: No

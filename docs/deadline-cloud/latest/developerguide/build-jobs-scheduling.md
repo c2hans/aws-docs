@@ -184,6 +184,11 @@ For example, if you have workers with 1 GPU (24 GiB VRAM) and workers with 4 
 
 For more information about creating a customer-managed fleet, see [Create a customer-managed fleet](create-a-cmf.md).
 
+### Memory requirements and instance sizing
+<a name="jobs-scheduling-memory-sizing"></a>
+
+A step's `amount.worker.memory` host requirement selects fleets. It doesn't size instances. The scheduler matches the requirement against each fleet's declared capabilities, not against individual workers. As a result, the requirement doesn't cause a service-managed fleet to launch a larger instance. To guarantee the instance size, constrain the fleet configuration instead. The same applies to the other hardware requirements, such as `amount.worker.vcpu` and `amount.worker.gpu`. For more information about how requirements and fleet configuration divide this work, see [Host requirements and fleet capabilities](host-requirements-overview.md).
+
 ### Custom capabilities
 <a name="jobs-scheduling-custom-capabilities"></a>
 

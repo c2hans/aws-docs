@@ -56,7 +56,7 @@ async def collect_response_chunks(
     return chunks
 ```
 
-Leaving the asynchronous context closes the output stream even when event processing raises an exception. A modeled stream error can arrive while the application is iterating events; the SDK raises it as a generated service exception at that point. The event payloads and the signal that completes a stream vary by operation. For details, see the [invoke\_model\_with\_response\_stream()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/bedrock-runtime/operations/invoke_model_with_response_stream/) API reference.
+Leaving the asynchronous context closes the output stream even when event processing raises an exception. A modeled stream error can arrive while the application is iterating events; the SDK raises it as a generated service exception at that point. The event payloads and the signal that completes a stream vary by operation. For details, see the [invoke\_model\_with\_response\_stream()](clients/bedrock-runtime/operations/invoke_model_with_response_stream/) API reference.
 
 ## Using a bidirectional event stream
 <a name="using-streaming-bidirectional"></a>
@@ -181,12 +181,12 @@ See [Example 2: Stream audio bidirectionally with Amazon Transcribe](getting-sta
 <a name="using-streaming-other-operations"></a>
 
 The following generated Python methods support HTTP/2 bidirectional event streams:
-+ **Amazon Bedrock Runtime:** [invoke\_model\_with\_bidirectional\_stream()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/bedrock-runtime/operations/invoke_model_with_bidirectional_stream/)
-+ **Amazon Connect Health:** [start\_medical\_scribe\_listening\_session()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/connecthealth/operations/start_medical_scribe_listening_session/)
-+ **Amazon Lex Runtime V2:** [start\_conversation()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/lex-runtime-v2/operations/start_conversation/)
-+ **Amazon Polly:** [start\_speech\_synthesis\_stream()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/polly/operations/start_speech_synthesis_stream/)
-+ **Amazon Q Business:** [chat()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/qbusiness/operations/chat/)
-+ **Amazon SageMaker Runtime HTTP2:** [invoke\_endpoint\_with\_bidirectional\_stream()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/sagemaker-runtime-http2/operations/invoke_endpoint_with_bidirectional_stream/)
-+ **Amazon Transcribe Streaming:** [start\_call\_analytics\_stream\_transcription()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/transcribe-streaming/operations/start_call_analytics_stream_transcription/), [start\_medical\_scribe\_stream()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/transcribe-streaming/operations/start_medical_scribe_stream/), [start\_medical\_stream\_transcription()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/transcribe-streaming/operations/start_medical_stream_transcription/), and [start\_stream\_transcription()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/transcribe-streaming/operations/start_stream_transcription/)
++ **Amazon Bedrock Runtime:** [invoke\_model\_with\_bidirectional\_stream()](clients/bedrock-runtime/operations/invoke_model_with_bidirectional_stream/)
++ **Amazon Connect Health:** [start\_medical\_scribe\_listening\_session()](clients/connecthealth/operations/start_medical_scribe_listening_session/)
++ **Amazon Lex Runtime V2:** [start\_conversation()](clients/lex-runtime-v2/operations/start_conversation/)
++ **Amazon Polly:** [start\_speech\_synthesis\_stream()](clients/polly/operations/start_speech_synthesis_stream/)
++ **Amazon Q Business:** [chat()](clients/qbusiness/operations/chat/)
++ **Amazon SageMaker Runtime HTTP2:** [invoke\_endpoint\_with\_bidirectional\_stream()](clients/sagemaker-runtime-http2/operations/invoke_endpoint_with_bidirectional_stream/)
++ **Amazon Transcribe Streaming:** [start\_call\_analytics\_stream\_transcription()](clients/transcribe-streaming/operations/start_call_analytics_stream_transcription/), [start\_medical\_scribe\_stream()](clients/transcribe-streaming/operations/start_medical_scribe_stream/), [start\_medical\_stream\_transcription()](clients/transcribe-streaming/operations/start_medical_stream_transcription/), and [start\_stream\_transcription()](clients/transcribe-streaming/operations/start_stream_transcription/)
 
 Each operation defines its own input and output event variants and the signal used to finish the stream. Read the operation API reference before reusing the Amazon Transcribe coordination pattern. For the Amazon Nova Sonic protocol used by Bedrock Runtime, see [Use bidirectional streaming](bedrock-bidirectional-streaming.md).

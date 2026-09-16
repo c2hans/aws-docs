@@ -111,11 +111,11 @@ For private channels with bidirectional mode enabled, you must add the AWS DevOp
    + Open the channel details, choose the **Integrations** tab, choose **Add** under Apps, and search for **AWS DevOps Agent**.
    + Enter the following command in the channel, replacing `<Region>` with your Region suffix:
 
-```text /invite @AWS DevOps Agent - <Region> ```
+``` /invite @AWS DevOps Agent - <Region> ```
 
 For example, for an Agent Space in Europe (Frankfurt):
 
-```text /invite @AWS DevOps Agent - EU (Frankfurt) ```
+``` /invite @AWS DevOps Agent - EU (Frankfurt) ```
 
 ![Instructions for inviting the AWS DevOps Agent app to a private Slack channel with the /invite command.](https://docs.aws.amazon.com/devopsagent/latest/userguide/images/slack-step7-invite.png)
 
@@ -153,7 +153,7 @@ After you complete the association with bidirectional mode enabled, set up the c
 
 1. In the associated private channel, send this exact app mention as a new top-level message:
 
-```text @AWS DevOps Agent - <Region> setup ```
+``` @AWS DevOps Agent - <Region> setup ```
 
 ![A Slack message sending the setup command to the AWS DevOps Agent app.](https://docs.aws.amazon.com/devopsagent/latest/userguide/images/slack-setup-command.png)
 

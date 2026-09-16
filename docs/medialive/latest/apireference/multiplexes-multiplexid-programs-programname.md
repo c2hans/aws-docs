@@ -521,7 +521,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/medialive-2017-10-14/DeleteMultiplexProgram)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/medialive-2017-10-14/DeleteMultiplexProgram)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/medialive-2017-10-14/DeleteMultiplexProgram)
-+ [AWS SDK for Python](/goto/boto3/medialive-2017-10-14/DeleteMultiplexProgram)
++ [AWS SDK for Python (Boto3)](/goto/boto3/medialive-2017-10-14/DeleteMultiplexProgram)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/medialive-2017-10-14/DeleteMultiplexProgram)
 
 ### DescribeMultiplexProgram
@@ -534,7 +534,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/medialive-2017-10-14/DescribeMultiplexProgram)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/medialive-2017-10-14/DescribeMultiplexProgram)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/medialive-2017-10-14/DescribeMultiplexProgram)
-+ [AWS SDK for Python](/goto/boto3/medialive-2017-10-14/DescribeMultiplexProgram)
++ [AWS SDK for Python (Boto3)](/goto/boto3/medialive-2017-10-14/DescribeMultiplexProgram)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/medialive-2017-10-14/DescribeMultiplexProgram)
 
 ### UpdateMultiplexProgram
@@ -547,5 +547,5 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/medialive-2017-10-14/UpdateMultiplexProgram)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/medialive-2017-10-14/UpdateMultiplexProgram)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/medialive-2017-10-14/UpdateMultiplexProgram)
-+ [AWS SDK for Python](/goto/boto3/medialive-2017-10-14/UpdateMultiplexProgram)
++ [AWS SDK for Python (Boto3)](/goto/boto3/medialive-2017-10-14/UpdateMultiplexProgram)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/medialive-2017-10-14/UpdateMultiplexProgram)

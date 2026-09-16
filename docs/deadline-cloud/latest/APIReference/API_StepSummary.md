@@ -29,7 +29,7 @@ Required: Yes
  ** name **   <a name="deadlinecloud-Type-StepSummary-name"></a>
 The name of the step.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 64.
+Length Constraints: Minimum length of 1. Maximum length of 512.
 Required: Yes
 
  ** stepId **   <a name="deadlinecloud-Type-StepSummary-stepId"></a>

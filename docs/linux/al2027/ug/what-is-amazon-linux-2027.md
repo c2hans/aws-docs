@@ -20,6 +20,7 @@ AL2027 is the successor to Amazon Linux 2023 (AL2023). For information about the
 + [Customized cloud-init](cloud-init.md)
 + [SELinux](selinux.md)
 + [Security updates and features](security-features.md)
++ [Compile-time hardening](compile-time-hardening.md)
 + [Networking service](networking-service.md)
 + [Core toolchain packages glibc, gcc, binutils](core-toolchain.md)
 + [Package management tool](package-management.md)

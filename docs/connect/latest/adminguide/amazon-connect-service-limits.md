@@ -314,14 +314,14 @@ Connect Customer throttling quotas are by account, and per Region, not by user a
 | [StopContactStreaming](https://docs.aws.amazon.com/connect/latest/APIReference/API_StopContactStreaming.html) | 5 | 8 |
 | [CreateParticipant](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateParticipant.html) | 5 | 8 |
 | [GetContactAttributes](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetContactAttributes.html) | 10 | 15 |
-| [UpdateContactAttributes ](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateContactAttributes .html) | 10 | 15 |
-| [DescribeContact ](https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeContact .html) | 10 | 15 |
-| [StopContact ](https://docs.aws.amazon.com/connect/latest/APIReference/API_StopContact .html) | 10 | 15 |
-| [UpdateContact ](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateContact .html) | 10 | 15 |
-| [ListContactReferences ](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListContactReferences .html) | 10 | 15 |
-| [BatchPutContact ](https://docs.aws.amazon.com/connect/latest/APIReference/API_BatchPutContact .html) | 10 | 15 |
-| [TagContact ](https://docs.aws.amazon.com/connect/latest/APIReference/API_TagContact .html) | 20 | 25 |
-| [UntagContact ](https://docs.aws.amazon.com/connect/latest/APIReference/API_UntagContact .html) | 20 | 25 |
+| [UpdateContactAttributes ](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateContactAttributes.html) | 10 | 15 |
+| [DescribeContact ](https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeContact.html) | 10 | 15 |
+| [StopContact ](https://docs.aws.amazon.com/connect/latest/APIReference/API_StopContact.html) | 10 | 15 |
+| [UpdateContact ](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateContact.html) | 10 | 15 |
+| [ListContactReferences ](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListContactReferences.html) | 10 | 15 |
+| [BatchPutContact ](https://docs.aws.amazon.com/connect/latest/APIReference/API_BatchPutContact.html) | 10 | 15 |
+| [TagContact ](https://docs.aws.amazon.com/connect/latest/APIReference/API_TagContact.html) | 20 | 25 |
+| [UntagContact ](https://docs.aws.amazon.com/connect/latest/APIReference/API_UntagContact.html) | 20 | 25 |
 | [UpdateContactRoutingData](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetContactAttributes.html) | 20 | 20 |
 | [SendChatIntegrationEvent](https://docs.aws.amazon.com/connect/latest/APIReference/API_SendChatIntegrationEvent) | 17 | 26 |
 | SendIntegrationEvent (this is a separate permission-only API used by AWS End User Messaging Social) | 10 | 15 |

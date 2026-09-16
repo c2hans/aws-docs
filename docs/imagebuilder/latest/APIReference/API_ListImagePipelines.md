@@ -49,13 +49,13 @@ Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Required: No
 
  ** [maxResults](#API_ListImagePipelines_RequestSyntax) **   <a name="imagebuilder-ListImagePipelines-request-maxResults"></a>
-Specify the maximum number of items to return in a request.
+The maximum number of items to return in a single request.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 25.
 Required: No
 
  ** [nextToken](#API_ListImagePipelines_RequestSyntax) **   <a name="imagebuilder-ListImagePipelines-request-nextToken"></a>
-A token to specify where to start paginating. This is the nextToken from a previously truncated response.
+A token to specify where to start paginating. Use the `nextToken` value from a previously truncated response.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 65535.
 Required: No
@@ -202,5 +202,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/imagebuilder-2019-12-02/ListImagePipelines)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/imagebuilder-2019-12-02/ListImagePipelines)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/imagebuilder-2019-12-02/ListImagePipelines)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/imagebuilder-2019-12-02/ListImagePipelines)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/imagebuilder-2019-12-02/ListImagePipelines)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/imagebuilder-2019-12-02/ListImagePipelines)

@@ -101,12 +101,12 @@ You can change the storage type of the green DB instance to gp2, gp3, io1, or io
 You can also choose to increase or decrease allocated storage in the green environment. However, a storage reduction only occurs if the target allocated storage is at least 20% more than the current storage usage. If you decrease the allocated storage, Amazon RDS initiates a storage configuration upgrade. For more information, see [Upgrade the storage configuration](#blue-green-deployments-storage). The minimum target storage is calculated as:
 
 ```
-Minimum Target Storage = Total Allocated Storage × Current Apparent Utilization × 1.2
+Minimum Target Storage = Total Allocated Storage × (Current Utilization ÷ 100) × 1.2
 ```
 
 1. Total Allocated Storage: The storage capacity provisioned for your DB instance, visible in the RDS console.
 
-1. Current Apparent Utilization: The percentage of allocated storage in use. To estimate it, use the `os.fileSys.usedPercent` metric from Performance Insights (Database Insights) or Enhanced Monitoring.
+1. Current Utilization: The percentage of allocated storage in use, from the `os.fileSys.usedPercent` metric in Enhanced Monitoring.
 
 **Note**
 Since storage utilization fluctuates over time, we recommend setting the target storage slightly above the calculated minimum to account for potential increases during the reduction process.

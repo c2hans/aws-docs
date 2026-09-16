@@ -81,6 +81,7 @@ Content-type: application/json
          ]
       }
    ],
+   "dryRun": {{boolean}},
    "name": "{{string}}",
    "tags": {
       "{{string}}" : "{{string}}"
@@ -99,7 +100,7 @@ The request does not use any URI parameters.
 The request accepts the following data in JSON format.
 
  ** [clientToken](#API_CreateDistributionConfiguration_RequestSyntax) **   <a name="imagebuilder-CreateDistributionConfiguration-request-clientToken"></a>
-Unique, case-sensitive identifier you provide to ensure idempotency of the request. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
+A unique, case-sensitive identifier you provide to ensure that the operation completes no more than one time. If this token matches a previous request, the service ignores the request, but does not return an error. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: Yes
@@ -114,6 +115,11 @@ Required: No
 The distributions of the distribution configuration.
 Type: Array of [Distribution](API_Distribution.md) objects
 Required: Yes
+
+ ** [dryRun](#API_CreateDistributionConfiguration_RequestSyntax) **   <a name="imagebuilder-CreateDistributionConfiguration-request-dryRun"></a>
+Validates the required permissions and request parameters without making the request. If validation succeeds, the operation returns a `DryRunOperationException` error response.
+Type: Boolean
+Required: No
 
  ** [name](#API_CreateDistributionConfiguration_RequestSyntax) **   <a name="imagebuilder-CreateDistributionConfiguration-request-name"></a>
 The name of the distribution configuration.
@@ -179,6 +185,10 @@ HTTP Status Code: 429
 These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
 HTTP Status Code: 400
 
+ ** DryRunOperationException **
+The dry run operation of the resource was successful, and no resources or mutations were actually performed due to the dry run flag in the request.
+HTTP Status Code: 412
+
  ** ForbiddenException **
 You are not authorized to perform the requested operation.
 HTTP Status Code: 403
@@ -227,5 +237,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/imagebuilder-2019-12-02/CreateDistributionConfiguration)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/imagebuilder-2019-12-02/CreateDistributionConfiguration)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/imagebuilder-2019-12-02/CreateDistributionConfiguration)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/imagebuilder-2019-12-02/CreateDistributionConfiguration)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/imagebuilder-2019-12-02/CreateDistributionConfiguration)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/imagebuilder-2019-12-02/CreateDistributionConfiguration)

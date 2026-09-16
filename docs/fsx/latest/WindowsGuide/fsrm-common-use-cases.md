@@ -136,7 +136,7 @@ The following Regular Expression will search files for text with the pattern XXX
 
    ```
    Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
-       Set-FSxFSRMClassification -Continuous $true
+       Set-FSxFSRMClassification -Continuous:$true
    }
    ```
 
@@ -195,7 +195,7 @@ This example shows how to classify files by retention period based on their fold
 
    ```
    Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
-       Set-FSxFSRMClassification -Continuous $true
+       Set-FSxFSRMClassification -Continuous:$true
    }
    ```
 

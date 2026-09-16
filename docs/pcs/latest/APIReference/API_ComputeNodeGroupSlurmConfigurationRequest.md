@@ -10,6 +10,11 @@ Additional options related to the Slurm scheduler.
 ## Contents
 <a name="API_ComputeNodeGroupSlurmConfigurationRequest_Contents"></a>
 
+ ** gresCustomSettings **   <a name="PCS-Type-ComputeNodeGroupSlurmConfigurationRequest-gresCustomSettings"></a>
+The additional Slurm `gres.conf` records for the compute node group. Each item is a map of `gres.conf` attribute names to values that describes one `gres.conf` record, such as a GPU topology, MIG, MPS, or custom GRES entry. AWS PCS adds the `NodeName=` prefix and merges these records with the GPU record it derives from the instance type.
+Type: Array of string to string maps
+Required: No
+
  ** scaleDownIdleTimeInSeconds **   <a name="PCS-Type-ComputeNodeGroupSlurmConfigurationRequest-scaleDownIdleTimeInSeconds"></a>
 The time (in seconds) before an idle node is scaled down. If not specified, the cluster-level setting applies. This overrides the cluster-level `scaleDownIdleTimeInSeconds` setting. A value of `-1` removes the override and applies the cluster-level setting to this compute node group. Requires Slurm version 25.11 or later.
 Type: Integer

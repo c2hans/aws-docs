@@ -413,7 +413,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/medialive-2017-10-14/DeleteCloudWatchAlarmTemplate)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/medialive-2017-10-14/DeleteCloudWatchAlarmTemplate)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/medialive-2017-10-14/DeleteCloudWatchAlarmTemplate)
-+ [AWS SDK for Python](/goto/boto3/medialive-2017-10-14/DeleteCloudWatchAlarmTemplate)
++ [AWS SDK for Python (Boto3)](/goto/boto3/medialive-2017-10-14/DeleteCloudWatchAlarmTemplate)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/medialive-2017-10-14/DeleteCloudWatchAlarmTemplate)
 
 ### GetCloudWatchAlarmTemplate
@@ -426,7 +426,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/medialive-2017-10-14/GetCloudWatchAlarmTemplate)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/medialive-2017-10-14/GetCloudWatchAlarmTemplate)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/medialive-2017-10-14/GetCloudWatchAlarmTemplate)
-+ [AWS SDK for Python](/goto/boto3/medialive-2017-10-14/GetCloudWatchAlarmTemplate)
++ [AWS SDK for Python (Boto3)](/goto/boto3/medialive-2017-10-14/GetCloudWatchAlarmTemplate)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/medialive-2017-10-14/GetCloudWatchAlarmTemplate)
 
 ### CorsCloudwatch\_alarm\_templatesIdentifier
@@ -439,7 +439,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/medialive-2017-10-14/CorsCloudwatch_alarm_templatesIdentifier)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/medialive-2017-10-14/CorsCloudwatch_alarm_templatesIdentifier)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/medialive-2017-10-14/CorsCloudwatch_alarm_templatesIdentifier)
-+ [AWS SDK for Python](/goto/boto3/medialive-2017-10-14/CorsCloudwatch_alarm_templatesIdentifier)
++ [AWS SDK for Python (Boto3)](/goto/boto3/medialive-2017-10-14/CorsCloudwatch_alarm_templatesIdentifier)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/medialive-2017-10-14/CorsCloudwatch_alarm_templatesIdentifier)
 
 ### UpdateCloudWatchAlarmTemplate
@@ -452,5 +452,5 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/medialive-2017-10-14/UpdateCloudWatchAlarmTemplate)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/medialive-2017-10-14/UpdateCloudWatchAlarmTemplate)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/medialive-2017-10-14/UpdateCloudWatchAlarmTemplate)
-+ [AWS SDK for Python](/goto/boto3/medialive-2017-10-14/UpdateCloudWatchAlarmTemplate)
++ [AWS SDK for Python (Boto3)](/goto/boto3/medialive-2017-10-14/UpdateCloudWatchAlarmTemplate)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/medialive-2017-10-14/UpdateCloudWatchAlarmTemplate)

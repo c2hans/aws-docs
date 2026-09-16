@@ -190,6 +190,10 @@ Type: [OperatorResponse](API_OperatorResponse.md) object
 The Amazon Resource Name (ARN) of the Outpost.
 Type: String
 
+ **ownerId**
+The ID of the Amazon Web Services account that owns the volume.
+Type: String
+
  **requestId**
 The ID of the request.
 Type: String
@@ -224,6 +228,10 @@ Type: Array of [Tag](API_Tag.md) objects
  **throughput**
 The throughput that the volume supports, in MiB/s.
 Type: Integer
+
+ **volumeArn**
+The Amazon Resource Name (ARN) of the volume.
+Type: String
 
  **volumeId**
 The ID of the volume.
@@ -376,5 +384,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/CreateVolume)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/CreateVolume)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/CreateVolume)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CreateVolume)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CreateVolume)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CreateVolume)

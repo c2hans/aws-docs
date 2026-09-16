@@ -5,6 +5,8 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-ope
 # OpenAI
 <a name="model-cards-openai"></a>
 
+You can use all models on this page with both the Responses API and the Chat Completions API on `bedrock-mantle`. See each model card for details.
+
 The following OpenAI models are available in Amazon Bedrock:
 
 | **Model** | **Description** |

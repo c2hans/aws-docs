@@ -10,6 +10,11 @@ Image status and the reason for that status.
 ## Contents
 <a name="API_ImageState_Contents"></a>
 
+ ** failureContext **   <a name="imagebuilder-Type-ImageState-failureContext"></a>
+The details about the failure, for images that failed to complete. Image Builder only sets this property when the image status is `FAILED`.
+Type: [ImageFailureContext](API_ImageFailureContext.md) object
+Required: No
+
  ** reason **   <a name="imagebuilder-Type-ImageState-reason"></a>
 The reason for the status of the image.
 Type: String

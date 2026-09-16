@@ -266,7 +266,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/macie2-2020-01-01/GetFindingsPublicationConfiguration)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/macie2-2020-01-01/GetFindingsPublicationConfiguration)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/macie2-2020-01-01/GetFindingsPublicationConfiguration)
-+ [AWS SDK for Python](/goto/boto3/macie2-2020-01-01/GetFindingsPublicationConfiguration)
++ [AWS SDK for Python (Boto3)](/goto/boto3/macie2-2020-01-01/GetFindingsPublicationConfiguration)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/macie2-2020-01-01/GetFindingsPublicationConfiguration)
 
 ### PutFindingsPublicationConfiguration
@@ -279,5 +279,5 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/macie2-2020-01-01/PutFindingsPublicationConfiguration)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/macie2-2020-01-01/PutFindingsPublicationConfiguration)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/macie2-2020-01-01/PutFindingsPublicationConfiguration)
-+ [AWS SDK for Python](/goto/boto3/macie2-2020-01-01/PutFindingsPublicationConfiguration)
++ [AWS SDK for Python (Boto3)](/goto/boto3/macie2-2020-01-01/PutFindingsPublicationConfiguration)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/macie2-2020-01-01/PutFindingsPublicationConfiguration)

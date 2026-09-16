@@ -11,17 +11,17 @@ Amazon EBS-specific block device mapping specifications.
 <a name="API_EbsInstanceBlockDeviceSpecification_Contents"></a>
 
  ** deleteOnTermination **   <a name="imagebuilder-Type-EbsInstanceBlockDeviceSpecification-deleteOnTermination"></a>
-Use to configure delete on termination of the associated device.
+Specifies whether to delete the associated device on termination.
 Type: Boolean
 Required: No
 
  ** encrypted **   <a name="imagebuilder-Type-EbsInstanceBlockDeviceSpecification-encrypted"></a>
-Use to configure device encryption.
+Specifies whether to encrypt the device.
 Type: Boolean
 Required: No
 
  ** iops **   <a name="imagebuilder-Type-EbsInstanceBlockDeviceSpecification-iops"></a>
-Use to configure device IOPS.
+The IOPS value for the device. Required only when volumeType is io1 or io2.
 Type: Integer
 Valid Range: Minimum value of 100. Maximum value of 64000.
 Required: No
@@ -45,13 +45,13 @@ Valid Range: Minimum value of 125. Maximum value of 1000.
 Required: No
 
  ** volumeSize **   <a name="imagebuilder-Type-EbsInstanceBlockDeviceSpecification-volumeSize"></a>
-Use to override the device's volume size.
+Overrides the volume size for the device.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 16000.
 Required: No
 
  ** volumeType **   <a name="imagebuilder-Type-EbsInstanceBlockDeviceSpecification-volumeType"></a>
-Use to override the device's volume type.
+Overrides the volume type for the device.
 Type: String
 Valid Values: `standard | io1 | io2 | gp2 | gp3 | sc1 | st1`
 Required: No

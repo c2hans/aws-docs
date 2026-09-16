@@ -38,7 +38,7 @@ async def create_client() -> AsyncSNSClient:
 ## Create a topic
 <a name="sns-create-topic"></a>
 
-For request and response details, see the [create\_topic()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/sns/operations/create_topic/) API reference.
+For request and response details, see the [create\_topic()](clients/sns/operations/create_topic/) API reference.
 
 A *topic* is a logical grouping of communication channels that defines which systems to send a message to, for example, fanning out a message to AWS Lambda and an HTTP webhook. You send messages to Amazon SNS, then they're distributed to the channels defined in the topic. This makes the messages available to subscribers.
 
@@ -67,7 +67,7 @@ async def create_topic(client: AsyncSNSClient, topic_name: str) -> str:
 ## List topics
 <a name="sns-list-topics"></a>
 
-For request and response details, see the [list\_topics()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/sns/operations/list_topics/) API reference.
+For request and response details, see the [list\_topics()](clients/sns/operations/list_topics/) API reference.
 
 `list_topics` can return a partial result. Continue with `next_token` until Amazon SNS returns no continuation token.
 
@@ -102,7 +102,7 @@ async def list_topics(client: AsyncSNSClient) -> list[str]:
 ## Subscribe an endpoint to a topic
 <a name="sns-subscribe-endpoint"></a>
 
-For request and response details, see the [subscribe()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/sns/operations/subscribe/) API reference.
+For request and response details, see the [subscribe()](clients/sns/operations/subscribe/) API reference.
 
 After you create a topic, you can configure which communication channels will be endpoints for that topic. Messages are distributed to these endpoints after Amazon SNS receives them.
 
@@ -140,7 +140,7 @@ Different protocols have different endpoint formats and confirmation behavior. D
 ## Publish a message to a topic
 <a name="sns-publish-message"></a>
 
-For request and response details, see the [publish()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/sns/operations/publish/) API reference.
+For request and response details, see the [publish()](clients/sns/operations/publish/) API reference.
 
 After you have a topic and one or more endpoints configured for it, you can publish a message to it.
 
@@ -180,7 +180,7 @@ async def publish_to_topic(
 ## Unsubscribe an endpoint from a topic
 <a name="sns-unsubscribe-endpoint"></a>
 
-For request and response details, see the [unsubscribe()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/sns/operations/unsubscribe/) API reference.
+For request and response details, see the [unsubscribe()](clients/sns/operations/unsubscribe/) API reference.
 
 You can remove the communication channels configured as endpoints for a topic. After doing that, the topic itself continues to exist and distributes messages to any other endpoints configured for that topic.
 
@@ -206,7 +206,7 @@ async def unsubscribe(client: AsyncSNSClient, subscription_arn: str) -> None:
 ## Delete a topic
 <a name="sns-delete-topic"></a>
 
-For request and response details, see the [delete\_topic()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/sns/operations/delete_topic/) API reference.
+For request and response details, see the [delete\_topic()](clients/sns/operations/delete_topic/) API reference.
 
 Delete a temporary topic when it is no longer needed. Deleting a topic also deletes its subscriptions.
 

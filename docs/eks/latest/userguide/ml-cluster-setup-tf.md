@@ -788,7 +788,7 @@ terraform apply -var 'nodepools={"spot-ondemand"={}}'
 This drops `reserved` from the NodePool capacity-type requirements and destroys the ODCR, and leaves the cluster, monitoring stack, and S3 bucket in place.
 
 **Important**
-Cancelling a reservation does not terminate instances already running on it. Those instances keep running at standard On-Demand rates until they are terminated. Delete the GPU workloads first, as shown above, so the reserved node drains before the reservation is released.
+Cancelling a reservation does not terminate instances already running on it. Those instances keep running at standard On-Demand rates until they are terminated. Delete the GPU workloads first, as shown previously, so the reserved node drains before the reservation is released.
 
 ### Destroy the cluster and all Terraform-managed resources
 <a name="cluster-setup-tf-cleanup-destroy"></a>
@@ -810,7 +810,7 @@ terraform destroy
 The model weights S3 bucket is created with `force_destroy = true`, so `terraform destroy` deletes the bucket along with any model weights you uploaded to it. Copy anything you want to keep to another location first.
 
 **Note**
-The repository also ships a `scripts/cleanup.sh` helper that runs the drain and destroy steps above and then sweeps any orphaned EBS volumes tagged with the cluster name. Run it from inside the `terraform/<mode>/` directory you applied from, and pass `--auto-approve` to skip the Terraform confirmation prompt.
+The repository also ships a `scripts/cleanup.sh` helper that runs the preceding drain and destroy steps and then sweeps any orphaned EBS volumes tagged with the cluster name. Run it from inside the `terraform/<mode>/` directory you applied from, and pass `--auto-approve` to skip the Terraform confirmation prompt.
 
 ### Verify the reservation is gone
 <a name="cluster-setup-tf-cleanup-verify"></a>

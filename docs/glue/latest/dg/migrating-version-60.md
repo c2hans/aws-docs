@@ -39,7 +39,7 @@ If you upgrade an Iceberg table to format version 3, you can't downgrade it back
 + **Spark Declarative Pipelines (SDP)** — A new declarative framework for defining end-to-end data pipelines using SQL or DataFrame API, with support for streaming tables and materialized views. For more information, see [Spark Declarative Pipelines](spark-declarative-pipelines.md).
 + **Spark Connect for Interactive Sessions** — Enables thin-client connectivity to AWS Glue Interactive Sessions through Spark Connect protocol, supporting remote development workflows.
 + **Arrow-native Python UDFs/UDTFs** — Improved performance for Python user-defined functions using Apache Arrow columnar format natively.
-+ **Customer-managed or service-generated Python virtual environment** (`--python-virtual-env`) — You can build and provide your own Python venv that AWS Glue attaches to Spark drivers and executors at runtime, providing full control over dependency management. When existing jobs are migrated to AWS Glue 6.0, AWS Glue automatically generates this virtual environment if required.
++ **Customer-managed or service-generated Python virtual environment** (`--python-virtual-env`) — You can build and provide your own Python venv that AWS Glue attaches to Spark drivers and executors at runtime, providing full control over dependency management. When existing jobs are migrated to AWS Glue 6.0, AWS Glue automatically generates this virtual environment if required. For more information, see [Using Python virtual environments with AWS Glue](aws-glue-programming-python-virtual-environments.md).
 + **Streaming enhancements** — Real-time mode for stateless streaming with millisecond-level latency. For more information, see [Enabling real-time mode for streaming jobs](streaming-chapter.md#glue-streaming-real-time-mode).
 + **Connector upgrades** — Updated Amazon Redshift, MongoDB, Snowflake, and other connectors. See [Appendix C: Connector upgrades](#migrating-version-60-appendix-connector) for full version details.
 
@@ -102,7 +102,7 @@ All existing job parameters and major features that exist in AWS Glue 5.1 will e
   + ANSI mode is ON by default. Integer overflow, invalid casts, and array index out-of-bounds throw exceptions instead of returning NULL.
   + `spark.sql.legacy.timeParserPolicy` default changed. Date/time parsing might behave differently.
   + Implicit string-to-numeric conversions in SQL might fail under ANSI mode.
-+ **Python version:** Python 3.13 is the runtime. The `--additional-python-modules` feature continues to work but is deprecated. Consider migrating to `--python-virtual-env` for full dependency control.
++ **Python version:** Python 3.13 is the runtime. The `--additional-python-modules` feature continues to work. Consider migrating to `--python-virtual-env` for full dependency control. For migration steps, see [Using Python virtual environments with AWS Glue](aws-glue-programming-python-virtual-environments.md).
 + **AWS SDK:** Only SDK v2 is available. If your scripts use boto3 (Python), no change is needed — boto3 continues to work. For Scala/Java jobs using the AWS SDK directly, migrate to v2 APIs.
 
 Refer to the Spark migration documentation:

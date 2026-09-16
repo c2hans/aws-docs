@@ -7,6 +7,9 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_U
 
 Updates a fleet.
 
+**Note**
+Workers that are running when you call `UpdateFleet` keep the instance type and capabilities that they launched with until they scale in. Deadline Cloud can schedule jobs that you submit after the update on these existing workers, so the new configuration might not take effect immediately. To make sure that all workers use the new configuration, set `maxWorkerCount` to 0, use the `ListWorkers` operation to confirm that the fleet has no workers, and then restore `maxWorkerCount`.
+
 ## Request Syntax
 <a name="API_UpdateFleet_RequestSyntax"></a>
 
@@ -186,5 +189,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/deadline-2023-10-12/UpdateFleet)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/deadline-2023-10-12/UpdateFleet)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/deadline-2023-10-12/UpdateFleet)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/deadline-2023-10-12/UpdateFleet)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/deadline-2023-10-12/UpdateFleet)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/deadline-2023-10-12/UpdateFleet)

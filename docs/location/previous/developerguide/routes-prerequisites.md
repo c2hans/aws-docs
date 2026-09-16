@@ -12,6 +12,9 @@ This page outlines prerequisites to get started with the service's routing featu
 
 Before you can calculate a route, create a route calculator resource in your AWS account.
 
+**Note**
+For new code, use the latest `CalculateRoutes` operation under `geo-routes` instead of creating a route calculator resource. The latest API has no route calculator resource and no data provider to select at resource-creation time. See the latest [Amazon Location Service Routes](https://docs.aws.amazon.com/location/latest/developerguide/routes.html) developer guide.
+
 When you create a route calculator resource, you can choose from the data providers available:
 
 1. **Esri** – For more information about Esri's coverage in your region of interest, see [Esri details on street networks and traffic coverage](https://doc.arcgis.com/en/arcgis-online/reference/network-coverage.htm).
@@ -51,7 +54,7 @@ You can do this using the Amazon Location Service console, the AWS CLI, or the A
 
 **To create a route calculator resource using the Amazon Location APIs**
 
-Use the `[CreateRouteCalculator](https://docs.aws.amazon.com/location-routes/latest/APIReference/API_CreateRouteCalculator.html)` operation from the Amazon Location Places APIs.
+Use the `[CreateRouteCalculator](https://docs.aws.amazon.com/location/previous/APIReference/API_CreateRouteCalculator.html)` operation from the Amazon Location Routes API.
 
 The following example is an API request to create a route calculator resource called {{ExampleCalculator}} using the data provider {{Esri}}.
 

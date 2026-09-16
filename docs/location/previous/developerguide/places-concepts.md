@@ -2,16 +2,18 @@
 source_url: https://docs.aws.amazon.com/location/previous/developerguide/places-concepts.html
 ---
 
-# Learn about Places search in Amazon Location Service
+# Places (V1) concepts
 <a name="places-concepts"></a>
 
-**Note**
-We released a new version of the Places API, see the updated [Places Developer Guide](https://docs.aws.amazon.com/location/latest/developerguide/places.html) for revised information.
+**Important**
+**This page documents the previous Places API (V1). Use it only for existing applications.** The Places V2 API is the latest version. Use it for all new applications; see the latest [Amazon Location Service Places](https://docs.aws.amazon.com/location/latest/developerguide/places.html) developer guide.
+The latest operations are `Geocode`, `ReverseGeocode`, `SearchText`, `SearchNearby`, `Suggest`, `Autocomplete`, and `GetPlace`. These operations are under the `geo-places` namespace. They are exposed as `@aws-sdk/client-geo-places` for JavaScript and `boto3.client('geo-places')` for Python.
+The `SearchPlaceIndexForText`, `SearchPlaceIndexForPosition`, `SearchPlaceIndexForSuggestions`, and `PlaceIndex` resources described below are previous-generation. Use them only for existing applications.
 
 A key function of Amazon Location Service is the ability to search the geolocation information. Amazon Location provides this functionality via the *Place index* resource.
 
 **Note**
-For information about how to use place index resources to search in practice, see [Searching place and geolocation data using Amazon Location](searching-for-places.md).
+For information about how to use place index resources to search in practice, see [Searching place and geolocation data with Places (V1)](searching-for-places.md).
 
 You can use the place index APIs to search for:
 + Points of interest, such as restaurants and landmarks. Search by name, and optional location to search around, and receive a list of options ordered by relevance.
@@ -39,14 +41,17 @@ The following shows you how to create and use place index resources:
 ## Geocoding concepts
 <a name="geocoding-concepts"></a>
 
-An Amazon Location place index provides an action called [`SearchPlaceIndexForText`](https://docs.aws.amazon.com/location-places/latest/APIReference/API_SearchPlaceIndexForText.html) that allows you to specify text to search. For example, you can search for:
+An Amazon Location place index provides an action called [`SearchPlaceIndexForText`](https://docs.aws.amazon.com/location/previous/APIReference/API_SearchPlaceIndexForText.html) that allows you to specify text to search. For example, you can search for:
 + **Places** – a search for **Paris** could return the location of the city in France.
 + **Businesses** – a search for **coffee shop** could return a list of coffee shops, including their names and locations. You can also specify a location to search around or a bounding box to search within, to make the results more relevant. In this case, providing a location in downtown Seattle, Washington, would return coffee shops in that area.
 + **Addresses** – a search for **1600 Pennsylvania Ave, Washington D.C.** could return the location of the White House in the United States (which is at that address).
 
 Searching for text in this way is generally referred to as **geocoding**, which involves finding a geographic location for the address or place.
 
-Amazon Location Service also provides a **reverse geocoding** action called [`SearchPlaceIndexForPosition`](https://docs.aws.amazon.com/location-places/latest/APIReference/API_SearchPlaceIndexForPosition.html). This takes a geographic location and returns the address, business, or other information about what is at that location.
+Amazon Location Service also provides a **reverse geocoding** action called [`SearchPlaceIndexForPosition`](https://docs.aws.amazon.com/location/previous/APIReference/API_SearchPlaceIndexForPosition.html). This takes a geographic location and returns the address, business, or other information about what is at that location.
+
+**Note**
+For new code, use the latest [`Geocode`](https://docs.aws.amazon.com/location/latest/APIReference/API_geoplaces_Geocode.html) and [`SearchText`](https://docs.aws.amazon.com/location/latest/APIReference/API_geoplaces_SearchText.html) operations for text search, and [`ReverseGeocode`](https://docs.aws.amazon.com/location/latest/APIReference/API_geoplaces_ReverseGeocode.html) for reverse geocoding, under `geo-places`. These do not require a place index resource. See the latest [Amazon Location Service Places](https://docs.aws.amazon.com/location/latest/developerguide/places.html) developer guide.
 
 ## Search results
 <a name="search-results-concepts"></a>
@@ -70,7 +75,7 @@ In an interactive application, you can use relevance to help decide whether to a
 ## Address results
 <a name="address-concepts"></a>
 
-You can search for addresses with Amazon Location Service using the same [`SearchPlaceIndexForText`](https://docs.aws.amazon.com/location-places/latest/APIReference/API_SearchPlaceIndexForText.html) action. The more information that you provide, the more likely the address returned will match the one given. For example, **123 Main St** is less likely to find a correct result than **123 Main St, Anytown, California, 90210**.
+You can search for addresses with Amazon Location Service using the same [`SearchPlaceIndexForText`](https://docs.aws.amazon.com/location/previous/APIReference/API_SearchPlaceIndexForText.html) action. The more information that you provide, the more likely the address returned will match the one given. For example, **123 Main St** is less likely to find a correct result than **123 Main St, Anytown, California, 90210**.
 
 Addresses have multiple attributes, such as the street number, street, city, region, and postal code, etc. Those attributes are used to find an address in the place index that matches as many aspects as possible. The more attributes found, the more relevant the match is considered, and the more likely it will be returned.
 
@@ -110,12 +115,15 @@ When looking at how you are going to use the results of your queries to Amazon L
 
 **Place index resource**
 Allows you to choose a data source to support search queries. For example, you can search for points of interest, addresses, or coordinates. When a search query is sent to a place index resource, it's fulfilled using the resource's configured data source.
+The latest API has no place index resource. Search operations under `geo-places` are called directly. See the latest [Amazon Location Service Places](https://docs.aws.amazon.com/location/latest/developerguide/places.html) developer guide.
 
 **Geocoding**
 Geocoding is the process of taking a text input, searching for it in the place index, and returning results with position.
+For new code, see the latest [`Geocode`](https://docs.aws.amazon.com/location/latest/APIReference/API_geoplaces_Geocode.html) operation under `geo-places`.
 
 **Reverse geocoding**
 Reverse geocoding is the process of taking a position and returning information about that position from within the place index, such as the address, city, or business at that location.
+For new code, see the latest [`ReverseGeocode`](https://docs.aws.amazon.com/location/latest/APIReference/API_geoplaces_ReverseGeocode.html) operation under `geo-places`.
 
 **Relevance**
 Relevance is how closely a result matches the input. It is not a measure of correctness.

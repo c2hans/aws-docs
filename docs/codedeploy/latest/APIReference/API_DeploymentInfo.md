@@ -78,6 +78,15 @@ Required: No
 Type: String
 Required: No
 
+ ** deploymentMode **   <a name="CodeDeploy-Type-DeploymentInfo-deploymentMode"></a>
+The deployment's type. Valid values are:
++  `STANDARD`: The deployment installed the specified revision.
++  `RESTART`: The deployment restarted the application on the target instances using the revision from the deployment group's last successful deployment, without downloading a new revision.
+This field is absent for deployments created before `deploymentMode` existed, and for `STANDARD` deployments. An absent value must not be interpreted as `STANDARD`; it simply means no value was recorded either way.
+Type: String
+Valid Values: `STANDARD | RESTART`
+Required: No
+
  ** deploymentOverview **   <a name="CodeDeploy-Type-DeploymentInfo-deploymentOverview"></a>
 A summary of the deployment status of the instances in the deployment.
 Type: [DeploymentOverview](API_DeploymentOverview.md) object

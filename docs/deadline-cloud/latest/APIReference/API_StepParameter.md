@@ -13,7 +13,7 @@ The details of a step parameter.
  ** name **   <a name="deadlinecloud-Type-StepParameter-name"></a>
 The name of the parameter.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 64.
+Length Constraints: Minimum length of 1. Maximum length of 512.
 Required: Yes
 
  ** type **   <a name="deadlinecloud-Type-StepParameter-type"></a>

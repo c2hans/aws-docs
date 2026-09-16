@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-python/v1/guide/bedrock-converse
 
 Converse is the portable conversation API for Amazon Bedrock Runtime. A conversation is a list of *messages*, each with a role and a list of typed *content blocks*. Use it when you want one request format that works across supported models, so you can switch models without rewriting request code.
 
-The following example runs a complete two-turn conversation. For request and response details, see the [converse()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/bedrock-runtime/operations/converse/) API reference.
+The following example runs a complete two-turn conversation. For request and response details, see the [converse()](clients/bedrock-runtime/operations/converse/) API reference.
 
  **Imports**
 

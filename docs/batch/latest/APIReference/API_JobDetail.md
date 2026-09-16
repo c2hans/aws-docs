@@ -88,7 +88,7 @@ Type: [EksPropertiesDetail](API_EksPropertiesDetail.md) object
 Required: No
 
  ** isCancelled **   <a name="Batch-Type-JobDetail-isCancelled"></a>
-Indicates whether the job is canceled.
+Indicates whether the job is cancelled.
 Type: Boolean
 Required: No
 

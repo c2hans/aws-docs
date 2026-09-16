@@ -133,7 +133,7 @@ When the conversation reaches a supported node with a custom modality attached, 
 |  |  |
 | --- |--- |
 | **Schema** | Defines the structure of data the modality accepts, such as text, image URLs, links, IDs, or metadata. |
-| **Frontend rendering** | Defines how the frontend displays that data through Touchpoint SDK or your own custom UI. |
+| **Component** | Defines how the frontend displays that data through Touchpoint SDK or your own custom UI. |
 
 **To create a custom modality**
 
@@ -141,7 +141,7 @@ When the conversation reaches a supported node with a custom modality attached, 
 
 1. Select **Modalities**.
 
-1. Select **Create modality**.
+1. Select **New modality**.
 
 1. Enter a clear name.
 
@@ -166,7 +166,7 @@ Enable **Sensitive** for fields that may contain:
 
 Sensitive fields help prevent those values from appearing in conversation logs where supported.
 
-The **Generated code** tab lets you retrieve schema output for use in your frontend codebase.
+The **Code generation** tab lets you retrieve schema output for use in your frontend codebase.
 
 Depending on what is available in your workspace, this may include formats such as:
 + JSON schema
@@ -254,8 +254,8 @@ When that happens, use transformation tools to reshape the data before sending i
 
 |  |  |
 | --- |--- |
-| **Generative map** | Uses generative AI to reshape data into the target schema. Helpful for prototyping or variable response structures. |
-| **Deterministic map** | Maps each item in a list into the expected list-item schema. Useful for carousels and repeated cards. |
-| **Morph** | Deterministically builds structured payloads from complex or nested data. Useful when you need precise control. |
+| **Transform node with Morph** | Uses generative AI to reshape the data into the target schema. Helpful for prototyping or variable response structures. |
+| **Transform node with Generative map** | Maps each item in a list into the expected list-item schema. Useful for carousels and repeated cards. |
+| **Loop node with Define node** | Deterministically builds the structure from complex or nested data. Useful when you need precise control. |
 
 Use generative transformation when speed and flexibility are important. Use deterministic transformation when structure, predictability, or compliance matters more.

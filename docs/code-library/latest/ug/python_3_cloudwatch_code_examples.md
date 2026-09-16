@@ -22,6 +22,51 @@ Each example includes a link to the complete source code, where you can find ins
 ## Actions
 <a name="actions"></a>
 
+### `DeleteAlarmMuteRule`
+<a name="cloudwatch_DeleteAlarmMuteRule_python_3_topic"></a>
+
+The following code example shows how to use `DeleteAlarmMuteRule`.
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch#code-examples).
+
+```
+class CloudWatchOTelWrapper:
+    """Encapsulates the OpenTelemetry-oriented Amazon CloudWatch operations."""
+
+    def __init__(self, cloudwatch_client):
+        """
+        :param cloudwatch_client: A Boto3 CloudWatch client. The OpenTelemetry
+                                  operations are only available on the client
+                                  interface, not on the higher-level
+                                  ``boto3.resource("cloudwatch")`` interface.
+        """
+        self.cloudwatch_client = cloudwatch_client
+
+    @classmethod
+    def from_client(cls):
+        """
+        Creates a wrapper backed by a default CloudWatch client.
+
+        :return: A CloudWatchOTelWrapper.
+        """
+        return cls(boto3.client("cloudwatch"))
+
+    def delete_alarm_mute_rule(self, name):
+        """
+        Deletes an alarm mute rule.
+
+        :param name: The name of the mute rule.
+        """
+        try:
+            self.cloudwatch_client.delete_alarm_mute_rule(AlarmMuteRuleName=name)
+            logger.info("Deleted alarm mute rule %s.", name)
+        except ClientError:
+            logger.exception("Couldn't delete alarm mute rule %s.", name)
+            raise
+```
++  For API details, see [DeleteAlarmMuteRule](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/DeleteAlarmMuteRule) in *AWS SDK for Python (Boto3) API Reference*.
+
 ### `DeleteAlarms`
 <a name="cloudwatch_DeleteAlarms_python_3_topic"></a>
 
@@ -62,6 +107,71 @@ class CloudWatchWrapper:
             raise
 ```
 +  For API details, see [DeleteAlarms](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/DeleteAlarms) in *AWS SDK for Python (Boto3) API Reference*.
+
+### `DescribeAlarmContributors`
+<a name="cloudwatch_DescribeAlarmContributors_python_3_topic"></a>
+
+The following code example shows how to use `DescribeAlarmContributors`.
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch#code-examples).
+
+```
+class CloudWatchOTelWrapper:
+    """Encapsulates the OpenTelemetry-oriented Amazon CloudWatch operations."""
+
+    def __init__(self, cloudwatch_client):
+        """
+        :param cloudwatch_client: A Boto3 CloudWatch client. The OpenTelemetry
+                                  operations are only available on the client
+                                  interface, not on the higher-level
+                                  ``boto3.resource("cloudwatch")`` interface.
+        """
+        self.cloudwatch_client = cloudwatch_client
+
+    @classmethod
+    def from_client(cls):
+        """
+        Creates a wrapper backed by a default CloudWatch client.
+
+        :return: A CloudWatchOTelWrapper.
+        """
+        return cls(boto3.client("cloudwatch"))
+
+    def describe_alarm_contributors(self, alarm_name):
+        """
+        Gets the contributors for a PromQL alarm. Each contributor is one series that
+        the alarm's query matched, identified by its label set. This is how you find out
+        *which* hosts, services, or pods are breaching, rather than only that something
+        is.
+
+        :param alarm_name: The name of the PromQL alarm.
+        :return: The list of contributors. Each contributor has a ContributorId, a
+                 ContributorAttributes map of the labels that identify the series, a
+                 StateReason, and the time it last changed state.
+        """
+        contributors = []
+        try:
+            next_token = None
+            while True:
+                kwargs = {"AlarmName": alarm_name}
+                if next_token is not None:
+                    kwargs["NextToken"] = next_token
+                response = self.cloudwatch_client.describe_alarm_contributors(**kwargs)
+                contributors.extend(response["AlarmContributors"])
+                next_token = response.get("NextToken")
+                if not next_token:
+                    break
+        except ClientError:
+            logger.exception("Couldn't get contributors for alarm %s.", alarm_name)
+            raise
+        else:
+            logger.info(
+                "Got %s contributors for alarm %s.", len(contributors), alarm_name
+            )
+            return contributors
+```
++  For API details, see [DescribeAlarmContributors](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/DescribeAlarmContributors) in *AWS SDK for Python (Boto3) API Reference*.
 
 ### `DescribeAlarmsForMetric`
 <a name="cloudwatch_DescribeAlarmsForMetric_python_3_topic"></a>
@@ -194,6 +304,57 @@ class CloudWatchWrapper:
 ```
 +  For API details, see [EnableAlarmActions](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/EnableAlarmActions) in *AWS SDK for Python (Boto3) API Reference*.
 
+### `GetAlarmMuteRule`
+<a name="cloudwatch_GetAlarmMuteRule_python_3_topic"></a>
+
+The following code example shows how to use `GetAlarmMuteRule`.
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch#code-examples).
+
+```
+class CloudWatchOTelWrapper:
+    """Encapsulates the OpenTelemetry-oriented Amazon CloudWatch operations."""
+
+    def __init__(self, cloudwatch_client):
+        """
+        :param cloudwatch_client: A Boto3 CloudWatch client. The OpenTelemetry
+                                  operations are only available on the client
+                                  interface, not on the higher-level
+                                  ``boto3.resource("cloudwatch")`` interface.
+        """
+        self.cloudwatch_client = cloudwatch_client
+
+    @classmethod
+    def from_client(cls):
+        """
+        Creates a wrapper backed by a default CloudWatch client.
+
+        :return: A CloudWatchOTelWrapper.
+        """
+        return cls(boto3.client("cloudwatch"))
+
+    def get_alarm_mute_rule(self, name):
+        """
+        Gets the full configuration of an alarm mute rule, including its schedule, the
+        alarms it targets, and whether it is currently SCHEDULED, ACTIVE, or EXPIRED.
+
+        :param name: The name of the mute rule.
+        :return: The mute rule.
+        """
+        try:
+            response = self.cloudwatch_client.get_alarm_mute_rule(
+                AlarmMuteRuleName=name
+            )
+        except ClientError:
+            logger.exception("Couldn't get alarm mute rule %s.", name)
+            raise
+        else:
+            logger.info("Got alarm mute rule %s.", name)
+            return response
+```
++  For API details, see [GetAlarmMuteRule](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/GetAlarmMuteRule) in *AWS SDK for Python (Boto3) API Reference*.
+
 ### `GetMetricStatistics`
 <a name="cloudwatch_GetMetricStatistics_python_3_topic"></a>
 
@@ -246,6 +407,119 @@ class CloudWatchWrapper:
 ```
 +  For API details, see [GetMetricStatistics](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/GetMetricStatistics) in *AWS SDK for Python (Boto3) API Reference*.
 
+### `GetOTelEnrichment`
+<a name="cloudwatch_GetOTelEnrichment_python_3_topic"></a>
+
+The following code example shows how to use `GetOTelEnrichment`.
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch#code-examples).
+
+```
+class CloudWatchOTelWrapper:
+    """Encapsulates the OpenTelemetry-oriented Amazon CloudWatch operations."""
+
+    def __init__(self, cloudwatch_client):
+        """
+        :param cloudwatch_client: A Boto3 CloudWatch client. The OpenTelemetry
+                                  operations are only available on the client
+                                  interface, not on the higher-level
+                                  ``boto3.resource("cloudwatch")`` interface.
+        """
+        self.cloudwatch_client = cloudwatch_client
+
+    @classmethod
+    def from_client(cls):
+        """
+        Creates a wrapper backed by a default CloudWatch client.
+
+        :return: A CloudWatchOTelWrapper.
+        """
+        return cls(boto3.client("cloudwatch"))
+
+    def get_otel_enrichment_status(self):
+        """
+        Gets the current OTel enrichment status for the account.
+
+        :return: The status, either 'Running' or 'Stopped'.
+        """
+        try:
+            response = self.cloudwatch_client.get_o_tel_enrichment()
+        except ClientError:
+            logger.exception("Couldn't get the OTel enrichment status.")
+            raise
+        else:
+            status = response["Status"]
+            logger.info("OTel enrichment status is %s.", status)
+            return status
+```
++  For API details, see [GetOTelEnrichment](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/GetOTelEnrichment) in *AWS SDK for Python (Boto3) API Reference*.
+
+### `ListAlarmMuteRules`
+<a name="cloudwatch_ListAlarmMuteRules_python_3_topic"></a>
+
+The following code example shows how to use `ListAlarmMuteRules`.
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch#code-examples).
+
+```
+class CloudWatchOTelWrapper:
+    """Encapsulates the OpenTelemetry-oriented Amazon CloudWatch operations."""
+
+    def __init__(self, cloudwatch_client):
+        """
+        :param cloudwatch_client: A Boto3 CloudWatch client. The OpenTelemetry
+                                  operations are only available on the client
+                                  interface, not on the higher-level
+                                  ``boto3.resource("cloudwatch")`` interface.
+        """
+        self.cloudwatch_client = cloudwatch_client
+
+    @classmethod
+    def from_client(cls):
+        """
+        Creates a wrapper backed by a default CloudWatch client.
+
+        :return: A CloudWatchOTelWrapper.
+        """
+        return cls(boto3.client("cloudwatch"))
+
+    def list_alarm_mute_rules(self, alarm_name=None, statuses=None):
+        """
+        Lists alarm mute rules in the account.
+
+        :param alarm_name: When specified, only rules that target this alarm are
+                           returned.
+        :param statuses: When specified, only rules in these statuses are returned.
+                         Valid values are 'SCHEDULED', 'ACTIVE', and 'EXPIRED'.
+        :return: The list of mute rule summaries.
+        """
+        summaries = []
+        try:
+            next_token = None
+            while True:
+                kwargs = {}
+                if alarm_name is not None:
+                    kwargs["AlarmName"] = alarm_name
+                if statuses is not None:
+                    kwargs["Statuses"] = statuses
+                if next_token is not None:
+                    kwargs["NextToken"] = next_token
+                response = self.cloudwatch_client.list_alarm_mute_rules(**kwargs)
+                summaries.extend(response.get("AlarmMuteRuleSummaries", []))
+                next_token = response.get("NextToken")
+                if not next_token:
+                    break
+        except ClientError:
+            logger.exception("Couldn't list alarm mute rules.")
+            raise
+        else:
+            logger.info("Got %s alarm mute rules.", len(summaries))
+            return summaries
+```
++  For API details, see [ListAlarmMuteRules](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/ListAlarmMuteRules) in *AWS SDK for Python (Boto3) API Reference*.
+
 ### `ListMetrics`
 <a name="cloudwatch_ListMetrics_python_3_topic"></a>
 
@@ -290,6 +564,89 @@ class CloudWatchWrapper:
 ```
 +  For API details, see [ListMetrics](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/ListMetrics) in *AWS SDK for Python (Boto3) API Reference*.
 
+### `PutAlarmMuteRule`
+<a name="cloudwatch_PutAlarmMuteRule_python_3_topic"></a>
+
+The following code example shows how to use `PutAlarmMuteRule`.
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch#code-examples).
+
+```
+class CloudWatchOTelWrapper:
+    """Encapsulates the OpenTelemetry-oriented Amazon CloudWatch operations."""
+
+    def __init__(self, cloudwatch_client):
+        """
+        :param cloudwatch_client: A Boto3 CloudWatch client. The OpenTelemetry
+                                  operations are only available on the client
+                                  interface, not on the higher-level
+                                  ``boto3.resource("cloudwatch")`` interface.
+        """
+        self.cloudwatch_client = cloudwatch_client
+
+    @classmethod
+    def from_client(cls):
+        """
+        Creates a wrapper backed by a default CloudWatch client.
+
+        :return: A CloudWatchOTelWrapper.
+        """
+        return cls(boto3.client("cloudwatch"))
+
+    def put_alarm_mute_rule(
+        self,
+        name,
+        expression,
+        duration,
+        alarm_names=None,
+        timezone=None,
+        description=None,
+    ):
+        """
+        Creates or updates an alarm mute rule. While a mute rule is active the targeted
+        alarms keep evaluating and keep transitioning between states, but their
+        configured actions do not fire. This is the supported way to suppress
+        notifications during a known maintenance window instead of disabling alarm
+        actions and hoping someone remembers to turn them back on.
+
+        :param name: The name of the mute rule.
+        :param expression: When the rule activates. For a recurring window, use a
+                           five-field cron expression,
+                           'cron(Minutes Hours Day-of-month Month Day-of-week)', such as
+                           'cron(0 2 * * SUN)' for every Sunday at 2:00 AM. Note that
+                           this is five fields, not the six that Amazon EventBridge
+                           uses. For a one-time window, use 'at(yyyy-MM-ddThh:mm)',
+                           such as 'at(2026-09-05T02:00)'.
+        :param duration: How long the mute window lasts once it activates, in ISO 8601
+                         duration format, from 'PT1M' (one minute) to 'P15D' (15 days).
+                         For example, 'PT2H' is two hours and 'P2DT12H' is two days and
+                         12 hours.
+        :param alarm_names: The names of up to 100 alarms to mute. If omitted, the rule
+                            applies to all alarms in the account.
+        :param timezone: The time zone the expression is evaluated in, such as
+                         'America/Los_Angeles'.
+        :param description: The description of the mute rule.
+        """
+        schedule = {"Expression": expression, "Duration": duration}
+        if timezone is not None:
+            schedule["Timezone"] = timezone
+
+        kwargs = {"Name": name, "Rule": {"Schedule": schedule}}
+        if alarm_names is not None:
+            kwargs["MuteTargets"] = {"AlarmNames": alarm_names}
+        if description is not None:
+            kwargs["Description"] = description
+
+        try:
+            self.cloudwatch_client.put_alarm_mute_rule(**kwargs)
+            logger.info("Put alarm mute rule %s.", name)
+        except ClientError:
+            logger.exception("Couldn't put alarm mute rule %s.", name)
+            raise
+```
++  For API details, see [PutAlarmMuteRule](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/PutAlarmMuteRule) in *AWS SDK for Python (Boto3) API Reference*.
+
 ### `PutMetricAlarm`
 <a name="cloudwatch_PutMetricAlarm_python_3_topic"></a>
 
@@ -297,6 +654,94 @@ The following code example shows how to use `PutMetricAlarm`.
 
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch#code-examples).
+Create an alarm that evaluates a PromQL query against OpenTelemetry metrics.
+
+```
+class CloudWatchOTelWrapper:
+    """Encapsulates the OpenTelemetry-oriented Amazon CloudWatch operations."""
+
+    def __init__(self, cloudwatch_client):
+        """
+        :param cloudwatch_client: A Boto3 CloudWatch client. The OpenTelemetry
+                                  operations are only available on the client
+                                  interface, not on the higher-level
+                                  ``boto3.resource("cloudwatch")`` interface.
+        """
+        self.cloudwatch_client = cloudwatch_client
+
+    @classmethod
+    def from_client(cls):
+        """
+        Creates a wrapper backed by a default CloudWatch client.
+
+        :return: A CloudWatchOTelWrapper.
+        """
+        return cls(boto3.client("cloudwatch"))
+
+    def create_promql_alarm(
+        self,
+        alarm_name,
+        query,
+        evaluation_interval,
+        pending_period=300,
+        recovery_period=120,
+        description=None,
+        alarm_actions=None,
+    ):
+        """
+        Creates an alarm that evaluates a PromQL query.
+
+        A PromQL alarm differs from a classic metric alarm in a few ways. The query can
+        match many series at once, and each matching series is tracked separately as a
+        *contributor*. Instead of counting breaching periods, you specify durations: a
+        contributor moves to ALARM after it breaches continuously for the pending
+        period, and back to OK after it stops breaching for the recovery period. A
+        PromQL alarm starts in the OK state rather than INSUFFICIENT_DATA.
+
+        The PromQL evaluation parameters live in the EvaluationCriteria union, which is
+        mutually exclusive with the classic MetricName and Metrics parameters. When you
+        use EvaluationCriteria you must also set EvaluationInterval, and you must not
+        set Period, Statistic, Threshold, ComparisonOperator, EvaluationPeriods,
+        DatapointsToAlarm, or TreatMissingData.
+
+        :param alarm_name: The name of the alarm. Must be unique within the Region.
+        :param query: The PromQL query to evaluate, such as
+                      'avg(cpu_utilization_percent) > 80'. The comparison belongs in
+                      the query itself; there is no separate threshold parameter.
+        :param evaluation_interval: How often, in seconds, to run the query. Valid
+                                    values are 10, 20, 30, and any multiple of 60, up
+                                    to 3600.
+        :param pending_period: How long, in seconds, a contributor must breach
+                               continuously before it moves to ALARM.
+        :param recovery_period: How long, in seconds, a contributor must stop breaching
+                                before it moves back to OK.
+        :param description: The description of the alarm.
+        :param alarm_actions: A list of ARNs to notify when the alarm fires, such as an
+                              Amazon SNS topic.
+        """
+        promql_criteria = {
+            "Query": query,
+            "PendingPeriod": pending_period,
+            "RecoveryPeriod": recovery_period,
+        }
+        kwargs = {
+            "AlarmName": alarm_name,
+            "EvaluationCriteria": {"PromQLCriteria": promql_criteria},
+            "EvaluationInterval": evaluation_interval,
+        }
+        if description is not None:
+            kwargs["AlarmDescription"] = description
+        if alarm_actions is not None:
+            kwargs["AlarmActions"] = alarm_actions
+
+        try:
+            self.cloudwatch_client.put_metric_alarm(**kwargs)
+            logger.info("Created PromQL alarm %s for query %s.", alarm_name, query)
+        except ClientError:
+            logger.exception("Couldn't create PromQL alarm %s.", alarm_name)
+            raise
+```
+Create an alarm that evaluates a single CloudWatch metric.
 
 ```
 class CloudWatchWrapper:
@@ -450,15 +895,111 @@ class CloudWatchWrapper:
 ```
 +  For API details, see [PutMetricData](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/PutMetricData) in *AWS SDK for Python (Boto3) API Reference*.
 
+### `StartOTelEnrichment`
+<a name="cloudwatch_StartOTelEnrichment_python_3_topic"></a>
+
+The following code example shows how to use `StartOTelEnrichment`.
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch#code-examples).
+
+```
+class CloudWatchOTelWrapper:
+    """Encapsulates the OpenTelemetry-oriented Amazon CloudWatch operations."""
+
+    def __init__(self, cloudwatch_client):
+        """
+        :param cloudwatch_client: A Boto3 CloudWatch client. The OpenTelemetry
+                                  operations are only available on the client
+                                  interface, not on the higher-level
+                                  ``boto3.resource("cloudwatch")`` interface.
+        """
+        self.cloudwatch_client = cloudwatch_client
+
+    @classmethod
+    def from_client(cls):
+        """
+        Creates a wrapper backed by a default CloudWatch client.
+
+        :return: A CloudWatchOTelWrapper.
+        """
+        return cls(boto3.client("cloudwatch"))
+
+    def start_otel_enrichment(self):
+        """
+        Turns on OTel enrichment for the account. Once enrichment is running,
+        CloudWatch vended metrics that carry a resource identifier dimension, such as
+        the EC2 CPUUtilization metric with its InstanceId dimension, are decorated with
+        resource ARN and resource tag labels and become queryable with PromQL.
+
+        Resource tags on telemetry must already be enabled for the account before you
+        call this operation.
+        """
+        try:
+            # Boto3 splits the OTel prefix when it converts the StartOTelEnrichment
+            # operation name to snake case, so the method is start_o_tel_enrichment.
+            self.cloudwatch_client.start_o_tel_enrichment()
+            logger.info("Started OTel enrichment for this account.")
+        except ClientError:
+            logger.exception("Couldn't start OTel enrichment.")
+            raise
+```
++  For API details, see [StartOTelEnrichment](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/StartOTelEnrichment) in *AWS SDK for Python (Boto3) API Reference*.
+
+### `StopOTelEnrichment`
+<a name="cloudwatch_StopOTelEnrichment_python_3_topic"></a>
+
+The following code example shows how to use `StopOTelEnrichment`.
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch#code-examples).
+
+```
+class CloudWatchOTelWrapper:
+    """Encapsulates the OpenTelemetry-oriented Amazon CloudWatch operations."""
+
+    def __init__(self, cloudwatch_client):
+        """
+        :param cloudwatch_client: A Boto3 CloudWatch client. The OpenTelemetry
+                                  operations are only available on the client
+                                  interface, not on the higher-level
+                                  ``boto3.resource("cloudwatch")`` interface.
+        """
+        self.cloudwatch_client = cloudwatch_client
+
+    @classmethod
+    def from_client(cls):
+        """
+        Creates a wrapper backed by a default CloudWatch client.
+
+        :return: A CloudWatchOTelWrapper.
+        """
+        return cls(boto3.client("cloudwatch"))
+
+    def stop_otel_enrichment(self):
+        """
+        Turns off OTel enrichment for the account. Existing PromQL alarms are not
+        deleted, but vended metrics stop being enriched with resource ARN and tag
+        labels, so queries that select on those labels stop matching.
+        """
+        try:
+            self.cloudwatch_client.stop_o_tel_enrichment()
+            logger.info("Stopped OTel enrichment for this account.")
+        except ClientError:
+            logger.exception("Couldn't stop OTel enrichment.")
+            raise
+```
++  For API details, see [StopOTelEnrichment](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/StopOTelEnrichment) in *AWS SDK for Python (Boto3) API Reference*.
+
 ## Scenarios
 <a name="scenarios"></a>
 
-### Manage metrics and alarms
+### Manage custom metrics and alarms
 <a name="cloudwatch_Usage_MetricsAlarms_python_3_topic"></a>
 
 The following code example shows how to:
-+ Create an alarm to watch a CloudWatch metric.
-+ Put data into a metric and trigger the alarm.
++ Create an alarm to watch a single CloudWatch metric.
++ Put data into the metric with `PutMetricData` and trigger the alarm.
 + Get data from the alarm.
 + Delete the alarm.
 
@@ -467,7 +1008,7 @@ The following code example shows how to:
 Create a class that wraps CloudWatch operations.
 
 ```
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 import logging
 from pprint import pprint
 import random
@@ -675,7 +1216,7 @@ def usage_demo():
     minutes = 20
     metric_namespace = "doc-example-metric"
     metric_name = "page_views"
-    start = datetime.utcnow() - timedelta(minutes=minutes)
+    start = datetime.now(timezone.utc) - timedelta(minutes=minutes)
     print(
         f"Putting data into metric {metric_namespace}.{metric_name} spanning the "
         f"last {minutes} minutes."
@@ -736,13 +1277,13 @@ def usage_demo():
 
     print(
         f"Getting data for metric {metric_namespace}.{metric_name} during timespan "
-        f"of {start} to {datetime.utcnow()} (times are UTC)."
+        f"of {start} to {datetime.now(timezone.utc)} (times are UTC)."
     )
     stats = cw_wrapper.get_metric_statistics(
         metric_namespace,
         metric_name,
         start,
-        datetime.utcnow(),
+        datetime.now(timezone.utc),
         60,
         ["Average", "Minimum", "Maximum"],
     )
@@ -772,3 +1313,528 @@ def usage_demo():
   + [ListMetrics](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/ListMetrics)
   + [PutMetricAlarm](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/PutMetricAlarm)
   + [PutMetricData](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/PutMetricData)
+
+### Send OpenTelemetry metrics and alarm on them with PromQL
+<a name="cloudwatch_Scenario_OTelMetrics_python_3_topic"></a>
+
+The following code example shows how to:
++ Send OTLP metrics to the CloudWatch metrics endpoint with an OpenTelemetry Collector.
++ Start OpenTelemetry enrichment so CloudWatch correlates those metrics with your resources.
++ Create an alarm that evaluates a PromQL query across every series the query returns.
++ Inspect the individual series, called contributors, that put the alarm in ALARM state.
++ Mute the alarm for a maintenance window, then clean up.
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch#code-examples).
+Create a class that wraps the CloudWatch OpenTelemetry operations.
+
+```
+import logging
+import time
+
+import boto3
+from botocore.exceptions import ClientError
+
+logger = logging.getLogger(__name__)
+
+class CloudWatchOTelWrapper:
+    """Encapsulates the OpenTelemetry-oriented Amazon CloudWatch operations."""
+
+    def __init__(self, cloudwatch_client):
+        """
+        :param cloudwatch_client: A Boto3 CloudWatch client. The OpenTelemetry
+                                  operations are only available on the client
+                                  interface, not on the higher-level
+                                  ``boto3.resource("cloudwatch")`` interface.
+        """
+        self.cloudwatch_client = cloudwatch_client
+
+    @classmethod
+    def from_client(cls):
+        """
+        Creates a wrapper backed by a default CloudWatch client.
+
+        :return: A CloudWatchOTelWrapper.
+        """
+        return cls(boto3.client("cloudwatch"))
+
+    def start_otel_enrichment(self):
+        """
+        Turns on OTel enrichment for the account. Once enrichment is running,
+        CloudWatch vended metrics that carry a resource identifier dimension, such as
+        the EC2 CPUUtilization metric with its InstanceId dimension, are decorated with
+        resource ARN and resource tag labels and become queryable with PromQL.
+
+        Resource tags on telemetry must already be enabled for the account before you
+        call this operation.
+        """
+        try:
+            # Boto3 splits the OTel prefix when it converts the StartOTelEnrichment
+            # operation name to snake case, so the method is start_o_tel_enrichment.
+            self.cloudwatch_client.start_o_tel_enrichment()
+            logger.info("Started OTel enrichment for this account.")
+        except ClientError:
+            logger.exception("Couldn't start OTel enrichment.")
+            raise
+
+    def get_otel_enrichment_status(self):
+        """
+        Gets the current OTel enrichment status for the account.
+
+        :return: The status, either 'Running' or 'Stopped'.
+        """
+        try:
+            response = self.cloudwatch_client.get_o_tel_enrichment()
+        except ClientError:
+            logger.exception("Couldn't get the OTel enrichment status.")
+            raise
+        else:
+            status = response["Status"]
+            logger.info("OTel enrichment status is %s.", status)
+            return status
+
+    def create_promql_alarm(
+        self,
+        alarm_name,
+        query,
+        evaluation_interval,
+        pending_period=300,
+        recovery_period=120,
+        description=None,
+        alarm_actions=None,
+    ):
+        """
+        Creates an alarm that evaluates a PromQL query.
+
+        A PromQL alarm differs from a classic metric alarm in a few ways. The query can
+        match many series at once, and each matching series is tracked separately as a
+        *contributor*. Instead of counting breaching periods, you specify durations: a
+        contributor moves to ALARM after it breaches continuously for the pending
+        period, and back to OK after it stops breaching for the recovery period. A
+        PromQL alarm starts in the OK state rather than INSUFFICIENT_DATA.
+
+        The PromQL evaluation parameters live in the EvaluationCriteria union, which is
+        mutually exclusive with the classic MetricName and Metrics parameters. When you
+        use EvaluationCriteria you must also set EvaluationInterval, and you must not
+        set Period, Statistic, Threshold, ComparisonOperator, EvaluationPeriods,
+        DatapointsToAlarm, or TreatMissingData.
+
+        :param alarm_name: The name of the alarm. Must be unique within the Region.
+        :param query: The PromQL query to evaluate, such as
+                      'avg(cpu_utilization_percent) > 80'. The comparison belongs in
+                      the query itself; there is no separate threshold parameter.
+        :param evaluation_interval: How often, in seconds, to run the query. Valid
+                                    values are 10, 20, 30, and any multiple of 60, up
+                                    to 3600.
+        :param pending_period: How long, in seconds, a contributor must breach
+                               continuously before it moves to ALARM.
+        :param recovery_period: How long, in seconds, a contributor must stop breaching
+                                before it moves back to OK.
+        :param description: The description of the alarm.
+        :param alarm_actions: A list of ARNs to notify when the alarm fires, such as an
+                              Amazon SNS topic.
+        """
+        promql_criteria = {
+            "Query": query,
+            "PendingPeriod": pending_period,
+            "RecoveryPeriod": recovery_period,
+        }
+        kwargs = {
+            "AlarmName": alarm_name,
+            "EvaluationCriteria": {"PromQLCriteria": promql_criteria},
+            "EvaluationInterval": evaluation_interval,
+        }
+        if description is not None:
+            kwargs["AlarmDescription"] = description
+        if alarm_actions is not None:
+            kwargs["AlarmActions"] = alarm_actions
+
+        try:
+            self.cloudwatch_client.put_metric_alarm(**kwargs)
+            logger.info("Created PromQL alarm %s for query %s.", alarm_name, query)
+        except ClientError:
+            logger.exception("Couldn't create PromQL alarm %s.", alarm_name)
+            raise
+
+    def describe_alarm_contributors(self, alarm_name):
+        """
+        Gets the contributors for a PromQL alarm. Each contributor is one series that
+        the alarm's query matched, identified by its label set. This is how you find out
+        *which* hosts, services, or pods are breaching, rather than only that something
+        is.
+
+        :param alarm_name: The name of the PromQL alarm.
+        :return: The list of contributors. Each contributor has a ContributorId, a
+                 ContributorAttributes map of the labels that identify the series, a
+                 StateReason, and the time it last changed state.
+        """
+        contributors = []
+        try:
+            next_token = None
+            while True:
+                kwargs = {"AlarmName": alarm_name}
+                if next_token is not None:
+                    kwargs["NextToken"] = next_token
+                response = self.cloudwatch_client.describe_alarm_contributors(**kwargs)
+                contributors.extend(response["AlarmContributors"])
+                next_token = response.get("NextToken")
+                if not next_token:
+                    break
+        except ClientError:
+            logger.exception("Couldn't get contributors for alarm %s.", alarm_name)
+            raise
+        else:
+            logger.info(
+                "Got %s contributors for alarm %s.", len(contributors), alarm_name
+            )
+            return contributors
+
+    def put_alarm_mute_rule(
+        self,
+        name,
+        expression,
+        duration,
+        alarm_names=None,
+        timezone=None,
+        description=None,
+    ):
+        """
+        Creates or updates an alarm mute rule. While a mute rule is active the targeted
+        alarms keep evaluating and keep transitioning between states, but their
+        configured actions do not fire. This is the supported way to suppress
+        notifications during a known maintenance window instead of disabling alarm
+        actions and hoping someone remembers to turn them back on.
+
+        :param name: The name of the mute rule.
+        :param expression: When the rule activates. For a recurring window, use a
+                           five-field cron expression,
+                           'cron(Minutes Hours Day-of-month Month Day-of-week)', such as
+                           'cron(0 2 * * SUN)' for every Sunday at 2:00 AM. Note that
+                           this is five fields, not the six that Amazon EventBridge
+                           uses. For a one-time window, use 'at(yyyy-MM-ddThh:mm)',
+                           such as 'at(2026-09-05T02:00)'.
+        :param duration: How long the mute window lasts once it activates, in ISO 8601
+                         duration format, from 'PT1M' (one minute) to 'P15D' (15 days).
+                         For example, 'PT2H' is two hours and 'P2DT12H' is two days and
+                         12 hours.
+        :param alarm_names: The names of up to 100 alarms to mute. If omitted, the rule
+                            applies to all alarms in the account.
+        :param timezone: The time zone the expression is evaluated in, such as
+                         'America/Los_Angeles'.
+        :param description: The description of the mute rule.
+        """
+        schedule = {"Expression": expression, "Duration": duration}
+        if timezone is not None:
+            schedule["Timezone"] = timezone
+
+        kwargs = {"Name": name, "Rule": {"Schedule": schedule}}
+        if alarm_names is not None:
+            kwargs["MuteTargets"] = {"AlarmNames": alarm_names}
+        if description is not None:
+            kwargs["Description"] = description
+
+        try:
+            self.cloudwatch_client.put_alarm_mute_rule(**kwargs)
+            logger.info("Put alarm mute rule %s.", name)
+        except ClientError:
+            logger.exception("Couldn't put alarm mute rule %s.", name)
+            raise
+
+    def get_alarm_mute_rule(self, name):
+        """
+        Gets the full configuration of an alarm mute rule, including its schedule, the
+        alarms it targets, and whether it is currently SCHEDULED, ACTIVE, or EXPIRED.
+
+        :param name: The name of the mute rule.
+        :return: The mute rule.
+        """
+        try:
+            response = self.cloudwatch_client.get_alarm_mute_rule(
+                AlarmMuteRuleName=name
+            )
+        except ClientError:
+            logger.exception("Couldn't get alarm mute rule %s.", name)
+            raise
+        else:
+            logger.info("Got alarm mute rule %s.", name)
+            return response
+
+    def list_alarm_mute_rules(self, alarm_name=None, statuses=None):
+        """
+        Lists alarm mute rules in the account.
+
+        :param alarm_name: When specified, only rules that target this alarm are
+                           returned.
+        :param statuses: When specified, only rules in these statuses are returned.
+                         Valid values are 'SCHEDULED', 'ACTIVE', and 'EXPIRED'.
+        :return: The list of mute rule summaries.
+        """
+        summaries = []
+        try:
+            next_token = None
+            while True:
+                kwargs = {}
+                if alarm_name is not None:
+                    kwargs["AlarmName"] = alarm_name
+                if statuses is not None:
+                    kwargs["Statuses"] = statuses
+                if next_token is not None:
+                    kwargs["NextToken"] = next_token
+                response = self.cloudwatch_client.list_alarm_mute_rules(**kwargs)
+                summaries.extend(response.get("AlarmMuteRuleSummaries", []))
+                next_token = response.get("NextToken")
+                if not next_token:
+                    break
+        except ClientError:
+            logger.exception("Couldn't list alarm mute rules.")
+            raise
+        else:
+            logger.info("Got %s alarm mute rules.", len(summaries))
+            return summaries
+
+    def delete_alarm_mute_rule(self, name):
+        """
+        Deletes an alarm mute rule.
+
+        :param name: The name of the mute rule.
+        """
+        try:
+            self.cloudwatch_client.delete_alarm_mute_rule(AlarmMuteRuleName=name)
+            logger.info("Deleted alarm mute rule %s.", name)
+        except ClientError:
+            logger.exception("Couldn't delete alarm mute rule %s.", name)
+            raise
+
+    def stop_otel_enrichment(self):
+        """
+        Turns off OTel enrichment for the account. Existing PromQL alarms are not
+        deleted, but vended metrics stop being enriched with resource ARN and tag
+        labels, so queries that select on those labels stop matching.
+        """
+        try:
+            self.cloudwatch_client.stop_o_tel_enrichment()
+            logger.info("Stopped OTel enrichment for this account.")
+        except ClientError:
+            logger.exception("Couldn't stop OTel enrichment.")
+            raise
+
+    def delete_alarms(self, alarm_names):
+        """
+        Deletes the specified alarms.
+
+        :param alarm_names: The names of the alarms to delete.
+        """
+        try:
+            self.cloudwatch_client.delete_alarms(AlarmNames=alarm_names)
+            logger.info("Deleted alarms %s.", ", ".join(alarm_names))
+        except ClientError:
+            logger.exception("Couldn't delete alarms %s.", ", ".join(alarm_names))
+            raise
+```
+Use the wrapper class to alarm on OpenTelemetry metrics with a PromQL query, inspect the contributors to the alarm, and mute it.
+
+```
+def usage_demo():
+    """
+    Walks through the OpenTelemetry metrics workflow in CloudWatch: turn on
+    enrichment, alarm on a PromQL query, inspect the contributors that matched, mute
+    the alarm for a maintenance window, then clean up.
+
+    This scenario assumes OpenTelemetry metrics are already flowing into the account,
+    either from an OpenTelemetry collector, the CloudWatch agent, or the ADOT SDK.
+    """
+    print("-" * 88)
+    print("Welcome to the Amazon CloudWatch OpenTelemetry metrics demo!")
+    print("-" * 88)
+
+    logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
+
+    cw = CloudWatchOTelWrapper.from_client()
+
+    alarm_name = "doc-example-promql-high-cpu"
+    mute_rule_name = "doc-example-maintenance-window"
+
+    print("Checking whether OTel enrichment is on for this account.")
+    status = cw.get_otel_enrichment_status()
+    started_enrichment_here = False
+    if status == "Stopped":
+        print("Enrichment is stopped. Starting it so vended metrics accept PromQL.")
+        cw.start_otel_enrichment()
+        started_enrichment_here = True
+    else:
+        print("Enrichment is already running. Leaving it alone.")
+
+    query = 'avg by (host_name) (cpu_utilization_percent{service_name="checkout"}) > 80'
+    print(f"\nCreating a PromQL alarm on: {query}")
+    cw.create_promql_alarm(
+        alarm_name,
+        query,
+        evaluation_interval=30,
+        pending_period=300,
+        recovery_period=120,
+        description="Average CPU over 80% per host for the checkout service.",
+    )
+    print(
+        "The alarm evaluates every 30 seconds. A host moves to ALARM after breaching "
+        "for 300 seconds straight, and back to OK after 120 seconds clean."
+    )
+
+    print("\nWaiting a moment for the first evaluation, then listing contributors.")
+    time.sleep(30)
+    contributors = cw.describe_alarm_contributors(alarm_name)
+    if not contributors:
+        print(
+            "No contributors yet. The query matched no series, which usually means "
+            "no OTel metrics with these labels have arrived. Send some OTel metrics "
+            "through the OTLP endpoint and run this again."
+        )
+    for contributor in contributors:
+        labels = ", ".join(
+            f"{key}={value}"
+            for key, value in sorted(contributor["ContributorAttributes"].items())
+        )
+        print(f"  {contributor['ContributorId']}: {labels}")
+        print(f"    reason: {contributor['StateReason']}")
+
+    print(f"\nMuting {alarm_name} for a weekly two-hour maintenance window.")
+    cw.put_alarm_mute_rule(
+        mute_rule_name,
+        expression="cron(0 2 * * SUN)",
+        duration="PT2H",
+        alarm_names=[alarm_name],
+        timezone="America/Los_Angeles",
+        description="Suppress checkout CPU pages during Sunday patching.",
+    )
+    rule = cw.get_alarm_mute_rule(mute_rule_name)
+    print(f"Mute rule status is {rule.get('Status')}.")
+    print(
+        "While the window is active the alarm keeps evaluating and still changes "
+        "state; only its actions are suppressed."
+    )
+
+    print(f"\nMute rules targeting {alarm_name}:")
+    for summary in cw.list_alarm_mute_rules(alarm_name=alarm_name):
+        print(f"  {summary.get('AlarmMuteRuleArn')} ({summary.get('Status')})")
+
+    print("\nCleaning up.")
+    cw.delete_alarm_mute_rule(mute_rule_name)
+    cw.delete_alarms([alarm_name])
+    if started_enrichment_here:
+        print("Stopping OTel enrichment, since this demo started it.")
+        cw.stop_otel_enrichment()
+
+    print("\nThanks for watching!")
+    print("-" * 88)
+```
+Configure an OpenTelemetry Collector to send the OTLP metrics that this example alarms on to the CloudWatch metrics endpoint. Metric ingestion over OTLP is not an AWS SDK operation, so this half of the example is collector configuration rather than SDK code.
+
+```
+# Purpose
+#
+# An OpenTelemetry Collector configuration that sends OTLP metrics to the Amazon
+# CloudWatch metrics endpoint. Once metrics land in CloudWatch they are queryable with
+# PromQL in Query Studio, and you can alarm on them with the PromQL alarm operations
+# shown in cloudwatch_otel.py.
+#
+# Metric ingestion over OTLP is deliberately NOT an AWS SDK operation. There is no
+# boto3 call that sends OTLP metrics. You send them with one of the following, in
+# rough order of how integrated the CloudWatch experience is:
+#
+#   1. The CloudWatch agent (recommended). An AWS-managed OpenTelemetry Collector with
+#      CloudWatch components pre-built. Adds entity correlation, runtime metrics, and
+#      Container Insights support.
+#   2. An upstream OpenTelemetry Collector. What this file configures.
+#   3. A custom OpenTelemetry Collector build.
+#   4. The AWS Distro for OpenTelemetry (ADOT) SDK, with no collector at all.
+#
+# Prerequisites
+#
+# * An OpenTelemetry Collector release that includes the sigv4authextension. The
+#   contrib distribution does. See
+#   https://github.com/open-telemetry/opentelemetry-collector-releases/releases
+# * AWS credentials the collector can resolve. On Amazon EC2, attach the
+#   CloudWatchAgentServerPolicy managed policy to the instance role. On Amazon EKS,
+#   bind that policy to the collector's service account with IRSA. On premises, run
+#   `aws configure` for an IAM user that has the same policy.
+#
+# Run the collector with:
+#
+#   otelcol-contrib --config otlp_collector_config.yaml
+#
+# Then point your instrumented application at http://localhost:4318.
+#
+# For more information, see
+# https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-OTLPEndpoint.html
+
+receivers:
+  # The CloudWatch OTLP endpoints are HTTP 1.1 only and do not support gRPC. You can
+  # still accept gRPC from your applications here and let the collector translate, but
+  # this example keeps the receiver HTTP-only to mirror what is sent upstream.
+  otlp:
+    protocols:
+      http:
+        endpoint: "0.0.0.0:4318"
+
+processors:
+  # Batch to stay inside the endpoint's per-request limits: 1 MB uncompressed and
+  # 1,000 datapoints, counted as the sum across ResourceMetrics, ScopeMetrics, and
+  # Metrics. A batch of 200 leaves comfortable headroom.
+  batch:
+    send_batch_size: 200
+    timeout: 10s
+
+exporters:
+  otlphttp:
+    tls:
+      insecure: false
+    # Pattern: https://monitoring.{region}.amazonaws.com/v1/metrics
+    endpoint: "https://monitoring.us-east-1.amazonaws.com/v1/metrics"
+    # Only gzip and none are supported.
+    compression: gzip
+    auth:
+      authenticator: sigv4auth
+
+extensions:
+  # SigV4 is the recommended authentication method, and the only one supported for
+  # traces. For hosts outside AWS you can instead use the bearertokenauth extension
+  # against the metrics or logs endpoints; see
+  # https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-OTLP-MetricsBearerTokenAuth.html
+  sigv4auth:
+    # The metrics endpoint signs as "monitoring". The logs endpoint signs as "logs"
+    # and the traces endpoint as "xray".
+    service: "monitoring"
+    region: "us-east-1"
+
+service:
+  extensions: [sigv4auth]
+  pipelines:
+    metrics:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [otlphttp]
+
+# Endpoint limits worth designing around, all per account and Region:
+#
+#   Maximum TPS                  500
+#   New series creation rate     1,000,000 per 10-minute window
+#   Maximum request size         1 MB uncompressed
+#   Maximum datapoint count      1,000 per request
+#   Maximum metadata size        40 KB of labels and values per series per datapoint
+#   Maximum label count          150 across Resource, Scope, and Datapoint attributes
+#   Timestamp window             at most 10 minutes in the future, 14 days in the past
+#
+# Exceeding the TPS or new-series limits returns 429. The size, count, metadata,
+# label, and timestamp limits return 400, and a request whose metrics are only
+# partially invalid returns 200 with the valid metrics ingested.
+```
++ For API details, see the following topics in *AWS SDK for Python (Boto3) API Reference*.
+  + [DeleteAlarmMuteRule](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/DeleteAlarmMuteRule)
+  + [DeleteAlarms](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/DeleteAlarms)
+  + [DescribeAlarmContributors](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/DescribeAlarmContributors)
+  + [GetAlarmMuteRule](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/GetAlarmMuteRule)
+  + [GetOTelEnrichment](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/GetOTelEnrichment)
+  + [ListAlarmMuteRules](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/ListAlarmMuteRules)
+  + [PutAlarmMuteRule](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/PutAlarmMuteRule)
+  + [PutMetricAlarm](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/PutMetricAlarm)
+  + [StartOTelEnrichment](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/StartOTelEnrichment)
+  + [StopOTelEnrichment](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/StopOTelEnrichment)

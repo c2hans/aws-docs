@@ -13,7 +13,6 @@ You can modify a Client VPN endpoint by using the Amazon VPC Console or the AWS 
 The following limitations apply when modifying an endpoint
 +  Modifications to Client VPN endpoints, including Certificate Revocation List (CRL) changes, will take effect up to 4 hours after a request is accepted by the Client VPN service.
 + You cannot modify the client IPv4 CIDR range, authentication options, client certificate or transport protocol after the Client VPN endpoint has been created.
-+ You can modify existing IPv4 endpoints to dual-stack for both endpoint IP and traffic IP types. If you need IPv6-only for endpoint IP and traffic IP, you must create a new endpoint.
 + Client VPN does not support modification of endpoint type (IPv4, IPv6, dual-stack) or traffic type (IPv4, IPv6, dual-stack) after creation.
 + Modifying a Client VPN with a specific combination of endpoint type and traffic type is not supported. You cannot change to any other combination. The endpoint must be deleted and recreated with the desired configuration.
 + Client-to-client communication for IPv6 traffic is not supported.
@@ -32,10 +31,6 @@ You can modify a Client VPN endpoint using either the console or the AWS CLI.
 1. Select the Client VPN endpoint to modify, choose **Actions**, and then choose **Modify Client VPN endpoint**.
 
 1. For **Description**, enter a brief description for the Client VPN endpoint.
-
-1. For **Endpoint IP address type**, you can modify an existing IPv4 endpoint to dual-stack. This option is only available for IPv4 endpoints.
-
-1. For **Traffic IP address type**, you can modify an existing IPv4 endpoint to dual-stack. This option is only available for IPv4 endpoints.
 
 1. For **Server certificate ARN**, specify the ARN for the TLS certificate to be used by the server. Clients use the server certificate to authenticate the Client VPN endpoint to which they are connecting.
 **Note**
@@ -69,13 +64,3 @@ Verify that the DNS servers can be reached by clients.
 
 **To modify a Client VPN endpoint using the AWS CLI**
 Use the [modify-client-vpn-endpoint](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-client-vpn-endpoint.html) command.
-
-Example for modifying an IPv4 endpoint to dual-stack:
-
-```
-aws ec2 modify-client-vpn-endpoint \
-  --client-vpn-endpoint-id cvpn-endpoint-123456789123abcde \
-  --endpoint-ip-address-type "dual-stack" \
-  --traffic-ip-address-type "dual-stack" \
-  --client-cidr-block "172.31.0.0/16"
-```

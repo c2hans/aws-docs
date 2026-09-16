@@ -40,7 +40,7 @@ Required: Yes
  ** name **   <a name="deadlinecloud-Type-JobSummary-name"></a>
 The job name.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 128.
+Length Constraints: Minimum length of 1. Maximum length of 512.
 Required: Yes
 
  ** priority **   <a name="deadlinecloud-Type-JobSummary-priority"></a>

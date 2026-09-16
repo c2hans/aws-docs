@@ -51,7 +51,7 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
  ** [clientToken](#API_CreateComponent_RequestSyntax) **   <a name="imagebuilder-CreateComponent-request-clientToken"></a>
-Unique, case-sensitive identifier you provide to ensure idempotency of the request. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
+A unique, case-sensitive identifier you provide to ensure that the operation completes no more than one time. If this token matches a previous request, the service ignores the request, but does not return an error. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: Yes
@@ -70,7 +70,7 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
  ** [dryRun](#API_CreateComponent_RequestSyntax) **   <a name="imagebuilder-CreateComponent-request-dryRun"></a>
-Validates the required permissions for the operation and the request parameters, without actually making the request, and provides an error response. Upon a successful request, the error response is `DryRunOperationException`.
+Validates the required permissions and request parameters without making the request. If validation succeeds, the operation returns a `DryRunOperationException` error response.
 Type: Boolean
 Required: No
 
@@ -95,7 +95,7 @@ Required: Yes
  ** [semanticVersion](#API_CreateComponent_RequestSyntax) **   <a name="imagebuilder-CreateComponent-request-semanticVersion"></a>
 The semantic version of the component. This version follows the semantic version syntax.
 The semantic version has four nodes: <major>.<minor>.<patch>/<build>. You can assign values for the first three, and can filter on all of them.
- **Assignment:** For the first three nodes you can assign any positive integer value, including zero, with an upper limit of 2^30-1, or 1073741823 for each node. Image Builder automatically assigns the build number to the fourth node.
+ **Assignment:** For the first three nodes, you can assign any positive integer value, including zero. The upper limit is 2^30-1, or 1073741823, for each node. Image Builder automatically assigns the build number to the fourth node.
  **Patterns:** You can use any numeric pattern that adheres to the assignment requirements for the nodes that you can assign. For example, you might choose a software version pattern, such as 1.0.0, or a date, such as 2021.01.01.
 Type: String
 Pattern: `^[0-9]+\.[0-9]+\.[0-9]+$`
@@ -118,7 +118,7 @@ Value Length Constraints: Maximum length of 256.
 Required: No
 
  ** [uri](#API_CreateComponent_RequestSyntax) **   <a name="imagebuilder-CreateComponent-request-uri"></a>
-The `uri` of a YAML component document file. This must be an S3 URL (`s3://bucket/key`), and the requester must have permission to access the S3 bucket it points to. If you use Amazon S3, you can specify component content up to your service quota.
+The `uri` of a YAML component document file. This must be an S3 URL (`s3://bucket/key`), and you must have permission to access the S3 bucket it points to. If you use Amazon S3, you can specify component content up to your service quota.
 Alternatively, you can specify the YAML document inline, using the component `data` property. You cannot specify both properties.
 Type: String
 Required: No
@@ -234,5 +234,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/imagebuilder-2019-12-02/CreateComponent)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/imagebuilder-2019-12-02/CreateComponent)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/imagebuilder-2019-12-02/CreateComponent)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/imagebuilder-2019-12-02/CreateComponent)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/imagebuilder-2019-12-02/CreateComponent)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/imagebuilder-2019-12-02/CreateComponent)

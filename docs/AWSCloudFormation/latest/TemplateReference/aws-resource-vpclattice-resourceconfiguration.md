@@ -151,7 +151,7 @@ The type of resource configuration. A resource configuration can be one of the f
 + **ARN** - An AWS resource.
 *Required*: Yes
 *Type*: String
-*Allowed values*: `GROUP | CHILD | SINGLE | ARN`
+*Allowed values*: `GROUP | CHILD | SINGLE | ARN | CIDR`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `ResourceGatewayId`  <a name="cfn-vpclattice-resourceconfiguration-resourcegatewayid"></a>

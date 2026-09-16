@@ -45,7 +45,7 @@ Required: No
  ** name **   <a name="deadlinecloud-Type-StepSearchSummary-name"></a>
 The step name.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 64.
+Length Constraints: Minimum length of 1. Maximum length of 512.
 Required: No
 
  ** parameterSpace **   <a name="deadlinecloud-Type-StepSearchSummary-parameterSpace"></a>

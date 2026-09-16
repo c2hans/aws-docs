@@ -23,6 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[Encrypted](#cfn-ec2-ec2fleet-ebsblockdevice-encrypted)" : {{Boolean}},
   "[Iops](#cfn-ec2-ec2fleet-ebsblockdevice-iops)" : {{Integer}},
   "[KmsKeyId](#cfn-ec2-ec2fleet-ebsblockdevice-kmskeyid)" : {{String}},
+  "[MultiAvailabilityZoneConfiguration](#cfn-ec2-ec2fleet-ebsblockdevice-multiavailabilityzoneconfiguration)" : {{MultiAvailabilityZoneConfiguration}},
   "[SnapshotId](#cfn-ec2-ec2fleet-ebsblockdevice-snapshotid)" : {{String}},
   "[VolumeSize](#cfn-ec2-ec2fleet-ebsblockdevice-volumesize)" : {{Integer}},
   "[VolumeType](#cfn-ec2-ec2fleet-ebsblockdevice-volumetype)" : {{String}}
@@ -37,6 +38,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   [Encrypted](#cfn-ec2-ec2fleet-ebsblockdevice-encrypted): {{Boolean}}
   [Iops](#cfn-ec2-ec2fleet-ebsblockdevice-iops): {{Integer}}
   [KmsKeyId](#cfn-ec2-ec2fleet-ebsblockdevice-kmskeyid): {{String}}
+  [MultiAvailabilityZoneConfiguration](#cfn-ec2-ec2fleet-ebsblockdevice-multiavailabilityzoneconfiguration): {{
+    MultiAvailabilityZoneConfiguration}}
   [SnapshotId](#cfn-ec2-ec2fleet-ebsblockdevice-snapshotid): {{String}}
   [VolumeSize](#cfn-ec2-ec2fleet-ebsblockdevice-volumesize): {{Integer}}
   [VolumeType](#cfn-ec2-ec2fleet-ebsblockdevice-volumetype): {{String}}
@@ -80,6 +83,12 @@ Identifier (key ID, key alias, key ARN, or alias ARN) of the customer managed KM
 This parameter is only supported on `BlockDeviceMapping` objects called by [RunInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RunInstances.html), [RequestSpotFleet](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RequestSpotFleet.html), and [RequestSpotInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RequestSpotInstances.html).
 *Required*: No
 *Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`MultiAvailabilityZoneConfiguration`  <a name="cfn-ec2-ec2fleet-ebsblockdevice-multiavailabilityzoneconfiguration"></a>
+Property description not available.
+*Required*: No
+*Type*: [MultiAvailabilityZoneConfiguration](aws-properties-ec2-ec2fleet-multiavailabilityzoneconfiguration.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `SnapshotId`  <a name="cfn-ec2-ec2fleet-ebsblockdevice-snapshotid"></a>

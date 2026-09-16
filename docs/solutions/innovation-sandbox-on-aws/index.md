@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com//solutions/innovation-sandbox-on-aws//in
 
 Accelerate cloud innovation with automated, secure, and cost-controlled sandbox environments
 
-- **Version**: 1.3.1
+- **Version**: 1.3.2
 - **Release**: 09/2026
 - **Author**: AWS
 - **Est. deployment time**: 60 mins

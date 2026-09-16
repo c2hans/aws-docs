@@ -13,7 +13,10 @@ You must first create a route calculator resource and set up authentication for 
 ## Start calculating routes
 <a name="start-calculate-route"></a>
 
-Submit a simple request by using the `[CalculateRoute](https://docs.aws.amazon.com/location-routes/latest/APIReference/API_CalculateRoute.html)` operation. A simple request contains the following required fields:
+Submit a simple request by using the `[CalculateRoute](https://docs.aws.amazon.com/location/previous/APIReference/API_CalculateRoute.html)` operation. A simple request contains the following required fields:
+
+**Note**
+In the latest API, this operation is `[CalculateRoutes](https://docs.aws.amazon.com/location/latest/APIReference/API_CalculateRoutes.html)` (plural) under `geo-routes`, which takes `Origin` and `Destination` instead of `DeparturePosition` and `DestinationPosition`, and does not require a route calculator resource.
 + `DeparturePosition` – The starting position for which to calculate the route from. Defined as `[longitude, latitude]`
 + `DestinationPosition` – The end position to which to calculate the route. Defined as `[longitude, latitude]`.
 
@@ -77,7 +80,7 @@ When calculating a route, you can specify up to 23 intermediate stopover points 
 If you specify a waypoint position that's not located on a road, Amazon Location moves the position to the nearest road.
 
 **Example**
-The following `[CalculateRoute](https://docs.aws.amazon.com/location-routes/latest/APIReference/API_CalculateRoute.html)` request calculates a route with 2 waypoints:
+The following `[CalculateRoute](https://docs.aws.amazon.com/location/previous/APIReference/API_CalculateRoute.html)` request calculates a route with 2 waypoints:
 + The departure position is [-122.7565, 49.0021], and the destination position is [-122.3394, 47.6159].
 + For the request parameter `WaypointPositions`:
   + The first stop over position is [{{-122.1884, 48.0936}}].
@@ -102,7 +105,7 @@ Content-type: application/json
 ## Example response
 <a name="example-response-calculate-route"></a>
 
-The following is an example request with the corresponding response when calling the `[CalculateRoute](https://docs.aws.amazon.com/location-routes/latest/APIReference/API_CalculateRoute.html)` operation from the Amazon Location Routes API with the `IncludeLegGeometry` set to {{true}}, which includes the linestring geometry of each path between a pair of positions in the response.
+The following is an example request with the corresponding response when calling the `[CalculateRoute](https://docs.aws.amazon.com/location/previous/APIReference/API_CalculateRoute.html)` operation from the Amazon Location Routes API with the `IncludeLegGeometry` set to {{true}}, which includes the linestring geometry of each path between a pair of positions in the response.
 
 ------
 #### [ Example request ]

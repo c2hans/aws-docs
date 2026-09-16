@@ -23,8 +23,6 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Properties" : {
       "[CoreNetworkId](#cfn-networkmanager-vpcattachment-corenetworkid)" : {{String}},
       "[Options](#cfn-networkmanager-vpcattachment-options)" : {{VpcOptions}},
-      "[ProposedNetworkFunctionGroupChange](#cfn-networkmanager-vpcattachment-proposednetworkfunctiongroupchange)" : {{ProposedNetworkFunctionGroupChange}},
-      "[ProposedSegmentChange](#cfn-networkmanager-vpcattachment-proposedsegmentchange)" : {{ProposedSegmentChange}},
       "[RoutingPolicyLabel](#cfn-networkmanager-vpcattachment-routingpolicylabel)" : {{String}},
       "[SubnetArns](#cfn-networkmanager-vpcattachment-subnetarns)" : {{[ String, ... ]}},
       "[Tags](#cfn-networkmanager-vpcattachment-tags)" : {{[ Tag, ... ]}},
@@ -42,10 +40,6 @@ Properties:
   [CoreNetworkId](#cfn-networkmanager-vpcattachment-corenetworkid): {{String}}
   [Options](#cfn-networkmanager-vpcattachment-options): {{
     VpcOptions}}
-  [ProposedNetworkFunctionGroupChange](#cfn-networkmanager-vpcattachment-proposednetworkfunctiongroupchange): {{
-    ProposedNetworkFunctionGroupChange}}
-  [ProposedSegmentChange](#cfn-networkmanager-vpcattachment-proposedsegmentchange): {{
-    ProposedSegmentChange}}
   [RoutingPolicyLabel](#cfn-networkmanager-vpcattachment-routingpolicylabel): {{String}}
   [SubnetArns](#cfn-networkmanager-vpcattachment-subnetarns): {{
     - String}}
@@ -69,23 +63,11 @@ Options for creating the VPC attachment.
 *Type*: [VpcOptions](aws-properties-networkmanager-vpcattachment-vpcoptions.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`ProposedNetworkFunctionGroupChange`  <a name="cfn-networkmanager-vpcattachment-proposednetworkfunctiongroupchange"></a>
-Describes proposed changes to a network function group.
-*Required*: No
-*Type*: [ProposedNetworkFunctionGroupChange](aws-properties-networkmanager-vpcattachment-proposednetworkfunctiongroupchange.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
-
-`ProposedSegmentChange`  <a name="cfn-networkmanager-vpcattachment-proposedsegmentchange"></a>
-Describes a proposed segment change. In some cases, the segment change must first be evaluated and accepted.
-*Required*: No
-*Type*: [ProposedSegmentChange](aws-properties-networkmanager-vpcattachment-proposedsegmentchange.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
-
 `RoutingPolicyLabel`  <a name="cfn-networkmanager-vpcattachment-routingpolicylabel"></a>
 Property description not available.
 *Required*: No
 *Type*: String
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SubnetArns`  <a name="cfn-networkmanager-vpcattachment-subnetarns"></a>
 The subnet ARNs.

@@ -18,6 +18,13 @@ Type: Integer
 Valid Range: Minimum value of 1.
 Required: No
 
+ ** OrderedUserSecretVersionStages **   <a name="TransferFamily-Type-SftpConnectorConfig-OrderedUserSecretVersionStages"></a>
+An ordered list of AWS Secrets Manager version stages (staging labels, such as `AWSCURRENT` and `AWSPREVIOUS`) for the secret identified by `UserSecretId`. When establishing a connection, the connector attempts to retrieve the SFTP user's credentials from each version stage in the order listed, and uses the first version it can successfully retrieve. This lets you rotate the user secret without interrupting connector operations.
+Type: Array of strings
+Array Members: Minimum number of 1 item. Maximum number of 2 items.
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Required: No
+
  ** TrustedHostKeys **   <a name="TransferFamily-Type-SftpConnectorConfig-TrustedHostKeys"></a>
 The public portion of the host key, or keys, that are used to identify the external server to which you are connecting. You can use the `ssh-keyscan` command against the SFTP server to retrieve the necessary key.
  `TrustedHostKeys` is optional for `CreateConnector`. If not provided, you can use `TestConnection` to retrieve the server host key during the initial connection attempt, and subsequently update the connector with the observed host key.

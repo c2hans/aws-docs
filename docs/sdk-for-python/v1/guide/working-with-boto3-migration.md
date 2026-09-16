@@ -19,7 +19,7 @@ For guidance on choosing between the two SDKs, see [Choosing the right AWS SDK f
 
 ## Before you start
 <a name="working-with-boto3-migration-readiness"></a>
-+ Check [Supported services](welcome.md#supported-services) for current client availability, then confirm each required operation and generated type in the [AWS SDK for Python API Reference](https://docs.aws.amazon.com/sdk-for-python/v1/reference/). An available client or operation does not by itself establish support for Boto3 Resources, paginators, waiters, transfer utilities, or streaming.
++ Check [Supported services](welcome.md#supported-services) for current client availability, then confirm each required operation and generated type in the [](). An available client or operation does not by itself establish support for Boto3 Resources, paginators, waiters, transfer utilities, or streaming.
 + Identify the complete workflow to migrate, including its callers, configuration, error handling, tests, and any Boto3-specific features. Review [Key differences](working-with-boto3-differences.md) before changing its API contracts.
 + Keep Boto3 installed alongside the new SDK. Pin the generated service-package versions used by your application and retest when you upgrade them.
 

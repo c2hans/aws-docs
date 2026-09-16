@@ -19,6 +19,12 @@ Type: String
 Valid Values: `ipv4 | ipv6 | dualstack`
 Required: No
 
+ ** isPrivateOriginAccessEnabled **   <a name="Lightsail-Type-Origin-isPrivateOriginAccessEnabled"></a>
+Specifies whether private origin access is enabled for the distribution's origin. With private origin access, the distribution can serve objects that aren't publicly accessible from a Lightsail bucket.
+This applies when you set the bucket's `getObject` access rule to `private`. It also applies when you set `getObject` to `public` but set individual objects to private.
+Type: Boolean
+Required: No
+
  ** name **   <a name="Lightsail-Type-Origin-name"></a>
 The name of the origin resource.
 Type: String

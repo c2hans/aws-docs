@@ -23,6 +23,11 @@ The parameters for querying cost and usage data, including metrics, time range, 
 Type: [CostAndUsageQuery](API_bcmDashboards_CostAndUsageQuery.md) object
 Required: No
 
+ ** costAnomalyDetected **   <a name="awscostmanagement-Type-bcmDashboards_QueryParameters-costAnomalyDetected"></a>
+The parameters for querying detected cost anomalies, including the anomaly date range and optional filters such as severity, assessment, monitor type, or anomaly ID.
+Type: [CostAnomalyDetectedQuery](API_bcmDashboards_CostAnomalyDetectedQuery.md) object
+Required: No
+
  ** costEfficiency **   <a name="awscostmanagement-Type-bcmDashboards_QueryParameters-costEfficiency"></a>
 The query configuration for retrieving cost efficiency data, filtered by overall score, AWS account, or Region.
 Type: [CostEfficiencyQuery](API_bcmDashboards_CostEfficiencyQuery.md) object

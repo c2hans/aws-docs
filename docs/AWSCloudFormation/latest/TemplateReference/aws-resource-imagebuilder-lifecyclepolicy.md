@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::ImageBuilder::LifecyclePolicy
 <a name="aws-resource-imagebuilder-lifecyclepolicy"></a>
 
-Create a lifecycle policy resource.
+Creates a lifecycle policy resource.
 
 ## Syntax
 <a name="aws-resource-imagebuilder-lifecyclepolicy-syntax"></a>

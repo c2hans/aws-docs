@@ -18,7 +18,7 @@ Required: Yes
 
  ** version **   <a name="PCS-Type-SchedulerRequest-version"></a>
 The version of the specified scheduling software that AWS PCS uses to manage cluster scaling and job scheduling. For more information, see [Slurm versions in AWS PCS](https://docs.aws.amazon.com/pcs/latest/userguide/slurm-versions.html) in the * AWS PCS User Guide*.
-Valid Values: `24.11 | 25.05 | 25.11`
+Valid Values: `24.11 | 25.05 | 25.11 | 26.05`
 Type: String
 Required: Yes
 

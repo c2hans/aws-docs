@@ -38,7 +38,7 @@ Maximum number of executions to return (1-1000). Default is 100.
 Valid Range: Minimum value of 0. Maximum value of 1000.
 
  ** [Qualifier](#API_ListDurableExecutionsByFunction_RequestSyntax) **   <a name="lambda-ListDurableExecutionsByFunction-request-uri-Qualifier"></a>
-The function version or alias. If not specified, lists executions for the $LATEST version.
+The function version to filter executions by. If you don't specify a qualifier, this operation returns executions across all versions of the Lambda function.
 Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `\$(LATEST(\.PUBLISHED)?)|[a-zA-Z0-9-_$]+`
 
@@ -138,5 +138,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/lambda-2015-03-31/ListDurableExecutionsByFunction)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/lambda-2015-03-31/ListDurableExecutionsByFunction)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/lambda-2015-03-31/ListDurableExecutionsByFunction)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/lambda-2015-03-31/ListDurableExecutionsByFunction)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/lambda-2015-03-31/ListDurableExecutionsByFunction)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/lambda-2015-03-31/ListDurableExecutionsByFunction)

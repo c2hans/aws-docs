@@ -196,7 +196,7 @@ Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationN
 
 ```
 Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
-    Set-FSxFSRMQuota -Folder "share\department" -Disabled: $true
+    Set-FSxFSRMQuota -Folder "share\department" -Disabled:$true
 }
 ```
 
@@ -455,7 +455,7 @@ Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationN
 
 ```
 Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
-    Set-FSxFSRMAutoQuota -Folder "share\department" -Disabled: $true -UpdateDerived
+    Set-FSxFSRMAutoQuota -Folder "share\department" -Disabled:$true -UpdateDerived
 }
 ```
 

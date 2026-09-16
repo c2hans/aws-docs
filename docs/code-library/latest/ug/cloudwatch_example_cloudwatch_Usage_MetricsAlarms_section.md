@@ -4,12 +4,12 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/cloudwatch_exampl
 
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
-# Manage CloudWatch metrics and alarms using an AWS SDK
+# Manage CloudWatch custom metrics and alarms using an AWS SDK
 <a name="cloudwatch_example_cloudwatch_Usage_MetricsAlarms_section"></a>
 
 The following code example shows how to:
-+ Create an alarm to watch a CloudWatch metric.
-+ Put data into a metric and trigger the alarm.
++ Create an alarm to watch a single CloudWatch metric.
++ Put data into the metric with `PutMetricData` and trigger the alarm.
 + Get data from the alarm.
 + Delete the alarm.
 
@@ -21,7 +21,7 @@ The following code example shows how to:
 Create a class that wraps CloudWatch operations.
 
 ```
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 import logging
 from pprint import pprint
 import random
@@ -229,7 +229,7 @@ def usage_demo():
     minutes = 20
     metric_namespace = "doc-example-metric"
     metric_name = "page_views"
-    start = datetime.utcnow() - timedelta(minutes=minutes)
+    start = datetime.now(timezone.utc) - timedelta(minutes=minutes)
     print(
         f"Putting data into metric {metric_namespace}.{metric_name} spanning the "
         f"last {minutes} minutes."
@@ -290,13 +290,13 @@ def usage_demo():
 
     print(
         f"Getting data for metric {metric_namespace}.{metric_name} during timespan "
-        f"of {start} to {datetime.utcnow()} (times are UTC)."
+        f"of {start} to {datetime.now(timezone.utc)} (times are UTC)."
     )
     stats = cw_wrapper.get_metric_statistics(
         metric_namespace,
         metric_name,
         start,
-        datetime.utcnow(),
+        datetime.now(timezone.utc),
         60,
         ["Average", "Minimum", "Maximum"],
     )

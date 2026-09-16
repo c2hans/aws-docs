@@ -187,7 +187,7 @@ The `disk` metrics have a dimension for `Partition`, which means that the number
 
     Within the entry for each individual metric, you might optionally specify one or both of the following:
     + `rename` – Specifies a different name for this metric.
-    + `unit` – Specifies the unit to use for this metric, overriding the default unit of `None` of `None` for the metric. The unit that you specify must be a valid CloudWatch metric unit, as listed in the `Unit` description in [MetricDatum](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_MetricDatum.html).
+    + `unit` – Specifies the unit to use for this metric, overriding the default unit of `None` for the metric. The unit that you specify must be a valid CloudWatch metric unit, as listed in the `Unit` description in [MetricDatum](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_MetricDatum.html).
   + `ignore_file_system_types` – Specifies file system types to exclude when collecting disk metrics. Valid values include `sysfs`, `devtmpfs`, and so on.
   + `drop_device` – Setting this to `true` causes `Device` to not be included as a dimension for disk metrics.
 
@@ -210,7 +210,7 @@ The `disk` metrics have a dimension for `Partition`, which means that the number
 
     Within the entry for each individual metric, you might optionally specify one or both of the following:
     + `rename` – Specifies a different name for this metric.
-    + `unit` – Specifies the unit to use for this metric, overriding the default unit of `None` of `None` for the metric. The unit that you specify must be a valid CloudWatch metric unit, as listed in the `Unit` description in [MetricDatum](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_MetricDatum.html).
+    + `unit` – Specifies the unit to use for this metric, overriding the default unit of `None` for the metric. The unit that you specify must be a valid CloudWatch metric unit, as listed in the `Unit` description in [MetricDatum](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_MetricDatum.html).
 
     For information on default units and description of the metrics, see [Collect Amazon EBS NVMe driver metrics](Container-Insights-metrics-EBS-Collect.md).
   + `metrics_collection_interval` – Optional. Specifies how often to collect the diskio metrics, overriding the global `metrics_collection_interval` specified in the `agent` section of the configuration file.
@@ -227,7 +227,7 @@ The `disk` metrics have a dimension for `Partition`, which means that the number
 
     Within the entry for each individual metric, you might optionally specify one or both of the following:
     + `rename` – Specifies a different name for this metric.
-    + `unit` – Specifies the unit to use for this metric, overriding the default unit of `None` of `None` for the metric. The unit that you specify must be a valid CloudWatch metric unit, as listed in the `Unit` description in [MetricDatum](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_MetricDatum.html).
+    + `unit` – Specifies the unit to use for this metric, overriding the default unit of `None` for the metric. The unit that you specify must be a valid CloudWatch metric unit, as listed in the `Unit` description in [MetricDatum](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_MetricDatum.html).
   + `metrics_collection_interval` – Optional. Specifies how often to collect the swap metrics, overriding the global `metrics_collection_interval` specified in the `agent` section of the configuration file.
 
     This value is specified in seconds.

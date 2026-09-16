@@ -9,7 +9,7 @@ When you start a run, you specify the resources that HealthOmics allocates for t
 
 1. **Output location** – Specify an Amazon S3 URI where the output files from the run are stored. If you run a high volume of workflows concurrently, use separate Amazon S3 output URIs for each workflow to avoid bucket throttling. For more information, see [Organizing objects using prefixes](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-prefixes.html) in the *Amazon S3 User Guide* and [Scale Storage Connections Horizontally](https://docs.aws.amazon.com/whitepapers/latest/s3-optimizing-performance-best-practices/scale-storage-connections-horizontally.html) in the *Optimizing Amazon S3 Performance* whitepaper.
 
-1. **Service role** – Specify an IAM service role that grants HealthOmics permissions to access the resources needed for the run. Optionally, the console can create the service role for you. For more information, see [Service roles for AWS HealthOmics](permissions-service.md).
+1. **Service role** – Specify an IAM service role that grants HealthOmics permissions to access the resources needed for the run. Optionally, the console can create the service role for you. You can also use session policies to further restrict permissions for individual runs. For more information, see [Service roles for AWS HealthOmics](permissions-service.md).
 
 1. **Run storage** (optional, defaults to Dynamic) – Specify the run storage type and storage amount (for static storage). To ensure data isolation and security, HealthOmics provisions the storage at the start of each run, and deprovisions it at the end of the run. For more information, see [Run storage types in HealthOmics workflows](workflows-run-types.md).
 
@@ -28,6 +28,7 @@ When you start a run, you specify the resources that HealthOmics allocates for t
 + [Starting a run using the API](#starting-a-run-api)
 + [Specify Nextflow engine settings](#start-run-api-engine-settings)
 + [VPC networking](#start-run-vpc-networking)
++ [Enable run metrics](#starting-a-run-metrics)
 
 ## Starting a run using the console
 <a name="starting-a-run-console"></a>
@@ -310,3 +311,23 @@ To enable VPC networking:
 1. When starting a run using the API, use `--networking-mode VPC` and reference your configuration with `--configuration-name`.
 
 For more information, see [Connecting HealthOmics workflows to a VPC](workflows-vpc-networking.md).
+
+## Enable run metrics
+<a name="starting-a-run-metrics"></a>
+
+Run metrics report near real-time resource utilization for a run. To enable run metrics, the service role that you use for the run must have the `cloudwatch:PutMetricData` permission. For more information, see [Run metrics for Private Workflows](monitoring-run-metrics.md).
+
+Add the following permission to the service role that you use for the run.
+
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "cloudwatch:PutMetricData",
+      "Resource": "*"
+    }
+  ]
+}
+```

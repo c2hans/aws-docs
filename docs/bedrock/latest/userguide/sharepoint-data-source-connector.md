@@ -176,7 +176,7 @@ aws bedrock-agent create-data-source \
             "siteUrls": [
                 "https://yourdomain.sharepoint.com/sites/mysite"
             ],
-            "authType": "OAUTH2_SHAREPOINT_APP_ONLY_CLIENT_CREDENTIALS",
+            "authType": "OAUTH2_CLIENT_CREDENTIALS",
             "credentialsSecretArn": "arn:aws::secretsmanager:your-region:secret:AmazonBedrock-SharePoint"
         },
         "crawlerConfiguration": {

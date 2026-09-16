@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/get-started-topics.
 **Topics**
 + [Before you start](#topics-before)
 + [Using the AWS Command Line Interface](#topics-cli)
-+ [Using the SDK for Python or SDK for .NET](#topic-java)
++ [Using the AWS SDK for Python (Boto3) or SDK for .NET](#topic-java)
 
 ## Before you start
 <a name="topics-before"></a>
@@ -130,7 +130,7 @@ You will get the following JSON in response:
 }
 ```
 
-## Using the SDK for Python or SDK for .NET
+## Using the AWS SDK for Python (Boto3) or SDK for .NET
 <a name="topic-java"></a>
 
 For SDK examples of how to start a topic modeling job, see [Use `StartTopicsDetectionJob` with an AWS SDK or CLI](example_comprehend_StartTopicsDetectionJob_section.md).

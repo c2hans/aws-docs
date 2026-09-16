@@ -8,6 +8,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 <a name="AWS_Kinesis"></a>
 
 **Resource types**
++ [AWS::Kinesis::Channel](aws-resource-kinesis-channel.md)
 + [AWS::Kinesis::ResourcePolicy](aws-resource-kinesis-resourcepolicy.md)
 + [AWS::Kinesis::Stream](aws-resource-kinesis-stream.md)
 + [AWS::Kinesis::StreamConsumer](aws-resource-kinesis-streamconsumer.md)

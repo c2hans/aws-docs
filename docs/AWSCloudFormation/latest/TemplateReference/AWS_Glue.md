@@ -12,6 +12,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::Glue::Catalog](aws-resource-glue-catalog.md)
 + [AWS::Glue::Classifier](aws-resource-glue-classifier.md)
 + [AWS::Glue::Connection](aws-resource-glue-connection.md)
++ [AWS::Glue::ConnectionType](aws-resource-glue-connectiontype.md)
 + [AWS::Glue::Crawler](aws-resource-glue-crawler.md)
 + [AWS::Glue::CustomEntityType](aws-resource-glue-customentitytype.md)
 + [AWS::Glue::Database](aws-resource-glue-database.md)

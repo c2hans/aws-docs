@@ -397,3 +397,8 @@ Automatic semantic enrichment is available in the following AWS Regions:
 + Europe (Ireland)
 + Europe (Stockholm)
 + Europe (Spain)
+
+## Data privacy for Automatic Semantic Enrichment
+<a name="semantic-enrichment-data-privacy"></a>
+
+The machine learning model that powers Automatic Semantic Enrichment (ASE) is pre-trained. Amazon OpenSearch Service does not use your content — including the documents you index, your queries, or your search results — to train, retrain, or improve this model. Your data is processed solely to deliver the ASE functionality you request and is not shared with other customers or used for any model-training purpose.

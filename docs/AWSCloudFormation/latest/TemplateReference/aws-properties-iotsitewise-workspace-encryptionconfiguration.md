@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::IoTSiteWise::Workspace EncryptionConfiguration
 <a name="aws-properties-iotsitewise-workspace-encryptionconfiguration"></a>
 
-<a name="aws-properties-iotsitewise-workspace-encryptionconfiguration-description"></a>The `EncryptionConfiguration` property type specifies Property description not available. for an [AWS::IoTSiteWise::Workspace](aws-resource-iotsitewise-workspace.md).
+Specifies the encryption configuration to apply to the workspace, including whether to use the default AWS IoT SiteWise key or a customer managed AWS KMS key.
 
 ## Syntax
 <a name="aws-properties-iotsitewise-workspace-encryptionconfiguration-syntax"></a>
@@ -34,7 +34,9 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-iotsitewise-workspace-encryptionconfiguration-properties"></a>
 
 `EncryptionType`  <a name="cfn-iotsitewise-workspace-encryptionconfiguration-encryptiontype"></a>
-Property description not available.
+The encryption scheme for the workspace. Valid values:
++ `SITEWISE_DEFAULT_ENCRYPTION` – Encrypts data with the AWS IoT SiteWise default key.
++ `KMS_BASED_ENCRYPTION` – Encrypts data with the customer managed AWS KMS key identified by `KmsKeyId`.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `SITEWISE_DEFAULT_ENCRYPTION | KMS_BASED_ENCRYPTION`

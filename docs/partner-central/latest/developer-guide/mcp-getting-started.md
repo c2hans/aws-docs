@@ -503,14 +503,7 @@ aws iam create-policy \
                 "Effect": "Allow",
                 "Action": [
                     "partnercentral:List*",
-                    "partnercentral:Get*",
-                    "partnercentral:ListPartners",
-                    "partnercentral:GetPartner",
-                    "partnercentral:GetProfileVisibility",
-                    "partnercentral:GetAllianceLeadContact",
-                    "partnercentral:GetProfileUpdateTask",
-                    "partnercentral:GetAccountConnections",
-                    "partnercentral:GetConnectionInvitations"
+                    "partnercentral:Get*"
                 ],
                 "Resource": "*"
             },

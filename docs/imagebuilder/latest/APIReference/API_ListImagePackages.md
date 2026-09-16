@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lis
 # ListImagePackages
 <a name="API_ListImagePackages"></a>
 
-List the Packages that are associated with an Image Build Version, as determined by AWS Systems Manager Inventory at build time.
+Lists the packages that are associated with an image build version, as determined by AWS Systems Manager Inventory at build time.
 
 ## Request Syntax
 <a name="API_ListImagePackages_RequestSyntax"></a>
@@ -38,13 +38,13 @@ Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):image/
 Required: Yes
 
  ** [maxResults](#API_ListImagePackages_RequestSyntax) **   <a name="imagebuilder-ListImagePackages-request-maxResults"></a>
-Specify the maximum number of items to return in a request.
+The maximum number of items to return in a single request.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 25.
 Required: No
 
  ** [nextToken](#API_ListImagePackages_RequestSyntax) **   <a name="imagebuilder-ListImagePackages-request-nextToken"></a>
-A token to specify where to start paginating. This is the nextToken from a previously truncated response.
+A token to specify where to start paginating. Use the `nextToken` value from a previously truncated response.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 65535.
 Required: No
@@ -138,5 +138,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/imagebuilder-2019-12-02/ListImagePackages)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/imagebuilder-2019-12-02/ListImagePackages)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/imagebuilder-2019-12-02/ListImagePackages)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/imagebuilder-2019-12-02/ListImagePackages)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/imagebuilder-2019-12-02/ListImagePackages)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/imagebuilder-2019-12-02/ListImagePackages)

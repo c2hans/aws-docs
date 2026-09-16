@@ -90,9 +90,9 @@ aws forecast create-predictor \
 To learn more about customizing forecast types and optimization metrics, see [Evaluating Predictor Accuracy](metrics.md) The Weather Index and Holidays additional datasets are defined within the `DataConfig` datatype. For information on additional datasets, see [Weather Index](weather.md) and [Holidays Featurization](holidays.md).
 
 ------
-#### [ Python ]
+#### [ SDK for Python (Boto3) ]
 
-To create an auto predictor with the SDK for Python (Boto3), use the `create_auto_predictor` method. The following code creates an auto predictor that makes predictions for 14 days in the future.
+To create an auto predictor with the AWS SDK for Python (Boto3), use the `create_auto_predictor` method. The following code creates an auto predictor that makes predictions for 14 days in the future.
 
 Provide a name for the predictor and the Amazon Resource Name (ARN) of the dataset group that includes your training data. Optionally modify the forecast horizon and forecast frequency. Optionally add any tags for the predictor. For more information see [Tagging Amazon Forecast Resources](tagging-forecast-resources.md).
 
@@ -167,7 +167,7 @@ aws forecast create-predictor \
 ```
 
 ------
-#### [ Python ]
+#### [ SDK for Python (Boto3) ]
 
 To upgrade a predictor with the SDK for Python (Boto3), use the `create_auto_predictor` method, but specify *only* the predictor name and the value of `ReferencePredictorArn` (the ARN of the predictor you want to upgrade).
 

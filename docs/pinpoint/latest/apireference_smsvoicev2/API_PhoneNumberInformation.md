@@ -91,6 +91,11 @@ When set to true the international sending of phone number is Enabled.
 Type: Boolean
 Required: No
 
+ ** MessagingLimits **   <a name="pinpoint-Type-PhoneNumberInformation-MessagingLimits"></a>
+The messaging limits that apply to the phone number, including the per-capability send rates and any advisory per-provider daily message caps.
+Type: [MessagingLimits](API_MessagingLimits.md) object
+Required: No
+
  ** PhoneNumberId **   <a name="pinpoint-Type-PhoneNumberInformation-PhoneNumberId"></a>
 The unique identifier for the phone number.
 Type: String

@@ -34,19 +34,21 @@ In the event that the cleanup process fails in your deployment when registering 
 
 First we must discover the resources that should be ignored for your environment:
 
-1. In the **Hub account** navigate to the [AWS Step Functions console](https://console.aws.amazon.com/states) and choose the account cleaner state machine starting with **AccountCleanerStepFunctionStateMachine**.
+1. In the solution web UI, go to the **Administration** dropdown and choose **Accounts**. Choose the account ID of the quarantined account to open the account details page.
 
-1. Choose one of the recent executions with a **Failed** status.
+1. Under **Recent cleanups**, choose the failed cleanup report to open its detail view.
 
-1. From the **Details** tab, copy the executionId provided at the top of the page (It will be in a format like **xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx\_xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx**).
+1. In the **Step timeline**, find the `nuke-phase-<n>` step that did not succeed and choose **View build logs**. This opens the **Build logs** tab for that AWS Nuke build in the [AWS CodeBuild console](https://console.aws.amazon.com/codesuite/codebuild/projects), where you can read the raw AWS Nuke output. If the failed step is not an AWS Nuke phase, no build log exists for it. This applies to the lock, access revocation, and validation steps. Instead, resolve the error shown inline in the **Step timeline** before continuing with the following steps. For more information about the cleanup report, see [Viewing cleanup details](#viewing-cleanup-details).
 
-1. Navigate to the [Amazon CloudWatch Logs Insights console](https://console.aws.amazon.com/cloudwatch/home#logsV2:logs-insights).
+1. From the CodeBuild console, copy the build ID for the failed build. In the console URL, the build is identified as `<project-name>:<build-id>`. Copy the `<build-id>` portion, which is in the format **xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx**. The solution uses this value as the log stream name for the build.
 
-1. Choose **Saved and sample queries** from the menu on the right.
+1. Navigate to the [Amazon CloudWatch Log Analytics console](https://console.aws.amazon.com/cloudwatch/home#log-analytics). For more information about the pre-populated queries, see [Pre-populated log queries](monitoring-logs-and-tracing.md#cloudwatch-log-queries).
 
-1. Expand the group name **ISB-<namespace>** and choose the **AccountCleanupLogs** query.
+1. Choose **Saved queries**.
 
-1. In the query editor replace the **PasteStateMachineExecutionIdHere** text with the executionId you copied previously.
+1. Expand the **ISB-<namespace>** folder and choose the **AccountCleanupLogs** query.
+
+1. In the query editor, replace the placeholder text in the `filter @logStream like` line with the build ID you copied previously.
 
 1. Ensure that the time range you selected includes the time of the cleanup failure.
 

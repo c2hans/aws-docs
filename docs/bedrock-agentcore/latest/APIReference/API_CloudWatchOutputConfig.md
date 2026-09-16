@@ -11,14 +11,31 @@ CloudWatch Logs destination for batch evaluation results.
 <a name="API_CloudWatchOutputConfig_Contents"></a>
 
  ** logGroupName **   <a name="BedrockAgentCore-Type-CloudWatchOutputConfig-logGroupName"></a>
-The name of the CloudWatch log group where evaluation results will be written.
+The name of the CloudWatch log group where evaluation results will be written. This value doesn't apply when `resultDestination` is `SOURCE_LOG_GROUP`, because results are written back to the trace source log group. The name can't be under the service-reserved `/aws/bedrock-agentcore/evaluations/` namespace, apart from the service-managed default group.
 Type: String
-Required: Yes
+Pattern: `$|^[.\-_/#A-Za-z0-9]+`
+Required: No
 
  ** logStreamName **   <a name="BedrockAgentCore-Type-CloudWatchOutputConfig-logStreamName"></a>
 The name of the CloudWatch log stream where evaluation results will be written.
 Type: String
-Required: Yes
+Pattern: `[^:*]*`
+Required: No
+
+ ** metricsNamespace **   <a name="BedrockAgentCore-Type-CloudWatchOutputConfig-metricsNamespace"></a>
+The CloudWatch metrics namespace where evaluation result metrics are published. If you omit this value, the service publishes metrics to `Bedrock-AgentCore/Evaluations`. This value can't begin with `AWS/`.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[a-zA-Z0-9._#/:-]+`
+Required: No
+
+ ** resultDestination **   <a name="BedrockAgentCore-Type-CloudWatchOutputConfig-resultDestination"></a>
+The destination where evaluation results are written. Valid values:
++  `DEDICATED_LOG_GROUP` (default) – Writes results to a dedicated result log group.
++  `SOURCE_LOG_GROUP` – Writes results back to the log group that the agent traces were read from. If you use this value, don't specify `logGroupName`.
+Type: String
+Valid Values: `DEDICATED_LOG_GROUP | SOURCE_LOG_GROUP`
+Required: No
 
 ## See Also
 <a name="API_CloudWatchOutputConfig_SeeAlso"></a>

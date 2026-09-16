@@ -54,7 +54,7 @@ Syntax:
 ```
 `logGroups(
     logGroupIdentifier: ['LogGroup1','LogGroup2', ...'LogGroupn']
-)
+)`
 ```
 
 In this syntax, you can specify up to 50 log groups in the `logGroupIdentifier` parameter. To reference log groups in a monitoring account, use ARNs instead of `LogGroup` names.

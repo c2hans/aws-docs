@@ -25,6 +25,11 @@ Length Constraints: Minimum length of 1. Maximum length of 63.
 Pattern: `[a-z0-9]([-a-z0-9]*[a-z0-9])?`
 Required: Yes
 
+ ** labelSelector **   <a name="ngresiliencehub-Type-EksSource-labelSelector"></a>
+Filters discovery to the Kubernetes objects whose labels match the selector. When omitted, all supported objects in the specified namespaces are discovered.
+Type: [EksLabelSelector](API_EksLabelSelector.md) object
+Required: No
+
 ## See Also
 <a name="API_EksSource_SeeAlso"></a>
 

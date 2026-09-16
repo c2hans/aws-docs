@@ -12,7 +12,7 @@ You can set a specific a departure time to use live and predictive traffic condi
 + `DepartureTime` – When provided, it uses predictive and known traffic conditions for the requested time. Defined in the following [format](https://www.iso.org/iso-8601-date-and-time-format.html): `YYYY-MM-DDThh:mm:ss.sssZ`.
 
 **Example**
-The following `[CalculateRoute](https://docs.aws.amazon.com/location-routes/latest/APIReference/API_CalculateRoute.html)` request sets the departure time to July 2, 2024, at 12:15:20 UTC.
+The following `[CalculateRoute](https://docs.aws.amazon.com/location/previous/APIReference/API_CalculateRoute.html)` request sets the departure time to July 2, 2024, at 12:15:20 UTC.
 
 ```
 POST /routes/v0/calculators/ExampleCalculator/calculate/route

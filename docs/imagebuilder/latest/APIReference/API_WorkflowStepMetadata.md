@@ -16,6 +16,12 @@ Type: String
 Pattern: `^[A-Za-z][A-Za-z0-9-_]{1,99}$`
 Required: No
 
+ ** attemptNumber **   <a name="imagebuilder-Type-WorkflowStepMetadata-attemptNumber"></a>
+The current attempt number for the workflow step. The first run is attempt one. The number increases by one for each retry.
+Type: Integer
+Valid Range: Minimum value of 1.
+Required: No
+
  ** description **   <a name="imagebuilder-Type-WorkflowStepMetadata-description"></a>
 Description of the workflow step.
 Type: String
@@ -30,6 +36,12 @@ Required: No
  ** inputs **   <a name="imagebuilder-Type-WorkflowStepMetadata-inputs"></a>
 Input parameters that Image Builder provides for the workflow step.
 Type: String
+Required: No
+
+ ** maxAttempts **   <a name="imagebuilder-Type-WorkflowStepMetadata-maxAttempts"></a>
+The maximum number of attempts allowed for the workflow step, based on the retry configuration in the workflow document. If the step doesn't configure retries, the maximum is one attempt.
+Type: Integer
+Valid Range: Minimum value of 1.
 Required: No
 
  ** message **   <a name="imagebuilder-Type-WorkflowStepMetadata-message"></a>

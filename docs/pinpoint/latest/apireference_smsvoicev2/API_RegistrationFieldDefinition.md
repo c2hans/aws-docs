@@ -41,6 +41,11 @@ Length Constraints: Minimum length of 1. Maximum length of 100.
 Pattern: `[A-Za-z0-9_]+`
 Required: Yes
 
+ ** ConditionalBehavior **   <a name="pinpoint-Type-RegistrationFieldDefinition-ConditionalBehavior"></a>
+The conditional behavior rules for this field. Only present when **FieldRequirement** is **CONDITIONAL**. Rules are evaluated in order and the first matching rule determines the field's resolved requirement. If no rule matches, the **DefaultBehavior** applies.
+Type: [ConditionalBehavior](API_ConditionalBehavior.md) object
+Required: No
+
  ** SelectValidation **   <a name="pinpoint-Type-RegistrationFieldDefinition-SelectValidation"></a>
 The validation rules for a select field.
 Type: [SelectValidation](API_SelectValidation.md) object

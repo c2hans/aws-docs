@@ -164,7 +164,7 @@ Modifies the properties of an existing file screen.
 
    Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ArgumentList $notifications -ScriptBlock {
        param($notifications)
-       Set-FSxFSRMFileScreen -Folder "share\projects" -Active: $true -NotificationConfigurations $Using:notifications -PassThru
+       Set-FSxFSRMFileScreen -Folder "share\projects" -Active:$true -NotificationConfigurations $Using:notifications -PassThru
    }
    ```
 
@@ -266,7 +266,7 @@ $null = $notifications.Add($eventNotif)
 
 Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ArgumentList $notifications -ScriptBlock {
     param($notifications)
-    New-FSxFSRMFileScreenTemplate -Name "Block Executables" -Description "Blocks executable files" -IncludeGroup "Executable Files" -Active: $true -NotificationConfigurations $Using:notifications
+    New-FSxFSRMFileScreenTemplate -Name "Block Executables" -Description "Blocks executable files" -IncludeGroup "Executable Files" -Active:$true -NotificationConfigurations $Using:notifications
 }
 ```
 
@@ -324,7 +324,7 @@ Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationN
 
 ```
 Invoke-Command -ComputerName $FSxWindowsRemotePowerShellEndpoint -ConfigurationName FSxRemoteAdmin -ScriptBlock {
-    Set-FSxFSRMFileScreenTemplate -Name "Block Executables" -Active: $true -UpdateDerived
+    Set-FSxFSRMFileScreenTemplate -Name "Block Executables" -Active:$true -UpdateDerived
 }
 ```
 

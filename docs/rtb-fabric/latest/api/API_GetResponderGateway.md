@@ -39,13 +39,13 @@ Content-type: application/json
 
 {
    "activeLinksCount": number,
+   "clientRoutingPolicy": "string",
    "createdAt": number,
    "description": "string",
    "domainName": "string",
    "externalInboundEndpoint": "string",
    "gatewayId": "string",
    "gatewayType": "string",
-   "inboundLinksCount": number,
    "linksRequestedCount": number,
    "listenerConfig": {
       "protocols": [ "string" ]
@@ -79,6 +79,11 @@ The following data is returned in JSON format by the service.
 The count of active links for the responder gateway.
 Type: Integer
 
+ ** [clientRoutingPolicy](#API_GetResponderGateway_ResponseSyntax) **   <a name="rtbfabric-GetResponderGateway-response-clientRoutingPolicy"></a>
+The client routing policy of the gateway. This policy controls which Availability Zones RTB Fabric uses to reach the gateway for the requester gateways that send traffic to it. RTB Fabric omits this member if the gateway has never had a client routing policy. An omitted value means that the gateway uses `AVAILABILITY_ZONE_AFFINITY`. For more information, see [Configuring Availability Zone affinity](https://docs.aws.amazon.com/rtb-fabric/latest/userguide/working-with-responder-gateways.html#configuring-availability-zone-affinity) in the * AWS RTB Fabric User Guide*.
+Type: String
+Valid Values: `AVAILABILITY_ZONE_AFFINITY | ANY_AVAILABILITY_ZONE`
+
  ** [createdAt](#API_GetResponderGateway_ResponseSyntax) **   <a name="rtbfabric-GetResponderGateway-response-createdAt"></a>
 The timestamp of when the responder gateway was created.
 Type: Timestamp
@@ -110,10 +115,6 @@ Pattern: `rtb-gw-[a-z0-9-]{1,25}`
 The type of gateway. Valid values are `EXTERNAL` or `INTERNAL`.
 Type: String
 Valid Values: `EXTERNAL | INTERNAL`
-
- ** [inboundLinksCount](#API_GetResponderGateway_ResponseSyntax) **   <a name="rtbfabric-GetResponderGateway-response-inboundLinksCount"></a>
-Deprecated. Use 'linksRequestedCount' instead.
-Type: Integer
 
  ** [linksRequestedCount](#API_GetResponderGateway_ResponseSyntax) **   <a name="rtbfabric-GetResponderGateway-response-linksRequestedCount"></a>
 The count of requested links waiting for the responder gateway to accept or reject.
@@ -219,5 +220,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/rtbfabric-2023-05-15/GetResponderGateway)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/rtbfabric-2023-05-15/GetResponderGateway)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/rtbfabric-2023-05-15/GetResponderGateway)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/rtbfabric-2023-05-15/GetResponderGateway)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/rtbfabric-2023-05-15/GetResponderGateway)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/rtbfabric-2023-05-15/GetResponderGateway)

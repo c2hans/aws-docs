@@ -142,13 +142,73 @@ You can use the buttons with the following product types:
 + Container
 + CloudFormation templates
 
-To use the buttons, you must belong to the APN Customer Engagements Program (ACE). When buyers request an offer or a demo, they enter their contact data and request details into a form. The AWS Demand generation team then qualifies the requests and transfers those qualified requests to you as AWS originated opportunities through ACE in Partner Central. You then follow up with customers to discuss offer details or schedule a guided demo. For more information about ACE, see the [APN Customer Engagements Program](https://aws.amazon.com/partners/programs/ace/) website and [Leads and Opportunities](https://partnercentral.awspartner.com/partnercentral2/s/article?category=ACE_Get_Started&article=ACE-Getting-Started-Frequently-Asked-Questions-FAQ#AWS-Originated-Referrals---Lead-and-Opportunity) in the *APN Customer Engagement (ACE) FAQs*.
+To use the buttons, you must belong to the APN Customer Engagements Program (ACE). When buyers request an offer or a demo, they enter their contact details and a description of their use case into a form. AWS evaluates each request when a buyer submits it.
+
+Requests with sufficient business context are shared with you as AWS originated opportunities in AWS Partner Central. Requests without sufficient business context are shared with you as leads, which you can enrich and run prospecting workflows against. Both types of request arrive as invitations in AWS Partner Central. You then follow up with the customer to discuss offer details or schedule a guided demo.
+
+For more information about ACE, see the [APN Customer Engagements Program](https://aws.amazon.com/partners/programs/ace/) website and [Leads and Opportunities](https://partnercentral.awspartner.com/partnercentral2/s/article?category=ACE_Get_Started&article=ACE-Getting-Started-Frequently-Asked-Questions-FAQ#AWS-Originated-Referrals---Lead-and-Opportunity) in the *APN Customer Engagement (ACE) FAQs*.
 
 Steps in the following topics explain how to add the buttons to your product detail pages.
 
 **Topics**
++ [How demo and private offer requests reach you](#how-requests-reach-you)
 + [Button prerequisites](#button-prerequisites)
 + [Enabling the buttons](#enabling-the-buttons)
+
+### How demo and private offer requests reach you
+<a name="how-requests-reach-you"></a>
+
+#### Requests shared as opportunities
+<a name="requests-shared-as-opportunities"></a>
+
+Requests with sufficient business context are shared with you as AWS originated opportunities. You receive an opportunity invitation in AWS Partner Central. Accepting the invitation creates the opportunity in your pipeline.
+
+To find these invitations, go to **Sell > Opportunities** in the AWS Partner Central navigation, then choose the **Opportunity Invitations** tab. To narrow the list to requests from AWS Marketplace, filter to invitations whose **Project Title** contains `AWS Marketplace`. After you accept an invitation, the opportunity appears on the **Opportunities** tab.
+
+Engagement invitations expire after 5 business days if you don't accept them.
+
+#### Requests shared as leads
+<a name="requests-shared-as-leads"></a>
+
+Requests that don't include sufficient business context to qualify as an opportunity are shared with you as leads. Leads also arrive as invitations that you accept.
+
+To find these invitations, go to **Sell > Leads** in the AWS Partner Central navigation, then choose the **Lead Invitations** tab. After you accept a lead, it appears on the **Leads** tab.
+
+After you accept them, you can enrich these leads with AWS signals and run prospecting workflows against them, including lead overviews, sales plays, call scripts, and outreach email drafts.
+
+#### Identifying requests from AWS Marketplace
+<a name="identifying-requests"></a>
+
+How you identify these requests depends on whether they arrive as an opportunity or a lead:
++ **Opportunities** are identified by the **Project Title**, which includes AWS Marketplace and the request type. See [Opportunity naming](#opportunity-naming).
++ **Leads** are identified by the **Lead Source** field, which is set to `AWS Marketplace`. An accepted lead also carries an `AWS Marketplace` interaction entry that states whether the customer requested a private offer or a demo.
+
+#### Opportunity naming
+<a name="opportunity-naming"></a>
+
+Opportunities created from these requests use the following naming format:
+
+```
+[Customer company name] AWS Marketplace [Request Demo | Request Private Offer]
+```
+
+The request type indicates whether the customer asked for a guided demo or a private offer.
+
+Long customer company names are shortened. The engagement title in AWS Partner Central supports up to 40 characters, so the title you see might be shorter than the full opportunity name.
+
+#### Opportunity Quality score
+<a name="opportunity-quality-score"></a>
+
+Opportunities created from these requests include an Opportunity Quality score, based on the same criteria used for opportunities you submit yourself. You can use the score to prioritize these opportunities alongside the rest of your pipeline.
+
+For more information, see [Co-sell engagement](https://docs.aws.amazon.com/partner-central/latest/sales-guide/co-sell-engagement.html) in the *AWS Partner Central Sales Guide*.
+
+#### Following up with customers
+<a name="following-up-with-customers"></a>
+
+You contact the customer directly to discuss offer details or schedule the guided demo. The customer's contact details arrive with the request.
+
+Follow up as soon as possible, and within 5 business days of receiving the request.
 
 ### Button prerequisites
 <a name="button-prerequisites"></a>

@@ -65,7 +65,7 @@ Type: String
 Required: No
 
  ** enhancedImageMetadataEnabled **   <a name="imagebuilder-Type-ImagePipeline-enhancedImageMetadataEnabled"></a>
-Collects additional information about the image being created, including the operating system (OS) version and package list. This information is used to enhance the overall experience of using EC2 Image Builder. Enabled by default.
+Specifies whether to collect additional information about the image being created, including the operating system (OS) version and package list. Defaults to `true`.
 Type: Boolean
 Required: No
 

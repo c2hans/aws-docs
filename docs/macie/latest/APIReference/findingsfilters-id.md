@@ -397,7 +397,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/macie2-2020-01-01/DeleteFindingsFilter)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/macie2-2020-01-01/DeleteFindingsFilter)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/macie2-2020-01-01/DeleteFindingsFilter)
-+ [AWS SDK for Python](/goto/boto3/macie2-2020-01-01/DeleteFindingsFilter)
++ [AWS SDK for Python (Boto3)](/goto/boto3/macie2-2020-01-01/DeleteFindingsFilter)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/macie2-2020-01-01/DeleteFindingsFilter)
 
 ### GetFindingsFilter
@@ -410,7 +410,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/macie2-2020-01-01/GetFindingsFilter)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/macie2-2020-01-01/GetFindingsFilter)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/macie2-2020-01-01/GetFindingsFilter)
-+ [AWS SDK for Python](/goto/boto3/macie2-2020-01-01/GetFindingsFilter)
++ [AWS SDK for Python (Boto3)](/goto/boto3/macie2-2020-01-01/GetFindingsFilter)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/macie2-2020-01-01/GetFindingsFilter)
 
 ### UpdateFindingsFilter
@@ -423,5 +423,5 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/macie2-2020-01-01/UpdateFindingsFilter)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/macie2-2020-01-01/UpdateFindingsFilter)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/macie2-2020-01-01/UpdateFindingsFilter)
-+ [AWS SDK for Python](/goto/boto3/macie2-2020-01-01/UpdateFindingsFilter)
++ [AWS SDK for Python (Boto3)](/goto/boto3/macie2-2020-01-01/UpdateFindingsFilter)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/macie2-2020-01-01/UpdateFindingsFilter)

@@ -10,7 +10,7 @@ There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://
 The following code examples show how to use `EnableAlarmActions`.
 
 Action examples are code excerpts from larger programs and must be run in context. You can see this action in context in the following code example:
-+  [Manage metrics and alarms](cloudwatch_example_cloudwatch_Usage_MetricsAlarms_section.md)
++  [Manage custom metrics and alarms](cloudwatch_example_cloudwatch_Usage_MetricsAlarms_section.md)
 
 ------
 #### [ .NET ]

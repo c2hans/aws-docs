@@ -622,7 +622,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/kafka-2018-11-14/DescribeChannel)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/kafka-2018-11-14/DescribeChannel)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/kafka-2018-11-14/DescribeChannel)
-+ [AWS SDK for Python](/goto/boto3/kafka-2018-11-14/DescribeChannel)
++ [AWS SDK for Python (Boto3)](/goto/boto3/kafka-2018-11-14/DescribeChannel)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/kafka-2018-11-14/DescribeChannel)
 
 ### UpdateChannel
@@ -635,7 +635,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/kafka-2018-11-14/UpdateChannel)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/kafka-2018-11-14/UpdateChannel)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/kafka-2018-11-14/UpdateChannel)
-+ [AWS SDK for Python](/goto/boto3/kafka-2018-11-14/UpdateChannel)
++ [AWS SDK for Python (Boto3)](/goto/boto3/kafka-2018-11-14/UpdateChannel)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/kafka-2018-11-14/UpdateChannel)
 
 ### DeleteChannel
@@ -648,5 +648,5 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/kafka-2018-11-14/DeleteChannel)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/kafka-2018-11-14/DeleteChannel)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/kafka-2018-11-14/DeleteChannel)
-+ [AWS SDK for Python](/goto/boto3/kafka-2018-11-14/DeleteChannel)
++ [AWS SDK for Python (Boto3)](/goto/boto3/kafka-2018-11-14/DeleteChannel)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/kafka-2018-11-14/DeleteChannel)

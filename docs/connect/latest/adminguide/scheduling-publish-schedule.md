@@ -15,7 +15,12 @@ After you create shift activities, shift profiles, staffing groups and staffing 
 
 1. On the Connect Customer navigation menu, select **Analytics and optimization**, **Scheduling**.
 
-1. Choose the **Schedule Manager** tab, and then choose **Generate schedule**.
+1. Choose the **Schedule Manager** tab, and then choose **Generate new**. You have the following two options:
+   + **Schedule** - Generate a standard schedule that is not a shift bid.
+   + **Shift bid** - Generate a schedule that agents bid on. To learn how to set up and run shift bidding, see [Shift bidding](scheduling-shift-bid.md).
+![The Generate new menu expanded, showing the Schedule and Shift bid options.](https://docs.aws.amazon.com/connect/latest/adminguide/images/wfm-shift-bid-generate-new-menu.png)
+**Note**
+The rest of this topic describes how to generate a schedule that is not a shift bid. To learn how to do shift bidding, see [Shift bidding](scheduling-shift-bid.md).
 
 1. Enter a name and description for the schedule.
 

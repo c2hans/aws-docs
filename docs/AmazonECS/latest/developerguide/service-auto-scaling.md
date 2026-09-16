@@ -15,6 +15,8 @@ Amazon ECS Service Auto Scaling supports the following types of automatic scalin
 + [Use scheduled actions to scale Amazon ECS services](service-autoscaling-schedulescaling.md)—Increase or decrease the number of tasks that your service runs based on the date and time.
 + [Use historical patterns to scale Amazon ECS services with predictive scaling](predictive-auto-scaling.md)—Increase or decrease the number of tasks that your service runs based on historical load data analytics to detect daily or weekly patterns in traffic flows.
 
++ [Scale Amazon ECS services based on an Amazon SQS queue](service-autoscaling-queue.md)—Increase or decrease the number of tasks that your service runs based on the backlog of messages in an Amazon SQS queue, using a backlog per task custom metric. This is useful for asynchronous applications where Amazon ECS tasks act as workers that consume messages from a queue.
+
 ## Considerations
 <a name="auto-scaling-concepts"></a>
 

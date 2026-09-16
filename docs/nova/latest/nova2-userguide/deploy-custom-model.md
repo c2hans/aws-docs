@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/deploy-custo
 # Deploy a custom model for on-demand inference
 <a name="deploy-custom-model"></a>
 
-After you successfully create a custom model with a model customization job (fine-tuning, distillation, or continued pre-training), you can set up on-demand inference for the model.
+After you successfully create a custom model with a fine-tuning or continued pre-training job, you can set up on-demand inference for the model.
 
 To set up on-demand inference for a custom model, you deploy the model with a custom model deployment. After you deploy your custom model, you use the deployment's Amazon Resource Name (ARN) as the `modelId` parameter in your `InvokeModel` or `Converse` API operations. You can use the deployed model for on-demand inference with Amazon Bedrock features such as playgrounds, Agents, and Knowledge Bases.
 

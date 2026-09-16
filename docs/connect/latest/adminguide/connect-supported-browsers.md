@@ -17,7 +17,9 @@ Before you work with Connect Customer, verify that your browser is supported usi
 | Mozilla Firefox | Latest three versions | Open Firefox. On the menu, choose the Help icon and then choose **About Firefox**. The version number is listed under the Firefox name.<br />Please see [Firefox Enhanced Tracking Protection updates](#browsers-firefox-issue). |
 | Mozilla Firefox ESR | Versions are supported until their Firefox [end-of-life date](https://support.mozilla.org/en-US/kb/firefox-esr-release-cycle). For details, see the [Firefox ESR release calendar](https://wiki.mozilla.org/Release_Management/Calendar).  | Open Firefox. On the menu, choose the Help icon and then choose **About Firefox**. The version number is listed under the Firefox name. |
 
-Safari is not supported.
+**Note**
+Connect Customer tests only the browsers listed in the table above. Other browsers, such as Safari and Island Browser, aren't supported. Unsupported browsers fall outside our testing scope, so we can't determine whether they'll work correctly in a production environment. Before using an unsupported browser in production, we strongly recommend that you conduct comprehensive end-to-end testing and confirm that all your use cases function correctly.
+Should you encounter issues, we'll provide support on a best-effort basis. Before we investigate the issue, you must reproduce it in a supported browser.
 
  For more requirements, see [Agent headset and workstation requirements for using the Contact Control Panel (CCP)](ccp-agent-hardware.md).
 

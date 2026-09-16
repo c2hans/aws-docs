@@ -40,6 +40,16 @@ The Unix timestamp (in milliseconds) for when the job was created. For non-array
 Type: Long
 Required: No
 
+ ** isCancelled **   <a name="Batch-Type-JobSummary-isCancelled"></a>
+Indicates whether a cancellation request has been accepted for the job. This field is only present when the value is `true`.
+Type: Boolean
+Required: No
+
+ ** isTerminated **   <a name="Batch-Type-JobSummary-isTerminated"></a>
+Indicates whether a termination request has been accepted for the job. This field is only present when the value is `true`.
+Type: Boolean
+Required: No
+
  ** jobArn **   <a name="Batch-Type-JobSummary-jobArn"></a>
 The Amazon Resource Name (ARN) of the job.
 Type: String

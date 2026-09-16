@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkCLT/CLTReference_RejectWorkCommand.html
 ---
 
+**Amazon Mechanical Turk will permanently close on September 30, 2026.** For Workers and Requesters currently using the service, visit our [Amazon Mechanical Turk help page](https://www.mturk.com/help) to learn how you can prepare for this closure.
+
 |  |
 | --- |
 | **This software is not currently supported by Amazon Mechanical Turk**<br />The Amazon Mechanical Turk Command Line Tools (CLT) are not currently maintained by Amazon Mechanical Turk. If you would still like to use Amazon Mechanical Turk from the command line, use the `mturk` command in the AWS Command Line Interface (CLI). For more information, see the `mturk` section of the [ AWS CLI Command Reference ](https://docs.aws.amazon.com/cli/latest/reference/mturk/index.html).  |
@@ -10,12 +12,12 @@ source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkCLT/CLTRefere
 <a name="CLTReference_RejectWorkCommand"></a>
 
 ## Description
-<a name="w2aab9c52b2"></a>
+<a name="w2aac11c52b2"></a>
 
  The `rejectWork` command rejects assignments submitted by Workers. You can reject single assignments, or you can specify a file that contains the assignments to reject.
 
 ## Arguments
-<a name="w2aab9c52b4"></a>
+<a name="w2aac11c52b4"></a>
 
  The following table describes the arguments for the `rejectWork` command.
 
@@ -28,12 +30,12 @@ source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkCLT/CLTRefere
 | `-sandbox` |  Runs this command in the Amazon Mechanical Turk sandbox for testing. This argument takes precedence even if you specify the production web site in your `mturk.properties` file. <br /> Example:`-sandbox`  | No |
 
 ## Example
-<a name="w2aab9c52b6"></a>
+<a name="w2aac11c52b6"></a>
 
  The following examples for Unix and Windows show how to use the `rejectWork` command. These examples reject the specified assignment with no additional comments.
 
 ### Unix
-<a name="w2aab9c52b6b4"></a>
+<a name="w2aac11c52b6b4"></a>
 
  The following example demonstrates how to call this command from Unix.
 
@@ -42,7 +44,7 @@ source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkCLT/CLTRefere
 ```
 
 ### Windows
-<a name="w2aab9c52b6b6"></a>
+<a name="w2aac11c52b6b6"></a>
 
  The following example demonstrates how to call this command from Microsoft Windows.
 
@@ -51,7 +53,7 @@ rejectWork -assignment 0YFZ2TYJF3HZPGZV4Z40EZD4YZZFDSTZ0YG78W2Z
 ```
 
 ## Output
-<a name="w2aab9c52b8"></a>
+<a name="w2aac11c52b8"></a>
 
 These examples produce the following output.
 

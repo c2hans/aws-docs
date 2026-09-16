@@ -214,6 +214,8 @@ The following actions are supported by AWS Invoicing:
 +  [ListInvoiceSummaries](API_invoicing_ListInvoiceSummaries.md)
 +  [ListInvoiceUnits](API_invoicing_ListInvoiceUnits.md)
 +  [ListProcurementPortalPreferences](API_invoicing_ListProcurementPortalPreferences.md)
++  [ListProcurementPortals](API_invoicing_ListProcurementPortals.md)
++  [ListProcurementPortalSuppliers](API_invoicing_ListProcurementPortalSuppliers.md)
 +  [ListTagsForResource](API_invoicing_ListTagsForResource.md)
 +  [PutProcurementPortalPreference](API_invoicing_PutProcurementPortalPreference.md)
 +  [SendProcurementPortalValidation](API_invoicing_SendProcurementPortalValidation.md)

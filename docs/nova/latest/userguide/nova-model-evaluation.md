@@ -568,9 +568,9 @@ Before running the notebook, refer to the following reference tables to select i
 
 | Model | Job type | Instance type | Recommended instance count | Allowed instance count |
 | --- | --- | --- | --- | --- |
-| Amazon Nova Micro | Evaluation (SFT/DPO) | g5.12xlarge | 1 | 1 - 16 |
-| Amazon Nova Lite | Evaluation (SFT/DPO) | g5.12xlarge | 1 | 1 - 16 |
-| Amazon Nova Pro | Evaluation (SFT/DPO) | p5.48xlarge | 1 | 1 - 16 |
+| Amazon Nova Micro | Evaluation (SFT) | g5.12xlarge | 1 | 1 - 16 |
+| Amazon Nova Lite | Evaluation (SFT) | g5.12xlarge | 1 | 1 - 16 |
+| Amazon Nova Pro | Evaluation (SFT) | p5.48xlarge | 1 | 1 - 16 |
 
 ### Sample notebook
 <a name="nova-model-evaluation-sample-notebook"></a>

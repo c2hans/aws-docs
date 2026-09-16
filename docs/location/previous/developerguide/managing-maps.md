@@ -2,8 +2,13 @@
 source_url: https://docs.aws.amazon.com/location/previous/developerguide/managing-maps.html
 ---
 
-# Managing your map resources with Amazon Location
+# Managing your map resources (V1)
 <a name="managing-maps"></a>
+
+**Important**
+**This page documents the previous Maps API (V1). Use it only for existing applications.** The Maps V2 API is the latest version. Use it for all new applications; see the latest [Amazon Location Service Maps](https://docs.aws.amazon.com/location/latest/developerguide/maps.html) developer guide.
+The latest API calls `GetTile`, `GetStyleDescriptor`, `GetStaticMap`, `GetSprites`, and `GetGlyphs` directly. These operations are under the `geo-maps` namespace. They are exposed as `@aws-sdk/client-geo-maps` for JavaScript and `boto3.client('geo-maps')` for Python.
+There is no `Map` resource to create, describe, or delete.
 
 This topic covers the management and configuration of maps within the Amazon Location Service. It explains how to create and customize map resources, enabling you to tailor the mapping experience for your location-based applications.
 
@@ -28,7 +33,7 @@ You can view a list of your map resources using the Amazon Location console, the
 ------
 #### [ API ]
 
-Use the `[ListMaps](https://docs.aws.amazon.com/location-maps/latest/APIReference/API_ListMaps.html)` operation from the Amazon Location Maps APIs.
+Use the `[ListMaps](https://docs.aws.amazon.com/location/previous/APIReference/API_ListMaps.html)` operation from the Amazon Location Maps APIs.
 
 The following example is an API request to get a list of map resources in the AWS account.
 
@@ -36,7 +41,7 @@ The following example is an API request to get a list of map resources in the AW
 POST /maps/v0/list-maps
 ```
 
-The following is an example response for `[ListMaps](https://docs.aws.amazon.com/location-maps/latest/APIReference/API_ListMaps.html)`:
+The following is an example response for `[ListMaps](https://docs.aws.amazon.com/location/previous/APIReference/API_ListMaps.html)`:
 
 ```
 {
@@ -85,7 +90,7 @@ You can get details about any map resource in your AWS account using the Amazon 
 ------
 #### [ API ]
 
-Use the `[DescribeMap](https://docs.aws.amazon.com/location-maps/latest/APIReference/API_DescribeMap.html)` operation from the Amazon Location Maps APIs.
+Use the `[DescribeMap](https://docs.aws.amazon.com/location/previous/APIReference/API_DescribeMap.html)` operation from the Amazon Location Maps APIs.
 
 The following example is an API request to get the map resource details for {{ExampleMap}}.
 
@@ -93,7 +98,7 @@ The following example is an API request to get the map resource details for {{Ex
 GET /maps/v0/maps/{{ExampleMap}}
 ```
 
-The following is an example response for `[DescribeMap](https://docs.aws.amazon.com/location-maps/latest/APIReference/API_DescribeMap.html)`:
+The following is an example response for `[DescribeMap](https://docs.aws.amazon.com/location/previous/APIReference/API_DescribeMap.html)`:
 
 ```
 {
@@ -150,7 +155,7 @@ This operation deletes the resource permanently.
 ------
 #### [ API ]
 
-Use the `[DeleteMap](https://docs.aws.amazon.com/location-maps/latest/APIReference/API_DeleteMap.html)` operation from the Amazon Location Maps APIs.
+Use the `[DeleteMap](https://docs.aws.amazon.com/location/previous/APIReference/API_DeleteMap.html)` operation from the Amazon Location Maps APIs.
 
 The following example is an API request to delete the map resource {{ExampleMap}}.
 
@@ -158,7 +163,7 @@ The following example is an API request to delete the map resource {{ExampleMap}
 DELETE /maps/v0/maps/{{ExampleMap}}
 ```
 
-The following is an example success response for `[DeleteMap](https://docs.aws.amazon.com/location-maps/latest/APIReference/API_DeleteMap.html)`:
+The following is an example success response for `[DeleteMap](https://docs.aws.amazon.com/location/previous/APIReference/API_DeleteMap.html)`:
 
 ```
 HTTP/1.1 200

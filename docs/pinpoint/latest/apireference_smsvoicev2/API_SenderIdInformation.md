@@ -51,6 +51,11 @@ The Amazon Resource Name (ARN) associated with the SenderId.
 Type: String
 Required: Yes
 
+ ** MessagingLimits **   <a name="pinpoint-Type-SenderIdInformation-MessagingLimits"></a>
+The messaging limits that apply to the sender ID, including the per-capability send rates.
+Type: [MessagingLimits](API_MessagingLimits.md) object
+Required: No
+
  ** RegistrationId **   <a name="pinpoint-Type-SenderIdInformation-RegistrationId"></a>
 The unique identifier for the registration.
 Type: String

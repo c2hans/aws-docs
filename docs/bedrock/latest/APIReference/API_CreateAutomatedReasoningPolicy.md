@@ -91,7 +91,7 @@ Pattern: `(arn:aws(-[^:]+)?:kms:[a-zA-Z0-9-]*:[0-9]{12}:((key/[a-zA-Z0-9-]{36})|
 Required: No
 
  ** [name](#API_CreateAutomatedReasoningPolicy_RequestSyntax) **   <a name="bedrock-CreateAutomatedReasoningPolicy-request-name"></a>
-A unique name for the Automated Reasoning policy. The name must be between 1 and 63 characters and can contain letters, numbers, hyphens, and underscores.
+A unique name for the Automated Reasoning policy. The name must be between 1 and 256 characters and can contain letters, numbers, hyphens, and underscores.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `[0-9a-zA-Z-_ ]+`
@@ -222,5 +222,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/bedrock-2023-04-20/CreateAutomatedReasoningPolicy)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/bedrock-2023-04-20/CreateAutomatedReasoningPolicy)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/bedrock-2023-04-20/CreateAutomatedReasoningPolicy)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/bedrock-2023-04-20/CreateAutomatedReasoningPolicy)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/bedrock-2023-04-20/CreateAutomatedReasoningPolicy)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/bedrock-2023-04-20/CreateAutomatedReasoningPolicy)

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Get
 # GetLifecycleExecution
 <a name="API_GetLifecycleExecution"></a>
 
-Get the runtime information that was logged for a specific runtime instance of the lifecycle policy.
+Retrieves the runtime information for a specific runtime instance of the lifecycle policy.
 
 ## Request Syntax
 <a name="API_GetLifecycleExecution_RequestSyntax"></a>
@@ -20,7 +20,7 @@ GET /GetLifecycleExecution?lifecycleExecutionId={{lifecycleExecutionId}} HTTP/1.
 The request uses the following URI parameters.
 
  ** [lifecycleExecutionId](#API_GetLifecycleExecution_RequestSyntax) **   <a name="imagebuilder-GetLifecycleExecution-request-uri-lifecycleExecutionId"></a>
-Use the unique identifier for a runtime instance of the lifecycle policy to get runtime details.
+The unique identifier for a runtime instance of the lifecycle policy.
 Pattern: `^lce-[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$`
 Required: Yes
 
@@ -105,5 +105,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/imagebuilder-2019-12-02/GetLifecycleExecution)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/imagebuilder-2019-12-02/GetLifecycleExecution)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/imagebuilder-2019-12-02/GetLifecycleExecution)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/imagebuilder-2019-12-02/GetLifecycleExecution)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/imagebuilder-2019-12-02/GetLifecycleExecution)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/imagebuilder-2019-12-02/GetLifecycleExecution)

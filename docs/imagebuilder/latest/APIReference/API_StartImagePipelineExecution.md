@@ -34,7 +34,7 @@ The request does not use any URI parameters.
 The request accepts the following data in JSON format.
 
  ** [clientToken](#API_StartImagePipelineExecution_RequestSyntax) **   <a name="imagebuilder-StartImagePipelineExecution-request-clientToken"></a>
-Unique, case-sensitive identifier you provide to ensure idempotency of the request. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
+A unique, case-sensitive identifier you provide to ensure that the operation completes no more than one time. If this token matches a previous request, the service ignores the request, but does not return an error. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: Yes
@@ -46,7 +46,7 @@ Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws):image-pipeline/[a-z
 Required: Yes
 
  ** [tags](#API_StartImagePipelineExecution_RequestSyntax) **   <a name="imagebuilder-StartImagePipelineExecution-request-tags"></a>
-Specify tags for Image Builder to apply to the image resource that's created When it starts pipeline execution.
+The tags for Image Builder to apply to the image resource that's created when pipeline execution starts.
 Type: String to string map
 Map Entries: Maximum number of 50 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
@@ -143,5 +143,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/imagebuilder-2019-12-02/StartImagePipelineExecution)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/imagebuilder-2019-12-02/StartImagePipelineExecution)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/imagebuilder-2019-12-02/StartImagePipelineExecution)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/imagebuilder-2019-12-02/StartImagePipelineExecution)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/imagebuilder-2019-12-02/StartImagePipelineExecution)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/imagebuilder-2019-12-02/StartImagePipelineExecution)

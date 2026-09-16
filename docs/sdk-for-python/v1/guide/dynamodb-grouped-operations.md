@@ -14,7 +14,7 @@ The examples on this page use the composite-key table created in [Create a table
 ## Write items in a batch
 <a name="dynamodb-batch-write"></a>
 
-For request and response details, see the [batch\_write\_item()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/dynamodb/operations/batch_write_item/) API reference.
+For request and response details, see the [batch\_write\_item()](clients/dynamodb/operations/batch_write_item/) API reference.
 
 A successful `batch_write_item` response can still contain unprocessed writes. Resubmit only those writes, cap the number of attempts, and delay between attempts.
 
@@ -79,7 +79,7 @@ async def batch_write_items(
 ## Get items in a batch
 <a name="dynamodb-batch-get"></a>
 
-For request and response details, see the [batch\_get\_item()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/dynamodb/operations/batch_get_item/) API reference.
+For request and response details, see the [batch\_get\_item()](clients/dynamodb/operations/batch_get_item/) API reference.
 
 `batch_get_item` can also return unprocessed keys. Collect each response page, resubmit only those keys with a bounded delay, and identify returned items by key because DynamoDB does not guarantee their order.
 
@@ -139,7 +139,7 @@ async def batch_get_items(
 ## Write items in an idempotent transaction
 <a name="dynamodb-transactions"></a>
 
-For request and response details, see the [transact\_write\_items()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/dynamodb/operations/transact_write_items/) API reference.
+For request and response details, see the [transact\_write\_items()](clients/dynamodb/operations/transact_write_items/) API reference.
 
 `transact_write_items` applies all actions as one unit. Generate the client request token once, and reuse that same token only when retrying the identical transaction. This keeps an identical retry idempotent during DynamoDB's token window.
 

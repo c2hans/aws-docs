@@ -57,6 +57,7 @@ Required: No
          "KmsKeyId": "string",
          "LogFileValidationEnabled": boolean,
          "Name": "string",
+         "RecursiveLogging": boolean,
          "S3BucketName": "string",
          "S3KeyPrefix": "string",
          "SnsTopicARN": "string",
@@ -124,5 +125,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/cloudtrail-2013-11-01/DescribeTrails)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/cloudtrail-2013-11-01/DescribeTrails)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/cloudtrail-2013-11-01/DescribeTrails)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/cloudtrail-2013-11-01/DescribeTrails)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/cloudtrail-2013-11-01/DescribeTrails)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudtrail-2013-11-01/DescribeTrails)

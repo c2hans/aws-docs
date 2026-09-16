@@ -107,6 +107,13 @@ Ask your agent to perform an AWS task:
 
 The agent discovers and uses relevant skills automatically. You do not need to know which skills are available — the agent finds them based on your request.
 
+## Configure the recommended rules file
+<a name="quick-start-rules-file"></a>
+
+We recommend that you add the Agent Toolkit for AWS rules file to your project. A rules file provides persistent instructions that tell your agent how to work with AWS in every session. Without it, your agent might apply AWS best practices less consistently.
+
+Copy the latest recommended rules file from the [Agent Toolkit for AWS repository on GitHub](https://github.com/aws/agent-toolkit-for-aws/blob/main/rules/aws-agent-rules.md) into the rules file for your agent (for example, `CLAUDE.md` for Claude Code or `AGENTS.md` for Codex). For the file location for each agent and how to customize it, see [Rules files](rules-files.md).
+
 ## Additional plugins
 <a name="quick-start-additional-plugins"></a>
 

@@ -9,6 +9,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 **Resource types**
 + [AWS::SageMaker::Action](aws-resource-sagemaker-action.md)
++ [AWS::SageMaker::AIWorkloadConfig](aws-resource-sagemaker-aiworkloadconfig.md)
 + [AWS::SageMaker::Algorithm](aws-resource-sagemaker-algorithm.md)
 + [AWS::SageMaker::App](aws-resource-sagemaker-app.md)
 + [AWS::SageMaker::AppImageConfig](aws-resource-sagemaker-appimageconfig.md)

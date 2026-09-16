@@ -63,8 +63,8 @@ Required: No
  ** [roleName](#API_UpdateTest_RequestSyntax) **   <a name="ngresiliencehub-UpdateTest-request-roleName"></a>
 The updated IAM execution role name.
 Type: String
-Length Constraints: Minimum length of 2. Maximum length of 60.
-Pattern: `[A-Za-z0-9][A-Za-z0-9_\-]{1,59}`
+Length Constraints: Minimum length of 1. Maximum length of 576.
+Pattern: `([A-Za-z0-9_+=,.@\-]+/)*[A-Za-z0-9_+=,.@\-]+`
 Required: No
 
  ** [serviceArn](#API_UpdateTest_RequestSyntax) **   <a name="ngresiliencehub-UpdateTest-request-serviceArn"></a>
@@ -82,6 +82,7 @@ Required: No
  ** [testId](#API_UpdateTest_RequestSyntax) **   <a name="ngresiliencehub-UpdateTest-request-testId"></a>
 The identifier of the test to update.
 Type: String
+Length Constraints: Minimum length of 1.
 Required: Yes
 
 ## Response Syntax
@@ -182,5 +183,5 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/resiliencehubv2-2026-02-17/UpdateTest)
 +  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/resiliencehubv2-2026-02-17/UpdateTest)
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/resiliencehubv2-2026-02-17/UpdateTest)
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/resiliencehubv2-2026-02-17/UpdateTest)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/resiliencehubv2-2026-02-17/UpdateTest)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/resiliencehubv2-2026-02-17/UpdateTest)

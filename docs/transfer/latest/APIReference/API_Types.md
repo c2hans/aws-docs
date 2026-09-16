@@ -65,6 +65,7 @@ The following data types are supported:
 +  [LoggingConfiguration](API_LoggingConfiguration.md)
 +  [PosixProfile](API_PosixProfile.md)
 +  [ProtocolDetails](API_ProtocolDetails.md)
++  [ProxyConfig](API_ProxyConfig.md)
 +  [S3FileLocation](API_S3FileLocation.md)
 +  [S3InputFileLocation](API_S3InputFileLocation.md)
 +  [S3StorageOptions](API_S3StorageOptions.md)

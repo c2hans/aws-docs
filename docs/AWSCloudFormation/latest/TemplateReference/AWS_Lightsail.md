@@ -21,6 +21,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::Lightsail::Domain](aws-resource-lightsail-domain.md)
 + [AWS::Lightsail::Instance](aws-resource-lightsail-instance.md)
 + [AWS::Lightsail::InstanceSnapshot](aws-resource-lightsail-instancesnapshot.md)
++ [AWS::Lightsail::KeyPair](aws-resource-lightsail-keypair.md)
 + [AWS::Lightsail::LoadBalancer](aws-resource-lightsail-loadbalancer.md)
 + [AWS::Lightsail::LoadBalancerTlsCertificate](aws-resource-lightsail-loadbalancertlscertificate.md)
 + [AWS::Lightsail::StaticIp](aws-resource-lightsail-staticip.md)

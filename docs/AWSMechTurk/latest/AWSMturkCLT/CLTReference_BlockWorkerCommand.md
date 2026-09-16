@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkCLT/CLTReference_BlockWorkerCommand.html
 ---
 
+**Amazon Mechanical Turk will permanently close on September 30, 2026.** For Workers and Requesters currently using the service, visit our [Amazon Mechanical Turk help page](https://www.mturk.com/help) to learn how you can prepare for this closure.
+
 |  |
 | --- |
 | **This software is not currently supported by Amazon Mechanical Turk**<br />The Amazon Mechanical Turk Command Line Tools (CLT) are not currently maintained by Amazon Mechanical Turk. If you would still like to use Amazon Mechanical Turk from the command line, use the `mturk` command in the AWS Command Line Interface (CLI). For more information, see the `mturk` section of the [ AWS CLI Command Reference ](https://docs.aws.amazon.com/cli/latest/reference/mturk/index.html).  |
@@ -10,12 +12,12 @@ source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkCLT/CLTRefere
 <a name="CLTReference_BlockWorkerCommand"></a>
 
 ## Description
-<a name="w2aab9c16b2"></a>
+<a name="w2aac11c16b2"></a>
 
  The `blockWorker` command blocks a Worker from working on your HITs.
 
 ## Arguments
-<a name="w2aab9c16b4"></a>
+<a name="w2aac11c16b4"></a>
 
  The following table describes the arguments for the `blockWorker` command.
 
@@ -27,12 +29,12 @@ source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkCLT/CLTRefere
 | `-workerid [Worker ID]` | The ID of the Worker you want to block.<br />Example: `-workerid A3C4G8DMXFG5PQ` | Yes |
 
 ## Example
-<a name="w2aab9c16b6"></a>
+<a name="w2aac11c16b6"></a>
 
  The following examples for Unix and Windows show how to use the `blockWorker` command.
 
 ### Unix
-<a name="w2aab9c16b6b4"></a>
+<a name="w2aac11c16b6b4"></a>
 
  The following example demonstrates how to call this command from Unix. You must write this command on a single line. It is divided into multiple lines in this example for readability.
 
@@ -42,7 +44,7 @@ submit answers without reading the instructions carefully."
 ```
 
 ### Windows
-<a name="w2aab9c16b6b6"></a>
+<a name="w2aac11c16b6b6"></a>
 
  The following example demonstrates how to call this command from Microsoft Windows. You should write this command on a single line. It is divided into multiple lines in this example for readability.
 
@@ -52,7 +54,7 @@ submit answers without reading the instructions carefully."
 ```
 
 ## Output
-<a name="w2aab9c16b8"></a>
+<a name="w2aac11c16b8"></a>
 
 These examples produce the following output.
 
@@ -61,6 +63,6 @@ Blocked A3C4G8DMXFG5PQ with reason: After several warnings, the Worker continued
 ```
 
 ## Related Commands
-<a name="w2aab9c16c10"></a>
+<a name="w2aac11c16c10"></a>
 
 +  [unblockWorker](CLTReference_UnblockWorkerCommand.md)

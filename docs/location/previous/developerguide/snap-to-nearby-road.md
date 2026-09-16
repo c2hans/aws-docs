@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/snap-to
 
 When using `CalculateRoute` or `CalculateRouteMatrix`, if you specify a departure, destination, or waypoint position that's not located on a road Amazon Location moves the position to a nearby road.
 
-The following `[CalculateRoute](https://docs.aws.amazon.com/location-routes/latest/APIReference/API_CalculateRoute.html)` request specifies a departure position and destination position that's not located on a road:
+The following `[CalculateRoute](https://docs.aws.amazon.com/location/previous/APIReference/API_CalculateRoute.html)` request specifies a departure position and destination position that's not located on a road:
 
 ```
 POST /routes/v0/calculators/{{ExampleCalculator}}/calculate/route

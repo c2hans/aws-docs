@@ -2,11 +2,13 @@
 source_url: https://docs.aws.amazon.com/location/previous/developerguide/searching-for-places.html
 ---
 
-# Searching place and geolocation data using Amazon Location
+# Searching place and geolocation data with Places (V1)
 <a name="searching-for-places"></a>
 
-**Note**
-We released a new version of the Places API, see the updated [Places Developer Guide](https://docs.aws.amazon.com/location/latest/developerguide/places.html) or [Places API](https://docs.aws.amazon.com/location/latest/APIReference/API_Operations_Amazon_Location_Service_Places_V2.html) for revised information.
+**Important**
+**This page documents the previous Places API (V1). Use it only for existing applications.** The Places V2 API is the latest version. Use it for all new applications; see the latest [Amazon Location Service Places](https://docs.aws.amazon.com/location/latest/developerguide/places.html) developer guide.
+The latest operations are `Geocode`, `ReverseGeocode`, `SearchText`, `SearchNearby`, `Suggest`, `Autocomplete`, and `GetPlace`. These operations are under the `geo-places` namespace. They are exposed as `@aws-sdk/client-geo-places` for JavaScript and `boto3.client('geo-places')` for Python.
+The `SearchPlaceIndexForText`, `SearchPlaceIndexForPosition`, `SearchPlaceIndexForSuggestions`, and `PlaceIndex` resources described below are previous-generation. Use them only for existing applications.
 
 Amazon Location includes the ability to search the geolocation, or *place*, data of your chosen provider. There are several kinds of searching available.
 + **Geocoding** – Geocoding is the process of searching for addresses, regions, business names, or other points of interest, based on text input. It returns details and the location (in latitude and longitude) of the results found.
@@ -18,7 +20,7 @@ Amazon Location lets you choose a data provider for place search operations by c
 Once you create your resource, you can send requests using the AWS SDK for your preferred language, Amplify, or the REST API endpoints. You can use data from the response to mark locations on a map, enrich position data, and to convert positions into human-readable text.
 
 **Note**
-For an overview of searching place concepts, see [Learn about Places search in Amazon Location Service](places-concepts.md).
+For an overview of searching place concepts, see [Places (V1) concepts](places-concepts.md).
 
 **Topics**
 + [Places prerequisites using Amazon Location](places-prerequisites.md)
@@ -28,4 +30,4 @@ For an overview of searching place concepts, see [Learn about Places search in A
 + [Use place IDs with Amazon Location](search-using-placeids.md)
 + [Place categories and filtering results with Amazon Location](category-filtering.md)
 + [Amazon Aurora PostgreSQL user-defined functions for Amazon Location Service](database-address-validation.md)
-+ [Managing your place index resources with Amazon Location](managing-place-indexes.md)
++ [Managing your place index resources (V1)](managing-place-indexes.md)

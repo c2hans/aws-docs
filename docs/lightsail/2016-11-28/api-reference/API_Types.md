@@ -60,6 +60,7 @@ The following data types are supported:
 +  [DiskSnapshot](API_DiskSnapshot.md)
 +  [DiskSnapshotInfo](API_DiskSnapshotInfo.md)
 +  [DistributionBundle](API_DistributionBundle.md)
++  [DistributionCustomErrorResponse](API_DistributionCustomErrorResponse.md)
 +  [DnsRecordCreationState](API_DnsRecordCreationState.md)
 +  [Domain](API_Domain.md)
 +  [DomainEntry](API_DomainEntry.md)

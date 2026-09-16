@@ -35,7 +35,7 @@ Some services contain additional example categories that show how to leverage li
 + [SDK for PHP](php_3_code_examples.md)
 + [Tools for PowerShell V4](powershell_4_code_examples.md)
 + [Tools for PowerShell V5](powershell_5_code_examples.md)
-+ [SDK for Python](python_1_code_examples.md)
++ [Code examples for](python_1_code_examples.md)
 + [SDK for Python (Boto3)](python_3_code_examples.md)
 + [SDK for Ruby](ruby_3_code_examples.md)
 + [SDK for Rust](rust_1_code_examples.md)

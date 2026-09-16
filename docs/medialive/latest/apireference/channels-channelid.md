@@ -322,6 +322,10 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
             "styleControl": enum
           },
           "embeddedDestinationSettings": {
+            "position": {
+              "yPositionLine": integer
+            },
+            "styleControl": enum
           },
           "embeddedPlusScte20DestinationSettings": {
           },
@@ -336,9 +340,15 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
           "teletextDestinationSettings": {
           },
           "ttmlDestinationSettings": {
+            "position": {
+              "yPositionPercentage": integer
+            },
             "styleControl": enum
           },
           "webvttDestinationSettings": {
+            "position": {
+              "yPositionPercentage": integer
+            },
             "styleControl": enum
           }
         },
@@ -394,6 +404,9 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
               "destinationRefId": "string"
             },
             "rolloverInterval": integer
+          },
+          "cmafIngestGroupSettings": {
+            "scte35Type": enum
           },
           "frameCaptureGroupSettings": {
             "destination": {
@@ -507,6 +520,9 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
           "mediaPackageGroupSettings": {
             "destination": {
               "destinationRefId": "string"
+            },
+            "mediapackageV2GroupSettings": {
+              "scte35Type": enum
             }
           },
           "msSmoothGroupSettings": {
@@ -679,6 +695,13 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
                 "segmentModifier": "string"
               },
               "mediaPackageOutputSettings": {
+                "mediaPackageV2DestinationSettings": {
+                  "audioGroupId": "string",
+                  "audioRenditionSets": "string",
+                  "outputUsage": [
+                    enum
+                  ]
+                }
               },
               "msSmoothOutputSettings": {
                 "h265PackagingType": enum,
@@ -782,6 +805,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
     },
     "videoDescriptions": [
       {
+        "border": integer,
         "codecSettings": {
           "frameCaptureSettings": {
             "captureInterval": integer,
@@ -915,6 +939,12 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
         },
         "height": integer,
         "name": "string",
+        "outputPositionRectangle": {
+          "height": integer,
+          "width": integer,
+          "x": integer,
+          "y": integer
+        },
         "respondToAfd": enum,
         "scalingBehavior": enum,
         "sharpness": integer,
@@ -1120,7 +1150,13 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
     "maintenanceStartTime": "string"
   },
   "name": "string",
-  "roleArn": "string"
+  "roleArn": "string",
+  "inferenceSettings": {
+    "enrichmentMethods": [
+      enum
+    ],
+    "feedArn": "string"
+  }
 }
 ```
 
@@ -1364,6 +1400,10 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
             "styleControl": enum
           },
           "embeddedDestinationSettings": {
+            "position": {
+              "yPositionLine": integer
+            },
+            "styleControl": enum
           },
           "embeddedPlusScte20DestinationSettings": {
           },
@@ -1378,9 +1418,15 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
           "teletextDestinationSettings": {
           },
           "ttmlDestinationSettings": {
+            "position": {
+              "yPositionPercentage": integer
+            },
             "styleControl": enum
           },
           "webvttDestinationSettings": {
+            "position": {
+              "yPositionPercentage": integer
+            },
             "styleControl": enum
           }
         },
@@ -1436,6 +1482,9 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
               "destinationRefId": "string"
             },
             "rolloverInterval": integer
+          },
+          "cmafIngestGroupSettings": {
+            "scte35Type": enum
           },
           "frameCaptureGroupSettings": {
             "destination": {
@@ -1549,6 +1598,9 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
           "mediaPackageGroupSettings": {
             "destination": {
               "destinationRefId": "string"
+            },
+            "mediapackageV2GroupSettings": {
+              "scte35Type": enum
             }
           },
           "msSmoothGroupSettings": {
@@ -1721,6 +1773,13 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
                 "segmentModifier": "string"
               },
               "mediaPackageOutputSettings": {
+                "mediaPackageV2DestinationSettings": {
+                  "audioGroupId": "string",
+                  "audioRenditionSets": "string",
+                  "outputUsage": [
+                    enum
+                  ]
+                }
               },
               "msSmoothOutputSettings": {
                 "h265PackagingType": enum,
@@ -1824,6 +1883,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
     },
     "videoDescriptions": [
       {
+        "border": integer,
         "codecSettings": {
           "frameCaptureSettings": {
             "captureInterval": integer,
@@ -1957,6 +2017,12 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
         },
         "height": integer,
         "name": "string",
+        "outputPositionRectangle": {
+          "height": integer,
+          "width": integer,
+          "x": integer,
+          "y": integer
+        },
         "respondToAfd": enum,
         "scalingBehavior": enum,
         "sharpness": integer,
@@ -2191,6 +2257,12 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
     "subnetIds": [
       "string"
     ]
+  },
+  "inferenceSettings": {
+    "enrichmentMethods": [
+      enum
+    ],
+    "feedArn": "string"
   }
 }
 ```
@@ -2433,6 +2505,10 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
               "styleControl": enum
             },
             "embeddedDestinationSettings": {
+              "position": {
+                "yPositionLine": integer
+              },
+              "styleControl": enum
             },
             "embeddedPlusScte20DestinationSettings": {
             },
@@ -2447,9 +2523,15 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
             "teletextDestinationSettings": {
             },
             "ttmlDestinationSettings": {
+              "position": {
+                "yPositionPercentage": integer
+              },
               "styleControl": enum
             },
             "webvttDestinationSettings": {
+              "position": {
+                "yPositionPercentage": integer
+              },
               "styleControl": enum
             }
           },
@@ -2505,6 +2587,9 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
                 "destinationRefId": "string"
               },
               "rolloverInterval": integer
+            },
+            "cmafIngestGroupSettings": {
+              "scte35Type": enum
             },
             "frameCaptureGroupSettings": {
               "destination": {
@@ -2618,6 +2703,9 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
             "mediaPackageGroupSettings": {
               "destination": {
                 "destinationRefId": "string"
+              },
+              "mediapackageV2GroupSettings": {
+                "scte35Type": enum
               }
             },
             "msSmoothGroupSettings": {
@@ -2790,6 +2878,13 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
                   "segmentModifier": "string"
                 },
                 "mediaPackageOutputSettings": {
+                  "mediaPackageV2DestinationSettings": {
+                    "audioGroupId": "string",
+                    "audioRenditionSets": "string",
+                    "outputUsage": [
+                      enum
+                    ]
+                  }
                 },
                 "msSmoothOutputSettings": {
                   "h265PackagingType": enum,
@@ -2893,6 +2988,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
       },
       "videoDescriptions": [
         {
+          "border": integer,
           "codecSettings": {
             "frameCaptureSettings": {
               "captureInterval": integer,
@@ -3026,6 +3122,12 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
           },
           "height": integer,
           "name": "string",
+          "outputPositionRectangle": {
+            "height": integer,
+            "width": integer,
+            "x": integer,
+            "y": integer
+          },
           "respondToAfd": enum,
           "scalingBehavior": enum,
           "sharpness": integer,
@@ -3260,6 +3362,12 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
       "subnetIds": [
         "string"
       ]
+    },
+    "inferenceSettings": {
+      "enrichmentMethods": [
+        enum
+      ],
+      "feedArn": "string"
     }
   }
 }
@@ -4101,6 +4209,7 @@ Maximum CDI input resolution; SD is 480i and 576i up to 30 frames-per-second (fp
 | egressEndpoints | Array of type [ChannelEgressEndpoint](#channels-channelid-model-channelegressendpoint) | False | The endpoints where outgoing connections initiate from |
 | encoderSettings | [EncoderSettings](#channels-channelid-model-encodersettings) | False |  |
 | id | string | False | The unique ID of the channel. |
+| inferenceSettings | [DescribeInferenceSettings](#channels-channelid-model-describeinferencesettings) | False | Contains the Elemental Inference configuration for a channel, as returned by DescribeChannel and related describe operations. |
 | inputAttachments | Array of type [InputAttachment](#channels-channelid-model-inputattachment) | False | List of input attachments for channel. |
 | inputSpecification | [InputSpecification](#channels-channelid-model-inputspecification) | False | Specification of network and file inputs for this channel |
 | logLevel | [LogLevel](#channels-channelid-model-loglevel) | False | The log level being written to CloudWatch Logs. |
@@ -4149,10 +4258,29 @@ A standard channel has two encoding pipelines and a single pipeline channel only
 + `UPDATING`
 + `UPDATE_FAILED`
 
+### CmafIngestGroupSettings
+<a name="channels-channelid-model-cmafingestgroupsettings"></a>
+
+Contains the settings for a Common Media Application Format (CMAF) Ingest output group, including SCTE-35 insertion behavior.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| scte35Type | [Scte35Type](#channels-channelid-model-scte35type) | False | The SCTE-35 insertion behavior for this CMAF Ingest output group. If you don't specify a value, the channel doesn't insert SCTE-35 messages (NONE). |
+
 ### ColorSpacePassthroughSettings
 <a name="channels-channelid-model-colorspacepassthroughsettings"></a>
 
 Passthrough applies no color space conversion to the output
+
+### DescribeInferenceSettings
+<a name="channels-channelid-model-describeinferencesettings"></a>
+
+Contains the Elemental Inference configuration for a channel, as returned by DescribeChannel and related describe operations.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| enrichmentMethods | Array of type [EnrichmentMethod](#channels-channelid-model-enrichmentmethod) | False | The Contextual Metadata Enrichment methods enabled for this channel. Each method defines how the channel augments its output with contextual metadata from the Elemental Inference feed. |
+| feedArn | string | False | The Amazon Resource Name (ARN) of the feed resource that is associated with this channel. The feed is a resource in the Elemental Inference service. |
 
 ### DvbNitSettings
 <a name="channels-channelid-model-dvbnitsettings"></a>
@@ -4462,6 +4590,15 @@ Ebu Tt DFill Line Gap Control
 + `DISABLED`
 + `ENABLED`
 
+### EmbeddedCaptionPositionSettings
+<a name="channels-channelid-model-embeddedcaptionpositionsettings"></a>
+
+Specifies the position of embedded output captions when `styleControl` is set to `MANUAL`, as a row counted from the top of the output.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| yPositionLine | integer<br />Minimum: 1<br />Maximum: 15 | False | Specifies the vertical position of the caption as a row counted from the top of the output. Row 1 is the topmost row. Acceptable values are 1 through 15. |
+
 ### EmbeddedConvert608To708
 <a name="channels-channelid-model-embeddedconvert608to708"></a>
 
@@ -4473,6 +4610,18 @@ Embedded Convert608 To708
 <a name="channels-channelid-model-embeddeddestinationsettings"></a>
 
 Embedded Destination Settings
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| position | [EmbeddedCaptionPositionSettings](#channels-channelid-model-embeddedcaptionpositionsettings) | False | Specifies the position of the output captions. Applies only when `styleControl` is set to `MANUAL`. |
+| styleControl | [EmbeddedDestinationStyleControl](#channels-channelid-model-embeddeddestinationstylecontrol) | False | Controls the source of position and style information for the output captions. Valid values:+ `PASSTHROUGH` – Carry the caption position and style from the source captions. When the source captions are embedded, SCTE-20, or ancillary, the position and style are preserved exactly. When the source captions are another format, the position and any supported style are carried over.<br />+ `MANUAL` – Applies the specified styling and positioning. All other styling and positioning is given default values.<br />If you don't specify this field, the default is `PASSTHROUGH`. |
+
+### EmbeddedDestinationStyleControl
+<a name="channels-channelid-model-embeddeddestinationstylecontrol"></a>
+
+Controls the source of position and style information for embedded output captions. For the valid values, see the `styleControl` field in `EmbeddedDestinationSettings`.
++ `MANUAL`
++ `PASSTHROUGH`
 
 ### EmbeddedPlusScte20DestinationSettings
 <a name="channels-channelid-model-embeddedplusscte20destinationsettings"></a>
@@ -4517,6 +4666,12 @@ Encoder Settings
 | outputGroups | Array of type [OutputGroup](#channels-channelid-model-outputgroup) | True |  |
 | timecodeConfig | [TimecodeConfig](#channels-channelid-model-timecodeconfig) | True | Contains settings used to acquire and adjust timecode information from inputs. |
 | videoDescriptions | Array of type [VideoDescription](#channels-channelid-model-videodescription) | True |  |
+
+### EnrichmentMethod
+<a name="channels-channelid-model-enrichmentmethod"></a>
+
+A Contextual Metadata Enrichment method. Valid values: - SCTE35\_ELEMENTAL\_INFERENCE\_QUERY\_PARAMS – Enriches the channel output with contextual metadata derived from SCTE-35 markers by querying the Elemental Inference feed.
++ `SCTE35_ELEMENTAL_INFERENCE_QUERY_PARAMS`
 
 ### FailoverCondition
 <a name="channels-channelid-model-failovercondition"></a>
@@ -5525,6 +5680,16 @@ When set to "standard", an I-Frame only playlist will be written out for each vi
 + `DISABLED`
 + `STANDARD`
 
+### InferenceSettings
+<a name="channels-channelid-model-inferencesettings"></a>
+
+Contains the Elemental Inference settings for a channel, including the feed Amazon Resource Name (ARN) and the enrichment methods that augment channel output with contextual metadata.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| enrichmentMethods | Array of type [EnrichmentMethod](#channels-channelid-model-enrichmentmethod) | False | The Contextual Metadata Enrichment methods enabled for this channel. Each method defines how the channel augments its output with contextual metadata from the Elemental Inference feed. |
+| feedArn | string | False | The Amazon Resource Name (ARN) of the feed resource that is associated with this channel. The feed is a resource in the Elemental Inference service. |
+
 ### InputAttachment
 <a name="channels-channelid-model-inputattachment"></a>
 
@@ -5852,6 +6017,7 @@ M2ts Rate Mode
 M2ts Scte35 Control
 + `NONE`
 + `PASSTHROUGH`
++ `SCTE_35_WITHOUT_IDR`
 
 ### M2tsSegmentationMarkers
 <a name="channels-channelid-model-m2tssegmentationmarkers"></a>
@@ -6025,6 +6191,7 @@ Media Package Group Settings
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
 | destination | [OutputLocationRef](#channels-channelid-model-outputlocationref) | True | MediaPackage channel destination. |
+| mediapackageV2GroupSettings | [MediaPackageV2GroupSettings](#channels-channelid-model-mediapackagev2groupsettings) | False | Parameters that apply only if the destination parameter for the output group specifies a channelGroup and channelName. Using those two parameters indicates that the output group is for MediaPackage V2 (CMAF Ingest). |
 
 ### MediaPackageOutputDestinationSettings
 <a name="channels-channelid-model-mediapackageoutputdestinationsettings"></a>
@@ -6039,6 +6206,30 @@ MediaPackage Output Destination Settings
 <a name="channels-channelid-model-mediapackageoutputsettings"></a>
 
 Media Package Output Settings
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| mediaPackageV2DestinationSettings | [MediaPackageV2DestinationSettings](#channels-channelid-model-mediapackagev2destinationsettings) | False | Settings that apply only when the destination is a MediaPackage V2 channel. |
+
+### MediaPackageV2DestinationSettings
+<a name="channels-channelid-model-mediapackagev2destinationsettings"></a>
+
+Settings for an output that is delivered to a MediaPackage V2 channel.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| audioGroupId | string | False | Applies only to an output that contains audio. If you want to put several audio encodes into one audio rendition group, decide on a name (ID) for the group. Then in every audio output that you want to belong to that group, enter that ID in this field. This information is part of the HLS specification (not the CMAF specification), but if you include it then MediaPackage includes it in the manifest that it creates for the video player. |
+| audioRenditionSets | string | False | Applies only to an output that contains video, and only if you want to associate one or more audio groups with this video. In this field, assign the groups that you created (in the Group ID fields in the various audio outputs). Enter one group ID, or enter a comma-separated list of group IDs. This information is part of the HLS specification (not the CMAF specification), but if you include it then MediaPackage includes it in the manifest that it creates for the video player. |
+| outputUsage | Array of type [OutputUsage](#channels-channelid-model-outputusage) | False | A list of usage tags that declare how this MediaPackage V2 output participates in multiview. Valid values:+ `MULTIVIEW_EQUAL_SIZE_VIEW` – The output is one of several equally sized views in the multiview layout.<br />+ `MULTIVIEW_PRIMARY_VIEW` – The output is the primary view in the multiview layout.<br />+ `MULTIVIEW_SECONDARY_VIEW` – The output is a secondary view in the multiview layout.<br />Leave this field empty (the default) if the output has no multiview role.<br />If any video-carrying MediaPackage V2 output in an output group specifies a multiview value, then every video-carrying MediaPackage V2 output in that group must also specify a multiview value. Put standalone video outputs in a separate output group. |
+
+### MediaPackageV2GroupSettings
+<a name="channels-channelid-model-mediapackagev2groupsettings"></a>
+
+Contains the settings for a MediaPackage V2 output group, including SCTE-35 insertion behavior.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| scte35Type | [Scte35Type](#channels-channelid-model-scte35type) | False | The SCTE-35 insertion behavior for this MediaPackage V2 output group. If you don't specify a value, the channel doesn't insert SCTE-35 messages (NONE). |
 
 ### MotionGraphicsConfiguration
 <a name="channels-channelid-model-motiongraphicsconfiguration"></a>
@@ -6376,6 +6567,7 @@ Output Group Settings
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
 | archiveGroupSettings | [ArchiveGroupSettings](#channels-channelid-model-archivegroupsettings) | False |  |
+| cmafIngestGroupSettings | [CmafIngestGroupSettings](#channels-channelid-model-cmafingestgroupsettings) | False |  |
 | frameCaptureGroupSettings | [FrameCaptureGroupSettings](#channels-channelid-model-framecapturegroupsettings) | False |  |
 | hlsGroupSettings | [HlsGroupSettings](#channels-channelid-model-hlsgroupsettings) | False |  |
 | mediaPackageGroupSettings | [MediaPackageGroupSettings](#channels-channelid-model-mediapackagegroupsettings) | False |  |
@@ -6408,6 +6600,14 @@ Output Settings
 | multiplexOutputSettings | [MultiplexOutputSettings](#channels-channelid-model-multiplexoutputsettings) | False |  |
 | rtmpOutputSettings | [RtmpOutputSettings](#channels-channelid-model-rtmpoutputsettings) | False |  |
 | udpOutputSettings | [UdpOutputSettings](#channels-channelid-model-udpoutputsettings) | False |  |
+
+### OutputUsage
+<a name="channels-channelid-model-outputusage"></a>
+
+A usage tag that declares how a MediaPackage V2 output participates in multiview. For the valid values, see the `outputUsage` field in `MediaPackageV2DestinationSettings`.
++ `MULTIVIEW_EQUAL_SIZE_VIEW`
++ `MULTIVIEW_PRIMARY_VIEW`
++ `MULTIVIEW_SECONDARY_VIEW`
 
 ### PassThroughSettings
 <a name="channels-channelid-model-passthroughsettings"></a>
@@ -6634,6 +6834,17 @@ Scte35 Time Signal Apos
 | noRegionalBlackoutFlag | [Scte35AposNoRegionalBlackoutBehavior](#channels-channelid-model-scte35aposnoregionalblackoutbehavior) | False | When set to ignore, Segment Descriptors with noRegionalBlackoutFlag set to 0 will no longer trigger blackouts or Ad Avail slates |
 | webDeliveryAllowedFlag | [Scte35AposWebDeliveryAllowedBehavior](#channels-channelid-model-scte35aposwebdeliveryallowedbehavior) | False | When set to ignore, Segment Descriptors with webDeliveryAllowedFlag set to 0 will no longer trigger blackouts or Ad Avail slates |
 
+### Scte35Type
+<a name="channels-channelid-model-scte35type"></a>
+
+The SCTE-35 insertion behavior for the output group. Valid values:
++ `NONE` – The channel does not insert SCTE-35 messages.
++ `SCTE_35_WITHOUT_IDR` – The channel inserts SCTE-35 messages without an Instantaneous Decoder Refresh (IDR) frame at the cue point.
++ `SCTE_35_WITHOUT_SEGMENTATION` – The channel inserts SCTE-35 messages with an IDR frame, but without a new segment boundary.
++ `NONE`
++ `SCTE_35_WITHOUT_IDR`
++ `SCTE_35_WITHOUT_SEGMENTATION`
+
 ### SmoothGroupAudioOnlyTimecodeControl
 <a name="channels-channelid-model-smoothgroupaudioonlytimecodecontrol"></a>
 
@@ -6786,6 +6997,15 @@ Temporal Filter Strength
 + `STRENGTH_15`
 + `STRENGTH_16`
 
+### TextCaptionPositionSettings
+<a name="channels-channelid-model-textcaptionpositionsettings"></a>
+
+Specifies the position of TTML or WebVTT output captions when `styleControl` is set to `MANUAL`, as a percentage from the top of the output.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| yPositionPercentage | integer<br />Minimum: 0<br />Maximum: 100 | False | Specifies the vertical position of the top edge of the caption relative to the top of the output as a percentage. A value of 0 places the caption at the top of the output and 100 at the bottom. |
+
 ### TimecodeConfig
 <a name="channels-channelid-model-timecodeconfig"></a>
 
@@ -6811,12 +7031,14 @@ Ttml Destination Settings
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
-| styleControl | [TtmlDestinationStyleControl](#channels-channelid-model-ttmldestinationstylecontrol) | False | When set to passthrough, passes through style and position information from a TTML-like input source (TTML, SMPTE-TT, CFF-TT) to the CFF-TT output or TTML output. |
+| position | [TextCaptionPositionSettings](#channels-channelid-model-textcaptionpositionsettings) | False | Specifies the position of the output captions. Applies only when `styleControl` is set to `MANUAL`. |
+| styleControl | [TtmlDestinationStyleControl](#channels-channelid-model-ttmldestinationstylecontrol) | False | Controls the source of style and position information for the output captions. Valid values:+ `PASSTHROUGH` – Preserve the style and position from the source captions.<br />+ `USE_CONFIGURED` – Don't pass through the style. The output captions will use the default styling.<br />+ `MANUAL` – Applies the specified styling and positioning. All other styling and positioning is given default values.<br />If you don't specify this field, the default is `PASSTHROUGH`. |
 
 ### TtmlDestinationStyleControl
 <a name="channels-channelid-model-ttmldestinationstylecontrol"></a>
 
 Ttml Destination Style Control
++ `MANUAL`
 + `PASSTHROUGH`
 + `USE_CONFIGURED`
 
@@ -6868,6 +7090,7 @@ Udp Timed Metadata Id3 Frame
 | cdiInputSpecification | [CdiInputSpecification](#channels-channelid-model-cdiinputspecification) | False | Specification of CDI inputs for this channel |
 | destinations | Array of type [OutputDestination](#channels-channelid-model-outputdestination) | False | A list of output destinations for this channel. |
 | encoderSettings | [EncoderSettings](#channels-channelid-model-encodersettings) | False | The encoder settings for this channel. |
+| inferenceSettings | [InferenceSettings](#channels-channelid-model-inferencesettings) | False | Contains the Elemental Inference settings for a channel, including the feed Amazon Resource Name (ARN) and the enrichment methods that augment channel output with contextual metadata. |
 | inputAttachments | Array of type [InputAttachment](#channels-channelid-model-inputattachment) | False |  |
 | inputSpecification | [InputSpecification](#channels-channelid-model-inputspecification) | False | Specification of network and file inputs for this channel |
 | logLevel | [LogLevel](#channels-channelid-model-loglevel) | False | The log level to write to CloudWatch Logs. |
@@ -6919,9 +7142,11 @@ Video settings for this stream.
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
+| border | integer<br />Minimum: 0<br />Maximum: 100 | False | The width, in pixels, of the black border to insert around each edge of the encoded picture. Must be an even integer from 0 (no border, which is the default) through 100. The border is applied to every side, so the width and height of this VideoDescription must each be greater than twice this value. You can't use this field together with outputPositionRectangle, because both fields govern the position of the encoded content within the output frame. |
 | codecSettings | [VideoCodecSettings](#channels-channelid-model-videocodecsettings) | False | Video codec settings. |
 | height | integer | False | Output video height, in pixels. Must be an even number. For most codecs, you can leave this field and width blank in order to use the height and width (resolution) from the source. Note, however, that leaving blank is not recommended. For the Frame Capture codec, height and width are required. |
 | name | string | True | The name of this VideoDescription. Outputs will use this name to uniquely identify this Description. Description names should be unique within this Live Event. |
+| outputPositionRectangle | [VideoPositionRectangle](#channels-channelid-model-videopositionrectangle) | False | The position of the encoded video within the output frame. The area outside the rectangle is filled with black. If you don't specify this field, the video fills the entire output frame. If you do specify it, you must also explicitly specify the width and height of this VideoDescription, so that MediaLive can validate the rectangle against the output frame. |
 | respondToAfd | [VideoDescriptionRespondToAfd](#channels-channelid-model-videodescriptionrespondtoafd) | False | Indicates how MediaLive will respond to the AFD values that might be in the input video. If you do not know what AFD signaling is, or if your downstream system has not given you guidance, choose PASSTHROUGH. RESPOND: MediaLive clips the input video using a formula that uses the AFD values (configured in afdSignaling ), the input display aspect ratio, and the output display aspect ratio. MediaLive also includes the AFD values in the output, unless the codec for this encode is FRAME\_CAPTURE. PASSTHROUGH: MediaLive ignores the AFD values and does not clip the video. But MediaLive does include the values in the output. NONE: MediaLive does not clip the input video and does not include the AFD values in the output |
 | scalingBehavior | [VideoDescriptionScalingBehavior](#channels-channelid-model-videodescriptionscalingbehavior) | False | STRETCH\_TO\_OUTPUT configures the output position to stretch the video to the specified output resolution (height and width). This option will override any position value. DEFAULT may insert black boxes (pillar boxes or letter boxes) around the video to provide the specified output resolution. |
 | sharpness | integer<br />Minimum: 0<br />Maximum: 100 | False | Changes the strength of the anti-alias filter used for scaling. 0 is the softest setting, 100 is the sharpest. A setting of 50 is recommended for most content. |
@@ -6941,6 +7166,18 @@ Video Description Respond To Afd
 Video Description Scaling Behavior
 + `DEFAULT`
 + `STRETCH_TO_OUTPUT`
+
+### VideoPositionRectangle
+<a name="channels-channelid-model-videopositionrectangle"></a>
+
+A rectangle defined by a position (x, y) and dimensions (width, height), in pixels.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| height | integer<br />Minimum: 2<br />Maximum: 8192 | True | The height of the rectangle, in pixels. Must be an even number. |
+| width | integer<br />Minimum: 2<br />Maximum: 8192 | True | The width of the rectangle, in pixels. Must be an even number. |
+| x | integer<br />Minimum: 0<br />Maximum: 8190 | True | The offset of the left edge of the rectangle, in pixels. Must be an even number. |
+| y | integer<br />Minimum: 0<br />Maximum: 8190 | True | The offset of the top edge of the rectangle, in pixels. Must be an even number. |
 
 ### VideoSelector
 <a name="channels-channelid-model-videoselector"></a>
@@ -7047,12 +7284,14 @@ Webvtt Destination Settings
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
-| styleControl | [WebvttDestinationStyleControl](#channels-channelid-model-webvttdestinationstylecontrol) | False | Controls whether the color and position of the source captions is passed through to the WebVTT output captions. PASSTHROUGH - Valid only if the source captions are EMBEDDED or TELETEXT. NO\_STYLE\_DATA - Don't pass through the style. The output captions will not contain any font styling information. |
+| position | [TextCaptionPositionSettings](#channels-channelid-model-textcaptionpositionsettings) | False | Specifies the position of the output captions. Applies only when `styleControl` is set to `MANUAL`. |
+| styleControl | [WebvttDestinationStyleControl](#channels-channelid-model-webvttdestinationstylecontrol) | False | Controls whether the color and position of the source captions is passed through to the WebVTT output captions. Valid values:+ `PASSTHROUGH` – Valid only if the source captions are EMBEDDED, TELETEXT, or SMART SUBTITLES.<br />+ `NO_STYLE_DATA` – Don't pass through the style. The output captions will not contain any font styling information.<br />+ `MANUAL` – Applies the specified styling and positioning. All other styling and positioning is given default values.<br />If you don't specify this field, the default is `NO_STYLE_DATA`. |
 
 ### WebvttDestinationStyleControl
 <a name="channels-channelid-model-webvttdestinationstylecontrol"></a>
 
 Webvtt Destination Style Control
++ `MANUAL`
 + `NO_STYLE_DATA`
 + `PASSTHROUGH`
 
@@ -7071,7 +7310,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/medialive-2017-10-14/DeleteChannel)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/medialive-2017-10-14/DeleteChannel)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/medialive-2017-10-14/DeleteChannel)
-+ [AWS SDK for Python](/goto/boto3/medialive-2017-10-14/DeleteChannel)
++ [AWS SDK for Python (Boto3)](/goto/boto3/medialive-2017-10-14/DeleteChannel)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/medialive-2017-10-14/DeleteChannel)
 
 ### DescribeChannel
@@ -7084,7 +7323,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/medialive-2017-10-14/DescribeChannel)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/medialive-2017-10-14/DescribeChannel)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/medialive-2017-10-14/DescribeChannel)
-+ [AWS SDK for Python](/goto/boto3/medialive-2017-10-14/DescribeChannel)
++ [AWS SDK for Python (Boto3)](/goto/boto3/medialive-2017-10-14/DescribeChannel)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/medialive-2017-10-14/DescribeChannel)
 
 ### UpdateChannel
@@ -7097,5 +7336,5 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/medialive-2017-10-14/UpdateChannel)
 + [AWS SDK for Kotlin](/goto/SdkForKotlin/medialive-2017-10-14/UpdateChannel)
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/medialive-2017-10-14/UpdateChannel)
-+ [AWS SDK for Python](/goto/boto3/medialive-2017-10-14/UpdateChannel)
++ [AWS SDK for Python (Boto3)](/goto/boto3/medialive-2017-10-14/UpdateChannel)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/medialive-2017-10-14/UpdateChannel)

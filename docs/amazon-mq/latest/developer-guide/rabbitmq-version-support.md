@@ -11,6 +11,7 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/rabbitm
 
 | RabbitMQ version | End of support on Amazon MQ |
 | --- | --- |
-| 4.2 (Recommended) |   |
+| 4.3 (Recommended) |   |
+| 4.2 |   |
 | 3.13 |   |
 | 3.12 | March 17, 2025 |

@@ -62,7 +62,7 @@ Required: No
  ** name **   <a name="deadlinecloud-Type-BatchUpdateJobItem-name"></a>
 The name of the job to update.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 128.
+Length Constraints: Minimum length of 1. Maximum length of 512.
 Required: No
 
  ** priority **   <a name="deadlinecloud-Type-BatchUpdateJobItem-priority"></a>

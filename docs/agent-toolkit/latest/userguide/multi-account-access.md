@@ -18,7 +18,7 @@ Multi-profile switching requires SigV4 authentication with the MCP Proxy for AWS
 
 1. You configure the proxy with multiple profiles at startup (via the `--profile` flag or `AWS_MCP_PROXY_PROFILES` environment variable).
 
-1. The proxy adds an `aws_profile` parameter into the tool schema for `call_aws`, `run_script`, `get_presigned_url`, and `get_tasks`.
+1. The proxy adds an `aws_profile` parameter into the tool schema for `run_script`, `get_presigned_url`, and `get_tasks`.
 
 1. When the agent makes a tool call:
    + Without `aws_profile`: the proxy signs with the default (first) profile.

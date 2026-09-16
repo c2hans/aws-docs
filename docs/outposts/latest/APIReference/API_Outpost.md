@@ -31,6 +31,12 @@ Length Constraints: Minimum length of 0. Maximum length of 1000.
 Pattern: `^[\S ]*$`
 Required: No
 
+ ** Generation **   <a name="outposts-Type-Outpost-Generation"></a>
+The Outpost generation. Valid values are `GENERATION_1` for first-generation rack deployments and `GENERATION_2` for second-generation rack deployments.
+Type: String
+Valid Values: `GENERATION_2 | GENERATION_1`
+Required: No
+
  ** LifeCycleStatus **   <a name="outposts-Type-Outpost-LifeCycleStatus"></a>
 The life cycle status.
 Type: String
@@ -64,6 +70,12 @@ The AWS account ID of the Outpost owner.
 Type: String
 Length Constraints: Fixed length of 12.
 Pattern: `\d{12}`
+Required: No
+
+ ** RackScalingType **   <a name="outposts-Type-Outpost-RackScalingType"></a>
+The rack scaling type. Valid values are `SINGLE_RACK` for single-rack Outposts and `MULTI_RACK` for multi-rack Outposts that can expand across multiple racks.
+Type: String
+Valid Values: `SINGLE_RACK | MULTI_RACK`
 Required: No
 
  ** SiteArn **   <a name="outposts-Type-Outpost-SiteArn"></a>

@@ -85,7 +85,7 @@ The following are the service endpoints and service quotas for this service.
 | Amazon Quick Automate Maximum Triggers per Automation | Each supported Region: 30 | No | Maximum number of triggers allowed per automation in Amazon Quick Automate |
 | Amazon Quick Automate Maximum Workflow Execution Time | Each supported Region: 48 | No | Maximum workflow execution time in hours in Amazon Quick Automate |
 | Calculated field expression length | Each supported Region: 250,000 | No | The maximum number of characters that you can use in an expression for a calculated field. |
-| Conversation history retention in days | us-east-1: 365<br />eu-west-1: 365<br />Each of the other supported Regions: 90 | No | The number of days conversation history is retained before deletion. |
+| Conversation history retention in days | Each supported Region: 365 | No | The number of days conversation history is retained before deletion. |
 | Custom action name length | Each supported Region: 256 | No | The maximum number of characters that you can use in naming a custom action. |
 | Custom actions per visual | Each supported Region: 10 | No | The maximum number of custom actions that you can configure for each visual in an analysis. |
 | Custom agent artifact retention in days | Each supported Region: 365 | No | The number of days custom agent artifacts are retained before deletion. |
@@ -127,7 +127,7 @@ The following are the service endpoints and service quotas for this service.
 | Pinned and in-folder conversation history retention in days | Each supported Region: 750 | No | The number of days conversation history that is both pinned and in a folder is retained before deletion. |
 | Pinned conversation history retention in days | Each supported Region: 750 | No | The number of days pinned conversation history is retained before deletion. |
 | Query timeout for visuals | Each supported Region: 120 Seconds | No | The maximum amount of time that QuickSight waits for a database to finish sending data. This applies to queries initiated by visuals. |
-| Scheduled task history retention in days | us-east-1: 365<br />eu-west-1: 365<br />Each of the other supported Regions: 90 | No | The number of days scheduled task run history is retained. |
+| Scheduled task history retention in days | Each supported Region: 365 | No | The number of days scheduled task run history is retained. |
 | Session approval expiry in hours | Each supported Region: 12 | No | The number of hours before a session approval expires and must be renewed. |
 | The maximum amount of time to wait for a dataset preview | Each supported Region: 45 Seconds | No | The maximum amount of time that QuickSight waits for a data preview to finish loading. |
 | URL action hyperlink length | Each supported Region: 2,048 | No | The maximum number of characters allowed in the hyperlink (URL) of a custom action thats defined as a URL action. This includes all variations of the link for the different parameters you include. |

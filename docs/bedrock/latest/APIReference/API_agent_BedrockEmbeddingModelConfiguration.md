@@ -12,6 +12,7 @@ The vector configuration details for the Bedrock embeddings model.
 
  ** audio **   <a name="bedrock-Type-agent_BedrockEmbeddingModelConfiguration-audio"></a>
 Configuration settings for processing audio content in multimodal knowledge bases.
+This field is deprecated. Use `modelConfiguration` instead.
 Type: Array of [AudioConfiguration](API_agent_AudioConfiguration.md) objects
 Array Members: Fixed number of 1 item.
 Required: No
@@ -28,8 +29,16 @@ Type: String
 Valid Values: `FLOAT32 | BINARY`
 Required: No
 
+ ** modelConfiguration **   <a name="bedrock-Type-agent_BedrockEmbeddingModelConfiguration-modelConfiguration"></a>
+Model-specific configuration for the embedding model, provided as a JSON object. Use this field to specify settings that apply to the embedding model that you selected, such as how audio and video files are divided into segments.
+The fields that this object accepts depend on the embedding model. For the settings that each model accepts, see the documentation for that model.
+For an example of a [CreateKnowledgeBase](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateKnowledgeBase.html) request that uses this field to configure a multimodal embedding model, see the [Examples](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateKnowledgeBase.html#API_agent_CreateKnowledgeBase_Examples) section of [CreateKnowledgeBase](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateKnowledgeBase.html).
+Type: JSON value
+Required: No
+
  ** video **   <a name="bedrock-Type-agent_BedrockEmbeddingModelConfiguration-video"></a>
 Configuration settings for processing video content in multimodal knowledge bases.
+This field is deprecated. Use `modelConfiguration` instead.
 Type: Array of [VideoConfiguration](API_agent_VideoConfiguration.md) objects
 Array Members: Fixed number of 1 item.
 Required: No

@@ -2,11 +2,13 @@
 source_url: https://docs.aws.amazon.com/location/previous/developerguide/calculating-routes.html
 ---
 
-# Calculating routes using Amazon Location Service
+# Calculating routes with Routes (V1)
 <a name="calculating-routes"></a>
 
-**Note**
-We released a new version of the Routes API, see the updated [Routes Developer Guide](https://docs.aws.amazon.com/location/latest/developerguide/routes.html) or [Routes API](https://docs.aws.amazon.com/location/latest/APIReference/API_Operations_Amazon_Location_Service_Routes_V2.html) for revised information.
+**Important**
+**This page documents the previous Routes API (V1). Use it only for existing applications.** The Routes V2 API is the latest version. Use it for all new applications; see the latest [Amazon Location Service Routes](https://docs.aws.amazon.com/location/latest/developerguide/routes.html) developer guide.
+The latest API is `CalculateRoutes` (plural). This operation is under the `geo-routes` namespace. It is exposed as `@aws-sdk/client-geo-routes` for JavaScript and `boto3.client('geo-routes')` for Python.
+The `CalculateRoute`, `CalculateRouteMatrix`, and `RouteCalculator` resources described below are previous-generation. Use them only for existing applications.
 
 Amazon Location lets you select a data provider for calculating a route by creating and configuring a route calculator resource.
 
@@ -24,4 +26,4 @@ For an overview of routing concepts, see [Routes (V1) concepts](route-concepts.m
 + [Positions not located on a road in Amazon Location](snap-to-nearby-road.md)
 + [Departure time with Amazon Location](departure-time.md)
 + [Travel mode with Amazon Location](travel-mode.md)
-+ [Managing your route calculator resources with Amazon Location](managing-route-calculators.md)
++ [Managing your route calculator resources (V1)](managing-route-calculators.md)

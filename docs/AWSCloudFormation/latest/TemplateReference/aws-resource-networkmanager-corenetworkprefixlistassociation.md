@@ -58,7 +58,6 @@ Property description not available.
 Property description not available.
 *Required*: Yes
 *Type*: String
-*Pattern*: `^arn:[a-z0-9-]+:ec2:[a-z]+-[a-z]+-[0-9]:([0-9]{12}):prefix-list/pl-[a-z0-9]+$`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values

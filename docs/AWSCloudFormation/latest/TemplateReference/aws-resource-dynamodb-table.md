@@ -46,6 +46,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[TableName](#cfn-dynamodb-table-tablename)" : {{String}},
       "[Tags](#cfn-dynamodb-table-tags)" : {{[ Tag, ... ]}},
       "[TimeToLiveSpecification](#cfn-dynamodb-table-timetolivespecification)" : {{TimeToLiveSpecification}},
+      "[VectorIndexes](#cfn-dynamodb-table-vectorindexes)" : {{[ VectorIndex, ... ]}},
       "[WarmThroughput](#cfn-dynamodb-table-warmthroughput)" : {{WarmThroughput}}
     }
 }
@@ -91,6 +92,8 @@ Properties:
     - Tag}}
   [TimeToLiveSpecification](#cfn-dynamodb-table-timetolivespecification): {{
     TimeToLiveSpecification}}
+  [VectorIndexes](#cfn-dynamodb-table-vectorindexes): {{
+    - VectorIndex}}
   [WarmThroughput](#cfn-dynamodb-table-warmthroughput): {{
     WarmThroughput}}
 ```
@@ -135,7 +138,7 @@ If you update a table to include a new global secondary index, AWS CloudFormatio
 If you add or delete an index during an update, we recommend that you don't update any other resources. If your stack fails to update and is rolled back while adding a new index, you must manually delete the index.
 Updates are not supported. The following are exceptions:
 + If you update either the contributor insights specification or the provisioned throughput values of global secondary indexes, you can update the table without interruption.
-+ You can delete or add one global secondary index without interruption. If you do both in the same update (for example, by changing the index's logical ID), the update fails.
++ You can create or delete one index without interruption. This index can be a global secondary index or a vector index, but not one of each. If you change more than one index in the same update, the update fails.
 *Required*: No
 *Type*: Array of [GlobalSecondaryIndex](aws-properties-dynamodb-table-globalsecondaryindex.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -233,6 +236,15 @@ Specifies the Time to Live (TTL) settings for the table.
 For detailed information about the limits in DynamoDB, see [Limits in Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Limits.html) in the Amazon DynamoDB Developer Guide.
 *Required*: No
 *Type*: [TimeToLiveSpecification](aws-properties-dynamodb-table-timetolivespecification.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`VectorIndexes`  <a name="cfn-dynamodb-table-vectorindexes"></a>
+The vector indexes to create on the table. Each vector index enables similarity search on a vector attribute.
+Vector indexes are supported only on tables that use on-demand capacity mode. To use vector indexes, you must set `BillingMode` to `PAY_PER_REQUEST`.
+In a single stack operation, you can create or delete one index. This index can be a global secondary index or a vector index, but not one of each. To change more indexes, use a separate stack operation for each.
+*Required*: No
+*Type*: Array of [VectorIndex](aws-properties-dynamodb-table-vectorindex.md)
+*Minimum*: `1`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `WarmThroughput`  <a name="cfn-dynamodb-table-warmthroughput"></a>

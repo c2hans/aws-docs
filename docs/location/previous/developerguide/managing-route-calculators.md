@@ -2,8 +2,13 @@
 source_url: https://docs.aws.amazon.com/location/previous/developerguide/managing-route-calculators.html
 ---
 
-# Managing your route calculator resources with Amazon Location
+# Managing your route calculator resources (V1)
 <a name="managing-route-calculators"></a>
+
+**Important**
+**This page documents the previous Routes API (V1). Use it only for existing applications.** The Routes V2 API is the latest version. Use it for all new applications; see the latest [Amazon Location Service Routes](https://docs.aws.amazon.com/location/latest/developerguide/routes.html) developer guide.
+The latest API calls `CalculateRoutes` (plural) directly. This operation is under the `geo-routes` namespace. It is exposed as `@aws-sdk/client-geo-routes` for JavaScript and `boto3.client('geo-routes')` for Python.
+There is no `RouteCalculator` resource to create, describe, or delete.
 
 You can manage your route calculator resources using the Amazon Location console, the AWS CLI, or the Amazon Location APIs.
 
@@ -26,7 +31,7 @@ You can view your route calculator list using the Amazon Location console, the A
 ------
 #### [ API ]
 
-Use the `[ListRouteCalculators](https://docs.aws.amazon.com/location-routes/latest/APIReference/API_ListRouteCalculators.html)` operation from the Amazon Location Routes APIs.
+Use the `[ListRouteCalculators](https://docs.aws.amazon.com/location/previous/APIReference/API_ListRouteCalculators.html)` operation from the Amazon Location Routes APIs.
 
 The following example is an API request to get a list of route calculators in the AWS account.
 
@@ -34,7 +39,7 @@ The following example is an API request to get a list of route calculators in th
 POST /routes/v0/list-calculators
 ```
 
-The following is an example response for `[ListRouteCalculators](https://docs.aws.amazon.com/location-routes/latest/APIReference/API_ListRouteCalculators.html)`:
+The following is an example response for `[ListRouteCalculators](https://docs.aws.amazon.com/location/previous/APIReference/API_ListRouteCalculators.html)`:
 
 ```
 {
@@ -83,7 +88,7 @@ You can get details about any route calculator resource in your AWS account usin
 ------
 #### [ API ]
 
-Use the `[DescribeRouteCalculator](https://docs.aws.amazon.com/location-routes/latest/APIReference/API_DescribeRouteCalculator.html)` operation from the Amazon Location Routes APIs.
+Use the `[DescribeRouteCalculator](https://docs.aws.amazon.com/location/previous/APIReference/API_DescribeRouteCalculator.html)` operation from the Amazon Location Routes APIs.
 
 The following example is an API request to get the route calculator details for {{ExampleCalculator}}.
 
@@ -91,7 +96,7 @@ The following example is an API request to get the route calculator details for 
 GET /routes/v0/calculators/{{ExampleCalculator}}
 ```
 
-The following is an example response for `[DescribeRouteCalculator](https://docs.aws.amazon.com/location-routes/latest/APIReference/API_DescribeRouteCalculator.html)`:
+The following is an example response for `[DescribeRouteCalculator](https://docs.aws.amazon.com/location/previous/APIReference/API_DescribeRouteCalculator.html)`:
 
 ```
 {
@@ -145,7 +150,7 @@ This operation deletes the resource permanently.
 ------
 #### [ API ]
 
-Use the `[DeleteRouteCalculator](https://docs.aws.amazon.com/location-routes/latest/APIReference/API_DeleteRouteCalculator.html)` operation from the Amazon Location Routes APIs.
+Use the `[DeleteRouteCalculator](https://docs.aws.amazon.com/location/previous/APIReference/API_DeleteRouteCalculator.html)` operation from the Amazon Location Routes APIs.
 
 The following example is an API request to delete the geofence collection {{ExampleCalculator}}.
 
@@ -153,7 +158,7 @@ The following example is an API request to delete the geofence collection {{Exam
 DELETE /routes/v0/calculators/{{ExampleCalculator}}
 ```
 
-The following is an example response for `[DeleteRouteCalculator](https://docs.aws.amazon.com/location-routes/latest/APIReference/API_DeleteRouteCalculator.html)`:
+The following is an example response for `[DeleteRouteCalculator](https://docs.aws.amazon.com/location/previous/APIReference/API_DeleteRouteCalculator.html)`:
 
 ```
 HTTP/1.1 200

@@ -267,6 +267,45 @@ The following example is a gateway dual-stack service endpoint in the US West (O
 storagegateway.us-west-2.api.aws:443
 ```
 
+**FIPS endpoints**
+These endpoints support IPv4 traffic between your gateway appliance and AWS, and comply with FIPS.
+
+The following service endpoints are required by FIPS-enabled gateways for control path (`anon-cp`, `client-cp`, `proxy-app`) and data path (`dp-1`) operations.
+
+```
+anon-cp.storagegateway-fips.{{region}}.amazonaws.com:443
+client-cp.storagegateway-fips.{{region}}.amazonaws.com:443
+proxy-app.storagegateway-fips.{{region}}.amazonaws.com:443
+dp-1.storagegateway-fips.{{region}}.amazonaws.com:443
+```
+
+The following gateway service endpoint is required to make API calls.
+
+```
+storagegateway-fips.{{region}}.amazonaws.com:443
+```
+
+**Dual-stack FIPS endpoints**
+These endpoints support both IPv4 and IPv6 traffic between your gateway appliance and AWS, and comply with FIPS.
+
+The following dual-stack service endpoints are required by FIPS-enabled gateways for control path (activation, controlplane, proxy) and data path (dataplane) operations.
+
+```
+activation-storagegateway-fips.{{region}}.api.aws:443
+controlplane-storagegateway-fips.{{region}}.api.aws:443
+proxy-storagegateway-fips.{{region}}.api.aws:443
+dataplane-storagegateway-fips.{{region}}.api.aws:443
+```
+
+The following gateway dual-stack service endpoint is required to make API calls.
+
+```
+storagegateway-fips.{{region}}.api.aws:443
+```
+
+**Note**
+FIPS endpoints are available only in some AWS Regions. For more information, see [AWS Storage Gateway endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/sg.html) in the *AWS General Reference*.
+
 #### Amazon S3 service endpoints
 <a name="fgw-s3-service-endpoints"></a>
 

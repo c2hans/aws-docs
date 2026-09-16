@@ -36,6 +36,8 @@ RPM 6.0 replaces 4.16. If you maintain custom spec files, test them against the 
 
 LLVM 22 is built from a single unified SRPM. The separate `clang`, `lld`, and `lldb` source packages no longer exist.
 
+AL2027 turns on dependency cooldowns for *npm* and *pip* by default. Dependency cooldowns delay the installation of recently published packages, giving the security community time to detect and remove malicious packages before they reach your systems. The cooldowns were available in AL2023 (npm since release 2023.11, pip since 2023.12) but required manual configuration. For more information, see [Supply chain protection for package managers](security-features.md#supply-chain-protection).
+
 ## AWS-LC
 <a name="key-changes-aws-lc"></a>
 

@@ -14,7 +14,7 @@ The examples on this page use the composite-key table created in [Create a table
 ## Query by partition key
 <a name="dynamodb-query"></a>
 
-For request and response details, see the [query()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/dynamodb/operations/query/) API reference.
+For request and response details, see the [query()](clients/dynamodb/operations/query/) API reference.
 
 Use `query` when you know the partition-key value. The key condition must include equality on the partition key and can also constrain the sort key.
 
@@ -49,7 +49,7 @@ async def query_items(
 ## Paginate a query manually
 <a name="dynamodb-query-pagination"></a>
 
-For request and response details, see the [query()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/dynamodb/operations/query/) API reference.
+For request and response details, see the [query()](clients/dynamodb/operations/query/) API reference.
 
 A query can return a partial result. Continue while `last_evaluated_key` is present, and pass that key as `exclusive_start_key` on the next request.
 
@@ -94,7 +94,7 @@ async def query_items_paginated(
 ## Scan with a filter
 <a name="dynamodb-scan"></a>
 
-For request and response details, see the [scan()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/dynamodb/operations/scan/) API reference.
+For request and response details, see the [scan()](clients/dynamodb/operations/scan/) API reference.
 
 Use `scan` only when a key-based query cannot express the access pattern. A filter is applied after DynamoDB reads each page, so it does not reduce the read capacity consumed. Continue with `last_evaluated_key` even when a filtered page returns no items.
 

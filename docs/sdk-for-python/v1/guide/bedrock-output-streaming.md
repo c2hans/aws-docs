@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-python/v1/guide/bedrock-output-s
 
 ConverseStream accepts the same request format as Converse but returns the response as a stream of events, so your application can process output as the model generates it instead of waiting for the complete response. Use it for interactive applications, such as chat, where users should start seeing text as soon as the model begins its reply.
 
-The following example sends one request, prints the reply as the model generates it, and then verifies that the stream completed. For request and response details, see the [converse\_stream()](https://docs.aws.amazon.com/sdk-for-python/v1/reference/clients/bedrock-runtime/operations/converse_stream/) API reference.
+The following example sends one request, prints the reply as the model generates it, and then verifies that the stream completed. For request and response details, see the [converse\_stream()](clients/bedrock-runtime/operations/converse_stream/) API reference.
 
  **Imports**
 
