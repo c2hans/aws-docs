@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/cross-network-traffic-inspection-with-aws-network-firewall/index.html
 ---
 
+---
+title: 'Guidance for Cross Network Traffic Inspection with AWS Network Firewall'
+canonical_url: https://docs.aws.amazon.com/solutions/cross-network-traffic-inspection-with-aws-network-firewall/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Cross Network Traffic Inspection with AWS Network Firewall
 
 ## Overview

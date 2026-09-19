@@ -10,6 +10,12 @@ Properties used by the target leg to partition the data on the target.
 ## Contents
 <a name="API_TargetTableConfig_Contents"></a>
 
+ ** IntegrationArn **   <a name="Glue-Type-TargetTableConfig-IntegrationArn"></a>
+The ARN of the integration that owns this target table configuration.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Required: No
+
  ** PartitionSpec **   <a name="Glue-Type-TargetTableConfig-PartitionSpec"></a>
 Determines the file layout on the target.
 Type: Array of [IntegrationPartition](API_IntegrationPartition.md) objects

@@ -11,7 +11,12 @@ Amazon ECR stores images in Amazon S3 buckets that Amazon ECR manages. Each Amaz
 
 Consider the following encryption best practices for this service:
 + Instead of using the default server-side encryption with Amazon S3-managed (SSE-S3) encryption keys, use customer managed KMS keys stored in AWS KMS. This key type provides the most granular control options.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/encryption-best-practices/ecr.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
+
 + Do not revoke the grants that Amazon ECR creates by default when you provision a repository. This can affect functionality, such as accessing data, encrypting new images pushed to the repository, or decrypting them when they are pulled.
 + Use AWS CloudTrail to record the requests that Amazon ECR sends to AWS KMS. The log entries contain an encryption context key to make them more easily identifiable.
 + Configure Amazon ECR policies to control access from specific Amazon VPC endpoints or specific VPCs. Effectively, this isolates network access to a specific Amazon ECR resource, allowing access from only the specific VPC. By establishing a virtual private network (VPN) connection with an Amazon VPC endpoint, you can encrypt data in transit.

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/macie/index.html
 ---
 
+---
+title: 'Amazon Macie Documentation'
+canonical_url: https://docs.aws.amazon.com/macie/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Macie Documentation
 
 Amazon Macie is a fully managed data security and data privacy service. Macie uses machine learning and pattern matching to help you discover, monitor, and protect your sensitive data in Amazon S3.

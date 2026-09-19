@@ -288,7 +288,16 @@ The available regions are determined by the **ISB Managed Regions** parameter co
    1. For **Deployment Timeout**, enter the maximum time (in minutes) to wait for deployment completion (default: 30 minutes).
 
    1. For **Deployment Strategy**, choose a strategy:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/administrator-guide.html)
+
+<table>
+<thead>
+  <tr><th>Strategy</th><th>Configuration</th></tr>
+</thead>
+<tbody>
+  <tr><td>Default</td><td>Deploys one region at a time with 0% failure tolerance. Safest approach.</td></tr>
+  <tr><td>Custom</td><td>Configure each deployment parameter individually. Use when you need specific control over deployment behavior.</td></tr>
+</tbody>
+</table>
 
    1. If you selected **Custom**, configure these parameters:
       +  **Region concurrency type**: Sequential (one region at a time) or Parallel (all regions simultaneously)

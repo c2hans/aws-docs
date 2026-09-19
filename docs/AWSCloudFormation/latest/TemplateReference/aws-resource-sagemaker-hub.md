@@ -93,7 +93,7 @@ The Amazon Simple Storage (Amazon S3) location and security configuration for `O
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Tags`  <a name="cfn-sagemaker-hub-tags"></a>
-Property description not available.
+Any tags associated with the hub content.
 *Required*: No
 *Type*: Array of [Tag](aws-properties-sagemaker-hub-tag.md)
 *Minimum*: `0`

@@ -50,6 +50,7 @@ Required: Yes
    },
    "TableName": "string",
    "TargetTableConfig": {
+      "IntegrationArn": "string",
       "PartitionSpec": [
          {
             "ConversionSpec": "string",

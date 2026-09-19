@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/devops-guru/index.html
 ---
 
+---
+title: 'Amazon DevOps Guru Documentation'
+canonical_url: https://docs.aws.amazon.com/devops-guru/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon DevOps Guru Documentation
 
 Amazon DevOps Guru generates operational insights using machine learning to help you improve the performance of your operational applications.

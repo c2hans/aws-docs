@@ -172,7 +172,7 @@ The type of endpoint.
 Default: Gateway
 *Required*: No
 *Type*: String
-*Allowed values*: `Interface | Gateway | GatewayLoadBalancer | ServiceNetwork | Resource`
+*Allowed values*: `Interface | Gateway | GatewayLoadBalancer | ServiceNetwork | Resource | Tunnel`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `VpcId`  <a name="cfn-ec2-vpcendpoint-vpcid"></a>

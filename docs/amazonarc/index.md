@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/amazonarc/index.html
 ---
 
+---
+title: 'Amazon Application Recovery Controller (ARC) Documentation'
+canonical_url: https://docs.aws.amazon.com/amazonarc/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Amazon Application Recovery Controller (ARC) Documentation
 
 Amazon Application Recovery Controller (ARC) (ARC) gives you insights about whether your applications and resources are ready for recovery, and helps you move traffic across AWS Regions or away from Availability Zones for application disaster recovery.

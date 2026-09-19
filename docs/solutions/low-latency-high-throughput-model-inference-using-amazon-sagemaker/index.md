@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/low-latency-high-throughput-model-inference-using-amazon-sagemaker/index.html
 ---
 
+---
+title: 'Guidance for Low-Latency, High Throughput Model Inference Using Amazon SageMaker'
+canonical_url: https://docs.aws.amazon.com/solutions/low-latency-high-throughput-model-inference-using-amazon-sagemaker/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Low-Latency, High Throughput Model Inference Using Amazon SageMaker
 
 ## Overview

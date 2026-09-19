@@ -32,7 +32,29 @@ This solution uses Amazon Cognito, which is currently available in specific AWS 
 1. On the **Specify stack details** page, assign a name to your solution stack.
 
 1. Under **Parameters**, review the parameters for the template and modify them as necessary. This template uses the following parameters in addition to the standard parameters from the default template.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/distributed-load-testing-on-aws/deploy-alb-ecs-fargate.html)
+
+<table>
+<thead>
+  <tr><th>Parameter</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td> <b>Console Domain Name</b> </td><td> <i>&lt;Requires input&gt;</i> </td><td>The custom domain name for the web console (for example, <code>dlt.example.com</code>). This domain must match the ACM certificate you created in the prerequisites.</td></tr>
+  <tr><td> <b>ACM Certificate ARN</b> </td><td> <i>&lt;Requires input&gt;</i> </td><td>The ARN of the ACM certificate for the domain (for example, <code>arn:aws:acm:us-east-1:123456789012:certificate/abcd1234-ef56-gh78-ij90-klmnopqrstuv</code>). Must be in the same Region as the stack.</td></tr>
+  <tr><td> <b>Administrator Name</b> </td><td> <i>&lt;Requires input&gt;</i> </td><td>User name for the initial solution administrator.</td></tr>
+  <tr><td> <b>Administrator Email</b> </td><td> <i>&lt;Requires input&gt;</i> </td><td>Email address of the administrator user. After launch, an email will be sent to this address with console login instructions.</td></tr>
+  <tr><td> <b>Existing VPC ID</b> </td><td>&lt;Optional input&gt;</td><td>If you have a VPC that you want to use and is already created, enter the ID of an existing VPC in the same Region where the stack was deployed. For example, vpc-1a2b3c4d5e6f.</td></tr>
+  <tr><td> <b>First existing subnet</b> </td><td>&lt;Optional input&gt;</td><td>The ID of the first subnet within your existing VPC. This subnet needs a route to the internet to pull the container image for running tests. For example, subnet-7h8i9j0k.</td></tr>
+  <tr><td> <b>Second existing subnet</b> </td><td>&lt;Optional input&gt;</td><td>The ID of the second subnet within the existing VPC. This subnet needs a route to the internet to pull the container image for running tests. For example, subnet-1x2y3z.</td></tr>
+  <tr><td> <b>Provide valid CIDR block for the solution to create VPC</b> </td><td>192.168.0.0/16</td><td>You may leave this parameter blank if you are using existing VPC.</td></tr>
+  <tr><td> <b>Provide valid CIDR block for subnet A for the solution to create VPC</b> </td><td>192.168.0.0/20</td><td>CIDR block for subnet A of the AWS Fargate VPC.</td></tr>
+  <tr><td> <b>Provide valid CIDR block for subnet B for the solution to create VPC</b> </td><td>192.168.16.0/20</td><td>CIDR block for subnet B of the AWS Fargate VPC.</td></tr>
+  <tr><td> <b>Provide CIDR block for allowing outbound traffic of Fargate tasks</b> </td><td>0.0.0.0/0</td><td>CIDR block that restricts Amazon ECS container outbound access.</td></tr>
+  <tr><td> <b>Auto-update Container Image</b> </td><td> <code>No</code> </td><td>Automatically use the most up to date and secure image up until the next minor release. Selecting <code>No</code> will pull the image as originally released, without any security updates.</td></tr>
+  <tr><td> <b>Web Console Image URI</b> </td><td>&lt;Optional input&gt;</td><td>URI of a custom web console container image from Amazon ECR private registry (for example, <code>123456789012.dkr.ecr.us-east-1.amazonaws.com/my-web-console:latest</code>). If empty, the default public image is used. For more information, refer to <a href="container-image.md#web-console-image">Web console image</a>.</td></tr>
+  <tr><td> <b>Deploy WAF</b> </td><td> <code>Yes</code> </td><td>Deploy an AWS WAF web ACL in front of the ALB with AWS managed rules to filter common web-based attacks. Set to <code>No</code> to disable WAF deployment.</td></tr>
+  <tr><td> <b>Deploy Optional MCP Server</b> </td><td> <code>No</code> </td><td>Deploy the optional remote MCP Server, using AgentCore Gateway to connect AI applications to Distributed Load Testing on AWS.</td></tr>
+</tbody>
+</table>
 
 1. Choose **Next**.
 

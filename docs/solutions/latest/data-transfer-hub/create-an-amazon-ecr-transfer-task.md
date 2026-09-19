@@ -158,4 +158,43 @@ This tutorial provides instructions for the backend-only version. For more detai
    ParameterKey=ecsSubnetA,ParameterValue=subnet-034c58fe0e696eb0b \
    ParameterKey=ecsSubnetB,ParameterValue=subnet-0487ae5a1d3badde7
    ```
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/data-transfer-hub/create-an-amazon-ecr-transfer-task.html)
+
+<table>
+<thead>
+  <tr><th> Parameter </th><th> Allowed Value </th><th> Default Value </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> sourceType </td><td>Amazon_ECR<br />Public</td><td> Amazon_ECR </td><td> Choose type of source container registry, for example Amazon_ECR, or Public from Docker Hub, gco.io, etc. </td></tr>
+  <tr><td> srcRegion </td><td> </td><td> </td><td> Source Region Name (only required if source type is Amazon ECR), for example, us-west-1 </td></tr>
+  <tr><td> srcAccountId </td><td> </td><td> </td><td> Source AWS Account ID (only required if source type is Amazon ECR), leave it blank if source is in current account </td></tr>
+  <tr><td> srcList </td><td>ALL<br />SELECTED</td><td> ALL </td><td> Type of Source Image List, either ALL or SELECTED, for public registry, please use SELECTED only </td></tr>
+  <tr><td> srcImageList </td><td> </td><td> </td><td> Selected Image List delimited by comma, for example, ubuntu:latest,alpine:latest..., leave it blank if Type is ALL. For ECR source, using ALL_TAGS tag to get all tags. </td></tr>
+  <tr><td> srcCredential </td><td> </td><td> </td><td> The secret name in Secrets Manager only when using AK/SK credentials to pull images from source Amazon ECR, leave it blank for public registry </td></tr>
+  <tr><td> destRegion </td><td> </td><td> </td><td> Destination Region Name, for example, cn-north-1 </td></tr>
+  <tr><td> destAccountId </td><td> </td><td> </td><td> Destination AWS Account ID, leave it blank if destination is in current account </td></tr>
+  <tr><td> destPrefix </td><td> </td><td> </td><td> Destination Repo Prefix </td></tr>
+  <tr><td> destCredential </td><td> </td><td> </td><td> The secret name in Secrets Manager only when using AK/SK credentials to push images to destination Amazon ECR </td></tr>
+  <tr><td> includeUntagged </td><td>true<br />false</td><td> true </td><td> Whether to include untagged images in the replication </td></tr>
+  <tr><td> ecsClusterName </td><td> </td><td> </td><td> ECS Cluster Name to run ECS task (Please make sure the cluster exists) </td></tr>
+  <tr><td> ecsVpcId </td><td> </td><td> </td><td> VPC ID to run ECS task, e.g. vpc-bef13dc7 </td></tr>
+  <tr><td> ecsSubnetA </td><td> </td><td> </td><td> First Subnet ID to run ECS task, e.g. subnet-97bfc4cd </td></tr>
+  <tr><td> ecsSubnetB </td><td> </td><td> </td><td> Second Subnet ID to run ECS task, e.g. subnet-7ad7de32 </td></tr>
+  <tr><td> alarmEmail </td><td> </td><td> </td><td> Alarm Email address to receive notification in case of any failure </td></tr>
+  <tr><td> sourceType </td><td>Amazon_ECR<br />Public</td><td> Amazon_ECR </td><td> Choose type of source container registry, for example Amazon_ECR, or Public from Docker Hub, gco.io, etc. </td></tr>
+  <tr><td> srcRegion </td><td> </td><td> </td><td> Source Region Name (only required if source type is Amazon ECR), for example, us-west-1 </td></tr>
+  <tr><td> srcAccountId </td><td> </td><td> </td><td> Source AWS Account ID (only required if source type is Amazon ECR), leave it blank if source is in current account </td></tr>
+  <tr><td> srcList </td><td> ALL SELECTED </td><td> ALL </td><td> Type of Source Image List, either ALL or SELECTED, for public registry, please use SELECTED only </td></tr>
+  <tr><td> srcImageList </td><td> </td><td> </td><td> Selected Image List delimited by comma, for example, ubuntu:latest,alpine:latest..., leave it blank if Type is ALL. For ECR source, using ALL_TAGS tag to get all tags. </td></tr>
+  <tr><td> srcCredential </td><td> </td><td> </td><td> The secret name in Secrets Manager only when using AK/SK credentials to pull images from source Amazon ECR, leave it blank for public registry </td></tr>
+  <tr><td> destRegion </td><td> </td><td> </td><td> Destination Region Name, for example, cn-north-1 </td></tr>
+  <tr><td> destAccountId </td><td> </td><td> </td><td> Destination AWS Account ID, leave it blank if destination is in current account </td></tr>
+  <tr><td> destPrefix </td><td> </td><td> </td><td> Destination Repo Prefix </td></tr>
+  <tr><td> destCredential </td><td> </td><td> </td><td> The secret name in Secrets Manager only when using AK/SK credentials to push images to destination Amazon ECR </td></tr>
+  <tr><td> includeUntagged </td><td>true<br />false</td><td> true </td><td> Whether to include untagged images in the replication </td></tr>
+  <tr><td> ecsClusterName </td><td> </td><td> </td><td> ECS Cluster Name to run ECS task (Please make sure the cluster exists) </td></tr>
+  <tr><td> ecsVpcId </td><td> </td><td> </td><td> VPC ID to run ECS task, e.g. vpc-bef13dc7 </td></tr>
+  <tr><td> ecsSubnetA </td><td> </td><td> </td><td> First Subnet ID to run ECS task, e.g. subnet-97bfc4cd </td></tr>
+  <tr><td> ecsSubnetB </td><td> </td><td> </td><td> Second Subnet ID to run ECS task, e.g. subnet-7ad7de32 </td></tr>
+  <tr><td> alarmEmail </td><td> </td><td> </td><td> Alarm Email address to receive notification in case of any failure </td></tr>
+</tbody>
+</table>

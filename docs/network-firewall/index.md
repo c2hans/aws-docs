@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/network-firewall/index.html
 ---
 
+---
+title: 'AWS Network Firewall Documentation'
+canonical_url: https://docs.aws.amazon.com/network-firewall/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Network Firewall Documentation
 
 AWS Network Firewall is a stateful, managed, network firewall and intrusion detection and prevention service for your virtual private cloud (VPC).

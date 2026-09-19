@@ -57,7 +57,22 @@ We recommend that you install a credentials store to secure the local copies of 
 + [Docker Compose](https://docs.docker.com/compose/install/) installed on the Greengrass core. The `docker-compose` executable must be in the `/usr/bin` or `/usr/local/bin` directory.
 
   The following Docker Compose versions are verified to work with the connector.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/docker-app-connector.html)
+
+<table>
+<thead>
+  <tr><th>Connector version</th><th>Verified Docker Compose version</th></tr>
+</thead>
+<tbody>
+  <tr><td>7</td><td>1.25.4</td></tr>
+  <tr><td>6</td><td>1.25.4</td></tr>
+  <tr><td>5</td><td>1.25.4</td></tr>
+  <tr><td>4</td><td>1.25.4</td></tr>
+  <tr><td>3</td><td>1.25.4</td></tr>
+  <tr><td>2</td><td>1.25.1</td></tr>
+  <tr><td>1</td><td>1.24.1</td></tr>
+</tbody>
+</table>
+
 + A single Docker Compose file (for example, `docker-compose.yml`), stored in Amazon Simple Storage Service (Amazon S3). The format must be compatible with the version of Docker Compose installed on the core. You should test the file before you use it on your core. If you edit the file after you deploy the Greengrass group, you must redeploy the group to update your local copy on the core.
 + A Linux user with permission to call the local Docker daemon and write to the directory that stores the local copy of your Compose file. For more information, see [Setting up the Docker user on the core](#docker-app-connector-linux-user).
 + The [Greengrass group role](group-role.md) configured to allow the `s3:GetObject` action on the S3 bucket that contains your Compose file. This permission is shown in the following example IAM policy.

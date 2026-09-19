@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/ai-enhanced-amazon-connect-customer-experience/index.html
 ---
 
+---
+title: 'Guidance for AI enhanced Amazon Connect Customer customer experience'
+canonical_url: https://docs.aws.amazon.com/solutions/ai-enhanced-amazon-connect-customer-experience/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for AI enhanced Amazon Connect Customer customer experience
 
 ## Overview

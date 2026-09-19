@@ -235,6 +235,7 @@ Content-type: application/json
       "TsUseAudioRenditionGroup": boolean
    },
    "StartoverWindowSeconds": number,
+   "StreamNameOutputMode": "string",
    "Tags": {
       "string" : "string"
    },
@@ -326,6 +327,11 @@ Type: [Segment](API_Segment.md) object
  ** [StartoverWindowSeconds](#API_GetOriginEndpoint_ResponseSyntax) **   <a name="mediapackage-GetOriginEndpoint-response-StartoverWindowSeconds"></a>
 The size of the window (in seconds) to create a window of the live stream that's available for on-demand viewing. Viewers can start-over or catch-up on content that falls within the window.
 Type: Integer
+
+ ** [StreamNameOutputMode](#API_GetOriginEndpoint_ResponseSyntax) **   <a name="mediapackage-GetOriginEndpoint-response-StreamNameOutputMode"></a>
+The output mode for stream names in egress manifests for this origin endpoint.
+Type: String
+Valid Values: `INDEX | PASSTHROUGH_NAME`
 
  ** [Tags](#API_GetOriginEndpoint_ResponseSyntax) **   <a name="mediapackage-GetOriginEndpoint-response-Tags"></a>
 The comma-separated list of tag key:value pairs assigned to the origin endpoint.

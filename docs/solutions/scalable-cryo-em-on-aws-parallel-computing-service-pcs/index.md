@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/scalable-cryo-em-on-aws-parallel-computing-service-pcs/index.html
 ---
 
+---
+title: 'Guidance for Scalable Cryo-EM on AWS Parallel Computing Service (PCS)'
+canonical_url: https://docs.aws.amazon.com/solutions/scalable-cryo-em-on-aws-parallel-computing-service-pcs/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Scalable Cryo-EM on AWS Parallel Computing Service (PCS)
 
 ## Overview

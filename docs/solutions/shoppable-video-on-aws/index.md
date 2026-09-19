@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/shoppable-video-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Shoppable Video on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/shoppable-video-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Shoppable Video on AWS
 
 Provide viewers with a seamless shopping experience merged with your digital content

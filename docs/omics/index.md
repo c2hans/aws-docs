@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com//omics/index.html
 ---
 
+---
+title: 'AWS HealthOmics Documentation'
+canonical_url: https://docs.aws.amazon.com/omics/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # AWS HealthOmics Documentation
 
 Store, transform, and analyze genomic and other biological data to generate health insights and advance scientific discoveries.

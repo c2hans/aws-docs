@@ -128,7 +128,7 @@ Pattern: `[a-zA-Z][a-zA-Z0-9_]{0,47}`
  ** [status](#API_CreateAgentRuntimeEndpoint_ResponseSyntax) **   <a name="bedrockagentcorecontrol-CreateAgentRuntimeEndpoint-response-status"></a>
 The current status of the AgentCore Runtime endpoint.
 Type: String
-Valid Values: `CREATING | CREATE_FAILED | UPDATING | UPDATE_FAILED | READY | DELETING`
+Valid Values: `CREATING | CREATE_FAILED | UPDATING | UPDATE_FAILED | READY | DELETING | DELETE_FAILED`
 
  ** [targetVersion](#API_CreateAgentRuntimeEndpoint_ResponseSyntax) **   <a name="bedrockagentcorecontrol-CreateAgentRuntimeEndpoint-response-targetVersion"></a>
 The target version of the AgentCore Runtime for the endpoint.

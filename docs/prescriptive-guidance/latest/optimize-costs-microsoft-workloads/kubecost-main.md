@@ -113,7 +113,11 @@ To migrate to a new node group when you use node groups deployed by `eksctl`, do
 1. Run the `kubectl describe node <node_name>` command. The output shows that the node is running on a m5.2xlarge instance. It also matches the node group name (`ng-windows-m5-2xlarge`).
 
 1. To change the deployment to use node group `ng-windows-t3-large`, delete node group `ng-windows-m5-2xlarge` and run `kubectl describe svc,deploy,pod -n windows`. The deployment immediately starts to redeploy now that its node group has been deleted.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/kubecost-main.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
 1. Run the `kubectl describe svc,deploy,pod -n windows` command again after a few minutes. The output shows that the pods are all in a **Running** state again.
 

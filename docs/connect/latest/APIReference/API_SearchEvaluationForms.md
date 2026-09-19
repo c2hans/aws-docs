@@ -137,6 +137,7 @@ Content-type: application/json
    "EvaluationFormSearchSummaryList": [
       {
          "ActiveVersion": number,
+         "AIVersion": "string",
          "AutoEvaluationEnabled": boolean,
          "ContactInteractionType": "string",
          "CreatedBy": "string",

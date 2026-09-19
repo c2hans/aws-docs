@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/fis/index.html
 ---
 
+---
+title: 'AWS Fault Injection Service Documentation'
+canonical_url: https://docs.aws.amazon.com/fis/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Fault Injection Service Documentation
 
 AWS Fault Injection Service (AWS FIS) is a managed service that enables you to perform fault injection experiments on your AWS workloads.

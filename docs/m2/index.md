@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/m2/index.html
 ---
 
+---
+title: 'AWS Mainframe Modernization'
+canonical_url: https://docs.aws.amazon.com/m2/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # AWS Mainframe Modernization
 
 AWS Mainframe Modernization provides tools and resources to help you plan and implement migration and modernization from mainframes to AWS managed runtime environments.

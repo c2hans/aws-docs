@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/finspace/index.html
 ---
 
+---
+title: 'Amazon FinSpace Documentation'
+canonical_url: https://docs.aws.amazon.com/finspace/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon FinSpace Documentation
 
 Amazon FinSpace is a fully managed data management and analytics service that makes it easy to store, catalog, and prepare financial industry data at scale. Amazon FinSpace reduces the time it takes for financial services industry (FSI) customers to find and access all types of financial data for analysis.

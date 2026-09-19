@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/no-code-multi-ai-agent-orchestration-on-aws/index.html
 ---
 
+---
+title: 'Guidance for No-Code Multi-Agent AI Orchestration on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/no-code-multi-ai-agent-orchestration-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for No-Code Multi-Agent AI Orchestration on AWS
 
 ## Overview

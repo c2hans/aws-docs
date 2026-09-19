@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/container-runtime-security-monitoring-with-cncf-falco-and-aws-security-hub/index.html
 ---
 
+---
+title: 'Guidance for Container Runtime Security Monitoring with CNCF Falco and AWS Security Hub'
+canonical_url: https://docs.aws.amazon.com/solutions/container-runtime-security-monitoring-with-cncf-falco-and-aws-security-hub/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Container Runtime Security Monitoring with CNCF Falco and AWS Security Hub
 
 ## Overview

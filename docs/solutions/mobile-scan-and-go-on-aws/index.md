@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/mobile-scan-and-go-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Mobile Scan & Go on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/mobile-scan-and-go-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Mobile Scan & Go on AWS
 
 Building a Smart Store experience for frictionless shopping, using AWS native services

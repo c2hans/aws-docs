@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/lightsail/index.html
 ---
 
+---
+title: 'Amazon Lightsail Documentation'
+canonical_url: https://docs.aws.amazon.com/lightsail/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Amazon Lightsail Documentation
 
 With Amazon Lightsail and Amazon Lightsail for Research, everyone—including developers, academics, and researchers—can get started with Amazon Web Services (AWS).

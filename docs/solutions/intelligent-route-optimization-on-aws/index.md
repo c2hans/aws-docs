@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/intelligent-route-optimization-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Intelligent Route Optimization on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/intelligent-route-optimization-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Intelligent Route Optimization on AWS
 
 Reduce fuel costs and improve logistics operations with a route optimization tool

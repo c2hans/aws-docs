@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/vpc-lattice/index.html
 ---
 
+---
+title: 'Amazon VPC Lattice'
+canonical_url: https://docs.aws.amazon.com/vpc-lattice/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Amazon VPC Lattice
 
 Amazon VPC Lattice is a fully managed application networking service that you use to connect, secure, and monitor all of your services across multiple accounts and virtual private clouds (VPCs).

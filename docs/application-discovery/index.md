@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/application-discovery/index.html
 ---
 
+---
+title: 'AWS Application Discovery Service Documentation'
+canonical_url: https://docs.aws.amazon.com/application-discovery/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Application Discovery Service Documentation
 
 The AWS Application Discovery Service helps systems integrators quickly and reliably plan application migration projects by automatically identifying applications running in on-premises data centers, their associated dependencies, and their performance profile.

@@ -38,7 +38,7 @@ Required: No
  ** [Marker](#API_ListIntegrationResourceProperties_RequestSyntax) **   <a name="Glue-ListIntegrationResourceProperties-request-Marker"></a>
 This is the pagination token for next page, initial value is `null`.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 1024.
+Length Constraints: Minimum length of 1. Maximum length of 4096.
 Required: No
 
  ** [MaxRecords](#API_ListIntegrationResourceProperties_RequestSyntax) **   <a name="Glue-ListIntegrationResourceProperties-request-MaxRecords"></a>
@@ -84,7 +84,7 @@ Type: Array of [IntegrationResourceProperty](API_IntegrationResourceProperty.md)
  ** [Marker](#API_ListIntegrationResourceProperties_ResponseSyntax) **   <a name="Glue-ListIntegrationResourceProperties-response-Marker"></a>
 This is the pagination token for the next page.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 1024.
+Length Constraints: Minimum length of 1. Maximum length of 4096.
 
 ## Errors
 <a name="API_ListIntegrationResourceProperties_Errors"></a>

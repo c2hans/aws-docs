@@ -20,7 +20,16 @@ Use the following steps to deploy this solution on AWS.
 This AWS CloudFormation template automatically deploys the Centralized Logging with OpenSearch solution on AWS.
 
 1. Sign in to the AWS Management Console and select the button to launch the AWS CloudFormation template.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/launch-with-amazon-cognito-user-pool.html)
+
+<table>
+<thead>
+  <tr><th></th><th>Launch in AWS Management Console</th></tr>
+</thead>
+<tbody>
+  <tr><td>Launch with a new VPC</td><td> <a href="https://console.aws.amazon.com/cloudformation/home#/stacks/new?templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Fcentralized-logging-with-opensearch%2Flatest%2FCentralizedLogging.template&amp;redirectId=ImplementationGuide">https://console.aws.amazon.com/cloudformation/home#/stacks/new?templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Fcentralized-logging-with-opensearch%2Flatest%2FCentralizedLogging.template&amp;redirectId=ImplementationGuide</a> </td></tr>
+  <tr><td>Launch with an existing VPC</td><td> <a href="https://console.aws.amazon.com/cloudformation/home#/stacks/new?templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Fcentralized-logging-with-opensearch%2Flatest%2FCentralizedLoggingFromExistingVPC.template&amp;redirectId=ImplementationGuide">https://console.aws.amazon.com/cloudformation/home#/stacks/new?templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Fcentralized-logging-with-opensearch%2Flatest%2FCentralizedLoggingFromExistingVPC.template&amp;redirectId=ImplementationGuide</a> </td></tr>
+</tbody>
+</table>
 
 1. The template is launched in the default Region after you log in to the console. To launch the Centralized Logging with OpenSearch solution in a different AWS Region, use the Region selector in the console navigation bar.
 
@@ -30,9 +39,29 @@ This AWS CloudFormation template automatically deploys the Centralized Logging w
 
 1. Under **Parameters**, review the parameters for the template and modify them as necessary.
    + If you are launching the solution in a new VPC, this solution uses the following parameters:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/launch-with-amazon-cognito-user-pool.html)
+
+<table>
+<thead>
+  <tr><th>Parameter</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td>Admin User Email</td><td> {{&lt;Requires input&gt;}} </td><td>Specify the email of the Administrator. This email address will receive a temporary password to access the Centralized Logging with OpenSearch web console. You can create more users directly in the provisioned Amazon Cognito User Pool after launching the solution.</td></tr>
+</tbody>
+</table>
+
    + If you are launching the solution in an existing VPC, this solution uses the following parameters:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/launch-with-amazon-cognito-user-pool.html)
+
+<table>
+<thead>
+  <tr><th>Parameter</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td>Admin User Email</td><td> {{&lt;Requires input&gt;}} </td><td>Specify the email of the Administrator. This email address will receive a temporary password to access the Centralized Logging with OpenSearch web console. You can create more users directly in the provisioned Amazon Cognito User Pool after launching the solution.</td></tr>
+  <tr><td>VPC ID</td><td> {{&lt;Requires input&gt;}} </td><td>Specify the existing VPC ID in which you are launching the Centralized Logging with OpenSearch solution.</td></tr>
+  <tr><td>Public Subnet IDs</td><td> {{&lt;Requires input&gt;}} </td><td>Specify the two public subnets in the selected VPC. The subnets must have routes pointing to an <a href="https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html">Internet Gateway</a>.</td></tr>
+  <tr><td>Private Subnet IDs</td><td> {{&lt;Requires input&gt;}} </td><td>Specify the two private subnets in the selected VPC. The subnets must have routes pointing to a <a href="https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html">NAT Gateway</a>.</td></tr>
+</tbody>
+</table>
 
 1. Choose **Next**.
 

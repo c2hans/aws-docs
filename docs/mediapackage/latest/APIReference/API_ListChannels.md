@@ -48,12 +48,17 @@ Content-type: application/json
    "Items": [
       {
          "Arn": "string",
+         "AttachedMultiviewChannels": [ "string" ],
          "ChannelGroupName": "string",
          "ChannelName": "string",
          "CreatedAt": number,
          "Description": "string",
          "InputType": "string",
          "ModifiedAt": number,
+         "MultiviewConfiguration": {
+            "AvailableLayouts": [ "string" ],
+            "AvailableSources": [ "string" ]
+         },
          "OutputLockingMode": "string"
       }
    ],

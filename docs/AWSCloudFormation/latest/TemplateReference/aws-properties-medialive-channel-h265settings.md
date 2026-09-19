@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[ColorMetadata](#cfn-medialive-channel-h265settings-colormetadata)" : {{String}},
   "[ColorSpaceSettings](#cfn-medialive-channel-h265settings-colorspacesettings)" : {{H265ColorSpaceSettings}},
   "[Deblocking](#cfn-medialive-channel-h265settings-deblocking)" : {{String}},
-  "[FilterSettings](#cfn-medialive-channel-h265settings-filtersettings)" : {{H265FilterSettings}},
+  "[FilterSettings](#cfn-medialive-channel-h265settings-filtersettings)" : {{H264H265FilterSettings}},
   "[FixedAfd](#cfn-medialive-channel-h265settings-fixedafd)" : {{String}},
   "[FlickerAq](#cfn-medialive-channel-h265settings-flickeraq)" : {{String}},
   "[FramerateDenominator](#cfn-medialive-channel-h265settings-frameratedenominator)" : {{Integer}},
@@ -80,7 +80,7 @@ To declare this entity in your CloudFormation template, use the following syntax
     H265ColorSpaceSettings}}
   [Deblocking](#cfn-medialive-channel-h265settings-deblocking): {{String}}
   [FilterSettings](#cfn-medialive-channel-h265settings-filtersettings): {{
-    H265FilterSettings}}
+    H264H265FilterSettings}}
   [FixedAfd](#cfn-medialive-channel-h265settings-fixedafd): {{String}}
   [FlickerAq](#cfn-medialive-channel-h265settings-flickeraq): {{String}}
   [FramerateDenominator](#cfn-medialive-channel-h265settings-frameratedenominator): {{Integer}}
@@ -171,7 +171,7 @@ Enable or disable the deblocking filter for this codec. The filter reduces block
 `FilterSettings`  <a name="cfn-medialive-channel-h265settings-filtersettings"></a>
 Optional filters that you can apply to an encode.
 *Required*: No
-*Type*: [H265FilterSettings](aws-properties-medialive-channel-h265filtersettings.md)
+*Type*: [H264H265FilterSettings](aws-properties-medialive-channel-h264h265filtersettings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `FixedAfd`  <a name="cfn-medialive-channel-h265settings-fixedafd"></a>

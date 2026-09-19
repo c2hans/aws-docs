@@ -247,6 +247,8 @@ The following table shows the supported and unsupported `op` operations for `Upd
 
 The following table shows the supported and unsupported `op` operations for `UpdateStage`.
 
+The `{resourcePath}/{httpMethod}` portion of a method-setting path is the method setting key returned in the `methodSettings` map of `GetStage`. Forward slashes (`/`) in the resource path might be plain or encoded as `~1`. For example, the `GET` method of the resource `/resource/subresource` might be returned as `resource/subresource/GET`, `/resource/subresource/GET`, or `~1resource~1subresource/GET`. To call `UpdateStage`, add a single forward slash (`/`) in front of the key exactly as returned, followed by the setting: `/resource/subresource/GET/throttling/rateLimit`, `//resource/subresource/GET/throttling/rateLimit`, or `/~1resource~1subresource/GET/throttling/rateLimit`. Sending a path that does not match the stored key can create a duplicate method setting for the same resource path and method, which causes later `UpdateStage` requests to fail. To remove a duplicate, use a `remove` operation with the stored key by adding a single forward slash (`/`) in front of the key.
+
 | Path | op:add | op:replace | op:remove | op:copy |
 | --- | --- | --- | --- | --- |
 | `/accessLogSettings` | Not supported | Not supported | Supported | Not supported |

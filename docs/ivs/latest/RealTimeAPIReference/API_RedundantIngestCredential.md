@@ -14,7 +14,7 @@ An object representing a redundant ingest credential.
 ID of the participant within the stage.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 64.
-Pattern: `[a-zA-Z0-9-]*`
+Pattern: `[a-zA-Z0-9-_]*`
 Required: No
 
  ** streamKey **   <a name="ivsrealtimeeapireference-Type-RedundantIngestCredential-streamKey"></a>

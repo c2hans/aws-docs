@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/portingassistant/index.html
 ---
 
+---
+title: 'Porting Assistant for .NET Documentation'
+canonical_url: https://docs.aws.amazon.com/portingassistant/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Porting Assistant for .NET Documentation
 
 Porting Assistant for .NET is a compatibility scanner that reduces the manual effort required to port Microsoft .NET Framework applications to .NET Core. The Porting Assistant for .NET assesses the .NET application source code and identifies incompatible APIs and third-party packages. Where applicable, the Porting Assistant for .NET also provides replacement suggestions that are compatible with .NET Core.

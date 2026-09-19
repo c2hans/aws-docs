@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com//solutions/dynamic-image-transformation-for-amazon-cloudfront//index.html
 ---
 
+---
+title: 'Dynamic Image Transformation for Amazon CloudFront'
+canonical_url: https://docs.aws.amazon.com/solutions/dynamic-image-transformation-for-amazon-cloudfront/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Dynamic Image Transformation for Amazon CloudFront
 
 Transform, optimize, and deliver images in real time at a fraction of the cost

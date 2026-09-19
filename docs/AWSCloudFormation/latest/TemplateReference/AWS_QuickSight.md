@@ -12,6 +12,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::QuickSight::Agent](aws-resource-quicksight-agent.md)
 + [AWS::QuickSight::Analysis](aws-resource-quicksight-analysis.md)
 + [AWS::QuickSight::ApprovalPolicy](aws-resource-quicksight-approvalpolicy.md)
++ [AWS::QuickSight::Customization](aws-resource-quicksight-customization.md)
 + [AWS::QuickSight::CustomPermissions](aws-resource-quicksight-custompermissions.md)
 + [AWS::QuickSight::Dashboard](aws-resource-quicksight-dashboard.md)
 + [AWS::QuickSight::DataSet](aws-resource-quicksight-dataset.md)

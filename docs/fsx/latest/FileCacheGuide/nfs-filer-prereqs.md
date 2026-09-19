@@ -16,7 +16,19 @@ Before you can link your cache to an on-premises NFS data store, verify that you
 **Important**
 Use an Site-to-Site VPN connection if you want to encrypt data as it transits between your Amazon VPC and your on-premises network. For more information, see [What is AWS Site-to-Site VPN?](https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html)
 + Your on-premises firewall must allow traffic between IP addresses in your Amazon VPC subnet IP CIDR and the IP addresses of the DNS server and the on-premises NFSv3 file system. The following ports must be open for the daemons involved in sharing data via NFS:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/fsx/latest/FileCacheGuide/nfs-filer-prereqs.html)
+
+<table>
+<thead>
+  <tr><th>Port</th><th>Protocol</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td>111</td><td>TCP/UDP</td><td>Port for the <b>portmapper</b> daemon. The port number is fixed.</td></tr>
+  <tr><td>2049</td><td>TCP/UDP</td><td>Port for the <b>nfsd</b> daemon. The port number is fixed.</td></tr>
+  <tr><td>635</td><td>TCP/UDP</td><td>Port for the <b>mountd</b> daemon. The port assignment is dynamic and could be another port number. You must verify the actual port and make sure it's open.</td></tr>
+  <tr><td>4045</td><td>TCP/UDP</td><td>Port for the <b>nlockmgr</b> daemon. The port assignment is dynamic and could be another port number. You must verify the actual port and make sure it's open.</td></tr>
+  <tr><td>4046</td><td>TCP/UDP</td><td>Port for the <b>status</b> daemon. The port assignment is dynamic and could be another port number. You must verify the actual port and make sure it's open.</td></tr>
+</tbody>
+</table>
 
   You can use the following command to look up dynamic ports for your on-premises NFS servers:
 

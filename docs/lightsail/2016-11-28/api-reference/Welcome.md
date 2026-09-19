@@ -11,4 +11,4 @@ You can manage your Lightsail resources using the Lightsail console, Lightsail A
 
 This API Reference provides detailed information about the actions, data types, parameters, and errors of the Lightsail service. For more information about the supported AWS Regions, endpoints, and service quotas of the Lightsail service, see [Amazon Lightsail Endpoints and Quotas](https://docs.aws.amazon.com/general/latest/gr/lightsail.html) in the * AWS General Reference*.
 
-This document was last published on September 15, 2026.
+This document was last published on September 18, 2026.

@@ -102,7 +102,7 @@ The number of devices in the import task that are waiting in the import task que
 Type: Long
 
  ** [Positioning](#API_GetWirelessDeviceImportTask_ResponseSyntax) **   <a name="iotwireless-GetWirelessDeviceImportTask-response-Positioning"></a>
-The integration status of the Device Location feature for Sidewalk devices.
+The integration status of the Device Location feature for LoRaWAN and Sidewalk devices.
 Type: String
 Valid Values: `Enabled | Disabled`
 

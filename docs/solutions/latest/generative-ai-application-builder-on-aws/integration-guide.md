@@ -109,7 +109,19 @@ To make a tool available in the Agent Builder deployment UI, update the AWS Syst
      "isDefault": false
    }
    ```
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/integration-guide.html)
+
+<table>
+<thead>
+  <tr><th>Field</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td> <b>name</b> </td><td>Display name shown in the Agent Builder UI</td></tr>
+  <tr><td> <b>description</b> </td><td>Brief description of the tool’s functionality</td></tr>
+  <tr><td> <b>value</b> </td><td>The exact tool name as defined in the Strands tools package</td></tr>
+  <tr><td> <b>category</b> </td><td>Organizational category for grouping tools in the UI</td></tr>
+  <tr><td> <b>isDefault</b> </td><td>Whether the tool should be enabled by default for new agents</td></tr>
+</tbody>
+</table>
 
 ### Step 3: Configure environment variables
 <a name="configure-environment-variables"></a>

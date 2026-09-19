@@ -13,14 +13,14 @@ Describes text information objects containing fields that determine how text par
  ** type **   <a name="Notifications-Type-TextPartValue-type"></a>
 The type of text part. Determines the usage of all other fields and whether or not they're required.
 Type: String
-Valid Values: `LOCALIZED_TEXT | PLAIN_TEXT | URL`
+Valid Values: `LOCALIZED_TEXT | PLAIN_TEXT | URL | PORTABLE_TEXT`
 Required: Yes
 
  ** displayText **   <a name="Notifications-Type-TextPartValue-displayText"></a>
 A short single line description of the link. Must be hyper-linked with the URL itself.
 Used for text parts with the type `URL`.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 1024.
+Length Constraints: Minimum length of 1. Maximum length of 12000.
 Required: No
 
  ** textByLocale **   <a name="Notifications-Type-TextPartValue-textByLocale"></a>
@@ -33,7 +33,6 @@ Required: No
 The URL itself.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 2000.
-Pattern: `(https?)://.*`
 Required: No
 
 ## See Also

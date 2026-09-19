@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/cloud-financial-management-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Cloud Financial Management on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/cloud-financial-management-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Cloud Financial Management on AWS
 
 ## Overview

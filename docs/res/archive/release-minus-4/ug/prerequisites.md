@@ -21,7 +21,7 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-4/ug/prerequis
 
 You must have an AWS account with an administrative user:
 
-1. Open [https://portal.aws.amazon.com/billing/signup](https://portal.aws.amazon.com/billing/signup).
+1. Open [https://signin.aws.amazon.com/signup?request\_type=register](https://signin.aws.amazon.com/signup?request_type=register).
 
 1. Follow the online instructions.
 
@@ -213,7 +213,11 @@ Replace **latest** in the download URI with with the exact version number (for e
    1. On the **Create component** page, enter the following details:
       + For **Component type**, choose **Build**.
       + For **Component details** choose:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/res/archive/release-minus-4/ug/prerequisites.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
    1. On the **Create component** page, choose **Define document content**.
 
@@ -282,7 +286,11 @@ If you are setting up `http_proxy` and `https_proxy` environment variables, the 
 1. Create an Image Builder image recipe.
 
    1. On the **Create recipe** page, enter the following:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/res/archive/release-minus-4/ug/prerequisites.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
    1. Choose **Create recipe**.
 
@@ -293,7 +301,11 @@ If you are setting up `http_proxy` and `https_proxy` environment variables, the 
    1. Choose **Create infrastructure configuration**.
 
    1. On the **Create infrastructure configuration** page, enter the following:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/res/archive/release-minus-4/ug/prerequisites.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
    1. Choose **Create infrastructure configuration**.
 

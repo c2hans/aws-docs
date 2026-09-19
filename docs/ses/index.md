@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/ses/index.html
 ---
 
+---
+title: 'Amazon Simple Email Service Documentation'
+canonical_url: https://docs.aws.amazon.com/ses/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Amazon Simple Email Service Documentation
 
 Amazon Simple Email Service (Amazon SES) is a reliable, scalable, and cost-effective email service. Digital marketers and application developers can use Amazon SES to send marketing, notification, and transactional emails.

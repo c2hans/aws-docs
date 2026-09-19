@@ -24,6 +24,7 @@ The following data types are supported by Tax Settings:
 +  [ExemptionCertificate](API_taxSettings_ExemptionCertificate.md)
 +  [FranceAdditionalInfo](API_taxSettings_FranceAdditionalInfo.md)
 +  [GeorgiaAdditionalInfo](API_taxSettings_GeorgiaAdditionalInfo.md)
++  [GermanyAdditionalInfo](API_taxSettings_GermanyAdditionalInfo.md)
 +  [GreeceAdditionalInfo](API_taxSettings_GreeceAdditionalInfo.md)
 +  [IndiaAdditionalInfo](API_taxSettings_IndiaAdditionalInfo.md)
 +  [IndonesiaAdditionalInfo](API_taxSettings_IndonesiaAdditionalInfo.md)

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/snowball/index.html
 ---
 
+---
+title: 'AWS Snowball Edge Documentation'
+canonical_url: https://docs.aws.amazon.com/snowball/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # AWS Snowball Edge Documentation
 
 The AWS Snowball Edge devices help customers who need to run operations in austere, non-data center environments, and in locations where there's no consistent network connectivity. You can use these devices to locally and cost-effectively access the storage and compute power of the AWS Cloud in places where an internet connection might not be an option.

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/signin/index.html
 ---
 
+---
+title: 'AWS Sign-In Documentation'
+canonical_url: https://docs.aws.amazon.com/signin/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Sign-In Documentation
 
 AWS Sign-In helps you to sign in to Amazon Web Services (AWS), depending on what type of user you are and what AWS services you want to access.

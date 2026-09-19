@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/collaborative-unified-data-and-ai-development-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Collaborative, Unified Data and AI Development on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/collaborative-unified-data-and-ai-development-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Collaborative, Unified Data and AI Development on AWS
 
 Streamline development of data and AI applications for data engineers, analysts, scientists, and app developers

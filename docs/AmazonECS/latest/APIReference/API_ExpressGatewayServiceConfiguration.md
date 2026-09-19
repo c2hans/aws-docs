@@ -15,6 +15,16 @@ The CPU allocation for tasks in this service revision.
 Type: String
 Required: No
 
+ ** cpuArchitecture **   <a name="ECS-Type-ExpressGatewayServiceConfiguration-cpuArchitecture"></a>
+The CPU architecture that the task runs on.
+Valid values:
++  `X86_64` - The x86 64-bit architecture.
++  `ARM64` - The 64-bit ARM architecture.
+Different service revisions can report different architectures. This value isn't returned when the service uses a customer-provided task definition that doesn't specify a CPU architecture.
+Type: String
+Valid Values: `X86_64 | ARM64`
+Required: No
+
  ** createdAt **   <a name="ECS-Type-ExpressGatewayServiceConfiguration-createdAt"></a>
 The Unix timestamp for when this service revision was created.
 Type: Timestamp

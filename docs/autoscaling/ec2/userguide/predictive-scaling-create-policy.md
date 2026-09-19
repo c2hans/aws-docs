@@ -46,7 +46,18 @@ Use the following procedure to create a predictive scaling policy using predefin
    If you chose **Custom metric pair**, choose individual metrics from the drop-down lists for **Load metric** and **Scaling metric**.
 
 1. For **Target utilization**, enter the target value that Amazon EC2 Auto Scaling should maintain. Amazon EC2 Auto Scaling scales out your capacity until the average utilization is at the target utilization, or until it reaches the maximum number of instances you specified.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/autoscaling/ec2/userguide/predictive-scaling-create-policy.html)
+
+<table>
+<thead>
+  <tr><th>If your scaling metric is...</th><th>Then the target utilization represents...</th></tr>
+</thead>
+<tbody>
+  <tr><td>CPU</td><td>The percentage of CPU that each instance should ideally use.</td></tr>
+  <tr><td>Network In</td><td>The average number of bytes per minute that each instance should ideally receive.</td></tr>
+  <tr><td>Network Out</td><td>The average number of bytes per minute that each instance should ideally send out. </td></tr>
+  <tr><td>Application Load Balancer request count per target</td><td>The average number of requests per minute that each instance should ideally receive.</td></tr>
+</tbody>
+</table>
 
 1. (Optional) For **Pre-launch instances**, choose how far in advance you want your instances launched before the forecast calls for the load to increase.
 

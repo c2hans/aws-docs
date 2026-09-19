@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com//solutions/account-assessment-for-aws-organizations//index.html
 ---
 
+---
+title: 'Guidance for Account Assessment for AWS Organizations'
+canonical_url: https://docs.aws.amazon.com/solutions/account-assessment-for-aws-organizations/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Account Assessment for AWS Organizations
 
 ## Overview

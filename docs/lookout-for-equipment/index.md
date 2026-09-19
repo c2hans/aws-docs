@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/lookout-for-equipment/index.html
 ---
 
+---
+title: 'Amazon Lookout for Equipment Documentation'
+canonical_url: https://docs.aws.amazon.com/lookout-for-equipment/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Amazon Lookout for Equipment Documentation
 
 Amazon Lookout for Equipment uses industrial data from your equipment to detect potential failures so you can take action, such as performing maintenance before a breakdown, to avoid unplanned downtime.

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/appstream2/index.html
 ---
 
+---
+title: 'Amazon WorkSpaces Applications Documentation'
+canonical_url: https://docs.aws.amazon.com/appstream2/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon WorkSpaces Applications Documentation
 
 Amazon WorkSpaces Applications is a fully managed, secure application streaming service that lets you stream desktop applications to users without rewriting applications. WorkSpaces Applications provides users with instant access to the applications that they need with a responsive, fluid user experience on the device of their choice.

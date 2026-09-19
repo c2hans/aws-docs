@@ -39,7 +39,30 @@ You can configure an `AppInstance` to receive data, such as messages and channel
    ```
 
    The data types have the following scopes:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/chime-sdk/latest/dg/streaming-export.html)
+
+<table>
+<thead>
+  <tr><th><code>DataType</code></th><th>Event types generated</th><th></th></tr>
+</thead>
+<tbody>
+  <tr><td rowspan="4"> <a href="https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMessage.html">https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_ChannelMessage.html</a> </td><td><code>CREATE_CHANNEL_MESSAGE</code></td><td></td></tr>
+  <tr><td><code>REDACT_CHANNEL_MESSAGE</code></td><td></td></tr>
+  <tr><td><code>UPDATE_CHANNEL_MESSAGE</code></td><td></td></tr>
+  <tr><td><code>DELETE_CHANNEL_MESSAGE</code></td><td></td></tr>
+  <tr><td rowspan="12"> <a href="https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_Channel.html">https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_Channel.html</a> </td><td><code>CREATE_CHANNEL</code></td><td></td></tr>
+  <tr><td><code>CREATE_SUB_CHANNEL</code></td><td></td></tr>
+  <tr><td><code>UPDATE_CHANNEL</code></td><td></td></tr>
+  <tr><td><code>DELETE_CHANNEL</code></td><td></td></tr>
+  <tr><td><code>UPDATE_CHANNEL_EXPIRATION_SETTINGS</code></td><td></td></tr>
+  <tr><td><code>DELETE_SUB_CHANNEL</code></td><td></td></tr>
+  <tr><td><code>CREATE_CHANNEL_MEMBERSHIP</code></td><td></td></tr>
+  <tr><td><code>DELETE_CHANNEL_MEMBERSHIP</code></td><td></td></tr>
+  <tr><td><code>CREATE_CHANNEL_BAN</code></td><td></td></tr>
+  <tr><td><code>DELETE_CHANNEL_BAN</code></td><td></td></tr>
+  <tr><td><code>CREATE_CHANNEL_MODERATOR</code></td><td></td></tr>
+  <tr><td><code>DELETE_CHANNEL_MODERATOR</code></td><td></td></tr>
+</tbody>
+</table>
 
 1. Start reading the data from your configured Kinesis stream.
 **Note**

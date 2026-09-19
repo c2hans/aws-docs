@@ -15,7 +15,18 @@ Three tag types are available in this release:
 + ServiceNow table(s) values that end users can select as tags for provisioned AWS resources. This release now enables administrators to identify any ServiceNow tables, such as Cost center or Department, and makes values from that table selectable for end users.
 **Note**
 Generic tags (from administrators) and ServiceNow Request Item tags are not viewable by end users.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/smc/latest/ag/configure-aws-tags.html)
+
+<table>
+<thead>
+  <tr><th>Key</th><th>Value</th></tr>
+</thead>
+<tbody>
+  <tr><td>Requested Item Number</td><td>${REQUEST_NUMBER}</td></tr>
+  <tr><td>User</td><td>${USERNAME}</td></tr>
+  <tr><td>Requested for</td><td>${REQUESTED_FOR} </td></tr>
+  <tr><td>Opened by</td><td>${OPENED_BY}</td></tr>
+</tbody>
+</table>
 
 **To add generic AWS tags to Service Catalog provisioned products in ServiceNow**
 

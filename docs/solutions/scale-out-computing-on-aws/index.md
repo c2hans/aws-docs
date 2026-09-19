@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/scale-out-computing-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Scale-Out Computing on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/scale-out-computing-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Scale-Out Computing on AWS
 
 ## Overview

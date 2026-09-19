@@ -34,7 +34,11 @@ In this step, you review the migration strategies, verify that you have identifi
    + Replatform to Amazon EC2 by using AWS CloudFormation templates to build new infrastructure in the AWS Cloud
    + Replatform to Amazon Relational Database Service (Amazon RDS) by using AWS Database Migration Service (AWS DMS) or a native database technology
    + In the [Portfolio playbook for AWS large migrations](https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-portfolio-playbook/), you map each migration pattern to its migration strategy and document the results in a table like the following example.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-migration-playbook/task-one-pattern-validation.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
 ## Step 2: Validate the migration metadata and wave plan
 <a name="step-two-validate-metadata"></a>

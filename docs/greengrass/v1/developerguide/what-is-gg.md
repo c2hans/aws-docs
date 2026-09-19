@@ -815,7 +815,20 @@ Bug fixes and improvements:
 + <a name="bug-fix-v1104-snap-power-loss"></a>Fixed an issue that caused AWS IoT Greengrass Core software running in a snap on an Ubuntu device to stop responding after a sudden power loss to the device.
 + General performance improvements and bug fixes.
 To install the AWS IoT Greengrass Core software on your core device, download the package for your architecture and operating system (OS), and then follow the steps in the [Getting Started Guide](gg-gs.md).
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/what-is-gg.html)
+
+<table>
+<thead>
+  <tr><th>Architecture</th><th>Operating system</th><th>Link</th></tr>
+</thead>
+<tbody>
+  <tr><td>Armv8 (AArch64)</td><td>Linux</td><td><a href="https://d1onfpft10uf5o.cloudfront.net/greengrass-core/downloads/1.10.5/greengrass-linux-aarch64-1.10.5.tar.gz">Download</a></td></tr>
+  <tr><td>Armv8 (AArch64)</td><td>Linux (OpenWrt)</td><td><a href="https://d1onfpft10uf5o.cloudfront.net/greengrass-core/downloads/1.10.5/greengrass-openwrt-aarch64-1.10.5.tar.gz">Download</a></td></tr>
+  <tr><td>Armv7l</td><td>Linux</td><td><a href="https://d1onfpft10uf5o.cloudfront.net/greengrass-core/downloads/1.10.5/greengrass-linux-armv7l-1.10.5.tar.gz">Download</a></td></tr>
+  <tr><td>Armv7l</td><td>Linux (OpenWrt)</td><td><a href="https://d1onfpft10uf5o.cloudfront.net/greengrass-core/downloads/1.10.5/greengrass-openwrt-armv7l-1.10.5.tar.gz">Download</a></td></tr>
+  <tr><td>Armv6l</td><td>Linux</td><td><a href="https://d1onfpft10uf5o.cloudfront.net/greengrass-core/downloads/1.10.5/greengrass-linux-armv6l-1.10.5.tar.gz">Download</a></td></tr>
+  <tr><td>x86_64</td><td>Linux</td><td><a href="https://d1onfpft10uf5o.cloudfront.net/greengrass-core/downloads/1.10.5/greengrass-linux-x86-64-1.10.5.tar.gz">Download</a></td></tr>
+</tbody>
+</table>
 
 1.9.4
 New features in v1.9:
@@ -826,7 +839,20 @@ New features in v1.9:
 + <a name="what-new-v193-armv6l"></a>Support for Armv6l. AWS IoT Greengrass Core software v1.9.3 or later can be installed on Raspbian distributions on Armv6l architectures (for example, on Raspberry Pi Zero devices).
 + <a name="what-new-v193-ota-alpn"></a>OTA updates on port 443 with ALPN. Greengrass cores that use port 443 for MQTT traffic now support over-the-air (OTA) software updates. AWS IoT Greengrass uses the Application Layer Protocol Network (ALPN) TLS extension to enable these connections. For more information, see [OTA updates of AWS IoT Greengrass Core software](core-ota-update.md) and [Connect on port 443 or through a network proxy](gg-core.md#alpn-network-proxy).
 To install the AWS IoT Greengrass Core software on your core device, download the package for your architecture and operating system (OS), and then follow the steps in the [Getting Started Guide](gg-gs.md).
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/what-is-gg.html)
+
+<table>
+<thead>
+  <tr><th>Architecture</th><th>Operating system</th><th>Link</th></tr>
+</thead>
+<tbody>
+  <tr><td>Armv8 (AArch64)</td><td>Linux</td><td><a href="https://d1onfpft10uf5o.cloudfront.net/greengrass-core/downloads/1.9.4/greengrass-linux-aarch64-1.9.4.tar.gz">Download</a></td></tr>
+  <tr><td>Armv8 (AArch64)</td><td>Linux (OpenWrt)</td><td><a href="https://d1onfpft10uf5o.cloudfront.net/greengrass-core/downloads/1.9.4/greengrass-openwrt-aarch64-1.9.4.tar.gz">Download</a></td></tr>
+  <tr><td>Armv7l</td><td>Linux</td><td><a href="https://d1onfpft10uf5o.cloudfront.net/greengrass-core/downloads/1.9.4/greengrass-linux-armv7l-1.9.4.tar.gz">Download</a></td></tr>
+  <tr><td>Armv7l</td><td>Linux (OpenWrt)</td><td><a href="https://d1onfpft10uf5o.cloudfront.net/greengrass-core/downloads/1.9.4/greengrass-openwrt-armv7l-1.9.4.tar.gz">Download</a></td></tr>
+  <tr><td>Armv6l</td><td>Linux</td><td><a href="https://d1onfpft10uf5o.cloudfront.net/greengrass-core/downloads/1.9.4/greengrass-linux-armv6l-1.9.4.tar.gz">Download</a></td></tr>
+  <tr><td>x86_64</td><td>Linux</td><td><a href="https://d1onfpft10uf5o.cloudfront.net/greengrass-core/downloads/1.9.4/greengrass-linux-x86-64-1.9.4.tar.gz">Download</a></td></tr>
+</tbody>
+</table>
 
 1.8.4
 + <a name="what-new-v180"></a>New features:
@@ -838,7 +864,17 @@ To install the AWS IoT Greengrass Core software on your core device, download th
   + Fixed an issue with shadow synchronization and device certificate manager reconnection.
   + General performance improvements and bug fixes.
 To install the AWS IoT Greengrass Core software on your core device, download the package for your architecture and operating system (OS), and then follow the steps in the [Getting Started Guide](gg-gs.md).
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/what-is-gg.html)
+
+<table>
+<thead>
+  <tr><th>Architecture</th><th>Operating system</th><th>Link</th></tr>
+</thead>
+<tbody>
+  <tr><td>Armv8 (AArch64)</td><td>Linux</td><td><a href="https://d1onfpft10uf5o.cloudfront.net/greengrass-core/downloads/1.8.4/greengrass-linux-aarch64-1.8.4.tar.gz">Download</a></td></tr>
+  <tr><td>Armv7l</td><td>Linux</td><td><a href="https://d1onfpft10uf5o.cloudfront.net/greengrass-core/downloads/1.8.4/greengrass-linux-armv7l-1.8.4.tar.gz">Download</a></td></tr>
+  <tr><td>x86_64</td><td>Linux</td><td><a href="https://d1onfpft10uf5o.cloudfront.net/greengrass-core/downloads/1.8.4/greengrass-linux-x86-64-1.8.4.tar.gz">Download</a></td></tr>
+</tbody>
+</table>
 
 ------
 

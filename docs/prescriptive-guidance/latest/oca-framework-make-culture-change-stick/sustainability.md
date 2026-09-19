@@ -131,7 +131,11 @@ To ensure the long-term success of your cloud transformation, implement the adva
    + Develop a mentorship program that pairs cloud-savvy employees with employees who are still developing their skills.
 
 1. Conduct a comprehensive cultural assessment by running a post-implementation survey of cultural characteristics that are crucial to cloud transformation success. Use or modify the following survey questions and apply a Likert scale to measure the results (for example, you can use a scale of 1 to 5: strongly disagree, disagree, neutral, agree, strongly agree).
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-make-culture-change-stick/sustainability.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
 1. Establish a cloud governance framework:
    + Develop clear policies and guidelines for cloud usage, security, and cost management.

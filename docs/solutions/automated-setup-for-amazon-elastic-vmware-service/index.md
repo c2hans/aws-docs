@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/automated-setup-for-amazon-elastic-vmware-service/index.html
 ---
 
+---
+title: 'Guidance for Automated Setup for Amazon Elastic VMware Service'
+canonical_url: https://docs.aws.amazon.com/solutions/automated-setup-for-amazon-elastic-vmware-service/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Automated Setup for Amazon Elastic VMware Service
 
 ## Overview

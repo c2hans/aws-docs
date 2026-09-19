@@ -393,11 +393,11 @@ For OpenAI models, you use the Responses API — available on both the `bedrock-
 
 **GPT-5.6 example with explicit cache breakpoints**
 
-The following example shows a Responses API request to `openai.gpt-5.6-sol` using explicit cache breakpoints. The system instruction is cached and reused across subsequent requests.
+The following example targets `bedrock-runtime` and sends a Responses API request to the `global.openai.gpt-5.6-sol` system inference profile using explicit cache breakpoints. The system instruction is cached and reused across subsequent requests.
 
 ```
 {
-    "model": "openai.gpt-5.6-sol",
+    "model": "global.openai.gpt-5.6-sol",
     "prompt_cache_key": "my-app:system-prompt-v1",
     "prompt_cache_options": {
         "mode": "explicit"
@@ -432,7 +432,7 @@ The following example shows a Responses API request to `openai.gpt-5.6-sol` usin
 
 **GPT-5.5 example with automatic caching**
 
-For GPT-5.5 and earlier models, prompt caching is automatic. No breakpoints or cache keys are needed — just ensure your prompt prefix exceeds 1,024 tokens.
+The following GPT-5.5 example targets `bedrock-mantle`. For GPT-5.5 and earlier models, prompt caching is automatic. No breakpoints or cache keys are needed — just ensure your prompt prefix exceeds 1,024 tokens.
 
 ```
 {

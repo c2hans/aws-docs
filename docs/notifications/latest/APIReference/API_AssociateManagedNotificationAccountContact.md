@@ -15,6 +15,7 @@ PUT /contacts/associate-managed-notification/{{contactIdentifier}} HTTP/1.1
 Content-type: application/json
 
 {
+   "isSensitiveEventsSubscribed": {{boolean}},
    "managedNotificationConfigurationArn": "{{string}}"
 }
 ```
@@ -26,7 +27,7 @@ The request uses the following URI parameters.
 
  ** [contactIdentifier](#API_AssociateManagedNotificationAccountContact_RequestSyntax) **   <a name="Notifications-AssociateManagedNotificationAccountContact-request-uri-contactIdentifier"></a>
 A unique value of an Account Contact Type to associate with the `ManagedNotificationConfiguration`.
-Valid Values: `ACCOUNT_PRIMARY | ACCOUNT_ALTERNATE_BILLING | ACCOUNT_ALTERNATE_OPERATIONS | ACCOUNT_ALTERNATE_SECURITY`
+Valid Values: `ACCOUNT_PRIMARY | ACCOUNT_ALTERNATE_BILLING | ACCOUNT_ALTERNATE_OPERATIONS | ACCOUNT_ALTERNATE_SECURITY | ACCOUNT_PRIMARY_PHONE`
 Required: Yes
 
 ## Request Body
@@ -34,10 +35,15 @@ Required: Yes
 
 The request accepts the following data in JSON format.
 
+ ** [isSensitiveEventsSubscribed](#API_AssociateManagedNotificationAccountContact_RequestSyntax) **   <a name="Notifications-AssociateManagedNotificationAccountContact-request-isSensitiveEventsSubscribed"></a>
+Specifies whether this contact is subscribed to sensitive events. The `notifications:SubscribeSensitiveEvents` permission controls access to sensitive events. Defaults to false.
+Type: Boolean
+Required: No
+
  ** [managedNotificationConfigurationArn](#API_AssociateManagedNotificationAccountContact_RequestSyntax) **   <a name="Notifications-AssociateManagedNotificationAccountContact-request-managedNotificationConfigurationArn"></a>
 The Amazon Resource Name (ARN) of the `ManagedNotificationConfiguration` to associate with the Account Contact.
 Type: String
-Pattern: `arn:[-.a-z0-9]{1,63}:notifications::[0-9]{12}:managed-notification-configuration/category/[a-zA-Z0-9\-]{3,64}/sub-category/[a-zA-Z0-9\-]{3,64}`
+Pattern: `arn:[a-z-]{3,10}:notifications::[0-9]{12}:managed-notification-configuration/category/[a-zA-Z0-9\-]{3,64}/sub-category/[a-zA-Z0-9\-]{3,64}`
 Required: Yes
 
 ## Response Syntax

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/codepipeline/index.html
 ---
 
+---
+title: 'AWS CodePipeline Documentation'
+canonical_url: https://docs.aws.amazon.com/codepipeline/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS CodePipeline Documentation
 
 AWS CodePipeline is a continuous delivery service that enables you to model, visualize, and automate the steps required to release your software.

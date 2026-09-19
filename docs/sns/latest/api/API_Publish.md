@@ -28,7 +28,11 @@ The message you want to send.
 If you are publishing to a topic and you want to send the same message to all transport protocols, include the text of the message as a String value. If you want to send different messages for each transport protocol, set the value of the `MessageStructure` parameter to `json` and use a JSON object for the `Message` parameter. See the Examples section for the format of the JSON object.
 
 Constraints:
-+ With the exception of SMS, messages must be UTF-8 encoded strings and at most 256 KB in size (262,144 bytes, not 262,144 characters).
++ With the exception of SMS, messages must be UTF-8 encoded strings. By default, a message can be at most 256 KiB in size (262,144 bytes, not 262,144 characters).
+
+  When you publish to a topic, the maximum size is determined by the topic's `MaximumMessageSize` attribute, which supports values up to 1 MiB (1,048,576 bytes). Amazon SNS validates the combined size of the message body and message attributes against this value and returns an `InvalidParameter` error if the limit is exceeded.
+
+  For more information, see [Large message payloads](https://docs.aws.amazon.com/sns/latest/dg/large-message-payloads.html) in the *Amazon SNS Developer Guide.*
 + For SMS, each message can contain up to 140 characters. This character limit depends on the encoding schema. For example, an SMS message can contain 160 GSM characters, 140 ASCII characters, or 70 UCS-2 characters.
 
   If you publish a message that exceeds this size limit, Amazon SNS sends the message as multiple messages, each fitting within the size limit. Messages aren't truncated mid-word but are cut off at whole-word boundaries.

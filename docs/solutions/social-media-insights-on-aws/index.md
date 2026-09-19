@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/social-media-insights-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Social Media Insights on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/social-media-insights-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Social Media Insights on AWS
 
 ## Overview

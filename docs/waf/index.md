@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/waf/index.html
 ---
 
+---
+title: 'AWS WAF Documentation'
+canonical_url: https://docs.aws.amazon.com/waf/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS WAF Documentation
 
 AWS WAF is a web application firewall that lets you monitor and manage web requests that are forwarded to protected AWS resources. With AWS WAF, you can protect resources such as Amazon CloudFront distributions, Amazon API Gateway REST APIs, Application Load Balancers, and AWS AppSync GraphQL APIs. You can use AWS WAF to inspect web requests for matches to conditions that you specify, such as the IP address that the requests originate from, the value of a specific request component, or the rate at which requests are being sent. AWS WAF can manage matching requests in a variety of ways, including counting them, blocking or allowing them, or sending challenges like CAPTCHA puzzles to the client user or browser.

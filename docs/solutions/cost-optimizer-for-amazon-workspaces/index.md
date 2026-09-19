@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com//solutions/cost-optimizer-for-amazon-workspaces//index.html
 ---
 
+---
+title: 'Cost Optimizer for Amazon WorkSpaces'
+canonical_url: https://docs.aws.amazon.com/solutions/cost-optimizer-for-amazon-workspaces/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Cost Optimizer for Amazon WorkSpaces
 
 Monitor Amazon WorkSpaces usage and optimize costs

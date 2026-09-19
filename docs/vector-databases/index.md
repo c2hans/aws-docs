@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/vector-databases/index.html
 ---
 
+---
+title: 'Choosing a database for your generative AI applications'
+canonical_url: https://docs.aws.amazon.com/vector-databases/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Choosing a database for your generative AI applications
 
 This page helps you choose AWS vector databases and vector search options for your generative AI applications. The internal databases, data lakes, or unstructured data or document stores that you use contain a wealth of domain-specific data (such as financial or health records, or supply chain information). These data stores are generically called knowledge bases. For generative AI, you can encode your data as a set of elements, each expressed internally as a vector. Vector databases enable Retrieval Augmented Generation (RAG), the process for retrieving facts from knowledge bases to fortify large language models (LLMs) with up-to-date and accurate data.

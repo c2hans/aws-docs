@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
-  "[ArchiveS3Settings](#cfn-medialive-channel-archivecdnsettings-archives3settings)" : {{ArchiveS3Settings}}
+  "[ArchiveS3Settings](#cfn-medialive-channel-archivecdnsettings-archives3settings)" : {{ArchiveFrameCaptureHlsS3Settings}}
 }
 ```
 
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [ArchiveS3Settings](#cfn-medialive-channel-archivecdnsettings-archives3settings): {{
-    ArchiveS3Settings}}
+    ArchiveFrameCaptureHlsS3Settings}}
 ```
 
 ## Properties
@@ -39,5 +39,5 @@ To declare this entity in your CloudFormation template, use the following syntax
 `ArchiveS3Settings`  <a name="cfn-medialive-channel-archivecdnsettings-archives3settings"></a>
 Sets up Amazon S3 as the destination for this Archive output.
 *Required*: No
-*Type*: [ArchiveS3Settings](aws-properties-medialive-channel-archives3settings.md)
+*Type*: [ArchiveFrameCaptureHlsS3Settings](aws-properties-medialive-channel-archiveframecapturehlss3settings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

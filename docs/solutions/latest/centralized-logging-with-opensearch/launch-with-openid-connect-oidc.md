@@ -198,7 +198,18 @@ You have successfully created an authing self-built application.
 You can only have one active Centralized Logging with OpenSearch solution stack in one Region of an AWS account. If your deployment failed (for example, not meeting the requirements in [prerequisites](#prerequisites)), make sure you have deleted the failed stack before retrying the deployment.
 
 1. Sign in to the AWS Management Console and use the following buttons to launch the AWS CloudFormation template.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/launch-with-openid-connect-oidc.html)
+
+<table>
+<thead>
+  <tr><th></th><th>Launch in AWS Management Console</th></tr>
+</thead>
+<tbody>
+  <tr><td>Launch with a new VPC in AWS Regions</td><td> <a href="https://console.aws.amazon.com/cloudformation/home#/stacks/new?templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Fcentralized-logging-with-opensearch%2Flatest%2FCentralizedLoggingWithOIDC.template&amp;redirectId=ImplementationGuide">https://console.aws.amazon.com/cloudformation/home#/stacks/new?templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Fcentralized-logging-with-opensearch%2Flatest%2FCentralizedLoggingWithOIDC.template&amp;redirectId=ImplementationGuide</a> </td></tr>
+  <tr><td>Launch with an existing VPC in AWS Regions</td><td> <a href="https://console.aws.amazon.com/cloudformation/home#/stacks/new?templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Fcentralized-logging-with-opensearch%2Flatest%2FCentralizedLoggingFromExistingVPCWithOIDC.template&amp;redirectId=ImplementationGuide">https://console.aws.amazon.com/cloudformation/home#/stacks/new?templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Fcentralized-logging-with-opensearch%2Flatest%2FCentralizedLoggingFromExistingVPCWithOIDC.template&amp;redirectId=ImplementationGuide</a> </td></tr>
+  <tr><td>Launch with a new VPC in AWS China Regions</td><td> <a href="https://console.amazonaws.cn/cloudformation/home#/stacks/new?templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Fcentralized-logging-with-opensearch%2Flatest%2FCentralizedLoggingWithOIDC.template&amp;redirectId=ImplementationGuide">https://console.amazonaws.cn/cloudformation/home#/stacks/new?templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Fcentralized-logging-with-opensearch%2Flatest%2FCentralizedLoggingWithOIDC.template&amp;redirectId=ImplementationGuide</a> </td></tr>
+  <tr><td>Launch with an existing VPC in AWS China Regions</td><td> <a href="https://console.amazonaws.cn/cloudformation/home#/stacks/new?templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Fcentralized-logging-with-opensearch%2Flatest%2FCentralizedLoggingFromExistingVPCWithOIDC.template&amp;redirectId=ImplementationGuide">https://console.amazonaws.cn/cloudformation/home#/stacks/new?templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Fcentralized-logging-with-opensearch%2Flatest%2FCentralizedLoggingFromExistingVPCWithOIDC.template&amp;redirectId=ImplementationGuide</a> </td></tr>
+</tbody>
+</table>
 
 1. The template is launched in the default Region after you log in to the console. To launch the Centralized Logging with OpenSearch solution in a different AWS Region, use the Region selector in the console navigation bar.
 
@@ -208,9 +219,37 @@ You can only have one active Centralized Logging with OpenSearch solution stack 
 
 1. Under **Parameters**, review the parameters for the template and modify them as necessary.
    + If you are launching the solution in a new VPC, this solution uses the following parameters:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/launch-with-openid-connect-oidc.html)
+
+<table>
+<thead>
+  <tr><th>Parameter</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td>OidcClientId</td><td> {{&lt;Requires input&gt;}} </td><td>OpenID Connector client Id.</td></tr>
+  <tr><td>OidcProvider</td><td> {{&lt;Requires input&gt;}} </td><td>OpenID Connector provider issuer. The issuer must begin with https://</td></tr>
+  <tr><td>Domain</td><td> <i>Optional input</i> </td><td>Custom domain for Centralized Logging with OpenSearch console. Do NOT add the HTTP(S) prefix.</td></tr>
+  <tr><td>IamCertificateID</td><td> <i>Optional input</i> </td><td>The ID of the SSL certificate in IAM. The ID is composed of 21 characters of capital letters and digits. Use the list-server-certificates command to retrieve the ID.</td></tr>
+  <tr><td>AcmCertificateArn</td><td> <i>Optional input</i> </td><td>ARN for ACM certificates requested (or imported) the certificate in the US East (N. Virginia) Region (us-east-1).</td></tr>
+</tbody>
+</table>
+
    + If you are launching the solution in an existing VPC, this solution uses the following parameters:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/launch-with-openid-connect-oidc.html)
+
+<table>
+<thead>
+  <tr><th>Parameter</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td>OidcClientId</td><td> {{&lt;Requires input&gt;}} </td><td>OpenID Connector client Id.</td></tr>
+  <tr><td>OidcProvider</td><td> {{&lt;Requires input&gt;}} </td><td>OpenID Connector provider issuer. The issuer must begin with https://</td></tr>
+  <tr><td>Domain</td><td> <i>Optional input</i> </td><td>Custom domain for Centralized Logging with OpenSearch console. Do NOT add the HTTP(S) prefix.</td></tr>
+  <tr><td>IamCertificateID</td><td> <i>Optional input</i> </td><td>The ID of the SSL certificate in IAM. The ID is composed of 21 characters of capital letters and digits. Use the list-server-certificates command to retrieve the ID.</td></tr>
+  <tr><td>AcmCertificateArn</td><td> <i>Optional input</i> </td><td>ARN for ACM certificates requested (or imported) the certificate in the US East (N. Virginia) Region (us-east-1).</td></tr>
+  <tr><td>VPC ID</td><td> {{&lt;Requires input&gt;}} </td><td>Specify the existing VPC ID in which you are launching the solution.</td></tr>
+  <tr><td>Public Subnet IDs</td><td> {{&lt;Requires input&gt;}} </td><td>Specify the two public subnets in the selected VPC. The subnets must have routes pointing to an Internet Gateway.</td></tr>
+  <tr><td>Private Subnet IDs</td><td> {{&lt;Requires input&gt;}} </td><td>Specify the two private subnets in the selected VPC. The subnets must have routes pointing to an NAT Gateway.</td></tr>
+</tbody>
+</table>
 
      IMPORTANT: \* If you are deploying the solution in AWS China Regions, you must enter **Domain** and **IamCertificateID**. \* If you are deploying the solution in AWS Regions:
 

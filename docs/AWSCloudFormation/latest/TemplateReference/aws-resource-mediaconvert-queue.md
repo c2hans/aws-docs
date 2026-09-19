@@ -23,7 +23,6 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Properties" : {
       "[ConcurrentJobs](#cfn-mediaconvert-queue-concurrentjobs)" : {{Integer}},
       "[Description](#cfn-mediaconvert-queue-description)" : {{String}},
-      "[MaximumConcurrentFeeds](#cfn-mediaconvert-queue-maximumconcurrentfeeds)" : {{Integer}},
       "[Name](#cfn-mediaconvert-queue-name)" : {{String}},
       "[PricingPlan](#cfn-mediaconvert-queue-pricingplan)" : {{String}},
       "[Status](#cfn-mediaconvert-queue-status)" : {{String}},
@@ -40,7 +39,6 @@ Type: AWS::MediaConvert::Queue
 Properties:
   [ConcurrentJobs](#cfn-mediaconvert-queue-concurrentjobs): {{Integer}}
   [Description](#cfn-mediaconvert-queue-description): {{String}}
-  [MaximumConcurrentFeeds](#cfn-mediaconvert-queue-maximumconcurrentfeeds): {{Integer}}
   [Name](#cfn-mediaconvert-queue-name): {{String}}
   [PricingPlan](#cfn-mediaconvert-queue-pricingplan): {{String}}
   [Status](#cfn-mediaconvert-queue-status): {{String}}
@@ -61,12 +59,6 @@ Specify the maximum number of jobs your queue can process concurrently. For on-d
 Optional. A description of the queue that you are creating.
 *Required*: No
 *Type*: String
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
-
-`MaximumConcurrentFeeds`  <a name="cfn-mediaconvert-queue-maximumconcurrentfeeds"></a>
-Specify the maximum number of Elemental Inference feeds MediaConvert can process concurrently.
-*Required*: No
-*Type*: Integer
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Name`  <a name="cfn-mediaconvert-queue-name"></a>

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/sns/index.html
 ---
 
+---
+title: 'Amazon Simple Notification Service Documentation'
+canonical_url: https://docs.aws.amazon.com/sns/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Simple Notification Service Documentation
 
 Amazon Simple Notification Service (Amazon SNS) is a web service that enables applications, end-users, and devices to instantly send and receive notifications from the cloud.

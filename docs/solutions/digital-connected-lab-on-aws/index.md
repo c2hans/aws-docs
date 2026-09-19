@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/digital-connected-lab-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Digital Connected Lab on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/digital-connected-lab-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Digital Connected Lab on AWS
 
 ## Overview

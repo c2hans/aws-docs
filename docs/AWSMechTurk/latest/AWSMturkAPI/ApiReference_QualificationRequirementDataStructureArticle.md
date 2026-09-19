@@ -86,12 +86,24 @@ Adult content can be offensive to some people. For that reason, if your HIT is a
 1. In the HIT title, include the words "adult content."
 
 1. Specify the worker's qualifications in one of the following ways:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_QualificationRequirementDataStructureArticle.html)
+
+<table>
+<tbody>
+  <tr><td>Using the API:<ul><li> Set the <code>CreateHit</code> parameter, <code>QualificationRequirement</code>, to the qualification type, 00000000000000000060. </li><li> Set <code>comparator</code> parameter to "EqualTo."  </li><li>  Set the <code>IntegerValue</code> parameter to 1 (required). </li></ul></td></tr>
+  <tr><td></td></tr>
+</tbody>
+</table>
 
 1. Define the HIT to be private or previewed.
 
    This setting prevents anyone who does not qualify from seeing the HIT. To make the HIT private, use one of the following methods:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_QualificationRequirementDataStructureArticle.html)
+
+<table>
+<tbody>
+  <tr><td>Using the API, set the <code>ActionsGuarded</code> parameter to <code>PreviewAndAccept</code>.</td></tr>
+  <tr><td>Using the command line tools, in the HIT properties file, set the private parameter, <code>qualification.private</code>, to TRUE. </td></tr>
+</tbody>
+</table>
 
 ## The Locale Qualification
 <a name="ApiReference_QualificationRequirementDataStructureArticle-the-locale-qualification"></a>

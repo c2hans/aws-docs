@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/aws-genai-cost-optimization-kiro-power/index.html
 ---
 
+---
+title: 'Guidance for AWS GenAI Cost Optimization Kiro Power'
+canonical_url: https://docs.aws.amazon.com/solutions/aws-genai-cost-optimization-kiro-power/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for AWS GenAI Cost Optimization Kiro Power
 
 ## Overview

@@ -9,6 +9,7 @@ The following actions are supported by Amazon SageMaker Service:
 +  [AddAssociation](API_AddAssociation.md)
 +  [AddTags](API_AddTags.md)
 +  [AssociateTrialComponent](API_AssociateTrialComponent.md)
++  [AttachClusterNodeNetworkInterface](API_AttachClusterNodeNetworkInterface.md)
 +  [AttachClusterNodeVolume](API_AttachClusterNodeVolume.md)
 +  [BatchAddClusterNodes](API_BatchAddClusterNodes.md)
 +  [BatchDeleteClusterNodes](API_BatchDeleteClusterNodes.md)

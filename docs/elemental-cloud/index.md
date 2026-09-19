@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/elemental-cloud/index.html
 ---
 
+---
+title: 'AWS Elemental Cloud Documentation'
+canonical_url: https://docs.aws.amazon.com/elemental-cloud/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Elemental Cloud Documentation
 
 AWS Elemental Cloud is a Platform as a Service (PaaS) that allows you to deploy multi-screen solutions for live and on demand content.

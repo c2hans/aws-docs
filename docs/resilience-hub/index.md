@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/resilience-hub/index.html
 ---
 
+---
+title: 'AWS Resilience Hub Documentation'
+canonical_url: https://docs.aws.amazon.com/resilience-hub/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Resilience Hub Documentation
 
 AWS Resilience Hub helps you proactively prepare and protect your AWS applications from disruptions. AWS Resilience Hub provides resiliency assessment and validation to help you identify and resolve issues before releasing applications into production.

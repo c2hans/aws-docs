@@ -20,7 +20,6 @@ Required: No
 The URL to the resource's detail page. If a detail page URL is unavailable, it is the URL to an informational page that describes the resource's type.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 2000.
-Pattern: `(https?)://.*`
 Required: No
 
  ** id **   <a name="Notifications-Type-Resource-id"></a>

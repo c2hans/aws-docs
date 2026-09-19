@@ -677,7 +677,19 @@ You also must update your `config.json` file to grant root access to your Lambda
         For more information about running without containerization, see [Considerations when choosing Lambda function containerization](lambda-group-config.md#lambda-containerization-considerations).
       + Under **Additional Parameters**, for **Read access to /sys directory**, choose **Enabled**.
       +  Under **Environment variables**, add the following key-value pairs to your Lambda function. This configures AWS IoT Greengrass to use the MXNet framework.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/ml-console.html)
+
+<table>
+<thead>
+  <tr><th>Key</th><th>Value</th></tr>
+</thead>
+<tbody>
+  <tr><td>PATH</td><td>/usr/local/cuda/bin:$PATH</td></tr>
+  <tr><td>MXNET_HOME</td><td>$HOME/mxnet/</td></tr>
+  <tr><td>PYTHONPATH</td><td>$MXNET_HOME/python:$PYTHONPATH</td></tr>
+  <tr><td>CUDA_HOME</td><td>/usr/local/cuda</td></tr>
+  <tr><td>LD_LIBRARY_PATH</td><td>$LD_LIBRARY_PATH:${CUDA_HOME}/lib64</td></tr>
+</tbody>
+</table>
 
    1.  **To run in containerized mode instead:**
 **Note**
@@ -685,7 +697,19 @@ We do not recommend running in containerized mode unless your business case requ
       + Increase the **Memory limit** value. Use 500 MB for CPU, or at least 2000 MB for GPU.
       + Under **Additional Parameters**, for **Read access to /sys directory**, choose **Enabled**.
       +  Under **Environment variables**, add the following key-value pairs to your Lambda function. This configures AWS IoT Greengrass to use the MXNet framework.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/ml-console.html)
+
+<table>
+<thead>
+  <tr><th>Key</th><th>Value</th></tr>
+</thead>
+<tbody>
+  <tr><td>PATH</td><td>/usr/local/cuda/bin:$PATH</td></tr>
+  <tr><td>MXNET_HOME</td><td>$HOME/mxnet/</td></tr>
+  <tr><td>PYTHONPATH</td><td>$MXNET_HOME/python:$PYTHONPATH</td></tr>
+  <tr><td>CUDA_HOME</td><td>/usr/local/cuda</td></tr>
+  <tr><td>LD_LIBRARY_PATH</td><td>$LD_LIBRARY_PATH:${CUDA_HOME}/lib64</td></tr>
+</tbody>
+</table>
 
 1. **If running in containerized mode**, add the following local device resources to grant access to your device GPU. Follow the procedure in [Step 6: Add resources to the Greengrass group](#ml-console-add-resources).
 **Note**
@@ -695,7 +719,21 @@ We do not recommend running in containerized mode unless your business case requ
    + For **Resource type**, choose **Device**.
    + For **System group owner and file access permissions**, choose **Automatically add file system permissions of the system group that owns the resource**.
 
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/ml-console.html)
+<table>
+<thead>
+  <tr><th>Name</th><th>Device path</th></tr>
+</thead>
+<tbody>
+  <tr><td>nvhost-ctrl</td><td>/dev/nvhost-ctrl</td></tr>
+  <tr><td>nvhost-gpu</td><td>/dev/nvhost-gpu</td></tr>
+  <tr><td>nvhost-ctrl-gpu</td><td>/dev/nvhost-ctrl-gpu</td></tr>
+  <tr><td>nvhost-dbg-gpu</td><td>/dev/nvhost-dbg-gpu</td></tr>
+  <tr><td>nvhost-prof-gpu</td><td>/dev/nvhost-prof-gpu</td></tr>
+  <tr><td>nvmap</td><td>/dev/nvmap</td></tr>
+  <tr><td>nvhost-vic</td><td>/dev/nvhost-vic</td></tr>
+  <tr><td>tegra_dc_ctrl</td><td>/dev/tegra_dc_ctrl</td></tr>
+</tbody>
+</table>
 
 1. **If running in containerized mode**, add the following local volume resource to grant access to your device camera. Follow the procedure in [Step 6: Add resources to the Greengrass group](#ml-console-add-resources).
 **Note**
@@ -703,4 +741,12 @@ We do not recommend running in containerized mode unless your business case requ
    + For **Resource type**, choose **Volume**.
    + For **System group owner and file access permissions**, choose **Automatically add file system permissions of the system group that owns the resource**.
 
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/ml-console.html)
+<table>
+<thead>
+  <tr><th>Name</th><th>Source path</th><th>Destination path</th></tr>
+</thead>
+<tbody>
+  <tr><td>shm</td><td>/dev/shm</td><td>/dev/shm</td></tr>
+  <tr><td>tmp</td><td>/tmp</td><td>/tmp</td></tr>
+</tbody>
+</table>

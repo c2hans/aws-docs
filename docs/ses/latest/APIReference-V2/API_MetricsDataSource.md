@@ -14,7 +14,7 @@ An object that contains details about the data source for the metrics export.
 An object that contains a mapping between a `MetricDimensionName` and `MetricDimensionValue` to filter metrics by. Must contain a least 1 dimension but no more than 3 unique ones.
 Type: String to array of strings map
 Map Entries: Maximum number of 3 items.
-Valid Keys: `EMAIL_IDENTITY | CONFIGURATION_SET | ISP`
+Valid Keys: `EMAIL_IDENTITY | CONFIGURATION_SET | ISP | TENANT_NAME`
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Required: Yes
 

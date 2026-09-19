@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/connected-customer-journey-hub-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Connected Customer Journey Hub on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/connected-customer-journey-hub-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Connected Customer Journey Hub on AWS
 
 ## Overview

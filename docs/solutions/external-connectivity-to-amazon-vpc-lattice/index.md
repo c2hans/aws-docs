@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/external-connectivity-to-amazon-vpc-lattice/index.html
 ---
 
+---
+title: 'Guidance for External Connectivity to Amazon VPC Lattice'
+canonical_url: https://docs.aws.amazon.com/solutions/external-connectivity-to-amazon-vpc-lattice/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for External Connectivity to Amazon VPC Lattice
 
 ## Overview

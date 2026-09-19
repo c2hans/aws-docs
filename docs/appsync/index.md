@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/appsync/index.html
 ---
 
+---
+title: 'AWS AppSync Documentation'
+canonical_url: https://docs.aws.amazon.com/appsync/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS AppSync Documentation
 
 AWS AppSync is an enterprise-level, fully managed API management service that connects applications to events, data, and AI models.

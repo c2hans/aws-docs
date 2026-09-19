@@ -40,7 +40,11 @@ Compute Optimizer analyzes commercial software licenses by using the `mssql_ente
 1. Attach the required instance roles and policy for CloudWatch Application Insights. For instructions, see [Policies to enable commercial software license recommendations](https://docs.aws.amazon.com/compute-optimizer/latest/ug/security-iam.html#license-access).
 
 1. Enable CloudWatch Application Insights by using your Microsoft SQL Server database credentials. For instructions, see [Set up application for monitoring](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appinsights-setting-up.html) in the CloudWatch documentation.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/sql-server-compute-optimizer.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
 1. Use the following SQL query to configure least-privilege access for CloudWatch Application Insights.
 
@@ -52,7 +56,11 @@ Compute Optimizer analyzes commercial software licenses by using the `mssql_ente
    This enables a new service, PrometheusSqlExporterSQL.
 
 1. From the target AWS account or organization management account, opt in to Compute Optimizer. For instructions, see [Opting in your account](https://docs.aws.amazon.com/compute-optimizer/latest/ug/getting-started.html#account-opt-in).
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/sql-server-compute-optimizer.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
 1. In the [Compute Optimizer console](https://console.aws.amazon.com/compute-optimizer/), choose **Licenses** in the navigation pane.
 

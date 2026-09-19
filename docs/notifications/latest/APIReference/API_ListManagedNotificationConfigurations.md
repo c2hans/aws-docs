@@ -21,7 +21,7 @@ The request uses the following URI parameters.
 
  ** [channelIdentifier](#API_ListManagedNotificationConfigurations_RequestSyntax) **   <a name="Notifications-ListManagedNotificationConfigurations-request-uri-channelIdentifier"></a>
 The identifier or ARN of the notification channel to filter configurations by.
-Pattern: `ACCOUNT_PRIMARY|ACCOUNT_ALTERNATE_BILLING|ACCOUNT_ALTERNATE_OPERATIONS|ACCOUNT_ALTERNATE_SECURITY|arn:[a-z-]{3,10}:(chatbot|consoleapp|notifications-contacts):[a-zA-Z0-9-]*:[0-9]{12}:[a-zA-Z0-9-_.@]+/[a-zA-Z0-9/_.@:-]+`
+Pattern: `ACCOUNT_PRIMARY|ACCOUNT_PRIMARY_PHONE|ACCOUNT_ALTERNATE_BILLING|ACCOUNT_ALTERNATE_OPERATIONS|ACCOUNT_ALTERNATE_SECURITY|arn:[a-z-]{3,10}:(chatbot|consoleapp|notifications-contacts):[a-zA-Z0-9-]*:[0-9]{12}:[a-zA-Z0-9-_.@]+/[a-zA-Z0-9/_.@:-]+`
 
  ** [maxResults](#API_ListManagedNotificationConfigurations_RequestSyntax) **   <a name="Notifications-ListManagedNotificationConfigurations-request-uri-maxResults"></a>
 The maximum number of results to be returned in this call. Defaults to 20.

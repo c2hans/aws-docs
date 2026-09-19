@@ -25,7 +25,10 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Type" : "AWS::ElasticBeanstalk::ApplicationVersion",
   "Properties" : {
       "[ApplicationName](#cfn-elasticbeanstalk-applicationversion-applicationname)" : {{String}},
+      "[BuildConfiguration](#cfn-elasticbeanstalk-applicationversion-buildconfiguration)" : {{BuildConfiguration}},
       "[Description](#cfn-elasticbeanstalk-applicationversion-description)" : {{String}},
+      "[ImageConfiguration](#cfn-elasticbeanstalk-applicationversion-imageconfiguration)" : {{ImageConfiguration}},
+      "[Process](#cfn-elasticbeanstalk-applicationversion-process)" : {{Boolean}},
       "[SourceBundle](#cfn-elasticbeanstalk-applicationversion-sourcebundle)" : {{SourceBundle}}
     }
 }
@@ -38,7 +41,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 Type: AWS::ElasticBeanstalk::ApplicationVersion
 Properties:
   [ApplicationName](#cfn-elasticbeanstalk-applicationversion-applicationname): {{String}}
+  [BuildConfiguration](#cfn-elasticbeanstalk-applicationversion-buildconfiguration): {{
+    BuildConfiguration}}
   [Description](#cfn-elasticbeanstalk-applicationversion-description): {{String}}
+  [ImageConfiguration](#cfn-elasticbeanstalk-applicationversion-imageconfiguration): {{
+    ImageConfiguration}}
+  [Process](#cfn-elasticbeanstalk-applicationversion-process): {{Boolean}}
   [SourceBundle](#cfn-elasticbeanstalk-applicationversion-sourcebundle): {{
     SourceBundle}}
 ```
@@ -54,6 +62,13 @@ The name of the Elastic Beanstalk application that is associated with this appli
 *Maximum*: `100`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
+`BuildConfiguration`  <a name="cfn-elasticbeanstalk-applicationversion-buildconfiguration"></a>
+Settings for an AWS CodeBuild build.
+Don't specify `BuildConfiguration` together with `ImageConfiguration`, which configures a container image build instead.
+*Required*: No
+*Type*: [BuildConfiguration](aws-properties-elasticbeanstalk-applicationversion-buildconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
 `Description`  <a name="cfn-elasticbeanstalk-applicationversion-description"></a>
 A description of this application version.
 *Required*: No
@@ -61,10 +76,25 @@ A description of this application version.
 *Maximum*: `200`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`ImageConfiguration`  <a name="cfn-elasticbeanstalk-applicationversion-imageconfiguration"></a>
+The source of the container image for this application version. You can specify an image that you built and pushed to a container registry yourself, or settings for Elastic Beanstalk to build one from your source bundle. Specify exactly one of the `Source` and `Build` members.
+Don't specify `ImageConfiguration` together with `BuildConfiguration`, which configures an AWS CodeBuild build instead.
+*Required*: No
+*Type*: [ImageConfiguration](aws-properties-elasticbeanstalk-applicationversion-imageconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`Process`  <a name="cfn-elasticbeanstalk-applicationversion-process"></a>
+Pre-processes and validates the environment manifest (`env.yaml`) and configuration files (`*.config` files in the `.ebextensions` folder) in the source bundle. Validating configuration files can identify issues prior to deploying the application version to an environment.
+You must turn processing on for application versions that you create using AWS CodeBuild or AWS CodeCommit. For application versions built from a source bundle in Amazon S3, processing is optional.
+The `Process` option validates Elastic Beanstalk configuration files. It doesn't validate your application's configuration files, like proxy server or Docker configuration.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
 `SourceBundle`  <a name="cfn-elasticbeanstalk-applicationversion-sourcebundle"></a>
 The Amazon S3 bucket and key that identify the location of the source bundle for this version.
 The Amazon S3 bucket must be in the same region as the environment.
-*Required*: Yes
+*Required*: No
 *Type*: [SourceBundle](aws-properties-elasticbeanstalk-applicationversion-sourcebundle.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 

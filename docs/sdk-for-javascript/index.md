@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/sdk-for-javascript/index.html
 ---
 
+---
+title: 'AWS SDK for JavaScript Documentation'
+canonical_url: https://docs.aws.amazon.com/sdk-for-javascript/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS SDK for JavaScript Documentation
 
 The AWS SDK for JavaScript enables developers to build libraries and applications that use AWS services. You can use the JavaScript API in the browser and inside Node.js applications on the server.

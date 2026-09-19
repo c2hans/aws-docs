@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/simpledb/index.html
 ---
 
+---
+title: 'Amazon SimpleDB Documentation'
+canonical_url: https://docs.aws.amazon.com/simpledb/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon SimpleDB Documentation
 
 Amazon SimpleDB is a highly available, scalable, and flexible non-relational data store that enables you to store and query data items using web service requests.

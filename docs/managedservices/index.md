@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/managedservices/index.html
 ---
 
+---
+title: 'AWS Managed Services Documentation'
+canonical_url: https://docs.aws.amazon.com/managedservices/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # AWS Managed Services Documentation
 
 AWS Managed Services (AMS) helps you operate AWS more efficiently and securely. Leveraging AWS services and a growing library of automations, configurations, and run books, AMS can augment and optimize your operational capabilities in both new and existing AWS environments.

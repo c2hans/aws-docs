@@ -148,7 +148,7 @@ s3Client.putBucketEncryption(be -> be
 ```
 
 ------
-#### [ SDK for Python Boto3 ]
+#### [ SDK for Python (Boto3) ]
 
 **Example - PutBucketEncryption request setting the default encryption configuration to SSE-S3 and blocking SSE-C**
 

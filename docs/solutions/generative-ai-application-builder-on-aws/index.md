@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com//solutions/generative-ai-application-builder-on-aws//index.html
 ---
 
+---
+title: 'Generative AI Application Builder on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/generative-ai-application-builder-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Generative AI Application Builder on AWS
 
 Rapidly develop and deploy production-ready Agentic AI applications

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/integrating-the-tetrascience-tetra-data-platform-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Integrating the TetraScience Tetra Data Platform on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/integrating-the-tetrascience-tetra-data-platform-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Integrating the TetraScience Tetra Data Platform on AWS
 
 ## Overview

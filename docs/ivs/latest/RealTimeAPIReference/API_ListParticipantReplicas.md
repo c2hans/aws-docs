@@ -49,7 +49,7 @@ Required: No
 Participant ID of the publisher that has been replicated. This is assigned by IVS and returned by [CreateParticipantToken](API_CreateParticipantToken.md) or the `jti` (JWT ID) used to [create a self signed token](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/getting-started-distribute-tokens.html#getting-started-distribute-tokens-self-signed).
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 64.
-Pattern: `[a-zA-Z0-9-]*`
+Pattern: `[a-zA-Z0-9-_]*`
 Required: Yes
 
  ** [sourceStageArn](#API_ListParticipantReplicas_RequestSyntax) **   <a name="ivsrealtimeeapireference-ListParticipantReplicas-request-sourceStageArn"></a>
@@ -104,14 +104,10 @@ Type: Array of [ParticipantReplica](API_ParticipantReplica.md) objects
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** AccessDeniedException **
-
- ** exceptionMessage **
 User does not have sufficient access to perform this action.
 HTTP Status Code: 403
 
  ** ValidationException **
-
- ** exceptionMessage **
 The input fails to satisfy the constraints specified by an AWS service.
 HTTP Status Code: 400
 

@@ -48,7 +48,8 @@ Content-type: application/json
             "Isp": [ "string" ],
             "LastDeliveryEvent": [ "string" ],
             "LastEngagementEvent": [ "string" ],
-            "Subject": [ "string" ]
+            "Subject": [ "string" ],
+            "TenantName": [ "string" ]
          },
          "Include": {
             "Destination": [ "string" ],
@@ -56,7 +57,8 @@ Content-type: application/json
             "Isp": [ "string" ],
             "LastDeliveryEvent": [ "string" ],
             "LastEngagementEvent": [ "string" ],
-            "Subject": [ "string" ]
+            "Subject": [ "string" ],
+            "TenantName": [ "string" ]
          },
          "MaxResults": number,
          "StartDate": number

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/semantic-caching-for-generative-ai-applications-using-amazon-elasticache-for-valkey/index.html
 ---
 
+---
+title: 'Guidance for Semantic Caching for GenerativeAI applications using Amazon ElastiCache for Valkey'
+canonical_url: https://docs.aws.amazon.com/solutions/semantic-caching-for-generative-ai-applications-using-amazon-elasticache-for-valkey/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Semantic Caching for GenerativeAI applications using Amazon ElastiCache for Valkey
 
 ## Overview

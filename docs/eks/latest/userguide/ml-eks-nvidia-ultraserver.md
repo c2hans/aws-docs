@@ -30,7 +30,7 @@ To learn more, see the [Amazon EC2 P6e-GB200 UltraServers webpage](https://aws.a
 The following components are recommended for running workloads on EKS with the P6e-GB200 UltraServers. You can optionally use the [NVIDIA GPU operator](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/overview.html) to install the NVIDIA node components. When using the NVIDIA GPU operator with the EKS-optimized AL2023 NVIDIA AMI, you must disable the operator installation of the driver and toolkit, as these are already included in the AMI.
 
 - ** EKS-optimized accelerated AMI **
-  - Kernel 6.12
+  - Kernel 6.12 or 6.18
   - NVIDIA GPU driver
   - NVIDIA CUDA user mode driver
   - NVIDIA container toolkit

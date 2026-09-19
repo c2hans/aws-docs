@@ -99,6 +99,7 @@ Content-type: application/json
             }
          ],
          "headline": "string",
+         "markupDescription": "string",
          "paragraphSummary": "string"
       },
       "notificationType": "string",

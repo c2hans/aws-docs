@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/building-smart-home-solutions-on-aws-iot/index.html
 ---
 
+---
+title: 'Guidance for Building Smart Home Solutions on AWS IoT'
+canonical_url: https://docs.aws.amazon.com/solutions/building-smart-home-solutions-on-aws-iot/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Building Smart Home Solutions on AWS IoT
 
 Building Secure, Scalable, and Intelligent Smart Home Solutions on AWS

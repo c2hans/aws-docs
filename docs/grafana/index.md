@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/grafana/index.html
 ---
 
+---
+title: 'Amazon Managed Grafana Documentation'
+canonical_url: https://docs.aws.amazon.com/grafana/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Managed Grafana Documentation
 
 Amazon Managed Grafana is a fully managed and secure data visualization service that you can use to instantly query, correlate, and visualize operational metrics, logs, and traces from multiple data sources. Amazon Managed Grafana makes it easy to deploy, operate, and scale Grafana, a widely deployed open-source data visualization tool popular for its extensible data support.

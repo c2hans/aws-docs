@@ -43,5 +43,5 @@ You can specify the following options:
 DataSync currently only supports NFS version 3 with Amazon FSx for NetApp ONTAP locations.
 *Required*: No
 *Type*: String
-*Allowed values*: `AUTOMATIC | NFS3 | NFS4_0 | NFS4_1`
+*Allowed values*: `AUTOMATIC | NFS3 | NFS4_0 | NFS4_1 | NFS4_2`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

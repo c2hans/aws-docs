@@ -90,6 +90,7 @@ Content-type: application/json
             }
          ],
          "OriginEndpointName": "string",
+         "StreamNameOutputMode": "string",
          "UriSeparator": "string"
       }
    ],

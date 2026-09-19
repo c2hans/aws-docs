@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/odb/index.html
 ---
 
+---
+title: 'Oracle Database@AWS Documentation'
+canonical_url: https://docs.aws.amazon.com/odb/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Oracle Database@AWS Documentation
 
 Oracle Database@AWS lets you migrate your Oracle Exadata workloads, including Oracle RAC workloads, to Oracle Exadata Database Service on Dedicated Infrastructure within AWS.

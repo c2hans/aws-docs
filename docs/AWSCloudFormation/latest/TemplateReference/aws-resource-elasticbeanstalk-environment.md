@@ -143,7 +143,7 @@ If you specify `TemplateName`, then don't specify `SolutionStackName`.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tier`  <a name="cfn-elasticbeanstalk-environment-tier"></a>
-Specifies the tier to use in creating this environment. The environment tier that you choose determines whether Elastic Beanstalk provisions resources to support a web application that handles HTTP(S) requests or a web application that handles background-processing tasks.
+Specifies the tier to use in creating this environment. The environment tier that you choose determines whether Elastic Beanstalk provisions resources on Amazon EC2 instances or on an Amazon EKS cluster, and, for Amazon EC2, whether the environment serves HTTP(S) requests or processes background tasks from a queue.
 *Required*: No
 *Type*: [Tier](aws-properties-elasticbeanstalk-environment-tier.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/developing-a-data-and-ai-foundation-with-amazon-sagemaker/index.html
 ---
 
+---
+title: 'Guidance for Developing a Data & AI Foundation with Amazon SageMaker'
+canonical_url: https://docs.aws.amazon.com/solutions/developing-a-data-and-ai-foundation-with-amazon-sagemaker/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Developing a Data & AI Foundation with Amazon SageMaker
 
 Accelerate building Data, Analytics, AI, and Visualization applications on AWS using Terraform modules for next-gen Amazon SageMaker platform

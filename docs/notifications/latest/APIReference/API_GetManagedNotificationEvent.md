@@ -75,6 +75,13 @@ Content-type: application/json
          },
          "eventCount": number
       },
+      "attachments": [
+         {
+            "attachmentDownloadUrl": "string",
+            "contentType": "string",
+            "displayName": "string"
+         }
+      ],
       "endTime": "string",
       "eventStatus": "string",
       "id": "string",
@@ -87,6 +94,7 @@ Content-type: application/json
             }
          ],
          "headline": "string",
+         "markupDescription": "string",
          "paragraphSummary": "string"
       },
       "notificationType": "string",
@@ -134,7 +142,7 @@ Type: Timestamp
  ** [managedNotificationConfigurationArn](#API_GetManagedNotificationEvent_ResponseSyntax) **   <a name="Notifications-GetManagedNotificationEvent-response-managedNotificationConfigurationArn"></a>
 The ARN of the `ManagedNotificationConfiguration`.
 Type: String
-Pattern: `arn:[-.a-z0-9]{1,63}:notifications::[0-9]{12}:managed-notification-configuration/category/[a-zA-Z0-9\-]{3,64}/sub-category/[a-zA-Z0-9\-]{3,64}`
+Pattern: `arn:[a-z-]{3,10}:notifications::[0-9]{12}:managed-notification-configuration/category/[a-zA-Z0-9\-]{3,64}/sub-category/[a-zA-Z0-9\-]{3,64}`
 
 ## Errors
 <a name="API_GetManagedNotificationEvent_Errors"></a>

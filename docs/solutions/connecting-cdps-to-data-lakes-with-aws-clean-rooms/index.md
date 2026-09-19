@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/connecting-cdps-to-data-lakes-with-aws-clean-rooms/index.html
 ---
 
+---
+title: 'Guidance for Connecting CDPs to Data Lakes with AWS Clean Rooms'
+canonical_url: https://docs.aws.amazon.com/solutions/connecting-cdps-to-data-lakes-with-aws-clean-rooms/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Connecting CDPs to Data Lakes with AWS Clean Rooms
 
 ## Overview

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/implementing-near-real-time-analytics-with-spark-streaming-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Implementing Near Real-Time Analytics with Spark Streaming on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/implementing-near-real-time-analytics-with-spark-streaming-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Implementing Near Real-Time Analytics with Spark Streaming on AWS
 
 ## Overview

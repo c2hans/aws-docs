@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/secure-media-delivery-at-the-edge-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Secure Media Delivery at the Edge on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/secure-media-delivery-at-the-edge-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Secure Media Delivery at the Edge on AWS
 
 ## Overview

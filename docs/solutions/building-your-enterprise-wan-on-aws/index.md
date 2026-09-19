@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/building-your-enterprise-wan-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Building Your Enterprise WAN on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/building-your-enterprise-wan-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Building Your Enterprise WAN on AWS
 
 ## Overview

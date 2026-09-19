@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/secure-chat-user-interface-for-amazon-bedrock/index.html
 ---
 
+---
+title: 'Guidance for Secure Chat User Interface for Amazon Bedrock'
+canonical_url: https://docs.aws.amazon.com/solutions/secure-chat-user-interface-for-amazon-bedrock/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Secure Chat User Interface for Amazon Bedrock
 
 ## Overview

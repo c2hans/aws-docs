@@ -58,12 +58,46 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 1.  **Document organizational-level controls:** The following example illustrates a fully documented organization-level control applicable to workloads across all jurisdictions. The control id **OPS-001** is an internal id and is unique to your organization.
 
     **Note:** The control mapping shown in the following table is only for illustration purposes. It isn't accurate and may not be up to date with the latest AWS Documentation. Your compliance workbook might be structured differently.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/wellarchitected/latest/digital-sovereignty-lens/dsops02-bp01.html)
+
+<table>
+<thead>
+  <tr><th> </th><th> Control Id </th><th> OPS-001 </th></tr>
+</thead>
+<tbody>
+  <tr><td> 1 </td><td> Category </td><td> Operational Boundary </td></tr>
+  <tr><td> 2 </td><td> Control Objective </td><td> Restrict operations to approved jurisdictions, ensuring data processing occurs only within jurisdictional boundaries. </td></tr>
+  <tr><td> 3 </td><td> Tier </td><td> Organizational Default </td></tr>
+  <tr><td> 4 </td><td> Implementation Guidance </td><td> Implement policy-based guardrails at the organization level to limit storage and processing to within approved jurisdictions only. Exempt global services (identity, DNS, CDN, billing) that have no regional boundary. Maintain an exemption register for principals and actions that must operate cross-region. </td></tr>
+  <tr><td> 5 </td><td> Standards Mapping </td><td> CCCS Medium Cloud Control (May 2019) [AC-4, SC-7, SC-7(5)], CIS Controls v8.0 [4.2, 4.1, 12.2] NIST SP 800-53 Rev 5 [SC-7(5) SC-7 AC-4], NIST CSF v1.1 [PR.AC-5 PR.PT-3], NIST SP 800-171 Rev 2 [3.13.1 3.1.3], PCI DSS v4.0 [1.2.1,1.2.2], PCI DSS v3.2.1 [1.1, 1.1.1 , 1.2.1], FedRAMP Rev 4 [SC-7, SC-7 (5), AC-4], CIS AWS Benchmark v1.4 [5.4] </td></tr>
+  <tr><td> 6 </td><td> Implemented By </td><td> CT.MULTISERVICE.PV.1: Deny access to AWS services based on the requested AWS Region for an organizational unit </td></tr>
+  <tr><td> 7 </td><td> Services Covered </td><td> All AWS Services </td></tr>
+  <tr><td> 8 </td><td> Example Validation Criteria </td><td> Attempt resource creation in non-allowed jurisdictions, expect access denied. Query resource inventory for assets outside allowed jurisdictions, expect zero. Validate global service exemptions function correctly. Test exempted principal access in non-allowed jurisdictions, expect success. </td></tr>
+  <tr><td> 9 </td><td> Example Monitoring </td><td> Logged CloudTrail Access Denied events. Exempted principal usage frequency. </td></tr>
+  <tr><td> 10 </td><td> Example Evidences </td><td> Policy-as-Code documents. Config aggregator showing zero resources beyond approved jurisdictions. List of exempted principal and actions with justifications. AWS Region selection rationale document. Denied-request log samples. </td></tr>
+</tbody>
+</table>
 
 1.  **Document jurisdiction-specific and workload-specific controls:** Document jurisdiction-specific and workload-specific cybersecurity, data privacy, and industry-specific regulatory requirements. The following is an example of a workload-specific control. Backup requirements may not be applicable to a workload if it is stateless (for example a tax calculation microservice). The control id DRC-002 is an internal id and is unique to your organization.
 
     **Note:** The control mapping shown in the following table is only for illustration purposes. It isn't accurate and may not be up to date with the latest AWS Documentation. Your compliance workbook might be structured differently.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/wellarchitected/latest/digital-sovereignty-lens/dsops02-bp01.html)
+
+<table>
+<thead>
+  <tr><th> </th><th> Control Id </th><th> DRC-002 </th></tr>
+</thead>
+<tbody>
+  <tr><td> 1 </td><td> Category </td><td> Data Recoverability: Automated Backup &amp; Snapshots </td></tr>
+  <tr><td> 2 </td><td> Control Objective </td><td> Verify automated backups are enabled with defined retention periods for all stateful services </td></tr>
+  <tr><td> 3 </td><td> Tier </td><td> Workload-Specific </td></tr>
+  <tr><td> 4 </td><td> Implementation Guidance </td><td> Configure automated daily backups with minimum retention aligned to RPO. Define retention per data classification tier. Enable cluster-level rewind (backtracking) where supported for fast recovery without full snapshot restore. </td></tr>
+  <tr><td> 5 </td><td> Standards Mapping </td><td> NIST CP-9/CP-10, ISO A.8.13, GDPR Art.32(1)(c), DORA Art.11, SOC2 A1.2/A1.3, PCI DSS 10.5.1, CSA CCM BCR-09/BCR-11 </td></tr>
+  <tr><td> 6 </td><td> Implemented By </td><td> [CT.RDS.PR.8] Require an Amazon RDS database instance to have automatic backups configured. [CT.RDS.PR.6] Require an Amazon RDS database cluster to have backtracking configured. [CT.ELASTICACHE.PR.1] Require an Amazon ElastiCache (Redis OSS) cluster to have automatic backups activated. [CT.S3.PR.6] Require an Amazon S3 bucket to have lifecycle policies configured </td></tr>
+  <tr><td> 7 </td><td> Services Covered </td><td> RDS, Aurora, ElastiCache, S3 [Add more services as and when they are approved for use] </td></tr>
+  <tr><td> 8 </td><td> Example Validation Criteria </td><td> CT.RDS.PR.8 <a href="https://docs.aws.amazon.com/controltower/latest/controlreference/rds-rules.html#ct-rds-pr-8-description">pass, fail</a> conditions. CT.RDS.PR.6 <a href="https://docs.aws.amazon.com/controltower/latest/controlreference/rds-rules.html#ct-rds-pr-6-description">pass, fail</a> conditions. CT.ELASTICACHE.PR.1 <a href="https://docs.aws.amazon.com/controltower/latest/controlreference/elasticache-rules.html#ct-elasticache-pr-1-description">pass, fail</a> conditions. CT.S3.PR.6 <a href="https://docs.aws.amazon.com/controltower/latest/controlreference/s3-rules.html#ct-s3-pr-6-description">pass, fail</a> conditions. </td></tr>
+  <tr><td> 9 </td><td> Example Monitoring </td><td> Config rules for backup retention compliance – [SH.S3.13] S3 buckets should have lifecycle policies configured, [CONFIG.RDS.DT.1] Checks if an Amazon Aurora MySQL cluster has backtracking enabled, [SH.RDS.11] RDS instances should have automatic backups enabled – CloudTrail alerts on retention modifications. Backup job success/failure metrics. Snapshot age and count trends. </td></tr>
+  <tr><td> 10 </td><td> Example Evidences </td><td> Config compliance snapshots. Backup retention policy per service. Restore test reports. Backup job completion logs. </td></tr>
+</tbody>
+</table>
 
 1.  **Conduct gap analysis:** Discover potential gaps in your compliance posture.
    +  Conduct data protection impact assessments (DPIAs) where there is a high risk of non-compliance because of the location and sensitivity of the data involved.

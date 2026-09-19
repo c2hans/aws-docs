@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/maximum-data-availability-architecture-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Maximum Data Availability Architecture on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/maximum-data-availability-architecture-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Maximum Data Availability Architecture on AWS
 
 ## Overview

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/mediatailor/index.html
 ---
 
+---
+title: 'AWS Elemental MediaTailor Documentation'
+canonical_url: https://docs.aws.amazon.com/mediatailor/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Elemental MediaTailor Documentation
 
 AWS Elemental MediaTailor is a personalization and monetization service that allows scalable server-side ad insertion. The service enables you to serve targeted ads to viewers while maintaining broadcast quality in over-the-top (OTT) video applications. The service also enables you to track ad views for accurate ad reporting.

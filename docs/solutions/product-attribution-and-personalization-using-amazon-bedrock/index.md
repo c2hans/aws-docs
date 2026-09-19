@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com//solutions/product-attribution-and-personalization-using-amazon-bedrock//index.html
 ---
 
+---
+title: 'Guidance for Product Attribution and Personalization using Amazon Bedrock'
+canonical_url: https://docs.aws.amazon.com/solutions/product-attribution-and-personalization-using-amazon-bedrock/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Product Attribution and Personalization using Amazon Bedrock
 
 ## Overview

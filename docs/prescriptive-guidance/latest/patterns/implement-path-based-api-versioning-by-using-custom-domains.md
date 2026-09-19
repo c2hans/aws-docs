@@ -61,7 +61,11 @@ The diagram illustrates the following:
 1. The API user sends a request to Amazon API Gateway with a custom domain name.
 
 1. API Gateway dynamically routes the user’s request to an appropriate instance and stage of API Gateway, based on the path indicated in the URL of the request. The following table shows an example of how the different URL-based paths can be routed to specific stages for different instances of API Gateway.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/implement-path-based-api-versioning-by-using-custom-domains.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
 1. The destination API Gateway instance processes the request and returns the result to the user.
 

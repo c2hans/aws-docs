@@ -90,7 +90,36 @@ You can view all the materials related to a order.
 1. Expand the order you would like to view.
 
    The **Materials in Order** page appears.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/work-order-dashboard.html)
+
+<table>
+<thead>
+  <tr><th>Order Lines</th><th>Description</th><th>Data entity</th><th>Column</th></tr>
+</thead>
+<tbody>
+  <tr><td>Material</td><td>Displays the material number.</td><td>process_product</td><td>product_id</td></tr>
+  <tr><td>Material Description</td><td>Provides a description of the material.</td><td>product</td><td>description</td></tr>
+  <tr><td rowspan="2">Quantity/UoM</td><td rowspan="2">Lists the quantity of the material. If UoM is available, UoM value is displayed. For example, 2 eaches.</td><td rowspan="2">reservation</td><td>quantity</td></tr>
+  <tr><td>quantity_uom</td></tr>
+  <tr><td rowspan="3">Material Source</td><td rowspan="3">Displays if the material is in inventory or direct purchase.</td><td>site</td><td>description</td></tr>
+  <tr><td>inbound_order</td><td>tpartner_id</td></tr>
+  <tr><td>trading_partner</td><td>description</td></tr>
+  <tr><td rowspan="2">Required on Site</td><td rowspan="2">Displays the date on which the material is required on-site.</td><td>process_header</td><td>planned_start_date</td></tr>
+  <tr><td>process_product</td><td>requested_availability_date</td></tr>
+  <tr><td>Brand name</td><td>Provides a name of the brand.</td><td>product</td><td>brand_name</td></tr>
+  <tr><td>Product status</td><td>Provides the status of the product.</td><td>process_product</td><td>status</td></tr>
+  <tr><td>Product type</td><td>Provides the type of the product.</td><td>process_product</td><td>type</td></tr>
+  <tr><td>Reservation type</td><td>Provides the type of the reservation.</td><td>reservation</td><td>reservation_type</td></tr>
+  <tr><td>Process product allocation type</td><td>Displays the allocation type for the product. .</td><td>process_product</td><td>overallocation</td></tr>
+  <tr><td>Process product allocation status</td><td>Displays the allocation status for the product. .</td><td>process_product</td><td>allocation_status</td></tr>
+  <tr><td>Product flexible field 1 to 5</td><td>Custom fields that can be renamed and populated with any data.</td><td>process_product</td><td>flex_1, flex_2, flex_3, flex_4, flex_5</td></tr>
+  <tr><td>Reservation flexible field 1 to 5</td><td>Displays the reservation type of the product.</td><td>reservation</td><td>flex_1, flex_2, flex_3, flex_4, flex_5</td></tr>
+  <tr><td>Revision</td><td>Displays the material revision.</td><td>process_header</td><td>revision</td></tr>
+  <tr><td>Order type</td><td>Displays the order type.</td><td>process_header</td><td>type</td></tr>
+  <tr><td>Current Process</td><td>Displays the current supply chain process for the order material.</td><td rowspan="3">Calculated by order planning and tracking.</td><td rowspan="3">Calculated by order planning and tracking.</td></tr>
+  <tr><td>Recommendation</td><td>Displays all actionable items and is linked to a milestone.</td></tr>
+  <tr><td>Site Delivery Forecast</td><td>Displays the site delivery forecast and status.</td></tr>
+</tbody>
+</table>
 
 1. Choose the **Material** you would like to view in-detail. The **Material Summary** page appears and displays the summary of the material. You can use the same **Comments** feature mentioned in step 2 to add, update, and view comments.
 ![Order material summary - working forwards process](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/Insights_order.png)
@@ -100,7 +129,59 @@ You can view all the materials related to a order.
 ![Comments feature on the Procurement page](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/comments2.PNG)
 
    You can view the current milestone for the material and the recommendation AWS Supply Chain provides for each milestone.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/work-order-dashboard.html)
+
+<table>
+<thead>
+  <tr><th>Material</th><th>Description</th><th>Data entity</th><th>Column</th></tr>
+</thead>
+<tbody>
+  <tr><td>Material name</td><td>Displays the name of the material.</td><td>product</td><td>description</td></tr>
+  <tr><td>Material</td><td>Provides a description of the material.</td><td>process_product</td><td>product_id</td></tr>
+  <tr><td rowspan="2">Quantity/UoM</td><td rowspan="2">Lists the quantity of the material. If UoM is available, UoM value is displayed. For example, 2 eaches.</td><td>reservation</td><td>quantity</td></tr>
+  <tr><td>reservation</td><td>quantity_uom</td></tr>
+  <tr><td rowspan="2">Required on Site</td><td rowspan="2">Displays the date on which the material is required on-site.</td><td>process_header</td><td>planned_start_date</td></tr>
+  <tr><td>process_product</td><td>requested_availability_date</td></tr>
+  <tr><td rowspan="2">Vendor</td><td rowspan="2">Display the vendor from which the material is being procured.</td><td>inbound_order</td><td>tpartner_id</td></tr>
+  <tr><td>trading_partner</td><td>description</td></tr>
+  <tr><td>PO Delivery Date</td><td>Displays the purchase order delivery date.</td><td>inbound_order_line</td><td>expected_delivery_date</td></tr>
+  <tr><td>Site Delivery Forecast</td><td>Displays the site delivery forecast and status.</td><td rowspan="4">Calculated by order planning and tracking.</td><td rowspan="4"></td></tr>
+  <tr><td>Updated PO Delivery Date</td><td>Displays the updated PO delivery date.</td></tr>
+  <tr><td>Update Quantity</td><td>Displays the updated product quantity.</td></tr>
+  <tr><td>Supplier Delivery Date Confirmation</td><td>Displays the delivery date confirmation from the supplier.</td></tr>
+  <tr><td>Process product allocation type</td><td>Displays the allocation type for the product. .</td><td>process_product</td><td>allocation_type</td></tr>
+  <tr><td>Process product allocation status</td><td>Displays the allocation status for the product. .</td><td>process_product</td><td>allocation_status</td></tr>
+  <tr><td>Inventory Location</td><td>Displays the inventory location.</td><td>site</td><td>description</td></tr>
+  <tr><td>Inco Terms</td><td>Displays the incoterm code.</td><td>inbound_order_line</td><td>incoterm</td></tr>
+  <tr><td>Reservation Type</td><td>Displays the type of reservation.</td><td>reservation</td><td>reservation_type</td></tr>
+  <tr><td>Brand Name</td><td>Displays the brand name of the product.</td><td>product</td><td>brand_name</td></tr>
+  <tr><td>Product Status</td><td>Displays the product status.</td><td>process_product</td><td>status</td></tr>
+  <tr><td>Product Type</td><td>Displays the product type.</td><td>process_product</td><td>type</td></tr>
+  <tr><td>Campaign</td><td>Displays the campaign of the order. </td><td>process_header</td><td>program_group</td></tr>
+  <tr><td rowspan="2">Order</td><td rowspan="2">Display the order number. You can select the order to view your ERP or source system. </td><td>process_product</td><td>process_id</td></tr>
+  <tr><td>process_header</td><td>process_url</td></tr>
+  <tr><td rowspan="3">PR/Line Number</td><td rowspan="3">You can select the procurement or line number to view in your ERP or source system. </td><td>reservation</td><td>requisition_id</td></tr>
+  <tr><td>reservation</td><td>requisition_line_id</td></tr>
+  <tr><td>inbound_order_line</td><td>inbound_order_line_url</td></tr>
+  <tr><td rowspan="3">PO/Line Number</td><td rowspan="3">You can select the purchase order (PO) or line number to view in your ERP or source system. </td><td>reservation</td><td>order_id</td></tr>
+  <tr><td>reservation</td><td>order_line_id</td></tr>
+  <tr><td>inbound_order_line</td><td>inbound_order_line_url</td></tr>
+  <tr><td rowspan="5">STO/Line Number</td><td rowspan="5">You can select the STO or line number to view in your ERP or source system. </td><td>reservation</td><td>stock_transfer_1_order_id</td></tr>
+  <tr><td>reservation</td><td>stock_transfer_1_order_line_id</td></tr>
+  <tr><td>reservation</td><td>stock_transfer_2_order_id</td></tr>
+  <tr><td>reservation</td><td>stock_transfer_2_order_line_id</td></tr>
+  <tr><td>inbound_order_line</td><td>inbound_order_line_url</td></tr>
+  <tr><td rowspan="3">RFQ/Line Number</td><td rowspan="3">You can select the RFQ or line number to view in your ERP or source system. </td><td>reservation</td><td>rfq_id</td></tr>
+  <tr><td>reservation</td><td>rfq_line_id</td></tr>
+  <tr><td>inbound_order_line</td><td>inbound_order_line_url</td></tr>
+  <tr><td>Product Type</td><td>Displays the type of the product. </td><td>product</td><td>product_type</td></tr>
+  <tr><td>Currency UOM</td><td>Displays the currency unit of measure for the price and other economic variables of this product. . </td><td>process_product</td><td>currency_uom</td></tr>
+  <tr><td>Danger</td><td>Displays the products that are hazardous. </td><td>product</td><td>un_id</td></tr>
+  <tr><td>Hazmat Class</td><td>Displays the products that contain hazardous materials. </td><td>un_details</td><td>un_class</td></tr>
+  <tr><td>UN Class</td><td>Displays the products that are under the hazardous category. </td><td>un_details</td><td>hazmat_class</td></tr>
+  <tr><td>UN Description</td><td>Displays the description of the products that are under the hazardous category. </td><td>un_details</td><td>un_description</td></tr>
+  <tr><td>Image</td><td>Displays an image of the products that are under the hazardous category. </td><td>un_details</td><td>image_url</td></tr>
+</tbody>
+</table>
 
 1. Choose **Copy shareable link to clipboard** to share the material summary dashboard.
 

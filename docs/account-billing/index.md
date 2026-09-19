@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/account-billing/index.html
 ---
 
+---
+title: 'AWS Billing and Cost Management Documentation'
+canonical_url: https://docs.aws.amazon.com/account-billing/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # AWS Billing and Cost Management Documentation
 
 AWS Billing and Cost Management is a service that provides features that helps you pay your bills and optimize your costs. Amazon Web Services bills your account for usage, which ensures that you pay only for what you use.

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/greengrass/index.html
 ---
 
+---
+title: 'AWS IoT Greengrass Documentation'
+canonical_url: https://docs.aws.amazon.com/greengrass/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS IoT Greengrass Documentation
 
 AWS IoT Greengrass seamlessly extends AWS onto physical devices so they can act locally on the data they generate, while still using the cloud for management, analytics, and durable storage. AWS IoT Greengrass ensures your devices can respond quickly to local events and operate with intermittent connectivity. AWS IoT Greengrass minimizes the cost of transmitting data to the cloud by enabling you to author custom software and AWS Lambda functions that run on local devices.

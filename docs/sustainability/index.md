@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/sustainability/index.html
 ---
 
+---
+title: 'AWS Sustainability Documentation'
+canonical_url: https://docs.aws.amazon.com/sustainability/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Sustainability Documentation
 
 The AWS Sustainability service provides a suite of features to help you understand your environmental impact from using AWS services.

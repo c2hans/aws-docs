@@ -64,7 +64,7 @@ Required: No
 Unique identifier for the participant who triggered the event. This is assigned by IVS.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 64.
-Pattern: `[a-zA-Z0-9-]*`
+Pattern: `[a-zA-Z0-9-_]*`
 Required: No
 
  ** previousToken **   <a name="ivsrealtimeeapireference-Type-Event-previousToken"></a>
@@ -76,7 +76,7 @@ Required: No
 Unique identifier for the remote participant. For a subscribe event, this is the publisher. For a publish or join event, this is null. This is assigned by IVS.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 64.
-Pattern: `[a-zA-Z0-9-]*`
+Pattern: `[a-zA-Z0-9-_]*`
 Required: No
 
  ** replica **   <a name="ivsrealtimeeapireference-Type-Event-replica"></a>

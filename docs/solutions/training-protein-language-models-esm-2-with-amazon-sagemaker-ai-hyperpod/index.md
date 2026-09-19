@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/training-protein-language-models-esm-2-with-amazon-sagemaker-ai-hyperpod/index.html
 ---
 
+---
+title: 'Guidance for Training Protein Language Models (ESM-2) with Amazon SageMaker HyperPod'
+canonical_url: https://docs.aws.amazon.com/solutions/training-protein-language-models-esm-2-with-amazon-sagemaker-ai-hyperpod/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Training Protein Language Models (ESM-2) with Amazon SageMaker HyperPod
 
 ## Overview

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/servicecatalog/index.html
 ---
 
+---
+title: 'AWS Service Catalog Documentation'
+canonical_url: https://docs.aws.amazon.com/servicecatalog/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Service Catalog Documentation
 
 AWS Service Catalog enables IT administrators to create, manage, and distribute portfolios of approved products to end users, who can then access the products they need in a personalized portal. Typical products include servers, databases, websites, or applications that are deployed using AWS resources (for example, an Amazon EC2 instance or an Amazon RDS database). You can control which users have access to specific products to enforce compliance with organizational business standards, manage product lifecycles, and help users find and launch products with confidence.

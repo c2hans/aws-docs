@@ -15,4 +15,15 @@ The Hierarchical keyring uses the derived wrapping key to encrypt a copy of the 
 + The data key is used as the AES-GCM message
 + A 12 byte random initialization vector (IV) is used as the AES-GCM IV
 + Additional authenticated data (AAD) containing the following serialized values.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/hierarchical-keyring-details.html)
+
+<table>
+<thead>
+  <tr><th>Value</th><th>Length in bytes</th><th>Interpreted as</th></tr>
+</thead>
+<tbody>
+  <tr><td>"aws-kms-hierarchy"</td><td>17</td><td>UTF-8 encoded</td></tr>
+  <tr><td>The branch key identifier</td><td>Variable</td><td>UTF-8 encoded</td></tr>
+  <tr><td>The branch key version</td><td>16</td><td>UTF-8 encoded</td></tr>
+  <tr><td>Encryption context</td><td>Variable</td><td>UTF-8 encoded key value pairs</td></tr>
+</tbody>
+</table>

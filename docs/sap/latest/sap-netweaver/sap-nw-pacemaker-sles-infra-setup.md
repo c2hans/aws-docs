@@ -215,10 +215,26 @@ Using either the Amazon VPC console, or an AWS CLI command add a route to the ta
 1. Choose **Actions** → **Edit routes**.
 
 1. Choose **Add route** and configure the ASCS route:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-nw-pacemaker-sles-infra-setup.html)
+
+<table>
+<thead>
+  <tr><th>Destination</th><th>Target</th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>&lt;ascs_overlayip&gt;/32</code> </td><td> <code>i-xxxxinstidforhost1</code> </td></tr>
+</tbody>
+</table>
 
 1. Choose **Add route** and configure the ERS route:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-nw-pacemaker-sles-infra-setup.html)
+
+<table>
+<thead>
+  <tr><th>Destination</th><th>Target</th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>&lt;ers_overlayip&gt;/32</code> </td><td> <code>i-xxxxinstidforhost2</code> </td></tr>
+</tbody>
+</table>
 
 1. Choose **Save changes**.
 

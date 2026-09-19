@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/datasync/index.html
 ---
 
+---
+title: 'AWS DataSync Documentation'
+canonical_url: https://docs.aws.amazon.com/datasync/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS DataSync Documentation
 
 AWS DataSync is an online data movement and discovery service that simplifies data migration and helps you quickly, easily, and securely transfer your file or object data to, from, and between AWS storage services.

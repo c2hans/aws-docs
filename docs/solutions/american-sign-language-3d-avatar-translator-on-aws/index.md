@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/american-sign-language-3d-avatar-translator-on-aws/index.html
 ---
 
+---
+title: 'Guidance for American Sign Language (ASL) 3D Avatar Translator on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/american-sign-language-3d-avatar-translator-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for American Sign Language (ASL) 3D Avatar Translator on AWS
 
 Translate multiple languages into American Sign Language (ASL) with an avatar-based translator

@@ -50,6 +50,11 @@ Required: No
 Type: [GeorgiaAdditionalInfo](API_taxSettings_GeorgiaAdditionalInfo.md) object
 Required: No
 
+ ** germanyAdditionalInfo **   <a name="awscostmanagement-Type-taxSettings_AdditionalInfoResponse-germanyAdditionalInfo"></a>
+Additional tax information associated with your Tax Registration Number (TRN) in Germany.
+Type: [GermanyAdditionalInfo](API_taxSettings_GermanyAdditionalInfo.md) object
+Required: No
+
  ** greeceAdditionalInfo **   <a name="awscostmanagement-Type-taxSettings_AdditionalInfoResponse-greeceAdditionalInfo"></a>
 Additional tax information to specify for a TRN in Greece.
 Type: [GreeceAdditionalInfo](API_taxSettings_GreeceAdditionalInfo.md) object

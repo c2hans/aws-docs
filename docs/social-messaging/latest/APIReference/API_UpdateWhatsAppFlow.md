@@ -16,9 +16,11 @@ Content-type: application/json
 
 {
    "categories": [ "{{string}}" ],
+   "endpointUri": "{{string}}",
    "flowId": "{{string}}",
    "flowName": "{{string}}",
-   "id": "{{string}}"
+   "id": "{{string}}",
+   "metaAppId": "{{string}}"
 }
 ```
 
@@ -37,6 +39,12 @@ The updated categories for the Flow.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 9 items.
 Valid Values: `SIGN_UP | SIGN_IN | APPOINTMENT_BOOKING | LEAD_GENERATION | SHOPPING | CONTACT_US | CUSTOMER_SUPPORT | SURVEY | OTHER`
+Required: No
+
+ ** [endpointUri](#API_UpdateWhatsAppFlow_RequestSyntax) **   <a name="Social-UpdateWhatsAppFlow-request-endpointUri"></a>
+The updated HTTPS endpoint for a data exchange Flow.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
 Required: No
 
  ** [flowId](#API_UpdateWhatsAppFlow_RequestSyntax) **   <a name="Social-UpdateWhatsAppFlow-request-flowId"></a>
@@ -58,6 +66,12 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 115.
 Pattern: `.*(^waba-.*$)|(^arn:.*:waba/[0-9a-zA-Z]+$).*`
 Required: Yes
+
+ ** [metaAppId](#API_UpdateWhatsAppFlow_RequestSyntax) **   <a name="Social-UpdateWhatsAppFlow-request-metaAppId"></a>
+The ID of the Meta application to attach to the Flow.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 100.
+Required: No
 
 ## Response Syntax
 <a name="API_UpdateWhatsAppFlow_ResponseSyntax"></a>

@@ -23,7 +23,16 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/upgra
 1.  Select the Data Transfer Hub main stack, and choose** Update**.
 
 1.  Choose **Replace current template**, and enter the specific Amazon S3 URL according to your initial deployment type. Refer to [Deployment Overview](deploy-the-solution.md#deployment-overview) for more details.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/data-transfer-hub/upgrade-data-transfer-hub.html)
+
+<table>
+<thead>
+  <tr><th> Type </th><th> Link </th></tr>
+</thead>
+<tbody>
+  <tr><td> Launch in AWS Regions </td><td> <code>https://s3.amazonaws.com/solutions-reference/data-transfer-hub/latest/DataTransferHub-cognito.template</code> </td></tr>
+  <tr><td> Launch in AWS China Regions </td><td> <code>https://s3.amazonaws.com/solutions-reference/data-transfer-hub/latest/DataTransferHub-openid.template</code> </td></tr>
+</tbody>
+</table>
 
 1.  Under **Parameters**, review the parameters for the template and modify them as necessary.
 

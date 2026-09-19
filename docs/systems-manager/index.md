@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/systems-manager/index.html
 ---
 
+---
+title: 'AWS Systems Manager Documentation'
+canonical_url: https://docs.aws.amazon.com/systems-manager/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # AWS Systems Manager Documentation
 
 Use AWS Systems Manager to organize, monitor, and automate management tasks on your AWS resources.

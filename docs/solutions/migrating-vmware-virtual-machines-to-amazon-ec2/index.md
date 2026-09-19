@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/migrating-vmware-virtual-machines-to-amazon-ec2/index.html
 ---
 
+---
+title: 'Guidance for Migrating VMware Virtual Machines to Amazon EC2'
+canonical_url: https://docs.aws.amazon.com/solutions/migrating-vmware-virtual-machines-to-amazon-ec2/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Migrating VMware Virtual Machines to Amazon EC2
 
 Simplify VMware migration through an automated migration process for your virtual machines

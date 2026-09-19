@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/similarity-search-based-retrieval-augmented-generation-rag-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Similarity Search-Based Retrieval Augmented Generation (RAG) on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/similarity-search-based-retrieval-augmented-generation-rag-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Similarity Search-Based Retrieval Augmented Generation (RAG) on AWS
 
 ## Overview

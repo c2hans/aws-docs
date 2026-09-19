@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/deep-learning-containers/index.html
 ---
 
+---
+title: 'AWS Deep Learning Containers Documentation Has Moved'
+canonical_url: https://docs.aws.amazon.com/deep-learning-containers/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Deep Learning Containers Documentation Has Moved
 
 The AWS Deep Learning Containers Developer Guide has moved to GitHub.

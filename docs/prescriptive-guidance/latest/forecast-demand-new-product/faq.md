@@ -28,7 +28,11 @@ Consider acquiring the following data:
 + Sales data for all similar products, from product launch to discontinuation.
 + Metadata that describes the product features and attributes. Examples of these attributes for CE products might be Bluetooth capability, wireless features, USB type, and color.
 + Relevant time-series data that is related to the sales data, such as marketing data, holiday data, review data, and rating data.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/forecast-demand-new-product/faq.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
 ## When should I start generating a demand forecast for a new product?
 <a name="q4"></a>

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com//solutions/cloud-migration-factory-on-aws//index.html
 ---
 
+---
+title: 'Cloud Migration Factory on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/cloud-migration-factory-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Cloud Migration Factory on AWS
 
 Coordinate and automate large-scale wave planning and migrations to the AWS Cloud

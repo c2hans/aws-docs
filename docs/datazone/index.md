@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/datazone/index.html
 ---
 
+---
+title: 'Amazon DataZone Documentation'
+canonical_url: https://docs.aws.amazon.com/datazone/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Amazon DataZone Documentation
 
 Amazon DataZone is a data management service that makes it faster and easier for you to catalog, discover, share, and govern data stored across AWS, on-premises, and third-party sources.

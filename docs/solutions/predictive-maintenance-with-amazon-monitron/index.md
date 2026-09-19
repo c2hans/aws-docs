@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/predictive-maintenance-with-amazon-monitron/index.html
 ---
 
+---
+title: 'Guidance for Predictive Maintenance with Amazon Monitron'
+canonical_url: https://docs.aws.amazon.com/solutions/predictive-maintenance-with-amazon-monitron/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Predictive Maintenance with Amazon Monitron
 
 ## Overview

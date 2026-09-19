@@ -92,12 +92,20 @@ Now that you have defined the pattern or task, you determine the metadata requir
 1. **Analyze the target object –**Working backwards from the target object, manually create the object and identify the metadata needed to support it. Capture the metadata as demonstrated in the following table.
 
    For example, when you create an EC2 instance, you must choose an instance type, storage type, storage size, subnet, security group, and tags. The following table includes examples of metadata attributes that you might need if your target object is an EC2 instance.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-portfolio-playbook/metadata.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
 1. **Analyze the tools –** Use the tool to create a target object and check for differences. Capture the tool-specific metadata as demonstrated in the following table, and remove the attributes from the previous table if it is not supported by the migration tool. For example, you cannot customize the OS type and storage size for MGN because the rehost migration tool is like-for-like. Therefore, you would remove target OS and target disk size if these attributes were included in the previous table. In the previous example table, all attributes are supported by the tool, so no action is required.
 
    The following table includes examples of metadata that you might need for the tools.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-portfolio-playbook/metadata.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
 1. **Analyze the source object** – Determine the required metadata for the source object by assessing the actions as follows:
    + To migrate servers, you need to know the source server name and fully qualified domain name (FQDN) in order to connect to the server.
@@ -106,15 +114,27 @@ Now that you have defined the pattern or task, you determine the metadata requir
    + To manage waves, you need to know the wave ID and the start and end times of the wave.
 
    The following table includes examples of metadata that you might need for the source object.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-portfolio-playbook/metadata.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
 1. **Consider other attributes –** In addition to the primary action, consider other actions and attributes related to the target object or application. For the example pattern, *Pattern 1: Rehost to Amazon EC2 using MGN or Cloud Migration Factory*, the action is rehost, and the target object is Amazon EC2. Other related actions for this target object might include backing up to Amazon EC2, monitoring the EC2 instance after the migration, and using tags to manage costs associated with the EC2 instance. You might also want to consider other application attributes that help you manage the migration, such as the application owner, who you might need to contact for questions or cutover purposes.
 
    The following table includes examples of additional metadata that are commonly used. This table includes tags for your target EC2 instance. For more information about tags and how to use them, see [Tag your Amazon EC2 resources](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html) in the Amazon EC2 documentation.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-portfolio-playbook/metadata.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
 1. **Create a table** – Combine all of the metadata identified in the previous steps into a single table.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-portfolio-playbook/metadata.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
 1. **Repeat** – Repeat this process until you have documented the required metadata for each pattern.
 

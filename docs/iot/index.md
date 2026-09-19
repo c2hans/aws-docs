@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/iot/index.html
 ---
 
+---
+title: 'AWS IoT Core Documentation'
+canonical_url: https://docs.aws.amazon.com/iot/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS IoT Core Documentation
 
 AWS IoT Core provides secure, bi-directional communication for Internet-connected devices (such as sensors, actuators, embedded devices, wireless devices, and smart appliances) to connect to the AWS Cloud over MQTT, HTTPS, and LoRaWAN.

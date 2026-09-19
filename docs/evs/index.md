@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/evs/index.html
 ---
 
+---
+title: 'Amazon Elastic VMware Service Documentation'
+canonical_url: https://docs.aws.amazon.com/evs/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Amazon Elastic VMware Service Documentation
 
 Amazon Elastic VMware Service (Amazon EVS) allows you to deploy and run a VMware Cloud Foundation (VCF) environment directly on EC2 bare metal instances within your Amazon VPC.

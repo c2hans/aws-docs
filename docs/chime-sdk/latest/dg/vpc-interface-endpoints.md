@@ -22,7 +22,20 @@ Interface endpoints are powered by [AWS PrivateLink](https://aws.amazon.com/priv
 + Interface endpoints support both IPv4 and IPv6 (dualstack) traffic.
 + Interface endpoints support VPC endpoint policies. You can use endpoint policies to control which principals can use the endpoint and which API actions they can perform.
 + FIPS endpoints through PrivateLink are available in the following Regions:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/chime-sdk/latest/dg/vpc-interface-endpoints.html)
+
+<table>
+<thead>
+  <tr><th>Region</th><th>Voice</th><th>Meetings</th><th>Messaging</th><th>Identity</th><th>Media Pipelines</th></tr>
+</thead>
+<tbody>
+  <tr><td>US East (N. Virginia)</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+  <tr><td>US West (Oregon)</td><td>Yes</td><td>Yes</td><td></td><td></td><td>Yes</td></tr>
+  <tr><td>Canada (Central)</td><td>Yes</td><td>Yes</td><td></td><td></td><td>Yes</td></tr>
+  <tr><td>AWS GovCloud (US-East)</td><td></td><td>Yes</td><td></td><td></td><td></td></tr>
+  <tr><td>AWS GovCloud (US-West)</td><td></td><td>Yes</td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+
 + In AWS GovCloud (US) Regions, interface endpoints use FIPS by default, and IAM policies use the `aws-us-gov` partition.
 
 ## Creating an interface endpoint

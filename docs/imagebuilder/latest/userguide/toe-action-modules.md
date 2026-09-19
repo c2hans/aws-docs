@@ -1565,7 +1565,7 @@ The action module returns an error when the following occurs:
     action: ListFiles
     inputs:
       - path: /Sample/MyFolder/
-        fileNamePattern: *log
+        fileNamePattern: '*log'
 ```
 
 **Input example: list files that end with "log" (Windows)**
@@ -1575,7 +1575,7 @@ The action module returns an error when the following occurs:
     action: ListFiles
     inputs:
       - path: C:\Sample\MyFolder\
-        fileNamePattern: *log
+        fileNamePattern: '*log'
 ```
 
 **Input example: list files recursively**

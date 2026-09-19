@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/amazon-mq/index.html
 ---
 
+---
+title: 'Amazon MQ Documentation'
+canonical_url: https://docs.aws.amazon.com/amazon-mq/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon MQ Documentation
 
 Amazon MQ is a managed message broker service that makes it easy to set up and operate message brokers in the cloud. Amazon MQ provides interoperability with your existing applications and services. Amazon MQ works with your existing applications and services without the need to manage, operate, or maintain your own messaging system.

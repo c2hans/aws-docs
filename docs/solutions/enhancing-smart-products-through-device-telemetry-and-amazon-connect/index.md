@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/enhancing-smart-products-through-device-telemetry-and-amazon-connect/index.html
 ---
 
+---
+title: 'Guidance on Enhancing Smart Products through Device Telemetry and Amazon Connect Customer Customer'
+canonical_url: https://docs.aws.amazon.com/solutions/enhancing-smart-products-through-device-telemetry-and-amazon-connect/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance on Enhancing Smart Products through Device Telemetry and Amazon Connect Customer Customer
 
 ## Overview

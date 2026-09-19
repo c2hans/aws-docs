@@ -133,7 +133,16 @@ As a collaboration creator, after you have created a collaboration, you can mana
 1. Choose the collaboration that you created.
 
 1. Choose one of the following:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/clean-rooms/latest/userguide/edit-collaboration.html)
+
+<table>
+<thead>
+  <tr><th>If you are...</th><th>Then ...</th></tr>
+</thead>
+<tbody>
+  <tr><td>The collaboration creator and a member of the collaboration</td><td>Choose the <b>Details</b> tab.</td></tr>
+  <tr><td>The collaboration creator but not a member of the collaboration</td><td>Scroll down the page to the <b>Tags</b> section.</td></tr>
+</tbody>
+</table>
 
 1. For **Collaboration details**, choose **Manage tags**.
 

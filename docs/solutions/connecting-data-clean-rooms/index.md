@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/connecting-data-clean-rooms/index.html
 ---
 
+---
+title: 'Guidance for Connecting Data to AWS Clean Rooms'
+canonical_url: https://docs.aws.amazon.com/solutions/connecting-data-clean-rooms/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Connecting Data to AWS Clean Rooms
 
 ## Overview

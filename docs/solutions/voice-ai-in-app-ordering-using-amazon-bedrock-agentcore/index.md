@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com//solutions/voice-ai-in-app-ordering-using-amazon-bedrock-agentcore//index.html
 ---
 
+---
+title: 'Guidance for Voice AI In-App Ordering using Amazon Bedrock AgentCore'
+canonical_url: https://docs.aws.amazon.com/solutions/voice-ai-in-app-ordering-using-amazon-bedrock-agentcore/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Voice AI In-App Ordering using Amazon Bedrock AgentCore
 
 ## Overview

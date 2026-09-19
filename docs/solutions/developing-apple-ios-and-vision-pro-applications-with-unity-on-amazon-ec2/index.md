@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/developing-apple-ios-and-vision-pro-applications-with-unity-on-amazon-ec2/index.html
 ---
 
+---
+title: 'Guidance for Developing Apple iOS and Vision Pro Applications with Unity on Amazon EC2'
+canonical_url: https://docs.aws.amazon.com/solutions/developing-apple-ios-and-vision-pro-applications-with-unity-on-amazon-ec2/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Developing Apple iOS and Vision Pro Applications with Unity on Amazon EC2
 
 ## Overview

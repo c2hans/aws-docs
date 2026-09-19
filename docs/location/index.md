@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/location/index.html
 ---
 
+---
+title: 'Amazon Location Service Documentation'
+canonical_url: https://docs.aws.amazon.com/location/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Location Service Documentation
 
 Use Amazon Location Service to easily and securely add maps, places, routes, geofences, and trackers, to your applications. With Amazon Location Service, you safeguard customer data, reduce cost, and easily integrate with other AWS services.

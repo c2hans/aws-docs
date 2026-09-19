@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/improved-single-page-application-performance-using-amazon-cloudfront/index.html
 ---
 
+---
+title: 'Guidance for Improved Single-Page Application Performance Using Amazon CloudFront'
+canonical_url: https://docs.aws.amazon.com/solutions/improved-single-page-application-performance-using-amazon-cloudfront/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Improved Single-Page Application Performance Using Amazon CloudFront
 
 ## Overview

@@ -23,8 +23,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "[NielsenCbetSettings](#cfn-medialive-channel-nielsenwatermarkssettings-nielsencbetsettings)" : {{NielsenCBET}},
   "[NielsenDistributionType](#cfn-medialive-channel-nielsenwatermarkssettings-nielsendistributiontype)" : {{String}},
-  "[NielsenNaesIiNwSettings](#cfn-medialive-channel-nielsenwatermarkssettings-nielsennaesiinwsettings)" : {{NielsenNaesIiNw}},
-  "[NielsenNwOnlySettings](#cfn-medialive-channel-nielsenwatermarkssettings-nielsennwonlysettings)" : {{NielsenNwOnly}}
+  "[NielsenNaesIiNwSettings](#cfn-medialive-channel-nielsenwatermarkssettings-nielsennaesiinwsettings)" : {{NielsenNaesIiNwOnlySettings}},
+  "[NielsenNwOnlySettings](#cfn-medialive-channel-nielsenwatermarkssettings-nielsennwonlysettings)" : {{NielsenNaesIiNwOnlySettings}}
 }
 ```
 
@@ -36,9 +36,9 @@ To declare this entity in your CloudFormation template, use the following syntax
     NielsenCBET}}
   [NielsenDistributionType](#cfn-medialive-channel-nielsenwatermarkssettings-nielsendistributiontype): {{String}}
   [NielsenNaesIiNwSettings](#cfn-medialive-channel-nielsenwatermarkssettings-nielsennaesiinwsettings): {{
-    NielsenNaesIiNw}}
+    NielsenNaesIiNwOnlySettings}}
   [NielsenNwOnlySettings](#cfn-medialive-channel-nielsenwatermarkssettings-nielsennwonlysettings): {{
-    NielsenNwOnly}}
+    NielsenNaesIiNwOnlySettings}}
 ```
 
 ## Properties
@@ -59,11 +59,11 @@ Choose the distribution types that you want to assign to the watermarks: - PROGR
 `NielsenNaesIiNwSettings`  <a name="cfn-medialive-channel-nielsenwatermarkssettings-nielsennaesiinwsettings"></a>
 Complete these fields only if you want to insert watermarks of type Nielsen NAES II (N2) and Nielsen NAES VI (NW).
 *Required*: No
-*Type*: [NielsenNaesIiNw](aws-properties-medialive-channel-nielsennaesiinw.md)
+*Type*: [NielsenNaesIiNwOnlySettings](aws-properties-medialive-channel-nielsennaesiinwonlysettings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `NielsenNwOnlySettings`  <a name="cfn-medialive-channel-nielsenwatermarkssettings-nielsennwonlysettings"></a>
 Property description not available.
 *Required*: No
-*Type*: [NielsenNwOnly](aws-properties-medialive-channel-nielsennwonly.md)
+*Type*: [NielsenNaesIiNwOnlySettings](aws-properties-medialive-channel-nielsennaesiinwonlysettings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

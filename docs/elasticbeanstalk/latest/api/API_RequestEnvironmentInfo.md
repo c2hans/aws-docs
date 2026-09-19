@@ -11,6 +11,8 @@ Initiates a request to compile the specified type of information of the deployed
 
  Setting the `InfoType` to `bundle` compresses the application server log files for every Amazon EC2 instance into a `.zip` file. Legacy and .NET containers do not support bundle logs.
 
+ Setting the `InfoType` to `analyze` collects recent events, instance health, and logs from your environment and sends them to Amazon Bedrock in your account to generate diagnostic insights and recommended next steps.
+
  Use [RetrieveEnvironmentInfo](API_RetrieveEnvironmentInfo.md) to obtain the set of logs.
 
 Related Topics
@@ -39,7 +41,7 @@ Required: No
  ** InfoType **
 The type of information to request.
 Type: String
-Valid Values: `tail | bundle`
+Valid Values: `tail | bundle | analyze`
 Required: Yes
 
 ## Errors

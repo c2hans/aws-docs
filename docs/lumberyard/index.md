@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/lumberyard/index.html
 ---
 
+---
+title: 'Amazon Lumberyard (No longer offered)'
+canonical_url: https://docs.aws.amazon.com/lumberyard/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Lumberyard (No longer offered)
 
 Amazon Lumberyard is no longer offered. Customers should instead use Open 3D Engine (O3DE), the official successor to Lumberyard. Open 3D Engine is a cross-platform, open-source game engine developed by a community (including Amazon and others), available under the Apache 2.0 license.

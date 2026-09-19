@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/transform/index.html
 ---
 
+---
+title: 'AWS Transform Documentation'
+canonical_url: https://docs.aws.amazon.com/transform/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # AWS Transform Documentation
 
 Accelerate and simplify the transformation of infrastructure, applications, and code

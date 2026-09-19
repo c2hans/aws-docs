@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/dynamic-pricing-for-airlines-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Dynamic Pricing for Airlines on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/dynamic-pricing-for-airlines-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Dynamic Pricing for Airlines on AWS
 
 Generate near real-time pricing offers for individual or packaged airline content

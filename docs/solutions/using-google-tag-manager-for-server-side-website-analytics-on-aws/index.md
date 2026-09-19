@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/using-google-tag-manager-for-server-side-website-analytics-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Using Google Tag Manager for Server-Side Website Analytics on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/using-google-tag-manager-for-server-side-website-analytics-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Using Google Tag Manager for Server-Side Website Analytics on AWS
 
 Enhance real-time data analytics to get better insights on website interactions

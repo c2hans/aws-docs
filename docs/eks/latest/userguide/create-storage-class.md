@@ -180,7 +180,17 @@ Existing PVCs can be migrated in place by creating a VAC and setting `spec.volum
 1. Define the volume settings in a VAC
 
    VMK annotations map to VAC parameters as follows:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/eks/latest/userguide/create-storage-class.html)
+
+<table>
+<thead>
+  <tr><th>Existing VMK annotation</th><th>VAC parameter</th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>ebs.csi.eks.amazonaws.com/volumeType</code> </td><td>type</td></tr>
+  <tr><td> <code>ebs.csi.eks.amazonaws.com/iops</code> </td><td>iops</td></tr>
+  <tr><td> <code>ebs.csi.eks.amazonaws.com/throughput</code> </td><td>throughput</td></tr>
+</tbody>
+</table>
 
    Use `type`, not `volumeType`, in the VAC. Values must be strings, and a VAC only needs the parameters relevant to the desired EBS configuration. Example:
 

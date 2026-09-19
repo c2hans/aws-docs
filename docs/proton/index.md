@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/proton/index.html
 ---
 
+---
+title: 'AWS Proton Documentation'
+canonical_url: https://docs.aws.amazon.com/proton/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Proton Documentation
 
 AWS Proton creates and manages standardized infrastructure and deployment tooling for developers and their serverless and container-based applications.

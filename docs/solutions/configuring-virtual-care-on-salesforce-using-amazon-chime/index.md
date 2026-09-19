@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/configuring-virtual-care-on-salesforce-using-amazon-chime/index.html
 ---
 
+---
+title: 'Guidance for Configuring Virtual Care on Salesforce Using Amazon Chime'
+canonical_url: https://docs.aws.amazon.com/solutions/configuring-virtual-care-on-salesforce-using-amazon-chime/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Configuring Virtual Care on Salesforce Using Amazon Chime
 
 ## Overview

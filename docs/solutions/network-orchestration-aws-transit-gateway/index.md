@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com//solutions/network-orchestration-aws-transit-gateway//index.html
 ---
 
+---
+title: 'Guidance for Network Orchestration for AWS Transit Gateway'
+canonical_url: https://docs.aws.amazon.com/solutions/network-orchestration-aws-transit-gateway/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Network Orchestration for AWS Transit Gateway
 
 ## Overview

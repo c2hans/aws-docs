@@ -64,6 +64,7 @@ Content-type: application/json
             }
          ],
          "headline": "string",
+         "markupDescription": "string",
          "paragraphSummary": "string"
       },
       "notificationType": "string",
@@ -111,7 +112,7 @@ Type: Timestamp
  ** [managedNotificationConfigurationArn](#API_GetManagedNotificationChildEvent_ResponseSyntax) **   <a name="Notifications-GetManagedNotificationChildEvent-response-managedNotificationConfigurationArn"></a>
 The Amazon Resource Name (ARN) of the `ManagedNotificationConfiguration` associated with the `ManagedNotificationChildEvent`.
 Type: String
-Pattern: `arn:[-.a-z0-9]{1,63}:notifications::[0-9]{12}:managed-notification-configuration/category/[a-zA-Z0-9\-]{3,64}/sub-category/[a-zA-Z0-9\-]{3,64}`
+Pattern: `arn:[a-z-]{3,10}:notifications::[0-9]{12}:managed-notification-configuration/category/[a-zA-Z0-9\-]{3,64}/sub-category/[a-zA-Z0-9\-]{3,64}`
 
 ## Errors
 <a name="API_GetManagedNotificationChildEvent_Errors"></a>

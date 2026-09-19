@@ -35,7 +35,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[SendDelayMs](#cfn-medialive-channel-cmafingestgroupsettings-senddelayms)" : {{Integer}},
   "[TimedMetadataId3Frame](#cfn-medialive-channel-cmafingestgroupsettings-timedmetadataid3frame)" : {{String}},
   "[TimedMetadataId3Period](#cfn-medialive-channel-cmafingestgroupsettings-timedmetadataid3period)" : {{Integer}},
-  "[TimedMetadataPassthrough](#cfn-medialive-channel-cmafingestgroupsettings-timedmetadatapassthrough)" : {{String}}
+  "[TimedMetadataPassthrough](#cfn-medialive-channel-cmafingestgroupsettings-timedmetadatapassthrough)" : {{String}},
+  "[WatermarkingSettings](#cfn-medialive-channel-cmafingestgroupsettings-watermarkingsettings)" : {{CmafIngestWatermarkingSettings}}
 }
 ```
 
@@ -63,6 +64,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   [TimedMetadataId3Frame](#cfn-medialive-channel-cmafingestgroupsettings-timedmetadataid3frame): {{String}}
   [TimedMetadataId3Period](#cfn-medialive-channel-cmafingestgroupsettings-timedmetadataid3period): {{Integer}}
   [TimedMetadataPassthrough](#cfn-medialive-channel-cmafingestgroupsettings-timedmetadatapassthrough): {{String}}
+  [WatermarkingSettings](#cfn-medialive-channel-cmafingestgroupsettings-watermarkingsettings): {{
+    CmafIngestWatermarkingSettings}}
 ```
 
 ## Properties
@@ -168,4 +171,10 @@ If you set up to insert a timecode in the output, specify the frequency for the 
 Set to enabled to pass through ID3 metadata from the input sources.
 *Required*: No
 *Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`WatermarkingSettings`  <a name="cfn-medialive-channel-cmafingestgroupsettings-watermarkingsettings"></a>
+Property description not available.
+*Required*: No
+*Type*: [CmafIngestWatermarkingSettings](aws-properties-medialive-channel-cmafingestwatermarkingsettings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

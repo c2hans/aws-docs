@@ -83,6 +83,12 @@ A list of Microsoft Smooth Streaming (MSS) manifest configurations associated wi
 Type: Array of [ListMssManifestConfiguration](API_ListMssManifestConfiguration.md) objects
 Required: No
 
+ ** StreamNameOutputMode **   <a name="mediapackage-Type-OriginEndpointListConfiguration-StreamNameOutputMode"></a>
+The output mode for stream names in egress manifests for this origin endpoint.
+Type: String
+Valid Values: `INDEX | PASSTHROUGH_NAME`
+Required: No
+
  ** UriSeparator **   <a name="mediapackage-Type-OriginEndpointListConfiguration-UriSeparator"></a>
 The separator character used in generated URIs for this origin endpoint.
 Type: String

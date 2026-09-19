@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/code-library/index.html
 ---
 
+---
+title: 'AWS SDK Code Examples'
+canonical_url: https://docs.aws.amazon.com/code-library/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # AWS SDK Code Examples
 
 AWS SDK Code Examples show you how to use AWS SDKs to build AWS applications in your preferred language. The code example library is a collection of code examples that are organized by service and by SDK. Code and instructions are hosted in a GitHub repository, where you can get everything you need to set up and run the examples.

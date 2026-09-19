@@ -44,7 +44,31 @@ This solution uses the AWS Elemental MediaLive, MediaPackage, and MediaConnect s
 1. On the **Specify stack details** page, assign a name to your Live Streaming on AWS solution stack.
 
 1. Under **Parameters**, review the parameters for the template, and modify them as necessary. This solution uses the following default values. Refer to the table below for detailed instruction for setting up each input type.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws/deploy-the-solution.html)
+
+<table>
+<thead>
+  <tr><th>Parameter</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td> <b>LIVE STREAM SOURCE</b> </td><td></td><td></td></tr>
+  <tr><td> <b>Source Input Type</b> </td><td> <code>URL_PULL</code> </td><td>Specify the input type for AWS Elemental MediaLive: <code>RTP_PUSH</code>, <code>RTMP_PUSH</code>, <code>RTMP_PULL</code>, <code>URL_PULL</code>, or <code>MEDIACONNECT</code>.</td></tr>
+  <tr><td> <b>URL_PULL and RTML_PULL CONFIGURATION</b> </td><td></td><td></td></tr>
+  <tr><td> <b>Primary Source URL</b> </td><td> <code>https://d15an60oaeed9r.cloudfront.net/live_stream_v2/sports_reel_with_markers.m3u8</code> </td><td>The primary source URL for the live feed. By default, this parameter contains the primary demo source URL.</td></tr>
+  <tr><td> <b>Primary Source Username</b> </td><td> <i>&lt;Optional input&gt;</i> </td><td>If authentication is required to access the source, enter the username.</td></tr>
+  <tr><td> <b>Primary Source Password</b> </td><td> <i>&lt;Optional input&gt;</i> </td><td>If authentication is required to access the source, enter the password.</td></tr>
+  <tr><td> <b>Secondary Source URL</b> </td><td> <code>https://d3h5srgm8b0t83.cloudfront.net/live_stream_v2/sports_reel_with_markers.m3u8</code> </td><td>The secondary (backup) source URL for the live feed. By default, this parameter contains the secondary demo source URL.</td></tr>
+  <tr><td> <b>Secondary Source Username</b> </td><td> <i>&lt;Optional input&gt;</i> </td><td>If authentication is required to access the secondary source, enter the username.</td></tr>
+  <tr><td> <b>Secondary Source Password</b> </td><td> <i>&lt;Optional input&gt;</i> </td><td>If authentication is required to access the secondary source, enter the password.</td></tr>
+  <tr><td> <b>RTP_PUSH and RTMP_PUSH CONFIGURATION</b> </td><td></td><td></td></tr>
+  <tr><td> <b>Input CIDR Block</b> </td><td> {{&lt;Requires input&gt;}} </td><td>Specify the CIDR block for the MediaLive security group for push input types.</td></tr>
+  <tr><td> <b>MEDIACONNECT CONFIGURATION</b> </td><td></td><td></td></tr>
+  <tr><td> <b>Primary MediaConnect ARN</b> </td><td> <i>&lt;Optional input&gt;</i> </td><td>The primary source MediaConnect flow for the live feed. You can create the flow in the MediaConnect console. To provide redundancy, create the primary and secondary flows in different Availability Zones.</td></tr>
+  <tr><td> <b>Secondary MediaConnect ARN</b> </td><td> <i>&lt;Optional input&gt;</i> </td><td>The secondary source MediaConnect flow for the live feed. You can create the flow in the MediaConnect console. To provide redundancy, create the primary and secondary flows in different Availability Zones.</td></tr>
+  <tr><td> <b>ENCODING OPTIONS</b> </td><td></td><td></td></tr>
+  <tr><td> <b>Encoding Profile</b> </td><td> <code>720</code> </td><td>Specify the encoding profile to use with MediaLive.</td></tr>
+  <tr><td> <b>Start MediaLive Channel</b> </td><td> <code>yes</code> </td><td>Choose whether to start the MediaLive channel when the solution is created. We recommend starting the channel if you will use</td></tr>
+</tbody>
+</table>
 
 1. Choose **Next**.
 

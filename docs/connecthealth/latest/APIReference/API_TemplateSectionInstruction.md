@@ -13,7 +13,7 @@ Instructions for generating a specific section of a clinical note
  ** sectionHeader **   <a name="connecthealth-Type-TemplateSectionInstruction-sectionHeader"></a>
 The header for this section of the template
 Type: String
-Pattern: `[a-zA-Z0-9]+`
+Pattern: `[a-zA-Z0-9_]+`
 Required: Yes
 
  ** sectionInstruction **   <a name="connecthealth-Type-TemplateSectionInstruction-sectionInstruction"></a>

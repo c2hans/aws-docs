@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/building-a-composable-customer-data-platform-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Building a Composable Customer Data Platform on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/building-a-composable-customer-data-platform-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Building a Composable Customer Data Platform on AWS
 
 ## Overview

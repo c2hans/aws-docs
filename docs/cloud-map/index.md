@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/cloud-map/index.html
 ---
 
+---
+title: 'AWS Cloud Map Documentation'
+canonical_url: https://docs.aws.amazon.com/cloud-map/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Cloud Map Documentation
 
 AWS Cloud Map lets you name and discover your cloud resources.

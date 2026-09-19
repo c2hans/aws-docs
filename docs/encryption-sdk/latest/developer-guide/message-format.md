@@ -75,8 +75,22 @@ When the [encryption context](concepts.md#encryption-context) is empty, the valu
 The additional authenticated data. The AAD is an encoding of the [encryption context](concepts.md#encryption-context), an array of key-value pairs where each key and value is a string of UTF-8 encoded characters. The encryption context is converted to a sequence of bytes and used for the AAD value. When the encryption context is empty, there is no AAD field in the header.
 When the [algorithms with signing](algorithms-reference.md) are used, the encryption context must contain the key-value pair `{'aws-crypto-public-key', Qtxt}`. Qtxt represents the elliptic curve point Q compressed according to [SEC 1 version 2.0](http://www.secg.org/sec1-v2.pdf) and then base64-encoded. The encryption context can contain additional values, but the maximum length of the constructed AAD is 2^16 - 1 bytes.
 The following table describes the fields that form the AAD. Key-value pairs are sorted, by key, in ascending order according to UTF-8 character code. The bytes are appended in the order shown.
+
 **AAD Structure**
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/message-format.html)
+
+<table>
+<thead>
+  <tr><th>Field</th><th>Length (bytes)</th></tr>
+</thead>
+<tbody>
+  <tr><td><a href="#aad-count">Key-Value Pair Count</a></td><td>2</td></tr>
+  <tr><td><a href="#aad-key-length">Key Length</a></td><td>2</td></tr>
+  <tr><td><a href="#aad-key">Key</a></td><td>Variable. Equal to the value specified in the previous 2 bytes (Key Length).</td></tr>
+  <tr><td><a href="#aad-value-length">Value Length</a></td><td>2</td></tr>
+  <tr><td><a href="#aad-value">Value</a></td><td>Variable. Equal to the value specified in the previous 2 bytes (Value Length).</td></tr>
+</tbody>
+</table>
+
 **Key-Value Pair Count**
 The number of key-value pairs in the AAD. It is a 2-byte value interpreted as a 16-bit unsigned integer that specifies the number of key-value pairs in the AAD. The maximum number of key-value pairs in the AAD is 2^16 - 1.
 When there is no encryption context or the encryption context is empty, this field is not present in the AAD structure.
@@ -95,8 +109,23 @@ The number of encrypted data keys. It is a 2-byte value interpreted as a 16-bit 
 **Encrypted Data Key(s)**
 A sequence of encrypted data keys. The length of the sequence is determined by the number of encrypted data keys and the length of each. The sequence contains at least one encrypted data key.
 The following table describes the fields that form each encrypted data key. The bytes are appended in the order shown.
+
 **Encrypted Data Key Structure**
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/message-format.html)
+
+<table>
+<thead>
+  <tr><th>Field</th><th>Length (bytes)</th></tr>
+</thead>
+<tbody>
+  <tr><td><a href="#data-key-provider-id-length">Key Provider ID Length</a></td><td>2</td></tr>
+  <tr><td><a href="#data-key-provider-id">Key Provider ID</a></td><td>Variable. Equal to the value specified in the previous 2 bytes (Key Provider ID Length).</td></tr>
+  <tr><td><a href="#data-key-provider-info-length">Key Provider Information Length</a></td><td>2</td></tr>
+  <tr><td><a href="#data-key-provider-info">Key Provider Information</a></td><td>Variable. Equal to the value specified in the previous 2 bytes (Key Provider Information Length).</td></tr>
+  <tr><td><a href="#data-key-length">Encrypted Data Key Length</a></td><td>2</td></tr>
+  <tr><td><a href="#data-key">Encrypted Data Key</a></td><td>Variable. Equal to the value specified in the previous 2 bytes (Encrypted Data Key Length).</td></tr>
+</tbody>
+</table>
+
 **Key Provider ID Length**
 The length of the key provider identifier. It is a 2-byte value interpreted as a 16-bit unsigned integer that specifies the number of bytes that contain the key provider ID.
 **Key Provider ID**
@@ -135,8 +164,19 @@ This field is not present in message format version 1.
 
 **Header Authentication**
 The header authentication is determined by the [algorithm](algorithms-reference.md) that generated the message. The header authentication is calculated over the entire header. It consists of an IV and an authentication tag. The bytes are appended in the order shown.
+
 **Header Authentication Structure**
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/message-format.html)
+
+<table>
+<thead>
+  <tr><th>Field</th><th>Length in version 1.0 (bytes)</th><th>Length in version 2.0 (bytes)</th></tr>
+</thead>
+<tbody>
+  <tr><td><a href="#header-authentication-iv">IV</a></td><td>Variable. Determined by the IV bytes value of the <a href="algorithms-reference.md">algorithm</a> that generated the message.</td><td>N/A</td></tr>
+  <tr><td><a href="#header-authentication-tag">Authentication Tag</a></td><td>Variable. Determined by the authentication tag bytes value of the <a href="algorithms-reference.md">algorithm</a> that generated the message.</td><td>Variable. Determined by the authentication tag bytes value of the <a href="algorithms-reference.md">algorithm</a> that generated the message.</td></tr>
+</tbody>
+</table>
+
 **IV**
 The initialization vector (IV) used to calculate the header authentication tag.
 This field is not present in the header of message format version 2. Message format version 2 only supports algorithm suites that use deterministic IV values in the message header.

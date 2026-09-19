@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/iso-20022-messaging-workflows-on-aws/index.html
 ---
 
+---
+title: 'Guidance for ISO 20022 Messaging Workflows on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/iso-20022-messaging-workflows-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for ISO 20022 Messaging Workflows on AWS
 
 Modernize payment processes with an event-driven architecture

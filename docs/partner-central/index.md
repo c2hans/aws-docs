@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/partner-central/index.html
 ---
 
+---
+title: 'AWS Partner Central Documentation'
+canonical_url: https://docs.aws.amazon.com/partner-central/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # AWS Partner Central Documentation
 
 AWS Partner Central is a portal for AWS Partners to manage their AWS Partner Network membership. Access partner benefits, programs, training, and resources to build, market, sell, and grow with AWS.

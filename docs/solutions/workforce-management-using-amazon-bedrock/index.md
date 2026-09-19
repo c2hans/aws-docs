@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/workforce-management-using-amazon-bedrock/index.html
 ---
 
+---
+title: 'Guidance for Workforce Management Using Amazon Bedrock'
+canonical_url: https://docs.aws.amazon.com/solutions/workforce-management-using-amazon-bedrock/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Workforce Management Using Amazon Bedrock
 
 ## Overview

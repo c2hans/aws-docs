@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/contact-surveys-for-amazon-connect/index.html
 ---
 
+---
+title: 'Guidance for Contact Surveys for Amazon Connect Customer Customer'
+canonical_url: https://docs.aws.amazon.com/solutions/contact-surveys-for-amazon-connect/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Contact Surveys for Amazon Connect Customer Customer
 
 Analyze customer satisfaction scores with a serverless post-contact survey solution

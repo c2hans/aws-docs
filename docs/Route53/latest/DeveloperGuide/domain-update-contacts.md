@@ -146,7 +146,17 @@ Before making any changes to your domain's registrant contact information, compl
    If Route 53 doesn't receive authorization for the change within 3 to 15 days, depending on the top-level domain, Route 53 must cancel the request as required by ICANN.
 
    The email comes from one of the following email addresses.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-update-contacts.html)
+
+<table>
+<thead>
+  <tr><th>TLDs</th><th>Email address that authorization email comes from</th></tr>
+</thead>
+<tbody>
+  <tr><td>.fr</td><td>nic@nic.fr</td></tr>
+  <tr><td>.com.au<br />.net.au</td><td>noreply@emailverification.info</td></tr>
+  <tr><td>All others</td><td>One of the following email addresses:<ul><li> noreply@registrar.amazon </li><li> noreply@domainnameverification.net </li><li> noreply@emailverification.info </li></ul></td></tr>
+</tbody>
+</table>
 
 1. If you encounter issues while updating contact information, you can contact AWS Support for free. For more information, see [Contacting AWS Support about domain registration issues](domain-contact-support.md).
 

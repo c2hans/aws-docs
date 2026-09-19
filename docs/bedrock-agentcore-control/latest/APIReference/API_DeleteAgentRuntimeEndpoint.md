@@ -73,7 +73,7 @@ Pattern: `[a-zA-Z][a-zA-Z0-9_]{0,47}`
  ** [status](#API_DeleteAgentRuntimeEndpoint_ResponseSyntax) **   <a name="bedrockagentcorecontrol-DeleteAgentRuntimeEndpoint-response-status"></a>
 The current status of the AgentCore Runtime endpoint deletion.
 Type: String
-Valid Values: `CREATING | CREATE_FAILED | UPDATING | UPDATE_FAILED | READY | DELETING`
+Valid Values: `CREATING | CREATE_FAILED | UPDATING | UPDATE_FAILED | READY | DELETING | DELETE_FAILED`
 
 ## Errors
 <a name="API_DeleteAgentRuntimeEndpoint_Errors"></a>

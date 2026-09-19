@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/troubleshooting-amazon-eks-using-agentic-ai-workflow-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Troubleshooting Amazon EKS using Agentic AI workflow on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/troubleshooting-amazon-eks-using-agentic-ai-workflow-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Troubleshooting Amazon EKS using Agentic AI workflow on AWS
 
 ## Overview

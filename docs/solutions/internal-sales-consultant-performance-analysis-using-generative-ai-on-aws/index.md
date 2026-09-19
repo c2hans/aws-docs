@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/internal-sales-consultant-performance-analysis-using-generative-ai-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Internal Sales Consultant Performance Analysis using Generative AI on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/internal-sales-consultant-performance-analysis-using-generative-ai-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Internal Sales Consultant Performance Analysis using Generative AI on AWS
 
 ## Overview

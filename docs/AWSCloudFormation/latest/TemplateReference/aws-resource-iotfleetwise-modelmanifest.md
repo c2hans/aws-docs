@@ -84,7 +84,7 @@ The name of the vehicle model.
 The Amazon Resource Name (ARN) of the signal catalog associated with the vehicle model.
 *Required*: Yes
 *Type*: String
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Status`  <a name="cfn-iotfleetwise-modelmanifest-status"></a>
  The state of the vehicle model. If the status is `ACTIVE`, the vehicle model can't be edited. If the status is `DRAFT`, you can edit the vehicle model.

@@ -86,7 +86,6 @@ Required: No
 The source event URL.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 2000.
-Pattern: `(https?)://.*`
 Required: No
 
  ** sourceEventDetailUrlDisplayText **   <a name="Notifications-Type-ManagedNotificationChildEvent-sourceEventDetailUrlDisplayText"></a>

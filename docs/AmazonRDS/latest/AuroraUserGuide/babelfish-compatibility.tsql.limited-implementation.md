@@ -27,7 +27,17 @@ As of version 1.2.0 of Babelfish, the following features currently have limited 
   + For SQL Server – Throws an error.
   + For Babelfish – Treats the value as valid and returns results.
 + **Schema creation, ownership, and permissions** – Permissions to create and access objects in a schema owned by a non-DBO user (using `CREATE SCHEMA {{schema name}} AUTHORIZATION {{user name}}`) differ for SQL Server and Babelfish non-DBO users, as shown in the following table:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish-compatibility.tsql.limited-implementation.html)
+
+<table>
+<thead>
+  <tr><th>Database user (non-DBO) who owns the schema can do the following:</th><th>SQL Server</th><th>Babelfish</th></tr>
+</thead>
+<tbody>
+  <tr><td>Create objects in the schema without additional grants by the DBO?</td><td>No</td><td>Yes</td></tr>
+  <tr><td>Access objects created by DBO in the schema without additional grants?</td><td>Yes</td><td>No</td></tr>
+</tbody>
+</table>
+
 + **CREATE OR ALTER VIEW / ALTER VIEW syntax** – The support for these syntax in Babelfish has the following limitations:
   + These statements cannot be used on views that have an INSTEAD-OF trigger attached.
   + These statements cannot be used on views that have another view based on this view.

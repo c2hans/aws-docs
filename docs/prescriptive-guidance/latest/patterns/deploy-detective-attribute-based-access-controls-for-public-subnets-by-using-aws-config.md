@@ -48,7 +48,11 @@ The diagram illustrates the following:
 1. The AWS Lambda function associated with this custom rule is invoked. The function evaluates the resource and applies the specified logic to determine if the resource configuration is `COMPLIANT`, `NON_COMPLIANT` or `NOT_APPLICABLE`.
 
 1. If a resource is determined to be `NON_COMPLIANT`, AWS Config sends an alert through Amazon Simple Notification Service (Amazon SNS).
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-detective-attribute-based-access-controls-for-public-subnets-by-using-aws-config.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
 **Lambda function evaluation logic**
 

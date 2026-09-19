@@ -88,20 +88,14 @@ Type: Array of [StageSummary](API_StageSummary.md) objects
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** AccessDeniedException **
-
- ** exceptionMessage **
 User does not have sufficient access to perform this action.
 HTTP Status Code: 403
 
  ** ConflictException **
-
- ** exceptionMessage **
 Updating or deleting a resource can cause an inconsistent state.
 HTTP Status Code: 409
 
  ** ValidationException **
-
- ** exceptionMessage **
 The input fails to satisfy the constraints specified by an AWS service.
 HTTP Status Code: 400
 

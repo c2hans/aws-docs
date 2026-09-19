@@ -191,6 +191,7 @@ Content-type: application/json
       "TsUseAudioRenditionGroup": {{boolean}}
    },
    "StartoverWindowSeconds": {{number}},
+   "StreamNameOutputMode": "{{string}}",
    "UriSeparator": "{{string}}"
 }
 ```
@@ -274,6 +275,12 @@ Required: No
 The size of the window (in seconds) to create a window of the live stream that's available for on-demand viewing. Viewers can start-over or catch-up on content that falls within the window. The maximum startover window is 1,209,600 seconds (14 days).
 Type: Integer
 Valid Range: Minimum value of 0. Maximum value of 1209600.
+Required: No
+
+ ** [StreamNameOutputMode](#API_UpdateOriginEndpoint_RequestSyntax) **   <a name="mediapackage-UpdateOriginEndpoint-request-StreamNameOutputMode"></a>
+The output mode for stream names in egress manifests. If you provide a value, it must match the current value. You can't change the stream name output mode after you create the endpoint.
+Type: String
+Valid Values: `INDEX | PASSTHROUGH_NAME`
 Required: No
 
  ** [UriSeparator](#API_UpdateOriginEndpoint_RequestSyntax) **   <a name="mediapackage-UpdateOriginEndpoint-request-UriSeparator"></a>
@@ -474,6 +481,7 @@ Content-type: application/json
       "TsUseAudioRenditionGroup": boolean
    },
    "StartoverWindowSeconds": number,
+   "StreamNameOutputMode": "string",
    "tags": {
       "string" : "string"
    },
@@ -561,6 +569,11 @@ Type: [Segment](API_Segment.md) object
  ** [StartoverWindowSeconds](#API_UpdateOriginEndpoint_ResponseSyntax) **   <a name="mediapackage-UpdateOriginEndpoint-response-StartoverWindowSeconds"></a>
 The size of the window (in seconds) to create a window of the live stream that's available for on-demand viewing. Viewers can start-over or catch-up on content that falls within the window.
 Type: Integer
+
+ ** [StreamNameOutputMode](#API_UpdateOriginEndpoint_ResponseSyntax) **   <a name="mediapackage-UpdateOriginEndpoint-response-StreamNameOutputMode"></a>
+The output mode for stream names in egress manifests for this origin endpoint.
+Type: String
+Valid Values: `INDEX | PASSTHROUGH_NAME`
 
  ** [tags](#API_UpdateOriginEndpoint_ResponseSyntax) **   <a name="mediapackage-UpdateOriginEndpoint-response-tags"></a>
 The comma-separated list of tag key:value pairs assigned to the origin endpoint.

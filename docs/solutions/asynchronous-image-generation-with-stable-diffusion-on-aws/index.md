@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/asynchronous-image-generation-with-stable-diffusion-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Asynchronous Image Generation with Stable Diffusion on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/asynchronous-image-generation-with-stable-diffusion-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Asynchronous Image Generation with Stable Diffusion on AWS
 
 Use open source tools and generative AI for asynchronous image generation

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/talent/index.html
 ---
 
+---
+title: 'Amazon Connect Talent'
+canonical_url: https://docs.aws.amazon.com/talent/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Connect Talent
 
 Amazon Connect Talent is an agentic hiring solution that delivers AI-led interviews, structured assessments, and consistent candidate evaluation at scale.

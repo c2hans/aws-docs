@@ -13,8 +13,9 @@ Describes the properties of an environment tier
  ** Name **
 The name of this environment tier.
 Valid values:
-+ For *Web server tier* – `WebServer`
-+ For *Worker tier* – `Worker`
++ For *Standard-mode EC2-based web server* – `WebServer`
++ For *Standard-mode EC2-based backend application with Amazon SQS* – `Worker`
++ For *Cluster-mode Amazon EKS-based applications* – `Cluster`
 Type: String
 Required: No
 
@@ -23,6 +24,7 @@ The type of this environment tier.
 Valid values:
 + For *Web server tier* – `Standard`
 + For *Worker tier* – `SQS/HTTP`
++ For *Cluster tier* – `EKS`
 Type: String
 Required: No
 

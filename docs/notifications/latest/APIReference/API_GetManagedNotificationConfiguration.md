@@ -21,7 +21,7 @@ The request uses the following URI parameters.
 
  ** [arn](#API_GetManagedNotificationConfiguration_RequestSyntax) **   <a name="Notifications-GetManagedNotificationConfiguration-request-uri-arn"></a>
 The Amazon Resource Name (ARN) of the `ManagedNotificationConfiguration` to return.
-Pattern: `arn:[-.a-z0-9]{1,63}:notifications::[0-9]{12}:managed-notification-configuration/category/[a-zA-Z0-9\-]{3,64}/sub-category/[a-zA-Z0-9\-]{3,64}`
+Pattern: `arn:[a-z-]{3,10}:notifications::[0-9]{12}:managed-notification-configuration/category/[a-zA-Z0-9\-]{3,64}/sub-category/[a-zA-Z0-9\-]{3,64}`
 Required: Yes
 
 ## Request Body
@@ -55,7 +55,7 @@ The following data is returned in JSON format by the service.
  ** [arn](#API_GetManagedNotificationConfiguration_ResponseSyntax) **   <a name="Notifications-GetManagedNotificationConfiguration-response-arn"></a>
 The ARN of the `ManagedNotificationConfiguration` resource.
 Type: String
-Pattern: `arn:[-.a-z0-9]{1,63}:notifications::[0-9]{12}:managed-notification-configuration/category/[a-zA-Z0-9\-]{3,64}/sub-category/[a-zA-Z0-9\-]{3,64}`
+Pattern: `arn:[a-z-]{3,10}:notifications::[0-9]{12}:managed-notification-configuration/category/[a-zA-Z0-9\-]{3,64}/sub-category/[a-zA-Z0-9\-]{3,64}`
 
  ** [category](#API_GetManagedNotificationConfiguration_ResponseSyntax) **   <a name="Notifications-GetManagedNotificationConfiguration-response-category"></a>
 The category of the `ManagedNotificationConfiguration`.

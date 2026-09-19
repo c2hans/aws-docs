@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/appflow/index.html
 ---
 
+---
+title: 'Amazon AppFlow Documentation'
+canonical_url: https://docs.aws.amazon.com/appflow/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon AppFlow Documentation
 
 Amazon AppFlow is a fully managed API integration service that you use to connect your software as a service (SaaS) applications to AWS services, and securely transfer data. Use Amazon AppFlow flows to manage and automate your data transfers without needing to write code.

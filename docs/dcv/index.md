@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/dcv/index.html
 ---
 
+---
+title: 'Amazon DCV'
+canonical_url: https://docs.aws.amazon.com/dcv/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon DCV
 
 Amazon DCV is a remote visualization technology that you can use to connect securely to graphic-intensive 3D applications hosted on remote servers. With Amazon DCV, you can bring high-performance processing capabilities to remote users through secure client sessions.

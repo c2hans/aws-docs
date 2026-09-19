@@ -22,7 +22,15 @@ This solution is not currently available in all AWS Regions. You must launch thi
 1. On the **Specify stack details** page, assign a name to your solution stack. For information about naming character limitations, see [IAM and AWS STS quotas](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-limits.html) in the *AWS Identity and Access Management User Guide*.
 
 1. Under **Parameters**, review the parameters for this solution template and modify them as necessary. This solution uses the following default values.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/launch-the-stack.html)
+
+<table>
+<thead>
+  <tr><th> <b>Parameter</b> </th><th> <b>Default</b> </th><th> <b>Description</b> </th></tr>
+</thead>
+<tbody>
+  <tr><td> <b>AdminEmail</b> </td><td> <i> {{&lt;Requires input&gt;}} </i> </td><td>The admin email address to use for authorization to access the MCS web console or receive the email that contains an URL to the Leostream Broker admin secret.</td></tr>
+</tbody>
+</table>
 
 1. Select **Next**
 

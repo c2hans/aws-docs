@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/imagebuilder/index.html
 ---
 
+---
+title: 'EC2 Image Builder Documentation'
+canonical_url: https://docs.aws.amazon.com/imagebuilder/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # EC2 Image Builder Documentation
 
 EC2 Image Builder is a fully-managed AWS service that makes it easier to automate the creation, management, and deployment of customized, secure, and up-to-date “golden” server images that are pre-installed and pre-configured with software and settings to meet specific IT standards.

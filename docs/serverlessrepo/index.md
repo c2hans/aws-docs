@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/serverlessrepo/index.html
 ---
 
+---
+title: 'AWS Serverless Application Repository'
+canonical_url: https://docs.aws.amazon.com/serverlessrepo/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Serverless Application Repository
 
 The AWS Serverless Application Repository is a managed repository for serverless applications. It enables teams, organizations, and individual developers to find, deploy, publish, share, store, and easily assemble serverless architectures.

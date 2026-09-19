@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/eks/index.html
 ---
 
+---
+title: 'Amazon Elastic Kubernetes Service Documentation'
+canonical_url: https://docs.aws.amazon.com/eks/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Amazon Elastic Kubernetes Service Documentation
 
 Amazon Elastic Kubernetes Service (Amazon EKS) is a managed service that makes it easy for you to run Kubernetes on AWS without needing to install and operate your own Kubernetes clusters.

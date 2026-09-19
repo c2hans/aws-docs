@@ -100,6 +100,10 @@ To call this API operation for specific countries, see the following country-spe
  **Monaco**
 + You must specify the `businessNumber` in the `monacoAdditionalInfo` field of the `additionalTaxInformation` object.
 
+ **Germany**
++ You must provide at least one of the following: a Tax Registration Number (TRN) (`registrationId`), the `economicIdentificationNumber`, or the `steuernummer`.
++ You can optionally specify the `economicIdentificationNumber` (Wirtschafts-Identifikationsnummer, or W-IdNr) and the `steuernummer` (tax number issued by the local tax office) in the `germanyAdditionalInfo` field of the `additionalTaxInformation` object.
+
  **Poland**
 + You can optionally specify the `taxRegistrationNumberType` in the `polandAdditionalInfo` field of the `additionalTaxInformation` object. Valid values are `EUTaxRegistrationNumber`, `LocalTaxRegistrationNumber`, or `LocalRegistrationNumber`.
 
@@ -141,6 +145,10 @@ Content-type: application/json
          },
          "georgiaAdditionalInfo": {
             "personType": "{{string}}"
+         },
+         "germanyAdditionalInfo": {
+            "economicIdentificationNumber": "{{string}}",
+            "steuernummer": "{{string}}"
          },
          "greeceAdditionalInfo": {
             "contractingAuthorityCode": "{{string}}"

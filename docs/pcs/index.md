@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/pcs/index.html
 ---
 
+---
+title: 'AWS Parallel Computing Service Documentation'
+canonical_url: https://docs.aws.amazon.com/pcs/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # AWS Parallel Computing Service Documentation
 
 Easily run HPC workloads at virtually any scale.

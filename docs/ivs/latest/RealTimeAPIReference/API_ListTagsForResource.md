@@ -64,20 +64,14 @@ Value Length Constraints: Minimum length of 0. Maximum length of 256.
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** InternalServerException **
-
- ** exceptionMessage **
 Unexpected error during processing of request.
 HTTP Status Code: 500
 
  ** ResourceNotFoundException **
-
- ** exceptionMessage **
 Request references a resource which does not exist.
 HTTP Status Code: 404
 
  ** ValidationException **
-
- ** exceptionMessage **
 The input fails to satisfy the constraints specified by an AWS service.
 HTTP Status Code: 400
 

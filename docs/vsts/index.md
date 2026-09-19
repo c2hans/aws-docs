@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/vsts/index.html
 ---
 
+---
+title: 'AWS Toolkit for Microsoft Azure DevOps Documentation'
+canonical_url: https://docs.aws.amazon.com/vsts/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Toolkit for Microsoft Azure DevOps Documentation
 
 The AWS Toolkit for Azure DevOps contains tasks you can use in build and release definitions in Azure DevOps to interact with AWS services. The AWS Toolkit for Azure DevOps is available through the Visual Studio Marketplace.

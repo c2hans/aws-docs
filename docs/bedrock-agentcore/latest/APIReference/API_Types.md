@@ -234,6 +234,7 @@ The following data types are supported:
 +  [SessionLimits](API_SessionLimits.md)
 +  [SessionMetadataShape](API_SessionMetadataShape.md)
 +  [SessionSummary](API_SessionSummary.md)
++  [SessionTraceIds](API_SessionTraceIds.md)
 +  [SkillDefinition](API_SkillDefinition.md)
 +  [SkillMdDefinition](API_SkillMdDefinition.md)
 +  [SpanContext](API_SpanContext.md)

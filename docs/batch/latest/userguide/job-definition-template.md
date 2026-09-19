@@ -126,6 +126,10 @@ $ aws batch register-job-definition --generate-cli-skeleton
         },
         "fargatePlatformConfiguration": {
             "platformVersion": ""
+        },
+        "runtimePlatform": {
+            "cpuArchitecture": "",
+            "operatingSystemFamily": ""
         }
     },
     "nodeProperties": {
@@ -238,6 +242,10 @@ $ aws batch register-job-definition --generate-cli-skeleton
                     },
                     "fargatePlatformConfiguration": {
                         "platformVersion": ""
+                    },
+                    "runtimePlatform": {
+                        "cpuArchitecture": "",
+                        "operatingSystemFamily": ""
                     }
                 }
             }

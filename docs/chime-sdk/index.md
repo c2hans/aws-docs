@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/chime-sdk/index.html
 ---
 
+---
+title: 'Amazon Chime SDK Documentation'
+canonical_url: https://docs.aws.amazon.com/chime-sdk/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Amazon Chime SDK Documentation
 
 The Amazon Chime SDK allows builders to add real-time voice, video, and messaging powered by machine learning into their applications.

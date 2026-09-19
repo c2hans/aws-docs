@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/medialive/index.html
 ---
 
+---
+title: 'AWS Elemental MediaLive Documentation'
+canonical_url: https://docs.aws.amazon.com/medialive/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # AWS Elemental MediaLive Documentation
 
 AWS Elemental MediaLive is a video service that allows easy and reliable creation of live outputs for broadcast and streaming delivery.

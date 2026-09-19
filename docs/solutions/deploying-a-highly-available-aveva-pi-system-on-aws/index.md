@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/deploying-a-highly-available-aveva-pi-system-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Deploying a Highly Available Aveva PI System on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/deploying-a-highly-available-aveva-pi-system-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Deploying a Highly Available Aveva PI System on AWS
 
 ## Overview

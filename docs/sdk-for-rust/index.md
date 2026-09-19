@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/sdk-for-rust/index.html
 ---
 
+---
+title: 'AWS SDK for Rust Documentation'
+canonical_url: https://docs.aws.amazon.com/sdk-for-rust/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS SDK for Rust Documentation
 
 The AWS SDK for Rust provides easy-to-use APIs and utilities developers can use to quickly integrate Rust applications with AWS services such as Amazon S3 and Amazon EC2.

@@ -12,7 +12,16 @@ In this step, you map application attributes to the user attribute in IAM Identi
 1. Under **Actions**, choose **Edit attribute mappings**.
 
 1. For the *Subject* **User attribute in the application** row, fill in the two corresponding fields:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/map-application-attributes.html)
+
+<table>
+<thead>
+  <tr><th>Field</th><th>Value</th></tr>
+</thead>
+<tbody>
+  <tr><td>Maps to this string value or user attribute in IAM Identity Center</td><td>${user:email}</td></tr>
+  <tr><td>Format</td><td>emailAddress</td></tr>
+</tbody>
+</table>
 
 1. Choose **Save Changes**.
 

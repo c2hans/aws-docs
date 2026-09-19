@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/silk/index.html
 ---
 
+---
+title: 'Amazon Silk Documentation'
+canonical_url: https://docs.aws.amazon.com/silk/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Silk Documentation
 
 Amazon Silk is a web browser available for customers to use on Fire Tablets, Fire TVs, and Echo Show devices.

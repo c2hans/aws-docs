@@ -35,6 +35,13 @@ The date and time the channel was modified.
 Type: Timestamp
 Required: Yes
 
+ ** AttachedMultiviewChannels **   <a name="mediapackage-Type-ChannelListConfiguration-AttachedMultiviewChannels"></a>
+The multiview channels, in the same channel group, that list this channel as an available source. This is a read-only field.
+Type: Array of strings
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Pattern: `[a-zA-Z0-9_-]+`
+Required: No
+
  ** Description **   <a name="mediapackage-Type-ChannelListConfiguration-Description"></a>
 Any descriptive information that you want to add to the channel for future identification purposes.
 Type: String
@@ -42,12 +49,18 @@ Length Constraints: Minimum length of 0. Maximum length of 1024.
 Required: No
 
  ** InputType **   <a name="mediapackage-Type-ChannelListConfiguration-InputType"></a>
-The input type will be an immutable field which will be used to define whether the channel will allow CMAF ingest or HLS ingest. If unprovided, it will default to HLS to preserve current behavior.
+The input type is an immutable field. It defines whether the channel allows CMAF ingest, HLS ingest, or server-side multiview output. Multiview channels receive no ingest of their own. If unprovided, the value defaults to HLS.
 The allowed values are:
 +  `HLS` - The HLS streaming specification (which defines M3U8 manifests and TS segments).
 +  `CMAF` - The DASH-IF CMAF Ingest specification (which defines CMAF segments with optional DASH manifests).
++  `MULTIVIEW` – Server-side multiview. The channel receives no ingest of its own. Instead, it composites video from the source channels in its `MultiviewConfiguration` into a single tiled output stream.
 Type: String
-Valid Values: `HLS | CMAF`
+Valid Values: `HLS | CMAF | MULTIVIEW`
+Required: No
+
+ ** MultiviewConfiguration **   <a name="mediapackage-Type-ChannelListConfiguration-MultiviewConfiguration"></a>
+The multiview configuration for the channel. This is present only when `InputType` is `MULTIVIEW`.
+Type: [MultiviewConfiguration](API_MultiviewConfiguration.md) object
 Required: No
 
  ** OutputLockingMode **   <a name="mediapackage-Type-ChannelListConfiguration-OutputLockingMode"></a>

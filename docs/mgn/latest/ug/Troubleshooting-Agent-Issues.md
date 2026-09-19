@@ -18,6 +18,18 @@ Use the information in this section to troubleshoot issues with installing the r
 
 This type of error means that the agent was not installed on the source server, and therefore the server will not appear on the AWS Transform MGN console. After you fix the issue that caused the installation to fail, you need to rerun the Agent Installer file to install the agent.
 
+### Error: too many volumes selected for replication
+<a name="Installation-Failed-Disk-Limit"></a>
+
+Installation fails with an error similar to the following when you select more disks than the AWS Replication Agent supports:
+
+```
+The devices you entered span over more than 63 volumes. Up to 63 volumes are supported per machine.
+Installation failed.
+```
+
+The AWS Replication Agent can replicate up to 63 disks from a single source server. To resolve this error, select 63 or fewer disks for replication and rerun the Agent Installer file.
+
 ### This app can't run on your PC error - Windows
 <a name="this-app-error"></a>
 

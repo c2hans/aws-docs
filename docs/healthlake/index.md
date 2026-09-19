@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/healthlake/index.html
 ---
 
+---
+title: 'AWS HealthLake Documentation'
+canonical_url: https://docs.aws.amazon.com/healthlake/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS HealthLake Documentation
 
 AWS HealthLake is a HIPAA eligible service for storing, analyzing, and sharing health data in the cloud at petabyte scale.

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/sdk-for-go/index.html
 ---
 
+---
+title: 'AWS SDK for Go Documentation'
+canonical_url: https://docs.aws.amazon.com/sdk-for-go/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # AWS SDK for Go Documentation
 
 The AWS SDK for Go provides APIs and utilities that developers can use to quickly integrate Go applications with AWS services like Amazon S3 and Amazon EC2.

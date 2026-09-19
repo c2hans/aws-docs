@@ -15,6 +15,11 @@ Describes the AWS resources in use by this environment. This data is live.
 Type: Array of [AutoScalingGroup](API_AutoScalingGroup.md) objects
 Required: No
 
+ ** Cluster **
+The Amazon EKS cluster that this environment runs on. This member is present only for environments in the *Cluster* tier.
+Type: [Cluster](API_Cluster.md) object
+Required: No
+
  ** EnvironmentName **
 The name of the environment.
 Type: String

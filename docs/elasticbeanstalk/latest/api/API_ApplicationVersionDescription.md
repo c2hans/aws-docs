@@ -42,6 +42,22 @@ Type: String
 Length Constraints: Maximum length of 200.
 Required: No
 
+ ** ImageBuildConfiguration **
+The settings that Elastic Beanstalk uses to build a container image from the source bundle of the application version. Not present for an application version created from an image you provide.
+Type: [ImageBuildConfiguration](API_ImageBuildConfiguration.md) object
+Required: No
+
+ ** ImageSource **
+The location of the container image for the application version.
+For an application version created from an image you provide, this is that image. For one that Elastic Beanstalk builds from your source bundle, Elastic Beanstalk fills this in with the image it pushed after the build succeeds.
+Type: [ImageSource](API_ImageSource.md) object
+Required: No
+
+ ** Process **
+Indicates whether Elastic Beanstalk pre-processed and validated the environment manifest (`env.yaml`) and configuration files (`*.config` files in the `.ebextensions` folder) in the source bundle of the application version.
+Type: Boolean
+Required: No
+
  ** SourceBuildInformation **
 If the version's source code was retrieved from AWS CodeCommit, the location of the source code for the application version.
 Type: [SourceBuildInformation](API_SourceBuildInformation.md) object

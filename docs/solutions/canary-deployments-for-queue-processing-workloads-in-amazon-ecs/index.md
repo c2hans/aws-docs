@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/canary-deployments-for-queue-processing-workloads-in-amazon-ecs/index.html
 ---
 
+---
+title: 'Guidance for Canary Deployments for Queue Processing Workloads in Amazon ECS'
+canonical_url: https://docs.aws.amazon.com/solutions/canary-deployments-for-queue-processing-workloads-in-amazon-ecs/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Canary Deployments for Queue Processing Workloads in Amazon ECS
 
 Zero-downtime deployments with monitoring and instant rollbacks

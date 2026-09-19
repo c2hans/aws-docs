@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/chime/index.html
 ---
 
+---
+title: 'Amazon Chime Documentation'
+canonical_url: https://docs.aws.amazon.com/chime/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Chime Documentation
 
 Amazon Chime is a secure, real-time, unified communications service that transforms meetings by making them more efficient and easier to conduct.

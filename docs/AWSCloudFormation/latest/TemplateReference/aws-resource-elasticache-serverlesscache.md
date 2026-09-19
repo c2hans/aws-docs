@@ -29,6 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[FinalSnapshotName](#cfn-elasticache-serverlesscache-finalsnapshotname)" : {{String}},
       "[KmsKeyId](#cfn-elasticache-serverlesscache-kmskeyid)" : {{String}},
       "[MajorEngineVersion](#cfn-elasticache-serverlesscache-majorengineversion)" : {{String}},
+      "[NetworkType](#cfn-elasticache-serverlesscache-networktype)" : {{String}},
       "[ReaderEndpoint](#cfn-elasticache-serverlesscache-readerendpoint)" : {{Endpoint}},
       "[SecurityGroupIds](#cfn-elasticache-serverlesscache-securitygroupids)" : {{[ String, ... ]}},
       "[ServerlessCacheName](#cfn-elasticache-serverlesscache-serverlesscachename)" : {{String}},
@@ -57,6 +58,7 @@ Properties:
   [FinalSnapshotName](#cfn-elasticache-serverlesscache-finalsnapshotname): {{String}}
   [KmsKeyId](#cfn-elasticache-serverlesscache-kmskeyid): {{String}}
   [MajorEngineVersion](#cfn-elasticache-serverlesscache-majorengineversion): {{String}}
+  [NetworkType](#cfn-elasticache-serverlesscache-networktype): {{String}}
   [ReaderEndpoint](#cfn-elasticache-serverlesscache-readerendpoint): {{
     Endpoint}}
   [SecurityGroupIds](#cfn-elasticache-serverlesscache-securitygroupids): {{
@@ -123,6 +125,13 @@ The version number of the engine the serverless cache is compatible with. Specif
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`NetworkType`  <a name="cfn-elasticache-serverlesscache-networktype"></a>
+The type of IP address protocol used by the serverless cache. Must be either `ipv4` \| `ipv6` \| `dual_stack`. `ipv6` is only supported with IPv6-only subnets. If not specified, defaults to `ipv4`, unless all provided subnets are IPv6-only, in which case it defaults to `ipv6`.
+*Required*: No
+*Type*: String
+*Allowed values*: `ipv4 | ipv6 | dual_stack`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `ReaderEndpoint`  <a name="cfn-elasticache-serverlesscache-readerendpoint"></a>
 Represents the information required for client programs to connect to a cache node. This value is read-only.

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/integration-with-salesforce-automotive-cloud-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Integration with Salesforce Automotive Cloud on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/integration-with-salesforce-automotive-cloud-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Integration with Salesforce Automotive Cloud on AWS
 
 ## Overview

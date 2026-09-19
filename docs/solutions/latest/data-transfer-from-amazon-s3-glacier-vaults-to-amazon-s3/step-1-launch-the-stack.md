@@ -25,7 +25,20 @@ The archive transfer can take up to one day to complete. If you need to move you
 1.  On the **Specify stack details** page, assign a name to your Guidance stack. For information about naming character limitations, see [IAM and AWS STS quotas, name requirements, and character limits](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-limits.html) in the *AWS Identity and Access Management User Guide*.
 
 1.  Under **Parameters**, review the parameters for this Guidance template and modify them as necessary. This Guidance uses the following default values.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3/step-1-launch-the-stack.html)
+
+<table>
+<thead>
+  <tr><th> Parameter </th><th> Default </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td><b>DestinationBucket</b></td><td><code>empty</code></td><td>The name of the destination Amazon S3 bucket. Referring a bucket in a different region than S3 Glacier vault will incur additional costs. Refer to the <a href="cost.md">cost</a> section for more details.  The destination Amazon S3 bucket must be created in the same account as the Glacier vault, which is also the account where the Guidance is deployed. Currently, the Guidance does not support cross-account transfers."  </td></tr>
+  <tr><td><b>DynamoDB Backup</b></td><td><code>false</code></td><td>Enter <code>true</code> to enable DynamoDB table backups for tables created by the Guidance. </td></tr>
+  <tr><td><b>Lambda Tracing</b></td><td><code>false</code></td><td> Enter <code>true</code> to enable <a href="https://aws.amazon.com/xray/">AWS X-Ray</a> tracing for Lambda functions created by the Guidance. </td></tr>
+  <tr><td><b>Step Function Logging</b></td><td><code>false</code></td><td> Enter <code>true</code> to enable logging for Step Functions created by the Guidance. </td></tr>
+  <tr><td><b>Step Function Tracing</b></td><td><code>false</code></td><td> Enter <code>true</code> to enable X-Ray tracing for Step Functions created by the Guidance. </td></tr>
+</tbody>
+</table>
+
 **Note**
 It is advisable to review and modify any [Service Control Policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_examples_s3.html) (SCP) on the destination bucket that may block or prevent PUT operations. If you are using CloudTrail on your destination Amazon S3 bucket, please review and modify the CloudTrail export configurations to prevent excessive API charges.
 

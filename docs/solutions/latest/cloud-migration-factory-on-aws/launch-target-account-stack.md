@@ -16,7 +16,17 @@ The target account stack must be launched in the same Region as the factory stac
 1. On the **Specify stack details** page, assign a name to your solution stack.
 
 1. Under **Parameters**, review the parameters for the template and modify them as necessary. This solution uses the following default values.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/launch-target-account-stack.html)
+
+<table>
+<thead>
+  <tr><th>Parameter</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td> <b>FactoryAWSAccountId</b> </td><td> <code>111122223333</code> </td><td>Enter an account ID where the Migration Factory was deployed. Launch this stack in the same AWS Region as the Migration Factory stack. </td></tr>
+  <tr><td> <b>Replatform</b> </td><td> <code>Yes</code> </td><td>Turn on this option if you plan to use the Replatform EC2 module of this solution</td></tr>
+  <tr><td> <b>RehostMGN</b> </td><td> <code>Yes</code> </td><td>Turn on this option if you plan to use the Rehost MGN module of this solution</td></tr>
+</tbody>
+</table>
 
 1. Choose **Next**.
 

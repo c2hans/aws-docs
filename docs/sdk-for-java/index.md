@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/sdk-for-java/index.html
 ---
 
+---
+title: 'AWS SDK for Java Documentation'
+canonical_url: https://docs.aws.amazon.com/sdk-for-java/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS SDK for Java Documentation
 
 The AWS SDK for Java provides a Java API for Amazon Web Services infrastructure services. Using the SDK, you can build applications on top of Amazon S3, Amazon EC2, Amazon DynamoDB, and more.

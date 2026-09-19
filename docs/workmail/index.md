@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/workmail/index.html
 ---
 
+---
+title: 'Amazon WorkMail Documentation'
+canonical_url: https://docs.aws.amazon.com/workmail/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon WorkMail Documentation
 
 Amazon WorkMail is a managed email and calendaring service that offers strong security controls and support for existing desktop and mobile clients.

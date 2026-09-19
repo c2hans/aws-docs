@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/mgn/index.html
 ---
 
+---
+title: 'AWS Transform MGN Documentation'
+canonical_url: https://docs.aws.amazon.com/mgn/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Transform MGN Documentation
 
 AWS Transform MGN (MGN) is a highly automated lift-and-shift (rehost) solution that simplifies, expedites, and reduces the cost of migrating applications to AWS.

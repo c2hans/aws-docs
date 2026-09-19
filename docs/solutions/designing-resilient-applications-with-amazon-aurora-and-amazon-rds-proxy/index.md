@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/designing-resilient-applications-with-amazon-aurora-and-amazon-rds-proxy/index.html
 ---
 
+---
+title: 'Guidance for Designing Resilient Applications with Amazon Aurora and Amazon RDS Proxy'
+canonical_url: https://docs.aws.amazon.com/solutions/designing-resilient-applications-with-amazon-aurora-and-amazon-rds-proxy/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Designing Resilient Applications with Amazon Aurora and Amazon RDS Proxy
 
 ## Overview

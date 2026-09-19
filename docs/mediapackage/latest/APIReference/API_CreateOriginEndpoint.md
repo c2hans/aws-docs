@@ -190,6 +190,7 @@ Content-type: application/json
       "TsUseAudioRenditionGroup": {{boolean}}
    },
    "StartoverWindowSeconds": {{number}},
+   "StreamNameOutputMode": "{{string}}",
    "Tags": {
       "{{string}}" : "{{string}}"
    },
@@ -277,6 +278,13 @@ Required: No
 The size of the window (in seconds) to create a window of the live stream that's available for on-demand viewing. Viewers can start-over or catch-up on content that falls within the window. The maximum startover window is 1,209,600 seconds (14 days).
 Type: Integer
 Valid Range: Minimum value of 0. Maximum value of 1209600.
+Required: No
+
+ ** [StreamNameOutputMode](#API_CreateOriginEndpoint_RequestSyntax) **   <a name="mediapackage-CreateOriginEndpoint-request-StreamNameOutputMode"></a>
+The output mode for stream names in egress manifests. This setting is valid only when the associated channel's `InputType` is `HLS`. You can't change the stream name output mode after you create the endpoint.
+ `INDEX` uses numeric indices for stream names (for example, 1, 2, 3). `PASSTHROUGH_NAME` uses the stream names from the input manifest. If you don't specify a value, the default is `INDEX`.
+Type: String
+Valid Values: `INDEX | PASSTHROUGH_NAME`
 Required: No
 
  ** [Tags](#API_CreateOriginEndpoint_RequestSyntax) **   <a name="mediapackage-CreateOriginEndpoint-request-Tags"></a>
@@ -484,6 +492,7 @@ Content-type: application/json
       "TsUseAudioRenditionGroup": boolean
    },
    "StartoverWindowSeconds": number,
+   "StreamNameOutputMode": "string",
    "Tags": {
       "string" : "string"
    },
@@ -571,6 +580,11 @@ Type: [Segment](API_Segment.md) object
  ** [StartoverWindowSeconds](#API_CreateOriginEndpoint_ResponseSyntax) **   <a name="mediapackage-CreateOriginEndpoint-response-StartoverWindowSeconds"></a>
 The size of the window (in seconds) to create a window of the live stream that's available for on-demand viewing. Viewers can start-over or catch-up on content that falls within the window.
 Type: Integer
+
+ ** [StreamNameOutputMode](#API_CreateOriginEndpoint_ResponseSyntax) **   <a name="mediapackage-CreateOriginEndpoint-response-StreamNameOutputMode"></a>
+The output mode for stream names in egress manifests for this origin endpoint.
+Type: String
+Valid Values: `INDEX | PASSTHROUGH_NAME`
 
  ** [Tags](#API_CreateOriginEndpoint_ResponseSyntax) **   <a name="mediapackage-CreateOriginEndpoint-response-Tags"></a>
 The comma-separated list of tag key:value pairs assigned to the origin endpoint.

@@ -67,12 +67,14 @@ Required: No
    "awsDevice": "string",
    "awsDeviceV2": "string",
    "awsLogicalDeviceId": "string",
+   "billingMode": "string",
    "connections": [
       {
          "awsDevice": "string",
          "awsDeviceV2": "string",
          "awsLogicalDeviceId": "string",
          "bandwidth": "string",
+         "billingMode": "string",
          "connectionId": "string",
          "connectionName": "string",
          "connectionState": "string",
@@ -180,6 +182,11 @@ Type: String
  ** [awsLogicalDeviceId](#API_UpdateLag_ResponseSyntax) **   <a name="DX-UpdateLag-response-awsLogicalDeviceId"></a>
 The Direct Connect endpoint that terminates the logical connection. This device might be different than the device that terminates the physical connection.
 Type: String
+
+ ** [billingMode](#API_UpdateLag_ResponseSyntax) **   <a name="DX-UpdateLag-response-billingMode"></a>
+The billing mode of the LAG.
+Type: String
+Valid Values: `PayAsYouGo | FlatRateTier1 | FlatRateTier2 | FlatRateTier3 | FlatRateTier4 | FlatRateTier5 | PortPairFlatRateTier1 | PortPairFlatRateTier2 | PortPairFlatRateTier3 | PortPairFlatRateTier4 | PortPairFlatRateTier5`
 
  ** [connections](#API_UpdateLag_ResponseSyntax) **   <a name="DX-UpdateLag-response-connections"></a>
 The connections bundled by the LAG.

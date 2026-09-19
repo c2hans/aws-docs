@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/bioinformatics-workflow-development-using-devops-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Bioinformatics Workflow Development Using DevOps on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/bioinformatics-workflow-development-using-devops-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Bioinformatics Workflow Development Using DevOps on AWS
 
 Important: This Guidance requires the use of AWS CodeCommit, which is no longer available to new customers. Existing customers of AWS CodeCommit can continue using and deploying this Guidance as normal.

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/security-lake/index.html
 ---
 
+---
+title: 'Amazon Security Lake Documentation'
+canonical_url: https://docs.aws.amazon.com/security-lake/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Security Lake Documentation
 
 Amazon Security Lake is a fully-managed security data lake service. You can use Security Lake to aggregate and centrally manage security-related log and event data at scale.

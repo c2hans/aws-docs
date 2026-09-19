@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/ecs/index.html
 ---
 
+---
+title: 'Amazon Elastic Container Service Documentation'
+canonical_url: https://docs.aws.amazon.com/ecs/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Elastic Container Service Documentation
 
 Amazon Elastic Container Service (Amazon ECS) is a fully managed container orchestration service that helps you to more efficiently deploy, manage, and scale containerized applications. It deeply integrates with the AWS environment to provide an easy-to-use solution for running container workloads in the cloud and on premises with advanced security features using Amazon ECS Anywhere.

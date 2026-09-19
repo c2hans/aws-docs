@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/emr/index.html
 ---
 
+---
+title: 'Amazon EMR Documentation'
+canonical_url: https://docs.aws.amazon.com/emr/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon EMR Documentation
 
 Amazon EMR is a web service that makes it easy to process vast amounts of data efficiently using Apache Hadoop and services offered by Amazon Web Services.

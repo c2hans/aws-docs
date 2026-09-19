@@ -21,7 +21,17 @@ The template launches in the US East (N.Virginia) Region by default. To launch t
 1. On the **Specify stack** details page, enter a stack name for your solution stack. For information about naming character limitations, see [IAM and AWS STS quotas, name requirements, and character limits](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-limits.html) in the AWS Identity and Access Management User Guide.
 
 1. Under **Parameters**, review the parameters for this solution template and modify them as necessary. This solution uses the following default values.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/step3-deploy-data-stack.html)
+
+<table>
+<thead>
+  <tr><th>Parameter</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td> <b>Namespace</b> </td><td> {{myisb}} </td><td>Use the same namespace from the Account Pool stack deployment of Innovation Sandbox. For example, <b>myisb</b>.</td></tr>
+  <tr><td> <b>SAML Metadata URL</b> </td><td> <i>(none)</i> </td><td>The metadata URL of the IAM Identity Center SAML 2.0 application you created in <a href="create-saml-app.md">Create a SAML 2.0 application</a>. Amazon Cognito uses this URL to federate authentication to IAM Identity Center. Required.</td></tr>
+  <tr><td> <b>AWS Access Portal URL</b> </td><td> <i>(none)</i> </td><td>The IAM Identity Center access portal URL. The solution uses this to generate direct links to sandbox accounts in the web UI. Find it on the IAM Identity Center console <b>Dashboard</b> under <b>Settings summary</b>.</td></tr>
+</tbody>
+</table>
 
 1. Choose **Next**.
 

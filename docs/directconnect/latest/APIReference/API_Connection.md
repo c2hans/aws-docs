@@ -31,6 +31,12 @@ The bandwidth of the connection.
 Type: String
 Required: No
 
+ ** billingMode **   <a name="DX-Type-Connection-billingMode"></a>
+The billing mode of the connection.
+Type: String
+Valid Values: `PayAsYouGo | FlatRateTier1 | FlatRateTier2 | FlatRateTier3 | FlatRateTier4 | FlatRateTier5 | PortPairFlatRateTier1 | PortPairFlatRateTier2 | PortPairFlatRateTier3 | PortPairFlatRateTier4 | PortPairFlatRateTier5`
+Required: No
+
  ** connectionId **   <a name="DX-Type-Connection-connectionId"></a>
 The ID of the connection.
 Type: String

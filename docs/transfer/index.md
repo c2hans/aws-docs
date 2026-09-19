@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/transfer/index.html
 ---
 
+---
+title: 'AWS Transfer Family Documentation'
+canonical_url: https://docs.aws.amazon.com/transfer/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Transfer Family Documentation
 
 AWS Transfer Family is a secure transfer service that stores your data in Amazon Simple Storage Service or Amazon Elastic File System and simplifies the migration of Secure File Transfer Protocol (SFTP), File Transfer Protocol Secure (FTPS), File Transfer Protocol (FTP), and Applicability Statement 2 (AS2) workflows to AWS.

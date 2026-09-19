@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/ground-station/index.html
 ---
 
+---
+title: 'AWS Ground Station Documentation'
+canonical_url: https://docs.aws.amazon.com/ground-station/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Ground Station Documentation
 
 AWS Ground Station is a fully managed service that enables you to control satellite communications, process satellite data, and scale your satellite operations. With AWS Ground Station, you don't have to build or manage your own ground station infrastructure.

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/audit-manager/index.html
 ---
 
+---
+title: 'AWS Audit Manager Documentation'
+canonical_url: https://docs.aws.amazon.com/audit-manager/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Audit Manager Documentation
 
 AWS Audit Manager helps you continuously audit your AWS usage to simplify how you manage risk and compliance with regulations and industry standards. AWS Audit Manager makes it easier to evaluate whether your policies, procedures, and activities—also known as controls—are operating as intended. The service offers prebuilt frameworks with controls that are mapped to well-known industry standards and regulations, full customization of frameworks and controls, and automated collection and organization of evidence as designed by each control requirement.

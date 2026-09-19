@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/sagemaker/index.html
 ---
 
+---
+title: 'Amazon SageMaker AI Documentation'
+canonical_url: https://docs.aws.amazon.com/sagemaker/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Amazon SageMaker AI Documentation
 
 Amazon SageMaker AI is a fully managed machine learning service. With Amazon SageMaker AI, data scientists and developers can quickly build and train machine learning models, and then deploy them into a production-ready hosted environment.

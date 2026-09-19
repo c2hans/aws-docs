@@ -52,12 +52,14 @@ Required: No
          "awsDevice": "string",
          "awsDeviceV2": "string",
          "awsLogicalDeviceId": "string",
+         "billingMode": "string",
          "connections": [
             {
                "awsDevice": "string",
                "awsDeviceV2": "string",
                "awsLogicalDeviceId": "string",
                "bandwidth": "string",
+               "billingMode": "string",
                "connectionId": "string",
                "connectionName": "string",
                "connectionState": "string",

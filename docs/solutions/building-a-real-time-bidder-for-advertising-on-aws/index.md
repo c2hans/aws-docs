@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/building-a-real-time-bidder-for-advertising-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Building a Real Time Bidder for Advertising on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/building-a-real-time-bidder-for-advertising-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Building a Real Time Bidder for Advertising on AWS
 
 ## Overview

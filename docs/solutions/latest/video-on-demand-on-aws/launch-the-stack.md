@@ -22,7 +22,22 @@ This solution uses AWS Elemental MediaConvert and AWS Elemental MediaPackage, wh
 1. On the **Specify stack details** page, assign a name to your solution stack. For information about naming character limitations, refer to [IAM and AWS STS quotas, name requirements, and character limits](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-limits.html) in the *AWS Identity and Access Management User Guide*.
 
 1. Under **Parameters**, review the parameters for this solution template and modify them as necessary. This solution uses the following default values.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws/launch-the-stack.html)
+
+<table>
+<thead>
+  <tr><th>Parameter</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td> <b>Notification Email Address</b> </td><td> {{&lt;Requires input&gt;}} </td><td>A valid email address to receive Amazon SNS notifications.</td></tr>
+  <tr><td> <b>Workflow Trigger</b> </td><td> {{&lt;Requires input&gt;}} </td><td>Choose <code>VideoFile</code> to ingest source videos only; choose <code>MetadataFile</code> to ingest metadata files and source videos.</td></tr>
+  <tr><td> <b>Archive Source Content</b> </td><td> <code>false</code> </td><td>Choose <code>GLACIER</code> to activate an Amazon S3 lifecycle policy on the source bucket to move applicable files to Amazon S3 Glacier after seven days, DEEP_ARCHIVE to move to Glacier Deep Archive.</td></tr>
+  <tr><td> <b>Enable SNS</b> </td><td> <code>true</code> </td><td>Choose <code>true</code> receive SNS notifications for the ingest and pushlish workflows. Choose <code>false</code> to only receive error messages.</td></tr>
+  <tr><td> <b>Enable SQS</b> </td><td> <code>true</code> </td><td>Choose <code>true</code> to deploy an SQS queue for publishing messages.</td></tr>
+  <tr><td> <b>Enable Frame Capture</b> </td><td> <code>false</code> </td><td>Choose <code>true</code> to create thumbnails for each AWS Elemental MediaConvert output.</td></tr>
+  <tr><td> <b>Accelerated Transcoding</b> </td><td> <code>PREFERRED</code> </td><td>Choose <code>PREFERRED</code> to activate Accelerated Transcoding for supported file types (recommended), ENABLE to apply to all encoding jobs.</td></tr>
+  <tr><td> <b>Enable MediaPackage</b> </td><td> <code>false</code> </td><td>Choose <code>true</code> to activate AWS Elemental MediaPackage as part of the workflow.</td></tr>
+</tbody>
+</table>
 
 1. Choose **Next**.
 

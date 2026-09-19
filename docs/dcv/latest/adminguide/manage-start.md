@@ -42,21 +42,19 @@ Manually start the Amazon DCV server using the command line.
 
 **To start the Amazon DCV server on Linux**
 Use the following commands:
-+ RHEL, CentOS, SUSE Linux Enterprise 12, and Ubuntu 18.x
 
-  ```
-  $ sudo systemctl start dcvserver
-  ```
+```
+$ sudo systemctl start dcvserver
+```
 
 Configure the Amazon DCV server to start automatically using the command line.
 
 **To configure the Amazon DCV server to start automatically on Linux**
 Use the following commands:
-+ RHEL, CentOS, SUSE Linux Enterprise 12, and Ubuntu 18.x
 
-  ```
-  $ sudo systemctl enable dcvserver
-  ```
+```
+$ sudo systemctl enable dcvserver
+```
 
 ------
 #### [ macOS Amazon DCV server ]
@@ -65,20 +63,18 @@ Manually start the Amazon DCV server using the command line.
 
 **To start the Amazon DCV server on macOS**
 Use the following commands:
-+
 
-  ```
-  $ sudo launchctl start com.amazon.dcv.server.dcvserver
-  ```
+```
+$ sudo launchctl start com.amazon.dcv.server.dcvserver
+```
 
 Configure the Amazon DCV server to start automatically using the command line.
 
 **To configure the Amazon DCV server to start automatically on macOS**
 Use the following commands:
-+
 
-  ```
-  $ sudo launchctl enable system/com.amazon.dcv.server.dcvserver
-  ```
+```
+$ sudo launchctl enable system/com.amazon.dcv.server.dcvserver
+```
 
 ------

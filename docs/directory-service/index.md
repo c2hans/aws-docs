@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/directory-service/index.html
 ---
 
+---
+title: 'Directory Service Documentation'
+canonical_url: https://docs.aws.amazon.com/directory-service/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Directory Service Documentation
 
 Directory Service provides multiple ways to set up and run Microsoft Active Directory with other AWS services such as Amazon EC2, Amazon RDS for SQL Server, FSx for Windows File Server, and AWS IAM Identity Center. Directory Service for Microsoft Active Directory, also known as AWS Managed Microsoft AD, enables your directory-aware workloads and AWS resources to use a managed Active Directory in the AWS Cloud.

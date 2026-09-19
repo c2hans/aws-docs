@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/cross-region-failover-and-graceful-failback-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Cross Region Failover & Graceful Failback on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/cross-region-failover-and-graceful-failback-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Cross Region Failover & Graceful Failback on AWS
 
 ## Overview

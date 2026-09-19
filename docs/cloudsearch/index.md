@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/cloudsearch/index.html
 ---
 
+---
+title: 'Amazon CloudSearch Documentation'
+canonical_url: https://docs.aws.amazon.com/cloudsearch/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon CloudSearch Documentation
 
 Amazon CloudSearch is a fully managed service in the cloud that makes it easy to set up, manage, and scale a search solution for your website. Amazon CloudSearch enables you to search large collections of data such as web pages, document files, forum posts, or product information. With Amazon CloudSearch, you can quickly add search capabilities to your website without having to become a search expert or worry about hardware provisioning, setup, and maintenance. As your volume of data and traffic fluctuates, Amazon CloudSearch automatically scales to meet your needs.

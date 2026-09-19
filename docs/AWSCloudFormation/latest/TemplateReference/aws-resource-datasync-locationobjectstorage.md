@@ -26,6 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[BucketName](#cfn-datasync-locationobjectstorage-bucketname)" : {{String}},
       "[CmkSecretConfig](#cfn-datasync-locationobjectstorage-cmksecretconfig)" : {{CmkSecretConfig}},
       "[CustomSecretConfig](#cfn-datasync-locationobjectstorage-customsecretconfig)" : {{CustomSecretConfig}},
+      "[FederatedIdentity](#cfn-datasync-locationobjectstorage-federatedidentity)" : {{ObjectStorageFederatedIdentityConfig}},
       "[SecretKey](#cfn-datasync-locationobjectstorage-secretkey)" : {{String}},
       "[ServerCertificate](#cfn-datasync-locationobjectstorage-servercertificate)" : {{String}},
       "[ServerHostname](#cfn-datasync-locationobjectstorage-serverhostname)" : {{String}},
@@ -51,6 +52,8 @@ Properties:
     CmkSecretConfig}}
   [CustomSecretConfig](#cfn-datasync-locationobjectstorage-customsecretconfig): {{
     CustomSecretConfig}}
+  [FederatedIdentity](#cfn-datasync-locationobjectstorage-federatedidentity): {{
+    ObjectStorageFederatedIdentityConfig}}
   [SecretKey](#cfn-datasync-locationobjectstorage-secretkey): {{String}}
   [ServerCertificate](#cfn-datasync-locationobjectstorage-servercertificate): {{String}}
   [ServerHostname](#cfn-datasync-locationobjectstorage-serverhostname): {{String}}
@@ -105,6 +108,12 @@ Specifies configuration information for a customer-managed Secrets Manager secre
 You can use either `CmkSecretConfig` (with `SecretKey`) or `CustomSecretConfig` (without `SecretKey`) to provide credentials for a `CreateLocationObjectStorage` request. Do not provide both parameters for the same request.
 *Required*: No
 *Type*: [CustomSecretConfig](aws-properties-datasync-locationobjectstorage-customsecretconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`FederatedIdentity`  <a name="cfn-datasync-locationobjectstorage-federatedidentity"></a>
+Property description not available.
+*Required*: No
+*Type*: [ObjectStorageFederatedIdentityConfig](aws-properties-datasync-locationobjectstorage-objectstoragefederatedidentityconfig.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SecretKey`  <a name="cfn-datasync-locationobjectstorage-secretkey"></a>

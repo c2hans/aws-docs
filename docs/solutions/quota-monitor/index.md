@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com//solutions/quota-monitor//index.html
 ---
 
+---
+title: 'Quota Monitor for AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/quota-monitor/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Quota Monitor for AWS
 
 Monitor resource usage and receive notifications when approaching quotas

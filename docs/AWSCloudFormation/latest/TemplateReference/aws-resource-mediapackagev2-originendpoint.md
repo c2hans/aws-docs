@@ -160,7 +160,7 @@ The size of the window (in seconds) to specify a window of the live stream that'
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `StreamNameOutputMode`  <a name="cfn-mediapackagev2-originendpoint-streamnameoutputmode"></a>
-Property description not available.
+The output mode for stream names in egress manifests for this origin endpoint.
 *Required*: No
 *Type*: String
 *Allowed values*: `INDEX | PASSTHROUGH_NAME`

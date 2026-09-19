@@ -21,6 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[Position](#cfn-medialive-channel-webvttdestinationsettings-position)" : {{TextCaptionPositionSettings}},
   "[StyleControl](#cfn-medialive-channel-webvttdestinationsettings-stylecontrol)" : {{String}}
 }
 ```
@@ -29,11 +30,19 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-medialive-channel-webvttdestinationsettings-syntax.yaml"></a>
 
 ```
+  [Position](#cfn-medialive-channel-webvttdestinationsettings-position): {{
+    TextCaptionPositionSettings}}
   [StyleControl](#cfn-medialive-channel-webvttdestinationsettings-stylecontrol): {{String}}
 ```
 
 ## Properties
 <a name="aws-properties-medialive-channel-webvttdestinationsettings-properties"></a>
+
+`Position`  <a name="cfn-medialive-channel-webvttdestinationsettings-position"></a>
+Specifies the position of the output captions. Applies only when `styleControl` is set to `MANUAL`.
+*Required*: No
+*Type*: [TextCaptionPositionSettings](aws-properties-medialive-channel-textcaptionpositionsettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `StyleControl`  <a name="cfn-medialive-channel-webvttdestinationsettings-stylecontrol"></a>
 Controls whether the color and position of the source captions is passed through to the WebVTT output captions. Valid values:

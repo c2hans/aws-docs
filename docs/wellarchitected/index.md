@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/index.html
 ---
 
+---
+title: 'AWS Well-Architected Tool Documentation'
+canonical_url: https://docs.aws.amazon.com/wellarchitected/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Well-Architected Tool Documentation
 
 Use the AWS Well-Architected Tool to review your workloads against current Amazon Web Services architectural best practices. The AWS Well-Architected Tool measures the workload and provides recommendations on how to improve your architecture.

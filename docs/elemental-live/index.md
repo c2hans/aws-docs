@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/elemental-live/index.html
 ---
 
+---
+title: 'The AWS Elemental Live suite of products'
+canonical_url: https://docs.aws.amazon.com/elemental-live/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # The AWS Elemental Live suite of products
 
 This suite includes three products: AWS Elemental Live, AWS Elemental Conductor, and AWS Elemental Statmux. AWS Elemental Live formats live video for delivery to broadcast televisions and streaming to internet-connected devices. AWS Elemental Conductor is a management system for a cluster of AWS Elemental Live nodes. AWS Elemental Statmux is an optional add-on to AWS Elemental Live (working in a Conductor cluster) that lets you create an multi program transport stream (MPTS).

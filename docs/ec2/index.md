@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/ec2/index.html
 ---
 
+---
+title: 'Amazon Elastic Compute Cloud Documentation'
+canonical_url: https://docs.aws.amazon.com/ec2/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Amazon Elastic Compute Cloud Documentation
 
 Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizable computing capacity—literally, servers in Amazon's data centers—that you use to build and host your software systems.

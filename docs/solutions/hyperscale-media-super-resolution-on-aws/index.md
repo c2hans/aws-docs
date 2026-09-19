@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/hyperscale-media-super-resolution-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Media Super Resolution on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/hyperscale-media-super-resolution-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Media Super Resolution on AWS
 
 Machine learning powers video resolution upscaling

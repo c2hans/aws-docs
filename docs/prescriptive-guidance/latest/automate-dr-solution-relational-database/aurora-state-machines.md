@@ -70,7 +70,11 @@ To perform the switchover, do the following:
 
 1. The `dr-orchestrator-stepfunction-planned-Aurora-failover` state machine performs the following steps to switch over the Aurora MySQL-Compatible global database role.
 ![State machine diagram of checking failover status.](https://docs.aws.amazon.com/prescriptive-guidance/latest/automate-dr-solution-relational-database/images/guide-img/d246ab63-9f04-4f98-b5ad-efa34d559323/images/ddd4ea6e-9c1e-4148-9a11-ae5106887ec7.jpeg)
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/automate-dr-solution-relational-database/aurora-state-machines.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
 1. Navigate to the Amazon RDS console. Under **Status**, the values for the Aurora global database will change from **Available** to **Switching over** or **Modifying**.
 

@@ -14,6 +14,8 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-password-u
 }
 ```
 
+For information about supported credential-rotation patterns, see [Rotating sign-in credentials](msk-password-rotation.md).
+
 **Revoking user access:** To revoke a user's credentials to access a cluster, we recommend that you first remove or enforce an ACL on the cluster, and then disassociate the secret. This is because of the following:
 + Removing a user does not close existing connections.
 + Changes to your secret take up to 10 minutes to propagate.

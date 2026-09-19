@@ -79,7 +79,17 @@ This support is intended for cores with size constraints. We recommend that you 
 **AWS IoT Greengrass Machine Learning SDK**  <a name="lambda-sdks-ml"></a>
 Enables local Lambda functions to consume machine learning (ML) models that are deployed to the Greengrass core as ML resources. Lambda functions can use the SDK to invoke and interact with a local inference service that's deployed to the core as a connector. Lambda functions and ML connectors can also use the SDK to send data to the ML Feedback connector for uploading and publishing. For more information, including code examples that use the SDK, see [ML Image Classification connector](image-classification-connector.md), [ML Object Detection connector](obj-detection-connector.md), and [ML Feedback connector](ml-feedback-connector.md).
 The following table lists supported languages or platforms for SDK versions and the versions of AWS IoT Greengrass Core software they can run on.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/lambda-functions.html)
+
+<table>
+<thead>
+  <tr><th>SDK version</th><th>Language or platform</th><th>Required GGC version</th><th>Changelog</th></tr>
+</thead>
+<tbody>
+  <tr><td>1.1.0</td><td>Python 3.7 or 2.7</td><td>1.9.3 or later</td><td>Added Python 3.7 support and new <code>feedback</code> client.</td></tr>
+  <tr><td>1.0.0</td><td>Python 2.7</td><td>1.7 or later</td><td>Initial release.</td></tr>
+</tbody>
+</table>
+
 For download information, see [AWS IoT Greengrass ML SDK software](what-is-gg.md#gg-ml-sdk-download).
 
 **AWS SDKs**  <a name="lambda-sdks-aws"></a>

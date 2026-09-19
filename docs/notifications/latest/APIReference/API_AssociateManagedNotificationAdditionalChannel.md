@@ -17,6 +17,7 @@ PUT /channels/associate-managed-notification/{{channelArn}} HTTP/1.1
 Content-type: application/json
 
 {
+   "isSensitiveEventsSubscribed": {{boolean}},
    "managedNotificationConfigurationArn": "{{string}}"
 }
 ```
@@ -37,10 +38,15 @@ Required: Yes
 
 The request accepts the following data in JSON format.
 
+ ** [isSensitiveEventsSubscribed](#API_AssociateManagedNotificationAdditionalChannel_RequestSyntax) **   <a name="Notifications-AssociateManagedNotificationAdditionalChannel-request-isSensitiveEventsSubscribed"></a>
+Specifies whether this channel is subscribed to sensitive events. The `notifications:SubscribeSensitiveEvents` permission controls access to sensitive events. Defaults to false.
+Type: Boolean
+Required: No
+
  ** [managedNotificationConfigurationArn](#API_AssociateManagedNotificationAdditionalChannel_RequestSyntax) **   <a name="Notifications-AssociateManagedNotificationAdditionalChannel-request-managedNotificationConfigurationArn"></a>
 The Amazon Resource Name (ARN) of the `ManagedNotificationConfiguration` to associate with the additional Channel.
 Type: String
-Pattern: `arn:[-.a-z0-9]{1,63}:notifications::[0-9]{12}:managed-notification-configuration/category/[a-zA-Z0-9\-]{3,64}/sub-category/[a-zA-Z0-9\-]{3,64}`
+Pattern: `arn:[a-z-]{3,10}:notifications::[0-9]{12}:managed-notification-configuration/category/[a-zA-Z0-9\-]{3,64}/sub-category/[a-zA-Z0-9\-]{3,64}`
 Required: Yes
 
 ## Response Syntax

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/iot-expresslink/index.html
 ---
 
+---
+title: 'ExpressLink Documentation'
+canonical_url: https://docs.aws.amazon.com/iot-expresslink/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # ExpressLink Documentation
 
 ExpressLink hardware modules are pre-programmed to connect to AWS IoT services and are pre-loaded with security credentials. They allow original equipment manufacturers (OEMs) to connect many different products to the cloud, send data and commands using simple commands, and use AWS services to address their data storage, analytics, and machine learning (ML) needs.

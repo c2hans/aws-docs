@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/demand-forecasting-for-retail-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Demand Forecasting for Retail on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/demand-forecasting-for-retail-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Demand Forecasting for Retail on AWS
 
 Prepare for customer demand with accurate forecasts powered by machine learning

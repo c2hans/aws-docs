@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/cloudwatch/index.html
 ---
 
+---
+title: 'Amazon CloudWatch Documentation'
+canonical_url: https://docs.aws.amazon.com/cloudwatch/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon CloudWatch Documentation
 
 Amazon CloudWatch provides a reliable, scalable, and flexible monitoring solution that you can start using within minutes. You no longer need to set up, manage, and scale your own monitoring systems and infrastructure.

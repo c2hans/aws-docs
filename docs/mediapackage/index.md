@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/mediapackage/index.html
 ---
 
+---
+title: 'AWS Elemental MediaPackage Documentation'
+canonical_url: https://docs.aws.amazon.com/mediapackage/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # AWS Elemental MediaPackage Documentation
 
 AWS Elemental MediaPackage is a just-in-time video packaging and origination service that delivers highly secure, scalable, and reliable video streams to a wide variety of playback devices. AWS Elemental MediaPackage enriches audience experience with live, video on demand (VOD), live-to-VOD, and catch-up TV features.

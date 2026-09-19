@@ -213,7 +213,21 @@ Not all CAs provide the same level of support for elliptic-curve-based keys as f
    ```
 
    OpenSSL opens a dialog and prompts you for the information shown in the following table. All of the fields except **Common Name** are optional for a basic, domain-validated host certificate.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/linux/al2023/ug/SSL-on-amazon-linux-2023.html)
+
+<table>
+<thead>
+  <tr><th>Name</th><th>Description</th><th>Example</th></tr>
+</thead>
+<tbody>
+  <tr><td>Country Name</td><td>The two-letter ISO abbreviation for your country.</td><td>US (=United States)</td></tr>
+  <tr><td>State or Province Name</td><td>The name of the state or province where your organization is located. This name cannot be abbreviated.</td><td>Washington</td></tr>
+  <tr><td>Locality Name</td><td>The location of your organization, such as a city.</td><td>Seattle</td></tr>
+  <tr><td>Organization Name</td><td>The full legal name of your organization. Do not abbreviate your organization name.</td><td>Example Corporation</td></tr>
+  <tr><td>Organizational Unit Name</td><td>Additional organizational information, if any.</td><td>Example Dept</td></tr>
+  <tr><td>Common Name</td><td>This value must exactly match the web address that you expect users to enter into a browser. Usually, this means a domain name with a prefixed hostname or alias in the form <b>www.example.com</b>. In testing with a self-signed certificate and no DNS resolution, the common name may consist of the hostname alone. CAs also offer more expensive certificates that accept wild-card names such as <b>*.example.com</b>.</td><td>www.example.com</td></tr>
+  <tr><td>Email Address</td><td>The server administrator's email address.</td><td>someone@example.com</td></tr>
+</tbody>
+</table>
 
    Finally, OpenSSL prompts you for an optional challenge password. This password applies only to the CSR and to transactions between you and your CA, so follow the CA's recommendations about this and the other optional field, optional company name. The CSR challenge password has no effect on server operation.
 

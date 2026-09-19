@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/MAP/index.html
 ---
 
+---
+title: 'AWS Migration Acceleration Program Documentation'
+canonical_url: https://docs.aws.amazon.com/MAP/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Migration Acceleration Program Documentation
 
 Learn how to tag your migrated resources and track your progress with the AWS Migration Acceleration Program (MAP) 2.0.

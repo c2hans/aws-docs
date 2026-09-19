@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/securing-operational-technology-assets-with-dragos-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Securing Operational Technology (OT) Assets with Dragos on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/securing-operational-technology-assets-with-dragos-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Securing Operational Technology (OT) Assets with Dragos on AWS
 
 Reduce attack surface and vulnerabilities with a cybersecurity solution to protect your critical infrastructure

@@ -9,6 +9,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 **Resource types**
 + [AWS::IoTSiteWise::AccessPolicy](aws-resource-iotsitewise-accesspolicy.md)
++ [AWS::IoTSiteWise::Application](aws-resource-iotsitewise-application.md)
 + [AWS::IoTSiteWise::Asset](aws-resource-iotsitewise-asset.md)
 + [AWS::IoTSiteWise::AssetModel](aws-resource-iotsitewise-assetmodel.md)
 + [AWS::IoTSiteWise::ComputationModel](aws-resource-iotsitewise-computationmodel.md)

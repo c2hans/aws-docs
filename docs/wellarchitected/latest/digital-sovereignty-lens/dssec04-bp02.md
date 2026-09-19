@@ -59,7 +59,16 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
      +  Mitigation: Analyze and baseline vendor documentation, certifications and attestations. Verify contractual agreements. Document net legal safeguards and residual risks.
 
     An example sovereignty threat enumeration:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/wellarchitected/latest/digital-sovereignty-lens/dssec04-bp02.html)
+
+<table>
+<thead>
+  <tr><th> Threat ID </th><th> Category </th><th> Description </th><th> Affected Assets </th><th> Likelihood </th><th> Impact </th><th> Mitigation </th><th> Owner </th></tr>
+</thead>
+<tbody>
+  <tr><td> SOV-001 </td><td> UCDT </td><td> S3 replication to foreign jurisdiction </td><td> EU data </td><td> Medium </td><td> High </td><td> Block replication </td><td> Security </td></tr>
+  <tr><td> SOV-002 </td><td> TPSR </td><td> Third-party services process data outside jurisdiction </td><td> EU data </td><td> Medium </td><td> High </td><td> Review agreements </td><td> Legal </td></tr>
+</tbody>
+</table>
 
 1.  **Identify coverage gaps**: Map the output of threat modeling exercises to the detective controls and supporting telemetry data. Identify critical gaps and formulate remediation strategies. Consider other telemetry data produced by non-security sources such as system events or application logs. This data can provide insights or increase confidence when you correlate it with security logs.
 

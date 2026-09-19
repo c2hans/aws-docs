@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/launchwizard/index.html
 ---
 
+---
+title: 'AWS Launch Wizard Documentation'
+canonical_url: https://docs.aws.amazon.com/launchwizard/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Launch Wizard Documentation
 
 AWS Launch Wizard helps you reduce the time that it takes to deploy application and domain-controller solutions to the cloud. You provide your application or domain controller requirements, and AWS Launch Wizard identifies the right AWS resources to deploy and run your solution. AWS Launch Wizard estimates the cost of the deployment, lets you modify your resources, and then view the updated cost assessment. Then, after you approve, AWS Launch Wizard provisions and configures the selected resources in a few hours to create fully-functioning, production-ready applications or domain controllers. It also creates custom CloudFormation templates, which you can reuse and customize for subsequent deployments.

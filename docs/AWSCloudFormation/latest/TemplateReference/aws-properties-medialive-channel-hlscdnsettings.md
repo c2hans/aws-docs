@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[HlsAkamaiSettings](#cfn-medialive-channel-hlscdnsettings-hlsakamaisettings)" : {{HlsAkamaiSettings}},
   "[HlsBasicPutSettings](#cfn-medialive-channel-hlscdnsettings-hlsbasicputsettings)" : {{HlsBasicPutSettings}},
   "[HlsMediaStoreSettings](#cfn-medialive-channel-hlscdnsettings-hlsmediastoresettings)" : {{HlsMediaStoreSettings}},
-  "[HlsS3Settings](#cfn-medialive-channel-hlscdnsettings-hlss3settings)" : {{HlsS3Settings}},
+  "[HlsS3Settings](#cfn-medialive-channel-hlscdnsettings-hlss3settings)" : {{ArchiveFrameCaptureHlsS3Settings}},
   "[HlsWebdavSettings](#cfn-medialive-channel-hlscdnsettings-hlswebdavsettings)" : {{HlsWebdavSettings}}
 }
 ```
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   [HlsMediaStoreSettings](#cfn-medialive-channel-hlscdnsettings-hlsmediastoresettings): {{
     HlsMediaStoreSettings}}
   [HlsS3Settings](#cfn-medialive-channel-hlscdnsettings-hlss3settings): {{
-    HlsS3Settings}}
+    ArchiveFrameCaptureHlsS3Settings}}
   [HlsWebdavSettings](#cfn-medialive-channel-hlscdnsettings-hlswebdavsettings): {{
     HlsWebdavSettings}}
 ```
@@ -69,7 +69,7 @@ Sets up MediaStore as the destination for the HLS output.
 `HlsS3Settings`  <a name="cfn-medialive-channel-hlscdnsettings-hlss3settings"></a>
 Sets up Amazon S3 as the destination for this HLS output.
 *Required*: No
-*Type*: [HlsS3Settings](aws-properties-medialive-channel-hlss3settings.md)
+*Type*: [ArchiveFrameCaptureHlsS3Settings](aws-properties-medialive-channel-archiveframecapturehlss3settings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `HlsWebdavSettings`  <a name="cfn-medialive-channel-hlscdnsettings-hlswebdavsettings"></a>

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/piping-and-instrumentation-diagram-digitization-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Piping and Instrumentation Diagrams Digitization on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/piping-and-instrumentation-diagram-digitization-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Piping and Instrumentation Diagrams Digitization on AWS
 
 ## Overview

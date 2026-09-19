@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/content-management-using-salesforce-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Content Management Using Salesforce on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/content-management-using-salesforce-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Content Management Using Salesforce on AWS
 
 AI-powered content creation for deeper customer engagement with Salesforce on AWS

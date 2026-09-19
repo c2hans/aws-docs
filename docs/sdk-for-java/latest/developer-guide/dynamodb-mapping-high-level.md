@@ -13,7 +13,18 @@ You interact with the two libraries in much the same way: you instantiate a mapp
 
 Notable differences when you move to V2 include:
 + V2 and V1 use different method names for the low-level DynamoDB operations. For example:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/dynamodb-mapping-high-level.html)
+
+<table>
+<thead>
+  <tr><th>V1</th><th>V2</th></tr>
+</thead>
+<tbody>
+  <tr><td>load</td><td>getItem</td></tr>
+  <tr><td>save</td><td>putItem</td></tr>
+  <tr><td>batchLoad</td><td>batchGetItem</td></tr>
+</tbody>
+</table>
+
 + V2 offers multiple ways to define table schemas and map POJOs to tables. You can choose from the use of annotations or a schema generated from code using a builder. V2 also offers mutable and immutable versions of schemas.
 + With V2, you specifically create the table schema as one of the first steps, whereas in V1, the table schema is inferred from the annotated class as needed.
 + V2 includes the [Document API client ](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/document/EnhancedDocument.html) in the enhanced client API, whereas V1 uses a [separate API](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/dynamodbv2/document/DynamoDB.html).

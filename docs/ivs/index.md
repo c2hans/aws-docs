@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/ivs/index.html
 ---
 
+---
+title: 'Amazon Interactive Video Service Documentation'
+canonical_url: https://docs.aws.amazon.com/ivs/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Interactive Video Service Documentation
 
 Amazon Interactive Video Service (IVS) is a managed, live-video streaming service with both low-latency and real-time streaming capabilities. It handles everything from video ingesting and transcoding to global distribution for playback, so you can focus on building your own interactive application and audience experience. With Amazon IVS, you can stream without needing to manage or develop components on your own.

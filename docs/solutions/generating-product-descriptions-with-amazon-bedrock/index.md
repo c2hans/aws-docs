@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/generating-product-descriptions-with-amazon-bedrock/index.html
 ---
 
+---
+title: 'Guidance for Generating Product Descriptions with Amazon Bedrock'
+canonical_url: https://docs.aws.amazon.com/solutions/generating-product-descriptions-with-amazon-bedrock/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Generating Product Descriptions with Amazon Bedrock
 
 Reach your target audience with artificial intelligence (AI)-generated product descriptions

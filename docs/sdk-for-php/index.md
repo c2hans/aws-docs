@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/sdk-for-php/index.html
 ---
 
+---
+title: 'AWS SDK for PHP Documentation'
+canonical_url: https://docs.aws.amazon.com/sdk-for-php/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS SDK for PHP Documentation
 
 Get started quickly using Amazon Web Services with the AWS SDK for PHP. The SDK is a modern, open source PHP library that makes it easy to integrate your PHP application with AWS services like Amazon S3, Amazon Glacier, and Amazon DynamoDB.

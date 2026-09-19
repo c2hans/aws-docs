@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/directconnect/index.html
 ---
 
+---
+title: 'Direct Connect Documentation'
+canonical_url: https://docs.aws.amazon.com/directconnect/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Direct Connect Documentation
 
 Direct Connect establishes a dedicated network connection between your on-premises network and AWS. With this connection in place, you can create virtual interfaces directly to the AWS Cloud, bypassing your internet service provider. This can provide a more consistent network experience.

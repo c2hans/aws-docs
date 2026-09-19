@@ -39,7 +39,7 @@ The request accepts the following data in JSON format.
  ** [managedNotificationConfigurationArn](#API_DisassociateManagedNotificationAdditionalChannel_RequestSyntax) **   <a name="Notifications-DisassociateManagedNotificationAdditionalChannel-request-managedNotificationConfigurationArn"></a>
 The Amazon Resource Name (ARN) of the Managed Notification Configuration to associate with the additional Channel.
 Type: String
-Pattern: `arn:[-.a-z0-9]{1,63}:notifications::[0-9]{12}:managed-notification-configuration/category/[a-zA-Z0-9\-]{3,64}/sub-category/[a-zA-Z0-9\-]{3,64}`
+Pattern: `arn:[a-z-]{3,10}:notifications::[0-9]{12}:managed-notification-configuration/category/[a-zA-Z0-9\-]{3,64}/sub-category/[a-zA-Z0-9\-]{3,64}`
 Required: Yes
 
 ## Response Syntax

@@ -52,11 +52,30 @@ To use Coinbase as a payment provider, you must also subscribe to the **Coinbase
 1. Log in to the [Coinbase Developer Platform](https://portal.cdp.coinbase.com/) and create or log in to your account. Select a project.
 
 1.  Navigate to your [**API Keys**](https://portal.cdp.coinbase.com/projects/api-keys) dashboard, choose **Create secret API Key**, and note the following values. Go back to your project.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/payments-prerequisites.html)
+
+<table>
+<thead>
+  <tr><th>Credential</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>API Key ID</code> </td><td>The public identifier for your CDP project</td></tr>
+  <tr><td> <code>API Key Secret</code> </td><td>The private secret used to sign API requests to the CDP control plane</td></tr>
+</tbody>
+</table>
+
 ![Coinbase CDP API key generation](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/images/payments/coinbase-api-key.png)
 
 1.  Under **Products** > **Wallets** > **Non-custodial Wallet** > **Security**, choose **Generate new** under **Generate Wallet secret** and note the following value:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/payments-prerequisites.html)
+
+<table>
+<thead>
+  <tr><th>Credential</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>Wallet Secret</code> </td><td>A specialized secret for cryptographic wallet operations such as deriving addresses and signing transactions</td></tr>
+</tbody>
+</table>
+
 ![Coinbase CDP Wallet secret generation](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/images/payments/coinbase-wallet-secret.png)
 
 1. Under **Products** > **Wallets** > **Non-custodial Wallet** > **Security**, enable **Delegated signing**.
@@ -73,7 +92,18 @@ If you plan to use Privy for user-owned embedded wallet flows, obtain the follow
 1. Copy the **App ID** and **App Secret** from your app settings.
 
 1. In your Privy app, navigate to **Wallet Infrastructure** > **Authorization** and choose **New Key** to generate a P-256 key pair. Note the following values:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/payments-prerequisites.html)
+
+<table>
+<thead>
+  <tr><th>Credential</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>App ID</code> </td><td>Your Privy application identifier, sent as the <code>privy-app-id</code> header on API calls</td></tr>
+  <tr><td> <code>App Secret</code> </td><td>Secret credential paired with the App ID, used for server-to-server Basic Auth</td></tr>
+  <tr><td> <code>Authorization ID</code> (Signer ID)</td><td>The public key identifier from the generated P-256 key pair</td></tr>
+  <tr><td> <code>Authorization Private Key</code> </td><td>The private key from the generated P-256 key pair, used for signing wallet operations.</td></tr>
+</tbody>
+</table>
 
 ![Privy key dialog for AgentCore payments](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/images/payments/privy-keys.png)
 

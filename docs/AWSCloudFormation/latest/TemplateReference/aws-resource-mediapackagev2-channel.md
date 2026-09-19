@@ -28,6 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[Description](#cfn-mediapackagev2-channel-description)" : {{String}},
       "[InputSwitchConfiguration](#cfn-mediapackagev2-channel-inputswitchconfiguration)" : {{InputSwitchConfiguration}},
       "[InputType](#cfn-mediapackagev2-channel-inputtype)" : {{String}},
+      "[MultiviewConfiguration](#cfn-mediapackagev2-channel-multiviewconfiguration)" : {{MultiviewConfiguration}},
       "[OutputHeaderConfiguration](#cfn-mediapackagev2-channel-outputheaderconfiguration)" : {{OutputHeaderConfiguration}},
       "[OutputLockingMode](#cfn-mediapackagev2-channel-outputlockingmode)" : {{String}},
       "[Tags](#cfn-mediapackagev2-channel-tags)" : {{[ Tag, ... ]}}
@@ -47,6 +48,8 @@ Properties:
   [InputSwitchConfiguration](#cfn-mediapackagev2-channel-inputswitchconfiguration): {{
     InputSwitchConfiguration}}
   [InputType](#cfn-mediapackagev2-channel-inputtype): {{String}}
+  [MultiviewConfiguration](#cfn-mediapackagev2-channel-multiviewconfiguration): {{
+    MultiviewConfiguration}}
   [OutputHeaderConfiguration](#cfn-mediapackagev2-channel-outputheaderconfiguration): {{
     OutputHeaderConfiguration}}
   [OutputLockingMode](#cfn-mediapackagev2-channel-outputlockingmode): {{String}}
@@ -90,14 +93,21 @@ The configuration for input switching based on the media quality confidence scor
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `InputType`  <a name="cfn-mediapackagev2-channel-inputtype"></a>
-The input type will be an immutable field which will be used to define whether the channel will allow CMAF ingest or HLS ingest. If unprovided, it will default to HLS to preserve current behavior.
+The input type is an immutable field. It defines whether the channel allows CMAF ingest, HLS ingest, or server-side multiview output. Multiview channels receive no ingest of their own. If unprovided, the value defaults to HLS.
 The allowed values are:
 + `HLS` - The HLS streaming specification (which defines M3U8 manifests and TS segments).
 + `CMAF` - The DASH-IF CMAF Ingest specification (which defines CMAF segments with optional DASH manifests).
++ `MULTIVIEW` – Server-side multiview. The channel receives no ingest of its own. Instead, it composites video from the source channels in its `MultiviewConfiguration` into a single tiled output stream.
 *Required*: No
 *Type*: String
-*Allowed values*: `HLS | CMAF`
+*Allowed values*: `HLS | CMAF | MULTIVIEW`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`MultiviewConfiguration`  <a name="cfn-mediapackagev2-channel-multiviewconfiguration"></a>
+The multiview configuration for the channel. This is present only when `InputType` is `MULTIVIEW`.
+*Required*: No
+*Type*: [MultiviewConfiguration](aws-properties-mediapackagev2-channel-multiviewconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `OutputHeaderConfiguration`  <a name="cfn-mediapackagev2-channel-outputheaderconfiguration"></a>
 The settings for what common media server data (CMSD) headers AWS Elemental MediaPackage includes in responses to the CDN.
@@ -141,6 +151,9 @@ The attributes of the channels. You can only use the `GetAtt` function for `read
 
 `Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the channel.
+
+`AttachedMultiviewChannels`  <a name="AttachedMultiviewChannels-fn::getatt"></a>
+The multiview channels, in the same channel group, that list this channel as an available source. This is a read-only field.
 
 `CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The timestamp of the creation of the channel.

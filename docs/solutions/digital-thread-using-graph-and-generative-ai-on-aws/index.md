@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/digital-thread-using-graph-and-generative-ai-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Digital Thread Using Graph and Generative AI on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/digital-thread-using-graph-and-generative-ai-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Digital Thread Using Graph and Generative AI on AWS
 
 ## Overview

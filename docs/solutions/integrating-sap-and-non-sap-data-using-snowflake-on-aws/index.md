@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/integrating-sap-and-non-sap-data-using-snowflake-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Integrating SAP and Non-SAP Data using Snowflake on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/integrating-sap-and-non-sap-data-using-snowflake-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Integrating SAP and Non-SAP Data using Snowflake on AWS
 
 ## Overview

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/aws-backup/index.html
 ---
 
+---
+title: 'AWS Backup Documentation'
+canonical_url: https://docs.aws.amazon.com/aws-backup/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Backup Documentation
 
 AWS Backup is a fully managed backup service that makes it easy to centralize and automate the backup of data across AWS services in the cloud as well as on premises.

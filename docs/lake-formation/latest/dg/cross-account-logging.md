@@ -142,7 +142,14 @@ The version of this format, currently `00`. If the session name format changes, 
 
 **`query-engine-code`**
 Indicates the entity that accessed the data. Current values are:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/lake-formation/latest/dg/cross-account-logging.html)
+
+<table>
+<tbody>
+  <tr><td><code>GL</code></td><td>AWS Glue ETL job</td></tr>
+  <tr><td><code>AT</code></td><td>Athena</td></tr>
+  <tr><td><code>RE</code></td><td>Amazon Redshift Spectrum</td></tr>
+</tbody>
+</table>
 
 **`account-id`**
 The AWS account ID that requested credentials from Lake Formation.

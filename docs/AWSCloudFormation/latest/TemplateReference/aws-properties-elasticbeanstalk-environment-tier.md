@@ -40,8 +40,9 @@ To declare this entity in your CloudFormation template, use the following syntax
 `Name`  <a name="cfn-elasticbeanstalk-environment-tier-name"></a>
 The name of this environment tier.
 Valid values:
-+ For *Web server tier* – `WebServer`
-+ For *Worker tier* – `Worker`
++ For *Standard-mode EC2-based web server* – `WebServer`
++ For *Standard-mode EC2-based backend application with Amazon SQS* – `Worker`
++ For *Cluster-mode Amazon EKS-based applications* – `Cluster`
 *Required*: No
 *Type*: String
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
@@ -51,6 +52,7 @@ The type of this environment tier.
 Valid values:
 + For *Web server tier* – `Standard`
 + For *Worker tier* – `SQS/HTTP`
++ For *Cluster tier* – `EKS`
 *Required*: No
 *Type*: String
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

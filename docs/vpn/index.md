@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/vpn/index.html
 ---
 
+---
+title: 'AWS Virtual Private Network Documentation'
+canonical_url: https://docs.aws.amazon.com/vpn/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Virtual Private Network Documentation
 
 AWS Virtual Private Network (Site-to-Site VPN) establishes a secure and private tunnel from your network or device to the AWS Cloud. You can extend your existing on-premises network into a VPC, or connect to other AWS resources from a client. Site-to-Site VPN offers two types of private connectivity that feature the high availability and robust security necessary for your data.

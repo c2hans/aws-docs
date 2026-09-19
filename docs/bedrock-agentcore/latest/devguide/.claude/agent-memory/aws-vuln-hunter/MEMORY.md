@@ -1,2 +1,4 @@
 - [Test Environment & Tooling](env-tooling.md) — in-scope accounts, creds path, aws-cli-not-on-PATH quirk, canary skills
 - [Agent Registry Hunt Results](agent-registry-findings.md) — which leads confirmed/refuted on the agent-registry service (avoid re-testing)
+- [Adjacent New Features Findings](adjacent-newfeatures-findings.md) — GuardDuty Custom Detection Rules (C-H3/C-H1) + CustomerProfiles AssociateStreamForSegments REFUTED, ACXD BLOCKED (run vh-adjacent-20260917)
+- [AgentCore OBO Findings](agentcore-obo-findings.md) — OBO token-exchange Account<->AWS seam: OBO-1 aud-injection (not hard-stop), OBO-2 SSRF REFUTED, OBO-3 injection REFUTED, OBO-4 issuer-agnosticism by-design; interactsh capture recipe (run vh-obo-20260917)

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/res/index.html
 ---
 
+---
+title: 'Research and Engineering Studio on AWS Documentation'
+canonical_url: https://docs.aws.amazon.com/res/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Research and Engineering Studio on AWS Documentation
 
 Research and Engineering Studio on AWS is a framework for creating and managing a portal for research and engineering team collaboration.

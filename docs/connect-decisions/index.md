@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/connect-decisions/index.html
 ---
 
+---
+title: 'Amazon Connect Decisions Documentation'
+canonical_url: https://docs.aws.amazon.com/connect-decisions/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Amazon Connect Decisions Documentation
 
 Amazon Connect Decisions is a supply chain planning and decisioning service with AI teammates that work alongside your team to handle coordination tasks.

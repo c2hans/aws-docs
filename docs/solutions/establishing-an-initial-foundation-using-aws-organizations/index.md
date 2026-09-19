@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/establishing-an-initial-foundation-using-aws-organizations/index.html
 ---
 
+---
+title: 'Guidance for Establishing an Initial Foundation Using AWS Organizations'
+canonical_url: https://docs.aws.amazon.com/solutions/establishing-an-initial-foundation-using-aws-organizations/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Establishing an Initial Foundation Using AWS Organizations
 
 ## Overview

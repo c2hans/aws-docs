@@ -36,6 +36,11 @@ The instructions of the section.
 Type: String
 Required: No
 
+ ** MetricConfiguration **   <a name="connect-Type-EvaluationFormQuestion-MetricConfiguration"></a>
+The metric configuration for the question. Use this to associate a business outcome metric with the question.
+Type: [EvaluationFormMetricConfiguration](API_EvaluationFormMetricConfiguration.md) object
+Required: No
+
  ** NotApplicableEnabled **   <a name="connect-Type-EvaluationFormQuestion-NotApplicableEnabled"></a>
 The flag to enable not applicable answers to the question.
 Type: Boolean

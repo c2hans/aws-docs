@@ -31,7 +31,6 @@ Required: Yes
 The URL of the media.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 2000.
-Pattern: `(https?)://.*`
 Required: Yes
 
 ## See Also

@@ -18,12 +18,31 @@ Product lineage supports the following patterns:
 
   Demand Planning supports product lineage relationship modeled as both *chain* or *flattened* methods.
   + **Chain format** – You can directly model lineage relationships like A to B and B to C. In the following example. Demand Planning will model the lineage relationship as A to B, B to C, and A to C.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/product_lineage.html)
+
+<table>
+<thead>
+  <tr><th>Predecessor</th><th>Successor</th></tr>
+</thead>
+<tbody>
+  <tr><td>A</td><td>B</td></tr>
+  <tr><td>B</td><td>C</td></tr>
+</tbody>
+</table>
 
     The following example shows an Many:1 scenario - Chain format
 ![Product lineage pattern = Chain format](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/chain_format.png)
   + **Flattened format** – Demand Planning will continue to support lineage information in A to B and A to C format. In the following example, Demand planning will model the lineage relationship as A to B and A to C. B to C is not considered.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/product_lineage.html)
+
+<table>
+<thead>
+  <tr><th>Predecessor</th><th>Successor</th></tr>
+</thead>
+<tbody>
+  <tr><td>A</td><td>B</td></tr>
+  <tr><td>A</td><td>C</td></tr>
+</tbody>
+</table>
+
 **Note**
 Chain format only supports 6 levels of lineage relationship. If you have more than 6, you can use flattened format to model the lineage relationship.
 

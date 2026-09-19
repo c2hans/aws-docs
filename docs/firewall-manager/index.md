@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/firewall-manager/index.html
 ---
 
+---
+title: 'AWS Firewall Manager Documentation'
+canonical_url: https://docs.aws.amazon.com/firewall-manager/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Firewall Manager Documentation
 
 AWS Firewall Manager simplifies your AWS WAF administration and maintenance tasks across multiple accounts and resources. With AWS Firewall Manager, you set up your firewall rules just once. The service automatically applies your rules across your accounts and resources, even as you add new resources.

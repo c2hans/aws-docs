@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/codeguru/index.html
 ---
 
+---
+title: 'Amazon CodeGuru Documentation'
+canonical_url: https://docs.aws.amazon.com/codeguru/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Amazon CodeGuru Documentation
 
 CodeGuru provides intelligent recommendations for improving application performance, efficiency, security, and code quality.

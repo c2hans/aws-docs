@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/iot-twinmaker/index.html
 ---
 
+---
+title: 'AWS IoT TwinMaker Documentation'
+canonical_url: https://docs.aws.amazon.com/iot-twinmaker/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS IoT TwinMaker Documentation
 
 With AWS IoT TwinMaker, you can build operational digital twins of physical systems.

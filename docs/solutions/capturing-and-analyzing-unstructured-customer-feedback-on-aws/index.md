@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/capturing-and-analyzing-unstructured-customer-feedback-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Capturing and Analyzing Unstructured Customer Feedback on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/capturing-and-analyzing-unstructured-customer-feedback-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Capturing and Analyzing Unstructured Customer Feedback on AWS
 
 ## Overview

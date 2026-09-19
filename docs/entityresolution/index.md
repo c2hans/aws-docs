@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/entityresolution/index.html
 ---
 
+---
+title: 'AWS Entity Resolution Documentation'
+canonical_url: https://docs.aws.amazon.com/entityresolution/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # AWS Entity Resolution Documentation
 
 AWS Entity Resolution is an AWS service that helps you match and link related records stored across multiple applications, channels, and data stores.

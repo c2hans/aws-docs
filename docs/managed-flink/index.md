@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/managed-flink/index.html
 ---
 
+---
+title: 'Amazon Managed Service for Apache Flink Documentation'
+canonical_url: https://docs.aws.amazon.com/managed-flink/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Amazon Managed Service for Apache Flink Documentation
 
 With Amazon Managed Service for Apache Flink, you can use Java, Scala, or SQL to process and analyze streaming data. The service enables you to author and run code against streaming sources to perform time-series analytics, feed real-time dashboards, and create real-time metrics.

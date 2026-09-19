@@ -27,7 +27,7 @@ The request accepts the following data in JSON format.
  ** [MaxResults](#API_GetSecurityConfigurations_RequestSyntax) **   <a name="Glue-GetSecurityConfigurations-request-MaxResults"></a>
 The maximum number of results to return.
 Type: Integer
-Valid Range: Minimum value of 1. Maximum value of 1000.
+Valid Range: Minimum value of 1. Maximum value of 200.
 Required: No
 
  ** [NextToken](#API_GetSecurityConfigurations_RequestSyntax) **   <a name="Glue-GetSecurityConfigurations-request-NextToken"></a>

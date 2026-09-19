@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/ebs/index.html
 ---
 
+---
+title: 'Amazon EBS Documentation'
+canonical_url: https://docs.aws.amazon.com/ebs/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Amazon EBS Documentation
 
 Amazon Elastic Block Store (Amazon EBS) provides scalable, high-performance block-storage resources that you can use with your Amazon EC2 instances.

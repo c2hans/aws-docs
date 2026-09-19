@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/omni-channel-customer-engagement-for-travel-and-hospitality-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Omni-Channel Customer Engagement for Travel & Hospitality on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/omni-channel-customer-engagement-for-travel-and-hospitality-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Omni-Channel Customer Engagement for Travel & Hospitality on AWS
 
 Deliver personalized customer service by improving the customer experience through their channel of choice, at every stage of the traveler and guest journey

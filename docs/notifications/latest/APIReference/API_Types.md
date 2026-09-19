@@ -32,6 +32,7 @@ The following data types are supported:
 +  [MessageComponentsSummary](API_MessageComponentsSummary.md)
 +  [NotificationConfigurationStructure](API_NotificationConfigurationStructure.md)
 +  [NotificationEvent](API_NotificationEvent.md)
++  [NotificationEventAttachment](API_NotificationEventAttachment.md)
 +  [NotificationEventOverview](API_NotificationEventOverview.md)
 +  [NotificationEventSummary](API_NotificationEventSummary.md)
 +  [NotificationHubOverview](API_NotificationHubOverview.md)

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/swf/index.html
 ---
 
+---
+title: 'Amazon Simple Workflow Service Documentation'
+canonical_url: https://docs.aws.amazon.com/swf/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Simple Workflow Service Documentation
 
 Amazon Simple Workflow Service (Amazon SWF) makes it easy to build applications that coordinate work across distributed components. In Amazon SWF, a task represents a logical unit of work that is performed by a component of your application. Coordinating tasks across the application involves managing intertask dependencies, scheduling, and concurrency in accordance with the logical flow of the application. Amazon SWF gives you full control over implementing tasks and coordinating them without worrying about underlying complexities such as tracking their progress and maintaining their state.

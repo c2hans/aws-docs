@@ -154,6 +154,10 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [directconnect:CreatePublicVirtualInterface](#list_directconnect-action-CreatePublicVirtualInterface)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [directconnect:TagResource](#list_directconnect-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
+- **   CreateResiliencyGroup  **
+  - **IAM action:**  [directconnect:CreateResiliencyGroup](#list_directconnect-action-CreateResiliencyGroup)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [directconnect:TagResource](#list_directconnect-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
 - **   CreateTransitVirtualInterface  **
   - **IAM action:**  [directconnect:CreateTransitVirtualInterface](#list_directconnect-action-CreateTransitVirtualInterface)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [directconnect:TagResource](#list_directconnect-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write

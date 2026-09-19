@@ -100,8 +100,25 @@ Message from Thing to Greengrass Core: Address of Greengrass Core found! {{12345
 1. Find the entry for **Security groups** and choose the security group attached to your Amazon EC2 instance.
 
 1. Choose the **Inbound rules** tab then choose **Edit inbound rules** and add the following rules.
+
 **Inbound rules**
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/freertos/latest/userguide/gg-demov1.html)
+
+<table>
+<thead>
+  <tr><th>Type</th><th>Protocol</th><th>Port range</th><th>Source</th><th>Description - optional</th></tr>
+</thead>
+<tbody>
+  <tr><td>HTTP</td><td>TCP</td><td>80</td><td>0.0.0.0/0</td><td>-</td></tr>
+  <tr><td>HTTP</td><td>TCP</td><td>80</td><td>::/0</td><td>-</td></tr>
+  <tr><td>SSH</td><td>TCP</td><td>22</td><td>0.0.0.0/0</td><td>-</td></tr>
+  <tr><td>Custom TCP</td><td>TCP</td><td>8883</td><td>0.0.0.0/0</td><td>MQTT communications</td></tr>
+  <tr><td>Custom TCP</td><td>TCP</td><td>8883</td><td>::/0</td><td>MQTT communications</td></tr>
+  <tr><td>HTTPS</td><td>TCP</td><td>443</td><td>0.0.0.0/0</td><td>-</td></tr>
+  <tr><td>HTTPS</td><td>TCP</td><td>443</td><td>::0/0</td><td>-</td></tr>
+  <tr><td>All ICMP - IPv4</td><td>ICMP</td><td>All</td><td>0.0.0.0/0</td><td>-</td></tr>
+  <tr><td>All ICMP - IPv4</td><td>ICMP</td><td>All</td><td>::0/0</td><td>-</td></tr>
+</tbody>
+</table>
 
 1. In the AWS IoT console choose **Greengrass**, then **Groups**, and choose the Greengrass group that you previously created. Choose **Settings**. Change the **Local connection detection** to **Manually manage connection information**.
 
@@ -116,8 +133,17 @@ Message from Thing to Greengrass Core: Address of Greengrass Core found! {{12345
    1. Choose **Select an IoT Thing**. Choose your device then choose **Finish**.
 
 1. Add the necessary subscriptions— in the **Greengrass Group** page, choose **Subscriptions** then choose **Add Subscription** and enter information as shown here.
+
 **Subscriptions**
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/freertos/latest/userguide/gg-demov1.html)
+
+<table>
+<thead>
+  <tr><th>Source</th><th>Target</th><th>Topic</th></tr>
+</thead>
+<tbody>
+  <tr><td>TIGG1</td><td>IoT Cloud</td><td>freertos/demos/ggd</td></tr>
+</tbody>
+</table>
 
    Where "Source" is the name given to the AWS IoT thing created in the AWS IoT console when you registered your board - "TIGG1" in the example given here.
 

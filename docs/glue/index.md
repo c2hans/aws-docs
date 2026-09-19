@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/glue/index.html
 ---
 
+---
+title: 'AWS Glue Documentation'
+canonical_url: https://docs.aws.amazon.com/glue/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Glue Documentation
 
 AWS Glue is a scalable, serverless data integration service that makes it easy to discover, prepare, and combine data for analytics, machine learning, and application development.

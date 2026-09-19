@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/vpc/index.html
 ---
 
+---
+title: 'Amazon Virtual Private Cloud Documentation'
+canonical_url: https://docs.aws.amazon.com/vpc/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Virtual Private Cloud Documentation
 
 Amazon Virtual Private Cloud (Amazon VPC) enables you to provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you've defined.

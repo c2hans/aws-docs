@@ -50,7 +50,6 @@ Properties:
 The name of the Git repository.
 *Required*: No
 *Type*: String
-*Pattern*: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
 *Minimum*: `1`
 *Maximum*: `63`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
@@ -87,8 +86,8 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 ####
 <a name="aws-resource-sagemaker-coderepository-return-values-fn--getatt-fn--getatt"></a>
 
+`CodeRepositoryArn`  <a name="CodeRepositoryArn-fn::getatt"></a>
+The Amazon Resource Name (ARN) of the Git repository.
+
 `CodeRepositoryName`  <a name="CodeRepositoryName-fn::getatt"></a>
 The name of the code repository, such as `myCodeRepo`.
-
-`Id`  <a name="Id-fn::getatt"></a>
-The name of the code repository.

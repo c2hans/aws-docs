@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/index.html
 ---
 
+---
+title: 'AWS Toolkit for JetBrains Documentation'
+canonical_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Toolkit for JetBrains Documentation
 
 The AWS Toolkit for JetBrains IDEs is an open source plug-in for the integrated development environments (IDEs) from JetBrains that makes it easier for developers to develop, debug, and deploy serverless applications that use Amazon Web Services. It includes features like credentials management and AWS Region management that simplify writing applications for Amazon Web Services.

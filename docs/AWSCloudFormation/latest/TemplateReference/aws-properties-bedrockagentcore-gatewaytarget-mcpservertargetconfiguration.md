@@ -55,7 +55,7 @@ The listing mode for the MCP server target configuration. MCP resources for defa
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `McpToolSchema`  <a name="cfn-bedrockagentcore-gatewaytarget-mcpservertargetconfiguration-mcptoolschema"></a>
-The tool schema configuration for the MCP server target. Supported only when the credential provider is configured with an authorization code grant type. Dynamic tool discovery/synchronization will be disabled when target is configured with mcpToolSchema.
+A static tool list for the MCP server target. It is supported for all credential providers. Dynamic tool discovery/synchronization will be disabled when a target is configured with mcpToolSchema.
 *Required*: No
 *Type*: [McpToolSchemaConfiguration](aws-properties-bedrockagentcore-gatewaytarget-mcptoolschemaconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

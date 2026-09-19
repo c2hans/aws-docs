@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/marketplace/index.html
 ---
 
+---
+title: 'AWS Marketplace Documentation'
+canonical_url: https://docs.aws.amazon.com/marketplace/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Marketplace Documentation
 
 AWS Marketplace is an online store where you can buy or sell software that runs on Amazon Web Services.

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/utility-bill-processing-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Utility Bill Processing on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/utility-bill-processing-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Utility Bill Processing on AWS
 
 Unlock sustainability insights by converting public utility invoices into machine data

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/custom-search-of-an-enterprise-knowledge-base-with-amazon-opensearch-service/index.html
 ---
 
+---
+title: 'Guidance for Custom Search of an Enterprise Knowledge Base with Amazon OpenSearch Service'
+canonical_url: https://docs.aws.amazon.com/solutions/custom-search-of-an-enterprise-knowledge-base-with-amazon-opensearch-service/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Custom Search of an Enterprise Knowledge Base with Amazon OpenSearch Service
 
 ## Overview

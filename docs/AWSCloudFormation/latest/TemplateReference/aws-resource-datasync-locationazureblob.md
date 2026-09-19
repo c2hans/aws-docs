@@ -31,6 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[AzureBlobType](#cfn-datasync-locationazureblob-azureblobtype)" : {{String}},
       "[CmkSecretConfig](#cfn-datasync-locationazureblob-cmksecretconfig)" : {{CmkSecretConfig}},
       "[CustomSecretConfig](#cfn-datasync-locationazureblob-customsecretconfig)" : {{CustomSecretConfig}},
+      "[FederatedIdentity](#cfn-datasync-locationazureblob-federatedidentity)" : {{AzureFederatedIdentityConfig}},
       "[Subdirectory](#cfn-datasync-locationazureblob-subdirectory)" : {{String}},
       "[Tags](#cfn-datasync-locationazureblob-tags)" : {{[ Tag, ... ]}}
     }
@@ -55,6 +56,8 @@ Properties:
     CmkSecretConfig}}
   [CustomSecretConfig](#cfn-datasync-locationazureblob-customsecretconfig): {{
     CustomSecretConfig}}
+  [FederatedIdentity](#cfn-datasync-locationazureblob-federatedidentity): {{
+    AzureFederatedIdentityConfig}}
   [Subdirectory](#cfn-datasync-locationazureblob-subdirectory): {{String}}
   [Tags](#cfn-datasync-locationazureblob-tags): {{
     - Tag}}
@@ -84,7 +87,7 @@ Specifies the access tier that you want your objects or files transferred into. 
 Specifies the authentication method DataSync uses to access your Azure Blob Storage. DataSync can access blob storage using a shared access signature (SAS).
 *Required*: Yes
 *Type*: String
-*Allowed values*: `SAS | NONE`
+*Allowed values*: `SAS | NONE | OIDC`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `AzureBlobContainerUrl`  <a name="cfn-datasync-locationazureblob-azureblobcontainerurl"></a>
@@ -121,6 +124,12 @@ Specifies configuration information for a customer-managed Secrets Manager secre
 You can use either `CmkSecretConfig` or `CustomSecretConfig` to provide credentials for a `CreateLocation` request. Do not provide both parameters for the same request.
 *Required*: No
 *Type*: [CustomSecretConfig](aws-properties-datasync-locationazureblob-customsecretconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`FederatedIdentity`  <a name="cfn-datasync-locationazureblob-federatedidentity"></a>
+Property description not available.
+*Required*: No
+*Type*: [AzureFederatedIdentityConfig](aws-properties-datasync-locationazureblob-azurefederatedidentityconfig.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Subdirectory`  <a name="cfn-datasync-locationazureblob-subdirectory"></a>

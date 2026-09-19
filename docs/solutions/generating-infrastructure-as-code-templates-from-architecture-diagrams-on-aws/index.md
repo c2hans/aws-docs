@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/generating-infrastructure-as-code-templates-from-architecture-diagrams-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Generating Infrastructure-as-Code Templates from Architecture Diagrams on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/generating-infrastructure-as-code-templates-from-architecture-diagrams-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Generating Infrastructure-as-Code Templates from Architecture Diagrams on AWS
 
 ## Overview

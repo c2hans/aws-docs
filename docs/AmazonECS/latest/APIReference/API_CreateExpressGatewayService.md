@@ -18,6 +18,7 @@ Provide an execution role for task operations and an infrastructure role for man
 {
    "cluster": "{{string}}",
    "cpu": "{{string}}",
+   "cpuArchitecture": "{{string}}",
    "executionRoleArn": "{{string}}",
    "healthCheckPath": "{{string}}",
    "infrastructureRoleArn": "{{string}}",
@@ -85,6 +86,17 @@ The number of CPU units used by the task. This parameter determines the CPU allo
 Type: String
 Required: No
 
+ ** [cpuArchitecture](#API_CreateExpressGatewayService_RequestSyntax) **   <a name="ECS-CreateExpressGatewayService-request-cpuArchitecture"></a>
+The CPU architecture that the task runs on. If you don't specify a value, the default is `X86_64`.
+Valid values:
++  `X86_64` - The x86 64-bit architecture.
++  `ARM64` - The 64-bit ARM architecture.
+Ensure that the container image you specify supports the architecture you choose. The operating system family for an Express service is always `LINUX`.
+You can't specify `cpuArchitecture` together with `taskDefinitionArn`.
+Type: String
+Valid Values: `X86_64 | ARM64`
+Required: No
+
  ** [executionRoleArn](#API_CreateExpressGatewayService_RequestSyntax) **   <a name="ECS-CreateExpressGatewayService-request-executionRoleArn"></a>
 The Amazon Resource Name (ARN) of the task execution role that grants the Amazon ECS container agent permission to make AWS API calls on your behalf. This role is required for Amazon ECS to pull container images from Amazon ECR, send container logs to Amazon CloudWatch Logs, and retrieve sensitive data from AWS Systems Manager Parameter Store or AWS Secrets Manager.
 The execution role must include the `AmazonECSTaskExecutionRolePolicy` managed policy or equivalent permissions. For Express services, this role is used during task startup and runtime for container management operations.
@@ -141,7 +153,7 @@ Required: No
  ** [taskDefinitionArn](#API_CreateExpressGatewayService_RequestSyntax) **   <a name="ECS-CreateExpressGatewayService-request-taskDefinitionArn"></a>
 The Amazon Resource Name (ARN) of a task definition to use to create the Express Gateway service. This allows you to manage your own task definition, giving you more control over the service configuration such as adding sidecar containers.
 The task definition must have a container named `Main` with a single TCP port mapping that includes a container port and port name. The task definition must also have `FARGATE` compatibility.
-If you provide a task definition ARN, you cannot also specify `primaryContainer`, `executionRoleArn`, `taskRoleArn`, `cpu`, or `memory`.
+If you provide a task definition ARN, you cannot also specify `primaryContainer`, `executionRoleArn`, `taskRoleArn`, `cpu`, `memory`, or `cpuArchitecture`.
 Type: String
 Required: No
 
@@ -160,6 +172,7 @@ Required: No
       "activeConfigurations": [
          {
             "cpu": "string",
+            "cpuArchitecture": "string",
             "createdAt": number,
             "executionRoleArn": "string",
             "healthCheckPath": "string",

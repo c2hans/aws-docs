@@ -14,6 +14,13 @@ Lists the Direct Connect locations in the current AWS Region. These are the loca
 {
    "locations": [
       {
+         "availableBillingModes": [
+            {
+               "availablePortSpeeds": [ "string" ],
+               "billingMode": "string",
+               "includedRegions": [ "string" ]
+            }
+         ],
          "availableMacSecPortSpeeds": [ "string" ],
          "availablePortSpeeds": [ "string" ],
          "availableProviders": [ "string" ],

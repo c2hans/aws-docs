@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/firehose/index.html
 ---
 
+---
+title: 'Amazon Data Firehose Documentation'
+canonical_url: https://docs.aws.amazon.com/firehose/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Amazon Data Firehose Documentation
 
 Collect, process, and analyze real-time, streaming data so you can get timely insights and react quickly to new information.

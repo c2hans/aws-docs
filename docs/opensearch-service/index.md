@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/opensearch-service/index.html
 ---
 
+---
+title: 'Amazon OpenSearch Service Documentation'
+canonical_url: https://docs.aws.amazon.com/opensearch-service/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon OpenSearch Service Documentation
 
 Amazon OpenSearch Service is a managed service that makes it easy to deploy, operate, and scale OpenSearch, a popular open-source search and analytics engine. OpenSearch Service also offers security options, high availability, data durability, and direct access to the OpenSearch API.

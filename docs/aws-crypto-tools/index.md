@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/aws-crypto-tools/index.html
 ---
 
+---
+title: 'AWS Crypto Tools Documentation'
+canonical_url: https://docs.aws.amazon.com/aws-crypto-tools/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Crypto Tools Documentation
 
 Cryptography is hard to do safely and correctly. The AWS Crypto Tools libraries are designed to help everyone do cryptography right, even without special expertise. Our client-side encryption libraries help you to protect your sensitive data at its source using secure cryptographic algorithms, envelope encryption, and signing.

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/Monitron/index.html
 ---
 
+---
+title: 'Amazon Monitron Documentation'
+canonical_url: https://docs.aws.amazon.com/Monitron/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Monitron Documentation
 
 Amazon Monitron is an end-to-end system that detects abnormal behavior in industrial machinery enabling you to implement predictive maintenance and reduce unplanned downtime.

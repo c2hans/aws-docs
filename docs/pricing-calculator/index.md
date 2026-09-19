@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/pricing-calculator/index.html
 ---
 
+---
+title: 'AWS Pricing Calculator Documentation'
+canonical_url: https://docs.aws.amazon.com/pricing-calculator/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Pricing Calculator Documentation
 
 AWS provides a public Pricing Calculator website and an in-console Pricing Calculator experience so that you can generate estimates for your specific workloads or applications. The public calculator is accessible to anyone, including those without an AWS account. The in-console calculator is available exclusively to AWS account holders, including standalone accounts and those within an AWS organization (member and management accounts).

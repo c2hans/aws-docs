@@ -62,6 +62,12 @@ Active version of the evaluation form.
 Type: Integer
 Required: No
 
+ ** AIVersion **   <a name="connect-Type-EvaluationFormSearchSummary-AIVersion"></a>
+The AI version to use for the evaluation form. This specifies which AI model version is used for automated evaluations.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Required: No
+
  ** AutoEvaluationEnabled **   <a name="connect-Type-EvaluationFormSearchSummary-AutoEvaluationEnabled"></a>
 Whether automated evaluation is enabled.
 Type: Boolean

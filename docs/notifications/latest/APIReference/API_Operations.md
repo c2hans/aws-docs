@@ -44,4 +44,5 @@ The following actions are supported:
 +  [TagResource](API_TagResource.md)
 +  [UntagResource](API_UntagResource.md)
 +  [UpdateEventRule](API_UpdateEventRule.md)
++  [UpdateManagedNotificationChannelAssociation](API_UpdateManagedNotificationChannelAssociation.md)
 +  [UpdateNotificationConfiguration](API_UpdateNotificationConfiguration.md)

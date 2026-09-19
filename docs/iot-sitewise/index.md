@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/iot-sitewise/index.html
 ---
 
+---
+title: 'AWS IoT SiteWise Documentation'
+canonical_url: https://docs.aws.amazon.com/iot-sitewise/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS IoT SiteWise Documentation
 
 Easily collect, organize, and analyze data from industrial equipment at scale.

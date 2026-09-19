@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/live-streaming-amazon-s3/index.html
 ---
 
+---
+title: 'Guidance for Live Streaming Amazon S3'
+canonical_url: https://docs.aws.amazon.com/solutions/live-streaming-amazon-s3/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Live Streaming Amazon S3
 
 ## Overview

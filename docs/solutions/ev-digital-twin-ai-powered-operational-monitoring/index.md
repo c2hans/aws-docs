@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/ev-digital-twin-ai-powered-operational-monitoring/index.html
 ---
 
+---
+title: 'Guidance for EV Digital Twin AI Powered Operational Monitoring on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/ev-digital-twin-ai-powered-operational-monitoring/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for EV Digital Twin AI Powered Operational Monitoring on AWS
 
 ## Overview

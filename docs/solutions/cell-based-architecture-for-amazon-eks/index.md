@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/cell-based-architecture-for-amazon-eks/index.html
 ---
 
+---
+title: 'Guidance for a Cell-Based Architecture for Amazon EKS'
+canonical_url: https://docs.aws.amazon.com/solutions/cell-based-architecture-for-amazon-eks/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for a Cell-Based Architecture for Amazon EKS
 
 Improve resiliency and reduce your data transfer costs between Availability Zones

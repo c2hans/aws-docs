@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/security-incident-response-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Security Incident Response on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/security-incident-response-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Security Incident Response on AWS
 
 Reduce threats by responding effectively to security vulnerabilities

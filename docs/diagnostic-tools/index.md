@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/diagnostic-tools/index.html
 ---
 
+---
+title: 'AWS Diagnostic Tools Documentation'
+canonical_url: https://docs.aws.amazon.com/diagnostic-tools/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # AWS Diagnostic Tools Documentation
 
 AWS Diagnostic Tools is a service that provides partners in the AWS Partner-Led Support program with an integrated dashboard of tools to diagnose and troubleshoot their customer's AWS accounts.

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/s3/index.html
 ---
 
+---
+title: 'Amazon Simple Storage Service Documentation'
+canonical_url: https://docs.aws.amazon.com/s3/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Simple Storage Service Documentation
 
 Amazon Simple Storage Service (Amazon S3) is storage for the internet. You can use Amazon S3 to store and retrieve any amount of data at any time, from anywhere on the web.

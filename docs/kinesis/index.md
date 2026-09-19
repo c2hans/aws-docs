@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/kinesis/index.html
 ---
 
+---
+title: 'Amazon Kinesis Documentation'
+canonical_url: https://docs.aws.amazon.com/kinesis/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Amazon Kinesis Documentation
 
 Amazon Kinesis makes it easy to collect, process, and analyze video and data streams in real time.

@@ -348,10 +348,28 @@ If prompted, grant permission to create the [Greengrass service role](service-ro
 1. <a name="choose-test-page"></a>On the AWS IoT console home page, choose **Test**.
 
 1. For **Subscribe to topic**, use the following values, and then choose **Subscribe**.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/secrets-console.html)
+
+<table>
+<thead>
+  <tr><th>Property</th><th>Value</th></tr>
+</thead>
+<tbody>
+  <tr><td>Subscription topic</td><td>secrets/output</td></tr>
+  <tr><td>MQTT payload display</td><td>Display payloads as strings</td></tr>
+</tbody>
+</table>
 
 1. For **Publish to topic**, use the following values, and then choose **Publish** to invoke the function.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/secrets-console.html)
+
+<table>
+<thead>
+  <tr><th>Property</th><th>Value</th></tr>
+</thead>
+<tbody>
+  <tr><td>Topic</td><td>secrets/input</td></tr>
+  <tr><td>Message</td><td>Keep the default message. Publishing a message invokes the Lambda function, but the function in this tutorial doesn't process the message body.</td></tr>
+</tbody>
+</table>
 
    If successful, the function publishes a "Success" message.
 

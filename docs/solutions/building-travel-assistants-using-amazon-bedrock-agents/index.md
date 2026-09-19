@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/building-travel-assistants-using-amazon-bedrock-agents/index.html
 ---
 
+---
+title: 'Guidance for Building Travel Assistants Using Amazon Bedrock Agents'
+canonical_url: https://docs.aws.amazon.com/solutions/building-travel-assistants-using-amazon-bedrock-agents/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Building Travel Assistants Using Amazon Bedrock Agents
 
 ## Overview

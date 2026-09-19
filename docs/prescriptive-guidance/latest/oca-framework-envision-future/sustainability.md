@@ -107,6 +107,10 @@ Here are the recommended steps to plan for ownership of future phases of your or
    + Strategy to retain valuable cloud talent after they become digitally fluent and skilled on cloud solutions, or have obtained cloud certifications
 
 1. For each component, consider resources, competencies, processes, structure, behaviors and tasks, and consequences and incentive systems.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framework-envision-future/sustainability.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
 By focusing on these elements and best practices, you can develop a comprehensive sustainability plan that ensures long-term success in your organization's cloud transformation journey.

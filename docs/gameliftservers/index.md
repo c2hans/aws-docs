@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/gameliftservers/index.html
 ---
 
+---
+title: 'Amazon GameLift Servers Documentation'
+canonical_url: https://docs.aws.amazon.com/gameliftservers/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon GameLift Servers Documentation
 
 Amazon GameLift Servers is a fully-managed service with multiplayer game server hosting capabilities. Using the AWS global footprint and game optimized GPU instances, publishers can deploy their game content in minutes, and players can start gaming in seconds without perceivable lag or having to wait for installs. With high-scaling game server and smooth gameplay streaming capabilities, Amazon GameLift Servers helps developers to build, scale, and deliver the world's most demanding games.

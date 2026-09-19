@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/near-real-time-personalized-recommendations-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Near Real-Time Personalized Recommendations on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/near-real-time-personalized-recommendations-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Near Real-Time Personalized Recommendations on AWS
 
 ## Overview

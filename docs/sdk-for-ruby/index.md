@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/sdk-for-ruby/index.html
 ---
 
+---
+title: 'AWS SDK for Ruby Documentation'
+canonical_url: https://docs.aws.amazon.com/sdk-for-ruby/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS SDK for Ruby Documentation
 
 The AWS SDK for Ruby helps you to get started building applications using Amazon Web Services infrastructure services, including Amazon S3, Amazon EC2, Amazon DynamoDB, and more.

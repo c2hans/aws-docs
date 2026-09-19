@@ -78,6 +78,10 @@ Content-type: application/json
          "georgiaAdditionalInfo": {
             "personType": "string"
          },
+         "germanyAdditionalInfo": {
+            "economicIdentificationNumber": "string",
+            "steuernummer": "string"
+         },
          "greeceAdditionalInfo": {
             "contractingAuthorityCode": "string"
          },

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/organizations/index.html
 ---
 
+---
+title: 'AWS Organizations and AWS Account Management Documentation'
+canonical_url: https://docs.aws.amazon.com/organizations/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # AWS Organizations and AWS Account Management Documentation
 
 With AWS Organizations, you can centrally manage your environment as you scale your AWS resources. With AWS Account Management you create and manage individual AWS accounts.

@@ -19,6 +19,7 @@ You can automatically add the new connection to a link aggregation group (LAG) b
 ```
 {
    "bandwidth": "{{string}}",
+   "billingMode": "{{string}}",
    "connectionName": "{{string}}",
    "lagId": "{{string}}",
    "location": "{{string}}",
@@ -44,6 +45,12 @@ The request accepts the following data in JSON format.
 The bandwidth of the connection.
 Type: String
 Required: Yes
+
+ ** [billingMode](#API_CreateConnection_RequestSyntax) **   <a name="DX-CreateConnection-request-billingMode"></a>
+The billing mode for the connection.
+Type: String
+Valid Values: `PayAsYouGo | FlatRateTier1 | FlatRateTier2 | FlatRateTier3 | FlatRateTier4 | FlatRateTier5`
+Required: No
 
  ** [connectionName](#API_CreateConnection_RequestSyntax) **   <a name="DX-CreateConnection-request-connectionName"></a>
 The name of the connection.
@@ -86,6 +93,7 @@ Required: No
    "awsDeviceV2": "string",
    "awsLogicalDeviceId": "string",
    "bandwidth": "string",
+   "billingMode": "string",
    "connectionId": "string",
    "connectionName": "string",
    "connectionState": "string",
@@ -153,6 +161,11 @@ Type: String
  ** [bandwidth](#API_CreateConnection_ResponseSyntax) **   <a name="DX-CreateConnection-response-bandwidth"></a>
 The bandwidth of the connection.
 Type: String
+
+ ** [billingMode](#API_CreateConnection_ResponseSyntax) **   <a name="DX-CreateConnection-response-billingMode"></a>
+The billing mode of the connection.
+Type: String
+Valid Values: `PayAsYouGo | FlatRateTier1 | FlatRateTier2 | FlatRateTier3 | FlatRateTier4 | FlatRateTier5 | PortPairFlatRateTier1 | PortPairFlatRateTier2 | PortPairFlatRateTier3 | PortPairFlatRateTier4 | PortPairFlatRateTier5`
 
  ** [connectionId](#API_CreateConnection_ResponseSyntax) **   <a name="DX-CreateConnection-response-connectionId"></a>
 The ID of the connection.

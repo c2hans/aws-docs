@@ -31,7 +31,20 @@ By default, Amazon Forecast creates an AutoPredictor, where Forecast applies the
 Amazon Forecast requires the following inputs to train a predictor:
 + **Dataset group** – A dataset group that must include a target time series dataset. The target time series dataset includes the target attribute (`item_id`) and timestamp attribute, as well as any dimensions. Related time series and Item metadata is optional. For more information, see [Importing Datasets](howitworks-datasets-groups.md).
 + **Forecast frequency** – The granularity of your forecasts (hourly, daily, weekly, etc). Amazon Forecast lets you determine the exact granularity of your forecasts when you provide the frequency unit and value. Only integer values are allowed
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/forecast/latest/dg/howitworks-predictor.html)
+
+<table>
+<thead>
+  <tr><th>Frequency unit</th><th>Allowed values</th></tr>
+</thead>
+<tbody>
+  <tr><td>Minutely</td><td>1-59</td></tr>
+  <tr><td>Hourly</td><td>1-23</td></tr>
+  <tr><td>Daily</td><td>1-6</td></tr>
+  <tr><td>Weekly</td><td>1-4</td></tr>
+  <tr><td>Monthly</td><td>1-11</td></tr>
+  <tr><td>Yearly</td><td>1</td></tr>
+</tbody>
+</table>
 
   For example, if you want every other week forecasts, your frequency unit is weekly and the value is 2. Or, if you want quarterly forecasts, your frequency unit is monthly and the value is 3.
 

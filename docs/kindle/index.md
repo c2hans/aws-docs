@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/kindle/index.html
 ---
 
+---
+title: 'AWS Documentation in Kindle Format'
+canonical_url: https://docs.aws.amazon.com/kindle/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Documentation in Kindle Format
 
 You can get many Amazon Web Services (AWS) guides for free on your Kindle.

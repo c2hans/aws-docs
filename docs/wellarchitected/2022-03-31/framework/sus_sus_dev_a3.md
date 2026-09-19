@@ -27,7 +27,18 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
   +  Improve your ability to measure and manage sustainability impacts.
 +  Inventory your workload software and architecture and identify components that need to be updated. You can use [AWS Systems Manager Inventory](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-inventory.html) to collect operating system (OS), application, and instance metadata from your Amazon EC2 instances and quickly understand which instances are running the software and configurations required by your software policy and which instances need to be updated.
 +  Understand how to update the components of your workload.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/sus_sus_dev_a3.html)
+
+<table>
+<thead>
+  <tr><th>Workload component</th><th>How to update</th></tr>
+</thead>
+<tbody>
+  <tr><td>Machine images</td><td> Manage updates to <a href="https://aws.amazon.com/amis/">Amazon Machine Images (AMI)</a> for Linux or Windows server images using <a href="https://aws.amazon.com/image-builder/">EC2 Image Builder</a>. </td></tr>
+  <tr><td>Container images</td><td> You should use <a href="https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html">Amazon Elastic Container Registry (Amazon ECR)</a> with your existing pipeline to <a href="https://docs.aws.amazon.com/AmazonECR/latest/userguide/ECR_on_ECS.html">manage Amazon Elastic Container Service (Amazon ECS) images</a> and <a href="https://docs.aws.amazon.com/AmazonECR/latest/userguide/ECR_on_EKS.html">manage Amazon Elastic Kubernetes Service images.</a> </td></tr>
+  <tr><td>AWS Lambda</td><td> AWS Lambda includes <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-versions.html">version management features.</a> </td></tr>
+</tbody>
+</table>
+
 +  Use automation for the update process to reduce the level of effort to deploy new features and limit errors caused by manual processes. Use tools such as [AWS Systems Manager Patch Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-patch.html) to automate the process of system updates, and schedule the activity using [AWS Systems Manager Maintenance Windows](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-maintenance.html).
 
 ## Resources

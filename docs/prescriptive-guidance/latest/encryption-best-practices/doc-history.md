@@ -11,6 +11,7 @@ The following table describes significant changes to this guide.
 |
 | **Change** | **Description** | **Date** |
 | --- |--- |--- |
+| Major revision | Restructured as an encryption strategy guide covering data at rest, in transit, and in use. Replaced per-service feature sections with encryption fundamentals and transparent encryption coverage. Added hardware isolation and cryptographic computing content. | September 17, 2026 |
 | Cryptography updates | We updated the [AWS approach to cryptography](aws-cryptography-services.md) chapter. | February 17, 2026 |
 | Algorithm updates | We updated the [Cryptographic algorithms](aws-cryptography-services.md#algorithms) section. | January 23, 2026 |
 | Algorithm and encryption in transit updates | We updated the [About cryptographic algorithms](aws-cryptography-services.md#algorithms) section and the [Encryption of data in transit](general-encryption-best-practices.md#encryption-of-data-in-transit) section. | October 28, 2025 |

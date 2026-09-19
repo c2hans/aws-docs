@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[BufferMsec](#cfn-medialive-channel-udpoutputsettings-buffermsec)" : {{Integer}},
-  "[ContainerSettings](#cfn-medialive-channel-udpoutputsettings-containersettings)" : {{UdpContainerSettings}},
+  "[ContainerSettings](#cfn-medialive-channel-udpoutputsettings-containersettings)" : {{UdpMediaConnectRouterContainerSettings}},
   "[Destination](#cfn-medialive-channel-udpoutputsettings-destination)" : {{OutputLocationRef}},
   "[FecOutputSettings](#cfn-medialive-channel-udpoutputsettings-fecoutputsettings)" : {{FecOutputSettings}}
 }
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [BufferMsec](#cfn-medialive-channel-udpoutputsettings-buffermsec): {{Integer}}
   [ContainerSettings](#cfn-medialive-channel-udpoutputsettings-containersettings): {{
-    UdpContainerSettings}}
+    UdpMediaConnectRouterContainerSettings}}
   [Destination](#cfn-medialive-channel-udpoutputsettings-destination): {{
     OutputLocationRef}}
   [FecOutputSettings](#cfn-medialive-channel-udpoutputsettings-fecoutputsettings): {{
@@ -53,7 +53,7 @@ The UDP output buffering in milliseconds. Larger values increase latency through
 `ContainerSettings`  <a name="cfn-medialive-channel-udpoutputsettings-containersettings"></a>
 The settings for the UDP output.
 *Required*: No
-*Type*: [UdpContainerSettings](aws-properties-medialive-channel-udpcontainersettings.md)
+*Type*: [UdpMediaConnectRouterContainerSettings](aws-properties-medialive-channel-udpmediaconnectroutercontainersettings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Destination`  <a name="cfn-medialive-channel-udpoutputsettings-destination"></a>

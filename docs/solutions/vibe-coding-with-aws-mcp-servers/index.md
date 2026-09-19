@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/vibe-coding-with-aws-mcp-servers/index.html
 ---
 
+---
+title: 'Guidance for Vibe Coding with AWS MCP servers'
+canonical_url: https://docs.aws.amazon.com/solutions/vibe-coding-with-aws-mcp-servers/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Vibe Coding with AWS MCP servers
 
 ## Overview

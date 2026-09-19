@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/cloudfront/index.html
 ---
 
+---
+title: 'Amazon CloudFront Documentation'
+canonical_url: https://docs.aws.amazon.com/cloudfront/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon CloudFront Documentation
 
 Amazon CloudFront speeds up distribution of your static and dynamic web content, such as .html, .css, .php, image, and media files. When users request your content, CloudFront delivers it through a worldwide network of edge locations that provide low latency and high performance.

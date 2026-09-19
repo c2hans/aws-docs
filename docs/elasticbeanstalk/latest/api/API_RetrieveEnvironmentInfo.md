@@ -33,7 +33,7 @@ Required: No
  ** InfoType **
 The type of information to retrieve.
 Type: String
-Valid Values: `tail | bundle`
+Valid Values: `tail | bundle | analyze`
 Required: Yes
 
 ## Response Elements

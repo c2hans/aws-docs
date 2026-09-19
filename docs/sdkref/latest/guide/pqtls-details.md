@@ -68,6 +68,8 @@ Notes on Building for Opt-In PQ TLS You can fetch the SDK’s CRT dependencies w
 
  As of v2, AWS SDK for Java provides an AWS Common Runtime (AWS CRT) HTTP Client that can be configured to perform PQ TLS. As of v2.35.11, the AwsCrtHttpClient enables and prefers PQ TLS by default wherever it’s used.
 
+ JDK27 supports and prefers PQ TLS, so AWS SDK for Java V1 or V2 default clients run on that version (or later) support PQ TLS out of the box. Oracle outlines their expected timelines for PQ TLS backports to earlier JDK versions in [Post-Quantum Cryptography in Long-Term Support JDK Releases](https://blogs.oracle.com/java/post-quantum-cryptography-in-long-term-support-jdk-releases).
+
 ## SDKs that rely on System OpenSSL
 <a name="pq-tls-open-ssl"></a>
 

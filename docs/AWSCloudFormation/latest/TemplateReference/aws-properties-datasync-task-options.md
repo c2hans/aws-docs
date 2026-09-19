@@ -26,6 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[Gid](#cfn-datasync-task-options-gid)" : {{String}},
   "[LogLevel](#cfn-datasync-task-options-loglevel)" : {{String}},
   "[Mtime](#cfn-datasync-task-options-mtime)" : {{String}},
+  "[ObjectMetadata](#cfn-datasync-task-options-objectmetadata)" : {{String}},
   "[ObjectTags](#cfn-datasync-task-options-objecttags)" : {{String}},
   "[OverwriteMode](#cfn-datasync-task-options-overwritemode)" : {{String}},
   "[PosixPermissions](#cfn-datasync-task-options-posixpermissions)" : {{String}},
@@ -48,6 +49,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   [Gid](#cfn-datasync-task-options-gid): {{String}}
   [LogLevel](#cfn-datasync-task-options-loglevel): {{String}}
   [Mtime](#cfn-datasync-task-options-mtime): {{String}}
+  [ObjectMetadata](#cfn-datasync-task-options-objectmetadata): {{String}}
   [ObjectTags](#cfn-datasync-task-options-objecttags): {{String}}
   [OverwriteMode](#cfn-datasync-task-options-overwritemode): {{String}}
   [PosixPermissions](#cfn-datasync-task-options-posixpermissions): {{String}}
@@ -113,6 +115,13 @@ If `Mtime` is set to `NONE`, `Atime` must also be set to `NONE`.
 *Required*: No
 *Type*: String
 *Allowed values*: `NONE | PRESERVE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ObjectMetadata`  <a name="cfn-datasync-task-options-objectmetadata"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `PRESERVE | NONE`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ObjectTags`  <a name="cfn-datasync-task-options-objecttags"></a>

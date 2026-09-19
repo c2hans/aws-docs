@@ -10,6 +10,11 @@ Information about an Direct Connect location.
 ## Contents
 <a name="API_Location_Contents"></a>
 
+ ** availableBillingModes **   <a name="DX-Type-Location-availableBillingModes"></a>
+The billing modes available at the location, including the port speeds and AWS Regions supported by each mode.
+Type: Array of [AvailableBillingMode](API_AvailableBillingMode.md) objects
+Required: No
+
  ** availableMacSecPortSpeeds **   <a name="DX-Type-Location-availableMacSecPortSpeeds"></a>
 The available MAC Security (MACsec) port speeds for the location.
 Type: Array of strings

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/codecommit/index.html
 ---
 
+---
+title: 'AWS CodeCommit Documentation'
+canonical_url: https://docs.aws.amazon.com/codecommit/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS CodeCommit Documentation
 
 AWS CodeCommit is a version control service that enables you to privately store and manage Git repositories in the AWS Cloud.

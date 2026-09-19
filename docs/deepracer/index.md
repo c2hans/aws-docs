@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/deepracer/index.html
 ---
 
+---
+title: 'AWS DeepRacer Documentation'
+canonical_url: https://docs.aws.amazon.com/deepracer/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS DeepRacer Documentation
 
 AWS DeepRacer is a reinforcement learning (RL)-enabled autonomous 1/18th-scale vehicle with supporting services in the AWS Machine Learning ecosystem. It offers an interactive learning system for users of all levels to acquire and refine their skill set in machine learning in general, and reinforcement learning in particular. You can use the AWS DeepRacer console to train and evaluate deep reinforcement learning models in simulation and then deploy them to an AWS DeepRacer vehicle for autonomous driving. You can also join the AWS DeepRacer League to race in the online Virtual Circuit or the in-person events.

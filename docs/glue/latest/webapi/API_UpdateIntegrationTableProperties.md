@@ -23,6 +23,7 @@ The override will be reflected across all the integrations using same `ResourceA
    },
    "TableName": "{{string}}",
    "TargetTableConfig": {
+      "IntegrationArn": "{{string}}",
       "PartitionSpec": [
          {
             "ConversionSpec": "{{string}}",

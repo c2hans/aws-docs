@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/workspaces-core/index.html
 ---
 
+---
+title: 'Amazon WorkSpaces Core Documentation'
+canonical_url: https://docs.aws.amazon.com/workspaces-core/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Amazon WorkSpaces Core Documentation
 
 WorkSpaces Core offers managed virtual desktop infrastructure (VDI) designed to work with third-party management solutions. It simplifies VDI migration by combining your existing VDI management software with the security and reliability of AWS Cloud infrastructure.

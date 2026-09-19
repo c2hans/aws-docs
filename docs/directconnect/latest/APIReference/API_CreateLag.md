@@ -20,6 +20,7 @@ If the AWS account used to create a LAG is a registered Direct Connect Partner, 
 
 ```
 {
+   "billingMode": "{{string}}",
    "childConnectionTags": [
       {
          "key": "{{string}}",
@@ -48,6 +49,12 @@ If the AWS account used to create a LAG is a registered Direct Connect Partner, 
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [billingMode](#API_CreateLag_RequestSyntax) **   <a name="DX-CreateLag-request-billingMode"></a>
+The billing mode for the LAG.
+Type: String
+Valid Values: `PayAsYouGo | FlatRateTier1 | FlatRateTier2 | FlatRateTier3 | FlatRateTier4 | FlatRateTier5`
+Required: No
 
  ** [childConnectionTags](#API_CreateLag_RequestSyntax) **   <a name="DX-CreateLag-request-childConnectionTags"></a>
 The tags to associate with the automtically created LAGs.
@@ -106,12 +113,14 @@ Required: No
    "awsDevice": "string",
    "awsDeviceV2": "string",
    "awsLogicalDeviceId": "string",
+   "billingMode": "string",
    "connections": [
       {
          "awsDevice": "string",
          "awsDeviceV2": "string",
          "awsLogicalDeviceId": "string",
          "bandwidth": "string",
+         "billingMode": "string",
          "connectionId": "string",
          "connectionName": "string",
          "connectionState": "string",
@@ -219,6 +228,11 @@ Type: String
  ** [awsLogicalDeviceId](#API_CreateLag_ResponseSyntax) **   <a name="DX-CreateLag-response-awsLogicalDeviceId"></a>
 The Direct Connect endpoint that terminates the logical connection. This device might be different than the device that terminates the physical connection.
 Type: String
+
+ ** [billingMode](#API_CreateLag_ResponseSyntax) **   <a name="DX-CreateLag-response-billingMode"></a>
+The billing mode of the LAG.
+Type: String
+Valid Values: `PayAsYouGo | FlatRateTier1 | FlatRateTier2 | FlatRateTier3 | FlatRateTier4 | FlatRateTier5 | PortPairFlatRateTier1 | PortPairFlatRateTier2 | PortPairFlatRateTier3 | PortPairFlatRateTier4 | PortPairFlatRateTier5`
 
  ** [connections](#API_CreateLag_ResponseSyntax) **   <a name="DX-CreateLag-response-connections"></a>
 The connections bundled by the LAG.

@@ -12,7 +12,12 @@ Microsoft SQL Server licensing is one of the largest expenses for a Windows work
 + **Enterprise** – SQL Server Enterprise edition provides data center capabilities with high performance, unlimited virtualization, and several business intelligence (BI) tools.
 + **Standard** – SQL Server Standard edition provides basic data management and business intelligence for smaller organizations and departments.
 + **Web** – SQL Server Web edition is suitable for companies that are web hosters or web value added providers (VAPs). This edition offers a low total cost of ownership, and it provides scalability and manageability capabilities for small to large scale web properties.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/sql-server-editions.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
+
 + **Developer** – SQL Server Developer edition includes all the functionality of Enterprise edition, but it's intended for development purposes only.
 + **Express** – SQL Server Express edition is a free database and can be used for learning or for building desktop applications. You can update Express edition to other editions.
 

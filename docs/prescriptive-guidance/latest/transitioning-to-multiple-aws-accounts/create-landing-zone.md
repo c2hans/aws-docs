@@ -16,7 +16,12 @@ For instructions about how to set up your AWS Control Tower landing zone, see [G
 + Adhere to the best practices in [Design principles for your multi-account strategy](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/design-principles-for-your-multi-account-strategy.html) (AWS Whitepaper).
 + Adhere to the [Best practices for AWS Control Tower administrators](https://docs.aws.amazon.com/controltower/latest/userguide/best-practices.html) (AWS Control Tower documentation).
 + Create your landing zone in the AWS Region that hosts the majority of your workloads.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/transitioning-to-multiple-aws-accounts/create-landing-zone.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
+
 + When determining which Regions AWS Control Tower will govern, select only the Regions in which you expect to immediately deploy workloads. You can change these Regions or add more later. If AWS Control Tower governs a Region, it will deploy its detective guardrails into that Region as [AWS Config Rules](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config.html).
 + After determining which Regions AWS Control Tower will govern, deny access to all ungoverned Regions. This helps ensure that your workloads and developers can only use approved AWS Regions. This is implemented as a service control policy (SCP) in the organization. For more information, see [Configure the AWS Region deny control](https://docs.aws.amazon.com/controltower/latest/userguide/region-deny.html) (AWS Control Tower documentation).
 + When setting up your landing zone in AWS Control Tower, we recommend you rename the following OUs and accounts:

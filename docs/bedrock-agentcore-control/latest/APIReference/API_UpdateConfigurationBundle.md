@@ -73,7 +73,7 @@ Required: No
 A commit message describing the changes in this version.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 500.
-Required: No
+Required: Yes
 
  ** [components](#API_UpdateConfigurationBundle_RequestSyntax) **   <a name="bedrockagentcorecontrol-UpdateConfigurationBundle-request-components"></a>
 The updated component configurations. Creates a new version of the bundle.

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/elasticloadbalancing/index.html
 ---
 
+---
+title: 'Elastic Load Balancing Documentation'
+canonical_url: https://docs.aws.amazon.com/elasticloadbalancing/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Elastic Load Balancing Documentation
 
 Elastic Load Balancing automatically distributes your incoming traffic across multiple targets, such as EC2 instances, containers, and IP addresses, in one or more Availability Zones. It monitors the health of its registered targets and routes traffic only to the healthy targets. You can select the type of load balancer that best suits your needs.

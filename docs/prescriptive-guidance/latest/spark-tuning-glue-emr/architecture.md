@@ -18,7 +18,11 @@ The following diagram depicts the lifecycle of a Spark SQL query. The Spark Cata
 Spark Catalyst Optimizer converts the initial query plan into an optimized query plan as follows:
 
 1. **Analysis and declarative APIs** – The analysis phase is the first step. The *unresolved logical plan*, where objects referenced in the SQL query are not known or not matched to an input table, is generated with unbound attributes and data types. The Spark Catalyst Optimizer then applies a set of rules to build a logical plan. The SQL parser can generate an SQL Abstract Syntax Tree (AST) and provide this as an input for the logical plan. The input might also be also be a data frame or dataset object that is constructed by using an API. The following table shows when you should use SQL, data frames, or datasets.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/spark-tuning-glue-emr/architecture.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
    For more information about the types of inputs, review the following:
    + A dataset API provides a **typed** version. This reduces performance because of heavy reliance on user-defined lambda functions. RDD or datasets are statically typed. For example, when you define an RDD, you need to explicitly provide the schema definition.

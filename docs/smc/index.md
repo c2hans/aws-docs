@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/smc/index.html
 ---
 
+---
+title: 'AWS Service Management Connector Documentation'
+canonical_url: https://docs.aws.amazon.com/smc/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # AWS Service Management Connector Documentation
 
 AWS Service Management Connector (SMC) enables users to provision, manage, and operate AWS resources and capabilities in familiar IT Service Management (ITSM) tooling (for example, ServiceNow and Atlassian). These integrations enable organizations to migrate and adopt AWS faster and at-scale. With AWS Service Management Connector, you can manage and govern AWS resources directly through your organization's existing operations management tool and system of record.

@@ -21,7 +21,18 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 ## Implementation guidance
 <a name="implementation-guidance"></a>
 +  Elasticity matches the supply of resources you have against the demand for those resources. Instances, containers, and functions provide mechanisms for elasticity, either in combination with automatic scaling or as a feature of the service. Use elasticity in your architecture to ensure that workload can scale down quickly and easily during the period of low user load:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/sus_sus_user_a2.html)
+
+<table>
+<thead>
+  <tr><th>Auto-scaling mechanism</th><th>Where to use</th></tr>
+</thead>
+<tbody>
+  <tr><td><a href="https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html">Amazon EC2 Auto Scaling</a></td><td>Use to verify you have the correct number of Amazon EC2 instances available to handle the user load for your application. </td></tr>
+  <tr><td><a href="https://docs.aws.amazon.com/autoscaling/application/userguide/what-is-application-auto-scaling.html">Application Auto Scaling</a></td><td>Use to automatically scale the resources for individual AWS services beyond Amazon EC2, such as Lambda functions or Amazon Elastic Container Service (Amazon ECS) services. </td></tr>
+  <tr><td> <a href="https://aws.amazon.com/blogs/aws/introducing-karpenter-an-open-source-high-performance-kubernetes-cluster-autoscaler/">Kubernetes Cluster Autoscaler</a> </td><td>Use to automatically scale Kubernetes clusters on AWS.</td></tr>
+</tbody>
+</table>
+
 +  Verify that the metrics for scaling up or down are validated against the type of workload being deployed. If you are deploying a video transcoding application, 100% CPU utilization is expected and should not be your primary metric. You can use a [customized metric](https://aws.amazon.com/blogs/mt/create-amazon-ec2-auto-scaling-policy-memory-utilization-metric-linux/) (such as memory utilization) for your scaling policy if required. To choose the right metrics, consider the following guidance for Amazon EC2:
   +  The metric should be a valid utilization metric and describe how busy an instance is.
   +  The metric value must increase or decrease proportionally to the number of instances in the Auto Scaling group.

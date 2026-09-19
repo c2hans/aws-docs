@@ -20,6 +20,11 @@ Contains detailed information about the Auto Scaling Group associated with the a
 Type: [AutoscalingAutoScalingGroup](API_AutoscalingAutoScalingGroup.md) object
 Required: No
 
+ ** bedrockGuardrail **   <a name="guardduty-Type-ResourceData-bedrockGuardrail"></a>
+Contains detailed information about the Amazon Bedrock guardrail associated with the activity that prompted GuardDuty to generate a finding.
+Type: [BedrockGuardrailResource](API_BedrockGuardrailResource.md) object
+Required: No
+
  ** cloudformationStack **   <a name="guardduty-Type-ResourceData-cloudformationStack"></a>
 Contains detailed information about the CloudFormation stack associated with the activity that prompted GuardDuty to generate a finding.
 Type: [CloudformationStack](API_CloudformationStack.md) object

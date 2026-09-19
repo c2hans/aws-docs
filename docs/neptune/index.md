@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/neptune/index.html
 ---
 
+---
+title: 'Amazon Neptune Documentation'
+canonical_url: https://docs.aws.amazon.com/neptune/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Neptune Documentation
 
 Amazon Neptune is a fast, reliable, fully managed graph database service that makes it easy to build and run applications that work with highly connected datasets. The core of Neptune is a purpose-built, high-performance graph database engine that is optimized for storing billions of relationships and querying the graph with milliseconds of latency. Neptune supports two popular property-graph query languages, Gremlin and openCypher, as well as SPARQL for RDF data. These can help you build queries that efficiently navigate highly connected datasets. You can use Neptune for graph use cases such as recommendation engines, fraud detection, knowledge graphs, drug discovery, and network security.

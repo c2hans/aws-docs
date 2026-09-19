@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/sdk-for-swift/index.html
 ---
 
+---
+title: 'AWS SDK for Swift Documentation'
+canonical_url: https://docs.aws.amazon.com/sdk-for-swift/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS SDK for Swift Documentation
 
 The AWS SDK for Swift provides support for accessing Amazon Web Services infrastructure and services using the Swift language. Applications, servers, and libraries can be built on top of Amazon services including Amazon S3, Amazon EC2, DynamoDB, and more.

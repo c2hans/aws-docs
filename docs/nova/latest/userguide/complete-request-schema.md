@@ -192,7 +192,12 @@ When using the Converse API with the `topK` parameter, an additional `inferenceC
     + `maxReasoningEffort` – The computational effort used in the reasoning process. Valid options are `low`, `medium`, or `high`. In streaming, when using `low` and `medium` settings, reasoning content will be streamed as each token is generated when using `ConverseStream`, however, the `high` works differently, applying different approaches to improve quality resulting in outputting all the reasoning content in a final chunk.
 **Note**
 When using the Converse API with the `reasoningConfig` parameter, the parameter should be placed in the `additionalModelRequestFields` field. See [Using the Converse API](using-converse-api.md) for an example of how these parameters are passed.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/nova/latest/userguide/complete-request-schema.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
+
 + `toolConfig` – (Optional) JSON object following [ToolConfig schema](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_ToolConfiguration.html), containing the tool specification and tool choice. This schema is the same followed [by the Converse API](https://docs.aws.amazon.com/bedrock/latest/userguide/tool-use.html)
   + `toolChoice` – (Optional) Specifies which tools the model can use. You can select one of three options:
     + `auto` – The model automatically decides whether to use tools and which tools to use.

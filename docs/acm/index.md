@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/acm/index.html
 ---
 
+---
+title: 'AWS Certificate Manager Documentation'
+canonical_url: https://docs.aws.amazon.com/acm/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Certificate Manager Documentation
 
 AWS Certificate Manager (ACM) helps you to provision, manage, and renew publicly trusted TLS certificates on AWS based websites.

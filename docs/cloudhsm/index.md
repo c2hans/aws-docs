@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/cloudhsm/index.html
 ---
 
+---
+title: 'AWS CloudHSM Documentation'
+canonical_url: https://docs.aws.amazon.com/cloudhsm/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS CloudHSM Documentation
 
 AWS CloudHSM offers secure cryptographic key storage for customers by providing managed hardware security modules in the AWS Cloud.

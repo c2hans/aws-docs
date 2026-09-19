@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/customizing-normalization-library-for-aws-entity-resolution/index.html
 ---
 
+---
+title: 'Guidance for Customizing Normalization Library for AWS Entity Resolution'
+canonical_url: https://docs.aws.amazon.com/solutions/customizing-normalization-library-for-aws-entity-resolution/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Customizing Normalization Library for AWS Entity Resolution
 
 ## Overview

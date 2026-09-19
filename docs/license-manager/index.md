@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/license-manager/index.html
 ---
 
+---
+title: 'AWS License Manager Documentation'
+canonical_url: https://docs.aws.amazon.com/license-manager/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS License Manager Documentation
 
 AWS License Manager streamlines the process of bringing software vendor licenses to the AWS Cloud. As you build out cloud infrastructure on AWS, you can save costs by repurposing your existing license inventory for use with cloud resources. License Manager reduces the risk of licensing overages and penalties with inventory tracking that is tied directly to AWS resources.

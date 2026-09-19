@@ -64,7 +64,19 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
    +  **Build your own visualizations**: Explore and interpret logs in Security Lake by combining with a query tool like [Amazon Athena](https://aws.amazon.com/athena/). Build visualizations and dashboards using business intelligence and reporting tools like [Quick](https://aws.amazon.com/quicksight/). With [Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/configure-client-security-lake.html), you can create a subscription that replicates data from Security Lake to your ingestion pipeline and build visualizations on top.
 
 1.  **Evidence:** A traditional audit process follows a pattern like the one below and can take multiple weeks. With an automated solution you can potentially reduce this effort. The timelines shown here are for illustration purposes. These timelines will vary with the complexity of your workloads and the compliance requirements they are subject to.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/wellarchitected/latest/digital-sovereignty-lens/dsops03-bp02.html)
+
+<table>
+<thead>
+  <tr><th> Stages </th><th> Without automation </th><th> With automation </th><th> Automation capabilities </th></tr>
+</thead>
+<tbody>
+  <tr><td> Planning </td><td> 1-2 weeks </td><td> &lt;1 week </td><td> Pre-built mapping frameworks. Lists cloud provider technical controls mapping to known security standards. </td></tr>
+  <tr><td> Evidence requests </td><td> 2-3 weeks </td><td> Immediate. No delays. </td><td> Pre-provisioned auditor roles. Auditors have real-time access to compliance dashboards. </td></tr>
+  <tr><td> Evidence review </td><td> 3-4 weeks </td><td> 1-2 weeks </td><td> Pre-organized and categorized by security standards. </td></tr>
+  <tr><td> Report writing </td><td> 2-3 weeks </td><td> 1-2 weeks </td><td> Automated report generation. </td></tr>
+  <tr><td> <b>Total</b> </td><td> <b>8-12 weeks</b> </td><td> <b>3-5 weeks</b> </td><td> – </td></tr>
+</tbody>
+</table>
 
     Use [AWS Config conformance packs](https://docs.aws.amazon.com/config/latest/developerguide/conformance-packs.html) to map detective controls to compliance frameworks. Conformance packs provide [pre-built templates](https://docs.aws.amazon.com/config/latest/developerguide/conformancepack-sample-templates.html) for frameworks such as NIST SP 800-53 Rev 5, PCI DSS v4.0, and HIPAA. AWS Config is [extensible](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config_develop-rules.html), allowing you to develop custom rules that evaluate sovereignty-specific requirements. Use [AWS Config Advanced Query](https://docs.aws.amazon.com/config/latest/developerguide/querying-AWS-resources.html) to export compliance evaluation results and resource configurations as audit evidence. For long-term evidence retention, enable [Amazon Security Lake](https://docs.aws.amazon.com/security-lake/latest/userguide/what-is-security-lake.html) to centralize Security Hub CSPM findings, CloudTrail events, and other security data in OCSF format on Amazon S3.
 

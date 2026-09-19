@@ -137,7 +137,7 @@ Yes, for the AWS Regions covered by your selected pricing tier. There are no per
 
 **What kinds of traffic are included in my flat-rate pricing?**
 
-Private and public traffic. Transit and SiteLink traffic are not covered as part of flat-rate pricing.
+Private, public, and transit traffic. SiteLink traffic is not covered as part of flat-rate pricing.
 
 **What do I get besides bandwidth?**
 

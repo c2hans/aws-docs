@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/verified-access/index.html
 ---
 
+---
+title: 'AWS Verified Access Documentation'
+canonical_url: https://docs.aws.amazon.com/verified-access/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # AWS Verified Access Documentation
 
 AWS Verified Access provides secure access to corporate applications without a VPN connection. It evaluates each request in real time and determines whether the user has access to the application.

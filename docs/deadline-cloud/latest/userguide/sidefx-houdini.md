@@ -165,7 +165,16 @@ You can override the render strategy by creating a `deadline_cloud_render_strate
      + For **Name**, enter `deadline_cloud_render_strategy`.
      + For **Label**, enter `Deadline Cloud Render Strategy`.
    + In the **Menu** tab, add menu items for:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/deadline-cloud/latest/userguide/sidefx-houdini.html)
+
+<table>
+<thead>
+  <tr><th>Token</th><th>Label</th></tr>
+</thead>
+<tbody>
+  <tr><td>SEQUENTIAL</td><td>Sequential</td></tr>
+  <tr><td>PARALLEL</td><td>Parallel</td></tr>
+</tbody>
+</table>
 
 1. Choose **Accept**.
 

@@ -63,7 +63,7 @@ Required: Yes
 
  ** [languageCode](#API_StartMedicalScribeListeningSession_RequestSyntax) **   <a name="connecthealth-StartMedicalScribeListeningSession-request-languageCode"></a>
 The Language Code for the audio in the session
-Valid Values: `en-US`
+Valid Values: `en-US | multi`
 Required: Yes
 
  ** [mediaEncoding](#API_StartMedicalScribeListeningSession_RequestSyntax) **   <a name="connecthealth-StartMedicalScribeListeningSession-request-mediaEncoding"></a>
@@ -159,7 +159,7 @@ Pattern: `(hai-|dom-)[a-z0-9]+`
 
  ** [languageCode](#API_StartMedicalScribeListeningSession_ResponseSyntax) **   <a name="connecthealth-StartMedicalScribeListeningSession-response-languageCode"></a>
 The Language Code for the audio in the session
-Valid Values: `en-US`
+Valid Values: `en-US | multi`
 
  ** [mediaEncoding](#API_StartMedicalScribeListeningSession_ResponseSyntax) **   <a name="connecthealth-StartMedicalScribeListeningSession-response-mediaEncoding"></a>
 The encoding for the input audio

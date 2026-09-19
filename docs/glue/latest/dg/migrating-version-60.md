@@ -155,7 +155,7 @@ The following limitations apply to AWS Glue 6.0:
 + Iceberg native table encryption keys are not supported.
 + Iceberg multi-argument transforms are not supported.
 + The new Iceberg v3 data types are only supported with Spark DataFrames. These features will not work with DynamicFrames.
-+ Visual ETL in AWS Glue Studio does not support the new Iceberg v3 data types. If you want to use these new features with Visual ETL, we recommend migrating your ETL jobs to Amazon SageMaker Unified Studio.
++ Visual ETL in AWS Glue Studio does not support the new Iceberg v3 data types. To use these new features, use the AWS Glue API, SDK, or AWS CLI. Alternatively, you can use Visual ETL within Amazon SageMaker Unified Studio, powered by AWS Glue.
 + Fine-grained access control (FGAC) is not supported with VARIANT columns.
 + Iceberg tables created with `'format-version'='3'` cannot be read by Athena SQL (error: `Cannot read unsupported version 3`). Use Iceberg v2 for cross-engine compatibility with Athena.
 

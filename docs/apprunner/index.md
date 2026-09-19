@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/apprunner/index.html
 ---
 
+---
+title: 'AWS App Runner Documentation'
+canonical_url: https://docs.aws.amazon.com/apprunner/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS App Runner Documentation
 
 AWS App Runner is a fully managed service that makes it easy for you to deploy from source code or a container image directly to a scalable and secure web application.

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/clouddirectory/index.html
 ---
 
+---
+title: 'Amazon Cloud Directory Documentation'
+canonical_url: https://docs.aws.amazon.com/clouddirectory/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Cloud Directory Documentation
 
 Amazon Cloud Directory is a cloud-native directory that can store hundreds of millions of application-specific objects with multiple relationships and schemas. Use Cloud Directory when you need a cloud-scale directory to share and control access to hierarchical data between your applications. With Cloud Directory, you can organize application data into multiple hierarchies to support many organizational pivots and relationships across directory information.

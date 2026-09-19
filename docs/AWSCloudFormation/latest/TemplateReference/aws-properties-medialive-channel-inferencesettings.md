@@ -20,6 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[AudioFeedInputs](#cfn-medialive-channel-inferencesettings-audiofeedinputs)" : {{[ AudioFeedInput, ... ]}},
+  "[EnrichmentMethods](#cfn-medialive-channel-inferencesettings-enrichmentmethods)" : {{[ String, ... ]}},
   "[FeedArn](#cfn-medialive-channel-inferencesettings-feedarn)" : {{String}}
 }
 ```
@@ -30,6 +31,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [AudioFeedInputs](#cfn-medialive-channel-inferencesettings-audiofeedinputs): {{
     - AudioFeedInput}}
+  [EnrichmentMethods](#cfn-medialive-channel-inferencesettings-enrichmentmethods): {{
+    - String}}
   [FeedArn](#cfn-medialive-channel-inferencesettings-feedarn): {{String}}
 ```
 
@@ -40,6 +43,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 Property description not available.
 *Required*: No
 *Type*: Array of [AudioFeedInput](aws-properties-medialive-channel-audiofeedinput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`EnrichmentMethods`  <a name="cfn-medialive-channel-inferencesettings-enrichmentmethods"></a>
+The Contextual Metadata Enrichment methods enabled for this channel. Each method defines how the channel augments its output with contextual metadata from the Elemental Inference feed.
+*Required*: No
+*Type*: Array of String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `FeedArn`  <a name="cfn-medialive-channel-inferencesettings-feedarn"></a>

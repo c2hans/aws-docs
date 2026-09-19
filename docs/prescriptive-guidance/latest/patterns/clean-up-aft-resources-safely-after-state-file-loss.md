@@ -32,7 +32,11 @@ For more information about AFT, see the [AWS Control Tower documentation](https:
 + This process can clean up resources effectively, but it cannot recover lost state files, and some resources might require manual identification.
 + The duration of the cleanup process depends on your environment's complexity and might take several hours.
 + This pattern has been tested with AFT version 1.12.2 and deletes the following resources. If you're using a different version of AFT, you might have to delete additional resources.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/clean-up-aft-resources-safely-after-state-file-loss.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
 **Important**
 The resources that are deleted by the steps in this pattern cannot be recovered. Before you follow these steps, verify the resource names carefully and make sure that they were created by AFT.

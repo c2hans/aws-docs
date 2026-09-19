@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/sdk-for-ios/index.html
 ---
 
+---
+title: 'Amplify Library for Swift (AWS Mobile SDK for iOS)'
+canonical_url: https://docs.aws.amazon.com/sdk-for-ios/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amplify Library for Swift (AWS Mobile SDK for iOS)
 
 Amplify Library for Swift is a collection of open-source client libraries that provides interfaces for specific use cases across many of the AWS services. Amplify Library for Swift is the recommended way to build native iOS applications powered by AWS. You can also use the low-level AWS Mobile SDK for iOS with Amplify Library for Swift if the use case you are trying to build is not currently available in Amplify Library for Swift.

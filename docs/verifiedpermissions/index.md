@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/verifiedpermissions/index.html
 ---
 
+---
+title: 'Amazon Verified Permissions Documentation'
+canonical_url: https://docs.aws.amazon.com/verifiedpermissions/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Amazon Verified Permissions Documentation
 
 Amazon Verified Permissions provides customer applications with the ability to control which users can perform which actions within the application. Verified Permissions uses policies written in the Cedar policy language to describe access using the standard PARX model: principal, actions, resource, and context.

@@ -34,7 +34,26 @@ You can connect to your instance using the username for your user account or the
 
   For more information about how to create a user account, see [Manage system users on your Amazon EC2 Linux instance](managing-users.md).
 + **Get the default username for the AMI that you used to launch your instance.**
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstancesConnecting.html)
+
+<table>
+<thead>
+  <tr><th>AMI used to launch instance</th><th>Default username</th></tr>
+</thead>
+<tbody>
+  <tr><td>Amazon Linux</td><td><code>ec2-user</code> </td></tr>
+  <tr><td>CentOS</td><td><code>centos</code> or <code>ec2-user</code></td></tr>
+  <tr><td>Debian</td><td><code>admin</code></td></tr>
+  <tr><td>Fedora </td><td><code>fedora</code> or <code>ec2-user</code></td></tr>
+  <tr><td>FreeBSD</td><td><code>ec2-user</code></td></tr>
+  <tr><td>RHEL</td><td><code>ec2-user</code> or <code>root</code></td></tr>
+  <tr><td>SUSE </td><td><code>ec2-user</code> or <code>root</code></td></tr>
+  <tr><td>Ubuntu </td><td><code>ubuntu</code></td></tr>
+  <tr><td>Oracle </td><td><code>ec2-user</code></td></tr>
+  <tr><td>Bitnami </td><td><code>bitnami</code></td></tr>
+  <tr><td>Rocky Linux </td><td><code>rocky</code></td></tr>
+  <tr><td>Other</td><td>Check with the AMI provider</td></tr>
+</tbody>
+</table>
 
 **Verify that your security group rules allow traffic**
 Ensure that the security group associated with your instance allows incoming SSH traffic from your IP address. The default security group for the VPC does not allow incoming SSH traffic by default. The security group created by the launch instance wizard enables SSH traffic by default. For steps to add a rule for inbound SSH traffic to your Linux instance, see [Rules to connect to instances from your computer](security-group-rules-reference.md#sg-rules-local-access). For steps to verify, see [Error connecting to your instance: Connection timed out](#TroubleshootingInstancesConnectionTimeout).
@@ -210,7 +229,27 @@ Alternatively, you can create a new key pair using a third-party tool. For more 
 **Note**
 In PuTTYgen, load your private key file and select **Save Private Key** rather than **Generate**.
 + Verify that you are connecting with the appropriate username for your AMI. Enter the username in the **Host name** box in the **PuTTY Configuration** window.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstancesConnecting.html)
+
+<table>
+<thead>
+  <tr><th>AMI used to launch instance</th><th>Default username</th></tr>
+</thead>
+<tbody>
+  <tr><td>Amazon Linux</td><td><code>ec2-user</code> </td></tr>
+  <tr><td>CentOS</td><td><code>centos</code> or <code>ec2-user</code></td></tr>
+  <tr><td>Debian</td><td><code>admin</code></td></tr>
+  <tr><td>Fedora </td><td><code>fedora</code> or <code>ec2-user</code></td></tr>
+  <tr><td>FreeBSD</td><td><code>ec2-user</code></td></tr>
+  <tr><td>RHEL</td><td><code>ec2-user</code> or <code>root</code></td></tr>
+  <tr><td>SUSE </td><td><code>ec2-user</code> or <code>root</code></td></tr>
+  <tr><td>Ubuntu </td><td><code>ubuntu</code></td></tr>
+  <tr><td>Oracle </td><td><code>ec2-user</code></td></tr>
+  <tr><td>Bitnami </td><td><code>bitnami</code></td></tr>
+  <tr><td>Rocky Linux </td><td><code>rocky</code></td></tr>
+  <tr><td>Other</td><td>Check with the AMI provider</td></tr>
+</tbody>
+</table>
+
 + Verify that you have an inbound security group rule to allow inbound traffic to the appropriate port. For more information, see [Rules to connect to instances from your computer](security-group-rules-reference.md#sg-rules-local-access).
 
 ## Error: Permission denied or connection closed by [instance] port 22

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/frauddetector/index.html
 ---
 
+---
+title: 'Amazon Fraud Detector Documentation'
+canonical_url: https://docs.aws.amazon.com/frauddetector/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Fraud Detector Documentation
 
 Amazon Fraud Detector is a fully managed service that makes it easy to identify potentially fraudulent online activities such as online payment fraud and creation of fake accounts. In a few steps, you can create machine learning models to identify a variety of fraudulent activities.

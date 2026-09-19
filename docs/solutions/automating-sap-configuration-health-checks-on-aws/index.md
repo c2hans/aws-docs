@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/automating-sap-configuration-health-checks-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Automating SAP Configuration Health Checks on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/automating-sap-configuration-health-checks-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Automating SAP Configuration Health Checks on AWS
 
 ## Overview

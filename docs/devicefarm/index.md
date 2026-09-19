@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/devicefarm/index.html
 ---
 
+---
+title: 'AWS Device Farm Documentation'
+canonical_url: https://docs.aws.amazon.com/devicefarm/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Device Farm Documentation
 
 AWS Device Farm is an app testing service that enables you to test your iOS, Android and Fire OS apps on real, physical phones and tablets that are hosted by AWS. The service allows you to upload your own tests or use built-in, script-free compatibility tests.

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/mediaconvert/index.html
 ---
 
+---
+title: 'AWS Elemental MediaConvert Documentation'
+canonical_url: https://docs.aws.amazon.com/mediaconvert/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Elemental MediaConvert Documentation
 
 AWS Elemental MediaConvert is a service that formats and compresses offline video content for delivery to televisions or connected devices. High-quality video transcoding makes it possible to create on-demand video assets for virtually any device.

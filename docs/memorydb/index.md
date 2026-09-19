@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/memorydb/index.html
 ---
 
+---
+title: 'Amazon MemoryDB Documentation'
+canonical_url: https://docs.aws.amazon.com/memorydb/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon MemoryDB Documentation
 
 Amazon MemoryDB is a fully managed, Valkey- and Redis OSS-compatible, in-memory database. It delivers ultra-fast performance and Multi-AZ durability for modern applications built using microservices architectures.

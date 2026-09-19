@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/migrationhub/index.html
 ---
 
+---
+title: 'AWS Migration Hub Documentation'
+canonical_url: https://docs.aws.amazon.com/migrationhub/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # AWS Migration Hub Documentation
 
 AWS Migration Hub (Migration Hub) provides a single location to track migration tasks across multiple AWS tools and partner solutions. With Migration Hub, you can choose the AWS and partner migration tools that best fit your needs while providing visibility into the status of your migration projects. Migration Hub also provides key metrics and progress information for individual applications, regardless of which tools are used to migrate them.

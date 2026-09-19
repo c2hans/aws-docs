@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/savingsplans/index.html
 ---
 
+---
+title: 'Savings Plans Documentation'
+canonical_url: https://docs.aws.amazon.com/savingsplans/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Savings Plans Documentation
 
 Savings Plans is a flexible pricing model that helps you save a significant percentage on Amazon EC2 and Fargate usage. Savings Plans provide low prices on Amazon EC2 and Fargate in exchange for a commitment to a consistent amount of usage for a one-year or three-year term.

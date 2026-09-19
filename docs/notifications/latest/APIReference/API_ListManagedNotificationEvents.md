@@ -11,7 +11,7 @@ Returns a list of Managed Notification Events according to specified filters, or
 <a name="API_ListManagedNotificationEvents_RequestSyntax"></a>
 
 ```
-GET /managed-notification-events?endTime={{endTime}}&locale={{locale}}&maxResults={{maxResults}}&nextToken={{nextToken}}&organizationalUnitId={{organizationalUnitId}}&relatedAccount={{relatedAccount}}&source={{source}}&startTime={{startTime}} HTTP/1.1
+GET /managed-notification-events?endTime={{endTime}}&includeSensitiveEvents={{includeSensitiveEvents}}&locale={{locale}}&maxResults={{maxResults}}&nextToken={{nextToken}}&organizationalUnitId={{organizationalUnitId}}&relatedAccount={{relatedAccount}}&source={{source}}&startTime={{startTime}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -21,6 +21,9 @@ The request uses the following URI parameters.
 
  ** [endTime](#API_ListManagedNotificationEvents_RequestSyntax) **   <a name="Notifications-ListManagedNotificationEvents-request-uri-endTime"></a>
 Latest time of events to return from this call.
+
+ ** [includeSensitiveEvents](#API_ListManagedNotificationEvents_RequestSyntax) **   <a name="Notifications-ListManagedNotificationEvents-request-uri-includeSensitiveEvents"></a>
+Specifies whether to include sensitive events in the result. By default, only non-sensitive events are returned. The `notifications:AccessSensitiveEvents` permission controls access to sensitive events.
 
  ** [locale](#API_ListManagedNotificationEvents_RequestSyntax) **   <a name="Notifications-ListManagedNotificationEvents-request-uri-locale"></a>
 The locale code of the language used for the retrieved NotificationEvent. The default locale is English (en\_US).

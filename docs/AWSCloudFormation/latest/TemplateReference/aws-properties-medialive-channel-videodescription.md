@@ -21,9 +21,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[Border](#cfn-medialive-channel-videodescription-border)" : {{Integer}},
   "[CodecSettings](#cfn-medialive-channel-videodescription-codecsettings)" : {{VideoCodecSettings}},
+  "[CropRectangle](#cfn-medialive-channel-videodescription-croprectangle)" : {{VideoPositionRectangle}},
   "[Height](#cfn-medialive-channel-videodescription-height)" : {{Integer}},
   "[Name](#cfn-medialive-channel-videodescription-name)" : {{String}},
+  "[OutputPositionRectangle](#cfn-medialive-channel-videodescription-outputpositionrectangle)" : {{VideoPositionRectangle}},
   "[RespondToAfd](#cfn-medialive-channel-videodescription-respondtoafd)" : {{String}},
   "[ScalingBehavior](#cfn-medialive-channel-videodescription-scalingbehavior)" : {{String}},
   "[Sharpness](#cfn-medialive-channel-videodescription-sharpness)" : {{Integer}},
@@ -35,10 +38,15 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-medialive-channel-videodescription-syntax.yaml"></a>
 
 ```
+  [Border](#cfn-medialive-channel-videodescription-border): {{Integer}}
   [CodecSettings](#cfn-medialive-channel-videodescription-codecsettings): {{
     VideoCodecSettings}}
+  [CropRectangle](#cfn-medialive-channel-videodescription-croprectangle): {{
+    VideoPositionRectangle}}
   [Height](#cfn-medialive-channel-videodescription-height): {{Integer}}
   [Name](#cfn-medialive-channel-videodescription-name): {{String}}
+  [OutputPositionRectangle](#cfn-medialive-channel-videodescription-outputpositionrectangle): {{
+    VideoPositionRectangle}}
   [RespondToAfd](#cfn-medialive-channel-videodescription-respondtoafd): {{String}}
   [ScalingBehavior](#cfn-medialive-channel-videodescription-scalingbehavior): {{String}}
   [Sharpness](#cfn-medialive-channel-videodescription-sharpness): {{Integer}}
@@ -48,10 +56,22 @@ To declare this entity in your CloudFormation template, use the following syntax
 ## Properties
 <a name="aws-properties-medialive-channel-videodescription-properties"></a>
 
+`Border`  <a name="cfn-medialive-channel-videodescription-border"></a>
+The width, in pixels, of the black border to insert around each edge of the encoded picture. Must be an even integer from 0 (no border, which is the default) through 100. The border is applied to every side, so the width and height of this VideoDescription must each be greater than twice this value. You can't use this field together with outputPositionRectangle, because both fields govern the position of the encoded content within the output frame.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `CodecSettings`  <a name="cfn-medialive-channel-videodescription-codecsettings"></a>
 The video codec settings.
 *Required*: No
 *Type*: [VideoCodecSettings](aws-properties-medialive-channel-videocodecsettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`CropRectangle`  <a name="cfn-medialive-channel-videodescription-croprectangle"></a>
+Property description not available.
+*Required*: No
+*Type*: [VideoPositionRectangle](aws-properties-medialive-channel-videopositionrectangle.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Height`  <a name="cfn-medialive-channel-videodescription-height"></a>
@@ -64,6 +84,12 @@ The output video height, in pixels. This must be an even number. For most codecs
 The name of this VideoDescription. Outputs use this name to uniquely identify this description. Description names should be unique within this channel.
 *Required*: No
 *Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`OutputPositionRectangle`  <a name="cfn-medialive-channel-videodescription-outputpositionrectangle"></a>
+The position of the encoded video within the output frame. The area outside the rectangle is filled with black. If you don't specify this field, the video fills the entire output frame. If you do specify it, you must also explicitly specify the width and height of this VideoDescription, so that MediaLive can validate the rectangle against the output frame.
+*Required*: No
+*Type*: [VideoPositionRectangle](aws-properties-medialive-channel-videopositionrectangle.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `RespondToAfd`  <a name="cfn-medialive-channel-videodescription-respondtoafd"></a>

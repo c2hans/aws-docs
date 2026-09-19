@@ -28,7 +28,28 @@ Make sure your account has access to use the *g4dn.xlarge* EC2 instance type if 
 1. For **Select Workstation Management module**, select **Leostream Broker** and choose **Next**.
 
 1. For **Configure workstation management settings**, review the parameters for this module and modify them as necessary. This module uses the following default values.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/enable-leostream-broker-module.html)
+
+<table>
+<thead>
+  <tr><th> <b>Parameter</b> </th><th> <b>Default</b> </th><th> <b>Description</b> </th></tr>
+</thead>
+<tbody>
+  <tr><td>Leostream Broker Fully Qualified Domain Name (optional)</td><td> <i>Optional input</i> </td><td>Specify the FQDN that will be routed to the broker load balancer. If no accompanying Certificate ID is supplied, a self-signed certificate will be generated for this domain. (This parameter is required if you specified a Certificate ID).</td></tr>
+  <tr><td>Leostream Broker Certificate ID (optional)</td><td> <i>Optional input</i> </td><td>Specify the Certificate ID or ARN imported from AWS Certificate Manager to validate your FQDN. If you leave this field blank, the module will create a self-signed certificate from the domain you previously provided. See <a href="https://docs.aws.amazon.c%20om/acm/latest/userguide/acm-public-cer%20tificates.html#request-public-console">Get certificates ready in AWS Certificate Manager</a> for more information on how to set up a certificate. </td></tr>
+  <tr><td>Leostream License Contact Email</td><td> {{&lt;_Requires input_&gt;}} </td><td>Contact email to use for the Leostream license. The free Leostream Broker license included in this module will be registered under this email.</td></tr>
+  <tr><td>Leostream License Contact Name</td><td> {{&lt;_Requires input_&gt;}} </td><td>Contact name to use for the Leostream license. The free Leostream Broker license included in this module will be registered under this name.</td></tr>
+  <tr><td>Leostream Broker Package Location</td><td> <a href="https://s3.amazonaws.com/downloads.leostream.com/leostream-broker-2024.1.7-1.x86_64.rpm">https://s3.amazonaws.com/downloads.leostream.com/leostream-broker-2024.1.7-1.x86_64.rpm</a> </td><td>Amazon S3 download URL for the Leostream Broker RPM package.</td></tr>
+  <tr><td>Leostream Broker Max Instances Count</td><td>5</td><td>The maximum amount of Leostream Broker instances that the Auto Scaling Group can scale up to.</td></tr>
+  <tr><td>Workstation Provision Threshold</td><td>1</td><td>Start provisioning new workstations if the number of available workstations is less than this threshold. The Leostream Broker will not provision if the number of workstations reaches the set maximum count. The initial value must be an integer of 1 or greater. If you need a different value later, you can open the Leostream console and change the value to any non-negative integer, including 0. </td></tr>
+  <tr><td>Workstation Max Count</td><td> <code>2</code> </td><td>Maximum number of workstations to be provisioned by the Leostream Broker. This number applies for each Windows and Linux pool.</td></tr>
+  <tr><td>Workstation Windows2022 AMI</td><td> <code>Yes</code> </td><td>Select if you want to deploy the Windows AMI.</td></tr>
+  <tr><td>Amazon DCV Windows Server URL</td><td> <code>https://d1uj6qtbmh3dt5.cloudfront.net/2024.0/Servers/nice-dcv-server-x64-Release-2024.0-18131.msi</code> </td><td>URL to download the Amazon DCV Windows server file.</td></tr>
+  <tr><td>Leostream Windows Agent URL</td><td> <code>https://downloads.leostream.com/LeostreamAgentSetup2024-1-4-0.exe</code> </td><td>URL to download the Leostream Windows agent file.</td></tr>
+  <tr><td>Workstation Rocky Linux8 AMI</td><td> <code>No</code> </td><td>Select if you want to deploy the Linux AMI. If you select Yes, ensure that you have subscribed <a href="http://aws.amazon.com/marketplace/pp/prodview-2otariyxb3mqu">Rocky Linux 8</a> on the AWS Marketplace.</td></tr>
+  <tr><td>Amazon DCV Linux Server URL</td><td> <code>https://d1uj6qtbmh3dt5.cloudfront.net/2024.0/Servers/nice-dcv-2024.0-18131-el8-x86_64.tgz</code> </td><td>URL to download the Amazon DCV Linux server file.</td></tr>
+  <tr><td>Leostream Linux Agent URL</td><td> <code>https://downloads.leostream.com/LeostreamAgentJava-5.3.18.0.jar</code> </td><td>URL to download the Leostream Linux agent file.</td></tr>
+</tbody>
+</table>
 
 1. For **Configure Tag Settings**, review the tags for this module and modify them as necessary. By default, this module uses tags defined in the main solution stack.
 

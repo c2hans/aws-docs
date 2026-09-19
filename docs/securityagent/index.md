@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/securityagent/index.html
 ---
 
+---
+title: 'AWS Security Agent'
+canonical_url: https://docs.aws.amazon.com/securityagent/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Security Agent
 
 AWS Security Agent is a frontier agent that proactively secures your applications throughout the development lifecycle.

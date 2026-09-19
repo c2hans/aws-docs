@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/rds/index.html
 ---
 
+---
+title: 'Amazon RDS and Aurora Documentation'
+canonical_url: https://docs.aws.amazon.com/rds/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon RDS and Aurora Documentation
 
 Amazon Relational Database Service (Amazon RDS) is a web service that makes it easier to set up, operate, and scale a relational database in the cloud. It provides cost-efficient, resizeable capacity for an industry-standard relational database and manages common database administration tasks. Amazon Aurora is a fully managed relational database engine that's built for the cloud and compatible with MySQL and PostgreSQL. Amazon Aurora is part of Amazon RDS.

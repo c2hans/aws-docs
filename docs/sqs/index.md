@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/sqs/index.html
 ---
 
+---
+title: 'Amazon Simple Queue Service Documentation'
+canonical_url: https://docs.aws.amazon.com/sqs/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Simple Queue Service Documentation
 
 Amazon Simple Queue Service (Amazon SQS) is a fully managed message queuing service that makes it easy to decouple and scale microservices, distributed systems, and serverless applications. Amazon SQS moves data between distributed application components and helps you decouple these components.

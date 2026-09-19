@@ -113,7 +113,6 @@ Full access console policy:
         "health-agent:DeleteAgent",
         "health-agent:DeleteDomain",
         "health-agent:DeleteIntegration",
-        "health-agent:GenerateMedicalCodes",
         "health-agent:GetAgent",
         "health-agent:GetDomain",
         "health-agent:GetIntegration",
@@ -137,7 +136,6 @@ Full access console policy:
         "iam:DeletePolicyVersion",
         "iam:GetRole",
         "iam:GetRolePolicy",
-        "iam:PassRole",
         "iam:PutRolePolicy",
         "kms:DescribeKey",
         "kms:ListAliases",
@@ -196,6 +194,16 @@ Full access console policy:
         "sso-directory:SearchUsers"
       ],
       "Resource": "*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": "iam:PassRole",
+      "Resource": "arn:aws:iam::<account-id>:role/<role-name>",
+      "Condition": {
+        "StringEquals": {
+          "iam:PassedToService": "health-agent.amazonaws.com"
+        }
+      }
     }
   ]
 }
@@ -271,8 +279,7 @@ The following policy grants read-only access to ambient documentation sessions.
     {
       "Effect": "Allow",
       "Action": [
-        "health-agent:GetMedicalScribeListeningSession",
-        "health-agent:ListMedicalScribeListeningSessions"
+        "health-agent:GetMedicalScribeListeningSession"
       ],
       "Resource": "*"
     }
@@ -400,8 +407,7 @@ The following example shows a service role policy for Amazon Connect Health that
       "Effect": "Allow",
       "Action": [
         "health-agent:ListIntegrations",
-        "health-agent:ListAgents",
-        "health-agent:ListAgentVersions"
+        "health-agent:ListAgents"
       ],
       "Resource": "arn:aws:health-agent:<region>:<account-id>:domain/<domain-id>"
     },

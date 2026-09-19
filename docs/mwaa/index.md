@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/mwaa/index.html
 ---
 
+---
+title: 'Amazon Managed Workflows for Apache Airflow Documentation'
+canonical_url: https://docs.aws.amazon.com/mwaa/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Amazon Managed Workflows for Apache Airflow Documentation
 
 Amazon Managed Workflows for Apache Airflow (Amazon MWAA) is a managed service for Apache Airflow that you can use to build and manage your workflows in the cloud.

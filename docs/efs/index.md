@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/efs/index.html
 ---
 
+---
+title: 'Amazon Elastic File System Documentation'
+canonical_url: https://docs.aws.amazon.com/efs/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Elastic File System Documentation
 
 Amazon EFS is a simple, serverless, elastic, set-and-forget file system that automatically grows and shrinks as you add and remove files with no need for management or provisioning. You can use Amazon EFS with Amazon EC2, AWS Lambda, Amazon ECS, Amazon EKS and other AWS compute instances, or with on-premises servers.

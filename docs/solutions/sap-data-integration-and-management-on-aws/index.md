@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/sap-data-integration-and-management-on-aws/index.html
 ---
 
+---
+title: 'Guidance for SAP Data Integration and Management on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/sap-data-integration-and-management-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for SAP Data Integration and Management on AWS
 
 ## Overview

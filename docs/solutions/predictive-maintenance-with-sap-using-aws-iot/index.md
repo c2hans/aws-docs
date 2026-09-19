@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/predictive-maintenance-with-sap-using-aws-iot/index.html
 ---
 
+---
+title: 'Guidance for Predictive Maintenance with SAP using AWS IoT'
+canonical_url: https://docs.aws.amazon.com/solutions/predictive-maintenance-with-sap-using-aws-iot/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Predictive Maintenance with SAP using AWS IoT
 
 ## Overview

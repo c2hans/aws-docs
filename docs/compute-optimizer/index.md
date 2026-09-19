@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/compute-optimizer/index.html
 ---
 
+---
+title: 'AWS Compute Optimizer Documentation'
+canonical_url: https://docs.aws.amazon.com/compute-optimizer/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Compute Optimizer Documentation
 
 AWS Compute Optimizer recommends optimal AWS compute resources for your workloads. It can help you reduce costs and improve performance, by using machine learning to analyze your historical utilization metrics. Compute Optimizer helps you choose the optimal resource configuration based on your utilization data.

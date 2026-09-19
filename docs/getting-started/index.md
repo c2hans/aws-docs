@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/getting-started/index.html
 ---
 
+---
+title: 'Getting Started with AWS'
+canonical_url: https://docs.aws.amazon.com/getting-started/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Getting Started with AWS
 
 Whether you're new to AWS or already building on AWS, start here. Create your AWS account and set up your environment, choose the right AWS services for your use case, then follow step-by-step tutorials to get hands-on with services like Amazon S3, AWS Lambda, and Amazon Bedrock. Explore training, videos, and the community to grow your AWS skills.

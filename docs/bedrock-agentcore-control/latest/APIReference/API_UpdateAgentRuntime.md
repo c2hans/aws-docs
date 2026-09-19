@@ -43,6 +43,7 @@ Content-type: application/json
          "subnets": [ "{{string}}" ]
       }
    },
+   "platformVersion": "{{string}}",
    "protocolConfiguration": {
       "serverProtocol": "{{string}}"
    },
@@ -125,6 +126,13 @@ The updated network configuration for the AgentCore Runtime.
 Type: [NetworkConfiguration](API_NetworkConfiguration.md) object
 Required: No
 
+ ** [platformVersion](#API_UpdateAgentRuntime_RequestSyntax) **   <a name="bedrockagentcorecontrol-UpdateAgentRuntime-request-platformVersion"></a>
+The updated version of the runtime platform to use for the AgentCore Runtime.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Pattern: `[^\s]+`
+Required: No
+
  ** [protocolConfiguration](#API_UpdateAgentRuntime_RequestSyntax) **   <a name="bedrockagentcorecontrol-UpdateAgentRuntime-request-protocolConfiguration"></a>
 The protocol configuration for an agent runtime. This structure defines how the agent runtime communicates with clients.
 Type: [ProtocolConfiguration](API_ProtocolConfiguration.md) object
@@ -197,7 +205,7 @@ Type: Timestamp
  ** [status](#API_UpdateAgentRuntime_ResponseSyntax) **   <a name="bedrockagentcorecontrol-UpdateAgentRuntime-response-status"></a>
 The current status of the updated AgentCore Runtime.
 Type: String
-Valid Values: `CREATING | CREATE_FAILED | UPDATING | UPDATE_FAILED | READY | DELETING`
+Valid Values: `CREATING | CREATE_FAILED | UPDATING | UPDATE_FAILED | READY | DELETING | DELETE_FAILED`
 
  ** [workloadIdentityDetails](#API_UpdateAgentRuntime_ResponseSyntax) **   <a name="bedrockagentcorecontrol-UpdateAgentRuntime-response-workloadIdentityDetails"></a>
 The workload identity details for the updated AgentCore Runtime.

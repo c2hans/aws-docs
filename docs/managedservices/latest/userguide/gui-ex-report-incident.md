@@ -29,7 +29,13 @@ For security issues, create a high-priority (P1 or P2) support case. The live ch
 ![Incidents page showing a list of resolved incidents with their creation dates, subjects, and IDs.](https://docs.aws.amazon.com/managedservices/latest/userguide/images/guiIncidentList2.png)
 
 1. If you want to find an existing incident, select an incident status filter in the drop-down list.
-<a name="sr-filter-options"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/managedservices/latest/userguide/gui-ex-report-incident.html)
+
+<a name="sr-filter-options"></a>
+<table>
+<tbody>
+  <tr><td> <img src="https://docs.aws.amazon.com/managedservices/latest/userguide/images/guiSRfilterBox.png" alt="" /> </td><td> <ul><li> All incidents that are not yet resolved. </li><li> A new incident that is not yet assigned. </li><li> An incident that has been assigned. </li><li> An incident that you reopened. </li><li> An assigned, complicated incident. </li><li> Incidents that require your feedback before the next step. </li><li> Incidents to which you have recently submitted information. </li><li> An incident that has concluded. </li><li> All incidents in the account. </li></ul> </td></tr>
+</tbody>
+</table>
 
 1. Choose **Create**.
 

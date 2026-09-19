@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/kms/index.html
 ---
 
+---
+title: 'AWS Key Management Service Documentation'
+canonical_url: https://docs.aws.amazon.com/kms/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Key Management Service Documentation
 
 AWS Key Management Service (AWS KMS) is an encryption and key management service scaled for the cloud. AWS KMS keys and functionality are used by other AWS services, and you can use them to protect data in your own applications that use AWS.

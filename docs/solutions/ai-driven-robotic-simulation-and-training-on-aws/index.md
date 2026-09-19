@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/ai-driven-robotic-simulation-and-training-on-aws/index.html
 ---
 
+---
+title: 'Guidance for AI-Driven Robotic Simulation and Training on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/ai-driven-robotic-simulation-and-training-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for AI-Driven Robotic Simulation and Training on AWS
 
 ## Overview

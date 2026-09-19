@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/cloudshell/index.html
 ---
 
+---
+title: 'AWS CloudShell Documentation'
+canonical_url: https://docs.aws.amazon.com/cloudshell/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS CloudShell Documentation
 
 AWS CloudShell is a browser-based shell that you can use to manage AWS services using the AWS Command Line Interface (AWS CLI) and a range of pre-installed development tools.

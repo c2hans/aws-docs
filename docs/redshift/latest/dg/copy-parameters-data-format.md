@@ -189,7 +189,7 @@ To use a JSONPaths file, add the JSON or AVRO keyword to the COPY command. Speci
 ```
 COPY tablename
 FROM 'data_source'
-CREDENTIALS '{{credentials-args}}'
+IAM_ROLE 'arn:aws:iam::{{<aws-account-id>}}:role/{{<role-name>}}'
 FORMAT AS { AVRO | JSON } 's3://jsonpaths_file';
 ```
 

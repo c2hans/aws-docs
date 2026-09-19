@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/scaling-geospatial-data-lakes-with-earth-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Scaling Geospatial Data Lakes with Earth on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/scaling-geospatial-data-lakes-with-earth-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Scaling Geospatial Data Lakes with Earth on AWS
 
 ## Overview

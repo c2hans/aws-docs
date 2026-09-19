@@ -16,6 +16,12 @@ Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 500 items.
 Required: No
 
+ ** sessionTraceIds **   <a name="BedrockAgentCore-Type-CloudWatchFilterConfig-sessionTraceIds"></a>
+A list of session and trace ID pairs that restrict evaluation to specific traces within a session. If specified, only the listed traces are evaluated instead of the entire session.
+Type: Array of [SessionTraceIds](API_SessionTraceIds.md) objects
+Array Members: Minimum number of 1 item. Maximum number of 500 items.
+Required: No
+
  ** timeRange **   <a name="BedrockAgentCore-Type-CloudWatchFilterConfig-timeRange"></a>
 The time range filter for selecting sessions to evaluate.
 Type: [SessionFilterConfig](API_SessionFilterConfig.md) object

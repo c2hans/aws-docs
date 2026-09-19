@@ -161,8 +161,26 @@ You can modify the storage configuration for instances launched from an Amazon E
    1. **Encrypted**: If the instance type supports EBS encryption, you can choose **Yes** to enable encryption for the volume. If you have enabled encryption by default in this Region, encryption is enabled for you. For more information, see [Amazon EBS encryption](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-encryption.html) and [Enable Amazon EBS encryption by default](https://docs.aws.amazon.com/ebs/latest/userguide/encryption-by-default.html) in the *Amazon EBS User Guide*.
 
       The default effect of setting this parameter varies with the choice of volume source, as described in the following table. In all cases, you must have permission to use the specified AWS KMS key.
+
 **Encryption outcomes**
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/autoscaling/ec2/userguide/create-launch-template.html)
+
+<table>
+<thead>
+  <tr><th> If <code>Encrypted</code> parameter is set to...</th><th>And if source of volume is...</th><th>Then the default encryption state is...</th><th>Notes</th></tr>
+</thead>
+<tbody>
+  <tr><td rowspan="5">No</td><td>New (empty) volume</td><td>Unencrypted*</td><td rowspan="5">N/A</td></tr>
+  <tr><td>Unencrypted snapshot that you own</td><td>Unencrypted*</td></tr>
+  <tr><td>Encrypted snapshot that you own</td><td>Encrypted by same key</td></tr>
+  <tr><td>Unencrypted snapshot that is shared with you</td><td>Unencrypted*</td></tr>
+  <tr><td>Encrypted snapshot that is shared with you</td><td>Encrypted by default KMS key</td></tr>
+  <tr><td rowspan="5">Yes</td><td>New volume</td><td>Encrypted by default KMS key</td><td rowspan="5">To use a non-default KMS key, specify a value for the <b>KMS key</b> parameter. </td></tr>
+  <tr><td>Unencrypted snapshot that you own</td><td>Encrypted by default KMS key</td></tr>
+  <tr><td>Encrypted snapshot that you own</td><td>Encrypted by same key</td></tr>
+  <tr><td>Unencrypted snapshot that is shared with you</td><td>Encrypted by default KMS key</td></tr>
+  <tr><td>Encrypted snapshot that is shared with you</td><td>Encrypted by default KMS key</td></tr>
+</tbody>
+</table>
 
       \* If encryption by default is enabled, all newly created volumes (whether or not the **Encrypted** parameter is set to **Yes**) are encrypted using the default KMS key. If you set both the **Encrypted** and **KMS key** parameters, then you can specify a non-default KMS key.
 

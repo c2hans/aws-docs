@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-resource-management-op
 # Resource management and optimization in Amazon SNS
 <a name="sns-resource-management-optimization"></a>
 
-This topic provides guidance on how to leverage the full potential of Amazon SNS by ensuring optimal performance, reducing unnecessary costs, and maintaining well-organized resources.
+This topic helps you get the most from Amazon SNS. Learn how to ensure optimal performance, reduce unnecessary costs, and maintain well-organized resources.
 
 **Topics**
 + [Tagging](sns-tags.md)

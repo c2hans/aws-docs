@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/serverless-application-model/index.html
 ---
 
+---
+title: 'AWS Serverless Application Model (AWS SAM) Documentation'
+canonical_url: https://docs.aws.amazon.com/serverless-application-model/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Serverless Application Model (AWS SAM) Documentation
 
 The AWS Serverless Application Model (AWS SAM) is an open-source framework that enables you to build serverless applications on AWS. It provides you with a template specification to define your serverless application, and a command line interface (CLI) tool.

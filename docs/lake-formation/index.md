@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/lake-formation/index.html
 ---
 
+---
+title: 'AWS Lake Formation Documentation'
+canonical_url: https://docs.aws.amazon.com/lake-formation/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Lake Formation Documentation
 
 AWS Lake Formation is a managed service that makes it easy to set up, secure, and manage your data lakes. Lake Formation helps you discover your data sources and then catalog, cleanse, and transform the data. You can use Lake Formation to secure the data and ingest it into an Amazon Simple Storage Service (Amazon S3) data lake.

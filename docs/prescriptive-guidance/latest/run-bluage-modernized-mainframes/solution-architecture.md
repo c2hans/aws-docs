@@ -20,7 +20,11 @@ The diagram shows the following process:
 1. Use one of the following types of Elastic Load Balancing resources to provide an entry point for requests:
    + For HTTP-based services, use an [Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html). This enables the use of TLS certificates to provide encryption in transit and application health checks.
    + For other services, such as IBM CICS, use a [Network Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/introduction.html). This transparently creates proxy TCP connections (Layer 4) to the containers in the Amazon ECS cluster.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/run-bluage-modernized-mainframes/solution-architecture.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
 1. Store environmental configurations, such as database endpoints and credentials, in Secrets Manager or Parameter Store. With Secrets Manager, you pay based on the number of secrets stored and API calls made. This service is best suited for any sensitive data, such as database credentials. With Parameter Store, there is no additional charge for standard parameters and standard throughput of API interactions. This service is best suited for other, non-sensitive data, such as Java logging parameters.
 

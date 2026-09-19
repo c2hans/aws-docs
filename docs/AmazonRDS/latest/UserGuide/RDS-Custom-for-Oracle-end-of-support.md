@@ -2869,7 +2869,19 @@ This section provides comprehensive best practices for successful migration from
 1. Choose the right EC2 instance type:
 
    Select an EC2 instance type based on your workload characteristics:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/RDS-Custom-for-Oracle-end-of-support.html)
+
+<table>
+<thead>
+  <tr><th><b>Workload Type</b></th><th><b>Recommended Instance Family</b></th><th><b>Key Characteristics</b></th></tr>
+</thead>
+<tbody>
+  <tr><td>General purpose OLTP</td><td>M6i, M6a, M7i</td><td>Balanced compute, memory, and network</td></tr>
+  <tr><td>Memory-intensive</td><td>R6i, R6a, R7i, X2idn</td><td>High memory-to-CPU ratio</td></tr>
+  <tr><td>Compute-intensive</td><td>C6i, C6a, C7i</td><td>High CPU performance</td></tr>
+  <tr><td>I/O-intensive</td><td>I4i, Im4gn</td><td>High local NVMe SSD storage</td></tr>
+  <tr><td>Mixed workloads</td><td>M5, M5a, M5n</td><td>Cost-effective balanced performance</td></tr>
+</tbody>
+</table>
 
     **Instance sizing guidelines:**
    + Start with the same instance class as your RDS Custom instance
@@ -2880,7 +2892,18 @@ This section provides comprehensive best practices for successful migration from
 1. Design your storage architecture:
 
    **EBS volume types:**
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/RDS-Custom-for-Oracle-end-of-support.html)
+
+<table>
+<thead>
+  <tr><th><b>Volume Type</b></th><th><b>Use Case</b></th><th><b>Performance</b></th><th><b>Cost</b></th></tr>
+</thead>
+<tbody>
+  <tr><td>gp3</td><td>General purpose, most workloads</td><td>Up to 16,000 IOPS, 1,000 MB/s</td><td>Low</td></tr>
+  <tr><td>io2 Block Express</td><td>Mission-critical, high-performance</td><td>Up to 256,000 IOPS, 4,000 MB/s</td><td>High</td></tr>
+  <tr><td>Io1</td><td>High-performance databases</td><td>Up to 64,000 IOPS, 1,000 MB/s</td><td>Medium-High</td></tr>
+  <tr><td>gp2</td><td>Legacy general purpose</td><td>Up to 16,000 IOPS</td><td>Low</td></tr>
+</tbody>
+</table>
 
    **Storage layout recommendations:**
 

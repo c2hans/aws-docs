@@ -17,7 +17,12 @@ Note that you can adopt a hybrid approach, sharing best practices and culture tr
 It's important to understand your organization's goals so that the CCoE can play a crucial role achieving those goals, especially in the context of cloud adoption and digital transformation. Before you set up a CCoE, consider the following:
 + An organization needs to be selective and strategic in deciding where to focus time, resources, and efforts to ensure it's aligning with the long-term strategic goals and objectives. It means that you need to analyze that what your organization does really well. What differentiates you from others, and where do you want to invest to further differentiate yourselves from your peers? The answer can be based on market dynamics, customer needs, and emerging trends. As an example, some organizations differentiate themselves by staying at the forefront of technological advancements. For other organizations, providing exceptional customer service and experience can be a significant differentiator.
 + Ask yourself, or your organization, why you want to build a CCoE. Is it to prepare your organization internally to accelerate the cloud journey, to help a customer, or both?
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-center-of-excellence/intended-outcomes.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
+
 + Most often, you are not starting from scratch. Rather, you will be building on an existing foundation. For example, you might already have personnel with expertise in cloud technologies. You might have existing training and development resources for enhancing the cloud knowledge and skills of your workforce. You also might have existing relationships with external consulting or technology organizations that can contribute to cloud-adoption and CCoE activities. Use a strategic approach that maximizes existing assets and resources while adapting to changing market dynamics at the same time:
 
   1. Understand business goals – Where does your business see the biggest opportunity for growth? This can be based on your expansion plans, market research, inputs from the field (Sales), and other sources.
@@ -25,7 +30,11 @@ It's important to understand your organization's goals so that the CCoE can play
   1. Assess locations at the regional and global level – Explore opportunities to enter new markets or expand within existing markets. This can involve targeting new customer segments or geographic regions where there is untapped potential.
 
   1. Use existing resources and skills – Look at what skills your organization currently possesses. Your organization can use the assets, knowledge, and infrastructure already in place. This includes your customer base, brand recognition, technology, and people resources. Seek out fearless innovators who want to increase their positive impact on the business. Seed the team from within your organization, and supplement it by upskilling. Finally, use on the hiring of new resources to fill any gaps.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-center-of-excellence/intended-outcomes.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
   1. Assess job market conditions – Skills that are hard to source coupled with notice periods and unreasonable candidate expectations can lead to hiring challenges. Hiring challenges are common, but proactive and strategic approaches can help organizations overcome these obstacles and secure the talent they need to achieve their goals.
 + Identify a sponsor for the CCoE. You might have country, geographical, technology, or business unit–specific priorities that inadvertently compete with one another. When choosing a sponsor, consider the following:

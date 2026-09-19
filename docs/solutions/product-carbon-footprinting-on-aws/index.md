@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/product-carbon-footprinting-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Product Carbon Footprinting on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/product-carbon-footprinting-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Product Carbon Footprinting on AWS
 
 ## Overview

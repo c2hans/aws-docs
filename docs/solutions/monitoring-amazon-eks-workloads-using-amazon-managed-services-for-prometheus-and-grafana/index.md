@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/monitoring-amazon-eks-workloads-using-amazon-managed-services-for-prometheus-and-grafana/index.html
 ---
 
+---
+title: 'Guidance for Monitoring Amazon EKS Workloads Using Amazon Managed Services for Prometheus & Grafana'
+canonical_url: https://docs.aws.amazon.com/solutions/monitoring-amazon-eks-workloads-using-amazon-managed-services-for-prometheus-and-grafana/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Monitoring Amazon EKS Workloads Using Amazon Managed Services for Prometheus & Grafana
 
 ## Overview

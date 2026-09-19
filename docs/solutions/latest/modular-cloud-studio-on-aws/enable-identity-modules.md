@@ -23,7 +23,15 @@ Follow these steps to enable the Identity module.
 1. For **Select Identity** module, select **Create AWS Managed Microsoft Active Directory** and choose **Next**.
 
 1. For **Configure AD settings**, review the parameters for this module and modify them as necessary. This module uses the following default values.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/enable-identity-modules.html)
+
+<table>
+<thead>
+  <tr><th> <b>Parameter</b> </th><th> <b>Default</b> </th><th> <b>Description</b> </th></tr>
+</thead>
+<tbody>
+  <tr><td>Domain name</td><td>studio.mcs.internal</td><td>Domain name for the AWS Managed Microsoft AD.</td></tr>
+</tbody>
+</table>
 
 1. For **Configure Tag Settings**, review the tags for this module and modify them as necessary. By default, this module uses tags defined in the main solution stack.
 
@@ -93,7 +101,18 @@ Follow the steps in [Password Rotation](password-rotation.md) to update the pass
 1. For **Select Identity module**, select **Import Custom Microsoft Active Directory** and choose **Next.**
 
 1. For **Configure AD settings**, review the parameters for this module and modify them as necessary. This module uses the following default values.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/enable-identity-modules.html)
+
+<table>
+<thead>
+  <tr><th> <b>Parameter</b> </th><th> <b>Default</b> </th><th> <b>Description</b> </th></tr>
+</thead>
+<tbody>
+  <tr><td>Domain Name</td><td> {{&lt;_Requires input_&gt;}} </td><td>The domain name of MCS unmanaged Active Directory module.</td></tr>
+  <tr><td>IP Address1</td><td> {{&lt;_Requires input_&gt;}} </td><td>The first IP address of MCS unmanaged Active Directory module.</td></tr>
+  <tr><td>IP Address2</td><td> {{&lt;_Requires input_&gt;}} </td><td>The second IP address of MCS unmanaged Active Directory module.</td></tr>
+  <tr><td>Region</td><td> {{&lt;_Requires input_&gt;}} </td><td>The Region where the existing directory resides.</td></tr>
+</tbody>
+</table>
 
 1. For **Configure Tag Settings**, review the tags for this module and modify them as necessary. By default, this module uses tags defined in the main solution stack.
 

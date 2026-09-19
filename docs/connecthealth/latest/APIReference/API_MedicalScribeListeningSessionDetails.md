@@ -31,7 +31,7 @@ Required: No
  ** languageCode **   <a name="connecthealth-Type-MedicalScribeListeningSessionDetails-languageCode"></a>
 The Language Code for the audio in the session
 Type: String
-Valid Values: `en-US`
+Valid Values: `en-US | multi`
 Required: No
 
  ** mediaEncoding **   <a name="connecthealth-Type-MedicalScribeListeningSessionDetails-mediaEncoding"></a>

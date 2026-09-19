@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/securing-operational-technology-assets-with-claroty-xdome-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Securing Operational Technology (OT) Assets with Claroty xDome on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/securing-operational-technology-assets-with-claroty-xdome-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Securing Operational Technology (OT) Assets with Claroty xDome on AWS
 
 Implement a cybersecurity approach to secure OT, Internet of Things (IoT), and Industrial Internet of Things (IIoT) assets

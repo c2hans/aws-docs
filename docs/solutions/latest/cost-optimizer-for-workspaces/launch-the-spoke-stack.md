@@ -20,7 +20,16 @@ The spoke account template should be deployed in any account you want to monitor
 1. On the **Specify stack details** page, assign a name to your solution stack. For information about naming character limitations, see [IAM and AWS STS quotas, name requirements, and character limits](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-limits.html) in the *AWS Identity and Access Management User Guide*.
 
 1. Under **Parameters**, review the parameters for the template and modify them as necessary. This solution uses the following default values.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/cost-optimizer-for-workspaces/launch-the-spoke-stack.html)
+
+<table>
+<thead>
+  <tr><th>Parameter</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td> <b>Hub account ID</b> </td><td> {{&lt;Requires input&gt;}} </td><td>The ID of the hub account for the solution. This stack should be deployed in the same Region as the hub stack in the hub account.</td></tr>
+  <tr><td> <b>Logging level</b> </td><td> <code>INFO</code> </td><td>Logging level.</td></tr>
+</tbody>
+</table>
 
 1. Choose **Next.**
 

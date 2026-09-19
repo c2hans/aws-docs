@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/mediaconnect/index.html
 ---
 
+---
+title: 'AWS Elemental MediaConnect Documentation'
+canonical_url: https://docs.aws.amazon.com/mediaconnect/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Elemental MediaConnect Documentation
 
 AWS Elemental MediaConnect is a reliable, secure, and flexible transport service for live video. Using AWS Elemental MediaConnect, broadcasters and content owners can cost-effectively send high-value live content into the cloud, securely transmit it to partners for distribution, and replicate it to multiple destinations around the globe.

@@ -58,6 +58,13 @@ Array Members: Maximum number of 1 item.
 Length Constraints: Minimum length of 1. Maximum length of 998.
 Required: No
 
+ ** TenantName **   <a name="SES-Type-MessageInsightsFilters-TenantName"></a>
+The name of the tenant used when sending the message.
+Type: Array of strings
+Array Members: Maximum number of 5 items.
+Length Constraints: Minimum length of 1.
+Required: No
+
 ## See Also
 <a name="API_MessageInsightsFilters_SeeAlso"></a>
 

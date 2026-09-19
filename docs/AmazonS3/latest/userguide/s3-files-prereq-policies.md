@@ -176,7 +176,18 @@ This IAM role requires the following:
   ```
 
   Replace the placeholder values with your own values.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-prereq-policies.html)
+
+<table>
+<thead>
+  <tr><th>#</th><th>Placeholder</th><th>Description</th><th>Example</th></tr>
+</thead>
+<tbody>
+  <tr><td>1</td><td>{{bucket}}</td><td>The name of your S3 bucket</td><td>my-bucket</td></tr>
+  <tr><td>2</td><td>{{region}}</td><td>The AWS Region of your bucket</td><td>us-east-1</td></tr>
+  <tr><td>3</td><td>{{accountId}}</td><td>Your AWS account ID</td><td>123456789012</td></tr>
+</tbody>
+</table>
+
 + A trust policy that allows S3 Files to assume the IAM role. Add the following trust policy to the IAM role to allow the S3 Files service to assume it. Replace {{accountId}} and {{region}} with your values.
 
   ```

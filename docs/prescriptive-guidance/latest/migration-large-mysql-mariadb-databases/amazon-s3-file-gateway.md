@@ -41,7 +41,11 @@ The following are limitations when using Amazon S3 File Gateway file shares:
 + Windows ACLs are supported only on file shares that are enabled for Active Directory when you use Windows SMB clients to access the file shares.
 + Amazon S3 File Gateway supports a maximum of 10 ACL entries for each file and directory.
 + The root ACL settings of SMB file shares are only on the gateway. These settings are persistent across gateway updates and restarts.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-large-mysql-mariadb-databases/amazon-s3-file-gateway.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
 ## Best practices
 <a name="best-practices-amazon-s3-file-gateway"></a>

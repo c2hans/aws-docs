@@ -141,6 +141,9 @@ The same job using the job-level plan field:
 ## Use instance preferences with the SageMaker Python SDK
 <a name="train-instance-preferences-pysdk"></a>
 
+**Note**
+Instance preferences require version 3.22.0 or later of the SageMaker Python SDK. For more information about this release, see [Release v3.22.0](https://github.com/aws/sagemaker-python-sdk/releases/tag/v3.22.0) on the GitHub website.
+
 Pass `instance_preferences` in the `Compute` configuration of `ModelTrainer`. Set `instance_count` on `Compute` for a uniform count, or on each `InstancePreference` instead. Add `training_plan_arns` to an entry to fill it from a training plan.
 
 ```

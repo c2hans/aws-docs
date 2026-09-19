@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com//solutions/guidance-disclaimers//index.html
 ---
 
+---
+title: 'Guidance Disclaimers'
+canonical_url: https://docs.aws.amazon.com/solutions/guidance-disclaimers/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance Disclaimers
 
 ## Usage Guidelines

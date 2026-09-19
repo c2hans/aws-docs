@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/bedrock/index.html
 ---
 
+---
+title: 'Amazon Bedrock Documentation'
+canonical_url: https://docs.aws.amazon.com/bedrock/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Amazon Bedrock Documentation
 
 Amazon Bedrock is a fully managed service that makes it easy to use foundation models from third-party providers and Amazon.

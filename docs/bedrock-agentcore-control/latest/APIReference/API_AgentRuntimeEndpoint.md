@@ -47,7 +47,7 @@ Required: Yes
  ** status **   <a name="bedrockagentcorecontrol-Type-AgentRuntimeEndpoint-status"></a>
 The current status of the agent runtime endpoint.
 Type: String
-Valid Values: `CREATING | CREATE_FAILED | UPDATING | UPDATE_FAILED | READY | DELETING`
+Valid Values: `CREATING | CREATE_FAILED | UPDATING | UPDATE_FAILED | READY | DELETING | DELETE_FAILED`
 Required: Yes
 
  ** description **   <a name="bedrockagentcorecontrol-Type-AgentRuntimeEndpoint-description"></a>

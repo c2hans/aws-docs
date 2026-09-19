@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/capturing-advertising-openrtb-real-time-bidding-events-for-analytics-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Capturing Advertising OpenRTB (Real-Time Bidding) Events for Analytics on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/capturing-advertising-openrtb-real-time-bidding-events-for-analytics-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Capturing Advertising OpenRTB (Real-Time Bidding) Events for Analytics on AWS
 
 ## Overview

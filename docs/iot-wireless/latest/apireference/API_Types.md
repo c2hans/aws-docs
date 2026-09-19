@@ -41,6 +41,8 @@ The following data types are supported:
 +  [GatewayListItem](API_GatewayListItem.md)
 +  [GlobalIdentity](API_GlobalIdentity.md)
 +  [Gnss](API_Gnss.md)
++  [GnssCapture](API_GnssCapture.md)
++  [GnssMultiFrame](API_GnssMultiFrame.md)
 +  [GsmLocalId](API_GsmLocalId.md)
 +  [GsmNmrObj](API_GsmNmrObj.md)
 +  [GsmObj](API_GsmObj.md)

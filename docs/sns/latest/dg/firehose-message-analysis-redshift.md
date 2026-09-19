@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/firehose-message-analysis-
 # Analyzing Amazon SNS messages stored in Amazon Redshift destinations
 <a name="firehose-message-analysis-redshift"></a>
 
-This topic describes how to analyze Amazon SNS messages that are sent through delivery streams to Amazon Redshift destinations.
+This topic describes how to analyze Amazon SNS messages sent through delivery streams to Amazon Redshift destinations.
 
 **To analyze SNS messages sent through Firehose delivery streams to Amazon Redshift destinations**
 

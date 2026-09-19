@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/managed-blockchain/index.html
 ---
 
+---
+title: 'Amazon Managed Blockchain Documentation'
+canonical_url: https://docs.aws.amazon.com/managed-blockchain/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Amazon Managed Blockchain Documentation
 
 Amazon Managed Blockchain (AMB) helps you to easily create, manage, and access blockchain infrastructure using AMB Access and query data from supported public blockchain networks using AMB Query.

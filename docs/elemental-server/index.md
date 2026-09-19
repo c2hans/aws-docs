@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/elemental-server/index.html
 ---
 
+---
+title: 'AWS Elemental Server Documentation'
+canonical_url: https://docs.aws.amazon.com/elemental-server/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Elemental Server Documentation
 
 AWS Elemental Server transcodes file-based video into a wide range of output formats for delivery to broadcast televisions and for internet streaming. Use AWS Elemental Conductor File to manage multiple AWS Elemental Server nodes.

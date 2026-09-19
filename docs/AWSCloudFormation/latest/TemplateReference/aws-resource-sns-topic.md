@@ -32,6 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[FifoThroughputScope](#cfn-sns-topic-fifothroughputscope)" : {{String}},
       "[FifoTopic](#cfn-sns-topic-fifotopic)" : {{Boolean}},
       "[KmsMasterKeyId](#cfn-sns-topic-kmsmasterkeyid)" : {{String}},
+      "[MaximumMessageSize](#cfn-sns-topic-maximummessagesize)" : {{Integer}},
       "[SignatureVersion](#cfn-sns-topic-signatureversion)" : {{String}},
       "[Subscription](#cfn-sns-topic-subscription)" : {{[ Subscription, ... ]}},
       "[Tags](#cfn-sns-topic-tags)" : {{[ Tag, ... ]}},
@@ -56,6 +57,7 @@ Properties:
   [FifoThroughputScope](#cfn-sns-topic-fifothroughputscope): {{String}}
   [FifoTopic](#cfn-sns-topic-fifotopic): {{Boolean}}
   [KmsMasterKeyId](#cfn-sns-topic-kmsmasterkeyid): {{String}}
+  [MaximumMessageSize](#cfn-sns-topic-maximummessagesize): {{Integer}}
   [SignatureVersion](#cfn-sns-topic-signatureversion): {{String}}
   [Subscription](#cfn-sns-topic-subscription): {{
     - Subscription}}
@@ -124,6 +126,15 @@ The ID of an AWS managed customer master key (CMK) for Amazon SNS or a custom CM
 This property applies only to [server-side-encryption](https://docs.aws.amazon.com/sns/latest/dg/sns-server-side-encryption.html).
 *Required*: No
 *Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`MaximumMessageSize`  <a name="cfn-sns-topic-maximummessagesize"></a>
+The maximum payload size, in bytes, for messages published to the topic. Valid values are `1024` to `1048576` (1 MiB). When this property is not specified, the topic uses the default Amazon SNS message size of `262144` bytes (256 KiB).
+A topic with `MaximumMessageSize` above `262144` supports a maximum of 100 subscriptions, all of which must use the Amazon SQS, AWS Lambda, or Amazon Data Firehose protocols. For more information, see [Publishing large messages with Amazon SNS](https://docs.aws.amazon.com/sns/latest/dg/large-message-payloads.html) in the *Amazon SNS Developer Guide*.
+*Required*: No
+*Type*: Integer
+*Minimum*: `1024`
+*Maximum*: `1048576`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SignatureVersion`  <a name="cfn-sns-topic-signatureversion"></a>

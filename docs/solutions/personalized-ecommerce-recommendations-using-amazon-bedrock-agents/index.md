@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/personalized-ecommerce-recommendations-using-amazon-bedrock-agents/index.html
 ---
 
+---
+title: 'Guidance for Personalized Ecommerce Recommendations Using Amazon Bedrock Agents'
+canonical_url: https://docs.aws.amazon.com/solutions/personalized-ecommerce-recommendations-using-amazon-bedrock-agents/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Personalized Ecommerce Recommendations Using Amazon Bedrock Agents
 
 ## Overview

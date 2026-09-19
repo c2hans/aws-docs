@@ -27,6 +27,7 @@ A map of the topic's attributes. Attributes in this map include the following:
 +  `DeliveryPolicy` – The JSON serialization of the topic's delivery policy.
 +  `DisplayName` – The human-readable name used in the `From` field for notifications to `email` and `email-json` endpoints. For subscription confirmation and unsubscribe confirmation emails, the sender name is always "AWS Notifications" regardless of this attribute.
 +  `EffectiveDeliveryPolicy` – The JSON serialization of the effective delivery policy, taking system defaults into account.
++  `MaximumMessageSize` – The maximum size, in bytes, of a message that can be published to the topic. Amazon SNS returns this attribute only if you explicitly set it. If Amazon SNS doesn't return it, the topic uses the default of `262144` (256 KiB).
 +  `Owner` – The AWS account ID of the topic's owner.
 +  `Policy` – The JSON serialization of the topic's access control policy.
 +  `SignatureVersion` – The signature version corresponds to the hashing algorithm used while creating the signature of the notifications, subscription confirmations, or unsubscribe confirmation messages sent by Amazon SNS.

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/meter-data-analytics-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Meter Data Analytics on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/meter-data-analytics-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Meter Data Analytics on AWS
 
 ## Overview

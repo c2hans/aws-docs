@@ -20,6 +20,11 @@ A map of attributes with their corresponding values.
 The following lists the names, descriptions, and values of the special request parameters that the `SetTopicAttributes` action uses:
 +  `DeliveryPolicy` – The policy that defines how Amazon SNS retries failed deliveries to HTTP/S endpoints.
 +  `DisplayName` – The display name to use for a topic with SMS, `email`, and `email-json` subscriptions. For `email` and `email-json` subscriptions, the display name is used as the sender name for regular notification messages. Subscription confirmation and unsubscribe confirmation emails always use "AWS Notifications" as the sender name.
++  `MaximumMessageSize` – The maximum size, in bytes, of a message that can be published to the topic. Valid values are `1024` to `1048576` (1 MiB). The default is `262144` (256 KiB).
+
+  A topic with a `MaximumMessageSize` above 256 KiB must have 100 or fewer subscriptions, and each subscription must be an Amazon SQS, Amazon Data Firehose, or AWS Lambda subscription.
+
+  You can increase or decrease this value at any time. If the topic doesn't meet these requirements when you set a value above 256 KiB, Amazon SNS returns an `InvalidParameter` error. For more information, see [Large message payloads](https://docs.aws.amazon.com/sns/latest/dg/large-message-payloads.html) in the *Amazon SNS Developer Guide.*
 +  `Policy` – The policy that defines who can access your topic. By default, only the topic owner can publish or subscribe to the topic.
 +  `TracingConfig` – Tracing mode of an Amazon SNS topic. By default `TracingConfig` is set to `PassThrough`, and the topic passes through the tracing header it receives from an Amazon SNS publisher to its subscriptions. If set to `Active`, Amazon SNS will vend X-Ray segment data to topic owner account if the sampled flag in the tracing header is true. This is only supported on standard topics.
 + HTTP

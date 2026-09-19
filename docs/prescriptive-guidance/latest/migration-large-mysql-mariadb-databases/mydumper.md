@@ -26,7 +26,11 @@ The following are the steps for using MyDumper to migrate a database to the AWS 
    **Approach 3B** – Use the AWS CLI, AWS SDK, or Amazon S3 REST API to directly move the backup file from the on-premises server to an S3 bucket. If the target S3 bucket is in an AWS Region that is far away from the data center, you can use [Amazon S3 Transfer Acceleration](https://docs.aws.amazon.com/AmazonS3/latest/userguide/transfer-acceleration.html) to transfer the file more quickly. Use the [s3fs-fuse](https://github.com/s3fs-fuse/s3fs-fuse) file system to mount the S3 bucket on the EC2 instance.
 
    **Approach 3C** – Install the AWS DataSync agent at the on-premises data center, and then use [AWS DataSync](https://docs.aws.amazon.com/datasync/latest/userguide/what-is-datasync.html) to move the backup file to an Amazon S3 bucket. Use the [s3fs-fuse](https://github.com/s3fs-fuse/s3fs-fuse) file system to mount the S3 bucket on the EC2 instance.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-large-mysql-mariadb-databases/mydumper.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
 1. Use myloader to restore the backup on the target database instance. For instructions, see [myloader usage](https://github.com/mydumper/mydumper_docs/blob/0e5cd71a5549c8a5de0105adf4d5f95953eadb67/myloader_usage.rst) (GitHub).
 

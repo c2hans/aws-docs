@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/automating-amazon-vpc-routing-in-a-global-cloud-wan-deployment/index.html
 ---
 
+---
+title: 'Guidance for Automating Amazon VPC Routing in a Global Cloud WAN Deployment'
+canonical_url: https://docs.aws.amazon.com/solutions/automating-amazon-vpc-routing-in-a-global-cloud-wan-deployment/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Automating Amazon VPC Routing in a Global Cloud WAN Deployment
 
 ## Overview

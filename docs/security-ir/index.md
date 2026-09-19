@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/security-ir/index.html
 ---
 
+---
+title: 'AWS Security Incident Response Documentation'
+canonical_url: https://docs.aws.amazon.com/security-ir/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # AWS Security Incident Response Documentation
 
 AWS Security Incident Response helps organizations quickly prepare for, respond to, and recover from security incidents.

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/wickr/index.html
 ---
 
+---
+title: 'AWS Wickr Documentation'
+canonical_url: https://docs.aws.amazon.com/wickr/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # AWS Wickr Documentation
 
 AWS Wickr is an end-to-end encrypted, enterprise communications service that enables secure one-to-one chats, group messaging, calling, file sharing, screen sharing, and more.

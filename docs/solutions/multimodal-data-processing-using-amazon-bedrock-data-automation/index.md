@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/multimodal-data-processing-using-amazon-bedrock-data-automation/index.html
 ---
 
+---
+title: 'Guidance for Multimodal Data Processing Using Amazon Bedrock Data Automation'
+canonical_url: https://docs.aws.amazon.com/solutions/multimodal-data-processing-using-amazon-bedrock-data-automation/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Multimodal Data Processing Using Amazon Bedrock Data Automation
 
 Simplify data extraction and process automation across multimodal data-centric workflows, including Intelligent Document Processing (IDP)

@@ -94,7 +94,19 @@ The JSON message as an object.
 `context`  <a name="ipc-publish-subscribe-message-context-variable"></a>
 The context of the message, such as the topic where the message was published.
 This feature is available for v2.6.0 and later of the [Greengrass nucleus component](greengrass-nucleus-component.md). The following table lists the minimum versions of the AWS IoT Device SDK that you must use to access the message context.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/ipc-publish-subscribe.html)
+
+<table>
+<thead>
+  <tr><th>SDK</th><th>Minimum version</th><th></th></tr>
+</thead>
+<tbody>
+  <tr><td><a href="https://github.com/aws/aws-iot-device-sdk-java-v2">AWS IoT Device SDK for Java v2</a></td><td>v1.9.3</td><td></td></tr>
+  <tr><td><a href="https://github.com/aws/aws-iot-device-sdk-python-v2">AWS IoT Device SDK for Python v2</a></td><td>v1.11.3</td><td></td></tr>
+  <tr><td><a href="https://github.com/aws/aws-iot-device-sdk-cpp-v2">AWS IoT Device SDK for C++ v2</a></td><td>v1.18.4</td><td></td></tr>
+  <tr><td><a href="https://github.com/aws/aws-iot-device-sdk-js-v2">AWS IoT Device SDK for JavaScript v2</a></td><td>v1.12.0</td><td></td></tr>
+</tbody>
+</table>
+
 The AWS IoT Greengrass Core software uses the same message objects in the `PublishToTopic` and `SubscribeToTopic` operations. The AWS IoT Greengrass Core software sets this context object in messages when you subscribe, and ignores this context object in messages that you publish.
 This object, `MessageContext`, contains the following information:
 `topic`
@@ -106,7 +118,19 @@ The binary message as a blob.
 `context`  <a name="ipc-publish-subscribe-message-context-variable"></a>
 The context of the message, such as the topic where the message was published.
 This feature is available for v2.6.0 and later of the [Greengrass nucleus component](greengrass-nucleus-component.md). The following table lists the minimum versions of the AWS IoT Device SDK that you must use to access the message context.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/ipc-publish-subscribe.html)
+
+<table>
+<thead>
+  <tr><th>SDK</th><th>Minimum version</th><th></th></tr>
+</thead>
+<tbody>
+  <tr><td><a href="https://github.com/aws/aws-iot-device-sdk-java-v2">AWS IoT Device SDK for Java v2</a></td><td>v1.9.3</td><td></td></tr>
+  <tr><td><a href="https://github.com/aws/aws-iot-device-sdk-python-v2">AWS IoT Device SDK for Python v2</a></td><td>v1.11.3</td><td></td></tr>
+  <tr><td><a href="https://github.com/aws/aws-iot-device-sdk-cpp-v2">AWS IoT Device SDK for C++ v2</a></td><td>v1.18.4</td><td></td></tr>
+  <tr><td><a href="https://github.com/aws/aws-iot-device-sdk-js-v2">AWS IoT Device SDK for JavaScript v2</a></td><td>v1.12.0</td><td></td></tr>
+</tbody>
+</table>
+
 The AWS IoT Greengrass Core software uses the same message objects in the `PublishToTopic` and `SubscribeToTopic` operations. The AWS IoT Greengrass Core software sets this context object in messages when you subscribe, and ignores this context object in messages that you publish.
 This object, `MessageContext`, contains the following information:
 `topic`
@@ -479,7 +503,18 @@ In [Greengrass nucleus](greengrass-nucleus-component.md) v2.6.0 and later, this 
 
   This mode is the default option when you subscribe to a topic that contains an MQTT wildcard.
 This feature is available for v2.6.0 and later of the [Greengrass nucleus component](greengrass-nucleus-component.md). The following table lists the minimum versions of the AWS IoT Device SDK that you must use to set the receive mode.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/ipc-publish-subscribe.html)
+
+<table>
+<thead>
+  <tr><th>SDK</th><th>Minimum version</th><th></th></tr>
+</thead>
+<tbody>
+  <tr><td><a href="https://github.com/aws/aws-iot-device-sdk-java-v2">AWS IoT Device SDK for Java v2</a></td><td>v1.9.3</td><td></td></tr>
+  <tr><td><a href="https://github.com/aws/aws-iot-device-sdk-python-v2">AWS IoT Device SDK for Python v2</a></td><td>v1.11.3</td><td></td></tr>
+  <tr><td><a href="https://github.com/aws/aws-iot-device-sdk-cpp-v2">AWS IoT Device SDK for C++ v2</a></td><td>v1.18.4</td><td></td></tr>
+  <tr><td><a href="https://github.com/aws/aws-iot-device-sdk-js-v2">AWS IoT Device SDK for JavaScript v2</a></td><td>v1.12.0</td><td></td></tr>
+</tbody>
+</table>
 
 ### Response
 <a name="ipc-operation-subscribetotopic-response"></a>
@@ -495,7 +530,19 @@ The JSON message as an object.
 `context`  <a name="ipc-publish-subscribe-message-context-variable"></a>
 The context of the message, such as the topic where the message was published.
 This feature is available for v2.6.0 and later of the [Greengrass nucleus component](greengrass-nucleus-component.md). The following table lists the minimum versions of the AWS IoT Device SDK that you must use to access the message context.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/ipc-publish-subscribe.html)
+
+<table>
+<thead>
+  <tr><th>SDK</th><th>Minimum version</th><th></th></tr>
+</thead>
+<tbody>
+  <tr><td><a href="https://github.com/aws/aws-iot-device-sdk-java-v2">AWS IoT Device SDK for Java v2</a></td><td>v1.9.3</td><td></td></tr>
+  <tr><td><a href="https://github.com/aws/aws-iot-device-sdk-python-v2">AWS IoT Device SDK for Python v2</a></td><td>v1.11.3</td><td></td></tr>
+  <tr><td><a href="https://github.com/aws/aws-iot-device-sdk-cpp-v2">AWS IoT Device SDK for C++ v2</a></td><td>v1.18.4</td><td></td></tr>
+  <tr><td><a href="https://github.com/aws/aws-iot-device-sdk-js-v2">AWS IoT Device SDK for JavaScript v2</a></td><td>v1.12.0</td><td></td></tr>
+</tbody>
+</table>
+
 The AWS IoT Greengrass Core software uses the same message objects in the `PublishToTopic` and `SubscribeToTopic` operations. The AWS IoT Greengrass Core software sets this context object in messages when you subscribe, and ignores this context object in messages that you publish.
 This object, `MessageContext`, contains the following information:
 `topic`
@@ -507,7 +554,19 @@ The binary message as a blob.
 `context`  <a name="ipc-publish-subscribe-message-context-variable"></a>
 The context of the message, such as the topic where the message was published.
 This feature is available for v2.6.0 and later of the [Greengrass nucleus component](greengrass-nucleus-component.md). The following table lists the minimum versions of the AWS IoT Device SDK that you must use to access the message context.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/ipc-publish-subscribe.html)
+
+<table>
+<thead>
+  <tr><th>SDK</th><th>Minimum version</th><th></th></tr>
+</thead>
+<tbody>
+  <tr><td><a href="https://github.com/aws/aws-iot-device-sdk-java-v2">AWS IoT Device SDK for Java v2</a></td><td>v1.9.3</td><td></td></tr>
+  <tr><td><a href="https://github.com/aws/aws-iot-device-sdk-python-v2">AWS IoT Device SDK for Python v2</a></td><td>v1.11.3</td><td></td></tr>
+  <tr><td><a href="https://github.com/aws/aws-iot-device-sdk-cpp-v2">AWS IoT Device SDK for C++ v2</a></td><td>v1.18.4</td><td></td></tr>
+  <tr><td><a href="https://github.com/aws/aws-iot-device-sdk-js-v2">AWS IoT Device SDK for JavaScript v2</a></td><td>v1.12.0</td><td></td></tr>
+</tbody>
+</table>
+
 The AWS IoT Greengrass Core software uses the same message objects in the `PublishToTopic` and `SubscribeToTopic` operations. The AWS IoT Greengrass Core software sets this context object in messages when you subscribe, and ignores this context object in messages that you publish.
 This object, `MessageContext`, contains the following information:
 `topic`

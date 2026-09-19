@@ -27,6 +27,11 @@ A sentence long summary. For example, titles or an email subject line.
 Type: String
 Required: No
 
+ ** markupDescription **   <a name="Notifications-Type-MessageComponents-markupDescription"></a>
+A rich description in Portable Text format, which you can convert to markup formats such as HTML, Markdown, or plain text. Channels that don't support rich rendering ignore this field and use the plain text components instead.
+Type: String
+Required: No
+
  ** paragraphSummary **   <a name="Notifications-Type-MessageComponents-paragraphSummary"></a>
 A paragraph long or multiple sentence summary. For example, Amazon Q Developer in chat applications notifications.
 Type: String

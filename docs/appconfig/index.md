@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/appconfig/index.html
 ---
 
+---
+title: 'AWS AppConfig Documentation'
+canonical_url: https://docs.aws.amazon.com/appconfig/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS AppConfig Documentation
 
 Use AWS AppConfig to quickly deploy application configurations to applications of any size. AWS AppConfig supports controlled deployments and includes built-in validation checks and monitoring.

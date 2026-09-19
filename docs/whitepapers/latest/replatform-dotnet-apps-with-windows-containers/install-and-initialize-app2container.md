@@ -31,7 +31,20 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-app
 ![Screen showing running the app2container init command](https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/app2container.jpg)
 
    * Table 5 — App2Container PowerShell initialization parameter description *
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/install-and-initialize-app2container.html)
+
+<table>
+<thead>
+  <tr><th> Parameter </th><th> Value </th></tr>
+</thead>
+<tbody>
+  <tr><td> Workspace directory path </td><td> Leave default (<code>C:\Users\Administrator\AppData\Local\app2container</code>) </td></tr>
+  <tr><td> AWS profile </td><td> Y (Contains information needed to run App2Container) </td></tr>
+  <tr><td> S3 bucket </td><td> Enter the S3 bucket name that you created in the previous step (such as <code>app2container-demo-artifacts-july-2021</code>) </td></tr>
+  <tr><td> AWS Region </td><td> <code>us-west-2</code> (default) </td></tr>
+  <tr><td> Permission to collect metrics </td><td> Leave default (allow App2Container to collect information about the host operating system, app type, and the commands run) </td></tr>
+  <tr><td> Enforce signed images </td><td> Leave default (optionally require that images are signed using Docker Content Trust) </td></tr>
+</tbody>
+</table>
 
 1.  Now you need to give App2Container the information it needs to access your web server instance. You do this by running the following command and providing the following information in the command prompts.
 
@@ -40,7 +53,19 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-app
    ```
 
    * Table 6 — App2Container web server access parameters *
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/install-and-initialize-app2container.html)
+
+<table>
+<thead>
+  <tr><th> Parameter </th><th> Value </th></tr>
+</thead>
+<tbody>
+  <tr><td> Server IP address </td><td> Web server Private IPv4 address (found at the <b>EC2</b> &gt; <b>Source-NET-Webserver</b> &gt; <b>Details</b> &gt; <b>Private IPv4 Address</b>) </td></tr>
+  <tr><td> Server FQDN </td><td> Leave blank </td></tr>
+  <tr><td> Secret ARN </td><td> ARN for the secret you created in AWS Secret Manager </td></tr>
+  <tr><td> Continue to another server? </td><td> n </td></tr>
+</tbody>
+</table>
+
 ![Screen showing configuring App2Container for remote access to IIS web server.](https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/cfg-for-iis.jpg)
 
  This concludes the prerequisite steps to run App2Container on your worker machine. In the next section, you will use App2Container to discover, analyze, and containerize the MvcMusicStore application that is running on the web server instance without directly touching the application server.

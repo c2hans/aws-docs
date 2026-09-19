@@ -9,33 +9,64 @@ After you define your access patterns and design your data model, you can query 
 + **Find ancestors of a component.**
 
   To find the ancestors (parent, grandparent, great-grandparent, and so on) of the CM8 component, query the base table using `ComponentId = "CM8"`. The query will return the following record.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-data-modeling/step6-hierarchical-model.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
   To reduce the size of the result data, you can use a projection expression to return only the `Path` attribute.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-data-modeling/step6-hierarchical-model.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
+
 + **Find immediate children of a component.**
 
   To get all immediate child, or one-level downstream, components for the CM2 component, query GSI1 using `ParentId = "CM2"`. The query will return the following record.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-data-modeling/step6-hierarchical-model.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
+
 + **Find all downstream child components using a top-level component.**
 
   To get all child, or downstream, components for top-level component CM1, query GSI2 using `GraphId = "CM1#1"` and `begins_with("Path", "CM1|")`, and use a projection expression with `ComponentId`. It will return all the components related to that tree.
 
   This example has a single tree, with CM1 as the top component. In reality, you could have millions of top-level components in the same table.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-data-modeling/step6-hierarchical-model.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
+
 + **Find all downstream child components using a middle-level component.**
 
   To get all child, or downstream, components recursively for component CM2, you have two options. You can query recursively level by level, or you can query the GSI2 index.
   + Query GSI1, level by level, recursively, until reaching the last level of child components.
 
     1. Query GSI1 using `ParentId = "CM2"`. It will return the following record.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-data-modeling/step6-hierarchical-model.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
     1. Again, query GSI1 using `ParentId = "CM4"`. It will return the following record.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-data-modeling/step6-hierarchical-model.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
     1. Again, query GSI1 using `ParentId = "CM5"`. It will return the following record.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-data-modeling/step6-hierarchical-model.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
        Continue the loop: Query for each `ComponentId` until you reach the last level. When a query using `ParentId = "<ComponentId>"` doesn't return any results, the previous result was from the last level of the tree.
 
@@ -47,9 +78,17 @@ After you define your access patterns and design your data model, you can query 
   + Query GSI2, which stores a hierarchical tree for a top-level component (a car, or CM1).
 
     1. First, find the top-level component or top ancestor and `Path` of CM2. For that, query the base table by using `ComponentId = "CM2"` to find the path of that component in the hierarchical tree. Select the `GraphId` and `Pat`h attributes. The query will return the following record.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-data-modeling/step6-hierarchical-model.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
     1. Query GSI2 by using `GraphId = "CM1#1" AND BEGINS_WITH("Path", "CM1|CM2|")`. The query will return the following results.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-data-modeling/step6-hierarchical-model.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
     1. Select the `ComponentId` attribute to return all the child components for CM2.

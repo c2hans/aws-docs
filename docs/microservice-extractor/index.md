@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/microservice-extractor/index.html
 ---
 
+---
+title: 'AWS Microservice Extractor for .NET Documentation'
+canonical_url: https://docs.aws.amazon.com/microservice-extractor/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Microservice Extractor for .NET Documentation
 
 Reduce the skill bar and effort required to transform monolithic applications into smaller and independent services that improve uptime and reduce operational costs.

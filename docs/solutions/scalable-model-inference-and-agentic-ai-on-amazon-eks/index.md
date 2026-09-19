@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/scalable-model-inference-and-agentic-ai-on-amazon-eks/index.html
 ---
 
+---
+title: 'Guidance for Scalable Model Inference and Agentic AI on Amazon EKS'
+canonical_url: https://docs.aws.amazon.com/solutions/scalable-model-inference-and-agentic-ai-on-amazon-eks/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Scalable Model Inference and Agentic AI on Amazon EKS
 
 ## Overview

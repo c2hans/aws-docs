@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/eks-node-diagnostics-mcp-with-devops-agent-integration-on-aws/index.html
 ---
 
+---
+title: 'Guidance for EKS Node Diagnostics MCP with DevOps Agent Integration on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/eks-node-diagnostics-mcp-with-devops-agent-integration-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for EKS Node Diagnostics MCP with DevOps Agent Integration on AWS
 
 ## Overview

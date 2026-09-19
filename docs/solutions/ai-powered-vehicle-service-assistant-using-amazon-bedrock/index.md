@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/ai-powered-vehicle-service-assistant-using-amazon-bedrock/index.html
 ---
 
+---
+title: 'Guidance for AI-Powered Vehicle Service Assistant using Amazon Bedrock'
+canonical_url: https://docs.aws.amazon.com/solutions/ai-powered-vehicle-service-assistant-using-amazon-bedrock/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for AI-Powered Vehicle Service Assistant using Amazon Bedrock
 
 ## Overview

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/cli/index.html
 ---
 
+---
+title: 'AWS Command Line Interface Documentation'
+canonical_url: https://docs.aws.amazon.com/cli/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Command Line Interface Documentation
 
 The AWS Command Line Interface (AWS CLI) is a unified tool that provides a consistent interface for interacting with all parts of Amazon Web Services. AWS CLI commands for different services are covered in the accompanying user guide, including descriptions, syntax, and usage examples.

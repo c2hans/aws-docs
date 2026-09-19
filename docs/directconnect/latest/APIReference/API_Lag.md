@@ -31,6 +31,12 @@ The Direct Connect endpoint that terminates the logical connection. This device 
 Type: String
 Required: No
 
+ ** billingMode **   <a name="DX-Type-Lag-billingMode"></a>
+The billing mode of the LAG.
+Type: String
+Valid Values: `PayAsYouGo | FlatRateTier1 | FlatRateTier2 | FlatRateTier3 | FlatRateTier4 | FlatRateTier5 | PortPairFlatRateTier1 | PortPairFlatRateTier2 | PortPairFlatRateTier3 | PortPairFlatRateTier4 | PortPairFlatRateTier5`
+Required: No
+
  ** connections **   <a name="DX-Type-Lag-connections"></a>
 The connections bundled by the LAG.
 Type: Array of [Connection](API_Connection.md) objects

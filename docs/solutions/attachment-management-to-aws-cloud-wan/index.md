@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/attachment-management-to-aws-cloud-wan/index.html
 ---
 
+---
+title: 'Guidance for Attachment Management to AWS Cloud WAN'
+canonical_url: https://docs.aws.amazon.com/solutions/attachment-management-to-aws-cloud-wan/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Attachment Management to AWS Cloud WAN
 
 ## Overview

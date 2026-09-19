@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com//solutions/innovation-sandbox-on-aws//index.html
 ---
 
+---
+title: 'Innovation Sandbox on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/innovation-sandbox-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Innovation Sandbox on AWS
 
 Accelerate cloud innovation with automated, secure, and cost-controlled sandbox environments

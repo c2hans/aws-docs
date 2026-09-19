@@ -25,7 +25,27 @@ This solution uses Amazon Cognito that is not currently available in all AWS Reg
 1. On the **Specify stack details** page, assign a name to your solution stack. For information about naming character limitations, refer to [IAM and AWS STS quotas, name requirements, and character limits](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-limits.html) in the *AWS Identity and Access Management User Guide*.
 
 1. Under **Parameters**, review the parameters for this solution template and modify them as necessary. This solution uses the following default values.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/account-assessment-for-aws-organizations/step-1-launch-the-hub-stack.html)
+
+<table>
+<thead>
+  <tr><th>Parameter</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td> <b>Solution Setup</b> </td><td></td><td></td></tr>
+  <tr><td>Provide the unique namespace value</td><td> {{&lt;Requires input&gt;}} </td><td>Chose a unique string as prefix for resource names. NOTE: Use the same namespace in the Spoke stack and Org-Management stack.</td></tr>
+  <tr><td>DynamoDB Configuration</td><td></td><td></td></tr>
+  <tr><td>Provide Time to live (in days) for DynamoDB items</td><td> <code>90</code> </td><td>Time period in days all DynamoDB tables will delete stored items.</td></tr>
+  <tr><td> <b>Web UI Configuration</b> </td><td></td><td></td></tr>
+  <tr><td>Provide Web UI Login User Email</td><td> {{&lt;Requires input&gt;}} </td><td>Admin user will be created at deployment time. Provide an email address to create this initial Cognito user.</td></tr>
+  <tr><td>Provide a prefix for the hosted Amazon Cognito domain</td><td> {{&lt;Requires input&gt;}} </td><td>Pick a globally unique prefix to become part of the url of the login page (Cognito Hosted UI)</td></tr>
+  <tr><td>Set MFA for Cognito to "ON" or "OPTIONAL" </td><td> <i> &lt;Optional input&gt; </i> </td><td> <code>ON</code> - Amazon Cognito users will need to set up multi-factor authentication (MFA) on first login. <code>OPTIONAL</code> - Amazon Cognito users may opt to set up MFA</td></tr>
+  <tr><td> <b>Security Configuration</b> </td><td></td><td></td></tr>
+  <tr><td>Provide CIDR ranges that allow the console to access the API</td><td> {{&lt;Requires input&gt;}} </td><td>Comma separated list of CIDR ranges that allow access to the API. To allow the entire internet, use the following list of two CIDR blocks as the value: <code>0.0.0.0/1,128.0.0.0/1</code> </td></tr>
+  <tr><td>Application Manager Configuration</td><td></td><td></td></tr>
+  <tr><td>Provide the AWS Organization ID</td><td> <i>&lt;Requires input&gt;</i> </td><td>Organization ID to support multi-account deployment. Leave blank for single account deployments.</td></tr>
+  <tr><td>Management Account ID</td><td> <i>&lt;Optional input&gt;</i> </td><td>Account ID for the management account of the AWS Organization. Leave blank for single account deployments.</td></tr>
+</tbody>
+</table>
 
 1. Choose **Next**\*
 

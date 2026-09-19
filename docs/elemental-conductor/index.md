@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/elemental-conductor/index.html
 ---
 
+---
+title: 'AWS Elemental Conductor Live Documentation'
+canonical_url: https://docs.aws.amazon.com/elemental-conductor/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Elemental Conductor Live Documentation
 
 AWS Elemental Conductor Live is an on-premises management system for AWS Elemental Live and AWS Elemental Statmux.

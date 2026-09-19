@@ -23,10 +23,10 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "[AncillarySourceSettings](#cfn-medialive-channel-captionselectorsettings-ancillarysourcesettings)" : {{AncillarySourceSettings}},
   "[AribSourceSettings](#cfn-medialive-channel-captionselectorsettings-aribsourcesettings)" : {{Json}},
-  "[DvbSubSourceSettings](#cfn-medialive-channel-captionselectorsettings-dvbsubsourcesettings)" : {{DvbSubSourceSettings}},
+  "[DvbSubSourceSettings](#cfn-medialive-channel-captionselectorsettings-dvbsubsourcesettings)" : {{Scte27DvbSubSourceSettings}},
   "[EmbeddedSourceSettings](#cfn-medialive-channel-captionselectorsettings-embeddedsourcesettings)" : {{EmbeddedSourceSettings}},
   "[Scte20SourceSettings](#cfn-medialive-channel-captionselectorsettings-scte20sourcesettings)" : {{Scte20SourceSettings}},
-  "[Scte27SourceSettings](#cfn-medialive-channel-captionselectorsettings-scte27sourcesettings)" : {{Scte27SourceSettings}},
+  "[Scte27SourceSettings](#cfn-medialive-channel-captionselectorsettings-scte27sourcesettings)" : {{Scte27DvbSubSourceSettings}},
   "[SmartSubtitleSourceSettings](#cfn-medialive-channel-captionselectorsettings-smartsubtitlesourcesettings)" : {{SmartSubtitleSourceSettings}},
   "[TeletextSourceSettings](#cfn-medialive-channel-captionselectorsettings-teletextsourcesettings)" : {{TeletextSourceSettings}}
 }
@@ -40,13 +40,13 @@ To declare this entity in your CloudFormation template, use the following syntax
     AncillarySourceSettings}}
   [AribSourceSettings](#cfn-medialive-channel-captionselectorsettings-aribsourcesettings): {{Json}}
   [DvbSubSourceSettings](#cfn-medialive-channel-captionselectorsettings-dvbsubsourcesettings): {{
-    DvbSubSourceSettings}}
+    Scte27DvbSubSourceSettings}}
   [EmbeddedSourceSettings](#cfn-medialive-channel-captionselectorsettings-embeddedsourcesettings): {{
     EmbeddedSourceSettings}}
   [Scte20SourceSettings](#cfn-medialive-channel-captionselectorsettings-scte20sourcesettings): {{
     Scte20SourceSettings}}
   [Scte27SourceSettings](#cfn-medialive-channel-captionselectorsettings-scte27sourcesettings): {{
-    Scte27SourceSettings}}
+    Scte27DvbSubSourceSettings}}
   [SmartSubtitleSourceSettings](#cfn-medialive-channel-captionselectorsettings-smartsubtitlesourcesettings): {{
     SmartSubtitleSourceSettings}}
   [TeletextSourceSettings](#cfn-medialive-channel-captionselectorsettings-teletextsourcesettings): {{
@@ -71,7 +71,7 @@ Information about the ARIB captions to extract from the input.
 `DvbSubSourceSettings`  <a name="cfn-medialive-channel-captionselectorsettings-dvbsubsourcesettings"></a>
 Information about the DVB Sub captions to extract from the input.
 *Required*: No
-*Type*: [DvbSubSourceSettings](aws-properties-medialive-channel-dvbsubsourcesettings.md)
+*Type*: [Scte27DvbSubSourceSettings](aws-properties-medialive-channel-scte27dvbsubsourcesettings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `EmbeddedSourceSettings`  <a name="cfn-medialive-channel-captionselectorsettings-embeddedsourcesettings"></a>
@@ -89,7 +89,7 @@ Information about the SCTE-20 captions to extract from the input.
 `Scte27SourceSettings`  <a name="cfn-medialive-channel-captionselectorsettings-scte27sourcesettings"></a>
 Information about the SCTE-27 captions to extract from the input.
 *Required*: No
-*Type*: [Scte27SourceSettings](aws-properties-medialive-channel-scte27sourcesettings.md)
+*Type*: [Scte27DvbSubSourceSettings](aws-properties-medialive-channel-scte27dvbsubsourcesettings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SmartSubtitleSourceSettings`  <a name="cfn-medialive-channel-captionselectorsettings-smartsubtitlesourcesettings"></a>

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/corretto/index.html
 ---
 
+---
+title: 'Amazon Corretto Documentation'
+canonical_url: https://docs.aws.amazon.com/corretto/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Corretto Documentation
 
 Amazon Corretto is a no-cost, multiplatform, production-ready distribution of the Open Java Development Kit (OpenJDK).

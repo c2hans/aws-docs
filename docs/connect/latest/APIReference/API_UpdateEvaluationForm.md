@@ -17,6 +17,7 @@ PUT /evaluation-forms/{{InstanceId}}/{{EvaluationFormId}} HTTP/1.1
 Content-type: application/json
 
 {
+   "AIVersion": "{{string}}",
    "AsDraft": {{boolean}},
    "AutoEvaluationConfiguration": {
       "Enabled": {{boolean}}
@@ -79,6 +80,12 @@ Required: Yes
 <a name="API_UpdateEvaluationForm_RequestBody"></a>
 
 The request accepts the following data in JSON format.
+
+ ** [AIVersion](#API_UpdateEvaluationForm_RequestSyntax) **   <a name="connect-UpdateEvaluationForm-request-AIVersion"></a>
+The AI version to use for the evaluation form. This specifies which AI model version is used for automated evaluations.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Required: No
 
  ** [AsDraft](#API_UpdateEvaluationForm_RequestSyntax) **   <a name="connect-UpdateEvaluationForm-request-AsDraft"></a>
 A boolean flag indicating whether to update evaluation form to draft state.

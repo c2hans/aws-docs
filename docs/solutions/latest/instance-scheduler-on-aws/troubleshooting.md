@@ -99,3 +99,13 @@ RDS Instances are not being stopped and the solution’s scheduler logs are repo
 <a name="resolution-3"></a>
 
 Update the solution to v3.0.5 or newer or alternatively add the `rds:CreateDBSnapshot` permission to the solution’s scheduler role in each scheduled account.
+
+### Problem: AppRegistry application not available after v3.0.11
+<a name="problem-appregistry-application-not-available"></a>
+
+You cannot find an AWS Service Catalog AppRegistry application for the solution after deploying or updating to version 3.0.11 or later.
+
+### Resolution
+<a name="resolution-appregistry"></a>
+
+This is expected behavior. Starting with version 3.0.11, the solution no longer includes AWS Service Catalog AppRegistry integration. No AppRegistry application is created for new deployments. This is not an error and no action is required. AppRegistry is transitioning to maintenance mode. Starting July 30, 2026, AppRegistry will no longer be open to new customers. For more information, see the [AWS Service Catalog AppRegistry availability change](https://docs.aws.amazon.com/servicecatalog/latest/arguide/app-registry-availability-change.html).

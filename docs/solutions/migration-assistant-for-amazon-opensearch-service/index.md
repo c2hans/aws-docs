@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com//solutions/migration-assistant-for-amazon-opensearch-service//index.html
 ---
 
+---
+title: 'Migration Assistant for Amazon OpenSearch Service'
+canonical_url: https://docs.aws.amazon.com/solutions/migration-assistant-for-amazon-opensearch-service/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Migration Assistant for Amazon OpenSearch Service
 
 Workflow-driven migration for Elasticsearch, OpenSearch, and Apache Solr workloads with manual and AI-assisted operation

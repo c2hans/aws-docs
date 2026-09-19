@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/cost-analysis-and-optimization-with-amazon-bedrock-agents/index.html
 ---
 
+---
+title: 'Guidance for Cost Analysis and Optimization with Amazon Bedrock Agents'
+canonical_url: https://docs.aws.amazon.com/solutions/cost-analysis-and-optimization-with-amazon-bedrock-agents/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Cost Analysis and Optimization with Amazon Bedrock Agents
 
 ## Overview

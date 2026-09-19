@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quick
 
 **Topics**
 + [Application Auto Scaling with an Amazon DynamoDB table](#quickref-dynamodb-application-autoscaling)
-+ [See also](#w2aac11c41c39b7)
++ [See also](#w2aac11c47c39b7)
 
 ## Application Auto Scaling with an Amazon DynamoDB table
 <a name="quickref-dynamodb-application-autoscaling"></a>
@@ -175,7 +175,7 @@ Resources:
 ```
 
 ## See also
-<a name="w2aac11c41c39b7"></a>
+<a name="w2aac11c47c39b7"></a>
 
 For more information, see the blog post [How to use CloudFormation to configure auto scaling for DynamoDB tables and indexes](https://aws.amazon.com/blogs/database/how-to-use-aws-cloudformation-to-configure-auto-scaling-for-amazon-dynamodb-tables-and-indexes/) on the AWS Database Blog.
 

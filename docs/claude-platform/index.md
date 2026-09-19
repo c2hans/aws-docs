@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/claude-platform/index.html
 ---
 
+---
+title: 'Claude Platform on AWS Documentation'
+canonical_url: https://docs.aws.amazon.com/claude-platform/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Claude Platform on AWS Documentation
 
 The native Anthropic platform with AWS billing and authentication.

@@ -89,7 +89,7 @@ These downloads are available to AWS customers only. By downloading, to adhere t
    [ec2-user ~]$ nvidia-smi -q | head
    ```
 
-1. If you are using NVIDIA vGPU software version 14.x or greater on the G4dn, G5, or G5g instances, disable GSP with the following commands. For more information about why this is required, see the [NVIDIA documentation](https://docs.nvidia.com/vgpu/latest/grid-vgpu-user-guide/index.html#disabling-gsp).
+1. If you are using NVIDIA vGPU software version 14.x or greater on the G4dn, G5, or G5g instances, disable GSP with the following commands. For more information about why this is required, see the [NVIDIA documentation](https://docs.nvidia.com/vgpu/latest/grid-vgpu-user-guide/installing-grid-vgpu-display-drivers.html#disabling-gsp).
 
    ```
    [ec2-user ~]$ sudo touch /etc/modprobe.d/nvidia.conf
@@ -180,7 +180,7 @@ These downloads are available to AWS customers only. By downloading, to adhere t
    [ec2-user ~]$ nvidia-smi -q | head
    ```
 
-1. If you are using NVIDIA vGPU software version 14.x or greater on the G4dn, G5, or G5g instances, disable GSP with the following commands. For more information about why this is required, see the [NVIDIA documentation](https://docs.nvidia.com/vgpu/latest/grid-vgpu-user-guide/index.html#disabling-gsp).
+1. If you are using NVIDIA vGPU software version 14.x or greater on the G4dn, G5, or G5g instances, disable GSP with the following commands. For more information about why this is required, see the [NVIDIA documentation](https://docs.nvidia.com/vgpu/latest/grid-vgpu-user-guide/installing-grid-vgpu-display-drivers.html#disabling-gsp).
 
    ```
    [ec2-user ~]$ sudo touch /etc/modprobe.d/nvidia.conf
@@ -291,7 +291,7 @@ These downloads are available to AWS customers only. By downloading, to adhere t
    [ec2-user ~]$ nvidia-smi -q | head
    ```
 
-1. If you are using NVIDIA vGPU software version 14.x or greater on the G4dn, G5, or G5g instances, disable GSP with the following commands. For more information about why this is required, see the [NVIDIA documentation](https://docs.nvidia.com/vgpu/latest/grid-vgpu-user-guide/index.html#disabling-gsp).
+1. If you are using NVIDIA vGPU software version 14.x or greater on the G4dn, G5, or G5g instances, disable GSP with the following commands. For more information about why this is required, see the [NVIDIA documentation](https://docs.nvidia.com/vgpu/latest/grid-vgpu-user-guide/installing-grid-vgpu-display-drivers.html#disabling-gsp).
 
    ```
    [ec2-user ~]$ sudo touch /etc/modprobe.d/nvidia.conf
@@ -382,7 +382,7 @@ These downloads are available to AWS customers only. By downloading, to adhere t
    [ec2-user ~]$ nvidia-smi -q | head
    ```
 
-1. If you are using NVIDIA vGPU software version 14.x or greater on the G4dn, G5, or G5g instances, disable GSP with the following commands. For more information about why this is required, see the [NVIDIA documentation](https://docs.nvidia.com/vgpu/latest/grid-vgpu-user-guide/index.html#disabling-gsp).
+1. If you are using NVIDIA vGPU software version 14.x or greater on the G4dn, G5, or G5g instances, disable GSP with the following commands. For more information about why this is required, see the [NVIDIA documentation](https://docs.nvidia.com/vgpu/latest/grid-vgpu-user-guide/installing-grid-vgpu-display-drivers.html#disabling-gsp).
 
    ```
    [ec2-user ~]$ sudo touch /etc/modprobe.d/nvidia.conf
@@ -473,7 +473,7 @@ These downloads are available to AWS customers only. By downloading, to adhere t
    [ec2-user ~]$ nvidia-smi -q | head
    ```
 
-1. If you are using NVIDIA vGPU software version 14.x or greater on the G4dn, G5, or G5g instances, disable GSP with the following commands. For more information about why this is required, see the [NVIDIA documentation](https://docs.nvidia.com/vgpu/latest/grid-vgpu-user-guide/index.html#disabling-gsp).
+1. If you are using NVIDIA vGPU software version 14.x or greater on the G4dn, G5, or G5g instances, disable GSP with the following commands. For more information about why this is required, see the [NVIDIA documentation](https://docs.nvidia.com/vgpu/latest/grid-vgpu-user-guide/installing-grid-vgpu-display-drivers.html#disabling-gsp).
 
    ```
    [ec2-user ~]$ sudo touch /etc/modprobe.d/nvidia.conf
@@ -596,7 +596,7 @@ These downloads are available to AWS customers only. By downloading, to adhere t
    $ nvidia-smi -q | head
    ```
 
-1. If you are using NVIDIA vGPU software version 14.x or greater on the G4dn, G5, or G5g instances, disable GSP with the following commands. For more information about why this is required, see the [NVIDIA documentation](https://docs.nvidia.com/vgpu/latest/grid-vgpu-user-guide/index.html#disabling-gsp).
+1. If you are using NVIDIA vGPU software version 14.x or greater on the G4dn, G5, or G5g instances, disable GSP with the following commands. For more information about why this is required, see the [NVIDIA documentation](https://docs.nvidia.com/vgpu/latest/grid-vgpu-user-guide/installing-grid-vgpu-display-drivers.html#disabling-gsp).
 
    ```
    $ sudo touch /etc/modprobe.d/nvidia.conf

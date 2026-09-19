@@ -481,7 +481,18 @@ For more information, see [Set Touchtone Buffer Behavior](set-touchtone-buffer-b
 + If DTMF input is provided to a Lex bot using Connect Customer, the customer input is made available as a [Lex request attribute](https://docs.aws.amazon.com/lex/latest/dg/context-mgmt-request-attribs.html). The attribute name is `x-amz-lex:dtmf-transcript` and the value can be a maximum of 1024 characters.
 
   Following are different DTMF input scenarios:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/get-customer-input.html)
+
+<table>
+<thead>
+  <tr><th>Customer input</th><th>DTMF transcript</th></tr>
+</thead>
+<tbody>
+  <tr><td>[DEL] </td><td>[DEL]</td></tr>
+  <tr><td>[END] </td><td>[END]</td></tr>
+  <tr><td>123[DEL] </td><td>[DEL]</td></tr>
+  <tr><td>123[END] </td><td>123</td></tr>
+</tbody>
+</table>
 
   Where:
   + [DEL] = Deletion character (Default is **\*** )

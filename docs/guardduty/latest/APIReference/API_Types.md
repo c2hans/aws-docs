@@ -39,6 +39,7 @@ The following data types are supported:
 +  [AwsApiCallAction](API_AwsApiCallAction.md)
 +  [BedrockGuardrail](API_BedrockGuardrail.md)
 +  [BedrockGuardrailDetails](API_BedrockGuardrailDetails.md)
++  [BedrockGuardrailResource](API_BedrockGuardrailResource.md)
 +  [BlockPublicAccess](API_BlockPublicAccess.md)
 +  [BucketLevelPermissions](API_BucketLevelPermissions.md)
 +  [BucketPolicy](API_BucketPolicy.md)

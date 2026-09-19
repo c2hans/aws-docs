@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/storagegateway/index.html
 ---
 
+---
+title: 'AWS Storage Gateway Documentation'
+canonical_url: https://docs.aws.amazon.com/storagegateway/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Storage Gateway Documentation
 
 AWS Storage Gateway is a service that connects an on-premises software appliance with cloud-based storage to provide seamless and secure integration between your on-premises IT environment and the AWS storage infrastructure in the AWS Cloud.

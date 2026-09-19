@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/mturk/index.html
 ---
 
+---
+title: 'Amazon Mechanical Turk Documentation'
+canonical_url: https://docs.aws.amazon.com/mturk/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Mechanical Turk Documentation
 
 Amazon Mechanical Turk is a web service that provides an on-demand, scalable, human workforce to complete jobs that humans can do better than computers, such as recognizing objects in photographs.

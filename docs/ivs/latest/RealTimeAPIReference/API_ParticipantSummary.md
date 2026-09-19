@@ -26,7 +26,7 @@ Required: No
 Unique identifier for this participant, assigned by IVS.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 64.
-Pattern: `[a-zA-Z0-9-]*`
+Pattern: `[a-zA-Z0-9-_]*`
 Required: No
 
  ** published **   <a name="ivsrealtimeeapireference-Type-ParticipantSummary-published"></a>

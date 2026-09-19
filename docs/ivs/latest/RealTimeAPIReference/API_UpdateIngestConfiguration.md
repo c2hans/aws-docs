@@ -55,6 +55,13 @@ Required: No
 
 ```
 HTTP/1.1 200
+Access-Control-Allow-Origin: {{accessControlAllowOrigin}}
+Access-Control-Expose-Headers: {{accessControlExposeHeaders}}
+Cache-Control: {{cacheControl}}
+Content-Security-Policy: {{contentSecurityPolicy}}
+Strict-Transport-Security: {{strictTransportSecurity}}
+X-Content-Type-Options: {{xContentTypeOptions}}
+X-Frame-Options: {{xFrameOptions}}
 Content-type: application/json
 
 {
@@ -89,6 +96,29 @@ Content-type: application/json
 
 If the action is successful, the service sends back an HTTP 200 response.
 
+The response returns the following HTTP headers.
+
+ ** [accessControlAllowOrigin](#API_UpdateIngestConfiguration_ResponseSyntax) **   <a name="ivsrealtimeeapireference-UpdateIngestConfiguration-response-accessControlAllowOrigin"></a>
+See [Access-Control-Allow-Origin](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Access-Control-Allow-Origin) in the MDN Web Docs.
+
+ ** [accessControlExposeHeaders](#API_UpdateIngestConfiguration_ResponseSyntax) **   <a name="ivsrealtimeeapireference-UpdateIngestConfiguration-response-accessControlExposeHeaders"></a>
+See [Access-Control-Expose-Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Access-Control-Expose-Headers) in the MDN Web Docs.
+
+ ** [cacheControl](#API_UpdateIngestConfiguration_ResponseSyntax) **   <a name="ivsrealtimeeapireference-UpdateIngestConfiguration-response-cacheControl"></a>
+See [Cache-Control](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cache-Control) in the MDN Web Docs.
+
+ ** [contentSecurityPolicy](#API_UpdateIngestConfiguration_ResponseSyntax) **   <a name="ivsrealtimeeapireference-UpdateIngestConfiguration-response-contentSecurityPolicy"></a>
+See [Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content-Security-Policy) in the MDN Web Docs.
+
+ ** [strictTransportSecurity](#API_UpdateIngestConfiguration_ResponseSyntax) **   <a name="ivsrealtimeeapireference-UpdateIngestConfiguration-response-strictTransportSecurity"></a>
+See [Strict-Transport-Security](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Strict-Transport-Security) in the MDN Web Docs.
+
+ ** [xContentTypeOptions](#API_UpdateIngestConfiguration_ResponseSyntax) **   <a name="ivsrealtimeeapireference-UpdateIngestConfiguration-response-xContentTypeOptions"></a>
+See [X-Content-Type-Options](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Content-Type-Options) in the MDN Web Docs.
+
+ ** [xFrameOptions](#API_UpdateIngestConfiguration_ResponseSyntax) **   <a name="ivsrealtimeeapireference-UpdateIngestConfiguration-response-xFrameOptions"></a>
+See [X-Frame-Options](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options) in the MDN Web Docs.
+
 The following data is returned in JSON format by the service.
 
  ** [ingestConfiguration](#API_UpdateIngestConfiguration_ResponseSyntax) **   <a name="ivsrealtimeeapireference-UpdateIngestConfiguration-response-ingestConfiguration"></a>
@@ -101,32 +131,22 @@ Type: [IngestConfiguration](API_IngestConfiguration.md) object
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** AccessDeniedException **
-
- ** exceptionMessage **
 User does not have sufficient access to perform this action.
 HTTP Status Code: 403
 
  ** ConflictException **
-
- ** exceptionMessage **
 Updating or deleting a resource can cause an inconsistent state.
 HTTP Status Code: 409
 
  ** PendingVerification **
-
- ** exceptionMessage **
- Your account is pending verification.
+Your account is pending verification.
 HTTP Status Code: 403
 
  ** ResourceNotFoundException **
-
- ** exceptionMessage **
 Request references a resource which does not exist.
 HTTP Status Code: 404
 
  ** ValidationException **
-
- ** exceptionMessage **
 The input fails to satisfy the constraints specified by an AWS service.
 HTTP Status Code: 400
 

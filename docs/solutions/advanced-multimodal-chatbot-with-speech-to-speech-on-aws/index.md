@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/advanced-multimodal-chatbot-with-speech-to-speech-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Advanced Multimodal Chatbot with Speech-to-Speech on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/advanced-multimodal-chatbot-with-speech-to-speech-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Advanced Multimodal Chatbot with Speech-to-Speech on AWS
 
 ## Overview

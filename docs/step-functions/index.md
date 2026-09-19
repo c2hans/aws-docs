@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/step-functions/index.html
 ---
 
+---
+title: 'AWS Step Functions Documentation'
+canonical_url: https://docs.aws.amazon.com/step-functions/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Step Functions Documentation
 
 AWS Step Functions makes it easy to coordinate the components of distributed applications as a series of steps in a visual workflow. You can quickly build and run state machines to execute the steps of your application in a reliable and scalable fashion.

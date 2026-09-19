@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/nova/index.html
 ---
 
+---
+title: 'Amazon Nova Documentation'
+canonical_url: https://docs.aws.amazon.com/nova/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Amazon Nova Documentation
 
 Amazon Nova is a group of foundation models to generate or understand the contents text, images, and videos

@@ -86,7 +86,7 @@ Length Constraints: Minimum length of 1. Maximum length of 100.
 Required: No
 
  ** Tier **
-Specifies the tier to use in creating this environment. The environment tier that you choose determines whether Elastic Beanstalk provisions resources to support a web application that handles HTTP(S) requests or a web application that handles background-processing tasks.
+Specifies the tier to use in creating this environment. The environment tier that you choose determines whether Elastic Beanstalk provisions resources on Amazon EC2 instances or on an Amazon EKS cluster, and, for Amazon EC2, whether the environment serves HTTP(S) requests or processes background tasks from a queue.
 Type: [EnvironmentTier](API_EnvironmentTier.md) object
 Required: No
 

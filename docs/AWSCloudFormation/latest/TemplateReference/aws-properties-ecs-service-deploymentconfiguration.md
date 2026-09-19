@@ -23,6 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[BakeTimeInMinutes](#cfn-ecs-service-deploymentconfiguration-baketimeinminutes)" : {{Integer}},
   "[CanaryConfiguration](#cfn-ecs-service-deploymentconfiguration-canaryconfiguration)" : {{CanaryConfiguration}},
   "[DeploymentCircuitBreaker](#cfn-ecs-service-deploymentconfiguration-deploymentcircuitbreaker)" : {{DeploymentCircuitBreaker}},
+  "[EarlySuccessCriteria](#cfn-ecs-service-deploymentconfiguration-earlysuccesscriteria)" : {{DeploymentEarlySuccessCriteria}},
   "[LifecycleHooks](#cfn-ecs-service-deploymentconfiguration-lifecyclehooks)" : {{[ DeploymentLifecycleHook, ... ]}},
   "[LinearConfiguration](#cfn-ecs-service-deploymentconfiguration-linearconfiguration)" : {{LinearConfiguration}},
   "[MaximumPercent](#cfn-ecs-service-deploymentconfiguration-maximumpercent)" : {{Integer}},
@@ -42,6 +43,8 @@ To declare this entity in your CloudFormation template, use the following syntax
     CanaryConfiguration}}
   [DeploymentCircuitBreaker](#cfn-ecs-service-deploymentconfiguration-deploymentcircuitbreaker): {{
     DeploymentCircuitBreaker}}
+  [EarlySuccessCriteria](#cfn-ecs-service-deploymentconfiguration-earlysuccesscriteria): {{
+    DeploymentEarlySuccessCriteria}}
   [LifecycleHooks](#cfn-ecs-service-deploymentconfiguration-lifecyclehooks): {{
     - DeploymentLifecycleHook}}
   [LinearConfiguration](#cfn-ecs-service-deploymentconfiguration-linearconfiguration): {{
@@ -84,6 +87,12 @@ The deployment circuit breaker can only be used for services using the rolling u
 The **deployment circuit breaker** determines whether a service deployment will fail if the service can't reach a steady state. If you use the deployment circuit breaker, a service deployment will transition to a failed state and stop launching new tasks. If you use the rollback option, when a service deployment fails, the service is rolled back to the last deployment that completed successfully. For more information, see [Rolling update](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-ecs.html) in the *Amazon Elastic Container Service Developer Guide*
 *Required*: No
 *Type*: [DeploymentCircuitBreaker](aws-properties-ecs-service-deploymentcircuitbreaker.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`EarlySuccessCriteria`  <a name="cfn-ecs-service-deploymentconfiguration-earlysuccesscriteria"></a>
+The early success criteria configuration for a rolling deployment. With early success criteria, you can configure an Amazon ECS deployment to complete faster. Amazon ECS declares a deployment successful once a target percentage of tasks are healthy, instead of waiting for the service to fully stabilize.
+*Required*: No
+*Type*: [DeploymentEarlySuccessCriteria](aws-properties-ecs-service-deploymentearlysuccesscriteria.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `LifecycleHooks`  <a name="cfn-ecs-service-deploymentconfiguration-lifecyclehooks"></a>

@@ -112,7 +112,11 @@ You notice failures in `us-east-1a` and start a zonal shift. The following behav
 + **Scaling out** – Auto Scaling launches all new capacity requests in the healthy Availability Zones (`us-east-1b` and `us-east-1c`).
 + **Dynamic scaling** – Auto Scaling blocks scaling policies from decreasing desired capacity. Auto Scaling does not block scaling policies from increasing desired capacity.
 + **Instance refresh** – Auto Scaling extends the timeout for any instance refresh process that is delayed during an active zonal shift.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/r53recovery/latest/dg/arc-zonal-shift.resource-types.ec2-auto-scaling-groups.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
 ## Best practices for using zonal shift
 <a name="best-practices-asg-zs"></a>

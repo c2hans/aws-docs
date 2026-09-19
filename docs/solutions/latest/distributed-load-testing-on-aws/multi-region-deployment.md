@@ -29,7 +29,19 @@ You can install the regional template as follows:
 1. On the **Specify stack details** page, assign a name to your solution stack.
 
 1. Under **Parameters**, review the parameters for the template and modify them as necessary. This solution uses the following default values.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/distributed-load-testing-on-aws/multi-region-deployment.html)
+
+<table>
+<thead>
+  <tr><th>Parameter</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td> <b>Existing VPC ID</b> </td><td>&lt;Optional input&gt;</td><td>If you have a VPC that you want to use and is already created, enter the ID of an existing VPC in the same Region where the stack was deployed. For example, vpc-1a2b3c4d5e6f.</td></tr>
+  <tr><td> <b>First existing subnet</b> </td><td>&lt;Optional input&gt;</td><td>The ID of the first subnet within your existing VPC. This subnet needs a route to the internet to pull the container image for running tests. For example, subnet-7h8i9j0k.</td></tr>
+  <tr><td> <b>Second existing subnet</b> </td><td>&lt;Optional input&gt;</td><td>The ID of the second subnet within the existing VPC. This subnet needs a route to the internet to pull the container image for running tests. For example, subnet-1x2y3z.</td></tr>
+  <tr><td> <b>Provide valid CIDR block for the solution to create VPC</b> </td><td>192.168.0.0/16</td><td>If you do not provide values for an existing VPC, the CIDR block for the solution-created Amazon VPC contains the IP address for AWS Fargate.</td></tr>
+  <tr><td> <b>Provide CIDR block for allowing outbound traffic of Fargate tasks</b> </td><td>0.0.0.0/0</td><td>CIDR block that restricts Amazon ECS container outbound access.</td></tr>
+</tbody>
+</table>
 
 1. Choose **Next**.
 

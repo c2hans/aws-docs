@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/low-cost-backup-and-replication-storage-with-veeam-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Low Cost Backup and Replication Storage with Veeam on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/low-cost-backup-and-replication-storage-with-veeam-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Low Cost Backup and Replication Storage with Veeam on AWS
 
 ## Overview

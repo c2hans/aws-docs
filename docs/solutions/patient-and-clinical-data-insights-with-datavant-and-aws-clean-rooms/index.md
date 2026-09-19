@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/patient-and-clinical-data-insights-with-datavant-and-aws-clean-rooms/index.html
 ---
 
+---
+title: 'Guidance for Patient and Clinical Data Insights with Datavant and AWS Clean Rooms'
+canonical_url: https://docs.aws.amazon.com/solutions/patient-and-clinical-data-insights-with-datavant-and-aws-clean-rooms/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Patient and Clinical Data Insights with Datavant and AWS Clean Rooms
 
 ## Overview

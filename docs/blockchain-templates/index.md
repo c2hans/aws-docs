@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/blockchain-templates/index.html
 ---
 
+---
+title: 'AWS Blockchain Templates Documentation'
+canonical_url: https://docs.aws.amazon.com/blockchain-templates/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Blockchain Templates Documentation
 
 Use AWS Blockchain Templates to quickly create and deploy open-source blockchain frameworks on AWS, such as Ethereum and Hyperledger Fabric.

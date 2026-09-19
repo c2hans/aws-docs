@@ -115,7 +115,29 @@ This solution uses AWS Systems Manager which is currently available in specific 
 1. On the **Specify stack details** page, assign a name to your solution stack. For information about naming character limitations, refer to [IAM and STS limits](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-limits.html) in the *AWS Identity and Access Management User Guide*.
 
 1. On the **Parameters** page, choose **Next**.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/deployment.html)
+
+<table>
+<thead>
+  <tr><th>Parameter</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td> <b>Load SC Admin Stack</b> </td><td> <code>yes</code> </td><td>Specify whether to install the admin components for automated remediation of SC controls.</td></tr>
+  <tr><td> <b>Load AFSBP Admin Stack</b> </td><td> <code>no</code> </td><td>Specify whether to install the admin components for automated remediation of FSBP controls.</td></tr>
+  <tr><td> <b>Load CIS120 Admin Stack</b> </td><td> <code>no</code> </td><td>Specify whether to install the admin components for automated remediation of CIS120 controls.</td></tr>
+  <tr><td> <b>Load CIS140 Admin Stack</b> </td><td> <code>no</code> </td><td>Specify whether to install the admin components for automated remediation of CIS140 controls.</td></tr>
+  <tr><td> <b>Load CIS300 Admin Stack</b> </td><td> <code>no</code> </td><td>Specify whether to install the admin components for automated remediation of CIS300 controls.</td></tr>
+  <tr><td> <b>Load PCI321 Admin Stack</b> </td><td> <code>no</code> </td><td>Specify whether to install the admin components for automated remediation of PCI321 controls.</td></tr>
+  <tr><td> <b>Load NIST Admin Stack</b> </td><td> <code>no</code> </td><td>Specify whether to install the admin components for automated remediation of NIST controls.</td></tr>
+  <tr><td> <b>Reuse Orchestrator Log Group</b> </td><td> <code>no</code> </td><td>Select whether or not to reuse an existing <code>SO0111-ASR-Orchestrator</code> CloudWatch Logs group. This simplifies reinstallation and upgrades without losing log data from a previous version. Reuse existing <code>Orchestrator Log Group</code> choose <code>yes</code> if the <code>Orchestrator Log Group</code> still exists from an earlier deployment in this account, otherwise <code>no</code>. If you are performing a stack update from an earlier version than v2.3.0 choose <code>no</code> </td></tr>
+  <tr><td> <b>ShouldDeployWebUI</b> </td><td> <code>yes</code> </td><td>Deploy the Web UI components including API Gateway, Lambda functions, and CloudFront distribution. Choose "yes" to enable the web-based user interface for viewing findings and remediation status.</td></tr>
+  <tr><td> <b>AdminUserEmail</b> </td><td> <i>(Optional input)</i> </td><td>Email address for the initial admin user. This user will have full administrative access to the ASR Web UI. Required <b>only</b> when Web UI is enabled.</td></tr>
+  <tr><td> <b>Use CloudWatch Metrics</b> </td><td> <code>yes</code> </td><td>Specify whether to enable CloudWatch Metrics for monitoring the solution. This will create a CloudWatch Dashboard for viewing metrics.</td></tr>
+  <tr><td> <b>Use CloudWatch Metrics Alarms</b> </td><td> <code>yes</code> </td><td>Specify whether to enable CloudWatch Metrics Alarms for the solution. This will create Alarms for certain metrics collected by the solution.</td></tr>
+  <tr><td> <b>RemediationFailureAlarmThreshold</b> </td><td> <code>5</code> </td><td>Specify the threshold for percentage of remediation failures per control ID. For example, if you enter <code>5</code>, you receive an alarm if a control ID fails more than 5% of remediations at a given day.<br />This parameter functions only if alarms are created (see the <b>Use CloudWatch Metrics Alarms</b> parameter).</td></tr>
+  <tr><td> <b>EnableEnhancedCloudWatchMetrics</b> </td><td> <code>no</code> </td><td>If <code>yes</code>, creates additional CloudWatch metrics to track all control IDs individually on the CloudWatch dashboard and as CloudWatch alarms.<br />See the <a href="cost.md#additional-cost-enhanced-metrics">Cost</a> section to understand the additional cost that this incurs.</td></tr>
+  <tr><td> <b>TicketGenFunctionName</b> </td><td> <i>(Optional input)</i> </td><td>Optional. Leave blank if you don’t want to integrate a ticketing system. Otherwise, provide the Lambda function name from the stack output of <a href="#step-0">Step 0</a>, for example: <code>SO0111-ASR-ServiceNow-TicketGenerator</code>.</td></tr>
+</tbody>
+</table>
 
 **Note**
 You must manually enable automatic remediations in the Admin account after deploying or updating the solution’s CloudFormation stacks.
@@ -144,7 +166,16 @@ The `automated-security-response-member-roles.template` StackSet must be deploye
 1. On the **Specify stack details** page, assign a name to your solution stack. For information about naming character limitations, refer to IAM and STS limits in the AWS Identity and Access Management User Guide.
 
 1. On the **Parameters** page, specify the following parameters and choose Next.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/deployment.html)
+
+<table>
+<thead>
+  <tr><th>Parameter</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td> <b>Namespace</b> </td><td> {{&lt;Requires input&gt;}} </td><td>Enter a string of up to 9 lowercase alphanumeric characters. Unique namespace to be added as a suffix to remediation IAM role names. The same namespace should be used in the Member Roles and Member stacks. This string should be unique for each solution deployment, but does not need to be changed during stack updates. The namespace value does <b>not</b> need to be unique per member account.</td></tr>
+  <tr><td> <b>Sec Hub Admin Account</b> </td><td> {{&lt;Requires input&gt;}} </td><td>Enter the 12-digit account ID for the AWS Security Hub admin account. This value grants permissions to the admin account’s solution role.</td></tr>
+</tbody>
+</table>
 
 1. On the **Configure stack options** page, choose **Next**.
 
@@ -178,7 +209,26 @@ This solution uses AWS Systems Manager, which is currently available in the majo
 1. On the **Specify stack details** page, assign a name to your solution stack. For information about naming character limitations, refer to [IAM and STS limits](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-limits.html) in the *AWS Identity and Access Management User Guide*.
 
 1. On the **Parameters** page, specify the following parameters and choose **Next**.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/deployment.html)
+
+<table>
+<thead>
+  <tr><th>Parameter</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td> <b>Provide the name of the LogGroup to be used to create Metric Filters and Alarms</b> </td><td> {{&lt;Requires input&gt;}} </td><td>Specify the name of a CloudWatch Logs group where CloudTrail logs API calls. This is used for CIS 3.1-3.14 remediations.</td></tr>
+  <tr><td> <b>Load SC Member Stack</b> </td><td> <code>yes</code> </td><td>Specify whether to install the member components for automated remediation of SC controls.</td></tr>
+  <tr><td> <b>Load AFSBP Member Stack</b> </td><td> <code>no</code> </td><td>Specify whether to install the member components for automated remediation of FSBP controls.</td></tr>
+  <tr><td> <b>Load CIS120 Member Stack</b> </td><td> <code>no</code> </td><td>Specify whether to install the member components for automated remediation of CIS120 controls.</td></tr>
+  <tr><td> <b>Load CIS140 Member Stack</b> </td><td> <code>no</code> </td><td>Specify whether to install the member components for automated remediation of CIS140 controls.</td></tr>
+  <tr><td> <b>Load CIS300 Member Stack</b> </td><td> <code>no</code> </td><td>Specify whether to install the member components for automated remediation of CIS300 controls.</td></tr>
+  <tr><td> <b>Load PCI321 Member Stack</b> </td><td> <code>no</code> </td><td>Specify whether to install the member components for automated remediation of PCI321 controls.</td></tr>
+  <tr><td> <b>Load NIST Member Stack</b> </td><td> <code>no</code> </td><td>Specify whether to install the member components for automated remediation of NIST controls.</td></tr>
+  <tr><td> <b>Create S3 Bucket For Redshift Audit Logging</b> </td><td> <code>no</code> </td><td>Choose <code>yes</code> to create the S3 bucket for the FSBP RedShift.4 remediation. For details of the S3 bucket and the remediation, review the <a href="https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-fsbp-controls.html#fsbp-redshift-4">Redshift.4 remediation</a> in the <i>AWS Security Hub User Guide</i>.</td></tr>
+  <tr><td> <b>Sec Hub Admin Account</b> </td><td> {{&lt;Requires input&gt;}} </td><td>Enter the 12-digit account ID for the AWS Security Hub admin account.</td></tr>
+  <tr><td> <b>Namespace</b> </td><td> {{&lt;Requires input&gt;}} </td><td>Enter a string of up to 9 lowercase alphanumeric characters. This string becomes part of the IAM role names and Action Log S3 bucket. Use the same value for member stack deployment and member roles stack deployment. String should be unique for each solution deployment, but does not need to be changed during stack updates.</td></tr>
+  <tr><td> <b>EnableCloudTrailForASRActionLog</b> </td><td> <code>no</code> </td><td>Select <code>yes</code> if you want to monitor management events conducted by the solution on the CloudWatch dashboard. The solution creates a CloudTrail trail in each member account where you select <code>yes</code>. You must deploy the solution into an AWS Organization to enable this feature. <b>Additionally, you can only enable this feature in a single region within the same account.</b> See the <a href="cost.md#additional-cost-action-log">Cost</a> section to understand the additional cost that this incurs.</td></tr>
+</tbody>
+</table>
 
 1. On the **Configure stack options** page, choose **Next**.
 

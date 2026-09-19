@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/disaster-recovery-using-amazon-aurora/index.html
 ---
 
+---
+title: 'Guidance for Disaster Recovery Using Amazon Aurora'
+canonical_url: https://docs.aws.amazon.com/solutions/disaster-recovery-using-amazon-aurora/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Disaster Recovery Using Amazon Aurora
 
 ## Overview

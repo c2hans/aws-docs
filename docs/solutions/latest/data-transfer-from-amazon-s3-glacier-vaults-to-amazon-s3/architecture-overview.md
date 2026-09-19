@@ -88,7 +88,16 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amaz
  You can provide custom S3 object key names for each **ArchiveId** that's copied to your S3 bucket. To do this, provide a **NamingOverrideFile** to the Guidance when you [launch the transfer workflow](step-2-launch-the-transfer-workflow.md), using the **NamingOverrideFile** input parameter. Use the following process.
 
 1.  Create a data file in CSV format. The file must contain only two columns: **GlacierArchiveID** and **FileName** (separated by a comma). The following table is an example.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3/architecture-overview.html)
+
+<table>
+<thead>
+  <tr><th> GlacierArchiveID </th><th> FileName </th></tr>
+</thead>
+<tbody>
+  <tr><td><code>WVfrXME2KC6JIedfadJF937412-e</code></td><td><code>Mydata.txt</code></td></tr>
+  <tr><td><code>yLam5H76JXYSKKIY34404D-Kwcrk</code></td><td><code>Myfolder/mydata2.txt</code></td></tr>
+</tbody>
+</table>
 
 1.  Obtain a copy of your vault inventory file for the Amazon Glacier service. For more information, see [Downloading a Vault Inventory in Amazon Glacier](https://docs.aws.amazon.com/amazonglacier/latest/dev/vault-inventory.html) in the *Amazon Glacier Developer Guide*.
 

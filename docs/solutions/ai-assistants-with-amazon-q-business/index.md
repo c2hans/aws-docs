@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/ai-assistants-with-amazon-q-business/index.html
 ---
 
+---
+title: 'Guidance for AI Assistants with Amazon Q Business'
+canonical_url: https://docs.aws.amazon.com/solutions/ai-assistants-with-amazon-q-business/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for AI Assistants with Amazon Q Business
 
 Create generative AI-powered assistants with Amazon Q Business to deliver HR support based on enterprise data sources

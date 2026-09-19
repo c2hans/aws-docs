@@ -36,6 +36,7 @@ Required: No
 
  ** BuildConfiguration **
 Settings for an AWS CodeBuild build.
+Don't specify `BuildConfiguration` together with `ImageConfiguration`, which configures a container image build instead.
 Type: [BuildConfiguration](API_BuildConfiguration.md) object
 Required: No
 
@@ -43,6 +44,12 @@ Required: No
 A description of this application version.
 Type: String
 Length Constraints: Maximum length of 200.
+Required: No
+
+ ** ImageConfiguration **
+The source of the container image for this application version. You can specify an image that you built and pushed to a container registry yourself, or settings for Elastic Beanstalk to build one from your source bundle. Specify exactly one of the `Source` and `Build` members.
+Don't specify `ImageConfiguration` together with `BuildConfiguration`, which configures an AWS CodeBuild build instead.
+Type: [ImageConfiguration](API_ImageConfiguration.md) object
 Required: No
 
  ** Process **

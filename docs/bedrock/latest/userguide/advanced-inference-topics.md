@@ -11,7 +11,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/advanced-infere
 + [Generate responses in the console using playgrounds](playgrounds.md)
 + [Use computer use tools to automate GUI tasks with Amazon Bedrock models](computer-use.md)
 + [Get validated JSON results from models](claude-messages-structured-outputs.md)
-+ [Chat Completions API (legacy reference)](inference-chat-completions.md)
 + [API restrictions](inference-api-restrictions.md)
 + [Submit a single prompt with InvokeModel (moved)](inference-invoke.md)
 + [Using the Converse API (moved)](conversation-inference-call.md)

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/cloud9/index.html
 ---
 
+---
+title: 'AWS Cloud9 Documentation'
+canonical_url: https://docs.aws.amazon.com/cloud9/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Cloud9 Documentation
 
 AWS Cloud9 is a cloud-based integrated development environment (IDE) that you use to write, run, and debug code.

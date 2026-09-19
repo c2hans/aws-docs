@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/subscriber-churn-prediction-and-retention-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Subscriber Churn Prediction and Retention on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/subscriber-churn-prediction-and-retention-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Subscriber Churn Prediction and Retention on AWS
 
 ## Overview

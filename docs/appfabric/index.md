@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/appfabric/index.html
 ---
 
+---
+title: 'AWS AppFabric Documentation'
+canonical_url: https://docs.aws.amazon.com/appfabric/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # AWS AppFabric Documentation
 
 AWS AppFabric is a managed service that aggregates and analyzes data across several software as a service (SaaS) applications. It breaks data silos that exist today across various applications. Security teams can use it to analyze user access and event log data and output it into a security application of choice.

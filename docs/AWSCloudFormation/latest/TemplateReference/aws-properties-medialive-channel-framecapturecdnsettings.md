@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
-  "[FrameCaptureS3Settings](#cfn-medialive-channel-framecapturecdnsettings-framecaptures3settings)" : {{FrameCaptureS3Settings}}
+  "[FrameCaptureS3Settings](#cfn-medialive-channel-framecapturecdnsettings-framecaptures3settings)" : {{ArchiveFrameCaptureHlsS3Settings}}
 }
 ```
 
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [FrameCaptureS3Settings](#cfn-medialive-channel-framecapturecdnsettings-framecaptures3settings): {{
-    FrameCaptureS3Settings}}
+    ArchiveFrameCaptureHlsS3Settings}}
 ```
 
 ## Properties
@@ -39,5 +39,5 @@ To declare this entity in your CloudFormation template, use the following syntax
 `FrameCaptureS3Settings`  <a name="cfn-medialive-channel-framecapturecdnsettings-framecaptures3settings"></a>
 Sets up Amazon S3 as the destination for this Frame Capture output.
 *Required*: No
-*Type*: [FrameCaptureS3Settings](aws-properties-medialive-channel-framecaptures3settings.md)
+*Type*: [ArchiveFrameCaptureHlsS3Settings](aws-properties-medialive-channel-archiveframecapturehlss3settings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

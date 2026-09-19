@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/local-zones/index.html
 ---
 
+---
+title: 'AWS Local Zones Documentation'
+canonical_url: https://docs.aws.amazon.com/local-zones/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Local Zones Documentation
 
 AWS Local Zones places core services for your applications closer to your users.

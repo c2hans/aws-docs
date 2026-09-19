@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/b2bi/index.html
 ---
 
+---
+title: 'AWS B2B Data Interchange Documentation'
+canonical_url: https://docs.aws.amazon.com/b2bi/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS B2B Data Interchange Documentation
 
 AWS B2B Data Interchange enables automated exchange of EDI-based business-critical transactions at cloud scale, with elasticity, and pay-as-you-go pricing.

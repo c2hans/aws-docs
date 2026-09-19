@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
-  "[AdditionalDestinations](#cfn-medialive-channel-mediapackagev2groupsettings-additionaldestinations)" : {{[ MediaPackageAdditionalDestinations, ... ]}},
+  "[AdditionalDestinations](#cfn-medialive-channel-mediapackagev2groupsettings-additionaldestinations)" : {{[ AdditionalDestinations, ... ]}},
   "[CaptionLanguageMappings](#cfn-medialive-channel-mediapackagev2groupsettings-captionlanguagemappings)" : {{[ CaptionLanguageMapping, ... ]}},
   "[Id3Behavior](#cfn-medialive-channel-mediapackagev2groupsettings-id3behavior)" : {{String}},
   "[KlvBehavior](#cfn-medialive-channel-mediapackagev2groupsettings-klvbehavior)" : {{String}},
@@ -31,7 +31,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[SegmentLengthUnits](#cfn-medialive-channel-mediapackagev2groupsettings-segmentlengthunits)" : {{String}},
   "[TimedMetadataId3Frame](#cfn-medialive-channel-mediapackagev2groupsettings-timedmetadataid3frame)" : {{String}},
   "[TimedMetadataId3Period](#cfn-medialive-channel-mediapackagev2groupsettings-timedmetadataid3period)" : {{Integer}},
-  "[TimedMetadataPassthrough](#cfn-medialive-channel-mediapackagev2groupsettings-timedmetadatapassthrough)" : {{String}}
+  "[TimedMetadataPassthrough](#cfn-medialive-channel-mediapackagev2groupsettings-timedmetadatapassthrough)" : {{String}},
+  "[WatermarkingSettings](#cfn-medialive-channel-mediapackagev2groupsettings-watermarkingsettings)" : {{MediaPackageV2WatermarkingSettings}}
 }
 ```
 
@@ -40,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [AdditionalDestinations](#cfn-medialive-channel-mediapackagev2groupsettings-additionaldestinations): {{
-    - MediaPackageAdditionalDestinations}}
+    - AdditionalDestinations}}
   [CaptionLanguageMappings](#cfn-medialive-channel-mediapackagev2groupsettings-captionlanguagemappings): {{
     - CaptionLanguageMapping}}
   [Id3Behavior](#cfn-medialive-channel-mediapackagev2groupsettings-id3behavior): {{String}}
@@ -52,6 +53,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   [TimedMetadataId3Frame](#cfn-medialive-channel-mediapackagev2groupsettings-timedmetadataid3frame): {{String}}
   [TimedMetadataId3Period](#cfn-medialive-channel-mediapackagev2groupsettings-timedmetadataid3period): {{Integer}}
   [TimedMetadataPassthrough](#cfn-medialive-channel-mediapackagev2groupsettings-timedmetadatapassthrough): {{String}}
+  [WatermarkingSettings](#cfn-medialive-channel-mediapackagev2groupsettings-watermarkingsettings): {{
+    MediaPackageV2WatermarkingSettings}}
 ```
 
 ## Properties
@@ -60,7 +63,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 `AdditionalDestinations`  <a name="cfn-medialive-channel-mediapackagev2groupsettings-additionaldestinations"></a>
 Optional, an array of additional destination HTTP destinations for the output group outputs.
 *Required*: No
-*Type*: [Array](aws-properties-medialive-channel-additionaldestinations.md) of [MediaPackageAdditionalDestinations](aws-properties-medialive-channel-mediapackageadditionaldestinations.md)
+*Type*: [Array](aws-properties-medialive-channel-additionaldestinations.md) of [AdditionalDestinations](aws-properties-medialive-channel-additionaldestinations.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `CaptionLanguageMappings`  <a name="cfn-medialive-channel-mediapackagev2groupsettings-captionlanguagemappings"></a>
@@ -121,4 +124,10 @@ If you set up to insert a timecode in the output, specify the frequency for the 
 Set to enabled to pass through ID3 metadata from the input sources.
 *Required*: No
 *Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`WatermarkingSettings`  <a name="cfn-medialive-channel-mediapackagev2groupsettings-watermarkingsettings"></a>
+Property description not available.
+*Required*: No
+*Type*: [MediaPackageV2WatermarkingSettings](aws-properties-medialive-channel-mediapackagev2watermarkingsettings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

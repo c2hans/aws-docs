@@ -102,9 +102,18 @@ Enabling *Access management for Azure resources* grants the signed-in administra
 <a name="securityhub-azure-setup-azure-graph"></a>
 
 Grant the following Microsoft Graph API permissions (Application type) to the application, and then grant admin consent:
-+ `Directory.Read.All`
++ `Application.Read.All`
 + `AuditLog.Read.All`
++ `DelegatedPermissionGrant.Read.All`
++ `Device.Read.All`
++ `Group.Read.All`
++ `GroupMember.Read.All`
++ `GroupSettings.Read.All`
++ `Organization.Read.All`
 + `Policy.Read.All`
++ `RoleManagement.Read.Directory`
++ `User.Read.All`
++ `UserAuthenticationMethod.Read.All`
 
 ```
 $ az ad app permission admin-consent --id {{application-client-id}}

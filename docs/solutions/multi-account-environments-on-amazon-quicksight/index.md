@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/multi-account-environments-on-amazon-quicksight/index.html
 ---
 
+---
+title: 'Guidance for Multi-Account Environments on Amazon QuickSight'
+canonical_url: https://docs.aws.amazon.com/solutions/multi-account-environments-on-amazon-quicksight/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Multi-Account Environments on Amazon QuickSight
 
 ## Overview

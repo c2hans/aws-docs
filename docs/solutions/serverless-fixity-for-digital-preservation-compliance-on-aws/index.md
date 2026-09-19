@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/serverless-fixity-for-digital-preservation-compliance-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Serverless Fixity for Digital Preservation Compliance on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/serverless-fixity-for-digital-preservation-compliance-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Serverless Fixity for Digital Preservation Compliance on AWS
 
 ## Overview

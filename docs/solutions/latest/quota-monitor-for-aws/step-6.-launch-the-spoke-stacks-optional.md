@@ -25,7 +25,16 @@ You must launch `quota-monitor-ta-spoke.template` in the US East (N. Virginia) o
 1. On the **Specify stack details** page, assign a name to your solution stack.
 
 1. Under **Parameters**, review the following parameter for the template and modify it as necessary.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/step-6.-launch-the-spoke-stacks-optional.html)
+
+<table>
+<thead>
+  <tr><th>Parameter</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td> <b>Event Bus Arn</b> </td><td> {{&lt;Requires input&gt;}} </td><td>Amazon Resource Name (ARN) for the EventBridge bus in the primary account</td></tr>
+  <tr><td> <b>Spoke SNS Region</b> </td><td>&lt;Optional input&gt;</td><td>Optionally, specify the Region where you launched the spoke SNS stack in the spoke account. Ensure that the spoke SNS stack is launched in the spoke account first. Leave this parameter empty if you are not using the spoke SNS stack.</td></tr>
+</tbody>
+</table>
 
 1. Choose **Next**.
 

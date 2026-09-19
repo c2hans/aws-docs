@@ -37,7 +37,12 @@ This pattern describes how to install, configure, and use the AWS CLI on z/OS. Y
 + **AWS credentials**
 
   In order to communicate with AWS Cloud services from z/OS, the AWS CLI requires you to configure some credentials with privileges to access the target AWS account. For programmatic commands to AWS, you can use access keys, which consist of an access key ID and secret access key. If you don't have access keys, you can create them from the AWS Management Console. As a best practice, do not use the access keys for the AWS account root user for any task unless the root user is required. Instead, [create a new administrator IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-set-up.html#create-an-admin) and [prepare for least-privilege permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-set-up.html#LeastPrivilege)** **to set up the user with access keys. After you create the user, you can [create an access key ID and secret access key](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) for this user.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/access-aws-services-from-ibm-z-os-by-installing-aws-cli.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
+
 + **IBM Python for z/OS**
 
   The AWS CLI requires Python 3.8 or later. IBM has enabled Python to run on z/OS with [IBM Open Enterprise Python for z/OS](https://www.ibm.com/products/open-enterprise-python-zos). IBM Open Enterprise Python is available at no charge through Shopz SMP/E, or you can download the PAX file from the [IBM website](https://www.ibm.com/account/reg/signup?formid=urx-49465). For instructions, see the [installation and configuration documentation](https://www.ibm.com/docs/en/python-zos) for IBM Open Enterprise Python for z/OS.

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/sdk-for-kotlin/index.html
 ---
 
+---
+title: 'AWS SDK for Kotlin Documentation'
+canonical_url: https://docs.aws.amazon.com/sdk-for-kotlin/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS SDK for Kotlin Documentation
 
 The AWS SDK for Kotlin provides Kotlin APIs for Amazon Web Services infrastructure services. Using the SDK, you can build applications on top of Amazon S3, Amazon EC2, Amazon DynamoDB, and more.

@@ -52,7 +52,7 @@ Required: Yes
 Participant ID of the publisher that will be replicated. This is assigned by IVS and returned by [CreateParticipantToken](API_CreateParticipantToken.md) or the `jti` (JWT ID) used to [create a self signed token](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/getting-started-distribute-tokens.html#getting-started-distribute-tokens-self-signed).
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 64.
-Pattern: `[a-zA-Z0-9-]*`
+Pattern: `[a-zA-Z0-9-_]*`
 Required: Yes
 
  ** [reconnectWindowSeconds](#API_StartParticipantReplication_RequestSyntax) **   <a name="ivsrealtimeeapireference-StartParticipantReplication-request-reconnectWindowSeconds"></a>
@@ -116,44 +116,30 @@ See [X-Frame-Options](https://developer.mozilla.org/en-US/docs/Web/HTTP/Referenc
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** AccessDeniedException **
-
- ** exceptionMessage **
 User does not have sufficient access to perform this action.
 HTTP Status Code: 403
 
  ** ConflictException **
-
- ** exceptionMessage **
 Updating or deleting a resource can cause an inconsistent state.
 HTTP Status Code: 409
 
  ** InternalServerException **
-
- ** exceptionMessage **
 Unexpected error during processing of request.
 HTTP Status Code: 500
 
  ** PendingVerification **
-
- ** exceptionMessage **
- Your account is pending verification.
+Your account is pending verification.
 HTTP Status Code: 403
 
  ** ResourceNotFoundException **
-
- ** exceptionMessage **
 Request references a resource which does not exist.
 HTTP Status Code: 404
 
  ** ServiceQuotaExceededException **
-
- ** exceptionMessage **
 Request would cause a service quota to be exceeded.
 HTTP Status Code: 402
 
  ** ValidationException **
-
- ** exceptionMessage **
 The input fails to satisfy the constraints specified by an AWS service.
 HTTP Status Code: 400
 

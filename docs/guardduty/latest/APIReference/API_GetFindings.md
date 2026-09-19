@@ -754,6 +754,11 @@ Content-type: application/json
                            "autoscalingAutoScalingGroup": {
                               "ec2InstanceUids": [ "string" ]
                            },
+                           "bedrockGuardrail": {
+                              "guardrailAction": "string",
+                              "guardrailSource": "string",
+                              "version": "string"
+                           },
                            "cloudformationStack": {
                               "ec2InstanceUids": [ "string" ]
                            },

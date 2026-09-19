@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/braket/index.html
 ---
 
+---
+title: 'Amazon Braket Documentation'
+canonical_url: https://docs.aws.amazon.com/braket/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Braket Documentation
 
 Amazon Braket is a fully managed service that helps you get started with quantum computing by providing a development environment to explore and design quantum algorithms, test them on simulated quantum computers, and run them on your choice of different quantum hardware technologies.

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/artifact/index.html
 ---
 
+---
+title: 'AWS Artifact Documentation'
+canonical_url: https://docs.aws.amazon.com/artifact/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Artifact Documentation
 
 AWS Artifact is a web service that enables you to download AWS security and compliance documents such as ISO certifications and SOC reports.

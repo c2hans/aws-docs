@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/building-saas-applications-on-amazon-eks-using-gitops/index.html
 ---
 
+---
+title: 'Guidance for Building SaaS applications on Amazon EKS using GitOps'
+canonical_url: https://docs.aws.amazon.com/solutions/building-saas-applications-on-amazon-eks-using-gitops/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Building SaaS applications on Amazon EKS using GitOps
 
 ## Overview

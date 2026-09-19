@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/automated-forensics-orchestrator-for-amazon-ec2/index.html
 ---
 
+---
+title: 'Guidance for Automated Forensics Orchestrator for Amazon EC2 and EKS'
+canonical_url: https://docs.aws.amazon.com/solutions/automated-forensics-orchestrator-for-amazon-ec2/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Automated Forensics Orchestrator for Amazon EC2 and EKS
 
 ## Overview

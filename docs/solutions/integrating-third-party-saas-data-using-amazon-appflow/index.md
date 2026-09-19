@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/integrating-third-party-saas-data-using-amazon-appflow/index.html
 ---
 
+---
+title: 'Guidance for Integrating Third-Party SaaS Data using Amazon AppFlow'
+canonical_url: https://docs.aws.amazon.com/solutions/integrating-third-party-saas-data-using-amazon-appflow/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Integrating Third-Party SaaS Data using Amazon AppFlow
 
 ## Overview

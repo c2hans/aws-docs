@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/machine-learning-for-near-real-time-advertising-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Machine Learning for Near Real-Time Advertising on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/machine-learning-for-near-real-time-advertising-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Machine Learning for Near Real-Time Advertising on AWS
 
 ## Overview

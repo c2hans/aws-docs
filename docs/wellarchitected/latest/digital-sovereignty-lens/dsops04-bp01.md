@@ -58,7 +58,20 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
    +  Use [CloudWatch composite alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Create_Composite_Alarm.html) to create alerting logic that combines multiple compliance metrics. For example, trigger an alarm when both the compliance drift rate and the critical finding backlog age exceed thresholds in a specific Region.
 
     The following are some example metrics. These are not exhaustive and are shown for illustrative purposes.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/wellarchitected/latest/digital-sovereignty-lens/dsops04-bp01.html)
+
+<table>
+<thead>
+  <tr><th> Name </th><th> Category </th><th> Measurement </th><th> Engineering value </th><th> Audit value </th></tr>
+</thead>
+<tbody>
+  <tr><td> <b>Mean Time to Detection (MTTD)</b> </td><td> Operational efficiency </td><td> Average time from when a compliance violation occurs to when it is detected </td><td> Optimize monitoring coverage and alert tuning </td><td> Shows proactive monitoring effectiveness </td></tr>
+  <tr><td> <b>Mean Time to Identification (MTTI)</b> </td><td> Operational efficiency </td><td> Average time from detection to identification of the root cause </td><td> Plug gaps in compliance data collection </td><td> Evidence of timely identification </td></tr>
+  <tr><td> <b>Mean Time to Remediation (MTTR)</b> </td><td> Operational efficiency </td><td> Average time from detection to full remediation. Includes MTTI. </td><td> Identifies bottlenecks in remediation workflows </td><td> Evidence of timely corrective action </td></tr>
+  <tr><td> <b>Critical finding backlog age</b> </td><td> Risk and impact </td><td> How long high and critical severity findings remain unresolved </td><td> Prioritizes technical debt and resource allocation </td><td> Shows that high-risk issues are addressed promptly </td></tr>
+  <tr><td> <b>Compliance drift rate</b> </td><td> Risk and impact </td><td> Percentage of resources that drift from compliance over time </td><td> Indicates configuration management effectiveness </td><td> Demonstrates ongoing continuous compliance efforts </td></tr>
+  <tr><td> <b>Repeat violation rate</b> </td><td> Risk and impact </td><td> Percentage of compliance issues that recur after remediation </td><td> Identifies need for better root cause analysis </td><td> Shows effectiveness of remediation scripts </td></tr>
+</tbody>
+</table>
 
 ## Resources
 <a name="resources"></a>

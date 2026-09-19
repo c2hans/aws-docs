@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/documentdb/index.html
 ---
 
+---
+title: 'Amazon DocumentDB Documentation'
+canonical_url: https://docs.aws.amazon.com/documentdb/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Amazon DocumentDB Documentation
 
 Amazon DocumentDB (with MongoDB compatibility) is a fast, reliable, and fully managed database service that makes it easy for you to set up, operate, and scale MongoDB-compatible databases.

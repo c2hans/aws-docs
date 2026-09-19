@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/aircraft-predictive-maintenance-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Aircraft Predictive Maintenance on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/aircraft-predictive-maintenance-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Aircraft Predictive Maintenance on AWS
 
 ## Overview

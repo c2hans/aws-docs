@@ -187,7 +187,12 @@ We recommend that you take the following next steps to choose an HA/DR solution 
 + Use AWS Compute Optimizer for both Amazon EC2 instance and Amazon EBS right sizing recommendations.
 + Use [AWS Pricing Calculator](https://calculator.aws/#/) to design your HA/DR strategy for cost estimations.
 + To determine if downgrading from SQL Server Enterprise edition to SQL Server Standard edition is a possible option, use the [sys dm\_db\_persisted\_sku\_features](https://learn.microsoft.com/en-us/sql/relational-databases/system-dynamic-management-views/sys-dm-db-persisted-sku-features-transact-sql?view=sql-server-ver16) dynamic management view to identify edition-specific features that are active in the current database.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/sql-server-hadr.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
+
 + Perform semi-yearly or yearly disaster recovery drills to better architect a design that could recover the database with defined RTO and RPO. This can also help you identify any architecture weaknesses.
 
 ## Additional resources

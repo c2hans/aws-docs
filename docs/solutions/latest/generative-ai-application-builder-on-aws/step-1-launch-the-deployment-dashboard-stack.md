@@ -20,7 +20,26 @@ This solution uses Amazon Kendra and Amazon Bedrock, which are not currently ava
 1. On the **Specify stack details** page, assign a name to your solution stack. For information about naming character limitations, see [IAM and STS Limits](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-limits.html) in the *AWS Identity and Access Management User Guide*.
 
 1. Under **Parameters**, review the parameters for this solution template and modify them as necessary. This solution uses the following default values.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/step-1-launch-the-deployment-dashboard-stack.html)
+
+<table>
+<thead>
+  <tr><th>Parameter</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td> <b>Admin User Email</b> </td><td> <code>No</code> </td><td>The email address of the admin user who will have access to the Deployment dashboard. If provided, an Amazon Cognito group and user will be created with permissions to deploy and manage use cases. You may also use <code>placeholder@example.com</code> to create the Group but not the User. Refer to <a href="step-4-post-deployment-configuration.md#manual-user-pool-configuration">Manual User Pool Configuration</a> for information on setting up your user pool.</td></tr>
+  <tr><td> <b>VpcEnabled</b> </td><td> <code>No</code> </td><td>Should the Deployment dashboard be deployed within a VPC</td></tr>
+  <tr><td> <b>CreateNewVpc</b> </td><td> <code>No</code> </td><td>Only available, if <b>VpcEnabled</b> is <code>Yes</code>. If the value is <code>Yes</code>, the stack will create the VPC and deploy the solution within the created VPC.<br />If <b>VpcEnabled</b> is <code>Yes</code> and <b>CreateNewVpc</b> is <code>No</code>, then you must provide an existing VPC configuration (<b>ExistingVpcId</b>, <b>ExistingPrivateSubnetIds</b>, <b>ExistingSecurityGroupIds</b>, <b>VpcAzs</b>).</td></tr>
+  <tr><td> <b>IPAMPoolId</b> </td><td> <i>(Optional input)</i> </td><td>You can configure IPAM and provide the created id as input to assign the IP address range that the deployment of this stack should use. For details regarding IPAM, see <a href="https://docs.aws.amazon.com/vpc/latest/ipam/how-it-works-ipam.html">How IPAM works.</a> </td></tr>
+  <tr><td> <b>DeployUI</b> </td><td> <code>Yes</code> </td><td>You have the option to deploy the Deployment dashboard without the web user interface (and the AWS resources required for the web deployment). In which case, the solution will deploy all infrastructure including REST API endpoints. This option is useful to integrate your own web interface with the Deployment dashboard APIs.</td></tr>
+  <tr><td> <b>ExistingVpcId</b> </td><td> <i>(Optional input)</i> </td><td>Required only if you want to deploy the solution in an existing VPC that you have created.</td></tr>
+  <tr><td> <b>ExistingPrivateSubnetIds</b> </td><td> <i>(Optional input)</i> </td><td>Required only if you want to deploy the solution in an existing VPC that you have created. The Lambda functions will be deployed in this subnet.</td></tr>
+  <tr><td> <b>ExistingSecurityGroupIds</b> </td><td> <i>(Optional input)</i> </td><td>Required only if you want to deploy the solution in an existing VPC that you have created. Ensure that security groups have the permissions for an outbound TCP connection.</td></tr>
+  <tr><td> <b>VpcAzs</b> </td><td> <i>(Optional input)</i> </td><td>Required only if you want to deploy the solution in an existing VPC that you have created.</td></tr>
+  <tr><td> <b>CognitoDomainPrefix</b> </td><td> <i>(Optional input)</i> </td><td>Required only if you want to deploy the solution in an existing Amazon Cognito user pool that you created. If you don’t provide a value, the solution generates it.</td></tr>
+  <tr><td> <b>ExistingCognitoUserPoolId</b> </td><td> <i>(Optional input)</i> </td><td>Required only if you want to deploy the solution in an existing Amazon Cognito user pool that you created.</td></tr>
+  <tr><td> <b>ExistingCognitoUserPoolClient</b> </td><td> <i>(Optional input)</i> </td><td>Required only if you want to deploy the solution in an existing Amazon Cognito user pool that you created. If you don’t provide a value, the solution creates a user pool client. This parameter can only be provided if you provide an <b>ExistingCognitoUserPoolId</b> value.</td></tr>
+</tbody>
+</table>
 
 1. Choose **Next**.
 

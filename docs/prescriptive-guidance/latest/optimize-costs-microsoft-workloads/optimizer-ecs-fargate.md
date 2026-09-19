@@ -75,7 +75,11 @@ If you navigate to Compute Optimizer from within an organization's management ac
 1. To review detailed recommendations for **Over-provisioned ECS services on Fargate**,** **scroll down and then choose **View recommendations**.
 
 1. Choose **Export** and save the file for future use.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/optimizer-ecs-fargate.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
 To see recommendations from Compute Optimizer, do the following:
 

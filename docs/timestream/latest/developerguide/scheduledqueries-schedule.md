@@ -21,7 +21,20 @@ For example, with a cron expression, you can define a scheduled query that gets 
   ```
 
   Cron expressions have six required fields, which are separated by white space.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/timestream/latest/developerguide/scheduledqueries-schedule.html)
+
+<table>
+<thead>
+  <tr><th>Field</th><th>Values</th><th>Wildcards</th></tr>
+</thead>
+<tbody>
+  <tr><td>Minutes</td><td>0-59</td><td>, - * /</td></tr>
+  <tr><td>Hours</td><td>0-23</td><td>, - * /</td></tr>
+  <tr><td>Day-of-month</td><td>1-31</td><td>, - * ? / L W</td></tr>
+  <tr><td>Month</td><td>1-12 or JAN-DEC</td><td>, - * /</td></tr>
+  <tr><td>Day-of-week</td><td>1-7 or SUN-SAT</td><td>, - * ? L #</td></tr>
+  <tr><td>Year</td><td>1970-2199</td><td>, - * /</td></tr>
+</tbody>
+</table>
 
 **Wildcard characters**
   + The \*,\* (comma) wildcard includes additional values. In the Month field, JAN,FEB,MAR would include January, February, and March.
@@ -40,7 +53,21 @@ If you use a '\#' character, you can define only one expression in the day-of-we
   + Cron expressions that lead to rates faster than 1 minute are not supported.
 
   **Examples**
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/timestream/latest/developerguide/scheduledqueries-schedule.html)
+
+<table>
+<thead>
+  <tr><th>Minutes</th><th>Hours</th><th>Day of month</th><th>Month</th><th>Day of week</th><th>Year</th><th>Meaning</th></tr>
+</thead>
+<tbody>
+  <tr><td>0 </td><td>10 </td><td>* </td><td>* </td><td>? </td><td>* </td><td>Run at 10:00 am (UTC) every day. </td></tr>
+  <tr><td>15 </td><td>12 </td><td>* </td><td>* </td><td>? </td><td>* </td><td>Run at 12:15 pm (UTC) every day. </td></tr>
+  <tr><td>0 </td><td>18 </td><td>? </td><td>* </td><td>MON-FRI </td><td>* </td><td>Run at 6:00 pm (UTC) every Monday through Friday. </td></tr>
+  <tr><td>0 </td><td>8 </td><td>1 </td><td>* </td><td>? </td><td>* </td><td>Run at 8:00 am (UTC) every first day of the month. </td></tr>
+  <tr><td>0/15 </td><td>* </td><td>* </td><td>* </td><td>? </td><td>* </td><td>Run every 15 minutes. </td></tr>
+  <tr><td>0/10 </td><td>* </td><td>* </td><td>* </td><td>MON-FRI </td><td>* </td><td>Run every 10 minutes Monday through Friday. </td></tr>
+  <tr><td>0/5 </td><td>8-17 </td><td>? </td><td>* </td><td>MON-FRI </td><td>* </td><td>Run every 5 minutes Monday through Friday between 8:00 am and 5:55 pm (UTC). </td></tr>
+</tbody>
+</table>
 
 **Rate expressions**
 + A rate expression starts when you create the scheduled event rule, and then runs on its defined schedule. Rate expressions have two required fields. Fields are separated by white space.

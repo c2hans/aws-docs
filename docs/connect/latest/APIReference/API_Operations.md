@@ -216,6 +216,7 @@ The following actions are supported by Amazon Connect Service:
 +  [ListDataTableValues](API_ListDataTableValues.md)
 +  [ListDefaultVocabularies](API_ListDefaultVocabularies.md)
 +  [ListEntitySecurityProfiles](API_ListEntitySecurityProfiles.md)
++  [ListEvaluationFormAIVersions](API_ListEvaluationFormAIVersions.md)
 +  [ListEvaluationForms](API_ListEvaluationForms.md)
 +  [ListEvaluationFormVersions](API_ListEvaluationFormVersions.md)
 +  [ListExtractionDefinitions](API_ListExtractionDefinitions.md)

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/building-an-enterprise-ready-network-foundation-for-rise-with-sap-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Building an Enterprise-Ready Network Foundation for RISE with SAP on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/building-an-enterprise-ready-network-foundation-for-rise-with-sap-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Building an Enterprise-Ready Network Foundation for RISE with SAP on AWS
 
 ## Overview

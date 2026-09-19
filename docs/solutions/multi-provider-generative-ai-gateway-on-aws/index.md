@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/multi-provider-generative-ai-gateway-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Multi-Provider Generative AI Gateway on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/multi-provider-generative-ai-gateway-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Multi-Provider Generative AI Gateway on AWS
 
 ## Overview

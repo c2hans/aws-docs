@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/keyspaces/index.html
 ---
 
+---
+title: 'Amazon Keyspaces (for Apache Cassandra) Documentation'
+canonical_url: https://docs.aws.amazon.com/keyspaces/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Keyspaces (for Apache Cassandra) Documentation
 
 Amazon Keyspaces (for Apache Cassandra) is a scalable, highly available, and managed Apache Cassandra–compatible database service.

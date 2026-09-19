@@ -566,7 +566,21 @@ We do not recommend running in containerized mode unless your business case requ
       + For **Resource type**, choose **Device**.
       + For **System group owner and file access permissions**, choose **Automatically add file system permissions of the system group that owns the resource**.
 
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/ml-dlc-console.html)
+<table>
+<thead>
+  <tr><th>Name</th><th>Device path</th></tr>
+</thead>
+<tbody>
+  <tr><td>nvhost-ctrl</td><td>/dev/nvhost-ctrl</td></tr>
+  <tr><td>nvhost-gpu</td><td>/dev/nvhost-gpu</td></tr>
+  <tr><td>nvhost-ctrl-gpu</td><td>/dev/nvhost-ctrl-gpu</td></tr>
+  <tr><td>nvhost-dbg-gpu</td><td>/dev/nvhost-dbg-gpu</td></tr>
+  <tr><td>nvhost-prof-gpu</td><td>/dev/nvhost-prof-gpu</td></tr>
+  <tr><td>nvmap</td><td>/dev/nvmap</td></tr>
+  <tr><td>nvhost-vic</td><td>/dev/nvhost-vic</td></tr>
+  <tr><td>tegra_dc_ctrl</td><td>/dev/tegra_dc_ctrl</td></tr>
+</tbody>
+</table>
 
 1. **If running in containerized mode**, add the following local volume resource to grant access to your device camera. Follow the procedure in [Step 5: Add a SageMaker AI Neo-optimized model resource to the Greengrass group](#ml-console-dlc-add-resources).
 **Note**
@@ -574,7 +588,15 @@ We do not recommend running in containerized mode unless your business case requ
    + For **Resource type**, choose **Volume**.
    + For **System group owner and file access permissions**, choose **Automatically add file system permissions of the system group that owns the resource**.
 
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/ml-dlc-console.html)
+<table>
+<thead>
+  <tr><th>Name</th><th>Source path</th><th>Destination path</th></tr>
+</thead>
+<tbody>
+  <tr><td>shm</td><td>/dev/shm</td><td>/dev/shm</td></tr>
+  <tr><td>tmp</td><td>/tmp</td><td>/tmp</td></tr>
+</tbody>
+</table>
 
 1.  Update your group subscriptions to use the correct directory. Follow the procedure in [Step 7: Add subscriptions to the Greengrass group](#ml-console-dlc-add-subscription) with the following updates.
    + For your first topic filter, enter **/resnet-18/predictions**.

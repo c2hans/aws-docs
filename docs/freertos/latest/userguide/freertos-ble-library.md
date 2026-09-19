@@ -521,14 +521,56 @@ Each service is instantiated as a primary service on each BLE server device. You
 **Characteristics**
 Characteristic content format: **CBOR**
 Max characteristic value size : 512 bytes
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/freertos/latest/userguide/freertos-ble-library.html)
+
+<table>
+<thead>
+  <tr><th>Characteristic</th><th>Requirement</th><th>Mandatory Properties</th><th>Optional Properties</th><th>Security Permissions</th><th>Brief Description</th><th>UUID</th></tr>
+</thead>
+<tbody>
+  <tr><td>Control</td><td>M</td><td>Write</td><td>None</td><td>Write Needs Encryption </td><td>Used to start and stop the MQTT proxy.</td><td><code>A9D7-166A-D72E-40A9-A002-4804-4CC3-FF01</code></td></tr>
+  <tr><td>TXMessage </td><td>M </td><td>Read, Notification </td><td>None </td><td>Read Needs Encryption </td><td>Used to send a notification containing a message to a broker via a proxy.</td><td><code>A9D7-166A-D72E-40A9-A002-4804-4CC3-FF02</code> </td></tr>
+  <tr><td>RXMessage </td><td>M </td><td>Read, Write Without Response </td><td>None </td><td>Read, Write Needs Encryption </td><td>Used to receive a message from a broker via a proxy.</td><td><code>A9D7-166A-D72E-40A9-A002-4804-4CC3-FF03</code> </td></tr>
+  <tr><td>TXLargeMessage </td><td>M </td><td>Read, Notification </td><td>None </td><td>Read Needs Encryption </td><td>Used to send a large message (Message &gt; BLE MTU Size) to a broker via a proxy.</td><td><code>A9D7-166A-D72E-40A9-A002-4804-4CC3-FF04</code></td></tr>
+  <tr><td>RXLargeMessage </td><td>M </td><td>Read, Write Without Response </td><td>None </td><td>Read, Write Needs Encryption </td><td>Used to receive large message (Message &gt; BLE MTU Size) from a broker via a proxy.</td><td><code>A9D7-166A-D72E-40A9-A002-4804-4CC3-FF05</code> </td></tr>
+</tbody>
+</table>
 
 **GATT Procedure Requirements **
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/freertos/latest/userguide/freertos-ble-library.html)
+
+<table>
+<tbody>
+  <tr><td> Read Characteristic Values </td><td> Mandatory </td></tr>
+  <tr><td> Read Long Characteristic Values </td><td> Mandatory </td></tr>
+  <tr><td> Write Characteristic Values </td><td> Mandatory </td></tr>
+  <tr><td> Write Long Characteristic Values </td><td> Mandatory </td></tr>
+  <tr><td> Read Characteristic descriptors </td><td> Mandatory </td></tr>
+  <tr><td> Write Characteristic descriptors </td><td> Mandatory </td></tr>
+  <tr><td> Notifications </td><td> Mandatory </td></tr>
+  <tr><td> Indications </td><td> Mandatory </td></tr>
+</tbody>
+</table>
 
 **Message Types **
 The following message types are exchanged.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/freertos/latest/userguide/freertos-ble-library.html)
+
+<table>
+<thead>
+  <tr><th> Message Type </th><th> Message </th><th> Map with these key / value pairs</th></tr>
+</thead>
+<tbody>
+  <tr><td> 0x01 </td><td> CONNECT </td><td> <ul><li> Key = "w", value = Type 0 Integer, Message type (1)  </li><li> Key = "d", value = Type 3, Text String, Client Identifier for the session  </li><li> Key = "a", value = Type 3, Text String, Broker endpoint for the session  </li><li> Key = "c", Value = Simple Value Type True/False </li></ul> </td></tr>
+  <tr><td> 0x02 </td><td> CONNACK </td><td> <ul><li> Key = "w, value = Type 0 Integer, Message type (2)  </li><li> Key = "s", Value = Type 0 Integer, Status code  </li></ul> </td></tr>
+  <tr><td> 0x03 </td><td> PUBLISH </td><td> <ul><li> Key = "w", value = Type 0 Integer, Message type (3)  </li><li> Key = "u", value = Type 3, Text String, Topic for publish  </li><li> Key = "n", value = Type 0, Integer, QoS for publish  </li><li> Key = "i", value = Type 0, Integer, Message Identifier, Only for QoS 1 Publishes  </li><li> Key = "k", Value = Type 2, Byte String, Payload for publish  </li></ul> </td></tr>
+  <tr><td> 0x04 </td><td> PUBACK </td><td> <ul><li>  Sent Only for QoS 1 messages.  </li><li> Key = "w", value = Type 0 Integer, Message type (4)  </li><li> Key = "i", value = Type 0, Integer, Message Identifier  </li></ul> </td></tr>
+  <tr><td> 0x08 </td><td> SUBSCRIBE </td><td> <ul><li> Key = "w", value = Type 0 Integer, Message type (8)  </li><li> Key = "v", value = Type 4, Array of text strings, topics for subscription  </li><li> Key = "o", value = Type 4, Array of Integers, QoS for subscription  </li><li> Key = "i", value = Type 0, Integer, Message Identifier  </li></ul> </td></tr>
+  <tr><td> 0x09 </td><td> SUBACK </td><td> <ul><li> Key = "w", value = Type 0 Integer, Message type (9)  </li><li> Key = "i", value = Type 0, Integer, Message Identifier  </li><li> Key = "s", value = Type 0, Integer, Status code for Subscription  </li></ul> </td></tr>
+  <tr><td> 0X0A </td><td> UNSUBSCRIBE </td><td> <ul><li> Key = "w", value = Type 0 Integer, Message type (10)  </li><li> Key = "v", value = Type 4, Array of text strings, topics for unsubscription  </li><li> Key = "i", value = Type 0, Integer, Message Identifier  </li></ul> </td></tr>
+  <tr><td> 0x0B </td><td> UNSUBACK </td><td> <ul><li> Key = "w", value = Type 0 Integer, Message type (11)  </li><li> Key = "i", value = Type 0, Integer, Message Identifier  </li><li> Key = "s", value = Type 0, Integer, Status code for UnSubscription  </li></ul> </td></tr>
+  <tr><td> 0X0C </td><td> PINGREQ </td><td> <ul><li> Key = "w", value = Type 0 Integer, Message type (12)  </li></ul> </td></tr>
+  <tr><td> 0x0D </td><td> PINGRESP </td><td> <ul><li> Key = "w", value = Type 0 Integer, Message type (13)  </li></ul> </td></tr>
+  <tr><td> 0x0E </td><td> DISCONNNECT </td><td> <ul><li> Key = "w", value = Type 0 Integer, Message type (14) </li></ul> </td></tr>
+</tbody>
+</table>
 
 **Large Payload Transfer Characteristics **
 **TXLargeMessage **

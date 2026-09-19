@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/tactical-edge-application-deployment-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Tactical Edge Application Deployment on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/tactical-edge-application-deployment-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Tactical Edge Application Deployment on AWS
 
 ## Overview

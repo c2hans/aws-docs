@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/dtconsole/index.html
 ---
 
+---
+title: 'Developer Tools Console Documentation'
+canonical_url: https://docs.aws.amazon.com/dtconsole/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Developer Tools Console Documentation
 
 The Developer Tools console is home to a set of services and features that you can use individually or collectively to help you develop software, either individually or as a team.

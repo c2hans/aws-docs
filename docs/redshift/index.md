@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/redshift/index.html
 ---
 
+---
+title: 'Amazon Redshift Documentation'
+canonical_url: https://docs.aws.amazon.com/redshift/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Redshift Documentation
 
 Amazon Redshift is a fast, fully managed, petabyte-scale data warehouse service that makes it simple and cost-effective to efficiently analyze all your data using your existing business intelligence tools. It is optimized for datasets ranging from a few hundred gigabytes to a petabyte or more and costs less than $1,000 per terabyte per year, a tenth the cost of most traditional data warehousing solutions.

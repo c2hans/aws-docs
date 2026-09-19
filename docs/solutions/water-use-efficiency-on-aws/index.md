@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/water-use-efficiency-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Water Use Efficiency on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/water-use-efficiency-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Water Use Efficiency on AWS
 
 ## Overview

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/chatbot/index.html
 ---
 
+---
+title: 'Amazon Q Developer in chat applications Documentation'
+canonical_url: https://docs.aws.amazon.com/chatbot/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Q Developer in chat applications Documentation
 
 Amazon Q Developer in chat applications (previously AWS Chatbot) enables you to monitor, troubleshoot, and optimize your AWS resources with a generative AI-powered assistant in Microsoft Teams and Slack. Discover more about your AWS resources, collaboratively troubleshoot operational events, run AWS CLI commands, and remediate issues by chatting with Amazon Q Developer directly from your chat channels. Customize your experience by creating contextual action buttons for notifications and command aliases that represent CLI commands. Amazon Q Developer is also available as a delivery channel to receive notifications configured from AWS User Notifications.

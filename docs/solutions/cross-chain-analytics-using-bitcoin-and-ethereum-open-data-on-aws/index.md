@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/cross-chain-analytics-using-bitcoin-and-ethereum-open-data-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Cross-Chain Analytics using Bitcoin and Ethereum Open Data on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/cross-chain-analytics-using-bitcoin-and-ethereum-open-data-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Cross-Chain Analytics using Bitcoin and Ethereum Open Data on AWS
 
 ## Overview

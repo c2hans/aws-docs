@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/voice-powered-hotel-in-room-service-with-amazon-nova-sonic/index.html
 ---
 
+---
+title: 'Guidance for Voice-Powered Hotel In-Room Service with Amazon Nova Sonic'
+canonical_url: https://docs.aws.amazon.com/solutions/voice-powered-hotel-in-room-service-with-amazon-nova-sonic/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Voice-Powered Hotel In-Room Service with Amazon Nova Sonic
 
 ## Overview

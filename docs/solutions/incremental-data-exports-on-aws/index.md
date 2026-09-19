@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/incremental-data-exports-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Incremental Data Exports on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/incremental-data-exports-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Incremental Data Exports on AWS
 
 ## Overview

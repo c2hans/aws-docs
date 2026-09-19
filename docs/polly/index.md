@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/polly/index.html
 ---
 
+---
+title: 'Amazon Polly Documentation'
+canonical_url: https://docs.aws.amazon.com/polly/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Polly Documentation
 
 Amazon Polly is a Text-to-Speech (TTS) cloud service that converts text into lifelike speech. You can use Amazon Polly to develop applications that increase engagement and accessibility. Amazon Polly supports multiple languages and includes a variety of lifelike voices, so you can build speech-enabled applications that work in multiple locations and use the ideal voice for your customers.

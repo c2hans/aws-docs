@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/interconnect/index.html
 ---
 
+---
+title: 'AWS Interconnect'
+canonical_url: https://docs.aws.amazon.com/interconnect/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Interconnect
 
 Connect your Amazon Virtual Private Cloud (VPC) to other cloud providers with AWS Interconnect. Create managed, scalable private network connections with built-in resiliency in minutes.

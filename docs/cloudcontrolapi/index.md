@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/cloudcontrolapi/index.html
 ---
 
+---
+title: 'AWS Cloud Control API Documentation'
+canonical_url: https://docs.aws.amazon.com/cloudcontrolapi/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Cloud Control API Documentation
 
 AWS Cloud Control API (Cloud Control API) is a set of common application programming interfaces (APIs) that make it easy for developers and partners to manage the lifecycle of AWS and third-party services. Cloud Control API provides five operations for developers to create, read, update, delete, and list (CRUDL) their cloud infrastructure.

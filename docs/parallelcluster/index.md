@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/parallelcluster/index.html
 ---
 
+---
+title: 'AWS ParallelCluster Documentation'
+canonical_url: https://docs.aws.amazon.com/parallelcluster/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS ParallelCluster Documentation
 
 AWS ParallelCluster is an AWS supported open source cluster management tool that helps you to deploy and manage high performance computing (HPC) clusters in the AWS Cloud.

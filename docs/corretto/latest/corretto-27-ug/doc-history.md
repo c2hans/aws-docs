@@ -9,4 +9,5 @@ source_url: https://docs.aws.amazon.com/corretto/latest/corretto-27-ug/doc-histo
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [General Availability Release (27.0.0.35.1)](#doc-history) | General availability release of of Amazon Corretto 27. | September 15, 2026 |
 | [Early Access Release (27.0.0.33.1)](#doc-history) | Early access release of Amazon Corretto 27. | August 6, 2026 |

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/app-mesh/index.html
 ---
 
+---
+title: 'AWS App Mesh Documentation'
+canonical_url: https://docs.aws.amazon.com/app-mesh/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS App Mesh Documentation
 
 AWS App Mesh makes it easy to monitor and control microservices that are running on AWS.

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/devopsagent/index.html
 ---
 
+---
+title: 'AWS DevOps Agent'
+canonical_url: https://docs.aws.amazon.com/devopsagent/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS DevOps Agent
 
 AWS DevOps Agent monitors AWS infrastructure, performs automated root cause analysis on operational events, runs remediation procedures, and configures preventive measures to maintain system reliability.

@@ -60,6 +60,11 @@ Provides additional information about the aggregation key.
 Type: [AggregationSummary](API_AggregationSummary.md) object
 Required: No
 
+ ** attachments **   <a name="Notifications-Type-ManagedNotificationEvent-attachments"></a>
+A list of files attached to the notification event.
+Type: Array of [NotificationEventAttachment](API_NotificationEventAttachment.md) objects
+Required: No
+
  ** endTime **   <a name="Notifications-Type-ManagedNotificationEvent-endTime"></a>
 The end time of the notification event.
 Type: Timestamp
@@ -86,7 +91,6 @@ Required: No
 URL defined by Source Service to be used by notification consumers to get additional information about event.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 2000.
-Pattern: `(https?)://.*`
 Required: No
 
  ** sourceEventDetailUrlDisplayText **   <a name="Notifications-Type-ManagedNotificationEvent-sourceEventDetailUrlDisplayText"></a>

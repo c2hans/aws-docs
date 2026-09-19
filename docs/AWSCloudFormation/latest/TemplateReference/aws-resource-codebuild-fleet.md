@@ -156,7 +156,7 @@ The name of the compute fleet.
 *Type*: String
 *Minimum*: `2`
 *Maximum*: `128`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `OverflowBehavior`  <a name="cfn-codebuild-fleet-overflowbehavior"></a>
 The compute fleet overflow behavior.

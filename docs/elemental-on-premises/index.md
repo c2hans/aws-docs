@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/elemental-on-premises/index.html
 ---
 
+---
+title: 'AWS Elemental On-Premises Documentation'
+canonical_url: https://docs.aws.amazon.com/elemental-on-premises/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Elemental On-Premises Documentation
 
 Use AWS Elemental appliances and software to encode and package video assets.

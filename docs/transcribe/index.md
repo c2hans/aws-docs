@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/transcribe/index.html
 ---
 
+---
+title: 'Amazon Transcribe Documentation'
+canonical_url: https://docs.aws.amazon.com/transcribe/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Amazon Transcribe Documentation
 
 Amazon Transcribe provides transcription services for your audio files and audio streams. It uses advanced machine learning technologies to recognize spoken words and transcribe them into text.

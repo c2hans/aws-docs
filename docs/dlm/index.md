@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/dlm/index.html
 ---
 
+---
+title: 'Amazon Data Lifecycle Manager'
+canonical_url: https://docs.aws.amazon.com/dlm/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Data Lifecycle Manager
 
 With Amazon Data Lifecycle Manager, you create lifecycle policies that automate the creation, retention, cross-Region and cross-account copy, and deletion of Amazon EBS snapshots and Amazon EBS-backed AMIs.

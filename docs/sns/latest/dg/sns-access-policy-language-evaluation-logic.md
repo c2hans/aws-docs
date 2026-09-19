@@ -15,8 +15,8 @@ The following flow chart and discussion describe in more detail how the decision
 
 ![Illustrates the decision-making process used by AWS to determine whether a request to access a resource should be allowed or denied. It begins with a default deny, checks for any explicit deny in the applicable policies, then looks for any allow instructions, and finally, if no allow is found, the request is denied by default.](https://docs.aws.amazon.com/sns/latest/dg/images/AccessPolicyLanguage_Evaluation_Flow.gif)
 
-|  |  |
-| --- |--- |
+| Step | Description |
+| --- | --- |
 | 1 | The decision starts with a default deny. |
 | 2 |  The enforcement code then evaluates all the policies that are applicable to the request (based on the resource, principal, action, and conditions). <br />The order in which the enforcement code evaluates the policies is not important. |
 | 3 |  In all those policies, the enforcement code looks for an explicit deny instruction that would apply to the request.<br />If it finds even one, the enforcement code returns a decision of "deny" and the process is finished (this is an explicit deny; for more information, see [Explicit deny](sns-access-policy-language-key-concepts.md#Define_HardDeny)). |

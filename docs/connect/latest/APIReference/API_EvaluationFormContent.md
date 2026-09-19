@@ -36,6 +36,12 @@ A title of the evaluation form.
 Type: String
 Required: Yes
 
+ ** AIVersion **   <a name="connect-Type-EvaluationFormContent-AIVersion"></a>
+The AI version to use for the evaluation form. This specifies which AI model version is used for automated evaluations.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Required: No
+
  ** AutoEvaluationConfiguration **   <a name="connect-Type-EvaluationFormContent-AutoEvaluationConfiguration"></a>
 The configuration of the automated evaluation.
 Type: [EvaluationFormAutoEvaluationConfiguration](API_EvaluationFormAutoEvaluationConfiguration.md) object

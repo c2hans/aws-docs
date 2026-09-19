@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/capturing-retail-video-analytics-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Capturing Retail Video Analytics on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/capturing-retail-video-analytics-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Capturing Retail Video Analytics on AWS
 
 ## Overview

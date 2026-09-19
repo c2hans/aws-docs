@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/datatransferterminal/index.html
 ---
 
+---
+title: 'AWS Data Transfer Terminal Documentation'
+canonical_url: https://docs.aws.amazon.com/datatransferterminal/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # AWS Data Transfer Terminal Documentation
 
 AWS Data Transfer Terminal provides access to a network-ready, physical location for customers to bring their devices for near instantaneous data transfer to or from the cloud.

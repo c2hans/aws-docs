@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/reading-and-highlighting-web-content-with-amazon-polly/index.html
 ---
 
+---
+title: 'Guidance for Reading & Highlighting Web Content with Amazon Polly'
+canonical_url: https://docs.aws.amazon.com/solutions/reading-and-highlighting-web-content-with-amazon-polly/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Reading & Highlighting Web Content with Amazon Polly
 
 ## Overview

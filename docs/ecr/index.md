@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/ecr/index.html
 ---
 
+---
+title: 'Amazon Elastic Container Registry Documentation'
+canonical_url: https://docs.aws.amazon.com/ecr/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Elastic Container Registry Documentation
 
 Amazon Elastic Container Registry (Amazon ECR) is a fully managed container registry offering high-performance hosting, so you can reliably deploy application images and artifacts anywhere.

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/amazonq/index.html
 ---
 
+---
+title: 'Amazon Q Documentation'
+canonical_url: https://docs.aws.amazon.com/amazonq/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Amazon Q Documentation
 
 Amazon Q Business is a generative artificial intelligence (generative AI)-powered assistant that you can tailor to your business needs. Amazon Q Developer is an AWS generative AI assistant that helps you understand, build, extend, and operate applications and workloads on AWS.

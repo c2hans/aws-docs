@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/enterprise-contact-center-user-management-on-amazon-connect-customer/index.html
 ---
 
+---
+title: 'Guidance for Enterprise Contact Center User Management on Amazon Connect Customer'
+canonical_url: https://docs.aws.amazon.com/solutions/enterprise-contact-center-user-management-on-amazon-connect-customer/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Enterprise Contact Center User Management on Amazon Connect Customer
 
 ## Overview

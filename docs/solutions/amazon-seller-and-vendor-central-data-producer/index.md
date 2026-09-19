@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/amazon-seller-and-vendor-central-data-producer/index.html
 ---
 
+---
+title: 'Guidance for Amazon Seller and Vendor Central Data Producer'
+canonical_url: https://docs.aws.amazon.com/solutions/amazon-seller-and-vendor-central-data-producer/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Amazon Seller and Vendor Central Data Producer
 
 ## Overview

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/fsx/index.html
 ---
 
+---
+title: 'Amazon FSx Documentation'
+canonical_url: https://docs.aws.amazon.com/fsx/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon FSx Documentation
 
 Amazon FSx makes it easy and cost effective to launch, run, and scale feature-rich, high-performance file systems in the cloud. It supports a wide range of workloads with its reliability, security, scalability, and broad set of capabilities. With Amazon FSx, you can choose between four widely-used file systems: Lustre, NetApp ONTAP, OpenZFS, and Windows File Server. Amazon File Cache is a high-speed cache on AWS that makes it easier to process file data, regardless of where the data is stored.

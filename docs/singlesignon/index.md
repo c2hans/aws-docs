@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/singlesignon/index.html
 ---
 
+---
+title: 'AWS IAM Identity Center'
+canonical_url: https://docs.aws.amazon.com/singlesignon/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS IAM Identity Center
 
 IAM Identity Center provides one place where you can create or connect workforce users and centrally manage their access to all of their AWS accounts and applications. Workforce users benefit from a single sign-on experience and can use the AWS access portal to find all their assigned AWS accounts and applications.

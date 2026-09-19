@@ -46,6 +46,10 @@ Each bundle provides the hardware specifications listed in the following table, 
 | Graphics.g6.16xlarge | 64 | 256 | 1 GPU, 24 GiB video memory |
 | Graphics.gr6.4xlarge | 16 | 128 | 1 GPU, 24 GiB video memory |
 | Graphics.gr6.8xlarge | 32 | 256 | 1 GPU, 24 GiB video memory |
+| Graphics.g7.2xlarge | 8 | 32 | 1 GPU, 32 GiB video memory |
+| Graphics.g7.4xlarge | 16 | 64 | 1 GPU, 32 GiB video memory |
+| Graphics.g7.8xlarge | 32 | 128 | 1 GPU, 32 GiB video memory |
+| Graphics.g7.12xlarge | 48 | 192 | 2 GPUs, 64 GiB video memory |
 
 ## Value bundle
 <a name="value"></a>

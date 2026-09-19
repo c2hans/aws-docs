@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/codebuild/index.html
 ---
 
+---
+title: 'AWS CodeBuild Documentation'
+canonical_url: https://docs.aws.amazon.com/codebuild/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS CodeBuild Documentation
 
 AWS CodeBuild is a fully managed build service that compiles your source code, runs unit tests, and produces artifacts that are ready to deploy.

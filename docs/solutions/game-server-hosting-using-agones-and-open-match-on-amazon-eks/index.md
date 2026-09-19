@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/game-server-hosting-using-agones-and-open-match-on-amazon-eks/index.html
 ---
 
+---
+title: 'Guidance for Game Server Hosting Using Agones and Open Match on Amazon EKS'
+canonical_url: https://docs.aws.amazon.com/solutions/game-server-hosting-using-agones-and-open-match-on-amazon-eks/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Game Server Hosting Using Agones and Open Match on Amazon EKS
 
 Set up, install, and host an open source container-based game server hosting and matchmaking solution on Amazon EKS

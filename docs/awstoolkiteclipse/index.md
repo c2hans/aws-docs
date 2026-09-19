@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/awstoolkiteclipse/index.html
 ---
 
+---
+title: 'AWS Toolkit for Eclipse Documentation'
+canonical_url: https://docs.aws.amazon.com/awstoolkiteclipse/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Toolkit for Eclipse Documentation
 
 The AWS Toolkit for Eclipse is an open source plug-in for the Eclipse Java integrated development environment (IDE). The Toolkit for Eclipse makes it easier for developers to develop, debug, and deploy Java applications that use Amazon Web Services.

@@ -38,7 +38,19 @@ For better performance, consistency, and durability at a lower cost, we recommen
 + Multi-Attach can't be enabled during instance launch using either the Amazon EC2 console or RunInstances API.
 + Multi-Attach enabled volumes that have an issue at the Amazon EBS infrastructure layer are unavailable to all attached instances. Issues at the Amazon EC2 or networking layer might impact only some attached instances.
 + The following table shows volume modification support for Multi-Attach enabled `io1` and `io2` volumes after creation.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/ebs/latest/userguide/ebs-volumes-multi.html)
+
+<table>
+<thead>
+  <tr><th></th><th><code>io2</code> volumes</th><th><code>io1</code> volumes</th></tr>
+</thead>
+<tbody>
+  <tr><td>Modify volume type</td><td>✗</td><td>✗</td></tr>
+  <tr><td>Modify volume size</td><td>✓</td><td>✗</td></tr>
+  <tr><td>Modify provisioned IOPS</td><td>✓</td><td>✗</td></tr>
+  <tr><td>Enable Multi-Attach</td><td>✓ *</td><td>✗</td></tr>
+  <tr><td>Disable Multi-Attach</td><td>✓ *</td><td>✗</td></tr>
+</tbody>
+</table>
 
   \* You can't enable or disable Multi-Attach while the volume is attached to an instance.
 + Multi-Attach enabled volumes are deleted on instance termination if the last attached instance is terminated and if that instance is configured to delete the volume on termination. If the volume is attached to multiple instances that have different delete on termination settings in their volume block device mappings, the last attached instance's block device mapping setting determines the delete on termination behavior.

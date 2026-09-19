@@ -104,7 +104,7 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 10.
 
  ** [endpointUri](#API_GetWhatsAppFlow_ResponseSyntax) **   <a name="Social-GetWhatsAppFlow-response-endpointUri"></a>
-The endpoint URI for data exchange Flows, if configured.
+The HTTPS endpoint that Meta calls for a data exchange Flow.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 

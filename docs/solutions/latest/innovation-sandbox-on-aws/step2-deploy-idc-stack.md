@@ -30,7 +30,22 @@ The template launches in the US East (N.Virginia) Region by default. To launch t
 1. Under **Parameters**, review the parameters for this solution template and modify them as necessary. This solution uses the following default values.
 **Important**
 When using an external identity provider with SCIM integration (such as Microsoft Entra or Okta), you must create the ISB user groups in the external provider using the exact names specified in the group name parameters below, or the default names if left empty.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/step2-deploy-idc-stack.html)
+
+<table>
+<thead>
+  <tr><th>Parameter</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td> <b>Namespace</b> </td><td> {{myisb}} </td><td>Use the same namespace from the <code>AccountPool</code> stack deployment of Innovation Sandbox. For example, <b>myisb</b>.</td></tr>
+  <tr><td> <b>Org Management Account Id</b> </td><td> {{&lt;Requires input&gt;}} </td><td>The AWS Account Id of the Organization Management account. This is always the Organization Management account ID, even if you are using a delegated administration account for IAM Identity Center.</td></tr>
+  <tr><td> <b>Hub Account Id</b> </td><td> {{&lt;Requires input&gt;}} </td><td>The AWS Account Id where the Innovation Sandbox Hub application (Data and Compute stacks) is (to be) deployed.</td></tr>
+  <tr><td> <b>Identity Store Id</b> </td><td> {{&lt;Requires input&gt;}} </td><td>The Identity Store Id of the IAM Identity Center Instance. Example: d-XXXXXXXXXX. To obtain the IdentityStoreId value from the IAM Identity Center console:<br />- Log in to the account your IDC account is located in.<br />- Open the IAM Identity Center console, and from the left pane, choose <b>Settings</b>.<br />- From the Settings page, on the Identity source tab, copy the <b>Identity Store ID</b> value.</td></tr>
+  <tr><td> <b>SSO Instance Arn</b> </td><td> {{&lt;Requires input&gt;}} </td><td>The ARN of the SSO instance in IAM Identity Center. Example: arn:aws:sso:::instance/ssoins- xxxxxxxxxxxxxxxx. To obtain the SsoInstanceArn value from the IAM Identity Center console:<br />- Log in to the account your IDC account is located in.<br />- Open the IAM Identity Center console, and from the left pane, choose <b>Settings</b>.<br />- From the Settings page, under Details, copy the <b>Instance ARN</b> value.</td></tr>
+  <tr><td> <b>Admin Group Name</b> </td><td> {{&lt;Empty&gt;}} </td><td>A custom name to provide for the admin group. <b>Note</b>: If left empty, the group will be created with the name <b>&lt;namespace&gt;_IsbAdminsGroup</b>.</td></tr>
+  <tr><td> <b>Manager Group Name</b> </td><td> {{&lt;Empty&gt;}} </td><td>A custom name to provide for the manager group. <b>Note</b>: If left empty, the group will be created with the name <b>&lt;namespace&gt;_IsbManagersGroup</b>.</td></tr>
+  <tr><td> <b>User Group Name</b> </td><td> {{&lt;Empty&gt;}} </td><td>A custom name to provide for the user group. <b>Note</b>: If left empty, the group will be created with the name <b>&lt;namespace&gt;_IsbUsersGroup</b>.</td></tr>
+</tbody>
+</table>
 
 1. Choose **Next**.
 

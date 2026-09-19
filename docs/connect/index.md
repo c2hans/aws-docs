@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/connect/index.html
 ---
 
+---
+title: 'Connect Customer'
+canonical_url: https://docs.aws.amazon.com/connect/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Connect Customer
 
 Connect Customer is a solution that builds, manages, and continuously improves customer experiences at any scale.

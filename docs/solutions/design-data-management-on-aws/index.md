@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/design-data-management-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Design Data Management (SOS) on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/design-data-management-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Design Data Management (SOS) on AWS
 
 ## Overview

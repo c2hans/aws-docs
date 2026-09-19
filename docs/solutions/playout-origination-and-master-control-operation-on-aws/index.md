@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/playout-origination-and-master-control-operation-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Playout Origination and Master Control Operation on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/playout-origination-and-master-control-operation-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Playout Origination and Master Control Operation on AWS
 
 ## Overview

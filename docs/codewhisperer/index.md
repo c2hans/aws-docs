@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/codewhisperer/index.html
 ---
 
+---
+title: 'Amazon CodeWhisperer Documentation'
+canonical_url: https://docs.aws.amazon.com/codewhisperer/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon CodeWhisperer Documentation
 
 Amazon CodeWhisperer is a machine learning (ML)–powered service that helps improve developer productivity by generating code recommendations based on their comments in natural language and code in the integrated development environment (IDE).

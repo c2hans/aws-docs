@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com//solutions/spatial-data-management-on-aws//index.html
 ---
 
+---
+title: 'Spatial Data Management on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/spatial-data-management-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Spatial Data Management on AWS
 
 Make it easy to store, enrich, and connect your spatial and geospatial data

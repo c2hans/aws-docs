@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/RFID-store-inventory-on-aws/index.html
 ---
 
+---
+title: 'Guidance for RFID Store Inventory on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/RFID-store-inventory-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for RFID Store Inventory on AWS
 
 ## Overview

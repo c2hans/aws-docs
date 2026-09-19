@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/building-a-data-analyst-agent-using-amazon-bedrock-agentcore/index.html
 ---
 
+---
+title: 'Guidance for Building a Data Analyst Agent using Amazon Bedrock AgentCore'
+canonical_url: https://docs.aws.amazon.com/solutions/building-a-data-analyst-agent-using-amazon-bedrock-agentcore/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Building a Data Analyst Agent using Amazon Bedrock AgentCore
 
 ## Overview

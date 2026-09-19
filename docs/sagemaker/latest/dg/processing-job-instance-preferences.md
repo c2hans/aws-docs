@@ -91,6 +91,9 @@ A count on each entry:
 ## Use instance preferences with the SageMaker Python SDK
 <a name="processing-job-instance-preferences-pysdk"></a>
 
+**Note**
+Instance preferences require version 3.22.0 or later of the SageMaker Python SDK. For more information about this release, see [Release v3.22.0](https://github.com/aws/sagemaker-python-sdk/releases/tag/v3.22.0) on the GitHub website.
+
 Pass `instance_preferences` to `Processor` or `ScriptProcessor` as a list of dictionaries in the API's field names. Set `instance_count` on the processor for a uniform count, or in each dictionary instead.
 
 ```

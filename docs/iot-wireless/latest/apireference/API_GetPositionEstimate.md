@@ -150,6 +150,18 @@ Content-type: application/json
       "Payload": "{{string}}",
       "Use2DSolver": {{boolean}}
    },
+   "GnssMultiFrame": {
+      "AssistAltitude": {{number}},
+      "AssistPosition": [ {{number}} ],
+      "Captures": [
+         {
+            "CaptureTime": {{number}},
+            "Payload": "{{string}}"
+         }
+      ],
+      "CaptureTimeAccuracy": {{number}},
+      "Use2DSolver": {{boolean}}
+   },
    "Ip": {
       "IpAddress": "{{string}}"
    },
@@ -184,8 +196,13 @@ Type: [CellTowers](API_CellTowers.md) object
 Required: No
 
  ** [Gnss](#API_GetPositionEstimate_RequestSyntax) **   <a name="iotwireless-GetPositionEstimate-request-Gnss"></a>
-Retrieves an estimated device position by resolving the global navigation satellite system (GNSS) scan data. The position is resolved using the GNSS solver powered by LoRa Cloud.
+Retrieves an estimated device position by resolving the global navigation satellite system (GNSS) scan data. The position is resolved using the GNSS solver powered by LoRa Cloud. This field is mutually exclusive with the GnssMultiFrame field.
 Type: [Gnss](API_Gnss.md) object
+Required: No
+
+ ** [GnssMultiFrame](#API_GetPositionEstimate_RequestSyntax) **   <a name="iotwireless-GetPositionEstimate-request-GnssMultiFrame"></a>
+Retrieves an estimated device position by resolving multiple global navigation satellite system (GNSS) scan captures. The position is resolved using the multi-frame GNSS solver powered by LoRa Cloud. This field is mutually exclusive with the Gnss field.
+Type: [GnssMultiFrame](API_GnssMultiFrame.md) object
 Required: No
 
  ** [Ip](#API_GetPositionEstimate_RequestSyntax) **   <a name="iotwireless-GetPositionEstimate-request-Ip"></a>

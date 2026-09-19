@@ -130,6 +130,7 @@ Content-type: application/json
       }
    },
    "EvaluationForm": {
+      "AIVersion": "string",
       "AutoEvaluationConfiguration": {
          "Enabled": boolean
       },

@@ -10,7 +10,7 @@ You can customize specific widgets to create dashboards that best fit your busin
 You can delete or add new metrics, define widget level filters and groupings, re-order and re-size columns, and more. Additionally, you can add new custom metrics to specific widgets in your dashboards. For more information, see. [Custom metrics](custom-metrics-topic.md).
 
 **Topics**
-+ [Choose which metrics to display](#dashboard-changing-metrics)
++ [Choose which metrics to display in a widget](#dashboard-changing-metrics)
 + [Select custom time thresholds](#select-time-thresholds)
 + [Re-order the metrics](#reorder-metrics)
 + [Re-size columns](#reorder-metrics)
@@ -19,7 +19,7 @@ You can delete or add new metrics, define widget level filters and groupings, re
 + [Configure filters](#configure-filters)
 + [Filter by queue type](#filter-by-queue-type)
 + [Modify thresholds for summary widgets and tables](#dashboard-thresholds)
-+ [Add or remove widgets](#dashboard-add-widgets)
++ [Add or remove widgets on a dashboard](#dashboard-add-widgets)
 + [Move and resize widgets](#widgets-move-charts)
 + [Create custom dashboards](#dashboard-create-custom)
 + [Create custom calculations of service level metrics](#dashboard-custom-sl)

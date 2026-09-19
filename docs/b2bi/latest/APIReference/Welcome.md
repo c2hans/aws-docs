@@ -31,4 +31,4 @@ To use these partnership enhancements, specify the appropriate configuration par
 New EventBridge events
  AWS B2B Data Interchange now emits additional EventBridge events to help you monitor and respond to EDI processing activities. New events include "Split Transformation Completed" and "Split Transformation Failed" to track the status of split file processing.
 
-This document was last published on September 15, 2026.
+This document was last published on September 18, 2026.

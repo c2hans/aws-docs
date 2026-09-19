@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/building-voice-agents-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Building Voice Agents on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/building-voice-agents-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Building Voice Agents on AWS
 
 ## Overview

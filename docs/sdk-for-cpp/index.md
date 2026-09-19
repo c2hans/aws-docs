@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/sdk-for-cpp/index.html
 ---
 
+---
+title: 'AWS SDK for C++ Documentation'
+canonical_url: https://docs.aws.amazon.com/sdk-for-cpp/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS SDK for C++ Documentation
 
 Get started quickly with AWS using the AWS SDK for C++. The SDK is a modern, open-source C++ library that makes it easy to integrate your C++ application with AWS services like Amazon S3, Amazon Kinesis, and Amazon DynamoDB.

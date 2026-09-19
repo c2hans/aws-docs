@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/wavelength/index.html
 ---
 
+---
+title: 'AWS Wavelength Documentation'
+canonical_url: https://docs.aws.amazon.com/wavelength/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Wavelength Documentation
 
 AWS Wavelength allows developers to build applications that deliver ultra-low latencies to mobile devices and end users. Wavelength deploys standard AWS compute and storage services to the edge of telecommunication carriers' 5G networks. Developers can extend an Amazon Virtual Private Cloud (VPC) to one or more Wavelength Zones, and then use AWS resources like Amazon Elastic Compute Cloud (EC2) instances to run applications that require ultra-low latency and a connection to AWS services in the Region.

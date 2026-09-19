@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/accelerating-automotive-software-development-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Accelerating Automotive Software Development on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/accelerating-automotive-software-development-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Accelerating Automotive Software Development on AWS
 
 ## Overview

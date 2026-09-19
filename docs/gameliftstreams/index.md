@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/gameliftstreams/index.html
 ---
 
+---
+title: 'Amazon GameLift Streams Documentation'
+canonical_url: https://docs.aws.amazon.com/gameliftstreams/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Amazon GameLift Streams Documentation
 
 Amazon GameLift Streams helps developers stream games at up to 1080p resolution and 60 frames-per-second to any device with a browser. Using AWS’s global footprint and game-optimized GPU instances, publishers can deploy and stream game content in minutes, without modifications, and players can start gaming in seconds without perceivable lag or having to wait for installs.

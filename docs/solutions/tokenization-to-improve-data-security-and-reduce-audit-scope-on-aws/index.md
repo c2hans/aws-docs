@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/tokenization-to-improve-data-security-and-reduce-audit-scope-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Tokenization to Improve Data Security and Reduce Audit Scope on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/tokenization-to-improve-data-security-and-reduce-audit-scope-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Tokenization to Improve Data Security and Reduce Audit Scope on AWS
 
 ## Overview

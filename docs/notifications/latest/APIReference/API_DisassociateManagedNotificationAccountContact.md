@@ -26,7 +26,7 @@ The request uses the following URI parameters.
 
  ** [contactIdentifier](#API_DisassociateManagedNotificationAccountContact_RequestSyntax) **   <a name="Notifications-DisassociateManagedNotificationAccountContact-request-uri-contactIdentifier"></a>
 The unique value of an Account Contact Type to associate with the `ManagedNotificationConfiguration`.
-Valid Values: `ACCOUNT_PRIMARY | ACCOUNT_ALTERNATE_BILLING | ACCOUNT_ALTERNATE_OPERATIONS | ACCOUNT_ALTERNATE_SECURITY`
+Valid Values: `ACCOUNT_PRIMARY | ACCOUNT_ALTERNATE_BILLING | ACCOUNT_ALTERNATE_OPERATIONS | ACCOUNT_ALTERNATE_SECURITY | ACCOUNT_PRIMARY_PHONE`
 Required: Yes
 
 ## Request Body
@@ -37,7 +37,7 @@ The request accepts the following data in JSON format.
  ** [managedNotificationConfigurationArn](#API_DisassociateManagedNotificationAccountContact_RequestSyntax) **   <a name="Notifications-DisassociateManagedNotificationAccountContact-request-managedNotificationConfigurationArn"></a>
 The Amazon Resource Name (ARN) of the `ManagedNotificationConfiguration` to associate with the Account Contact.
 Type: String
-Pattern: `arn:[-.a-z0-9]{1,63}:notifications::[0-9]{12}:managed-notification-configuration/category/[a-zA-Z0-9\-]{3,64}/sub-category/[a-zA-Z0-9\-]{3,64}`
+Pattern: `arn:[a-z-]{3,10}:notifications::[0-9]{12}:managed-notification-configuration/category/[a-zA-Z0-9\-]{3,64}/sub-category/[a-zA-Z0-9\-]{3,64}`
 Required: Yes
 
 ## Response Syntax

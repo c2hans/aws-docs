@@ -113,7 +113,18 @@ You are responsible for the cost of the AWS services used while running this Gui
 1.  On the **Specify stack details** page, assign a name to your Guidance stack. For information about naming character limitations, refer to [IAM and AWS STS quotas](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-limits.html) in the *AWS Identity and Access Management User Guide*.
 
 1.  Under **Parameters**, review the parameters for this Guidance template and modify them as necessary. This Guidance uses the following default values.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/data-transfer-hub/step-1.-option-2-launch-the-stack-in-aws-china-regions.html)
+
+<table>
+<thead>
+  <tr><th> Parameter </th><th> Default </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td> OidcProvider </td><td> {{&lt;Requires input&gt;}} </td><td> Refers to the Issuer shown in the OIDC application configuration. </td></tr>
+  <tr><td> OidcClientId </td><td> {{&lt;Requires input&gt;}} </td><td> Refers to the App ID shown in the OIDC application configuration. </td></tr>
+  <tr><td> OidcCustomerDomain </td><td> {{&lt;Requires input&gt;}} </td><td> Refers to the customer domain that has completed ICP registration in China, not the subdomain provided by Authing. It must start with <code>https://</code>. </td></tr>
+  <tr><td> AdminEmail </td><td> {{&lt;Requires input&gt;}} </td><td> Refers to the email for receiving task status alarm. </td></tr>
+</tbody>
+</table>
 
 1.  Choose **Next**.
 

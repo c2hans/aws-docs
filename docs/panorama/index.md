@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/panorama/index.html
 ---
 
+---
+title: 'AWS Panorama Documentation'
+canonical_url: https://docs.aws.amazon.com/panorama/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Panorama Documentation
 
 With AWS Panorama, companies can use compute power at the edge, without requiring video streamed to the cloud, to improve their operations by automating monitoring and visual inspection tasks like evaluating manufacturing quality, finding bottlenecks in industrial processes, and assessing worker safety within their facilities.

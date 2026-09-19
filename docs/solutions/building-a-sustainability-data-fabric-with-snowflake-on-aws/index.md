@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/building-a-sustainability-data-fabric-with-snowflake-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Building a Sustainability Data Fabric with Snowflake on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/building-a-sustainability-data-fabric-with-snowflake-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Building a Sustainability Data Fabric with Snowflake on AWS
 
 ## Overview

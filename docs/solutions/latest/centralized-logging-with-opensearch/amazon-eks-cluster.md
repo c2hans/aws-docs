@@ -42,9 +42,33 @@ You have created a log source for the log analytics pipeline. Now you are ready 
 
 1. In the **Buffer** section, choose **S3** or **Kinesis Data Streams**. If you don’t want the buffer layer, choose **None**. Refer to the [Log Buffer](solution-overview.md#concepts) for more information about choosing the appropriate buffer layer.
    + Amazon S3 buffer parameters
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/amazon-eks-cluster.html)
+
+<table>
+<thead>
+  <tr><th>Parameter</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td>S3 Bucket</td><td> <i>A log bucket will be created by the solution.</i> </td><td>You can also select a bucket to store the log data.</td></tr>
+  <tr><td>S3 Bucket Prefix</td><td> <code>AppLogs/&lt;index-prefix&gt;/year=%Y/month=%m/day=%d</code> </td><td>The log agent appends the prefix when delivering the log files to the S3 bucket.</td></tr>
+  <tr><td>Buffer size</td><td> <code>50 MiB</code> </td><td>The maximum size of log data cached at the log agent side before delivering to Amazon S3. For more information, see <a href="https://docs.aws.amazon.com/firehose/latest/dev/basic-deliver.html#frequency">Data Delivery Frequency</a>.</td></tr>
+  <tr><td>Buffer interval</td><td> <code>60 seconds</code> </td><td>The maximum interval of the log agent to deliver logs to Amazon S3. For more information, see <a href="https://docs.aws.amazon.com/firehose/latest/dev/basic-deliver.html#frequency">Data Delivery Frequency</a>.</td></tr>
+  <tr><td>Compression for data records</td><td> <code>Gzip</code> </td><td>The log agent compresses records before delivering them to the S3 bucket.</td></tr>
+</tbody>
+</table>
+
    + Kinesis Data Streams buffer parameters
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/amazon-eks-cluster.html)
+
+<table>
+<thead>
+  <tr><th>Parameter</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td>Shard number</td><td> {{&lt;Requires input&gt;}} </td><td>The number of shards of the Kinesis Data Streams. Each shard can have up to 1,000 records per second and total data write rate of 1MB per second.</td></tr>
+  <tr><td>Enable auto scaling</td><td> <code>No</code> </td><td>This solution monitors the utilization of Kinesis Data Streams every 5 minutes, and scales in/out the number of shards automatically. The solution will scale in/out for a maximum of 8 times within 24 hours.</td></tr>
+  <tr><td>Maximum Shard number</td><td> {{&lt;Requires input&gt;}} </td><td>Required if auto scaling is enabled. The maximum number of shards.</td></tr>
+</tbody>
+</table>
+
 **Important**
 You may observe duplicate logs in OpenSearch if a threshold error occurs in Kinesis Data Streams (KDS). This is because the Fluent Bit log agent uploads logs in [chunk](https://docs.fluentbit.io/manual/administration/buffering-and-storage#chunks-memory-filesystem-and-backpressure) (contains multiple records), and will retry the chunk if upload failed. Each KDS shard can support up to 1,000 records per second for writes, up to a maximum total data write rate of 1 MB per second. Estimate your log volume and choose an appropriate shard number.
 
@@ -95,7 +119,18 @@ You have created a log source for the log analytics pipeline. Now you are ready 
 
 1. In the **Buffer** section, configure Amazon S3 buffer parameters.
    + Amazon S3 buffer parameters
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/amazon-eks-cluster.html)
+
+<table>
+<thead>
+  <tr><th>Parameter</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td>S3 Bucket</td><td> <i>A log bucket will be created by the solution.</i> </td><td>You can also select a bucket to store the log data.</td></tr>
+  <tr><td>Buffer size</td><td> <code>50 MiB</code> </td><td>The maximum size of log data cached at the log agent side before delivering to Amazon S3. For more information, see <a href="https://docs.aws.amazon.com/firehose/latest/dev/basic-deliver.html#frequency">Data Delivery Frequency</a>.</td></tr>
+  <tr><td>Buffer interval</td><td> <code>60 seconds</code> </td><td>The maximum interval of the log agent to deliver logs to Amazon S3. For more information, see <a href="https://docs.aws.amazon.com/firehose/latest/dev/basic-deliver.html#frequency">Data Delivery Frequency</a>.</td></tr>
+  <tr><td>Compression for data records</td><td> <code>Gzip</code> </td><td>The log agent compresses records before delivering them to the S3 bucket.</td></tr>
+</tbody>
+</table>
 
 1. Choose **Next**.
 

@@ -24,7 +24,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[AudioGroupId](#cfn-medialive-channel-mediapackagev2destinationsettings-audiogroupid)" : {{String}},
   "[AudioRenditionSets](#cfn-medialive-channel-mediapackagev2destinationsettings-audiorenditionsets)" : {{String}},
   "[HlsAutoSelect](#cfn-medialive-channel-mediapackagev2destinationsettings-hlsautoselect)" : {{String}},
-  "[HlsDefault](#cfn-medialive-channel-mediapackagev2destinationsettings-hlsdefault)" : {{String}}
+  "[HlsDefault](#cfn-medialive-channel-mediapackagev2destinationsettings-hlsdefault)" : {{String}},
+  "[OutputUsage](#cfn-medialive-channel-mediapackagev2destinationsettings-outputusage)" : {{[ String, ... ]}}
 }
 ```
 
@@ -36,6 +37,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   [AudioRenditionSets](#cfn-medialive-channel-mediapackagev2destinationsettings-audiorenditionsets): {{String}}
   [HlsAutoSelect](#cfn-medialive-channel-mediapackagev2destinationsettings-hlsautoselect): {{String}}
   [HlsDefault](#cfn-medialive-channel-mediapackagev2destinationsettings-hlsdefault): {{String}}
+  [OutputUsage](#cfn-medialive-channel-mediapackagev2destinationsettings-outputusage): {{
+    - String}}
 ```
 
 ## Properties
@@ -63,4 +66,15 @@ Specifies whether MediaPackage should set this output as the auto-select renditi
 Specifies whether MediaPackage should set this output as the default rendition in the HLS manifest. YES means this must be the default. NO means this should never be the default. OMIT means MediaPackage decides what to set on this rendition. When you consider all the renditions, you can set zero or one renditions to YES, zero or more renditions to NO (but not all), and zero, some, or all to OMIT.
 *Required*: No
 *Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`OutputUsage`  <a name="cfn-medialive-channel-mediapackagev2destinationsettings-outputusage"></a>
+A list of usage tags that declare how this MediaPackage V2 output participates in multiview. Valid values:
++ `MULTIVIEW_EQUAL_SIZE_VIEW` – The output is one of several equally sized views in the multiview layout.
++ `MULTIVIEW_PRIMARY_VIEW` – The output is the primary view in the multiview layout.
++ `MULTIVIEW_SECONDARY_VIEW` – The output is a secondary view in the multiview layout.
+Leave this field empty (the default) if the output has no multiview role.
+If any video-carrying MediaPackage V2 output in an output group specifies a multiview value, then every video-carrying MediaPackage V2 output in that group must also specify a multiview value. Put standalone video outputs in a separate output group.
+*Required*: No
+*Type*: Array of String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -20,7 +20,15 @@ source_url: https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws-
 1.  On the **Specify stack details** page, assign a name to your solution stack. For information about naming character limitations, see [IAM and AWS STS quotas, name requirements, and character limits](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-limits.html) in the *AWS Identity and Access Management User Guide*.
 
 1.  Under **Parameters**, review the parameters for this solution template and modify them as necessary. This solution uses the following default values.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws-foundation/launch-the-stack.html)
+
+<table>
+<thead>
+  <tr><th> Parameter </th><th> Default </th><th> Description </th></tr>
+</thead>
+<tbody>
+  <tr><td><b> Notification Email Address </b></td><td>{{&lt;Requires input&gt;}}</td><td> A valid email address to receive Amazon SNS notifications. </td></tr>
+</tbody>
+</table>
 
 1.  Select **Next**.
 

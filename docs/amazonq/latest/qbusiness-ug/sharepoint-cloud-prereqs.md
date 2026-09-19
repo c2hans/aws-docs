@@ -89,11 +89,29 @@ If you anticipate that you will be indexing several Sharepoint sites and would l
 
          The following tables summarize all the permissions your application should have.
          + If you're not using ACL, your application should have the permission:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/sharepoint-cloud-prereqs.html)
+
+<table>
+<tbody>
+  <tr><td><b>Microsoft Graph</b></td><td><b>Sharepoint</b></td></tr>
+  <tr><td>Notes.Read.All (Application) – Read all OneNote notebooks</td><td>AllSites.Read (Delegated) - Read items in all site collections</td></tr>
+  <tr><td>Sites.Read.All (Application) - Read items in all site collections</td><td></td></tr>
+</tbody>
+</table>
+
 **Note**
 Read.All and Sites.Read.All are required only if you want to crawl OneNote Documents.
          + If you're using ACL, your application should have the following permissions:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/sharepoint-cloud-prereqs.html)
+
+<table>
+<tbody>
+  <tr><td>Microsoft Graph</td><td>Sharepoint</td></tr>
+  <tr><td>GroupMember.Read.All (Application) – Read all group memberships</td><td>AllSites.Read (Delegated) – Read items in all site collections</td></tr>
+  <tr><td>Notes.Read.All (Application) – Read all OneNote notebooks</td><td></td></tr>
+  <tr><td>Sites.FullControl.All (Application) – Have full control of all site collections</td><td></td></tr>
+  <tr><td>Sites.Read.All (Application) – Read items in all site collections</td><td></td></tr>
+  <tr><td>User.Read.All (Application) – Read all users' full profiles</td><td></td></tr>
+</tbody>
+</table>
 
 1. Create a client secret for your Sharepoint App:
 
@@ -153,11 +171,30 @@ If you anticipate that you will be indexing a manageable number of Sharepoint si
 
          The following tables summarize all the permissions your application should have.
          + If you're not using ACL, your application should have the permissions:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/sharepoint-cloud-prereqs.html)
+
+<table>
+<tbody>
+  <tr><td><b>Microsoft Graph</b></td><td><b>Sharepoint</b></td></tr>
+  <tr><td>Notes.Read.All (Application) – Read all OneNote notebooks</td><td>AllSites.Read (Delegated) - Read items in all site collections</td></tr>
+  <tr><td>Site.Read.All (Application) - Read items in all site collections</td><td></td></tr>
+</tbody>
+</table>
+
 **Note**
 Read.All and Sites.Read.All are required only if you want to crawl OneNote Documents.
            + If you're using ACL, your application should have the following permissions:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/sharepoint-cloud-prereqs.html)
+
+<table>
+<tbody>
+  <tr><td>Microsoft Graph</td><td>Sharepoint</td></tr>
+  <tr><td>GroupMember.Read.All (Application) – Read all group memberships</td><td>AllSites.Read (Delegated) – Read items in all site collections</td></tr>
+  <tr><td>Notes.Read.All (Application) – Read all OneNote notebooks</td><td></td></tr>
+  <tr><td>Sites.FullControl.All (Application) – Have full control of all site collections</td><td></td></tr>
+  <tr><td>Sites.Read.All (Application) – Read items in all site collections</td><td></td></tr>
+  <tr><td>User.Read.All (Application) – Read all users' full profiles</td><td></td></tr>
+  <tr><td>Sites.Selected - Have control of selected sites</td><td></td></tr>
+</tbody>
+</table>
 
 1. Create a client secret for your Sharepoint App:
 
@@ -361,11 +398,30 @@ To register the app:
 
       The following tables summarize all the permissions your application should have.
       + If you're not using ACL, your application should have the permissions:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/sharepoint-cloud-prereqs.html)
+
+<table>
+<tbody>
+  <tr><td><b>Microsoft Graph</b></td><td><b>Sharepoint</b></td></tr>
+  <tr><td>Notes.Read.All (Application) – Read all OneNote notebooks</td><td>AllSites.Read (Delegated) - Read items in all site collections</td></tr>
+  <tr><td>Site.Read.All (Application) - Read items in all site collections</td><td></td></tr>
+</tbody>
+</table>
+
 **Note**
 Note.Read.All and Sites.Read.All are required only if you want to crawl OneNote Documents.
       + If you're using ACL, your application should have the following permissions:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/sharepoint-cloud-prereqs.html)
+
+<table>
+<tbody>
+  <tr><td><b>Microsoft Graph</b></td><td><b>Sharepoint</b></td></tr>
+  <tr><td>GroupMember.Read.All (Application) – Read all group memberships</td><td>AllSites.Read (Delegated) – Read items in all site collections</td></tr>
+  <tr><td>Notes.Read.All (Application) – Read all OneNote notebooks</td><td></td></tr>
+  <tr><td>Sites.FullControl.All (Application) – Have full control of all site collections</td><td></td></tr>
+  <tr><td>Sites.Read.All (Application) – Read items in all site collections</td><td></td></tr>
+  <tr><td>User.Read.All (Application) – Read all users' full profiles</td><td></td></tr>
+</tbody>
+</table>
+
 **Note**
 GroupMember.Read.All and User.Read.All are required only if Identity crawler is activated.
 
@@ -419,11 +475,30 @@ For organizations planning to index a manageable number of Sharepoint sites with
 
       The following tables summarize all the permissions your application should have.
       + If you're not using ACL, your application should have the permissions:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/sharepoint-cloud-prereqs.html)
+
+<table>
+<tbody>
+  <tr><td><b>Microsoft Graph</b></td><td><b>Sharepoint</b></td></tr>
+  <tr><td>Notes.Read.All (Application) – Read all OneNote notebooks</td><td>Sites.Selected (Application) - Read items in selected site collections</td></tr>
+  <tr><td>Sites.Selected (Application) - Read items in selected site collections</td><td></td></tr>
+</tbody>
+</table>
+
 **Note**
  Note.Read.All and Sites.Read.All are required only if you want to crawl OneNote Documents.
       + If you're using ACL, your application should have the following permissions:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/sharepoint-cloud-prereqs.html)
+
+<table>
+<tbody>
+  <tr><td>Microsoft Graph</td><td>Sharepoint</td></tr>
+  <tr><td>GroupMember.Read.All (Application) – Read all group memberships</td><td>AllSites.Read (Delegated) – Read items in all site collections</td></tr>
+  <tr><td>Notes.Read.All (Application) – Read all OneNote notebooks</td><td></td></tr>
+  <tr><td>Sites.FullControl.All (Application) – Have full control of all site collections</td><td></td></tr>
+  <tr><td>Sites.Read.All (Application) – Read items in all site collections</td><td></td></tr>
+  <tr><td>User.Read.All (Application) – Read all users' full profiles</td><td></td></tr>
+</tbody>
+</table>
+
 **Note**
  Note. GroupMember.Read.All and User.Read.All are required only if Identity crawler is activated.
 
@@ -565,7 +640,16 @@ For organizations planning to index a manageable number of Sharepoint sites with
 + Copied the tenant ID of your Microsoft SharePoint (Online) instance. For details on how to find your tenant ID, see [Find your Microsoft 365 tenant ID](https://learn.microsoft.com/en-us/sharepoint/find-your-office-365-tenant-id) on the Microsoft website.
 + Noted your SharePoint (Online) client ID and client secret generated while granting permission to SharePoint App-Only, and your Client ID and Client secret generated after SharePoint (Online) Azure App registration.
 + **If you're crawling OneNote documents and using **Identity crawler****, added the following permissions:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/sharepoint-cloud-prereqs.html)
+
+<table>
+<thead>
+  <tr><th><b>Microsoft Graph</b></th><th></th></tr>
+</thead>
+<tbody>
+  <tr><td> <ul><li> GroupMember.Read.All (Application) – Read all group memberships </li><li> Notes.Read.All (Application) – Read all OneNote notebooks </li><li> Sites.Read.All (Application) – Read items in all site collections </li><li> User.Read.All (Application) – Read all users' full profiles </li></ul> </td><td></td></tr>
+</tbody>
+</table>
+
 **Note**
 No API permissions are required for crawling entities using SharePoint (Online) **App-Only authentication**.
 

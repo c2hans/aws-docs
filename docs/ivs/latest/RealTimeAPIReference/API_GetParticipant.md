@@ -35,7 +35,7 @@ The request accepts the following data in JSON format.
 Unique identifier for the participant. This is assigned by IVS and returned by [CreateParticipantToken](API_CreateParticipantToken.md).
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 64.
-Pattern: `[a-zA-Z0-9-]*`
+Pattern: `[a-zA-Z0-9-_]*`
 Required: Yes
 
  ** [sessionId](#API_GetParticipant_RequestSyntax) **   <a name="ivsrealtimeeapireference-GetParticipant-request-sessionId"></a>
@@ -106,20 +106,14 @@ Type: [Participant](API_Participant.md) object
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** AccessDeniedException **
-
- ** exceptionMessage **
 User does not have sufficient access to perform this action.
 HTTP Status Code: 403
 
  ** ResourceNotFoundException **
-
- ** exceptionMessage **
 Request references a resource which does not exist.
 HTTP Status Code: 404
 
  ** ValidationException **
-
- ** exceptionMessage **
 The input fails to satisfy the constraints specified by an AWS service.
 HTTP Status Code: 400
 

@@ -182,6 +182,8 @@ All render engines are automatically detected and configured by the Maya integra
 ## Maya plugins
 <a name="maya-plugins"></a>
 
+The following table lists renderer plugins provided as conda packages. For custom plugin delivery options, see [Use custom plugins with Deadline Cloud](custom-plugins.md).
+
 | Plugin | Plugin Versions | Conda Recipe Provided | SMF Conda Package Provided | Usage-based Licensing Support |
 | --- | --- | --- | --- | --- |
 | Arnold (MtoA) | 2024.5.3, 2025.5.4, 2026.5.5 | Yes | Yes | Yes |

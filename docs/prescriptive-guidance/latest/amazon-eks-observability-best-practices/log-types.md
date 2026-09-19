@@ -37,7 +37,11 @@ To implement logging for Fargate nodes in Amazon EKS, use these tools:
 
 Collecting logs from Kubernetes components such as the API server, scheduler, and controller manager in Amazon EKS requires a slightly different approach from application logging. These components run as part of the Amazon EKS control plane, which is managed by AWS. Here's how you can collect and access these logs:
 + **Enable control plane logging: **You can enable control plane logging for your EKS cluster through the AWS Management Console, [AWS Command Line Interface (AWS CLI)](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html), or infrastructure as code (IaC) tools such as [AWS CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html) or Terraform. When you enable control plane logging, the logs are sent to CloudWatch Logs. You can view them in the CloudWatch console in the `/aws/eks/<cluster-name>/cluster` log group. Within this log group, each control plane component has its own log stream as follows:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-eks-observability-best-practices/log-types.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
   To view logs for a specific component, navigate to the cluster log group and filter by the target log stream name.
 + **Use CloudWatch Logs Insights**: You can use [CloudWatch Logs Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AnalyzingLogData.html) to perform complex queries on your logs.

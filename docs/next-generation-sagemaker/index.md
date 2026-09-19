@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/next-generation-sagemaker/index.html
 ---
 
+---
+title: 'Amazon SageMaker Documentation'
+canonical_url: https://docs.aws.amazon.com/next-generation-sagemaker/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon SageMaker Documentation
 
 Amazon SageMaker is the center for all your data, analytics, and AI.

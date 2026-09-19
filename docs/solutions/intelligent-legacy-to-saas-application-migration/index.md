@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/intelligent-legacy-to-saas-application-migration/index.html
 ---
 
+---
+title: 'Guidance for Intelligent Legacy to SaaS Application Migration'
+canonical_url: https://docs.aws.amazon.com/solutions/intelligent-legacy-to-saas-application-migration/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Intelligent Legacy to SaaS Application Migration
 
 ## Overview

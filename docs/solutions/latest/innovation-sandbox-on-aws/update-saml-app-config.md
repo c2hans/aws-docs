@@ -24,7 +24,17 @@ After deploying the Data stack, update the SAML 2.0 application you created earl
 1. Choose **Actions**, then choose **Edit configuration**.
 
 1. Under **Application metadata**, update the following fields:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/update-saml-app-config.html)
+
+<table>
+<thead>
+  <tr><th>Field</th><th>Value</th></tr>
+</thead>
+<tbody>
+  <tr><td>Application ACS URL</td><td>The <code>CognitoAcsUrl</code> value from the Data stack outputs (for example, <code>https://&lt;namespace&gt;-isb.auth.&lt;region&gt;.amazoncognito.com/saml2/idpresponse</code>)</td></tr>
+  <tr><td>Application SAML audience</td><td>The <code>CognitoAudience</code> value from the Data stack outputs (for example, <code>urn:amazon:cognito:sp:&lt;user-pool-id&gt;</code>)</td></tr>
+  <tr><td>Application start URL</td><td>The solution’s web UI URL — the <code>CloudFrontDistributionUrl</code> value from the Compute stack outputs, or your custom domain (for example, <code>https://isb.example.com</code>). This URL is where the AWS access portal sends users when they start sign-in from the portal.</td></tr>
+</tbody>
+</table>
 
 1. Choose **Submit** to save the updated configuration.
 

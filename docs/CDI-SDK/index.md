@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/CDI-SDK/index.html
 ---
 
+---
+title: 'AWS Cloud Digital Interface Software Development Kit'
+canonical_url: https://docs.aws.amazon.com/CDI-SDK/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Cloud Digital Interface Software Development Kit
 
 The AWS Cloud Digital Interface (CDI) SDK provides customers with the ability to migrate timing-critical uncompressed video workflows to the cloud, unlocking the agility and scalability of AWS deployments without the need to compromise on quality or latency.

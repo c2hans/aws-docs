@@ -23,7 +23,22 @@ You are also responsible for making your own independent assessment of the Third
 1. For **Select Workstation Management module**, select **Gateway with Amazon DCV**, and choose **Next**.
 
 1. For **Configure workstation management settings**, review the parameters for this module and modify them as necessary. This module uses the following default values.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/enable-leostream-gateway-module.html)
+
+<table>
+<thead>
+  <tr><th> <b>Parameter</b> </th><th> <b>Default</b> </th><th> <b>Description</b> </th></tr>
+</thead>
+<tbody>
+  <tr><td>Fully Qualified Domain Name (optional)</td><td> <i>Optional input</i> </td><td>Specify the FQDN that will be routed to the gateways to access the connection broker and workstations. (This parameter is required if you specified a <b>Certificate ID</b> or <b>Route 53 Hosted Zone ID</b>).</td></tr>
+  <tr><td>Certificate ID (optional)</td><td> <i>Optional input</i> </td><td>Specify the Certificate ID or ARN imported from AWS Certificate Manager to validate your FQDN. If you leave this field blank, the module creates a self-signed certificate from the domain that you previously provided.  <b>Note</b>: See <a href="https://docs.aws.amazon.c%20om/acm/latest/userguide/acm-public-cer%20tificates.html#request-public-console">Get certificates ready in AWS Certificate Manager</a> for more information on how to set up a certificate. </td></tr>
+  <tr><td>Route53 Hosted Zone ID (optional)</td><td> <i>Optional input</i> </td><td>Specify an Amazon Route 53 public hosted zone ID if you want the module to add a record routing your FQDN to the gateways. Leave this blank if you aren’t using Amazon Route 53 to route your domain (including if you didn’t specify a FQDN), or you don’t want the record created for you (you will need to create a record pointing to the <a href="https://aws.amazon.com/global-accelerator/">AWS Global Accelerator</a>).</td></tr>
+  <tr><td>Cluster Instance Type</td><td> <code>m5.xlarge</code> </td><td>Amazon EC2 instance type to use for Leostream gateway cluster instances.</td></tr>
+  <tr><td>Min Cluster Instances</td><td> <code>2</code> </td><td>The minimum number of gateway instances allowed in the gateway cluster.</td></tr>
+  <tr><td>Max Cluster Instances</td><td> <code>4</code> </td><td>The maximum number of gateway instances allowed in the gateway cluster.</td></tr>
+  <tr><td>Port Range Bottom</td><td> <code>20001</code> </td><td>Bottom (starting) port of random port range used by the gateway to communicate over Amazon DCV. Provide an integer value between 1024 and 65535 for this field.</td></tr>
+  <tr><td>Port Range Top</td><td> <code>23000</code> </td><td>Top (ending) port of random port range used by the gateway to communicate over Amazon DCV. Provide an integer value between 1024 and 65535 for this field, ensuring that it is higher than the value specified for the <b>Port Range Bottom</b>.</td></tr>
+</tbody>
+</table>
 
 1. For **Configure Tag Settings**, review the tags for this module and modify them as necessary. By default, this module uses tags defined in the main solution stack.
 

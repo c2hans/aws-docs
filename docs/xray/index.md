@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/xray/index.html
 ---
 
+---
+title: 'AWS X-Ray Documentation'
+canonical_url: https://docs.aws.amazon.com/xray/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS X-Ray Documentation
 
 AWS X-Ray makes it easy for developers to analyze the behavior of their distributed applications by providing request tracing, exception collection, and profiling capabilities.

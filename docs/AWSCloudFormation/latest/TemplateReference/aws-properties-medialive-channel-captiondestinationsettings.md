@@ -22,10 +22,10 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[AribDestinationSettings](#cfn-medialive-channel-captiondestinationsettings-aribdestinationsettings)" : {{Json}},
-  "[BurnInDestinationSettings](#cfn-medialive-channel-captiondestinationsettings-burnindestinationsettings)" : {{BurnInDestinationSettings}},
-  "[DvbSubDestinationSettings](#cfn-medialive-channel-captiondestinationsettings-dvbsubdestinationsettings)" : {{DvbSubDestinationSettings}},
+  "[BurnInDestinationSettings](#cfn-medialive-channel-captiondestinationsettings-burnindestinationsettings)" : {{BurnInDvbSubDestinationSettings}},
+  "[DvbSubDestinationSettings](#cfn-medialive-channel-captiondestinationsettings-dvbsubdestinationsettings)" : {{BurnInDvbSubDestinationSettings}},
   "[EbuTtDDestinationSettings](#cfn-medialive-channel-captiondestinationsettings-ebuttddestinationsettings)" : {{EbuTtDDestinationSettings}},
-  "[EmbeddedDestinationSettings](#cfn-medialive-channel-captiondestinationsettings-embeddeddestinationsettings)" : {{Json}},
+  "[EmbeddedDestinationSettings](#cfn-medialive-channel-captiondestinationsettings-embeddeddestinationsettings)" : {{EmbeddedDestinationSettings}},
   "[EmbeddedPlusScte20DestinationSettings](#cfn-medialive-channel-captiondestinationsettings-embeddedplusscte20destinationsettings)" : {{Json}},
   "[RtmpCaptionInfoDestinationSettings](#cfn-medialive-channel-captiondestinationsettings-rtmpcaptioninfodestinationsettings)" : {{Json}},
   "[Scte20PlusEmbeddedDestinationSettings](#cfn-medialive-channel-captiondestinationsettings-scte20plusembeddeddestinationsettings)" : {{Json}},
@@ -43,12 +43,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [AribDestinationSettings](#cfn-medialive-channel-captiondestinationsettings-aribdestinationsettings): {{Json}}
   [BurnInDestinationSettings](#cfn-medialive-channel-captiondestinationsettings-burnindestinationsettings): {{
-    BurnInDestinationSettings}}
+    BurnInDvbSubDestinationSettings}}
   [DvbSubDestinationSettings](#cfn-medialive-channel-captiondestinationsettings-dvbsubdestinationsettings): {{
-    DvbSubDestinationSettings}}
+    BurnInDvbSubDestinationSettings}}
   [EbuTtDDestinationSettings](#cfn-medialive-channel-captiondestinationsettings-ebuttddestinationsettings): {{
     EbuTtDDestinationSettings}}
-  [EmbeddedDestinationSettings](#cfn-medialive-channel-captiondestinationsettings-embeddeddestinationsettings): {{Json}}
+  [EmbeddedDestinationSettings](#cfn-medialive-channel-captiondestinationsettings-embeddeddestinationsettings): {{
+    EmbeddedDestinationSettings}}
   [EmbeddedPlusScte20DestinationSettings](#cfn-medialive-channel-captiondestinationsettings-embeddedplusscte20destinationsettings): {{Json}}
   [RtmpCaptionInfoDestinationSettings](#cfn-medialive-channel-captiondestinationsettings-rtmpcaptioninfodestinationsettings): {{Json}}
   [Scte20PlusEmbeddedDestinationSettings](#cfn-medialive-channel-captiondestinationsettings-scte20plusembeddeddestinationsettings): {{Json}}
@@ -73,13 +74,13 @@ The configuration of one ARIB captions encode in the output.
 `BurnInDestinationSettings`  <a name="cfn-medialive-channel-captiondestinationsettings-burnindestinationsettings"></a>
 The configuration of one burn-in captions encode in the output.
 *Required*: No
-*Type*: [BurnInDestinationSettings](aws-properties-medialive-channel-burnindestinationsettings.md)
+*Type*: [BurnInDvbSubDestinationSettings](aws-properties-medialive-channel-burnindvbsubdestinationsettings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DvbSubDestinationSettings`  <a name="cfn-medialive-channel-captiondestinationsettings-dvbsubdestinationsettings"></a>
 The configuration of one DVB Sub captions encode in the output.
 *Required*: No
-*Type*: [DvbSubDestinationSettings](aws-properties-medialive-channel-dvbsubdestinationsettings.md)
+*Type*: [BurnInDvbSubDestinationSettings](aws-properties-medialive-channel-burnindvbsubdestinationsettings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `EbuTtDDestinationSettings`  <a name="cfn-medialive-channel-captiondestinationsettings-ebuttddestinationsettings"></a>
@@ -91,7 +92,7 @@ Settings for EBU-TT captions in the output.
 `EmbeddedDestinationSettings`  <a name="cfn-medialive-channel-captiondestinationsettings-embeddeddestinationsettings"></a>
 The configuration of one embedded captions encode in the output.
 *Required*: No
-*Type*: Json
+*Type*: [EmbeddedDestinationSettings](aws-properties-medialive-channel-embeddeddestinationsettings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `EmbeddedPlusScte20DestinationSettings`  <a name="cfn-medialive-channel-captiondestinationsettings-embeddedplusscte20destinationsettings"></a>

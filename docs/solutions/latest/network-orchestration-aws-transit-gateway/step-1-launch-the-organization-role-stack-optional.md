@@ -18,7 +18,15 @@ Follow the step-by-step instructions in this section to configure and deploy the
 1. On the **Specify stack details** page, assign a name to your solution stack. For information about naming character limitations, see [IAM and AWS STS quotas](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-limits.html) in the *AWS Identity and Access Management User Guide*.
 
 1. For **Parameters**, review the parameters for the template and modify them as necessary. This stack uses the following default values.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/network-orchestration-aws-transit-gateway/step-1-launch-the-organization-role-stack-optional.html)
+
+<table>
+<thead>
+  <tr><th>Parameter</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td>HubAccount</td><td> {{&lt;Requires input&gt;}} </td><td>The account ID for the hub account.</td></tr>
+</tbody>
+</table>
 
 1. Choose **Next**.
 

@@ -149,6 +149,7 @@ We will now look at the list of APIs supported by each model.
 
 | Model name | Invoke | Converse | Chat Completions | Responses | Messages |
 | --- | --- | --- | --- | --- | --- |
+| [Kimi K3](model-card-moonshot-ai-kimi-k3.md)\* | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
 | [Kimi K2 Thinking](model-card-moonshot-ai-kimi-k2-thinking.md)\* | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
 | [Kimi K2.5](model-card-moonshot-ai-kimi-k2-5.md)\* | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
 
@@ -165,7 +166,7 @@ We will now look at the list of APIs supported by each model.
 ## OpenAI
 <a name="api-compatibility-openai"></a>
 
-You can use all models on this page with both the Responses API and the Chat Completions API on `bedrock-mantle`. See each model card for details.
+Use the `bedrock-runtime` endpoint for new applications. API support can differ between `bedrock-runtime` and `bedrock-mantle`, so this table summarizes a model's capabilities across endpoints and doesn't imply that each supported API is available on both endpoints. Check the endpoint-specific API tables on each model card before choosing a model. For example, GPT OSS models support Chat Completions, Converse, and Invoke on `bedrock-runtime`, but the Responses API for those models is available only on `bedrock-mantle`.
 
 | Model name | Invoke | Converse | Chat Completions | Responses | Messages |
 | --- | --- | --- | --- | --- | --- |

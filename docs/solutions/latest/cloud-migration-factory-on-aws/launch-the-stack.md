@@ -28,7 +28,29 @@ When deployed in Public and Public with WAF deployment types, the solution also 
 1. On the **Specify stack details** page, assign a name to your solution stack.
 
 1. Under **Parameters**, review the parameters for the template and modify them as necessary. This solution uses the following default values.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/launch-the-stack.html)
+
+<table>
+<thead>
+  <tr><th>Parameter</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td> <b>Application name</b> </td><td> <code>migration-factory</code> </td><td>Enter a prefix to the AWS CloudFormation <b>Physical ID</b> that identifies the AWS services deployed by this solution.NOTE: The <b>Application name</b> is used as a prefix to identify the AWS resources that are deployed: {{&lt;application-name&gt;}}-{{&lt;environment-name&gt;}}-{{&lt;aws-resource&gt;}}. If you change the default name, we recommend that you keep the combined prefix labels to 40 characters or less to ensure that you don’t exceed character limitations.</td></tr>
+  <tr><td> <b>Environment name</b> </td><td> <code>test</code> </td><td>Enter a name to identify the network environment where the solution is deployed. We recommend a descriptive name such as <code>test</code>, <code>dev</code>, or <code>prod</code>. NOTE: The <b>Environment name</b> is used as a prefix to identify the AWS resources that are deployed: {{&lt;application-name&gt;}}-{{&lt;environment-name&gt;}}-{{&lt;aws-resource&gt;}}. If changing the default name, we recommend that you keep the combined prefix labels to 40 characters or less to ensure that you do not exceed character limitations.</td></tr>
+  <tr><td> <b>Migration Tracker</b> </td><td> <code>true</code> </td><td>By default, the optional migration tracker dashboard is activated, but you can deactivate it by changing this parameter to <code>false</code>.</td></tr>
+  <tr><td> <b>Replatform EC2</b> </td><td> <code>true</code> </td><td>By default, the Replatform EC2 feature is activated, but you can deactivate it by changing this parameter to <code>false</code>.</td></tr>
+  <tr><td> <b>ServiceAccountEmail</b> </td><td> <code>serviceaccount@yourdomain.com</code> </td><td>Default service account email address, the migration factory automation scripts use this account to connect to the factory API.</td></tr>
+  <tr><td> <b>Allow additional identity provider to be configured in Cognito</b> </td><td> <code>false</code> </td><td>By default, the solution uses Amazon Cognito to create and manage access. Changing this parameter to <code>true</code> will configure the solution to allow external SAML identity providers to be added to Amazon Cognito and used to sign in.</td></tr>
+  <tr><td> <b>Deployment Type</b> </td><td> <code>Public</code> </td><td>By default, the deployment type is <code>Public</code>, and all Cloud Migration Factory endpoints are publicly accessible with user authentication.<br /> <b>Public with AWS WAF</b>: Access to CMF endpoints is restricted to customizable CIDR ranges. We recommend this option based on AWS security best practices.<br /> <b>Private</b>: All Cloud Migration Factory endpoints are accessible only from your VPC networks and the Cloud Migration Factory Web UI must be hosted on a private web server deployed separately.</td></tr>
+  <tr><td> <b>(Optional) Private Deployment Type Only</b> </td><td></td><td></td></tr>
+  <tr><td> <b>Full URL used to access web user interface</b> </td><td> <code>[not set]</code> </td><td>Required when <b>Deployment Type</b> is set to <code>Private</code>. Specify the migration factory web interface URL that will serve the static web content. Example https://cmf.yourdomain.local. <ul><li> Do not add a trailing forward slash to the URL, this will cause the web interface to fail when loading. <ul><li> In private deployments a web server is required to host the static content and needs to be deployed before deployment of the CloudFormation template. </li></ul> </li></ul> </td></tr>
+  <tr><td> <b>VPC ID to host API Gateway Endpoints</b> </td><td> <code>[not set]</code> </td><td>Required when <b>Deployment Type</b> is set to <code>Private</code>. Specify a single VPC ID where the private API Gateway endpoints will be created.</td></tr>
+  <tr><td> <b>Subnets to host API Gateway Interface Endpoints</b> </td><td> <code>[not set]</code> </td><td>Required when <b>Deployment Type</b> is set to <code>Private</code>. Specify a two Subnet IDs where the private API Gateway endpoints will be created. The Subnet IDs specified have to be within the VPC specified above.</td></tr>
+  <tr><td> <b>(Optional) Public with AWS WAF Deployment Type Only</b> </td><td></td><td></td></tr>
+  <tr><td> <b>Allowed CIDR</b> </td><td> <code>[not set]</code> </td><td>Required when <b>Deployment Type</b> is set to <code>Public with AWS WAF</code>. Specify two CIDR ranges from which the users and the automation server will be accessing the endpoints from. <ul><li> You must specify 2 CIDR ranges. </li><li> The IP address of the CMF automation server OR the outgoing NAT Gateway IP must be included in the allowed IP addresses. Without the internal IP of the CMF EC2 instance OR the NAT Gateway IP, the CMF automation scripts will fail to access the solution endpoints. </li><li> Once deployed, it is possible to add additional ranges and restrictions to the AWS WAF rules as required. </li></ul> </td></tr>
+  <tr><td> <b>WPM (Wave Planning Manager)</b> </td><td> <code>true</code> </td><td>By default, the Wave Planning Manager is deployed, but you can deactivate it by changing this parameter to <code>false</code>.</td></tr>
+  <tr><td> <b>Deploy Bedrock Guardrail</b> </td><td> <code>true</code> </td><td>By default, the Bedrock Guardrail is deployed, which help enforce security controls and compliance policies for your generative AI applications. Guardrails provide additional protection by filtering and monitoring content generated through Bedrock APIs. You can deactivate it by changing this parameter to <code>false</code>.</td></tr>
+</tbody>
+</table>
 
 1. Choose **Next**.
 

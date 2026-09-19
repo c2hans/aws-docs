@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[BufferMsec](#cfn-medialive-channel-srtoutputsettings-buffermsec)" : {{Integer}},
-  "[ContainerSettings](#cfn-medialive-channel-srtoutputsettings-containersettings)" : {{UdpContainerSettings}},
+  "[ContainerSettings](#cfn-medialive-channel-srtoutputsettings-containersettings)" : {{UdpMediaConnectRouterContainerSettings}},
   "[Destination](#cfn-medialive-channel-srtoutputsettings-destination)" : {{OutputLocationRef}},
   "[EncryptionType](#cfn-medialive-channel-srtoutputsettings-encryptiontype)" : {{String}},
   "[Latency](#cfn-medialive-channel-srtoutputsettings-latency)" : {{Integer}}
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [BufferMsec](#cfn-medialive-channel-srtoutputsettings-buffermsec): {{Integer}}
   [ContainerSettings](#cfn-medialive-channel-srtoutputsettings-containersettings): {{
-    UdpContainerSettings}}
+    UdpMediaConnectRouterContainerSettings}}
   [Destination](#cfn-medialive-channel-srtoutputsettings-destination): {{
     OutputLocationRef}}
   [EncryptionType](#cfn-medialive-channel-srtoutputsettings-encryptiontype): {{String}}
@@ -52,7 +52,7 @@ SRT output buffering in milliseconds. A higher value increases latency through t
 `ContainerSettings`  <a name="cfn-medialive-channel-srtoutputsettings-containersettings"></a>
 The container settings for the SRT output.
 *Required*: No
-*Type*: [UdpContainerSettings](aws-properties-medialive-channel-udpcontainersettings.md)
+*Type*: [UdpMediaConnectRouterContainerSettings](aws-properties-medialive-channel-udpmediaconnectroutercontainersettings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Destination`  <a name="cfn-medialive-channel-srtoutputsettings-destination"></a>

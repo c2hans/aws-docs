@@ -678,7 +678,19 @@ The topic to which the message was published.
 `payload`
 (Optional) The message payload as a blob.
 The following features are available for v2.10.0 and later of the [Greengrass nucleus](greengrass-nucleus-component.md) when using MQTT 5. These features are ignored when you are using MQTT 3.1.1. The following table lists the minimum version of the AWS IoT device SDK that you must use to access these features.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/ipc-iot-core-mqtt.html)
+
+<table>
+<thead>
+  <tr><th>SDK</th><th>Minimum version</th></tr>
+</thead>
+<tbody>
+  <tr><td><a href="https://github.com/aws/aws-iot-device-sdk-python-v2">AWS IoT Device SDK for Python v2</a></td><td>v1.15.0</td></tr>
+  <tr><td><a href="https://github.com/aws/aws-iot-device-sdk-java-v2">AWS IoT Device SDK for Java v2</a></td><td>v1.13.0</td></tr>
+  <tr><td><a href="https://github.com/aws/aws-iot-device-sdk-cpp-v2">AWS IoT Device SDK for C++ v2</a></td><td>v1.24.0</td></tr>
+  <tr><td><a href="https://github.com/aws/aws-iot-device-sdk-js-v2">AWS IoT Device SDK for JavaScript v2</a></td><td>v1.13.0</td></tr>
+</tbody>
+</table>
+
 `payloadFormat`
 (Optional) The format of the message payload. If you don't set the `payloadFormat`, the type is assumed to be `BYTES`. The enum has the following values:
 + `BYTES` – The content of the payload is a binary blob.

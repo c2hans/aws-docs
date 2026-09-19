@@ -1330,6 +1330,7 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/poli
 + [AWSWAFConsoleReadOnlyAccess](AWSWAFConsoleReadOnlyAccess.md)
 + [AWSWAFFullAccess](AWSWAFFullAccess.md)
 + [AWSWAFReadOnlyAccess](AWSWAFReadOnlyAccess.md)
++ [AWSWellArchitectedAgentOrganizationsServiceRolePolicy](AWSWellArchitectedAgentOrganizationsServiceRolePolicy.md)
 + [AWSWellArchitectedAgentResourceScanningServiceRolePolicy](AWSWellArchitectedAgentResourceScanningServiceRolePolicy.md)
 + [AWSWellArchitectedDiscoveryServiceRolePolicy](AWSWellArchitectedDiscoveryServiceRolePolicy.md)
 + [AWSWellArchitectedOrganizationsServiceRolePolicy](AWSWellArchitectedOrganizationsServiceRolePolicy.md)

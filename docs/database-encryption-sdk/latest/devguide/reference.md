@@ -33,7 +33,16 @@ The version of this `aws_dbe_head` field's format.
 
 **Signatures Enabled**
 Encodes whether ECDSA digital signatures are enabled for this record.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/reference.html)
+
+<table>
+<thead>
+  <tr><th>Byte value</th><th>Meaning</th></tr>
+</thead>
+<tbody>
+  <tr><td><code>0x01</code></td><td>ECDSA digital signatures enabled (default)</td></tr>
+  <tr><td><code>0x00</code></td><td>ECDSA digital signatures disabled</td></tr>
+</tbody>
+</table>
 
 **Record ID**
 A randomly generated 256-bit value that identifies the record. The Record ID:
@@ -42,7 +51,17 @@ A randomly generated 256-bit value that identifies the record. The Record ID:
 
 **Encrypt Legend**
 A serialized description of which authenticated fields were encrypted. The Encrypt Legend is used to determine what fields the decryption method should attempt to decrypt.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/reference.html)
+
+<table>
+<thead>
+  <tr><th>Byte value</th><th>Meaning</th></tr>
+</thead>
+<tbody>
+  <tr><td><code>0x65</code></td><td><code>ENCRYPT_AND_SIGN</code></td></tr>
+  <tr><td><code>0x73</code></td><td><code>SIGN_ONLY</code></td></tr>
+</tbody>
+</table>
+
 The Encrypt Legend is serialized as follows:
 
 1. Lexicographically by the byte sequence that represents their canonical path.
@@ -62,8 +81,23 @@ The number of encrypted data keys. It is a 1-byte value interpreted as a 8-bit u
 **Encrypted Data Keys**
 A sequence of encrypted data keys. The length of the sequence is determined by the number of encrypted data keys and the length of each. The sequence contains at least one encrypted data key.
 The following table describes the fields that form each encrypted data key. The bytes are appended in the order shown.
+
 **Encrypted Data Key Structure**
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/reference.html)
+
+<table>
+<thead>
+  <tr><th>Field</th><th>Length in bytes</th></tr>
+</thead>
+<tbody>
+  <tr><td><a href="#data-key-provider-id-length">Key Provider ID Length</a></td><td>2</td></tr>
+  <tr><td><a href="#data-key-provider-id">Key Provider ID</a></td><td>Variable. Equal to the value specified in the previous 2 bytes (Key Provider ID Length).</td></tr>
+  <tr><td><a href="#data-key-provider-info-length">Key Provider Information Length</a></td><td>2</td></tr>
+  <tr><td><a href="#data-key-provider-info">Key Provider Information</a></td><td>Variable. Equal to the value specified in the previous 2 bytes (Key Provider Information Length).</td></tr>
+  <tr><td><a href="#data-key-length">Encrypted Data Key Length</a></td><td>2</td></tr>
+  <tr><td><a href="#edk">Encrypted Data Key</a></td><td>Variable. Equal to the value specified in the previous 2 bytes (Encrypted Data Key Length).</td></tr>
+</tbody>
+</table>
+
 **Key Provider ID Length**
 The length of the key provider identifier. It is a 2-byte value interpreted as a 16-bit unsigned integer that specifies the number of bytes that contain the key provider ID.
 **Key Provider ID**
@@ -94,4 +128,15 @@ The Hierarchical keyring uses the derived wrapping key to encrypt a copy of the 
 + The data key is used as the AES-GCM message
 + A 12 byte random initialization vector (IV) is used as the AES-GCM IV
 + Additional authenticated data (AAD) containing the following serialized values.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/reference.html)
+
+<table>
+<thead>
+  <tr><th>Value</th><th>Length in bytes</th><th>Interpreted as</th></tr>
+</thead>
+<tbody>
+  <tr><td>"aws-kms-hierarchy"</td><td>17</td><td>UTF-8 encoded</td></tr>
+  <tr><td>The branch key identifier</td><td>Variable</td><td>UTF-8 encoded</td></tr>
+  <tr><td>The branch key version</td><td>16</td><td>UTF-8 encoded</td></tr>
+  <tr><td>Encryption context</td><td>Variable</td><td>UTF-8 encoded key value pairs</td></tr>
+</tbody>
+</table>

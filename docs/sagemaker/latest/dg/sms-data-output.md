@@ -692,7 +692,18 @@ Ground Truth creates one output sequence file for each sequence of video frames 
 + For each frame that was annotated by a worker, the frame file name (`frame`), number (`frame-no`), a list of JSON objects containing annotations (`annotations`), and if applicable, `frame-attributes`. The name of this list is defined by the task type you use: `polylines`, `polygons`, `keypoints`, and for bounding boxes, `annotations`.
 
   Each JSON object contains information about a single annotation and associated label. The following table outlines the parameters you'll see for each video frame task type.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/sms-data-output.html)
+
+<table>
+<thead>
+  <tr><th>Task Type</th><th>Parameters</th></tr>
+</thead>
+<tbody>
+  <tr><td>Bounding Box</td><td>Box dimensions: <code>height</code> and <code>width</code> <br />Box top, left corner pixel location: <code>top</code> and <code>left</code></td></tr>
+  <tr><td>Keypoint</td><td>Keypoint vertices: <code>{ "x": int, "y": int }</code></td></tr>
+  <tr><td>Polygon</td><td>A list of polygon vertices: <code>vertices</code>Polygon vertices: <code>{ "x": int, "y": int }</code><br />A polygon is a closed shape and so the first point will also represent the last point. </td></tr>
+  <tr><td>Polyline</td><td>A list of polyline vertices: <code>vertices</code>Polyline vertices: <code>{ "x": int, "y": int }</code></td></tr>
+</tbody>
+</table>
 
   In addition to task type specific values, you will see the following in each JSON object:
   + Values of any `label-category-attributes` that were specified for that label.
@@ -789,7 +800,18 @@ Ground Truth creates one output sequence file for each sequence of video frames 
 + For each frame that was annotated by a worker, the frame (`frame`), number (`frame-no`), a list of JSON objects containing annotations (`annotations`), and if applicable, frame attributes (`frame-attributes`). The name of this list is defined by the task type you use: `polylines`, `polygons`, `keypoints`, and for bounding boxes, `annotations`.
 
   Each JSON object contains information about a single annotation and associated label. The following table outlines the parameters you'll see for each video frame task type.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/sms-data-output.html)
+
+<table>
+<thead>
+  <tr><th>Task Type</th><th>Parameters</th></tr>
+</thead>
+<tbody>
+  <tr><td>Bounding Box</td><td>Box dimensions: <code>height</code> and <code>width</code> <br />Box top, left corner pixel location: <code>top</code> and <code>left</code></td></tr>
+  <tr><td>Keypoint</td><td>Keypoint vertices: <code>{ "x": int, "y": int }</code></td></tr>
+  <tr><td>Polygon</td><td>A list of polygon vertices: <code>vertices</code>Polygon vertices: <code>{ "x": int, "y": int }</code><br />A polygon is a closed shape and so the first point will also represent the last point. </td></tr>
+  <tr><td>Polyline</td><td>A list of polyline vertices: <code>vertices</code>Polyline vertices: <code>{ "x": int, "y": int }</code></td></tr>
+</tbody>
+</table>
 
   In addition to task type specific values, you will see the following in each JSON object:
   + Values of any `label-category-attributes` that were specified for that label.

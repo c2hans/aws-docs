@@ -48,6 +48,24 @@ For more information, refer to the [Architecture](architecture-overview.md#archi
 1. (Optional) In the navigation panel, under **Resources**, choose **Member Accounts**.
 
 1. In **Step 2. Link an account**, enter the parameters using the Outputs parameters from **Step 1**.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/cross-account-ingestion.html)
+
+<table>
+<thead>
+  <tr><th>Parameter</th><th>CloudFormation Outputs</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td>Account Name</td><td>N/A</td><td>Name of the member account.</td></tr>
+  <tr><td>Account ID</td><td>N/A</td><td>12-digit AWS account ID.</td></tr>
+  <tr><td>Cross Account Role ARN</td><td>CrossAccountRoleARN</td><td>Centralized Logging with OpenSearch will assume this role to operate resources in the member account.</td></tr>
+  <tr><td>Fluent Bit Agent Installation Document</td><td>AgentInstallDocument</td><td>Centralized Logging with OpenSearch will use this SSM Document to install Fluent Bit agent on EC2 instances in the member account.</td></tr>
+  <tr><td>Fluent Bit Agent Configuration Document</td><td>AgentConfigDocument</td><td>Centralized Logging with OpenSearch will use this SSM Document to deliver Fluent Bit configuration to EC2 instances.</td></tr>
+  <tr><td>Fluent Bit Agent Installation Document for Windows</td><td>AgentInstallDocumentForWindows</td><td>Fluent Bit Agent Installation Configuration for Windows.</td></tr>
+  <tr><td>Fluent Bit Agent Configuration Document for Windows</td><td>AnentConfigDocumentForWindows</td><td>Fluent Bit Agent Configuration Document.</td></tr>
+  <tr><td>Fluent Bit Status Check Document</td><td>AgentStatusCheckDocument</td><td>Status detection of Fluent Bit.</td></tr>
+  <tr><td>Cross Account S3 Bucket</td><td>CrossAccountS3Bucket</td><td>You can use the Centralized Logging with OpenSearch console to enable some AWS Service logs and output them to Amazon S3. The logs will be stored in this account.</td></tr>
+  <tr><td>Cross Account Stack ID</td><td>CrossAccountStackId</td><td>CloudFormation stack ID in the member account.</td></tr>
+  <tr><td>Cross Account KMS Key</td><td>CrossAccountKMSKeyARN</td><td>Centralized Logging with OpenSearch will use the AWS KMS key to encrypt Amazon SQS.</td></tr>
+</tbody>
+</table>
 
 1. Click the **Link** button.

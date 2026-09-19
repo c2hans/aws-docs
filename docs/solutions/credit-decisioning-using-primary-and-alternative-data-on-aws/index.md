@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/credit-decisioning-using-primary-and-alternative-data-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Credit Decisioning Using Primary & Alternative Data on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/credit-decisioning-using-primary-and-alternative-data-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Credit Decisioning Using Primary & Alternative Data on AWS
 
 ## Overview

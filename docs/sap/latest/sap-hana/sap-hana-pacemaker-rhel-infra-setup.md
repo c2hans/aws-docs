@@ -203,10 +203,26 @@ Using either the Amazon VPC console, or an AWS CLI command add a route to the ta
 1. Choose **Actions** → **Edit routes**.
 
 1. Choose **Add route** and configure the HANA route:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/sap/latest/sap-hana/sap-hana-pacemaker-rhel-infra-setup.html)
+
+<table>
+<thead>
+  <tr><th>Destination</th><th>Target</th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>&lt;hana_overlayip&gt;/32</code> </td><td> <code>i-xxxxinstidforhost1</code> </td></tr>
+</tbody>
+</table>
 
 1. (Optional) Add a route for read-enabled access to the secondary:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/sap/latest/sap-hana/sap-hana-pacemaker-rhel-infra-setup.html)
+
+<table>
+<thead>
+  <tr><th>Destination</th><th>Target</th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>&lt;readenabled_overlayip&gt;/32</code> </td><td> <code>i-xxxxinstidforhost2</code> </td></tr>
+</tbody>
+</table>
 
 1. Choose **Save changes**.
 

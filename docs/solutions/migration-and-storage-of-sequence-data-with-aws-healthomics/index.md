@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/migration-and-storage-of-sequence-data-with-aws-healthomics/index.html
 ---
 
+---
+title: 'Guidance for Migration & Storage of Sequence Data with AWS HealthOmics'
+canonical_url: https://docs.aws.amazon.com/solutions/migration-and-storage-of-sequence-data-with-aws-healthomics/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Migration & Storage of Sequence Data with AWS HealthOmics
 
 ## Overview

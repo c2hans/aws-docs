@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[ColorMetadata](#cfn-medialive-channel-h264settings-colormetadata)" : {{String}},
   "[ColorSpaceSettings](#cfn-medialive-channel-h264settings-colorspacesettings)" : {{H264ColorSpaceSettings}},
   "[EntropyEncoding](#cfn-medialive-channel-h264settings-entropyencoding)" : {{String}},
-  "[FilterSettings](#cfn-medialive-channel-h264settings-filtersettings)" : {{H264FilterSettings}},
+  "[FilterSettings](#cfn-medialive-channel-h264settings-filtersettings)" : {{H264H265FilterSettings}},
   "[FixedAfd](#cfn-medialive-channel-h264settings-fixedafd)" : {{String}},
   "[FlickerAq](#cfn-medialive-channel-h264settings-flickeraq)" : {{String}},
   "[ForceFieldPictures](#cfn-medialive-channel-h264settings-forcefieldpictures)" : {{String}},
@@ -82,7 +82,7 @@ To declare this entity in your CloudFormation template, use the following syntax
     H264ColorSpaceSettings}}
   [EntropyEncoding](#cfn-medialive-channel-h264settings-entropyencoding): {{String}}
   [FilterSettings](#cfn-medialive-channel-h264settings-filtersettings): {{
-    H264FilterSettings}}
+    H264H265FilterSettings}}
   [FixedAfd](#cfn-medialive-channel-h264settings-fixedafd): {{String}}
   [FlickerAq](#cfn-medialive-channel-h264settings-flickeraq): {{String}}
   [ForceFieldPictures](#cfn-medialive-channel-h264settings-forcefieldpictures): {{String}}
@@ -175,7 +175,7 @@ The entropy encoding mode. Use cabac (must be in Main or High profile) or cavlc.
 `FilterSettings`  <a name="cfn-medialive-channel-h264settings-filtersettings"></a>
 Optional filters that you can apply to an encode.
 *Required*: No
-*Type*: [H264FilterSettings](aws-properties-medialive-channel-h264filtersettings.md)
+*Type*: [H264H265FilterSettings](aws-properties-medialive-channel-h264h265filtersettings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `FixedAfd`  <a name="cfn-medialive-channel-h264settings-fixedafd"></a>

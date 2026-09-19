@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/elastic-beanstalk/index.html
 ---
 
+---
+title: 'AWS Elastic Beanstalk Documentation'
+canonical_url: https://docs.aws.amazon.com/elastic-beanstalk/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Elastic Beanstalk Documentation
 
 With AWS Elastic Beanstalk, you can quickly deploy and manage applications in the AWS Cloud without worrying about the infrastructure that runs those applications. AWS Elastic Beanstalk reduces management complexity without restricting choice or control. You simply upload your application, and AWS Elastic Beanstalk automatically handles the details of capacity provisioning, load balancing, scaling, and application health monitoring.

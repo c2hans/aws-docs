@@ -17,6 +17,7 @@ Content-type: application/json
 {
    "categories": [ "{{string}}" ],
    "cloneFlowId": "{{string}}",
+   "endpointUri": "{{string}}",
    "flowJson": {{blob}},
    "flowName": "{{string}}",
    "id": "{{string}}",
@@ -46,6 +47,12 @@ The ID of an existing Flow within the same WhatsApp Business Account to clone.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
 Pattern: `[0-9]+`
+Required: No
+
+ ** [endpointUri](#API_CreateWhatsAppFlow_RequestSyntax) **   <a name="Social-CreateWhatsAppFlow-request-endpointUri"></a>
+The HTTPS endpoint that Meta calls for a data exchange Flow.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
 Required: No
 
  ** [flowJson](#API_CreateWhatsAppFlow_RequestSyntax) **   <a name="Social-CreateWhatsAppFlow-request-flowJson"></a>

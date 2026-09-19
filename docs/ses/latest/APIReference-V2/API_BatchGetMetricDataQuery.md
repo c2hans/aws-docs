@@ -52,7 +52,7 @@ Required: Yes
 An object that contains mapping between `MetricDimensionName` and `MetricDimensionValue` to filter metrics by.
 Type: String to string map
 Map Entries: Maximum number of 3 items.
-Valid Keys: `EMAIL_IDENTITY | CONFIGURATION_SET | ISP`
+Valid Keys: `EMAIL_IDENTITY | CONFIGURATION_SET | ISP | TENANT_NAME`
 Required: No
 
 ## See Also

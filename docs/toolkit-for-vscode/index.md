@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/toolkit-for-vscode/index.html
 ---
 
+---
+title: 'AWS Toolkit for Visual Studio Code Documentation'
+canonical_url: https://docs.aws.amazon.com/toolkit-for-vscode/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Toolkit for Visual Studio Code Documentation
 
 The AWS Toolkit for Visual Studio Code is a plugin for the Visual Studio Code (VS Code) editor. The Toolkit makes it easier for developers to develop, debug, and deploy applications that use Amazon Web Services.

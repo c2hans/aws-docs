@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/SchemaConversionTool/index.html
 ---
 
+---
+title: 'AWS Schema Conversion Tool Documentation'
+canonical_url: https://docs.aws.amazon.com/SchemaConversionTool/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Schema Conversion Tool Documentation
 
 The AWS Schema Conversion Tool makes heterogeneous database migrations easy by automatically converting the source database schema and a majority of the custom code to a format compatible with the target database. The custom code that the tool converts includes views, stored procedures, and functions. Any code that the tool cannot convert automatically is clearly marked so that you can convert it yourself. For supported source and target databases, see the User Guide, following.

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/health/index.html
 ---
 
+---
+title: 'AWS Health Documentation'
+canonical_url: https://docs.aws.amazon.com/health/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Health Documentation
 
 AWS Health provides personalized information about events that can affect your AWS infrastructure, guides you through scheduled changes, and accelerates the troubleshooting of issues that affect your AWS resources and accounts.

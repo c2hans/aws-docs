@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/sdk-for-sapabap/index.html
 ---
 
+---
+title: 'AWS SDK for SAP ABAP'
+canonical_url: https://docs.aws.amazon.com/sdk-for-sapabap/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # AWS SDK for SAP ABAP
 
 AWS SDK for SAP ABAP provides an interface to Amazon Web Services in ABAP. Using the SDK, you can build SAP applications on top of Amazon S3, Amazon EC2, DynamoDB, and more.

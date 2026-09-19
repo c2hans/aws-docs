@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/iam/index.html
 ---
 
+---
+title: 'AWS Identity and Access Management Documentation'
+canonical_url: https://docs.aws.amazon.com/iam/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # AWS Identity and Access Management Documentation
 
 AWS Identity and Access Management (IAM) is a web service for securely controlling access to AWS services. With IAM, you can centrally manage users, security credentials such as access keys, and permissions that control which AWS resources users and applications can access.

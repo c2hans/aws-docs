@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/clean-rooms/index.html
 ---
 
+---
+title: 'AWS Clean Rooms Documentation'
+canonical_url: https://docs.aws.amazon.com/clean-rooms/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # AWS Clean Rooms Documentation
 
 AWS Clean Rooms is an AWS service that helps multiple parties to join their data together in a secure collaboration workspace.

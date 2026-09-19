@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/drs/index.html
 ---
 
+---
+title: 'AWS Elastic Disaster Recovery Documentation'
+canonical_url: https://docs.aws.amazon.com/drs/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Elastic Disaster Recovery Documentation
 
 AWS Elastic Disaster Recovery (AWS DRS) minimizes downtime and data loss with fast, reliable recovery of on-premises and cloud-based applications using affordable storage, minimal compute, and point-in-time recovery.

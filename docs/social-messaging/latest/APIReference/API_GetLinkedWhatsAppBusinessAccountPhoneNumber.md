@@ -38,6 +38,41 @@ HTTP/1.1 200
 Content-type: application/json
 
 {
+   "callSettings": {
+      "callbackPermissionStatus": "string",
+      "callEnabled": boolean,
+      "callHours": {
+         "enabled": boolean,
+         "holidaySchedule": [
+            {
+               "date": "string",
+               "endTime": {
+                  "hours": number,
+                  "minutes": number
+               },
+               "startTime": {
+                  "hours": number,
+                  "minutes": number
+               }
+            }
+         ],
+         "timezone": "string",
+         "weeklyOperatingHours": [
+            {
+               "closeTime": {
+                  "hours": number,
+                  "minutes": number
+               },
+               "dayOfWeek": "string",
+               "openTime": {
+                  "hours": number,
+                  "minutes": number
+               }
+            }
+         ]
+      },
+      "callIconVisibility": "string"
+   },
    "linkedWhatsAppBusinessAccountId": "string",
    "phoneNumber": {
       "arn": "string",
@@ -58,6 +93,10 @@ Content-type: application/json
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
+
+ ** [callSettings](#API_GetLinkedWhatsAppBusinessAccountPhoneNumber_ResponseSyntax) **   <a name="Social-GetLinkedWhatsAppBusinessAccountPhoneNumber-response-callSettings"></a>
+The calling settings configured for the phone number. This value is absent when calling is not configured.
+Type: [WhatsAppCallSettings](API_WhatsAppCallSettings.md) object
 
  ** [linkedWhatsAppBusinessAccountId](#API_GetLinkedWhatsAppBusinessAccountPhoneNumber_ResponseSyntax) **   <a name="Social-GetLinkedWhatsAppBusinessAccountPhoneNumber-response-linkedWhatsAppBusinessAccountId"></a>
 The WABA identifier linked to the phone number, formatted as `waba-01234567890123456789012345678901`.

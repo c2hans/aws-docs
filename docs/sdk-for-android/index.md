@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/sdk-for-android/index.html
 ---
 
+---
+title: 'Amplify Android (AWS Mobile SDK for Android)'
+canonical_url: https://docs.aws.amazon.com/sdk-for-android/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amplify Android (AWS Mobile SDK for Android)
 
 Amplify Android is a collection of open-source client libraries that provides interfaces for specific use cases across many of the AWS services. Amplify Android is the recommended way to build native Android applications powered by AWS. You can also use the low-level AWS Mobile SDK for Android with Amplify Android if the use case you are trying to build is not currently available in Amplify Android.

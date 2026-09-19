@@ -24,7 +24,32 @@ You can launch this template in any AWS Region.
 1. On the **Specify stack details** page, assign a name to your solution stack.
 
 1. Under **Parameters**, review the parameters for the template and modify them as necessary. This solution uses the following default values.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/step-3a.-launch-the-hub-stack-for-aws-organizations.html)
+
+<table>
+<thead>
+  <tr><th>Parameter</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td> <b>Deployment Configuration</b> </td><td></td><td></td></tr>
+  <tr><td> <b>Deployment Mode</b> </td><td> <code>Organizations</code> </td><td>The solution supports two deployment modes:<br /> <b> Organizations (default) - Monitor quota usage across your Organization. </b> Hybrid - Monitor quota usage monitoring across your Organization and secondary accounts.</td></tr>
+  <tr><td> <b>Regions List</b> </td><td> <code>ALL</code> </td><td>The list of AWS Regions where the Service Quotas spoke templates should be deployed. Options are ALL or a comma separated list of AWS Regions (for example, <code>us-east-1</code>).</td></tr>
+  <tr><td> <b>SNS Spoke Region</b> </td><td>&lt;Optional input&gt;</td><td>Optionally, specify the AWS Region to launch the decentralized SNS stack in the spoke accounts. If left empty, the stack will not be launched.</td></tr>
+  <tr><td> <b>Management Account Id</b> </td><td> <code>\*</code> </td><td>Organization’s management Id to scope permissions down for Stackset creation.</td></tr>
+  <tr><td> <b>StackSet Deployment Options</b> </td><td></td><td></td></tr>
+  <tr><td> <b>Region Concurrency</b> </td><td> <code>PARALLEL</code> </td><td>Selection of whether to deploy the StackSets into AWS Regions in parallel (default) or sequentially.</td></tr>
+  <tr><td> <b>Percentage Maximum concurrent accounts</b> </td><td> <code>100</code> </td><td>Percentage of accounts per AWS Region to which you can deploy stacks at one time.</td></tr>
+  <tr><td> <b>Percentage Failure tolerance</b> </td><td> <code>0</code> </td><td>Percentage of account, per AWS Region, for which stacks can fail before CloudFormation stops the operation in that Region.</td></tr>
+  <tr><td> <b>Notification Configuration</b> </td><td></td><td></td></tr>
+  <tr><td> <b>Email Notification</b> </td><td> {{&lt;Requires input&gt;}} </td><td>Email address to receive alert notifications.</td></tr>
+  <tr><td> <b>Slack Notification</b> </td><td> <code>No</code> </td><td>Choose <code>Yes</code> if you want to receive Slack notifications for quota utilization alerts. You can specify the Slackhook web URL later in the Systems Manager Parameter Store (see <a href="step-7.-configure-notifications-optional.md">Step 7: Configure notifications</a>.</td></tr>
+  <tr><td> <b>Stackset Stack Configuration Parameters</b> </td><td></td><td></td></tr>
+  <tr><td> <b>Notification Threshold</b> </td><td> <code>80</code> </td><td>The percentage threshold for quota utilization notifications.</td></tr>
+  <tr><td> <b>Monitoring Frequency</b> </td><td> <code>rate (12 hours)</code> </td><td>How often the quota monitoring scan should run. Available choices are every 6 or 12 hours.</td></tr>
+  <tr><td> <b>Report OK Notiﬁcations</b> </td><td> <code>No</code> </td><td>Whether to save the <code>OK</code> notiﬁcations in the summary table on the hub account.</td></tr>
+  <tr><td> <b>SageMaker AI Monitoring</b> </td><td> <code>Yes</code> </td><td>Choose <code>Yes</code> to enable monitoring for SageMaker AI quotas, or <code>No</code> to disable it. Enabling SageMaker AI monitoring might consume a high number of quotas, which could lead to higher usage costs.</td></tr>
+  <tr><td> <b>Connect Monitoring</b> </td><td> <code>Yes</code> </td><td>Select <code>Yes</code> to enable monitoring for Amazon Connect quotas, or <code>No</code> to disable it. Keep in mind enabling Connect monitoring might consume a high number of quotas, which could result in higher usage costs.</td></tr>
+</tbody>
+</table>
 
 1. Choose **Next**.
 

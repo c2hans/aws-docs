@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/linux/index.html
 ---
 
+---
+title: 'Amazon Linux Documentation'
+canonical_url: https://docs.aws.amazon.com/linux/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Amazon Linux Documentation
 
 Amazon Linux is a portfolio of modern Linux-based high performance operating systems that are security-focused and stable.

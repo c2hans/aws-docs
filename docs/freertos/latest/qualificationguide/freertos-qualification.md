@@ -61,8 +61,26 @@ IDT does not mandate a specific project structure, and uses the reference path i
 The [FreeRTOS GitHub](https://github.com/FreeRTOS/FreeRTOS) repository has pre-configured examples demonstrating individual tasks. There is also an integrated [coreMQTT Agent Demo](https://github.com/FreeRTOS/coreMQTT-Agent-Demos) that incorporates both coreMQTT and OTA tasks. Also, see FreeRTOS Featured IoT Integrations at [Examples of qualification projects](examples-qualification.md).
 
    1. AWS IoT Device Tester will run your demo against [AWS IoT Device Advisor](https://docs.aws.amazon.com/iot/latest/developerguide/device-advisor.html). The following Device Advisor test cases are required for qualification.
+
 **Test cases**
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/freertos/latest/qualificationguide/freertos-qualification.html)
+
+<table>
+<thead>
+  <tr><th>Test case</th><th>Test cases</th><th>Required</th></tr>
+</thead>
+<tbody>
+  <tr><td>TLS</td><td>TLS Connect</td><td>Yes</td></tr>
+  <tr><td>TLS</td><td>TLS Support AWS AWS IoT Cipher Suites</td><td>Yes with recommended <a href="https://docs.aws.amazon.com/iot/latest/developerguide/transport-security.html#tls-cipher-suite-support">cipher suites</a></td></tr>
+  <tr><td>TLS</td><td>TLS Unsecure Server Cert</td><td>Yes</td></tr>
+  <tr><td>TLS</td><td>TLS Incorrect Subject Name Servr Cert</td><td>Yes</td></tr>
+  <tr><td>MQTT</td><td>MQTT Connect</td><td>Yes</td></tr>
+  <tr><td>MQTT</td><td>MQTT Connect Jitter Retries</td><td>Yes without warnings</td></tr>
+  <tr><td>MQTT</td><td>MQTT Subscribe</td><td>Yes</td></tr>
+  <tr><td>MQTT</td><td>MQTT Publish</td><td>Yes</td></tr>
+  <tr><td>MQTT</td><td>MQTT ClientPuback Qos1</td><td>Yes</td></tr>
+  <tr><td>MQTT</td><td>MQTT No Ack PingResp</td><td>Yes</td></tr>
+</tbody>
+</table>
 
 1. Run the tests from AWS IoT Device Tester and generate a test report.
    + IDT configure tests, and does a build and flash to your board automatically. To enable this, you must configure IDT to run the build and flash commands for your device in the `userdata.json` file. See [ Configure build, flash, and test settings](https://docs.aws.amazon.com/freertos/latest/userguide/lts-qual-steps.html#lts-cfg-dt-ud) in the [IDT for FreeRTOS User Guide](https://docs.aws.amazon.com/freertos/latest/userguide/device-tester-for-freertos-ug.html).

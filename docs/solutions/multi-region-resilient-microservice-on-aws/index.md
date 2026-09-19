@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/multi-region-resilient-microservice-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Multi-Region Resilient Microservice on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/multi-region-resilient-microservice-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Multi-Region Resilient Microservice on AWS
 
 Launch a failover sequence deployment across multiple AWS Regions to protect workloads

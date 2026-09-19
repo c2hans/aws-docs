@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/data-pipeline/index.html
 ---
 
+---
+title: 'AWS Data Pipeline Documentation'
+canonical_url: https://docs.aws.amazon.com/data-pipeline/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Data Pipeline Documentation
 
 AWS Data Pipeline is a web service that you can use to automate the movement and transformation of data. With AWS Data Pipeline, you can define data-driven workflows, so that tasks can be dependent on the successful completion of previous tasks.

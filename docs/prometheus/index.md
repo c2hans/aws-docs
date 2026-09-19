@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/prometheus/index.html
 ---
 
+---
+title: 'Amazon Managed Service for Prometheus Documentation'
+canonical_url: https://docs.aws.amazon.com/prometheus/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Managed Service for Prometheus Documentation
 
 Amazon Managed Service for Prometheus provides highly available, secure, and managed monitoring for your containers. It automatically scales as your ingestion and query needs grow, and gives you access to remote write metrics from existing Prometheus servers and to query metrics using PromQL.

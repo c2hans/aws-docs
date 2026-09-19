@@ -15,7 +15,7 @@ The following image shows the **Case list** view in the agent workspace. You can
 ![The case list view in the agent workspace.](https://docs.aws.amazon.com/connect/latest/adminguide/images/cases-caselistview.png)
 
 **Topics**
-+ [Set up agents and flows](#setup-case-assignment)
++ [Set up agents and flows case assignment](#setup-case-assignment)
 + [How agents assign case ownership](#agents-case-assignment)
 + [How to configure the Cases block to assign case ownership in a flow](#flows-case-assignment)
 

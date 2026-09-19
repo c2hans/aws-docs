@@ -16,7 +16,19 @@ In general, we recommend that you specify a client CIDR range that contains twic
 **Number of associated subnets**
 When you [associate a subnet](cvpn-working-target.md) with a Client VPN endpoint, you enable users to establish VPN sessions to the Client VPN endpoint. You can associate multiple subnets with a Client VPN endpoint for high availability, and to enable additional connection capacity.
 The following are the number of supported concurrent VPN connections based on the number of subnet associations for the Client VPN endpoint.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/vpn/latest/clientvpn-admin/scaling-considerations.html)
+
+<table>
+<thead>
+  <tr><th>Subnet associations</th><th>Supported number of connections</th></tr>
+</thead>
+<tbody>
+  <tr><td>1</td><td>7,000</td></tr>
+  <tr><td>2</td><td>36,500</td></tr>
+  <tr><td>3</td><td>66,500</td></tr>
+  <tr><td>4</td><td>96,500</td></tr>
+  <tr><td>5</td><td>126,000</td></tr>
+</tbody>
+</table>
 
 You cannot associate multiple subnets from the same Availability Zone with a Client VPN endpoint. Therefore, the number of subnet associations also depends on the number of Availability Zones that are available in an AWS Region.
 

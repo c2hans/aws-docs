@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/automatic-image-matching-for-articles-using-machine-learning-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Automatic Image Matching for Articles Using Machine Learning on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/automatic-image-matching-for-articles-using-machine-learning-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Automatic Image Matching for Articles Using Machine Learning on AWS
 
 ## Overview

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/ai-at-the-edge-for-retail-on-aws/index.html
 ---
 
+---
+title: 'Guidance for AI at the Edge for Retail on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/ai-at-the-edge-for-retail-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for AI at the Edge for Retail on AWS
 
 ## Overview

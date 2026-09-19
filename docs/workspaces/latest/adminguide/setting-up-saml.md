@@ -275,8 +275,25 @@ You can use the WorkSpaces console to enable SAML 2.0 authentication on the Work
 1. Check **Enable SAML 2.0 authentication**.
 
 1. For the **User Access URL** and **IdP deep link parameter name**, enter values that are applicable to your IdP and the application you have configured in Step 1. The default value for the IdP deep link parameter name is “RelayState“ if you omit this parameter. The following table lists user access URL and parameter names that are unique to various identity providers for applications.
+
 **Domains and IP addresses to add to your allow list**
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/adminguide/setting-up-saml.html)
+
+<table>
+<thead>
+  <tr><th>Identity provider</th><th>Parameter</th><th>User access URL</th></tr>
+</thead>
+<tbody>
+  <tr><td>ADFS</td><td><code>RelayState</code></td><td><code>https://&lt;host&gt;/adfs/ls/idpinitiatedsignon.aspx?RelayState=RPID=&lt;relaying-party-uri&gt;</code></td></tr>
+  <tr><td>Azure AD</td><td><code>RelayState</code></td><td><code>https://myapps.microsoft.com/signin/&lt;app_id&gt;?tenantId=&lt;tenant_id&gt;</code></td></tr>
+  <tr><td>Duo Single Sign-On</td><td><code>RelayState</code></td><td><code>https://&lt;sub-domain&gt;.sso.duosecurity.com/saml2/sp/&lt;app_id&gt;/sso</code></td></tr>
+  <tr><td>Okta</td><td><code>RelayState</code></td><td><code>https://&lt;sub_domain&gt;.okta.com/app/&lt;app_name&gt;/&lt;app_id&gt;/sso/saml</code></td></tr>
+  <tr><td>OneLogin</td><td><code>RelayState</code></td><td><code>https://&lt;sub-domain&gt;.onelogin.com/trust/saml2/http-post/sso/&lt;app-id&gt;</code></td></tr>
+  <tr><td>JumpCloud</td><td><code>RelayState</code></td><td><code>https://sso.jumpcloud.com/saml2/&lt;app-id&gt;</code></td></tr>
+  <tr><td>Auth0</td><td><code>RelayState</code></td><td><code>https://&lt;DefaultTenatName&gt;.us.auth0.com/samlp/&lt;Client_Id&gt;</code></td></tr>
+  <tr><td>PingFederate</td><td><code>TargetResource</code></td><td><code>https://&lt;host&gt;/idp/startSSO.ping?PartnerSpId=&lt;sp_id&gt;</code></td></tr>
+  <tr><td>PingOne for Enterprise</td><td><code>TargetResource</code></td><td><code>https://sso.connect.pingidentity.com/sso/sp/initsso?saasid=&lt;app_id&gt;&amp;idpid=&lt;idp_id&gt;</code></td></tr>
+</tbody>
+</table>
 
    The user access URL is usually defined by the provider for unsolicited IdP-initiated SSO. A user can enter this URL in a web browser to federate directly to the SAML application. To test the user access URL and parameter values for your IdP, choose **Test**. Copy and paste the test URL to a private window in your current browser or another browser to test the SAML 2.0 logon without disrupting your current AWS management console session. When IdP-initiated flow opens, you can register your WorkSpaces client. For more information, see [ Identity provider (IdP)-initiated flow](https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-workspaces-saml.html).
 

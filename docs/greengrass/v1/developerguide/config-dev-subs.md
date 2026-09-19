@@ -35,7 +35,21 @@ Each client device has its own shadow. For more information, see [Device shadow 
    1. Choose **Create subscription**.
 
    The topics must be entered exactly as shown in the table. Although it's possible to use wildcards to consolidate some of the subscriptions, we don't recommend this practice. For more information, see [Shadow MQTT topics](https://docs.aws.amazon.com/iot/latest/developerguide/device-shadow-mqtt.html) in the *AWS IoT Developer Guide*.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/config-dev-subs.html)
+
+<table>
+<thead>
+  <tr><th>Source</th><th>Target</th><th>Topic</th><th>Notes</th></tr>
+</thead>
+<tbody>
+  <tr><td>GG_Switch</td><td>Local Shadow Service</td><td>$aws/things/GG_TrafficLight/shadow/update</td><td>The GG_Switch sends an update request to update topic.</td></tr>
+  <tr><td>Local Shadow Service</td><td>GG_Switch</td><td>$aws/things/GG_TrafficLight/shadow/update/accepted</td><td>The GG_Switch needs to know whether the update request was accepted.</td></tr>
+  <tr><td>Local Shadow Service</td><td>GG_Switch</td><td>$aws/things/GG_TrafficLight/shadow/update/rejected</td><td>The GG_Switch needs to know whether the update request was rejected.</td></tr>
+  <tr><td>GG_TrafficLight</td><td>Local Shadow Service</td><td>$aws/things/GG_TrafficLight/shadow/update</td><td>The GG_TrafficLight sends an update of its state to the update topic.</td></tr>
+  <tr><td>Local Shadow Service</td><td>GG_TrafficLight</td><td>$aws/things/GG_TrafficLight/shadow/update/delta</td><td>The Local Shadow Service sends a received update to GG_TrafficLight through the delta topic.</td></tr>
+  <tr><td>Local Shadow Service</td><td>GG_TrafficLight</td><td>$aws/things/GG_TrafficLight/shadow/update/accepted</td><td>The GG_TrafficLight needs to know whether its state update was accepted.</td></tr>
+  <tr><td>Local Shadow Service</td><td>GG_TrafficLight</td><td>$aws/things/GG_TrafficLight/shadow/update/rejected</td><td>The GG_TrafficLight needs to know whether its state update was rejected.</td></tr>
+</tbody>
+</table>
 
    The new subscriptions are displayed on the **Subscriptions** tab.
 **Note**

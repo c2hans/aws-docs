@@ -275,7 +275,18 @@ For the most up-to-date information about setting up Sign in with Apple, see [Co
    + **Sign In with Apple** — Enter the **Services ID**, **Team ID**, **Key ID**, and **private key** generated in the previous section.
 
 1. Enter the names of the **Authorized scopes** you want to use. Scopes define which user attributes (such as `name` and `email`) you want to access with your app. For Facebook, these should be separated by commas. For Google and Login with Amazon, they should be separated by spaces. For Sign in with Apple, select the check boxes for the scopes you want access to.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-social-idp.html)
+
+<table>
+<thead>
+  <tr><th>Social identity provider</th><th>Example scopes</th></tr>
+</thead>
+<tbody>
+  <tr><td>Facebook</td><td><code>public_profile, email</code></td></tr>
+  <tr><td>Google</td><td><code>profile email openid</code></td></tr>
+  <tr><td>Login with Amazon</td><td><code>profile postal_code</code></td></tr>
+  <tr><td>Sign in with Apple</td><td><code>email name</code></td></tr>
+</tbody>
+</table>
 
    Your app user is prompted to consent to providing these attributes to your app. For more information about social provider scopes, see the documentation from Google, Facebook, Login with Amazon, or Sign in with Apple.
 

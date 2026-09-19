@@ -40,6 +40,10 @@ The way litmus paper determines acidity is by measuring a substance's pH level. 
 1. Divide your score by 2. This is your pipeline's CI/CD score.
 
 1. Compare your pipeline's CI/CD score to the following table to determine your pipeline's CI/CD level.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cicd-litmus/litmus-test-for-cicd-pipelines.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
 If you scored below 8, we recommend that you set a goal to move gradually toward the next level. When that goal is achieved, then product stakeholders should assess if and when a new goal should be set. The intention of this exercise is not necessarily to advocate for a change to your pipeline, but rather to bring awareness of what a fully CI/CD deployment process looks like and where your pipelines currently sit on that spectrum.

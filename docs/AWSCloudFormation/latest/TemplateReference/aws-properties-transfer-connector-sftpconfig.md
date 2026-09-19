@@ -20,6 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[MaxConcurrentConnections](#cfn-transfer-connector-sftpconfig-maxconcurrentconnections)" : {{Integer}},
+  "[OrderedUserSecretVersionStages](#cfn-transfer-connector-sftpconfig-orderedusersecretversionstages)" : {{[ String, ... ]}},
   "[TrustedHostKeys](#cfn-transfer-connector-sftpconfig-trustedhostkeys)" : {{[ String, ... ]}},
   "[UserSecretId](#cfn-transfer-connector-sftpconfig-usersecretid)" : {{String}}
 }
@@ -30,6 +31,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [MaxConcurrentConnections](#cfn-transfer-connector-sftpconfig-maxconcurrentconnections): {{Integer}}
+  [OrderedUserSecretVersionStages](#cfn-transfer-connector-sftpconfig-orderedusersecretversionstages): {{
+    - String}}
   [TrustedHostKeys](#cfn-transfer-connector-sftpconfig-trustedhostkeys): {{
     - String}}
   [UserSecretId](#cfn-transfer-connector-sftpconfig-usersecretid): {{String}}
@@ -46,6 +49,14 @@ This parameter specifies the number of active connections that your connector ca
 *Type*: Integer
 *Minimum*: `1`
 *Maximum*: `5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`OrderedUserSecretVersionStages`  <a name="cfn-transfer-connector-sftpconfig-orderedusersecretversionstages"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `2`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TrustedHostKeys`  <a name="cfn-transfer-connector-sftpconfig-trustedhostkeys"></a>

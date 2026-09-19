@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/end-user-messaging/index.html
 ---
 
+---
+title: 'AWS End User Messaging Documentation'
+canonical_url: https://docs.aws.amazon.com/end-user-messaging/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # AWS End User Messaging Documentation
 
 AWS End User Messaging helps you engage your customers by sending them SMS, voice messages, WhatsApp, and push notifications.

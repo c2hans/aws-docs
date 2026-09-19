@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/bedrock-agentcore/index.html
 ---
 
+---
+title: 'Amazon Bedrock AgentCore Documentation'
+canonical_url: https://docs.aws.amazon.com/bedrock-agentcore/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Amazon Bedrock AgentCore Documentation
 
 Amazon Bedrock AgentCore is a fully managed service that enables you to deploy and operate highly capable agents securely, at scale using any framework and model.

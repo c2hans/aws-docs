@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/securityhub/index.html
 ---
 
+---
+title: 'AWS Security Hub Documentation'
+canonical_url: https://docs.aws.amazon.com/securityhub/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Security Hub Documentation
 
 AWS Security Hub provides you with a comprehensive view of the security state of your AWS resources. Security Hub collects security data from across AWS accounts and services, and helps you analyze your security trends to identify and prioritize the security issues across your AWS environment.

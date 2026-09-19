@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/carbon-accounting-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Carbon Accounting on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/carbon-accounting-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Carbon Accounting on AWS
 
 ## Overview

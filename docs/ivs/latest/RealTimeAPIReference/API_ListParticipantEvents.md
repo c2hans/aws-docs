@@ -50,7 +50,7 @@ Required: No
 Unique identifier for this participant. This is assigned by IVS and returned by [CreateParticipantToken](API_CreateParticipantToken.md).
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 64.
-Pattern: `[a-zA-Z0-9-]*`
+Pattern: `[a-zA-Z0-9-_]*`
 Required: Yes
 
  ** [sessionId](#API_ListParticipantEvents_RequestSyntax) **   <a name="ivsrealtimeeapireference-ListParticipantEvents-request-sessionId"></a>
@@ -130,14 +130,10 @@ Pattern: `[a-zA-Z0-9+/=_-]*`
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** AccessDeniedException **
-
- ** exceptionMessage **
 User does not have sufficient access to perform this action.
 HTTP Status Code: 403
 
  ** ValidationException **
-
- ** exceptionMessage **
 The input fails to satisfy the constraints specified by an AWS service.
 HTTP Status Code: 400
 

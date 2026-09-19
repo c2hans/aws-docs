@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/audience-segments-uploader-to-advertising-and-marketing-platforms-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Audience Segments Uploader to Advertising & Marketing Platforms on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/audience-segments-uploader-to-advertising-and-marketing-platforms-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Audience Segments Uploader to Advertising & Marketing Platforms on AWS
 
 ## Overview

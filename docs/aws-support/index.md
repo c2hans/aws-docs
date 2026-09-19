@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/aws-support/index.html
 ---
 
+---
+title: 'AWS Support Documentation'
+canonical_url: https://docs.aws.amazon.com/aws-support/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Support Documentation
 
 AWS Support provides support for users of Amazon Web Services.

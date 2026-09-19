@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/implementing-order-and-inventory-management-for-quick-service-restaurants-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Implementing Order & Inventory Management for Quick Service Restaurants on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/implementing-order-and-inventory-management-for-quick-service-restaurants-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Implementing Order & Inventory Management for Quick Service Restaurants on AWS
 
 ## Overview

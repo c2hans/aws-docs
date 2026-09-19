@@ -215,12 +215,6 @@ The default desktop environment for Ubuntu 20.04/22.04/24.04 is GNOME and the de
    $ sudo apt install ubuntu-desktop
    ```
 
-   Install GDM
-
-   ```
-   $ sudo apt install gdm3
-   ```
-
 1. Verify that GDM is set as the default desktop manager.
 
    ```

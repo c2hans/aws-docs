@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/autoscaling/index.html
 ---
 
+---
+title: 'Auto Scaling Documentation'
+canonical_url: https://docs.aws.amazon.com/autoscaling/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Auto Scaling Documentation
 
 AWS provides multiple services that you can use to scale your application. Auto scaling is enabled by Amazon CloudWatch and is available at no additional charge beyond the service fees for CloudWatch and the other AWS resources that you use.

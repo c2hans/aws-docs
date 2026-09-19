@@ -8,6 +8,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 <a name="AWS_NetworkFirewall"></a>
 
 **Resource types**
++ [AWS::NetworkFirewall::ContainerAssociation](aws-resource-networkfirewall-containerassociation.md)
 + [AWS::NetworkFirewall::Firewall](aws-resource-networkfirewall-firewall.md)
 + [AWS::NetworkFirewall::FirewallPolicy](aws-resource-networkfirewall-firewallpolicy.md)
 + [AWS::NetworkFirewall::LoggingConfiguration](aws-resource-networkfirewall-loggingconfiguration.md)

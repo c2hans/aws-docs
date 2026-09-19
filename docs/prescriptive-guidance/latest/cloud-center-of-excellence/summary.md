@@ -14,7 +14,11 @@ Setting up a Cloud Center of Excellence (CCoE) is a strategic initiative that ca
 1. **Identify leadership and accountability** – Appoint a CCoE leader or manager who will be responsible for its success. Make sure that this leader has the authority to make decisions and can drive cloud initiatives.
 
 1. **Create a charter** – Develop a charter or mission statement that outlines the purpose, scope, responsibilities, and authority of the CCoE. Share this with the organization to set clear expectations. The following table provides an example charter that you can modify depending on your specific scenarios.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-center-of-excellence/summary.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
 1. **Develop cloud expertise** – Provide training and resources to the CCoE team members to enhance their cloud expertise. Ensure that they are up to date with the latest cloud technologies and best practices.
 

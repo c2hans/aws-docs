@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com//solutions/qnabot-on-aws//index.html
 ---
 
+---
+title: 'Guidance for QnABot on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/qnabot-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for QnABot on AWS
 
 ## Overview

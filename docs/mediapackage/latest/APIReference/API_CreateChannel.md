@@ -23,6 +23,10 @@ Content-type: application/json
       "PreferredInput": {{number}}
    },
    "InputType": "{{string}}",
+   "MultiviewConfiguration": {
+      "AvailableLayouts": [ "{{string}}" ],
+      "AvailableSources": [ "{{string}}" ]
+   },
    "OutputHeaderConfiguration": {
       "PublishMQCS": {{boolean}}
    },
@@ -73,12 +77,18 @@ Type: [InputSwitchConfiguration](API_InputSwitchConfiguration.md) object
 Required: No
 
  ** [InputType](#API_CreateChannel_RequestSyntax) **   <a name="mediapackage-CreateChannel-request-InputType"></a>
-The input type will be an immutable field which will be used to define whether the channel will allow CMAF ingest or HLS ingest. If unprovided, it will default to HLS to preserve current behavior.
+The input type is an immutable field. It defines whether the channel allows CMAF ingest, HLS ingest, or server-side multiview output. Multiview channels receive no ingest of their own. If unprovided, the value defaults to HLS.
 The allowed values are:
 +  `HLS` - The HLS streaming specification (which defines M3U8 manifests and TS segments).
 +  `CMAF` - The DASH-IF CMAF Ingest specification (which defines CMAF segments with optional DASH manifests).
++  `MULTIVIEW` – Server-side multiview. The channel receives no ingest of its own. Instead, it composites video from the source channels in its `MultiviewConfiguration` into a single tiled output stream.
 Type: String
-Valid Values: `HLS | CMAF`
+Valid Values: `HLS | CMAF | MULTIVIEW`
+Required: No
+
+ ** [MultiviewConfiguration](#API_CreateChannel_RequestSyntax) **   <a name="mediapackage-CreateChannel-request-MultiviewConfiguration"></a>
+The multiview configuration for the channel. This setting is required when `InputType` is `MULTIVIEW`, and can't be set for any other input type.
+Type: [MultiviewConfiguration](API_MultiviewConfiguration.md) object
 Required: No
 
  ** [OutputHeaderConfiguration](#API_CreateChannel_RequestSyntax) **   <a name="mediapackage-CreateChannel-request-OutputHeaderConfiguration"></a>
@@ -111,6 +121,7 @@ Content-type: application/json
 
 {
    "Arn": "string",
+   "AttachedMultiviewChannels": [ "string" ],
    "ChannelGroupName": "string",
    "ChannelName": "string",
    "CreatedAt": number,
@@ -128,6 +139,10 @@ Content-type: application/json
    },
    "InputType": "string",
    "ModifiedAt": number,
+   "MultiviewConfiguration": {
+      "AvailableLayouts": [ "string" ],
+      "AvailableSources": [ "string" ]
+   },
    "OutputHeaderConfiguration": {
       "PublishMQCS": boolean
    },
@@ -148,6 +163,12 @@ The following data is returned in JSON format by the service.
  ** [Arn](#API_CreateChannel_ResponseSyntax) **   <a name="mediapackage-CreateChannel-response-Arn"></a>
 The Amazon Resource Name (ARN) associated with the resource.
 Type: String
+
+ ** [AttachedMultiviewChannels](#API_CreateChannel_ResponseSyntax) **   <a name="mediapackage-CreateChannel-response-AttachedMultiviewChannels"></a>
+The multiview channels, in the same channel group, that list this channel as an available source. This is a read-only field. You can't delete a channel while any multiview channel still lists it as a source. Use this field to find the multiview channels that you need to update first.
+Type: Array of strings
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Pattern: `[a-zA-Z0-9_-]+`
 
  ** [ChannelGroupName](#API_CreateChannel_ResponseSyntax) **   <a name="mediapackage-CreateChannel-response-ChannelGroupName"></a>
 The name that describes the channel group. The name is the primary identifier for the channel group, and must be unique for your account in the AWS Region.
@@ -181,16 +202,21 @@ The configuration for input switching based on the media quality confidence scor
 Type: [InputSwitchConfiguration](API_InputSwitchConfiguration.md) object
 
  ** [InputType](#API_CreateChannel_ResponseSyntax) **   <a name="mediapackage-CreateChannel-response-InputType"></a>
-The input type will be an immutable field which will be used to define whether the channel will allow CMAF ingest or HLS ingest. If unprovided, it will default to HLS to preserve current behavior.
+The input type is an immutable field. It defines whether the channel allows CMAF ingest, HLS ingest, or server-side multiview output. Multiview channels receive no ingest of their own. If unprovided, the value defaults to HLS.
 The allowed values are:
 +  `HLS` - The HLS streaming specification (which defines M3U8 manifests and TS segments).
 +  `CMAF` - The DASH-IF CMAF Ingest specification (which defines CMAF segments with optional DASH manifests).
++  `MULTIVIEW` – Server-side multiview. The channel receives no ingest of its own. Instead, it composites video from the source channels in its `MultiviewConfiguration` into a single tiled output stream.
 Type: String
-Valid Values: `HLS | CMAF`
+Valid Values: `HLS | CMAF | MULTIVIEW`
 
  ** [ModifiedAt](#API_CreateChannel_ResponseSyntax) **   <a name="mediapackage-CreateChannel-response-ModifiedAt"></a>
 The date and time the channel was modified.
 Type: Timestamp
+
+ ** [MultiviewConfiguration](#API_CreateChannel_ResponseSyntax) **   <a name="mediapackage-CreateChannel-response-MultiviewConfiguration"></a>
+The multiview configuration for the channel. This is present only when `InputType` is `MULTIVIEW`.
+Type: [MultiviewConfiguration](API_MultiviewConfiguration.md) object
 
  ** [OutputHeaderConfiguration](#API_CreateChannel_ResponseSyntax) **   <a name="mediapackage-CreateChannel-response-OutputHeaderConfiguration"></a>
 The settings for what common media server data (CMSD) headers AWS Elemental MediaPackage includes in responses to the CDN. This setting is valid only when `InputType` is `CMAF`.

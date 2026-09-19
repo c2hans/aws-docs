@@ -22,8 +22,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[Esam](#cfn-medialive-channel-availsettings-esam)" : {{Esam}},
-  "[Scte35SpliceInsert](#cfn-medialive-channel-availsettings-scte35spliceinsert)" : {{Scte35SpliceInsert}},
-  "[Scte35TimeSignalApos](#cfn-medialive-channel-availsettings-scte35timesignalapos)" : {{Scte35TimeSignalApos}}
+  "[Scte35SpliceInsert](#cfn-medialive-channel-availsettings-scte35spliceinsert)" : {{Scte35SpliceInsertTimeSignalAposSettings}},
+  "[Scte35TimeSignalApos](#cfn-medialive-channel-availsettings-scte35timesignalapos)" : {{Scte35SpliceInsertTimeSignalAposSettings}}
 }
 ```
 
@@ -34,9 +34,9 @@ To declare this entity in your CloudFormation template, use the following syntax
   [Esam](#cfn-medialive-channel-availsettings-esam): {{
     Esam}}
   [Scte35SpliceInsert](#cfn-medialive-channel-availsettings-scte35spliceinsert): {{
-    Scte35SpliceInsert}}
+    Scte35SpliceInsertTimeSignalAposSettings}}
   [Scte35TimeSignalApos](#cfn-medialive-channel-availsettings-scte35timesignalapos): {{
-    Scte35TimeSignalApos}}
+    Scte35SpliceInsertTimeSignalAposSettings}}
 ```
 
 ## Properties
@@ -51,11 +51,11 @@ The ESAM settings for ad avail handling.
 `Scte35SpliceInsert`  <a name="cfn-medialive-channel-availsettings-scte35spliceinsert"></a>
 The setup for SCTE-35 splice insert handling.
 *Required*: No
-*Type*: [Scte35SpliceInsert](aws-properties-medialive-channel-scte35spliceinsert.md)
+*Type*: [Scte35SpliceInsertTimeSignalAposSettings](aws-properties-medialive-channel-scte35spliceinserttimesignalapossettings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Scte35TimeSignalApos`  <a name="cfn-medialive-channel-availsettings-scte35timesignalapos"></a>
 The setup for SCTE-35 time signal APOS handling.
 *Required*: No
-*Type*: [Scte35TimeSignalApos](aws-properties-medialive-channel-scte35timesignalapos.md)
+*Type*: [Scte35SpliceInsertTimeSignalAposSettings](aws-properties-medialive-channel-scte35spliceinserttimesignalapossettings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

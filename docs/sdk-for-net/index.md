@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/sdk-for-net/index.html
 ---
 
+---
+title: 'AWS SDK for .NET documentation'
+canonical_url: https://docs.aws.amazon.com/sdk-for-net/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS SDK for .NET documentation
 
 The SDK for .NET makes it easier for Windows developers to build .NET applications that tap into cost-effective, scalable, and reliable AWS infrastructure services such as Amazon S3, Amazon EC2, and Amazon DynamoDB.

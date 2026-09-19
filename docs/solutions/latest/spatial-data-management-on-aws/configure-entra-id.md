@@ -136,7 +136,18 @@ By default, the groups claim emits group IDs (GUIDs). To emit group display name
      ```
 
 1. Under **Map attributes between your OpenID Connect provider and your user pool**, configure the following mappings:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/configure-entra-id.html)
+
+<table>
+<thead>
+  <tr><th>User pool attribute</th><th>OIDC claim</th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>email</code> </td><td> <code>email</code> </td></tr>
+  <tr><td> <code>given_name</code> </td><td> <code>given_name</code> </td></tr>
+  <tr><td> <code>family_name</code> </td><td> <code>family_name</code> </td></tr>
+  <tr><td> <code>username</code> </td><td> <code>sub</code> </td></tr>
+</tbody>
+</table>
 
 1. Choose **Add identity provider**.
 
@@ -175,7 +186,18 @@ Then enable the identity provider ([Enable the identity provider for the app cli
 1. In the **Attributes & Claims** section, choose **Edit**.
 
 1. Confirm that the following claims are configured. Entra ID emits these standard claims by default:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/configure-entra-id.html)
+
+<table>
+<thead>
+  <tr><th>Claim</th><th>Claim name (source attribute)</th></tr>
+</thead>
+<tbody>
+  <tr><td>Email</td><td> <code>http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress</code> </td></tr>
+  <tr><td>First name</td><td> <code>http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname</code> </td></tr>
+  <tr><td>Last name</td><td> <code>http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname</code> </td></tr>
+  <tr><td>Name</td><td> <code>http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name</code> </td></tr>
+</tbody>
+</table>
 
 1. (Optional) To use Entra ID groups for permission assignment in SDMA, add a group claim:
 
@@ -228,7 +250,18 @@ You provide this metadata URL or file to Amazon Cognito in Step 6.
 1. Choose **Add identity provider**.
 
 1. After the identity provider is created, locate the **Attribute mapping** section and choose **Edit**. Map the SAML attributes to user pool attributes:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/configure-entra-id.html)
+
+<table>
+<thead>
+  <tr><th>User pool attribute</th><th>SAML attribute</th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>email</code> </td><td> <code>http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress</code> </td></tr>
+  <tr><td> <code>given_name</code> </td><td> <code>http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname</code> </td></tr>
+  <tr><td> <code>family_name</code> </td><td> <code>http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname</code> </td></tr>
+  <tr><td> <code>name</code> </td><td> <code>http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name</code> </td></tr>
+</tbody>
+</table>
 
 1. Choose **Save changes**.
 

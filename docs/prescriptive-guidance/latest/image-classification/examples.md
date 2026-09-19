@@ -17,7 +17,11 @@ Using the four-phase process described in [Building an image classification mode
 1. The team determines their service requirements. The endpoint should respond immediately, in less than 1 second. There are no machine learning personnel on the website staff, so the minimal maintenance effort is a priority.
 
 1. The team performs the following cost-benefit analysis.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/image-classification/examples.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
 1. The team determines their deployment infrastructure. Amazon Rekognition Custom Labels is selected for training and deployment because it meets the service requirements defined in phase 1. The deployment is fully managed in AWS.
 
@@ -31,7 +35,11 @@ A high-speed camera for a highway monitoring system captures images of vehicles 
 1. The team determines their service requirements. An immediate response is not necessary, but images should be processed within 24 hours.
 
 1. The team performs the following cost-benefit analysis.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/image-classification/examples.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
 1. The team determines their deployment infrastructure. Because the organization already has a data science team that can manage the model selection and maintenance, they choose to use a SageMaker AI model and deploy a SageMaker AI serverless endpoint.
 

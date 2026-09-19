@@ -19,7 +19,18 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 +  **Conversion goal:** A quantifiable metric that the app owner wants to achieve, e.g., number of purchase, purchase value, registration user number.
 +  **Touchpoint**: Events that app owner designed in the user journey to drive user towards the conversion goal, e.g., page\_view, product exposure, button\_click.
 +  **Attribution models**: Attribution models are a set of rules or data-driven algorithms used to determine how conversions are assigned to touchpoints on the conversion path. There is no one-fits-all model, choose one base on your scenario. Clickstream Analytics on AWS supports the following models:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/attribution-analysis.html)
+
+<table>
+<thead>
+  <tr><th> <b>Models</b> </th><th> <b>Definition</b> </th><th>Applicable scenerio</th><th>Consideration</th></tr>
+</thead>
+<tbody>
+  <tr><td>First-Touch Attribution </td><td>The first attribution touchpoint in completing a goal event receives 100% contribution.</td><td>For example, in the early testing phase of the homepage flash sales, the initial traffic source plays the most important roles.</td><td>Amplifies the value of the traffic source, underestimates the output of other touchpoints.</td></tr>
+  <tr><td>Last-Touch Attribution </td><td>The last attribution touchpoint in completing a goal event receives 100% contribution.</td><td>Helps understand which touchpoint led to the final decision for a transaction.</td><td>May underestimate certain touchpoints that are not closed to conversion event, but avoids the bias towards high-traffic touchpoints seen in the first-touch model.</td></tr>
+  <tr><td>Linear Attribution</td><td>All attribution touchpoints in completing a goal event evenly share the contribution (each gets an equal share).</td><td>Treats each touchpoint equally, some touchpoints may consistently serve as intermediary touchpoints. Evaluate if certain touchpoints with long chains can be eliminated or optimized.</td><td>Tends to favor touchpoints clicked frequently by users, amplifying their value (e.g., in search and recommendations).</td></tr>
+  <tr><td> Position-Based Attribution </td><td>The first and last attribution touchpoints each receive 40% contribution, while the remaining positions evenly share the remaining 20%. </td><td>Aims to distribute value across all touchpoints but emphasizes the importance of the first and last touchpoints. Acknowledges the significance of these two touchpoints compared to others.</td><td>Subject to human bias factors.</td></tr>
+</tbody>
+</table>
 
 ## How to use attribution analysis
 <a name="how-to-use-attribution-analysis"></a>

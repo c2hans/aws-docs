@@ -33,7 +33,21 @@ By upgrading the web console from earlier 1.1 versions before 1.1.6, you could c
    +  Refer to the table below to find the link for your deployment type.
    +  Paste the link in the Amazon S3 URL box.
    +  Choose **Next**.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/upgrade-the-solution.html)
+
+<table>
+<thead>
+  <tr><th> <b>Template</b> </th><th> <b>Description</b> </th></tr>
+</thead>
+<tbody>
+  <tr><td> <a href="https://solutions-reference.s3.amazonaws.com/clickstream-analytics-on-aws/latest/cloudfront-s3-control-plane-stack-global.template.json">Use Cognito for authentication</a> </td><td> Deploy as public service in AWS Regions </td></tr>
+  <tr><td> <a href="https://solutions-reference.s3.amazonaws.com/clickstream-analytics-on-aws/latest/cloudfront-s3-control-plane-stack-global-customdomain.template.json">Use Cognito for authentication with custom domain</a> </td><td> Deploy as public service with custom domain in AWS Regions </td></tr>
+  <tr><td> <a href="https://solutions-reference.s3.amazonaws.com/clickstream-analytics-on-aws/latest/cloudfront-s3-control-plane-stack-global-oidc.template.json">Use OIDC for authentication</a> </td><td> Deploy as public service in AWS Regions </td></tr>
+  <tr><td> <a href="https://solutions-reference.s3.amazonaws.com/clickstream-analytics-on-aws/latest/cloudfront-s3-control-plane-stack-global-customdomain-oidc.template.json">Use OIDC for authentication with custom domain</a> </td><td> Deploy as public service with custom domain in AWS Regions </td></tr>
+  <tr><td> <a href="https://solutions-reference.s3.amazonaws.com/clickstream-analytics-on-aws/latest/private-exist-vpc-control-plane-stack.template.json">Use OIDC for authentication within VPC</a> </td><td> Deploy as private service within VPC in AWS Regions </td></tr>
+  <tr><td> <a href="https://solutions-reference.s3.amazonaws.com/clickstream-analytics-on-aws/latest/cloudfront-s3-control-plane-stack-cn.template.json">Use OIDC for authentication with custom domain in AWS China</a> </td><td> Deploy as public service with custom domain in AWS China Regions </td></tr>
+  <tr><td> <a href="https://solutions-reference.s3.amazonaws.com/clickstream-analytics-on-aws/latest/private-exist-vpc-control-plane-stack-cn.template.json">Use OIDC for authentication within VPC in AWS China</a> </td><td> Deploy as private service within VPC in AWS China Regions </td></tr>
+</tbody>
+</table>
 
 1.  Under **Parameters**, review the parameters for the template and modify them as necessary. Refer to [Deployment](deployment.md) for details about the parameters.
 

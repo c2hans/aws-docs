@@ -22,7 +22,21 @@ This solution uses MediaLive, which is currently available in specific AWS Regio
 1. On the **Specify stack details** page, assign a name to your solution stack. For information about naming character limitations, see [IAM and AWS STS quotas, name requirements, and character limits](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-limits.html) in the *AWS Identity and Access Management User Guide*.
 
 1. Under **Parameters**, review the parameters for this solution template and modify them as necessary. This solution uses the following default values.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws-with-amazon-s3/launch-the-stack.html)
+
+<table>
+<thead>
+  <tr><th>Parameter</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td> <b>Source Input Type</b> </td><td> <code>URL_PULL</code> </td><td>Specify the input type for MediaLive: <code>RTP_PUSH</code>, <code>RTMP_PUSH</code>, <code>URL_PULL (HLS)</code>, or <code>INPUT_DEVICE</code> (AWS Elemental Link). Detailed instructions for each input type can be found in the appendix.</td></tr>
+  <tr><td> <b>Source URL</b> </td><td> <i>&lt;Optional input&gt;</i> </td><td>If you selected <code>URL_PULL</code> for <b>Source Input Type</b>, enter the URL for your source stream. By default, this parameter contains the primary demo source URL.</td></tr>
+  <tr><td> <b>Source Username</b> </td><td> <i>&lt;Optional input&gt;</i> </td><td>If you selected <code>URL_PULL</code> for <b>Source Input Type</b>, enter the username for your source stream if using authentication. This value will be stored securely in AWS Systems Manager Parameter Store.</td></tr>
+  <tr><td> <b>Source Password</b> </td><td> <i>&lt;Optional input&gt;</i> </td><td>If you selected <code>URL_PULL</code> for <b>Source Input Type</b>, enter the password for you source stream if using authentication. This value will be stored securely in AWS Systems Manager Parameter Store.</td></tr>
+  <tr><td> <b>Input Security Group CIDR Block</b> </td><td> <i>&lt;Optional input&gt;</i> </td><td>For <code>RTP_PUSH</code> and <code>RTMP_PUSH</code> input types, specify the CIDR block to restrict access to the MediaLive input endpoint. This should be the IP or IP range of you your source stream location/network.</td></tr>
+  <tr><td> <b>Encoding Profile</b> </td><td> <code>HD-720p</code> </td><td>Specify the encoding profile to use with MediaLive.</td></tr>
+  <tr><td> <b>Start MediaLive Channel</b> </td><td> <code>No</code> </td><td>Choose whether to start the MediaLive channel when the solution is created. We recommend starting the channel if using the demo preview player.</td></tr>
+</tbody>
+</table>
 
 1. Select **Next**.
 

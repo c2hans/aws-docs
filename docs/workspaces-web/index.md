@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/workspaces-web/index.html
 ---
 
+---
+title: 'Amazon WorkSpaces Secure Browser Documentation'
+canonical_url: https://docs.aws.amazon.com/workspaces-web/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon WorkSpaces Secure Browser Documentation
 
 WorkSpaces Secure Browser is a fully managed, cloud-native, hosted browser service. End users can securely access private websites and software-as-a-service (SaaS) web applications, interact with online resources, and browse the internet from a disposable container.

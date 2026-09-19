@@ -30,6 +30,11 @@ Type: String
 Valid Values: `MOBILE | CHATBOT | EMAIL | ACCOUNT_CONTACT`
 Required: Yes
 
+ ** isSensitiveEventsSubscribed **   <a name="Notifications-Type-ManagedNotificationChannelAssociationSummary-isSensitiveEventsSubscribed"></a>
+Specifies whether this channel association is subscribed to sensitive events. Defaults to false for associations created without the flag.
+Type: Boolean
+Required: No
+
  ** overrideOption **   <a name="Notifications-Type-ManagedNotificationChannelAssociationSummary-overrideOption"></a>
 Controls whether users can modify channel associations for a notification configuration.
 + Values:

@@ -127,7 +127,11 @@ Evaluate the portfolio and select the migration strategies as follows:
 1. Review all of the technical and business drivers you identified in the previous step, and prioritize the drivers based on your business needs.
 
 1. Map each business and technical driver to a migration strategy. The following table is an example.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-portfolio-playbook/discovery.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
 1. By weighing each business and technical driver and evaluating your portfolio at a high level, estimate how the applications should be distributed amongst each migration strategy. It is common to see conflicts between the drivers. Project stakeholders need to work together and make final decisions to resolve the conflicts. The following is an example of how you might distribute your portfolio to each migration strategy:
    + Rehost – 60%

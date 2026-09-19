@@ -12,3 +12,4 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 | GetPolicy | GET | Retrieve policy details. |
 | ListPolicies | GET | List policies with associated service count. |
 | DeletePolicy | POST | Delete a policy. |
+| ListPolicyEvents | GET | List the events in a policy's timeline. |

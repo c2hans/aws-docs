@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/rtb-fabric/index.html
 ---
 
+---
+title: 'AWS RTB Fabric'
+canonical_url: https://docs.aws.amazon.com/rtb-fabric/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS RTB Fabric
 
 AWS RTB Fabric enables ad tech firms to co-locate their real-time bidding (RTB) applications on AWS infrastructure. By providing a specialized compute and networking infrastructure, AWS RTB Fabric reduces network latency and associated costs with RTB transactions. It simplifies the integration and architecture between ad buyers and sellers, allowing ad tech companies to prioritize, filter, and enrich their RTB traffic.

@@ -28,6 +28,11 @@ Consider the following encryption best practices for this service:
 + If you are using VPC endpoints, restrict the endpoint policies and IAM policies associated with the endpoint to only authorized users, resources, and services. For more information, see [Control access to DynamoDB endpoints by using IAM policies](https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-ddb.html#iam-policies-ddb) and [Control access to services using endpoint policies](https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-access.html).
 + You can implement column-level data encryption at the application level for data that requires encryption, according to your encryption policy.
 + Configure DAX clusters to encrypt data at rest, such as data in cache, configuration data, and log files, at the time of setting up the cluster. You can't enable encryption at rest on an existing cluster. This server-side encryption helps protect data from unauthorized access through the underlying storage. DAX encryption at rest automatically integrates with AWS KMS for managing the single-service default key that is used to encrypt the clusters. If a service default key doesn't exist when an encrypted DAX cluster is created, AWS KMS automatically creates a new AWS managed key. For more information, see [DAX encryption at rest](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAXEncryptionAtRest.html).
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/encryption-best-practices/dynamodb.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
+
 + Configure DAX clusters to encrypt data in transit at the time of setting up the cluster. You can't enable encryption in transit on an existing cluster. DAX uses TLS to encrypt requests and responses between the application and the cluster, and it uses the cluster's x509 certificate to authenticate the identity of the cluster. For more information, see [DAX encryption in transit](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAXEncryptionInTransit.html).
 + In AWS Config, implement the [dax-encryption-enabled](https://docs.aws.amazon.com/config/latest/developerguide/dax-encryption-enabled.html) AWS managed rule to validate and maintain encryption of DAX clusters.

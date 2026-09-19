@@ -33,7 +33,21 @@ When you transfer multiple vaults, initiate transfers sequentially by starting a
 1.  Enter the following under **Input Parameters** on the **Execute Automation Runbook** page.
 **Note**
 To enable the data transfer to a bucket in a different region from the S3 Glacier vault, you must manually adjust the automation document's content by setting the InputPayload parameter ` allow_cross_region_data_transfer` to true. By default, the Guidance restricts cross-region transfers to avoid potential costs.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3/step-2-launch-the-transfer-workflow.html)
+
+<table>
+<thead>
+  <tr><th> Parameter </th><th> Value </th><th> Notes </th></tr>
+</thead>
+<tbody>
+  <tr><td><b>AcknowledgeAdditionalCostForCrossRegionTransfer</b></td><td><code>NO</code></td><td>Select <code>YES</code> only if you are aware of the excessive additional cost when selecting a destination bucket in a different region than the S3 Glacier vault. See <a href="https://aws.amazon.com/s3/glacier/pricing/#Data_transfer_pricing">Amazon S3 Glacier data transfer pricing</a>.</td></tr>
+  <tr><td><b>ProvidedInventory</b></td><td>{{&lt;Requires input&gt;}}</td><td>Input with two options [<code>YES,NO</code>] indicate if the inventory is provided.</td></tr>
+  <tr><td><b>VaultName</b></td><td>{{&lt;Requires input&gt;}}</td><td> Enter the name of your Amazon Glacier vault. </td></tr>
+  <tr><td><b>WorkflowRun</b></td><td>{{&lt;Requires input&gt;}} </td><td>Input to specify the workflow identifier of the workflow that needs to be resumed. Input to specify the workflow identifier of the workflow that needs to be resumed.</td></tr>
+  <tr><td><b>Description</b></td><td> <i>&lt;Optional input&gt;</i> </td><td> Provide an extended description for this migration. </td></tr>
+  <tr><td><b>NamingOverrideFile</b></td><td> <i>&lt;Optional input&gt;</i> </td><td>Provide a presigned URL of the <b>NamingOverride</b> ﬁle and the bucket that is storing the ﬁle if you want to <a href="architecture-overview.md#creating-custom-file-names-for-s3-objects">customize S3 object key names</a>.</td></tr>
+  <tr><td><b>S3StorageClass</b></td><td>{{&lt;Requires input&gt;}}</td><td>Select the S3 storage class for the migrated archives. See <a href="https://aws.amazon.com/s3/pricing/">Amazon S3 pricing</a>. </td></tr>
+</tbody>
+</table>
 
 1. Choose **Execute**.
 
@@ -73,7 +87,20 @@ To monitor the progress of the transfer after launching the workflow, please ref
 1.  Enter the following under **Input Parameters** on the **Execute Automation Runbook** page.
 **Note**
 To enable the data transfer to a bucket in a different region from the S3 Glacier vault, you must manually adjust the automation document's content by setting the InputPayload parameter `allow_cross_region_data_transfer `to true. By default, the Guidance restricts cross-region transfers to avoid potential costs.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3/step-2-launch-the-transfer-workflow.html)
+
+<table>
+<thead>
+  <tr><th> Parameter </th><th> Value </th><th> Notes </th></tr>
+</thead>
+<tbody>
+  <tr><td><b>AcknowledgeAdditionalCostForCrossRegionTransfer</b></td><td><code>NO</code></td><td>Select <code>YES</code> only if you are aware of the excessive additional cost when selecting a destination bucket in a different region than the S3 Glacier vault. See <a href="https://aws.amazon.com/s3/glacier/pricing/#Data_transfer_pricing">Amazon S3 Glacier data transfer pricing</a>.</td></tr>
+  <tr><td><b>ProvidedInventory</b></td><td><code>Yes</code></td><td></td></tr>
+  <tr><td><b>WorkflowRun</b></td><td>{{&lt;Requires input&gt;}}</td><td> Provide the name of your workflow run, which becomes the <code>workflow_run</code> value.</td></tr>
+  <tr><td><b>Description</b></td><td> <i>&lt;Optional input&gt;</i> </td><td> Provide an extended description for this migration. </td></tr>
+  <tr><td><b>NamingOverrideFile</b></td><td> <i>&lt;Optional input&gt;</i> </td><td>Provide a presigned URL of the <b>NamingOverride</b> ﬁle and the bucket that is storing the ﬁle if you want to <a href="architecture-overview.md#creating-custom-file-names-for-s3-objects">customize S3 object key names</a>.</td></tr>
+  <tr><td><b>S3StorageClass</b></td><td>{{&lt;Requires input&gt;}}</td><td>Select the S3 storage class for the migrated archives. See <a href="https://aws.amazon.com/s3/pricing/">Amazon S3 pricing</a>. </td></tr>
+</tbody>
+</table>
 
 1. Choose **Execute** It takes approximately less than 1 minute to execute the document and launch the transfer. To confirm that the transfer process started successfully, refer to the ***runScript*** step status under the ***Executed Steps*** section.
 

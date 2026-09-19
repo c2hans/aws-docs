@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/research-data-monetization-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Research Data Monetization on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/research-data-monetization-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Research Data Monetization on AWS
 
 Capture measurable business value leveraging data-driven insights

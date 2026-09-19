@@ -202,17 +202,29 @@ The session duration is 12 hours. We recommend that users log out of both Amazon
 ## Move Amazon SES out of sandbox mode
 <a name="getting-started-ses"></a>
 
-Amazon Connect Talent uses Amazon SES to send email to candidates. New Amazon SES accounts start in the sandbox, where you can send email only to verified addresses and lower sending limits apply. To send email to candidates who are not verified addresses, request production access for Amazon SES.
+Amazon Connect Talent uses Amazon SES to send evaluation invitations to candidates by email. New Amazon SES accounts start in the sandbox, where you can send email only to verified addresses and lower sending limits apply. To send invitations to candidates who are not verified addresses, request production access for Amazon SES.
 
 **Important**
-Until you move Amazon SES out of sandbox mode, Amazon Connect Talent can't send evaluations to candidates by email.
+Until you move Amazon SES out of sandbox mode, Amazon Connect Talent can't send evaluations to candidates by email or support internal testing.
 
-1. Open the Amazon SES console.
+To request production access:
 
-1. Choose your AWS Region, and then request production access.
+1. Open the Amazon SES [Get set up](https://console.aws.amazon.com/ses/home#/get-set-up) page.
 
-1. Provide the details about your sending use case, and then submit your request.
+1. In the **Request production access** card, choose **Request production access**.
 
-For instructions, see [Request production access (moving out of the Amazon SES sandbox)](https://docs.aws.amazon.com/ses/latest/dg/request-production-access.html) in the *Amazon Simple Email Service Developer Guide*.
+1. For **Mail type**, choose **Transactional**.
+
+1. For **Website URL**, enter your organization's website URL.
+
+1. (Optional) For **Additional contacts**, enter up to four email addresses, separated by commas, where you want to receive communications about your request.
+
+1. For **Preferred contact language**, choose **English** or **Japanese**.
+
+1. Under **Acknowledgement**, select the box to agree to the AWS Service Terms and Acceptable Use Policy.
+
+1. Choose **Submit request**.
+
+After you submit, you can't edit your details until the review is complete. The AWS Support team provides an initial response within 24 hours. For more information, see [Request production access (moving out of the Amazon SES sandbox)](https://docs.aws.amazon.com/ses/latest/dg/request-production-access.html) in the *Amazon Simple Email Service Developer Guide*.
 
 After you create your instance, see [Set up your instance](getting-started-setup.md) to configure it for your recruiting team.

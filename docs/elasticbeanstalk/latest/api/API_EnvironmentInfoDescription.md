@@ -18,7 +18,7 @@ Required: No
  ** InfoType **
 The type of information retrieved.
 Type: String
-Valid Values: `tail | bundle`
+Valid Values: `tail | bundle | analyze`
 Required: No
 
  ** Message **

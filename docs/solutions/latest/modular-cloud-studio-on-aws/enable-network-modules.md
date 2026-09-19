@@ -23,7 +23,20 @@ Follow these steps to enable the Network modules.
 1. For **Select Network** module, select Create Amazon VPC and choose **Next**.
 
 1. For **Configure VPC settings**, review the parameters for this module and modify them as necessary. This module uses the following default values.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/enable-network-modules.html)
+
+<table>
+<thead>
+  <tr><th> <b>Parameter</b> </th><th> <b>Default</b> </th><th> <b>Description</b> </th></tr>
+</thead>
+<tbody>
+  <tr><td> <b>Availability Zones</b> </td><td> <code>&lt;Region&gt;a, &lt;Region&gt;b</code> </td><td>(Select 2) List of Availability Zones to use for the subnets in the VPC. The logical order is preserved.</td></tr>
+  <tr><td> <b>VPC CIDR</b> </td><td> <code>10.0.0.0/16</code> </td><td>CIDR block for the VPC.</td></tr>
+  <tr><td> <b>Private Subnet CIDR List</b> </td><td> <code>10.0.0.0/19, 10.0.32.0/19</code> </td><td>Comma delimited list of CIDR blocks for private subnets 1 and 2, located in Availability Zones 1 and 2, respectively.<br /> <b>Note:</b> CIDR ranges in each Region must not overlap. The default values provided don’t overlap with each other, and are within the default VPC CIDR range provided.</td></tr>
+  <tr><td> <b>Public Subnet CIDR List</b> </td><td> <code>10.0.128.0/20, 10.0.144.0/20</code> </td><td>Comma delimited list of CIDR blocks for public subnets 1 and 2, located in Availability Zones 1 and 2, respectively.<br /> <b>Note:</b> CIDR ranges in each Region must not overlap. The default values provided don’t overlap with each other, and are within the default VPC CIDR range provided.</td></tr>
+  <tr><td> <b>Enable VPC Flow Logs</b> </td><td> <code>true</code> </td><td>Set to <code>true</code> to create VPC flow logs for the VPC and publish them to CloudWatch. If you set it to <code>false</code>, the VPC flow logs won’t be created.</td></tr>
+  <tr><td> <b>VPC Flow Logs Traffic Type</b> </td><td> <code>REJECT</code> </td><td>The type of traffic to log. You can log traffic that the resource accepts (<code>ACCEPT</code>) or rejects (<code>REJECT</code>), or <code>ALL</code> Traffic.</td></tr>
+</tbody>
+</table>
 
 1. For **Configure Tag Settings**, review the tags for this module and modify them as necessary. By default, this module uses tags defined in the main solution stack.
 
@@ -117,7 +130,22 @@ The VPC must exist in the same account and Region where the Network module is be
 1. For **Select Network** module, select **Import Amazon VPC** and choose **Next**.
 
 1. For **Configure VPC settings**, review the parameters for this module and modify them as necessary. This module uses the following default values.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/enable-network-modules.html)
+
+<table>
+<thead>
+  <tr><th> <b>Parameter</b> </th><th> <b>Default</b> </th><th> <b>Description</b> </th><th> <b>Notes</b> </th></tr>
+</thead>
+<tbody>
+  <tr><td> <b>VPC ID</b> </td><td> {{&lt;Requires input&gt;}} </td><td>Identifier of the existing VPC.</td><td></td></tr>
+  <tr><td> <b>VPC CIDR</b> </td><td> {{&lt;Requires input&gt;}} </td><td>VPC CIDR block.</td><td></td></tr>
+  <tr><td> <b>Private Subnet IDs</b> </td><td> {{&lt;Requires input&gt;}} </td><td>Exactly two comma separated Subnet IDs for the private subnets.</td><td></td></tr>
+  <tr><td> <b>Public Subnet IDs</b> </td><td> {{&lt;Requires input&gt;}} </td><td>Exactly two comma separated Subnet IDs for the public subnets.</td><td></td></tr>
+  <tr><td> <b>Private Subnet Route Table IDs</b> </td><td> {{&lt;Requires input&gt;}} </td><td>Exactly two comma separated Route table IDs for private subnets.</td><td>See Notes below</td></tr>
+  <tr><td> <b>Public Subnet Route Table IDs</b> </td><td> {{&lt;Requires input&gt;}} </td><td>Exactly two comma separated Route table IDs for public subnets.</td><td>See Notes below</td></tr>
+  <tr><td> <b>Availability Zones</b> </td><td> {{&lt;Requires input&gt;}} </td><td>(Select 2) List of Availability Zones to use for the subnets in the VPC. The logical order is preserved.</td><td></td></tr>
+</tbody>
+</table>
+
 **Note**
 If there is only one Route Table available, you can duplicate the entry. MCS expects exactly two comma delimited values to be provided. For example:
 

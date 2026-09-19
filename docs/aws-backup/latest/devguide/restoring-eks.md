@@ -20,7 +20,7 @@ AWS Backup will provide a limited set of options for creating a new EKS cluster 
 | --- | --- | --- |
 | Existing cluster restore | Restore to the source EKS cluster or existing EKS cluster | Restores all Kubernetes resources and persistent volumes to existing EKS clusters. All restores are non-destructives and existing objects are not overwritten. For objects that are skipped, you can subscribe to [SNS Notifications](https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-notifications.html) |
 | New cluster restore | Creates a new Amazon EKS cluster as part of your EKS restore | Restore creates new EKS cluster and restores all Kubernetes resources and persistent volumes to newly created cluster |
-| Namespace restore | Existing Amazon EKS cluster | Restores only specified namespaces, their Kubernetes resources and corresponding persistent storage restores are non-destructives and existing objects are not overwritten. For objects that are skipped, you can subscribe to SNS Notifications |
+| Namespace restore | Existing Amazon EKS cluster | Restores only specified namespaces, their Kubernetes resources and corresponding persistent storage restores are non-destructive and existing objects are not overwritten. All cluster-scoped resources will also be restored. For objects that are skipped, you can subscribe to SNS Notifications |
 | Peristent Storage Restore | Persistent Storage Dependent | Restore individual persistent storage as standalone restores. See Restore Behavior of [Amazon EBS](https://docs.aws.amazon.com/aws-backup/latest/devguide/restoring-ebs.html), [Amazon S3](https://docs.aws.amazon.com/aws-backup/latest/devguide/restoring-s3.html), [Amazon EFS](https://docs.aws.amazon.com/aws-backup/latest/devguide/restoring-efs.html). |
 
 **Permissions**
@@ -59,7 +59,7 @@ Before you begin an EKS restore job, review the following. If you are restoring 
 
 When you restore the composite Amazon AWS Backup, you choose the restore type and target destination. You can choose to restore to the source EKS cluster, an existing EKS cluster or create a new EKS cluster as the restore target. For new EKS clusters, you can choose to use the same existing infrastructure settings (for example, VPC, subnets) as the backed up cluster or configure new ones. AWS Backup is designed to perform a non-destructive restore that doesn't overwrite existing resources.
 
-For namespace restores, you can specify up to 5 namespaces to restore selectively. Only namespace-scoped resources are restored, while cluster-scoped resources are excluded except for related persistent volumes.
+For namespace restores, you can specify up to 5 namespaces to restore selectively. We will also restore all cluster-scoped resources as well.
 
 As an advanced setting you can opt to change the restore order of the Kubernetes Objects. By Default, AWS Backup will restore all Kubernetes objects in the following order:
 

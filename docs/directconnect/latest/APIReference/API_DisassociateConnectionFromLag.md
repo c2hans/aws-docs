@@ -45,6 +45,7 @@ Required: Yes
    "awsDeviceV2": "string",
    "awsLogicalDeviceId": "string",
    "bandwidth": "string",
+   "billingMode": "string",
    "connectionId": "string",
    "connectionName": "string",
    "connectionState": "string",
@@ -112,6 +113,11 @@ Type: String
  ** [bandwidth](#API_DisassociateConnectionFromLag_ResponseSyntax) **   <a name="DX-DisassociateConnectionFromLag-response-bandwidth"></a>
 The bandwidth of the connection.
 Type: String
+
+ ** [billingMode](#API_DisassociateConnectionFromLag_ResponseSyntax) **   <a name="DX-DisassociateConnectionFromLag-response-billingMode"></a>
+The billing mode of the connection.
+Type: String
+Valid Values: `PayAsYouGo | FlatRateTier1 | FlatRateTier2 | FlatRateTier3 | FlatRateTier4 | FlatRateTier5 | PortPairFlatRateTier1 | PortPairFlatRateTier2 | PortPairFlatRateTier3 | PortPairFlatRateTier4 | PortPairFlatRateTier5`
 
  ** [connectionId](#API_DisassociateConnectionFromLag_ResponseSyntax) **   <a name="DX-DisassociateConnectionFromLag-response-connectionId"></a>
 The ID of the connection.

@@ -11,7 +11,21 @@ AWS Elemental provides the following management information bases (MIBs) for use
 
 ELEMENTAL-MIB
 This is the base MIB for all AWS Elemental products.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-statmux/latest/configguide/notification-polling-mibs.html)
+
+<table>
+<thead>
+  <tr><th>Variable</th><th>Values</th></tr>
+</thead>
+<tbody>
+  <tr><td><code>serviceStatus</code></td><td> <ul><li> 0 if the AWS Elemental Statmux isn't running. </li><li> 1 if it is running. </li></ul> </td></tr>
+  <tr><td><code>firewallSettings</code></td><td> <ul><li> 0 if the node firewall is off. </li><li> 1 if it is on. </li></ul> </td></tr>
+  <tr><td><code>networkSettings</code></td><td>Always 1. Required for some network management systems.</td></tr>
+  <tr><td><code>mountPoints</code></td><td>Number of user-mounted filesystems in <code>/mnt</code>.</td></tr>
+  <tr><td><code>version</code></td><td>The version of the AWS Elemental Statmux node.</td></tr>
+  <tr><td><code>httpdStatus</code></td><td> <ul><li> 0 if the <code>httpd</code> service isn't running. </li><li> 1 if it is running. </li></ul> </td></tr>
+  <tr><td><code>databaseBackup</code></td><td> <ul><li> 0 if writes (starting backups) is allowed. </li><li> 1 if they aren't allowed. </li></ul> </td></tr>
+</tbody>
+</table>
 
 ELEMENTAL-MIB comes installed on AWS Elemental Statmux. It's located in `/opt/elemental_se/web/public/mib/`.
 

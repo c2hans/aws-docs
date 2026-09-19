@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/generative-ai-model-optimization-using-amazon-sagemaker/index.html
 ---
 
+---
+title: 'Guidance for Generative AI Model Optimization Using Amazon SageMaker'
+canonical_url: https://docs.aws.amazon.com/solutions/generative-ai-model-optimization-using-amazon-sagemaker/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Generative AI Model Optimization Using Amazon SageMaker
 
 Optimizing generative AI models for speed and efficiency

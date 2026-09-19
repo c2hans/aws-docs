@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/blocks/index.html
 ---
 
+---
+title: 'AWS Blocks Documentation'
+canonical_url: https://docs.aws.amazon.com/blocks/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Blocks Documentation
 
 AWS Blocks is an open source TypeScript framework that lets you compose backend capabilities from pre-built modules that generate infrastructure from code, letting you focus on business logic instead of infrastructure boilerplate.

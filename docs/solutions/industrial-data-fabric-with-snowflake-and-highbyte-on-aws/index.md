@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/industrial-data-fabric-with-snowflake-and-highbyte-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Industrial Data Fabric with Snowflake and HighByte on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/industrial-data-fabric-with-snowflake-and-highbyte-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Industrial Data Fabric with Snowflake and HighByte on AWS
 
 ## Overview

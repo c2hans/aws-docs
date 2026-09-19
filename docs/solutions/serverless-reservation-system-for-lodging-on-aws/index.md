@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/serverless-reservation-system-for-lodging-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Serverless Reservation System for Lodging on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/serverless-reservation-system-for-lodging-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Serverless Reservation System for Lodging on AWS
 
 ## Overview

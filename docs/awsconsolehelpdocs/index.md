@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/index.html
 ---
 
+---
+title: 'AWS Management Console Documentation'
+canonical_url: https://docs.aws.amazon.com/awsconsolehelpdocs/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Management Console Documentation
 
 The AWS Management Console provides a unified interface for accessing and interacting with a wide range of AWS services. As well as providing intuitive tools for discovering new services, the console keeps track of your recently visited services and your favorites. You can also customize your home page experience by adding widgets that organize options around themes such as service health, cost and usage, and solution wizards.

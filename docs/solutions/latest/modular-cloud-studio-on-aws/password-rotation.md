@@ -60,7 +60,17 @@ After resetting passwords in Active Directory, you must update the corresponding
 1. Navigate to the [AWS Secrets Manager console](https://console.aws.amazon.com/secretsmanager/)
 
 1. Update the following secrets with their corresponding new passwords:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/password-rotation.html)
+
+<table>
+<thead>
+  <tr><th>User</th><th>Secret Name Pattern</th></tr>
+</thead>
+<tbody>
+  <tr><td>StudioAdmin</td><td> <code>/[MCSDeploymentId]/Identity/StudioAdminActiveDirectoryLoginCredentials</code> </td></tr>
+  <tr><td>SA_AdConnectorUser</td><td> <code>/[MCSDeploymentId]/Identity/AdConnectorServiceAccountActiveDirectoryLoginCredentials</code> </td></tr>
+  <tr><td>SA_McsModulesUser</td><td> <code>/[MCSDeploymentId]/Identity/McsModulesServiceAccountActiveDirectoryLoginCredentials</code> </td></tr>
+</tbody>
+</table>
 
 1. For each secret:
 

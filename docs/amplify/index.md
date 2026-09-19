@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/amplify/index.html
 ---
 
+---
+title: 'AWS Amplify Documentation'
+canonical_url: https://docs.aws.amazon.com/amplify/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Amplify Documentation
 
 Use AWS Amplify to develop and deploy cloud-powered mobile and web applications. Amplify provides frontend libraries, UI components, and backend building for fullstack applications on AWS. Amplify Hosting provides a continuous delivery and hosting service for fullstack cloud applications.

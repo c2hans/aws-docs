@@ -21,7 +21,22 @@ The template launches in the US East (N.Virginia) Region by default. To launch t
 1. On the **Specify stack** details page, enter a stack name for your solution stack. For information about naming character limitations, see [IAM and AWS STS quotas, name requirements, and character limits](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-limits.html) in the AWS Identity and Access Management User Guide.
 
 1. Under **Parameters**, review the parameters for this solution template and modify them as necessary. This solution uses the following default values.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/step4-deploy-compute-stack.html)
+
+<table>
+<thead>
+  <tr><th>Parameter</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td> <b>Namespace</b> </td><td> {{myisb}} </td><td>Use the same namespace from the Account Pool stack deployment of Innovation Sandbox. For example, <b>myisb</b>.</td></tr>
+  <tr><td> <b>Org Management Account Id</b> </td><td> {{&lt;Requires input&gt;}} </td><td>The AWS Account Id of the Organization Management account where the AccountPool stack is deployed.</td></tr>
+  <tr><td> <b>IDC Account Id</b> </td><td> {{&lt;Requires input&gt;}} </td><td>The AWS Account Id where the IAM Identity Center is configured.</td></tr>
+  <tr><td> <b>Allow Listed IP Ranges</b> </td><td>0.0.0.0/1,128.0.0.0/1</td><td>Comma separated list of CIDR ranges that allow access to the API.</td></tr>
+  <tr><td> <b>Use Stable Tagging</b> </td><td>Yes</td><td>Automatically use the most up to date and secure account cleaner image up until the next minor release.<br /> <b>Note</b>: Selecting 'No' will pull the image as originally released, without any security updates.</td></tr>
+  <tr><td> <b>Accept Solution Terms of Use</b> </td><td> {{&lt;Requires input&gt;}} </td><td>Solution’s terms of use statement for review. The solution will not deploy unless you enter <b>Accept</b> in the parameter field.</td></tr>
+  <tr><td> <b>Custom Domain Name</b> </td><td> {{&lt;Optional&gt;}} </td><td>A single fully-qualified domain to serve the solution on (for example, {{isb.example.com}}). If empty, the CloudFront distribution URL is used. No wildcards, scheme, or path. To attach this domain (with TLS) to the CloudFront distribution, also provide <b>Custom Domain Certificate ARN</b>. If you front the solution with your own edge or proxy, set this to your public domain and leave the certificate ARN empty. For details, refer to <a href="custom-domain.md">Configure a custom domain</a>.</td></tr>
+  <tr><td> <b>Custom Domain Certificate ARN</b> </td><td> {{&lt;Optional&gt;}} </td><td>The ARN of an existing AWS Certificate Manager (ACM) certificate in the <code>us-east-1</code> Region that covers the <b>Custom Domain Name</b> (a wildcard certificate is supported). Provide this to serve the domain on the CloudFront distribution. Leave empty if you terminate TLS on your own edge or proxy.</td></tr>
+</tbody>
+</table>
 
 1. Choose **Next**.
 

@@ -33,7 +33,11 @@ The **ssm **and **ssmmessages **endpoints are optional and currently created to 
 1. Enable peering between the source and staging VPCs, and update both VPC route tables.
 
 1. Create a security group in the source and staging VPCs to allow the following ports.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/rehost-servers-over-private-networks-mgn/deployment.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
 1. Initialize MGN in the staging area AWS Region by updating the staging area subnet details and enabling communication over private IP.
 

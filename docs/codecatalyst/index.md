@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/codecatalyst/index.html
 ---
 
+---
+title: 'Amazon CodeCatalyst Documentation'
+canonical_url: https://docs.aws.amazon.com/codecatalyst/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Amazon CodeCatalyst Documentation
 
 Amazon CodeCatalyst is a cloud-based collaboration space for software development teams. CodeCatalyst provides one place where you can plan work, collaborate on code, and build, test, and deploy applications with continuous integration/continuous delivery (CI/CD) tools.

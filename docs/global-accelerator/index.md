@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/global-accelerator/index.html
 ---
 
+---
+title: 'AWS Global Accelerator Documentation'
+canonical_url: https://docs.aws.amazon.com/global-accelerator/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Global Accelerator Documentation
 
 AWS Global Accelerator is a network layer service in which you create accelerators to improve the security, availability, and performance of your applications for local and global users. Depending on the type of accelerator that you choose, you can gain additional benefits, such as improving availability or mapping users to specific destination endpoints.

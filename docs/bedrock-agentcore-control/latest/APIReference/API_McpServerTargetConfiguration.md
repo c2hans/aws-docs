@@ -23,7 +23,7 @@ Valid Values: `DEFAULT | DYNAMIC`
 Required: No
 
  ** mcpToolSchema **   <a name="bedrockagentcorecontrol-Type-McpServerTargetConfiguration-mcpToolSchema"></a>
-The tool schema configuration for the MCP server target. Supported only when the credential provider is configured with an authorization code grant type. Dynamic tool discovery/synchronization will be disabled when target is configured with mcpToolSchema.
+A static tool list for the MCP server target. It is supported for all credential providers. Dynamic tool discovery/synchronization will be disabled when a target is configured with mcpToolSchema.
 Type: [McpToolSchemaConfiguration](API_McpToolSchemaConfiguration.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: No

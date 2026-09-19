@@ -38,7 +38,18 @@ To create the OIDC identity provider in Amazon Cognito:
    +  **Issuer URL** – The OIDC issuer URL for your identity provider. Amazon Cognito discovers the authorization, token, and JSON Web Key Set (JWKS) endpoints from the issuer’s `/.well-known/openid-configuration` document.
 
 1. Under **Map attributes between your OpenID Connect provider and your user pool**, map the provider claims to user pool attributes. At a minimum, map `email`. Typical mappings are:
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/external-identity-provider.html)
+
+<table>
+<thead>
+  <tr><th>User pool attribute</th><th>OIDC claim</th></tr>
+</thead>
+<tbody>
+  <tr><td> <code>email</code> </td><td> <code>email</code> </td></tr>
+  <tr><td> <code>given_name</code> </td><td> <code>given_name</code> </td></tr>
+  <tr><td> <code>family_name</code> </td><td> <code>family_name</code> </td></tr>
+  <tr><td> <code>username</code> </td><td> <code>sub</code> </td></tr>
+</tbody>
+</table>
 
 1. Choose **Add identity provider**.
 

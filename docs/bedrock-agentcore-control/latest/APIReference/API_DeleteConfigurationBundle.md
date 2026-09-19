@@ -37,6 +37,7 @@ HTTP/1.1 202
 Content-type: application/json
 
 {
+   "bundleArn": "string",
    "bundleId": "string",
    "status": "string"
 }
@@ -48,6 +49,11 @@ Content-type: application/json
 If the action is successful, the service sends back an HTTP 202 response.
 
 The following data is returned in JSON format by the service.
+
+ ** [bundleArn](#API_DeleteConfigurationBundle_ResponseSyntax) **   <a name="bedrockagentcorecontrol-DeleteConfigurationBundle-response-bundleArn"></a>
+The Amazon Resource Name (ARN) of the deleted configuration bundle.
+Type: String
+Pattern: `arn:aws[a-zA-Z-]*:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:configuration-bundle/[a-zA-Z][a-zA-Z0-9-_]{0,99}-[a-zA-Z0-9]{10}`
 
  ** [bundleId](#API_DeleteConfigurationBundle_ResponseSyntax) **   <a name="bedrockagentcorecontrol-DeleteConfigurationBundle-response-bundleId"></a>
 The unique identifier of the deleted configuration bundle.

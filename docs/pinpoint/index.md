@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/pinpoint/index.html
 ---
 
+---
+title: 'Amazon Pinpoint Documentation'
+canonical_url: https://docs.aws.amazon.com/pinpoint/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Amazon Pinpoint Documentation
 
 Amazon Pinpoint helps you engage your customers by sending them email, SMS and voice messages, and push notifications. You can use Amazon Pinpoint to send targeted messages (such as promotions and retention campaigns), as well as transactional messages (such as order confirmations and password reset messages).

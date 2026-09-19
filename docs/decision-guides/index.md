@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/decision-guides/index.html
 ---
 
+---
+title: 'AWS Decision Guides'
+canonical_url: https://docs.aws.amazon.com/decision-guides/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Decision Guides
 
 Decision guides provide structured comparisons and guidance to help you evaluate AWS services, understand the criteria that inform your choices, and select the best options for your workloads.

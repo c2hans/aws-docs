@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/cognito/index.html
 ---
 
+---
+title: 'Amazon Cognito Documentation'
+canonical_url: https://docs.aws.amazon.com/cognito/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Cognito Documentation
 
 Amazon Cognito handles user authentication and authorization for your web and mobile apps. With user pools, you can easily and securely add sign-up and sign-in functionality to your apps. With identity pools (federated identities), your apps can get temporary credentials that grant users access to specific AWS resources, whether the users are anonymous or are signed in.

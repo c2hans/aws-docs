@@ -207,7 +207,11 @@ The CodeBuild jobs in the config pipeline use this role.
 **To set up the AWS Systems Manager parameters**
 
 1. Follow the instructions in [Creating Parameter Store parameters in Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-paramstore-su-create.html) in order to create the Systems Manager parameters in the following table. These parameters are used in the CloudFormation template that deploys the configuration pipeline.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/enterprise-blueprint-factory/setup.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
 
 **To update the CloudFormation templates**
 

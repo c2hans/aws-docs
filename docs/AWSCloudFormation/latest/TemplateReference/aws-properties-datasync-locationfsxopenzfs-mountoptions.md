@@ -41,5 +41,5 @@ You can specify the following NFS versions:
 + ** [NFSv4.1](https://tools.ietf.org/html/rfc5661) **: Stateful protocol version that supports sessions, directory delegations, and parallel data processing. Version 4.1 also includes all features available in version 4.0.
 *Required*: No
 *Type*: String
-*Allowed values*: `AUTOMATIC | NFS3 | NFS4_0 | NFS4_1`
+*Allowed values*: `AUTOMATIC | NFS3 | NFS4_0 | NFS4_1 | NFS4_2`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

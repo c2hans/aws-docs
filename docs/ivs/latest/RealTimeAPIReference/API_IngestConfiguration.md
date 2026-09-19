@@ -27,7 +27,7 @@ Required: Yes
 ID of the participant within the stage.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 64.
-Pattern: `[a-zA-Z0-9-]*`
+Pattern: `[a-zA-Z0-9-_]*`
 Required: Yes
 
  ** stageArn **   <a name="ivsrealtimeeapireference-Type-IngestConfiguration-stageArn"></a>
@@ -67,7 +67,7 @@ Type: Boolean
 Required: No
 
  ** redundantIngestCredentials **   <a name="ivsrealtimeeapireference-Type-IngestConfiguration-redundantIngestCredentials"></a>
-A list of redundant ingest credentials, present only when `redundantIngest` is set to `true`. See Redundant Ingest in IVS RTMP Publishing for details.
+A list of redundant ingest credentials, present only when `redundantIngest` is set to `true`. See [Redundant Ingest](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-rtmp-publishing.html#redundant-ingest) in *IVS RTMP Publishing* for details.
 Type: Array of [RedundantIngestCredential](API_RedundantIngestCredential.md) objects
 Required: No
 

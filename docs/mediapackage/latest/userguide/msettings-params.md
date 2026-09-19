@@ -18,7 +18,18 @@ Use the following guidelines when constructing query parameters:
 + Reserved characters in the queries must be URL encoded as indicated in the [URI: General Syntax](https://datatracker.ietf.org/doc/html/rfc3986) standard.
 **Important**
 At a minimum, if your query includes multiple parameters, the following characters in the query must be URL encoded. If they're not, MediaPackage processes just the first query parameter in the string.
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/userguide/msettings-params.html)
+
+<table>
+<thead>
+  <tr><th>Character</th><th>Encoded value</th></tr>
+</thead>
+<tbody>
+  <tr><td>: (colon)</td><td>%3A</td></tr>
+  <tr><td>; (semicolon)</td><td>%3B</td></tr>
+  <tr><td>, (comma)</td><td>%2C</td></tr>
+  <tr><td>+ (plus)</td><td>%2B</td></tr>
+</tbody>
+</table>
 
 If the query is malformed, MediaPackage returns an incomplete or empty manifest. For query syntax, see the following section.
 

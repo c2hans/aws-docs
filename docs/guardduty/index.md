@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/guardduty/index.html
 ---
 
+---
+title: 'Amazon GuardDuty'
+canonical_url: https://docs.aws.amazon.com/guardduty/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon GuardDuty
 
 Amazon GuardDuty is a continuous security monitoring service. Amazon GuardDuty can help to identify unexpected and potentially unauthorized or malicious activity in your AWS environment.

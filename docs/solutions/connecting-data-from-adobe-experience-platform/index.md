@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/connecting-data-from-adobe-experience-platform/index.html
 ---
 
+---
+title: 'Guidance for Connecting Data from Adobe Experience Platform® to AWS Clean Rooms'
+canonical_url: https://docs.aws.amazon.com/solutions/connecting-data-from-adobe-experience-platform/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Connecting Data from Adobe Experience Platform® to AWS Clean Rooms
 
 ## Overview

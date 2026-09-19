@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/workspaces-thin-client/index.html
 ---
 
+---
+title: 'Amazon WorkSpaces Thin Client'
+canonical_url: https://docs.aws.amazon.com/workspaces-thin-client/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Amazon WorkSpaces Thin Client
 
 Cost-effective, easy-to-manage thin client to securely access AWS End User Computing services.

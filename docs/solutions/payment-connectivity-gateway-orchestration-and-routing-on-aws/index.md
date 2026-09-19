@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/payment-connectivity-gateway-orchestration-and-routing-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Payment Connectivity, Gateway, Orchestration & Routing on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/payment-connectivity-gateway-orchestration-and-routing-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Payment Connectivity, Gateway, Orchestration & Routing on AWS
 
 Transform your global payments network with today's technology

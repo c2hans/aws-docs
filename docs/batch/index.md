@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/batch/index.html
 ---
 
+---
+title: 'AWS Batch Documentation'
+canonical_url: https://docs.aws.amazon.com/batch/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Batch Documentation
 
 AWS Batch enables you to run batch computing workloads on the AWS Cloud. Batch computing is a common way for developers, scientists, and engineers to access large amounts of compute resources. AWS Batch removes the undifferentiated heavy lifting of configuring and managing the required infrastructure.

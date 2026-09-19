@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/event-driven-application-autoscaling-with-keda-on-amazon-eks/index.html
 ---
 
+---
+title: 'Guidance for Event-Driven Application Autoscaling with KEDA on Amazon EKS'
+canonical_url: https://docs.aws.amazon.com/solutions/event-driven-application-autoscaling-with-keda-on-amazon-eks/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Event-Driven Application Autoscaling with KEDA on Amazon EKS
 
 Integrate KEDA with a Kubernetes cluster to achieve event-driven scalability

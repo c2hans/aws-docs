@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/secure-access-to-external-package-repositories-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Secure Access to External Package Repositories on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/secure-access-to-external-package-repositories-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Secure Access to External Package Repositories on AWS
 
 ## Overview

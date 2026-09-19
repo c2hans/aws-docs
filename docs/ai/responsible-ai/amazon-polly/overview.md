@@ -164,9 +164,30 @@ Amazon Polly frequently launches new TTS voices in existing languages and new la
 For each voice, the **CSAT** is calculated by having at least 50 human evaluators listen to 15 audio samples and rate their satisfaction on a 1 to 7 scale, where 1 means very dissatisfied and 7 means very satisfied. The CSAT score is the average of the ratings from all evaluators.
 For Voice QA, human evaluators listen to between 1,000 and 2,000 prompts and flag any critical errors. These are categorized as inconsistent speaker identity, cutoff, audio glitch, hallucination, inappropriate persona, intonation, pausing, pronunciation, and text normalization. The **Voice QA Error%** is the proportion of prompts with critical errors.
 **Voice Quality results by Gender**
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/ai/responsible-ai/amazon-polly/overview.html)
+
+<table>
+<thead>
+  <tr><th>Gender</th><th>Voice QA (%)</th><th>CSAT (out of 7)</th></tr>
+</thead>
+<tbody>
+  <tr><td>Female</td><td>1.20</td><td>5.91</td></tr>
+  <tr><td>Male</td><td>1.47</td><td>5.98</td></tr>
+</tbody>
+</table>
+
 **Voice Quality results by Engine**
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/ai/responsible-ai/amazon-polly/overview.html)
+
+<table>
+<thead>
+  <tr><th>Engine</th><th>Voice QA (%)</th><th>CSAT (out of 7)</th></tr>
+</thead>
+<tbody>
+  <tr><td>Generative</td><td>1.79</td><td>6.15</td></tr>
+  <tr><td>Long-form</td><td>1.53</td><td>6.09</td></tr>
+  <tr><td>Neural</td><td>0.77</td><td>5.75</td></tr>
+</tbody>
+</table>
+
 We use multiple datasets and human teams to evaluate the performance of Amazon Polly models. No single evaluation dataset suffices to completely capture performance. This is because evaluation datasets vary based on use case, intrinsic and confounding variation, the quality of ground truth available, and other factors. Our development testing involves automated testing against proprietary speech datasets; human evaluation of generated speech for intelligibility, naturalness, and expressiveness; manual red teaming; and more. Our development process examines Amazon Polly's performance using all these tests and takes steps to improve the model and the suite of evaluation datasets.
 Automated testing provides apples-to-apples comparisons between candidate Polly models by substituting an automated "assessor" mechanism for human judgment, which can vary. Automated assessments can take several forms. One form is to evaluate generated speech using multiple speech datasets to assess intelligibility, naturalness, prosody, and contextual appropriateness. One industry standard measurement of this form is Mean Opinion Score (MOS).
 

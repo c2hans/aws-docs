@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/processing-real-time-data-using-amazon-dynamodb/index.html
 ---
 
+---
+title: 'Guidance for Processing Real-Time Data Using Amazon DynamoDB'
+canonical_url: https://docs.aws.amazon.com/solutions/processing-real-time-data-using-amazon-dynamodb/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Processing Real-Time Data Using Amazon DynamoDB
 
 ## Overview

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-event-sources-billing-
 
 The following table describes how AWS Billing and Cost Management integrates with Amazon SNS to provide notifications for budgets, price changes, and cost anomalies.
 
-You can leverage this integration to set-up Amazon SNS topics to receive real-time alerts about your AWS spending, helping you monitor costs and respond to unexpected charges efficiently.
+You can use this integration to set-up Amazon SNS topics to receive real-time alerts about your AWS spending, helping you monitor costs and respond to unexpected charges efficiently.
 
 | AWS service | Benefit of using with Amazon SNS |
 | --- | --- |

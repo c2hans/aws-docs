@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[ConnectedRouterInputs](#cfn-medialive-channel-mediaconnectrouteroutputsettings-connectedrouterinputs)" : {{MediaConnectRouterOutputConnectionMap}},
-  "[ContainerSettings](#cfn-medialive-channel-mediaconnectrouteroutputsettings-containersettings)" : {{MediaConnectRouterContainerSettings}},
+  "[ContainerSettings](#cfn-medialive-channel-mediaconnectrouteroutputsettings-containersettings)" : {{UdpMediaConnectRouterContainerSettings}},
   "[Destination](#cfn-medialive-channel-mediaconnectrouteroutputsettings-destination)" : {{OutputLocationRef}}
 }
 ```
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   [ConnectedRouterInputs](#cfn-medialive-channel-mediaconnectrouteroutputsettings-connectedrouterinputs): {{
     MediaConnectRouterOutputConnectionMap}}
   [ContainerSettings](#cfn-medialive-channel-mediaconnectrouteroutputsettings-containersettings): {{
-    MediaConnectRouterContainerSettings}}
+    UdpMediaConnectRouterContainerSettings}}
   [Destination](#cfn-medialive-channel-mediaconnectrouteroutputsettings-destination): {{
     OutputLocationRef}}
 ```
@@ -51,7 +51,7 @@ This parameter is deprecated and unused.
 `ContainerSettings`  <a name="cfn-medialive-channel-mediaconnectrouteroutputsettings-containersettings"></a>
 Required. MediaConnect Router container settings.
 *Required*: No
-*Type*: [MediaConnectRouterContainerSettings](aws-properties-medialive-channel-mediaconnectroutercontainersettings.md)
+*Type*: [UdpMediaConnectRouterContainerSettings](aws-properties-medialive-channel-udpmediaconnectroutercontainersettings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Destination`  <a name="cfn-medialive-channel-mediaconnectrouteroutputsettings-destination"></a>

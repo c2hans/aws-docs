@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/ai-assisted-call-center-representative-training-on-aws/index.html
 ---
 
+---
+title: 'Guidance for AI-Assisted Call Center Representative Training on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/ai-assisted-call-center-representative-training-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for AI-Assisted Call Center Representative Training on AWS
 
 ## Overview

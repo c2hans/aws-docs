@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/dlami/index.html
 ---
 
+---
+title: 'AWS Deep Learning AMIs Documentation'
+canonical_url: https://docs.aws.amazon.com/dlami/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # AWS Deep Learning AMIs Documentation
 
 The AWS Deep Learning AMIs equip machine learning practitioners and researchers with the infrastructure and tools to accelerate deep learning in the cloud at any scale. You can quickly launch Amazon EC2 instances on Amazon Linux or Ubuntu, preinstalled with popular deep learning frameworks. Examples include Apache MXNet and Gluon, TensorFlow, the Microsoft Cognitive Toolkit (CNTK), Caffe, Caffe2, Theano, Torch and Keras. You can use these frameworks to train sophisticated, custom AI models; experiment with new algorithms; or to learn new skills and techniques.

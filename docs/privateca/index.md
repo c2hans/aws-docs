@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/privateca/index.html
 ---
 
+---
+title: 'AWS Private Certificate Authority Documentation'
+canonical_url: https://docs.aws.amazon.com/privateca/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # AWS Private Certificate Authority Documentation
 
 AWS Private Certificate Authority (AWS Private CA ) is a hosted private certificate authority service to issue and revoke digital certificates deployed in your organization's private PKI, including on AWS managed resources and in the Internet of Things.

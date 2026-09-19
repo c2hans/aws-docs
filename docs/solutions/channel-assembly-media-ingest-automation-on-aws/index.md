@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/channel-assembly-media-ingest-automation-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Channel Assembly Media Ingest Automation on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/channel-assembly-media-ingest-automation-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Channel Assembly Media Ingest Automation on AWS
 
 ## Overview

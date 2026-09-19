@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/servicequotas/index.html
 ---
 
+---
+title: 'Service Quotas Documentation'
+canonical_url: https://docs.aws.amazon.com/servicequotas/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # Service Quotas Documentation
 
 Service Quotas is a service for viewing and managing your quotas easily and at scale as your AWS workloads grow. Quotas, also referred to as limits, are the maximum number of resources that you can create in an AWS account.

@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/controltower/index.html
 ---
 
+---
+title: 'AWS Control Tower Documentation'
+canonical_url: https://docs.aws.amazon.com/controltower/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # AWS Control Tower Documentation
 
 AWS Control Tower is a service that enables you to enforce and manage governance rules for security, operations, and compliance at scale across all your organizations and accounts in the AWS Cloud.

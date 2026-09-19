@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/nova-act/index.html
 ---
 
+---
+title: 'Amazon Nova Act Documentation'
+canonical_url: https://docs.aws.amazon.com/nova-act/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Nova Act Documentation
 
 Amazon Nova Act is an AWS service for developers to build and manage fleets of reliable AI agents for automating User Interface (UI) workflows.

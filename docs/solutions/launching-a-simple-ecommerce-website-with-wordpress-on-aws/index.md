@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/launching-a-simple-ecommerce-website-with-wordpress-on-aws/index.html
 ---
 
+---
+title: 'Guidance for Launching a Simple Ecommerce Website with WordPress on AWS'
+canonical_url: https://docs.aws.amazon.com/solutions/launching-a-simple-ecommerce-website-with-wordpress-on-aws/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Launching a Simple Ecommerce Website with WordPress on AWS
 
 Quickly launch an ecommerce website with your own domain name using WordPress and WooCommerce

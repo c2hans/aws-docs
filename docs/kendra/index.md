@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/kendra/index.html
 ---
 
+---
+title: 'Amazon Kendra Documentation'
+canonical_url: https://docs.aws.amazon.com/kendra/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Kendra Documentation
 
 Amazon Kendra is a search service, powered by machine learning, that helps users to search unstructured text using natural language.

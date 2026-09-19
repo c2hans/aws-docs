@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/building-a-predictive-responsible-gaming-model-on-amazon-sagemaker/index.html
 ---
 
+---
+title: 'Guidance for Building a Predictive Responsible Gaming Model on Amazon SageMaker'
+canonical_url: https://docs.aws.amazon.com/solutions/building-a-predictive-responsible-gaming-model-on-amazon-sagemaker/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for Building a Predictive Responsible Gaming Model on Amazon SageMaker
 
 ## Overview

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/getting-started
 # Quickstart
 <a name="getting-started"></a>
 
-Get started with Amazon Bedrock in minutes. For new applications, we recommend the [`bedrock-runtime`](endpoints.md) endpoint. The following steps walk you through running your first inference request using the Anthropic-native [Messages API](inference-messages-api.md), the OpenAI-compatible [Responses API](bedrock-mantle.md) and [Chat Completions API](inference-chat-completions.md), and the [Converse](conversation-inference.md) and [Invoke](inference-invoke.md) APIs. For a complete list of APIs, see [Build](build.md). After you complete these steps, you can send inference requests to any supported foundation model.
+Get started with Amazon Bedrock in minutes. For new applications, we recommend the [`bedrock-runtime`](endpoints.md) endpoint. The following steps walk you through running your first inference request using the Anthropic-native [Messages API](inference-messages-api.md), the OpenAI-compatible [Responses API](inference-responses-api.md) and [Chat Completions API](inference-chat-completions.md), and the [Converse](conversation-inference.md) and [Invoke](inference-invoke.md) APIs. For a complete list of APIs, see [Build](build.md). After you complete these steps, you can send inference requests to any supported foundation model.
 
 **To run your first inference request**
 
@@ -74,6 +74,8 @@ Get started with Amazon Bedrock in minutes. For new applications, we recommend t
 1. Choose a model and run your first inference request.
 
    1. Choose a model. Amazon Bedrock supports [100\+ foundation models](models.md).
+**Note**
+The OpenAI-compatible examples use a global system inference profile. If you have data residency requirements, choose a supported geographic inference profile from the model card instead.
 
    1. Use the following Python code to run your first inference request.
 
@@ -105,7 +107,7 @@ Get started with Amazon Bedrock in minutes. For new applications, we recommend t
       client = OpenAI()
 
       response = client.responses.create(
-          model="openai.gpt-5.6-sol",
+          model="global.openai.gpt-5.6-sol",
           input="Can you explain the features of Amazon Bedrock?"
           )
       print(response)
@@ -120,7 +122,7 @@ Get started with Amazon Bedrock in minutes. For new applications, we recommend t
       client = OpenAI()
 
       response = client.chat.completions.create(
-          model="openai.gpt-5.6-sol",
+          model="global.openai.gpt-5.6-sol",
           messages=[{"role": "user", "content": "Can you explain the features of Amazon Bedrock?"}]
           )
       print(response)

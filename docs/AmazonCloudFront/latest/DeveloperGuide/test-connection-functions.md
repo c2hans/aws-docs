@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/t
 # Test CloudFront Connection Functions before deployment
 <a name="test-connection-functions"></a>
 
-You can test CloudFront Connection Functions in the DEVELOPMENT stage using the TestConnectionFunction API operation. Testing allows you to validate your function logic with sample connection events before publishing to the LIVE stage.
+You can test CloudFront Connection Functions in the DEVELOPMENT stage using the TestConnectionFunction API operation. With testing, you can validate your function logic with sample connection events before publishing to the LIVE stage.
 
 **Topics**
 + [Testing process](#connection-function-testing-process)

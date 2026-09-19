@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/workspaces/index.html
 ---
 
+---
+title: 'Amazon WorkSpaces Documentation'
+canonical_url: https://docs.aws.amazon.com/workspaces/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon WorkSpaces Documentation
 
 Amazon WorkSpaces offers an easy way to provide a cloud-based desktop experience to your end users. Select from a choice of bundles that offer a range of different amounts of CPU, memory, storage, and a choice of applications. Users can connect from a PC, Mac desktop computer, iPad, Kindle, or Android tablet.

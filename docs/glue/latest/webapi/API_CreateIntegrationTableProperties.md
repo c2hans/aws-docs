@@ -21,6 +21,7 @@ This API is used to provide optional override properties for the the tables that
    },
    "TableName": "{{string}}",
    "TargetTableConfig": {
+      "IntegrationArn": "{{string}}",
       "PartitionSpec": [
          {
             "ConversionSpec": "{{string}}",

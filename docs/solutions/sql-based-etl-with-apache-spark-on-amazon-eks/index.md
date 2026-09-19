@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/solutions/sql-based-etl-with-apache-spark-on-amazon-eks/index.html
 ---
 
+---
+title: 'Guidance for SQL-Based ETL with Apache Spark on Amazon EKS'
+canonical_url: https://docs.aws.amazon.com/solutions/sql-based-etl-with-apache-spark-on-amazon-eks/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Guidance for SQL-Based ETL with Apache Spark on Amazon EKS
 
 Unlock efficient data workflows and faster insights with a scalable, enterprise-grade extract, transform, and load (ETL) solution

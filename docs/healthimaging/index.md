@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/healthimaging/index.html
 ---
 
+---
+title: 'AWS HealthImaging Documentation'
+canonical_url: https://docs.aws.amazon.com/healthimaging/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # AWS HealthImaging Documentation
 
 AWS HealthImaging is a HIPAA eligible service for storing, analyzing, and sharing medical images in the cloud at petabyte scale.

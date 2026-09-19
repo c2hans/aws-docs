@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/mobileanalytics/index.html
 ---
 
+---
+title: 'Amazon Mobile Analytics Documentation'
+canonical_url: https://docs.aws.amazon.com/mobileanalytics/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Mobile Analytics Documentation
 
 We discontinued Amazon Mobile Analytics on April 30, 2018. Amazon Pinpoint now provides the analytics features that Amazon Mobile Analytics previously offered.

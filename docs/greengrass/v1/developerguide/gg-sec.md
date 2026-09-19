@@ -83,8 +83,14 @@ The IoT client supports RSA and EC certificates and keys. The certificate and pr
 **MQTT Server**
 The local MQTT server manages communication over the local network between the Greengrass core and client devices in the group. AWS IoT Greengrass uses X.509 certificates with public and private keys for mutual authentication when establishing TLS connections for this communication.
 By default, AWS IoT Greengrass generates an RSA private key for you. To configure the core to use a different private key, you must provide the key path for the `MQTTServerCertificate` principal in `config.json`. You are responsible for rotating a customer-provided key.
+
 **Private key support**
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/gg-sec.html)
+
+<table>
+<tbody>
+</tbody>
+</table>
+
 The configuration of the private key determines related processes. For the list of cipher suites that the Greengrass core supports as a server, see [TLS cipher suites support](#gg-cipher-suites).
 **If no private key is specified** (default)
 + AWS IoT Greengrass rotates the key based on your rotation settings.
@@ -107,8 +113,13 @@ The configuration of the private key determines related processes. For the list 
 The local secrets manager securely manages local copies of secrets that you create in AWS Secrets Manager. It uses a private key to secure the data key that's used to encrypt the secrets. For more information, see [Deploy secrets to the AWS IoT Greengrass core](secrets.md).
 By default, the IoT client private key is used, but you can specify a different private key for the `SecretsManager` principal in `config.json`. Only the RSA key type is supported. For more information, see [Specify the private key for secret encryption](secrets.md#secrets-config-private-key).
 Currently, AWS IoT Greengrass supports only the [PKCS\#1 v1.5](https://tools.ietf.org/html/rfc2313) padding mechanism for encryption and decryption of local secrets when using hardware-based private keys. If you're following vendor-provided instructions to manually generate hardware-based private keys, make sure to choose PKCS\#1 v1.5. AWS IoT Greengrass doesn't support Optimal Asymmetric Encryption Padding (OAEP).
+
 **Private key support**
-<a name="secrets-manager-private-key-support"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/gg-sec.html)
+<a name="secrets-manager-private-key-support"></a>
+<table>
+<tbody>
+</tbody>
+</table>
 
 ## Managed subscriptions in the MQTT messaging workflow
 <a name="gg-msg-workflow"></a>

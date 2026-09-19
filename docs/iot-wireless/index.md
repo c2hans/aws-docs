@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/iot-wireless/index.html
 ---
 
+---
+title: 'AWS IoT Wireless Documentation'
+canonical_url: https://docs.aws.amazon.com/iot-wireless/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # AWS IoT Wireless Documentation
 
 AWS IoT Wireless provides secure, bi-directional communication for internet-connected wireless devices to connect to the AWS Cloud. The devices include LoRaWAN devices and gateways, and Sidewalk end devices.

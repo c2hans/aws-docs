@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/ARG/index.html
 ---
 
+---
+title: 'AWS Resource Management Documentation'
+canonical_url: https://docs.aws.amazon.com/ARG/
+source: aws-documentation
+generated_on: 2026-09-19
+---
+
 # AWS Resource Management Documentation
 
 Learn how to manage your AWS resources.

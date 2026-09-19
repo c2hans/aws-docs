@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/connecthealth/index.html
 ---
 
+---
+title: 'Amazon Connect Health'
+canonical_url: https://docs.aws.amazon.com/connecthealth/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Connect Health
 
 Amazon Connect Health is a purpose-built HIPAA eligible agentic solution that handles tasks across patient engagement, point of care, and revenue cycle alongside healthcare teams.

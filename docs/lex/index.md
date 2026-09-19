@@ -2,6 +2,13 @@
 source_url: https://docs.aws.amazon.com/lex/index.html
 ---
 
+---
+title: 'Amazon Lex Documentation'
+canonical_url: https://docs.aws.amazon.com/lex/
+source: aws-documentation
+generated_on: 2026-09-18
+---
+
 # Amazon Lex Documentation
 
 Amazon Lex is an AWS service for building conversational interfaces into applications using voice and text. With Amazon Lex, the same deep learning engine that powers Amazon Alexa is now available to any developer, enabling you to build sophisticated, natural language chatbots into your new and existing applications. Amazon Lex provides the deep functionality and flexibility of natural language understanding (NLU) and automatic speech recognition (ASR) to enable you to build highly engaging user experiences with lifelike, conversational interactions and create new categories of products.
