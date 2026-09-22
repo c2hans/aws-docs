@@ -38,9 +38,9 @@ First we must discover the resources that should be ignored for your environment
 
 1. Under **Recent cleanups**, choose the failed cleanup report to open its detail view.
 
-1. In the **Step timeline**, find the `nuke-phase-<n>` step that did not succeed and choose **View build logs**. This opens the **Build logs** tab for that AWS Nuke build in the [AWS CodeBuild console](https://console.aws.amazon.com/codesuite/codebuild/projects), where you can read the raw AWS Nuke output. If the failed step is not an AWS Nuke phase, no build log exists for it. This applies to the lock, access revocation, and validation steps. Instead, resolve the error shown inline in the **Step timeline** before continuing with the following steps. For more information about the cleanup report, see [Viewing cleanup details](#viewing-cleanup-details).
+1. In the **Steps** panel, find the `nuke-phase-<n>` step that did not succeed and choose **View build logs**. This opens the **Build logs** tab for that AWS Nuke build in the [AWS CodeBuild console](https://console.aws.amazon.com/codesuite/codebuild/projects), where you can read the raw AWS Nuke output. If the failed step is not an AWS Nuke phase, no build log exists for it. This applies to the lock, access revocation, and validation steps. Instead, resolve the error shown inline in the **Steps** panel before continuing with the following steps. For more information about the cleanup report, see [Viewing cleanup details](#viewing-cleanup-details).
 
-1. From the CodeBuild console, copy the build ID for the failed build. In the console URL, the build is identified as `<project-name>:<build-id>`. Copy the `<build-id>` portion, which is in the format **xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx**. The solution uses this value as the log stream name for the build.
+1. From the CodeBuild console, copy the build ID for the failed build. In the console URL, the build is identified as `<project-name>:<build-id>`. Copy the `<build-id>` portion, which is in the format **xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx**. CodeBuild names the log stream with this build ID.
 
 1. Navigate to the [Amazon CloudWatch Log Analytics console](https://console.aws.amazon.com/cloudwatch/home#log-analytics). For more information about the pre-populated queries, see [Pre-populated log queries](monitoring-logs-and-tracing.md#cloudwatch-log-queries).
 
@@ -132,7 +132,7 @@ To view detailed cleanup information for a specific account, choose the account 
 +  **Active cleanup progress**: If a cleanup is currently running, you see the current step and a live status indicator that refreshes automatically.
 +  **Start cleanup**: Administrators can initiate cleanup directly from the account details page using the **Start cleanup** button. The button is disabled while a cleanup is already running.
 +  **Recent cleanups**: A table of the most recent cleanup reports for the account, with status, reason, start time, and duration. Choose a row to view the full detail.
-+  **Step timeline**: An expandable timeline showing each cleanup step’s status, duration, and any error details. Nuke phase steps include a link to the CodeBuild build logs.
++  **Steps**: An expandable list showing each cleanup step’s status, duration, and any error details. Nuke phase steps include a link to the CodeBuild build logs.
 +  **Resource summary**: A before-and-after resource type table showing what was cleaned. If validation failed or proceeded with a warning, a **Remaining resources** table shows the specific resources that were not cleaned, with their ARN, type, and region.
 
 ### Skipping account cooldown
@@ -483,6 +483,7 @@ The following tables list the global configuration settings you can view or modi
 | Max requests per window | Number | 10 | Maximum number of lease requests a user can make within the rate limit window before further requests are rejected. |
 | Enable lease sharing | Boolean | Off | When enabled, lease owners can manage assignments on leases that permit sharing. Admins and Managers always retain access. |
 | Enable principal search | Boolean | On | When enabled, the user typeahead search used to find and assign principals is available. When disabled, it is unavailable to all roles. |
+| Allow group assignments | Selection | Do not allow groups | Controls whether IAM Identity Center groups can be assigned to leases. When set to **Do not allow groups**, only individual users can be added. Existing group assignments remain and can be removed. |
 
  **Cleanup** (**Cleanup** tab)
 

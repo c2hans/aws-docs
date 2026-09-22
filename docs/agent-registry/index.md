@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/agent-registry/index.html
 title: 'AWS Agent Registry Documentation'
 canonical_url: https://docs.aws.amazon.com/agent-registry/
 source: aws-documentation
-generated_on: 2026-09-18
+generated_on: 2026-09-22
 ---
 
 # AWS Agent Registry Documentation

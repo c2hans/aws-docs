@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/dlm/index.html
 title: 'Amazon Data Lifecycle Manager'
 canonical_url: https://docs.aws.amazon.com/dlm/
 source: aws-documentation
-generated_on: 2026-09-18
+generated_on: 2026-09-22
 ---
 
 # Amazon Data Lifecycle Manager

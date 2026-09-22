@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Imp
 # ImportVmImage
 <a name="API_ImportVmImage"></a>
 
-When you export your virtual machine (VM) from its virtualization environment, that process creates a set of one or more disk container files that act as snapshots of your VM’s environment, settings, and data. The Amazon EC2 API [ImportImage](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImportImage.html) action uses those files to import your VM and create an AMI. To import using the AWS CLI command, see [import-image](https://docs.aws.amazon.com/cli/latest/reference/ec2/import-image.html)
+Creates an Image Builder image resource from an Amazon EC2 VM import task. The response returns as soon as Image Builder creates the image resource in the `PENDING` state. Image Builder then monitors the import task asynchronously. When the task completes, Image Builder records the AMI that it produced as the new image's output resource and marks the image `AVAILABLE`. You can then use the imported image as the base image for your recipes.
 
-You can reference the task ID from the VM import to pull in the AMI that the import created as the base image for your Image Builder recipe.
+To create the VM import task, use the Amazon EC2 API [ImportImage](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImportImage.html) operation, or the [import-image](https://docs.aws.amazon.com/cli/latest/reference/ec2/import-image.html) AWS CLI command.
 
 ## Request Syntax
 <a name="API_ImportVmImage_RequestSyntax"></a>
@@ -44,7 +44,7 @@ The request does not use any URI parameters.
 The request accepts the following data in JSON format.
 
  ** [clientToken](#API_ImportVmImage_RequestSyntax) **   <a name="imagebuilder-ImportVmImage-request-clientToken"></a>
-A unique, case-sensitive identifier you provide to ensure that the operation completes no more than one time. If this token matches a previous request, the service ignores the request, but does not return an error. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
+A unique, case-sensitive identifier you provide to ensure that the operation runs no more than one time. If you retry a request with the same client token, Image Builder returns the original response without running the operation again. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: Yes
@@ -56,12 +56,12 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
  ** [loggingConfiguration](#API_ImportVmImage_RequestSyntax) **   <a name="imagebuilder-ImportVmImage-request-loggingConfiguration"></a>
-The logging configuration for the image build process.
+The CloudWatch Logs log group where Image Builder sends the import logs. For ImportVmImage, the log group name must be within the `/aws/imagebuilder/` namespace.
 Type: [ImageLoggingConfiguration](API_ImageLoggingConfiguration.md) object
 Required: No
 
  ** [name](#API_ImportVmImage_RequestSyntax) **   <a name="imagebuilder-ImportVmImage-request-name"></a>
-The name of the base image that is created by the import process.
+The name of the base image that is created by the import process. Image Builder generates the image ARN from a normalized form of the name, so names that differ only in case, spaces, or underscores count as the same name. If an image with the same name and semantic version already exists in your account in the same AWS Region, the import creates a new build version for it.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: Yes
@@ -97,7 +97,7 @@ Value Length Constraints: Maximum length of 256.
 Required: No
 
  ** [vmImportTaskId](#API_ImportVmImage_RequestSyntax) **   <a name="imagebuilder-ImportVmImage-request-vmImportTaskId"></a>
-The `importTaskId` (API) or `ImportTaskId` (AWS CLI) from the Amazon EC2 VM import process. Image Builder retrieves information from the import process to pull in the AMI that is created from the VM source as the base image for your recipe.
+The `importTaskId` (API) or `ImportTaskId` (AWS CLI) from the Amazon EC2 VM import process. The import task doesn't need to be complete when you call ImportVmImage - Image Builder monitors the task and finishes creating the image when the task completes.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: Yes
@@ -129,7 +129,7 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 
  ** [imageArn](#API_ImportVmImage_ResponseSyntax) **   <a name="imagebuilder-ImportVmImage-response-imageArn"></a>
-The Amazon Resource Name (ARN) of the AMI that was created during the VM import process. This AMI is used as the base image for the recipe that imported the VM.
+The Amazon Resource Name (ARN) of the Image Builder image resource that this request created. Image Builder records the AMI from the VM import task in the image's output resources after the task completes.
 Type: String
 
  ** [requestId](#API_ImportVmImage_ResponseSyntax) **   <a name="imagebuilder-ImportVmImage-response-requestId"></a>
@@ -143,16 +143,55 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_ImportVmImage_Examples"></a>
+
+### Import a virtual machine as an Image Builder image
+<a name="API_ImportVmImage_Example_1"></a>
+
+The following example registers the output of an EC2 VM Import/Export task (import-ami) as a new Image Builder image, so you can use the imported virtual machine as a base image.
+
+#### Sample Request
+<a name="API_ImportVmImage_Example_1_Request"></a>
+
+```
+PUT /ImportVmImage HTTP/1.1
+Content-type: application/json
+
+{
+    "name": "my-example-imported-image",
+    "semanticVersion": "1.0.0",
+    "platform": "Linux",
+    "osVersion": "Amazon Linux 2",
+    "vmImportTaskId": "import-ami-1234567890abcdef0",
+    "clientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE00000"
+}
+```
+
+#### Sample Response
+<a name="API_ImportVmImage_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "requestId": "f8a1d0ce-42b7-4d6a-9b12-3c84a02e5f19",
+    "clientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE00000",
+    "imageArn": "arn:aws:imagebuilder:us-west-2:111122223333:image/my-example-imported-image/1.0.0/1"
+}
+```
 
 ## See Also
 <a name="API_ImportVmImage_SeeAlso"></a>

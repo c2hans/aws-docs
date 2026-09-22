@@ -29,7 +29,7 @@ Pattern: `^arn:aws(?:-[a-z]+)*:imagebuilder:[a-z]{2,}(?:-[a-z]+)+-[0-9]+:(?:[0-9
 Required: No
 
  ** resourcesImpactedSummary **   <a name="imagebuilder-Type-LifecycleExecution-resourcesImpactedSummary"></a>
-Contains information about associated resources that are identified for action by the runtime instance of the lifecycle policy.
+A summary flag that indicates whether the lifecycle execution identified any resources to take lifecycle actions on.
 Type: [LifecycleExecutionResourcesImpactedSummary](API_LifecycleExecutionResourcesImpactedSummary.md) object
 Required: No
 
@@ -39,7 +39,7 @@ Type: Timestamp
 Required: No
 
  ** state **   <a name="imagebuilder-Type-LifecycleExecution-state"></a>
-Runtime state that reports if the policy action ran successfully, failed, or was skipped.
+Runtime state that reports whether the lifecycle execution is in progress, succeeded, or failed.
 Type: [LifecycleExecutionState](API_LifecycleExecutionState.md) object
 Required: No
 

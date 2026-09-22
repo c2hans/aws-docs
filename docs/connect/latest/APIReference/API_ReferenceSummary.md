@@ -18,6 +18,11 @@ Information about the reference when the `referenceType` is `ATTACHMENT`. Otherw
 Type: [AttachmentReference](API_AttachmentReference.md) object
 Required: No
 
+ ** ContactAnalysis **   <a name="connect-Type-ReferenceSummary-ContactAnalysis"></a>
+Information about a reference when the `referenceType` is `CONTACT_ANALYSIS`. Otherwise, null.
+Type: [ContactAnalysisReference](API_ContactAnalysisReference.md) object
+Required: No
+
  ** Date **   <a name="connect-Type-ReferenceSummary-Date"></a>
 Information about a reference when the `referenceType` is `DATE`. Otherwise, null.
 Type: [DateReference](API_DateReference.md) object

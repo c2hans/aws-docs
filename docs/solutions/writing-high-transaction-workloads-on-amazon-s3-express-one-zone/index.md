@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/writing-high-transaction-workl
 title: 'Guidance for Writing High Transaction Workloads on Amazon S3 Express One Zone'
 canonical_url: https://docs.aws.amazon.com/solutions/writing-high-transaction-workloads-on-amazon-s3-express-one-zone/
 source: aws-documentation
-generated_on: 2026-09-18
+generated_on: 2026-09-22
 ---
 
 # Guidance for Writing High Transaction Workloads on Amazon S3 Express One Zone

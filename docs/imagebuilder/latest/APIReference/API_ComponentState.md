@@ -17,7 +17,7 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
  ** status **   <a name="imagebuilder-Type-ComponentState-status"></a>
-The current state of the component.
+The current state of the component. Components with a status of `DEPRECATED` or `DISABLED` can't be added to new recipes.
 Type: String
 Valid Values: `DEPRECATED | DISABLED | ACTIVE`
 Required: No

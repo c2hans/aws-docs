@@ -156,6 +156,7 @@ Length Constraints: Minimum length of 1. Maximum length of 512.
  ** [parameters](#API_GetJob_ResponseSyntax) **   <a name="deadlinecloud-GetJob-response-parameters"></a>
 The parameters for the job.
 Type: String to [JobParameter](API_JobParameter.md) object map
+Map Entries: Minimum number of 0 items. Maximum number of 200 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 1024.
 
  ** [priority](#API_GetJob_ResponseSyntax) **   <a name="deadlinecloud-GetJob-response-priority"></a>

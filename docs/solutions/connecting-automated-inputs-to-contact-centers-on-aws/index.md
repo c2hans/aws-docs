@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/connecting-automated-inputs-to
 title: 'Guidance for Connecting Automated Inputs to Contact Centers on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/connecting-automated-inputs-to-contact-centers-on-aws/
 source: aws-documentation
-generated_on: 2026-09-18
+generated_on: 2026-09-22
 ---
 
 # Guidance for Connecting Automated Inputs to Contact Centers on AWS

@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::ImageBuilder::DistributionConfiguration ContainerDistributionConfiguration
 <a name="aws-properties-imagebuilder-distributionconfiguration-containerdistributionconfiguration"></a>
 
-Container distribution settings for encryption, licensing, and sharing in a specific Region.
+Defines how the output container image is distributed in a specific AWS Region: the target repository, the image tags to apply to the distributed image, and an optional description.
 
 ## Syntax
 <a name="aws-properties-imagebuilder-distributionconfiguration-containerdistributionconfiguration-syntax"></a>
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-imagebuilder-distributionconfiguration-containerdistributionconfiguration-properties"></a>
 
 `ContainerTags`  <a name="cfn-imagebuilder-distributionconfiguration-containerdistributionconfiguration-containertags"></a>
-Tags that are attached to the container distribution configuration.
+Tags that Image Builder applies to the distributed container image in the target repository. These are repository image tags, not resource tags.
 *Required*: No
 *Type*: Array of String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

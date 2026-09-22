@@ -54,6 +54,7 @@ The following table contains the available runtimes and the standard Linux image
   - **Version:** 20 / **Images:** Amazon Linux 2 x86\_64 Lambda standard:nodejs20<br />Amazon Linux 2 AArch64 Lambda standard:nodejs20<br />Amazon Linux 2023 x86\_64 standard:5.0<br />Amazon Linux 2023 AArch64 standard:3.0<br />Ubuntu 22.04 standard:7.0
   - **Version:** 22 / **Images:** Amazon Linux 2023 x86\_64 Lambda standard:nodejs22<br />Amazon Linux 2023 AArch64 Lambda standard:nodejs22<br />Amazon Linux 2023 x86\_64 standard:5.0<br />Amazon Linux 2023 x86\_64 standard:6.0<br />Amazon Linux 2023 AArch64 standard:3.0<br />Ubuntu 22.04 standard:7.0<br />Ubuntu 24.04 standard:8.0
   - **Version:** 24 / **Images:** Amazon Linux 2023 x86\_64 standard:5.0<br />Amazon Linux 2023 x86\_64 standard:6.0<br />Amazon Linux 2023 AArch64 standard:3.0<br />Ubuntu 22.04 standard:7.0<br />Ubuntu 24.04 standard:8.0
+  - **Version:** 26 / **Images:** Amazon Linux 2023 x86\_64 standard:5.0<br />Amazon Linux 2023 x86\_64 standard:6.0<br />Ubuntu 22.04 standard:7.0<br />Ubuntu 24.04 standard:8.0
 
 - **php**
   - **Version:** 8.1 / **Images:** Amazon Linux 2023 AArch64 standard:3.0
@@ -78,8 +79,8 @@ The following table contains the available runtimes and the standard Linux image
   - **Version:** 4.0 / **Images:** Amazon Linux 2023 x86\_64 standard:5.0<br />Amazon Linux 2023 x86\_64 standard:6.0<br />Amazon Linux 2023 AArch64 standard:3.0<br />Ubuntu 22.04 standard:7.0<br />Ubuntu 24.04 standard:8.0
 
 - **rust**
-  - **Version:** 1.94
-  - **Images:** Amazon Linux 2023 AArch64 standard:3.0
+  - **Version:** 1.94 / **Images:** Amazon Linux 2023 AArch64 standard:3.0
+  - **Version:** 1.97 / **Images:** Amazon Linux 2023 x86\_64 standard:6.0<br />Ubuntu 24.04 standard:8.0
 
 ## macOS image runtimes
 <a name="macOS-runtimes"></a>

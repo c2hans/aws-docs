@@ -11,6 +11,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::Personalize::Dataset](aws-resource-personalize-dataset.md)
 + [AWS::Personalize::DatasetGroup](aws-resource-personalize-datasetgroup.md)
 + [AWS::Personalize::EventTracker](aws-resource-personalize-eventtracker.md)
++ [AWS::Personalize::Filter](aws-resource-personalize-filter.md)
 + [AWS::Personalize::MetricAttribution](aws-resource-personalize-metricattribution.md)
 + [AWS::Personalize::Schema](aws-resource-personalize-schema.md)
 + [AWS::Personalize::Solution](aws-resource-personalize-solution.md)

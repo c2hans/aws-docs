@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/secure-blockchain-validation-u
 title: 'Guidance for Secure Blockchain Validation Using AWS Nitro Enclaves'
 canonical_url: https://docs.aws.amazon.com/solutions/secure-blockchain-validation-using-aws-nitro-enclaves/
 source: aws-documentation
-generated_on: 2026-09-18
+generated_on: 2026-09-22
 ---
 
 # Guidance for Secure Blockchain Validation Using AWS Nitro Enclaves

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/deploying-enterprise-apps-with
 title: 'Guidance for Deploying Enterprise Apps with NetApp BlueXP Workload Factory for AWS and Amazon FSx for NetApp ONTAP'
 canonical_url: https://docs.aws.amazon.com/solutions/deploying-enterprise-apps-with-netapp-bluexp-workload-factory-for-aws-and-amazon-fsx-for-netapp-ontap/
 source: aws-documentation
-generated_on: 2026-09-18
+generated_on: 2026-09-22
 ---
 
 # Guidance for Deploying Enterprise Apps with NetApp BlueXP Workload Factory for AWS and Amazon FSx for NetApp ONTAP

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/workspaces/index.html
 title: 'Amazon WorkSpaces Documentation'
 canonical_url: https://docs.aws.amazon.com/workspaces/
 source: aws-documentation
-generated_on: 2026-09-18
+generated_on: 2026-09-22
 ---
 
 # Amazon WorkSpaces Documentation

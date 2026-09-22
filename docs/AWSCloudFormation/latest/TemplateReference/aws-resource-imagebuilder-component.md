@@ -11,6 +11,8 @@ Creates a new component that can be used to build, validate, test, and assess yo
 + Inline, using the `data` property in the request body.
 + A URL that points to a YAML document file stored in Amazon S3, using the `uri` property in the request body.
 
+Image Builder determines the component type from the document. If the document contains a single phase named `test`, the component type is `TEST`. Otherwise, the component type is `BUILD`.
+
 ## Syntax
 <a name="aws-resource-imagebuilder-component-syntax"></a>
 
@@ -85,7 +87,7 @@ Describes the contents of the component.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `KmsKeyId`  <a name="cfn-imagebuilder-component-kmskeyid"></a>
-The Amazon Resource Name (ARN) that uniquely identifies the KMS key used to encrypt this component. This can be either the Key ARN or the Alias ARN. For more information, see [Key identifiers (KeyId)](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-id-key-ARN) in the *AWS Key Management Service Developer Guide*.
+The Amazon Resource Name (ARN) that uniquely identifies the KMS key used to encrypt this component. This can be either the Key ARN or the Alias ARN. For more information, see [Key identifiers (KeyId)](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-id-key-ARN) in the *AWS Key Management Service Developer Guide*. If you don't specify a key, Image Builder encrypts the component data with a KMS key that Image Builder owns.
 *Required*: No
 *Type*: String
 *Minimum*: `1`
@@ -93,7 +95,7 @@ The Amazon Resource Name (ARN) that uniquely identifies the KMS key used to encr
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Name`  <a name="cfn-imagebuilder-component-name"></a>
-The name of the component.
+The name of the component. Image Builder generates the component ARN from a normalized form of the name, so names that differ only in case, spaces, or underscores count as the same name. If a component with the same name and semantic version already exists in your account in the same AWS Region, the request creates a new build version for it. If the content is also identical to the latest build version, the request fails because the component already exists.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[-_A-Za-z-0-9][-_A-Za-z0-9 ]{1,126}[-_A-Za-z-0-9]$`
@@ -122,7 +124,7 @@ The tags that apply to the component.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Uri`  <a name="cfn-imagebuilder-component-uri"></a>
-The `uri` of a YAML component document file. This must be an S3 URL (`s3://bucket/key`), and you must have permission to access the S3 bucket it points to. If you use Amazon S3, you can specify component content up to your service quota.
+The `uri` of a YAML component document file. This must be an S3 URL (`s3://bucket/key`), and you must have permission to access the S3 bucket it points to. If you use Amazon S3, you can specify component content up to your service quota for component size, which is 64 KB by default.
 Alternatively, you can specify the YAML document inline, using the component `data` property. You cannot specify both properties.
 *Required*: No
 *Type*: String

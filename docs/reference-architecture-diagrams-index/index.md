@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams-index/in
 title: 'AWS Reference Architecture Diagrams Index'
 canonical_url: https://docs.aws.amazon.com/reference-architecture-diagrams-index/
 source: aws-documentation
-generated_on: 2026-09-18
+generated_on: 2026-09-22
 ---
 
 # AWS Reference Architecture Diagrams Index

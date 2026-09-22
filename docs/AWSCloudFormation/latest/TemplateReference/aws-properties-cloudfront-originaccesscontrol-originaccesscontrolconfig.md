@@ -72,7 +72,7 @@ This field can have one of the following values:
 + `no-override` – If the viewer request doesn't contain the `Authorization` header, then CloudFront signs the origin request. If the viewer request contains the `Authorization` header, then CloudFront doesn't sign the origin request and instead passes along the `Authorization` header from the viewer request. **WARNING: To pass along the `Authorization` header from the viewer request, you *must* add the `Authorization` header to a [cache policy](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/controlling-the-cache-key.html) for all cache behaviors that use origins associated with this origin access control.**
 *Required*: Yes
 *Type*: String
-*Pattern*: `^(never|no-override|always)$`
+*Pattern*: `^(never|no-override|always|always-amz-auth)$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SigningProtocol`  <a name="cfn-cloudfront-originaccesscontrol-originaccesscontrolconfig-signingprotocol"></a>

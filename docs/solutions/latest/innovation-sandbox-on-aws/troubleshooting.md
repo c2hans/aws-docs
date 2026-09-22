@@ -113,7 +113,7 @@ To resolve an account that has failed cleanup:
 
 1. Choose the account ID of the account that failed the cleanup process to open the account details page.
 
-1. Under **Recent cleanups**, choose the failed cleanup report. The **Step timeline** identifies which step failed and shows its error details.
+1. Under **Recent cleanups**, choose the failed cleanup report. The **Steps** panel identifies which step failed and shows its error details.
 
 1. If an AWS Nuke phase failed, choose **View build logs** on that step to read the AWS Nuke output in the AWS CodeBuild console. To review only the resource deletion failures, run the `AccountCleanupLogs` saved query against that build. For the full procedure, including how to filter the AWS Nuke configuration for protected resources, see [Resolving Account Cleanup Failures](administrator-guide.md#resolving-account-cleanup-failures).
 
@@ -161,7 +161,7 @@ If the account has a lease in `Provisioning` status (a blueprint deployment in p
 
 1. Log in to the AWS Console, and navigate to the **CloudWatch > Logs > Log Analytics** page.
 
-1. From the right pane, under **Saved queries**, expand the **ISB-<namespace>** folder, choose the `LogQuery` saved query, and choose **Apply**.
+1. Choose **Saved queries**, expand the **ISB-<namespace>** folder, and choose the `LogQuery` saved query.
 
 1. In the query window, choose the time frame to view logs for and paste the LeaseID into the indicated section.
 
@@ -179,7 +179,7 @@ Terminated leases distinguish who ended them. When a leaseholder terminates thei
 
 1. Log in to the AWS Console, and navigate to the **CloudWatch > Logs > Log Analytics** page.
 
-1. From the right pane, under **Saved queries**, expand the **ISB-<namespace>** folder, choose the `LogQuery` saved query, and choose **Apply**.
+1. Choose **Saved queries**, expand the **ISB-<namespace>** folder, and choose the `LogQuery` saved query.
 
 1. In the query window, choose the time frame to view logs for and paste the email address into the indicated section.
 
@@ -271,9 +271,10 @@ For persistent failures, investigate the assignment processing dead-letter queue
 <a name="principal-not-in-search"></a>
 
 The search reads from a cache of IAM Identity Center principals that is refreshed hourly. If a recently added user or group does not appear:
++ For groups, confirm that **Allow group assignments** is set to **Allow all groups** in the **Lease Policies** section of the **Settings** page. When group assignments are disabled, group search and exact group lookup are unavailable.
 + Wait for the next scheduled cache sync, or manually invoke the principal cache sync Lambda function from the AWS Lambda console in the hub account to refresh immediately. The sync runs hourly with a five-minute flexible window, so a new principal can take slightly over an hour to appear.
 + For users: confirm the user is a member of one of the solution’s IAM Identity Center groups (Admins, Managers, or Users). Only users who belong to these groups are cached for search. For groups: all groups in the identity store are cached regardless of membership, so a missing group indicates the cache has not yet refreshed.
-+ Instead of searching, enter the exact email address of the user or the exact name of the group. This works even when the principal is not yet in the search cache, or when the **Enable principal search** setting is turned off on the **Settings** page, because the exact value is resolved directly from IAM Identity Center.
++ Instead of searching, enter the exact email address of the user. When **Allow group assignments** is set to **Allow all groups**, you can also enter the exact name of a group. Exact lookup works when the principal is not yet in the search cache or when **Enable principal search** is turned off, because the value is resolved directly from IAM Identity Center.
 
 ### Save changes is unavailable
 <a name="assignment-save-paused"></a>
@@ -290,7 +291,7 @@ To discard staged changes without saving, choose **Cancel**. To reverse a single
 
 A lease supports a maximum of 20 principals in total, including the lease owner, which leaves 19 slots for additional users and groups. When a lease reaches this limit, the **Assignments** tab displays a warning and you cannot add another principal until you remove an existing one.
 
-The solution enforces this limit on the server as well, so direct API calls that exceed it are rejected. To share a sandbox environment with more people than this limit allows, share the lease with an IAM Identity Center group instead of adding users individually. A group occupies a single assignment slot regardless of how many members it has. For more information, refer to [Adding or removing users and groups on a lease](manager-guide.md#lease-sharing-add).
+The solution enforces this limit on the server as well, so direct API calls that exceed it are rejected. When group assignments are enabled, you can share the lease with an IAM Identity Center group instead of adding users individually. A group occupies a single assignment slot regardless of how many members it has. For more information, refer to [Adding or removing users and groups on a lease](manager-guide.md#lease-sharing-add).
 
 ### Cannot remove the lease owner
 <a name="assignment-owner-removal"></a>

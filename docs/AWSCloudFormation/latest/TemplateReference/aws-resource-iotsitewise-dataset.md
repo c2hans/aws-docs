@@ -21,10 +21,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "Type" : "AWS::IoTSiteWise::Dataset",
   "Properties" : {
+      "[DatasetConfig](#cfn-iotsitewise-dataset-datasetconfig)" : {{DatasetConfig}},
       "[DatasetDescription](#cfn-iotsitewise-dataset-datasetdescription)" : {{String}},
       "[DatasetName](#cfn-iotsitewise-dataset-datasetname)" : {{String}},
       "[DatasetSource](#cfn-iotsitewise-dataset-datasetsource)" : {{DatasetSource}},
-      "[Tags](#cfn-iotsitewise-dataset-tags)" : {{[ Tag, ... ]}}
+      "[DatasetType](#cfn-iotsitewise-dataset-datasettype)" : {{String}},
+      "[Tags](#cfn-iotsitewise-dataset-tags)" : {{[ Tag, ... ]}},
+      "[WorkspaceName](#cfn-iotsitewise-dataset-workspacename)" : {{String}}
     }
 }
 ```
@@ -35,16 +38,26 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 Type: AWS::IoTSiteWise::Dataset
 Properties:
+  [DatasetConfig](#cfn-iotsitewise-dataset-datasetconfig): {{
+    DatasetConfig}}
   [DatasetDescription](#cfn-iotsitewise-dataset-datasetdescription): {{String}}
   [DatasetName](#cfn-iotsitewise-dataset-datasetname): {{String}}
   [DatasetSource](#cfn-iotsitewise-dataset-datasetsource): {{
     DatasetSource}}
+  [DatasetType](#cfn-iotsitewise-dataset-datasettype): {{String}}
   [Tags](#cfn-iotsitewise-dataset-tags): {{
     - Tag}}
+  [WorkspaceName](#cfn-iotsitewise-dataset-workspacename): {{String}}
 ```
 
 ## Properties
 <a name="aws-resource-iotsitewise-dataset-properties"></a>
+
+`DatasetConfig`  <a name="cfn-iotsitewise-dataset-datasetconfig"></a>
+Property description not available.
+*Required*: No
+*Type*: [DatasetConfig](aws-properties-iotsitewise-dataset-datasetconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DatasetDescription`  <a name="cfn-iotsitewise-dataset-datasetdescription"></a>
 A description about the dataset, and its functionality.
@@ -60,15 +73,31 @@ The name of the dataset.
 
 `DatasetSource`  <a name="cfn-iotsitewise-dataset-datasetsource"></a>
 The data source for the dataset.
-*Required*: Yes
+*Required*: No
 *Type*: [DatasetSource](aws-properties-iotsitewise-dataset-datasetsource.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`DatasetType`  <a name="cfn-iotsitewise-dataset-datasettype"></a>
+The type of dataset: a session dataset, a curated dataset, or a connection to an external datasource.
+*Required*: No
+*Type*: String
+*Allowed values*: `SESSION | CURATED | EXTERNAL`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Tags`  <a name="cfn-iotsitewise-dataset-tags"></a>
 A list of key-value pairs that contain metadata for the access policy. For more information, see [Tagging your AWS IoT SiteWise resources](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/tag-resources.html) in the *AWS IoT SiteWise User Guide*.
 *Required*: No
 *Type*: Array of [Tag](aws-properties-iotsitewise-dataset-tag.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`WorkspaceName`  <a name="cfn-iotsitewise-dataset-workspacename"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_-]+$`
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
 <a name="aws-resource-iotsitewise-dataset-return-values"></a>

@@ -32,4 +32,4 @@ When accessing the Lambda management console or Lambda API endpoints, whether th
 
 Root certificates from the first two authorities are available from [Amazon trust services](https://www.amazontrust.com/repository/), but keeping your computer up-to-date is the more straightforward solution. To learn more about ACM-provided certificates, see [AWS Certificate Manager FAQs.](http://aws.amazon.com/certificate-manager/faqs/#certificates)
 
-This document was last published on September 18, 2026.
+This document was last published on September 22, 2026.

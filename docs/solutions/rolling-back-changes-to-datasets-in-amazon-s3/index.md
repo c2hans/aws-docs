@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/rolling-back-changes-to-datase
 title: 'Guidance for Rolling Back Changes to Datasets in Amazon S3'
 canonical_url: https://docs.aws.amazon.com/solutions/rolling-back-changes-to-datasets-in-amazon-s3/
 source: aws-documentation
-generated_on: 2026-09-18
+generated_on: 2026-09-22
 ---
 
 # Guidance for Rolling Back Changes to Datasets in Amazon S3

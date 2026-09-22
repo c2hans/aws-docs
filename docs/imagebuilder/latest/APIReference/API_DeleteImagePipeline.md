@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Del
 # DeleteImagePipeline
 <a name="API_DeleteImagePipeline"></a>
 
-Deletes an image pipeline.
+Deletes an image pipeline. Images that the pipeline created aren't deleted - remove those separately with [DeleteImage](API_DeleteImage.md). You can delete a pipeline while a build that it started is still running. The build continues independently.
 
 ## Request Syntax
 <a name="API_DeleteImagePipeline_RequestSyntax"></a>
@@ -65,11 +65,11 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** ForbiddenException **
@@ -77,7 +77,7 @@ You are not authorized to perform the requested operation.
 HTTP Status Code: 403
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** ResourceDependencyException **
@@ -85,12 +85,40 @@ You have attempted to mutate or delete a resource with a dependency that prohibi
 HTTP Status Code: 400
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_DeleteImagePipeline_Examples"></a>
+
+### Delete an image pipeline
+<a name="API_DeleteImagePipeline_Example_1"></a>
+
+The following example deletes an image pipeline.
+
+#### Sample Request
+<a name="API_DeleteImagePipeline_Example_1_Request"></a>
+
+```
+DELETE /DeleteImagePipeline?imagePipelineArn=arn%3Aaws%3Aimagebuilder%3Aus-west-2%3A111122223333%3Aimage-pipeline%2Fmy-example-pipeline HTTP/1.1
+```
+
+#### Sample Response
+<a name="API_DeleteImagePipeline_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "requestId": "0536e4e9-5331-493a-921e-e8f86d367043",
+    "imagePipelineArn": "arn:aws:imagebuilder:us-west-2:111122223333:image-pipeline/my-example-pipeline"
+}
+```
 
 ## See Also
 <a name="API_DeleteImagePipeline_SeeAlso"></a>

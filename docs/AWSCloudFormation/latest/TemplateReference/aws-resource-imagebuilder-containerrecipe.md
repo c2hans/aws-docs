@@ -71,7 +71,7 @@ Properties:
 <a name="aws-resource-imagebuilder-containerrecipe-properties"></a>
 
 `Components`  <a name="cfn-imagebuilder-containerrecipe-components"></a>
-Build and test components that are included in the container recipe. Recipes require a minimum of one build component, and can have a maximum of 20 build and test components in any combination.
+Build and test components that are included in the container recipe. A recipe can contain a maximum of 20 build and test components in any combination, by default. This maximum is an adjustable quota. For more information, see [EC2 Image Builder endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/imagebuilder.html) in the *AWS General Reference*.
 *Required*: No
 *Type*: Array of [ComponentConfiguration](aws-properties-imagebuilder-containerrecipe-componentconfiguration.md)
 *Minimum*: `1`
@@ -93,19 +93,19 @@ The description of the container recipe.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `DockerfileTemplateData`  <a name="cfn-imagebuilder-containerrecipe-dockerfiletemplatedata"></a>
-Dockerfiles are text documents that are used to build Docker containers, and ensure that they contain all of the elements required by the application running inside. The template data consists of contextual variables where Image Builder places build information or scripts, based on your container image recipe.
+The Dockerfile template that Image Builder uses to build the container image. The template can include contextual variables that Image Builder replaces with build information at build time. For the contextual variables that the template can include, see [Create a new version of a container recipe](https://docs.aws.amazon.com/imagebuilder/latest/userguide/create-container-recipes.html) in the *EC2 Image Builder User Guide*.
 *Required*: No
 *Type*: String
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `DockerfileTemplateUri`  <a name="cfn-imagebuilder-containerrecipe-dockerfiletemplateuri"></a>
-The Amazon S3 URI for the Dockerfile that is used to build your container image.
+The Amazon S3 URI for the Dockerfile template that is used to build your container image. You must have permission to read the object. Image Builder reads the object once, when it creates the recipe, and stores its content in the recipe. Later changes to the S3 object don't affect the recipe. You must specify exactly one of the `dockerfileTemplateData` or `dockerfileTemplateUri` properties.
 *Required*: No
 *Type*: String
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `ImageOsVersionOverride`  <a name="cfn-imagebuilder-containerrecipe-imageosversionoverride"></a>
-Specifies the operating system version for the base image.
+Specifies the operating system version for the base image. Use this property only when the base image is a container image from a registry. When the base image is an Image Builder image, the operating system version comes from the parent image.
 *Required*: No
 *Type*: String
 *Minimum*: `1`
@@ -119,7 +119,7 @@ A group of options that can be used to configure an instance for building and te
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `KmsKeyId`  <a name="cfn-imagebuilder-containerrecipe-kmskeyid"></a>
-The Amazon Resource Name (ARN) that uniquely identifies which KMS key is used to encrypt the container image for distribution to the target Region. This can be either the Key ARN or the Alias ARN. For more information, see [Key identifiers (KeyId)](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-id-key-ARN) in the *AWS Key Management Service Developer Guide*.
+The KMS key that Image Builder uses to encrypt the recipe's Dockerfile template data at rest. This can be either the Key ARN or the Alias ARN. For more information, see [Key identifiers (KeyId)](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-id-key-ARN) in the *AWS Key Management Service Developer Guide*. If you don't specify a key, Image Builder encrypts the template data with a KMS key that Image Builder owns. This key isn't used to encrypt the output container image.
 *Required*: No
 *Type*: String
 *Minimum*: `1`
@@ -142,7 +142,7 @@ The base image for customizations specified in the container recipe. This can co
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `PlatformOverride`  <a name="cfn-imagebuilder-containerrecipe-platformoverride"></a>
-Specifies the operating system platform when you use a custom base image.
+Specifies the operating system platform when you use a custom base image. Container recipes support only the Linux and Windows platforms.
 *Required*: No
 *Type*: String
 *Allowed values*: `Windows | Linux`

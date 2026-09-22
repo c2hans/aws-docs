@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Get
 # GetLifecycleExecution
 <a name="API_GetLifecycleExecution"></a>
 
-Retrieves the runtime information for a specific runtime instance of the lifecycle policy.
+Retrieves runtime information for a lifecycle execution – a single run of lifecycle actions that a lifecycle policy or a [StartResourceStateUpdate](API_StartResourceStateUpdate.md) request started.
 
 ## Request Syntax
 <a name="API_GetLifecycleExecution_RequestSyntax"></a>
@@ -70,11 +70,11 @@ Type: [LifecycleExecution](API_LifecycleExecution.md) object
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** ForbiddenException **
@@ -82,16 +82,52 @@ You are not authorized to perform the requested operation.
 HTTP Status Code: 403
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_GetLifecycleExecution_Examples"></a>
+
+### Get the details of a lifecycle execution
+<a name="API_GetLifecycleExecution_Example_1"></a>
+
+The following example retrieves the runtime status of the specified lifecycle execution. If the execution was started by StartResourceStateUpdate rather than a lifecycle policy run, the response doesn't include the lifecyclePolicyArn field.
+
+#### Sample Request
+<a name="API_GetLifecycleExecution_Example_1_Request"></a>
+
+```
+GET /GetLifecycleExecution?lifecycleExecutionId=lce-401aefc3-a829-46f6-8fc2-91497988a503 HTTP/1.1
+```
+
+#### Sample Response
+<a name="API_GetLifecycleExecution_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "lifecycleExecution": {
+        "lifecycleExecutionId": "lce-401aefc3-a829-46f6-8fc2-91497988a503",
+        "resourcesImpactedSummary": {
+            "hasImpactedResources": false
+        },
+        "state": {
+            "status": "IN_PROGRESS"
+        },
+        "startTime": 1788990149.801
+    }
+}
+```
 
 ## See Also
 <a name="API_GetLifecycleExecution_SeeAlso"></a>

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lis
 # ListWorkflows
 <a name="API_ListWorkflows"></a>
 
-Lists workflow build versions based on filtering parameters.
+Lists workflow versions based on filtering parameters. To list the build versions of a specific workflow version, call [ListWorkflowBuildVersions](API_ListWorkflowBuildVersions.md).
 
 ## Request Syntax
 <a name="API_ListWorkflows_RequestSyntax"></a>
@@ -39,12 +39,12 @@ The request does not use any URI parameters.
 The request accepts the following data in JSON format.
 
  ** [byName](#API_ListWorkflows_RequestSyntax) **   <a name="imagebuilder-ListWorkflows-request-byName"></a>
-Specify all or part of the workflow name to streamline results.
+Specifies whether to return one entry per workflow name, with all versions of each workflow aggregated. Defaults to `false`, which returns one entry per workflow version. You can't combine this option with the `version` filter.
 Type: Boolean
 Required: No
 
  ** [filters](#API_ListWorkflows_RequestSyntax) **   <a name="imagebuilder-ListWorkflows-request-filters"></a>
-Used to streamline search results.
+Filters to narrow the list of workflows. You can filter on `name`, `version`, `description`, and `type`.
 Type: Array of [Filter](API_Filter.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Required: No
@@ -62,7 +62,7 @@ Length Constraints: Minimum length of 1. Maximum length of 65535.
 Required: No
 
  ** [owner](#API_ListWorkflows_RequestSyntax) **   <a name="imagebuilder-ListWorkflows-request-owner"></a>
-Used to get a list of workflow build version filtered by the identity of the creator.
+Filters results based on the workflow owner. By default, this request returns the workflows that your account owns (`Self`). Specify `Amazon` to list the workflows that Image Builder manages. Image Builder rejects the `Shared` and `ThirdParty` owner values for workflows, and `AWSMarketplace` returns no results.
 Type: String
 Valid Values: `Self | Shared | Amazon | ThirdParty | AWSMarketplace`
 Required: No
@@ -103,7 +103,7 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 65535.
 
  ** [workflowVersionList](#API_ListWorkflows_ResponseSyntax) **   <a name="imagebuilder-ListWorkflows-response-workflowVersionList"></a>
-A list of workflow build versions that match the request criteria.
+A list of workflow versions that match the request criteria.
 Type: Array of [WorkflowVersion](API_WorkflowVersion.md) objects
 
 ## Errors
@@ -112,11 +112,11 @@ Type: Array of [WorkflowVersion](API_WorkflowVersion.md) objects
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** ForbiddenException **
@@ -128,16 +128,67 @@ You have provided an invalid pagination token in your request.
 HTTP Status Code: 400
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_ListWorkflows_Examples"></a>
+
+### List workflows that you own
+<a name="API_ListWorkflows_Example_1"></a>
+
+The following example lists the workflow versions that you own.
+
+#### Sample Request
+<a name="API_ListWorkflows_Example_1_Request"></a>
+
+```
+POST /ListWorkflows HTTP/1.1
+Content-type: application/json
+
+{
+    "owner": "Self"
+}
+```
+
+#### Sample Response
+<a name="API_ListWorkflows_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "workflowVersionList": [
+        {
+            "arn": "arn:aws:imagebuilder:us-west-2:111122223333:workflow/build/my-example-build-workflow/1.0.0",
+            "name": "my-example-build-workflow",
+            "version": "1.0.0",
+            "description": "Builds my example image",
+            "type": "BUILD",
+            "owner": "111122223333",
+            "dateCreated": "2026-09-09T19:56:09.033Z"
+        },
+        {
+            "arn": "arn:aws:imagebuilder:us-west-2:111122223333:workflow/test/my-example-test-workflow/1.0.0",
+            "name": "my-example-test-workflow",
+            "version": "1.0.0",
+            "description": "Tests my example image",
+            "type": "TEST",
+            "owner": "111122223333",
+            "dateCreated": "2026-09-09T19:56:12.440Z"
+        }
+    ]
+}
+```
 
 ## See Also
 <a name="API_ListWorkflows_SeeAlso"></a>

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/multi-region-application-scali
 title: 'Guidance for Multi-Region Application Scaling Using Amazon Aurora'
 canonical_url: https://docs.aws.amazon.com/solutions/multi-region-application-scaling-using-amazon-aurora/
 source: aws-documentation
-generated_on: 2026-09-18
+generated_on: 2026-09-22
 ---
 
 # Guidance for Multi-Region Application Scaling Using Amazon Aurora

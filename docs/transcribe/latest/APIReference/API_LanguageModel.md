@@ -30,6 +30,11 @@ Timestamps are in the format `YYYY-MM-DD'T'HH:MM:SS.SSSSSS-UTC`. For example, `2
 Type: Timestamp
 Required: No
 
+ ** EncryptionConfiguration **   <a name="transcribe-Type-LanguageModel-EncryptionConfiguration"></a>
+The encryption configuration used for your custom language model.
+Type: [EncryptionConfiguration](API_EncryptionConfiguration.md) object
+Required: No
+
  ** FailureReason **   <a name="transcribe-Type-LanguageModel-FailureReason"></a>
 If `ModelStatus` is `FAILED`, `FailureReason` contains information about why the custom language model request failed. See also: [Common Errors](https://docs.aws.amazon.com/transcribe/latest/APIReference/CommonErrors.html).
 Type: String

@@ -21,7 +21,7 @@ The request uses the following URI parameters.
 
  ** [resourceArn](#API_ListTagsForResource_RequestSyntax) **   <a name="imagebuilder-ListTagsForResource-request-uri-resourceArn"></a>
 The Amazon Resource Name (ARN) of the resource whose tags you want to retrieve.
-Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):(?:image-recipe|container-recipe|infrastructure-configuration|distribution-configuration|component|image|image-pipeline|lifecycle-policy|workflow\/(?:build|test|distribution))/[a-z0-9-_]+(?:/(?:(?:x|[0-9]+)\.(?:x|[0-9]+)\.(?:x|[0-9]+))(?:/[0-9]+)?)?$`
+Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?|third-party):(?:image-recipe|container-recipe|infrastructure-configuration|distribution-configuration|component|image|image-pipeline|lifecycle-policy|workflow\/(?:build|test|distribution))/[a-z0-9-_]+(?:/(?:(?:x|[0-9]+)\.(?:x|[0-9]+)\.(?:x|[0-9]+))(?:/[0-9]+)?)?$`
 Required: Yes
 
 ## Request Body
@@ -72,8 +72,38 @@ At least one of the resources referenced by your request does not exist.
 HTTP Status Code: 404
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
+
+## Examples
+<a name="API_ListTagsForResource_Examples"></a>
+
+### List the tags for a resource
+<a name="API_ListTagsForResource_Example_1"></a>
+
+The following example lists the tags that are assigned to an existing component build version.
+
+#### Sample Request
+<a name="API_ListTagsForResource_Example_1_Request"></a>
+
+```
+GET /tags/arn%3Aaws%3Aimagebuilder%3Aus-west-2%3A111122223333%3Acomponent%2Fmy-example-component%2F1.0.0%2F1 HTTP/1.1
+```
+
+#### Sample Response
+<a name="API_ListTagsForResource_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "tags": {
+        "CostCenter": "12345",
+        "Environment": "Production"
+    }
+}
+```
 
 ## See Also
 <a name="API_ListTagsForResource_SeeAlso"></a>

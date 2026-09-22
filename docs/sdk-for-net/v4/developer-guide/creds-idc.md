@@ -108,7 +108,7 @@ The response to this command should report the IAM Identity Center account and p
 
 **Note**
 If you already have an active AWS access portal session and run `aws sso login`, you will not be required to provide credentials.
-The sign-in process might prompt you to allow the AWS CLI access to your data. Because the AWS CLI is built on top of the SDK for Python, permission messages may contain variations of the `botocore` name.
+The sign-in process might prompt you to allow the AWS CLI access to your data. On the approval screen, the client name begins with `botocore-client-`, named for `botocore`, a Python library that the AWS CLI uses.
 
 ## Additional information
 <a name="idc-additional-info"></a>

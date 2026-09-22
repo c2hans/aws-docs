@@ -11,7 +11,7 @@ An image recipe.
 <a name="API_ImageRecipe_Contents"></a>
 
  ** additionalInstanceConfiguration **   <a name="imagebuilder-Type-ImageRecipe-additionalInstanceConfiguration"></a>
-Before you create a new AMI, Image Builder launches temporary Amazon EC2 instances to build and test your image configuration. Instance configuration adds a layer of control over those instances. You can define settings and add scripts to run when an instance is launched from your AMI.
+Before you create a new AMI, Image Builder launches temporary Amazon EC2 instances to build and test your image configuration. Instance configuration adds a layer of control over those instances. You can define settings and add scripts to run when Image Builder launches your build instance.
 Type: [AdditionalInstanceConfiguration](API_AdditionalInstanceConfiguration.md) object
 Required: No
 
@@ -35,7 +35,7 @@ Required: No
  ** arn **   <a name="imagebuilder-Type-ImageRecipe-arn"></a>
 The Amazon Resource Name (ARN) of the image recipe.
 Type: String
-Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):(?:image-recipe|container-recipe|infrastructure-configuration|distribution-configuration|component|image|image-pipeline|lifecycle-policy|workflow\/(?:build|test|distribution))/[a-z0-9-_]+(?:/(?:(?:x|[0-9]+)\.(?:x|[0-9]+)\.(?:x|[0-9]+))(?:/[0-9]+)?)?$`
+Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?|third-party):(?:image-recipe|container-recipe|infrastructure-configuration|distribution-configuration|component|image|image-pipeline|lifecycle-policy|workflow\/(?:build|test|distribution))/[a-z0-9-_]+(?:/(?:(?:x|[0-9]+)\.(?:x|[0-9]+)\.(?:x|[0-9]+))(?:/[0-9]+)?)?$`
 Required: No
 
  ** blockDeviceMappings **   <a name="imagebuilder-Type-ImageRecipe-blockDeviceMappings"></a>
@@ -44,7 +44,7 @@ Type: Array of [InstanceBlockDeviceMapping](API_InstanceBlockDeviceMapping.md) o
 Required: No
 
  ** components **   <a name="imagebuilder-Type-ImageRecipe-components"></a>
-The components that are included in the image recipe. Recipes require a minimum of one build component, and can have a maximum of 20 build and test components in any combination.
+The components that are included in the image recipe. A recipe can contain a maximum of 20 build and test components in any combination, by default. This maximum is an adjustable quota. For more information, see [EC2 Image Builder endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/imagebuilder.html) in the * AWS General Reference*.
 Type: Array of [ComponentConfiguration](API_ComponentConfiguration.md) objects
 Array Members: Minimum number of 1 item.
 Required: No
@@ -98,7 +98,7 @@ Value Length Constraints: Maximum length of 256.
 Required: No
 
  ** type **   <a name="imagebuilder-Type-ImageRecipe-type"></a>
-Specifies which type of image is created by the recipe - an AMI or a container image.
+The output image type. For an image recipe, this is always AMI. Container images are built from container recipes, a separate resource. This field isn't currently returned in responses.
 Type: String
 Valid Values: `AMI | DOCKER`
 Required: No
@@ -110,7 +110,7 @@ Pattern: `^[0-9]+\.[0-9]+\.[0-9]+$`
 Required: No
 
  ** workingDirectory **   <a name="imagebuilder-Type-ImageRecipe-workingDirectory"></a>
-The working directory to be used during build and test workflows.
+The working directory used during build and test workflows. If you don't specify a working directory, Image Builder uses `/tmp` for Linux and macOS build instances, and `C:/` for Windows build instances.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No

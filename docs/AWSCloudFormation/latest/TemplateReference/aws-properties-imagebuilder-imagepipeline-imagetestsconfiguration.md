@@ -42,7 +42,7 @@ Specifies whether tests run after building the image. When enabled, tests run af
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TimeoutMinutes`  <a name="cfn-imagebuilder-imagepipeline-imagetestsconfiguration-timeoutminutes"></a>
-The maximum time in minutes that tests are permitted to run.
+The maximum time in minutes that tests are permitted to run. If you don't specify a value, Image Builder stores and returns 720.
 The timeout property is not currently active. This value is ignored.
 *Required*: No
 *Type*: Integer

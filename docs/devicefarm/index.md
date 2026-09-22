@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/devicefarm/index.html
 title: 'AWS Device Farm Documentation'
 canonical_url: https://docs.aws.amazon.com/devicefarm/
 source: aws-documentation
-generated_on: 2026-09-18
+generated_on: 2026-09-22
 ---
 
 # AWS Device Farm Documentation

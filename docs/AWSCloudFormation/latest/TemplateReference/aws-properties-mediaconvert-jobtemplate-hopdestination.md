@@ -41,6 +41,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 Optional. When you set up a job to use queue hopping, you can specify a different relative priority for the job in the destination queue. If you don't specify, the relative priority will remain the same as in the previous queue.
 *Required*: No
 *Type*: Integer
+*Minimum*: `-50`
+*Maximum*: `50`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Queue`  <a name="cfn-mediaconvert-jobtemplate-hopdestination-queue"></a>
@@ -53,4 +55,6 @@ Optional unless the job is submitted on the default queue. When you set up a job
 Required for setting up a job to use queue hopping. Minimum wait time in minutes until the job can hop to the destination queue. Valid range is 1 to 4320 minutes, inclusive.
 *Required*: No
 *Type*: Integer
+*Minimum*: `1`
+*Maximum*: `4320`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -13,4 +13,5 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::Cases::Domain](aws-resource-cases-domain.md)
 + [AWS::Cases::Field](aws-resource-cases-field.md)
 + [AWS::Cases::Layout](aws-resource-cases-layout.md)
++ [AWS::Cases::RelatedItem](aws-resource-cases-relateditem.md)
 + [AWS::Cases::Template](aws-resource-cases-template.md)

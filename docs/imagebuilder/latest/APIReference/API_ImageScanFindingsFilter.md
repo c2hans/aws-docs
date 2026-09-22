@@ -11,7 +11,11 @@ A name value pair that Image Builder applies to streamline results from the vuln
 <a name="API_ImageScanFindingsFilter_Contents"></a>
 
  ** name **   <a name="imagebuilder-Type-ImageScanFindingsFilter-name"></a>
-The name of the image scan finding filter. Filter names are case-sensitive.
+The name of the image scan finding filter. Filter names are case-sensitive. Valid filter names are:
++  `imageBuildVersionArn` – Filters findings by the image build version that was scanned.
++  `imagePipelineArn` – Filters findings by the pipeline that created the scanned image.
++  `vulnerabilityId` – Filters findings by vulnerability ID, for example a CVE ID.
++  `severity` – Filters findings by severity level.
 Type: String
 Pattern: `^[a-zA-Z]{1,1024}$`
 Required: No

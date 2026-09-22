@@ -20,6 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[ClusterArn](#cfn-resiliencehubv2-service-ekssource-clusterarn)" : {{String}},
+  "[LabelSelector](#cfn-resiliencehubv2-service-ekssource-labelselector)" : {{EksLabelSelector}},
   "[Namespaces](#cfn-resiliencehubv2-service-ekssource-namespaces)" : {{[ String, ... ]}}
 }
 ```
@@ -29,6 +30,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [ClusterArn](#cfn-resiliencehubv2-service-ekssource-clusterarn): {{String}}
+  [LabelSelector](#cfn-resiliencehubv2-service-ekssource-labelselector): {{
+    EksLabelSelector}}
   [Namespaces](#cfn-resiliencehubv2-service-ekssource-namespaces): {{
     - String}}
 ```
@@ -41,6 +44,12 @@ Property description not available.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^arn:(aws|aws-cn|aws-iso|aws-iso-[a-z]{1}|aws-us-gov):[A-Za-z0-9][A-Za-z0-9_/.-]{0,62}:([a-z]{2}-((iso[a-z]{0,1}-)|(gov-)){0,1}[a-z]+-[0-9]):[0-9]{12}:[A-Za-z0-9/][A-Za-z0-9:_/+.-]{0,1023}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`LabelSelector`  <a name="cfn-resiliencehubv2-service-ekssource-labelselector"></a>
+Filters discovery to the Kubernetes objects whose labels match the selector. When omitted, all supported objects in the specified namespaces are discovered.
+*Required*: No
+*Type*: [EksLabelSelector](aws-properties-resiliencehubv2-service-ekslabelselector.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Namespaces`  <a name="cfn-resiliencehubv2-service-ekssource-namespaces"></a>

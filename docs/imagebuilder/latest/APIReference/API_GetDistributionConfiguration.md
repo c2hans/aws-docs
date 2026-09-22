@@ -138,11 +138,11 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** ForbiddenException **
@@ -150,16 +150,65 @@ You are not authorized to perform the requested operation.
 HTTP Status Code: 403
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_GetDistributionConfiguration_Examples"></a>
+
+### Get the details of a distribution configuration
+<a name="API_GetDistributionConfiguration_Example_1"></a>
+
+The following example retrieves a distribution configuration that distributes the output AMI to two Regions.
+
+#### Sample Request
+<a name="API_GetDistributionConfiguration_Example_1_Request"></a>
+
+```
+GET /GetDistributionConfiguration?distributionConfigurationArn=arn%3Aaws%3Aimagebuilder%3Aus-west-2%3A111122223333%3Adistribution-configuration%2Fmy-example-distribution HTTP/1.1
+```
+
+#### Sample Response
+<a name="API_GetDistributionConfiguration_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "requestId": "2d0a8dc0-99d5-4d7a-af7a-d1aeafd71c2e",
+    "distributionConfiguration": {
+        "arn": "arn:aws:imagebuilder:us-west-2:111122223333:distribution-configuration/my-example-distribution",
+        "name": "my-example-distribution",
+        "description": "Copies the output AMI to a second Region",
+        "distributions": [
+            {
+                "region": "us-west-2",
+                "amiDistributionConfiguration": {
+                    "name": "my-example-image-{{ imagebuilder:buildDate }}"
+                }
+            },
+            {
+                "region": "us-east-1",
+                "amiDistributionConfiguration": {
+                    "name": "my-example-image-{{ imagebuilder:buildDate }}"
+                }
+            }
+        ],
+        "timeoutMinutes": 720,
+        "dateCreated": "2026-09-09T19:37:37.231Z",
+        "tags": {}
+    }
+}
+```
 
 ## See Also
 <a name="API_GetDistributionConfiguration_SeeAlso"></a>

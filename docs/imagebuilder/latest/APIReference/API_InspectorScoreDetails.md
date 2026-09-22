@@ -11,7 +11,7 @@ Information about the factors that influenced the score that Amazon Inspector as
 <a name="API_InspectorScoreDetails_Contents"></a>
 
  ** adjustedCvss **   <a name="imagebuilder-Type-InspectorScoreDetails-adjustedCvss"></a>
-An object that contains details about an adjustment that Amazon Inspector made to the CVSS score for the finding.
+The CVSS score that Amazon Inspector assigned to the finding after applying its adjustments. It includes the score source, CVSS version, scoring vector, and the adjustments applied.
 Type: [CvssScoreDetails](API_CvssScoreDetails.md) object
 Required: No
 

@@ -15,6 +15,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::SageMaker::AppImageConfig](aws-resource-sagemaker-appimageconfig.md)
 + [AWS::SageMaker::Artifact](aws-resource-sagemaker-artifact.md)
 + [AWS::SageMaker::Cluster](aws-resource-sagemaker-cluster.md)
++ [AWS::SageMaker::ClusterSchedulerConfig](aws-resource-sagemaker-clusterschedulerconfig.md)
 + [AWS::SageMaker::CodeRepository](aws-resource-sagemaker-coderepository.md)
 + [AWS::SageMaker::Context](aws-resource-sagemaker-context.md)
 + [AWS::SageMaker::DataQualityJobDefinition](aws-resource-sagemaker-dataqualityjobdefinition.md)

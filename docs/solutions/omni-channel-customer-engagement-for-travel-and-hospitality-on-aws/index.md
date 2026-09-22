@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/omni-channel-customer-engageme
 title: 'Guidance for Omni-Channel Customer Engagement for Travel & Hospitality on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/omni-channel-customer-engagement-for-travel-and-hospitality-on-aws/
 source: aws-documentation
-generated_on: 2026-09-18
+generated_on: 2026-09-22
 ---
 
 # Guidance for Omni-Channel Customer Engagement for Travel & Hospitality on AWS

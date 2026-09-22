@@ -44,4 +44,5 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::Connect::UserHierarchyStructure](aws-resource-connect-userhierarchystructure.md)
 + [AWS::Connect::View](aws-resource-connect-view.md)
 + [AWS::Connect::ViewVersion](aws-resource-connect-viewversion.md)
++ [AWS::Connect::Vocabulary](aws-resource-connect-vocabulary.md)
 + [AWS::Connect::Workspace](aws-resource-connect-workspace.md)

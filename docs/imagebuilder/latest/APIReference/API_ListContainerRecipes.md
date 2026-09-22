@@ -60,7 +60,7 @@ Length Constraints: Minimum length of 1. Maximum length of 65535.
 Required: No
 
  ** [owner](#API_ListContainerRecipes_RequestSyntax) **   <a name="imagebuilder-ListContainerRecipes-request-owner"></a>
-Returns container recipes belonging to the specified owner, that have been shared with you. You can omit this field to return container recipes belonging to your account.
+Returns container recipes belonging to the specified owner, that have been shared with you. You can omit this field to return container recipes belonging to your account. For container recipes, the valid owner values are `Self`, `Shared`, and `Amazon`.
 Type: String
 Valid Values: `Self | Shared | Amazon | ThirdParty | AWSMarketplace`
 Required: No
@@ -120,11 +120,11 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** ForbiddenException **
@@ -136,16 +136,60 @@ You have provided an invalid pagination token in your request.
 HTTP Status Code: 400
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_ListContainerRecipes_Examples"></a>
+
+### List the container recipes you own
+<a name="API_ListContainerRecipes_Example_1"></a>
+
+The following example lists the container recipes that you own.
+
+#### Sample Request
+<a name="API_ListContainerRecipes_Example_1_Request"></a>
+
+```
+POST /ListContainerRecipes HTTP/1.1
+Content-type: application/json
+
+{
+    "owner": "Self"
+}
+```
+
+#### Sample Response
+<a name="API_ListContainerRecipes_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "requestId": "883e6f0e-8883-4c1a-9710-791afb74be0d",
+    "containerRecipeSummaryList": [
+        {
+            "arn": "arn:aws:imagebuilder:us-west-2:111122223333:container-recipe/my-example-container-recipe/1.0.0",
+            "containerType": "DOCKER",
+            "name": "my-example-container-recipe",
+            "platform": "Linux",
+            "owner": "111122223333",
+            "parentImage": "amazonlinux:latest",
+            "dateCreated": "2026-09-09T19:31:26.363Z",
+            "tags": {}
+        }
+    ]
+}
+```
 
 ## See Also
 <a name="API_ListContainerRecipes_SeeAlso"></a>

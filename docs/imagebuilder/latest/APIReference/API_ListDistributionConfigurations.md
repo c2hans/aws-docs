@@ -107,11 +107,11 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** ForbiddenException **
@@ -123,16 +123,65 @@ You have provided an invalid pagination token in your request.
 HTTP Status Code: 400
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_ListDistributionConfigurations_Examples"></a>
+
+### List distribution configurations that match a name filter
+<a name="API_ListDistributionConfigurations_Example_1"></a>
+
+The following example lists the distribution configurations whose name matches the filter value.
+
+#### Sample Request
+<a name="API_ListDistributionConfigurations_Example_1_Request"></a>
+
+```
+POST /ListDistributionConfigurations HTTP/1.1
+Content-type: application/json
+
+{
+    "filters": [
+        {
+            "name": "name",
+            "values": ["my-example-distribution-configuration"]
+        }
+    ]
+}
+```
+
+#### Sample Response
+<a name="API_ListDistributionConfigurations_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "requestId": "1057325c-6b4a-4e16-ac6e-12f1d8fcc6f9",
+    "distributionConfigurationSummaryList": [
+        {
+            "arn": "arn:aws:imagebuilder:us-west-2:111122223333:distribution-configuration/my-example-distribution-configuration",
+            "name": "my-example-distribution-configuration",
+            "description": "Distributes AMIs to us-west-2",
+            "dateCreated": "2026-09-09T21:09:02.581Z",
+            "tags": {},
+            "regions": [
+                "us-west-2"
+            ]
+        }
+    ]
+}
+```
 
 ## See Also
 <a name="API_ListDistributionConfigurations_SeeAlso"></a>

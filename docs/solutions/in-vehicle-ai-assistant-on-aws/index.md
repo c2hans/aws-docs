@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/in-vehicle-ai-assistant-on-aws
 title: 'Guidance for In-Vehicle AI Assistant'
 canonical_url: https://docs.aws.amazon.com/solutions/in-vehicle-ai-assistant-on-aws/
 source: aws-documentation
-generated_on: 2026-09-18
+generated_on: 2026-09-22
 ---
 
 # Guidance for In-Vehicle AI Assistant

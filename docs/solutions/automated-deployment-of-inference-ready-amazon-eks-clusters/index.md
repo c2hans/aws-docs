@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/automated-deployment-of-infere
 title: 'Guidance for Automated Deployment of Inference ready Amazon EKS Clusters'
 canonical_url: https://docs.aws.amazon.com/solutions/automated-deployment-of-inference-ready-amazon-eks-clusters/
 source: aws-documentation
-generated_on: 2026-09-18
+generated_on: 2026-09-22
 ---
 
 # Guidance for Automated Deployment of Inference ready Amazon EKS Clusters

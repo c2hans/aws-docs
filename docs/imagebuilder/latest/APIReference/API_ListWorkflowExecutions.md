@@ -94,7 +94,7 @@ Type: String
 Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):image/[a-z0-9-_]+/[0-9]+\.[0-9]+\.[0-9]+/[0-9]+$`
 
  ** [message](#API_ListWorkflowExecutions_ResponseSyntax) **   <a name="imagebuilder-ListWorkflowExecutions-response-message"></a>
-The output message from the list action, if applicable.
+The failure reason for the image build version, if it's in a failed state. This comes from the image itself, not from an individual workflow, so it's available even when no workflow executions remain for the image.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 500.
 
@@ -109,7 +109,7 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 
  ** [workflowExecutions](#API_ListWorkflowExecutions_ResponseSyntax) **   <a name="imagebuilder-ListWorkflowExecutions-response-workflowExecutions"></a>
-Contains an array of runtime details that represents each time a workflow ran for the requested image build version.
+An array of runtime details that represents each time a workflow ran for the requested image build version. Image Builder retains workflow execution records for a limited time, so this array can be empty for older image build versions.
 Type: Array of [WorkflowExecutionMetadata](API_WorkflowExecutionMetadata.md) objects
 
 ## Errors
@@ -118,11 +118,11 @@ Type: Array of [WorkflowExecutionMetadata](API_WorkflowExecutionMetadata.md) obj
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** ForbiddenException **
@@ -134,16 +134,77 @@ You have provided an invalid pagination token in your request.
 HTTP Status Code: 400
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_ListWorkflowExecutions_Examples"></a>
+
+### List the workflow runtime instances for an image build version
+<a name="API_ListWorkflowExecutions_Example_1"></a>
+
+The following example lists the workflow runtime instances that ran for the specified image build version, which was built with the Image Builder default build and test workflows.
+
+#### Sample Request
+<a name="API_ListWorkflowExecutions_Example_1_Request"></a>
+
+```
+POST /ListWorkflowExecutions HTTP/1.1
+Content-type: application/json
+
+{
+    "imageBuildVersionArn": "arn:aws:imagebuilder:us-west-2:111122223333:image/my-example-recipe/1.0.0/1"
+}
+```
+
+#### Sample Response
+<a name="API_ListWorkflowExecutions_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "requestId": "c78ef9a3-cce8-4e7d-ae96-426fb7e59f5d",
+    "workflowExecutions": [
+        {
+            "workflowBuildVersionArn": "arn:aws:imagebuilder:us-west-2:aws:workflow/build/build-image/1.0.3/1",
+            "workflowExecutionId": "wf-165b1cb6-3a62-4618-a021-94ddcbe32908",
+            "type": "BUILD",
+            "status": "COMPLETED",
+            "totalStepCount": 7,
+            "totalStepsSucceeded": 5,
+            "totalStepsFailed": 0,
+            "totalStepsSkipped": 2,
+            "startTime": "2026-09-09T19:12:23.175Z",
+            "endTime": "2026-09-09T19:19:06.158Z",
+            "retried": false
+        },
+        {
+            "workflowBuildVersionArn": "arn:aws:imagebuilder:us-west-2:aws:workflow/test/test-image/1.0.3/1",
+            "workflowExecutionId": "wf-1a3639b8-1366-4b73-8347-706874020dad",
+            "type": "TEST",
+            "status": "COMPLETED",
+            "totalStepCount": 4,
+            "totalStepsSucceeded": 2,
+            "totalStepsFailed": 0,
+            "totalStepsSkipped": 2,
+            "startTime": "2026-09-09T19:19:11.709Z",
+            "endTime": "2026-09-09T19:21:47.830Z",
+            "retried": false
+        }
+    ],
+    "imageBuildVersionArn": "arn:aws:imagebuilder:us-west-2:111122223333:image/my-example-recipe/1.0.0/1"
+}
+```
 
 ## See Also
 <a name="API_ListWorkflowExecutions_SeeAlso"></a>

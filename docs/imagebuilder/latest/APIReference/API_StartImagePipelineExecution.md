@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Sta
 # StartImagePipelineExecution
 <a name="API_StartImagePipelineExecution"></a>
 
-Manually triggers a pipeline to create an image.
+Manually triggers a pipeline to create an image. You can start a build this way whether the pipeline is enabled or disabled. The response returns as soon as Image Builder creates the new image resource and queues the build. Use the returned `imageBuildVersionArn` with [GetImage](API_GetImage.md) to track build progress.
 
 ## Request Syntax
 <a name="API_StartImagePipelineExecution_RequestSyntax"></a>
@@ -34,7 +34,7 @@ The request does not use any URI parameters.
 The request accepts the following data in JSON format.
 
  ** [clientToken](#API_StartImagePipelineExecution_RequestSyntax) **   <a name="imagebuilder-StartImagePipelineExecution-request-clientToken"></a>
-A unique, case-sensitive identifier you provide to ensure that the operation completes no more than one time. If this token matches a previous request, the service ignores the request, but does not return an error. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
+A unique, case-sensitive identifier you provide to ensure that the operation runs no more than one time. If you retry a request with the same client token, Image Builder returns the original response without running the operation again. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: Yes
@@ -96,11 +96,11 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** ForbiddenException **
@@ -112,7 +112,7 @@ You have specified a client token for an operation using parameter values that d
 HTTP Status Code: 400
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** ResourceInUseException **
@@ -124,12 +124,47 @@ At least one of the resources referenced by your request does not exist.
 HTTP Status Code: 404
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_StartImagePipelineExecution_Examples"></a>
+
+### Start a pipeline build manually
+<a name="API_StartImagePipelineExecution_Example_1"></a>
+
+The following example starts a build for the specified pipeline. The response returns the ARN of the new image build version.
+
+#### Sample Request
+<a name="API_StartImagePipelineExecution_Example_1_Request"></a>
+
+```
+PUT /StartImagePipelineExecution HTTP/1.1
+Content-type: application/json
+
+{
+    "imagePipelineArn": "arn:aws:imagebuilder:us-west-2:111122223333:image-pipeline/my-example-pipeline",
+    "clientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE66666"
+}
+```
+
+#### Sample Response
+<a name="API_StartImagePipelineExecution_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "requestId": "f477f64c-9ece-4478-977d-5821f8ed051b",
+    "clientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE66666",
+    "imageBuildVersionArn": "arn:aws:imagebuilder:us-west-2:111122223333:image/my-example-recipe/1.0.0/1"
+}
+```
 
 ## See Also
 <a name="API_StartImagePipelineExecution_SeeAlso"></a>

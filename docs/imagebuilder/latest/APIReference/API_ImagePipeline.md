@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Ima
 # ImagePipeline
 <a name="API_ImagePipeline"></a>
 
-Details of an image pipeline.
+Defines the automation configuration for building, testing, and distributing images. A pipeline references the resources that its builds use, such as the recipe and infrastructure configuration. It also holds the settings that control its builds, such as the schedule and custom workflows.
 
 ## Contents
 <a name="API_ImagePipeline_Contents"></a>
@@ -13,13 +13,13 @@ Details of an image pipeline.
  ** arn **   <a name="imagebuilder-Type-ImagePipeline-arn"></a>
 The Amazon Resource Name (ARN) of the image pipeline.
 Type: String
-Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):(?:image-recipe|container-recipe|infrastructure-configuration|distribution-configuration|component|image|image-pipeline|lifecycle-policy|workflow\/(?:build|test|distribution))/[a-z0-9-_]+(?:/(?:(?:x|[0-9]+)\.(?:x|[0-9]+)\.(?:x|[0-9]+))(?:/[0-9]+)?)?$`
+Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?|third-party):(?:image-recipe|container-recipe|infrastructure-configuration|distribution-configuration|component|image|image-pipeline|lifecycle-policy|workflow\/(?:build|test|distribution))/[a-z0-9-_]+(?:/(?:(?:x|[0-9]+)\.(?:x|[0-9]+)\.(?:x|[0-9]+))(?:/[0-9]+)?)?$`
 Required: No
 
  ** consecutiveFailures **   <a name="imagebuilder-Type-ImagePipeline-consecutiveFailures"></a>
 Image Builder tracks the number of consecutive failures for scheduled pipeline executions and takes one of the following actions each time it runs on a schedule:
 + If the pipeline execution is successful, the number of consecutive failures resets to zero.
-+ If the pipeline execution fails, Image Builder increments the number of consecutive failures. If the failure count exceeds the limit defined in the `AutoDisablePolicy`, Image Builder disables the pipeline.
++ If the pipeline execution fails, Image Builder increments the number of consecutive failures. If the failure count reaches the limit defined in the [AutoDisablePolicy](API_AutoDisablePolicy.md), Image Builder disables the pipeline.
 The consecutive failure count is also reset to zero under the following conditions:
 + The pipeline runs manually and succeeds.
 + The pipeline configuration is updated.
@@ -39,7 +39,7 @@ Type: String
 Required: No
 
  ** dateLastRun **   <a name="imagebuilder-Type-ImagePipeline-dateLastRun"></a>
-This is no longer supported, and does not return a value.
+The date on which this image pipeline was last run.
 Type: String
 Required: No
 
@@ -82,12 +82,12 @@ Type: String
 Required: No
 
  ** imageScanningConfiguration **   <a name="imagebuilder-Type-ImagePipeline-imageScanningConfiguration"></a>
-Contains settings for vulnerability scans.
+Contains settings for vulnerability scans that Amazon Inspector runs against the test instance during image creation.
 Type: [ImageScanningConfiguration](API_ImageScanningConfiguration.md) object
 Required: No
 
  ** imageTags **   <a name="imagebuilder-Type-ImagePipeline-imageTags"></a>
-The tags to be applied to the images produced by this pipeline.
+The tags that Image Builder applies to the Image Builder image resource that this pipeline's scheduled executions create. These tags don't apply to the output AMI. Builds that you start manually use the tags from the [StartImagePipelineExecution](https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_StartImagePipelineExecution.html) request instead.
 Type: String to string map
 Map Entries: Maximum number of 50 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
@@ -112,7 +112,7 @@ Valid Values: `PENDING | CREATING | BUILDING | TESTING | DISTRIBUTING | INTEGRAT
 Required: No
 
  ** loggingConfiguration **   <a name="imagebuilder-Type-ImagePipeline-loggingConfiguration"></a>
-Defines logging configuration for the output image.
+The CloudWatch Logs configuration for the pipeline: the log group for image build logs and the log group for pipeline execution logs.
 Type: [PipelineLoggingConfiguration](API_PipelineLoggingConfiguration.md) object
 Required: No
 
@@ -123,7 +123,7 @@ Pattern: `^[-_A-Za-z-0-9][-_A-Za-z0-9 ]{1,126}[-_A-Za-z-0-9]$`
 Required: No
 
  ** platform **   <a name="imagebuilder-Type-ImagePipeline-platform"></a>
-The platform of the image pipeline.
+The platform of the image pipeline, inherited from the recipe that the pipeline uses.
 Type: String
 Valid Values: `Windows | Linux | macOS`
 Required: No
@@ -134,7 +134,7 @@ Type: [Schedule](API_Schedule.md) object
 Required: No
 
  ** status **   <a name="imagebuilder-Type-ImagePipeline-status"></a>
-The status of the image pipeline.
+The status of the image pipeline. A disabled pipeline doesn't run on its schedule, but you can still start builds manually. Image Builder can also disable a pipeline automatically when consecutive scheduled builds fail.
 Type: String
 Valid Values: `DISABLED | ENABLED`
 Required: No

@@ -54,7 +54,7 @@ The tags to apply to AMIs distributed to this Region.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Description`  <a name="cfn-imagebuilder-distributionconfiguration-amidistributionconfiguration-description"></a>
-The description of the AMI distribution configuration. Minimum and maximum length are in characters.
+The description to apply to the distributed AMI. Image Builder sets this as the output AMI's description in each target Region and account. If you don't specify a description, the AMI in the build Region uses the image recipe's description, if the recipe has one. Copies distributed to other Regions and accounts don't receive a default description.
 *Required*: No
 *Type*: String
 *Minimum*: `1`
@@ -76,7 +76,7 @@ Launch permissions can be used to configure which AWS accounts can use the AMI t
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Name`  <a name="cfn-imagebuilder-distributionconfiguration-amidistributionconfiguration-name"></a>
-The name of the output AMI.
+The name of the output AMI. The name must include the `{{ imagebuilder:buildDate }}` dynamic tag so that each build produces a uniquely named AMI. If you don't specify a name, Image Builder names the output AMI with the image name followed by the build timestamp, for example `my-image 2022-10-26T22-30-05.912619Z`.
 *Required*: No
 *Type*: String
 *Pattern*: `^[-_A-Za-z0-9{][-_A-Za-z0-9\s:{}\.]+[-_A-Za-z0-9}]$`
@@ -85,7 +85,7 @@ The name of the output AMI.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TargetAccountIds`  <a name="cfn-imagebuilder-distributionconfiguration-amidistributionconfiguration-targetaccountids"></a>
-The ID of an account to which you want to distribute an image.
+The AWS account IDs to distribute the AMI to in this Region. Each listed account receives its own copy of the output AMI. If you don't specify accounts, Image Builder distributes the AMI only to your own account.
 *Required*: No
 *Type*: Array of String
 *Minimum*: `1`

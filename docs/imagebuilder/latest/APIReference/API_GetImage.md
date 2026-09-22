@@ -20,7 +20,7 @@ GET /GetImage?imageBuildVersionArn={{imageBuildVersionArn}} HTTP/1.1
 The request uses the following URI parameters.
 
  ** [imageBuildVersionArn](#API_GetImage_RequestSyntax) **   <a name="imagebuilder-GetImage-request-uri-imageBuildVersionArn"></a>
-The Amazon Resource Name (ARN) of the image that you want to get.
+The Amazon Resource Name (ARN) of the image that you want to get. You can specify a full build version ARN, or a version ARN with or without wildcards (`x.x.x`, `1.x.x`, or `1.0.x`). A version or wildcard ARN resolves to the latest matching build version that has reached `AVAILABLE` status. Builds that were later deprecated, disabled, or deleted don't resolve. To get an image in any other state, such as a failed or in-progress build, specify the full build version ARN.
 Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):image/[a-z0-9-_]+/(?:(?:([0-9]+|x)\.([0-9]+|x)\.([0-9]+|x))|(?:[0-9]+\.[0-9]+\.[0-9]+/[0-9]+))$`
 Required: Yes
 
@@ -404,7 +404,7 @@ The image object.
 Type: [Image](API_Image.md) object
 
  ** [latestVersionReferences](#API_GetImage_ResponseSyntax) **   <a name="imagebuilder-GetImage-response-latestVersionReferences"></a>
-The resource ARNs with different wildcard variations of semantic versioning.
+A set of wildcard version ARNs that always reference the latest version of the resource. ARNs are included for the latest version overall, and for the latest versions within the same major, minor, and patch levels.
 Type: [LatestVersionReferences](API_LatestVersionReferences.md) object
 
  ** [requestId](#API_GetImage_ResponseSyntax) **   <a name="imagebuilder-GetImage-response-requestId"></a>
@@ -418,11 +418,11 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** ForbiddenException **
@@ -430,16 +430,57 @@ You are not authorized to perform the requested operation.
 HTTP Status Code: 403
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_GetImage_Examples"></a>
+
+### Check the status of an image build
+<a name="API_GetImage_Example_1"></a>
+
+The following example retrieves an image build version to check its status while the build is running. The response is shortened to show a subset of the fields that Image Builder returns.
+
+#### Sample Request
+<a name="API_GetImage_Example_1_Request"></a>
+
+```
+GET /GetImage?imageBuildVersionArn=arn%3Aaws%3Aimagebuilder%3Aus-west-2%3A111122223333%3Aimage%2Fmy-example-recipe%2F1.0.0%2F1 HTTP/1.1
+```
+
+#### Sample Response
+<a name="API_GetImage_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "requestId": "4be892f0-e1d1-47f9-8bc1-d08ec5dec640",
+    "image": {
+        "arn": "arn:aws:imagebuilder:us-west-2:111122223333:image/my-example-recipe/1.0.0/1",
+        "type": "AMI",
+        "name": "my-example-recipe",
+        "version": "1.0.0/1",
+        "platform": "Linux",
+        "enhancedImageMetadataEnabled": true,
+        "state": {
+            "status": "BUILDING"
+        },
+        "sourcePipelineArn": "arn:aws:imagebuilder:us-west-2:111122223333:image-pipeline/my-example-pipeline",
+        "dateCreated": "2026-09-03T05:44:21.121Z",
+        "tags": {}
+    }
+}
+```
 
 ## See Also
 <a name="API_GetImage_SeeAlso"></a>

@@ -11,7 +11,7 @@ Additional rules to specify resources that should be exempt from ad-hoc lifecycl
 <a name="API_ResourceStateUpdateExclusionRules_Contents"></a>
 
  ** amis **   <a name="imagebuilder-Type-ResourceStateUpdateExclusionRules-amis"></a>
-Defines criteria for AMIs that are excluded from lifecycle actions.
+Defines criteria for AMIs that Image Builder should exclude from the resource state update.
 Type: [LifecyclePolicyDetailExclusionRulesAmis](API_LifecyclePolicyDetailExclusionRulesAmis.md) object
 Required: No
 

@@ -5,13 +5,13 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Res
 # ResourceStateUpdateIncludeResources
 <a name="API_ResourceStateUpdateIncludeResources"></a>
 
-Specifies if the lifecycle policy should apply actions to selected resources.
+Specifies which underlying resources the resource state update applies to, in addition to the Image Builder image resource itself: distributed AMIs and their snapshots for AMI images, or distributed container images for container images.
 
 ## Contents
 <a name="API_ResourceStateUpdateIncludeResources_Contents"></a>
 
  ** amis **   <a name="imagebuilder-Type-ResourceStateUpdateIncludeResources-amis"></a>
-Specifies whether the lifecycle action should apply to distributed AMIs
+Specifies whether the lifecycle action should apply to distributed AMIs.
 Type: Boolean
 Required: No
 

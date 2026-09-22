@@ -77,15 +77,15 @@ A map of plain text, non-secret key:value pairs, known as encryption context pai
 Type: String to string map
 Map Entries: Maximum number of 10 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 2000.
-Key Pattern: `.*\S.*`
+Key Pattern: `^[\x20-\x7E]+$`
 Value Length Constraints: Minimum length of 1. Maximum length of 2000.
-Value Pattern: `.*\S.*`
+Value Pattern: `^[\x20-\x7E]+$`
 Required: No
 
  ** [LanguageCode](#API_StartMedicalTranscriptionJob_RequestSyntax) **   <a name="transcribe-StartMedicalTranscriptionJob-request-LanguageCode"></a>
 The language code that represents the language spoken in the input media file. US English (`en-US`) is the only valid value for medical transcription jobs. Any other value you enter for language code results in a `BadRequestException` error.
 Type: String
-Valid Values: `af-ZA | ar-AE | ar-SA | da-DK | de-CH | de-DE | en-AB | en-AU | en-GB | en-IE | en-IN | en-US | en-WL | es-ES | es-US | fa-IR | fr-CA | fr-FR | he-IL | hi-IN | id-ID | it-IT | ja-JP | ko-KR | ms-MY | nl-NL | pt-BR | pt-PT | ru-RU | ta-IN | te-IN | tr-TR | zh-CN | zh-TW | th-TH | en-ZA | en-NZ | vi-VN | sv-SE | ab-GE | ast-ES | az-AZ | ba-RU | be-BY | bg-BG | bn-IN | bs-BA | ca-ES | ckb-IQ | ckb-IR | cs-CZ | cy-WL | el-GR | et-EE | et-ET | eu-ES | fi-FI | gl-ES | gu-IN | ha-NG | hr-HR | hu-HU | hy-AM | is-IS | ka-GE | kab-DZ | kk-KZ | kn-IN | ky-KG | lg-IN | lt-LT | lv-LV | mhr-RU | mi-NZ | mk-MK | ml-IN | mn-MN | mr-IN | mt-MT | no-NO | or-IN | pa-IN | pl-PL | ps-AF | ro-RO | rw-RW | si-LK | sk-SK | sl-SI | so-SO | sr-RS | su-ID | sw-BI | sw-KE | sw-RW | sw-TZ | sw-UG | tl-PH | tt-RU | ug-CN | uk-UA | uz-UZ | wo-SN | zh-HK | zu-ZA`
+Valid Values: `af-ZA | ar-AE | ar-SA | am-ET | cy-GB | da-DK | de-CH | de-DE | en-AB | en-AU | en-GB | en-IE | en-IN | en-US | en-WL | es-ES | es-MX | es-US | fa-AF | fa-IR | fr-CA | fr-FR | ga-IE | gd-GB | he-IL | hi-IN | ht-HT | id-ID | it-IT | ja-JP | jv-ID | km-KH | ko-KR | my-MM | ms-MY | nl-NL | pt-BR | pt-PT | ru-RU | ta-IN | te-IN | tr-TR | zh-CN | zh-TW | th-TH | en-ZA | en-NZ | vi-VN | sv-SE | ab-GE | ast-ES | az-AZ | ba-RU | be-BY | bg-BG | bn-IN | bs-BA | ca-ES | ckb-IQ | ckb-IR | cs-CZ | cy-WL | el-GR | et-EE | et-ET | eu-ES | fi-FI | gl-ES | gu-IN | ha-NG | hr-HR | hu-HU | hy-AM | is-IS | ka-GE | kab-DZ | kk-KZ | kn-IN | ky-KG | lg-IN | lt-LT | lv-LV | mhr-RU | mi-NZ | mk-MK | ml-IN | mn-MN | mr-IN | mt-MT | no-NO | ne-NP | or-IN | pa-IN | pl-PL | ps-AF | ro-RO | rw-RW | si-LK | sk-SK | sl-SI | so-SO | sq-AL | sr-RS | su-ID | sw-BI | sw-KE | sw-RW | sw-TZ | sw-UG | tl-PH | tt-RU | ug-CN | uk-UA | uz-UZ | wo-SN | zh-HK | zu-ZA`
 Required: Yes
 
  ** [Media](#API_StartMedicalTranscriptionJob_RequestSyntax) **   <a name="transcribe-StartMedicalTranscriptionJob-request-Media"></a>

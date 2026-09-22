@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Upd
 # UpdateLifecyclePolicy
 <a name="API_UpdateLifecyclePolicy"></a>
 
-Updates the specified lifecycle policy.
+Updates the specified lifecycle policy. The request replaces the existing policy configuration rather than merging changes, so re-specify every setting that you want to keep. The `resourceType` must match the existing policy's value.
 
 ## Request Syntax
 <a name="API_UpdateLifecyclePolicy_RequestSyntax"></a>
@@ -81,19 +81,19 @@ The request does not use any URI parameters.
 The request accepts the following data in JSON format.
 
  ** [clientToken](#API_UpdateLifecyclePolicy_RequestSyntax) **   <a name="imagebuilder-UpdateLifecyclePolicy-request-clientToken"></a>
-A unique, case-sensitive identifier you provide to ensure that the operation completes no more than one time. If this token matches a previous request, the service ignores the request, but does not return an error. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
+A unique, case-sensitive identifier you provide to ensure that the operation runs no more than one time. If you retry a request with the same client token, Image Builder returns the original response without running the operation again. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: Yes
 
  ** [description](#API_UpdateLifecyclePolicy_RequestSyntax) **   <a name="imagebuilder-UpdateLifecyclePolicy-request-description"></a>
-Optional description for the lifecycle policy.
+Optional description for the lifecycle policy. Because the update replaces the entire configuration, omitting this property removes any existing description.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
  ** [executionRole](#API_UpdateLifecyclePolicy_RequestSyntax) **   <a name="imagebuilder-UpdateLifecyclePolicy-request-executionRole"></a>
-The name or Amazon Resource Name (ARN) of the IAM role that Image Builder uses to update the lifecycle policy.
+The name or Amazon Resource Name (ARN) for the IAM role you create that grants Image Builder access to run lifecycle actions.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `^(?:arn:aws(?:-[a-z]+)*:iam::[0-9]{12}:role/)?[a-zA-Z_0-9+=,.@\-_/]+$`
@@ -113,18 +113,18 @@ Array Members: Minimum number of 1 item. Maximum number of 3 items.
 Required: Yes
 
  ** [resourceSelection](#API_UpdateLifecyclePolicy_RequestSyntax) **   <a name="imagebuilder-UpdateLifecyclePolicy-request-resourceSelection"></a>
-Selection criteria for resources that the lifecycle policy applies to.
+Selection criteria for resources that the lifecycle policy applies to. You must specify exactly one selection criteria: either recipes or a tag map, not both.
 Type: [LifecyclePolicyResourceSelection](API_LifecyclePolicyResourceSelection.md) object
 Required: Yes
 
  ** [resourceType](#API_UpdateLifecyclePolicy_RequestSyntax) **   <a name="imagebuilder-UpdateLifecyclePolicy-request-resourceType"></a>
-The type of image resource that the lifecycle policy applies to.
+The type of image resource that the lifecycle policy applies to. The value must match the policy's existing resource type. You can't change the resource type of an existing lifecycle policy.
 Type: String
 Valid Values: `AMI_IMAGE | CONTAINER_IMAGE`
 Required: Yes
 
  ** [status](#API_UpdateLifecyclePolicy_RequestSyntax) **   <a name="imagebuilder-UpdateLifecyclePolicy-request-status"></a>
-Indicates whether the lifecycle policy resource is enabled.
+Indicates whether the lifecycle policy resource is enabled. Defaults to `ENABLED` when omitted, so updating a disabled policy without setting this property re-enables it.
 Type: String
 Valid Values: `DISABLED | ENABLED`
 Required: No
@@ -160,11 +160,11 @@ Pattern: `^arn:aws(?:-[a-z]+)*:imagebuilder:[a-z]{2,}(?:-[a-z]+)+-[0-9]+:(?:[0-9
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** ForbiddenException **
@@ -176,11 +176,11 @@ You have specified a client token for an operation using parameter values that d
 HTTP Status Code: 400
 
  ** InvalidParameterCombinationException **
-You have specified two or more mutually exclusive parameters. Review the error message for details.
+You have specified a combination of parameters that isn't valid. For example, two mutually exclusive parameters, or a parameter without its required companion parameter. Review the error message for details.
 HTTP Status Code: 400
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** ResourceInUseException **
@@ -188,12 +188,71 @@ The resource that you are trying to operate on is currently in use. Review the m
 HTTP Status Code: 400
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_UpdateLifecyclePolicy_Examples"></a>
+
+### Update a lifecycle policy
+<a name="API_UpdateLifecyclePolicy_Example_1"></a>
+
+The following example updates a lifecycle policy to delete AMI images and their associated snapshots after 12 months, retaining the 3 most recent images.
+
+#### Sample Request
+<a name="API_UpdateLifecyclePolicy_Example_1_Request"></a>
+
+```
+PUT /UpdateLifecyclePolicy HTTP/1.1
+Content-type: application/json
+
+{
+    "lifecyclePolicyArn": "arn:aws:imagebuilder:us-west-2:111122223333:lifecycle-policy/my-example-policy",
+    "description": "Deletes AMI images and their snapshots after 12 months, retaining the 3 most recent",
+    "status": "ENABLED",
+    "executionRole": "arn:aws:iam::111122223333:role/my-example-lifecycle-role",
+    "resourceType": "AMI_IMAGE",
+    "policyDetails": [
+        {
+            "action": {
+                "type": "DELETE",
+                "includeResources": {
+                    "amis": true,
+                    "snapshots": true
+                }
+            },
+            "filter": {
+                "type": "AGE",
+                "value": 12,
+                "unit": "MONTHS",
+                "retainAtLeast": 3
+            }
+        }
+    ],
+    "resourceSelection": {
+        "tagMap": {
+            "environment": "production"
+        }
+    },
+    "clientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLEaaaaa"
+}
+```
+
+#### Sample Response
+<a name="API_UpdateLifecyclePolicy_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "lifecyclePolicyArn": "arn:aws:imagebuilder:us-west-2:111122223333:lifecycle-policy/my-example-policy"
+}
+```
 
 ## See Also
 <a name="API_UpdateLifecyclePolicy_SeeAlso"></a>

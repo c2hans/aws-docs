@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-imagebuilder-imagerecipe-additionalinstanceconfiguration-properties"></a>
 
 `SystemsManagerAgent`  <a name="cfn-imagebuilder-imagerecipe-additionalinstanceconfiguration-systemsmanageragent"></a>
-Contains settings for the Systems Manager agent on your build instance.
+The Systems Manager agent settings for your build instance. This setting applies to Linux and macOS build instances only. Requests that set it for a recipe with a Windows base image are rejected.
 *Required*: No
 *Type*: [SystemsManagerAgent](aws-properties-imagebuilder-imagerecipe-systemsmanageragent.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
@@ -47,7 +47,7 @@ Contains settings for the Systems Manager agent on your build instance.
 `UserDataOverride`  <a name="cfn-imagebuilder-imagerecipe-additionalinstanceconfiguration-userdataoverride"></a>
 Use this property to provide commands or a command script to run when you launch your build instance.
 The userDataOverride property replaces any commands that Image Builder might have added to ensure that Systems Manager is installed on your Linux build instance. If you override the user data, make sure that you add commands to install Systems Manager, if it is not pre-installed on your base image.
-The user data is always base 64 encoded. For example, the following commands are encoded as `IyEvYmluL2Jhc2gKbWtkaXIgLXAgL3Zhci9iYi8KdG91Y2ggL3Zhci$`:
+The user data is always base 64 encoded. For example, the following commands are encoded as `IyEvYmluL2Jhc2gKbWtkaXIgLXAgL3Zhci9iYi8KdG91Y2ggL3Zhcg==`:
  *\#\!/bin/bash*
 mkdir -p /var/bb/
 touch /var

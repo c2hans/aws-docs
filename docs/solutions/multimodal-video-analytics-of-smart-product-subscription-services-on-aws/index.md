@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/multimodal-video-analytics-of-
 title: 'Guidance for Multimodal Video Analytics of Smart Product Subscription Services on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/multimodal-video-analytics-of-smart-product-subscription-services-on-aws/
 source: aws-documentation
-generated_on: 2026-09-18
+generated_on: 2026-09-22
 ---
 
 # Guidance for Multimodal Video Analytics of Smart Product Subscription Services on AWS

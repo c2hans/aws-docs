@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/intelligent-route-optimization
 title: 'Guidance for Intelligent Route Optimization on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/intelligent-route-optimization-on-aws/
 source: aws-documentation
-generated_on: 2026-09-18
+generated_on: 2026-09-22
 ---
 
 # Guidance for Intelligent Route Optimization on AWS

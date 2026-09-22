@@ -41,7 +41,7 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
  ** state **   <a name="imagebuilder-Type-Ami-state"></a>
-Image status and the reason for that status.
+The state of the AMI, which includes the status and, if applicable, the reason for that status.
 Type: [ImageState](API_ImageState.md) object
 Required: No
 

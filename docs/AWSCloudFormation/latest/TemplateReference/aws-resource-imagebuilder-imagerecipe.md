@@ -87,13 +87,13 @@ AMI watermarks are supported only for image recipes. AMIs with watermarks cannot
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `BlockDeviceMappings`  <a name="cfn-imagebuilder-imagerecipe-blockdevicemappings"></a>
-The block device mappings of the image recipe.
+The block device mappings that Image Builder applies to the build instance and the output AMI. For example, you can override the size of the base image's root volume or attach additional EBS volumes.
 *Required*: No
 *Type*: Array of [InstanceBlockDeviceMapping](aws-properties-imagebuilder-imagerecipe-instanceblockdevicemapping.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Components`  <a name="cfn-imagebuilder-imagerecipe-components"></a>
-The components included in the image recipe.
+The components included in the image recipe. Components are optional. A recipe with no components bakes the base image without additional customization. You can specify each component only one time in a recipe. Components with a status of `DEPRECATED` or `DISABLED` can't be added to new recipes.
 *Required*: No
 *Type*: Array of [ComponentConfiguration](aws-properties-imagebuilder-imagerecipe-componentconfiguration.md)
 *Minimum*: `1`
@@ -108,7 +108,7 @@ The description of the image recipe.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Name`  <a name="cfn-imagebuilder-imagerecipe-name"></a>
-The name of the image recipe.
+The name of the image recipe. The recipe name, combined with the semantic version, must be unique to your account in each AWS Region. Image Builder generates the image recipe ARN from a normalized form of the name, so names that differ only in case, spaces, or underscores count as the same name.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[-_A-Za-z-0-9][-_A-Za-z0-9 ]{1,126}[-_A-Za-z-0-9]$`
@@ -120,7 +120,7 @@ The base image for customizations specified in the image recipe. You can specify
 + Image Builder image Amazon Resource Name (ARN)
 + AWS Systems Manager (SSM) Parameter Store Parameter, prefixed by `ssm:`, followed by the parameter name or ARN.
 + AWS Marketplace product ID
-If you enter an AMI ID or an SSM parameter that contains the AMI ID, you must have access to the AMI, and the AMI must be in the source Region.
+If you enter an AMI ID or an SSM parameter that contains the AMI ID, you must have access to the AMI. The AMI must also be in the Region where you're creating the recipe.
 *Required*: Yes
 *Type*: String
 *Minimum*: `1`
@@ -145,7 +145,7 @@ The semantic version has four nodes: <major>.<minor>.<patch>/<build>. You can as
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `WorkingDirectory`  <a name="cfn-imagebuilder-imagerecipe-workingdirectory"></a>
-The working directory used during build and test workflows.
+The working directory used during build and test workflows. If you don't specify a working directory, Image Builder uses `/tmp` for Linux and macOS build instances, and `C:/` for Windows build instances.
 *Required*: No
 *Type*: String
 *Minimum*: `1`

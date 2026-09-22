@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::ImageBuilder::LifecyclePolicy ResourceSelection
 <a name="aws-properties-imagebuilder-lifecyclepolicy-resourceselection"></a>
 
-Resource selection criteria for the lifecycle policy.
+Resource selection criteria for the lifecycle policy. You must provide exactly one selection criteria: either recipes or a tag map, not both.
 
 ## Syntax
 <a name="aws-properties-imagebuilder-lifecyclepolicy-resourceselection-syntax"></a>

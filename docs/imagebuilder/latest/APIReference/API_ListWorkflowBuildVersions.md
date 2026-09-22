@@ -44,7 +44,7 @@ Length Constraints: Minimum length of 1. Maximum length of 65535.
 Required: No
 
  ** [workflowVersionArn](#API_ListWorkflowBuildVersions_RequestSyntax) **   <a name="imagebuilder-ListWorkflowBuildVersions-request-workflowVersionArn"></a>
-The Amazon Resource Name (ARN) of the workflow resource for which to get a list of build versions.
+The Amazon Resource Name (ARN) of the workflow resource for which to get a list of build versions. The version segments can contain wildcards (`x`) to match multiple versions of the workflow. If you don't specify an ARN, the response lists build versions for all of the workflows in your account.
 Type: String
 Pattern: `^arn:aws(?:-[a-z]+)*:imagebuilder:[a-z]{2,}(?:-[a-z]+)+-[0-9]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):workflow/(build|test|distribution)/[a-z0-9-_]+/(?:[0-9]+|x)\.(?:[0-9]+|x)\.(?:[0-9]+|x)$`
 Required: No
@@ -93,7 +93,7 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 65535.
 
  ** [workflowSummaryList](#API_ListWorkflowBuildVersions_ResponseSyntax) **   <a name="imagebuilder-ListWorkflowBuildVersions-response-workflowSummaryList"></a>
-A list that contains metadata for the workflow builds that have run for the workflow resource specified in the request.
+A list that contains metadata for the build versions of the workflow resource specified in the request.
 Type: Array of [WorkflowSummary](API_WorkflowSummary.md) objects
 
 ## Errors
@@ -102,11 +102,11 @@ Type: Array of [WorkflowSummary](API_WorkflowSummary.md) objects
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** ForbiddenException **
@@ -118,16 +118,69 @@ You have provided an invalid pagination token in your request.
 HTTP Status Code: 400
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_ListWorkflowBuildVersions_Examples"></a>
+
+### List the build versions of a workflow
+<a name="API_ListWorkflowBuildVersions_Example_1"></a>
+
+The following example lists the build versions that exist for version 1.0.0 of the specified workflow, with the most recent build version first and the change description for each build version showing what changed.
+
+#### Sample Request
+<a name="API_ListWorkflowBuildVersions_Example_1_Request"></a>
+
+```
+POST /ListWorkflowBuildVersions HTTP/1.1
+Content-type: application/json
+
+{
+    "workflowVersionArn": "arn:aws:imagebuilder:us-west-2:111122223333:workflow/build/my-example-workflow/1.0.0"
+}
+```
+
+#### Sample Response
+<a name="API_ListWorkflowBuildVersions_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "workflowSummaryList": [
+        {
+            "arn": "arn:aws:imagebuilder:us-west-2:111122223333:workflow/build/my-example-workflow/1.0.0/2",
+            "name": "my-example-workflow",
+            "version": "1.0.0",
+            "description": "Workflow to build my example image",
+            "changeDescription": "Added a step to collect image metadata from the build instance",
+            "type": "BUILD",
+            "owner": "111122223333",
+            "dateCreated": "2026-09-09T19:56:38.339Z"
+        },
+        {
+            "arn": "arn:aws:imagebuilder:us-west-2:111122223333:workflow/build/my-example-workflow/1.0.0/1",
+            "name": "my-example-workflow",
+            "version": "1.0.0",
+            "description": "Workflow to build my example image",
+            "changeDescription": "Initial version",
+            "type": "BUILD",
+            "owner": "111122223333",
+            "dateCreated": "2026-09-09T19:56:35.992Z"
+        }
+    ]
+}
+```
 
 ## See Also
 <a name="API_ListWorkflowBuildVersions_SeeAlso"></a>

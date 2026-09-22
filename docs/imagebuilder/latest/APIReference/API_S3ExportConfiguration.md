@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_S3E
 # S3ExportConfiguration
 <a name="API_S3ExportConfiguration"></a>
 
-Properties that configure export from your build instance to a compatible file format for your VM.
+Properties that configure exporting the output image to a disk image file in an Amazon S3 bucket, in a format that's compatible with your VMs.
 
 ## Contents
 <a name="API_S3ExportConfiguration_Contents"></a>

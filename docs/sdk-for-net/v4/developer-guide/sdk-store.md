@@ -8,7 +8,7 @@ For information about breaking changes and migrating your applications, see the 
 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
-# Using the SDK Store (Windows only)
+# SDK Store (Windows only)
 <a name="sdk-store"></a>
 
 (Be sure to review the [important warnings and guidelines](net-dg-legacy-creds.md#net-dg-config-creds-warnings-and-guidelines).)
@@ -120,3 +120,8 @@ The following is the updated profile.
 
 **Note**
 You can also set the AWS Region in other locations and by using other methods. For more information, see [Setting the AWS Region for the AWS SDK for .NET](net-dg-region-selection.md).
+
+## How your application uses profiles from the SDK Store
+<a name="sdk-store-usage"></a>
++ **Automatic resolution**: On Windows, the SDK checks the SDK Store first when resolving profile-based credentials. Set a profile name via `AWSConfigs.AWSProfileName` or the `AWS_PROFILE` environment variable, or rely on the `[default]` profile. For more information, see [Credential and profile resolution](creds-assign.md).
++ **Explicit access in code**: Use `CredentialProfileStoreChain` to load a profile and pass its credentials to a service client. For more information, see [Get credentials from the SDK Store or the shared AWS credentials file](creds-locate.md#creds-locate-chain-get-credentials-default-location).

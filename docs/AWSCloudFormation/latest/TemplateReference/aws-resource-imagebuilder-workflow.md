@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::ImageBuilder::Workflow
 <a name="aws-resource-imagebuilder-workflow"></a>
 
-Creates a new workflow or a new version of an existing workflow.
+Creates a new workflow or a new version of an existing workflow. If a workflow with the same name and semantic version already exists, and your request changes its configuration, Image Builder creates a new build version. If the configuration is identical to the latest build version, the request fails because that workflow configuration already exists.
 
 ## Syntax
 <a name="aws-resource-imagebuilder-workflow-syntax"></a>
@@ -64,7 +64,7 @@ Describes what change has been made in this version of the workflow, or what mak
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Data`  <a name="cfn-imagebuilder-workflow-data"></a>
-Contains the UTF-8 encoded YAML document content for the workflow. Alternatively, you can specify the `uri` of a YAML document file stored in Amazon S3. However, you cannot specify both properties.
+The UTF-8 encoded YAML document content for the workflow, up to 16,000 characters. For larger documents, store the document in Amazon S3 and specify the `uri` property instead. You must specify exactly one of the `data` or `uri` properties.
 *Required*: No
 *Type*: String
 *Minimum*: `1`
@@ -80,7 +80,7 @@ Describes the workflow.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `KmsKeyId`  <a name="cfn-imagebuilder-workflow-kmskeyid"></a>
-The Amazon Resource Name (ARN) that uniquely identifies the KMS key used to encrypt this workflow resource. This can be either the Key ARN or the Alias ARN. For more information, see [Key identifiers (KeyId)](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-id-key-ARN) in the *AWS Key Management Service Developer Guide*.
+The Amazon Resource Name (ARN) that uniquely identifies the KMS key used to encrypt this workflow resource. This can be either the Key ARN or the Alias ARN. For more information, see [Key identifiers (KeyId)](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-id-key-ARN) in the *AWS Key Management Service Developer Guide*. If you don't specify a key, Image Builder encrypts the workflow document with a KMS key that Image Builder owns.
 *Required*: No
 *Type*: String
 *Minimum*: `1`
@@ -88,7 +88,7 @@ The Amazon Resource Name (ARN) that uniquely identifies the KMS key used to encr
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Name`  <a name="cfn-imagebuilder-workflow-name"></a>
-The name of the workflow to create.
+The name of the workflow to create. Image Builder generates the workflow ARN from a normalized form of the name, so names that differ only in case, spaces, or underscores count as the same name. If a workflow with the same name and semantic version already exists in your account in the same AWS Region, the request creates a new build version for it. If the content is also identical to the latest build version, the request fails because the workflow already exists.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[-_A-Za-z-0-9][-_A-Za-z0-9 ]{1,126}[-_A-Za-z-0-9]$`
@@ -102,15 +102,15 @@ Tags that apply to the workflow resource.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Type`  <a name="cfn-imagebuilder-workflow-type"></a>
-The phase in the image build process for which the workflow resource is responsible.
+The image creation stage that this workflow applies to. Image Builder validates the workflow document steps against the stage you specify.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `BUILD | TEST | DISTRIBUTION`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Uri`  <a name="cfn-imagebuilder-workflow-uri"></a>
-The `uri` of a YAML component document file. This must be an S3 URL (`s3://bucket/key`), and you must have permission to access the S3 bucket it points to. If you use Amazon S3, you can specify component content up to your service quota.
-Alternatively, you can specify the YAML document inline, using the component `data` property. You cannot specify both properties.
+The `uri` of a YAML workflow document file stored in Amazon S3. This must be an S3 URL (`s3://bucket/key`), and you must have permission to access the S3 bucket it points to. A workflow document that you provide from Amazon S3 can be up to your service quota for workflow size.
+Alternatively, you can specify the YAML document inline, using the workflow `data` property. You must specify exactly one of the `data` or `uri` properties.
 *Required*: No
 *Type*: String
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

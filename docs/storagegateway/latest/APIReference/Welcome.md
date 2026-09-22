@@ -27,4 +27,4 @@ For example, a volume Amazon Resource Name (ARN) with the longer volume ID forma
 A snapshot ID with the longer ID format looks like the following: `snap-78e226633445566ee`.
 For more information, see [Announcement: Heads-up – Longer Storage Gateway volume and snapshot IDs coming in 2016](http://forums.aws.amazon.com/ann.jspa?annID=3557).
 
-This document was last published on September 18, 2026.
+This document was last published on September 22, 2026.

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/workspaces-thin-client/index.html
 title: 'Amazon WorkSpaces Thin Client'
 canonical_url: https://docs.aws.amazon.com/workspaces-thin-client/
 source: aws-documentation
-generated_on: 2026-09-19
+generated_on: 2026-09-22
 ---
 
 # Amazon WorkSpaces Thin Client

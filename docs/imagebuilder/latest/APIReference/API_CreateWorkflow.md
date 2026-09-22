@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Cre
 # CreateWorkflow
 <a name="API_CreateWorkflow"></a>
 
-Creates a new workflow or a new version of an existing workflow.
+Creates a new workflow or a new version of an existing workflow. If a workflow with the same name and semantic version already exists, and your request changes its configuration, Image Builder creates a new build version. If the configuration is identical to the latest build version, the request fails because that workflow configuration already exists.
 
 ## Request Syntax
 <a name="API_CreateWorkflow_RequestSyntax"></a>
@@ -48,13 +48,13 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
  ** [clientToken](#API_CreateWorkflow_RequestSyntax) **   <a name="imagebuilder-CreateWorkflow-request-clientToken"></a>
-A unique, case-sensitive identifier you provide to ensure that the operation completes no more than one time. If this token matches a previous request, the service ignores the request, but does not return an error. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
+A unique, case-sensitive identifier you provide to ensure that the operation runs no more than one time. If you retry a request with the same client token, Image Builder returns the original response without running the operation again. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: Yes
 
  ** [data](#API_CreateWorkflow_RequestSyntax) **   <a name="imagebuilder-CreateWorkflow-request-data"></a>
-Contains the UTF-8 encoded YAML document content for the workflow. Alternatively, you can specify the `uri` of a YAML document file stored in Amazon S3. However, you cannot specify both properties.
+The UTF-8 encoded YAML document content for the workflow, up to 16,000 characters. For larger documents, store the document in Amazon S3 and specify the `uri` property instead. You must specify exactly one of the `data` or `uri` properties.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 16000.
 Pattern: `[^\x00]+`
@@ -67,18 +67,18 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
  ** [dryRun](#API_CreateWorkflow_RequestSyntax) **   <a name="imagebuilder-CreateWorkflow-request-dryRun"></a>
-Validates the required permissions and request parameters without making the request. If validation succeeds, the operation returns a `DryRunOperationException` error response.
+Validates the required permissions and request parameters without performing the operation. If validation succeeds, the operation returns a `DryRunOperationException` error response.
 Type: Boolean
 Required: No
 
  ** [kmsKeyId](#API_CreateWorkflow_RequestSyntax) **   <a name="imagebuilder-CreateWorkflow-request-kmsKeyId"></a>
-The Amazon Resource Name (ARN) that uniquely identifies the KMS key used to encrypt this workflow resource. This can be either the Key ARN or the Alias ARN. For more information, see [Key identifiers (KeyId)](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-id-key-ARN) in the * AWS Key Management Service Developer Guide*.
+The Amazon Resource Name (ARN) that uniquely identifies the KMS key used to encrypt this workflow resource. This can be either the Key ARN or the Alias ARN. For more information, see [Key identifiers (KeyId)](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-id-key-ARN) in the * AWS Key Management Service Developer Guide*. If you don't specify a key, Image Builder encrypts the workflow document with a KMS key that Image Builder owns.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
  ** [name](#API_CreateWorkflow_RequestSyntax) **   <a name="imagebuilder-CreateWorkflow-request-name"></a>
-The name of the workflow to create.
+The name of the workflow to create. Image Builder generates the workflow ARN from a normalized form of the name, so names that differ only in case, spaces, or underscores count as the same name. If a workflow with the same name and semantic version already exists in your account in the same AWS Region, the request creates a new build version for it. If the content is also identical to the latest build version, the request fails because the workflow already exists.
 Type: String
 Pattern: `^[-_A-Za-z-0-9][-_A-Za-z0-9 ]{1,126}[-_A-Za-z-0-9]$`
 Required: Yes
@@ -102,14 +102,14 @@ Value Length Constraints: Maximum length of 256.
 Required: No
 
  ** [type](#API_CreateWorkflow_RequestSyntax) **   <a name="imagebuilder-CreateWorkflow-request-type"></a>
-The phase in the image build process for which the workflow resource is responsible.
+The image creation stage that this workflow applies to. Image Builder validates the workflow document steps against the stage you specify.
 Type: String
 Valid Values: `BUILD | TEST | DISTRIBUTION`
 Required: Yes
 
  ** [uri](#API_CreateWorkflow_RequestSyntax) **   <a name="imagebuilder-CreateWorkflow-request-uri"></a>
-The `uri` of a YAML component document file. This must be an S3 URL (`s3://bucket/key`), and you must have permission to access the S3 bucket it points to. If you use Amazon S3, you can specify component content up to your service quota.
-Alternatively, you can specify the YAML document inline, using the component `data` property. You cannot specify both properties.
+The `uri` of a YAML workflow document file stored in Amazon S3. This must be an S3 URL (`s3://bucket/key`), and you must have permission to access the S3 bucket it points to. A workflow document that you provide from Amazon S3 can be up to your service quota for workflow size.
+Alternatively, you can specify the YAML document inline, using the workflow `data` property. You must specify exactly one of the `data` or `uri` properties.
 Type: String
 Required: No
 
@@ -145,7 +145,7 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 
  ** [latestVersionReferences](#API_CreateWorkflow_ResponseSyntax) **   <a name="imagebuilder-CreateWorkflow-response-latestVersionReferences"></a>
-The resource ARNs with different wildcard variations of semantic versioning.
+A set of wildcard version ARNs that always reference the latest version of the resource. ARNs are included for the latest version overall, and for the latest versions within the same major, minor, and patch levels.
 Type: [LatestVersionReferences](API_LatestVersionReferences.md) object
 
  ** [workflowBuildVersionArn](#API_CreateWorkflow_ResponseSyntax) **   <a name="imagebuilder-CreateWorkflow-response-workflowBuildVersionArn"></a>
@@ -160,11 +160,11 @@ Pattern: `^arn:aws(?:-[a-z]+)*:imagebuilder:[a-z]{2,}(?:-[a-z]+)+-[0-9]+:(?:[0-9
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** DryRunOperationException **
@@ -180,11 +180,11 @@ You have specified a client token for an operation using parameter values that d
 HTTP Status Code: 400
 
  ** InvalidParameterCombinationException **
-You have specified two or more mutually exclusive parameters. Review the error message for details.
+You have specified a combination of parameters that isn't valid. For example, two mutually exclusive parameters, or a parameter without its required companion parameter. Review the error message for details.
 HTTP Status Code: 400
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** InvalidVersionNumberException **
@@ -196,7 +196,7 @@ The resource that you are trying to operate on is currently in use. Review the m
 HTTP Status Code: 400
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceQuotaExceededException **
@@ -206,6 +206,50 @@ HTTP Status Code: 402
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_CreateWorkflow_Examples"></a>
+
+### Create a build workflow from an inline document
+<a name="API_CreateWorkflow_Example_1"></a>
+
+The following example creates a build workflow from a YAML workflow document provided inline in the request.
+
+#### Sample Request
+<a name="API_CreateWorkflow_Example_1_Request"></a>
+
+```
+PUT /CreateWorkflow HTTP/1.1
+Content-type: application/json
+
+{
+    "name": "my-example-workflow",
+    "semanticVersion": "1.0.0",
+    "description": "Workflow to build an AMI",
+    "type": "BUILD",
+    "data": "name: my-example-workflow\ndescription: Workflow to build an AMI\nschemaVersion: 1.0\nsteps:\n  - name: LaunchBuildInstance\n    action: LaunchInstance\n    onFailure: Abort\n    inputs:\n      waitFor: ssmAgent\n  - name: ApplyBuildComponents\n    action: ExecuteComponents\n    onFailure: Abort\n    inputs:\n      instanceId.$: $.stepOutputs.LaunchBuildInstance.instanceId\n  - name: CreateOutputAMI\n    action: CreateImage\n    onFailure: Abort\n    inputs:\n      instanceId.$: $.stepOutputs.LaunchBuildInstance.instanceId\n  - name: TerminateBuildInstance\n    action: TerminateInstance\n    onFailure: Continue\n    inputs:\n      instanceId.$: $.stepOutputs.LaunchBuildInstance.instanceId\n",
+    "clientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE54321"
+}
+```
+
+#### Sample Response
+<a name="API_CreateWorkflow_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "clientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE54321",
+    "workflowBuildVersionArn": "arn:aws:imagebuilder:us-west-2:111122223333:workflow/build/my-example-workflow/1.0.0/1",
+    "latestVersionReferences": {
+        "latestVersionArn": "arn:aws:imagebuilder:us-west-2:111122223333:workflow/build/my-example-workflow/x.x.x",
+        "latestMajorVersionArn": "arn:aws:imagebuilder:us-west-2:111122223333:workflow/build/my-example-workflow/1.x.x",
+        "latestMinorVersionArn": "arn:aws:imagebuilder:us-west-2:111122223333:workflow/build/my-example-workflow/1.0.x",
+        "latestPatchVersionArn": "arn:aws:imagebuilder:us-west-2:111122223333:workflow/build/my-example-workflow/1.0.0"
+    }
+}
+```
 
 ## See Also
 <a name="API_CreateWorkflow_SeeAlso"></a>

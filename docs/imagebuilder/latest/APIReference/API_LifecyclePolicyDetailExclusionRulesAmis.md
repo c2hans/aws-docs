@@ -16,7 +16,7 @@ Type: Boolean
 Required: No
 
  ** lastLaunched **   <a name="imagebuilder-Type-LifecyclePolicyDetailExclusionRulesAmis-lastLaunched"></a>
-Specifies configuration details for Image Builder to exclude the most recent resources from lifecycle actions.
+Configures Image Builder to exclude AMIs that were launched within the specified time period from lifecycle actions. AMIs with no recorded last-launched time aren't excluded by this rule.
 Type: [LifecyclePolicyDetailExclusionRulesAmisLastLaunched](API_LifecyclePolicyDetailExclusionRulesAmisLastLaunched.md) object
 Required: No
 
@@ -27,14 +27,14 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
  ** sharedAccounts **   <a name="imagebuilder-Type-LifecyclePolicyDetailExclusionRulesAmis-sharedAccounts"></a>
-Specifies AWS accounts whose resources are excluded from the lifecycle action.
+The lifecycle action doesn't apply to AMIs that are shared with any of the specified AWS accounts.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 1536 items.
 Pattern: `^[0-9]{12}$`
 Required: No
 
  ** tagMap **   <a name="imagebuilder-Type-LifecyclePolicyDetailExclusionRulesAmis-tagMap"></a>
-Lists tags that should be excluded from lifecycle actions for the AMIs that have them.
+Lifecycle actions don't apply to AMIs that have any of these tags. Both the key and the value must match.
 Type: String to string map
 Map Entries: Maximum number of 50 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.

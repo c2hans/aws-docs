@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Put
 # PutComponentPolicy
 <a name="API_PutComponentPolicy"></a>
 
-Applies a policy to a component. To share resources, call the RAM API [CreateResourceShare](https://docs.aws.amazon.com/ram/latest/APIReference/API_CreateResourceShare.html). If you call this API, you must also call the RAM API [PromoteResourceShareCreatedFromPolicy](https://docs.aws.amazon.com/ram/latest/APIReference/API_PromoteResourceShareCreatedFromPolicy.html) so that the resource is visible to all principals with whom the resource is shared.
+Applies a policy to a component. The preferred way to share resources is with the RAM API [CreateResourceShare](https://docs.aws.amazon.com/ram/latest/APIReference/API_CreateResourceShare.html). If you use the PutComponentPolicy operation instead, you must also call the RAM API [PromoteResourceShareCreatedFromPolicy](https://docs.aws.amazon.com/ram/latest/APIReference/API_PromoteResourceShareCreatedFromPolicy.html). Otherwise, the resource isn't visible to the principals that it's shared with.
 
 ## Request Syntax
 <a name="API_PutComponentPolicy_RequestSyntax"></a>
@@ -33,7 +33,7 @@ The request accepts the following data in JSON format.
  ** [componentArn](#API_PutComponentPolicy_RequestSyntax) **   <a name="imagebuilder-PutComponentPolicy-request-componentArn"></a>
 The Amazon Resource Name (ARN) of the component that this policy should be applied to.
 Type: String
-Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):component/[a-z0-9-_]+/[0-9]+\.[0-9]+\.[0-9]+/[0-9]+$`
+Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?|third-party):component/[a-z0-9-_]+/[0-9]+\.[0-9]+\.[0-9]+/[0-9]+$`
 Required: Yes
 
  ** [policy](#API_PutComponentPolicy_RequestSyntax) **   <a name="imagebuilder-PutComponentPolicy-request-policy"></a>
@@ -65,7 +65,7 @@ The following data is returned in JSON format by the service.
  ** [componentArn](#API_PutComponentPolicy_ResponseSyntax) **   <a name="imagebuilder-PutComponentPolicy-response-componentArn"></a>
 The Amazon Resource Name (ARN) of the component that this policy was applied to.
 Type: String
-Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):component/[a-z0-9-_]+/[0-9]+\.[0-9]+\.[0-9]+/[0-9]+$`
+Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?|third-party):component/[a-z0-9-_]+/[0-9]+\.[0-9]+\.[0-9]+/[0-9]+$`
 
  ** [requestId](#API_PutComponentPolicy_ResponseSyntax) **   <a name="imagebuilder-PutComponentPolicy-response-requestId"></a>
 The request ID that uniquely identifies this request.
@@ -78,11 +78,11 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** ForbiddenException **
@@ -94,7 +94,7 @@ The value that you provided for the specified parameter is invalid.
 HTTP Status Code: 400
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** ResourceNotFoundException **
@@ -102,12 +102,46 @@ At least one of the resources referenced by your request does not exist.
 HTTP Status Code: 404
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_PutComponentPolicy_Examples"></a>
+
+### Share a component with another account
+<a name="API_PutComponentPolicy_Example_1"></a>
+
+The following example applies a resource policy that grants another account permission to get and list the component.
+
+#### Sample Request
+<a name="API_PutComponentPolicy_Example_1_Request"></a>
+
+```
+PUT /PutComponentPolicy HTTP/1.1
+Content-type: application/json
+
+{
+    "componentArn": "arn:aws:imagebuilder:us-west-2:111122223333:component/my-shared-component/1.0.0/1",
+    "policy": "{\"Version\": \"2012-10-17\", \"Statement\": [{\"Effect\": \"Allow\", \"Principal\": {\"AWS\": \"arn:aws:iam::444455556666:root\"}, \"Action\": [\"imagebuilder:GetComponent\", \"imagebuilder:ListComponents\"], \"Resource\": [\"arn:aws:imagebuilder:us-west-2:111122223333:component/my-shared-component/1.0.0/1\"]}]}"
+}
+```
+
+#### Sample Response
+<a name="API_PutComponentPolicy_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "requestId": "ad5a3a66-95c0-4eb5-b34e-f28980256275",
+    "componentArn": "arn:aws:imagebuilder:us-west-2:111122223333:component/my-shared-component/1.0.0/1"
+}
+```
 
 ## See Also
 <a name="API_PutComponentPolicy_SeeAlso"></a>

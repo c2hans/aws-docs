@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/index.html
 title: 'Amazon GameLift Streams Documentation'
 canonical_url: https://docs.aws.amazon.com/gameliftstreams/
 source: aws-documentation
-generated_on: 2026-09-19
+generated_on: 2026-09-22
 ---
 
 # Amazon GameLift Streams Documentation

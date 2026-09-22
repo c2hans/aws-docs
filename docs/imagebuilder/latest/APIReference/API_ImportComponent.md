@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Imp
 # ImportComponent
 <a name="API_ImportComponent"></a>
 
-Imports a component and transforms its data into a component document.
+Imports a component and transforms its data into a component document. For the `SHELL` format, Image Builder wraps your script in a component document with a single step that runs the script.
 
 ## Request Syntax
 <a name="API_ImportComponent_RequestSyntax"></a>
@@ -49,13 +49,13 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
  ** [clientToken](#API_ImportComponent_RequestSyntax) **   <a name="imagebuilder-ImportComponent-request-clientToken"></a>
-A unique, case-sensitive identifier you provide to ensure that the operation completes no more than one time. If this token matches a previous request, the service ignores the request, but does not return an error. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
+A unique, case-sensitive identifier you provide to ensure that the operation runs no more than one time. If you retry a request with the same client token, Image Builder returns the original response without running the operation again. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: Yes
 
  ** [data](#API_ImportComponent_RequestSyntax) **   <a name="imagebuilder-ImportComponent-request-data"></a>
-The data of the component. Used to specify the data inline. Either `data` or `uri` can be used to specify the data within the component.
+The data of the component. For the `SHELL` format, this is the plain script content. You must specify exactly one of the `data` or `uri` properties. For scripts that exceed the inline length constraint, use the `uri` property.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
@@ -73,13 +73,13 @@ Valid Values: `SHELL`
 Required: Yes
 
  ** [kmsKeyId](#API_ImportComponent_RequestSyntax) **   <a name="imagebuilder-ImportComponent-request-kmsKeyId"></a>
-The Amazon Resource Name (ARN) that uniquely identifies the KMS key used to encrypt this component. This can be either the Key ARN or the Alias ARN. For more information, see [Key identifiers (KeyId)](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-id-key-ARN) in the * AWS Key Management Service Developer Guide*.
+The Amazon Resource Name (ARN) of the KMS key that is used to encrypt this component. This can be either the Key ARN or the Alias ARN. For more information, see [Key identifiers (KeyId)](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-id-key-ARN) in the * AWS Key Management Service Developer Guide*. If you don't specify a key, Image Builder encrypts the component data with a KMS key that Image Builder owns.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
  ** [name](#API_ImportComponent_RequestSyntax) **   <a name="imagebuilder-ImportComponent-request-name"></a>
-The name of the component.
+The name of the component. Image Builder generates the component ARN from a normalized form of the name, so names that differ only in case, spaces, or underscores count as the same name. If a component with the same name and semantic version already exists in your account in the same AWS Region, the request creates a new build version for it. If the content is also identical to the latest build version, the request fails because the component already exists.
 Type: String
 Pattern: `^[-_A-Za-z-0-9][-_A-Za-z0-9 ]{1,126}[-_A-Za-z-0-9]$`
 Required: Yes
@@ -93,7 +93,8 @@ Required: Yes
  ** [semanticVersion](#API_ImportComponent_RequestSyntax) **   <a name="imagebuilder-ImportComponent-request-semanticVersion"></a>
 The semantic version of the component. This version follows the semantic version syntax.
 The semantic version has four nodes: <major>.<minor>.<patch>/<build>. You can assign values for the first three, and can filter on all of them.
- **Filtering:** You can use wildcards (x) to specify the most recent versions or nodes when selecting the base image or components for your recipe. When you use a wildcard in any node, all nodes to the right of the first wildcard must also be wildcards.
+ **Assignment:** For the first three nodes, you can assign any positive integer value, including zero. The upper limit is 2^30-1, or 1073741823, for each node. Image Builder automatically assigns the build number to the fourth node.
+ **Patterns:** You can use any numeric pattern that adheres to the assignment requirements for the nodes that you can assign. For example, you might choose a software version pattern, such as 1.0.0, or a date, such as 2021.01.01.
 Type: String
 Pattern: `^[0-9]+\.[0-9]+\.[0-9]+$`
 Required: Yes
@@ -147,7 +148,7 @@ Length Constraints: Minimum length of 1. Maximum length of 64.
  ** [componentBuildVersionArn](#API_ImportComponent_ResponseSyntax) **   <a name="imagebuilder-ImportComponent-response-componentBuildVersionArn"></a>
 The Amazon Resource Name (ARN) of the imported component.
 Type: String
-Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):component/[a-z0-9-_]+/[0-9]+\.[0-9]+\.[0-9]+/[0-9]+$`
+Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?|third-party):component/[a-z0-9-_]+/[0-9]+\.[0-9]+\.[0-9]+/[0-9]+$`
 
  ** [requestId](#API_ImportComponent_ResponseSyntax) **   <a name="imagebuilder-ImportComponent-response-requestId"></a>
 The request ID that uniquely identifies this request.
@@ -160,11 +161,11 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** ForbiddenException **
@@ -176,11 +177,11 @@ You have specified a client token for an operation using parameter values that d
 HTTP Status Code: 400
 
  ** InvalidParameterCombinationException **
-You have specified two or more mutually exclusive parameters. Review the error message for details.
+You have specified a combination of parameters that isn't valid. For example, two mutually exclusive parameters, or a parameter without its required companion parameter. Review the error message for details.
 HTTP Status Code: 400
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** InvalidVersionNumberException **
@@ -192,12 +193,53 @@ The resource that you are trying to operate on is currently in use. Review the m
 HTTP Status Code: 400
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_ImportComponent_Examples"></a>
+
+### Import a component from a shell script
+<a name="API_ImportComponent_Example_1"></a>
+
+The following example imports a plain shell script as a Linux build component.
+
+#### Sample Request
+<a name="API_ImportComponent_Example_1_Request"></a>
+
+```
+PUT /ImportComponent HTTP/1.1
+Content-type: application/json
+
+{
+    "name": "my-example-imported-component",
+    "semanticVersion": "1.0.0",
+    "description": "Installs my application from an imported shell script",
+    "type": "BUILD",
+    "format": "SHELL",
+    "platform": "Linux",
+    "data": "sudo yum update -y\nsudo yum -y install my-app\n",
+    "clientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE88888"
+}
+```
+
+#### Sample Response
+<a name="API_ImportComponent_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "requestId": "e62cb87f-e291-4fb2-9305-54a7878c3b99",
+    "clientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE88888",
+    "componentBuildVersionArn": "arn:aws:imagebuilder:us-west-2:111122223333:component/my-example-imported-component/1.0.0/1"
+}
+```
 
 ## See Also
 <a name="API_ImportComponent_SeeAlso"></a>

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/res/index.html
 title: 'Research and Engineering Studio on AWS Documentation'
 canonical_url: https://docs.aws.amazon.com/res/
 source: aws-documentation
-generated_on: 2026-09-19
+generated_on: 2026-09-22
 ---
 
 # Research and Engineering Studio on AWS Documentation

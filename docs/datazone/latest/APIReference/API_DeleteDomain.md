@@ -11,13 +11,16 @@ Deletes a Amazon DataZone domain.
 <a name="API_DeleteDomain_RequestSyntax"></a>
 
 ```
-DELETE /v2/domains/{{identifier}}?clientToken={{clientToken}}&skipDeletionCheck={{skipDeletionCheck}} HTTP/1.1
+DELETE /v2/domains/{{identifier}}?cascadeDelete={{cascadeDelete}}&clientToken={{clientToken}}&skipDeletionCheck={{skipDeletionCheck}} HTTP/1.1
 ```
 
 ## URI Request Parameters
 <a name="API_DeleteDomain_RequestParameters"></a>
 
 The request uses the following URI parameters.
+
+ ** [cascadeDelete](#API_DeleteDomain_RequestSyntax) **   <a name="datazone-DeleteDomain-request-uri-cascadeDelete"></a>
+Specifies whether to delete the domain along with all of its associated resources. When you use this parameter, Amazon DataZone deletes the domain and cleanly removes its associated resources without leaving orphaned resources behind. Amazon DataZone reports deletion progress in the `deleteProgress` field. Amazon DataZone reports any resources that it can't delete in the `failureReasons` field of the `GetDomain` response. You can't use this parameter together with `skipDeletionCheck`. If you don't specify a value, the default is `false`.
 
  ** [clientToken](#API_DeleteDomain_RequestSyntax) **   <a name="datazone-DeleteDomain-request-uri-clientToken"></a>
 A unique, case-sensitive identifier that is provided to ensure the idempotency of the request.
@@ -28,7 +31,7 @@ Pattern: `dzd[-_][a-zA-Z0-9_-]{1,36}`
 Required: Yes
 
  ** [skipDeletionCheck](#API_DeleteDomain_RequestSyntax) **   <a name="datazone-DeleteDomain-request-uri-skipDeletionCheck"></a>
-Specifies the optional flag to delete all child entities within the domain.
+Specifies whether to skip the check that prevents deletion of a domain that still contains resources. When you use this parameter, Amazon DataZone deletes the domain but might not remove its associated resources, which can leave orphaned resources behind. To delete a domain and fully clean up its associated resources, use `cascadeDelete` instead. You can't use this parameter together with `cascadeDelete`.
 
 ## Request Body
 <a name="API_DeleteDomain_RequestBody"></a>

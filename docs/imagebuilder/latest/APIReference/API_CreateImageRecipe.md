@@ -100,18 +100,18 @@ Pattern: `^[A-Za-z0-9()\[\]./'@_\-][A-Za-z0-9 ()\[\]./'@_\-]{1,126}[A-Za-z0-9()\
 Required: No
 
  ** [blockDeviceMappings](#API_CreateImageRecipe_RequestSyntax) **   <a name="imagebuilder-CreateImageRecipe-request-blockDeviceMappings"></a>
-The block device mappings of the image recipe.
+The block device mappings that Image Builder applies to the build instance and the output AMI. For example, you can override the size of the base image's root volume or attach additional EBS volumes.
 Type: Array of [InstanceBlockDeviceMapping](API_InstanceBlockDeviceMapping.md) objects
 Required: No
 
  ** [clientToken](#API_CreateImageRecipe_RequestSyntax) **   <a name="imagebuilder-CreateImageRecipe-request-clientToken"></a>
-A unique, case-sensitive identifier you provide to ensure that the operation completes no more than one time. If this token matches a previous request, the service ignores the request, but does not return an error. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
+A unique, case-sensitive identifier you provide to ensure that the operation runs no more than one time. If you retry a request with the same client token, Image Builder returns the original response without running the operation again. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: Yes
 
  ** [components](#API_CreateImageRecipe_RequestSyntax) **   <a name="imagebuilder-CreateImageRecipe-request-components"></a>
-The components included in the image recipe.
+The components included in the image recipe. Components are optional. A recipe with no components bakes the base image without additional customization. You can specify each component only one time in a recipe. Components with a status of `DEPRECATED` or `DISABLED` can't be added to new recipes.
 Type: Array of [ComponentConfiguration](API_ComponentConfiguration.md) objects
 Array Members: Minimum number of 1 item.
 Required: No
@@ -123,12 +123,12 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
  ** [dryRun](#API_CreateImageRecipe_RequestSyntax) **   <a name="imagebuilder-CreateImageRecipe-request-dryRun"></a>
-Validates the required permissions and request parameters without making the request. If validation succeeds, the operation returns a `DryRunOperationException` error response.
+Validates the required permissions and request parameters without performing the operation. If validation succeeds, the operation returns a `DryRunOperationException` error response.
 Type: Boolean
 Required: No
 
  ** [name](#API_CreateImageRecipe_RequestSyntax) **   <a name="imagebuilder-CreateImageRecipe-request-name"></a>
-The name of the image recipe.
+The name of the image recipe. The recipe name, combined with the semantic version, must be unique to your account in each AWS Region. Image Builder generates the image recipe ARN from a normalized form of the name, so names that differ only in case, spaces, or underscores count as the same name.
 Type: String
 Pattern: `^[-_A-Za-z-0-9][-_A-Za-z0-9 ]{1,126}[-_A-Za-z-0-9]$`
 Required: Yes
@@ -139,7 +139,7 @@ The base image for customizations specified in the image recipe. You can specify
 + Image Builder image Amazon Resource Name (ARN)
 +  AWS Systems Manager (SSM) Parameter Store Parameter, prefixed by `ssm:`, followed by the parameter name or ARN.
 +  AWS Marketplace product ID
-If you enter an AMI ID or an SSM parameter that contains the AMI ID, you must have access to the AMI, and the AMI must be in the source Region.
+If you enter an AMI ID or an SSM parameter that contains the AMI ID, you must have access to the AMI. The AMI must also be in the Region where you're creating the recipe.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: Yes
@@ -163,7 +163,7 @@ Value Length Constraints: Maximum length of 256.
 Required: No
 
  ** [workingDirectory](#API_CreateImageRecipe_RequestSyntax) **   <a name="imagebuilder-CreateImageRecipe-request-workingDirectory"></a>
-The working directory used during build and test workflows.
+The working directory used during build and test workflows. If you don't specify a working directory, Image Builder uses `/tmp` for Linux and macOS build instances, and `C:/` for Windows build instances.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
@@ -206,7 +206,7 @@ Type: String
 Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws):image-recipe/[a-z0-9-_]+/(?:[0-9]+|x)\.(?:[0-9]+|x)\.(?:[0-9]+|x)$`
 
  ** [latestVersionReferences](#API_CreateImageRecipe_ResponseSyntax) **   <a name="imagebuilder-CreateImageRecipe-response-latestVersionReferences"></a>
-The resource ARNs with different wildcard variations of semantic versioning.
+A set of wildcard version ARNs that always reference the latest version of the resource. ARNs are included for the latest version overall, and for the latest versions within the same major, minor, and patch levels.
 Type: [LatestVersionReferences](API_LatestVersionReferences.md) object
 
  ** [requestId](#API_CreateImageRecipe_ResponseSyntax) **   <a name="imagebuilder-CreateImageRecipe-response-requestId"></a>
@@ -220,11 +220,11 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** DryRunOperationException **
@@ -240,7 +240,7 @@ You have specified a client token for an operation using parameter values that d
 HTTP Status Code: 400
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** InvalidVersionNumberException **
@@ -256,7 +256,7 @@ The resource that you are trying to operate on is currently in use. Review the m
 HTTP Status Code: 400
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceQuotaExceededException **
@@ -266,6 +266,118 @@ HTTP Status Code: 402
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_CreateImageRecipe_Examples"></a>
+
+### Create an image recipe
+<a name="API_CreateImageRecipe_Example_1"></a>
+
+The following example creates an image recipe that applies a custom component on top of the latest Amazon Linux 2023 base image.
+
+#### Sample Request
+<a name="API_CreateImageRecipe_Example_1_Request"></a>
+
+```
+PUT /CreateImageRecipe HTTP/1.1
+Content-type: application/json
+
+{
+    "name": "my-example-recipe",
+    "semanticVersion": "1.0.0",
+    "description": "An image recipe that installs my application on Amazon Linux 2023",
+    "parentImage": "arn:aws:imagebuilder:us-west-2:aws:image/amazon-linux-2023-x86/x.x.x",
+    "components": [
+        {
+            "componentArn": "arn:aws:imagebuilder:us-west-2:111122223333:component/my-example-component/1.0.0/1"
+        }
+    ],
+    "clientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
+}
+```
+
+#### Sample Response
+<a name="API_CreateImageRecipe_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "requestId": "89f4af2f-4f28-45e6-a9d8-abeba591df6a",
+    "clientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+    "imageRecipeArn": "arn:aws:imagebuilder:us-west-2:111122223333:image-recipe/my-example-recipe/1.0.0",
+    "latestVersionReferences": {
+        "latestVersionArn": "arn:aws:imagebuilder:us-west-2:111122223333:image-recipe/my-example-recipe/x.x.x",
+        "latestMajorVersionArn": "arn:aws:imagebuilder:us-west-2:111122223333:image-recipe/my-example-recipe/1.x.x",
+        "latestMinorVersionArn": "arn:aws:imagebuilder:us-west-2:111122223333:image-recipe/my-example-recipe/1.0.x",
+        "latestPatchVersionArn": "arn:aws:imagebuilder:us-west-2:111122223333:image-recipe/my-example-recipe/1.0.0"
+    }
+}
+```
+
+### Create an image recipe with component parameters and block device mappings
+<a name="API_CreateImageRecipe_Example_2"></a>
+
+The following example creates an image recipe that configures its components and storage. The `AppVersion` component parameter selects the application version to install. The block device mapping increases the root volume to an encrypted 30 GiB gp3 volume.
+
+#### Sample Request
+<a name="API_CreateImageRecipe_Example_2_Request"></a>
+
+```
+PUT /CreateImageRecipe HTTP/1.1
+Content-type: application/json
+
+{
+    "name": "my-example-recipe",
+    "semanticVersion": "1.1.0",
+    "description": "Installs a specific version of my application on Amazon Linux 2023 with a larger encrypted root volume",
+    "parentImage": "arn:aws:imagebuilder:us-west-2:aws:image/amazon-linux-2023-x86/x.x.x",
+    "components": [
+        {
+            "componentArn": "arn:aws:imagebuilder:us-west-2:111122223333:component/my-example-parameterized-component/1.0.0/1",
+            "parameters": [
+                {
+                    "name": "AppVersion",
+                    "value": ["2.5.0"]
+                }
+            ]
+        }
+    ],
+    "blockDeviceMappings": [
+        {
+            "deviceName": "/dev/xvda",
+            "ebs": {
+                "volumeSize": 30,
+                "volumeType": "gp3",
+                "encrypted": true,
+                "deleteOnTermination": true
+            }
+        }
+    ],
+    "clientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE20202"
+}
+```
+
+#### Sample Response
+<a name="API_CreateImageRecipe_Example_2_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "requestId": "e3bdc054-d12e-4578-a847-68a18da724ca",
+    "clientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE20202",
+    "imageRecipeArn": "arn:aws:imagebuilder:us-west-2:111122223333:image-recipe/my-example-recipe/1.1.0",
+    "latestVersionReferences": {
+        "latestVersionArn": "arn:aws:imagebuilder:us-west-2:111122223333:image-recipe/my-example-recipe/x.x.x",
+        "latestMajorVersionArn": "arn:aws:imagebuilder:us-west-2:111122223333:image-recipe/my-example-recipe/1.x.x",
+        "latestMinorVersionArn": "arn:aws:imagebuilder:us-west-2:111122223333:image-recipe/my-example-recipe/1.1.x",
+        "latestPatchVersionArn": "arn:aws:imagebuilder:us-west-2:111122223333:image-recipe/my-example-recipe/1.1.0"
+    }
+}
+```
 
 ## See Also
 <a name="API_CreateImageRecipe_SeeAlso"></a>

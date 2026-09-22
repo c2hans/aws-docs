@@ -40,19 +40,25 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-securityagent-agentspace-vpcconfig-properties"></a>
 
 `SecurityGroupArns`  <a name="cfn-securityagent-agentspace-vpcconfig-securitygrouparns"></a>
-The Amazon Resource Names (ARNs) of the security groups for the VPC configuration.
+The identifiers of the security groups for the VPC configuration. You can specify:
++ The security group IDs.
++ The Amazon Resource Names (ARNs) of the security groups.
 *Required*: No
 *Type*: Array of String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SubnetArns`  <a name="cfn-securityagent-agentspace-vpcconfig-subnetarns"></a>
-The Amazon Resource Names (ARNs) of the subnets for the VPC configuration.
+The identifiers of the subnets for the VPC configuration. You can specify:
++ The subnet IDs.
++ The Amazon Resource Names (ARNs) of the subnets.
 *Required*: No
 *Type*: Array of String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `VpcArn`  <a name="cfn-securityagent-agentspace-vpcconfig-vpcarn"></a>
-The Amazon Resource Name (ARN) of the VPC.
+The identifier of the VPC. You can specify:
++ The VPC ID.
++ The Amazon Resource Name (ARN) of the VPC.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -17,13 +17,13 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
  ** hostId **   <a name="imagebuilder-Type-Placement-hostId"></a>
-The ID of the Dedicated Host on which build and test instances run. This only applies if `tenancy` is `host`. If you specify the host ID, you must not specify the resource group ARN. If you specify both, Image Builder returns an error.
+The ID of the Dedicated Host on which build and test instances run. This only applies if `tenancy` is `host`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
  ** hostResourceGroupArn **   <a name="imagebuilder-Type-Placement-hostResourceGroupArn"></a>
-The Amazon Resource Name (ARN) of the host resource group in which to launch build and test instances. This only applies if `tenancy` is `host`. If you specify the resource group ARN, you must not specify the host ID. If you specify both, Image Builder returns an error.
+The Amazon Resource Name (ARN) of the host resource group in which to launch build and test instances. This only applies if `tenancy` is `host`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No

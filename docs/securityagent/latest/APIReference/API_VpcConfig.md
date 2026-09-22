@@ -11,17 +11,17 @@ The VPC configuration for a pentest, specifying the VPC, security groups, and su
 <a name="API_VpcConfig_Contents"></a>
 
  ** securityGroupArns **   <a name="securityagent-Type-VpcConfig-securityGroupArns"></a>
-The Amazon Resource Names (ARNs) of the security groups for the VPC configuration.
+The Amazon Resource Names (ARNs) or IDs of the security groups for the VPC configuration.
 Type: Array of strings
 Required: No
 
  ** subnetArns **   <a name="securityagent-Type-VpcConfig-subnetArns"></a>
-The Amazon Resource Names (ARNs) of the subnets for the VPC configuration.
+The Amazon Resource Names (ARNs) or IDs of the subnets for the VPC configuration.
 Type: Array of strings
 Required: No
 
  ** vpcArn **   <a name="securityagent-Type-VpcConfig-vpcArn"></a>
-The Amazon Resource Name (ARN) of the VPC.
+The Amazon Resource Name (ARN) or ID of the VPC.
 Type: String
 Required: No
 

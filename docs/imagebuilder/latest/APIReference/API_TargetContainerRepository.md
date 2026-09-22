@@ -11,7 +11,7 @@ The container repository where the output container image is stored.
 <a name="API_TargetContainerRepository_Contents"></a>
 
  ** repositoryName **   <a name="imagebuilder-Type-TargetContainerRepository-repositoryName"></a>
-The name of the container repository where the output container image is stored. This name is prefixed by the repository location. For example, `<repository location url>/repository_name`.
+The name of the container repository where the output container image is stored. Provide the repository name only (a namespace path such as `team-a/my-repo` is allowed, but not the registry hostname).
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: Yes

@@ -18,7 +18,7 @@ Pattern: `[^\x00]+`
 Required: Yes
 
  ** type **   <a name="imagebuilder-Type-WorkflowParameterDetail-type"></a>
-The type of input this parameter provides. The currently supported value is "string".
+The type of input this parameter provides. Supported values are `string`, `integer`, `boolean`, and `stringList`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 20.
 Pattern: `^string|integer|boolean|stringList$`

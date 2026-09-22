@@ -11,7 +11,7 @@ Lists [notebooks](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/us
 <a name="API_ListNotebooks_RequestSyntax"></a>
 
 ```
-GET /v2/domains/{{domainIdentifier}}/notebooks?maxResults={{maxResults}}&nextToken={{nextToken}}&owningProjectIdentifier={{owningProjectIdentifier}}&sortBy={{sortBy}}&sortOrder={{sortOrder}}&status={{status}} HTTP/1.1
+GET /v2/domains/{{domainIdentifier}}/notebooks?maxResults={{maxResults}}&nextToken={{nextToken}}&owningProjectIdentifier={{owningProjectIdentifier}}&sortBy={{sortBy}}&sortOrder={{sortOrder}}&status={{status}}&type={{type}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -49,6 +49,10 @@ Valid Values: `ASCENDING | DESCENDING`
 The status to filter notebooks by.
 Valid Values: `ACTIVE | ARCHIVED | SYNC_IN_PROGRESS | SYNC_FAILED`
 
+ ** [type](#API_ListNotebooks_RequestSyntax) **   <a name="datazone-ListNotebooks-request-uri-type"></a>
+The type to filter notebooks by.
+Valid Values: `DATA | SQL | QUERYBOOK`
+
 ## Request Body
 <a name="API_ListNotebooks_RequestBody"></a>
 
@@ -72,6 +76,7 @@ Content-type: application/json
          "name": "string",
          "owningProjectId": "string",
          "status": "string",
+         "type": "string",
          "updatedAt": number,
          "updatedBy": "string"
       }

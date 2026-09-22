@@ -63,6 +63,12 @@ Required: No
       {
          "BaseModelName": "string",
          "CreateTime": number,
+         "EncryptionConfiguration": {
+            "KMSEncryptionContext": {
+               "string" : "string"
+            },
+            "KMSKey": "string"
+         },
          "FailureReason": "string",
          "InputDataConfig": {
             "DataAccessRoleArn": "string",

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/security-compliance-and-patchi
 title: 'Guidance for Security Compliance and Patching of VMware and Amazon EC2 Workloads'
 canonical_url: https://docs.aws.amazon.com/solutions/security-compliance-and-patching-of-vmware-and-amazon-ec2-workloads/
 source: aws-documentation
-generated_on: 2026-09-18
+generated_on: 2026-09-22
 ---
 
 # Guidance for Security Compliance and Patching of VMware and Amazon EC2 Workloads

@@ -91,6 +91,11 @@ Content-type: application/json
                {
                   "s3Location": "string"
                }
+            ],
+            "trustedCaCertificates": [
+               {
+                  "source": { ... }
+               }
             ]
          },
          "codeRemediationStrategy": "string",

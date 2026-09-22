@@ -66,7 +66,7 @@ The timestamp when the specified runtime instance of the workflow finished.
 Type: String
 
  ** [imageBuildVersionArn](#API_GetWorkflowExecution_ResponseSyntax) **   <a name="imagebuilder-GetWorkflowExecution-response-imageBuildVersionArn"></a>
-The Amazon Resource Name (ARN) of the image resource build version that the specified runtime instance of the workflow created.
+The Amazon Resource Name (ARN) of the image build version that owns the specified runtime instance of the workflow.
 Type: String
 Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):image/[a-z0-9-_]+/[0-9]+\.[0-9]+\.[0-9]+/[0-9]+$`
 
@@ -76,7 +76,7 @@ Type: String
 Length Constraints: Minimum length of 0. Maximum length of 500.
 
  ** [parallelGroup](#API_GetWorkflowExecution_ResponseSyntax) **   <a name="imagebuilder-GetWorkflowExecution-response-parallelGroup"></a>
-Test workflows are defined within named runtime groups. The parallel group is a named group that contains one or more test workflows.
+The name of the parallel group that this runtime instance of the workflow ran in, if configured. Parallel groups apply only to test workflows.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
 Pattern: `^[A-Za-z0-9][A-Za-z0-9-_+#]{0,99}$`
@@ -91,12 +91,12 @@ The timestamp when the specified runtime instance of the workflow started.
 Type: String
 
  ** [status](#API_GetWorkflowExecution_ResponseSyntax) **   <a name="imagebuilder-GetWorkflowExecution-response-status"></a>
-The current runtime status for the specified runtime instance of the workflow.
+The current runtime status for the specified runtime instance of the workflow. `COMPLETED`, `FAILED`, `ROLLBACK_COMPLETED`, `CANCELLED`, and `SKIPPED` are terminal states.
 Type: String
 Valid Values: `PENDING | SKIPPED | RUNNING | COMPLETED | FAILED | ROLLBACK_IN_PROGRESS | ROLLBACK_COMPLETED | CANCELLED`
 
  ** [totalStepCount](#API_GetWorkflowExecution_ResponseSyntax) **   <a name="imagebuilder-GetWorkflowExecution-response-totalStepCount"></a>
-The total number of steps in the specified runtime instance of the workflow that ran. This number should equal the sum of the step counts for steps that succeeded, were skipped, and failed.
+The total number of steps that the workflow document defines for this runtime instance of the workflow. Image Builder sets this count before any steps run. The sum of succeeded, skipped, and failed steps only reaches this total if every step finishes in one of those states.
 Type: Integer
 
  ** [totalStepsFailed](#API_GetWorkflowExecution_ResponseSyntax) **   <a name="imagebuilder-GetWorkflowExecution-response-totalStepsFailed"></a>
@@ -133,11 +133,11 @@ Pattern: `^wf-[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** ForbiddenException **
@@ -145,16 +145,54 @@ You are not authorized to perform the requested operation.
 HTTP Status Code: 403
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_GetWorkflowExecution_Examples"></a>
+
+### Get the runtime details for a workflow execution
+<a name="API_GetWorkflowExecution_Example_1"></a>
+
+The following example retrieves runtime status and step counts for the build workflow that ran for an image build version, using the workflow execution ID returned by ListWorkflowExecutions.
+
+#### Sample Request
+<a name="API_GetWorkflowExecution_Example_1_Request"></a>
+
+```
+GET /GetWorkflowExecution?workflowExecutionId=wf-165b1cb6-3a62-4618-a021-94ddcbe32908 HTTP/1.1
+```
+
+#### Sample Response
+<a name="API_GetWorkflowExecution_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "requestId": "cd69c813-51c3-4261-8e59-382a1af96f73",
+    "workflowBuildVersionArn": "arn:aws:imagebuilder:us-west-2:aws:workflow/build/build-image/1.0.3/1",
+    "workflowExecutionId": "wf-165b1cb6-3a62-4618-a021-94ddcbe32908",
+    "imageBuildVersionArn": "arn:aws:imagebuilder:us-west-2:111122223333:image/my-example-recipe/1.0.0/1",
+    "type": "BUILD",
+    "status": "COMPLETED",
+    "totalStepCount": 7,
+    "totalStepsSucceeded": 5,
+    "totalStepsFailed": 0,
+    "totalStepsSkipped": 2,
+    "startTime": "2026-09-09T19:12:23.175Z",
+    "endTime": "2026-09-09T19:19:06.158Z"
+}
+```
 
 ## See Also
 <a name="API_GetWorkflowExecution_SeeAlso"></a>

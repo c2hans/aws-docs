@@ -21,6 +21,12 @@ Content-type: application/json
    "AllowedAccessControlTags": {
       "{{string}}" : "{{string}}"
    },
+   "AllowedAIAgents": [
+      {
+         "Arn": "{{string}}",
+         "Type": "{{string}}"
+      }
+   ],
    "AllowedFlowModules": [
       {
          "FlowModuleId": "{{string}}",
@@ -84,6 +90,12 @@ Type: String to string map
 Map Entries: Maximum number of 4 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
 Value Length Constraints: Maximum length of 256.
+Required: No
+
+ ** [AllowedAIAgents](#API_CreateSecurityProfile_RequestSyntax) **   <a name="connect-CreateSecurityProfile-request-AllowedAIAgents"></a>
+A list of AI agents that the security profile will give access to.
+Type: Array of [AIAgent](API_AIAgent.md) objects
+Array Members: Maximum number of 100 items.
 Required: No
 
  ** [AllowedFlowModules](#API_CreateSecurityProfile_RequestSyntax) **   <a name="connect-CreateSecurityProfile-request-AllowedFlowModules"></a>

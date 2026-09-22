@@ -11,12 +11,12 @@ Details about the source of the score, and the factors that determined the adjus
 <a name="API_CvssScoreDetails_Contents"></a>
 
  ** adjustments **   <a name="imagebuilder-Type-CvssScoreDetails-adjustments"></a>
-An object that contains details about an adjustment that Amazon Inspector made to the CVSS score for the finding.
+The adjustments that Amazon Inspector applied to the base CVSS score to produce its own score for the finding. The list is empty when Amazon Inspector made no adjustments.
 Type: Array of [CvssScoreAdjustment](API_CvssScoreAdjustment.md) objects
 Required: No
 
  ** cvssSource **   <a name="imagebuilder-Type-CvssScoreDetails-cvssSource"></a>
-The source of the finding.
+The source of the CVSS data that the Amazon Inspector score for the finding is based on, for example NVD or a vendor security feed.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No

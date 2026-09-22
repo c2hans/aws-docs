@@ -17,4 +17,4 @@ To download the templates and scripts for this solution, and to share your custo
 
 All features from the Innovation Sandbox on AWS solution are available as API endpoints.
 
-To view the list of current API endpoints in an OpenAPI specification format, refer to the [Innovation Sandbox API specification](https://github.com/aws-solutions/innovation-sandbox-on-aws/tree/main/docs/openapi/innovation-sandbox-api.yaml).
+To view the current API endpoints in an OpenAPI specification (JSON), refer to the [Innovation Sandbox API specification](https://github.com/aws-solutions/innovation-sandbox-on-aws/blob/main/docs/openapi/innovation-sandbox-api.json).

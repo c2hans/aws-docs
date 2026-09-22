@@ -93,9 +93,9 @@ A map of plain text, non-secret key:value pairs, known as encryption context pai
 Type: String to string map
 Map Entries: Maximum number of 10 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 2000.
-Key Pattern: `.*\S.*`
+Key Pattern: `^[\x20-\x7E]+$`
 Value Length Constraints: Minimum length of 1. Maximum length of 2000.
-Value Pattern: `.*\S.*`
+Value Pattern: `^[\x20-\x7E]+$`
 Required: No
 
  ** [Media](#API_StartMedicalScribeJob_RequestSyntax) **   <a name="transcribe-StartMedicalScribeJob-request-Media"></a>

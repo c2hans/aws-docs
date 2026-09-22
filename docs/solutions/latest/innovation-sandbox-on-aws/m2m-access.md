@@ -21,7 +21,8 @@ Deploy one AWS CloudFormation stack for each client into the **Hub account** (th
 |  `ClientName`  | A short identifier for the automation (for example, `deploy-pipeline`). |
 |  `Role`  | The role tier the client acts as: `Admin`, `Manager`, or `User`. |
 |  `TrustedPrincipal`  | The principal allowed to assume the client role — either a full IAM ARN (pins to one principal) or a 12-digit account ID (trusts any principal in that account that has `sts:AssumeRole` permission). |
-|  `RestApiId`  | The solution API Gateway REST API ID. Read it from the SSM parameter `InnovationSandbox_<Namespace>_Compute_RestApiId` in the Hub account. |
+|  `MaxSessionDuration`  | The maximum duration, in seconds, of credentials issued for the client role. The default is 3,600 seconds (one hour); the supported range is 3,600–43,200 seconds. |
+|  `RestApiIdSsmParam`  | The name of the Compute stack’s SSM parameter that stores the current API Gateway REST API ID. Use the `RestApiIdSsmParamName` Compute stack output, or `InnovationSandbox_<Namespace>_Compute_RestApiId`. |
 
 Deploy the stack from the solution’s published CloudFormation template using the AWS CloudFormation console or the AWS CLI. The template is available at:
 
@@ -29,12 +30,14 @@ Deploy the stack from the solution’s published CloudFormation template using t
 https://solutions-reference.s3.amazonaws.com/innovation-sandbox-on-aws/latest/InnovationSandbox-M2mClient.template
 ```
 
-After deployment, record these stack outputs; you need them to obtain credentials:
+After deployment, record these stack outputs for role assumption and API requests:
 
 | Output key | Description |
 | --- | --- |
 |  `M2MRoleArn`  | The ARN of the IAM role the client assumes. |
 |  `M2MExternalId`  | A per-stack ExternalId that must be passed on the `sts:AssumeRole` call. |
+|  `ApiGatewayArn`  | The API Gateway ARN to which the client role is permitted to send requests. |
+|  `ApiGatewayUrl`  | The base URL for API requests. |
 
 ## Construct a SigV4 client
 <a name="construct-sigv4-client"></a>
@@ -48,9 +51,37 @@ From the trusted principal, use the stack outputs to obtain temporary credential
 Temporary credentials expire after one hour by default. Long-running automation must re-assume the role before expiration.
 
 **Note**
-The assumed role is scoped to `execute-api:Invoke` only. Resolve the API Gateway invoke URL from the Compute stack outputs using your own credentials — the M2M role cannot describe stacks.
+The assumed role is scoped to `execute-api:Invoke` only. Record the `ApiGatewayUrl` client stack output before assuming the role, or resolve it using credentials that can describe the stack. The M2M role cannot describe CloudFormation stacks.
 
-The [`scripts/m2m` tooling](https://github.com/aws-solutions/innovation-sandbox-on-aws/tree/main/scripts/m2m) in the GitHub repository provides two reference scripts — `assume-m2m-role.sh` (assumes the role and exports credentials) and `call-api.sh` (signs and sends a request) — that you can use directly or adapt for your own automation.
+The [`scripts/m2m` tooling](https://github.com/aws-solutions/innovation-sandbox-on-aws/tree/main/scripts/m2m) in the GitHub repository provides scripts for deploying clients, assuming roles, sending requests, testing access, listing clients, and revoking access. You can use these scripts directly or adapt them for your own automation.
+
+## Use the `aws isb` CLI
+<a name="aws-isb-cli"></a>
+
+The solution source distribution includes a generated AWS CLI model and installer. The `aws isb` CLI does not introduce a separate API or authentication mechanism. It maps each modeled command to the corresponding HTTP route, signs the request with SigV4 using the AWS credentials selected for the command, and sends it to the API endpoint configured by the installer. You can perform the same steps manually or with the `scripts/m2m` tooling described previously. The modeled CLI provides familiar AWS CLI command syntax, generated `help` for operations and parameters, automatic pagination for paginated operations, client-side `--query` filtering, selectable output formats, and output that you can pipe to other tools.
+
+After installation, you can call modeled solution operations with commands such as:
+
+```
+aws isb list-lease-templates --profile isb-m2m-deploy-pipeline
+```
+
+The installer requires Python 3 and AWS CLI version 2.13.0 or later. From the repository root:
+
+```
+./scripts/m2m/assume-m2m-role.sh \
+  --client-stack InnovationSandbox-M2mClient-Admin-deploy-pipeline \
+  --output profile
+
+./scripts/m2m/aws-cli/install-aws-isb-cli.py \
+  --profile isb-m2m-deploy-pipeline \
+  --client-stack InnovationSandbox-M2mClient-Admin-deploy-pipeline \
+  --region us-east-1
+
+aws isb list-lease-templates --profile isb-m2m-deploy-pipeline
+```
+
+The installer uses the current ambient credentials to resolve the client stack and API endpoint. The optional `--profile` argument selects the profile that receives the endpoint configuration and is later used to call the API. If the ambient credentials cannot read the client stack, pass its `ApiGatewayUrl` output with `--api-url` instead. For all options, refer to the [`aws isb` installer documentation](https://github.com/aws-solutions/innovation-sandbox-on-aws/tree/main/scripts/m2m/aws-cli).
 
 ## Remove an M2M client
 <a name="remove-m2m-client"></a>

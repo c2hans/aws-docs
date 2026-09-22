@@ -79,6 +79,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::EC2::SqlHaStandbyDetectedInstance](aws-resource-ec2-sqlhastandbydetectedinstance.md)
 + [AWS::EC2::Subnet](aws-resource-ec2-subnet.md)
 + [AWS::EC2::SubnetCidrBlock](aws-resource-ec2-subnetcidrblock.md)
++ [AWS::EC2::SubnetCidrReservation](aws-resource-ec2-subnetcidrreservation.md)
 + [AWS::EC2::SubnetNetworkAclAssociation](aws-resource-ec2-subnetnetworkaclassociation.md)
 + [AWS::EC2::SubnetRouteTableAssociation](aws-resource-ec2-subnetroutetableassociation.md)
 + [AWS::EC2::TrafficMirrorFilter](aws-resource-ec2-trafficmirrorfilter.md)

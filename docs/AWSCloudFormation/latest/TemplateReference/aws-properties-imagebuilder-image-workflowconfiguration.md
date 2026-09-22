@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-imagebuilder-image-workflowconfiguration-properties"></a>
 
 `OnFailure`  <a name="cfn-imagebuilder-image-workflowconfiguration-onfailure"></a>
-The action to take if the workflow fails.
+The action to take if the workflow fails. With `CONTINUE`, a failed workflow is logged and image creation proceeds to the next workflow. If you don't set a value, the image build fails when the workflow fails. You can only set this property for test workflows.
 *Required*: No
 *Type*: String
 *Allowed values*: `CONTINUE | ABORT`

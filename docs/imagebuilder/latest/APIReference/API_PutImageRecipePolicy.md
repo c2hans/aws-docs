@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Put
 # PutImageRecipePolicy
 <a name="API_PutImageRecipePolicy"></a>
 
-Applies a policy to an image recipe. To share resources, call the RAM API [CreateResourceShare](https://docs.aws.amazon.com/ram/latest/APIReference/API_CreateResourceShare.html). If you call this API, you must also call the RAM API [PromoteResourceShareCreatedFromPolicy](https://docs.aws.amazon.com/ram/latest/APIReference/API_PromoteResourceShareCreatedFromPolicy.html) so that the resource is visible to all principals with whom the resource is shared.
+Applies a policy to an image recipe. The preferred way to share resources is with the RAM API [CreateResourceShare](https://docs.aws.amazon.com/ram/latest/APIReference/API_CreateResourceShare.html). If you use the PutImageRecipePolicy operation instead, you must also call the RAM API [PromoteResourceShareCreatedFromPolicy](https://docs.aws.amazon.com/ram/latest/APIReference/API_PromoteResourceShareCreatedFromPolicy.html). Otherwise, the resource isn't visible to the principals that it's shared with.
 
 ## Request Syntax
 <a name="API_PutImageRecipePolicy_RequestSyntax"></a>
@@ -78,11 +78,11 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** ForbiddenException **
@@ -94,7 +94,7 @@ The value that you provided for the specified parameter is invalid.
 HTTP Status Code: 400
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** ResourceNotFoundException **
@@ -102,12 +102,46 @@ At least one of the resources referenced by your request does not exist.
 HTTP Status Code: 404
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_PutImageRecipePolicy_Examples"></a>
+
+### Share an image recipe with another account
+<a name="API_PutImageRecipePolicy_Example_1"></a>
+
+The following example applies a resource policy that grants another AWS account permission to view the specified image recipe.
+
+#### Sample Request
+<a name="API_PutImageRecipePolicy_Example_1_Request"></a>
+
+```
+PUT /PutImageRecipePolicy HTTP/1.1
+Content-type: application/json
+
+{
+    "imageRecipeArn": "arn:aws:imagebuilder:us-west-2:111122223333:image-recipe/my-example-recipe/1.0.0",
+    "policy": "{\"Version\": \"2012-10-17\", \"Statement\": [{\"Effect\": \"Allow\", \"Principal\": {\"AWS\": \"arn:aws:iam::444455556666:root\"}, \"Action\": [\"imagebuilder:GetImageRecipe\", \"imagebuilder:ListImageRecipes\"], \"Resource\": \"arn:aws:imagebuilder:us-west-2:111122223333:image-recipe/my-example-recipe/1.0.0\"}]}"
+}
+```
+
+#### Sample Response
+<a name="API_PutImageRecipePolicy_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "requestId": "3a27bb63-329e-40ab-88f2-c1638504bd35",
+    "imageRecipeArn": "arn:aws:imagebuilder:us-west-2:111122223333:image-recipe/my-example-recipe/1.0.0"
+}
+```
 
 ## See Also
 <a name="API_PutImageRecipePolicy_SeeAlso"></a>

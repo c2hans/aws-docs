@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/cloudcontrolapi/index.html
 title: 'AWS Cloud Control API Documentation'
 canonical_url: https://docs.aws.amazon.com/cloudcontrolapi/
 source: aws-documentation
-generated_on: 2026-09-18
+generated_on: 2026-09-22
 ---
 
 # AWS Cloud Control API Documentation

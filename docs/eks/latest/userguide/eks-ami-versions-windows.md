@@ -37,6 +37,7 @@ The following tables list the current and previous versions of the Amazon EKS op
 
 | AMI version | kubelet version | containerd version | csi-proxy version | Release notes |
 | --- | --- | --- | --- | --- |
+|  `1.36-2026.09.14`  |  `1.36.3`  |  `2.2.3`  |  `1.2.1`  | Includes patch for CVE-2026-76654 |
 |  `1.36-2026.08.15`  |  `1.36.2`  |  `2.2.3`  |  `1.2.1`  |  |
 |  `1.36-2026.07.18`  |  `1.36.2`  |  `2.2.3`  |  `1.2.1`  |  |
 |  `1.36-2026.06.18`  |  `1.36.2`  |  `2.2.3`  |  `1.2.1`  |  |
@@ -44,6 +45,7 @@ The following tables list the current and previous versions of the Amazon EKS op
 
 | AMI version | kubelet version | containerd version | csi-proxy version | Release notes |
 | --- | --- | --- | --- | --- |
+|  `1.35-2026.09.14`  |  `1.35.7`  |  `2.1.7`  |  `1.2.1`  | Includes patch for CVE-2026-76654 |
 |  `1.35-2026.08.15`  |  `1.35.6`  |  `2.1.7`  |  `1.2.1`  |  |
 |  `1.35-2026.07.18`  |  `1.35.6`  |  `2.1.7`  |  `1.2.1`  |  |
 |  `1.35-2026.06.18`  |  `1.35.6`  |  `2.1.7`  |  `1.2.1`  |  |
@@ -61,6 +63,7 @@ The following tables list the current and previous versions of the Amazon EKS op
 
 | AMI version | kubelet version | containerd version | csi-proxy version | Release notes |
 | --- | --- | --- | --- | --- |
+|  `1.36-2026.09.14`  |  `1.36.3`  |  `2.2.3`  |  `1.2.1`  | Includes patch for CVE-2026-76654 |
 |  `1.36-2026.08.15`  |  `1.36.2`  |  `2.2.3`  |  `1.2.1`  |  |
 |  `1.36-2026.07.18`  |  `1.36.2`  |  `2.2.3`  |  `1.2.1`  |  |
 |  `1.36-2026.06.18`  |  `1.36.2`  |  `2.2.3`  |  `1.2.1`  |  |
@@ -68,6 +71,7 @@ The following tables list the current and previous versions of the Amazon EKS op
 
 | AMI version | kubelet version | containerd version | csi-proxy version | Release notes |
 | --- | --- | --- | --- | --- |
+|  `1.35-2026.09.14`  |  `1.35.7`  |  `2.1.7`  |  `1.2.1`  | Includes patch for CVE-2026-76654 |
 |  `1.35-2026.08.15`  |  `1.35.6`  |  `2.1.7`  |  `1.2.1`  |  |
 |  `1.35-2026.07.21`  |  `1.35.6`  |  `2.1.7`  |  `1.2.1`  |  |
 |  `1.35-2026.06.18`  |  `1.35.6`  |  `2.1.7`  |  `1.2.1`  |  |
@@ -85,6 +89,7 @@ The following tables list the current and previous versions of the Amazon EKS op
 
 | AMI version | kubelet version | containerd version | csi-proxy version | Release notes |
 | --- | --- | --- | --- | --- |
+|  `1.36-2026.09.14`  |  `1.36.3`  |  `2.2.3`  |  `1.2.1`  | Includes patch for CVE-2026-76654 |
 |  `1.36-2026.08.15`  |  `1.36.2`  |  `2.2.3`  |  `1.2.1`  |  |
 |  `1.36-2026.07.18`  |  `1.36.2`  |  `2.2.3`  |  `1.2.1`  |  |
 |  `1.36-2026.06.18`  |  `1.36.2`  |  `2.2.3`  |  `1.2.1`  |  |
@@ -92,6 +97,7 @@ The following tables list the current and previous versions of the Amazon EKS op
 
 | AMI version | kubelet version | containerd version | csi-proxy version | Release notes |
 | --- | --- | --- | --- | --- |
+|  `1.35-2026.09.14`  |  `1.35.7`  |  `2.1.7`  |  `1.2.1`  | Includes patch for CVE-2026-76654 |
 |  `1.35-2026.08.15`  |  `1.35.6`  |  `2.1.7`  |  `1.2.1`  |  |
 |  `1.35-2026.07.21`  |  `1.35.6`  |  `2.1.7`  |  `1.2.1`  |  |
 |  `1.35-2026.06.18`  |  `1.35.6`  |  `2.1.7`  |  `1.2.1`  |  |
@@ -102,6 +108,7 @@ The following tables list the current and previous versions of the Amazon EKS op
 
 | AMI version | kubelet version | containerd version | csi-proxy version | Release notes |
 | --- | --- | --- | --- | --- |
+|  `1.34-2026.09.14`  |  `1.34.10`  |  `2.1.7`  |  `1.2.1`  | Includes patch for CVE-2026-76654 |
 |  `1.34-2026.08.15`  |  `1.34.9`  |  `2.1.7`  |  `1.2.1`  |  |
 |  `1.34-2026.07.18`  |  `1.34.9`  |  `2.1.7`  |  `1.2.1`  |  |
 |  `1.34-2026.06.18`  |  `1.34.9`  |  `2.1.6`  |  `1.2.1`  |  |
@@ -116,6 +123,7 @@ The following tables list the current and previous versions of the Amazon EKS op
 
 | AMI version | kubelet version | containerd version | csi-proxy version | Release notes |
 | --- | --- | --- | --- | --- |
+|  `1.33-2026.09.14`  |  `1.33.13`  |  `1.7.30`  |  `1.2.1`  | Includes patch for CVE-2026-76654 |
 |  `1.33-2026.08.15`  |  `1.33.13`  |  `1.7.30`  |  `1.2.1`  |  |
 |  `1.33-2026.07.18`  |  `1.33.13`  |  `1.7.30`  |  `1.2.1`  |  |
 |  `1.33-2026.06.18`  |  `1.33.13`  |  `1.7.30`  |  `1.2.1`  |  |
@@ -134,6 +142,7 @@ The following tables list the current and previous versions of the Amazon EKS op
 
 | AMI version | kubelet version | containerd version | csi-proxy version | Release notes |
 | --- | --- | --- | --- | --- |
+|  `1.32-2026.09.14`  |  `1.32.13`  |  `1.7.30`  |  `1.2.1`  | Includes patch for CVE-2026-76654 |
 |  `1.32-2026.08.15`  |  `1.32.13`  |  `1.7.30`  |  `1.2.1`  |  |
 |  `1.32-2026.07.18`  |  `1.32.13`  |  `1.7.30`  |  `1.2.1`  |  |
 |  `1.32-2026.06.18`  |  `1.32.13`  |  `1.7.30`  |  `1.2.1`  |  |
@@ -156,6 +165,7 @@ The following tables list the current and previous versions of the Amazon EKS op
 
 | AMI version | kubelet version | containerd version | csi-proxy version | Release notes |
 | --- | --- | --- | --- | --- |
+|  `1.31-2026.09.14`  |  `1.31.14`  |  `1.7.30`  |  `1.2.1`  | Includes patch for CVE-2026-76654 |
 |  `1.31-2026.08.15`  |  `1.31.14`  |  `1.7.30`  |  `1.2.1`  |  |
 |  `1.31-2026.07.18`  |  `1.31.14`  |  `1.7.30`  |  `1.2.1`  |  |
 |  `1.31-2026.06.18`  |  `1.31.14`  |  `1.7.30`  |  `1.2.1`  |  |
@@ -284,6 +294,7 @@ The following tables list the current and previous versions of the Amazon EKS op
 
 | AMI version | kubelet version | containerd version | csi-proxy version | Release notes |
 | --- | --- | --- | --- | --- |
+|  `1.36-2026.09.14`  |  `1.36.3`  |  `2.2.3`  |  `1.2.1`  | Includes patch for CVE-2026-76654 |
 |  `1.36-2026.08.15`  |  `1.36.2`  |  `2.2.3`  |  `1.2.1`  |  |
 |  `1.36-2026.07.18`  |  `1.36.2`  |  `2.2.3`  |  `1.2.1`  |  |
 |  `1.36-2026.06.18`  |  `1.36.2`  |  `2.2.3`  |  `1.2.1`  |  |
@@ -291,6 +302,7 @@ The following tables list the current and previous versions of the Amazon EKS op
 
 | AMI version | kubelet version | containerd version | csi-proxy version | Release notes |
 | --- | --- | --- | --- | --- |
+|  `1.35-2026.09.14`  |  `1.35.7`  |  `2.1.7`  |  `1.2.1`  | Includes patch for CVE-2026-76654 |
 |  `1.35-2026.08.15`  |  `1.35.6`  |  `2.1.7`  |  `1.2.1`  |  |
 |  `1.35-2026.07.18`  |  `1.35.6`  |  `2.1.7`  |  `1.2.1`  |  |
 |  `1.35-2026.06.18`  |  `1.35.6`  |  `2.1.7`  |  `1.2.1`  |  |
@@ -301,6 +313,7 @@ The following tables list the current and previous versions of the Amazon EKS op
 
 | AMI version | kubelet version | containerd version | csi-proxy version | Release notes |
 | --- | --- | --- | --- | --- |
+|  `1.34-2026.09.14`  |  `1.34.10`  |  `2.1.7`  |  `1.2.1`  | Includes patch for CVE-2026-76654 |
 |  `1.34-2026.08.15`  |  `1.34.9`  |  `2.1.7`  |  `1.2.1`  |  |
 |  `1.34-2026.07.18`  |  `1.34.9`  |  `2.1.7`  |  `1.2.1`  |  |
 |  `1.34-2026.06.18`  |  `1.34.9`  |  `2.1.6`  |  `1.2.1`  |  |
@@ -315,6 +328,7 @@ The following tables list the current and previous versions of the Amazon EKS op
 
 | AMI version | kubelet version | containerd version | csi-proxy version | Release notes |
 | --- | --- | --- | --- | --- |
+|  `1.33-2026.09.14`  |  `1.33.13`  |  `1.7.30`  |  `1.2.1`  | Includes patch for CVE-2026-76654 |
 |  `1.33-2026.08.15`  |  `1.33.13`  |  `1.7.30`  |  `1.2.1`  |  |
 |  `1.33-2026.07.21`  |  `1.33.13`  |  `1.7.30`  |  `1.2.1`  |  |
 |  `1.33-2026.06.18`  |  `1.33.13`  |  `1.7.30`  |  `1.2.1`  |  |
@@ -333,6 +347,7 @@ The following tables list the current and previous versions of the Amazon EKS op
 
 | AMI version | kubelet version | containerd version | csi-proxy version | Release notes |
 | --- | --- | --- | --- | --- |
+|  `1.32-2026.09.14`  |  `1.32.13`  |  `1.7.30`  |  `1.2.1`  | Includes patch for CVE-2026-76654 |
 |  `1.32-2026.08.15`  |  `1.32.13`  |  `1.7.30`  |  `1.2.1`  |  |
 |  `1.32-2026.07.18`  |  `1.32.13`  |  `1.7.30`  |  `1.2.1`  |  |
 |  `1.32-2026.06.18`  |  `1.32.13`  |  `1.7.30`  |  `1.2.1`  |  |
@@ -355,6 +370,7 @@ The following tables list the current and previous versions of the Amazon EKS op
 
 | AMI version | kubelet version | containerd version | csi-proxy version | Release notes |
 | --- | --- | --- | --- | --- |
+|  `1.31-2026.09.14`  |  `1.31.14`  |  `1.7.30`  |  `1.2.1`  | Includes patch for CVE-2026-76654 |
 |  `1.31-2026.08.15`  |  `1.31.14`  |  `1.7.30`  |  `1.2.1`  |  |
 |  `1.31-2026.07.18`  |  `1.31.14`  |  `1.7.30`  |  `1.2.1`  |  |
 |  `1.31-2026.06.18`  |  `1.31.14`  |  `1.7.30`  |  `1.2.1`  |  |
@@ -483,6 +499,7 @@ The following tables list the current and previous versions of the Amazon EKS op
 
 | AMI version | kubelet version | containerd version | csi-proxy version | Release notes |
 | --- | --- | --- | --- | --- |
+|  `1.36-2026.09.14`  |  `1.36.3`  |  `2.2.3`  |  `1.2.1`  | Includes patch for CVE-2026-76654 |
 |  `1.36-2026.08.15`  |  `1.36.2`  |  `2.2.3`  |  `1.2.1`  |  |
 |  `1.36-2026.07.18`  |  `1.36.2`  |  `2.2.3`  |  `1.2.1`  |  |
 |  `1.36-2026.06.18`  |  `1.36.2`  |  `2.2.3`  |  `1.2.1`  |  |
@@ -490,6 +507,7 @@ The following tables list the current and previous versions of the Amazon EKS op
 
 | AMI version | kubelet version | containerd version | csi-proxy version | Release notes |
 | --- | --- | --- | --- | --- |
+|  `1.35-2026.09.14`  |  `1.35.7`  |  `2.1.7`  |  `1.2.1`  | Includes patch for CVE-2026-76654 |
 |  `1.35-2026.08.15`  |  `1.35.6`  |  `2.1.7`  |  `1.2.1`  |  |
 |  `1.35-2026.07.18`  |  `1.35.6`  |  `2.1.7`  |  `1.2.1`  |  |
 |  `1.35-2026.06.18`  |  `1.35.6`  |  `2.1.7`  |  `1.2.1`  |  |
@@ -500,6 +518,7 @@ The following tables list the current and previous versions of the Amazon EKS op
 
 | AMI version | kubelet version | containerd version | csi-proxy version | Release notes |
 | --- | --- | --- | --- | --- |
+|  `1.34-2026.09.14`  |  `1.34.10`  |  `2.1.7`  |  `1.2.1`  | Includes patch for CVE-2026-76654 |
 |  `1.34-2026.08.15`  |  `1.34.9`  |  `2.1.7`  |  `1.2.1`  |  |
 |  `1.34-2026.07.18`  |  `1.34.9`  |  `2.1.7`  |  `1.2.1`  |  |
 |  `1.34-2026.06.18`  |  `1.34.9`  |  `2.1.6`  |  `1.2.1`  |  |
@@ -514,6 +533,7 @@ The following tables list the current and previous versions of the Amazon EKS op
 
 | AMI version | kubelet version | containerd version | csi-proxy version | Release notes |
 | --- | --- | --- | --- | --- |
+|  `1.33-2026.09.14`  |  `1.33.13`  |  `1.7.30`  |  `1.2.1`  | Includes patch for CVE-2026-76654 |
 |  `1.33-2026.08.15`  |  `1.33.13`  |  `1.7.30`  |  `1.2.1`  |  |
 |  `1.33-2026.07.18`  |  `1.33.13`  |  `1.7.30`  |  `1.2.1`  |  |
 |  `1.33-2026.06.18`  |  `1.33.13`  |  `1.7.30`  |  `1.2.1`  |  |
@@ -532,6 +552,7 @@ The following tables list the current and previous versions of the Amazon EKS op
 
 | AMI version | kubelet version | containerd version | csi-proxy version | Release notes |
 | --- | --- | --- | --- | --- |
+|  `1.32-2026.09.14`  |  `1.32.13`  |  `1.7.30`  |  `1.2.1`  | Includes patch for CVE-2026-76654 |
 |  `1.32-2026.08.15`  |  `1.32.13`  |  `1.7.30`  |  `1.2.1`  |  |
 |  `1.32-2026.07.18`  |  `1.32.13`  |  `1.7.30`  |  `1.2.1`  |  |
 |  `1.32-2026.06.18`  |  `1.32.13`  |  `1.7.30`  |  `1.2.1`  |  |
@@ -554,6 +575,7 @@ The following tables list the current and previous versions of the Amazon EKS op
 
 | AMI version | kubelet version | containerd version | csi-proxy version | Release notes |
 | --- | --- | --- | --- | --- |
+|  `1.31-2026.09.14`  |  `1.31.14`  |  `1.7.30`  |  `1.2.1`  | Includes patch for CVE-2026-76654 |
 |  `1.31-2026.08.15`  |  `1.31.14`  |  `1.7.30`  |  `1.2.1`  |  |
 |  `1.31-2026.07.18`  |  `1.31.14`  |  `1.7.30`  |  `1.2.1`  |  |
 |  `1.31-2026.06.18`  |  `1.31.14`  |  `1.7.30`  |  `1.2.1`  |  |
@@ -682,6 +704,7 @@ The following tables list the current and previous versions of the Amazon EKS op
 
 | AMI version | kubelet version | containerd version | csi-proxy version | Release notes |
 | --- | --- | --- | --- | --- |
+|  `1.36-2026.09.14`  |  `1.36.3`  |  `2.2.3`  |  `1.2.1`  | Includes patch for CVE-2026-76654 |
 |  `1.36-2026.08.15`  |  `1.36.2`  |  `2.2.3`  |  `1.2.1`  |  |
 |  `1.36-2026.07.18`  |  `1.36.2`  |  `2.2.3`  |  `1.2.1`  |  |
 |  `1.36-2026.06.18`  |  `1.36.2`  |  `2.2.3`  |  `1.2.1`  |  |
@@ -689,6 +712,7 @@ The following tables list the current and previous versions of the Amazon EKS op
 
 | AMI version | kubelet version | containerd version | csi-proxy version | Release notes |
 | --- | --- | --- | --- | --- |
+|  `1.35-2026.09.14`  |  `1.35.7`  |  `2.1.7`  |  `1.2.1`  | Includes patch for CVE-2026-76654 |
 |  `1.35-2026.08.15`  |  `1.35.6`  |  `2.1.7`  |  `1.2.1`  |  |
 |  `1.35-2026.07.18`  |  `1.35.6`  |  `2.1.7`  |  `1.2.1`  |  |
 |  `1.35-2026.06.18`  |  `1.35.6`  |  `2.1.7`  |  `1.2.1`  |  |
@@ -699,6 +723,7 @@ The following tables list the current and previous versions of the Amazon EKS op
 
 | AMI version | kubelet version | containerd version | csi-proxy version | Release notes |
 | --- | --- | --- | --- | --- |
+|  `1.34-2026.09.14`  |  `1.34.10`  |  `2.1.7`  |  `1.2.1`  | Includes patch for CVE-2026-76654 |
 |  `1.34-2026.08.15`  |  `1.34.9`  |  `2.1.7`  |  `1.2.1`  |  |
 |  `1.34-2026.07.21`  |  `1.34.9`  |  `2.1.7`  |  `1.2.1`  |  |
 |  `1.34-2026.06.18`  |  `1.34.9`  |  `2.1.6`  |  `1.2.1`  |  |
@@ -713,6 +738,7 @@ The following tables list the current and previous versions of the Amazon EKS op
 
 | AMI version | kubelet version | containerd version | csi-proxy version | Release notes |
 | --- | --- | --- | --- | --- |
+|  `1.33-2026.09.14`  |  `1.33.13`  |  `1.7.30`  |  `1.2.1`  | Includes patch for CVE-2026-76654 |
 |  `1.33-2026.08.15`  |  `1.33.13`  |  `1.7.30`  |  `1.2.1`  |  |
 |  `1.33-2026.07.18`  |  `1.33.13`  |  `1.7.30`  |  `1.2.1`  |  |
 |  `1.33-2026.06.18`  |  `1.33.13`  |  `1.7.30`  |  `1.2.1`  |  |
@@ -731,6 +757,7 @@ The following tables list the current and previous versions of the Amazon EKS op
 
 | AMI version | kubelet version | containerd version | csi-proxy version | Release notes |
 | --- | --- | --- | --- | --- |
+|  `1.32-2026.09.14`  |  `1.32.13`  |  `1.7.30`  |  `1.2.1`  | Includes patch for CVE-2026-76654 |
 |  `1.32-2026.08.15`  |  `1.32.13`  |  `1.7.30`  |  `1.2.1`  |  |
 |  `1.32-2026.07.18`  |  `1.32.13`  |  `1.7.30`  |  `1.2.1`  |  |
 |  `1.32-2026.06.18`  |  `1.32.13`  |  `1.7.30`  |  `1.2.1`  |  |
@@ -753,6 +780,7 @@ The following tables list the current and previous versions of the Amazon EKS op
 
 | AMI version | kubelet version | containerd version | csi-proxy version | Release notes |
 | --- | --- | --- | --- | --- |
+|  `1.31-2026.09.14`  |  `1.31.14`  |  `1.7.30`  |  `1.2.1`  | Includes patch for CVE-2026-76654 |
 |  `1.31-2026.08.15`  |  `1.31.14`  |  `1.7.30`  |  `1.2.1`  |  |
 |  `1.31-2026.07.18`  |  `1.31.14`  |  `1.7.30`  |  `1.2.1`  |  |
 |  `1.31-2026.06.18`  |  `1.31.14`  |  `1.7.30`  |  `1.2.1`  |  |

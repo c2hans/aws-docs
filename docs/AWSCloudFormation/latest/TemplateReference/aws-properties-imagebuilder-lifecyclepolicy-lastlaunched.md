@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-imagebuilder-lifecyclepolicy-lastlaunched-properties"></a>
 
 `Unit`  <a name="cfn-imagebuilder-lifecyclepolicy-lastlaunched-unit"></a>
-Defines the unit of time that the lifecycle policy uses to calculate elapsed time since the last instance launched from the AMI. For example: days, weeks, months, or years.
+Defines the unit of time that the lifecycle policy uses to calculate elapsed time since the last launch.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `DAYS | WEEKS | MONTHS | YEARS`

@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::ImageBuilder::DistributionConfiguration LaunchPermissionConfiguration
 <a name="aws-properties-imagebuilder-distributionconfiguration-launchpermissionconfiguration"></a>
 
-Describes the configuration for a launch permission. The launch permission modification request is sent to the [Amazon EC2 ModifyImageAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyImageAttribute.html) API on behalf of the user for each Region they have selected to distribute the AMI. To make an AMI public, set the launch permission authorized accounts to `all`. See the examples for making an AMI public at [Amazon EC2 ModifyImageAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyImageAttribute.html).
+Describes the configuration for a launch permission. The launch permission modification request is sent to the [Amazon EC2 ModifyImageAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyImageAttribute.html) API on behalf of the user for each Region they have selected to distribute the AMI. To make an AMI public, set `userGroups` to the value `all`. See the examples for making an AMI public at [Amazon EC2 ModifyImageAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyImageAttribute.html).
 
 ## Syntax
 <a name="aws-properties-imagebuilder-distributionconfiguration-launchpermissionconfiguration-syntax"></a>
@@ -60,13 +60,13 @@ The ARN for an AWS Organization that you want to share your AMI with. For more i
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `UserGroups`  <a name="cfn-imagebuilder-distributionconfiguration-launchpermissionconfiguration-usergroups"></a>
-The name of the group.
+The name of the group that you want to grant launch permission to. The only supported value is `all`, which makes the distributed AMI public.
 *Required*: No
 *Type*: Array of String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `UserIds`  <a name="cfn-imagebuilder-distributionconfiguration-launchpermissionconfiguration-userids"></a>
-The AWS account ID.
+The AWS account IDs to grant launch permission to. Each listed account can use the distributed AMI to launch instances.
 *Required*: No
 *Type*: Array of String
 *Minimum*: `1`

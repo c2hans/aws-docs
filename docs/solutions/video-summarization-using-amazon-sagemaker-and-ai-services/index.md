@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/video-summarization-using-amaz
 title: 'Guidance for Video Summarization using Amazon SageMaker and AI Services'
 canonical_url: https://docs.aws.amazon.com/solutions/video-summarization-using-amazon-sagemaker-and-ai-services/
 source: aws-documentation
-generated_on: 2026-09-18
+generated_on: 2026-09-22
 ---
 
 # Guidance for Video Summarization using Amazon SageMaker and AI Services

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Cre
 # CreateImagePipeline
 <a name="API_CreateImagePipeline"></a>
 
-Creates a new image pipeline. Use image pipelines to automate the creation and distribution of images.
+Creates a new image pipeline. Use image pipelines to automate the creation and distribution of images. You must specify exactly one recipe for the pipeline, using either a `containerRecipeArn` or an `imageRecipeArn`.
 
 ## Request Syntax
 <a name="API_CreateImagePipeline_RequestSyntax"></a>
@@ -82,13 +82,13 @@ The request does not use any URI parameters.
 The request accepts the following data in JSON format.
 
  ** [clientToken](#API_CreateImagePipeline_RequestSyntax) **   <a name="imagebuilder-CreateImagePipeline-request-clientToken"></a>
-A unique, case-sensitive identifier you provide to ensure that the operation completes no more than one time. If this token matches a previous request, the service ignores the request, but does not return an error. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
+A unique, case-sensitive identifier you provide to ensure that the operation runs no more than one time. If you retry a request with the same client token, Image Builder returns the original response without running the operation again. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: Yes
 
  ** [containerRecipeArn](#API_CreateImagePipeline_RequestSyntax) **   <a name="imagebuilder-CreateImagePipeline-request-containerRecipeArn"></a>
-The Amazon Resource Name (ARN) of the container recipe that is used to configure images created by this container pipeline.
+The Amazon Resource Name (ARN) of the container recipe that is used to configure images created by this container pipeline. You must specify either this property or `imageRecipeArn`, but not both.
 Type: String
 Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws):container-recipe/[a-z0-9-_]+/(?:[0-9]+|x)\.(?:[0-9]+|x)\.(?:[0-9]+|x)$`
 Required: No
@@ -106,7 +106,7 @@ Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws):distribution-config
 Required: No
 
  ** [dryRun](#API_CreateImagePipeline_RequestSyntax) **   <a name="imagebuilder-CreateImagePipeline-request-dryRun"></a>
-Validates the required permissions and request parameters without making the request. If validation succeeds, the operation returns a `DryRunOperationException` error response.
+Validates the required permissions and request parameters without performing the operation. If validation succeeds, the operation returns a `DryRunOperationException` error response.
 Type: Boolean
 Required: No
 
@@ -123,18 +123,18 @@ Pattern: `^(?:arn:aws(?:-[a-z]+)*:iam::[0-9]{12}:role/)?[a-zA-Z_0-9+=,.@\-_/]+$`
 Required: No
 
  ** [imageRecipeArn](#API_CreateImagePipeline_RequestSyntax) **   <a name="imagebuilder-CreateImagePipeline-request-imageRecipeArn"></a>
-The Amazon Resource Name (ARN) of the image recipe that configures images created by this image pipeline.
+The Amazon Resource Name (ARN) of the image recipe that configures images created by this image pipeline. You must specify either this property or `containerRecipeArn`, but not both.
 Type: String
 Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws):image-recipe/[a-z0-9-_]+/(?:[0-9]+|x)\.(?:[0-9]+|x)\.(?:[0-9]+|x)$`
 Required: No
 
  ** [imageScanningConfiguration](#API_CreateImagePipeline_RequestSyntax) **   <a name="imagebuilder-CreateImagePipeline-request-imageScanningConfiguration"></a>
-Contains settings for vulnerability scans.
+Contains settings for vulnerability scans that Amazon Inspector runs against the test instance during image creation.
 Type: [ImageScanningConfiguration](API_ImageScanningConfiguration.md) object
 Required: No
 
  ** [imageTags](#API_CreateImagePipeline_RequestSyntax) **   <a name="imagebuilder-CreateImagePipeline-request-imageTags"></a>
-The tags to be applied to the images produced by this pipeline.
+The tags that Image Builder applies to the Image Builder image resource that this pipeline's scheduled executions create. These tags don't apply to the output AMI. To tag output AMIs, use `amiTags` in the pipeline's distribution configuration.
 Type: String to string map
 Map Entries: Maximum number of 50 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
@@ -143,7 +143,7 @@ Value Length Constraints: Maximum length of 256.
 Required: No
 
  ** [imageTestsConfiguration](#API_CreateImagePipeline_RequestSyntax) **   <a name="imagebuilder-CreateImagePipeline-request-imageTestsConfiguration"></a>
-The image test configuration of the image pipeline.
+Specifies the test settings that Image Builder applies to images that this pipeline creates. If you don't provide test settings, Image Builder stores a default configuration with image tests enabled.
 Type: [ImageTestsConfiguration](API_ImageTestsConfiguration.md) object
 Required: No
 
@@ -159,18 +159,18 @@ Type: [PipelineLoggingConfiguration](API_PipelineLoggingConfiguration.md) object
 Required: No
 
  ** [name](#API_CreateImagePipeline_RequestSyntax) **   <a name="imagebuilder-CreateImagePipeline-request-name"></a>
-The name of the image pipeline.
+The name of the image pipeline. Pipeline names must be unique to your account in each AWS Region. Image Builder generates the pipeline ARN from a normalized form of the name, so names that differ only in case, spaces, or underscores count as the same name.
 Type: String
 Pattern: `^[-_A-Za-z-0-9][-_A-Za-z0-9 ]{1,126}[-_A-Za-z-0-9]$`
 Required: Yes
 
  ** [schedule](#API_CreateImagePipeline_RequestSyntax) **   <a name="imagebuilder-CreateImagePipeline-request-schedule"></a>
-The schedule of the image pipeline.
+The schedule of the image pipeline. If you don't provide a schedule, the pipeline runs only when you call [StartImagePipelineExecution](API_StartImagePipelineExecution.md).
 Type: [Schedule](API_Schedule.md) object
 Required: No
 
  ** [status](#API_CreateImagePipeline_RequestSyntax) **   <a name="imagebuilder-CreateImagePipeline-request-status"></a>
-The status of the image pipeline.
+The status of the image pipeline. If you don't specify a status, it defaults to `ENABLED`. A disabled pipeline doesn't run on its schedule, but you can still start builds manually.
 Type: String
 Valid Values: `DISABLED | ENABLED`
 Required: No
@@ -185,7 +185,7 @@ Value Length Constraints: Maximum length of 256.
 Required: No
 
  ** [workflows](#API_CreateImagePipeline_RequestSyntax) **   <a name="imagebuilder-CreateImagePipeline-request-workflows"></a>
-Contains an array of workflow configuration objects.
+The array of workflow configuration objects for builds that this pipeline starts. You must also specify `executionRole` when you provide workflows.
 Type: Array of [WorkflowConfiguration](API_WorkflowConfiguration.md) objects
 Required: No
 
@@ -231,11 +231,11 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** DryRunOperationException **
@@ -251,7 +251,7 @@ You have specified a client token for an operation using parameter values that d
 HTTP Status Code: 400
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** ResourceAlreadyExistsException **
@@ -263,7 +263,7 @@ The resource that you are trying to operate on is currently in use. Review the m
 HTTP Status Code: 400
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceQuotaExceededException **
@@ -273,6 +273,104 @@ HTTP Status Code: 402
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_CreateImagePipeline_Examples"></a>
+
+### Create an image pipeline
+<a name="API_CreateImagePipeline_Example_1"></a>
+
+The following example creates a pipeline that builds a new image version every Sunday at 9:00 AM UTC, if the base image or components have updates.
+
+#### Sample Request
+<a name="API_CreateImagePipeline_Example_1_Request"></a>
+
+```
+PUT /CreateImagePipeline HTTP/1.1
+Content-type: application/json
+
+{
+    "name": "my-example-pipeline",
+    "description": "Builds a new version of my image every Sunday",
+    "imageRecipeArn": "arn:aws:imagebuilder:us-west-2:111122223333:image-recipe/my-example-recipe/1.0.0",
+    "infrastructureConfigurationArn": "arn:aws:imagebuilder:us-west-2:111122223333:infrastructure-configuration/my-example-infrastructure",
+    "distributionConfigurationArn": "arn:aws:imagebuilder:us-west-2:111122223333:distribution-configuration/my-example-distribution",
+    "schedule": {
+        "scheduleExpression": "cron(0 9 ? * SUN *)",
+        "pipelineExecutionStartCondition": "EXPRESSION_MATCH_AND_DEPENDENCY_UPDATES_AVAILABLE"
+    },
+    "status": "ENABLED",
+    "clientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE55555"
+}
+```
+
+#### Sample Response
+<a name="API_CreateImagePipeline_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "requestId": "db0a9329-35ef-4b53-98d0-a34385e44e28",
+    "clientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
+    "imagePipelineArn": "arn:aws:imagebuilder:us-west-2:111122223333:image-pipeline/my-example-pipeline"
+}
+```
+
+### Create an image pipeline with scanning, custom workflows, and an auto-disable policy
+<a name="API_CreateImagePipeline_Example_2"></a>
+
+The following example creates a pipeline that uses your custom build workflow and enables image scanning. The schedule evaluates its cron expression in the America/Los\_Angeles time zone. The auto-disable policy disables the pipeline after 3 consecutive failed scheduled builds.
+
+#### Sample Request
+<a name="API_CreateImagePipeline_Example_2_Request"></a>
+
+```
+PUT /CreateImagePipeline HTTP/1.1
+Content-type: application/json
+
+{
+    "name": "my-example-pipeline",
+    "description": "Builds a scanned image with my custom build workflow on Sunday mornings when dependency updates are available",
+    "imageRecipeArn": "arn:aws:imagebuilder:us-west-2:111122223333:image-recipe/my-example-recipe/1.1.0",
+    "infrastructureConfigurationArn": "arn:aws:imagebuilder:us-west-2:111122223333:infrastructure-configuration/my-example-infrastructure",
+    "distributionConfigurationArn": "arn:aws:imagebuilder:us-west-2:111122223333:distribution-configuration/my-example-distribution",
+    "workflows": [
+        {
+            "workflowArn": "arn:aws:imagebuilder:us-west-2:111122223333:workflow/build/my-example-workflow/1.0.0/1"
+        }
+    ],
+    "executionRole": "arn:aws:iam::111122223333:role/aws-service-role/imagebuilder.amazonaws.com/AWSServiceRoleForImageBuilder",
+    "imageScanningConfiguration": {
+        "imageScanningEnabled": true
+    },
+    "schedule": {
+        "scheduleExpression": "cron(0 9 ? * SUN *)",
+        "timezone": "America/Los_Angeles",
+        "pipelineExecutionStartCondition": "EXPRESSION_MATCH_AND_DEPENDENCY_UPDATES_AVAILABLE",
+        "autoDisablePolicy": {
+            "failureCount": 3
+        }
+    },
+    "status": "ENABLED",
+    "clientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE30303"
+}
+```
+
+#### Sample Response
+<a name="API_CreateImagePipeline_Example_2_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "requestId": "f8da3ec9-4b76-4aa3-817a-c35a90f59dca",
+    "clientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE30303",
+    "imagePipelineArn": "arn:aws:imagebuilder:us-west-2:111122223333:image-pipeline/my-example-pipeline"
+}
+```
 
 ## See Also
 <a name="API_CreateImagePipeline_SeeAlso"></a>

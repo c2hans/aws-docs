@@ -37,7 +37,14 @@ Required: Yes
 
 ```
 {
+   "DataAccessRoleArn": "string",
    "DownloadUri": "string",
+   "EncryptionConfiguration": {
+      "KMSEncryptionContext": {
+         "string" : "string"
+      },
+      "KMSKey": "string"
+   },
    "LanguageCode": "string",
    "LastModifiedTime": number,
    "VocabularyFilterName": "string"
@@ -51,16 +58,26 @@ If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
+ ** [DataAccessRoleArn](#API_GetVocabularyFilter_ResponseSyntax) **   <a name="transcribe-GetVocabularyFilter-response-DataAccessRoleArn"></a>
+The Amazon Resource Name (ARN) of the IAM role used to access the Amazon S3 bucket that contains your input files and, if applicable, the AWS KMS key specified in `EncryptionConfiguration`.
+Type: String
+Length Constraints: Minimum length of 20. Maximum length of 2048.
+Pattern: `^arn:(aws|aws-cn|aws-us-gov|aws-iso-{0,1}[a-z]{0,1}):iam::[0-9]{0,63}:role/[A-Za-z0-9:_/+=,@.-]{0,1024}$`
+
  ** [DownloadUri](#API_GetVocabularyFilter_ResponseSyntax) **   <a name="transcribe-GetVocabularyFilter-response-DownloadUri"></a>
 The Amazon S3 location where the custom vocabulary filter is stored; use this URI to view or download the custom vocabulary filter.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2000.
 Pattern: `(s3://|http(s*)://).+`
 
+ ** [EncryptionConfiguration](#API_GetVocabularyFilter_ResponseSyntax) **   <a name="transcribe-GetVocabularyFilter-response-EncryptionConfiguration"></a>
+The encryption configuration used for your custom vocabulary filter.
+Type: [EncryptionConfiguration](API_EncryptionConfiguration.md) object
+
  ** [LanguageCode](#API_GetVocabularyFilter_ResponseSyntax) **   <a name="transcribe-GetVocabularyFilter-response-LanguageCode"></a>
 The language code you selected for your custom vocabulary filter.
 Type: String
-Valid Values: `af-ZA | ar-AE | ar-SA | da-DK | de-CH | de-DE | en-AB | en-AU | en-GB | en-IE | en-IN | en-US | en-WL | es-ES | es-US | fa-IR | fr-CA | fr-FR | he-IL | hi-IN | id-ID | it-IT | ja-JP | ko-KR | ms-MY | nl-NL | pt-BR | pt-PT | ru-RU | ta-IN | te-IN | tr-TR | zh-CN | zh-TW | th-TH | en-ZA | en-NZ | vi-VN | sv-SE | ab-GE | ast-ES | az-AZ | ba-RU | be-BY | bg-BG | bn-IN | bs-BA | ca-ES | ckb-IQ | ckb-IR | cs-CZ | cy-WL | el-GR | et-EE | et-ET | eu-ES | fi-FI | gl-ES | gu-IN | ha-NG | hr-HR | hu-HU | hy-AM | is-IS | ka-GE | kab-DZ | kk-KZ | kn-IN | ky-KG | lg-IN | lt-LT | lv-LV | mhr-RU | mi-NZ | mk-MK | ml-IN | mn-MN | mr-IN | mt-MT | no-NO | or-IN | pa-IN | pl-PL | ps-AF | ro-RO | rw-RW | si-LK | sk-SK | sl-SI | so-SO | sr-RS | su-ID | sw-BI | sw-KE | sw-RW | sw-TZ | sw-UG | tl-PH | tt-RU | ug-CN | uk-UA | uz-UZ | wo-SN | zh-HK | zu-ZA`
+Valid Values: `af-ZA | ar-AE | ar-SA | am-ET | cy-GB | da-DK | de-CH | de-DE | en-AB | en-AU | en-GB | en-IE | en-IN | en-US | en-WL | es-ES | es-MX | es-US | fa-AF | fa-IR | fr-CA | fr-FR | ga-IE | gd-GB | he-IL | hi-IN | ht-HT | id-ID | it-IT | ja-JP | jv-ID | km-KH | ko-KR | my-MM | ms-MY | nl-NL | pt-BR | pt-PT | ru-RU | ta-IN | te-IN | tr-TR | zh-CN | zh-TW | th-TH | en-ZA | en-NZ | vi-VN | sv-SE | ab-GE | ast-ES | az-AZ | ba-RU | be-BY | bg-BG | bn-IN | bs-BA | ca-ES | ckb-IQ | ckb-IR | cs-CZ | cy-WL | el-GR | et-EE | et-ET | eu-ES | fi-FI | gl-ES | gu-IN | ha-NG | hr-HR | hu-HU | hy-AM | is-IS | ka-GE | kab-DZ | kk-KZ | kn-IN | ky-KG | lg-IN | lt-LT | lv-LV | mhr-RU | mi-NZ | mk-MK | ml-IN | mn-MN | mr-IN | mt-MT | no-NO | ne-NP | or-IN | pa-IN | pl-PL | ps-AF | ro-RO | rw-RW | si-LK | sk-SK | sl-SI | so-SO | sq-AL | sr-RS | su-ID | sw-BI | sw-KE | sw-RW | sw-TZ | sw-UG | tl-PH | tt-RU | ug-CN | uk-UA | uz-UZ | wo-SN | zh-HK | zu-ZA`
 
  ** [LastModifiedTime](#API_GetVocabularyFilter_ResponseSyntax) **   <a name="transcribe-GetVocabularyFilter-response-LastModifiedTime"></a>
 The date and time the specified custom vocabulary filter was last modified.

@@ -5,13 +5,13 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Res
 # ResourceState
 <a name="API_ResourceState"></a>
 
-The current state of an impacted resource.
+The state to apply to the image resource in a resource state update request.
 
 ## Contents
 <a name="API_ResourceState_Contents"></a>
 
  ** status **   <a name="imagebuilder-Type-ResourceState-status"></a>
-Shows the current lifecycle policy action that was applied to an impacted resource.
+The status to which you want to move the image resource. Set the status to `AVAILABLE` to restore an image that's currently deprecated or disabled.
 Type: String
 Valid Values: `AVAILABLE | DELETED | DEPRECATED | DISABLED`
 Required: No

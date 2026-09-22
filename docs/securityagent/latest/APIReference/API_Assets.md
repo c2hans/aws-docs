@@ -35,6 +35,11 @@ The list of source code repositories to analyze during the pentest.
 Type: Array of [SourceCodeRepository](API_SourceCodeRepository.md) objects
 Required: No
 
+ ** trustedCaCertificates **   <a name="securityagent-Type-Assets-trustedCaCertificates"></a>
+The trust anchors used to validate target endpoint TLS certificates. Provide these for endpoints served by a private or internal certificate authority (CA), an intermediate CA, or a self-signed certificate.
+Type: Array of [TrustedCaCertificate](API_TrustedCaCertificate.md) objects
+Required: No
+
 ## See Also
 <a name="API_Assets_SeeAlso"></a>
 

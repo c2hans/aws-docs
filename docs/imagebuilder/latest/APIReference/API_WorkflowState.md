@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Wor
 # WorkflowState
 <a name="API_WorkflowState"></a>
 
-A group of fields that describe the current status of workflow.
+A group of fields that describe the current status of the workflow.
 
 ## Contents
 <a name="API_WorkflowState_Contents"></a>

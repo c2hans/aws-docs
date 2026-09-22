@@ -15,7 +15,7 @@ source_url: https://docs.aws.amazon.com/events/latest/devguide/quotas.html
 | Operation | Quota per minute |
 | --- | --- |
 | GetSession | 120 |
-| ListSessions | 60 |
+| ListSessions | 120 |
 | GetSchedule | 60 |
 | ReserveSessions | 30 sessions |
 | CancelReservation | 30 |

@@ -17,4 +17,4 @@ If you use an external identity provider or Active Directory as your identity so
 
  AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, and more). The SDKs provide a convenient way to programmatically access Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see [AWS Builder Center Toolbox](http://aws.amazon.com/tools/).
 
-This document was last published on September 18, 2026.
+This document was last published on September 22, 2026.

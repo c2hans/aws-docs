@@ -8,7 +8,7 @@ For information about breaking changes and migrating your applications, see the 
 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
-# Using the shared AWS credentials file
+# Shared AWS credentials file
 <a name="creds-file"></a>
 
 (Be sure to review the [important warnings and guidance for credentials](net-dg-legacy-creds.md#net-dg-config-creds-warnings-and-guidelines).)
@@ -25,7 +25,7 @@ For best security practices, use AWS IAM Identity Center, as described in [Authe
 ## General information
 <a name="creds-file-general-info"></a>
 
-By default, the shared AWS credentials file is located in the `.aws` directory within your home directory and is named `credentials`; that is, `~/.aws/credentials` (Linux or macOS) or `%USERPROFILE%\.aws\credentials` (Windows). For information about alternative locations, see [Location of the shared files](https://docs.aws.amazon.com/sdkref/latest/guide/file-location.html) in the *[AWS SDKs and Tools Reference Guide](https://docs.aws.amazon.com/sdkref/latest/guide/overview.html)*. Also see [Accessing credentials and profiles in an application](creds-locate.md).
+By default, the shared AWS credentials file is located in the `.aws` directory within your home directory and is named `credentials`; that is, `~/.aws/credentials` (Linux or macOS) or `%USERPROFILE%\.aws\credentials` (Windows). For information about alternative locations, see [Location of the shared files](https://docs.aws.amazon.com/sdkref/latest/guide/file-location.html) in the *[AWS SDKs and Tools Reference Guide](https://docs.aws.amazon.com/sdkref/latest/guide/overview.html)*.
 
 The shared AWS credentials file is a plaintext file and follows a certain format. For information about the format of AWS credentials files, see [Format of the credentials file](https://docs.aws.amazon.com/sdkref/latest/guide/file-format.html#file-format-creds) in the *AWS SDKs and Tools Reference Guide*.
 
@@ -126,3 +126,8 @@ region=us-west-2
 
 **Note**
 You can also set the AWS Region in other locations and by using other methods. For more information, see [Setting the AWS Region for the AWS SDK for .NET](net-dg-region-selection.md).
+
+## How your application uses this file
+<a name="creds-file-usage"></a>
++ **Automatic resolution**: The SDK reads profiles from this file automatically. Set a profile name via `AWSConfigs.AWSProfileName` or the `AWS_PROFILE` environment variable, or rely on the `[default]` profile. For more information, see [Credential and profile resolution](creds-assign.md).
++ **Explicit access in code**: Load a specific profile programmatically and pass its credentials to a service client. For more information, see [Create an AmazonS3Client by using the SharedCredentialsFile class](creds-locate.md#creds-locate-cred-shared-file-create-s3-client).

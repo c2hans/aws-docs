@@ -36,7 +36,7 @@ To request an account:
 
 1. Choose **Next**.
 
-1.  *(Optional)* On the **Share access** step, add the other users and groups you want to collaborate with in the account. This step appears only when your administrator has enabled lease sharing globally and the selected lease template allows the lease owner to share. The step is optional, so you can skip it and share the lease later from the lease details page. For more information, refer to [Sharing a lease with additional users and groups](manager-guide.md#lease-sharing).
+1.  *(Optional)* On the **Share access** step, add the other users you want to collaborate with in the account. When your administrator has enabled group assignments, you can also add groups. This step appears only when your administrator has enabled lease sharing globally and the selected lease template allows the lease owner to share. The step is optional, so you can skip it and share the lease later from the lease details page. For more information, refer to [Sharing a lease with additional users and groups](manager-guide.md#lease-sharing).
 ![Share access step in the request lease wizard](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/request-lease-share-access.png)
 
 1. In the **Terms of Service** section, read the terms of service and check the box that says *I accept the terms of service*. Ensure that you understand the risks associated with owning a sandbox account lease.

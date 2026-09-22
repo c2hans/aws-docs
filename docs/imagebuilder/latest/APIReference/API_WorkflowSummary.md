@@ -13,7 +13,8 @@ Contains metadata about the workflow resource.
  ** arn **   <a name="imagebuilder-Type-WorkflowSummary-arn"></a>
 The Amazon Resource Name (ARN) of the workflow resource.
 Type: String
-Pattern: `^arn:aws(?:-[a-z]+)*:imagebuilder:[a-z]{2,}(?:-[a-z]+)+-[0-9]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):workflow/(build|test|distribution)/[a-z0-9-_]+/x\.x\.x$`
+Length Constraints: Maximum length of 1024.
+Pattern: `^arn:aws(?:-[a-z]+)*:imagebuilder:[a-z]{2,}(?:-[a-z]+)+-[0-9]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):workflow/(build|test|distribution)/[a-z0-9-_]+/[0-9]+\.[0-9]+\.[0-9]+/[0-9]+$`
 Required: No
 
  ** changeDescription **   <a name="imagebuilder-Type-WorkflowSummary-changeDescription"></a>
@@ -60,7 +61,7 @@ Value Length Constraints: Maximum length of 256.
 Required: No
 
  ** type **   <a name="imagebuilder-Type-WorkflowSummary-type"></a>
-The image creation stage that this workflow applies to. Image Builder currently supports build and test stage workflows.
+The image creation stage that this workflow applies to.
 Type: String
 Valid Values: `BUILD | TEST | DISTRIBUTION`
 Required: No

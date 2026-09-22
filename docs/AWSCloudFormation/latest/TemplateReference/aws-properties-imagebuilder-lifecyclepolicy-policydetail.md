@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::ImageBuilder::LifecyclePolicy PolicyDetail
 <a name="aws-properties-imagebuilder-lifecyclepolicy-policydetail"></a>
 
-The configuration details for a lifecycle policy resource.
+Defines one lifecycle policy rule: the action to take, the filter that determines which resources the rule applies to, and optional exclusion rules.
 
 ## Syntax
 <a name="aws-properties-imagebuilder-lifecyclepolicy-policydetail-syntax"></a>

@@ -19,7 +19,7 @@ Required: No
  ** componentArn **   <a name="imagebuilder-Type-ComponentFailureContext-componentArn"></a>
 The Amazon Resource Name (ARN) of the component build version that failed.
 Type: String
-Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):component/[a-z0-9-_]+/[0-9]+\.[0-9]+\.[0-9]+/[0-9]+$`
+Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?|third-party):component/[a-z0-9-_]+/[0-9]+\.[0-9]+\.[0-9]+/[0-9]+$`
 Required: No
 
  ** errorMessage **   <a name="imagebuilder-Type-ComponentFailureContext-errorMessage"></a>

@@ -11,7 +11,7 @@ Defines filters that the lifecycle policy uses to determine impacted resource.
 <a name="API_LifecyclePolicyDetailFilter_Contents"></a>
 
  ** type **   <a name="imagebuilder-Type-LifecyclePolicyDetailFilter-type"></a>
-Filter resources based on either `age` or `count`.
+Filter resources based on either `AGE` or `COUNT`. You can only use the count filter with the `DELETE` action type.
 Type: String
 Valid Values: `AGE | COUNT`
 Required: Yes

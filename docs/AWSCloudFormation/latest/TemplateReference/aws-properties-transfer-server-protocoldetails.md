@@ -28,6 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "[As2Transports](#cfn-transfer-server-protocoldetails-as2transports)" : {{[ String, ... ]}},
   "[PassiveIp](#cfn-transfer-server-protocoldetails-passiveip)" : {{String}},
+  "[ProxyConfig](#cfn-transfer-server-protocoldetails-proxyconfig)" : {{ProxyConfig}},
   "[SetStatOption](#cfn-transfer-server-protocoldetails-setstatoption)" : {{String}},
   "[TlsSessionResumptionMode](#cfn-transfer-server-protocoldetails-tlssessionresumptionmode)" : {{String}}
 }
@@ -40,6 +41,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   [As2Transports](#cfn-transfer-server-protocoldetails-as2transports): {{
     - String}}
   [PassiveIp](#cfn-transfer-server-protocoldetails-passiveip): {{String}}
+  [ProxyConfig](#cfn-transfer-server-protocoldetails-proxyconfig): {{
+    ProxyConfig}}
   [SetStatOption](#cfn-transfer-server-protocoldetails-setstatoption): {{String}}
   [TlsSessionResumptionMode](#cfn-transfer-server-protocoldetails-tlssessionresumptionmode): {{String}}
 ```
@@ -67,6 +70,12 @@ The `AUTO` and `0.0.0.0` are special values for the `PassiveIp` parameter. The v
 *Type*: String
 *Minimum*: `0`
 *Maximum*: `15`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ProxyConfig`  <a name="cfn-transfer-server-protocoldetails-proxyconfig"></a>
+The configuration for PROXY protocol version 2 (PPv2) support on the AWS Transfer Family server. For more information, see [Working with Network Load Balancers](https://docs.aws.amazon.com/transfer/latest/userguide/working-with-nlb.html).
+*Required*: No
+*Type*: [ProxyConfig](aws-properties-transfer-server-proxyconfig.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SetStatOption`  <a name="cfn-transfer-server-protocoldetails-setstatoption"></a>

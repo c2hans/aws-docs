@@ -48,12 +48,12 @@ The details of the dataset source associated with the dataset.
 The format of the dataset source associated with the dataset.
 *Required*: Yes
 *Type*: String
-*Allowed values*: `KNOWLEDGE_BASE`
+*Allowed values*: `KNOWLEDGE_BASE | TIMESERIES`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SourceType`  <a name="cfn-iotsitewise-dataset-datasetsource-sourcetype"></a>
 The type of data source for the dataset.
 *Required*: Yes
 *Type*: String
-*Allowed values*: `KENDRA`
+*Allowed values*: `KENDRA | SITEWISE`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

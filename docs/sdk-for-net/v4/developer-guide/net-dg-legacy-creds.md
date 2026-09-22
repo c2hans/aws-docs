@@ -39,5 +39,5 @@ For a general discussion of how to securely manage AWS credentials, see [AWS sec
 
 **Topics**
 + [Important warnings and guidance for credentials](#net-dg-config-creds-warnings-and-guidelines)
-+ [Using the shared AWS credentials file](creds-file.md)
-+ [Using the SDK Store (Windows only)](sdk-store.md)
++ [Shared AWS credentials file](creds-file.md)
++ [SDK Store (Windows only)](sdk-store.md)

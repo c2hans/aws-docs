@@ -98,6 +98,8 @@ Name of the output group
 Specify the relative priority for this job. In any given queue, the service begins processing the job with the highest value first. When more than one job has the same priority, the service begins processing the job that you submitted first. If you don't specify a priority, the service uses the default value 0. Minimum: -50 Maximum: 50
 *Required*: No
 *Type*: Integer
+*Minimum*: `-50`
+*Maximum*: `50`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Queue`  <a name="cfn-mediaconvert-jobtemplate-queue"></a>

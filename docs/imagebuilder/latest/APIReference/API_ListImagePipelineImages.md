@@ -202,11 +202,11 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** ForbiddenException **
@@ -218,7 +218,7 @@ You have provided an invalid pagination token in your request.
 HTTP Status Code: 400
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** ResourceNotFoundException **
@@ -226,12 +226,63 @@ At least one of the resources referenced by your request does not exist.
 HTTP Status Code: 404
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_ListImagePipelineImages_Examples"></a>
+
+### List the images that an image pipeline created
+<a name="API_ListImagePipelineImages_Example_1"></a>
+
+The following example lists the images that the specified pipeline created, including a build that is still in progress.
+
+#### Sample Request
+<a name="API_ListImagePipelineImages_Example_1_Request"></a>
+
+```
+POST /ListImagePipelineImages HTTP/1.1
+Content-type: application/json
+
+{
+    "imagePipelineArn": "arn:aws:imagebuilder:us-west-2:111122223333:image-pipeline/my-example-pipeline"
+}
+```
+
+#### Sample Response
+<a name="API_ListImagePipelineImages_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "requestId": "071a0ecb-b07d-4485-832c-e6b88de8ebed",
+    "imageSummaryList": [
+        {
+            "arn": "arn:aws:imagebuilder:us-west-2:111122223333:image/my-example-recipe/1.0.0/1",
+            "name": "my-example-recipe",
+            "type": "AMI",
+            "version": "1.0.0/1",
+            "platform": "Linux",
+            "state": {
+                "status": "BUILDING"
+            },
+            "owner": "111122223333",
+            "dateCreated": "2026-09-09T19:39:20.458Z",
+            "outputResources": {
+                "amis": []
+            },
+            "tags": {},
+            "buildType": "USER_INITIATED"
+        }
+    ]
+}
+```
 
 ## See Also
 <a name="API_ListImagePipelineImages_SeeAlso"></a>

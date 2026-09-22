@@ -11,7 +11,7 @@ Contains a summary of lifecycle policy resources.
 <a name="API_LifecyclePolicySummary_Contents"></a>
 
  ** arn **   <a name="imagebuilder-Type-LifecyclePolicySummary-arn"></a>
-The Amazon Resource Name (ARN) of the lifecycle policy summary resource.
+The Amazon Resource Name (ARN) of the lifecycle policy.
 Type: String
 Length Constraints: Maximum length of 1024.
 Pattern: `^arn:aws(?:-[a-z]+)*:imagebuilder:[a-z]{2,}(?:-[a-z]+)+-[0-9]+:(?:[0-9]{12}|aws):lifecycle-policy/[a-z0-9-_]+$`

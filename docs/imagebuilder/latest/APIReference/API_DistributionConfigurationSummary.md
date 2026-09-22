@@ -13,7 +13,7 @@ A high-level overview of a distribution configuration.
  ** arn **   <a name="imagebuilder-Type-DistributionConfigurationSummary-arn"></a>
 The Amazon Resource Name (ARN) of the distribution configuration.
 Type: String
-Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):(?:image-recipe|container-recipe|infrastructure-configuration|distribution-configuration|component|image|image-pipeline|lifecycle-policy|workflow\/(?:build|test|distribution))/[a-z0-9-_]+(?:/(?:(?:x|[0-9]+)\.(?:x|[0-9]+)\.(?:x|[0-9]+))(?:/[0-9]+)?)?$`
+Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?|third-party):(?:image-recipe|container-recipe|infrastructure-configuration|distribution-configuration|component|image|image-pipeline|lifecycle-policy|workflow\/(?:build|test|distribution))/[a-z0-9-_]+(?:/(?:(?:x|[0-9]+)\.(?:x|[0-9]+)\.(?:x|[0-9]+))(?:/[0-9]+)?)?$`
 Required: No
 
  ** dateCreated **   <a name="imagebuilder-Type-DistributionConfigurationSummary-dateCreated"></a>
@@ -39,7 +39,7 @@ Pattern: `^[-_A-Za-z-0-9][-_A-Za-z0-9 ]{1,126}[-_A-Za-z-0-9]$`
 Required: No
 
  ** regions **   <a name="imagebuilder-Type-DistributionConfigurationSummary-regions"></a>
-A list of Regions where the container image is distributed to.
+A list of the Regions that the distribution configuration distributes images to.
 Type: Array of strings
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No

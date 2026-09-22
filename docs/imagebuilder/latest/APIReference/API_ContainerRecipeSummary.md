@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Con
 # ContainerRecipeSummary
 <a name="API_ContainerRecipeSummary"></a>
 
-A summary of a container recipe
+A summary of a container recipe.
 
 ## Contents
 <a name="API_ContainerRecipeSummary_Contents"></a>
@@ -13,7 +13,7 @@ A summary of a container recipe
  ** arn **   <a name="imagebuilder-Type-ContainerRecipeSummary-arn"></a>
 The Amazon Resource Name (ARN) of the container recipe.
 Type: String
-Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):(?:image-recipe|container-recipe|infrastructure-configuration|distribution-configuration|component|image|image-pipeline|lifecycle-policy|workflow\/(?:build|test|distribution))/[a-z0-9-_]+(?:/(?:(?:x|[0-9]+)\.(?:x|[0-9]+)\.(?:x|[0-9]+))(?:/[0-9]+)?)?$`
+Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?|third-party):(?:image-recipe|container-recipe|infrastructure-configuration|distribution-configuration|component|image|image-pipeline|lifecycle-policy|workflow\/(?:build|test|distribution))/[a-z0-9-_]+(?:/(?:(?:x|[0-9]+)\.(?:x|[0-9]+)\.(?:x|[0-9]+))(?:/[0-9]+)?)?$`
 Required: No
 
  ** containerType **   <a name="imagebuilder-Type-ContainerRecipeSummary-containerType"></a>
@@ -53,7 +53,7 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
  ** platform **   <a name="imagebuilder-Type-ContainerRecipeSummary-platform"></a>
-The system platform for the container, such as Windows or Linux.
+The system platform for the container. Container recipes support only the Linux and Windows platforms.
 Type: String
 Valid Values: `Windows | Linux | macOS`
 Required: No

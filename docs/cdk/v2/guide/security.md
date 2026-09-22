@@ -37,6 +37,8 @@ Any violation of this expectation can be reported [through the company-wide vuln
 
 You should not use CDK in an environment where untrusted authors write parts of the code that drives a CDK application, or where untrusted parties control inputs to CDK constructs without validation.
 
+Similarly, you should not deploy cloud assemblies from sources that you do not trust. Synthesizing a CDK app produces a cloud assembly (the `cdk.out` directory by default). It’s possible to deploy a previously synthesized cloud assembly from a different source; for example, `cdk deploy --app /downloaded/file/path/cdk.out`. Only deploy a cloud assembly that you produced yourself or that comes from a trusted source.
+
 ### Compliance verification is an external process
 <a name="_compliance_verification_is_an_external_process"></a>
 

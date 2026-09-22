@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-imagebuilder-containerrecipe-instanceconfiguration-properties"></a>
 
 `BlockDeviceMappings`  <a name="cfn-imagebuilder-containerrecipe-instanceconfiguration-blockdevicemappings"></a>
-Defines the block devices to attach for building an instance from this Image Builder AMI.
+Defines the block device mappings for the EC2 instance that Image Builder launches to build and test your container image.
 *Required*: No
 *Type*: Array of [InstanceBlockDeviceMapping](aws-properties-imagebuilder-containerrecipe-instanceblockdevicemapping.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

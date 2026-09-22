@@ -36,6 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[FilesystemConfigurations](#cfn-bedrockagentcore-runtime-filesystemconfigurations)" : {{[ FilesystemConfiguration, ... ]}},
       "[LifecycleConfiguration](#cfn-bedrockagentcore-runtime-lifecycleconfiguration)" : {{LifecycleConfiguration}},
       "[NetworkConfiguration](#cfn-bedrockagentcore-runtime-networkconfiguration)" : {{NetworkConfiguration}},
+      "[PlatformVersion](#cfn-bedrockagentcore-runtime-platformversion)" : {{String}},
       "[ProtocolConfiguration](#cfn-bedrockagentcore-runtime-protocolconfiguration)" : {{String}},
       "[RequestHeaderConfiguration](#cfn-bedrockagentcore-runtime-requestheaderconfiguration)" : {{RequestHeaderConfiguration}},
       "[RoleArn](#cfn-bedrockagentcore-runtime-rolearn)" : {{String}},
@@ -66,6 +67,7 @@ Properties:
     LifecycleConfiguration}}
   [NetworkConfiguration](#cfn-bedrockagentcore-runtime-networkconfiguration): {{
     NetworkConfiguration}}
+  [PlatformVersion](#cfn-bedrockagentcore-runtime-platformversion): {{String}}
   [ProtocolConfiguration](#cfn-bedrockagentcore-runtime-protocolconfiguration): {{String}}
   [RequestHeaderConfiguration](#cfn-bedrockagentcore-runtime-requestheaderconfiguration): {{
     RequestHeaderConfiguration}}
@@ -136,6 +138,15 @@ The lifecycle configuration for the AgentCore Runtime.
 The network configuration for the AgentCore Runtime.
 *Required*: No
 *Type*: [NetworkConfiguration](aws-properties-bedrockagentcore-runtime-networkconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`PlatformVersion`  <a name="cfn-bedrockagentcore-runtime-platformversion"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^[^\s]+$`
+*Minimum*: `1`
+*Maximum*: `128`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ProtocolConfiguration`  <a name="cfn-bedrockagentcore-runtime-protocolconfiguration"></a>

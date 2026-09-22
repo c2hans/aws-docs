@@ -5,13 +5,13 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Fas
 # FastLaunchConfiguration
 <a name="API_FastLaunchConfiguration"></a>
 
-Define and configure faster launching for output Windows AMIs.
+Defines and configures EC2 Fast Launch for output Windows AMIs.
 
 ## Contents
 <a name="API_FastLaunchConfiguration_Contents"></a>
 
  ** enabled **   <a name="imagebuilder-Type-FastLaunchConfiguration-enabled"></a>
-A Boolean that represents the current state of faster launching for the Windows AMI. Set to `true` to start using Windows faster launching, or `false` to stop using it.
+Specifies whether to enable Windows fast launch on the output AMI during distribution. A value of `false` means Image Builder takes no fast-launch action for this configuration.
 Type: Boolean
 Required: Yes
 
@@ -33,7 +33,7 @@ Valid Range: Minimum value of 1.
 Required: No
 
  ** snapshotConfiguration **   <a name="imagebuilder-Type-FastLaunchConfiguration-snapshotConfiguration"></a>
-Configuration settings for managing the number of snapshots that are created from pre-provisioned instances for the Windows AMI when faster launching is enabled.
+Configuration settings for managing the number of snapshots that are created from pre-provisioned instances for the Windows AMI when Windows fast launch is enabled.
 Type: [FastLaunchSnapshotConfiguration](API_FastLaunchSnapshotConfiguration.md) object
 Required: No
 

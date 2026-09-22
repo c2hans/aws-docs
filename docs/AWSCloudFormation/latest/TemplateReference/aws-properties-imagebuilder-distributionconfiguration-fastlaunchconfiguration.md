@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::ImageBuilder::DistributionConfiguration FastLaunchConfiguration
 <a name="aws-properties-imagebuilder-distributionconfiguration-fastlaunchconfiguration"></a>
 
-Define and configure faster launching for output Windows AMIs.
+Defines and configures EC2 Fast Launch for output Windows AMIs.
 
 ## Syntax
 <a name="aws-properties-imagebuilder-distributionconfiguration-fastlaunchconfiguration-syntax"></a>
@@ -51,7 +51,7 @@ The owner account ID for the fast-launch enabled Windows AMI.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Enabled`  <a name="cfn-imagebuilder-distributionconfiguration-fastlaunchconfiguration-enabled"></a>
-A Boolean that represents the current state of faster launching for the Windows AMI. Set to `true` to start using Windows faster launching, or `false` to stop using it.
+Specifies whether to enable Windows fast launch on the output AMI during distribution. A value of `false` means Image Builder takes no fast-launch action for this configuration.
 *Required*: No
 *Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -70,7 +70,7 @@ The maximum number of parallel instances that are launched for creating resource
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SnapshotConfiguration`  <a name="cfn-imagebuilder-distributionconfiguration-fastlaunchconfiguration-snapshotconfiguration"></a>
-Configuration settings for managing the number of snapshots that are created from pre-provisioned instances for the Windows AMI when faster launching is enabled.
+Configuration settings for managing the number of snapshots that are created from pre-provisioned instances for the Windows AMI when Windows fast launch is enabled.
 *Required*: No
 *Type*: [FastLaunchSnapshotConfiguration](aws-properties-imagebuilder-distributionconfiguration-fastlaunchsnapshotconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

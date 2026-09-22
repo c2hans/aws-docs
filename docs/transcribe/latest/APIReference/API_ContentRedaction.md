@@ -27,8 +27,8 @@ Required: Yes
  ** PiiEntityTypes **   <a name="transcribe-Type-ContentRedaction-PiiEntityTypes"></a>
 Specify which types of personally identifiable information (PII) you want to redact in your transcript. You can include as many types as you'd like, or you can select `ALL`. If you do not include `PiiEntityTypes` in your request, all PII is redacted.
 Type: Array of strings
-Array Members: Minimum number of 0 items. Maximum number of 11 items.
-Valid Values: `BANK_ACCOUNT_NUMBER | BANK_ROUTING | CREDIT_DEBIT_NUMBER | CREDIT_DEBIT_CVV | CREDIT_DEBIT_EXPIRY | PIN | EMAIL | ADDRESS | NAME | PHONE | SSN | ALL`
+Array Members: Minimum number of 0 items. Maximum number of 29 items.
+Valid Values: `BANK_ACCOUNT_NUMBER | BANK_ROUTING | CREDIT_DEBIT_NUMBER | CREDIT_DEBIT_CVV | CREDIT_DEBIT_EXPIRY | PIN | EMAIL | ADDRESS | NAME | PHONE | SSN | DATE_TIME | PASSPORT_NUMBER | DRIVER_ID | URL | AGE | USERNAME | PASSWORD | AWS_ACCESS_KEY | AWS_SECRET_KEY | IP_ADDRESS | MAC_ADDRESS | LICENSE_PLATE | VEHICLE_IDENTIFICATION_NUMBER | US_INDIVIDUAL_TAX_IDENTIFICATION_NUMBER | CA_HEALTH_NUMBER | CA_SOCIAL_INSURANCE_NUMBER | INTERNATIONAL_BANK_ACCOUNT_NUMBER | SWIFT_CODE | ALL`
 Required: No
 
 ## See Also

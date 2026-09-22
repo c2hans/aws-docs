@@ -13,7 +13,7 @@ An image summary.
  ** arn **   <a name="imagebuilder-Type-ImageSummary-arn"></a>
 The Amazon Resource Name (ARN) of the image.
 Type: String
-Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):(?:image-recipe|container-recipe|infrastructure-configuration|distribution-configuration|component|image|image-pipeline|lifecycle-policy|workflow\/(?:build|test|distribution))/[a-z0-9-_]+(?:/(?:(?:x|[0-9]+)\.(?:x|[0-9]+)\.(?:x|[0-9]+))(?:/[0-9]+)?)?$`
+Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?|third-party):(?:image-recipe|container-recipe|infrastructure-configuration|distribution-configuration|component|image|image-pipeline|lifecycle-policy|workflow\/(?:build|test|distribution))/[a-z0-9-_]+(?:/(?:(?:x|[0-9]+)\.(?:x|[0-9]+)\.(?:x|[0-9]+))(?:/[0-9]+)?)?$`
 Required: No
 
  ** buildType **   <a name="imagebuilder-Type-ImageSummary-buildType"></a>
@@ -105,7 +105,7 @@ Required: No
  ** version **   <a name="imagebuilder-Type-ImageSummary-version"></a>
 The version of the image.
 Type: String
-Pattern: `^[0-9]+\.[0-9]+\.[0-9]+$`
+Pattern: `^[0-9]+\.[0-9]+\.[0-9]+(?:/[0-9]+)?$`
 Required: No
 
 ## See Also

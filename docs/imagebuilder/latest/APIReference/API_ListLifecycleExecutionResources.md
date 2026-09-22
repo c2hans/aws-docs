@@ -51,8 +51,7 @@ Length Constraints: Minimum length of 1. Maximum length of 65535.
 Required: No
 
  ** [parentResourceId](#API_ListLifecycleExecutionResources_RequestSyntax) **   <a name="imagebuilder-ListLifecycleExecutionResources-request-parentResourceId"></a>
-You can leave this empty to get a list of Image Builder resources that were identified for lifecycle actions.
-To get a list of associated resources that are impacted for an individual resource (the parent), specify its Amazon Resource Name (ARN). Associated resources are produced from your image and distributed when you run a build, such as AMIs or container images stored in ECR repositories.
+The Amazon Resource Name (ARN) of an image build version to get the output resources for, such as AMIs or container images in Amazon ECR. You can get this value from the `resourceId` in the top-level response. If you leave this property empty, the response lists the Image Builder resources that the lifecycle execution identified for lifecycle actions. If the image build version that you specify in `parentResourceId` wasn't part of this lifecycle execution, the response contains an empty list.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
@@ -109,7 +108,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [lifecycleExecutionId](#API_ListLifecycleExecutionResources_ResponseSyntax) **   <a name="imagebuilder-ListLifecycleExecutionResources-response-lifecycleExecutionId"></a>
-Runtime details for the specified runtime instance of the lifecycle policy.
+The unique identifier for the runtime instance of the lifecycle policy.
 Type: String
 Pattern: `^lce-[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$`
 
@@ -132,11 +131,11 @@ Type: Array of [LifecycleExecutionResource](API_LifecycleExecutionResource.md) o
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** ForbiddenException **
@@ -148,16 +147,52 @@ You have provided an invalid pagination token in your request.
 HTTP Status Code: 400
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_ListLifecycleExecutionResources_Examples"></a>
+
+### List the resources that a lifecycle execution acted on
+<a name="API_ListLifecycleExecutionResources_Example_1"></a>
+
+The following example lists the resources that the specified lifecycle execution acted on. For a scheduled resource state update that hasn't started to apply changes yet, the resources list is empty.
+
+#### Sample Request
+<a name="API_ListLifecycleExecutionResources_Example_1_Request"></a>
+
+```
+POST /ListLifecycleExecutionResources HTTP/1.1
+Content-type: application/json
+
+{
+    "lifecycleExecutionId": "lce-401aefc3-a829-46f6-8fc2-91497988a503"
+}
+```
+
+#### Sample Response
+<a name="API_ListLifecycleExecutionResources_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "resources": [],
+    "lifecycleExecutionId": "lce-401aefc3-a829-46f6-8fc2-91497988a503",
+    "lifecycleExecutionState": {
+        "status": "IN_PROGRESS"
+    }
+}
+```
 
 ## See Also
 <a name="API_ListLifecycleExecutionResources_SeeAlso"></a>

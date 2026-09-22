@@ -11,7 +11,7 @@ Defines criteria to exclude AMIs from lifecycle actions based on the last time t
 <a name="API_LifecyclePolicyDetailExclusionRulesAmisLastLaunched_Contents"></a>
 
  ** unit **   <a name="imagebuilder-Type-LifecyclePolicyDetailExclusionRulesAmisLastLaunched-unit"></a>
-Defines the unit of time that the lifecycle policy uses to calculate elapsed time since the last instance launched from the AMI. For example: days, weeks, months, or years.
+Defines the unit of time that the lifecycle policy uses to calculate elapsed time since the last launch.
 Type: String
 Valid Values: `DAYS | WEEKS | MONTHS | YEARS`
 Required: Yes

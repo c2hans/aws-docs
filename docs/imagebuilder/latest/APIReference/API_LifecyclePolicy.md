@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lif
 # LifecyclePolicy
 <a name="API_LifecyclePolicy"></a>
 
-The configuration details for a lifecycle policy resource.
+Defines a lifecycle policy resource: its identity, status, execution role, resource type, rules, resource selection, timestamps, and tags.
 
 ## Contents
 <a name="API_LifecyclePolicy_Contents"></a>
@@ -52,7 +52,7 @@ Pattern: `^[-_A-Za-z-0-9][-_A-Za-z0-9 ]{1,126}[-_A-Za-z-0-9]$`
 Required: No
 
  ** policyDetails **   <a name="imagebuilder-Type-LifecyclePolicy-policyDetails"></a>
-The configuration details for a lifecycle policy resource.
+The list of rules for the lifecycle policy. Each rule pairs an action with a filter and optional exclusion rules. A policy can contain at most one rule per action type.
 Type: Array of [LifecyclePolicyDetail](API_LifecyclePolicyDetail.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 3 items.
 Required: No
@@ -69,7 +69,7 @@ Valid Values: `AMI_IMAGE | CONTAINER_IMAGE`
 Required: No
 
  ** status **   <a name="imagebuilder-Type-LifecyclePolicy-status"></a>
-Indicates whether the lifecycle policy resource is enabled.
+Indicates whether the lifecycle policy resource is enabled. Only enabled policies run on their schedule. Disabling or deleting a policy removes its schedule and cancels any in-flight lifecycle execution.
 Type: String
 Valid Values: `DISABLED | ENABLED`
 Required: No

@@ -16,6 +16,7 @@ The following data types are supported by Amazon Transcribe Service:
 +  [ChannelDefinition](API_ChannelDefinition.md)
 +  [ClinicalNoteGenerationSettings](API_ClinicalNoteGenerationSettings.md)
 +  [ContentRedaction](API_ContentRedaction.md)
++  [EncryptionConfiguration](API_EncryptionConfiguration.md)
 +  [InputDataConfig](API_InputDataConfig.md)
 +  [InterruptionFilter](API_InterruptionFilter.md)
 +  [JobExecutionSettings](API_JobExecutionSettings.md)

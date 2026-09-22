@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lis
 # ListImageScanFindings
 <a name="API_ListImageScanFindings"></a>
 
-Returns a list of image scan findings for your account.
+Returns a list of image scan findings for your account. Amazon Inspector generates the findings when it scans images that have scanning enabled.
 
 ## Request Syntax
 <a name="API_ListImageScanFindings_RequestSyntax"></a>
@@ -38,10 +38,10 @@ The request accepts the following data in JSON format.
 
  ** [filters](#API_ListImageScanFindings_RequestSyntax) **   <a name="imagebuilder-ListImageScanFindings-request-filters"></a>
 An array of name value pairs that you can use to filter your results. You can use the following filters to streamline results:
-+  `imageBuildVersionArn`
-+  `imagePipelineArn`
-+  `vulnerabilityId`
-+  `severity`
++  `imageBuildVersionArn` – Filters findings by the image build version that was scanned.
++  `imagePipelineArn` – Filters findings by the pipeline that created the scanned image.
++  `vulnerabilityId` – Filters findings by vulnerability ID, for example a CVE ID.
++  `severity` – Filters findings by severity level.
 If you don't request a filter, then all findings in your account are listed.
 Type: Array of [ImageScanFindingsFilter](API_ImageScanFindingsFilter.md) objects
 Array Members: Fixed number of 1 item.
@@ -168,11 +168,11 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** ForbiddenException **
@@ -184,16 +184,121 @@ You have provided an invalid pagination token in your request.
 HTTP Status Code: 400
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_ListImageScanFindings_Examples"></a>
+
+### List vulnerability findings for an image build
+<a name="API_ListImageScanFindings_Example_1"></a>
+
+The following example lists the vulnerability findings that Amazon Inspector detected for the specified image build version.
+
+#### Sample Request
+<a name="API_ListImageScanFindings_Example_1_Request"></a>
+
+```
+POST /ListImageScanFindings HTTP/1.1
+Content-type: application/json
+
+{
+    "filters": [
+        {
+            "name": "imageBuildVersionArn",
+            "values": [
+                "arn:aws:imagebuilder:us-west-2:111122223333:image/my-example-recipe/1.0.0/1"
+            ]
+        }
+    ]
+}
+```
+
+#### Sample Response
+<a name="API_ListImageScanFindings_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "requestId": "233de8e7-3b58-4319-a6af-f6774cf7d371",
+    "findings": [
+        {
+            "awsAccountId": "111122223333",
+            "imageBuildVersionArn": "arn:aws:imagebuilder:us-west-2:111122223333:image/my-example-recipe/1.0.0/1",
+            "imagePipelineArn": "arn:aws:imagebuilder:us-west-2:111122223333:image-pipeline/my-example-pipeline",
+            "type": "PACKAGE_VULNERABILITY",
+            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nvirtio: break and reset virtio devices on device_shutdown()",
+            "title": "CVE-2025-38064 - kernel",
+            "remediation": {
+                "recommendation": {
+                    "text": "None Provided"
+                }
+            },
+            "severity": "HIGH",
+            "firstObservedAt": 1767730377.0,
+            "updatedAt": 1767730377.0,
+            "inspectorScore": 7.0,
+            "inspectorScoreDetails": {
+                "adjustedCvss": {
+                    "scoreSource": "AMAZON_CVE",
+                    "cvssSource": "AMAZON_CVE",
+                    "version": "3.1",
+                    "score": 7.0,
+                    "scoringVector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                    "adjustments": []
+                }
+            },
+            "packageVulnerabilityDetails": {
+                "vulnerabilityId": "CVE-2025-38064",
+                "vulnerablePackages": [
+                    {
+                        "name": "kernel",
+                        "version": "4.14.355",
+                        "epoch": 0,
+                        "release": "280.652.amzn2",
+                        "arch": "X86_64",
+                        "packageManager": "OS",
+                        "fixedInVersion": "0:5.15.189-131.202.amzn2",
+                        "remediation": "yum update kernel"
+                    }
+                ],
+                "source": "AMAZON_CVE",
+                "cvss": [
+                    {
+                        "baseScore": 7.0,
+                        "scoringVector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                        "version": "3.1",
+                        "source": "AMAZON_CVE"
+                    }
+                ],
+                "relatedVulnerabilities": [
+                    "ALAS2-2025-2955",
+                    "ALAS2023-2025-1130"
+                ],
+                "sourceUrl": "https://alas.aws.amazon.com/cve/json/v1/CVE-2025-38064.json",
+                "vendorSeverity": "Important",
+                "vendorCreatedAt": 1750204800.0,
+                "vendorUpdatedAt": 1750809600.0,
+                "referenceUrls": [
+                    "https://alas.aws.amazon.com/AL2/ALAS2-2025-2955.html",
+                    "https://alas.aws.amazon.com/AL2023/ALAS2023-2025-1130.html"
+                ]
+            },
+            "fixAvailable": "YES"
+        }
+    ]
+}
+```
 
 ## See Also
 <a name="API_ListImageScanFindings_SeeAlso"></a>

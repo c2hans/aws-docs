@@ -5,13 +5,13 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lif
 # LifecycleExecutionResourcesImpactedSummary
 <a name="API_LifecycleExecutionResourcesImpactedSummary"></a>
 
-Contains details for an image resource that was identified for a lifecycle action.
+Contains an indicator that shows whether the lifecycle execution identified any resources to take lifecycle actions on.
 
 ## Contents
 <a name="API_LifecycleExecutionResourcesImpactedSummary_Contents"></a>
 
  ** hasImpactedResources **   <a name="imagebuilder-Type-LifecycleExecutionResourcesImpactedSummary-hasImpactedResources"></a>
-Indicates whether an image resource that was identified for a lifecycle action has associated resources that are also impacted.
+Indicates whether the lifecycle execution identified any resources to take lifecycle actions on.
 Type: Boolean
 Required: No
 

@@ -83,6 +83,7 @@ Content-type: application/json
       "string" : "string"
    },
    "status": "string",
+   "type": "string",
    "updatedAt": number,
    "updatedBy": "string"
 }
@@ -180,6 +181,11 @@ Value Length Constraints: Minimum length of 0. Maximum length of 1024.
 The status of the notebook.
 Type: String
 Valid Values: `ACTIVE | ARCHIVED | SYNC_IN_PROGRESS | SYNC_FAILED`
+
+ ** [type](#API_GetNotebook_ResponseSyntax) **   <a name="datazone-GetNotebook-response-type"></a>
+The type of the notebook.
+Type: String
+Valid Values: `DATA | SQL | QUERYBOOK`
 
  ** [updatedAt](#API_GetNotebook_ResponseSyntax) **   <a name="datazone-GetNotebook-response-updatedAt"></a>
 The timestamp of when the notebook was last updated.

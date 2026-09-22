@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/canary-deployments-for-queue-p
 title: 'Guidance for Canary Deployments for Queue Processing Workloads in Amazon ECS'
 canonical_url: https://docs.aws.amazon.com/solutions/canary-deployments-for-queue-processing-workloads-in-amazon-ecs/
 source: aws-documentation
-generated_on: 2026-09-18
+generated_on: 2026-09-22
 ---
 
 # Guidance for Canary Deployments for Queue Processing Workloads in Amazon ECS

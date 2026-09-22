@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Can
 # CancelImageCreation
 <a name="API_CancelImageCreation"></a>
 
-Cancels the creation of an image. This operation can only be used on images in a non-terminal state.
+Cancels the creation of an image. This operation can only be used on images in a non-terminal state. Cancellation is asynchronous: the request returns immediately, then Image Builder stops the running build and moves the image to the `CANCELLED` state. Output resources that the build already created, such as AMIs and snapshots, aren't removed.
 
 ## Request Syntax
 <a name="API_CancelImageCreation_RequestSyntax"></a>
@@ -31,7 +31,7 @@ The request does not use any URI parameters.
 The request accepts the following data in JSON format.
 
  ** [clientToken](#API_CancelImageCreation_RequestSyntax) **   <a name="imagebuilder-CancelImageCreation-request-clientToken"></a>
-A unique, case-sensitive identifier you provide to ensure that the operation completes no more than one time. If this token matches a previous request, the service ignores the request, but does not return an error. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
+A unique, case-sensitive identifier you provide to ensure that the operation runs no more than one time. If you retry a request with the same client token, Image Builder returns the original response without running the operation again. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: Yes
@@ -84,11 +84,11 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** ForbiddenException **
@@ -100,7 +100,7 @@ You have specified a client token for an operation using parameter values that d
 HTTP Status Code: 400
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** ResourceInUseException **
@@ -108,12 +108,47 @@ The resource that you are trying to operate on is currently in use. Review the m
 HTTP Status Code: 400
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_CancelImageCreation_Examples"></a>
+
+### Cancel an image build
+<a name="API_CancelImageCreation_Example_1"></a>
+
+The following example cancels a build that is in progress for the specified image build version.
+
+#### Sample Request
+<a name="API_CancelImageCreation_Example_1_Request"></a>
+
+```
+PUT /CancelImageCreation HTTP/1.1
+Content-type: application/json
+
+{
+    "imageBuildVersionArn": "arn:aws:imagebuilder:us-west-2:111122223333:image/my-example-recipe/1.0.0/1",
+    "clientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE77777"
+}
+```
+
+#### Sample Response
+<a name="API_CancelImageCreation_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "requestId": "fead325f-72d9-42b5-b2ed-c5294984c6a9",
+    "clientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE77777",
+    "imageBuildVersionArn": "arn:aws:imagebuilder:us-west-2:111122223333:image/my-example-recipe/1.0.0/1"
+}
+```
 
 ## See Also
 <a name="API_CancelImageCreation_SeeAlso"></a>

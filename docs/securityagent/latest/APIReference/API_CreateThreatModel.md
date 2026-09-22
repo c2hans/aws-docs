@@ -56,6 +56,11 @@ Content-type: application/json
          {
             "s3Location": "{{string}}"
          }
+      ],
+      "trustedCaCertificates": [
+         {
+            "source": { ... }
+         }
       ]
    },
    "description": "{{string}}",
@@ -182,6 +187,11 @@ Content-type: application/json
       "sourceCode": [
          {
             "s3Location": "string"
+         }
+      ],
+      "trustedCaCertificates": [
+         {
+            "source": { ... }
          }
       ]
    },

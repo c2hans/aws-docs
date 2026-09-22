@@ -8,6 +8,8 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Imp
 Imports a Windows operating system image from a verified Microsoft ISO disk file. The following disk images are supported:
 + Windows 11 Enterprise
 
+The response returns as soon as Image Builder creates the new image resource in the `PENDING` state. The conversion from ISO file to AMI then runs asynchronously on an EC2 instance that Image Builder launches with the specified infrastructure configuration.
+
 ## Request Syntax
 <a name="API_ImportDiskImage_RequestSyntax"></a>
 
@@ -52,7 +54,7 @@ The request does not use any URI parameters.
 The request accepts the following data in JSON format.
 
  ** [clientToken](#API_ImportDiskImage_RequestSyntax) **   <a name="imagebuilder-ImportDiskImage-request-clientToken"></a>
-A unique, case-sensitive identifier you provide to ensure that the operation completes no more than one time. If this token matches a previous request, the service ignores the request, but does not return an error. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
+A unique, case-sensitive identifier you provide to ensure that the operation runs no more than one time. If you retry a request with the same client token, Image Builder returns the original response without running the operation again. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: Yes
@@ -64,7 +66,7 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
  ** [executionRole](#API_ImportDiskImage_RequestSyntax) **   <a name="imagebuilder-ImportDiskImage-request-executionRole"></a>
-The name or Amazon Resource Name (ARN) for the IAM role you create that grants Image Builder access to perform workflow actions to import an image from a Microsoft ISO file.
+The name or Amazon Resource Name (ARN) for the IAM role you create that grants Image Builder access to perform workflow actions to import an image from a Microsoft ISO file. If you don't provide a role, Image Builder uses the Image Builder service-linked role in your account, and creates it if it doesn't exist.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `^(?:arn:aws(?:-[a-z]+)*:iam::[0-9]{12}:role/)?[a-zA-Z_0-9+=,.@\-_/]+$`
@@ -77,18 +79,18 @@ Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws):infrastructure-conf
 Required: Yes
 
  ** [loggingConfiguration](#API_ImportDiskImage_RequestSyntax) **   <a name="imagebuilder-ImportDiskImage-request-loggingConfiguration"></a>
-The logging configuration for the image build process.
+The CloudWatch Logs log group where Image Builder sends the import logs. If you specify a log group name outside of the `/aws/imagebuilder/` namespace, you must also provide an `executionRole` that has permission to write to that log group.
 Type: [ImageLoggingConfiguration](API_ImageLoggingConfiguration.md) object
 Required: No
 
  ** [name](#API_ImportDiskImage_RequestSyntax) **   <a name="imagebuilder-ImportDiskImage-request-name"></a>
-The name of the image resource that's created from the import.
+The name of the image resource that's created from the import. Image Builder generates the image ARN from a normalized form of the name, so names that differ only in case, spaces, or underscores count as the same name. If an image with the same name and semantic version already exists in your account in the same AWS Region, the import creates a new build version for it.
 Type: String
 Pattern: `^[-_A-Za-z-0-9][-_A-Za-z0-9 ]{1,126}[-_A-Za-z-0-9]$`
 Required: Yes
 
  ** [osVersion](#API_ImportDiskImage_RequestSyntax) **   <a name="imagebuilder-ImportDiskImage-request-osVersion"></a>
-The operating system version for the imported image. Allowed values include the following: `Microsoft Windows 11`.
+The operating system version for the imported image. The only supported value is `Microsoft Windows 11`.
 Type: String
 Length Constraints: Minimum length of 1.
 Required: Yes
@@ -120,7 +122,7 @@ Value Length Constraints: Maximum length of 256.
 Required: No
 
  ** [uri](#API_ImportDiskImage_RequestSyntax) **   <a name="imagebuilder-ImportDiskImage-request-uri"></a>
-The `uri` of the ISO disk file that's stored in Amazon S3.
+The `uri` of the ISO disk file that's stored in Amazon S3, in `s3://bucket/key` format. The key must end with the `.iso`, `.ISO`, or `.Iso` extension, and the bucket must be owned by the account that makes the request.
 Type: String
 Required: Yes
 
@@ -155,7 +157,7 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 
  ** [imageBuildVersionArn](#API_ImportDiskImage_ResponseSyntax) **   <a name="imagebuilder-ImportDiskImage-response-imageBuildVersionArn"></a>
-The Amazon Resource Name (ARN) of the output AMI that was created from the ISO disk file.
+The Amazon Resource Name (ARN) of the Image Builder image resource that this request created. The AMI doesn't exist yet when the response returns. The import runs asynchronously, and the output AMI appears in the image's output resources when the import completes.
 Type: String
 Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):image/[a-z0-9-_]+/[0-9]+\.[0-9]+\.[0-9]+/[0-9]+$`
 
@@ -169,11 +171,11 @@ You do not have permissions to perform the requested operation.
 HTTP Status Code: 403
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceUnavailableException **
@@ -183,6 +185,45 @@ HTTP Status Code: 503
  ** TooManyRequestsException **
 You have attempted too many requests for the specific operation.
 HTTP Status Code: 429
+
+## Examples
+<a name="API_ImportDiskImage_Examples"></a>
+
+### Import a Windows 11 ISO disk image
+<a name="API_ImportDiskImage_Example_1"></a>
+
+The following example starts an image build that converts a Windows 11 ISO disk file stored in Amazon S3 into an AMI; the imageBuildVersionArn in the response identifies the Image Builder image resource that tracks the build, not the output AMI.
+
+#### Sample Request
+<a name="API_ImportDiskImage_Example_1_Request"></a>
+
+```
+PUT /ImportDiskImage HTTP/1.1
+Content-type: application/json
+
+{
+    "name": "my-example-imported-image",
+    "semanticVersion": "1.0.0",
+    "platform": "Windows",
+    "osVersion": "Microsoft Windows 11",
+    "uri": "s3://amzn-s3-demo-bucket/Win11_23H2_English_x64.iso",
+    "infrastructureConfigurationArn": "arn:aws:imagebuilder:us-west-2:111122223333:infrastructure-configuration/my-example-infrastructure",
+    "clientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE12345"
+}
+```
+
+#### Sample Response
+<a name="API_ImportDiskImage_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "clientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE12345",
+    "imageBuildVersionArn": "arn:aws:imagebuilder:us-west-2:111122223333:image/my-example-imported-image/1.0.0/1"
+}
+```
 
 ## See Also
 <a name="API_ImportDiskImage_SeeAlso"></a>

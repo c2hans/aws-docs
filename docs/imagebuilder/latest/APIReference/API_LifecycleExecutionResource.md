@@ -58,7 +58,7 @@ Type: Timestamp
 Required: No
 
  ** state **   <a name="imagebuilder-Type-LifecycleExecutionResource-state"></a>
-The runtime state for the lifecycle execution.
+The runtime state of the lifecycle action for this resource.
 Type: [LifecycleExecutionResourceState](API_LifecycleExecutionResourceState.md) object
 Required: No
 

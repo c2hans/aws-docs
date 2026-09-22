@@ -16,6 +16,7 @@ The following data types are supported:
 +  [AssociateResourceError](API_AssociateResourceError.md)
 +  [AssociateResourceResponseElement](API_AssociateResourceResponseElement.md)
 +  [Attribute](API_Attribute.md)
++  [AutoTransferBillingGroupCreationPreference](API_AutoTransferBillingGroupCreationPreference.md)
 +  [BillingGroupCostReportElement](API_BillingGroupCostReportElement.md)
 +  [BillingGroupCostReportResultElement](API_BillingGroupCostReportResultElement.md)
 +  [BillingGroupListElement](API_BillingGroupListElement.md)

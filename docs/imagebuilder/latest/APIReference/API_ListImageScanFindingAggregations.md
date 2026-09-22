@@ -8,7 +8,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lis
 Returns a list of image scan aggregations for your account. You can filter by the type of key that Image Builder uses to group results. For example, if you want to get a list of findings by severity level for one of your pipelines, you might specify your pipeline with the `imagePipelineArn` filter. If you don't specify a filter, Image Builder returns an aggregation for your account.
 
 To streamline results, you can use the following filters in your request:
-+  `accountId`
 +  `imageBuildVersionArn`
 +  `imagePipelineArn`
 +  `vulnerabilityId`
@@ -40,7 +39,11 @@ The request does not use any URI parameters.
 The request accepts the following data in JSON format.
 
  ** [filter](#API_ListImageScanFindingAggregations_RequestSyntax) **   <a name="imagebuilder-ListImageScanFindingAggregations-request-filter"></a>
-A filter name and value pair that is used to return a more specific list of results from a list operation. Filters can be used to match a set of resources by specific criteria, such as tags, attributes, or IDs.
+A filter name and value pair that determines the type of aggregation that Image Builder returns. Use one of the following filter names:
++  `imageBuildVersionArn`
++  `imagePipelineArn`
++  `vulnerabilityId`
+If you don't specify a filter, Image Builder returns an aggregation for your account.
 Type: [Filter](API_Filter.md) object
 Required: No
 
@@ -143,11 +146,11 @@ Type: Array of [ImageScanFindingAggregation](API_ImageScanFindingAggregation.md)
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** ForbiddenException **
@@ -159,16 +162,67 @@ You have provided an invalid pagination token in your request.
 HTTP Status Code: 400
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_ListImageScanFindingAggregations_Examples"></a>
+
+### List image scan finding aggregations for an image pipeline
+<a name="API_ListImageScanFindingAggregations_Example_1"></a>
+
+The following example aggregates vulnerability findings for images that the specified pipeline created, with counts grouped by severity level.
+
+#### Sample Request
+<a name="API_ListImageScanFindingAggregations_Example_1_Request"></a>
+
+```
+POST /ListImageScanFindingAggregations HTTP/1.1
+Content-type: application/json
+
+{
+    "filter": {
+        "name": "imagePipelineArn",
+        "values": [
+            "arn:aws:imagebuilder:us-west-2:111122223333:image-pipeline/my-example-pipeline"
+        ]
+    }
+}
+```
+
+#### Sample Response
+<a name="API_ListImageScanFindingAggregations_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "requestId": "b1c9dd23-7a9c-4a52-a1f7-3b8e9e17b2c4",
+    "aggregationType": "imagePipelineArn",
+    "responses": [
+        {
+            "imagePipelineAggregation": {
+                "imagePipelineArn": "arn:aws:imagebuilder:us-west-2:111122223333:image-pipeline/my-example-pipeline",
+                "severityCounts": {
+                    "all": 25,
+                    "critical": 1,
+                    "high": 7,
+                    "medium": 12
+                }
+            }
+        }
+    ]
+}
+```
 
 ## See Also
 <a name="API_ListImageScanFindingAggregations_SeeAlso"></a>

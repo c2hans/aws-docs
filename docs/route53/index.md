@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/route53/index.html
 title: 'Amazon Route 53 Documentation'
 canonical_url: https://docs.aws.amazon.com/route53/
 source: aws-documentation
-generated_on: 2026-09-18
+generated_on: 2026-09-22
 ---
 
 # Amazon Route 53 Documentation

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lif
 # LifecyclePolicyDetail
 <a name="API_LifecyclePolicyDetail"></a>
 
-The configuration details for a lifecycle policy resource.
+Defines one lifecycle policy rule: the action to take, the filter that determines which resources the rule applies to, and optional exclusion rules.
 
 ## Contents
 <a name="API_LifecyclePolicyDetail_Contents"></a>

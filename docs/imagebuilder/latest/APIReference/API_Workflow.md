@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Wor
 # Workflow
 <a name="API_Workflow"></a>
 
-Defines a process that Image Builder uses to build and test images during the image creation process.
+Defines a process that Image Builder runs during the build, test, or distribution stage of the image creation process.
 
 ## Contents
 <a name="API_Workflow_Contents"></a>
@@ -58,7 +58,7 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
  ** parameters **   <a name="imagebuilder-Type-Workflow-parameters"></a>
-An array of input parameters that that the image workflow uses to control actions or configure settings.
+An array of input parameters that the image workflow uses to control actions or configure settings.
 Type: Array of [WorkflowParameterDetail](API_WorkflowParameterDetail.md) objects
 Required: No
 
@@ -68,7 +68,7 @@ Type: [WorkflowState](API_WorkflowState.md) object
 Required: No
 
  ** tags **   <a name="imagebuilder-Type-Workflow-tags"></a>
-The tags that apply to the workflow resource
+The tags that apply to the workflow resource.
 Type: String to string map
 Map Entries: Maximum number of 50 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
@@ -77,7 +77,7 @@ Value Length Constraints: Maximum length of 256.
 Required: No
 
  ** type **   <a name="imagebuilder-Type-Workflow-type"></a>
-Specifies the image creation stage that the workflow applies to. Image Builder currently supports build and test workflows.
+The image creation stage that the workflow applies to.
 Type: String
 Valid Values: `BUILD | TEST | DISTRIBUTION`
 Required: No

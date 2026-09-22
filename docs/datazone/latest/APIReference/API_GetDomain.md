@@ -39,9 +39,18 @@ Content-type: application/json
 {
    "arn": "string",
    "createdAt": number,
+   "deleteProgress": {
+      "successfullyDeletedProjectCount": number
+   },
    "description": "string",
    "domainExecutionRole": "string",
    "domainVersion": "string",
+   "failureReasons": [
+      {
+         "id": "string",
+         "message": "string"
+      }
+   ],
    "id": "string",
    "kmsKeyIdentifier": "string",
    "lastUpdatedAt": number,
@@ -76,6 +85,10 @@ Type: String
 The timestamp of when the Amazon DataZone domain was created.
 Type: Timestamp
 
+ ** [deleteProgress](#API_GetDomain_ResponseSyntax) **   <a name="datazone-GetDomain-response-deleteProgress"></a>
+The progress of the current domain deletion, including the number of projects that Amazon DataZone successfully deleted.
+Type: [DeleteProgress](API_DeleteProgress.md) object
+
  ** [description](#API_GetDomain_ResponseSyntax) **   <a name="datazone-GetDomain-response-description"></a>
 The description of the Amazon DataZone domain.
 Type: String
@@ -89,6 +102,10 @@ Pattern: `arn:aws[^:]*:iam::\d{12}:role(/[a-zA-Z0-9+=,.@_-]+)*/[a-zA-Z0-9+=,.@_-
 The version of the domain.
 Type: String
 Valid Values: `V1 | V2`
+
+ ** [failureReasons](#API_GetDomain_ResponseSyntax) **   <a name="datazone-GetDomain-response-failureReasons"></a>
+The list of failure reasons for resources that Amazon DataZone could not delete during a cascade deletion of the domain.
+Type: Array of [FailureReason](API_FailureReason.md) objects
 
  ** [id](#API_GetDomain_ResponseSyntax) **   <a name="datazone-GetDomain-response-id"></a>
 The identifier of the specified Amazon DataZone domain.

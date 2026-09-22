@@ -46,6 +46,7 @@ The following actions are supported by Amazon Transcribe Service:
 +  [TagResource](API_TagResource.md)
 +  [UntagResource](API_UntagResource.md)
 +  [UpdateCallAnalyticsCategory](API_UpdateCallAnalyticsCategory.md)
++  [UpdateLanguageModel](API_UpdateLanguageModel.md)
 +  [UpdateMedicalVocabulary](API_UpdateMedicalVocabulary.md)
 +  [UpdateVocabulary](API_UpdateVocabulary.md)
 +  [UpdateVocabularyFilter](API_UpdateVocabularyFilter.md)

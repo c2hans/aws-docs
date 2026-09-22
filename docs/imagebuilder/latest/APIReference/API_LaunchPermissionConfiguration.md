@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lau
 # LaunchPermissionConfiguration
 <a name="API_LaunchPermissionConfiguration"></a>
 
-Describes the configuration for a launch permission. The launch permission modification request is sent to the [Amazon EC2 ModifyImageAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyImageAttribute.html) API on behalf of the user for each Region they have selected to distribute the AMI. To make an AMI public, set the launch permission authorized accounts to `all`. See the examples for making an AMI public at [Amazon EC2 ModifyImageAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyImageAttribute.html).
+Describes the configuration for a launch permission. The launch permission modification request is sent to the [Amazon EC2 ModifyImageAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyImageAttribute.html) API on behalf of the user for each Region they have selected to distribute the AMI. To make an AMI public, set `userGroups` to the value `all`. See the examples for making an AMI public at [Amazon EC2 ModifyImageAttribute](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyImageAttribute.html).
 
 ## Contents
 <a name="API_LaunchPermissionConfiguration_Contents"></a>
@@ -25,13 +25,13 @@ Pattern: `^arn:aws[^:]*:organizations::[0-9]{12}:organization/o-[a-z0-9]{10,32}$
 Required: No
 
  ** userGroups **   <a name="imagebuilder-Type-LaunchPermissionConfiguration-userGroups"></a>
-The name of the group.
+The name of the group that you want to grant launch permission to. The only supported value is `all`, which makes the distributed AMI public.
 Type: Array of strings
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
  ** userIds **   <a name="imagebuilder-Type-LaunchPermissionConfiguration-userIds"></a>
-The AWS account ID.
+The AWS account IDs to grant launch permission to. Each listed account can use the distributed AMI to launch instances.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 1536 items.
 Pattern: `^[0-9]{12}$`

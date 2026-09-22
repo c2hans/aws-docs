@@ -22,7 +22,7 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
  ** status **   <a name="imagebuilder-Type-ImageState-status"></a>
-The status of the image.
+The status of the image. A new image moves through build, test, and distribution statuses during creation, and ends in the `AVAILABLE`, `FAILED`, or `CANCELLED` state. The `DEPRECATED`, `DISABLED`, and `DELETED` statuses come from later resource management actions.
 Type: String
 Valid Values: `PENDING | CREATING | BUILDING | TESTING | DISTRIBUTING | INTEGRATING | AVAILABLE | CANCELLED | FAILED | DEPRECATED | DELETED | DISABLED`
 Required: No

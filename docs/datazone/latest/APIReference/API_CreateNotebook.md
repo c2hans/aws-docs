@@ -24,7 +24,8 @@ Content-type: application/json
    "owningProjectIdentifier": "{{string}}",
    "parameters": {
       "{{string}}" : "{{string}}"
-   }
+   },
+   "type": "{{string}}"
 }
 ```
 
@@ -84,6 +85,12 @@ Key Length Constraints: Minimum length of 0. Maximum length of 128.
 Value Length Constraints: Minimum length of 0. Maximum length of 1024.
 Required: No
 
+ ** [type](#API_CreateNotebook_RequestSyntax) **   <a name="datazone-CreateNotebook-request-type"></a>
+The type of the notebook.
+Type: String
+Valid Values: `DATA | SQL | QUERYBOOK`
+Required: No
+
 ## Response Syntax
 <a name="API_CreateNotebook_ResponseSyntax"></a>
 
@@ -133,6 +140,7 @@ Content-type: application/json
       "string" : "string"
    },
    "status": "string",
+   "type": "string",
    "updatedAt": number,
    "updatedBy": "string"
 }
@@ -230,6 +238,11 @@ Value Length Constraints: Minimum length of 0. Maximum length of 1024.
 The status of the notebook.
 Type: String
 Valid Values: `ACTIVE | ARCHIVED | SYNC_IN_PROGRESS | SYNC_FAILED`
+
+ ** [type](#API_CreateNotebook_ResponseSyntax) **   <a name="datazone-CreateNotebook-response-type"></a>
+The type of the notebook.
+Type: String
+Valid Values: `DATA | SQL | QUERYBOOK`
 
  ** [updatedAt](#API_CreateNotebook_ResponseSyntax) **   <a name="datazone-CreateNotebook-response-updatedAt"></a>
 The timestamp of when the notebook was last updated.

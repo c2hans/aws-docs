@@ -49,7 +49,7 @@ Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Required: No
 
  ** [imageVersionArn](#API_ListImageBuildVersions_RequestSyntax) **   <a name="imagebuilder-ListImageBuildVersions-request-imageVersionArn"></a>
-The Amazon Resource Name (ARN) of the image whose build versions you want to retrieve.
+The Amazon Resource Name (ARN) of the image version whose build versions you want to retrieve. The ARN must specify an exact version (`<major>.<minor>.<patch>`) - wildcards aren't allowed. This parameter is optional. If you don't specify it, Image Builder returns build versions for all of the images in your account.
 Type: String
 Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):image/[a-z0-9-_]+/[0-9]+\.[0-9]+\.[0-9]+$`
 Required: No
@@ -205,11 +205,11 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** ForbiddenException **
@@ -221,16 +221,75 @@ You have provided an invalid pagination token in your request.
 HTTP Status Code: 400
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_ListImageBuildVersions_Examples"></a>
+
+### List the build versions of an image
+<a name="API_ListImageBuildVersions_Example_1"></a>
+
+The following example lists the build versions that exist for version 1.0.0 of the specified image, with the output AMI that each build produced.
+
+#### Sample Request
+<a name="API_ListImageBuildVersions_Example_1_Request"></a>
+
+```
+POST /ListImageBuildVersions HTTP/1.1
+Content-type: application/json
+
+{
+    "imageVersionArn": "arn:aws:imagebuilder:us-west-2:111122223333:image/my-example-recipe/1.0.0"
+}
+```
+
+#### Sample Response
+<a name="API_ListImageBuildVersions_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "requestId": "b4808907-dcad-4951-ada5-dd151e93135a",
+    "imageSummaryList": [
+        {
+            "arn": "arn:aws:imagebuilder:us-west-2:111122223333:image/my-example-recipe/1.0.0/1",
+            "name": "my-example-recipe",
+            "type": "AMI",
+            "version": "1.0.0/1",
+            "platform": "Linux",
+            "osVersion": "Amazon Linux 2023",
+            "state": {
+                "status": "AVAILABLE"
+            },
+            "owner": "111122223333",
+            "dateCreated": "2026-09-09T19:12:18.677Z",
+            "outputResources": {
+                "amis": [
+                    {
+                        "region": "us-west-2",
+                        "image": "ami-1234567890abcdef0",
+                        "name": "my-example-recipe 2026-09-09T19-19-08.103311Z",
+                        "accountId": "111122223333"
+                    }
+                ]
+            },
+            "tags": {},
+            "buildType": "USER_INITIATED"
+        }
+    ]
+}
+```
 
 ## See Also
 <a name="API_ListImageBuildVersions_SeeAlso"></a>

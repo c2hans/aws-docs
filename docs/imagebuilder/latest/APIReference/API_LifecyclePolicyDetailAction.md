@@ -5,19 +5,19 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lif
 # LifecyclePolicyDetailAction
 <a name="API_LifecyclePolicyDetailAction"></a>
 
-Contains selection criteria for the lifecycle policy.
+Contains the action configuration for a lifecycle policy rule: the action to take, and which underlying resources the action extends to.
 
 ## Contents
 <a name="API_LifecyclePolicyDetailAction_Contents"></a>
 
  ** type **   <a name="imagebuilder-Type-LifecyclePolicyDetailAction-type"></a>
-Specifies the lifecycle action to take.
+Specifies the lifecycle action to take. `DELETE` deletes the image resource and, with `includeResources`, also removes distributed AMIs, snapshots, or container images. `DEPRECATE` and `DISABLE` set the corresponding status on the image resource and, if `includeResources.amis` is set, on its distributed AMIs.
 Type: String
 Valid Values: `DELETE | DEPRECATE | DISABLE`
 Required: Yes
 
  ** includeResources **   <a name="imagebuilder-Type-LifecyclePolicyDetailAction-includeResources"></a>
-Specifies the resources that the lifecycle policy applies to.
+Specifies which underlying resources the action extends to beyond the Image Builder image resource itself: distributed AMIs, their snapshots, or distributed container images. `DELETE` rules can include all three, `DEPRECATE` and `DISABLE` rules can include AMIs only, and you can only include snapshots together with AMIs.
 Type: [LifecyclePolicyDetailActionIncludeResources](API_LifecyclePolicyDetailActionIncludeResources.md) object
 Required: No
 

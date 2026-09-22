@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Del
 # DeleteComponent
 <a name="API_DeleteComponent"></a>
 
-Deletes a component build version.
+Deletes a component build version. The request fails with `ResourceDependencyException` if an image recipe or container recipe references this component version. It also fails if the component build version is shared with other accounts.
 
 ## Request Syntax
 <a name="API_DeleteComponent_RequestSyntax"></a>
@@ -21,7 +21,7 @@ The request uses the following URI parameters.
 
  ** [componentBuildVersionArn](#API_DeleteComponent_RequestSyntax) **   <a name="imagebuilder-DeleteComponent-request-uri-componentBuildVersionArn"></a>
 The Amazon Resource Name (ARN) of the component build version to delete.
-Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):component/[a-z0-9-_]+/[0-9]+\.[0-9]+\.[0-9]+/[0-9]+$`
+Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?|third-party):component/[a-z0-9-_]+/[0-9]+\.[0-9]+\.[0-9]+/[0-9]+$`
 Required: Yes
 
 ## Request Body
@@ -52,7 +52,7 @@ The following data is returned in JSON format by the service.
  ** [componentBuildVersionArn](#API_DeleteComponent_ResponseSyntax) **   <a name="imagebuilder-DeleteComponent-response-componentBuildVersionArn"></a>
 The Amazon Resource Name (ARN) of the component build version that this request deleted.
 Type: String
-Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):component/[a-z0-9-_]+/[0-9]+\.[0-9]+\.[0-9]+/[0-9]+$`
+Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?|third-party):component/[a-z0-9-_]+/[0-9]+\.[0-9]+\.[0-9]+/[0-9]+$`
 
  ** [requestId](#API_DeleteComponent_ResponseSyntax) **   <a name="imagebuilder-DeleteComponent-response-requestId"></a>
 The request ID that uniquely identifies this request.
@@ -65,11 +65,11 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** ForbiddenException **
@@ -77,7 +77,7 @@ You are not authorized to perform the requested operation.
 HTTP Status Code: 403
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** ResourceDependencyException **
@@ -85,12 +85,40 @@ You have attempted to mutate or delete a resource with a dependency that prohibi
 HTTP Status Code: 400
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_DeleteComponent_Examples"></a>
+
+### Delete a component build version
+<a name="API_DeleteComponent_Example_1"></a>
+
+The following example deletes the specified component build version.
+
+#### Sample Request
+<a name="API_DeleteComponent_Example_1_Request"></a>
+
+```
+DELETE /DeleteComponent?componentBuildVersionArn=arn%3Aaws%3Aimagebuilder%3Aus-west-2%3A111122223333%3Acomponent%2Fmy-example-component%2F1.0.0%2F1 HTTP/1.1
+```
+
+#### Sample Response
+<a name="API_DeleteComponent_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "requestId": "c75a1764-2ca3-4cb4-9ce9-6d49f87942b0",
+    "componentBuildVersionArn": "arn:aws:imagebuilder:us-west-2:111122223333:component/my-example-component/1.0.0/1"
+}
+```
 
 ## See Also
 <a name="API_DeleteComponent_SeeAlso"></a>

@@ -21,6 +21,12 @@ For more information, see [Custom language models](https://docs.aws.amazon.com/t
 ```
 {
    "BaseModelName": "{{string}}",
+   "EncryptionConfiguration": {
+      "KMSEncryptionContext": {
+         "{{string}}" : "{{string}}"
+      },
+      "KMSKey": "{{string}}"
+   },
    "InputDataConfig": {
       "DataAccessRoleArn": "{{string}}",
       "S3Uri": "{{string}}",
@@ -50,6 +56,11 @@ If the audio you want to transcribe has a sample rate of 16,000 Hz or greater, c
 Type: String
 Valid Values: `NarrowBand | WideBand`
 Required: Yes
+
+ ** [EncryptionConfiguration](#API_CreateLanguageModel_RequestSyntax) **   <a name="transcribe-CreateLanguageModel-request-EncryptionConfiguration"></a>
+Specifies the encryption configuration for your custom language model. Your model artifacts are encrypted with the specified AWS KMS key or with an AWS owned key if a key is not supplied.
+Type: [EncryptionConfiguration](API_EncryptionConfiguration.md) object
+Required: No
 
  ** [InputDataConfig](#API_CreateLanguageModel_RequestSyntax) **   <a name="transcribe-CreateLanguageModel-request-InputDataConfig"></a>
 Contains the Amazon S3 location of the training data you want to use to create a new custom language model, and permissions to access this location.

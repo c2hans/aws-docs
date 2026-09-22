@@ -117,7 +117,7 @@ The Amazon Resource Name (ARN) of the image recipe associated with this image pi
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ImageScanningConfiguration`  <a name="cfn-imagebuilder-imagepipeline-imagescanningconfiguration"></a>
-Contains settings for vulnerability scans.
+Contains settings for vulnerability scans that Amazon Inspector runs against the test instance during image creation.
 *Required*: No
 *Type*: [ImageScanningConfiguration](aws-properties-imagebuilder-imagepipeline-imagescanningconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -142,7 +142,7 @@ The Amazon Resource Name (ARN) of the infrastructure configuration associated wi
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `LoggingConfiguration`  <a name="cfn-imagebuilder-imagepipeline-loggingconfiguration"></a>
-Defines logging configuration for the output image.
+The CloudWatch Logs configuration for the pipeline: the log group for image build logs and the log group for pipeline execution logs.
 *Required*: No
 *Type*: [PipelineLoggingConfiguration](aws-properties-imagebuilder-imagepipeline-pipelineloggingconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -161,7 +161,7 @@ The schedule of the image pipeline.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Status`  <a name="cfn-imagebuilder-imagepipeline-status"></a>
-The status of the image pipeline.
+The status of the image pipeline. A disabled pipeline doesn't run on its schedule, but you can still start builds manually. Image Builder can also disable a pipeline automatically when consecutive scheduled builds fail.
 *Required*: No
 *Type*: String
 *Allowed values*: `DISABLED | ENABLED`

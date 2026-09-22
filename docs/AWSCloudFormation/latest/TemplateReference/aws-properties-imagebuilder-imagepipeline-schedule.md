@@ -52,13 +52,14 @@ The start condition configures when the pipeline should trigger a new image buil
 **Note**
 For semantic version syntax, see [CreateComponent](https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_CreateComponent.html).
 + `EXPRESSION_MATCH_ONLY` – This condition builds a new image every time the CRON expression matches the current time.
+If the recipe references its base image through an AWS Systems Manager Parameter Store parameter, a change in the parameter's value also counts as an available dependency update.
 *Required*: No
 *Type*: String
 *Allowed values*: `EXPRESSION_MATCH_ONLY | EXPRESSION_MATCH_AND_DEPENDENCY_UPDATES_AVAILABLE`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ScheduleExpression`  <a name="cfn-imagebuilder-imagepipeline-schedule-scheduleexpression"></a>
-The cron expression determines how often EC2 Image Builder evaluates your `pipelineExecutionStartCondition`.
+The expression determines how often EC2 Image Builder evaluates your `pipelineExecutionStartCondition`. You can specify a cron expression, or a rate expression such as `rate(1 day)`.
 For information on how to format a cron expression in Image Builder, see [Use cron expressions in EC2 Image Builder](https://docs.aws.amazon.com/imagebuilder/latest/userguide/image-builder-cron.html).
 *Required*: No
 *Type*: String
@@ -67,7 +68,7 @@ For information on how to format a cron expression in Image Builder, see [Use cr
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Timezone`  <a name="cfn-imagebuilder-imagepipeline-schedule-timezone"></a>
-The timezone that applies to the scheduling expression. For example, "Etc/UTC", "America/Los\_Angeles" in the [IANA timezone format](https://www.joda.org/joda-time/timezones.html). If not specified this defaults to UTC.
+The timezone that applies to the scheduling expression. Specify a value in [IANA timezone format](https://www.joda.org/joda-time/timezones.html), for example `Etc/UTC` or `America/Los_Angeles`. If not specified, this defaults to UTC.
 *Required*: No
 *Type*: String
 *Pattern*: `^[a-zA-Z0-9]{2,}(?:\/[a-zA-Z0-9\-_+]+)*$`

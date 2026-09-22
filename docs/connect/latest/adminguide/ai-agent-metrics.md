@@ -91,7 +91,7 @@ This metric measures the count of AI suggestions rated as helpful with a thumbs-
 + **Dashboard location:** AI Agent Performance Dashboard, AI Agent Response Helpful
 
 **Note**
-This metric is updated every 6 hours. This metric is available as part of Connect Customer AI.
+This metric is available as part of Connect Customer AI.
 
 ## AI Agent Response Not Helpful
 <a name="metric-ai-agent-response-not-helpful"></a>
@@ -103,7 +103,7 @@ This metric measures the count of AI suggestions rated as unhelpful with a thumb
 + **Dashboard location:** AI Agent Performance Dashboard, AI Agent Response Not Helpful
 
 **Note**
-This metric is updated every 6 hours. This metric is available as part of Connect Customer AI.
+This metric is available as part of Connect Customer AI.
 
 ## AI Handoffs
 <a name="metric-ai-handoffs"></a>
@@ -390,6 +390,7 @@ This metric measures the percentage of engaged proactive intents that were succe
 + **Metric type:** Percent
 + **Metric category:** AI Session
 + **GetMetricDataV2 API metric identifier:** `PROACTIVE_INTENT_RESPONSE_RATE`
++ **Dashboard location:** AI Agent Performance Dashboard, Proactive Intent Response Rate
 
 ## Average AI Agent Invocation Latency
 <a name="metric-avg-ai-agent-invocation-latency"></a>

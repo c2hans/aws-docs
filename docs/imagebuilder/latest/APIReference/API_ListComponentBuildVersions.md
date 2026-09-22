@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lis
 # ListComponentBuildVersions
 <a name="API_ListComponentBuildVersions"></a>
 
-Returns the list of component build versions for the specified component version Amazon Resource Name (ARN).
+Returns a list of component build versions for the specified component version ARN. You can only list build versions for components that your account owns. Deprecated build versions aren't included in the results.
 
 ## Request Syntax
 <a name="API_ListComponentBuildVersions_RequestSyntax"></a>
@@ -32,9 +32,9 @@ The request does not use any URI parameters.
 The request accepts the following data in JSON format.
 
  ** [componentVersionArn](#API_ListComponentBuildVersions_RequestSyntax) **   <a name="imagebuilder-ListComponentBuildVersions-request-componentVersionArn"></a>
-The component version Amazon Resource Name (ARN) whose versions you want to list.
+The component version ARN whose build versions you want to list. The ARN must specify an exact version, without a build number suffix. If you don't specify an ARN, Image Builder returns build versions for the components that your account owns.
 Type: String
-Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):component/[a-z0-9-_]+/[0-9]+\.[0-9]+\.[0-9]+$`
+Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?|third-party):component/[a-z0-9-_]+/[0-9]+\.[0-9]+\.[0-9]+$`
 Required: No
 
  ** [maxResults](#API_ListComponentBuildVersions_RequestSyntax) **   <a name="imagebuilder-ListComponentBuildVersions-request-maxResults"></a>
@@ -93,7 +93,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [componentSummaryList](#API_ListComponentBuildVersions_ResponseSyntax) **   <a name="imagebuilder-ListComponentBuildVersions-response-componentSummaryList"></a>
-The list of component summaries for the specified semantic version.
+The list of component summaries. Each summary represents one build version of the specified component version, or of the components that your account owns if you didn't specify an ARN. Deprecated build versions aren't included.
 Type: Array of [ComponentSummary](API_ComponentSummary.md) objects
 
  ** [nextToken](#API_ListComponentBuildVersions_ResponseSyntax) **   <a name="imagebuilder-ListComponentBuildVersions-response-nextToken"></a>
@@ -112,11 +112,11 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** ForbiddenException **
@@ -128,16 +128,90 @@ You have provided an invalid pagination token in your request.
 HTTP Status Code: 400
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_ListComponentBuildVersions_Examples"></a>
+
+### List the build versions of a component
+<a name="API_ListComponentBuildVersions_Example_1"></a>
+
+The following example lists the build versions that exist for version 1.0.0 of the specified component. The list returns the most recent build version first.
+
+#### Sample Request
+<a name="API_ListComponentBuildVersions_Example_1_Request"></a>
+
+```
+POST /ListComponentBuildVersions HTTP/1.1
+Content-type: application/json
+
+{
+    "componentVersionArn": "arn:aws:imagebuilder:us-west-2:111122223333:component/my-example-component/1.0.0"
+}
+```
+
+#### Sample Response
+<a name="API_ListComponentBuildVersions_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "componentSummaryList": [
+        {
+            "arn": "arn:aws:imagebuilder:us-west-2:111122223333:component/my-example-component/1.0.0/2",
+            "name": "my-example-component",
+            "version": "1.0.0",
+            "platform": "Linux",
+            "supportedOsVersions": [
+                "Amazon Linux 2023"
+            ],
+            "state": {
+                "status": "ACTIVE"
+            },
+            "type": "BUILD",
+            "owner": "111122223333",
+            "description": "Installs the latest version of my application",
+            "changeDescription": "Updated the install command to use dnf",
+            "dateCreated": "2026-09-09T18:35:23.098Z",
+            "tags": {
+                "Environment": "Production"
+            }
+        },
+        {
+            "arn": "arn:aws:imagebuilder:us-west-2:111122223333:component/my-example-component/1.0.0/1",
+            "name": "my-example-component",
+            "version": "1.0.0",
+            "platform": "Linux",
+            "supportedOsVersions": [
+                "Amazon Linux 2023"
+            ],
+            "state": {
+                "status": "ACTIVE"
+            },
+            "type": "BUILD",
+            "owner": "111122223333",
+            "description": "Installs the latest version of my application",
+            "changeDescription": "Initial version",
+            "dateCreated": "2026-09-09T18:35:20.731Z",
+            "tags": {
+                "Environment": "Production"
+            }
+        }
+    ],
+    "requestId": "1d8693f0-26e1-42d7-ba35-d95ace1ce7e0"
+}
+```
 
 ## See Also
 <a name="API_ListComponentBuildVersions_SeeAlso"></a>

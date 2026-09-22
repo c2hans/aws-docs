@@ -29,7 +29,7 @@ Pattern: `^[A-Za-z0-9][A-Za-z0-9-_+#]{0,99}$`
 Required: No
 
  ** retried **   <a name="imagebuilder-Type-WorkflowExecutionMetadata-retried"></a>
-Indicates retry status for this runtime instance of the workflow.
+Indicates whether a retry of the image build superseded this runtime instance of the workflow. When you retry a failed image build, Image Builder sets this flag to `true` on the original workflow executions that the retry re-ran.
 Type: Boolean
 Required: No
 
@@ -45,7 +45,7 @@ Valid Values: `PENDING | SKIPPED | RUNNING | COMPLETED | FAILED | ROLLBACK_IN_PR
 Required: No
 
  ** totalStepCount **   <a name="imagebuilder-Type-WorkflowExecutionMetadata-totalStepCount"></a>
-The total number of steps in the workflow. This should equal the sum of the step counts for steps that succeeded, were skipped, and failed.
+The total number of steps that the workflow document defines for this runtime instance of the workflow. Image Builder sets this count before any steps run. The sum of succeeded, skipped, and failed steps only reaches this total if every step finishes in one of those states.
 Type: Integer
 Required: No
 

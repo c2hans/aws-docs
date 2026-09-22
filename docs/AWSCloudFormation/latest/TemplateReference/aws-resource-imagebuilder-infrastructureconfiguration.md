@@ -80,13 +80,15 @@ The description of the infrastructure configuration.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `InstanceMetadataOptions`  <a name="cfn-imagebuilder-infrastructureconfiguration-instancemetadataoptions"></a>
-The instance metadata options that you can set for the HTTP requests that pipeline builds use to launch EC2 build and test instances.
+The instance metadata service (IMDS) settings that Image Builder applies to the EC2 build and test instances it launches during image creation. If you don't set these options, the EC2 launch defaults for the instance apply. For more information about instance metadata options, see one of the following links:
++ [Configure the instance metadata options](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-instance-metadata-options.html) in the * *Amazon EC2 User Guide* * for Linux instances.
++ [Configure the instance metadata options](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/configuring-instance-metadata-options.html) in the * *Amazon EC2 Windows Guide* * for Windows instances.
 *Required*: No
 *Type*: [InstanceMetadataOptions](aws-properties-imagebuilder-infrastructureconfiguration-instancemetadataoptions.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `InstanceProfileName`  <a name="cfn-imagebuilder-infrastructureconfiguration-instanceprofilename"></a>
-The instance profile to associate with the instance used to customize your Amazon EC2 AMI.
+The instance profile to associate with the instance used to customize your Amazon EC2 AMI. The instance profile must exist in your account.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[\w+=,.@-]+$`
@@ -95,7 +97,7 @@ The instance profile to associate with the instance used to customize your Amazo
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `InstanceTypes`  <a name="cfn-imagebuilder-infrastructureconfiguration-instancetypes"></a>
-The instance types of the infrastructure configuration. You can specify one or more instance types to use for this build. Image Builder picks one of these instance types based on availability.
+The instance types of the infrastructure configuration. You can specify one or more instance types to use for this build. Image Builder picks one of these instance types based on availability. If you don't specify instance types, Image Builder selects compatible instance types automatically. If you specify a Dedicated Host, Image Builder uses only instance types that the host supports.
 *Required*: No
 *Type*: Array of String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -109,26 +111,26 @@ The key pair of the infrastructure configuration. You can use this to log on to 
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Logging`  <a name="cfn-imagebuilder-infrastructureconfiguration-logging"></a>
-The logging configuration of the infrastructure configuration.
+The logging configuration of the infrastructure configuration. When you configure S3 logs, Image Builder writes logs from the build and test process to the specified bucket under the key prefix.
 *Required*: No
 *Type*: [Logging](aws-properties-imagebuilder-infrastructureconfiguration-logging.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Name`  <a name="cfn-imagebuilder-infrastructureconfiguration-name"></a>
-The name of the infrastructure configuration.
+The name of the infrastructure configuration. Infrastructure configuration names must be unique to your account in each AWS Region. Image Builder generates the infrastructure configuration ARN from a normalized form of the name, so names that differ only in case, spaces, or underscores count as the same name.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[-_A-Za-z-0-9][-_A-Za-z0-9 ]{1,126}[-_A-Za-z-0-9]$`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Placement`  <a name="cfn-imagebuilder-infrastructureconfiguration-placement"></a>
-The instance placement settings that define where the instances that are launched from your image run.
+The instance placement settings that define where the build and test instances that Image Builder launches during image creation run. These settings don't affect instances that you launch from the output image.
 *Required*: No
 *Type*: [Placement](aws-properties-imagebuilder-infrastructureconfiguration-placement.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ResourceTags`  <a name="cfn-imagebuilder-infrastructureconfiguration-resourcetags"></a>
-The metadata tags to assign to the Amazon EC2 instance that Image Builder launches during the build process. Tags are formatted as key value pairs.
+The metadata tags to assign to the Amazon EC2 instance that Image Builder launches during the build process. Tags are formatted as key value pairs. Tag keys can't begin with `aws:` or match one of the following reserved keys: `CreatedBy`, `Ec2ImageBuilderArn`, `Name`, or `Tags`.
 *Required*: No
 *Type*: Object of String
 *Pattern*: `.{1,}`
@@ -141,15 +143,15 @@ The security group IDs to associate with the instance used to customize your Ama
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SnsTopicArn`  <a name="cfn-imagebuilder-infrastructureconfiguration-snstopicarn"></a>
-The Amazon Resource Name (ARN) of the SNS topic to which Image Builder sends image build event notifications.
-EC2 Image Builder is unable to send notifications to SNS topics that are encrypted using keys from other accounts. The key that is used to encrypt the SNS topic must reside in the account that the Image Builder service runs under.
+The Amazon Resource Name (ARN) of the SNS topic to which Image Builder sends image build event notifications. Specify a standard topic. Image Builder doesn't support FIFO topics. Image Builder validates the topic when you create or update the configuration. You must have permission to publish to the topic.
+EC2 Image Builder can't send notifications to SNS topics that are encrypted using keys from other accounts. If your SNS topic is encrypted, the key must be owned by the same account that owns your Image Builder resources.
 *Required*: No
 *Type*: String
 *Pattern*: `^arn:aws[^:]*:sns:[^:]+:[0-9]{12}:[a-zA-Z0-9-_]{1,256}$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SubnetId`  <a name="cfn-imagebuilder-infrastructureconfiguration-subnetid"></a>
-The subnet ID in which to place the instance used to customize your Amazon EC2 AMI.
+The subnet ID in which to place the instance used to customize your Amazon EC2 AMI. If you specify `subnetId`, you must also specify one or more security group IDs in `securityGroupIds`. Otherwise, the request fails.
 *Required*: No
 *Type*: String
 *Minimum*: `1`

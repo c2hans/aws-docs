@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Com
 # ComponentVersion
 <a name="API_ComponentVersion"></a>
 
-The defining characteristics of a specific version of an AWSTOE component.
+The defining characteristics of a specific version of a component.
 
 ## Contents
 <a name="API_ComponentVersion_Contents"></a>
@@ -20,7 +20,7 @@ Semantic versioning is included in each object's Amazon Resource Name (ARN), at 
 
 1. Build version ARNs have all four nodes, and point to a specific build for a specific version of an object.
 Type: String
-Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):(?:image-recipe|container-recipe|infrastructure-configuration|distribution-configuration|component|image|image-pipeline|lifecycle-policy|workflow\/(?:build|test|distribution))/[a-z0-9-_]+(?:/(?:(?:x|[0-9]+)\.(?:x|[0-9]+)\.(?:x|[0-9]+))(?:/[0-9]+)?)?$`
+Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?|third-party):(?:image-recipe|container-recipe|infrastructure-configuration|distribution-configuration|component|image|image-pipeline|lifecycle-policy|workflow\/(?:build|test|distribution))/[a-z0-9-_]+(?:/(?:(?:x|[0-9]+)\.(?:x|[0-9]+)\.(?:x|[0-9]+))(?:/[0-9]+)?)?$`
 Required: No
 
  ** dateCreated **   <a name="imagebuilder-Type-ComponentVersion-dateCreated"></a>
@@ -41,7 +41,7 @@ Pattern: `^[-_A-Za-z-0-9][-_A-Za-z0-9 ]{1,126}[-_A-Za-z-0-9]$`
 Required: No
 
  ** owner **   <a name="imagebuilder-Type-ComponentVersion-owner"></a>
-The owner of the component.
+The owner of the component. The value is your account ID for components that you own, the sharing account's ID for shared components, or `Amazon`, `ThirdParty`, or `AWSMarketplace`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No

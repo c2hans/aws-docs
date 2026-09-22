@@ -39,7 +39,7 @@ The request does not use any URI parameters.
 The request accepts the following data in JSON format.
 
  ** [clientToken](#API_DistributeImage_RequestSyntax) **   <a name="imagebuilder-DistributeImage-request-clientToken"></a>
-A unique, case-sensitive identifier you provide to ensure that the operation completes no more than one time. If this token matches a previous request, the service ignores the request, but does not return an error. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
+A unique, case-sensitive identifier you provide to ensure that the operation runs no more than one time. If you retry a request with the same client token, Image Builder returns the original response without running the operation again. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: Yes
@@ -63,13 +63,17 @@ Type: [ImageLoggingConfiguration](API_ImageLoggingConfiguration.md) object
 Required: No
 
  ** [sourceImage](#API_DistributeImage_RequestSyntax) **   <a name="imagebuilder-DistributeImage-request-sourceImage"></a>
-The source image to distribute. Specify an AMI identifier, SSM parameter path, or Image Builder image Amazon Resource Name (ARN). When you specify an Image Builder image Amazon Resource Name (ARN), the image must be in the `AVAILABLE` state.
+The source image to distribute. You can specify the source in any of the following formats:
++ An AMI ID.
++ An AWS Systems Manager Parameter Store reference, prefixed by `ssm:`, followed by the parameter name or ARN.
++ An Image Builder image Amazon Resource Name (ARN). An image version ARN resolves to the latest available build version.
+Whichever format you use, the source must resolve to an AMI in the current AWS Region.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: Yes
 
  ** [tags](#API_DistributeImage_RequestSyntax) **   <a name="imagebuilder-DistributeImage-request-tags"></a>
-The tags to apply to the distributed image.
+The tags to apply to the new Image Builder image resource that this operation creates. To tag the output AMIs, use `amiTags` in the distribution configuration.
 Type: String to string map
 Map Entries: Maximum number of 50 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
@@ -103,7 +107,7 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 
  ** [imageBuildVersionArn](#API_DistributeImage_ResponseSyntax) **   <a name="imagebuilder-DistributeImage-response-imageBuildVersionArn"></a>
-The Amazon Resource Name (ARN) of the image to be distributed.
+The Amazon Resource Name (ARN) of the new Image Builder image resource that this operation creates to track the distribution. Use this ARN with [GetImage](API_GetImage.md) to monitor distribution progress.
 Type: String
 Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):image/[a-z0-9-_]+/[0-9]+\.[0-9]+\.[0-9]+/[0-9]+$`
 
@@ -117,11 +121,11 @@ You do not have permissions to perform the requested operation.
 HTTP Status Code: 403
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** ForbiddenException **
@@ -133,7 +137,7 @@ You have specified a client token for an operation using parameter values that d
 HTTP Status Code: 400
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** ResourceInUseException **
@@ -145,7 +149,7 @@ At least one of the resources referenced by your request does not exist.
 HTTP Status Code: 404
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceQuotaExceededException **
@@ -159,6 +163,42 @@ HTTP Status Code: 503
  ** TooManyRequestsException **
 You have attempted too many requests for the specific operation.
 HTTP Status Code: 429
+
+## Examples
+<a name="API_DistributeImage_Examples"></a>
+
+### Distribute an existing AMI
+<a name="API_DistributeImage_Example_1"></a>
+
+The following example distributes an AMI that you own to the targets defined in the specified distribution configuration. It returns the ARN of a new Image Builder image resource that you can use with GetImage to monitor distribution progress.
+
+#### Sample Request
+<a name="API_DistributeImage_Example_1_Request"></a>
+
+```
+PUT /DistributeImage HTTP/1.1
+Content-type: application/json
+
+{
+    "sourceImage": "ami-1234567890abcdef0",
+    "distributionConfigurationArn": "arn:aws:imagebuilder:us-west-2:111122223333:distribution-configuration/my-example-distribution-configuration",
+    "executionRole": "arn:aws:iam::111122223333:role/aws-service-role/imagebuilder.amazonaws.com/AWSServiceRoleForImageBuilder",
+    "clientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE86420"
+}
+```
+
+#### Sample Response
+<a name="API_DistributeImage_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "clientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE86420",
+    "imageBuildVersionArn": "arn:aws:imagebuilder:us-west-2:111122223333:image/my-example-source-ami/1.0.0/1"
+}
+```
 
 ## See Also
 <a name="API_DistributeImage_SeeAlso"></a>

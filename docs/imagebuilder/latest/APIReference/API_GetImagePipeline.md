@@ -124,11 +124,11 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** ForbiddenException **
@@ -136,16 +136,64 @@ You are not authorized to perform the requested operation.
 HTTP Status Code: 403
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_GetImagePipeline_Examples"></a>
+
+### Get the details of an image pipeline
+<a name="API_GetImagePipeline_Example_1"></a>
+
+The following example retrieves an image pipeline that builds a new image every Sunday, including the image tests configuration and schedule start condition defaults that Image Builder applied at creation.
+
+#### Sample Request
+<a name="API_GetImagePipeline_Example_1_Request"></a>
+
+```
+GET /GetImagePipeline?imagePipelineArn=arn%3Aaws%3Aimagebuilder%3Aus-west-2%3A111122223333%3Aimage-pipeline%2Fmy-example-pipeline HTTP/1.1
+```
+
+#### Sample Response
+<a name="API_GetImagePipeline_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "requestId": "b7e58d62-36dc-43a5-87ff-546e04cdabf1",
+    "imagePipeline": {
+        "arn": "arn:aws:imagebuilder:us-west-2:111122223333:image-pipeline/my-example-pipeline",
+        "name": "my-example-pipeline",
+        "description": "Builds an Amazon Linux 2023 image every Sunday",
+        "platform": "Linux",
+        "enhancedImageMetadataEnabled": true,
+        "imageRecipeArn": "arn:aws:imagebuilder:us-west-2:111122223333:image-recipe/my-example-recipe/1.0.0",
+        "infrastructureConfigurationArn": "arn:aws:imagebuilder:us-west-2:111122223333:infrastructure-configuration/my-example-infrastructure",
+        "imageTestsConfiguration": {
+            "imageTestsEnabled": true,
+            "timeoutMinutes": 720
+        },
+        "schedule": {
+            "scheduleExpression": "cron(0 0 ? * SUN *)",
+            "pipelineExecutionStartCondition": "EXPRESSION_MATCH_AND_DEPENDENCY_UPDATES_AVAILABLE"
+        },
+        "status": "ENABLED",
+        "dateCreated": "2026-09-09T19:38:26.574Z",
+        "dateUpdated": "2026-09-09T19:38:26.574Z",
+        "tags": {}
+    }
+}
+```
 
 ## See Also
 <a name="API_GetImagePipeline_SeeAlso"></a>

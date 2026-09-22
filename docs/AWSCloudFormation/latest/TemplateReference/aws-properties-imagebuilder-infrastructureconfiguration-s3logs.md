@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-imagebuilder-infrastructureconfiguration-s3logs-properties"></a>
 
 `S3BucketName`  <a name="cfn-imagebuilder-infrastructureconfiguration-s3logs-s3bucketname"></a>
-The S3 bucket in which to store the logs.
+The name of an existing Amazon S3 bucket where Image Builder saves build logs. The bucket isn't validated when you create or update the configuration, and Image Builder doesn't create it. The instance profile associated with this infrastructure configuration must have permission to write to the bucket.
 *Required*: No
 *Type*: String
 *Minimum*: `1`
@@ -44,7 +44,7 @@ The S3 bucket in which to store the logs.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `S3KeyPrefix`  <a name="cfn-imagebuilder-infrastructureconfiguration-s3logs-s3keyprefix"></a>
-The Amazon S3 path to the bucket where the logs are stored.
+The Amazon S3 key prefix under which Image Builder writes build and test logs in the bucket.
 *Required*: No
 *Type*: String
 *Minimum*: `1`

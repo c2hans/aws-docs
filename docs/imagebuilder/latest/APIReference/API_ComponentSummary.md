@@ -13,17 +13,17 @@ A high-level summary of a component.
  ** arn **   <a name="imagebuilder-Type-ComponentSummary-arn"></a>
 The Amazon Resource Name (ARN) of the component.
 Type: String
-Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):(?:image-recipe|container-recipe|infrastructure-configuration|distribution-configuration|component|image|image-pipeline|lifecycle-policy|workflow\/(?:build|test|distribution))/[a-z0-9-_]+(?:/(?:(?:x|[0-9]+)\.(?:x|[0-9]+)\.(?:x|[0-9]+))(?:/[0-9]+)?)?$`
+Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?|third-party):(?:image-recipe|container-recipe|infrastructure-configuration|distribution-configuration|component|image|image-pipeline|lifecycle-policy|workflow\/(?:build|test|distribution))/[a-z0-9-_]+(?:/(?:(?:x|[0-9]+)\.(?:x|[0-9]+)\.(?:x|[0-9]+))(?:/[0-9]+)?)?$`
 Required: No
 
  ** changeDescription **   <a name="imagebuilder-Type-ComponentSummary-changeDescription"></a>
-The change description for the current version of the component.
+The change description for this version of the component.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
  ** dateCreated **   <a name="imagebuilder-Type-ComponentSummary-dateCreated"></a>
-The original creation date of the component.
+The date that Image Builder created this version of the component.
 Type: String
 Required: No
 
@@ -45,7 +45,7 @@ Type: Boolean
 Required: No
 
  ** owner **   <a name="imagebuilder-Type-ComponentSummary-owner"></a>
-The owner of the component.
+The owner of the component. The value is your account ID for components that you own, the sharing account's ID for shared components, or `Amazon`, `ThirdParty`, or `AWSMarketplace`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No

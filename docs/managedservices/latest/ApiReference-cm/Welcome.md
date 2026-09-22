@@ -31,4 +31,4 @@ If an RFC is rejected or canceled, the reason for the action appears in the `Rfc
 The HTTP endpoint for the Change Management API is:
 + https://amscm.us-east-1.amazonaws.com
 
-This document was last published on September 18, 2026.
+This document was last published on September 22, 2026.

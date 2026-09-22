@@ -5,13 +5,15 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Dis
 # DistributionConfiguration
 <a name="API_DistributionConfiguration"></a>
 
-A distribution configuration.
+Defines how Image Builder distributes the output of an image build. You can configure:
++ The Regions to distribute the image to.
++ The Region-specific settings to apply, such as output AMI names, launch permissions for other AWS accounts, and target container repositories.
 
 ## Contents
 <a name="API_DistributionConfiguration_Contents"></a>
 
  ** timeoutMinutes **   <a name="imagebuilder-Type-DistributionConfiguration-timeoutMinutes"></a>
-The maximum duration in minutes for this distribution configuration.
+A property that Image Builder doesn't use. You can't set this property when you create or update a distribution configuration, and it has no effect on distribution behavior.
 Type: Integer
 Valid Range: Minimum value of 30. Maximum value of 720.
 Required: Yes
@@ -19,7 +21,7 @@ Required: Yes
  ** arn **   <a name="imagebuilder-Type-DistributionConfiguration-arn"></a>
 The Amazon Resource Name (ARN) of the distribution configuration.
 Type: String
-Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):(?:image-recipe|container-recipe|infrastructure-configuration|distribution-configuration|component|image|image-pipeline|lifecycle-policy|workflow\/(?:build|test|distribution))/[a-z0-9-_]+(?:/(?:(?:x|[0-9]+)\.(?:x|[0-9]+)\.(?:x|[0-9]+))(?:/[0-9]+)?)?$`
+Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?|third-party):(?:image-recipe|container-recipe|infrastructure-configuration|distribution-configuration|component|image|image-pipeline|lifecycle-policy|workflow\/(?:build|test|distribution))/[a-z0-9-_]+(?:/(?:(?:x|[0-9]+)\.(?:x|[0-9]+)\.(?:x|[0-9]+))(?:/[0-9]+)?)?$`
 Required: No
 
  ** dateCreated **   <a name="imagebuilder-Type-DistributionConfiguration-dateCreated"></a>

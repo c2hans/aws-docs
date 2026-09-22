@@ -48,7 +48,7 @@ Defines the value or values to match for and the relationship of the match.
 The name of the custom claim field to check.
 *Required*: Yes
 *Type*: String
-*Pattern*: `^[A-Za-z0-9_.-:]+$`
+*Pattern*: `^[A-Za-z0-9_.:-]+$`
 *Minimum*: `1`
 *Maximum*: `255`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Cvs
 # CvssScore
 <a name="API_CvssScore"></a>
 
-Amazon Inspector generates a risk score for each finding. This score helps you to prioritize findings, to focus on the most critical findings and the most vulnerable resources. The score uses the Common Vulnerability Scoring System (CVSS) format. This format is a modification of the base CVSS score that the National Vulnerability Database (NVD) provides. For more information about severity levels, see [Severity levels for Amazon Inspector findings](https://docs.aws.amazon.com/inspector/latest/user/findings-understanding-severity.html) in the *Amazon Inspector User Guide*.
+A CVSS score for the vulnerability, as published by the vulnerability source. Sources include the National Vulnerability Database (NVD) and the operating system vendor's security feed. A finding can include CVSS scores from multiple sources and CVSS versions.
 
 ## Contents
 <a name="API_CvssScore_Contents"></a>

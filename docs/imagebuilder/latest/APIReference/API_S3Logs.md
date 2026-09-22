@@ -11,13 +11,13 @@ Amazon S3 logging configuration.
 <a name="API_S3Logs_Contents"></a>
 
  ** s3BucketName **   <a name="imagebuilder-Type-S3Logs-s3BucketName"></a>
-The S3 bucket in which to store the logs.
+The name of an existing Amazon S3 bucket where Image Builder saves build logs. The bucket isn't validated when you create or update the configuration, and Image Builder doesn't create it. The instance profile associated with this infrastructure configuration must have permission to write to the bucket.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
  ** s3KeyPrefix **   <a name="imagebuilder-Type-S3Logs-s3KeyPrefix"></a>
-The Amazon S3 path to the bucket where the logs are stored.
+The Amazon S3 key prefix under which Image Builder writes build and test logs in the bucket.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No

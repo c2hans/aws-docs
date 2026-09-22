@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::ImageBuilder::ImageRecipe SystemsManagerAgent
 <a name="aws-properties-imagebuilder-imagerecipe-systemsmanageragent"></a>
 
-Contains settings for the Systems Manager agent on your build instance.
+Contains settings for the Systems Manager agent on your build instance. This setting applies to Linux and macOS build instances only. Requests that set it for a recipe with a Windows base image are rejected.
 
 ## Syntax
 <a name="aws-properties-imagebuilder-imagerecipe-systemsmanageragent-syntax"></a>
@@ -34,8 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-imagebuilder-imagerecipe-systemsmanageragent-properties"></a>
 
 `UninstallAfterBuild`  <a name="cfn-imagebuilder-imagerecipe-systemsmanageragent-uninstallafterbuild"></a>
-Controls whether the Systems Manager agent is removed from your final build image, prior to creating the new AMI. If this is set to true, then the agent is removed from the final image. If it's set to false, then the agent is left in, so that it is included in the new AMI. default value is false.
-The default behavior of uninstallAfterBuild is to remove the SSM Agent if it was installed by EC2 Image Builder
+Specifies whether the Systems Manager agent is removed from your final build image before Image Builder creates the new AMI. If `true`, the agent is removed. If `false`, the agent is kept, so that it's included in the AMI. If you don't set this property, Image Builder removes the agent only if Image Builder installed the agent during the build. An agent that was pre-installed on the base image is kept.
 *Required*: No
 *Type*: Boolean
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

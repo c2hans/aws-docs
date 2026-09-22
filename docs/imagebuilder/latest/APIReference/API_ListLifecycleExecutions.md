@@ -44,9 +44,9 @@ Length Constraints: Minimum length of 1. Maximum length of 65535.
 Required: No
 
  ** [resourceArn](#API_ListLifecycleExecutions_RequestSyntax) **   <a name="imagebuilder-ListLifecycleExecutions-request-resourceArn"></a>
-The Amazon Resource Name (ARN) of the resource for which to get a list of lifecycle runtime instances.
+The Amazon Resource Name (ARN) of the resource for which to list lifecycle executions. Specify a lifecycle policy ARN to list its executions, or an image build version ARN to list the executions that [StartResourceStateUpdate](API_StartResourceStateUpdate.md) started for that image. Other ARN types aren't valid for this request.
 Type: String
-Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):(?:image-recipe|container-recipe|infrastructure-configuration|distribution-configuration|component|image|image-pipeline|lifecycle-policy|workflow\/(?:build|test|distribution))/[a-z0-9-_]+(?:/(?:(?:x|[0-9]+)\.(?:x|[0-9]+)\.(?:x|[0-9]+))(?:/[0-9]+)?)?$`
+Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?|third-party):(?:image-recipe|container-recipe|infrastructure-configuration|distribution-configuration|component|image|image-pipeline|lifecycle-policy|workflow\/(?:build|test|distribution))/[a-z0-9-_]+(?:/(?:(?:x|[0-9]+)\.(?:x|[0-9]+)\.(?:x|[0-9]+))(?:/[0-9]+)?)?$`
 Required: Yes
 
 ## Response Syntax
@@ -98,11 +98,11 @@ Length Constraints: Minimum length of 1. Maximum length of 65535.
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** ForbiddenException **
@@ -114,16 +114,59 @@ You have provided an invalid pagination token in your request.
 HTTP Status Code: 400
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_ListLifecycleExecutions_Examples"></a>
+
+### List lifecycle executions for an image build version
+<a name="API_ListLifecycleExecutions_Example_1"></a>
+
+The following example lists the lifecycle executions that have run against the specified image build version. The execution shown was started with StartResourceStateUpdate rather than a lifecycle policy, so it has no lifecyclePolicyArn.
+
+#### Sample Request
+<a name="API_ListLifecycleExecutions_Example_1_Request"></a>
+
+```
+POST /ListLifecycleExecutions HTTP/1.1
+Content-type: application/json
+
+{
+    "resourceArn": "arn:aws:imagebuilder:us-west-2:111122223333:image/my-example-recipe/1.0.0/1"
+}
+```
+
+#### Sample Response
+<a name="API_ListLifecycleExecutions_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "lifecycleExecutions": [
+        {
+            "lifecycleExecutionId": "lce-401aefc3-a829-46f6-8fc2-91497988a503",
+            "resourcesImpactedSummary": {
+                "hasImpactedResources": false
+            },
+            "state": {
+                "status": "IN_PROGRESS"
+            },
+            "startTime": 1788990149.801
+        }
+    ]
+}
+```
 
 ## See Also
 <a name="API_ListLifecycleExecutions_SeeAlso"></a>

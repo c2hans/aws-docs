@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Ima
 # Image
 <a name="API_Image"></a>
 
-An Image Builder image resource that keeps track of all of the settings used to create, configure, and distribute output for that image. You must specify exactly one recipe for the image – either a container recipe (`containerRecipe`), which creates a container image, or an image recipe (`imageRecipe`), which creates an AMI.
+An Image Builder image resource that keeps track of all of the settings used to create, configure, and distribute output for that image. An image that Image Builder built from a recipe contains exactly one recipe – either a container recipe (`containerRecipe`), which creates a container image, or an image recipe (`imageRecipe`), which creates an AMI. Imported images don't contain a recipe.
 
 ## Contents
 <a name="API_Image_Contents"></a>
@@ -20,7 +20,7 @@ Semantic versioning is included in each object's Amazon Resource Name (ARN), at 
 
 1. Build version ARNs have all four nodes, and point to a specific build for a specific version of an object.
 Type: String
-Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):(?:image-recipe|container-recipe|infrastructure-configuration|distribution-configuration|component|image|image-pipeline|lifecycle-policy|workflow\/(?:build|test|distribution))/[a-z0-9-_]+(?:/(?:(?:x|[0-9]+)\.(?:x|[0-9]+)\.(?:x|[0-9]+))(?:/[0-9]+)?)?$`
+Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?|third-party):(?:image-recipe|container-recipe|infrastructure-configuration|distribution-configuration|component|image|image-pipeline|lifecycle-policy|workflow\/(?:build|test|distribution))/[a-z0-9-_]+(?:/(?:(?:x|[0-9]+)\.(?:x|[0-9]+)\.(?:x|[0-9]+))(?:/[0-9]+)?)?$`
 Required: No
 
  ** buildType **   <a name="imagebuilder-Type-Image-buildType"></a>
@@ -71,7 +71,7 @@ Type: [ImageRecipe](API_ImageRecipe.md) object
 Required: No
 
  ** imageScanningConfiguration **   <a name="imagebuilder-Type-Image-imageScanningConfiguration"></a>
-Contains settings for vulnerability scans.
+Settings for the vulnerability scans that Amazon Inspector runs for this image. For AMI output, Amazon Inspector scans the test instance during image creation. For container output, Amazon Inspector scans the container image in its Amazon ECR repository.
 Type: [ImageScanningConfiguration](API_ImageScanningConfiguration.md) object
 Required: No
 
@@ -82,7 +82,7 @@ Valid Values: `AMAZON_MANAGED | AWS_MARKETPLACE | IMPORTED | CUSTOM`
 Required: No
 
  ** imageTestsConfiguration **   <a name="imagebuilder-Type-Image-imageTestsConfiguration"></a>
-The image tests that ran when that Image Builder created this image.
+The image test settings that Image Builder used when it created this image.
 Type: [ImageTestsConfiguration](API_ImageTestsConfiguration.md) object
 Required: No
 
@@ -131,12 +131,12 @@ Type: [ImageScanState](API_ImageScanState.md) object
 Required: No
 
  ** sourcePipelineArn **   <a name="imagebuilder-Type-Image-sourcePipelineArn"></a>
-The Amazon Resource Name (ARN) of the image pipeline that created this image.
+The Amazon Resource Name (ARN) of the image pipeline that created this image. This field is only present for images that a pipeline execution created.
 Type: String
 Required: No
 
  ** sourcePipelineName **   <a name="imagebuilder-Type-Image-sourcePipelineName"></a>
-The name of the image pipeline that created this image.
+The name of the image pipeline that created this image. Image Builder doesn't return this field for new images. Use `sourcePipelineArn` instead.
 Type: String
 Pattern: `^[-_A-Za-z-0-9][-_A-Za-z0-9 ]{1,126}[-_A-Za-z-0-9]$`
 Required: No
@@ -168,11 +168,11 @@ The semantic version has four nodes: <major>.<minor>.<patch>/<build>. You can as
  **Patterns:** You can use any numeric pattern that adheres to the assignment requirements for the nodes that you can assign. For example, you might choose a software version pattern, such as 1.0.0, or a date, such as 2021.01.01.
  **Filtering:** You can use wildcards (x) to specify the most recent versions or nodes when selecting the base image or components for your recipe. When you use a wildcard in any node, all nodes to the right of the first wildcard must also be wildcards.
 Type: String
-Pattern: `^[0-9]+\.[0-9]+\.[0-9]+$`
+Pattern: `^[0-9]+\.[0-9]+\.[0-9]+(?:/[0-9]+)?$`
 Required: No
 
  ** workflows **   <a name="imagebuilder-Type-Image-workflows"></a>
-Contains the build and test workflows that are associated with the image.
+The build, test, and distribution workflow configurations that are associated with the image.
 Type: Array of [WorkflowConfiguration](API_WorkflowConfiguration.md) objects
 Required: No
 

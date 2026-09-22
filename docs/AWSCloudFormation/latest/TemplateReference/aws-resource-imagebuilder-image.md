@@ -75,7 +75,7 @@ Properties:
 <a name="aws-resource-imagebuilder-image-properties"></a>
 
 `ContainerRecipeArn`  <a name="cfn-imagebuilder-image-containerrecipearn"></a>
-The Amazon Resource Name (ARN) of the container recipe that defines how images are configured and tested.
+The Amazon Resource Name (ARN) of the container recipe that defines how images are configured and tested. You must specify either this property or `imageRecipeArn`, but not both.
 *Required*: No
 *Type*: String
 *Pattern*: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws):container-recipe/[a-z0-9-_]+/(?:[0-9]+|x)\.(?:[0-9]+|x)\.(?:[0-9]+|x)$`
@@ -88,7 +88,7 @@ Enables deletion of underlying resources of an image when it is replaced or dele
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DistributionConfigurationArn`  <a name="cfn-imagebuilder-image-distributionconfigurationarn"></a>
-The Amazon Resource Name (ARN) of the distribution configuration that defines and configures the outputs of your pipeline.
+The Amazon Resource Name (ARN) of the distribution configuration that defines and configures the outputs of the image build. If you don't specify a distribution configuration, Image Builder creates the output image only in the account and AWS Region where the build runs.
 *Required*: No
 *Type*: String
 *Pattern*: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws):distribution-configuration/[a-z0-9-_]+$`
@@ -101,7 +101,7 @@ Specifies whether to collect additional information about the image being create
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `ExecutionRole`  <a name="cfn-imagebuilder-image-executionrole"></a>
-The name or Amazon Resource Name (ARN) for the IAM role you create that grants Image Builder access to perform workflow actions.
+The name or Amazon Resource Name (ARN) for the IAM role you create that grants Image Builder access to perform workflow actions. This property is required if you specify `workflows`. If you don't provide a role, Image Builder uses the Image Builder service-linked role in your account, and creates it if it doesn't exist.
 *Required*: No
 *Type*: String
 *Pattern*: `^(?:arn:aws(?:-[a-z]+)*:iam::[0-9]{12}:role/)?[a-zA-Z_0-9+=,.@\-_/]+$`
@@ -116,20 +116,20 @@ The settings for creating the image by running an existing image pipeline, inste
 *Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `ImageRecipeArn`  <a name="cfn-imagebuilder-image-imagerecipearn"></a>
-The Amazon Resource Name (ARN) of the image recipe that defines how images are configured, tested, and assessed.
+The Amazon Resource Name (ARN) of the image recipe that defines how images are configured, tested, and assessed. You must specify either this property or `containerRecipeArn`, but not both.
 *Required*: No
 *Type*: String
 *Pattern*: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws):image-recipe/[a-z0-9-_]+/(?:[0-9]+|x)\.(?:[0-9]+|x)\.(?:[0-9]+|x)$`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `ImageScanningConfiguration`  <a name="cfn-imagebuilder-image-imagescanningconfiguration"></a>
-Contains settings for vulnerability scans.
+Settings for vulnerability scans that Amazon Inspector runs during image creation. For AMI output, Amazon Inspector scans the test instance. For container output, Amazon Inspector scans the container image that Image Builder pushes to the Amazon ECR repository specified in `ecrConfiguration`.
 *Required*: No
 *Type*: [ImageScanningConfiguration](aws-properties-imagebuilder-image-imagescanningconfiguration.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `ImageTestsConfiguration`  <a name="cfn-imagebuilder-image-imagetestsconfiguration"></a>
-The image tests configuration of the image.
+Settings that determine whether Image Builder runs tests on the image after building it. Image tests are enabled by default.
 *Required*: No
 *Type*: [ImageTestsConfiguration](aws-properties-imagebuilder-image-imagetestsconfiguration.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
@@ -155,7 +155,7 @@ The tags of the image.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Workflows`  <a name="cfn-imagebuilder-image-workflows"></a>
-Contains an array of workflow configuration objects.
+The array of workflow configuration objects for the build. If you specify workflows, they replace the default workflows that Image Builder otherwise runs for the build, and you must also provide an `executionRole`.
 *Required*: No
 *Type*: Array of [WorkflowConfiguration](aws-properties-imagebuilder-image-workflowconfiguration.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

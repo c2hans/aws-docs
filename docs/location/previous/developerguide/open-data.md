@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/open-da
 # Open Data
 <a name="open-data"></a>
 
-Amazon Location Service provides access to open source map data via the Open Data provider. Open Data provides global basemaps built from the [Daylight map distribution](https://daylightmap.org) of [OpenStreetMap (OSM)](https://www.openstreetmap.org/), [Natural Earth](https://www.naturalearthdata.com/), and other open data sources. The maps provided are designed to support different applications and use cases, including logistics and delivery, and data visualization in web and mobile environments. With over a million map makers, the OSM community updates hundreds of thousands of features per day. Amazon Location Service regularly incorporates these edits.
+Amazon Location Service provides access to open source map data via the Open Data provider. Open Data provides global basemaps built from data provided by the [Overture Maps Foundation](https://overturemaps.org) website, including [OpenStreetMap (OSM)](https://www.openstreetmap.org/), [Natural Earth](https://www.naturalearthdata.com/), and other open data sources. The maps provided are designed to support different applications and use cases, including logistics and delivery, and data visualization in web and mobile environments. With over a million map makers, the OSM community updates hundreds of thousands of features per day. Amazon Location Service regularly incorporates these edits.
 
 For additional capability information, see [Open Data](https://aws.amazon.com/location/data-providers/open-data/) on *Amazon Location Service data providers*.
 
@@ -33,7 +33,7 @@ Open Data map styles support alternate [Political views](map-concepts.md#politic
 
 This provides a detailed basemap for the world in a light map style, suitable for website and mobile application use. This includes highways, major roads, minor roads, railways, water features, cities, parks, landmarks, building footprints, and administrative boundaries.
 
-This basemap is based on the OSM [Daylight map distribution](https://daylightmap.org) compiled from OpenStreetMap (OSM) contributors. The OSM community includes over 1.8 million contributors who update more than 500,000 features daily. Amazon Location Service incorporates these edits on a regular basis.
+This basemap is based on data from the [Overture Maps Foundation](https://overturemaps.org) website and OpenStreetMap (OSM) contributors.
 
 **Fonts**
 
@@ -65,7 +65,7 @@ The fonts used by `VectorOpenDataStandardLight` are combined fonts that use `Ama
 
 This is a dark-themed map style that provides a detailed basemap for the world, suitable for website and mobile application use. This includes highways, major roads, minor roads, railways, water features, cities, parks, landmarks, building footprints, and administrative boundaries.
 
-This basemap is based on the OSM [Daylight map distribution](https://daylightmap.org) compiled from OpenStreetMap (OSM) contributors. The OSM community includes over 1.8 million contributors who update more than 500,000 features daily. Amazon Location Service incorporates these edits on a regular basis.
+This basemap is based on data from the [Overture Maps Foundation](https://overturemaps.org) website and OpenStreetMap (OSM) contributors.
 
 **Fonts**
 
@@ -97,7 +97,7 @@ The fonts used by `VectorOpenDataStandardDark` are combined fonts that use `Amaz
 
 This is a light-themed style with muted colors and fewer features that aids in understanding overlaid data.
 
-This basemap is based on the OSM [Daylight map distribution](https://daylightmap.org) compiled from OpenStreetMap (OSM) contributors. The OSM community includes over 1.8 million contributors who update more than 500,000 features daily. Amazon Location Service incorporates these edits on a regular basis.
+This basemap is based on data from the [Overture Maps Foundation](https://overturemaps.org) website and OpenStreetMap (OSM) contributors.
 
 **Fonts**
 
@@ -129,7 +129,7 @@ The fonts used by `VectorOpenDataVisualizationLight` are combined fonts that use
 
 This is a dark-themed style with muted colors and fewer features that aids in understanding overlaid data.
 
-This basemap is based on the OSM [Daylight map distribution](https://daylightmap.org) compiled from OpenStreetMap (OSM) contributors. The OSM community includes over 1.8 million contributors who update more than 500,000 features daily. Amazon Location Service incorporates these edits on a regular basis.
+This basemap is based on data from the [Overture Maps Foundation](https://overturemaps.org) website and OpenStreetMap (OSM) contributors.
 
 **Fonts**
 
@@ -178,4 +178,4 @@ OpenStreetMap (OSM) and Natural Earth are community-driven open data projects. I
 + To submit a correction request for data in Natural Earth, you can submit an issue through the [Natural Earth website](https://www.naturalearthdata.com/issues/).
 
 **Note**
-Correcting errors in OpenStreetMap can happen quickly, however, it can take time for corrections to appear in the Daylight map distribution of the OSM data that is used by the Open Data provider. The [Daylight Map Distribution](https://daylightmap.org) website provides more information about the process. Additionally, Amazon Location Service updates the map data used in Amazon Location Service approximately monthly.
+Correcting errors in OpenStreetMap can happen quickly, however, it can take time for corrections to appear in data from the Overture Maps Foundation that is used by the Open Data provider. The [Overture Maps Foundation](https://overturemaps.org) website provides more information about the process. Additionally, Amazon Location Service updates the map data used in Amazon Location Service approximately monthly.

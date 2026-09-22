@@ -75,11 +75,11 @@ To see which prompt caching types a model supports, refer to [Models at a glance
 
 | Model name | Model ID | Release Type | Minimum number of tokens per cache checkpoint | Maximum number of cache checkpoints per request | Supported TTL | Fields that accept prompt cache checkpoints |
 | --- | --- | --- | --- | --- | --- | --- |
+| Claude Opus 5.5 | anthropic.claude-opus-5-5 | Generally Available | 512 | 4 | 5 minutes, 1 hour | `system`, `messages`, and `tools` |
 | Claude Fable 5.1 | anthropic.claude-fable-5-1 | Generally Available | 512 | 4 | 5 minutes, 1 hour | `system`, `messages`, and `tools` |
 | Claude Mythos 5.1 | anthropic.claude-mythos-5-1 | Gated | 512 | 4 | 5 minutes, 1 hour | `system`, `messages`, and `tools` |
 | Claude Fable 5 | anthropic.claude-fable-5 | Generally Available | 512 | 4 | 5 minutes, 1 hour | `system`, `messages`, and `tools` |
 | Claude Mythos 5 | anthropic.claude-mythos-5 | Gated | 512 | 4 | 5 minutes, 1 hour | `system`, `messages`, and `tools` |
-| Claude Mythos Preview | anthropic.claude-mythos-preview | Gated | 4,096 | 4 | 5 minutes, 1 hour | `system`, `messages`, and `tools` |
 | Claude Opus 5 | anthropic.claude-opus-5 | Generally Available | 512 | 4 | 5 minutes, 1 hour | `system`, `messages`, and `tools` |
 | Claude Opus 4.8 | anthropic.claude-opus-4-8 | Generally Available | 1,024 | 4 | 5 minutes, 1 hour | `system`, `messages`, and `tools` |
 | Claude Opus 4.7 | anthropic.claude-opus-4-7 | Generally Available | 4,096 | 4 | 5 minutes, 1 hour | `system`, `messages`, and `tools` |

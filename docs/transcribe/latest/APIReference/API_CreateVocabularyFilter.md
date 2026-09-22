@@ -19,6 +19,12 @@ For more information, see [Vocabulary filtering](https://docs.aws.amazon.com/tra
 ```
 {
    "DataAccessRoleArn": "{{string}}",
+   "EncryptionConfiguration": {
+      "KMSEncryptionContext": {
+         "{{string}}" : "{{string}}"
+      },
+      "KMSKey": "{{string}}"
+   },
    "LanguageCode": "{{string}}",
    "Tags": [
       {
@@ -40,7 +46,7 @@ For information about the parameters that are common to all actions, see [Common
 The request accepts the following data in JSON format.
 
  ** [DataAccessRoleArn](#API_CreateVocabularyFilter_RequestSyntax) **   <a name="transcribe-CreateVocabularyFilter-request-DataAccessRoleArn"></a>
-The Amazon Resource Name (ARN) of an IAM role that has permissions to access the Amazon S3 bucket that contains your input files (in this case, your custom vocabulary filter). If the role that you specify doesn’t have the appropriate permissions to access the specified Amazon S3 location, your request fails.
+The Amazon Resource Name (ARN) of an IAM role that has permissions to access the Amazon S3 bucket that contains your input files (in this case, your custom vocabulary filter). If you include `EncryptionConfiguration` in your request, this role must also have permissions to access the specified AWS KMS key. If the role that you specify doesn’t have the appropriate permissions, your request fails.
 IAM role ARNs have the format `arn:partition:iam::account:role/role-name-with-path`. For example: `arn:aws:iam::111122223333:role/Admin`.
 For more information, see [IAM ARNs](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns).
 Type: String
@@ -48,12 +54,17 @@ Length Constraints: Minimum length of 20. Maximum length of 2048.
 Pattern: `^arn:(aws|aws-cn|aws-us-gov|aws-iso-{0,1}[a-z]{0,1}):iam::[0-9]{0,63}:role/[A-Za-z0-9:_/+=,@.-]{0,1024}$`
 Required: No
 
+ ** [EncryptionConfiguration](#API_CreateVocabularyFilter_RequestSyntax) **   <a name="transcribe-CreateVocabularyFilter-request-EncryptionConfiguration"></a>
+Specifies the encryption configuration for your custom vocabulary filter. Your vocabulary filter artifacts are encrypted with the specified AWS KMS key or with an AWS owned key if a key is not supplied.
+Type: [EncryptionConfiguration](API_EncryptionConfiguration.md) object
+Required: No
+
  ** [LanguageCode](#API_CreateVocabularyFilter_RequestSyntax) **   <a name="transcribe-CreateVocabularyFilter-request-LanguageCode"></a>
 The language code that represents the language of the entries in your vocabulary filter. Each custom vocabulary filter must contain terms in only one language.
 A custom vocabulary filter can only be used to transcribe files in the same language as the filter. For example, if you create a custom vocabulary filter using US English (`en-US`), you can only apply this filter to files that contain English audio.
 For a list of supported languages and their associated language codes, refer to the [Supported languages](https://docs.aws.amazon.com/transcribe/latest/dg/supported-languages.html) table.
 Type: String
-Valid Values: `af-ZA | ar-AE | ar-SA | da-DK | de-CH | de-DE | en-AB | en-AU | en-GB | en-IE | en-IN | en-US | en-WL | es-ES | es-US | fa-IR | fr-CA | fr-FR | he-IL | hi-IN | id-ID | it-IT | ja-JP | ko-KR | ms-MY | nl-NL | pt-BR | pt-PT | ru-RU | ta-IN | te-IN | tr-TR | zh-CN | zh-TW | th-TH | en-ZA | en-NZ | vi-VN | sv-SE | ab-GE | ast-ES | az-AZ | ba-RU | be-BY | bg-BG | bn-IN | bs-BA | ca-ES | ckb-IQ | ckb-IR | cs-CZ | cy-WL | el-GR | et-EE | et-ET | eu-ES | fi-FI | gl-ES | gu-IN | ha-NG | hr-HR | hu-HU | hy-AM | is-IS | ka-GE | kab-DZ | kk-KZ | kn-IN | ky-KG | lg-IN | lt-LT | lv-LV | mhr-RU | mi-NZ | mk-MK | ml-IN | mn-MN | mr-IN | mt-MT | no-NO | or-IN | pa-IN | pl-PL | ps-AF | ro-RO | rw-RW | si-LK | sk-SK | sl-SI | so-SO | sr-RS | su-ID | sw-BI | sw-KE | sw-RW | sw-TZ | sw-UG | tl-PH | tt-RU | ug-CN | uk-UA | uz-UZ | wo-SN | zh-HK | zu-ZA`
+Valid Values: `af-ZA | ar-AE | ar-SA | am-ET | cy-GB | da-DK | de-CH | de-DE | en-AB | en-AU | en-GB | en-IE | en-IN | en-US | en-WL | es-ES | es-MX | es-US | fa-AF | fa-IR | fr-CA | fr-FR | ga-IE | gd-GB | he-IL | hi-IN | ht-HT | id-ID | it-IT | ja-JP | jv-ID | km-KH | ko-KR | my-MM | ms-MY | nl-NL | pt-BR | pt-PT | ru-RU | ta-IN | te-IN | tr-TR | zh-CN | zh-TW | th-TH | en-ZA | en-NZ | vi-VN | sv-SE | ab-GE | ast-ES | az-AZ | ba-RU | be-BY | bg-BG | bn-IN | bs-BA | ca-ES | ckb-IQ | ckb-IR | cs-CZ | cy-WL | el-GR | et-EE | et-ET | eu-ES | fi-FI | gl-ES | gu-IN | ha-NG | hr-HR | hu-HU | hy-AM | is-IS | ka-GE | kab-DZ | kk-KZ | kn-IN | ky-KG | lg-IN | lt-LT | lv-LV | mhr-RU | mi-NZ | mk-MK | ml-IN | mn-MN | mr-IN | mt-MT | no-NO | ne-NP | or-IN | pa-IN | pl-PL | ps-AF | ro-RO | rw-RW | si-LK | sk-SK | sl-SI | so-SO | sq-AL | sr-RS | su-ID | sw-BI | sw-KE | sw-RW | sw-TZ | sw-UG | tl-PH | tt-RU | ug-CN | uk-UA | uz-UZ | wo-SN | zh-HK | zu-ZA`
 Required: Yes
 
  ** [Tags](#API_CreateVocabularyFilter_RequestSyntax) **   <a name="transcribe-CreateVocabularyFilter-request-Tags"></a>
@@ -110,7 +121,7 @@ The following data is returned in JSON format by the service.
  ** [LanguageCode](#API_CreateVocabularyFilter_ResponseSyntax) **   <a name="transcribe-CreateVocabularyFilter-response-LanguageCode"></a>
 The language code you selected for your custom vocabulary filter.
 Type: String
-Valid Values: `af-ZA | ar-AE | ar-SA | da-DK | de-CH | de-DE | en-AB | en-AU | en-GB | en-IE | en-IN | en-US | en-WL | es-ES | es-US | fa-IR | fr-CA | fr-FR | he-IL | hi-IN | id-ID | it-IT | ja-JP | ko-KR | ms-MY | nl-NL | pt-BR | pt-PT | ru-RU | ta-IN | te-IN | tr-TR | zh-CN | zh-TW | th-TH | en-ZA | en-NZ | vi-VN | sv-SE | ab-GE | ast-ES | az-AZ | ba-RU | be-BY | bg-BG | bn-IN | bs-BA | ca-ES | ckb-IQ | ckb-IR | cs-CZ | cy-WL | el-GR | et-EE | et-ET | eu-ES | fi-FI | gl-ES | gu-IN | ha-NG | hr-HR | hu-HU | hy-AM | is-IS | ka-GE | kab-DZ | kk-KZ | kn-IN | ky-KG | lg-IN | lt-LT | lv-LV | mhr-RU | mi-NZ | mk-MK | ml-IN | mn-MN | mr-IN | mt-MT | no-NO | or-IN | pa-IN | pl-PL | ps-AF | ro-RO | rw-RW | si-LK | sk-SK | sl-SI | so-SO | sr-RS | su-ID | sw-BI | sw-KE | sw-RW | sw-TZ | sw-UG | tl-PH | tt-RU | ug-CN | uk-UA | uz-UZ | wo-SN | zh-HK | zu-ZA`
+Valid Values: `af-ZA | ar-AE | ar-SA | am-ET | cy-GB | da-DK | de-CH | de-DE | en-AB | en-AU | en-GB | en-IE | en-IN | en-US | en-WL | es-ES | es-MX | es-US | fa-AF | fa-IR | fr-CA | fr-FR | ga-IE | gd-GB | he-IL | hi-IN | ht-HT | id-ID | it-IT | ja-JP | jv-ID | km-KH | ko-KR | my-MM | ms-MY | nl-NL | pt-BR | pt-PT | ru-RU | ta-IN | te-IN | tr-TR | zh-CN | zh-TW | th-TH | en-ZA | en-NZ | vi-VN | sv-SE | ab-GE | ast-ES | az-AZ | ba-RU | be-BY | bg-BG | bn-IN | bs-BA | ca-ES | ckb-IQ | ckb-IR | cs-CZ | cy-WL | el-GR | et-EE | et-ET | eu-ES | fi-FI | gl-ES | gu-IN | ha-NG | hr-HR | hu-HU | hy-AM | is-IS | ka-GE | kab-DZ | kk-KZ | kn-IN | ky-KG | lg-IN | lt-LT | lv-LV | mhr-RU | mi-NZ | mk-MK | ml-IN | mn-MN | mr-IN | mt-MT | no-NO | ne-NP | or-IN | pa-IN | pl-PL | ps-AF | ro-RO | rw-RW | si-LK | sk-SK | sl-SI | so-SO | sq-AL | sr-RS | su-ID | sw-BI | sw-KE | sw-RW | sw-TZ | sw-UG | tl-PH | tt-RU | ug-CN | uk-UA | uz-UZ | wo-SN | zh-HK | zu-ZA`
 
  ** [LastModifiedTime](#API_CreateVocabularyFilter_ResponseSyntax) **   <a name="transcribe-CreateVocabularyFilter-response-LastModifiedTime"></a>
 The date and time you created your custom vocabulary filter.

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/near-real-time-monitoring-of-a
 title: 'Guidance for Near Real-time Monitoring of AWS Elastic Disaster Recovery using Amazon Q Developer'
 canonical_url: https://docs.aws.amazon.com/solutions/near-real-time-monitoring-of-aws-elastic-disaster-recovery-using-amazon-q-developer/
 source: aws-documentation
-generated_on: 2026-09-18
+generated_on: 2026-09-22
 ---
 
 # Guidance for Near Real-time Monitoring of AWS Elastic Disaster Recovery using Amazon Q Developer

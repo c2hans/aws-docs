@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lis
 # ListImages
 <a name="API_ListImages"></a>
 
-Returns the list of images that you have access to. Newly created images can take up to two minutes to appear in the ListImages API Results.
+Returns the list of images that you have access to.
 
 ## Request Syntax
 <a name="API_ListImages_RequestSyntax"></a>
@@ -40,7 +40,7 @@ The request does not use any URI parameters.
 The request accepts the following data in JSON format.
 
  ** [byName](#API_ListImages_RequestSyntax) **   <a name="imagebuilder-ListImages-request-byName"></a>
-Requests a list of images with a specific recipe name.
+Specifies whether to return one entry per image name, with all versions of each image aggregated. Defaults to `false`, which returns one entry per image version. You can't combine this option with the `version` filter.
 Type: Boolean
 Required: No
 
@@ -56,7 +56,7 @@ Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Required: No
 
  ** [includeDeprecated](#API_ListImages_RequestSyntax) **   <a name="imagebuilder-ListImages-request-includeDeprecated"></a>
-Includes deprecated images in the response list.
+Specifies whether to include deprecated Amazon-managed images in the results. Deprecated images that you own are always returned. Defaults to `false`.
 Type: Boolean
 Required: No
 
@@ -134,11 +134,11 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** ForbiddenException **
@@ -150,16 +150,84 @@ You have provided an invalid pagination token in your request.
 HTTP Status Code: 400
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_ListImages_Examples"></a>
+
+### List images that you own
+<a name="API_ListImages_Example_1"></a>
+
+The following example lists the image versions that you own. Setting `byName` to `false` returns each image version as its own entry, instead of grouping build versions under their image name.
+
+#### Sample Request
+<a name="API_ListImages_Example_1_Request"></a>
+
+```
+POST /ListImages HTTP/1.1
+Content-type: application/json
+
+{
+    "owner": "Self",
+    "byName": false
+}
+```
+
+#### Sample Response
+<a name="API_ListImages_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "requestId": "19794296-a45f-4079-8741-e00d3c916318",
+    "imageVersionList": [
+        {
+            "arn": "arn:aws:imagebuilder:us-west-2:111122223333:image/my-example-recipe/1.0.0",
+            "name": "my-example-recipe",
+            "type": "AMI",
+            "version": "1.0.0",
+            "platform": "Linux",
+            "osVersion": "Amazon Linux 2023",
+            "owner": "111122223333",
+            "dateCreated": "2026-09-09T19:12:18.677Z",
+            "buildType": "USER_INITIATED"
+        },
+        {
+            "arn": "arn:aws:imagebuilder:us-west-2:111122223333:image/my-example-windows-image/1.0.0",
+            "name": "my-example-windows-image",
+            "type": "AMI",
+            "version": "1.0.0",
+            "platform": "Windows",
+            "osVersion": "Microsoft Windows Server 2025",
+            "owner": "111122223333",
+            "dateCreated": "2026-03-10T19:57:27.323Z",
+            "buildType": "USER_INITIATED"
+        },
+        {
+            "arn": "arn:aws:imagebuilder:us-west-2:111122223333:image/my-example-windows-image/1.0.1",
+            "name": "my-example-windows-image",
+            "type": "AMI",
+            "version": "1.0.1",
+            "platform": "Windows",
+            "osVersion": "Microsoft Windows Server 2025",
+            "owner": "111122223333",
+            "dateCreated": "2026-03-10T20:32:31.795Z",
+            "buildType": "USER_INITIATED"
+        }
+    ]
+}
+```
 
 ## See Also
 <a name="API_ListImages_SeeAlso"></a>

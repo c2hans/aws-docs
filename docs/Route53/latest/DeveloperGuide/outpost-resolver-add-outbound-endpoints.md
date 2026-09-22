@@ -2,8 +2,11 @@
 source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/outpost-resolver-add-outbound-endpoints.html
 ---
 
-# Creating outbound endpoints
+# Creating outbound endpoints (first-generation AWS Outposts only)
 <a name="outpost-resolver-add-outbound-endpoints"></a>
+
+**Note**
+This content applies to first-generation AWS Outposts only. It doesn't apply to second-generation AWS Outposts.
 
 After you have opted in and configured a VPC Resolver, you can also add both inbound and outbound endpoints to resolve DNS queries to your on-premises network.
 

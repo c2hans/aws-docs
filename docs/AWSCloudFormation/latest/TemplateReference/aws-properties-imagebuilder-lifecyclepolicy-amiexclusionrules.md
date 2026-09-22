@@ -52,7 +52,7 @@ Configures whether public AMIs are excluded from the lifecycle action.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `LastLaunched`  <a name="cfn-imagebuilder-lifecyclepolicy-amiexclusionrules-lastlaunched"></a>
-Specifies configuration details for Image Builder to exclude the most recent resources from lifecycle actions.
+Configures Image Builder to exclude AMIs that were launched within the specified time period from lifecycle actions. AMIs with no recorded last-launched time aren't excluded by this rule.
 *Required*: No
 *Type*: [LastLaunched](aws-properties-imagebuilder-lifecyclepolicy-lastlaunched.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -64,7 +64,7 @@ Configures AWS Regions that are excluded from the lifecycle action.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SharedAccounts`  <a name="cfn-imagebuilder-lifecyclepolicy-amiexclusionrules-sharedaccounts"></a>
-Specifies AWS accounts whose resources are excluded from the lifecycle action.
+The lifecycle action doesn't apply to AMIs that are shared with any of the specified AWS accounts.
 *Required*: No
 *Type*: Array of String
 *Minimum*: `1`
@@ -72,7 +72,7 @@ Specifies AWS accounts whose resources are excluded from the lifecycle action.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TagMap`  <a name="cfn-imagebuilder-lifecyclepolicy-amiexclusionrules-tagmap"></a>
-Lists tags that should be excluded from lifecycle actions for the AMIs that have them.
+Lifecycle actions don't apply to AMIs that have any of these tags. Both the key and the value must match.
 *Required*: No
 *Type*: Object of String
 *Pattern*: `.{1,}`

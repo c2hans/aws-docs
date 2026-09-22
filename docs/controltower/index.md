@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/controltower/index.html
 title: 'AWS Control Tower Documentation'
 canonical_url: https://docs.aws.amazon.com/controltower/
 source: aws-documentation
-generated_on: 2026-09-19
+generated_on: 2026-09-22
 ---
 
 # AWS Control Tower Documentation

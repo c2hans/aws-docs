@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lis
 # ListComponents
 <a name="API_ListComponents"></a>
 
-Returns the list of components that can be filtered by name, or by using the listed `filters` to streamline results. Newly created components can take up to two minutes to appear in the ListComponents API Results.
+Returns the list of components that you have access to. By default, the response doesn't include components in the `DEPRECATED` state. To list deprecated components, use the `status` filter with the value `DEPRECATED`.
 
 **Note**
 The semantic version has four nodes: <major>.<minor>.<patch>/<build>. You can assign values for the first three, and can filter on all of them.
@@ -43,7 +43,7 @@ The request does not use any URI parameters.
 The request accepts the following data in JSON format.
 
  ** [byName](#API_ListComponents_RequestSyntax) **   <a name="imagebuilder-ListComponents-request-byName"></a>
-Returns the list of components for the specified name.
+Specifies whether to return one entry per component name, with all versions of each component aggregated. Defaults to `false`, which returns one entry per component version. You can't combine this option with the `version` filter.
 Type: Boolean
 Required: No
 
@@ -52,6 +52,8 @@ Use the following filters to streamline results:
 +  `description`
 +  `name`
 +  `platform`
++  `productCodes`
++  `status`
 +  `supportedOsVersion`
 +  `type`
 +  `version`
@@ -72,7 +74,7 @@ Length Constraints: Minimum length of 1. Maximum length of 65535.
 Required: No
 
  ** [owner](#API_ListComponents_RequestSyntax) **   <a name="imagebuilder-ListComponents-request-owner"></a>
-Filters results based on the type of owner for the component. By default, this request returns a list of components that your account owns. To see results for other types of owners, you can specify components that Amazon manages, third party components, or components that other accounts have shared with you.
+Filters results based on the type of owner for the component. By default, this request returns a list of components that your account owns. To see results for other types of owners, you can specify components that Amazon manages, components from the AWS Marketplace, third party components, or components that other accounts have shared with you.
 Type: String
 Valid Values: `Self | Shared | Amazon | ThirdParty | AWSMarketplace`
 Required: No
@@ -138,11 +140,11 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** ForbiddenException **
@@ -154,16 +156,94 @@ You have provided an invalid pagination token in your request.
 HTTP Status Code: 400
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_ListComponents_Examples"></a>
+
+### List components that you own
+<a name="API_ListComponents_Example_1"></a>
+
+The following example lists the component versions that your account owns, filtered to components for the Linux platform.
+
+#### Sample Request
+<a name="API_ListComponents_Example_1_Request"></a>
+
+```
+POST /ListComponents HTTP/1.1
+Content-type: application/json
+
+{
+    "owner": "Self",
+    "filters": [
+        {
+            "name": "platform",
+            "values": [
+                "Linux"
+            ]
+        }
+    ]
+}
+```
+
+#### Sample Response
+<a name="API_ListComponents_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "componentVersionList": [
+        {
+            "arn": "arn:aws:imagebuilder:us-west-2:111122223333:component/my-example-component/1.0.0",
+            "name": "my-example-component",
+            "version": "1.0.0",
+            "description": "Installs my example application",
+            "platform": "Linux",
+            "supportedOsVersions": [
+                "Amazon Linux 2023"
+            ],
+            "type": "BUILD",
+            "owner": "111122223333",
+            "dateCreated": "2026-09-09T18:31:49.661Z",
+            "status": "ACTIVE"
+        },
+        {
+            "arn": "arn:aws:imagebuilder:us-west-2:111122223333:component/my-example-imported-component/1.0.0",
+            "name": "my-example-imported-component",
+            "version": "1.0.0",
+            "description": "Installs my application from an imported shell script",
+            "platform": "Linux",
+            "type": "BUILD",
+            "owner": "111122223333",
+            "dateCreated": "2026-09-09T18:31:21.941Z",
+            "status": "ACTIVE"
+        },
+        {
+            "arn": "arn:aws:imagebuilder:us-west-2:111122223333:component/my-example-test-component/1.0.0",
+            "name": "my-example-test-component",
+            "version": "1.0.0",
+            "description": "Verifies that my example application is installed",
+            "platform": "Linux",
+            "type": "TEST",
+            "owner": "111122223333",
+            "dateCreated": "2026-09-09T18:31:52.888Z",
+            "status": "ACTIVE"
+        }
+    ],
+    "requestId": "fc51d989-ca0a-4ac7-9ca6-fb7786e70955"
+}
+```
 
 ## See Also
 <a name="API_ListComponents_SeeAlso"></a>

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/payments-fraud-prevention-on-a
 title: 'Guidance for Payments Fraud Prevention on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/payments-fraud-prevention-on-aws/
 source: aws-documentation
-generated_on: 2026-09-18
+generated_on: 2026-09-22
 ---
 
 # Guidance for Payments Fraud Prevention on AWS

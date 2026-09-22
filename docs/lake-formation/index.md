@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/lake-formation/index.html
 title: 'AWS Lake Formation Documentation'
 canonical_url: https://docs.aws.amazon.com/lake-formation/
 source: aws-documentation
-generated_on: 2026-09-18
+generated_on: 2026-09-22
 ---
 
 # AWS Lake Formation Documentation

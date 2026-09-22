@@ -109,7 +109,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [lifecyclePolicy](#API_GetLifecyclePolicy_ResponseSyntax) **   <a name="imagebuilder-GetLifecyclePolicy-response-lifecyclePolicy"></a>
-The Amazon Resource Name (ARN) of the image lifecycle policy resource that was returned.
+The details of the lifecycle policy that the request retrieved.
 Type: [LifecyclePolicy](API_LifecyclePolicy.md) object
 
 ## Errors
@@ -118,11 +118,11 @@ Type: [LifecyclePolicy](API_LifecyclePolicy.md) object
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** ForbiddenException **
@@ -130,16 +130,74 @@ You are not authorized to perform the requested operation.
 HTTP Status Code: 403
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_GetLifecyclePolicy_Examples"></a>
+
+### Get the details of a lifecycle policy
+<a name="API_GetLifecyclePolicy_Example_1"></a>
+
+The following example retrieves the full definition of the specified lifecycle policy.
+
+#### Sample Request
+<a name="API_GetLifecyclePolicy_Example_1_Request"></a>
+
+```
+GET /GetLifecyclePolicy?lifecyclePolicyArn=arn%3Aaws%3Aimagebuilder%3Aus-west-2%3A111122223333%3Alifecycle-policy%2Fmy-example-lifecycle-policy HTTP/1.1
+```
+
+#### Sample Response
+<a name="API_GetLifecyclePolicy_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "lifecyclePolicy": {
+        "arn": "arn:aws:imagebuilder:us-west-2:111122223333:lifecycle-policy/my-example-lifecycle-policy",
+        "name": "my-example-lifecycle-policy",
+        "description": "Deletes AMIs and snapshots for builds older than six months, keeping at least the five most recent",
+        "status": "ENABLED",
+        "executionRole": "arn:aws:iam::111122223333:role/my-example-lifecycle-role",
+        "resourceType": "AMI_IMAGE",
+        "policyDetails": [
+            {
+                "action": {
+                    "type": "DELETE",
+                    "includeResources": {
+                        "amis": true,
+                        "snapshots": true
+                    }
+                },
+                "filter": {
+                    "type": "AGE",
+                    "value": 6,
+                    "unit": "MONTHS",
+                    "retainAtLeast": 5
+                }
+            }
+        ],
+        "resourceSelection": {
+            "tagMap": {
+                "Environment": "my-example-environment"
+            }
+        },
+        "dateCreated": 1788982478.409,
+        "tags": {}
+    }
+}
+```
 
 ## See Also
 <a name="API_GetLifecyclePolicy_SeeAlso"></a>

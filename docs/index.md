@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/index.html
 title: 'Welcome to AWS Documentation'
 canonical_url: https://docs.aws.amazon.com/
 source: aws-documentation
-generated_on: 2026-09-18
+generated_on: 2026-09-22
 ---
 
 # Welcome to AWS Documentation
@@ -267,6 +267,7 @@ Find user guides, developer guides, API references, and CLI references for your 
 - [AWS AmplifyiOS (AWS Mobile SDK for iOS)](/sdk-for-ios/?icmpid=docs_homepage_fewebmobile): Build native iOS applications powered by AWS
 - [AWS AppSync](/appsync/?icmpid=docs_homepage_fewebmobile): Accelerate app development with fully-managed, scalable GraphQL APIs
 - [AWS Device Farm](/devicefarm/?icmpid=docs_homepage_fewebmobile): Test Android, iOS, and web apps on real devices in the AWS Cloud
+- [AWS Events API](/events/?icmpid=docs_homepage_fewebmobile): Browse and reserve AWS event sessions and manage your schedule
 - [Amazon Location Service](/location/?icmpid=docs_homepage_fewebmobile): Securely and easily add location data to applications
 - [AWS Mobile SDK for Unity](/sdk-for-unity/?icmpid=docs_homepage_fewebmobile): Find .NET classes that enable games written with Unity to utilize AWS
 - [Amazon Silk](/silk/?icmpid=docs_homepage_addtlrcs): Create a faster, more responsive mobile browsing experience

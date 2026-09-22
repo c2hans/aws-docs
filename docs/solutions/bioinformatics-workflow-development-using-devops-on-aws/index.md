@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/bioinformatics-workflow-develo
 title: 'Guidance for Bioinformatics Workflow Development Using DevOps on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/bioinformatics-workflow-development-using-devops-on-aws/
 source: aws-documentation
-generated_on: 2026-09-18
+generated_on: 2026-09-22
 ---
 
 # Guidance for Bioinformatics Workflow Development Using DevOps on AWS

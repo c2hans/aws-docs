@@ -43,6 +43,14 @@ AWS DevOps Agent will securely route your inference requests to available comput
 + DevOps Agent and Bedrock are not impacted by customer policies in Service Control Policies (SCPs) or Control Tower that restrict customer content to specific regions
 + Bedrock may use regions other than the originating region within your geography to perform stateless inference to optimize performance and availability
 
+#### European Union routing details
+<a name="european-union-routing-details"></a>
+
+For Agent Spaces in a European Region, AWS DevOps Agent uses the EU cross-Region inference profile. The following routing rules apply, as described in the AWS Artificial Intelligence Blog post [Unlocking AI flexibility in Europe: A guide to cross-region inference for EU data processing and model access](https://aws.amazon.com/blogs/machine-learning/unlocking-ai-flexibility-in-europe-a-guide-to-cross-region-inference-for-eu-data-processing-and-model-access/) :
++ Requests from a source Region in the EU are only routed to other AWS Regions in the EU.
++ Requests from EU source Regions are not routed to non-EU Regions. Europe (London) is a European Region but is handled separately from the EU data boundary, so it is not used as a destination Region for these requests.
++ Requests originating in Europe (London) are only routed between available EU Regions and Europe (London).
+
 ### Global cross-Region inference for specific Regions
 <a name="global-cross-region-inference-for-specific-regions"></a>
 

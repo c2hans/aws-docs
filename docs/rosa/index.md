@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/rosa/index.html
 title: 'Red Hat OpenShift Service on AWS Documentation'
 canonical_url: https://docs.aws.amazon.com/rosa/
 source: aws-documentation
-generated_on: 2026-09-18
+generated_on: 2026-09-22
 ---
 
 # Red Hat OpenShift Service on AWS Documentation

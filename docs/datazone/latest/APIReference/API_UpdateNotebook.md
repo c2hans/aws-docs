@@ -35,7 +35,8 @@ Content-type: application/json
    "parameters": {
       "{{string}}" : "{{string}}"
    },
-   "status": "{{string}}"
+   "status": "{{string}}",
+   "type": "{{string}}"
 }
 ```
 
@@ -111,6 +112,12 @@ Type: String
 Valid Values: `ACTIVE | ARCHIVED | SYNC_IN_PROGRESS | SYNC_FAILED`
 Required: No
 
+ ** [type](#API_UpdateNotebook_RequestSyntax) **   <a name="datazone-UpdateNotebook-request-type"></a>
+The updated type of the notebook.
+Type: String
+Valid Values: `DATA | SQL | QUERYBOOK`
+Required: No
+
 ## Response Syntax
 <a name="API_UpdateNotebook_ResponseSyntax"></a>
 
@@ -160,6 +167,7 @@ Content-type: application/json
       "string" : "string"
    },
    "status": "string",
+   "type": "string",
    "updatedAt": number,
    "updatedBy": "string"
 }
@@ -257,6 +265,11 @@ Value Length Constraints: Minimum length of 0. Maximum length of 1024.
 The status of the notebook.
 Type: String
 Valid Values: `ACTIVE | ARCHIVED | SYNC_IN_PROGRESS | SYNC_FAILED`
+
+ ** [type](#API_UpdateNotebook_ResponseSyntax) **   <a name="datazone-UpdateNotebook-response-type"></a>
+The type of the notebook.
+Type: String
+Valid Values: `DATA | SQL | QUERYBOOK`
 
  ** [updatedAt](#API_UpdateNotebook_ResponseSyntax) **   <a name="datazone-UpdateNotebook-response-updatedAt"></a>
 The timestamp of when the notebook was last updated.

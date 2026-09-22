@@ -245,6 +245,7 @@ The following actions are supported by Amazon Connect Service:
 +  [ListRoutingProfiles](API_ListRoutingProfiles.md)
 +  [ListRules](API_ListRules.md)
 +  [ListSecurityKeys](API_ListSecurityKeys.md)
++  [ListSecurityProfileAIAgents](API_ListSecurityProfileAIAgents.md)
 +  [ListSecurityProfileApplications](API_ListSecurityProfileApplications.md)
 +  [ListSecurityProfileFlowModules](API_ListSecurityProfileFlowModules.md)
 +  [ListSecurityProfilePermissions](API_ListSecurityProfilePermissions.md)

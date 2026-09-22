@@ -12,4 +12,4 @@ Amazon EventBridge helps you to respond to state changes in your AWS resources. 
 
 For more information about the features of Amazon EventBridge, see the [Amazon EventBridge User Guide](https://docs.aws.amazon.com/eventbridge/latest/userguide).
 
-This document was last published on September 18, 2026.
+This document was last published on September 22, 2026.

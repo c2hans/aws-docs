@@ -81,6 +81,7 @@ Role manager supports role creation for the following AWS service consoles:
 + AWS Elastic Beanstalk
 + Amazon EventBridge
 + AWS Lambda
++ Amazon RDS
 + Amazon SageMaker Unified Studio
 + AWS Secrets Manager
 + AWS Step Functions

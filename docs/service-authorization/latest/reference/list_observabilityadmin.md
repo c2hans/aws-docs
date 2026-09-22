@@ -265,6 +265,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_observabilityadmin-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_observabilityadmin-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_observabilityadmin-aws_TagKeys)<br />[observabilityadmin:CentralizationBackupRegion](#list_observabilityadmin-observabilityadmin_CentralizationBackupRegion)<br />[observabilityadmin:CentralizationDestinationAccount](#list_observabilityadmin-observabilityadmin_CentralizationDestinationAccount)<br />[observabilityadmin:CentralizationDestinationRegion](#list_observabilityadmin-observabilityadmin_CentralizationDestinationRegion)<br />[observabilityadmin:CentralizationRuleName](#list_observabilityadmin-observabilityadmin_CentralizationRuleName)<br />[observabilityadmin:CentralizationSourceId](#list_observabilityadmin-observabilityadmin_CentralizationSourceId)<br />[observabilityadmin:CentralizationSourceRegions](#list_observabilityadmin-observabilityadmin_CentralizationSourceRegions)
   - **Access level:** Write
 
+- **   [CreateDatasetIntegration](https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API_CreateDatasetIntegration.html)  **
+  - **Description:** Grants permission to create a dataset integration for the account
+  - **Resource types (\*required):** [dataset-integration\*](#list_observabilityadmin-resource-dataset-integration)
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_observabilityadmin-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_observabilityadmin-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_observabilityadmin-aws_TagKeys)
+  - **Access level:** Write
+
 - **   [CreateS3TableIntegration](https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API_CreateS3TableIntegration.html)  **
   - **Description:** Grants permission to create a new s3 table integration with the specified configuration
   - **Resource types (\*required):** [s3tableintegration\*](#list_observabilityadmin-resource-s3tableintegration)
@@ -295,6 +301,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_observabilityadmin-aws_ResourceTag___TagKey_)<br />[observabilityadmin:CentralizationRuleName](#list_observabilityadmin-observabilityadmin_CentralizationRuleName)
   - **Access level:** Write
 
+- **   [DeleteDatasetIntegration](https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API_DeleteDatasetIntegration.html)  **
+  - **Description:** Grants permission to delete the specified dataset integration for the account
+  - **Resource types (\*required):** [dataset-integration\*](#list_observabilityadmin-resource-dataset-integration)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_observabilityadmin-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 - **   [DeleteS3TableIntegration](https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API_DeleteS3TableIntegration.html)  **
   - **Description:** Grants permission to delete the s3 table integration with the specified arn
   - **Resource types (\*required):** [s3tableintegration\*](#list_observabilityadmin-resource-s3tableintegration)
@@ -323,6 +335,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to retrieve the specified organization centralization rule for the organization
   - **Resource types (\*required):** [organization-centralization-rule\*](#list_observabilityadmin-resource-organization-centralization-rule)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_observabilityadmin-aws_ResourceTag___TagKey_)<br />[observabilityadmin:CentralizationRuleName](#list_observabilityadmin-observabilityadmin_CentralizationRuleName)
+  - **Access level:** Read
+
+- **   [GetDatasetIntegration](https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API_GetDatasetIntegration.html)  **
+  - **Description:** Grants permission to retrieve the specified dataset integration for the account
+  - **Resource types (\*required):** [dataset-integration\*](#list_observabilityadmin-resource-dataset-integration)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_observabilityadmin-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
 - **   [GetS3TableIntegration](https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API_GetS3TableIntegration.html)  **
@@ -373,6 +391,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** List
 
+- **   [ListDatasetIntegrations](https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API_ListDatasetIntegrations.html)  **
+  - **Description:** Grants permission to list dataset integrations for the account
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** List
+
 - **   [ListResourceTelemetry](https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API_ListResourceTelemetry.html)  **
   - **Description:** Grants permission to retrieve telemetry configurations for resources associated with the account
   - **Resource types (\*required):**
@@ -393,6 +417,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [ListTagsForResource](https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API_ListTagsForResource.html)  **
   - **Description:** Grants permission to list the tags for the specified resource
+  - **Resource types (\*required):** [dataset-integration](#list_observabilityadmin-resource-dataset-integration) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_observabilityadmin-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [organization-centralization-rule](#list_observabilityadmin-resource-organization-centralization-rule) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_observabilityadmin-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [organization-telemetry-rule](#list_observabilityadmin-resource-organization-telemetry-rule) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_observabilityadmin-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [s3tableintegration](#list_observabilityadmin-resource-s3tableintegration) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_observabilityadmin-aws_ResourceTag___TagKey_)
@@ -456,6 +481,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [TagResource](https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API_TagResource.html)  **
   - **Description:** Grants permission to add or update the specified tags for the specified resource
+  - **Resource types (\*required):** [dataset-integration](#list_observabilityadmin-resource-dataset-integration) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_observabilityadmin-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_observabilityadmin-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_observabilityadmin-aws_TagKeys)
   - **Resource types (\*required):** [organization-centralization-rule](#list_observabilityadmin-resource-organization-centralization-rule) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_observabilityadmin-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_observabilityadmin-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_observabilityadmin-aws_TagKeys)
   - **Resource types (\*required):** [organization-telemetry-rule](#list_observabilityadmin-resource-organization-telemetry-rule) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_observabilityadmin-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_observabilityadmin-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_observabilityadmin-aws_TagKeys)
   - **Resource types (\*required):** [s3tableintegration](#list_observabilityadmin-resource-s3tableintegration) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_observabilityadmin-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_observabilityadmin-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_observabilityadmin-aws_TagKeys)
@@ -471,6 +497,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [UntagResource](https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API_UntagResource.html)  **
   - **Description:** Grants permission to remove the specified tags from the specified resource
+  - **Resource types (\*required):** [dataset-integration](#list_observabilityadmin-resource-dataset-integration) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_observabilityadmin-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_observabilityadmin-aws_TagKeys)
   - **Resource types (\*required):** [organization-centralization-rule](#list_observabilityadmin-resource-organization-centralization-rule) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_observabilityadmin-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_observabilityadmin-aws_TagKeys)
   - **Resource types (\*required):** [organization-telemetry-rule](#list_observabilityadmin-resource-organization-telemetry-rule) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_observabilityadmin-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_observabilityadmin-aws_TagKeys)
   - **Resource types (\*required):** [s3tableintegration](#list_observabilityadmin-resource-s3tableintegration) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_observabilityadmin-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_observabilityadmin-aws_TagKeys)
@@ -482,6 +509,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to update the specified centralization rule for the organization
   - **Resource types (\*required):** [organization-centralization-rule\*](#list_observabilityadmin-resource-organization-centralization-rule)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_observabilityadmin-aws_ResourceTag___TagKey_)<br />[observabilityadmin:CentralizationBackupRegion](#list_observabilityadmin-observabilityadmin_CentralizationBackupRegion)<br />[observabilityadmin:CentralizationDestinationAccount](#list_observabilityadmin-observabilityadmin_CentralizationDestinationAccount)<br />[observabilityadmin:CentralizationDestinationRegion](#list_observabilityadmin-observabilityadmin_CentralizationDestinationRegion)<br />[observabilityadmin:CentralizationRuleName](#list_observabilityadmin-observabilityadmin_CentralizationRuleName)<br />[observabilityadmin:CentralizationSourceId](#list_observabilityadmin-observabilityadmin_CentralizationSourceId)<br />[observabilityadmin:CentralizationSourceRegions](#list_observabilityadmin-observabilityadmin_CentralizationSourceRegions)
+  - **Access level:** Write
+
+- **   [UpdateDatasetIntegration](https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API_UpdateDatasetIntegration.html)  **
+  - **Description:** Grants permission to update the specified dataset integration for the account
+  - **Resource types (\*required):** [dataset-integration\*](#list_observabilityadmin-resource-dataset-integration)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_observabilityadmin-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [UpdateTelemetryPipeline](https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API_UpdateTelemetryPipeline.html)  **
@@ -515,6 +548,7 @@ The following resource types are defined by this service and can be used in the 
 
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
+|  [dataset-integration](https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API_DatasetIntegration.html)  | arn:${Partition}:observabilityadmin:${Region}:${Account}:dataset-integration/${DatasetIntegrationIdentifier} | [aws:ResourceTag/${TagKey}](#list_observabilityadmin-aws_ResourceTag___TagKey_) |
 |  [organization-centralization-rule](https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API_CentralizationRule.html)  | arn:${Partition}:observabilityadmin:${Region}:${Account}:organization-centralization-rule/${CentralizationRuleName} | [aws:ResourceTag/${TagKey}](#list_observabilityadmin-aws_ResourceTag___TagKey_) |
 |  [organization-telemetry-rule](https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API_TelemetryRule.html)  | arn:${Partition}:observabilityadmin:${Region}:${Account}:organization-telemetry-rule/${TelemetryRuleName} | [aws:ResourceTag/${TagKey}](#list_observabilityadmin-aws_ResourceTag___TagKey_) |
 |  [s3tableintegration](https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API_S3TableIntegration.html)  | arn:${Partition}:observabilityadmin:${Region}:${Account}:s3tableintegration/${S3TableIntegrationIdentifier} | [aws:ResourceTag/${TagKey}](#list_observabilityadmin-aws_ResourceTag___TagKey_) |

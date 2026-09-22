@@ -99,11 +99,11 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** ForbiddenException **
@@ -111,16 +111,65 @@ You are not authorized to perform the requested operation.
 HTTP Status Code: 403
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_GetInfrastructureConfiguration_Examples"></a>
+
+### Get the details of an infrastructure configuration
+<a name="API_GetInfrastructureConfiguration_Example_1"></a>
+
+The following example retrieves an infrastructure configuration that specifies the instance types, instance profile, and instance metadata options that Image Builder uses for build and test instances.
+
+#### Sample Request
+<a name="API_GetInfrastructureConfiguration_Example_1_Request"></a>
+
+```
+GET /GetInfrastructureConfiguration?infrastructureConfigurationArn=arn%3Aaws%3Aimagebuilder%3Aus-west-2%3A111122223333%3Ainfrastructure-configuration%2Fmy-example-infrastructure-configuration HTTP/1.1
+```
+
+#### Sample Response
+<a name="API_GetInfrastructureConfiguration_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "requestId": "7ba25cd0-0735-4f44-bc67-2f231e96503f",
+    "infrastructureConfiguration": {
+        "arn": "arn:aws:imagebuilder:us-west-2:111122223333:infrastructure-configuration/my-example-infrastructure-configuration",
+        "name": "my-example-infrastructure-configuration",
+        "description": "Infrastructure configuration for my application image builds",
+        "instanceTypes": [
+            "m5.large",
+            "m5.xlarge"
+        ],
+        "instanceProfileName": "EC2InstanceProfileForImageBuilder",
+        "terminateInstanceOnFailure": true,
+        "dateCreated": "2026-09-09T19:36:48.933Z",
+        "resourceTags": {
+            "CostCenter": "12345"
+        },
+        "instanceMetadataOptions": {
+            "httpTokens": "required",
+            "httpPutResponseHopLimit": 2
+        },
+        "tags": {
+            "Environment": "test"
+        }
+    }
+}
+```
 
 ## See Also
 <a name="API_GetInfrastructureConfiguration_SeeAlso"></a>

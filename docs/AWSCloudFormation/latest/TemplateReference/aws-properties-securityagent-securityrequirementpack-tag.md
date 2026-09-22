@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::SecurityAgent::SecurityRequirementPack Tag
 <a name="aws-properties-securityagent-securityrequirementpack-tag"></a>
 
-<a name="aws-properties-securityagent-securityrequirementpack-tag-description"></a>The `Tag` property type specifies Property description not available. for an [AWS::SecurityAgent::SecurityRequirementPack](aws-resource-securityagent-securityrequirementpack.md).
+The tags associated with the resource.
 
 ## Syntax
 <a name="aws-properties-securityagent-securityrequirementpack-tag-syntax"></a>
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-securityagent-securityrequirementpack-tag-properties"></a>
 
 `Key`  <a name="cfn-securityagent-securityrequirementpack-tag-key"></a>
-Property description not available.
+The tags to add to the resource.
 *Required*: Yes
 *Type*: String
 *Minimum*: `1`
@@ -44,7 +44,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Value`  <a name="cfn-securityagent-securityrequirementpack-tag-value"></a>
-Property description not available.
+The tags to add to the resource.
 *Required*: Yes
 *Type*: String
 *Minimum*: `0`

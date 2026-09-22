@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Ima
 # ImageScanFinding
 <a name="API_ImageScanFinding"></a>
 
-Contains details about a vulnerability scan finding.
+Contains details about a vulnerability scan finding that Amazon Inspector generated for an image.
 
 ## Contents
 <a name="API_ImageScanFinding_Contents"></a>
@@ -28,7 +28,10 @@ Type: Timestamp
 Required: No
 
  ** fixAvailable **   <a name="imagebuilder-Type-ImageScanFinding-fixAvailable"></a>
-Details about whether a fix is available for any of the packages that are identified in the finding through a version update.
+Details about whether a fix is available for any of the packages that are identified in the finding through a version update. Valid values include:
++  `YES` – A fix is available for all of the packages identified in the finding.
++  `NO` – No fix is available.
++  `PARTIAL` – A fix is available for some, but not all, of the packages identified in the finding.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
@@ -67,7 +70,7 @@ Type: [Remediation](API_Remediation.md) object
 Required: No
 
  ** severity **   <a name="imagebuilder-Type-ImageScanFinding-severity"></a>
-The severity of the finding.
+The severity of the finding. For more information, see [Severity levels for Amazon Inspector findings](https://docs.aws.amazon.com/inspector/latest/user/findings-understanding-severity.html) in the *Amazon Inspector User Guide*.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Fas
 # FastLaunchLaunchTemplateSpecification
 <a name="API_FastLaunchLaunchTemplateSpecification"></a>
 
-Identifies the launch template that the associated Windows AMI uses for launching an instance when faster launching is enabled.
+Identifies the launch template that the associated Windows AMI uses for launching an instance when Windows fast launch is enabled.
 
 **Note**
 You can specify either the `launchTemplateName` or the `launchTemplateId`, but not both.
@@ -14,19 +14,19 @@ You can specify either the `launchTemplateName` or the `launchTemplateId`, but n
 <a name="API_FastLaunchLaunchTemplateSpecification_Contents"></a>
 
  ** launchTemplateId **   <a name="imagebuilder-Type-FastLaunchLaunchTemplateSpecification-launchTemplateId"></a>
-The ID of the launch template to use for faster launching for a Windows AMI.
+The ID of the launch template to use for Windows fast launch for a Windows AMI.
 Type: String
 Pattern: `^lt-[a-z0-9-_]{17}$`
 Required: No
 
  ** launchTemplateName **   <a name="imagebuilder-Type-FastLaunchLaunchTemplateSpecification-launchTemplateName"></a>
-The name of the launch template to use for faster launching for a Windows AMI.
+The name of the launch template to use for Windows fast launch for a Windows AMI.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
  ** launchTemplateVersion **   <a name="imagebuilder-Type-FastLaunchLaunchTemplateSpecification-launchTemplateVersion"></a>
-The version of the launch template to use for faster launching for a Windows AMI.
+The version of the launch template to use for Windows fast launch for a Windows AMI.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No

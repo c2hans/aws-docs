@@ -131,11 +131,11 @@ Pattern: `^wf-[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** ForbiddenException **
@@ -147,16 +147,119 @@ You have provided an invalid pagination token in your request.
 HTTP Status Code: 400
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_ListWorkflowStepExecutions_Examples"></a>
+
+### List the steps that ran in a workflow execution
+<a name="API_ListWorkflowStepExecutions_Example_1"></a>
+
+The following example lists runtime details for each step in the specified runtime instance of a workflow, in this case the build workflow from an image build.
+
+#### Sample Request
+<a name="API_ListWorkflowStepExecutions_Example_1_Request"></a>
+
+```
+POST /ListWorkflowStepExecutions HTTP/1.1
+Content-type: application/json
+
+{
+    "workflowExecutionId": "wf-165b1cb6-3a62-4618-a021-94ddcbe32908"
+}
+```
+
+#### Sample Response
+<a name="API_ListWorkflowStepExecutions_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "requestId": "c6258beb-bc78-40dc-8bf9-fa5a8a93d3f3",
+    "steps": [
+        {
+            "stepExecutionId": "step-2e6fef0d-657c-4b7e-8706-ff24da9afa01",
+            "name": "LaunchBuildInstance",
+            "action": "LaunchInstance",
+            "status": "COMPLETED",
+            "inputs": "{\"waitFor\": \"ssmAgent\"}",
+            "outputs": "{\"instanceId\": \"i-1234567890abcdef0\"}",
+            "startTime": "2026-09-09T19:12:23.418Z",
+            "endTime": "2026-09-09T19:14:50.822Z"
+        },
+        {
+            "stepExecutionId": "step-f76c24fe-dc70-435b-8dc1-987a0ca6d5a5",
+            "name": "ApplyBuildComponents",
+            "action": "ExecuteComponents",
+            "status": "SKIPPED",
+            "inputs": "{\"instanceId.$\": \"$.stepOutputs.LaunchBuildInstance.instanceId\"}",
+            "startTime": "2026-09-09T19:14:51.229Z",
+            "endTime": "2026-09-09T19:14:51.229Z"
+        },
+        {
+            "stepExecutionId": "step-aa880a39-e72c-4561-aa05-eb3de860441a",
+            "name": "InventoryCollection",
+            "action": "CollectImageMetadata",
+            "status": "COMPLETED",
+            "inputs": "{\"instanceId\": \"i-1234567890abcdef0\"}",
+            "outputs": "{\"osVersion\": \"Amazon Linux 2023\", \"associationId\": \"7416ce2e-4ee8-4660-8c42-a09a03f61010\"}",
+            "startTime": "2026-09-09T19:14:51.818Z",
+            "endTime": "2026-09-09T19:16:26.267Z"
+        },
+        {
+            "stepExecutionId": "step-572bdd17-25c4-4729-9f2e-7fd611807751",
+            "name": "RunSanitizeScript",
+            "action": "SanitizeInstance",
+            "status": "COMPLETED",
+            "outputs": "{\"status\": \"Success\", \"output\": \"Skipping cleanup\\n\", \"runCommandId\": \"9eef9fe1-12e8-4c97-8e9a-4e79632864f4\"}",
+            "startTime": "2026-09-09T19:16:26.742Z",
+            "endTime": "2026-09-09T19:16:36.559Z"
+        },
+        {
+            "stepExecutionId": "step-06026579-939d-4b1b-b36e-fa58cb712a48",
+            "name": "RunSysPrepScript",
+            "action": "RunSysPrep",
+            "status": "SKIPPED",
+            "inputs": "{\"instanceId.$\": \"$.stepOutputs.LaunchBuildInstance.instanceId\"}",
+            "startTime": "2026-09-09T19:16:36.973Z",
+            "endTime": "2026-09-09T19:16:36.973Z"
+        },
+        {
+            "stepExecutionId": "step-50e4312d-400c-453e-957c-714cbee6961c",
+            "name": "CreateOutputAMI",
+            "action": "CreateImage",
+            "status": "COMPLETED",
+            "inputs": "{\"instanceId\": \"i-1234567890abcdef0\"}",
+            "outputs": "{\"imageId\": \"ami-1234567890abcdef0\"}",
+            "startTime": "2026-09-09T19:16:37.499Z",
+            "endTime": "2026-09-09T19:19:02.135Z"
+        },
+        {
+            "stepExecutionId": "step-22673db0-e280-4948-b9b5-789791531c34",
+            "name": "TerminateBuildInstance",
+            "action": "TerminateInstance",
+            "status": "COMPLETED",
+            "inputs": "{\"instanceId\": \"i-1234567890abcdef0\"}",
+            "startTime": "2026-09-09T19:19:02.546Z",
+            "endTime": "2026-09-09T19:19:06.132Z"
+        }
+    ],
+    "workflowBuildVersionArn": "arn:aws:imagebuilder:us-west-2:aws:workflow/build/build-image/1.0.3/1",
+    "workflowExecutionId": "wf-165b1cb6-3a62-4618-a021-94ddcbe32908",
+    "imageBuildVersionArn": "arn:aws:imagebuilder:us-west-2:111122223333:image/my-example-recipe/1.0.0/1"
+}
+```
 
 ## See Also
 <a name="API_ListWorkflowStepExecutions_SeeAlso"></a>

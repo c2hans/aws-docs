@@ -34,7 +34,7 @@ Type: String
 Required: No
 
  ** inputs **   <a name="imagebuilder-Type-WorkflowStepMetadata-inputs"></a>
-Input parameters that Image Builder provides for the workflow step.
+Input parameters that Image Builder provides for the workflow step, as a JSON-encoded string.
 Type: String
 Required: No
 
@@ -57,7 +57,7 @@ Pattern: `^[A-Za-z][A-Za-z0-9-_]{1,99}$`
 Required: No
 
  ** outputs **   <a name="imagebuilder-Type-WorkflowStepMetadata-outputs"></a>
-The file names that the workflow step created as output for this runtime instance of the workflow.
+The output values that the workflow step produced for this runtime instance of the workflow, as a JSON-encoded string. For example, a step that launches an instance outputs the instance ID. If the step failed, this field contains the error message.
 Type: String
 Required: No
 

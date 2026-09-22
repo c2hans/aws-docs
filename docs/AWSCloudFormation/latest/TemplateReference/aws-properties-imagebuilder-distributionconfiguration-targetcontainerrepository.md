@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-imagebuilder-distributionconfiguration-targetcontainerrepository-properties"></a>
 
 `RepositoryName`  <a name="cfn-imagebuilder-distributionconfiguration-targetcontainerrepository-repositoryname"></a>
-The name of the container repository where the output container image is stored. This name is prefixed by the repository location. For example, `<repository location url>/repository_name`.
+The name of the container repository where the output container image is stored. Provide the repository name only (a namespace path such as `team-a/my-repo` is allowed, but not the registry hostname).
 *Required*: No
 *Type*: String
 *Minimum*: `1`

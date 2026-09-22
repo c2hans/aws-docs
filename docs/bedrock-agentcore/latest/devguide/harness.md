@@ -25,6 +25,7 @@ There is no separate harness charge. You pay only for the underlying AgentCore c
 + [Get started](harness-get-started.md)
 + [Models and instructions](harness-models.md)
 + [Tools](harness-tools.md)
++ [Lifecycle hooks](harness-lifecycle-hooks.md)
 + [Skills](harness-skills.md)
 + [Memory](harness-memory.md)
 + [Environment and filesystem](harness-environment.md)

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/connect/index.html
 title: 'Connect Customer'
 canonical_url: https://docs.aws.amazon.com/connect/
 source: aws-documentation
-generated_on: 2026-09-19
+generated_on: 2026-09-22
 ---
 
 # Connect Customer

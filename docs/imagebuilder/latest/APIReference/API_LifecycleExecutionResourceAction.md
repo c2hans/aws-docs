@@ -11,7 +11,7 @@ The lifecycle policy action that was identified for the impacted resource.
 <a name="API_LifecycleExecutionResourceAction_Contents"></a>
 
  ** name **   <a name="imagebuilder-Type-LifecycleExecutionResourceAction-name"></a>
-The name of the resource that was identified for a lifecycle policy action.
+The name of the lifecycle action that was identified for the resource.
 Type: String
 Valid Values: `AVAILABLE | DELETE | DEPRECATE | DISABLE`
 Required: No

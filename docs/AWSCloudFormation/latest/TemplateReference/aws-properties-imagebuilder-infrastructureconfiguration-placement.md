@@ -48,7 +48,7 @@ The Availability Zone where your build and test instances will launch.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `HostId`  <a name="cfn-imagebuilder-infrastructureconfiguration-placement-hostid"></a>
-The ID of the Dedicated Host on which build and test instances run. This only applies if `tenancy` is `host`. If you specify the host ID, you must not specify the resource group ARN. If you specify both, Image Builder returns an error.
+The ID of the Dedicated Host on which build and test instances run. This only applies if `tenancy` is `host`.
 *Required*: No
 *Type*: String
 *Minimum*: `1`
@@ -56,7 +56,7 @@ The ID of the Dedicated Host on which build and test instances run. This only ap
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `HostResourceGroupArn`  <a name="cfn-imagebuilder-infrastructureconfiguration-placement-hostresourcegrouparn"></a>
-The Amazon Resource Name (ARN) of the host resource group in which to launch build and test instances. This only applies if `tenancy` is `host`. If you specify the resource group ARN, you must not specify the host ID. If you specify both, Image Builder returns an error.
+The Amazon Resource Name (ARN) of the host resource group in which to launch build and test instances. This only applies if `tenancy` is `host`.
 *Required*: No
 *Type*: String
 *Minimum*: `1`

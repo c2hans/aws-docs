@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Ret
 # RetryImage
 <a name="API_RetryImage"></a>
 
-Retries an image distribution or test without rebuilding the image.
+Retries a failed or canceled image build without rebuilding the phases that already completed. The image re-runs asynchronously in place: the same build version returns to the test or distribution phase where it failed and continues from there. No new image build version is created. Retry is only supported for AMI-based images.
 
 ## Request Syntax
 <a name="API_RetryImage_RequestSyntax"></a>
@@ -31,13 +31,13 @@ The request does not use any URI parameters.
 The request accepts the following data in JSON format.
 
  ** [clientToken](#API_RetryImage_RequestSyntax) **   <a name="imagebuilder-RetryImage-request-clientToken"></a>
-A unique, case-sensitive identifier you provide to ensure that the operation completes no more than one time. If this token matches a previous request, the service ignores the request, but does not return an error. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
+A unique, case-sensitive identifier you provide to ensure that the operation runs no more than one time. If you retry a request with the same client token, Image Builder returns the original response without running the operation again. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html) in the *Amazon EC2 API Reference*.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: Yes
 
  ** [imageBuildVersionArn](#API_RetryImage_RequestSyntax) **   <a name="imagebuilder-RetryImage-request-imageBuildVersionArn"></a>
-The source image Amazon Resource Name (ARN) to retry.
+The Amazon Resource Name (ARN) of the image build version that you want to retry. The image must be in the `FAILED` or `CANCELLED` state.
 Type: String
 Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):image/[a-z0-9-_]+/[0-9]+\.[0-9]+\.[0-9]+/[0-9]+$`
 Required: Yes
@@ -78,11 +78,11 @@ Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):image/
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** ForbiddenException **
@@ -94,7 +94,7 @@ You have specified a client token for an operation using parameter values that d
 HTTP Status Code: 400
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** ResourceInUseException **
@@ -102,12 +102,46 @@ The resource that you are trying to operate on is currently in use. Review the m
 HTTP Status Code: 400
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_RetryImage_Examples"></a>
+
+### Retry an image build
+<a name="API_RetryImage_Example_1"></a>
+
+The following example retries a cancelled image build, which resumes in place from the phase where it stopped.
+
+#### Sample Request
+<a name="API_RetryImage_Example_1_Request"></a>
+
+```
+PUT /RetryImage HTTP/1.1
+Content-type: application/json
+
+{
+    "imageBuildVersionArn": "arn:aws:imagebuilder:us-west-2:111122223333:image/my-example-recipe/1.0.0/1",
+    "clientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLEfffff"
+}
+```
+
+#### Sample Response
+<a name="API_RetryImage_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "clientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLEfffff",
+    "imageBuildVersionArn": "arn:aws:imagebuilder:us-west-2:111122223333:image/my-example-recipe/1.0.0/1"
+}
+```
 
 ## See Also
 <a name="API_RetryImage_SeeAlso"></a>

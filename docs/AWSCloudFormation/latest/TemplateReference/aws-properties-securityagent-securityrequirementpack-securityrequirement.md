@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::SecurityAgent::SecurityRequirementPack SecurityRequirement
 <a name="aws-properties-securityagent-securityrequirementpack-securityrequirement"></a>
 
-<a name="aws-properties-securityagent-securityrequirementpack-securityrequirement-description"></a>The `SecurityRequirement` property type specifies Property description not available. for an [AWS::SecurityAgent::SecurityRequirementPack](aws-resource-securityagent-securityrequirementpack.md).
+A security requirement that defines evaluation criteria and remediation guidance within a security requirement pack.
 
 ## Syntax
 <a name="aws-properties-securityagent-securityrequirementpack-securityrequirement-syntax"></a>

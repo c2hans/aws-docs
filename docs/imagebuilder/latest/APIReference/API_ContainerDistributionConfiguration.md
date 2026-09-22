@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Con
 # ContainerDistributionConfiguration
 <a name="API_ContainerDistributionConfiguration"></a>
 
-Container distribution settings for encryption, licensing, and sharing in a specific Region.
+Defines how the output container image is distributed in a specific AWS Region: the target repository, the image tags to apply to the distributed image, and an optional description.
 
 ## Contents
 <a name="API_ContainerDistributionConfiguration_Contents"></a>
@@ -16,7 +16,7 @@ Type: [TargetContainerRepository](API_TargetContainerRepository.md) object
 Required: Yes
 
  ** containerTags **   <a name="imagebuilder-Type-ContainerDistributionConfiguration-containerTags"></a>
-Tags that are attached to the container distribution configuration.
+Tags that Image Builder applies to the distributed container image in the target repository. These are repository image tags, not resource tags.
 Type: Array of strings
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No

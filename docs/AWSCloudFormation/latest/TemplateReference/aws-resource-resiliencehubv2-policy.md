@@ -28,6 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[MultiAz](#cfn-resiliencehubv2-policy-multiaz)" : {{MultiAzTargets}},
       "[MultiRegion](#cfn-resiliencehubv2-policy-multiregion)" : {{MultiRegionTargets}},
       "[Name](#cfn-resiliencehubv2-policy-name)" : {{String}},
+      "[SharingEnabled](#cfn-resiliencehubv2-policy-sharingenabled)" : {{Boolean}},
       "[Tags](#cfn-resiliencehubv2-policy-tags)" : {{[ Tag, ... ]}}
     }
 }
@@ -50,6 +51,7 @@ Properties:
   [MultiRegion](#cfn-resiliencehubv2-policy-multiregion): {{
     MultiRegionTargets}}
   [Name](#cfn-resiliencehubv2-policy-name): {{String}}
+  [SharingEnabled](#cfn-resiliencehubv2-policy-sharingenabled): {{Boolean}}
   [Tags](#cfn-resiliencehubv2-policy-tags): {{
     - Tag}}
 ```
@@ -103,6 +105,12 @@ The name of the policy.
 *Type*: String
 *Pattern*: `^[A-Za-z0-9][A-Za-z0-9_\-]{1,59}$`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`SharingEnabled`  <a name="cfn-resiliencehubv2-policy-sharingenabled"></a>
+Property description not available.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tags`  <a name="cfn-resiliencehubv2-policy-tags"></a>
 Property description not available.

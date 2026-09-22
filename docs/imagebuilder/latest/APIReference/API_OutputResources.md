@@ -11,12 +11,12 @@ The resources produced by this image.
 <a name="API_OutputResources_Contents"></a>
 
  ** amis **   <a name="imagebuilder-Type-OutputResources-amis"></a>
-The Amazon EC2 AMIs created by this image.
+The Amazon EC2 AMIs created by this image. The list contains one entry per AMI, including copies that distribution created in each target AWS Region and account.
 Type: Array of [Ami](API_Ami.md) objects
 Required: No
 
  ** containers **   <a name="imagebuilder-Type-OutputResources-containers"></a>
-Container images that the pipeline has generated and stored in the output repository.
+The container images that Image Builder created when it built this image, stored in the output Amazon ECR repository.
 Type: Array of [Container](API_Container.md) objects
 Required: No
 

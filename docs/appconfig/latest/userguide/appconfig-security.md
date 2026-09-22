@@ -279,7 +279,7 @@ The following is an example of a custom endpoint policy. When you attach this po
             "{{appconfig}}:{{CreateEnvironment}}",
             "{{appconfig}}:{{CreateConfigurationProfile}}",
             "{{appconfig}}:{{StartDeployment}}",
-            "{{appconfig}}:{{GetLatestConfiguration}}"
+            "{{appconfig}}:{{GetLatestConfiguration}}",
             "{{appconfig}}:{{StartConfigurationSession}}"
          ],
          "Resource":"*"

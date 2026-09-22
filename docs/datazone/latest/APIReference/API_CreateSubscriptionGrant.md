@@ -87,6 +87,7 @@ Content-type: application/json
             "assetId": "string",
             "errorMessage": "string",
             "filterIds": [ "string" ],
+            "scopeName": "string",
             "status": "string"
          },
          "failureCause": {

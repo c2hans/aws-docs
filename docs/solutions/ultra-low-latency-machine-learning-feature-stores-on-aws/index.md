@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/ultra-low-latency-machine-lear
 title: 'Guidance for Ultra-Low Latency, Machine Learning Feature Stores on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/ultra-low-latency-machine-learning-feature-stores-on-aws/
 source: aws-documentation
-generated_on: 2026-09-18
+generated_on: 2026-09-22
 ---
 
 # Guidance for Ultra-Low Latency, Machine Learning Feature Stores on AWS

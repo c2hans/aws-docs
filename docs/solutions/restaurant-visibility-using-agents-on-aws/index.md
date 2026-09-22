@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/restaurant-visibility-using-ag
 title: 'Guidance for Restaurant Visibility using Agents on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/restaurant-visibility-using-agents-on-aws/
 source: aws-documentation
-generated_on: 2026-09-18
+generated_on: 2026-09-22
 ---
 
 # Guidance for Restaurant Visibility using Agents on AWS

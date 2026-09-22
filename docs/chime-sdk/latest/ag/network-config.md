@@ -66,10 +66,6 @@ The following destinations and ports are recommended if you use Amazon Chime SDK
 | Europe (Ireland) | 99.77.250.0/24 |  2600:f0f0:c043::/48 | UDP/5000:65000 |
 | Europe (London) | 99.77.249.0/24 | 2600:f0f0:c045::/48 | UDP/5000:65000 |
 | US East (N. Virginia) | 3.80.16.0/23 | 2600:f0f0:c040::/48 | UDP/5000:65000 |
-| US East (N. Virginia) | 52.55.62.128/25 | 2600:f0f0:c040::/48 | UDP/1024:65535 |
-| US East (N. Virginia) | 52.55.63.0/25 | 2600:f0f0:c040::/48 | UDP/1024:65535 |
-| US East (N. Virginia) | 34.212.95.128/25 | 2600:f0f0:c040::/48 | UDP/1024:65535 |
-| US East (N. Virginia) | 34.223.21.0/25 | 2600:f0f0:c040::/48 | UDP/1024:65535 |
 | US West (Oregon) | 99.77.253.0/24 | 2600:f0f0:c041::/48 | UDP/5000:65000 |
 | Global |  | 2600:f0f0:c040::/42 | UDP/5000:65000 |
 

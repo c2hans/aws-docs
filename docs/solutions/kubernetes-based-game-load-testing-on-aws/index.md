@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/kubernetes-based-game-load-tes
 title: 'Guidance for Kubernetes-Based Game Load Testing on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/kubernetes-based-game-load-testing-on-aws/
 source: aws-documentation
-generated_on: 2026-09-18
+generated_on: 2026-09-22
 ---
 
 # Guidance for Kubernetes-Based Game Load Testing on AWS

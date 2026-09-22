@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/securing-sensitive-data-in-rag
 title: 'Guidance for Securing Sensitive Data in RAG Applications Using Amazon Bedrock'
 canonical_url: https://docs.aws.amazon.com/solutions/securing-sensitive-data-in-rag-applications-using-amazon-bedrock/
 source: aws-documentation
-generated_on: 2026-09-18
+generated_on: 2026-09-22
 ---
 
 # Guidance for Securing Sensitive Data in RAG Applications Using Amazon Bedrock

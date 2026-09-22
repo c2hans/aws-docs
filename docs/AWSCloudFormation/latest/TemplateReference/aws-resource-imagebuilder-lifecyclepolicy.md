@@ -64,7 +64,7 @@ Optional description for the lifecycle policy.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ExecutionRole`  <a name="cfn-imagebuilder-lifecyclepolicy-executionrole"></a>
-The name or Amazon Resource Name (ARN) for the IAM role you create that grants Image Builder access to run lifecycle actions.
+The name or Amazon Resource Name (ARN) for the IAM role you create that grants Image Builder access to run lifecycle actions. You must have permission to pass the role, and the role's trust policy must allow the Image Builder service principal to assume it.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^(?:arn:aws(?:-[a-z]+)*:iam::[0-9]{12}:role/)?[a-zA-Z_0-9+=,.@\-_/]+$`
@@ -73,14 +73,14 @@ The name or Amazon Resource Name (ARN) for the IAM role you create that grants I
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Name`  <a name="cfn-imagebuilder-lifecyclepolicy-name"></a>
-The name of the lifecycle policy to create.
+The name of the lifecycle policy to create. Policy names must be unique to your account in each AWS Region. Image Builder generates the policy ARN from a normalized form of the name, so names that differ only in case, spaces, or underscores count as the same name. You can't change the name after creation.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[-_A-Za-z-0-9][-_A-Za-z0-9 ]{1,126}[-_A-Za-z-0-9]$`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `PolicyDetails`  <a name="cfn-imagebuilder-lifecyclepolicy-policydetails"></a>
-Configuration details for the lifecycle policy rules.
+Configuration details for the lifecycle policy rules. A policy can contain at most one rule per action type: one `DELETE`, one `DEPRECATE`, and one `DISABLE`.
 *Required*: Yes
 *Type*: Array of [PolicyDetail](aws-properties-imagebuilder-lifecyclepolicy-policydetail.md)
 *Minimum*: `1`
@@ -88,20 +88,20 @@ Configuration details for the lifecycle policy rules.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ResourceSelection`  <a name="cfn-imagebuilder-lifecyclepolicy-resourceselection"></a>
-Selection criteria for the resources that the lifecycle policy applies to.
+Selection criteria for the resources that the lifecycle policy applies to. You must specify exactly one selection criteria: either recipes or a tag map, not both.
 *Required*: Yes
 *Type*: [ResourceSelection](aws-properties-imagebuilder-lifecyclepolicy-resourceselection.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ResourceType`  <a name="cfn-imagebuilder-lifecyclepolicy-resourcetype"></a>
-The type of Image Builder resource that the lifecycle policy applies to.
+The type of Image Builder resource that the lifecycle policy applies to. The resource type determines the allowed rule actions: policies for AMI-based Image Builder images support `DELETE`, `DEPRECATE`, and `DISABLE`, and policies for container-based Image Builder images support only `DELETE`. You can't change the resource type after creation.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `AMI_IMAGE | CONTAINER_IMAGE`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Status`  <a name="cfn-imagebuilder-lifecyclepolicy-status"></a>
-Indicates whether the lifecycle policy resource is enabled.
+Indicates whether the lifecycle policy resource is enabled. If you don't specify a status, it defaults to `ENABLED`. Only enabled policies run on their schedule.
 *Required*: No
 *Type*: String
 *Allowed values*: `DISABLED | ENABLED`

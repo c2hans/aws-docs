@@ -18,6 +18,35 @@ The Innovation Sandbox on AWS solution can be updated to newer versions via two 
 **Note**
 During the update process, you should turn on maintenance mode to prevent managers and users from making API requests while the update is in progress. For more information, see [Managing maintenance mode](administrator-guide.md#maintenance-mode).
 
+## Update considerations for version 1.3.3
+<a name="update-considerations-version-1-3-3"></a>
+
+Version 1.3.3 replaces the solution’s API Gateway REST API and introduces a global setting that controls IAM Identity Center group assignments. Complete the following actions when updating.
+
+### Update machine-to-machine (M2M) clients after the Compute stack
+<a name="v1-3-3-m2m-api-update"></a>
+
+The Compute stack update creates a new API Gateway REST API with a new API ID and invoke URL. Existing M2M client roles remain scoped to the previous API until their client stacks are updated. During this interval, M2M requests fail with a `403` authorization response.
+
+After the Compute stack update completes:
+
+1. Update every M2M client stack with the version 1.3.3 `InnovationSandbox-M2mClient.template`.
+
+1. For the new `RestApiIdSsmParam` parameter, use the Compute stack’s `RestApiIdSsmParamName` output. The conventional value is `InnovationSandbox_<Namespace>_Compute_RestApiId`.
+
+1. Verify that the client stack’s `ApiGatewayUrl` output contains the new API URL.
+
+1. Update integrations that store the previous API URL. If you installed the generated `aws isb` CLI model, rerun `install-aws-isb-cli.py` with the same profile and client stack to refresh its endpoint configuration.
+
+Future M2M client stack updates re-read the API ID from the SSM parameter. An SSM value change alone does not update an existing client stack; update the client stack whenever the Compute stack replaces the API.
+
+### Review the group assignment setting
+<a name="v1-3-3-group-assignment-mode"></a>
+
+The new **Allow group assignments** setting defaults to **Do not allow groups** when no value has previously been saved. Existing group assignments retain access and can be removed, but new group assignments and group searches are blocked.
+
+To continue assigning IAM Identity Center groups to leases, open the **Lease Policies** section of the **Settings** page and set **Allow group assignments** to **Allow all groups**. A pending lease request that already contains a group cannot be approved while group assignments are disabled; deny the request or re-enable group assignments before approving it.
+
 ## Update considerations for version 1.3.0
 <a name="update-considerations-version-1-3-0"></a>
 
@@ -124,6 +153,7 @@ If you originally deployed the solution using CloudFormation templates, follow t
    +  [IDC template](https://solutions-reference.s3.amazonaws.com/innovation-sandbox-on-aws/latest/InnovationSandbox-IDC.template)
    +  [Data template](https://solutions-reference.s3.amazonaws.com/innovation-sandbox-on-aws/latest/InnovationSandbox-Data.template)
    +  [Compute template](https://solutions-reference.s3.amazonaws.com/innovation-sandbox-on-aws/latest/InnovationSandbox-Compute.template)
+   +  [M2M client template](https://solutions-reference.s3.amazonaws.com/innovation-sandbox-on-aws/latest/InnovationSandbox-M2mClient.template) (if you deployed M2M clients)
 
 1. Navigate to the [AWS CloudFormation console](https://console.aws.amazon.com/cloudformation/)
 
@@ -140,6 +170,8 @@ If you originally deployed the solution using CloudFormation templates, follow t
 1. Complete the stack update process
 
 1. Repeat for each stack that needs to be updated
+
+1. If you deployed M2M clients, update each M2M client stack after the Compute stack. For version 1.3.3 requirements, see [Update M2M clients after the Compute stack](#v1-3-3-m2m-api-update).
 
 **Note**
 If you turned on maintenance mode during the update process, turn it off after all updates are complete to restore normal user access. For more information, see [Managing maintenance mode](administrator-guide.md#maintenance-mode).
@@ -201,5 +233,7 @@ Before updating from source code, ensure your development environment is properl
      npm run deploy:data
      npm run deploy:compute
      ```
+
+1. If you deployed M2M clients, update each client stack after deploying the Compute stack. For version 1.3.3 requirements, see [Update M2M clients after the Compute stack](#v1-3-3-m2m-api-update).
 
 1. Verify that the product’s user workflow works as expected after the update

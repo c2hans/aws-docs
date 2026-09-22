@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/social-media-data-pipeline-on-
 title: 'Guidance for Social Media Data Pipeline on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/social-media-data-pipeline-on-aws/
 source: aws-documentation
-generated_on: 2026-09-18
+generated_on: 2026-09-22
 ---
 
 # Guidance for Social Media Data Pipeline on AWS

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Con
 # ContainerRecipe
 <a name="API_ContainerRecipe"></a>
 
-A container recipe.
+Defines how Image Builder builds and tests a container image: the base image, components to apply, the Dockerfile template, the build and test instance configuration, and the target repository for the output image.
 
 ## Contents
 <a name="API_ContainerRecipe_Contents"></a>
@@ -20,11 +20,11 @@ Semantic versioning is included in each object's Amazon Resource Name (ARN), at 
 
 1. Build version ARNs have all four nodes, and point to a specific build for a specific version of an object.
 Type: String
-Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?):(?:image-recipe|container-recipe|infrastructure-configuration|distribution-configuration|component|image|image-pipeline|lifecycle-policy|workflow\/(?:build|test|distribution))/[a-z0-9-_]+(?:/(?:(?:x|[0-9]+)\.(?:x|[0-9]+)\.(?:x|[0-9]+))(?:/[0-9]+)?)?$`
+Pattern: `^arn:aws[^:]*:imagebuilder:[^:]+:(?:[0-9]{12}|aws(?:-[a-z-]+)?|third-party):(?:image-recipe|container-recipe|infrastructure-configuration|distribution-configuration|component|image|image-pipeline|lifecycle-policy|workflow\/(?:build|test|distribution))/[a-z0-9-_]+(?:/(?:(?:x|[0-9]+)\.(?:x|[0-9]+)\.(?:x|[0-9]+))(?:/[0-9]+)?)?$`
 Required: No
 
  ** components **   <a name="imagebuilder-Type-ContainerRecipe-components"></a>
-Build and test components that are included in the container recipe. Recipes require a minimum of one build component, and can have a maximum of 20 build and test components in any combination.
+Build and test components that are included in the container recipe. A recipe can contain a maximum of 20 build and test components in any combination, by default. This maximum is an adjustable quota. For more information, see [EC2 Image Builder endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/imagebuilder.html) in the * AWS General Reference*.
 Type: Array of [ComponentConfiguration](API_ComponentConfiguration.md) objects
 Array Members: Minimum number of 1 item.
 Required: No
@@ -47,12 +47,12 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
  ** dockerfileTemplateData **   <a name="imagebuilder-Type-ContainerRecipe-dockerfileTemplateData"></a>
-Dockerfiles are text documents that are used to build Docker containers, and ensure that they contain all of the elements required by the application running inside. The template data consists of contextual variables where Image Builder places build information or scripts, based on your container image recipe.
+The Dockerfile template that Image Builder uses to build the container image. The template can include contextual variables that Image Builder replaces with build information at build time. For the contextual variables that the template can include, see [Create a new version of a container recipe](https://docs.aws.amazon.com/imagebuilder/latest/userguide/create-container-recipes.html) in the *EC2 Image Builder User Guide*.
 Type: String
 Required: No
 
  ** encrypted **   <a name="imagebuilder-Type-ContainerRecipe-encrypted"></a>
-A flag that indicates if the target container is encrypted.
+Specifies whether the recipe's Dockerfile template data is encrypted at rest. Image Builder encrypts all Dockerfile template data at rest, so this value is always `true`. This field is retained for backward compatibility, and doesn't describe encryption of the output container image.
 Type: Boolean
 Required: No
 
@@ -62,7 +62,7 @@ Type: [InstanceConfiguration](API_InstanceConfiguration.md) object
 Required: No
 
  ** kmsKeyId **   <a name="imagebuilder-Type-ContainerRecipe-kmsKeyId"></a>
-The Amazon Resource Name (ARN) that uniquely identifies which KMS key is used to encrypt the container image for distribution to the target Region. This can be either the Key ARN or the Alias ARN. For more information, see [Key identifiers (KeyId)](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-id-key-ARN) in the * AWS Key Management Service Developer Guide*.
+The KMS key that Image Builder uses to encrypt the recipe's Dockerfile template data at rest. This can be either the Key ARN or the Alias ARN. For more information, see [Key identifiers (KeyId)](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-id-key-ARN) in the * AWS Key Management Service Developer Guide*. If you don't specify a key, Image Builder encrypts the template data with a KMS key that Image Builder owns. This key isn't used to encrypt the output container image.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
@@ -86,7 +86,7 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
  ** platform **   <a name="imagebuilder-Type-ContainerRecipe-platform"></a>
-The system platform for the container, such as Windows or Linux.
+The system platform for the container. Container recipes support only the Linux and Windows platforms.
 Type: String
 Valid Values: `Windows | Linux | macOS`
 Required: No

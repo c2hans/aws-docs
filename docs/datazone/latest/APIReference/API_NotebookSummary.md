@@ -56,6 +56,12 @@ Type: String
 Length Constraints: Minimum length of 0. Maximum length of 2048.
 Required: No
 
+ ** type **   <a name="datazone-Type-NotebookSummary-type"></a>
+The type of the notebook.
+Type: String
+Valid Values: `DATA | SQL | QUERYBOOK`
+Required: No
+
  ** updatedAt **   <a name="datazone-Type-NotebookSummary-updatedAt"></a>
 The timestamp of when the notebook was last updated.
 Type: Timestamp

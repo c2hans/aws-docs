@@ -10,6 +10,18 @@ We recommend subscribing to the RSS feed so updates to these notes are delivered
 ## September 2026
 <a name="_september_2026"></a>
 
+### Harness: Custom OpenAI-compatible endpoints
+<a name="_harness_custom_openai_compatible_endpoints_2"></a>
+
+OpenAI model configurations now accept an optional `apiBase`. Use this field to route direct OpenAI requests through a custom OpenAI-compatible gateway, proxy, self-hosted endpoint, or regional endpoint. See [Models and instructions](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/harness-models.html#harness-model-switching).
+
+### Harness: Lifecycle hooks
+<a name="_harness_lifecycle_hooks_2"></a>
+
+Amazon Bedrock AgentCore harness now supports lifecycle hooks at `before_invocation`, `before_tool_call`, `after_tool_call`, and `after_invocation` boundaries, including tool-call hooks for inline functions. Configure an AWS Lambda target to return a synchronous `allow` or `deny` decision that can stop an invocation or skip a tool call. Configure Amazon SNS or Amazon EventBridge targets to receive non-blocking notifications without changing agent-loop behavior. Hook payloads include context for the corresponding lifecycle event, and `InvokeHarness` emits a `hookEvent` for each configured hook that fires.
+
+See [Lifecycle hooks](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/harness-lifecycle-hooks.html).
+
 ### Evaluations: TypeScript agent framework support
 <a name="_evaluations_typescript_agent_framework_support_2"></a>
 

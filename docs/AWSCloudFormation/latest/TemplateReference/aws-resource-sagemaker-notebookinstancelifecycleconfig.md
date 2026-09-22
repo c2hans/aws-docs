@@ -23,7 +23,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Properties" : {
       "[NotebookInstanceLifecycleConfigName](#cfn-sagemaker-notebookinstancelifecycleconfig-notebookinstancelifecycleconfigname)" : {{String}},
       "[OnCreate](#cfn-sagemaker-notebookinstancelifecycleconfig-oncreate)" : {{[ NotebookInstanceLifecycleHook, ... ]}},
-      "[OnStart](#cfn-sagemaker-notebookinstancelifecycleconfig-onstart)" : {{[ NotebookInstanceLifecycleHook, ... ]}}
+      "[OnStart](#cfn-sagemaker-notebookinstancelifecycleconfig-onstart)" : {{[ NotebookInstanceLifecycleHook, ... ]}},
+      "[Tags](#cfn-sagemaker-notebookinstancelifecycleconfig-tags)" : {{[ Tag, ... ]}}
     }
 }
 ```
@@ -39,6 +40,8 @@ Properties:
     - NotebookInstanceLifecycleHook}}
   [OnStart](#cfn-sagemaker-notebookinstancelifecycleconfig-onstart): {{
     - NotebookInstanceLifecycleHook}}
+  [Tags](#cfn-sagemaker-notebookinstancelifecycleconfig-tags): {{
+    - Tag}}
 ```
 
 ## Properties
@@ -48,8 +51,7 @@ Properties:
 The name of the lifecycle configuration.
 *Required*: No
 *Type*: String
-*Pattern*: `[a-zA-Z0-9](-*[a-zA-Z0-9])*`
-*Minimum*: `0`
+*Minimum*: `1`
 *Maximum*: `63`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
@@ -67,6 +69,12 @@ A shell script that runs every time you start a notebook instance, including whe
 *Type*: Array of [NotebookInstanceLifecycleHook](aws-properties-sagemaker-notebookinstancelifecycleconfig-notebookinstancelifecyclehook.md)
 *Minimum*: `0`
 *Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Tags`  <a name="cfn-sagemaker-notebookinstancelifecycleconfig-tags"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-sagemaker-notebookinstancelifecycleconfig-tag.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
@@ -89,8 +97,8 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 ####
 <a name="aws-resource-sagemaker-notebookinstancelifecycleconfig-return-values-fn--getatt-fn--getatt"></a>
 
-`Id`  <a name="Id-fn::getatt"></a>
-The name of the notebook instance lifecycle configuration.
+`NotebookInstanceLifecycleConfigArn`  <a name="NotebookInstanceLifecycleConfigArn-fn::getatt"></a>
+The Amazon Resource Name (ARN) of the lifecycle configuration.
 
 `NotebookInstanceLifecycleConfigName`  <a name="NotebookInstanceLifecycleConfigName-fn::getatt"></a>
 The name of the lifecycle configuration, such as `MyLifecycleConfig`.

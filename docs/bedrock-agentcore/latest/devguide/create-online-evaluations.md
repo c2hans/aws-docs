@@ -214,6 +214,8 @@ You can create online evaluation configurations using the Amazon Bedrock AgentCo
 1. (Optional) For **Sampling** , choose a percentage between 0.01% and 100% to control the percentage of sessions that are evaluated. The default is 10%.
 
 1. For **Amazon Bedrock IAM role** , choose one of the following:
+**Note**
+If role manager is enabled in your account, AgentCore attaches the role for you, and the role-selection step described here is replaced by a **Customize** option. To use a different role, choose **Customize**. For more information, see [IAM role creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the *IAM User Guide*.
 
    1.  **Use an existing role** – Select an IAM service role that already has the required permissions.
 

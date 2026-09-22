@@ -33,7 +33,8 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[ScalableDimension](#cfn-applicationautoscaling-scalabletarget-scalabledimension)" : {{String}},
       "[ScheduledActions](#cfn-applicationautoscaling-scalabletarget-scheduledactions)" : {{[ ScheduledAction, ... ]}},
       "[ServiceNamespace](#cfn-applicationautoscaling-scalabletarget-servicenamespace)" : {{String}},
-      "[SuspendedState](#cfn-applicationautoscaling-scalabletarget-suspendedstate)" : {{SuspendedState}}
+      "[SuspendedState](#cfn-applicationautoscaling-scalabletarget-suspendedstate)" : {{SuspendedState}},
+      "[Tags](#cfn-applicationautoscaling-scalabletarget-tags)" : {{[ Tag, ... ]}}
     }
 }
 ```
@@ -54,6 +55,8 @@ Properties:
   [ServiceNamespace](#cfn-applicationautoscaling-scalabletarget-servicenamespace): {{String}}
   [SuspendedState](#cfn-applicationautoscaling-scalabletarget-suspendedstate): {{
     SuspendedState}}
+  [Tags](#cfn-applicationautoscaling-scalabletarget-tags): {{
+    - Tag}}
 ```
 
 ## Properties
@@ -159,6 +162,12 @@ An embedded object that contains attributes and attribute values that are used t
 + For `ScheduledScalingSuspended`, while a suspension is in effect, all scaling activities that involve scheduled actions are suspended.
 *Required*: No
 *Type*: [SuspendedState](aws-properties-applicationautoscaling-scalabletarget-suspendedstate.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Tags`  <a name="cfn-applicationautoscaling-scalabletarget-tags"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-applicationautoscaling-scalabletarget-tag.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values

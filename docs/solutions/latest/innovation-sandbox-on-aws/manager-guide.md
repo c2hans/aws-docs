@@ -198,10 +198,11 @@ Leases you create on behalf of others will show your email address in the "Creat
 ## Sharing a lease with additional users and groups
 <a name="lease-sharing"></a>
 
-Lease sharing lets multiple users collaborate in the same sandbox account instead of provisioning separate accounts for each team member. You can share a lease with individual users or with entire AWS IAM Identity Center groups. Shared users and group members receive the same AWS account access as the lease owner through the same permission set, but they cannot terminate the lease or change its budget, duration, or other core settings.
+Lease sharing lets multiple users collaborate in the same sandbox account instead of provisioning separate accounts for each team member. You can share a lease with individual users and, when group assignments are enabled, with entire AWS IAM Identity Center groups. Shared users and group members receive the same AWS account access as the lease owner through the same permission set, but they cannot terminate the lease or change its budget, duration, or other core settings.
 
 **Important**
 Lease sharing is turned off by default. An administrator must turn on the **Enable lease sharing** setting, in the **Lease Policies** section of the **Settings** page, before lease owners can share leases. While the setting is off, administrators and managers can still view and manage assignments on existing leases. Turning the setting off does not revoke access that has already been granted through sharing; to remove existing shared access, an administrator or manager must remove the principals from each lease individually, or terminate the lease. For more information, refer to [Global configuration settings](administrator-guide.md#global-settings).
+Group assignments are controlled separately by the **Allow group assignments** setting and are disabled by default. When group assignments are disabled, users, administrators, and managers can add only individual users. Existing group assignments keep their access and can still be removed.
 
 ### Who can share a lease
 <a name="lease-sharing-who-can-share"></a>
@@ -223,7 +224,7 @@ You manage sharing from the **Assignments** tab on the lease details page. Chang
 
 1. Choose the **Assignments** tab. The tab lists the current users and groups with access, and shows each one’s **Status**, who added it, and when. The lease owner appears first, marked with an **Owner** badge.
 
-1. To add a principal, use the search field to find a user or group by name or email address, then choose it from the results. You can also enter an exact email address or group name and choose the **Add** option from the dropdown. The principal is added to the list immediately as a staged change.
+1. To add a principal, use the search field to find a user by name or email address, then choose the user from the results. When **Allow group assignments** is set to **Allow all groups**, you can also search for and add a group by its name. You can enter an exact email address or, when group assignments are enabled, an exact group name and choose the **Add** option from the dropdown. The principal is added to the list immediately as a staged change.
 **Note**
 When you choose a group, a confirmation dialog opens. Choose **Add group** to confirm. All current and future members of that group receive access to the sandbox account. Group membership is managed in IAM Identity Center. If you add or remove members of the group there, their access to the sandbox account changes automatically.
 
@@ -234,7 +235,7 @@ When you choose a group, a confirmation dialog opens. Choose **Add group** to co
 Staged additions and removals show a **Pending add** or **Pending remove** status until you save. After you save, the solution processes the access changes in the background, and the status changes to **Granting** or **Revoking** while each change is applied, then to **Active** once access is granted. Added users receive an email notification when their access is granted. The lease owner is notified when a principal’s access is revoked. On frozen leases, principals show **Access suspended**; on ended leases, they show **Access ended**. If a change does not complete, the status changes to **Grant failed** or **Revoke failed**, and the tab displays a **Retry** option. For more information, refer to [Lease sharing issues](troubleshooting.md#lease-sharing-issues).
 
 **Note**
-Recently added Identity Center users and group members can take slightly over an hour to appear in search results (the cache refreshes hourly with a five-minute flexible window). If you can’t find someone, enter their exact email address (or the exact group name) instead.
+Recently added Identity Center users and group members can take slightly over an hour to appear in search results (the cache refreshes hourly with a five-minute flexible window). If you can’t find someone, enter their exact email address instead. When group assignments are enabled, you can enter the exact group name.
 
 **Note**
 A lease supports up to 20 principals in total, including the lease owner (the owner plus up to 19 additional users and groups).

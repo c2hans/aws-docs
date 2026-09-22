@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/apigateway/index.html
 title: 'Amazon API Gateway Documentation'
 canonical_url: https://docs.aws.amazon.com/apigateway/
 source: aws-documentation
-generated_on: 2026-09-18
+generated_on: 2026-09-22
 ---
 
 # Amazon API Gateway Documentation

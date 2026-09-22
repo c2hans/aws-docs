@@ -92,6 +92,13 @@ For more information about using the `Ref` function, see [`Ref`](https://docs.aw
 ### Fn::GetAtt
 <a name="aws-resource-glue-partition-return-values-fn--getatt"></a>
 
+####
+<a name="aws-resource-glue-partition-return-values-fn--getatt-fn--getatt"></a>
+
+`IdentifierPartitionInputValues`  <a name="IdentifierPartitionInputValues-fn::getatt"></a>
+The values of the partition. Although this parameter is not required by the SDK, you must specify this parameter for a valid input.
+The values for the keys for the new partition must be passed as an array of String objects that must be ordered in the same order as the partition keys appearing in the Amazon S3 prefix. Otherwise AWS Glue will add the values to the wrong keys.
+
 ## See also
 <a name="aws-resource-glue-partition--seealso"></a>
 + [CreatePartition Action](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog-partitions.html#aws-glue-api-catalog-partitions-CreatePartition) in the *AWS Glue Developer Guide*

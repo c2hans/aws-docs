@@ -32,6 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[MemoryExecutionRoleArn](#cfn-bedrockagentcore-memory-memoryexecutionrolearn)" : {{String}},
       "[MemoryStrategies](#cfn-bedrockagentcore-memory-memorystrategies)" : {{[ MemoryStrategy, ... ]}},
       "[Name](#cfn-bedrockagentcore-memory-name)" : {{String}},
+      "[NamespaceKeys](#cfn-bedrockagentcore-memory-namespacekeys)" : {{[ NamespaceKeyEntry, ... ]}},
       "[StreamDeliveryResources](#cfn-bedrockagentcore-memory-streamdeliveryresources)" : {{StreamDeliveryResources}},
       "[Tags](#cfn-bedrockagentcore-memory-tags)" : {{{{{Key}}: {{Value}}, ...}}}
     }
@@ -53,6 +54,8 @@ Properties:
   [MemoryStrategies](#cfn-bedrockagentcore-memory-memorystrategies): {{
     - MemoryStrategy}}
   [Name](#cfn-bedrockagentcore-memory-name): {{String}}
+  [NamespaceKeys](#cfn-bedrockagentcore-memory-namespacekeys): {{
+    - NamespaceKeyEntry}}
   [StreamDeliveryResources](#cfn-bedrockagentcore-memory-streamdeliveryresources): {{
     StreamDeliveryResources}}
   [Tags](#cfn-bedrockagentcore-memory-tags): {{
@@ -110,6 +113,14 @@ The name of the memory.
 *Type*: String
 *Pattern*: `^[a-zA-Z][a-zA-Z0-9_]{0,47}$`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`NamespaceKeys`  <a name="cfn-bedrockagentcore-memory-namespacekeys"></a>
+The namespace variable key definitions for this memory. Namespace keys define custom variables used in `namespaceTemplates` with optional validation rules.
+*Required*: No
+*Type*: Array of [NamespaceKeyEntry](aws-properties-bedrockagentcore-memory-namespacekeyentry.md)
+*Minimum*: `1`
+*Maximum*: `5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `StreamDeliveryResources`  <a name="cfn-bedrockagentcore-memory-streamdeliveryresources"></a>
 Configuration for streaming memory record data to external resources.

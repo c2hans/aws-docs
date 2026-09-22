@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Del
 # DeleteWorkflow
 <a name="API_DeleteWorkflow"></a>
 
-Deletes a specific workflow resource.
+Deletes a specific workflow resource. You can't delete a workflow build version while an image pipeline references it. The request fails with `ResourceDependencyException`.
 
 ## Request Syntax
 <a name="API_DeleteWorkflow_RequestSyntax"></a>
@@ -61,11 +61,11 @@ Pattern: `^arn:aws(?:-[a-z]+)*:imagebuilder:[a-z]{2,}(?:-[a-z]+)+-[0-9]+:(?:[0-9
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** CallRateLimitExceededException **
-You have exceeded the permitted request rate for the specific operation.
+You have exceeded the permitted request rate for the Amazon EC2 APIs that Image Builder calls on your behalf. Retry with an increasing or variable delay between requests.
 HTTP Status Code: 429
 
  ** ClientException **
-These errors are usually caused by a client action, such as using an action or resource on behalf of a user that doesn't have permissions to use the action or resource, or specifying an invalid resource identifier.
+A generic client error. This error usually indicates that the request failed a validation check, such as when a downstream service rejects a configured value.
 HTTP Status Code: 400
 
  ** ForbiddenException **
@@ -73,7 +73,7 @@ You are not authorized to perform the requested operation.
 HTTP Status Code: 403
 
  ** InvalidRequestException **
-You have requested an action that that the service doesn't support.
+The request is malformed or otherwise invalid. Verify the request and try again.
 HTTP Status Code: 400
 
  ** ResourceDependencyException **
@@ -81,12 +81,39 @@ You have attempted to mutate or delete a resource with a dependency that prohibi
 HTTP Status Code: 400
 
  ** ServiceException **
-This exception is thrown when the service encounters an unrecoverable exception.
+An internal server error occurred while Image Builder processed the request. Retrying the request may succeed.
 HTTP Status Code: 500
 
  ** ServiceUnavailableException **
 The service is unable to process your request at this time.
 HTTP Status Code: 503
+
+## Examples
+<a name="API_DeleteWorkflow_Examples"></a>
+
+### Delete a workflow build version
+<a name="API_DeleteWorkflow_Example_1"></a>
+
+The following example deletes the workflow build version that the ARN specifies.
+
+#### Sample Request
+<a name="API_DeleteWorkflow_Example_1_Request"></a>
+
+```
+DELETE /DeleteWorkflow?workflowBuildVersionArn=arn%3Aaws%3Aimagebuilder%3Aus-west-2%3A111122223333%3Aworkflow%2Fbuild%2Fmy-example-workflow%2F1.0.0%2F1 HTTP/1.1
+```
+
+#### Sample Response
+<a name="API_DeleteWorkflow_Example_1_Response"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+    "workflowBuildVersionArn": "arn:aws:imagebuilder:us-west-2:111122223333:workflow/build/my-example-workflow/1.0.0/1"
+}
+```
 
 ## See Also
 <a name="API_DeleteWorkflow_SeeAlso"></a>

@@ -48,8 +48,27 @@ For a list of AWS Regions, see [ Aurora PostgreSQL Region availability](https://
 This release of Aurora PostgreSQL is compatible with PostgreSQL 18.4. For more information about the improvements in PostgreSQL 18.4, see [PostgreSQL release 18.4](https://www.postgresql.org/docs/18/release-18-4.html).
 
 **Topics**
++ [Aurora PostgreSQL 18.4.2, September 14, 2026](#aurorapostgresql-versions-version184x-1842)
 + [Aurora PostgreSQL 18.4.1, August 21, 2026](#aurorapostgresql-versions-version1841x-1841)
 + [Aurora PostgreSQL 18.4, August 21, 2026](#aurorapostgresql-versions-version184x-184)
+
+#### Aurora PostgreSQL 18.4.2, September 14, 2026
+<a name="aurorapostgresql-versions-version184x-1842"></a>
+
+**Critical stability enhancements**
++ Fixed an issue with index scan prefetch that could return duplicate rows, and increased I/O wait times.
++ HypoPG will only consider hypothetical indexes during EXPLAIN that were created by the current role.
+
+**High priority enhancements**
++ Backported fixes for the following PostgreSQL community security issues:
+  + [CVE-2026-14671](https://nvd.nist.gov/vuln/detail/CVE-2026-14671).
+
+**General enhancements**
++ Fixed multiple issues to improve the reliability of client connections during Zero Downtime Patching (ZDP).
++ Fixed an issue with reader instances, improving replica stability.
++ Fixed an issue that can cause the replica to restart when an internal counter that tracks the reader's position in the replication stream overflows.
++ Fixed an issue that can cause the database to restart when a storage configuration change occurs while a metadata synchronization operation is still in progress.
++ Fixed an issue that can cause a database instance to restart due to a memory management issue in storage node connection handling.
 
 #### Aurora PostgreSQL 18.4.1, August 21, 2026
 <a name="aurorapostgresql-versions-version1841x-1841"></a>
@@ -226,8 +245,27 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 18.3. For more i
 This release of Aurora PostgreSQL is compatible with PostgreSQL 17.10. For more information about the improvements in PostgreSQL 17.10, see [PostgreSQL release 17.10](https://www.postgresql.org/docs/17/release-17-10.html).
 
 **Topics**
++ [Aurora PostgreSQL 17.10.2, September 14, 2026](#aurorapostgresql-versions-version1710x-17102)
 + [Aurora PostgreSQL 17.10.1, August 21, 2026](#aurorapostgresql-versions-version17101x-17101)
 + [Aurora PostgreSQL 17.10, August 21, 2026](#aurorapostgresql-versions-version1710x-1710)
+
+#### Aurora PostgreSQL 17.10.2, September 14, 2026
+<a name="aurorapostgresql-versions-version1710x-17102"></a>
+
+**Critical stability enhancements**
++ Fixed an issue with index scan prefetch that could return duplicate rows, and increased I/O wait times.
++ HypoPG will only consider hypothetical indexes during EXPLAIN that were created by the current role.
+
+**High priority enhancements**
++ Backported fixes for the following PostgreSQL community security issues:
+  + [CVE-2026-14671](https://nvd.nist.gov/vuln/detail/CVE-2026-14671).
+
+**General enhancements**
++ Fixed multiple issues to improve the reliability of client connections during Zero Downtime Patching (ZDP).
++ Fixed an issue with reader instances, improving replica stability.
++ Fixed an issue that can cause the replica to restart when an internal counter that tracks the reader's position in the replication stream overflows.
++ Fixed an issue that can cause the database to restart when a storage configuration change occurs while a metadata synchronization operation is still in progress.
++ Fixed an issue that can cause a database instance to restart due to a memory management issue in storage node connection handling.
 
 #### Aurora PostgreSQL 17.10.1, August 21, 2026
 <a name="aurorapostgresql-versions-version17101x-17101"></a>
@@ -1096,8 +1134,27 @@ In addition, Aurora PostgreSQL doesn't support writebacks and sync operations si
 This release of Aurora PostgreSQL is compatible with PostgreSQL 16.14. For more information about the improvements in PostgreSQL 16.14, see [PostgreSQL release 16.14](https://www.postgresql.org/docs/16/release-16-14.html).
 
 **Topics**
++ [Aurora PostgreSQL 16.14.2, September 14, 2026](#aurorapostgresql-versions-version1614x-16142)
 + [Aurora PostgreSQL 16.14.1, August 21, 2026](#aurorapostgresql-versions-version16141x-16141)
 + [Aurora PostgreSQL 16.14, August 21, 2026](#aurorapostgresql-versions-version1614x-1614)
+
+#### Aurora PostgreSQL 16.14.2, September 14, 2026
+<a name="aurorapostgresql-versions-version1614x-16142"></a>
+
+**Critical stability enhancements**
++ Fixed an issue with index scan prefetch that could return duplicate rows, and increased I/O wait times.
++ HypoPG will only consider hypothetical indexes during EXPLAIN that were created by the current role.
+
+**High priority enhancements**
++ Backported fixes for the following PostgreSQL community security issues:
+  + [CVE-2026-14671](https://nvd.nist.gov/vuln/detail/CVE-2026-14671).
+
+**General enhancements**
++ Fixed multiple issues to improve the reliability of client connections during Zero Downtime Patching (ZDP).
++ Fixed an issue with reader instances, improving replica stability.
++ Fixed an issue that can cause the replica to restart when an internal counter that tracks the reader's position in the replication stream overflows.
++ Fixed an issue that can cause the database to restart when a storage configuration change occurs while a metadata synchronization operation is still in progress.
++ Fixed an issue that can cause a database instance to restart due to a memory management issue in storage node connection handling.
 
 #### Aurora PostgreSQL 16.14.1, August 21, 2026
 <a name="aurorapostgresql-versions-version16141x-16141"></a>
@@ -2596,8 +2653,27 @@ For information about extensions and modules, see [Extensions supported for Auro
 This release of Aurora PostgreSQL is compatible with PostgreSQL 15.18. For more information about the improvements in PostgreSQL 15.18, see [PostgreSQL release 15.18](https://www.postgresql.org/docs/15/release-15-18.html).
 
 **Topics**
++ [Aurora PostgreSQL 15.18.2, September 14, 2026](#aurorapostgresql-versions-version1518x-15182)
 + [Aurora PostgreSQL 15.18.1, August 21, 2026](#aurorapostgresql-versions-version15181x-15181)
 + [Aurora PostgreSQL 15.18, August 21, 2026](#aurorapostgresql-versions-version1518x-1518)
+
+#### Aurora PostgreSQL 15.18.2, September 14, 2026
+<a name="aurorapostgresql-versions-version1518x-15182"></a>
+
+**Critical stability enhancements**
++ Fixed an issue with index scan prefetch that could return duplicate rows, and increased I/O wait times.
++ HypoPG will only consider hypothetical indexes during EXPLAIN that were created by the current role.
+
+**High priority enhancements**
++ Backported fixes for the following PostgreSQL community security issues:
+  + [CVE-2026-14671](https://nvd.nist.gov/vuln/detail/CVE-2026-14671).
+
+**General enhancements**
++ Fixed multiple issues to improve the reliability of client connections during Zero Downtime Patching (ZDP).
++ Fixed an issue with reader instances, improving replica stability.
++ Fixed an issue that can cause the replica to restart when an internal counter that tracks the reader's position in the replication stream overflows.
++ Fixed an issue that can cause the database to restart when a storage configuration change occurs while a metadata synchronization operation is still in progress.
++ Fixed an issue that can cause a database instance to restart due to a memory management issue in storage node connection handling.
 
 #### Aurora PostgreSQL 15.18.1, August 21, 2026
 <a name="aurorapostgresql-versions-version15181x-15181"></a>
@@ -4653,8 +4729,27 @@ Due to Aurora's unique distributed storage system, Amazon Aurora PostgreSQL vers
 This release of Aurora PostgreSQL is compatible with PostgreSQL 14.23. For more information about the improvements in PostgreSQL 14.23, see [PostgreSQL release 14.23](https://www.postgresql.org/docs/14/release-14-23.html).
 
 **Topics**
++ [Aurora PostgreSQL 14.23.2, September 14, 2026](#aurorapostgresql-versions-version1423x-14232)
 + [Aurora PostgreSQL 14.23.1, August 21, 2026](#aurorapostgresql-versions-version14231x-14231)
 + [Aurora PostgreSQL 14.23, August 21, 2026](#aurorapostgresql-versions-version1423x-1423)
+
+#### Aurora PostgreSQL 14.23.2, September 14, 2026
+<a name="aurorapostgresql-versions-version1423x-14232"></a>
+
+**Critical stability enhancements**
++ Fixed an issue with index scan prefetch that could return duplicate rows, and increased I/O wait times.
++ HypoPG will only consider hypothetical indexes during EXPLAIN that were created by the current role.
+
+**High priority enhancements**
++ Backported fixes for the following PostgreSQL community security issues:
+  + [CVE-2026-14671](https://nvd.nist.gov/vuln/detail/CVE-2026-14671).
+
+**General enhancements**
++ Fixed multiple issues to improve the reliability of client connections during Zero Downtime Patching (ZDP).
++ Fixed an issue with reader instances, improving replica stability.
++ Fixed an issue that can cause the replica to restart when an internal counter that tracks the reader's position in the replication stream overflows.
++ Fixed an issue that can cause the database to restart when a storage configuration change occurs while a metadata synchronization operation is still in progress.
++ Fixed an issue that can cause a database instance to restart due to a memory management issue in storage node connection handling.
 
 #### Aurora PostgreSQL 14.23.1, August 21, 2026
 <a name="aurorapostgresql-versions-version14231x-14231"></a>

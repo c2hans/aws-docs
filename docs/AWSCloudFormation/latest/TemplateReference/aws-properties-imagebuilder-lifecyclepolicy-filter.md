@@ -48,7 +48,7 @@ For age-based filters, this is the number of resources to keep on hand after the
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Type`  <a name="cfn-imagebuilder-lifecyclepolicy-filter-type"></a>
-Filter resources based on either `age` or `count`.
+Filter resources based on either `AGE` or `COUNT`. You can only use the count filter with the `DELETE` action type.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `AGE | COUNT`

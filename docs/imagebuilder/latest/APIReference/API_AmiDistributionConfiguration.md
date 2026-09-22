@@ -20,7 +20,7 @@ Value Length Constraints: Maximum length of 256.
 Required: No
 
  ** description **   <a name="imagebuilder-Type-AmiDistributionConfiguration-description"></a>
-The description of the AMI distribution configuration. Minimum and maximum length are in characters.
+The description to apply to the distributed AMI. Image Builder sets this as the output AMI's description in each target Region and account. If you don't specify a description, the AMI in the build Region uses the image recipe's description, if the recipe has one. Copies distributed to other Regions and accounts don't receive a default description.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
@@ -37,14 +37,14 @@ Type: [LaunchPermissionConfiguration](API_LaunchPermissionConfiguration.md) obje
 Required: No
 
  ** name **   <a name="imagebuilder-Type-AmiDistributionConfiguration-name"></a>
-The name of the output AMI.
+The name of the output AMI. The name must include the `{{ imagebuilder:buildDate }}` dynamic tag so that each build produces a uniquely named AMI. If you don't specify a name, Image Builder names the output AMI with the image name followed by the build timestamp, for example `my-image 2022-10-26T22-30-05.912619Z`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 127.
 Pattern: `^[-_A-Za-z0-9{][-_A-Za-z0-9\s:{}\.]+[-_A-Za-z0-9}]$`
 Required: No
 
  ** targetAccountIds **   <a name="imagebuilder-Type-AmiDistributionConfiguration-targetAccountIds"></a>
-The ID of an account to which you want to distribute an image.
+The AWS account IDs to distribute the AMI to in this Region. Each listed account receives its own copy of the output AMI. If you don't specify accounts, Image Builder distributes the AMI only to your own account.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 1536 items.
 Pattern: `^[0-9]{12}$`

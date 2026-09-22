@@ -32,6 +32,11 @@ The error message of the asset scope.
 Type: String
 Required: No
 
+ ** scopeName **   <a name="datazone-Type-AssetScope-scopeName"></a>
+The name of the materialized asset scope.
+Type: String
+Required: No
+
 ## See Also
 <a name="API_AssetScope_SeeAlso"></a>
 

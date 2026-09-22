@@ -56,6 +56,7 @@ The following is a policy example to allow a user to create a geofence collectio
                 "geo:TagResource"
             ],
             "Resource": "arn:aws:geo:region:accountID:geofence-collection/*"
+        }
     ]
 }
 ```

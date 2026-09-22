@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::SecurityAgent::SecurityRequirementPack
 <a name="aws-resource-securityagent-securityrequirementpack"></a>
 
-Creates a customer managed security requirement pack.
+The `AWS::SecurityAgent::SecurityRequirementPack` resource specifies a security requirement pack. A security requirement pack is a collection of security requirements that define evaluation criteria and remediation guidance for security testing.
 
 ## Syntax
 <a name="aws-resource-securityagent-securityrequirementpack-syntax"></a>
@@ -58,7 +58,7 @@ A description of the security requirement pack.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `KmsKeyId`  <a name="cfn-securityagent-securityrequirementpack-kmskeyid"></a>
-Identifier of a KMS key. Can be a key ID, key ARN, alias name, or alias ARN.
+The identifier of the Amazon Web Services KMS key to use for encrypting data in the security requirement pack. This property can only be specified during creation.
 *Required*: No
 *Type*: String
 *Maximum*: `2048`
@@ -79,14 +79,14 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Status`  <a name="cfn-securityagent-securityrequirementpack-status"></a>
-The status of the security requirement pack.
+The status of the pack. Defaults to ENABLED if not provided.
 *Required*: No
 *Type*: String
 *Allowed values*: `ENABLED | DISABLED`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tags`  <a name="cfn-securityagent-securityrequirementpack-tags"></a>
-Property description not available.
+The tags to associate with the security requirement pack.
 *Required*: No
 *Type*: Array of [Tag](aws-properties-securityagent-securityrequirementpack-tag.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -97,11 +97,23 @@ Property description not available.
 ### Ref
 <a name="aws-resource-securityagent-securityrequirementpack-return-values-ref"></a>
 
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the pack ID. For example:
+
+ `{ "Ref": "MySecurityRequirementPack" }`
+
+For the security requirement pack `MySecurityRequirementPack`, `Ref` returns the unique identifier of the pack.
+
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+
 ### Fn::GetAtt
 <a name="aws-resource-securityagent-securityrequirementpack-return-values-fn--getatt"></a>
+
+The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-securityagent-securityrequirementpack-return-values-fn--getatt-fn--getatt"></a>
 
 `PackId`  <a name="PackId-fn::getatt"></a>
-The unique identifier of the security requirement pack.
+The unique identifier of the security requirement pack. For example: `srp-cm-0123456789abcdef0`.

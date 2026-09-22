@@ -17,7 +17,7 @@ The following example shows a response to a request to check the availability of
 HTTP/1.1 200
 Content-Length:{{number of characters in the JSON string}}
 {
-   "Availability":"308c56712-faa4-40fe-94c8-b423069de3f6"
+   "Availability":"AVAILABLE"
 }
 ```
 

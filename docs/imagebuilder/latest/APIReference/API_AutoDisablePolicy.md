@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Aut
 # AutoDisablePolicy
 <a name="API_AutoDisablePolicy"></a>
 
-Defines the rules by which an image pipeline is automatically disabled when it fails.
+Defines the rules by which an image pipeline is automatically disabled when it fails. By default, if the schedule doesn't include an auto-disable policy, Image Builder disables the pipeline after 5 consecutive failed scheduled builds.
 
 ## Contents
 <a name="API_AutoDisablePolicy_Contents"></a>
