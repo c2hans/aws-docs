@@ -21,7 +21,7 @@ The request uses the following URI parameters.
 
  ** [ApplicationType](#API_connect-app-integrations_ListApplications_RequestSyntax) **   <a name="connect-connect-app-integrations_ListApplications-request-uri-ApplicationType"></a>
 The type of application.
-Valid Values: `STANDARD | SERVICE | MCP_SERVER`
+Valid Values: `STANDARD | SERVICE | MCP_SERVER | A2A_SERVER`
 
  ** [MaxResults](#API_connect-app-integrations_ListApplications_RequestSyntax) **   <a name="connect-connect-app-integrations_ListApplications-request-uri-MaxResults"></a>
 The maximum number of results to return per page.

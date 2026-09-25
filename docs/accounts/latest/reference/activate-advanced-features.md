@@ -17,6 +17,7 @@ You must upgrade your account before you activate advanced features. For more in
 
 When you activate advanced features, the following changes will immediately be applied to your management account and the AWS Organization that contains your projects:
 + You are now the administrator of the AWS organization that contains your projects.
++ You set a root email address for your management account. You'll also need to set the root user password. For more information, see [Set a root user password for your management account](set-root-user-password-management-account.md).
 + You manage your projects as member accounts in your organization. As the administrator of this organization, you can create member accounts in the organization.
 + To give member accounts that you invite to join your organization an administrator role, you must create an OrganizationAccountAccessRole. For more information, see [Creating the OrganizationAccountAccessRole in an invited member account](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_create-cross-account-role.html).
 + Your team members are referred to as workforce identities and they can still access your AWS accounts. You can also choose to customize the identity source of your workforce using IAM Identity Center. You can continue to use AWS Builder ID as the identity source, or you can change this to an external identity source. If you change your identity source from AWS Builder ID to another identity source, it is irreversible. You can't re-enable AWS Builder ID as an identity source in the future. For more information, see [Change identity source from AWS Builder ID](change-identity-source.md).
@@ -52,6 +53,8 @@ After you activate advanced features, AWS Settings will be available as long as 
 + Access the AWS Organization console to modify the SCPs and RCPs that govern your organization.
 + Access the AWS Account Access Manager console to modify the fine grain access for your workforce identities.
 + Access the IAM Identity Center to change your identity source.
+
+Use the management account to perform these tasks. While you'll also have access to the root user email and password, we recommend you only use your root user credentials for emergency access to your account.
 
 You can also use AWS Settings to access your AWS accounts in your organization, and any project shared with you.
 

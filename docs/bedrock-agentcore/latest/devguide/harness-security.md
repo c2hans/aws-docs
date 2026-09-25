@@ -258,6 +258,7 @@ Harness APIs require permissions on both the harness resource and the underlying
 | --- | --- |
 |  `InvokeHarness`  |  `bedrock-agentcore:InvokeHarness`, `bedrock-agentcore:InvokeAgentRuntime`  |
 |  `InvokeAgentRuntimeCommand`  |  `bedrock-agentcore:InvokeAgentRuntimeCommand`, `bedrock-agentcore:InvokeAgentRuntime`  |
+|  `InvokeAgentRuntimeCommandShell`  |  `bedrock-agentcore:InvokeAgentRuntimeCommandShell`  |
 |  `CreateHarness`  |  `bedrock-agentcore:CreateHarness`, `bedrock-agentcore:CreateAgentRuntime`, `bedrock-agentcore:CreateMemory`  |
 |  `UpdateHarness`  |  `bedrock-agentcore:UpdateHarness`, `bedrock-agentcore:UpdateAgentRuntime`, `bedrock-agentcore:UpdateMemory`  |
 |  `DeleteHarness`  |  `bedrock-agentcore:DeleteHarness`, `bedrock-agentcore:DeleteAgentRuntime`, `bedrock-agentcore:DeleteMemory`  |
@@ -753,5 +754,6 @@ The trailing `-*` on Secrets Manager resources accounts for the random suffix th
 +  [Tools](harness-tools.md) – Review tool types and `allowedTools` patterns
 +  [Lifecycle hooks](harness-lifecycle-hooks.md) – Configure hooks to validate invocations and tool calls
 +  [Environment and filesystem](harness-environment.md) – Configure custom environments and ECR permissions
++  [Interactive shells](harness-command-shell.md) – Open an interactive terminal in a harness session
 +  [Control cost with limits](harness-operations.md#harness-limits) – Set execution limits to control cost
 +  [API Documentation](harness-get-started.md#api-documentation)

@@ -26,6 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[InsightConfiguration](#cfn-quicksight-dashboard-insightvisual-insightconfiguration)" : {{InsightConfiguration}},
   "[Subtitle](#cfn-quicksight-dashboard-insightvisual-subtitle)" : {{VisualSubtitleLabelOptions}},
   "[Title](#cfn-quicksight-dashboard-insightvisual-title)" : {{VisualTitleLabelOptions}},
+  "[TopicIdentifier](#cfn-quicksight-dashboard-insightvisual-topicidentifier)" : {{String}},
   "[VisualContentAltText](#cfn-quicksight-dashboard-insightvisual-visualcontentalttext)" : {{String}},
   "[VisualId](#cfn-quicksight-dashboard-insightvisual-visualid)" : {{String}}
 }
@@ -44,6 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
     VisualSubtitleLabelOptions}}
   [Title](#cfn-quicksight-dashboard-insightvisual-title): {{
     VisualTitleLabelOptions}}
+  [TopicIdentifier](#cfn-quicksight-dashboard-insightvisual-topicidentifier): {{String}}
   [VisualContentAltText](#cfn-quicksight-dashboard-insightvisual-visualcontentalttext): {{String}}
   [VisualId](#cfn-quicksight-dashboard-insightvisual-visualid): {{String}}
 ```
@@ -61,9 +63,9 @@ The list of custom actions that are configured for a visual.
 
 `DataSetIdentifier`  <a name="cfn-quicksight-dashboard-insightvisual-datasetidentifier"></a>
 The dataset that is used in the insight visual.
-*Required*: Yes
+*Required*: No
 *Type*: String
-*Minimum*: `1`
+*Minimum*: `0`
 *Maximum*: `2048`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
@@ -83,6 +85,14 @@ The subtitle that is displayed on the visual.
 The title that is displayed on the visual.
 *Required*: No
 *Type*: [VisualTitleLabelOptions](aws-properties-quicksight-dashboard-visualtitlelabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`TopicIdentifier`  <a name="cfn-quicksight-dashboard-insightvisual-topicidentifier"></a>
+The topic that is used in the insight visual.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `VisualContentAltText`  <a name="cfn-quicksight-dashboard-insightvisual-visualcontentalttext"></a>

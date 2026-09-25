@@ -49,7 +49,7 @@ The Amazon Resource Name (ARN) of the network interface associated with the stan
 The protocol used by the standard router output.
 *Required*: No
 *Type*: String
-*Allowed values*: `RTP | RIST | SRT_CALLER | SRT_LISTENER`
+*Allowed values*: `RTP | RIST | SRT_CALLER | SRT_LISTENER | RTMP_PUSH`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ProtocolConfiguration`  <a name="cfn-mediaconnect-routeroutput-standardrouteroutputconfiguration-protocolconfiguration"></a>

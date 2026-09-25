@@ -20,6 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[AxisBinding](#cfn-quicksight-analysis-linechartdefaultseriessettings-axisbinding)" : {{String}},
+  "[DecalSettings](#cfn-quicksight-analysis-linechartdefaultseriessettings-decalsettings)" : {{DecalSettings}},
   "[LineStyleSettings](#cfn-quicksight-analysis-linechartdefaultseriessettings-linestylesettings)" : {{LineChartLineStyleSettings}},
   "[MarkerStyleSettings](#cfn-quicksight-analysis-linechartdefaultseriessettings-markerstylesettings)" : {{LineChartMarkerStyleSettings}}
 }
@@ -30,6 +31,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [AxisBinding](#cfn-quicksight-analysis-linechartdefaultseriessettings-axisbinding): {{String}}
+  [DecalSettings](#cfn-quicksight-analysis-linechartdefaultseriessettings-decalsettings): {{
+    DecalSettings}}
   [LineStyleSettings](#cfn-quicksight-analysis-linechartdefaultseriessettings-linestylesettings): {{
     LineChartLineStyleSettings}}
   [MarkerStyleSettings](#cfn-quicksight-analysis-linechartdefaultseriessettings-markerstylesettings): {{
@@ -44,6 +47,12 @@ The axis to which you are binding all line series to.
 *Required*: No
 *Type*: String
 *Allowed values*: `PRIMARY_YAXIS | SECONDARY_YAXIS`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`DecalSettings`  <a name="cfn-quicksight-analysis-linechartdefaultseriessettings-decalsettings"></a>
+Decal settings options for all line series in the visual.
+*Required*: No
+*Type*: [DecalSettings](aws-properties-quicksight-analysis-decalsettings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `LineStyleSettings`  <a name="cfn-quicksight-analysis-linechartdefaultseriessettings-linestylesettings"></a>

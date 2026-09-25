@@ -54,7 +54,7 @@ Verify that you have the appropriate access privileges to tag VPCs in spoke acco
 ### VPC tags
 <a name="vpc-tags"></a>
 
-For this solution to manage the VPC, the VPC in the spoke account must be tagged with both the **Associate-with** and **Propagate-to** keys. You must also add or remove both keys at the same time. By default, the tags are configured for automatic approval.
+For this Guidance to manage a VPC, the VPC in the spoke account must be tagged with both the **Associate-with** and **Propagate-to** keys. You must also add or remove both keys at the same time. By default, the tags are configured for automatic approval.
 
 | Key | Value | Description |
 | --- | --- | --- |
@@ -66,9 +66,9 @@ For this solution to manage the VPC, the VPC in the spoke account must be tagged
 
 **Note**
 For a transit gateway attachment to a VPC, you can add only one subnet per Availability Zone. You can’t attach a second subnet in the same Availability Zone to the transit gateway.
-Starting in version 3.3.0 of this solution, we support a new tag key **Route-to-tgw** that skips adding the subnet in the transit gateway attachment and only updates the associated route table with the default route.
+Starting in version 3.3.0, this Guidance supports a new tag key **Route-to-tgw** that skips adding the subnet in the transit gateway attachment and only updates the associated route table with the default route.
 
 | Key | Value | Description |
 | --- | --- | --- |
-|  **Attach-to-tgw**  |  *<Leave blank>*  | The default key is `Attach-to-tgw`. Don’t enter a value. <br />You can change the name of the key in the template during initial configuration, but you must use the same key name when you tag the subnet.<br />If there isn’t an explicit route table associated with the subnet, the solution updates the main route table with the default route. |
-|  **Route-to-tgw**  |  *<Leave blank>*  | The default key is `Route-to-tgw`. Don’t enter a value. <br />You can change the name of the key in the template during initial configuration, but you must use the same key name when you tag the subnet.<br />If there isn’t an explicit route table associated with the subnet, the solution updates the main route table with the default route. |
+|  **Attach-to-tgw**  |  *<Leave blank>*  | The default key is `Attach-to-tgw`. Don’t enter a value. <br />You can change the name of the key in the template during initial configuration, but you must use the same key name when you tag the subnet.<br />If there isn’t an explicit route table associated with the subnet, the Guidance updates the main route table with the default route. |
+|  **Route-to-tgw**  |  *<Leave blank>*  | The default key is `Route-to-tgw`. Don’t enter a value. <br />You can change the name of the key in the template during initial configuration, but you must use the same key name when you tag the subnet.<br />If there isn’t an explicit route table associated with the subnet, the Guidance updates the main route table with the default route. |

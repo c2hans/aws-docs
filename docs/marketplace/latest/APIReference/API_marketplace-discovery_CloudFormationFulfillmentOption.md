@@ -34,14 +34,31 @@ Type: String
 Valid Values: `AMAZON_MACHINE_IMAGE | API | CLOUDFORMATION_TEMPLATE | CONTAINER | HELM | EKS_ADD_ON | EC2_IMAGE_BUILDER_COMPONENT | DATA_EXCHANGE | PROFESSIONAL_SERVICES | SAAS | SAGEMAKER_ALGORITHM | SAGEMAKER_MODEL`
 Required: Yes
 
+ ** availableFromTime **   <a name="AWSMarketplaceService-Type-marketplace-discovery_CloudFormationFulfillmentOption-availableFromTime"></a>
+The date and time when the CloudFormation fulfillment option became available for fulfillment.
+Type: Timestamp
+Required: No
+
  ** fulfillmentOptionVersion **   <a name="AWSMarketplaceService-Type-marketplace-discovery_CloudFormationFulfillmentOption-fulfillmentOptionVersion"></a>
 The version identifier of the fulfillment option.
 Type: String
 Required: No
 
+ ** longDescription **   <a name="AWSMarketplaceService-Type-marketplace-discovery_CloudFormationFulfillmentOption-longDescription"></a>
+A detailed description of the fulfillment option.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 8192.
+Required: No
+
  ** releaseNotes **   <a name="AWSMarketplaceService-Type-marketplace-discovery_CloudFormationFulfillmentOption-releaseNotes"></a>
 Release notes describing changes in this version of the fulfillment option.
 Type: String
+Required: No
+
+ ** shortDescription **   <a name="AWSMarketplaceService-Type-marketplace-discovery_CloudFormationFulfillmentOption-shortDescription"></a>
+A short description of the fulfillment option.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 4096.
 Required: No
 
  ** usageInstructions **   <a name="AWSMarketplaceService-Type-marketplace-discovery_CloudFormationFulfillmentOption-usageInstructions"></a>

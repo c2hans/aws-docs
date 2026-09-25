@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::IoTSiteWise::Dataset DatasetConfig
 <a name="aws-properties-iotsitewise-dataset-datasetconfig"></a>
 
-<a name="aws-properties-iotsitewise-dataset-datasetconfig-description"></a>The `DatasetConfig` property type specifies Property description not available. for an [AWS::IoTSiteWise::Dataset](aws-resource-iotsitewise-dataset.md).
+The configuration for the dataset.
 
 ## Syntax
 <a name="aws-properties-iotsitewise-dataset-datasetconfig-syntax"></a>
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-iotsitewise-dataset-datasetconfig-properties"></a>
 
 `Session`  <a name="cfn-iotsitewise-dataset-datasetconfig-session"></a>
-Property description not available.
+The session configuration for a `SESSION` dataset.
 *Required*: No
 *Type*: [SessionConfig](aws-properties-iotsitewise-dataset-sessionconfig.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

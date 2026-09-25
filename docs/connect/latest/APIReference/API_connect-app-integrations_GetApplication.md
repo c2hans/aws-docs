@@ -51,6 +51,10 @@ Content-type: application/json
    },
    "ApplicationType": "string",
    "Arn": "string",
+   "AuthConfig": {
+      "AuthType": "string",
+      "CredentialProviderIdentifier": "string"
+   },
    "CreatedTime": number,
    "Description": "string",
    "Id": "string",
@@ -101,13 +105,17 @@ Type: [ApplicationSourceConfig](API_connect-app-integrations_ApplicationSourceCo
  ** [ApplicationType](#API_connect-app-integrations_GetApplication_ResponseSyntax) **   <a name="connect-connect-app-integrations_GetApplication-response-ApplicationType"></a>
 The type of application.
 Type: String
-Valid Values: `STANDARD | SERVICE | MCP_SERVER`
+Valid Values: `STANDARD | SERVICE | MCP_SERVER | A2A_SERVER`
 
  ** [Arn](#API_connect-app-integrations_GetApplication_ResponseSyntax) **   <a name="connect-connect-app-integrations_GetApplication-response-Arn"></a>
 The Amazon Resource Name (ARN) of the Application.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `^arn:aws:[A-Za-z0-9][A-Za-z0-9_/.-]{0,62}:[A-Za-z0-9_/.-]{0,63}:[A-Za-z0-9_/.-]{0,63}:[A-Za-z0-9][A-Za-z0-9:_/+=,@.-]{0,1023}$`
+
+ ** [AuthConfig](#API_connect-app-integrations_GetApplication_ResponseSyntax) **   <a name="connect-connect-app-integrations_GetApplication-response-AuthConfig"></a>
+The authentication settings that Connect Customer uses when calling the external application.
+Type: [AuthConfig](API_connect-app-integrations_AuthConfig.md) object
 
  ** [CreatedTime](#API_connect-app-integrations_GetApplication_ResponseSyntax) **   <a name="connect-connect-app-integrations_GetApplication-response-CreatedTime"></a>
 The created time of the Application.

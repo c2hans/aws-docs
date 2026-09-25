@@ -19,6 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[ConsumerAccountRoleArn](#cfn-quicksight-datasource-athenaparameters-consumeraccountrolearn)" : {{String}},
   "[IdentityCenterConfiguration](#cfn-quicksight-datasource-athenaparameters-identitycenterconfiguration)" : {{IdentityCenterConfiguration}},
   "[RoleArn](#cfn-quicksight-datasource-athenaparameters-rolearn)" : {{String}},
   "[WorkGroup](#cfn-quicksight-datasource-athenaparameters-workgroup)" : {{String}}
@@ -29,6 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-quicksight-datasource-athenaparameters-syntax.yaml"></a>
 
 ```
+  [ConsumerAccountRoleArn](#cfn-quicksight-datasource-athenaparameters-consumeraccountrolearn): {{String}}
   [IdentityCenterConfiguration](#cfn-quicksight-datasource-athenaparameters-identitycenterconfiguration): {{
     IdentityCenterConfiguration}}
   [RoleArn](#cfn-quicksight-datasource-athenaparameters-rolearn): {{String}}
@@ -37,6 +39,14 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ## Properties
 <a name="aws-properties-quicksight-datasource-athenaparameters-properties"></a>
+
+`ConsumerAccountRoleArn`  <a name="cfn-quicksight-datasource-athenaparameters-consumeraccountrolearn"></a>
+Use `ConsumerAccountRoleArn` to perform cross-account Athena access. This is an IAM role ARN in the same AWS account as the Athena resources you want to access. Provide this along with `RoleArn` to enable role-chaining, where Amazon Quick Sight first assumes the `RoleArn` and then assumes the `ConsumerAccountRoleArn` to access Athena resources.
+*Required*: No
+*Type*: String
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `IdentityCenterConfiguration`  <a name="cfn-quicksight-datasource-athenaparameters-identitycenterconfiguration"></a>
 An optional parameter that configures IAM Identity Center authentication to grant Quick Sight access to your workgroup.

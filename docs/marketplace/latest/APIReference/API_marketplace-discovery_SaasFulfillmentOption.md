@@ -29,9 +29,27 @@ Type: String
 Valid Values: `AMAZON_MACHINE_IMAGE | API | CLOUDFORMATION_TEMPLATE | CONTAINER | HELM | EKS_ADD_ON | EC2_IMAGE_BUILDER_COMPONENT | DATA_EXCHANGE | PROFESSIONAL_SERVICES | SAAS | SAGEMAKER_ALGORITHM | SAGEMAKER_MODEL`
 Required: Yes
 
+ ** quickLaunch **   <a name="AWSMarketplaceService-Type-marketplace-discovery_SaasFulfillmentOption-quickLaunch"></a>
+Specifies whether the SaaS product supports quick-launch deployment.
+Type: String
+Valid Values: `ENABLED | DISABLED`
+Required: Yes
+
+ ** availableFromTime **   <a name="AWSMarketplaceService-Type-marketplace-discovery_SaasFulfillmentOption-availableFromTime"></a>
+The date and time when the SaaS product became available for fulfillment.
+Type: Timestamp
+Required: No
+
  ** fulfillmentUrl **   <a name="AWSMarketplaceService-Type-marketplace-discovery_SaasFulfillmentOption-fulfillmentUrl"></a>
 The URL of the seller's software registration landing page.
 Type: String
+Required: No
+
+ ** launchUrl **   <a name="AWSMarketplaceService-Type-marketplace-discovery_SaasFulfillmentOption-launchUrl"></a>
+The URL that a buyer uses to launch the seller's SaaS product. This URL is distinct from `fulfillmentUrl`, which is the seller's software registration landing page.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `https?://.*`
 Required: No
 
  ** usageInstructions **   <a name="AWSMarketplaceService-Type-marketplace-discovery_SaasFulfillmentOption-usageInstructions"></a>

@@ -825,6 +825,55 @@ def lambda_handler(event, context):
 ```
 +  For API details, see [DeleteObject](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/DeleteObject) in *AWS SDK for Python (Boto3) API Reference*.
 
+### `DeleteObjectAnnotation`
+<a name="s3_DeleteObjectAnnotation_python_3_topic"></a>
+
+The following code example shows how to use `DeleteObjectAnnotation`.
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/scenarios/object_annotations#code-examples).
+
+```
+    def delete_object_annotation(
+        self,
+        bucket_name: str,
+        object_key: str,
+        annotation_name: str,
+    ) -> None:
+        """
+        Permanently deletes a specific annotation from an S3 object.
+
+        :param bucket_name: The name of the bucket containing the object.
+        :param object_key: The key of the object.
+        :param annotation_name: The name of the annotation to delete.
+        :raises ClientError: If the annotation does not exist
+                             (NoSuchAnnotation) or another error occurs.
+        """
+        try:
+            self.s3_client.delete_object_annotation(
+                Bucket=bucket_name,
+                Key=object_key,
+                AnnotationName=annotation_name,
+            )
+            logger.info(
+                "Deleted annotation '%s' from object '%s' in bucket '%s'.",
+                annotation_name,
+                object_key,
+                bucket_name,
+            )
+        except ClientError as err:
+            if err.response["Error"]["Code"] == "NoSuchAnnotation":
+                logger.error(
+                    "Annotation '%s' has already been deleted or does not exist "
+                    "on object '%s' in bucket '%s'.",
+                    annotation_name,
+                    object_key,
+                    bucket_name,
+                )
+            raise
+```
++  For API details, see [DeleteObjectAnnotation](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/DeleteObjectAnnotation) in *AWS SDK for Python (Boto3) API Reference*.
+
 ### `DeleteObjects`
 <a name="s3_DeleteObjects_python_3_topic"></a>
 
@@ -1231,6 +1280,64 @@ class ObjectWrapper:
 ```
 +  For API details, see [GetObjectAcl](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/GetObjectAcl) in *AWS SDK for Python (Boto3) API Reference*.
 
+### `GetObjectAnnotation`
+<a name="s3_GetObjectAnnotation_python_3_topic"></a>
+
+The following code example shows how to use `GetObjectAnnotation`.
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/scenarios/object_annotations#code-examples).
+
+```
+    def get_object_annotation(
+        self,
+        bucket_name: str,
+        object_key: str,
+        annotation_name: str,
+    ) -> dict:
+        """
+        Retrieves a specific annotation by name from an S3 object.
+
+        :param bucket_name: The name of the bucket containing the object.
+        :param object_key: The key of the object.
+        :param annotation_name: The name of the annotation to retrieve.
+        :return: A dict containing the annotation payload (decoded), ETag,
+                 ContentLength, and LastModified.
+        :raises ClientError: If the annotation does not exist
+                             (NoSuchAnnotation) or another error occurs.
+        """
+        try:
+            response = self.s3_client.get_object_annotation(
+                Bucket=bucket_name,
+                Key=object_key,
+                AnnotationName=annotation_name,
+            )
+            payload = response["AnnotationPayload"].read().decode("utf-8")
+            result = dict(
+                Payload=payload,
+                ETag=response.get("ETag", "N/A"),
+                ContentLength=response.get("ContentLength", 0),
+                LastModified=response.get("LastModified", None),
+            )
+            logger.info(
+                "Retrieved annotation '%s' from object '%s' in bucket '%s'.",
+                annotation_name,
+                object_key,
+                bucket_name,
+            )
+            return result
+        except ClientError as err:
+            if err.response["Error"]["Code"] == "NoSuchAnnotation":
+                logger.error(
+                    "Annotation '%s' does not exist on object '%s' in bucket '%s'.",
+                    annotation_name,
+                    object_key,
+                    bucket_name,
+                )
+            raise
+```
++  For API details, see [GetObjectAnnotation](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/GetObjectAnnotation) in *AWS SDK for Python (Boto3) API Reference*.
+
 ### `GetObjectLegalHold`
 <a name="s3_GetObjectLegalHold_python_3_topic"></a>
 
@@ -1386,6 +1493,69 @@ class BucketWrapper:
             return buckets
 ```
 +  For API details, see [ListBuckets](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/ListBuckets) in *AWS SDK for Python (Boto3) API Reference*.
+
+### `ListObjectAnnotations`
+<a name="s3_ListObjectAnnotations_python_3_topic"></a>
+
+The following code example shows how to use `ListObjectAnnotations`.
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/scenarios/object_annotations#code-examples).
+
+```
+    def list_object_annotations(
+        self,
+        bucket_name: str,
+        object_key: str,
+        annotation_prefix: Optional[str] = None,
+    ) -> list:
+        """
+        Lists annotations attached to an S3 object. Uses a paginator to
+        handle results that span multiple pages.
+
+        :param bucket_name: The name of the bucket containing the object.
+        :param object_key: The key of the object.
+        :param annotation_prefix: Optional prefix to filter annotation names.
+        :return: A list of annotation entry dicts, each containing
+                 AnnotationName, Size, ETag, and LastModified.
+        :raises ClientError: If the object does not exist (NoSuchKey) or
+                             another error occurs.
+        """
+        try:
+            annotations = list()
+            paginator = self.s3_client.get_paginator("list_object_annotations")
+            params = dict(Bucket=bucket_name, Key=object_key)
+            if annotation_prefix is not None:
+                params["AnnotationPrefix"] = annotation_prefix
+            for page in paginator.paginate(**params):
+                page_annotations = page.get("Annotations", list())
+                for annotation in page_annotations:
+                    annotations.append(
+                        dict(
+                            AnnotationName=annotation.get("AnnotationName", ""),
+                            Size=annotation.get("Size", 0),
+                            ETag=annotation.get("ETag", ""),
+                            LastModified=annotation.get("LastModified", None),
+                        )
+                    )
+            logger.info(
+                "Listed %d annotation(s) on object '%s' in bucket '%s'%s.",
+                len(annotations),
+                object_key,
+                bucket_name,
+                f" with prefix '{annotation_prefix}'" if annotation_prefix else "",
+            )
+            return annotations
+        except ClientError as err:
+            if err.response["Error"]["Code"] == "NoSuchKey":
+                logger.error(
+                    "Object '%s' does not exist in bucket '%s'.",
+                    object_key,
+                    bucket_name,
+                )
+            raise
+```
++  For API details, see [ListObjectAnnotations](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/ListObjectAnnotations) in *AWS SDK for Python (Boto3) API Reference*.
 
 ### `ListObjectsV2`
 <a name="s3_ListObjectsV2_python_3_topic"></a>
@@ -1742,6 +1912,59 @@ class ObjectWrapper:
             raise
 ```
 +  For API details, see [PutObjectAcl](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/PutObjectAcl) in *AWS SDK for Python (Boto3) API Reference*.
+
+### `PutObjectAnnotation`
+<a name="s3_PutObjectAnnotation_python_3_topic"></a>
+
+The following code example shows how to use `PutObjectAnnotation`.
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/scenarios/object_annotations#code-examples).
+
+```
+    def put_object_annotation(
+        self,
+        bucket_name: str,
+        object_key: str,
+        annotation_name: str,
+        annotation_payload: str,
+    ) -> dict:
+        """
+        Attaches a named annotation payload to an S3 object.
+
+        :param bucket_name: The name of the bucket containing the object.
+        :param object_key: The key of the object to annotate.
+        :param annotation_name: The name of the annotation (1-512 bytes).
+        :param annotation_payload: The annotation content (1 byte to 1 MiB).
+        :return: A dict containing the PutObjectAnnotation response with ETag.
+        :raises ClientError: If the annotation name is invalid
+                             (InvalidAnnotationName) or another error occurs.
+        """
+        try:
+            response = self.s3_client.put_object_annotation(
+                Bucket=bucket_name,
+                Key=object_key,
+                AnnotationName=annotation_name,
+                AnnotationPayload=annotation_payload.encode("utf-8"),
+            )
+            logger.info(
+                "Put annotation '%s' on object '%s' in bucket '%s'. ETag: %s",
+                annotation_name,
+                object_key,
+                bucket_name,
+                response.get("ETag", "N/A"),
+            )
+            return response
+        except ClientError as err:
+            if err.response["Error"]["Code"] == "InvalidAnnotationName":
+                logger.error(
+                    "Annotation name '%s' is invalid. Names must be 1-512 bytes, "
+                    "UTF-8 encoded, and cannot start with 'aws' or 's3'.",
+                    annotation_name,
+                )
+            raise
+```
++  For API details, see [PutObjectAnnotation](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/PutObjectAnnotation) in *AWS SDK for Python (Boto3) API Reference*.
 
 ### `PutObjectLegalHold`
 <a name="s3_PutObjectLegalHold_python_3_topic"></a>
@@ -2452,6 +2675,340 @@ class S3ConditionalRequests:
   + [CopyObject](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/CopyObject)
   + [GetObject](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/GetObject)
   + [PutObject](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/PutObject)
+
+### Manage object annotations
+<a name="s3_Scenario_ObjectAnnotations_python_3_topic"></a>
+
+The following code example shows how to:
++ Create an Amazon S3 bucket.
++ Upload a test object.
++ Attach multiple annotations to the object.
++ Retrieve and list annotations with optional prefix filtering.
++ Update an existing annotation.
++ Delete annotations and verify removal.
++ Clean up all resources.
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/scenarios/object_annotations#code-examples).
+Run an interactive scenario at a command prompt.
+
+```
+import logging
+import random
+import string
+import sys
+
+from botocore.exceptions import ClientError
+
+from s3_wrapper import S3AnnotationsWrapper
+
+# Add relative path to include demo_tools without package setup.
+sys.path.append("../../../..")
+import demo_tools.question as q  # noqa
+
+logger = logging.getLogger(__name__)
+
+# Constants
+OBJECT_KEY = "sample-data.txt"
+OBJECT_CONTENT = (
+    "This is a sample text file used to demonstrate " "Amazon S3 Object Annotations."
+)
+SEPARATOR = "-" * 80
+
+class ObjectAnnotationsScenario:
+    """Runs an interactive scenario demonstrating S3 Object Annotations."""
+
+    def __init__(self, s3_wrapper: S3AnnotationsWrapper):
+        """
+        :param s3_wrapper: An S3AnnotationsWrapper instance.
+        """
+        self.s3_wrapper = s3_wrapper
+        self.bucket_name = None
+
+    def run_scenario(self) -> None:
+        """Runs all phases of the Object Annotations scenario."""
+        print(SEPARATOR)
+        print(
+            "Welcome to the Amazon S3 Object Annotations demo!\n\n"
+            "S3 Object Annotations let you attach up to 1,000 named payloads "
+            "(each up to 1 MiB)\nto any S3 object. Annotations can store rich "
+            "metadata like JSON, XML, or plain text\nwithout modifying the "
+            "original object."
+        )
+        print(SEPARATOR)
+
+        try:
+            self._setup()
+            self._attach_annotations()
+            self._retrieve_and_list_annotations()
+            self._update_annotation()
+            self._delete_annotations()
+        finally:
+            self._cleanup()
+
+    # ------------------------------------------------------------------
+    # Setup
+    # ------------------------------------------------------------------
+    def _setup(self) -> None:
+        """Creates a bucket and uploads a test object.
+
+        Prompts for a bucket name prefix and appends a random suffix. If the
+        resulting bucket already exists and is owned by you
+        (BucketAlreadyOwnedByYou), prompt for a different prefix and try again
+        rather than terminating the scenario.
+        """
+        while True:
+            prefix = q.ask(
+                "Enter a bucket name prefix (or press Enter for 'annotations-demo'): "
+            )
+            if not prefix.strip():
+                prefix = "annotations-demo"
+            suffix = "".join(
+                random.choices(string.ascii_lowercase + string.digits, k=8)
+            )
+            self.bucket_name = f"{prefix}-{suffix}"
+
+            print(f"\nCreating bucket '{self.bucket_name}'...")
+            try:
+                self.s3_wrapper.create_bucket(self.bucket_name)
+                print("Bucket created successfully.\n")
+                break
+            except ClientError as err:
+                if err.response["Error"]["Code"] == "BucketAlreadyOwnedByYou":
+                    print(
+                        f"A bucket named '{self.bucket_name}' already exists and is "
+                        "owned by you. Please enter a different prefix."
+                    )
+                    self.bucket_name = None
+                    continue
+                raise
+
+        print(f"Uploading test object '{OBJECT_KEY}'...")
+        response = self.s3_wrapper.put_object(
+            self.bucket_name, OBJECT_KEY, OBJECT_CONTENT
+        )
+        print(f"Object uploaded. ETag: {response.get('ETag', 'N/A')}")
+        print(SEPARATOR)
+        q.ask("\nPress Enter to continue...")
+
+    # ------------------------------------------------------------------
+    # Attach annotations
+    # ------------------------------------------------------------------
+    def _attach_annotations(self) -> None:
+        """Attaches three annotations to the test object."""
+        print(SEPARATOR)
+        print(f"Attaching annotations to '{OBJECT_KEY}'...\n")
+
+        # Annotation names may contain Unicode letters, digits, underscores,
+        # periods, and hyphens (1-512 bytes) and cannot start with "aws" or
+        # "s3". A period is used here as a namespace delimiter (e.g. "ml.") so
+        # the names stay valid while still demonstrating prefix filtering.
+        annotations = [
+            (
+                "processing-status",
+                '{"status": "pending", "submitted": "2026-09-16T10:00:00Z"}',
+            ),
+            (
+                "ml.sentiment-analysis",
+                '{"sentiment": "positive", "confidence": 0.95, "model": "v2.1"}',
+            ),
+            (
+                "ml.content-classification",
+                '{"category": "technical-documentation", "language": "en", '
+                '"topics": ["cloud", "storage"]}',
+            ),
+        ]
+
+        for name, payload in annotations:
+            response = self.s3_wrapper.put_object_annotation(
+                self.bucket_name, OBJECT_KEY, name, payload
+            )
+            print(f"  Added annotation '{name}' (ETag: {response.get('ETag', 'N/A')})")
+
+        print(f"\n{len(annotations)} annotations attached successfully.")
+        print(SEPARATOR)
+        q.ask("\nPress Enter to continue...")
+
+    # ------------------------------------------------------------------
+    # Retrieve and list annotations
+    # ------------------------------------------------------------------
+    def _retrieve_and_list_annotations(self) -> None:
+        """Retrieves a specific annotation and lists all/filtered annotations."""
+        print(SEPARATOR)
+        print("Retrieving annotation 'ml.sentiment-analysis'...\n")
+
+        result = self.s3_wrapper.get_object_annotation(
+            self.bucket_name, OBJECT_KEY, "ml.sentiment-analysis"
+        )
+        print(f"  Payload: {result['Payload']}")
+        print(f"  Size: {result['ContentLength']} bytes")
+        print(f"  ETag: {result['ETag']}")
+        print(f"  Last Modified: {result['LastModified']}")
+
+        print(f"\nListing all annotations on '{OBJECT_KEY}'...")
+        all_annotations = self.s3_wrapper.list_object_annotations(
+            self.bucket_name, OBJECT_KEY
+        )
+        print(f"  Found {len(all_annotations)} annotation(s):")
+        for i, ann in enumerate(all_annotations, 1):
+            print(f"    {i}. \"{ann['AnnotationName']}\" ({ann['Size']} bytes)")
+
+        print("\nListing annotations with prefix 'ml.'...")
+        ml_annotations = self.s3_wrapper.list_object_annotations(
+            self.bucket_name, OBJECT_KEY, annotation_prefix="ml."
+        )
+        print(f"  Found {len(ml_annotations)} annotation(s):")
+        for i, ann in enumerate(ml_annotations, 1):
+            print(f"    {i}. \"{ann['AnnotationName']}\" ({ann['Size']} bytes)")
+
+        print(SEPARATOR)
+        q.ask("\nPress Enter to continue...")
+
+    # ------------------------------------------------------------------
+    # Update an annotation
+    # ------------------------------------------------------------------
+    def _update_annotation(self) -> None:
+        """Overwrites an existing annotation with new content and verifies."""
+        print(SEPARATOR)
+        print("Updating annotation 'processing-status' with new content...")
+
+        updated_payload = (
+            '{"status": "completed", "submitted": "2026-09-16T10:00:00Z", '
+            '"completed": "2026-09-16T10:05:00Z"}'
+        )
+        response = self.s3_wrapper.put_object_annotation(
+            self.bucket_name, OBJECT_KEY, "processing-status", updated_payload
+        )
+        print(f"  Annotation updated. New ETag: {response.get('ETag', 'N/A')}")
+
+        print("\nVerifying the update...")
+        result = self.s3_wrapper.get_object_annotation(
+            self.bucket_name, OBJECT_KEY, "processing-status"
+        )
+        print(f"  Payload: {result['Payload']}")
+        print("  Update confirmed.")
+        print(SEPARATOR)
+        q.ask("\nPress Enter to continue...")
+
+    # ------------------------------------------------------------------
+    # Delete annotations
+    # ------------------------------------------------------------------
+    def _delete_annotations(self) -> None:
+        """Deletes annotations, confirms deletion, and verifies cleanup."""
+        print(SEPARATOR)
+        # Delete a single annotation
+        print("Deleting annotation 'processing-status'...")
+        self.s3_wrapper.delete_object_annotation(
+            self.bucket_name, OBJECT_KEY, "processing-status"
+        )
+        print("  Annotation deleted successfully.\n")
+
+        # Attempt to retrieve the deleted annotation
+        print("Attempting to retrieve deleted annotation 'processing-status'...")
+        try:
+            self.s3_wrapper.get_object_annotation(
+                self.bucket_name, OBJECT_KEY, "processing-status"
+            )
+        except ClientError as err:
+            if err.response["Error"]["Code"] == "NoSuchAnnotation":
+                print(
+                    "  Expected error: NoSuchAnnotation - "
+                    "The annotation does not exist. Deletion confirmed!"
+                )
+            else:
+                raise
+
+        # List remaining
+        print("\nListing remaining annotations...")
+        remaining = self.s3_wrapper.list_object_annotations(
+            self.bucket_name, OBJECT_KEY
+        )
+        print(f"  Found {len(remaining)} annotation(s):")
+        for i, ann in enumerate(remaining, 1):
+            print(f"    {i}. \"{ann['AnnotationName']}\"")
+
+        # Delete remaining annotations
+        print("\nDeleting remaining annotations...")
+        for ann in remaining:
+            name = ann["AnnotationName"]
+            self.s3_wrapper.delete_object_annotation(self.bucket_name, OBJECT_KEY, name)
+            print(f"  Deleted '{name}'.")
+
+        # Verify all removed
+        print("\nVerifying all annotations removed...")
+        final = self.s3_wrapper.list_object_annotations(self.bucket_name, OBJECT_KEY)
+        print(f"  {len(final)} annotations remaining. All annotations cleaned up.")
+        print(SEPARATOR)
+
+    # ------------------------------------------------------------------
+    # Cleanup
+    # ------------------------------------------------------------------
+    def _cleanup(self) -> None:
+        """Deletes the test object and bucket."""
+        if self.bucket_name is None:
+            return
+
+        print(SEPARATOR)
+        print("Cleaning up resources...")
+
+        try:
+            self.s3_wrapper.delete_object(self.bucket_name, OBJECT_KEY)
+            print(f"  Deleted object '{OBJECT_KEY}'.")
+        except ClientError:
+            logger.warning("Could not delete object '%s'.", OBJECT_KEY)
+
+        try:
+            self.s3_wrapper.delete_bucket(self.bucket_name)
+            print(f"  Deleted bucket '{self.bucket_name}'.")
+        except ClientError:
+            logger.warning("Could not delete bucket '%s'.", self.bucket_name)
+
+        print("Cleanup complete!")
+        print(SEPARATOR)
+
+def main() -> None:
+    """Entry point for the Object Annotations scenario."""
+    logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
+    wrapper = S3AnnotationsWrapper.from_client()
+    scenario = ObjectAnnotationsScenario(wrapper)
+    scenario.run_scenario()
+
+if __name__ == "__main__":
+    main()
+```
+Create a class that wraps Amazon S3 Object Annotations operations.
+
+```
+class S3AnnotationsWrapper:
+    """Encapsulates Amazon S3 Object Annotations operations."""
+
+    def __init__(self, s3_client):
+        """
+        Initializes the S3AnnotationsWrapper with an S3 client.
+
+        :param s3_client: A Boto3 S3 client.
+        """
+        self.s3_client = s3_client
+
+    @classmethod
+    def from_client(cls):
+        """
+        Creates an S3AnnotationsWrapper using a default Boto3 S3 client.
+
+        :return: An initialized S3AnnotationsWrapper instance.
+        """
+        s3_client = boto3.client("s3")
+        return cls(s3_client)
+```
++ For API details, see the following topics in *AWS SDK for Python (Boto3) API Reference*.
+  + [CreateBucket](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/CreateBucket)
+  + [DeleteBucket](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/DeleteBucket)
+  + [DeleteObject](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/DeleteObject)
+  + [DeleteObjectAnnotation](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/DeleteObjectAnnotation)
+  + [GetObjectAnnotation](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/GetObjectAnnotation)
+  + [ListObjectAnnotations](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/ListObjectAnnotations)
+  + [PutObject](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/PutObject)
+  + [PutObjectAnnotation](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/PutObjectAnnotation)
 
 ### Manage versioned objects in batches with a Lambda function
 <a name="s3_Scenario_BatchObjectVersioning_python_3_topic"></a>

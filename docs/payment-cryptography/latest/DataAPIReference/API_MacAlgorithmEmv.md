@@ -33,7 +33,7 @@ Required: Yes
  ** SessionKeyDerivationMode **   <a name="paymentcryptographydata-Type-MacAlgorithmEmv-SessionKeyDerivationMode"></a>
 The method of deriving a session key for EMV MAC generation or verification.
 Type: String
-Valid Values: `EMV_COMMON_SESSION_KEY | EMV2000 | AMEX | MASTERCARD_SESSION_KEY | VISA`
+Valid Values: `EMV_COMMON_SESSION_KEY | EMV2000 | AMEX | MASTERCARD_SESSION_KEY | VISA | UNION_PAY`
 Required: Yes
 
  ** SessionKeyDerivationValue **   <a name="paymentcryptographydata-Type-MacAlgorithmEmv-SessionKeyDerivationValue"></a>

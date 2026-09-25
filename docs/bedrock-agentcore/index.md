@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/index.html
 title: 'Amazon Bedrock AgentCore Documentation'
 canonical_url: https://docs.aws.amazon.com/bedrock-agentcore/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # Amazon Bedrock AgentCore Documentation
@@ -88,10 +88,10 @@ Amazon Bedrock AgentCore is a fully managed service that enables you to deploy a
 
 ## Related Links
 
-- [AWS Glossary](http://docs.aws.amazon.com/general/latest/gr/glos-chap.html)
+- [AWS Glossary](https://docs.aws.amazon.com/general/latest/gr/glos-chap.html)
 - [Getting Started with AWS](https://aws.amazon.com/documentation/gettingstarted/)
 - [SDKs & Tools](https://aws.amazon.com/tools/)
-- [AWS General Reference](http://docs.aws.amazon.com/general/latest/gr/Welcome.html)
+- [AWS General Reference](https://docs.aws.amazon.com/general/latest/gr/Welcome.html)
 - [AWS Training](https://aws.amazon.com/training/)
 - [AWS Case Studies](https://aws.amazon.com/solutions/case-studies/)
 - [AWS Whitepapers](https://aws.amazon.com/whitepapers/)

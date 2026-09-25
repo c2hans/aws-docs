@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/eks-automode-clusters-with-glo
 title: 'Guidance for EKS AutoMode Clusters with Global Capacity Orchestrator on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/eks-automode-clusters-with-global-capacity-orchestrator-on-aws/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # Guidance for EKS AutoMode Clusters with Global Capacity Orchestrator on AWS

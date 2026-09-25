@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/responsible-content-moderation
 title: 'Guidance for Responsible Content Moderation with AI Services on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/responsible-content-moderation-with-ai-services-on-aws/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # Guidance for Responsible Content Moderation with AI Services on AWS

@@ -16,6 +16,8 @@ The following data types are supported by AWS Billing:
 +  [BillingViewElement](API_billing_BillingViewElement.md)
 +  [BillingViewHealthStatus](API_billing_BillingViewHealthStatus.md)
 +  [BillingViewListElement](API_billing_BillingViewListElement.md)
++  [BillingViewSegmentsListElement](API_billing_BillingViewSegmentsListElement.md)
++  [BillingViewSegmentTimeRange](API_billing_BillingViewSegmentTimeRange.md)
 +  [ChargeAccount](API_billing_ChargeAccount.md)
 +  [ContractAccount](API_billing_ContractAccount.md)
 +  [CostCategoryValues](API_billing_CostCategoryValues.md)

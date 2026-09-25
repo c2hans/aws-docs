@@ -20,11 +20,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[BackgroundStyle](#cfn-quicksight-analysis-freeformlayoutelement-backgroundstyle)" : {{FreeFormLayoutElementBackgroundStyle}},
+  "[BorderRadius](#cfn-quicksight-analysis-freeformlayoutelement-borderradius)" : {{String}},
   "[BorderStyle](#cfn-quicksight-analysis-freeformlayoutelement-borderstyle)" : {{FreeFormLayoutElementBorderStyle}},
   "[ElementId](#cfn-quicksight-analysis-freeformlayoutelement-elementid)" : {{String}},
   "[ElementType](#cfn-quicksight-analysis-freeformlayoutelement-elementtype)" : {{String}},
   "[Height](#cfn-quicksight-analysis-freeformlayoutelement-height)" : {{String}},
   "[LoadingAnimation](#cfn-quicksight-analysis-freeformlayoutelement-loadinganimation)" : {{LoadingAnimation}},
+  "[Padding](#cfn-quicksight-analysis-freeformlayoutelement-padding)" : {{String}},
   "[RenderingRules](#cfn-quicksight-analysis-freeformlayoutelement-renderingrules)" : {{[ SheetElementRenderingRule, ... ]}},
   "[SelectedBorderStyle](#cfn-quicksight-analysis-freeformlayoutelement-selectedborderstyle)" : {{FreeFormLayoutElementBorderStyle}},
   "[Visibility](#cfn-quicksight-analysis-freeformlayoutelement-visibility)" : {{String}},
@@ -40,6 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [BackgroundStyle](#cfn-quicksight-analysis-freeformlayoutelement-backgroundstyle): {{
     FreeFormLayoutElementBackgroundStyle}}
+  [BorderRadius](#cfn-quicksight-analysis-freeformlayoutelement-borderradius): {{String}}
   [BorderStyle](#cfn-quicksight-analysis-freeformlayoutelement-borderstyle): {{
     FreeFormLayoutElementBorderStyle}}
   [ElementId](#cfn-quicksight-analysis-freeformlayoutelement-elementid): {{String}}
@@ -47,6 +50,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   [Height](#cfn-quicksight-analysis-freeformlayoutelement-height): {{String}}
   [LoadingAnimation](#cfn-quicksight-analysis-freeformlayoutelement-loadinganimation): {{
     LoadingAnimation}}
+  [Padding](#cfn-quicksight-analysis-freeformlayoutelement-padding): {{String}}
   [RenderingRules](#cfn-quicksight-analysis-freeformlayoutelement-renderingrules): {{
     - SheetElementRenderingRule}}
   [SelectedBorderStyle](#cfn-quicksight-analysis-freeformlayoutelement-selectedborderstyle): {{
@@ -64,6 +68,14 @@ To declare this entity in your CloudFormation template, use the following syntax
 The background style configuration of a free-form layout element.
 *Required*: No
 *Type*: [FreeFormLayoutElementBackgroundStyle](aws-properties-quicksight-analysis-freeformlayoutelementbackgroundstyle.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`BorderRadius`  <a name="cfn-quicksight-analysis-freeformlayoutelement-borderradius"></a>
+The border radius of a free-form layout element.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `50`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `BorderStyle`  <a name="cfn-quicksight-analysis-freeformlayoutelement-borderstyle"></a>
@@ -98,6 +110,14 @@ The height of an element within a free-form layout.
 The loading animation configuration of a free-form layout element.
 *Required*: No
 *Type*: [LoadingAnimation](aws-properties-quicksight-analysis-loadinganimation.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Padding`  <a name="cfn-quicksight-analysis-freeformlayoutelement-padding"></a>
+The padding of a free-form layout element.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `200`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `RenderingRules`  <a name="cfn-quicksight-analysis-freeformlayoutelement-renderingrules"></a>

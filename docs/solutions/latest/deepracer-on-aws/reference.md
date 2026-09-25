@@ -39,3 +39,4 @@ This solution sends operational metrics to AWS (the "Data") about the use of thi
 + Todd Bevins
 + Don Barber
 + Seyha Kry
++ Ryan Love

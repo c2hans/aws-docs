@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/digital-user-onboarding-in-fin
 title: 'Guidance for Digital User Onboarding in Financial Services on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/digital-user-onboarding-in-financial-services-on-aws/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # Guidance for Digital User Onboarding in Financial Services on AWS

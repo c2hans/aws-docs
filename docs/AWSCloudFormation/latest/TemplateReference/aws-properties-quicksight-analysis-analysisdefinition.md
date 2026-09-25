@@ -28,7 +28,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[ParameterDeclarations](#cfn-quicksight-analysis-analysisdefinition-parameterdeclarations)" : {{[ ParameterDeclaration, ... ]}},
   "[QueryExecutionOptions](#cfn-quicksight-analysis-analysisdefinition-queryexecutionoptions)" : {{QueryExecutionOptions}},
   "[Sheets](#cfn-quicksight-analysis-analysisdefinition-sheets)" : {{[ SheetDefinition, ... ]}},
-  "[StaticFiles](#cfn-quicksight-analysis-analysisdefinition-staticfiles)" : {{[ StaticFile, ... ]}}
+  "[StaticFiles](#cfn-quicksight-analysis-analysisdefinition-staticfiles)" : {{[ StaticFile, ... ]}},
+  "[TopicIdentifierDeclarations](#cfn-quicksight-analysis-analysisdefinition-topicidentifierdeclarations)" : {{[ TopicIdentifierDeclaration, ... ]}}
 }
 ```
 
@@ -56,6 +57,8 @@ To declare this entity in your CloudFormation template, use the following syntax
     - SheetDefinition}}
   [StaticFiles](#cfn-quicksight-analysis-analysisdefinition-staticfiles): {{
     - StaticFile}}
+  [TopicIdentifierDeclarations](#cfn-quicksight-analysis-analysisdefinition-topicidentifierdeclarations): {{
+    - TopicIdentifierDeclaration}}
 ```
 
 ## Properties
@@ -87,7 +90,7 @@ An array of calculated field definitions for the analysis.
 An array of dataset identifier declarations. This mapping allows the usage of dataset identifiers instead of dataset ARNs throughout analysis sub-structures.
 *Required*: Yes
 *Type*: Array of [DataSetIdentifierDeclaration](aws-properties-quicksight-analysis-datasetidentifierdeclaration.md)
-*Minimum*: `1`
+*Minimum*: `0`
 *Maximum*: `50`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
@@ -113,7 +116,7 @@ For more information, see [Parameters in Amazon Quick Sight](https://docs.aws.am
 *Required*: No
 *Type*: Array of [ParameterDeclaration](aws-properties-quicksight-analysis-parameterdeclaration.md)
 *Minimum*: `0`
-*Maximum*: `200`
+*Maximum*: `400`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `QueryExecutionOptions`  <a name="cfn-quicksight-analysis-analysisdefinition-queryexecutionoptions"></a>
@@ -136,4 +139,12 @@ The static files for the definition.
 *Type*: Array of [StaticFile](aws-properties-quicksight-analysis-staticfile.md)
 *Minimum*: `0`
 *Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`TopicIdentifierDeclarations`  <a name="cfn-quicksight-analysis-analysisdefinition-topicidentifierdeclarations"></a>
+An array of topic identifier declarations. This mapping allows the usage of topic identifiers instead of topic ARNs throughout analysis sub-structures.
+*Required*: No
+*Type*: Array of [TopicIdentifierDeclaration](aws-properties-quicksight-analysis-topicidentifierdeclaration.md)
+*Minimum*: `0`
+*Maximum*: `50`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

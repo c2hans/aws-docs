@@ -19,6 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[Alias](#cfn-mediatailor-function-functionref-alias)" : {{String}},
   "[FunctionId](#cfn-mediatailor-function-functionref-functionid)" : {{String}},
   "[RunCondition](#cfn-mediatailor-function-functionref-runcondition)" : {{String}}
 }
@@ -28,12 +29,19 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-mediatailor-function-functionref-syntax.yaml"></a>
 
 ```
+  [Alias](#cfn-mediatailor-function-functionref-alias): {{String}}
   [FunctionId](#cfn-mediatailor-function-functionref-functionid): {{String}}
   [RunCondition](#cfn-mediatailor-function-functionref-runcondition): {{String}}
 ```
 
 ## Properties
 <a name="aws-properties-mediatailor-function-functionref-properties"></a>
+
+`Alias`  <a name="cfn-mediatailor-function-functionref-alias"></a>
+An optional alternate name for the function within the executor. If omitted, MediaTailor uses the function identifier.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `FunctionId`  <a name="cfn-mediatailor-function-functionref-functionid"></a>
 The identifier of the child function to execute in this step.

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/dynamodb/index.html
 title: 'Amazon DynamoDB Documentation'
 canonical_url: https://docs.aws.amazon.com/dynamodb/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # Amazon DynamoDB Documentation

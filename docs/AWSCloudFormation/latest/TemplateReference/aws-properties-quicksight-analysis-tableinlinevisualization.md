@@ -19,7 +19,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
-  "[DataBars](#cfn-quicksight-analysis-tableinlinevisualization-databars)" : {{DataBarsOptions}}
+  "[DataBars](#cfn-quicksight-analysis-tableinlinevisualization-databars)" : {{DataBarsOptions}},
+  "[Sparklines](#cfn-quicksight-analysis-tableinlinevisualization-sparklines)" : {{SparklinesOptions}}
 }
 ```
 
@@ -29,6 +30,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [DataBars](#cfn-quicksight-analysis-tableinlinevisualization-databars): {{
     DataBarsOptions}}
+  [Sparklines](#cfn-quicksight-analysis-tableinlinevisualization-sparklines): {{
+    SparklinesOptions}}
 ```
 
 ## Properties
@@ -38,4 +41,10 @@ To declare this entity in your CloudFormation template, use the following syntax
 The configuration of the inline visualization of the data bars within a chart.
 *Required*: No
 *Type*: [DataBarsOptions](aws-properties-quicksight-analysis-databarsoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Sparklines`  <a name="cfn-quicksight-analysis-tableinlinevisualization-sparklines"></a>
+The configuration of the inline visualization of the sparklines within a chart.
+*Required*: No
+*Type*: [SparklinesOptions](aws-properties-quicksight-analysis-sparklinesoptions.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

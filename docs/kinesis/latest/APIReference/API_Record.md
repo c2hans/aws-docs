@@ -16,12 +16,6 @@ Type: Base64-encoded binary data object
 Length Constraints: Minimum length of 0. Maximum length of 10485760.
 Required: Yes
 
- ** PartitionKey **   <a name="Streams-Type-Record-PartitionKey"></a>
-Identifies which shard in the stream the data record is assigned to.
-Type: String
-Length Constraints: Minimum length of 1. Maximum length of 256.
-Required: Yes
-
  ** SequenceNumber **   <a name="Streams-Type-Record-SequenceNumber"></a>
 The unique identifier of the record within its shard.
 Type: String
@@ -39,6 +33,13 @@ The encryption type used on the record. This parameter can be one of the followi
 +  `KMS`: Use server-side encryption on the records in the stream using a customer-managed AWS KMS key.
 Type: String
 Valid Values: `NONE | KMS`
+Required: No
+
+ ** PartitionKey **   <a name="Streams-Type-Record-PartitionKey"></a>
+Identifies which shard in the stream the data record is assigned to.
+For a stream that uses the `AUTO` record distribution strategy, this value is not returned if the producer did not provide a partition key when writing the record. If the producer provided a partition key, the original value is returned even though it was not used to determine shard placement.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
 Required: No
 
 ## See Also

@@ -33,6 +33,11 @@ Parameters to derive session key for a Mastercard payment card for ARQC verifica
 Type: [SessionKeyMastercard](API_SessionKeyMastercard.md) object
 Required: No
 
+ ** UnionPay **   <a name="paymentcryptographydata-Type-SessionKeyDerivation-UnionPay"></a>
+Parameters to derive session key for a UnionPay payment card for Authorization Request Cryptogram (ARQC) generation and verification.
+Type: [SessionKeyUnionPay](API_SessionKeyUnionPay.md) object
+Required: No
+
  ** Visa **   <a name="paymentcryptographydata-Type-SessionKeyDerivation-Visa"></a>
 Parameters to derive session key for a Visa payment cardfor ARQC verification.
 Type: [SessionKeyVisa](API_SessionKeyVisa.md) object

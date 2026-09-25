@@ -20,7 +20,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[CanvasSizeOptions](#cfn-quicksight-analysis-freeformlayoutconfiguration-canvassizeoptions)" : {{FreeFormLayoutCanvasSizeOptions}},
-  "[Elements](#cfn-quicksight-analysis-freeformlayoutconfiguration-elements)" : {{[ FreeFormLayoutElement, ... ]}}
+  "[Elements](#cfn-quicksight-analysis-freeformlayoutconfiguration-elements)" : {{[ FreeFormLayoutElement, ... ]}},
+  "[Groups](#cfn-quicksight-analysis-freeformlayoutconfiguration-groups)" : {{[ SheetLayoutGroup, ... ]}}
 }
 ```
 
@@ -32,6 +33,8 @@ To declare this entity in your CloudFormation template, use the following syntax
     FreeFormLayoutCanvasSizeOptions}}
   [Elements](#cfn-quicksight-analysis-freeformlayoutconfiguration-elements): {{
     - FreeFormLayoutElement}}
+  [Groups](#cfn-quicksight-analysis-freeformlayoutconfiguration-groups): {{
+    - SheetLayoutGroup}}
 ```
 
 ## Properties
@@ -49,4 +52,12 @@ The elements that are included in a free-form layout.
 *Type*: Array of [FreeFormLayoutElement](aws-properties-quicksight-analysis-freeformlayoutelement.md)
 *Minimum*: `0`
 *Maximum*: `430`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Groups`  <a name="cfn-quicksight-analysis-freeformlayoutconfiguration-groups"></a>
+The groups that are included in a free-form layout.
+*Required*: No
+*Type*: Array of [SheetLayoutGroup](aws-properties-quicksight-analysis-sheetlayoutgroup.md)
+*Minimum*: `0`
+*Maximum*: `215`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

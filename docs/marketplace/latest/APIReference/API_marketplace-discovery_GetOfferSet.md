@@ -15,6 +15,7 @@ POST /2026-02-05/getOfferSet HTTP/1.1
 Content-type: application/json
 
 {
+   "locale": "{{string}}",
    "offerSetId": "{{string}}"
 }
 ```
@@ -35,6 +36,13 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[\w\-]+`
 Required: Yes
+
+ ** [locale](#API_marketplace-discovery_GetOfferSet_RequestSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetOfferSet-request-locale"></a>
+A BCP 47 language tag or comma-separated priority list specifying the preferred locale for response content. See `Locale` for supported values, constraints, fallback behavior, and the default locale. If omitted, the service returns content in the default locale.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Pattern: `[^;,]+(\s*,\s*[^;,]+){0,1}`
+Required: No
 
 ## Response Syntax
 <a name="API_marketplace-discovery_GetOfferSet_ResponseSyntax"></a>
@@ -74,6 +82,7 @@ Content-type: application/json
    "buyerNotes": "string",
    "catalog": "string",
    "expirationTime": number,
+   "locale": "string",
    "offerSetId": "string",
    "offerSetName": "string",
    "sellerOfRecord": {
@@ -128,6 +137,12 @@ Length Constraints: Minimum length of 0. Maximum length of 255.
  ** [expirationTime](#API_marketplace-discovery_GetOfferSet_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetOfferSet-response-expirationTime"></a>
 The date and time when the offer set expires and is no longer available for procurement.
 Type: Timestamp
+
+ ** [locale](#API_marketplace-discovery_GetOfferSet_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetOfferSet-response-locale"></a>
+The locale of the returned content. Indicates whether the response contains content in the requested locale, or fell back to the default locale. See `Locale` for details.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Pattern: `[^;,]+(\s*,\s*[^;,]+){0,1}`
 
  ** [offerSetName](#API_marketplace-discovery_GetOfferSet_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetOfferSet-response-offerSetName"></a>
 The display name of the offer set.

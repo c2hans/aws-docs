@@ -36,7 +36,8 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[Name](#cfn-config-configurationrecorder-name)" : {{String}},
       "[RecordingGroup](#cfn-config-configurationrecorder-recordinggroup)" : {{RecordingGroup}},
       "[RecordingMode](#cfn-config-configurationrecorder-recordingmode)" : {{RecordingMode}},
-      "[RoleARN](#cfn-config-configurationrecorder-rolearn)" : {{String}}
+      "[RoleARN](#cfn-config-configurationrecorder-rolearn)" : {{String}},
+      "[StartedOnCreate](#cfn-config-configurationrecorder-startedoncreate)" : {{Boolean}}
     }
 }
 ```
@@ -53,6 +54,7 @@ Properties:
   [RecordingMode](#cfn-config-configurationrecorder-recordingmode): {{
     RecordingMode}}
   [RoleARN](#cfn-config-configurationrecorder-rolearn): {{String}}
+  [StartedOnCreate](#cfn-config-configurationrecorder-startedoncreate): {{Boolean}}
 ```
 
 ## Properties
@@ -94,7 +96,14 @@ If you have used an AWS service that uses AWS Config, such as AWS Security Hub C
 For example, if AWS Control Tower has an IAM role that allows AWS Config to read Amazon Simple Storage Service (Amazon S3) objects, make sure that the same permissions are granted within the IAM role you use when setting up AWS Config. Otherwise, it may interfere with how AWS Control Tower operates. For more information about IAM roles for AWS Config, see [**Identity and Access Management for AWS Config**](https://docs.aws.amazon.com/config/latest/developerguide/security-iam.html) in the *AWS Config Developer Guide*.
 *Required*: Yes
 *Type*: String
+*Pattern*: `arn:(aws|aws-cn|aws-us-gov):iam::[0-9]*:(role)\/.*`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`StartedOnCreate`  <a name="cfn-config-configurationrecorder-startedoncreate"></a>
+Property description not available.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
 <a name="aws-resource-config-configurationrecorder-return-values"></a>
@@ -108,6 +117,12 @@ For more information about using the `Ref` function, see [`Ref`](https://docs.aw
 
 ### Fn::GetAtt
 <a name="aws-resource-config-configurationrecorder-return-values-fn--getatt"></a>
+
+####
+<a name="aws-resource-config-configurationrecorder-return-values-fn--getatt-fn--getatt"></a>
+
+`ResourceARN`  <a name="ResourceARN-fn::getatt"></a>
+Property description not available.
 
 ## Examples
 <a name="aws-resource-config-configurationrecorder--examples"></a>

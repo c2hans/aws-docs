@@ -19,7 +19,7 @@ Required: Yes
  ** templateType **   <a name="connecthealth-Type-CustomTemplate-templateType"></a>
 The base template type to customize
 Type: String
-Valid Values: `HISTORY_AND_PHYSICAL | GIRPP | DAP | SIRP | BIRP | BEHAVIORAL_SOAP | DENTAL`
+Valid Values: `HISTORY_AND_PHYSICAL | GIRPP | DAP | SIRP | BIRP | BEHAVIORAL_SOAP`
 Required: Yes
 
 ## See Also

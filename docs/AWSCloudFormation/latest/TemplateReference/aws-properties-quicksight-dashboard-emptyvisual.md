@@ -23,6 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "[Actions](#cfn-quicksight-dashboard-emptyvisual-actions)" : {{[ VisualCustomAction, ... ]}},
   "[DataSetIdentifier](#cfn-quicksight-dashboard-emptyvisual-datasetidentifier)" : {{String}},
+  "[TopicIdentifier](#cfn-quicksight-dashboard-emptyvisual-topicidentifier)" : {{String}},
   "[VisualId](#cfn-quicksight-dashboard-emptyvisual-visualid)" : {{String}}
 }
 ```
@@ -34,6 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   [Actions](#cfn-quicksight-dashboard-emptyvisual-actions): {{
     - VisualCustomAction}}
   [DataSetIdentifier](#cfn-quicksight-dashboard-emptyvisual-datasetidentifier): {{String}}
+  [TopicIdentifier](#cfn-quicksight-dashboard-emptyvisual-topicidentifier): {{String}}
   [VisualId](#cfn-quicksight-dashboard-emptyvisual-visualid): {{String}}
 ```
 
@@ -50,7 +52,15 @@ The list of custom actions that are configured for a visual.
 
 `DataSetIdentifier`  <a name="cfn-quicksight-dashboard-emptyvisual-datasetidentifier"></a>
 The data set that is used in the empty visual. Every visual requires a dataset or a topic to render.
-*Required*: Yes
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`TopicIdentifier`  <a name="cfn-quicksight-dashboard-emptyvisual-topicidentifier"></a>
+The topic that is used in the empty visual. Every visual requires a dataset or a topic to render.
+*Required*: No
 *Type*: String
 *Minimum*: `1`
 *Maximum*: `2048`

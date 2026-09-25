@@ -32,6 +32,27 @@ After you have selected the folder to be uploaded, provide a name for your model
 
 The model status will then resolve to **Ready** after the import process is completed.
 
+## Import a physical model
+<a name="import-a-physical-model"></a>
+
+You can import a pre-trained physical model directly on the **Your models** page. A physical model is deployment-only. You can push it to a physical car, but you can’t clone it or submit it to a community race.
+
+The following image shows the **Import physical model** page, where you choose a model archive and enter a name.
+
+![Import physical model page with file picker and model name field](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/model-management/import-physical-model.png)
+
+1. From the home page, choose the **Your models** tab in the left sidebar.
+
+1. Choose **Import model**, then choose **Import physical model**.
+
+1. Choose the model archive to upload. The file must be in `.tar.gz` format and can be a maximum of 500 MB.
+
+1. Enter a model name. The name can be up to 64 characters and can contain only letters, numbers, and hyphens.
+
+1. Choose **Import** to start the import.
+
+The number of physical models you can import is limited by your model count quota. Each uploaded file is automatically scanned for malware before it becomes available. After the import completes, the result is a physical model that you can deploy to a car. For more information about optimizing and pushing models to cars, see [Model management](model-management.md).
+
 ## Export a virtual model
 <a name="export-a-virtual-model"></a>
 
@@ -51,4 +72,4 @@ You can export a physical car model from DeepRacer on AWS to use on a DeepRacer-
 See [Operate your vehicle](https://docs.aws.amazon.com/deepracer/latest/developerguide/operate-deepracer-vehicle.html) for more information on how to upload the model to a physical car.
 
 **Tip**
-Admins and race facilitators can download physical car models for any user from the **Model management** page. See [Model management](admin-functions.md#model-management).
+Admins and race facilitators can download physical car models for any user from the **Model management** page. See [Model management](model-management.md).

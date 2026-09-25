@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/building-airline-order-managem
 title: 'Guidance for Building Airline Order Management Systems on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/building-airline-order-management-systems-on-aws/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # Guidance for Building Airline Order Management Systems on AWS

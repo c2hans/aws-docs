@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/multi-agent-employee-virtual-a
 title: 'Guidance for Multi-Agent Employee Virtual Assistant on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/multi-agent-employee-virtual-assistant-on-aws/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # Guidance for Multi-Agent Employee Virtual Assistant on AWS

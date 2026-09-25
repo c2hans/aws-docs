@@ -20,9 +20,9 @@ If you don’t deploy the UI, you can’t approve or reject a network change. Al
 
 1. The S3 bucket hosts the web UI.
 
-1. The web UI gets a token from Amazon Cognito and sends a request to AWS AppSync. AWS WAF protects the APIs from security events. This solution configures a set of rules called a web ACL. The web ACL allows, blocks, or counts web requests based on configurable, user-defined web security rules and conditions.
+1. The web UI gets a token from Amazon Cognito and sends a request to AWS AppSync. AWS WAF protects the APIs from security events. A configured set of rules called a web ACL allows, blocks, or counts web requests based on configurable, user-defined web security rules and conditions.
 
-1. AWS AppSync provides the solution’s API layer using GraphQL.
+1. AWS AppSync provides the API layer for this Guidance using GraphQL.
 
 1. Amazon Cognito authenticates the token in the header of the API requests.
 
@@ -42,6 +42,6 @@ This workflow only updates the transit gateway route table defined in the VPC ta
 
 1. (Optional) The state machine workflow updates the attachment name with the VPC name and the Organizational Unit (OU) name for the spoke account (retrieved from the Org Management account).
 **Note**
-This occurs only if you provide your Organizations ARN for the **Account List or AWS Organizations ARN** template parameter. For more information, see [Step 3: Launch the hub stack](step-3-launch-the-hub-stack.md).
+This occurs only if you provide your Organizations ARN for the **Account List or AWS Organizations ARN** template parameter. For more information, see [Step 4: Launch the hub stack](step-4-launch-the-hub-stack.md).
 
-1. The solution updates the DynamoDB with the information extracted from the event and resources created, updated, or deleted in the workflow. The changes in DynamoDB are automatically reflected in the web UI dashboard. Administrators and users can sign in to the web UI to review the history of all changes that occurred in the network.
+1. The state machine updates the DynamoDB with the information extracted from the event and resources created, updated, or deleted in the workflow. The changes in DynamoDB are automatically reflected in the web UI dashboard. Administrators and users can sign in to the web UI to review the history of all changes that occurred in the network.

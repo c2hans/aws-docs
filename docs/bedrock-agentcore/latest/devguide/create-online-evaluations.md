@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/create
 
 The `CreateOnlineEvaluationConfig` API creates a new online evaluation configuration that continuously monitors your agent’s performance using live traffic. This asynchronous operation tells the service to evaluate agent traces as they are generated during normal operation.
 
-To create an online evaluation, provide a unique configuration name, choose what to monitor, select up to 10 evaluators, and provide an IAM service role ARN for execution. The data source can be CloudWatch Logs, selected by exact log group names or log group name prefixes, or an agent endpoint. The required `enableOnCreate` parameter controls the initial `executionStatus`: `true` starts the configuration in `ENABLED`, and `false` starts it in `DISABLED`.
+To create an online evaluation, provide a unique configuration name, choose what to monitor, select up to 25 evaluators, and provide an IAM service role ARN for execution. The data source can be CloudWatch Logs, selected by exact log group names or log group name prefixes, or an agent endpoint. The required `enableOnCreate` parameter controls the initial `executionStatus`: `true` starts the configuration in `ENABLED`, and `false` starts it in `DISABLED`.
 
 **Topics**
 + [Execution status control](#execution-status-control)
@@ -205,9 +205,9 @@ You can create online evaluation configurations using the Amazon Bedrock AgentCo
 
    1.  **Define with an agent endpoint** – Choose an agent that you previously created on AgentCore Runtime, or create a new agent by choosing **Agents** . Then, choose an endpoint from the agent.
 
-   1.  **Select a CloudWatch log group** – Select up to 5 log groups. Enter the service name used by your agent for observability. For agents hosted on AgentCore Runtime, service name follows the format <agent-runtime-name>.<agent-runtime-endpoint-name>. For agents running outside AgentCore Runtime, service name is configured in OTEL\_RESOURCE\_ATTRIBUTES environment variable.
+   1.  **Select a CloudWatch log group** – Select up to 10 log groups. Enter the service name used by your agent for observability. For agents hosted on AgentCore Runtime, service name follows the format <agent-runtime-name>.<agent-runtime-endpoint-name>. For agents running outside AgentCore Runtime, service name is configured in OTEL\_RESOURCE\_ATTRIBUTES environment variable.
 
-1. For **Evaluators** , select up to 10 evaluators per evaluation configuration, including built-in and custom evaluators.
+1. For **Evaluators** , select up to 25 evaluators per evaluation configuration, including built-in and custom evaluators.
 
 1. (Optional) For **Filters** , add up to 5 filters to identify which sessions to evaluate.
 

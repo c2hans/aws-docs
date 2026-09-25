@@ -413,6 +413,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [ec2:CreateCapacityReservationCancellationQuote](#list_ec2-action-CreateCapacityReservationCancellationQuote)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [ec2:CreateTags](#list_ec2-action-CreateTags)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
+- **   CreateCapacityReservationDateChangeQuote  **
+  - **IAM action:**  [ec2:CreateTags](#list_ec2-action-CreateTags)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Tagging, Write
+
 - **   CreateCapacityReservationFleet  **
   - **IAM action:**  [ec2:CreateCapacityReservationFleet](#list_ec2-action-CreateCapacityReservationFleet)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [ec2:CreateTags](#list_ec2-action-CreateTags)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write

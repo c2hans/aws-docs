@@ -5,11 +5,23 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/create
 # Create an account
 <a name="create-an-account"></a>
 
-To create an account on DeepRacer on AWS, you must first be invited by the admin of a DeepRacer on AWS deployment. When invited, you will receive an invitation email containing a link to the DeepRacer on AWS console, and a temporary password to log in with. Click the link or paste it into your browser, and log in using your email address and the temporary password that was sent in the email.
+You can create an account by signing up yourself, accepting an invitation from an admin, or receiving walk-up registration at a physical event.
+
+## Sign up for an account
+<a name="sign-up-for-an-account"></a>
+
+To self-register as a new racer, choose **Sign up** on the DeepRacer on AWS sign-in page. Enter your email address, racer alias, optional two-letter country code, and password.
+
+![Self-registration form with email address](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_self_registration.png)
+
+After you submit the form, you receive a verification code at your email address. Enter the code to verify your email address and complete registration.
+
+## Accept an invitation
+<a name="accept-an-invitation"></a>
+
+When an admin invites you, you receive an email with a link to the DeepRacer on AWS console and a temporary password. Open the link and sign in using your email address and temporary password.
 
 **Note**
-The invitation email will be sent from *no-reply@verificationemail.com*.
+The invitation email is sent from *no-reply@verificationemail.com*.
 
-From here, you will be asked to provide an **alias**, which is similar to a username and will be used to identify you in community races, and your permanent **password**, which you will use to log in to DeepRacer on AWS going forward.
-
-After submitting these, you will be brought to the home page, which features a quick-start tutorial and a graph that shows the amount of compute you’ve used and the number of models you’ve stored on the deployment.
+You are then asked to provide an **alias**, which identifies you in community races, and a permanent **password**. After you submit them, the solution opens the home page. The home page includes a quick-start tutorial and your model and compute usage.

@@ -14,6 +14,7 @@ The following data types are supported:
 +  [CdnAuthConfiguration](API_CdnAuthConfiguration.md)
 +  [ChannelGroupListConfiguration](API_ChannelGroupListConfiguration.md)
 +  [ChannelListConfiguration](API_ChannelListConfiguration.md)
++  [ContentKeyPeriodConfiguration](API_ContentKeyPeriodConfiguration.md)
 +  [CreateDashManifestConfiguration](API_CreateDashManifestConfiguration.md)
 +  [CreateHlsManifestConfiguration](API_CreateHlsManifestConfiguration.md)
 +  [CreateLowLatencyHlsManifestConfiguration](API_CreateLowLatencyHlsManifestConfiguration.md)

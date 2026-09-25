@@ -60,7 +60,7 @@ The name of the AWS IoT thing.
 Property description not available.
 *Required*: No
 *Type*: String
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Examples
 <a name="aws-resource-iot-thingprincipalattachment--examples"></a>

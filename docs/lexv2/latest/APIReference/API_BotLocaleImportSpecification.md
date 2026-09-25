@@ -45,6 +45,11 @@ Type: Double
 Valid Range: Minimum value of 0. Maximum value of 1.
 Required: No
 
+ ** speakerDiarizationSettings **   <a name="lexv2-Type-BotLocaleImportSpecification-speakerDiarizationSettings"></a>
+The speaker diarization settings to apply when importing the bot locale configuration.
+Type: [SpeakerDiarizationSettings](API_SpeakerDiarizationSettings.md) object
+Required: No
+
  ** speechDetectionSensitivity **   <a name="lexv2-Type-BotLocaleImportSpecification-speechDetectionSensitivity"></a>
 The sensitivity level for voice activity detection (VAD) in the bot locale. This setting helps optimize speech recognition accuracy by adjusting how the system responds to background noise during voice interactions.
 Type: String

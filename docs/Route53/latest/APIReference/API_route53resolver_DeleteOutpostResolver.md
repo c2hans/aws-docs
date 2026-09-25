@@ -7,6 +7,9 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 
 Deletes a Resolver on the Outpost.
 
+**Note**
+This operation applies to first-generation AWS Outposts only. On second-generation AWS Outposts, Resolver is managed automatically by AWS and can't be deleted directly. To opt out of Resolver on second-generation AWS Outposts, contact AWS Support.
+
 ## Request Syntax
 <a name="API_route53resolver_DeleteOutpostResolver_RequestSyntax"></a>
 

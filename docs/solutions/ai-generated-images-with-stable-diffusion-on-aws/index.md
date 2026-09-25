@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/ai-generated-images-with-stabl
 title: 'Guidance for AI-Generated Images with Stable Diffusion on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/ai-generated-images-with-stable-diffusion-on-aws/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # Guidance for AI-Generated Images with Stable Diffusion on AWS

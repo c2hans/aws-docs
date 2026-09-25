@@ -10,6 +10,12 @@ Properties of the Source Server machine.
 ## Contents
 <a name="API_SourceProperties_Contents"></a>
 
+ ** architecture **   <a name="drs-Type-SourceProperties-architecture"></a>
+The architecture of the Source Server.
+Type: String
+Valid Values: `x86_64 | arm64`
+Required: No
+
  ** cpus **   <a name="drs-Type-SourceProperties-cpus"></a>
 An array of CPUs.
 Type: Array of [CPU](API_CPU.md) objects

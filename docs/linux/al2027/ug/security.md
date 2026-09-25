@@ -31,7 +31,6 @@ AL2027 includes several security enhancements over AL2023, see: [Security update
 + [AL2027 kernel hardening](kernel-hardening.md)
 + [Repository metadata signing in AL2027](repo-metadata-signing.md)
 + [Security patching during preview](#security-patching-preview)
-+ [FIPS validation](#security-fips)
 + [UEFI Secure Boot on AL2027](uefi-secure-boot.md)
 
 ## Security patching during preview
@@ -40,8 +39,3 @@ AL2027 includes several security enhancements over AL2023, see: [Security update
 During the preview period, there is no guarantee that open CVEs for AL2027 packages will be patched in preview artifacts. AL2027 preview artifacts may have unpatched CVEs.
 
 All CVE patching mechanisms and fixes will be in place before any public release.
-
-## FIPS validation
-<a name="security-fips"></a>
-
-FIPS-validated kernel and crypto modules are not available in the preview. They will be available before GA.

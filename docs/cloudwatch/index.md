@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/cloudwatch/index.html
 title: 'Amazon CloudWatch Documentation'
 canonical_url: https://docs.aws.amazon.com/cloudwatch/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # Amazon CloudWatch Documentation
@@ -19,6 +19,7 @@ Use CloudWatch to monitor your AWS resources and the applications you run on AWS
 
 - [CloudWatch User Guide](/AmazonCloudWatch/latest/monitoring/): Provides a conceptual overview of CloudWatch and includes detailed development instructions for using the various features.
 - [CloudWatch API Reference](/AmazonCloudWatch/latest/APIReference/): Describes all the API operations for CloudWatch in detail. Also provides sample requests, responses, and errors for the supported web services protocols.
+- [CloudWatch Omni API Reference](/cloudwatch-omni/latest/APIReference/): Describes all the API operations for CloudWatch Omni in detail. Also provides sample requests, responses, and errors for the supported web services protocols.
 - [CloudWatch investigations API Reference](/cloudwatchinvestigations/latest/APIReference/): Describes all the API operations for CloudWatch investigations used to create, manage, and delete investigation groups and investigation group policies.
 - [CloudWatch Application Insights API Reference](/cloudwatch/latest/APIReference/): Describes all the API operations for CloudWatch Application Insights in detail. Also provides sample requests, responses, and errors for the supported web services protocols.
 - [CloudWatch Synthetics API Reference](/AmazonSynthetics/latest/APIReference/): Describes all the API operations for CloudWatch Synthetics in detail. Also provides sample requests, responses, and errors for the supported web services protocols.

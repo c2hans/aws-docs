@@ -2,8 +2,11 @@
 source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/navigating-aws-marketplace-management-portal.html
 ---
 
-# Navigating AWS Marketplace Management Portal
+# Navigating AWS Partner Central (formerly AWS Marketplace Management Portal)
 <a name="navigating-aws-marketplace-management-portal"></a>
+
+**Note**
+AWS Marketplace Management Portal is now part of AWS Partner Central. Your existing links and bookmarks continue to work—they redirect to the corresponding pages in AWS Partner Central.
 
 AWS unifies AWS Partner Central and AWS Marketplace Management Portal into a single navigation experience in the AWS Management Console. When you access AWS Marketplace Management Portal at [https://aws.amazon.com/marketplace/management/](https://aws.amazon.com/marketplace/management/), you are redirected to [https://us-east-1.console.aws.amazon.com/partnercentral/](https://us-east-1.console.aws.amazon.com/partnercentral/).
 

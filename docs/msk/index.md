@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/msk/index.html
 title: 'Amazon Managed Streaming for Apache Kafka Documentation'
 canonical_url: https://docs.aws.amazon.com/msk/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # Amazon Managed Streaming for Apache Kafka Documentation

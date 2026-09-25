@@ -10,6 +10,15 @@ We recommend subscribing to the RSS feed so updates to these notes are delivered
 ## September 2026
 <a name="_september_2026"></a>
 
+### Harness: Interactive shells (terminals)
+<a name="_harness_interactive_shells_terminals_2"></a>
+
+AgentCore harness now supports persistent, interactive shell sessions over WebSocket. A shell runs in the same isolated microVM session as the harness agent and maintains environment variables, the working directory, command history, and running processes across inputs.
+
+You can reconnect to a detached shell and replay up to 256 KB of buffered output, or open as many as 10 independent shells in one harness session. Interactive shells work in the managed default environment and inside a configured custom container.
+
+At launch, connect through the `InvokeAgentRuntimeCommandShell` WebSocket API directly. AgentCore CLI commands and the high-level AgentCore SDK shell helpers don’t support harness targets. For connection details, framing, authentication, errors, and quotas, see [Interactive shells for AgentCore harness](harness-command-shell.md).
+
 ### Harness: Custom OpenAI-compatible endpoints
 <a name="_harness_custom_openai_compatible_endpoints_2"></a>
 

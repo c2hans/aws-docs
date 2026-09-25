@@ -6,14 +6,14 @@ source_url: https://docs.aws.amazon.com//solutions/deepracer-on-aws//index.html
 title: 'DeepRacer on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/deepracer-on-aws/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # DeepRacer on AWS
 
 Developers of all skill levels can get hands on with machine learning through a 3D racing simulator and fully autonomous 1/18th scale race cars driven by reinforcement learning.
 
-- **Version**: 1.2.11
+- **Version**: 1.3.0
 - **Release**: 09/2026
 - **Author**: AWS
 - **Est. deployment time**: 30 mins

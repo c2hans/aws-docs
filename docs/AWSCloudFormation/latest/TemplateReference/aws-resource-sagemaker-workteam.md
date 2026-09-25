@@ -55,9 +55,8 @@ Properties:
 
 `Description`  <a name="cfn-sagemaker-workteam-description"></a>
 A description of the work team.
-*Required*: No
+*Required*: Yes
 *Type*: String
-*Pattern*: `.+`
 *Minimum*: `1`
 *Maximum*: `200`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -65,7 +64,7 @@ A description of the work team.
 `MemberDefinitions`  <a name="cfn-sagemaker-workteam-memberdefinitions"></a>
 A list of `MemberDefinition` objects that contains objects that identify the workers that make up the work team.
 Workforces can be created using Amazon Cognito or your own OIDC Identity Provider (IdP). For private workforces created using Amazon Cognito use `CognitoMemberDefinition`. For workforces created using your own OIDC identity provider (IdP) use `OidcMemberDefinition`.
-*Required*: No
+*Required*: Yes
 *Type*: Array of [MemberDefinition](aws-properties-sagemaker-workteam-memberdefinition.md)
 *Minimum*: `1`
 *Maximum*: `10`
@@ -87,7 +86,6 @@ An array of key-value pairs.
 The name of the workforce.
 *Required*: No
 *Type*: String
-*Pattern*: `[a-zA-Z0-9]([a-zA-Z0-9\-]){0,62}`
 *Minimum*: `1`
 *Maximum*: `63`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
@@ -96,7 +94,6 @@ The name of the workforce.
 The name of the work team.
 *Required*: No
 *Type*: String
-*Pattern*: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
 *Minimum*: `1`
 *Maximum*: `63`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
@@ -117,8 +114,8 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 ####
 <a name="aws-resource-sagemaker-workteam-return-values-fn--getatt-fn--getatt"></a>
 
-`Id`  <a name="Id-fn::getatt"></a>
-The name of the work team.
+`WorkteamArn`  <a name="WorkteamArn-fn::getatt"></a>
+The Amazon Resource Name (ARN) that identifies the work team.
 
 `WorkteamName`  <a name="WorkteamName-fn::getatt"></a>
 The name of the work team.

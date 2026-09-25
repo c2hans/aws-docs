@@ -9,9 +9,6 @@ There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://
 
 The following code examples show how to use `DescribeAnomalyDetectors`.
 
-Action examples are code excerpts from larger programs and must be run in context. You can see this action in context in the following code example:
-+  [Learn the basics](cloudwatch_example_cloudwatch_GetStartedMetricsDashboardsAlarms_section.md)
-
 ------
 #### [ .NET ]
 
@@ -173,21 +170,19 @@ For more information, see [Using CloudWatch anomaly detection](https://docs.aws.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 
 ```
-suspend fun describeAnomalyDetectors(fileName: String) {
-    // Read values from the JSON file.
-    val parser = JsonFactory().createParser(File(fileName))
-    val rootNode = ObjectMapper().readTree<JsonNode>(parser)
-    val customMetricNamespace = rootNode.findValue("customMetricNamespace").asText()
-    val customMetricName = rootNode.findValue("customMetricName").asText()
-
-    val detectorsRequest =
+suspend fun describeAnomalyDetectors(
+    namespaceVal: String,
+    metricNameVal: String,
+) {
+    val request =
         DescribeAnomalyDetectorsRequest {
             maxResults = 10
-            metricName = customMetricName
-            namespace = customMetricNamespace
+            namespace = namespaceVal
+            metricName = metricNameVal
         }
+
     CloudWatchClient.fromEnvironment { region = "us-east-1" }.use { cwClient ->
-        val response = cwClient.describeAnomalyDetectors(detectorsRequest)
+        val response = cwClient.describeAnomalyDetectors(request)
         response.anomalyDetectors?.forEach { detector ->
             println("Metric name: ${detector.singleMetricAnomalyDetector?.metricName}")
             println("State: ${detector.stateValue}")

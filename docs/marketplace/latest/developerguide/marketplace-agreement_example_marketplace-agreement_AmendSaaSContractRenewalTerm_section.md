@@ -32,7 +32,7 @@ import software.amazon.awssdk.services.marketplaceagreement.model.Intent;
 import software.amazon.awssdk.services.marketplaceagreement.model.RenewalTermConfiguration;
 import software.amazon.awssdk.services.marketplaceagreement.model.RequestedTerm;
 import software.amazon.awssdk.services.marketplaceagreement.model.RequestedTermConfiguration;
-import utils.AgreementApiUtils;
+import com.example.awsmarketplace.agreementapi.buyer.utils.AgreementApiUtils;
 
 /**
  * Demonstrates how to create a SaaS agreement with CONTRACT pricing model and then turn on
@@ -41,6 +41,14 @@ import utils.AgreementApiUtils;
  * <p>Scenario: A buyer subscribes to a SaaS product using a public offer that supports
  * auto-renewal. After acceptance, the buyer decides to amend the agreement to enable
  * auto-renewal via the RenewalTerm configuration.
+ *
+ * <p>The {@code lockoutPeriod} on the renewal term is what constrains this amendment. It is the
+ * renewal decision deadline, measured back from the end date of the agreement, and once it passes
+ * neither party can change whether the agreement renews. The sample reads the term with
+ * {@code GetAgreementTerms} before amending so that deadline is visible. It also reads
+ * {@code endTimeBehavior} from {@code DescribeAgreement} before and after the amendment, because
+ * {@code endTimeBehavior} is what determines whether the agreement renews, not
+ * {@code enableAutoRenew} on its own.
  *
  * <p>Before running this sample, replace the placeholder constants below with values from
  * your AWS Marketplace offer:
@@ -86,6 +94,7 @@ public class AmendSaaSContractRenewalTerm {
      * 1. Create a SaaS agreement with CONTRACT pricing model with auto-renewal disabled.
      * 2. Wait for entitlements to become active.
      * 3. Amend the agreement to enable auto-renewal.
+     * 4. Confirm the change by reading endTimeBehavior before and after the amendment.
      */
     private static void amendSaaSContractAgreementRenewalTerm() {
         MarketplaceAgreementClient marketplaceAgreementClient =
@@ -145,7 +154,15 @@ public class AmendSaaSContractRenewalTerm {
         System.out.println("Entitlements are now active.");
         AgreementApiUtils.formatOutput(entitlementsResponse);
 
+        AgreementApiUtils.printRenewalTerm(
+                marketplaceAgreementClient, acceptAgreementRequestResponse.agreementId());
+        AgreementApiUtils.printEndTimeBehavior(marketplaceAgreementClient,
+                                               acceptAgreementRequestResponse.agreementId(),
+                                               "Before amendment");
+
         // --- Amend: enable auto-renewal ---
+        // The lockoutPeriod printed above is the renewal decision deadline: once it passes,
+        // enableAutoRenew can no longer be changed.
         RequestedTerm renewalTermAmended = RequestedTerm.builder()
                 .id(RENEWAL_TERM_ID)
                 .configuration(RequestedTermConfiguration.fromRenewalTermConfiguration(
@@ -173,6 +190,9 @@ public class AmendSaaSContractRenewalTerm {
         AcceptAgreementRequestResponse aarResponse =
                 marketplaceAgreementClient.acceptAgreementRequest(aarRequest);
         System.out.println("Amendment accepted. Auto-renewal enabled. New AgreementId: " + aarResponse.agreementId());
+
+        AgreementApiUtils.printEndTimeBehavior(
+                marketplaceAgreementClient, aarResponse.agreementId(), "After amendment");
     }
 }
 ```
@@ -190,7 +210,13 @@ const {
     CreateAgreementRequestCommand,
     AcceptAgreementRequestCommand,
 } = require("@aws-sdk/client-marketplace-agreement");
-const { generateClientToken, formatOutput, pollUntilEntitlementsAvailable } = require("./utils/AgreementApiUtils");
+const {
+    generateClientToken,
+    formatOutput,
+    pollUntilEntitlementsAvailable,
+    printRenewalTerm,
+    printEndTimeBehavior,
+} = require("./utils/AgreementApiUtils");
 
 /**
  * Demonstrates how to create a SaaS agreement with CONTRACT pricing model and then turn on
@@ -199,6 +225,13 @@ const { generateClientToken, formatOutput, pollUntilEntitlementsAvailable } = re
  * Scenario: A buyer subscribes to a SaaS product using a public offer that supports
  * auto-renewal. After acceptance, the buyer decides to amend the agreement to enable
  * auto-renewal via the RenewalTerm configuration.
+ *
+ * The lockoutPeriod on the renewal term is what constrains this amendment. It is the renewal
+ * decision deadline, measured back from the end date of the agreement, and once it passes neither
+ * party can change whether the agreement renews. The sample reads the term with GetAgreementTerms
+ * before amending so that deadline is visible. It also reads endTimeBehavior from DescribeAgreement
+ * before and after the amendment, because endTimeBehavior is what determines whether the agreement
+ * renews, not enableAutoRenew on its own.
  *
  * Before running this sample, replace the placeholder constants below with values from
  * your AWS Marketplace offer:
@@ -237,6 +270,7 @@ const SUPPORT_TERM_ID = "<your-support-term-id>";
  * 1. Create a SaaS agreement with CONTRACT pricing model with auto-renewal disabled.
  * 2. Wait for entitlements to become active.
  * 3. Amend the agreement to enable auto-renewal.
+ * 4. Confirm the change by reading endTimeBehavior before and after the amendment.
  */
 async function amendSaaSContractAgreementRenewalTerm() {
     const client = new MarketplaceAgreementClient();
@@ -290,7 +324,12 @@ async function amendSaaSContractAgreementRenewalTerm() {
     console.log("Entitlements are now active.");
     formatOutput(entitlementsResponse);
 
+    await printRenewalTerm(client, acceptAgreementRequestResponse.agreementId);
+    await printEndTimeBehavior(client, acceptAgreementRequestResponse.agreementId, "Before amendment");
+
     // --- Amend: enable auto-renewal ---
+    // The lockoutPeriod printed above is the renewal decision deadline: once it passes,
+    // enableAutoRenew can no longer be changed.
     const renewalTermAmended = {
         id: RENEWAL_TERM_ID,
         configuration: {
@@ -317,6 +356,8 @@ async function amendSaaSContractAgreementRenewalTerm() {
         })
     );
     console.log("Amendment accepted. Auto-renewal enabled. New AgreementId: " + aarResponse.agreementId);
+
+    await printEndTimeBehavior(client, aarResponse.agreementId, "After amendment");
 }
 
 amendSaaSContractAgreementRenewalTerm();
@@ -338,6 +379,13 @@ Scenario: A buyer subscribes to a SaaS product using a public offer that support
 auto-renewal. After acceptance, the buyer decides to amend the agreement to enable
 auto-renewal via the RenewalTerm configuration.
 
+The lockoutPeriod on the renewal term is what constrains this amendment. It is the renewal decision
+deadline, measured back from the end date of the agreement, and once it passes neither party can
+change whether the agreement renews. The sample reads the term with GetAgreementTerms before
+amending so that deadline is visible. It also reads endTimeBehavior from DescribeAgreement before
+and after the amendment, because endTimeBehavior is what determines whether the agreement renews,
+not enableAutoRenew on its own.
+
 Before running this sample, replace the placeholder constants below with values from
 your AWS Marketplace offer:
   - AGREEMENT_PROPOSAL_IDENTIFIER — the agreementProposalId from the offer.
@@ -352,6 +400,8 @@ from utils.agreement_api_utils import (
     format_output,
     generate_client_token,
     poll_until_entitlements_available,
+    print_end_time_behavior,
+    print_renewal_term,
 )
 
 class AmendSaaSContractRenewalTerm:
@@ -387,6 +437,7 @@ class AmendSaaSContractRenewalTerm:
         1. Create a SaaS agreement with CONTRACT pricing model with auto-renewal disabled.
         2. Wait for entitlements to become active.
         3. Amend the agreement to enable auto-renewal.
+        4. Confirm the change by reading endTimeBehavior before and after the amendment.
         """
         client = boto3.client("marketplace-agreement")
         cls = AmendSaaSContractRenewalTerm
@@ -441,7 +492,12 @@ class AmendSaaSContractRenewalTerm:
         print("Entitlements are now active.")
         format_output(entitlements_response)
 
+        print_renewal_term(client, agreement_id)
+        print_end_time_behavior(client, agreement_id, "Before amendment")
+
         # --- Amend: enable auto-renewal ---
+        # The lockoutPeriod printed above is the renewal decision deadline: once it passes,
+        # enableAutoRenew can no longer be changed.
         renewal_term_amended = {
             "id": cls.RENEWAL_TERM_ID,
             "configuration": {
@@ -464,6 +520,8 @@ class AmendSaaSContractRenewalTerm:
             agreementRequestId=car_response["agreementRequestId"]
         )
         print("Amendment accepted. Auto-renewal enabled. New AgreementId: " + aar_response["agreementId"])
+
+        print_end_time_behavior(client, aar_response["agreementId"], "After amendment")
 
 if __name__ == "__main__":
     AmendSaaSContractRenewalTerm.amend_saas_contract_agreement_renewal_term()

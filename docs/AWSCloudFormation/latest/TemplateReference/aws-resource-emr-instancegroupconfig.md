@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Properties" : {
       "[AutoScalingPolicy](#cfn-emr-instancegroupconfig-autoscalingpolicy)" : {{AutoScalingPolicy}},
       "[BidPrice](#cfn-emr-instancegroupconfig-bidprice)" : {{String}},
-      "[Configurations](#cfn-emr-instancegroupconfig-configurations)" : {{[ Configuration, ... ]}},
+      "[Configurations](#cfn-emr-instancegroupconfig-configurations)" : {{[ AppConfiguration, ... ]}},
       "[CustomAmiId](#cfn-emr-instancegroupconfig-customamiid)" : {{String}},
       "[EbsConfiguration](#cfn-emr-instancegroupconfig-ebsconfiguration)" : {{EbsConfiguration}},
       "[InstanceCount](#cfn-emr-instancegroupconfig-instancecount)" : {{Integer}},
@@ -49,7 +49,7 @@ Properties:
     AutoScalingPolicy}}
   [BidPrice](#cfn-emr-instancegroupconfig-bidprice): {{String}}
   [Configurations](#cfn-emr-instancegroupconfig-configurations): {{
-    - Configuration}}
+    - AppConfiguration}}
   [CustomAmiId](#cfn-emr-instancegroupconfig-customamiid): {{String}}
   [EbsConfiguration](#cfn-emr-instancegroupconfig-ebsconfiguration): {{
     EbsConfiguration}}
@@ -83,7 +83,7 @@ If specified, indicates that the instance group uses Spot Instances. This is the
 Amazon EMR releases 4.x or later.
 The list of configurations supplied for an Amazon EMR cluster instance group. You can specify a separate configuration for each instance group (master, core, and task).
 *Required*: No
-*Type*: Array of [Configuration](aws-properties-emr-instancegroupconfig-configuration.md)
+*Type*: Array of [AppConfiguration](aws-properties-emr-instancegroupconfig-appconfiguration.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `CustomAmiId`  <a name="cfn-emr-instancegroupconfig-customamiid"></a>
@@ -157,6 +157,12 @@ For more information about using the `Ref` function, see [`Ref`](https://docs.aw
 
 ### Fn::GetAtt
 <a name="aws-resource-emr-instancegroupconfig-return-values-fn--getatt"></a>
+
+####
+<a name="aws-resource-emr-instancegroupconfig-return-values-fn--getatt-fn--getatt"></a>
+
+`InstanceGroupId`  <a name="InstanceGroupId-fn::getatt"></a>
+The identifier of the instance group.
 
 ## Examples
 <a name="aws-resource-emr-instancegroupconfig--examples"></a>

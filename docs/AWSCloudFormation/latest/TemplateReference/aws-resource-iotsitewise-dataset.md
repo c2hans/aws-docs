@@ -54,7 +54,7 @@ Properties:
 <a name="aws-resource-iotsitewise-dataset-properties"></a>
 
 `DatasetConfig`  <a name="cfn-iotsitewise-dataset-datasetconfig"></a>
-Property description not available.
+The configuration for the dataset. Provide the session configuration for a `SESSION` dataset.
 *Required*: No
 *Type*: [DatasetConfig](aws-properties-iotsitewise-dataset-datasetconfig.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -72,13 +72,17 @@ The name of the dataset.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DatasetSource`  <a name="cfn-iotsitewise-dataset-datasetsource"></a>
-The data source for the dataset.
+The data source for the dataset. This property is required for `EXTERNAL` datasets (for example, an Amazon Kendra index) and is omitted for workspace-scoped `SESSION` and `CURATED` datasets.
 *Required*: No
 *Type*: [DatasetSource](aws-properties-iotsitewise-dataset-datasetsource.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DatasetType`  <a name="cfn-iotsitewise-dataset-datasettype"></a>
-The type of dataset: a session dataset, a curated dataset, or a connection to an external datasource.
+The type of the dataset. Valid values:
++ `SESSION`: A workspace-scoped dataset backed by a time range of time-series data. Specify `WorkspaceName` and `DatasetConfig`.
++ `CURATED`: A workspace-scoped dataset whose data segments are curated through an interactive application workflow. Specify `WorkspaceName`.
++ `EXTERNAL`: A dataset backed by an external knowledge base, such as an Amazon Kendra index. Specify `DatasetSource`.
+You can't change the dataset type after you create the dataset. Changing this property requires replacing the resource.
 *Required*: No
 *Type*: String
 *Allowed values*: `SESSION | CURATED | EXTERNAL`
@@ -91,7 +95,8 @@ A list of key-value pairs that contain metadata for the access policy. For more 
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `WorkspaceName`  <a name="cfn-iotsitewise-dataset-workspacename"></a>
-Property description not available.
+The name of the workspace that the dataset belongs to. This property is required for workspace-scoped `SESSION` and `CURATED` datasets and is omitted for `EXTERNAL` datasets.
+You can't change the workspace after you create the dataset. Changing this property requires replacing the resource.
 *Required*: No
 *Type*: String
 *Pattern*: `^[a-zA-Z0-9_-]+$`

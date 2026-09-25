@@ -28,6 +28,11 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [observabilityadmin:CreateCentralizationRuleForOrganization](#list_observabilityadmin-action-CreateCentralizationRuleForOrganization)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [observabilityadmin:TagResource](#list_observabilityadmin-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
+- **   CreateDatasetIntegration  **
+  - **IAM action:**  [observabilityadmin:CreateDatasetIntegration](#list_observabilityadmin-action-CreateDatasetIntegration)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [observabilityadmin:TagResource](#list_observabilityadmin-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** logs.amazonaws.com, test.logs.amazonaws.com / **Access level:** Write
+
 - **   CreateS3TableIntegration  **
   - **IAM action:**  [observabilityadmin:CreateS3TableIntegration](#list_observabilityadmin-action-CreateS3TableIntegration)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [observabilityadmin:TagResource](#list_observabilityadmin-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
@@ -36,7 +41,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   CreateTelemetryPipeline  **
   - **IAM action:**  [observabilityadmin:CreateTelemetryPipeline](#list_observabilityadmin-action-CreateTelemetryPipeline)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [observabilityadmin:TagResource](#list_observabilityadmin-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
-  - **IAM action:**  [cloudwatch:PutPipelineRule](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/permissions-reference-cw.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** logs.amazonaws.com, telemetry-pipelines.observabilityadmin.amazonaws.com / **Access level:** Write
 
 - **   CreateTelemetryRule  **
@@ -53,6 +57,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   DeleteDatasetIntegration  **
+  - **IAM action:**  [observabilityadmin:DeleteDatasetIntegration](#list_observabilityadmin-action-DeleteDatasetIntegration)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   DeleteS3TableIntegration  **
   - **IAM action:**  [observabilityadmin:DeleteS3TableIntegration](#list_observabilityadmin-action-DeleteS3TableIntegration)
   - **Condition key:**
@@ -60,8 +70,10 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Access level:** Write
 
 - **   DeleteTelemetryPipeline  **
-  - **IAM action:**  [observabilityadmin:DeleteTelemetryPipeline](#list_observabilityadmin-action-DeleteTelemetryPipeline)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
-  - **IAM action:**  [cloudwatch:DeletePipelineRule](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/permissions-reference-cw.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [observabilityadmin:DeleteTelemetryPipeline](#list_observabilityadmin-action-DeleteTelemetryPipeline)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
 
 - **   DeleteTelemetryRule  **
   - **IAM action:**  [observabilityadmin:DeleteTelemetryRule](#list_observabilityadmin-action-DeleteTelemetryRule)
@@ -77,6 +89,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   GetCentralizationRuleForOrganization  **
   - **IAM action:**  [observabilityadmin:GetCentralizationRuleForOrganization](#list_observabilityadmin-action-GetCentralizationRuleForOrganization)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetDatasetIntegration  **
+  - **IAM action:**  [observabilityadmin:GetDatasetIntegration](#list_observabilityadmin-action-GetDatasetIntegration)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
@@ -125,6 +143,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   ListCentralizationRulesForOrganization  **
   - **IAM action:**  [observabilityadmin:ListCentralizationRulesForOrganization](#list_observabilityadmin-action-ListCentralizationRulesForOrganization)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListDatasetIntegrations  **
+  - **IAM action:**  [observabilityadmin:ListDatasetIntegrations](#list_observabilityadmin-action-ListDatasetIntegrations)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
@@ -231,9 +255,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   UpdateDatasetIntegration  **
+  - **IAM action:**  [observabilityadmin:UpdateDatasetIntegration](#list_observabilityadmin-action-UpdateDatasetIntegration)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** logs.amazonaws.com, test.logs.amazonaws.com / **Access level:** Write
+
 - **   UpdateTelemetryPipeline  **
   - **IAM action:**  [observabilityadmin:UpdateTelemetryPipeline](#list_observabilityadmin-action-UpdateTelemetryPipeline)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
-  - **IAM action:**  [cloudwatch:PutPipelineRule](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/permissions-reference-cw.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** logs.amazonaws.com, telemetry-pipelines.observabilityadmin.amazonaws.com / **Access level:** Write
 
 - **   UpdateTelemetryRule  **

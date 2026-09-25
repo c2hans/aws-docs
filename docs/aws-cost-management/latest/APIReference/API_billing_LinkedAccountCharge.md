@@ -62,7 +62,7 @@ Required: No
  ** supportEligibleSpendByService **   <a name="awscostmanagement-Type-billing_LinkedAccountCharge-supportEligibleSpendByService"></a>
 The support-eligible spend broken down by service.
 Type: Array of [ServiceLevelAccountUsage](API_billing_ServiceLevelAccountUsage.md) objects
-Array Members: Minimum number of 0 items. Maximum number of 50 items.
+Array Members: Minimum number of 0 items. Maximum number of 200 items.
 Required: No
 
  ** totalSupportEligibleReservedInstanceSpend **   <a name="awscostmanagement-Type-billing_LinkedAccountCharge-totalSupportEligibleReservedInstanceSpend"></a>

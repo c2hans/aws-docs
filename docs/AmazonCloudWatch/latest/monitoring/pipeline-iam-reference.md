@@ -189,24 +189,11 @@ The following example shows all the IAM policies needed to create a third-party 
         {
             "Sid": "CreateApiPullPipeline",
             "Effect": "Allow",
-            "Action": "observabilityadmin:CreateTelemetryPipeline",
+            "Action": [
+                "observabilityadmin:CreateTelemetryPipeline",
+                "iam:PassRole"
+            ],
             "Resource": "*"
-        },
-        {
-            "Sid": "PassRoleForApiPullPipeline",
-            "Effect": "Allow",
-            "Action": "iam:PassRole",
-            "Resource": "arn:aws:iam::{{111122223333}}:role/{{your-source-role}}",
-            "Condition": {
-                "StringEquals": {
-                    "iam:PassedToService": [
-                        "telemetry-pipelines.observabilityadmin.amazonaws.com"
-                    ],
-                    "iam:AssociatedResourceARN": [
-                        "arn:aws:observabilityadmin:{{us-east-1}}:{{111122223333}}:telemetry-pipeline/*"
-                    ]
-                }
-            }
         }
     ]
 }
@@ -332,24 +319,11 @@ The following example shows all the IAM policies needed to create an S3 delivery
         {
             "Sid": "CreateS3Pipeline",
             "Effect": "Allow",
-            "Action": "observabilityadmin:CreateTelemetryPipeline",
+            "Action": [
+                "observabilityadmin:CreateTelemetryPipeline",
+                "iam:PassRole"
+            ],
             "Resource": "*"
-        },
-        {
-            "Sid": "PassRoleForS3Pipeline",
-            "Effect": "Allow",
-            "Action": "iam:PassRole",
-            "Resource": "arn:aws:iam::{{111122223333}}:role/{{your-source-role}}",
-            "Condition": {
-                "StringEquals": {
-                    "iam:PassedToService": [
-                        "telemetry-pipelines.observabilityadmin.amazonaws.com"
-                    ],
-                    "iam:AssociatedResourceARN": [
-                        "arn:aws:observabilityadmin:{{us-east-1}}:{{111122223333}}:telemetry-pipeline/*"
-                    ]
-                }
-            }
         }
     ]
 }
@@ -510,25 +484,10 @@ The following example shows all the IAM policies needed to create a CloudWatch L
             "Action": [
                 "observabilityadmin:CreateTelemetryPipeline",
                 "logs:PutPipelineRule",
-                "logs:DeletePipelineRule"
+                "logs:DeletePipelineRule",
+                "iam:PassRole"
             ],
             "Resource": "*"
-        },
-        {
-            "Sid": "PassRoleForLogsPipeline",
-            "Effect": "Allow",
-            "Action": "iam:PassRole",
-            "Resource": "arn:aws:iam::{{111122223333}}:role/{{your-source-role}}",
-            "Condition": {
-                "StringEquals": {
-                    "iam:PassedToService": [
-                        "logs.amazonaws.com"
-                    ],
-                    "iam:AssociatedResourceARN": [
-                        "arn:aws:observabilityadmin:{{us-east-1}}:{{111122223333}}:telemetry-pipeline/*"
-                    ]
-                }
-            }
         }
     ]
 }

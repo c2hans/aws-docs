@@ -10,7 +10,7 @@ The Amazon DCV server must be running to host sessions.
 By default, the Amazon DCV server starts whenever the server that it's hosted on starts up. If you chose to disable automatic startup when you installed the Amazon DCV server, you must start the server manually or set up automatic startup again. To do either option, follow one of these procedures.
 
 ------
-#### [ Windows Amazon DCV server ]
+#### [ Windows ]
 
 Manually start the Amazon DCV server using the Services snap-in for the Microsoft Management Console.
 
@@ -36,7 +36,7 @@ Configure automatic startup using the Services snap-in for the Microsoft Managem
 1. For **Startup service**, choose **Automatic**.
 
 ------
-#### [ Linux Amazon DCV server ]
+#### [ Linux ]
 
 Manually start the Amazon DCV server using the command line.
 
@@ -57,7 +57,7 @@ $ sudo systemctl enable dcvserver
 ```
 
 ------
-#### [ macOS Amazon DCV server ]
+#### [ macOS ]
 
 Manually start the Amazon DCV server using the command line.
 

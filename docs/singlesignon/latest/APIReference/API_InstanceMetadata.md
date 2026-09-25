@@ -15,6 +15,13 @@ The date and time that the Identity Center instance was created.
 Type: Timestamp
 Required: No
 
+ ** IdentityStoreArn **   <a name="singlesignon-Type-InstanceMetadata-IdentityStoreArn"></a>
+The ARN of the identity store that is connected to the Identity Center instance.
+Type: String
+Length Constraints: Minimum length of 62. Maximum length of 93.
+Pattern: `arn:aws(-[a-z]{1,5}){0,3}:identitystore::\d{12}:identitystore/(d-[0-9a-f]{10}|[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})`
+Required: No
+
  ** IdentityStoreId **   <a name="singlesignon-Type-InstanceMetadata-IdentityStoreId"></a>
 The identifier of the identity store that is connected to the Identity Center instance.
 Type: String

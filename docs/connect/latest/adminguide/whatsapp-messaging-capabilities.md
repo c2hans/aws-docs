@@ -22,7 +22,7 @@ When integrating WhatsApp Business messaging with Connect Customer, be aware of 
 + Delivery receipts for customer messages are not supported. The delivery receipts that appear in WhatsApp indicate that WhatsApp has received the message, not Connect Customer.
 
 **Text message limitations**
-+ Inbound text messages from customers greater than 1024 characters are not supported.
++ Inbound text messages from customers greater than 4096 characters are not supported.
 
 **Unsupported message types**
 + Inbound contact messages sent by customers are not supported.

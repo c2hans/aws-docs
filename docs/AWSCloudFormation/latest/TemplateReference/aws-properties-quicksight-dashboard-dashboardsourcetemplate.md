@@ -20,7 +20,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[Arn](#cfn-quicksight-dashboard-dashboardsourcetemplate-arn)" : {{String}},
-  "[DataSetReferences](#cfn-quicksight-dashboard-dashboardsourcetemplate-datasetreferences)" : {{[ DataSetReference, ... ]}}
+  "[DataSetReferences](#cfn-quicksight-dashboard-dashboardsourcetemplate-datasetreferences)" : {{[ DataSetReference, ... ]}},
+  "[TopicReferences](#cfn-quicksight-dashboard-dashboardsourcetemplate-topicreferences)" : {{[ TopicReference, ... ]}}
 }
 ```
 
@@ -31,6 +32,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   [Arn](#cfn-quicksight-dashboard-dashboardsourcetemplate-arn): {{String}}
   [DataSetReferences](#cfn-quicksight-dashboard-dashboardsourcetemplate-datasetreferences): {{
     - DataSetReference}}
+  [TopicReferences](#cfn-quicksight-dashboard-dashboardsourcetemplate-topicreferences): {{
+    - TopicReference}}
 ```
 
 ## Properties
@@ -46,5 +49,12 @@ The Amazon Resource Name (ARN) of the resource.
 Dataset references.
 *Required*: Yes
 *Type*: Array of [DataSetReference](aws-properties-quicksight-dashboard-datasetreference.md)
+*Minimum*: `0`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`TopicReferences`  <a name="cfn-quicksight-dashboard-dashboardsourcetemplate-topicreferences"></a>
+The topic references for the source template of a dashboard.
+*Required*: No
+*Type*: Array of [TopicReference](aws-properties-quicksight-dashboard-topicreference.md)
 *Minimum*: `1`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -19,7 +19,7 @@ CSeq: {{43615607}} INVITE
 Contact: <sip:{{IPaddress}}:{{12345}}>
 Max-Forwards: {{70}}
 Geolocation-Routing: {{Yes}}
-Geolocation: <cid:{{a1ef610291734f98a467b973819e90ed}}>;inserted-by=vpc@ng911.test.com
+Geolocation: <cid:{{pidftest@test.com}}>;inserted-by=vpc@ng911.test.com
 Content-Type: multipart/mixed;boundary=unique-boundarystring
 Content-Length: 271
 Accept: application/sdp, application/pidf+xml

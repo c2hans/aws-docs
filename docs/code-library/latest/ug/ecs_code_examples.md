@@ -9,6 +9,8 @@ There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://
 
 The following code examples show you how to use Amazon Elastic Container Service with an AWS software development kit (SDK).
 
+*Basics* are code examples that show you how to perform the essential operations within a service.
+
 *Actions* are code excerpts from larger programs and must be run in context. While actions show you how to call individual service functions, you can see actions in context in their related scenarios.
 
 *Scenarios* are code examples that show you how to accomplish specific tasks by calling multiple functions within a service or combined with other AWS services.
@@ -22,17 +24,21 @@ The following code examples show you how to use Amazon Elastic Container Service
 **Contents**
 + [Basics](ecs_code_examples_basics.md)
   + [Hello Amazon ECS](ecs_example_ecs_Hello_section.md)
+  + [Learn Amazon ECS basics](ecs_example_ecs_Scenario_section.md)
   + [Actions](ecs_code_examples_actions.md)
     + [`CreateCluster`](ecs_example_ecs_CreateCluster_section.md)
     + [`CreateService`](ecs_example_ecs_CreateService_section.md)
     + [`DeleteCluster`](ecs_example_ecs_DeleteCluster_section.md)
     + [`DeleteService`](ecs_example_ecs_DeleteService_section.md)
+    + [`DeregisterTaskDefinition`](ecs_example_ecs_DeregisterTaskDefinition_section.md)
     + [`DescribeClusters`](ecs_example_ecs_DescribeClusters_section.md)
     + [`DescribeServices`](ecs_example_ecs_DescribeServices_section.md)
     + [`DescribeTasks`](ecs_example_ecs_DescribeTasks_section.md)
     + [`ListClusters`](ecs_example_ecs_ListClusters_section.md)
     + [`ListServices`](ecs_example_ecs_ListServices_section.md)
     + [`ListTasks`](ecs_example_ecs_ListTasks_section.md)
+    + [`RegisterTaskDefinition`](ecs_example_ecs_RegisterTaskDefinition_section.md)
+    + [`RunTask`](ecs_example_ecs_RunTask_section.md)
     + [`UpdateClusterSettings`](ecs_example_ecs_UpdateClusterSettings_section.md)
     + [`UpdateService`](ecs_example_ecs_UpdateService_section.md)
 + [Scenarios](ecs_code_examples_scenarios.md)

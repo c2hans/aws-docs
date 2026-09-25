@@ -201,9 +201,11 @@ The following data types are supported by AWS Marketplace Deployment Service:
 +  [DeploymentParameterInput](API_marketplace-deployment_DeploymentParameterInput.md)
 
 The following data types are supported by AWS Marketplace Discovery:
++  [AmazonMachineImageEbsVolume](API_marketplace-discovery_AmazonMachineImageEbsVolume.md)
 +  [AmazonMachineImageFulfillmentOption](API_marketplace-discovery_AmazonMachineImageFulfillmentOption.md)
 +  [AmazonMachineImageOperatingSystem](API_marketplace-discovery_AmazonMachineImageOperatingSystem.md)
 +  [AmazonMachineImageRecommendation](API_marketplace-discovery_AmazonMachineImageRecommendation.md)
++  [AmazonMachineImageSecurityGroup](API_marketplace-discovery_AmazonMachineImageSecurityGroup.md)
 +  [ApiFulfillmentOption](API_marketplace-discovery_ApiFulfillmentOption.md)
 +  [AwsSupportedService](API_marketplace-discovery_AwsSupportedService.md)
 +  [ByolPricingTerm](API_marketplace-discovery_ByolPricingTerm.md)

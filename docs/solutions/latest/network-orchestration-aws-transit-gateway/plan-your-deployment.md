@@ -5,14 +5,14 @@ source_url: https://docs.aws.amazon.com/solutions/latest/network-orchestration-a
 # Plan your deployment
 <a name="plan-your-deployment"></a>
 
-This section describes the [cost](cost.md), [architecture](architecture-overview.md), [network security](security.md), and other considerations before deploying the solution.
+This section describes the [cost](cost.md), [architecture](architecture-overview.md), [network security](security.md), and other considerations before deploying.
 
 ## Supported AWS Regions
 <a name="supported-aws-regions"></a>
 
-This solution uses the AWS services that aren’t currently available in all AWS Regions. You must launch this solution in an AWS Region where [these services](architecture-details.md#aws-services-in-this-solution) available. For the most current availability of AWS services by Region, see the [AWS Regional Services List](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/).
+This Guidance uses the AWS services that aren’t currently available in all AWS Regions. You must launch it in an AWS Region where [these services](architecture-details.md#aws-services-in-this-solution) are available. For the most current availability of AWS services by Region, see the [AWS Regional Services List](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/).
 
-This solution is available in the following AWS Regions:
+This Guidance is available in the following AWS Regions:
 
 | Region name |  |
 | --- | --- |

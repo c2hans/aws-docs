@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/fraud-detection-with-intellige
 title: 'Guidance for Fraud Detection with Intelligent Document Processing on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/fraud-detection-with-intelligent-document-processing-on-aws/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # Guidance for Fraud Detection with Intelligent Document Processing on AWS

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/e-commerce-products-similarity
 title: 'Guidance for E-Commerce Products Similarity Search on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/e-commerce-products-similarity-search-on-aws/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # Guidance for E-Commerce Products Similarity Search on AWS

@@ -93,7 +93,7 @@ Read more about this [example](https://docs.aws.amazon.com/IAM/latest/UserGuide/
 ### Example: Specify multiple conditions
 <a name="iam-policy-builder-create-ex-multi-conditions"></a>
 
-The following example shows how you can create an identity-based policy that allows access to specific DynamoDB attributes. The policy contains two conditions.
+The following example shows how you can create an identity-based policy that allows access to specific DynamoDB attributes. The policy contains three conditions.
 
 ```
     public String multipleConditionsExample() {
@@ -113,7 +113,10 @@ The following example shows how you can create an identity-based policy that all
                                 List.of("column-name1", "column-name2", "column-name3"))
                         .addCondition(b1 -> b1.operator(IamConditionOperator.STRING_EQUALS.addSuffix("IfExists"))
                                 .key("dynamodb:Select")
-                                .value("SPECIFIC_ATTRIBUTES")))
+                                .value("SPECIFIC_ATTRIBUTES"))
+                        .addConditions(IamConditionOperator.STRING_EQUALS,
+                                "dynamodb:ReturnValues",
+                                List.of("NONE", "UPDATED_OLD", "UPDATED_NEW")))
                 .build();
 
         return policy.toJson(IamPolicyWriter.builder()

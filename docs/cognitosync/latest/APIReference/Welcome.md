@@ -23,4 +23,4 @@ You can work with Amazon Cognito Sync in the following SDKs.
 +  [AWS SDK for Python](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/CognitoSync/Client.html)
 
-This document was last published on September 22, 2026.
+This document was last published on September 25, 2026.

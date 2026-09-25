@@ -45,11 +45,21 @@ Required: Yes
       "KeyType": "string",
       "KmsKeyArn": "string"
    },
+   "IdentityStoreArn": "string",
    "IdentityStoreId": "string",
    "InstanceArn": "string",
    "Name": "string",
    "OwnerAccountId": "string",
    "PermissionSetsEnabled": boolean,
+   "PrimaryRegion": "string",
+   "Regions": [
+      {
+         "AddedDate": number,
+         "IsPrimaryRegion": boolean,
+         "RegionName": "string",
+         "Status": "string"
+      }
+   ],
    "Status": "string",
    "StatusReason": "string"
 }
@@ -69,6 +79,12 @@ Type: Timestamp
  ** [EncryptionConfigurationDetails](#API_DescribeInstance_ResponseSyntax) **   <a name="singlesignon-DescribeInstance-response-EncryptionConfigurationDetails"></a>
 Contains the encryption configuration for your IAM Identity Center instance, including the encryption status, KMS key type, and KMS key ARN.
 Type: [EncryptionConfigurationDetails](API_EncryptionConfigurationDetails.md) object
+
+ ** [IdentityStoreArn](#API_DescribeInstance_ResponseSyntax) **   <a name="singlesignon-DescribeInstance-response-IdentityStoreArn"></a>
+The ARN of the identity store that is connected to the instance of IAM Identity Center.
+Type: String
+Length Constraints: Minimum length of 62. Maximum length of 93.
+Pattern: `arn:aws(-[a-z]{1,5}){0,3}:identitystore::\d{12}:identitystore/(d-[0-9a-f]{10}|[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})`
 
  ** [IdentityStoreId](#API_DescribeInstance_ResponseSyntax) **   <a name="singlesignon-DescribeInstance-response-IdentityStoreId"></a>
 The identifier of the identity store that is connected to the instance of IAM Identity Center.
@@ -97,6 +113,16 @@ Pattern: `\d{12}`
  ** [PermissionSetsEnabled](#API_DescribeInstance_ResponseSyntax) **   <a name="singlesignon-DescribeInstance-response-PermissionSetsEnabled"></a>
 Indicates whether permission sets are enabled for this Identity Center instance.
 Type: Boolean
+
+ ** [PrimaryRegion](#API_DescribeInstance_ResponseSyntax) **   <a name="singlesignon-DescribeInstance-response-PrimaryRegion"></a>
+The primary Region where the IAM Identity Center instance was originally enabled. The primary Region cannot be removed.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 32.
+Pattern: `([a-z]+-){2,3}\d`
+
+ ** [Regions](#API_DescribeInstance_ResponseSyntax) **   <a name="singlesignon-DescribeInstance-response-Regions"></a>
+The list of Regions enabled in the IAM Identity Center instance, including Regions with ACTIVE, ADDING, or REMOVING status.
+Type: Array of [RegionMetadata](API_RegionMetadata.md) objects
 
  ** [Status](#API_DescribeInstance_ResponseSyntax) **   <a name="singlesignon-DescribeInstance-response-Status"></a>
 The status of the instance.

@@ -13,6 +13,12 @@ Describes an Amazon Machine Image (AMI) fulfillment option, including version de
 **Note**
 In the following list, the required parameters are described first.
 
+ ** architecture **   <a name="AWSMarketplaceService-Type-marketplace-discovery_AmazonMachineImageFulfillmentOption-architecture"></a>
+The architecture of the AMI, such as `x86_64`.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 256.
+Required: Yes
+
  ** fulfillmentOptionDisplayName **   <a name="AWSMarketplaceService-Type-marketplace-discovery_AmazonMachineImageFulfillmentOption-fulfillmentOptionDisplayName"></a>
 A human-readable name for the fulfillment option type.
 Type: String
@@ -39,6 +45,28 @@ The operating systems supported by this AMI.
 Type: Array of [AmazonMachineImageOperatingSystem](API_marketplace-discovery_AmazonMachineImageOperatingSystem.md) objects
 Required: Yes
 
+ ** accessUrlTemplate **   <a name="AWSMarketplaceService-Type-marketplace-discovery_AmazonMachineImageFulfillmentOption-accessUrlTemplate"></a>
+The URL pattern for accessing the product when an instance is running.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 1024.
+Required: No
+
+ ** amiAlias **   <a name="AWSMarketplaceService-Type-marketplace-discovery_AmazonMachineImageFulfillmentOption-amiAlias"></a>
+The alias of the AMI associated with this fulfillment option.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 1024.
+Required: No
+
+ ** availableFromTime **   <a name="AWSMarketplaceService-Type-marketplace-discovery_AmazonMachineImageFulfillmentOption-availableFromTime"></a>
+The date and time when the AMI became available for fulfillment.
+Type: Timestamp
+Required: No
+
+ ** ebsVolume **   <a name="AWSMarketplaceService-Type-marketplace-discovery_AmazonMachineImageFulfillmentOption-ebsVolume"></a>
+The supported Amazon EBS volume configuration for the AMI.
+Type: [AmazonMachineImageEbsVolume](API_marketplace-discovery_AmazonMachineImageEbsVolume.md) object
+Required: No
+
  ** fulfillmentOptionVersion **   <a name="AWSMarketplaceService-Type-marketplace-discovery_AmazonMachineImageFulfillmentOption-fulfillmentOptionVersion"></a>
 The version identifier of the fulfillment option.
 Type: String
@@ -52,6 +80,12 @@ Required: No
  ** releaseNotes **   <a name="AWSMarketplaceService-Type-marketplace-discovery_AmazonMachineImageFulfillmentOption-releaseNotes"></a>
 Release notes describing changes in this version of the fulfillment option.
 Type: String
+Required: No
+
+ ** shortDescription **   <a name="AWSMarketplaceService-Type-marketplace-discovery_AmazonMachineImageFulfillmentOption-shortDescription"></a>
+A short description of the fulfillment option.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 4096.
 Required: No
 
  ** usageInstructions **   <a name="AWSMarketplaceService-Type-marketplace-discovery_AmazonMachineImageFulfillmentOption-usageInstructions"></a>

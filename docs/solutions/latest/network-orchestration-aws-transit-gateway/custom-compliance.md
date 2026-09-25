@@ -25,7 +25,7 @@ Each transit gateway route table is tagged with an **ApprovalRequired** tag key 
 
 Administrators can change from the default automatic approval setup to manual approval by changing the **ApprovalRequired** tag value for every transit gateway route table individually.
 
-See [View transit gateway route tables](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-route-tables.html#view-tgw-route-tables) for instuctions on viewing your transit gateway route tables and updating tags.
+See [View transit gateway route tables](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-route-tables.html#view-tgw-route-tables) for instructions on viewing your transit gateway route tables and updating tags.
 
 The following tag keys and values are required with at least one rule if the **ApprovalRequired** is set to `Conditional`.
 

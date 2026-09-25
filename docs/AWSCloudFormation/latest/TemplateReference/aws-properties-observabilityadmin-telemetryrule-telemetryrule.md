@@ -78,7 +78,7 @@ To declare this entity in your CloudFormation template, use the following syntax
  The type of AWS resource to configure telemetry for (for example, `AWS::EC2::VPC`, `AWS::EKS::Cluster`, `AWS::ElasticLoadBalancingV2::LoadBalancer`, or `AWS::Bedrock::KnowledgeBase`).
 *Required*: Yes
 *Type*: String
-*Allowed values*: `AWS::EC2::VPC | AWS::WAFv2::WebACL | AWS::CloudTrail | AWS::EKS::Cluster | AWS::ElasticLoadBalancingV2::LoadBalancer | AWS::EC2::Instance | AWS::BedrockAgentCore::Runtime | AWS::BedrockAgentCore::Browser | AWS::BedrockAgentCore::CodeInterpreter | AWS::SecurityHub::Hub`
+*Allowed values*: `AWS::EC2::VPC | AWS::WAFv2::WebACL | AWS::CloudTrail | AWS::EKS::Cluster | AWS::ElasticLoadBalancingV2::LoadBalancer | AWS::EC2::Instance | AWS::BedrockAgentCore::Runtime | AWS::BedrockAgentCore::Browser | AWS::BedrockAgentCore::CodeInterpreter | AWS::SecurityHub::Hub | AWS::SecurityHub::HubV2 | AWS::S3::Bucket | AWS::MSK::Cluster | AWS::CloudFront::Distribution | AWS::CloudWatch::OTelEnrichment | AWS::Bedrock::KnowledgeBase | AWS::BedrockAgentCore::Memory | AWS::BedrockAgentCore::Gateway | AWS::BedrockAgentCore::WorkloadIdentity`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SelectionCriteria`  <a name="cfn-observabilityadmin-telemetryrule-telemetryrule-selectioncriteria"></a>

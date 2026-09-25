@@ -65,9 +65,21 @@ These roles follow the principle of least privilege, granting only the permissio
 ### Log retention and monitoring
 <a name="log-retention-and-monitoring"></a>
 
-By default, DeepRacer on AWS retains all security-relevant logs for 10 years, which aligns with AWS security best practices. Security-relevant logs include logs emitted by AWS Lambda functions that support API services as well as authentication and authorization services. All other logs are retained for 2 years. You can customize the log retention period for one or more logs through the CloudWatch Logs console.
+By default, DeepRacer on AWS retains all security-relevant logs for 10 years, which aligns with AWS security best practices. Security-relevant logs include logs emitted by AWS Lambda functions that support API services as well as authentication and authorization services. All other logs are retained for 2 years. As an exception, CloudWatch logs from the Race Management Lambda functions that support physical racing events are retained for 90 days, which is sufficient for post-event audit queries. You can customize the log retention period for one or more logs through the CloudWatch Logs console.
 
 All logs are encrypted at-rest using AWS KMS customer-managed keys.
+
+### Lap edit audit trail
+<a name="lap-edit-audit-trail"></a>
+
+Correcting a recorded lap time at a [physical racing event](race-management.md) changes a published result, so the solution restricts the action to admins and records every correction in two independent places.
+
+The lap record itself retains the originally recorded time alongside the corrected one, together with the identity of the admin who made the change, the time they made it, and the reason they supplied. A reason is mandatory. Because this provenance is stored on the record, a corrected result stays distinguishable from an original one for as long as the event’s data is retained, and it is visible to anyone reviewing the run.
+
+The solution also writes a structured `LAP_EDIT_AUDIT` entry to CloudWatch Logs capturing the state of the lap before and after the change. These entries can be queried with CloudWatch Logs Insights and are retained for 90 days, an exception to the general log retention policy (see [Log retention and monitoring](#log-retention-and-monitoring)). This CloudWatch entry is a secondary, queryable copy; the durable audit record is the provenance stored on the lap record itself, which persists for as long as the event’s data is retained.
+
+**Note**
+Correcting a lap time on a run whose results were already submitted rescores that run and updates the affected leaderboards. The audit trail records the correction itself; to reconstruct how standings changed as a result, compare the leaderboard before and after the recorded edit time.
 
 ### Amazon API Gateway
 <a name="amazon-api-gateway"></a>
@@ -201,3 +213,8 @@ To take advantage of ESM patches offered by Ubuntu Pro, please follow the proced
 <a name="uploaded-artifacts"></a>
 
 DeepRacer on AWS allows users to upload models downloaded from other instances to promote portability and allow submission of externally-trained models to races. All artifacts that are uploaded to DeepRacer on AWS are thoroughly scanned and validated using functions that are isolated from the rest of your AWS account using a VPC with least privilege permissions. Only after an artifact package passes these validations is it allowed to be stored in the system.
+
+## Physical model uploads and car deployment
+<a name="physical-model-deployment-security"></a>
+
+When you import a physical model, Amazon GuardDuty automatically scans the uploaded file for malware by default before DeepRacer on AWS processes it. Before you run a physical event, plan to activate and manage your cars through Device Management. Pushing models to physical cars requires those cars to be activated and managed there first.

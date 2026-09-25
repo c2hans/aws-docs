@@ -7,7 +7,9 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::ImageBuilder::DistributionConfiguration
 <a name="aws-resource-imagebuilder-distributionconfiguration"></a>
 
-A distribution configuration allows you to specify the name and description of your output AMI, authorize other AWS accounts to launch the AMI, and replicate the AMI to other AWS Regions. It also allows you to export the AMI to Amazon S3.
+Defines how Image Builder distributes the output of an image build. You can configure:
++ The Regions to distribute the image to.
++ The Region-specific settings to apply, such as output AMI names, launch permissions for other AWS accounts, and target container repositories.
 
 ## Syntax
 <a name="aws-resource-imagebuilder-distributionconfiguration-syntax"></a>

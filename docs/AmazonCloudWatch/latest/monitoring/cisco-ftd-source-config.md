@@ -69,8 +69,7 @@ Before you begin, make sure you have the following:
            "Action": "sqs:SendMessage",
            "Resource": "arn:aws:sqs:<region>:<account-id>:<queue-name>",
            "Condition": {
-               "ArnEquals": {"aws:SourceArn": "arn:aws:s3:::<bucket-name>"},
-               "StringEquals": {"aws:SourceAccount": "<account-id>"}
+               "ArnEquals": {"aws:SourceArn": "arn:aws:s3:::<bucket-name>"}
            }
        }]
    }

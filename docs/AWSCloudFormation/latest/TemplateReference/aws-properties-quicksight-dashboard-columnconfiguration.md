@@ -21,6 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "[ColorsConfiguration](#cfn-quicksight-dashboard-columnconfiguration-colorsconfiguration)" : {{ColorsConfiguration}},
   "[Column](#cfn-quicksight-dashboard-columnconfiguration-column)" : {{ColumnIdentifier}},
+  "[DecalSettingsConfiguration](#cfn-quicksight-dashboard-columnconfiguration-decalsettingsconfiguration)" : {{DecalSettingsConfiguration}},
   "[FormatConfiguration](#cfn-quicksight-dashboard-columnconfiguration-formatconfiguration)" : {{FormatConfiguration}},
   "[Role](#cfn-quicksight-dashboard-columnconfiguration-role)" : {{String}}
 }
@@ -34,6 +35,8 @@ To declare this entity in your CloudFormation template, use the following syntax
     ColorsConfiguration}}
   [Column](#cfn-quicksight-dashboard-columnconfiguration-column): {{
     ColumnIdentifier}}
+  [DecalSettingsConfiguration](#cfn-quicksight-dashboard-columnconfiguration-decalsettingsconfiguration): {{
+    DecalSettingsConfiguration}}
   [FormatConfiguration](#cfn-quicksight-dashboard-columnconfiguration-formatconfiguration): {{
     FormatConfiguration}}
   [Role](#cfn-quicksight-dashboard-columnconfiguration-role): {{String}}
@@ -52,6 +55,12 @@ The color configurations of the column.
 The column.
 *Required*: Yes
 *Type*: [ColumnIdentifier](aws-properties-quicksight-dashboard-columnidentifier.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`DecalSettingsConfiguration`  <a name="cfn-quicksight-dashboard-columnconfiguration-decalsettingsconfiguration"></a>
+Decal configuration of the column.
+*Required*: No
+*Type*: [DecalSettingsConfiguration](aws-properties-quicksight-dashboard-decalsettingsconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `FormatConfiguration`  <a name="cfn-quicksight-dashboard-columnconfiguration-formatconfiguration"></a>

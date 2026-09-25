@@ -9,8 +9,9 @@ There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://
 
 The following code examples show how to use `DescribeClusters`.
 
-Action examples are code excerpts from larger programs and must be run in context. You can see this action in context in the following code example:
+Action examples are code excerpts from larger programs and must be run in context. You can see this action in context in the following code examples:
 +  [Configure container service connectivity](ecs_example_ecs_ServiceConnect_085_section.md)
++  [Learn Amazon ECS basics](ecs_example_ecs_Scenario_section.md)
 
 ------
 #### [ CLI ]
@@ -203,6 +204,67 @@ ContentLength    : 396
 HttpStatusCode   : OK
 ```
 +  For API details, see [DescribeClusters](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
+
+------
+#### [ Python ]
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecs#code-examples).
+
+```
+class EcsWrapper:
+    """Encapsulates Amazon ECS operations."""
+
+    def __init__(self, ecs_client: BaseClient):
+        """
+        Initializes the EcsWrapper with an ECS client.
+
+        :param ecs_client: A Boto3 Amazon ECS client. Boto3 clients are created
+            by the ``boto3.client`` factory function and are instances of
+            ``botocore.client.BaseClient``, which is the correct type to
+            annotate here (``boto3.client`` itself is a function, not a type).
+        """
+        self.ecs_client = ecs_client
+
+    @classmethod
+    def from_client(cls) -> "EcsWrapper":
+        """Creates an EcsWrapper using a default Boto3 ECS client."""
+        ecs_client = boto3.client("ecs")
+        return cls(ecs_client)
+
+    def describe_clusters(self, cluster_names: List[str]) -> List[Dict[str, Any]]:
+        """
+        Describes one or more ECS clusters.
+
+        :param cluster_names: A list of cluster names or ARNs.
+        :return: A list of cluster details.
+        :raises ClientError: If the request fails (e.g., ClusterNotFoundException).
+        """
+        try:
+            response = self.ecs_client.describe_clusters(
+                clusters=cluster_names,
+                include=["STATISTICS"],
+            )
+            clusters = response.get("clusters", list())
+            for cluster in clusters:
+                logger.info(
+                    "Cluster '%s': status=%s, active_services=%s, running_tasks=%s",
+                    cluster["clusterName"],
+                    cluster["status"],
+                    cluster["activeServicesCount"],
+                    cluster["runningTasksCount"],
+                )
+            return clusters
+        except ClientError as err:
+            if err.response["Error"]["Code"] == "ClusterNotFoundException":
+                logger.error(
+                    "Cluster(s) not found: %s. %s",
+                    cluster_names,
+                    err.response["Error"]["Message"],
+                )
+            raise
+```
++  For API details, see [DescribeClusters](https://docs.aws.amazon.com/goto/boto3/ecs-2014-11-13/DescribeClusters) in *AWS SDK for Python (Boto3) API Reference*.
 
 ------
 #### [ Rust ]

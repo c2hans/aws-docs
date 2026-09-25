@@ -10,7 +10,7 @@ When you build systems on AWS infrastructure, security responsibilities are shar
 ## IAM roles
 <a name="iam-roles"></a>
 
-IAM roles allow customers to assign granular access policies and permissions to services and users on AWS. This solution creates IAM roles and sets permissions in the respective accounts. This allows the solution to assume a defined role in the spoke and management account to make changes when necessary. The hub account assumes role in the Management account and spoke accounts.
+IAM roles allow customers to assign granular access policies and permissions to services and users on AWS. This Guidance creates IAM roles and sets permissions in the respective accounts. This allows it to assume a defined role in the spoke and management account to make changes when necessary. The hub account assumes role in the Management account and spoke accounts.
 
 ## AWS WAF
 <a name="aws-waf-security"></a>
@@ -22,12 +22,12 @@ You can use AWS WAF to protect AWS AppSync from common security events, such as 
 ## Amazon CloudFront
 <a name="amazon-cloudfront"></a>
 
-This solution deploys a static website [hosted](https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html) in an S3 bucket. To help reduce latency and improve security, this solution includes an Amazon CloudFront distribution with an origin access identity. This identity is a CloudFront user that helps provide public access to the solution’s website bucket contents. For more information, refer to [Restricting access to an Amazon S3 origin](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html).
+This Guidance deploys a static website [hosted](https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html) in an S3 bucket. To help reduce latency and improve security, it includes an Amazon CloudFront distribution with an origin access identity. This identity is a CloudFront user that helps provide public access to the website bucket contents. For more information, refer to [Restricting access to an Amazon S3 origin](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html).
 
 ## Amazon Cognito
 <a name="amazon-cognito"></a>
 
-This solution creates Amazon Cognito user accounts for signing in to the web UI. The solution also grants the administrator and the read-only users with the appropriate permissions to control user access to data.
+This Guidance creates Amazon Cognito user accounts for signing in to the web UI. It also grants the administrator and the read-only users with the appropriate permissions to control user access to data.
 
 **Important**
-If you connect an external identity provider through SAML, every user from your identity provider will have read access to the web UI. To prevent giving read access to all users by default, modify the `cognito-trigger` Lambda function deployed by this solution. For more information, see [Configuring Lambda function options](https://docs.aws.amazon.com/lambda/latest/dg/configuration-function-common.html).
+If you connect an external identity provider through SAML, every user from your identity provider will have read access to the web UI. To prevent giving read access to all users by default, modify the `cognito-trigger` Lambda function deployed by this stack. For more information, see [Configuring Lambda function options](https://docs.aws.amazon.com/lambda/latest/dg/configuration-function-common.html).

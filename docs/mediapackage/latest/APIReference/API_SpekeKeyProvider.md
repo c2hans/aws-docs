@@ -51,6 +51,21 @@ Length Constraints: Minimum length of 20. Maximum length of 2048.
 Pattern: `arn:([^:\n]+):acm:([^:\n]+):([0-9]+):certificate/[a-zA-Z0-9-_]+`
 Required: No
 
+ ** ContentKeyPeriodConfiguration **   <a name="mediapackage-Type-SpekeKeyProvider-ContentKeyPeriodConfiguration"></a>
+The configuration that controls whether MediaPackage signals the start and end times a content key is used for, in the `ContentKeyPeriod` sent to your DRM key provider. Signaling this timing is supported only when key rotation is enabled (`KeyRotationIntervalSeconds` is set to a non-zero value) and `SpekeVersion` is `V2_1`. You can update these settings on an existing origin endpoint.
+Type: [ContentKeyPeriodConfiguration](API_ContentKeyPeriodConfiguration.md) object
+Required: No
+
+ ** SpekeVersion **   <a name="mediapackage-Type-SpekeKeyProvider-SpekeVersion"></a>
+Specifies the SPEKE version used with your DRM key provider. If you don't specify a value, the default is `V2_0`.
+The allowed values are:
++  `V2_0` - Follows the SPEKE Version 2.0 contract and signals only the content key index in key requests. This is the default.
++  `V2_1` - Follows the SPEKE Version 2.1 contract and additionally supports signaling the start and end times a content key is used for, using `ContentKeyPeriodConfiguration`.
+For more information, see [SPEKE Version 2.0 payload](https://docs.aws.amazon.com/speke/latest/documentation/standard-payload-components-v2.html).
+Type: String
+Valid Values: `V2_0 | V2_1`
+Required: No
+
 ## See Also
 <a name="API_SpekeKeyProvider_SeeAlso"></a>
 

@@ -12,6 +12,9 @@ Community races allow you to test your trained DeepRacer model against other par
 **Note**
 Community races are asynchronous — models are evaluated independently as they are submitted, and you do not need to be online when your model is evaluated. For real-time racing events where all participants watch together and a facilitator controls the flow, see [Live races](live-races.md).
 
+**Note**
+You cannot submit a physical model to a community race. Physical models are for physical car deployment only.
+
 You can see whether there are any open races that are accepting submissions by clicking the Races tab in the left sidebar. Open races that are accepting submissions will be displayed in the **Open races** section.
 
  **Entering a race**

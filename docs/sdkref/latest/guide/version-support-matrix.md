@@ -32,6 +32,7 @@ The table below shows the list of available AWS Software Development Kit (SDK) m
 | [SDK for Ruby](https://github.com/aws/aws-sdk-ruby/tree/version-1) | 1.x | End-of-Support | 7/14/2011 |  |
 | [SDK for Ruby](https://github.com/aws/aws-sdk-ruby/tree/version-2) | 2.x | End-of-Support | 2/15/2015 |  |
 | [SDK for Ruby](https://github.com/aws/aws-sdk-ruby) | 3.x | General Availability | 8/29/2017 |  |
+| [SDK for SAP ABAP](https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/) | 1.x | General Availability | 6/30/2023 |  |
 | [SDK for Rust](https://github.com/awslabs/aws-sdk-rust) | 1.x | General Availability | 11/27/2023 |  |
 | [SDK for Swift](https://github.com/awslabs/aws-sdk-swift) | 1.x | General Availability | 9/17/2024 |  |
 | Tools for PowerShell | 2.x | End-of-Support | 11/8/2013 |  |

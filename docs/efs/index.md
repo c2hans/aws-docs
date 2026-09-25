@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/efs/index.html
 title: 'Amazon Elastic File System Documentation'
 canonical_url: https://docs.aws.amazon.com/efs/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # Amazon Elastic File System Documentation

@@ -7,4 +7,4 @@ source_url: https://docs.aws.amazon.com/account-access/latest/APIReference/Welco
 
 Account access manager enables you to manage applications and entitlements that grant IAM Identity Center principals access to IAM roles across accounts.
 
-This document was last published on September 22, 2026.
+This document was last published on September 25, 2026.

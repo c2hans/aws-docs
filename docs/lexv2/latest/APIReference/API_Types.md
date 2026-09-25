@@ -224,6 +224,7 @@ The following data types are supported by Amazon Lex Model Building V2:
 +  [SlotValueOverride](API_SlotValueOverride.md)
 +  [SlotValueRegexFilter](API_SlotValueRegexFilter.md)
 +  [SlotValueSelectionSetting](API_SlotValueSelectionSetting.md)
++  [SpeakerDiarizationSettings](API_SpeakerDiarizationSettings.md)
 +  [Specifications](API_Specifications.md)
 +  [SpeechFoundationModel](API_SpeechFoundationModel.md)
 +  [SpeechModelConfig](API_SpeechModelConfig.md)

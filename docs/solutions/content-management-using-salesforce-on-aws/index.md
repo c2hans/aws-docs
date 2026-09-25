@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/content-management-using-sales
 title: 'Guidance for Content Management Using Salesforce on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/content-management-using-salesforce-on-aws/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # Guidance for Content Management Using Salesforce on AWS

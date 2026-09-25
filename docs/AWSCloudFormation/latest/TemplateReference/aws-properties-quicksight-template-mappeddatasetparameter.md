@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 A unique name that identifies a dataset within the analysis or dashboard.
 *Required*: Yes
 *Type*: String
-*Minimum*: `1`
+*Minimum*: `0`
 *Maximum*: `2048`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 

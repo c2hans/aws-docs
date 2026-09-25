@@ -9,6 +9,8 @@ NEW - You can now accelerate your migration and modernization with AWS Transform
 
 ## September 2026
 <a name="release-notes-sep-2026"></a>
++ Added support for the following operating systems:
+  + Debian 12
 + Added support for local snapshots in the following Local Zones:
   + Hanoi, Vietnam (ap-southeast-1-han-1a)
   + Athens, Greece (eu-central-1-ath-1a)

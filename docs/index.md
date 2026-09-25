@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/index.html
 title: 'Welcome to AWS Documentation'
 canonical_url: https://docs.aws.amazon.com/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # Welcome to AWS Documentation
@@ -427,6 +427,7 @@ Find user guides, developer guides, API references, and CLI references for your 
 - [Amazon Application Recovery Controller (ARC)](/amazonarc/?icmpid=docs_homepage_networking): Move traffic for application disaster recovery
 - [AWS Global Accelerator](/global-accelerator/?icmpid=docs_homepage_networking): Improve global application availability and performance
 - [AWS Interconnect](/interconnect/?icmpid=docs_homepage_networking): Configure private connections to other cloud service providers
+- [AWS Network Security Manager](/network-security-manager/?icmpid=docs_homepage_networking): Define and deploy network security protections
 - [AWS RTB Fabric](/rtb-fabric/?icmpid=docs_homepage_networking): Co-locate your real-time bidding applications on AWS
 - [AWS Verified Access](/verified-access/?icmpid=docs_homepage_networking): Provide secure access to corporate applications without a VPN
 - [Amazon Virtual Private Cloud](/vpc/?icmpid=docs_homepage_networking): Isolated cloud resources
@@ -467,6 +468,7 @@ Find user guides, developer guides, API references, and CLI references for your 
 - [AWS Resource Access Manager](/ARG/?icmpid=docs_homepage_security): Simple, secure service to share AWS resources
 - [AWS Secrets Manager](/secretsmanager/?icmpid=docs_homepage_security): Rotate, manage, and retrieve secrets
 - [AWS Key Management Service](/kms/?icmpid=docs_homepage_security): Managed creation and control of encryption keys
+- [AWS Network Security Manager](/network-security-manager/?icmpid=docs_homepage_security): Define and deploy network security protections
 - [AWS Private Certificate Authority](/privateca/?icmpid=docs_homepage_security): Create private certificates to identify resources and protect data
 - [Security Documentation](/security/?icmpid=docs_homepage_addtlrcs): Security documentation by category
 - [AWS Security Hub](/securityhub/?icmpid=docs_homepage_security): Unified security and compliance center

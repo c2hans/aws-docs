@@ -27,6 +27,10 @@ Content-type: application/json
       }
    },
    "ApplicationType": "{{string}}",
+   "AuthConfig": {
+      "AuthType": "{{string}}",
+      "CredentialProviderIdentifier": "{{string}}"
+   },
    "Description": "{{string}}",
    "IframeConfig": {
       "Allow": [ "{{string}}" ],
@@ -81,7 +85,12 @@ Required: No
  ** [ApplicationType](#API_connect-app-integrations_UpdateApplication_RequestSyntax) **   <a name="connect-connect-app-integrations_UpdateApplication-request-ApplicationType"></a>
 The type of application.
 Type: String
-Valid Values: `STANDARD | SERVICE | MCP_SERVER`
+Valid Values: `STANDARD | SERVICE | MCP_SERVER | A2A_SERVER`
+Required: No
+
+ ** [AuthConfig](#API_connect-app-integrations_UpdateApplication_RequestSyntax) **   <a name="connect-connect-app-integrations_UpdateApplication-request-AuthConfig"></a>
+The authentication settings that Connect Customer uses when calling the external application.
+Type: [AuthConfig](API_connect-app-integrations_AuthConfig.md) object
 Required: No
 
  ** [Description](#API_connect-app-integrations_UpdateApplication_RequestSyntax) **   <a name="connect-connect-app-integrations_UpdateApplication-request-Description"></a>

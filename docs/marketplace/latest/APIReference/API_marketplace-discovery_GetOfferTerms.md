@@ -15,6 +15,7 @@ POST /2026-02-05/getOfferTerms HTTP/1.1
 Content-type: application/json
 
 {
+   "locale": "{{string}}",
    "maxResults": {{number}},
    "nextToken": "{{string}}",
    "offerId": "{{string}}"
@@ -38,6 +39,13 @@ Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[\w\-]+`
 Required: Yes
 
+ ** [locale](#API_marketplace-discovery_GetOfferTerms_RequestSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetOfferTerms-request-locale"></a>
+A BCP 47 language tag or comma-separated priority list specifying the preferred locale for response content. See `Locale` for supported values, constraints, fallback behavior, and the default locale. If omitted, the service returns content in the default locale.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Pattern: `[^;,]+(\s*,\s*[^;,]+){0,1}`
+Required: No
+
  ** [maxResults](#API_marketplace-discovery_GetOfferTerms_RequestSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetOfferTerms-request-maxResults"></a>
 The maximum number of results that are returned per call. You can use `nextToken` to get more results.
 Type: Integer
@@ -59,6 +67,7 @@ HTTP/1.1 200
 Content-type: application/json
 
 {
+   "locale": "string",
    "nextToken": "string",
    "offerTerms": [
       { ... }
@@ -76,6 +85,12 @@ The following data is returned in JSON format by the service.
  ** [offerTerms](#API_marketplace-discovery_GetOfferTerms_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetOfferTerms-response-offerTerms"></a>
 The terms attached to the offer. Each element contains exactly one term type.
 Type: Array of [OfferTerm](API_marketplace-discovery_OfferTerm.md) objects
+
+ ** [locale](#API_marketplace-discovery_GetOfferTerms_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetOfferTerms-response-locale"></a>
+The locale of the returned content. Indicates whether the response contains content in the requested locale, or fell back to the default locale. See `Locale` for details.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Pattern: `[^;,]+(\s*,\s*[^;,]+){0,1}`
 
  ** [nextToken](#API_marketplace-discovery_GetOfferTerms_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetOfferTerms-response-nextToken"></a>
 If `nextToken` is returned, there are more results available. Make the call again using the returned token to retrieve the next page.

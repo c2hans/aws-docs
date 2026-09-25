@@ -130,7 +130,6 @@ Cluster versions in this patch:
 + DynamoDB zero-ETL integrations now honor the ACCEPTINVCHARS and TRUNCATECOLUMNS options during both initial seeding and ongoing replication. Tables continue to replicate when the source contains invalid UTF-8 characters.
 + Improved query performance on clusters with zero-ETL integrations, especially for workloads that replicate many databases or tables.
 + Improved performance for workloads using temporary tables, reducing catalog access overhead and improving overall throughput.
-+ Queries that reference user temporary tables can now use concurrency scaling.
 + SHOW discovery commands such as SHOW TABLES, SHOW SCHEMAS, SHOW COLUMNS, and SHOW GRANTS now return up to 133,500 objects, so metadata listings on schemas and databases with very large object counts succeed instead of failing with a row-limit error of 10,000.
 + When a DROP USER command is rejected because the user still owns objects or holds privileges, the error message now names the specific blocking object and reports how many other dependencies remain.
 + Amazon Redshift now caches IAM role credentials on the leader node. This reduces retrieval overhead for COPY, UNLOAD, Amazon Redshift Spectrum, and Lambda UDF queries. Frequently used credentials are reused across queries, improving query start-up time.

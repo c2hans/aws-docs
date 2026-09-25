@@ -7,6 +7,9 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 
 Creates a Amazon Route 53 Resolver on an Outpost.
 
+**Note**
+This operation applies to first-generation AWS Outposts only. On second-generation AWS Outposts, Resolver is enabled by default and managed automatically by AWS, so you don't need to create it.
+
 ## Request Syntax
 <a name="API_route53resolver_CreateOutpostResolver_RequestSyntax"></a>
 

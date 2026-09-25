@@ -302,7 +302,7 @@ An array of the authentication protocol, VPC components, or virtual host to secu
 *Required*: No
 *Type*: Array of [SourceAccessConfiguration](aws-properties-lambda-eventsourcemapping-sourceaccessconfiguration.md)
 *Minimum*: `1`
-*Maximum*: `22`
+*Maximum*: `29`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `StartingPosition`  <a name="cfn-lambda-eventsourcemapping-startingposition"></a>

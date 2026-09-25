@@ -28,13 +28,15 @@ The bottom-half of this dashboard shows additional graphs related to:
 
 DeepRacer on AWS automatically provisions CloudWatch alarms to monitor critical system components. These alarms help detect issues early and maintain the health of the deployment.
 
-The deployment includes 17 CloudWatch alarms organized into six monitoring categories:
+The deployment includes 20 CloudWatch alarms organized into eight monitoring categories:
 +  **API import workflow monitoring** - 6 alarms that monitor model import processes
 +  **User authentication monitoring** - 2 alarms that monitor user signup functions
 +  **Asset processing monitoring** - 1 alarm that monitors asset packaging workflows
 +  **Live race event monitoring** - 4 alarms that monitor live race broadcasting and IoT connectivity
 +  **Live race workflow monitoring** - 2 alarms that monitor live race evaluation orchestration
++  **Race management monitoring** - 2 alarms that monitor physical event operations and event deletion
 +  **Admin model management monitoring** - 2 alarms that monitor admin model download activity
++  **Model management monitoring** - a composite alarm that rolls up the model optimization and push-to-car alarms (handler errors, dead-letter-queue depth, and push-to-car Step Function failures)
 
 Additionally, 3 email delivery alarms are provisioned when Amazon SES is selected as the delivery method.
 
@@ -91,6 +93,18 @@ These alarms monitor the Step Functions workflow that orchestrates live race eva
 |  `LiveRaceWorkflowErrorsAlarm`  | Monitors Step Function execution failures for live race evaluations | ≥ 1 failure in 5 minutes |
 |  `StreamDLQAlarm`  | Monitors dead letter queue for the DynamoDB stream handler that triggers live race executions | ≥ 1 message visible in 1 minute |
 
+ **Race management alarms**
+
+These alarms monitor the handlers that support physical racing events, and the background removal of deleted events:
+
+| Alarm Name | Purpose | Threshold |
+| --- | --- | --- |
+|  `EventManagementLambdaErrorsAlarm`  | Composite alarm covering errors in any Race Management handler. This includes event and track configuration, run lifecycle, lap recording, lap validity, lap time correction, statistics, and the event deletion worker | Any associated alarm in ALARM state |
+|  `EventDeleteDLQAlarm`  | Monitors the dead letter queue for event deletion. Messages arriving here mean an event’s records could not be fully removed after three attempts, and some records may remain in the table | ≥ 1 message visible in 5 minutes |
+
+**Important**
+When `EventDeleteDLQAlarm` enters the ALARM state, the deleted event’s child records may be partially removed. Investigate the event deletion worker’s logs, then redrive the dead letter queue to retry the deletion.
+
  **Email delivery alarms**
 
 The following alarms are created only when Amazon SES is selected as the delivery method for authentication emails:
@@ -109,6 +123,14 @@ These alarms monitor the admin model management feature, which allows admins and
 | --- | --- | --- |
 |  `AdminBulkDownloadAlarm`  | Monitors for unusually high volume of admin model downloads | ≥ 50 downloads in 5 minutes |
 |  `AdminAuthFailureAlarm`  | Monitors for repeated authorization failures on admin endpoints | ≥ 10 failures in 5 minutes |
+
+ **Model management alarms**
+
+This composite alarm monitors the model management feature, which optimizes models for physical cars and delivers them to those cars:
+
+| Alarm Name | Purpose | Threshold |
+| --- | --- | --- |
+|  `ModelManagementLambdaErrorsAlarm`  | Composite alarm that fires when any model management handler reports errors, the model-optimizer dead letter queue (DLQ) depth is elevated, the DLQ processor errors, or the push-to-car Step Function fails or times out | Any associated alarm in ALARM state |
 
 ### Configuring alarm actions
 <a name="config-alarm-actions"></a>
@@ -142,3 +164,17 @@ To check status of an alarm:
 1. Review the **State** column for any alarms in ALARM status
 
 When an alarm enters the ALARM state, investigate the associated service logs and metrics to identify the root cause.
+
+## Race management metrics
+<a name="race-management-metrics"></a>
+
+Physical racing events publish the following custom CloudWatch metrics. These are not shown on the provisioned dashboard. View them in the CloudWatch console under **Metrics**, or add them to a dashboard of your own.
+
+| Metric | Namespace | What it tells you |
+| --- | --- | --- |
+|  `CombinedLeaderboardRecomputed`  |  `DeepRacerIndy`  | A combined leaderboard was successfully recalculated after a track result changed. Expect one for each submitted result in a multi-track event. |
+|  `CombinedLeaderboardRecomputeFailed`  |  `DeepRacerIndy`  | A combined leaderboard could not be recalculated. Individual track leaderboards are unaffected, but the combined standings may be out of date until the next successful recalculation. |
+|  `EventDeleteCompleted`  |  `DeepRacerIndyEventManagement`  | A deleted event and all of its records were fully removed. |
+|  `EventDeleteFailed`  |  `DeepRacerIndyEventManagement`  | An attempt to remove a deleted event’s records failed. The attempt is retried; if it fails three times, the message moves to the dead letter queue and `EventDeleteDLQAlarm` fires. |
+
+A sustained rise in `CombinedLeaderboardRecomputeFailed` during an event is worth investigating while the event is still running, because the combined standings shown to spectators will drift from the individual track results.

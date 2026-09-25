@@ -39,7 +39,7 @@ The usage summary on the **Manage instance** page provides key metrics for your 
 The users table on the **Manage instance** page shows all of the users who are registered to your deployment. This table allows you to search by email address or alias. It also shows the following attributes for each user:
 +  **Email address** - the email address that the user used when creating their account.
 +  **Alias** - a custom alias selected by the user; used primarily for identifying models in races.
-+  **Role** - the user’s role, either Admin, Race facilitator, or Racer.
++  **Role** - the user’s role, either Admin, Race facilitator, Commentator, Registration manager, or Racer.
 +  **Current usage** - the number of compute hours used for training and evaluation jobs.
 +  **Queued usage** - the number of compute hours that are expected to be used based on jobs that have been queued.
 +  **Usage limit** - the individual compute usage limit, if any, that has been set.
@@ -48,6 +48,23 @@ The users table on the **Manage instance** page shows all of the users who are r
 +  **Date added** - the date when the user’s account was created.
 
 The **Actions** menu features various user management actions that can be performed when either 0 or 1 users in the table are selected. The sections in User management expand on these actions further.
+
+## Race statistics
+<a name="race-statistics"></a>
+
+The **Race statistics** page provides deployment-wide statistics for physical races. It is separate from the event-specific **Statistics** tab. Only admins can view this page.
+
+To open the page, choose **Race statistics** in the navigation pane.
+
+![Race Statistics page showing summary](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_race_statistics_summary.png)
+
+The page includes:
++ A summary of total events, racers, valid laps, countries, and completion rate.
++ Performance metrics for total races, average lap time, average laps per race, and the fastest lap ever recorded.
++ Charts for events by country, activity over time, and event type breakdown.
++ A table of the fastest laps ever recorded across the deployment.
+
+![Race Statistics page showing activity over time](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_race_statistics_details.png)
 
 ## User management
 <a name="user-management"></a>
@@ -64,6 +81,40 @@ Admins can invite users to an instance via the Manage instance page by clicking 
 The invited user will receive an email with a temporary password which can be used to log in to the instance and set a preferred password. Once the preferred password is set, the temporary password will be invalidated and the preferred password can be used going forward.
 
 Users who are invited to the instance are assigned to the **Racer** role by default.
+
+### Invite multiple users
+<a name="invite-multiple-users"></a>
+
+![The Actions menu showing the Invite multiple users option](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/device-management/invite-multiple-users-dropdown-option.png)
+
+Instead of inviting users one at a time, admins can create many racer accounts at once by uploading a CSV file. From the **Manage instance** page, choose **Actions > Invite multiple users**.
+
+The CSV file has one entry per row, with two comma-separated columns: `email` (required) and `displayName` (optional). A header row is auto-detected and skipped if it is present. You can include up to 200 entries per file.
+
+```
+email,displayName
+alex@example.com,Alex
+jordan@example.com,Jordan
+casey@example.com
+```
+
+When you upload the file, the console validates it in your browser. It checks each email for valid format, flags duplicate emails within the file, and confirms that an email is present for every entry. If there are any issues, they are listed with line numbers. You must fix them and re-upload the file before you can submit.
+
+When you submit, the solution creates an account and sends an invitation email for each valid, new entry. A progress bar and a results table show each entry as created, skipped, or failed. Entries whose email already exists on the deployment are skipped, so you can safely re-upload the same file to retry any failed entries.
+
+The import runs in the background. You can close the modal, navigate away, or refresh the browser, and progress resumes when you return. Only one bulk invitation can run at a time per admin. After you submit an import, you cannot cancel it, and any accounts that were already created remain.
+
+New accounts are created with the **Racer** role only. To grant the Admin or Race facilitator role, change the user’s role individually afterward (see the Change user permissions section).
+
+**Note**
+By default, the invitation email sender is limited to 50 emails per day. For larger imports, configure Amazon SES using the email delivery deployment parameter. Entries blocked by the daily email limit are marked as failed with a reason; re-import them after configuring Amazon SES.
+
+### Resend an invitation
+<a name="resend-an-invitation"></a>
+
+Admins can resend the invitation email to any user who has not yet accepted their invitation — that is, users who still have a temporary password and have not set a permanent one.
+
+Select one or more users in the Users table, then choose **Actions > Resend invitation**. Each selected user is emailed a new temporary password. Users who have already confirmed their account are skipped, because they can already sign in normally.
 
 ### Change user permissions
 <a name="change-user-permissions"></a>
@@ -145,16 +196,3 @@ Below are some examples of how levels of precedence work when it comes to limits
 + If global usage is *limited* and individual usage is *unlimited*, then the global usage limit will control.
 + If global usage is *limited* and individual usage is *limited*, then the limit with the least capacity will control.
 + If global usage is *unlimited* and individual usage is *limited*, then the individual usage limit will control.
-
-## Model management
-<a name="model-management"></a>
-
-**Note**
-This feature is available to both admins and race facilitators.
-
-The **Download physical car model** page allows admins and race facilitators to view all users on the instance, browse their trained models, and download physical car models (.tar.gz) for loading onto DeepRacer vehicles at physical race events.
-
-To access the page, click **Download physical car model** under **Model Management** in the left sidebar. The page displays a table of all registered users that can be filtered by email address or racer alias. Expanding a user’s row reveals their trained models with name, status, and creation date. Click **Download** next to any model to download it in physical car format.
-
-**Note**
-Physical models are exported in .tar.gz format. If you are using Windows, you will need to install 7-Zip or another program that is capable of extracting this type of file.

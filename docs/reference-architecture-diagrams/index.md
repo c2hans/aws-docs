@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/index.ht
 title: 'AWS Reference Architecture Diagrams'
 canonical_url: https://docs.aws.amazon.com/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # AWS Reference Architecture Diagrams
@@ -421,5 +421,3 @@ Search or filter by category to find reference architecture diagrams across AWS 
 - [Streaming Airline Ticket Shopping Insights](/reference-architecture-diagrams/latest/airline-ticket-shopping/airline-ticket-shopping.html): Capture and analyze streaming air shopping data by using Amazon Kinesis, Amazon Redshift, and Amazon SageMaker AI. Last updated: March 10, 2021.
 - [Traveler 360 Data Platform for Airlines](/reference-architecture-diagrams/latest/traveler-360-airlines/traveler-360-airlines.html): Identify known and unknown travelers across channels by using a data platform with MDM and customer data platform (CDP) capabilities. Last updated: November 11, 2020.
 - [Using the Federal Aviation Administration SWIM Data Lake](/reference-architecture-diagrams/latest/faa-swim-data-lake/faa-swim-data-lake.html): Process and analyze FAA SWIM aeronautical data by using Amazon Kinesis, AWS Lambda, AWS Glue, and Amazon Aurora. Last updated: March 10, 2021.
-
-[Complete index of all reference architecture diagrams](/reference-architecture-diagrams-index/)

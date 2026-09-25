@@ -25,11 +25,13 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[ColorLabelOptions](#cfn-quicksight-template-barchartconfiguration-colorlabeloptions)" : {{ChartAxisLabelOptions}},
   "[ContributionAnalysisDefaults](#cfn-quicksight-template-barchartconfiguration-contributionanalysisdefaults)" : {{[ ContributionAnalysisDefault, ... ]}},
   "[DataLabels](#cfn-quicksight-template-barchartconfiguration-datalabels)" : {{DataLabelOptions}},
+  "[DefaultSeriesSettings](#cfn-quicksight-template-barchartconfiguration-defaultseriessettings)" : {{BarChartDefaultSeriesSettings}},
   "[FieldWells](#cfn-quicksight-template-barchartconfiguration-fieldwells)" : {{BarChartFieldWells}},
   "[Interactions](#cfn-quicksight-template-barchartconfiguration-interactions)" : {{VisualInteractionOptions}},
   "[Legend](#cfn-quicksight-template-barchartconfiguration-legend)" : {{LegendOptions}},
   "[Orientation](#cfn-quicksight-template-barchartconfiguration-orientation)" : {{String}},
   "[ReferenceLines](#cfn-quicksight-template-barchartconfiguration-referencelines)" : {{[ ReferenceLine, ... ]}},
+  "[Series](#cfn-quicksight-template-barchartconfiguration-series)" : {{[ BarSeriesItem, ... ]}},
   "[SmallMultiplesOptions](#cfn-quicksight-template-barchartconfiguration-smallmultiplesoptions)" : {{SmallMultiplesOptions}},
   "[SortConfiguration](#cfn-quicksight-template-barchartconfiguration-sortconfiguration)" : {{BarChartSortConfiguration}},
   "[Tooltip](#cfn-quicksight-template-barchartconfiguration-tooltip)" : {{TooltipOptions}},
@@ -54,6 +56,8 @@ To declare this entity in your CloudFormation template, use the following syntax
     - ContributionAnalysisDefault}}
   [DataLabels](#cfn-quicksight-template-barchartconfiguration-datalabels): {{
     DataLabelOptions}}
+  [DefaultSeriesSettings](#cfn-quicksight-template-barchartconfiguration-defaultseriessettings): {{
+    BarChartDefaultSeriesSettings}}
   [FieldWells](#cfn-quicksight-template-barchartconfiguration-fieldwells): {{
     BarChartFieldWells}}
   [Interactions](#cfn-quicksight-template-barchartconfiguration-interactions): {{
@@ -63,6 +67,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   [Orientation](#cfn-quicksight-template-barchartconfiguration-orientation): {{String}}
   [ReferenceLines](#cfn-quicksight-template-barchartconfiguration-referencelines): {{
     - ReferenceLine}}
+  [Series](#cfn-quicksight-template-barchartconfiguration-series): {{
+    - BarSeriesItem}}
   [SmallMultiplesOptions](#cfn-quicksight-template-barchartconfiguration-smallmultiplesoptions): {{
     SmallMultiplesOptions}}
   [SortConfiguration](#cfn-quicksight-template-barchartconfiguration-sortconfiguration): {{
@@ -119,6 +125,12 @@ The options that determine if visual data labels are displayed.
 *Type*: [DataLabelOptions](aws-properties-quicksight-template-datalabeloptions.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`DefaultSeriesSettings`  <a name="cfn-quicksight-template-barchartconfiguration-defaultseriessettings"></a>
+The options that determine the default presentation of all bar series in `BarChartVisual`.
+*Required*: No
+*Type*: [BarChartDefaultSeriesSettings](aws-properties-quicksight-template-barchartdefaultseriessettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `FieldWells`  <a name="cfn-quicksight-template-barchartconfiguration-fieldwells"></a>
 The field wells of the visual.
 *Required*: No
@@ -152,6 +164,14 @@ The reference line setup of the visual.
 *Type*: Array of [ReferenceLine](aws-properties-quicksight-template-referenceline.md)
 *Minimum*: `0`
 *Maximum*: `20`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Series`  <a name="cfn-quicksight-template-barchartconfiguration-series"></a>
+The series item configuration of a `BarChartVisual`.
+*Required*: No
+*Type*: Array of BarSeriesItem
+*Minimum*: `0`
+*Maximum*: `2000`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SmallMultiplesOptions`  <a name="cfn-quicksight-template-barchartconfiguration-smallmultiplesoptions"></a>

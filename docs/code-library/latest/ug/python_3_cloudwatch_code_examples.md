@@ -9,6 +9,8 @@ There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for Python (Boto3) with CloudWatch.
 
+*Basics* are code examples that show you how to perform the essential operations within a service.
+
 *Actions* are code excerpts from larger programs and must be run in context. While actions show you how to call individual service functions, you can see actions in context in their related scenarios.
 
 *Scenarios* are code examples that show you how to accomplish specific tasks by calling multiple functions within a service or combined with other AWS services.
@@ -16,8 +18,926 @@ The following code examples show you how to perform actions and implement common
 Each example includes a link to the complete source code, where you can find instructions on how to set up and run the code in context.
 
 **Topics**
++ [Basics](#basics)
 + [Actions](#actions)
 + [Scenarios](#scenarios)
+
+## Basics
+<a name="basics"></a>
+
+### Learn the basics
+<a name="cloudwatch_GetStartedMetricsDashboardsAlarms_python_3_topic"></a>
+
+The following code example shows how to:
++ List CloudWatch namespaces and metrics.
++ Start OpenTelemetry enrichment so CloudWatch correlates incoming OTLP metrics with the resources that produced them.
++ See how OTLP metrics reach the CloudWatch metrics endpoint. Metric ingestion over OTLP is not an AWS SDK operation.
++ Create an alarm that evaluates a PromQL query.
++ Inspect the alarm's contributors, the individual series that the query matched.
++ Get statistics for a metric and chart it on a dashboard.
++ Mute the alarm for a maintenance window, then clean up.
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch#code-examples).
+Run an interactive scenario demonstrating the CloudWatch OpenTelemetry experience.
+
+```
+from collections import Counter
+from datetime import datetime, timedelta, timezone
+import json
+import logging
+import random
+import sys
+import boto3
+from botocore.exceptions import ClientError
+
+from cloudwatch_basics import CloudWatchWrapper
+from cloudwatch_otel import CloudWatchOTelWrapper
+
+logger = logging.getLogger(__name__)
+
+DEFAULT_QUERY = "avg by (host) (system_cpu_utilization) > 80"
+
+# Valid evaluation intervals are 10, 20, 30, or any multiple of 60 up to 3600 seconds.
+EVALUATION_INTERVAL = 60
+PENDING_PERIOD = 300
+RECOVERY_PERIOD = 120
+
+DASHES = "-" * 80
+
+class CloudWatchScenario:
+    """Runs an interactive scenario that shows how to use Amazon CloudWatch."""
+
+    def __init__(self, cloudwatch_wrapper, otel_wrapper):
+        """
+        :param cloudwatch_wrapper: An object that wraps CloudWatch metric, statistic,
+                                   and dashboard actions.
+        :param otel_wrapper: An object that wraps CloudWatch OTel enrichment, PromQL
+                             alarm, and alarm mute rule actions.
+        """
+        self.cloudwatch_wrapper = cloudwatch_wrapper
+        self.otel_wrapper = otel_wrapper
+
+        # Suffix the resource names so repeated runs do not collide.
+        suffix = random.randint(1000, 9999)
+        self.alarm_name = f"doc-example-promql-alarm-{suffix}"
+        self.dashboard_name = f"doc-example-dashboard-{suffix}"
+        self.mute_rule_name = f"doc-example-mute-rule-{suffix}"
+
+        # Tracks whether this run turned enrichment on, so that cleanup only turns off
+        # enrichment that this run started.
+        self.started_enrichment = False
+        self.dashboard_created = False
+
+    def run_scenario(self):
+        """Runs the eight steps of the scenario in order."""
+        print(DASHES)
+        print("Welcome to the Amazon CloudWatch Basics scenario.")
+        print(
+            "\nCloudWatch now ingests OpenTelemetry metrics natively. This scenario walks\n"
+            "through that experience: it turns on OTel enrichment so CloudWatch can\n"
+            "correlate incoming OTLP metrics with the resources that produced them, alarms\n"
+            "on those metrics with a PromQL query, and shows you which individual series\n"
+            "drove the alarm.\n"
+            "\nA PromQL alarm works differently from a classic metric alarm. Rather than\n"
+            "watching one metric and counting breaching periods, it evaluates a query that\n"
+            "can match many series at once, and tracks each one separately as a contributor."
+        )
+        print(DASHES)
+
+        namespaces = self.list_metrics_and_namespaces()
+        self.start_otel_enrichment()
+        self.explain_otlp_ingestion()
+        self.create_promql_alarm()
+        self.inspect_alarm_contributors()
+        self.get_statistics_and_chart_metric(namespaces)
+        self.mute_alarm_for_maintenance()
+
+    def list_metrics_and_namespaces(self):
+        """
+        Lists the metrics and namespaces already present in the account, to orient the
+        reader before any configuration happens.
+
+        :return: A Counter of namespace to metric count, most common first.
+        """
+        print("1. List metrics and namespaces")
+        print(
+            "\nBefore configuring anything, let's see what CloudWatch is already\n"
+            "collecting in this account by calling ListMetrics.\n"
+        )
+
+        namespaces = Counter()
+        metric_count = 0
+        for metric in self.cloudwatch_wrapper.list_all_metrics():
+            namespaces[metric.namespace] += 1
+            metric_count += 1
+            # This account may have a very large number of metrics, so stop once we
+            # have enough to give the reader a sense of what is there.
+            if metric_count >= 500:
+                break
+
+        print(f"\tFound {metric_count} metrics across {len(namespaces)} namespaces:")
+        for namespace, count in namespaces.most_common(10):
+            print(f"\t  {namespace} ({count} metrics)")
+
+        if not namespaces:
+            print(
+                "\tNo metrics found in this account. The statistics and dashboard steps\n"
+                "\tlater on need an existing metric, so they will be skipped."
+            )
+
+        print(DASHES)
+        return namespaces
+
+    def start_otel_enrichment(self):
+        """
+        Starts OTel enrichment, but only if it is not already running. Enrichment is
+        what makes CloudWatch attach AWS resource context to incoming OTLP metrics.
+        """
+        print("2. Start OpenTelemetry enrichment")
+        print(
+            "\nEnrichment is what lets CloudWatch attach AWS resource context to the OTLP\n"
+            "metrics you send it. Without it, your metrics arrive as opaque series with no\n"
+            "connection to the resources that emitted them.\n"
+            "\nWe check the current state first, and only start enrichment if it isn't\n"
+            "already on.\n"
+        )
+
+        status = self.otel_wrapper.get_otel_enrichment_status()
+        print(f"\tEnrichment status: {status}")
+
+        if status != "Running":
+            self.otel_wrapper.start_otel_enrichment()
+            self.started_enrichment = True
+            status = self.otel_wrapper.get_otel_enrichment_status()
+            print(f"\tEnrichment status: {status}")
+            print(
+                "\n\tNote: this run started enrichment, so the cleanup step will stop it\n"
+                "\tagain."
+            )
+        else:
+            print(
+                "\n\tEnrichment was already running, so we will leave it alone. The cleanup\n"
+                "\tstep will not stop it, because other workloads in this account may\n"
+                "\tdepend on it."
+            )
+
+        print(DASHES)
+
+    @staticmethod
+    def explain_otlp_ingestion():
+        """
+        Explains that OTLP metric ingestion is not an AWS SDK operation. This step makes
+        no service call; naming the gap explicitly is the point.
+        """
+        print("3. Send OTLP metrics to CloudWatch")
+        print(
+            "\nThis step is not an AWS SDK operation, and that's worth being explicit\n"
+            "about. Metrics reach CloudWatch over the OTLP protocol, through the CloudWatch\n"
+            "agent, an OpenTelemetry Collector, or an ADOT SDK. There is no PutOTelMetrics\n"
+            "API to call.\n"
+            "\nPoint your collector at the CloudWatch metrics endpoint, which follows the\n"
+            "pattern\n"
+            "\thttps://monitoring.<region>.amazonaws.com/v1/metrics\n"
+            "\nThe endpoint is HTTP/1.1 only and does not support gRPC, so use an otlphttp\n"
+            "exporter rather than otlp. The metrics endpoint signs as 'monitoring'.\n"
+            "\nSee otlp_collector_config.yaml in this folder for a working collector\n"
+            "configuration."
+        )
+        print(DASHES)
+
+    def create_promql_alarm(self):
+        """Creates an alarm whose evaluation is a PromQL query."""
+        print("4. Create a PromQL alarm")
+        print(
+            "\nNow we alarm on those metrics. The comparison goes inside the query itself:\n"
+            "a PromQL alarm has no separate threshold, comparison operator, statistic, or\n"
+            "period.\n"
+        )
+
+        query = (
+            input(
+                f"Enter a PromQL query, or press ENTER for [{DEFAULT_QUERY}]: "
+            ).strip()
+            or DEFAULT_QUERY
+        )
+
+        self.otel_wrapper.create_promql_alarm(
+            self.alarm_name,
+            query,
+            EVALUATION_INTERVAL,
+            pending_period=PENDING_PERIOD,
+            recovery_period=RECOVERY_PERIOD,
+            description="A PromQL alarm created by the Boto3 Basics scenario.",
+        )
+
+        print(f"\tCreated alarm {self.alarm_name}:")
+        print(f"\t  query:              {query}")
+        print(f"\t  evaluationInterval: {EVALUATION_INTERVAL} seconds")
+        print(f"\t  pendingPeriod:      {PENDING_PERIOD} seconds")
+        print(f"\t  recoveryPeriod:     {RECOVERY_PERIOD} seconds")
+        print(
+            "\n\tA PromQL alarm starts in the OK state rather than INSUFFICIENT_DATA, which\n"
+            "\tis another way it differs from a classic alarm."
+        )
+        print(DASHES)
+
+    def inspect_alarm_contributors(self):
+        """
+        Shows which individual series the alarm's query matched. This is the step with
+        no classic-alarm equivalent.
+        """
+        print("5. Inspect the alarm's contributors")
+        print(
+            "\nEach contributor is one series the query matched, identified by its label\n"
+            "set. This is how you find out which host is unhealthy rather than only that\n"
+            "something is. Classic alarms have no equivalent.\n"
+        )
+
+        contributors = self.otel_wrapper.describe_alarm_contributors(self.alarm_name)
+
+        if not contributors:
+            print(
+                "\tNo contributors yet. The query matched no series, which usually means no\n"
+                "\tOTel metrics with these labels have arrived. Once your collector is\n"
+                "\tsending data, each matching series appears here with its labels and the\n"
+                "\treason it breached."
+            )
+        else:
+            print(f"\tFound {len(contributors)} contributors:")
+            for contributor in contributors:
+                labels = ", ".join(
+                    f"{key}={value}"
+                    for key, value in sorted(
+                        contributor.get("ContributorAttributes", {}).items()
+                    )
+                )
+                print(f"\t  {contributor['ContributorId']}: {labels}")
+                print(f"\t    reason: {contributor.get('StateReason')}")
+
+        print(DASHES)
+
+    def get_statistics_and_chart_metric(self, namespaces):
+        """
+        Gets statistics for an existing metric and charts it on a dashboard, so the
+        reader can see what the alarm is evaluating.
+
+        :param namespaces: The Counter of namespaces discovered in step 1.
+        """
+        print("6. Get statistics and chart the metric on a dashboard")
+        print(
+            "\nStatistics and dashboards are how you see what the alarm is evaluating.\n"
+        )
+
+        if not namespaces:
+            print("\tSkipping statistics and dashboard because no metrics exist yet.")
+            print(DASHES)
+            return
+
+        namespace = namespaces.most_common(1)[0][0]
+        metric = next(
+            (
+                candidate
+                for candidate in self.cloudwatch_wrapper.list_all_metrics()
+                if candidate.namespace == namespace
+            ),
+            None,
+        )
+
+        if metric is None:
+            print(f"\tNo metrics found in namespace {namespace}, skipping.")
+            print(DASHES)
+            return
+
+        try:
+            stats = self.cloudwatch_wrapper.get_metric_statistics(
+                metric.namespace,
+                metric.name,
+                datetime.now(timezone.utc) - timedelta(days=1),
+                datetime.now(timezone.utc),
+                3600,
+                ["Average", "Maximum"],
+            )
+            datapoints = stats["Datapoints"]
+            print(
+                f"\tStatistics for {metric.namespace} {metric.name} over the last day:"
+            )
+            print(f"\t  Datapoints: {len(datapoints)}")
+            for datapoint in datapoints[:3]:
+                print(
+                    f"\t  {datapoint['Timestamp']} average {datapoint.get('Average')}, "
+                    f"maximum {datapoint.get('Maximum')}"
+                )
+        except ClientError as error:
+            print(f"\tCould not get statistics: {error}")
+
+        try:
+            region = self.otel_wrapper.cloudwatch_client.meta.region_name
+            body = self.build_dashboard_body(metric, region)
+            messages = self.cloudwatch_wrapper.put_dashboard(self.dashboard_name, body)
+            self.dashboard_created = True
+            for message in messages:
+                print(f"\tDashboard validation message: {message.get('Message')}")
+            print(f"\tCreated dashboard {self.dashboard_name}.")
+
+            stored = self.cloudwatch_wrapper.get_dashboard(self.dashboard_name)
+            print(
+                f"\tRead the dashboard back, {len(stored)} characters of widget JSON."
+            )
+        except ClientError as error:
+            print(f"\tCould not create the dashboard: {error}")
+
+        print(DASHES)
+
+    @staticmethod
+    def build_dashboard_body(metric, region):
+        """
+        Builds a single-widget dashboard body that charts the given metric.
+
+        :param metric: A Boto3 CloudWatch Metric resource.
+        :param region: The region the metric is in. A metric widget must name its
+                       region, because a dashboard can chart metrics from several.
+        :return: The dashboard body, as a JSON string.
+        """
+        metric_spec = [metric.namespace, metric.name]
+        for dimension in metric.dimensions or []:
+            metric_spec.extend([dimension["Name"], dimension["Value"]])
+
+        return json.dumps(
+            {
+                "widgets": [
+                    {
+                        "type": "text",
+                        "x": 0,
+                        "y": 0,
+                        "width": 24,
+                        "height": 2,
+                        "properties": {
+                            "markdown": "This dashboard was created programmatically "
+                            "by an AWS SDK code example."
+                        },
+                    },
+                    {
+                        "type": "metric",
+                        "x": 0,
+                        "y": 2,
+                        "width": 12,
+                        "height": 6,
+                        "properties": {
+                            "metrics": [metric_spec],
+                            "view": "timeSeries",
+                            "stat": "Average",
+                            "period": 300,
+                            "region": region,
+                            "title": metric.name,
+                        },
+                    },
+                ]
+            }
+        )
+
+    def mute_alarm_for_maintenance(self):
+        """
+        Creates a mute rule so the alarm's actions are suppressed during a maintenance
+        window, then reads it back and finds it in the account's rules.
+        """
+        print("7. Mute the alarm for a maintenance window")
+        print(
+            "\nWhile a mute rule is active the targeted alarms keep evaluating and keep\n"
+            "changing state, but their actions do not fire. This is the supported way to\n"
+            "suppress notifications during planned maintenance, instead of disabling alarm\n"
+            "actions and hoping someone remembers to turn them back on.\n"
+        )
+
+        # The expression is a five-field cron expression,
+        # cron(Minutes Hours Day-of-month Month Day-of-week). Note that this is five
+        # fields, not the six that Amazon EventBridge uses. For a one-time window, use
+        # at(yyyy-MM-ddThh:mm), with no seconds. The duration is an ISO 8601 duration
+        # from PT1M to P15D, so PT2H rather than 2h.
+        expression = "cron(0 2 * * SUN)"
+        duration = "PT2H"
+        tz = "America/Los_Angeles"
+
+        self.otel_wrapper.put_alarm_mute_rule(
+            self.mute_rule_name,
+            expression,
+            duration,
+            alarm_names=[self.alarm_name],
+            timezone=tz,
+            description="A mute rule created by the Boto3 Basics scenario.",
+        )
+
+        print(f"\tCreated mute rule {self.mute_rule_name}:")
+        print(f"\t  schedule: {expression} for {duration}")
+        print(f"\t  timezone: {tz}")
+        print(f"\t  targets:  {self.alarm_name}")
+        print(
+            "\n\tNote the two formats here. The expression is a five-field cron expression,\n"
+            "\tfive rather than the six Amazon EventBridge uses. The duration is an ISO 8601\n"
+            "\tduration, so 'PT2H' and not '2h'.\n"
+            "\n\tAlso note that MuteTargets is set explicitly. If you leave it out, the rule\n"
+            "\tapplies to every alarm in the account."
+        )
+
+        mute_rule = self.otel_wrapper.get_alarm_mute_rule(self.mute_rule_name)
+        print(
+            f"\tRead the rule back: status {mute_rule.get('Status')}, "
+            f"mute type {mute_rule.get('MuteType')}."
+        )
+
+        summaries = self.otel_wrapper.list_alarm_mute_rules(alarm_name=self.alarm_name)
+        print(f"\tFound {len(summaries)} mute rules targeting this alarm.")
+        # Mute rule summaries carry no name field, only an ARN, so match on the ARN
+        # suffix.
+        for summary in summaries:
+            arn = summary.get("AlarmMuteRuleArn", "")
+            if arn.endswith(f"/{self.mute_rule_name}") or arn.endswith(
+                f":{self.mute_rule_name}"
+            ):
+                print(f"\t  matched by ARN: {arn} ({summary.get('Status')})")
+                break
+
+        print(DASHES)
+
+    def clean_up(self):
+        """
+        Deletes the resources the scenario created. Each deletion is attempted
+        independently so that one failure does not leave the remaining resources behind.
+        """
+        print("8. Clean up")
+        answer = input("Delete the resources this scenario created? (y/n) ")
+        if answer.strip().lower() != "y":
+            print(
+                "\tSkipping cleanup. Note that the alarm, dashboard, and mute rule are\n"
+                "\tstill in your account, and enrichment may still be running."
+            )
+            print(DASHES)
+            return
+
+        try:
+            self.otel_wrapper.delete_alarm_mute_rule(self.mute_rule_name)
+            print(f"\tDeleted mute rule {self.mute_rule_name}.")
+        except ClientError as error:
+            print(f"\tCould not delete the mute rule: {error}")
+
+        try:
+            self.otel_wrapper.delete_alarms([self.alarm_name])
+            print(f"\tDeleted alarm {self.alarm_name}.")
+        except ClientError as error:
+            print(f"\tCould not delete the alarm: {error}")
+
+        if self.dashboard_created:
+            try:
+                self.cloudwatch_wrapper.delete_dashboards([self.dashboard_name])
+                print(f"\tDeleted dashboard {self.dashboard_name}.")
+            except ClientError as error:
+                print(f"\tCould not delete the dashboard: {error}")
+
+        if self.started_enrichment:
+            try:
+                self.otel_wrapper.stop_otel_enrichment()
+                print("\tStopped OTel enrichment, because this run started it.")
+            except ClientError as error:
+                print(f"\tCould not stop OTel enrichment: {error}")
+        else:
+            print(
+                "\tLeft OTel enrichment running, because it was already on before this run."
+            )
+
+        print(DASHES)
+
+def main():
+    logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
+
+    scenario = CloudWatchScenario(
+        CloudWatchWrapper(boto3.resource("cloudwatch")),
+        CloudWatchOTelWrapper(boto3.client("cloudwatch")),
+    )
+    try:
+        scenario.run_scenario()
+    except Exception:  # pylint: disable=broad-except
+        logging.exception("Something went wrong with the scenario.")
+    finally:
+        scenario.clean_up()
+
+    print("This concludes the Amazon CloudWatch Basics scenario.")
+
+if __name__ == "__main__":
+    sys.exit(main())
+```
+The class that wraps the CloudWatch OpenTelemetry operations the scenario calls.
+
+```
+import logging
+import time
+
+import boto3
+from botocore.exceptions import ClientError
+
+logger = logging.getLogger(__name__)
+
+class CloudWatchOTelWrapper:
+    """Encapsulates the OpenTelemetry-oriented Amazon CloudWatch operations."""
+
+    def __init__(self, cloudwatch_client):
+        """
+        :param cloudwatch_client: A Boto3 CloudWatch client. The OpenTelemetry
+                                  operations are only available on the client
+                                  interface, not on the higher-level
+                                  ``boto3.resource("cloudwatch")`` interface.
+        """
+        self.cloudwatch_client = cloudwatch_client
+
+    @classmethod
+    def from_client(cls):
+        """
+        Creates a wrapper backed by a default CloudWatch client.
+
+        :return: A CloudWatchOTelWrapper.
+        """
+        return cls(boto3.client("cloudwatch"))
+
+    def get_otel_enrichment_status(self):
+        """
+        Gets the current OTel enrichment status for the account.
+
+        :return: The status, either 'Running' or 'Stopped'.
+        """
+        try:
+            response = self.cloudwatch_client.get_o_tel_enrichment()
+        except ClientError:
+            logger.exception("Couldn't get the OTel enrichment status.")
+            raise
+        else:
+            status = response["Status"]
+            logger.info("OTel enrichment status is %s.", status)
+            return status
+
+    def start_otel_enrichment(self):
+        """
+        Turns on OTel enrichment for the account. Once enrichment is running,
+        CloudWatch vended metrics that carry a resource identifier dimension, such as
+        the EC2 CPUUtilization metric with its InstanceId dimension, are decorated with
+        resource ARN and resource tag labels and become queryable with PromQL.
+
+        Resource tags on telemetry must already be enabled for the account before you
+        call this operation.
+        """
+        try:
+            # Boto3 splits the OTel prefix when it converts the StartOTelEnrichment
+            # operation name to snake case, so the method is start_o_tel_enrichment.
+            self.cloudwatch_client.start_o_tel_enrichment()
+            logger.info("Started OTel enrichment for this account.")
+        except ClientError:
+            logger.exception("Couldn't start OTel enrichment.")
+            raise
+
+    def create_promql_alarm(
+        self,
+        alarm_name,
+        query,
+        evaluation_interval,
+        pending_period=300,
+        recovery_period=120,
+        description=None,
+        alarm_actions=None,
+    ):
+        """
+        Creates an alarm that evaluates a PromQL query.
+
+        A PromQL alarm differs from a classic metric alarm in a few ways. The query can
+        match many series at once, and each matching series is tracked separately as a
+        *contributor*. Instead of counting breaching periods, you specify durations: a
+        contributor moves to ALARM after it breaches continuously for the pending
+        period, and back to OK after it stops breaching for the recovery period. A
+        PromQL alarm starts in the OK state rather than INSUFFICIENT_DATA.
+
+        The PromQL evaluation parameters live in the EvaluationCriteria union, which is
+        mutually exclusive with the classic MetricName and Metrics parameters. When you
+        use EvaluationCriteria you must also set EvaluationInterval, and you must not
+        set Period, Statistic, Threshold, ComparisonOperator, EvaluationPeriods,
+        DatapointsToAlarm, or TreatMissingData.
+
+        :param alarm_name: The name of the alarm. Must be unique within the Region.
+        :param query: The PromQL query to evaluate, such as
+                      'avg(cpu_utilization_percent) > 80'. The comparison belongs in
+                      the query itself; there is no separate threshold parameter.
+        :param evaluation_interval: How often, in seconds, to run the query. Valid
+                                    values are 10, 20, 30, and any multiple of 60, up
+                                    to 3600.
+        :param pending_period: How long, in seconds, a contributor must breach
+                               continuously before it moves to ALARM.
+        :param recovery_period: How long, in seconds, a contributor must stop breaching
+                                before it moves back to OK.
+        :param description: The description of the alarm.
+        :param alarm_actions: A list of ARNs to notify when the alarm fires, such as an
+                              Amazon SNS topic.
+        """
+        promql_criteria = {
+            "Query": query,
+            "PendingPeriod": pending_period,
+            "RecoveryPeriod": recovery_period,
+        }
+        kwargs = {
+            "AlarmName": alarm_name,
+            "EvaluationCriteria": {"PromQLCriteria": promql_criteria},
+            "EvaluationInterval": evaluation_interval,
+        }
+        if description is not None:
+            kwargs["AlarmDescription"] = description
+        if alarm_actions is not None:
+            kwargs["AlarmActions"] = alarm_actions
+
+        try:
+            self.cloudwatch_client.put_metric_alarm(**kwargs)
+            logger.info("Created PromQL alarm %s for query %s.", alarm_name, query)
+        except ClientError:
+            logger.exception("Couldn't create PromQL alarm %s.", alarm_name)
+            raise
+
+    def describe_alarm_contributors(self, alarm_name):
+        """
+        Gets the contributors for a PromQL alarm. Each contributor is one series that
+        the alarm's query matched, identified by its label set. This is how you find out
+        *which* hosts, services, or pods are breaching, rather than only that something
+        is.
+
+        :param alarm_name: The name of the PromQL alarm.
+        :return: The list of contributors. Each contributor has a ContributorId, a
+                 ContributorAttributes map of the labels that identify the series, a
+                 StateReason, and the time it last changed state.
+        """
+        contributors = []
+        try:
+            next_token = None
+            while True:
+                kwargs = {"AlarmName": alarm_name}
+                if next_token is not None:
+                    kwargs["NextToken"] = next_token
+                response = self.cloudwatch_client.describe_alarm_contributors(**kwargs)
+                contributors.extend(response["AlarmContributors"])
+                next_token = response.get("NextToken")
+                if not next_token:
+                    break
+        except ClientError:
+            logger.exception("Couldn't get contributors for alarm %s.", alarm_name)
+            raise
+        else:
+            logger.info(
+                "Got %s contributors for alarm %s.", len(contributors), alarm_name
+            )
+            return contributors
+
+    def put_alarm_mute_rule(
+        self,
+        name,
+        expression,
+        duration,
+        alarm_names=None,
+        timezone=None,
+        description=None,
+    ):
+        """
+        Creates or updates an alarm mute rule. While a mute rule is active the targeted
+        alarms keep evaluating and keep transitioning between states, but their
+        configured actions do not fire. This is the supported way to suppress
+        notifications during a known maintenance window instead of disabling alarm
+        actions and hoping someone remembers to turn them back on.
+
+        :param name: The name of the mute rule.
+        :param expression: When the rule activates. For a recurring window, use a
+                           five-field cron expression,
+                           'cron(Minutes Hours Day-of-month Month Day-of-week)', such as
+                           'cron(0 2 * * SUN)' for every Sunday at 2:00 AM. Note that
+                           this is five fields, not the six that Amazon EventBridge
+                           uses. For a one-time window, use 'at(yyyy-MM-ddThh:mm)',
+                           such as 'at(2026-09-05T02:00)'.
+        :param duration: How long the mute window lasts once it activates, in ISO 8601
+                         duration format, from 'PT1M' (one minute) to 'P15D' (15 days).
+                         For example, 'PT2H' is two hours and 'P2DT12H' is two days and
+                         12 hours.
+        :param alarm_names: The names of up to 100 alarms to mute. If omitted, the rule
+                            applies to all alarms in the account.
+        :param timezone: The time zone the expression is evaluated in, such as
+                         'America/Los_Angeles'.
+        :param description: The description of the mute rule.
+        """
+        schedule = {"Expression": expression, "Duration": duration}
+        if timezone is not None:
+            schedule["Timezone"] = timezone
+
+        kwargs = {"Name": name, "Rule": {"Schedule": schedule}}
+        if alarm_names is not None:
+            kwargs["MuteTargets"] = {"AlarmNames": alarm_names}
+        if description is not None:
+            kwargs["Description"] = description
+
+        try:
+            self.cloudwatch_client.put_alarm_mute_rule(**kwargs)
+            logger.info("Put alarm mute rule %s.", name)
+        except ClientError:
+            logger.exception("Couldn't put alarm mute rule %s.", name)
+            raise
+
+    def get_alarm_mute_rule(self, name):
+        """
+        Gets the full configuration of an alarm mute rule, including its schedule, the
+        alarms it targets, and whether it is currently SCHEDULED, ACTIVE, or EXPIRED.
+
+        :param name: The name of the mute rule.
+        :return: The mute rule.
+        """
+        try:
+            response = self.cloudwatch_client.get_alarm_mute_rule(
+                AlarmMuteRuleName=name
+            )
+        except ClientError:
+            logger.exception("Couldn't get alarm mute rule %s.", name)
+            raise
+        else:
+            logger.info("Got alarm mute rule %s.", name)
+            return response
+
+    def list_alarm_mute_rules(self, alarm_name=None, statuses=None):
+        """
+        Lists alarm mute rules in the account.
+
+        :param alarm_name: When specified, only rules that target this alarm are
+                           returned.
+        :param statuses: When specified, only rules in these statuses are returned.
+                         Valid values are 'SCHEDULED', 'ACTIVE', and 'EXPIRED'.
+        :return: The list of mute rule summaries.
+        """
+        summaries = []
+        try:
+            next_token = None
+            while True:
+                kwargs = {}
+                if alarm_name is not None:
+                    kwargs["AlarmName"] = alarm_name
+                if statuses is not None:
+                    kwargs["Statuses"] = statuses
+                if next_token is not None:
+                    kwargs["NextToken"] = next_token
+                response = self.cloudwatch_client.list_alarm_mute_rules(**kwargs)
+                summaries.extend(response.get("AlarmMuteRuleSummaries", []))
+                next_token = response.get("NextToken")
+                if not next_token:
+                    break
+        except ClientError:
+            logger.exception("Couldn't list alarm mute rules.")
+            raise
+        else:
+            logger.info("Got %s alarm mute rules.", len(summaries))
+            return summaries
+
+    def delete_alarm_mute_rule(self, name):
+        """
+        Deletes an alarm mute rule.
+
+        :param name: The name of the mute rule.
+        """
+        try:
+            self.cloudwatch_client.delete_alarm_mute_rule(AlarmMuteRuleName=name)
+            logger.info("Deleted alarm mute rule %s.", name)
+        except ClientError:
+            logger.exception("Couldn't delete alarm mute rule %s.", name)
+            raise
+
+    def stop_otel_enrichment(self):
+        """
+        Turns off OTel enrichment for the account. Existing PromQL alarms are not
+        deleted, but vended metrics stop being enriched with resource ARN and tag
+        labels, so queries that select on those labels stop matching.
+        """
+        try:
+            self.cloudwatch_client.stop_o_tel_enrichment()
+            logger.info("Stopped OTel enrichment for this account.")
+        except ClientError:
+            logger.exception("Couldn't stop OTel enrichment.")
+            raise
+```
+The metric, statistic, and dashboard operations the scenario calls.
+
+```
+    def list_all_metrics(self):
+        """
+        Gets every metric in the account, without filtering by namespace or name. Use
+        this to discover what CloudWatch is already collecting before you configure
+        anything.
+
+        :return: An iterator that yields the retrieved metrics.
+        """
+        try:
+            metric_iter = self.cloudwatch_resource.metrics.all()
+            logger.info("Got all metrics for the account.")
+        except ClientError:
+            logger.exception("Couldn't get metrics for the account.")
+            raise
+        else:
+            return metric_iter
+
+    def get_metric_statistics(self, namespace, name, start, end, period, stat_types):
+        """
+        Gets statistics for a metric within a specified time span. Metrics are grouped
+        into the specified period.
+
+        :param namespace: The namespace of the metric.
+        :param name: The name of the metric.
+        :param start: The UTC start time of the time span to retrieve.
+        :param end: The UTC end time of the time span to retrieve.
+        :param period: The period, in seconds, in which to group metrics. The period
+                       must match the granularity of the metric, which depends on
+                       the metric's age. For example, metrics that are older than
+                       three hours have a one-minute granularity, so the period must
+                       be at least 60 and must be a multiple of 60.
+        :param stat_types: The type of statistics to retrieve, such as average value
+                           or maximum value.
+        :return: The retrieved statistics for the metric.
+        """
+        try:
+            metric = self.cloudwatch_resource.Metric(namespace, name)
+            stats = metric.get_statistics(
+                StartTime=start, EndTime=end, Period=period, Statistics=stat_types
+            )
+            logger.info(
+                "Got %s statistics for %s.", len(stats["Datapoints"]), stats["Label"]
+            )
+        except ClientError:
+            logger.exception("Couldn't get statistics for %s.%s.", namespace, name)
+            raise
+        else:
+            return stats
+
+    def put_dashboard(self, name, body):
+        """
+        Creates or replaces a dashboard. The body is a JSON document describing the
+        dashboard's widgets.
+
+        :param name: The name of the dashboard.
+        :param body: The dashboard body, as a JSON string.
+        :return: Any validation messages the service returned. An empty list means the
+                 dashboard body was accepted as written.
+        """
+        try:
+            response = self.cloudwatch_resource.meta.client.put_dashboard(
+                DashboardName=name, DashboardBody=body
+            )
+            logger.info("Put dashboard %s.", name)
+        except ClientError:
+            logger.exception("Couldn't put dashboard %s.", name)
+            raise
+        else:
+            return response.get("DashboardValidationMessages", [])
+
+    def get_dashboard(self, name):
+        """
+        Gets a dashboard's body, so you can confirm what the service actually stored.
+
+        :param name: The name of the dashboard.
+        :return: The dashboard body, as a JSON string.
+        """
+        try:
+            response = self.cloudwatch_resource.meta.client.get_dashboard(
+                DashboardName=name
+            )
+            logger.info("Got dashboard %s.", name)
+        except ClientError:
+            logger.exception("Couldn't get dashboard %s.", name)
+            raise
+        else:
+            return response["DashboardBody"]
+
+    def delete_dashboards(self, names):
+        """
+        Deletes the specified dashboards.
+
+        :param names: The names of the dashboards to delete.
+        """
+        try:
+            self.cloudwatch_resource.meta.client.delete_dashboards(DashboardNames=names)
+            logger.info("Deleted dashboards %s.", ", ".join(names))
+        except ClientError:
+            logger.exception("Couldn't delete dashboards %s.", ", ".join(names))
+            raise
+```
++ For API details, see the following topics in *AWS SDK for Python (Boto3) API Reference*.
+  + [DeleteAlarmMuteRule](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/DeleteAlarmMuteRule)
+  + [DeleteAlarms](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/DeleteAlarms)
+  + [DeleteDashboards](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/DeleteDashboards)
+  + [DescribeAlarmContributors](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/DescribeAlarmContributors)
+  + [GetAlarmMuteRule](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/GetAlarmMuteRule)
+  + [GetDashboard](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/GetDashboard)
+  + [GetMetricStatistics](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/GetMetricStatistics)
+  + [GetOTelEnrichment](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/GetOTelEnrichment)
+  + [ListAlarmMuteRules](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/ListAlarmMuteRules)
+  + [ListDashboards](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/ListDashboards)
+  + [ListMetrics](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/ListMetrics)
+  + [PutAlarmMuteRule](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/PutAlarmMuteRule)
+  + [PutDashboard](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/PutDashboard)
+  + [PutMetricAlarm](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/PutMetricAlarm)
+  + [StartOTelEnrichment](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/StartOTelEnrichment)
+  + [StopOTelEnrichment](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/StopOTelEnrichment)
 
 ## Actions
 <a name="actions"></a>

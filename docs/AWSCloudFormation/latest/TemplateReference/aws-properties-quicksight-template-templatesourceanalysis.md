@@ -20,7 +20,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[Arn](#cfn-quicksight-template-templatesourceanalysis-arn)" : {{String}},
-  "[DataSetReferences](#cfn-quicksight-template-templatesourceanalysis-datasetreferences)" : {{[ DataSetReference, ... ]}}
+  "[DataSetReferences](#cfn-quicksight-template-templatesourceanalysis-datasetreferences)" : {{[ DataSetReference, ... ]}},
+  "[TopicReferences](#cfn-quicksight-template-templatesourceanalysis-topicreferences)" : {{[ TopicReference, ... ]}}
 }
 ```
 
@@ -31,6 +32,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   [Arn](#cfn-quicksight-template-templatesourceanalysis-arn): {{String}}
   [DataSetReferences](#cfn-quicksight-template-templatesourceanalysis-datasetreferences): {{
     - DataSetReference}}
+  [TopicReferences](#cfn-quicksight-template-templatesourceanalysis-topicreferences): {{
+    - TopicReference}}
 ```
 
 ## Properties
@@ -46,5 +49,12 @@ The Amazon Resource Name (ARN) of the resource.
 A structure containing information about the dataset references used as placeholders in the template.
 *Required*: Yes
 *Type*: Array of [DataSetReference](aws-properties-quicksight-template-datasetreference.md)
+*Minimum*: `0`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`TopicReferences`  <a name="cfn-quicksight-template-templatesourceanalysis-topicreferences"></a>
+A structure containing information about the topic references used as placeholders in the template.
+*Required*: No
+*Type*: Array of [TopicReference](aws-properties-quicksight-template-topicreference.md)
 *Minimum*: `1`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

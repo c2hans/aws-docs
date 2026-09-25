@@ -23,6 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[DataSetIdentifier](#cfn-quicksight-analysis-layermapvisual-datasetidentifier)" : {{String}},
   "[Subtitle](#cfn-quicksight-analysis-layermapvisual-subtitle)" : {{VisualSubtitleLabelOptions}},
   "[Title](#cfn-quicksight-analysis-layermapvisual-title)" : {{VisualTitleLabelOptions}},
+  "[TopicIdentifier](#cfn-quicksight-analysis-layermapvisual-topicidentifier)" : {{String}},
   "[VisualContentAltText](#cfn-quicksight-analysis-layermapvisual-visualcontentalttext)" : {{String}},
   "[VisualId](#cfn-quicksight-analysis-layermapvisual-visualid)" : {{String}}
 }
@@ -39,6 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
     VisualSubtitleLabelOptions}}
   [Title](#cfn-quicksight-analysis-layermapvisual-title): {{
     VisualTitleLabelOptions}}
+  [TopicIdentifier](#cfn-quicksight-analysis-layermapvisual-topicidentifier): {{String}}
   [VisualContentAltText](#cfn-quicksight-analysis-layermapvisual-visualcontentalttext): {{String}}
   [VisualId](#cfn-quicksight-analysis-layermapvisual-visualid): {{String}}
 ```
@@ -54,9 +56,9 @@ The configuration settings of the visual.
 
 `DataSetIdentifier`  <a name="cfn-quicksight-analysis-layermapvisual-datasetidentifier"></a>
 The dataset that is used to create the layer map visual. You can't create a visual without a dataset or a topic.
-*Required*: Yes
+*Required*: No
 *Type*: String
-*Minimum*: `1`
+*Minimum*: `0`
 *Maximum*: `2048`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
@@ -70,6 +72,14 @@ Property description not available.
 Property description not available.
 *Required*: No
 *Type*: [VisualTitleLabelOptions](aws-properties-quicksight-analysis-visualtitlelabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`TopicIdentifier`  <a name="cfn-quicksight-analysis-layermapvisual-topicidentifier"></a>
+The topic that is used in the layer map visual. You can't create a visual without a dataset or a topic.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `VisualContentAltText`  <a name="cfn-quicksight-analysis-layermapvisual-visualcontentalttext"></a>

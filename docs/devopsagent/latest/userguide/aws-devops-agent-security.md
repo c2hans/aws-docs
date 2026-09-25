@@ -35,7 +35,7 @@ AWS DevOps Agent operates globally with regional processing capabilities. The ag
 AWS DevOps Agent will automatically select the optimal region within your geography to process your inference requests. This maximizes available compute resources, model availability, and delivers the best customer experience. Your data will remain stored only in the region where your Agent Space is created, however, input prompts and output results may be processed outside that region as described in the following list. All data will be transmitted encrypted across Amazon's secure network.
 
 AWS DevOps Agent will securely route your inference requests to available compute resources within the geographic area where the request originated, as follows:
-+ Inference requests originating in the European Union will be processed within the European Union.
++ Inference requests originating in Europe will be processed within Europe.
 + Inference requests originating in the United States will be processed within the United States.
 + Inference requests originating in Australia will be processed within Australia.
 + Inference requests originating within Japan will be processed within Japan.

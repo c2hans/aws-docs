@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/building-agentic-ai-powered-en
 title: 'Guidance for Building Agentic AI powered Engineering Knowledge Assistants on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/building-agentic-ai-powered-engineering-knowledge-assistants-on-aws/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # Guidance for Building Agentic AI powered Engineering Knowledge Assistants on AWS

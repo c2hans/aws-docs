@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/connected-airports-using-inter
 title: 'Guidance for Connected Airports Using Internet of Things on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/connected-airports-using-internet-of-things-on-aws/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # Guidance for Connected Airports Using Internet of Things on AWS

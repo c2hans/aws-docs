@@ -45,6 +45,6 @@ The Amazon Resource Name (ARN) of the data set.
 The identifier of the data set, typically the data set's name.
 *Required*: Yes
 *Type*: String
-*Minimum*: `1`
+*Minimum*: `0`
 *Maximum*: `2048`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

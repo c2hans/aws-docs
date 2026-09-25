@@ -29,6 +29,7 @@ There is no separate harness charge. You pay only for the underlying AgentCore c
 + [Skills](harness-skills.md)
 + [Memory](harness-memory.md)
 + [Environment and filesystem](harness-environment.md)
++ [Interactive shells (terminals)](harness-command-shell.md)
 + [Observability and cost controls](harness-operations.md)
 + [AgentCore harness versioning and endpoints](harness-versioning.md)
 + [Export harness to code](harness-export.md)

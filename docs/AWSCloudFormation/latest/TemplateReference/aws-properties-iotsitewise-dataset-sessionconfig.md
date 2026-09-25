@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::IoTSiteWise::Dataset SessionConfig
 <a name="aws-properties-iotsitewise-dataset-sessionconfig"></a>
 
-<a name="aws-properties-iotsitewise-dataset-sessionconfig-description"></a>The `SessionConfig` property type specifies Property description not available. for an [AWS::IoTSiteWise::Dataset](aws-resource-iotsitewise-dataset.md).
+Contains the session configuration for a `SESSION` dataset, which defines the time range of time-series data the session covers.
 
 ## Syntax
 <a name="aws-properties-iotsitewise-dataset-sessionconfig-syntax"></a>
@@ -36,13 +36,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-iotsitewise-dataset-sessionconfig-properties"></a>
 
 `SessionEndTime`  <a name="cfn-iotsitewise-dataset-sessionconfig-sessionendtime"></a>
-Property description not available.
+The end time of the session as an ISO 8601 UTC instant, for example `2024-12-31T23:59:59Z`.
 *Required*: Yes
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SessionStartTime`  <a name="cfn-iotsitewise-dataset-sessionconfig-sessionstarttime"></a>
-Property description not available.
+The start time of the session as an ISO 8601 UTC instant, for example `2024-01-01T00:00:00Z`.
 *Required*: Yes
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

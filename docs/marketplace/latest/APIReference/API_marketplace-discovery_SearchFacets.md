@@ -22,6 +22,7 @@ Content-type: application/json
          "filterValues": [ "{{string}}" ]
       }
    ],
+   "locale": "{{string}}",
    "nextToken": "{{string}}",
    "searchText": "{{string}}"
 }
@@ -48,6 +49,13 @@ Required: No
 Filters to apply before retrieving facets. Multiple filters are combined with AND logic. Multiple values within the same filter are combined with OR logic.
 Type: Array of [SearchFilter](API_marketplace-discovery_SearchFilter.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 30 items.
+Required: No
+
+ ** [locale](#API_marketplace-discovery_SearchFacets_RequestSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_SearchFacets-request-locale"></a>
+A BCP 47 language tag or comma-separated priority list specifying the preferred locale for response content. See `Locale` for supported values, constraints, fallback behavior, and the default locale. If omitted, the service returns content in the default locale.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Pattern: `[^;,]+(\s*,\s*[^;,]+){0,1}`
 Required: No
 
  ** [nextToken](#API_marketplace-discovery_SearchFacets_RequestSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_SearchFacets-request-nextToken"></a>

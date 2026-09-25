@@ -7,6 +7,9 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 
 You can use `UpdateOutpostResolver` to update the instance count, type, or name of a Resolver on an Outpost.
 
+**Note**
+This operation applies to first-generation AWS Outposts only. On second-generation AWS Outposts, Resolver is managed automatically by AWS and can't be updated directly.
+
 ## Request Syntax
 <a name="API_route53resolver_UpdateOutpostResolver_RequestSyntax"></a>
 

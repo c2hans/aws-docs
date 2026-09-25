@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/solutions/latest/network-orchestration-a
 # Architecture details
 <a name="architecture-details"></a>
 
-This section describes the components and AWS services that make up this solution and the architecture details on how these components work together.
+This section describes the components and AWS services that make up this Guidance and the architecture details on how these components work together.
 
-## AWS services in this solution
+## AWS services in this Guidance
 <a name="aws-services-in-this-solution"></a>
 
 | AWS service | Description |
@@ -16,7 +16,7 @@ This section describes the components and AWS services that make up this solutio
 |  [AWS Lambda](https://aws.amazon.com/lambda/)  |  **Core.** Deploys multiple Lambda functions to support core microservices and create transit gateway attachments. |
 |  [AWS Step Functions](https://aws.amazon.com/step-functions/)  |  **Core.** Deploys a state machine to orchestrate the subnet and VPC tagging events and create transit gateway attachments. |
 |  [Amazon DynamoDB](https://aws.amazon.com/dynamodb/)  |  **Core.** Deploys a DynamoDB table for VPC and transit gateway attachments, and for transit gateway peering attachments. |
-|  [Amazon EventBridge](https://aws.amazon.com/eventbridge/)  |  **Core.** Deploys an event bus and event rules to connect components of the solution. |
+|  [Amazon EventBridge](https://aws.amazon.com/eventbridge/)  |  **Core.** Deploys an event bus and event rules to connect the deployed components. |
 |  [AWS X-Ray](https://aws.amazon.com/xray/)  |  **Supporting.** Deploys traces for API Gateway and Step Functions, allowing you to investigate root causes of failures. |
 |  [Amazon SNS](https://aws.amazon.com/sns/)  |  **Optional.** Deploys a topic that sends an email notification with the optional web UI URL. |
 |  [Amazon Cognito](https://aws.amazon.com/cognito/)  |  **Optional.** Deploys a user pool that supports identity authentication for the optional web UI. |

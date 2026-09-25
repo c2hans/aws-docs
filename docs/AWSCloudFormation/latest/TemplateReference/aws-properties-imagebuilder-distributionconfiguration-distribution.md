@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::ImageBuilder::DistributionConfiguration Distribution
 <a name="aws-properties-imagebuilder-distributionconfiguration-distribution"></a>
 
-Defines the settings for a specific Region in the distribution configuration. You must specify whether the distribution is for an AMI or a container image. To do so, include exactly one of the following data types for your distribution:
+Defines the settings for a specific Region in the distribution configuration. Only the `Region` property is required. To configure the output image for that Region, include the data type that matches the type of image being distributed:
 +  `AmiDistributionConfiguration`
 +  `ContainerDistributionConfiguration`
 

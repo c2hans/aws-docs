@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com//solutions/drive-thru-voice-ai-using-ama
 title: 'Guidance for Drive Thru Voice AI using Amazon Bedrock'
 canonical_url: https://docs.aws.amazon.com/solutions/drive-thru-voice-ai-using-amazon-bedrock/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # Guidance for Drive Thru Voice AI using Amazon Bedrock

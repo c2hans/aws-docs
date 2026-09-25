@@ -21,7 +21,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "[ConnectorParameters](#cfn-bedrock-datasource-managedknowledgebaseconnectorconfiguration-connectorparameters)" : {{Json}},
   "[DeletionProtectionConfiguration](#cfn-bedrock-datasource-managedknowledgebaseconnectorconfiguration-deletionprotectionconfiguration)" : {{DeletionProtectionConfiguration}},
-  "[MediaExtractionConfiguration](#cfn-bedrock-datasource-managedknowledgebaseconnectorconfiguration-mediaextractionconfiguration)" : {{MediaExtractionConfiguration}}
+  "[MediaExtractionConfiguration](#cfn-bedrock-datasource-managedknowledgebaseconnectorconfiguration-mediaextractionconfiguration)" : {{MediaExtractionConfiguration}},
+  "[SyncSchedule](#cfn-bedrock-datasource-managedknowledgebaseconnectorconfiguration-syncschedule)" : {{SyncSchedule}}
 }
 ```
 
@@ -34,6 +35,8 @@ To declare this entity in your CloudFormation template, use the following syntax
     DeletionProtectionConfiguration}}
   [MediaExtractionConfiguration](#cfn-bedrock-datasource-managedknowledgebaseconnectorconfiguration-mediaextractionconfiguration): {{
     MediaExtractionConfiguration}}
+  [SyncSchedule](#cfn-bedrock-datasource-managedknowledgebaseconnectorconfiguration-syncschedule): {{
+    SyncSchedule}}
 ```
 
 ## Properties
@@ -55,4 +58,10 @@ A safeguard against accidental bulk deletion of indexed content.
 Configuration for extracting media (images, audio, video) from data source files.
 *Required*: No
 *Type*: [MediaExtractionConfiguration](aws-properties-bedrock-datasource-mediaextractionconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`SyncSchedule`  <a name="cfn-bedrock-datasource-managedknowledgebaseconnectorconfiguration-syncschedule"></a>
+The recurring schedule on which the connector automatically syncs this data source. If not specified, the data source is not synced automatically and you start each sync yourself. Not supported for the Custom connector.
+*Required*: No
+*Type*: [SyncSchedule](aws-properties-bedrock-datasource-syncschedule.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

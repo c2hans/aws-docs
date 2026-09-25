@@ -11,6 +11,7 @@ WorkSpaces Thin Client is an AWS End User Computing service that provides users 
 
 | Software set | Release date | Changes |
 | --- | --- | --- |
+| 2.20.4 | 09-21-2026 |  + Renewal of local device certificates and bug fixes.  |
 | 2.20.3 | 03-19-2026 |  + Fix for Chromium's CVE-2026-3909 and CVE-2026-3910 critical security issues.  |
 | 2.20.2 | 02-23-2026 |  + Fix for Chromium's CVE-2026-2441 critical security issue.  |
 | 2.20.1 | 11-18-2025 |  + Fix for Chromium's CVE-2025-13223 and CVE-2025-13224 critical security issues.  |

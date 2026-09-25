@@ -14,21 +14,21 @@ A single installment entry in the renewal payment schedule.
 In the following list, the required parameters are described first.
 
  ** chargeDateOffset **   <a name="AWSMarketplaceService-Type-marketplace-discovery_PaymentScheduleEntry-chargeDateOffset"></a>
-The relative offset from the renewal agreement start date when this installment is due, in ISO 8601 duration format. The offset uses months only or days only (for example, P1M or P30D); mixed units are not supported, and every offset in a schedule uses the same unit.
+The relative offset from the renewal agreement start date when this installment is due, represented in ISO 8601 duration format (for example, P1M or P30D).
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 4096.
 Pattern: `(.)+`
 Required: Yes
 
  ** chargePercentage **   <a name="AWSMarketplaceService-Type-marketplace-discovery_PaymentScheduleEntry-chargePercentage"></a>
-The percentage of the increased TCV to charge in this installment. All entries in a schedule sum to 100.00.
+The percentage of the increased Total Contract Value (TCV) to charge in this installment. All entries in a schedule sum to 100.00.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 4096.
 Pattern: `(.)+`
 Required: Yes
 
  ** dayOfMonth **   <a name="AWSMarketplaceService-Type-marketplace-discovery_PaymentScheduleEntry-dayOfMonth"></a>
-The optional calendar day of month on which the charge occurs. When absent, the charge day is derived from `chargeDateOffset`, and this field does not apply when `chargeDateOffset` is expressed in days. For months with fewer days than the specified day, the charge occurs on the last day of the month. For example, if `dayOfMonth` is 31, the charge in April occurs on April 30.
+The optional calendar day of month on which the charge occurs. When absent, the charge day is derived from `chargeDateOffset`. For months with fewer days than the specified day, the charge occurs on the last day of the month. For example, if `dayOfMonth` is 31, the charge in April occurs on April 30.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 31.
 Required: No

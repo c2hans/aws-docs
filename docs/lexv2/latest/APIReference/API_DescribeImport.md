@@ -76,6 +76,9 @@ Content-type: application/json
          "botVersion": "string",
          "localeId": "string",
          "nluIntentConfidenceThreshold": number,
+         "speakerDiarizationSettings": {
+            "enabled": boolean
+         },
          "speechDetectionSensitivity": "string",
          "speechRecognitionSettings": {
             "speechModelConfig": {

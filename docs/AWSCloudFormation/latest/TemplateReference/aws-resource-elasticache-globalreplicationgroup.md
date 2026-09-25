@@ -31,7 +31,8 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[GlobalReplicationGroupDescription](#cfn-elasticache-globalreplicationgroup-globalreplicationgroupdescription)" : {{String}},
       "[GlobalReplicationGroupIdSuffix](#cfn-elasticache-globalreplicationgroup-globalreplicationgroupidsuffix)" : {{String}},
       "[Members](#cfn-elasticache-globalreplicationgroup-members)" : {{[ GlobalReplicationGroupMember, ... ]}},
-      "[RegionalConfigurations](#cfn-elasticache-globalreplicationgroup-regionalconfigurations)" : {{[ RegionalConfiguration, ... ]}}
+      "[RegionalConfigurations](#cfn-elasticache-globalreplicationgroup-regionalconfigurations)" : {{[ RegionalConfiguration, ... ]}},
+      "[Tags](#cfn-elasticache-globalreplicationgroup-tags)" : {{[ Tag, ... ]}}
     }
 }
 ```
@@ -54,6 +55,8 @@ Properties:
     - GlobalReplicationGroupMember}}
   [RegionalConfigurations](#cfn-elasticache-globalreplicationgroup-regionalconfigurations): {{
     - RegionalConfiguration}}
+  [Tags](#cfn-elasticache-globalreplicationgroup-tags): {{
+    - Tag}}
 ```
 
 ## Properties
@@ -121,6 +124,13 @@ The Regions that comprise the Global Datastore.
 *Type*: Array of [RegionalConfiguration](aws-properties-elasticache-globalreplicationgroup-regionalconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`Tags`  <a name="cfn-elasticache-globalreplicationgroup-tags"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-elasticache-globalreplicationgroup-tag.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 ## Return values
 <a name="aws-resource-elasticache-globalreplicationgroup-return-values"></a>
 
@@ -132,6 +142,9 @@ The Regions that comprise the Global Datastore.
 
 ####
 <a name="aws-resource-elasticache-globalreplicationgroup-return-values-fn--getatt-fn--getatt"></a>
+
+`Arn`  <a name="Arn-fn::getatt"></a>
+The ARN (Amazon Resource Name) of the global replication group.
 
 `GlobalReplicationGroupId`  <a name="GlobalReplicationGroupId-fn::getatt"></a>
 The ID used to associate a secondary cluster to the Global Replication Group.

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/medialive/index.html
 title: 'AWS Elemental MediaLive Documentation'
 canonical_url: https://docs.aws.amazon.com/medialive/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # AWS Elemental MediaLive Documentation

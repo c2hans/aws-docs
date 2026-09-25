@@ -18,7 +18,7 @@ Required: No
  ** speechModelPreference **   <a name="lexv2-Type-SpeechRecognitionSettings-speechModelPreference"></a>
 The speech-to-text model to use.
 Type: String
-Valid Values: `Standard | Neural | Deepgram`
+Valid Values: `Standard | Neural | Deepgram | Advanced`
 Required: No
 
 ## See Also

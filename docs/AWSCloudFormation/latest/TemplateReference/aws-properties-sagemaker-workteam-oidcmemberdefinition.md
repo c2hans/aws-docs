@@ -38,4 +38,6 @@ To declare this entity in your CloudFormation template, use the following syntax
 A list of OpenID Connect (OIDC) groups for the work team member definition.
 *Required*: Yes
 *Type*: Array of String
+*Minimum*: `1 | 1`
+*Maximum*: `63 | 10`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

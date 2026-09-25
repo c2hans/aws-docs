@@ -121,6 +121,7 @@ Content-type: application/json
          },
          "sourceNetworkID": "string",
          "sourceProperties": {
+            "architecture": "string",
             "cpus": [
                {
                   "cores": number,

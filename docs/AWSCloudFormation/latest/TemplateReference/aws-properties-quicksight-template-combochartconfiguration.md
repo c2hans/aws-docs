@@ -24,6 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[CategoryAxis](#cfn-quicksight-template-combochartconfiguration-categoryaxis)" : {{AxisDisplayOptions}},
   "[CategoryLabelOptions](#cfn-quicksight-template-combochartconfiguration-categorylabeloptions)" : {{ChartAxisLabelOptions}},
   "[ColorLabelOptions](#cfn-quicksight-template-combochartconfiguration-colorlabeloptions)" : {{ChartAxisLabelOptions}},
+  "[DefaultSeriesSettings](#cfn-quicksight-template-combochartconfiguration-defaultseriessettings)" : {{ComboChartDefaultSeriesSettings}},
   "[FieldWells](#cfn-quicksight-template-combochartconfiguration-fieldwells)" : {{ComboChartFieldWells}},
   "[Interactions](#cfn-quicksight-template-combochartconfiguration-interactions)" : {{VisualInteractionOptions}},
   "[Legend](#cfn-quicksight-template-combochartconfiguration-legend)" : {{LegendOptions}},
@@ -33,6 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[ReferenceLines](#cfn-quicksight-template-combochartconfiguration-referencelines)" : {{[ ReferenceLine, ... ]}},
   "[SecondaryYAxisDisplayOptions](#cfn-quicksight-template-combochartconfiguration-secondaryyaxisdisplayoptions)" : {{AxisDisplayOptions}},
   "[SecondaryYAxisLabelOptions](#cfn-quicksight-template-combochartconfiguration-secondaryyaxislabeloptions)" : {{ChartAxisLabelOptions}},
+  "[Series](#cfn-quicksight-template-combochartconfiguration-series)" : {{[ ComboSeriesItem, ... ]}},
   "[SingleAxisOptions](#cfn-quicksight-template-combochartconfiguration-singleaxisoptions)" : {{SingleAxisOptions}},
   "[SortConfiguration](#cfn-quicksight-template-combochartconfiguration-sortconfiguration)" : {{ComboChartSortConfiguration}},
   "[Tooltip](#cfn-quicksight-template-combochartconfiguration-tooltip)" : {{TooltipOptions}},
@@ -53,6 +55,8 @@ To declare this entity in your CloudFormation template, use the following syntax
     ChartAxisLabelOptions}}
   [ColorLabelOptions](#cfn-quicksight-template-combochartconfiguration-colorlabeloptions): {{
     ChartAxisLabelOptions}}
+  [DefaultSeriesSettings](#cfn-quicksight-template-combochartconfiguration-defaultseriessettings): {{
+    ComboChartDefaultSeriesSettings}}
   [FieldWells](#cfn-quicksight-template-combochartconfiguration-fieldwells): {{
     ComboChartFieldWells}}
   [Interactions](#cfn-quicksight-template-combochartconfiguration-interactions): {{
@@ -71,6 +75,8 @@ To declare this entity in your CloudFormation template, use the following syntax
     AxisDisplayOptions}}
   [SecondaryYAxisLabelOptions](#cfn-quicksight-template-combochartconfiguration-secondaryyaxislabeloptions): {{
     ChartAxisLabelOptions}}
+  [Series](#cfn-quicksight-template-combochartconfiguration-series): {{
+    - ComboSeriesItem}}
   [SingleAxisOptions](#cfn-quicksight-template-combochartconfiguration-singleaxisoptions): {{
     SingleAxisOptions}}
   [SortConfiguration](#cfn-quicksight-template-combochartconfiguration-sortconfiguration): {{
@@ -117,6 +123,12 @@ The label options (label text, label visibility, and sort icon visibility) of a 
 The label options (label text, label visibility, and sort icon visibility) of a combo chart's color field well.
 *Required*: No
 *Type*: [ChartAxisLabelOptions](aws-properties-quicksight-template-chartaxislabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`DefaultSeriesSettings`  <a name="cfn-quicksight-template-combochartconfiguration-defaultseriessettings"></a>
+The options that determine the default presentation of all series in `ComboChartVisual`.
+*Required*: No
+*Type*: [ComboChartDefaultSeriesSettings](aws-properties-quicksight-template-combochartdefaultseriessettings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `FieldWells`  <a name="cfn-quicksight-template-combochartconfiguration-fieldwells"></a>
@@ -174,6 +186,14 @@ The label display options (grid line, range, scale, axis step) of a combo chart'
 The label options (label text, label visibility, and sort icon visibility) of a combo chart's secondary y-axis(line) field well.
 *Required*: No
 *Type*: [ChartAxisLabelOptions](aws-properties-quicksight-template-chartaxislabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Series`  <a name="cfn-quicksight-template-combochartconfiguration-series"></a>
+The series item configuration of a `ComboChartVisual`.
+*Required*: No
+*Type*: Array of ComboSeriesItem
+*Minimum*: `0`
+*Maximum*: `2000`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SingleAxisOptions`  <a name="cfn-quicksight-template-combochartconfiguration-singleaxisoptions"></a>

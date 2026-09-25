@@ -94,6 +94,55 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/troubl
 
    The **Launch** button is disabled when: an evaluation is already in progress, the race has been completed (winner declared), or the current time is before the scheduled live event time. If the button is enabled but launching fails with an error, verify that the "Submissions Open" toggle is off and that there are pending items in the queue. If the race was not intentionally completed, contact your cloud admin to check the `/aws/lambda/DeepRacerLiveRacing` log group for unexpected state transitions.
 
+## Issues with physical racing events
+<a name="issues-with-physical-racing-events"></a>
+
+1.  *The **Timekeep** link on a track is unavailable and I cannot open the timekeeping page*
+
+   Timekeeping is only available while the event is **In progress**. Open the event and check its status. An admin advances the event by choosing **Publish event**, then **Start racing**. See [Event lifecycle](event-lifecycle.md).
+
+1.  *I cannot add a track to an event*
+
+   The **Add track** button is unavailable for any of three reasons: the event is no longer in **Draft** or **Open** status, the event already has the maximum of 10 tracks, or no **Track layout** has been chosen in the event’s race configuration. Only admins can add tracks.
+
+1.  *I cannot remove a track from an event*
+
+   Tracks can only be removed while the event is in **Draft** status, and an event must keep at least one track. If you need to change the tracks on an event that has already been published, and the event has not yet started, the alternative is to create a replacement event with the correct tracks.
+
+1.  *Creating a run for a racer is rejected*
+
+   The racer has used all of the runs allowed by the event’s **Maximum runs per racer** setting. Confirm the racer’s existing runs on the **Runs** tab of the event details page. An admin can raise the limit by editing the event, subject to what the event’s current status allows.
+
+1.  *Recording a lap fails, or a lap does not appear in the table*
+
+   Laps can only be recorded while the run is **In progress**. If the run is paused, choose **Resume** before recording.
+
+   If the request timed out, the timekeeping page marks the lap as pending and offers **Retry record lap**. Retrying is safe: the solution assigns lap numbers sequentially and rejects a duplicate, so a lap that was actually recorded the first time will not be recorded twice. Retry until the lap table matches what happened on track.
+
+1.  *The countdown and the current lap timer are blank after I reloaded the page*
+
+   Neither the countdown nor the lap stopwatch is saved, so they cannot be restored after a reload. This is expected. The run itself and every lap already recorded are unaffected. Use the run controls to end the run and then submit or discard it.
+
+1.  *I cannot submit a run*
+
+   A run cannot be submitted unless it has at least one valid lap, because there would be no time to score. Check the **Recorded laps** table for laps marked invalid. Either mark a lap valid, record a valid lap, or discard the run.
+
+1.  *The combined leaderboard is missing*
+
+   A combined leaderboard is created automatically once an event has two or more tracks, and the event must have a **Combined scoring strategy** set. An event with a single track has only that track’s leaderboard.
+
+1.  *The combined leaderboard does not match the individual track leaderboards*
+
+   The combined leaderboard is derived from the individual track results, so it updates a moment after them. If the difference persists, a recalculation has failed. A cloud admin can check the `CombinedLeaderboardRecomputeFailed` metric in the `DeepRacerIndy` namespace and examine the broadcast handler’s logs. See [Race management metrics](monitoring.md#race-management-metrics). Individual track leaderboards are unaffected and remain authoritative.
+
+1.  *I deleted an event but some of its data appears to remain*
+
+   Removing a deleted event’s records happens in the background, and for a large event it can take a short while. If records remain after that, the removal failed, and the `EventDeleteDLQAlarm` alarm is in the ALARM state. A cloud admin should examine the event deletion worker’s logs, then redrive the event deletion dead letter queue to retry. See [Alarms](monitoring.md#alarms).
+
+1.  *A racer says they cannot see an event’s tracks*
+
+   Racers can view events, runs, and recorded laps, but the track list is available only to admins and race facilitators. Racers see results through the event’s leaderboards. For the complete breakdown, see [Permissions matrix](types-of-users.md#permissions-matrix).
+
 ## Issues with importing or exporting a model
 <a name="issues-with-importing-or-exporting-a-model"></a>
 
@@ -115,6 +164,51 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/troubl
 1.  *My download requests are being rejected with a rate limit error*
 
    The admin model management endpoints are protected by a rate limit of 100 requests per 5 minutes per user. If you are downloading many models at once, wait a few minutes before retrying.
+
+## Issues with model optimization and car deployment
+<a name="issues-with-model-optimization-and-car-deployment"></a>
+
+1.  *I can’t push a model to a car, or the **Upload model to car** button is unavailable*
+
+   A model must be optimized before you can deploy it to a car. On the **Model Management** > **Models** page, select the model and choose **Optimize for car**. After its status shows optimized, select the model again and choose **Upload model to car** to push it. For more information, see [Model management](model-management.md).
+
+1.  *Pushing a model to a car fails because the car is offline or not manageable*
+
+   The car must be activated in Device Management and online before you can push a model to it. AWS Systems Manager (SSM) delivers the push, so the car must be powered on and connected. Power on the car, connect it, and confirm it shows as online. Then retry the push.
+
+   If the push still fails, check the deployment’s status on the **Upload Status** page, then review the relevant Amazon CloudWatch log group for details. The push-to-car workflow runs three AWS Lambda functions: `PushSendCommand`, `PushPollCommand`, and `PushUpdateStatus`. Their full names follow the deployment’s `DeepRacerIndy-Push*Fn` pattern, and their log group names are generated at deployment. To view a function’s logs, open the AWS Lambda console, select the relevant push function, then choose **Monitor** and **View CloudWatch logs**.
+
+1.  *I see "Failed to start upload for" or "Car models were cleared but all uploads failed"*
+
+   One or more models could not be dispatched to the car. The `DeployModel` API rejected the request before any transfer began. Common causes include the car going offline between selection and push, or the car type not being configured. Another cause is a deployment already in progress for the same model and car. If the car’s existing models were cleared before the push, the car currently has no models loaded. It will need new models pushed before it can race. Fix the underlying issue, then retry the push.
+
+   The `DeployModel` function’s full name follows the deployment’s `DeepRacerIndyApi-DeployModelFunction` pattern, and its log group name is generated at deployment. To view its logs, open the AWS Lambda console, select the deploy model function, then choose **Monitor** and **View CloudWatch logs**.
+
+1.  *A physical model import fails*
+
+   The cause depends on the message that is shown:
+   + A malware or scan message means the upload was rejected. These messages include *Malware detected in uploaded file*, *Model could not be scanned — re-upload a valid .tar.gz*, or a scan-timeout message. Re-upload a clean, valid `.tar.gz` file.
+   + A generic message that includes a Request ID means the archive could not be converted. This message is *Model conversion failed — the uploaded model format may be incompatible*. Verify that the file is a valid AWS DeepRacer physical model archive that contains `model.pb` and `model_metadata.json`. If the problem continues, contact AWS Support and quote the Request ID.
+
+1.  *Physical model imports fail because the malware scan service is unavailable*
+
+   First, confirm that the Amazon GuardDuty Malware Protection plan is deployed and that its IAM role is configured correctly. This addresses the *Scan service unavailable* error.
+
+   If the scan service is unavailable in your AWS Region, or is temporarily down, you can let imports proceed without a scan. Open the AWS Lambda console and select the model optimizer function. Its name is your deployment’s namespace followed by `-DeepRacerIndy-ModelOptimizerFn`, for example `default-DeepRacerIndy-ModelOptimizerFn`. Choose **Configuration**, then **Environment variables**, and set `ENABLE_GUARDDUTY_MALWARE_SCAN` to `false`. Imports then proceed without waiting for a malware scan.
+**Warning**
+Setting this variable to `false` bypasses malware scanning for imported physical models. Use it only as a temporary measure when the scan service is unavailable, and only if you trust the source of the models. Set it back to `true` when the scan service is restored. Updating the solution stack resets this variable to its deployed default.
+
+1.  *A model optimization shows a **Failed** status*
+
+   This is non-blocking. The model stays usable for virtual racing. To retry, select the model on the **Models** page and choose **Optimize for car** again.
+
+1.  *I get the message "A deployment is already in progress for this model and car"*
+
+   A push for the same model and car is already running. Wait for the current push to finish before you start another one for the same model and car.
+
+1.  *I can’t submit a physical model to a community race*
+
+   This is expected. Physical models are for car deployment only and cannot be entered into community races.
 
 ## Using CloudWatch Logs to diagnose issues
 <a name="using-cloudwatch-logs-to-diagnose-issues"></a>
@@ -156,6 +250,17 @@ This log group contains the log output from the functions that are responsible f
  **/aws/lambda/DeepRacerLiveRacing**
 
 This log group contains the log output from all functions that support live race orchestration, including queue management, autolaunch, stream handling, and event state transitions. It is the primary log group for diagnosing issues with live races.
+
+The functions that support physical racing events write to log groups whose names are generated when the solution is deployed, so they are not listed above. To reach them, open the **AWS Lambda** console and select the function you need, then choose **Monitor** → **View CloudWatch logs**. The function names are predictable:
++  `DeepRacerIndyApi-CreateLapFunction`, `DeepRacerIndyApi-UpdateLapFunction`, and `DeepRacerIndyApi-SetLapValidityFunction` handle lap recording, lap time corrections, and lap validity. `DeepRacerIndyApi-UpdateLapFunction` is where the `LAP_EDIT_AUDIT` entries are written.
++  `DeepRacerIndyApi-CreateRunFunction` and `DeepRacerIndyApi-TransitionRunStatusFunction` handle run creation and the run lifecycle, including scoring a submitted run.
++  `DeepRacerIndyApi-CreateEventFunction`, `DeepRacerIndyApi-EditEventFunction`, `DeepRacerIndyApi-TransitionEventStatusFunction`, `DeepRacerIndyApi-AddTrackToEventFunction`, and `DeepRacerIndyApi-RemoveTrackFromEventFunction` handle event and track configuration.
++  `DeepRacerEventManagement-DeleteWorkerFn` removes a deleted event’s records in the background. This is the log group to examine when `EventDeleteDLQAlarm` fires.
+
+Substitute the operation name for any other Race Management function, following the same `DeepRacerIndyApi-{Operation}Function` pattern.
+
+**Note**
+Log output from these functions is retained for 90 days, apart from the event deletion worker, whose output is retained for 10 years.
 
 ## Using CloudWatch Logs Insights queries to diagnose issues
 <a name="using-cloudwatch-logs-insights-queries-to-diagnose-issues"></a>

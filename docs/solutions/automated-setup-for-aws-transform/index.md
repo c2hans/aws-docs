@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/automated-setup-for-aws-transf
 title: 'Guidance for Automated Setup for AWS Transform'
 canonical_url: https://docs.aws.amazon.com/solutions/automated-setup-for-aws-transform/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # Guidance for Automated Setup for AWS Transform

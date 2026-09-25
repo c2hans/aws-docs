@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/infrastructure-composer/index.html
 title: 'AWS Infrastructure Composer Documentation'
 canonical_url: https://docs.aws.amazon.com/infrastructure-composer/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # AWS Infrastructure Composer Documentation

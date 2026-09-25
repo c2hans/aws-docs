@@ -212,6 +212,9 @@ Content-type: application/json
          "KeyRotationIntervalSeconds": number,
          "SpekeKeyProvider": {
             "CertificateArn": "string",
+            "ContentKeyPeriodConfiguration": {
+               "ContentKeyPeriodTiming": "string"
+            },
             "DrmSystems": [ "string" ],
             "EncryptionContractConfiguration": {
                "PresetSpeke20Audio": "string",
@@ -219,6 +222,7 @@ Content-type: application/json
             },
             "ResourceId": "string",
             "RoleArn": "string",
+            "SpekeVersion": "string",
             "Url": "string"
          }
       },

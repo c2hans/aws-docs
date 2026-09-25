@@ -6,9 +6,11 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Type
 <a name="API_Types_AWS_Marketplace_Discovery"></a>
 
 The following data types are supported by AWS Marketplace Discovery:
++  [AmazonMachineImageEbsVolume](API_marketplace-discovery_AmazonMachineImageEbsVolume.md)
 +  [AmazonMachineImageFulfillmentOption](API_marketplace-discovery_AmazonMachineImageFulfillmentOption.md)
 +  [AmazonMachineImageOperatingSystem](API_marketplace-discovery_AmazonMachineImageOperatingSystem.md)
 +  [AmazonMachineImageRecommendation](API_marketplace-discovery_AmazonMachineImageRecommendation.md)
++  [AmazonMachineImageSecurityGroup](API_marketplace-discovery_AmazonMachineImageSecurityGroup.md)
 +  [ApiFulfillmentOption](API_marketplace-discovery_ApiFulfillmentOption.md)
 +  [AwsSupportedService](API_marketplace-discovery_AwsSupportedService.md)
 +  [ByolPricingTerm](API_marketplace-discovery_ByolPricingTerm.md)

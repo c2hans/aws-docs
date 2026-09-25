@@ -24,9 +24,6 @@ The following sections describe the rules and best practices for using AWS Clien
 + A portion of the addresses in the client CIDR range are used to support the availability model of the Client VPN endpoint, and cannot be assigned to clients. Therefore, we recommend that you assign a CIDR block that contains twice the number of IP addresses that are required to enable the maximum number of concurrent connections that you plan to support on the Client VPN endpoint.
 + The client CIDR range cannot be changed after you create the Client VPN endpoint.
 + Client VPN supports IPv4, IPv6, and dual-stack (both IPv4 and IPv6) traffic. For more details on IPv6 support, see [IPv6 considerations for AWS Client VPN](ipv6-considerations.md).
-+
-  + The source IP address is translated to the Client VPN endpoint's IP address.
-  + The original source port number from the client remains unchanged.
 + Client VPN performs Port Address Translation (PAT) only when concurrent users are connecting to the same target. Port translation is automatic and necessary to support multiple simultaneous connections through the same VPN endpoint.
   + For the source IP translation the source IP address is translated to the Client VPN's IP address.
   + For the source port translation for single client connections, the original source port number might remain unchanged.

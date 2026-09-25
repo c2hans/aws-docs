@@ -123,6 +123,13 @@ Scenario: A buyer subscribes to a SaaS product using a public offer that support
 auto-renewal. After acceptance, the buyer decides to amend the agreement to enable
 auto-renewal via the RenewalTerm configuration.
 
+The lockoutPeriod on the renewal term is what constrains this amendment. It is the renewal decision
+deadline, measured back from the end date of the agreement, and once it passes neither party can
+change whether the agreement renews. The sample reads the term with GetAgreementTerms before
+amending so that deadline is visible. It also reads endTimeBehavior from DescribeAgreement before
+and after the amendment, because endTimeBehavior is what determines whether the agreement renews,
+not enableAutoRenew on its own.
+
 Before running this sample, replace the placeholder constants below with values from
 your AWS Marketplace offer:
   - AGREEMENT_PROPOSAL_IDENTIFIER — the agreementProposalId from the offer.
@@ -137,6 +144,8 @@ from utils.agreement_api_utils import (
     format_output,
     generate_client_token,
     poll_until_entitlements_available,
+    print_end_time_behavior,
+    print_renewal_term,
 )
 
 class AmendSaaSContractRenewalTerm:
@@ -172,6 +181,7 @@ class AmendSaaSContractRenewalTerm:
         1. Create a SaaS agreement with CONTRACT pricing model with auto-renewal disabled.
         2. Wait for entitlements to become active.
         3. Amend the agreement to enable auto-renewal.
+        4. Confirm the change by reading endTimeBehavior before and after the amendment.
         """
         client = boto3.client("marketplace-agreement")
         cls = AmendSaaSContractRenewalTerm
@@ -226,7 +236,12 @@ class AmendSaaSContractRenewalTerm:
         print("Entitlements are now active.")
         format_output(entitlements_response)
 
+        print_renewal_term(client, agreement_id)
+        print_end_time_behavior(client, agreement_id, "Before amendment")
+
         # --- Amend: enable auto-renewal ---
+        # The lockoutPeriod printed above is the renewal decision deadline: once it passes,
+        # enableAutoRenew can no longer be changed.
         renewal_term_amended = {
             "id": cls.RENEWAL_TERM_ID,
             "configuration": {
@@ -249,6 +264,8 @@ class AmendSaaSContractRenewalTerm:
             agreementRequestId=car_response["agreementRequestId"]
         )
         print("Amendment accepted. Auto-renewal enabled. New AgreementId: " + aar_response["agreementId"])
+
+        print_end_time_behavior(client, aar_response["agreementId"], "After amendment")
 
 if __name__ == "__main__":
     AmendSaaSContractRenewalTerm.amend_saas_contract_agreement_renewal_term()
@@ -1365,7 +1382,6 @@ import json
 import logging
 import os
 import sys
-import os
 
 sys.path.append(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
 
@@ -1373,6 +1389,8 @@ import utils.helpers as helper
 
 import boto3
 from botocore.exceptions import ClientError
+
+mp_client = boto3.client("marketplace-agreement")
 
 logger = logging.getLogger(__name__)
 
@@ -1389,33 +1407,191 @@ TERM_NAME = "renewalTerm"
 CONFIG_ELEM = "configuration"
 ATTRIBUTE_NAME = "enableAutoRenew"
 
-def get_agreement_information(mp_client, entity_id):
+def get_renewal_term(entity_id):
     """
-    Returns customer AWS Account id about a given agreement
-    Args: entity_id str: Entity to return
-    Returns: dict: Dictionary of agreement information
+    Reads the agreement's renewal term. These values come from the offer and are read-only here.
+    Args: entity_id str: Agreement to read the terms of
+    Returns: dict: The first renewal term found, or None when the agreement has none
     """
 
     try:
-        if USE_SAMPLE_FILE:
-            sample_file = os.path.join(os.path.dirname(__file__), SAMPLE_FILE_NAME)
-            terms = open_json_file(sample_file)
-        else:
-            terms = mp_client.get_agreement_terms(agreementId=entity_id)
+        next_token = None
 
-        auto_renewal = "No Auto Renewal"
-        for term in terms[ROOT_ELEM]:
-            if TERM_NAME in term:
-                if CONFIG_ELEM in term[TERM_NAME]:
-                    auto_renewal = term[TERM_NAME][CONFIG_ELEM][ATTRIBUTE_NAME]
-                    break
-        return auto_renewal
+        while True:
+            if USE_SAMPLE_FILE:
+                sample_file = os.path.join(os.path.dirname(__file__), SAMPLE_FILE_NAME)
+                terms = open_json_file(sample_file)
+            elif next_token is None:
+                terms = mp_client.get_agreement_terms(agreementId=entity_id)
+            else:
+                terms = mp_client.get_agreement_terms(
+                    agreementId=entity_id, nextToken=next_token
+                )
+
+            for term in terms[ROOT_ELEM]:
+                # acceptedTerms is a union. Only the renewal term is of interest here.
+                if TERM_NAME in term:
+                    return term[TERM_NAME]
+
+            if USE_SAMPLE_FILE:
+                break
+
+            next_token = terms.get("nextToken")
+            if not next_token:
+                break
 
     except ClientError as e:
         if e.response["Error"]["Code"] == "ResourceNotFoundException":
             logger.error("Agreement with ID %s not found.", entity_id)
         else:
             logger.error("Unexpected error: %s", e)
+
+    return None
+
+def get_auto_renewal(entity_id):
+    """
+    Returns whether the agreement is set to auto renew, or "No Auto Renewal" when there is no
+    renewal term or the flag is not set. Delegates to get_renewal_term so there is a single API path.
+    Args: entity_id str: Agreement to read the terms of
+    Returns: str: "True"/"False", or "No Auto Renewal"
+    """
+
+    renewal_term = get_renewal_term(entity_id)
+
+    if (
+        renewal_term is not None
+        and CONFIG_ELEM in renewal_term
+        and renewal_term[CONFIG_ELEM].get(ATTRIBUTE_NAME) is not None
+    ):
+        return str(renewal_term[CONFIG_ELEM].get(ATTRIBUTE_NAME))
+    return "No Auto Renewal"
+
+def print_renewal_term(renewal_term):
+    """
+    Prints the fields of a renewal term.
+    Args: renewal_term dict: A renewal term, or None
+    """
+
+    if renewal_term is None:
+        print("No Auto Renewal")
+        return
+
+    print("Renewal Term ID: " + str(renewal_term.get("id")))
+
+    if CONFIG_ELEM in renewal_term:
+        print(
+            "Auto Renew Enabled: "
+            + str(renewal_term[CONFIG_ELEM].get(ATTRIBUTE_NAME))
+        )
+
+    # ISO 8601 duration. The customer can no longer change enableAutoRenew once the
+    # agreement is within this duration of its end date. Absent when the offer sets no deadline,
+    # which leaves the customer free to change enableAutoRenew up to the end date.
+    if "lockoutPeriod" in renewal_term:
+        print("Lockout Period: " + str(renewal_term["lockoutPeriod"]))
+    else:
+        print("Lockout Period: none")
+
+    # Absent means the agreement can renew without limit.
+    if "maxRenewals" in renewal_term:
+        print("Max Renewals: " + str(renewal_term["maxRenewals"]))
+    else:
+        print("Max Renewals: unlimited")
+
+    # Absent unless the offer sets a separate deadline for adjusting the renewal price.
+    if "adjustmentDeadline" in renewal_term:
+        print("Adjustment Deadline: " + str(renewal_term["adjustmentDeadline"]))
+
+    print_price_increase(renewal_term.get("priceIncrease"))
+
+    for term_template in renewal_term.get("termTemplates", []):
+        print_term_template(term_template)
+
+def print_price_increase(price_increase):
+    """
+    Prints the price change that applies when the agreement renews.
+    Args: price_increase dict: The priceIncrease union from the renewal term
+    """
+
+    if price_increase is None:
+        print("Price Increase: none (the price does not change at renewal)")
+        return
+
+    # priceIncrease is a union. Exactly one variant is set.
+    if "fixedPercentage" in price_increase:
+        print(
+            "Fixed Price Increase Percentage: "
+            + str(price_increase["fixedPercentage"].get("value"))
+        )
+    elif "percentageRange" in price_increase:
+        # The uplift is open within this range; defaultValue applies if you take no action.
+        percentage_range = price_increase["percentageRange"]
+        print("Price Increase Min Percentage: " + str(percentage_range.get("minValue")))
+        print("Price Increase Max Percentage: " + str(percentage_range.get("maxValue")))
+        print(
+            "Price Increase Default Percentage: "
+            + str(percentage_range.get("defaultValue"))
+        )
+
+def print_term_template(term_template):
+    """
+    Prints the term template that applies when the agreement renews.
+    Args: term_template dict: A termTemplates entry from the renewal term
+    """
+
+    # termTemplates entries are a union. Only payment schedule templates are supported today.
+    if "paymentScheduleTermTemplate" not in term_template:
+        print("Term Template: not a payment schedule template")
+        return
+
+    print("Payment Schedule Template:")
+    for entry in term_template["paymentScheduleTermTemplate"].get("schedule", []):
+        # chargeDateOffset is relative to the start of the renewed agreement, e.g. "P3M".
+        line = (
+            "  Charge Date Offset: "
+            + str(entry.get("chargeDateOffset"))
+            + ", Charge Percentage: "
+            + str(entry.get("chargePercentage"))
+        )
+
+        # Absent unless the schedule pins charges to a day of the month.
+        if "dayOfMonth" in entry:
+            line += ", Day Of Month: " + str(entry["dayOfMonth"])
+
+        print(line)
+
+def print_end_time_behavior(entity_id):
+    """
+    Prints the agreement's end time behavior: whether it will renew, be replaced, or expire, and why.
+    Args: entity_id str: Agreement to describe
+    """
+
+    try:
+        agreement = mp_client.describe_agreement(agreementId=entity_id)
+    except ClientError as e:
+        if e.response["Error"]["Code"] == "ResourceNotFoundException":
+            logger.error("Agreement with ID %s not found.", entity_id)
+        else:
+            logger.error("Unexpected error: %s", e)
+        return
+
+    end_time_behavior = agreement.get("endTimeBehavior")
+    if end_time_behavior is None:
+        print("End Time Behavior: none (this agreement has no end date)")
+        return
+
+    print("End Time Behavior Type: " + str(end_time_behavior.get("type")))
+
+    # The reason the agreement does not renew, and absent when it does. My own PROPOSER_RENEW_OPTED_OUT
+    # leaves enableAutoRenew untouched, so the flag can read True even when this says it will not renew.
+    if "reasonCode" in end_time_behavior:
+        print("End Time Behavior Reason Code: " + str(end_time_behavior["reasonCode"]))
+
+    # renewalSummary is present whenever type is RENEW, but offerId inside it is absent
+    # until a renewal offer is created.
+    offer_id = end_time_behavior.get("renewalSummary", {}).get("offerId")
+    if offer_id:
+        print("Renewal Offer ID: " + offer_id)
 
 def usage_demo():
     logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
@@ -1424,14 +1600,12 @@ def usage_demo():
     print("Looking for an agreement in the AWS Marketplace.")
     print("-" * 88)
 
-    mp_client = boto3.client("marketplace-agreement")
+    print_renewal_term(get_renewal_term(AGREEMENT_ID))
 
-    agreement = get_agreement_information(mp_client, AGREEMENT_ID)
-
-    if agreement is not None:
-        print(f"Auto Renewal is {agreement}")
-    else:
-        print("Agreement with ID " + AGREEMENT_ID + " is not found")
+    # USE_SAMPLE_FILE only mocks the GetAgreementTerms response. endTimeBehavior comes from
+    # DescribeAgreement, which has no sample file, so skip it when running from the sample.
+    if not USE_SAMPLE_FILE:
+        print_end_time_behavior(AGREEMENT_ID)
 
 # open json file from path
 def open_json_file(filename):
@@ -1544,6 +1718,162 @@ if __name__ == "__main__":
     usage_demo()
 ```
 +  For API details, see [GetAgreementTerms](https://docs.aws.amazon.com/goto/boto3/marketplace-agreement-2020-03-01/GetAgreementTerms) in *AWS SDK for Python (Boto3) API Reference*.
+
+### Get the end time behavior of an agreement
+<a name="marketplace-agreement_GetAgreementEndTimeBehavior_python_3_topic"></a>
+
+The following code example shows how to find out whether an agreement will renew, be replaced, or expire at its end date.
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
+
+```
+# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: Apache-2.0
+"""
+Purpose
+Obtain what will happen to the agreement when it reaches its end date, and the reason for that outcome
+AG-32
+"""
+
+import logging
+
+import boto3
+from botocore.exceptions import ClientError
+
+mp_client = boto3.client("marketplace-agreement")
+
+logger = logging.getLogger(__name__)
+
+# agreement id
+AGREEMENT_ID = "agmt-11111111111111111111"
+
+# attribute names
+ATTRIBUTE_END_TIME_BEHAVIOR = "endTimeBehavior"
+ATTRIBUTE_TYPE = "type"
+ATTRIBUTE_REASON_CODE = "reasonCode"
+ATTRIBUTE_RENEWAL_SUMMARY = "renewalSummary"
+ATTRIBUTE_OFFER_ID = "offerId"
+
+def get_end_time_behavior(entity_id):
+    """
+    Returns the end time behavior of a given agreement
+    Args: entity_id str: Agreement to describe
+    Returns: dict: The endTimeBehavior of the agreement, or None if it has no end date
+    """
+
+    try:
+        agreement = mp_client.describe_agreement(agreementId=entity_id)
+
+        # endTimeBehavior is absent for agreements that have no end date, because those
+        # agreements never reach an end time. Pay-as-you-go agreements are the most
+        # common example.
+        return agreement.get(ATTRIBUTE_END_TIME_BEHAVIOR)
+
+    except ClientError as e:
+        if e.response["Error"]["Code"] == "ResourceNotFoundException":
+            logger.error("Agreement with ID %s not found.", entity_id)
+        else:
+            logger.error("Unexpected error: %s", e)
+
+def usage_demo():
+    logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
+
+    print("-" * 88)
+    print("Looking for an agreement in the AWS Marketplace.")
+    print("-" * 88)
+
+    end_time_behavior = get_end_time_behavior(AGREEMENT_ID)
+
+    if end_time_behavior is None:
+        print(
+            "Agreement "
+            + AGREEMENT_ID
+            + " was not found, or it has no end date and therefore no end time behavior."
+        )
+        return
+
+    print(f"End time behavior is {end_time_behavior[ATTRIBUTE_TYPE]}")
+
+    # reasonCode is only populated when type is EXPIRE or REPLACE. It is absent when type is RENEW.
+    if ATTRIBUTE_REASON_CODE in end_time_behavior:
+        print(f"Reason is {end_time_behavior[ATTRIBUTE_REASON_CODE]}")
+
+    # renewalSummary carries the offer that the next renewal will use. It is present whenever
+    # type is RENEW, but offerId inside it is absent until a renewal offer is created.
+    offer_id = end_time_behavior.get(ATTRIBUTE_RENEWAL_SUMMARY, {}).get(ATTRIBUTE_OFFER_ID)
+    if offer_id:
+        print(f"Next renewal will use offer {offer_id}")
+
+if __name__ == "__main__":
+    usage_demo()
+```
++  For API details, see [DescribeAgreement](https://docs.aws.amazon.com/goto/boto3/marketplace-agreement-2020-03-01/DescribeAgreement) in *AWS SDK for Python (Boto3) API Reference*.
+
+### Get the initial agreement of an agreement
+<a name="marketplace-agreement_GetAgreementInitialAgreement_python_3_topic"></a>
+
+The following code example shows how to identify the first agreement in an agreement's chain.
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
+
+```
+# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: Apache-2.0
+"""
+Purpose
+Obtain the first agreement in this agreement's chain
+AG-33
+"""
+
+import logging
+
+import boto3
+from botocore.exceptions import ClientError
+
+mp_client = boto3.client("marketplace-agreement")
+
+logger = logging.getLogger(__name__)
+
+# agreement id
+AGREEMENT_ID = "agmt-11111111111111111111"
+
+# attribute name
+ATTRIBUTE_INITIAL_AGREEMENT_ID = "initialAgreementId"
+
+def get_initial_agreement_id(entity_id):
+    """
+    Returns the first agreement in the chain that the given agreement belongs to
+    Args: entity_id str: Agreement to describe
+    Returns: str: The initial agreement id. Equals entity_id when this agreement starts the chain.
+    """
+
+    try:
+        agreement = mp_client.describe_agreement(agreementId=entity_id)
+        return agreement.get(ATTRIBUTE_INITIAL_AGREEMENT_ID)
+
+    except ClientError as e:
+        if e.response["Error"]["Code"] == "ResourceNotFoundException":
+            logger.error("Agreement with ID %s not found.", entity_id)
+        else:
+            logger.error("Unexpected error: %s", e)
+
+def usage_demo():
+    logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
+
+    print("-" * 88)
+    print("Looking for an agreement in the AWS Marketplace.")
+    print("-" * 88)
+
+    # A renewal or replacement carries forward the same initialAgreementId, so this value
+    # identifies the whole chain. It equals AGREEMENT_ID when this agreement starts the chain.
+    print("Initial Agreement ID: " + str(get_initial_agreement_id(AGREEMENT_ID)))
+
+if __name__ == "__main__":
+    usage_demo()
+```
++  For API details, see [DescribeAgreement](https://docs.aws.amazon.com/goto/boto3/marketplace-agreement-2020-03-01/DescribeAgreement) in *AWS SDK for Python (Boto3) API Reference*.
 
 ### Get the instances of each dimension purchased in an agreement
 <a name="marketplace-agreement_GetAgreementTermsDimensionInstances_python_3_topic"></a>
@@ -3132,6 +3462,9 @@ The following code example shows how to search for agreements by account ID.
 Purpose
 Shows how to use the AWS SDK for Python (Boto3) to get agreement by customer AWS account ID
 AG-02
+
+All filter combinations we support for Proposer and Acceptor:
+https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-agreements_SearchAgreements.html
 """
 
 import argparse
@@ -3223,6 +3556,9 @@ The following code example shows how to search for agreements by agreement ID.
 Purpose
 Shows how to use the AWS SDK for Python (Boto3) to search for agreements give id information
 AG-02-A
+
+All filter combinations we support for Proposer and Acceptor:
+https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-agreements_SearchAgreements.html
 """
 
 import logging
@@ -3319,6 +3655,9 @@ The following code example shows how to search for agreements by end date.
 Purpose
 Shows how to use the AWS SDK for Python (Boto3) to search for agreement information before or after end date
 AG-03
+
+All filter combinations we support for Proposer and Acceptor:
+https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-agreements_SearchAgreements.html
 """
 
 import logging
@@ -3394,6 +3733,102 @@ if __name__ == "__main__":
 ```
 +  For API details, see [SearchAgreements](https://docs.aws.amazon.com/goto/boto3/marketplace-agreement-2020-03-01/SearchAgreements) in *AWS SDK for Python (Boto3) API Reference*.
 
+### Search for agreements by last update date
+<a name="marketplace-agreement_SearchAgreementsByLastUpdateDate_python_3_topic"></a>
+
+The following code example shows how to search for agreements by the date they were last updated.
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
+
+```
+# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: Apache-2.0
+"""
+Purpose
+Shows how to use the AWS SDK for Python (Boto3) to search for agreement information before or after last update date
+AG-35
+
+This filter is supported only when PartyType is Proposer, so only sellers can use it. An
+unsupported combination fails with a ValidationException whose reason is UNSUPPORTED_FILTERS.
+All filter combinations we support for Proposer and Acceptor:
+https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-agreements_SearchAgreements.html
+"""
+
+import logging
+
+import boto3
+import sys
+import os
+
+sys.path.append(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
+
+import utils.helpers as helper
+from botocore.exceptions import ClientError
+
+mp_client = boto3.client("marketplace-agreement")
+
+# change to 'BeforeLastUpdateTime' if before last update time is desired
+beforeOrAfterLastUpdatetimeFilterName = "AfterLastUpdateTime"
+
+# Make sure to use the same date format as below
+cutoffDate = "2024-11-18T00:00:00Z"
+
+MAX_PAGE_RESULTS = 10
+
+logger = logging.getLogger(__name__)
+
+def get_agreements():
+    AgreementSummaryList = []
+
+    try:
+        agreement = mp_client.search_agreements(
+            catalog="AWSMarketplace",
+            maxResults=MAX_PAGE_RESULTS,
+            # This filter is supported only for the proposer, so leave PartyType set to
+            # "Proposer". "Acceptor" fails with a ValidationException whose reason is
+            # UNSUPPORTED_FILTERS.
+            filters=[
+                {"name": "PartyType", "values": ["Proposer"]},
+                {"name": beforeOrAfterLastUpdatetimeFilterName, "values": [cutoffDate]},
+                {"name": "AgreementType", "values": ["PurchaseAgreement"]},
+            ],
+        )
+    except ClientError as e:
+        logger.error("Could not complete search_agreements request.")
+        raise
+
+    AgreementSummaryList.extend(agreement["agreementViewSummaries"])
+
+    while "nextToken" in agreement:
+        try:
+            agreement = mp_client.search_agreements(
+                catalog="AWSMarketplace",
+                maxResults=MAX_PAGE_RESULTS,
+                nextToken=agreement["nextToken"],
+                filters=[
+                    {"name": "PartyType", "values": ["Proposer"]},
+                    {
+                        "name": beforeOrAfterLastUpdatetimeFilterName,
+                        "values": [cutoffDate],
+                    },
+                    {"name": "AgreementType", "values": ["PurchaseAgreement"]},
+                ],
+            )
+        except ClientError as e:
+            logger.error("Could not complete search_agreements request.")
+            raise
+
+        AgreementSummaryList.extend(agreement["agreementViewSummaries"])
+
+    return AgreementSummaryList
+
+if __name__ == "__main__":
+    agreements = get_agreements()
+    helper.pretty_print_datetime(agreements)
+```
++  For API details, see [SearchAgreements](https://docs.aws.amazon.com/goto/boto3/marketplace-agreement-2020-03-01/SearchAgreements) in *AWS SDK for Python (Boto3) API Reference*.
+
 ### Search for agreements by offer ID
 <a name="marketplace-agreement_SearchAgreementsByOfferId_python_3_topic"></a>
 
@@ -3409,6 +3844,9 @@ The following code example shows how to search for agreements by offer ID.
 Purpose
 Shows how to use the AWS SDK for Python (Boto3) to search for agreements by offer id
 AG-0
+
+All filter combinations we support for Proposer and Acceptor:
+https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-agreements_SearchAgreements.html
 """
 
 import logging
@@ -3502,6 +3940,9 @@ The following code example shows how to search for agreements by product ID.
 Purpose
 Shows how to use the AWS SDK for Python (Boto3) to search for agreement by product id
 AG-02
+
+All filter combinations we support for Proposer and Acceptor:
+https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-agreements_SearchAgreements.html
 """
 
 import logging
@@ -3580,6 +4021,102 @@ if __name__ == "__main__":
 ```
 +  For API details, see [SearchAgreements](https://docs.aws.amazon.com/goto/boto3/marketplace-agreement-2020-03-01/SearchAgreements) in *AWS SDK for Python (Boto3) API Reference*.
 
+### Search for agreements by start date
+<a name="marketplace-agreement_SearchAgreementsByStartDate_python_3_topic"></a>
+
+The following code example shows how to search for agreements by start date.
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
+
+```
+# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: Apache-2.0
+"""
+Purpose
+Shows how to use the AWS SDK for Python (Boto3) to search for agreement information before or after start date
+AG-34
+
+This filter is supported only when PartyType is Proposer, so only sellers can use it. An
+unsupported combination fails with a ValidationException whose reason is UNSUPPORTED_FILTERS.
+All filter combinations we support for Proposer and Acceptor:
+https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-agreements_SearchAgreements.html
+"""
+
+import logging
+
+import boto3
+import sys
+import os
+
+sys.path.append(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
+
+import utils.helpers as helper
+from botocore.exceptions import ClientError
+
+mp_client = boto3.client("marketplace-agreement")
+
+# change to 'AfterStartTime' if after start time is desired
+beforeOrAfterStarttimeFilterName = "BeforeStartTime"
+
+# Make sure to use the same date format as below
+cutoffDate = "2050-11-18T00:00:00Z"
+
+MAX_PAGE_RESULTS = 10
+
+logger = logging.getLogger(__name__)
+
+def get_agreements():
+    AgreementSummaryList = []
+
+    try:
+        agreement = mp_client.search_agreements(
+            catalog="AWSMarketplace",
+            maxResults=MAX_PAGE_RESULTS,
+            # This filter is supported only for the proposer, so leave PartyType set to
+            # "Proposer". "Acceptor" fails with a ValidationException whose reason is
+            # UNSUPPORTED_FILTERS.
+            filters=[
+                {"name": "PartyType", "values": ["Proposer"]},
+                {"name": beforeOrAfterStarttimeFilterName, "values": [cutoffDate]},
+                {"name": "AgreementType", "values": ["PurchaseAgreement"]},
+            ],
+        )
+    except ClientError as e:
+        logger.error("Could not complete search_agreements request.")
+        raise
+
+    AgreementSummaryList.extend(agreement["agreementViewSummaries"])
+
+    while "nextToken" in agreement:
+        try:
+            agreement = mp_client.search_agreements(
+                catalog="AWSMarketplace",
+                maxResults=MAX_PAGE_RESULTS,
+                nextToken=agreement["nextToken"],
+                filters=[
+                    {"name": "PartyType", "values": ["Proposer"]},
+                    {
+                        "name": beforeOrAfterStarttimeFilterName,
+                        "values": [cutoffDate],
+                    },
+                    {"name": "AgreementType", "values": ["PurchaseAgreement"]},
+                ],
+            )
+        except ClientError as e:
+            logger.error("Could not complete search_agreements request.")
+            raise
+
+        AgreementSummaryList.extend(agreement["agreementViewSummaries"])
+
+    return AgreementSummaryList
+
+if __name__ == "__main__":
+    agreements = get_agreements()
+    helper.pretty_print_datetime(agreements)
+```
++  For API details, see [SearchAgreements](https://docs.aws.amazon.com/goto/boto3/marketplace-agreement-2020-03-01/SearchAgreements) in *AWS SDK for Python (Boto3) API Reference*.
+
 ### Search for agreements by status
 <a name="marketplace-agreement_SearchAgreementsByByStatus_python_3_topic"></a>
 
@@ -3595,6 +4132,9 @@ The following code example shows how to search for agreements by status.
 Purpose
 Shows how to use the AWS SDK for Python (Boto3) to filter agreements by status
 AG-04
+
+All filter combinations we support for Proposer and Acceptor:
+https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-agreements_SearchAgreements.html
 
 Example Usage: python3 search_agreements_by_status.py
 """
@@ -3664,6 +4204,197 @@ def get_agreements(filter_list=filter_list):
 
 if __name__ == "__main__":
     agreements_list = get_agreements(filter_list)
+```
++  For API details, see [SearchAgreements](https://docs.aws.amazon.com/goto/boto3/marketplace-agreement-2020-03-01/SearchAgreements) in *AWS SDK for Python (Boto3) API Reference*.
+
+### Search for the agreements that will renew
+<a name="marketplace-agreement_SearchAgreementsRenewing_python_3_topic"></a>
+
+The following code example shows how to search for the agreements that will renew.
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
+
+```
+# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: Apache-2.0
+"""
+Purpose
+Shows how to use the AWS SDK for Python (Boto3) to search for the agreements that will renew
+AG-31
+
+This filter is supported only when PartyType is Proposer, so only sellers can use it. An
+unsupported combination fails with a ValidationException whose reason is UNSUPPORTED_FILTERS.
+All filter combinations we support for Proposer and Acceptor:
+https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-agreements_SearchAgreements.html
+"""
+
+import logging
+
+import boto3
+import sys
+import os
+
+sys.path.append(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
+
+import utils.helpers as helper
+from botocore.exceptions import ClientError
+
+mp_client = boto3.client("marketplace-agreement")
+
+# change to 'REPLACE' or 'EXPIRE' to find the agreements that will not renew
+endTimeBehaviorTypeFilterValue = "RENEW"
+
+MAX_PAGE_RESULTS = 10
+
+logger = logging.getLogger(__name__)
+
+def get_agreements():
+    AgreementSummaryList = []
+
+    try:
+        agreement = mp_client.search_agreements(
+            catalog="AWSMarketplace",
+            maxResults=MAX_PAGE_RESULTS,
+            # This filter is supported only for the proposer, so leave PartyType set to
+            # "Proposer". "Acceptor" fails with a ValidationException whose reason is
+            # UNSUPPORTED_FILTERS.
+            filters=[
+                {"name": "PartyType", "values": ["Proposer"]},
+                {"name": "EndTimeBehaviorType", "values": [endTimeBehaviorTypeFilterValue]},
+                {"name": "AgreementType", "values": ["PurchaseAgreement"]},
+            ],
+        )
+    except ClientError as e:
+        logger.error("Could not complete search_agreements request.")
+        raise
+
+    AgreementSummaryList.extend(agreement["agreementViewSummaries"])
+
+    while "nextToken" in agreement:
+        try:
+            agreement = mp_client.search_agreements(
+                catalog="AWSMarketplace",
+                maxResults=MAX_PAGE_RESULTS,
+                nextToken=agreement["nextToken"],
+                filters=[
+                    {"name": "PartyType", "values": ["Proposer"]},
+                    {
+                        "name": "EndTimeBehaviorType",
+                        "values": [endTimeBehaviorTypeFilterValue],
+                    },
+                    {"name": "AgreementType", "values": ["PurchaseAgreement"]},
+                ],
+            )
+        except ClientError as e:
+            logger.error("Could not complete search_agreements request.")
+            raise
+
+        AgreementSummaryList.extend(agreement["agreementViewSummaries"])
+
+    return AgreementSummaryList
+
+if __name__ == "__main__":
+    agreements = get_agreements()
+    helper.pretty_print_datetime(agreements)
+```
++  For API details, see [SearchAgreements](https://docs.aws.amazon.com/goto/boto3/marketplace-agreement-2020-03-01/SearchAgreements) in *AWS SDK for Python (Boto3) API Reference*.
+
+### Search for the agreements the acceptor opted out of renewing
+<a name="marketplace-agreement_SearchAgreementsAcceptorOptedOut_python_3_topic"></a>
+
+The following code example shows how to search for the agreements the acceptor opted out of renewing.
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python#agreement-api-reference-code) repository.
+
+```
+# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: Apache-2.0
+"""
+Purpose
+Shows how to use the AWS SDK for Python (Boto3) to search for the agreements the acceptor opted out
+of renewing
+AG-36
+
+This filter is supported only when PartyType is Proposer, so only sellers can use it. An
+unsupported combination fails with a ValidationException whose reason is UNSUPPORTED_FILTERS.
+All filter combinations we support for Proposer and Acceptor:
+https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-agreements_SearchAgreements.html
+"""
+
+import logging
+
+import boto3
+import sys
+import os
+
+sys.path.append(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
+
+import utils.helpers as helper
+from botocore.exceptions import ClientError
+
+mp_client = boto3.client("marketplace-agreement")
+
+# change to 'PROPOSER_RENEW_OPTED_OUT', 'NO_RENEWAL_TERM', or 'RENEWAL_LIMIT_EXHAUSTED' for the
+# other reasons an agreement does not renew
+endTimeBehaviorReasonCodeFilterValue = "ACCEPTOR_RENEW_OPTED_OUT"
+
+MAX_PAGE_RESULTS = 10
+
+logger = logging.getLogger(__name__)
+
+def get_agreements():
+    AgreementSummaryList = []
+
+    try:
+        agreement = mp_client.search_agreements(
+            catalog="AWSMarketplace",
+            maxResults=MAX_PAGE_RESULTS,
+            # This filter is supported only for the proposer, so leave PartyType set to
+            # "Proposer". "Acceptor" fails with a ValidationException whose reason is
+            # UNSUPPORTED_FILTERS.
+            filters=[
+                {"name": "PartyType", "values": ["Proposer"]},
+                {
+                    "name": "EndTimeBehaviorReasonCode",
+                    "values": [endTimeBehaviorReasonCodeFilterValue],
+                },
+                {"name": "AgreementType", "values": ["PurchaseAgreement"]},
+            ],
+        )
+    except ClientError as e:
+        logger.error("Could not complete search_agreements request.")
+        raise
+
+    AgreementSummaryList.extend(agreement["agreementViewSummaries"])
+
+    while "nextToken" in agreement:
+        try:
+            agreement = mp_client.search_agreements(
+                catalog="AWSMarketplace",
+                maxResults=MAX_PAGE_RESULTS,
+                nextToken=agreement["nextToken"],
+                filters=[
+                    {"name": "PartyType", "values": ["Proposer"]},
+                    {
+                        "name": "EndTimeBehaviorReasonCode",
+                        "values": [endTimeBehaviorReasonCodeFilterValue],
+                    },
+                    {"name": "AgreementType", "values": ["PurchaseAgreement"]},
+                ],
+            )
+        except ClientError as e:
+            logger.error("Could not complete search_agreements request.")
+            raise
+
+        AgreementSummaryList.extend(agreement["agreementViewSummaries"])
+
+    return AgreementSummaryList
+
+if __name__ == "__main__":
+    agreements = get_agreements()
+    helper.pretty_print_datetime(agreements)
 ```
 +  For API details, see [SearchAgreements](https://docs.aws.amazon.com/goto/boto3/marketplace-agreement-2020-03-01/SearchAgreements) in *AWS SDK for Python (Boto3) API Reference*.
 

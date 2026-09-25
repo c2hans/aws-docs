@@ -18,6 +18,11 @@ The recommended EC2 instance type for this AMI.
 Type: String
 Required: Yes
 
+ ** securityGroups **   <a name="AWSMarketplaceService-Type-marketplace-discovery_AmazonMachineImageRecommendation-securityGroups"></a>
+The recommended security group configurations for this AMI.
+Type: Array of [AmazonMachineImageSecurityGroup](API_marketplace-discovery_AmazonMachineImageSecurityGroup.md) objects
+Required: No
+
 ## See Also
 <a name="API_marketplace-discovery_AmazonMachineImageRecommendation_SeeAlso"></a>
 

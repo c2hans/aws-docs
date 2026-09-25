@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/near-real-time-airport-gate-ch
 title: 'Guidance for Near Real-Time Airport Gate Change Information on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/near-real-time-airport-gate-change-information-on-aws/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # Guidance for Near Real-Time Airport Gate Change Information on AWS

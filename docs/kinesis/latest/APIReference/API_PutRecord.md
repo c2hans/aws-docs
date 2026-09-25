@@ -69,9 +69,10 @@ Required: No
 
  ** [PartitionKey](#API_PutRecord_RequestSyntax) **   <a name="Streams-PutRecord-request-PartitionKey"></a>
 Determines which shard in the stream the data record is assigned to. Partition keys are Unicode strings with a maximum length limit of 256 characters for each key. Amazon Kinesis Data Streams uses the partition key as input to a hash function that maps the partition key and associated data to a specific shard. Specifically, an MD5 hash function is used to map partition keys to 128-bit integer values and to map associated data records to shards. As a result of this hashing mechanism, all data records with the same partition key map to the same shard within the stream.
+If the stream uses the `USER_PARTITION_KEY` record distribution strategy (the default), a partition key is required. If the stream uses the `AUTO` record distribution strategy, the partition key is optional and any value you provide is ignored, along with any `ExplicitHashKey` you provide. In that case, Amazon Kinesis Data Streams distributes the record across shards using service-managed algorithms. For more information, see `UpdateStreamRecordDistributionStrategy`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
-Required: Yes
+Required: No
 
  ** [SequenceNumberForOrdering](#API_PutRecord_RequestSyntax) **   <a name="Streams-PutRecord-request-SequenceNumberForOrdering"></a>
 Guarantees strictly increasing sequence numbers, for puts from the same client and to the same partition key. Usage: set the `SequenceNumberForOrdering` of record *n* to the sequence number of record *n-1* (as returned in the result when putting record *n-1*). If this parameter is not set, records are coarsely ordered based on arrival time.

@@ -15,7 +15,7 @@ You can use QUIC only if UDP traffic is permitted by your network and security c
 With QUIC enabled, clients can use the QUIC protocol for transporting data when connecting to a Amazon DCV server session. If clients don't use the QUIC protocol when they connect, they use WebSocket. For more information about the QUIC protocol, see [ Connecting to a Amazon DCV Session](https://docs.aws.amazon.com/dcv/latest/userguide/using-connecting.html) in the *Amazon DCV User Guide*.
 
 ------
-#### [ Windows Amazon DCV server ]
+#### [ Windows ]
 
 **To disable the use of QUIC (UDP) for data transport in Amazon DCV**
 
@@ -30,7 +30,7 @@ If you can't find the parameter, create a new DWORD (32-bit) parameter and name 
 1. [Stop](manage-stop.md) and [restart](manage-start.md) the Amazon DCV server.
 
 ------
-#### [ Linux Amazon DCV server ]
+#### [ Linux ]
 
 **To disable the use of QUIC (UDP) for data transport in Amazon DCV**
 
@@ -49,7 +49,7 @@ If you can't find the parameter, create a new DWORD (32-bit) parameter and name 
 1. [Stop](manage-stop.md) and [restart](manage-start.md) the Amazon DCV server.
 
 ------
-#### [ macOS Amazon DCV server ]
+#### [ macOS ]
 
 **To disable the use of QUIC (UDP) for data transport in Amazon DCV**
 

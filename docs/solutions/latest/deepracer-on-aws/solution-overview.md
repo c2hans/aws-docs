@@ -5,15 +5,17 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/soluti
 # Overview
 <a name="solution-overview"></a>
 
-Publication date: January 2026.
+Publication date: September 2026.
 
-DeepRacer on AWS is an educational ecosystem built around a fully autonomous 1/18th scale race car driven by reinforcement learning. With DeepRacer on AWS, you can train reinforcement learning models and evaluate their performance in the DeepRacer simulator. After training your models, you can compete in virtual races against other participants or download your trained models for deployment to your AWS DeepRacer vehicle, enabling autonomous driving in physical environments.
+DeepRacer on AWS is an educational ecosystem built around a fully autonomous 1/18th scale race car driven by reinforcement learning. With DeepRacer on AWS, you can train reinforcement learning models and evaluate their performance in the DeepRacer simulator. After training your models, you can compete in virtual races against other participants or download your trained models for deployment to your AWS DeepRacer vehicle, enabling autonomous driving in physical environments. You can also run physical racing events on the same deployment. The solution records lap times for real vehicles on a real track and publishes results to live leaderboards.
 
 The solution leverages [Amazon SageMaker AI](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html) for reinforcement learning model training and offers you the following capabilities.
 + Deploy the necessary infrastructure including a console, simulation application used in the reinforcement learning training jobs.
 + Provides option to customize reward function for the reinforcement learning model to train.
 + Enables setting up and managing community races where custom models can be imported into the solution.
++ Supports running physical racing events, with multi-track setup, timekeeping, lap validation, and combined leaderboards across tracks.
 + Provides option to download the trained models which can be utilized in custom autonomous vehicles.
++ Optimize trained models and wirelessly deploy them to physical AWS DeepRacer cars, and import pre-trained physical car models.
 
 This implementation guide describes architectural considerations and configuration steps for deploying DeepRacer on AWS in the AWS Cloud. It includes links to an [AWS CloudFormation](https://aws.amazon.com/cloudformation/) template that launches and configures the AWS services required to deploy this solution using AWS best practices for security and availability.
 

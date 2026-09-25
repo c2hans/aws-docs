@@ -13,7 +13,7 @@ Summary information about the Application.
  ** ApplicationType **   <a name="connect-Type-connect-app-integrations_ApplicationSummary-ApplicationType"></a>
 The type of application.
 Type: String
-Valid Values: `STANDARD | SERVICE | MCP_SERVER`
+Valid Values: `STANDARD | SERVICE | MCP_SERVER | A2A_SERVER`
 Required: No
 
  ** Arn **   <a name="connect-Type-connect-app-integrations_ApplicationSummary-Arn"></a>

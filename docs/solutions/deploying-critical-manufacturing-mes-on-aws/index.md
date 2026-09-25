@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/deploying-critical-manufacturi
 title: 'Guidance for Deploying Critical Manufacturing MES on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/deploying-critical-manufacturing-mes-on-aws/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # Guidance for Deploying Critical Manufacturing MES on AWS

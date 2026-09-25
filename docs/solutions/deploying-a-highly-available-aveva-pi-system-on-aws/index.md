@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/deploying-a-highly-available-a
 title: 'Guidance for Deploying a Highly Available Aveva PI System on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/deploying-a-highly-available-aveva-pi-system-on-aws/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # Guidance for Deploying a Highly Available Aveva PI System on AWS

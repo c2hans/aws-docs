@@ -20,7 +20,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[ColumnName](#cfn-quicksight-analysis-columnidentifier-columnname)" : {{String}},
-  "[DataSetIdentifier](#cfn-quicksight-analysis-columnidentifier-datasetidentifier)" : {{String}}
+  "[DataSetIdentifier](#cfn-quicksight-analysis-columnidentifier-datasetidentifier)" : {{String}},
+  "[TopicIdentifier](#cfn-quicksight-analysis-columnidentifier-topicidentifier)" : {{String}}
 }
 ```
 
@@ -30,6 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [ColumnName](#cfn-quicksight-analysis-columnidentifier-columnname): {{String}}
   [DataSetIdentifier](#cfn-quicksight-analysis-columnidentifier-datasetidentifier): {{String}}
+  [TopicIdentifier](#cfn-quicksight-analysis-columnidentifier-topicidentifier): {{String}}
 ```
 
 ## Properties
@@ -45,7 +47,15 @@ The name of the column.
 
 `DataSetIdentifier`  <a name="cfn-quicksight-analysis-columnidentifier-datasetidentifier"></a>
 The data set that the column belongs to.
-*Required*: Yes
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`TopicIdentifier`  <a name="cfn-quicksight-analysis-columnidentifier-topicidentifier"></a>
+The topic that the column belongs to.
+*Required*: No
 *Type*: String
 *Minimum*: `1`
 *Maximum*: `2048`

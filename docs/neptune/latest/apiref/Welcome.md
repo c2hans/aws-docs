@@ -9,4 +9,4 @@ Amazon Neptune is a fast, reliable, fully-managed graph database service that ma
 
 This interface reference for Amazon Neptune contains documentation for a programming or command line interface you can use to manage Amazon Neptune. Note that Amazon Neptune is asynchronous, which means that some interfaces might require techniques such as polling or callback functions to determine when a command has been applied. In this reference, the parameter descriptions indicate whether a command is applied immediately, on the next instance reboot, or during the maintenance window. The reference structure is as follows, and we list following some related topics from the user guide.
 
-This document was last published on September 22, 2026.
+This document was last published on September 25, 2026.

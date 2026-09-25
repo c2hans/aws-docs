@@ -19,6 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[DecalSettings](#cfn-quicksight-dashboard-linechartseriessettings-decalsettings)" : {{DecalSettings}},
   "[LineStyleSettings](#cfn-quicksight-dashboard-linechartseriessettings-linestylesettings)" : {{LineChartLineStyleSettings}},
   "[MarkerStyleSettings](#cfn-quicksight-dashboard-linechartseriessettings-markerstylesettings)" : {{LineChartMarkerStyleSettings}}
 }
@@ -28,6 +29,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-quicksight-dashboard-linechartseriessettings-syntax.yaml"></a>
 
 ```
+  [DecalSettings](#cfn-quicksight-dashboard-linechartseriessettings-decalsettings): {{
+    DecalSettings}}
   [LineStyleSettings](#cfn-quicksight-dashboard-linechartseriessettings-linestylesettings): {{
     LineChartLineStyleSettings}}
   [MarkerStyleSettings](#cfn-quicksight-dashboard-linechartseriessettings-markerstylesettings): {{
@@ -36,6 +39,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ## Properties
 <a name="aws-properties-quicksight-dashboard-linechartseriessettings-properties"></a>
+
+`DecalSettings`  <a name="cfn-quicksight-dashboard-linechartseriessettings-decalsettings"></a>
+Decal settings for a line series in `LineChartVisual`.
+*Required*: No
+*Type*: [DecalSettings](aws-properties-quicksight-dashboard-decalsettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `LineStyleSettings`  <a name="cfn-quicksight-dashboard-linechartseriessettings-linestylesettings"></a>
 Line styles options for a line series in `LineChartVisual`.

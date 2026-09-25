@@ -5,11 +5,11 @@ source_url: https://docs.aws.amazon.com/solutions/latest/network-orchestration-a
 # Features and benefits
 <a name="features-and-benefits"></a>
 
-This solution provides the following features:
+This Guidance provides the following features:
 
  **Cross-account and cross-Region integration**
 
-This solution helps you automate the management of your networks across multiple AWS accounts and AWS Regions (through inter-Region peering). This helps reduce the time that you need to configure connectivity through your AWS environment.
+It helps you automate the management of your networks across multiple AWS accounts and AWS Regions (through inter-Region peering). This helps reduce the time that you need to configure connectivity through your AWS environment.
 
  **Change management**
 

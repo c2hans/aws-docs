@@ -21,5 +21,8 @@ Once the solution is deployed, users interact with it exclusively through a dedi
 +  [Join a community race](join-a-community-race.md)
 +  [Live races](live-races.md)
 +  [Create and manage races](create-manage-races.md)
++  [Race Management](race-management.md)
++  [Device management](device-management.md)
++  [Model management](model-management.md)
 +  [Admin functions](admin-functions.md)
 +  [Profile and account](profile-and-account.md)

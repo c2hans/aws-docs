@@ -20,7 +20,13 @@ Valid Values: `PRODUCT_ID | SELLER_OF_RECORD_PROFILE_ID | PURCHASE_OPTION_TYPE |
 Required: Yes
 
  ** filterValues **   <a name="AWSMarketplaceService-Type-marketplace-discovery_PurchaseOptionFilter-filterValues"></a>
-The values to filter by. Multiple values within the same filter are combined with OR logic.
+The values to filter by. Supported values depend on `filterType`:
++  `PRODUCT_ID` – One or more product identifiers to filter by.
++  `SELLER_OF_RECORD_PROFILE_ID` – One or more seller profile identifiers to filter by.
++  `PURCHASE_OPTION_TYPE` – One or more purchase option types to filter by: `OFFER` or `OFFERSET`.
++  `VISIBILITY_SCOPE` – The visibility scope to filter by: `PRIVATE`.
++  `AVAILABILITY_STATUS` – One or more availability statuses to filter by: `AVAILABLE` or `EXPIRED`.
+To retrieve private offers and offer sets visible to you, use `VISIBILITY_SCOPE` with `PRIVATE`. OR logic combines multiple values within the same filter.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Length Constraints: Minimum length of 1. Maximum length of 255.

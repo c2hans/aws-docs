@@ -11356,6 +11356,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 12.10. For more 
 This release of Aurora PostgreSQL is compatible with PostgreSQL 12.9. For more information about the improvements in PostgreSQL 12.9, see [PostgreSQL release 12.9](https://www.postgresql.org/docs/12/release-12-9.html).
 
 **Topics**
++ [Aurora PostgreSQL 12.9.19, August 19, 2026](#aurorapostgresql-versions-version12919x-12919)
 + [Aurora PostgreSQL 12.9.18, January 15th, 2026](#aurorapostgresql-versions-version12918x-12918)
 + [Aurora PostgreSQL 12.9.16, June 18, 2025](#aurorapostgresql-versions-version12916x-12916)
 + [Aurora PostgreSQL 12.9.15 April 29, 2025](#aurorapostgresql-versions-version12915x-12915)
@@ -11371,6 +11372,44 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 12.9. For more i
 + [Aurora PostgreSQL 12.9.3, April 13, 2022](#AuroraPostgreSQL.Updates.20180305.1293)
 + [Aurora PostgreSQL 12.9.1](#AuroraPostgreSQL.Updates.20180305.1291)
 + [Aurora PostgreSQL 12.9.0](#AuroraPostgreSQL.Updates.20180305.1290)
+
+#### Aurora PostgreSQL 12.9.19, August 19, 2026
+<a name="aurorapostgresql-versions-version12919x-12919"></a>
+
+**Critical stability enhancements**
++ Fixed a bug in the `aws_s3` extension that could cause the extension to be rarely unavailable.
++ Fixed a Babelfish issue where a table-valued parameter (TVP) could return the last row N times.
+
+**High priority enhancements**
++ Backported fixes for the following PostgreSQL community security issues:
+  + [CVE-2026-6472](https://nvd.nist.gov/vuln/detail/CVE-2026-6472).
+
+    [CVE-2026-6473](https://nvd.nist.gov/vuln/detail/CVE-2026-6473).
+
+    [CVE-2026-6474](https://nvd.nist.gov/vuln/detail/CVE-2026-6474).
+
+    [CVE-2026-6475](https://nvd.nist.gov/vuln/detail/CVE-2026-6475).
+
+    [CVE-2026-6476](https://nvd.nist.gov/vuln/detail/CVE-2026-6476).
+
+    [CVE-2026-6477](https://nvd.nist.gov/vuln/detail/CVE-2026-6477).
+
+    [CVE-2026-6478](https://nvd.nist.gov/vuln/detail/CVE-2026-6478).
+
+    [CVE-2026-6479](https://nvd.nist.gov/vuln/detail/CVE-2026-6479).
+
+    [CVE-2026-6575](https://nvd.nist.gov/vuln/detail/CVE-2026-6575).
+
+    [CVE-2026-6637](https://nvd.nist.gov/vuln/detail/CVE-2026-6637).
+
+    [CVE-2026-6638](https://nvd.nist.gov/vuln/detail/CVE-2026-6638).
+
+**Security enhancements**
++ Fixed a permission validation bug in `babelfish_set_role`.
+
+**General stability enhancements**
++ Fixed an issue that caused increased CPU overhead when Encryption in Transit (EIT) is enabled.
++ Fixed an `ALTER FUNCTION` error that incorrectly reported "routine name is not unique".
 
 #### Aurora PostgreSQL 12.9.18, January 15th, 2026
 <a name="aurorapostgresql-versions-version12918x-12918"></a>
@@ -11877,6 +11916,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 12.4. For more i
 This release of Aurora PostgreSQL is compatible with PostgreSQL 11.21. For more information about the improvements in PostgreSQL 11.21, see [PostgreSQL release 11.21](https://www.postgresql.org/docs/11/release-11-21.html).
 
 **Topics**
++ [Aurora PostgreSQL 11.21.13, August 21, 2026](#aurorapostgresql-versions-version112113x-112113)
 + [Aurora PostgreSQL 11.21.12, January 14, 2026](#aurorapostgresql-versions-version112112x-112112)
 + [Aurora PostgreSQL 11.21.11, August 5, 2025](#aurorapostgresql-versions-version112111x-112111)
 + [Aurora PostgreSQL 11.21.10, May 7, 2025](#aurorapostgresql-versions-version112110x-112110)
@@ -11888,6 +11928,44 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 11.21. For more 
 + [Aurora PostgreSQL 11.21.2, December 13, 2023](#AuroraPostgreSQL.Updates.20180305.11212)
 + [Aurora PostgreSQL 11.21.1, November 09, 2023](#AuroraPostgreSQL.Updates.20180305.11211)
 + [Aurora PostgreSQL 11.21.0, October 24, 2023](#AuroraPostgreSQL.Updates.20180305.11210)
+
+#### Aurora PostgreSQL 11.21.13, August 21, 2026
+<a name="aurorapostgresql-versions-version112113x-112113"></a>
+
+**Critical stability enhancements**
++ Fixed a bug in the `aws_s3` extension that could cause the extension to be rarely unavailable.
++ Fixed a Babelfish issue where a table-valued parameter (TVP) could return the last row N times.
+
+**High priority enhancements**
++ Backported fixes for the following PostgreSQL community security issues:
+  + [CVE-2026-6472](https://nvd.nist.gov/vuln/detail/CVE-2026-6472).
+
+    [CVE-2026-6473](https://nvd.nist.gov/vuln/detail/CVE-2026-6473).
+
+    [CVE-2026-6474](https://nvd.nist.gov/vuln/detail/CVE-2026-6474).
+
+    [CVE-2026-6475](https://nvd.nist.gov/vuln/detail/CVE-2026-6475).
+
+    [CVE-2026-6476](https://nvd.nist.gov/vuln/detail/CVE-2026-6476).
+
+    [CVE-2026-6477](https://nvd.nist.gov/vuln/detail/CVE-2026-6477).
+
+    [CVE-2026-6478](https://nvd.nist.gov/vuln/detail/CVE-2026-6478).
+
+    [CVE-2026-6479](https://nvd.nist.gov/vuln/detail/CVE-2026-6479).
+
+    [CVE-2026-6575](https://nvd.nist.gov/vuln/detail/CVE-2026-6575).
+
+    [CVE-2026-6637](https://nvd.nist.gov/vuln/detail/CVE-2026-6637).
+
+    [CVE-2026-6638](https://nvd.nist.gov/vuln/detail/CVE-2026-6638).
+
+**Security enhancements**
++ Fixed a permission validation bug in `babelfish_set_role`.
+
+**General enhancements**
++ Fixed an issue that caused increased CPU overhead when Encryption in Transit (EIT) is enabled.
++ Fixed an `ALTER FUNCTION` error that incorrectly reported "routine name is not unique".
 
 #### Aurora PostgreSQL 11.21.12, January 14, 2026
 <a name="aurorapostgresql-versions-version112112x-112112"></a>

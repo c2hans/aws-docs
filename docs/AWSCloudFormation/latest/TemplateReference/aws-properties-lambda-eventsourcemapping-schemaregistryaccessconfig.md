@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
  The type of authentication Lambda uses to access your schema registry.
 *Required*: No
 *Type*: String
-*Allowed values*: `BASIC_AUTH | CLIENT_CERTIFICATE_TLS_AUTH | SERVER_ROOT_CA_CERTIFICATE`
+*Allowed values*: `BASIC_AUTH | CLIENT_CERTIFICATE_TLS_AUTH | SERVER_ROOT_CA_CERTIFICATE | OAUTHBEARER_AUTH`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `URI`  <a name="cfn-lambda-eventsourcemapping-schemaregistryaccessconfig-uri"></a>

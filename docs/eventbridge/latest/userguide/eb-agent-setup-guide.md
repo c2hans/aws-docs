@@ -34,6 +34,12 @@ Run the following command to install the plugin:
 /plugin install aws-core@agent-toolkit-for-aws
 ```
 
+Then install the Amazon EventBridge skill:
+
+```
+npx skills add https://github.com/aws/agent-toolkit-for-aws/tree/main/skills/specialized-skills/serverless-skills/amazon-eventbridge-event-bus --yes --global
+```
+
 This installs agent skills including the AWS serverless skill, agent hooks, and the AWS MCP Server configuration in one step.
 
 ### Install Serverless MCP Server
@@ -60,6 +66,12 @@ claude mcp add awslabs-aws-serverless-mcp \
 npx skills add https://github.com/aws/agent-toolkit-for-aws --skill aws-serverless --yes --global
 ```
 
+Then install the Amazon EventBridge skill:
+
+```
+npx skills add https://github.com/aws/agent-toolkit-for-aws/tree/main/skills/specialized-skills/serverless-skills/amazon-eventbridge-event-bus --yes --global
+```
+
 ### Install Serverless MCP Server
 <a name="eb-agent-setup-codex-mcp"></a>
 
@@ -81,6 +93,12 @@ codex mcp add awslabs-aws-serverless-mcp \
 
 ```
 npx skills add https://github.com/aws/agent-toolkit-for-aws --skill aws-serverless --yes --global
+```
+
+Then install the Amazon EventBridge skill:
+
+```
+npx skills add https://github.com/aws/agent-toolkit-for-aws/tree/main/skills/specialized-skills/serverless-skills/amazon-eventbridge-event-bus --yes --global
 ```
 
 ### Install Serverless MCP Server
@@ -108,6 +126,12 @@ Add the following to `.cursor/mcp.json` under `"mcpServers"`. Replace {{AWS\_PRO
 
 ```
 npx skills add https://github.com/aws/agent-toolkit-for-aws --skill aws-serverless --yes --global
+```
+
+Then install the Amazon EventBridge skill:
+
+```
+npx skills add https://github.com/aws/agent-toolkit-for-aws/tree/main/skills/specialized-skills/serverless-skills/amazon-eventbridge-event-bus --yes --global
 ```
 
 ### Install Serverless MCP Server
@@ -144,6 +168,12 @@ Install the following Kiro powers that provide specialized contexts and tools to
 npx skills add https://github.com/aws/agent-toolkit-for-aws --skill aws-serverless --yes --global
 ```
 
+Then install the Amazon EventBridge skill:
+
+```
+npx skills add https://github.com/aws/agent-toolkit-for-aws/tree/main/skills/specialized-skills/serverless-skills/amazon-eventbridge-event-bus --yes --global
+```
+
 ### Install Serverless MCP Server
 <a name="eb-agent-setup-github-copilot-mcp"></a>
 
@@ -161,7 +191,7 @@ Add the following to `.vscode/mcp.json` under `"mcpServers"`. Replace {{AWS\_PRO
 }
 ```
 
-## Windsurf
+## Devin Desktop
 <a name="eb-agent-setup-windsurf"></a>
 
 ### Install AWS serverless skill
@@ -169,6 +199,12 @@ Add the following to `.vscode/mcp.json` under `"mcpServers"`. Replace {{AWS\_PRO
 
 ```
 npx skills add https://github.com/aws/agent-toolkit-for-aws --skill aws-serverless --yes --global
+```
+
+Then install the Amazon EventBridge skill:
+
+```
+npx skills add https://github.com/aws/agent-toolkit-for-aws/tree/main/skills/specialized-skills/serverless-skills/amazon-eventbridge-event-bus --yes --global
 ```
 
 ### Install Serverless MCP Server
@@ -198,6 +234,12 @@ Add the following to `/.codeium/windsurf/mcp_config.json` under `"mcpServers"`. 
 npx skills add https://github.com/aws/agent-toolkit-for-aws --skill aws-serverless --yes --global
 ```
 
+Then install the Amazon EventBridge skill:
+
+```
+npx skills add https://github.com/aws/agent-toolkit-for-aws/tree/main/skills/specialized-skills/serverless-skills/amazon-eventbridge-event-bus --yes --global
+```
+
 ### Install Serverless MCP Server
 <a name="eb-agent-setup-opencode-mcp"></a>
 
@@ -225,6 +267,12 @@ For any other agent that supports the open-source [agent skills](https://agentsk
 
 ```
 npx skills add https://github.com/aws/agent-toolkit-for-aws --skill aws-serverless --yes --global
+```
+
+Then install the Amazon EventBridge skill:
+
+```
+npx skills add https://github.com/aws/agent-toolkit-for-aws/tree/main/skills/specialized-skills/serverless-skills/amazon-eventbridge-event-bus --yes --global
 ```
 
 ### Install Serverless MCP Server

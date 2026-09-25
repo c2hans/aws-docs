@@ -25,7 +25,6 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Properties" : {
       "[AllowedAccessControlHierarchyGroupId](#cfn-connect-securityprofile-allowedaccesscontrolhierarchygroupid)" : {{String}},
       "[AllowedAccessControlTags](#cfn-connect-securityprofile-allowedaccesscontroltags)" : {{[ Tag, ... ]}},
-      "[AllowedAIAgents](#cfn-connect-securityprofile-allowedaiagents)" : {{[ AIAgent, ... ]}},
       "[AllowedFlowModules](#cfn-connect-securityprofile-allowedflowmodules)" : {{[ FlowModule, ... ]}},
       "[Applications](#cfn-connect-securityprofile-applications)" : {{[ Application, ... ]}},
       "[Description](#cfn-connect-securityprofile-description)" : {{String}},
@@ -49,8 +48,6 @@ Properties:
   [AllowedAccessControlHierarchyGroupId](#cfn-connect-securityprofile-allowedaccesscontrolhierarchygroupid): {{String}}
   [AllowedAccessControlTags](#cfn-connect-securityprofile-allowedaccesscontroltags): {{
     - Tag}}
-  [AllowedAIAgents](#cfn-connect-securityprofile-allowedaiagents): {{
-    - AIAgent}}
   [AllowedFlowModules](#cfn-connect-securityprofile-allowedflowmodules): {{
     - FlowModule}}
   [Applications](#cfn-connect-securityprofile-applications): {{
@@ -87,13 +84,6 @@ The list of tags that a security profile uses to restrict access to resources in
 *Required*: No
 *Type*: Array of [Tag](aws-properties-connect-securityprofile-tag.md)
 *Maximum*: `4`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
-
-`AllowedAIAgents`  <a name="cfn-connect-securityprofile-allowedaiagents"></a>
-Property description not available.
-*Required*: No
-*Type*: Array of [AIAgent](aws-properties-connect-securityprofile-aiagent.md)
-*Maximum*: `10`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `AllowedFlowModules`  <a name="cfn-connect-securityprofile-allowedflowmodules"></a>

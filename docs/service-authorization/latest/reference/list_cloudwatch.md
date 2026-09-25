@@ -26,268 +26,718 @@ References:
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_cloudwatch-actions-as-permissions).
 
 - **   DeleteAlarmMuteRule  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:DeleteAlarmMuteRule](#list_cloudwatch-action-DeleteAlarmMuteRule)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   DeleteAlarms  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:DeleteAlarms](#list_cloudwatch-action-DeleteAlarms)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   DeleteAnomalyDetector  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:DeleteAnomalyDetector](#list_cloudwatch-action-DeleteAnomalyDetector)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   DeleteDashboards  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:DeleteDashboards](#list_cloudwatch-action-DeleteDashboards)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   DeleteInsightRules  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:DeleteInsightRules](#list_cloudwatch-action-DeleteInsightRules)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   DeleteMetricStream  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:DeleteMetricStream](#list_cloudwatch-action-DeleteMetricStream)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   DescribeAlarmHistory  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:DescribeAlarmHistory](#list_cloudwatch-action-DescribeAlarmHistory)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   DescribeAlarms  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:DescribeAlarms](#list_cloudwatch-action-DescribeAlarms)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   DescribeAlarmsForMetric  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:DescribeAlarmsForMetric](#list_cloudwatch-action-DescribeAlarmsForMetric)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   DescribeAnomalyDetectors  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:DescribeAnomalyDetectors](#list_cloudwatch-action-DescribeAnomalyDetectors)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   DescribeInsightRules  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:DescribeInsightRules](#list_cloudwatch-action-DescribeInsightRules)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   DisableAlarmActions  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:DisableAlarmActions](#list_cloudwatch-action-DisableAlarmActions)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   DisableInsightRules  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:DisableInsightRules](#list_cloudwatch-action-DisableInsightRules)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   EnableAlarmActions  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:EnableAlarmActions](#list_cloudwatch-action-EnableAlarmActions)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   EnableInsightRules  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:EnableInsightRules](#list_cloudwatch-action-EnableInsightRules)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   GetAlarmMuteRule  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:GetAlarmMuteRule](#list_cloudwatch-action-GetAlarmMuteRule)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetDashboard  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:GetDashboard](#list_cloudwatch-action-GetDashboard)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetDataset  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:GetDataset](#list_cloudwatch-action-GetDataset)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetInsightRuleReport  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:GetInsightRuleReport](#list_cloudwatch-action-GetInsightRuleReport)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetMetricData  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:GetMetricData](#list_cloudwatch-action-GetMetricData)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetMetricStatistics  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:GetMetricStatistics](#list_cloudwatch-action-GetMetricStatistics)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetMetricStream  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:GetMetricStream](#list_cloudwatch-action-GetMetricStream)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetMetricWidgetImage  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:GetMetricWidgetImage](#list_cloudwatch-action-GetMetricWidgetImage)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetOTelEnrichment  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:GetOTelEnrichment](#list_cloudwatch-action-GetOTelEnrichment)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   ListAlarmMuteRules  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:ListAlarmMuteRules](#list_cloudwatch-action-ListAlarmMuteRules)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListDashboards  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:ListDashboards](#list_cloudwatch-action-ListDashboards)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListManagedInsightRules  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:ListManagedInsightRules](#list_cloudwatch-action-ListManagedInsightRules)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   ListMetricStreams  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:ListMetricStreams](#list_cloudwatch-action-ListMetricStreams)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListMetrics  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:ListMetrics](#list_cloudwatch-action-ListMetrics)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListTagsForResource  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:ListTagsForResource](#list_cloudwatch-action-ListTagsForResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** List
   - **IAM action:**  [oam:ListTagsForResource](https://docs.aws.amazon.com/OAM/latest/APIReference/API_ListTagsForResource.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
 
 - **   PutAlarmMuteRule  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:PutAlarmMuteRule](#list_cloudwatch-action-PutAlarmMuteRule)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [cloudwatch:TagResource](#list_cloudwatch-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   PutAnomalyDetector  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:PutAnomalyDetector](#list_cloudwatch-action-PutAnomalyDetector)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   PutCompositeAlarm  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:PutCompositeAlarm](#list_cloudwatch-action-PutCompositeAlarm)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [cloudwatch:TagResource](#list_cloudwatch-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   PutDashboard  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:PutDashboard](#list_cloudwatch-action-PutDashboard)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [cloudwatch:TagResource](#list_cloudwatch-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   PutInsightRule  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:PutInsightRule](#list_cloudwatch-action-PutInsightRule)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [cloudwatch:TagResource](#list_cloudwatch-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   PutLogAlarm  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:PutLogAlarm](#list_cloudwatch-action-PutLogAlarm)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [cloudwatch:TagResource](#list_cloudwatch-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** cloudwatch.amazonaws.com / **Access level:** Write
 
 - **   PutManagedInsightRules  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:PutManagedInsightRules](#list_cloudwatch-action-PutManagedInsightRules)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   PutMetricAlarm  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:PutMetricAlarm](#list_cloudwatch-action-PutMetricAlarm)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [cloudwatch:TagResource](#list_cloudwatch-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   PutMetricData  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:PutMetricData](#list_cloudwatch-action-PutMetricData)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   PutMetricStream  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:PutMetricStream](#list_cloudwatch-action-PutMetricStream)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [cloudwatch:TagResource](#list_cloudwatch-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** streams.metrics.cloudwatch.amazonaws.com / **Access level:** Write
 
 - **   SetAlarmState  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:SetAlarmState](#list_cloudwatch-action-SetAlarmState)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   StartMetricStreams  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:StartMetricStreams](#list_cloudwatch-action-StartMetricStreams)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   StartOTelEnrichment  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:StartOTelEnrichment](#list_cloudwatch-action-StartOTelEnrichment)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   StopMetricStreams  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:StopMetricStreams](#list_cloudwatch-action-StopMetricStreams)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   StopOTelEnrichment  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:StopOTelEnrichment](#list_cloudwatch-action-StopOTelEnrichment)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   TagResource  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:TagResource](#list_cloudwatch-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [oam:TagResource](https://docs.aws.amazon.com/OAM/latest/APIReference/API_TagResource.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   UntagResource  **
+  - **SDK client:** cloudwatch
   - **IAM action:**  [cloudwatch:UntagResource](#list_cloudwatch-action-UntagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [oam:UntagResource](https://docs.aws.amazon.com/OAM/latest/APIReference/API_UntagResource.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
+- **   CreateAccessGrant  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:CreateAccessGrant](#list_cloudwatch-action-CreateAccessGrant)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Permissions management, Write
+  - **IAM action:**  [cloudwatch:TagResource](#list_cloudwatch-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
+- **   CreateAccessProfile  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:CreateAccessProfile](#list_cloudwatch-action-CreateAccessProfile)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Permissions management, Write
+  - **IAM action:**  [cloudwatch:TagResource](#list_cloudwatch-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
+- **   CreateAlert  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:CreateAlert](#list_cloudwatch-action-CreateAlert)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   CreateDomain  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:CreateDomain](#list_cloudwatch-action-CreateDomain)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [cloudwatch:TagResource](#list_cloudwatch-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
+- **   CreateDomainAccessGrantForOrganization  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:CreateDomainAccessGrantForOrganization](#list_cloudwatch-action-CreateDomainAccessGrantForOrganization)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Permissions management, Write
+  - **IAM action:**  [cloudwatch:TagResource](#list_cloudwatch-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
+- **   CreateDomainForOrganization  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:CreateDomainForOrganization](#list_cloudwatch-action-CreateDomainForOrganization)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [cloudwatch:TagResource](#list_cloudwatch-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** cloudwatch.amazonaws.com / **Access level:** Write
+
+- **   CreateIntegration  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:CreateIntegration](#list_cloudwatch-action-CreateIntegration)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [cloudwatch:TagResource](#list_cloudwatch-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** cloudwatch.amazonaws.com / **Access level:** Write
+
+- **   CreateOmniDashboard  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:CreateOmniDashboard](#list_cloudwatch-action-CreateOmniDashboard)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [cloudwatch:TagResource](#list_cloudwatch-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
+- **   CreateOneTimeDeepLinkCode  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:CreateOneTimeDeepLinkCode](#list_cloudwatch-action-CreateOneTimeDeepLinkCode)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   CreateSpace  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:CreateSpace](#list_cloudwatch-action-CreateSpace)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [cloudwatch:TagResource](#list_cloudwatch-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** cloudwatch.amazonaws.com / **Access level:** Write
+
+- **   CreateView  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:CreateView](#list_cloudwatch-action-CreateView)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteAccessGrant  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:DeleteAccessGrant](#list_cloudwatch-action-DeleteAccessGrant)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Permissions management, Write
+
+- **   DeleteAccessProfile  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:DeleteAccessProfile](#list_cloudwatch-action-DeleteAccessProfile)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Permissions management, Write
+
+- **   DeleteDomain  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:DeleteDomain](#list_cloudwatch-action-DeleteDomain)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteDomainAccessGrantForOrganization  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:DeleteDomainAccessGrantForOrganization](#list_cloudwatch-action-DeleteDomainAccessGrantForOrganization)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Permissions management, Write
+
+- **   DeleteDomainForOrganization  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:DeleteDomainForOrganization](#list_cloudwatch-action-DeleteDomainForOrganization)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteIntegration  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:DeleteIntegration](#list_cloudwatch-action-DeleteIntegration)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteOmniDashboard  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:DeleteOmniDashboard](#list_cloudwatch-action-DeleteOmniDashboard)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteSpace  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:DeleteSpace](#list_cloudwatch-action-DeleteSpace)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteView  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:DeleteView](#list_cloudwatch-action-DeleteView)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   GetAccessGrant  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:GetAccessGrant](#list_cloudwatch-action-GetAccessGrant)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetAccessProfile  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:GetAccessProfile](#list_cloudwatch-action-GetAccessProfile)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetAlert  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:GetAlert](#list_cloudwatch-action-GetAlert)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetContextGraph  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:GetContextGraph](#list_cloudwatch-action-GetContextGraph)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetDomain  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:GetDomain](#list_cloudwatch-action-GetDomain)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetDomainAccessGrantForOrganization  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:GetDomainAccessGrantForOrganization](#list_cloudwatch-action-GetDomainAccessGrantForOrganization)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetDomainForOrganization  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:GetDomainForOrganization](#list_cloudwatch-action-GetDomainForOrganization)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetIntegration  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:GetIntegration](#list_cloudwatch-action-GetIntegration)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetIntelligenceConfiguration  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:GetIntelligenceConfiguration](#list_cloudwatch-action-GetIntelligenceConfiguration)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetOmniDashboard  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:GetOmniDashboard](#list_cloudwatch-action-GetOmniDashboard)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetSpace  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:GetSpace](#list_cloudwatch-action-GetSpace)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetSpaceCredentialsForOrganization  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:GetSpaceCredentialsForOrganization](#list_cloudwatch-action-GetSpaceCredentialsForOrganization)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetTelemetryQueryResults  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:GetTelemetryQueryResults](#list_cloudwatch-action-GetTelemetryQueryResults)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetView  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:GetView](#list_cloudwatch-action-GetView)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   ListAccessGrants  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:ListAccessGrants](#list_cloudwatch-action-ListAccessGrants)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListAccessProfiles  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:ListAccessProfiles](#list_cloudwatch-action-ListAccessProfiles)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListAlerts  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:ListAlerts](#list_cloudwatch-action-ListAlerts)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListDomainAccessGrantsForOrganization  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:ListDomainAccessGrantsForOrganization](#list_cloudwatch-action-ListDomainAccessGrantsForOrganization)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListDomains  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:ListDomains](#list_cloudwatch-action-ListDomains)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListIntegrations  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:ListIntegrations](#list_cloudwatch-action-ListIntegrations)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListOmniDashboards  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:ListOmniDashboards](#list_cloudwatch-action-ListOmniDashboards)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListSpaces  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:ListSpaces](#list_cloudwatch-action-ListSpaces)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListSpacesForOrganization  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:ListSpacesForOrganization](#list_cloudwatch-action-ListSpacesForOrganization)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListTelemetryFields  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:GetRecords](#list_cloudwatch-action-GetRecords)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+  - **IAM action:**  [cloudwatch:ListMetrics](#list_cloudwatch-action-ListMetrics)  / **Condition key:**  / **Possible value(s):**  / **Access level:** List
+  - **IAM action:**  [cloudwatch:ListTelemetryFields](#list_cloudwatch-action-ListTelemetryFields)  / **Condition key:**  / **Possible value(s):**  / **Access level:** List
+
+- **   ListTelemetryQuerySessions  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:ListTelemetryQuerySessions](#list_cloudwatch-action-ListTelemetryQuerySessions)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListViews  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:ListViews](#list_cloudwatch-action-ListViews)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   PutIntelligenceConfiguration  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:PutIntelligenceConfiguration](#list_cloudwatch-action-PutIntelligenceConfiguration)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   SearchPrincipals  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:SearchPrincipals](#list_cloudwatch-action-SearchPrincipals)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   StartTelemetryQuery  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:GetMetricData](#list_cloudwatch-action-GetMetricData)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+  - **IAM action:**  [cloudwatch:GetRecords](#list_cloudwatch-action-GetRecords)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+  - **IAM action:**  [cloudwatch:ListMetrics](#list_cloudwatch-action-ListMetrics)  / **Condition key:**  / **Possible value(s):**  / **Access level:** List
+
+- **   StartTelemetryQuerySession  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:StartTelemetryQuerySession](#list_cloudwatch-action-StartTelemetryQuerySession)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   StopTelemetryQuery  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:StopTelemetryQuery](#list_cloudwatch-action-StopTelemetryQuery)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   StopTelemetryQuerySession  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:StopTelemetryQuerySession](#list_cloudwatch-action-StopTelemetryQuerySession)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   UpdateAccessProfile  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:UpdateAccessProfile](#list_cloudwatch-action-UpdateAccessProfile)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Permissions management, Write
+
+- **   UpdateAlert  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:UpdateAlert](#list_cloudwatch-action-UpdateAlert)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   UpdateDomain  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:UpdateDomain](#list_cloudwatch-action-UpdateDomain)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   UpdateDomainForOrganization  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:UpdateDomainForOrganization](#list_cloudwatch-action-UpdateDomainForOrganization)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   UpdateIntegration  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:UpdateIntegration](#list_cloudwatch-action-UpdateIntegration)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** cloudwatch.amazonaws.com / **Access level:** Write
+
+- **   UpdateOmniDashboard  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:UpdateOmniDashboard](#list_cloudwatch-action-UpdateOmniDashboard)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   UpdateSpace  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:UpdateSpace](#list_cloudwatch-action-UpdateSpace)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   UpdateView  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:UpdateView](#list_cloudwatch-action-UpdateView)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
 
 ## Actions defined by Amazon CloudWatch
 <a name="list_cloudwatch-actions-as-permissions"></a>

@@ -13,7 +13,7 @@ Response containing custom template information
  ** templateType **   <a name="connecthealth-Type-CustomTemplateResponse-templateType"></a>
 The base template type that was customized
 Type: String
-Valid Values: `HISTORY_AND_PHYSICAL | GIRPP | DAP | SIRP | BIRP | BEHAVIORAL_SOAP | DENTAL`
+Valid Values: `HISTORY_AND_PHYSICAL | GIRPP | DAP | SIRP | BIRP | BEHAVIORAL_SOAP`
 Required: No
 
 ## See Also

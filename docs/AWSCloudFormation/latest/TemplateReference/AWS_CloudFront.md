@@ -16,6 +16,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::CloudFront::ContinuousDeploymentPolicy](aws-resource-cloudfront-continuousdeploymentpolicy.md)
 + [AWS::CloudFront::Distribution](aws-resource-cloudfront-distribution.md)
 + [AWS::CloudFront::DistributionTenant](aws-resource-cloudfront-distributiontenant.md)
++ [AWS::CloudFront::FieldLevelEncryptionProfile](aws-resource-cloudfront-fieldlevelencryptionprofile.md)
 + [AWS::CloudFront::Function](aws-resource-cloudfront-function.md)
 + [AWS::CloudFront::KeyGroup](aws-resource-cloudfront-keygroup.md)
 + [AWS::CloudFront::KeyValueStore](aws-resource-cloudfront-keyvaluestore.md)

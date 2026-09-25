@@ -35,6 +35,7 @@ You can add tags to the stream when making a `CreateStream` request by setting t
 ```
 {
    "MaxRecordSizeInKiB": {{number}},
+   "RecordDistributionStrategy": "{{string}}",
    "ShardCount": {{number}},
    "StreamModeDetails": {
       "StreamMode": "{{string}}"
@@ -56,6 +57,15 @@ The request accepts the following data in JSON format.
 The maximum record size of a single record in kibibyte (KiB) that you can write to, and read from a stream.
 Type: Integer
 Valid Range: Minimum value of 1024. Maximum value of 10240.
+Required: No
+
+ ** [RecordDistributionStrategy](#API_CreateStream_RequestSyntax) **   <a name="Streams-CreateStream-request-RecordDistributionStrategy"></a>
+The record distribution strategy for the stream, which determines how Amazon Kinesis Data Streams distributes records across shards. Specify one of the following values:
++  `AUTO` – Amazon Kinesis Data Streams distributes records evenly across shards and ignores any partition key and `ExplicitHashKey` that producers supply. Use this value for stateless workloads that do not require partition-key ordering.
++  `USER_PARTITION_KEY` – Producers must supply a partition key, which Amazon Kinesis Data Streams uses to determine shard placement. This is the default.
+The record distribution strategy is only supported for streams that use the on-demand capacity mode. If you do not specify this parameter, the stream uses `USER_PARTITION_KEY`.
+Type: String
+Valid Values: `AUTO | USER_PARTITION_KEY`
 Required: No
 
  ** [ShardCount](#API_CreateStream_RequestSyntax) **   <a name="Streams-CreateStream-request-ShardCount"></a>

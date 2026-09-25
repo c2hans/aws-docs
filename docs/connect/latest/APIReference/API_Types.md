@@ -602,6 +602,7 @@ The following data types are supported by Amazon AppIntegrations Service:
 +  [ApplicationConfig](API_connect-app-integrations_ApplicationConfig.md)
 +  [ApplicationSourceConfig](API_connect-app-integrations_ApplicationSourceConfig.md)
 +  [ApplicationSummary](API_connect-app-integrations_ApplicationSummary.md)
++  [AuthConfig](API_connect-app-integrations_AuthConfig.md)
 +  [ContactHandling](API_connect-app-integrations_ContactHandling.md)
 +  [DataIntegrationAssociationSummary](API_connect-app-integrations_DataIntegrationAssociationSummary.md)
 +  [DataIntegrationSummary](API_connect-app-integrations_DataIntegrationSummary.md)

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/multi-omics-and-multi-modal-da
 title: 'Guidance for Multi-Omics and Multi-Modal Data Integration and Analysis on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/multi-omics-and-multi-modal-data-integration-and-analysis/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # Guidance for Multi-Omics and Multi-Modal Data Integration and Analysis on AWS

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/receiving-digital-imaging-and-
 title: 'Guidance for Receiving Digital Imaging and Communications in Medicine (DICOM) Images in Amazon S3'
 canonical_url: https://docs.aws.amazon.com/solutions/receiving-digital-imaging-and-communications-in-medicine-images-in-amazon-s3/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # Guidance for Receiving Digital Imaging and Communications in Medicine (DICOM) Images in Amazon S3

@@ -5,12 +5,12 @@ source_url: https://docs.aws.amazon.com/solutions/latest/network-orchestration-a
 # Using and customizing route tables
 <a name="using-and-customizing-route-tables"></a>
 
-This section provides a user guide for solution transit gateway route tables.
+This section provides a user guide for the transit gateway route tables.
 
 ## Default route tables
 <a name="default-route-tables"></a>
 
-This solution creates the following default transit gateway route tables: `Flat`, `Isolated`, `Infrastructure`, and `On-premises`. Each route table and suggested propagations include a policy for common use cases.
+This Guidance creates the following default transit gateway route tables: `Flat`, `Isolated`, `Infrastructure`, and `On-premises`. Each route table and suggested propagations include a policy for common use cases.
 +  **Flat**\***route table** - VPCs associated with the `Flat` policy can reach other VPCs associated with the `Flat`, `SharedServices`, or `Hybrid` policies. The `Flat` policy enables a VPC to have connectivity to many other VPCs.
 +  **Isolated route table** - VPCs associated with the `Isolated policy` can reach VPCs with the `SharedServices` and `Hybrid` policies. VPCs in the `Isolated` policy can’t use Transit Gateway to connect to other VPCs in the `Isolated` policy. This policy is for VPCs that don’t communicate with each other.
 +  **Infrastructure route table** - VPCs associated with the `SharedServices` policy can reach other VPCs associated with the `Isolated`, `Flat`, or `Hybrid` policies. The `SharedServices` policy is used for VPCs that many other VPCs may rely on, such as shared authentication, shared tooling, or orchestration tools.
@@ -25,7 +25,7 @@ This solution creates the following default transit gateway route tables: `Flat`
 
 **Note**
 In this implementation guide, a policy is defined by both an association to a single transit gateway route table, and the transit gateway route table propagation. To implement these concepts, you must tag both the association and propagation on each spoke VPC according to the intended design. This is because the policies aren’t centrally managed. Inconsistent tagging can create a drift between the desired policy and what is configured.
-You can use the **ApprovalRequired** tag on route tables that need manual control. By default, we set up this solution for automatic approval, but you can change this tag to set up manual approval. See [Transit gateway route table tags](custom-compliance.md#add-tags-to-transit-gateway-route-table) for more information about the **ApprovalRequired** tag.
+You can use the **ApprovalRequired** tag on route tables that need manual control. By default, the Guidance configures automatic approval, but you can change this tag to set up manual approval. See [Transit gateway route table tags](custom-compliance.md#add-tags-to-transit-gateway-route-table) for more information about the **ApprovalRequired** tag.
 For more information, refer to [On-premises connectivity](#on-premises-connectivity).
 
 ## Custom route tables
@@ -96,7 +96,7 @@ If your custom route table requires access to VPCs that have already been attach
 
 To associate a new VPC to this route table:
 
-1. Tag the new VPC with the **Associate-with** key and reference the new route table name in the value. See [Step 5: Add tags](step-5-add-tags.md) for detailed tagging instructions. For example:
+1. Tag the new VPC with the **Associate-with** key and reference the new route table name in the value. See [Step 6: Add tags](step-6-add-tags.md) for detailed tagging instructions. For example:
 
    ```
    Associate-with: <ExampleRouteTable>
@@ -128,7 +128,7 @@ If you don’t need the provided `Flat` policy, you can modify the existing `Fla
 ## On-premises connectivity
 <a name="on-premises-connectivity"></a>
 
-This solution builds a base network, giving you automation to attach VPCs to a transit gateway. You can extend your on-premises network by creating transit gateway route tables using the web UI, creating VPN attachments, or attaching a transit gateway to an AWS Direct Connect gateway.
+This Guidance builds a base network, giving you automation to attach VPCs to a transit gateway. You can extend your on-premises network by creating transit gateway route tables using the web UI, creating VPN attachments, or attaching a transit gateway to an AWS Direct Connect gateway.
 
 For instructions on how to manually attach a VPN to the transit gateway for on-premises connectivity, see [Transit gateway VPN attachments](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-vpn-attachments.html).
 

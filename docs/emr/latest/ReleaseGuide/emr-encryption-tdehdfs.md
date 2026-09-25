@@ -37,7 +37,7 @@ The `hdfs-encryption-zones` classification in the configuration API operation al
 + Create a cluster with the following command.
 
   ```
-  aws emr create-cluster --release-label {{emr-7.13.0}} --instance-type m5.xlarge --instance-count 2 \
+  aws emr create-cluster --release-label {{emr-7.14.0}} --instance-type m5.xlarge --instance-count 2 \
   --applications Name={{App1}} Name={{App2}} --configurations https://s3.amazonaws.com/amzn-s3-demo-bucket/myfolder/myConfig.json
   ```
 **Note**
@@ -140,7 +140,7 @@ You can configure Hadoop KMS at cluster creation time using the configuration AP
 + Create a cluster with Hadoop KMS with ACLs using the following command:
 
   ```
-  aws emr create-cluster --release-label {{emr-7.13.0}} --instance-type m5.xlarge --instance-count 2 \
+  aws emr create-cluster --release-label {{emr-7.14.0}} --instance-type m5.xlarge --instance-count 2 \
   --applications Name={{App1}} Name={{App2}} --configurations https://s3.amazonaws.com/amzn-s3-demo-bucket/myfolder/myConfig.json
   ```
 **Note**
@@ -164,7 +164,7 @@ Linux line continuation characters (\\) are included for readability. They can b
 + Create a cluster with Hadoop KMS `hadoop.kms.cache.enable` set to `false`, using the following command:
 
   ```
-  aws emr create-cluster --release-label {{emr-7.13.0}} --instance-type m5.xlarge --instance-count 2 \
+  aws emr create-cluster --release-label {{emr-7.14.0}} --instance-type m5.xlarge --instance-count 2 \
   --applications Name={{App1}} Name={{App2}} --configurations https://s3.amazonaws.com/amzn-s3-demo-bucket/myfolder/myConfig.json
   ```
 **Note**
@@ -187,7 +187,7 @@ Linux line continuation characters (\\) are included for readability. They can b
 + Change settings in `kms-env.sh` via the `hadoop-kms-env` configuration. Create a cluster with Hadoop KMS using the following command:
 
   ```
-  aws emr create-cluster --release-label {{emr-7.13.0}} --instance-type m5.xlarge --instance-count 2 \
+  aws emr create-cluster --release-label {{emr-7.14.0}} --instance-type m5.xlarge --instance-count 2 \
   --applications Name={{App1}} Name={{App2}} --configurations https://s3.amazonaws.com/amzn-s3-demo-bucket/myfolder/myConfig.json
   ```
 **Note**

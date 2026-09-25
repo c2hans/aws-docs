@@ -25,6 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[ELBLoadBalancerLoggingParameters](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-elbloadbalancerloggingparameters)" : {{ELBLoadBalancerLoggingParameters}},
   "[KmsKeyArn](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-kmskeyarn)" : {{String}},
   "[LogDeliveryParameters](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-logdeliveryparameters)" : {{LogDeliveryParameters}},
+  "[MskMonitoringParameters](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-mskmonitoringparameters)" : {{MskMonitoringParameters}},
   "[RetentionInDays](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-retentionindays)" : {{Integer}},
   "[VPCFlowLogParameters](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-vpcflowlogparameters)" : {{VPCFlowLogParameters}},
   "[WAFLoggingParameters](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-wafloggingparameters)" : {{WAFLoggingParameters}}
@@ -44,6 +45,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   [KmsKeyArn](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-kmskeyarn): {{String}}
   [LogDeliveryParameters](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-logdeliveryparameters): {{
     LogDeliveryParameters}}
+  [MskMonitoringParameters](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-mskmonitoringparameters): {{
+    MskMonitoringParameters}}
   [RetentionInDays](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-retentionindays): {{Integer}}
   [VPCFlowLogParameters](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-vpcflowlogparameters): {{
     VPCFlowLogParameters}}
@@ -92,6 +95,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 The configuration parameters for log delivery when the resource type supports configurable log types, such as Amazon Bedrock Knowledge Bases or Elastic Load Balancing Application Load Balancers.
 *Required*: No
 *Type*: [LogDeliveryParameters](aws-properties-observabilityadmin-telemetryrule-logdeliveryparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`MskMonitoringParameters`  <a name="cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-mskmonitoringparameters"></a>
+ Configuration parameters specific to MSK monitoring when MSK is the resource type.
+*Required*: No
+*Type*: [MskMonitoringParameters](aws-properties-observabilityadmin-telemetryrule-mskmonitoringparameters.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `RetentionInDays`  <a name="cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-retentionindays"></a>

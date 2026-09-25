@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/building-geolocation-systems-f
 title: 'Guidance for Building Geolocation Systems for the Betting & Gaming Industry on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/building-geolocation-systems-for-the-betting-and-gaming-industry-on-aws/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # Guidance for Building Geolocation Systems for the Betting & Gaming Industry on AWS

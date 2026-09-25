@@ -20,6 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[Rist](#cfn-mediaconnect-routeroutput-routeroutputprotocolconfiguration-rist)" : {{RistRouterOutputConfiguration}},
+  "[RtmpPush](#cfn-mediaconnect-routeroutput-routeroutputprotocolconfiguration-rtmppush)" : {{RtmpPushRouterOutputConfiguration}},
   "[Rtp](#cfn-mediaconnect-routeroutput-routeroutputprotocolconfiguration-rtp)" : {{RtpRouterOutputConfiguration}},
   "[SrtCaller](#cfn-mediaconnect-routeroutput-routeroutputprotocolconfiguration-srtcaller)" : {{SrtCallerRouterOutputConfiguration}},
   "[SrtListener](#cfn-mediaconnect-routeroutput-routeroutputprotocolconfiguration-srtlistener)" : {{SrtListenerRouterOutputConfiguration}}
@@ -32,6 +33,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [Rist](#cfn-mediaconnect-routeroutput-routeroutputprotocolconfiguration-rist): {{
     RistRouterOutputConfiguration}}
+  [RtmpPush](#cfn-mediaconnect-routeroutput-routeroutputprotocolconfiguration-rtmppush): {{
+    RtmpPushRouterOutputConfiguration}}
   [Rtp](#cfn-mediaconnect-routeroutput-routeroutputprotocolconfiguration-rtp): {{
     RtpRouterOutputConfiguration}}
   [SrtCaller](#cfn-mediaconnect-routeroutput-routeroutputprotocolconfiguration-srtcaller): {{
@@ -47,6 +50,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 The configuration settings for a router output using the RIST (Reliable Internet Stream Transport) protocol, including the destination address and port.
 *Required*: No
 *Type*: [RistRouterOutputConfiguration](aws-properties-mediaconnect-routeroutput-ristrouteroutputconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`RtmpPush`  <a name="cfn-mediaconnect-routeroutput-routeroutputprotocolconfiguration-rtmppush"></a>
+Property description not available.
+*Required*: No
+*Type*: [RtmpPushRouterOutputConfiguration](aws-properties-mediaconnect-routeroutput-rtmppushrouteroutputconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Rtp`  <a name="cfn-mediaconnect-routeroutput-routeroutputprotocolconfiguration-rtp"></a>

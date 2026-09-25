@@ -7,7 +7,7 @@ There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://
 # Hello Amazon ECS
 <a name="ecs_example_ecs_Hello_section"></a>
 
-The following code example shows how to get started using Amazon ECS.
+The following code examples show how to get started using Amazon ECS.
 
 ------
 #### [ .NET ]
@@ -78,5 +78,49 @@ public class HelloECS
 }
 ```
 +  For API details, see [ListClusters](https://docs.aws.amazon.com/goto/DotNetSDKV4/ecs-2014-11-13/ListClusters) in *AWS SDK for .NET API Reference*.
+
+------
+#### [ Python ]
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecs#code-examples).
+
+```
+import logging
+
+import boto3
+from botocore.exceptions import ClientError
+
+logger = logging.getLogger(__name__)
+
+def hello_ecs():
+    """
+    Lists the Amazon ECS clusters in the current AWS region.
+    Uses a paginator to handle large numbers of clusters.
+    """
+    ecs_client = boto3.client("ecs")
+    try:
+        paginator = ecs_client.get_paginator("list_clusters")
+        cluster_arns = list()
+        for page in paginator.paginate():
+            cluster_arns.extend(page.get("clusterArns", list()))
+        if cluster_arns:
+            print(f"Found {len(cluster_arns)} ECS cluster(s):")
+            for arn in cluster_arns:
+                print(f"  - {arn}")
+        else:
+            print("No ECS clusters found in the current region.")
+    except ClientError as err:
+        logger.error(
+            "Error listing ECS clusters: %s: %s",
+            err.response["Error"]["Code"],
+            err.response["Error"]["Message"],
+        )
+        raise
+
+if __name__ == "__main__":
+    hello_ecs()
+```
++  For API details, see [ListClusters](https://docs.aws.amazon.com/goto/boto3/ecs-2014-11-13/ListClusters) in *AWS SDK for Python (Boto3) API Reference*.
 
 ------

@@ -47,6 +47,8 @@ Content-type: application/json
       "Source": {
          "Regions": [ "{{string}}" ],
          "Scope": "{{string}}",
+         "SourceContextGraphConfiguration": {
+         },
          "SourceLogsConfiguration": {
             "DataSourceSelectionCriteria": "{{string}}",
             "EncryptedLogGroupStrategy": "{{string}}",

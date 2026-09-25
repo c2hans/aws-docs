@@ -26,6 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[DataSetIdentifier](#cfn-quicksight-analysis-customcontentvisual-datasetidentifier)" : {{String}},
   "[Subtitle](#cfn-quicksight-analysis-customcontentvisual-subtitle)" : {{VisualSubtitleLabelOptions}},
   "[Title](#cfn-quicksight-analysis-customcontentvisual-title)" : {{VisualTitleLabelOptions}},
+  "[TopicIdentifier](#cfn-quicksight-analysis-customcontentvisual-topicidentifier)" : {{String}},
   "[VisualContentAltText](#cfn-quicksight-analysis-customcontentvisual-visualcontentalttext)" : {{String}},
   "[VisualId](#cfn-quicksight-analysis-customcontentvisual-visualid)" : {{String}}
 }
@@ -44,6 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
     VisualSubtitleLabelOptions}}
   [Title](#cfn-quicksight-analysis-customcontentvisual-title): {{
     VisualTitleLabelOptions}}
+  [TopicIdentifier](#cfn-quicksight-analysis-customcontentvisual-topicidentifier): {{String}}
   [VisualContentAltText](#cfn-quicksight-analysis-customcontentvisual-visualcontentalttext): {{String}}
   [VisualId](#cfn-quicksight-analysis-customcontentvisual-visualid): {{String}}
 ```
@@ -67,9 +69,9 @@ The configuration of a `CustomContentVisual`.
 
 `DataSetIdentifier`  <a name="cfn-quicksight-analysis-customcontentvisual-datasetidentifier"></a>
 The dataset that is used to create the custom content visual. You can't create a visual without a dataset or a topic.
-*Required*: Yes
+*Required*: No
 *Type*: String
-*Minimum*: `1`
+*Minimum*: `0`
 *Maximum*: `2048`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
@@ -83,6 +85,14 @@ The subtitle that is displayed on the visual.
 The title that is displayed on the visual.
 *Required*: No
 *Type*: [VisualTitleLabelOptions](aws-properties-quicksight-analysis-visualtitlelabeloptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`TopicIdentifier`  <a name="cfn-quicksight-analysis-customcontentvisual-topicidentifier"></a>
+The topic that is used in the custom content visual. You can't create a visual without a dataset or a topic.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `VisualContentAltText`  <a name="cfn-quicksight-analysis-customcontentvisual-visualcontentalttext"></a>

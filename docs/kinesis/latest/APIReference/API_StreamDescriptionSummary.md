@@ -92,6 +92,12 @@ Type: Integer
 Valid Range: Minimum value of 1024. Maximum value of 10240.
 Required: No
 
+ ** RecordDistributionStrategy **   <a name="Streams-Type-StreamDescriptionSummary-RecordDistributionStrategy"></a>
+The record distribution strategy that the stream currently uses. A value of `AUTO` indicates that Amazon Kinesis Data Streams distributes records across shards using service-managed algorithms. A value of `USER_PARTITION_KEY` indicates that shard placement is determined by the partition key that producers supply. This field is only present for streams that use the on-demand capacity mode.
+Type: String
+Valid Values: `AUTO | USER_PARTITION_KEY`
+Required: No
+
  ** StreamId **   <a name="Streams-Type-StreamDescriptionSummary-StreamId"></a>
 Not Implemented. Reserved for future use.
 Type: String

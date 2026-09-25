@@ -153,7 +153,7 @@ import software.amazon.awssdk.services.marketplaceagreement.model.Intent;
 import software.amazon.awssdk.services.marketplaceagreement.model.RenewalTermConfiguration;
 import software.amazon.awssdk.services.marketplaceagreement.model.RequestedTerm;
 import software.amazon.awssdk.services.marketplaceagreement.model.RequestedTermConfiguration;
-import utils.AgreementApiUtils;
+import com.example.awsmarketplace.agreementapi.buyer.utils.AgreementApiUtils;
 
 /**
  * Demonstrates how to create a SaaS agreement with CONTRACT pricing model and then turn on
@@ -162,6 +162,14 @@ import utils.AgreementApiUtils;
  * <p>Scenario: A buyer subscribes to a SaaS product using a public offer that supports
  * auto-renewal. After acceptance, the buyer decides to amend the agreement to enable
  * auto-renewal via the RenewalTerm configuration.
+ *
+ * <p>The {@code lockoutPeriod} on the renewal term is what constrains this amendment. It is the
+ * renewal decision deadline, measured back from the end date of the agreement, and once it passes
+ * neither party can change whether the agreement renews. The sample reads the term with
+ * {@code GetAgreementTerms} before amending so that deadline is visible. It also reads
+ * {@code endTimeBehavior} from {@code DescribeAgreement} before and after the amendment, because
+ * {@code endTimeBehavior} is what determines whether the agreement renews, not
+ * {@code enableAutoRenew} on its own.
  *
  * <p>Before running this sample, replace the placeholder constants below with values from
  * your AWS Marketplace offer:
@@ -207,6 +215,7 @@ public class AmendSaaSContractRenewalTerm {
      * 1. Create a SaaS agreement with CONTRACT pricing model with auto-renewal disabled.
      * 2. Wait for entitlements to become active.
      * 3. Amend the agreement to enable auto-renewal.
+     * 4. Confirm the change by reading endTimeBehavior before and after the amendment.
      */
     private static void amendSaaSContractAgreementRenewalTerm() {
         MarketplaceAgreementClient marketplaceAgreementClient =
@@ -266,7 +275,15 @@ public class AmendSaaSContractRenewalTerm {
         System.out.println("Entitlements are now active.");
         AgreementApiUtils.formatOutput(entitlementsResponse);
 
+        AgreementApiUtils.printRenewalTerm(
+                marketplaceAgreementClient, acceptAgreementRequestResponse.agreementId());
+        AgreementApiUtils.printEndTimeBehavior(marketplaceAgreementClient,
+                                               acceptAgreementRequestResponse.agreementId(),
+                                               "Before amendment");
+
         // --- Amend: enable auto-renewal ---
+        // The lockoutPeriod printed above is the renewal decision deadline: once it passes,
+        // enableAutoRenew can no longer be changed.
         RequestedTerm renewalTermAmended = RequestedTerm.builder()
                 .id(RENEWAL_TERM_ID)
                 .configuration(RequestedTermConfiguration.fromRenewalTermConfiguration(
@@ -294,6 +311,9 @@ public class AmendSaaSContractRenewalTerm {
         AcceptAgreementRequestResponse aarResponse =
                 marketplaceAgreementClient.acceptAgreementRequest(aarRequest);
         System.out.println("Amendment accepted. Auto-renewal enabled. New AgreementId: " + aarResponse.agreementId());
+
+        AgreementApiUtils.printEndTimeBehavior(
+                marketplaceAgreementClient, aarResponse.agreementId(), "After amendment");
     }
 }
 ```
@@ -323,7 +343,7 @@ import software.amazon.awssdk.services.marketplaceagreement.model.GetAgreementEn
 import software.amazon.awssdk.services.marketplaceagreement.model.Intent;
 import software.amazon.awssdk.services.marketplaceagreement.model.RequestedTerm;
 import software.amazon.awssdk.services.marketplaceagreement.model.RequestedTermConfiguration;
-import utils.AgreementApiUtils;
+import com.example.awsmarketplace.agreementapi.buyer.utils.AgreementApiUtils;
 
 /**
  * Demonstrates how to create an AMI agreement with ConfigurableUpfrontPricingTerm and then amend the dimension quantity
@@ -528,7 +548,7 @@ import software.amazon.awssdk.services.marketplaceagreement.model.CreateAgreemen
 import software.amazon.awssdk.services.marketplaceagreement.model.CreateAgreementRequestResponse;
 import software.amazon.awssdk.services.marketplaceagreement.model.Intent;
 import software.amazon.awssdk.services.marketplaceagreement.model.RequestedTerm;
-import utils.AgreementApiUtils;
+import com.example.awsmarketplace.agreementapi.buyer.utils.AgreementApiUtils;
 
 /**
  * Demonstrates how to create an AMI Free Trial agreement
@@ -637,7 +657,7 @@ import software.amazon.awssdk.services.marketplaceagreement.model.Intent;
 import software.amazon.awssdk.services.marketplaceagreement.model.RequestedTerm;
 import software.amazon.awssdk.services.marketplaceagreement.model.RequestedTermConfiguration;
 import software.amazon.awssdk.services.marketplaceagreement.model.TaxConfiguration;
-import utils.AgreementApiUtils;
+import com.example.awsmarketplace.agreementapi.buyer.utils.AgreementApiUtils;
 
 /**
  * Demonstrates how to create a SaaS agreement with CONTRACT pricing model with upfront payment
@@ -1452,8 +1472,15 @@ import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
 import software.amazon.awssdk.http.apache.ApacheHttpClient;
 import software.amazon.awssdk.services.marketplaceagreement.MarketplaceAgreementClient;
 import software.amazon.awssdk.services.marketplaceagreement.model.AcceptedTerm;
+import software.amazon.awssdk.services.marketplaceagreement.model.DescribeAgreementRequest;
+import software.amazon.awssdk.services.marketplaceagreement.model.DescribeAgreementResponse;
+import software.amazon.awssdk.services.marketplaceagreement.model.EndTimeBehavior;
 import software.amazon.awssdk.services.marketplaceagreement.model.GetAgreementTermsRequest;
 import software.amazon.awssdk.services.marketplaceagreement.model.GetAgreementTermsResponse;
+import software.amazon.awssdk.services.marketplaceagreement.model.PaymentScheduleEntry;
+import software.amazon.awssdk.services.marketplaceagreement.model.PriceIncrease;
+import software.amazon.awssdk.services.marketplaceagreement.model.RenewalTerm;
+import software.amazon.awssdk.services.marketplaceagreement.model.TermTemplate;
 
 public class GetAgreementAutoRenewal {
 
@@ -1465,35 +1492,188 @@ public class GetAgreementAutoRenewal {
 
 		String agreementId = args.length > 0 ? args[0] : AGREEMENT_ID;
 
-		String autoRenewal = getAutoRenewal(agreementId);
+		RenewalTerm renewalTerm = getRenewalTerm(agreementId);
 
-		System.out.println("Auto-Renewal status is " + autoRenewal);
+		printRenewalTerm(renewalTerm);
+
+		printEndTimeBehavior(agreementId);
 	}
 
+	/*
+	 * Returns whether the agreement is set to auto renew, or "No Auto Renewal" when there is no
+	 * renewal term or the flag is not set. Delegates to getRenewalTerm so there is a single API path.
+	 */
 	public static String getAutoRenewal(String agreementId) {
+
+		RenewalTerm renewalTerm = getRenewalTerm(agreementId);
+
+		if (renewalTerm != null && renewalTerm.configuration() != null
+				&& renewalTerm.configuration().enableAutoRenew() != null) {
+			return String.valueOf(renewalTerm.configuration().enableAutoRenew().booleanValue());
+		}
+		return "No Auto Renewal";
+	}
+
+	/*
+	 * Reads the agreement's renewal term. These values come from the offer and are read-only here.
+	 * Returns the first renewal term found, or null when the agreement has none.
+	 */
+	public static RenewalTerm getRenewalTerm(String agreementId) {
+
 		MarketplaceAgreementClient marketplaceAgreementClient =
 				MarketplaceAgreementClient.builder()
 				.httpClient(ApacheHttpClient.builder().build())
 				.credentialsProvider(ProfileCredentialsProvider.create())
 				.build();
 
-		GetAgreementTermsRequest getAgreementTermsRequest =
-				GetAgreementTermsRequest.builder()
-				.agreementId(agreementId)
+		String nextToken = null;
+
+		do {
+			GetAgreementTermsResponse getAgreementTermsResponse =
+					marketplaceAgreementClient.getAgreementTerms(
+							GetAgreementTermsRequest.builder()
+							.agreementId(agreementId)
+							.nextToken(nextToken)
+							.build());
+
+			for (AcceptedTerm acceptedTerm : getAgreementTermsResponse.acceptedTerms()) {
+				// AcceptedTerm is a union. Only the renewal term is of interest here.
+				if (acceptedTerm.renewalTerm() != null) {
+					return acceptedTerm.renewalTerm();
+				}
+			}
+
+			nextToken = getAgreementTermsResponse.nextToken();
+		} while (nextToken != null);
+
+		return null;
+	}
+
+	/*
+	 * Prints the fields of a renewal term.
+	 */
+	public static void printRenewalTerm(RenewalTerm renewalTerm) {
+
+		if (renewalTerm == null) {
+			System.out.println("No Auto Renewal");
+			return;
+		}
+
+		System.out.println("Renewal Term ID: " + renewalTerm.id());
+
+		if (renewalTerm.configuration() != null) {
+			System.out.println("Auto Renew Enabled: " + renewalTerm.configuration().enableAutoRenew());
+		}
+
+		// ISO 8601 duration. The customer can no longer change enableAutoRenew once the
+		// agreement is within this duration of its end date. Absent when the offer sets no deadline,
+		// which leaves the customer free to change enableAutoRenew up to the end date.
+		if (renewalTerm.lockoutPeriod() != null) {
+			System.out.println("Lockout Period: " + renewalTerm.lockoutPeriod());
+		} else {
+			System.out.println("Lockout Period: none");
+		}
+
+		// Absent means the agreement can renew without limit.
+		if (renewalTerm.maxRenewals() != null) {
+			System.out.println("Max Renewals: " + renewalTerm.maxRenewals());
+		} else {
+			System.out.println("Max Renewals: unlimited");
+		}
+
+		// Absent unless the offer sets a separate deadline for adjusting the renewal price.
+		if (renewalTerm.adjustmentDeadline() != null) {
+			System.out.println("Adjustment Deadline: " + renewalTerm.adjustmentDeadline());
+		}
+
+		printPriceIncrease(renewalTerm.priceIncrease());
+
+		for (TermTemplate termTemplate : renewalTerm.termTemplates()) {
+			printTermTemplate(termTemplate);
+		}
+	}
+
+	/*
+	 * Reads the price change that applies when the agreement renews.
+	 */
+	public static void printPriceIncrease(PriceIncrease priceIncrease) {
+
+		if (priceIncrease == null) {
+			System.out.println("Price Increase: none (the price does not change at renewal)");
+			return;
+		}
+
+		// PriceIncrease is a union. Exactly one variant is set.
+		if (priceIncrease.fixedPercentage() != null) {
+			System.out.println("Fixed Price Increase Percentage: " + priceIncrease.fixedPercentage().value());
+		} else if (priceIncrease.percentageRange() != null) {
+			// The uplift is open within this range; defaultValue applies if you take no action.
+			System.out.println("Price Increase Min Percentage: " + priceIncrease.percentageRange().minValue());
+			System.out.println("Price Increase Max Percentage: " + priceIncrease.percentageRange().maxValue());
+			System.out.println("Price Increase Default Percentage: " + priceIncrease.percentageRange().defaultValue());
+		}
+	}
+
+	/*
+	 * Reads the term template that applies when the agreement renews.
+	 */
+	public static void printTermTemplate(TermTemplate termTemplate) {
+
+		// TermTemplate is a union. Only payment schedule templates are supported today.
+		if (termTemplate.paymentScheduleTermTemplate() == null) {
+			System.out.println("Term Template: not a payment schedule template");
+			return;
+		}
+
+		System.out.println("Payment Schedule Template:");
+		for (PaymentScheduleEntry entry : termTemplate.paymentScheduleTermTemplate().schedule()) {
+			// chargeDateOffset is relative to the start of the renewed agreement, e.g. "P3M".
+			String line = "  Charge Date Offset: " + entry.chargeDateOffset()
+					+ ", Charge Percentage: " + entry.chargePercentage();
+
+			// Absent unless the schedule pins charges to a day of the month.
+			if (entry.dayOfMonth() != null) {
+				line += ", Day Of Month: " + entry.dayOfMonth();
+			}
+
+			System.out.println(line);
+		}
+	}
+
+	/*
+	 * Reads the agreement's end time behavior: whether it will renew, be replaced, or expire, and why.
+	 */
+	public static void printEndTimeBehavior(String agreementId) {
+
+		MarketplaceAgreementClient marketplaceAgreementClient =
+				MarketplaceAgreementClient.builder()
+				.httpClient(ApacheHttpClient.builder().build())
+				.credentialsProvider(ProfileCredentialsProvider.create())
 				.build();
 
-		GetAgreementTermsResponse getAgreementTermsResponse = marketplaceAgreementClient.getAgreementTerms(getAgreementTermsRequest);
+		DescribeAgreementResponse describeAgreementResponse =
+				marketplaceAgreementClient.describeAgreement(
+						DescribeAgreementRequest.builder().agreementId(agreementId).build());
 
-		String autoRenewal = "No Auto Renewal";
-
-		for (AcceptedTerm acceptedTerm : getAgreementTermsResponse.acceptedTerms()) {
-			if (acceptedTerm.renewalTerm() != null && acceptedTerm.renewalTerm().configuration() != null
-					&& acceptedTerm.renewalTerm().configuration().enableAutoRenew() != null) {
-				autoRenewal = String.valueOf(acceptedTerm.renewalTerm().configuration().enableAutoRenew().booleanValue());
-				break;
-			}
+		EndTimeBehavior endTimeBehavior = describeAgreementResponse.endTimeBehavior();
+		if (endTimeBehavior == null) {
+			System.out.println("End Time Behavior: none (this agreement has no end date)");
+			return;
 		}
-		return autoRenewal;
+
+		System.out.println("End Time Behavior Type: " + endTimeBehavior.typeAsString());
+
+		// The reason the agreement does not renew, and absent when it does. My own PROPOSER_RENEW_OPTED_OUT
+		// leaves enableAutoRenew untouched, so the flag can read true even when this says it will not renew.
+		if (endTimeBehavior.reasonCodeAsString() != null) {
+			System.out.println("End Time Behavior Reason Code: " + endTimeBehavior.reasonCodeAsString());
+		}
+
+		// renewalSummary is present whenever type is RENEW, but offerId inside it is absent
+		// until a renewal offer is created.
+		if (endTimeBehavior.renewalSummary() != null && endTimeBehavior.renewalSummary().offerId() != null) {
+			System.out.println("Renewal Offer ID: " + endTimeBehavior.renewalSummary().offerId());
+		}
 	}
 
 }
@@ -1569,6 +1749,137 @@ public class GetAgreementTermsDimensionPurchased {
 }
 ```
 +  For API details, see [GetAgreementTerms](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-agreement-2020-03-01/GetAgreementTerms) in *AWS SDK for Java 2.x API Reference*.
+
+### Get the end time behavior of an agreement
+<a name="marketplace-agreement_GetAgreementEndTimeBehavior_java_2_topic"></a>
+
+The following code example shows how to find out whether an agreement will renew, be replaced, or expire at its end date.
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
+
+```
+package com.example.awsmarketplace.agreementapi.seller;
+
+import static com.example.awsmarketplace.utils.ReferenceCodesConstants.*;
+
+import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
+import software.amazon.awssdk.http.apache.ApacheHttpClient;
+import software.amazon.awssdk.services.marketplaceagreement.MarketplaceAgreementClient;
+import software.amazon.awssdk.services.marketplaceagreement.model.DescribeAgreementRequest;
+import software.amazon.awssdk.services.marketplaceagreement.model.DescribeAgreementResponse;
+import software.amazon.awssdk.services.marketplaceagreement.model.EndTimeBehavior;
+
+public class GetAgreementEndTimeBehavior {
+
+	/*
+	 * Find out whether the agreement will renew, be replaced, or expire at its end date, and why
+	 */
+
+	public static void main(String[] args) {
+
+		String agreementId = args.length > 0 ? args[0] : AGREEMENT_ID;
+
+		EndTimeBehavior endTimeBehavior = getEndTimeBehavior(agreementId);
+
+		// endTimeBehavior is absent for agreements that have no end date, such as pay-as-you-go.
+		if (endTimeBehavior == null) {
+			System.out.println("Agreement " + agreementId + " has no end date, so it has no end time behavior.");
+			return;
+		}
+
+		System.out.println("End time behavior is " + endTimeBehavior.typeAsString());
+
+		// reasonCode is null when type is RENEW, otherwise the reason the agreement does not renew.
+		if (endTimeBehavior.reasonCodeAsString() != null) {
+			System.out.println("Reason is " + endTimeBehavior.reasonCodeAsString());
+		}
+
+		// renewalSummary is present whenever type is RENEW, but offerId inside it is absent
+		// until a renewal offer is created.
+		if (endTimeBehavior.renewalSummary() != null && endTimeBehavior.renewalSummary().offerId() != null) {
+			System.out.println("Next renewal will use offer " + endTimeBehavior.renewalSummary().offerId());
+		}
+	}
+
+	public static EndTimeBehavior getEndTimeBehavior(String agreementId) {
+
+		MarketplaceAgreementClient marketplaceAgreementClient =
+				MarketplaceAgreementClient.builder()
+				.httpClient(ApacheHttpClient.builder().build())
+				.credentialsProvider(ProfileCredentialsProvider.create())
+				.build();
+
+		DescribeAgreementRequest describeAgreementRequest =
+				DescribeAgreementRequest.builder()
+				.agreementId(agreementId)
+				.build();
+
+		DescribeAgreementResponse describeAgreementResponse =
+				marketplaceAgreementClient.describeAgreement(describeAgreementRequest);
+
+		return describeAgreementResponse.endTimeBehavior();
+	}
+
+}
+```
++  For API details, see [DescribeAgreement](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-agreement-2020-03-01/DescribeAgreement) in *AWS SDK for Java 2.x API Reference*.
+
+### Get the initial agreement of an agreement
+<a name="marketplace-agreement_GetAgreementInitialAgreement_java_2_topic"></a>
+
+The following code example shows how to identify the first agreement in an agreement's chain.
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
+
+```
+package com.example.awsmarketplace.agreementapi.seller;
+
+import static com.example.awsmarketplace.utils.ReferenceCodesConstants.*;
+
+import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
+import software.amazon.awssdk.http.apache.ApacheHttpClient;
+import software.amazon.awssdk.services.marketplaceagreement.MarketplaceAgreementClient;
+import software.amazon.awssdk.services.marketplaceagreement.model.DescribeAgreementRequest;
+import software.amazon.awssdk.services.marketplaceagreement.model.DescribeAgreementResponse;
+
+public class GetAgreementInitialAgreement {
+
+	/*
+	 * Identify the first agreement in my agreement's chain
+	 */
+
+	public static void main(String[] args) {
+
+		String agreementId = args.length > 0 ? args[0] : AGREEMENT_ID;
+
+		// A renewal or replacement carries forward the same initialAgreementId, so this value
+		// identifies the whole chain. It equals agreementId when this agreement starts the chain.
+		System.out.println("Initial Agreement ID: " + getInitialAgreementId(agreementId));
+	}
+
+	public static String getInitialAgreementId(String agreementId) {
+		MarketplaceAgreementClient marketplaceAgreementClient =
+				MarketplaceAgreementClient.builder()
+				.httpClient(ApacheHttpClient.builder().build())
+				.credentialsProvider(ProfileCredentialsProvider.create())
+				.build();
+
+		DescribeAgreementRequest describeAgreementRequest =
+				DescribeAgreementRequest.builder()
+				.agreementId(agreementId)
+				.build();
+
+		DescribeAgreementResponse describeAgreementResponse =
+				marketplaceAgreementClient.describeAgreement(describeAgreementRequest);
+
+		return describeAgreementResponse.initialAgreementId();
+	}
+
+}
+```
++  For API details, see [DescribeAgreement](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-agreement-2020-03-01/DescribeAgreement) in *AWS SDK for Java 2.x API Reference*.
 
 ### Get the instances of each dimension purchased in an agreement
 <a name="marketplace-agreement_GetAgreementTermsDimensionInstances_java_2_topic"></a>
@@ -2696,7 +3007,7 @@ import software.amazon.awssdk.services.marketplaceagreement.model.CreateAgreemen
 import software.amazon.awssdk.services.marketplaceagreement.model.CreateAgreementRequestResponse;
 import software.amazon.awssdk.services.marketplaceagreement.model.Intent;
 import software.amazon.awssdk.services.marketplaceagreement.model.RequestedTerm;
-import utils.AgreementApiUtils;
+import com.example.awsmarketplace.agreementapi.buyer.utils.AgreementApiUtils;
 
 /**
  * Demonstrates how to replace an existing SaaS agreement with CONTRACT pricing model with a new
@@ -2804,7 +3115,7 @@ import software.amazon.awssdk.services.marketplaceagreement.model.CreateAgreemen
 import software.amazon.awssdk.services.marketplaceagreement.model.GetAgreementEntitlementsResponse;
 import software.amazon.awssdk.services.marketplaceagreement.model.Intent;
 import software.amazon.awssdk.services.marketplaceagreement.model.RequestedTerm;
-import utils.AgreementApiUtils;
+import com.example.awsmarketplace.agreementapi.buyer.utils.AgreementApiUtils;
 
 /**
  * Demonstrates how to create a SaaS free trial agreement and then replace it with a
@@ -2959,7 +3270,7 @@ import software.amazon.awssdk.services.marketplaceagreement.model.CancelAgreemen
 import software.amazon.awssdk.services.marketplaceagreement.model.GetAgreementEntitlementsResponse;
 import software.amazon.awssdk.services.marketplaceagreement.model.Intent;
 import software.amazon.awssdk.services.marketplaceagreement.model.RequestedTerm;
-import utils.AgreementApiUtils;
+import com.example.awsmarketplace.agreementapi.buyer.utils.AgreementApiUtils;
 
 /**
  * Demonstrates how to create a SaaS agreement with usageBasedPricingTerm (UBPT) and then replace it
@@ -3122,7 +3433,7 @@ import software.amazon.awssdk.services.marketplaceagreement.model.GetAgreementEn
 import software.amazon.awssdk.services.marketplaceagreement.model.Intent;
 import software.amazon.awssdk.services.marketplaceagreement.model.RequestedTerm;
 import software.amazon.awssdk.services.marketplaceagreement.model.RequestedTermConfiguration;
-import utils.AgreementApiUtils;
+import com.example.awsmarketplace.agreementapi.buyer.utils.AgreementApiUtils;
 
 /**
  * Demonstrates how to replace an AMI agreement with usageBasedPricingTerm with a new offer while
@@ -3404,6 +3715,210 @@ public class SearchAgreementsByEndDate {
 ```
 +  For API details, see [SearchAgreements](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-agreement-2020-03-01/SearchAgreements) in *AWS SDK for Java 2.x API Reference*.
 
+### Search for agreements by last update date
+<a name="marketplace-agreement_SearchAgreementsByLastUpdateDate_java_2_topic"></a>
+
+The following code example shows how to search for agreements by the date they were last updated.
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
+
+```
+package com.example.awsmarketplace.agreementapi.seller;
+
+import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
+import software.amazon.awssdk.http.apache.ApacheHttpClient;
+import software.amazon.awssdk.services.marketplaceagreement.MarketplaceAgreementClient;
+import software.amazon.awssdk.services.marketplaceagreement.model.AgreementViewSummary;
+import software.amazon.awssdk.services.marketplaceagreement.model.Filter;
+import software.amazon.awssdk.services.marketplaceagreement.model.SearchAgreementsRequest;
+import software.amazon.awssdk.services.marketplaceagreement.model.SearchAgreementsResponse;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import static com.example.awsmarketplace.utils.ReferenceCodesConstants.*;
+import com.example.awsmarketplace.utils.ReferenceCodesUtils;
+
+/**
+ * This filter is supported only when PartyType is Proposer, so only sellers can use it. An
+ * unsupported combination fails with a ValidationException whose reason is UNSUPPORTED_FILTERS.
+ * All filter combinations we support for Proposer and Acceptor:
+ * https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-agreements_SearchAgreements.html
+ */
+
+public class SearchAgreementsByLastUpdateDate {
+
+	// change to BeforeLastUpdateTime if before last update time is desired
+	static String beforeOrAfterLastUpdateTimeFilterName = BeforeOrAfterLastUpdateTimeFilterName.AfterLastUpdateTime.name();
+
+	static String cutoffDate = "2024-11-18T00:00:00Z";
+
+	static String partyTypeFilterValue = PARTY_TYPE_FILTER_VALUE_PROPOSER;
+
+	public static void main(String[] args) {
+
+		List<AgreementViewSummary> agreementSummaryList = getAgreements();
+
+		ReferenceCodesUtils.formatOutput(agreementSummaryList);
+	}
+
+	public static List<AgreementViewSummary> getAgreements() {
+		MarketplaceAgreementClient marketplaceAgreementClient =
+				MarketplaceAgreementClient.builder()
+				.httpClient(ApacheHttpClient.builder().build())
+				.credentialsProvider(ProfileCredentialsProvider.create())
+				.build();
+
+		// This filter is supported only for the proposer, so leave PartyType set to
+		// PARTY_TYPE_FILTER_VALUE_PROPOSER. PARTY_TYPE_FILTER_VALUE_ACCEPTOR fails with a
+		// ValidationException whose reason is UNSUPPORTED_FILTERS.
+		Filter partyTypeFilter = Filter.builder().name(PARTY_TYPE_FILTER_NAME)
+				.values(partyTypeFilterValue).build();
+
+		Filter agreementTypeFilter = Filter.builder().name(AGREEMENT_TYPE_FILTER_NAME)
+				.values(AGREEMENT_TYPE_FILTER_VALUE_PURCHASEAGREEMENT).build();
+
+		Filter customizeFilter = Filter.builder().name(beforeOrAfterLastUpdateTimeFilterName).values(cutoffDate).build();
+
+		List<Filter> filters = new ArrayList<Filter>();
+
+		filters.addAll(Arrays.asList(partyTypeFilter, agreementTypeFilter, customizeFilter));
+
+		// search agreement with filters
+
+		SearchAgreementsRequest searchAgreementsRequest =
+				SearchAgreementsRequest.builder()
+				.catalog(AWS_MP_CATALOG)
+				.filters(filters)
+				.build();
+
+		SearchAgreementsResponse searchAgreementResponse = marketplaceAgreementClient.searchAgreements(searchAgreementsRequest);
+
+		List<AgreementViewSummary> agreementSummaryList = new ArrayList<AgreementViewSummary>();
+
+		agreementSummaryList.addAll(searchAgreementResponse.agreementViewSummaries());
+
+		while (searchAgreementResponse.nextToken() != null && searchAgreementResponse.nextToken().length() > 0) {
+			searchAgreementsRequest =
+					SearchAgreementsRequest.builder()
+					.catalog(AWS_MP_CATALOG)
+					.filters(filters)
+					.nextToken(searchAgreementResponse.nextToken())
+					.build();
+			searchAgreementResponse = marketplaceAgreementClient.searchAgreements(searchAgreementsRequest);
+			agreementSummaryList.addAll(searchAgreementResponse.agreementViewSummaries());
+		}
+		return agreementSummaryList;
+	}
+
+}
+```
++  For API details, see [SearchAgreements](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-agreement-2020-03-01/SearchAgreements) in *AWS SDK for Java 2.x API Reference*.
+
+### Search for agreements by start date
+<a name="marketplace-agreement_SearchAgreementsByStartDate_java_2_topic"></a>
+
+The following code example shows how to search for agreements by start date.
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
+
+```
+package com.example.awsmarketplace.agreementapi.seller;
+
+import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
+import software.amazon.awssdk.http.apache.ApacheHttpClient;
+import software.amazon.awssdk.services.marketplaceagreement.MarketplaceAgreementClient;
+import software.amazon.awssdk.services.marketplaceagreement.model.AgreementViewSummary;
+import software.amazon.awssdk.services.marketplaceagreement.model.Filter;
+import software.amazon.awssdk.services.marketplaceagreement.model.SearchAgreementsRequest;
+import software.amazon.awssdk.services.marketplaceagreement.model.SearchAgreementsResponse;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import static com.example.awsmarketplace.utils.ReferenceCodesConstants.*;
+import com.example.awsmarketplace.utils.ReferenceCodesUtils;
+
+/**
+ * This filter is supported only when PartyType is Proposer, so only sellers can use it. An
+ * unsupported combination fails with a ValidationException whose reason is UNSUPPORTED_FILTERS.
+ * All filter combinations we support for Proposer and Acceptor:
+ * https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-agreements_SearchAgreements.html
+ */
+
+public class SearchAgreementsByStartDate {
+
+	// change to AfterStartTime if after start time is desired
+	static String beforeOrAfterStartTimeFilterName = BeforeOrAfterStartTimeFilterName.BeforeStartTime.name();
+
+	static String cutoffDate = "2050-11-18T00:00:00Z";
+
+	static String partyTypeFilterValue = PARTY_TYPE_FILTER_VALUE_PROPOSER;
+
+	public static void main(String[] args) {
+
+		List<AgreementViewSummary> agreementSummaryList = getAgreements();
+
+		ReferenceCodesUtils.formatOutput(agreementSummaryList);
+	}
+
+	public static List<AgreementViewSummary> getAgreements() {
+		MarketplaceAgreementClient marketplaceAgreementClient =
+				MarketplaceAgreementClient.builder()
+				.httpClient(ApacheHttpClient.builder().build())
+				.credentialsProvider(ProfileCredentialsProvider.create())
+				.build();
+
+		// This filter is supported only for the proposer, so leave PartyType set to
+		// PARTY_TYPE_FILTER_VALUE_PROPOSER. PARTY_TYPE_FILTER_VALUE_ACCEPTOR fails with a
+		// ValidationException whose reason is UNSUPPORTED_FILTERS.
+		Filter partyTypeFilter = Filter.builder().name(PARTY_TYPE_FILTER_NAME)
+				.values(partyTypeFilterValue).build();
+
+		Filter agreementTypeFilter = Filter.builder().name(AGREEMENT_TYPE_FILTER_NAME)
+				.values(AGREEMENT_TYPE_FILTER_VALUE_PURCHASEAGREEMENT).build();
+
+		Filter customizeFilter = Filter.builder().name(beforeOrAfterStartTimeFilterName).values(cutoffDate).build();
+
+		List<Filter> filters = new ArrayList<Filter>();
+
+		filters.addAll(Arrays.asList(partyTypeFilter, agreementTypeFilter, customizeFilter));
+
+		// search agreement with filters
+
+		SearchAgreementsRequest searchAgreementsRequest =
+				SearchAgreementsRequest.builder()
+				.catalog(AWS_MP_CATALOG)
+				.filters(filters)
+				.build();
+
+		SearchAgreementsResponse searchAgreementResponse = marketplaceAgreementClient.searchAgreements(searchAgreementsRequest);
+
+		List<AgreementViewSummary> agreementSummaryList = new ArrayList<AgreementViewSummary>();
+
+		agreementSummaryList.addAll(searchAgreementResponse.agreementViewSummaries());
+
+		while (searchAgreementResponse.nextToken() != null && searchAgreementResponse.nextToken().length() > 0) {
+			searchAgreementsRequest =
+					SearchAgreementsRequest.builder()
+					.catalog(AWS_MP_CATALOG)
+					.filters(filters)
+					.nextToken(searchAgreementResponse.nextToken())
+					.build();
+			searchAgreementResponse = marketplaceAgreementClient.searchAgreements(searchAgreementsRequest);
+			agreementSummaryList.addAll(searchAgreementResponse.agreementViewSummaries());
+		}
+		return agreementSummaryList;
+	}
+
+}
+```
++  For API details, see [SearchAgreements](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-agreement-2020-03-01/SearchAgreements) in *AWS SDK for Java 2.x API Reference*.
+
 ### Search for agreements with one custom filter
 <a name="marketplace-agreement_SearchAgreementsByOneFilter_java_2_topic"></a>
 
@@ -3607,6 +4122,218 @@ public class SearchAgreementsByTwoFilters {
 ```
 +  For API details, see [SearchAgreements](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-agreement-2020-03-01/SearchAgreements) in *AWS SDK for Java 2.x API Reference*.
 
+### Search for the agreements that will renew
+<a name="marketplace-agreement_SearchAgreementsRenewing_java_2_topic"></a>
+
+The following code example shows how to search for the agreements that will renew.
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
+
+```
+package com.example.awsmarketplace.agreementapi.seller;
+
+import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
+import software.amazon.awssdk.http.apache.ApacheHttpClient;
+import software.amazon.awssdk.services.marketplaceagreement.MarketplaceAgreementClient;
+import software.amazon.awssdk.services.marketplaceagreement.model.AgreementViewSummary;
+import software.amazon.awssdk.services.marketplaceagreement.model.EndTimeBehaviorType;
+import software.amazon.awssdk.services.marketplaceagreement.model.Filter;
+import software.amazon.awssdk.services.marketplaceagreement.model.SearchAgreementsRequest;
+import software.amazon.awssdk.services.marketplaceagreement.model.SearchAgreementsResponse;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import static com.example.awsmarketplace.utils.ReferenceCodesConstants.*;
+import com.example.awsmarketplace.utils.ReferenceCodesUtils;
+
+/**
+ * This filter is supported only when PartyType is Proposer, so only sellers can use it. An
+ * unsupported combination fails with a ValidationException whose reason is UNSUPPORTED_FILTERS.
+ * All filter combinations we support for Proposer and Acceptor:
+ * https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-agreements_SearchAgreements.html
+ */
+
+public class SearchAgreementsRenewing {
+
+	/*
+	 * Obtain the agreements that will renew at their end date
+	 */
+
+	// change to REPLACE or EXPIRE to find the agreements that will not renew
+	static String endTimeBehaviorTypeFilterValue = EndTimeBehaviorType.RENEW.toString();
+
+	static String partyTypeFilterValue = PARTY_TYPE_FILTER_VALUE_PROPOSER;
+
+	public static void main(String[] args) {
+
+		List<AgreementViewSummary> agreementSummaryList = getAgreements();
+
+		ReferenceCodesUtils.formatOutput(agreementSummaryList);
+	}
+
+	public static List<AgreementViewSummary> getAgreements() {
+		MarketplaceAgreementClient marketplaceAgreementClient =
+				MarketplaceAgreementClient.builder()
+				.httpClient(ApacheHttpClient.builder().build())
+				.credentialsProvider(ProfileCredentialsProvider.create())
+				.build();
+
+		// This filter is supported only for the proposer, so leave PartyType set to
+		// PARTY_TYPE_FILTER_VALUE_PROPOSER. PARTY_TYPE_FILTER_VALUE_ACCEPTOR fails with a
+		// ValidationException whose reason is UNSUPPORTED_FILTERS.
+		Filter partyTypeFilter = Filter.builder().name(PARTY_TYPE_FILTER_NAME)
+				.values(partyTypeFilterValue).build();
+
+		Filter agreementTypeFilter = Filter.builder().name(AGREEMENT_TYPE_FILTER_NAME)
+				.values(AGREEMENT_TYPE_FILTER_VALUE_PURCHASEAGREEMENT).build();
+
+		Filter customizeFilter = Filter.builder().name(END_TIME_BEHAVIOR_TYPE_FILTER_NAME)
+				.values(endTimeBehaviorTypeFilterValue).build();
+
+		List<Filter> filters = new ArrayList<Filter>();
+
+		filters.addAll(Arrays.asList(partyTypeFilter, agreementTypeFilter, customizeFilter));
+
+		// search agreement with filters
+
+		SearchAgreementsRequest searchAgreementsRequest =
+				SearchAgreementsRequest.builder()
+				.catalog(AWS_MP_CATALOG)
+				.filters(filters)
+				.build();
+
+		SearchAgreementsResponse searchAgreementResponse = marketplaceAgreementClient.searchAgreements(searchAgreementsRequest);
+
+		List<AgreementViewSummary> agreementSummaryList = new ArrayList<AgreementViewSummary>();
+
+		agreementSummaryList.addAll(searchAgreementResponse.agreementViewSummaries());
+
+		while (searchAgreementResponse.nextToken() != null && searchAgreementResponse.nextToken().length() > 0) {
+			searchAgreementsRequest =
+					SearchAgreementsRequest.builder()
+					.catalog(AWS_MP_CATALOG)
+					.filters(filters)
+					.nextToken(searchAgreementResponse.nextToken())
+					.build();
+			searchAgreementResponse = marketplaceAgreementClient.searchAgreements(searchAgreementsRequest);
+			agreementSummaryList.addAll(searchAgreementResponse.agreementViewSummaries());
+		}
+		return agreementSummaryList;
+	}
+
+}
+```
++  For API details, see [SearchAgreements](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-agreement-2020-03-01/SearchAgreements) in *AWS SDK for Java 2.x API Reference*.
+
+### Search for the agreements the acceptor opted out of renewing
+<a name="marketplace-agreement_SearchAgreementsAcceptorOptedOut_java_2_topic"></a>
+
+The following code example shows how to search for the agreements the acceptor opted out of renewing.
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#agreement-api-reference-code) repository.
+
+```
+package com.example.awsmarketplace.agreementapi.seller;
+
+import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
+import software.amazon.awssdk.http.apache.ApacheHttpClient;
+import software.amazon.awssdk.services.marketplaceagreement.MarketplaceAgreementClient;
+import software.amazon.awssdk.services.marketplaceagreement.model.AgreementViewSummary;
+import software.amazon.awssdk.services.marketplaceagreement.model.EndTimeBehaviorReasonCode;
+import software.amazon.awssdk.services.marketplaceagreement.model.Filter;
+import software.amazon.awssdk.services.marketplaceagreement.model.SearchAgreementsRequest;
+import software.amazon.awssdk.services.marketplaceagreement.model.SearchAgreementsResponse;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import static com.example.awsmarketplace.utils.ReferenceCodesConstants.*;
+import com.example.awsmarketplace.utils.ReferenceCodesUtils;
+
+/**
+ * This filter is supported only when PartyType is Proposer, so only sellers can use it. An
+ * unsupported combination fails with a ValidationException whose reason is UNSUPPORTED_FILTERS.
+ * All filter combinations we support for Proposer and Acceptor:
+ * https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-agreements_SearchAgreements.html
+ */
+
+public class SearchAgreementsAcceptorOptedOut {
+
+	/*
+	 * Obtain the agreements that will not renew because the customer opted out, and not because I did
+	 */
+
+	// change to another reason code if a different non-renewal reason is desired
+	static String endTimeBehaviorReasonCodeFilterValue = EndTimeBehaviorReasonCode.ACCEPTOR_RENEW_OPTED_OUT.toString();
+
+	static String partyTypeFilterValue = PARTY_TYPE_FILTER_VALUE_PROPOSER;
+
+	public static void main(String[] args) {
+
+		List<AgreementViewSummary> agreementSummaryList = getAgreements();
+
+		ReferenceCodesUtils.formatOutput(agreementSummaryList);
+	}
+
+	public static List<AgreementViewSummary> getAgreements() {
+		MarketplaceAgreementClient marketplaceAgreementClient =
+				MarketplaceAgreementClient.builder()
+				.httpClient(ApacheHttpClient.builder().build())
+				.credentialsProvider(ProfileCredentialsProvider.create())
+				.build();
+
+		// This filter is supported only for the proposer, so leave PartyType set to
+		// PARTY_TYPE_FILTER_VALUE_PROPOSER. PARTY_TYPE_FILTER_VALUE_ACCEPTOR fails with a
+		// ValidationException whose reason is UNSUPPORTED_FILTERS.
+		Filter partyTypeFilter = Filter.builder().name(PARTY_TYPE_FILTER_NAME)
+				.values(partyTypeFilterValue).build();
+
+		Filter agreementTypeFilter = Filter.builder().name(AGREEMENT_TYPE_FILTER_NAME)
+				.values(AGREEMENT_TYPE_FILTER_VALUE_PURCHASEAGREEMENT).build();
+
+		Filter customizeFilter = Filter.builder().name(END_TIME_BEHAVIOR_REASON_CODE_FILTER_NAME)
+				.values(endTimeBehaviorReasonCodeFilterValue).build();
+
+		List<Filter> filters = new ArrayList<Filter>();
+
+		filters.addAll(Arrays.asList(partyTypeFilter, agreementTypeFilter, customizeFilter));
+
+		// search agreement with filters
+
+		SearchAgreementsRequest searchAgreementsRequest =
+				SearchAgreementsRequest.builder()
+				.catalog(AWS_MP_CATALOG)
+				.filters(filters)
+				.build();
+
+		SearchAgreementsResponse searchAgreementResponse = marketplaceAgreementClient.searchAgreements(searchAgreementsRequest);
+
+		List<AgreementViewSummary> agreementSummaryList = new ArrayList<AgreementViewSummary>();
+
+		agreementSummaryList.addAll(searchAgreementResponse.agreementViewSummaries());
+
+		while (searchAgreementResponse.nextToken() != null && searchAgreementResponse.nextToken().length() > 0) {
+			searchAgreementsRequest =
+					SearchAgreementsRequest.builder()
+					.catalog(AWS_MP_CATALOG)
+					.filters(filters)
+					.nextToken(searchAgreementResponse.nextToken())
+					.build();
+			searchAgreementResponse = marketplaceAgreementClient.searchAgreements(searchAgreementsRequest);
+			agreementSummaryList.addAll(searchAgreementResponse.agreementViewSummaries());
+		}
+		return agreementSummaryList;
+	}
+
+}
+```
++  For API details, see [SearchAgreements](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-agreement-2020-03-01/SearchAgreements) in *AWS SDK for Java 2.x API Reference*.
+
 ### Update purchase orders after agreement acceptance
 <a name="marketplace-agreement_UpdatePurchaseOrdersAfterAgreementAcceptance_java_2_topic"></a>
 
@@ -3635,7 +4362,7 @@ import software.amazon.awssdk.services.marketplaceagreement.model.PurchaseOrder;
 import software.amazon.awssdk.services.marketplaceagreement.model.RequestedTerm;
 import software.amazon.awssdk.services.marketplaceagreement.model.RequestedTermConfiguration;
 import software.amazon.awssdk.services.marketplaceagreement.model.UpdatePurchaseOrdersRequest;
-import utils.AgreementApiUtils;
+import com.example.awsmarketplace.agreementapi.buyer.utils.AgreementApiUtils;
 
 /**
  * Demonstrates how to associate a purchase order reference with a SaaS agreement with CONTRACT pricing model

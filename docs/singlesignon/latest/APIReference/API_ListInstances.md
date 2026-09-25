@@ -45,6 +45,7 @@ Required: No
    "Instances": [
       {
          "CreatedDate": number,
+         "IdentityStoreArn": "string",
          "IdentityStoreId": "string",
          "InstanceArn": "string",
          "Name": "string",

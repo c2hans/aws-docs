@@ -73,10 +73,13 @@ Valid Values: `Off | VerySparse | Sparse | Default | Dense | VeryDense`
 Specifies the political view using ISO 3166-2 or ISO 3166-3 country code format. Not supported in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
 The following political views are currently supported:
 +  `ARG`: Argentina's view on the Southern Patagonian Ice Field and Tierra Del Fuego, including the Falkland Islands, South Georgia, and South Sandwich Islands
++  `BRA`: Brazil's view on Rincon de Artigas in the Brazil/Uruguay dispute
 +  `EGY`: Egypt's view on Bir Tawil
 +  `IND`: India's view on Gilgit-Baltistan
++  `ISR`: Israel's view on the West Bank and Gaza Strip
 +  `KEN`: Kenya's view on the Ilemi Triangle
 +  `MAR`: Morocco's view on Western Sahara
++  `PSE`: Palestine's view on the West Bank and Gaza Strip
 +  `RUS`: Russia's view on Crimea
 +  `SDN`: Sudan's view on the Halaib Triangle
 +  `SRB`: Serbia's view on Kosovo, Vukovar, and Sarengrad Islands
@@ -84,7 +87,8 @@ The following political views are currently supported:
 +  `SYR`: Syria's view on the Golan Heights
 +  `TUR`: Turkey's view on Cyprus and Northern Cyprus
 +  `TZA`: Tanzania's view on Lake Malawi
-+  `URY`: Uruguay's view on Rincon de Artigas
++  `URY`: Uruguay's view on Rincon de Artigas in the Brazil/Uruguay dispute
++  `USA`: United States' names for Lake Ontario and the Gulf of Mexico
 +  `VNM`: Vietnam's view on the Paracel Islands and Spratly Islands
 Length Constraints: Minimum length of 2. Maximum length of 3.
 Pattern: `([A-Z]{2}|[A-Z]{3})`

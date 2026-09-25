@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/getting-started/index.html
 title: 'Getting Started with AWS'
 canonical_url: https://docs.aws.amazon.com/getting-started/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # Getting Started with AWS

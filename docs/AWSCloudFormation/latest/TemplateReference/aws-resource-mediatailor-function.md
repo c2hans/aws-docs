@@ -21,6 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "Type" : "AWS::MediaTailor::Function",
   "Properties" : {
+      "[ConcurrentExecutorConfiguration](#cfn-mediatailor-function-concurrentexecutorconfiguration)" : {{ConcurrentExecutorConfiguration}},
       "[CustomOutputConfiguration](#cfn-mediatailor-function-customoutputconfiguration)" : {{CustomOutputConfiguration}},
       "[Description](#cfn-mediatailor-function-description)" : {{String}},
       "[FunctionId](#cfn-mediatailor-function-functionid)" : {{String}},
@@ -38,6 +39,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 Type: AWS::MediaTailor::Function
 Properties:
+  [ConcurrentExecutorConfiguration](#cfn-mediatailor-function-concurrentexecutorconfiguration): {{
+    ConcurrentExecutorConfiguration}}
   [CustomOutputConfiguration](#cfn-mediatailor-function-customoutputconfiguration): {{
     CustomOutputConfiguration}}
   [Description](#cfn-mediatailor-function-description): {{String}}
@@ -53,6 +56,12 @@ Properties:
 
 ## Properties
 <a name="aws-resource-mediatailor-function-properties"></a>
+
+`ConcurrentExecutorConfiguration`  <a name="cfn-mediatailor-function-concurrentexecutorconfiguration"></a>
+The configuration for a `CONCURRENT_EXECUTOR` function.
+*Required*: No
+*Type*: [ConcurrentExecutorConfiguration](aws-properties-mediatailor-function-concurrentexecutorconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `CustomOutputConfiguration`  <a name="cfn-mediatailor-function-customoutputconfiguration"></a>
 The configuration for a `CUSTOM_OUTPUT` function.
@@ -76,7 +85,7 @@ The identifier of the function.
 The type of the function.
 *Required*: Yes
 *Type*: String
-*Allowed values*: `HTTP_REQUEST | CUSTOM_OUTPUT | SEQUENTIAL_EXECUTOR`
+*Allowed values*: `HTTP_REQUEST | CUSTOM_OUTPUT | CONCURRENT_EXECUTOR | SEQUENTIAL_EXECUTOR`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `HttpRequestConfiguration`  <a name="cfn-mediatailor-function-httprequestconfiguration"></a>

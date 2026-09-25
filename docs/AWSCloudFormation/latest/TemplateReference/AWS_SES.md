@@ -14,6 +14,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::SES::CustomVerificationEmailTemplate](aws-resource-ses-customverificationemailtemplate.md)
 + [AWS::SES::DedicatedIpPool](aws-resource-ses-dedicatedippool.md)
 + [AWS::SES::EmailIdentity](aws-resource-ses-emailidentity.md)
++ [AWS::SES::EmailIdentityCertificate](aws-resource-ses-emailidentitycertificate.md)
 + [AWS::SES::MailManagerAddonInstance](aws-resource-ses-mailmanageraddoninstance.md)
 + [AWS::SES::MailManagerAddonSubscription](aws-resource-ses-mailmanageraddonsubscription.md)
 + [AWS::SES::MailManagerAddressList](aws-resource-ses-mailmanageraddresslist.md)

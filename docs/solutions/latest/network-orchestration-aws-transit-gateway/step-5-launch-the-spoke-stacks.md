@@ -1,0 +1,45 @@
+---
+source_url: https://docs.aws.amazon.com/solutions/latest/network-orchestration-aws-transit-gateway/step-5-launch-the-spoke-stacks.html
+---
+
+# Step 5: Launch the spoke stack(s)
+<a name="step-5-launch-the-spoke-stacks"></a>
+
+Follow the step-by-step instructions in this section to configure and deploy the spoke stack(s) into your account(s).
+
+**Note**
+You must wait for the hub stack deployment to complete before you launch the spoke templates. The spoke templates depend on the EventBridge rule created during the hub stack launch. Additionally, deploy all templates in the same Region.
+
+1. Sign in to the [AWS CloudFormation console](https://console.aws.amazon.com/cloudformation/home) with your AWS spoke account.
+
+1. Choose **Create stack**, then choose **With new resources (standard)**.
+
+1. On the **Create stack** page, select **Upload a template file**, choose **Choose file**, and upload `network-orchestration-spoke.template` from `./deployment/global-s3-assets/`.
+
+1. Choose **Next**.
+
+1. Launch this template in the same Region as the hub template.
+
+1. On the **Specify stack details** page, assign a name to your stack. For information about naming character limitations, see [IAM and AWS STS quotas](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-limits.html) in the *AWS Identity and Access Management User Guide*.
+
+1. For **Parameters**, review the parameters for the template and modify them as necessary. This stack uses the following default values.
+
+<table>
+<thead>
+  <tr><th>Parameter</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
+  <tr><td> <b>Account ID of the network account where Transit Gateway resides.</b> </td><td></td><td></td></tr>
+  <tr><td> <b>Network (Hub) Account</b> </td><td> {{&lt;Requires input&gt;}} </td><td>The account ID for the hub account.</td></tr>
+</tbody>
+</table>
+
+1. Choose **Next**.
+
+1. On the **Configure stack options** page, choose **Next**.
+
+1. On the **Review and create** page, review and confirm the settings. Choose the box acknowledging that the template creates IAM resources.
+
+1. Choose **Submit** to deploy the stack.
+
+You can view the status of the stack in the AWS CloudFormation console in the **Status** column. You should see a status of **CREATE\_COMPLETE** in approximately three to four minutes.

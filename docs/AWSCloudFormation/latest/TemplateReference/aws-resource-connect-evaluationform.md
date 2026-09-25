@@ -21,6 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "Type" : "AWS::Connect::EvaluationForm",
   "Properties" : {
+      "[AIVersion](#cfn-connect-evaluationform-aiversion)" : {{String}},
       "[AutoEvaluationConfiguration](#cfn-connect-evaluationform-autoevaluationconfiguration)" : {{AutoEvaluationConfiguration}},
       "[Description](#cfn-connect-evaluationform-description)" : {{String}},
       "[InstanceArn](#cfn-connect-evaluationform-instancearn)" : {{String}},
@@ -42,6 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 Type: AWS::Connect::EvaluationForm
 Properties:
+  [AIVersion](#cfn-connect-evaluationform-aiversion): {{String}}
   [AutoEvaluationConfiguration](#cfn-connect-evaluationform-autoevaluationconfiguration): {{
     AutoEvaluationConfiguration}}
   [Description](#cfn-connect-evaluationform-description): {{String}}
@@ -64,6 +66,14 @@ Properties:
 
 ## Properties
 <a name="aws-resource-connect-evaluationform-properties"></a>
+
+`AIVersion`  <a name="cfn-connect-evaluationform-aiversion"></a>
+The AI version to use for the evaluation form. This specifies which AI model version is used for automated evaluations.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `AutoEvaluationConfiguration`  <a name="cfn-connect-evaluationform-autoevaluationconfiguration"></a>
 The automatic evaluation configuration of an evaluation form.

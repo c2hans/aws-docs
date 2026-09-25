@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/media-provenance-with-c2pa-on-
 title: 'Guidance for Media Provenance with C2PA on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/media-provenance-with-c2pa-on-aws/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # Guidance for Media Provenance with C2PA on AWS

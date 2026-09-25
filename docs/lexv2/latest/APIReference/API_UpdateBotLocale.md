@@ -75,6 +75,9 @@ Content-type: application/json
       }
    },
    "nluIntentConfidenceThreshold": {{number}},
+   "speakerDiarizationSettings": {
+      "enabled": {{boolean}}
+   },
    "speechDetectionSensitivity": "{{string}}",
    "speechRecognitionSettings": {
       "speechModelConfig": {
@@ -145,6 +148,11 @@ The new confidence threshold where Amazon Lex inserts the `AMAZON.FallbackIntent
 Type: Double
 Valid Range: Minimum value of 0. Maximum value of 1.
 Required: Yes
+
+ ** [speakerDiarizationSettings](#API_UpdateBotLocale_RequestSyntax) **   <a name="lexv2-UpdateBotLocale-request-speakerDiarizationSettings"></a>
+The updated speaker diarization settings to apply to the bot locale. If you omit this field, Amazon Lex keeps the setting currently stored on the bot locale. To turn speaker diarization off, set `enabled` to `false` explicitly.
+Type: [SpeakerDiarizationSettings](API_SpeakerDiarizationSettings.md) object
+Required: No
 
  ** [speechDetectionSensitivity](#API_UpdateBotLocale_RequestSyntax) **   <a name="lexv2-UpdateBotLocale-request-speechDetectionSensitivity"></a>
 The new sensitivity level for voice activity detection (VAD) in the bot locale. This setting helps optimize speech recognition accuracy by adjusting how the system responds to background noise during voice interactions.
@@ -244,6 +252,9 @@ Content-type: application/json
    "localeName": "string",
    "nluIntentConfidenceThreshold": number,
    "recommendedActions": [ "string" ],
+   "speakerDiarizationSettings": {
+      "enabled": boolean
+   },
    "speechDetectionSensitivity": "string",
    "speechRecognitionSettings": {
       "speechModelConfig": {
@@ -332,6 +343,10 @@ Valid Range: Minimum value of 0. Maximum value of 1.
  ** [recommendedActions](#API_UpdateBotLocale_ResponseSyntax) **   <a name="lexv2-UpdateBotLocale-response-recommendedActions"></a>
 Recommended actions to take to resolve an error in the `failureReasons` field.
 Type: Array of strings
+
+ ** [speakerDiarizationSettings](#API_UpdateBotLocale_ResponseSyntax) **   <a name="lexv2-UpdateBotLocale-response-speakerDiarizationSettings"></a>
+The updated speaker diarization settings for the bot locale.
+Type: [SpeakerDiarizationSettings](API_SpeakerDiarizationSettings.md) object
 
  ** [speechDetectionSensitivity](#API_UpdateBotLocale_ResponseSyntax) **   <a name="lexv2-UpdateBotLocale-response-speechDetectionSensitivity"></a>
 The updated sensitivity level for voice activity detection (VAD) in the bot locale.

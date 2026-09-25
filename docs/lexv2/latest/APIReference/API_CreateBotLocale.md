@@ -76,6 +76,9 @@ Content-type: application/json
    },
    "localeId": "{{string}}",
    "nluIntentConfidenceThreshold": {{number}},
+   "speakerDiarizationSettings": {
+      "enabled": {{boolean}}
+   },
    "speechDetectionSensitivity": "{{string}}",
    "speechRecognitionSettings": {
       "speechModelConfig": {
@@ -152,6 +155,11 @@ For example, suppose a bot is configured with the confidence threshold of 0.80 a
 Type: Double
 Valid Range: Minimum value of 0. Maximum value of 1.
 Required: Yes
+
+ ** [speakerDiarizationSettings](#API_CreateBotLocale_RequestSyntax) **   <a name="lexv2-CreateBotLocale-request-speakerDiarizationSettings"></a>
+The speaker diarization settings to configure for the new bot locale. When enabled, Amazon Lex restricts speech detection to the primary (loudest) speaker during streaming audio conversations.
+Type: [SpeakerDiarizationSettings](API_SpeakerDiarizationSettings.md) object
+Required: No
 
  ** [speechDetectionSensitivity](#API_CreateBotLocale_RequestSyntax) **   <a name="lexv2-CreateBotLocale-request-speechDetectionSensitivity"></a>
 The sensitivity level for voice activity detection (VAD) in the bot locale. This setting helps optimize speech recognition accuracy by adjusting how the system responds to background noise during voice interactions.
@@ -248,6 +256,9 @@ Content-type: application/json
    "localeId": "string",
    "localeName": "string",
    "nluIntentConfidenceThreshold": number,
+   "speakerDiarizationSettings": {
+      "enabled": boolean
+   },
    "speechDetectionSensitivity": "string",
    "speechRecognitionSettings": {
       "speechModelConfig": {
@@ -327,6 +338,10 @@ Type: String
 The specified confidence threshold for inserting the `AMAZON.FallbackIntent` and `AMAZON.KendraSearchIntent` intents.
 Type: Double
 Valid Range: Minimum value of 0. Maximum value of 1.
+
+ ** [speakerDiarizationSettings](#API_CreateBotLocale_ResponseSyntax) **   <a name="lexv2-CreateBotLocale-response-speakerDiarizationSettings"></a>
+The speaker diarization settings configured for the created bot locale.
+Type: [SpeakerDiarizationSettings](API_SpeakerDiarizationSettings.md) object
 
  ** [speechDetectionSensitivity](#API_CreateBotLocale_ResponseSyntax) **   <a name="lexv2-CreateBotLocale-response-speechDetectionSensitivity"></a>
 The sensitivity level for voice activity detection (VAD) that was specified for the bot locale.

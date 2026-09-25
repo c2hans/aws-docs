@@ -25,7 +25,7 @@ You can also configure the Amazon DCV server to send a notification to idle clie
 You can use the following procedures to specify a custom idle timeout period.
 
 ------
-#### [ Windows Amazon DCV server ]
+#### [ Windows ]
 
 To change the Amazon DCV server's idle timeout period, you must configure the `idle-timeout` parameter using the Windows Registry Editor.
 
@@ -60,7 +60,7 @@ To change the Amazon DCV server's idle timeout period, you must configure the `i
 1. Choose **OK** and close the Windows Registry Editor.
 
 ------
-#### [ Linux Amazon DCV server ]
+#### [ Linux ]
 
 To change the Amazon DCV server's idle timeout period, you must configure the `idle-timeout` parameter in the `dcv.conf` file.
 
@@ -96,7 +96,7 @@ To change the Amazon DCV server's idle timeout period, you must configure the `i
 1. Save and close the file.
 
 ------
-#### [ macOS Amazon DCV server ]
+#### [ macOS ]
 
 To change the Amazon DCV server's idle timeout period, you must configure the `idle-timeout` parameter in the `dcv.conf` file.
 

@@ -93,6 +93,7 @@ Required: No
 
  ** [OutpostArn](#API_route53resolver_CreateResolverEndpoint_RequestSyntax) **   <a name="Route53Resolver-route53resolver_CreateResolverEndpoint-request-OutpostArn"></a>
 The Amazon Resource Name (ARN) of the Outpost. If you specify this, you must also specify a value for the `PreferredInstanceType`.
+Resolver endpoints on Outposts are supported on first-generation AWS Outposts only. Inbound and outbound Resolver endpoints aren't supported on second-generation AWS Outposts.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `^arn:aws([a-z-]+)?:outposts:[a-z\d-]+:\d{12}:outpost/op-[a-f0-9]{17}$`

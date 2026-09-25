@@ -13,13 +13,18 @@ Parameters that are required to perform reencryption operation.
 **Important**
 This data type is a UNION, so only one of the following members can be specified when used or returned.
 
+ ** Asymmetric **   <a name="paymentcryptographydata-Type-ReEncryptionAttributes-Asymmetric"></a>
+Specifies the parameters required to encrypt data using an asymmetric key pair. You must specify a `PaddingType`.
+Type: [AsymmetricEncryptionAttributes](API_AsymmetricEncryptionAttributes.md) object
+Required: No
+
  ** Dukpt **   <a name="paymentcryptographydata-Type-ReEncryptionAttributes-Dukpt"></a>
-Parameters that are required to encrypt plaintext data using DUKPT.
+Specifies the parameters required to encrypt data using DUKPT.
 Type: [DukptEncryptionAttributes](API_DukptEncryptionAttributes.md) object
 Required: No
 
  ** Symmetric **   <a name="paymentcryptographydata-Type-ReEncryptionAttributes-Symmetric"></a>
-Parameters that are required to encrypt data using symmetric keys.
+Specifies the parameters required to encrypt data using symmetric keys.
 Type: [SymmetricEncryptionAttributes](API_SymmetricEncryptionAttributes.md) object
 Required: No
 

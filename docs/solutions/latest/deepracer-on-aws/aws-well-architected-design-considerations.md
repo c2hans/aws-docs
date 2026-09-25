@@ -23,6 +23,7 @@ This section describes how the design principles and best practices of the Well-
 This section describes how we architected this solution using the principles and best practices of the [operational excellence pillar](https://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/welcome.html).
 + All resources are defined as infrastructure as code using AWS CloudFormation templates generated from AWS CDK constructs.
 + The solution pushes metrics to Amazon CloudWatch at various stages to provide observability into AWS Lambda functions, Amazon SageMaker, AWS Step Functions, Amazon S3 buckets, and other solution components.
++ Physical event activity publishes CloudWatch metrics for combined-leaderboard recalculation and for the background removal of deleted events, and a CloudWatch alarm reports any event deletion that could not be completed.
 
 ## Security
 <a name="security"></a>
@@ -39,6 +40,8 @@ This section describes how we architected this solution using the principles and
 This section describes how we architected this solution using the principles and best practices of the [reliability pillar](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html).
 + The solution uses AWS serverless services wherever possible (examples: Lambda, API Gateway, Amazon S3, AWS Step Functions and Amazon DynamoDB) to ensure high availability and recovery from service failure.
 + Data is stored in DynamoDB and Amazon S3, so it persists in multiple Availability Zones by default.
++ Where two race facilitators could act on the same run at the same time, the solution uses DynamoDB conditional writes so that one request succeeds and the other is rejected, rather than allowing conflicting updates to corrupt the run’s state.
++ Removing a deleted event’s records is queued rather than performed inline, so the work retries automatically on failure and any message that cannot be processed is preserved in a dead-letter queue for investigation.
 
 ## Performance efficiency
 <a name="performance-efficiency"></a>

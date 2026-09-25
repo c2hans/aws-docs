@@ -11,29 +11,27 @@ Follow the step-by-step instructions in this section to update the hub stack(s).
 <a name="hub-stack-update"></a>
 
 **Important**
-To mitigate the `AlreadyExists` error code for the service-linked role (**AWSServiceRoleForResourceAccessManager**) in the hub stack, we moved the role to a separate stack for v3.3.1 of this solution. This way, you can upgrade the hub stack in multiple Regions. You must deploy the service-linked role for AWS RAM hub stack *after* updating the hub stack.
+To mitigate the `AlreadyExists` error code for the service-linked role (**AWSServiceRoleForResourceAccessManager**) in the hub stack, we moved the role to a separate stack for v3.3.1. This way, you can upgrade the hub stack in multiple Regions. You must deploy the service-linked role for AWS RAM hub stack *after* updating the hub stack.
 
 Follow the step-by-step instructions in this section to update the hub stack.
 
 1. Sign in to the [AWS CloudFormation console](https://console.aws.amazon.com/cloudformation/), select your existing Network Orchestration for AWS Transit Gateway CloudFormation stack, and select **Update**.
 **Note**
-This solution was previously called Serverless Transit Network Orchestrator.
+This Guidance was previously called Serverless Transit Network Orchestrator.
 
 1. Select **Replace current template**.
 
 1. Under **Specify template**:
 
-   1. Select **Amazon S3 URL**.
+   1. Select **Upload a template file**.
 
-   1. Copy the link of the `network-orchestration-hub.template` [CloudFormation template](aws-cloudformation-templates.md).
+   1. Choose **Choose file** and upload the `network-orchestration-hub.template` from `./deployment/global-s3-assets/`. To build the templates from source, see [Step 1: Build deployment assets](step-1-build-deployment-assets.md).
 
-   1. Paste the link in the **Amazon S3 URL** box.
+   1. Choose **Next**. Choose **Next** again.
 
-   1. Verify that the correct template URL shows in the **Amazon S3 URL** text box, and choose **Next**. Choose **Next** again.
-
-1. Under **Parameters**, review the parameters for the template and modify them as necessary. For details about the parameters, see [Step 3: Launch the hub stack (optional)](step-3-launch-the-hub-stack.md).
+1. Under **Parameters**, review the parameters for the template and modify them as necessary. For details about the parameters, see [Step 4: Launch the hub stack](step-4-launch-the-hub-stack.md).
 **Important**
-To successfully upgrade from an earlier version of this solution to version 3.3.0 or later, provide input for the two required parameters for the hub stack: **Cognito Domain Prefix** and **Allow Listed Ranges**.
+To successfully upgrade from an earlier version to version 3.3.0 or later, provide input for the two required parameters for the hub stack: **Cognito Domain Prefix** and **Allow Listed Ranges**.
 
 1. Choose **Next**.
 
@@ -50,4 +48,4 @@ You can view the status of the stack in the AWS CloudFormation console in the **
 ## Service-linked role for AWS RAM hub stack
 <a name="service-linked-role-for-hub-stack-update"></a>
 
-The hub stack deletes the **AWSServiceRoleForResourceAccessManager** service-linked role. Re-deploy the service-linked role using [Step 2](step-2-launch-the-service-linked-role-hub-stack-optional.md) of **Deploy the solution**.
+The hub stack deletes the **AWSServiceRoleForResourceAccessManager** service-linked role. Re-deploy the service-linked role using [Step 3](step-3-launch-the-service-linked-role-hub-stack-optional.md) of **Deploy the Guidance**.

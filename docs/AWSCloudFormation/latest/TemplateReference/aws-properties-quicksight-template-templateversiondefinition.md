@@ -27,7 +27,9 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[Options](#cfn-quicksight-template-templateversiondefinition-options)" : {{AssetOptions}},
   "[ParameterDeclarations](#cfn-quicksight-template-templateversiondefinition-parameterdeclarations)" : {{[ ParameterDeclaration, ... ]}},
   "[QueryExecutionOptions](#cfn-quicksight-template-templateversiondefinition-queryexecutionoptions)" : {{QueryExecutionOptions}},
-  "[Sheets](#cfn-quicksight-template-templateversiondefinition-sheets)" : {{[ SheetDefinition, ... ]}}
+  "[Sheets](#cfn-quicksight-template-templateversiondefinition-sheets)" : {{[ SheetDefinition, ... ]}},
+  "[StaticFiles](#cfn-quicksight-template-templateversiondefinition-staticfiles)" : {{[ StaticFile, ... ]}},
+  "[TopicConfigurations](#cfn-quicksight-template-templateversiondefinition-topicconfigurations)" : {{[ TopicConfiguration, ... ]}}
 }
 ```
 
@@ -53,6 +55,10 @@ To declare this entity in your CloudFormation template, use the following syntax
     QueryExecutionOptions}}
   [Sheets](#cfn-quicksight-template-templateversiondefinition-sheets): {{
     - SheetDefinition}}
+  [StaticFiles](#cfn-quicksight-template-templateversiondefinition-staticfiles): {{
+    - StaticFile}}
+  [TopicConfigurations](#cfn-quicksight-template-templateversiondefinition-topicconfigurations): {{
+    - TopicConfiguration}}
 ```
 
 ## Properties
@@ -110,7 +116,7 @@ For more information, see [Parameters in Amazon Quick Sight](https://docs.aws.am
 *Required*: No
 *Type*: Array of [ParameterDeclaration](aws-properties-quicksight-template-parameterdeclaration.md)
 *Minimum*: `0`
-*Maximum*: `200`
+*Maximum*: `400`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `QueryExecutionOptions`  <a name="cfn-quicksight-template-templateversiondefinition-queryexecutionoptions"></a>
@@ -125,4 +131,20 @@ An array of sheet definitions for a template.
 *Type*: Array of [SheetDefinition](aws-properties-quicksight-template-sheetdefinition.md)
 *Minimum*: `0`
 *Maximum*: `20`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`StaticFiles`  <a name="cfn-quicksight-template-templateversiondefinition-staticfiles"></a>
+The static files for the definition.
+*Required*: No
+*Type*: Array of [StaticFile](aws-properties-quicksight-template-staticfile.md)
+*Minimum*: `0`
+*Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`TopicConfigurations`  <a name="cfn-quicksight-template-templateversiondefinition-topicconfigurations"></a>
+An array of topic configurations. These configurations define the required columns for each topic used within a template.
+*Required*: No
+*Type*: Array of [TopicConfiguration](aws-properties-quicksight-template-topicconfiguration.md)
+*Minimum*: `0`
+*Maximum*: `30`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

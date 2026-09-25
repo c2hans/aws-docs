@@ -64,6 +64,7 @@ The following data types are supported:
 +  [SessionKeyEmv2000](API_SessionKeyEmv2000.md)
 +  [SessionKeyEmvCommon](API_SessionKeyEmvCommon.md)
 +  [SessionKeyMastercard](API_SessionKeyMastercard.md)
++  [SessionKeyUnionPay](API_SessionKeyUnionPay.md)
 +  [SessionKeyVisa](API_SessionKeyVisa.md)
 +  [SymmetricEncryptionAttributes](API_SymmetricEncryptionAttributes.md)
 +  [TranslationIsoFormats](API_TranslationIsoFormats.md)

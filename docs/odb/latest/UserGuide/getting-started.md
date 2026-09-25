@@ -66,7 +66,7 @@ You can use Oracle Database@AWS in the following AWS Regions:
 | Region name | Region code | Availability Zones |
 | --- | --- | --- |
 | Canada (Central) | ca-central-1 | cac1-az1, cac1-az4 |
-| US East (N. Virginia) | us-east-1 | use1-az2, use1-az4, use1-az6 |
+| US East (N. Virginia) | us-east-1 | use1-az1, use1-az2, use1-az4, use1-az6 |
 | US East (Ohio) | us-east-2 | use2-az1, use2-az2 |
 | US West (N. California) | us-west-1 | usw1-az1, usw1-az3 |
 | US West (Oregon) | us-west-2 | usw2-az3, usw2-az4 |

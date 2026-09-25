@@ -34,6 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[HistogramVisual](#cfn-quicksight-template-visual-histogramvisual)" : {{HistogramVisual}},
   "[InsightVisual](#cfn-quicksight-template-visual-insightvisual)" : {{InsightVisual}},
   "[KPIVisual](#cfn-quicksight-template-visual-kpivisual)" : {{KPIVisual}},
+  "[LayerMapVisual](#cfn-quicksight-template-visual-layermapvisual)" : {{LayerMapVisual}},
   "[LineChartVisual](#cfn-quicksight-template-visual-linechartvisual)" : {{LineChartVisual}},
   "[PieChartVisual](#cfn-quicksight-template-visual-piechartvisual)" : {{PieChartVisual}},
   "[PivotTableVisual](#cfn-quicksight-template-visual-pivottablevisual)" : {{PivotTableVisual}},
@@ -78,6 +79,8 @@ To declare this entity in your CloudFormation template, use the following syntax
     InsightVisual}}
   [KPIVisual](#cfn-quicksight-template-visual-kpivisual): {{
     KPIVisual}}
+  [LayerMapVisual](#cfn-quicksight-template-visual-layermapvisual): {{
+    LayerMapVisual}}
   [LineChartVisual](#cfn-quicksight-template-visual-linechartvisual): {{
     LineChartVisual}}
   [PieChartVisual](#cfn-quicksight-template-visual-piechartvisual): {{
@@ -193,6 +196,12 @@ A key performance indicator (KPI).
 For more information, see [Using KPIs](https://docs.aws.amazon.com/quicksight/latest/user/kpi.html) in the *Amazon Quick Suite User Guide*.
 *Required*: No
 *Type*: [KPIVisual](aws-properties-quicksight-template-kpivisual.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`LayerMapVisual`  <a name="cfn-quicksight-template-visual-layermapvisual"></a>
+The properties for a layer map visual
+*Required*: No
+*Type*: [LayerMapVisual](aws-properties-quicksight-template-layermapvisual.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `LineChartVisual`  <a name="cfn-quicksight-template-visual-linechartvisual"></a>

@@ -15,6 +15,7 @@ POST /2026-02-05/getProduct HTTP/1.1
 Content-type: application/json
 
 {
+   "locale": "{{string}}",
    "productId": "{{string}}"
 }
 ```
@@ -35,6 +36,13 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[\w\-]+`
 Required: Yes
+
+ ** [locale](#API_marketplace-discovery_GetProduct_RequestSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetProduct-request-locale"></a>
+A BCP 47 language tag or comma-separated priority list specifying the preferred locale for response content. See `Locale` for supported values, constraints, fallback behavior, and the default locale. If omitted, the service returns content in the default locale.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Pattern: `[^;,]+(\s*,\s*[^;,]+){0,1}`
+Required: No
 
 ## Response Syntax
 <a name="API_marketplace-discovery_GetProduct_ResponseSyntax"></a>
@@ -59,6 +67,8 @@ Content-type: application/json
       }
    ],
    "highlights": [ "string" ],
+   "listingId": "string",
+   "locale": "string",
    "logoThumbnailUrl": "string",
    "longDescription": "string",
    "manufacturer": {
@@ -124,6 +134,12 @@ Array Members: Minimum number of 0 items. Maximum number of 10 items.
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Pattern: `.*\S.*`
 
+ ** [listingId](#API_marketplace-discovery_GetProduct_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetProduct-response-listingId"></a>
+The default listing identifier associated with the product.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[\w\-]+`
+
  ** [logoThumbnailUrl](#API_marketplace-discovery_GetProduct_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetProduct-response-logoThumbnailUrl"></a>
 The URL of the logo thumbnail image for the product.
 Type: String
@@ -172,6 +188,12 @@ A 1–3 sentence summary describing the key aspects of the product.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Pattern: `.*\S.*`
+
+ ** [locale](#API_marketplace-discovery_GetProduct_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetProduct-response-locale"></a>
+The locale of the returned content. Indicates whether the response contains content in the requested locale, or fell back to the default locale. See `Locale` for details.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Pattern: `[^;,]+(\s*,\s*[^;,]+){0,1}`
 
 ## Errors
 <a name="API_marketplace-discovery_GetProduct_Errors"></a>

@@ -63,7 +63,37 @@ This type of DeepRacer vehicle is a 1/18th-scale model car.
 
 A leaderboard is a ranked list of vehicle performances in a race. The race can be a virtual event, carried out in the simulated environment, or a physical event, carried out in a real-world environment. The performance metric depends on the race type. It can be the fastest lap time, total time, or average lap time submitted by users who have evaluated their trained models on a track identical or similar to the given track of the race.
 
-If a vehicle completes three laps consecutively, then it qualifies to be ranked on a leaderboard. The average lap time for the first three consecutive laps is submitted to the leaderboard.
+If a vehicle completes three laps consecutively in a virtual race, then it qualifies to be ranked on that race’s leaderboard, and the average lap time for the first three consecutive laps is submitted.
+
+At a physical racing event, qualification works differently. Each track has its own leaderboard, and a race facilitator submits a racer’s result at the end of a run. The score is either the racer’s best valid lap or the average of their valid laps, depending on the race format configured for the event. See [Race Management](race-management.md).
+
+ **Event**
+
+An event is a physical racing occasion, such as a workshop, a summit activation, a community meetup, or a track race, at which participants drive real vehicles on a real track. An event holds the scoring rules that apply, the tracks it runs on, the runs recorded at it, and the leaderboards those runs produce. An event progresses through a fixed sequence of states as it is configured, opened, run, and closed. For those states and what each one allows, see [Event lifecycle](event-lifecycle.md).
+
+ **Event track**
+
+An event track is one physical track within an event. An event can have up to 10 tracks, each with its own leaderboard, so a venue can run several heats at the same time. This is distinct from an **AWS DeepRacer track**, which refers to the course itself, whether simulated or physical.
+
+ **Run**
+
+A run is one racer’s timed attempt on an event track. A race facilitator starts a run, records each lap the racer completes, and then either submits the result to the leaderboard or discards it. A run has a time limit set by the event.
+
+ **Lap**
+
+A lap is a single circuit of the track within a run. Each lap is recorded individually with its own time. This allows a facilitator to mark one lap invalid, excluding a false trigger from the racer’s score, without affecting the other laps in the run.
+
+ **Combined leaderboard**
+
+A combined leaderboard ranks racers across every track in an event rather than on a single track. It is maintained automatically for events with two or more tracks, using the combined scoring strategy configured for the event.
+
+ **Race format**
+
+The race format determines how a run is scored: **Best lap** uses the racer’s fastest valid lap, and **Average laps** uses the average of their valid lap times. The format is set on the event and applies to every run recorded at it.
+
+ **Timekeeping**
+
+Timekeeping is the activity of running a racer’s attempt at a physical event: starting and ending the run, recording laps as the car crosses the line, recording resets, marking laps valid or invalid, and submitting or discarding the result. Race facilitators and admins perform timekeeping.
 
  **Machine learning frameworks**
 
@@ -128,3 +158,11 @@ Each training job produces a trained model and outputs the model artifacts to a 
  **Evaluation job**
 
 An evaluation job is a workload that tests the performance of a model. Performance is measured by given metrics after the training job is done. The standard AWS DeepRacer performance metric is the driving time that an agent takes to complete a lap on a track. Another metric is the percentage of the lap completed.
+
+ **Model optimization**
+
+Model optimization converts a trained or imported model into formats that a physical car can load quickly for on-device inference. You optimize a model for the car before you deploy it to an AWS DeepRacer vehicle.
+
+ **Physical model**
+
+A physical model is a model that you import for physical car deployment only. You cannot clone a physical model or submit it to a virtual race.

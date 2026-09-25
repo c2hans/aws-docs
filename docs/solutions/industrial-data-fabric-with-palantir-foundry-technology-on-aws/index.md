@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/industrial-data-fabric-with-pa
 title: 'Guidance for Industrial Data Fabric with Palantir Foundry on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/industrial-data-fabric-with-palantir-foundry-technology-on-aws/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # Guidance for Industrial Data Fabric with Palantir Foundry on AWS

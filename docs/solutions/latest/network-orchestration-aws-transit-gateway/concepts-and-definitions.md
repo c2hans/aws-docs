@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/network-orchestration-a
 # Concepts and definitions
 <a name="concepts-and-definitions"></a>
 
-This section describes key concepts and defines terminology specific to this solution.
+This section describes key concepts and defines terminology specific to this deployment.
 
  **application**
 
@@ -13,7 +13,7 @@ A logical group of AWS resources that you want to operate as a unit.
 
  **attachment**
 
-Connection from a resource to a transit gateway. For this solution, you can attach one or more VPCs to the transit gateway.
+Connection from a resource to a transit gateway. You can attach one or more VPCs to the transit gateway.
 
  **CloudFormation stack**
 
@@ -21,11 +21,11 @@ Provisions the resources that are described in the templates.
 
  **CloudFormation template**
 
-Specifies the AWS resources included in this solution and their properties.
+Specifies the AWS resources included in the deployment and their properties.
 
  **hub account**
 
-Central account where the solution is deployed and manages your central transit gateway. This is typically your network account.
+Central account where you deploy and manage your central transit gateway. This is typically your network account.
 
  **network account**
 

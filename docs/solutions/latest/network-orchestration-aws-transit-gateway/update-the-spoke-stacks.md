@@ -17,21 +17,19 @@ Follow the step-by-step instructions in this section to update the spoke stack(s
 
 1. Sign in to the [AWS CloudFormation console](https://console.aws.amazon.com/cloudformation/), select your existing Network Orchestration for AWS Transit Gateway CloudFormation stack, and select **Update**.
 **Note**
-This solution was previously called Serverless Transit Network Orchestrator.
+This Guidance was previously called Serverless Transit Network Orchestrator.
 
 1. Select **Replace current template**.
 
 1. Under **Specify template**:
 
-   1. Select **Amazon S3 URL**.
+   1. Select **Upload a template file**.
 
-   1. Copy the link of the `network-orchestration-spoke.template` [CloudFormation template](aws-cloudformation-templates.md).
+   1. Choose **Choose file** and upload the `network-orchestration-spoke.template` from `./deployment/global-s3-assets/`. To build the templates from source, see [Step 1: Build deployment assets](step-1-build-deployment-assets.md).
 
-   1. Paste the link in the **Amazon S3 URL** box.
+   1. Choose **Next**. Choose **Next** again.
 
-   1. Verify that the correct template URL shows in the **Amazon S3 URL** text box, and choose **Next**. Choose **Next** again.
-
-1. Under **Parameters**, review the parameters for the template and modify them as necessary. For details about the parameters, see [Step 4: Launch the spoke stack(s)](step-4-launch-the-spoke-stacks.md).
+1. Under **Parameters**, review the parameters for the template and modify them as necessary. For details about the parameters, see [Step 5: Launch the spoke stack(s)](step-5-launch-the-spoke-stacks.md).
 
 1. Choose **Next**.
 
@@ -55,4 +53,4 @@ If you are upgrading to the latest version from any version between 3.3.11 and 3
 ![DELETE_FAILED state for TransitGatewayServiceLinkedRole](https://docs.aws.amazon.com/solutions/latest/network-orchestration-aws-transit-gateway/images/delete-failed.png)
    + If the role is not in use, the stack deletion cleans up the role.
 
-1. Deploy the spoke template with the latest version. For details, see [Step 4: Launch the spoke stack(s)](step-4-launch-the-spoke-stacks.md).
+1. Deploy the spoke template with the latest version. For details, see [Step 5: Launch the spoke stack(s)](step-5-launch-the-spoke-stacks.md).

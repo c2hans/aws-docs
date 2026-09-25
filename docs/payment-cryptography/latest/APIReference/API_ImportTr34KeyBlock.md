@@ -33,7 +33,7 @@ Required: Yes
  ** WrappedKeyBlock **   <a name="paymentcryptography-Type-ImportTr34KeyBlock-WrappedKeyBlock"></a>
 The TR-34 wrapped key block to import.
 Type: String
-Length Constraints: Minimum length of 2. Maximum length of 4096.
+Length Constraints: Minimum length of 2. Maximum length of 9984.
 Pattern: `[0-9A-F]+`
 Required: Yes
 

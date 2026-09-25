@@ -16,4 +16,5 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::CustomerProfiles::Integration](aws-resource-customerprofiles-integration.md)
 + [AWS::CustomerProfiles::ObjectType](aws-resource-customerprofiles-objecttype.md)
 + [AWS::CustomerProfiles::Recommender](aws-resource-customerprofiles-recommender.md)
++ [AWS::CustomerProfiles::RecommenderSchema](aws-resource-customerprofiles-recommenderschema.md)
 + [AWS::CustomerProfiles::SegmentDefinition](aws-resource-customerprofiles-segmentdefinition.md)

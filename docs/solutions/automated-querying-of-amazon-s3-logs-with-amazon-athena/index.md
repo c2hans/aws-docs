@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/automated-querying-of-amazon-s
 title: 'Guidance for Automated Querying of Amazon S3 Logs with Amazon Athena'
 canonical_url: https://docs.aws.amazon.com/solutions/automated-querying-of-amazon-s3-logs-with-amazon-athena/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # Guidance for Automated Querying of Amazon S3 Logs with Amazon Athena

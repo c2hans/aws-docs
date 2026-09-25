@@ -21,7 +21,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "[DataSetIdentifier](#cfn-quicksight-template-calculatedfield-datasetidentifier)" : {{String}},
   "[Expression](#cfn-quicksight-template-calculatedfield-expression)" : {{String}},
-  "[Name](#cfn-quicksight-template-calculatedfield-name)" : {{String}}
+  "[Name](#cfn-quicksight-template-calculatedfield-name)" : {{String}},
+  "[TopicIdentifier](#cfn-quicksight-template-calculatedfield-topicidentifier)" : {{String}}
 }
 ```
 
@@ -32,6 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   [DataSetIdentifier](#cfn-quicksight-template-calculatedfield-datasetidentifier): {{String}}
   [Expression](#cfn-quicksight-template-calculatedfield-expression): {{String}}
   [Name](#cfn-quicksight-template-calculatedfield-name): {{String}}
+  [TopicIdentifier](#cfn-quicksight-template-calculatedfield-topicidentifier): {{String}}
 ```
 
 ## Properties
@@ -39,9 +41,9 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 `DataSetIdentifier`  <a name="cfn-quicksight-template-calculatedfield-datasetidentifier"></a>
 The data set that is used in this calculated field.
-*Required*: Yes
+*Required*: No
 *Type*: String
-*Minimum*: `1`
+*Minimum*: `0`
 *Maximum*: `2048`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
@@ -59,4 +61,12 @@ The name of the calculated field.
 *Type*: String
 *Minimum*: `1`
 *Maximum*: `127`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`TopicIdentifier`  <a name="cfn-quicksight-template-calculatedfield-topicidentifier"></a>
+The topic that is used in this calculated field.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2048`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

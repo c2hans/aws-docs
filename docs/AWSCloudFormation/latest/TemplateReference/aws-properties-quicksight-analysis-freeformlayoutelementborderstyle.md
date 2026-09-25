@@ -20,7 +20,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[Color](#cfn-quicksight-analysis-freeformlayoutelementborderstyle-color)" : {{String}},
-  "[Visibility](#cfn-quicksight-analysis-freeformlayoutelementborderstyle-visibility)" : {{String}}
+  "[Visibility](#cfn-quicksight-analysis-freeformlayoutelementborderstyle-visibility)" : {{String}},
+  "[Width](#cfn-quicksight-analysis-freeformlayoutelementborderstyle-width)" : {{String}}
 }
 ```
 
@@ -30,6 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [Color](#cfn-quicksight-analysis-freeformlayoutelementborderstyle-color): {{String}}
   [Visibility](#cfn-quicksight-analysis-freeformlayoutelementborderstyle-visibility): {{String}}
+  [Width](#cfn-quicksight-analysis-freeformlayoutelementborderstyle-width): {{String}}
 ```
 
 ## Properties
@@ -47,4 +49,12 @@ The border visibility of a free-form layout element.
 *Required*: No
 *Type*: String
 *Allowed values*: `HIDDEN | VISIBLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Width`  <a name="cfn-quicksight-analysis-freeformlayoutelementborderstyle-width"></a>
+The border width of a free-form layout element.
+*Required*: No
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `50`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

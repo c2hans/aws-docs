@@ -27,7 +27,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[Options](#cfn-quicksight-dashboard-dashboardversiondefinition-options)" : {{AssetOptions}},
   "[ParameterDeclarations](#cfn-quicksight-dashboard-dashboardversiondefinition-parameterdeclarations)" : {{[ ParameterDeclaration, ... ]}},
   "[Sheets](#cfn-quicksight-dashboard-dashboardversiondefinition-sheets)" : {{[ SheetDefinition, ... ]}},
-  "[StaticFiles](#cfn-quicksight-dashboard-dashboardversiondefinition-staticfiles)" : {{[ StaticFile, ... ]}}
+  "[StaticFiles](#cfn-quicksight-dashboard-dashboardversiondefinition-staticfiles)" : {{[ StaticFile, ... ]}},
+  "[TopicIdentifierDeclarations](#cfn-quicksight-dashboard-dashboardversiondefinition-topicidentifierdeclarations)" : {{[ TopicIdentifierDeclaration, ... ]}}
 }
 ```
 
@@ -53,6 +54,8 @@ To declare this entity in your CloudFormation template, use the following syntax
     - SheetDefinition}}
   [StaticFiles](#cfn-quicksight-dashboard-dashboardversiondefinition-staticfiles): {{
     - StaticFile}}
+  [TopicIdentifierDeclarations](#cfn-quicksight-dashboard-dashboardversiondefinition-topicidentifierdeclarations): {{
+    - TopicIdentifierDeclaration}}
 ```
 
 ## Properties
@@ -84,7 +87,7 @@ An array of dashboard-level column configurations. Column configurations are use
 An array of dataset identifier declarations. With this mapping,you can use dataset identifiers instead of dataset Amazon Resource Names (ARNs) throughout the dashboard's sub-structures.
 *Required*: Yes
 *Type*: Array of [DataSetIdentifierDeclaration](aws-properties-quicksight-dashboard-datasetidentifierdeclaration.md)
-*Minimum*: `1`
+*Minimum*: `0`
 *Maximum*: `50`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
@@ -126,4 +129,12 @@ The static files for the definition.
 *Type*: Array of [StaticFile](aws-properties-quicksight-dashboard-staticfile.md)
 *Minimum*: `0`
 *Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`TopicIdentifierDeclarations`  <a name="cfn-quicksight-dashboard-dashboardversiondefinition-topicidentifierdeclarations"></a>
+An array of topic identifier declarations. With this mapping, you can use topic identifiers instead of topic Amazon Resource Names (ARNs) throughout the dashboard's sub-structures.
+*Required*: No
+*Type*: Array of [TopicIdentifierDeclaration](aws-properties-quicksight-dashboard-topicidentifierdeclaration.md)
+*Minimum*: `0`
+*Maximum*: `50`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

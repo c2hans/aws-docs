@@ -13,6 +13,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::MediaConnect::BridgeSource](aws-resource-mediaconnect-bridgesource.md)
 + [AWS::MediaConnect::Flow](aws-resource-mediaconnect-flow.md)
 + [AWS::MediaConnect::FlowEntitlement](aws-resource-mediaconnect-flowentitlement.md)
++ [AWS::MediaConnect::FlowMediaStream](aws-resource-mediaconnect-flowmediastream.md)
 + [AWS::MediaConnect::FlowOutput](aws-resource-mediaconnect-flowoutput.md)
 + [AWS::MediaConnect::FlowSource](aws-resource-mediaconnect-flowsource.md)
 + [AWS::MediaConnect::FlowVpcInterface](aws-resource-mediaconnect-flowvpcinterface.md)

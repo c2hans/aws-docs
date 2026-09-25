@@ -21,6 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "[ColorsConfiguration](#cfn-quicksight-analysis-columnconfiguration-colorsconfiguration)" : {{ColorsConfiguration}},
   "[Column](#cfn-quicksight-analysis-columnconfiguration-column)" : {{ColumnIdentifier}},
+  "[DecalSettingsConfiguration](#cfn-quicksight-analysis-columnconfiguration-decalsettingsconfiguration)" : {{DecalSettingsConfiguration}},
   "[FormatConfiguration](#cfn-quicksight-analysis-columnconfiguration-formatconfiguration)" : {{FormatConfiguration}},
   "[Role](#cfn-quicksight-analysis-columnconfiguration-role)" : {{String}}
 }
@@ -34,6 +35,8 @@ To declare this entity in your CloudFormation template, use the following syntax
     ColorsConfiguration}}
   [Column](#cfn-quicksight-analysis-columnconfiguration-column): {{
     ColumnIdentifier}}
+  [DecalSettingsConfiguration](#cfn-quicksight-analysis-columnconfiguration-decalsettingsconfiguration): {{
+    DecalSettingsConfiguration}}
   [FormatConfiguration](#cfn-quicksight-analysis-columnconfiguration-formatconfiguration): {{
     FormatConfiguration}}
   [Role](#cfn-quicksight-analysis-columnconfiguration-role): {{String}}
@@ -52,6 +55,12 @@ The color configurations of the column.
 The column.
 *Required*: Yes
 *Type*: [ColumnIdentifier](aws-properties-quicksight-analysis-columnidentifier.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`DecalSettingsConfiguration`  <a name="cfn-quicksight-analysis-columnconfiguration-decalsettingsconfiguration"></a>
+Decal configuration of the column.
+*Required*: No
+*Type*: [DecalSettingsConfiguration](aws-properties-quicksight-analysis-decalsettingsconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `FormatConfiguration`  <a name="cfn-quicksight-analysis-columnconfiguration-formatconfiguration"></a>

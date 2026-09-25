@@ -21,6 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "[Enablement](#cfn-connect-evaluationform-evaluationformquestion-enablement)" : {{EvaluationFormItemEnablementConfiguration}},
   "[Instructions](#cfn-connect-evaluationform-evaluationformquestion-instructions)" : {{String}},
+  "[MetricConfiguration](#cfn-connect-evaluationform-evaluationformquestion-metricconfiguration)" : {{EvaluationFormMetricConfiguration}},
   "[NotApplicableEnabled](#cfn-connect-evaluationform-evaluationformquestion-notapplicableenabled)" : {{Boolean}},
   "[QuestionType](#cfn-connect-evaluationform-evaluationformquestion-questiontype)" : {{String}},
   "[QuestionTypeProperties](#cfn-connect-evaluationform-evaluationformquestion-questiontypeproperties)" : {{EvaluationFormQuestionTypeProperties}},
@@ -38,6 +39,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   [Enablement](#cfn-connect-evaluationform-evaluationformquestion-enablement): {{
     EvaluationFormItemEnablementConfiguration}}
   [Instructions](#cfn-connect-evaluationform-evaluationformquestion-instructions): {{String}}
+  [MetricConfiguration](#cfn-connect-evaluationform-evaluationformquestion-metricconfiguration): {{
+    EvaluationFormMetricConfiguration}}
   [NotApplicableEnabled](#cfn-connect-evaluationform-evaluationformquestion-notapplicableenabled): {{Boolean}}
   [QuestionType](#cfn-connect-evaluationform-evaluationformquestion-questiontype): {{String}}
   [QuestionTypeProperties](#cfn-connect-evaluationform-evaluationformquestion-questiontypeproperties): {{
@@ -64,6 +67,12 @@ The instructions of the section.
 *Required*: No
 *Type*: String
 *Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`MetricConfiguration`  <a name="cfn-connect-evaluationform-evaluationformquestion-metricconfiguration"></a>
+The metric configuration for the question. Use this to associate a business outcome metric with the question.
+*Required*: No
+*Type*: [EvaluationFormMetricConfiguration](aws-properties-connect-evaluationform-evaluationformmetricconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `NotApplicableEnabled`  <a name="cfn-connect-evaluationform-evaluationformquestion-notapplicableenabled"></a>

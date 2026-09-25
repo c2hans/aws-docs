@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/waf/index.html
 title: 'AWS WAF Documentation'
 canonical_url: https://docs.aws.amazon.com/waf/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # AWS WAF Documentation

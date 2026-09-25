@@ -126,6 +126,9 @@ Content-type: application/json
    "nluIntentConfidenceThreshold": number,
    "recommendedActions": [ "string" ],
    "slotTypesCount": number,
+   "speakerDiarizationSettings": {
+      "enabled": boolean
+   },
    "speechDetectionSensitivity": "string",
    "speechRecognitionSettings": {
       "speechModelConfig": {
@@ -230,6 +233,10 @@ Type: Array of strings
  ** [slotTypesCount](#API_DescribeBotLocale_ResponseSyntax) **   <a name="lexv2-DescribeBotLocale-response-slotTypesCount"></a>
 The number of slot types defined for the locale.
 Type: Integer
+
+ ** [speakerDiarizationSettings](#API_DescribeBotLocale_ResponseSyntax) **   <a name="lexv2-DescribeBotLocale-response-speakerDiarizationSettings"></a>
+The speaker diarization settings configured for the bot locale.
+Type: [SpeakerDiarizationSettings](API_SpeakerDiarizationSettings.md) object
 
  ** [speechDetectionSensitivity](#API_DescribeBotLocale_ResponseSyntax) **   <a name="lexv2-DescribeBotLocale-response-speechDetectionSensitivity"></a>
 The sensitivity level for voice activity detection (VAD) configured for the bot locale.

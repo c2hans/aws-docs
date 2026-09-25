@@ -50,7 +50,7 @@ The selected type for the tooltip. Choose one of the following options:
 + `DETAILED`: A detailed tooltip.
 *Required*: No
 *Type*: String
-*Allowed values*: `BASIC | DETAILED`
+*Allowed values*: `BASIC | DETAILED | SHEET`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TooltipVisibility`  <a name="cfn-quicksight-dashboard-tooltipoptions-tooltipvisibility"></a>

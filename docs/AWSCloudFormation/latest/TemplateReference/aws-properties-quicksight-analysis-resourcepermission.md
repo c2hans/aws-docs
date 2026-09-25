@@ -41,7 +41,7 @@ The IAM action to grant or revoke permissions on.
 *Required*: Yes
 *Type*: Array of String
 *Minimum*: `1`
-*Maximum*: `20`
+*Maximum*: `30`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Principal`  <a name="cfn-quicksight-analysis-resourcepermission-principal"></a>

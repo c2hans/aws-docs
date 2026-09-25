@@ -44,6 +44,20 @@ Release notes describing changes in this version of the fulfillment option.
 Type: String
 Required: No
 
+ ** supportedContentTypes **   <a name="AWSMarketplaceService-Type-marketplace-discovery_SageMakerModelFulfillmentOption-supportedContentTypes"></a>
+The MIME types that this model accepts as input.
+Type: Array of strings
+Array Members: Minimum number of 0 items. Maximum number of 50 items.
+Length Constraints: Minimum length of 0. Maximum length of 256.
+Required: No
+
+ ** supportedResponseMimeTypes **   <a name="AWSMarketplaceService-Type-marketplace-discovery_SageMakerModelFulfillmentOption-supportedResponseMimeTypes"></a>
+The MIME types that this model returns as output.
+Type: Array of strings
+Array Members: Minimum number of 0 items. Maximum number of 50 items.
+Length Constraints: Minimum length of 0. Maximum length of 256.
+Required: No
+
  ** usageInstructions **   <a name="AWSMarketplaceService-Type-marketplace-discovery_SageMakerModelFulfillmentOption-usageInstructions"></a>
 Instructions on how to use this SageMaker model.
 Type: String

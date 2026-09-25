@@ -20,6 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[FieldWells](#cfn-quicksight-template-geospatialmapconfiguration-fieldwells)" : {{GeospatialMapFieldWells}},
+  "[Interactions](#cfn-quicksight-template-geospatialmapconfiguration-interactions)" : {{VisualInteractionOptions}},
   "[Legend](#cfn-quicksight-template-geospatialmapconfiguration-legend)" : {{LegendOptions}},
   "[MapStyleOptions](#cfn-quicksight-template-geospatialmapconfiguration-mapstyleoptions)" : {{GeospatialMapStyleOptions}},
   "[PointStyleOptions](#cfn-quicksight-template-geospatialmapconfiguration-pointstyleoptions)" : {{GeospatialPointStyleOptions}},
@@ -35,6 +36,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [FieldWells](#cfn-quicksight-template-geospatialmapconfiguration-fieldwells): {{
     GeospatialMapFieldWells}}
+  [Interactions](#cfn-quicksight-template-geospatialmapconfiguration-interactions): {{
+    VisualInteractionOptions}}
   [Legend](#cfn-quicksight-template-geospatialmapconfiguration-legend): {{
     LegendOptions}}
   [MapStyleOptions](#cfn-quicksight-template-geospatialmapconfiguration-mapstyleoptions): {{
@@ -56,6 +59,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 The field wells of the visual.
 *Required*: No
 *Type*: [GeospatialMapFieldWells](aws-properties-quicksight-template-geospatialmapfieldwells.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Interactions`  <a name="cfn-quicksight-template-geospatialmapconfiguration-interactions"></a>
+The general visual interactions setup for a visual.
+*Required*: No
+*Type*: [VisualInteractionOptions](aws-properties-quicksight-template-visualinteractionoptions.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Legend`  <a name="cfn-quicksight-template-geospatialmapconfiguration-legend"></a>

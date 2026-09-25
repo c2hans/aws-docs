@@ -23,7 +23,7 @@ AL2027 includes several security enhancements over AL2023. For the compile-time 
 
 The SELinux mandatory access control policies define permissions for users, processes, programs, files, and devices.
 
-By default, SELinux is enabled and set to `enforcing` mode in AL2027. This means that SELinux security policy is fully enforced, in contrast with permissive mode (default in AL2023) where permission denials are logged but not enforced.
+By default, SELinux is enabled and set to `enforcing` mode in AL2027. This is in contrast with `permissive` mode (default in AL2023) where permission denials are logged but not enforced.
 
 For more information about SELinux modes and policy, see [Setting SELinux modes for AL2027](selinux-modes.md) and [the SELinux Project](https://selinuxproject.github.io/).
 

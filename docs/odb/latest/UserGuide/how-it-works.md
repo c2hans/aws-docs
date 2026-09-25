@@ -61,7 +61,7 @@ When you create an ODB network, you specify information such as the following:
 </thead>
 <tbody>
   <tr><td>Canada (Central)</td><td><code>ca-central-1</code></td><td><code>cac1-az1</code>, <code>cac1-az4</code></td></tr>
-  <tr><td>US East (N. Virginia)</td><td><code>us-east-1</code></td><td><code>use1-az2</code>, <code>use1-az4</code>, <code>use1-az6</code></td></tr>
+  <tr><td>US East (N. Virginia)</td><td><code>us-east-1</code></td><td><code>use1-az1</code>, <code>use1-az2</code>, <code>use1-az4</code>, <code>use1-az6</code></td></tr>
   <tr><td>US East (Ohio)</td><td><code>us-east-2</code></td><td><code>use2-az1</code>, <code>use2-az2</code></td></tr>
   <tr><td>US West (N. California)</td><td><code>us-west-1</code></td><td><code>usw1-az1</code>, <code>usw1-az3</code></td></tr>
   <tr><td>US West (Oregon)</td><td><code>us-west-2</code></td><td><code>usw2-az3</code>, <code>usw2-az4</code></td></tr>
@@ -150,7 +150,7 @@ A Virtual Private Cloud (VPC) is a virtual network that you create in the AWS cl
 
 You can launch Amazon EC2 instances into your Amazon VPC. The EC2 instances can host application servers that communicate with Oracle Exadata databases. You can manage and launch the application servers just like any other EC2 instances in your VPC. For more information, see [What is Amazon EC2?](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)
 
-By default, the ODB network doesn't have connectivity to VPCs. To connect the ODB network to your existing AWS infrastructure, create one or more peering connections (up to 45) between the ODB network and your VPCs. For more information, see [Step 1: Create an ODB network in Oracle Database@AWS](getting-started.md#getting-started-odb).
+By default, the ODB network doesn't have connectivity to VPCs. To connect the ODB network to your existing AWS infrastructure, create one or more peering connections (up to 125) between the ODB network and your VPCs. For more information, see [Step 1: Create an ODB network in Oracle Database@AWS](getting-started.md#getting-started-odb).
 
 ## ODB peering
 <a name="how-it-works.peering"></a>
@@ -213,7 +213,7 @@ To allow multiple VPCs to access Oracle Database@AWS resources in one ODB networ
 ### AWS Transit Gateway
 <a name="how-it-works-tgw"></a>
 
-An Amazon VPC transit gateway is a network transit hub used to interconnect VPCs and on-premises networks. An ODB network supports up to 45 direct peering connections. You can establish direct peering connections between your ODB network and multiple VPCs, or use a transit gateway for centralized routing. To use a transit gateway, peer your ODB network to a VPC and then attach this VPC to the transit gateway. The gateway can connect to multiple VPCs. With this transit gateway configuration, you can route traffic between multiple VPC subnets and your ODB network through a central hub.
+An Amazon VPC transit gateway is a network transit hub used to interconnect VPCs and on-premises networks. An ODB network supports up to 125 direct peering connections. You can establish direct peering connections between your ODB network and multiple VPCs, or use a transit gateway for centralized routing. To use a transit gateway, peer your ODB network to a VPC and then attach this VPC to the transit gateway. The gateway can connect to multiple VPCs. With this transit gateway configuration, you can route traffic between multiple VPC subnets and your ODB network through a central hub.
 
 ![Shows an ODB network peered with a VPC that is connected to a transit gateway. The gateway is connected to a VPC and an on-premises network.](https://docs.aws.amazon.com/odb/latest/UserGuide/images/ODB-tgw.png)
 

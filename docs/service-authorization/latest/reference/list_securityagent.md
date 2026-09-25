@@ -939,6 +939,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** Write
 
+- **   [ListActorMessages](https://docs.aws.amazon.com/securityagent/API_ListActorMessages.html)  **
+  - **Description:** Grants permission to list the MFA messages received for an actor at its server-generated address
+  - **Resource types (\*required):** [AgentSpace\*](#list_securityagent-resource-AgentSpace)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_securityagent-aws_ResourceTag___TagKey_)
+  - **Access level:** List
+
 - **   [ListAgentSpaces](https://docs.aws.amazon.com/securityagent/API_ListAgentSpaces.html)  **
   - **Description:** Grants permission to list agent spaces
   - **Resource types (\*required):**

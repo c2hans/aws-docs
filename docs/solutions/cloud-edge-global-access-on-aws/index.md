@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/cloud-edge-global-access-on-aw
 title: 'Guidance for Cloud Edge Global Access on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/cloud-edge-global-access-on-aws/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # Guidance for Cloud Edge Global Access on AWS

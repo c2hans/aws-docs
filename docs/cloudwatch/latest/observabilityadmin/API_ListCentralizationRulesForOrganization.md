@@ -64,6 +64,7 @@ Content-type: application/json
 {
    "CentralizationRuleSummaries": [
       {
+         "ContextGraphStatus": "string",
          "CreatedRegion": "string",
          "CreatedTimeStamp": number,
          "CreatorAccountId": "string",

@@ -52,6 +52,7 @@ The **Supported?** columns use the following legend:
 | Filesystem - S3 Files access point | ✅ Yes | No | ✅ Yes | No |
 | Environment variables | ✅ Yes | No | ✅ Yes | No |
 | Direct shell command execution (`InvokeAgentRuntimeCommand` API) | ✅ Yes | No | ✅ Yes | No |
+| Interactive shell sessions (`InvokeAgentRuntimeCommandShell` API) | ✅ Yes | No | ✅ Yes | No |
 | Inbound auth - IAM (SigV4) | ✅ Yes | No | ✅ Yes | No |
 | Inbound auth - OAuth | ✅ Yes | No | ✅ Yes | No |
 | Outbound auth / Identity token vault (OAuth and API keys) | ✅ Yes | No | 🔵 Custom | Yes |
@@ -71,3 +72,4 @@ The **Supported?** columns use the following legend:
 +  [Tools](harness-tools.md) – Connect tools to your harness
 +  [Lifecycle hooks](harness-lifecycle-hooks.md) – Configure hooks to validate invocations and tool calls
 +  [Environment and filesystem](harness-environment.md) – Bring a custom container image or environment
++  [Interactive shells](harness-command-shell.md) – Open an interactive terminal in a harness session

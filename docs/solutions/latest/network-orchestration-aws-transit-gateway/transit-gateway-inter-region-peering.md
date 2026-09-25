@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/network-orchestration-a
 # Transit Gateway inter-Region peering
 <a name="transit-gateway-inter-region-peering"></a>
 
-You can use Transit Gateway peering to directly route traffic between two transit gateways in the same AWS Region or across Regions. This section provides information about how this solution supports peering.
+You can use Transit Gateway peering to directly route traffic between two transit gateways in the same AWS Region or across Regions. This section provides information about how this Guidance supports peering.
 
  **Architecture diagram of AWS resources deployed to support Transit Gateway inter-Region peering.**
 
@@ -17,4 +17,4 @@ You can use Transit Gateway peering to directly route traffic between two transi
 
 1. The Lambda function accepts the peering attachment request in the remote Region.
 
-1. The solution sets the peering attachment state to `Available`.
+1. The Lambda function sets the peering attachment state to `Available`.

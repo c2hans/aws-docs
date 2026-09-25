@@ -181,7 +181,7 @@ Other parameters affecting automatic console sessions are `max-concurrent-client
 Amazon DCV doesn't support automatic virtual sessions.
 
 ------
-#### [ Windows Amazon DCV server ]
+#### [ Windows ]
 
 **To enable an automatic console session on a Windows Amazon DCV server**
 
@@ -212,7 +212,7 @@ Amazon DCV doesn't support automatic virtual sessions.
 1. [Stop](manage-stop.md) and [restart](manage-start.md) the Amazon DCV server.
 
 ------
-#### [ Linux Amazon DCV server ]
+#### [ Linux ]
 
 **To enable an automatic console session on a Linux Amazon DCV server**
 
@@ -233,7 +233,7 @@ Amazon DCV doesn't support automatic virtual sessions.
 1. [Stop](manage-stop.md) and [restart](manage-start.md) the Amazon DCV server.
 
 ------
-#### [ macOS Amazon DCV server ]
+#### [ macOS ]
 
 **To enable an automatic console session on a macOS Amazon DCV server**
 

@@ -9,6 +9,9 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 Creates a Amazon Route 53 Resolver on an Outpost.
 
+**Note**
+This operation applies to first-generation AWS Outposts only. On second-generation AWS Outposts, Resolver is enabled by default and managed automatically by AWS, so you don't need to create it.
+
 ## Syntax
 <a name="aws-resource-route53resolver-outpostresolver-syntax"></a>
 

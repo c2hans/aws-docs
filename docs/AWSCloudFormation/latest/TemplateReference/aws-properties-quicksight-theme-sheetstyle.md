@@ -19,6 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[Background](#cfn-quicksight-theme-sheetstyle-background)" : {{SheetBackgroundStyle}},
   "[Tile](#cfn-quicksight-theme-sheetstyle-tile)" : {{TileStyle}},
   "[TileLayout](#cfn-quicksight-theme-sheetstyle-tilelayout)" : {{TileLayoutStyle}}
 }
@@ -28,6 +29,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-quicksight-theme-sheetstyle-syntax.yaml"></a>
 
 ```
+  [Background](#cfn-quicksight-theme-sheetstyle-background): {{
+    SheetBackgroundStyle}}
   [Tile](#cfn-quicksight-theme-sheetstyle-tile): {{
     TileStyle}}
   [TileLayout](#cfn-quicksight-theme-sheetstyle-tilelayout): {{
@@ -36,6 +39,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ## Properties
 <a name="aws-properties-quicksight-theme-sheetstyle-properties"></a>
+
+`Background`  <a name="cfn-quicksight-theme-sheetstyle-background"></a>
+The background for sheets.
+*Required*: No
+*Type*: [SheetBackgroundStyle](aws-properties-quicksight-theme-sheetbackgroundstyle.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tile`  <a name="cfn-quicksight-theme-sheetstyle-tile"></a>
 The display options for tiles.

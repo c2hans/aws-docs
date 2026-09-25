@@ -49,4 +49,5 @@ The following actions are supported:
 +  [UpdateMaxRecordSize](API_UpdateMaxRecordSize.md)
 +  [UpdateShardCount](API_UpdateShardCount.md)
 +  [UpdateStreamMode](API_UpdateStreamMode.md)
++  [UpdateStreamRecordDistributionStrategy](API_UpdateStreamRecordDistributionStrategy.md)
 +  [UpdateStreamWarmThroughput](API_UpdateStreamWarmThroughput.md)

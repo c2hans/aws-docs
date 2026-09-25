@@ -18,6 +18,7 @@ The following actions are supported by AWS Billing:
 +  [GetEnterpriseSupportContractDetails](API_billing_GetEnterpriseSupportContractDetails.md)
 +  [GetResourcePolicy](API_billing_GetResourcePolicy.md)
 +  [ListBillingViews](API_billing_ListBillingViews.md)
++  [ListBillingViewSegments](API_billing_ListBillingViewSegments.md)
 +  [ListEnterpriseSupportLinkedAccountCharges](API_billing_ListEnterpriseSupportLinkedAccountCharges.md)
 +  [ListSourceViewsForBillingView](API_billing_ListSourceViewsForBillingView.md)
 +  [ListTagsForResource](API_billing_ListTagsForResource.md)

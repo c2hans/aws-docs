@@ -5,18 +5,18 @@ source_url: https://docs.aws.amazon.com/solutions/latest/network-orchestration-a
 # Cost
 <a name="cost"></a>
 
-You are responsible for the cost of the AWS services used while running this solution. As of this revision, the cost for running this solution with the default settings in the US East (N. Virginia) Region is approximately **$85.22 a month**. These costs are for the resources shown in the [Sample cost table](#sample-cost-table).
+You are responsible for the cost of the AWS services used while running this Guidance. As of this revision, the cost for running it with the default settings in the US East (N. Virginia) Region is approximately **$85.22 a month**. These costs are for the resources shown in the [Sample cost table](#sample-cost-table).
 
-See the pricing webpage for each AWS service used in this solution.
+See the pricing webpage for each AWS service used in this Guidance.
 
-We recommend creating a [budget](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-create.html) through [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/) to help manage costs. Prices are subject to change. For full details, see the pricing webpage for each AWS service used in this solution.
+We recommend creating a [budget](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-create.html) through [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/) to help manage costs. Prices are subject to change. For full details, see the pricing webpage for each AWS service used.
 
 ## Sample cost table
 <a name="sample-cost-table"></a>
 
-The following table provides a sample cost breakdown for deploying this solution with the default parameters in the US East (N. Virginia) Region for one month. This cost estimate assumes the following:
-+ The solution manages two VPCs attached to one transit gateway, with each VPC containing two subnets in different Availability Zones.
-+ The solution makes automated queries to DynamoDB from an actively running web UI every five minutes. This estimate does not include manual queries.
+The following table provides a sample cost breakdown for deploying with the default parameters in the US East (N. Virginia) Region for one month. This cost estimate assumes the following:
++ Two VPCs are managed, each attached to one transit gateway and containing two subnets in different Availability Zones.
++ Automated queries to DynamoDB from an actively running web UI run every five minutes. This estimate does not include manual queries.
 + One GB of data a month travels between the two VPCs through the transit gateway.
 + The number of requests to the GraphQL API is 10,000 a month.
 

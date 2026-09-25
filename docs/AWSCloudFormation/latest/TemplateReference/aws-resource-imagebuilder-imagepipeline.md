@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::ImageBuilder::ImagePipeline
 <a name="aws-resource-imagebuilder-imagepipeline"></a>
 
-An image pipeline is the automation configuration for building secure OS images on AWS. The Image Builder image pipeline is associated with an image recipe that defines the build, validation, and test phases for an image build lifecycle. An image pipeline can be associated with an infrastructure configuration that defines where your image is built. You can define attributes, such as instance types, a subnet for your VPC, security groups, logging, and other infrastructure-related configurations. You can also associate your image pipeline with a distribution configuration to define how you would like to deploy your image.
+Defines the automation configuration for building, testing, and distributing images. A pipeline references the resources that its builds use, such as the recipe and infrastructure configuration. It also holds the settings that control its builds, such as the schedule and custom workflows.
 
 ## Syntax
 <a name="aws-resource-imagebuilder-imagepipeline-syntax"></a>
@@ -123,7 +123,7 @@ Contains settings for vulnerability scans that Amazon Inspector runs against the
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ImageTags`  <a name="cfn-imagebuilder-imagepipeline-imagetags"></a>
-The tags to apply to every image that this pipeline produces. Unlike the `Tags` property, which tags the pipeline resource itself, `ImageTags` tag each image version that the pipeline creates. These tags appear on the resulting AMI or container image. To tag the AMI during the Build phase before distribution, use the `AmiTags` property on the image recipe instead.
+The tags that Image Builder applies to the Image Builder image resource that this pipeline's scheduled executions create. These tags don't apply to the output AMI, and they're separate from the `Tags` property, which tags the pipeline resource itself. Builds that you start manually use the tags from the [StartImagePipelineExecution](https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_StartImagePipelineExecution.html) request instead. To tag the AMI that Image Builder creates during the Build phase, use the `AmiTags` property on the image recipe.
 *Required*: No
 *Type*: Object of String
 *Pattern*: `.{1,}`
@@ -318,6 +318,7 @@ Resources:
       Schedule:
         ScheduleExpression: 'cron(0 8 ? * mon *)'
         PipelineExecutionStartCondition: EXPRESSION_MATCH_AND_DEPENDENCY_UPDATES_AVAILABLE
+        Timezone: America/Los_Angeles
       Status: ENABLED
 ```
 
@@ -368,7 +369,8 @@ Resources:
                 },
                 "Schedule": {
                     "ScheduleExpression": "cron(0 8 ? * mon *)",
-                    "PipelineExecutionStartCondition": "EXPRESSION_MATCH_AND_DEPENDENCY_UPDATES_AVAILABLE"
+                    "PipelineExecutionStartCondition": "EXPRESSION_MATCH_AND_DEPENDENCY_UPDATES_AVAILABLE",
+                    "Timezone": "America/Los_Angeles"
                 },
                 "Status": "ENABLED"
             }

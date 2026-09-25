@@ -10,16 +10,16 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ![View of the visual editor for spans.](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/images/transactionsearch1.png)
 
 **Topics**
-+ [Benefits](#w2aac25c21b9)
-+ [How it works](#w2aac25c21c11)
-+ [Pricing](#w2aac25c21c13)
++ [Benefits](#w2aac27c21b9)
++ [How it works](#w2aac27c21c11)
++ [Pricing](#w2aac27c21c13)
 + [Enable transaction search](Enable-TransactionSearch.md)
 + [Spans](CloudWatch-Transaction-Search-ingesting-span-log-groups.md)
 + [Adding custom attributes](CloudWatch-Transaction-Search-add-custom-attributes.md)
 + [Troubleshooting application issues](CloudWatch-Transaction-Search-troubleshooting.md)
 
 ## Benefits
-<a name="w2aac25c21b9"></a>
+<a name="w2aac27c21b9"></a>
 
  The following are benefits of using Transaction Search:
 
@@ -45,19 +45,19 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
  Access application dashboards, metrics, and topology when you enable Application Signals for all spans sent to CloudWatch.
 
 ## How it works
-<a name="w2aac25c21c11"></a>
+<a name="w2aac27c21c11"></a>
 
  When you enable Transaction Search, you unlock multiple capabilities, including features in Application Signals and CloudWatch Logs.
 
 ![Overview of how Transaction Search works with other services.](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/images/howitworks.png)
 
- If you send traces to X-Ray, you can [get started by enabling Transaction Search](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Transaction-Search-getting-started.html) in the console or with the API. If you don't send traces to X-Ray, you can use the [CloudWatch Application Signals](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Application-Signals-Enable.html) that provides pre-packaged OpenTelemetry setup with AWS Distro for OpenTelemetry (ADOT), CloudWatch Agent, or use OpenTelemetry directly.
+ If you send traces to X-Ray, you can [get started by enabling Transaction Search](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Transaction-Search-getting-started.html) in the console or with the API. If you don't send traces to X-Ray, you can use the [CloudWatch Application Signals](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Application-Signals-Enable.html) that provides pre-packaged OpenTelemetry setup with AWS Distro fro OpenTelemetry (ADOT), CloudWatch Agent, or use OpenTelemetry directly.
 
  When you enable Transaction Search, spans sent to X-Ray are ingested in a log group called `aws/spans`. CloudWatch uses these spans to generate a curated application performance monitoring (APM) experience in CloudWatch Application Signals. This provides you the ability to search and analyze spans, as well as use CloudWatch Logs capabilities like anomaly and pattern detection. You can even use custom metric extraction . CloudWatch Application Signals provides you with a unified, application-centric view of your applications, services, and dependencies. It also helps you monitor and triage application health.
 
  You can also explore spans using the interactive search and analytics experience in CloudWatch to answer any questions related to application performance or end-user impact with Transaction Search. Detect the impact on end users, find transactions in context of those issues using relevant attributes, such as customer name or order number. You can correlate transactions to business events, such as failed payments, and dive into interactions between application components to establish a root cause. With CloudWatch, you get complete application transaction coverage with correlated insights, helping you to accelerate mean time to resolution.
 
 ## Pricing
-<a name="w2aac25c21c13"></a>
+<a name="w2aac27c21c13"></a>
 
  For information about pricing, see [Amazon CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/).

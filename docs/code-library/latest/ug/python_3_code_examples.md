@@ -48,6 +48,7 @@ Some services contain additional example categories that show how to leverage li
 + [DynamoDB](python_3_dynamodb_code_examples.md)
 + [Amazon EC2](python_3_ec2_code_examples.md)
 + [Amazon ECR](python_3_ecr_code_examples.md)
++ [Amazon ECS](python_3_ecs_code_examples.md)
 + [Elastic Load Balancing - Version 2](python_3_elastic-load-balancing-v2_code_examples.md)
 + [Amazon EMR](python_3_emr_code_examples.md)
 + [EventBridge](python_3_eventbridge_code_examples.md)

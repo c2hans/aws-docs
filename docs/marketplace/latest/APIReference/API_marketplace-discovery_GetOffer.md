@@ -15,6 +15,7 @@ POST /2026-02-05/getOffer HTTP/1.1
 Content-type: application/json
 
 {
+   "locale": "{{string}}",
    "offerId": "{{string}}"
 }
 ```
@@ -35,6 +36,13 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[\w\-]+`
 Required: Yes
+
+ ** [locale](#API_marketplace-discovery_GetOffer_RequestSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetOffer-request-locale"></a>
+A BCP 47 language tag or comma-separated priority list specifying the preferred locale for response content. See `Locale` for supported values, constraints, fallback behavior, and the default locale. If omitted, the service returns content in the default locale.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Pattern: `[^;,]+(\s*,\s*[^;,]+){0,1}`
+Required: No
 
 ## Response Syntax
 <a name="API_marketplace-discovery_GetOffer_ResponseSyntax"></a>
@@ -73,6 +81,7 @@ Content-type: application/json
    ],
    "catalog": "string",
    "expirationTime": number,
+   "locale": "string",
    "offerId": "string",
    "offerName": "string",
    "pricingModel": {
@@ -137,6 +146,12 @@ Type: Timestamp
  ** [expirationTime](#API_marketplace-discovery_GetOffer_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetOffer-response-expirationTime"></a>
 The date and time until when the offer can be procured. This value is null for offers that never expire.
 Type: Timestamp
+
+ ** [locale](#API_marketplace-discovery_GetOffer_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetOffer-response-locale"></a>
+The locale of the returned content. Indicates whether the response contains content in the requested locale, or fell back to the default locale. See `Locale` for details.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Pattern: `[^;,]+(\s*,\s*[^;,]+){0,1}`
 
  ** [offerName](#API_marketplace-discovery_GetOffer_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-discovery_GetOffer-response-offerName"></a>
 The display name of the offer. This is free-form text provided by the seller.

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/macie/index.html
 title: 'Amazon Macie Documentation'
 canonical_url: https://docs.aws.amazon.com/macie/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # Amazon Macie Documentation

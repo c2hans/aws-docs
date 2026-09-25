@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/neptune/index.html
 title: 'Amazon Neptune Documentation'
 canonical_url: https://docs.aws.amazon.com/neptune/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # Amazon Neptune Documentation

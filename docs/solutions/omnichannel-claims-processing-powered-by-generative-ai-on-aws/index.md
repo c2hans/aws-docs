@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/omnichannel-claims-processing-
 title: 'Guidance for Omnichannel Claims Processing Powered by Generative AI on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/omnichannel-claims-processing-powered-by-generative-ai-on-aws/
 source: aws-documentation
-generated_on: 2026-09-22
+generated_on: 2026-09-25
 ---
 
 # Guidance for Omnichannel Claims Processing Powered by Generative AI on AWS
