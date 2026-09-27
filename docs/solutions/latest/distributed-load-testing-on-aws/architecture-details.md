@@ -28,7 +28,7 @@ The following AWS services are included in this solution:
 |  [AWS Fargate](https://aws.amazon.com/fargate/)  |  **Core.** Hosts solution's Amazon ECS containers |
 |  [AWS Identity and Access Management](https://aws.amazon.com/iam/)  |  **Core.** Handles user role and permissions management. |
 |  [AWS Lambda](https://aws.amazon.com/lambda/)  |  **Core.** Provides logic for APIs implementation, tests results parsing, and launching workers/leader tasks. |
-|  [AWS Step Functions](https://aws.amazon.com/step-functions/)  |  **Core.** Orchestrates the provisioning of Amazon ECS containers on AWS Fargate tasks in the specified regions |
+|  [AWS Step Functions](https://aws.amazon.com/step-functions/)  |  **Core.** Orchestrates the provisioning of Amazon ECS containers on AWS Fargate tasks in the specified Regions |
 |  [AWS Amplify](https://aws.amazon.com/amplify/)  |  **Supporting.** Provides a web console powered by [AWS Amplify](https://aws.amazon.com/amplify). |
 |  [Amazon EventBridge](https://aws.amazon.com/eventbridge/)  |  **Supporting**. Routes Amazon ECS task and Step Functions failure events to failure handler Lambda functions, and schedules tests to automatically begin at a specified date or on recurring dates using EventBridge Scheduler. |
 |  [Amazon Elastic Container Registry](https://aws.amazon.com/ecr/)  |  **Supporting**. Hosts the container image in a public ECR repository. |

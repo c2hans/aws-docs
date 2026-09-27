@@ -15,7 +15,7 @@ AWS Identity and Access Management (IAM) roles allow customers to assign granula
 ## Amazon CloudFront
 <a name="amazon-cloudfront"></a>
 
-This solution deploys a web UI  [hosted](https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html)  in an Amazon S3 bucket, which is distributed by Amazon CloudFront. To help reduce latency and improve security, this solution includes a CloudFront distribution with an origin access identity, which is a CloudFront user that provides public access to the solution website’s bucket contents. By default, the CloudFront distribution uses TLS 1.2 to enforce the highest level of security protocol. For more information, refer to [Restricting access to an Amazon S3 origin](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html) in the *Amazon CloudFront Developer Guide*.
+This solution deploys a web UI  [hosted](https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html)  in an Amazon S3 bucket, which is distributed by Amazon CloudFront. To help reduce latency and improve security, this solution includes a CloudFront distribution with an origin access identity, which is a CloudFront user that provides public access to the solution website’s bucket contents. By default, the CloudFront distribution supports connections up to TLS 1.3, using the highest protocol version that the viewer supports. For more information, refer to [Restricting access to an Amazon S3 origin](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html) in the *Amazon CloudFront Developer Guide*.
 
 CloudFront activates additional security mitigations to append HTTP security headers to each viewer response. For more information, refer to [Adding or removing HTTP headers in CloudFront responses](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/adding-response-headers.html).
 
@@ -49,7 +49,7 @@ The minimum requirements for a VPC to be used with Distributed Load Testing on A
 + The VPC must contain at least two AZs
 + The VPC must contain at least two subnets, each in a separate AZ
 + VPC subnets can be either public or private, but they must use the same configuration (both public OR both private)
-+ The VPC must provide access to endpoints for ECR, CloudWatch Logs, S3, and IoT Core.
++ The VPC must provide access to endpoints for ECR, CloudWatch Logs, S3, and AWS IoT Core.
 + The VPC must provide access to the service(s) being targeted by load tests.
 
 **Note**
@@ -102,7 +102,11 @@ The approach for restricting access to the web console depends on the deployment
 ## MCP Server security (Optional)
 <a name="mcp-server-security"></a>
 
-If you deploy the optional MCP Server integration, the solution uses Amazon Bedrock AgentCore Gateway to provide secure access to load testing data for AI agents. AgentCore Gateway validates Amazon Cognito authentication tokens for each request, ensuring that only authorized users can access the MCP Server. The MCP Server Lambda function implements read-only access patterns, preventing AI agents from modifying test configurations or results. All MCP Server interactions use the same permission boundaries and access controls as the web console.
+If you deploy the optional MCP Server integration, the solution uses Amazon Bedrock AgentCore Gateway to provide secure access to load testing data for AI agents. AgentCore Gateway validates Amazon Cognito authentication tokens for each request, so that only authorized users can access the MCP Server. All MCP Server interactions use the same permission boundaries and access controls as the web console.
+
+The **MCP Server Access Mode** parameter controls what AI agents can do. In the default `ReadOnly` mode, the MCP Server exposes read tools only. The AWS Identity and Access Management (IAM) policy on the MCP Server Lambda function permits only `GET` requests to the solution’s API, so agents cannot modify test configurations or results. In `ReadWrite` mode, agents can additionally create, modify, delete, and start test scenarios. Choose `ReadWrite` only if your use case requires agents to change tests.
+
+ **Credential rotation** — If you connect an MCP client using service-based (machine-to-machine) authentication, the solution creates an Amazon Cognito app client with a long-lived client secret. You are responsible for rotating that secret and for storing it securely. We recommend rotating it at least every 90 days. For procedures, refer to [Rotate the MCP Server client secret](mcp-server-integration.md#rotate-mcp-client-secret) in *Use the solution*.
 
 ## ALB \+ ECS Fargate hosted web console security (Optional)
 <a name="alb-ecs-security"></a>
@@ -133,13 +137,13 @@ For details on when each framework is installed and how it’s provisioned, see 
 The bundled version of Apache JMeter has known security vulnerabilities that cannot be fully patched externally without breaking compatibility with the Taurus test automation framework and the JMeter plugin ecosystem that the solution depends on. Before running load tests, review the [Apache JMeter security advisories](https://jmeter.apache.org/security.html) and evaluate if they may cause security vulnerabilities for you.
 
 **Note**
-Apache JMeter also runs under the hood for the **Single HTTP Endpoint** test type. When you configure a URL, method, headers, and body payload in the web console, the solution generates a JMeter test plan and executes it with the bundled JMeter binary. The JMeter security considerations described in this section therefore apply to Single HTTP Endpoint tests as well.
+Apache JMeter also runs under the hood for the **Simple HTTP Endpoint** test type. When you configure a URL, method, headers, and body payload in the web console, the solution generates a JMeter test plan and executes it with the bundled JMeter binary. The JMeter security considerations described in this section therefore apply to Simple HTTP Endpoint tests as well.
 
 If you need a patched version of JMeter, you have two options. Both options require a test archive and are available only for the **JMeter** test type:
 +  **Supply a patched JMeter binary** — Include a patched JMeter binary in your test archive. The solution uses your binary in place of the bundled version.
 +  **Override individual plugin JARs** — Use the plugin override mechanism to replace specific vulnerable plugin JARs with patched versions. For more information, refer to [JMeter tests](design-considerations.md#jmeter-script-support).
 
-The **Single HTTP Endpoint** test type does not accept a test archive and therefore cannot override the bundled JMeter binary or plugins. If you need to run HTTP endpoint tests with a patched JMeter, use the **JMeter** test type and supply a JMeter script (.jmx) or a .zip archive that includes your patched JMeter binary or plugin JARs.
+The **Simple HTTP Endpoint** test type does not accept a test archive and therefore cannot override the bundled JMeter binary or plugins. If you need to run HTTP endpoint tests with a patched JMeter, use the **JMeter** test type and supply a JMeter script (.jmx) or a .zip archive that includes your patched JMeter binary or plugin JARs.
 
 ### Grafana k6
 <a name="k6-security"></a>

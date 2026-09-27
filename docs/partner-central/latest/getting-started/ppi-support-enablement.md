@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/p
 
 AWS hosts regular enablement sessions on:
 + Migration best practices
-+ PPI optimization strategies
++ Performance Indicators optimization strategies
 + New program features
 + Top performer insights
 

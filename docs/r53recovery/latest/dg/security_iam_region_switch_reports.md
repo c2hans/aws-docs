@@ -23,8 +23,8 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/security_iam_regio
         "cloudwatch:DescribeAlarmHistory"
       ],
       "Resource": [
-        "arn:aws:cloudwatch:us-east-1:123456789012:alarm:app-health-primary",
-        "arn:aws:cloudwatch:us-west-2:123456789012:alarm:app-health-secondary"
+        "arn:aws:cloudwatch:us-east-1:111122223333:alarm:app-health-primary",
+        "arn:aws:cloudwatch:us-west-2:111122223333:alarm:app-health-secondary"
       ]
     },
     {
@@ -34,8 +34,8 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/security_iam_regio
         "arc-region-switch:ListPlanExecutionEvents"
       ],
       "Resource": [
-        "arn:aws:arc-region-switch::123456789012:plan/child-plan-1/abcde1",
-        "arn:aws:arc-region-switch::123456789012:plan/child-plan-2/fghij2"
+        "arn:aws:arc-region-switch::111122223333:plan/child-plan-1/abcde1",
+        "arn:aws:arc-region-switch::111122223333:plan/child-plan-2/fghij2"
       ]
     }
   ]

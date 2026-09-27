@@ -89,7 +89,7 @@ https\_proxy=https://PROXY:PORT/
 
 For example: https\_proxy=https://10.0.0.1:8088/
 
-Make sure the proxy has a trailing forward slash.
+Make sure to set the environment variables `https_proxy`, `http_proxy`, and `no_proxy` (for metadata) according to your environment. The proxy value must end with a trailing forward slash (/).
 
 Ensure that you have allowlisted the [MGN IPs and URLs](preparing-environments.md#TCP-443) for both SSL Interception and Authentication.
 

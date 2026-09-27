@@ -52,7 +52,7 @@ For more information about `testScenario` and other parameters, refer to [scenar
 ### Description
 <a name="get-stack-info-description"></a>
 
-The `GET /stack-info` operation retrieves information about the deployed stack including creation time, region, and version. This endpoint is used by the front-end.
+The `GET /stack-info` operation retrieves information about the deployed stack including creation time, Region, and version. This endpoint is used by the front-end.
 
 ### Response
 <a name="get-stack-info-response"></a>
@@ -102,6 +102,7 @@ The `POST /scenarios` operation allows you to create or schedule a test scenario
 |  `testDescription`  | The description of the test |
 |  `testTaskConfigs`  | An object that specifies `concurrency` (the number of parallel runs), `taskCount` (the number of tasks needed to run a test), and `region` for the scenario |
 |  `testScenario`  | The test definition including concurrency, test time, host, and method for the test |
+|  `nativeRunMode`  | An object that selects the traffic shape mode. Omit it to use Standard mode. Include it, with a `maxTestDurationSeconds` safety duration of up to 24 hours, to select Native mode and let the uploaded script control the load. Only script-based tests support Native mode. For more information, refer to [Traffic shape modes](design-considerations.md#traffic-shape-modes-architecture). |
 |  `testType`  | The test type (for example, `simple`, `jmeter`) |
 |  `fileType`  | The upload file type (for example, `none`, `script`, `zip`) |
 |  `tags`  | An array of strings for categorizing tests. Optional field with a maximum length of 5 (for example, `["blue", "3.0", "critical"]`) |
@@ -401,7 +402,7 @@ The `GET /scenarios/{testId}/testruns/{testRunId}` operation retrieves complete 
 |  `endTime`  | The time and date when the test ended (for example, `2025-09-09 21:18:29`) |
 |  `succPercent`  | Success percentage (for example, `100.00`) |
 |  `testTaskConfigs`  | Array of task configuration objects containing `region`, `taskCount`, and `concurrency`  |
-|  `completeTasks`  | Object mapping regions to completed task counts |
+|  `completeTasks`  | Object mapping Regions to completed task counts |
 |  `results`  | Object containing detailed metrics including `avg_lt` (average latency), percentiles (`p0_0`, `p50_0`, `p90_0`, `p95_0`, `p99_0`, `p99_9`, `p100_0`), `avg_rt` (average response time), `avg_ct` (average connection time), `stdev_rt` (standard deviation response time), `concurrency`, `throughput`, `succ` (success count), `fail` (failure count), `bytes`, `testDuration`, `metricS3Location`, `rc` (response codes array), and `labels` array |
 |  `testScenario`  | Object containing test configuration with `execution`, `reporting`, and `scenarios` properties |
 |  `history`  | Array of historical test results (excluded when `history=false`) |
@@ -617,7 +618,7 @@ The `GET /regions` operation allows you to retrieve the regional resource inform
 | Name | Description |
 | --- | --- |
 |  `testId`  | The Region ID |
-|  `ecsCloudWatchLogGroup`  | The name of the Amazon CloudWatch log group for the Amazon Fargate tasks in the Region |
+|  `ecsCloudWatchLogGroup`  | The name of the Amazon CloudWatch log group for the AWS Fargate tasks in the Region |
 |  `region`  | The Region in which the resources in the table exist |
 |  `subnetA`  | The ID of one of the subnets in the Region |
 |  `subnetB`  | The ID of one of the subnets in the Region |
@@ -640,7 +641,7 @@ The `OPTIONS /regions` operation provides a response for the request with the co
 | Name | Description |
 | --- | --- |
 |  `testId`  | The Region ID |
-|  `ecsCloudWatchLogGroup`  | The name of the Amazon CloudWatch log group for the Amazon Fargate tasks in the Region |
+|  `ecsCloudWatchLogGroup`  | The name of the Amazon CloudWatch log group for the AWS Fargate tasks in the Region |
 |  `region`  | The Region in which the resources in the table exist |
 |  `subnetA`  | The ID of one of the subnets in the Region |
 |  `subnetB`  | The ID of one of the subnets in the Region |

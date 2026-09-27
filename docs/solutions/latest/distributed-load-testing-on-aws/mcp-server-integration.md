@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 
 If you deployed the optional MCP Server component during solution deployment, you can integrate the Distributed Load Testing solution with AI development tools that support the Model Context Protocol. The MCP Server provides programmatic access to retrieve, manage, and analyze load tests through AI assistants.
 
-Customers can connect to the DLT MCP Server using the client of their choice (Amazon Q, Claude, etc.), which each have slightly different configuration instructions. This section provides setup instructions for MCP Inspector, Kiro CLI, Cline, and Amazon Quick.
+You can connect to the DLT MCP Server using the client of your choice (Kiro CLI, Claude, and so on), which each have slightly different configuration instructions. This section provides setup instructions for MCP Inspector, Kiro CLI, Cline, and Amazon Quick.
 
 ## Step 1: Get MCP endpoint and access token
 <a name="get-mcp-credentials"></a>
@@ -25,7 +25,7 @@ Before configuring any MCP client, you need to retrieve your MCP Server endpoint
 1. Copy the access token using the **Copy Access Token** button.
 
 **Important**
-Keep your access token secure and do not share it publicly. The token provides read-only access to your Distributed Load Testing solution through the MCP interface.
+Keep your access token secure. Don’t share it publicly. By default, the token provides read-only access to your Distributed Load Testing solution through the MCP interface. If the MCP Server is deployed in ReadWrite access mode, the token also permits create, update, and delete operations. For more information, refer to [MCP tools specification](mcp-tools-specification.md) in the Developer Guide.
 
 ![MCP Server credentials page showing endpoint and access token](https://docs.aws.amazon.com/solutions/latest/distributed-load-testing-on-aws/images/mcp-credentials.png)
 
@@ -67,7 +67,7 @@ Once connected, you can test the available MCP tools:
 
 1. Provide any required parameters.
 
-1. Choose **Invoke** to execute the tool and view the response.
+1. Choose **Invoke** to run the tool and view the response.
 
 ![MCP Inspector showing available tools and invocation](https://docs.aws.amazon.com/solutions/latest/distributed-load-testing-on-aws/images/mcp-inspector-tools.png)
 
@@ -199,6 +199,110 @@ Before configuring the MCP Server in Amazon Quick, you need to retrieve OAuth cr
 1. Start a conversation with the agent using natural language prompts.
 
 1. The agent will use the MCP tools to retrieve and analyze your load testing data.
+
+## Rotate the MCP Server client secret
+<a name="rotate-mcp-client-secret"></a>
+
+If you use service-based (machine-to-machine) authentication to connect an MCP client to the solution, you are responsible for rotating the client secret that the client uses.
+
+### Which credential this applies to
+<a name="mcp-credential-types"></a>
+
+The solution issues two different MCP credentials. Only one of them requires manual rotation.
+
+| Credential | Used by | Rotation |
+| --- | --- | --- |
+|  **User access token** — copied from the **MCP Server** page of the web console | MCP Inspector, Kiro CLI, Cline, and other clients that send an `Authorization: Bearer` header | None required. This is a short-lived Amazon Cognito access token that expires approximately one hour after it is issued. To get a new token, return to the **MCP Server** page and copy it again. |
+|  **Machine-to-machine client ID and client secret** — retrieved from the Amazon Cognito user pool | Amazon Quick, and any other client configured for service-based authentication |  **Manual rotation required.** The client secret is long-lived and does not expire on its own. |
+
+The remainder of this section applies to the machine-to-machine client secret. The solution creates this credential as an Amazon Cognito app client named ` <stack-name>-userpool-client-m2m` when you deploy with **Deploy Optional MCP Server** set to `Yes`. For retrieval instructions, refer to the prerequisites in [Amazon Quick](#amazon-q-suite-configuration).
+
+**Important**
+Treat the client secret as you would any other long-lived credential:
+Do not commit it to source control, embed it in application code, or paste it into issue trackers, chat, or documentation.
+Do not write it to logs, build output, or CI/CD job output.
+Store it in a secrets manager such as [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/), or in the encrypted credential store of the MCP client that consumes it. Do not keep it in a plaintext file.
+Grant access to the secret only to those who need it, such as you and the services that consume the secret.
+
+### Recommended rotation cadence
+<a name="mcp-secret-rotation-cadence"></a>
+
+Rotate the machine-to-machine client secret at least every 90 days. Rotate immediately, outside of the regular schedule, whenever any of the following occurs:
++ You suspect or confirm that the secret was exposed.
++ An operator with access to the secret leaves the team or changes roles.
++ You retire an MCP client that was configured with the secret.
+
+### Rotate the secret
+<a name="mcp-secret-rotation-steps"></a>
+
+An Amazon Cognito app client supports up to two active client secrets at the same time. Rotate by adding a second secret, migrating your MCP clients to it, and then deleting the original — no interruption to MCP access.
+
+The client ID does not change during rotation, so you do not need to update the solution’s AWS CloudFormation stack, the MCP Server endpoint, or the token endpoint. Only the secret value stored in your MCP client changes.
+
+1. Add a second client secret. Amazon Cognito generates the value and returns it in the response.
+
+   ```
+   aws cognito-idp add-user-pool-client-secret \
+     --user-pool-id <user-pool-id> \
+     --client-id <m2m-client-id> \
+     --region <region>
+   ```
+**Important**
+Copy the `ClientSecretValue` from the response and store it securely before continuing. Amazon Cognito returns the generated secret value only in this response and never reveals it again — neither `list-user-pool-client-secrets` nor the Amazon Cognito console will display it. If you lose the value, delete the secret and add a new one.
+
+   The original secret remains valid at this point, so any MCP client still configured with it continues to work.
+
+1. Update each MCP client to use the new secret. For Amazon Quick, edit the MCP Server action and replace the **Client Secret** value, leaving **MCP Server URL**, **Token Endpoint**, and **Client ID** unchanged. Save the action.
+
+1. Validate that the new secret issues tokens. Request a client credentials grant from your user pool’s token endpoint.
+
+   ```
+   curl -X POST https://<user-pool-domain>/oauth2/token \
+     -H 'Content-Type: application/x-www-form-urlencoded' \
+     -d 'grant_type=client_credentials' \
+     -d 'client_id=<m2m-client-id>' \
+     -d 'client_secret=<new-client-secret>' \
+     -d 'scope=dlt-mcp-gateway/read'
+   ```
+
+   A successful response contains an `access_token` field. Then confirm end-to-end access by invoking an MCP tool from the client you reconfigured — for example, ask the agent to list your test scenarios.
+
+1. List the client’s secrets to identify the original one. Each secret is identified by a `ClientSecretId` in the format ` <client-id>--<epoch-create-time> `. Use the `ClientSecretCreateDate` field to distinguish the original secret from the one you just added.
+
+   ```
+   aws cognito-idp list-user-pool-client-secrets \
+     --user-pool-id <user-pool-id> \
+     --client-id <m2m-client-id> \
+     --region <region>
+   ```
+
+1. Invalidate the original secret. After this call, Amazon Cognito no longer issues tokens to any client presenting the old secret.
+
+   ```
+   aws cognito-idp delete-user-pool-client-secret \
+     --user-pool-id <user-pool-id> \
+     --client-id <m2m-client-id> \
+     --client-secret-id <old-client-secret-id> \
+     --region <region>
+   ```
+
+**Note**
+Two constraints apply when you rotate:
+An app client can have a maximum of two secrets. If two already exist, delete the one you no longer need before adding another.
+You cannot delete the last remaining secret on an app client.
+The `add-user-pool-client-secret` command also accepts an optional `--client-secret` parameter for supplying your own value. If you supply a value, Amazon Cognito does not return it in the response, so you must store it before making the call. We recommend letting Amazon Cognito generate the secret.
+
+### If the secret was exposed
+<a name="mcp-secret-exposed"></a>
+
+Rotate using the preceding steps, and complete step 5 (deleting the old secret) as soon as possible rather than waiting for a maintenance window. Then take the following additional actions.
++  **Account for tokens already issued.** Deleting a secret stops Amazon Cognito from issuing new tokens, but access tokens obtained with the exposed secret remain valid until they expire — up to approximately one hour. Deleting the secret does not invalidate them.
++  **Limit what those tokens can do.** If your deployment uses `ReadWrite` access mode, perform an AWS CloudFormation stack update with **MCP Server Access Mode** set to `ReadOnly`. This removes the write tools and restricts the MCP Server Lambda function’s IAM permissions to `GET` requests, so outstanding tokens cannot create, modify, delete, or start test scenarios. Refer to [MCP tools specification](mcp-tools-specification.md) in the Developer Guide for the behavior of each access mode.
++  **Review what the credential was used for.** Check the solution’s test run history and the Amazon CloudWatch Logs for the MCP Server Lambda function for unexpected activity. If the deployment used `ReadWrite` access mode, also review your test scenarios and the contents of the `public/test-scenarios/` prefix of the scenarios bucket for unauthorized changes.
+
+**Note**
+To reject all MCP requests immediately, regardless of token validity, perform a stack update with **Deploy Optional MCP Server** set to `No`. This deletes the AgentCore Gateway.
+Use this only when you must guarantee that no outstanding token can reach the MCP Server. Setting the parameter to `No` also deletes the machine-to-machine app client. Setting it back to `Yes` creates a new app client with a **new client ID** and a new secret. You must then reconfigure every MCP client with both the new client ID and the new secret.
 
 ## Example prompts
 <a name="example-prompts"></a>

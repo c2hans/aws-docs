@@ -61,7 +61,7 @@ For resources not exposed as stack outputs (such as the history table), use `lis
 ### Step 2: Deploy a new DLT stack
 <a name="recovery-step-2-deploy-new-stack"></a>
 
-Deploy a fresh DLT stack using the same CloudFormation template version (or newer). Use the same parameters as the original deployment (VPC settings, admin email, etc.).
+Deploy a fresh DLT stack using the same CloudFormation template version (or newer). Use the same parameters as the original deployment (VPC settings, admin email, and so on).
 
 ```
 aws cloudformation create-stack \
@@ -209,7 +209,7 @@ aws s3 sync \
 
 This copies:
 + Test scripts (JMeter `.jmx` files, k6 scripts, Locust files, ZIP archives)
-+ Test result XML files organized by test ID and region
++ Test result XML files organized by test ID and Region
 + JMeter framework assets and plugins
 
 ### Step 6: Verify the migration

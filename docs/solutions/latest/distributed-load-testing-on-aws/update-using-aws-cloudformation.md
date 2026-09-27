@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 
 If you have previously deployed the solution, follow this procedure to update the CloudFormation stack to the latest version.
 
-1. Sign in to the [CloudFormation console](https://console.aws.amazon.com/cloudformation/), select your existing CloudFormation stack, and select **Update stack**.
+1. Sign in to the [CloudFormation console](https://console.aws.amazon.com/cloudformation/), select your existing CloudFormation stack, and choose **Update stack**.
 
 1. Select **Make a direct update**.
 
@@ -41,7 +41,7 @@ If you have previously deployed the solution, follow this procedure to update th
 
 1. Choose **Update stack** to deploy the stack.
 
-You can view the status of the stack in the AWS CloudFormation console in the **Status** column. You should receive a `UPDATE_COMPLETE` status in approximately 15 minutes.
+You can view the status of the stack in the AWS CloudFormation console in the **Status** column. You should receive an `UPDATE_COMPLETE` status in approximately 15 minutes.
 
 **Note**
-If you experience Amazon Cognito authentication issues while logging in from your browser after stack upgrade, please refresh your browser (Ctrl\+Shift\+R on Windows/Linux or Cmd\+Shift\+R on Mac) to clear cached data and try again.
+If you experience Amazon Cognito authentication issues while logging in from your browser after stack upgrade, refresh your browser (Ctrl\+Shift\+R on Windows/Linux or Cmd\+Shift\+R on Mac) to clear cached data and try again.

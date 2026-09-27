@@ -9,7 +9,7 @@ The DLT CLI lets you interact with the Distributed Load Testing on AWS REST API 
 
 The CLI targets the same IAM-authorized API Gateway as the DLT web console, so any operation available in the browser-based interface can also be performed from the command line using the same underlying API and permissions model.
 
-The CLI source code and full documentation live in the solution’s GitHub repository under the `source/cli` directory. To find it, navigate to the [Distributed Load Testing on AWS repository](https://github.com/aws-solutions/distributed-load-testing-on-aws) and open `source/cli`. The `README.md` in that directory is the authoritative reference for installation, configuration, authentication, and the complete command reference.
+The CLI source code and full documentation live in the solution’s GitHub repository under the `source/cli` directory. The [DLT CLI README](https://github.com/aws-solutions/distributed-load-testing-on-aws/blob/main/source/cli/README.md) on the GitHub website is the authoritative reference for installation, configuration, authentication, and the complete command reference.
 
 ## Key capabilities
 <a name="dlt-cli-capabilities"></a>
@@ -20,15 +20,17 @@ The CLI source code and full documentation live in the solution’s GitHub repos
 |  `login`  | Authenticate with the DLT service and obtain the credentials needed to call the API. |
 |  `logout`  | Remove stored credentials from the local machine. |
 |  `token`  | Inspect and output authentication tokens and credential expiry status. |
-|  `scenarios`  | List, view details, and start (re-run) existing test scenarios. |
-|  `runs`  | Query test run results, view run details, compare against baselines, and download run artifacts. |
+|  `scenarios`  | Create, update, list, view details, start (re-run), cancel, and delete test scenarios. Creation supports simple HTTP tests, script file uploads (JMeter, k6, Locust), and recurring schedules. The `results` subcommand fetches the latest completed run’s metrics. It can also gate CI/CD pipelines using threshold flags. |
+|  `runs`  | Query test run results, view run details, delete run history, manage baseline runs (set, get, and clear), compare runs against a baseline, and download run artifacts. |
 
-The CLI supports three authentication modes: browser-based login (PKCE flow via the Cognito Hosted UI), headless SRP (Secure Remote Password) authentication, and direct IAM credential authentication. For full setup details on each mode, see the `README.md` in the `source/cli` directory of the [GitHub repository](https://github.com/aws-solutions/distributed-load-testing-on-aws).
+The CLI supports three authentication modes: browser-based login using the Proof Key for Code Exchange (PKCE) flow through the Cognito Hosted UI; headless Secure Remote Password (SRP) authentication; and direct IAM credential authentication. For full setup details on each mode, see the [DLT CLI README](https://github.com/aws-solutions/distributed-load-testing-on-aws/blob/main/source/cli/README.md) on the GitHub website.
+
+The `scenarios start --wait` and `scenarios results` commands also support threshold flags (for example, error rate, p95/p99 latency, throughput, and baseline regression). These flags turn load-test outcomes into pass/fail CI/CD pipeline gates and use distinct exit codes to signal a breach. Data commands additionally support `table`, `json`, and `csv` output formats. For the complete flag and exit-code reference, see the [DLT CLI README](https://github.com/aws-solutions/distributed-load-testing-on-aws/blob/main/source/cli/README.md) on the GitHub website.
 
 ## Installation and detailed reference
 <a name="dlt-cli-reference"></a>
 
-The CLI is distributed as a portable Node.js bundle that can be run directly, or you can build it from source using the repository. To get started, navigate to the [Distributed Load Testing on AWS repository](https://github.com/aws-solutions/distributed-load-testing-on-aws) on GitHub and open the `source/cli` directory. The `README.md` file in that directory contains:
+The CLI is distributed as a portable Node.js bundle that can be run directly, or you can build it from source using the repository. To get started, see the [DLT CLI README](https://github.com/aws-solutions/distributed-load-testing-on-aws/blob/main/source/cli/README.md) on the GitHub website, which contains:
 + Installation instructions (portable bundle and build-from-source)
 + Configuration and authentication setup for all three auth modes
 + Full command reference with usage examples

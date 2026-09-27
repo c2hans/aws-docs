@@ -12,7 +12,7 @@ This solution leverages [Amazon Elastic Container Service (Amazon ECS) on AWS Fa
 + Simulate tens of thousands of concurrent users across multiple AWS Regions generating requests at a continuous pace.
 + Customize your application tests using [JMeter](https://jmeter.apache.org/), [k6](https://k6.io/), [Locust](https://locust.io/) test scripts, or simple HTTP endpoint configuration. For security considerations about the bundled frameworks, refer to [Third-party testing frameworks](security-1.md#third-party-testing-frameworks).
 + Schedule load tests to run immediately, at a future date and time, or on a recurring schedule.
-+ Run multiple load tests concurrently across different scenarios and regions.
++ Run multiple load tests concurrently across different scenarios and Regions.
 
 This implementation guide provides an overview of the Distributed Load Testing on AWS solution, its reference architecture and components, considerations for planning the deployment, and configuration steps for deploying the solution to the Amazon Web Services (AWS) Cloud. It includes links to an [AWS CloudFormation](https://aws.amazon.com/cloudformation/) template that launches and configures the AWS services required to deploy this solution using AWS best practices for security and availability.
 

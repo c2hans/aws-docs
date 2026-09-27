@@ -60,6 +60,7 @@ Some services contain additional example categories that show how to leverage li
 + [IAM](python_3_iam_code_examples.md)
 + [AWS IoT](python_3_iot_code_examples.md)
 + [AWS IoT data](python_3_iot-data-plane_code_examples.md)
++ [AWS IoT Greengrass V2](python_3_greengrassv2_code_examples.md)
 + [AWS IoT SiteWise](python_3_iotsitewise_code_examples.md)
 + [Amazon Keyspaces](python_3_keyspaces_code_examples.md)
 + [Kinesis](python_3_kinesis_code_examples.md)

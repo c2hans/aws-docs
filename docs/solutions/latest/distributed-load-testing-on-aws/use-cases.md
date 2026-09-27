@@ -27,7 +27,7 @@ Schedule recurring load tests to detect performance regressions introduced by ne
 
  **Global Performance Assessment**
 
-Evaluate application performance from multiple geographic regions to ensure consistent user experience for a global audience.
+Evaluate application performance from multiple geographic Regions to help deliver a consistent user experience for a global audience.
 
  **API Load Testing**
 

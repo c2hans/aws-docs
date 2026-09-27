@@ -26,6 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[Locale](#cfn-devopsagent-agentspace-locale)" : {{String}},
       "[Name](#cfn-devopsagent-agentspace-name)" : {{String}},
       "[OperatorApp](#cfn-devopsagent-agentspace-operatorapp)" : {{OperatorApp}},
+      "[Preferences](#cfn-devopsagent-agentspace-preferences)" : {{Preferences}},
       "[Tags](#cfn-devopsagent-agentspace-tags)" : {{[ Tag, ... ]}}
     }
 }
@@ -43,6 +44,8 @@ Properties:
   [Name](#cfn-devopsagent-agentspace-name): {{String}}
   [OperatorApp](#cfn-devopsagent-agentspace-operatorapp): {{
     OperatorApp}}
+  [Preferences](#cfn-devopsagent-agentspace-preferences): {{
+    Preferences}}
   [Tags](#cfn-devopsagent-agentspace-tags): {{
     - Tag}}
 ```
@@ -87,6 +90,12 @@ The name of the Agent Space.
 Configuration for the connection to the DevOps Agent web app.
 *Required*: No
 *Type*: [OperatorApp](aws-properties-devopsagent-agentspace-operatorapp.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Preferences`  <a name="cfn-devopsagent-agentspace-preferences"></a>
+Property description not available.
+*Required*: No
+*Type*: [Preferences](aws-properties-devopsagent-agentspace-preferences.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tags`  <a name="cfn-devopsagent-agentspace-tags"></a>

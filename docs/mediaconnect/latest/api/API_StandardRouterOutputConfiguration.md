@@ -25,7 +25,7 @@ Required: Yes
  ** protocol **   <a name="mediaconnect-Type-StandardRouterOutputConfiguration-protocol"></a>
 The protocol used by the standard router output.
 Type: String
-Valid Values: `RTP | RIST | SRT_CALLER | SRT_LISTENER`
+Valid Values: `RTP | RIST | SRT_CALLER | SRT_LISTENER | RTMP_PUSH`
 Required: No
 
 ## See Also

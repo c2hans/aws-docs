@@ -23,7 +23,7 @@ For a list of the quotas for EventBridge Scheduler, see [Quotas for EventBridge 
 ## Custom Event Bus quotas
 <a name="eb-custom-bus-quotas"></a>
 
-Five quotas for the Custom Event Bus appear in the Service Quotas console under Amazon EventBridge with an `[EventsV2]` prefix; three of them are adjustable. To raise the bus limit, for example, request an increase to `[EventsV2] Event Buses`. The other limits in this section are fixed values that the API enforces and are not adjustable. These quotas are separate from the Custom Event Bus - Classic quotas in [Custom Event Bus - Classic quotas](#eb-limits).
+The Service Quotas console lists 6 quotas for the Custom Event Bus under Amazon EventBridge, each with an `[EventsV2]` prefix; 4 of them are adjustable. To raise the bus limit, for example, request an increase to `[EventsV2] Event Buses`. The other limits in this section are fixed values that the API enforces and are not adjustable. These quotas are separate from the Custom Event Bus - Classic quotas in [Custom Event Bus - Classic quotas](#eb-limits).
 
 ### Service Quotas
 <a name="eb-custom-bus-quotas-service"></a>
@@ -35,10 +35,13 @@ The following table lists the quotas in the Service Quotas console, per account 
 | Event buses owned by the account. Buses shared with the account do not count | 5 | Yes |
 | Event sources owned by the account | 200 | Yes |
 | Subscribers per bus the account owns, counting every account the bus is shared with | 10,000 | Yes |
+| Size, in bytes, of the default resource policy of a bus the account owns. The AWS\_RAM policy that AWS RAM writes for a shared bus does not count | 20,480 | Yes |
 | Events per second per bus, counting every event source and every account the bus is shared with | 500,000 | No |
-| Ingestion per event group per second, counted as the number of events plus their total size in KB in any one-second window | 2,000 | No |
+| Ingestion per event group per second, counted as the number of events plus their total size in KB in any one-second window | 1,500 | No |
 
 Your account's bus count is also published as the `ResourceCount` metric in the `AWS/Usage` namespace, so you can alarm before you reach the limit; see [Observability for the Custom Event Bus: metrics, logs, and CloudTrail](eb-custom-bus-observability.md). Publishing and subscriber management are throttled separately for each account: `PutEvents` and `PutRawEvents` draw from one budget, and `CreateSubscriber` and `DeleteSubscriber` from another. Handle `ThrottlingException` with backoff and retry.
+
+If the `default` policy in a `PutResourcePolicy` call exceeds the resource policy size quota, the call fails with `PolicyLengthExceededException`. See [Write a custom resource policy](eb-custom-bus-sharing.md#eb-custom-bus-access-policy).
 
 ### Fixed limits
 <a name="eb-custom-bus-quotas-fixed"></a>
@@ -60,7 +63,7 @@ The following values are set by the API and cannot be raised. Where a setting ta
 | Filters in one FilterConfiguration | Up to 3, one per scope | 4,096 bytes across all filters; 1,000 $or combinations |
 | Filter changes per subscriber | Not configurable | 24 in any rolling 24 hours; see [Updating, pausing, and resuming a subscriber](eb-custom-bus-update.md) |
 | Subscriber creates or deletes in progress on one bus | Not configurable | 1 across all accounts; a second call fails with ConcurrentModificationException |
-| Subscribers replaying from a past position at the same time | Not configurable | Limited per account; CreateSubscriber fails with LimitExceededException when reached |
+| Subscribers replaying from a past position at the same time | Not configurable | Limited per bus; CreateSubscriber fails with LimitExceededException when reached |
 | errorMessage in a dead-letter record | Not configurable | 1,024 characters |
 
 ## Custom Event Bus - Classic quotas

@@ -57,8 +57,18 @@ HTTP Status Code: 404
 The requested cache subnet group name does not refer to an existing cache subnet group.
 HTTP Status Code: 400
 
+ ** GlobalReplicationGroupNotFoundFault **
+The Global datastore does not exist
+HTTP Status Code: 404
+
  ** InvalidARN **
 The requested Amazon Resource Name (ARN) does not refer to an existing resource.
+HTTP Status Code: 400
+
+ ** InvalidParameterValue **
+The value for a parameter is invalid.
+ ** message **
+A parameter value is invalid.
 HTTP Status Code: 400
 
  ** InvalidReplicationGroupState **

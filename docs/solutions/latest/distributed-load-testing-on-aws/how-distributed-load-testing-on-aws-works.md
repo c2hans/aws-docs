@@ -39,7 +39,7 @@ The following detailed breakdown shows the steps involved in running a test scen
 
 1. The web console subscribes to the AWS IoT Core topic for the test and receives the data published to the topic to graph the real-time data while the test is running.
 
-1. When the test is complete, the container images export a detailed report as an XML file to Amazon S3. Each file is given a UUID for the filename. For example, s3://dlte-bucket/test-scenarios/*<$TEST\_ID>*/results/*<$UUID>*.json.
+1. When the test is complete, the container images export a detailed report as an XML file to Amazon S3. Each file is given a UUID for the filename. For example, s3://amzn-s3-demo-bucket/test-scenarios/*<$TEST\_ID>*/results/*<$UUID>*.xml.
 
 1. When the XML files are uploaded to Amazon S3, the results-parser AWS Lambda function reads the results in the XML files starting with the prefix and parses and aggregates all the results into one summarized result.
 
@@ -56,10 +56,10 @@ If you deploy the optional MCP Server integration, AI agents can access and anal
 
 1.  **Customer interaction** - The customer interacts with the Distributed Load Testing solution through an AI agent. The agent connects to the MCP Endpoint to request access to load testing data.
 
-1.  **Authorization** - AgentCore Gateway validates the user’s Amazon Cognito authentication token to ensure the user has permission to access the DLT MCP Server. Authorized users receive read-only access to load testing data through the available agent tools.
+1.  **Authorization** - AgentCore Gateway validates the user’s Amazon Cognito authentication token to verify the user has permission to access the DLT MCP Server. The available tools depend on the **MCP Server Access Mode** parameter.
 
-1.  **Tool invocation** - AgentCore Gateway forwards authorized MCP tool requests to the DLT MCP Tools Lambda function. The Lambda function implements the tools that AI agents use to retrieve load testing information.
+1.  **Tool invocation** - AgentCore Gateway forwards authorized MCP tool requests to the DLT MCP Server Lambda function. The Lambda function implements the tools that AI agents use to retrieve load testing information.
 
-1.  **Read-only API access** - The DLT MCP Tools Lambda function calls the existing DLT API Gateway endpoints to retrieve test data from DynamoDB and Amazon S3. The Lambda function provides read-only tools for retrieving test scenarios, test runs, baseline comparisons, and test run artifacts. For more information about the available tools and their parameters, refer to [MCP tools specification](mcp-tools-specification.md) in the Developer Guide.
+1.  **API access** - The DLT MCP Server Lambda function calls the existing DLT API Gateway endpoints to retrieve test data from DynamoDB and Amazon S3. In the default `ReadOnly` access mode, the function provides read-only tools for retrieving test scenarios, test runs, baseline comparisons, and test run artifacts. In `ReadWrite` mode, it also provides tools for creating, modifying, deleting, and starting test scenarios. For more information about the available tools and their parameters, refer to [MCP tools specification](mcp-tools-specification.md) in the Developer Guide.
 
-The MCP Server integration leverages the existing DLT infrastructure (API Gateway, Cognito, DynamoDB, S3) to provide secure, read-only access to test data for AI-powered analysis and insights.
+The MCP Server integration uses the existing DLT infrastructure (API Gateway, Cognito, DynamoDB, S3) to provide secure access to test data for AI-powered analysis and insights.

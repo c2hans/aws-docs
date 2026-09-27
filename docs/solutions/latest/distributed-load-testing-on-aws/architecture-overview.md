@@ -39,7 +39,7 @@ The high-level process flow for the solution components deployed with the AWS Cl
 
 1. Each task runs within an [Amazon Virtual Private Cloud](https://aws.amazon.com/vpc) (Amazon VPC) in the selected Region.
 
-1. Load testing container uses an [Amazon Linux 2023](https://aws.amazon.com/linux/amazon-linux-2023/) base image with the [Taurus](https://gettaurus.org/) test automation framework installed. Taurus executes your JMeter, k6, Locust, or Single HTTP Endpoint test. For details on how each test framework is provisioned, refer to [Testing framework provisioning](back-end.md#framework-provisioning). The ALB \+ ECS option will use the web host container. The container images are hosted by AWS in an [Amazon Elastic Container Registry](https://aws.amazon.com/ecr) (Amazon ECR) public repository.
+1. Load testing containers use an [Amazon Linux 2023](https://aws.amazon.com/linux/amazon-linux-2023/) base image, and the image a task uses depends on the test’s traffic shape mode. In Standard mode, the image has the [Taurus](https://gettaurus.org/) test automation framework installed. Taurus executes your JMeter, k6, Locust, or Simple HTTP Endpoint test using the load parameters you set in the console. In Native mode, a dedicated image for each framework runs that framework directly against your script, with no Taurus and no load parameters from the solution. For details on the modes, refer to [Traffic shape modes](design-considerations.md#traffic-shape-modes-architecture). To see how each test framework is provisioned, refer to [Testing framework provisioning](back-end.md#framework-provisioning). The ALB \+ ECS option will use the web host container. The container images are hosted by AWS in an [Amazon Elastic Container Registry](https://aws.amazon.com/ecr) (Amazon ECR) public repository.
 
 1. Each Fargate task writes its per-Region test results to Amazon S3 and emits logs to [Amazon CloudWatch](https://aws.amazon.com/cloudwatch). When all Regions complete, the microservices aggregate the results in DynamoDB.
 
@@ -51,7 +51,7 @@ The high-level process flow for the solution components deployed with the AWS Cl
 **Note**
 The following steps describe the optional MCP Server integration for AI-assisted load testing analysis. This component is only deployed if you select the MCP Server option during solution deployment.
 
-1. An MCP client (AI development tool) connects to the [Amazon Bedrock AgentCore Gateway](https://aws.amazon.com/bedrock/agentcore/) endpoint to access the Distributed Load Testing solution’s data through the Model Context Protocol. AgentCore Gateway validates the user’s Cognito authentication token to ensure authorized access to the MCP Server.
+1. An MCP client (AI development tool) connects to the [Amazon Bedrock AgentCore Gateway](https://aws.amazon.com/bedrock/agentcore/) endpoint to access the Distributed Load Testing solution’s data through the Model Context Protocol. AgentCore Gateway validates the user’s Amazon Cognito authentication token to verify authorized access to the MCP Server.
 
 1. Upon successful authentication, AgentCore Gateway forwards the MCP tool request to the DLT MCP Server Lambda function.
 

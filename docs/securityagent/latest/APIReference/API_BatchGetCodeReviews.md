@@ -106,6 +106,22 @@ Content-type: application/json
             "logStream": "string"
          },
          "maxTaskHours": number,
+         "reportDestination": {
+            "containerId": "string",
+            "documentId": "string",
+            "integrationId": "string",
+            "parentId": "string"
+         },
+         "reportFilters": {
+            "annotationNotes": boolean,
+            "complianceReport": boolean,
+            "confidenceLevels": [ "string" ],
+            "findingTypes": [ "string" ],
+            "riskLevels": [ "string" ],
+            "riskTypes": [ "string" ],
+            "statuses": [ "string" ],
+            "taskStatuses": [ "string" ]
+         },
          "serviceRole": "string",
          "title": "string",
          "updatedAt": "string",

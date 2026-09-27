@@ -66,6 +66,11 @@ An overview of the code review job results.
 Type: String
 Required: No
 
+ ** reportDestination **   <a name="securityagent-Type-CodeReviewJob-reportDestination"></a>
+The destination for publishing scan reports to an integrated document provider.
+Type: [ReportDestination](API_ReportDestination.md) object
+Required: No
+
  ** serviceRole **   <a name="securityagent-Type-CodeReviewJob-serviceRole"></a>
 The IAM service role used for the code review job.
 Type: String

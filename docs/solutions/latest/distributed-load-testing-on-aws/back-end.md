@@ -10,7 +10,11 @@ The backend consists of a container image pipeline and load testing engine you u
 ## Container image pipeline
 <a name="container-image-pipeline"></a>
 
-This solution uses a container image built with [Amazon Linux 2023](https://aws.amazon.com/linux/amazon-linux-2023/) as the base image with the [Taurus](https://gettaurus.org/) load testing framework installed. Taurus is an open-source test automation framework that supports JMeter, k6, Locust, and other testing tools. AWS hosts this image in an Amazon Elastic Container Registry (Amazon ECR) public repository. The solution uses this image to run tasks in the Amazon ECS on AWS Fargate cluster.
+This solution uses container images built with [Amazon Linux 2023](https://aws.amazon.com/linux/amazon-linux-2023/) as the base image. AWS hosts these images in an Amazon Elastic Container Registry (Amazon ECR) public repository. The solution uses them to run tasks in the Amazon ECS on AWS Fargate cluster.
+
+Which image a task uses depends on the traffic shape mode of the test. For more information about the modes, refer to [Traffic shape modes](create-test-scenario.md#traffic-shape-modes).
++  **Standard mode** uses a single image with the [Taurus](https://gettaurus.org/) load testing framework installed. Taurus is an open-source test automation framework that supports JMeter, k6, Locust, and other testing tools. It applies the load parameters you set in the console to whichever framework the test uses.
++  **Native mode** uses a dedicated image for each testing framework (JMeter, k6, or Locust), without Taurus. Each image runs its framework directly against your script.
 
 For more information, refer to the [Container image customization](container-image.md) section of this guide.
 
@@ -18,9 +22,11 @@ For more information, refer to the [Container image customization](container-ima
 <a name="framework-provisioning"></a>
 
 The three supported testing frameworks are provisioned at different points in the solution lifecycle to balance image size with version flexibility:
-+  **Apache JMeter** — Staged in an S3 bucket in your account during stack deployment, and extracted at test runtime when a JMeter or Single HTTP Endpoint test runs.
++  **Apache JMeter** — Staged in an S3 bucket in your account during stack deployment, and extracted at test runtime when a JMeter or Simple HTTP Endpoint test runs.
 +  **Grafana k6** — Downloaded directly from the framework provider and extracted at test runtime, only when a k6 test runs.
 +  **Locust** — Installed into the container image at build time and remains idle until a Locust test runs.
+
+Provisioning works the same way in both traffic shape modes. The Native mode images obtain each framework at the same point in the lifecycle as the Standard mode image does. The network and deployment requirements below therefore apply to both.
 
 **Note**
 k6 requires outbound network access to the Grafana k6 release at test runtime. Restricted egress will cause k6 tests to fail at the download step.

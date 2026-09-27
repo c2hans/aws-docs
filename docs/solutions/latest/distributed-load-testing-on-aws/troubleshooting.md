@@ -51,6 +51,16 @@ For testing internal Application Load Balancers or EC2 instances, ensure that th
 
 If the test has completed but the results are not available in the UI, the result files should still be available in the S3 Bucket from the ECS tasks which ran the tests. This is a known limitation in the solution. In the current architecture, the solution uses a result parsing Lambda function to summarize the results from multiple ECS tasks, which are then stored as an item in the DynamoDB table. The DynamoDB table has a limit of 400 KB maximum item size. This limitation is reached depending on the complexity of the test script, the concurrency, and the number of tasks being used. The error does not mean the test is failing; it indicates that the process to summarize the results and store them in the DynamoDB table for CRUD operations has failed. The results are still available in the S3 bucket for the test scenario.
 
+ **Issue: A Native mode test ends earlier than the script intended, and the run is recorded as complete**
++ Resolution:
+
+The test reached its safety duration. In Native mode, your script decides when the run finishes, so the solution requires a safety duration and stops the testing framework when it elapses. The solution records the run as complete rather than failed and keeps the results for the portion that ran. Raise the safety duration above the longest run the script needs, up to the 24-hour maximum. For more information, refer to [Traffic shape modes](create-test-scenario.md#traffic-shape-modes).
+
+ **Issue: A Native mode Locust test reports far fewer requests than the script generated**
++ Resolution:
+
+Check whether your Locust script sets `processes`. The solution counts requests only when Locust runs as a single process, so a script that spawns worker processes under-reports its results. Remove the `processes` setting and scale the load with the task count instead, because each task already runs a full copy of the script. For more information, refer to [Locust tests](design-considerations.md#locust-script-support).
+
 ### ALB \+ ECS Fargate deployment issues
 <a name="alb-ecs-troubleshooting"></a>
 

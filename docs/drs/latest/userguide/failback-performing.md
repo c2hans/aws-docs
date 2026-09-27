@@ -10,6 +10,9 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/failback-performing
 
 Failback replication allows you to replicate data from AWS back to your original source server. To initiate this process, the Failback Client is booted directly on the source server that will receive the replicated data.
 
+**Note**
+The Failback Client supports `x86_64` servers only. For `arm64` source servers, fail back within AWS. See [Performing a failback with Elastic Disaster Recovery](failback-performing-main.md).
+
 **Before you begin**
 
 Before starting failback replication, ensure you have completed the following:

@@ -70,6 +70,22 @@ Content-type: application/json
       "logStream": "{{string}}"
    },
    "maxTaskHours": {{number}},
+   "reportDestination": {
+      "containerId": "{{string}}",
+      "documentId": "{{string}}",
+      "integrationId": "{{string}}",
+      "parentId": "{{string}}"
+   },
+   "reportFilters": {
+      "annotationNotes": {{boolean}},
+      "complianceReport": {{boolean}},
+      "confidenceLevels": [ "{{string}}" ],
+      "findingTypes": [ "{{string}}" ],
+      "riskLevels": [ "{{string}}" ],
+      "riskTypes": [ "{{string}}" ],
+      "statuses": [ "{{string}}" ],
+      "taskStatuses": [ "{{string}}" ]
+   },
    "serviceRole": "{{string}}",
    "title": "{{string}}",
    "validationMode": "{{string}}"
@@ -115,6 +131,16 @@ Required: No
  ** [maxTaskHours](#API_UpdateCodeReview_RequestSyntax) **   <a name="securityagent-UpdateCodeReview-request-maxTaskHours"></a>
 The updated maximum number of billable task hours allowed for jobs started from this code review.
 Type: Double
+Required: No
+
+ ** [reportDestination](#API_UpdateCodeReview_RequestSyntax) **   <a name="securityagent-UpdateCodeReview-request-reportDestination"></a>
+The destination for publishing scan reports to an integrated document provider.
+Type: [ReportDestination](API_ReportDestination.md) object
+Required: No
+
+ ** [reportFilters](#API_UpdateCodeReview_RequestSyntax) **   <a name="securityagent-UpdateCodeReview-request-reportFilters"></a>
+The report-generation filters applied when the report is exported.
+Type: [ReportFilters](API_ReportFilters.md) object
 Required: No
 
  ** [serviceRole](#API_UpdateCodeReview_RequestSyntax) **   <a name="securityagent-UpdateCodeReview-request-serviceRole"></a>
@@ -197,6 +223,22 @@ Content-type: application/json
       "logStream": "string"
    },
    "maxTaskHours": number,
+   "reportDestination": {
+      "containerId": "string",
+      "documentId": "string",
+      "integrationId": "string",
+      "parentId": "string"
+   },
+   "reportFilters": {
+      "annotationNotes": boolean,
+      "complianceReport": boolean,
+      "confidenceLevels": [ "string" ],
+      "findingTypes": [ "string" ],
+      "riskLevels": [ "string" ],
+      "riskTypes": [ "string" ],
+      "statuses": [ "string" ],
+      "taskStatuses": [ "string" ]
+   },
    "serviceRole": "string",
    "title": "string",
    "updatedAt": "string",
@@ -239,6 +281,14 @@ Type: [CloudWatchLog](API_CloudWatchLog.md) object
  ** [maxTaskHours](#API_UpdateCodeReview_ResponseSyntax) **   <a name="securityagent-UpdateCodeReview-response-maxTaskHours"></a>
 The maximum number of billable task hours configured for jobs started from this code review. Null if no budget cap is set.
 Type: Double
+
+ ** [reportDestination](#API_UpdateCodeReview_ResponseSyntax) **   <a name="securityagent-UpdateCodeReview-response-reportDestination"></a>
+The destination for publishing scan reports to an integrated document provider.
+Type: [ReportDestination](API_ReportDestination.md) object
+
+ ** [reportFilters](#API_UpdateCodeReview_ResponseSyntax) **   <a name="securityagent-UpdateCodeReview-response-reportFilters"></a>
+The report-generation filters applied when the report is exported.
+Type: [ReportFilters](API_ReportFilters.md) object
 
  ** [serviceRole](#API_UpdateCodeReview_ResponseSyntax) **   <a name="securityagent-UpdateCodeReview-response-serviceRole"></a>
 The IAM service role used for the code review.

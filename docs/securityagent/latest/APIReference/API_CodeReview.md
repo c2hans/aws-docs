@@ -51,6 +51,16 @@ The maximum number of billable task hours allowed for jobs started from this cod
 Type: Double
 Required: No
 
+ ** reportDestination **   <a name="securityagent-Type-CodeReview-reportDestination"></a>
+The destination for publishing scan reports to an integrated document provider.
+Type: [ReportDestination](API_ReportDestination.md) object
+Required: No
+
+ ** reportFilters **   <a name="securityagent-Type-CodeReview-reportFilters"></a>
+The report-generation filters applied when the report is exported.
+Type: [ReportFilters](API_ReportFilters.md) object
+Required: No
+
  ** serviceRole **   <a name="securityagent-Type-CodeReview-serviceRole"></a>
 The IAM service role used for the code review.
 Type: String

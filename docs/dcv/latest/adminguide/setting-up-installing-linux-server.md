@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/setting-up-installing-linux-server.html
 ---
 
-# Install the Amazon DCV Server on Linux
+# Installing the Amazon DCV Server on Linux
 <a name="setting-up-installing-linux-server"></a>
 
 The Amazon DCV server is installed using a series of RPM or .deb packages, depending on your host server's operating system. The packages install all required packages and their dependencies, and perform the required server configuration.

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/ARG/index.html
 title: 'AWS Resource Management Documentation'
 canonical_url: https://docs.aws.amazon.com/ARG/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-26
 ---
 
 # AWS Resource Management Documentation

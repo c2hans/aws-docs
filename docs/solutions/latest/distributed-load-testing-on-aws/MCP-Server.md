@@ -21,11 +21,11 @@ The service handles all MCP protocol communication, including tool discovery, au
 
 The DLT MCP Server Lambda function is a custom serverless component that processes MCP requests from AI agents and translates them into queries against your DLT resources.
 
-This Lambda function acts as the intelligence layer of the MCP integration, retrieving test results from DynamoDB tables, accessing performance artifacts stored in S3 buckets, and querying CloudWatch logs for detailed execution information. The Lambda function implements read-only access patterns and transforms raw DLT data into structured, AI-friendly formats that agents can easily interpret and analyze.
+This Lambda function acts as the intelligence layer of the MCP integration, retrieving test results from DynamoDB tables, accessing performance artifacts stored in S3 buckets, and querying CloudWatch logs for detailed execution information. It transforms raw DLT data into structured, AI-friendly formats that agents can easily interpret and analyze. The function’s IAM permissions follow the **MCP Server Access Mode** parameter you set at deployment. The default `ReadOnly` mode permits only `GET` requests to the solution’s API. `ReadWrite` mode also permits `POST`, `PUT`, and `DELETE`.
 
 ## Authentication integration
 <a name="MCP-Auth-Integration"></a>
 
 The authentication system leverages your existing Cognito user pool infrastructure to maintain consistent access controls across both the web console and MCP Server interfaces.
 
-This integration uses OAuth 2.0 token-based authentication. Users authenticate once through the Cognito login process and receive tokens that work for both UI interactions and MCP Server access. The system maintains the same permission boundaries and access controls as the web interface, ensuring that users can only access through AI agents the same load testing data they can access through the console.
+This integration uses OAuth 2.0 token-based authentication. Users authenticate once through the Cognito login process and receive tokens that work for both UI interactions and MCP Server access. The system maintains the same permission boundaries and access controls as the web interface and is designed to limit access through AI agents to the same load testing data they can access through the console.

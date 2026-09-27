@@ -13,7 +13,7 @@ generated_on: 2026-09-25
 
 Automate performance testing at scale for better reliability and efficiency
 
-- **Version**: 4.2.6
+- **Version**: 4.3.0
 - **Released**: 09/2026
 - **Est. deployment time**: 15 mins
 - **Estimated cost**: [See details](/solutions/latest/distributed-load-testing-on-aws/cost.html)

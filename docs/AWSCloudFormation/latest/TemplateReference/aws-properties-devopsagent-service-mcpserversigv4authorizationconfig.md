@@ -68,7 +68,7 @@ The ARN of the IAM role to assume for SigV4 signing.
 This property is deprecated. Use `McpRoleArn` instead.
 *Required*: No
 *Type*: String
-*Pattern*: `^arn:aws:iam::\d{12}:role/[a-zA-Z0-9+=,.@_/-]+$`
+*Pattern*: `^$|^arn:aws:iam::\d{12}:role/[a-zA-Z0-9+=,.@_/-]+$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Service`  <a name="cfn-devopsagent-service-mcpserversigv4authorizationconfig-service"></a>

@@ -9,6 +9,8 @@ Retrieves the results of a specific Face Liveness session. It requires the `sess
 
 The number of audit images returned by `GetFaceLivenessSessionResults` is defined by the `AuditImagesLimit` paramater when calling `CreateFaceLivenessSession`. Reference images are always returned when possible.
 
+For a session that has completed, the response can also include a `Feedback` list describing conditions that were detected in the selfie-video, such as low lighting or an obstructed face, and `Metadata` about the client that streamed the session.
+
 ## Request Syntax
 <a name="API_GetFaceLivenessSessionResults_RequestSyntax"></a>
 
@@ -58,6 +60,15 @@ Required: Yes
       "Version": "string"
    },
    "Confidence": number,
+   "Feedback": [
+      {
+         "Code": "string",
+         "Message": "string"
+      }
+   ],
+   "Metadata": {
+      "SDKType": "string"
+   },
    "ReferenceImage": {
       "BoundingBox": {
          "Height": number,
@@ -96,6 +107,15 @@ Type: [Challenge](API_Challenge.md) object
 Probabalistic confidence score for if the person in the given video was live, represented as a float value between 0 to 100.
 Type: Float
 Valid Range: Minimum value of 0. Maximum value of 100.
+
+ ** [Feedback](#API_GetFaceLivenessSessionResults_ResponseSyntax) **   <a name="rekognition-GetFaceLivenessSessionResults-response-Feedback"></a>
+A list of conditions that were detected in the Face Liveness video and that contributed to the returned `Confidence` score. Each item contains a code and a human-readable message. Feedback is returned only for sessions with a `Status` of `SUCCEEDED`, and the list is empty when no such conditions were detected.
+Type: Array of [FeedbackItem](API_FeedbackItem.md) objects
+Array Members: Maximum number of 10 items.
+
+ ** [Metadata](#API_GetFaceLivenessSessionResults_ResponseSyntax) **   <a name="rekognition-GetFaceLivenessSessionResults-response-Metadata"></a>
+Metadata about the client that streamed the video for the Face Liveness session.
+Type: [SessionMetadata](API_SessionMetadata.md) object
 
  ** [ReferenceImage](#API_GetFaceLivenessSessionResults_ResponseSyntax) **   <a name="rekognition-GetFaceLivenessSessionResults-response-ReferenceImage"></a>
 A high-quality image from the Face Liveness video that can be used for face comparison or search. It includes a bounding box of the face and the Base64-encoded bytes that return an image. If the CreateFaceLivenessSession request included an OutputConfig argument, the image will be uploaded to an S3Object specified in the output configuration. In case the reference image is not returned, it's recommended to retry the Liveness check.

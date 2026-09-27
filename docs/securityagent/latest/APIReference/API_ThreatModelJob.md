@@ -45,6 +45,11 @@ The list of integrated repositories used for threat modeling.
 Type: Array of [IntegratedRepository](API_IntegratedRepository.md) objects
 Required: No
 
+ ** reportDestination **   <a name="securityagent-Type-ThreatModelJob-reportDestination"></a>
+The destination for publishing scan reports to an integrated document provider.
+Type: [ReportDestination](API_ReportDestination.md) object
+Required: No
+
  ** scopeDocs **   <a name="securityagent-Type-ThreatModelJob-scopeDocs"></a>
 The scoped documents for the agent to focus on during threat modeling.
 Type: Array of [DocumentInfo](API_DocumentInfo.md) objects

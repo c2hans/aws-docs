@@ -120,7 +120,7 @@ You must select a pricing model for your product. The model you choose controls 
 ### Downloading the PLF for a new product
 <a name="submitting-your-product"></a>
 
-1. Start [AWS Partner Central](https://aws.amazon.com/marketplace/management/products/?).
+1. Open [AWS Partner Central](https://aws.amazon.com/marketplace/management/products/?).
 
 1. On the **Assets** tab, in the right-hand pane, choose the [Single AMI with CloudFormation product](https://s3.amazonaws.com/awsmp-loadforms/ProductDataLoad-Current.xlsx) link.
 
@@ -211,7 +211,7 @@ The following steps explain how to submit a completed PLF.
 
 For products that you created by using the product load form (PLF), you also use the PLF to make changes to those products. You can make changes to the original PLF you completed or, if it's not available, you can start with a new PLF. Just like using the **Build** tab, you can add a new version, remove existing versions, and update pricing, instance types, Region availability, and metadata. To make an update, you prepare any updated product the same way you prepare a new product. After the product update is prepared, follow these steps:
 
-1. Use your existing PLF, or start [AWS Partner Central](https://us-east-1.console.aws.amazon.com/partnercentral/home), and on the **Assets** tab, choose **File upload**. Under **Product load forms and seller guides**, you can download the PLF for your product.
+1. Use your existing PLF, or open [AWS Partner Central](https://us-east-1.console.aws.amazon.com/partnercentral/home), and on the **Assets** tab, choose **File upload**. Under **Product load forms and seller guides**, you can download the PLF for your product.
 
 1. Update the product in the PLF.
 

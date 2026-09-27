@@ -68,6 +68,12 @@ Content-type: application/json
       "logGroup": "{{string}}",
       "logStream": "{{string}}"
    },
+   "reportDestination": {
+      "containerId": "{{string}}",
+      "documentId": "{{string}}",
+      "integrationId": "{{string}}",
+      "parentId": "{{string}}"
+   },
    "scopeDocs": [
       {
          "artifactId": "{{string}}",
@@ -112,6 +118,11 @@ Required: No
  ** [logConfig](#API_UpdateThreatModel_RequestSyntax) **   <a name="securityagent-UpdateThreatModel-request-logConfig"></a>
 The updated CloudWatch Logs configuration for the threat model.
 Type: [CloudWatchLog](API_CloudWatchLog.md) object
+Required: No
+
+ ** [reportDestination](#API_UpdateThreatModel_RequestSyntax) **   <a name="securityagent-UpdateThreatModel-request-reportDestination"></a>
+The destination for publishing scan reports to an integrated document provider.
+Type: [ReportDestination](API_ReportDestination.md) object
 Required: No
 
  ** [scopeDocs](#API_UpdateThreatModel_RequestSyntax) **   <a name="securityagent-UpdateThreatModel-request-scopeDocs"></a>
@@ -196,6 +207,12 @@ Content-type: application/json
       "logGroup": "string",
       "logStream": "string"
    },
+   "reportDestination": {
+      "containerId": "string",
+      "documentId": "string",
+      "integrationId": "string",
+      "parentId": "string"
+   },
    "scopeDocs": [
       {
          "artifactId": "string",
@@ -239,6 +256,10 @@ Type: String
  ** [logConfig](#API_UpdateThreatModel_ResponseSyntax) **   <a name="securityagent-UpdateThreatModel-response-logConfig"></a>
 The CloudWatch Logs configuration for the threat model.
 Type: [CloudWatchLog](API_CloudWatchLog.md) object
+
+ ** [reportDestination](#API_UpdateThreatModel_ResponseSyntax) **   <a name="securityagent-UpdateThreatModel-response-reportDestination"></a>
+The destination for publishing scan reports to an integrated document provider.
+Type: [ReportDestination](API_ReportDestination.md) object
 
  ** [scopeDocs](#API_UpdateThreatModel_ResponseSyntax) **   <a name="securityagent-UpdateThreatModel-response-scopeDocs"></a>
 The scoped documents for the agent to focus on during threat modeling.

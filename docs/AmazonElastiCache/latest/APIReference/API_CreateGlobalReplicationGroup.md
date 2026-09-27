@@ -30,6 +30,11 @@ Provides details of the Global datastore
 Type: String
 Required: No
 
+ **Tags.Tag.N**
+A list of tags to be added to this resource. A tag is a key-value pair. A tag key must be accompanied by a tag value, although null is accepted.
+Type: Array of [Tag](API_Tag.md) objects
+Required: No
+
 ## Response Elements
 <a name="API_CreateGlobalReplicationGroup_ResponseElements"></a>
 
@@ -65,6 +70,10 @@ HTTP Status Code: 404
 
  ** ServiceLinkedRoleNotFoundFault **
 The specified service linked role (SLR) was not found.
+HTTP Status Code: 400
+
+ ** TagQuotaPerResourceExceeded **
+The request cannot be processed because it would cause the resource to have more than the allowed number of tags. The maximum number of tags permitted on a resource is 50.
 HTTP Status Code: 400
 
 ## See Also

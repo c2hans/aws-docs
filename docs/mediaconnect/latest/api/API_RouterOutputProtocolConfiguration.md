@@ -18,6 +18,11 @@ The configuration settings for a router output using the RIST (Reliable Internet
 Type: [RistRouterOutputConfiguration](API_RistRouterOutputConfiguration.md) object
 Required: No
 
+ ** rtmpPush **   <a name="mediaconnect-Type-RouterOutputProtocolConfiguration-rtmpPush"></a>
+The configuration settings for a router output that pushes a stream to a destination using the RTMP (Real-Time Messaging Protocol) protocol, or RTMPS (RTMP over TLS) when TLS encryption is specified. These settings include the destination address and port, the application and stream names, and optional TLS encryption configuration.
+Type: [RtmpPushRouterOutputConfiguration](API_RtmpPushRouterOutputConfiguration.md) object
+Required: No
+
  ** rtp **   <a name="mediaconnect-Type-RouterOutputProtocolConfiguration-rtp"></a>
 The configuration settings for a router output using the RTP (Real-Time Transport Protocol) protocol, including the destination address and port, and forward error correction state.
 Type: [RtpRouterOutputConfiguration](API_RtpRouterOutputConfiguration.md) object

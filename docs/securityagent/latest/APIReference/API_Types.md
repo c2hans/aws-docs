@@ -12,6 +12,7 @@ The order of each element in a data type structure is not guaranteed. Applicatio
 
 The following data types are supported:
 +  [Actor](API_Actor.md)
++  [ActorMessage](API_ActorMessage.md)
 +  [AgentSpace](API_AgentSpace.md)
 +  [AgentSpaceSummary](API_AgentSpaceSummary.md)
 +  [ApplicationSummary](API_ApplicationSummary.md)
@@ -94,6 +95,7 @@ The following data types are supported:
 +  [ProviderInput](API_ProviderInput.md)
 +  [ProviderResourceCapabilities](API_ProviderResourceCapabilities.md)
 +  [ReportDestination](API_ReportDestination.md)
++  [ReportFilters](API_ReportFilters.md)
 +  [SecurityRequirementArtifact](API_SecurityRequirementArtifact.md)
 +  [SecurityRequirementPackSummary](API_SecurityRequirementPackSummary.md)
 +  [SecurityRequirementSummary](API_SecurityRequirementSummary.md)

@@ -98,13 +98,25 @@ Virtual Central Processing Unit. A virtual processor assigned to a virtual machi
 <a name="load-testing-terms"></a>
 
 concurrency
-The number of concurrent virtual users per task. This parameter controls how many simulated users each Fargate task generates during a load test.
+The number of concurrent virtual users per task. This parameter controls how many simulated users each Fargate task generates during a load test. Concurrency applies to Standard mode. In Native mode, the script sets its own virtual-user count.
+
+Native mode
+The traffic shape mode in which your uploaded script controls the load. In this mode, the solution runs the script under the testing framework’s own command line and passes no load parameters. It sets only the task count per Region and a safety duration.
 
 regional stack
-A CloudFormation stack deployed in an AWS Region to provide testing infrastructure for multi-region load tests.
+A CloudFormation stack deployed in an AWS Region to provide testing infrastructure for Multi-Region load tests.
+
+safety duration
+In Native mode, the maximum time a test is allowed to run, up to 24 hours. If the test is still running when the duration elapses, the solution stops the testing framework. It keeps the results for the portion that ran and records the run as complete.
+
+Standard mode
+The default traffic shape mode, in which the solution controls the load. You set the task count, concurrency, ramp-up period, and hold duration. The solution applies them through the Taurus automation framework, overriding the load your script declares.
 
 task count
-The number of Fargate containers (tasks) launched to run a test scenario. The total load generated equals task count multiplied by concurrency.
+The number of Fargate containers (tasks) launched to run a test scenario. In Standard mode, the total load generated equals task count multiplied by concurrency. In Native mode, each task runs a full copy of your script. The total load equals task count multiplied by the load the script declares.
 
 test scenario
-A configured load test including test type, target endpoints, task count, concurrency, duration, and other parameters.
+A configured load test including test type, traffic shape mode, target endpoints, task count, concurrency, duration, and other parameters.
+
+traffic shape mode
+Which side controls the load a test generates, either Standard mode or Native mode.

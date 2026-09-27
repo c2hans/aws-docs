@@ -88,6 +88,12 @@ Content-type: application/json
          },
          "maxTaskHours": number,
          "overview": "string",
+         "reportDestination": {
+            "containerId": "string",
+            "documentId": "string",
+            "integrationId": "string",
+            "parentId": "string"
+         },
          "serviceRole": "string",
          "sourceCode": [
             {

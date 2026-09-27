@@ -90,6 +90,7 @@ Some services contain additional example categories that show how to leverage li
 + [Amazon Inspector](inspector_code_examples.md)
 + [AWS IoT](iot_code_examples.md)
 + [AWS IoT data](iot-data-plane_code_examples.md)
++ [AWS IoT Greengrass V2](greengrassv2_code_examples.md)
 + [AWS IoT SiteWise](iotsitewise_code_examples.md)
 + [Amazon Keyspaces](keyspaces_code_examples.md)
 + [Kinesis](kinesis_code_examples.md)

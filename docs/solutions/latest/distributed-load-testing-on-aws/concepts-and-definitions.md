@@ -9,7 +9,11 @@ This section describes key concepts and defines terminology specific to this sol
 
  **scenario**
 
-Test definition including the test’s name, description, task count, concurrency, AWS Region, ramp-up, hold-for, test type, schedule date, and recurrence configurations.
+Test definition including the test’s name, description, traffic shape mode, task count, concurrency, AWS Region, ramp-up, hold-for, test type, schedule date, and recurrence configurations.
+
+ **traffic shape mode**
+
+Which side controls the load the test generates. In **Standard** mode, the solution controls it through the values you set for concurrency, ramp-up, and hold for. In **Native** mode, the script you upload controls it, and the solution sets only the task count and a safety duration. Standard is the default. The concurrency, ramp-up, and hold-for concepts below apply to Standard mode.
 
  **task count**
 

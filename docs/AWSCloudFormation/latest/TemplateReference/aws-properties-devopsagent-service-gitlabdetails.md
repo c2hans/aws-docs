@@ -64,5 +64,5 @@ The type of GitLab access token.
 The GitLab access token value. Must match the pattern `^glpat-[a-zA-Z0-9._-]+$`.
 *Required*: Yes
 *Type*: String
-*Pattern*: `^glpat-[a-zA-Z0-9._-]+$`
+*Pattern*: `^[a-zA-Z0-9._-]+$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -10,13 +10,13 @@ After creating a test scenario, you can run it immediately or schedule it to run
 ## Scenario details view
 <a name="scenario-details-view"></a>
 
-The Scenario Details tab displays key information about your test. The task status table shows real-time information for every region.
+The Scenario Details tab displays key information about your test. The task status table shows real-time information for every Region.
 
  **Task status table**
 
-The Task Status table shows real-time information for each region:
-+  **Region** - The AWS region where tasks are running
-+  **Task Counts** - The total number of tasks configured for the region
+The Task Status table shows real-time information for each Region:
++  **Region** - The AWS Region where tasks are running
++  **Task Counts** - The total number of tasks configured for the Region
 +  **Concurrency** - The number of virtual users per task
 +  **Running** - Number of tasks currently executing the test
 +  **Pending** - Number of tasks waiting to start
@@ -27,15 +27,15 @@ The Task Status table shows real-time information for each region:
 
 When a test starts, the following workflow occurs:
 
-1.  **Task provisioning** - The solution provisions containers (tasks) in the specified AWS regions. Tasks appear in the "Provisioning" column.
+1.  **Task provisioning** - The solution provisions containers (tasks) in the specified AWS Regions. Tasks appear in the "Provisioning" column.
 
-1.  **Task startup** - The solution continues to provision tasks until the target task count is reached in each region. Tasks move from "Provisioning" to "Pending" to "Running".
+1.  **Task startup** - The solution continues to provision tasks until the target task count is reached in each Region. Tasks move from "Provisioning" to "Pending" to "Running".
 
-1.  **Traffic generation** - After the solution provisions all tasks in a region, they begin sending traffic to your target endpoint.
+1.  **Traffic generation** - After the solution provisions all tasks in a Region, they begin sending traffic to your target endpoint.
 
 1.  **Test execution** - The test runs for the configured duration (ramp-up \+ hold time).
 
-1.  **Results parsing** - When the test ends, a background parsing job aggregates and processes results from all regions.
+1.  **Results parsing** - When the test ends, a background parsing job aggregates and processes results from all Regions.
 
 ## Test run statuses
 <a name="test-statuses"></a>
@@ -57,20 +57,20 @@ If you enabled live data when creating the test scenario, you can view real-time
  **Graph descriptions**
 
  **Average Response Time**
-Displays the average response time in seconds for requests processed by each region. The Y-axis shows response time in seconds, and the X-axis shows the time of day. Each region is represented by a different color in the legend.
+Displays the average response time in seconds for requests processed by each Region. The Y-axis shows response time in seconds, and the X-axis shows the time of day. Each Region is represented by a different color in the legend.
 
  **Virtual Users**
-Shows the number of concurrent virtual users actively generating load in each region. The graph displays how virtual users ramp up during the test and maintains the target concurrency level.
+Shows the number of concurrent virtual users actively generating load in each Region. The graph displays how virtual users ramp up during the test and maintains the target concurrency level.
 
  **Successful Requests**
-Displays the cumulative count of successful requests over time for each region. The graph shows the rate at which successful requests are being processed.
+Displays the cumulative count of successful requests over time for each Region. The graph shows the rate at which successful requests are being processed.
 
  **Failed Requests**
-Shows the cumulative count of failed requests over time for each region. A low or zero count indicates healthy test execution.
+Shows the cumulative count of failed requests over time for each Region. A low or zero count indicates healthy test execution.
 
- **Multi-region visualization**
+ **Multi-Region visualization**
 
-When running tests across multiple regions, each graph displays data for all regions simultaneously. The legend at the bottom of each graph identifies which color represents each region (for example, us-west-2 and us-east-1).
+When running tests across multiple Regions, each graph displays data for all Regions simultaneously. The legend at the bottom of each graph identifies which color represents each Region (for example, us-west-2 and us-east-1).
 
  **Technical implementation**
 

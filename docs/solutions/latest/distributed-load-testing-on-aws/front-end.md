@@ -36,4 +36,4 @@ The solution supports three web console hosting options. The backend architectur
 
 The optional Model Context Protocol (MCP) Server provides an additional interface for AI development tools to access and analyze load testing data through natural language interactions. This component is only deployed if you select the MCP Server option during solution deployment.
 
-The MCP Server enables AI agents to query test results, analyze performance metrics, and gain insights into your load testing data using tools like Amazon Q, Claude, and other MCP-compatible AI assistants. For detailed information about the MCP Server architecture and configuration, refer to [MCP Server](MCP-Server.md) in this section.
+The MCP Server enables AI agents to query test results, analyze performance metrics, and gain insights into your load testing data using tools like Kiro CLI, Claude, and other MCP-compatible AI assistants. For detailed information about the MCP Server architecture and configuration, refer to [MCP Server](MCP-Server.md) in this section.

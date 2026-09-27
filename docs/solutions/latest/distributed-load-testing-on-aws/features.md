@@ -11,6 +11,10 @@ The solution provides the following features:
 
 Supports JMeter, k6, and Locust test scripts, as well as simple HTTP endpoint testing without requiring custom scripts. For more information, refer to [Test types](design-considerations.md#test-types) in the Architecture details section. For security considerations about the bundled frameworks, refer to [Third-party testing frameworks](security-1.md#third-party-testing-frameworks).
 
+ **Two Traffic Shape Modes**
+
+Controls the load either from the solution or from your script. In Standard mode, you set the virtual users, ramp-up, and hold duration, and the solution applies them to whichever framework the test uses. In Native mode, the solution runs your script under the framework’s own command line and honors the load the script declares. For more information, refer to [Traffic shape modes](design-considerations.md#traffic-shape-modes-architecture) in the Architecture details section.
+
  **High User Load Simulation**
 
 Simulates tens of thousands of concurrent virtual users to stress test your application under realistic load conditions.

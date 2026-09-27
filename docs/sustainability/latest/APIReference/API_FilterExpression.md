@@ -14,7 +14,7 @@ Filters environmental impact values by specific dimension values.
 In the following list, the required parameters are described first.
 
  ** Dimensions **   <a name="sustainability-Type-FilterExpression-Dimensions"></a>
-Filters environmental impact values by specific dimension values.
+Filters environmental impact values by specific dimension values. An empty values list means no filter is applied for that dimension. Multiple values within a dimension are combined with OR. Multiple dimensions are combined with AND.
 Type: String to array of strings map
 Valid Keys: `USAGE_ACCOUNT_ID | REGION | SERVICE`
 Length Constraints: Minimum length of 0. Maximum length of 256.

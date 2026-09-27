@@ -187,7 +187,7 @@ The `disk` metrics have a dimension for `Partition`, which means that the number
 
     Within the entry for each individual metric, you might optionally specify one or both of the following:
     + `rename` – Specifies a different name for this metric.
-    + `unit` – Specifies the unit to use for this metric, overriding the default unit of `None` of `None` for the metric. The unit that you specify must be a valid CloudWatch metric unit, as listed in the `Unit` description in [MetricDatum](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_MetricDatum.html).
+    + `unit` – Specifies the unit to use for this metric, overriding the default unit of `None` for the metric. The unit that you specify must be a valid CloudWatch metric unit, as listed in the `Unit` description in [MetricDatum](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_MetricDatum.html).
   + `ignore_file_system_types` – Specifies file system types to exclude when collecting disk metrics. Valid values include `sysfs`, `devtmpfs`, and so on.
   + `drop_device` – Setting this to `true` causes `Device` to not be included as a dimension for disk metrics.
 
@@ -210,7 +210,7 @@ The `disk` metrics have a dimension for `Partition`, which means that the number
 
     Within the entry for each individual metric, you might optionally specify one or both of the following:
     + `rename` – Specifies a different name for this metric.
-    + `unit` – Specifies the unit to use for this metric, overriding the default unit of `None` of `None` for the metric. The unit that you specify must be a valid CloudWatch metric unit, as listed in the `Unit` description in [MetricDatum](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_MetricDatum.html).
+    + `unit` – Specifies the unit to use for this metric, overriding the default unit of `None` for the metric. The unit that you specify must be a valid CloudWatch metric unit, as listed in the `Unit` description in [MetricDatum](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_MetricDatum.html).
 
     For information on default units and description of the metrics, see [Collect Amazon EBS NVMe driver metrics](Container-Insights-metrics-EBS-Collect.md).
   + `metrics_collection_interval` – Optional. Specifies how often to collect the diskio metrics, overriding the global `metrics_collection_interval` specified in the `agent` section of the configuration file.
@@ -227,7 +227,7 @@ The `disk` metrics have a dimension for `Partition`, which means that the number
 
     Within the entry for each individual metric, you might optionally specify one or both of the following:
     + `rename` – Specifies a different name for this metric.
-    + `unit` – Specifies the unit to use for this metric, overriding the default unit of `None` of `None` for the metric. The unit that you specify must be a valid CloudWatch metric unit, as listed in the `Unit` description in [MetricDatum](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_MetricDatum.html).
+    + `unit` – Specifies the unit to use for this metric, overriding the default unit of `None` for the metric. The unit that you specify must be a valid CloudWatch metric unit, as listed in the `Unit` description in [MetricDatum](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_MetricDatum.html).
   + `metrics_collection_interval` – Optional. Specifies how often to collect the swap metrics, overriding the global `metrics_collection_interval` specified in the `agent` section of the configuration file.
 
     This value is specified in seconds.
@@ -1359,6 +1359,29 @@ The following is an example of a complete CloudWatch agent configuration file fo
 <a name="Saving-Agent-Configuration-File"></a>
 
 If you create or edit the CloudWatch agent configuration file manually, you can give it any name. After you have created the file, you can copy it to other servers where you want to run the agent.
+
+## Update the CloudWatch agent configuration file manually
+<a name="Update-CloudWatch-Agent-Configuration-File-Manually"></a>
+
+Creating or naming a configuration file does not apply it to the agent. When you apply a configuration, the agent stores it and generates the files that it uses at runtime. On a Linux server, these files are in the `/opt/aws/amazon-cloudwatch-agent/etc` directory, as shown in the following structure.
+
+```
+/opt/aws/amazon-cloudwatch-agent/etc/
+    cloudwatch-agent.json         (your source configuration file; you can give it any name)
+    amazon-cloudwatch-agent.d/    (agent-managed directory of active configuration fragments)
+        file_{{name}}              (a fragment copied from a local file source)
+        ssm_{{name}}               (a fragment copied from a Systems Manager Parameter Store source)
+    amazon-cloudwatch-agent.toml  (generated file that the systemd or upstart service uses to run the agent)
+```
+
+The `amazon-cloudwatch-agent.d` directory holds the active configuration that the agent manages. Keep your source configuration file in a location that you choose, and do not use the `amazon-cloudwatch-agent.d` directory to store source files.
+
+To apply or update the configuration, use the following commands. For the full command syntax and the behavior when configuration file names match, see [Creating multiple CloudWatch agent configuration files](create-cloudwatch-agent-configuration-file.md#CloudWatch-Agent-multiple-config-files).
++ To apply a source configuration file, run `amazon-cloudwatch-agent-ctl -a fetch-config -c file:{{configuration-file-path}}`. This command applies the initial configuration or replaces the active configuration set.
++ To add another configuration to a running agent without replacing the current one, use the `append-config` option. The `append-config` option preserves the existing configuration fragments, unless a configuration file name matches one that the agent is already using.
+
+**Note**
+The systemd and upstart services use the generated `amazon-cloudwatch-agent.toml` file to run the agent. If this file is absent, starting the agent can apply the default configuration. The default configuration can replace the active configuration in the `amazon-cloudwatch-agent.d` directory. Apply your configuration with `fetch-config` or `append-config` before you start the agent.
 
 ## Uploading the CloudWatch agent configuration file to Systems Manager Parameter Store
 <a name="Upload-CloudWatch-Agent-Configuration-To-Parameter-Store"></a>

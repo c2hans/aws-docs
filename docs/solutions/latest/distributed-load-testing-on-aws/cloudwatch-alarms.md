@@ -38,7 +38,7 @@ Repeat for each alarm.
 
  **What this alarm monitors:** The solution uses three layers of defense to prevent runaway ECS services:
 +  **Layer 1: Automated error handling** — The test orchestration workflow includes error handling at every step. If anything fails during provisioning, stabilization, or execution, the workflow automatically triggers cleanup to drain and delete the ECS services.
-+  **Layer 2: Execution failure detection** — If the orchestration workflow itself exits unexpectedly (for example, due to a timeout or internal error that bypasses normal error handling), an EventBridge rule detects the failure and independently triggers cleanup for every region involved in the test.
++  **Layer 2: Execution failure detection** — If the orchestration workflow itself exits unexpectedly (for example, due to a timeout or internal error that bypasses normal error handling), an EventBridge rule detects the failure and independently triggers cleanup for every Region involved in the test.
 +  **Layer 3: Hourly orphan cleanup** — A scheduled process runs every hour, scans for ECS services that are not associated with any active test, and force-deletes them. This is the last-resort safety net — if both Layer 1 and Layer 2 fail, leaked services are still removed within an hour. If the orphan cleanup process itself fails, this alarm fires.
 
  **Why it matters:** Orphaned ECS Fargate services continue running and incurring charges with no visibility in the DLT console. Without a notification subscription, operators will only discover the problem when unexpected costs appear on the bill.

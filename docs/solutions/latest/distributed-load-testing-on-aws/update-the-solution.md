@@ -49,7 +49,7 @@ This section applies only to updates from versions prior to v3.3.0. If you are u
 ## Zip file path changes from v3 to v4
 <a name="zip-file-path-changes-from-v3-to-v4"></a>
 
-DLT v4 changed how zipped test scenarios are extracted to align with how JMeter GUI resolves file paths and to ensure consistency across all supported frameworks.
+DLT v4 changed how zipped test scenarios are extracted to align with how JMeter GUI resolves file paths and to support consistent behavior across all supported frameworks.
 
 | Version | Extraction behavior |
 | --- | --- |

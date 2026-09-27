@@ -40,7 +40,7 @@ You can modify these retention periods in the Amazon CloudWatch console.
 <a name="reliability"></a>
 
 This section describes how we architected this solution using the principles and best practices of the [reliability pillar](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html).
-+ The solution uses AWS serverless services wherever possible (examples: Lambda, API Gateway, Amazon S3, AWS Step Functions, Amazon DynamoDB, and AWS Fargate) to ensure high availability and recovery from service failure.
++ The solution uses AWS serverless services wherever possible (examples: Lambda, API Gateway, Amazon S3, AWS Step Functions, Amazon DynamoDB, and AWS Fargate) designed to support high availability and recovery from service failure.
 + All compute processing uses Lambda functions or Amazon ECS on AWS Fargate.
 + Data is stored in DynamoDB and Amazon S3, so it persists in multiple Availability Zones by default.
 
@@ -59,7 +59,7 @@ This section describes how we architected this solution using the principles and
 This section describes how we architected this solution using the principles and best practices of the [cost optimization pillar](https://docs.aws.amazon.com/wellarchitected/latest/cost-optimization-pillar/welcome.html).
 + The solution uses serverless architecture; therefore, customers only get charged for what they use.
 + Amazon DynamoDB scales capacity on demand, so you only pay for the capacity you use.
-+ AWS ECS on AWS Fargate allows you to pay only for the compute resources you use, with no upfront expenses.
++ Amazon ECS on AWS Fargate allows you to pay only for the compute resources you use, with no upfront expenses.
 + AgentCore Gateway serves as a cost-effective Lambda-based proxy to the distributed load testing API, eliminating the need for dedicated infrastructure and reducing costs through serverless pay-per-request pricing.
 
 ## Sustainability

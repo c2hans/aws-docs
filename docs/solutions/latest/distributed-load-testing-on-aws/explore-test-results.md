@@ -56,9 +56,9 @@ The results table provides detailed metrics with the following features:
 
  **Dimension views**
 Toggle between three views using the dimension buttons:
-+  **Overall** - Aggregated results across all endpoints and regions
++  **Overall** - Aggregated results across all endpoints and Regions
 +  **By Endpoint** - Results broken down by individual endpoints
-+  **By Region** - Results broken down by AWS region
++  **By Region** - Results broken down by AWS Region
 
  **Action buttons**
 +  **Show Actual** - Display actual metric values
@@ -77,7 +77,7 @@ The errors tab provides detailed error analysis:
 + View error counts by type.
 + See errors aggregated by overall test or by endpoint.
 + Identify patterns in failed requests.
-+ Troubleshoot issues with specific endpoints or regions.
++ Troubleshoot issues with specific endpoints or Regions.
 
 ## Artifacts tab
 <a name="artifacts-tab"></a>

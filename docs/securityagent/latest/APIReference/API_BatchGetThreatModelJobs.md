@@ -76,6 +76,12 @@ Content-type: application/json
                "providerResourceId": "string"
             }
          ],
+         "reportDestination": {
+            "containerId": "string",
+            "documentId": "string",
+            "integrationId": "string",
+            "parentId": "string"
+         },
          "scopeDocs": [
             {
                "artifactId": "string",

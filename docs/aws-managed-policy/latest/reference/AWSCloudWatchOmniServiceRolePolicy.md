@@ -18,13 +18,13 @@ This policy is attached to a service-linked role that allows the service to perf
 <a name="AWSCloudWatchOmniServiceRolePolicy-details"></a>
 + **Type**: Service-linked role policy
 + **Creation time**: September 22, 2026, 05:37 UTC
-+ **Edited time:** September 22, 2026, 05:37 UTC
++ **Edited time:** September 24, 2026, 17:47 UTC
 + **ARN**: `arn:aws:iam::aws:policy/aws-service-role/AWSCloudWatchOmniServiceRolePolicy`
 
 ## Policy version
 <a name="AWSCloudWatchOmniServiceRolePolicy-version"></a>
 
-**Policy version:** v1 (default)
+**Policy version:** v2 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -166,6 +166,17 @@ The policy's default version is the version that defines the permissions for the
       "Effect" : "Allow",
       "Action" : "account:GetAccountInformation",
       "Resource" : "*",
+      "Condition" : {
+        "StringEquals" : {
+          "aws:ResourceAccount" : "${aws:PrincipalAccount}"
+        }
+      }
+    },
+    {
+      "Sid" : "GetCloudWatchOmniAWSIntegrationRole",
+      "Effect" : "Allow",
+      "Action" : "iam:GetRole",
+      "Resource" : "arn:aws:iam::*:role/service-role/CloudWatchOmniAWSIntegrationRole-*",
       "Condition" : {
         "StringEquals" : {
           "aws:ResourceAccount" : "${aws:PrincipalAccount}"

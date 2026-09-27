@@ -7,6 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ne
 
 **Topics**
 + [Automate the setup of inter-Region peering with AWS Transit Gateway](automate-the-setup-of-inter-region-peering-with-aws-transit-gateway.md)
++ [Build multi-account AWS connectivity with VPC Lattice as the sole network fabric](build-multi-account-aws-connectivity-vpc-lattice-sole-network-fabric.md)
 + [Centralize network connectivity using AWS Transit Gateway](centralize-network-connectivity-using-aws-transit-gateway.md)
 + [Configure HTTPS encryption for Oracle JD Edwards EnterpriseOne on Oracle WebLogic by using an Application Load Balancer](configure-https-encryption-for-oracle-jd-edwards-enterpriseone-on-oracle-weblogic-by-using-an-application-load-balancer.md)
 + [Connect to MGN data and control planes over a private network](connect-to-application-migration-service-data-and-control-planes-over-a-private-network.md)

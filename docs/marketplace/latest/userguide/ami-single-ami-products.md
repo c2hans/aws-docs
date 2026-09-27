@@ -18,7 +18,7 @@ The Amazon Machine Image (AMI) self-service experience guides you as you create 
 
 Before you create an AMI product listing, you must complete the following prerequisites:
 
-1. Have access to AWS Partner Central. This is the tool that you use to register as a seller and manage the products that you sell on AWS Marketplace. To learn more about getting access to AWS Partner Central, see [Policies and permissions for AWS Marketplace sellers](detailed-management-portal-permissions.md).
+1. You need access to AWS Partner Central. This is the tool that you use to register as a seller and manage the products that you sell on AWS Marketplace. To learn more about getting access to AWS Partner Central, see [Policies and permissions for AWS Marketplace sellers](detailed-management-portal-permissions.md).
 
 1. Register as a seller and, if you want to charge for your products, submit your tax and banking information. To learn more about becoming a seller, see [Getting started as an AWS Marketplace seller](user-guide-for-sellers.md).
 

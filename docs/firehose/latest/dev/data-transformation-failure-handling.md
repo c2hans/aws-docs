@@ -19,7 +19,7 @@ If a data transformation fails, the unsuccessfully processed records are deliver
     "errorMessage": "{{message}}",
     "attemptEndingTimestamp": "{{timestamp}}",
     "rawData": "{{data}}",
-    "lambdaArn": "{{arn}}"
+    "lambdaARN": "{{arn}}"
 }
 ```
 
@@ -41,5 +41,5 @@ The time that Amazon Data Firehose stopped attempting Lambda invocations.
 `rawData`
 The base64-encoded record data.
 
-`lambdaArn`
+`lambdaARN`
 The Amazon Resource Name (ARN) of the Lambda function.

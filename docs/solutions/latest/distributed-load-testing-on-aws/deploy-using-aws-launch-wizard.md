@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 
 This solution features a guided deployment process using AWS Launch Wizard. Follow these steps to deploy Distributed Load Testing on AWS into your account.
 
-1. Sign in to the AWS Management Console and select the button below to start the deployment process.
+1. Sign in to the AWS Management Console and choose the following button to start the deployment process.
 
     [![Launch solution using the Launch Wizard](https://docs.aws.amazon.com/solutions/latest/distributed-load-testing-on-aws/images/launch-button.png)](https://us-east-2.console.aws.amazon.com/launchwizard/home?region=us-east-2#/deployment/create/SO0062)
 

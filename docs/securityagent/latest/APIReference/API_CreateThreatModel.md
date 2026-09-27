@@ -201,6 +201,12 @@ Content-type: application/json
       "logGroup": "string",
       "logStream": "string"
    },
+   "reportDestination": {
+      "containerId": "string",
+      "documentId": "string",
+      "integrationId": "string",
+      "parentId": "string"
+   },
    "scopeDocs": [
       {
          "artifactId": "string",
@@ -244,6 +250,10 @@ Type: String
  ** [logConfig](#API_CreateThreatModel_ResponseSyntax) **   <a name="securityagent-CreateThreatModel-response-logConfig"></a>
 The CloudWatch Logs configuration for the threat model.
 Type: [CloudWatchLog](API_CloudWatchLog.md) object
+
+ ** [reportDestination](#API_CreateThreatModel_ResponseSyntax) **   <a name="securityagent-CreateThreatModel-response-reportDestination"></a>
+The destination for publishing scan reports to an integrated document provider.
+Type: [ReportDestination](API_ReportDestination.md) object
 
  ** [scopeDocs](#API_CreateThreatModel_ResponseSyntax) **   <a name="securityagent-CreateThreatModel-response-scopeDocs"></a>
 The scoped documents for the agent to focus on during threat modeling.

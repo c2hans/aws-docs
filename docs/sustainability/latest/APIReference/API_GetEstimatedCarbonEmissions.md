@@ -51,7 +51,7 @@ Type: [TimePeriod](API_TimePeriod.md) object
 Required: Yes
 
  ** [EmissionsTypes](#API_GetEstimatedCarbonEmissions_RequestSyntax) **   <a name="sustainability-GetEstimatedCarbonEmissions-request-EmissionsTypes"></a>
-The emission types to include in the results. If absent, returns `TOTAL_LBM_CARBON_EMISSIONS` and `TOTAL_MBM_CARBON_EMISSIONS` emissions types.
+The emission types to include in the results. If absent, returns `TOTAL_LBM_CARBON_EMISSIONS` and `TOTAL_MBM_CARBON_EMISSIONS` emissions types. If present, must not be empty.
 Type: Array of strings
 Valid Values: `TOTAL_LBM_CARBON_EMISSIONS | TOTAL_MBM_CARBON_EMISSIONS | TOTAL_SCOPE_1_CARBON_EMISSIONS | TOTAL_SCOPE_2_LBM_CARBON_EMISSIONS | TOTAL_SCOPE_2_MBM_CARBON_EMISSIONS | TOTAL_SCOPE_3_LBM_CARBON_EMISSIONS | TOTAL_SCOPE_3_MBM_CARBON_EMISSIONS`
 Required: No

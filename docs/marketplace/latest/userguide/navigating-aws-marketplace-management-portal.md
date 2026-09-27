@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/navigating-aws-marketplace-management-portal.html
 ---
 
-# Navigating AWS Partner Central (formerly AWS Marketplace Management Portal)
+# Navigating AWS Partner Central
 <a name="navigating-aws-marketplace-management-portal"></a>
 
 **Note**

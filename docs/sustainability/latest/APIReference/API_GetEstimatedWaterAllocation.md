@@ -48,7 +48,7 @@ Type: [TimePeriod](API_TimePeriod.md) object
 Required: Yes
 
  ** [AllocationTypes](#API_GetEstimatedWaterAllocation_RequestSyntax) **   <a name="sustainability-GetEstimatedWaterAllocation-request-AllocationTypes"></a>
-The allocation types to include in the results. If absent, returns `TOTAL_WATER_WITHDRAWALS` allocation types.
+The allocation types to include in the results. If absent, returns `TOTAL_WATER_WITHDRAWALS` allocation types. If present, must not be empty.
 Type: Array of strings
 Valid Values: `TOTAL_WATER_WITHDRAWALS`
 Required: No
@@ -59,7 +59,7 @@ Type: [FilterExpression](API_FilterExpression.md) object
 Required: No
 
  ** [Granularity](#API_GetEstimatedWaterAllocation_RequestSyntax) **   <a name="sustainability-GetEstimatedWaterAllocation-request-Granularity"></a>
-The time granularity for the results. Only `YEARLY_CALENDAR` time granularity is currently supported for water allocation. Defaults to `YEARLY_CALENDAR` if absent.
+The time granularity for the results. Only `YEARLY_CALENDAR` time granularity is currently supported for water allocation. Other values will return a `ValidationException`. Defaults to `YEARLY_CALENDAR` if absent.
  If requesting partial time periods, data will be returned based on the smallest supported granularity. For example, requesting `2025-04-01T00:00:00Z` to `2026-04-01T00:00:00Z` with `YEARLY_CALENDAR` will return all the data for 2026 only.
 Type: String
 Valid Values: `YEARLY_CALENDAR | YEARLY_FISCAL | QUARTERLY_CALENDAR | QUARTERLY_FISCAL | MONTHLY`

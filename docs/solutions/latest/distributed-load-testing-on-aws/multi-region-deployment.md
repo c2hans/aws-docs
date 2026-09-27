@@ -14,7 +14,7 @@ When you deploy the Distributed Load Testing solution, it creates a regional Clo
 To run a multi-Region test, you must deploy the regional CloudFormation template in each Region where you want to run the test.
 
 **Note**
-Each AWS account can use only one regional stack per region. Also, the regional stack cannot be used in the same region as the main stack.
+Each AWS account can use only one regional stack per Region. Also, the regional stack cannot be used in the same Region as the main stack.
 
 You can install the regional template as follows:
 
@@ -47,7 +47,7 @@ You can install the regional template as follows:
 
 1. On the **Configure stack options** page, choose **Next**.
 
-1. On the **Review** page, review and confirm the settings. Be sure to check the box acknowledging that the template will create AWS Identity and Access Management (IAM) resources.
+1. On the **Review** page, review and confirm the settings. Be sure to select the box acknowledging that the template will create AWS Identity and Access Management (IAM) resources.
 
 1. Choose **Create stack** to deploy the stack.
 

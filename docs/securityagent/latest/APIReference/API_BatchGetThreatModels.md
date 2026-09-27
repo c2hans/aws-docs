@@ -105,6 +105,12 @@ Content-type: application/json
             "logGroup": "string",
             "logStream": "string"
          },
+         "reportDestination": {
+            "containerId": "string",
+            "documentId": "string",
+            "integrationId": "string",
+            "parentId": "string"
+         },
          "scopeDocs": [
             {
                "artifactId": "string",

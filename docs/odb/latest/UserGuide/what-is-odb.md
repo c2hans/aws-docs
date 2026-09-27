@@ -77,7 +77,7 @@ For Autonomous Database Serverless and ExaDB-XS, you can accept a public offer o
 
 1. Create your Oracle Database@AWS resources:
    + For Oracle Exadata Database Service on Dedicated Infrastructure or Autonomous Database on Dedicated Exadata Infrastructure, create your ODB network, Oracle Exadata infrastructure, and Exadata VM clusters using the AWS console. Create your Exadata databases using OCI tools.
-   + For ExaDB-XS, create an ODB network, an Exascale Storage Vault, and an Exascale VM cluster using the AWS console. Create your Oracle Exadata databases using OCI tools.
+   + For ExaDB-XS, create an ODB network, an Exascale storage vault, and an Exascale VM cluster using the AWS console. Create your Oracle Exadata databases using OCI tools.
    + For Autonomous Database Serverless, create an ODB network and then create an Autonomous Database directly from the Oracle Database@AWS console. No Exadata infrastructure or VM cluster provisioning is required.
 
    For more information, see [Getting started with Oracle Database@AWS](getting-started.md).

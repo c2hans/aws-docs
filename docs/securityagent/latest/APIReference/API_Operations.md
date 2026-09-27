@@ -54,6 +54,7 @@ The following actions are supported:
 +  [GetSecurityRequirementPack](API_GetSecurityRequirementPack.md)
 +  [ImportSecurityRequirements](API_ImportSecurityRequirements.md)
 +  [InitiateProviderRegistration](API_InitiateProviderRegistration.md)
++  [ListActorMessages](API_ListActorMessages.md)
 +  [ListAgentSpaces](API_ListAgentSpaces.md)
 +  [ListApplications](API_ListApplications.md)
 +  [ListArtifacts](API_ListArtifacts.md)

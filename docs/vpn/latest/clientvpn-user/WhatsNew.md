@@ -9,6 +9,10 @@ The following table describes the AWS Client VPN User Guide updates.
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [AWS provided client (6.1.1) for macOS released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-macos-release-notes.html) | See release notes for details. | September 25, 2026 |
+| [AWS provided client (6.1.1) for Windows released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows-release-notes.html) | See release notes for details. | September 25, 2026 |
+| [AWS provided client (6.1.0) for macOS released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-macos-release-notes.html) | See release notes for details. | September 24, 2026 |
+| [AWS provided client (6.1.0) for Windows released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows-release-notes.html) | See release notes for details. | September 24, 2026 |
 | [AWS provided client (6.0.2) for Ubuntu released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-linux-release-notes.html) | See release notes for details. | September 22, 2026 |
 | [AWS provided client for macOS now supports macOS 27 Golden Gate](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-macos.html) | For more information about macOS requirements, see [Client VPN for macOS Requirements](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-macos.html#client-vpn-connect-macos-req). | September 14, 2026 |
 | [AWS provided client (6.0.3) for Windows ARM64 and x64 released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows-release-notes.html) | See release notes for details. | September 14, 2026 |

@@ -27,6 +27,9 @@ The default task configuration uses 2 vCPUs and 4 GB of memory per task. If your
 **Note**
 This solution provides the option to include live data when running a test. This feature requires an additional AWS Lambda function and AWS IoT Core topic that incur extra costs.
 
+**Note**
+Fargate cost scales with how long the tasks run. In Standard mode, the ramp-up and hold-for values you set determine that. In Native mode, your script determines it, bounded by the safety duration you set. That duration also caps how long a Native test can bill. For more information, refer to [Traffic shape modes](create-test-scenario.md#traffic-shape-modes).
+
 ## AWS DevOps Agent integration costs
 <a name="devops-agent-cost"></a>
 
@@ -37,7 +40,7 @@ When you use the DevOps Agent integration to run investigations on your test res
 ## CloudWatch dashboard costs per test scenario
 <a name="cloudwatch-dashboard-cost"></a>
 
-Each time a load test runs, this solution creates an Amazon CloudWatch dashboard named `EcsLoadTesting-<testId>-<region> ` in each Region where the test runs. Subsequent runs of the same test scenario update the same dashboard, so your account contains one dashboard for each test scenario in each Region. These dashboards remain in your account after tests complete and continue to incur a monthly charge until they are deleted. This cost is not included in the estimate above.
+Each time a load test runs, this solution creates an Amazon CloudWatch dashboard named `EcsLoadTesting-<testId>-<region> ` in each Region where the test runs. Subsequent runs of the same test scenario update the same dashboard, so your account contains one dashboard for each test scenario in each Region. These dashboards remain in your account after tests complete. They incur a monthly charge until you delete them. This cost is not included in the estimate above.
 
 | Service component | Dimensions | Cost [USD] |
 | --- | --- | --- |
