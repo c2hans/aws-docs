@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/sql-based-etl-with-apache-spar
 title: 'Guidance for SQL-Based ETL with Apache Spark on Amazon EKS'
 canonical_url: https://docs.aws.amazon.com/solutions/sql-based-etl-with-apache-spark-on-amazon-eks/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # Guidance for SQL-Based ETL with Apache Spark on Amazon EKS

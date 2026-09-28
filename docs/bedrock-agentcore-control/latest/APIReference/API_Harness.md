@@ -122,6 +122,12 @@ Length Constraints: Minimum length of 1. Maximum length of 5.
 Pattern: `([1-9][0-9]{0,4})`
 Required: No
 
+ ** hooks **   <a name="bedrockagentcorecontrol-Type-Harness-hooks"></a>
+The lifecycle hooks configured for the harness.
+Type: Array of [HarnessHook](API_HarnessHook.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 20 items.
+Required: No
+
  ** maxIterations **   <a name="bedrockagentcorecontrol-Type-Harness-maxIterations"></a>
 The maximum number of iterations in the agent loop allowed before exiting per invocation.
 Type: Integer

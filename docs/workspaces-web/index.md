@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/workspaces-web/index.html
 title: 'Amazon WorkSpaces Secure Browser Documentation'
 canonical_url: https://docs.aws.amazon.com/workspaces-web/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # Amazon WorkSpaces Secure Browser Documentation

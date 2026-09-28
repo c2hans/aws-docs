@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/datasync/index.html
 title: 'AWS DataSync Documentation'
 canonical_url: https://docs.aws.amazon.com/datasync/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # AWS DataSync Documentation

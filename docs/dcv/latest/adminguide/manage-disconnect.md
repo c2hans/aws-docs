@@ -74,7 +74,7 @@ To change the Amazon DCV server's idle timeout period, you must configure the `i
 
    ```
    [connectivity]
-     idle-timeout={{timeout_in_minutes}}
+   idle-timeout={{timeout_in_minutes}}
    ```
 
    To avoid disconnecting idle clients, enter `0`.
@@ -110,7 +110,7 @@ To change the Amazon DCV server's idle timeout period, you must configure the `i
 
    ```
    [connectivity]
-     idle-timeout={{timeout_in_minutes}}
+   idle-timeout={{timeout_in_minutes}}
    ```
 
    To avoid disconnecting idle clients, enter `0`.

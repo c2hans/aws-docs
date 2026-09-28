@@ -7,4 +7,4 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/Welcome.html
 
 This API reference provides descriptions, syntax, and other details about each of the actions and data types for AWS Systems Manager for SAP. The topic for each action shows the API request parameters and responses.
 
-This document was last published on September 25, 2026.
+This document was last published on September 28, 2026.

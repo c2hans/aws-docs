@@ -51,6 +51,7 @@ Required: No
       "IncludeDetail": "string",
       "Level": "string"
    },
+   "ManagedBy": "string",
    "Name": "string",
    "Policy": "string"
 }
@@ -96,6 +97,11 @@ Type: Timestamp
 The logging configuration settings for the event bus.
 For more information, see [Configuring logs for event buses](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-bus-logs.html) in the *EventBridge User Guide*.
 Type: [LogConfig](API_LogConfig.md) object
+
+ ** [ManagedBy](#API_DescribeEventBus_ResponseSyntax) **   <a name="eventbridge-DescribeEventBus-response-ManagedBy"></a>
+If the event bus was created on behalf of your account by an AWS service, this field displays the principal name of the service that created the event bus.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 128.
 
  ** [Name](#API_DescribeEventBus_ResponseSyntax) **   <a name="eventbridge-DescribeEventBus-response-Name"></a>
 The name of the event bus. Currently, this is always `default`.

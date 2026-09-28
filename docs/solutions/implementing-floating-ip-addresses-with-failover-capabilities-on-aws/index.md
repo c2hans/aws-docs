@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/implementing-floating-ip-addre
 title: 'Guidance for Implementing Floating IP Addresses with Failover Capabilities on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/implementing-floating-ip-addresses-with-failover-capabilities-on-aws/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # Guidance for Implementing Floating IP Addresses with Failover Capabilities on AWS

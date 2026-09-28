@@ -49,7 +49,7 @@ Properties:
 The designated role of a project member.
 *Required*: Yes
 *Type*: String
-*Allowed values*: `PROJECT_OWNER | PROJECT_CONTRIBUTOR | PROJECT_CATALOG_VIEWER | PROJECT_CATALOG_CONSUMER | PROJECT_CATALOG_STEWARD`
+*Pattern*: `^[a-zA-Z0-9_-]{1,36}$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DomainIdentifier`  <a name="cfn-datazone-projectmembership-domainidentifier"></a>

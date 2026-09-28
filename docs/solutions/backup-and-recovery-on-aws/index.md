@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/backup-and-recovery-on-aws/ind
 title: 'Guidance for Backup & Recovery on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/backup-and-recovery-on-aws/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # Guidance for Backup & Recovery on AWS

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/polly/index.html
 title: 'Amazon Polly Documentation'
 canonical_url: https://docs.aws.amazon.com/polly/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # Amazon Polly Documentation

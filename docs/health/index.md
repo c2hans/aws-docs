@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/health/index.html
 title: 'AWS Health Documentation'
 canonical_url: https://docs.aws.amazon.com/health/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # AWS Health Documentation

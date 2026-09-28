@@ -31,6 +31,12 @@ The time the event bus was last modified.
 Type: Timestamp
 Required: No
 
+ ** ManagedBy **   <a name="eventbridge-Type-EventBus-ManagedBy"></a>
+If the event bus was created on behalf of your account by an AWS service, this field displays the principal name of the service that created the event bus.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Required: No
+
  ** Name **   <a name="eventbridge-Type-EventBus-Name"></a>
 The name of the event bus.
 Type: String

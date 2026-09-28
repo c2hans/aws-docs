@@ -395,10 +395,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   CreateView  **
   - **SDK client:** cloudwatchomni
-  - **IAM action:**  [cloudwatch:CreateView](#list_cloudwatch-action-CreateView)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [cloudwatch:CreateView](#list_cloudwatch-action-CreateView)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [cloudwatch:TagResource](#list_cloudwatch-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   DeleteAccessGrant  **
   - **SDK client:** cloudwatchomni

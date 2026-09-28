@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/intelligent-insurance-assistan
 title: 'Guidance for Intelligent Insurance Assistant Using Replicated Mainframe Data on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/intelligent-insurance-assistant-using-replicated-mainframe-data-on-aws/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # Guidance for Intelligent Insurance Assistant Using Replicated Mainframe Data on AWS

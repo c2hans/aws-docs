@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/modernizing-electric-vehicle-c
 title: 'Guidance for Modernizing Electric Vehicle (EV) Charging on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/modernizing-electric-vehicle-charging-on-aws/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # Guidance for Modernizing Electric Vehicle (EV) Charging on AWS

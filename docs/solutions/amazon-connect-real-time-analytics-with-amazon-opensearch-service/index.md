@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/amazon-connect-real-time-analy
 title: 'Guidance for Amazon Connect Real-Time Analytics with Amazon OpenSearch Service'
 canonical_url: https://docs.aws.amazon.com/solutions/amazon-connect-real-time-analytics-with-amazon-opensearch-service/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # Guidance for Amazon Connect Real-Time Analytics with Amazon OpenSearch Service

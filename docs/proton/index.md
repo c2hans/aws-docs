@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/proton/index.html
 title: 'AWS Proton Documentation'
 canonical_url: https://docs.aws.amazon.com/proton/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # AWS Proton Documentation

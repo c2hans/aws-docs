@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-opensearchserverless-index-mappings-properties"></a>
 
 `Properties`  <a name="cfn-opensearchserverless-index-mappings-properties"></a>
-Nested fields within an object or nested field type.
+A map of the fields in the index, where each key is a field name that you choose and each value is that field's mapping. The field-name key is required: specify the field's `Type` and other settings under the field name, not directly under `Properties`. To define a nested field, give the field its own `Properties` map.
 *Required*: No
 *Type*: Object of [PropertyMapping](aws-properties-opensearchserverless-index-propertymapping.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

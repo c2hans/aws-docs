@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-ios/index.html
 title: 'Amplify Library for Swift (AWS Mobile SDK for iOS)'
 canonical_url: https://docs.aws.amazon.com/sdk-for-ios/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # Amplify Library for Swift (AWS Mobile SDK for iOS)

@@ -106,7 +106,7 @@ CALL pgcolumnmask.rename_masking_policy(
 
 -- Verify the rename
 SELECT policyname, roles, weight
-    FROM pgcolumnmask.pg_columnmask_policies
+    FROM pgcolumnmask.ddm_policies
     WHERE tablename = 'employees'
     ORDER BY weight DESC;
 
@@ -132,7 +132,7 @@ CALL pgcolumnmask.alter_masking_policy(
 
 -- Verify the changes
 SELECT policyname, roles, weight
-    FROM pgcolumnmask.pg_columnmask_policies
+    FROM pgcolumnmask.ddm_policies
     WHERE tablename = 'employees'
     ORDER BY weight DESC;
         policyname        |     roles      | weight

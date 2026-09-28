@@ -7,4 +7,4 @@ source_url: https://docs.aws.amazon.com/interconnect/latest/api/Welcome.html
 
 Provides managed connections between your AWS network resources and select partner network resources.
 
-This document was last published on September 25, 2026.
+This document was last published on September 28, 2026.

@@ -49,10 +49,12 @@ Content-type: application/json
    "credentialProviderConfigurations": [
       { ... }
    ],
+   "credentialsUpdatedAt": "string",
    "description": "string",
    "lastUpdatedAt": "string",
    "name": "string",
    "paymentConnectorId": "string",
+   "provisionMode": "string",
    "status": "string",
    "type": "string"
 }
@@ -80,6 +82,10 @@ The credential provider configurations for the payment connector.
 Type: Array of [CredentialsProviderConfiguration](API_CredentialsProviderConfiguration.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 1 item.
 
+ ** [credentialsUpdatedAt](#API_GetPaymentConnector_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetPaymentConnector-response-credentialsUpdatedAt"></a>
+The timestamp when the payment connector's current service-managed credentials took effect. It is first set when the credentials are provisioned and is updated by each rotation. This field is present only for payment connectors with a `provisionMode` of `QUICK_CREATE`.
+Type: Timestamp
+
  ** [description](#API_GetPaymentConnector_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetPaymentConnector-response-description"></a>
 The description of the payment connector.
 Type: String
@@ -101,6 +107,13 @@ The unique identifier of the payment connector.
 Type: String
 Length Constraints: Minimum length of 12. Maximum length of 211.
 Pattern: `([0-9a-z_][-]?){1,100}-[0-9a-z]{10}`
+
+ ** [provisionMode](#API_GetPaymentConnector_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetPaymentConnector-response-provisionMode"></a>
+Specifies how the payment connector was provisioned. Payment connectors that were created before this field was available return `MANUAL`.
++  `MANUAL` - You provided the credential provider configurations, so you own the credentials. Rotate them with the payment provider, then call `UpdatePaymentCredentialProvider`.
++  `QUICK_CREATE` - AgentCore provisioned the credential provider for you, so the credentials are service-managed. You can rotate them with `RotatePaymentConnectorCredentials`.
+Type: String
+Valid Values: `MANUAL | QUICK_CREATE`
 
  ** [status](#API_GetPaymentConnector_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetPaymentConnector-response-status"></a>
 The current status of the payment connector. Possible values include `CREATING`, `READY`, `UPDATING`, `DELETING`, `CREATE_FAILED`, `UPDATE_FAILED`, and `DELETE_FAILED`.

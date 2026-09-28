@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/life-cycle-assessment-of-print
 title: 'Guidance for Life Cycle Assessment (LCA) of Printed Circuit Boards on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/life-cycle-assessment-of-printed-circuit-boards-on-aws/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # Guidance for Life Cycle Assessment (LCA) of Printed Circuit Boards on AWS

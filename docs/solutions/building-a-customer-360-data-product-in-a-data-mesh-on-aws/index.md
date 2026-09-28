@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/building-a-customer-360-data-p
 title: 'Guidance for Building a Customer 360 Data Product in a Data Mesh on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/building-a-customer-360-data-product-in-a-data-mesh-on-aws/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # Guidance for Building a Customer 360 Data Product in a Data Mesh on AWS

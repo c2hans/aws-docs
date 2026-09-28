@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/autonomous-driving-data-framew
 title: 'Guidance for Autonomous Driving Data Framework on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/autonomous-driving-data-framework-on-aws/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # Guidance for Autonomous Driving Data Framework on AWS

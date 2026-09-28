@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/kendra/index.html
 title: 'Amazon Kendra Documentation'
 canonical_url: https://docs.aws.amazon.com/kendra/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # Amazon Kendra Documentation

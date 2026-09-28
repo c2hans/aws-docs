@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/singlesignon/index.html
 title: 'AWS IAM Identity Center'
 canonical_url: https://docs.aws.amazon.com/singlesignon/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # AWS IAM Identity Center

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/game-backend-infrastructure-ag
 title: 'Guidance for Game Backend Infrastructure Agentic Workflows on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/game-backend-infrastructure-agentic-workflows-on-aws/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # Guidance for Game Backend Infrastructure Agentic Workflows on AWS

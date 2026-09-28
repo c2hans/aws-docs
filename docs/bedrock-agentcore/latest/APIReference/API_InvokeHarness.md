@@ -167,6 +167,13 @@ Content-type: application/json
    "contentBlockStop": {
       "contentBlockIndex": number
    },
+   "hookEvent": {
+      "decision": "string",
+      "hookEventId": "string",
+      "name": "string",
+      "reason": "string",
+      "type": "string"
+   },
    "internalServerException": {
    },
    "messageStart": {
@@ -212,6 +219,10 @@ Type: [HarnessContentBlockStartEvent](API_HarnessContentBlockStartEvent.md) obje
  ** [contentBlockStop](#API_InvokeHarness_ResponseSyntax) **   <a name="BedrockAgentCore-InvokeHarness-response-contentBlockStop"></a>
 Indicates the end of the current content block.
 Type: [HarnessContentBlockStopEvent](API_HarnessContentBlockStopEvent.md) object
+
+ ** [hookEvent](#API_InvokeHarness_ResponseSyntax) **   <a name="BedrockAgentCore-InvokeHarness-response-hookEvent"></a>
+A lifecycle hook event emitted when a configured hook runs.
+Type: [HarnessHookEvent](API_HarnessHookEvent.md) object
 
  ** [internalServerException](#API_InvokeHarness_ResponseSyntax) **   <a name="BedrockAgentCore-InvokeHarness-response-internalServerException"></a>
 The exception that occurs when the service encounters an unexpected internal error. This is a temporary condition that will resolve itself with retries. We recommend implementing exponential backoff retry logic in your application.

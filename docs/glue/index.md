@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/glue/index.html
 title: 'AWS Glue Documentation'
 canonical_url: https://docs.aws.amazon.com/glue/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # AWS Glue Documentation

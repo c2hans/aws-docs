@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/knfsd-file-cache-on-aws/index.
 title: 'Guidance for KNFSD File Cache on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/knfsd-file-cache-on-aws/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # Guidance for KNFSD File Cache on AWS

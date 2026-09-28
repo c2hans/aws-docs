@@ -41,6 +41,14 @@ Type: String
 Valid Values: `CoinbaseCDP | StripePrivy`
 Required: Yes
 
+ ** provisionMode **   <a name="bedrockagentcorecontrol-Type-PaymentConnectorSummary-provisionMode"></a>
+Specifies how the payment connector was provisioned. Payment connectors that were created before this field was available return `MANUAL`.
++  `MANUAL` - You provided the credential provider configurations, so you own the credentials.
++  `QUICK_CREATE` - AgentCore provisioned the credential provider for you, so the credentials are service-managed and you can rotate them with `RotatePaymentConnectorCredentials`.
+Type: String
+Valid Values: `MANUAL | QUICK_CREATE`
+Required: No
+
 ## See Also
 <a name="API_PaymentConnectorSummary_SeeAlso"></a>
 

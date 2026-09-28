@@ -143,6 +143,7 @@ The following actions are supported:
 +  [ListTagsForResource](API_ListTagsForResource.md)
 +  [ListWorkloadIdentities](API_ListWorkloadIdentities.md)
 +  [PutResourcePolicy](API_PutResourcePolicy.md)
++  [RotatePaymentConnectorCredentials](API_RotatePaymentConnectorCredentials.md)
 +  [SetTokenVaultCMK](API_SetTokenVaultCMK.md)
 +  [StartPolicyGeneration](API_StartPolicyGeneration.md)
 +  [SubmitRegistryRecordForApproval](API_SubmitRegistryRecordForApproval.md)

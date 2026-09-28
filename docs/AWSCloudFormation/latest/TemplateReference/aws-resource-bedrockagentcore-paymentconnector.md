@@ -88,7 +88,9 @@ The unique identifier of the payment manager to create the connector for.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `ProvisionMode`  <a name="cfn-bedrockagentcore-paymentconnector-provisionmode"></a>
-Property description not available.
+Specifies how the payment connector was provisioned. Payment connectors that were created before this field was available return `MANUAL`.
++ `MANUAL` - You provided the credential provider configurations, so you own the credentials.
++ `QUICK_CREATE` - AgentCore provisioned the credential provider for you, so the credentials are service-managed and you can rotate them with `RotatePaymentConnectorCredentials`.
 *Required*: No
 *Type*: String
 *Allowed values*: `MANUAL | QUICK_CREATE`

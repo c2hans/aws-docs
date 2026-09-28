@@ -57,6 +57,7 @@ Required: No
          "CreationTime": number,
          "Description": "string",
          "LastModifiedTime": number,
+         "ManagedBy": "string",
          "Name": "string",
          "Policy": "string"
       }

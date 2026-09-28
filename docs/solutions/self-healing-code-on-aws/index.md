@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/self-healing-code-on-aws/index
 title: 'Guidance for Self-Healing Code on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/self-healing-code-on-aws/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # Guidance for Self-Healing Code on AWS

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/disaster-recovery-for-vmware-w
 title: 'Guidance for Disaster Recovery for VMware Workloads on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/disaster-recovery-for-vmware-workloads-on-aws/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # Guidance for Disaster Recovery for VMware Workloads on AWS

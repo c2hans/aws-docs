@@ -25,6 +25,11 @@ Indicates the end of the current content block.
 Type: [HarnessContentBlockStopEvent](API_HarnessContentBlockStopEvent.md) object
 Required: No
 
+ ** hookEvent **   <a name="BedrockAgentCore-Type-InvokeHarnessStreamOutput-hookEvent"></a>
+A lifecycle hook event emitted when a configured hook runs.
+Type: [HarnessHookEvent](API_HarnessHookEvent.md) object
+Required: No
+
  ** internalServerException **   <a name="BedrockAgentCore-Type-InvokeHarnessStreamOutput-internalServerException"></a>
 The exception that occurs when the service encounters an unexpected internal error. This is a temporary condition that will resolve itself with retries. We recommend implementing exponential backoff retry logic in your application.
 Type: Exception

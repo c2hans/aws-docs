@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/shoppable-video-on-aws/index.h
 title: 'Guidance for Shoppable Video on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/shoppable-video-on-aws/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # Guidance for Shoppable Video on AWS

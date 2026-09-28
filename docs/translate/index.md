@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/translate/index.html
 title: 'Amazon Translate Documentation'
 canonical_url: https://docs.aws.amazon.com/translate/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # Amazon Translate Documentation

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/building-a-digital-twin-for-ai
 title: 'Guidance for Building a Digital Twin for Airport & Airline Operations on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/building-a-digital-twin-for-airport-and-airline-operations-on-aws/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # Guidance for Building a Digital Twin for Airport & Airline Operations on AWS

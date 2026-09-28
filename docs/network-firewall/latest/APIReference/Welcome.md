@@ -47,4 +47,4 @@ To start using Network Firewall, do the following:
 
 After your firewall is established, you can add firewall endpoints for new Availability Zones by following the prior steps for the Amazon VPC setup and firewall subnet definitions. You can also add endpoints to Availability Zones that you're using in the firewall, either for the same VPC or for another VPC, by following the prior steps for the Amazon VPC setup, and defining the new VPC subnets as VPC endpoint associations.
 
-This document was last published on September 25, 2026.
+This document was last published on September 28, 2026.

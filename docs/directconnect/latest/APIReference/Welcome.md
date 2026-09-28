@@ -7,4 +7,4 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/Welcom
 
  Direct Connect links your internal network to an Direct Connect location over a standard Ethernet fiber-optic cable. One end of the cable is connected to your router, the other to an Direct Connect router. With this connection in place, you can create virtual interfaces directly to the AWS Cloud (for example, to Amazon EC2 and Amazon S3) and to Amazon VPC, bypassing Internet service providers in your network path. A connection provides access to all AWS Regions except the China (Beijing) and (China) Ningxia Regions. AWS resources in the China Regions can only be accessed through locations associated with those Regions.
 
-This document was last published on September 25, 2026.
+This document was last published on September 28, 2026.

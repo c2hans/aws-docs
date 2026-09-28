@@ -53,6 +53,7 @@ Content-type: application/json
          "lastUpdatedAt": "string",
          "name": "string",
          "paymentConnectorId": "string",
+         "provisionMode": "string",
          "status": "string",
          "type": "string"
       }

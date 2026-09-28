@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/deploying-siemens-opcenter-exe
 title: 'Guidance for Deploying Siemens Opcenter Execution Foundation on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/deploying-siemens-opcenter-execution-foundation-on-aws/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # Guidance for Deploying Siemens Opcenter Execution Foundation on AWS

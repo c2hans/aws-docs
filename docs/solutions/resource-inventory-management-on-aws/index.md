@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/resource-inventory-management-
 title: 'Guidance for Resource Inventory Management on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/resource-inventory-management-on-aws/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # Guidance for Resource Inventory Management on AWS

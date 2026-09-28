@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/running-autodesk-autocad-on-am
 title: 'Guidance for Running Autodesk AutoCAD on Amazon AppStream 2.0'
 canonical_url: https://docs.aws.amazon.com/solutions/running-autodesk-autocad-on-amazon-appstream-2-0/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # Guidance for Running Autodesk AutoCAD on Amazon AppStream 2.0

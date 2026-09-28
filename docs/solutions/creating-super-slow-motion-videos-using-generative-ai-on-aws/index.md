@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/creating-super-slow-motion-vid
 title: 'Guidance for Creating Super Slow-Motion Videos Using Generative AI on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/creating-super-slow-motion-videos-using-generative-ai-on-aws/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # Guidance for Creating Super Slow-Motion Videos Using Generative AI on AWS

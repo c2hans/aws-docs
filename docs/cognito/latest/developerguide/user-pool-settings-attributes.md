@@ -279,6 +279,14 @@ In a [CreateUserPool](https://docs.aws.amazon.com/cognito-user-identity-pools/la
 ],
 ```
 
+The following example configures a user pool where each user signs in with only their email address as the username. As a best practice, also set `email` as a required sign-up attribute so that new users provide their email address when they sign up through managed login:
+
+```
+"UsernameAttributes": [
+   "email"
+],
+```
+
 ------
 
 When you configure username attributes, your can make [SignUp](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_SignUp.html) API requests that pass an email address or phone number in the `username` parameter. The following is the behavior of the code`SignUp` API operation with username attributes.
@@ -288,12 +296,15 @@ When you configure username attributes, your can make [SignUp](https://docs.aws.
 + If the `username` string contains an email address or phone number that is already in use, the `SignUp` API returns an exception.
 + The `SignUp` API populates the `username` attribute with a [UUID](cognito-terms.md#terms-uuid) for your user. This UUID has the same value as the `sub` claim in the user identity token.
 
-You can use an email address or phone number in place of the username in all APIs except the [ListUsers](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_ListUsers.html) operation. In `ListUsers` API requests, you can specify a `Filter` of `email` or `phone_number`. If you filter by `username`, you must supply the UUID username, not the email address or phone number.
+You can use an email address or phone number in place of the username in all APIs except the [ListUsers](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_ListUsers.html) operation. This includes post-sign-up operations such as [ConfirmSignUp](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_ConfirmSignUp.html) and [ResendConfirmationCode](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_ResendConfirmationCode.html). Although `SignUp` sets the `username` attribute to the UUID, you can still pass the user's email address or phone number as the `Username` value in the `SignUp` request. In `ListUsers` API requests, you can specify a `Filter` of `email` or `phone_number`. To filter by `username`, supply the UUID username. You can't filter by the email address or phone number in a `username` filter.
 
 ## Custom attributes
 <a name="user-pool-settings-custom-attributes"></a>
 
 You can add up to 50 custom attributes to your user pool. You can specify a minimum and/or maximum length for custom attributes. However, the maximum length for any custom attribute can be no more than 2048 characters. The name of a custom attribute must match the regular expression pattern that's described in the `Name` parameter of [SchemaAttributeType](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_SchemaAttributeType.html).
+
+**Custom attributes are permanent**
+You can't remove or change a custom attribute after you add it to your user pool. You can't delete or rename the attribute. You also can't change its data type, mutability, or length constraints. Plan your custom attribute schema before you add attributes to a production user pool.
 
 **Each custom attribute has the following characteristics:**
 + You can define it as a string, number, boolean, or `DateTime` object. Amazon Cognito writes custom attribute values to the ID token only as strings.

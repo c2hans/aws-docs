@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/live-streaming-on-aws/index.ht
 title: 'Guidance for Live Streaming on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/live-streaming-on-aws/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # Guidance for Live Streaming on AWS

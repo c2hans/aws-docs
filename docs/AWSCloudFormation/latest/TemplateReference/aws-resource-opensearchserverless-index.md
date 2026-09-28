@@ -91,3 +91,30 @@ The index name and the collection endpoint in the following format: index name\|
 
 `Uuid`  <a name="Uuid-fn::getatt"></a>
 The unique identifier for the index.
+
+## Examples
+<a name="aws-resource-opensearchserverless-index--examples"></a>
+
+### Example - Define index field mappings
+<a name="aws-resource-opensearchserverless-index--examples--Example_-_Define_index_field_mappings"></a>
+
+The following example defines an index whose `Mappings` contain a `keyword` field named `status` and a `knn_vector` field named `embedding`. Each field is nested under its own field-name key within `Properties`:
+
+#### YAML
+<a name="aws-resource-opensearchserverless-index--examples--Example_-_Define_index_field_mappings--yaml"></a>
+
+```
+Resources:
+  TestIndex:
+    Type: 'AWS::OpenSearchServerless::Index'
+    Properties:
+      CollectionEndpoint: 'https://my-endpoint.us-east-1.aoss.amazonaws.com'
+      IndexName: test-index
+      Mappings:
+        Properties:
+          status:
+            Type: keyword
+          embedding:
+            Type: knn_vector
+            Dimension: 1536
+```

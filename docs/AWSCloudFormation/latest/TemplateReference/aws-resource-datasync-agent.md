@@ -82,7 +82,8 @@ The Amazon Resource Names (ARNs) of the security groups used to protect your dat
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `SubnetArns`  <a name="cfn-datasync-agent-subnetarns"></a>
-Specifies the ARN of the subnet where your VPC service endpoint is located. You can only specify one ARN.
+Specifies the ARN of the subnet where DataSync creates the [network interfaces](https://docs.aws.amazon.com/datasync/latest/userguide/required-network-interfaces.html) that handle data transfer traffic for your tasks. You can only specify one ARN.
+The subnet doesn't have to be the subnet that contains your VPC service endpoint. The subnet can be one that another AWS account shared with you through [AWS RAM](https://docs.aws.amazon.com/ram/latest/userguide/what-is.html), in which case the ARN must specify the account that owns the subnet. For more information, see [Using a single VPC service endpoint across multiple subnets](https://docs.aws.amazon.com/datasync/latest/userguide/choose-service-endpoint.html#vpc-endpoint-multiple-subnets).
 *Required*: No
 *Type*: Array of String
 *Maximum*: `128`

@@ -17,6 +17,7 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 + [`AWSConfigRemediation-EnableCWLoggingForSessionManager`](automation-aws-enable-cw-log-sm.md)
 + [`AWS-ExportOpsDataToS3`](automation-aws-exportopsdatatos3.md)
 + [`AWS-ExportPatchReportToS3`](automation-aws-exportpatchreporttos3.md)
++ [`AWS-MigrateSSMDocumentSharingToRAM`](automation-aws-migratessmdocumentsharingtoram.md)
 + [`AWS-SetupInventory`](automation-aws-setupinventory.md)
 + [`AWS-SetupManagedInstance`](automation-aws-setupmanagedinstance.md)
 + [`AWS-SetupManagedRoleOnEC2Instance`](automation-aws-setupmanagedroleonec2instance.md)

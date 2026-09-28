@@ -13,4 +13,4 @@ Data API is available with the following types of Aurora databases:
 
 For more information about the Data API, see [Using RDS Data API](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/data-api.html) in the *Amazon Aurora User Guide*.
 
-This document was last published on September 25, 2026.
+This document was last published on September 28, 2026.

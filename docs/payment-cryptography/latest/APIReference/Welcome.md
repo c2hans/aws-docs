@@ -13,4 +13,4 @@ All AWS Payment Cryptography API calls must be signed and transmitted using Tran
 
  AWS Payment Cryptography supports AWS CloudTrail for control plane operations, a service that logs AWS API calls and related events for your AWS account and delivers them to an Amazon S3 bucket you specify. By using the information collected by CloudTrail, you can determine what requests were made to AWS Payment Cryptography, who made the request, when it was made, and so on. If you don't conﬁgure a trail, you can still view the most recent events in the CloudTrail console. For more information, see the [AWS CloudTrail User Guide](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/).
 
-This document was last published on September 25, 2026.
+This document was last published on September 28, 2026.

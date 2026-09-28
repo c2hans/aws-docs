@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-swift/index.html
 title: 'AWS SDK for Swift Documentation'
 canonical_url: https://docs.aws.amazon.com/sdk-for-swift/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # AWS SDK for Swift Documentation

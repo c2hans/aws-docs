@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/serverlessrepo/index.html
 title: 'AWS Serverless Application Repository'
 canonical_url: https://docs.aws.amazon.com/serverlessrepo/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # AWS Serverless Application Repository

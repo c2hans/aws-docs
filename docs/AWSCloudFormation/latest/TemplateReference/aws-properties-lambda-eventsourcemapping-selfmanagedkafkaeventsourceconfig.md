@@ -20,6 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[ConsumerGroupId](#cfn-lambda-eventsourcemapping-selfmanagedkafkaeventsourceconfig-consumergroupid)" : {{String}},
+  "[ConsumptionMode](#cfn-lambda-eventsourcemapping-selfmanagedkafkaeventsourceconfig-consumptionmode)" : {{String}},
   "[SchemaRegistryConfig](#cfn-lambda-eventsourcemapping-selfmanagedkafkaeventsourceconfig-schemaregistryconfig)" : {{SchemaRegistryConfig}}
 }
 ```
@@ -29,6 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [ConsumerGroupId](#cfn-lambda-eventsourcemapping-selfmanagedkafkaeventsourceconfig-consumergroupid): {{String}}
+  [ConsumptionMode](#cfn-lambda-eventsourcemapping-selfmanagedkafkaeventsourceconfig-consumptionmode): {{String}}
   [SchemaRegistryConfig](#cfn-lambda-eventsourcemapping-selfmanagedkafkaeventsourceconfig-schemaregistryconfig): {{
     SchemaRegistryConfig}}
 ```
@@ -43,6 +45,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 *Pattern*: `[a-zA-Z0-9-\/*:_+=.@-]*`
 *Minimum*: `1`
 *Maximum*: `200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ConsumptionMode`  <a name="cfn-lambda-eventsourcemapping-selfmanagedkafkaeventsourceconfig-consumptionmode"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `Stream | Queue`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SchemaRegistryConfig`  <a name="cfn-lambda-eventsourcemapping-selfmanagedkafkaeventsourceconfig-schemaregistryconfig"></a>

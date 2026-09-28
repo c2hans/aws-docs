@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/visual-asset-management-system
 title: 'Guidance for Visual Asset Management System on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/visual-asset-management-system-on-aws/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # Guidance for Visual Asset Management System on AWS

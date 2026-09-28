@@ -19,7 +19,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
-  "[GlueLineageSyncEnabled](#cfn-datazone-connection-iampropertiesinput-gluelineagesyncenabled)" : {{Boolean}}
+  "[GlueLineageSyncEnabled](#cfn-datazone-connection-iampropertiesinput-gluelineagesyncenabled)" : {{Boolean}},
+  "[RoleArn](#cfn-datazone-connection-iampropertiesinput-rolearn)" : {{String}}
 }
 ```
 
@@ -28,6 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [GlueLineageSyncEnabled](#cfn-datazone-connection-iampropertiesinput-gluelineagesyncenabled): {{Boolean}}
+  [RoleArn](#cfn-datazone-connection-iampropertiesinput-rolearn): {{String}}
 ```
 
 ## Properties
@@ -37,4 +39,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 Specifies whether AWS Glue lineage sync is enabled for a connection.
 *Required*: No
 *Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`RoleArn`  <a name="cfn-datazone-connection-iampropertiesinput-rolearn"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:aws[^:]*:iam::\d{12}:role(\/[a-zA-Z0-9+=,.@_-]+)*\/[a-zA-Z0-9+=,.@_-]+$`
+*Maximum*: `2048`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

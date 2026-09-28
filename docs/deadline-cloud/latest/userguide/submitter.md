@@ -38,7 +38,7 @@ With the installer, you can install the following submitters:
 | [Autodesk Arnold for Maya](autodesk-maya.md) | 7.1 - 7.5 | Included | Included | Included |
 | [Autodesk Maya](autodesk-maya.md) | 2023 - 2027 | Included | Included | Included |
 | [Autodesk VRED](autodesk-vred.md) | 2025 - 2026 | Included | Not included | Not included |
-| [Blender](blender.md) | 3.6 - 5.1 | Included | Included | Included |
+| [Blender](blender.md) | 3.6 - 5.2 | Included | Included | Included |
 | [Chaos V-Ray for Maya](autodesk-maya.md) | 6 - 7 | Included | Included | Included |
 | [Foundry Nuke](foundry-nuke.md) | 15 - 17 | Included | Included | Included |
 | [KeyShot Studio](keyshot.md) | 2023 - 2025 | Included | Not included | Included |

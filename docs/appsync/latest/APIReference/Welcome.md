@@ -7,4 +7,4 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/Welcome.html
 
  AWS AppSync provides API actions for creating and interacting with data sources using GraphQL from your application.
 
-This document was last published on September 25, 2026.
+This document was last published on September 28, 2026.

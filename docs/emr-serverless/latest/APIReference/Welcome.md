@@ -12,4 +12,4 @@ The API reference to Amazon EMR Serverless is `emr-serverless`. The `emr-serverl
 + It is the prefix before IAM policy actions for Amazon EMR Serverless. For example, `"Action": ["emr-serverless:StartJobRun"]`. For more information, see [Policy actions for Amazon EMR Serverless](https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-actions).
 + It is the prefix used in Amazon EMR Serverless service endpoints. For example, `emr-serverless.us-east-2.amazonaws.com`.
 
-This document was last published on September 25, 2026.
+This document was last published on September 28, 2026.

@@ -29,6 +29,9 @@ Group memberships are resolved from the data source. During ingestion, Bedrock M
 **Note**
 Group memberships are as fresh as the last sync. Permission changes between syncs are not reflected until the next ingestion job completes. For connectors that support real-time ACL verification, this check catches permission changes that occurred since the last sync.
 
+**Note**
+For users who belong to very large groups, ACL propagation can lag behind sync completion. Even after a knowledge base refresh finishes successfully, a user in a large group may not immediately be able to retrieve answers from content they have access to. Resolving and propagating group membership at this scale can take some time to complete. If a user reports missing content shortly after a sync, allow time for propagation to finish and retry before treating it as an access issue.
+
 ## Connector support matrix
 <a name="kb-managed-acl-connector-support"></a>
 

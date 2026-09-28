@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/industrial-data-fabric-using-c
 title: 'Guidance for Industrial Data Fabric Using Cognite Data Fusion® on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/industrial-data-fabric-using-cognite-data-fusion-on-aws/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # Guidance for Industrial Data Fabric Using Cognite Data Fusion® on AWS

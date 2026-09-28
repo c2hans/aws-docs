@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 Property description not available.
 *Required*: Yes
 *Type*: String
-*Allowed values*: `PROJECT_OWNER | PROJECT_CONTRIBUTOR`
+*Pattern*: `^[a-zA-Z0-9_-]{1,36}$`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Member`  <a name="cfn-datazone-project-projectmembershipassignment-member"></a>

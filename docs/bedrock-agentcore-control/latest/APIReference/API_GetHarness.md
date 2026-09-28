@@ -57,6 +57,9 @@ Content-type: application/json
       "harnessId": "string",
       "harnessName": "string",
       "harnessVersion": "string",
+      "hooks": [
+         { ... }
+      ],
       "maxIterations": number,
       "maxTokens": number,
       "memory": { ... },

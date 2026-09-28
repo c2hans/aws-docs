@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com//solutions/generative-ai-powered-visual-
 title: 'Guidance for Generative AI-Powered Visual Inspection on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/generative-ai-powered-visual-inspection-on-aws/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # Guidance for Generative AI-Powered Visual Inspection on AWS

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/customer-lifetime-value-analyt
 title: 'Guidance for Customer Lifetime Value Analytics on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/customer-lifetime-value-analytics-on-aws/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # Guidance for Customer Lifetime Value Analytics on AWS

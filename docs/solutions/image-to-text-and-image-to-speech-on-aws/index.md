@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/image-to-text-and-image-to-spe
 title: 'Guidance for Image-to-Text and Image-to-Speech on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/image-to-text-and-image-to-speech-on-aws/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # Guidance for Image-to-Text and Image-to-Speech on AWS

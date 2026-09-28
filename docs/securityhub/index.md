@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/securityhub/index.html
 title: 'AWS Security Hub Documentation'
 canonical_url: https://docs.aws.amazon.com/securityhub/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # AWS Security Hub Documentation

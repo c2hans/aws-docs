@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/connect-decisions/index.html
 title: 'Amazon Connect Decisions Documentation'
 canonical_url: https://docs.aws.amazon.com/connect-decisions/
 source: aws-documentation
-generated_on: 2026-09-26
+generated_on: 2026-09-28
 ---
 
 # Amazon Connect Decisions Documentation

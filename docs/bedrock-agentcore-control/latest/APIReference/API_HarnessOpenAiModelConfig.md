@@ -26,6 +26,12 @@ Provider-specific parameters passed through to the model provider unchanged.
 Type: JSON value
 Required: No
 
+ ** apiBase **   <a name="bedrockagentcorecontrol-Type-HarnessOpenAiModelConfig-apiBase"></a>
+Optional custom endpoint URL for an OpenAI-compatible endpoint.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 16383.
+Required: No
+
  ** apiFormat **   <a name="bedrockagentcorecontrol-Type-HarnessOpenAiModelConfig-apiFormat"></a>
 The API format to use when calling the OpenAI provider.
 Type: String

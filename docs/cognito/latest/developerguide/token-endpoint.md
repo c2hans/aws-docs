@@ -59,7 +59,11 @@ The type of OIDC grant that you want to request.
 Must be `authorization_code` or `refresh_token` or `client_credentials`. You can request an access token for a custom scope from the token endpoint under the following conditions:
 + You enabled the requested scope in your app client configuration.
 + You configured your app client with a client secret.
-+ You enable client credentials grant in your app client.
++ You enabled the app client for the client credentials grant. You can enable this grant in one of the following ways:
+  + For hosted-domain machine-to-machine (M2M) authentication, add `client_credentials` to the app client's `AllowedOAuthFlows`.
+  + For domainless M2M authentication, add `ALLOW_CLIENT_TOKEN_AUTH` to the app client's `ExplicitAuthFlows`. This flow requires a client secret and must be the app client's only authentication flow.
+
+  If you enable neither of these options, the token endpoint returns an unauthorized-class error.
 The token endpoint returns a refresh token only when the `grant_type` is `authorization_code`.
 
 **`client_id`**
@@ -73,7 +77,8 @@ The app client secret, if the app client has one, for `client_secret_post` autho
 
 **`scope`**
 *Optional.*
-Can be a combination of any scopes that are associated with your app client. Amazon Cognito ignores scopes in the request that aren't allowed for the requested app client. If you don't provide this request parameter, the authorization server returns an access token `scope` claim with all authorization scopes that you enabled in your app client configuration. You can request any of the scopes allowed for the requested app client: standard scopes, custom scopes from resource servers, and the `aws.cognito.signin.user.admin` user self-service scope.
+Can be a combination of any scopes that are associated with your app client. If the request includes a scope that is defined on a resource server, Amazon Cognito checks whether that scope is allowed for the requested app client. If the scope isn't allowed, Amazon Cognito rejects the entire request rather than issuing a token for the remaining scopes. A request that combines allowed and unallowed scopes fails for the same reason.
+Amazon Cognito rejects an unusable scope rather than dropping it and returning a token for the rest. A rejected request returns `HTTP 400` with an error in the response body. The error value depends on why the scope was unusable. When a scope exists but isn't allowed for the app client, Amazon Cognito returns `invalid_grant`. When a scope refers to a resource server or custom scope that doesn't exist, Amazon Cognito returns `invalid_scope`. If you don't provide this request parameter, the authorization server returns an access token `scope` claim with all authorization scopes that you enabled in your app client configuration. You can request any of the scopes allowed for the requested app client: standard scopes, custom scopes from resource servers, and the `aws.cognito.signin.user.admin` user self-service scope.
 
 **`redirect_uri`**
 *Optional. Not required for client-credentials grants.*

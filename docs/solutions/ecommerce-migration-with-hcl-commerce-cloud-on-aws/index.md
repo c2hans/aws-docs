@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/ecommerce-migration-with-hcl-c
 title: 'Guidance for Ecommerce Migration with HCL Commerce Cloud on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/ecommerce-migration-with-hcl-commerce-cloud-on-aws/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # Guidance for Ecommerce Migration with HCL Commerce Cloud on AWS

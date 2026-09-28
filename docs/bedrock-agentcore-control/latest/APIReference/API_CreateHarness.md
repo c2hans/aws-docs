@@ -25,6 +25,9 @@ Content-type: application/json
    },
    "executionRoleArn": "{{string}}",
    "harnessName": "{{string}}",
+   "hooks": [
+      { ... }
+   ],
    "maxIterations": {{number}},
    "maxTokens": {{number}},
    "memory": { ... },
@@ -116,6 +119,12 @@ Type: String
 Pattern: `[a-zA-Z][a-zA-Z0-9_]{0,39}`
 Required: Yes
 
+ ** [hooks](#API_CreateHarness_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreateHarness-request-hooks"></a>
+The lifecycle hooks to run at defined points in the agent loop.
+Type: Array of [HarnessHook](API_HarnessHook.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 20 items.
+Required: No
+
  ** [maxIterations](#API_CreateHarness_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreateHarness-request-maxIterations"></a>
 The maximum number of iterations the agent loop can execute per invocation.
 Type: Integer
@@ -196,6 +205,9 @@ Content-type: application/json
       "harnessId": "string",
       "harnessName": "string",
       "harnessVersion": "string",
+      "hooks": [
+         { ... }
+      ],
       "maxIterations": number,
       "maxTokens": number,
       "memory": { ... },

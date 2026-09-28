@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/pricing-calculator/index.html
 title: 'AWS Pricing Calculator Documentation'
 canonical_url: https://docs.aws.amazon.com/pricing-calculator/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # AWS Pricing Calculator Documentation

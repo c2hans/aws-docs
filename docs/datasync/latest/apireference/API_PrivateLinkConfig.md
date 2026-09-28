@@ -26,7 +26,8 @@ Pattern: `^arn:(aws|aws-cn|aws-us-gov|aws-eusc|aws-iso|aws-iso-b):ec2:[a-z\-0-9]
 Required: No
 
  ** SubnetArns **   <a name="DataSync-Type-PrivateLinkConfig-SubnetArns"></a>
-Specifies the ARN of the subnet where your VPC endpoint is located. You can only specify one ARN.
+Specifies the ARN of the subnet where DataSync creates the network interfaces that handle data transfer traffic for your tasks. You can only specify one ARN.
+The subnet doesn't have to be the subnet that contains your VPC endpoint.
 Type: Array of strings
 Array Members: Fixed number of 1 item.
 Length Constraints: Maximum length of 128.
@@ -34,7 +35,7 @@ Pattern: `^arn:(aws|aws-cn|aws-us-gov|aws-eusc|aws-iso|aws-iso-b):ec2:[a-z\-0-9]
 Required: No
 
  ** VpcEndpointId **   <a name="DataSync-Type-PrivateLinkConfig-VpcEndpointId"></a>
-Specifies the ID of the VPC endpoint that your agent connects to.
+Specifies the ID of the VPC service endpoint that's recorded for your agent. The endpoint ID is informational and isn't verified by DataSync. Your agent communicates through the private IP address in `PrivateLinkEndpoint`, which is set when you activate the agent.
 Type: String
 Pattern: `^vpce-[0-9a-f]{17}$`
 Required: No

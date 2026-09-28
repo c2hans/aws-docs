@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/securing-operational-technolog
 title: 'Guidance for Securing Operational Technology (OT) Assets with Dragos on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/securing-operational-technology-assets-with-dragos-on-aws/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # Guidance for Securing Operational Technology (OT) Assets with Dragos on AWS

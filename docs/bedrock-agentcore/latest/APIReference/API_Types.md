@@ -113,6 +113,7 @@ The following data types are supported:
 +  [HarnessContentBlockStopEvent](API_HarnessContentBlockStopEvent.md)
 +  [HarnessGatewayOutboundAuth](API_HarnessGatewayOutboundAuth.md)
 +  [HarnessGeminiModelConfig](API_HarnessGeminiModelConfig.md)
++  [HarnessHookEvent](API_HarnessHookEvent.md)
 +  [HarnessInlineFunctionConfig](API_HarnessInlineFunctionConfig.md)
 +  [HarnessLiteLlmModelConfig](API_HarnessLiteLlmModelConfig.md)
 +  [HarnessMessage](API_HarnessMessage.md)

@@ -28,6 +28,9 @@ Content-type: application/json
       "{{string}}" : "{{string}}"
    },
    "executionRoleArn": "{{string}}",
+   "hooks": [
+      { ... }
+   ],
    "maxIterations": {{number}},
    "maxTokens": {{number}},
    "memory": {
@@ -115,6 +118,12 @@ Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `arn:aws(-[^:]+)?:iam::([0-9]{12})?:role/.+`
 Required: No
 
+ ** [hooks](#API_UpdateHarness_RequestSyntax) **   <a name="bedrockagentcorecontrol-UpdateHarness-request-hooks"></a>
+The lifecycle hooks to run at defined points in the agent loop. If specified, this replaces all existing hooks. If not specified, the existing hooks are retained.
+Type: Array of [HarnessHook](API_HarnessHook.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 20 items.
+Required: No
+
  ** [maxIterations](#API_UpdateHarness_RequestSyntax) **   <a name="bedrockagentcorecontrol-UpdateHarness-request-maxIterations"></a>
 The maximum number of iterations the agent loop can execute per invocation. If not specified, the existing value is retained.
 Type: Integer
@@ -184,6 +193,9 @@ Content-type: application/json
       "harnessId": "string",
       "harnessName": "string",
       "harnessVersion": "string",
+      "hooks": [
+         { ... }
+      ],
       "maxIterations": number,
       "maxTokens": number,
       "memory": { ... },
@@ -243,6 +255,10 @@ HTTP Status Code: 500
  ** ResourceNotFoundException **
 This exception is thrown when a resource referenced by the operation does not exist
 HTTP Status Code: 404
+
+ ** ServiceQuotaExceededException **
+This exception is thrown when a request is made beyond the service quota
+HTTP Status Code: 402
 
  ** ThrottlingException **
 This exception is thrown when the number of requests exceeds the limit

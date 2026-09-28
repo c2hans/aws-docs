@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/product-traceability-on-aws/in
 title: 'Guidance for Product Traceability on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/product-traceability-on-aws/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # Guidance for Product Traceability on AWS

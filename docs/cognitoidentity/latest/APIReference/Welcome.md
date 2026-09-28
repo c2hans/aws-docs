@@ -13,4 +13,4 @@ For a description of the authentication flow from the Amazon Cognito Developer G
 
 For more information see [Amazon Cognito Federated Identities](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html).
 
-This document was last published on September 25, 2026.
+This document was last published on September 28, 2026.

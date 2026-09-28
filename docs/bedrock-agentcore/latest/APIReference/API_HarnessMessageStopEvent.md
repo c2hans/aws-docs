@@ -13,7 +13,7 @@ Event indicating the end of a message.
  ** stopReason **   <a name="BedrockAgentCore-Type-HarnessMessageStopEvent-stopReason"></a>
 The reason the agent stopped generating.
 Type: String
-Valid Values: `end_turn | tool_use | tool_result | max_tokens | stop_sequence | content_filtered | malformed_model_output | malformed_tool_use | interrupted | partial_turn | model_context_window_exceeded | max_iterations_exceeded | max_output_tokens_exceeded | timeout_exceeded`
+Valid Values: `end_turn | tool_use | tool_result | max_tokens | stop_sequence | content_filtered | malformed_model_output | malformed_tool_use | interrupted | partial_turn | model_context_window_exceeded | max_iterations_exceeded | max_output_tokens_exceeded | timeout_exceeded | hook_stopped`
 Required: Yes
 
 ## See Also

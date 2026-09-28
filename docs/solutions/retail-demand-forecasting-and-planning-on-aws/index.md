@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/retail-demand-forecasting-and-
 title: 'Guidance for Retail Demand Forecasting and Planning on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/retail-demand-forecasting-and-planning-on-aws/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # Guidance for Retail Demand Forecasting and Planning on AWS

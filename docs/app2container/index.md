@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/app2container/index.html
 title: 'AWS App2Container Documentation'
 canonical_url: https://docs.aws.amazon.com/app2container/
 source: aws-documentation
-generated_on: 2026-09-25
+generated_on: 2026-09-28
 ---
 
 # AWS App2Container Documentation
