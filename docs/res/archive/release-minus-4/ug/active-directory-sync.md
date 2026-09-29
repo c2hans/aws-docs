@@ -55,6 +55,11 @@ The following example enables debug level for SSSD logs:
 
 ![Additional SSSD configurations showing new key and value pair entered](https://docs.aws.amazon.com/res/archive/release-minus-4/ug/images/res-additional-sssd-config2.png)
 
+## Email Update after Initial AD Sync (release 2025.09)
+<a name="ad-sync-update-email"></a>
+
+If an email address of an active directory user has changed, administrators can manually start the AD sync or wait for the next scheduled AD sync for the change to be picked up and synced to RES.
+
 ## How to manually start or stop the sync (release 2025.03 and later)
 <a name="active-directory-sync-start-stop"></a>
 

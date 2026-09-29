@@ -38,6 +38,8 @@ To prevent users from exfiltrating data from secure S3 buckets into their own S3
    1. Under **Policy**, choose **Custom**.
 
    1. In the policy editor, enter a policy that restricts access to resources within your account or a specific account. Here's an example policy (replace {{amzn-s3-demo-bucket}} with your S3 bucket name and {{111122223333}} and {{444455556666}} with the appropriate AWS account IDs that you want to have access):
+**Note**
+This example policy uses `s3:*` and does not restrict S3 control plane operations such as event notification configuration, replication, or inventory. These operations could allow object metadata (such as bucket names and object keys) to be sent to cross-account destinations. If this is a concern, add explicit Deny statements for the relevant S3 control plane actions in the VPC endpoint policy.
 
 ------
 #### [ JSON ]

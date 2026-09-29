@@ -70,9 +70,14 @@ This product uses the Amazon Cognito service, which is not currently available i
   <tr><td>ACMCertificateARNforWebApp</td><td></td><td><i>(Optional)</i> When using the default configuration, the product hosts the web application under the domain amazonaws.com. You may host the product services under your domain. If you deployed the automated external resources, this was generated for you and the information can be found in the Outputs of the res-bi stack. If you need to generate a certificate for your web application, see <a href="configuration-guide.md">Configuration guide</a>.</td></tr>
   <tr><td>CertificateSecretARNforVDI</td><td></td><td><i>(Optional)</i> This ARN secret stores the public certificate for your web portal's public certificate. If you set a portal domain name for your automated external resources, you can find this value under the Outputs tab of the res-bi stack.</td></tr>
   <tr><td>PrivateKeySecretARNforVDI</td><td></td><td><i>(Optional)</i> This ARN secret stores the private key for your web portal's certificate. If you set a portal domain name for your automated external resources, you can find this value under the Outputs tab of the res-bi stack.</td></tr>
+  <tr><td>CognitoUserPoolId</td><td></td><td>Cognito user pool for user and client authentication. RES will create one by default if no Cognito user pool is specified.</td></tr>
+  <tr><td>CognitoUserPoolDomainUrl </td><td></td><td>Cognito user pool domain for managed login. This parameter must be provided when the <code>CognitoUserPoolId</code> is specified.</td></tr>
 </tbody>
 </table>
 
 1. Choose **Create stack** to deploy the stack.
 
 You can view the status of the stack in the AWS CloudFormation console in the **Status** column. You should receive a CREATE\_COMPLETE status in approximately 60 minutes.
+
+**Important**
+You are responsible for patching your infra / VDI hosts after deployment.

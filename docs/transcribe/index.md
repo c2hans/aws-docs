@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/transcribe/index.html
 title: 'Amazon Transcribe Documentation'
 canonical_url: https://docs.aws.amazon.com/transcribe/
 source: aws-documentation
-generated_on: 2026-09-28
+generated_on: 2026-09-29
 ---
 
 # Amazon Transcribe Documentation

@@ -5,6 +5,9 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-AnyDB/ase-backint-dump-lo
 # Backup and Restore
 <a name="ase-backint-dump-load"></a>
 
+**Note**
+End of support notice: On October 29, 2026, AWS will end support for AWS Backint Agent for SAP ASE. After September 29, 2027, you will no longer be able to access the AWS Backint Agent for SAP ASE console or AWS Backint Agent for SAP ASE resources. For more information, see [AWS Backint Agent for SAP ASE end of support](ase-backint-end-of-support.md).
+
 This guide shows you how to backup and restore SAP ASE databases using AWS Backint Agent for SAP ASE. You’ll learn how to install and configure the agent, create backups, restore databases, and manage logs.
 
 **Topics**

@@ -18,6 +18,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::Redshift::EventSubscription](aws-resource-redshift-eventsubscription.md)
 + [AWS::Redshift::Integration](aws-resource-redshift-integration.md)
 + [AWS::Redshift::QEV2IdcApplication](aws-resource-redshift-qev2idcapplication.md)
++ [AWS::Redshift::RedshiftIdcApplication](aws-resource-redshift-redshiftidcapplication.md)
 + [AWS::Redshift::ScheduledAction](aws-resource-redshift-scheduledaction.md)
 + [AWS::Redshift::Snapshot](aws-resource-redshift-snapshot.md)
 + [AWS::Redshift::SnapshotCopyGrant](aws-resource-redshift-snapshotcopygrant.md)

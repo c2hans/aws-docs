@@ -5,6 +5,9 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Sear
 # SearchInsights
 <a name="API_SearchInsights"></a>
 
+**Note**
+End of support notice: On September 30, 2027, AWS will end support for Amazon DevOps Guru. After September 30, 2027, you will no longer be able to access the Amazon DevOps Guru console or Amazon DevOps Guru resources. For more information, see [Amazon DevOps Guru end of support](https://docs.aws.amazon.com/devops-guru/latest/userguide/devops-guru-end-of-support.html).
+
  Returns a list of insights in your AWS account. You can specify which insights are returned by their start time, one or more statuses (`ONGOING` or `CLOSED`), one or more severities (`LOW`, `MEDIUM`, and `HIGH`), and type (`REACTIVE` or `PROACTIVE`).
 
  Use the `Filters` parameter to specify status and severity search parameters. Use the `Type` parameter to specify `REACTIVE` or `PROACTIVE` in your search.

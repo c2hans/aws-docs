@@ -113,7 +113,7 @@ This product uses services which are not currently available in all AWS Regions.
 
 Research and Engineering Studio on AWS is supported in the following AWS Regions:
 
-| Region name | Region | Previous versions | Latest version (2025.06.01) |
+| Region name | Region | Previous versions | Latest version (2025.09) |
 | --- | --- | --- | --- |
 | US East (N. Virginia)  | us-east-1 | yes | yes |
 | US East (Ohio)  | us-east-2 | yes | yes |

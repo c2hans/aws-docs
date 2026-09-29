@@ -50,6 +50,7 @@ The following data types are supported:
 +  [MetricStreamStatisticsConfiguration](API_MetricStreamStatisticsConfiguration.md)
 +  [MetricStreamStatisticsMetric](API_MetricStreamStatisticsMetric.md)
 +  [MuteTargets](API_MuteTargets.md)
++  [OTelEnrichmentMetricSelector](API_OTelEnrichmentMetricSelector.md)
 +  [PartialFailure](API_PartialFailure.md)
 +  [Range](API_Range.md)
 +  [ResourceMetricsConfiguration](API_ResourceMetricsConfiguration.md)

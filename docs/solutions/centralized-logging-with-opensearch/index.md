@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com//solutions/centralized-logging-with-open
 title: 'Centralized Logging with OpenSearch'
 canonical_url: https://docs.aws.amazon.com/solutions/centralized-logging-with-opensearch/
 source: aws-documentation
-generated_on: 2026-09-28
+generated_on: 2026-09-29
 ---
 
 # Centralized Logging with OpenSearch

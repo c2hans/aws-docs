@@ -5,6 +5,9 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-3/ug/create-de
 # Create a demo environment
 <a name="create-demo-env"></a>
 
+**Note**
+This demo environment is not supported in AWS GovCloud (US).
+
 Follow the steps in this section to try out Research and Engineering Studio on AWS. This demo deploys a non-production environment with a minimal set of parameters using the [ Research and Engineering Studio on AWS demo environment stack template](https://github.com/aws-samples/aws-hpc-recipes/blob/main/recipes/res/res_demo_env/assets/res-demo-stack.yaml). It uses a Keycloak server for SSO.
 
 Note that after you deploy the stack, you must follow the [Post deployment steps](#create-demo-env-post-deployment) below to set up users in the environment before you login.
@@ -61,7 +64,7 @@ Your AWS account has default quotas, formerly referred to as limits, for each AW
 **Note**
 Make sure you are in your administrator account.
 
-1. Launch [ the template](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?templateURL=https://s3.amazonaws.com/aws-hpc-recipes/main/recipes/res/res_demo_env/assets/res-demo-stack.yaml) in the console.
+1. Launch [ the template](https://console.aws.amazon.com/cloudformation/home#/stacks/quickcreate?templateURL=https%3A%2F%2Fs3.amazonaws.com%2Faws-hpc-recipes%2Fmain%2Frecipes%2Fres%2Fres_demo_env%2Fassets%2Fres-demo-stack.yaml) in the console.
 
 1. Under **Parameters**, review the parameters for this product template and modify them as necessary.
 

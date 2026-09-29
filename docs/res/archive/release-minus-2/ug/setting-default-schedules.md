@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/setting-default-schedules.html
 ---
 
-# Setting default schedules across the entire environment
+# Set default schedules across the entire environment
 <a name="setting-default-schedules"></a>
 
 The default schedule can be updated in [DynamoDB ](https://console.aws.amazon.com/dynamodbv2):

@@ -9,6 +9,49 @@ Enables enrichment and PromQL access for CloudWatch vended metrics for [supporte
 
 Before calling this operation, you must enable resource tags on telemetry for your account. For more information, see [Enable resource tags on telemetry](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/EnableResourceTagsOnTelemetry.html).
 
+Optionally, `IncludeFilters` and `ExcludeFilters` limit enrichment to a subset of the account's metrics. These filters are stored only when this operation starts enrichment. Calling `StartOTelEnrichment` for an account where enrichment is already running has no effect and does not modify the filters that are applied. To change them, use [UpdateOTelEnrichment](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_UpdateOTelEnrichment.html).
+
+## Request Parameters
+<a name="API_StartOTelEnrichment_RequestParameters"></a>
+
+ ** ExcludeFilters **
+The metric namespaces, and the metric names, to leave unenriched. If this parameter is omitted, nothing is excluded.
+Amazon CloudWatch applies `ExcludeFilters` after `IncludeFilters`, so a metric that both parameters match is not enriched.
+A maximum of 100 filters is allowed across `IncludeFilters` and `ExcludeFilters` combined.
+Type: Array of [OTelEnrichmentMetricSelector](API_OTelEnrichmentMetricSelector.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 100 items.
+Required: No
+
+ ** IncludeFilters **
+The metric namespaces, and the metric names, to enrich. If this parameter is omitted, every namespace that Amazon CloudWatch supports for enrichment is in scope.
+A maximum of 100 filters is allowed across `IncludeFilters` and `ExcludeFilters` combined.
+Type: Array of [OTelEnrichmentMetricSelector](API_OTelEnrichmentMetricSelector.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 100 items.
+Required: No
+
+## Response Elements
+<a name="API_StartOTelEnrichment_ResponseElements"></a>
+
+The following elements are returned by the service.
+
+ ** CreatedAt **
+The date and time that enrichment started for the account.
+Type: Timestamp
+
+ ** ExcludeFilters **
+The exclude filters that are stored for the account.
+Type: Array of [OTelEnrichmentMetricSelector](API_OTelEnrichmentMetricSelector.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 100 items.
+
+ ** IncludeFilters **
+The include filters that are stored for the account.
+Type: Array of [OTelEnrichmentMetricSelector](API_OTelEnrichmentMetricSelector.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 100 items.
+
+ ** UpdatedAt **
+The date and time that the enrichment configuration for the account was last stored.
+Type: Timestamp
+
 ## Errors
 <a name="API_StartOTelEnrichment_Errors"></a>
 

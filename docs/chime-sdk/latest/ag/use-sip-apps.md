@@ -5,6 +5,9 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/use-sip-apps.html
 # Using SIP media applications
 <a name="use-sip-apps"></a>
 
+**Note**
+Amazon Chime SDK SIP media applications will no longer be open to new customers starting October 29, 2026. If you would like to use SIP media applications, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see [SIP media applications service change](sip-applications-service-change.md).
+
 A SIP media application is a managed object that passes values from a SIP rule to a target AWS Lambda function. You can create, view, update, and delete SIP media applications. Be aware that you can view the details of any application, and other administrators can view your applications.
 
 **Note**

@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/managed-blockchain/latest/hyperledger-fabric-dev/managed-blockchain-proposals.html
 ---
 
+End of support notice: Amazon Managed Blockchain (AMB) will stop accepting new customers on October 29, 2026. Existing customers can continue using Amazon Managed Blockchain (AMB) until September 29, 2027. After September 29, 2027 you will no longer be able to access Amazon Managed Blockchain (AMB). For more information, see [Amazon Managed Blockchain (AMB) end of support](https://docs.aws.amazon.com/managed-blockchain/latest/hyperledger-fabric-dev/managed-blockchain-end-of-support.html).
+
 # Work with Proposals for a Hyperledger Fabric Network on Amazon Managed Blockchain (AMB)
 <a name="managed-blockchain-proposals"></a>
 
@@ -135,7 +137,7 @@ Proposals have one of the following statuses:
 You can use the AWS Management Console, the AWS CLI `vote-on-proposal` command, or the [VoteOnProposal](https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/API_VoteOnProposal.html) action of the AMB Access API to vote Yes or No on an active proposal. You cannot change a vote after you make it.
 
 ### To vote on a proposal using the AWS Management Console
-<a name="w2aac23c11b5b1"></a>
+<a name="w2aac27c11b5b1"></a>
 
 1. Open the AMB Access console at [https://console.aws.amazon.com/managedblockchain/](https://console.aws.amazon.com/managedblockchain/).
 
@@ -148,7 +150,7 @@ You can use the AWS Management Console, the AWS CLI `vote-on-proposal` command, 
 1. When prompted, choose **Confirm**.
 
 ### To vote on a proposal using the AWS CLI
-<a name="w2aac23c11b5b3"></a>
+<a name="w2aac27c11b5b3"></a>
 + Use the `vote-on-proposal` command as shown in the following example. Replace the values of `--network-id`, `--member-id`, and `--vote` as appropriate.
 
   ```
@@ -161,7 +163,7 @@ You can use the AWS Management Console, the AWS CLI `vote-on-proposal` command, 
 You can use the AWS Management Console, the AWS CLI, or the AMB Access API to create an invitation proposal.
 
 ### To create an invitation proposal using the AWS Management Console
-<a name="w2aac23c13b5b1"></a>
+<a name="w2aac27c13b5b1"></a>
 
 1. Open the AMB Access console at [https://console.aws.amazon.com/managedblockchain/](https://console.aws.amazon.com/managedblockchain/).
 
@@ -180,7 +182,7 @@ The member who submits the proposal must also vote on it. A Yes vote is not auto
 1. Choose **Create**.
 
 ### To create an invitation proposal using the AWS CLI
-<a name="w2aac23c13b5b3"></a>
+<a name="w2aac27c13b5b3"></a>
 + Type a command similar to the following. Replace the value of `Principal` with the AWS account ID that you want to invite. Replace the value of `--member-id` with the value for the member in your account that submits the proposal.
 
   ```
@@ -202,7 +204,7 @@ The member who submits the proposal must also vote on it. A Yes vote is not auto
 <a name="managed-blockchain-propose-removal"></a>
 
 ### To create a proposal to remove a member using the AWS Management Console
-<a name="w2aac23c15b5b1"></a>
+<a name="w2aac27c15b5b1"></a>
 
 1. Open the AMB Access console at [https://console.aws.amazon.com/managedblockchain/](https://console.aws.amazon.com/managedblockchain/).
 
@@ -219,7 +221,7 @@ The member who submits the proposal must also vote on it. A Yes vote is not auto
 1. For each member that you want to remove, enter the member ID in the space provided. Choose **Add** to enter additional members.
 
 ### To create a removal proposal using the AWS CLI
-<a name="w2aac23c15b5b3"></a>
+<a name="w2aac27c15b5b3"></a>
 + Type a command similar to the following. Replace the value of `Principal` with the AWS account ID that you want to invite. Replace the value of `--member-id` with the value for the member in your account that submits the proposal.
 
   ```

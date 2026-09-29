@@ -495,7 +495,7 @@ Scope the `AllowGetResourceOauth2TokenForOauthBasedSynchronization` statement to
                 {
                     "iam:PassedToService": "bedrock-agentcore.amazonaws.com"
                 },
-                "StringLike":
+                "ArnLike":
                 {
                     "iam:AssociatedResourceARN": "arn:aws:bedrock-agentcore:<region>:<account>:registry/*/record/*"
                 }
@@ -599,7 +599,7 @@ Scope the `AllowGetResourceOauth2TokenForOauthBasedSynchronization` statement to
                 {
                     "iam:PassedToService": "bedrock-agentcore.amazonaws.com"
                 },
-                "StringLike":
+                "ArnLike":
                 {
                     "iam:AssociatedResourceARN": "arn:aws:bedrock-agentcore:<region>:<account>:registry/*/record/*"
                 }

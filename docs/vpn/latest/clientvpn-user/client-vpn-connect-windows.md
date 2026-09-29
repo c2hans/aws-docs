@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-con
 # AWS Client VPN for Windows
 <a name="client-vpn-connect-windows"></a>
 
-These sections describe how to establish a VPN connection using the AWS provided client for Windows x64 and Windows Arm64 systems. You can download and install the client at [AWS Client VPN download](https://aws.amazon.com/vpn/client-vpn-download/). The AWS provided client does not support automatic updates.
+These sections describe how to establish a VPN connection using the AWS provided client for Windows x64 and Windows Arm64 systems. You can download and install the client at [AWS Client VPN download](https://aws.amazon.com/vpn/client-vpn-download/).
 
 ## Requirements
 <a name="client-vpn-connect-windows-req"></a>

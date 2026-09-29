@@ -59,7 +59,7 @@ We recommend using AWS Certificate Manager to generate a trusted certificate for
 | [Amazon Elastic File System](https://aws.amazon.com/efs/) | Core | Provides the /home file system for the file browser and VDI hosts, as well as shared external file systems. |
 | [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) | Core | Stores configuration data such as users, groups, projects, file systems, and component settings. |
 | [AWS Systems Manager](https://aws.amazon.com/systems-manager/) | Core | Stores documents for performing commands for VDI session management. |
-| [AWS Lambda](https://aws.amazon.com/lambda/) | Core | Supports product functionalities such as updating settings within the DynamoDB table, starting Active Directory sync workflows, and updating the prefix list. |
+| [AWS Lambda](https://aws.amazon.com/lambda/) | Core | Supports product functionalities such as updating settings within the DynamoDB table, starting Active Directory sync workflows, updating the prefix list, and VDI session management. |
 | [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/) | Supporting | Provides metrics and activity logs for all Amazon EC2 hosts and Lambda functions. |
 | [Amazon Simple Storage Service](https://aws.amazon.com/s3/) | Supporting | Stores application binaries for host bootstrapping and configuration. |
 | [AWS Key Management Service](https://aws.amazon.com/kms/) | Supporting | Used for encryption at rest with Amazon SQS queues, DynamoDB tables, and Amazon SNS topics. |

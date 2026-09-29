@@ -16,6 +16,8 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::Wisdom::AIPromptVersion](aws-resource-wisdom-aipromptversion.md)
 + [AWS::Wisdom::Assistant](aws-resource-wisdom-assistant.md)
 + [AWS::Wisdom::AssistantAssociation](aws-resource-wisdom-assistantassociation.md)
++ [AWS::Wisdom::Content](aws-resource-wisdom-content.md)
++ [AWS::Wisdom::ContentAssociation](aws-resource-wisdom-contentassociation.md)
 + [AWS::Wisdom::KnowledgeBase](aws-resource-wisdom-knowledgebase.md)
 + [AWS::Wisdom::MessageTemplate](aws-resource-wisdom-messagetemplate.md)
 + [AWS::Wisdom::MessageTemplateVersion](aws-resource-wisdom-messagetemplateversion.md)

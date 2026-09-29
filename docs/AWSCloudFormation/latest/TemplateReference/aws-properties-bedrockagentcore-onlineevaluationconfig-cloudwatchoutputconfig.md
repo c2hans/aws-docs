@@ -19,7 +19,9 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
-  "[LogGroupName](#cfn-bedrockagentcore-onlineevaluationconfig-cloudwatchoutputconfig-loggroupname)" : {{String}}
+  "[LogGroupName](#cfn-bedrockagentcore-onlineevaluationconfig-cloudwatchoutputconfig-loggroupname)" : {{String}},
+  "[MetricsNamespace](#cfn-bedrockagentcore-onlineevaluationconfig-cloudwatchoutputconfig-metricsnamespace)" : {{String}},
+  "[ResultDestination](#cfn-bedrockagentcore-onlineevaluationconfig-cloudwatchoutputconfig-resultdestination)" : {{String}}
 }
 ```
 
@@ -28,6 +30,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [LogGroupName](#cfn-bedrockagentcore-onlineevaluationconfig-cloudwatchoutputconfig-loggroupname): {{String}}
+  [MetricsNamespace](#cfn-bedrockagentcore-onlineevaluationconfig-cloudwatchoutputconfig-metricsnamespace): {{String}}
+  [ResultDestination](#cfn-bedrockagentcore-onlineevaluationconfig-cloudwatchoutputconfig-resultdestination): {{String}}
 ```
 
 ## Properties
@@ -37,4 +41,23 @@ To declare this entity in your CloudFormation template, use the following syntax
  The name of the CloudWatch log group where evaluation results will be written. The log group will be created if it doesn't exist.
 *Required*: No
 *Type*: String
+*Pattern*: `^[.\-_/#A-Za-z0-9]+$`
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`MetricsNamespace`  <a name="cfn-bedrockagentcore-onlineevaluationconfig-cloudwatchoutputconfig-metricsnamespace"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9._#/:-]+$`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ResultDestination`  <a name="cfn-bedrockagentcore-onlineevaluationconfig-cloudwatchoutputconfig-resultdestination"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `DEDICATED_LOG_GROUP | SOURCE_LOG_GROUP`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

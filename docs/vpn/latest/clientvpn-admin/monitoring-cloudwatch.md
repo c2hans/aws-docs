@@ -19,7 +19,7 @@ AWS Client VPN publishes the following metrics to Amazon CloudWatch for your Cli
 | IngressPackets | The number of packets received by the Client VPN endpoint.<br />Units: Count |
 | SelfServicePortalClientConfigurationDownloads | The number of downloads of the Client VPN endpoint configuration file from the self-service portal.<br />Unit: Count |
 
-AWS Client VPN publishes the following [posture assessment](connection-authorization.md#connection-authorization-posture-assessment) metrics for your Client VPN endpoints.
+AWS Client VPN publishes the following authorization metrics for your Client VPN endpoints. These cover two separate authorization mechanisms. The [custom connection authorization](connection-authorization.md#connection-authorization-posture-assessment) metrics (prefixed `ClientConnectHandler`) apply to the Lambda-based client connect handler. The authorization policy metrics (prefixed `AuthorizationPolicy`) apply to Cedar-based authorization policies. The two sets of metrics are reported independently.
 
 | Metric | Description |
 | --- | --- |
@@ -29,6 +29,9 @@ AWS Client VPN publishes the following [posture assessment](connection-authoriza
 | ClientConnectHandlerThrottlingErrors | The number of throttling errors on invoking the client connect handler for connections to the Client VPN endpoint.<br />Units: Count |
 | ClientConnectHandlerDeniedConnections | The number of connections denied by the client connect handler for connections to the Client VPN endpoint.<br />Units: Count |
 | ClientConnectHandlerFailedServiceErrors | The number of service side errors while running the client connect handler for connections to the Client VPN endpoint.<br />Units: Count |
+| AuthorizationPolicyDeniedConnections | The number of connections denied by the authorization policy for the Client VPN endpoint.<br />Units: Count |
+| AuthorizationPolicyEvaluationCount | The number of authorization policy evaluations performed for the Client VPN endpoint.<br />Units: Count |
+| AuthorizationPolicyTerminatedConnections | The number of sessions terminated by a periodic re-evaluation of the authorization policy for the Client VPN endpoint.<br />Units: Count |
 
 You can filter the metrics for your Client VPN endpoint by endpoint.
 

@@ -9,4 +9,4 @@ With Service Quotas, you can view and manage your quotas easily as your AWS work
 
 You need AWS CLI version 2.13.20 or higher to view and manage resource-level quotas such as `Instances per domain` for Amazon OpenSearch Service.
 
-This document was last published on September 28, 2026.
+This document was last published on September 29, 2026.

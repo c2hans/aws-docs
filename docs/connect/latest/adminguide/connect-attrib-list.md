@@ -27,7 +27,7 @@ The JSONPath reference for each attribute is provided so you can [create dynamic
 + [External tool attributes](#external-tool-attributes)
 + [User-defined attributes](#user-defined-attributes)
 + [Flow attributes](#flow-attributes)
-+ [Loop Attributes](#w2aac18c54b9c43)
++ [Loop Attributes](#w2aac20c54b9c43)
 + [Flow modules attributes](#flow-modules-attributes)
 + [Data Table attributes](#data-table-attributes)
 + [Apple Messages for Business attributes](#apple-messages-for-business-attributes)
@@ -325,7 +325,7 @@ Flow attributes are like a type user-defined attribute, however, they are restri
 
 Flow attributes are useful in situations where you don't want to persist the data throughout the contact, such as when you need to use sensitive information like the customer's credit card number to do a Lambda data dip.
 + Flow attributes are temporary variables stored locally and only used in the flow. They aren't visible anywhere outside the flow, not even when the contact is transferred to another flow.
-+ They can be up to 32 KB (the maximum size of the contact record attributes section).
++ They can be up to 64 KB.
 + They aren't passed to a Lambda unless they are explicitly configured as parameters: in the **Invoke AWS Lambda function** block, choose **Add a parameter**.
 + They aren't passed to modules. You can set a flow attribute within a module, but it won't be passed out of the module.
 + They don't appear in the contact record.
@@ -338,7 +338,7 @@ Flow attributes are useful in situations where you don't want to persist the dat
 | Any name you choose | A flow attribute has two parts:+  Destination key: this is any name you choose for the key. However, the **$** and **.** (period) characters are not allowed because they are both used in defining the attribute paths in JSONPath. <br />+  Value: this is can be any value you choose.  | Flow | $.FlowAttributes.*name\_of\_your\_destination\_key* |
 
 ## Loop Attributes
-<a name="w2aac18c54b9c43"></a>
+<a name="w2aac20c54b9c43"></a>
 
 The following table lists the attributes that are available with the Loop block if a LoopName is specified in the Loop block.
 
@@ -388,7 +388,7 @@ Attributes returned when using the List action in a Data Table block to retrieve
 + The list returns complete records (all attributes), not just selected ones.
 + If no matching records are found, the primaryKeyGroups array will be empty.
 + When no primary key group is configured, the entire table is loaded and results are accessible under a "default" group name: `$.DataTableList.ResultData.primaryKeyGroups.default[index]`.
-+ The List namespace has a maximum data limit of 32 KB.
++ The List namespace has a maximum data limit of 64 KB.
 + When accessing array elements in flow blocks, use backticks to wrap the JSONPath reference: ``$.DataTableList.ResultData.primaryKeyGroups.<GroupName>[index]``
 
 | Attribute | Description | Type | JSONPath Reference |

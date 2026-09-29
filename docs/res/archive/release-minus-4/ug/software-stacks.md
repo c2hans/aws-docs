@@ -22,6 +22,9 @@ From the Software Stacks page, you can configure Amazon Machine Images (AMIs) or
 
 The **Register Software Stack** button lets you create a new stack:
 
+**Note**
+You can use an unencrypted Systems Manager parameter as an alias for the software stack ID.
+
 1. Choose **Register Software Stack**.
 
 1. Enter details for the new software stack.

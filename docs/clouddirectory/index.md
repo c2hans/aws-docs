@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/clouddirectory/index.html
 title: 'Amazon Cloud Directory Documentation'
 canonical_url: https://docs.aws.amazon.com/clouddirectory/
 source: aws-documentation
-generated_on: 2026-09-28
+generated_on: 2026-09-29
 ---
 
 # Amazon Cloud Directory Documentation

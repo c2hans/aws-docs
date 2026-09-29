@@ -77,6 +77,7 @@ The connection type used for connecting to an Amazon EC2 environment. Valid valu
 The description of the environment to create.
 *Required*: No
 *Type*: String
+*Minimum*: `1`
 *Maximum*: `200`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
@@ -94,14 +95,14 @@ Since Ubuntu 18.04 has ended standard support as of May 31, 2023, we recommend y
 + Amazon Linux 2023 (recommended): `resolve:ssm:/aws/service/cloud9/amis/amazonlinux-2023-x86_64`
 + Ubuntu 18.04: `resolve:ssm:/aws/service/cloud9/amis/ubuntu-18.04-x86_64`
 + Ubuntu 22.04: `resolve:ssm:/aws/service/cloud9/amis/ubuntu-22.04-x86_64`
-*Required*: Yes
+*Required*: No
 *Type*: String
 *Maximum*: `512`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `InstanceType`  <a name="cfn-cloud9-environmentec2-instancetype"></a>
 The type of instance to connect to the environment (for example, `t2.micro`).
-*Required*: Yes
+*Required*: No
 *Type*: String
 *Pattern*: `^[a-z]+[1-9][.][a-z0-9]+$`
 *Minimum*: `5`
@@ -112,6 +113,8 @@ The type of instance to connect to the environment (for example, `t2.micro`).
 The name of the environment.
 *Required*: No
 *Type*: String
+*Minimum*: `1`
+*Maximum*: `60`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `OwnerArn`  <a name="cfn-cloud9-environmentec2-ownerarn"></a>
@@ -140,7 +143,6 @@ The ID of the subnet in Amazon Virtual Private Cloud (Amazon VPC) that AWS Cloud
 An array of key-value pairs that will be associated with the new AWS Cloud9 development environment.
 *Required*: No
 *Type*: Array of [Tag](aws-properties-cloud9-environmentec2-tag.md)
-*Minimum*: `0`
 *Maximum*: `200`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
@@ -166,6 +168,9 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 
 `Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the development environment, such as `arn:aws:cloud9:us-east-2:123456789012:environment:2bc3642873c342e485f7e0c561234567`.
+
+`EnvironmentId`  <a name="EnvironmentId-fn::getatt"></a>
+The ID of the environment.
 
 `Name`  <a name="Name-fn::getatt"></a>
 The name of the environment.

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/index-propert
 # Index property: hidden
 <a name="index-property-hidden"></a>
 
-Amazon DocumentDB supports the `hidden` index property beginning with Amazon DocumentDB 8.0.1.
+Amazon DocumentDB supports the `hidden` index property beginning with Amazon DocumentDB 8.0.1\+ and Amazon DocumentDB 5.0.2\+.
 
 Hidden indexes are not visible to the query planner and cannot be used to support a query. By hiding an index from the planner, you can evaluate the potential impact of dropping the index without actually dropping it. If the impact is negative, you can unhide the index instead of having to recreate a dropped index.
 

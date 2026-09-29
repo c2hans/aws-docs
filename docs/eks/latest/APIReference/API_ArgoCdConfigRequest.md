@@ -15,6 +15,13 @@ Configuration for IAM Identity CenterIAM; Identity Center integration. When conf
 Type: [ArgoCdAwsIdcConfigRequest](API_ArgoCdAwsIdcConfigRequest.md) object
 Required: Yes
 
+ ** endpointPrefix **   <a name="AmazonEKS-Type-ArgoCdConfigRequest-endpointPrefix"></a>
+An optional prefix used to construct the hostname of the Argo CD server endpoint. If not specified, Amazon EKS automatically generates the endpoint. This value can't be changed after the capability is created.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 50.
+Pattern: `^[a-z0-9]([a-z0-9-]*[a-z0-9])?$`
+Required: No
+
  ** namespace **   <a name="AmazonEKS-Type-ArgoCdConfigRequest-namespace"></a>
 The Kubernetes namespace where Argo CD resources will be created. If not specified, the default namespace is used.
 Type: String

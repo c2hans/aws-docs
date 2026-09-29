@@ -121,7 +121,7 @@ The details for the Amazon EKS cluster that supports the compute environment.
 To create a compute environment that uses EKS resources, the caller must have permissions to call `eks:DescribeCluster`.
 *Required*: No
 *Type*: [EksConfiguration](aws-properties-batch-computeenvironment-eksconfiguration.md)
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ReplaceComputeEnvironment`  <a name="cfn-batch-computeenvironment-replacecomputeenvironment"></a>
 Specifies whether the compute environment is replaced if an update is made that requires replacing the instances in the compute environment. The default value is `true`. To enable more properties to be updated, set this property to `false`. When changing the value of this property to `false`, do not change any other properties at the same time. If other properties are changed at the same time, and the change needs to be rolled back but it can't, it's possible for the stack to go into the `UPDATE_ROLLBACK_FAILED` state. You can't update a stack that is in the `UPDATE_ROLLBACK_FAILED` state. However, if you can continue to roll it back, you can return the stack to its original settings and then try to update it again. For more information, see [Continue rolling back an update](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-continueupdaterollback.html) in the *AWS CloudFormation User Guide*.
@@ -202,6 +202,9 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 
 `ComputeEnvironmentArn`  <a name="ComputeEnvironmentArn-fn::getatt"></a>
 Returns the compute environment ARN, such as `arn:aws:batch:us-east-1:111122223333:compute-environment/ComputeEnvironmentName`.
+
+`EksConfiguration.AccessEntry.Status`  <a name="EksConfiguration.AccessEntry.Status-fn::getatt"></a>
+The current status of the compute environment (for example, `CREATING` or `VALID`).
 
 ## Examples
 <a name="aws-resource-batch-computeenvironment--examples"></a>

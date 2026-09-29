@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/schedule-individual-desktops.html
 ---
 
-# Setting individual desktop schedules
+# Set individual desktop schedules
 <a name="schedule-individual-desktops"></a>
 
 1. Choose **Actions**.

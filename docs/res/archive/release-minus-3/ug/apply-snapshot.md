@@ -24,7 +24,6 @@ If the new environment is not as expected or fails, you can check the CloudWatch
 1. Add the following statement to the bucket policy. Replace these values with your own:
    + {{111122223333}} -> your AWS Account ID
    + {{{RES\_ENVIRONMENT\_NAME}}} -> your RES environment name
-   + {{us-east-1}} -> your AWS region
    + {{amzn-s3-demo-bucket}} -> your S3 bucket name
 
 ------

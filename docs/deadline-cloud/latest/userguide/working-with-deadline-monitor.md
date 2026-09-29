@@ -25,6 +25,7 @@ The Deadline Cloud monitor also helps you monitor usage and manage costs. For mo
 + [Monitors and farms in multiple Regions](monitors-additional-regions.md)
 + [Share the Deadline Cloud monitor URL](share-monitor-url.md)
 + [Open the Deadline Cloud monitor](open-deadline-cloud-monitor.md)
++ [Sign in to the desktop monitor with the AWS Management Console or an AWS profile](monitor-sign-in-aws-credentials.md)
 + [Submit a job bundle](submit-job-bundle-monitor.md)
 + [View queue and fleet details in Deadline Cloud](view-queue-and-fleet.md)
 + [Manage jobs, steps, and tasks in Deadline Cloud](view-jobs-steps-tasks.md)

@@ -10,8 +10,8 @@ File browser allows you to access the global shared EFS filesystem through the w
 ![File browser](https://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-filebrowser.jpg)
 
 **Topics**
-+ [Upload file(s)](upload-file.md)
-+ [Delete file(s)](delete-file.md)
++ [Upload files](upload-file.md)
++ [Delete files](delete-file.md)
 + [Manage favorites](manage-favorites.md)
 + [Edit files](edit-files.md)
 + [Transfer files](transfer-files.md)

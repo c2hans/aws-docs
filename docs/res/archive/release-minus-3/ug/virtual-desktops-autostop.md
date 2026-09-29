@@ -10,6 +10,8 @@ Administrators can configure settings to allow idle VDIs to be Stopped or Termin
 1. Idle Timeout: Sessions idle for this time with CPU utilization below the threshold will time out.
 
 1. CPU Utilization Threshold: Sessions with no interaction and under this threshold (vCPU usage) are considered idle. If this is set to 0, then sessions will never be considered idle.
+**Important**
+RES runs an idle detection script at the top of every minute that checks CPU utilization. This script itself causes temporary CPU spikes, which can prevent idle detection if your threshold is set too low.
 
 1. Transition State: After idle timeout, sessions will transition to this state (stopped or terminated).
 

@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Transfer::Connector ConnectorAsyncMdnConfig
 <a name="aws-properties-transfer-connector-connectorasyncmdnconfig"></a>
 
-<a name="aws-properties-transfer-connector-connectorasyncmdnconfig-description"></a>The `ConnectorAsyncMdnConfig` property type specifies Property description not available. for an [AWS::Transfer::Connector](aws-resource-transfer-connector.md).
+Contains the configuration details for asynchronous Message Disposition Notification (MDN) responses in AS2 connectors. This configuration specifies where asynchronous MDN responses should be sent and which servers should handle them.
 
 ## Syntax
 <a name="aws-properties-transfer-connector-connectorasyncmdnconfig-syntax"></a>
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-transfer-connector-connectorasyncmdnconfig-properties"></a>
 
 `ServerIds`  <a name="cfn-transfer-connector-connectorasyncmdnconfig-serverids"></a>
-Property description not available.
+A list of server identifiers that can handle asynchronous MDN responses. You can specify between 1 and 10 server IDs.
 *Required*: Yes
 *Type*: Array of String
 *Minimum*: `1`
@@ -45,7 +45,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Url`  <a name="cfn-transfer-connector-connectorasyncmdnconfig-url"></a>
-Property description not available.
+The URL endpoint where asynchronous MDN responses should be sent.
 *Required*: Yes
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

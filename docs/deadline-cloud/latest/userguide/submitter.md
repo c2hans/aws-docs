@@ -153,7 +153,7 @@ DeadlineCloudMonitor_x64-setup.exe /S /D={InstallDirectory}
 
 **To install Deadline Cloud monitor AppImage on RPM or Debian distros**
 **Note**
-Deadline Cloud monitor requires GLIBC 2.34 or later. On Ubuntu 22 machines, install the Debian package instead of the AppImage. For instructions, see the **Linux (Debian)** tab.
+Deadline Cloud monitor requires GLIBC 2.34 or later. On Ubuntu 22.04, the AppImage can't make secure (TLS) connections, so profiles fail to load and the monitor shows a warning at startup. Install the Debian package instead of the AppImage. For instructions, see the **Linux (Debian)** tab.
 
 1. Download the Deadline Cloud monitor AppImage:
 

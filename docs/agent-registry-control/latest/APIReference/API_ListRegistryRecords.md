@@ -75,6 +75,7 @@ Content-type: application/json
          "createdAt": "string",
          "createdBy": "string",
          "createdByAutoDetection": boolean,
+         "customMetadataSchemaComplianceStatus": "string",
          "description": "string",
          "displayName": "string",
          "name": "string",

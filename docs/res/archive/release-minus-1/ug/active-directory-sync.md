@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-1/ug/active-di
 ## Runtime Configuration
 <a name="active-directory-sync-runtime"></a>
 
-All the CFN parameters related to Active Directory (AD) are optional during installation.
+All the AWS CloudFormation parameters related to Active Directory (AD) are optional during installation.
 
 ![Active directory optional details](https://docs.aws.amazon.com/res/archive/release-minus-1/ug/images/active-directory-details.png)
 
@@ -90,7 +90,7 @@ You can also check the AD sync status and the latest sync time in the **Active D
 ## How to manually run the sync (release 2024.12 and 2024.12.01)
 <a name="active-directory-sync-manually"></a>
 
-The Active Directory synchronization process has been moved from the Cluster Manager infra host to a one-off Amazon Elastic Container Service (ECS) task behind the scenes. The process is scheduled to run every hour and you can find a running ECS task in the Amazon ECS console under the `{{<res-environment-name>}}-ad-sync-cluster` cluster while it is in progress.
+The Active Directory synchronization process has been moved from the Cluster Manager infra host to a one-off Amazon Elastic Container Service (ECS) task in the background. The process is scheduled to run every hour and you can find a running ECS task in the Amazon ECS console under the `{{<res-environment-name>}}-ad-sync-cluster` cluster while it is in progress.
 
 **To launch it manually:**
 
@@ -112,9 +112,9 @@ The Active Directory synchronization process has been moved from the Cluster Man
 
 **Note**
 If you change the AD parameters or add AD filters, RES will add the new users given the newly specified parameters and remove users that were previously synced and are no longer included in the LDAP search space.
-RES cannot remove a user/group that is actively assigned to a project. You must remove users from projects in order to have RES remove them from the environment.
+RES cannot remove a user or group that is actively assigned to a project. You must remove users from projects in order to have RES remove them from the environment.
 
 ## SSO configuration
 <a name="active-directory-sync-sso-config"></a>
 
-After AD configuration is provided, users must set up Single Sign-On (SSO) to be able to login to the RES web portal as an AD user. SSO configuration has been moved from the **General Settings** page to the new **Identity management** page. For more information about setting up SSO, see [Identity management](manage-users.md).
+After AD configuration is provided, users must set up Single Sign-On (SSO) to be able to log in to the RES web portal as an AD user. SSO configuration has been moved from the **General Settings** page to the new **Identity management** page. For more information about setting up SSO, see [Identity management](manage-users.md).

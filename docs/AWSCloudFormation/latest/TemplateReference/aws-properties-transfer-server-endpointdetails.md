@@ -73,7 +73,7 @@ You can edit the `SecurityGroupIds` property in the [UpdateServer](https://docs.
 
 `SubnetIds`  <a name="cfn-transfer-server-endpointdetails-subnetids"></a>
 A list of subnet IDs that are required to host your server endpoint in your VPC.
- This property can only be set when `EndpointType` is set to `VPC` .
+This property can only be set when `EndpointType` is set to `VPC`.
 *Required*: No
 *Type*: Array of String
 *Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)

@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[AtRestEncryptionEnabled](#cfn-appsync-apicache-atrestencryptionenabled)" : {{Boolean}},
       "[HealthMetricsConfig](#cfn-appsync-apicache-healthmetricsconfig)" : {{String}},
       "[TransitEncryptionEnabled](#cfn-appsync-apicache-transitencryptionenabled)" : {{Boolean}},
-      "[Ttl](#cfn-appsync-apicache-ttl)" : {{Number}},
+      "[Ttl](#cfn-appsync-apicache-ttl)" : {{Integer}},
       "[Type](#cfn-appsync-apicache-type)" : {{String}}
     }
 }
@@ -43,7 +43,7 @@ Properties:
   [AtRestEncryptionEnabled](#cfn-appsync-apicache-atrestencryptionenabled): {{Boolean}}
   [HealthMetricsConfig](#cfn-appsync-apicache-healthmetricsconfig): {{String}}
   [TransitEncryptionEnabled](#cfn-appsync-apicache-transitencryptionenabled): {{Boolean}}
-  [Ttl](#cfn-appsync-apicache-ttl): {{Number}}
+  [Ttl](#cfn-appsync-apicache-ttl): {{Integer}}
   [Type](#cfn-appsync-apicache-type): {{String}}
 ```
 
@@ -71,7 +71,7 @@ The GraphQL API ID.
 At-rest encryption flag for cache. You cannot update this setting after creation.
 *Required*: No
 *Type*: Boolean
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `HealthMetricsConfig`  <a name="cfn-appsync-apicache-healthmetricsconfig"></a>
 Controls how cache health metrics will be emitted to CloudWatch. Cache health metrics include:
@@ -87,13 +87,13 @@ Metrics will be recorded by API ID. You can set the value to `ENABLED` or `DISAB
 Transit encryption flag when connecting to cache. You cannot update this setting after creation.
 *Required*: No
 *Type*: Boolean
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Ttl`  <a name="cfn-appsync-apicache-ttl"></a>
 TTL in seconds for cache entries.
 Valid values are 1–3,600 seconds.
 *Required*: Yes
-*Type*: Number
+*Type*: Integer
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Type`  <a name="cfn-appsync-apicache-type"></a>

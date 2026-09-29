@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/building-a-containerized-and-s
 title: 'Guidance for Building a Containerized and Scalable Web Application on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/building-a-containerized-and-scalable-web-application-on-aws/
 source: aws-documentation
-generated_on: 2026-09-28
+generated_on: 2026-09-29
 ---
 
 # Guidance for Building a Containerized and Scalable Web Application on AWS

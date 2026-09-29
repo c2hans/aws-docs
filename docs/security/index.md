@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/security/index.html
 title: 'AWS Security Documentation'
 canonical_url: https://docs.aws.amazon.com/
 source: aws-documentation
-generated_on: 2026-09-28
+generated_on: 2026-09-29
 ---
 
 # AWS Security Documentation

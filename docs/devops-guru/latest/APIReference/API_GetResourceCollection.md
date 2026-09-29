@@ -5,6 +5,9 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_GetR
 # GetResourceCollection
 <a name="API_GetResourceCollection"></a>
 
+**Note**
+End of support notice: On September 30, 2027, AWS will end support for Amazon DevOps Guru. After September 30, 2027, you will no longer be able to access the Amazon DevOps Guru console or Amazon DevOps Guru resources. For more information, see [Amazon DevOps Guru end of support](https://docs.aws.amazon.com/devops-guru/latest/userguide/devops-guru-end-of-support.html).
+
  Returns lists of AWS resources that are of the specified resource collection type. The two types of AWS resource collections supported are AWS CloudFormation stacks and AWS resources that contain the same AWS tag. DevOps Guru can be configured to analyze the AWS resources that are defined in the stacks or that are tagged using the same tag *key*. You can specify up to 1000 AWS CloudFormation stacks.
 
 ## Request Syntax

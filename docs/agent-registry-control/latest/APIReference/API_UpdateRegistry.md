@@ -26,6 +26,17 @@ Content-type: application/json
          "scope": "{{string}}"
       }
    },
+   "customMetadataSchemaConfiguration": {
+      "optionalValue": {
+         "defaultSchema": "{{string}}",
+         "recordTypeSchemaOverrides": [
+            {
+               "recordType": "{{string}}",
+               "schema": "{{string}}"
+            }
+         ]
+      }
+   },
    "description": {
       "optionalValue": "{{string}}"
    },
@@ -62,6 +73,11 @@ Required: No
  ** [autoDetectionConfiguration](#API_UpdateRegistry_RequestSyntax) **   <a name="agentregistrycontrol-UpdateRegistry-request-autoDetectionConfiguration"></a>
 The updated auto-detection configuration for the registry, with PATCH semantics. Omit this field to leave the current configuration unchanged. Supply an empty wrapper to unset it. Supply `optionalValue` to replace it.
 Type: [UpdatedAutoDetectionConfiguration](API_UpdatedAutoDetectionConfiguration.md) object
+Required: No
+
+ ** [customMetadataSchemaConfiguration](#API_UpdateRegistry_RequestSyntax) **   <a name="agentregistrycontrol-UpdateRegistry-request-customMetadataSchemaConfiguration"></a>
+Updated custom metadata schema configuration for the registry. Omit to leave the existing schema unchanged. Schema evolution is additive only: you can add properties and enum values, but you cannot remove properties, change property types or formats, add or remove enum constraints, or remove record type overrides.
+Type: [UpdatedCustomMetadataSchemaConfiguration](API_UpdatedCustomMetadataSchemaConfiguration.md) object
 Required: No
 
  ** [description](#API_UpdateRegistry_RequestSyntax) **   <a name="agentregistrycontrol-UpdateRegistry-request-description"></a>
@@ -101,6 +117,15 @@ Content-type: application/json
       "statusReason": "string"
    },
    "createdAt": "string",
+   "customMetadataSchemaConfiguration": {
+      "defaultSchema": "string",
+      "recordTypeSchemaOverrides": [
+         {
+            "recordType": "string",
+            "schema": "string"
+         }
+      ]
+   },
    "description": "string",
    "discoveryConfiguration": {
       "authorizerConfiguration": { ... },
@@ -136,6 +161,10 @@ Type: [AutoDetection](API_AutoDetection.md) object
  ** [createdAt](#API_UpdateRegistry_ResponseSyntax) **   <a name="agentregistrycontrol-UpdateRegistry-response-createdAt"></a>
 The timestamp when the registry was created
 Type: Timestamp
+
+ ** [customMetadataSchemaConfiguration](#API_UpdateRegistry_ResponseSyntax) **   <a name="agentregistrycontrol-UpdateRegistry-response-customMetadataSchemaConfiguration"></a>
+The custom metadata schema configuration for this registry, if one has been defined.
+Type: [CustomMetadataSchemaConfiguration](API_CustomMetadataSchemaConfiguration.md) object
 
  ** [description](#API_UpdateRegistry_ResponseSyntax) **   <a name="agentregistrycontrol-UpdateRegistry-response-description"></a>
 The description of the registry

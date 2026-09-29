@@ -19,6 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[AccessEntry](#cfn-batch-computeenvironment-eksconfiguration-accessentry)" : {{EksAccessEntry}},
   "[EksClusterArn](#cfn-batch-computeenvironment-eksconfiguration-eksclusterarn)" : {{String}},
   "[KubernetesNamespace](#cfn-batch-computeenvironment-eksconfiguration-kubernetesnamespace)" : {{String}}
 }
@@ -28,12 +29,20 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-batch-computeenvironment-eksconfiguration-syntax.yaml"></a>
 
 ```
+  [AccessEntry](#cfn-batch-computeenvironment-eksconfiguration-accessentry): {{
+    EksAccessEntry}}
   [EksClusterArn](#cfn-batch-computeenvironment-eksconfiguration-eksclusterarn): {{String}}
   [KubernetesNamespace](#cfn-batch-computeenvironment-eksconfiguration-kubernetesnamespace): {{String}}
 ```
 
 ## Properties
 <a name="aws-properties-batch-computeenvironment-eksconfiguration-properties"></a>
+
+`AccessEntry`  <a name="cfn-batch-computeenvironment-eksconfiguration-accessentry"></a>
+Property description not available.
+*Required*: No
+*Type*: [EksAccessEntry](aws-properties-batch-computeenvironment-eksaccessentry.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `EksClusterArn`  <a name="cfn-batch-computeenvironment-eksconfiguration-eksclusterarn"></a>
 The Amazon Resource Name (ARN) of the Amazon EKS cluster. An example is `arn:aws:eks:us-east-1:123456789012:cluster/ClusterForBatch`.

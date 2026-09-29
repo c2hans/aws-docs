@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/clickstream-analytics-on-aws/i
 title: 'Guidance for Clickstream Analytics on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/clickstream-analytics-on-aws/
 source: aws-documentation
-generated_on: 2026-09-28
+generated_on: 2026-09-29
 ---
 
 # Guidance for Clickstream Analytics on AWS

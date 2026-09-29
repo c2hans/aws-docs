@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/index.html
 title: 'ExpressLink Documentation'
 canonical_url: https://docs.aws.amazon.com/iot-expresslink/
 source: aws-documentation
-generated_on: 2026-09-28
+generated_on: 2026-09-29
 ---
 
 # ExpressLink Documentation

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-1/ug/disable-p
 
 To disable a project:
 
-1. Select a project in the project list.
+1. Choose a project in the project list.
 
 1. From the **Actions** menu, choose **Disable Project**.
 ![Projects page showing actions menu dropdown options](https://docs.aws.amazon.com/res/archive/release-minus-1/ug/images/res-disable-project1.png)

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/cognizants-apex-quality-manage
 title: 'Guidance for Cognizant''s APEx Quality Management through Computer Vision on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/cognizants-apex-quality-management-through-computer-vision-on-aws/
 source: aws-documentation
-generated_on: 2026-09-28
+generated_on: 2026-09-29
 ---
 
 # Guidance for Cognizant's APEx Quality Management through Computer Vision on AWS

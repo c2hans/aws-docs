@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/scheduling-batch-jobs-for-aws-
 title: 'Guidance for Scheduling Batch Jobs for AWS Mainframe Modernization'
 canonical_url: https://docs.aws.amazon.com/solutions/scheduling-batch-jobs-for-aws-mainframe-modernization/
 source: aws-documentation
-generated_on: 2026-09-28
+generated_on: 2026-09-29
 ---
 
 # Guidance for Scheduling Batch Jobs for AWS Mainframe Modernization

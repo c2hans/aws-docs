@@ -7,4 +7,4 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/Welcome.htm
 
 The Nova Act service provides a REST API for managing AI-powered workflow automation. It enables users to create workflow definitions, execute workflow runs, manage sessions, and orchestrate acts (individual AI tasks) with tool integrations.
 
-This document was last published on September 28, 2026.
+This document was last published on September 29, 2026.

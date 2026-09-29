@@ -9,7 +9,7 @@ You can use the `GetMetricData` API to retrieve CloudWatch metric values. The op
 
 A `GetMetricData` operation that does not include a query can retrieve as many as 500 different metrics in a single request, with a total of as many as 100,800 data points. You can also optionally perform metric math expressions on the values of the returned statistics, to create new time series that represent new insights into your data. For example, using Lambda metrics, you could divide the Errors metric by the Invocations metric to get an error rate time series. For more information about metric math expressions, see [Metric Math Syntax and Functions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/using-metric-math.html#metric-math-syntax) in the *Amazon CloudWatch User Guide*.
 
-If you include a Metrics Insights query, each `GetMetricData` operation can include only one query. But the same `GetMetricData` operation can also retrieve other metrics. Metrics Insights queries can query only the most recent three hours of metric data. For more information about Metrics Insights, see [Query your metrics with CloudWatch Metrics Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/query_with_cloudwatch-metrics-insights.html).
+If you include a Metrics Insights query, each `GetMetricData` operation can include only one query. But the same `GetMetricData` operation can also retrieve other metrics. Metrics Insights queries can query the most recent two weeks of metric data. For alarm condition evaluations, Metrics Insights queries can query only the most recent three hours of metric data. For more information about Metrics Insights, see [Query your metrics with CloudWatch Metrics Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/query_with_cloudwatch-metrics-insights.html).
 
 Calls to the `GetMetricData` API have a different pricing structure than calls to `GetMetricStatistics`. For more information about pricing, see [Amazon CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/).
 
@@ -206,14 +206,14 @@ The following example includes a Metrics Insights query for that is given the ID
 {
     "StartTime": 1518867432,
     "EndTime": 1518868032,
-    "MetricQueries": [
+    "MetricDataQueries": [
         {
             "Id": "availability",
             "Expression": "(1 - error_rate) * 100",
             "Label": "Availability"
         },
         {
-            "Id": " error_rate",
+            "Id": "error_rate",
             "Expression": "SELECT AVG(ErrorRate) FROM MyService",
             "Period": 300,
             "ReturnData": false
@@ -335,7 +335,7 @@ The following example requests three separate metrics across two namespaces. The
     {
       "Id": "m3",
       "StatusCode": "Complete",
-      "Label": "AWS/EC2 HealthyHostCount",
+      "Label": "AWS/ELB HealthyHostCount",
       "Timestamps": [
         1518868032,
         1518867732,
@@ -363,7 +363,7 @@ The following example retrieves the `NetworkOut` metric for two Auto Scaling gro
 {
   "StartTime": 1518867432,
   "EndTime": 1518868232,
-  "MetricQueries": [
+  "MetricDataQueries": [
     {
       "Id": "e1",
       "Expression": "m2 / m1",

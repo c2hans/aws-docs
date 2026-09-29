@@ -9,6 +9,9 @@ With RES-ready Amazon Machine Images (AMIs), you can pre-install RES dependencie
 
 Before you begin, you must [deploy the latest version of RES](update-the-product.md).
 
+**Important**
+RES-ready AMIs created before RES 2025.06.01 are incompatible with RES 2025.06.01 and all subsequent versions. When upgrading your RES environment from a version prior to 2025.06.01 to the latest, you must rebuild all RES-ready AMIs.
+
 **Topics**
 + [Prepare an IAM role to access RES environment](#prepare-role)
 + [Create EC2 Image Builder component](#image-builder-component)
@@ -180,6 +183,7 @@ RES supports the following image operating systems:
 + RHEL 8 (x86), and 9 (x86)
 + Rocky Linux 9 (x86)
 + Ubuntu 22.04.3 (x86)
++ Ubuntu 24.04.3 (x86)
 + Windows Server 2019, 2022 (x86)
 + Windows 10, 11 (x86)
 
@@ -202,11 +206,11 @@ For information on how to install an SSM agent, see:
 [ Manually installing SSM Agent on EC2 instances for Linux](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-manual-agent-install.html).
 [ Manually installing and uninstalling SSM Agent on EC2 instances for Windows Server](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-install-win.html).
 
-1. For Linux based recipes, add the Amazon-managed `aws-cli-version-2-linux` build component to the recipe. RES installation scripts use the AWS CLI to provide VDI access to configuration values for the DynamoDB cluster-settings. Windows does not require this component.
+1. For Linux based recipes, add the Amazon-managed `aws-cli-version-2-linux` build component to the recipe. For Windows based recipes, add the Amazon-managed `aws-cli-version-2-windows` build component to the recipe. RES installation scripts use the AWS CLI to provide VDI access to configuration values for the DynamoDB cluster-settings.
 
 1. Add the EC2 Image Builder component created for your Linux or Windows environment.
 **Important**
-For Linux environments, you must add these components in order with the `aws-cli-version-2-linux` build component added first.
+You must add these components in order with the `aws-cli-version-2-linux` (for Linux) or ` aws-cli-version-2-windows` (for Windows) build component added first.
 
 ![Components page showing build components added](https://docs.aws.amazon.com/res/archive/release-minus-3/ug/images/res-ami-build-components.png)
 
@@ -219,11 +223,11 @@ For Linux environments, you must add these components in order with the `aws-cli
 
 If you have an existing EC2 Image Builder recipe, you can use it by adding the following components:
 
-1. For Linux based recipes, add the Amazon-managed `aws-cli-version-2-linux` build component to the recipe. RES installation scripts use the AWS CLI to provide VDI access to configuration values for the DynamoDB cluster-settings. Windows does not require this component.
+1. For Linux based recipes, add the Amazon-managed `aws-cli-version-2-linux` build component to the recipe. For Windows based recipes, add the Amazon-managed `aws-cli-version-2-windows` build component to the recipe. RES installation scripts use the AWS CLI to provide VDI access to configuration values for the DynamoDB cluster-settings.
 
 1. Add the EC2 Image Builder component created for your Linux or Windows environment.
 **Important**
-For Linux environments, you must add these components in order with the `aws-cli-version-2-linux` build component added first.
+You must add these components in order with the `aws-cli-version-2-linux` (for Linux) or ` aws-cli-version-2-windows` (for Windows) build component added first.
 
 ![Components page showing build components added](https://docs.aws.amazon.com/res/archive/release-minus-3/ug/images/res-ami-build-components.png)
 

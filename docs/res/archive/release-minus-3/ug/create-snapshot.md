@@ -21,7 +21,6 @@ This Amazon S3 bucket's lifecycle will not be managed within the product. You wi
 1. Add the following statement to the bucket policy. Replace these values with your own:
    + {{111122223333}} -> your AWS Account ID
    + {{{RES\_ENVIRONMENT\_NAME}}} -> your RES environment name
-   + {{us-east-1}} -> your AWS region
    + {{amzn-s3-demo-bucket}} -> your S3 bucket name
 **Important**
 There are limited version strings supported by AWS. For more information, see [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_version.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_version.html).

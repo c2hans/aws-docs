@@ -8,7 +8,20 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/environme
 The **Environment settings** page displays product configuration details, such as:
 + General
 
-  Displays information such as the Administrator Username and email for the user who provisioned the product. You can edit the web portal title and copyright text.
+  You can edit the web portal title and subtitle, and add custom links to the web portal login page. To configure custom links:
+
+  1. Navigate to **Environment Management** > **Environment Settings**.
+
+  1. Under the **General** tab, choose **Edit**.
+
+  1. In the **Custom Links** section, choose **Add Link**.
+
+  1. Enter a **Title** and **URL** for each link you want to display on the login page.
+
+  1. Choose **Submit** to save your changes.
+
+  Custom links appear on the web portal login page, allowing administrators to direct users to resources such as internal documentation, support pages, or acceptable use policies.
+![Custom links configuration in Environment Settings](https://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/web-links-edit-form.png)
 + Identity Provider
 
   Displays information such as Single Sign-On status.

@@ -33,6 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[ExecutionStatus](#cfn-bedrockagentcore-onlineevaluationconfig-executionstatus)" : {{String}},
       "[Insights](#cfn-bedrockagentcore-onlineevaluationconfig-insights)" : {{[ Insight, ... ]}},
       "[OnlineEvaluationConfigName](#cfn-bedrockagentcore-onlineevaluationconfig-onlineevaluationconfigname)" : {{String}},
+      "[OutputConfig](#cfn-bedrockagentcore-onlineevaluationconfig-outputconfig)" : {{OutputConfig}},
       "[Rule](#cfn-bedrockagentcore-onlineevaluationconfig-rule)" : {{Rule}},
       "[Tags](#cfn-bedrockagentcore-onlineevaluationconfig-tags)" : {{[ Tag, ... ]}}
     }
@@ -57,6 +58,8 @@ Properties:
   [Insights](#cfn-bedrockagentcore-onlineevaluationconfig-insights): {{
     - Insight}}
   [OnlineEvaluationConfigName](#cfn-bedrockagentcore-onlineevaluationconfig-onlineevaluationconfigname): {{String}}
+  [OutputConfig](#cfn-bedrockagentcore-onlineevaluationconfig-outputconfig): {{
+    OutputConfig}}
   [Rule](#cfn-bedrockagentcore-onlineevaluationconfig-rule): {{
     Rule}}
   [Tags](#cfn-bedrockagentcore-onlineevaluationconfig-tags): {{
@@ -124,6 +127,12 @@ The list of insight types configured for this evaluation.
 *Type*: String
 *Pattern*: `^[a-zA-Z][a-zA-Z0-9_]{0,47}$`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`OutputConfig`  <a name="cfn-bedrockagentcore-onlineevaluationconfig-outputconfig"></a>
+Property description not available.
+*Required*: No
+*Type*: [OutputConfig](aws-properties-bedrockagentcore-onlineevaluationconfig-outputconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Rule`  <a name="cfn-bedrockagentcore-onlineevaluationconfig-rule"></a>
  The evaluation rule containing sampling configuration, filters, and session settings.

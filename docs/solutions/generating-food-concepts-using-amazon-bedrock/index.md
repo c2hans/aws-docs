@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/generating-food-concepts-using
 title: 'Guidance for Generating Food concepts using Amazon Bedrock'
 canonical_url: https://docs.aws.amazon.com/solutions/generating-food-concepts-using-amazon-bedrock/
 source: aws-documentation
-generated_on: 2026-09-28
+generated_on: 2026-09-29
 ---
 
 # Guidance for Generating Food concepts using Amazon Bedrock

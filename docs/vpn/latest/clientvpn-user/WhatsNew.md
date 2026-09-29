@@ -9,6 +9,9 @@ The following table describes the AWS Client VPN User Guide updates.
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [AWS provided client (6.2.0) for macOS released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-macos-release-notes.html) | See release notes for details. | September 28, 2026 |
+| [AWS provided client (6.2.0) for Windows ARM64 and x64 released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows-release-notes.html) | See release notes for details. | September 28, 2026 |
+| [AWS provided client (6.2.0) for Ubuntu released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-linux-release-notes.html) | See release notes for details. | September 28, 2026 |
 | [AWS provided client (6.1.1) for macOS released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-macos-release-notes.html) | See release notes for details. | September 25, 2026 |
 | [AWS provided client (6.1.1) for Windows released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows-release-notes.html) | See release notes for details. | September 25, 2026 |
 | [AWS provided client (6.1.0) for macOS released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-macos-release-notes.html) | See release notes for details. | September 24, 2026 |

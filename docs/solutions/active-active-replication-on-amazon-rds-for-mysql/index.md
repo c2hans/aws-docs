@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/active-active-replication-on-a
 title: 'Guidance for Active-Active Replication on Amazon RDS for MySQL'
 canonical_url: https://docs.aws.amazon.com/solutions/active-active-replication-on-amazon-rds-for-mysql/
 source: aws-documentation
-generated_on: 2026-09-28
+generated_on: 2026-09-29
 ---
 
 # Guidance for Active-Active Replication on Amazon RDS for MySQL

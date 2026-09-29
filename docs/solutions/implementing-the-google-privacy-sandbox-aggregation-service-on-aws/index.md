@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/implementing-the-google-privac
 title: 'Guidance for Implementing the Google Privacy Sandbox Aggregation Service on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/implementing-the-google-privacy-sandbox-aggregation-service-on-aws/
 source: aws-documentation
-generated_on: 2026-09-28
+generated_on: 2026-09-29
 ---
 
 # Guidance for Implementing the Google Privacy Sandbox Aggregation Service on AWS

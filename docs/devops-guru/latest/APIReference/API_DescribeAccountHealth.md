@@ -5,6 +5,9 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Desc
 # DescribeAccountHealth
 <a name="API_DescribeAccountHealth"></a>
 
+**Note**
+End of support notice: On September 30, 2027, AWS will end support for Amazon DevOps Guru. After September 30, 2027, you will no longer be able to access the Amazon DevOps Guru console or Amazon DevOps Guru resources. For more information, see [Amazon DevOps Guru end of support](https://docs.aws.amazon.com/devops-guru/latest/userguide/devops-guru-end-of-support.html).
+
  Returns the number of open reactive insights, the number of open proactive insights, and the number of metrics analyzed in your AWS account. Use these numbers to gauge the health of operations in your AWS account.
 
 ## Request Syntax

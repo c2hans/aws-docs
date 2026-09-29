@@ -12,4 +12,4 @@ With the outbound campaigns feature of Connect Customer, you can create high-vol
 **Note**
 Outbound campaigns version 1 APIs are not supported in the af-south-1 Africa (Cape Town) region. You can use the Outbound campaigns version 2 API [actions](https://docs.aws.amazon.com/connect/latest/APIReference/API_Operations_Amazon_Connect_Outbound_Campaigns_V2.html) and [data types](https://docs.aws.amazon.com/connect/latest/APIReference/API_Types_Amazon_Connect_Outbound_Campaigns_V2.html) in this region.
 
-This document was last published on September 28, 2026.
+This document was last published on September 29, 2026.

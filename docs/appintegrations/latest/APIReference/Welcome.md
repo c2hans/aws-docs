@@ -13,4 +13,4 @@ For information about how you can use external applications with Connect Custome
 +  [Third-party applications (3p apps) in the agent workspace](https://docs.aws.amazon.com/connect/latest/adminguide/3p-apps.html)
 +  [Use Amazon Q in Connect for generative AI–powered agent assistance in real-time](https://docs.aws.amazon.com/connect/latest/adminguide/amazon-q-connect.html)
 
-This document was last published on September 28, 2026.
+This document was last published on September 29, 2026.

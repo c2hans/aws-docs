@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-1/ug/delete-pr
 
 To delete a project:
 
-1. Select a project in the project list.
+1. Choose a project in the project list.
 
 1. From the **Actions** menu, choose **Delete Project**.
 ![Projects page showing actions dropdown options](https://docs.aws.amazon.com/res/archive/release-minus-1/ug/images/res-delete-project1.png)

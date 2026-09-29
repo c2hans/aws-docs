@@ -155,9 +155,7 @@ Once the changes made in [Connecting IAM Identity Center to a managed Active Dir
 ### Setting up IAM Identity Center within the RES environment
 <a name="setup-sso-environment"></a>
 
-1. From the Research and Engineering Studio environment, under **Environment management**, open **General settings**.
-
-1. Open the **Identity provider** tab.
+1. From the Research and Engineering Studio environment, under **Environment management**, open **Identity Management**.
 
 1. Under **Single Sign-On**, choose **Edit** (next to **Status**).
 

@@ -7,7 +7,11 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Transfer::User HomeDirectoryMapEntry
 <a name="aws-properties-transfer-user-homedirectorymapentry"></a>
 
- Represents an object that contains entries and targets for `HomeDirectoryMappings` .
+Represents an object that contains entries and targets for `HomeDirectoryMappings`.
+
+The following is an `Entry` and `Target` pair example for `chroot`.
+
+ `[ { "Entry": "/", "Target": "/bucket_name/home/mydirectory" } ]`
 
 ## Syntax
 <a name="aws-properties-transfer-user-homedirectorymapentry-syntax"></a>

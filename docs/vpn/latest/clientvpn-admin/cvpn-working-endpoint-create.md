@@ -84,6 +84,8 @@ If the server and client certificates have been issued by the same Certificate A
 
 1. (Optional) For **Client Connect Handler**, turn on **Enable client connect handler** to run custom code that allows or denies a new connection to the Client VPN endpoint. For **Client Connect Handler ARN**, specify the Amazon Resource Name (ARN) of the Lambda function that contains the logic that allows or denies connections.
 
+1. (Optional) For **Device posture**, turn on **Enable device posture** to authorize connections based on the health of the connecting device. Configure one or more device trust providers and the authorization policy to evaluate. For more information, see [Device posture for AWS Client VPN](device-posture.md).
+
 1. (Optional) Specify which DNS servers to use for DNS resolution. To use custom DNS servers, for **DNS Server 1 IP address** and **DNS Server 2 IP address**, specify the IPv4 addresses of the DNS servers to use. For IPv6 or dual-stack endpoints, you can also specify **DNS Server IPv6 1** and **DNS Server IPv6 2** addresses. To use VPC DNS server, for either **DNS Server 1 IP address** or **DNS Server 2 IP address**, specify the IP addresses, and add the VPC DNS server IP address.
 **Note**
 Verify that the DNS servers can be reached by clients.
@@ -149,3 +151,15 @@ aws ec2 create-client-vpn-endpoint \
   --authentication-options Type=certificate-authentication,MutualAuthentication={ClientRootCertificateChainArn=arn:aws:acm:ap-south-1:123456789012:certificate/a1b2c3d4-5678-90ab-cdef-22222EXAMPLE} \
   --connection-log-options Enabled=false
 ```
+
+## Device posture options
+<a name="cvpn-device-posture-options"></a>
+
+To require device health checks on an endpoint, specify the `DevicePostureOptions` parameter when you create or modify the endpoint. This parameter contains the following fields:
++ `Enabled` — Whether device posture is enabled for the endpoint.
++ `TrustProviders` — One or more device trust providers to evaluate. Each trust provider contains the following fields:
+  + `TrustProviderType` — The type of device trust provider (for example, CrowdStrike, Jamf, or JumpCloud).
+  + `TenantId` — The tenant identifier for the device trust provider.
+  + `PublicSigningKeyUrl` — The URL of the public signing key used to verify device posture tokens.
+
+For more information, see [Device posture for AWS Client VPN](device-posture.md).

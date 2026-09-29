@@ -67,6 +67,11 @@ A brief description of the endpoint.
 Type: String
 Required: No
 
+ ** devicePostureOptions **
+The device trust providers configured for the Client VPN endpoint, if applicable.
+Type: [DevicePostureResponseOptions](API_DevicePostureResponseOptions.md) object
+Required: No
+
  ** disconnectOnSessionTimeout **
 Indicates whether the client VPN session is disconnected after the maximum `sessionTimeoutHours` is reached. If `true`, users are prompted to reconnect client VPN. If `false`, client VPN attempts to reconnect automatically. The default value is `true`.
 Type: Boolean

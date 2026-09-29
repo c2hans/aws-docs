@@ -15,11 +15,13 @@ You may [ download the recipes template](https://s3.amazonaws.com/aws-hpc-recipe
 **Note**
 Make sure you are in your administrator account.
 
-1. Launch [ the template](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?templateURL=https://s3.amazonaws.com/aws-hpc-recipes/main/recipes/res/res_demo_env/assets/bi.yaml) in the console.
+1. Launch [ the template](https://console.aws.amazon.com/cloudformation/home#/stacks/quickcreate?templateURL=https%3A%2F%2Fs3.amazonaws.com%2Faws-hpc-recipes%2Fmain%2Frecipes%2Fres%2Fres_demo_env%2Fassets%2Fbi.yaml) in the console.
 
    If you are deploying in an AWS GovCloud Region, launch the template in your GovCloud partition account (for example, [ here](https://console.amazonaws-us-gov.com/cloudformation/home?region=us-gov-west-1#/stacks/quickcreate?templateURL=https://s3.amazonaws.com/aws-hpc-recipes/main/recipes/res/res_demo_env/assets/bi.yaml) for the AWS GovCloud (US-West) Region).
 
 1. Enter the template parameters:
+**Important**
+Use different values for `AdminPassword` and `ServiceAccountPassword` to maintain proper security boundaries between these accounts.
 
 <table>
 <thead>

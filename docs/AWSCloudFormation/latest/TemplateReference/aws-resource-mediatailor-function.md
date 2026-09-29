@@ -21,6 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "Type" : "AWS::MediaTailor::Function",
   "Properties" : {
+      "[AwsServiceRequestConfiguration](#cfn-mediatailor-function-awsservicerequestconfiguration)" : {{AwsServiceRequestConfiguration}},
       "[ConcurrentExecutorConfiguration](#cfn-mediatailor-function-concurrentexecutorconfiguration)" : {{ConcurrentExecutorConfiguration}},
       "[CustomOutputConfiguration](#cfn-mediatailor-function-customoutputconfiguration)" : {{CustomOutputConfiguration}},
       "[Description](#cfn-mediatailor-function-description)" : {{String}},
@@ -28,7 +29,8 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[FunctionType](#cfn-mediatailor-function-functiontype)" : {{String}},
       "[HttpRequestConfiguration](#cfn-mediatailor-function-httprequestconfiguration)" : {{HttpRequestConfiguration}},
       "[SequentialExecutorConfiguration](#cfn-mediatailor-function-sequentialexecutorconfiguration)" : {{SequentialExecutorConfiguration}},
-      "[Tags](#cfn-mediatailor-function-tags)" : {{[ Tag, ... ]}}
+      "[Tags](#cfn-mediatailor-function-tags)" : {{[ Tag, ... ]}},
+      "[VastRequestConfiguration](#cfn-mediatailor-function-vastrequestconfiguration)" : {{VastRequestConfiguration}}
     }
 }
 ```
@@ -39,6 +41,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 Type: AWS::MediaTailor::Function
 Properties:
+  [AwsServiceRequestConfiguration](#cfn-mediatailor-function-awsservicerequestconfiguration): {{
+    AwsServiceRequestConfiguration}}
   [ConcurrentExecutorConfiguration](#cfn-mediatailor-function-concurrentexecutorconfiguration): {{
     ConcurrentExecutorConfiguration}}
   [CustomOutputConfiguration](#cfn-mediatailor-function-customoutputconfiguration): {{
@@ -52,10 +56,18 @@ Properties:
     SequentialExecutorConfiguration}}
   [Tags](#cfn-mediatailor-function-tags): {{
     - Tag}}
+  [VastRequestConfiguration](#cfn-mediatailor-function-vastrequestconfiguration): {{
+    VastRequestConfiguration}}
 ```
 
 ## Properties
 <a name="aws-resource-mediatailor-function-properties"></a>
+
+`AwsServiceRequestConfiguration`  <a name="cfn-mediatailor-function-awsservicerequestconfiguration"></a>
+Property description not available.
+*Required*: No
+*Type*: [AwsServiceRequestConfiguration](aws-properties-mediatailor-function-awsservicerequestconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ConcurrentExecutorConfiguration`  <a name="cfn-mediatailor-function-concurrentexecutorconfiguration"></a>
 The configuration for a `CONCURRENT_EXECUTOR` function.
@@ -85,7 +97,7 @@ The identifier of the function.
 The type of the function.
 *Required*: Yes
 *Type*: String
-*Allowed values*: `HTTP_REQUEST | CUSTOM_OUTPUT | CONCURRENT_EXECUTOR | SEQUENTIAL_EXECUTOR`
+*Allowed values*: `HTTP_REQUEST | AWS_SERVICE_REQUEST | CUSTOM_OUTPUT | CONCURRENT_EXECUTOR | SEQUENTIAL_EXECUTOR | VAST_REQUEST`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `HttpRequestConfiguration`  <a name="cfn-mediatailor-function-httprequestconfiguration"></a>
@@ -104,6 +116,12 @@ The configuration for a `SEQUENTIAL_EXECUTOR` function.
 The tags assigned to the function. Tags are key-value pairs that you can associate with Amazon resources to help with organization, access control, and cost tracking. For more information, see [Tagging AWS Elemental MediaTailor Resources](https://docs.aws.amazon.com/mediatailor/latest/ug/tagging.html).
 *Required*: No
 *Type*: Array of [Tag](aws-properties-mediatailor-function-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`VastRequestConfiguration`  <a name="cfn-mediatailor-function-vastrequestconfiguration"></a>
+Property description not available.
+*Required*: No
+*Type*: [VastRequestConfiguration](aws-properties-mediatailor-function-vastrequestconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values

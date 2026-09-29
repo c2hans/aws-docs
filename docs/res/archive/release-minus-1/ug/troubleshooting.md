@@ -55,7 +55,6 @@ Detailed contents:
   + [Infrastructure](res-troubleshooting-issue-runbooks.md#res-troubleshooting-infrastructure)
     + [Load balancer target groups without healthy instances](res-troubleshooting-issue-runbooks.md#res-troubleshooting-infrastructure-load-balancer)
   + [Launching Virtual Desktops](res-troubleshooting-issue-runbooks.md#res-troubleshooting-virtual-desktops)
-    + [I need to launch / resume a large number of VDIs in the RES web portal](res-troubleshooting-issue-runbooks.md#res-troubleshooting-virtual-desktops-resume-vdis)
     + [Login account for Windows Virtual Desktop is set to Administrator](res-troubleshooting-issue-runbooks.md#res-troubleshooting-virtual-desktops-windows-admin)
     + [Certificate expires when using external resource CertificateRenewalNode](res-troubleshooting-issue-runbooks.md#res-troubleshooting-virtual-desktops-certificate-expires)
     + [A virtual desktop that was previously working is no longer able to connect successfully](res-troubleshooting-issue-runbooks.md#res-troubleshooting-virtual-desktops-was-working)

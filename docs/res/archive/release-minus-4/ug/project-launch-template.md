@@ -48,6 +48,12 @@ Scripts support the following options:
 | HTTPS URL | https://sample.samplecontent.com/sample |
 | Local file | file:///user/scripts/example.sh |
 
+All custom scripts that are hosted on a S3 buckets need to be provisioned with the following tag:
+
+```
+res:EnvironmentName/{{<res-environment>}}
+```
+
 For **Arguments**, provide any arguments separated by a comma.
 
 ![Example of a project configuration](https://docs.aws.amazon.com/res/archive/release-minus-4/ug/images/res-projectconfigexample.png)

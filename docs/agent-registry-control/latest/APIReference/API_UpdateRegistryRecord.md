@@ -15,6 +15,9 @@ PATCH /registries/{{registryId}}/records/{{recordId}} HTTP/1.1
 Content-type: application/json
 
 {
+   "customMetadata": {
+      "optionalValue": {{JSON value}}
+   },
    "description": {
       "optionalValue": "{{string}}"
    },
@@ -200,6 +203,11 @@ Required: Yes
 
 The request accepts the following data in JSON format.
 
+ ** [customMetadata](#API_UpdateRegistryRecord_RequestSyntax) **   <a name="agentregistrycontrol-UpdateRegistryRecord-request-customMetadata"></a>
+The updated custom metadata for the registry record. Values can be strings (maximum 128 characters) or native JSON booleans (`true` or `false`). Omit to leave the existing metadata unchanged. Supply the wrapper with a full replacement set to update, or with a null value to clear all metadata.
+Type: [UpdatedCustomMetadataMap](API_UpdatedCustomMetadataMap.md) object
+Required: No
+
  ** [description](#API_UpdateRegistryRecord_RequestSyntax) **   <a name="agentregistrycontrol-UpdateRegistryRecord-request-description"></a>
 The updated description of the registry record. Omit to leave the description unchanged; provide an empty wrapper to unset it.
 Type: [UpdatedDescription](API_UpdatedDescription.md) object
@@ -257,6 +265,8 @@ Content-type: application/json
    "createdAt": "string",
    "createdBy": "string",
    "createdByAutoDetection": boolean,
+   "customMetadata": JSON value,
+   "customMetadataSchemaComplianceStatus": "string",
    "description": "string",
    "descriptors": {
       "a2aAgentCard": {
@@ -387,6 +397,15 @@ Pattern: `[0-9]{12}`
  ** [createdByAutoDetection](#API_UpdateRegistryRecord_ResponseSyntax) **   <a name="agentregistrycontrol-UpdateRegistryRecord-response-createdByAutoDetection"></a>
 Specifies whether the registry record was created by auto-detection. `true` indicates the record was automatically created by the service based on the registry's auto-detection configuration; `false` indicates the record was created through a control-plane API call.
 Type: Boolean
+
+ ** [customMetadata](#API_UpdateRegistryRecord_ResponseSyntax) **   <a name="agentregistrycontrol-UpdateRegistryRecord-response-customMetadata"></a>
+The custom metadata attached to this registry record. Values are strings (maximum 128 characters) or booleans.
+Type: JSON value
+
+ ** [customMetadataSchemaComplianceStatus](#API_UpdateRegistryRecord_ResponseSyntax) **   <a name="agentregistrycontrol-UpdateRegistryRecord-response-customMetadataSchemaComplianceStatus"></a>
+Indicates whether this record's custom metadata conforms to the registry's current schema. This status is computed at read time against the latest schema.
+Type: String
+Valid Values: `COMPLIANT | NON_COMPLIANT`
 
  ** [description](#API_UpdateRegistryRecord_ResponseSyntax) **   <a name="agentregistrycontrol-UpdateRegistryRecord-response-description"></a>
 A description of the registry record.

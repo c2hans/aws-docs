@@ -144,13 +144,22 @@ Note that this system view only records refreshes performed by the local cluster
 ### Discovering Iceberg materialized views
 <a name="materialized-view-iceberg-discovering"></a>
 
-Use [SVV\_EXTERNAL\_TABLES](r_SVV_EXTERNAL_TABLES.md) to find Iceberg materialized views in your external schemas:
+Use the [SHOW TABLES](r_SHOW_TABLES.md) command to find Iceberg materialized views. Iceberg materialized views appear with `table_type = 'EXTERNAL TABLE'` and `table_subtype = 'ICEBERG MATERIALIZED VIEW'`. SHOW TABLES works across all catalog paths (external schemas, `awsdatacatalog`, and Amazon S3 Tables).
+
+```
+SHOW TABLES FROM SCHEMA awsdatacatalog.mydb LIKE '%';
+```
+
+You can also use [SVV\_EXTERNAL\_TABLES](r_SVV_EXTERNAL_TABLES.md) to find Iceberg materialized views in your external schemas, where they appear with `tabletype = 'EXTERNAL TABLE'`:
 
 ```
 SELECT schemaname, tablename, location
 FROM svv_external_tables
-WHERE tabletype = 'MATERIALIZED VIEW';
+WHERE tabletype = 'EXTERNAL TABLE';
 ```
+
+**Note**
+SVV\_EXTERNAL\_TABLES enumerates Iceberg materialized views only for external schemas. Iceberg materialized views accessed through `awsdatacatalog` or Amazon S3 Tables catalogs are not enumerated by SVV\_EXTERNAL\_TABLES; use SHOW TABLES to discover them.
 
 [STV\_MV\_INFO](r_STV_MV_INFO.md) doesn't include Iceberg materialized views.
 
@@ -180,6 +189,7 @@ The following SQL constructs are allowed in the materialized view definition but
 Additional limitations:
 + Automatic query rewriting to use materialized views is not supported for Iceberg materialized views.
 + Automated materialized views are not supported for Iceberg materialized views.
++ Autorefresh is not supported for Iceberg materialized views. You must refresh them manually using [REFRESH MATERIALIZED VIEW](materialized-view-refresh-sql-command.md).
 + Iceberg materialized views are supported only on Redshift Serverless and provisioned clusters with RG instance types. RA3 and DC2 instance types are not supported.
 + Fine-grained access control (FGAC) is not supported on Iceberg materialized views.
 + CASCADE refresh is not supported for Iceberg materialized views.

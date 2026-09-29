@@ -5,29 +5,29 @@ source_url: https://docs.aws.amazon.com/solutions/latest/account-assessment-for-
 # Features and benefits
 <a name="features-and-benefits"></a>
 
-The Account Assessment for AWS Organizations solution provides the following features.
+The Guidance for Account Assessment for AWS Organizations provides the following features.
 
-## Access the solution using a web UI
-<a name="access-the-solution-using-a-web-ui"></a>
+## Access the guidance using a web UI
+<a name="access-the-guidance-using-a-web-ui"></a>
 
-This solution provides a web UI to help you view scan results. For more details, see [Use the solution](use-the-solution.md).
+This guidance provides a web UI to help you view scan results. For more details, see [Use the guidance](use-the-guidance.md).
 
 ## Identify enabled services with AWS Organizations
 <a name="identify-enabled-services-with-aws-organizations"></a>
 
-In your AWS Organization, you can enable more than 30 compatible AWS services to perform operations across all of the AWS accounts. This solution finds enabled services and delegated admin accounts per service (if activated).
+In your AWS Organization, you can enable more than 30 compatible AWS services to perform operations across all of the AWS accounts. This guidance finds enabled services and delegated admin accounts per service (if activated).
 
 ## Explore your policies to find actions and conditions
 <a name="explore-your-policies-to-find-actions-and-conditions"></a>
 
-This feature allows you to search through all the policies across your AWS Organization to find specific conditions and actions. In case an action is deprecated you need to remove or update a given action or condition across all accounts or a specific set of accounts, you can quickly find and review the policies in the solutions UI, and update them across your environment to meet your needs.
+This feature allows you to search through all the policies across your AWS Organization to find specific conditions and actions. In case an action is deprecated you need to remove or update a given action or condition across all accounts or a specific set of accounts, you can quickly find and review the policies in the guidance’s web UI, and update them across your environment to meet your needs.
 
-The policies included in the scans are identity-based policies, resource-based policies, and organization-based policies (such as service control policies). The daily scan will store representations of all the policies in your environment in DynamoDB on a daily basis, so you can search through them, and find the attributes you are looking for in the solution’s web UI.
+The policies included in the scans are identity-based policies, resource-based policies, and organization-based policies (such as service control policies). The daily scan stores representations of all the policies in your environment in DynamoDB, so you can search through them and find the attributes you are looking for in the guidance’s web UI.
 
 ## Assess IAM policy conditions
 <a name="assess-iam-policy-conditions"></a>
 
-The `Condition` policy element lets you use keys to specify conditions for when a policy is in effect. You can use specific keys to compare the identifier or path of the requesting [principal’s](https://docs.aws.amazon.com/IAM/latest/UserGuide/intro-structure.html#intro-structure-principal) Organization in AWS Organizations with the identifier specified in the policy. This helps you identify existing conditions and dependencies. If desired, you can use [global condition keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html). This solution scans conditions in the following types of policies and presents them for your review in the solution’s web UI.
+The `Condition` policy element lets you use keys to specify conditions for when a policy is in effect. You can use specific keys to compare the identifier or path of the requesting [principal’s](https://docs.aws.amazon.com/IAM/latest/UserGuide/intro-structure.html#intro-structure-principal) Organization in AWS Organizations with the identifier specified in the policy. This helps you identify existing conditions and dependencies. If desired, you can use [global condition keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html). This guidance scans conditions in the following types of policies and presents them for your review in the guidance’s web UI.
 
 ### Assume role (trust relationship) conditions
 <a name="assume-role-trust-relationship-conditions"></a>
@@ -44,7 +44,7 @@ With IAM roles, you can establish trust relationships between your trusting acco
 
  [Resource-based policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html) are attached to a resource. Use these policies to specify who has access to the resource and what actions they can perform on it. For example, you can attach resource-based policies to [Amazon Simple Storage Service](https://aws.amazon.com/s3/) (Amazon S3) buckets, [Amazon Simple Queue Service](https://aws.amazon.com/sqs/) (Amazon SQS) queues, [Amazon Virtual Private Cloud](https://aws.amazon.com/vpc/) (Amazon VPC) endpoints, and [AWS Key Management Service](https://aws.amazon.com/kms/) (AWS KMS) encryption keys.
 
-The following table provides a list of services supported by this solution.
+The following table provides a list of services supported by this guidance.
 
 | AWS service | Policy type |
 | --- | --- |

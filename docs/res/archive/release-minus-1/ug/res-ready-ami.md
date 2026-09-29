@@ -45,10 +45,6 @@ Follow the directions to [Create a component using the Image Builder console](ht
 
 1. Enter your component's version number and optionally add a description.
 
-   ```
-   key : value
-   ```
-
 1. For the **Definition document**, enter the following definition file. If you encounter any errors, the YAML file is space sensitive and is the most likely cause.
 **Important**
 In the definition file, replace **latest** in the download URI (`- source: 's3://research-engineering-studio-us-east-1/releases/{{latest}}/res-installation-scripts.tar.gz'`) with with the exact version number (for example, **2025.06**) if your RES environment version is not the latest.
@@ -215,6 +211,25 @@ For information on how to install an SSM agent, see:
 [ Manually installing SSM Agent on EC2 instances for Linux](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-manual-agent-install.html).
 [ Manually installing and uninstalling SSM Agent on EC2 instances for Windows Server](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-install-win.html).
 
+1. For Ubuntu 24.04 based recipes, add a custom component to install `unzip` before adding the AWS CLI component. Create a component with the following content:
+
+   ```
+   name: unzip-ubuntu
+   description: An RES EC2 Image Builder component to install unzip
+   schemaVersion: 1.0
+
+   phases:
+     - name: build
+       steps:
+         - name: InstallPackage
+           action: ExecuteBash
+           onFailure: Abort
+           maxAttempts: 3
+           inputs:
+             commands:
+               - "apt-get update && apt-get install -y unzip"
+   ```
+
 1. For Linux based recipes, add the Amazon-managed `aws-cli-version-2-linux` build component to the recipe. For Windows based recipes, add the Amazon-managed `aws-cli-version-2-windows` build component to the recipe. RES installation scripts use the AWS CLI to provide VDI access to configuration values for the DynamoDB cluster-settings.
 
 1. Add the EC2 Image Builder component created for your Linux or Windows environment.
@@ -231,6 +246,25 @@ You must add these components in order with the `aws-cli-version-2-linux` (for L
 #### [ Modify a recipe ]
 
 If you have an existing EC2 Image Builder recipe, you can use it by adding the following components:
+
+1. For Ubuntu 24.04 based recipes, add a custom component to install `unzip` before adding the AWS CLI component. Create a component with the following content:
+
+   ```
+   name: unzip-ubuntu
+   description: An RES EC2 Image Builder component to install unzip
+   schemaVersion: 1.0
+
+   phases:
+     - name: build
+       steps:
+         - name: InstallPackage
+           action: ExecuteBash
+           onFailure: Abort
+           maxAttempts: 3
+           inputs:
+             commands:
+               - "apt-get update && apt-get install -y unzip"
+   ```
 
 1. For Linux based recipes, add the Amazon-managed `aws-cli-version-2-linux` build component to the recipe. For Windows based recipes, add the Amazon-managed `aws-cli-version-2-windows` build component to the recipe. RES installation scripts use the AWS CLI to provide VDI access to configuration values for the DynamoDB cluster-settings.
 

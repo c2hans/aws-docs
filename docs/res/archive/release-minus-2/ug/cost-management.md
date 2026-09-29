@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/cost-mana
 **Note**
 Associating Research and Engineering Studio projects to AWS Budgets is not supported in AWS GovCloud (US).
 
-We recommend creating a [budget](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-create.html) through [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/) to help manage costs. Prices are subject to change. For full details, see the pricing webpage for each of the [AWS services in this product](architecture-overview.md#aws-services-in-this-product).
+Create a [budget](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-create.html) through [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/) to help manage costs. Prices are subject to change. For full details, see the pricing webpage for each of the [AWS services in this product](architecture-overview.md#aws-services-in-this-product).
 
 To assist with cost tracking, you can associate RES projects to budgets created within AWS Budgets. You will first need to activate the environment tags within the billing cost allocation tags.
 

@@ -9,6 +9,7 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-4/ug/prerequis
 + [Create an AWS account with an administrative user](#aws-account)
 + [Create an Amazon EC2 SSH key pair](#create-ssh-key-pair)
 + [Increase service quotas](#increase-service-quotas)
++ [Create a Cognito user pool (Optional)](#create-cognito-user-pool)
 + [Create a custom domain (optional)](#create-public-domain)
 + [Create domain (GovCloud only)](#create-domain-govcloud)
 + [Provide external resources](#external-resources)
@@ -45,6 +46,19 @@ We recommend [increasing the service quotas](https://docs.aws.amazon.com/service
   + Increase the EC2-VPC Elastic IPs from five to ten
 
 Your AWS account has default quotas, formerly referred to as limits, for each AWS service. Unless otherwise noted, each quota is Region-specific. You can request increases for some quotas, and other quotas cannot be increased. For more information, see [Quotas for AWS services in this product](plan-your-deployment.md#quotas-for-aws-services-in-this-product).
+
+## Create a Cognito user pool (Optional)
+<a name="create-cognito-user-pool"></a>
+
+You have the option to import an existing Cognito User Pool for user and client authentication when you install RES. Otherwise, RES will create a new Cognito User Pool automatically. The pre-existing User Pool needs to have the following sign-up custom attributes:
+
+| Name | Type | Min value/length | Max value/length | Mutable |
+| --- | --- | --- | --- | --- |
+| custom:aws\_region | String |  |  | TRUE |
+| custom:cluster\_name | String |  |  | TRUE |
+| custom:password\_last\_set  | Number |  |  | TRUE |
+| custom:password\_max\_age | Number |  |  | TRUE |
+| custom:uid | Number | 2000200001 | 4294967294 | TRUE |
 
 ## Create a custom domain (optional)
 <a name="create-public-domain"></a>
@@ -278,7 +292,7 @@ If you are setting up `http_proxy` and `https_proxy` environment variables, the 
                            http_proxy=http://{{<ip>}}:{{<port>}}
                            https_proxy=http://{{<ip>}}:{{<port>}}
                            no_proxy=127.0.0.1,169.254.169.254,169.254.170.2,localhost,{{ AWSRegion }}.res,{{ AWSRegion }}.vpce.amazonaws.com,{{ AWSRegion }}.elb.amazonaws.com,s3.{{ AWSRegion }}.amazonaws.com,s3.dualstack.{{ AWSRegion }}.amazonaws.com,ec2.{{ AWSRegion }}.amazonaws.com,ec2.{{ AWSRegion }}.api.aws,ec2messages.{{ AWSRegion }}.amazonaws.com,ssm.{{ AWSRegion }}.amazonaws.com,ssmmessages.{{ AWSRegion }}.amazonaws.com,kms.{{ AWSRegion }}.amazonaws.com,secretsmanager.{{ AWSRegion }}.amazonaws.com,sqs.{{ AWSRegion }}.amazonaws.com,elasticloadbalancing.{{ AWSRegion }}.amazonaws.com,sns.{{ AWSRegion }}.amazonaws.com,logs.{{ AWSRegion }}.amazonaws.com,logs.{{ AWSRegion }}.api.aws,elasticfilesystem.{{ AWSRegion }}.amazonaws.com,fsx.{{ AWSRegion }}.amazonaws.com,dynamodb.{{ AWSRegion }}.amazonaws.com,api.ecr.{{ AWSRegion }}.amazonaws.com,.dkr.ecr.{{ AWSRegion }}.amazonaws.com,kinesis.{{ AWSRegion }}.amazonaws.com,.data-kinesis.{{ AWSRegion }}.amazonaws.com,.control-kinesis.{{ AWSRegion }}.amazonaws.com,events.{{ AWSRegion }}.amazonaws.com,cloudformation.{{ AWSRegion }}.amazonaws.com,sts.{{ AWSRegion }}.amazonaws.com,application-autoscaling.{{ AWSRegion }}.amazonaws.com,monitoring.{{ AWSRegion }}.amazonaws.com,ecs.{{ AWSRegion }}.amazonaws.com,.execute-api.{{ AWSRegion }}.amazonaws.com
-                            " > /etc/environment
+                            " >> /etc/environment launch template
          ```
 
    1. Choose **Create component**.

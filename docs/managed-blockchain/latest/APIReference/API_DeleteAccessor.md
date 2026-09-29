@@ -5,6 +5,9 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/A
 # DeleteAccessor
 <a name="API_DeleteAccessor"></a>
 
+**Note**
+End of support notice: Amazon Managed Blockchain will stop accepting new customers on October 29, 2026. Existing customers can continue using Amazon Managed Blockchain until September 29, 2027. After September 29, 2027 you will no longer be able to access Amazon Managed Blockchain. For more information, see [Amazon Managed Blockchain availability change](https://docs.aws.amazon.com/managed-blockchain/latest/hyperledger-fabric-dev/managed-blockchain-end-of-support.html).
+
 Deletes an accessor that your AWS account owns. An accessor object is a container that has the information required for token based access to your Ethereum nodes including, the `BILLING_TOKEN`. After an accessor is deleted, the status of the accessor changes from `AVAILABLE` to `PENDING_DELETION`. An accessor in the `PENDING_DELETION` state can’t be used for new WebSocket requests or HTTP requests. However, WebSocket connections that were initiated while the accessor was in the `AVAILABLE` state remain open until they expire (up to 2 hours).
 
 ## Request Syntax

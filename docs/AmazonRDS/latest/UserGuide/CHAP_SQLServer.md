@@ -84,7 +84,7 @@ The Amazon RDS implementation of Microsoft SQL Server on a DB instance has some 
 
 <table>
 <thead>
-  <tr><th>Instance class type</th><th>vCPU configured on RDS</th><th>Single-AZ</th><th>Multi-AZ with DBM</th><th>Multi-AZ with Always On AGs</th></tr>
+  <tr><th>Instance type</th><th>vCPU configured on RDS</th><th>Single-AZ</th><th>Multi-AZ with DBM</th><th>Multi-AZ with Always On AGs</th></tr>
 </thead>
 <tbody>
   <tr><td>db.*.micro to db.*.medium</td><td>N/A</td><td>30</td><td>N/A</td><td>N/A</td></tr>

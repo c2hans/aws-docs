@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com//solutions/network-orchestration-aws-tra
 title: 'Guidance for Network Orchestration for AWS Transit Gateway'
 canonical_url: https://docs.aws.amazon.com/solutions/network-orchestration-aws-transit-gateway/
 source: aws-documentation
-generated_on: 2026-09-28
+generated_on: 2026-09-29
 ---
 
 # Guidance for Network Orchestration for AWS Transit Gateway

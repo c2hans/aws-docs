@@ -2,10 +2,10 @@
 source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/virtual-desktops-autostop.html
 ---
 
-# Virtual desktop interface autostop
+# Virtual desktop infrastructure autostop
 <a name="virtual-desktops-autostop"></a>
 
-Administrators can configure settings to allow idle VDIs to be Stopped or Terminated. There are 4 configurable settings:
+Administrators can configure settings to allow idle VDIs to be stopped or terminated. There are 4 configurable settings:
 
 1. Idle Timeout: Sessions idle for this time with CPU utilization below the threshold will time out.
 
@@ -19,6 +19,6 @@ RES runs an idle detection script at the top of every minute that checks CPU uti
 
 ![update session settings](https://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-update-session-settings.png)
 
-These settings are present on the **Desktop Settings** page under the **Server** tab. Once you update the settings according to your requirements, click on **Submit** to save the settings. New sessions will use the updated settings, but note that existing sessions will still use the settings which they had when they were launched.
+These settings are present on the **Desktop Settings** page under the **Server** tab. After you update the settings according to your requirements, choose **Submit** to save the settings. New sessions will use the updated settings, but note that existing sessions will still use the settings which they had when they were launched.
 
 After they time out, sessions will either terminate or transition into the `STOPPED_IDLE` state based on their configuration. Users will have the ability to start `STOPPED_IDLE` sessions from the UI.

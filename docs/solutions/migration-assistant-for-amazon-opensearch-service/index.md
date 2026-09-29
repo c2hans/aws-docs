@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com//solutions/migration-assistant-for-amazo
 title: 'Migration Assistant for Amazon OpenSearch Service'
 canonical_url: https://docs.aws.amazon.com/solutions/migration-assistant-for-amazon-opensearch-service/
 source: aws-documentation
-generated_on: 2026-09-28
+generated_on: 2026-09-29
 ---
 
 # Migration Assistant for Amazon OpenSearch Service

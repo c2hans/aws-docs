@@ -5,9 +5,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/account-assessment-for-
 # Troubleshooting
 <a name="troubleshooting"></a>
 
-This section provides troubleshooting instructions for deploying and using the solution.
-
-If these instructions don’t address your issue, [Contact AWS Support](contact-aws-support.md) provides instructions for opening an AWS Support case for this solution.
+This section provides troubleshooting instructions for deploying and using the guidance.
 
 ## Problem: Failed job
 <a name="failed-job"></a>
@@ -28,7 +26,7 @@ For example, if your job failed due to the following error:
 "Cause": "Rate Exceeded
 ```
 
-this indicates that you need to [check the Lambda function concurrent executions quota](https://console.aws.amazon.com/servicequotas/home/services/lambda/quotas) for the hub account. By default, this solution requires up to 100 Lambda concurrent executions. To request a quota increase, select **Concurrent executions** and choose **Request quota increase**. See [Requesting a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html) in the *Service Quotas User Guide* for more information.
+this indicates that you need to [check the Lambda function concurrent executions quota](https://console.aws.amazon.com/servicequotas/home/services/lambda/quotas) for the hub account. By default, this guidance requires up to 100 Lambda concurrent executions. To request a quota increase, select **Concurrent executions** and choose **Request quota increase**. See [Requesting a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html) in the *Service Quotas User Guide* for more information.
 
 ![Screenshot of Lambda resource quotas](https://docs.aws.amazon.com/solutions/latest/account-assessment-for-aws-organizations/images/image22.png)
 
@@ -58,12 +56,12 @@ You may receive an `AccessDenied` error for a specific account in ** Failed Task
 ### Resolution
 <a name="access-denied-resolution"></a>
 
- [Deploy the Spoke stack](step-2-launch-the-spoke-stack.md) in the account to allow the scan to complete.
+ [Deploy the Spoke stack](step-3-launch-the-spoke-stack.md) in the account to allow the scan to complete.
 
 ![Screenshot of AccessDenied error](https://docs.aws.amazon.com/solutions/latest/account-assessment-for-aws-organizations/images/image15.png)
 
 ## Problem: Undefined error
-<a name="unidefined-error"></a>
+<a name="undefined-error"></a>
 
 The Web UI loads, but starting scans or viewing findings causes an `undefined error`.
 

@@ -79,6 +79,12 @@ Specifies whether the registry record was created by auto-detection. `true` indi
 Type: Boolean
 Required: No
 
+ ** customMetadataSchemaComplianceStatus **   <a name="agentregistrycontrol-Type-RegistryRecordSummary-customMetadataSchemaComplianceStatus"></a>
+Indicates whether this record's custom metadata conforms to the registry's current schema.
+Type: String
+Valid Values: `COMPLIANT | NON_COMPLIANT`
+Required: No
+
  ** description **   <a name="agentregistrycontrol-Type-RegistryRecordSummary-description"></a>
 A description of the registry record.
 Type: String

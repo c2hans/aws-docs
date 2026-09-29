@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/integrating-ignition-scada-on-
 title: 'Guidance for Integrating Ignition SCADA on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/integrating-ignition-scada-on-aws/
 source: aws-documentation
-generated_on: 2026-09-28
+generated_on: 2026-09-29
 ---
 
 # Guidance for Integrating Ignition SCADA on AWS

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/modern-contact-center-for-reta
 title: 'Guidance for a Modern Contact Center for Retailers on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/modern-contact-center-for-retailers-on-aws/
 source: aws-documentation
-generated_on: 2026-09-28
+generated_on: 2026-09-29
 ---
 
 # Guidance for a Modern Contact Center for Retailers on AWS

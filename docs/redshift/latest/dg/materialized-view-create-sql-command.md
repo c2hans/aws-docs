@@ -107,6 +107,7 @@ You can't use the following with Iceberg materialized views:
 + BACKUP clause
 + DISTSTYLE, DISTKEY, or SORTKEY clauses
 + References to Amazon Redshift native tables, temporary tables, or system tables
++ AUTO REFRESH (autorefresh is not supported; refresh Iceberg materialized views manually)
 
 For more information about Iceberg materialized view capabilities and limitations, see [Materialized views stored as Apache Iceberg tables](https://docs.aws.amazon.com/redshift/latest/dg/materialized-view-iceberg.html).
 

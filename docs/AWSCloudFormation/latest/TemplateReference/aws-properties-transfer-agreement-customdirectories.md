@@ -7,7 +7,12 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Transfer::Agreement CustomDirectories
 <a name="aws-properties-transfer-agreement-customdirectories"></a>
 
-<a name="aws-properties-transfer-agreement-customdirectories-description"></a>The `CustomDirectories` property type specifies Property description not available. for an [AWS::Transfer::Agreement](aws-resource-transfer-agreement.md).
+A `CustomDirectoriesType` structure. This structure specifies custom directories for storing various AS2 message files. You can specify directories for the following types of files.
++ Failed files
++ MDN files
++ Payload files
++ Status files
++ Temporary files
 
 ## Syntax
 <a name="aws-properties-transfer-agreement-customdirectories-syntax"></a>
@@ -42,35 +47,35 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-transfer-agreement-customdirectories-properties"></a>
 
 `FailedFilesDirectory`  <a name="cfn-transfer-agreement-customdirectories-failedfilesdirectory"></a>
-Property description not available.
+Specifies a location to store failed AS2 message files.
 *Required*: Yes
 *Type*: String
 *Pattern*: `(|/.*)`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `MdnFilesDirectory`  <a name="cfn-transfer-agreement-customdirectories-mdnfilesdirectory"></a>
-Property description not available.
+Specifies a location to store MDN files.
 *Required*: Yes
 *Type*: String
 *Pattern*: `(|/.*)`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `PayloadFilesDirectory`  <a name="cfn-transfer-agreement-customdirectories-payloadfilesdirectory"></a>
-Property description not available.
+Specifies a location to store the payload for AS2 message files.
 *Required*: Yes
 *Type*: String
 *Pattern*: `(|/.*)`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `StatusFilesDirectory`  <a name="cfn-transfer-agreement-customdirectories-statusfilesdirectory"></a>
-Property description not available.
+Specifies a location to store AS2 status messages.
 *Required*: Yes
 *Type*: String
 *Pattern*: `(|/.*)`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TemporaryFilesDirectory`  <a name="cfn-transfer-agreement-customdirectories-temporaryfilesdirectory"></a>
-Property description not available.
+Specifies a location to store temporary AS2 message files.
 *Required*: Yes
 *Type*: String
 *Pattern*: `(|/.*)`

@@ -24,7 +24,7 @@ Sellers in India have specific registration requirements and can only set INR fo
 
 For step-by-step onboarding instructions, see the [Channel Partner Onboarding Guide](https://s3.us-west-2.amazonaws.com/external-mp-channel-partners/Consulting+Partner+Private+Offers+-Seller+Sign+Up+Onboarding+Guide+2019.pdf).
 
-Once you have completed these requirements, please provide the ISV with your 12-digit AWS account ID so they can create a selling authorization that allows you to resell their products. For a step-by-step walkthrough of the process, see this [interactive demo](https://awsmarketplace.storylane.io/share/5oeofjaq5s4s).
+Once you have completed these requirements, please provide the ISV with your 12-digit AWS account ID so they can create a selling authorization that allows you to resell their products. For a step-by-step walkthrough of the process, see this [interactive demo](https://awsmarketplace.storylane.io/share/5oeofjaq5s4s) on the AWS Marketplace Storylane website.
 
 ## Understanding Channel Partner Private Offers (CPPO)
 <a name="understanding-cppo"></a>

@@ -9,4 +9,8 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 **Resource types**
 + [AWS::RAM::Permission](aws-resource-ram-permission.md)
++ [AWS::RAM::PermissionAssociation](aws-resource-ram-permissionassociation.md)
++ [AWS::RAM::PrincipalAssociation](aws-resource-ram-principalassociation.md)
++ [AWS::RAM::ResourceAssociation](aws-resource-ram-resourceassociation.md)
 + [AWS::RAM::ResourceShare](aws-resource-ram-resourceshare.md)
++ [AWS::RAM::SourceAssociation](aws-resource-ram-sourceassociation.md)

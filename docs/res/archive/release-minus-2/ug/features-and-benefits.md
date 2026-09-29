@@ -14,7 +14,7 @@ RES provides a web-based portal that administrators, researchers, and engineers 
 Use projects to define access permissions, allocate resources, and manage budgets for a set of tasks or activities. Assign specific software stacks (operating systems and approved applications) and storage resources to a project for consistency and compliance. Monitor and manage spending on a per-project basis.
 
 **Collaboration tools**
-Scientists and engineers can invite other members of their project to collaborate with them, setting the permissions levels they want those colleagues to have. Those individuals can sign in to RES to connect to those desktops.
+Scientists and engineers can invite other members of their project to collaborate with them, setting the permissions levels they want those colleagues to have. Invited members can sign in to RES to connect to the shared desktops.
 
 **Integration with existing identity management infrastructure**
 Integrate with your existing identity management and directory services infrastructure to enable connection to the RES portal with a user's existing corporate identity and assign permissions to projects using existing user and group memberships.

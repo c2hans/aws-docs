@@ -29,6 +29,7 @@ Content-type: application/json
             "idcInstanceArn": "{{string}}",
             "idcRegion": "{{string}}"
          },
+         "endpointPrefix": "{{string}}",
          "namespace": "{{string}}",
          "networkAccess": {
             "vpceIds": [ "{{string}}" ]
@@ -141,6 +142,7 @@ Content-type: application/json
                "idcManagedApplicationArn": "string",
                "idcRegion": "string"
             },
+            "endpointPrefix": "string",
             "namespace": "string",
             "networkAccess": {
                "vpceIds": [ "string" ]

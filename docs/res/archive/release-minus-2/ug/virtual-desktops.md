@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/virtual-d
 # Virtual desktops
 <a name="virtual-desktops"></a>
 
-The virtual desktop interface (VDI) module allows users create and manage Windows or Linux virtual desktops on AWS. Users can launch Amazon EC2 instances with their favorite tools and application pre-installed and configured.
+The virtual desktop infrastructure (VDI) module allows users to create and manage Windows or Linux virtual desktops on AWS. Users can launch Amazon EC2 instances with their favorite tools and application pre-installed and configured.
 
 **Supported operating systems**
 
@@ -18,6 +18,9 @@ RES currently supports launching virtual desktops using the following operating 
 + Windows Server 2019, 2022 (x86)
 + Windows 10, 11 (x86)
 
+**Note**
+Starting with release 2026.03, Amazon Linux 2 and RHEL 8 are no longer included as default software stacks. Custom software stacks with these operating systems can still be registered if required.
+
 **Topics**
 + [Launch a new desktop](launch-desktop.md)
 + [Access your desktop](access-desktop.md)
@@ -25,4 +28,4 @@ RES currently supports launching virtual desktops using the following operating 
 + [Modify a virtual desktop](modify-virtual-desktop.md)
 + [Retrieve session information](retrieve-session-information.md)
 + [Schedule virtual desktops](schedule-virtual-desktops.md)
-+ [Virtual desktop interface autostop](virtual-desktops-autostop.md)
++ [Virtual desktop infrastructure autostop](virtual-desktops-autostop.md)

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/media-extraction-and-dynamic-c
 title: 'Guidance for Media Extraction and Dynamic Content Policy Framework on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/media-extraction-and-dynamic-content-policy-framework-on-aws/
 source: aws-documentation
-generated_on: 2026-09-28
+generated_on: 2026-09-29
 ---
 
 # Guidance for Media Extraction and Dynamic Content Policy Framework on AWS

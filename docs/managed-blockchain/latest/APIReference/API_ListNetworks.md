@@ -5,6 +5,9 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/A
 # ListNetworks
 <a name="API_ListNetworks"></a>
 
+**Note**
+End of support notice: Amazon Managed Blockchain will stop accepting new customers on October 29, 2026. Existing customers can continue using Amazon Managed Blockchain until September 29, 2027. After September 29, 2027 you will no longer be able to access Amazon Managed Blockchain. For more information, see [Amazon Managed Blockchain availability change](https://docs.aws.amazon.com/managed-blockchain/latest/hyperledger-fabric-dev/managed-blockchain-end-of-support.html).
+
 Returns information about the networks in which the current AWS account participates.
 
 Applies to Hyperledger Fabric and Ethereum.

@@ -10,6 +10,7 @@ The following table describes the documentation for this release of AWS Elementa
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Playground and console updates](what-is.md) | Added the Elemental Inference playground for previewing smart cropping on recorded video. Updated the console procedures for creating, editing, archiving, and deleting feeds; managing feed resource policies; monitoring feeds; and managing dictionaries. | September 28, 2026 |
 | [Contextual metadata and feed policies](what-is.md) | Added support for contextual metadata, which uses AI to generate shot-level and scene-level content classifications (IAB Content Taxonomy v3.1 categories and GARM brand safety ratings) for contextual ad targeting. Added feed policies for granting cross-account access to feeds. | July 21, 2026 |
 | [New information](what-is.md) | New information has been added to all sections of this guide. | April 8, 2026 |
 | [New service and guide](what-is.md) | This is the initial release of the AWS Elemental Inference service and the AWS Elemental Inference User Guide. | February 24, 2026 |

@@ -72,6 +72,11 @@ Required: Yes
 Type: Timestamp
 Required: Yes
 
+ ** customMetadata **   <a name="agentregistry-Type-RegistryRecordSummary-customMetadata"></a>
+ The custom metadata attached to this registry record. Values are strings (maximum 128 characters) or booleans. This field is only present if the registry has a custom metadata schema configured.
+Type: JSON value
+Required: No
+
  ** description **   <a name="agentregistry-Type-RegistryRecordSummary-description"></a>
  A human-readable description of the registry record. Use this field to explain the record's purpose or content to consumers discovering it in the registry.
 Type: String

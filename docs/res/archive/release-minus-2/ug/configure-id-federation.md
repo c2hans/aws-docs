@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/configure
 # Configuring your identity provider for single sign-on (SSO)
 <a name="configure-id-federation"></a>
 
-Research and Engineering Studio integrates with any SAML 2.0 identity provider to authenticate user access to the RES portal. These steps provide directions to integrate with your chosen SAML 2.0 identity provider. If you intend to use IAM Identity Center, please see [Setting up single sign-on (SSO) with IAM Identity Center](sso-idc.md).
+Research and Engineering Studio integrates with any SAML 2.0 identity provider to authenticate user access to the RES portal. These steps provide directions to integrate with your chosen SAML 2.0 identity provider. If you intend to use IAM Identity Center, see [Setting up single sign-on (SSO) with IAM Identity Center](sso-idc.md).
 
 **Note**
 The user's email must match in the IDP SAML assertion and Active Directory. You will need to connect your identity provider with your Active Directory and periodically sync users.
@@ -38,7 +38,6 @@ ACS POST Binding URL
      1. Navigate to **Environment Management** ⇒ **General Settings** ⇒ **Identity Provider**.
 
      1. Choose **SAML Redirect URL**.
-
    + **SAML Audience URI** — The unique ID of the SAML audience entity on the service provider side.
 **Note**
 Depending on the IdP, the SAML Audience URI might have a different name:
@@ -77,7 +76,7 @@ SP entity ID
 
      ```
      <saml2p:Response
-       Destination="http://{{user-pool-domain}}/saml2/idpresponse"
+       Destination="https://{{user-pool-domain}}/saml2/idpresponse"
        ID="id123"
        InResponseTo="_dd0a3436-bc64-4679-a0c2-cb4454f04184"
        IssueInstant="Date-time stamp"

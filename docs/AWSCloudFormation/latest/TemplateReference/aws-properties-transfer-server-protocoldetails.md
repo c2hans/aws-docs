@@ -51,7 +51,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-transfer-server-protocoldetails-properties"></a>
 
 `As2Transports`  <a name="cfn-transfer-server-protocoldetails-as2transports"></a>
- List of `As2Transport` objects.
+Indicates the transport method for the AS2 messages. Currently, only HTTP is supported.
 *Required*: No
 *Type*: Array of String
 *Minimum*: `1`

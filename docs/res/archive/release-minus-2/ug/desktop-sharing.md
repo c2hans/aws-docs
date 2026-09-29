@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/desktop-s
 1. From your desktop session, choose **Actions**.
 ![Virtual desktops](https://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-virtualdesktops.png)
 
-1. Select **Session Permissions**.
+1. Choose **Session Permissions**.
 
 1. Select the user and permission level. You may also set an expiration time.
 

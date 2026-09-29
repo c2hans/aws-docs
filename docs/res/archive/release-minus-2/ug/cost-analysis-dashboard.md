@@ -58,7 +58,7 @@ When you choose the **Filter displayed data** dropdown you see a complete list o
 
 **Specifying the time range**
 
-You can choose to use an **Absolute range** or a **Relative range** when you specify a date range. When you select a relative range, the dates are calculated using complete time units. For example, if you select the **Past 6 months** option in February 2025, this will result in a time range of 8/1/25 - 1/31/25.
+You can choose to use an **Absolute range** or a **Relative range** when you specify a date range. When you select a relative range, the dates are calculated using complete time units. For example, if you select the **Past 6 months** option in February 2025, this will result in a time range of 8/1/24 - 1/31/25.
 
 ![Detail of pop-out that allows the selection of a relative time range](https://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-cost-analysis-time-range1.png)
 

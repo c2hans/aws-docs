@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/testing-language
 
 Observes when a specific flow action begins execution. This allows you to detect when particular flow actions are executed during the simulation.
 
+To observe when an action completes and reference the data it produced, see [Flow action completed](testing-language-events-flow-action-completed.md).
+
 ## Invoke Lambda function
 <a name="testing-language-events-flow-action-started-invoke-lambda"></a>
 

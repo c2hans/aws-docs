@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/contact-surveys-for-amazon-con
 title: 'Guidance for Contact Surveys for Amazon Connect Customer Customer'
 canonical_url: https://docs.aws.amazon.com/solutions/contact-surveys-for-amazon-connect/
 source: aws-documentation
-generated_on: 2026-09-28
+generated_on: 2026-09-29
 ---
 
 # Guidance for Contact Surveys for Amazon Connect Customer Customer

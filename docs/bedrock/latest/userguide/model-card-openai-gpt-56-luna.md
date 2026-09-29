@@ -19,7 +19,8 @@ GPT-5.6 Luna is the fast and affordable model from OpenAI. Use Luna for high-vol
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
 + **Model lifecycle:** Active
-+ **Context window:** 1M tokens
++ **Context window:** 1,050,000 tokens
++ **Max output tokens:** 128,000
 + **Marketplace product ID:** `prod-bpeu2ptegwjfa`
 
 | **Input Modalities** | **Output Modalities** |

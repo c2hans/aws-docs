@@ -55,7 +55,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-transfer-connector-as2config-properties"></a>
 
 `AsyncMdnConfig`  <a name="cfn-transfer-connector-as2config-asyncmdnconfig"></a>
-Property description not available.
+Configuration settings for asynchronous Message Disposition Notification (MDN) responses. This allows you to configure where asynchronous MDN responses should be sent and which servers should handle them.
 *Required*: No
 *Type*: [ConnectorAsyncMdnConfig](aws-properties-transfer-connector-connectorasyncmdnconfig.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -140,7 +140,7 @@ A unique identifier for the partner profile for the connector.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `PreserveContentType`  <a name="cfn-transfer-connector-as2config-preservecontenttype"></a>
-Property description not available.
+Allows you to use the Amazon S3 `Content-Type` that is associated with objects in S3 instead of having the content type mapped based on the file extension. This parameter is enabled by default when you create an AS2 connector from the console, but disabled by default when you create an AS2 connector by calling the API directly.
 *Required*: No
 *Type*: String
 *Allowed values*: `ENABLED | DISABLED`

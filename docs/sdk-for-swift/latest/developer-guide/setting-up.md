@@ -17,8 +17,8 @@ When you’ve finished following the steps in this article, or have confirmed th
 To make requests to AWS using the AWS SDK for Swift, you need the following:
 + An active AWS account.
 + A user in IAM Identity Center with permission to use the AWS services and resources your application will access.
-+ A development environment with version 5.9 or later of the Swift toolchain. If you don’t have this, you’ll install it as [ part of the steps below](#setup-envtools).
-+ Xcode users need version 15 or later of the Xcode application. This includes Swift 5.9.
++ A development environment with version 6.0 or later of the Swift toolchain. If you don’t have this, you’ll install it as [ part of the steps below](#setup-envtools).
++ Xcode users need version 16 or later of the Xcode application. This includes Swift 6.0.
 
 After finishing these steps, you’re ready to use the SDK to develop Swift projects that access AWS services.
 
@@ -54,9 +54,9 @@ If you plan to develop a macOS desktop application, keep in mind that due to san
 ## Setting up your Swift development environment
 <a name="setup-envtools"></a>
 
-The SDK requires at least version 5.9 of Swift. This can be installed either standalone or as part of the Xcode development environment on macOS.
-+ Swift 5.9 toolchain or newer.
-+ If you're developing on macOS using Xcode, you need a minimum of Xcode 15.
+The SDK requires at least version 6.0 of Swift. This can be installed either standalone or as part of the Xcode development environment on macOS.
++ Swift 6.0 toolchain or newer.
++ If you're developing on macOS using Xcode, you need a minimum of Xcode 16.
 + An AWS account. If you don’t have one already, you can create one using the [AWS portal](https://portal.aws.amazon.com/billing/signup).
 
 ### Prepare to install Swift
@@ -92,15 +92,15 @@ If Swift is already installed, you can verify the version number using the comma
 
 ```
 $ swift --version
-swift-driver version: 1.87.1 Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
-Target: x86_64-apple-macosx14.0
+swift-driver version: 1.115 Apple Swift version 6.0 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+Target: arm64-apple-macosx15.0
 ```
 
  **Checking the Swift version on Linux**
 
 ```
 $ swift --version
-Swift version 5.8.1 (swift-5.8.1-RELEASE)
+Swift version 6.0 (swift-6.0-RELEASE)
 Target: x86_64-unknown-linux-gnu
 ```
 

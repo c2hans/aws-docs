@@ -19,8 +19,8 @@ GPT-5.4 brings frontier reasoning, coding, computer use, long-context workflows,
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
 + **Model lifecycle:** Active
-+ **Context window:** 1M tokens
-+ **Max output tokens:** N/A
++ **Context window:** 1,050,000 tokens
++ **Max output tokens:** 128,000
 + **Marketplace product ID:** `prod-3bbohv3635iau`
 
 | **Input Modalities** | **Output Modalities** |

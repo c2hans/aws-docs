@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-android/index.html
 title: 'Amplify Android (AWS Mobile SDK for Android)'
 canonical_url: https://docs.aws.amazon.com/sdk-for-android/
 source: aws-documentation
-generated_on: 2026-09-28
+generated_on: 2026-09-29
 ---
 
 # Amplify Android (AWS Mobile SDK for Android)

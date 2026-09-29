@@ -111,7 +111,7 @@ If more than one worker is configured for the index build, it is displayed in th
 + **validating: scanning collection** - createIndex is scanning the collection to validate the index keys found in the previous two phases. The unit of measure is “blocks”.
 
 #### Index build output example
-<a name="w2aac35c17b5c13c15"></a>
+<a name="w2aac35c21b5c13c15"></a>
 
 In the following output example (foreground index build), the status of the index creation is shown. The “msg” field summarizes the build progress by indicating the stage and the completion percentage of the build. The “workers” field indicates the number of workers used during that stage of the index build. The “progress” field shows the actual numbers used to calculate the percentage of completion.
 
@@ -205,7 +205,7 @@ You can rebuild indexes without downtime using the `reIndex` command, which requ
 `reIndex` is a command used to rebuild an index. It is typically used when an index has become corrupted or inefficient. Over time, indexes can accumulate unused space due to many updates, inserts, or deletes, leading to degraded performance. Reindexing helps to remove such unused space and restore the efficiency of the index.
 
 #### `reIndex` guidelines
-<a name="w2aac35c17b7b7b5"></a>
+<a name="w2aac35c21b7b7b5"></a>
 + `reIndex` is only supported on Amazon DocumentDB 5.0.
 + Amazon DocumentDB supports `reindex` of a single index in the background, allowing for multiple workers. The old index is usable by queries when the `reIndex` process is running.
 + Amazon DocumentDB supports indexing progress report through `currentOp`. You can see index build stages similar to the [Index build stages](#index-build-stages) viewed during index creation. The only difference is that `reIndex` always has eight stages, regardless if it’s unique or not. There’s no “building index: sorting keys 2” stage.
@@ -213,7 +213,7 @@ You can rebuild indexes without downtime using the `reIndex` command, which requ
 + `reIndex` is currently not supported for text, geospatial, vector, and partial indexes.
 
 ##### `reIndex` build
-<a name="w2aac35c17b7b7b5b5"></a>
+<a name="w2aac35c21b7b7b5b5"></a>
 
 Use the following command to rebuild your index:
 

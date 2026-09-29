@@ -92,7 +92,7 @@ The following is the example bucket policy.
                     "aws:SourceArn": "arn:aws:s3:::DOC-EXAMPLE-SOURCE-BUCKET"
                 },
                 "StringEquals": {
-                    "aws:SourceAccount": "source-123456789012",
+                    "aws:SourceAccount": "111122223333",
                     "s3:x-amz-acl": "bucket-owner-full-control"
                 }
             }

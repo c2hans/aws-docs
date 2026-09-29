@@ -34,7 +34,6 @@ The following section contains issues that may occur, how to detect them, and su
 + [Infrastructure](#res-troubleshooting-infrastructure)
   + [Load balancer target groups without healthy instances](#res-troubleshooting-infrastructure-load-balancer)
 + [Launching Virtual Desktops](#res-troubleshooting-virtual-desktops)
-  + [I need to launch / resume a large number of VDIs in the RES web portal](#res-troubleshooting-virtual-desktops-resume-vdis)
   + [Login account for Windows Virtual Desktop is set to Administrator](#res-troubleshooting-virtual-desktops-windows-admin)
   + [Certificate expires when using external resource CertificateRenewalNode](#res-troubleshooting-virtual-desktops-certificate-expires)
   + [A virtual desktop that was previously working is no longer able to connect successfully](#res-troubleshooting-virtual-desktops-was-working)
@@ -597,7 +596,6 @@ If both Healthy and Unhealthy entries are 0, that indicates a potential network 
 <a name="res-troubleshooting-virtual-desktops"></a>
 
 **Topics**
-+ [I need to launch / resume a large number of VDIs in the RES web portal](#res-troubleshooting-virtual-desktops-resume-vdis)
 + [Login account for Windows Virtual Desktop is set to Administrator](#res-troubleshooting-virtual-desktops-windows-admin)
 + [Certificate expires when using external resource CertificateRenewalNode](#res-troubleshooting-virtual-desktops-certificate-expires)
 + [A virtual desktop that was previously working is no longer able to connect successfully](#res-troubleshooting-virtual-desktops-was-working)
@@ -606,19 +604,6 @@ If both Healthy and Unhealthy entries are 0, that indicates a potential network 
 + [VDIs stuck in Provisioning state](#res-troubleshooting-virtual-desktops-stuck-prov)
 + [VDIs get into Error state after launching](#res-troubleshooting-virtual-desktops-error-after)
 + [VDI session goes to a blank screen after logging in](#res-troubleshooting-virtual-desktops-vdi-blank-screen)
-
-........................
-
-### I need to launch / resume a large number of VDIs in the RES web portal
-<a name="res-troubleshooting-virtual-desktops-resume-vdis"></a>
-
-When you launch or resume a large number of VDIs in batch, they may end up in the Error state due to the configured provisioned throughput (5 - 20) for the `{{environment-name}}.vdc.dcv-broker.dcvServer` DynamoDB tables.
-
-To get around this issue, you can change the maximum read / write capacity units of the `{{environment-name}}.vdc.dcv-broker.dcvServer` table in the AWS DynamoDB console based on the historical capacity usage data as shown here:
-
-![the edit read write capacity settings page with provisioned selected](https://docs.aws.amazon.com/res/archive/release-minus-1/ug/images/res-edit-read-write-capacity.png)
-
-Note that launching 5 VDIs requires about 1 WCU of write operations and changing the read / write capacity units may impact your cost on RES. Please check [Pricing for Provisioned Capacity](https://aws.amazon.com/dynamodb/pricing/provisioned/) on the *Amazon DynamoDB pricing page*for more details.
 
 ........................
 

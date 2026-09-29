@@ -59,6 +59,7 @@ Content-type: application/json
    "registryRecords": [
       {
          "createdAt": "string",
+         "customMetadata": JSON value,
          "description": "string",
          "descriptors": {
             "a2aAgentCard": {

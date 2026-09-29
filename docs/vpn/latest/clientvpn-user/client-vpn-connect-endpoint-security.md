@@ -36,6 +36,13 @@ C:\Program Files\Amazon\AWS VPN Client\aws-client-vpn-daemon.exe
 ```
 This is the core process that establishes and maintains the VPN tunnel connection.
 
+Device posture agent
+
+```
+C:\Program Files\Amazon\AWS VPN Client\aws-vpn-client-agent.exe
+```
+When you connect to an endpoint that has device posture enabled, this process reads the device posture data from your device trust provider.
+
 **Before version 6.0**
 
 VPN client application
@@ -82,6 +89,13 @@ Daemon
 ```
 This is the core process that establishes and maintains the VPN tunnel connection.
 
+Device posture agent
+
+```
+/Applications/AWS VPN Client/AWS VPN Client.app/Contents/Helpers/aws-vpn-client-agent
+```
+When you connect to an endpoint that has device posture enabled, this process reads the device posture data from your device trust provider.
+
 **Before version 6.0**
 
 VPN client application
@@ -127,6 +141,13 @@ Daemon
 /opt/awsvpnclient/aws-client-vpn-daemon
 ```
 This is the core process that establishes and maintains the VPN tunnel connection.
+
+Device posture agent
+
+```
+/opt/awsvpnclient/aws-vpn-client-agent
+```
+When you connect to an endpoint that has device posture enabled, this process reads the device posture data from your device trust provider.
 
 **Before version 6.0**
 

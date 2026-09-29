@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 The project designation of the project policy grant principal.
 *Required*: No
 *Type*: String
-*Allowed values*: `OWNER | CONTRIBUTOR | PROJECT_CATALOG_STEWARD`
+*Pattern*: `^[a-zA-Z0-9_-]{1,36}$`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `ProjectGrantFilter`  <a name="cfn-datazone-policygrant-projectpolicygrantprincipal-projectgrantfilter"></a>

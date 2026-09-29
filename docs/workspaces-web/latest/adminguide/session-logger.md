@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/workspaces-web/latest/adminguide/session-logger.html
 ---
 
+Amazon WorkSpaces Secure Browser will no longer be open to new customers starting October 29, 2026. If you would like to use Amazon WorkSpaces Secure Browser, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see [Amazon WorkSpaces Secure Browser maintenance mode](https://docs.aws.amazon.com/latest/adminguide/workspaces-secure-browser-maintenance-mode.html).
+
 # Setting up Session Logger for Amazon WorkSpaces Secure Browser
 <a name="session-logger"></a>
 
@@ -34,7 +36,15 @@ Below is an example of a policy for your Amazon S3 bucket. Make sure to update t
             ],
             "Resource": [
                 "arn:aws:s3:::{{bucket-name}}/*"
-            ]
+            ],
+            "Condition": {
+                "StringEquals": {
+                    "aws:SourceAccount": "{{account-id}}"
+                },
+                "ArnLike": {
+                    "aws:SourceArn": "arn:aws:workspaces-web:{{region}}:{{account-id}}:sessionLogger/*"
+                }
+            }
         }
     ]
  }

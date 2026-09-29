@@ -11,7 +11,7 @@ If a bucket fails to mount on a VDI, there are a few locations where you can che
 
 1. Check the VDI Logs:
 
-   1. Log into the AWS Management Console.
+   1. Sign in to the AWS Management Console.
 
    1. Open the EC2 Console and navigate to **Instances**.
 
@@ -32,7 +32,7 @@ If a bucket fails to mount on a VDI, there are a few locations where you can che
 
 1. Check Custom Credential Broker Lambda CloudWatch Logs:
 
-   1. Log into the AWS Management Console.
+   1. Sign in to the AWS Management Console.
 
    1. Open the CloudWatch Console and navigate to **Log groups**.
 
@@ -42,7 +42,7 @@ If a bucket fails to mount on a VDI, there are a few locations where you can che
 
 1. Check Custom Credential Broker API Gateway CloudWatch Logs:
 
-   1. Log into the AWS Management Console.
+   1. Sign in to the AWS Management Console.
 
    1. Open the CloudWatch Console and navigate to **Log groups**.
 

@@ -14,4 +14,4 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/launch-de
 
 1. Choose **Submit**.
 
-A new card with your desktop information appears instantly, and your desktop will be ready to use within 10-15 minutes. Startup time depends on the selected image. RES detects GPU instances and installs the relevant drivers.
+A new card with your desktop information appears instantly, and your desktop will be ready to use within 10 to 15 minutes. Startup time depends on the selected image. RES detects GPU instances and installs the relevant drivers.

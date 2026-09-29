@@ -71,6 +71,8 @@ The address range cannot overlap with the target network address range, the VPC 
 1. Under **Authentication options**, choose **Use mutual authentication**, and then for **Client certificate ARN**, select the ARN of the certificate you want to use as the client certificate.
 
    If the server and client certificates are signed by the same certificate authority (CA), you have the option of specifying the server certificate ARN for *both* the client and server certificates. In this scenario, any client certificate that corresponds with the server certificate can be used to authenticate.
+**Note**
+To require device health checks on this endpoint, configure device posture options with one or more device trust providers when you create the endpoint. See [Device posture for AWS Client VPN](device-posture.md).
 
 1. (Optional) Specify which DNS servers to use for DNS resolution. To use custom DNS servers, for **DNS Server 1 IP address** and **DNS Server 2 IP address**, specify the IP addresses of the DNS servers to use. To use VPC DNS server, for either **DNS Server 1 IP address** or **DNS Server 2 IP address**, specify the IP addresses, and add the VPC DNS server IP address.
 **Note**

@@ -20,3 +20,23 @@ File systems intended to be used as home directories on projects must be onboard
 
 1. Choose **Submit**.
 ![Select file system](https://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-filesystemdetails.jpg)
+
+## Multiple volumes from a single ONTAP file system
+<a name="onboard-multiple-ontap-volumes"></a>
+
+RES supports onboarding multiple volumes from a single for NetApp ONTAP file system. This allows administrators to organize data across separate volumes within the same ONTAP file system while making each volume independently available to projects.
+
+To onboard additional volumes from an ONTAP file system that is already onboarded:
+
+1. Choose **Onboard File System**.
+
+1. Select the same ONTAP file system from the drop down.
+
+1. In the **Volume** field, select a different volume from the file system.
+
+1. Specify a unique **Mount Directory** for this volume.
+
+1. Choose **Submit**.
+
+**Note**
+Each volume from the same ONTAP file system must be onboarded with a unique mount directory. Volumes can be independently assigned to different projects.

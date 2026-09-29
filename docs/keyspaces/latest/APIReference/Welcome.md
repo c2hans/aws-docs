@@ -15,4 +15,4 @@ To learn how Amazon Keyspaces API actions are recorded with AWS CloudTrail, see 
 
 For more information about AWS APIs, for example how to implement retry logic or how to sign AWS API requests, see [AWS APIs](https://docs.aws.amazon.com/general/latest/gr/aws-apis.html) in the *General Reference*.
 
-This document was last published on September 28, 2026.
+This document was last published on September 29, 2026.

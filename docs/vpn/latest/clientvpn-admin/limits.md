@@ -20,6 +20,7 @@ To request a quota increase for an adjustable quota, choose **Yes** in the **Adj
 | Concurrent operations per Client VPN endpoint † | 10 | No |
 | Entries in a client certificate revocation list for Client VPN endpoints | 20,000 | No |
 | Routes per Client VPN target network association | 100 For dual-stack endpoints, this limit is shared between IPv4 and IPv6 routes. | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-401D78F7) |
+| Authorization policy document size per Client VPN endpoint | 10,000 bytes | No |
 
 † Operations include:
 + Associate or disassociate subnets
@@ -39,3 +40,11 @@ When you configure users and groups for Active Directory or a SAML-based IdP, th
 Take the following into consideration when you use Client VPN endpoints:
 + If you use Active Directory to authenticate the user, the Client VPN endpoint must belong to the same account as the AWS Directory Service resource used for Active Directory authentication.
 + If you use SAML-based federated authentication to authenticate a user, the Client VPN endpoint must belong to the same account as the IAM SAML identity provider that you create to define the IdP to AWS trust relationship. The IAM SAML identity provider can be shared across multiple Client VPN endpoints in the same AWS account.
+
+## Device posture considerations
+<a name="quotas-device-posture"></a>
+
+Take the following into consideration when you enable device posture on a Client VPN endpoint:
++ The authorization policy document cannot exceed 10,000 bytes.
++ Client VPN evaluates the authorization policy when a device connects and again every 5 minutes for the life of the session.
++ Device posture requires one or more supported device trust providers (CrowdStrike, Jamf, or JumpCloud). For more information, see [Device posture for AWS Client VPN](device-posture.md).

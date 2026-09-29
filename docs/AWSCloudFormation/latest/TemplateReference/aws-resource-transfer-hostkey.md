@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Transfer::HostKey
 <a name="aws-resource-transfer-hostkey"></a>
 
-<a name="aws-resource-transfer-hostkey-description"></a>The `AWS::Transfer::HostKey` resource Property description not available. for Transfer.
+Adds a host key to the server that's specified by the `ServerId` parameter.
 
 ## Syntax
 <a name="aws-resource-transfer-hostkey-syntax"></a>
@@ -55,14 +55,15 @@ The text description for this host key.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `HostKeyBody`  <a name="cfn-transfer-hostkey-hostkeybody"></a>
-Property description not available.
+The private key portion of an SSH key pair.
+AWS Transfer Family accepts RSA, ECDSA, and ED25519 keys.
 *Required*: No
 *Type*: String
 *Maximum*: `4096`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `ServerId`  <a name="cfn-transfer-hostkey-serverid"></a>
-Property description not available.
+The identifier of the server that contains the host key that you are importing.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^s-([0-9a-f]{17})$`
@@ -85,6 +86,10 @@ Key-value pairs that can be used to group and search for host keys.
 
 ### Fn::GetAtt
 <a name="aws-resource-transfer-hostkey-return-values-fn--getatt"></a>
+
+The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-transfer-hostkey-return-values-fn--getatt-fn--getatt"></a>

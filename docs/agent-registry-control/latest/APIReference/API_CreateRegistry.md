@@ -23,6 +23,15 @@ Content-type: application/json
       "scope": "{{string}}"
    },
    "clientToken": "{{string}}",
+   "customMetadataSchemaConfiguration": {
+      "defaultSchema": "{{string}}",
+      "recordTypeSchemaOverrides": [
+         {
+            "recordType": "{{string}}",
+            "schema": "{{string}}"
+         }
+      ]
+   },
    "description": "{{string}}",
    "discoveryConfiguration": {
       "authorizerConfiguration": { ... },
@@ -63,6 +72,11 @@ A unique, case-sensitive identifier to ensure that the operation completes no mo
 Type: String
 Length Constraints: Minimum length of 33. Maximum length of 256.
 Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,256}`
+Required: No
+
+ ** [customMetadataSchemaConfiguration](#API_CreateRegistry_RequestSyntax) **   <a name="agentregistrycontrol-CreateRegistry-request-customMetadataSchemaConfiguration"></a>
+The optional custom metadata schema configuration for the registry. When provided, registry records can carry structured metadata validated against this schema.
+Type: [CustomMetadataSchemaConfiguration](API_CustomMetadataSchemaConfiguration.md) object
 Required: No
 
  ** [description](#API_CreateRegistry_RequestSyntax) **   <a name="agentregistrycontrol-CreateRegistry-request-description"></a>

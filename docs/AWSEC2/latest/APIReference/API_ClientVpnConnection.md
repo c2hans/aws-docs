@@ -10,6 +10,11 @@ Describes a client connection.
 ## Contents
 <a name="API_ClientVpnConnection_Contents"></a>
 
+ ** authorizationPolicyLastEvaluatedTime **
+The date and time the authorization policy was last evaluated for the client connection, if applicable.
+Type: String
+Required: No
+
  ** clientIp **
 The IP address of the client.
 Type: String

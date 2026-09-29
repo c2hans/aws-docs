@@ -38,7 +38,7 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-3/ug/setup-cus
 
 1. If SSO is already configured in the environment, re-configure SSO with the same inputs as you used initially from the **Environment Management** > **Identity management** > **Single Sign-On** > **Status** > **Edit** button in the RES web portal.
 
-**Add certs to the VDIs**
+**Add certs to the VDIs or rotate certs**
 
 1. Grant the RES application permission to perform a GetSecret operation on the secret by adding the following tags to the secrets:
    + `res:EnvironmentName` : `{{<env-name>}}`
@@ -78,4 +78,4 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-3/ug/setup-cus
 
 1. Update the corresponding Route53 subdomain record you created for your virtual desktops to point to the DNS name of the external nlb load balancer: `{{<env-name>}}-external-nlb`.
 
-1. Terminate the existing dcv-gateway instance: `{{<env-name>}}-vdc-gateway` and wait for a new one to spin up.
+1. Terminate the existing dcv-gateway instance: `{{<env-name>}}-vdc-gateway` and wait for a new one to spin up. The dcv-gateway instance checks daily at 12:00 AM (midnight) UTC for changes to the certificate and private key values stored in Secrets Manager, and automatically retrieves and applies new values if updated.

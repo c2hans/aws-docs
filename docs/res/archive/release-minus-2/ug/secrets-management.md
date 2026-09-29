@@ -10,8 +10,8 @@ Research and Engineering Studio maintains the following secrets using AWS Secret
 | Secret name |  Description  |  RES generated | Admin entered |
 | --- | --- | --- | --- |
 | {{<envname>}}-sso-client-secret | Single Sign-On OAuth2 Client Secret for environment | ✓ |  |
-| {{<envname>}}-vdc-client-secret | vdc ClientSecret | ✓ |  |
-| {{<envname>}}-vdc-client-id | vdc ClientId | ✓ |  |
+| {{<envname>}}-vdc-client-secret | VDC ClientSecret | ✓ |  |
+| {{<envname>}}-vdc-client-id | VDC ClientId | ✓ |  |
 | {{<envname>}}-vdc-gateway-certificate-private-key | Self-Signed certificate private key for domain | ✓ |  |
 | {{<envname>}}-vdc-gateway-certificate-certificate | Self-Signed certificate for domain | ✓ |  |
 | {{<envname>}}-cluster-manager-client-secret | cluster-manager ClientSecret | ✓ |  |

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/open-source-3d-reconstruction-
 title: 'Guidance for Open Source 3D Reconstruction Toolbox for Gaussian Splats on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/open-source-3d-reconstruction-toolbox-for-gaussian-splats-on-aws/
 source: aws-documentation
-generated_on: 2026-09-28
+generated_on: 2026-09-29
 ---
 
 # Guidance for Open Source 3D Reconstruction Toolbox for Gaussian Splats on AWS

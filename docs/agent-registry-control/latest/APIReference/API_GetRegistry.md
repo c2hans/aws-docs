@@ -50,6 +50,15 @@ Content-type: application/json
       "statusReason": "string"
    },
    "createdAt": "string",
+   "customMetadataSchemaConfiguration": {
+      "defaultSchema": "string",
+      "recordTypeSchemaOverrides": [
+         {
+            "recordType": "string",
+            "schema": "string"
+         }
+      ]
+   },
    "description": "string",
    "discoveryConfiguration": {
       "authorizerConfiguration": { ... },
@@ -85,6 +94,10 @@ Type: [AutoDetection](API_AutoDetection.md) object
  ** [createdAt](#API_GetRegistry_ResponseSyntax) **   <a name="agentregistrycontrol-GetRegistry-response-createdAt"></a>
 The timestamp when the registry was created
 Type: Timestamp
+
+ ** [customMetadataSchemaConfiguration](#API_GetRegistry_ResponseSyntax) **   <a name="agentregistrycontrol-GetRegistry-response-customMetadataSchemaConfiguration"></a>
+The custom metadata schema configuration for this registry, if one has been defined.
+Type: [CustomMetadataSchemaConfiguration](API_CustomMetadataSchemaConfiguration.md) object
 
  ** [description](#API_GetRegistry_ResponseSyntax) **   <a name="agentregistrycontrol-GetRegistry-response-description"></a>
 The description of the registry

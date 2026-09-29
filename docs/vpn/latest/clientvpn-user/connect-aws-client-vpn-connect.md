@@ -8,9 +8,11 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-user/connect-aws-cl
 You can connect to a Client VPN endpoint using the AWS provided client, which is supported on Windows, macOS, and Ubuntu. You can use the client in two ways — through the graphical user interface (GUI) or the command line interface (CLI). The AWS provided client also supports up to five concurrent connections as well as OpenVPN directives.
 
 **Topics**
++ [Updates](#support-updates)
 + [CLI commands](#cli-commands)
 + [Admin controls](#admin-controls)
 + [Support for concurrent connections](#support-multi)
++ [Connecting with device posture](#connect-device-posture)
 + [OpenVPN directives](#support-openvpn)
 
 ## Security
@@ -22,6 +24,15 @@ While the AWS provided client is designed to mitigate threats originating from m
 + Preventing unauthorized modification or abuse by local users
 + Restricting administrative privileges to trusted users
 + Maintaining up-to-date security patches
+
+## Software updates
+<a name="support-updates"></a>
+
+We recommend that you always run the latest version of the AWS provided client to receive the newest features and security patches.
+
+On Windows and macOS, the AWS provided client automatically checks for a newer version and, when one is available, displays a notification that prompts you to update. Follow the prompt to install the update.
+
+On Ubuntu, the AWS provided client for Linux does not automatically check for updates. We recommend that you install the client through the package repository and keep it current from there. For more information, see [Install the provided AWS Client VPN for Linux](client-vpn-connect-linux-install.md).
 
 ## Connect using the command line interface
 <a name="cli-commands"></a>
@@ -68,6 +79,16 @@ Concurrent DNS connections are allowed. The DNS server of one of the DNS-enabled
 **Note**
 The maximum number of allowed concurrent sessions is five.
 
+## Connecting to an endpoint that requires device posture
+<a name="connect-device-posture"></a>
+
+If your administrator has enabled device posture on an endpoint, the AWS provided client collects device posture data from your device trust provider when you connect and sends it to the endpoint for evaluation. To connect to an endpoint that requires device posture, you must meet the following requirements:
++ Use the AWS provided client, version 6.2.0 or later. Device posture is not supported with other OpenVPN clients.
++ Your device trust provider must be set up on your device. The following providers are supported by operating system: CrowdStrike (macOS, Windows), Jamf (macOS), and JumpCloud (macOS, Windows, Ubuntu).
++ The profile you import includes an `aws-auth-device-posture <provider>` directive in its configuration. Do not remove this line.
+
+If your device does not meet the policy, the connection is refused. Your session can also end mid-session if your device later falls out of compliance. If you are denied unexpectedly, confirm your device trust provider is set up and your device is compliant with your organization's requirements, then try again.
+
 ## OpenVPN directives
 <a name="support-openvpn"></a>
 
@@ -76,6 +97,7 @@ The AWS provided client supports the following OpenVPN directives. For more info
 + auth-nocache
 + auth-retry
 + auth-user-pass
++ aws-auth-device-posture
 + block-outside-dns
 + ca
 + cert

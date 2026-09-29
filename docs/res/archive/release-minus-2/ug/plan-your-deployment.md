@@ -14,7 +14,7 @@ Research and Engineering Studio on AWS is available at no additional charge, and
 
 **Note**
 You are responsible for the cost of the AWS services used while running this product.
- We recommend creating a [budget](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-create.html) through  [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/)  to help manage costs. Prices are subject to change. For full details, see the pricing webpage for each AWS service used in this product.
+As a best practice, create a [budget](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-create.html) through [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/) to help manage costs. Prices are subject to change. For full details, see the pricing webpage for each AWS service used in this product.
 
 ## Security
 <a name="plan-your-deployment-security"></a>
@@ -39,14 +39,14 @@ Your organization's administrator can manage user access with an active director
 ### Security groups
 <a name="plan-your-deployment-security-groups"></a>
 
-The security groups created in this product are designed to control and isolate network traffic between the Lambda functions, EC2 instances, file systems CSR instances, and remote VPN endpoints. We recommend that you review the security groups and further restrict access as needed once the product is deployed.
+The security groups created in this product are designed to control and isolate network traffic between the Lambda functions, Amazon EC2 instances, file systems, and remote VPN endpoints. Review the security groups and further restrict access as needed after the product is deployed.
 
 ### Data encryption
 <a name="plan-your-deployment-data-encryption"></a>
 
-By default, Research and Engineering Studio on AWS (RES) encrypts customer data at rest and in transit using an RES owned key. When you deploy RES, you may specify an AWS KMS key. RES uses your credentials to grant key access. If you supply a customer owned and managed AWS KMS key, customer data at rest will be encrypted using that key.
+By default, Research and Engineering Studio on AWS (RES) encrypts customer data at rest and in transit using an RES-owned key. When you deploy RES, you may specify an AWS KMS key. RES uses your credentials to grant key access. If you supply a customer owned and managed AWS KMS key, customer data at rest will be encrypted using that key.
 
-RES encrypts customer data in transit using SSL/TLS. We require TLS 1.2, but recommend TLS 1.3.
+RES encrypts customer data in transit using SSL/TLS. TLS 1.2 is required, but TLS 1.3 is recommended.
 
 ### Security considerations for services in this product
 <a name="plan-your-deployment-security-links"></a>
@@ -56,7 +56,7 @@ For more detailed information regarding security considerations for the services
 | AWS service security info | Service type | How the service is used in RES |
 | --- | --- | --- |
 | [Amazon Elastic Compute Cloud](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security.html) | Core | Provides the underlying compute services to create virtual desktops with their chosen operating system and software stack. |
-| [Elastic Load Balancing](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/security.html) | Core | Bastion, cluster-manager, and VDI hosts are created in Auto Scaling groups behind the load balancer. ELB balances traffic from the web portal across RES hosts. |
+| [Elastic Load Balancing](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/security.html) | Core | Bastion, cluster-manager, and VDI hosts are created in Auto Scaling groups behind the load balancer. Elastic Load Balancing balances traffic from the web portal across RES hosts. |
 | [Amazon Virtual Private Cloud](https://docs.aws.amazon.com/vpc/latest/userguide/security.html) | Core | All core product components are created within your VPC. |
 | [Amazon Cognito](https://docs.aws.amazon.com/cognito/latest/developerguide/security.html) | Core | Manages user identities and authentication. Active Directory users are mapped to Amazon Cognito users and groups to authenticate access levels. |
 | [Amazon Elastic File System](https://docs.aws.amazon.com/efs/latest/ug/security-considerations.html) | Core | Provides the /home file system for the file browser and VDI hosts, as well as shared external file systems. |
@@ -71,7 +71,7 @@ For more detailed information regarding security considerations for the services
 | [AWS Identity and Access Management](https://docs.aws.amazon.com/IAM/latest/UserGuide/security.html) | Supporting | Restricts the access level for hosts. |
 | [Amazon Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/security.html) | Supporting | Creates private hosted zone for resolving the internal load balancer and the bastion host domain name.  |
 | [Amazon Simple Queue Service](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-security.html) | Supporting | Creates task queues to support asynchronous executions. |
-| [Amazon Simple Notification Service](https://docs.aws.amazon.com/sns/latest/dg/sns-security.html) | Supporting | Supports the publication-subscriber model between VDI components such as the controller and hosts. |
+| [Amazon Simple Notification Service](https://docs.aws.amazon.com/sns/latest/dg/sns-security.html) | Supporting | Supports the publish-subscribe model between VDI components such as the controller and hosts. |
 | [AWS Fargate](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security-fargate.html) | Supporting | Installs, updates, and deletes environments using Fargate tasks. |
 | [Amazon FSx File Gateway](https://docs.aws.amazon.com/filegateway/latest/filefsxw/security.html) | Optional | Provides external shared file system. |
 | [Amazon FSx for NetApp ONTAP](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/security.html) | Optional | Provides external shared file system. |
@@ -88,7 +88,7 @@ Service quotas, also referred to as limits, are the maximum number of service re
 
 Make sure you have sufficient quota for each of the [ services implemented in this product](architecture-overview.md#aws-services-in-this-product). For more information, see [AWS service quotas](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html).
 
-For this product, we recommend raising quotas for the following services:
+As a best practice, raise quotas for the following services:
 + Amazon Virtual Private Cloud
 + Amazon EC2
 
@@ -97,12 +97,12 @@ To request a quota increase, see [Requesting a Quota Increase](https://docs.aws.
 ### AWS CloudFormation quotas
 <a name="aws-cloudformation-quotas"></a>
 
-Your AWS account has AWS CloudFormation quotas that you should be aware of when [launching the stack](launch-the-product.md) in this product. By understanding these quotas, you can avoid limitation errors that would prevent you from deploying this product successfully. For more information, see [AWS CloudFormation quotas](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cloudformation-limits.html) in the in the *AWS CloudFormation User’s Guide*.
+Your AWS account has AWS CloudFormation quotas that you should be aware of when [launching the stack](launch-the-product.md) in this product. By understanding these quotas, you can avoid limitation errors that would prevent you from deploying this product successfully. For more information, see [AWS CloudFormation quotas](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cloudformation-limits.html) in the *AWS CloudFormation User Guide*.
 
 ### Planning for resilience
 <a name="planning-for-resilience"></a>
 
-The product deploys a default infrastructure with the minimum number and size of Amazon EC2 instances to operate the system. To improve resilience in large-scale production environments, we recommend increasing the default minimum capacity settings within the infrastructure's Auto Scaling groups (ASG). Increasing the value from one instance to two instances provides the benefit of multiple Availability Zones (AZ) and reduces the time to restore system functionality in the event of unexpected data loss.
+The product deploys a default infrastructure with the minimum number and size of Amazon EC2 instances to operate the system. To improve resilience in large-scale production environments, as a best practice, increase the default minimum capacity settings within the infrastructure's Auto Scaling groups (ASG). Increasing the value from one instance to two instances provides the benefit of multiple Availability Zones (AZ) and reduces the time to restore system functionality in the event of unexpected data loss.
 
 ASG settings can be customized within the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/). The product creates four ASGs by default with each name ending with `-asg`. You can change the minimum and desired values to an amount appropriate for your production environment. Select the group you want to modify, and then choose **Actions** and select **Edit**. For more information on ASGs, see [Scale the size of your Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/scale-your-group.html) in the *Amazon EC2 Auto Scaling User Guide*.
 
@@ -113,7 +113,7 @@ This product uses services which are not currently available in all AWS Regions.
 
 Research and Engineering Studio on AWS is supported in the following AWS Regions:
 
-| Region name | Region | Previous versions | Latest version (2025.12) |
+| Region name | Region | Previous versions | Latest version (2026.03) |
 | --- | --- | --- | --- |
 | US East (N. Virginia)  | us-east-1 | yes | yes |
 | US East (Ohio)  | us-east-2 | yes | yes |

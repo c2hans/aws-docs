@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com//solutions/landing-zone-accelerator-on-a
 title: 'Landing Zone Accelerator on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/landing-zone-accelerator-on-aws/
 source: aws-documentation
-generated_on: 2026-09-28
+generated_on: 2026-09-29
 ---
 
 # Landing Zone Accelerator on AWS

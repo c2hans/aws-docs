@@ -175,7 +175,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [quicksight:TagResource](#list_quicksight-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateOAuthClientApplication  **
-  - **IAM action:**  [quicksight:CreateDataSource](#list_quicksight-action-CreateDataSource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [quicksight:CreateOAuthClientApplication](#list_quicksight-action-CreateOAuthClientApplication)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [quicksight:TagResource](#list_quicksight-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
@@ -401,8 +400,10 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Access level:** Write
 
 - **   DeleteOAuthClientApplication  **
-  - **IAM action:**  [quicksight:DeleteDataSource](#list_quicksight-action-DeleteDataSource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
-  - **IAM action:**  [quicksight:DeleteOAuthClientApplication](#list_quicksight-action-DeleteOAuthClientApplication)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [quicksight:DeleteOAuthClientApplication](#list_quicksight-action-DeleteOAuthClientApplication)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
 
 - **   DeleteRefreshSchedule  **
   - **IAM action:**  [quicksight:DeleteRefreshSchedule](#list_quicksight-action-DeleteRefreshSchedule)
@@ -775,8 +776,10 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Access level:** Read
 
 - **   DescribeOAuthClientApplication  **
-  - **IAM action:**  [quicksight:DescribeDataSource](#list_quicksight-action-DescribeDataSource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
-  - **IAM action:**  [quicksight:DescribeOAuthClientApplication](#list_quicksight-action-DescribeOAuthClientApplication)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+  - **IAM action:**  [quicksight:DescribeOAuthClientApplication](#list_quicksight-action-DescribeOAuthClientApplication)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
 
 - **   DescribeQPersonalizationConfiguration  **
   - **IAM action:**  [quicksight:DescribeQPersonalizationConfiguration](#list_quicksight-action-DescribeQPersonalizationConfiguration)
@@ -1118,8 +1121,10 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Access level:** List
 
 - **   ListOAuthClientApplications  **
-  - **IAM action:**  [quicksight:ListDataSources](#list_quicksight-action-ListDataSources)  / **Condition key:**  / **Possible value(s):**  / **Access level:** List
-  - **IAM action:**  [quicksight:ListOAuthClientApplications](#list_quicksight-action-ListOAuthClientApplications)  / **Condition key:**  / **Possible value(s):**  / **Access level:** List
+  - **IAM action:**  [quicksight:ListOAuthClientApplications](#list_quicksight-action-ListOAuthClientApplications)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
 
 - **   ListRefreshSchedules  **
   - **IAM action:**  [quicksight:ListRefreshSchedules](#list_quicksight-action-ListRefreshSchedules)
@@ -1616,8 +1621,10 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Access level:** Write
 
 - **   UpdateOAuthClientApplication  **
-  - **IAM action:**  [quicksight:UpdateDataSource](#list_quicksight-action-UpdateDataSource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
-  - **IAM action:**  [quicksight:UpdateOAuthClientApplication](#list_quicksight-action-UpdateOAuthClientApplication)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [quicksight:UpdateOAuthClientApplication](#list_quicksight-action-UpdateOAuthClientApplication)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
 
 - **   UpdatePublicSharingSettings  **
   - **IAM action:**  [quicksight:UpdatePublicSharingSettings](#list_quicksight-action-UpdatePublicSharingSettings)

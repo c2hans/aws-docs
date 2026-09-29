@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/launching-a-simple-ecommerce-w
 title: 'Guidance for Launching a Simple Ecommerce Website with WordPress on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/launching-a-simple-ecommerce-website-with-wordpress-on-aws/
 source: aws-documentation
-generated_on: 2026-09-28
+generated_on: 2026-09-29
 ---
 
 # Guidance for Launching a Simple Ecommerce Website with WordPress on AWS

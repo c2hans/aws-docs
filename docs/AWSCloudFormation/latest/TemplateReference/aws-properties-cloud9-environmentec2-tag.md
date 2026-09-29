@@ -47,6 +47,5 @@ The **name** part of a tag.
 The **value** part of a tag.
 *Required*: Yes
 *Type*: String
-*Minimum*: `0`
 *Maximum*: `256`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

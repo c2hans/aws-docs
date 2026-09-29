@@ -25,6 +25,8 @@ If you're running a version approaching its end of supported life (EOSL) date, p
 | 2025.03.x | 3/30/2026 |
 | 2025.06.x | 6/30/2026 |
 | 2025.09.x | 9/30/2026 |
+| 2025.12.x | 12/31/2026 |
+| 2026.03.x | 3/30/2027 |
 
 **Important**
 You are responsible for patching your infra / VDI hosts after deployment.

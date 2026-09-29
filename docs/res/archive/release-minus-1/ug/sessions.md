@@ -43,6 +43,8 @@ Sessions displays all virtual desktops created within Research and Engineering S
 1. Enter details for the new session.
 
 1. (Optional.) Turn on **Show Advanced Options** to provide additional details such as subnet ID and DCV session type.
+**Virtual session type deprecated**
+Starting with the 2026.06 release, the *Virtual* session type is no longer supported. All sessions now use the *Console* session type. If your configuration or automation specifies the Virtual session type, update it to use Console.
 
 1. Choose **Submit**.
 ![Details of admin console page with fields to be filled out to launch a new virtual desktop](https://docs.aws.amazon.com/res/archive/release-minus-1/ug/images/res-createsession.jpg)
@@ -52,4 +54,4 @@ Sessions displays all virtual desktops created within Research and Engineering S
 
 From the **Sessions** list, select the ** Session Name** to view session details.
 
-![Admin console page with view of session details](https://docs.aws.amazon.com/res/archive/release-minus-1/ug/images/res-viewsessiondetails.jpg)
+![Admin console page with view of session details](https://docs.aws.amazon.com/res/archive/release-minus-1/ug/images/res-viewsessiondetails.png)

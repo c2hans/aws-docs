@@ -108,6 +108,8 @@ The following data types are supported by Amazon Connect Customer Profiles:
 +  [Readiness](API_connect-customer-profiles_Readiness.md)
 +  [Recommendation](API_connect-customer-profiles_Recommendation.md)
 +  [RecommendationDiversityConfig](API_connect-customer-profiles_RecommendationDiversityConfig.md)
++  [RecommendationMetadata](API_connect-customer-profiles_RecommendationMetadata.md)
++  [Recommender](API_connect-customer-profiles_Recommender.md)
 +  [RecommenderConfig](API_connect-customer-profiles_RecommenderConfig.md)
 +  [RecommenderFilter](API_connect-customer-profiles_RecommenderFilter.md)
 +  [RecommenderFilterSummary](API_connect-customer-profiles_RecommenderFilterSummary.md)

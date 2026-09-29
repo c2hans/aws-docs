@@ -38,6 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[DBClusterIdentifiers](#cfn-rds-dbproxytargetgroup-dbclusteridentifiers)" : {{[ String, ... ]}},
       "[DBInstanceIdentifiers](#cfn-rds-dbproxytargetgroup-dbinstanceidentifiers)" : {{[ String, ... ]}},
       "[DBProxyName](#cfn-rds-dbproxytargetgroup-dbproxyname)" : {{String}},
+      "[Tags](#cfn-rds-dbproxytargetgroup-tags)" : {{[ Tag, ... ]}},
       "[TargetGroupName](#cfn-rds-dbproxytargetgroup-targetgroupname)" : {{String}}
     }
 }
@@ -56,6 +57,8 @@ Properties:
   [DBInstanceIdentifiers](#cfn-rds-dbproxytargetgroup-dbinstanceidentifiers): {{
     - String}}
   [DBProxyName](#cfn-rds-dbproxytargetgroup-dbproxyname): {{String}}
+  [Tags](#cfn-rds-dbproxytargetgroup-tags): {{
+    - Tag}}
   [TargetGroupName](#cfn-rds-dbproxytargetgroup-targetgroupname): {{String}}
 ```
 
@@ -87,6 +90,12 @@ The identifier of the `DBProxy` that is associated with the `DBProxyTargetGroup`
 *Pattern*: `[A-z][0-z]*`
 *Maximum*: `64`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`Tags`  <a name="cfn-rds-dbproxytargetgroup-tags"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-rds-dbproxytargetgroup-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TargetGroupName`  <a name="cfn-rds-dbproxytargetgroup-targetgroupname"></a>
 The identifier for the target group.

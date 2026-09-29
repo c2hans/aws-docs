@@ -23,7 +23,13 @@ For more information about security groups, see [Security groups for your VPC](h
 
 Network-based authorization is implemented using authorization rules. For each network that you want to enable access, you must configure authorization rules that limit the users who have access. For a specified network, you configure the Active Directory group or the SAML-based IdP group that is allowed access. Only users who belong to the specified group can access the specified network. If you are not using Active Directory or SAML-based federated authentication, or you want to open access to all users, you can specify a rule that grants access to all clients. For more information, see [AWS Client VPN authorization rules](cvpn-working-rules.md).
 
+## Authorization policy
+<a name="device-posture-authorization"></a>
+
+You can define an authorization policy to control connections based on device health, user identity, and connection details. When an authorization policy is configured, Client VPN evaluates it when a device connects and again every 5 minutes for the life of the session. Sessions that no longer meet your requirements are disconnected. Authorization policies are written in the Cedar policy language and can evaluate device posture tokens, user identity, or both. For setup instructions, see [Device posture for AWS Client VPN](device-posture.md).
+
 **Topics**
 + [Security groups](#security-groups)
 + [Network-based authorization](#auth-rules)
++ [Authorization policy](#device-posture-authorization)
 + [Create an endpoint security group rule](client-auth-rule-create.md)

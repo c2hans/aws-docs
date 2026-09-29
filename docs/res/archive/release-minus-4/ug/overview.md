@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-4/ug/overview.
 <a name="overview"></a>
 
 **Important**
-This version of the User Guide covers release 2025.06 of Research and Engineering Studio on AWS. For the current version, see the [Research and Engineering Studio on AWS User Guide](https://docs.aws.amazon.com/res/latest/ug/overview.html).
+This version of the User Guide covers release 2025.09 of Research and Engineering Studio on AWS. For the current version, see the [Research and Engineering Studio on AWS User Guide](https://docs.aws.amazon.com/res/latest/ug/overview.html).
 
 Research and Engineering Studio (RES) is an AWS supported, open source product that enables IT administrators to provide a web portal for scientists and engineers to run technical computing workloads on AWS. RES provides a single pane of glass for users to launch secure virtual desktops to conduct scientific research, product design, engineering simulations, or data analysis workloads. Users can connect to the RES portal using their existing corporate credentials and work on individual or collaborative projects.
 

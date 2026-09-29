@@ -5,6 +5,9 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Desc
 # DescribeAccountOverview
 <a name="API_DescribeAccountOverview"></a>
 
+**Note**
+End of support notice: On September 30, 2027, AWS will end support for Amazon DevOps Guru. After September 30, 2027, you will no longer be able to access the Amazon DevOps Guru console or Amazon DevOps Guru resources. For more information, see [Amazon DevOps Guru end of support](https://docs.aws.amazon.com/devops-guru/latest/userguide/devops-guru-end-of-support.html).
+
  For the time range passed in, returns the number of open reactive insight that were created, the number of open proactive insights that were created, and the Mean Time to Recover (MTTR) for all closed reactive insights.
 
 ## Request Syntax

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/create-sn
 # Create a snapshot
 <a name="create-snapshot"></a>
 
-Before you can create a snapshot, you must provide an Amazon S3 bucket with the necessary permissions. For information on creating a bucket, see [Creating a bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html). We recommend enabling bucket versioning and server access logging. These settings can be enabled from the bucket's **Properties** tab after provisioning.
+Before you can create a snapshot, you must provide an Amazon S3 bucket with the necessary permissions. For information on creating a bucket, see [Creating a bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html). Enable bucket versioning and server access logging. These settings can be enabled from the bucket's **Properties** tab after provisioning.
 
 **Note**
 This Amazon S3 bucket's lifecycle will not be managed within the product. You will need to manage the bucket lifecycle from the console.

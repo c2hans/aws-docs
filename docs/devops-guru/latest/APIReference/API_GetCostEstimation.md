@@ -5,6 +5,9 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_GetC
 # GetCostEstimation
 <a name="API_GetCostEstimation"></a>
 
+**Note**
+End of support notice: On September 30, 2027, AWS will end support for Amazon DevOps Guru. After September 30, 2027, you will no longer be able to access the Amazon DevOps Guru console or Amazon DevOps Guru resources. For more information, see [Amazon DevOps Guru end of support](https://docs.aws.amazon.com/devops-guru/latest/userguide/devops-guru-end-of-support.html).
+
 Returns an estimate of the monthly cost for DevOps Guru to analyze your AWS resources. For more information, see [Estimate your Amazon DevOps Guru costs](https://docs.aws.amazon.com/devops-guru/latest/userguide/cost-estimate.html) and [Amazon DevOps Guru pricing](http://aws.amazon.com/devops-guru/pricing/).
 
 ## Request Syntax

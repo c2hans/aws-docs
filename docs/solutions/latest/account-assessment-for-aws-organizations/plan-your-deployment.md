@@ -10,9 +10,9 @@ This section describes the cost, security, Region, and quota considerations for 
 ## Supported AWS Regions
 <a name="supported-aws-regions"></a>
 
-This solution uses AWS services that are not currently available in all AWS Regions. You must launch this solution in an AWS Region where these services are available. For the most current availability of AWS services by Region, refer to the [AWS Regional Services List](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/).
+This guidance uses AWS services that are not currently available in all AWS Regions. You must launch this guidance in an AWS Region where these services are available. For the most current availability of AWS services by Region, refer to the [AWS Regional Services List](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/).
 
-Account Assessment for AWS Organizations is supported in the following commercial AWS Regions, as well as GovCloud US-West:
+Guidance for Account Assessment for AWS Organizations is supported in the following commercial AWS Regions, as well as AWS GovCloud (US-West):
 
 | Region Name | Region Code |
 | --- | --- |

@@ -7,10 +7,10 @@ source_url: https://docs.aws.amazon.com/solutions/latest/account-assessment-for-
 
 Service quotas, also referred to as limits, are the maximum number of service resources or operations for your AWS account.
 
-## Quotas for AWS services in this solution
-<a name="quotas-for-aws-services-in-this-solution"></a>
+## Quotas for AWS services in this guidance
+<a name="quotas-for-aws-services-in-this-guidance"></a>
 
-Make sure you have sufficient quota for each of the [services implemented in this solution](aws-services.md). For more information, refer to [AWS service quotas](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html).
+Make sure you have sufficient quota for each of the [services implemented in this guidance](aws-services.md). For more information, refer to [AWS service quotas](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html).
 
 Select one of the following links to go to the page for that service. To view the service quotas for all AWS services in the documentation without switching pages, view the information in the [Service endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/aws-general.pdf#aws-service-information) page in the PDF instead.
 +  [Lambda](https://docs.aws.amazon.com/general/latest/gr/lambda-service.html)
@@ -26,7 +26,7 @@ Select one of the following links to go to the page for that service. To view th
 ## AWS CloudFormation quotas
 <a name="aws-cloudformation-quotas"></a>
 
-Your AWS account has [AWS CloudFormation](https://aws.amazon.com/cloudformation/) quotas that you should be aware of when [launching the stack](step-2-launch-the-spoke-stack.md) in this solution. By understanding these quotas, you can avoid limitation errors that would prevent you from deploying this solution successfully. For more information, refer to [AWS CloudFormation quotas](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cloudformation-limits.html) in the in the *AWS CloudFormation Users Guide*.
+Your AWS account has [AWS CloudFormation](https://aws.amazon.com/cloudformation/) quotas that you should be aware of when [deploying the stack](step-3-launch-the-spoke-stack.md) in this guidance. By understanding these quotas, you can avoid limitation errors that would prevent you from deploying this guidance successfully. For more information, refer to [AWS CloudFormation quotas](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cloudformation-limits.html) in the *AWS CloudFormation User Guide*.
 
 ## AWS Lambda quotas
 <a name="aws-lambda-quotas"></a>

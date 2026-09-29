@@ -18,13 +18,13 @@ You can update the hardware of your virtual desktop or change the session name.
 **Note**
 You cannot update the desktop size for hibernated sessions.
 
-1. Once you have confirmed the desktop has stopped, choose ** Actions** and then choose **Update Session**.
+1. After you have confirmed the desktop has stopped, choose ** Actions** and then choose **Update Session**.
 
-1. Change the session name or choose the desktop size you would like.
+1. Change the session name or choose a new desktop size.
 
 1. Choose **Submit**.
 
-1. Once your instances updates, restart your desktop:
+1. After your instances update, restart your desktop:
 
    1. Choose **Actions**.
 

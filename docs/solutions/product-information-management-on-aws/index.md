@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/product-information-management
 title: 'Guidance for Product Information Management on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/product-information-management-on-aws/
 source: aws-documentation
-generated_on: 2026-09-28
+generated_on: 2026-09-29
 ---
 
 # Guidance for Product Information Management on AWS

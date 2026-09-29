@@ -205,4 +205,4 @@ Migration information about the encryption library is available in the [AWS Data
 + [DynamoDB mapping/document APIs](migration-ddb-mapper.md)
 + [IAM Policy Builder](migration-iam-policy-builder.md)
 + [S3 Event Notifications](migration-s3-event-notification.md)
-+ SDK metric publishing ([1.x documentation](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/generating-sdk-metrics.html), [2.x documentation](metrics.md))
++ [SDK metric publishing](migration-metrics.md)

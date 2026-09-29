@@ -122,7 +122,7 @@ RES has the ability to mount buckets from other AWS accounts, provided these buc
 
    1. Copy the IAM role ARN that you created.
 
-   1. Log into the RES console.
+   1. Sign in to the RES console.
 
    1. In the left navigation pane, choose **S3 Bucket**.
 

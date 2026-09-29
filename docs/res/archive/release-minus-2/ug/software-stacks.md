@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/software-
 
 From the Software Stacks page, you can configure Amazon Machine Images (AMIs) or manage existing ones.
 
-![Software stacks admin console page with numbered annotations](https://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-softwarestackspage.png)
+![Software stacks admin console page with numbered annotations](https://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-softwarestackspage-2026.03.png)
 
 1. To search for an existing software stack, use the operating system drop-down to filter by OS.
 
@@ -30,7 +30,9 @@ key: `res:ModuleName`, value: `virtual-desktop-controller`
 
 1. Choose **Register Software Stack**.
 
-1. Enter details for the new software stack.
+1. Enter details for the new software stack, including name, description, AMI ID, and operating system.
+
+1. (Optional) Use the **Allowed Instance Types** field to specify the instance families or types that are permitted for this software stack. You can enter instance families (for example, `t3`) or specific instance sizes (for example, `t3.xlarge`).
 
 1. Choose **Submit**.
 ![Admin console pop-out page that lets you register a new software stack](https://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-register-new-software-stack.png)
@@ -111,16 +113,16 @@ To specify any self-managed licenses required by your VDIs when you launch them 
 
 RES does not have a default software stack for Rocky Linux 9, so this section offers a recommendation on which Rocky AMI to use and how to use it.
 
-1. Log into the AWS Console, and go to the [AMI Catalog page](https://console.aws.amazon.com/ec2/home#AMICatalog) within the EC2 Console.
+1. Sign in to the AWS Management Console, and go to the [AMI Catalog page](https://console.aws.amazon.com/ec2/home#AMICatalog) within the EC2 Console.
 
 1. Search for AMIs under the **AWS Marketplace** tab with the name **Rocky Linux 9**.
 
 1. Select the AMI named **Rocky Linux 9 (Official) - x86\_64** from **Rocky Linux**.
-![Rocky Linux 9 Official x86_64 AMI listing with version 9.5.20241118 and 4-star rating.](https://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-rocky-linux9.png)
+![Screenshot showing Rocky Linux 9 AMI search results in the AMI Catalog](https://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-rocky-linux9.png)
 
 1. Once selected, choose **Subscribe now**.
 
 1. Scroll up, and copy the AMI Id for **Selected AMI**.
-![AMI Catalog page showing Selected AMI field with ami-0a73e96a849c232cc and Rocky Linux 9 search.](https://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-ami-catalog.png)
+![Screenshot showing the AMI Catalog with the selected AMI ID](https://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/res-ami-catalog.png)
 
 1. Go to the RES portal, and register a new Software Stack under the **Software Stacks** page using this AMI.

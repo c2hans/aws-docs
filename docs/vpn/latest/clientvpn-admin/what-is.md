@@ -28,6 +28,7 @@ Client VPN offers the following features and functionality:
 + **Deep integration** — Seamlessly integrates with existing AWS services, including AWS Directory Service and Amazon VPC, enhancing your cloud infrastructure's connectivity capabilities.
 + **Flexible network architecture** — Supports both VPC subnet associations and direct Transit Gateway attachments. For more information, see [Transit Gateway integration with Client VPN](cvpn-tgw.md).
 + **IPv6 support** — Enables full IPv6 connectivity for Client VPN endpoints, supporting connections to IPv6 resources in your VPCs and from clients on IPv6 networks for modern networking requirements.
++ **Device posture** — You can grant access based on the health of the connecting device in addition to the identity of the user. Client VPN integrates with device trust providers (CrowdStrike, Jamf, and JumpCloud) and evaluates an authorization policy against each device's posture token when it connects and every 5 minutes throughout the session. For more information, see [Device posture for AWS Client VPN](device-posture.md).
 
 ## Components of Client VPN
 <a name="what-is-components"></a>
@@ -45,6 +46,9 @@ Each Client VPN endpoint has a route table that describes the available destinat
 
 **Authorization rules**
 An authorization rule restricts the users who can access a network. For a specified network, you configure the Active Directory or identity provider (IdP) group that is allowed access. Only users belonging to this group can access the specified network. By default, there are no authorization rules and you must configure authorization rules to enable users to access resources and networks.
+
+**Authorization policy**
+An authorization policy defines the requirements that a connection must meet, written in the Cedar policy language. Client VPN evaluates the policy when a device connects and on each re-evaluation during the session.
 
 **Client**
 The end user connecting to the Client VPN endpoint to establish a VPN session. End users need to download an OpenVPN client and use the Client VPN configuration file that you created to establish a VPN session.

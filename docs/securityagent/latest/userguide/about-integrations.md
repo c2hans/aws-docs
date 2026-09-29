@@ -36,7 +36,7 @@ Confluence is a documentation provider rather than a source code provider. AWS S
 <a name="_supported_providers"></a>
 
 AWS Security Agent supports the following providers:
-+  **Source code** - GitHub (cloud-hosted GitHub and cloud-hosted GitHub Enterprise), GitHub Enterprise Server (self-hosted), GitLab (cloud-hosted), GitLab Self-Managed (self-hosted), and Bitbucket Cloud.
++  **Source code** - GitHub (cloud-hosted GitHub and cloud-hosted GitHub Enterprise), GitHub Enterprise Server (self-hosted), GitLab (cloud-hosted), GitLab Self-Managed (self-hosted), Azure DevOps, Bitbucket Cloud, and Bitbucket Data Center (self-hosted).
 +  **Documentation** - Confluence Cloud.
 
 For self-hosted providers that are not reachable over the public internet, you can route the agent’s traffic through a private connection. For more information, see [Connect to privately hosted source control](connect-private-connection.md).
@@ -44,7 +44,7 @@ For self-hosted providers that are not reachable over the public internet, you c
 ## AWS Security Agent IP addresses
 <a name="agent-ip-addresses"></a>
 
-AWS Security Agent connects to your source code repositories from a fixed set of IP addresses, one set per AWS Region. The same IP addresses are used for every supported source code provider: GitHub, GitLab, and Bitbucket. This includes self-hosted GitHub Enterprise Server and GitLab Self-Managed instances that are reachable over the public internet.
+AWS Security Agent connects to your source code repositories from a fixed set of IP addresses, one set per AWS Region. The same IP addresses are used for every supported source code provider: GitHub, GitLab, Azure DevOps, and Bitbucket. This includes self-hosted GitHub Enterprise Server, GitLab Self-Managed, and Bitbucket Data Center instances that are reachable over the public internet.
 
 **Important**
 If your repository provider or the network in front of it restricts access with an IP allow list, add the AWS Security Agent IP addresses for your Agent Space’s AWS Region to that allow list. Wait a few minutes for the change to take effect, then register the integration. Examples include a GitHub organization IP allow list, a GitLab allowed IP range, Bitbucket workspace IP allowlisting, or a firewall in front of a self-hosted instance.

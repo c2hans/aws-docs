@@ -108,9 +108,6 @@ Use the following model IDs and endpoint URLs to access this model programmatica
 | bedrock-runtime | anthropic.claude-sonnet-5-5 | N/A | N/A | global.anthropic.claude-sonnet-5-5 |
 | bedrock-mantle | anthropic.claude-sonnet-5-5 | https://bedrock-mantle.{region}.api.aws/anthropic/v1/messages | N/A | N/A |
 
-**Important**
-For this model, the `bedrock-runtime` endpoint requires a geo or global inference profile ID. The bare model ID isn't supported for on-demand throughput. Geo and global inference profiles can route requests outside the source Region and don't provide single-Region data residency. For single-Region inference, use the `bedrock-mantle` endpoint with the bare model ID.
-
 *For example, to use Global cross-Region inference from us-east-1 (N. Virginia), use the endpoint URL "https://bedrock-runtime.us-east-1.amazonaws.com" with the inference profile ID "global.anthropic.claude-sonnet-5-5".*
 
 ## Service Tiers

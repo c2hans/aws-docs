@@ -16,6 +16,7 @@ Content-type: application/json
 
 {
    "clientToken": "{{string}}",
+   "customMetadata": {{JSON value}},
    "description": "{{string}}",
    "descriptors": {
       "a2aAgentCard": {
@@ -144,6 +145,11 @@ Client token for idempotency
 Type: String
 Length Constraints: Minimum length of 33. Maximum length of 256.
 Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,256}`
+Required: No
+
+ ** [customMetadata](#API_CreateRegistryRecord_RequestSyntax) **   <a name="agentregistrycontrol-CreateRegistryRecord-request-customMetadata"></a>
+The custom metadata to attach to the registry record. Each key must match a property defined in the registry's custom metadata schema. Values can be strings (maximum 128 characters) or native JSON booleans (`true` or `false`). Values are validated against the schema at creation time.
+Type: JSON value
 Required: No
 
  ** [description](#API_CreateRegistryRecord_RequestSyntax) **   <a name="agentregistrycontrol-CreateRegistryRecord-request-description"></a>

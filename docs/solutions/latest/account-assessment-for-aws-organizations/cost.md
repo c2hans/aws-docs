@@ -6,15 +6,15 @@ source_url: https://docs.aws.amazon.com/solutions/latest/account-assessment-for-
 <a name="cost"></a>
 
 **Note**
-You are responsible for the cost of the AWS services used while running this solution. As of this revision, the cost for running this solution with the default settings in the US East (N. Virginia) Region is approximately **$45 per month**, based on the assumptions in [Sample cost table](#sample-cost-table).
-Refer to the pricing webpage for each AWS service used in this solution.
+You are responsible for the cost of the AWS services used while running this guidance. As of this revision, the cost for running this guidance with the default settings in the US East (N. Virginia) Region is approximately **$45 per month**, based on the assumptions in [Sample cost table](#sample-cost-table).
+Refer to the pricing webpage for each AWS service used in this guidance.
 
-We recommend creating a [budget](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-create.html) through [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/) to help you manage costs. Prices are subject to change. For full details, refer to the pricing webpage for each AWS service used in this solution.
+We recommend creating a [budget](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-create.html) through [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/) to help you manage costs. Prices are subject to change. For full details, refer to the pricing webpage for each AWS service used in this guidance.
 
 ## Sample cost table
 <a name="sample-cost-table"></a>
 
-The following table provides a sample cost breakdown for deploying this solution with the default parameters in the US East (N. Virginia) Region for one month.
+The following table provides a sample cost breakdown for deploying this guidance with the default parameters in the US East (N. Virginia) Region for one month.
 
 The cost is based on the following assumptions:
 + You are assessing 100 AWS accounts in 10 AWS Regions

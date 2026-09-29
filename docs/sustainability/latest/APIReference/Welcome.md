@@ -16,4 +16,4 @@ With the AWS Sustainability service, you can:
 
  The API supports pagination for efficient data retrieval and provides dimension values to help you understand the available grouping and filtering options for your account.
 
-This document was last published on September 28, 2026.
+This document was last published on September 29, 2026.

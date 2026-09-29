@@ -51,6 +51,7 @@ Content-type: application/json
                "idcManagedApplicationArn": "string",
                "idcRegion": "string"
             },
+            "endpointPrefix": "string",
             "namespace": "string",
             "networkAccess": {
                "vpceIds": [ "string" ]

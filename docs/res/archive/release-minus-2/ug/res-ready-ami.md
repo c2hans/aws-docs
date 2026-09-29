@@ -103,6 +103,12 @@ In the definition file, replace **latest** in the download URI (`- source: 's3:/
                - "tar -xf res-installation-scripts.tar.gz"
                - "cd scripts/virtual-desktop-host/linux"
                - "/bin/bash install.sh -g {{ GPUFamily }}"
+         - name: RebootAfterInstall
+           action: Reboot
+           onFailure: Abort
+           maxAttempts: 3
+           inputs:
+               delaySeconds: 0
          - name: RunInstallPostRebootScript
            action: ExecuteBash
            onFailure: Abort
@@ -186,6 +192,9 @@ RES supports the following image operating systems:
 + Ubuntu 24.04.3 (x86)
 + Windows Server 2019, 2022 (x86)
 + Windows 10, 11 (x86)
+
+**Note**
+Starting with release 2026.03, Amazon Linux 2 and RHEL 8 are no longer included as default software stacks. Custom software stacks with these operating systems can still be registered if required.
 
 ------
 #### [ Create a new recipe ]

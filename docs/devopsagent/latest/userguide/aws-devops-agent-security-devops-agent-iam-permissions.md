@@ -185,7 +185,6 @@ This policy grants access to investigation and prevention features without admin
       "Effect": "Allow",
       "Action": [
         "aidevops:GetAgentSpace",
-        "aidevops:InvokeAgent",
         "aidevops:ListExecutions",
         "aidevops:ListJournalRecords",
         "aidevops:ListAssociations",

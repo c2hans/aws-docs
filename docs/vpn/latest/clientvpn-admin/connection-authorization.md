@@ -12,6 +12,8 @@ To configure a client connect handler for your Client VPN endpoint, create an AW
 **Note**
 Currently, the only type of client connect handler that is supported is a Lambda function.
 
+You can also define Cedar-based authorization policies that evaluate device posture tokens and user identity. For more information, see [Device posture for AWS Client VPN](device-posture.md).
+
 ## Requirements and considerations
 <a name="client-connect-handler-reqs"></a>
 
@@ -78,19 +80,19 @@ The Lambda function must return the following fields.
   ```
   Error establishing connection. Please contact your administrator.
   ```
-+ `posture-compliance-statuses` — Required. If you use the Lambda function for [posture assessment](#connection-authorization-posture-assessment), this is a list of statuses for the connecting device. You define the status names according to your posture assessment categories for devices, for example, `compliant`, `quarantined`, `unknown`, and so on. Each name can be up to 255 characters in length. You can specify up to 10 statuses.
++ `posture-compliance-statuses` — Required. If you use the Lambda function for [custom connection authorization](#connection-authorization-posture-assessment), this is a list of statuses for the connecting device. You define the status names according to your assessment categories for devices, for example, `compliant`, `quarantined`, `unknown`, and so on. Each name can be up to 255 characters in length. You can specify up to 10 statuses.
 + `schema-version` — Required. The schema version. The default is `v3`.
 
 You can use the same Lambda function for multiple Client VPN endpoints in the same Region.
 
 For more information about creating a Lambda function, see [Getting started with AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html) in the *AWS Lambda Developer Guide*.
 
-## Use the client connect handler for posture assessment
+## Custom connection authorization
 <a name="connection-authorization-posture-assessment"></a>
 
-You can use the client connect handler to integrate your Client VPN endpoint with your existing device management solution to evaluate the posture compliance of connecting devices. For the Lambda function to work as a device authorization handler, use [mutual authentication](mutual.md) for your Client VPN endpoint. Create a unique client certificate and key for each client (device) that will connect to the Client VPN endpoint. The Lambda function can use the unique common name for the client certificate (that's passed from the Client VPN service) to identify the device and fetch its posture compliance status from your device management solution. You can use mutual authentication combined with user-based authentication.
+You can use custom connection authorization to integrate your Client VPN endpoint with your existing device management solution to evaluate the compliance of connecting devices. For the Lambda function to work as a device authorization handler, use [mutual authentication](mutual.md) for your Client VPN endpoint. Create a unique client certificate and key for each client (device) that will connect to the Client VPN endpoint. The Lambda function can use the unique common name for the client certificate (that's passed from the Client VPN service) to identify the device and fetch its compliance status from your device management solution. You can use mutual authentication combined with user-based authentication.
 
-Alternatively, you can do a basic posture assessment in the Lambda function itself. For example, you can assess the `platform` and `platform-version` fields that are passed to the Lambda function by the Client VPN service.
+Alternatively, you can do a basic device assessment in the Lambda function itself. For example, you can assess the `platform` and `platform-version` fields that are passed to the Lambda function by the Client VPN service.
 
 **Note**
 While the connection handler can be used to enforce a minimum AWS Client VPN application version, the field `aws-client-version` in the connection handler, is only applicable to the AWS Client VPN application and is being populated from environment variables on the user device.
@@ -110,7 +112,7 @@ AWS Client VPN automatically creates a service-linked role in your account calle
 
 You can view the connection authorization status of connections to the Client VPN endpoint. For more information, see [View AWS Client VPN client connections](cvpn-working-connections-view.md).
 
-When the client connect handler is used for posture assessment, you can also view the posture compliance statuses of devices that connect to your Client VPN endpoint in the connection logs. For more information, see [Connection logging for an AWS Client VPN endpoint](connection-logging.md).
+When using custom connection authorization, you can also view the compliance statuses of devices that connect to your Client VPN endpoint in the connection logs. For more information, see [Connection logging for an AWS Client VPN endpoint](connection-logging.md).
 
 If a device fails connection authorization, the `connection-attempt-failure-reason` field in the connection logs returns one of the following failure reasons:
 + `client-connect-failed` — The Lambda function prevented the connection from being established.

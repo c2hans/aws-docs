@@ -36,7 +36,7 @@ If self-sign up is disabled, users will not see the sign up link. Administrators
 
 ![Verification code entry page](https://docs.aws.amazon.com/res/archive/release-minus-1/ug/images/user-sign-in.png)
 
-## Login page Options
+## Login page options
 <a name="setting-up-cognito-users-login"></a>
 
 If both SSO and Amazon Cognito are enabled, an option to **Sign in with organization SSO** will appear. When users click that option it will reroute them to their SSO login page. By default, users will authenticate with Amazon Cognito if it is enabled.
@@ -46,7 +46,7 @@ If both SSO and Amazon Cognito are enabled, an option to **Sign in with organiza
 ## Constraints
 <a name="setting-up-cognito-users-constraints"></a>
 + Your Amazon Cognito **Group name** can have a maximum of six letters; only lower case letters are accepted.
-+ Amazon Cognito signup will not allow two email address with the same user name but a different domain address.
++ Amazon Cognito signup will not allow two email addresses with the same user name but a different domain address.
 + If both Active Directory and Amazon Cognito are enabled, and the system detects a duplicate user name, only Active Directory users will be allowed to authenticate. Administrators should take steps to not configure duplicate user names between Amazon Cognito and their Active Directory.
 + Cognito users will not be allowed to launch Windows-based VDIs since RES does not support Amazon Cognito-based authentication for Windows instances.
 
@@ -87,4 +87,4 @@ You can also initiate the sync manually from the Lambda console.
 ## Security considerations for Cognito
 <a name="setting-up-cognito-users-security"></a>
 
-Prior to the 2024.12 release, [user activity logging](https://docs.aws.amazon.com/cognito/latest/developerguide/feature-plans-features-plus.html), which is part of the Amazon Cognito Plus plan feature was enabled by default. We removed this from our baseline deployment to save costs for customers who want to try RES. You may re-enable this feature as needed to align with your organization's cloud security settings.
+Prior to the 2024.12 release, [user activity logging](https://docs.aws.amazon.com/cognito/latest/developerguide/feature-plans-features-plus.html), which is part of the Amazon Cognito Plus plan feature was enabled by default. This feature was removed from the baseline deployment to save costs for customers who want to try RES. You may re-enable this feature as needed to align with your organization's cloud security settings.

@@ -9,6 +9,7 @@ Updates about significant changes or changes of interest to the AWS SDK for Swif
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Updated tool version requirements](#doc-history) | Updated the minimum version requirements to Swift 6.0 and Xcode 16. | September 25, 2026 |
 | [Table of contents reorganization](#doc-history) | Reorganized the table of contents to more closely follow the standard used by other AWS SDK guides. | July 30, 2025 |
 | [HTTP client configuration](#doc-history) | Added documentation about configuring HTTP clients. | May 22, 2025 |
 | [Versioning policy](#doc-history) | Added information about the versioning policy and revised the content hierarchy. | February 14, 2025 |

@@ -175,4 +175,4 @@ The serial number for the certificate.
  The certificate can be either `ACTIVE` , `PENDING_ROTATION` , or `INACTIVE` . `PENDING_ROTATION` means that this certificate will replace the current certificate when it expires.
 
 `Type`  <a name="Type-fn::getatt"></a>
- If a private key has been specified for the certificate, its type is `CERTIFICATE_WITH_PRIVATE_KEY` . If there is no private key, the type is `CERTIFICATE` .
+If a private key has been specified for the certificate, its type is `CERTIFICATE_WITH_PRIVATE_KEY`. If there is no private key, the type is `CERTIFICATE`.

@@ -19,6 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[LogGroupNamePrefixes](#cfn-bedrockagentcore-onlineevaluationconfig-cloudwatchlogsinputconfig-loggroupnameprefixes)" : {{[ String, ... ]}},
   "[LogGroupNames](#cfn-bedrockagentcore-onlineevaluationconfig-cloudwatchlogsinputconfig-loggroupnames)" : {{[ String, ... ]}},
   "[ServiceNames](#cfn-bedrockagentcore-onlineevaluationconfig-cloudwatchlogsinputconfig-servicenames)" : {{[ String, ... ]}}
 }
@@ -28,6 +29,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-bedrockagentcore-onlineevaluationconfig-cloudwatchlogsinputconfig-syntax.yaml"></a>
 
 ```
+  [LogGroupNamePrefixes](#cfn-bedrockagentcore-onlineevaluationconfig-cloudwatchlogsinputconfig-loggroupnameprefixes): {{
+    - String}}
   [LogGroupNames](#cfn-bedrockagentcore-onlineevaluationconfig-cloudwatchlogsinputconfig-loggroupnames): {{
     - String}}
   [ServiceNames](#cfn-bedrockagentcore-onlineevaluationconfig-cloudwatchlogsinputconfig-servicenames): {{
@@ -37,12 +40,20 @@ To declare this entity in your CloudFormation template, use the following syntax
 ## Properties
 <a name="aws-properties-bedrockagentcore-onlineevaluationconfig-cloudwatchlogsinputconfig-properties"></a>
 
-`LogGroupNames`  <a name="cfn-bedrockagentcore-onlineevaluationconfig-cloudwatchlogsinputconfig-loggroupnames"></a>
- The list of CloudWatch log group names to monitor for agent traces.
-*Required*: Yes
+`LogGroupNamePrefixes`  <a name="cfn-bedrockagentcore-onlineevaluationconfig-cloudwatchlogsinputconfig-loggroupnameprefixes"></a>
+Property description not available.
+*Required*: No
 *Type*: Array of String
 *Minimum*: `1 | 1`
 *Maximum*: `512 | 5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`LogGroupNames`  <a name="cfn-bedrockagentcore-onlineevaluationconfig-cloudwatchlogsinputconfig-loggroupnames"></a>
+ The list of CloudWatch log group names to monitor for agent traces.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1 | 1`
+*Maximum*: `512 | 10`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ServiceNames`  <a name="cfn-bedrockagentcore-onlineevaluationconfig-cloudwatchlogsinputconfig-servicenames"></a>

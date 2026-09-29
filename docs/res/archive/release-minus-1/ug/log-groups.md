@@ -17,9 +17,10 @@ Research and Engineering Studio creates the following log groups in CloudWatch d
 | /aws/lambda/{{<installation-stack-name>}}-update-cluster-prefix-list | Never expire |
 | /aws/lambda/{{<installation-stack-name>}}-vdc-scheduled-event-transformer | Never expire |
 | /aws/lambda/{{<installation-stack-name>}}-vdc-update-cluster-manager-client-scope | Never expire |
+| /aws/lambda/{{<installation-stack-name>}}-backend-lambda | Never expire |
+| /aws/lambda/{{<environment-name>}}-dcv-session-management-lambda | Never expire |
 | /{{<installation-stack-name>}}/cluster-manager | 3 months |
 | /{{<installation-stack-name>}}/vdc/controller | 3 months |
-| /{{<installation-stack-name>}}/vdc/dcv-broker | 3 months |
 | /{{<installation-stack-name>}}/vdc/dcv-connection-gateway | 3 months |
 
 If you would like to change the default retention for a log group, you can go to the [CloudWatch console](https://console.aws.amazon.com/cloudwatch) and follow the directions to [ Change log data retention in CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html#SettingLogRetention).

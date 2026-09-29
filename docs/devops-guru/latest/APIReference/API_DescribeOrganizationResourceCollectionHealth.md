@@ -5,6 +5,9 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Desc
 # DescribeOrganizationResourceCollectionHealth
 <a name="API_DescribeOrganizationResourceCollectionHealth"></a>
 
+**Note**
+End of support notice: On September 30, 2027, AWS will end support for Amazon DevOps Guru. After September 30, 2027, you will no longer be able to access the Amazon DevOps Guru console or Amazon DevOps Guru resources. For more information, see [Amazon DevOps Guru end of support](https://docs.aws.amazon.com/devops-guru/latest/userguide/devops-guru-end-of-support.html).
+
 Provides an overview of your system's health. If additional member accounts are part of your organization, you can filter those accounts using the `AccountIds` field.
 
 ## Request Syntax

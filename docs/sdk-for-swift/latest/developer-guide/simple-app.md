@@ -27,18 +27,18 @@ $ swift --version
 On macOS, you should see output that looks like the following (with possibly different version and build numbers):
 
 ```
-swift-driver version: 1.87.1 Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
-Target: x86_64-apple-macosx14.0
+swift-driver version: 1.115 Apple Swift version 6.0 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+Target: arm64-apple-macosx15.0
 ```
 
 On Linux, the output should look something like the following:
 
 ```
-Swift version 5.9.0 (swift-5.9.0-RELEASE)
+Swift version 6.0 (swift-6.0-RELEASE)
 Target: x86_64-unknown-linux-gnu
 ```
 
-If Swift is not installed, or is older than version 5.9, follow the instructions in [Setting up the AWS SDK for Swift](setting-up.md) to install or reinstall the tools.
+If Swift is not installed, or is older than version 6.0, follow the instructions in [Setting up the AWS SDK for Swift](setting-up.md) to install or reinstall the tools.
 
 **Get this example on GitHub**
 You can fork or download [this example](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/s3/ListBuckets-Simple) from the [AWS SDK for Swift code examples](https://www.github.com/awsdocs/aws-doc-sdk-examples/) repository.
@@ -83,10 +83,10 @@ $ code .
 
 After opening the project in your editor, open the `Package.swift` file. This is a Swift file that defines a SwiftPM [`Package`](https://developer.apple.com/documentation/swift_packages/package) object that describes the project, its dependencies, and its build rules.
 
-The first line of every `Package.swift` file must be a comment specifying the minimum version of the Swift toolchain needed to build the project. This isn't only informational. The version specified here can change the behavior of the tools for compatibility purposes. The AWS SDK for Swift requires at least version 5.9 of the Swift tools.
+The first line of every `Package.swift` file must be a comment specifying the minimum version of the Swift toolchain needed to build the project. This isn't only informational. The version specified here can change the behavior of the tools for compatibility purposes. The AWS SDK for Swift requires at least version 6.0 of the Swift tools.
 
 ```
-// swift-tools-version:5.9
+// swift-tools-version:6.0
 ```
 
 ### Specifying supported platforms

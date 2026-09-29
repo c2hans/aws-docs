@@ -430,6 +430,7 @@ To browse this Online Register by service, see the following topics.
 + [Data retrieval APIs for Amazon SNS](amazonsns.md)
 + [Data retrieval APIs for AWS SQL Workbench](awssqlworkbench.md)
 + [Data retrieval APIs for Amazon SQS](amazonsqs.md)
++ [Data retrieval APIs for AWS Startups](awsstartups.md)
 + [Data retrieval APIs for AWS Step Functions](awsstepfunctions.md)
 + [Data retrieval APIs for AWS Storage Gateway](awsstoragegateway.md)
 + [Data retrieval APIs for AWS Supply Chain](awssupplychain.md)

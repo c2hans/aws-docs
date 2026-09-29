@@ -108,6 +108,7 @@ The following actions are supported by Amazon Connect Customer Profiles:
 +  [PutProfileObjectType](API_connect-customer-profiles_PutProfileObjectType.md)
 +  [PutSegmentSubscription](API_connect-customer-profiles_PutSegmentSubscription.md)
 +  [SearchProfiles](API_connect-customer-profiles_SearchProfiles.md)
++  [SearchRecommendations](API_connect-customer-profiles_SearchRecommendations.md)
 +  [StartRecommender](API_connect-customer-profiles_StartRecommender.md)
 +  [StartUploadJob](API_connect-customer-profiles_StartUploadJob.md)
 +  [StopRecommender](API_connect-customer-profiles_StopRecommender.md)

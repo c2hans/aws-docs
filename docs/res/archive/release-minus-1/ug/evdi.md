@@ -11,5 +11,4 @@ Session management provides a flexible and interactive environment for developin
 + [Dashboard](dashboard.md)
 + [Sessions](sessions.md)
 + [Software Stacks (AMIs)](software-stacks.md)
-+ [Debugging](debug.md)
 + [Desktop settings](desktop-settings.md)

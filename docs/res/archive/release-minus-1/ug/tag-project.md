@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-1/ug/tag-proje
 
 Project tags will assign tags to all instances created under that project.
 
-1. Select a project in the project list.
+1. Choose a project in the project list.
 
 1. From the **Actions** menu, choose **Update Tags**.
 

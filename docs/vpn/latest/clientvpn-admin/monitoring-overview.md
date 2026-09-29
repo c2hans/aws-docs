@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/monitoring-ov
 
 Monitoring is an important part of maintaining the reliability, availability, and performance of AWS Client VPN and your other AWS solutions. You can use the following features to monitor your Client VPN endpoints, analyze traffic patterns, and troubleshoot issues with your Client VPN endpoints.
 
+Monitoring authorization policy. When authorization policy is enabled on an endpoint, Client VPN records the authorization decision for every evaluated connection in your connection logs, and optionally the full evaluation context. Amazon CloudWatch metrics in the AWS/ClientVPN namespace count authorization policy denials, evaluations, and session terminations. For details, see [Connection logging for an AWS Client VPN endpoint](connection-logging.md) and [Amazon CloudWatch metrics for AWS Client VPN](monitoring-cloudwatch.md).
+
 **Amazon CloudWatch**
 Monitors your AWS resources and the applications you run on AWS in real time. You can collect and track metrics, create customized dashboards, and set alarms that notify you or take actions when a specified metric reaches a threshold that you specify. For example, you can have CloudWatch track CPU usage or other metrics of your Amazon EC2 instances and automatically launch new instances when needed. For more information, see the [Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/).
 

@@ -18,6 +18,8 @@ Enables QUIC in favor of TCP as the default streaming protocol for all your virt
 
 **Default DCV Session Type**
 The default DCV Session Type used for all virtual desktops. This setting will not apply to previously created desktops. This will only apply in cases where the Instance Type and Operating System supports either Virtual or Console Session types.
+**Virtual session type deprecated**
+Starting with the 2026.06 release, the *Virtual* session type is no longer supported. All sessions now use the *Console* session type. If your configuration or automation specifies the Virtual session type, update it to use Console.
 
 **Default Allowed Sessions Per User Per Project**
 The default value for the allowed number of VDI sessions per user per project.

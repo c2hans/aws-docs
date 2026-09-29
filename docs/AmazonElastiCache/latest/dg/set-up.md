@@ -7,6 +7,9 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/set-up.html
 
 To use the ElastiCache web service, follow these steps.
 
+**Note**
+To create a cache with a public endpoint, see [Create a Valkey serverless cache with a public endpoint](serverless-public-endpoints-chapter.md). A public endpoint lets you connect over the internet without setting up EC2, a VPC, or security groups.
+
 **Topics**
 + [Sign up for an AWS account](#sign-up-for-aws)
 + [Set up permissions](#elasticache-set-up-permissions)

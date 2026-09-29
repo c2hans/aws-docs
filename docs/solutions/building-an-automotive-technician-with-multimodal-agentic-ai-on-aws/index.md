@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/building-an-automotive-technic
 title: 'Guidance for Building an Automotive Technician with Multimodal Agentic AI on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/building-an-automotive-technician-with-multimodal-agentic-ai-on-aws/
 source: aws-documentation
-generated_on: 2026-09-28
+generated_on: 2026-09-29
 ---
 
 # Guidance for Building an Automotive Technician with Multimodal Agentic AI on AWS

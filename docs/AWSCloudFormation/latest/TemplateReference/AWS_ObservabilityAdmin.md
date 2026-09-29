@@ -8,6 +8,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 <a name="AWS_ObservabilityAdmin"></a>
 
 **Resource types**
++ [AWS::ObservabilityAdmin::DatasetIntegration](aws-resource-observabilityadmin-datasetintegration.md)
 + [AWS::ObservabilityAdmin::OrganizationCentralizationRule](aws-resource-observabilityadmin-organizationcentralizationrule.md)
 + [AWS::ObservabilityAdmin::OrganizationTelemetryRule](aws-resource-observabilityadmin-organizationtelemetryrule.md)
 + [AWS::ObservabilityAdmin::S3TableIntegration](aws-resource-observabilityadmin-s3tableintegration.md)

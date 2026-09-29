@@ -25,6 +25,11 @@ Indicates whether client connection logging is enabled for the Client VPN endpoi
 Type: Boolean
 Required: No
 
+ ** IncludeAuthorizationPolicyContext **
+Specifies whether the authorization policy evaluation context is included in the connection logs for the Client VPN endpoint.
+Type: Boolean
+Required: No
+
 ## See Also
 <a name="API_ConnectionLogResponseOptions_SeeAlso"></a>
 

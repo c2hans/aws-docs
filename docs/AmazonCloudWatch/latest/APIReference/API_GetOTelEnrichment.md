@@ -10,12 +10,30 @@ Returns the current status of vended metric enrichment for the account, includin
 ## Response Elements
 <a name="API_GetOTelEnrichment_ResponseElements"></a>
 
-The following element is returned by the service.
+The following elements are returned by the service.
+
+ ** CreatedAt **
+The date and time that enrichment started for the account. This parameter is omitted when enrichment is stopped.
+Type: Timestamp
+
+ ** ExcludeFilters **
+The metric namespaces, and the metric names, that are left unenriched. This parameter is omitted when enrichment is stopped, and when enrichment is running with no exclude filters, which means that nothing is excluded.
+Type: Array of [OTelEnrichmentMetricSelector](API_OTelEnrichmentMetricSelector.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 100 items.
+
+ ** IncludeFilters **
+The metric namespaces, and the metric names, that are enriched. This parameter is omitted when enrichment is stopped, and when enrichment is running with no include filters, which means that every supported namespace is in scope.
+Type: Array of [OTelEnrichmentMetricSelector](API_OTelEnrichmentMetricSelector.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 100 items.
 
  ** Status **
 The status of OTel enrichment for the account. Valid values are `Running` (enrichment is enabled) and `Stopped` (enrichment is disabled).
 Type: String
 Valid Values: `Running | Stopped`
+
+ ** UpdatedAt **
+The date and time that the enrichment configuration for the account was last stored.
+Type: Timestamp
 
 ## Errors
 <a name="API_GetOTelEnrichment_Errors"></a>

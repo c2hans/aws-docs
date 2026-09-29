@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/personalized-retail-seller-lis
 title: 'Guidance for Personalized Retail Seller Listings on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/personalized-retail-seller-listings-on-aws/
 source: aws-documentation
-generated_on: 2026-09-28
+generated_on: 2026-09-29
 ---
 
 # Guidance for Personalized Retail Seller Listings on AWS

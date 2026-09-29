@@ -52,7 +52,7 @@ Properties:
 
 `Detail`  <a name="cfn-datazone-policygrant-detail"></a>
 The details of the policy grant member.
-*Required*: No
+*Required*: Yes
 *Type*: [PolicyGrantDetail](aws-properties-datazone-policygrant-policygrantdetail.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
@@ -85,7 +85,7 @@ The type of policy that you want to grant.
 
 `Principal`  <a name="cfn-datazone-policygrant-principal"></a>
 The principal of the policy grant member.
-*Required*: No
+*Required*: Yes
 *Type*: [PolicyGrantPrincipal](aws-properties-datazone-policygrant-policygrantprincipal.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 

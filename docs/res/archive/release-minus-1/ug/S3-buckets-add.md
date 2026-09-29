@@ -11,6 +11,7 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-1/ug/S3-bucket
 
 1. Enter the bucket details such as bucket name, ARN, and mount point.
 **Important**
+The S3 bucket must be in the same AWS Region as the RES environment. Cross-region S3 bucket mounting is not supported.
 The bucket ARN, mount point, and mode provided cannot be changed after creation.
 The bucket ARN can contain a prefix which will isolate the onboarded S3 bucket to that prefix.
 

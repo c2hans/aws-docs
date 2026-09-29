@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/upload-file.html
 ---
 
-# Upload file(s)
+# Upload files
 <a name="upload-file"></a>
 
 1. Choose **Upload files**.

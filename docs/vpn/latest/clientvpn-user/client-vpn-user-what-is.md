@@ -9,6 +9,9 @@ AWS Client VPN is a managed client-based VPN service that enables you to securel
 
 This guide provides steps for establishing a VPN connection to a Client VPN endpoint using a client application on your device.
 
+**Note**
+Some Client VPN endpoints require device posture, which checks the health of your device before and during a session. To connect to a posture-gated endpoint, you must use the AWS provided client, version 6.2.0 or later, and your organization's device trust provider — such as CrowdStrike, Jamf, or JumpCloud — must be set up on your device.
+
 ## Client VPN components
 <a name="client-vpn-user-components"></a>
 

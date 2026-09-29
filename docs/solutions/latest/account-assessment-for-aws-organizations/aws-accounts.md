@@ -10,7 +10,7 @@ Follow these guidelines when setting up accounts for each stack:
 ## Hub Account
 <a name="hub-account"></a>
 
-The Hub stack contains all compute and storage resources of the solution to facilitate scans. Select a member account within your AWS Organization to deploy the Hub stack. Since this account will have read access to resource names and policies in all spoke accounts, including bucket names and secret names, choose an account that you protect as carefully as the most sensitive target account you intend to scan.
+The Hub stack contains all compute and storage resources of the guidance to facilitate scans. Select a member account within your AWS Organization to deploy the Hub stack. Since this account will have read access to resource names and policies in all spoke accounts, including bucket names and secret names, choose an account that you protect as carefully as the most sensitive target account you intend to scan.
 
 Important: Avoid using the Organizations management account as your Hub account, as it’s best practice to keep the management account free from operational workloads.
 

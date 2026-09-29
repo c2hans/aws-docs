@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/troublesh
 # Troubleshooting
 <a name="troubleshooting"></a>
 
-This section contains information about how to monitor the system and how to troubleshoot specific issues that may occur.
+This section contains information about how to monitor the system and how to troubleshoot specific issues.
 
 **Topics**
 + [General Debugging and Monitoring](res-troubleshooting-general.md)
@@ -89,20 +89,19 @@ Detailed contents:
     + [AD admin user cannot access the Bastion Host after SSH access is enabled](res-troubleshooting-issue-runbooks.md#active-directory-issues-bastion-host-access)
     + [View and manage my Active Directory deployed by RES external resource stack](res-troubleshooting-issue-runbooks.md#active-directory-issues-external-resource-stack)
 + [Known Issues 2024.x](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x)
-  + [Known Issues 2024.x](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x)
-    + [(2024.12 and 2024.12.01) Regex failure when registering a new Cognito user](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x-regex-failure-cognito)
-    + [(2024.12.01 and earlier) Invalid bad cert error when connecting to VDI using a custom domain](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x-invalid-bad-cert)
-    + [(2024.12 and 2024.12.01) Active Directory users cannot SSH to Bastion Host](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x-ad-users-cannot-ssh)
-    + [(2024.10) VDI auto stop broken for RES environments deployed in isolated VPCs](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x-vdi-auto-stop-broken)
-    + [(2024.10 and earlier) Failure to launch VDI for Graphic enhanced instance types](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x-fail-to-launch-vdi)
-    + [(2024.08) Preparing Infrastructure AMI Failure](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x-prep-infra-ami-fail)
-    + [(2024.08) Virtual desktops fail to mount read/write Amazon S3 bucket with root bucket ARN and custom prefixing](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x-vdi-fails-to-mount-s3)
-    + [(2024.06) Apply snapshot fails when the AD group name contains spaces](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x-apply-snapshot-fails)
-    + [(2024.06 and earlier) Group members not synced to RES during AD sync](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x-group-not-synced)
-    + [(2024.06 and earlier) CVE-2024-6387, RegreSSHion, Security Vulnerability in RHEL9 and Ubuntu VDIs](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x-regresshion)
-    + [(2024.04-2024.04.02) Provided IAM Permission Boundary not attached to the VDI instances' role](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x-iam-boundary)
-    + [(2024.04.02 and earlier) Windows NVIDIA instances in ap-southeast-2 (Sydney) fail to launch](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x-nvidia-instances)
-    + [(2024.04 and 2024.04.01) RES delete failure in GovCloud](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x-delete-fail)
-    + [(2024.04 - 2024.04.02) Linux virtual desktop may be stuck in the "RESUMING" status on reboot](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x-linux-stuck-resuming)
-    + [(2024.04.02 and earlier) Fails to sync AD users whose SAMAccountName attribute includes capital letters or special characters](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x-samaccountname)
-    + [(2024.04.02 and earlier) Private key for accessing the bastion host is invalid](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x-private-key)
+  + [(2024.12 and 2024.12.01) Regex failure when registering a new Cognito user](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x-regex-failure-cognito)
+  + [(2024.12.01 and earlier) Invalid bad cert error when connecting to VDI using a custom domain](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x-invalid-bad-cert)
+  + [(2024.12 and 2024.12.01) Active Directory users cannot SSH to Bastion Host](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x-ad-users-cannot-ssh)
+  + [(2024.10) VDI auto stop broken for RES environments deployed in isolated VPCs](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x-vdi-auto-stop-broken)
+  + [(2024.10 and earlier) Failure to launch VDI for Graphic enhanced instance types](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x-fail-to-launch-vdi)
+  + [(2024.08) Preparing Infrastructure AMI Failure](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x-prep-infra-ami-fail)
+  + [(2024.08) Virtual desktops fail to mount read/write Amazon S3 bucket with root bucket ARN and custom prefixing](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x-vdi-fails-to-mount-s3)
+  + [(2024.06) Apply snapshot fails when the AD group name contains spaces](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x-apply-snapshot-fails)
+  + [(2024.06 and earlier) Group members not synced to RES during AD sync](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x-group-not-synced)
+  + [(2024.06 and earlier) CVE-2024-6387, RegreSSHion, Security Vulnerability in RHEL9 and Ubuntu VDIs](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x-regresshion)
+  + [(2024.04-2024.04.02) Provided IAM Permission Boundary not attached to the VDI instances' role](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x-iam-boundary)
+  + [(2024.04.02 and earlier) Windows NVIDIA instances in ap-southeast-2 (Sydney) fail to launch](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x-nvidia-instances)
+  + [(2024.04 and 2024.04.01) RES delete failure in GovCloud](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x-delete-fail)
+  + [(2024.04 - 2024.04.02) Linux virtual desktop may be stuck in the "RESUMING" status on reboot](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x-linux-stuck-resuming)
+  + [(2024.04.02 and earlier) Fails to sync AD users whose SAMAccountName attribute includes capital letters or special characters](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x-samaccountname)
+  + [(2024.04.02 and earlier) Private key for accessing the bastion host is invalid](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x-private-key)

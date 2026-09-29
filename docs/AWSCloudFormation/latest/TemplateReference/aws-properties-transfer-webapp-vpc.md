@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Transfer::WebApp Vpc
 <a name="aws-properties-transfer-webapp-vpc"></a>
 
-<a name="aws-properties-transfer-webapp-vpc-description"></a>The `Vpc` property type specifies Property description not available. for an [AWS::Transfer::WebApp](aws-resource-transfer-webapp.md).
+Contains the VPC configuration settings for hosting a web app endpoint, including the VPC ID, subnet IDs, and security group IDs for access control.
 
 ## Syntax
 <a name="aws-properties-transfer-webapp-vpc-syntax"></a>
@@ -42,14 +42,14 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-transfer-webapp-vpc-properties"></a>
 
 `IpAddressType`  <a name="cfn-transfer-webapp-vpc-ipaddresstype"></a>
-Property description not available.
+The IP address type for the web app's VPC endpoint. This determines whether the endpoint is accessible over IPv4 only, or over both IPv4 and IPv6.
 *Required*: No
 *Type*: String
 *Allowed values*: `IPV4 | DUALSTACK`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SecurityGroupIds`  <a name="cfn-transfer-webapp-vpc-securitygroupids"></a>
-Property description not available.
+The list of security group IDs that control access to the web app endpoint. These security groups determine which sources can access the endpoint based on IP addresses and port configurations.
 *Required*: No
 *Type*: Array of String
 *Minimum*: `11`
@@ -57,7 +57,7 @@ Property description not available.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `SubnetIds`  <a name="cfn-transfer-webapp-vpc-subnetids"></a>
-Property description not available.
+The list of subnet IDs within the VPC where the web app endpoint will be deployed. These subnets must be in the same VPC specified in the VpcId parameter.
 *Required*: No
 *Type*: Array of String
 *Minimum*: `15`
@@ -65,7 +65,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `VpcId`  <a name="cfn-transfer-webapp-vpc-vpcid"></a>
-Property description not available.
+The identifier of the VPC where the web app endpoint will be hosted.
 *Required*: No
 *Type*: String
 *Pattern*: `^vpc-[0-9a-f]{8,17}$`

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/optimizing-mlops-for-sustainab
 title: 'Guidance for Optimizing MLOps for Sustainability on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/optimizing-mlops-for-sustainability-on-aws/
 source: aws-documentation
-generated_on: 2026-09-28
+generated_on: 2026-09-29
 ---
 
 # Guidance for Optimizing MLOps for Sustainability on AWS

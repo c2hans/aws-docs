@@ -187,6 +187,7 @@ For version information on all extensions, see [Extensions supported for RDS for
 
 **Topics**
 + [PostgreSQL version 18.6 on Amazon RDS](#postgresql-versions-version186)
++ [PostgreSQL version 18.4-R2 on Amazon RDS](#postgresql-versions-version184R2)
 + [PostgreSQL version 18.4 on Amazon RDS](#postgresql-versions-version184)
 + [PostgreSQL version 18.3-R2 on Amazon RDS](#postgresql-versions-version183R2)
 + [PostgreSQL version 18.3 on Amazon RDS](#postgresql-versions-version183)
@@ -205,6 +206,12 @@ PostgreSQL version 18.6 is now available on Amazon RDS. This release contains fi
 + This release also updates the SSL/TLS cryptographic library to [AWS-LC-FIPS 2025](https://github.com/aws/aws-lc/tree/fips-2025-09-12-lts) on the GitHub website.
 
 This version also includes the following extension changes:
++ The `pglogical` extension was updated to version 2.4.8.
+
+### PostgreSQL version 18.4-R2 on Amazon RDS
+<a name="postgresql-versions-version184R2"></a>
+
+PostgreSQL version 18.4-R2 is now available on Amazon RDS. This version includes the following extension changes:
 + The `pglogical` extension was updated to version 2.4.8.
 
 ### PostgreSQL version 18.4 on Amazon RDS
@@ -483,6 +490,7 @@ For version information on all extensions, see [Extensions supported for RDS for
 
 **Topics**
 + [PostgreSQL version 17.11 on Amazon RDS](#postgresql-versions-version1711)
++ [PostgreSQL version 17.10-R2 on Amazon RDS](#postgresql-versions-version1710R2)
 + [PostgreSQL version 17.10 on Amazon RDS](#postgresql-versions-version1710)
 + [PostgreSQL version 17.9-R2 on Amazon RDS](#postgresql-versions-version179R2)
 + [PostgreSQL version 17.9 on Amazon RDS](#postgresql-versions-version179)
@@ -512,6 +520,12 @@ PostgreSQL version 17.11 is now available on Amazon RDS. This release contains f
 + This release also updates the SSL/TLS cryptographic library to [AWS-LC-FIPS 2025](https://github.com/aws/aws-lc/tree/fips-2025-09-12-lts) on the GitHub website.
 
 This version also includes the following extension changes:
++ The `pglogical` extension was updated to version 2.4.8.
+
+### PostgreSQL version 17.10-R2 on Amazon RDS
+<a name="postgresql-versions-version1710R2"></a>
+
+PostgreSQL version 17.10-R2 is now available on Amazon RDS. This version includes the following extension changes:
 + The `pglogical` extension was updated to version 2.4.8.
 
 ### PostgreSQL version 17.10 on Amazon RDS
@@ -859,6 +873,7 @@ For version information on all extensions, see [Extensions supported for RDS for
 
 **Topics**
 + [PostgreSQL version 16.15 on Amazon RDS](#postgresql-versions-version1615)
++ [PostgreSQL version 16.14-R3 on Amazon RDS](#postgresql-versions-version1614R3)
 + [PostgreSQL version 16.14-R2 on Amazon RDS](#postgresql-versions-version1614R2)
 + [PostgreSQL version 16.14 on Amazon RDS](#postgresql-versions-version1614)
 + [PostgreSQL version 16.13-R2 on Amazon RDS](#postgresql-versions-version1613R2)
@@ -901,6 +916,12 @@ PostgreSQL version 16.15 is now available on Amazon RDS. This release contains f
 + This release also updates the SSL/TLS cryptographic library to [AWS-LC-FIPS 2025](https://github.com/aws/aws-lc/tree/fips-2025-09-12-lts) on the GitHub website.
 
 This version also includes the following extension changes:
++ The `pglogical` extension was updated to version 2.4.8.
+
+### PostgreSQL version 16.14-R3 on Amazon RDS
+<a name="postgresql-versions-version1614R3"></a>
+
+PostgreSQL version 16.14-R3 is now available on Amazon RDS. This version includes the following extension changes:
 + The `pglogical` extension was updated to version 2.4.8.
 
 ### PostgreSQL version 16.14-R2 on Amazon RDS
@@ -1392,6 +1413,7 @@ For version information on all extensions, see [Extensions supported for RDS for
 
 **Topics**
 + [PostgreSQL version 15.19 on Amazon RDS](#postgresql-versions-version1519)
++ [PostgreSQL version 15.18-R3 on Amazon RDS](#postgresql-versions-version1518R3)
 + [PostgreSQL version 15.18-R2 on Amazon RDS](#postgresql-versions-version1518R2)
 + [PostgreSQL version 15.18 on Amazon RDS](#postgresql-versions-version1518)
 + [PostgreSQL version 15.17-R2 on Amazon RDS](#postgresql-versions-version1517R2)
@@ -1435,6 +1457,12 @@ For version information on all extensions, see [Extensions supported for RDS for
 PostgreSQL version 15.19 is now available on Amazon RDS. This release contains fixes for critical Common Vulnerabilities and Exposures (CVE) and improvements announced in the [PostgreSQL 15.19 release](https://www.postgresql.org/about/news/postgresql-186-1711-1615-1519-1424-and-19-beta-3-released-3365/).
 
 This version also includes the following extension changes:
++ The `pglogical` extension was updated to version 2.4.8.
+
+### PostgreSQL version 15.18-R3 on Amazon RDS
+<a name="postgresql-versions-version1518R3"></a>
+
+PostgreSQL version 15.18-R3 is now available on Amazon RDS. This version includes the following extension changes:
 + The `pglogical` extension was updated to version 2.4.8.
 
 ### PostgreSQL version 15.18-R2 on Amazon RDS
@@ -1948,6 +1976,7 @@ For version information on all extensions, see [Extensions supported for RDS for
 
 **Topics**
 + [PostgreSQL version 14.24 on Amazon RDS](#postgresql-versions-version1424)
++ [PostgreSQL version 14.23-R3 on Amazon RDS](#postgresql-versions-version1423R3)
 + [PostgreSQL version 14.23-R2 on Amazon RDS](#postgresql-versions-version1423R2)
 + [PostgreSQL version 14.23 on Amazon RDS](#postgresql-versions-version1423)
 + [PostgreSQL version 14.22-R2 on Amazon RDS](#postgresql-versions-version1422R2)
@@ -1997,6 +2026,12 @@ For version information on all extensions, see [Extensions supported for RDS for
 PostgreSQL version 14.24 is now available on Amazon RDS. This release contains fixes for critical Common Vulnerabilities and Exposures (CVE) and improvements announced in the [PostgreSQL 14.24 release](https://www.postgresql.org/about/news/postgresql-186-1711-1615-1519-1424-and-19-beta-3-released-3365/).
 
 This version also includes the following extension changes:
++ The `pglogical` extension was updated to version 2.4.8.
+
+### PostgreSQL version 14.23-R3 on Amazon RDS
+<a name="postgresql-versions-version1423R3"></a>
+
+PostgreSQL version 14.23-R3 is now available on Amazon RDS. This version includes the following extension changes:
 + The `pglogical` extension was updated to version 2.4.8.
 
 ### PostgreSQL version 14.23-R2 on Amazon RDS

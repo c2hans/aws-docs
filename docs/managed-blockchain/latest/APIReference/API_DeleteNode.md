@@ -5,6 +5,9 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/A
 # DeleteNode
 <a name="API_DeleteNode"></a>
 
+**Note**
+End of support notice: Amazon Managed Blockchain will stop accepting new customers on October 29, 2026. Existing customers can continue using Amazon Managed Blockchain until September 29, 2027. After September 29, 2027 you will no longer be able to access Amazon Managed Blockchain. For more information, see [Amazon Managed Blockchain availability change](https://docs.aws.amazon.com/managed-blockchain/latest/hyperledger-fabric-dev/managed-blockchain-end-of-support.html).
+
 Deletes a node that your AWS account owns. All data on the node is lost and cannot be recovered.
 
 Applies to Hyperledger Fabric and Ethereum.

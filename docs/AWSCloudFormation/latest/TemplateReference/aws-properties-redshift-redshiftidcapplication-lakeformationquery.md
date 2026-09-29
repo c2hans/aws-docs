@@ -1,0 +1,41 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-redshift-redshiftidcapplication-lakeformationquery.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# AWS::Redshift::RedshiftIdcApplication LakeFormationQuery
+<a name="aws-properties-redshift-redshiftidcapplication-lakeformationquery"></a>
+
+The Lake Formation scope.
+
+## Syntax
+<a name="aws-properties-redshift-redshiftidcapplication-lakeformationquery-syntax"></a>
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+<a name="aws-properties-redshift-redshiftidcapplication-lakeformationquery-syntax.json"></a>
+
+```
+{
+  "[Authorization](#cfn-redshift-redshiftidcapplication-lakeformationquery-authorization)" : {{String}}
+}
+```
+
+### YAML
+<a name="aws-properties-redshift-redshiftidcapplication-lakeformationquery-syntax.yaml"></a>
+
+```
+  [Authorization](#cfn-redshift-redshiftidcapplication-lakeformationquery-authorization): {{String}}
+```
+
+## Properties
+<a name="aws-properties-redshift-redshiftidcapplication-lakeformationquery-properties"></a>
+
+`Authorization`  <a name="cfn-redshift-redshiftidcapplication-lakeformationquery-authorization"></a>
+Determines whether the query scope is enabled or disabled.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `Enabled | Disabled`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

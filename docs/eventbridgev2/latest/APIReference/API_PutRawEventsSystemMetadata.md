@@ -11,7 +11,7 @@ System metadata for PutRawEvents entries. ContentType is required because PutRaw
 <a name="API_PutRawEventsSystemMetadata_Contents"></a>
 
  ** ContentType **   <a name="eventbridgev2-Type-PutRawEventsSystemMetadata-ContentType"></a>
-Content type of the event data (e.g., "application/cloudevents\+json").
+Content type of the event data. Valid values: `application/json`, `application/avro`, `application/protobuf`, `application/octet-stream`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `application/.*`

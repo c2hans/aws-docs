@@ -6,11 +6,10 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/example
 <a name="example-elastic-fleets"></a>
 
 **Example `aws:SourceAccount` Conditional:**
-****
 
 ```
 {
-    "Version":"2012-10-17",
+    "Version": "2012-10-17",
     "Statement": [
         {
             "Effect": "Allow",
@@ -23,7 +22,7 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/example
             "Resource": "arn:aws:s3:::{{your-bucket-name}}/{{your-session-script-path}}",
             "Condition": {
                 "StringEquals": {
-                    "aws:SourceAccount": "{{your AWS account ID}}"
+                    "aws:SourceAccount": "{{111122223333}}"
                 }
             }
         }
