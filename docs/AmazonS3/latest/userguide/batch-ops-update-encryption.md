@@ -44,7 +44,7 @@ To perform the `UpdateObjectEncryption` operation, add the following AWS Identit
                 "s3:UpdateObjectEncryption"
             ],
             "Resource": [
-                 "arn:aws:s3:::{{amzn-s3-demo-bucket-target}}"
+                 "arn:aws:s3:::{{amzn-s3-demo-bucket-target}}",
                 "arn:aws:s3:::{{amzn-s3-demo-bucket-target}}-target/*"
             ]
         },

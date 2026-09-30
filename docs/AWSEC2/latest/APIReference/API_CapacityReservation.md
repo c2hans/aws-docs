@@ -10,6 +10,21 @@ Describes a Capacity Reservation.
 ## Contents
 <a name="API_CapacityReservation_Contents"></a>
 
+ ** adjustmentDetails **
+The configuration that the Capacity Reservation will have after the requested adjustment is applied.
+Type: [CapacityReservationAdjustmentDetails](API_CapacityReservationAdjustmentDetails.md) object
+Required: No
+
+ ** adjustmentStatus **
+The status of the most recent modification to the Capacity Reservation. A Capacity Reservation can have one of the following adjustment statuses:
++  `requested` - The modification was requested and is being processed.
++  `applied` - The modification was applied to the Capacity Reservation.
++  `rejected` - The modification was not applied and the Capacity Reservation keeps its existing configuration.
+This field is not returned if the Capacity Reservation has never been modified.
+Type: String
+Valid Values: `requested | applied | rejected`
+Required: No
+
  ** availabilityZone **
 The Availability Zone in which the capacity is reserved.
 Type: String
@@ -121,6 +136,20 @@ Required: No
  ** interruptionInfo **
  Information about the interruption configuration and association with the source reservation for interruptible Capacity Reservations.
 Type: [InterruptionInfo](API_InterruptionInfo.md) object
+Required: No
+
+ ** launchStatus **
+Only supported for UltraServers.
+Indicates whether you can launch instances into the Capacity Reservation. A Capacity Reservation can have the following launch statuses:
++  `launchable` - You can launch instances into the Capacity Reservation.
++  `unlaunchable` - You can't launch instances into the Capacity Reservation. For example, the Capacity Reservation is not active.
+Type: String
+Valid Values: `launchable | unlaunchable`
+Required: No
+
+ ** originalStartDate **
+The start date that you originally requested for the Capacity Reservation, in the ISO8601 format in the UTC time zone (`YYYY-MM-DDThh:mm:ss.sssZ`). This value doesn't change when you push out the start date.
+Type: Timestamp
 Required: No
 
  ** outpostArn **

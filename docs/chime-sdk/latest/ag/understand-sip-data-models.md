@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/understand-sip-data-
 <a name="understand-sip-data-models"></a>
 
 **Note**
-Amazon Chime SDK SIP media applications will no longer be open to new customers starting October 29, 2026. If you would like to use SIP media applications, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see [SIP media applications service change](sip-applications-service-change.md).
+Amazon Chime SDK SIP media applications will no longer be open to new customers starting October 29, 2026. If you would like to use SIP media applications, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see [Amazon Chime SDK SIP media applications availability change](sip-applications-maintenance-mode.md).
 
 To use the Session Initiation Protocol (SIP) with the Amazon Chime SDK, you create SIP media applications and SIP rules. You create both in the Amazon Chime SDK console.
 

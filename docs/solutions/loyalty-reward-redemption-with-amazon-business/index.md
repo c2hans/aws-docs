@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/loyalty-reward-redemption-with
 title: 'Guidance for Loyalty Reward Redemption with Amazon Business'
 canonical_url: https://docs.aws.amazon.com/solutions/loyalty-reward-redemption-with-amazon-business/
 source: aws-documentation
-generated_on: 2026-09-29
+generated_on: 2026-09-30
 ---
 
 # Guidance for Loyalty Reward Redemption with Amazon Business

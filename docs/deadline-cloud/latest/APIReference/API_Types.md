@@ -75,6 +75,7 @@ The following data types are supported:
 +  [FleetCapabilities](API_FleetCapabilities.md)
 +  [FleetConfiguration](API_FleetConfiguration.md)
 +  [FleetMember](API_FleetMember.md)
++  [FleetSoftwareAddOn](API_FleetSoftwareAddOn.md)
 +  [FleetSummary](API_FleetSummary.md)
 +  [GetJobEntityError](API_GetJobEntityError.md)
 +  [HostConfiguration](API_HostConfiguration.md)

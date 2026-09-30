@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::ElasticBeanstalk::ApplicationVersion ImageBuildConfiguration
 <a name="aws-properties-elasticbeanstalk-applicationversion-imagebuildconfiguration"></a>
 
-Settings that Elastic Beanstalk uses to build a container image from the source bundle of an application version.
+The `ImageBuildConfiguration` property type specifies settings that Elastic Beanstalk uses to build a container image from the source bundle of an application version.
 
 ## Syntax
 <a name="aws-properties-elasticbeanstalk-applicationversion-imagebuildconfiguration-syntax"></a>

@@ -45,7 +45,7 @@ Pattern: `[\w\d\.-]+`
 Required: No
 
  ** [AppRegistryArn](#API_GetApplication_RequestSyntax) **   <a name="ssmsap-GetApplication-request-AppRegistryArn"></a>
-The Amazon Resource Name (ARN) of the application registry.
+The Amazon Resource Name (ARN) of the application registry. This member is deprecated; use applicationId or applicationArn instead.
 Type: String
 Pattern: `arn:aws:servicecatalog:[a-z0-9:\/-]+`
 Required: No

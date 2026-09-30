@@ -246,6 +246,11 @@ Required: Yes
                ],
                "vpcLatticeConfigurations": [
                   {
+                     "advancedConfiguration": {
+                        "alternateTargetGroupArn": "string",
+                        "productionListenerRule": "string",
+                        "testListenerRule": "string"
+                     },
                      "portName": "string",
                      "roleArn": "string",
                      "targetGroupArn": "string"

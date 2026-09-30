@@ -39,13 +39,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 The tag key.
 *Required*: Yes
 *Type*: String
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Value`  <a name="cfn-ec2-capacityreservationfleet-tag-value"></a>
 The tag value.
 *Required*: Yes
 *Type*: String
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Examples
 <a name="aws-properties-ec2-capacityreservationfleet-tag--examples"></a>

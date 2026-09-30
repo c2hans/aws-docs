@@ -70,6 +70,7 @@ Content-type: application/json
          "sseType": "string"
       },
       "indexArn": "string",
+      "indexMode": "string",
       "indexName": "string",
       "metadataConfiguration": {
          "nonFilterableMetadataKeys": [ "string" ]

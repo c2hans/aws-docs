@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-postgresql-on-ec2-using-ebs/document-revisions.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Document history
 <a name="document-revisions"></a>
 
@@ -11,6 +9,7 @@ To be notified about updates to this whitepaper, subscribe to the RSS feed.
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Whitepaper updated](#document-revisions) | Refreshed for technical accuracy. Removed the historical reference notice as the content is current. Added the standard AWS Well-Architected Framework callout. | September 24, 2026 |
 | [Initial publication](#document-revisions) | Whitepaper first published. | October 19, 2023 |
 
 **Note**

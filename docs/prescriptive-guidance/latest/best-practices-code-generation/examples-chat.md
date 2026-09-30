@@ -82,7 +82,7 @@ for bucket in response['Buckets']:
 
 Here's how the code works:
 
-1. We first import the boto3 library, which is the SDK for Python.
+1. We first import the boto3 library, which is the SDK for Python (Boto).
 
 1. We create an S3 client using `boto3.client('s3')`.
 

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/automated-content-compliance-w
 title: 'Guidance for Automated Content Compliance with AI-powered Video Analysis and Agents on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/automated-content-compliance-with-ai-powered-video-analysis-and-agents/
 source: aws-documentation
-generated_on: 2026-09-29
+generated_on: 2026-09-30
 ---
 
 # Guidance for Automated Content Compliance with AI-powered Video Analysis and Agents on AWS

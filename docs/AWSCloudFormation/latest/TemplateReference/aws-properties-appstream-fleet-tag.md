@@ -39,10 +39,15 @@ To declare this entity in your CloudFormation template, use the following syntax
 The key of the tag.
 *Required*: Yes
 *Type*: String
+*Pattern*: `^(?!aws:)[\S\s]+$`
+*Minimum*: `1`
+*Maximum*: `128`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Value`  <a name="cfn-appstream-fleet-tag-value"></a>
 The value of the tag.
-*Required*: Yes
+*Required*: No
 *Type*: String
+*Pattern*: `^[\S\s]*$`
+*Maximum*: `256`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

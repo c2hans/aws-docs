@@ -11,4 +11,4 @@ You can create a monitor in any subnet that belongs to a VPC owned by your accou
 
 For more information, see [ Using Network Synthetic Monitor](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/what-is-network-monitor.html) in the *Amazon CloudWatch User Guide*.
 
-This document was last published on September 29, 2026.
+This document was last published on September 30, 2026.

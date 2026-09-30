@@ -50,7 +50,7 @@ The alias for the replicated instance. The `ReplicaAlias` must be unique.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 45.
 Pattern: `^(?!d-)([\da-zA-Z]+)([-]*[\da-zA-Z])*$`
-Required: Yes
+Required: No
 
  ** [ReplicaRegion](#API_ReplicateInstance_RequestSyntax) **   <a name="connect-ReplicateInstance-request-ReplicaRegion"></a>
 The AWS Region where to replicate the Connect Customer instance.

@@ -31,11 +31,16 @@ If your organization requires smart card sign in, you must create a streaming UR
 
 1. Select the fleet that you want to update with the new image.
 
-1. On the **Fleet Details** tab, choose **Edit**.
+1. On the fleet detail page, choose the **Image** tab.
 
-1. In the **Edit Fleet** dialog box, the list of available images displays in the **Name** list. Select the new image from the list.
+1. In the **Image details** panel, choose **Edit**. This opens the **Edit: Fleet image** page.
 
-1. Choose **Update**.
+1. Select the new image from the **Images** list. You can use the **Filter by attribute or keyword** box to search; the list is paginated.
+
+1. Choose **Save** to apply the change.
+
+**Note**
+The fleet does not need to be in the **Stopped** state to change its image. Optionally, stop the fleet first if you prefer.
 
 **Note**
 All existing instances and user sessions will continue to run with the old image, but all new instance launches will spin up from the new image. For multi-session fleets, it is possible that instances keep running with the older image for a longer duration of time because the service will not terminate an instance if there is an active session on the instance, and if user sessions keep getting provisioned on these instances, it is possible the instance will continue to run with the old image. To get rid of long-running instances on multi-session fleets, evaluate the option of putting them in drain mode. To learn more, refer to [Manage Multi-Session Fleet Instances](manage-multi-session-instances.md).

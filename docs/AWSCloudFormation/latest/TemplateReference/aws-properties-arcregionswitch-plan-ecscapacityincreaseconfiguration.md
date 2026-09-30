@@ -23,7 +23,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[Services](#cfn-arcregionswitch-plan-ecscapacityincreaseconfiguration-services)" : {{[ Service, ... ]}},
   "[TargetPercent](#cfn-arcregionswitch-plan-ecscapacityincreaseconfiguration-targetpercent)" : {{Number}},
   "[TimeoutMinutes](#cfn-arcregionswitch-plan-ecscapacityincreaseconfiguration-timeoutminutes)" : {{Number}},
-  "[Ungraceful](#cfn-arcregionswitch-plan-ecscapacityincreaseconfiguration-ungraceful)" : {{EcsUngraceful}}
+  "[Ungraceful](#cfn-arcregionswitch-plan-ecscapacityincreaseconfiguration-ungraceful)" : {{EcsUngraceful}},
+  "[WaitELBTargetGroupHealthy](#cfn-arcregionswitch-plan-ecscapacityincreaseconfiguration-waitelbtargetgrouphealthy)" : {{String}}
 }
 ```
 
@@ -39,6 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   [TimeoutMinutes](#cfn-arcregionswitch-plan-ecscapacityincreaseconfiguration-timeoutminutes): {{Number}}
   [Ungraceful](#cfn-arcregionswitch-plan-ecscapacityincreaseconfiguration-ungraceful): {{
     EcsUngraceful}}
+  [WaitELBTargetGroupHealthy](#cfn-arcregionswitch-plan-ecscapacityincreaseconfiguration-waitelbtargetgrouphealthy): {{String}}
 ```
 
 ## Properties
@@ -75,4 +77,11 @@ The timeout value specified for the configuration.
 The settings for ungraceful execution.
 *Required*: No
 *Type*: [EcsUngraceful](aws-properties-arcregionswitch-plan-ecsungraceful.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`WaitELBTargetGroupHealthy`  <a name="cfn-arcregionswitch-plan-ecscapacityincreaseconfiguration-waitelbtargetgrouphealthy"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `enabled | disabled`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

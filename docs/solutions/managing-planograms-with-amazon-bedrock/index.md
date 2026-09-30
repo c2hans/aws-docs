@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/managing-planograms-with-amazo
 title: 'Guidance for Managing Planograms with Amazon Bedrock'
 canonical_url: https://docs.aws.amazon.com/solutions/managing-planograms-with-amazon-bedrock/
 source: aws-documentation
-generated_on: 2026-09-29
+generated_on: 2026-09-30
 ---
 
 # Guidance for Managing Planograms with Amazon Bedrock

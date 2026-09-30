@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::ElasticBeanstalk::ApplicationVersion BuildConfiguration
 <a name="aws-properties-elasticbeanstalk-applicationversion-buildconfiguration"></a>
 
-Settings for an AWS CodeBuild build.
+The `BuildConfiguration` property type specifies build settings that Elastic Beanstalk uses to package an application version from source code.
 
 ## Syntax
 <a name="aws-properties-elasticbeanstalk-applicationversion-buildconfiguration-syntax"></a>

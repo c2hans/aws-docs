@@ -31,7 +31,8 @@ The request uses the following URI parameters.
 The type of attribute.
 Only allowlisted customers can consume USE\_CUSTOM\_TTS\_VOICES. To access this feature, contact AWS Support for allowlisting.
 If you set the attribute type as `MESSAGE_STREAMING`, you need to update the Lex bot alias resource based policy to include the `lex:RecognizeMessageAsync` action for the connect instance ARN resource.
-Valid Values: `INBOUND_CALLS | OUTBOUND_CALLS | CONTACTFLOW_LOGS | CONTACT_LENS | AUTO_RESOLVE_BEST_VOICES | USE_CUSTOM_TTS_VOICES | EARLY_MEDIA | MULTI_PARTY_CONFERENCE | HIGH_VOLUME_OUTBOUND | ENHANCED_CONTACT_MONITORING | ENHANCED_CHAT_MONITORING | MULTI_PARTY_CHAT_CONFERENCE | MESSAGE_STREAMING`
+If you set the attribute type `AUTO_MUTE_AGENT_ON_HOLD` to `true`, the system automatically mutes agents while they're on hold and unmutes them when they resume the contact. Agents can't change their mute state while on hold.
+Valid Values: `INBOUND_CALLS | OUTBOUND_CALLS | CONTACTFLOW_LOGS | CONTACT_LENS | AUTO_RESOLVE_BEST_VOICES | USE_CUSTOM_TTS_VOICES | EARLY_MEDIA | MULTI_PARTY_CONFERENCE | AUTO_MUTE_AGENT_ON_HOLD | HIGH_VOLUME_OUTBOUND | ENHANCED_CONTACT_MONITORING | ENHANCED_CHAT_MONITORING | MULTI_PARTY_CHAT_CONFERENCE | MESSAGE_STREAMING`
 Required: Yes
 
  ** [InstanceId](#API_UpdateInstanceAttribute_RequestSyntax) **   <a name="connect-UpdateInstanceAttribute-request-uri-InstanceId"></a>

@@ -173,7 +173,7 @@ print(registry['customMetadataSchemaConfiguration'])
 
  **Additive-only evolution:**
 + You can add new fields, add new Enum values to an existing Enum field, add new record-type overrides, add a default schema to a registry that has only overrides, and change whether a field is required.
-+ You cannot remove a saved field, change its data type, remove a saved Enum value, add or remove the Enum constraint on an existing field, change a field’s format (for example, Text to URL or vice versa), remove an existing override, or remove the default schema.
++ You cannot remove a saved field, change its data type, remove a saved Enum value, add or remove the Enum constraint on an existing field (for example, a Text field cannot become an Enum field or vice versa), change a field’s format (for example, Text to URL or vice versa), remove an existing override, or remove the default schema.
 
 For constraints on the values stored against a schema, see [Constraints](registry-custom-metadata-values.md#registry-custom-metadata-values-constraints) in [Set custom metadata values on a record](registry-custom-metadata-values.md).
 

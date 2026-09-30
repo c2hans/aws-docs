@@ -24,6 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[AccessEndpoints](#cfn-appstream-appblockbuilder-accessendpoints)" : {{[ AccessEndpoint, ... ]}},
       "[AppBlockArns](#cfn-appstream-appblockbuilder-appblockarns)" : {{[ String, ... ]}},
       "[Description](#cfn-appstream-appblockbuilder-description)" : {{String}},
+      "[DisableIMDSV1](#cfn-appstream-appblockbuilder-disableimdsv1)" : {{Boolean}},
       "[DisplayName](#cfn-appstream-appblockbuilder-displayname)" : {{String}},
       "[EnableDefaultInternetAccess](#cfn-appstream-appblockbuilder-enabledefaultinternetaccess)" : {{Boolean}},
       "[IamRoleArn](#cfn-appstream-appblockbuilder-iamrolearn)" : {{String}},
@@ -47,6 +48,7 @@ Properties:
   [AppBlockArns](#cfn-appstream-appblockbuilder-appblockarns): {{
     - String}}
   [Description](#cfn-appstream-appblockbuilder-description): {{String}}
+  [DisableIMDSV1](#cfn-appstream-appblockbuilder-disableimdsv1): {{Boolean}}
   [DisplayName](#cfn-appstream-appblockbuilder-displayname): {{String}}
   [EnableDefaultInternetAccess](#cfn-appstream-appblockbuilder-enabledefaultinternetaccess): {{Boolean}}
   [IamRoleArn](#cfn-appstream-appblockbuilder-iamrolearn): {{String}}
@@ -82,6 +84,12 @@ The description of the app block builder.
 *Required*: No
 *Type*: String
 *Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`DisableIMDSV1`  <a name="cfn-appstream-appblockbuilder-disableimdsv1"></a>
+Indicates whether Instance Metadata Service Version 1 (IMDSv1) is disabled for the app block builder.
+*Required*: No
+*Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DisplayName`  <a name="cfn-appstream-appblockbuilder-displayname"></a>

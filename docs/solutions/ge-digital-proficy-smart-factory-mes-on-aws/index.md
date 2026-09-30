@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/ge-digital-proficy-smart-facto
 title: 'Guidance for GE Digital Proficy Smart Factory MES on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/ge-digital-proficy-smart-factory-mes-on-aws/
 source: aws-documentation
-generated_on: 2026-09-29
+generated_on: 2026-09-30
 ---
 
 # Guidance for GE Digital Proficy Smart Factory MES on AWS

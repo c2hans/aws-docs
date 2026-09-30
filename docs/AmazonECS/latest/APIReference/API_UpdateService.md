@@ -247,6 +247,11 @@ When the service scheduler stops running tasks, it attempts to maintain balance 
    ],
    "vpcLatticeConfigurations": [
       {
+         "advancedConfiguration": {
+            "alternateTargetGroupArn": "{{string}}",
+            "productionListenerRule": "{{string}}",
+            "testListenerRule": "{{string}}"
+         },
          "portName": "{{string}}",
          "roleArn": "{{string}}",
          "targetGroupArn": "{{string}}"
@@ -630,6 +635,11 @@ Required: No
             ],
             "vpcLatticeConfigurations": [
                {
+                  "advancedConfiguration": {
+                     "alternateTargetGroupArn": "string",
+                     "productionListenerRule": "string",
+                     "testListenerRule": "string"
+                  },
                   "portName": "string",
                   "roleArn": "string",
                   "targetGroupArn": "string"

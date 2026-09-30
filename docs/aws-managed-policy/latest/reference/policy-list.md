@@ -1456,6 +1456,7 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/poli
 + [ElementalAppliancesSoftwareReadOnlyAccess](ElementalAppliancesSoftwareReadOnlyAccess.md)
 + [ElementalSupportCenterFullAccess](ElementalSupportCenterFullAccess.md)
 + [EMRDescribeClusterPolicyForEMRWAL](EMRDescribeClusterPolicyForEMRWAL.md)
++ [EndUserMessagingServiceRolePolicy](EndUserMessagingServiceRolePolicy.md)
 + [FinOpsAgentAgentPolicy](FinOpsAgentAgentPolicy.md)
 + [FinOpsAgentOperatorPolicy](FinOpsAgentOperatorPolicy.md)
 + [FMSServiceRolePolicy](FMSServiceRolePolicy.md)

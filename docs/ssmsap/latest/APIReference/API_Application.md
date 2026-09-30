@@ -11,7 +11,7 @@ An SAP application registered with AWS Systems Manager for SAP.
 <a name="API_Application_Contents"></a>
 
  ** AppRegistryArn **   <a name="ssmsap-Type-Application-AppRegistryArn"></a>
-The Amazon Resource Name (ARN) of the Application Registry.
+The Amazon Resource Name (ARN) of the Application Registry. This member is deprecated; use applicationId or applicationArn instead.
 Type: String
 Pattern: `arn:aws:servicecatalog:[a-z0-9:\/-]+`
 Required: No

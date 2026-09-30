@@ -27,6 +27,12 @@ Sets the cache usage limits for storage and ElastiCache Processing Units for the
 Type: [CacheUsageLimits](API_CacheUsageLimits.md) object
 Required: No
 
+ ** ConnectionType **
+The connection type for the serverless cache. Must be either `vpc` \| `public`. Use `vpc` to access the cache through a VPC endpoint, or `public` to access the cache over the internet. If not specified, defaults to `vpc`. This value cannot be changed after the serverless cache is created. Setting this to `public` requires Valkey 9 or above.
+Type: String
+Valid Values: `vpc | public`
+Required: No
+
  ** DailySnapshotTime **
 The daily time that snapshots will be created from the new serverless cache. By default this number is populated with 0, i.e. no snapshots will be created on an automatic daily basis. Available for Valkey, Redis OSS and Serverless Memcached only.
 Type: String

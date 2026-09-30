@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/storagegateway/index.html
 title: 'AWS Storage Gateway Documentation'
 canonical_url: https://docs.aws.amazon.com/storagegateway/
 source: aws-documentation
-generated_on: 2026-09-29
+generated_on: 2026-09-30
 ---
 
 # AWS Storage Gateway Documentation

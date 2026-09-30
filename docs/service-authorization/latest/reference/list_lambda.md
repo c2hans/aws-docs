@@ -681,7 +681,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [lambda:CreateMicrovmImage](#list_lambda-action-CreateMicrovmImage)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [lambda:PassNetworkConnector](#list_lambda-action-PassNetworkConnector)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [lambda:TagResource](#list_lambda-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
-  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** lambda.amazonaws.com / **Access level:** Write
 
 - **   CreateMicrovmShellAuthToken  **
   - **SDK client:** lambda-microvms
@@ -792,7 +792,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **SDK client:** lambda-microvms
   - **IAM action:**  [lambda:PassNetworkConnector](#list_lambda-action-PassNetworkConnector)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [lambda:RunMicrovm](#list_lambda-action-RunMicrovm)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
-  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** lambda.amazonaws.com / **Access level:** Write
 
 - **   SuspendMicrovm  **
   - **SDK client:** lambda-microvms
@@ -826,7 +826,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **SDK client:** lambda-microvms
   - **IAM action:**  [lambda:PassNetworkConnector](#list_lambda-action-PassNetworkConnector)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [lambda:UpdateMicrovmImage](#list_lambda-action-UpdateMicrovmImage)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
-  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** lambda.amazonaws.com / **Access level:** Write
 
 - **   UpdateMicrovmImageVersion  **
   - **SDK client:** lambda-microvms

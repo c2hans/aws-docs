@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/application-discovery/index.html
 title: 'AWS Application Discovery Service Documentation'
 canonical_url: https://docs.aws.amazon.com/application-discovery/
 source: aws-documentation
-generated_on: 2026-09-29
+generated_on: 2026-09-30
 ---
 
 # AWS Application Discovery Service Documentation

@@ -7,4 +7,4 @@ source_url: https://docs.aws.amazon.com/savingsplans/latest/APIReference/Welcome
 
 Savings Plans are a pricing model that offer significant savings on AWS usage (for example, on Amazon EC2 instances). You commit to a consistent amount of usage per hour, in the specified currency, for a term of one or three years, and receive a lower price for that usage. For more information, see the [AWS Savings Plans User Guide](https://docs.aws.amazon.com/savingsplans/latest/userguide/).
 
-This document was last published on September 29, 2026.
+This document was last published on September 30, 2026.

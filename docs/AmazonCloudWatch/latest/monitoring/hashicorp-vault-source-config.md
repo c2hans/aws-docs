@@ -62,7 +62,7 @@ Configure the Amazon SQS queue policy to allow the Amazon S3 bucket to send mess
       "Resource": "arn:aws:sqs:<region>:<account-id>:<queue-name>",
       "Condition": {
         "ArnEquals": {
-          "aws:SourceArn": "arn:aws:s3:::<YOUR-BUCKET>"
+          "aws:SourceArn": "arn:aws:s3:::amzn-s3-demo-bucket"
         },
         "StringEquals": {
           "aws:SourceAccount": "<account-id>"
@@ -137,7 +137,7 @@ Configure Fluent Bit to collect both audit and operational logs and deliver them
 [OUTPUT]
     Name                 s3
     Match                vault.*
-    bucket               <YOUR-BUCKET>
+    bucket               amzn-s3-demo-bucket
     region               <region>
     s3_key_format        /hashicorp-vault/%Y/%m/%d/%H/%M/%S.log.gz
     compression          gzip
@@ -165,13 +165,11 @@ Create an IAM policy with the following permissions for the Fluent Bit host to w
         "s3:GetBucketLocation",
         "s3:ListBucket",
         "s3:ListMultipartUploadParts",
-        "s3:AbortMultipartUpload",
-        "s3:CreateMultipartUpload",
-        "s3:CompleteMultipartUpload"
+        "s3:AbortMultipartUpload"
       ],
       "Resource": [
-        "arn:aws:s3:::<YOUR-BUCKET>",
-        "arn:aws:s3:::<YOUR-BUCKET>/hashicorp-vault/*"
+        "arn:aws:s3:::amzn-s3-demo-bucket",
+        "arn:aws:s3:::amzn-s3-demo-bucket/hashicorp-vault/*"
       ]
     }
   ]

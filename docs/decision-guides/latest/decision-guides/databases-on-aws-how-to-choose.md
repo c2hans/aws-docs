@@ -132,7 +132,7 @@ The following table summarizes vector capabilities across AWS database services 
 | Amazon Neptune Analytics | Vector similarity \+ graph analytics | Medium | GraphRAG, knowledge-graph-enhanced RAG pipelines |
 | Amazon DocumentDB | Native vector search (HNSW/IVFFlat indexes) | Low | MongoDB-compatible apps with vector search requirements |
 | Amazon S3 Vectors | Native vector storage and query | Higher | Cost-optimized bulk vector storage at billion-vector scale |
-| Amazon DynamoDB | Via zero-ETL to OpenSearch (not native) | Varies | Operational store where vector search is a complementary workload |
+| Amazon DynamoDB | Native vector search (vector indexes) \+ zero-ETL to OpenSearch | Varies | Operational store where vector search is a complementary workload |
 
  Additional criteria to consider include ease of implementation, scalability, and performance. They are discussed in-depth in this blog: [Key considerations when choosing a database for your generative AI applications](https://aws.amazon.com/blogs/database/key-considerations-when-choosing-a-database-for-your-generative-ai-applications/).
 

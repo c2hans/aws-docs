@@ -87,6 +87,9 @@ Content-type: application/json
                "string" : "string"
             }
          },
+         "metadata": {
+            "string" : "string"
+         },
          "queueId": "string",
          "sessionActions": [
             {

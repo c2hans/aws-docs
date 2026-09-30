@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/lightsail/index.html
 title: 'Amazon Lightsail Documentation'
 canonical_url: https://docs.aws.amazon.com/lightsail/
 source: aws-documentation
-generated_on: 2026-09-29
+generated_on: 2026-09-30
 ---
 
 # Amazon Lightsail Documentation

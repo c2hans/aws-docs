@@ -91,7 +91,7 @@ When AgentCore Runtime restores instances from a snapshot, every instance create
 On AgentCore Runtime, snapshot-safe builds of cryptographic libraries don’t currently reseed after a restore. This applies to both direct code deployments and container deployments.
 
  **Workarounds**
-+ Generate secrets, keys, tokens, and session identifiers while handling a request, not when your agent starts. AgentCore Runtime takes the snapshot after your agent starts, so any value your agent already created is copied into every instance restored from it.
++ Generate secrets, keys, tokens, and session identifiers while handling a request, not when your agent starts. This avoids using any values created before AgentCore Runtime takes the snapshot in each instance restored from that snapshot.
 + Even while handling a request, get random values directly from the operating system, for example Python’s `secrets` or `os.urandom`, Go’s `crypto/rand`, or reading `/dev/urandom`. Don’t use random values from a cryptographic library such as OpenSSL, because they can repeat across instances.
 
 ## Networking

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/marketplace/index.html
 title: 'AWS Marketplace Documentation'
 canonical_url: https://docs.aws.amazon.com/marketplace/
 source: aws-documentation
-generated_on: 2026-09-29
+generated_on: 2026-09-30
 ---
 
 # AWS Marketplace Documentation

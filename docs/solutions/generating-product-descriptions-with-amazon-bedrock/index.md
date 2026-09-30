@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/generating-product-description
 title: 'Guidance for Generating Product Descriptions with Amazon Bedrock'
 canonical_url: https://docs.aws.amazon.com/solutions/generating-product-descriptions-with-amazon-bedrock/
 source: aws-documentation
-generated_on: 2026-09-29
+generated_on: 2026-09-30
 ---
 
 # Guidance for Generating Product Descriptions with Amazon Bedrock

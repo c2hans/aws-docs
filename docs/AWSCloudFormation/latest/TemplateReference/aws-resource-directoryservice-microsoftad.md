@@ -62,7 +62,7 @@ After an alias has been created, it cannot be deleted or reused, so this operati
 AWS Managed Microsoft AD is available in two editions: `Standard` and `Enterprise`. `Enterprise` is the default.
 *Required*: No
 *Type*: String
-*Allowed values*: `Enterprise | Standard | Hybrid`
+*Allowed values*: `Enterprise | Standard`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `EnableSso`  <a name="cfn-directoryservice-microsoftad-enablesso"></a>
@@ -81,7 +81,7 @@ The fully qualified domain name for the AWS Managed Microsoft AD directory, such
 `Password`  <a name="cfn-directoryservice-microsoftad-password"></a>
 The password for the default administrative user named `Admin`.
 If you need to change the password for the administrator account, see the [ResetUserPassword](https://docs.aws.amazon.com/directoryservice/latest/devguide/API_ResetUserPassword.html) API call in the *Directory Service API Reference*.
-*Required*: Yes
+*Required*: No
 *Type*: String
 *Pattern*: `(?=^.{8,64}$)((?=.*\d)(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[^A-Za-z0-9\s])(?=.*[a-z])|(?=.*[^A-Za-z0-9\s])(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[A-Z])(?=.*[^A-Za-z0-9\s]))^.*`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
@@ -126,11 +126,11 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 `Alias`  <a name="Alias-fn::getatt"></a>
 The alias for a directory. For example: `alias4-mydirectory-12345abcgmzsk` (if you have the `CreateAlias` property set to true).
 
+`DirectoryId`  <a name="DirectoryId-fn::getatt"></a>
+The identifier of the directory that was created.
+
 `DnsIpAddresses`  <a name="DnsIpAddresses-fn::getatt"></a>
 The IP addresses of the DNS servers for the directory, such as `[ "192.0.2.1", "192.0.2.2" ]`.
-
-`Id`  <a name="Id-fn::getatt"></a>
-The directory ID. For example: `d-12373a053a`.
 
 ## Examples
 <a name="aws-resource-directoryservice-microsoftad--examples"></a>

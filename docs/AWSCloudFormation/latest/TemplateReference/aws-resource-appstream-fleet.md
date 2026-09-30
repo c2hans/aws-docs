@@ -21,6 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "Type" : "AWS::AppStream::Fleet",
   "Properties" : {
+      "[AttributesToDelete](#cfn-appstream-fleet-attributestodelete)" : {{[ String, ... ]}},
       "[ComputeCapacity](#cfn-appstream-fleet-computecapacity)" : {{ComputeCapacity}},
       "[Description](#cfn-appstream-fleet-description)" : {{String}},
       "[DisableIMDSV1](#cfn-appstream-fleet-disableimdsv1)" : {{Boolean}},
@@ -55,6 +56,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 Type: AWS::AppStream::Fleet
 Properties:
+  [AttributesToDelete](#cfn-appstream-fleet-attributestodelete): {{
+    - String}}
   [ComputeCapacity](#cfn-appstream-fleet-computecapacity): {{
     ComputeCapacity}}
   [Description](#cfn-appstream-fleet-description): {{String}}
@@ -91,6 +94,13 @@ Properties:
 ## Properties
 <a name="aws-resource-appstream-fleet-properties"></a>
 
+`AttributesToDelete`  <a name="cfn-appstream-fleet-attributestodelete"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of String
+*Allowed values*: `VPC_CONFIGURATION | VPC_CONFIGURATION_SECURITY_GROUP_IDS | DOMAIN_JOIN_INFO | IAM_ROLE_ARN | USB_DEVICE_FILTER_STRINGS | SESSION_SCRIPT_S3_LOCATION | MAX_SESSIONS_PER_INSTANCE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `ComputeCapacity`  <a name="cfn-appstream-fleet-computecapacity"></a>
 The desired capacity for the fleet. This is not allowed for Elastic fleets.
 *Required*: No
@@ -101,6 +111,7 @@ The desired capacity for the fleet. This is not allowed for Elastic fleets.
 The description to display.
 *Required*: No
 *Type*: String
+*Minimum*: `1`
 *Maximum*: `256`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
@@ -115,12 +126,15 @@ The amount of time that a streaming session remains active after users disconnec
 Specify a value between 60 and 36000.
 *Required*: No
 *Type*: Integer
+*Minimum*: `60`
+*Maximum*: `432000`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DisplayName`  <a name="cfn-appstream-fleet-displayname"></a>
 The fleet name to display.
 *Required*: No
 *Type*: String
+*Minimum*: `1`
 *Maximum*: `100`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
@@ -147,6 +161,7 @@ The pool of streaming instances is managed by Amazon WorkSpaces Applications. Wh
 *Allowed Values*: `ALWAYS_ON` \| `ELASTIC` \| `ON_DEMAND`
 *Required*: No
 *Type*: String
+*Pattern*: `^ALWAYS_ON$|^ON_DEMAND$|^ELASTIC$`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `IamRoleArn`  <a name="cfn-appstream-fleet-iamrolearn"></a>
@@ -154,7 +169,7 @@ The ARN of the IAM role that is applied to the fleet. To assume a role, the flee
 For more information, see [Using an IAM Role to Grant Permissions to Applications and Scripts Running on WorkSpaces Applications Streaming Instances](https://docs.aws.amazon.com/appstream2/latest/developerguide/using-iam-roles-to-grant-permissions-to-applications-scripts-streaming-instances.html) in the *Amazon WorkSpaces Applications Administration Guide*.
 *Required*: No
 *Type*: String
-*Pattern*: `^arn:aws(?:\-cn|\-iso\-b|\-iso|\-us\-gov)?:[A-Za-z0-9][A-Za-z0-9_/.-]{0,62}:[A-Za-z0-9_/.-]{0,63}:[A-Za-z0-9_/.-]{0,63}:[A-Za-z0-9][A-Za-z0-9:_/+=,@.\\-]{0,1023}$`
+*Pattern*: `^arn:aws(?:\-cn|\-iso\-b|\-iso|\-us\-gov)?:iam::[0-9]{12}:role/.+$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `IdleDisconnectTimeoutInSeconds`  <a name="cfn-appstream-fleet-idledisconnecttimeoutinseconds"></a>
@@ -163,20 +178,24 @@ To prevent users from being disconnected due to inactivity, specify a value of 0
 If you enable this feature, we recommend that you specify a value that corresponds exactly to a whole number of minutes (for example, 60, 120, and 180). If you don't do this, the value is rounded to the nearest minute. For example, if you specify a value of 70, users are disconnected after 1 minute of inactivity. If you specify a value that is at the midpoint between two different minutes, the value is rounded up. For example, if you specify a value of 90, users are disconnected after 2 minutes of inactivity.
 *Required*: No
 *Type*: Integer
+*Minimum*: `0`
+*Maximum*: `36000`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ImageArn`  <a name="cfn-appstream-fleet-imagearn"></a>
 The ARN of the public, private, or shared image to use.
 *Required*: No
 *Type*: String
-*Pattern*: `^arn:aws(?:\-cn|\-iso\-b|\-iso|\-us\-gov)?:[A-Za-z0-9][A-Za-z0-9_/.-]{0,62}:[A-Za-z0-9_/.-]{0,63}:[A-Za-z0-9_/.-]{0,63}:[A-Za-z0-9][A-Za-z0-9:_/+=,@.\\-]{0,1023}$`
+*Pattern*: `^arn:[a-z-]+:[a-z-]+:(([a-z]+-)+[0-9])?:([0-9]{12})?:.+$`
+*Maximum*: `1024`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ImageName`  <a name="cfn-appstream-fleet-imagename"></a>
 The name of the image used to create the fleet.
 *Required*: No
 *Type*: String
-*Pattern*: `^[a-zA-Z0-9][a-zA-Z0-9_.-]{0,100}$`
+*Minimum*: `1`
+*Maximum*: `100`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `InstanceType`  <a name="cfn-appstream-fleet-instancetype"></a>
@@ -256,13 +275,16 @@ The maximum amount of time that a streaming session can remain active, in second
 Specify a value between 600 and 432000.
 *Required*: No
 *Type*: Integer
+*Minimum*: `600`
+*Maximum*: `432000`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Name`  <a name="cfn-appstream-fleet-name"></a>
 A unique name for the fleet.
 *Required*: Yes
 *Type*: String
-*Pattern*: `^[a-zA-Z0-9][a-zA-Z0-9_.-]{0,100}$`
+*Minimum*: `1`
+*Maximum*: `100`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Platform`  <a name="cfn-appstream-fleet-platform"></a>
@@ -296,6 +318,8 @@ The default value is `APP`.
 An array of key-value pairs.
 *Required*: No
 *Type*: Array of [Tag](aws-properties-appstream-fleet-tag.md)
+*Minimum*: `1`
+*Maximum*: `50`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `UsbDeviceFilterStrings`  <a name="cfn-appstream-fleet-usbdevicefilterstrings"></a>

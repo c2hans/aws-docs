@@ -101,7 +101,7 @@ Used to remove an end date from a Capacity Reservation Fleet that is configured 
 The tags to assign to the Capacity Reservation Fleet. The tags are automatically assigned to the Capacity Reservations in the Fleet.
 *Required*: No
 *Type*: Array of [TagSpecification](aws-properties-ec2-capacityreservationfleet-tagspecification.md)
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tenancy`  <a name="cfn-ec2-capacityreservationfleet-tenancy"></a>
 Indicates the tenancy of the Capacity Reservation Fleet. All Capacity Reservations in the Fleet inherit this tenancy. The Capacity Reservation Fleet can have one of the following tenancy settings:

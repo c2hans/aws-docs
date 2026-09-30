@@ -22,6 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Type" : "AWS::ElastiCache::ServerlessCache",
   "Properties" : {
       "[CacheUsageLimits](#cfn-elasticache-serverlesscache-cacheusagelimits)" : {{CacheUsageLimits}},
+      "[ConnectionType](#cfn-elasticache-serverlesscache-connectiontype)" : {{String}},
       "[DailySnapshotTime](#cfn-elasticache-serverlesscache-dailysnapshottime)" : {{String}},
       "[Description](#cfn-elasticache-serverlesscache-description)" : {{String}},
       "[Endpoint](#cfn-elasticache-serverlesscache-endpoint)" : {{Endpoint}},
@@ -50,6 +51,7 @@ Type: AWS::ElastiCache::ServerlessCache
 Properties:
   [CacheUsageLimits](#cfn-elasticache-serverlesscache-cacheusagelimits): {{
     CacheUsageLimits}}
+  [ConnectionType](#cfn-elasticache-serverlesscache-connectiontype): {{String}}
   [DailySnapshotTime](#cfn-elasticache-serverlesscache-dailysnapshottime): {{String}}
   [Description](#cfn-elasticache-serverlesscache-description): {{String}}
   [Endpoint](#cfn-elasticache-serverlesscache-endpoint): {{
@@ -82,6 +84,13 @@ The cache usage limit for the serverless cache.
 *Required*: No
 *Type*: [CacheUsageLimits](aws-properties-elasticache-serverlesscache-cacheusagelimits.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ConnectionType`  <a name="cfn-elasticache-serverlesscache-connectiontype"></a>
+The connection type for the serverless cache. Must be either `vpc` \| `public`. If not specified, defaults to `vpc`.
+*Required*: No
+*Type*: String
+*Allowed values*: `vpc | public`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `DailySnapshotTime`  <a name="cfn-elasticache-serverlesscache-dailysnapshottime"></a>
 The daily time that a cache snapshot will be created. Default is NULL, i.e. snapshots will not be created at a specific time on a daily basis. Available for Valkey, Redis OSS and Serverless Memcached only.

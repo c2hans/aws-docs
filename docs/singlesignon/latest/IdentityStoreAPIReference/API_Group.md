@@ -10,18 +10,32 @@ A group object that contains the metadata and attributes for a specified group.
 ## Contents
 <a name="API_Group_Contents"></a>
 
+ ** GroupArn **   <a name="singlesignon-Type-Group-GroupArn"></a>
+The Amazon Resource Name (ARN) of the group in the identity store. For example, `arn:aws:identitystore:::group/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222`.
+Type: String
+Length Constraints: Minimum length of 60. Maximum length of 100.
+Pattern: `arn:aws[a-z-]*:identitystore:::(user|group|membership)/([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}`
+Required: Yes
+
  ** GroupId **   <a name="singlesignon-Type-Group-GroupId"></a>
 The identifier for a group in the identity store.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 47.
-Pattern: `([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}`
+Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `(arn:aws[a-z-]*:identitystore:::(user|group|membership)/)?([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}`
 Required: Yes
 
  ** IdentityStoreId **   <a name="singlesignon-Type-Group-IdentityStoreId"></a>
 The globally unique identifier for the identity store.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 36.
-Pattern: `d-[0-9a-f]{10}$|^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}`
+Length Constraints: Minimum length of 1. Maximum length of 93.
+Pattern: `(arn:aws[a-z-]*:identitystore::\d{12}:identitystore/)?(d-[0-9a-f]{10}|[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})`
+Required: Yes
+
+ ** Revision **   <a name="singlesignon-Type-Group-Revision"></a>
+The current revision of the group in the identity store. This value changes each time the group is modified. You can provide it as the `Revision` parameter of an `UpdateGroup` or `DeleteGroup` request to make the operation conditional on the group not having changed. Treat this value as an opaque token: don't parse it or rely on its format or ordering.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `[0-9]+`
 Required: Yes
 
  ** CreatedAt **   <a name="singlesignon-Type-Group-CreatedAt"></a>
@@ -46,7 +60,7 @@ The display name value for the group. The length limit is 1,024 characters. This
 Prefix search supports a maximum of 1,000 characters for the string.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
-Pattern: `[\p{L}\p{M}\p{S}\p{N}\p{P}\t\n\r  ]+`
+Pattern: `[\p{L}\p{M}\p{S}\p{N}\p{P}\t\n\r  　]+`
 Required: No
 
  ** ExternalIds **   <a name="singlesignon-Type-Group-ExternalIds"></a>

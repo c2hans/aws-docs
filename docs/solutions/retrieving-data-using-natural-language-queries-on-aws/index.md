@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/retrieving-data-using-natural-
 title: 'Guidance for Retrieving Data Using Natural Language Queries on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/retrieving-data-using-natural-language-queries-on-aws/
 source: aws-documentation
-generated_on: 2026-09-29
+generated_on: 2026-09-30
 ---
 
 # Guidance for Retrieving Data Using Natural Language Queries on AWS

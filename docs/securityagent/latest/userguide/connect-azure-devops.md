@@ -13,7 +13,7 @@ Azure DevOps integration serves multiple purposes:
 +  **Continuum for penetration testing context** – Provide application understanding for penetration testing
 +  **Continuum for automated remediation** – Submit pull requests with fixes for vulnerabilities discovered during security assessments
 
-AWS Security Agent authenticates to Azure DevOps as a Microsoft Entra service principal (a non-human identity managed in your Microsoft Entra tenant). You authorize the AWS Security Agent application, which appears as **AWS Continuum** in Microsoft Entra and Azure DevOps, in your Microsoft Entra tenant, add its service principal to your Azure DevOps organization, and grant it the Azure DevOps permissions the agent needs.
+AWS Security Agent authenticates to Azure DevOps as a Microsoft Entra service principal (a non-human identity managed in your Microsoft Entra tenant). You authorize the AWS Security Agent application, which appears as **AWS Continuum for Azure DevOps** in Microsoft Entra and Azure DevOps, in your Microsoft Entra tenant, add its service principal to your Azure DevOps organization, and grant it the Azure DevOps permissions the agent needs.
 
 ## How Azure DevOps integration works
 <a name="_how_azure_devops_integration_works"></a>
@@ -37,7 +37,7 @@ Before you begin, ensure you have:
 +  **Project Administrator** or **Project Collection Administrator** permission in Azure DevOps, to add the service principal and grant its permissions.
 + The Azure CLI with the Azure DevOps extension installed (`az extension add --name azure-devops`), signed in as an administrator. The service hook (webhook) permission in the following procedure cannot be granted from the Azure DevOps UI and must be set with the CLI.
 + Permissions to configure integrations in the AWS Security Agent Management Console.
-+ If your Microsoft Entra policies require admin consent, a Microsoft Entra administrator who can approve the AWS Continuum application in your tenant.
++ If your Microsoft Entra policies require admin consent, a Microsoft Entra administrator who can approve the AWS Continuum for Azure DevOps application in your tenant.
 
 **Important**
 If your Azure DevOps organization or its network restricts access with an IP allow list, add the AWS Security Agent IP addresses for your AWS Region. Do this before you register the integration. For the IP addresses, see [AWS Security Agent IP addresses](about-integrations.md#agent-ip-addresses).
@@ -53,7 +53,7 @@ If your Azure DevOps organization or its network restricts access with an IP all
 
 1. Choose **Authorize**.
 
-   The console redirects you to Microsoft, where you grant admin consent for the AWS Continuum application in your Microsoft Entra tenant. After you approve the consent request, you return to the console.
+   The console redirects you to Microsoft, where you grant admin consent for the AWS Continuum for Azure DevOps application in your Microsoft Entra tenant. After you approve the consent request, you return to the console.
 
 1. In the **Organization** field, enter your Azure DevOps organization name, for example `ado-organization`.
 
@@ -78,14 +78,14 @@ A service principal is added to your Azure DevOps organization in the same way a
 
 1. In Azure DevOps, go to **Organization settings**, then **Users**, then choose **Add users**.
 
-1. In the **Users** field, search for **AWS Continuum**, or paste its **Application (client) ID**, and select it.
+1. In the **Users** field, search for **AWS Continuum for Azure DevOps**, or paste its **Application (client) ID**, and select it.
 
 1. Set the **Access level** to **Basic**, add it to each project whose repositories the agent will analyze, then choose **Add**. This grants the service principal the repository read and write access the agent needs for those projects.
 
 **Note**
 Adding a service principal to an organization requires the organization to be connected to Microsoft Entra ID. For more information, see [Prerequisites](#connect-azure-devops-prerequisites).
 
-### Grant AWS Continuum Service Hooks permissions
+### Grant AWS Continuum for Azure DevOps Service Hooks permissions
 <a name="connect-azure-devops-service-hooks"></a>
 
 To install the pull request webhook, the service principal needs **View and Edit Subscriptions** on Service Hooks. This permission cannot be granted from the Azure DevOps UI and must be set with the Azure CLI.
@@ -98,11 +98,11 @@ Grant it at the organization level. The Service Hooks security namespace is hier
    az rest --method get \
      --resource 499b84ac-1321-427f-aa17-267ca6975798 \
      --url "https://vssps.dev.azure.com/ORG_NAME/_apis/graph/serviceprincipals?api-version=7.1-preview.1" \
-     --query "value[?contains(displayName, 'AWS Continuum')].{descriptor:descriptor, displayName:displayName}" \
+     --query "value[?contains(displayName, 'AWS Continuum for Azure DevOps')].{descriptor:descriptor, displayName:displayName}" \
      -o table
    ```
 
-    `499b84ac-1321-427f-aa17-267ca6975798` is the fixed Azure DevOps resource ID. It is used only to mint the token. Copy the `descriptor` value (it looks like `aadsp.<base64>`) for the AWS Continuum service principal.
+    `499b84ac-1321-427f-aa17-267ca6975798` is the fixed Azure DevOps resource ID. It is used only to mint the token. Copy the `descriptor` value (it looks like `aadsp.<base64>`) for the AWS Continuum for Azure DevOps service principal.
 
 1. Grant View and Edit Subscriptions for the organization:
 
@@ -131,7 +131,7 @@ az devops project show \
 Repeat the grant for every project the agent analyzes.
 
 **Important**
-Grant **View and Edit Subscriptions** (`--allow-bit 3`), not Edit Subscriptions alone (`--allow-bit 2`). Without View, the webhook install fails a consumer availability check even though Edit is present. Without this permission, the integration registers successfully but AWS Continuum cannot install the pull request webhook, so pull requests are never reviewed.
+Grant **View and Edit Subscriptions** (`--allow-bit 3`), not Edit Subscriptions alone (`--allow-bit 2`). Without View, the webhook install fails a consumer availability check even though Edit is present. Without this permission, the integration registers successfully but AWS Continuum for Azure DevOps cannot install the pull request webhook, so pull requests are never reviewed.
 
 ## Troubleshoot Azure DevOps integration
 <a name="_troubleshoot_azure_devops_integration"></a>
@@ -145,7 +145,7 @@ Grant **View and Edit Subscriptions** (`--allow-bit 3`), not Edit Subscriptions 
 
 #### Resolution
 <a name="_resolution"></a>
-+ The pull request webhook was not installed because the service principal lacks the Service Hooks permission. Grant **View and Edit Subscriptions** (`--allow-bit 3`) on `PublisherSecurity` for the organization, as described in [Grant AWS Continuum Service Hooks permissions](#connect-azure-devops-service-hooks). Edit alone (`--allow-bit 2`) is not sufficient.
++ The pull request webhook was not installed because the service principal lacks the Service Hooks permission. Grant **View and Edit Subscriptions** (`--allow-bit 3`) on `PublisherSecurity` for the organization, as described in [Grant AWS Continuum for Azure DevOps Service Hooks permissions](#connect-azure-devops-service-hooks). Edit alone (`--allow-bit 2`) is not sufficient.
 
   To re-trigger project webhook creation, remove and add the repositories from that project.
 
@@ -188,11 +188,11 @@ Grant **View and Edit Subscriptions** (`--allow-bit 3`), not Edit Subscriptions 
 
 #### Symptoms
 <a name="_symptoms_5"></a>
-+ Authorization fails or **AWS Continuum** does not appear when you search in **Add users**.
++ Authorization fails or **AWS Continuum for Azure DevOps** does not appear when you search in **Add users**.
 
 #### Resolution
 <a name="_resolution_5"></a>
-+ Your Microsoft Entra policies require an administrator to approve the AWS Continuum application. Ask a Microsoft Entra administrator to approve the consent request, then register the connection and add the service principal again.
++ Your Microsoft Entra policies require an administrator to approve the AWS Continuum for Azure DevOps application. Ask a Microsoft Entra administrator to approve the consent request, then register the connection and add the service principal again.
 
 ## Next steps
 <a name="_next_steps"></a>

@@ -30,6 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[RecoveryTimeObjectiveMinutes](#cfn-arcregionswitch-plan-recoverytimeobjectiveminutes)" : {{Number}},
       "[Regions](#cfn-arcregionswitch-plan-regions)" : {{[ String, ... ]}},
       "[ReportConfiguration](#cfn-arcregionswitch-plan-reportconfiguration)" : {{ReportConfiguration}},
+      "[ServiceQuotaChecksEnabled](#cfn-arcregionswitch-plan-servicequotachecksenabled)" : {{Boolean}},
       "[Tags](#cfn-arcregionswitch-plan-tags)" : {{{{{Key}}: {{Value}}, ...}}},
       "[Triggers](#cfn-arcregionswitch-plan-triggers)" : {{[ Trigger, ... ]}},
       "[Workflows](#cfn-arcregionswitch-plan-workflows)" : {{[ Workflow, ... ]}}
@@ -55,6 +56,7 @@ Properties:
     - String}}
   [ReportConfiguration](#cfn-arcregionswitch-plan-reportconfiguration): {{
     ReportConfiguration}}
+  [ServiceQuotaChecksEnabled](#cfn-arcregionswitch-plan-servicequotachecksenabled): {{Boolean}}
   [Tags](#cfn-arcregionswitch-plan-tags): {{
     {{Key}}: {{Value}}}}
   [Triggers](#cfn-arcregionswitch-plan-triggers): {{
@@ -128,6 +130,12 @@ The AWS Regions for a plan.
 The report configuration for a plan.
 *Required*: No
 *Type*: [ReportConfiguration](aws-properties-arcregionswitch-plan-reportconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ServiceQuotaChecksEnabled`  <a name="cfn-arcregionswitch-plan-servicequotachecksenabled"></a>
+Property description not available.
+*Required*: No
+*Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tags`  <a name="cfn-arcregionswitch-plan-tags"></a>

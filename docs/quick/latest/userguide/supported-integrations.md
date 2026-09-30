@@ -26,6 +26,7 @@ Amazon Quick supports integrations with various third-party applications and ser
 | Dropbox | ✓ | — |
 | Dun & Bradstreet | ✓ | — |
 | GitHub | ✓ | — |
+| Gong | ✓ | — |
 | Gmail | ✓ | — |
 | Google Analytics | ✓ | — |
 | Google Calendar | ✓ | — |

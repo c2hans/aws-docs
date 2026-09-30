@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/edge-computing-in-retail-on-aw
 title: 'Guidance for Edge Computing in Retail on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/edge-computing-in-retail-on-aws/
 source: aws-documentation
-generated_on: 2026-09-29
+generated_on: 2026-09-30
 ---
 
 # Guidance for Edge Computing in Retail on AWS

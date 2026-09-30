@@ -19,6 +19,7 @@ Updates the specified user metadata and attributes in the specified identity sto
          "AttributeValue": {{JSON value}}
       }
    ],
+   "Revision": "{{string}}",
    "UserId": "{{string}}"
 }
 ```
@@ -32,9 +33,10 @@ The request accepts the following data in JSON format.
 
  ** [IdentityStoreId](#API_UpdateUser_RequestSyntax) **   <a name="singlesignon-UpdateUser-request-IdentityStoreId"></a>
 The globally unique identifier for the identity store.
+You can specify the identity store by ID or by Amazon Resource Name (ARN). For example, identity store ID `d-1234567890` or identity store ARN `arn:aws:identitystore::111122223333:identitystore/d-1234567890`.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 36.
-Pattern: `d-[0-9a-f]{10}$|^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}`
+Length Constraints: Minimum length of 1. Maximum length of 93.
+Pattern: `(arn:aws[a-z-]*:identitystore::\d{12}:identitystore/)?(d-[0-9a-f]{10}|[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})`
 Required: Yes
 
  ** [Operations](#API_UpdateUser_RequestSyntax) **   <a name="singlesignon-UpdateUser-request-Operations"></a>
@@ -43,17 +45,63 @@ Type: Array of [AttributeOperation](API_AttributeOperation.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 100 items.
 Required: Yes
 
+ ** [Revision](#API_UpdateUser_RequestSyntax) **   <a name="singlesignon-UpdateUser-request-Revision"></a>
+The expected current revision of the user. When you provide this value, the update is applied only if it matches the current revision of the user in the identity store, which prevents you from overwriting concurrent changes. If the value doesn't match, the operation fails with a `ConflictException`. If you don't provide this value, the update is applied unconditionally.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `[0-9]+`
+Required: No
+
  ** [UserId](#API_UpdateUser_RequestSyntax) **   <a name="singlesignon-UpdateUser-request-UserId"></a>
 The identifier for a user in the identity store.
+You can specify the user by ID or by Amazon Resource Name (ARN). For example, user ID `a1b2c3d4-5678-90ab-cdef-EXAMPLE11111` or user ARN `arn:aws:identitystore:::user/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111`.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 47.
-Pattern: `([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}`
+Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `(arn:aws[a-z-]*:identitystore:::(user|group|membership)/)?([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}`
 Required: Yes
+
+## Response Syntax
+<a name="API_UpdateUser_ResponseSyntax"></a>
+
+```
+{
+   "IdentityStoreId": "string",
+   "Revision": "string",
+   "UserArn": "string",
+   "UserId": "string"
+}
+```
 
 ## Response Elements
 <a name="API_UpdateUser_ResponseElements"></a>
 
-If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+ ** [IdentityStoreId](#API_UpdateUser_ResponseSyntax) **   <a name="singlesignon-UpdateUser-response-IdentityStoreId"></a>
+The globally unique identifier for the identity store.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 93.
+Pattern: `(arn:aws[a-z-]*:identitystore::\d{12}:identitystore/)?(d-[0-9a-f]{10}|[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})`
+
+ ** [Revision](#API_UpdateUser_ResponseSyntax) **   <a name="singlesignon-UpdateUser-response-Revision"></a>
+The revision of the user after the requested update is applied.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `[0-9]+`
+
+ ** [UserArn](#API_UpdateUser_ResponseSyntax) **   <a name="singlesignon-UpdateUser-response-UserArn"></a>
+The Amazon Resource Name (ARN) of the user in the identity store. For example, `arn:aws:identitystore:::user/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111`.
+Type: String
+Length Constraints: Minimum length of 60. Maximum length of 100.
+Pattern: `arn:aws[a-z-]*:identitystore:::(user|group|membership)/([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}`
+
+ ** [UserId](#API_UpdateUser_ResponseSyntax) **   <a name="singlesignon-UpdateUser-response-UserId"></a>
+The identifier for a user in the identity store.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `(arn:aws[a-z-]*:identitystore:::(user|group|membership)/)?([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}`
 
 ## Errors
 <a name="API_UpdateUser_Errors"></a>
@@ -73,7 +121,7 @@ This request cannot be completed for one of the following reasons:
 + Performing the requested operation would violate an existing uniqueness claim in the identity store. Resolve the conflict before retrying this request.
 + The requested resource was being concurrently modified by another request.
  ** Reason **
-Indicates the reason for a conflict error when the service is unable to access a Customer Managed KMS key. For non-KMS permission errors, this field is not included.
+Indicates the reason for the conflict error. `UNIQUENESS_CONSTRAINT_VIOLATION` indicates that the request would violate an existing uniqueness constraint, such as a user name or other unique attribute that is already in use. `CONCURRENT_MODIFICATION` indicates that the resource was modified by another request during this operation.
  ** RequestId **
 The identifier for each request. This value is a globally unique ID that is generated by the identity store service for each sent request, and is then returned inside the exception if the request fails.
 HTTP Status Code: 400
@@ -95,7 +143,7 @@ The identifier for each request. This value is a globally unique ID that is gene
  ** ResourceId **
 The identifier for a resource in the identity store that can be used as `UserId` or `GroupId`. The format for `ResourceId` is either `UUID` or `1234567890-UUID`, where `UUID` is a randomly generated value for each resource when it is created and `1234567890` represents the ` IdentityStoreId` string value. In the case that the identity store is migrated from a legacy SSO identity store, the `ResourceId` for that identity store will be in the format of `UUID`. Otherwise, it will be in the `1234567890-UUID` format.
  ** ResourceType **
-An enum object indicating the type of resource in the identity store service. Valid values include USER, GROUP, and IDENTITY\_STORE.
+An enum object indicating the type of resource in the identity store service. Valid values include USER, GROUP, GROUP\_MEMBERSHIP, RESOURCE\_POLICY, and IDENTITY\_STORE.
 HTTP Status Code: 400
 
  ** ServiceQuotaExceededException **
@@ -128,7 +176,7 @@ HTTP Status Code: 400
 ### Example 1
 <a name="API_UpdateUser_Example_1"></a>
 
-This example updates the specified user's nickname to Johnny and the user name to John Doe.
+This example updates the specified user's nickname to Johnny and the user name to John Doe. It passes the current `Revision` so that your update is applied only if the user hasn't changed since you last read it (optimistic locking); the response returns the new `Revision`.
 
 #### Sample Request
 <a name="API_UpdateUser_Example_1_Request"></a>
@@ -137,6 +185,7 @@ This example updates the specified user's nickname to Johnny and the user name t
 {
     "IdentityStoreId": "d-1234567890",
     "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "Revision": "1699564800000",
     "Operations": [
         {
             "AttributePath": "nickName",
@@ -154,13 +203,18 @@ This example updates the specified user's nickname to Johnny and the user name t
 <a name="API_UpdateUser_Example_1_Response"></a>
 
 ```
-No response
+{
+    "IdentityStoreId": "d-1234567890",
+    "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "UserArn": "arn:aws:identitystore:::user/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "Revision": "1699651200000"
+}
 ```
 
 ### Example 2
 <a name="API_UpdateUser_Example_2"></a>
 
-This example updates the family name of the specified user to Smith.
+This example updates the family name of the specified user to Smith. If you omit `Revision`, your update is applied unconditionally.
 
 #### Sample Request
 <a name="API_UpdateUser_Example_2_Request"></a>
@@ -182,7 +236,12 @@ This example updates the family name of the specified user to Smith.
 <a name="API_UpdateUser_Example_2_Response"></a>
 
 ```
-No response
+{
+    "IdentityStoreId": "d-1234567890",
+    "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "UserArn": "arn:aws:identitystore:::user/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "Revision": "1699651200000"
+}
 ```
 
 ### Example 3
@@ -216,7 +275,12 @@ This example updates the phone number for the specified user.
 <a name="API_UpdateUser_Example_3_Response"></a>
 
 ```
-No response
+{
+    "IdentityStoreId": "d-1234567890",
+    "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "UserArn": "arn:aws:identitystore:::user/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "Revision": "1699651200000"
+}
 ```
 
 ### Example 4
@@ -247,7 +311,12 @@ This example replaces all attributes in `aws:identitystore:enterprise` extension
 <a name="API_UpdateUser_Example_4_Response"></a>
 
 ```
-No response
+{
+    "IdentityStoreId": "d-1234567890",
+    "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "UserArn": "arn:aws:identitystore:::user/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "Revision": "1699651200000"
+}
 ```
 
 ### Example 5
@@ -275,7 +344,12 @@ This example replaces only `department` in `aws:identitystore:enterprise` extens
 <a name="API_UpdateUser_Example_5_Response"></a>
 
 ```
-No response
+{
+    "IdentityStoreId": "d-1234567890",
+    "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "UserArn": "arn:aws:identitystore:::user/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "Revision": "1699651200000"
+}
 ```
 
 ## See Also

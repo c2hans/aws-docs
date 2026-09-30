@@ -13,8 +13,22 @@ Contains the identifiers for a group, a group member, and a `GroupMembership` ob
  ** IdentityStoreId **   <a name="singlesignon-Type-GroupMembership-IdentityStoreId"></a>
 The globally unique identifier for the identity store.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 36.
-Pattern: `d-[0-9a-f]{10}$|^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}`
+Length Constraints: Minimum length of 1. Maximum length of 93.
+Pattern: `(arn:aws[a-z-]*:identitystore::\d{12}:identitystore/)?(d-[0-9a-f]{10}|[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})`
+Required: Yes
+
+ ** MembershipArn **   <a name="singlesignon-Type-GroupMembership-MembershipArn"></a>
+The Amazon Resource Name (ARN) of the group membership in the identity store. For example, `arn:aws:identitystore:::membership/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333`.
+Type: String
+Length Constraints: Minimum length of 60. Maximum length of 100.
+Pattern: `arn:aws[a-z-]*:identitystore:::(user|group|membership)/([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}`
+Required: Yes
+
+ ** MembershipId **   <a name="singlesignon-Type-GroupMembership-MembershipId"></a>
+The identifier for a `GroupMembership` object in an identity store.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `(arn:aws[a-z-]*:identitystore:::(user|group|membership)/)?([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}`
 Required: Yes
 
  ** CreatedAt **   <a name="singlesignon-Type-GroupMembership-CreatedAt"></a>
@@ -30,21 +44,14 @@ Required: No
  ** GroupId **   <a name="singlesignon-Type-GroupMembership-GroupId"></a>
 The identifier for a group in the identity store.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 47.
-Pattern: `([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}`
+Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `(arn:aws[a-z-]*:identitystore:::(user|group|membership)/)?([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}`
 Required: No
 
  ** MemberId **   <a name="singlesignon-Type-GroupMembership-MemberId"></a>
-An object that contains the identifier of a group member. Setting the `UserID` field to the specific identifier for a user indicates that the user is a member of the group.
+An object that contains the identifier of a group member. Setting the `UserId` field to the specific identifier for a user indicates that the user is a member of the group.
 Type: [MemberId](API_MemberId.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
-Required: No
-
- ** MembershipId **   <a name="singlesignon-Type-GroupMembership-MembershipId"></a>
-The identifier for a `GroupMembership` object in an identity store.
-Type: String
-Length Constraints: Minimum length of 1. Maximum length of 47.
-Pattern: `([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}`
 Required: No
 
  ** UpdatedAt **   <a name="singlesignon-Type-GroupMembership-UpdatedAt"></a>

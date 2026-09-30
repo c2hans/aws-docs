@@ -11,4 +11,4 @@ For information on the permissions you need to use this API, see [Identity and a
 
 We also provide SDKs that enable you to access Amazon SNS from your preferred programming language. The SDKs contain functionality that automatically takes care of tasks such as: cryptographically signing your service requests, retrying requests, and handling error responses. For a list of available SDKs, go to [Tools for Amazon Web Services](http://aws.amazon.com/tools/).
 
-This document was last published on September 29, 2026.
+This document was last published on September 30, 2026.

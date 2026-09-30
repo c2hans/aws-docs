@@ -23,7 +23,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[CapacityMonitoringApproach](#cfn-arcregionswitch-plan-ec2asgcapacityincreaseconfiguration-capacitymonitoringapproach)" : {{}},
   "[TargetPercent](#cfn-arcregionswitch-plan-ec2asgcapacityincreaseconfiguration-targetpercent)" : {{Number}},
   "[TimeoutMinutes](#cfn-arcregionswitch-plan-ec2asgcapacityincreaseconfiguration-timeoutminutes)" : {{Number}},
-  "[Ungraceful](#cfn-arcregionswitch-plan-ec2asgcapacityincreaseconfiguration-ungraceful)" : {{Ec2Ungraceful}}
+  "[Ungraceful](#cfn-arcregionswitch-plan-ec2asgcapacityincreaseconfiguration-ungraceful)" : {{Ec2Ungraceful}},
+  "[WaitELBTargetGroupHealthy](#cfn-arcregionswitch-plan-ec2asgcapacityincreaseconfiguration-waitelbtargetgrouphealthy)" : {{String}}
 }
 ```
 
@@ -39,6 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   [TimeoutMinutes](#cfn-arcregionswitch-plan-ec2asgcapacityincreaseconfiguration-timeoutminutes): {{Number}}
   [Ungraceful](#cfn-arcregionswitch-plan-ec2asgcapacityincreaseconfiguration-ungraceful): {{
     Ec2Ungraceful}}
+  [WaitELBTargetGroupHealthy](#cfn-arcregionswitch-plan-ec2asgcapacityincreaseconfiguration-waitelbtargetgrouphealthy): {{String}}
 ```
 
 ## Properties
@@ -75,4 +77,11 @@ The timeout value specified for the configuration.
 The settings for ungraceful execution.
 *Required*: No
 *Type*: [Ec2Ungraceful](aws-properties-arcregionswitch-plan-ec2ungraceful.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`WaitELBTargetGroupHealthy`  <a name="cfn-arcregionswitch-plan-ec2asgcapacityincreaseconfiguration-waitelbtargetgrouphealthy"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `enabled | disabled`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

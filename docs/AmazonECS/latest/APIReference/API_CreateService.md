@@ -285,6 +285,11 @@ When the service scheduler launches new tasks, it determines task placement. For
    ],
    "vpcLatticeConfigurations": [
       {
+         "advancedConfiguration": {
+            "alternateTargetGroupArn": "{{string}}",
+            "productionListenerRule": "{{string}}",
+            "testListenerRule": "{{string}}"
+         },
          "portName": "{{string}}",
          "roleArn": "{{string}}",
          "targetGroupArn": "{{string}}"
@@ -680,6 +685,11 @@ Required: No
             ],
             "vpcLatticeConfigurations": [
                {
+                  "advancedConfiguration": {
+                     "alternateTargetGroupArn": "string",
+                     "productionListenerRule": "string",
+                     "testListenerRule": "string"
+                  },
                   "portName": "string",
                   "roleArn": "string",
                   "targetGroupArn": "string"

@@ -7,6 +7,9 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/token-endp
 
 The OAuth 2.0 [token endpoint](https://www.rfc-editor.org/rfc/rfc6749#section-3.2) at `/oauth2/token` issues JSON web tokens (JWTs) to applications that want to complete authorization-code and client-credentials grant flows. These tokens are the end result of authentication with a user pool. They contain information about the user (ID token), the user's level of access (access token), and the user's entitlement to persist their signed-in session (refresh token). OpenID Connect (OIDC) relying-party libraries handle requests to and response payloads from this endpoint. Tokens provide verifiable proof of authentication, profile information, and a mechanism for access to back-end systems.
 
+**Note**
+Amazon Cognito doesn't implement the OpenID Connect `offline_access` scope model for controlling refresh-token issuance. Instead, the token endpoint returns a refresh token whenever the `grant_type` is `authorization_code`, and you control refresh-token lifetime through the app client's refresh-token validity setting rather than by requesting `offline_access`. Requesting the `offline_access` scope has no effect, and omitting it does not suppress the refresh token.
+
 The token endpoint returns an `Access-Control-Allow-Origin: *` response header. You can call the token endpoint cross-origin from a browser-based application. For example, you can complete an authorization code grant with Proof Key for Code Exchange (PKCE) from a public client. Amazon Cognito does not support custom cross-origin resource sharing (CORS) origin policies on this endpoint. For more information, see the CORS policies section of [User pool managed login](cognito-user-pools-managed-login.md).
 
 Your user pool OAuth 2.0 authorization server issues JSON web tokens (JWTs) from the token endpoint to the following types of sessions:

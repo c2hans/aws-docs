@@ -15,6 +15,11 @@ The resolved load balancer configuration for the service revision. This includes
 Type: Array of [ServiceRevisionLoadBalancer](API_ServiceRevisionLoadBalancer.md) objects
 Required: No
 
+ ** vpcLatticeConfigurations **   <a name="ECS-Type-ResolvedConfiguration-vpcLatticeConfigurations"></a>
+The resolved VPC Lattice configuration for the service revision. This includes information about which target groups serve traffic and which listener rules direct traffic to them.
+Type: Array of [ServiceRevisionVpcLatticeConfiguration](API_ServiceRevisionVpcLatticeConfiguration.md) objects
+Required: No
+
 ## See Also
 <a name="API_ResolvedConfiguration_SeeAlso"></a>
 

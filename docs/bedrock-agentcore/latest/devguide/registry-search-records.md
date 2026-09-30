@@ -271,7 +271,7 @@ To match records by a custom metadata field:
 ```
 {
   "filters": {
-    "customMetadata.humanInLoop": { "$eq": "true" }
+    "customMetadata.humanInLoop": { "$eq": true }
   }
 }
 ```
@@ -290,7 +290,7 @@ To combine a custom metadata filter with a base field filter:
 ```
 
 **Note**
-Filter values for `customMetadata.{fieldName}` are always strings. For a **Boolean** field, use the string `"true"` or `"false"`. For an **Enum** field, use one of the schema’s allowed values. If the same field name is defined in more than one record-type schema, the filter matches that field’s value regardless of which schema resolved it for the record.
+Filter values for `customMetadata.{fieldName}` are strings or native booleans. For a **Boolean** field, use the string `"true"` or `"false"`, or a native JSON boolean (`true` / `false`). For an **Enum** field, use one of the schema’s allowed values. If the same field name is defined in more than one record-type schema, the filter matches that field’s value regardless of which schema resolved it for the record.
 
 ### Search returns only approved records
 <a name="registry-search-approved-only"></a>

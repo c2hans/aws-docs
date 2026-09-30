@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyond-improving-resilience/appendix-1-mttd-and-mttr-critical-metrics.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Appendix 1 – MTTD and MTTR critical metrics
 <a name="appendix-1-mttd-and-mttr-critical-metrics"></a>
 
@@ -13,4 +11,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyo
 
  **Impact Assessment metrics.** These metrics provide insight into the scope of impact during events. For example, the number or percentage of customers impacted by a data plane event. Measures the number or percentage of things impacted.
 
- **Operational Health metrics.** These metrics reflect that a service is responsive and available to serve customer requests, but focuses on common infrastructure subsystems and resources. For example, the percentage of CPU utilization of your EC2 fleet. These metrics should measure utilization, capacity, throughput, error rate, availability, and latency.
+ **Operational Health metrics.** These metrics reflect that a service is responsive and available to serve customer requests, but focuses on common infrastructure subsystems and resources. For example, the percentage of CPU utilization of your Amazon EC2 fleet. These metrics should measure utilization, capacity, throughput, error rate, availability, and latency.

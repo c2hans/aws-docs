@@ -41,3 +41,4 @@ Send detailed test logs to Amazon S3, CloudWatch Logs, or both. Logs capture tim
 
 **Test permissions**
 An IAM execution role is required. Permissions vary based on the test type, fault actions, and options selected. For multi-account tests, use the same-named role in each account. For more information, see [IAM execution roles for resilience testing](next-gen-resilience-testing-iam.md).
+Tests that inject faults into Amazon EKS pods also need a Kubernetes service account and cluster access for the execution role. You set these up in the **(Optional) Resilience testing** parts of the Amazon EKS permissions steps. For more information, see [Required IAM permissions and roles](next-gen-iam-permissions.md).

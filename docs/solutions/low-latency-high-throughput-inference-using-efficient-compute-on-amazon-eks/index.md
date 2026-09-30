@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/low-latency-high-throughput-in
 title: 'Guidance for Low Latency, High Throughput Inference using Efficient Compute on Amazon EKS'
 canonical_url: https://docs.aws.amazon.com/solutions/low-latency-high-throughput-inference-using-efficient-compute-on-amazon-eks/
 source: aws-documentation
-generated_on: 2026-09-29
+generated_on: 2026-09-30
 ---
 
 # Guidance for Low Latency, High Throughput Inference using Efficient Compute on Amazon EKS

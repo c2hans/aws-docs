@@ -56,6 +56,15 @@ The encryption configuration for a vector index. By default, if you don't specif
 Type: [EncryptionConfiguration](API_S3VectorBuckets_EncryptionConfiguration.md) object
 Required: No
 
+ ** indexMode **   <a name="AmazonS3-Type-S3VectorBuckets_Index-indexMode"></a>
+The mode that determines how the vector index processes queries.
+Valid values:
++  `CLASSIC` - Applies metadata filters during the vector search.
++  `ENHANCED` - Applies metadata filters before the vector search.
+Type: String
+Valid Values: `CLASSIC | ENHANCED`
+Required: No
+
  ** metadataConfiguration **   <a name="AmazonS3-Type-S3VectorBuckets_Index-metadataConfiguration"></a>
 The metadata configuration for the vector index.
 Type: [MetadataConfiguration](API_S3VectorBuckets_MetadataConfiguration.md) object

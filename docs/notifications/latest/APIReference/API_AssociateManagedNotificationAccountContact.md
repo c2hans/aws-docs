@@ -27,7 +27,7 @@ The request uses the following URI parameters.
 
  ** [contactIdentifier](#API_AssociateManagedNotificationAccountContact_RequestSyntax) **   <a name="Notifications-AssociateManagedNotificationAccountContact-request-uri-contactIdentifier"></a>
 A unique value of an Account Contact Type to associate with the `ManagedNotificationConfiguration`.
-Valid Values: `ACCOUNT_PRIMARY | ACCOUNT_ALTERNATE_BILLING | ACCOUNT_ALTERNATE_OPERATIONS | ACCOUNT_ALTERNATE_SECURITY | ACCOUNT_PRIMARY_PHONE`
+Valid Values: `ACCOUNT_PRIMARY | ACCOUNT_ALTERNATE_BILLING | ACCOUNT_ALTERNATE_OPERATIONS | ACCOUNT_ALTERNATE_SECURITY`
 Required: Yes
 
 ## Request Body

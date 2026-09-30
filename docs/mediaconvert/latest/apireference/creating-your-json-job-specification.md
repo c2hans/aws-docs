@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/apireference/creatin
 # Creating Your AWS Elemental MediaConvert Job Specification
 <a name="creating-your-json-job-specification"></a>
 
-When you submit your MediaConvert jobs programmatically, you submit a payload with your job settings. When you use the SDK for Python or the AWS CLI, you pass in your job settings directly as a JSON object. When you use the other AWS SDKs, translate the JSON job settings according to the SDK documentation.
+When you submit your MediaConvert jobs programmatically, you submit a payload with your job settings. When you use the SDK for Python (Boto) or the AWS CLI, you pass in your job settings directly as a JSON object. When you use the other AWS SDKs, translate the JSON job settings according to the SDK documentation.
 
 This job specification must conform to validation by the transcoding engine. This validation is more complex than the schema exposed in this API reference. The transcoding engine validations represent complex dependencies among groups of settings and dependencies between your transcoding settings and properties of your input files. The MediaConvert console functions as a tool to build valid job settings specifications in JSON.
 
@@ -24,6 +24,6 @@ We recommend that you *don't* construct your production job settings specificati
 
 1. On the **Create job** page, in the **Job** pane on the left, under **Job settings**, choose **Show job JSON**.
 
-1. If you are using the SDK for Python or the AWS CLI, copy the JSON object and save it as a file to submit with your `CreateJob` request.
+1. If you are using the SDK for Python (Boto) or the AWS CLI, copy the JSON object and save it as a file to submit with your `CreateJob` request.
 
    If you are using one of the other AWS SDKs, translate the JSON job settings according to the SDK documentation.

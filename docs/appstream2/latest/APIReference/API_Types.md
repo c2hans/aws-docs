@@ -42,6 +42,7 @@ The following data types are supported:
 +  [ImageBuilder](API_ImageBuilder.md)
 +  [ImageBuilderStateChangeReason](API_ImageBuilderStateChangeReason.md)
 +  [ImagePermissions](API_ImagePermissions.md)
++  [ImageSoftwareMetadata](API_ImageSoftwareMetadata.md)
 +  [ImageStateChangeReason](API_ImageStateChangeReason.md)
 +  [LastReportGenerationExecutionError](API_LastReportGenerationExecutionError.md)
 +  [NetworkAccessConfiguration](API_NetworkAccessConfiguration.md)

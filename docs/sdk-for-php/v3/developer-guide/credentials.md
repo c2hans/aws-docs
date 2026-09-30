@@ -57,7 +57,7 @@ If your session is active, the response to this command reports the IAM Identity
 
 **Note**
 If you already have an active AWS access portal session and run `aws sso login`, you will not be required to provide credentials.
-The sign-in process might prompt you to allow the AWS CLI access to your data. Because the AWS CLI is built on top of the SDK for Python, permission messages might contain variations of the `botocore` name.
+The sign-in process might prompt you to allow the AWS CLI access to your data. Because the AWS CLI is built on top of the SDK for Python (Boto), permission messages might contain variations of the `botocore` name.
 
 ## Learn more about authentication
 <a name="credother"></a>

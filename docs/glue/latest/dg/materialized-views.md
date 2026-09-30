@@ -813,9 +813,9 @@ SELECT * FROM customer_summary
 ## System-managed materialized views
 <a name="materialized-views-system-managed"></a>
 
-With a system-managed materialized view, only AWS Glue can write the materialized view's data and definition — no other engine or principal can change it. AWS Glue stores it as a standard Apache Iceberg table in a customer-owned Amazon S3 Tables bucket.
+A system-managed materialized view is a materialized view that only AWS Glue can write. AWS Glue writes both its data and its definition, and no other engine or user can modify it. This protects the materialized view from unintended changes, so you can share it as a trusted, consistent dataset. AWS Glue stores the materialized view as a standard Apache Iceberg table in an Amazon S3 Tables bucket within your account.
 
-System-managed materialized views require AWS Glue 6.0 or later. You enable them with the Spark session configuration `spark.sql.mv.managed.enabled=true`, which defaults to `false` in AWS Glue 6.0. System-managed materialized views are stored only in Amazon S3 Tables; general purpose S3 buckets are not supported.
+System-managed materialized views require AWS Glue 6.0 or later. To create one, set the Spark session configuration `spark.sql.mv.managed.enabled` to `true`. System-managed materialized views are stored only in Amazon S3 Tables; Amazon S3 general purpose buckets are not supported.
 
 ### Creating a system-managed materialized view
 <a name="materialized-views-system-managed-creating"></a>
@@ -835,22 +835,22 @@ spark.sql("""
 """)
 ```
 
-The materialization is performed by the AWS Glue service. Because the materialized view is write-protected, your session never writes it directly. The CREATE MANAGED MATERIALIZED VIEW statement blocks until the managed create completes and its table status reaches a terminal state, so it may take longer to return than creating a regular materialized view.
+AWS Glue computes and writes the materialized view for you; your Spark session does not write it directly. The CREATE MANAGED MATERIALIZED VIEW statement waits until AWS Glue finishes creating the materialized view before it returns, so it can take longer than creating a regular materialized view.
 
 ### How system-managed materialized views work
 <a name="materialized-views-system-managed-how-it-works"></a>
 
-When you create a system-managed materialized view, AWS Glue creates an empty Amazon S3 Tables managed table for the materialized view, and then enqueues a refresh that runs the defining query and populates the materialized view. To track creation and refresh progress, call the `GetTable` API with `IncludeStatusDetails=true` to see the status of the create or refresh job. If a refresh fails, the failure reason is included in the table status error message.
+When you create a system-managed materialized view, AWS Glue creates an empty table in Amazon S3 Tables for the materialized view, and then runs the defining query to populate it. To track creation progress, call the `GetTable` API with `IncludeStatusDetails=true` to see the status of the create job. If creation fails, the failure reason is included in the table status error message. Refreshes are tracked the same way as for other materialized views.
 
 ### Write protection
 <a name="materialized-views-system-managed-write-protection"></a>
 
-Only AWS Glue writes the materialized view's data and service-managed metadata, including its schema, storage location, Apache Iceberg metadata pointer, and materialized view version. Any attempt to change these is rejected, whether it comes from another query engine, a direct AWS Glue `UpdateTable` call, or a direct write to the underlying Apache Iceberg table.
+Only AWS Glue writes the materialized view's data and its metadata, such as its schema and storage location. Any attempt to change these is rejected, whether it comes from another query engine, a direct AWS Glue `UpdateTable` call, or a direct write to the underlying Apache Iceberg table.
 
 You can still perform the following operations on a system-managed materialized view:
-+ Run REFRESH on the materialized view. The refresh compute is delegated to the AWS Glue service, which performs the write.
++ Refresh the materialized view. AWS Glue runs the refresh and writes the results for you.
 + Change the refresh schedule and table properties.
-+ Drop the materialized view, if you have drop permission.
++ Drop the materialized view, if you have permission to drop it.
 
 Schema evolution is not supported for a system-managed materialized view. To change the materialized view's SQL definition, drop the materialized view and create it again.
 

@@ -13,15 +13,29 @@ A user object that contains the metadata and attributes for a specified user.
  ** IdentityStoreId **   <a name="singlesignon-Type-User-IdentityStoreId"></a>
 The globally unique identifier for the identity store.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 36.
-Pattern: `d-[0-9a-f]{10}$|^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}`
+Length Constraints: Minimum length of 1. Maximum length of 93.
+Pattern: `(arn:aws[a-z-]*:identitystore::\d{12}:identitystore/)?(d-[0-9a-f]{10}|[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})`
+Required: Yes
+
+ ** Revision **   <a name="singlesignon-Type-User-Revision"></a>
+The current revision of the user in the identity store. This value changes each time the user is modified. You can provide it as the `Revision` parameter of an `UpdateUser` or `DeleteUser` request to make the operation conditional on the user not having changed. Treat this value as an opaque token: don't parse it or rely on its format or ordering.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `[0-9]+`
+Required: Yes
+
+ ** UserArn **   <a name="singlesignon-Type-User-UserArn"></a>
+The Amazon Resource Name (ARN) of the user in the identity store. For example, `arn:aws:identitystore:::user/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111`.
+Type: String
+Length Constraints: Minimum length of 60. Maximum length of 100.
+Pattern: `arn:aws[a-z-]*:identitystore:::(user|group|membership)/([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}`
 Required: Yes
 
  ** UserId **   <a name="singlesignon-Type-User-UserId"></a>
 The identifier for a user in the identity store.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 47.
-Pattern: `([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}`
+Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `(arn:aws[a-z-]*:identitystore:::(user|group|membership)/)?([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}`
 Required: Yes
 
  ** Addresses **   <a name="singlesignon-Type-User-Addresses"></a>

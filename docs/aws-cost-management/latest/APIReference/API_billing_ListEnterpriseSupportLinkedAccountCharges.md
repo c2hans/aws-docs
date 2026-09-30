@@ -27,7 +27,7 @@ For information about the parameters that are common to all actions, see [Common
 The request accepts the following data in JSON format.
 
  ** [accountId](#API_billing_ListEnterpriseSupportLinkedAccountCharges_RequestSyntax) **   <a name="awscostmanagement-billing_ListEnterpriseSupportLinkedAccountCharges-request-accountId"></a>
-An optional linked account ID to filter results to a specific account.
+The linked account ID to filter results to a specific account. If you don't specify a value, the response includes charges for all linked accounts.
 Type: String
 Pattern: `[0-9]{12}`
 Required: No
@@ -39,7 +39,7 @@ Pattern: `\d{4}-(0[1-9]|1[0-2])`
 Required: Yes
 
  ** [maxResults](#API_billing_ListEnterpriseSupportLinkedAccountCharges_RequestSyntax) **   <a name="awscostmanagement-billing_ListEnterpriseSupportLinkedAccountCharges-request-maxResults"></a>
-The maximum number of results to return per page.
+The maximum number of results to return per page. Default is 100.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 100.
 Required: No

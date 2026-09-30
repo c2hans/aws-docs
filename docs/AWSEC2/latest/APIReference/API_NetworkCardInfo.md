@@ -25,6 +25,12 @@ The default number of the ENA queues for each interface.
 Type: Integer
 Required: No
 
+ ** InterfaceTypeSet.N **
+The supported interface types for the network card.
+Type: Array of strings
+Valid Values: `interface | efa | efa-only | secondary`
+Required: No
+
  ** maximumEnaQueueCount **
 The maximum number of the ENA queues.
 Type: Integer

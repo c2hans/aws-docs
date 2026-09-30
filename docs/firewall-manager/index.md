@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/firewall-manager/index.html
 title: 'AWS Firewall Manager Documentation'
 canonical_url: https://docs.aws.amazon.com/firewall-manager/
 source: aws-documentation
-generated_on: 2026-09-29
+generated_on: 2026-09-30
 ---
 
 # AWS Firewall Manager Documentation

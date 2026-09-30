@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/querying-lineage-ent
 # Querying Lineage Entities
 <a name="querying-lineage-entities"></a>
 
-Amazon SageMaker AI automatically generates graphs of lineage entities as you use them. You can query this data to answer a variety of questions. The following provides instructions on how to query this data in SDK for Python.
+Amazon SageMaker AI automatically generates graphs of lineage entities as you use them. You can query this data to answer a variety of questions. The following provides instructions on how to query this data in SDK for Python (Boto).
 
 For information on how to view a registered model lineage in Amazon SageMaker Studio, see [View model lineage details in Studio](model-registry-lineage-view-studio.md).
 

@@ -38,16 +38,18 @@ Required: No
 
  ** [IdentityStoreId](#API_DescribeUser_RequestSyntax) **   <a name="singlesignon-DescribeUser-request-IdentityStoreId"></a>
 The globally unique identifier for the identity store, such as `d-1234567890`. In this example, `d-` is a fixed prefix, and `1234567890` is a randomly generated string that contains numbers and lower case letters. This value is generated at the time that a new identity store is created.
+You can specify the identity store by ID or by Amazon Resource Name (ARN). For example, identity store ID `d-1234567890` or identity store ARN `arn:aws:identitystore::111122223333:identitystore/d-1234567890`.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 36.
-Pattern: `d-[0-9a-f]{10}$|^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}`
+Length Constraints: Minimum length of 1. Maximum length of 93.
+Pattern: `(arn:aws[a-z-]*:identitystore::\d{12}:identitystore/)?(d-[0-9a-f]{10}|[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})`
 Required: Yes
 
  ** [UserId](#API_DescribeUser_RequestSyntax) **   <a name="singlesignon-DescribeUser-request-UserId"></a>
 The identifier for a user in the identity store.
+You can specify the user by ID or by Amazon Resource Name (ARN). For example, user ID `a1b2c3d4-5678-90ab-cdef-EXAMPLE11111` or user ARN `arn:aws:identitystore:::user/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111`.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 47.
-Pattern: `([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}`
+Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `(arn:aws[a-z-]*:identitystore:::(user|group|membership)/)?([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}`
 Required: Yes
 
 ## Response Syntax
@@ -115,6 +117,7 @@ Required: Yes
    ],
    "PreferredLanguage": "string",
    "ProfileUrl": "string",
+   "Revision": "string",
    "Roles": [
       {
          "Primary": boolean,
@@ -126,6 +129,7 @@ Required: Yes
    "Title": "string",
    "UpdatedAt": number,
    "UpdatedBy": "string",
+   "UserArn": "string",
    "UserId": "string",
    "UserName": "string",
    "UserStatus": "string",
@@ -186,8 +190,8 @@ Array Members: Minimum number of 1 item. Maximum number of 10 items.
  ** [IdentityStoreId](#API_DescribeUser_ResponseSyntax) **   <a name="singlesignon-DescribeUser-response-IdentityStoreId"></a>
 The globally unique identifier for the identity store.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 36.
-Pattern: `d-[0-9a-f]{10}$|^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}`
+Length Constraints: Minimum length of 1. Maximum length of 93.
+Pattern: `(arn:aws[a-z-]*:identitystore::\d{12}:identitystore/)?(d-[0-9a-f]{10}|[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})`
 
  ** [Locale](#API_DescribeUser_ResponseSyntax) **   <a name="singlesignon-DescribeUser-response-Locale"></a>
 A string containing the geographical region or location of the user.
@@ -227,6 +231,12 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Pattern: `[\p{L}\p{M}\p{S}\p{N}\p{P}\t\n\r  　]+`
 
+ ** [Revision](#API_DescribeUser_ResponseSyntax) **   <a name="singlesignon-DescribeUser-response-Revision"></a>
+The current revision of the user in the identity store. This value changes each time the user is modified.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `[0-9]+`
+
  ** [Roles](#API_DescribeUser_ResponseSyntax) **   <a name="singlesignon-DescribeUser-response-Roles"></a>
 The roles of the user.
 Type: Array of [Role](API_Role.md) objects
@@ -252,11 +262,17 @@ Type: Timestamp
 The identifier of the user or system that last updated the user.
 Type: String
 
+ ** [UserArn](#API_DescribeUser_ResponseSyntax) **   <a name="singlesignon-DescribeUser-response-UserArn"></a>
+The Amazon Resource Name (ARN) of the user in the identity store. For example, `arn:aws:identitystore:::user/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111`.
+Type: String
+Length Constraints: Minimum length of 60. Maximum length of 100.
+Pattern: `arn:aws[a-z-]*:identitystore:::(user|group|membership)/([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}`
+
  ** [UserId](#API_DescribeUser_ResponseSyntax) **   <a name="singlesignon-DescribeUser-response-UserId"></a>
 The identifier for a user in the identity store.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 47.
-Pattern: `([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}`
+Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `(arn:aws[a-z-]*:identitystore:::(user|group|membership)/)?([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}`
 
  ** [UserName](#API_DescribeUser_ResponseSyntax) **   <a name="singlesignon-DescribeUser-response-UserName"></a>
 A unique string used to identify the user. The length limit is 128 characters. This value can consist of letters, accented characters, symbols, numbers, and punctuation. This value is specified at the time the user is created and stored as an attribute of the user object in the identity store.
@@ -311,7 +327,7 @@ The identifier for each request. This value is a globally unique ID that is gene
  ** ResourceId **
 The identifier for a resource in the identity store that can be used as `UserId` or `GroupId`. The format for `ResourceId` is either `UUID` or `1234567890-UUID`, where `UUID` is a randomly generated value for each resource when it is created and `1234567890` represents the ` IdentityStoreId` string value. In the case that the identity store is migrated from a legacy SSO identity store, the `ResourceId` for that identity store will be in the format of `UUID`. Otherwise, it will be in the `1234567890-UUID` format.
  ** ResourceType **
-An enum object indicating the type of resource in the identity store service. Valid values include USER, GROUP, and IDENTITY\_STORE.
+An enum object indicating the type of resource in the identity store service. Valid values include USER, GROUP, GROUP\_MEMBERSHIP, RESOURCE\_POLICY, and IDENTITY\_STORE.
 HTTP Status Code: 400
 
  ** ThrottlingException **
@@ -346,7 +362,7 @@ This example retrieves only the core information about a user called John Doe.
 ```
 {
     "IdentityStoreId": "d-1234567890",
-    "UserId": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6p"
+    "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 
@@ -355,12 +371,14 @@ This example retrieves only the core information about a user called John Doe.
 
 ```
  {
+    "IdentityStoreId": "d-1234567890",
+    "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "UserArn": "arn:aws:identitystore:::user/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "UserName": "johndoe",
-    "UserId": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6p",
     "Name": {
         "Formatted": "John Doe",
         "FamilyName": "Doe",
-        "GivenName": "John",
+        "GivenName": "John"
     },
     "DisplayName": "John Doe",
     "Emails": [
@@ -388,7 +406,7 @@ This example retrieves only the core information about a user called John Doe.
             "Primary": true
         }
     ],
-    "IdentityStoreId": "d-1234567890"
+    "Revision": "1699564800000"
 }
 ```
 
@@ -403,7 +421,7 @@ This example retrieves both core and enterprise information about a user called 
 ```
 {
     "IdentityStoreId": "d-1234567890",
-    "UserId": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6p",
+    "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Extensions": ["aws:identitystore:enterprise"]
 }
 ```
@@ -413,12 +431,14 @@ This example retrieves both core and enterprise information about a user called 
 
 ```
  {
+    "IdentityStoreId": "d-1234567890",
+    "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "UserArn": "arn:aws:identitystore:::user/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "UserName": "johndoe",
-    "UserId": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6p",
     "Name": {
         "Formatted": "John Doe",
         "FamilyName": "Doe",
-        "GivenName": "John",
+        "GivenName": "John"
     },
     "DisplayName": "John Doe",
     "Emails": [
@@ -446,7 +466,7 @@ This example retrieves both core and enterprise information about a user called 
             "Primary": true
         }
     ],
-    "IdentityStoreId": "d-1234567890",
+    "Revision": "1699564800000",
     "Extensions": {
         "aws:identitystore:enterprise": {
             "employeeNumber": "701984",

@@ -5,6 +5,9 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/what-is-chime-sdk.ht
 # What is the Amazon Chime SDK?
 <a name="what-is-chime-sdk"></a>
 
+**Note**
+Amazon Chime SDK SIP media applications will no longer be open to new customers starting October 29, 2026. If you would like to use SIP media applications, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see [Amazon Chime SDK SIP media applications availability change](sip-applications-maintenance-mode.md).
+
 The Amazon Chime SDK provides a set of real-time communications components that developers can use to add messaging, audio, video, and screen sharing capabilities to their web or mobile applications. For instance, developers can add video to a health application so patients can consult with doctors on health issues remotely, or create customized audio prompts for integration with a public switched telephone network (PSTN). By using the Amazon Chime SDK, developers can help eliminate the cost, complexity, and the friction of creating and maintaining their own real-time communication infrastructure and services.
 
 For more information, see the [AWS Amazon Chime SDK](https://aws.amazon.com/chime/chime-sdk) page.

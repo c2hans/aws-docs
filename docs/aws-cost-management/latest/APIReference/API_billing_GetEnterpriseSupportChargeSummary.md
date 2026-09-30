@@ -99,7 +99,7 @@ The start date of the billing period.
 Type: Timestamp
 
  ** [isEstimated](#API_billing_GetEnterpriseSupportChargeSummary_ResponseSyntax) **   <a name="awscostmanagement-billing_GetEnterpriseSupportChargeSummary-response-isEstimated"></a>
-When true, the Support charge amount is estimated. When false, the Support charge amount is finalized.
+Specifies whether the Support charge amount is estimated. When false, the charge amount is finalized.
 Type: Boolean
 
  ** [payerAccountId](#API_billing_GetEnterpriseSupportChargeSummary_ResponseSyntax) **   <a name="awscostmanagement-billing_GetEnterpriseSupportChargeSummary-response-payerAccountId"></a>

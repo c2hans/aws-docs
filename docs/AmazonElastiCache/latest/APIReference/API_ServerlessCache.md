@@ -23,6 +23,12 @@ The cache usage limit for the serverless cache.
 Type: [CacheUsageLimits](API_CacheUsageLimits.md) object
 Required: No
 
+ ** ConnectionType **
+The connection type for the serverless cache. Must be either `vpc` \| `public`. If not specified, defaults to `vpc`.
+Type: String
+Valid Values: `vpc | public`
+Required: No
+
  ** CreateTime **
 When the serverless cache was created.
 Type: Timestamp

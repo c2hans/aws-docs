@@ -27,7 +27,8 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[Engine](#cfn-dms-dataprovider-engine)" : {{String}},
       "[ExactSettings](#cfn-dms-dataprovider-exactsettings)" : {{Boolean}},
       "[Settings](#cfn-dms-dataprovider-settings)" : {{Settings}},
-      "[Tags](#cfn-dms-dataprovider-tags)" : {{[ Tag, ... ]}}
+      "[Tags](#cfn-dms-dataprovider-tags)" : {{[ Tag, ... ]}},
+      "[Virtual](#cfn-dms-dataprovider-virtual)" : {{Boolean}}
     }
 }
 ```
@@ -47,6 +48,7 @@ Properties:
     Settings}}
   [Tags](#cfn-dms-dataprovider-tags): {{
     - Tag}}
+  [Virtual](#cfn-dms-dataprovider-virtual): {{Boolean}}
 ```
 
 ## Properties
@@ -100,6 +102,12 @@ The settings in JSON format for a data provider.
 Property description not available.
 *Required*: No
 *Type*: Array of [Tag](aws-properties-dms-dataprovider-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Virtual`  <a name="cfn-dms-dataprovider-virtual"></a>
+Indicates whether the data provider is virtual.
+*Required*: No
+*Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values

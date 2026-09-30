@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/customizing-aws-config-resourc
 title: 'Guidance for Customizing AWS Config Resources in AWS Control Tower'
 canonical_url: https://docs.aws.amazon.com/solutions/customizing-aws-config-resources-in-aws-control-tower/
 source: aws-documentation
-generated_on: 2026-09-29
+generated_on: 2026-09-30
 ---
 
 # Guidance for Customizing AWS Config Resources in AWS Control Tower

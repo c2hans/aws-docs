@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/integrating-an-industrial-data
 title: 'Guidance for Integrating an Industrial Data Fabric with Litmus Edge on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/integrating-an-industrial-data-fabric-with-litmus-edge-on-aws/
 source: aws-documentation
-generated_on: 2026-09-29
+generated_on: 2026-09-30
 ---
 
 # Guidance for Integrating an Industrial Data Fabric with Litmus Edge on AWS

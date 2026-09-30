@@ -9,4 +9,4 @@ Use the AWS Elemental MediaTailor SDKs and CLI to configure scalable ad insertio
 
 Through the SDKs and the CLI you manage AWS Elemental MediaTailor configurations and channels the same as you do through the console. For example, you specify ad insertion behavior and mapping information for the origin server and the ad decision server (ADS).
 
-This document was last published on September 29, 2026.
+This document was last published on September 30, 2026.

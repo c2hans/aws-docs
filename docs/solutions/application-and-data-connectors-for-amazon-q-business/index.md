@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/application-and-data-connector
 title: 'Guidance for Application and Data Connectors for Amazon Q Business'
 canonical_url: https://docs.aws.amazon.com/solutions/application-and-data-connectors-for-amazon-q-business/
 source: aws-documentation
-generated_on: 2026-09-29
+generated_on: 2026-09-30
 ---
 
 # Guidance for Application and Data Connectors for Amazon Q Business

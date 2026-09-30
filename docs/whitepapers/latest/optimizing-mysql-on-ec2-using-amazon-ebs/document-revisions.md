@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-mysql-on-ec2-using-amazon-ebs/document-revisions.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Document history
 <a name="document-revisions"></a>
 
@@ -11,6 +9,7 @@ To be notified about updates to this whitepaper, subscribe to the RSS feed.
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Whitepaper updated](#document-revisions) | Refreshed for technical accuracy, including current Amazon EBS io1 and io2 Block Express performance specifications and an updated MySQL reference documentation link. Removed the historical reference notice as the content is current. | September 23, 2026 |
 | [Whitepaper updated](#document-revisions) |  Updated for technical accuracy. | December 7, 2021 |
 | [Initial publication](#document-revisions) | Whitepaper first published. | November 1, 2017 |
 

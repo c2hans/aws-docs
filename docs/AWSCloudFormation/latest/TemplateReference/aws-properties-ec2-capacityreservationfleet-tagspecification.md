@@ -44,10 +44,10 @@ The type of resource to tag on creation. Specify `capacity-reservation-fleet`.
 To tag a resource after it has been created, see [CreateTags](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTags.html).
 *Required*: No
 *Type*: String
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tags`  <a name="cfn-ec2-capacityreservationfleet-tagspecification-tags"></a>
 The tags to apply to the resource.
 *Required*: No
 *Type*: Array of [Tag](aws-properties-ec2-capacityreservationfleet-tag.md)
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

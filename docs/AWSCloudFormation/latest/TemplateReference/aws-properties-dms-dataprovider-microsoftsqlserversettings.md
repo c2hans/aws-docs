@@ -22,6 +22,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[CertificateArn](#cfn-dms-dataprovider-microsoftsqlserversettings-certificatearn)" : {{String}},
   "[DatabaseName](#cfn-dms-dataprovider-microsoftsqlserversettings-databasename)" : {{String}},
   "[Port](#cfn-dms-dataprovider-microsoftsqlserversettings-port)" : {{Integer}},
+  "[S3AccessRoleArn](#cfn-dms-dataprovider-microsoftsqlserversettings-s3accessrolearn)" : {{String}},
+  "[S3Path](#cfn-dms-dataprovider-microsoftsqlserversettings-s3path)" : {{String}},
   "[ServerName](#cfn-dms-dataprovider-microsoftsqlserversettings-servername)" : {{String}},
   "[SslMode](#cfn-dms-dataprovider-microsoftsqlserversettings-sslmode)" : {{String}}
 }
@@ -34,6 +36,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   [CertificateArn](#cfn-dms-dataprovider-microsoftsqlserversettings-certificatearn): {{String}}
   [DatabaseName](#cfn-dms-dataprovider-microsoftsqlserversettings-databasename): {{String}}
   [Port](#cfn-dms-dataprovider-microsoftsqlserversettings-port): {{Integer}}
+  [S3AccessRoleArn](#cfn-dms-dataprovider-microsoftsqlserversettings-s3accessrolearn): {{String}}
+  [S3Path](#cfn-dms-dataprovider-microsoftsqlserversettings-s3path): {{String}}
   [ServerName](#cfn-dms-dataprovider-microsoftsqlserversettings-servername): {{String}}
   [SslMode](#cfn-dms-dataprovider-microsoftsqlserversettings-sslmode): {{String}}
 ```
@@ -57,6 +61,18 @@ Database name for the endpoint.
 Endpoint TCP port.
 *Required*: Yes
 *Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`S3AccessRoleArn`  <a name="cfn-dms-dataprovider-microsoftsqlserversettings-s3accessrolearn"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`S3Path`  <a name="cfn-dms-dataprovider-microsoftsqlserversettings-s3path"></a>
+Property description not available.
+*Required*: No
+*Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ServerName`  <a name="cfn-dms-dataprovider-microsoftsqlserversettings-servername"></a>

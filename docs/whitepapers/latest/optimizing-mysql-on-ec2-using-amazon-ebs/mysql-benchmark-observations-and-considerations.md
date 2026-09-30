@@ -2,21 +2,19 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-mysql-on-ec2-using-amazon-ebs/mysql-benchmark-observations-and-considerations.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # MySQL benchmark observations and considerations
 <a name="mysql-benchmark-observations-and-considerations"></a>
 
  Testing your MySQL database will help you determine what type of volume you need and ensure that you are choosing the most cost-effective and performant solution.
 
- There are a couple of ways to determine the number of IOPS that you need. For an existing workload, you can monitor the current consumption of EBS volume IOPS through the CloudWatch metrics detailed in the [*Monitoring MySQL and EBS volumes*](mysql-backups.md#monitoring-mysql-and-ebs-volumes) section of this document.
+ There are a couple of ways to determine the number of IOPS that you need. For an existing workload, you can monitor the current consumption of Amazon EBS volume IOPS through the CloudWatch metrics detailed in the [*Monitoring MySQL and Amazon EBS volumes*](mysql-backups.md#monitoring-mysql-and-ebs-volumes) section of this document.
 
  If this is a new workload, you can do a synthetic test, which will provide you with the maximum number of IOPS that your new AWS infrastructure can achieve. If you are moving your workload to the AWS Cloud, you can run a tool such as `iostat` to profile the IOPS required by your workload. While you can use a synthetic test to estimate your storage performance needs, the best way to quantify your storage performance needs is through profiling an existing production database if that is an option.
 
- Performing a synthetic test on the EBS volume allows you to specify the amount of concurrency and throughput that you want to simulate. Testing will allow you to determine the maximum number of IOPS and throughput needed for your MySQL workload.
+ Performing a synthetic test on the Amazon EBS volume allows you to specify the amount of concurrency and throughput that you want to simulate. Testing will allow you to determine the maximum number of IOPS and throughput needed for your MySQL workload.
 
  There are a couple of tools that you can use:
-+  [Mysqlslap](http://dev.mysql.com/doc/refman/5.7/en/mysqlslap.html) is an application that emulates client load for MySQL Server.
++  [Mysqlslap](http://dev.mysql.com/doc/refman/8.0/en/mysqlslap.html) is an application that emulates client load for MySQL Server.
 +  [Sysbench](https://dev.mysql.com/downloads/benchmarks.html) is a popular open-source benchmark used to test open-source database management systems (DBMS).
 
 ## The test environment
@@ -41,7 +39,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-mysql-on-e
 |  Instance type  | r5.8xlarge  |
 |  Memory  |  256 GB  |
 |  CPU  |  32 vCPUs  |
-|  Storage  |  500 GB gp2 EBS Volume  |
+|  Storage  |  500 GB gp2 Amazon EBS Volume  |
 |  Root volume  |  256 GB gp2  |
 |  MySQL data volume  |  500 GB (gp2, gp3, io1 or io2)  |
 
@@ -53,7 +51,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-mysql-on-e
 sudo sh -c 'for x in /sys/class/net/eth0/queues/rx-*; do echo ffffffff > $x/rps_cpus; done'
 sudo sh -c "echo 4096 > /sys/class/net/eth0/queues/rx-0/rps_flow_cnt"
 
-sudo sh -c "echo 4096 > /sys/class/net/eth0/queues/rx-1/rps_flow_cnt
+sudo sh -c "echo 4096 > /sys/class/net/eth0/queues/rx-1/rps_flow_cnt"
 ```
 
  Enable RFS with the following shell command:
@@ -71,10 +69,10 @@ sudo sh -c "echo 32768 > /proc/sys/net/core/rps_sock_flow_entries"
 
 |  Parameters  |  Default  |  Tuned  |
 | --- | --- | --- |
-|  innodb\_buffer\_pool\_size  |  134MB  |  193G  |
+|  innodb\_buffer\_pool\_size  |  128 MB  |  193 GB  |
 |  innodb\_flush\_method  |  fsync (Linux)  |  O\_DIRECT  |
 |  innodb\_flush\_neighbors  |  1  |  0  |
-|  innodb\_log\_file\_size  |  50MB  |  256MB  |
+|  innodb\_log\_file\_size  |  50 MB  |  256 MB  |
 
  Run the following Sysbench read/write command:
 
@@ -84,7 +82,7 @@ $ sysbench ./oltp_read_write.lua <connection info>  --table_size=10000000 --max-
 --time=3600 --threads=1024 --rand-type=uniform run
 ```
 
- Results of the Sysbench test are presented in Table 4. Under optimized conditions, the MySQL server processed approximately 12 times the number of transactions per section compared to the default configuration.
+ Results of the Sysbench test are presented in Table 4. Under optimized conditions, the MySQL server processed approximately 12 times the number of transactions per second compared to the default configuration.
 
 * Table 4: Sysbench results *
 
@@ -112,37 +110,37 @@ $ sysbench ./oltp_read_write.lua <connection info>  --table_size=10000000 --max-
 |  events (avg/stddev):  |  1221.5352/48.86  |  15594.7637/45.63  |
 |  runtime (avg/stddev):  |  3600.6582/0.11  |  3600.7711/0.04  |
 
- Other InnoDB configuration options to consider for better performance of heavy I/O MySQL workloads are detailed in the [MySQL Optimizing InnoDB Disk I/O documentation](https://dev.mysql.com/doc/refman/5.7/en/optimizing-innodb-diskio.html). When considering these configurations, AWS suggests performing a test after deployment to ensure that it will be safe for your application.
+ Other InnoDB configuration options to consider for better performance of heavy I/O MySQL workloads are detailed in the [MySQL Optimizing InnoDB Disk I/O documentation](https://dev.mysql.com/doc/refman/8.0/en/optimizing-innodb-diskio.html). When considering these configurations, AWS suggests performing a test after deployment to ensure that it will be safe for your application.
 
 ## Comparative analysis of different storage types
 <a name="comparative-analysis-of-different-storage-types"></a>
 
  Conduct the test across four different MySQL server configurations with the following configurations:
-+  MySQL Server - EBS General Purpose SSD (gp2)
++  MySQL Server - Amazon EBS General Purpose SSD (gp2)
   +  500 GB SQL data drive
   +  1,500 baseline IOPS / 3,000 burstable IOPS
-+  MySQL Server - EBS Provisioned IOPS SSD (gp3)
++  MySQL Server - Amazon EBS General Purpose SSD (gp3)
   +  500 GB SQL data drive
   +  3,000 Provisioned IOPS
-+  MySQL Server - EBS Provisioned IOPS SSD (io1)
++  MySQL Server - Amazon EBS Provisioned IOPS SSD (io1)
   +  500 GB SQL data drive
   +  3,000 Provisioned IOPS
-+  MySQL Server - EBS Provisioned IOPS SSD (io2)
++  MySQL Server - Amazon EBS Provisioned IOPS SSD (io2)
   +  500 GB SQL data drive
   +  3,000 Provisioned IOPS
 
 **Note**
-Unless specified, all EBS volumes are unencrypted.
+Unless specified, all Amazon EBS volumes are unencrypted.
 
 ### Sysbench client and MySQL server setup
 <a name="sysbench-client-and-mysql-server-setup"></a>
 
 * Table 5: Server setup for MySQL database and Sysbench client *
 
-|  Use case  |  Instance type  |  vCPUs  |  Memory  |  Instance storage  |  EBS-optimized  |  Network  |
+|  Use case  |  Instance type  |  vCPUs  |  Memory  |  Instance storage  |  Amazon EBS–optimized  |  Network  |
 | --- | --- | --- | --- | --- | --- | --- |
-|  MySQL database  |  r5.8xlarge  |  32  |  256  |  EBS only  |  Yes  |  10 Gigabit  |
-|  Sysbench client (AWS Cloud9)  |  r5.8xlarge  |  32  |  256  |  EBS only  |  Yes  |  10 Gigabit  |
+|  MySQL database  |  r5.8xlarge  |  32  |  256  |  Amazon EBS only  |  Yes  |  10 Gigabit  |
+|  Sysbench client (AWS Cloud9)  |  r5.8xlarge  |  32  |  256  |  Amazon EBS only  |  Yes  |  10 Gigabit  |
 
  Tests were performed using Sysbench read/write OLTP test by running the following Sysbench command below over a one-hour period.
 
@@ -156,9 +154,9 @@ $ sysbench ./oltp_read_write.lua <connection info>  --table_size=10000000
 ### Results
 <a name="results"></a>
 
- The various tests of the four different volume configurations yielded similar results, with each server processing approximately 3,600 Sysbench transactions per second. There was no discernible workload difference is noticed while running performance consistency test in all four volumes. Upon closer examination, you observe that the minimum latency is offered by the IO2 volume and less than one millisecond latency is observed for the same workload.
+ The various tests of the four different volume configurations yielded similar results, with each server processing approximately 3,600 Sysbench transactions per second. There was no discernible workload difference while running the performance consistency test in all four volumes. Upon closer examination, you observe that the minimum latency is offered by the io2 volume and less than one millisecond latency is observed for the same workload.
 
-* Table 6: Performance analysis of same MySQL workload on different EBS volume types *
+* Table 6: Performance analysis of same MySQL workload on different Amazon EBS volume types *
 
 |  Sysbench metrics  |  gp2  |  gp3  |  io1  |  io2  |
 | --- | --- | --- | --- | --- |
@@ -175,6 +173,6 @@ $ sysbench ./oltp_read_write.lua <connection info>  --table_size=10000000
 |  max  |  95885.04  |  43718.24  |  33179.31  |  34803.75  |
 |  95th percentile  |  928.15  |  816.63  |  943.16  |  861.95  |
 |  sum  |  3687074024.45  |  3686559158.83  |  3689386834.2  |  3687138536.08  |
-|  EBS statistics  |   |   |   |   |
+|  Amazon EBS statistics  |   |   |   |   |
 |  Write latency (ms)  |  1.1  |  1.01  |  0.994  |  0.824  |
 |  Volume queue length (count)  |  3.49  |  3.01  |  3.227  |  2.71  |

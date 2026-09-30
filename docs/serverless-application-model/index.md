@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/index.html
 title: 'AWS Serverless Application Model (AWS SAM) Documentation'
 canonical_url: https://docs.aws.amazon.com/serverless-application-model/
 source: aws-documentation
-generated_on: 2026-09-29
+generated_on: 2026-09-30
 ---
 
 # AWS Serverless Application Model (AWS SAM) Documentation

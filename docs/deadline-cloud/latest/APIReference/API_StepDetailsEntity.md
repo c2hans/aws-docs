@@ -38,6 +38,20 @@ The template for a step.
 Type: JSON value
 Required: Yes
 
+ ** extensions **   <a name="deadlinecloud-Type-StepDetailsEntity-extensions"></a>
+The Open Job Description extensions that the step uses. This value is used by the worker agent.
+Type: Array of strings
+Array Members: Minimum number of 0 items. Maximum number of 32 items.
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `[A-Z][A-Z0-9_]*`
+Required: No
+
+ ** resolvedSymbolTable **   <a name="deadlinecloud-Type-StepDetailsEntity-resolvedSymbolTable"></a>
+The resolved symbol table for the step's expressions, serialized as JSON. This value is used by the worker agent.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 1000000.
+Required: No
+
 ## See Also
 <a name="API_StepDetailsEntity_SeeAlso"></a>
 

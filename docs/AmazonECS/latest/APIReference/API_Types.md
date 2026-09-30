@@ -180,6 +180,7 @@ The following data types are supported:
 +  [ServiceRevisionLoadBalancer](API_ServiceRevisionLoadBalancer.md)
 +  [ServiceRevisionOverrides](API_ServiceRevisionOverrides.md)
 +  [ServiceRevisionSummary](API_ServiceRevisionSummary.md)
++  [ServiceRevisionVpcLatticeConfiguration](API_ServiceRevisionVpcLatticeConfiguration.md)
 +  [ServiceVolumeConfiguration](API_ServiceVolumeConfiguration.md)
 +  [Session](API_Session.md)
 +  [Setting](API_Setting.md)
@@ -205,4 +206,5 @@ The following data types are supported:
 +  [VersionInfo](API_VersionInfo.md)
 +  [Volume](API_Volume.md)
 +  [VolumeFrom](API_VolumeFrom.md)
++  [VpcLatticeAdvancedConfiguration](API_VpcLatticeAdvancedConfiguration.md)
 +  [VpcLatticeConfiguration](API_VpcLatticeConfiguration.md)

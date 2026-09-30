@@ -19,6 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[AdvancedConfiguration](#cfn-ecs-service-vpclatticeconfiguration-advancedconfiguration)" : {{VpcLatticeAdvancedConfiguration}},
   "[PortName](#cfn-ecs-service-vpclatticeconfiguration-portname)" : {{String}},
   "[RoleArn](#cfn-ecs-service-vpclatticeconfiguration-rolearn)" : {{String}},
   "[TargetGroupArn](#cfn-ecs-service-vpclatticeconfiguration-targetgrouparn)" : {{String}}
@@ -29,6 +30,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-ecs-service-vpclatticeconfiguration-syntax.yaml"></a>
 
 ```
+  [AdvancedConfiguration](#cfn-ecs-service-vpclatticeconfiguration-advancedconfiguration): {{
+    VpcLatticeAdvancedConfiguration}}
   [PortName](#cfn-ecs-service-vpclatticeconfiguration-portname): {{String}}
   [RoleArn](#cfn-ecs-service-vpclatticeconfiguration-rolearn): {{String}}
   [TargetGroupArn](#cfn-ecs-service-vpclatticeconfiguration-targetgrouparn): {{String}}
@@ -36,6 +39,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ## Properties
 <a name="aws-properties-ecs-service-vpclatticeconfiguration-properties"></a>
+
+`AdvancedConfiguration`  <a name="cfn-ecs-service-vpclatticeconfiguration-advancedconfiguration"></a>
+Property description not available.
+*Required*: No
+*Type*: [VpcLatticeAdvancedConfiguration](aws-properties-ecs-service-vpclatticeadvancedconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `PortName`  <a name="cfn-ecs-service-vpclatticeconfiguration-portname"></a>
 The name of the port mapping to register in the VPC Lattice target group. This is the name of the `portMapping` you defined in your task definition.

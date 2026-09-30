@@ -27,6 +27,12 @@ Type: String
 Length Constraints: Minimum length of 3. Maximum length of 63.
 Required: Yes
 
+ ** defaultIndexMode **   <a name="AmazonS3-Type-S3VectorBuckets_VectorBucket-defaultIndexMode"></a>
+The mode that is automatically assigned to new vector indexes in the vector bucket. Changing the default index mode doesn't affect existing vector indexes.
+Type: String
+Valid Values: `CLASSIC | ENHANCED`
+Required: No
+
  ** encryptionConfiguration **   <a name="AmazonS3-Type-S3VectorBuckets_VectorBucket-encryptionConfiguration"></a>
 The encryption configuration for the vector bucket.
 Type: [EncryptionConfiguration](API_S3VectorBuckets_EncryptionConfiguration.md) object

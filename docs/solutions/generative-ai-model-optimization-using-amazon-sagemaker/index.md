@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/generative-ai-model-optimizati
 title: 'Guidance for Generative AI Model Optimization Using Amazon SageMaker'
 canonical_url: https://docs.aws.amazon.com/solutions/generative-ai-model-optimization-using-amazon-sagemaker/
 source: aws-documentation
-generated_on: 2026-09-29
+generated_on: 2026-09-30
 ---
 
 # Guidance for Generative AI Model Optimization Using Amazon SageMaker

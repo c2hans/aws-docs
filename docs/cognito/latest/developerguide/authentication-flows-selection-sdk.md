@@ -22,6 +22,9 @@ Some authentication methods are fixed to one of the two flow types, and some met
 
 Your application can request the following authentication methods in choice-based authentication. Declare these options in the `PREFERRED_CHALLENGE` parameter of [InitiateAuth](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_InitiateAuth.html#CognitoUserPools-InitiateAuth-request-AuthParameters) or [AdminInitiateAuth](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_AdminInitiateAuth.html#CognitoUserPools-AdminInitiateAuth-request-AuthParameters), or in the `ChallengeName` parameter of [RespondToAuthChallenge](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_RespondToAuthChallenge.html#CognitoUserPools-RespondToAuthChallenge-request-ChallengeName) or [AdminRespondToAuthChallenge](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_AdminRespondToAuthChallenge.html#CognitoUserPools-AdminRespondToAuthChallenge-request-ChallengeName).
 
+**Important**
+Choice-based sign-in has two prerequisites. Your app client must activate the `ALLOW_USER_AUTH` authentication flow, and the passwordless and passkey methods (`EMAIL_OTP`, `SMS_OTP`, `WEB_AUTHN`) require a user pool on the **Essentials** or **Plus** [feature plan](cognito-sign-in-feature-plans.md)—they aren't available on the **Lite** tier. `PASSWORD` (including SRP) is available on all feature plans. If a choice-based method doesn't appear for your users, confirm both the app-client flow and the feature plan before troubleshooting further.
+
 1. `EMAIL_OTP` and `SMS_OTP`
 
    [Passwordless sign-in with one-time passwords](amazon-cognito-user-pools-authentication-flow-methods.md#amazon-cognito-user-pools-authentication-flow-methods-passwordless)

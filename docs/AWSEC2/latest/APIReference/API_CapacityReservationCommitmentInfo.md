@@ -10,6 +10,11 @@ Information about your commitment for a future-dated Capacity Reservation.
 ## Contents
 <a name="API_CapacityReservationCommitmentInfo_Contents"></a>
 
+ ** commitmentDuration **
+The commitment duration, in seconds, for the future-dated Capacity Reservation. This is the minimum duration for which you commit to having the Capacity Reservation in the `active` state in your account after it has been delivered.
+Type: Long
+Required: No
+
  ** commitmentEndDate **
 The date and time at which the commitment duration expires, in the ISO8601 format in the UTC time zone (`YYYY-MM-DDThh:mm:ss.sssZ`). You can't decrease the instance count or cancel the Capacity Reservation before this date and time.
 Type: Timestamp

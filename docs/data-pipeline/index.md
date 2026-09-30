@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/data-pipeline/index.html
 title: 'AWS Data Pipeline Documentation'
 canonical_url: https://docs.aws.amazon.com/data-pipeline/
 source: aws-documentation
-generated_on: 2026-09-29
+generated_on: 2026-09-30
 ---
 
 # AWS Data Pipeline Documentation

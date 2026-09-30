@@ -32,6 +32,14 @@ The session actions to apply to the assigned session.
 Type: Array of [AssignedSessionAction](API_AssignedSessionAction.md) objects
 Required: Yes
 
+ ** metadata **   <a name="deadlinecloud-Type-AssignedSession-metadata"></a>
+Key-value hints that the service provides to guide how the session runs. This value is used by the worker agent.
+Type: String to string map
+Map Entries: Minimum number of 0 items. Maximum number of 10 items.
+Key Length Constraints: Minimum length of 1. Maximum length of 128.
+Value Length Constraints: Minimum length of 0. Maximum length of 128.
+Required: No
+
 ## See Also
 <a name="API_AssignedSession_SeeAlso"></a>
 

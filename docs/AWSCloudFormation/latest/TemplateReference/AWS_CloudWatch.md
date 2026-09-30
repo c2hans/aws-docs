@@ -17,3 +17,4 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::CloudWatch::LogAlarm](aws-resource-cloudwatch-logalarm.md)
 + [AWS::CloudWatch::MetricStream](aws-resource-cloudwatch-metricstream.md)
 + [AWS::CloudWatch::OTelEnrichment](aws-resource-cloudwatch-otelenrichment.md)
++ [AWS::CloudWatch::View](aws-resource-cloudwatch-view.md)

@@ -55,6 +55,7 @@ Content-type: application/json
 {
    "vectorBucket": {
       "creationTime": number,
+      "defaultIndexMode": "string",
       "encryptionConfiguration": {
          "kmsKeyArn": "string",
          "sseType": "string"

@@ -27,20 +27,22 @@ The request accepts the following data in JSON format.
 
  ** [GroupId](#API_CreateGroupMembership_RequestSyntax) **   <a name="singlesignon-CreateGroupMembership-request-GroupId"></a>
 The identifier for a group in the identity store.
+You can specify the group by ID or by Amazon Resource Name (ARN). For example, group ID `a1b2c3d4-5678-90ab-cdef-EXAMPLE22222` or group ARN `arn:aws:identitystore:::group/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222`.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 47.
-Pattern: `([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}`
+Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `(arn:aws[a-z-]*:identitystore:::(user|group|membership)/)?([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}`
 Required: Yes
 
  ** [IdentityStoreId](#API_CreateGroupMembership_RequestSyntax) **   <a name="singlesignon-CreateGroupMembership-request-IdentityStoreId"></a>
 The globally unique identifier for the identity store.
+You can specify the identity store by ID or by Amazon Resource Name (ARN). For example, identity store ID `d-1234567890` or identity store ARN `arn:aws:identitystore::111122223333:identitystore/d-1234567890`.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 36.
-Pattern: `d-[0-9a-f]{10}$|^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}`
+Length Constraints: Minimum length of 1. Maximum length of 93.
+Pattern: `(arn:aws[a-z-]*:identitystore::\d{12}:identitystore/)?(d-[0-9a-f]{10}|[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})`
 Required: Yes
 
  ** [MemberId](#API_CreateGroupMembership_RequestSyntax) **   <a name="singlesignon-CreateGroupMembership-request-MemberId"></a>
-An object that contains the identifier of a group member. Setting the `UserID` field to the specific identifier for a user indicates that the user is a member of the group.
+An object that contains the identifier of a group member. Setting the `UserId` field to the specific identifier for a user indicates that the user is a member of the group.
 Type: [MemberId](API_MemberId.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: Yes
@@ -51,6 +53,7 @@ Required: Yes
 ```
 {
    "IdentityStoreId": "string",
+   "MembershipArn": "string",
    "MembershipId": "string"
 }
 ```
@@ -65,14 +68,20 @@ The following data is returned in JSON format by the service.
  ** [IdentityStoreId](#API_CreateGroupMembership_ResponseSyntax) **   <a name="singlesignon-CreateGroupMembership-response-IdentityStoreId"></a>
 The globally unique identifier for the identity store.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 36.
-Pattern: `d-[0-9a-f]{10}$|^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}`
+Length Constraints: Minimum length of 1. Maximum length of 93.
+Pattern: `(arn:aws[a-z-]*:identitystore::\d{12}:identitystore/)?(d-[0-9a-f]{10}|[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})`
+
+ ** [MembershipArn](#API_CreateGroupMembership_ResponseSyntax) **   <a name="singlesignon-CreateGroupMembership-response-MembershipArn"></a>
+The Amazon Resource Name (ARN) of the newly created group membership in the identity store. For example, `arn:aws:identitystore:::membership/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333`.
+Type: String
+Length Constraints: Minimum length of 60. Maximum length of 100.
+Pattern: `arn:aws[a-z-]*:identitystore:::(user|group|membership)/([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}`
 
  ** [MembershipId](#API_CreateGroupMembership_ResponseSyntax) **   <a name="singlesignon-CreateGroupMembership-response-MembershipId"></a>
 The identifier for a newly created `GroupMembership` in an identity store.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 47.
-Pattern: `([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}`
+Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `(arn:aws[a-z-]*:identitystore:::(user|group|membership)/)?([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}`
 
 ## Errors
 <a name="API_CreateGroupMembership_Errors"></a>
@@ -92,7 +101,7 @@ This request cannot be completed for one of the following reasons:
 + Performing the requested operation would violate an existing uniqueness claim in the identity store. Resolve the conflict before retrying this request.
 + The requested resource was being concurrently modified by another request.
  ** Reason **
-Indicates the reason for a conflict error when the service is unable to access a Customer Managed KMS key. For non-KMS permission errors, this field is not included.
+Indicates the reason for the conflict error. `UNIQUENESS_CONSTRAINT_VIOLATION` indicates that the request would violate an existing uniqueness constraint, such as a user name or other unique attribute that is already in use. `CONCURRENT_MODIFICATION` indicates that the resource was modified by another request during this operation.
  ** RequestId **
 The identifier for each request. This value is a globally unique ID that is generated by the identity store service for each sent request, and is then returned inside the exception if the request fails.
 HTTP Status Code: 400
@@ -114,7 +123,7 @@ The identifier for each request. This value is a globally unique ID that is gene
  ** ResourceId **
 The identifier for a resource in the identity store that can be used as `UserId` or `GroupId`. The format for `ResourceId` is either `UUID` or `1234567890-UUID`, where `UUID` is a randomly generated value for each resource when it is created and `1234567890` represents the ` IdentityStoreId` string value. In the case that the identity store is migrated from a legacy SSO identity store, the `ResourceId` for that identity store will be in the format of `UUID`. Otherwise, it will be in the `1234567890-UUID` format.
  ** ResourceType **
-An enum object indicating the type of resource in the identity store service. Valid values include USER, GROUP, and IDENTITY\_STORE.
+An enum object indicating the type of resource in the identity store service. Valid values include USER, GROUP, GROUP\_MEMBERSHIP, RESOURCE\_POLICY, and IDENTITY\_STORE.
 HTTP Status Code: 400
 
  ** ServiceQuotaExceededException **
@@ -167,8 +176,9 @@ This example adds the specified user as a member of the specified group.
 
 ```
 {
+    "IdentityStoreId": "d-1234567890",
     "MembershipId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
-    "IdentityStoreId": "d-1234567890"
+    "MembershipArn": "arn:aws:identitystore:::membership/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
 }
 ```
 

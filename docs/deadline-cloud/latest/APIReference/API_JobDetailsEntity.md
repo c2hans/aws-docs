@@ -26,6 +26,14 @@ The schema version.
 Type: String
 Required: Yes
 
+ ** extensions **   <a name="deadlinecloud-Type-JobDetailsEntity-extensions"></a>
+The Open Job Description extensions that the job template uses. This value is used by the worker agent.
+Type: Array of strings
+Array Members: Minimum number of 0 items. Maximum number of 32 items.
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `[A-Z][A-Z0-9_]*`
+Required: No
+
  ** jobAttachmentSettings **   <a name="deadlinecloud-Type-JobDetailsEntity-jobAttachmentSettings"></a>
 The job attachment settings.
 Type: [JobDetailsJobAttachmentSettings](API_JobDetailsJobAttachmentSettings.md) object

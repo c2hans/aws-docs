@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/generating-support-case-insigh
 title: 'Guidance for Generating Support Case Insights on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/generating-support-case-insights-on-aws/
 source: aws-documentation
-generated_on: 2026-09-29
+generated_on: 2026-09-30
 ---
 
 # Guidance for Generating Support Case Insights on AWS

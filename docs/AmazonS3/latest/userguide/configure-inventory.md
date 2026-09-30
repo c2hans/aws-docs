@@ -124,10 +124,10 @@ For directory buckets, you must manually add a destination bucket policy. The de
             ],
             "Condition": {
                 "ArnLike": {
-                    "aws:SourceARN": "arn:aws:s3express:{{region}}:{{source-account-id}}:bucket/{{DOC-EXAMPLE-SOURCE-BUCKET}}--{{zone-id}}--x-s3"
+                    "aws:SourceARN": "arn:aws:s3express:{{us-west-2}}:{{111122223333}}:bucket/{{DOC-EXAMPLE-SOURCE-BUCKET}}--{{zone-id}}--x-s3"
                 },
                 "StringEquals": {
-                    "aws:SourceAccount": "{{source-account-id}}",
+                    "aws:SourceAccount": "{{111122223333}}",
                     "s3:x-amz-acl": "bucket-owner-full-control"
                 }
             }

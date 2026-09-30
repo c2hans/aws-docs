@@ -441,7 +441,7 @@ The following access point policy grants the user `{{Akua}}` with account `{{123
             "Principal": {
                 "AWS": "arn:aws:iam::{{12345678901}}:user/{{Akua}}"
             },
-            "Action": "s3express:CreateSession","s3:GetObject"
+            "Action": ["s3express:CreateSession", "s3:GetObject"],
             "Resource": "arn:aws:s3:{{us-west-2}}:{{123456789012}}:accesspoint/{{example-access-point--usw2-az1--xa-s3}}/object/*"
         }
     ]
@@ -530,8 +530,11 @@ The following IAM identity-based policy grants the `s3express:CreateAccessPoint`
         {
             "Sid": "Grant CreateAccessPoint.",
             "Principal": "*",
-            "Action": "s3express:CreateSession",
-            "s3express:CreateAccessPoint""Effect": "Allow",
+            "Action": [
+                "s3express:CreateSession",
+                "s3express:CreateAccessPoint"
+            ],
+            "Effect": "Allow",
             "Resource": "*"
         }
     ]
@@ -547,10 +550,13 @@ The following IAM identity-based policy grants the `s3express:PutAccessPointScop
         {
             "Sid": "Grant PutAccessPointScope",
             "Principal": "*",
-            "Action": "s3express:CreateSession",
-            "s3express:CreateAccessPoint",
-            "S3Express:PutAccessPointScope""Effect": "Allow",
-            "Resource": "*",
+            "Action": [
+                "s3express:CreateSession",
+                "s3express:CreateAccessPoint",
+                "s3express:PutAccessPointScope"
+            ],
+            "Effect": "Allow",
+            "Resource": "*"
         }
     ]
 }

@@ -13,12 +13,12 @@ Indicates whether a resource is a member of a group in the identity store.
  ** GroupId **   <a name="singlesignon-Type-GroupMembershipExistenceResult-GroupId"></a>
 The identifier for a group in the identity store.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 47.
-Pattern: `([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}`
+Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `(arn:aws[a-z-]*:identitystore:::(user|group|membership)/)?([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}`
 Required: No
 
  ** MemberId **   <a name="singlesignon-Type-GroupMembershipExistenceResult-MemberId"></a>
-An object that contains the identifier of a group member. Setting the `UserID` field to the specific identifier for a user indicates that the user is a member of the group.
+An object that contains the identifier of a group member. Setting the `UserId` field to the specific identifier for a user indicates that the user is a member of the group.
 Type: [MemberId](API_MemberId.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: No

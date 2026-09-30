@@ -80,6 +80,9 @@ Required: Yes
          "allowImageBuilder": boolean
       },
       "ImageSharedWithOthers": "string",
+      "ImageSoftwareMetadata": {
+         "nvidiaGridDriverVersion": "string"
+      },
       "ImageType": "string",
       "LatestAppstreamAgentVersion": "string",
       "ManagedSoftwareIncluded": boolean,

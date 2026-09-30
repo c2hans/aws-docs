@@ -14,7 +14,7 @@ A skill available to the agent.
 This data type is a UNION, so only one of the following members can be specified when used or returned.
 
  ** awsSkills **   <a name="BedrockAgentCore-Type-HarnessSkill-awsSkills"></a>
-AWS Skills baked into the Harness's underlying Runtime.
+ AWS Skills baked into the Harness's underlying Runtime.
 Type: [HarnessSkillAwsSkillsSource](API_HarnessSkillAwsSkillsSource.md) object
 Required: No
 

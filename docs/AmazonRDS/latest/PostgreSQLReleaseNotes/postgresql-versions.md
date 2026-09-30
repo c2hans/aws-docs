@@ -3172,7 +3172,7 @@ PostgreSQL version 13.2 is now available on Amazon RDS. This release contains se
 
 This version also added the following new extensions:
 + The `aws_lambda` extension version 1.0. For more information, see [ Invoking an AWS Lambda function from an RDS for PostgreSQL DB instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/PostgreSQL-Lambda.html) in the *Amazon RDS User Guide*.
-+ The [pg\_bigm](https://pgbigm.osdn.jp/pg_bigm_en-1-2.html) extension version 1.2.
++ The [pg\_bigm](https://github.com/pgbigm/pg_bigm/blob/master/docs/pg_bigm_en.md) extension version 1.2.
 
 For information on all extensions, see [Extensions supported for RDS for PostgreSQL 13](postgresql-extensions.md#postgresql-extensions-13x).
 
@@ -3600,7 +3600,7 @@ PostgreSQL version 12.6 is now available on Amazon RDS. PostgreSQL version 12.6 
 
 This version also includes the following changes:
 + The `aws_lambda` extension version 1.0 is added. For more information, see [ Invoking an AWS Lambda function from an RDS for PostgreSQL DB instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/PostgreSQL-Lambda.html) in the *Amazon RDS User Guide*.
-+ The [pg\_bigm](https://pgbigm.osdn.jp/pg_bigm_en-1-2.html) extension version 1.2 is added.
++ The [pg\_bigm](https://github.com/pgbigm/pg_bigm/blob/master/docs/pg_bigm_en.md) extension version 1.2 is added.
 + The [PostGIS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.PostgreSQL.CommonDBATasks.PostGIS.html) extension is updated to version 3.0.2.
 
 For information on all extensions, see [Extensions supported for RDS for PostgreSQL 12](postgresql-extensions.md#postgresql-extensions-12x).
@@ -3846,7 +3846,7 @@ For information on all extensions, see [Extensions supported for RDS for Postgre
 PostgreSQL version 11.11 is now available on Amazon RDS. PostgreSQL version 11.11 contains several improvements that were announced for PostgreSQL release [11.11](https://www.postgresql.org/docs/release/11.11/).
 
 This version also added the following new extension:
-+ The [pg\_bigm](https://pgbigm.osdn.jp/pg_bigm_en-1-2.html) extension version 1.2.
++ The [pg\_bigm](https://github.com/pgbigm/pg_bigm/blob/master/docs/pg_bigm_en.md) extension version 1.2.
 
 For information on all extensions, see [Extensions supported for RDS for PostgreSQL 11](postgresql-extensions.md#postgresql-extensions-11x).
 
@@ -4450,7 +4450,7 @@ PostgreSQL version 9.6.3 contains several new features and bug fixes. This versi
 PostgreSQL version 9.6.2 contains several new features and bug fixes. The new version also includes the following extension versions:
 + PostGIS version 2.3.2
 + [ pg\_freespacemap](https://www.postgresql.org/docs/current/static/pgfreespacemap.html) version 1.1–Provides a way to examine the free space map (FSM). This extension provides an overloaded function called pg\_freespace. The functions show the value recorded in the free space map for a given page, or for all pages in the relation.
-+ [pg\_hint\_plan](http://pghintplan.osdn.jp/pg_hint_plan.html) version 1.1.3– Provides control of execution plans by using hinting phrases at the beginning of SQL statements.
++ [pg\_hint\_plan](https://github.com/ossc-db/pg_hint_plan) version 1.1.3– Provides control of execution plans by using hinting phrases at the beginning of SQL statements.
 + log\_fdw version 1.0–Using this extension from Amazon RDS, you can load and query your database engine log from within the database. For more information, see [Using the log\_fdw extension to access the DB log using SQL](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.PostgreSQL.CommonDBATasks.Extensions.foreign-data-wrappers.html#CHAP_PostgreSQL.Extensions.log_fdw) in the *Amazon RDS User Guide*.
 + With this version release, you can now edit the `max_worker_processes` parameter in a DB parameter group.
 

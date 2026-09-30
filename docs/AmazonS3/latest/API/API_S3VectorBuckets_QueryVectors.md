@@ -26,6 +26,7 @@ Content-type: application/json
    "indexArn": "{{string}}",
    "indexName": "{{string}}",
    "nextToken": "{{string}}",
+   "queryMode": "{{string}}",
    "queryVector": { ... },
    "returnDistance": {{boolean}},
    "returnMetadata": {{boolean}},
@@ -65,6 +66,15 @@ Required: No
 Pagination token from a previous request. The value of this field is empty for an initial request.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 4096.
+Required: No
+
+ ** [queryMode](#API_S3VectorBuckets_QueryVectors_RequestSyntax) **   <a name="AmazonS3-S3VectorBuckets_QueryVectors-request-queryMode"></a>
+The mode to use to process the query. If you don't specify a query mode, the operation uses the mode that's currently configured for the vector index.
+Valid values:
++  `CLASSIC` - Applies metadata filters during the vector search. You can't specify `CLASSIC` for an `ENHANCED` index.
++  `ENHANCED` - Applies metadata filters before the vector search.
+Type: String
+Valid Values: `CLASSIC | ENHANCED`
 Required: No
 
  ** [queryVector](#API_S3VectorBuckets_QueryVectors_RequestSyntax) **   <a name="AmazonS3-S3VectorBuckets_QueryVectors-request-queryVector"></a>

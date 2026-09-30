@@ -32,7 +32,7 @@ source_url: https://docs.aws.amazon.com/guidance/latest/automotive-data-platform
 
 ### Search and Vector Storage
 <a name="search-and-vector-storage"></a>
-+  **Amazon OpenSearch Serverless**: https://docs.aws.amazon.com/opensearch-service/
++  **Amazon S3 Vectors**: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors.html
 
 ### Data Processing
 <a name="data-processing"></a>

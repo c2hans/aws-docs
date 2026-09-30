@@ -89,6 +89,11 @@ Type: String
 Valid Values: `TRUE | FALSE`
 Required: No
 
+ ** ImageSoftwareMetadata **   <a name="WorkSpacesApplications-Type-Image-ImageSoftwareMetadata"></a>
+The software metadata associated with the image.
+Type: [ImageSoftwareMetadata](API_ImageSoftwareMetadata.md) object
+Required: No
+
  ** ImageType **   <a name="WorkSpacesApplications-Type-Image-ImageType"></a>
 The type of the image. Images created through AMI import have type "custom", while WorkSpaces Applications provided images have type "native". Custom images support additional instance types including GeneralPurpose, MemoryOptimized, ComputeOptimized, and Accelerated instance families.
 Type: String

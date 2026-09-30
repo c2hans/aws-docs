@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/CDI-SDK/index.html
 title: 'AWS Cloud Digital Interface Software Development Kit'
 canonical_url: https://docs.aws.amazon.com/CDI-SDK/
 source: aws-documentation
-generated_on: 2026-09-29
+generated_on: 2026-09-30
 ---
 
 # AWS Cloud Digital Interface Software Development Kit

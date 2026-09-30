@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::ElasticBeanstalk::ApplicationVersion ImageSource
 <a name="aws-properties-elasticbeanstalk-applicationversion-imagesource"></a>
 
-The location of a container image.
+The `ImageSource` property type specifies the location of a container image.
 
 ## Syntax
 <a name="aws-properties-elasticbeanstalk-applicationversion-imagesource-syntax"></a>

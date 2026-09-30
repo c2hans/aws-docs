@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/redshift/index.html
 title: 'Amazon Redshift Documentation'
 canonical_url: https://docs.aws.amazon.com/redshift/
 source: aws-documentation
-generated_on: 2026-09-29
+generated_on: 2026-09-30
 ---
 
 # Amazon Redshift Documentation

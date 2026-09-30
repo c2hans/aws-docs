@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/lambda/index.html
 title: 'AWS Lambda Documentation'
 canonical_url: https://docs.aws.amazon.com/lambda/
 source: aws-documentation
-generated_on: 2026-09-29
+generated_on: 2026-09-30
 ---
 
 # AWS Lambda Documentation

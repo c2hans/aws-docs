@@ -68,6 +68,12 @@ The root EBS volume.
 Type: [Ec2EbsVolume](API_Ec2EbsVolume.md) object
 Required: No
 
+ ** softwareAddOns **   <a name="deadlinecloud-Type-ServiceManagedEc2InstanceCapabilities-softwareAddOns"></a>
+The software add-ons that the service installs on worker hosts when they launch.
+Type: Array of [FleetSoftwareAddOn](API_FleetSoftwareAddOn.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
+Required: No
+
 ## See Also
 <a name="API_ServiceManagedEc2InstanceCapabilities_SeeAlso"></a>
 

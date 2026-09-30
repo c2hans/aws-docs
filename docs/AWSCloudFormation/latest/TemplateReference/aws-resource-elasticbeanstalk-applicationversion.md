@@ -9,6 +9,8 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 The AWS::ElasticBeanstalk::ApplicationVersion resource is an AWS Elastic Beanstalk resource type that specifies an application version, an iteration of deployable code, for an Elastic Beanstalk application.
 
+Use `SourceBundle` to provide a source archive in Amazon S3. You can also use `BuildConfiguration` with a source bundle to have Elastic Beanstalk package the application version with AWS CodeBuild, or use `ImageConfiguration` to deploy an existing container image or build one from the source bundle.
+
 **Note**
 After you create an application version with a specified Amazon S3 bucket and key location, you can't change that Amazon S3 location. If you change the Amazon S3 location, an attempt to launch an environment from the application version will fail.
 
@@ -93,6 +95,7 @@ The `Process` option validates Elastic Beanstalk configuration files. It doesn't
 
 `SourceBundle`  <a name="cfn-elasticbeanstalk-applicationversion-sourcebundle"></a>
 The Amazon S3 bucket and key that identify the location of the source bundle for this version.
+If you specify `BuildConfiguration`, Elastic Beanstalk uses this source bundle as the build input. If you specify `ImageConfiguration.Build`, also specify `SourceBundle`. If you specify `ImageConfiguration.Source`, don't specify `SourceBundle`.
 The Amazon S3 bucket must be in the same region as the environment.
 *Required*: No
 *Type*: [SourceBundle](aws-properties-elasticbeanstalk-applicationversion-sourcebundle.md)
@@ -113,6 +116,10 @@ For more information about using the `Ref` function, see [`Ref`](https://docs.aw
 
 ## Examples
 <a name="aws-resource-elasticbeanstalk-applicationversion--examples"></a>
+
+**Topics**
++ [](#aws-resource-elasticbeanstalk-applicationversion--examples--)
++ [Application Version from a Container Image](#aws-resource-elasticbeanstalk-applicationversion--examples--Application_Version_from_a_Container_Image)
 
 ###
 <a name="aws-resource-elasticbeanstalk-applicationversion--examples--"></a>
@@ -153,6 +160,42 @@ myAppVersion:
             - "elasticbeanstalk-samples"
             - Ref: "AWS::Region"
       S3Key: "php-newsample-app.zip"
+```
+
+### Application Version from a Container Image
+<a name="aws-resource-elasticbeanstalk-applicationversion--examples--Application_Version_from_a_Container_Image"></a>
+
+#### JSON
+<a name="aws-resource-elasticbeanstalk-applicationversion--examples--Application_Version_from_a_Container_Image--json"></a>
+
+```
+"myImageAppVersion": {
+  "Type" : "AWS::ElasticBeanstalk::ApplicationVersion",
+  "Properties" : {
+    "ApplicationName" : { "Ref" : "myApp" },
+    "Description" : "Application version from a container image",
+    "ImageConfiguration" : {
+      "Source" : {
+        "Uri" : "111122223333.dkr.ecr.us-east-1.amazonaws.com/my-repository:latest"
+      }
+    }
+  }
+}
+```
+
+#### YAML
+<a name="aws-resource-elasticbeanstalk-applicationversion--examples--Application_Version_from_a_Container_Image--yaml"></a>
+
+```
+myImageAppVersion:
+  Type: AWS::ElasticBeanstalk::ApplicationVersion
+  Properties:
+    ApplicationName:
+      Ref: "myApp"
+    Description: "Application version from a container image"
+    ImageConfiguration:
+      Source:
+        Uri: "111122223333.dkr.ecr.us-east-1.amazonaws.com/my-repository:latest"
 ```
 
 ## See also

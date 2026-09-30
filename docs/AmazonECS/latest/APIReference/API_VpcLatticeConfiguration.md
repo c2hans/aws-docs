@@ -25,6 +25,11 @@ The full Amazon Resource Name (ARN) of the target group or groups associated wit
 Type: String
 Required: Yes
 
+ ** advancedConfiguration **   <a name="ECS-Type-VpcLatticeConfiguration-advancedConfiguration"></a>
+The advanced settings for VPC Lattice used in blue/green deployments. Specify the alternate target group and listener rules required for traffic shifting during blue/green deployments. For more information, see [Required resources for Amazon ECS blue/green deployments](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/blue-green-deployment-implementation.html) in the *Amazon Elastic Container Service Developer Guide*.
+Type: [VpcLatticeAdvancedConfiguration](API_VpcLatticeAdvancedConfiguration.md) object
+Required: No
+
 ## See Also
 <a name="API_VpcLatticeConfiguration_SeeAlso"></a>
 

@@ -14,10 +14,11 @@ An object containing the identifier of a group member.
 This data type is a UNION, so only one of the following members can be specified when used or returned.
 
  ** UserId **   <a name="singlesignon-Type-MemberId-UserId"></a>
-An object containing the identifiers of resources that can be members.
+The identifier for a user in the identity store.
+You can specify the user by ID or by Amazon Resource Name (ARN). For example, user ID `a1b2c3d4-5678-90ab-cdef-EXAMPLE11111` or user ARN `arn:aws:identitystore:::user/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111`.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 47.
-Pattern: `([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}`
+Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `(arn:aws[a-z-]*:identitystore:::(user|group|membership)/)?([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}`
 Required: No
 
 ## See Also

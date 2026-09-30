@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/deploy-a-poc-for-amazon-s3-tab
 title: 'Guidance for Deploy a PoC for Amazon S3 Tables'
 canonical_url: https://docs.aws.amazon.com/solutions/deploy-a-poc-for-amazon-s3-tables/
 source: aws-documentation
-generated_on: 2026-09-29
+generated_on: 2026-09-30
 ---
 
 # Guidance for Deploy a PoC for Amazon S3 Tables

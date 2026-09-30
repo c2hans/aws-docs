@@ -8,3 +8,4 @@
 - [Bedrock KB SSRF testing](reference_bedrock-kb-ssrf-testing.md) — how to build a KB for fetcher SSRF (OSS required, aoss SigV4 sha256, log oracle) + which containments held (finding 16)
 - [infra.json race + buffering traps](feedback_infra-json-race-and-buffering.md) — don't let background jobs share a state file; flush background python stdout
 - [EBS Volume Clones cross-account hunt](project_ebs-volume-clones-crossaccount.md) — RAM ec2:Volume + CopyVolumes + KMS re-encrypt: boundary held, all hypotheses refuted; RAM resource-policy is the enforcement point
+- [EventBridge/Scheduler hunt](project_eventbridge-scheduler-hunt.md) — connection-secret exfil via api-destination repoint (confirmed), egress guards, PassRole boundary holds, eventsv2 SDK gap

@@ -21,7 +21,9 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "[CertificateArn](#cfn-dms-dataprovider-ibmdb2luwsettings-certificatearn)" : {{String}},
   "[DatabaseName](#cfn-dms-dataprovider-ibmdb2luwsettings-databasename)" : {{String}},
+  "[EncryptionAlgorithm](#cfn-dms-dataprovider-ibmdb2luwsettings-encryptionalgorithm)" : {{Integer}},
   "[Port](#cfn-dms-dataprovider-ibmdb2luwsettings-port)" : {{Integer}},
+  "[SecurityMechanism](#cfn-dms-dataprovider-ibmdb2luwsettings-securitymechanism)" : {{Integer}},
   "[ServerName](#cfn-dms-dataprovider-ibmdb2luwsettings-servername)" : {{String}},
   "[SslMode](#cfn-dms-dataprovider-ibmdb2luwsettings-sslmode)" : {{String}}
 }
@@ -33,7 +35,9 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [CertificateArn](#cfn-dms-dataprovider-ibmdb2luwsettings-certificatearn): {{String}}
   [DatabaseName](#cfn-dms-dataprovider-ibmdb2luwsettings-databasename): {{String}}
+  [EncryptionAlgorithm](#cfn-dms-dataprovider-ibmdb2luwsettings-encryptionalgorithm): {{Integer}}
   [Port](#cfn-dms-dataprovider-ibmdb2luwsettings-port): {{Integer}}
+  [SecurityMechanism](#cfn-dms-dataprovider-ibmdb2luwsettings-securitymechanism): {{Integer}}
   [ServerName](#cfn-dms-dataprovider-ibmdb2luwsettings-servername): {{String}}
   [SslMode](#cfn-dms-dataprovider-ibmdb2luwsettings-sslmode): {{String}}
 ```
@@ -53,9 +57,21 @@ Property description not available.
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`EncryptionAlgorithm`  <a name="cfn-dms-dataprovider-ibmdb2luwsettings-encryptionalgorithm"></a>
+Property description not available.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `Port`  <a name="cfn-dms-dataprovider-ibmdb2luwsettings-port"></a>
 Property description not available.
 *Required*: Yes
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`SecurityMechanism`  <a name="cfn-dms-dataprovider-ibmdb2luwsettings-securitymechanism"></a>
+Property description not available.
+*Required*: No
 *Type*: Integer
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 

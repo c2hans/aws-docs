@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyond-improving-resilience/increasing-mtbf.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Increasing MTBF
 <a name="increasing-mtbf"></a>
 
@@ -32,11 +30,11 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyo
 
  When a Heisenbug is invoked, it's imperative that the software quickly detects the incorrect operation and fails so that it can be tried again. This is achieved through defensive programming, and validating inputs, intermediate results, and output. Additionally, processes are isolated and share no state with other processes.
 
- This modular approach ensures that the scope of impact during failure is limited. Processes fail independently. When a process does fail, the software should use “process-pairs” to retry the work, meaning a new process can assume the work of a failed one. To maintain the reliability and integrity of the workload, each operation should be treated as an ACID transaction.
+ This modular approach ensures that the scope of impact during failure is limited. Processes fail independently. When a process does fail, the software should use "process-pairs" to retry the work, meaning a new process can assume the work of a failed one. To maintain the reliability and integrity of the workload, each operation should be treated as an ACID transaction.
 
  This allows a process to fail without corrupting the state of the workload by aborting the transaction and rolling back any changes made. This allows the recovery process to retry the transaction from a known-good state and restart gracefully. This is how software can be fault-tolerant to Heisenbugs.
 
- However, you should not aim to make software fault-tolerant to Bohrbugs. These defects must be found and removed before the workload enters production since no level of redundancy will ever achieve correct outcome. (See Jim Gray, "[Why Do Computers Stop and What Can Be Done About It?](https://www.hpl.hp.com/techreports/tandem/TR-85.7.pdf)", June 1985, Tandem Technical Report 85.7.)
+ However, you should not aim to make software fault-tolerant to Bohrbugs. These defects must be found and removed before the workload enters production since no level of redundancy will ever achieve a correct outcome. (See Jim Gray, "[Why Do Computers Stop and What Can Be Done About It?](https://www.hpl.hp.com/techreports/tandem/TR-85.7.pdf)", June 1985, Tandem Technical Report 85.7.)
 
  The final way to increase MTBF is to reduce the scope of impact from failure. Using [fault isolation](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/use-fault-isolation-to-protect-your-workload.html) through modularization to create fault containers is a primary way to do so as outlined earlier in *Fault tolerance and fault isolation*. Reducing the failure rate improves availability. AWS uses techniques like dividing services into control planes and data planes, [Availability Zone Independence](https://aws.amazon.com/builders-library/static-stability-using-availability-zones) (AZI), [Regional isolation](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/), [cell-based architectures](https://www.youtube.com/watch?v=swQbA4zub20), and [shuffle-sharding](https://aws.amazon.com/builders-library/workload-isolation-using-shuffle-sharding) to provide fault isolation. These are also patterns that can be used by AWS customers as well.
 
@@ -50,7 +48,7 @@ Fault isolation decreases scope of impact and increases the MTBF of the workload
 
  The first method to increase your AWS dependency MTBF is through using [fault isolation](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/use-fault-isolation-to-protect-your-workload.html). Many AWS services offer a level of isolation at the AZ, meaning a failure in one AZ does not affect the service in a different AZ.
 
- Using redundant EC2 instances in multiple AZs increases subsystem availability. AZI provides a sparing capability inside a single Region, allowing you to increase your availability for AZI services.
+ Using redundant Amazon EC2 instances in multiple AZs increases subsystem availability. AZI provides a sparing capability inside a single Region, allowing you to increase your availability for AZI services.
 
  However, not all AWS services operate at the AZ level. Many others offer regional isolation. In this case, where the designed-for availability of the regional service doesn't support the overall availability required for your workload, you might consider a multi-Region approach. Each Region offers an isolated instantiation of the service, equivalent to sparing.
 
@@ -68,7 +66,7 @@ Fault isolation decreases scope of impact and increases the MTBF of the workload
 
  However, if the metadata service is unavailable, the requests made by your customers fail. Instead, you can asynchronously pull or push the metadata locally to your service to be used to answer requests. This eliminates the synchronous call to the metadata service from your critical path.
 
- Additionally, because your service is still available even when the metadata service is not, you can remove it as a dependency in your availability calculation. This example is dependent on the assumption that the metadata doesn’t change frequently and that serving stale metadata is better than the request failing. Another similar example is [serve-stale](https://www.rfc-editor.org/rfc/rfc8767) for DNS that allows data to be kept in the cache beyond the TTL expiry and used for responses when a refreshed answer is not readily available.
+ Additionally, because your service is still available even when the metadata service is not, you can remove it as a dependency in your availability calculation. This example is dependent on the assumption that the metadata doesn't change frequently and that serving stale metadata is better than the request failing. Another similar example is [serve-stale](https://www.rfc-editor.org/rfc/rfc8767) for DNS that allows data to be kept in the cache beyond the TTL expiry and used for responses when a refreshed answer is not readily available.
 
  The final method to increase dependency MTBF is to reduce the scope of impact from failure. As discussed earlier, failure is not a binary event, there are degrees of failure. This is the effect of modularization; failure is contained to just the requests or users being serviced by that container.
 
@@ -77,7 +75,7 @@ Fault isolation decreases scope of impact and increases the MTBF of the workload
 ## Reducing common sources of impact
 <a name="reducing-common-sources-of-impact"></a>
 
- In 1985, Jim Gray discovered, during a study at Tandem Computers, that failure was primarily driven by two things: software and operations. (See Jim Gray, "[Why Do Computers Stop and What Can Be Done About It?](https://www.hpl.hp.com/techreports/tandem/TR-85.7.pdf)", June 1985, Tandem Technical Report 85.7.) Even after 36 years later, this continues to be true. Despite advances in technology, there isn't an easy solution to these problems, and the major sources of failure haven't changed. Addressing failures in software was discussed in the beginning of this section, so the focus here will be operations and reducing the frequency of failure.
+ In 1985, Jim Gray discovered, during a study at Tandem Computers, that failure was primarily driven by two things: software and operations. (See Jim Gray, "[Why Do Computers Stop and What Can Be Done About It?](https://www.hpl.hp.com/techreports/tandem/TR-85.7.pdf)", June 1985, Tandem Technical Report 85.7.) Even 36 years later, this continues to be true. Despite advances in technology, there isn't an easy solution to these problems, and the major sources of failure haven't changed. Addressing failures in software was discussed in the beginning of this section, so the focus here will be operations and reducing the frequency of failure.
 
 ### Stability compared with features
 <a name="stability-compared-with-features"></a>
@@ -93,7 +91,7 @@ Fault isolation decreases scope of impact and increases the MTBF of the workload
 
  The other major contributor to operational events that introduce failure are people. Humans make mistakes. They might use the wrong credentials, enter the wrong command, press Enter too soon, or miss a critical step. Taking manual action consistently results in error, resulting in failure.
 
- One of the major causes for operator errors are confusing, unintuitive, or inconsistent user interfaces. Jim Gray also noted in his 1985 study that “interfaces that ask the operator for information or ask him to perform some function must be simple, consistent, and operator fault-tolerant.” (See Jim Gray, "[Why Do Computers Stop and What Can Be Done About It?](https://www.hpl.hp.com/techreports/tandem/TR-85.7.pdf)", June 1985, Tandem Technical Report 85.7.) This insight continues to be true today. There are numerous examples over the past three decades throughout the industry where a confusing or complex user interface, lack of confirmation or instructions, or even just unfriendly human language caused an operator to do the wrong thing.
+ One of the major causes for operator errors are confusing, unintuitive, or inconsistent user interfaces. Jim Gray also noted in his 1985 study that "interfaces that ask the operator for information or ask him to perform some function must be simple, consistent, and operator fault-tolerant." (See Jim Gray, "[Why Do Computers Stop and What Can Be Done About It?](https://www.hpl.hp.com/techreports/tandem/TR-85.7.pdf)", June 1985, Tandem Technical Report 85.7.) This insight continues to be true today. There are numerous examples over the past three decades throughout the industry where a confusing or complex user interface, lack of confirmation or instructions, or even just unfriendly human language caused an operator to do the wrong thing.
 
 **Rule 12**
 Make it easy for operators to do the right thing.
@@ -101,12 +99,12 @@ Make it easy for operators to do the right thing.
 ### Preventing overload
 <a name="preventing-overload"></a>
 
- The final common contributor of impact is your customers, the actual users of your workload. Successful workloads tend to get used, a lot, but sometimes that usage outpaces the workload’s ability to scale. There are many things that can happen, disks can become full, thread pools might get exhausted, network bandwidth might be saturated, or database connection limits can be reached.
+ The final common contributor of impact is your customers, the actual users of your workload. Successful workloads tend to get used, a lot, but sometimes that usage outpaces the workload's ability to scale. There are many things that can happen, disks can become full, thread pools might get exhausted, network bandwidth might be saturated, or database connection limits can be reached.
 
  There is no failproof method to eliminate these, but proactive monitoring of capacity and utilization through Operational Health metrics will provide early warnings when these failures might occur. Techniques like [load-shedding](https://aws.amazon.com/builders-library/using-load-shedding-to-avoid-overload), [circuit breakers](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/design-interactions-in-a-distributed-system-to-mitigate-or-withstand-failures.html), and [retry with exponential backoff and jitter](https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/) can help minimize the impact and increase the success rate, but these situations still represent failure. Automated scaling based on Operational Health metrics can help reduce the frequency of failure due to overload, but might not be able to respond quickly enough to changes in utilization.
 
- If you need to ensure the continuously available capacity for customers, you have to make tradeoffs on availability and cost. One way to ensure lack of capacity doesn’t lead to unavailability is to provide each customer with a quota and ensure your workload’s capacity is scaled to provide 100% of the allocated quotas. When customers exceed their quota, they get throttled, which isn't a failure and doesn’t count against availability. You will also need to closely track your customer base and forecast future utilization to keep enough capacity provisioned. This ensures your workload isn't driven to failure scenarios through over consumption by your customers.
+ If you need to ensure the continuously available capacity for customers, you have to make tradeoffs on availability and cost. One way to ensure lack of capacity doesn't lead to unavailability is to provide each customer with a quota and ensure your workload's capacity is scaled to provide 100% of the allocated quotas. When customers exceed their quota, they get throttled, which isn't a failure and doesn't count against availability. You will also need to closely track your customer base and forecast future utilization to keep enough capacity provisioned. This ensures your workload isn't driven to failure scenarios through over consumption by your customers.
 +  [Amazon Builders' Library – Using load shedding to avoid overload](https://aws.amazon.com/builders-library/using-load-shedding-to-avoid-overload/)
 +  [Amazon Builders' Library – Fairness in multi-tenant systems](https://aws.amazon.com/builders-library/fairness-in-multi-tenant-systems)
 
-For example, let’s examine a workload that provides a storage service. Each server in the workload can support 100 downloads per second, customers are provided a quota or 200 downloads per second, and there are 500 customers. To be able to support this volume of customers, the service needs to provide capacity for 100,000 downloads per second, which requires 1,000 servers. If any customer exceeds their quota, they get throttled, which ensures sufficient capacity for every other customer. This is a simple example of one way to avoid overload without rejecting units of work.
+For example, let's examine a workload that provides a storage service. Each server in the workload can support 100 downloads per second, customers are provided a quota or 200 downloads per second, and there are 500 customers. To be able to support this volume of customers, the service needs to provide capacity for 100,000 downloads per second, which requires 1,000 servers. If any customer exceeds their quota, they get throttled, which ensures sufficient capacity for every other customer. This is a simple example of one way to avoid overload without rejecting units of work.

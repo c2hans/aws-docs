@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-mysql-on-ec2-using-amazon-ebs/glossary.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # AWS Glossary
 <a name="glossary"></a>
 

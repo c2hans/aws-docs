@@ -59,4 +59,5 @@ The following actions are supported:
 +  [StopOTelEnrichment](API_StopOTelEnrichment.md)
 +  [TagResource](API_TagResource.md)
 +  [UntagResource](API_UntagResource.md)
++  [UpdateOTelEnrichment](API_UpdateOTelEnrichment.md)
 +  [UpdateResourceMetricsConfiguration](API_UpdateResourceMetricsConfiguration.md)

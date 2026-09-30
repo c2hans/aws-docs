@@ -35,9 +35,10 @@ Required: Yes
 
  ** [IdentityStoreId](#API_GetUserId_RequestSyntax) **   <a name="singlesignon-GetUserId-request-IdentityStoreId"></a>
 The globally unique identifier for the identity store.
+You can specify the identity store by ID or by Amazon Resource Name (ARN). For example, identity store ID `d-1234567890` or identity store ARN `arn:aws:identitystore::111122223333:identitystore/d-1234567890`.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 36.
-Pattern: `d-[0-9a-f]{10}$|^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}`
+Length Constraints: Minimum length of 1. Maximum length of 93.
+Pattern: `(arn:aws[a-z-]*:identitystore::\d{12}:identitystore/)?(d-[0-9a-f]{10}|[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})`
 Required: Yes
 
 ## Response Syntax
@@ -46,6 +47,7 @@ Required: Yes
 ```
 {
    "IdentityStoreId": "string",
+   "UserArn": "string",
    "UserId": "string"
 }
 ```
@@ -60,14 +62,20 @@ The following data is returned in JSON format by the service.
  ** [IdentityStoreId](#API_GetUserId_ResponseSyntax) **   <a name="singlesignon-GetUserId-response-IdentityStoreId"></a>
 The globally unique identifier for the identity store.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 36.
-Pattern: `d-[0-9a-f]{10}$|^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}`
+Length Constraints: Minimum length of 1. Maximum length of 93.
+Pattern: `(arn:aws[a-z-]*:identitystore::\d{12}:identitystore/)?(d-[0-9a-f]{10}|[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})`
+
+ ** [UserArn](#API_GetUserId_ResponseSyntax) **   <a name="singlesignon-GetUserId-response-UserArn"></a>
+The Amazon Resource Name (ARN) of the user in the identity store. For example, `arn:aws:identitystore:::user/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111`.
+Type: String
+Length Constraints: Minimum length of 60. Maximum length of 100.
+Pattern: `arn:aws[a-z-]*:identitystore:::(user|group|membership)/([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}`
 
  ** [UserId](#API_GetUserId_ResponseSyntax) **   <a name="singlesignon-GetUserId-response-UserId"></a>
 The identifier for a user in the identity store.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 47.
-Pattern: `([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}`
+Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `(arn:aws[a-z-]*:identitystore:::(user|group|membership)/)?([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}`
 
 ## Errors
 <a name="API_GetUserId_Errors"></a>
@@ -99,7 +107,7 @@ The identifier for each request. This value is a globally unique ID that is gene
  ** ResourceId **
 The identifier for a resource in the identity store that can be used as `UserId` or `GroupId`. The format for `ResourceId` is either `UUID` or `1234567890-UUID`, where `UUID` is a randomly generated value for each resource when it is created and `1234567890` represents the ` IdentityStoreId` string value. In the case that the identity store is migrated from a legacy SSO identity store, the `ResourceId` for that identity store will be in the format of `UUID`. Otherwise, it will be in the `1234567890-UUID` format.
  ** ResourceType **
-An enum object indicating the type of resource in the identity store service. Valid values include USER, GROUP, and IDENTITY\_STORE.
+An enum object indicating the type of resource in the identity store service. Valid values include USER, GROUP, GROUP\_MEMBERSHIP, RESOURCE\_POLICY, and IDENTITY\_STORE.
 HTTP Status Code: 400
 
  ** ThrottlingException **
@@ -148,8 +156,9 @@ This example retrieves the user ID based on the user name.
 
 ```
 {
+    "IdentityStoreId": "d-1234567890",
     "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
-    "IdentityStoreId": "d-1234567890"
+    "UserArn": "arn:aws:identitystore:::user/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 

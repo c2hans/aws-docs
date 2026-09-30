@@ -11,4 +11,5 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::Comprehend::DocumentClassifier](aws-resource-comprehend-documentclassifier.md)
 + [AWS::Comprehend::DocumentClassifierEndpoint](aws-resource-comprehend-documentclassifierendpoint.md)
 + [AWS::Comprehend::EntityRecognizer](aws-resource-comprehend-entityrecognizer.md)
++ [AWS::Comprehend::EntityRecognizerEndpoint](aws-resource-comprehend-entityrecognizerendpoint.md)
 + [AWS::Comprehend::Flywheel](aws-resource-comprehend-flywheel.md)

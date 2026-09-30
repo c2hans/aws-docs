@@ -39,6 +39,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::Connect::TaskTemplate](aws-resource-connect-tasktemplate.md)
 + [AWS::Connect::TestCase](aws-resource-connect-testcase.md)
 + [AWS::Connect::TrafficDistributionGroup](aws-resource-connect-trafficdistributiongroup.md)
++ [AWS::Connect::UseCase](aws-resource-connect-usecase.md)
 + [AWS::Connect::User](aws-resource-connect-user.md)
 + [AWS::Connect::UserHierarchyGroup](aws-resource-connect-userhierarchygroup.md)
 + [AWS::Connect::UserHierarchyStructure](aws-resource-connect-userhierarchystructure.md)

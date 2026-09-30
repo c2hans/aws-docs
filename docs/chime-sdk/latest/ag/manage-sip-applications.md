@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/manage-sip-applicati
 <a name="manage-sip-applications"></a>
 
 **Note**
-Amazon Chime SDK SIP media applications will no longer be open to new customers starting October 29, 2026. If you would like to use SIP media applications, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see [SIP media applications service change](sip-applications-service-change.md).
+Amazon Chime SDK SIP media applications will no longer be open to new customers starting October 29, 2026. If you would like to use SIP media applications, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see [Amazon Chime SDK SIP media applications availability change](sip-applications-maintenance-mode.md).
 
 You can use the Amazon Chime SDK console to create Session Initiation Protocol (SIP) media applications. SIP media applications make it easier and faster for you to create custom signaling and media instructions that you would normally build on your private branch telephone exchange (PBX).
 
@@ -22,6 +22,7 @@ For more information about AWS Lambda, see [Getting started with AWS Lambda](htt
 Amazon Chime SDK SIP media applications have outbound international calling restrictions. For more information, refer to [Outbound calling restrictions](outbound-call-restrictions.md).
 
 **Topics**
++ [Amazon Chime SDK SIP media applications availability change](sip-applications-maintenance-mode.md)
++ [Migrating Amazon Chime SDK PSTN Audio to Amazon Connect](migrate-pstn-audio-to-connect.md)
 + [Understanding SIP applications and rules](understand-sip-data-models.md)
-+ [SIP media applications service change](sip-applications-service-change.md)
 + [Using SIP media applications](use-sip-apps.md)

@@ -600,7 +600,7 @@ Runs the Amazon ECS API action [StopTask](https://docs.aws.amazon.com/AmazonECS/
 ### aws:ecs:task-cpu-stress
 <a name="task-cpu-stress"></a>
 
-Runs CPU stress on the target tasks. Uses the [AWSFIS-Run-CPU-Stress](https://console.aws.amazon.com/systems-manager/documents/AWSFIS-Run-CPU-Stress/description) SSM document. The tasks must be managed by AWS Systems Manager. For more information, see [ECS task actions](ecs-task-actions.md).
+Runs CPU stress on the target tasks. Uses the [AWSFIS-Run-CPU-Stress](https://console.aws.amazon.com/systems-manager/documents/AWSFIS-Run-CPU-Stress/description) SSM document. The tasks must be managed by AWS Systems Manager. For more information, see [ECS task actions](ecs-task-actions.md). For the non-root container image URIs, see [Non-root container images](ecs-task-actions.md#ecs-task-container-images).
 
 **Resource type**
 + **aws:ecs:task**
@@ -620,7 +620,7 @@ Runs CPU stress on the target tasks. Uses the [AWSFIS-Run-CPU-Stress](https://co
 ### aws:ecs:task-io-stress
 <a name="task-io-stress"></a>
 
-Runs I/O stress on the target tasks. Uses the [AWSFIS-Run-IO-Stress](https://console.aws.amazon.com/systems-manager/documents/AWSFIS-Run-IO-Stress/description) SSM document. The tasks must be managed by AWS Systems Manager. For more information, see [ECS task actions](ecs-task-actions.md).
+Runs I/O stress on the target tasks. Uses the [AWSFIS-Run-IO-Stress](https://console.aws.amazon.com/systems-manager/documents/AWSFIS-Run-IO-Stress/description) SSM document. The tasks must be managed by AWS Systems Manager. For more information, see [ECS task actions](ecs-task-actions.md). For the non-root container image URIs, see [Non-root container images](ecs-task-actions.md#ecs-task-container-images).
 
 **Resource type**
 + **aws:ecs:task**
@@ -640,7 +640,7 @@ Runs I/O stress on the target tasks. Uses the [AWSFIS-Run-IO-Stress](https://con
 ### aws:ecs:task-kill-process
 <a name="task-kill-process"></a>
 
-Stops the specified process in the tasks, using the **killall** command. Uses the [AWSFIS-Run-Kill-Process](https://console.aws.amazon.com/systems-manager/documents/AWSFIS-Run-Kill-Process/description) SSM document. The task definition must have `pidMode` set to `task`. The tasks must be managed by AWS Systems Manager. For more information, see [ECS task actions](ecs-task-actions.md).
+Stops the specified process in the tasks, using the **killall** command. Uses the [AWSFIS-Run-Kill-Process](https://console.aws.amazon.com/systems-manager/documents/AWSFIS-Run-Kill-Process/description) SSM document. The task definition must have `pidMode` set to `task`. The tasks must be managed by AWS Systems Manager. For more information, see [ECS task actions](ecs-task-actions.md). For the non-root container image URIs, see [Non-root container images](ecs-task-actions.md#ecs-task-container-images).
 
 **Resource type**
 + **aws:ecs:task**
@@ -659,7 +659,7 @@ Stops the specified process in the tasks, using the **killall** command. Uses th
 ### aws:ecs:task-network-blackhole-port
 <a name="task-network-blackhole-port"></a>
 
-Drops inbound or outbound traffic for the specified protocol and port, using the [Amazon ECS Fault Injection endpoints](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/fault-injection.html). Uses the [AWSFIS-Run-Network-Blackhole-Port-ECS](https://console.aws.amazon.com/systems-manager/documents/AWSFIS-Run-Network-Blackhole-Port-ECS/description) SSM document. The task definition must have `pidMode` set to `task`. The tasks must be managed by AWS Systems Manager. You can't set `networkMode` to `bridge` in the task definition. For more information, see [ECS task actions](ecs-task-actions.md).
+Drops inbound or outbound traffic for the specified protocol and port, using the [Amazon ECS Fault Injection endpoints](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/fault-injection.html). Uses the [AWSFIS-Run-Network-Blackhole-Port-ECS](https://console.aws.amazon.com/systems-manager/documents/AWSFIS-Run-Network-Blackhole-Port-ECS/description) SSM document. The task definition must have `pidMode` set to `task`. The tasks must be managed by AWS Systems Manager. You can't set `networkMode` to `bridge` in the task definition. For more information, see [ECS task actions](ecs-task-actions.md). For the non-root container image URIs, see [Non-root container images](ecs-task-actions.md#ecs-task-container-images).
 
 When `useEcsFaultInjectionEndpoints` is set to `false`, the fault uses the `iptables` tool, and uses the [AWSFIS-Run-Network-Blackhole-Port](https://console.aws.amazon.com/systems-manager/documents/AWSFIS-Run-Network-Blackhole-Port/description) SSM document.
 
@@ -683,7 +683,7 @@ When `useEcsFaultInjectionEndpoints` is set to `false`, the fault uses the `ipta
 ### aws:ecs:task-network-latency
 <a name="task-network-latency"></a>
 
-Adds latency and jitter to the network interface for egress traffic to specific sources, using the [Amazon ECS Fault Injection endpoints](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/fault-injection.html) . Uses the [AWSFIS-Run-Network-Latency-ECS](https://console.aws.amazon.com/systems-manager/documents/AWSFIS-Run-Network-Latency-ECS/description) SSM document. The task definition must have `pidMode` set to `task`. The tasks must be managed by AWS Systems Manager. You can't set `networkMode` to `bridge` in the task definition. For more information, see [ECS task actions](ecs-task-actions.md).
+Adds latency and jitter to the network interface for egress traffic to specific sources, using the [Amazon ECS Fault Injection endpoints](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/fault-injection.html) . Uses the [AWSFIS-Run-Network-Latency-ECS](https://console.aws.amazon.com/systems-manager/documents/AWSFIS-Run-Network-Latency-ECS/description) SSM document. The task definition must have `pidMode` set to `task`. The tasks must be managed by AWS Systems Manager. You can't set `networkMode` to `bridge` in the task definition. For more information, see [ECS task actions](ecs-task-actions.md). For the non-root container image URIs, see [Non-root container images](ecs-task-actions.md#ecs-task-container-images).
 
 When `useEcsFaultInjectionEndpoints` is set to `false`, the fault uses the `tc` tool, and uses the [AWSFIS-Run-Network-Latency-Sources](https://console.aws.amazon.com/systems-manager/documents/AWSFIS-Run-Network-Latency-Sources/description) SSM document.
 
@@ -715,7 +715,7 @@ To use AZ names or AZ IDs in the `sources` parameter, all targets of the action 
 ### aws:ecs:task-network-packet-loss
 <a name="task-network-packet-loss"></a>
 
-Adds packet loss to the network interface for egress traffic to specific sources, using the [Amazon ECS Fault Injection endpoints](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/fault-injection.html). Uses the [AWSFIS-Run-Network-Packet-Loss-ECS](https://console.aws.amazon.com/systems-manager/documents/AWSFIS-Run-Network-Packet-Loss-ECS/description) SSM document. The task definition must have `pidMode` set to `task`. The tasks must be managed by AWS Systems Manager. You can't set `networkMode` to `bridge` in the task definition. For more information, see [ECS task actions](ecs-task-actions.md).
+Adds packet loss to the network interface for egress traffic to specific sources, using the [Amazon ECS Fault Injection endpoints](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/fault-injection.html). Uses the [AWSFIS-Run-Network-Packet-Loss-ECS](https://console.aws.amazon.com/systems-manager/documents/AWSFIS-Run-Network-Packet-Loss-ECS/description) SSM document. The task definition must have `pidMode` set to `task`. The tasks must be managed by AWS Systems Manager. You can't set `networkMode` to `bridge` in the task definition. For more information, see [ECS task actions](ecs-task-actions.md). For the non-root container image URIs, see [Non-root container images](ecs-task-actions.md#ecs-task-container-images).
 
 When `useEcsFaultInjectionEndpoints` is set to `false`, the fault uses the `tc` tool, and uses the [AWSFIS-Run-Network-Packet-Loss-Sources](https://console.aws.amazon.com/systems-manager/documents/AWSFIS-Run-Network-Packet-Loss-Sources/description) SSM document.
 

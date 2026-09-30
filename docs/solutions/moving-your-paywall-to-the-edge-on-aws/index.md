@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/moving-your-paywall-to-the-edg
 title: 'Guidance for Moving Your Paywall to the Edge on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/moving-your-paywall-to-the-edge-on-aws/
 source: aws-documentation
-generated_on: 2026-09-29
+generated_on: 2026-09-30
 ---
 
 # Guidance for Moving Your Paywall to the Edge on AWS

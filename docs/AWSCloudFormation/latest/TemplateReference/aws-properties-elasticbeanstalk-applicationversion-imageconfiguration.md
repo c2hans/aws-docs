@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::ElasticBeanstalk::ApplicationVersion ImageConfiguration
 <a name="aws-properties-elasticbeanstalk-applicationversion-imageconfiguration"></a>
 
-The source of the container image for an application version: an image that you built and pushed to a container registry yourself, or settings for Elastic Beanstalk to build one from your source bundle.
+The `ImageConfiguration` property type specifies the source of the container image for an application version: either an image that you built and pushed to a container registry yourself, or settings for Elastic Beanstalk to build one from your source bundle.
 
 ## Syntax
 <a name="aws-properties-elasticbeanstalk-applicationversion-imageconfiguration-syntax"></a>

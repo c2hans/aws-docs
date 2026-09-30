@@ -12,4 +12,4 @@ Amazon EMR on EKS provides a deployment option for Amazon EMR that allows you to
 + It is the prefix before IAM policy actions for Amazon EMR on EKS. For example, `"Action": [ "emr-containers:StartJobRun"]`. For more information, see [Policy actions for Amazon EMR on EKS](https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-actions).
 + It is the prefix used in Amazon EMR on EKS service endpoints. For example, `emr-containers.us-east-2.amazonaws.com`. For more information, see [Amazon EMR on EKSService Endpoints](https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/service-quotas.html#service-endpoints).
 
-This document was last published on September 29, 2026.
+This document was last published on September 30, 2026.

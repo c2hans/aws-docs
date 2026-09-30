@@ -18,9 +18,6 @@ You create and run **full code reviews**—which scan a repository’s entire co
 
  **Penetration testing** and **threat modeling** are initiated within the AWS Security Agent web application. Users specify target domains and select connected repositories to provide application context.
 
-**Note**
-Automated remediation is not available for public repositories to avoid disclosing vulnerabilities before they are fixed.
-
 ## Prerequisites
 <a name="_prerequisites"></a>
 

@@ -582,7 +582,7 @@ You must attach the following permissions policy to allow Batch Operations to re
                 "s3:UpdateObjectEncryption"
             ],
             "Resource": [
-                "arn:aws:s3:::{{amzn-s3-demo-bucket-target}}"
+                "arn:aws:s3:::{{amzn-s3-demo-bucket-target}}",
                 "arn:aws:s3:::{{amzn-s3-demo-bucket-target}}/*"
             ]
         },
@@ -617,7 +617,7 @@ You must attach the following permissions policy to allow Batch Operations to re
             "Resource": [
                 "arn:aws:s3:::{{amzn-s3-demo-bucket-target}}"
             ]
-        }
+        },
         {
             "Sid": "AllowKMSOperationsForS3BatchOperations",
             "Effect": "Allow",

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/security-lake/index.html
 title: 'Amazon Security Lake Documentation'
 canonical_url: https://docs.aws.amazon.com/security-lake/
 source: aws-documentation
-generated_on: 2026-09-29
+generated_on: 2026-09-30
 ---
 
 # Amazon Security Lake Documentation

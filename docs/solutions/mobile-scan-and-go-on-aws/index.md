@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/mobile-scan-and-go-on-aws/inde
 title: 'Guidance for Mobile Scan & Go on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/mobile-scan-and-go-on-aws/
 source: aws-documentation
-generated_on: 2026-09-29
+generated_on: 2026-09-30
 ---
 
 # Guidance for Mobile Scan & Go on AWS

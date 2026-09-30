@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-postgresql-on-ec2-using-ebs/amazon-ebs-block-level-storage-options.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Amazon EBS block-level storage options
 <a name="amazon-ebs-block-level-storage-options"></a>
 

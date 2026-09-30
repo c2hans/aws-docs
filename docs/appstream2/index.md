@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/appstream2/index.html
 title: 'Amazon WorkSpaces Applications Documentation'
 canonical_url: https://docs.aws.amazon.com/appstream2/
 source: aws-documentation
-generated_on: 2026-09-29
+generated_on: 2026-09-30
 ---
 
 # Amazon WorkSpaces Applications Documentation

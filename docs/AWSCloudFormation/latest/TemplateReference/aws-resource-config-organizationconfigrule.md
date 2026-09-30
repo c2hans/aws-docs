@@ -112,6 +112,12 @@ For more information about using the `Ref` function, see [`Ref`](https://docs.aw
 ### Fn::GetAtt
 <a name="aws-resource-config-organizationconfigrule-return-values-fn--getatt"></a>
 
+####
+<a name="aws-resource-config-organizationconfigrule-return-values-fn--getatt-fn--getatt"></a>
+
+`OrganizationConfigRuleArn`  <a name="OrganizationConfigRuleArn-fn::getatt"></a>
+Amazon Resource Name (ARN) of organization AWS Config rule.
+
 ## Examples
 <a name="aws-resource-config-organizationconfigrule--examples"></a>
 

@@ -22,7 +22,6 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[DebugLogDeliveryAccounts](#cfn-config-organizationconfigrule-organizationcustompolicyrulemetadata-debuglogdeliveryaccounts)" : {{[ String, ... ]}},
   "[Description](#cfn-config-organizationconfigrule-organizationcustompolicyrulemetadata-description)" : {{String}},
   "[InputParameters](#cfn-config-organizationconfigrule-organizationcustompolicyrulemetadata-inputparameters)" : {{String}},
-  "[MaximumExecutionFrequency](#cfn-config-organizationconfigrule-organizationcustompolicyrulemetadata-maximumexecutionfrequency)" : {{String}},
   "[OrganizationConfigRuleTriggerTypes](#cfn-config-organizationconfigrule-organizationcustompolicyrulemetadata-organizationconfigruletriggertypes)" : {{[ String, ... ]}},
   "[PolicyText](#cfn-config-organizationconfigrule-organizationcustompolicyrulemetadata-policytext)" : {{String}},
   "[ResourceIdScope](#cfn-config-organizationconfigrule-organizationcustompolicyrulemetadata-resourceidscope)" : {{String}},
@@ -41,7 +40,6 @@ To declare this entity in your CloudFormation template, use the following syntax
     - String}}
   [Description](#cfn-config-organizationconfigrule-organizationcustompolicyrulemetadata-description): {{String}}
   [InputParameters](#cfn-config-organizationconfigrule-organizationcustompolicyrulemetadata-inputparameters): {{String}}
-  [MaximumExecutionFrequency](#cfn-config-organizationconfigrule-organizationcustompolicyrulemetadata-maximumexecutionfrequency): {{String}}
   [OrganizationConfigRuleTriggerTypes](#cfn-config-organizationconfigrule-organizationcustompolicyrulemetadata-organizationconfigruletriggertypes): {{
     - String}}
   [PolicyText](#cfn-config-organizationconfigrule-organizationcustompolicyrulemetadata-policytext): {{String}}
@@ -78,13 +76,6 @@ A string, in JSON format, that is passed to your organization AWS Config Custom 
 *Type*: String
 *Minimum*: `1`
 *Maximum*: `1024`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
-
-`MaximumExecutionFrequency`  <a name="cfn-config-organizationconfigrule-organizationcustompolicyrulemetadata-maximumexecutionfrequency"></a>
-The maximum frequency with which AWS Config runs evaluations for a rule. Your AWS Config Custom Policy rule is triggered when AWS Config delivers the configuration snapshot. For more information, see [ConfigSnapshotDeliveryProperties](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-deliverychannel.html#cfn-config-deliverychannel-configsnapshotdeliveryproperties).
-*Required*: No
-*Type*: String
-*Allowed values*: `One_Hour | Three_Hours | Six_Hours | Twelve_Hours | TwentyFour_Hours`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `OrganizationConfigRuleTriggerTypes`  <a name="cfn-config-organizationconfigrule-organizationcustompolicyrulemetadata-organizationconfigruletriggertypes"></a>

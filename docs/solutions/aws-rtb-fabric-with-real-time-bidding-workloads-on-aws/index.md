@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/aws-rtb-fabric-with-real-time-
 title: 'Guidance for AWS RTB Fabric with Real-Time Bidding Workloads on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/aws-rtb-fabric-with-real-time-bidding-workloads-on-aws/
 source: aws-documentation
-generated_on: 2026-09-29
+generated_on: 2026-09-30
 ---
 
 # Guidance for AWS RTB Fabric with Real-Time Bidding Workloads on AWS

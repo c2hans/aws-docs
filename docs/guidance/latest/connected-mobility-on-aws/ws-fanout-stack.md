@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aws/ws-fanout-stack.html
 ---
 
-# WebSocket telemetry fan-out (WsFanoutStack)
+# WebSocket telemetry fan-out
 <a name="ws-fanout-stack"></a>
 
 The WsFanoutStack deploys an ECS Fargate task that consumes per-fleet Kafka topics and pushes live telemetry updates to connected Fleet Manager UI clients over WebSocket.
