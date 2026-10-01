@@ -45,7 +45,7 @@ Some services contain additional example categories that show how to leverage li
 + [AWS IoT SiteWise](javascript_iotsitewise_code_examples.md)
 + [Kinesis](javascript_kinesis_code_examples.md)
 + [Lambda](javascript_lambda_code_examples.md)
-+ [Amazon Lex](javascript_lex_code_examples.md)
++ [Amazon Lex V2](javascript_lex_code_examples.md)
 + [Amazon Location](javascript_location_code_examples.md)
 + [AWS Marketplace Agreement API](javascript_marketplace-agreement_code_examples.md)
 + [Amazon MSK](javascript_kafka_code_examples.md)

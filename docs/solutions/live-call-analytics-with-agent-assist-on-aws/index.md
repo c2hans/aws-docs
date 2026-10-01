@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/live-call-analytics-with-agent
 title: 'Guidance for Live Call Analytics with Agent Assist on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/live-call-analytics-with-agent-assist-on-aws/
 source: aws-documentation
-generated_on: 2026-09-30
+generated_on: 2026-10-01
 ---
 
 # Guidance for Live Call Analytics with Agent Assist on AWS
@@ -30,7 +30,7 @@ These technical details feature an architecture diagram to illustrate how to eff
 1. **Step 3**: Transcription results are written in real time to Amazon Kinesis Data Streams. The transcript processor function reads the transcription stream and enriches the transcription and call metadata.
 1. **Step 4**: The transcript processor function reads the transcription stream and enriches the transcription and call metadata.
 1. **Step 5**: Amazon Comprehend applies sentiment analysis and enriches the metadata.
-1. **Step 6**: The transcription and metadata integrates with agent assistance services powered by Amazon Lex (NLU/NLP) and Amazon Kendra (ML search).
+1. **Step 6**: The transcription and metadata integrates with agent assistance services powered by Amazon Lex V2 (NLU/NLP) and Amazon Kendra (ML search).
 1. **Step 7**: The agent user interface is served through Amazon CloudFront and uses an AWS AppSync API to provide real-time agent assistance during a call.
 ## Deploy with confidence
 

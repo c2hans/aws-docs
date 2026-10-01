@@ -36,7 +36,7 @@ The following steps take you through the process of creating a new Amazon Manage
 
    ![Workspace details form showing name field with bigbankplatform, optional description field, and Tags section with owner key and user@amazon.com value.](https://docs.aws.amazon.com/grafana/latest/userguide/images/tagworkspace.png)
 
-1. Choose a **Grafana version** for the workspace. You can choose version 9, 10, or 12. To understand the differences between the versions, see [Differences between Grafana versions](version-differences.md).
+1. Choose a **Grafana version** for the workspace. You can choose version 9, 10, 12, or 13. To understand the differences between the versions, see [Differences between Grafana versions](version-differences.md).
 
 1. Choose **Next**.
 

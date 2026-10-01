@@ -6,14 +6,14 @@ source_url: https://docs.aws.amazon.com/solutions/ivr-migration-to-amazon-connec
 title: 'Guidance for IVR Migration to Amazon Connect Customer Customer Using Generative AI on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/ivr-migration-to-amazon-connect-using-generative-ai-on-aws/
 source: aws-documentation
-generated_on: 2026-09-30
+generated_on: 2026-10-01
 ---
 
 # Guidance for IVR Migration to Amazon Connect Customer Customer Using Generative AI on AWS
 
 ## Overview
 
-This Guidance demonstrates a streamlined approach to modernizing contact centers by migrating legacy interactive voice response (IVR) and chatbot systems to Amazon Lex and Amazon Connect Customer Customer. Through innovative generative AI tools and automated conversion utilities, the Guidance significantly reduces migration timeframes from months to weeks. The Guidance preserves existing business logic and customer experience while providing comprehensive testing capabilities. Specifically designed to support migrations from solutions like Nuance, this standardized methodology addresses common transition challenges. Organizations can achieve faster implementation, minimize migration risks, and seamlessly integrate with AWS services to transform their contact center operations.
+This Guidance demonstrates a streamlined approach to modernizing contact centers by migrating legacy interactive voice response (IVR) and chatbot systems to Amazon Lex V2 and Amazon Connect Customer Customer. Through innovative generative AI tools and automated conversion utilities, the Guidance significantly reduces migration timeframes from months to weeks. The Guidance preserves existing business logic and customer experience while providing comprehensive testing capabilities. Specifically designed to support migrations from solutions like Nuance, this standardized methodology addresses common transition challenges. Organizations can achieve faster implementation, minimize migration risks, and seamlessly integrate with AWS services to transform their contact center operations.
 
 ## Benefits
 
@@ -40,11 +40,11 @@ These technical details feature an architecture diagram to illustrate how to eff
 1. **Step 1**: Access the migration tool's React web application through Amazon CloudFront, secured by Amazon Cognito and AWS WAF.
 1. **Step 2**: Initiate bot creation by uploading source specification files through the web application, which triggers Amazon API Gateway and AWS Lambda.
 1. **Step 3**: Store migration metadata and configuration settings in Amazon DynamoDB. Store migration files and generated bot definitions in Amazon S3.
-1. **Step 4**: The migration API creates the bot and bot locale in Amazon Lex.
+1. **Step 4**: The migration API creates the bot and bot locale in Amazon Lex V2.
 1. **Step 5**: AWS Lambda sends a message to Amazon EventBridge, triggering AWS Step Functions workflows.
-1. **Step 6**: The schema generation workflow generates the Amazon Lex resource definition from the source specification file using Amazon Bedrock.
-1. **Step 7**: The test set generation workflow generates the test set from the source specification file using Amazon Bedrock and uploads it to Amazon Lex.
-1. **Step 8**: The schema validation workflow uses generated schema definitions to validate Amazon Lex resource creation. It implements a continuous improvement cycle by incorporating validation error messages and tests execution results to iteratively refine the schema specifications.
+1. **Step 6**: The schema generation workflow generates the Amazon Lex V2 resource definition from the source specification file using Amazon Bedrock.
+1. **Step 7**: The test set generation workflow generates the test set from the source specification file using Amazon Bedrock and uploads it to Amazon Lex V2.
+1. **Step 8**: The schema validation workflow uses generated schema definitions to validate Amazon Lex V2 resource creation. It implements a continuous improvement cycle by incorporating validation error messages and tests execution results to iteratively refine the schema specifications.
 1. **Step 9**: Live status updates are streamed using AWS AppSync Events real-time WebSocket connections, providing immediate visibility into each stage of the workflow's progression.
 1. **Step 10**: Access the migrated chatbot and IVR functionality through Amazon Connect Customer.
 ## Deploy with confidence

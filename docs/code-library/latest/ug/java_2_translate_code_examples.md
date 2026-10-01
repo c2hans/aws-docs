@@ -19,18 +19,18 @@ Each example includes a link to the complete source code, where you can find ins
 ## Scenarios
 <a name="scenarios"></a>
 
-### Building an Amazon Lex chatbot
+### Building an Amazon Lex V2 chatbot
 <a name="cross_LexChatbotLanguages_java_2_topic"></a>
 
 The following code example shows how to create a chatbot to engage your website visitors.
 
 **SDK for Java 2.x**
- Shows how to use the Amazon Lex API to create a Chatbot within a web application to engage your web site visitors.
+ Shows how to use the Amazon Lex V2 API to create a Chatbot within a web application to engage your web site visitors.
  For complete source code and instructions on how to set up and run, see the full example on [GitHub](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/usecases/creating_lex_chatbot).
 
 **Services used in this example**
 + Amazon Comprehend
-+ Amazon Lex
++ Amazon Lex V2
 + Amazon Translate
 
 ### Building an Amazon SNS application

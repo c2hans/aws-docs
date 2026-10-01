@@ -29,7 +29,7 @@ The following code examples show you how to use Amazon Translate with an AWS sof
     + [`TranslateText`](translate_example_translate_TranslateText_section.md)
 + [Scenarios](translate_code_examples_scenarios.md)
   + [Build an Amazon Transcribe streaming app](translate_example_cross_TranscriptionStreamingApp_section.md)
-  + [Building an Amazon Lex chatbot](translate_example_cross_LexChatbotLanguages_section.md)
+  + [Building an Amazon Lex V2 chatbot](translate_example_cross_LexChatbotLanguages_section.md)
   + [Building an Amazon SNS application](translate_example_cross_SnsPublishSubscription_section.md)
   + [Create an application to analyze customer feedback](translate_example_cross_FSA_section.md)
   + [Get started with translate jobs](translate_example_translate_Scenario_GettingStarted_section.md)

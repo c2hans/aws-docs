@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/mxnet/index.html
 title: 'Apache MXNet on AWS'
 canonical_url: https://docs.aws.amazon.com/mxnet/
 source: aws-documentation
-generated_on: 2026-09-30
+generated_on: 2026-10-01
 ---
 
 # Apache MXNet on AWS

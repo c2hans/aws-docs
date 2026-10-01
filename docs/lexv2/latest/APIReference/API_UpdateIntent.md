@@ -3838,7 +3838,7 @@ Type: [QInConnectIntentConfiguration](API_QInConnectIntentConfiguration.md) obje
 Required: No
 
  ** [qnAIntentConfiguration](#API_UpdateIntent_RequestSyntax) **   <a name="lexv2-UpdateIntent-request-qnAIntentConfiguration"></a>
-Specifies the configuration of the built-in `Amazon.QnAIntent`. The `AMAZON.QnAIntent` intent is called when Amazon Lex can't determine another intent to invoke. If you specify this field, you can't specify the `kendraConfiguration` field.
+Specifies the configuration of the built-in `Amazon.QnAIntent`. The `AMAZON.QnAIntent` intent is called when Amazon Lex V2 can't determine another intent to invoke. If you specify this field, you can't specify the `kendraConfiguration` field.
 Type: [QnAIntentConfiguration](API_QnAIntentConfiguration.md) object
 Required: No
 

@@ -21,9 +21,9 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-ava
 
 1. An Connect Customer contact flow initiates a Lambda function that fetches the customer attributes by using the DNIS number as a primary key. The Lambda function frees the DNIS number so that other calls can consume it.
 
-1. Connect Customer passes the customer attributes to Amazon Lex. Amazon Lex starts self-servicing the call.
+1. Connect Customer passes the customer attributes to Amazon Lex V2. Amazon Lex V2 starts self-servicing the call.
 
-1. Amazon Lex invokes a dialog code hook and fulfills the intent by using a Lambda function.
+1. Amazon Lex V2 invokes a dialog code hook and fulfills the intent by using a Lambda function.
 
 1. The Lambda function inserts all of the customer attributes during the call.
 

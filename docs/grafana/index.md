@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/grafana/index.html
 title: 'Amazon Managed Grafana Documentation'
 canonical_url: https://docs.aws.amazon.com/grafana/
 source: aws-documentation
-generated_on: 2026-09-30
+generated_on: 2026-10-01
 ---
 
 # Amazon Managed Grafana Documentation

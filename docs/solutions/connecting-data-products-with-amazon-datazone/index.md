@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/connecting-data-products-with-
 title: 'Guidance for Connecting Data Products with Amazon DataZone'
 canonical_url: https://docs.aws.amazon.com/solutions/connecting-data-products-with-amazon-datazone/
 source: aws-documentation
-generated_on: 2026-09-30
+generated_on: 2026-10-01
 ---
 
 # Guidance for Connecting Data Products with Amazon DataZone

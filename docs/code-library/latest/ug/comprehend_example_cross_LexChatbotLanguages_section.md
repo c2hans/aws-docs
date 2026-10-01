@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/comprehend_exampl
 
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
-# Create an Amazon Lex chatbot to engage your website visitors
+# Create an Amazon Lex V2 chatbot to engage your website visitors
 <a name="comprehend_example_cross_LexChatbotLanguages_section"></a>
 
 The following code examples show how to create a chatbot to engage your website visitors.
@@ -13,24 +13,24 @@ The following code examples show how to create a chatbot to engage your website 
 #### [ Java ]
 
 **SDK for Java 2.x**
- Shows how to use the Amazon Lex API to create a Chatbot within a web application to engage your web site visitors.
+ Shows how to use the Amazon Lex V2 API to create a Chatbot within a web application to engage your web site visitors.
  For complete source code and instructions on how to set up and run, see the full example on [GitHub](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/usecases/creating_lex_chatbot).
 
 **Services used in this example**
 + Amazon Comprehend
-+ Amazon Lex
++ Amazon Lex V2
 + Amazon Translate
 
 ------
 #### [ JavaScript ]
 
 **SDK for JavaScript (v3)**
- Shows how to use the Amazon Lex API to create a Chatbot within a web application to engage your web site visitors.
- For complete source code and instructions on how to set up and run, see the full example [Building an Amazon Lex chatbot](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/lex-bot-example.html) in the AWS SDK for JavaScript developer guide.
+ Shows how to use the Amazon Lex V2 API to create a Chatbot within a web application to engage your web site visitors.
+ For complete source code and instructions on how to set up and run, see the full example [Building an Amazon Lex V2 chatbot](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/lex-bot-example.html) in the AWS SDK for JavaScript developer guide.
 
 **Services used in this example**
 + Amazon Comprehend
-+ Amazon Lex
++ Amazon Lex V2
 + Amazon Translate
 
 ------

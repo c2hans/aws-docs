@@ -582,10 +582,10 @@ You might continue to see your data for `AWS::OpenSearch::Domain` under the exis
   - **Resource Type Value:** AWS::KinesisVideo::SignalingChannel / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::KinesisVideo::Stream / **Relationship:** NA / **Related Resource:** NA / **Notes:**
 
-## Amazon Lex
+## Amazon Lex V2
 <a name="amazonlex"></a>
 
-- **Amazon Lex**
+- **Amazon Lex V2**
   - **Resource Type Value:** AWS::Lex::BotAlias  / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::Lex::Bot / **Relationship:** NA / **Related Resource:** NA / **Notes:**
 
@@ -662,7 +662,7 @@ You might continue to see your data for `AWS::OpenSearch::Domain` under the exis
   - **Resource Type Value:** AWS::KafkaConnect::Connector / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::KafkaConnect::CustomPlugin / **Relationship:** NA / **Related Resource:** NA / **Notes:**
 
-## Amazon Lex
+## Amazon Lex V2
 <a name="amazonqbusiness"></a>
 
 - **Amazon Q Business**

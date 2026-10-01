@@ -50,7 +50,7 @@ When configured to do so, CloudTrail captures information about resource tags an
 + Amazon ElastiCache
 + Amazon Keyspaces (for Apache Cassandra)
 + Amazon Kinesis
-+ Amazon Lex
++ Amazon Lex V2
 + Amazon MemoryDB
 + Amazon S3
 + Amazon Security Lake

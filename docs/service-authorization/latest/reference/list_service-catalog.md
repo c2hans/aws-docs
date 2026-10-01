@@ -95,8 +95,10 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   CreatePortfolio  **
   - **SDK client:** servicecatalog
-  - **IAM action:**  [servicecatalog:CreatePortfolio](#list_service-catalog-action-CreatePortfolio)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
-  - **IAM action:**  [servicecatalog:TagResource](#list_service-catalog-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+  - **IAM action:**  [servicecatalog:CreatePortfolio](#list_service-catalog-action-CreatePortfolio)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
 
 - **   CreatePortfolioShare  **
   - **SDK client:** servicecatalog
@@ -108,7 +110,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   CreateProduct  **
   - **SDK client:** servicecatalog
   - **IAM action:**  [servicecatalog:CreateProduct](#list_service-catalog-action-CreateProduct)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
-  - **IAM action:**  [servicecatalog:TagResource](#list_service-catalog-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [codestar-connections:PassConnection](https://docs.aws.amazon.com/dtconsole/latest/userguide/security-iam.html#permissions-reference-connections-passconnection)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
 
 - **   CreateProvisionedProductPlan  **
@@ -592,9 +593,10 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   UpdatePortfolio  **
   - **SDK client:** servicecatalog
-  - **IAM action:**  [servicecatalog:TagResource](#list_service-catalog-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
-  - **IAM action:**  [servicecatalog:UntagResource](#list_service-catalog-action-UntagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
-  - **IAM action:**  [servicecatalog:UpdatePortfolio](#list_service-catalog-action-UpdatePortfolio)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [servicecatalog:UpdatePortfolio](#list_service-catalog-action-UpdatePortfolio)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
 
 - **   UpdatePortfolioShare  **
   - **SDK client:** servicecatalog
@@ -605,8 +607,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   UpdateProduct  **
   - **SDK client:** servicecatalog
-  - **IAM action:**  [servicecatalog:TagResource](#list_service-catalog-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
-  - **IAM action:**  [servicecatalog:UntagResource](#list_service-catalog-action-UntagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [servicecatalog:UpdateProduct](#list_service-catalog-action-UpdateProduct)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [codestar-connections:PassConnection](https://docs.aws.amazon.com/dtconsole/latest/userguide/security-iam.html#permissions-reference-connections-passconnection)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
 

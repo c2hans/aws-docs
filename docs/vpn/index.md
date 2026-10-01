@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/vpn/index.html
 title: 'AWS Virtual Private Network Documentation'
 canonical_url: https://docs.aws.amazon.com/vpn/
 source: aws-documentation
-generated_on: 2026-09-30
+generated_on: 2026-10-01
 ---
 
 # AWS Virtual Private Network Documentation

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/securityagent/index.html
 title: 'AWS Security Agent'
 canonical_url: https://docs.aws.amazon.com/securityagent/
 source: aws-documentation
-generated_on: 2026-09-30
+generated_on: 2026-10-01
 ---
 
 # AWS Security Agent

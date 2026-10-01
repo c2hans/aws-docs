@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/integrating-external-single-si
 title: 'Guidance for Integrating External Single Sign-On Providers with Amazon EKS'
 canonical_url: https://docs.aws.amazon.com/solutions/integrating-external-single-sign-on-providers-with-amazon-eks/
 source: aws-documentation
-generated_on: 2026-09-30
+generated_on: 2026-10-01
 ---
 
 # Guidance for Integrating External Single Sign-On Providers with Amazon EKS

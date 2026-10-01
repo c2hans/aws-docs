@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/retail-analytics-using-generat
 title: 'Guidance for Retail Analytics using Generative AI on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/retail-analytics-using-generative-ai-on-aws/
 source: aws-documentation
-generated_on: 2026-09-30
+generated_on: 2026-10-01
 ---
 
 # Guidance for Retail Analytics using Generative AI on AWS

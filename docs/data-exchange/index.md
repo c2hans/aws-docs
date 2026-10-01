@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/data-exchange/index.html
 title: 'AWS Data Exchange'
 canonical_url: https://docs.aws.amazon.com/data-exchange/
 source: aws-documentation
-generated_on: 2026-09-30
+generated_on: 2026-10-01
 ---
 
 # AWS Data Exchange

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com//solutions/generative-ai-application-bui
 title: 'Generative AI Application Builder on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/generative-ai-application-builder-on-aws/
 source: aws-documentation
-generated_on: 2026-09-30
+generated_on: 2026-10-01
 ---
 
 # Generative AI Application Builder on AWS

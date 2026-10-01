@@ -19,6 +19,7 @@ Some topics vary based on the version of Grafana that you have in your workspace
 + [Create your first dashboard](getting-started-grafanaui.md)
 + [Extend your workspace with plugins](grafana-plugins.md)
 + [Connect to data sources](AMG-data-sources.md)
++ [Working in Grafana version 13](using-grafana-v13.md)
 + [Working in Grafana version 12](using-grafana-v12.md)
 + [Working in Grafana version 10](using-grafana-v10.md)
 + [Working in Grafana version 9](using-grafana-v9.md)

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/CloudWatch-usin
 # Using the metric query editor
 <a name="CloudWatch-using-the-metric-query-editor"></a>
 
-The metric query editor allows you to build two types of queries - **Metric Search** and **Metric Query**. The **Metric Query** option queries data using CloudWatch Metrics Insights.
+The metric query editor allows you to build three types of queries - **Metric Search**, **Metric Query**, and **PromQL**. The **Metric Query** option queries data using CloudWatch Metrics Insights. The **PromQL** option queries CloudWatch metrics using Prometheus Query Language (PromQL). Use the query type drop-down in the upper middle of the query editor to choose which type you want to create.
 
 ## Common query editor fields
 <a name="metrics-insights-common-fields"></a>

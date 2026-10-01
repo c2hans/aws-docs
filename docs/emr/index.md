@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/emr/index.html
 title: 'Amazon EMR Documentation'
 canonical_url: https://docs.aws.amazon.com/emr/
 source: aws-documentation
-generated_on: 2026-09-30
+generated_on: 2026-10-01
 ---
 
 # Amazon EMR Documentation

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com//solutions/intelligent-application-moder
 title: 'Guidance for Intelligent Application Modernization Explorer on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/intelligent-application-modernization-explorer-on-aws/
 source: aws-documentation
-generated_on: 2026-09-30
+generated_on: 2026-10-01
 ---
 
 # Guidance for Intelligent Application Modernization Explorer on AWS

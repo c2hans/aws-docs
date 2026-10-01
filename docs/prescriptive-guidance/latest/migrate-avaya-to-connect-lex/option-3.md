@@ -11,17 +11,17 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-ava
 
 1. Connect Customer uses an AWS Lambda function to create a customer record in an Amazon DynamoDB database instance by using the UCID as a primary key.
 
-1. Connect Customer initiates Amazon Lex to start self-servicing the call.
+1. Connect Customer initiates Amazon Lex V2 to start self-servicing the call.
 
-1. Amazon Lex invokes a dialog code hook and fulfills the intent by using a Lambda function.
+1. Amazon Lex V2 invokes a dialog code hook and fulfills the intent by using a Lambda function.
 
 1. The Lambda function inserts all of the customer attributes during the call and starts the routing process back to Avaya as follows:
 
    1. Connect Customer makes an API call to Amazon API Gateway.
 
-   1. Amazon API Gateway starts a Lambda function that queries the Amazon DynamoDB database instance and fetches a DNIS outbound dialing number for Avaya. It blocks the DNIS number and passes the dialing number back to Amazon Lex.
+   1. Amazon API Gateway starts a Lambda function that queries the Amazon DynamoDB database instance and fetches a DNIS outbound dialing number for Avaya. It blocks the DNIS number and passes the dialing number back to Amazon Lex V2.
 
-   1. Amazon Lex passes the number back to Connect Customer in session attributes.
+   1. Amazon Lex V2 passes the number back to Connect Customer in session attributes.
 
 1. Connect Customer uses this number to dial back to Avaya.
 

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/omnichannel-contact-center-for
 title: 'Guidance for Omnichannel Contact Center for Banking on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/omnichannel-contact-center-for-banking-on-aws/
 source: aws-documentation
-generated_on: 2026-09-30
+generated_on: 2026-10-01
 ---
 
 # Guidance for Omnichannel Contact Center for Banking on AWS
@@ -25,7 +25,7 @@ This reference architecture helps you transform the customer experience using an
 
 1. **Step 1**: The customer notices a fraudulent transaction in their credit card statement and reaches out to the bank by their preferred communication channel (such as voice or chat).
 1. **Step 2**: Amazon Connect Customer provides high-quality omnichannel voice and interactive chat experiences to customers.
-1. **Step 3**: Amazon Connect Customer integrates with Amazon Lex, a fully managed artificial intelligence (AI) service designed to build conversational AI.
+1. **Step 3**: Amazon Connect Customer integrates with Amazon Lex V2, a fully managed artificial intelligence (AI) service designed to build conversational AI.
 1. **Step 4**: Amazon Connect Customer integrates with Amazon Polly, which converts text to speech to offer similar and seamless experiences across both voice and chat to the customers.
 1. **Step 5**: Amazon Connect Customer integrates with Amazon Connect Customer Voice ID for biometric authentication, and with Contact Lens for Amazon Connect Customer for sentiment analysis.
 1. **Step 6**: AWS Lambda integrates with the backend systems and APIs and helps customers find the information they need quickly. It also automates resolving some problems without the need for agent interaction.

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/video-on-demand-on-aws-foundat
 title: 'Guidance for Video on Demand on AWS Foundation'
 canonical_url: https://docs.aws.amazon.com/solutions/video-on-demand-on-aws-foundation/
 source: aws-documentation
-generated_on: 2026-09-30
+generated_on: 2026-10-01
 ---
 
 # Guidance for Video on Demand on AWS Foundation

@@ -13,4 +13,4 @@ Each AWS Private CA API operation has a quota that determines the number of time
 
 To see an up-to-date list of your AWS Private CA quotas, or to request a quota increase, log into your AWS account and visit the [Service Quotas](https://console.aws.amazon.com/servicequotas/) console.
 
-This document was last published on September 30, 2026.
+This document was last published on October 1, 2026.

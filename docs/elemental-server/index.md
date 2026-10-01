@@ -6,14 +6,14 @@ source_url: https://docs.aws.amazon.com/elemental-server/index.html
 title: 'AWS Elemental Server Documentation'
 canonical_url: https://docs.aws.amazon.com/elemental-server/
 source: aws-documentation
-generated_on: 2026-09-30
+generated_on: 2026-10-01
 ---
 
 # AWS Elemental Server Documentation
 
 AWS Elemental Server transcodes file-based video into a wide range of output formats for delivery to broadcast televisions and for internet streaming. Use AWS Elemental Conductor File to manage multiple AWS Elemental Server nodes.
 
-## Current version (2.18.5)
+## Current version (2.18.6)
 
 These documents support the most recent version of AWS Elemental Server and AWS Elemental Conductor File.
 
@@ -29,7 +29,7 @@ These documents support the most recent version of AWS Elemental Server and AWS 
 
 - **Release Notes**: Describes product fixes and enhancements for the most recent version of AWS Elemental Server and AWS Elemental Conductor File.
 
-[PDF](/elemental-onprem/latest/pdf/elemental_server_conductor_file_release_notes_2.18.5.pdf)
+[PDF](/elemental-onprem/latest/pdf/elemental_server_conductor_file_release_notes_2.18.6.pdf)
 
 - **Configuration Guide**: Describes how to configure settings and set up nodes.
 

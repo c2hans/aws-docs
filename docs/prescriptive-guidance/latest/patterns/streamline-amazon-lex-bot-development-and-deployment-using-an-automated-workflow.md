@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/streamline-amazon-lex-bot-development-and-deployment-using-an-automated-workflow.html
 ---
 
-# Streamline Amazon Lex bot development and deployment by using an automated workflow
+# Streamline Amazon Lex V2 bot development and deployment by using an automated workflow
 <a name="streamline-amazon-lex-bot-development-and-deployment-using-an-automated-workflow"></a>
 
 *Balaji Panneerselvam, Attila Dancso, Pavan Dusanapudi, Anand Jumnani, and James O'Hara, Amazon Web Services*
@@ -45,10 +45,10 @@ The following diagram displays the high-level architecture and key components of
 ![Workflow to automate development and deployment of Amazon Lex bots.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/3c7f9d16-9708-43c4-afa6-9d804d6b9dad/images/cdc73e82-a777-4e88-8bf8-a73c9bacb47f.png)
 
 Key components include the following:
-+ **Lex bot repo** – A Git repository that stores the IaC definitions for the Amazon Lex bots.
++ **Lex bot repo** – A Git repository that stores the IaC definitions for the Amazon Lex V2 bots.
 + **DevOps** – An AWS account dedicated to housing the CI/CD pipelines and related resources for the development and deployment process.
 + **Pipelines** – The AWS CodePipeline instances that automate various stages of the bot development and deployment lifecycle, such as creating a new bot, exporting a bot's definition, importing a bot definition, and deleting a bot.
-+ **Ticket bots and main bot** – The Amazon Lex bot resources, where the ticket bots are feature-specific bots developed by individual teams or developers and the main bot is the baseline bot that integrates all the features.
++ **Ticket bots and main bot** – The Amazon Lex V2 bot resources, where the ticket bots are feature-specific bots developed by individual teams or developers and the main bot is the baseline bot that integrates all the features.
 
 The architecture diagram illustrates the following workflow:
 
@@ -56,7 +56,7 @@ The architecture diagram illustrates the following workflow:
 
 1. **Create ticket bot** – When a new feature or change is required, a ticket bot is created. The ticket bot is essentially a copy or branch of the main bot that developers can work on without affecting the main version.
 
-1. **Export ticket bot** - After work on the ticket bot is complete, it's exported from the Amazon Lex service. Then, the branch that contains the ticket bot is rebased from the main branch. This step ensures that any changes made to the main bot while the ticket bot was in development are incorporated, reducing potential conflicts.
+1. **Export ticket bot** - After work on the ticket bot is complete, it's exported from the Amazon Lex V2 service. Then, the branch that contains the ticket bot is rebased from the main branch. This step ensures that any changes made to the main bot while the ticket bot was in development are incorporated, reducing potential conflicts.
 
 1. **Import rebased ticket bot and validate** – The rebased ticket bot is imported back into the development environment and validated to ensure it functions correctly with the latest changes from the main branch. If validation is successful, a pull request (PR) is created to merge the ticket bot changes into the main branch.
 
@@ -88,7 +88,7 @@ By using AWS CodePipeline and other AWS services, the automated workflow can sca
 + [AWS Command Line Interface (AWS CLI)](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) is an open source tool that helps you interact withAWS services through commands in your command line shell.
 + [AWS Identity and Access Management (IAM)](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html) helps you securely manage access to your AWS resources by controlling who is authenticated and authorized to use them.
 + [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) is a compute service that helps you run code without needing to provision or manage servers. It runs your code only when needed and scales automatically, so you pay only for the compute time that you use.
-+ [Amazon Lex V2](https://docs.aws.amazon.com/lexv2/latest/dg/what-is.html) is an AWS service for building conversational interfaces (bots) for applications using voice and text.
++ [Amazon Lex V2 V2](https://docs.aws.amazon.com/lexv2/latest/dg/what-is.html) is an AWS service for building conversational interfaces (bots) for applications using voice and text.
 + [AWS SDK for Python (Boto3)](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html) is a software development kit that helps you integrate your Python application, library, or script with AWS services.
 
 **Other tools**
@@ -129,16 +129,16 @@ The code for this pattern is available in the GitHub [management-framework-sampl
 ## Epics
 <a name="streamline-amazon-lex-bot-development-and-deployment-using-an-automated-workflow-epics"></a>
 
-### Set up IaC for Amazon Lex bot management
+### Set up IaC for Amazon Lex V2 bot management
 <a name="set-up-iac-for-lex2-bot-management"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Set up the local CDK environment. | 1. To clone this pattern’s repo and navigate to the `prerequisite` directory, run the following command:<pre>git clone https://github.com/aws-samples/management-framework-sample-for-amazon-lex.git<br /><br />cd management-framework-sample-for-amazon-lex</pre><br />2. To install and activate the Python virtual environment, run the following command that installs the CDK’s dependencies locally in the project folder, instead of globally:<pre>pip install virtualenv<br />python<version> -m venv .venv<br />source .venv/bin/activate<br />python -m pip install -r requirements.txt</pre> | AWS DevOps |
 | Create a cross-account role in the `devops` environment. | The `devops` account is responsible for hosting and managing the CI/CD pipelines. To enable the CI/CD pipelines to interact with the `dev` and `prod` environments, run the following commands to create a cross-account role in the `devops` account.<pre>cdk bootstrap --profile=devops<br /><br />cdk deploy LexMgmtDevopsRoleStack -c dev-account-id=2222222222222 -c prod-account-id=333333333333 --profile=devops</pre> | AWS DevOps |
-| Create a cross-account role in the `dev` environment. | Create an IAM role in the `dev` account with the necessary permissions to allow the `devops` account to assume this role. The CI/CD pipeline uses this role to perform actions in the `dev` account, such as deploying and managing Amazon Lex bot resources.<br />To create the IAM role, run the following commands:<pre>cdk bootstrap --profile=dev<br /><br />cdk deploy LexMgmtCrossaccountRoleStack -c devops-account-id=1111111111111 --profile=dev</pre> | AWS DevOps |
-| Create a cross-account role in the `prod` environment. | Create an IAM role in the `prod` account with the necessary permissions to allow the `devops` account to assume this role. The CI/CD pipeline uses this role to perform actions in the `prod` account, such as deploying and managing Amazon Lex bot resources.<pre>cdk bootstrap --profile=prod<br /><br />cdk deploy LexMgmtCrossaccountRoleStack -c devops-account-id=1111111111111 --profile=prod</pre> | AWS DevOps |
-| Create pipelines in the `devops` environment. | To manage the development workflow for Amazon Lex bots, run the following command to set up pipelines in the `devops` environment . <pre>cdk deploy LexMgmtWorkflowStack -c devops-account-id=1111111111111 -c dev-account-id=2222222222222 -c prod-account-id=333333333333 --profile=devops</pre> | AWS DevOps |
+| Create a cross-account role in the `dev` environment. | Create an IAM role in the `dev` account with the necessary permissions to allow the `devops` account to assume this role. The CI/CD pipeline uses this role to perform actions in the `dev` account, such as deploying and managing Amazon Lex V2 bot resources.<br />To create the IAM role, run the following commands:<pre>cdk bootstrap --profile=dev<br /><br />cdk deploy LexMgmtCrossaccountRoleStack -c devops-account-id=1111111111111 --profile=dev</pre> | AWS DevOps |
+| Create a cross-account role in the `prod` environment. | Create an IAM role in the `prod` account with the necessary permissions to allow the `devops` account to assume this role. The CI/CD pipeline uses this role to perform actions in the `prod` account, such as deploying and managing Amazon Lex V2 bot resources.<pre>cdk bootstrap --profile=prod<br /><br />cdk deploy LexMgmtCrossaccountRoleStack -c devops-account-id=1111111111111 --profile=prod</pre> | AWS DevOps |
+| Create pipelines in the `devops` environment. | To manage the development workflow for Amazon Lex V2 bots, run the following command to set up pipelines in the `devops` environment . <pre>cdk deploy LexMgmtWorkflowStack -c devops-account-id=1111111111111 -c dev-account-id=2222222222222 -c prod-account-id=333333333333 --profile=devops</pre> | AWS DevOps |
 
 ### Establish the baseline for the main bot
 <a name="establish-the-baseline-for-the-main-bot"></a>
@@ -153,11 +153,11 @@ The code for this pattern is available in the GitHub [management-framework-sampl
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Create the ticket bot to develop and test a feature. | `TicketBot` is a new bot instance that’s imported from the existing main bot definition in the feature branch. This approach ensures that the new bot has all the current functionality and configurations from the main bot.<br />To define the initial version of the ticket bot, trigger the `CreateTicketBotPipeline` pipeline.<br />The pipeline creates a new feature branch in the version control system and creates a new ticket bot instance based on the main bot. | Lex Bot Developer |
-| Develop and test the ticket bot feature.  | To develop and test the feature, sign in to the AWS Management Console and open the Amazon Lex console at [https://console.aws.amazon.com/lex/](https://console.aws.amazon.com/lex/). For more information, see [Testing a bot using the console](https://docs.aws.amazon.com/lexv2/latest/dg/test-bot.html) in the Amazon Lex documentation.<br />With the `TicketBot` instance, you can now add, modify, or extend the bot's functionality to implement the new feature. For example, you can create or modify intents, utterances, slots, and dialog flows. For more information, see [Adding intents](https://docs.aws.amazon.com/lexv2/latest/dg/add-intents.html) in the Amazon Lex documentation. | Lex Bot Developer |
+| Develop and test the ticket bot feature.  | To develop and test the feature, sign in to the AWS Management Console and open the Amazon Lex V2 console at [https://console.aws.amazon.com/lex/](https://console.aws.amazon.com/lex/). For more information, see [Testing a bot using the console](https://docs.aws.amazon.com/lexv2/latest/dg/test-bot.html) in the Amazon Lex V2 documentation.<br />With the `TicketBot` instance, you can now add, modify, or extend the bot's functionality to implement the new feature. For example, you can create or modify intents, utterances, slots, and dialog flows. For more information, see [Adding intents](https://docs.aws.amazon.com/lexv2/latest/dg/add-intents.html) in the Amazon Lex V2 documentation. | Lex Bot Developer |
 | Export the ticket bot definition. | The exported bot definition is essentially a representation of the bot's configuration and functionality in a JSON format.<br />To export the ticket bot definition, trigger the `ExportTicketBotPipeline` pipeline.<br />The pipeline exports the ticket bot definition as .json files and stores the ticket bot code in a feature branch in the version control system. | Lex Bot Developer |
 | Rebase the feature branch from the latest main branch. | During the development of a new feature, the main branch might have received other changes from different developers or teams. <br />To incorporate these changes into the feature branch, perform a Git `rebase` operation. This operation essentially replays the commits from the feature branch on top of the latest commits from the main branch, ensuring that the feature branch includes all the latest changes | Lex Bot Developer |
 | Import and validate the rebased ticket bot. | After you rebase the feature branch, you must import it into the ticket bot instance. This import updates the existing ticket bot with the latest changes from the rebased branch.<br />To import the rebased ticket bot, trigger the `ImportTicketBotPipeline` pipeline.<br />The pipeline imports the ticket bot definition .json files in the feature branch in the version control system into the `TicketBot` instance. | Lex Bot Developer |
-| Validate the rebased bot definition. | After you import the rebased bot definition, it's crucial to validate its functionality. You want to make sure that the new feature works as expected and doesn't conflict with existing functionality. <br />This validation typically involves testing the bot with various input scenarios, checking the responses, and verifying that the bot behaves as intended. You can perform validation in either of the following ways:+ Test the bot manually by using the Amazon Lex console.<br />+ Use an automated approach by using testing frameworks and tools that can simulate user interactions and assert expected responses. | Lex Bot Developer |
+| Validate the rebased bot definition. | After you import the rebased bot definition, it's crucial to validate its functionality. You want to make sure that the new feature works as expected and doesn't conflict with existing functionality. <br />This validation typically involves testing the bot with various input scenarios, checking the responses, and verifying that the bot behaves as intended. You can perform validation in either of the following ways:+ Test the bot manually by using the Amazon Lex V2 console.<br />+ Use an automated approach by using testing frameworks and tools that can simulate user interactions and assert expected responses. | Lex Bot Developer |
 | Merge the feature branch into the main branch. | After you develop and test the new feature in the isolated `TicketBot` instance, do the following:1. Commit the changes to the corresponding feature branch in the version control system.<br />2. To merge the feature branch into the main branch, create a pull request (PR). This PR serves as a request to review and incorporate the changes into the main codebase. | Lex Bot Developer, Repository Adminstrator |
 | Delete the feature branch and the ticket bot.  | After a feature branch is merged successfully into the main branch, delete the feature branch and the ticket bot from the source code repo. <br />To delete the feature branch and the ticket bot, trigger the `DeleteTicketBotPipeline` pipeline.<br />The pipeline removes temporary bot resources that were created during the development process (for example, the ticket bot). This action helps to maintain a clean repo and prevent confusion or conflicts with future feature branches.  | Lex Bot Developer |
 
@@ -178,6 +178,6 @@ The code for this pattern is available in the GitHub [management-framework-sampl
 
 ## Related resources
 <a name="streamline-amazon-lex-bot-development-and-deployment-using-an-automated-workflow-resources"></a>
-+ [Importing bots in Amazon Lex V2](https://docs.aws.amazon.com/lexv2/latest/dg/import.html)
++ [Importing bots in Amazon Lex V2 V2](https://docs.aws.amazon.com/lexv2/latest/dg/import.html)
 + [Start a pipeline in CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-about-starting.html)
-+ [Working with Amazon Lex V2 bots](https://docs.aws.amazon.com/lexv2/latest/dg/building-bots.html)
++ [Working with Amazon Lex V2 V2 bots](https://docs.aws.amazon.com/lexv2/latest/dg/building-bots.html)

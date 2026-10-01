@@ -2,12 +2,12 @@
 source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-avaya-to-connect-lex/introduction.html
 ---
 
-# Migrating an on-premises Avaya contact center to Amazon Connect Customer and Amazon Lex
+# Migrating an on-premises Avaya contact center to Amazon Connect Customer and Amazon Lex V2
 <a name="introduction"></a>
 
 *Dipkumar Mehta, Saqib M, and So Young Yoon, Amazon Web Services*
 
-Enterprises and organizations often deploy omni-channel contact centers so that they can provide simple mechanisms for their users to access customer support. As their customer base grows, they need to scale their contact centers to resolve an increasing volume of user queries. With Amazon Connect Customer, enterprises can seamlessly scale their contact center operations and efficiently handle user queries. In addition, Connect Customer is natively integrated with Amazon Lex. This helps you build highly engaging and lifelike conversational experiences for [interactive voice responses](https://aws.amazon.com/what-is/interactive-voice-response/) (IVRs).
+Enterprises and organizations often deploy omni-channel contact centers so that they can provide simple mechanisms for their users to access customer support. As their customer base grows, they need to scale their contact centers to resolve an increasing volume of user queries. With Amazon Connect Customer, enterprises can seamlessly scale their contact center operations and efficiently handle user queries. In addition, Connect Customer is natively integrated with Amazon Lex V2. This helps you build highly engaging and lifelike conversational experiences for [interactive voice responses](https://aws.amazon.com/what-is/interactive-voice-response/) (IVRs).
 
 As part of contact center modernization, organizations often take a multi-phased approach as they transition their contact center operations to the cloud. Today, contact center platforms support many components, such as telephony integrations, IVRs, agent desktops, and call analytics. This seamlessly scales self-service use-cases while preserving other contact center operations.
 

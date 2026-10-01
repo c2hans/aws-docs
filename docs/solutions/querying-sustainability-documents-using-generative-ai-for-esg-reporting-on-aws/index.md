@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/querying-sustainability-docume
 title: 'Guidance for Querying Sustainability Documents Using Generative AI for ESG Reporting on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/querying-sustainability-documents-using-generative-ai-for-esg-reporting-on-aws/
 source: aws-documentation
-generated_on: 2026-09-30
+generated_on: 2026-10-01
 ---
 
 # Guidance for Querying Sustainability Documents Using Generative AI for ESG Reporting on AWS
@@ -23,7 +23,7 @@ This architecture diagram demonstrates how to implement a Retrieval-Augmented Ge
 
 ![Architecture diagram](/images/solutions/querying-sustainability-documents-using-generative-ai-for-esg-reporting-on-aws/images/querying-sustainability-documents-using-generative-ai-for-esg-reporting-on-aws-1.png)
 
-1. **Step 1**: A user asks questions and receives generated responses through various frontend integration options. For example, Amazon Lex for conversational chatbots, AWS Amplify for custom frontend web applications, and Amazon API Gateway for processing user requests with backend services.
+1. **Step 1**: A user asks questions and receives generated responses through various frontend integration options. For example, Amazon Lex V2 for conversational chatbots, AWS Amplify for custom frontend web applications, and Amazon API Gateway for processing user requests with backend services.
 1. **Step 2**: AWS Lambda acts as a backend response orchestrator.
 1. **Step 3**: Lambda stores all inputted questions and generated responses into Amazon DynamoDB as conversational memory to facilitate future user requests.
 1. **Step 4**: Amazon Kendra performs semantic searches on your sustainability knowledge base. This consists of objects related to sustainability frameworks, such as the Corporate Sustainability Reporting Directive (CSRD) and the International Sustainability Standards Board (ISSB). It also consists of corporate reports, such as the Carbon Disclosure Project (CDP) questionnaires and the Form 10-K. The knowledge base can be stored on Amazon Simple Storage Service (Amazon S3) or third-party repositories like Dropbox and Confluence. It can also be accessed with public or internal websites over HTTPS using an Amazon Kendra Web Crawler.

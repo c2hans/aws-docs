@@ -15,6 +15,9 @@ Azure DevOps integration serves multiple purposes:
 
 AWS Security Agent authenticates to Azure DevOps as a Microsoft Entra service principal (a non-human identity managed in your Microsoft Entra tenant). You authorize the AWS Security Agent application, which appears as **AWS Continuum for Azure DevOps** in Microsoft Entra and Azure DevOps, in your Microsoft Entra tenant, add its service principal to your Azure DevOps organization, and grant it the Azure DevOps permissions the agent needs.
 
+**Note**
+AWS Security Agent supports Git repositories in Azure DevOps only. Team Foundation Version Control (TFVC) repositories are not supported.
+
 ## How Azure DevOps integration works
 <a name="_how_azure_devops_integration_works"></a>
 

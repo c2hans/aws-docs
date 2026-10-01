@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/automating-networking-monitori
 title: 'Guidance for Automating Networking Monitoring and Alerting on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/automating-networking-monitoring-and-alerting-on-aws/
 source: aws-documentation
-generated_on: 2026-09-30
+generated_on: 2026-10-01
 ---
 
 # Guidance for Automating Networking Monitoring and Alerting on AWS

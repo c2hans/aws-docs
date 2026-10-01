@@ -13,4 +13,4 @@ To learn more about AWS Clean Rooms concepts, procedures, and best practices, se
 
 To learn more about SQL commands, functions, and conditions supported in AWS Clean Rooms, see the [AWS Clean Rooms SQL Reference](https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/sql-reference.html).
 
-This document was last published on September 30, 2026.
+This document was last published on October 1, 2026.

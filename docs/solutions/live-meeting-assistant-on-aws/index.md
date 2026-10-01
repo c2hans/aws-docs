@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/live-meeting-assistant-on-aws/
 title: 'Guidance for Live Meeting Assistant on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/live-meeting-assistant-on-aws/
 source: aws-documentation
-generated_on: 2026-09-30
+generated_on: 2026-10-01
 ---
 
 # Guidance for Live Meeting Assistant on AWS
@@ -33,7 +33,7 @@ These technical details feature an architecture diagram to illustrate how to eff
 1. **Step 6**: Amazon Transcribe transcribes the audio and stores the call recording in Amazon S3. Authorization occurs using Amazon Cognito. AWS Fargate clusters process the audio into a stream in Kinesis Data Streams.
 1. **Step 7**: The LMA solution supports retrieval-augmented generation (RAG) by enabling users to create a new (or link to an existing) Knowledge Base in Amazon Bedrock. Additional data sources, like those indexed in Amazon Kendra, can be configured in the open-source QnABot on AWS solution as a fallback RAG index.
 1. **Step 8**: Amazon Bedrock provides API access to LLMs to generate call summaries.
-1. **Step 9**: The LMA solution deploys open-source QnABot on AWS as a nested AWS CloudFormation stack for answers based on FAQs and as an orchestrator for request routing to the appropriate AI service. LMA admins interact with the chatbot using Amazon Lex through the LMA web app.
+1. **Step 9**: The LMA solution deploys open-source QnABot on AWS as a nested AWS CloudFormation stack for answers based on FAQs and as an orchestrator for request routing to the appropriate AI service. LMA admins interact with the chatbot using Amazon Lex V2 through the LMA web app.
 ## Well-Architected Pillars
 
 The architecture diagram above is an example of a Solution created with Well-Architected best practices in mind. To be fully Well-Architected, you should follow as many Well-Architected best practices as possible.

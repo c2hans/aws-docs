@@ -44,7 +44,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/se
 + [Query Amazon DynamoDB tables with SQL by using Amazon Athena](query-amazon-dynamodb-tables-sql-amazon-athena.md)
 + [Send custom attributes to Amazon Cognito and inject them into tokens](send-custom-attributes-cognito.md)
 + [Serve static content in an Amazon S3 bucket through a VPC by using Amazon CloudFront](serve-static-content-in-an-amazon-s3-bucket-through-a-vpc-by-using-amazon-cloudfront.md)
-+ [Streamline Amazon Lex bot development and deployment by using an automated workflow](streamline-amazon-lex-bot-development-and-deployment-using-an-automated-workflow.md)
++ [Streamline Amazon Lex V2 bot development and deployment by using an automated workflow](streamline-amazon-lex-bot-development-and-deployment-using-an-automated-workflow.md)
 + [Structure a Python project in hexagonal architecture using AWS Lambda](structure-a-python-project-in-hexagonal-architecture-using-aws-lambda.md)
 + [Translate natural language into query DSL for OpenSearch and Elasticsearch queries](translate-natural-language-query-dsl-opensearch-elasticsearch.md)
 + [Unload data from an Amazon Redshift cluster across accounts to Amazon S3](unload-data-from-amazon-redshift-cross-accounts-to-amazon-s3.md)

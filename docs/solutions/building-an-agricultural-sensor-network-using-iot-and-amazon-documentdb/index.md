@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/building-an-agricultural-senso
 title: 'Guidance for Building an Agricultural Sensor Network using IoT and Amazon DocumentDB'
 canonical_url: https://docs.aws.amazon.com/solutions/building-an-agricultural-sensor-network-using-iot-and-amazon-documentdb/
 source: aws-documentation
-generated_on: 2026-09-30
+generated_on: 2026-10-01
 ---
 
 # Guidance for Building an Agricultural Sensor Network using IoT and Amazon DocumentDB

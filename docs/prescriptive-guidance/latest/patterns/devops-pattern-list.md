@@ -60,7 +60,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/de
 + [Set up centralized logging at enterprise scale by using Terraform](set-up-centralized-logging-at-enterprise-scale-by-using-terraform.md)
 + [Set up end-to-end encryption for applications on Amazon EKS using cert-manager and Let's Encrypt](set-up-end-to-end-encryption-for-applications-on-amazon-eks-using-cert-manager-and-let-s-encrypt.md)
 + [Simplify Amazon EKS multi-tenant application deployment by using Flux](simplify-amazon-eks-multi-tenant-application-deployment-by-using-flux.md)
-+ [Streamline Amazon Lex bot development and deployment by using an automated workflow](streamline-amazon-lex-bot-development-and-deployment-using-an-automated-workflow.md)
++ [Streamline Amazon Lex V2 bot development and deployment by using an automated workflow](streamline-amazon-lex-bot-development-and-deployment-using-an-automated-workflow.md)
 + [Coordinate resource dependency and task execution by using the AWS Fargate WaitCondition hook construct](use-the-aws-fargate-waitcondition-hook-construct.md)
 + [Use third-party Git source repositories in AWS CodePipeline](use-third-party-git-source-repositories-in-aws-codepipeline.md)
 + [Create a CI/CD pipeline to validate Terraform configurations by using AWS CodePipeline](create-a-ci-cd-pipeline-to-validate-terraform-configurations-by-using-aws-codepipeline.md)

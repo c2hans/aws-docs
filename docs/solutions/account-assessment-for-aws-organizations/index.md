@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com//solutions/account-assessment-for-aws-or
 title: 'Guidance for Account Assessment for AWS Organizations'
 canonical_url: https://docs.aws.amazon.com/solutions/account-assessment-for-aws-organizations/
 source: aws-documentation
-generated_on: 2026-09-30
+generated_on: 2026-10-01
 ---
 
 # Guidance for Account Assessment for AWS Organizations

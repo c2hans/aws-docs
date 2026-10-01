@@ -40,7 +40,7 @@ The following code examples show you how to use Amazon Comprehend with an AWS so
     + [`StartTopicsDetectionJob`](comprehend_example_comprehend_StartTopicsDetectionJob_section.md)
 + [Scenarios](comprehend_code_examples_scenarios.md)
   + [Build an Amazon Transcribe streaming app](comprehend_example_cross_TranscriptionStreamingApp_section.md)
-  + [Building an Amazon Lex chatbot](comprehend_example_cross_LexChatbotLanguages_section.md)
+  + [Building an Amazon Lex V2 chatbot](comprehend_example_cross_LexChatbotLanguages_section.md)
   + [Create a messaging application](comprehend_example_cross_SQSMessageApp_section.md)
   + [Create an application to analyze customer feedback](comprehend_example_cross_FSA_section.md)
   + [Detect document elements](comprehend_example_comprehend_Usage_DetectApis_section.md)

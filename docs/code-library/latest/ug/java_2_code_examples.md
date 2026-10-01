@@ -65,7 +65,7 @@ Some services contain additional example categories that show how to leverage li
 + [Kinesis](java_2_kinesis_code_examples.md)
 + [AWS KMS](java_2_kms_code_examples.md)
 + [Lambda](java_2_lambda_code_examples.md)
-+ [Amazon Lex](java_2_lex_code_examples.md)
++ [Amazon Lex V2](java_2_lex_code_examples.md)
 + [Amazon Location](java_2_location_code_examples.md)
 + [Location Service Places](java_2_geo-places_code_examples.md)
 + [AWS Marketplace Catalog API](java_2_marketplace-catalog_code_examples.md)

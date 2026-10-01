@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/index.html
 title: 'AWS Toolkit for JetBrains Documentation'
 canonical_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/
 source: aws-documentation
-generated_on: 2026-09-30
+generated_on: 2026-10-01
 ---
 
 # AWS Toolkit for JetBrains Documentation

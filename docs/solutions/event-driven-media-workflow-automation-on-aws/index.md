@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/event-driven-media-workflow-au
 title: 'Guidance for Event-Driven Media Workflow Automation on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/event-driven-media-workflow-automation-on-aws/
 source: aws-documentation
-generated_on: 2026-09-30
+generated_on: 2026-10-01
 ---
 
 # Guidance for Event-Driven Media Workflow Automation on AWS

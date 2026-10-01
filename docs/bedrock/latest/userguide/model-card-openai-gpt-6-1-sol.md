@@ -93,11 +93,11 @@ For JSON Schema output with the Converse API, you must set `additionalModelReque
 ## Pricing
 <a name="model-card-openai-gpt-6-1-sol-pricing"></a>
 
-All prices are in USD per 1 million tokens for the Standard tier. Global base rates match [OpenAI first-party Standard pricing](https://developers.openai.com/api/docs/pricing).
+All prices are in USD per 1 million tokens for the Standard tier. Global CRIS rates match [OpenAI first-party Standard pricing](https://developers.openai.com/api/docs/pricing).
 
 Commercial In-Region and US geographic cross-Region inference (US CRIS) prices include a 10% premium over the global base rates. You do not need to add this premium.
 
-The global base rate is a pricing reference and does not imply availability of a global inference profile. Explicit prompt caching is not supported for this Bedrock model; the cache pricing dimensions do not change that feature support.
+Explicit prompt caching is not supported for this Bedrock model; the cache pricing dimensions do not change that feature support.
 
 Long-context rates apply to the full request when input exceeds 272,000 tokens.
 
@@ -110,7 +110,7 @@ Long-context rates apply to the full request when input exceeds 272,000 tokens.
 | --- | --- | --- | --- | --- |
 | Regional (Mantle in IAD) | $2.20 | $2.75 | $0.11 | $11.00 |
 | US CRIS (bedrock-runtime) | $2.20 | $2.75 | $0.11 | $11.00 |
-| Global base rate (OpenAI first-party) | $2.00 | $2.50 | $0.10 | $10.00 |
+| Global CRIS (bedrock-runtime) | $2.00 | $2.50 | $0.10 | $10.00 |
 
 ### Commercial Regions — long context (more than 272K input tokens)
 <a name="model-card-openai-gpt-6-1-sol-pricing-long"></a>
@@ -119,7 +119,7 @@ Long-context rates apply to the full request when input exceeds 272,000 tokens.
 | --- | --- | --- | --- | --- |
 | Regional (Mantle in IAD) | $4.40 | $5.50 | $0.22 | $16.50 |
 | US CRIS (bedrock-runtime) | $4.40 | $5.50 | $0.22 | $16.50 |
-| Global base rate (OpenAI first-party) | $4.00 | $5.00 | $0.20 | $15.00 |
+| Global CRIS (bedrock-runtime) | $4.00 | $5.00 | $0.20 | $15.00 |
 
 ## Programmatic Access
 <a name="model-card-openai-gpt-6-1-sol-programmatic-access"></a>
@@ -129,9 +129,9 @@ To call this model from code, use the following model IDs and endpoint URLs. For
 | **Endpoint** | **Model ID** | **In-Region endpoint URL** | **Geo inference ID** | **Global inference ID** |
 | --- | --- | --- | --- | --- |
 | bedrock-mantle | openai.gpt-6.1-sol | https://bedrock-mantle.us-east-1.api.aws/openai/v1 | Not supported | Not supported |
-| bedrock-runtime | openai.gpt-6.1-sol | Not supported | us.openai.gpt-6.1-sol | Not supported |
+| bedrock-runtime | openai.gpt-6.1-sol | Not supported | us.openai.gpt-6.1-sol | global.openai.gpt-6.1-sol |
 
-*The `bedrock-mantle` endpoint is available only in `us-east-1` (N. Virginia, IAD). On `bedrock-runtime`, use `us.openai.gpt-6.1-sol` for US geographic cross-Region inference. Direct in-Region invocation and a global inference profile are not offered for this launch. Use an enabled source Region for the US inference profile; see [Route model inference requests across AWS Regions with cross-Region inference](cross-region-inference.md).*
+*For in-Region access, use `bedrock-mantle` in `us-east-1` (N. Virginia, IAD). On `bedrock-runtime`, use `us.openai.gpt-6.1-sol` for US geographic cross-Region inference or `global.openai.gpt-6.1-sol` for global cross-Region inference. Direct in-Region invocation is not supported on `bedrock-runtime`. Use a source Region enabled for the profile you choose; see [Route model inference requests across AWS Regions with cross-Region inference](cross-region-inference.md).*
 
 ## Service Tiers
 <a name="model-card-openai-gpt-6-1-sol-tiers"></a>
@@ -147,7 +147,7 @@ Amazon Bedrock offers several service tiers for different workloads. **Standard*
 
 ***Regional availability at a glance***
 
-Mantle access is available in US East (N. Virginia), `us-east-1` (IAD). Runtime access uses the US geographic inference profile. For more information, see [Regional availability by models](models-region-compatibility.md).
+Mantle access is available in US East (N. Virginia), `us-east-1` (IAD). Runtime access supports both US geographic and global inference profiles. For more information, see [Regional availability by models](models-region-compatibility.md).
 
 **Availability using the `bedrock-mantle` endpoint**
 
@@ -159,7 +159,7 @@ Mantle access is available in US East (N. Virginia), `us-east-1` (IAD). Runtime 
 
 | **Scope** | **In-Region** | **Geo** | **Global** |
 | --- | --- | --- | --- |
-| US geographic inference | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
+| US geographic and global inference | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
 
 ## Quotas and Limits
 <a name="model-card-openai-gpt-6-1-sol-quotas"></a>
@@ -205,7 +205,7 @@ export OPENAI_BASE_URL="https://bedrock-runtime.us-east-1.amazonaws.com/openai/v
 ------
 
 **Note**
-On `bedrock-runtime`, use the US cross-Region inference profile as the model: `us.openai.gpt-6.1-sol`. Direct in-Region invocation and a global inference profile are not offered for this launch.
+On `bedrock-runtime`, set the model to `us.openai.gpt-6.1-sol` for US CRIS or `global.openai.gpt-6.1-sol` for Global CRIS. Direct in-Region invocation is not supported on this endpoint.
 
 ### Step 5 - Run your first inference request
 <a name="model-card-openai-gpt-6-1-sol-sample-code-request"></a>
@@ -253,7 +253,7 @@ print(response.choices[0].message.content)
 #### bedrock-runtime: OpenAI SDK
 <a name="model-card-openai-gpt-6-1-sol-sample-runtime"></a>
 
-Use the settings from [Step 4 - Set environment variables](#model-card-openai-gpt-6-1-sol-sample-code-environment). Choose the `bedrock-runtime` tab. Send your request with the Responses API.
+Use the settings from [Step 4 - Set environment variables](#model-card-openai-gpt-6-1-sol-sample-code-environment). Choose the `bedrock-runtime` tab. Send your request with the Responses API. The example uses the US CRIS profile. For Global CRIS, replace `us.openai.gpt-6.1-sol` with `global.openai.gpt-6.1-sol`.
 
 ------
 #### [ Responses API ]

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/decision-guides/index.html
 title: 'AWS Decision Guides'
 canonical_url: https://docs.aws.amazon.com/decision-guides/
 source: aws-documentation
-generated_on: 2026-09-30
+generated_on: 2026-10-01
 ---
 
 # AWS Decision Guides
@@ -115,4 +115,4 @@ Choose the right AWS storage or database service for your data. AWS offers block
 
 - [Getting Started Resource Center](/getting-started/)
 - [Architecture Center](https://aws.amazon.com/architecture/)
-- [Prescriptive Guidance](/prescriptive-guidance/latest/guides/guides.html)
+- [Prescriptive Guidance](https://aws.amazon.com/prescriptive-guidance/)

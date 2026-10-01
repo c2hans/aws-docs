@@ -584,7 +584,7 @@ The following policy grants read-only permission to list, view, export complianc
   ]
 }
 ```
-The following policy grants full permission to create, list, view, export compliance inquiries, and manage tags for compliance inquiry resources.
+The following policy grants full permission to create, list, view, export compliance inquiries, and manage tags for compliance inquiry resources. It also grants permission to list the existing AWS User Notifications notification configurations that you can select when you create an inquiry. In addition, it grants permission to read each configuration's delivery channels, event rules, and email contacts.
 ****
 
 ```

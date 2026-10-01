@@ -14,4 +14,4 @@ End of support notice: On September 30, 2027, AWS will end support for Amazon De
 
  To learn about the DevOps Guru workflow, see [How DevOps Guru works](https://docs.aws.amazon.com/devops-guru/latest/userguide/welcome.html#how-it-works). To learn about DevOps Guru concepts, see [Concepts in DevOps Guru](https://docs.aws.amazon.com/devops-guru/latest/userguide/concepts.html).
 
-This document was last published on September 30, 2026.
+This document was last published on October 1, 2026.

@@ -11,7 +11,7 @@ Contains information about whether assisted slot resolution is turned on for the
 <a name="API_SlotResolutionSetting_Contents"></a>
 
  ** slotResolutionStrategy **   <a name="lexv2-Type-SlotResolutionSetting-slotResolutionStrategy"></a>
-Specifies whether assisted slot resolution is turned on for the slot or not. If the value is `EnhancedFallback`, assisted slot resolution is activated when Amazon Lex defaults to the `AMAZON.FallbackIntent`. If the value is `Default`, assisted slot resolution is turned off.
+Specifies whether assisted slot resolution is turned on for the slot or not. If the value is `EnhancedFallback`, assisted slot resolution is activated when Amazon Lex V2 defaults to the `AMAZON.FallbackIntent`. If the value is `Default`, assisted slot resolution is turned off.
 Type: String
 Valid Values: `EnhancedFallback | Default`
 Required: Yes

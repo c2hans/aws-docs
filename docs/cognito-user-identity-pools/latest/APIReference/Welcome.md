@@ -33,4 +33,4 @@ With your AWS SDK, you can build the logic to support operational flows in every
 
 To get started with an AWS SDK, see [Tools to Build on AWS](http://aws.amazon.com/developer/tools/). For example actions and scenarios, see [Code examples for Amazon Cognito Identity Provider using AWS SDKs](https://docs.aws.amazon.com/cognito/latest/developerguide/service_code_examples_cognito-identity-provider.html).
 
-This document was last published on September 30, 2026.
+This document was last published on October 1, 2026.

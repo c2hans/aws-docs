@@ -99,7 +99,7 @@ The authorizer configuration for the AgentCore Runtime.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `CapacityProviderConfiguration`  <a name="cfn-bedrockagentcore-runtime-capacityproviderconfiguration"></a>
-Property description not available.
+The capacity provider configuration for the AgentCore Runtime. Use a capacity provider to run the AgentCore Runtime on the Instances compute type, which provisions managed compute in your account.
 *Required*: No
 *Type*: [CapacityProviderConfiguration](aws-properties-bedrockagentcore-runtime-capacityproviderconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -141,7 +141,7 @@ The network configuration for the AgentCore Runtime.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `PlatformVersion`  <a name="cfn-bedrockagentcore-runtime-platformversion"></a>
-Property description not available.
+The version of the runtime platform to use for the AgentCore Runtime.
 *Required*: No
 *Type*: String
 *Pattern*: `^[^\s]+$`

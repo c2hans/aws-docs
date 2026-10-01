@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/near-real-time-airline-operati
 title: 'Guidance for Near Real Time Airline Operational Data Hub on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/near-real-time-airline-operational-data-hub-on-aws/
 source: aws-documentation
-generated_on: 2026-09-30
+generated_on: 2026-10-01
 ---
 
 # Guidance for Near Real Time Airline Operational Data Hub on AWS

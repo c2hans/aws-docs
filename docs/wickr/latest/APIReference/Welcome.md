@@ -40,4 +40,4 @@ The AWS Wickr API is available in several AWS Regions and it provides an endpoin
 **Note**
 Wickr API endpoints are region-specific and include a region code in the format: `https://admin.wickr.[regioncode].amazonaws.com`. For example, for the US East (N.Virginia) `us-east-1`, the API endpoint is `https://admin.wickr.us-east-1.amazonaws.com`.
 
-This document was last published on September 30, 2026.
+This document was last published on October 1, 2026.

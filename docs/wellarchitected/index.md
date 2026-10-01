@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/index.html
 title: 'AWS Well-Architected Tool Documentation'
 canonical_url: https://docs.aws.amazon.com/wellarchitected/
 source: aws-documentation
-generated_on: 2026-09-30
+generated_on: 2026-10-01
 ---
 
 # AWS Well-Architected Tool Documentation

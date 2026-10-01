@@ -96,7 +96,7 @@ Some services contain additional example categories that show how to leverage li
 + [Kinesis](kinesis_code_examples.md)
 + [AWS KMS](kms_code_examples.md)
 + [Lambda](lambda_code_examples.md)
-+ [Amazon Lex](lex_code_examples.md)
++ [Amazon Lex V2](lex_code_examples.md)
 + [Lightsail](lightsail_code_examples.md)
 + [Amazon Location](location_code_examples.md)
 + [Location Service Places](geo-places_code_examples.md)

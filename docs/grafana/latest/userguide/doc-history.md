@@ -9,6 +9,7 @@ The following table describes the important changes to the documentation since t
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Amazon Managed Grafana adds support for Grafana version 13](https://docs.aws.amazon.com/grafana/latest/userguide/using-grafana-v13.html) | Amazon Managed Grafana adds support for Grafana version 13. Grafana versions 8, 9, 10, and 12 are also still available for use. | September 17, 2026 |
 | [Amazon Managed Grafana adds support for troubleshooting degraded workspaces](https://docs.aws.amazon.com/grafana/latest/userguide/AMG-workspace-degraded-reasons.html) | Amazon Managed Grafana adds support for troubleshooting degraded workspaces. | May 19, 2026 |
 | [Amazon Managed Grafana adds support for in-place upgrade to Grafana version 12.4](https://docs.aws.amazon.com/grafana/latest/userguide/version-differences.html) | Amazon Managed Grafana adds support for in-place upgrade to Grafana version 12.4. | May 15, 2026 |
 | [Amazon Managed Grafana adds support for Grafana version 12](https://docs.aws.amazon.com/grafana/latest/userguide/using-grafana-v12.html) | Amazon Managed Grafana adds support for Grafana version 12. Grafana versions 8, 9, and 10 are also still available for use. | April 2, 2026 |

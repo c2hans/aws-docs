@@ -14,12 +14,31 @@ The Amazon Managed Service for Prometheus data source is available starting in A
 |  Name  |  Description  |
 | --- | --- |
 |  Name  |  The data source name. This is how you see the data source in panels and queries.  |
-|  Default  |  Default data source means that it will be pre-selected for new panels.  |
 |  Url  |  The URL of your Amazon Managed Service for Prometheus workspace; for example, https://aps-workspaces.us-east-1.amazonaws.com/workspaces/ws-example1234/.  |
-|  Access  |  Server (default) = URL must be accessible from the Grafana backend/server.  |
+|  Authentication Provider  |  Specify which AWS credentials chain to use.  |
+|  Assume Role ARN  |  Optional. Specifying the ARN of a role will ensure that the selected authentication provider is used to assume the role rather than the credentials directly.  |
+|  External ID  |  If you are assuming a role in another account, that has been created with an external ID, specify the external ID here.  |
+|  Default Region  |  Specify the region, such as for US West (Oregon) use us-west-2 as the region.  |
+|  Service Provider  |  Specify the AWS service to sign requests against (for example, aps for Prometheus).  |
+|  HTTP headers  |  Pass additional metadata with each request. Add a custom header name in the Header field and its Value.  |
+|  Allowed cookies  |  Specify cookies by name that should be forwarded to the data source. By default, the Grafana proxy deletes all forwarded cookies.  |
+|  Timeout  |  The HTTP request timeout, in seconds.  |
+|  Manage alerts via Alerting UI  |  Toggled on by default. Enables managing this data source's alerting rules from the Grafana Alerting UI. For Prometheus data sources, this supports viewing existing rules and alerts, which display as data source-managed.  |
+|  Allow as recording rules target  |  Toggled on by default. Allows this data source to be selected as a target destination for writing Grafana-managed recording rules.  |
 |  Scrape interval  |  Set this to the typical scrape and evaluation interval configured in Prometheus. Defaults to 15s.  |
+|  Query timeout  |  Sets the Prometheus query timeout. Defaults to 60s.  |
+|  Default editor  |  Sets the default query editor. Options are Builder (build queries using a visual interface) or Code (write PromQL directly). You can switch editors in the query editor UI.  |
 |  Disable metrics lookup  |  Checking this option will disable the metrics chooser and metric/label support in the query field's autocomplete. This helps if you have performance issues with bigger Prometheus instances.  |
+|  Cache level  |  Sets the browser caching level for editor queries. Options are Low, Medium, High, or None. Higher cache settings are recommended for high-cardinality data sources.  |
+|  Incremental querying (beta)  |  Toggle on to cache query results and fetch only new records on subsequent queries, instead of always requesting fresh data. This helps reduce database and network load. When enabled, use Query overlap window to specify a duration (for example, 10m) that is added to each incremental request to account for delayed data ingestion.  |
+|  Disable recording rules (beta)  |  Toggle on so that Grafana does not fetch and parse recording rules from Prometheus, improving dashboard performance by reducing processing overhead.  |
 |  Custom Query Parameters  |  Add custom parameters to the Prometheus query URL. For example timeout, partial\_response, dedup, or max\_source\_resolution. Multiple parameters should be concatenated together with an "&".  |
+|  HTTP method  |  Select the POST or GET HTTP method used to query your data source. POST is recommended and selected by default, as it supports larger queries. Select GET if your network restricts POST requests.  |
+|  Series limit  |  The maximum number of series returned. The limit applies to metrics, labels, and values for both the series and labels endpoints. Leave empty to use the default limit (40000). Set to 0 to disable the limit, which may cause performance issues.  |
+|  Query statistics  |  Request query processing statistics to view the total queryable samples in Query Inspector. Because query cost scales with samples processed, use this to understand the expense of a query before creating an alert or adding it to a dashboard. This can increase the response payload size.  |
+|  Query warning threshold  |  Sets the warning threshold for Query Samples Processed (QSP). When queries hit this threshold, a warning message will be returned in the API response.  |
+|  Query error threshold  |  Sets the error threshold for Query Samples Processed (QSP). Queries that exceed this threshold will be rejected with an error and will not be charged. Used to prevent excessive query costs.  |
+|  Use series endpoint  |  Toggle on to use the series endpoint (/api/v1/series) with the match[] parameter instead of the label values endpoint. The label values endpoint is generally more performant, but the series endpoint supports the POST method.  |
 
 ## Prometheus query editor
 <a name="amazon-prometheus-query-editor"></a>

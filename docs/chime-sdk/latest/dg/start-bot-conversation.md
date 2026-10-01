@@ -5,19 +5,19 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/start-bot-conversati
 # StartBotConversation
 <a name="start-bot-conversation"></a>
 
-The `StartBotConversation` action establishes a voice conversation between an end user and your Amazon Lex v2 bot. The user provides the required information to the bot. The bot then returns the information to the public switched telephone network (PSTN) Audio Lambda function, and the function performs the requested tasks.
+The `StartBotConversation` action establishes a voice conversation between an end user and your Amazon Lex V2 v2 bot. The user provides the required information to the bot. The bot then returns the information to the public switched telephone network (PSTN) Audio Lambda function, and the function performs the requested tasks.
 
 For example, the bot can play an optional welcome message at the start of a conversation to briefly describe the task that the PSTN audio Lambda function can perform. The conversation goes back and forth between the user and the bot until the bot gathers the required information. Once the conversation ends, the Amazon Chime SDK invokes your PSTN audio Lambda function with an action success event, which contains the information gathered by the bot. Your PSTN audio Lambda function processes the information and performs the requested task.
 
 The Audio Service provides life-like conversational interaction with your users. For example, users can interrupt the bot and answer a question before the audio prompt finishes. What's more, users can use any combination of voice and DTMF digits to provide information. The bot waits for the user to provide input before responding. You can configure how long the bot waits for the user to finish speaking before interpreting any speech input. The user can also instruct the bot to wait if they need time to retrieve additional information during a call, such as credit card numbers.
 
-The `StartBotConversation` action uses Amazon Lex and Amazon Polly for the duration of the bot conversation. Standard Amazon Lex and Amazon Polly costs apply. For more pricing information, see the [Amazon Lex streaming conversation pricing](https://aws.amazon.com/lex/pricing/), and [Amazon Polly Pricing](https://aws.amazon.com/polly/pricing/) pages.
+The `StartBotConversation` action uses Amazon Lex V2 and Amazon Polly for the duration of the bot conversation. Standard Amazon Lex V2 and Amazon Polly costs apply. For more pricing information, see the [Amazon Lex V2 streaming conversation pricing](https://aws.amazon.com/lex/pricing/), and [Amazon Polly Pricing](https://aws.amazon.com/polly/pricing/) pages.
 
 **Note**
 You can't run this action on a bridged call, or on a call that has joined an Amazon Chime SDK meeting.
 
 **Important**
-Use of Amazon Lex and Amazon Polly is subject to the [AWS Service Terms ](https://aws.amazon.com/service-terms/), including the terms specific to the AWS Machine Learning and Artificial Intelligence Services.
+Use of Amazon Lex V2 and Amazon Polly is subject to the [AWS Service Terms ](https://aws.amazon.com/service-terms/), including the terms specific to the AWS Machine Learning and Artificial Intelligence Services.
 
 **Topics**
 + [StartBotConversation syntax](#startbot-syntax)
@@ -68,7 +68,7 @@ The following example shows typical `StartBotConversation` syntax.
 ```
 
 **CallId**
-*Description* – The `CallID` of a participant in the `CallDetails` of the AWS Lambda function invocation. The `StartBotConversation` action uses this ID as the bot's `SessionId`. All bot conversations that take place on a call share the same conversation session. You can modify the session state between your user and your bot by using the [Amazon Lex PutSession](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_PutSession.html) API. For more information, see [Managing sessions with the Amazon Lex v2 API](https://docs.aws.amazon.com/lexv2/latest/dg/using-sessions.html) in the *Amazon Lex Developer Guide*.
+*Description* – The `CallID` of a participant in the `CallDetails` of the AWS Lambda function invocation. The `StartBotConversation` action uses this ID as the bot's `SessionId`. All bot conversations that take place on a call share the same conversation session. You can modify the session state between your user and your bot by using the [Amazon Lex V2 PutSession](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_PutSession.html) API. For more information, see [Managing sessions with the Amazon Lex V2 v2 API](https://docs.aws.amazon.com/lexv2/latest/dg/using-sessions.html) in the *Amazon Lex V2 Developer Guide*.
 *Allowed values* – A valid call ID.
 *Required* – No, if `ParticipantTag` is present.
 *Default value* – None.
@@ -80,14 +80,14 @@ The following example shows typical `StartBotConversation` syntax.
 *Default value* – `ParticipantTag` of the invoked `callLeg`. Ignored if you specify `CallDetails`.
 
 **BotAliasArn**
-*Description* – The bot alias ARN of your Lex bot. You must create the bot in the same AWS Region as your PSTN audio application. A valid Amazon Lex bot alias has this format: `arn:aws:lex:{{region}}:{{awsAccountId}}:bot-alias/{{botId}}/{{botAliasId}}`, where {{`region`}} is the AWS Region where your bot resides. The `{{awsAccountId}}` is the AWS account ID in which your Amazon Lex bot is created. The `botId` value is the identifier assigned to the bot when you created it. You can find the bot ID in the Amazon Lex console on the **Bot details** page. The `botAliasId` is the identifier assigned to the bot alias when you created it. You can find the bot alias ID in the Amazon Lex console on the **Aliases** page.
+*Description* – The bot alias ARN of your Lex bot. You must create the bot in the same AWS Region as your PSTN audio application. A valid Amazon Lex V2 bot alias has this format: `arn:aws:lex:{{region}}:{{awsAccountId}}:bot-alias/{{botId}}/{{botAliasId}}`, where {{`region`}} is the AWS Region where your bot resides. The `{{awsAccountId}}` is the AWS account ID in which your Amazon Lex V2 bot is created. The `botId` value is the identifier assigned to the bot when you created it. You can find the bot ID in the Amazon Lex V2 console on the **Bot details** page. The `botAliasId` is the identifier assigned to the bot alias when you created it. You can find the bot alias ID in the Amazon Lex V2 console on the **Aliases** page.
 *Allowed values* – A valid bot ARN.
 *Required* –Yes.
 *Default value* –None.
 
 **LocaleId**
-*Description* – The identifier of the locale that you used for your bot. For a list of locales and language codes, see [ Languages and locales supported by Amazon Lex](https://docs.aws.amazon.com/lexv2/latest/dg/how-languages.html).
-*Allowed values* – [ Languages and locales supported by Amazon Lex.](https://docs.aws.amazon.com/lexv2/latest/dg/how-languages.html)
+*Description* – The identifier of the locale that you used for your bot. For a list of locales and language codes, see [ Languages and locales supported by Amazon Lex V2](https://docs.aws.amazon.com/lexv2/latest/dg/how-languages.html).
+*Allowed values* – [ Languages and locales supported by Amazon Lex V2.](https://docs.aws.amazon.com/lexv2/latest/dg/how-languages.html)
 *Required* – No.
 *Default value* – `en_US`.
 
@@ -98,20 +98,20 @@ The following example shows typical `StartBotConversation` syntax.
 *Default value* – None.
 
 **Configuration.SessionState**
-*Description* – The state of the user's session with Amazon Lex v2.
+*Description* – The state of the user's session with Amazon Lex V2 v2.
 *Allowed values* – `SessionState` object.
 *Required* – No.
 *Default value* – None.
 
 **Configuration.SessionState.SessionAttributes**
-*Description* – A map of the key/value pairs that represent session-specific context information. This map contains application information passed between Amazon Lex v2 and a client application.
+*Description* – A map of the key/value pairs that represent session-specific context information. This map contains application information passed between Amazon Lex V2 v2 and a client application.
 *Allowed values* – String to string map.
 *Required* – No.
 *Default value* – None.
 
 **Configuration.SessionState.DialogAction.Type**
 *Description* – The next action that the bot takes in its interactions with the user. Possible values:
-+ *Delegate* Amazon Lex v2 determines the next action.
++ *Delegate* Amazon Lex V2 v2 determines the next action.
 + *ElicitIntent* The next action elicits an intent from the user.
 *Allowed values* – `Delegate` \| `ElicitIntent`.
 *Required* – No.
@@ -247,19 +247,19 @@ The following example shows a typical `ACTION_SUCCESSFUL` event for the `StartBo
 The result of the conversation between the user and the bot.
 
 **SessionId**
-The identifier of the bot conversation session. When a user starts a conversation with your bot, Amazon Lex creates a session. A session encapsulates the information exchanged between your user and the bot. The `StartBotConversation` action uses the call ID as the bot's `SessionId`. You can modify the session state between your user and your bot by using the Lex [PutSession](https://docs.aws.amazon.com/lexv2/latest/dg/API_runtime_PutSession.html) API. For more information, see [ Managing sessions with the Amazon Lex V2 API ](https://docs.aws.amazon.com/lexv2/latest/dg/using-sessions.html) in the *Amazon Lex Developer Guide*.
+The identifier of the bot conversation session. When a user starts a conversation with your bot, Amazon Lex V2 creates a session. A session encapsulates the information exchanged between your user and the bot. The `StartBotConversation` action uses the call ID as the bot's `SessionId`. You can modify the session state between your user and your bot by using the Lex [PutSession](https://docs.aws.amazon.com/lexv2/latest/dg/API_runtime_PutSession.html) API. For more information, see [ Managing sessions with the Amazon Lex V2 V2 API ](https://docs.aws.amazon.com/lexv2/latest/dg/using-sessions.html) in the *Amazon Lex V2 Developer Guide*.
 
 **SessionState**
-The state of the user’s Amazon Lex v2 session.
+The state of the user’s Amazon Lex V2 v2 session.
 
 **SessionState.SessionAttributes**
 Map of key/value pairs that represent session-specific context information. The map contains bot conversation information passed between the Lambda function attached to your bot and the PSTN audio Lambda function.
 
 **Interpretations**
-A list of intents derived by Amazon Lex that may satisfy the a customer's utterance. The intent with the highest `NluConfidence` score becomes the Intent for the `SessionState`.
+A list of intents derived by Amazon Lex V2 that may satisfy the a customer's utterance. The intent with the highest `NluConfidence` score becomes the Intent for the `SessionState`.
 
 **Interpretations.NluConfidence.Score**
-A score that indicates how confident Amazon Lex v2 is that an intent satisfies a user's intent. Ranges between 0.00 and 1.00. Higher scores indicate higher confidence.
+A score that indicates how confident Amazon Lex V2 v2 is that an intent satisfies a user's intent. Ranges between 0.00 and 1.00. Higher scores indicate higher confidence.
 
 **Intent**
 The action the user wants to perform.
@@ -280,10 +280,10 @@ A list of one or more values that the user provided for the slot.
 The text of the user's reply, entered for the slot.
 
 **Intent.Slots.Value.InterpretedValue**
-*Description* – The value that Amazon Lex v2 determines for the slot. The actual value depends on the bot's value selection strategy setting. You can choose to use the value entered by the user, or you can have Amazon Lex v2 choose the first value in the `resolvedValues` list.
+*Description* – The value that Amazon Lex V2 v2 determines for the slot. The actual value depends on the bot's value selection strategy setting. You can choose to use the value entered by the user, or you can have Amazon Lex V2 v2 choose the first value in the `resolvedValues` list.
 
 **Intent.Slots.Value.ResolvedValues**
-A list of additional values that Amazon Lex v2 recognizes for the slot.
+A list of additional values that Amazon Lex V2 v2 recognizes for the slot.
 
 **Intent.State**
 *Description* – Fulfillment information for the intent. Possible values:
@@ -343,7 +343,7 @@ The following table lists the error messages that a Lambda function can return i
 ## Granting permissions to use a bot
 <a name="bot-permissions"></a>
 
-The following example grants the Amazon Chime SDK permission to call the Amazon Lex [StartConversation](https://docs.aws.amazon.com/lexv2/latest/dg/API_runtime_StartConversation.html) APIs. You must explicitly grant the Audio Service permission to use your bot. The condition block is required for service principals. The condition block must use the global context keys `AWS:SourceAccount` and `AWS:SourceArn`. The `AWS:SourceAccount` is your AWS account ID. The `AWS:SourceArn` is the resource ARN of the PSTN audio application that invokes the Lex bot.
+The following example grants the Amazon Chime SDK permission to call the Amazon Lex V2 [StartConversation](https://docs.aws.amazon.com/lexv2/latest/dg/API_runtime_StartConversation.html) APIs. You must explicitly grant the Audio Service permission to use your bot. The condition block is required for service principals. The condition block must use the global context keys `AWS:SourceAccount` and `AWS:SourceArn`. The `AWS:SourceAccount` is your AWS account ID. The `AWS:SourceArn` is the resource ARN of the PSTN audio application that invokes the Lex bot.
 
 ------
 #### [ JSON ]
@@ -380,24 +380,24 @@ The following example grants the Amazon Chime SDK permission to call the Amazon 
 ## Configuring voice and DTMF timeouts
 <a name="bot-timeouts"></a>
 
-You can configure the voice and DTMF timeouts when capturing user input. You can configure timeouts through session attributes when starting a conversation with a bot, and overwrite them in your Lex bot's Lambda function if necessary. Amazon Lex lets you set multiple slots for an intent or bots. Because you can specify that session attributes apply to the intent and slot level, you can specify that the attribute is set only when you're collecting a certain type of input. For example, you can specify a longer time-out when you're collecting an account number than when you're collecting a date. You can use wildcards in the session attribute key.
+You can configure the voice and DTMF timeouts when capturing user input. You can configure timeouts through session attributes when starting a conversation with a bot, and overwrite them in your Lex bot's Lambda function if necessary. Amazon Lex V2 lets you set multiple slots for an intent or bots. Because you can specify that session attributes apply to the intent and slot level, you can specify that the attribute is set only when you're collecting a certain type of input. For example, you can specify a longer time-out when you're collecting an account number than when you're collecting a date. You can use wildcards in the session attribute key.
 
-For example, to set a voice timeout for all slots for all intents to 4000 milliseconds, you can provide a session attribute using: `x-amz-lex:start-timeout-ms:*:*` as the session attribute name and `4000` as the session attribute value. For more information, see [ Configuring timeouts for capturing user input ](https://docs.aws.amazon.com/lexv2/latest/dg/session-attribs-speech.htm) in the *Amazon Lex Developer Guide*.
+For example, to set a voice timeout for all slots for all intents to 4000 milliseconds, you can provide a session attribute using: `x-amz-lex:start-timeout-ms:*:*` as the session attribute name and `4000` as the session attribute value. For more information, see [ Configuring timeouts for capturing user input ](https://docs.aws.amazon.com/lexv2/latest/dg/session-attribs-speech.htm) in the *Amazon Lex V2 Developer Guide*.
 
 ## Using DTMF inputs during a conversation
 <a name="bot-dtmf"></a>
 
-Amazon Lex bots support voice and keypad input during a conversation. The bots interpret keypad input as DTMF digits. You can prompt contacts to end their input with a pound key (\#) and to cancel a conversation by using the star key (\*). If you don't prompt customers to end their input with the pound key, Lex stops waiting for additional key presses after 5 seconds.
+Amazon Lex V2 bots support voice and keypad input during a conversation. The bots interpret keypad input as DTMF digits. You can prompt contacts to end their input with a pound key (\#) and to cancel a conversation by using the star key (\*). If you don't prompt customers to end their input with the pound key, Lex stops waiting for additional key presses after 5 seconds.
 
 ## Billing and service quotas
 <a name="bot-billing"></a>
 
 AWS bills you for the following costs:
 + Amazon Chime SDK usage for the call. For more information, see [Amazon Chime SDK pricing](https://aws.amazon.com/chime/chime-sdk/pricing/).
-+ Amazon Lex usage for interpreting users' speech. For more information, see [Amazon Lex streaming conversation pricing](https://aws.amazon.com/lex/pricing/).
++ Amazon Lex V2 usage for interpreting users' speech. For more information, see [Amazon Lex V2 streaming conversation pricing](https://aws.amazon.com/lex/pricing/).
 + Amazon Polly usage for synthesizing text responses from your bot. For more information, see [ Amazon Polly Pricing](https://aws.amazon.com/polly/pricing/).
 
 You also need to be aware of the following service quotas:
 + The Amazon Chime SDK has a service quota for the maximum number of Amazon Lex bots you can use with the PSTN audio [StartBotConversation](#start-bot-conversation) action. For more information, refer to [SIP trunking and voice quotas](https://docs.aws.amazon.com/general/latest/gr/chime-sdk.html#chm-sdk-pstn-quotas), in the *AWS General Reference*.
-+ Amazon Lex has a service quota for the maximum number of concurrent voice conversations per Lex bot. You can contact the Amazon Lex service team for quota increases. For more information, see the Amazon Lex [Guidelines and quotas](https://docs.aws.amazon.com/lexv2/latest/dg/quotas.html) in the *Amazon Lex Developer Guide*.
++ Amazon Lex V2 has a service quota for the maximum number of concurrent voice conversations per Lex bot. You can contact the Amazon Lex service team for quota increases. For more information, see the Amazon Lex V2 [Guidelines and quotas](https://docs.aws.amazon.com/lexv2/latest/dg/quotas.html) in the *Amazon Lex V2 Developer Guide*.
 + Amazon Polly has a service quota for synthesizing text responses. You can contact the Amazon Polly service team for quota increases. For more information about Amazon Polly service quotas, see [Quotas in Amazon Polly](https://docs.aws.amazon.com/polly/latest/dg/limits.html), in the *Amazon Polly Developer Guide*.

@@ -88,10 +88,10 @@ Attributes can be up to 32 KB, which is the maximum size of the contact record a
 ## Configuration tips
 <a name="set-contact-attributes-tips"></a>
 + When using a user-defined destination key, you can name it anything you want but don't include the **$** and **.** (period) characters. They are not allowed because they are both used in defining the attribute paths in JSONPath.
-+ You can use the **Set contact attributes** block to set the language attribute required for an Amazon Lex V2 bot. (Your language attribute in Connect Customer must match the language model used to build your Amazon Lex V2 bot.) The following image shows a language attribute set to Spanish.
++ You can use the **Set contact attributes** block to set the language attribute required for an Amazon Lex V2 V2 bot. (Your language attribute in Connect Customer must match the language model used to build your Amazon Lex V2 V2 bot.) The following image shows a language attribute set to Spanish.
 ![The properties page for Set contact attributes, Value set to Spanish.](https://docs.aws.amazon.com/connect/latest/adminguide/images/set-contact-attributes-language.png)
 
-  Or, you can use the [Set voice](set-voice.md) block to set the language required for an Amazon Lex V2 bot.
+  Or, you can use the [Set voice](set-voice.md) block to set the language required for an Amazon Lex V2 V2 bot.
 + You can use the **Set contact attributes** block to update the task template currently in use on task contacts. The following image shows a task template being set to the "Password reset template".
 ![The Set contact attributes block configured with System namespace, Task template key, Set manually selected, and Password reset template chosen from the Task template dropdown.](https://docs.aws.amazon.com/connect/latest/adminguide/images/set-contact-attributes-task-template.png)
   + Task templates can only be updated on in-progress task contacts before they are connected to an agent.

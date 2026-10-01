@@ -560,7 +560,7 @@ Choose the link in the **AWS service** column to see the documentation for servi
 - **AWS Launch Wizard**
   - com.amazonaws.{{region}}.launchwizard
 
-- ** [Amazon Lex](https://docs.aws.amazon.com/lexv2/latest/dg/vpc-interface-endpoints.html) **
+- ** [Amazon Lex V2](https://docs.aws.amazon.com/lexv2/latest/dg/vpc-interface-endpoints.html) **
   - com.amazonaws.{{region}}.models-v2-lex
   - com.amazonaws.{{region}}.runtime-v2-lex
 

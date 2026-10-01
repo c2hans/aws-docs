@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/omnichannel-claims-processing-
 title: 'Guidance for Omnichannel Claims Processing Powered by Generative AI on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/omnichannel-claims-processing-powered-by-generative-ai-on-aws/
 source: aws-documentation
-generated_on: 2026-09-30
+generated_on: 2026-10-01
 ---
 
 # Guidance for Omnichannel Claims Processing Powered by Generative AI on AWS
@@ -24,7 +24,7 @@ These technical details feature an architecture diagram to illustrate how to eff
 ![Architecture diagram](/images/solutions/omnichannel-claims-processing-powered-by-generative-ai-on-aws/images/omnichannel-claims-processing-powered-by-generative-ai-on-aws-1.png)
 
 1. **Step 1**: Amazon CloudFront serves the Claims Processing React Web Application, including an Amazon Connect Customer chat interface. Amazon Cognito and AWS WAF protect CloudFront.
-1. **Step 2**: Initiate First Notice of Loss (FNOL) communication through call, SMS, and chat using Amazon Connect Customer and Amazon Lex and webform using the Claims Processing Web Application.
+1. **Step 2**: Initiate First Notice of Loss (FNOL) communication through call, SMS, and chat using Amazon Connect Customer and Amazon Lex V2 and webform using the Claims Processing Web Application.
 1. **Step 3**: An Amazon DynamoDB table stores claims request details.
 1. **Step 4**: Amazon Simple Storage Service (Amazon S3) stores claims documents through the Claims Processing Web Application. Amazon S3 events trigger an AWS Lambda function, which invokes Amazon Textract to analyze documents, such as driver's licenses. The Lambda function also invokes the Amazon Nova Pro large language model (LLM) using Amazon Bedrock to analyze images of vehicle damages. Lambda updates the generated insights, including potential costs to replace and repair the coverable to existing claims records in the DynamoDB table.
 1. **Step 5**: Amazon API Gateway and Lambda integrate third-party application data to the Claims Processing Web Application.
@@ -63,10 +63,10 @@ The services integrated throughout this Guidance are designed to accommodate hig
 
 ### Cost Optimization
 
-Amazon Connect Customer and Amazon Lex provide a pay-as-you-use pricing model, allowing users to only pay for the resources they consume, thus optimizing costs by eliminating the need for upfront investments while also reducing licensing costs. OpenSearch Serverless is used as the vector database for the generative AI powered agent assistant. This is a fully managed and serverless search and analytics service, offering a scalable and cost-effective framework by automatically provisioning and scaling resources based on demand, reducing the overhead of infrastructure management. [Read the Cost Optimization whitepaper](/wellarchitected/latest/cost-optimization-pillar/welcome.html)
+Amazon Connect Customer and Amazon Lex V2 provide a pay-as-you-use pricing model, allowing users to only pay for the resources they consume, thus optimizing costs by eliminating the need for upfront investments while also reducing licensing costs. OpenSearch Serverless is used as the vector database for the generative AI powered agent assistant. This is a fully managed and serverless search and analytics service, offering a scalable and cost-effective framework by automatically provisioning and scaling resources based on demand, reducing the overhead of infrastructure management. [Read the Cost Optimization whitepaper](/wellarchitected/latest/cost-optimization-pillar/welcome.html)
 
 ### Sustainability
 
-This Guidance uses a variety of serverless services, including Amazon Lex, Lambda, Amazon S3, DynamoDB, Fargate, and OpenSearch Serverless, which are designed to only consume resources as necessary, thereby helping to reduce the carbon footprint of the user. The dynamic scaling capabilities inherent to these serverless and managed services further contribute to sustainability by helping to ensure that resources are provisioned and scale based on actual demand, thereby avoiding the need to over-provision and maintain excess capacity. In contrast, traditional contact centers that operate within on-premises data centers, with provisioned compute resources and online data stores, often have a larger carbon footprint due to their energy consumption. Finally, the Customer Carbon Footprint Tool, which enables users to measure, review, and forecast the carbon emissions generated from their AWS usage, facilitates informed decision-making and the implementation of sustainable practices. [Read the Sustainability whitepaper](/wellarchitected/latest/sustainability-pillar/sustainability-pillar.html)
+This Guidance uses a variety of serverless services, including Amazon Lex V2, Lambda, Amazon S3, DynamoDB, Fargate, and OpenSearch Serverless, which are designed to only consume resources as necessary, thereby helping to reduce the carbon footprint of the user. The dynamic scaling capabilities inherent to these serverless and managed services further contribute to sustainability by helping to ensure that resources are provisioned and scale based on actual demand, thereby avoiding the need to over-provision and maintain excess capacity. In contrast, traditional contact centers that operate within on-premises data centers, with provisioned compute resources and online data stores, often have a larger carbon footprint due to their energy consumption. Finally, the Customer Carbon Footprint Tool, which enables users to measure, review, and forecast the carbon emissions generated from their AWS usage, facilitates informed decision-making and the implementation of sustainable practices. [Read the Sustainability whitepaper](/wellarchitected/latest/sustainability-pillar/sustainability-pillar.html)
 
 [Read usage guidelines](/solutions/guidance-disclaimers/)

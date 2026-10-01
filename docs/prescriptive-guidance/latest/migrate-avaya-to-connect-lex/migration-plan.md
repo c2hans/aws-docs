@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-ava
 # Migration planning
 <a name="migration-plan"></a>
 
-In order to successfully migrate an on-premises Avaya contact center to Amazon Connect Customer and Amazon Lex, you need to have an effective plan. The migration plan typically follows a multi-phased approach and includes the following steps and information:
+In order to successfully migrate an on-premises Avaya contact center to Amazon Connect Customer and Amazon Lex V2, you need to have an effective plan. The migration plan typically follows a multi-phased approach and includes the following steps and information:
 + [Building your team](#building-team)
 + [Preparing your data](#preparing-data)
 + [Porting telephone numbers](#porting-numbers)

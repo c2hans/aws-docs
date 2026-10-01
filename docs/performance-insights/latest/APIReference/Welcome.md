@@ -14,4 +14,4 @@ DB load is measured as average active sessions. Performance Insights provides th
 + To learn more about Performance Insights and Amazon RDS DB instances, go to the * [ Amazon RDS User Guide](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.html) *.
 + To learn more about Performance Insights and Amazon DocumentDB clusters, go to the * [ Amazon DocumentDB Developer Guide](https://docs.aws.amazon.com/documentdb/latest/developerguide/performance-insights.html) *.
 
-This document was last published on September 30, 2026.
+This document was last published on October 1, 2026.

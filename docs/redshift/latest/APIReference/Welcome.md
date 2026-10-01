@@ -15,4 +15,4 @@ If you are a first-time user of Amazon Redshift, we recommend that you begin by 
 
 If you are a database developer, the [Amazon Redshift Database Developer Guide](https://docs.aws.amazon.com/redshift/latest/dg/welcome.html) explains how to design, build, query, and maintain the databases that make up your data warehouse.
 
-This document was last published on September 30, 2026.
+This document was last published on October 1, 2026.

@@ -18,6 +18,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ma
 + [Modernize the CardDemo mainframe application by using AWS Transform](modernize-carddemo-mainframe-app.md)
 + [Modernize and deploy mainframe applications using AWS Transform and Terraform](modernize-mainframe-app-transform-terraform.md)
 + [Streamline Amazon EC2 compliance management with Amazon Bedrock agents and AWS Config](streamline-amazon-ec2-compliance-management-with-amazon-bedrock-agents-and-aws-config.md)
-+ [Streamline Amazon Lex bot development and deployment by using an automated workflow](streamline-amazon-lex-bot-development-and-deployment-using-an-automated-workflow.md)
++ [Streamline Amazon Lex V2 bot development and deployment by using an automated workflow](streamline-amazon-lex-bot-development-and-deployment-using-an-automated-workflow.md)
 + [Transform Easytrieve to modern languages by using AWS Transform custom](transform-easytrieve-modern-languages.md)
 + [Troubleshoot states in AWS Step Functions by using Amazon Bedrock](troubleshooting-states-in-aws-step-functions.md)

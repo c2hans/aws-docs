@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-avaya-to-connect-lex/option-1.html
 ---
 
-# Option 1: Ingress to Avaya and egress to Amazon Lex
+# Option 1: Ingress to Avaya and egress to Amazon Lex V2
 <a name="option-1"></a>
 
 ![Architecture diagram of ingress to Avaya and egress to Amazon Lex by using call transfers](https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-avaya-to-connect-lex/images/guide-img/93ca74a8-da3b-48f9-a10f-4809a7f3384c/images/bc4c83c0-0c4d-489e-a376-8bf6d09f7053.png)
@@ -21,17 +21,17 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-ava
 
 1. When the call is connected with Connect Customer, an Connect Customer contact flow initiates a Lambda function that fetches the customer data from the DynamoDB table by using the DNIS number of the current interaction.
 
-1. Connect Customer passes the customer attributes to Amazon Lex. Amazon Lex starts self-servicing the call.
+1. Connect Customer passes the customer attributes to Amazon Lex V2. Amazon Lex V2 starts self-servicing the call.
 
-1. Amazon Lex invokes a [dialog code hook](https://docs.aws.amazon.com/lexv2/latest/dg/paths-code-hook.html) and fulfills the intent by using a Lambda function.
+1. Amazon Lex V2 invokes a [dialog code hook](https://docs.aws.amazon.com/lexv2/latest/dg/paths-code-hook.html) and fulfills the intent by using a Lambda function.
 
 1. The Lambda function inserts all of the customer attributes during the call and starts the routing process back to Avaya as follows:
 
    1. Connect Customer makes a call to a Lambda function.
 
-   1. The Lambda function selects the available outbound dialing number for Avaya, blocks the DNIS number, and passes the dialing number back to Amazon Lex.
+   1. The Lambda function selects the available outbound dialing number for Avaya, blocks the DNIS number, and passes the dialing number back to Amazon Lex V2.
 
-   1. Amazon Lex passes the number back to Connect Customer in session attributes.
+   1. Amazon Lex V2 passes the number back to Connect Customer in session attributes.
 
 1. Connect Customer uses this number to return the call back to Avaya.
 

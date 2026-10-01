@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-ava
 # Decision-making processes
 <a name="decision-making-processes"></a>
 
-Use the following steps to define your strategy for migrating from an on-premises Avaya contact center to Amazon Lex and Amazon Connect Customer:
+Use the following steps to define your strategy for migrating from an on-premises Avaya contact center to Amazon Lex V2 and Amazon Connect Customer:
 + [Step 1: Define the business goals and schedule](#step-1)
 + [Step 2: Choose between a phased approach or a full migration](#step-2)
 + [Step 3: Choose a migration strategy](#step-3)
@@ -14,9 +14,9 @@ Use the following steps to define your strategy for migrating from an on-premise
 ## Step 1: Define the business goals and schedule
 <a name="step-1"></a>
 
-This is the first step in the migration decision-making process. If the goal of the project is to increase self-service and use Amazon Lex for IVR only, you have to strategize how calls will transfer between Avaya and Amazon Lex. Understanding the limitations of the existing on-premises systems helps you design an efficient architecture. The following are examples of high-level business goals and the time frames in which you might expect to achieve them:
-+ Within three months, migrate Avaya IVRs to Amazon Lex in phases for each business unit.
-+ Within one year, migrate completely from Avaya on-premises systems to Amazon Connect Customer and Amazon Lex.
+This is the first step in the migration decision-making process. If the goal of the project is to increase self-service and use Amazon Lex V2 for IVR only, you have to strategize how calls will transfer between Avaya and Amazon Lex V2. Understanding the limitations of the existing on-premises systems helps you design an efficient architecture. The following are examples of high-level business goals and the time frames in which you might expect to achieve them:
++ Within three months, migrate Avaya IVRs to Amazon Lex V2 in phases for each business unit.
++ Within one year, migrate completely from Avaya on-premises systems to Amazon Connect Customer and Amazon Lex V2.
 
 ## Step 2: Choose between a phased approach or a full migration
 <a name="step-2"></a>
@@ -30,7 +30,7 @@ When choosing between these approaches, it's essential to assess the size, compl
 ## Step 3: Choose a migration strategy
 <a name="step-3"></a>
 
-Legacy, on-premises contact centers are generally built on a dual-tone multi-frequency (DTMF) approach or a speech-to-text based approach. Replicating your on-premises experience with Amazon Lex is not recommended, especially if your call flows are extremely complex. Instead, you can focus on using the AI capabilities of Amazon Lex to drive an exceptional experience. However, if the goal of your project is to migrate to the cloud and your existing call flows are very basic, you can choose to rehost and then modernize the experience in the future.
+Legacy, on-premises contact centers are generally built on a dual-tone multi-frequency (DTMF) approach or a speech-to-text based approach. Replicating your on-premises experience with Amazon Lex V2 is not recommended, especially if your call flows are extremely complex. Instead, you can focus on using the AI capabilities of Amazon Lex V2 to drive an exceptional experience. However, if the goal of your project is to migrate to the cloud and your existing call flows are very basic, you can choose to rehost and then modernize the experience in the future.
 
 ## Step 4: Select your architecture
 <a name="step-4"></a>

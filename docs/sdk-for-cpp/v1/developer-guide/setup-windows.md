@@ -27,7 +27,7 @@ To use the AWS SDK for C\+\+, you need one of the following:
 ## Building the SDK for Windows with curl
 <a name="build-curl-id"></a>
 
-On Windows, the SDK is built with [WinHTTP](https://msdn.microsoft.com/en-us/library/windows/desktop/aa382925%28v=vs.85%29.aspx) as the default HTTP client. However, WinHTTP 1.0 does not support HTTP/2 bidirectional streaming, which is required for some AWS services such as Amazon Transcribe and Amazon Lex. Thus, it is sometimes necessary to build curl support with the SDK. To view all available curl download options, see [curl Releases and Downloads](https://curl.se/download.html). One method for building the SDK with curl support is the following:
+On Windows, the SDK is built with [WinHTTP](https://msdn.microsoft.com/en-us/library/windows/desktop/aa382925%28v=vs.85%29.aspx) as the default HTTP client. However, WinHTTP 1.0 does not support HTTP/2 bidirectional streaming, which is required for some AWS services such as Amazon Transcribe and Amazon Lex V2. Thus, it is sometimes necessary to build curl support with the SDK. To view all available curl download options, see [curl Releases and Downloads](https://curl.se/download.html). One method for building the SDK with curl support is the following:
 
 **To build the SDK with curl library support included**
 

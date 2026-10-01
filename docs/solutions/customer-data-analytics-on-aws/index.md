@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/customer-data-analytics-on-aws
 title: 'Guidance for Customer Data Analytics on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/customer-data-analytics-on-aws/
 source: aws-documentation
-generated_on: 2026-09-30
+generated_on: 2026-10-01
 ---
 
 # Guidance for Customer Data Analytics on AWS

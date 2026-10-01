@@ -280,8 +280,8 @@ This log type captures the usage logs for different agents within your Quick acc
 + `subscription_type` – Subscription tier of the user. Values: `ENTERPRISE`, `PROFESSIONAL`.
 + `reporting_service` – The Quick surface that consumed agent hours. Current values include `FLOW`, `AUTOMATION`, and `RESEARCH`. New values might appear as additional Quick features begin metering agent hours.
 + `usage_group` – Whether the usage is covered by the subscription entitlement or billed as overage. Values:
-  + `Included` – Usage within the daily entitlement grant for the subscription tier. No incremental charge.
-  + `Extra` – Overage beyond the daily grant. Billed on consumption.
+  + `Included` – Usage within the monthly entitlement grant for the subscription tier. No incremental charge.
+  + `Extra` – Overage beyond the monthly grant. Billed on consumption.
 + `usage_hours` – Decimal value indicating the agent hours consumed for this record
 + `service_resource_arn` – ARN of the resource that consumed the hours (for example, a flow, automation, or research session)
 + `resource_arn` – Resource ARN of your Amazon Quick account

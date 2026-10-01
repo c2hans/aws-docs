@@ -93,4 +93,4 @@ Asynchronous idempotent delete APIs:
 + DeleteEnvironment
 + DeleteService
 
-This document was last published on September 30, 2026.
+This document was last published on October 1, 2026.

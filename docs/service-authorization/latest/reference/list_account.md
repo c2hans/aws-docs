@@ -111,9 +111,21 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   SendPhoneNumberVerification  **
+  - **IAM action:**  [account:SendPhoneNumberVerification](#list_account-action-SendPhoneNumberVerification)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   StartPrimaryEmailUpdate  **
   - **IAM action:**  [account:StartPrimaryEmailUpdate](#list_account-action-StartPrimaryEmailUpdate)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:UpdateAccountEmailAddress](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-update-root-user.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+
+- **   VerifyPhoneNumber  **
+  - **IAM action:**  [account:VerifyPhoneNumber](#list_account-action-VerifyPhoneNumber)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
 
 ## Actions defined by AWS Account Management
 <a name="list_account-actions-as-permissions"></a>

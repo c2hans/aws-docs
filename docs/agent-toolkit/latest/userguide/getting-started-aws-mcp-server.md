@@ -61,7 +61,15 @@ To switch, remove the older servers from your MCP client configuration to avoid 
 
 AWS MCP Server supports the following AWS Regions:
 + US East (N. Virginia) – `us-east-1`: `https://aws-mcp.us-east-1.api.aws/mcp`
++ US West (Oregon) – `us-west-2`: `https://aws-mcp.us-west-2.api.aws/mcp`
++ Asia Pacific (Singapore) – `ap-southeast-1`: `https://aws-mcp.ap-southeast-1.api.aws/mcp`
++ Asia Pacific (Sydney) – `ap-southeast-2`: `https://aws-mcp.ap-southeast-2.api.aws/mcp`
++ Asia Pacific (Tokyo) – `ap-northeast-1`: `https://aws-mcp.ap-northeast-1.api.aws/mcp`
 + Europe (Frankfurt) – `eu-central-1`: `https://aws-mcp.eu-central-1.api.aws/mcp`
++ Europe (Ireland) – `eu-west-1`: `https://aws-mcp.eu-west-1.api.aws/mcp`
++ Europe (London) – `eu-west-2`: `https://aws-mcp.eu-west-2.api.aws/mcp`
+
+The setup examples in this section use the `us-east-1` endpoint. To connect to a different AWS Region, substitute that Region in the endpoint URL (for example, `https://aws-mcp.eu-west-1.api.aws/mcp`).
 
 ------
 #### [ Option A: OAuth (simple) ]

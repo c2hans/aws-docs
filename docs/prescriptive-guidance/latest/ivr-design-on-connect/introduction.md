@@ -11,7 +11,7 @@ Technical architects, developers, and business teams have the opportunity to rei
 
 Business teams typically want to add functionality and features while making the self-service experience more personalized. Technical architects and developers focus primarily on how to reduce redundancy, enable rapid change and flexibility, modularize repeated processes, and decrease the maintenance overhead.
 
-This guide provides technical architects with a set of best practices they can use to create the foundational design of their interactive voice response (IVR) application in a modular and dynamic fashion. It provides examples of IVR systems (that is, voice technologies). However, you can extend the same concepts to any other channels. The guide focuses on creating a modular and scalable IVR design by using Connect Customer flows and modules. Amazon Lex, which enables you to add natural language (NL) features to your IVR application, is out of scope.
+This guide provides technical architects with a set of best practices they can use to create the foundational design of their interactive voice response (IVR) application in a modular and dynamic fashion. It provides examples of IVR systems (that is, voice technologies). However, you can extend the same concepts to any other channels. The guide focuses on creating a modular and scalable IVR design by using Connect Customer flows and modules. Amazon Lex V2, which enables you to add natural language (NL) features to your IVR application, is out of scope.
 
 ## Overview
 <a name="overview"></a>

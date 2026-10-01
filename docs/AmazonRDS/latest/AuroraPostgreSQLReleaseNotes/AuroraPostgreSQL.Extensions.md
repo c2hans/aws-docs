@@ -79,7 +79,7 @@ The following table shows the extension versions supported for each Aurora Postg
 | oracle\_fdw | 2.8.0 | 2.8.0 | 2.8.0 |
 | [orafce](https://github.com/orafce/orafce) | 4.16.3 | 4.16.3 | 4.16.3 |
 | pg\_ad\_mapping | 1.0 | 1.0 | 1.0 |
-| [pg\_bigm](https://pgbigm.osdn.jp/pg_bigm_en-1-2.html) | 1.2\_20250903 | 1.2\_20250903 | 1.2\_20250903 |
+| [pg\_bigm](https://github.com/pgbigm/pg_bigm) | 1.2\_20250903 | 1.2\_20250903 | 1.2\_20250903 |
 | [pg\_buffercache](http://www.postgresql.org/docs/12/pgbuffercache.html) | 1.5 | 1.5 | 1.5 |
 | [pg\_columnmask](https://aws.amazon.com/about-aws/whats-new/2025/11/amazon-aurora-postgresql-dynamic-data-masking/) | 1.1.0 | 1.1.0 | 1.1.0 |
 | [pg\_cron](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/PostgreSQL_pg_cron.html) | 1.6.7 | 1.6.7 | 1.6.7 |
@@ -183,7 +183,7 @@ The following table shows the PostgreSQL extension versions that are currently s
 | oracle\_fdw | 2.8.0 | 2.8.0 | 2.8.0 | 2.8.0 | 2.8.0 | 2.7.0 | 2.7.0 |
 | [orafce](https://github.com/orafce/orafce) | 4.16.3 | 4.16.3 | 4.16.3 | 4.14.0 | 4.14.0 | 4.14.0 | 4.14.0 |
 | pg\_ad\_mapping | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 |
-| [pg\_bigm](https://pgbigm.osdn.jp/pg_bigm_en-1-2.html) | 1.2\_20250903 | 1.2\_20250903 | 1.2\_20250903 | 1.2 | 1.2 | 1.2 | 1.2 |
+| [pg\_bigm](https://github.com/pgbigm/pg_bigm) | 1.2\_20250903 | 1.2\_20250903 | 1.2\_20250903 | 1.2 | 1.2 | 1.2 | 1.2 |
 | [pg\_buffercache](http://www.postgresql.org/docs/12/pgbuffercache.html) | 1.5 | 1.5 | 1.5 | 1.5 | 1.5 | 1.5 | 1.5 |
 | [pg\_columnmask](https://aws.amazon.com/about-aws/whats-new/2025/11/amazon-aurora-postgresql-dynamic-data-masking/) | 1.1.0 | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 | – | – |
 | [pg\_cron](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/PostgreSQL_pg_cron.html) | 1.6.7 | 1.6.7 | 1.6.7 | 1.6.5 | 1.6.5 | 1.6.5 | 1.6.5 |
@@ -286,7 +286,7 @@ The following table shows the PostgreSQL extension versions that are currently s
 | oracle\_fdw | 2.8.0 | 2.8.0 | 2.8.0 | 2.8.0 | 2.8.0 | 2.7.0 | 2.7.0 | 2.6.0 | 2.6.0 | 2.6.0 | 2.6.0 | 2.6.0 |
 | [orafce](https://github.com/orafce/orafce) | 4.16.3 | 4.16.3 | 4.16.3 | 4.14.0 | 4.14.0 | 4.14.0 | 4.14.0 | 4.12.0 | 4.10.3 | 4.9.4 | 4.6.0 | 4.6.0 |
 | pg\_ad\_mapping | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 0.1 | 0.1 | 0.1 |
-| [pg\_bigm](https://pgbigm.osdn.jp/pg_bigm_en-1-2.html) | 1.2\_20250903 | 1.2\_20250903 | 1.2\_20250903 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 |
+| [pg\_bigm](https://github.com/pgbigm/pg_bigm) | 1.2\_20250903 | 1.2\_20250903 | 1.2\_20250903 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 |
 | [pg\_buffercache](http://www.postgresql.org/docs/12/pgbuffercache.html) | 1.4 | 1.4 | 1.4 | 1.4 | 1.4 | 1.4 | 1.4 | 1.4 | 1.4 | 1.4 | 1.4 | 1.4 |
 | [pg\_columnmask](https://aws.amazon.com/about-aws/whats-new/2025/11/amazon-aurora-postgresql-dynamic-data-masking/) | 1.1.0 | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 | – | – | – | – | – | – | – |
 | [pg\_cron](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/PostgreSQL_pg_cron.html) | 1.6.7 | 1.6.7 | 1.6.7 | 1.6.5 | 1.6.5 | 1.6.5 | 1.6.5 | 1.6.4 | 1.6.3 | 1.6.2 | 1.6.0 | 1.6.0 |
@@ -389,7 +389,7 @@ The following table shows the PostgreSQL extension versions that are currently s
 | oracle\_fdw | 2.8.0 | 2.8.0 | 2.8.0 | 2.8.0 | 2.8.0 | 2.7.0 | 2.7.0 | 2.6.0 | 2.6.0 | 2.6.0 | 2.6.0 | 2.6.0 | 2.5.0 | 2.5.0 | 2.5.0 |
 | [orafce](https://github.com/orafce/orafce) | 4.16.3 | 4.16.3 | 4.16.3 | 4.14.0 | 4.14.0 | 4.14.0 | 4.14.0 | 4.12.0 | 4.10.3 | 4.9.4 | 4.6.0 | 4.6.0 | 4.3.0 | 4.0.0 | 4.0.0 |
 | pg\_ad\_mapping | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 0.1 | 0.1 | 0.1 | N/A | N/A | N/A |
-| [pg\_bigm](https://pgbigm.osdn.jp/pg_bigm_en-1-2.html) | 1.2\_20250903 | 1.2\_20250903 | 1.2\_20250903 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 |
+| [pg\_bigm](https://github.com/pgbigm/pg_bigm) | 1.2\_20250903 | 1.2\_20250903 | 1.2\_20250903 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 |
 | [pg\_buffercache](http://www.postgresql.org/docs/12/pgbuffercache.html) | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 |
 | [pg\_cron](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/PostgreSQL_pg_cron.html) | 1.6.7 | 1.6.7 | 1.6.7 | 1.6.5 | 1.6.5 | 1.6.5 | 1.6.5 | 1.6.4 | 1.6.3 | 1.6.2 | 1.6.0 | 1.6.0 | 1.5 | 1.5 | 1.4.2 |
 | [pg\_freespacemap](https://www.postgresql.org/docs/12/pgfreespacemap.html) | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 |
@@ -490,7 +490,7 @@ The following table shows the PostgreSQL extension versions that are currently s
 | oracle\_fdw | 2.8.0 | 2.8.0 | 2.8.0 | 2.8.0 | 2.8.0 | 2.7.0 | 2.7.0 | 2.6.0 | 2.6.0 | 2.6.0 | 2.6.0 | 2.6.0 | 2.5.0 | 2.5.0 | 2.5.0 | 2.4.0 | 2.4.0 | 2.4.0 | 2.4.0 |
 | [orafce](https://github.com/orafce/orafce) | 4.16.3 | 4.16.3 | 4.16.3 | 4.14.0 | 4.14.0 | 4.14.0 | 4.14.0 | 4.12.0 | 4.10.3 | 4.9.4 | 4.6.0 | 4.6.0 | 4.3.0 | 4.0.0 | 4.0.0 | 3.2 | 3.2 | 3.2 | 3.2 |
 | pg\_ad\_mapping | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 0.1 | 0.1 | 0.1 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| [pg\_bigm](https://pgbigm.osdn.jp/pg_bigm_en-1-2.html) | 1.2\_20250903 | 1.2\_20250903 | 1.2\_20250903 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 |
+| [pg\_bigm](https://github.com/pgbigm/pg_bigm) | 1.2\_20250903 | 1.2\_20250903 | 1.2\_20250903 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 |
 | [pg\_buffercache](http://www.postgresql.org/docs/12/pgbuffercache.html) | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 |
 | [pg\_cron](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/PostgreSQL_pg_cron.html) | 1.6.7 | 1.6.7 | 1.6.7 | 1.6.5 | 1.6.5 | 1.6.5 | 1.6.5 | 1.6.4 | 1.6.3 | 1.6.2 | 1.6.0 | 1.6.0 | 1.5 | 1.5 | 1.4.2 | 1.4 | 1.4 | 1.4 | 1.4 |
 | [pg\_freespacemap](https://www.postgresql.org/docs/12/pgfreespacemap.html) | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 |
@@ -589,7 +589,7 @@ The following table shows the PostgreSQL extension versions that are currently s
 | [mysql\_fdw](https://github.com/EnterpriseDB/mysql_fdw) | 2.9.2 | 2.9.2 | 2.9.2 | 2.9.2 | 2.9.2 | 2.9.2 | 2.9.1 | 2.9.1 | 2.9.1 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | oracle\_fdw | 2.8.0 | 2.8.0 | 2.7.0 | 2.7.0 | 2.6.0 | 2.6.0 | 2.6.0 | 2.6.0 | 2.6.0 | 2.5.0 | 2.5.0 | 2.5.0 | 2.3.0 | 2.3.0 | 2.3.0 | 2.3.0 | 2.3.0 | 2.3.0 |
 | [orafce](https://github.com/orafce/orafce) | 4.14.0 | 4.14.0 | 4.14.0 | 4.14.0 | 4.12.0 | 4.10.3 | 4.9.4 | 4.6.0 | 4.6.0 | 4.3.0 | 4.0.0 | 4.0.0 | 3.2 | 3.2 | 3.2 | 3.2 | 3.2 | 3.2 |
-| [pg\_bigm](https://pgbigm.osdn.jp/pg_bigm_en-1-2.html) | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 |
+| [pg\_bigm](https://github.com/pgbigm/pg_bigm) | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 |
 | [pg\_buffercache](http://www.postgresql.org/docs/12/pgbuffercache.html) | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 |
 | [pg\_cron](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/PostgreSQL_pg_cron.html) | 1.6.5 | 1.6.5 | 1.6.5 | 1.6.5 | 1.6.4 | 1.6.3 | 1.6.2 | 1.6.0 | 1.6.0 | 1.5 | 1.5 | 1.4.2 | 1.4 | 1.4 | 1.4 | 1.4 | 1.4 | 1.3 |
 | [pg\_freespacemap](https://www.postgresql.org/docs/12/pgfreespacemap.html) | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 |
@@ -680,7 +680,7 @@ The following table shows the PostgreSQL extension versions that are currently s
 | [mysql\_fdw](https://github.com/EnterpriseDB/mysql_fdw) | 2.9.2 | 2.9.2 | 2.9.1 | 2.9.1 | 2.9.1 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | oracle\_fdw | 2.6.0 | 2.6.0 | 2.6.0 | 2.6.0 | 2.6.0 | 2.5.0 | 2.5.0 | 2.5.0 | 2.3.0 | 2.3.0 | 2.3.0 | 2.3.0 | 2.3.0 | 2.3.0 |
 | [orafce](https://github.com/orafce/orafce) | 4.12.0 | 4.10.3 | 4.9.4 | 4.6.0 | 4.6.0 | 4.3.0 | 4.0.0 | 4.0.0 | 3.16 | 3.16 | 3.16 | 3.16 | 3.16 | 3.16 |
-| [pg\_bigm](https://pgbigm.osdn.jp/pg_bigm_en-1-2.html) | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 |
+| [pg\_bigm](https://github.com/pgbigm/pg_bigm) | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 |
 | [pg\_buffercache](http://www.postgresql.org/docs/12/pgbuffercache.html) | [pg\_buffercache](http://www.postgresql.org/docs/12/pgbuffercache.html) | [pg\_buffercache](http://www.postgresql.org/docs/12/pgbuffercache.html) | [pg\_buffercache](http://www.postgresql.org/docs/12/pgbuffercache.html) | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 |
 | [pg\_cron](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/PostgreSQL_pg_cron.html) | 1.6.4 | 1.6.3 | 1.6.2 | 1.6.0 | 1.6.0 | 1.5 | 1.5 | 1.4.2 | 1.4.1 | 1.4.1 | 1.4.1 | 1.4.1 | 1.4.1 | 1.3.1 |
 | [pg\_freespacemap](https://www.postgresql.org/docs/12/pgfreespacemap.html) | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 |
@@ -767,7 +767,7 @@ The following table shows PostgreSQL extension versions currently supported on A
 | log\_fdw | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 |
 | [ltree](http://www.postgresql.org/docs/11/ltree.html) | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 |
 | [orafce](https://github.com/orafce/orafce) | 4.3.0 | 4.0.0 | 4.0.0 | 3.16 | 3.16 | 3.16 | 3.16 | 3.16 | 3.16 |
-| [pg\_bigm](https://pgbigm.osdn.jp/pg_bigm_en-1-2.html) | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 |
+| [pg\_bigm](https://github.com/pgbigm/pg_bigm) | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 |
 | [pg\_buffercache](http://www.postgresql.org/docs/11/pgbuffercache.html) | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 |
 | [pg\_freespacemap](https://www.postgresql.org/docs/11/pgfreespacemap.html) | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 |
 | [pg\_hint\_plan](https://github.com/ossc-db/pg_hint_plan/) | 1.3.8 | 1.3.8 | 1.3.8 | 1.3.7 | 1.3.7 | 1.3.7 | 1.3.7 | 1.3.7 | 1.3.5 |

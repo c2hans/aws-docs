@@ -17,7 +17,7 @@ Connect Customer provides a graphical user interface (GUI)‒based, self-service
 ## Flows
 <a name="flows.fb595fd3-f1bb-5099-b8fd-d520ba7676c1"></a>
 
-[Flows ](https://docs.aws.amazon.com/connect/latest/adminguide/connect-contact-flows.html)define the customer experience with your contact center from start to finish. They deliver your IVR options and also route callers to the right agents based on the information they have gathered. You can use flows to interact with other AWS services, such as [AWS Lambda](https://aws.amazon.com/lambda/), to create dynamic and personalized customer experiences. Flows can also integrate with [Amazon Lex](https://aws.amazon.com/lex/) to provide life-like natural language interactions.
+[Flows ](https://docs.aws.amazon.com/connect/latest/adminguide/connect-contact-flows.html)define the customer experience with your contact center from start to finish. They deliver your IVR options and also route callers to the right agents based on the information they have gathered. You can use flows to interact with other AWS services, such as [AWS Lambda](https://aws.amazon.com/lambda/), to create dynamic and personalized customer experiences. Flows can also integrate with [Amazon Lex V2](https://aws.amazon.com/lex/) to provide life-like natural language interactions.
 
 ## Flow modules
 <a name="flow-modules.89fcd796-451b-5273-baa0-8091bb490acc"></a>

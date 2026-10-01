@@ -33,10 +33,10 @@ Apps in Amazon Quick is available in a subset of the AWS Regions that Amazon Qui
 + **No investigation-only mode** — The agent executes code changes with every instruction. To have the agent investigate without making changes, explicitly say "Investigate but do not write code yet."
 + **Network sensitivity** — The editor uses a WebSocket for real-time streaming. Unstable connections can cause prompts to fail silently.
 
-## Live data (Quick Sight datasets)
+## Live data (Quick datasets)
 <a name="apps-limits-live-data"></a>
 
-When an app queries datasets directly for live data, the following limitations apply in the current release. For how to use live data, see [Using Quick Sight datasets in an app (live data)](working-with-data-apps.md#apps-live-data).
+When an app queries datasets directly for live data, the following limitations apply in the current release. For how to use live data, see [Connecting to Quick datasets in apps in Quick](connecting-datasets-apps.md).
 
 ### Data and datasets
 <a name="apps-limits-live-data-data"></a>
@@ -47,20 +47,15 @@ When an app queries datasets directly for live data, the following limitations a
 
 ### Sharing and access
 <a name="apps-limits-live-data-sharing"></a>
-+ **Sharing an app does not share its data** — Grant each viewer read access to every dataset the app uses, or share the folder that holds them.
-+ **Viewer roles** — Only Admin, Author, Admin Pro, Author Pro, and Reader Pro roles can view live data (Reader Pro only where enabled). Standard Reader and Restricted Reader cannot.
++ **Sharing an app does not share its data** — Grant each app user read access to every dataset the app uses, or share the folder that holds them.
++ **App user roles** — Only Admin, Author, Admin Pro, Author Pro, and Reader Pro roles can view live data (Reader Pro only where enabled). Standard Reader and Restricted Reader cannot.
 + **No public apps** — An app that uses live datasets cannot be made public.
-+ **One-time consent** — Each viewer approves a prompt per dataset the first time they open the app.
++ **One-time consent** — Each app user approves a prompt per dataset the first time they open the app.
 
 ### What to expect at scale
 <a name="apps-limits-live-data-scale"></a>
 + **Large datasets** — A visual shows up to 50,000 rows of data. If a visual tries to load more than that, it shows only the first 50,000 rows. A total calculated from the raw rows can therefore be inaccurate. Ask the agent to summarize the data, for example, totals by category, instead of listing every row.
 + **Many visuals on one page** — A page with many live visuals loads a little at a time rather than all at once. Keep the number of live visuals on a page reasonable, and ask the agent to combine related charts so they share data where possible.
-
-### Visuals
-<a name="apps-limits-live-data-visuals"></a>
-
-Visuals are built as code. The agent writes Highcharts-based charts, maps, and interactive tables. Quick Sight-native visual types, pivot tables, insights, forecasting, geocoding, and scheduled reports are not available unless the agent codes an equivalent.
 
 ### Dataset changes are not tracked
 <a name="apps-limits-live-data-changes"></a>

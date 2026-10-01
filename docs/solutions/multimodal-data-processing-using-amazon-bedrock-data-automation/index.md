@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/multimodal-data-processing-usi
 title: 'Guidance for Multimodal Data Processing Using Amazon Bedrock Data Automation'
 canonical_url: https://docs.aws.amazon.com/solutions/multimodal-data-processing-using-amazon-bedrock-data-automation/
 source: aws-documentation
-generated_on: 2026-09-30
+generated_on: 2026-10-01
 ---
 
 # Guidance for Multimodal Data Processing Using Amazon Bedrock Data Automation

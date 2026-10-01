@@ -35,7 +35,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/we
 + [Send custom attributes to Amazon Cognito and inject them into tokens](send-custom-attributes-cognito.md)
 + [Serve static content in an Amazon S3 bucket through a VPC by using Amazon CloudFront](serve-static-content-in-an-amazon-s3-bucket-through-a-vpc-by-using-amazon-cloudfront.md)
 + [Set up a highly available PeopleSoft architecture on AWS](set-up-a-highly-available-peoplesoft-architecture-on-aws.md)
-+ [Streamline Amazon Lex bot development and deployment by using an automated workflow](streamline-amazon-lex-bot-development-and-deployment-using-an-automated-workflow.md)
++ [Streamline Amazon Lex V2 bot development and deployment by using an automated workflow](streamline-amazon-lex-bot-development-and-deployment-using-an-automated-workflow.md)
 + [Troubleshoot states in AWS Step Functions by using Amazon Bedrock](troubleshooting-states-in-aws-step-functions.md)
 + [Use Network Firewall to capture the DNS domain names from the Server Name Indication for outbound traffic](use-network-firewall-to-capture-the-dns-domain-names-from-the-server-name-indication-sni-for-outbound-traffic.md)
 + [Visualize AI/ML model results using Flask and AWS Elastic Beanstalk](visualize-ai-ml-model-results-using-flask-and-aws-elastic-beanstalk.md)

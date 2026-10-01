@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/media2cloud-on-aws/index.html
 title: 'Guidance for Media2Cloud on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/media2cloud-on-aws/
 source: aws-documentation
-generated_on: 2026-09-30
+generated_on: 2026-10-01
 ---
 
 # Guidance for Media2Cloud on AWS

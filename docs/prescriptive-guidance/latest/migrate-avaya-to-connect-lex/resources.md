@@ -9,12 +9,12 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-ava
 <a name="aws-documentation"></a>
 + [Amazon Connect Customer documentation](https://docs.aws.amazon.com/connect/)
 + [AWS Lambda documentation](https://docs.aws.amazon.com/lambda/)
-+ [Amazon Lex documentation](https://docs.aws.amazon.com/lex/)
++ [Amazon Lex V2 documentation](https://docs.aws.amazon.com/lex/)
 
 ## AWS marketing and support
 <a name="aws-marketing-and-support"></a>
 + [Connect Customer](https://aws.amazon.com/connect/)
-+ [Amazon Lex](https://aws.amazon.com/lex/)
++ [Amazon Lex V2](https://aws.amazon.com/lex/)
 + [Connect Customer customers and case studies](https://aws.amazon.com/connect/customers/)
 + [Connect Customer resources](https://aws.amazon.com/connect/resources/)
 + [Connect Customer Partners](https://aws.amazon.com/connect/partners/)

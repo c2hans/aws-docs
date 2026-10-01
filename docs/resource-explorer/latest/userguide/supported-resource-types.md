@@ -202,7 +202,7 @@ As of July 9, 2024, Resource Explorer no longer supports the following resource 
 + [Amazon Managed Service for Apache Flink](#services-kinesisanalytics)
 + [Amazon Kinesis Video Streams](#services-kinesisvideo)
 + [AWS Lambda](#services-lambda)
-+ [Amazon Lex](#services-lex)
++ [Amazon Lex V2](#services-lex)
 + [AWS License Manager](#services-license-manager)
 + [Amazon MQ](#services-mq)
 + [AWS Mainframe Modernization](#services-m2)
@@ -1057,7 +1057,7 @@ As of July 9, 2024, Resource Explorer no longer supports the following resource 
 + `lambda:function/version`
 + `lambda:layer/version`
 
-### Amazon Lex
+### Amazon Lex V2
 <a name="services-lex"></a>
 + `lex:bot`
 + `lex:bot-alias`

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/custom-search-of-an-enterprise
 title: 'Guidance for Custom Search of an Enterprise Knowledge Base with Amazon OpenSearch Service'
 canonical_url: https://docs.aws.amazon.com/solutions/custom-search-of-an-enterprise-knowledge-base-with-amazon-opensearch-service/
 source: aws-documentation
-generated_on: 2026-09-30
+generated_on: 2026-10-01
 ---
 
 # Guidance for Custom Search of an Enterprise Knowledge Base with Amazon OpenSearch Service
@@ -26,8 +26,8 @@ These technical details feature an architecture diagram to illustrate how to eff
 1. **Step 1**: The user enters the search query or feedback on the website, which is hosted on AWS Amplify.
 1. **Step 2**: The website passes the input query or feedback to Amazon API Gateway and receives the response from API Gateway.
 1. **Step 3**: API Gateway passes the input query to the search, question, and answer component. This component has AWS Lambda integrated with Langchain, an opensource framework. The model library is served by Amazon Bedrock or Amazon SageMaker. A search engine component can have Amazon OpenSearch Service or Amazon Kendra. The Lambda function will first get the search results from the search engine (either from OpenSearch Service or Amazon Kendra). The Lambda function then inputs the prompt, which combines the query and search results returned from the search engine. It uses the Retrieval-Augmented Generation (RAG) process to optimize the output of the large language model (LLM) and returns the suggested answer from the LLM to API Gateway.
-1. **Step 4**: If the user uses a mobile client, the user can ask a question and get an answer from the artificial intelligence (AI) robot component that has Amazon Connect Customer and Amazon Lex.
-1. **Step 5**: Amazon Connect Customer transfers the voice into a text query and sends it to Amazon Lex. Amazon Lex passes the query to the search, question, and answer component to get the suggested answer in the same way as Step 3.
+1. **Step 4**: If the user uses a mobile client, the user can ask a question and get an answer from the artificial intelligence (AI) robot component that has Amazon Connect Customer and Amazon Lex V2.
+1. **Step 5**: Amazon Connect Customer transfers the voice into a text query and sends it to Amazon Lex V2. Amazon Lex V2 passes the query to the search, question, and answer component to get the suggested answer in the same way as Step 3.
 1. **Step 6**: API Gateway passes the feedback to the search optimize component, which has Lambda, Amazon DynamoDB, and Amazon EventBridge. The Lambda function writes the feedback into DynamoDB to help with adjusting the model in the next step.
 1. **Step 7**: EventBridge invokes Lambda to train an Extreme Gradient Boosting (XGBoost) model using the feedback stored in DynamoDB. Then the model, described by text through decision trees, is deployed to the search engine.
 1. **Step 8**: The Lambda function reads the original file from Amazon Simple Storage Service (Amazon S3) or the customer file system. Then it chunks, embeds, and ingests the data into the search engine. The embedding model is hosted on Amazon Bedrock or a SageMaker endpoint. This serves as the knowledge base for the search engine.
@@ -45,7 +45,7 @@ The architecture diagram above is an example of a Solution created with Well-Arc
 
 ### Operational Excellence
 
-All the services used in this Guidance, such as Lambda and API Gateway, provide Amazon CloudWatch metrics that can be used to monitor individual components of the Guidance. API Gateway and Lambda allow for publishing of new versions through an automated pipeline. CloudWatch is available for Amazon Connect Customer, Amazon Lex, and Amazon Kendra, enabling monitoring, metric collection, and performance analysis for these services. [Read the Operational Excellence whitepaper](/wellarchitected/latest/operational-excellence-pillar/welcome.html)
+All the services used in this Guidance, such as Lambda and API Gateway, provide Amazon CloudWatch metrics that can be used to monitor individual components of the Guidance. API Gateway and Lambda allow for publishing of new versions through an automated pipeline. CloudWatch is available for Amazon Connect Customer, Amazon Lex V2, and Amazon Kendra, enabling monitoring, metric collection, and performance analysis for these services. [Read the Operational Excellence whitepaper](/wellarchitected/latest/operational-excellence-pillar/welcome.html)
 
 ### Security
 
@@ -65,6 +65,6 @@ This Guidance uses Lambda to design all compute components of search and questio
 
 ### Sustainability
 
-This Guidance uses the scaling behaviors of Lambda, a SageMaker inference endpoint, and API Gateway to reduce over-provisioning resources. The serverless services, such as Lambda and API Gateway, are invoked only when there is a user query. It uses AWS Managed Services (AMS) to maximize resource utilization, and to reduce the amount of energy needed to run a given workload. Amplify, Amazon Connect Customer, and Amazon Lex leverage auto-scaling capabilities to continually match the load and allocate resources accordingly. By dynamically adjusting resource levels based on demand, these services ensure that only the minimum necessary resources are utilized, optimizing efficiency and cost-effectiveness. [Read the Sustainability whitepaper](/wellarchitected/latest/sustainability-pillar/sustainability-pillar.html)
+This Guidance uses the scaling behaviors of Lambda, a SageMaker inference endpoint, and API Gateway to reduce over-provisioning resources. The serverless services, such as Lambda and API Gateway, are invoked only when there is a user query. It uses AWS Managed Services (AMS) to maximize resource utilization, and to reduce the amount of energy needed to run a given workload. Amplify, Amazon Connect Customer, and Amazon Lex V2 leverage auto-scaling capabilities to continually match the load and allocate resources accordingly. By dynamically adjusting resource levels based on demand, these services ensure that only the minimum necessary resources are utilized, optimizing efficiency and cost-effectiveness. [Read the Sustainability whitepaper](/wellarchitected/latest/sustainability-pillar/sustainability-pillar.html)
 
 [Read usage guidelines](/solutions/guidance-disclaimers/)

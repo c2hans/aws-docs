@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/modern-contact-center-for-reta
 title: 'Guidance for a Modern Contact Center for Retailers on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/modern-contact-center-for-retailers-on-aws/
 source: aws-documentation
-generated_on: 2026-09-30
+generated_on: 2026-10-01
 ---
 
 # Guidance for a Modern Contact Center for Retailers on AWS
@@ -27,7 +27,7 @@ These technical details feature an architecture diagram to illustrate how to eff
 1. **Step 2**: Customer contact center receives or dials customer calls. Multiple agents, supervisors, or administrators can use various devices and channels, such as phones or chat through computers.
 1. **Step 3**: The retailer's Amazon Connect Customer instance captures the call details, including contact flow, call recordings, and call metrics.
 1. **Step 4**: Call details, including recordings, are stored in Amazon Simple Storage Service (Amazon S3). Amazon Kinesis prepares, redacts, or encrypts any payment card industry (PCI) or personally identifiable information (PII) before storing in Amazon S3.
-1. **Step 5**: Call flow integrations use Amazon EventBridge, AWS Lambda, Amazon Lex, and Amazon Polly. These services invoke event related processes and data dips with multiple source systems, or databases, to check the inventory, product, customer, and transaction history.
+1. **Step 5**: Call flow integrations use Amazon EventBridge, AWS Lambda, Amazon Lex V2, and Amazon Polly. These services invoke event related processes and data dips with multiple source systems, or databases, to check the inventory, product, customer, and transaction history.
 1. **Step 6**: Amazon Connect Customer Contact Lens provides real-time analytics of customer sentiment and their conversation using machine learning (ML).
 1. **Step 7**: Amazon Athena and Amazon Quicksight provide data analytics on the details from the stored calls.
 1. **Step 8**: Amazon Pinpoint is used for marketing or customer communication over channels like short message service (SMS), voice, or emails.
@@ -46,7 +46,7 @@ AWS Direct Connect, or a site-to-site virtual private network (VPN), provides se
 
 ### Reliability
 
-Amazon Polly, Amazon Lex, Amazon DynamoDB, and EventBridge are highly available and reliable managed services that help your workspaces scale in a stable environment. [Read the Reliability whitepaper](/wellarchitected/latest/reliability-pillar/welcome.html)
+Amazon Polly, Amazon Lex V2, Amazon DynamoDB, and EventBridge are highly available and reliable managed services that help your workspaces scale in a stable environment. [Read the Reliability whitepaper](/wellarchitected/latest/reliability-pillar/welcome.html)
 
 ### Performance Efficiency
 

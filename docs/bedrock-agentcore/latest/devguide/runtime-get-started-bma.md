@@ -377,6 +377,9 @@ agentcore logs --since 15m
 
 The first deploy turns on CloudWatch Transaction Search in your account. The traces show after about 10 minutes. To see the traces, open the CloudWatch console and choose **GenAI Observability**. Each call from Bedrock Managed Agents to the lifecycle server has one `bma.invocation` span. For more information, see [View observability data for your Amazon Bedrock AgentCore agents](observability-view.md).
 
+**Transaction Search settings apply to the entire account**
+Transaction Search and its span indexing apply to the entire account in the Region, and additional charges might apply. To keep your current settings, add `"disableTransactionSearch": true` to `~/.agentcore/config.json` before you deploy.
+
 ## Step 7: Update and redeploy
 <a name="runtime-get-started-bma-update"></a>
 
@@ -422,6 +425,28 @@ To delete a session, add `--delete` to the last run of the client for that sessi
 agentcore remove all
 agentcore deploy
 ```
+
+The deploy does not delete these resources:
++ The CloudWatch Logs log groups of the Runtime, of the CodeBuild project that builds the image, and of the Lambda function that starts the build.
++ The AWS KMS key of the Amazon ECR repository. The key stays in the **Pending deletion** state for 30 days, and then AWS KMS deletes it.
++ The `CDKToolkit` stack, if the first deploy bootstrapped the account and Region. Other AWS CDK apps can use this stack. Delete it only if no other app uses it.
++ The Transaction Search settings from Step 6.
+
+To find the log groups, run these commands. Then delete each log group.
+
+```
+aws logs describe-log-groups --log-group-name-prefix /aws/bedrock-agentcore/runtimes/<project-name>_<agent-name>- --query 'logGroups[].logGroupName'
+aws logs describe-log-groups --log-group-name-prefix /aws/codebuild/AgentCore-<project-name>-<target-name>- --query 'logGroups[].logGroupName'
+aws logs describe-log-groups --log-group-name-prefix /aws/lambda/AgentCore-<project-name>-<target-name>- --query 'logGroups[].logGroupName'
+aws logs delete-log-group --log-group-name <log-group-name>
+```
+
+Replace these values:
++  `<project-name>` - The name of the project. In Step 1, it is `MyManagedAgent`.
++  `<agent-name>` - The name of the agent. In Step 1, it is also `MyManagedAgent`.
++  `<target-name>` - The name of the deploy target in `agentcore/aws-targets.json`. The default is `default`. In the CodeBuild and Lambda names, each underscore (`_`) in the project name and the target name changes to a hyphen (`-`).
+
+If you added other resources to the project, such as a gateway or a memory, check that the deploy deleted them.
 
 ## Related resources
 <a name="runtime-get-started-bma-related"></a>

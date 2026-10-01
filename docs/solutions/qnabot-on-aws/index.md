@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com//solutions/qnabot-on-aws//index.html
 title: 'Guidance for QnABot on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/qnabot-on-aws/
 source: aws-documentation
-generated_on: 2026-09-30
+generated_on: 2026-10-01
 ---
 
 # Guidance for QnABot on AWS
@@ -35,12 +35,12 @@ This architecture diagram shows how to deploy a multi-channel, multi-language co
 
 ![Architecture diagram for QnABot on AWS](/images/solutions/qnabot-on-aws/images/qnabot-on-aws-1.png)
 
-1. **Step 1**: The admin deploys the solution into their AWS account, opens the Content Designer UI or Amazon Lex web client, and uses Amazon Cognito to authenticate.
+1. **Step 1**: The admin deploys the solution into their AWS account, opens the Content Designer UI or Amazon Lex V2 web client, and uses Amazon Cognito to authenticate.
 1. **Step 2**: After authentication, Amazon API Gateway and Amazon S3 deliver the contents of the Content Designer UI.
 1. **Step 3**: The admin configures questions and answers in the Content Designer and the UI sends requests to Amazon API Gateway to save the questions and answers.
 1. **Step 4**: The `Content Designer` AWS Lambda function saves the input in Amazon OpenSearch Service in a questions bank index. If using text embeddings, these requests will first pass through a LLM model hosted on Amazon Bedrock to generate embeddings before being saved into the question bank on OpenSearch. In addition, the `Content Designer` saves default and custom configuration settings in Amazon DynamoDB.
-1. **Step 5**: Users of the chatbot interact with Amazon Lex via the web client UI, Amazon Alexa or Amazon Connect Customer.
-1. **Step 6**: Amazon Lex forwards requests to the `Bot Fulfillment` AWS Lambda function. Users can also send requests to this Lambda function via Amazon Alexa devices. ***NOTE:*** When streaming is enabled, the chat client uses Amazon Lex sessionId to establish WebSocket connections through API Gateway V2.
+1. **Step 5**: Users of the chatbot interact with Amazon Lex V2 via the web client UI, Amazon Alexa or Amazon Connect Customer.
+1. **Step 6**: Amazon Lex V2 forwards requests to the `Bot Fulfillment` AWS Lambda function. Users can also send requests to this Lambda function via Amazon Alexa devices. ***NOTE:*** When streaming is enabled, the chat client uses Amazon Lex V2 sessionId to establish WebSocket connections through API Gateway V2.
 1. **Step 7**: The user and chat information is stored in Amazon DynamoDB to disambiguate follow up questions from previous question and answer context.
 1. **Step 8**: Amazon Comprehend and Amazon Translate (if necessary) are used by the `Bot Fulfillment` AWS Lambda function to translate non-native Language requests to the native Language selected by the user during the deployment and look up the answer in Amazon OpenSearch Service.
 1. **Step 9**: If using LLM features such as text generation and text embeddings, these requests will first pass through various models or inference profiles hosted on Amazon Bedrock to generate the search query and embeddings to compare with those saved in the question bank on OpenSearch. 1. If pre-processing guardrails are enabled, they scan and block potentially harmful user inputs before they reach the QnABot application. This acts as the first line of defense to prevent malicious or inappropriate queries from being processed. 2. If using Bedrock guardrails for LLMs or Knowledge Base, it can apply contextual guarding and safety controls during LLM inference to ensure appropriate answer generation. 3. If post-processing guardrails are enabled, they scan, mask, or block potentially harmful content in the final responses before they are sent to the client through the fulfillment Lambda. This serves as the last line of defense to ensure that sensitive information (like PII) is properly masked and inappropriate content is blocked.

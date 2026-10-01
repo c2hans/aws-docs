@@ -20,7 +20,7 @@ Use of Amazon Lex V2 is subject to the [AWS Service Terms](https://aws.amazon.co
 + [Setting up AppInstance bots for Amazon Chime SDK messaging](appinstance-bot-setup.md)
 + [Creating a channel membership for an AppInstanceBot for Amazon Chime SDK messaging](channel-membership.md)
 + [Sending messages to an AppInstanceBot for Amazon Chime SDK messaging](message-appinstancebot.md)
-+ [Processing messages from Amazon Lex for Amazon Chime SDK messaging](process-from-lexv2.md)
++ [Processing messages from Amazon Lex V2 for Amazon Chime SDK messaging](process-from-lexv2.md)
 + [Processing responses from an AppInstanceBot for Amazon Chime SDK messaging](process-response.md)
 + [Using rules to send events to Amazon EventBridge for Amazon Chime SDK messaging](event-bridge-alerts.md)
 + [Troubleshooting AppInstanceBots configured with Amazon Lex V2 bots for Amazon Chime SDK messaging](troubleshoot-lex-bots.md)
