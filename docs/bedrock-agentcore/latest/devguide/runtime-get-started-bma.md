@@ -26,7 +26,7 @@ The AWS resources that you create in this tutorial might result in charges to yo
 +  **Node.js 20 or later.** The AgentCore CLI is distributed as an npm package. Check with `node --version`.
 +  **uv.** The sample client uses [uv](https://docs.astral.sh/uv/) to install its Python dependencies.
 +  **An AWS account with credentials configured.** To create an account, see [Getting started with an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/getting-started.html). To configure credentials, see [Configuring the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html).
-+  **IAM permissions.** Your identity needs permissions to make AgentCore API calls and to assume the CDK bootstrap roles used during deployment. See [Use the AgentCore CLI](runtime-permissions.md#runtime-permissions-cli).
++  **IAM permissions.** Your identity needs permissions to make AgentCore API calls and to assume the CDK bootstrap roles used during deployment. See [Use the AgentCore CLI](runtime-permissions.md#runtime-permissions-cli). The sample client also needs IAM permissions. See [The session role](#runtime-get-started-bma-session-role).
 +  **Model access.** Your account needs access to the Bedrock Managed Agents model `openai.gpt-5.6-luna`.
 
 The CLI builds the container image with AWS CodeBuild in your account.
@@ -55,7 +55,7 @@ The project has the Runtime configuration in `agentcore/agentcore.json` and the 
 
 The project configures the Runtime with these defaults:
 + A 30 minute idle timeout and an 8 hour maximum lifetime. See [Configure lifecycle settings](runtime-lifecycle-settings.md).
-+ An execution role with the permissions in `bma-acr-policy.json`.
++ An execution role with the permissions in `policies/bma-acr-policy.json`.
 
 ### Project structure
 <a name="runtime-get-started-bma-project-structure"></a>
@@ -70,7 +70,10 @@ MyManagedAgent/
     ├── lifecycle/server.py
     ├── otel/collector.yaml
     ├── plugins/acr-report/
-    ├── bma-acr-policy.json
+    ├── policies/
+    │   ├── bma-acr-policy.json
+    │   ├── bma-session-trust.json
+    │   └── bma-session-policy.json
     ├── pyproject.toml
     ├── client.py
     └── README.md
@@ -81,8 +84,9 @@ Key files:
 +  `Dockerfile` - Installs Codex, the CloudWatch agent, and Python, and copies `lifecycle/`, `otel/`, and `plugins/` to `/opt/bma`.
 +  `otel/collector.yaml` - Sends the spans and logs of the exec-server to CloudWatch.
 +  `plugins/acr-report/` - A sample plugin with one skill. The skill saves `acr-report.txt` in the workspace.
-+  `bma-acr-policy.json` - Allows `bedrock-mantle:RegisterEnvironment` and `bedrock-mantle:ConnectEnvironment`. To limit it to one project, change `Resource` to `arn:aws:bedrock-mantle:<region>:<account-id>:project/<project-id>`.
++  `policies/bma-acr-policy.json` - The policy of the Runtime execution role. Allows `bedrock-mantle:RegisterEnvironment` and `bedrock-mantle:ConnectEnvironment`. To limit it to one project, change `Resource` to `arn:aws:bedrock-mantle:<region>:<account-id>:project/<project-id>`.
 +  `pyproject.toml` - The Python dependencies. The `dev` group is for `client.py` only.
++  `policies/bma-session-trust.json` and `policies/bma-session-policy.json` - The trust policy and the permissions of the session role. See [The session role](#runtime-get-started-bma-session-role).
 +  `client.py` - A sample client that starts a session. You run it in Step 3.
 
 ### Deploy the Runtime in a VPC
@@ -138,7 +142,7 @@ arn:aws:bedrock-agentcore:us-east-1:<account-id>:runtime/<runtime-id>
 ## Step 3: Run a session
 <a name="runtime-get-started-bma-client"></a>
 
-Bedrock Managed Agents must have permission to invoke your Runtime. This permission is separate from the Runtime execution role.
+Bedrock Managed Agents uses a session role to call the model and to invoke your Runtime. The session role is not the Runtime execution role. **When you run `client.py`, it creates the session role in your account.** `agentcore deploy` does not create the session role, and `agentcore remove` does not delete it. See [The session role](#runtime-get-started-bma-session-role).
 
 Run the client from the agent directory:
 
@@ -148,6 +152,27 @@ uv run client.py --runtime <runtime-arn>
 ```
 
 The client creates a session and prints the session ID, each command with its output, and the answer of the agent. By default, the agent uses the `acr-report` skill to save `acr-report.txt` in the workspace.
+
+The next section tells you how the client manages the session role, and which IAM permissions you need to run the client.
+
+### The session role
+<a name="runtime-get-started-bma-session-role"></a>
+
+The session role is not the Runtime execution role. `agentcore deploy` creates the execution role with `policies/bma-acr-policy.json`. The client gives the session role to Bedrock Managed Agents in the `role_arn` field when it creates a session.
+
+When you start a new session and do not give `--role-arn`, the client does these steps:
+
+1. If the role `BmaSessionRole-<region>` does not exist, the client creates it.
+
+1. The client compares the trust policy and the inline policy `BmaSession` of the role with `policies/bma-session-trust.json` and `policies/bma-session-policy.json`. If a policy is not the same, the client writes the file to the role. The files are limited to the account and the Region of the Runtime.
+
+1. If the client changed the role, it waits 15 seconds. IAM needs this time before Bedrock Managed Agents can use the change.
+
+To change the role, change the files. The client does not remove other policies that someone adds to the role. It does not check the role when you give `--session-id`, and it does not change a role that you give with `--role-arn`.
+
+The identity that runs the client needs the Bedrock Managed Agents client permissions, `bedrock-mantle:CallWithBearerToken`, and `iam:PassRole` on the session role. To let the client create and repair the role, also give `iam:GetRole`, `iam:CreateRole`, `iam:UpdateAssumeRolePolicy`, `iam:GetRolePolicy`, and `iam:PutRolePolicy` on `arn:aws:iam::<account-id>:role/BmaSessionRole-*`. If you give `--role-arn`, the client does not need these five permissions.
+
+For the trust policy, the permissions of the session role, and the client permissions, see [Security and IAM roles](https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-managed-agents-openai-security.html) in the *Amazon Bedrock User Guide*.
 
 ### How the client works
 <a name="runtime-get-started-bma-client-code"></a>
@@ -161,6 +186,8 @@ When the client creates the session, it sets these values in `environment`:
 +  `runtime_qualifier` - The endpoint of the Runtime. The client uses `DEFAULT`.
 +  `capability_directories` - The directories where Bedrock Managed Agents finds skills. The client uses `/opt/bma/plugins`.
 
+The client also sets `role_arn` in `extra_body` to the session role. The `openai` package does not have a parameter for this field.
+
 The `provide_token` helper uses your AWS credentials to get a short-lived Amazon Bedrock bearer token for each request.
 
 ```
@@ -168,9 +195,13 @@ The `provide_token` helper uses your AWS credentials to get a short-lived Amazon
 
 import argparse
 import json
+import time
+from pathlib import Path
 from typing import Any
 
+import boto3
 from aws_bedrock_token_generator import provide_token
+from botocore.exceptions import ClientError
 from openai import NotFoundError, OpenAI
 
 BMA_MODEL_ID = "openai.gpt-5.6-luna"
@@ -181,6 +212,9 @@ WORKSPACE_DIRECTORY = "/home/app/workspace"
 CAPABILITY_DIRECTORIES = ["/opt/bma/plugins"]
 TURN_END = ("completed", "failed", "cancelled")
 TOOL_CALLS = ("mcp_call", "function_call", "web_search_call")
+POLICIES = Path(__file__).parent / "policies"
+SESSION_ROLE = "BmaSessionRole-{region}"
+SESSION_POLICY = "BmaSession"
 
 def show(data: dict[str, Any]) -> None:
     """Prints the session ID, the commands, the tool calls, and the answer."""
@@ -198,6 +232,50 @@ def show(data: dict[str, Any]) -> None:
         source = data.get("turn") or data.get("environment") or data.get("session")
         print(f"\n{kind} {(source or data).get('error') or ''}".rstrip())
 
+def load_policy(name: str, partition: str, region: str, account: str) -> str:
+    """Reads a policy file and puts in the partition, the Region, and the account."""
+    text = (POLICIES / name).read_text()
+    for key, value in (("Partition", partition), ("Region", region), ("AccountId", account)):
+        text = text.replace("${AWS::" + key + "}", value)
+    return text
+
+def session_role(runtime_arn: str) -> str:
+    """Creates or repairs the session role, and returns its ARN.
+
+    If the trust policy or the policy of the role is not the same as the file in `policies/`,
+    the client writes the file to the role.
+    """
+    _, partition, _, region, account = runtime_arn.split(":")[:5]
+    name = SESSION_ROLE.format(region=region)
+    trust = load_policy("bma-session-trust.json", partition, region, account)
+    policy = load_policy("bma-session-policy.json", partition, region, account)
+    iam = boto3.client("iam")
+    changed = False
+    try:
+        role = iam.get_role(RoleName=name)["Role"]
+    except iam.exceptions.NoSuchEntityException:
+        role = iam.create_role(RoleName=name, AssumeRolePolicyDocument=trust)["Role"]
+        print(f"Created the session role {name}")
+        changed = True
+    else:
+        if role["AssumeRolePolicyDocument"] != json.loads(trust):
+            iam.update_assume_role_policy(RoleName=name, PolicyDocument=trust)
+            print(f"Updated the trust policy of {name}")
+            changed = True
+    try:
+        current = iam.get_role_policy(RoleName=name, PolicyName=SESSION_POLICY)["PolicyDocument"]
+    except iam.exceptions.NoSuchEntityException:
+        current = None
+    if current != json.loads(policy):
+        iam.put_role_policy(RoleName=name, PolicyName=SESSION_POLICY, PolicyDocument=policy)
+        if not changed:
+            print(f"Updated the policy of {name}")
+        changed = True
+    if changed:
+        # IAM needs some seconds before Bedrock Managed Agents can use a new or changed role.
+        time.sleep(15)
+    return role["Arn"]
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--runtime", required=True, help="The ACR ARN.")
@@ -212,6 +290,10 @@ def main() -> None:
     parser.add_argument(
         "--gateway",
         help="The Gateway URL from the output of `agentcore deploy`.",
+    )
+    parser.add_argument(
+        "--role-arn",
+        help="The session role that BMA assumes. If you do not give it, the client creates a role.",
     )
     parser.add_argument("--delete", action="store_true", help="Delete the session.")
     parser.add_argument("--raw", action="store_true", help="Print events as JSON.")
@@ -234,6 +316,15 @@ def main() -> None:
             else:
                 if session["environment"].get("runtime_arn") != args.runtime:
                     raise ValueError(f"Session {session_id} uses another ACR.")
+        if not session_id and not args.role_arn:
+            try:
+                args.role_arn = session_role(args.runtime)
+            except ClientError as error:
+                parser.error(
+                    f"The client cannot create or check the session role: {error}. "
+                    "Get the IAM permissions in README.md, or give --role-arn."
+                )
+            print(f"Session role {args.role_arn}")
 
         if session_id:
             # BMA opens the stream only with stream=true, and the SDK does not send it.
@@ -277,6 +368,8 @@ def main() -> None:
                 },
                 input=args.input,
                 stream=True,
+                # The SDK has no role_arn parameter. BMA assumes this role to call the ACR.
+                extra_body={"role_arn": args.role_arn},
             )
 
         with events:
@@ -431,6 +524,14 @@ The deploy does not delete these resources:
 + The AWS KMS key of the Amazon ECR repository. The key stays in the **Pending deletion** state for 30 days, and then AWS KMS deletes it.
 + The `CDKToolkit` stack, if the first deploy bootstrapped the account and Region. Other AWS CDK apps can use this stack. Delete it only if no other app uses it.
 + The Transaction Search settings from Step 6.
++ The session role that `client.py` created in Step 3.
+
+To delete the session role, run these commands:
+
+```
+aws iam delete-role-policy --role-name BmaSessionRole-<region> --policy-name BmaSession
+aws iam delete-role --role-name BmaSessionRole-<region>
+```
 
 To find the log groups, run these commands. Then delete each log group.
 

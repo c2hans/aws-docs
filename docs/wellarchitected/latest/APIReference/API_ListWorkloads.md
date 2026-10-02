@@ -40,12 +40,13 @@ Required: No
  ** [NextToken](#API_ListWorkloads_RequestSyntax) **   <a name="wellarchitected-ListWorkloads-request-NextToken"></a>
 The token to use to retrieve the next set of results.
 Type: String
+Pattern: `[A-Za-z0-9+\/=_-]+`
 Required: No
 
  ** [WorkloadNamePrefix](#API_ListWorkloads_RequestSyntax) **   <a name="wellarchitected-ListWorkloads-request-WorkloadNamePrefix"></a>
 An optional string added to the beginning of each workload name returned in the results.
 Type: String
-Length Constraints: Maximum length of 100.
+Length Constraints: Minimum length of 0. Maximum length of 100.
 Required: No
 
 ## Response Syntax
@@ -93,6 +94,7 @@ The following data is returned in JSON format by the service.
  ** [NextToken](#API_ListWorkloads_ResponseSyntax) **   <a name="wellarchitected-ListWorkloads-response-NextToken"></a>
 The token to use to retrieve the next set of results.
 Type: String
+Pattern: `[A-Za-z0-9+\/=_-]+`
 
  ** [WorkloadSummaries](#API_ListWorkloads_ResponseSyntax) **   <a name="wellarchitected-ListWorkloads-response-WorkloadSummaries"></a>
 A list of workload summaries.

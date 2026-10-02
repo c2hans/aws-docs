@@ -23,7 +23,7 @@ The request uses the following URI parameters.
 
  ** [LensNamePrefix](#API_ListShareInvitations_RequestSyntax) **   <a name="wellarchitected-ListShareInvitations-request-uri-LensNamePrefix"></a>
 An optional string added to the beginning of each lens name returned in the results.
-Length Constraints: Maximum length of 100.
+Length Constraints: Minimum length of 0. Maximum length of 100.
 
  ** [MaxResults](#API_ListShareInvitations_RequestSyntax) **   <a name="wellarchitected-ListShareInvitations-request-uri-MaxResults"></a>
 The maximum number of results to return for this request.
@@ -31,10 +31,11 @@ Valid Range: Minimum value of 1. Maximum value of 50.
 
  ** [NextToken](#API_ListShareInvitations_RequestSyntax) **   <a name="wellarchitected-ListShareInvitations-request-uri-NextToken"></a>
 The token to use to retrieve the next set of results.
+Pattern: `[A-Za-z0-9+\/=_-]+`
 
  ** [ProfileNamePrefix](#API_ListShareInvitations_RequestSyntax) **   <a name="wellarchitected-ListShareInvitations-request-uri-ProfileNamePrefix"></a>
 An optional string added to the beginning of each profile name returned in the results.
-Length Constraints: Maximum length of 100.
+Length Constraints: Minimum length of 0. Maximum length of 100.
 
  ** [ShareResourceType](#API_ListShareInvitations_RequestSyntax) **   <a name="wellarchitected-ListShareInvitations-request-uri-ShareResourceType"></a>
 The type of share invitations to be returned.
@@ -42,12 +43,12 @@ Valid Values: `WORKLOAD | LENS | PROFILE | TEMPLATE`
 
  ** [TemplateNamePrefix](#API_ListShareInvitations_RequestSyntax) **   <a name="wellarchitected-ListShareInvitations-request-uri-TemplateNamePrefix"></a>
 An optional string added to the beginning of each review template name returned in the results.
-Length Constraints: Maximum length of 100.
-Pattern: `^[A-Za-z0-9-_.,:/()@!&?#+'’\s]+$`
+Length Constraints: Minimum length of 0. Maximum length of 100.
+Pattern: `[A-Za-z0-9-_.,:/()@!&?#+'’\s]+`
 
  ** [WorkloadNamePrefix](#API_ListShareInvitations_RequestSyntax) **   <a name="wellarchitected-ListShareInvitations-request-uri-WorkloadNamePrefix"></a>
 An optional string added to the beginning of each workload name returned in the results.
-Length Constraints: Maximum length of 100.
+Length Constraints: Minimum length of 0. Maximum length of 100.
 
 ## Request Body
 <a name="API_ListShareInvitations_RequestBody"></a>
@@ -93,6 +94,7 @@ The following data is returned in JSON format by the service.
  ** [NextToken](#API_ListShareInvitations_ResponseSyntax) **   <a name="wellarchitected-ListShareInvitations-response-NextToken"></a>
 The token to use to retrieve the next set of results.
 Type: String
+Pattern: `[A-Za-z0-9+\/=_-]+`
 
  ** [ShareInvitationSummaries](#API_ListShareInvitations_ResponseSyntax) **   <a name="wellarchitected-ListShareInvitations-response-ShareInvitationSummaries"></a>
 List of share invitation summaries in a workload.

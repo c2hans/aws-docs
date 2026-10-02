@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/ebs/index.html
 title: 'Amazon EBS Documentation'
 canonical_url: https://docs.aws.amazon.com/ebs/
 source: aws-documentation
-generated_on: 2026-10-01
+generated_on: 2026-10-02
 ---
 
 # Amazon EBS Documentation

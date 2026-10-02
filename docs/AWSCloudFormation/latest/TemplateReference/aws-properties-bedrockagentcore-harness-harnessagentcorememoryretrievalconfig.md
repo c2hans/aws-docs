@@ -41,6 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 The minimum relevance score for retrieved memories.
 *Required*: No
 *Type*: String
+*Pattern*: `^[0-9]+(\.[0-9]+)?$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `StrategyId`  <a name="cfn-bedrockagentcore-harness-harnessagentcorememoryretrievalconfig-strategyid"></a>
@@ -53,4 +54,5 @@ The ID of the retrieval strategy to use.
 The maximum number of memory entries to retrieve.
 *Required*: No
 *Type*: String
+*Pattern*: `^[0-9]+$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

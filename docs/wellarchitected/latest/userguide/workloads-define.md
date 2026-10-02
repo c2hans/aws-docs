@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/workloads-define.html
 ---
 
+AWS Well-Architected Agent is in preview release and is subject to change.
+
 # Define a workload in AWS Well-Architected Tool
 <a name="workloads-define"></a>
 

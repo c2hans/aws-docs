@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/milestone-report.html
 ---
 
+AWS Well-Architected Agent is in preview release and is subject to change.
+
 # Generating a milestone report
 <a name="milestone-report"></a>
 

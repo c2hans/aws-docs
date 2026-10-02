@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/ta-checks-page.html
 ---
 
+AWS Well-Architected Agent is in preview release and is subject to change.
+
 # Viewing Trusted Advisor checks for your workload
 <a name="ta-checks-page"></a>
 

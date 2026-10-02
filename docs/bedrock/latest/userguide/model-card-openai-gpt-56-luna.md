@@ -138,14 +138,14 @@ Commercial In-Region prices include a 10% fee over OpenAI rates. You do not need
 
 | **Inference option** | **Input** | **Input — 30m cache write** | **Input — cache read** | **Output** |
 | --- | --- | --- | --- | --- |
-| In-Region | $0.264 | $0.33 | $0.0264 | $1.584 |
+| In-Region | $0.27 | $0.3375 | $0.027 | $1.62 |
 
 #### Long context (more than 272K input tokens)
 <a name="model-card-openai-gpt-56-luna-pricing-govcloud-long"></a>
 
 | **Inference option** | **Input** | **Input — 30m cache write** | **Input — cache read** | **Output** |
 | --- | --- | --- | --- | --- |
-| In-Region | $0.528 | $0.66 | $0.0528 | $2.376 |
+| In-Region | $0.54 | $0.675 | $0.054 | $2.43 |
 
 ## Programmatic Access
 <a name="model-card-openai-gpt-56-luna-programmatic-access"></a>

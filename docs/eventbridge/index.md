@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/eventbridge/index.html
 title: 'Amazon EventBridge Documentation'
 canonical_url: https://docs.aws.amazon.com/eventbridge/
 source: aws-documentation
-generated_on: 2026-10-01
+generated_on: 2026-10-02
 ---
 
 # Amazon EventBridge Documentation
@@ -17,6 +17,7 @@ Amazon EventBridge is a serverless event bus service that makes it easy to conne
 
 - [EventBridge User Guide](/eventbridge/latest/userguide/): Describes key concepts of Amazon EventBridge and provides instructions for using the features of Amazon EventBridge.
 - [EventBridge API Reference](/eventbridge/latest/APIReference/): Describes the core API operations for Amazon EventBridge in detail.
+- [EventBridge V2 API Reference](/eventbridgev2/latest/APIReference/Welcome.html): Describes the API operations for the next-generation Amazon EventBridge v2 API.
 - [EventBridge section of AWS CLI Reference](/cli/latest/reference/events/index.html): Documents the Amazon EventBridge commands available in the AWS Command Line Interface (AWS CLI).
 - [EventBridge Pipes](/eventbridge/latest/userguide/eb-pipes.html): Provides a conceptual overview and the API operations for using Amazon EventBridge Pipes.
 - [Events Reference](/eventbridge/latest/ref/): Provides a comprehensive listing of the events that AWS services send to Amazon EventBridge.

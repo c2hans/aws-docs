@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/data-lakes-with-sap-and-non-sa
 title: 'Guidance for Data Lakes with SAP and Non-SAP Data on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/data-lakes-with-sap-and-non-sap-data-on-aws/
 source: aws-documentation
-generated_on: 2026-10-01
+generated_on: 2026-10-02
 ---
 
 # Guidance for Data Lakes with SAP and Non-SAP Data on AWS

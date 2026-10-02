@@ -9,6 +9,8 @@ Initiates a flow to start a new chat for the customer. Response of this API prov
 
 When a new chat contact is successfully created, clients must subscribe to the participant’s connection for the created chat within 5 minutes. This is achieved by invoking [CreateParticipantConnection](https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_CreateParticipantConnection.html) with WEBSOCKET and CONNECTION\_CREDENTIALS.
 
+To receive connection information directly in the response, set `ConnectionTypes` on the request. To initiate real-time message streaming when the chat is created, set `ChatStreamingConfiguration` on the request. Both parameters are optional.
+
 A 429 error occurs in the following situations:
 + API rate limit is exceeded. API TPS throttling returns a `TooManyRequests` exception.
 + The [quota for concurrent active chats](https://docs.aws.amazon.com/connect/latest/adminguide/amazon-connect-service-limits.html) is exceeded. Active chat throttling returns a `LimitExceededException`.
@@ -31,7 +33,11 @@ Content-type: application/json
       "{{string}}" : "{{string}}"
    },
    "ChatDurationInMinutes": {{number}},
+   "ChatStreamingConfiguration": {
+      "StreamingEndpointArn": "{{string}}"
+   },
    "ClientToken": "{{string}}",
+   "ConnectionTypes": [ "{{string}}" ],
    "ContactFlowId": "{{string}}",
    "CustomerId": "{{string}}",
    "DisconnectOnCustomerExit": [ "{{string}}" ],
@@ -92,10 +98,31 @@ Type: Integer
 Valid Range: Minimum value of 60. Maximum value of 10080.
 Required: No
 
+ ** [ChatStreamingConfiguration](#API_StartChatContact_RequestSyntax) **   <a name="connect-StartChatContact-request-ChatStreamingConfiguration"></a>
+The streaming configuration, such as the Amazon SNS streaming endpoint. Use it to initiate real-time message streaming when the chat is created. This parameter is optional.
+Setting this parameter returns a `StreamingId` in the response, and you do not need to call [StartContactStreaming](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartContactStreaming.html).
+This parameter starts message streaming only. The response does not include connection information, and setting this parameter does not remove the need to call [CreateParticipantConnection](https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_CreateParticipantConnection.html).
+Type: [ChatStreamingConfiguration](API_ChatStreamingConfiguration.md) object
+Required: No
+
  ** [ClientToken](#API_StartChatContact_RequestSyntax) **   <a name="connect-StartChatContact-request-ClientToken"></a>
 A unique, case-sensitive identifier that you provide to ensure the idempotency of the request. If not provided, the AWS SDK populates this field. For more information about idempotency, see [Making retries safe with idempotent APIs](https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/).
 Type: String
 Length Constraints: Maximum length of 500.
+Required: No
+
+ ** [ConnectionTypes](#API_StartChatContact_RequestSyntax) **   <a name="connect-StartChatContact-request-ConnectionTypes"></a>
+The types of connection information to return in the response. This parameter is optional.
+To receive connection information, specify one or both of the following values:
++  `CONNECTION_CREDENTIALS`: Returns a connection token.
++  `WEBSOCKET`: Returns a websocket URL.
+ `WEBSOCKET` and `CONNECTION_CREDENTIALS` are the values this operation acts on. No other value returns connection information.
+Request `WEBSOCKET` to get a URL the participant connects to directly. You do not need to call [CreateParticipantConnection](https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_CreateParticipantConnection.html) for it. Request `CONNECTION_CREDENTIALS` on its own and the response returns a connection token but no websocket URL.
+If you omit this parameter, the response has no connection information.
+When you start a new chat contact and the information you request cannot be returned, StartChatContact returns an error rather than a response that omits it. When you retry a request with the same `ClientToken`, the response repeats the original contact and can omit a websocket URL if the chat has already ended.
+Type: Array of strings
+Array Members: Minimum number of 1 item. Maximum number of 2 items.
+Valid Values: `WEBSOCKET | CONNECTION_CREDENTIALS | AUTHENTICATION_SESSION | WEBRTC_CONNECTION`
 Required: No
 
  ** [ContactFlowId](#API_StartChatContact_RequestSyntax) **   <a name="connect-StartChatContact-request-ContactFlowId"></a>
@@ -176,10 +203,19 @@ HTTP/1.1 200
 Content-type: application/json
 
 {
+   "ConnectionCredentials": {
+      "ConnectionToken": "string",
+      "Expiry": "string"
+   },
    "ContactId": "string",
    "ContinuedFromContactId": "string",
    "ParticipantId": "string",
-   "ParticipantToken": "string"
+   "ParticipantToken": "string",
+   "StreamingId": "string",
+   "Websocket": {
+      "ConnectionExpiry": "string",
+      "Url": "string"
+   }
 }
 ```
 
@@ -189,6 +225,10 @@ Content-type: application/json
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
+
+ ** [ConnectionCredentials](#API_StartChatContact_ResponseSyntax) **   <a name="connect-StartChatContact-response-ConnectionCredentials"></a>
+The connection credentials for the chat participant. Returned only when the request includes `CONNECTION_CREDENTIALS` in `ConnectionTypes`.
+Type: [ConnectionCredentials](API_ConnectionCredentials.md) object
 
  ** [ContactId](#API_StartChatContact_ResponseSyntax) **   <a name="connect-StartChatContact-response-ContactId"></a>
 The identifier of this contact within the Connect Customer instance.
@@ -209,6 +249,15 @@ Length Constraints: Minimum length of 1. Maximum length of 256.
 The token used by the chat participant to call [CreateParticipantConnection](https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_CreateParticipantConnection.html). The participant token is valid for the lifetime of a chat participant.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1000.
+
+ ** [StreamingId](#API_StartChatContact_ResponseSyntax) **   <a name="connect-StartChatContact-response-StreamingId"></a>
+The identifier of the streaming configuration enabled with the chat. Returned only when the request sets `ChatStreamingConfiguration`. Use this value to call [StopContactStreaming](https://docs.aws.amazon.com/connect/latest/APIReference/API_StopContactStreaming.html).
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 100.
+
+ ** [Websocket](#API_StartChatContact_ResponseSyntax) **   <a name="connect-StartChatContact-response-Websocket"></a>
+The websocket for the chat participant. Returned only when the request includes `WEBSOCKET` in `ConnectionTypes`.
+Type: [Websocket](API_Websocket.md) object
 
 ## Errors
 <a name="API_StartChatContact_Errors"></a>

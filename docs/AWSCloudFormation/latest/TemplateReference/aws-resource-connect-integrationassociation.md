@@ -24,6 +24,9 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[InstanceId](#cfn-connect-integrationassociation-instanceid)" : {{String}},
       "[IntegrationArn](#cfn-connect-integrationassociation-integrationarn)" : {{String}},
       "[IntegrationType](#cfn-connect-integrationassociation-integrationtype)" : {{String}},
+      "[SourceApplicationName](#cfn-connect-integrationassociation-sourceapplicationname)" : {{String}},
+      "[SourceApplicationUrl](#cfn-connect-integrationassociation-sourceapplicationurl)" : {{String}},
+      "[SourceType](#cfn-connect-integrationassociation-sourcetype)" : {{String}},
       "[Tags](#cfn-connect-integrationassociation-tags)" : {{[ Tag, ... ]}}
     }
 }
@@ -38,6 +41,9 @@ Properties:
   [InstanceId](#cfn-connect-integrationassociation-instanceid): {{String}}
   [IntegrationArn](#cfn-connect-integrationassociation-integrationarn): {{String}}
   [IntegrationType](#cfn-connect-integrationassociation-integrationtype): {{String}}
+  [SourceApplicationName](#cfn-connect-integrationassociation-sourceapplicationname): {{String}}
+  [SourceApplicationUrl](#cfn-connect-integrationassociation-sourceapplicationurl): {{String}}
+  [SourceType](#cfn-connect-integrationassociation-sourcetype): {{String}}
   [Tags](#cfn-connect-integrationassociation-tags): {{
     - Tag}}
 ```
@@ -71,7 +77,31 @@ Specifies the integration type to be associated with the instance.
 *Allowed Values*: `LEX_BOT` \| `LAMBDA_FUNCTION`
 *Required*: Yes
 *Type*: String
-*Allowed values*: `LEX_BOT | LAMBDA_FUNCTION | APPLICATION | CASES_DOMAIN | WISDOM_ASSISTANT | WISDOM_KNOWLEDGE_BASE | WISDOM_QUICK_RESPONSES | FILE_SCANNER | MESSAGE_PROCESSOR | Q_MESSAGE_TEMPLATES | SES_IDENTITY`
+*Allowed values*: `LEX_BOT | LAMBDA_FUNCTION | APPLICATION | CASES_DOMAIN | WISDOM_ASSISTANT | WISDOM_KNOWLEDGE_BASE | WISDOM_QUICK_RESPONSES | FILE_SCANNER | MESSAGE_PROCESSOR | Q_MESSAGE_TEMPLATES | SES_IDENTITY | EVENT`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`SourceApplicationName`  <a name="cfn-connect-integrationassociation-sourceapplicationname"></a>
+The user-provided, friendly name for the external application.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9_ -]+$`
+*Minimum*: `1`
+*Maximum*: `100`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`SourceApplicationUrl`  <a name="cfn-connect-integrationassociation-sourceapplicationurl"></a>
+The URL for the external application.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `2000`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`SourceType`  <a name="cfn-connect-integrationassociation-sourcetype"></a>
+The name of the source.
+*Required*: No
+*Type*: String
+*Allowed values*: `SALESFORCE | ZENDESK | CASES`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Tags`  <a name="cfn-connect-integrationassociation-tags"></a>

@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/activate-ta-for-workload.html
 ---
 
+AWS Well-Architected Agent is in preview release and is subject to change.
+
 # Activating AWS Trusted Advisor for a workload
 <a name="activate-ta-for-workload"></a>
 

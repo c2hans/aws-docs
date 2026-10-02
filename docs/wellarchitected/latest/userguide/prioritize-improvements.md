@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/prioritize-improvements.html
 ---
 
+AWS Well-Architected Agent is in preview release and is subject to change.
+
 # Prioritize improvements
 <a name="prioritize-improvements"></a>
 

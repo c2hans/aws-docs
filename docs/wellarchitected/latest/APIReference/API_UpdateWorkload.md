@@ -61,7 +61,7 @@ The request accepts the following data in JSON format.
  ** [AccountIds](#API_UpdateWorkload_RequestSyntax) **   <a name="wellarchitected-UpdateWorkload-request-AccountIds"></a>
 The list of AWS account IDs associated with the workload.
 Type: Array of strings
-Array Members: Maximum number of 100 items.
+Array Members: Minimum number of 0 items. Maximum number of 100 items.
 Length Constraints: Fixed length of 12.
 Pattern: `[0-9]{12}`
 Required: No
@@ -69,23 +69,23 @@ Required: No
  ** [Applications](#API_UpdateWorkload_RequestSyntax) **   <a name="wellarchitected-UpdateWorkload-request-Applications"></a>
 List of AppRegistry application ARNs to associate to the workload.
 Type: Array of strings
-Array Members: Maximum number of 1 item.
-Length Constraints: Maximum length of 2084.
+Array Members: Minimum number of 0 items. Maximum number of 1 item.
+Length Constraints: Minimum length of 0. Maximum length of 2084.
 Pattern: `arn:aws[-a-z]*:servicecatalog:[a-z]{2}(-gov)?-[a-z]+-\d:\d{12}:/applications/[a-z0-9]+`
 Required: No
 
  ** [ArchitecturalDesign](#API_UpdateWorkload_RequestSyntax) **   <a name="wellarchitected-UpdateWorkload-request-ArchitecturalDesign"></a>
 The URL of the architectural design for the workload.
 Type: String
-Length Constraints: Maximum length of 2048.
-Pattern: `^(|(https?|ftp):\/\/[^\s/$.?#].[^\s]*)$`
+Length Constraints: Minimum length of 0. Maximum length of 2048.
+Pattern: `(|(https?|ftp):\/\/[^\s/$.?#].[^\s]*)`
 Required: No
 
  ** [AwsRegions](#API_UpdateWorkload_RequestSyntax) **   <a name="wellarchitected-UpdateWorkload-request-AwsRegions"></a>
 The list of AWS Regions associated with the workload, for example, `us-east-2`, or `ca-central-1`.
 Type: Array of strings
-Array Members: Maximum number of 50 items.
-Length Constraints: Maximum length of 100.
+Array Members: Minimum number of 0 items. Maximum number of 50 items.
+Length Constraints: Minimum length of 0. Maximum length of 100.
 Required: No
 
  ** [Description](#API_UpdateWorkload_RequestSyntax) **   <a name="wellarchitected-UpdateWorkload-request-Description"></a>
@@ -114,7 +114,7 @@ Required: No
  ** [Industry](#API_UpdateWorkload_RequestSyntax) **   <a name="wellarchitected-UpdateWorkload-request-Industry"></a>
 The industry for the workload.
 Type: String
-Length Constraints: Maximum length of 100.
+Length Constraints: Minimum length of 0. Maximum length of 100.
 Required: No
 
  ** [IndustryType](#API_UpdateWorkload_RequestSyntax) **   <a name="wellarchitected-UpdateWorkload-request-IndustryType"></a>
@@ -148,7 +148,7 @@ If specified, must be one of the following:
 +  `Travel, Transportation & Logistics`
 +  `Other`
 Type: String
-Length Constraints: Maximum length of 100.
+Length Constraints: Minimum length of 0. Maximum length of 100.
 Required: No
 
  ** [IsReviewOwnerUpdateAcknowledged](#API_UpdateWorkload_RequestSyntax) **   <a name="wellarchitected-UpdateWorkload-request-IsReviewOwnerUpdateAcknowledged"></a>
@@ -165,7 +165,7 @@ Required: No
  ** [NonAwsRegions](#API_UpdateWorkload_RequestSyntax) **   <a name="wellarchitected-UpdateWorkload-request-NonAwsRegions"></a>
  The list of non-AWS Regions associated with the workload.
 Type: Array of strings
-Array Members: Maximum number of 5 items.
+Array Members: Minimum number of 0 items. Maximum number of 5 items.
 Length Constraints: Minimum length of 3. Maximum length of 25.
 Required: No
 
@@ -173,7 +173,7 @@ Required: No
 The notes associated with the workload.
 For a review template, these are the notes that will be associated with the workload when the template is applied.
 Type: String
-Length Constraints: Maximum length of 2084.
+Length Constraints: Minimum length of 0. Maximum length of 2084.
 Required: No
 
  ** [PillarPriorities](#API_UpdateWorkload_RequestSyntax) **   <a name="wellarchitected-UpdateWorkload-request-PillarPriorities"></a>

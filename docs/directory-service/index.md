@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/directory-service/index.html
 title: 'Directory Service Documentation'
 canonical_url: https://docs.aws.amazon.com/directory-service/
 source: aws-documentation
-generated_on: 2026-10-01
+generated_on: 2026-10-02
 ---
 
 # Directory Service Documentation

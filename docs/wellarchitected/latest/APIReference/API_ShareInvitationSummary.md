@@ -30,7 +30,7 @@ Required: No
  ** ProfileArn **   <a name="wellarchitected-Type-ShareInvitationSummary-ProfileArn"></a>
 The profile ARN.
 Type: String
-Length Constraints: Maximum length of 2084.
+Length Constraints: Minimum length of 0. Maximum length of 2084.
 Pattern: `arn:aws[-a-z]*:wellarchitected:[a-z]{2}(-gov)?-[a-z]+-\d:\d{12}:profile/[a-z0-9]+`
 Required: No
 
@@ -76,7 +76,7 @@ Required: No
 The name of the review template.
 Type: String
 Length Constraints: Minimum length of 3. Maximum length of 100.
-Pattern: `^[A-Za-z0-9-_.,:/()@!&?#+'’\s]+$`
+Pattern: `[A-Za-z0-9-_.,:/()@!&?#+'’\s]+`
 Required: No
 
  ** WorkloadId **   <a name="wellarchitected-Type-ShareInvitationSummary-WorkloadId"></a>

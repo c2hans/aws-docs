@@ -32,7 +32,7 @@ The request uses the following URI parameters.
 
  ** [ProfileArn](#API_UpdateProfile_RequestSyntax) **   <a name="wellarchitected-UpdateProfile-request-uri-ProfileArn"></a>
 The profile ARN.
-Length Constraints: Maximum length of 2084.
+Length Constraints: Minimum length of 0. Maximum length of 2084.
 Pattern: `arn:aws[-a-z]*:wellarchitected:[a-z]{2}(-gov)?-[a-z]+-\d:\d{12}:profile/[a-z0-9]+`
 Required: Yes
 

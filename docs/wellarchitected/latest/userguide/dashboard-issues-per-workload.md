@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/dashboard-issues-per-workload.html
 ---
 
+AWS Well-Architected Agent is in preview release and is subject to change.
+
 # Well-Architected Framework issues per workload
 <a name="dashboard-issues-per-workload"></a>
 

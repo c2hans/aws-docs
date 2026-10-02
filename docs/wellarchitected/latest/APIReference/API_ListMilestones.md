@@ -45,6 +45,7 @@ Required: No
  ** [NextToken](#API_ListMilestones_RequestSyntax) **   <a name="wellarchitected-ListMilestones-request-NextToken"></a>
 The token to use to retrieve the next set of results.
 Type: String
+Pattern: `[A-Za-z0-9+\/=_-]+`
 Required: No
 
 ## Response Syntax
@@ -102,6 +103,7 @@ Type: Array of [MilestoneSummary](API_MilestoneSummary.md) objects
  ** [NextToken](#API_ListMilestones_ResponseSyntax) **   <a name="wellarchitected-ListMilestones-response-NextToken"></a>
 The token to use to retrieve the next set of results.
 Type: String
+Pattern: `[A-Za-z0-9+\/=_-]+`
 
  ** [WorkloadId](#API_ListMilestones_ResponseSyntax) **   <a name="wellarchitected-ListMilestones-response-WorkloadId"></a>
 The ID assigned to the workload. This ID is unique within an AWS Region.

@@ -32,8 +32,14 @@ The timestamp when the dry run was last updated.
 Type: String
 Required: Yes
 
+ ** AcceptedWarnings **   <a name="opensearchservice-Type-DryRunProgressStatus-AcceptedWarnings"></a>
+The list of advisory warning codes that were accepted for the configuration change.
+Type: Array of strings
+Array Members: Maximum number of 25 items.
+Required: No
+
  ** ValidationFailures **   <a name="opensearchservice-Type-DryRunProgressStatus-ValidationFailures"></a>
-Any validation failures that occurred as a result of the dry run.
+The validation failures that occurred as a result of the dry run.
 Type: Array of [ValidationFailure](API_ValidationFailure.md) objects
 Required: No
 

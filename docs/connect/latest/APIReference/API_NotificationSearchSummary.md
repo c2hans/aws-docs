@@ -19,7 +19,7 @@ Required: No
 The localized content of the notification.
 Type: String to string map
 Valid Keys: `en_US | de_DE | es_ES | fr_FR | id_ID | it_IT | ja_JP | ko_KR | pt_BR | zh_CN | zh_TW`
-Value Length Constraints: Minimum length of 0. Maximum length of 500.
+Value Length Constraints: Minimum length of 0. Maximum length of 3000.
 Required: No
 
  ** CreatedAt **   <a name="connect-Type-NotificationSearchSummary-CreatedAt"></a>

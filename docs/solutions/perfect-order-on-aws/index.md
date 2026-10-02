@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/perfect-order-on-aws/index.htm
 title: 'Guidance for Perfect Order on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/perfect-order-on-aws/
 source: aws-documentation
-generated_on: 2026-10-01
+generated_on: 2026-10-02
 ---
 
 # Guidance for Perfect Order on AWS

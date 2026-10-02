@@ -56,7 +56,7 @@ You should not reuse the same token for other requests. If you retry a request w
 This token is listed as required, however, if you do not specify it, the AWS SDKs automatically generate one for you. If you are not using the AWS SDK or the AWS CLI, you must provide this token or the request will fail.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
-Pattern: `^[\x00-\x7F]*$`
+Pattern: `[\x00-\x7F]*`
 Required: Yes
 
  ** [SharedWith](#API_CreateLensShare_RequestSyntax) **   <a name="wellarchitected-CreateLensShare-request-SharedWith"></a>

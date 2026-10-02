@@ -25,7 +25,7 @@ Valid Range: Minimum value of 1. Maximum value of 100.
 Required: No
 
  ** RecordedAt **   <a name="wellarchitected-Type-Milestone-RecordedAt"></a>
-The date and time recorded in Unix format (seconds).
+The date and time when the milestone was recorded.
 Type: Timestamp
 Required: No
 

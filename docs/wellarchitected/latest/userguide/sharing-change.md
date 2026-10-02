@@ -2,7 +2,9 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/sharing-change.html
 ---
 
-# Modify shared access in AWS Well-Architected Tool
+AWS Well-Architected Agent is in preview release and is subject to change.
+
+# Modify shared access in AWS Well-Architected
 <a name="sharing-change"></a>
 
 You can modify a pending or accepted workload invitation.

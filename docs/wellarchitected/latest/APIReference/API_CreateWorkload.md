@@ -74,7 +74,7 @@ The request accepts the following data in JSON format.
  ** [AccountIds](#API_CreateWorkload_RequestSyntax) **   <a name="wellarchitected-CreateWorkload-request-AccountIds"></a>
 The list of AWS account IDs associated with the workload.
 Type: Array of strings
-Array Members: Maximum number of 100 items.
+Array Members: Minimum number of 0 items. Maximum number of 100 items.
 Length Constraints: Fixed length of 12.
 Pattern: `[0-9]{12}`
 Required: No
@@ -82,23 +82,23 @@ Required: No
  ** [Applications](#API_CreateWorkload_RequestSyntax) **   <a name="wellarchitected-CreateWorkload-request-Applications"></a>
 List of AppRegistry application ARNs associated to the workload.
 Type: Array of strings
-Array Members: Maximum number of 1 item.
-Length Constraints: Maximum length of 2084.
+Array Members: Minimum number of 0 items. Maximum number of 1 item.
+Length Constraints: Minimum length of 0. Maximum length of 2084.
 Pattern: `arn:aws[-a-z]*:servicecatalog:[a-z]{2}(-gov)?-[a-z]+-\d:\d{12}:/applications/[a-z0-9]+`
 Required: No
 
  ** [ArchitecturalDesign](#API_CreateWorkload_RequestSyntax) **   <a name="wellarchitected-CreateWorkload-request-ArchitecturalDesign"></a>
 The URL of the architectural design for the workload.
 Type: String
-Length Constraints: Maximum length of 2048.
-Pattern: `^(|(https?|ftp):\/\/[^\s/$.?#].[^\s]*)$`
+Length Constraints: Minimum length of 0. Maximum length of 2048.
+Pattern: `(|(https?|ftp):\/\/[^\s/$.?#].[^\s]*)`
 Required: No
 
  ** [AwsRegions](#API_CreateWorkload_RequestSyntax) **   <a name="wellarchitected-CreateWorkload-request-AwsRegions"></a>
 The list of AWS Regions associated with the workload, for example, `us-east-2`, or `ca-central-1`.
 Type: Array of strings
-Array Members: Maximum number of 50 items.
-Length Constraints: Maximum length of 100.
+Array Members: Minimum number of 0 items. Maximum number of 50 items.
+Length Constraints: Minimum length of 0. Maximum length of 100.
 Required: No
 
  ** [ClientRequestToken](#API_CreateWorkload_RequestSyntax) **   <a name="wellarchitected-CreateWorkload-request-ClientRequestToken"></a>
@@ -107,7 +107,7 @@ You should not reuse the same token for other requests. If you retry a request w
 This token is listed as required, however, if you do not specify it, the AWS SDKs automatically generate one for you. If you are not using the AWS SDK or the AWS CLI, you must provide this token or the request will fail.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
-Pattern: `^[\x00-\x7F]*$`
+Pattern: `[\x00-\x7F]*`
 Required: Yes
 
  ** [Description](#API_CreateWorkload_RequestSyntax) **   <a name="wellarchitected-CreateWorkload-request-Description"></a>
@@ -130,7 +130,7 @@ Required: Yes
  ** [Industry](#API_CreateWorkload_RequestSyntax) **   <a name="wellarchitected-CreateWorkload-request-Industry"></a>
 The industry for the workload.
 Type: String
-Length Constraints: Maximum length of 100.
+Length Constraints: Minimum length of 0. Maximum length of 100.
 Required: No
 
  ** [IndustryType](#API_CreateWorkload_RequestSyntax) **   <a name="wellarchitected-CreateWorkload-request-IndustryType"></a>
@@ -164,7 +164,7 @@ If specified, must be one of the following:
 +  `Travel, Transportation & Logistics`
 +  `Other`
 Type: String
-Length Constraints: Maximum length of 100.
+Length Constraints: Minimum length of 0. Maximum length of 100.
 Required: No
 
  ** [JiraConfiguration](#API_CreateWorkload_RequestSyntax) **   <a name="wellarchitected-CreateWorkload-request-JiraConfiguration"></a>
@@ -182,7 +182,7 @@ Required: Yes
  ** [NonAwsRegions](#API_CreateWorkload_RequestSyntax) **   <a name="wellarchitected-CreateWorkload-request-NonAwsRegions"></a>
  The list of non-AWS Regions associated with the workload.
 Type: Array of strings
-Array Members: Maximum number of 5 items.
+Array Members: Minimum number of 0 items. Maximum number of 5 items.
 Length Constraints: Minimum length of 3. Maximum length of 25.
 Required: No
 
@@ -190,7 +190,7 @@ Required: No
 The notes associated with the workload.
 For a review template, these are the notes that will be associated with the workload when the template is applied.
 Type: String
-Length Constraints: Maximum length of 2084.
+Length Constraints: Minimum length of 0. Maximum length of 2084.
 Required: No
 
  ** [PillarPriorities](#API_CreateWorkload_RequestSyntax) **   <a name="wellarchitected-CreateWorkload-request-PillarPriorities"></a>
@@ -202,8 +202,8 @@ Required: No
  ** [ProfileArns](#API_CreateWorkload_RequestSyntax) **   <a name="wellarchitected-CreateWorkload-request-ProfileArns"></a>
 The list of profile ARNs associated with the workload.
 Type: Array of strings
-Array Members: Maximum number of 1 item.
-Length Constraints: Maximum length of 2084.
+Array Members: Minimum number of 0 items. Maximum number of 1 item.
+Length Constraints: Minimum length of 0. Maximum length of 2084.
 Pattern: `arn:aws[-a-z]*:wellarchitected:[a-z]{2}(-gov)?-[a-z]+-\d:\d{12}:profile/[a-z0-9]+`
 Required: No
 
@@ -216,7 +216,7 @@ Required: No
  ** [ReviewTemplateArns](#API_CreateWorkload_RequestSyntax) **   <a name="wellarchitected-CreateWorkload-request-ReviewTemplateArns"></a>
 The list of review template ARNs to associate with the workload.
 Type: Array of strings
-Array Members: Maximum number of 1 item.
+Array Members: Minimum number of 0 items. Maximum number of 1 item.
 Length Constraints: Minimum length of 50. Maximum length of 250.
 Pattern: `arn:aws(-us-gov|-iso(-[a-z])?|-cn)?:wellarchitected:[a-z]{2}(-gov|-iso([a-z])?)?-[a-z]+-\d:\d{12}:(review-template)/[a-f0-9]{32}`
 Required: No
@@ -226,6 +226,7 @@ The tags to be associated with the workload.
 Type: String to string map
 Map Entries: Maximum number of 50 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
+Key Pattern: `[\p{L}\p{N}\p{Z}_.:/=+@-]+`
 Value Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 

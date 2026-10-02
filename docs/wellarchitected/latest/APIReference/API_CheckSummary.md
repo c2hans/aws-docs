@@ -69,7 +69,7 @@ Valid Values: `OKAY | WARNING | ERROR | NOT_AVAILABLE | FETCH_FAILED`
 Required: No
 
  ** UpdatedAt **   <a name="wellarchitected-Type-CheckSummary-UpdatedAt"></a>
-The date and time recorded in Unix format (seconds).
+The date and time when the check summary was last updated.
 Type: Timestamp
 Required: No
 

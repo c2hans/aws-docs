@@ -11,7 +11,7 @@ Summary of a profile.
 <a name="API_ProfileSummary_Contents"></a>
 
  ** CreatedAt **   <a name="wellarchitected-Type-ProfileSummary-CreatedAt"></a>
-The date and time recorded in Unix format (seconds).
+The date and time when the profile was created.
 Type: Timestamp
 Required: No
 
@@ -25,7 +25,7 @@ Required: No
  ** ProfileArn **   <a name="wellarchitected-Type-ProfileSummary-ProfileArn"></a>
 The profile ARN.
 Type: String
-Length Constraints: Maximum length of 2084.
+Length Constraints: Minimum length of 0. Maximum length of 2084.
 Pattern: `arn:aws[-a-z]*:wellarchitected:[a-z]{2}(-gov)?-[a-z]+-\d:\d{12}:profile/[a-z0-9]+`
 Required: No
 
@@ -45,11 +45,11 @@ Required: No
 The profile version.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 32.
-Pattern: `^[A-Za-z0-9-]+$`
+Pattern: `[A-Za-z0-9-]+`
 Required: No
 
  ** UpdatedAt **   <a name="wellarchitected-Type-ProfileSummary-UpdatedAt"></a>
-The date and time recorded in Unix format (seconds).
+The date and time when the profile was last updated.
 Type: Timestamp
 Required: No
 

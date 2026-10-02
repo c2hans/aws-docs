@@ -35,7 +35,7 @@ Required: No
 The AWS Availability Zone of the event. For example, us-east-1a.
 Type: String
 Length Constraints: Minimum length of 6. Maximum length of 18.
-Pattern: `[a-z]{2}\-[0-9a-z\-]{4,16}`
+Pattern: `[a-z]{2,4}\-[0-9a-z\-]{4,16}`
 Required: No
 
  ** endTime **   <a name="AWSHealth-Type-Event-endTime"></a>

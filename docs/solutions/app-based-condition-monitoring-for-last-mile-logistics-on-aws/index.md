@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/app-based-condition-monitoring
 title: 'Guidance for App-based Condition Monitoring for Last-Mile Logistics on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/app-based-condition-monitoring-for-last-mile-logistics-on-aws/
 source: aws-documentation
-generated_on: 2026-10-01
+generated_on: 2026-10-02
 ---
 
 # Guidance for App-based Condition Monitoring for Last-Mile Logistics on AWS

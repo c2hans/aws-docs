@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/connecting-data-from-google-an
 title: 'Guidance for Connecting Data from Google Analytics® to AWS Clean Rooms'
 canonical_url: https://docs.aws.amazon.com/solutions/connecting-data-from-google-analytics/
 source: aws-documentation
-generated_on: 2026-10-01
+generated_on: 2026-10-02
 ---
 
 # Guidance for Connecting Data from Google Analytics® to AWS Clean Rooms

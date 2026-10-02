@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/lenses-format-specification.html
 ---
 
+AWS Well-Architected Agent is in preview release and is subject to change.
+
 # Lens format specification in AWS WA Tool
 <a name="lenses-format-specification"></a>
 

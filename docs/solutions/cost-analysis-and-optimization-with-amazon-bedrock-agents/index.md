@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/cost-analysis-and-optimization
 title: 'Guidance for Cost Analysis and Optimization with Amazon Bedrock Agents'
 canonical_url: https://docs.aws.amazon.com/solutions/cost-analysis-and-optimization-with-amazon-bedrock-agents/
 source: aws-documentation
-generated_on: 2026-10-01
+generated_on: 2026-10-02
 ---
 
 # Guidance for Cost Analysis and Optimization with Amazon Bedrock Agents

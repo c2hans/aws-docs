@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/waf.html
 ---
 
+AWS Well-Architected Agent is in preview release and is subject to change.
+
 # What is AWS Well-Architected Framework?
 <a name="waf"></a>
 

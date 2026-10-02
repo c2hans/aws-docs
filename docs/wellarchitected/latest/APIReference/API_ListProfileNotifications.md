@@ -11,7 +11,7 @@ List profile notifications.
 <a name="API_ListProfileNotifications_RequestSyntax"></a>
 
 ```
-GET /profileNotifications/?MaxResults={{MaxResults}}&NextToken={{NextToken}}&WorkloadId={{WorkloadId}} HTTP/1.1
+GET /profileNotifications?MaxResults={{MaxResults}}&NextToken={{NextToken}}&WorkloadId={{WorkloadId}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -25,6 +25,7 @@ Valid Range: Minimum value of 1. Maximum value of 50.
 
  ** [NextToken](#API_ListProfileNotifications_RequestSyntax) **   <a name="wellarchitected-ListProfileNotifications-request-uri-NextToken"></a>
 The token to use to retrieve the next set of results.
+Pattern: `[A-Za-z0-9+\/=_-]+`
 
  ** [WorkloadId](#API_ListProfileNotifications_RequestSyntax) **   <a name="wellarchitected-ListProfileNotifications-request-uri-WorkloadId"></a>
 The ID assigned to the workload. This ID is unique within an AWS Region.
@@ -69,6 +70,7 @@ The following data is returned in JSON format by the service.
  ** [NextToken](#API_ListProfileNotifications_ResponseSyntax) **   <a name="wellarchitected-ListProfileNotifications-response-NextToken"></a>
 The token to use to retrieve the next set of results.
 Type: String
+Pattern: `[A-Za-z0-9+\/=_-]+`
 
  ** [NotificationSummaries](#API_ListProfileNotifications_ResponseSyntax) **   <a name="wellarchitected-ListProfileNotifications-response-NotificationSummaries"></a>
 Notification summaries.

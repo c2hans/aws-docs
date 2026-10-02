@@ -463,7 +463,8 @@ Content-type: application/json
                   "errorCode": "string",
                   "remoteAccountDetails": {
                      "accountId": "string",
-                     "affiliated": boolean
+                     "affiliated": boolean,
+                     "awsServiceName": "string"
                   },
                   "remoteIpDetails": {
                      "city": {

@@ -19,6 +19,7 @@ Attaches a policy to a root, an organizational unit (OU), or an individual accou
 +  [BEDROCK\_POLICY](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_bedrock.html)
 +  [S3\_POLICY](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_s3.html)
 +  [NETWORK\_SECURITY\_DIRECTOR\_POLICY](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_network_security_director.html)
++  [GUARDDUTY\_POLICY](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_guardduty.html)
 
 You can only call this operation from the management account or a member account that is a delegated administrator.
 

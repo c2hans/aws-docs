@@ -471,6 +471,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Read
 
+- **   GetRemediationsV2  **
+  - **IAM action:**  [securityhub:GetRemediationsV2](#list_securityhub-action-GetRemediationsV2)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   GetResourcesStatisticsV2  **
   - **IAM action:**  [securityhub:GetResourcesStatisticsV2](#list_securityhub-action-GetResourcesStatisticsV2)
   - **Condition key:**
@@ -545,6 +551,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   ListEnabledProductsForImport  **
   - **IAM action:**  [securityhub:ListEnabledProductsForImport](#list_securityhub-action-ListEnabledProductsForImport)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListExposuresByRemediationV2  **
+  - **IAM action:**  [securityhub:ListExposuresByRemediationV2](#list_securityhub-action-ListExposuresByRemediationV2)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List

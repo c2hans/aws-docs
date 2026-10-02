@@ -612,6 +612,24 @@ The following policy grants full permission to create, list, view, export compli
         "artifact:ListTagsForResource"
       ],
       "Resource": "arn:aws:artifact:*:*:compliance-inquiry/*"
+    },
+    {
+      "Sid": "NotificationConfigurationListActions",
+      "Effect": "Allow",
+      "Action": [
+        "notifications:ListNotificationConfigurations",
+        "notifications:ListChannels",
+        "notifications:ListEventRules"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "NotificationConfigurationContactReadActions",
+      "Effect": "Allow",
+      "Action": [
+        "notifications-contacts:GetEmailContact"
+      ],
+      "Resource": "*"
     }
   ]
 }

@@ -44,6 +44,7 @@ Content-type: application/json
 
 {
    "ChangeProgressStatus": {
+      "AcceptedWarnings": [ "string" ],
       "ChangeId": "string",
       "ChangeProgressStages": [
          {
@@ -60,7 +61,14 @@ Content-type: application/json
       "PendingProperties": [ "string" ],
       "StartTime": number,
       "Status": "string",
-      "TotalNumberOfStages": number
+      "TotalNumberOfStages": number,
+      "ValidationFailures": [
+         {
+            "Code": "string",
+            "Message": "string",
+            "Severity": "string"
+         }
+      ]
    }
 }
 ```

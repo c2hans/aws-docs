@@ -25,6 +25,7 @@ Valid Range: Minimum value of 1. Maximum value of 50.
 
  ** [NextToken](#API_ListReviewTemplates_RequestSyntax) **   <a name="wellarchitected-ListReviewTemplates-request-uri-NextToken"></a>
 The token to use to retrieve the next set of results.
+Pattern: `[A-Za-z0-9+\/=_-]+`
 
 ## Request Body
 <a name="API_ListReviewTemplates_RequestBody"></a>
@@ -64,6 +65,7 @@ The following data is returned in JSON format by the service.
  ** [NextToken](#API_ListReviewTemplates_ResponseSyntax) **   <a name="wellarchitected-ListReviewTemplates-response-NextToken"></a>
 The token to use to retrieve the next set of results.
 Type: String
+Pattern: `[A-Za-z0-9+\/=_-]+`
 
  ** [ReviewTemplates](#API_ListReviewTemplates_ResponseSyntax) **   <a name="wellarchitected-ListReviewTemplates-response-ReviewTemplates"></a>
 List of review templates.

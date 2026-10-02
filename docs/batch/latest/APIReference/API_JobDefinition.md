@@ -58,7 +58,7 @@ Required: No
 
  ** nodeProperties **   <a name="Batch-Type-JobDefinition-nodeProperties"></a>
 An object with properties that are specific to multi-node parallel jobs. When `nodeProperties` is used in the job definition, it can't be used in addition to `containerProperties`, `ecsProperties`, or `eksProperties`.
-If the job runs on Fargate resources, don't specify `nodeProperties`. Use `containerProperties` instead.
+If the job runs on Fargate resources, don't specify `nodeProperties`. We recommend `ecsProperties`, which supports both single-container and multi-container jobs. `containerProperties` is also supported for single-container jobs.
 Type: [NodeProperties](API_NodeProperties.md) object
 Required: No
 

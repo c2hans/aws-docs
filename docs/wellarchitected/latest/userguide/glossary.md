@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/glossary.html
 ---
 
+AWS Well-Architected Agent is in preview release and is subject to change.
+
 # AWS Glossary
 <a name="glossary"></a>
 

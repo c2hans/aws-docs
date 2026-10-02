@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/data-transfer-from-amazon-s3-g
 title: 'Guidance for Data Transfer from Amazon S3 Glacier Vaults to Amazon S3'
 canonical_url: https://docs.aws.amazon.com/solutions/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3/
 source: aws-documentation
-generated_on: 2026-10-01
+generated_on: 2026-10-02
 ---
 
 # Guidance for Data Transfer from Amazon S3 Glacier Vaults to Amazon S3

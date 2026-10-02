@@ -14,7 +14,7 @@ A review template.
 The review template description.
 Type: String
 Length Constraints: Minimum length of 3. Maximum length of 250.
-Pattern: `^[A-Za-z0-9-_.,:/()@!&?#+'’\s]+$`
+Pattern: `[A-Za-z0-9-_.,:/()@!&?#+'’\s]+`
 Required: No
 
  ** Lenses **   <a name="wellarchitected-Type-ReviewTemplate-Lenses"></a>
@@ -27,7 +27,7 @@ Required: No
 The notes associated with the workload.
 For a review template, these are the notes that will be associated with the workload when the template is applied.
 Type: String
-Length Constraints: Maximum length of 2084.
+Length Constraints: Minimum length of 0. Maximum length of 2084.
 Required: No
 
  ** Owner **   <a name="wellarchitected-Type-ReviewTemplate-Owner"></a>
@@ -55,6 +55,7 @@ The tags assigned to the review template.
 Type: String to string map
 Map Entries: Maximum number of 50 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
+Key Pattern: `[\p{L}\p{N}\p{Z}_.:/=+@-]+`
 Value Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 
@@ -69,11 +70,11 @@ Required: No
 The name of the review template.
 Type: String
 Length Constraints: Minimum length of 3. Maximum length of 100.
-Pattern: `^[A-Za-z0-9-_.,:/()@!&?#+'’\s]+$`
+Pattern: `[A-Za-z0-9-_.,:/()@!&?#+'’\s]+`
 Required: No
 
  ** UpdatedAt **   <a name="wellarchitected-Type-ReviewTemplate-UpdatedAt"></a>
-The date and time recorded in Unix format (seconds).
+The date and time when the review template was last updated.
 Type: Timestamp
 Required: No
 

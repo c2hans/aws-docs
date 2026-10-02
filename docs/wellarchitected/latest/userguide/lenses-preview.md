@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/lenses-preview.html
 ---
 
+AWS Well-Architected Agent is in preview release and is subject to change.
+
 # Previewing a custom lens for a workload in AWS WA Tool
 <a name="lenses-preview"></a>
 

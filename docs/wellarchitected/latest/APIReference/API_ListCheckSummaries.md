@@ -60,6 +60,7 @@ Required: No
  ** [NextToken](#API_ListCheckSummaries_RequestSyntax) **   <a name="wellarchitected-ListCheckSummaries-request-NextToken"></a>
 The token to use to retrieve the next set of results.
 Type: String
+Pattern: `[A-Za-z0-9+\/=_-]+`
 Required: No
 
  ** [PillarId](#API_ListCheckSummaries_RequestSyntax) **   <a name="wellarchitected-ListCheckSummaries-request-PillarId"></a>
@@ -118,6 +119,7 @@ Type: Array of [CheckSummary](API_CheckSummary.md) objects
  ** [NextToken](#API_ListCheckSummaries_ResponseSyntax) **   <a name="wellarchitected-ListCheckSummaries-response-NextToken"></a>
 The token to use to retrieve the next set of results.
 Type: String
+Pattern: `[A-Za-z0-9+\/=_-]+`
 
 ## Errors
 <a name="API_ListCheckSummaries_Errors"></a>

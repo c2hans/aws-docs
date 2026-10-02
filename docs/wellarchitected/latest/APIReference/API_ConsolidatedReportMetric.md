@@ -35,7 +35,7 @@ Valid Range: Minimum value of 0.
 Required: No
 
  ** UpdatedAt **   <a name="wellarchitected-Type-ConsolidatedReportMetric-UpdatedAt"></a>
-The date and time recorded in Unix format (seconds).
+The date and time when the consolidated report metric was last updated.
 Type: Timestamp
 Required: No
 

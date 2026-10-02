@@ -99,7 +99,6 @@ The following AWS services support IAM global condition keys for enriched events
 + AWS Lambda
 + AWS License Manager
 + Amazon Lookout for Equipment
-+ Amazon Lookout for Vision
 + AWS Network Firewall
 + AWS Payment Cryptography
 + Amazon Personalize

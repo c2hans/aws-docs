@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketMetadat
 <a name="API_GetBucketMetadataTableConfiguration"></a>
 
 **Important**
- We recommend that you retrieve your S3 Metadata configurations by using the V2 [GetBucketMetadataTableConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketMetadataTableConfiguration.html) API operation. We no longer recommend using the V1 `GetBucketMetadataTableConfiguration` API operation.
+ We recommend that you retrieve your S3 Metadata configurations by using the V2 [GetBucketMetadataConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketMetadataConfiguration.html) API operation. We no longer recommend using the V1 `GetBucketMetadataTableConfiguration` API operation.
 If you created your S3 Metadata configuration before July 15, 2025, we recommend that you delete and re-create your configuration by using [CreateBucketMetadataConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateBucketMetadataConfiguration.html) so that you can expire journal table records and create a live inventory table.
 
  Retrieves the V1 S3 Metadata configuration for a general purpose bucket. For more information, see [Accelerating data discovery with S3 Metadata](https://docs.aws.amazon.com/AmazonS3/latest/userguide/metadata-tables-overview.html) in the *Amazon S3 User Guide*.

@@ -25,10 +25,11 @@ Valid Range: Minimum value of 1. Maximum value of 50.
 
  ** [NextToken](#API_ListWorkloadShares_RequestSyntax) **   <a name="wellarchitected-ListWorkloadShares-request-uri-NextToken"></a>
 The token to use to retrieve the next set of results.
+Pattern: `[A-Za-z0-9+\/=_-]+`
 
  ** [SharedWithPrefix](#API_ListWorkloadShares_RequestSyntax) **   <a name="wellarchitected-ListWorkloadShares-request-uri-SharedWithPrefix"></a>
 The AWS account ID, organization ID, or organizational unit (OU) ID with which the workload is shared.
-Length Constraints: Maximum length of 100.
+Length Constraints: Minimum length of 0. Maximum length of 100.
 
  ** [Status](#API_ListWorkloadShares_RequestSyntax) **   <a name="wellarchitected-ListWorkloadShares-request-uri-Status"></a>
 The status of the share request.
@@ -77,6 +78,7 @@ The following data is returned in JSON format by the service.
  ** [NextToken](#API_ListWorkloadShares_ResponseSyntax) **   <a name="wellarchitected-ListWorkloadShares-response-NextToken"></a>
 The token to use to retrieve the next set of results.
 Type: String
+Pattern: `[A-Za-z0-9+\/=_-]+`
 
  ** [WorkloadId](#API_ListWorkloadShares_ResponseSyntax) **   <a name="wellarchitected-ListWorkloadShares-response-WorkloadId"></a>
 The ID assigned to the workload. This ID is unique within an AWS Region.

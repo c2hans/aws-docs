@@ -322,7 +322,7 @@ Before Amazon OpenSearch Service applies a domain configuration change, it valid
 + **Critical** – A blocking failure. The change can't proceed until you resolve the underlying issue. Critical failures can't be accepted.
 + **Warning** – Advisory guidance about a change that may succeed but carries risk. For example, dedicated coordinator nodes that may be undersized for your data node configuration. You can accept a warning to let the change proceed.
 
-By default, any warning blocks the change. To proceed, accept the warning by including its code in the `AcceptedWarnings` parameter of your update request. Advisory validations are available to all Amazon OpenSearch Service domains, across both OpenSearch and Elasticsearch versions.
+By default, any warning blocks the change. To proceed, accept the warning by including its code in the `AcceptedWarnings` parameter of your update request. Validation advisory is available for all Amazon OpenSearch Service domains, across both OpenSearch and Elasticsearch versions.
 
 ### Reviewing validation results
 <a name="validation-reviewing-results"></a>

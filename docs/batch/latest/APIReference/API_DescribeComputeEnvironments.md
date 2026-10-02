@@ -147,6 +147,10 @@ Content-type: application/json
             "containerInsights": "string"
          },
          "eksConfiguration": {
+            "accessEntry": {
+               "desiredState": "string",
+               "status": "string"
+            },
             "eksClusterArn": "string",
             "kubernetesNamespace": "string"
          },

@@ -838,7 +838,7 @@ Required: No
 
  ** [containerProperties](#API_RegisterJobDefinition_RequestSyntax) **   <a name="Batch-RegisterJobDefinition-request-containerProperties"></a>
 An object with properties specific to Amazon ECS-based single-node container-based jobs. If the job definition's `type` parameter is `container`, then you must specify either `containerProperties` or `nodeProperties`. This must not be specified for Amazon EKS-based job definitions.
-If the job runs on Fargate resources, then you must not specify `nodeProperties`; use only `containerProperties`.
+If the job runs on Fargate resources, then you must not specify `nodeProperties`. We recommend `ecsProperties`, which supports both single-container and multi-container jobs. `containerProperties` is also supported for single-container jobs. For more information, see [Multi-container jobs](https://docs.aws.amazon.com/batch/latest/userguide/multi-container-jobs.html) in the * AWS Batch User Guide*.
 Type: [ContainerProperties](API_ContainerProperties.md) object
 Required: No
 
@@ -859,7 +859,7 @@ Required: Yes
 
  ** [nodeProperties](#API_RegisterJobDefinition_RequestSyntax) **   <a name="Batch-RegisterJobDefinition-request-nodeProperties"></a>
 An object with properties specific to multi-node parallel jobs. If you specify node properties for a job, it becomes a multi-node parallel job. For more information, see [Multi-node Parallel Jobs](https://docs.aws.amazon.com/batch/latest/userguide/multi-node-parallel-jobs.html) in the * AWS Batch User Guide*.
-If the job runs on Fargate resources, then you must not specify `nodeProperties`; use `containerProperties` instead.
+If the job runs on Fargate resources, then you must not specify `nodeProperties`. We recommend `ecsProperties`, which supports both single-container and multi-container jobs. `containerProperties` is also supported for single-container jobs.
 If the job runs on Amazon EKS resources, then you must not specify `nodeProperties`.
 Type: [NodeProperties](API_NodeProperties.md) object
 Required: No

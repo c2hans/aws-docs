@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/a-media-lake-on-aws/index.html
 title: 'Guidance for a Media Lake on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/a-media-lake-on-aws/
 source: aws-documentation
-generated_on: 2026-10-01
+generated_on: 2026-10-02
 ---
 
 # Guidance for a Media Lake on AWS

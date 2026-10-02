@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeD
 # Oracle minor version upgrades
 <a name="USER_UpgradeDBInstance.Oracle.Minor"></a>
 
-In RDS for Oracle, a minor version upgrade is an update to a major DB engine version. In RDS, a minor engine version is a Release Update (RU), a Supplemental Patch Bundle (SPB), or an RU paired with a Monthly Recommended Patch (MRP). For example, if your DB instance runs major version Oracle Database 19c and minor version 19.0.0.0.ru-2025-10.rur-2025-10.r1, you can upgrade your DB engine to minor version 19.0.0.0.ru-2026-01.rur-2026-01.r1. RDS for Oracle doesn't support minor version downgrades.
+In RDS for Oracle, a minor version upgrade is an update to a major DB engine version. In RDS, a minor engine version is a Release Update (RU), a Supplemental Patch Bundle (SPB), or an RU with a Monthly Recommended Patch (MRP) applied. For example, if your DB instance runs major version Oracle Database 19c and minor version 19.0.0.0.ru-2025-10.rur-2025-10.r1, you can upgrade your DB engine to minor version 19.0.0.0.ru-2026-01.rur-2026-01.r1. RDS for Oracle doesn't support minor version downgrades.
 
 You can upgrade your DB engine to a minor version manually or automatically. To learn how to upgrade manually, see [Manually upgrading the engine version](USER_UpgradeDBInstance.Upgrading.md#USER_UpgradeDBInstance.Upgrading.Manual). To learn how to configure automatic upgrades, see [Automatically upgrading the minor engine version](USER_UpgradeDBInstance.Upgrading.md#USER_UpgradeDBInstance.Upgrading.AutoMinorVersionUpgrades). Whether you upgrade manually or automatically, a minor version upgrade entails downtime. Consider this downtime when you plan your upgrades.
 
@@ -67,7 +67,7 @@ Spatial Patch Bundle has been renamed to Supplemental Patch Bundle (SPB). SPBs n
 ## Release updates and monthly recommended patches
 <a name="RUs-and-MRPs"></a>
 
-RDS for Oracle releases new minor engine versions of Oracle Database 19c (19.0.0.0) and Oracle Database 26ai (26.0.0.0) quarterly. Beginning with the July 2026 quarterly RU, each of these engine versions includes an RU component and an MRP component. An RU includes the patches that Oracle releases for the specified quarter. An MRP includes a Critical Security Patch Update and other fixes that Oracle recommends.
+RDS for Oracle releases a new quarterly RU engine version for Oracle Database 19c (19.0.0.0) and Oracle Database 26ai (26.0.0.0) each quarter. In the months between quarterly RUs, RDS for Oracle can also release engine versions that add a Monthly Recommended Patch (MRP) to the current RU. An RU includes the patches that Oracle releases for the specified quarter. An MRP includes a Critical Security Patch Update (CSPU) and other fixes that Oracle recommends.
 
 An engine version that includes an MRP uses the following format: `{{release}}.ru-{{ru-date}}.mrp-{{mrp-date}}.r{{rnumber}}`. The format includes the following components:
 
@@ -83,11 +83,13 @@ The MRP date.
 {{rnumber}}
 The revision number.
 
+The `mrp-date` identifies the most recent MRP applied on top of the RU. In a quarterly RU engine version, the `mrp-date` matches the `ru-date`, which means that no MRP is applied on top of the RU.
+
 For example, the January 2026 quarterly RU for Oracle Database 26ai is named `26.0.0.0.ru-2026-01.mrp-2026-01.r1`, and the July 2026 quarterly RU for Oracle Database 19c is named `19.0.0.0.ru-2026-07.mrp-2026-07.r1`.
 
 Oracle can release an MRP in the months between quarterly RUs. A new MRP advances the MRP component of the engine version, while the RU component stays the same. For example, `26.0.0.0.ru-2026-01.mrp-2026-03.r1` includes the January 2026 RU plus the March 2026 MRP, and `19.0.0.0.ru-2026-07.mrp-2026-08.r1` includes the July 2026 RU plus the August 2026 MRP.
 
-The MRP that ships with a quarterly RU is applied by automatic minor version upgrades along with that RU. An MRP that Oracle releases between quarterly RUs is not applied automatically; you apply it manually. For more information, see [Turning on automatic minor version upgrades for Oracle](#oracle-minor-version-upgrade-tuning-on).
+Automatic minor version upgrades apply quarterly RUs but not MRPs. To upgrade to an engine version with a newer MRP, apply the upgrade manually. For more information, see [Turning on automatic minor version upgrades for Oracle](#oracle-minor-version-upgrade-tuning-on).
 
 Oracle doesn't release an MRP for every month. If a month has no new recommended fixes or Critical Security Patch Update for the RU, Oracle doesn't release an MRP for that month.
 
@@ -98,8 +100,8 @@ You can upgrade to any higher Oracle Database 19c or Oracle Database 26ai engine
 ## Turning on automatic minor version upgrades for Oracle
 <a name="oracle-minor-version-upgrade-tuning-on"></a>
 
-**Manual upgrades for between-quarter MRPs**
-For Oracle Database 19c and Oracle Database 26ai, automatic minor version upgrades apply new quarterly minor versions, including the MRP that ships with the quarterly RU. However, an MRP that Oracle releases between quarterly RUs isn't applied automatically. To upgrade a DB instance to a between-quarter MRP, apply the upgrade manually.
+**Manual upgrades for MRPs**
+For Oracle Database 19c and Oracle Database 26ai, automatic minor version upgrades apply quarterly RUs but don't apply MRPs. To upgrade a DB instance to an engine version with a newer MRP, apply the upgrade manually.
 
 In an automatic minor version upgrade, RDS applies the latest available minor version to your Oracle database without manual intervention. An Amazon RDS for Oracle DB instance schedules your upgrade during the next maintenance window in the following circumstances:
 + Your DB instance has the **Auto minor version upgrade** option turned on.

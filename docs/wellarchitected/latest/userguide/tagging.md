@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/tagging.html
 ---
 
+AWS Well-Architected Agent is in preview release and is subject to change.
+
 # Tagging your AWS WA Tool resources
 <a name="tagging"></a>
 

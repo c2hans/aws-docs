@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/high-availability-oracle-datab
 title: 'Guidance for High Availability Oracle Databases on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/high-availability-oracle-databases-on-aws/
 source: aws-documentation
-generated_on: 2026-10-01
+generated_on: 2026-10-02
 ---
 
 # Guidance for High Availability Oracle Databases on AWS

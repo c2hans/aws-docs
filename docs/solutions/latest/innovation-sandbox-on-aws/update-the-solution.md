@@ -124,6 +124,60 @@ During the stack update, provide your customizations as CloudFormation parameter
 **Note**
 Future solution upgrades will preserve your parameter values automatically. You only need to perform this migration once.
 
+### Preserve AWS Nuke configuration customizations
+<a name="v1-3-0-preserve-nuke-config"></a>
+
+When you update from a version earlier than v1.3.0, the Data stack activates a packaged AWS Nuke configuration version. This changes the active configuration even though your customized hosted version remains available in AWS AppConfig.
+
+**Before and after the Data stack update**
+If you customized AWS Nuke filters, complete the following procedures. Do not start or retry account cleanup until you confirm that the active version contains your resource exclusions.
+Do not delete any AWS AppConfig hosted configuration versions as part of this procedure. To restore your customizations, start a deployment for the recorded version as described in the following procedure. Keeping the existing versions preserves your recovery options.
+
+#### Before the Data stack update
+<a name="before-the-data-stack-update"></a>
+
+Record your current AWS Nuke configuration version so you can verify it after the update:
+
+1. In the Hub account, navigate to the [applications page in the AWS AppConfig console](https://console.aws.amazon.com/systems-manager/appconfig/applications).
+
+1. Choose the application whose name starts with **InnovationSandboxData-Config-Application**.
+
+1. Choose the solution environment, and then choose the **Deployments** tab.
+
+1. Find the latest completed deployment for the profile whose name contains **NukeConfigHostedConfiguration**.
+
+1. Record the configuration version number.
+
+1. Return to the application, choose **Configuration profiles**, and then choose the profile whose name contains **NukeConfigHostedConfiguration**.
+
+1. Under **Hosted configuration versions**, open the recorded version and save a copy of its content.
+
+#### After the Data stack update or rollback
+<a name="after-the-data-stack-update-or-rollback"></a>
+
+Verify that the recorded AWS Nuke configuration version is active:
+
+1. Return to the applications page in the AWS AppConfig console.
+
+1. Choose the solution application. After a successful update, its name starts with your solution namespace and ends with `-Config-Application`. If the Data stack rolls back, its name starts with `InnovationSandboxData-Config-Application`.
+
+1. Choose the solution environment, and then choose the **Deployments** tab.
+
+1. Find the latest completed deployment for the profile whose name contains **NukeConfigHostedConfiguration**.
+
+1. Confirm that the deployment uses the version you recorded and that the version contains your resource exclusions.
+
+1. If a different version is active, return to the configuration profile and choose **Start deployment**.
+
+1. Choose the recorded version, the solution environment, and the solution’s deployment strategy. On the review page, choose **Start deployment**.
+
+1. Wait until the deployment status is **Complete**.
+
+1. Start or retry account cleanup only after you verify the active configuration.
+
+**Already updated to v1.3.0 or later**
+If you already updated to v1.3.0 or later, review the hosted configuration versions and identify the version that contains your intended customizations. Use that version as the recorded version in the after-update procedure before your next account cleanup.
+
 ### Configuration migration
 <a name="v1-3-0-configuration-migration"></a>
 
@@ -138,7 +192,7 @@ On the **Settings** page, each section that was migrated shows "Last edited by s
 **Important**
 AWS AppConfig deletion protection prevents CloudFormation from deleting the previous **GlobalConfig** and **ReportingConfig** configuration profiles, so they remain in your account after the upgrade. Editing these orphaned profiles has no effect. After upgrading, make all configuration changes on the **Settings** page in the web UI. For more information, see [Viewing or modifying Innovation Sandbox settings](administrator-guide.md#manage-settings).
 
-If the migration fails, the Data stack update fails and AWS CloudFormation rolls back the update. Your AWS AppConfig configuration is not modified and no configuration data is lost. Review the AWS CloudFormation stack events for the Data stack in the Hub account to identify the cause, resolve it, and update the stack again.
+If the migration fails, the Data stack update fails and AWS CloudFormation rolls back the update. Your **GlobalConfig** and **ReportingConfig** data is not modified. Review the AWS CloudFormation stack events for the Data stack in the Hub account to identify the cause, resolve it, and update the stack again. After a rollback, verify the active AWS Nuke configuration as described in [Preserve AWS Nuke configuration customizations](#v1-3-0-preserve-nuke-config).
 
 **Note**
 When updating from a version earlier than v1.3.0, there is a brief window between the Data stack update and the Compute stack update. During this window, API requests to the solution might fail intermittently. Normal operation resumes after the Compute stack update completes.

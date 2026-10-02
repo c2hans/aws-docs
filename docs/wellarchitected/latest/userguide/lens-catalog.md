@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/lens-catalog.html
 ---
 
+AWS Well-Architected Agent is in preview release and is subject to change.
+
 # Lens Catalog for AWS WA Tool
 <a name="lens-catalog"></a>
 

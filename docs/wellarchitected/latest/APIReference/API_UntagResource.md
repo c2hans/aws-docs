@@ -30,6 +30,7 @@ The request uses the following URI parameters.
 A list of tag keys. Existing tags of the resource whose keys are members of this list are removed from the resource.
 Array Members: Minimum number of 1 item. Maximum number of 50 items.
 Length Constraints: Minimum length of 1. Maximum length of 128.
+Pattern: `[\p{L}\p{N}\p{Z}_.:/=+@-]+`
 Required: Yes
 
  ** [WorkloadArn](#API_UntagResource_RequestSyntax) **   <a name="wellarchitected-UntagResource-request-uri-WorkloadArn"></a>

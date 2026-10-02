@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/invitations.html
 ---
 
+AWS Well-Architected Agent is in preview release and is subject to change.
+
 # Share invitations
 <a name="invitations"></a>
 

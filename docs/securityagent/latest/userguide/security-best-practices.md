@@ -70,6 +70,21 @@ Accessible URLs specify additional endpoints that the penetration testing enviro
 
  **Security implications:** AWS Security Agent is not instructed to perform security testing on accessible URLs. By specifying accessible URLs, you indicate trust in these dependencies. Penetration test data, including credentials, may be transmitted to these accessible URL endpoints during testing.
 
+## Secure your CI/CD pipeline integration
+<a name="_secure_your_cicd_pipeline_integration"></a>
+
+When you run penetration tests from a CI/CD pipeline, the pipeline assumes an IAM role in your account through OpenID Connect (OIDC) federation. Misconfiguring this role, or leaking its credentials on the runner, would let an untrusted pipeline start penetration tests billed to your account or act with the role’s permissions.
+
+ **Best practice:** Apply least privilege to the integration and protect credentials on the runner:
++ Scope the role’s trust policy to the specific repositories and branches that should run tests by matching the OIDC token’s `sub` claim. Do not use a wildcard for the `sub` claim.
++ Grant the role only the actions the pipeline needs, and scope them to your specific Agent Space or penetration test ARN where the action supports resource-level permissions.
++ Do not store long-lived AWS access keys in your pipeline; use OIDC federation.
++ Keep debug or shell tracing off for steps that handle credentials, so tokens and temporary credentials are not written to job logs.
++ Disable source control credential persistence on checkout, and do not expose the OIDC token to untrusted steps such as builds from forks.
++ Pin the integration to an immutable version (a commit SHA or an image digest).
+
+For setup details, see [Run penetration tests from your CI/CD pipeline](cicd-pentest.md).
+
 ## Cross Region Inference
 <a name="_cross_region_inference"></a>
 

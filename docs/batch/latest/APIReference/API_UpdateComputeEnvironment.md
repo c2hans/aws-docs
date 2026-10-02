@@ -97,6 +97,12 @@ Content-type: application/json
    "ecsSettings": {
       "containerInsights": "{{string}}"
    },
+   "eksConfiguration": {
+      "accessEntry": {
+         "desiredState": "{{string}}",
+         "status": "{{string}}"
+      }
+   },
    "serviceRole": "{{string}}",
    "state": "{{string}}",
    "unmanagedvCpus": {{number}},
@@ -135,6 +141,11 @@ Required: No
  ** [ecsSettings](#API_UpdateComputeEnvironment_RequestSyntax) **   <a name="Batch-UpdateComputeEnvironment-request-ecsSettings"></a>
 The Amazon ECS settings for the compute environment. These settings control CloudWatch Container Insights collection for the compute environment.
 Type: [EcsSettings](API_EcsSettings.md) object
+Required: No
+
+ ** [eksConfiguration](#API_UpdateComputeEnvironment_RequestSyntax) **   <a name="Batch-UpdateComputeEnvironment-request-eksConfiguration"></a>
+Updates the Amazon EKS configuration for the compute environment. Only specify this parameter if the compute environment's `containerOrchestrationType` is `EKS`. Currently, the `accessEntry` setting is the only Amazon EKS configuration that you can change after the compute environment is created. For more information, see [Amazon EKS access entry authentication](https://docs.aws.amazon.com/batch/latest/userguide/eks-access-entries.html) in the * AWS Batch User Guide*.
+Type: [EksConfigurationUpdate](API_EksConfigurationUpdate.md) object
 Required: No
 
  ** [serviceRole](#API_UpdateComputeEnvironment_RequestSyntax) **   <a name="Batch-UpdateComputeEnvironment-request-serviceRole"></a>

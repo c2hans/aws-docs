@@ -25,16 +25,17 @@ Valid Range: Minimum value of 1. Maximum value of 50.
 
  ** [NextToken](#API_ListProfileShares_RequestSyntax) **   <a name="wellarchitected-ListProfileShares-request-uri-NextToken"></a>
 The token to use to retrieve the next set of results.
+Pattern: `[A-Za-z0-9+\/=_-]+`
 
  ** [ProfileArn](#API_ListProfileShares_RequestSyntax) **   <a name="wellarchitected-ListProfileShares-request-uri-ProfileArn"></a>
 The profile ARN.
-Length Constraints: Maximum length of 2084.
+Length Constraints: Minimum length of 0. Maximum length of 2084.
 Pattern: `arn:aws[-a-z]*:wellarchitected:[a-z]{2}(-gov)?-[a-z]+-\d:\d{12}:profile/[a-z0-9]+`
 Required: Yes
 
  ** [SharedWithPrefix](#API_ListProfileShares_RequestSyntax) **   <a name="wellarchitected-ListProfileShares-request-uri-SharedWithPrefix"></a>
 The AWS account ID, organization ID, or organizational unit (OU) ID with which the profile is shared.
-Length Constraints: Maximum length of 100.
+Length Constraints: Minimum length of 0. Maximum length of 100.
 
  ** [Status](#API_ListProfileShares_RequestSyntax) **   <a name="wellarchitected-ListProfileShares-request-uri-Status"></a>
 The status of the share request.
@@ -75,6 +76,7 @@ The following data is returned in JSON format by the service.
  ** [NextToken](#API_ListProfileShares_ResponseSyntax) **   <a name="wellarchitected-ListProfileShares-response-NextToken"></a>
 The token to use to retrieve the next set of results.
 Type: String
+Pattern: `[A-Za-z0-9+\/=_-]+`
 
  ** [ProfileShareSummaries](#API_ListProfileShares_ResponseSyntax) **   <a name="wellarchitected-ListProfileShares-response-ProfileShareSummaries"></a>
 Profile share summaries.

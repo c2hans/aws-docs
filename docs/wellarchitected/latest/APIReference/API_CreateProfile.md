@@ -46,7 +46,7 @@ You should not reuse the same token for other requests. If you retry a request w
 This token is listed as required, however, if you do not specify it, the AWS SDKs automatically generate one for you. If you are not using the AWS SDK or the AWS CLI, you must provide this token or the request will fail.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
-Pattern: `^[\x00-\x7F]*$`
+Pattern: `[\x00-\x7F]*`
 Required: Yes
 
  ** [ProfileDescription](#API_CreateProfile_RequestSyntax) **   <a name="wellarchitected-CreateProfile-request-ProfileDescription"></a>
@@ -71,6 +71,7 @@ The tags assigned to the profile.
 Type: String to string map
 Map Entries: Maximum number of 50 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
+Key Pattern: `[\p{L}\p{N}\p{Z}_.:/=+@-]+`
 Value Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 
@@ -97,14 +98,14 @@ The following data is returned in JSON format by the service.
  ** [ProfileArn](#API_CreateProfile_ResponseSyntax) **   <a name="wellarchitected-CreateProfile-response-ProfileArn"></a>
 The profile ARN.
 Type: String
-Length Constraints: Maximum length of 2084.
+Length Constraints: Minimum length of 0. Maximum length of 2084.
 Pattern: `arn:aws[-a-z]*:wellarchitected:[a-z]{2}(-gov)?-[a-z]+-\d:\d{12}:profile/[a-z0-9]+`
 
  ** [ProfileVersion](#API_CreateProfile_ResponseSyntax) **   <a name="wellarchitected-CreateProfile-response-ProfileVersion"></a>
 Version of the profile.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 32.
-Pattern: `^[A-Za-z0-9-]+$`
+Pattern: `[A-Za-z0-9-]+`
 
 ## Errors
 <a name="API_CreateProfile_Errors"></a>

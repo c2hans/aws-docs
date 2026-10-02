@@ -10,6 +10,12 @@ The progress details of a specific domain configuration change.
 ## Contents
 <a name="API_ChangeProgressStatusDetails_Contents"></a>
 
+ ** AcceptedWarnings **   <a name="opensearchservice-Type-ChangeProgressStatusDetails-AcceptedWarnings"></a>
+The list of advisory warning codes that were accepted for the configuration change.
+Type: Array of strings
+Array Members: Maximum number of 25 items.
+Required: No
+
  ** ChangeId **   <a name="opensearchservice-Type-ChangeProgressStatusDetails-ChangeId"></a>
 The unique change identifier associated with a specific domain configuration change.
 Type: String
@@ -63,6 +69,11 @@ Required: No
  ** TotalNumberOfStages **   <a name="opensearchservice-Type-ChangeProgressStatusDetails-TotalNumberOfStages"></a>
 The total number of stages required for the configuration change.
 Type: Integer
+Required: No
+
+ ** ValidationFailures **   <a name="opensearchservice-Type-ChangeProgressStatusDetails-ValidationFailures"></a>
+The validation failures that occurred as a result of the configuration change.
+Type: Array of [ValidationFailure](API_ValidationFailure.md) objects
 Required: No
 
 ## See Also

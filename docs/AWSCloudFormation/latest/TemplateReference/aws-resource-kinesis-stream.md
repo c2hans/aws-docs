@@ -24,6 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[DesiredShardLevelMetrics](#cfn-kinesis-stream-desiredshardlevelmetrics)" : {{[ String, ... ]}},
       "[MaxRecordSizeInKiB](#cfn-kinesis-stream-maxrecordsizeinkib)" : {{Integer}},
       "[Name](#cfn-kinesis-stream-name)" : {{String}},
+      "[RecordDistributionStrategy](#cfn-kinesis-stream-recorddistributionstrategy)" : {{String}},
       "[RetentionPeriodHours](#cfn-kinesis-stream-retentionperiodhours)" : {{Integer}},
       "[ShardCount](#cfn-kinesis-stream-shardcount)" : {{Integer}},
       "[StreamEncryption](#cfn-kinesis-stream-streamencryption)" : {{StreamEncryption}},
@@ -44,6 +45,7 @@ Properties:
     - String}}
   [MaxRecordSizeInKiB](#cfn-kinesis-stream-maxrecordsizeinkib): {{Integer}}
   [Name](#cfn-kinesis-stream-name): {{String}}
+  [RecordDistributionStrategy](#cfn-kinesis-stream-recorddistributionstrategy): {{String}}
   [RetentionPeriodHours](#cfn-kinesis-stream-retentionperiodhours): {{Integer}}
   [ShardCount](#cfn-kinesis-stream-shardcount): {{Integer}}
   [StreamEncryption](#cfn-kinesis-stream-streamencryption): {{
@@ -82,6 +84,16 @@ If you specify a name, you cannot perform updates that require replacement of th
 *Minimum*: `1`
 *Maximum*: `128`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`RecordDistributionStrategy`  <a name="cfn-kinesis-stream-recorddistributionstrategy"></a>
+The record distribution strategy for the stream, which determines how Amazon Kinesis Data Streams distributes records across shards. Specify one of the following values:
++ `AUTO` – Amazon Kinesis Data Streams distributes records evenly across shards and ignores any partition key and `ExplicitHashKey` that producers supply. Use this value for stateless workloads that do not require partition-key ordering.
++ `USER_PARTITION_KEY` – Producers must supply a partition key, which Amazon Kinesis Data Streams uses to determine shard placement. This is the default.
+The record distribution strategy is only supported for streams that use the on-demand capacity mode. If you do not specify this parameter, the stream uses `USER_PARTITION_KEY`.
+*Required*: No
+*Type*: String
+*Allowed values*: `AUTO | USER_PARTITION_KEY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `RetentionPeriodHours`  <a name="cfn-kinesis-stream-retentionperiodhours"></a>
 The number of hours for the data records that are stored in shards to remain accessible. The default value is 24. For more information about the stream retention period, see [Changing the Data Retention Period](https://docs.aws.amazon.com/streams/latest/dev/kinesis-extended-retention.html) in the Amazon Kinesis Developer Guide.

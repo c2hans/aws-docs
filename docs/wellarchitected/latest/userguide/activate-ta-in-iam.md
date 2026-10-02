@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/activate-ta-in-iam.html
 ---
 
+AWS Well-Architected Agent is in preview release and is subject to change.
+
 # Activating Trusted Advisor for a workload in IAM
 <a name="activate-ta-in-iam"></a>
 

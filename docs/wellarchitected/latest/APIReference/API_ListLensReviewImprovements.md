@@ -38,6 +38,7 @@ Valid Range: Minimum value of 1. Maximum value of 100.
 
  ** [NextToken](#API_ListLensReviewImprovements_RequestSyntax) **   <a name="wellarchitected-ListLensReviewImprovements-request-uri-NextToken"></a>
 The token to use to retrieve the next set of results.
+Pattern: `[A-Za-z0-9+\/=_-]+`
 
  ** [PillarId](#API_ListLensReviewImprovements_RequestSyntax) **   <a name="wellarchitected-ListLensReviewImprovements-request-uri-PillarId"></a>
 The ID used to identify a pillar, for example, `security`.
@@ -127,6 +128,7 @@ Valid Range: Minimum value of 1. Maximum value of 100.
  ** [NextToken](#API_ListLensReviewImprovements_ResponseSyntax) **   <a name="wellarchitected-ListLensReviewImprovements-response-NextToken"></a>
 The token to use to retrieve the next set of results.
 Type: String
+Pattern: `[A-Za-z0-9+\/=_-]+`
 
  ** [WorkloadId](#API_ListLensReviewImprovements_ResponseSyntax) **   <a name="wellarchitected-ListLensReviewImprovements-response-WorkloadId"></a>
 The ID assigned to the workload. This ID is unique within an AWS Region.

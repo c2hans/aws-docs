@@ -101,7 +101,7 @@ Long-context rates apply to all input and output tokens, not just tokens above 2
 
 | **Inference option** | **Input** | **Input — 30m cache write** | **Input — cache read** | **Output** |
 | --- | --- | --- | --- | --- |
-| In-Region | $3.30 | — | $0.33 | $19.80 |
+| In-Region | $3.375 | — | $0.3375 | $20.25 |
 
 ## Programmatic Access
 <a name="model-card-openai-gpt-54-programmatic-access"></a>

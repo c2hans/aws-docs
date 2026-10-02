@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/multi-cluster-application-mana
 title: 'Guidance for Multi-Cluster Application Management with Karmada and Amazon EKS'
 canonical_url: https://docs.aws.amazon.com/solutions/multi-cluster-application-management-with-karmada-and-amazon-eks/
 source: aws-documentation
-generated_on: 2026-10-01
+generated_on: 2026-10-02
 ---
 
 # Guidance for Multi-Cluster Application Management with Karmada and Amazon EKS

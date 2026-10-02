@@ -5,9 +5,7 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/disable-multi-attac
 # Disable Multi-Attach for an Amazon EBS volume
 <a name="disable-multi-attach"></a>
 
-You can disable Multi-Attach for an `io2` volume only if it is attached to no more than one instance.
-
-You can't disable Multi-Attach for `io1` volumes after creation.
+You can disable Multi-Attach for an `io1` or `io2` volume only if it is not attached to an instance.
 
 ------
 #### [ Console ]

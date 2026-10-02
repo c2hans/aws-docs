@@ -56,7 +56,7 @@ Required: No
 The notes associated with the workload.
 For a review template, these are the notes that will be associated with the workload when the template is applied.
 Type: String
-Length Constraints: Maximum length of 2084.
+Length Constraints: Minimum length of 0. Maximum length of 2084.
 Required: No
 
  ** PillarId **   <a name="wellarchitected-Type-Answer-PillarId"></a>

@@ -15,6 +15,7 @@ The following actions are supported:
 +  [GetCase](API_GetCase.md)
 +  [GetCaseAttachmentDownloadUrl](API_GetCaseAttachmentDownloadUrl.md)
 +  [GetCaseAttachmentUploadUrl](API_GetCaseAttachmentUploadUrl.md)
++  [GetFindingMetrics](API_GetFindingMetrics.md)
 +  [GetMembership](API_GetMembership.md)
 +  [ListCaseEdits](API_ListCaseEdits.md)
 +  [ListCases](API_ListCases.md)

@@ -49,7 +49,7 @@ Required: No
 Specifies whether to copy your user-defined AMI tags to the new AMI.
 The following tags are not be copied:
 + System tags (prefixed with `aws:`)
-+ For public and shared AMIs, user-defined tags that are attached by other AWS accounts
++ For public and shared AMIs, user-defined tags that are attached by other AWS accounts, except tags with the `ec2:SharedTag/` prefix. For more information about tag sharing, see [Sharing tags](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html#sharing-tags) in the *Amazon EC2 User Guide*.
 Default: Your user-defined AMI tags are not copied.
 Type: Boolean
 Required: No

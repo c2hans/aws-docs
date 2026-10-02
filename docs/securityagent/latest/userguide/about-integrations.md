@@ -54,14 +54,26 @@ The following IP addresses are used to access your connected repositories:
   +  `34.228.181.128`
   +  `44.219.176.187`
   +  `54.226.244.221`
++ US East (Ohio) (us-east-2)
+  +  `16.58.244.57`
+  +  `18.221.155.24`
+  +  `52.15.165.125`
 + US West (Oregon) (us-west-2)
   +  `34.212.16.133`
   +  `52.89.67.212`
   +  `54.187.135.61`
++ Canada (Central) (ca-central-1)
+  +  `3.96.5.29`
+  +  `3.99.39.12`
+  +  `99.79.90.221`
 + Asia Pacific (Mumbai) (ap-south-1)
   +  `13.126.209.199`
   +  `13.234.6.24`
   +  `35.154.102.216`
++ Asia Pacific (Seoul) (ap-northeast-2)
+  +  `3.34.151.190`
+  +  `43.201.166.78`
+  +  `43.202.86.139`
 + Asia Pacific (Singapore) (ap-southeast-1)
   +  `18.139.13.125`
   +  `47.130.240.215`
@@ -82,6 +94,18 @@ The following IP addresses are used to access your connected repositories:
   +  `34.251.85.24`
   +  `52.30.157.157`
   +  `52.51.192.222`
++ Europe (London) (eu-west-2)
+  +  `13.42.228.66`
+  +  `16.60.62.58`
+  +  `35.176.240.10`
++ Europe (Paris) (eu-west-3)
+  +  `15.224.33.200`
+  +  `15.224.52.205`
+  +  `35.181.29.248`
++ Europe (Stockholm) (eu-north-1)
+  +  `13.49.123.102`
+  +  `13.49.215.189`
+  +  `16.170.2.94`
 + South America (São Paulo) (sa-east-1)
   +  `54.94.247.213`
   +  `54.207.222.14`

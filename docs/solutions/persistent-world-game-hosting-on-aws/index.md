@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/persistent-world-game-hosting-
 title: 'Guidance for Persistent World Game Hosting on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/persistent-world-game-hosting-on-aws/
 source: aws-documentation
-generated_on: 2026-10-01
+generated_on: 2026-10-02
 ---
 
 # Guidance for Persistent World Game Hosting on AWS

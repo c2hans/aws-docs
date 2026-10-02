@@ -10,6 +10,12 @@ Information about the additional configuration for the member account.
 ## Contents
 <a name="API_MemberAdditionalConfigurationResult_Contents"></a>
 
+ ** managedBy **   <a name="guardduty-Type-MemberAdditionalConfigurationResult-managedBy"></a>
+Indicates what manages the additional configuration. A value of `GUARDDUTY_POLICY` means a GuardDuty policy manages the additional configuration.
+Type: String
+Valid Values: `GUARDDUTY_POLICY`
+Required: No
+
  ** name **   <a name="guardduty-Type-MemberAdditionalConfigurationResult-name"></a>
 Indicates the name of the additional configuration that is set for the member account.
 Type: String

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/post-call-analytics-on-aws/ind
 title: 'Guidance for Post Call Analytics on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/post-call-analytics-on-aws/
 source: aws-documentation
-generated_on: 2026-10-01
+generated_on: 2026-10-02
 ---
 
 # Guidance for Post Call Analytics on AWS

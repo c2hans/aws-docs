@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/workloads.html
 ---
 
+AWS Well-Architected Agent is in preview release and is subject to change.
+
 # Workloads
 <a name="workloads"></a>
 

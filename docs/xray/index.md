@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/xray/index.html
 title: 'AWS X-Ray Documentation'
 canonical_url: https://docs.aws.amazon.com/xray/
 source: aws-documentation
-generated_on: 2026-10-01
+generated_on: 2026-10-02
 ---
 
 # AWS X-Ray Documentation

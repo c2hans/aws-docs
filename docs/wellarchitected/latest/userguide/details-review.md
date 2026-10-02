@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/details-review.html
 ---
 
+AWS Well-Architected Agent is in preview release and is subject to change.
+
 # The AWS Well-Architected Tool Overview tab
 <a name="details-review"></a>
 

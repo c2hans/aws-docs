@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/lenses-deleting.html
 ---
 
+AWS Well-Architected Agent is in preview release and is subject to change.
+
 # Deleting a custom lens in AWS WA Tool
 <a name="lenses-deleting"></a>
 

@@ -10,4 +10,4 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/Welcome
 **Note**
  AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWS Directory Service and other AWS services. For more information about the AWS SDKs, including how to download and install them, see [Tools for Amazon Web Services](http://aws.amazon.com/tools/).
 
-This document was last published on October 1, 2026.
+This document was last published on October 2, 2026.

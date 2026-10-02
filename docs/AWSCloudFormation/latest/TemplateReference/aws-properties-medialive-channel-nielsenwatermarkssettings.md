@@ -63,7 +63,7 @@ Complete these fields only if you want to insert watermarks of type Nielsen NAES
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `NielsenNwOnlySettings`  <a name="cfn-medialive-channel-nielsenwatermarkssettings-nielsennwonlysettings"></a>
-Property description not available.
+Complete these fields only if you want to insert watermarks of type Nielsen NAES VI (NW) only, without inserting NAES II (N2) watermarks.
 *Required*: No
 *Type*: [NielsenNaesIiNwOnlySettings](aws-properties-medialive-channel-nielsennaesiinwonlysettings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

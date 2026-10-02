@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/events/index.html
 title: 'AWS Events Documentation'
 canonical_url: https://docs.aws.amazon.com/events/
 source: aws-documentation
-generated_on: 2026-10-01
+generated_on: 2026-10-02
 ---
 
 # AWS Events Documentation

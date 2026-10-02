@@ -513,6 +513,7 @@ Runs the Amazon EC2 API action [StopInstances](https://docs.aws.amazon.com/AWSEC
 **Parameters**
 + **startInstancesAfterDuration** – Optional. The time to wait before starting the instance, from one minute to 12 hours. In the AWS FIS API, the value is a string in ISO 8601 format. For example, PT1M represents one minute. In the AWS FIS console, you enter the number of seconds, minutes, or hours. If the instance has an encrypted EBS volume, you must grant AWS FIS permission to the KMS key used to encrypt the volume, or add the experiment role to the KMS key policy.
 + **completeIfInstancesTerminated** – Optional. If true, and if `startInstancesAfterDuration` is also true, this action will not fail when targeted EC2 instances have been terminated by a separate request outside of FIS and cannot be restarted. For example, Auto Scaling groups may terminate stopped EC2 instances under their control before this action completes. The default is false.
++ **skipOsShutdown** – Optional. When true, bypasses the graceful operating system (OS) shutdown during an instance stop. Bypassing the graceful OS shutdown might result in data loss, data corruption, or skipped shutdown scripts. For example, memory contents might not be flushed to disk, or in-flight I/Os might be lost. The default is false.
 
 **Permissions**
 + `ec2:StopInstances`
@@ -532,7 +533,7 @@ Runs the Amazon EC2 API action [TerminateInstances](https://docs.aws.amazon.com/
 + **aws:ec2:instance**
 
 **Parameters**
-+ None
++ **skipOsShutdown** – Optional. When true, bypasses the graceful operating system (OS) shutdown during an instance termination. Bypassing the graceful OS shutdown might result in data loss, data corruption, or skipped shutdown scripts. For example, memory contents might not be flushed to disk, or in-flight I/Os might be lost. The default is false.
 
 **Permissions**
 + `ec2:TerminateInstances`

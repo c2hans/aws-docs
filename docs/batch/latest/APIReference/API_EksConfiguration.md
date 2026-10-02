@@ -20,6 +20,13 @@ The namespace of the Amazon EKS cluster. AWS Batch manages pods in this namespac
 Type: String
 Required: Yes
 
+ ** accessEntry **   <a name="Batch-Type-EksConfiguration-accessEntry"></a>
+The AWS Batch-managed Amazon EKS access entry for the compute environment. Set `desiredState` to declare whether AWS Batch manages an access entry on the cluster. In a `DescribeComputeEnvironments` response, `desiredState` is the value that AWS Batch recorded for the compute environment and `status` is the observed state of the access entry on the cluster. To change the access entry on an existing compute environment, use [`EksConfigurationUpdate.accessEntry`](https://docs.aws.amazon.com/batch/latest/APIReference/API_EksConfigurationUpdate.html#Batch-Type-EksConfigurationUpdate-accessEntry).
+Whether the entry is provisioned on the cluster depends on the cluster's `authenticationMode` and the `desiredState` recorded for each AWS Batch compute environment targeting the cluster. For more information, see [Amazon EKS access entry authentication](https://docs.aws.amazon.com/batch/latest/userguide/eks-access-entries.html) in the * AWS Batch User Guide*.
+If you don't specify this field, AWS Batch doesn't record a `desiredState` for the compute environment and `DescribeComputeEnvironments` doesn't return one. For the purpose of provisioning the access entry, AWS Batch behaves as it does for `INHERIT_FROM_CLUSTER`.
+Type: [EksAccessEntry](API_EksAccessEntry.md) object
+Required: No
+
 ## See Also
 <a name="API_EksConfiguration_SeeAlso"></a>
 

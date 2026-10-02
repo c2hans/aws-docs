@@ -26,7 +26,7 @@ Required: No
 Workload-level: Jira project key to sync workloads to.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
-Pattern: `^[A-Z][A-Z0-9_]*$`
+Pattern: `[A-Z][A-Z0-9_]*`
 Required: No
 
  ** StatusMessage **   <a name="wellarchitected-Type-WorkloadJiraConfigurationOutput-StatusMessage"></a>

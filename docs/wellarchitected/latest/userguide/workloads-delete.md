@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/workloads-delete.html
 ---
 
+AWS Well-Architected Agent is in preview release and is subject to change.
+
 # Delete a workload in AWS Well-Architected Tool
 <a name="workloads-delete"></a>
 

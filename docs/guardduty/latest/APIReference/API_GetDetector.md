@@ -73,11 +73,13 @@ Content-type: application/json
       {
          "additionalConfiguration": [
             {
+               "managedBy": "string",
                "name": "string",
                "status": "string",
                "updatedAt": number
             }
          ],
+         "managedBy": "string",
          "name": "string",
          "status": "string",
          "updatedAt": number

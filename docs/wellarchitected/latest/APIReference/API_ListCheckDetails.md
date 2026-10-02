@@ -60,6 +60,7 @@ Required: No
  ** [NextToken](#API_ListCheckDetails_RequestSyntax) **   <a name="wellarchitected-ListCheckDetails-request-NextToken"></a>
 The token to use to retrieve the next set of results.
 Type: String
+Pattern: `[A-Za-z0-9+\/=_-]+`
 Required: No
 
  ** [PillarId](#API_ListCheckDetails_RequestSyntax) **   <a name="wellarchitected-ListCheckDetails-request-PillarId"></a>
@@ -118,6 +119,7 @@ Type: Array of [CheckDetail](API_CheckDetail.md) objects
  ** [NextToken](#API_ListCheckDetails_ResponseSyntax) **   <a name="wellarchitected-ListCheckDetails-response-NextToken"></a>
 The token to use to retrieve the next set of results.
 Type: String
+Pattern: `[A-Za-z0-9+\/=_-]+`
 
 ## Errors
 <a name="API_ListCheckDetails_Errors"></a>

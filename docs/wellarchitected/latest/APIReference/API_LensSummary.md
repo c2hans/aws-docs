@@ -11,7 +11,7 @@ A lens summary of a lens.
 <a name="API_LensSummary_Contents"></a>
 
  ** CreatedAt **   <a name="wellarchitected-Type-LensSummary-CreatedAt"></a>
-The date and time recorded in Unix format (seconds).
+The date and time when the lens was created.
 Type: Timestamp
 Required: No
 
@@ -67,7 +67,7 @@ Pattern: `[0-9]{12}`
 Required: No
 
  ** UpdatedAt **   <a name="wellarchitected-Type-LensSummary-UpdatedAt"></a>
-The date and time recorded in Unix format (seconds).
+The date and time when the lens was last updated.
 Type: Timestamp
 Required: No
 

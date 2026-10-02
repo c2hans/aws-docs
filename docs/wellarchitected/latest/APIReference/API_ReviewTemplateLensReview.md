@@ -45,13 +45,14 @@ Required: No
  ** NextToken **   <a name="wellarchitected-Type-ReviewTemplateLensReview-NextToken"></a>
 The token to use to retrieve the next set of results.
 Type: String
+Pattern: `[A-Za-z0-9+\/=_-]+`
 Required: No
 
  ** Notes **   <a name="wellarchitected-Type-ReviewTemplateLensReview-Notes"></a>
 The notes associated with the workload.
 For a review template, these are the notes that will be associated with the workload when the template is applied.
 Type: String
-Length Constraints: Maximum length of 2084.
+Length Constraints: Minimum length of 0. Maximum length of 2084.
 Required: No
 
  ** PillarReviewSummaries **   <a name="wellarchitected-Type-ReviewTemplateLensReview-PillarReviewSummaries"></a>
@@ -67,7 +68,7 @@ Valid Range: Minimum value of 0.
 Required: No
 
  ** UpdatedAt **   <a name="wellarchitected-Type-ReviewTemplateLensReview-UpdatedAt"></a>
-The date and time recorded in Unix format (seconds).
+The date and time when the review template lens review was last updated.
 Type: Timestamp
 Required: No
 

@@ -14,7 +14,7 @@ Summary of a review template.
 Description of the review template.
 Type: String
 Length Constraints: Minimum length of 3. Maximum length of 250.
-Pattern: `^[A-Za-z0-9-_.,:/()@!&?#+'’\s]+$`
+Pattern: `[A-Za-z0-9-_.,:/()@!&?#+'’\s]+`
 Required: No
 
  ** Lenses **   <a name="wellarchitected-Type-ReviewTemplateSummary-Lenses"></a>
@@ -41,11 +41,11 @@ Required: No
 The name of the review template.
 Type: String
 Length Constraints: Minimum length of 3. Maximum length of 100.
-Pattern: `^[A-Za-z0-9-_.,:/()@!&?#+'’\s]+$`
+Pattern: `[A-Za-z0-9-_.,:/()@!&?#+'’\s]+`
 Required: No
 
  ** UpdatedAt **   <a name="wellarchitected-Type-ReviewTemplateSummary-UpdatedAt"></a>
-The date and time recorded in Unix format (seconds).
+The date and time when the review template was last updated.
 Type: Timestamp
 Required: No
 

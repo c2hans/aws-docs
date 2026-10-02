@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/people-and-culture.html
 ---
 
+AWS Well-Architected Agent is in preview release and is subject to change.
+
 # People and culture
 <a name="people-and-culture"></a>
 

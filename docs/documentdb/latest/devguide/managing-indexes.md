@@ -32,7 +32,7 @@ The following guidelines include basic limits and configuration tradeoffs when c
 A cluster restart is required after changing the minimum capacity setting for the new parallel worker limit to take effect.
 + **Maximum workers (instance-based)** - The maximum number of workers you can configure depends on the size of your primary instance in your database cluster. It is half the total number of vCPUs on the primary instance of your database cluster. For example, you can run a maximum of 32 workers on a db.r6g.16xlarge instance that has 64 vCPUs.
 **Note**
-Parallel workers are not supported on 2xlarge instance classes and lower.
+Parallel workers are only supported on instances 2xlarge and above.
 + **Minimum workers** - The minimum number of workers you can configure is one. The default setting for index creation on instance-based clusters is two workers. However, you can reduce the number of workers to one by using the “worker threads” option. This will run the process with a single worker.
 + **Index compression** - Amazon DocumentDB doesn't support index compression. Data sizes for indexes might be larger than when you use other options.
 + **Indexing multiple collections** - Half the vCPUs on your database cluster's primary instance can be used for configured workers performing index creation on multiple collections.

@@ -22,3 +22,6 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::Lambda::ResourcePolicy](aws-resource-lambda-resourcepolicy.md)
 + [AWS::Lambda::Url](aws-resource-lambda-url.md)
 + [AWS::Lambda::Version](aws-resource-lambda-version.md)
++ [AWS::Lambda::WebFunction](aws-resource-lambda-webfunction.md)
++ [AWS::Lambda::WebFunctionEndpoint](aws-resource-lambda-webfunctionendpoint.md)
++ [AWS::Lambda::WebFunctionRevision](aws-resource-lambda-webfunctionrevision.md)

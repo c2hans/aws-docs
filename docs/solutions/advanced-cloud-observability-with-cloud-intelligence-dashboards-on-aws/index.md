@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/advanced-cloud-observability-w
 title: 'Cloud Intelligence Dashboards on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/advanced-cloud-observability-with-cloud-intelligence-dashboards-on-aws/
 source: aws-documentation
-generated_on: 2026-10-01
+generated_on: 2026-10-02
 ---
 
 # Cloud Intelligence Dashboards on AWS

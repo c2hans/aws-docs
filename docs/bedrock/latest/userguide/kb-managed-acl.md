@@ -45,6 +45,7 @@ Not all connectors support ACL awareness. The following table shows which connec
 | [OneDrive](kb-managed-ds-onedrive-acl.md) | Supported | Supported | Uses application-level permissions (2LO). Requires ENTRA\_APP\_ID auth type. |
 | [Google Drive](kb-managed-ds-googledrive-acl.md) | Supported | Supported | Uses domain-wide delegation (2LO). Requires SERVICE\_ACCOUNT auth type. |
 | [Confluence](kb-managed-ds-confluence-acl.md) | Supported | Supported | Uses admin API token for real-time checks. Requires BASIC auth type. |
+| [Confluence Data Center](kb-managed-ds-confluence-onprem-acl.md) | Supported | Supported | Uses the Confluence Data Center admin REST API for real-time checks over a VPC configuration. Requires BASIC or PERSONAL\_TOKEN auth type. |
 | [Amazon S3](kb-managed-ds-s3-acl.md) | Supported | Not supported | ACLs defined through a customer-provided ACL configuration file in Amazon S3. No real-time verification because the customer-provided metadata file is the source of truth. |
 | [Custom](kb-managed-ds-custom-acl.md) | Supported | Not supported | ACLs defined through customer-provided metadata. No real-time verification because the customer-provided metadata is the source of truth. |
 | Web Crawler | Not supported | N/A | Web content has no permission model. ACL awareness cannot be enabled for this connector. |
@@ -54,6 +55,7 @@ For connector-specific ACL configuration details, see:
 + [ACL awareness for OneDrive](kb-managed-ds-onedrive-acl.md)
 + [ACL awareness for Google Drive](kb-managed-ds-googledrive-acl.md)
 + [ACL awareness for Confluence](kb-managed-ds-confluence-acl.md)
++ [ACL awareness for Confluence Data Center](kb-managed-ds-confluence-onprem-acl.md)
 + [ACL awareness for Amazon S3](kb-managed-ds-s3-acl.md)
 + [ACL awareness for Custom](kb-managed-ds-custom-acl.md)
 

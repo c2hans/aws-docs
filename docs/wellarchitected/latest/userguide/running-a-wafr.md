@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/running-a-wafr.html
 ---
 
+AWS Well-Architected Agent is in preview release and is subject to change.
+
 # Running a WAFR
 <a name="running-a-wafr"></a>
 

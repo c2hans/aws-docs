@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com//solutions/using-amazon-eks-capabilities
 title: 'Guidance for Using Amazon Elastic Kubernetes Service Capabilities for Workload Orchestration and Cloud Resource Management on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/using-amazon-eks-capabilities-for-workload-orchestration-and-cloud-resource-management-on-aws/
 source: aws-documentation
-generated_on: 2026-10-01
+generated_on: 2026-10-02
 ---
 
 # Guidance for Using Amazon Elastic Kubernetes Service Capabilities for Workload Orchestration and Cloud Resource Management on AWS

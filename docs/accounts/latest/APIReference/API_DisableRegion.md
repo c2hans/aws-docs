@@ -71,7 +71,10 @@ The value populated to the `x-amzn-ErrorType` response header by API Gateway.
 HTTP Status Code: 403
 
  ** ConflictException **
-The request could not be processed because of a conflict in the current status of the resource. For example, this happens if you try to enable a Region that is currently being disabled (in a status of DISABLING) or if you try to change an account’s root user email to an email address which is already in use.
+The request could not be processed because of a conflict in the current status of the resource. This happens in cases such as the following:
++ You try to enable a Region that is currently being disabled (in a status of DISABLING).
++ You try to change an account’s root user email to an email address that is already in use.
++ The primary contact phone number changes after you call `SendPhoneNumberVerification` and before you call `VerifyPhoneNumber`.
  ** errorType **
 The value populated to the `x-amzn-ErrorType` response header by API Gateway.
 HTTP Status Code: 409

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/automated-restore-and-copy-for
 title: 'Guidance for Automated Restore and Copy for Amazon S3 Glacier Objects'
 canonical_url: https://docs.aws.amazon.com/solutions/automated-restore-and-copy-for-amazon-s3-glacier-objects/
 source: aws-documentation
-generated_on: 2026-10-01
+generated_on: 2026-10-02
 ---
 
 # Guidance for Automated Restore and Copy for Amazon S3 Glacier Objects

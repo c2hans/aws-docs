@@ -19,7 +19,7 @@ Required: No
  ** Notes **   <a name="wellarchitected-Type-ChoiceAnswer-Notes"></a>
 The notes associated with a choice.
 Type: String
-Length Constraints: Maximum length of 250.
+Length Constraints: Minimum length of 0. Maximum length of 250.
 Required: No
 
  ** Reason **   <a name="wellarchitected-Type-ChoiceAnswer-Reason"></a>

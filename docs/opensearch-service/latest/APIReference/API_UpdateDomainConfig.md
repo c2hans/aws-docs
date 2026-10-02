@@ -15,6 +15,7 @@ POST /2021-01-01/opensearch/domain/{{DomainName}}/config HTTP/1.1
 Content-type: application/json
 
 {
+   "AcceptedWarnings": [ "{{string}}" ],
    "AccessPolicies": "{{string}}",
    "AdvancedOptions": {
       "{{string}}" : "{{string}}"
@@ -199,6 +200,12 @@ Required: Yes
 <a name="API_UpdateDomainConfig_RequestBody"></a>
 
 The request accepts the following data in JSON format.
+
+ ** [AcceptedWarnings](#API_UpdateDomainConfig_RequestSyntax) **   <a name="opensearchservice-UpdateDomainConfig-request-AcceptedWarnings"></a>
+A list of advisory warning codes to accept for this configuration change. By default, any advisory warning blocks the change. Include the code of each warning you want to accept so the change can proceed. You can find warning codes in the`ValidationFailures` list returned by `DescribeDomainChangeProgress`and `DescribeDryRunProgress`. Critical validation failures cannot be accepted and always block the change. If you omit this parameter or pass an empty list, all warnings block the change. For more information, see [Validating a domain update](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/managedomains-configuration-changes#validation-check).
+Type: Array of strings
+Array Members: Maximum number of 25 items.
+Required: No
 
  ** [AccessPolicies](#API_UpdateDomainConfig_RequestSyntax) **   <a name="opensearchservice-UpdateDomainConfig-request-AccessPolicies"></a>
 Identity and Access Management (IAM) access policy as a JSON-formatted string.
@@ -735,6 +742,7 @@ Content-type: application/json
       }
    },
    "DryRunProgressStatus": {
+      "AcceptedWarnings": [ "string" ],
       "CreationDate": "string",
       "DryRunId": "string",
       "DryRunStatus": "string",
@@ -742,7 +750,8 @@ Content-type: application/json
       "ValidationFailures": [
          {
             "Code": "string",
-            "Message": "string"
+            "Message": "string",
+            "Severity": "string"
          }
       ]
    },

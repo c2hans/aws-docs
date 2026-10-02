@@ -466,6 +466,7 @@ The following table lists the attribute that Connect Customer automatically make
 | Attribute | Type | JSONPath reference | Description |
 | --- | --- | --- | --- |
 | Profile ID | user-defined | $.Attributes.connect\_customer-profile\_profile-id | The Customer Profiles profile ID associated with the contact being dialed. Use this value with the **Customer Profiles** block to retrieve profile data. |
+| Customer-defined dial attribute | user-defined | $.Attributes.<key> | An attribute that you add to the dial request in the **Send communication** block of a campaign flow. For more information, see [Add contact attributes to voice dials](journey-flow-block-send-communication.md#campaigns-add-dial-attributes). |
 
 To access customer data from a segment in your contact flow, use the **Customer Profiles** block with the **Get profile** action. Set the identifier type to **Profile ID** and use `$.Attributes.connect_customer-profile_profile-id` as the identifier value. After the block runs, you can access standard profile attributes using `$.Customer.<AttributeName>` (for example, `$.Customer.FirstName`). To access custom attributes, use `$.Customer.Attributes.<CustomAttributeName>`.
 

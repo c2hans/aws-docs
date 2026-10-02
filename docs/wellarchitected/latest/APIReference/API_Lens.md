@@ -49,6 +49,7 @@ The tags assigned to the lens.
 Type: String to string map
 Map Entries: Maximum number of 50 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
+Key Pattern: `[\p{L}\p{N}\p{Z}_.:/=+@-]+`
 Value Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 

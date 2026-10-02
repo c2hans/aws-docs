@@ -138,14 +138,14 @@ Commercial In-Region prices include a 10% fee over OpenAI rates. You do not need
 
 | **Inference option** | **Input** | **Input — 30m cache write** | **Input — cache read** | **Output** |
 | --- | --- | --- | --- | --- |
-| In-Region | $2.64 | $3.30 | $0.264 | $15.84 |
+| In-Region | $2.70 | $3.375 | $0.27 | $16.20 |
 
 #### Long context (more than 272K input tokens)
 <a name="model-card-openai-gpt-56-terra-pricing-govcloud-long"></a>
 
 | **Inference option** | **Input** | **Input — 30m cache write** | **Input — cache read** | **Output** |
 | --- | --- | --- | --- | --- |
-| In-Region | $5.28 | $6.60 | $0.528 | $23.76 |
+| In-Region | $5.40 | $6.75 | $0.54 | $24.30 |
 
 ## Programmatic Access
 <a name="model-card-openai-gpt-56-terra-programmatic-access"></a>

@@ -11,7 +11,7 @@ The profile template.
 <a name="API_ProfileTemplate_Contents"></a>
 
  ** CreatedAt **   <a name="wellarchitected-Type-ProfileTemplate-CreatedAt"></a>
-The date and time recorded in Unix format (seconds).
+The date and time when the profile template was created.
 Type: Timestamp
 Required: No
 
@@ -27,7 +27,7 @@ Type: Array of [ProfileTemplateQuestion](API_ProfileTemplateQuestion.md) objects
 Required: No
 
  ** UpdatedAt **   <a name="wellarchitected-Type-ProfileTemplate-UpdatedAt"></a>
-The date and time recorded in Unix format (seconds).
+The date and time when the profile template was last updated.
 Type: Timestamp
 Required: No
 

@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/lenses-publish.html
 ---
 
+AWS Well-Architected Agent is in preview release and is subject to change.
+
 # Publishing a custom lens in AWS WA Tool for the first time
 <a name="lenses-publish"></a>
 

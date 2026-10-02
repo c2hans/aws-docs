@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/workloads-sharing.html
 ---
 
+AWS Well-Architected Agent is in preview release and is subject to change.
+
 # Share a workload in AWS Well-Architected Tool
 <a name="workloads-sharing"></a>
 

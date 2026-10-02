@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/optimizing-livestreaming-for-b
 title: 'Guidance for Optimizing Livestreaming for Betting and Gaming on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/optimizing-livestreaming-for-betting-and-gaming-on-aws/
 source: aws-documentation
-generated_on: 2026-10-01
+generated_on: 2026-10-02
 ---
 
 # Guidance for Optimizing Livestreaming for Betting and Gaming on AWS

@@ -10,6 +10,12 @@ Information about the additional configuration.
 ## Contents
 <a name="API_DetectorAdditionalConfigurationResult_Contents"></a>
 
+ ** managedBy **   <a name="guardduty-Type-DetectorAdditionalConfigurationResult-managedBy"></a>
+Indicates what manages the additional configuration. A value of `GUARDDUTY_POLICY` means a GuardDuty policy manages the additional configuration.
+Type: String
+Valid Values: `GUARDDUTY_POLICY`
+Required: No
+
  ** name **   <a name="guardduty-Type-DetectorAdditionalConfigurationResult-name"></a>
 Name of the additional configuration.
 Type: String

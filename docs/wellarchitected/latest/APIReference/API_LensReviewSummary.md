@@ -52,7 +52,7 @@ Required: No
  ** Profiles **   <a name="wellarchitected-Type-LensReviewSummary-Profiles"></a>
 The profiles associated with the workload.
 Type: Array of [WorkloadProfile](API_WorkloadProfile.md) objects
-Array Members: Maximum number of 1 item.
+Array Members: Minimum number of 0 items. Maximum number of 1 item.
 Required: No
 
  ** RiskCounts **   <a name="wellarchitected-Type-LensReviewSummary-RiskCounts"></a>
@@ -63,7 +63,7 @@ Valid Range: Minimum value of 0.
 Required: No
 
  ** UpdatedAt **   <a name="wellarchitected-Type-LensReviewSummary-UpdatedAt"></a>
-The date and time recorded in Unix format (seconds).
+The date and time when the lens review was last updated.
 Type: Timestamp
 Required: No
 

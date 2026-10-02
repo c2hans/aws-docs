@@ -20,6 +20,11 @@ Details on whether the AWS account of the remote API caller is related to your G
 Type: Boolean
 Required: No
 
+ ** awsServiceName **   <a name="guardduty-Type-RemoteAccountDetails-awsServiceName"></a>
+If the remote account belongs to an AWS service, this field indicates which service the remote account belongs to.
+Type: String
+Required: No
+
 ## See Also
 <a name="API_RemoteAccountDetails_SeeAlso"></a>
 

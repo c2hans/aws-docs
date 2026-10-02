@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/sharing-considerations.html
 ---
 
+AWS Well-Architected Agent is in preview release and is subject to change.
+
 # Considerations when sharing AWS Well-Architected Tool workloads
 <a name="sharing-considerations"></a>
 

@@ -11,7 +11,7 @@ A profile.
 <a name="API_Profile_Contents"></a>
 
  ** CreatedAt **   <a name="wellarchitected-Type-Profile-CreatedAt"></a>
-The date and time recorded in Unix format (seconds).
+The date and time when the profile was created.
 Type: Timestamp
 Required: No
 
@@ -25,7 +25,7 @@ Required: No
  ** ProfileArn **   <a name="wellarchitected-Type-Profile-ProfileArn"></a>
 The profile ARN.
 Type: String
-Length Constraints: Maximum length of 2084.
+Length Constraints: Minimum length of 0. Maximum length of 2084.
 Pattern: `arn:aws[-a-z]*:wellarchitected:[a-z]{2}(-gov)?-[a-z]+-\d:\d{12}:profile/[a-z0-9]+`
 Required: No
 
@@ -50,7 +50,7 @@ Required: No
 The profile version.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 32.
-Pattern: `^[A-Za-z0-9-]+$`
+Pattern: `[A-Za-z0-9-]+`
 Required: No
 
  ** ShareInvitationId **   <a name="wellarchitected-Type-Profile-ShareInvitationId"></a>
@@ -64,11 +64,12 @@ The tags assigned to the profile.
 Type: String to string map
 Map Entries: Maximum number of 50 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
+Key Pattern: `[\p{L}\p{N}\p{Z}_.:/=+@-]+`
 Value Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 
  ** UpdatedAt **   <a name="wellarchitected-Type-Profile-UpdatedAt"></a>
-The date and time recorded in Unix format (seconds).
+The date and time when the profile was last updated.
 Type: Timestamp
 Required: No
 

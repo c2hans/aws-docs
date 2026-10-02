@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/activate-appregistry.html
 ---
 
+AWS Well-Architected Agent is in preview release and is subject to change.
+
 # Activating AppRegistry for a workload
 <a name="activate-appregistry"></a>
 

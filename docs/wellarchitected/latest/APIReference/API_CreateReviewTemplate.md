@@ -46,14 +46,14 @@ You should not reuse the same token for other requests. If you retry a request w
 This token is listed as required, however, if you do not specify it, the AWS SDKs automatically generate one for you. If you are not using the AWS SDK or the AWS CLI, you must provide this token or the request will fail.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
-Pattern: `^[\x00-\x7F]*$`
+Pattern: `[\x00-\x7F]*`
 Required: Yes
 
  ** [Description](#API_CreateReviewTemplate_RequestSyntax) **   <a name="wellarchitected-CreateReviewTemplate-request-Description"></a>
 The review template description.
 Type: String
 Length Constraints: Minimum length of 3. Maximum length of 250.
-Pattern: `^[A-Za-z0-9-_.,:/()@!&?#+'’\s]+$`
+Pattern: `[A-Za-z0-9-_.,:/()@!&?#+'’\s]+`
 Required: Yes
 
  ** [Lenses](#API_CreateReviewTemplate_RequestSyntax) **   <a name="wellarchitected-CreateReviewTemplate-request-Lenses"></a>
@@ -66,7 +66,7 @@ Required: Yes
 The notes associated with the workload.
 For a review template, these are the notes that will be associated with the workload when the template is applied.
 Type: String
-Length Constraints: Maximum length of 2084.
+Length Constraints: Minimum length of 0. Maximum length of 2084.
 Required: No
 
  ** [Tags](#API_CreateReviewTemplate_RequestSyntax) **   <a name="wellarchitected-CreateReviewTemplate-request-Tags"></a>
@@ -74,6 +74,7 @@ The tags assigned to the review template.
 Type: String to string map
 Map Entries: Maximum number of 50 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
+Key Pattern: `[\p{L}\p{N}\p{Z}_.:/=+@-]+`
 Value Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 
@@ -81,7 +82,7 @@ Required: No
 Name of the review template.
 Type: String
 Length Constraints: Minimum length of 3. Maximum length of 100.
-Pattern: `^[A-Za-z0-9-_.,:/()@!&?#+'’\s]+$`
+Pattern: `[A-Za-z0-9-_.,:/()@!&?#+'’\s]+`
 Required: Yes
 
 ## Response Syntax

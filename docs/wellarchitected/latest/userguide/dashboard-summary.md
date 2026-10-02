@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/dashboard-summary.html
 ---
 
+AWS Well-Architected Agent is in preview release and is subject to change.
+
 # Summary
 <a name="dashboard-summary"></a>
 

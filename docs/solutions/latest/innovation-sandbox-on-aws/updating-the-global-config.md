@@ -23,7 +23,7 @@ To complete first-run configuration:
 Changes you save on the **Settings** page take effect immediately. You do not need to start an AWS AppConfig deployment.
 
 **Note**
-If you upgraded to v1.3.0 or later from an earlier version, your existing settings were migrated automatically to the **Settings** page during the stack update. The **GlobalConfig** and **ReportingConfig** configuration profiles that remain in AWS AppConfig are no longer used, and editing them has no effect. The account cleanup configuration—the AWS Nuke configuration and the cleanup validator exclusion configuration—remains in AWS AppConfig, unaffected by this change.
+If you upgraded to v1.3.0 or later from an earlier version, your existing settings were migrated automatically to the **Settings** page during the stack update. The **GlobalConfig** and **ReportingConfig** configuration profiles that remain in AWS AppConfig are no longer used, and editing them has no effect. The account cleanup configuration, including the AWS Nuke configuration and the cleanup validator exclusion configuration, remains in AWS AppConfig. Before you run account cleanup, verify the active AWS Nuke configuration as described in [Preserve AWS Nuke configuration customizations](update-the-solution.md#v1-3-0-preserve-nuke-config).
 
 **Note**
 The Innovation Sandbox on AWS solution is now ready for use. You can now [log in to the web UI](log-in-webui.md) and start using the solution.

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/notifications/index.html
 title: 'AWS User Notifications Documentation'
 canonical_url: https://docs.aws.amazon.com/notifications/
 source: aws-documentation
-generated_on: 2026-10-01
+generated_on: 2026-10-02
 ---
 
 # AWS User Notifications Documentation

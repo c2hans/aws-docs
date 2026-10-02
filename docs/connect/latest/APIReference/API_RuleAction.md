@@ -13,7 +13,7 @@ Information about the action to be performed when a rule is triggered.
  ** ActionType **   <a name="connect-Type-RuleAction-ActionType"></a>
 The type of action that creates a rule.
 Type: String
-Valid Values: `CREATE_TASK | ASSIGN_CONTACT_CATEGORY | GENERATE_EVENTBRIDGE_EVENT | SEND_NOTIFICATION | CREATE_CASE | UPDATE_CASE | ASSIGN_SLA | END_ASSOCIATED_TASKS | SUBMIT_AUTO_EVALUATION | EXTRACT_INFORMATION`
+Valid Values: `CREATE_TASK | ASSIGN_CONTACT_CATEGORY | GENERATE_EVENTBRIDGE_EVENT | SEND_NOTIFICATION | CREATE_CASE | UPDATE_CASE | ASSIGN_SLA | END_ASSOCIATED_TASKS | SUBMIT_AUTO_EVALUATION | EXTRACT_INFORMATION | SEND_IN_APP_NOTIFICATION`
 Required: Yes
 
  ** AssignContactCategoryAction **   <a name="connect-Type-RuleAction-AssignContactCategoryAction"></a>
@@ -48,6 +48,12 @@ Required: No
  ** ExtractInformationAction **   <a name="connect-Type-RuleAction-ExtractInformationAction"></a>
 Information about the extract information action.
 Type: [ExtractInformationActionDefinition](API_ExtractInformationActionDefinition.md) object
+Required: No
+
+ ** SendInAppNotificationAction **   <a name="connect-Type-RuleAction-SendInAppNotificationAction"></a>
+Information about the send in-app notification action.
+Supported only for `TriggerEventSource` values: `OnPostCallAnalysisAvailable` \| `OnRealTimeCallAnalysisAvailable` \| `OnRealTimeChatAnalysisAvailable` \| `OnPostChatAnalysisAvailable` \| `OnAfterCallWorkAvailable` \| `OnAfterChatWorkAvailable` \| `OnEmailAnalysisAvailable` \| `OnContactEvaluationSubmit` \| `OnCaseCreate` \| `OnCaseUpdate` \| `OnSlaBreach` \| `OnSchedulePublish` \| `OnScheduleUpdate` \| `OnScheduleTimeOffRequestActivity`
+Type: [SendInAppNotificationActionDefinition](API_SendInAppNotificationActionDefinition.md) object
 Required: No
 
  ** SendNotificationAction **   <a name="connect-Type-RuleAction-SendNotificationAction"></a>

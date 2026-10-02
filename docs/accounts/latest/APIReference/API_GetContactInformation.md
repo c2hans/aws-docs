@@ -60,7 +60,8 @@ Content-type: application/json
       "PostalCode": "string",
       "StateOrRegion": "string",
       "WebsiteUrl": "string"
-   }
+   },
+   "VerificationStatus": "string"
 }
 ```
 
@@ -74,6 +75,15 @@ The following data is returned in JSON format by the service.
  ** [ContactInformation](#API_GetContactInformation_ResponseSyntax) **   <a name="accounts-GetContactInformation-response-ContactInformation"></a>
 Contains the details of the primary contact information associated with an AWS account.
 Type: [ContactInformation](API_ContactInformation.md) object
+
+ ** [VerificationStatus](#API_GetContactInformation_ResponseSyntax) **   <a name="accounts-GetContactInformation-response-VerificationStatus"></a>
+The verification status of the primary contact phone number that is currently associated with the account. Valid values:
++  `VERIFIED`: The phone number currently on file is verified.
++  `UNVERIFIED`: The phone number currently on file isn't verified. If you change the phone number, the status describes the new number.
++  `NOT_SUPPORTED`: Phone number verification isn't available for this account.
+This operation doesn't return `PENDING`. After you call [SendPhoneNumberVerification](API_SendPhoneNumberVerification.md), the status remains `UNVERIFIED` until [VerifyPhoneNumber](API_VerifyPhoneNumber.md) succeeds. In partitions where phone number verification isn't offered, the response doesn't include this field.
+Type: String
+Valid Values: `PENDING | VERIFIED | UNVERIFIED | NOT_SUPPORTED`
 
 ## Errors
 <a name="API_GetContactInformation_Errors"></a>

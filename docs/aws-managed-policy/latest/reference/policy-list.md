@@ -1013,6 +1013,7 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/poli
 + [AWSLambdaExecute](AWSLambdaExecute.md)
 + [AWSLambdaFullAccess](AWSLambdaFullAccess.md)
 + [AWSLambdaInvocation-DynamoDB](AWSLambdaInvocation-DynamoDB.md)
++ [AWSLambdaInvokeWebFunctionEndpointAccess](AWSLambdaInvokeWebFunctionEndpointAccess.md)
 + [AWSLambdaKinesisExecutionRole](AWSLambdaKinesisExecutionRole.md)
 + [AWSLambdaManagedEC2ResourceOperator](AWSLambdaManagedEC2ResourceOperator.md)
 + [AWSLambdaMSKExecutionRole](AWSLambdaMSKExecutionRole.md)

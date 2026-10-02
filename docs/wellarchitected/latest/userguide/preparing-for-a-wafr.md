@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/preparing-for-a-wafr.html
 ---
 
+AWS Well-Architected Agent is in preview release and is subject to change.
+
 # Preparing for a WAFR
 <a name="preparing-for-a-wafr"></a>
 

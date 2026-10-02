@@ -9,4 +9,4 @@ EC2 Image Builder automates the creation, management, and deployment of customiz
 
 For an introduction to the service concepts that these API operations work with, see [How Image Builder works](https://docs.aws.amazon.com/imagebuilder/latest/userguide/how-image-builder-works.html) in the *EC2 Image Builder User Guide*.
 
-This document was last published on October 1, 2026.
+This document was last published on October 2, 2026.

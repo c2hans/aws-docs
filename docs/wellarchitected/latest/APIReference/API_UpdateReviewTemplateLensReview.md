@@ -50,7 +50,7 @@ The request accepts the following data in JSON format.
 The notes associated with the workload.
 For a review template, these are the notes that will be associated with the workload when the template is applied.
 Type: String
-Length Constraints: Maximum length of 2084.
+Length Constraints: Minimum length of 0. Maximum length of 2084.
 Required: No
 
  ** [PillarNotes](#API_UpdateReviewTemplateLensReview_RequestSyntax) **   <a name="wellarchitected-UpdateReviewTemplateLensReview-request-PillarNotes"></a>
@@ -58,7 +58,7 @@ List of pillar notes of a lens review in a workload.
 For a review template, these are the notes that will be associated with the workload when the template is applied.
 Type: String to string map
 Key Length Constraints: Minimum length of 1. Maximum length of 64.
-Value Length Constraints: Maximum length of 2084.
+Value Length Constraints: Minimum length of 0. Maximum length of 2084.
 Required: No
 
 ## Response Syntax

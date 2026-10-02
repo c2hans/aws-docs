@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/configuring-jira.html
 ---
 
+AWS Well-Architected Agent is in preview release and is subject to change.
+
 # Configuring the connector
 <a name="configuring-jira"></a>
 

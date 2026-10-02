@@ -244,6 +244,7 @@ Content-type: application/json
       }
    },
    "DryRunProgressStatus": {
+      "AcceptedWarnings": [ "string" ],
       "CreationDate": "string",
       "DryRunId": "string",
       "DryRunStatus": "string",
@@ -251,7 +252,8 @@ Content-type: application/json
       "ValidationFailures": [
          {
             "Code": "string",
-            "Message": "string"
+            "Message": "string",
+            "Severity": "string"
          }
       ]
    },

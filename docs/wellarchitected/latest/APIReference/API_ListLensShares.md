@@ -33,10 +33,11 @@ Valid Range: Minimum value of 1. Maximum value of 50.
 
  ** [NextToken](#API_ListLensShares_RequestSyntax) **   <a name="wellarchitected-ListLensShares-request-uri-NextToken"></a>
 The token to use to retrieve the next set of results.
+Pattern: `[A-Za-z0-9+\/=_-]+`
 
  ** [SharedWithPrefix](#API_ListLensShares_RequestSyntax) **   <a name="wellarchitected-ListLensShares-request-uri-SharedWithPrefix"></a>
 The AWS account ID, organization ID, or organizational unit (OU) ID with which the lens is shared.
-Length Constraints: Maximum length of 100.
+Length Constraints: Minimum length of 0. Maximum length of 100.
 
  ** [Status](#API_ListLensShares_RequestSyntax) **   <a name="wellarchitected-ListLensShares-request-uri-Status"></a>
 The status of the share request.
@@ -81,6 +82,7 @@ Type: Array of [LensShareSummary](API_LensShareSummary.md) objects
  ** [NextToken](#API_ListLensShares_ResponseSyntax) **   <a name="wellarchitected-ListLensShares-response-NextToken"></a>
 The token to use to retrieve the next set of results.
 Type: String
+Pattern: `[A-Za-z0-9+\/=_-]+`
 
 ## Errors
 <a name="API_ListLensShares_Errors"></a>

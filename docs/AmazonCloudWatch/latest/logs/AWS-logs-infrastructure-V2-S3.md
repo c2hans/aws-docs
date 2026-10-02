@@ -167,13 +167,13 @@ For `aws:SourceAccount`, specify the account IDs whose logs are delivered to thi
 For deliveries that use V2 permissions, the Amazon S3 object key is determined by the destination prefix, the log type, the delivery's suffix path, and whether Hive-compatible paths are enabled. The exact service-defined path and supported suffix variables vary by log type.
 
 Destination prefix
-An optional path that you append to the bucket ARN when you call [PutDeliveryDestination](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliveryDestination.html). For example, `arn:aws:s3:::{{bucket-name}}/{{MyLogPrefix}}`. Delivered objects begin with this prefix. For log types that otherwise use a default `AWSLogs/{{source-account-id}}/{{service-name}}/` path, the destination prefix replaces that default path.
+An optional path that you append to the bucket ARN when you call [PutDeliveryDestination](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliveryDestination.html). For example, `arn:aws:s3:::{{bucket-name}}/{{MyLogPrefix}}`. Delivered objects begin with this prefix, followed by the log type's service-defined path, such as `AWSLogs/{{source-account-id}}/{{service-name}}/`. For CloudFront standard logging (v2), the destination prefix replaces, rather than precedes, that default path.
 
 Suffix path
 An optional path that you configure for an individual delivery in its [S3DeliveryConfiguration](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_S3DeliveryConfiguration.html). A suffix can contain static text and variables. To find the variables supported by a log type, call [DescribeConfigurationTemplates](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DescribeConfigurationTemplates.html) and check `allowedSuffixPathFields`. If you don't specify a suffix path, the log type's default suffix path is used when one is available.
 
 Hive-compatible path
-When `enableHiveCompatiblePath` is `true`, variables in the effective path are rendered as `{{key}}={{value}}`. For example, the default account segment `AWSLogs/{{source-account-id}}/` becomes `AWSLogs/aws-account-id={{source-account-id}}/`. Hive-compatible formatting also applies when you omit `suffixPath` and the log type uses its default suffix.
+When `enableHiveCompatiblePath` is `true`, variables in the effective path are rendered as `{{key}}={{value}}`. For example, the default account segment `AWSLogs/{{source-account-id}}/` becomes `AWSLogs/aws-account-id={{source-account-id}}/`. Omitting `suffixPath` does not guarantee Hive-compatible segments. Hive-compatible formatting applies to a log type's default suffix path only if every variable in that default appears in its `allowedSuffixPathFields`. For other log types, CloudWatch Logs applies no suffix path, so delivered objects have no Hive-compatible segments below the service-defined path. To get Hive-compatible partitioning for those log types, specify `suffixPath` explicitly using the supported variables.
 
 The following examples show the beginning of an Application Load Balancer access-log object key for account `111122223333` in `us-east-1`. Unless noted, the examples assume no destination prefix.
 
@@ -182,7 +182,11 @@ The following examples show the beginning of an Application Load Balancer access
 | Hive-compatible path disabled, suffix omitted | AWSLogs/111122223333/elasticloadbalancing/us-east-1/2026/09/10/ |
 | Hive-compatible path enabled, suffix omitted | AWSLogs/aws-account-id=111122223333/elasticloadbalancing/region=us-east-1/year=2026/month=09/day=10/ |
 | Hive-compatible path enabled, suffix myFolder/{yyyy}/{MM}/{dd} | AWSLogs/aws-account-id=111122223333/elasticloadbalancing/myFolder/year=2026/month=09/day=10/ |
-| Destination prefix MyLogPrefix, Hive-compatible path disabled, suffix omitted | MyLogPrefix/us-east-1/2026/09/10/ |
+| Hive-compatible path enabled, suffix myFolder/ (static text only, so delivery fails) | AWSLogs/111122223333/elasticloadbalancing/myFolder/ |
+| Destination prefix MyLogPrefix, Hive-compatible path disabled, suffix omitted | MyLogPrefix/AWSLogs/111122223333/elasticloadbalancing/us-east-1/2026/09/10/ |
+
+**Important**
+When `enableHiveCompatiblePath` is `true`, the automatically created bucket policy grants `s3:PutObject` on the Hive-compatible prefix. However, a `suffixPath` that contains only static text produces no Hive-compatible segments. As a result, delivered objects target a prefix that the policy does not allow, and delivery fails. Include at least one variable from the log type's `allowedSuffixPathFields` in `suffixPath`, or omit `suffixPath` for a log type whose default suffix path supports Hive-compatible formatting.
 
 **Note**
 CloudFront documents its standard logging (v2) path behavior and examples in [Send logs to Amazon S3](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/standard-logging.html#send-logs-s3).

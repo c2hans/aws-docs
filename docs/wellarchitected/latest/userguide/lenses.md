@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/lenses.html
 ---
 
+AWS Well-Architected Agent is in preview release and is subject to change.
+
 # Using lenses in AWS WA Tool
 <a name="lenses"></a>
 

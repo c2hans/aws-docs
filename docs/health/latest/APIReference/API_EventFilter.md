@@ -21,7 +21,7 @@ Required: No
 A list of AWS Availability Zones.
 Type: Array of strings
 Length Constraints: Minimum length of 6. Maximum length of 18.
-Pattern: `[a-z]{2}\-[0-9a-z\-]{4,16}`
+Pattern: `[a-z]{2,4}\-[0-9a-z\-]{4,16}`
 Required: No
 
  ** endTimes **   <a name="AWSHealth-Type-EventFilter-endTimes"></a>

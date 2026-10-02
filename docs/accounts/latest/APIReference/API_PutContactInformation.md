@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/accounts/latest/APIReference/API_PutCont
 
 Updates the primary contact information of an AWS account.
 
+Changing the phone number doesn't send a verification code. To verify the new phone number, call [SendPhoneNumberVerification](API_SendPhoneNumberVerification.md).
+
 For complete details about how to use the primary contact operations, see [Update the primary contact for your AWS account](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-update-contact-primary.html).
 
 ## Request Syntax

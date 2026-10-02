@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/index.html
 title: 'AWS End User Messaging Documentation'
 canonical_url: https://docs.aws.amazon.com/end-user-messaging/
 source: aws-documentation
-generated_on: 2026-10-01
+generated_on: 2026-10-02
 ---
 
 # AWS End User Messaging Documentation

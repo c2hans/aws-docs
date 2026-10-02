@@ -39,7 +39,7 @@ The request accepts the following data in JSON format.
 The list of profile ARNs to disassociate from the workload.
 Type: Array of strings
 Array Members: Minimum number of 1 item.
-Length Constraints: Maximum length of 2084.
+Length Constraints: Minimum length of 0. Maximum length of 2084.
 Pattern: `arn:aws[-a-z]*:wellarchitected:[a-z]{2}(-gov)?-[a-z]+-\d:\d{12}:profile/[a-z0-9]+`
 Required: Yes
 

@@ -32,6 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[EnvironmentVariables](#cfn-bedrockagentcore-harness-environmentvariables)" : {{{{{Key}}: {{Value}}, ...}}},
       "[ExecutionRoleArn](#cfn-bedrockagentcore-harness-executionrolearn)" : {{String}},
       "[HarnessName](#cfn-bedrockagentcore-harness-harnessname)" : {{String}},
+      "[Hooks](#cfn-bedrockagentcore-harness-hooks)" : {{[ HarnessHook, ... ]}},
       "[MaxIterations](#cfn-bedrockagentcore-harness-maxiterations)" : {{Integer}},
       "[MaxTokens](#cfn-bedrockagentcore-harness-maxtokens)" : {{Integer}},
       "[Memory](#cfn-bedrockagentcore-harness-memory)" : {{HarnessMemoryConfiguration}},
@@ -64,6 +65,8 @@ Properties:
     {{Key}}: {{Value}}}}
   [ExecutionRoleArn](#cfn-bedrockagentcore-harness-executionrolearn): {{String}}
   [HarnessName](#cfn-bedrockagentcore-harness-harnessname): {{String}}
+  [Hooks](#cfn-bedrockagentcore-harness-hooks): {{
+    - HarnessHook}}
   [MaxIterations](#cfn-bedrockagentcore-harness-maxiterations): {{Integer}}
   [MaxTokens](#cfn-bedrockagentcore-harness-maxtokens): {{Integer}}
   [Memory](#cfn-bedrockagentcore-harness-memory): {{
@@ -136,6 +139,13 @@ The name of the harness.
 *Type*: String
 *Pattern*: `^[a-zA-Z][a-zA-Z0-9_]{0,39}$`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`Hooks`  <a name="cfn-bedrockagentcore-harness-hooks"></a>
+The lifecycle hooks configured for the harness.
+*Required*: No
+*Type*: Array of [HarnessHook](aws-properties-bedrockagentcore-harness-harnesshook.md)
+*Maximum*: `20`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `MaxIterations`  <a name="cfn-bedrockagentcore-harness-maxiterations"></a>
 The maximum number of iterations in the agent loop allowed before exiting per invocation.

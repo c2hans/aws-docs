@@ -72,10 +72,11 @@ Defines the type of log that the source is sending.
 + For Elemental MediaPackage, the valid values are `EGRESS_ACCESS_LOGS` and `INGRESS_ACCESS_LOGS`.
 + For Elemental MediaTailor, the valid values are `AD_DECISION_SERVER_LOGS`, `MANIFEST_SERVICE_LOGS`, and `TRANSCODE_LOGS`.
 + For AWS Entity Resolution, the valid value is `WORKFLOW_LOGS`.
++ For Amazon EventBridge Event Bus (Custom), the valid values are `INFO_LOGS` and `ERROR_LOGS`.
 + For IAM Identity Center, the valid value is `ERROR_LOGS`.
 + For Network Firewall Proxy, the valid values are `ALERT_LOGS`, `ALLOW_LOGS`, and `DENY_LOGS`.
 + For Network Load Balancer, the valid value is `NLB_ACCESS_LOGS`.
-+ For AWS PCS, the valid values are `PCS_SCHEDULER_LOGS`, `PCS_JOBCOMP_LOGS`, and `PCS_SCHEDULER_AUDIT_LOGS`.
++ For AWS PCS, the valid values are `PCS_SCHEDULER_LOGS`, `PCS_JOBCOMP_LOGS`, `PCS_SCHEDULER_AUDIT_LOGS`, and `PCS_SCALING_LOGS`.
 + For Amazon Q, the valid values are `EVENT_LOGS` and `SYNC_JOB_LOGS`.
 + For Amazon Q in Connect AI agents, the valid value is `EVENT_LOGS`.
 + For Quick, the valid values are `AGENT_HOURS_LOGS`, `AGENT_METADATA_LOGS`, `CHAT_LOGS`, `DLP_LOGS`, `FEEDBACK_LOGS`, `INDEX_USAGE_LOGS`, and `KB_FILE_SYNC_LOGS`.

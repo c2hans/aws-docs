@@ -17,7 +17,7 @@ Length Constraints: Minimum length of 1. Maximum length of 2048.
 Required: No
 
  ** LastSyncedTime **   <a name="wellarchitected-Type-JiraConfiguration-LastSyncedTime"></a>
-The date and time recorded in Unix format (seconds).
+The date and time when the Jira configuration was last synced.
 Type: Timestamp
 Required: No
 

@@ -127,7 +127,7 @@ You can set a limit for each container definition in the group. If individual co
 
 `TotalVcpuLimit`  <a name="cfn-gamelift-containergroupdefinition-totalvcpulimit"></a>
 The amount of vCPU units on a fleet instance to allocate for the container group (1 vCPU is equal to 1024 CPU units). All containers in the group share these resources. You can set a limit for each container definition in the group. If individual containers have limits, this total value must be equal to or greater than the sum of the limits for each container in the group.
-*Required*: Yes
+*Required*: No
 *Type*: Number
 *Minimum*: `0`
 *Maximum*: `10`

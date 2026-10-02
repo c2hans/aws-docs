@@ -42,10 +42,10 @@ Required: Yes
 The request accepts the following data in JSON format.
 
  ** [Content](#API_UpdateNotificationContent_RequestSyntax) **   <a name="connect-UpdateNotificationContent-request-Content"></a>
-The updated localized content of the notification. A map of locale codes and values. Maximum 500 characters per locale.
+The updated localized content of the notification. A map of locale codes and values. Maximum 500 visible characters per locale.
 Type: String to string map
 Valid Keys: `en_US | de_DE | es_ES | fr_FR | id_ID | it_IT | ja_JP | ko_KR | pt_BR | zh_CN | zh_TW`
-Value Length Constraints: Minimum length of 0. Maximum length of 500.
+Value Length Constraints: Minimum length of 0. Maximum length of 3000.
 Required: Yes
 
 ## Response Syntax

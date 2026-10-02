@@ -43,7 +43,7 @@ The request accepts the following data in JSON format.
 The review template description.
 Type: String
 Length Constraints: Minimum length of 3. Maximum length of 250.
-Pattern: `^[A-Za-z0-9-_.,:/()@!&?#+'’\s]+$`
+Pattern: `[A-Za-z0-9-_.,:/()@!&?#+'’\s]+`
 Required: No
 
  ** [LensesToAssociate](#API_UpdateReviewTemplate_RequestSyntax) **   <a name="wellarchitected-UpdateReviewTemplate-request-LensesToAssociate"></a>
@@ -64,14 +64,14 @@ Required: No
 The notes associated with the workload.
 For a review template, these are the notes that will be associated with the workload when the template is applied.
 Type: String
-Length Constraints: Maximum length of 2084.
+Length Constraints: Minimum length of 0. Maximum length of 2084.
 Required: No
 
  ** [TemplateName](#API_UpdateReviewTemplate_RequestSyntax) **   <a name="wellarchitected-UpdateReviewTemplate-request-TemplateName"></a>
 The review template name.
 Type: String
 Length Constraints: Minimum length of 3. Maximum length of 100.
-Pattern: `^[A-Za-z0-9-_.,:/()@!&?#+'’\s]+$`
+Pattern: `[A-Za-z0-9-_.,:/()@!&?#+'’\s]+`
 Required: No
 
 ## Response Syntax

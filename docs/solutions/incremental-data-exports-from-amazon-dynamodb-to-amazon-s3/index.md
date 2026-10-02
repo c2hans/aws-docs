@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/incremental-data-exports-from-
 title: 'Guidance for Incremental Data Exports from Amazon DynamoDB to Amazon S3'
 canonical_url: https://docs.aws.amazon.com/solutions/incremental-data-exports-from-amazon-dynamodb-to-amazon-s3/
 source: aws-documentation
-generated_on: 2026-10-01
+generated_on: 2026-10-02
 ---
 
 # Guidance for Incremental Data Exports from Amazon DynamoDB to Amazon S3

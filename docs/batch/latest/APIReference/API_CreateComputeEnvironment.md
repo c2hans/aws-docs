@@ -107,6 +107,10 @@ Content-type: application/json
       "containerInsights": "{{string}}"
    },
    "eksConfiguration": {
+      "accessEntry": {
+         "desiredState": "{{string}}",
+         "status": "{{string}}"
+      },
       "eksClusterArn": "{{string}}",
       "kubernetesNamespace": "{{string}}"
    },
@@ -152,7 +156,7 @@ Required: No
 
  ** [eksConfiguration](#API_CreateComputeEnvironment_RequestSyntax) **   <a name="Batch-CreateComputeEnvironment-request-eksConfiguration"></a>
 The details for the Amazon EKS cluster that supports the compute environment.
-To create a compute environment that uses EKS resources, the caller must have permissions to call `eks:DescribeCluster`.
+To create a compute environment that uses EKS resources, the caller must have permissions to call `eks:DescribeCluster`. Additional Amazon EKS permissions are required for AWS Batch to manage an access entry on the cluster; see [Amazon EKS access entry authentication](https://docs.aws.amazon.com/batch/latest/userguide/eks-access-entries.html) in the * AWS Batch User Guide*.
 Type: [EksConfiguration](API_EksConfiguration.md) object
 Required: No
 

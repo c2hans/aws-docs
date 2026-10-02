@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com//solutions/sustainability-data-managemen
 title: 'Guidance for Sustainability Data Management on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/sustainability-data-management-on-aws/
 source: aws-documentation
-generated_on: 2026-10-01
+generated_on: 2026-10-02
 ---
 
 # Guidance for Sustainability Data Management on AWS

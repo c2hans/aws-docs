@@ -36,6 +36,7 @@ Valid Range: Minimum value of 1. Maximum value of 15.
 
  ** [NextToken](#API_GetConsolidatedReport_RequestSyntax) **   <a name="wellarchitected-GetConsolidatedReport-request-uri-NextToken"></a>
 The token to use to retrieve the next set of results.
+Pattern: `[A-Za-z0-9+\/=_-]+`
 
 ## Request Body
 <a name="API_GetConsolidatedReport_RequestBody"></a>
@@ -117,6 +118,7 @@ Type: Array of [ConsolidatedReportMetric](API_ConsolidatedReportMetric.md) objec
  ** [NextToken](#API_GetConsolidatedReport_ResponseSyntax) **   <a name="wellarchitected-GetConsolidatedReport-response-NextToken"></a>
 The token to use to retrieve the next set of results.
 Type: String
+Pattern: `[A-Za-z0-9+\/=_-]+`
 
 ## Errors
 <a name="API_GetConsolidatedReport_Errors"></a>

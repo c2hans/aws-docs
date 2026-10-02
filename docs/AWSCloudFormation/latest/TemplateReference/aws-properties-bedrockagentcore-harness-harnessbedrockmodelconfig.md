@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
-  "[AdditionalParams](#cfn-bedrockagentcore-harness-harnessbedrockmodelconfig-additionalparams)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[AdditionalParams](#cfn-bedrockagentcore-harness-harnessbedrockmodelconfig-additionalparams)" : {{Json}},
   "[ApiFormat](#cfn-bedrockagentcore-harness-harnessbedrockmodelconfig-apiformat)" : {{String}},
   "[MaxTokens](#cfn-bedrockagentcore-harness-harnessbedrockmodelconfig-maxtokens)" : {{Integer}},
   "[ModelId](#cfn-bedrockagentcore-harness-harnessbedrockmodelconfig-modelid)" : {{String}},
@@ -32,8 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-bedrockagentcore-harness-harnessbedrockmodelconfig-syntax.yaml"></a>
 
 ```
-  [AdditionalParams](#cfn-bedrockagentcore-harness-harnessbedrockmodelconfig-additionalparams): {{
-    {{Key}}: {{Value}}}}
+  [AdditionalParams](#cfn-bedrockagentcore-harness-harnessbedrockmodelconfig-additionalparams): {{Json}}
   [ApiFormat](#cfn-bedrockagentcore-harness-harnessbedrockmodelconfig-apiformat): {{String}}
   [MaxTokens](#cfn-bedrockagentcore-harness-harnessbedrockmodelconfig-maxtokens): {{Integer}}
   [ModelId](#cfn-bedrockagentcore-harness-harnessbedrockmodelconfig-modelid): {{String}}
@@ -47,7 +46,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 `AdditionalParams`  <a name="cfn-bedrockagentcore-harness-harnessbedrockmodelconfig-additionalparams"></a>
 Provider-specific parameters passed through to the model provider unchanged.
 *Required*: No
-*Type*: Object
+*Type*: Json
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ApiFormat`  <a name="cfn-bedrockagentcore-harness-harnessbedrockmodelconfig-apiformat"></a>

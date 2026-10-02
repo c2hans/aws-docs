@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/building-a-hybrid-architecture
 title: 'Guidance for Building a Hybrid Architecture Using Amazon ECS Anywhere with Cross- Region Load Balancing'
 canonical_url: https://docs.aws.amazon.com/solutions/building-a-hybrid-architecture-using-amazon-ecs-anywhere-with-cross-region-load-balancing/
 source: aws-documentation
-generated_on: 2026-10-01
+generated_on: 2026-10-02
 ---
 
 # Guidance for Building a Hybrid Architecture Using Amazon ECS Anywhere with Cross- Region Load Balancing

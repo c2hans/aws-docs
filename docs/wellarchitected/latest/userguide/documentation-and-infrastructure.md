@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/documentation-and-infrastructure.html
 ---
 
+AWS Well-Architected Agent is in preview release and is subject to change.
+
 # Documentation and infrastructure
 <a name="documentation-and-infrastructure"></a>
 

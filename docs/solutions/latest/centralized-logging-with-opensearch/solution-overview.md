@@ -8,6 +8,13 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-logging-wit
 **Important**
 This AWS Solution will retire in December 2026. We encourage customers to explore using [Amazon CloudWatch's new unified data management and analytics capabilities](https://aws.amazon.com/blogs/aws/amazon-cloudwatch-introduces-unified-data-management-and-analytics-for-operations-security-and-compliance/). Learn more about [AWS CloudWatch unified data and telemetry](https://aws.amazon.com/cloudwatch/features/unified-data-and-telemetry/) and give it a try in the [AWS CloudWatch console](https://console.aws.amazon.com/cloudwatch/).
 
+**Important**
+For customers in the China (Ningxia) Region:
+Support for Amazon CloudFront in the China (Ningxia) Region will end on May 31, 2027. No new customers will be accepted after September 30, 2026 (for details, see the [End of support notice](https://www.amazonaws.cn/en/cloudfront/#end-of-support-notice)). Because Centralized Logging with OpenSearch depends on Amazon CloudFront, it will follow similar end of support dates in this Region:
+No new customers will be accepted after September 30, 2026.
+AWS support for Centralized Logging with OpenSearch ends in December 2026, after which customers assume responsibility for maintenance and service or API-related updates.
+Existing deployments will continue to run until May 31, 2027.
+
 The Centralized Logging with OpenSearch solution provides comprehensive log management and analysis functions to help you simplify the build of log analytics pipelines. Built on top of Amazon OpenSearch Service, the solution helps you to streamline log ingestion, log processing, and log visualization. You can use the solution in multiple use cases, such as to abide by security and compliance regulations, achieve refined business operations, and enhance IT troubleshooting and maintenance.
 
 **Important**

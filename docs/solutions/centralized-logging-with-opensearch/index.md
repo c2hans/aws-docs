@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com//solutions/centralized-logging-with-open
 title: 'Centralized Logging with OpenSearch'
 canonical_url: https://docs.aws.amazon.com/solutions/centralized-logging-with-opensearch/
 source: aws-documentation
-generated_on: 2026-10-01
+generated_on: 2026-10-02
 ---
 
 # Centralized Logging with OpenSearch
@@ -21,7 +21,19 @@ Build a centralized log analytics platform with Amazon OpenSearch Service on AWS
 
 ## Overview
 
-**Important: This AWS Solution will retire in December 2026. Deployments (via CloudFormation or GitHub) will remain operational, but customers will assume responsibility for maintenance and API-related updates post retirement.** **We encourage customers to explore using [Amazon CloudWatch's new unified data management and analytics capabilities](https://aws.amazon.com/blogs/aws/amazon-cloudwatch-introduces-unified-data-management-and-analytics-for-operations-security-and-compliance/). Learn more about [AWS CloudWatch unified data and telemetry](https://aws.amazon.com/cloudwatch/features/unified-data-and-telemetry/) and give it a try in the [AWS CloudWatch console](https://console.aws.amazon.com/cloudwatch/).** **You can find other AWS Solutions in the [AWS Solutions Library](https://aws.amazon.com/solutions/).** Centralized Logging with OpenSearch helps organizations collect, ingest, and visualize log data from various sources using Amazon OpenSearch Service. This AWS Solution provides a web-based console, which you can use to create log ingestion pipelines with a few clicks. Log ingestion pipelines include log collection agent deployment, log enrichment without writing codes, buffer layer creation, and OpenSearch index configuration. After logs are stored in OpenSearch Service, the solution automatically generates ready-to-use dashboards for analyzing AWS service logs and application logs in different formats (for example, Nginx, JSON, and Spring Boot). In combination with other AWS services, this solution provides you with a turnkey environment to begin logging and monitoring your AWS applications.
+**Important: This AWS Solution will retire in December 2026. Deployments (via CloudFormation or GitHub) will remain operational, but customers will assume responsibility for maintenance and API-related updates post retirement.**
+
+**We encourage customers to explore using [Amazon CloudWatch's new unified data management and analytics capabilities](https://aws.amazon.com/blogs/aws/amazon-cloudwatch-introduces-unified-data-management-and-analytics-for-operations-security-and-compliance/). Learn more about [AWS CloudWatch unified data and telemetry](https://aws.amazon.com/cloudwatch/features/unified-data-and-telemetry/) and give it a try in the [AWS CloudWatch console](https://console.aws.amazon.com/cloudwatch/).**
+
+**You can find other AWS Solutions in the [AWS Solutions Library](https://aws.amazon.com/solutions/).**
+
+**For customers in the Amazon Web Services China - Ningxia region: Support for Amazon CloudFront in the Amazon Web Services China (Ningxia) region will end on May 31, 2027, with no new customers accepted after September 30, 2026 (see the [End of support notice](https://www.amazonaws.cn/en/cloudfront/#end-of-support-notice) for details). Because Centralized Logging with OpenSearch depends on Amazon CloudFront, it will follow similar end of support dates in this region:**
+
+- **No new customers will be accepted after September 30, 2026.**
+- **AWS support for Centralized Logging with OpenSearch ends in December 2026. Customers assume responsibility for maintenance and Service / API-related updates.**
+- **Existing deployments will continue to run until May 31, 2027.**
+
+Centralized Logging with OpenSearch helps organizations collect, ingest, and visualize log data from various sources using Amazon OpenSearch Service. This AWS Solution provides a web-based console, which you can use to create log ingestion pipelines with a few clicks. Log ingestion pipelines include log collection agent deployment, log enrichment without writing codes, buffer layer creation, and OpenSearch index configuration. After logs are stored in OpenSearch Service, the solution automatically generates ready-to-use dashboards for analyzing AWS service logs and application logs in different formats (for example, Nginx, JSON, and Spring Boot). In combination with other AWS services, this solution provides you with a turnkey environment to begin logging and monitoring your AWS applications.
 
 ## Benefits
 
@@ -58,11 +70,11 @@ You can automatically deploy this architecture using the implementation guide an
 1. **Step 11**: Service log pipelines read, parse, process AWS service logs and ingest them into Amazon OpenSearch Service domains or Light Engine.
 ## Deploy with confidence
 
-- **We'll walk you through it**: Get started fast. Read the implementation guide for deployment steps, architecture details, cost information, and customization options.Open guide
+- **We'll walk you through it**: Get started fast. Read the implementation guide for deployment steps, architecture details, cost information, and customization options.
 
 [Open guide](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/solution-overview.html)
 
-- **Let's make it happen**: Ready to deploy? Open the CloudFormation template in the AWS Console to begin setting up the infrastructure you need. You'll be prompted to access your AWS account if you haven't yet logged in.Launch in the AWS Console:Launch in a new VPC in AWS RegionsLaunch in an existing VPC in AWS RegionsLaunch in a new VPC in AWS China RegionsLaunch in an existing VPC in China Regions
+- **Let's make it happen**: Ready to deploy? Open the CloudFormation template in the AWS Console to begin setting up the infrastructure you need. You'll be prompted to access your AWS account if you haven't yet logged in.
 
 [Launch in a new VPC in AWS Regions](https://console.aws.amazon.com/cloudformation/home#/stacks/new?templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Fcentralized-logging-with-opensearch%2Flatest%2FCentralizedLogging.template&redirectId=SolutionWeb)
 [Launch in an existing VPC in AWS Regions](https://console.aws.amazon.com/cloudformation/home#/stacks/new?templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Fcentralized-logging-with-opensearch%2Flatest%2FCentralizedLoggingFromExistingVPC.template&redirectId=SolutionWeb)

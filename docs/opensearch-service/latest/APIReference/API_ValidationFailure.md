@@ -20,6 +20,12 @@ A message corresponding to the failure.
 Type: String
 Required: No
 
+ ** Severity **   <a name="opensearchservice-Type-ValidationFailure-Severity"></a>
+The severity of the validation failure.
+Type: String
+Valid Values: `Critical | Warning`
+Required: No
+
 ## See Also
 <a name="API_ValidationFailure_SeeAlso"></a>
 

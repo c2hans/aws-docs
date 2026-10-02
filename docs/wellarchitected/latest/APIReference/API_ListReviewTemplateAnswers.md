@@ -33,6 +33,7 @@ Valid Range: Minimum value of 1. Maximum value of 50.
 
  ** [NextToken](#API_ListReviewTemplateAnswers_RequestSyntax) **   <a name="wellarchitected-ListReviewTemplateAnswers-request-uri-NextToken"></a>
 The token to use to retrieve the next set of results.
+Pattern: `[A-Za-z0-9+\/=_-]+`
 
  ** [PillarId](#API_ListReviewTemplateAnswers_RequestSyntax) **   <a name="wellarchitected-ListReviewTemplateAnswers-request-uri-PillarId"></a>
 The ID used to identify a pillar, for example, `security`.
@@ -131,6 +132,7 @@ Length Constraints: Minimum length of 1. Maximum length of 128.
  ** [NextToken](#API_ListReviewTemplateAnswers_ResponseSyntax) **   <a name="wellarchitected-ListReviewTemplateAnswers-response-NextToken"></a>
 The token to use to retrieve the next set of results.
 Type: String
+Pattern: `[A-Za-z0-9+\/=_-]+`
 
  ** [TemplateArn](#API_ListReviewTemplateAnswers_ResponseSyntax) **   <a name="wellarchitected-ListReviewTemplateAnswers-response-TemplateArn"></a>
 The ARN of the review template.

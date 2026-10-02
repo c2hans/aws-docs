@@ -17,6 +17,12 @@ Additional configuration for a resource.
 Type: Array of [DetectorAdditionalConfigurationResult](API_DetectorAdditionalConfigurationResult.md) objects
 Required: No
 
+ ** managedBy **   <a name="guardduty-Type-DetectorFeatureConfigurationResult-managedBy"></a>
+Indicates what manages the feature. A value of `GUARDDUTY_POLICY` means a GuardDuty policy manages the feature.
+Type: String
+Valid Values: `GUARDDUTY_POLICY`
+Required: No
+
  ** name **   <a name="guardduty-Type-DetectorFeatureConfigurationResult-name"></a>
 Indicates the name of the feature that can be enabled for the detector.
 Type: String

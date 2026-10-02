@@ -110,7 +110,7 @@ The name of the job definition.
 
 `NodeProperties`  <a name="cfn-batch-jobdefinition-nodeproperties"></a>
 An object with properties that are specific to multi-node parallel jobs. When `nodeProperties` is used in the job definition, it can't be used in addition to `containerProperties`, `ecsProperties`, or `eksProperties`.
-If the job runs on Fargate resources, don't specify `nodeProperties`. Use `containerProperties` instead.
+If the job runs on Fargate resources, don't specify `nodeProperties`. We recommend `ecsProperties`, which supports both single-container and multi-container jobs. `containerProperties` is also supported for single-container jobs.
 *Required*: No
 *Type*: [NodeProperties](aws-properties-batch-jobdefinition-nodeproperties.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

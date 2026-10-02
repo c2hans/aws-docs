@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/enterprise-search-and-audit-fo
 title: 'Guidance for Enterprise Search and Audit for Amazon S3'
 canonical_url: https://docs.aws.amazon.com/solutions/enterprise-search-and-audit-for-amazon-s3/
 source: aws-documentation
-generated_on: 2026-10-01
+generated_on: 2026-10-02
 ---
 
 # Guidance for Enterprise Search and Audit for Amazon S3

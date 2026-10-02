@@ -18,5 +18,6 @@ The following actions are supported:
 +  [DescribeEventsForOrganization](API_DescribeEventsForOrganization.md)
 +  [DescribeEventTypes](API_DescribeEventTypes.md)
 +  [DescribeHealthServiceStatusForOrganization](API_DescribeHealthServiceStatusForOrganization.md)
++  [DescribeServiceLifecycle](API_DescribeServiceLifecycle.md)
 +  [DisableHealthServiceAccessForOrganization](API_DisableHealthServiceAccessForOrganization.md)
 +  [EnableHealthServiceAccessForOrganization](API_EnableHealthServiceAccessForOrganization.md)

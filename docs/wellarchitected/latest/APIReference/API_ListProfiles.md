@@ -25,10 +25,11 @@ Valid Range: Minimum value of 1. Maximum value of 50.
 
  ** [NextToken](#API_ListProfiles_RequestSyntax) **   <a name="wellarchitected-ListProfiles-request-uri-NextToken"></a>
 The token to use to retrieve the next set of results.
+Pattern: `[A-Za-z0-9+\/=_-]+`
 
  ** [ProfileNamePrefix](#API_ListProfiles_RequestSyntax) **   <a name="wellarchitected-ListProfiles-request-uri-ProfileNamePrefix"></a>
 An optional string added to the beginning of each profile name returned in the results.
-Length Constraints: Maximum length of 100.
+Length Constraints: Minimum length of 0. Maximum length of 100.
 
  ** [ProfileOwnerType](#API_ListProfiles_RequestSyntax) **   <a name="wellarchitected-ListProfiles-request-uri-ProfileOwnerType"></a>
 Profile owner type.
@@ -72,6 +73,7 @@ The following data is returned in JSON format by the service.
  ** [NextToken](#API_ListProfiles_ResponseSyntax) **   <a name="wellarchitected-ListProfiles-response-NextToken"></a>
 The token to use to retrieve the next set of results.
 Type: String
+Pattern: `[A-Za-z0-9+\/=_-]+`
 
  ** [ProfileSummaries](#API_ListProfiles_ResponseSyntax) **   <a name="wellarchitected-ListProfiles-response-ProfileSummaries"></a>
 Profile summaries.

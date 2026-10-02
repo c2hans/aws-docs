@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/building-an-ecommerce-experien
 title: 'Guidance for Building an Ecommerce Experience with Commercetools on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/building-an-ecommerce-experience-with-commercetools-on-aws/
 source: aws-documentation
-generated_on: 2026-10-01
+generated_on: 2026-10-02
 ---
 
 # Guidance for Building an Ecommerce Experience with Commercetools on AWS

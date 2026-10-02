@@ -51,7 +51,7 @@ Any tags assigned to the VPN concentrator.
 
 `TransitGatewayId`  <a name="cfn-ec2-vpnconcentrator-transitgatewayid"></a>
 The ID of the transit gateway associated with the VPN concentrator.
-*Required*: Yes
+*Required*: No
 *Type*: String
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 

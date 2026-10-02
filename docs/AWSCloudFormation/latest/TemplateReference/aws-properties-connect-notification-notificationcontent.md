@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Connect::Notification NotificationContent
 <a name="aws-properties-connect-notification-notificationcontent"></a>
 
-A map of localized notification content where keys are locale codes and values are the notification text in that locale. Each localized string can be 0-500 characters.
+A map of localized notification content where keys are locale codes and values are the notification text in that locale. Each localized string can be 0-500 visible characters.
 
 ## Syntax
 <a name="aws-properties-connect-notification-notificationcontent-syntax"></a>

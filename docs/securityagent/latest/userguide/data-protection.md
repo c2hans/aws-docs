@@ -49,6 +49,13 @@ For self-hosted providers (GitLab Self-Managed, GitHub Enterprise Server, and Bi
 
 In the default configuration, AWS Security Agent uses the public internet to reach your app for penetration testing. You can optionally configure penetration tests to use a VPC to access your application. For more information, see [Connect agent to private VPC resources](connect-agent-vpc.md).
 
+## Data from CI/CD pipeline integrations
+<a name="_data_from_cicd_pipeline_integrations"></a>
+
+When you run penetration tests from a CI/CD pipeline, the pipeline integration sends AWS Security Agent metadata that identifies the change to test: the base and head commit identifiers of the deployed commit range, and the identifier of the pipeline run that triggered the test. AWS Security Agent uses this metadata only to determine the security-relevant surface to test; it computes the difference between the two commits server-side from the repository you connected.
+
+This metadata is encrypted in transit and at rest in the same way as other penetration test data. To avoid disclosing sensitive information, do not embed secrets, credentials, or personally identifiable information (PII) in commit messages or branch names. The pipeline integration authenticates to AWS with short-lived credentials obtained through OpenID Connect (OIDC) federation and does not require you to store long-lived AWS access keys in your pipeline. For more information, see [Run penetration tests from your CI/CD pipeline](cicd-pentest.md).
+
 ## Cross-Region data processing
 <a name="cross-region-processing"></a>
 

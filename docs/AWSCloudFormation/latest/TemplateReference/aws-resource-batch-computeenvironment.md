@@ -118,7 +118,7 @@ The Amazon ECS settings for the compute environment. These settings control Clou
 
 `EksConfiguration`  <a name="cfn-batch-computeenvironment-eksconfiguration"></a>
 The details for the Amazon EKS cluster that supports the compute environment.
-To create a compute environment that uses EKS resources, the caller must have permissions to call `eks:DescribeCluster`.
+To create a compute environment that uses EKS resources, the caller must have permissions to call `eks:DescribeCluster`. Additional Amazon EKS permissions are required for AWS Batch to manage an access entry on the cluster; see [Amazon EKS access entry authentication](https://docs.aws.amazon.com/batch/latest/userguide/eks-access-entries.html) in the *AWS Batch User Guide*.
 *Required*: No
 *Type*: [EksConfiguration](aws-properties-batch-computeenvironment-eksconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

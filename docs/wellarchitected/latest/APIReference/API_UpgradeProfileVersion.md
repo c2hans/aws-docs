@@ -27,7 +27,7 @@ The request uses the following URI parameters.
 
  ** [ProfileArn](#API_UpgradeProfileVersion_RequestSyntax) **   <a name="wellarchitected-UpgradeProfileVersion-request-uri-ProfileArn"></a>
 The profile ARN.
-Length Constraints: Maximum length of 2084.
+Length Constraints: Minimum length of 0. Maximum length of 2084.
 Pattern: `arn:aws[-a-z]*:wellarchitected:[a-z]{2}(-gov)?-[a-z]+-\d:\d{12}:profile/[a-z0-9]+`
 Required: Yes
 
@@ -48,7 +48,7 @@ You should not reuse the same token for other requests. If you retry a request w
 This token is listed as required, however, if you do not specify it, the AWS SDKs automatically generate one for you. If you are not using the AWS SDK or the AWS CLI, you must provide this token or the request will fail.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
-Pattern: `^[\x00-\x7F]*$`
+Pattern: `[\x00-\x7F]*`
 Required: No
 
  ** [MilestoneName](#API_UpgradeProfileVersion_RequestSyntax) **   <a name="wellarchitected-UpgradeProfileVersion-request-MilestoneName"></a>

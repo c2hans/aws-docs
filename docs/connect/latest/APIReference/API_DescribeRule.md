@@ -93,6 +93,24 @@ Content-type: application/json
                   }
                ]
             },
+            "SendInAppNotificationAction": {
+               "Content": {
+                  "string" : "string"
+               },
+               "Exclusion": {
+                  "UserIds": [ "string" ],
+                  "UserTags": {
+                     "string" : "string"
+                  }
+               },
+               "Priority": "string",
+               "Recipient": {
+                  "UserIds": [ "string" ],
+                  "UserTags": {
+                     "string" : "string"
+                  }
+               }
+            },
             "SendNotificationAction": {
                "Content": "string",
                "ContentType": "string",

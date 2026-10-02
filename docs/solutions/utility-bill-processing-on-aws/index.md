@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/utility-bill-processing-on-aws
 title: 'Guidance for Utility Bill Processing on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/utility-bill-processing-on-aws/
 source: aws-documentation
-generated_on: 2026-10-01
+generated_on: 2026-10-02
 ---
 
 # Guidance for Utility Bill Processing on AWS

@@ -4279,7 +4279,7 @@ Contains the Elemental Inference configuration for a channel, as returned by Des
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
-| enrichmentMethods | Array of type [EnrichmentMethod](#channels-channelid-model-enrichmentmethod) | False | The Contextual Metadata Enrichment methods enabled for this channel. Each method defines how the channel augments its output with contextual metadata from the Elemental Inference feed. |
+| enrichmentMethods | Array of type [EnrichmentMethod](#channels-channelid-model-enrichmentmethod) | False | The Contextual Metadata Enrichment methods enabled for this channel. Each method defines how the channel augments its output with contextual metadata from the Elemental Inference feed. Valid values:+ `SCTE35_ELEMENTAL_INFERENCE_QUERY_PARAMS` – Enriches outbound SCTE-35 messages with query parameters that downstream systems can use to call the Elemental Inference GetMetadata API. |
 | feedArn | string | False | The Amazon Resource Name (ARN) of the feed resource that is associated with this channel. The feed is a resource in the Elemental Inference service. |
 
 ### DvbNitSettings
@@ -4670,7 +4670,7 @@ Encoder Settings
 ### EnrichmentMethod
 <a name="channels-channelid-model-enrichmentmethod"></a>
 
-A Contextual Metadata Enrichment method. Valid values: - SCTE35\_ELEMENTAL\_INFERENCE\_QUERY\_PARAMS – Enriches the channel output with contextual metadata derived from SCTE-35 markers by querying the Elemental Inference feed.
+A Contextual Metadata Enrichment method. For the valid values, see the `enrichmentMethods` field in `InferenceSettings`.
 + `SCTE35_ELEMENTAL_INFERENCE_QUERY_PARAMS`
 
 ### FailoverCondition
@@ -5687,7 +5687,7 @@ Contains the Elemental Inference settings for a channel, including the feed Amaz
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
-| enrichmentMethods | Array of type [EnrichmentMethod](#channels-channelid-model-enrichmentmethod) | False | The Contextual Metadata Enrichment methods enabled for this channel. Each method defines how the channel augments its output with contextual metadata from the Elemental Inference feed. |
+| enrichmentMethods | Array of type [EnrichmentMethod](#channels-channelid-model-enrichmentmethod) | False | The Contextual Metadata Enrichment methods enabled for this channel. Each method defines how the channel augments its output with contextual metadata from the Elemental Inference feed. Valid values:+ `SCTE35_ELEMENTAL_INFERENCE_QUERY_PARAMS` – Enriches outbound SCTE-35 messages with query parameters that downstream systems can use to call the Elemental Inference GetMetadata API. |
 | feedArn | string | False | The Amazon Resource Name (ARN) of the feed resource that is associated with this channel. The feed is a resource in the Elemental Inference service. |
 
 ### InputAttachment

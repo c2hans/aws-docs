@@ -41,6 +41,7 @@ Required: No
  ** [NextToken](#API_ListNotifications_RequestSyntax) **   <a name="wellarchitected-ListNotifications-request-NextToken"></a>
 The token to use to retrieve the next set of results.
 Type: String
+Pattern: `[A-Za-z0-9+\/=_-]+`
 Required: No
 
  ** [ResourceArn](#API_ListNotifications_RequestSyntax) **   <a name="wellarchitected-ListNotifications-request-ResourceArn"></a>
@@ -95,6 +96,7 @@ The following data is returned in JSON format by the service.
  ** [NextToken](#API_ListNotifications_ResponseSyntax) **   <a name="wellarchitected-ListNotifications-response-NextToken"></a>
 The token to use to retrieve the next set of results.
 Type: String
+Pattern: `[A-Za-z0-9+\/=_-]+`
 
  ** [NotificationSummaries](#API_ListNotifications_ResponseSyntax) **   <a name="wellarchitected-ListNotifications-response-NotificationSummaries"></a>
 List of lens notification summaries in a workload.

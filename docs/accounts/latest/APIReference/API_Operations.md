@@ -21,4 +21,6 @@ The following actions are supported:
 +  [PutAccountName](API_PutAccountName.md)
 +  [PutAlternateContact](API_PutAlternateContact.md)
 +  [PutContactInformation](API_PutContactInformation.md)
++  [SendPhoneNumberVerification](API_SendPhoneNumberVerification.md)
 +  [StartPrimaryEmailUpdate](API_StartPrimaryEmailUpdate.md)
++  [VerifyPhoneNumber](API_VerifyPhoneNumber.md)

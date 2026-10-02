@@ -50,13 +50,14 @@ Required: No
  ** NextToken **   <a name="wellarchitected-Type-LensReview-NextToken"></a>
 The token to use to retrieve the next set of results.
 Type: String
+Pattern: `[A-Za-z0-9+\/=_-]+`
 Required: No
 
  ** Notes **   <a name="wellarchitected-Type-LensReview-Notes"></a>
 The notes associated with the workload.
 For a review template, these are the notes that will be associated with the workload when the template is applied.
 Type: String
-Length Constraints: Maximum length of 2084.
+Length Constraints: Minimum length of 0. Maximum length of 2084.
 Required: No
 
  ** PillarReviewSummaries **   <a name="wellarchitected-Type-LensReview-PillarReviewSummaries"></a>
@@ -74,7 +75,7 @@ Required: No
  ** Profiles **   <a name="wellarchitected-Type-LensReview-Profiles"></a>
 The profiles associated with the workload.
 Type: Array of [WorkloadProfile](API_WorkloadProfile.md) objects
-Array Members: Maximum number of 1 item.
+Array Members: Minimum number of 0 items. Maximum number of 1 item.
 Required: No
 
  ** RiskCounts **   <a name="wellarchitected-Type-LensReview-RiskCounts"></a>
@@ -85,7 +86,7 @@ Valid Range: Minimum value of 0.
 Required: No
 
  ** UpdatedAt **   <a name="wellarchitected-Type-LensReview-UpdatedAt"></a>
-The date and time recorded in Unix format (seconds).
+The date and time when the lens review was last updated.
 Type: Timestamp
 Required: No
 

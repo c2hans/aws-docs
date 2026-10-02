@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/kindle/index.html
 title: 'AWS Documentation in Kindle Format'
 canonical_url: https://docs.aws.amazon.com/kindle/
 source: aws-documentation
-generated_on: 2026-10-01
+generated_on: 2026-10-02
 ---
 
 # AWS Documentation in Kindle Format
