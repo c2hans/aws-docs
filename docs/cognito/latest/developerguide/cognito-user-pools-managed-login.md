@@ -26,6 +26,8 @@ The branding editor isn't available in all feature plans for user pools. For mor
 
 For more information about constructing requests to managed login and hosted UI services, see [User pool endpoints and managed login reference](cognito-userpools-server-contract-reference.md).
 
+Managed login supports step-up authentication with the `acr_values` and `max_age` parameters on the authorize and login endpoints. For more information, see the [authorize endpoint](authorization-endpoint.md#authorization-endpoint-step-up) and [login endpoint](login-endpoint.md#login-endpoint-step-up).
+
 **Note**
 Amazon Cognito managed login doesn't support custom authentication with [custom authentication challenge Lambda triggers](user-pool-lambda-challenge.md).
 

@@ -44,6 +44,9 @@ Required: Yes
 ```
 {
    "IdentityProvider": {
+      "AcrMapping": {
+         "string" : "string"
+      },
       "AttributeMapping": {
          "string" : "string"
       },

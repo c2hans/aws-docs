@@ -15,6 +15,7 @@ The following data types are supported:
 +  [AccountTakeoverActionsType](API_AccountTakeoverActionsType.md)
 +  [AccountTakeoverActionType](API_AccountTakeoverActionType.md)
 +  [AccountTakeoverRiskConfigurationType](API_AccountTakeoverRiskConfigurationType.md)
++  [AcrLevelConfigType](API_AcrLevelConfigType.md)
 +  [AdminCreateUserConfigType](API_AdminCreateUserConfigType.md)
 +  [AdvancedSecurityAdditionalFlowsType](API_AdvancedSecurityAdditionalFlowsType.md)
 +  [AnalyticsConfigurationType](API_AnalyticsConfigurationType.md)

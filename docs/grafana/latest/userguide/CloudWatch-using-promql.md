@@ -17,7 +17,7 @@ Querying with PromQL requires OTLP metrics ingestion and OTel enrichment to be e
 
 The **PromQL** query type has two editing modes. Use the **Builder**/**Code** toggle in the query editor header to switch between them. Grafana keeps the query in sync when you switch modes. If a raw query written in **Code** mode can't be represented visually, Grafana prompts you before switching to **Builder** mode, because parts of the query might be lost.
 
-You can augment PromQL queries with template variables. Grafana interpolates template variables in the expression before sending the query to CloudWatch. For more information, see [Templates and variables](templates-and-variables.md).
+You can augment PromQL queries with template variables. Grafana interpolates template variables in the expression before sending the query to CloudWatch. For more information, see [Variables](v13-dash-variables.md).
 
 ## Builder mode
 <a name="CloudWatch-promql-builder-mode"></a>

@@ -388,6 +388,7 @@ The following data types are supported by AWS Invoicing:
 +  [InvoiceSummary](API_invoicing_InvoiceSummary.md)
 +  [InvoiceUnit](API_invoicing_InvoiceUnit.md)
 +  [InvoiceUnitRule](API_invoicing_InvoiceUnitRule.md)
++  [MarketplacePunchOutPreference](API_invoicing_MarketplacePunchOutPreference.md)
 +  [ProcurementPortal](API_invoicing_ProcurementPortal.md)
 +  [ProcurementPortalPreference](API_invoicing_ProcurementPortalPreference.md)
 +  [ProcurementPortalPreferenceSelector](API_invoicing_ProcurementPortalPreferenceSelector.md)

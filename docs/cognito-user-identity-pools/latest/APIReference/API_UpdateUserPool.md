@@ -36,6 +36,11 @@ Amazon Cognito evaluates AWS Identity and Access Management (IAM) policies in re
          }
       ]
    },
+   "AcrConfiguration": {
+      "{{string}}" : {
+         "AcrValue": "{{string}}"
+      }
+   },
    "AdminCreateUserConfig": {
       "AllowAdminCreateUserOnly": {{boolean}},
       "InviteMessageTemplate": {
@@ -163,6 +168,14 @@ The request accepts the following data in JSON format.
  ** [AccountRecoverySetting](#API_UpdateUserPool_RequestSyntax) **   <a name="CognitoUserPools-UpdateUserPool-request-AccountRecoverySetting"></a>
 The available verified method a user can use to recover their password when they call `ForgotPassword`. You can use this setting to define a preferred method when a user has more than one method available. With this setting, SMS doesn't qualify for a valid password recovery mechanism if the user also has SMS multi-factor authentication (MFA) activated. In the absence of this setting, Amazon Cognito uses the legacy behavior to determine the recovery method where SMS is preferred through email.
 Type: [AccountRecoverySettingType](API_AccountRecoverySettingType.md) object
+Required: No
+
+ ** [AcrConfiguration](#API_UpdateUserPool_RequestSyntax) **   <a name="CognitoUserPools-UpdateUserPool-request-AcrConfiguration"></a>
+The custom names for the authentication context class reference (ACR) levels in your user pool. This configuration has the same behavior as it does when you create a user pool: you customize only the URI name that Amazon Cognito reports for each of the four fixed ACR levels, and any level that you don't specify keeps its default name. Each name must be unique across all four levels, including default names.
+Configuring custom ACR level names requires the Essentials or Plus feature plan. To activate this setting, your user pool must be in the [ Essentials tier](https://docs.aws.amazon.com/cognito/latest/developerguide/feature-plans-features-essentials.html) or higher.
+Type: String to [AcrLevelConfigType](API_AcrLevelConfigType.md) object map
+Map Entries: Minimum number of 0 items. Maximum number of 4 items.
+Key Pattern: `Level[1-4]`
 Required: No
 
  ** [AdminCreateUserConfig](#API_UpdateUserPool_RequestSyntax) **   <a name="CognitoUserPools-UpdateUserPool-request-AdminCreateUserConfig"></a>
@@ -318,7 +331,10 @@ The message provided when the concurrent exception is thrown.
 HTTP Status Code: 400
 
  ** FeatureUnavailableInTierException **
-This exception is thrown when a feature you attempted to configure isn't available in your current feature plan.
+This exception is thrown when a feature that you attempted to use or configure isn't included in your user pool's current feature plan. This can occur when:
++ You configure a feature that your feature plan doesn't support.
++ You make a request that uses a feature that requires a higher feature plan.
+To resolve this issue, upgrade your user pool to a feature plan that includes the feature.
 HTTP Status Code: 400
 
  ** InternalErrorException **

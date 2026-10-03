@@ -48,7 +48,7 @@ Required: No
 
  ** Owner **   <a name="securityhub-Type-Resource-Owner"></a>
 Information about the account and organization that own the resource.
-Type:  object
+Type: [ResourceOwner](API_ResourceOwner.md) object
 Required: No
 
  ** Partition **   <a name="securityhub-Type-Resource-Partition"></a>

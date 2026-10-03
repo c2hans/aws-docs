@@ -10,7 +10,6 @@ This documentation topic is designed for Grafana workspaces that support **Grafa
 For Grafana workspaces that support Grafana version 12.x, see [Working in Grafana version 12](using-grafana-v12.md).
 For Grafana workspaces that support Grafana version 10.x, see [Working in Grafana version 10](using-grafana-v10.md).
 For Grafana workspaces that support Grafana version 9.x, see [Working in Grafana version 9](using-grafana-v9.md).
-For Grafana workspaces that support Grafana version 8.x, see [Working in Grafana version 8](using-grafana-v8.md).
 
 Starting with Grafana version 13, *dynamic dashboards* are enabled by default in your Amazon Managed Grafana workspace. Every new and existing dashboard uses the new layout engine, editing experience, and dashboard structure automatically. Your existing dashboards are migrated to the new schema (version 2) the first time you open them, with no manual steps required.
 

@@ -13,6 +13,11 @@ generated_on: 2026-10-02
 
 AWS End User Messaging helps you engage your customers by sending them SMS, voice messages, WhatsApp, and push notifications.
 
+## AWS End User Messaging
+
+- [User Guide](/end-user-messaging/latest/userguide/what-is-service.html): Describes key concepts for AWS End User Messaging and provides instructions for using the AWS End User Messaging console.
+- [API Reference](/end-user-messaging/latest/APIReference/Welcome.html): Describes the REST API resources and operations for AWS End User Messaging, including brand profiles, one-time passcode configuration and verification, and registration synchronization.
+
 ## SMS
 
 - [User Guide](/sms-voice/latest/userguide/what-is-service.html): Describes key concepts for AWS End User Messaging SMS and provides instructions for using the AWS End User Messaging SMS console.

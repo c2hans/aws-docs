@@ -380,6 +380,7 @@ Find user guides, developer guides, API references, and CLI references for your 
 - [AWS Tools for PowerShell](/powershell/?icmpid=docs_homepage_mgmtgov): Script operations on AWS resources from the PowerShell command line
 - [AWS Trusted Advisor](/aws-support/?icmpid=docs_homepage_mgmtgov): Optimize performance and security
 - [AWS User Notifications](/notifications/?icmpid=docs_homepage_mgmtgov): Unifies the notification experience across AWS services
+- [AWS Well-Architected Agent](/wellarchitected/?icmpid=docs_homepage_mgmtgov): AI-powered cloud optimization service
 - [AWS Well-Architected Tool](/wellarchitected/?icmpid=docs_homepage_mgmtgov): Review and improve your workloads
 
 ### Marketplace

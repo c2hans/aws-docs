@@ -49,6 +49,11 @@ Required: Yes
             }
          ]
       },
+      "AcrConfiguration": {
+         "string" : {
+            "AcrValue": "string"
+         }
+      },
       "AdminCreateUserConfig": {
          "AllowAdminCreateUserOnly": boolean,
          "InviteMessageTemplate": {

@@ -44,7 +44,7 @@ Required: No
  ** [Session](#API_VerifySoftwareToken_RequestSyntax) **   <a name="CognitoUserPools-VerifySoftwareToken-request-Session"></a>
 The session ID from an `AssociateSoftwareToken` request.
 Type: String
-Length Constraints: Minimum length of 20. Maximum length of 2048.
+Length Constraints: Minimum length of 20. Maximum length of 4096.
 Required: No
 
  ** [UserCode](#API_VerifySoftwareToken_RequestSyntax) **   <a name="CognitoUserPools-VerifySoftwareToken-request-UserCode"></a>
@@ -75,7 +75,7 @@ The following data is returned in JSON format by the service.
 This session ID satisfies an `MFA_SETUP` challenge. Supply the session ID in your challenge response.
 Operations that can return an `MFA_SETUP` challenge include [InitiateAuth](API_InitiateAuth.md), [AdminInitiateAuth](API_AdminInitiateAuth.md), [RespondToAuthChallenge](API_RespondToAuthChallenge.md), and [AdminRespondToAuthChallenge](API_AdminRespondToAuthChallenge.md).
 Type: String
-Length Constraints: Minimum length of 20. Maximum length of 2048.
+Length Constraints: Minimum length of 20. Maximum length of 4096.
 
  ** [Status](#API_VerifySoftwareToken_ResponseSyntax) **   <a name="CognitoUserPools-VerifySoftwareToken-response-Status"></a>
 Amazon Cognito can accept or reject the code that you provide. This response parameter indicates the success of TOTP verification. Some reasons that this operation might return an error are clock skew on the user's device and excessive retries.

@@ -157,7 +157,7 @@ Type: [CodeDeliveryDetailsType](API_CodeDeliveryDetailsType.md) object
  ** [Session](#API_SignUp_ResponseSyntax) **   <a name="CognitoUserPools-SignUp-response-Session"></a>
 A session Id that you can pass to `ConfirmSignUp` when you want to immediately sign in your user with the `USER_AUTH` flow after they complete sign-up.
 Type: String
-Length Constraints: Minimum length of 20. Maximum length of 2048.
+Length Constraints: Minimum length of 20. Maximum length of 4096.
 
  ** [UserConfirmed](#API_SignUp_ResponseSyntax) **   <a name="CognitoUserPools-SignUp-response-UserConfirmed"></a>
 Indicates whether the user was automatically confirmed. You can auto-confirm users with a [pre sign-up Lambda trigger](https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-lambda-pre-sign-up.html).

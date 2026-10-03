@@ -27,10 +27,33 @@ For additional information about troubleshooting Client VPN endpoint issues, see
 
 If you have problems with the AWS provided client and you need to contact AWS Support to help troubleshoot, the AWS provided client has an option for sending the diagnostic logs to AWS Support. The option is available on the Windows, macOS and Linux client applications.
 
-Before you send the files, you must agree to allow AWS Support to access your diagnostic logs. After you agree, we provide you with a reference number that you can give to AWS Support so that they can immediately access the files.
+After you send the files, we provide you with a reference number that you can give to AWS Support so that they can immediately access the files.
 
-### Send diagnostic logs
+The steps depend on the version of the AWS provided client that you are using. To check your version, open the **About** window. On Windows and Linux, choose **Help**, **About AWS VPN Client**. On macOS, choose **AWS VPN Client**, **About AWS VPN Client**.
+
+### Send diagnostic logs (version 6.0 and later)
+<a name="client-vpn-connect-send-diagnostics-6x"></a>
+
+The following steps are the same for Windows, macOS, and Linux.
+
+**To send diagnostic logs using the AWS provided client version 6.0 or later**
+
+1. Open the **AWS VPN Client** app.
+
+1. Choose **Other actions**, **Send diagnostic logs**.
+
+1. On the **Diagnostic Logs** page, choose **Send diagnostic logs**.
+
+1. Note the reference number from the confirmation window. You can copy it to your clipboard from the confirmation window.
+
+   When you contact AWS Support, you will need to provide them with the reference number.
+
+You can also send diagnostic logs by using the `aws-vpn-client send-diagnostic-logs` command. For more information, see [send-diagnostic-logs](cli-command-syntax.md#cli-cmd-send-diagnostic-logs).
+
+### Send diagnostic logs (versions earlier than 6.0)
 <a name="client-vpn-connect-macos-connecting"></a>
+
+Before you send the files, you must agree to allow AWS Support to access your diagnostic logs.
 
 The AWS provided client is also referred to as the *AWS VPN Client* in the following steps.
 

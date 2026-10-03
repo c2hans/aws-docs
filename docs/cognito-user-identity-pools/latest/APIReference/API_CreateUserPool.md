@@ -34,6 +34,11 @@ Amazon Cognito evaluates AWS Identity and Access Management (IAM) policies in re
          }
       ]
    },
+   "AcrConfiguration": {
+      "{{string}}" : {
+         "AcrValue": "{{string}}"
+      }
+   },
    "AdminCreateUserConfig": {
       "AllowAdminCreateUserOnly": {{boolean}},
       "InviteMessageTemplate": {
@@ -183,6 +188,15 @@ The request accepts the following data in JSON format.
 The available verified method a user can use to recover their password when they call `ForgotPassword`. You can use this setting to define a preferred method when a user has more than one method available. With this setting, SMS doesn't qualify for a valid password recovery mechanism if the user also has SMS multi-factor authentication (MFA) activated. Email MFA is also disqualifying for account recovery with email. In the absence of this setting, Amazon Cognito uses the legacy behavior to determine the recovery method where SMS is preferred over email.
 As a best practice, configure both `verified_email` and `verified_phone_number`, with one having a higher priority than the other.
 Type: [AccountRecoverySettingType](API_AccountRecoverySettingType.md) object
+Required: No
+
+ ** [AcrConfiguration](#API_CreateUserPool_RequestSyntax) **   <a name="CognitoUserPools-CreateUserPool-request-AcrConfiguration"></a>
+The custom names for the authentication context class reference (ACR) levels in your user pool. Amazon Cognito defines four fixed ACR levels that represent increasing authentication assurance. The combination of authentication factors that satisfies each level is fixed and you can't change it. With this configuration, you customize only the URI name that Amazon Cognito reports for each level in the `acr` token claim.
+You can override a subset of the levels. By default, the levels are named `urn:cognito:loa:1` through `urn:cognito:loa:4`, and Amazon Cognito applies the default name to any level that you don't specify. Each name must be unique across all four levels, including any default names that apply to levels you don't override. A name can contain any character that is valid in a URL or a URN.
+Configuring custom ACR level names requires the Essentials or Plus feature plan. To activate this setting, your user pool must be in the [ Essentials tier](https://docs.aws.amazon.com/cognito/latest/developerguide/feature-plans-features-essentials.html) or higher.
+Type: String to [AcrLevelConfigType](API_AcrLevelConfigType.md) object map
+Map Entries: Minimum number of 0 items. Maximum number of 4 items.
+Key Pattern: `Level[1-4]`
 Required: No
 
  ** [AdminCreateUserConfig](#API_CreateUserPool_RequestSyntax) **   <a name="CognitoUserPools-CreateUserPool-request-AdminCreateUserConfig"></a>
@@ -357,6 +371,11 @@ Required: No
             }
          ]
       },
+      "AcrConfiguration": {
+         "string" : {
+            "AcrValue": "string"
+         }
+      },
       "AdminCreateUserConfig": {
          "AllowAdminCreateUserOnly": boolean,
          "InviteMessageTemplate": {
@@ -523,7 +542,10 @@ Type: [UserPoolType](API_UserPoolType.md) object
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** FeatureUnavailableInTierException **
-This exception is thrown when a feature you attempted to configure isn't available in your current feature plan.
+This exception is thrown when a feature that you attempted to use or configure isn't included in your user pool's current feature plan. This can occur when:
++ You configure a feature that your feature plan doesn't support.
++ You make a request that uses a feature that requires a higher feature plan.
+To resolve this issue, upgrade your user pool to a feature plan that includes the feature.
 HTTP Status Code: 400
 
  ** InternalErrorException **

@@ -37,7 +37,7 @@ Type: Timestamp
 Required: No
 
  ** CreatedBy **   <a name="databrew-Type-Project-CreatedBy"></a>
-The Amazon Resource Name (ARN) of the user who crated the project.
+The Amazon Resource Name (ARN) of the user who created the project.
 Type: String
 Required: No
 

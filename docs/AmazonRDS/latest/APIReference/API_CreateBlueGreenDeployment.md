@@ -84,6 +84,16 @@ This setting doesn't apply to Amazon Aurora blue/green deployments.
 Type: Integer
 Required: No
 
+ **TargetResourceConfigurations.TargetResourceConfiguration.N**
+Specifies resource-level configuration overrides for the green environment.
+Each entry identifies a resource in the blue environment by its Amazon Resource Name (ARN). It defines the desired configuration for the corresponding resource in the green environment. Any resource that you don't include in this parameter retains the same configuration as its counterpart in the blue environment.
+Use this parameter when one or more resources in the green environment require a different configuration than what they have in the blue environment.
+Constraints:
++ You can't specify the same `SourceArn` in more than one entry.
+Type: Array of [TargetResourceConfiguration](API_TargetResourceConfiguration.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 20 items.
+Required: No
+
  ** TargetStorageThroughput **
 The storage throughput value for the green DB instance.
 This setting applies only to the `gp3` storage type.

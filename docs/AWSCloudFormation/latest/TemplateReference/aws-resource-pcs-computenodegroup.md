@@ -84,7 +84,7 @@ The ID of the cluster of the compute node group.
 
 `CustomLaunchTemplate`  <a name="cfn-pcs-computenodegroup-customlaunchtemplate"></a>
 An Amazon EC2 launch template AWS PCS uses to launch compute nodes.
-*Required*: Yes
+*Required*: No
 *Type*: [CustomLaunchTemplate](aws-properties-pcs-computenodegroup-customlaunchtemplate.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 

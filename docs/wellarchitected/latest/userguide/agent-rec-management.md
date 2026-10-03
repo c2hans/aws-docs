@@ -14,7 +14,7 @@ The AWS WA Agent dashboard displays three types of recommendations:
 + **Application:** Spans multiple related resources within a discovered application. Application-level recommendations consider how resources interact and provide guidance that accounts for relationships between components.
 + **Architecture:** Generated from IaC template analysis. These recommendations target your infrastructure design before deployment and include updated templates with best-practice fixes applied.
 
- AWS WA Agent provides both scheduled and manual recommendations. Application- and resource-level recommendations occur in the scheduled recommendations, which are generated roughly every 24 hours. Architecture recommendations are only provided through the manual architecture review process.
+ AWS WA Agent provides both scheduled and manual recommendations. Application- and resource-level recommendations occur in the scheduled recommendations, which are generated roughly every 7 days. Architecture recommendations are only provided through the manual architecture review process.
 
 **Important**
 Application-level recommendations are a new recommendation format currently in beta. We are actively seeking customer feedback to improve their quality and relevance. As with any AI-generated content, please thoroughly review each recommendation before taking any action based on it.

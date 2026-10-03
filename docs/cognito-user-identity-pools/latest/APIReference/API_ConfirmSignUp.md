@@ -95,7 +95,7 @@ Required: No
  ** [Session](#API_ConfirmSignUp_RequestSyntax) **   <a name="CognitoUserPools-ConfirmSignUp-request-Session"></a>
 The optional session ID from a `SignUp` API request. You can sign in a user directly from the sign-up process with the `USER_AUTH` authentication flow.
 Type: String
-Length Constraints: Minimum length of 20. Maximum length of 2048.
+Length Constraints: Minimum length of 20. Maximum length of 4096.
 Required: No
 
  ** [UserContextData](#API_ConfirmSignUp_RequestSyntax) **   <a name="CognitoUserPools-ConfirmSignUp-request-UserContextData"></a>
@@ -131,7 +131,7 @@ The following data is returned in JSON format by the service.
 A session identifier that you can use to immediately sign in the confirmed user. You can automatically sign users in with the one-time password that they provided in a successful `ConfirmSignUp` request.
 To do this, pass the `Session` parameter from this response in the `Session` parameter of an [InitiateAuth](API_InitiateAuth.md) or [AdminInitiateAuth](API_AdminInitiateAuth.md) request.
 Type: String
-Length Constraints: Minimum length of 20. Maximum length of 2048.
+Length Constraints: Minimum length of 20. Maximum length of 4096.
 
 ## Errors
 <a name="API_ConfirmSignUp_Errors"></a>

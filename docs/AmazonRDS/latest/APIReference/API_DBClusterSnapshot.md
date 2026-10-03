@@ -135,7 +135,8 @@ Type: String
 Required: No
 
  ** StorageEncrypted **
-Indicates whether the DB cluster snapshot is encrypted.
+Specifies whether the DB cluster snapshot is encrypted with an AWS managed key or a customer managed key.
+If the DB cluster snapshot is encrypted with an AWS owned key, this value is `false` and `StorageEncryptionType` is `sse-rds`. In that case, the data at rest is still encrypted. To determine how the data at rest is protected, use `StorageEncryptionType`.
 Type: Boolean
 Required: No
 

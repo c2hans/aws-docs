@@ -173,7 +173,9 @@ Suffix path
 An optional path that you configure for an individual delivery in its [S3DeliveryConfiguration](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_S3DeliveryConfiguration.html). A suffix can contain static text and variables. To find the variables supported by a log type, call [DescribeConfigurationTemplates](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DescribeConfigurationTemplates.html) and check `allowedSuffixPathFields`. If you don't specify a suffix path, the log type's default suffix path is used when one is available.
 
 Hive-compatible path
-When `enableHiveCompatiblePath` is `true`, variables in the effective path are rendered as `{{key}}={{value}}`. For example, the default account segment `AWSLogs/{{source-account-id}}/` becomes `AWSLogs/aws-account-id={{source-account-id}}/`. Omitting `suffixPath` does not guarantee Hive-compatible segments. Hive-compatible formatting applies to a log type's default suffix path only if every variable in that default appears in its `allowedSuffixPathFields`. For other log types, CloudWatch Logs applies no suffix path, so delivered objects have no Hive-compatible segments below the service-defined path. To get Hive-compatible partitioning for those log types, specify `suffixPath` explicitly using the supported variables.
+When `enableHiveCompatiblePath` is `true`, supported variables in an explicit `suffixPath` are rendered as `{{key}}={{value}}`. For log types such as Application Load Balancer access logs, this formatting also changes the service-defined account segment. For example, `AWSLogs/{{source-account-id}}/` becomes `AWSLogs/aws-account-id={{source-account-id}}/`.
+If you omit `suffixPath`, Hive-compatible formatting applies only when the log type's default suffix path supports it. For example, Application Load Balancer access logs support this formatting. Other log types, including Amazon S3 server access logs, retain their original default suffix in non-Hive form, including resource and date directories.
+For a log type whose default does not support Hive-compatible formatting, specify a valid `suffixPath` that contains supported variables. An explicit suffix replaces the default suffix. Include the resource and date variables that you need, using the log type's `allowedSuffixPathFields` from [DescribeConfigurationTemplates](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DescribeConfigurationTemplates.html).
 
 The following examples show the beginning of an Application Load Balancer access-log object key for account `111122223333` in `us-east-1`. Unless noted, the examples assume no destination prefix.
 
@@ -182,14 +184,17 @@ The following examples show the beginning of an Application Load Balancer access
 | Hive-compatible path disabled, suffix omitted | AWSLogs/111122223333/elasticloadbalancing/us-east-1/2026/09/10/ |
 | Hive-compatible path enabled, suffix omitted | AWSLogs/aws-account-id=111122223333/elasticloadbalancing/region=us-east-1/year=2026/month=09/day=10/ |
 | Hive-compatible path enabled, suffix myFolder/{yyyy}/{MM}/{dd} | AWSLogs/aws-account-id=111122223333/elasticloadbalancing/myFolder/year=2026/month=09/day=10/ |
-| Hive-compatible path enabled, suffix myFolder/ (static text only, so delivery fails) | AWSLogs/111122223333/elasticloadbalancing/myFolder/ |
+| Hive-compatible path enabled, suffix myFolder/ | AWSLogs/111122223333/elasticloadbalancing/myFolder/ |
 | Destination prefix MyLogPrefix, Hive-compatible path disabled, suffix omitted | MyLogPrefix/AWSLogs/111122223333/elasticloadbalancing/us-east-1/2026/09/10/ |
 
-**Important**
-When `enableHiveCompatiblePath` is `true`, the automatically created bucket policy grants `s3:PutObject` on the Hive-compatible prefix. However, a `suffixPath` that contains only static text produces no Hive-compatible segments. As a result, delivered objects target a prefix that the policy does not allow, and delivery fails. Include at least one variable from the log type's `allowedSuffixPathFields` in `suffixPath`, or omit `suffixPath` for a log type whose default suffix path supports Hive-compatible formatting.
+**Static suffix paths and bucket permissions**
+For log types such as Application Load Balancer access logs, a `suffixPath` that contains only static text does not enable Hive-compatible formatting of the service-defined account prefix. For example, `myFolder/` uses the plain account prefix shown in the table. Delivery fails if CloudWatch Logs tries to write under the plain account prefix and the bucket policy allows only the Hive-compatible prefix.
+When you create an Application Load Balancer delivery with `enableHiveCompatiblePath` set to `true`, the automatically created bucket policy grants `s3:PutObject` on the Hive-compatible prefix. Include at least one supported variable from the log type's `allowedSuffixPathFields` in `suffixPath`, or omit `suffixPath` for a log type whose default suffix path supports Hive-compatible formatting.
+CloudFront standard logging (v2) formats its default prefix independently of variables in `suffixPath`.
 
 **Note**
 CloudFront documents its standard logging (v2) path behavior and examples in [Send logs to Amazon S3](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/standard-logging.html#send-logs-s3).
 
 **Note**
-Changing the destination prefix, suffix path, or Hive-compatible setting affects new objects only. Existing objects are not moved. The bucket policy must allow `s3:PutObject` for the resulting prefix. When you manage the bucket policy, keep the `aws:SourceAccount` and `aws:SourceArn` conditions shown in the Amazon S3 bucket policy in [Amazon S3 bucket resource policy](#AWS-logs-infrastructure-V2-S3-bucket-resource-policy), and grant access only to the required prefix.
+Updating the suffix path or Hive-compatible setting affects subsequent deliveries after the configuration propagates. Existing objects are not moved. You cannot change a destination's ARN, including its prefix, while active deliveries reference that destination.
+The bucket policy must allow `s3:PutObject` for the resulting prefix. When you manage the bucket policy, keep the `aws:SourceAccount` and `aws:SourceArn` conditions shown in the Amazon S3 bucket policy in [Amazon S3 bucket resource policy](#AWS-logs-infrastructure-V2-S3-bucket-resource-policy), and grant access only to the required prefix.

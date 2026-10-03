@@ -19,7 +19,7 @@ The Deadline Cloud monitor has a table that shows summary status for a job, or y
 
 You can use the Deadline Cloud monitor to download the results to the location on your workstation that was specified when the job was created.
 
-The Deadline Cloud monitor also helps you monitor usage and manage costs. For more information, see [Track spending and usage for Deadline Cloud farms](manage-costs.md).
+The Deadline Cloud monitor also helps you monitor usage and manage costs. For more information, see [Manage costs and usage for Deadline Cloud farms](manage-costs.md).
 
 **Topics**
 + [Monitors and farms in multiple Regions](monitors-additional-regions.md)

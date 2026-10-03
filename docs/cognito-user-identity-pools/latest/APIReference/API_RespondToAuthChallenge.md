@@ -159,7 +159,7 @@ Required: No
  ** [Session](#API_RespondToAuthChallenge_RequestSyntax) **   <a name="CognitoUserPools-RespondToAuthChallenge-request-Session"></a>
 The session identifier that maintains the state of authentication requests and challenge responses. If an `AdminInitiateAuth` or `AdminRespondToAuthChallenge` API request results in a determination that your application must pass another challenge, Amazon Cognito returns a session with other challenge parameters. Send this session identifier, unmodified, to the next `AdminRespondToAuthChallenge` request.
 Type: String
-Length Constraints: Minimum length of 20. Maximum length of 2048.
+Length Constraints: Minimum length of 20. Maximum length of 4096.
 Required: No
 
  ** [UserContextData](#API_RespondToAuthChallenge_RequestSyntax) **   <a name="CognitoUserPools-RespondToAuthChallenge-request-UserContextData"></a>
@@ -184,6 +184,7 @@ Required: No
       "RefreshToken": "string",
       "TokenType": "string"
    },
+   "AvailableChallenges": [ "string" ],
    "ChallengeName": "string",
    "ChallengeParameters": {
       "string" : "string"
@@ -202,6 +203,11 @@ The following data is returned in JSON format by the service.
  ** [AuthenticationResult](#API_RespondToAuthChallenge_ResponseSyntax) **   <a name="CognitoUserPools-RespondToAuthChallenge-response-AuthenticationResult"></a>
 The outcome of a successful authentication process. After your application has passed all challenges, Amazon Cognito returns an `AuthenticationResult` with the JSON web tokens (JWTs) that indicate successful sign-in.
 Type: [AuthenticationResultType](API_AuthenticationResultType.md) object
+
+ ** [AvailableChallenges](#API_RespondToAuthChallenge_ResponseSyntax) **   <a name="CognitoUserPools-RespondToAuthChallenge-response-AvailableChallenges"></a>
+This response parameter lists the available authentication challenges that users can select from in [choice-based authentication](https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flows-selection-sdk.html#authentication-flows-selection-choice). For example, they might be able to choose between passkey authentication, a one-time password from an SMS message, and a traditional password.
+Type: Array of strings
+Valid Values: `SMS_MFA | EMAIL_OTP | SOFTWARE_TOKEN_MFA | SELECT_MFA_TYPE | MFA_SETUP | PASSWORD_VERIFIER | CUSTOM_CHALLENGE | SELECT_CHALLENGE | DEVICE_SRP_AUTH | DEVICE_PASSWORD_VERIFIER | ADMIN_NO_SRP_AUTH | NEW_PASSWORD_REQUIRED | SMS_OTP | PASSWORD | WEB_AUTHN | PASSWORD_SRP`
 
  ** [ChallengeName](#API_RespondToAuthChallenge_ResponseSyntax) **   <a name="CognitoUserPools-RespondToAuthChallenge-response-ChallengeName"></a>
 The name of the next challenge that you must respond to.
@@ -242,7 +248,7 @@ Value Length Constraints: Minimum length of 0. Maximum length of 131072.
  ** [Session](#API_RespondToAuthChallenge_ResponseSyntax) **   <a name="CognitoUserPools-RespondToAuthChallenge-response-Session"></a>
 The session identifier that maintains the state of authentication requests and challenge responses. If an `InitiateAuth` or `RespondToAuthChallenge` API request results in a determination that your application must pass another challenge, Amazon Cognito returns a session with other challenge parameters. Send this session identifier, unmodified, to the next `RespondToAuthChallenge` request.
 Type: String
-Length Constraints: Minimum length of 20. Maximum length of 2048.
+Length Constraints: Minimum length of 20. Maximum length of 4096.
 
 ## Errors
 <a name="API_RespondToAuthChallenge_Errors"></a>

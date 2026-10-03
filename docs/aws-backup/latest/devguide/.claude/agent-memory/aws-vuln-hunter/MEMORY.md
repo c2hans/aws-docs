@@ -1,0 +1,1 @@
+- [Backup findings & KMS asymmetry pattern](reference_backup-findings.md) — AWS Backup live results + reusable AWS-managed-policy intra-family ViaService/ResourceAccount asymmetry shape

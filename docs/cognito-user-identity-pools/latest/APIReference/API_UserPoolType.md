@@ -17,6 +17,14 @@ The available verified method a user can use to recover their password when they
 Type: [AccountRecoverySettingType](API_AccountRecoverySettingType.md) object
 Required: No
 
+ ** AcrConfiguration **   <a name="CognitoUserPools-Type-UserPoolType-AcrConfiguration"></a>
+The names of the authentication context class reference (ACR) levels for the user pool. Amazon Cognito always returns the effective configuration, with default names merged in for any level that you haven't customized.
+Configuring custom ACR level names requires the Essentials or Plus feature plan. To activate this setting, your user pool must be in the [ Essentials tier](https://docs.aws.amazon.com/cognito/latest/developerguide/feature-plans-features-essentials.html) or higher.
+Type: String to [AcrLevelConfigType](API_AcrLevelConfigType.md) object map
+Map Entries: Minimum number of 0 items. Maximum number of 4 items.
+Key Pattern: `Level[1-4]`
+Required: No
+
  ** AdminCreateUserConfig **   <a name="CognitoUserPools-Type-UserPoolType-AdminCreateUserConfig"></a>
 The configuration for `AdminCreateUser` requests.
 Type: [AdminCreateUserConfigType](API_AdminCreateUserConfigType.md) object

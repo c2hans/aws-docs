@@ -73,6 +73,14 @@ You don't have sufficient access to perform this action.
 You don't have sufficient access to perform this action.
 HTTP Status Code: 400
 
+ ** ConflictException **
+The request could not be completed due to a conflict with the current state of the resource. This exception occurs when a concurrent modification is detected during an update operation, or when attempting to create a resource that already exists.
+ ** resourceId **
+The identifier of the resource that caused the conflict.
+ ** resourceType **
+The type of resource that caused the conflict.
+HTTP Status Code: 400
+
  ** InternalServerException **
 The processing request failed because of an unknown error, exception, or failure.
  ** retryAfterSeconds **

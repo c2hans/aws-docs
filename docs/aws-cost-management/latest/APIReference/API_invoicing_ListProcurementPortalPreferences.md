@@ -55,6 +55,7 @@ Required: No
          "EinvoiceDeliveryPreferenceStatus": "string",
          "EinvoiceDeliveryPreferenceStatusReason": "string",
          "LastUpdateDate": number,
+         "MarketplacePunchOutEnabled": boolean,
          "ProcurementPortalName": "string",
          "ProcurementPortalPreferenceArn": "string",
          "PurchaseOrderRetrievalEnabled": boolean,

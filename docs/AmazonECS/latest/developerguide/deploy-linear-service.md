@@ -14,12 +14,14 @@ Perform the following operations before you start a linear deployment.
 
 1. Configure the appropriate permissions.
    + For information about Elastic Load Balancing permissions, see [Amazon ECS infrastructure IAM role for load balancers](AmazonECSInfrastructureRolePolicyForLoadBalancers.md).
+   + If you're using VPC Lattice, for information about VPC Lattice permissions, see [`AmazonECSInfrastructureRolePolicyForVpcLattice`](security-iam-awsmanpol.md#security-iam-awsmanpol-AmazonECSInfrastructureRolePolicyForVpcLattice).
    + For information about Lambda permissions, see [Permissions required for Lambda functions in Amazon ECS blue/green deployments](blue-green-permissions.md).
 
 1. Amazon ECS linear deployments require that your service to use one of the following features: Configure the appropriate resources.
    + Application Load Balancer - For more information, see [Application Load Balancer resources for blue/green, linear, and canary deployments](alb-resources-for-blue-green.md).
    + Network Load Balancer - For more information, see [Network Load Balancer resources for Amazon ECS blue/green, linear and canary deployments](nlb-resources-for-blue-green.md).
    + Service Connect - For more information, see [Service Connect resources for Amazon ECS blue/green, linear, and canary deployments](service-connect-blue-green.md).
+   + VPC Lattice - For more information, see [VPC Lattice resources for blue/green, linear, and canary deployments](vpc-lattice-resources-for-blue-green.md).
 
 ## Procedure
 <a name="deploy-linear-service-procedure"></a>
@@ -156,6 +158,24 @@ Test traffic header rules enable you to validate new functionality with controll
   <tr><td>Network Load Balancer</td><td> <ol><li> For <b>Load balancer type</b>, select <b>Network Load Balancer</b>. </li><li> For <b>Load Balancer</b>, choose an existing Network Load Balancer. </li><li> For <b>Choose container to load balance</b>, choose the container that hosts the service. </li><li> For <b>Production listener</b>, choose the <b>Production listener port</b>, and the <b>Production listener protocol</b>. <br />This is the listener for your production service revision traffic. </li><li> For <b>Test listener</b>, choose the <b>Test listener port</b>, and the <b>Test listener protocol</b>. <br />This is the listener for your test service revision traffic. </li><li> For <b>Target group</b>, configure the following: <ul><li> For <b>Target group name</b>, enter a name and a protocol for the target group that the Network Load Balancer routes requests to. </li><li> For <b>Protocol</b>, choose the protocol for the target group that the Network Load Balancer routes requests to. By default, the target group routes requests to the first container defined in your task definition. </li><li> For <b>Deregistration delay</b>, enter the number of seconds for the load balancer to change the target state to <code>UNUSED</code>. The default is 300 seconds. </li><li> For <b>Health check path</b>, enter an existing path within your container where the Application Load Balancer periodically sends requests to verify the connection health between the Application Load Balancer and the container. The default is the root directory (<code>/</code>). </li><li> For <b>Alternate group name</b>, enter the group name for the target group for your test (green) service revision. </li></ul> </li></ol> </td><td></td></tr>
 </tbody>
 </table>
+
+1. (Optional) To use VPC Lattice for managed traffic shifting during linear deployments, expand **VPC Lattice - optional** and select **Use VPC Lattice**, then do the following:
+
+   1. For **VPC**, choose the VPC for your VPC Lattice resources. This must be the same VPC as your Fargate service.
+
+   1. For **Infrastructure role**, choose the Amazon ECS infrastructure IAM role that Amazon ECS uses to manage your VPC Lattice resources, or choose **Create a new infrastructure role**.
+
+   1. For **Container port name**, choose the port name from the task definition that maps to the container port that receives traffic from VPC Lattice.
+
+   1. For **VPC Lattice service**, choose **Create a new service** or **Use an existing service**. For **Service name**, enter a unique name for the service.
+
+   1. For **Listener**, choose **Create new listener** or **Use an existing listener**. For **Port**, enter a port from 1 to 65535. For **Protocol**, choose the protocol (for example, **HTTP**).
+
+   1. Under **Production listener rule**, enter a **Name**, a **Priority** from 1 to 100, and a **Path pattern** (maximum 200 characters). Amazon ECS uses this rule to route production traffic.
+
+   1. (Optional, recommended) Under **Test listener rule**, enter a **Name**, a **Priority** from 1 to 100, and a **Path pattern**. Amazon ECS uses this rule to route test traffic to the green service revision.
+
+   1. For **Target groups**, choose **Create two new target groups**, **Create green target group**, or **Use two existing target groups**. For a new target group, enter a **Target group name**, choose a **Protocol**, enter a **Port** from 1 to 65535, choose a **Health check protocol**, and enter a **Health check path**. For **Green target group name**, enter a name; the green target group uses the same configuration as the blue target group.
 
 1. (Optional) To help identify your service and tasks, expand the **Tags** section, and then configure your tags.
 

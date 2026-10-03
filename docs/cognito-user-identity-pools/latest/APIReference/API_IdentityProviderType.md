@@ -12,6 +12,15 @@ This data type is a response parameter of [CreateIdentityProvider](API_CreateIde
 ## Contents
 <a name="API_IdentityProviderType_Contents"></a>
 
+ ** AcrMapping **   <a name="CognitoUserPools-Type-IdentityProviderType-AcrMapping"></a>
+A mapping between the authentication context class reference (ACR) levels of your user pool and the ACR values of the external OpenID Connect (OIDC) identity provider (IdP), so that your application gets a consistent step-up experience regardless of which IdP authenticated the user. The map is keyed by level, from `Level1` through `Level4`.
+Type: String to string map
+Map Entries: Minimum number of 0 items. Maximum number of 4 items.
+Key Pattern: `Level[1-4]`
+Value Length Constraints: Minimum length of 1. Maximum length of 64.
+Value Pattern: `[\x21\x23-\x5B\x5D-\x7E]+`
+Required: No
+
  ** AttributeMapping **   <a name="CognitoUserPools-Type-IdentityProviderType-AttributeMapping"></a>
 A mapping of IdP attributes to standard and custom user pool attributes.
 Type: String to string map

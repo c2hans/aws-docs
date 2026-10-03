@@ -34,7 +34,7 @@ AWS WA Agent access and entitlements depend on your AWS Support plan tier.
 | Scannable Regions | All commercial | AWS WA Agent can scan resources in any commercial AWS Region, regardless of where the profile is hosted. |
 | Recommendations per generation run | 30 | Maximum recommendations produced per scheduled or manual generation run. There is no limit on total stored recommendations. Future runs can add new recommendations. |
 | Architecture reviews per day | 5 | Maximum architecture review generations per day, per profile. Reviews can be run consecutively without cooldown while quota remains. |
-| Scheduled recommendation generation cooldown | 24 hours | Minimum time between scheduled recommendation generation runs for the same profile. |
+| Scheduled recommendation generation cooldown | 7 days (1 week) | Minimum time between scheduled recommendation generation runs for the same profile. |
 | Maximum .zip file upload size | 25 MB | Maximum compressed size of an uploaded .zip file for architecture reviews. |
 | Maximum Amazon S3 folder size | 100 MB | Maximum total size of an Amazon S3 folder referenced for architecture reviews. |
 | Maximum individual file size (Amazon S3 folder) | 1 MB | Maximum size of each individual file in an Amazon S3 folder referenced for architecture reviews. |

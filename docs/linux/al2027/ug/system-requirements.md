@@ -19,7 +19,7 @@ This section describes the system requirements for using AL2027.
 
 To run any AL2027 code, the processor used needs to meet certain minimum requirements. Attempts to run AL2027 on CPUs that do not meet these requirements might result in illegal instruction errors very early in code execution.
 
-The minimum requirements apply to [AL2027 on Amazon EC2](ec2.md) and [AL2027 in containers](container.md).
+The minimum requirements apply to [AL2027 on Amazon EC2](ec2.md), [AL2027 in containers](container.md), and [AL2027 outside Amazon EC2](outside-ec2.md).
 
 ### ARM CPU requirements for AL2027
 <a name="system-requirements-cpu-aarch64"></a>

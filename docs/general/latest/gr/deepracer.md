@@ -13,6 +13,3 @@ The following are the service endpoints and service quotas for this service.
 
 ## Service endpoints
 <a name="deepracer_region"></a>
-
-## Service quotas
-<a name="quotas_deepracer"></a>

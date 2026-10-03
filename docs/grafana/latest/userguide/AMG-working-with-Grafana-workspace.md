@@ -10,7 +10,7 @@ Your Grafana workspace is where you work on projects to create visualizations an
 The topics in this section explain how to use your Amazon Managed Grafana workspace.
 
 **Note**
-Some topics vary based on the version of Grafana that you have in your workspace. For documentation specific to each version, see [Working in Grafana version 10](using-grafana-v10.md), [Working in Grafana version 9](using-grafana-v9.md), and [Working in Grafana version 8](using-grafana-v8.md). For information about upgrading your workspace from one version to another, see [Update your workspace version](AMG-workspace-version-update.md).
+Some topics vary based on the version of Grafana that you have in your workspace. For documentation specific to each version, see [Working in Grafana version 10](using-grafana-v10.md) and [Working in Grafana version 9](using-grafana-v9.md). For information about upgrading your workspace from one version to another, see [Update your workspace version](AMG-workspace-version-update.md).
 
 **Topics**
 + [What is Grafana?](#what-is-grafana)
@@ -23,7 +23,6 @@ Some topics vary based on the version of Grafana that you have in your workspace
 + [Working in Grafana version 12](using-grafana-v12.md)
 + [Working in Grafana version 10](using-grafana-v10.md)
 + [Working in Grafana version 9](using-grafana-v9.md)
-+ [Working in Grafana version 8](using-grafana-v8.md)
 + [Change your preferences](change-your-grafana-preferences.md)
 + [Gather information for support](support-bundles.md)
 + [Classic dashboard alerts](old-alerts-overview.md)

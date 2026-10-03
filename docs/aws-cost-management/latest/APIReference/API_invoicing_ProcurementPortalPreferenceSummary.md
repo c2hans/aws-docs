@@ -93,6 +93,11 @@ Length Constraints: Minimum length of 0. Maximum length of 1024.
 Pattern: `[\s\S]*`
 Required: No
 
+ ** MarketplacePunchOutEnabled **   <a name="awscostmanagement-Type-invoicing_ProcurementPortalPreferenceSummary-MarketplacePunchOutEnabled"></a>
+Indicates whether Marketplace PunchOut is enabled for this procurement portal preference. Defaults to `false`.
+Type: Boolean
+Required: No
+
  ** PurchaseOrderRetrievalPreferenceStatus **   <a name="awscostmanagement-Type-invoicing_ProcurementPortalPreferenceSummary-PurchaseOrderRetrievalPreferenceStatus"></a>
 The current status of the purchase order retrieval preference in this summary.
 Type: String

@@ -91,7 +91,7 @@ To create a materialized view, you must have the following privileges:
 ### Iceberg materialized views
 <a name="mv_CREATE_MATERIALIZED_VIEW_iceberg_usage"></a>
 
-To create an Iceberg materialized view, you must have CREATE TABLE permission in the target AWS Glue Data Catalog database. The IAM role associated with the external schema (the MV definer role) must have SELECT permission via AWS Lake Formation on all source tables referenced in the query.
+To create an Iceberg materialized view, you must have CREATE TABLE permission in the target AWS Glue Data Catalog database. The IAM role associated with the external schema (the MV definer role) must have SELECT permission on all source tables referenced in the query.
 
 All identifiers in the materialized view definition (table names, column names, aliases) must be lowercase. The AWS Glue Data Catalog stores identifiers in lowercase for Hive compatibility. Amazon Redshift rejects CREATE MATERIALIZED VIEW statements with USING ICEBERG that contain uppercase identifiers.
 

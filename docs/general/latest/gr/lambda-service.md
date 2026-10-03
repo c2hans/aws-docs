@@ -61,6 +61,7 @@ New AWS accounts have reduced concurrency and memory quotas. AWS raises these qu
 
 | Name | Default | Adjustable | Description |
 | --- | --- | --- | --- |
+| Arm vCPUs for all Web Functions | Each supported Region: 2,000 | No | The Arm64 vCPU capacity for Lambda Web Function execution environments in this account in the current Region. |
 | Asynchronous invocation request throughput on Lambda Managed Instances | Each supported Region: 5 Megabytes/Second |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/lambda/quotas/L-A723F9CC)  | The maximum invoke request throughput (MB/s) for asynchronous invocations on Lambda Managed Instances. Asynchronous invocations occur when Lambda functions are invoked by services such as Amazon S3 or Amazon SNS. |
 | Asynchronous payload | Each supported Region: 1,024 Kilobytes | No | The maximum size of an incoming asynchronous invocation request. |
 | Burst rate of CreateMicrovmAuthToken API requests | Each supported Region: 50 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/lambda/quotas/L-D65D9F16)  | The maximum number of CreateMicrovmAuthToken API requests that can be sent in one burst. |
@@ -84,10 +85,11 @@ New AWS accounts have reduced concurrency and memory quotas. AWS raises these qu
 | Durable execution storage written in megabytes | Each supported Region: 100 Megabytes | No | The maximum cumulative amount of data persisted per durable execution, including input and output payloads, checkpoints and error data, measured in megabytes. |
 | DynamoDB Event Source Mapping throughput on Lambda Managed Instances | Each supported Region: 10 Megabytes/Second |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/lambda/quotas/L-7E8754C7)  | The maximum data throughput (MB/s) per DynamoDB event source mapping on Lambda Managed Instances. |
 | Elastic network interfaces per VPC | Each supported Region: 3,000 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/lambda/quotas/L-9FEE3D26)  | The maximum number of network interfaces that Lambda creates for a VPC with functions attached. Lambda creates a network interface for each combination of subnet and security group that functions connect to. |
+| Endpoints per Web Function | Each supported Region: 10 | No | The maximum number of endpoints allowed per Lambda Web Function. |
 | Environment variable size | Each supported Region: 4 Kilobytes | No | The maximum combined size of environment variables that are configured on a function. |
 | File descriptors | Each supported Region: 1,024 | No | The maximum number of file descriptors that a function can have open. |
 | Function and layer storage | Each supported Region: 300 Gigabytes |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/lambda/quotas/L-2ACBD22F)  | The amount of storage thats available for deployment packages and layer archives in the current Region. |
-| Function invocation rate to initiate durable executions | Each supported Region: 300 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/lambda/quotas/L-A0D6E196)  | The maximum number of new durable executions that you can initiate per second. |
+| Function invocation rate to initiate durable executions | ca-central-1: 3,000<br />Each of the other supported Regions: 300 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/lambda/quotas/L-A0D6E196)  | The maximum number of new durable executions that you can initiate per second. |
 | Function layers | Each supported Region: 5 | No | The maximum number of layers that you can add to your function. |
 | Function resource-based policy | Each supported Region: 20 Kilobytes | No | The maximum combined size of resource-based policies that are configured on a function. |
 | Function timeout | Each supported Region: 900 | No | The maximum timeout that you can configure for a function. |
@@ -127,6 +129,9 @@ New AWS accounts have reduced concurrency and memory quotas. AWS raises these qu
 | Rate of capacity provider read API requests | Each supported Region: 15 | No | The maximum combined rate (requests per second) for all capacity provider read APIs. |
 | Rate of capacity provider write API requests | Each supported Region: 1 | No | The maximum combined rate (requests per second) for all capacity provider write APIs. |
 | Rate of control plane API requests (excludes invocation, GetFunction, and GetPolicy requests) | Each supported Region: 15 | No | The maximum number of API requests per second (excluding invocation, GetFunction, and GetPolicy requests). |
+| Rate of requests per Web Function Endpoint | Each supported Region: 10,000 | No | The maximum number of requests per second allowed for a single Lambda Web Function endpoint. |
+| Rate of requests to Web Functions | Each supported Region: 100,000 | No | The maximum number of requests per second allowed across all your Lambda Web Function endpoints in this account in the current Region. |
+| Revisions per Web Function | Each supported Region: 50 | No | The maximum number of revisions retained per Lambda Web Function. When this limit is reached, the oldest revisions not referenced by any endpoint are automatically deleted. |
 | SQS Event Source Mapping throughput in default mode on Lambda Managed Instances | Each supported Region: 5 Megabytes/Second | No | The maximum data throughput (MB/s) per SQS event source mapping in default mode on Lambda Managed Instances. |
 | Synchronous payload | Each supported Region: 6 Megabytes | No | The maximum size of an incoming synchronous invocation request or outgoing response. |
 | Test events (console editor) | Each supported Region: 10 | No | The maximum amount of test events for a function through the console editor. |

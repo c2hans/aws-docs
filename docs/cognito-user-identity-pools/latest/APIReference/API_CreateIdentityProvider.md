@@ -17,6 +17,9 @@ Amazon Cognito evaluates AWS Identity and Access Management (IAM) policies in re
 
 ```
 {
+   "AcrMapping": {
+      "{{string}}" : "{{string}}"
+   },
    "AttributeMapping": {
       "{{string}}" : "{{string}}"
    },
@@ -36,6 +39,16 @@ Amazon Cognito evaluates AWS Identity and Access Management (IAM) policies in re
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [AcrMapping](#API_CreateIdentityProvider_RequestSyntax) **   <a name="CognitoUserPools-CreateIdentityProvider-request-AcrMapping"></a>
+A mapping between the authentication context class reference (ACR) levels of your user pool and the ACR values of the external OpenID Connect (OIDC) identity provider (IdP). The map is keyed by level, from `Level1` through `Level4`, and each value is the ACR value that the IdP uses for the corresponding level. Amazon Cognito uses this mapping to translate a requested user pool ACR level to the value that the IdP expects, and to map an ACR value that the IdP returns back to a user pool level. When the IdP returns an ACR value that isn't mapped, Amazon Cognito resolves it to the lowest level. Only OIDC IdPs support ACR mapping.
+Setting `AcrMapping` is available in all feature plans. It isn't restricted to the Essentials or Plus feature plan.
+Type: String to string map
+Map Entries: Minimum number of 0 items. Maximum number of 4 items.
+Key Pattern: `Level[1-4]`
+Value Length Constraints: Minimum length of 1. Maximum length of 64.
+Value Pattern: `[\x21\x23-\x5B\x5D-\x7E]+`
+Required: No
 
  ** [AttributeMapping](#API_CreateIdentityProvider_RequestSyntax) **   <a name="CognitoUserPools-CreateIdentityProvider-request-AttributeMapping"></a>
 A mapping of IdP attributes to standard and custom user pool attributes. Specify a user pool attribute as the key of the key-value pair, and the IdP attribute claim name as the value.
@@ -106,6 +119,9 @@ Required: Yes
 ```
 {
    "IdentityProvider": {
+      "AcrMapping": {
+         "string" : "string"
+      },
       "AttributeMapping": {
          "string" : "string"
       },

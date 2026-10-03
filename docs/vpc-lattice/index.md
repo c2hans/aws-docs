@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/index.html
 title: 'Amazon VPC Lattice'
 canonical_url: https://docs.aws.amazon.com/vpc-lattice/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-03
 ---
 
 # Amazon VPC Lattice

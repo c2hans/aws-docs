@@ -37,6 +37,10 @@ Creates a procurement portal preference configuration for e-invoice delivery and
          }
       ]
    },
+   "MarketplacePunchOutEnabled": {{boolean}},
+   "MarketplacePunchOutPreference": {
+      "ApprovalRequestRedirectUrl": "{{string}}"
+   },
    "ProcurementPortalInstanceEndpoint": "{{string}}",
    "ProcurementPortalName": "{{string}}",
    "ProcurementPortalSharedSecret": "{{string}}",
@@ -105,6 +109,16 @@ Required: Yes
  ** [EinvoiceDeliveryPreference](#API_invoicing_CreateProcurementPortalPreference_RequestSyntax) **   <a name="awscostmanagement-invoicing_CreateProcurementPortalPreference-request-EinvoiceDeliveryPreference"></a>
 Specifies the e-invoice delivery configuration including document types, attachment types, and customization settings for the portal.
 Type: [EinvoiceDeliveryPreference](API_invoicing_EinvoiceDeliveryPreference.md) object
+Required: No
+
+ ** [MarketplacePunchOutEnabled](#API_invoicing_CreateProcurementPortalPreference_RequestSyntax) **   <a name="awscostmanagement-invoicing_CreateProcurementPortalPreference-request-MarketplacePunchOutEnabled"></a>
+Specifies whether Marketplace PunchOut is enabled for this procurement portal connection. The default value is false.
+Type: Boolean
+Required: No
+
+ ** [MarketplacePunchOutPreference](#API_invoicing_CreateProcurementPortalPreference_RequestSyntax) **   <a name="awscostmanagement-invoicing_CreateProcurementPortalPreference-request-MarketplacePunchOutPreference"></a>
+The configuration for Marketplace PunchOut. This member is required for Coupa when `MarketplacePunchOutEnabled` is `true`.
+Type: [MarketplacePunchOutPreference](API_invoicing_MarketplacePunchOutPreference.md) object
 Required: No
 
  ** [ProcurementPortalInstanceEndpoint](#API_invoicing_CreateProcurementPortalPreference_RequestSyntax) **   <a name="awscostmanagement-invoicing_CreateProcurementPortalPreference-request-ProcurementPortalInstanceEndpoint"></a>

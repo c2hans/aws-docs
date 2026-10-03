@@ -43,7 +43,7 @@ Required: No
  ** [Session](#API_AssociateSoftwareToken_RequestSyntax) **   <a name="CognitoUserPools-AssociateSoftwareToken-request-Session"></a>
 The session identifier that maintains the state of authentication requests and challenge responses. In `AssociateSoftwareToken`, this is the session ID from a successful sign-in. You can provide either an access token or a session ID in the request.
 Type: String
-Length Constraints: Minimum length of 20. Maximum length of 2048.
+Length Constraints: Minimum length of 20. Maximum length of 4096.
 Required: No
 
 ## Response Syntax
@@ -73,7 +73,7 @@ Pattern: `[A-Za-z0-9]+`
 The session identifier that maintains the state of authentication requests and challenge responses.
 This session ID is valid for the next request in this flow, [VerifySoftwareToken](API_VerifySoftwareToken.md).
 Type: String
-Length Constraints: Minimum length of 20. Maximum length of 2048.
+Length Constraints: Minimum length of 20. Maximum length of 4096.
 
 ## Errors
 <a name="API_AssociateSoftwareToken_Errors"></a>

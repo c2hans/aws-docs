@@ -65,6 +65,10 @@ Required: Yes
       "EinvoiceDeliveryPreferenceStatus": "string",
       "EinvoiceDeliveryPreferenceStatusReason": "string",
       "LastUpdateDate": number,
+      "MarketplacePunchOutEnabled": boolean,
+      "MarketplacePunchOutPreference": {
+         "ApprovalRequestRedirectUrl": "string"
+      },
       "ProcurementPortalInstanceEndpoint": "string",
       "ProcurementPortalName": "string",
       "ProcurementPortalPreferenceArn": "string",

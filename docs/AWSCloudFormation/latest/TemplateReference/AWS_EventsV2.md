@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
-# Amazon EventBridge
+# Amazon EventBridge Event Bus
 <a name="AWS_EventsV2"></a>
 
 **Resource types**

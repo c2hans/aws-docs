@@ -132,6 +132,7 @@ The following data types are supported:
 +  [Tag](API_Tag.md)
 +  [TagSpecification](API_TagSpecification.md)
 +  [TargetHealth](API_TargetHealth.md)
++  [TargetResourceConfiguration](API_TargetResourceConfiguration.md)
 +  [TenantDatabase](API_TenantDatabase.md)
 +  [TenantDatabasePendingModifiedValues](API_TenantDatabasePendingModifiedValues.md)
 +  [Timezone](API_Timezone.md)

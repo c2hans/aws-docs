@@ -87,7 +87,7 @@ Array Members: Fixed number of 1 item.
 Required: No
 
  ** EinvoiceDeliveryPreference **   <a name="awscostmanagement-Type-invoicing_ProcurementPortalPreference-EinvoiceDeliveryPreference"></a>
-The configuration settings that specify how e-invoices are delivered to the procurement portal.
+The e-invoice delivery configuration including document types, attachment types, and customization settings.
 Type: [EinvoiceDeliveryPreference](API_invoicing_EinvoiceDeliveryPreference.md) object
 Required: No
 
@@ -102,6 +102,16 @@ The reason for the current e-invoice delivery preference status.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1024.
 Pattern: `[\s\S]*`
+Required: No
+
+ ** MarketplacePunchOutEnabled **   <a name="awscostmanagement-Type-invoicing_ProcurementPortalPreference-MarketplacePunchOutEnabled"></a>
+Indicates whether Marketplace PunchOut is enabled for this procurement portal preference. Defaults to `false`.
+Type: Boolean
+Required: No
+
+ ** MarketplacePunchOutPreference **   <a name="awscostmanagement-Type-invoicing_ProcurementPortalPreference-MarketplacePunchOutPreference"></a>
+The Marketplace PunchOut configuration for this procurement portal preference. This is present when `MarketplacePunchOutEnabled` is `true`.
+Type: [MarketplacePunchOutPreference](API_invoicing_MarketplacePunchOutPreference.md) object
 Required: No
 
  ** ProcurementPortalInstanceEndpoint **   <a name="awscostmanagement-Type-invoicing_ProcurementPortalPreference-ProcurementPortalInstanceEndpoint"></a>

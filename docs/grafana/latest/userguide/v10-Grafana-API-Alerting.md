@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v10-Grafana-API
 <a name="v10-Grafana-API-Alerting"></a>
 
 **Note**
-This section only applies to classic alerting. For more information, see [Grafana alerting](alerts-overview.md).
+This section only applies to classic alerting. For more information, see [Overview](v10-alerting-overview.md).
 
 Use the Preferences API to get information about classic dashboard alerts and their states. However, you can't use this API to modify the alert. To create new alerts or modify them you need to update the dashboard JSON that contains the alerts.
 

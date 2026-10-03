@@ -9,7 +9,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/old-alert-notif
 This documentation topic discusses legacy alerting in Grafana. Legacy alerting is removed in Amazon Managed Grafana version 12. You must migrate to Grafana alerting before upgrading to v12. For more information, see one of the following topics.
 For Grafana workspaces that support Grafana version 10.x, see [Alerts in Grafana version 10](v10-alerts.md).
 For Grafana workspaces that support Grafana version 9.x, see [Alerts in Grafana version 9](v9-alerts.md).
-For Grafana workspaces that support Grafana version 8.x, see [Grafana alerting](alerts-overview.md).
 
  When an alert changes state, it sends out notifications. Each alert rule can have multiple notifications. To add a notification to an alert rule, you first must add and configure a `notification` channel.
 

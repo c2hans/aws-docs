@@ -63,9 +63,9 @@ The user that you create does not automatically have access to your Amazon Manag
 1. (Optional) You can choose to connect to an Amazon Virtual Private Cloud (VPC) on this page, or you can connect to a VPC later. To learn more, see [Connect to data sources or notification channels in Amazon VPC from Amazon Managed Grafana](AMG-configure-vpc.md).
 
 1. (Optional) You can choose other workspace configuration options on this page, including the following:
-   + Enable [Grafana alerting](alerts-overview.md). Grafana alerting allows you to view Grafana alerts and alerts defined in Prometheus within a single alerts interface within your Grafana workspace.
+   + Enable [Grafana alerting](v13-alerting-overview.md). Grafana alerting allows you to view Grafana alerts and alerts defined in Prometheus within a single alerts interface within your Grafana workspace.
 
-     In workspaces running version 8 or 9, this will send multiple notifications for your Grafana alerts. If you use alerts defined in Grafana, we recommend creating your workspace as version 10.4 or later.
+     In workspaces running version 9, this will send multiple notifications for your Grafana alerts. If you use alerts defined in Grafana, we recommend creating your workspace as version 10.4 or later.
    + Allow Grafana admins to [manage plugins](grafana-plugins.md) for this workspace. If you don't enable plugin management, your admins will not be able to install, uninstall, or remove plugins for your workspace. You might be limited to the types of data sources and visualization panels you can use with Amazon Managed Grafana.
 
    You can also make these configuration changes after creating your workspace. To learn more about configuring your workspace, see [Configure a Amazon Managed Grafana workspace](AMG-configure-workspace.md).

@@ -94,7 +94,7 @@ The following data is returned in JSON format by the service.
 
  ** [AccountFreeTrialStatuses](#API_ListFreeTrialStatusesV2_ResponseSyntax) **   <a name="securityhub-ListFreeTrialStatusesV2-response-AccountFreeTrialStatuses"></a>
 An array of free trial statuses, one for each account in scope.
-Type: Array of  objects
+Type: Array of [AccountFreeTrialStatus](API_AccountFreeTrialStatus.md) objects
 Array Members: Maximum number of 100 items.
 
  ** [NextToken](#API_ListFreeTrialStatusesV2_ResponseSyntax) **   <a name="securityhub-ListFreeTrialStatusesV2-response-NextToken"></a>

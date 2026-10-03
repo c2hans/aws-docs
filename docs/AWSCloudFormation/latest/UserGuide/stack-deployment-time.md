@@ -31,9 +31,6 @@ The longest chain of resources that depend on each other sets the minimum time f
 Resources that take longer to become ready
 Workloads that include resources such as Amazon RDS database instances, Elastic Load Balancing load balancers, NAT gateways, or Amazon CloudFront distributions spend most of their deployment time waiting for those resources to become ready to serve traffic.
 
-Resource types that keep their current provisioning behavior
-Workloads that include Amazon DynamoDB tables, AWS KMS keys, or Amazon EC2 Auto Scaling groups keep their current provisioning behavior for those resources. Other resources in the same stack still move forward as soon as they are ready. CloudFormation continues to expand the resource types that move forward as soon as they are ready.
-
 Outputs that reference resource attributes
 If a stack output references a resource attribute, for example with `Fn::GetAtt`, CloudFormation waits until the attribute value is available before it completes the stack operation. This wait can add time to the operation.
 

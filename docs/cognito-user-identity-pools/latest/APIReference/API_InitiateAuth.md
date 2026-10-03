@@ -74,6 +74,12 @@ The following are some authentication flows and their parameters. Add a `SECRET_
 USER\_AUTH
 +  `USERNAME` (required)
 +  `PREFERRED_CHALLENGE`. If you don't provide a value for `PREFERRED_CHALLENGE`, Amazon Cognito responds with the `AvailableChallenges` parameter that specifies the available sign-in methods.
++  `TARGET_ACR_VALUES`. An optional, space-separated list of the authentication context class reference (ACR) level URIs that you want the user to reach. List the levels in priority order, from highest to lowest. Amazon Cognito attempts the highest-priority level that the user can satisfy, and falls back through the list. Amazon Cognito ignores any value that it doesn't recognize. If none of the requested values are valid, Amazon Cognito returns an error.
+
+  Requesting step-up authentication with this parameter requires the Essentials or Plus feature plan. On a lower feature plan, InitiateAuth returns a FeatureUnavailableInTierException. `USERNAME` is required. When you provide an `ACCESS_TOKEN`, you must also provide `TARGET_ACR_VALUES`. Amazon Cognito returns an error if you provide an `ACCESS_TOKEN` without `TARGET_ACR_VALUES`. The `USERNAME` that you provide must match the user that the `ACCESS_TOKEN` was issued for.
+
+  For more information about step-up authentication and how Amazon Cognito handles multi-factor authentication requirements, see [Step-up authentication with ACR and AMR](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-step-up-authentication.html) in the *Amazon Cognito Developer Guide*.
++  `MAX_AGE`. An optional integer that sets the maximum number of seconds allowed since the user last authenticated. If the user's most recent authentication is older than this value, Amazon Cognito discards the authentication-methods credit from any access token that you provide and processes the request as a fresh authentication toward the target level. The access token itself remains valid.
 USER\_SRP\_AUTH
 +  `USERNAME` (required)
 +  `SRP_A` (required)
@@ -127,7 +133,7 @@ Required: No
  ** [Session](#API_InitiateAuth_RequestSyntax) **   <a name="CognitoUserPools-InitiateAuth-request-Session"></a>
 The optional session ID from a `ConfirmSignUp` API request. You can sign in a user directly from the sign-up process with the `USER_AUTH` authentication flow. When you pass the session ID to `InitiateAuth`, Amazon Cognito assumes the SMS or email message one-time verification password from `ConfirmSignUp` as the primary authentication factor. You're not required to submit this code a second time. This option is only valid for users who have confirmed their sign-up and are signing in for the first time within the authentication flow session duration of the session ID.
 Type: String
-Length Constraints: Minimum length of 20. Maximum length of 2048.
+Length Constraints: Minimum length of 20. Maximum length of 4096.
 Required: No
 
  ** [UserContextData](#API_InitiateAuth_RequestSyntax) **   <a name="CognitoUserPools-InitiateAuth-request-UserContextData"></a>
@@ -219,12 +225,19 @@ Value Length Constraints: Minimum length of 0. Maximum length of 131072.
 The session identifier that links a challenge response to the initial authentication request. If the user must pass another challenge, Amazon Cognito returns a session ID and challenge parameters.
 Include this session ID in a [RespondToAuthChallenge](API_RespondToAuthChallenge.md) API request.
 Type: String
-Length Constraints: Minimum length of 20. Maximum length of 2048.
+Length Constraints: Minimum length of 20. Maximum length of 4096.
 
 ## Errors
 <a name="API_InitiateAuth_Errors"></a>
 
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** FeatureUnavailableInTierException **
+This exception is thrown when a feature that you attempted to use or configure isn't included in your user pool's current feature plan. This can occur when:
++ You configure a feature that your feature plan doesn't support.
++ You make a request that uses a feature that requires a higher feature plan.
+To resolve this issue, upgrade your user pool to a feature plan that includes the feature.
+HTTP Status Code: 400
 
  ** ForbiddenException **
 This exception is thrown when AWS WAF doesn't allow your request based on a web ACL that's associated with your user pool.

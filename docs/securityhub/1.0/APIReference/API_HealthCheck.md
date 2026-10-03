@@ -23,7 +23,7 @@ Required: Yes
 
  ** Issues **   <a name="securityhub-Type-HealthCheck-Issues"></a>
 A list of health issues associated with the connector, including error codes and messages.
-Type: Array of  objects
+Type: Array of [HealthIssue](API_HealthIssue.md) objects
 Required: No
 
  ** Message **   <a name="securityhub-Type-HealthCheck-Message"></a>

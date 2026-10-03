@@ -39,7 +39,6 @@ To declare this entity in your CloudFormation template, use the following syntax
 The key of the key-value tag.
 *Required*: Yes
 *Type*: String
-*Pattern*: `^[a-zA-Z0-9/_\+=\.:@\-]+$`
 *Minimum*: `1`
 *Maximum*: `128`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -48,7 +47,6 @@ The key of the key-value tag.
 The value of the key-value tag.
 *Required*: Yes
 *Type*: String
-*Pattern*: `^[a-zA-Z0-9/_\+=\.:@\-]*$`
 *Minimum*: `0`
 *Maximum*: `256`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -137,30 +137,24 @@ After you create your profile, create an IAM access role in each AWS account tha
 
 When profile creation finishes, the create-profile page shows an **Action required** prompt indicating that the selected accounts still need an access role. Creating these roles is a separate task that you perform manually in the IAM console. The console does not create the roles for you, and it does not open the IAM console automatically. AWS WA Agent does not monitor or analyze an account until that account's access role exists.
 
-The role name must match the **Common access role name** that you entered during profile creation. The recommended name is `AccessRoleForWellArchitectedAgent`. The execution role's permissions policy grants `sts:AssumeRole` on the access roles, and each access role's trust policy allows the execution role to assume it. Use the same role name in every workload account.
+The role name must match the **Common access role name** that you entered during profile creation. The recommended name is `AccessRoleForWellArchitectedAgent`.
 
-**To find your execution role ARN**
+The execution role's permissions policy grants `sts:AssumeRole` on the access roles, and each access role's trust policy allows the execution role to assume it. Use the same role name in every workload account.
 
-1. In the left-hand navigation, choose **Agent profiles**.
-
-1. Under the agent profile you created, choose **See profile details**.
-
-1. Copy the **Execution role ARN** on the agent profile overview page by choosing the nested square icon.
-
-You need this ARN for the access role trust policy. Use the following trust policy template for your access roles. Replace {{ExecutionRoleARN}} with the full execution role ARN you copied from the profile details page.
+Use the following trust policy template for your access roles. {{ProfileOwningAccountId}} is the account where you created the agent profile. {{ExecutionRoleName}} is the name of the execution role in the agent profile. By default, this is usually `ExecutionRoleForWellArchitectedAgent`.
 
 ```
 {
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Principal": {
-                "AWS": "{{ExecutionRoleARN}}"
-            },
-            "Action": "sts:AssumeRole"
-        }
-    ]
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::{{ProfileOwningAccountId}}:role/service-role/{{ExecutionRoleName}}"
+      },
+      "Action": "sts:AssumeRole"
+    }
+  ]
 }
 ```
 
@@ -168,7 +162,6 @@ You need this ARN for the access role trust policy. Use the following trust poli
 The execution role ARN format depends on how the role was created:
 If you used the **Create new role** button in [Step 3: Configure permissions and integrations](#agent-permissions-integrations), the console places the role under the `service-role/` path: `arn:aws:iam::{{111122223333}}:role/service-role/ExecutionRoleForWellArchitectedAgent`
 If you created the execution role manually in IAM beforehand and selected it during profile creation, use the ARN without the `service-role/` prefix: `arn:aws:iam::{{111122223333}}:role/ExecutionRoleForWellArchitectedAgent`
-Always confirm the exact ARN from the profile details page.
 
 **To create an access role**
 
@@ -178,11 +171,11 @@ Always confirm the exact ARN from the profile details page.
 
 1. For **Trusted entity type**, choose **Custom trust policy**.
 
-1. Paste the trust policy shown in the preceding template, substituting the execution role ARN you copied.
+1. Paste the trust policy shown in the preceding template, and substitute the required information.
 
 1. Choose **Next**. On the **Add permissions** page, search for and attach the [`WellArchitectedAgentResourceScanning` managed policy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/WellArchitectedAgentResourceScanning.html). This grants read-only access to resource metadata and configuration.
 
-1. Choose **Next**. Enter the role name (it must match the **Common access role name** from profile creation; we recommend `AccessRoleForWellArchitectedAgent`) and choose **Create role**. Use the same name in every workload account.
+1. Choose **Next**. Enter the role name (it must match the **Common access role name** from profile creation - we recommend `AccessRoleForWellArchitectedAgent`) and choose **Create role**. Use the same name in every workload account.
 
 **Note**
 If you already created access roles with a broader trust policy, edit each role's **Trust relationships** tab to use the trust policy shown in the preceding template.
@@ -193,6 +186,6 @@ Repeat this procedure in each workload account you want AWS WA Agent to analyze.
 <a name="agent-next-steps"></a>
 
 After you complete your profile setup, you can:
-+ View your personalized recommendations in the AWS WA Agent dashboard ([Recommendations](agent-rec-management.md)). Scheduled recommendations typically become available within 48 hours of completing profile setup.
++ View your personalized recommendations in the AWS WA Agent dashboard ([Recommendations](agent-rec-management.md)). Scheduled recommendations typically become available within 24 hours of completing profile setup.
 + Conduct an architecture review by uploading your IaC files ([Conducting architecture reviews](agent-architecture-reviews.md)).
 + Manage your profile settings at any time ([Agent profiles](agent-manage-profiles.md)).

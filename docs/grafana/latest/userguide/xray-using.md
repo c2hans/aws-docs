@@ -55,4 +55,4 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/xray-using.html
 ## Alerting
 <a name="xray-alerting"></a>
 
- Because X-Ray queries can return numeric data, alerts are supported. For more information, see [Grafana alerting](alerts-overview.md).
+ Because X-Ray queries can return numeric data, alerts are supported. For more information, see [Overview](v13-alerting-overview.md).

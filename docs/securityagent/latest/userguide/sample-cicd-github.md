@@ -5,6 +5,9 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/sample-ci
 # Tutorial: Gate a GitHub Actions deployment with a scoped penetration test
 <a name="sample-cicd-github"></a>
 
+**Public preview**
+CI/CD pipeline integration is in preview and is subject to change.
+
 This tutorial walks through a complete, reproducible setup that runs a continuous, scoped AWS Security Agent penetration test as a **post-deployment gate** in GitHub Actions. You deploy an intentionally vulnerable sample application to a staging environment, then let AWS Security Agent test the deployed change and block promotion to production when it finds a vulnerability.
 
 **Note**

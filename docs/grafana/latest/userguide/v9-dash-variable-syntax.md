@@ -10,7 +10,6 @@ This documentation topic is designed for Grafana workspaces that support **Grafa
 For Grafana workspaces that support Grafana version 13.x, see [Working in Grafana version 13](using-grafana-v13.md).
 For Grafana workspaces that support Grafana version 12.x, see [Working in Grafana version 12](using-grafana-v12.md).
 For Grafana workspaces that support Grafana version 10.x, see [Working in Grafana version 10](using-grafana-v10.md).
-For Grafana workspaces that support Grafana version 8.x, see [Working in Grafana version 8](using-grafana-v8.md).
 
 Panel titles and metric queries can refer to variables using two different syntaxes.
 + `$varname` – This syntax is easy to read, but it does not allow you to use a variable in the middle of a word.

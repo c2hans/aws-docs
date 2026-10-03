@@ -143,7 +143,6 @@ This documentation topic is designed for Grafana workspaces that support **Grafa
 For Grafana workspaces that support Grafana version 13.x, see [Working in Grafana version 13](using-grafana-v13.md).
 For Grafana workspaces that support Grafana version 12.x, see [Working in Grafana version 12](using-grafana-v12.md).
 For Grafana workspaces that support Grafana version 9.x, see [Working in Grafana version 9](using-grafana-v9.md).
-For Grafana workspaces that support Grafana version 8.x, see [Working in Grafana version 8](using-grafana-v8.md).
 
 Options under the axis category change how the x- and y-axes are rendered. Some options don't take effect until you click outside of the field option box you are editing. You can also press `Enter`.
 

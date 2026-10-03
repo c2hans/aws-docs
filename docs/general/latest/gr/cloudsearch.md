@@ -26,8 +26,3 @@ The following are the service endpoints and service quotas for this service.
 | Europe (Frankfurt) | eu-central-1 |  cloudsearch.eu-central-1.amazonaws.com  | HTTPS |
 | Europe (Ireland) | eu-west-1 |  cloudsearch.eu-west-1.amazonaws.com  | HTTPS |
 | South America (São Paulo) | sa-east-1 |  cloudsearch.sa-east-1.amazonaws.com  | HTTPS |
-
-## Service quotas
-<a name="limits_cloudsearch"></a>
-
-For more information, see [Understanding Amazon CloudSearch Quotas](https://docs.aws.amazon.com/cloudsearch/latest/developerguide/limits.html) in the *Amazon CloudSearch Developer Guide*.

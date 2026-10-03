@@ -10,7 +10,6 @@ This documentation topic is designed for Grafana workspaces that support **Grafa
 For Grafana workspaces that support Grafana version 12.x, see [Working in Grafana version 12](using-grafana-v12.md).
 For Grafana workspaces that support Grafana version 10.x, see [Working in Grafana version 10](using-grafana-v10.md).
 For Grafana workspaces that support Grafana version 9.x, see [Working in Grafana version 9](using-grafana-v9.md).
-For Grafana workspaces that support Grafana version 8.x, see [Working in Grafana version 8](using-grafana-v8.md).
 
 The Candlestick visualization allows you to visualize data that includes a number of consistent dimensions focused on price movement. The Candlestick panel includes an Open-High-Low-Close (OHLC) mode, as well as support for additional dimensions based on time series data.
 

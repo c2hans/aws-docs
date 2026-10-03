@@ -9,4 +9,4 @@ The AWS Deadline Cloud API provides infrastructure and centralized management fo
 
 With Deadline Cloud, content production teams can deploy resources for their workforce securely in the cloud, reducing the costs of added physical infrastructure. Keep your content production operations secure, while allowing your contributors to access the tools they need, such as scalable high-speed storage, licenses, and cost management services.
 
-This document was last published on October 2, 2026.
+This document was last published on October 3, 2026.

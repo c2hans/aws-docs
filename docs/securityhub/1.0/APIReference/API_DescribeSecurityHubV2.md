@@ -52,7 +52,7 @@ The following data is returned in JSON format by the service.
 
  ** [Features](#API_DescribeSecurityHubV2_ResponseSyntax) **   <a name="securityhub-DescribeSecurityHubV2-response-Features"></a>
 A map of opt-in features and their current status and metadata for the account in the current Region.
-Type: String to  object map
+Type: String to [FeatureDetail](API_FeatureDetail.md) object map
 
  ** [HubV2Arn](#API_DescribeSecurityHubV2_ResponseSyntax) **   <a name="securityhub-DescribeSecurityHubV2-response-HubV2Arn"></a>
 The ARN of the service resource.
