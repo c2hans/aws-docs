@@ -1,0 +1,19 @@
+---
+name: r2widthsweep-tier3-facts
+description: R2 WidthSweep Tier-3 cross-account PII/exfil cluster live outcomes (CP/backupsearch/quicksight/securityagent/invoicing/obsadmin) — run 2026-10-03-1
+metadata:
+  type: project
+---
+
+R2 WidthSweep Tier-3 cross-account PII/exfil cluster, run 2026-10-03-1 (A=183174222929, B=289531347876). **Every priority lead REFUTED or BLOCKED; zero confirmed-vulnerabilities.** Don't re-task these without new surface.
+
+**Why / what was observed (so future runs skip re-proving):**
+- **customer-profiles `AssociateStreamForSegments`: REFUTED.** Fail-closed on BOTH legs. Foreign-account DestinationArn (Kinesis stream) → `BadRequestException` "not a valid Kinesis Data Stream ARN" (destination must be own-account). Foreign DestinationRoleArn → `AccessDeniedException` "**Cross-account pass role is not allowed.**". Same-account A→A and B→B both 200. The documented `.*:[0-9]+:.*` role pattern + "no SourceArn/SourceAccount condition" is regex/doc only; server enforces same-account at setup.
+- **backupsearch `StartSearchResultExportJob`: REFUTED exfil / Low AWS-artifact-gap.** `S3ExportSpecification` genuinely has NO `ExpectedBucketOwner` (SDK+doc confirmed; asymmetric w/ kinesis channel twin) = contract gap, but RoleArn is caller-account-pinned (cross-acct passrole → "Cross-account pass role is not allowed"), so exfil is consent-gated → Low only. Live full test BLOCKED: (a) A's S3 recovery points aren't backup-indexed → StartSearchJob always "Search scope is empty"→FAILED; (b) **IAM rejects documented PassRole principal `backup-search.amazonaws.com` as "Invalid principal in policy"** — can't create the export role. Export validation order: cross-acct-passrole 403 / job-state ValidationException (needs COMPLETED,STOPPED) / nonexistent-job 404.
+- **quicksight app/extension/OAuth IDOR: REFUTED.** New ops (ListOAuthClientApplications/Describe*/UpdateAppPermissions) take explicit `AwsAccountId` (WHO sink) but pin it ==caller at authorizer: A creds + AwsAccountId=B → AccessDeniedException 401/403 BEFORE lookup; AwsAccountId=A own → 404/200. Does NOT trust asserted account field.
+- **securityagent `ListActorMessages`: BLOCKED.** Action ABSENT from botocore securityagent model (api 2025-09-06; model = ListAgentSpaces/ListIntegrations/ListFindings/pentest/threatmodel/codereview ops). ListAgentSpaces+ListIntegrations = 200 empty in BOTH accts → no actor surface provisioned. No AWS-plane identity → no HARD-STOP. Would need to provision an AgentSpace (service-plane-adjacent) to probe.
+- **invoicing `BatchGetInvoiceProfile`: REFUTED.** A→[A] 200 (returns own billing receiver name/address). A→[B] AccessDeniedException "Account A is not authorized to access resources for account B". Batch [A,B] → whole-batch 403 (fails closed, **ALL/only-first-id sink does NOT apply**). Member can't read sibling-member billing.
+- **observabilityadmin #7 `test.logs.amazonaws.com`: of-interest partial.** `CreateDatasetIntegration` SDK-absent (model = only S3TableIntegration ops) → gate not live-testable. BUT IAM **accepts** a role trusting `test.logs.amazonaws.com` (CreateRole 200), a test/internal principal in prod IAM registry; contrast `backup-search.amazonaws.com` REJECTED. AWS-artifact observations, disclosure/doc only.
+- **connect leads: BLOCKED** — 0 Connect instances in A/B.
+
+**Reusable cross-cutting fact:** this whole cluster shares TWO uniform server-side controls the doc "missing-condition-key" analysis can't see: (1) destination resource ARN must be own-account; (2) **"Cross-account pass role is not allowed"** enforced uniformly across customer-profiles AND backupsearch. Missing SourceArn/SourceAccount condition keys don't translate to exploitability here. See [[streams-datadelivery-facts]] (same consent-gating pattern), [[aws-env-setup]].
