@@ -16,9 +16,9 @@ Mixtral 8x7B Instruct is Mistral AI's sparse mixture-of-experts model with 8 exp
 + **EOL no sooner than:** Dec 10, 2024
 + **Legacy period:** at least 6 months
 + **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
-+ **Model EOL date:** No sooner than 3/1/2025
++ **Model EOL date:** March 30, 2027
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
-+ **Model lifecycle:** Active
++ **Model lifecycle:** Legacy
 + **Context window:** 32K tokens
 + **Max output tokens:** 4K
 

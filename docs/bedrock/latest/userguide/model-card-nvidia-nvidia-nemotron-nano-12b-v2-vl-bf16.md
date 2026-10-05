@@ -16,9 +16,9 @@ Nemotron Nano 12B v2 VL is NVIDIA's 12-billion parameter vision-language model f
 + **EOL no sooner than:** Oct 28, 2026
 + **Legacy period:** at least 6 months
 + **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
-+ **Model EOL date:** N/A
++ **Model EOL date:** March 30, 2027
 + **End User License Agreements and Terms of Use:** [View](https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/)
-+ **Model lifecycle:** Active
++ **Model lifecycle:** Legacy
 + **Context window:** 128K tokens
 + **Max output tokens:** 8K
 

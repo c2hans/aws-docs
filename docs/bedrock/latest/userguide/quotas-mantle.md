@@ -45,7 +45,7 @@ The `bedrock-runtime` endpoint's TPM quotas count input and output tokens togeth
 ## Default quota values
 <a name="quotas-mantle-defaults"></a>
 
-The following table lists default quotas for models on the `bedrock-mantle` endpoint. New AWS accounts might receive reduced quotas, and quotas can vary by Region.
+The following table lists default quotas for models on the `bedrock-mantle` endpoint. Actual quota allocations can vary by account and AWS Region, and new AWS accounts might receive reduced quotas. Some models require additional account-level access before quota allocations are provided.
 
 **Default bedrock-mantle quotas by model**
 
@@ -67,6 +67,9 @@ The `bedrock-mantle` endpoint enforces published TPM quotas only for the models 
 
 ## Requesting a quota increase
 <a name="quotas-mantle-increase"></a>
+
+**Important**
+A quota increase doesn't grant additional account-level access to a model. If you can't invoke a model after completing the activation requirements in [Request access to models](model-access.md) and verifying AWS Region support, contact [AWS Sales](https://aws.amazon.com/contact-us/sales-support/) for additional access options.
 
 The `bedrock-mantle` quotas are visible in Service Quotas, but quota increase requests are not currently processed through the Service Quotas console. To request an increase, submit a request through the [AWS Support limit increase form](https://console.aws.amazon.com/support/home#/case/create?issueType=service-limit-increase) and select **Amazon Bedrock** as the service. In your request, specify:
 + The endpoint (`bedrock-mantle`).

@@ -16,9 +16,9 @@ GLM 4.7 Flash is Z.AI's lightweight model optimized for fast inference and low-l
 + **EOL no sooner than:** Jan 19, 2027
 + **Legacy period:** at least 6 months
 + **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
-+ **Model EOL date:** N/A
++ **Model EOL date:** March 30, 2027
 + **End User License Agreements and Terms of Use:** [View](https://github.com/zai-org/GLM-4/blob/main/LICENSE)
-+ **Model lifecycle:** Active
++ **Model lifecycle:** Legacy
 + **Context window:** 203K tokens
 + **Max output tokens:** 4K
 

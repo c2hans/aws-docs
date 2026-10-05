@@ -16,9 +16,9 @@ Devstral 2 123B is Mistral AI's 123-billion parameter coding model optimized for
 + **EOL no sooner than:** Jun 2026
 + **Legacy period:** at least 6 months
 + **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
-+ **Model EOL date:** N/A
++ **Model EOL date:** March 30, 2027
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
-+ **Model lifecycle:** Active
++ **Model lifecycle:** Legacy
 + **Context window:** 256K tokens
 + **Max output tokens:** 32K
 

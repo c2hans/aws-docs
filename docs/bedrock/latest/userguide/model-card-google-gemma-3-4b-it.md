@@ -16,9 +16,9 @@ Gemma 3 4B IT is Google's compact 4-billion parameter open model with instructio
 + **EOL no sooner than:** Mar 12, 2026
 + **Legacy period:** at least 6 months
 + **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
-+ **Model EOL date:** N/A
++ **Model EOL date:** March 30, 2027
 + **End User License Agreements and Terms of Use:** [View](https://ai.google.dev/gemma/terms)
-+ **Model lifecycle:** Active
++ **Model lifecycle:** Legacy
 + **Context window:** 128K tokens
 + **Max output tokens:** 8K
 

@@ -16,9 +16,9 @@ DeepSeek-V3.1 is DeepSeek's 685B parameter mixture-of-experts model with strong 
 + **EOL no sooner than:** Aug 21, 2026
 + **Legacy period:** at least 6 months
 + **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
-+ **Model EOL date:** N/A
++ **Model EOL date:** March 30, 2027
 + **End User License Agreements and Terms of Use:** [View](https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/main/LICENSE)
-+ **Model lifecycle:** Active
++ **Model lifecycle:** Legacy
 + **Context window:** 128K tokens
 + **Max output tokens:** 8K
 + **Knowledge cutoff:** Jan 2025

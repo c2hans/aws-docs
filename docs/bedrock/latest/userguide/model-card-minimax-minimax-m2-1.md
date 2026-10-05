@@ -16,9 +16,9 @@ MiniMax M2.1 is MiniMax's updated model with improved reasoning, coding, and ins
 + **EOL no sooner than:** Dec 23, 2026
 + **Legacy period:** at least 6 months
 + **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
-+ **Model EOL date:** N/A
++ **Model EOL date:** March 30, 2027
 + **End User License Agreements and Terms of Use:** [View](https://github.com/MiniMax-AI/MiniMax-M2.1/blob/main/LICENSE)
-+ **Model lifecycle:** Active
++ **Model lifecycle:** Legacy
 + **Context window:** 196K tokens
 + **Max output tokens:** 8K
 

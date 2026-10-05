@@ -16,9 +16,9 @@ GLM 4.7 is Z.AI's large language model with strong multilingual capabilities and
 + **EOL no sooner than:** Dec 22, 2026
 + **Legacy period:** at least 6 months
 + **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
-+ **Model EOL date:** N/A
++ **Model EOL date:** March 30, 2027
 + **End User License Agreements and Terms of Use:** [View](https://github.com/zai-org/GLM-4/blob/main/LICENSE)
-+ **Model lifecycle:** Active
++ **Model lifecycle:** Legacy
 + **Context window:** 203K tokens
 + **Max output tokens:** 4K
 

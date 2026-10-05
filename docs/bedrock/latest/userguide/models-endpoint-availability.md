@@ -12,7 +12,7 @@ Amazon Bedrock supports two endpoints: bedrock-runtime and bedrock-mantle. For n
 | bedrock-runtime.{region}.amazonaws.com (recommended) | [InvokeModel](inference-invoke.md) / [Converse](conversation-inference.md) / [Chat Completions](inference-chat-completions.md) / [Responses API](inference-responses-api.md#bedrock-mantle-responses) / [Messages API](model-parameters-anthropic-claude-messages.md) | Region-specific endpoints for making inference requests for models hosted in Amazon Bedrock using the InvokeModel/Converse/Chat Completions/Responses/Messages APIs. For more information, see [Amazon Bedrock Runtime API operations](bedrock/latest/APIReference/API_Operations_Amazon_Bedrock_Runtime.html). |
 | bedrock-mantle.{region}.api.aws | [Responses API](inference-responses-api.md) / [Chat Completions API](inference-chat-completions.md) / [Messages API](model-parameters-anthropic-claude-messages.md) | Region-specific endpoints for making inference requests for models hosted in Amazon Bedrock using the OpenAI-compatible endpoints and the Anthropic Messages API. |
 
-The following tables show which Amazon Bedrock endpoints support each model, organized by provider.
+The following tables show which Amazon Bedrock endpoints support each model, organized by provider. Endpoint support does not mean that a model is available through that endpoint in every AWS Region where the endpoint is available. For model availability by Region, see [Regional availability by models](models-region-compatibility.md).
 
 ## AI21 Labs
 <a name="model-endpoints-ai21-labs"></a>
@@ -100,6 +100,13 @@ The following tables show which Amazon Bedrock endpoints support each model, org
 | [Gemma 3 12B IT](model-card-google-gemma-3-12b-it.md) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
 | [Gemma 3 27B PT](model-card-google-gemma-3-27b-pt.md) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
 | [Gemma 3 4B IT](model-card-google-gemma-3-4b-it.md) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
+
+## Luma AI
+<a name="model-endpoints-luma"></a>
+
+| Model name | `bedrock-runtime` | `bedrock-mantle` |
+| --- | --- | --- |
+| [Ray2](model-card-luma-ai-ray2.md) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
 
 ## Meta
 <a name="model-endpoints-meta"></a>

@@ -63,22 +63,43 @@ For Chat Completions, use `/openai/v1/chat/completions`.
 
 ***Bedrock Features***
 
+**Features supported using `bedrock-runtime`**
+
 | **Supported** | **Not Supported** |
 | --- | --- |
-| + ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Response streaming](/bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html)<br />+ ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Guardrails](guardrails.html)<br />+ ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Structured outputs (bedrock-runtime JSON Schema; see API configuration)](#model-card-openai-gpt-6-1-sol-structured-output) | + ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) [Server-side system tools](tool-use.html)<br />+ ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) [Intelligent prompt routing](prompt-routing.html)<br />+ ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) [Count tokens](count-tokens.html)<br />+ ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) [Explicit prompt caching](prompt-caching.html#prompt-caching-explicit) |
+|  + ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Projects (default project only)](projects.html)<br />+ ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Invocation logs](model-invocation-logging.html)<br />+ ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Response streaming](/bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html)<br />+ ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Abuse detection](abuse-detection.html)<br />+ ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Guardrails](guardrails.html) (Chat Completions, InvokeModel, and Converse APIs; not supported with Responses)<br />+ ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Application inference profiles](cost-mgmt-application-inference-profiles.html) (InvokeModel and Converse APIs only; not supported with Responses or Chat Completions)<br />+ ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Implicit Prompt Caching](#model-card-openai-gpt-6-1-sol-prompt-caching) (Responses, Chat Completions, InvokeModel, and Converse APIs)<br />+ ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Explicit Prompt Caching](#model-card-openai-gpt-6-1-sol-prompt-caching) (Responses, Chat Completions, and InvokeModel APIs; not supported with Converse)<br />+ ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Structured outputs](#model-card-openai-gpt-6-1-sol-structured-output) (Responses, Chat Completions, InvokeModel, and Converse APIs)  |  + ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) [Server-side system tools](tool-use.html)<br />+ ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) [Intelligent prompt routing](prompt-routing.html)<br />+ ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) [Count tokens](count-tokens.html)<br />+ ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) [Knowledge Bases](knowledge-base.html)<br />+ ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) [Prompt optimization](prompt-management-optimize.html)  |
 
-### JSON Schema output on bedrock-runtime
+**Features supported using `bedrock-mantle`**
+
+| **Supported** | **Not Supported** |
+| --- | --- |
+|  + ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Projects](projects.html)<br />+ ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Response streaming](inference-responses-api.md#bedrock-mantle-responses-streaming)<br />+ ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Implicit Prompt Caching](#model-card-openai-gpt-6-1-sol-prompt-caching) (Responses and Chat Completions APIs)<br />+ ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Explicit Prompt Caching](#model-card-openai-gpt-6-1-sol-prompt-caching) (Responses and Chat Completions APIs)<br />+ ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Structured outputs](#model-card-openai-gpt-6-1-sol-structured-output) (Responses and Chat Completions APIs)  |  + ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) [Guardrails](guardrails.html)<br />+ ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) [Invocation logs](model-invocation-logging.html)<br />+ ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) [Application inference profiles](cost-mgmt-application-inference-profiles.html)<br />+ ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) [Server-side system tools](tool-use.html)<br />+ ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) [Intelligent prompt routing](prompt-routing.html)<br />+ ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) [Count tokens](count-tokens.html)<br />+ ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) [Knowledge Bases](knowledge-base.html)<br />+ ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) [Prompt optimization](prompt-management-optimize.html)  |
+
+### Prompt caching
+<a name="model-card-openai-gpt-6-1-sol-prompt-caching"></a>
+
+GPT-6.1 Sol supports both [Implicit Prompt Caching](prompt-caching.html#prompt-caching-implicit) and [Explicit Prompt Caching](prompt-caching.html#prompt-caching-explicit). API support differs by endpoint:
++ Responses and Chat Completions support both caching types on the `bedrock-runtime` and `bedrock-mantle` endpoints.
++ InvokeModel supports both caching types on the `bedrock-runtime` endpoint.
++ Converse supports implicit caching on the `bedrock-runtime` endpoint. The native `cachePoint` field isn't supported for explicit caching with this model.
+
+For explicit caching, set `prompt_cache_options.mode` to `explicit`. Set `prompt_cache_options.ttl` to `30m`, the only supported TTL and the default. In Responses requests, add `"prompt_cache_breakpoint": {"mode": "explicit"}` to an `input_text` content block. In Chat Completions and InvokeModel requests, add it to a `text` content part.
+
+A cacheable prompt prefix must contain at least 1,024 tokens. You can include multiple explicit breakpoints, and each request can create up to four cache writes. Check the cache usage fields in the response to determine whether tokens were written to or read from the cache.
+
+### JSON Schema output
 <a name="model-card-openai-gpt-6-1-sol-structured-output"></a>
 
-Use JSON Schema to set the format of the model response. These settings apply to non-streaming calls on the `bedrock-runtime` endpoint. Choose a profile ID from [Programmatic access](#model-card-openai-gpt-6-1-sol-programmatic-access).
+Use JSON Schema to set the format of the model response for streaming and non-streaming requests. Chat Completions and Responses support JSON Schema output on both the `bedrock-runtime` and `bedrock-mantle` endpoints. InvokeModel, InvokeModelWithResponseStream, Converse, and ConverseStream support JSON Schema output on the `bedrock-runtime` endpoint. Choose a model ID or inference profile ID from [Programmatic access](#model-card-openai-gpt-6-1-sol-programmatic-access).
 + For Chat Completions, set `response_format.type` to `json_schema`. Put `name`, `schema`, and `strict: true` in `response_format.json_schema`.
 + For Responses, set `text.format.type` to `json_schema`. Put `name`, `schema`, and `strict: true` in `text.format`.
-+ For Converse, set `outputConfig.textFormat.type` to `json_schema`. In `outputConfig.textFormat.structure.jsonSchema`, set `name` and `schema`. Encode the schema as a JSON string. Then set `additionalModelRequestFields.text.format.strict` to `true`.
++ For InvokeModel and InvokeModelWithResponseStream, use the same `response_format` fields as Chat Completions.
++ For Converse and ConverseStream, set `outputConfig.textFormat.type` to `json_schema`. In `outputConfig.textFormat.structure.jsonSchema`, set `name` and `schema`. Encode the schema as a JSON string. Then set `additionalModelRequestFields.text.format.strict` to `true`.
 
 Use an object schema. Put all fields in `required`. Set `additionalProperties` to `false`. Validate your schema before you send it. Check for refusals or incomplete responses before you parse the output.
 
 **Important**
-For JSON Schema output with the Converse API, you must set `additionalModelRequestFields.text.format.strict` to `true`, in addition to specifying the schema in `outputConfig`. Include the following field in your request.
+For JSON Schema output with Converse and ConverseStream, you must set `additionalModelRequestFields.text.format.strict` to `true`, in addition to specifying the schema in `outputConfig`. Include the following field in your request.
 
 ```
 {
@@ -97,7 +118,7 @@ All prices are in USD per 1 million tokens for the Standard tier. Global CRIS ra
 
 Commercial In-Region and US geographic cross-Region inference (US CRIS) prices include a 10% premium over the global base rates. You do not need to add this premium.
 
-Explicit prompt caching is not supported for this Bedrock model; the cache pricing dimensions do not change that feature support.
+GPT-6.1 Sol supports both implicit and explicit prompt caching. Cache-write tokens are billed at 1.25× the uncached input-token rate, and cache-read tokens are billed at 0.05× the uncached input-token rate. For configuration and API support, see [Prompt caching](#model-card-openai-gpt-6-1-sol-prompt-caching).
 
 Long-context rates apply to the full request when input exceeds 272,000 tokens.
 

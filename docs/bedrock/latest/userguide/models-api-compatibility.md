@@ -100,6 +100,16 @@ We will now look at the list of APIs supported by each model.
 | [Gemma 3 27B PT](model-card-google-gemma-3-27b-pt.md)\* | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
 | [Gemma 3 4B IT](model-card-google-gemma-3-4b-it.md)\* | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
 
+## Luma AI
+<a name="api-compatibility-luma"></a>
+
+| Model name | Invoke | Converse | Chat Completions | Responses | Messages |
+| --- | --- | --- | --- | --- | --- |
+| [Ray2](model-card-luma-ai-ray2.md) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
+
+**Note**
+The Invoke column indicates synchronous `InvokeModel` support. Ray2 is invoked asynchronously with `StartAsyncInvoke`.
+
 ## Meta
 <a name="api-compatibility-meta"></a>
 
@@ -268,6 +278,7 @@ In terms of which models support it, the following models support StartAsyncInvo
 + **TwelveLabs Marengo Embed 2.7** (twelvelabs.marengo-embed-2-7-v1:0) — required for video and audio input; InvokeModel only handles text and image
 + **TwelveLabs Marengo Embed 3.0** (twelvelabs.marengo-embed-3-0-v1:0) — same pattern; async required for video/audio at scale
 + **Amazon Nova Reel** (amazon.nova-reel-v1:0 and v1:1) — video generation is exclusively async; output lands in S3
++ **Luma AI Ray2** (luma.ray-v2:0) — video generation is exclusively async; output lands in S3
 + **Amazon Nova Multimodal Embeddings** (amazon.nova-2-multimodal-embeddings-v1:0) — async is required for video inputs larger than 25MB base64-encoded; sync is available for text, image, and document inputs
 
 ## **InvokeModelWithBidirectionalStream**

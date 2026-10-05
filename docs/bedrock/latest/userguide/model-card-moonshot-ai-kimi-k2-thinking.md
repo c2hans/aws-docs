@@ -16,8 +16,8 @@ Kimi K2 Thinking is Moonshot AI's reasoning model with chain-of-thought capabili
 + **EOL no sooner than:** Nov 06, 2026
 + **Legacy period:** at least 6 months
 + **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
-+ **Model EOL date:** N/A
-+ **Model lifecycle:** Active
++ **Model EOL date:** March 30, 2027
++ **Model lifecycle:** Legacy
 + **Context window:** 256K tokens
 + **Max output tokens:** 16K
 + **Reasoning:** Supported

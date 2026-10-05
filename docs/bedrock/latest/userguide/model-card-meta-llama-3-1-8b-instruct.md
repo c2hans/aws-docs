@@ -16,9 +16,9 @@ Llama 3.1 8B Instruct is Meta's compact 8-billion parameter model with a 128K co
 + **EOL no sooner than:** Jul 23, 2025
 + **Legacy period:** at least 6 months
 + **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
-+ **Model EOL date:** No sooner than 7/23/2025
++ **Model EOL date:** March 30, 2027
 + **End User License Agreements and Terms of Use:** [View](https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE)
-+ **Model lifecycle:** Active
++ **Model lifecycle:** Legacy
 + **Context window:** 128K tokens
 + **Max output tokens:** 4K
 + **Knowledge cutoff:** Dec 2023

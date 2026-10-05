@@ -27,7 +27,7 @@ A policy cannot be shared between multiple roles when the service role is used.
 + [Permissions to access Amazon Bedrock models](#kb-permissions-access-models)
 + [Permissions to access your data sources](#kb-permissions-access-ds)
 + [Permissions to decrypt your AWS KMS key for encrypted data sources in Amazon S3](#kb-permissions-kms-datasource)
-+ [Permissions to chat with your document](#kb-permissions-chatdoc)
++ [Permissions to query external sources](#kb-permissions-chatdoc)
 + [Permissions for multimodal content](#kb-permissions-multimodal)
 + [Permissions to access your Amazon Kendra GenAI index](#kb-permissions-kendra)
 + [Permissions to access your vector database in Amazon OpenSearch Serverless](#kb-permissions-oss)
@@ -493,10 +493,10 @@ If you encrypted your data sources in Amazon S3 with a AWS KMS key, attach the f
 }
 ```
 
-## Permissions to chat with your document
+## Permissions to query external sources
 <a name="kb-permissions-chatdoc"></a>
 
-Attach the following policy to provide permissions for the role to use Amazon Bedrock models to chat with your document:
+Attach the following policy to provide permissions for the role to use Amazon Bedrock models to generate responses from an external source:
 
 ------
 #### [ JSON ]
@@ -520,7 +520,7 @@ Attach the following policy to provide permissions for the role to use Amazon Be
 
 ------
 
-If you only want to grant a user access to chat with your document (and not to `RetrieveAndGenerate` on all Knowledge Bases), use the following policy:
+If you only want to grant a user access to query external sources (and not to `RetrieveAndGenerate` on all knowledge bases), use the following policy:
 
 ------
 #### [ JSON ]
@@ -551,7 +551,7 @@ If you only want to grant a user access to chat with your document (and not to `
 
 ------
 
-If you want both chat with your document and use `RetrieveAndGenerate` on a specific Knowledge Base, provide a {{${KnowledgeBaseArn}}}, and use the following policy:
+If you want to both query external sources and use `RetrieveAndGenerate` on a specific knowledge base, provide a {{${KnowledgeBaseArn}}} and use the following policy:
 
 ------
 #### [ JSON ]

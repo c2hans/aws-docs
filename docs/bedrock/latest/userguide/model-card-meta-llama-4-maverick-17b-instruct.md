@@ -16,9 +16,9 @@ Llama 4 Maverick is Meta's 17-billion active parameter mixture-of-experts model 
 + **EOL no sooner than:** Apr 05, 2026
 + **Legacy period:** at least 6 months
 + **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
-+ **Model EOL date:** No sooner than 4/28/2026
++ **Model EOL date:** March 30, 2027
 + **End User License Agreements and Terms of Use:** [View](https://www.llama.com/llama4/license/)
-+ **Model lifecycle:** Active
++ **Model lifecycle:** Legacy
 + **Context window:** 1M tokens
 + **Max output tokens:** 8K
 + **Knowledge cutoff:** Aug 2024

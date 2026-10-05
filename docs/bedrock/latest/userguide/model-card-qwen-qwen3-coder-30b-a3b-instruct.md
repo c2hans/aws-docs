@@ -16,9 +16,9 @@ Qwen3 Coder 30B A3B is Qwen's compact coding mixture-of-experts model with 30B t
 + **EOL no sooner than:** Jul 31, 2026
 + **Legacy period:** at least 6 months
 + **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
-+ **Model EOL date:** N/A
++ **Model EOL date:** March 30, 2027
 + **End User License Agreements and Terms of Use:** [View](https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/main/LICENSE)
-+ **Model lifecycle:** Active
++ **Model lifecycle:** Legacy
 + **Context window:** 256K tokens
 + **Max output tokens:** 16K
 
