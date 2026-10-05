@@ -34,7 +34,7 @@ from contextlib import contextmanager
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass, field
 from pathlib import Path
-from urllib.parse import unquote, urlparse, urlunparse
+from urllib.parse import unquote, urljoin, urlparse, urlunparse
 from xml.etree import ElementTree
 
 import requests
@@ -75,7 +75,16 @@ SDK_REFERENCE_RE = re.compile("|".join(SDK_REFERENCE_PATTERNS))
 def is_sdk_reference(url: str) -> bool:
     return bool(SDK_REFERENCE_RE.search(url))
 
-XML_NS = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
+# Most sitemaps use the canonical http:// namespace, but a few (e.g.
+# codeguru/detector-library) declare https://.
+XML_NAMESPACES = (
+    "{http://www.sitemaps.org/schemas/sitemap/0.9}",
+    "{https://www.sitemaps.org/schemas/sitemap/0.9}",
+)
+MAX_REDIRECTS = 10
+# Abort the page phase after this many 403s in a row: docs.aws.amazon.com is
+# blocking this client, and continuing only prolongs the block.
+MAX_CONSECUTIVE_BLOCKED = 50
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DOCS_DIR = REPO_ROOT / "docs"
@@ -86,6 +95,16 @@ LOCK_PATH = STATE_DIR / "sync.lock"
 
 class SyncError(RuntimeError):
     pass
+
+
+class RetiredSitemap(SyncError):
+    """A sitemap AWS still lists but that no longer describes a live guide.
+
+    The index keeps entries for guides that were retired or merged elsewhere:
+    their sitemap.xml redirects off-site, to an HTML landing page, or to a
+    404, or is an empty <urlset>. These are skipped rather than treated as
+    discovery failures, which would otherwise block every full sync.
+    """
 
 
 def make_session() -> requests.Session:
@@ -126,22 +145,46 @@ def fetch_xml_locs(url: str, timeout: float) -> tuple[str, list[str]]:
     parsed_url = urlparse(url)
     if parsed_url.scheme != "https" or parsed_url.netloc != urlparse(BASE).netloc:
         raise SyncError(f"unsupported sitemap URL: {url}")
-    resp = session().get(url, timeout=timeout)
+
+    # Follow redirects by hand so we never fetch from outside docs.aws.amazon.com.
+    # AWS's own chains sometimes bounce through http:// or an explicit :443.
+    current = url
+    redirected = False
+    for _ in range(MAX_REDIRECTS + 1):
+        resp = session().get(current, timeout=timeout, allow_redirects=False)
+        if not resp.is_redirect:
+            break
+        target = urljoin(current, resp.headers["Location"])
+        parsed_target = urlparse(target)
+        if parsed_target.hostname != urlparse(BASE).hostname or parsed_target.port not in {
+            None,
+            443,
+        }:
+            raise RetiredSitemap(f"sitemap redirects off docs.aws.amazon.com: {target}")
+        current = urlunparse(parsed_target._replace(scheme="https", netloc=urlparse(BASE).netloc))
+        redirected = True
+    else:
+        raise SyncError(f"too many redirects for sitemap {url}")
+
+    if resp.status_code in {404, 410} or (redirected and resp.status_code == 403):
+        raise RetiredSitemap(f"sitemap {url} resolves to HTTP {resp.status_code} at {current}")
     resp.raise_for_status()
-    final_url = urlparse(resp.url)
-    if final_url.scheme != "https" or final_url.netloc != urlparse(BASE).netloc:
-        raise SyncError(f"sitemap redirected off docs.aws.amazon.com: {resp.url}")
-    # AWS's index occasionally retains a sitemap URL after a guide becomes a
-    # single page. In that case the URL redirects directly to the HTML page.
-    if parsed_url.path.endswith("/sitemap.xml") and final_url.path.endswith(".html"):
-        return "urlset", [resp.url]
+
+    if redirected and "xml" not in resp.headers.get("Content-Type", "").lower():
+        # AWS's index occasionally retains a sitemap URL after a guide becomes a
+        # single page. In that case the URL redirects directly to the HTML page.
+        if urlparse(current).path.endswith(".html"):
+            return "urlset", [current]
+        raise RetiredSitemap(f"sitemap {url} redirects to a non-sitemap page: {current}")
+
     root = ElementTree.fromstring(resp.content)
-    tag = root.tag.replace(XML_NS, "")
+    ns = next((n for n in XML_NAMESPACES if root.tag.startswith(n)), None)
+    tag = root.tag[len(ns):] if ns else root.tag
     if tag not in {"sitemapindex", "urlset"}:
         raise SyncError(f"unexpected root tag {root.tag!r} for {url}")
     locs = [
         el.text.strip()
-        for el in root.iter(f"{XML_NS}loc")
+        for el in root.iter(f"{ns}loc")
         if el.text and el.text.strip()
     ]
     return tag, locs
@@ -171,7 +214,13 @@ def discover_pages(sitemap_url: str, timeout: float) -> list[str]:
         if url in seen:
             raise SyncError(f"sitemap cycle detected at {url}")
         seen.add(url)
-        tag, locs = fetch_xml_locs(url, timeout)
+        try:
+            tag, locs = fetch_xml_locs(url, timeout)
+        except RetiredSitemap as e:
+            if depth == 0:
+                raise
+            print(f"WARN: skipping retired child sitemap: {e}", file=sys.stderr)
+            return
         if tag == "sitemapindex":
             for sub in locs:
                 walk(sub, depth + 1)
@@ -180,7 +229,7 @@ def discover_pages(sitemap_url: str, timeout: float) -> list[str]:
 
     walk(sitemap_url)
     if not pages:
-        raise SyncError(f"sitemap contains no pages: {sitemap_url}")
+        raise RetiredSitemap(f"sitemap contains no pages: {sitemap_url}")
     base_host = urlparse(BASE).netloc
     return [
         p
@@ -200,7 +249,7 @@ class FetchResult:
     url: str
     local_path: Path
     markdown: str | None
-    source: str  # "md" | "cached" | "error"
+    source: str  # "md" | "cached" | "error" | "blocked"
     etag: str | None = None
     last_modified: str | None = None
     error: str | None = None
@@ -302,7 +351,8 @@ def fetch_page(url: str, timeout: float, cache_entry: dict | None) -> FetchResul
         url,
         local_path,
         None,
-        "error",
+        # CloudFront answers every path with 403 once it starts rate-limiting us.
+        "blocked" if resp.status_code == 403 else "error",
         error=f"no markdown export at {md_url} (status {resp.status_code}, "
         f"content-type {resp.headers.get('Content-Type')!r})",
     )
@@ -363,11 +413,19 @@ def run_git(args: list[str], cwd: Path) -> subprocess.CompletedProcess:
     )
 
 
-def require_clean_auto_commit(repo_dir: Path, manifest: Manifest) -> None:
+def require_clean_auto_commit(repo_dir: Path, manifest: Manifest) -> list[Path]:
+    """Check docs/ only has changes left by an earlier, uncommitted sync.
+
+    Returns those leftover paths so this run commits them too: their manifest
+    entries are current, so this run would otherwise see them as cached and
+    never stage them.
+    """
     staged = run_git(["diff", "--cached", "--quiet"], repo_dir)
     if staged.returncode not in {0, 1}:
         raise SyncError(staged.stderr.strip() or "failed to inspect git index")
-    docs_status = run_git(["status", "--porcelain", "--", "docs"], repo_dir)
+    docs_status = run_git(
+        ["status", "--porcelain", "-z", "--untracked-files=all", "--", "docs"], repo_dir
+    )
     if docs_status.returncode != 0:
         raise SyncError(docs_status.stderr.strip() or "failed to inspect docs worktree")
     if staged.returncode == 1:
@@ -375,7 +433,8 @@ def require_clean_auto_commit(repo_dir: Path, manifest: Manifest) -> None:
     entries_by_path = {
         entry.get("local_path"): entry for entry in manifest.data.values()
     }
-    for line in docs_status.stdout.splitlines():
+    leftovers: list[Path] = []
+    for line in filter(None, docs_status.stdout.split("\0")):
         relative_path = line[3:]
         path = repo_dir / relative_path
         entry = entries_by_path.get(relative_path)
@@ -388,6 +447,8 @@ def require_clean_auto_commit(repo_dir: Path, manifest: Manifest) -> None:
                 "docs/ has changes not produced by a recoverable previous sync: "
                 f"{relative_path}"
             )
+        leftovers.append(path)
+    return leftovers
 
 
 def git_stage_and_count(repo_dir: Path, paths: list[Path]) -> int:
@@ -479,8 +540,8 @@ def process_url(
                 cache_entry = None
     result = fetch_page(url, timeout, cache_entry)
 
-    if result.source == "error":
-        return "error", f"{url}: {result.error}"
+    if result.source in {"error", "blocked"}:
+        return result.source, f"{url}: {result.error}"
 
     if result.source == "cached":
         return "cached_skip", url
@@ -621,8 +682,9 @@ def run_sync(args: argparse.Namespace) -> int:
     if not args.dry_run:
         STATE_DIR.mkdir(parents=True, exist_ok=True)
     manifest = Manifest(MANIFEST_PATH)
+    leftover_paths: list[Path] = []
     if args.commit and not args.dry_run:
-        require_clean_auto_commit(REPO_ROOT, manifest)
+        leftover_paths = require_clean_auto_commit(REPO_ROOT, manifest)
 
     print("Discovering guide sitemaps...", file=sys.stderr)
     guide_sitemaps = discover_guide_sitemaps(
@@ -641,6 +703,7 @@ def run_sync(args: argparse.Namespace) -> int:
 
     all_pages: list[str] = []
     discovery_errors = 0
+    retired_sitemaps = 0
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
         futures = {pool.submit(discover_pages, gs, args.timeout): gs for gs in guide_sitemaps}
         i = 0
@@ -648,6 +711,10 @@ def run_sync(args: argparse.Namespace) -> int:
             gs = futures[fut]
             try:
                 pages = fut.result()
+            except RetiredSitemap as e:
+                print(f"WARN: skipping retired guide: {e}", file=sys.stderr)
+                retired_sitemaps += 1
+                continue
             except (requests.RequestException, ElementTree.ParseError, SyncError) as e:
                 print(f"WARN: failed to read {gs}: {e}", file=sys.stderr)
                 discovery_errors += 1
@@ -659,6 +726,8 @@ def run_sync(args: argparse.Namespace) -> int:
                 print(f"  scanned {i}/{len(guide_sitemaps)} sitemaps, {len(all_pages)} pages so far", file=sys.stderr)
 
     all_pages = sorted(set(all_pages))
+    if retired_sitemaps:
+        print(f"Skipped {retired_sitemaps} retired guide sitemap(s).", file=sys.stderr)
     if discovery_errors:
         print(
             f"ERROR: discovery failed for {discovery_errors} sitemap(s); aborting sync",
@@ -688,6 +757,7 @@ def run_sync(args: argparse.Namespace) -> int:
             for url in all_pages
         }
         done = 0
+        consecutive_blocked = 0
         for fut in as_completed(futures):
             try:
                 kind, info = fut.result()
@@ -696,9 +766,19 @@ def run_sync(args: argparse.Namespace) -> int:
                 print(f"ERROR {futures[fut]}: {e}", file=sys.stderr)
                 done += 1
                 continue
-            if kind == "error":
+            consecutive_blocked = consecutive_blocked + 1 if kind == "blocked" else 0
+            if kind in {"error", "blocked"}:
                 stats.bump(errors=1)
                 print(f"ERROR {info}", file=sys.stderr)
+                if consecutive_blocked >= MAX_CONSECUTIVE_BLOCKED:
+                    print(
+                        f"ERROR: {consecutive_blocked} consecutive HTTP 403s; "
+                        "docs.aws.amazon.com appears to be rate-limiting this client. "
+                        "Aborting; retry later, with fewer --workers.",
+                        file=sys.stderr,
+                    )
+                    pool.shutdown(wait=True, cancel_futures=True)
+                    break
             elif kind == "written":
                 stats.bump(written=1)
                 changed_urls.append(info)
@@ -760,7 +840,7 @@ def run_sync(args: argparse.Namespace) -> int:
 
     if args.commit and not args.dry_run:
         # Only stage files this run may have updated, plus verified stale removals.
-        n = git_stage_and_count(REPO_ROOT, changed_paths + removed_paths)
+        n = git_stage_and_count(REPO_ROOT, changed_paths + removed_paths + leftover_paths)
         if n:
             msg = f"Sync AWS docs: {n} page(s) changed ({time.strftime('%Y-%m-%d')})"
             if git_commit(REPO_ROOT, msg):

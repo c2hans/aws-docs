@@ -48,11 +48,130 @@ class DiscoveryTests(unittest.TestCase):
             pages = sync.discover_pages("https://docs.aws.amazon.com/root.xml", 1)
         self.assertEqual(pages, ["https://docs.aws.amazon.com/guide/page.html"])
 
+    def test_empty_guide_sitemap_is_retired(self):
+        with mock.patch.object(sync, "fetch_xml_locs", return_value=("urlset", [])):
+            with self.assertRaises(sync.RetiredSitemap):
+                sync.discover_pages("https://docs.aws.amazon.com/root.xml", 1)
+
+    def test_skips_retired_child_sitemap(self):
+        def fetch(url, _):
+            if url.endswith("gone.xml"):
+                raise sync.RetiredSitemap("gone")
+            if url.endswith("root.xml"):
+                return "sitemapindex", [
+                    "https://docs.aws.amazon.com/gone.xml",
+                    "https://docs.aws.amazon.com/pages.xml",
+                ]
+            return "urlset", ["https://docs.aws.amazon.com/guide/page.html"]
+
+        with mock.patch.object(sync, "fetch_xml_locs", side_effect=fetch):
+            pages = sync.discover_pages("https://docs.aws.amazon.com/root.xml", 1)
+        self.assertEqual(pages, ["https://docs.aws.amazon.com/guide/page.html"])
+
     def test_rejects_sitemap_cycles(self):
         response = ("sitemapindex", ["https://docs.aws.amazon.com/root.xml"])
         with mock.patch.object(sync, "fetch_xml_locs", return_value=response):
             with self.assertRaises(sync.SyncError):
                 sync.discover_pages("https://docs.aws.amazon.com/root.xml", 1)
+
+
+def fake_response(status=200, body=b"", content_type="text/xml", location=None):
+    resp = mock.Mock(status_code=status, content=body)
+    resp.headers = {"Content-Type": content_type}
+    if location:
+        resp.headers["Location"] = location
+    resp.is_redirect = location is not None
+    if status >= 400:
+        resp.raise_for_status.side_effect = sync.requests.HTTPError(str(status))
+    return resp
+
+
+class FetchXmlLocsTests(unittest.TestCase):
+    URL = "https://docs.aws.amazon.com/guide/sitemap.xml"
+
+    def fetch(self, *responses):
+        fake_session = mock.Mock()
+        fake_session.get.side_effect = list(responses)
+        with mock.patch.object(sync, "session", return_value=fake_session):
+            return sync.fetch_xml_locs(self.URL, 1), fake_session
+
+    def test_accepts_https_namespace(self):
+        body = (
+            b'<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">'
+            b"<url><loc>https://docs.aws.amazon.com/guide/a.html</loc></url></urlset>"
+        )
+        (tag, locs), _ = self.fetch(fake_response(body=body))
+        self.assertEqual((tag, locs), ("urlset", ["https://docs.aws.amazon.com/guide/a.html"]))
+
+    def test_off_site_redirect_is_retired_without_fetching_it(self):
+        fake_session = mock.Mock()
+        fake_session.get.return_value = fake_response(
+            301, location="https://aws.amazon.com/solutions/"
+        )
+        with (
+            mock.patch.object(sync, "session", return_value=fake_session),
+            self.assertRaises(sync.RetiredSitemap),
+        ):
+            sync.fetch_xml_locs(self.URL, 1)
+        fake_session.get.assert_called_once()
+
+    def test_redirect_to_html_landing_page_is_retired(self):
+        with self.assertRaises(sync.RetiredSitemap):
+            self.fetch(
+                fake_response(301, location="https://docs.aws.amazon.com/other/"),
+                fake_response(body=b"<!DOCTYPE html>", content_type="text/html"),
+            )
+
+    def test_redirect_to_missing_page_is_retired(self):
+        with self.assertRaises(sync.RetiredSitemap):
+            self.fetch(
+                fake_response(301, location="/other/welcome.html"),
+                fake_response(404, content_type="text/html"),
+            )
+
+    def test_redirect_to_single_page_guide(self):
+        (tag, locs), _ = self.fetch(
+            fake_response(301, location="http://docs.aws.amazon.com:443/other/page.html"),
+            fake_response(body=b"<html/>", content_type="text/html"),
+        )
+        self.assertEqual((tag, locs), ("urlset", ["https://docs.aws.amazon.com/other/page.html"]))
+
+    def test_server_error_is_not_retired(self):
+        with self.assertRaises(sync.requests.HTTPError):
+            self.fetch(fake_response(503))
+
+    def test_unredirected_malformed_xml_is_not_retired(self):
+        with self.assertRaises(sync.ElementTree.ParseError):
+            self.fetch(fake_response(body=b"<html"))
+
+
+class AutoCommitTests(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.root = Path(self.tmp.name)
+        sync.run_git(["init", "-q"], self.root)
+        self.manifest = sync.Manifest(self.root / "manifest.json")
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def test_returns_leftover_pages_from_uncommitted_sync_in_new_directory(self):
+        path = self.root / "docs/new-guide/latest/page.md"
+        path.parent.mkdir(parents=True)
+        path.write_text("content\n")
+        self.manifest.data["https://docs.aws.amazon.com/new-guide/latest/page.html"] = {
+            "sha256": sync.sha256("content\n"),
+            "local_path": "docs/new-guide/latest/page.md",
+        }
+        leftovers = sync.require_clean_auto_commit(self.root, self.manifest)
+        self.assertEqual(leftovers, [path])
+
+    def test_rejects_hand_edited_docs(self):
+        path = self.root / "docs/guide/page.md"
+        path.parent.mkdir(parents=True)
+        path.write_text("hand edit\n")
+        with self.assertRaises(sync.SyncError):
+            sync.require_clean_auto_commit(self.root, self.manifest)
 
 
 class ManifestTests(unittest.TestCase):
