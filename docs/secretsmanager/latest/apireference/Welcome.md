@@ -56,4 +56,4 @@ We welcome your feedback. Send your comments to [awssecretsmanager-feedback@amaz
 
  AWS Secrets Manager supports AWS CloudTrail, a service that records AWS API calls for your AWS account and delivers log files to an Amazon S3 bucket. By using information that's collected by AWS CloudTrail, you can determine the requests successfully made to Secrets Manager, who made the request, when it was made, and so on. For more about AWS Secrets Manager and support for AWS CloudTrail, see [Logging AWS Secrets Manager Events with AWS CloudTrail](https://docs.aws.amazon.com/secretsmanager/latest/userguide/monitoring.html#monitoring_cloudtrail) in the * AWS Secrets Manager User Guide*. To learn more about CloudTrail, including enabling it and find your log files, see the [AWS CloudTrail User Guide](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/what_is_cloud_trail_top_level.html).
 
-This document was last published on October 2, 2026.
+This document was last published on October 5, 2026.

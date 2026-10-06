@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/building-a-virtual-car-showroo
 title: 'Guidance for Building a Virtual Car Showroom on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/building-a-virtual-car-showroom-on-aws/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # Guidance for Building a Virtual Car Showroom on AWS

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/healthimaging/index.html
 title: 'AWS HealthImaging Documentation'
 canonical_url: https://docs.aws.amazon.com/healthimaging/
 source: aws-documentation
-generated_on: 2026-10-03
+generated_on: 2026-10-05
 ---
 
 # AWS HealthImaging Documentation

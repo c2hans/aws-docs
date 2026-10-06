@@ -7,58 +7,181 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_UpdateP
 
 Updates an existing Region switch plan. You can modify the plan's description, workflows, execution role, recovery time objective, associated alarms, and triggers.
 
+## Request Syntax
+<a name="API_UpdatePlan_RequestSyntax"></a>
+
+```
+{
+   "arn": "{{string}}",
+   "associatedAlarms": {
+      "{{string}}" : {
+         "alarmType": "{{string}}",
+         "crossAccountRole": "{{string}}",
+         "externalId": "{{string}}",
+         "resourceIdentifier": "{{string}}"
+      }
+   },
+   "description": "{{string}}",
+   "executionRole": "{{string}}",
+   "recoveryTimeObjectiveMinutes": {{number}},
+   "reportConfiguration": {
+      "reportOutput": [
+         { ... }
+      ]
+   },
+   "triggers": [
+      {
+         "action": "{{string}}",
+         "conditions": [
+            {
+               "associatedAlarmName": "{{string}}",
+               "condition": "{{string}}"
+            }
+         ],
+         "description": "{{string}}",
+         "minDelayMinutesBetweenExecutions": {{number}},
+         "targetRegion": "{{string}}"
+      }
+   ],
+   "workflows": [
+      {
+         "steps": [
+            {
+               "description": "{{string}}",
+               "executionBlockConfiguration": { ... },
+               "executionBlockType": "{{string}}",
+               "name": "{{string}}"
+            }
+         ],
+         "workflowDescription": "{{string}}",
+         "workflowTargetAction": "{{string}}",
+         "workflowTargetRegion": "{{string}}"
+      }
+   ]
+}
+```
+
 ## Request Parameters
 <a name="API_UpdatePlan_RequestParameters"></a>
 
- ** arn **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [arn](#API_UpdatePlan_RequestSyntax) **   <a name="regionswitch-UpdatePlan-request-arn"></a>
 The Amazon Resource Name (ARN) of the plan.
 Type: String
 Pattern: `arn:aws[a-zA-Z-]*:arc-region-switch::[0-9]{12}:plan/([a-zA-Z0-9](?:[a-zA-Z0-9-]{0,30}[a-zA-Z0-9])?):([a-z0-9]{6})`
 Required: Yes
 
- ** associatedAlarms **
+ ** [associatedAlarms](#API_UpdatePlan_RequestSyntax) **   <a name="regionswitch-UpdatePlan-request-associatedAlarms"></a>
 The updated CloudWatch alarms associated with the plan.
 Type: String to [AssociatedAlarm](API_AssociatedAlarm.md) object map
 Required: No
 
- ** description **
+ ** [description](#API_UpdatePlan_RequestSyntax) **   <a name="regionswitch-UpdatePlan-request-description"></a>
 The updated description for the Region switch plan.
 Type: String
 Required: No
 
- ** executionRole **
+ ** [executionRole](#API_UpdatePlan_RequestSyntax) **   <a name="regionswitch-UpdatePlan-request-executionRole"></a>
 The updated IAM role ARN that grants Region switch the permissions needed to execute the plan steps.
 Type: String
 Pattern: `arn:aws[a-zA-Z0-9-]*:iam::[0-9]{12}:role/.+`
 Required: Yes
 
- ** recoveryTimeObjectiveMinutes **
+ ** [recoveryTimeObjectiveMinutes](#API_UpdatePlan_RequestSyntax) **   <a name="regionswitch-UpdatePlan-request-recoveryTimeObjectiveMinutes"></a>
 The updated target recovery time objective (RTO) in minutes for the plan.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 10080.
 Required: No
 
- ** reportConfiguration **
+ ** [reportConfiguration](#API_UpdatePlan_RequestSyntax) **   <a name="regionswitch-UpdatePlan-request-reportConfiguration"></a>
 The updated report configuration for the plan.
 Type: [ReportConfiguration](API_ReportConfiguration.md) object
 Required: No
 
- ** triggers **
+ ** [triggers](#API_UpdatePlan_RequestSyntax) **   <a name="regionswitch-UpdatePlan-request-triggers"></a>
 The updated conditions that can automatically trigger the execution of the plan.
 Type: Array of [Trigger](API_Trigger.md) objects
 Required: No
 
- ** workflows **
+ ** [workflows](#API_UpdatePlan_RequestSyntax) **   <a name="regionswitch-UpdatePlan-request-workflows"></a>
 The updated workflows for the Region switch plan.
 Type: Array of [Workflow](API_Workflow.md) objects
 Required: Yes
 
+## Response Syntax
+<a name="API_UpdatePlan_ResponseSyntax"></a>
+
+```
+{
+   "plan": {
+      "arn": "string",
+      "associatedAlarms": {
+         "string" : {
+            "alarmType": "string",
+            "crossAccountRole": "string",
+            "externalId": "string",
+            "resourceIdentifier": "string"
+         }
+      },
+      "description": "string",
+      "executionRole": "string",
+      "name": "string",
+      "owner": "string",
+      "primaryRegion": "string",
+      "recoveryApproach": "string",
+      "recoveryTimeObjectiveMinutes": number,
+      "regions": [ "string" ],
+      "reportConfiguration": {
+         "reportOutput": [
+            { ... }
+         ]
+      },
+      "triggers": [
+         {
+            "action": "string",
+            "conditions": [
+               {
+                  "associatedAlarmName": "string",
+                  "condition": "string"
+               }
+            ],
+            "description": "string",
+            "minDelayMinutesBetweenExecutions": number,
+            "targetRegion": "string"
+         }
+      ],
+      "updatedAt": number,
+      "version": "string",
+      "workflows": [
+         {
+            "steps": [
+               {
+                  "description": "string",
+                  "executionBlockConfiguration": { ... },
+                  "executionBlockType": "string",
+                  "name": "string"
+               }
+            ],
+            "workflowDescription": "string",
+            "workflowTargetAction": "string",
+            "workflowTargetRegion": "string"
+         }
+      ]
+   }
+}
+```
+
 ## Response Elements
 <a name="API_UpdatePlan_ResponseElements"></a>
 
-The following element is returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** plan **
+The following data is returned in JSON format by the service.
+
+ ** [plan](#API_UpdatePlan_ResponseSyntax) **   <a name="regionswitch-UpdatePlan-response-plan"></a>
 The details of the updated Region switch plan.
 Type: [Plan](API_Plan.md) object
 

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/privateca/index.html
 title: 'AWS Private Certificate Authority Documentation'
 canonical_url: https://docs.aws.amazon.com/privateca/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # AWS Private Certificate Authority Documentation

@@ -13,33 +13,69 @@ A simple way to create a dashboard using `PutDashboard` is to copy an existing d
 
 When you create a dashboard with `PutDashboard`, a good practice is to add a text widget at the top of the dashboard with a message that the dashboard was created by script and should not be changed in the console. This message could also point console users to the location of the `DashboardBody` script or the CloudFormation template used to create the dashboard.
 
+## Request Syntax
+<a name="API_PutDashboard_RequestSyntax"></a>
+
+```
+{
+   "DashboardBody": "{{string}}",
+   "DashboardName": "{{string}}",
+   "Tags": [
+      {
+         "Key": "{{string}}",
+         "Value": "{{string}}"
+      }
+   ]
+}
+```
+
 ## Request Parameters
 <a name="API_PutDashboard_RequestParameters"></a>
 
- ** DashboardBody **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [DashboardBody](#API_PutDashboard_RequestSyntax) **   <a name="ACW-PutDashboard-request-DashboardBody"></a>
 The detailed information about the dashboard in JSON format, including the widgets to include and their location on the dashboard. This parameter is required.
 For more information about the syntax, see [Dashboard Body Structure and Syntax](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Dashboard-Body-Structure.html).
 Type: String
 Required: Yes
 
- ** DashboardName **
+ ** [DashboardName](#API_PutDashboard_RequestSyntax) **   <a name="ACW-PutDashboard-request-DashboardName"></a>
 The name of the dashboard. If a dashboard with this name already exists, this call modifies that dashboard, replacing its current contents. Otherwise, a new dashboard is created. The maximum length is 255, and valid characters are A-Z, a-z, 0-9, "-", and "\_". This parameter is required.
 Type: String
 Required: Yes
 
- ** Tags **
+ ** [Tags](#API_PutDashboard_RequestSyntax) **   <a name="ACW-PutDashboard-request-Tags"></a>
 A list of key-value pairs to associate with the dashboard. You can associate as many as 50 tags with a dashboard.
 Tags can help you organize and categorize your dashboards. You can also use them to scope user permissions by granting a user permission to access or change only dashboards with certain tag values.
 You can use this parameter only when creating a new dashboard. If you specify `Tags` when updating an existing dashboard, the tag updates are ignored. To add or update tags on an existing dashboard, use [TagResource](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_TagResource.html). To remove tags, use [UntagResource](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_UntagResource.html).
 Type: Array of [Tag](API_Tag.md) objects
 Required: No
 
+## Response Syntax
+<a name="API_PutDashboard_ResponseSyntax"></a>
+
+```
+{
+   "DashboardValidationMessages": [
+      {
+         "DataPath": "string",
+         "Message": "string"
+      }
+   ]
+}
+```
+
 ## Response Elements
 <a name="API_PutDashboard_ResponseElements"></a>
 
-The following element is returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** DashboardValidationMessages **
+The following data is returned in JSON format by the service.
+
+ ** [DashboardValidationMessages](#API_PutDashboard_ResponseSyntax) **   <a name="ACW-PutDashboard-response-DashboardValidationMessages"></a>
 If the input for `PutDashboard` was correct and the dashboard was successfully created or modified, this result is empty.
 If this result includes only warning messages, then the input was valid enough for the dashboard to be created or modified, but some elements of the dashboard might not render.
 If this result includes error messages, the input was not valid and the operation failed.

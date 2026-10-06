@@ -30,33 +30,61 @@ To use this operation, you must be signed on with the `cloudwatch:PutCompositeAl
 
 If you are an IAM user, you must have `iam:CreateServiceLinkedRole` to create a composite alarm that has Systems Manager OpsItem actions.
 
+## Request Syntax
+<a name="API_PutCompositeAlarm_RequestSyntax"></a>
+
+```
+{
+   "ActionsEnabled": {{boolean}},
+   "ActionsSuppressor": "{{string}}",
+   "ActionsSuppressorExtensionPeriod": {{number}},
+   "ActionsSuppressorWaitPeriod": {{number}},
+   "AlarmActions": [ "{{string}}" ],
+   "AlarmDescription": "{{string}}",
+   "AlarmName": "{{string}}",
+   "AlarmRule": "{{string}}",
+   "InsufficientDataActions": [ "{{string}}" ],
+   "OKActions": [ "{{string}}" ],
+   "Tags": [
+      {
+         "Key": "{{string}}",
+         "Value": "{{string}}"
+      }
+   ]
+}
+```
+
 ## Request Parameters
 <a name="API_PutCompositeAlarm_RequestParameters"></a>
 
- ** ActionsEnabled **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [ActionsEnabled](#API_PutCompositeAlarm_RequestSyntax) **   <a name="ACW-PutCompositeAlarm-request-ActionsEnabled"></a>
 Indicates whether actions should be executed during any changes to the alarm state of the composite alarm. The default is `TRUE`.
 Type: Boolean
 Required: No
 
- ** ActionsSuppressor **
+ ** [ActionsSuppressor](#API_PutCompositeAlarm_RequestSyntax) **   <a name="ACW-PutCompositeAlarm-request-ActionsSuppressor"></a>
  Actions will be suppressed if the suppressor alarm is in the `ALARM` state. `ActionsSuppressor` can be an AlarmName or an Amazon Resource Name (ARN) from an existing alarm.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1600.
 Required: No
 
- ** ActionsSuppressorExtensionPeriod **
+ ** [ActionsSuppressorExtensionPeriod](#API_PutCompositeAlarm_RequestSyntax) **   <a name="ACW-PutCompositeAlarm-request-ActionsSuppressorExtensionPeriod"></a>
  The maximum time in seconds that the composite alarm waits after suppressor alarm goes out of the `ALARM` state. After this time, the composite alarm performs its actions.
  `ExtensionPeriod` is required only when `ActionsSuppressor` is specified.
 Type: Integer
 Required: No
 
- ** ActionsSuppressorWaitPeriod **
+ ** [ActionsSuppressorWaitPeriod](#API_PutCompositeAlarm_RequestSyntax) **   <a name="ACW-PutCompositeAlarm-request-ActionsSuppressorWaitPeriod"></a>
  The maximum time in seconds that the composite alarm waits for the suppressor alarm to go into the `ALARM` state. After this time, the composite alarm performs its actions.
  `WaitPeriod` is required only when `ActionsSuppressor` is specified.
 Type: Integer
 Required: No
 
- ** AlarmActions **
+ ** [AlarmActions](#API_PutCompositeAlarm_RequestSyntax) **   <a name="ACW-PutCompositeAlarm-request-AlarmActions"></a>
 The actions to execute when this alarm transitions to the `ALARM` state from any other state. Each action is specified as an Amazon Resource Name (ARN).
 Valid Values: ]
  **Amazon SNS actions:**
@@ -74,19 +102,19 @@ Array Members: Maximum number of 5 items.
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
- ** AlarmDescription **
+ ** [AlarmDescription](#API_PutCompositeAlarm_RequestSyntax) **   <a name="ACW-PutCompositeAlarm-request-AlarmDescription"></a>
 The description for the composite alarm.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1024.
 Required: No
 
- ** AlarmName **
+ ** [AlarmName](#API_PutCompositeAlarm_RequestSyntax) **   <a name="ACW-PutCompositeAlarm-request-AlarmName"></a>
 The name for the composite alarm. This name must be unique within the Region.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes
 
- ** AlarmRule **
+ ** [AlarmRule](#API_PutCompositeAlarm_RequestSyntax) **   <a name="ACW-PutCompositeAlarm-request-AlarmRule"></a>
 An expression that specifies which other alarms are to be evaluated to determine this composite alarm's state. For each alarm that you reference, you designate a function that specifies whether that alarm needs to be in ALARM state, OK state, or INSUFFICIENT\_DATA state. You can use operators (AND, OR and NOT) to combine multiple functions in a single expression. You can use parenthesis to logically group the functions in your expression.
 You can use either alarm names or ARNs to reference the other alarms that are to be evaluated.
 Functions can include the following:
@@ -106,7 +134,7 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 10240.
 Required: Yes
 
- ** InsufficientDataActions **
+ ** [InsufficientDataActions](#API_PutCompositeAlarm_RequestSyntax) **   <a name="ACW-PutCompositeAlarm-request-InsufficientDataActions"></a>
 The actions to execute when this alarm transitions to the `INSUFFICIENT_DATA` state from any other state. Each action is specified as an Amazon Resource Name (ARN).
 Valid Values: ]
  **Amazon SNS actions:**
@@ -120,7 +148,7 @@ Array Members: Maximum number of 5 items.
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
- ** OKActions **
+ ** [OKActions](#API_PutCompositeAlarm_RequestSyntax) **   <a name="ACW-PutCompositeAlarm-request-OKActions"></a>
 The actions to execute when this alarm transitions to an `OK` state from any other state. Each action is specified as an Amazon Resource Name (ARN).
 Valid Values: ]
  **Amazon SNS actions:**
@@ -134,12 +162,17 @@ Array Members: Maximum number of 5 items.
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
- ** Tags **
+ ** [Tags](#API_PutCompositeAlarm_RequestSyntax) **   <a name="ACW-PutCompositeAlarm-request-Tags"></a>
 A list of key-value pairs to associate with the alarm. You can associate as many as 50 tags with an alarm. To be able to associate tags with the alarm when you create the alarm, you must have the `cloudwatch:TagResource` permission.
 Tags can help you organize and categorize your resources. You can also use them to scope user permissions by granting a user permission to access or change only resources with certain tag values.
 If you are using this operation to update an existing alarm, any tags you specify in this parameter are ignored. To change the tags of an existing alarm, use [TagResource](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_TagResource.html) or [UntagResource](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_UntagResource.html).
 Type: Array of [Tag](API_Tag.md) objects
 Required: No
+
+## Response Elements
+<a name="API_PutCompositeAlarm_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
 
 ## Errors
 <a name="API_PutCompositeAlarm_Errors"></a>

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com//solutions/automotive-data-platform-on-a
 title: 'Guidance for Automotive Data Platform on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/automotive-data-platform-on-aws/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # Guidance for Automotive Data Platform on AWS

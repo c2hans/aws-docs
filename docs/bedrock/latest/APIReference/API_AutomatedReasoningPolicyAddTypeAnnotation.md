@@ -21,7 +21,7 @@ Required: Yes
 The name of the new custom type. This name will be used to reference the type in variable definitions and rules.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `[A-Za-z][A-Za-z0-9_]*`
+Pattern: `\p{L}[\p{L}\p{M}0-9_]*( [\p{L}\p{M}0-9_]+)*`
 Required: Yes
 
  ** values **   <a name="bedrock-Type-AutomatedReasoningPolicyAddTypeAnnotation-values"></a>

@@ -21,45 +21,82 @@ For example, If you want to allow a user to create mute rules that target only s
 
 You can also use IAM policy conditions to allow targeting alarms based on resource tags. For example, you can restrict users to create/update mute rules to only target alarms that have a specific tag key-value pair, such as `Team=TeamA`.
 
+## Request Syntax
+<a name="API_PutAlarmMuteRule_RequestSyntax"></a>
+
+```
+{
+   "Description": "{{string}}",
+   "ExpireDate": {{number}},
+   "MuteTargets": {
+      "AlarmNames": [ "{{string}}" ]
+   },
+   "Name": "{{string}}",
+   "Rule": {
+      "Schedule": {
+         "Duration": "{{string}}",
+         "Expression": "{{string}}",
+         "Timezone": "{{string}}"
+      }
+   },
+   "StartDate": {{number}},
+   "Tags": [
+      {
+         "Key": "{{string}}",
+         "Value": "{{string}}"
+      }
+   ]
+}
+```
+
 ## Request Parameters
 <a name="API_PutAlarmMuteRule_RequestParameters"></a>
 
- ** Description **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [Description](#API_PutAlarmMuteRule_RequestSyntax) **   <a name="ACW-PutAlarmMuteRule-request-Description"></a>
 A description of the alarm mute rule that helps you identify its purpose.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1024.
 Required: No
 
- ** ExpireDate **
+ ** [ExpireDate](#API_PutAlarmMuteRule_RequestSyntax) **   <a name="ACW-PutAlarmMuteRule-request-ExpireDate"></a>
 The date and time when the mute rule expires and is no longer evaluated, specified as a timestamp in ISO 8601 format (for example, `2026-12-31T23:59:59Z`). After this time, the rule status becomes EXPIRED and will no longer mute the targeted alarms.
 Type: Timestamp
 Required: No
 
- ** MuteTargets **
+ ** [MuteTargets](#API_PutAlarmMuteRule_RequestSyntax) **   <a name="ACW-PutAlarmMuteRule-request-MuteTargets"></a>
 Specifies which alarms this rule applies to.
 Type: [MuteTargets](API_MuteTargets.md) object
 Required: No
 
- ** Name **
+ ** [Name](#API_PutAlarmMuteRule_RequestSyntax) **   <a name="ACW-PutAlarmMuteRule-request-Name"></a>
 The name of the alarm mute rule. This name must be unique within your AWS account and region.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes
 
- ** Rule **
+ ** [Rule](#API_PutAlarmMuteRule_RequestSyntax) **   <a name="ACW-PutAlarmMuteRule-request-Rule"></a>
 The configuration that defines when and how long alarms should be muted.
 Type: [Rule](API_Rule.md) object
 Required: Yes
 
- ** StartDate **
+ ** [StartDate](#API_PutAlarmMuteRule_RequestSyntax) **   <a name="ACW-PutAlarmMuteRule-request-StartDate"></a>
 The date and time after which the mute rule takes effect, specified as a timestamp in ISO 8601 format (for example, `2026-04-15T08:00:00Z`). If not specified, the mute rule takes effect immediately upon creation and the mutes are applied as per the schedule expression.
 Type: Timestamp
 Required: No
 
- ** Tags **
+ ** [Tags](#API_PutAlarmMuteRule_RequestSyntax) **   <a name="ACW-PutAlarmMuteRule-request-Tags"></a>
 A list of key-value pairs to associate with the alarm mute rule. You can use tags to categorize and manage your mute rules.
 Type: Array of [Tag](API_Tag.md) objects
 Required: No
+
+## Response Elements
+<a name="API_PutAlarmMuteRule_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
 
 ## Errors
 <a name="API_PutAlarmMuteRule_Errors"></a>

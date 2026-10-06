@@ -7,10 +7,34 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 
 Lists the anomaly detection models that you have created in your account. For single metric anomaly detectors, you can list all of the models in your account or filter the results to only the models that are related to a certain namespace, metric name, or metric dimension. For metric math anomaly detectors, you can list them by adding `METRIC_MATH` to the `AnomalyDetectorTypes` array. This will return all metric math anomaly detectors in your account.
 
+## Request Syntax
+<a name="API_DescribeAnomalyDetectors_RequestSyntax"></a>
+
+```
+{
+   "AnomalyDetectorIds": [ "{{string}}" ],
+   "AnomalyDetectorTypes": [ "{{string}}" ],
+   "Dimensions": [
+      {
+         "Name": "{{string}}",
+         "Value": "{{string}}"
+      }
+   ],
+   "MaxResults": {{number}},
+   "MetricName": "{{string}}",
+   "Namespace": "{{string}}",
+   "NextToken": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_DescribeAnomalyDetectors_RequestParameters"></a>
 
- ** AnomalyDetectorIds **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [AnomalyDetectorIds](#API_DescribeAnomalyDetectors_RequestSyntax) **   <a name="ACW-DescribeAnomalyDetectors-request-AnomalyDetectorIds"></a>
 Specifies the unique identifiers of the anomaly detectors to describe. You can specify up to 50 identifiers. If you specify this parameter, you cannot also specify the `Namespace`, `MetricName`, `Dimensions`, or `AnomalyDetectorTypes` metric filters.
 Type: Array of strings
 Array Members: Maximum number of 50 items.
@@ -18,54 +42,131 @@ Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `[A-Za-z0-9_./:%()+-]+`
 Required: No
 
- ** AnomalyDetectorTypes **
+ ** [AnomalyDetectorTypes](#API_DescribeAnomalyDetectors_RequestSyntax) **   <a name="ACW-DescribeAnomalyDetectors-request-AnomalyDetectorTypes"></a>
 The anomaly detector types to request when using `DescribeAnomalyDetectorsInput`. If empty, defaults to `SINGLE_METRIC`.
 Type: Array of strings
 Array Members: Maximum number of 2 items.
 Valid Values: `SINGLE_METRIC | METRIC_MATH`
 Required: No
 
- ** Dimensions **
+ ** [Dimensions](#API_DescribeAnomalyDetectors_RequestSyntax) **   <a name="ACW-DescribeAnomalyDetectors-request-Dimensions"></a>
 Limits the results to only the anomaly detection models that are associated with the specified metric dimensions. If there are multiple metrics that have these dimensions and have anomaly detection models associated, they're all returned.
 Type: Array of [Dimension](API_Dimension.md) objects
 Array Members: Maximum number of 30 items.
 Required: No
 
- ** MaxResults **
+ ** [MaxResults](#API_DescribeAnomalyDetectors_RequestSyntax) **   <a name="ACW-DescribeAnomalyDetectors-request-MaxResults"></a>
 The maximum number of results to return in one operation. The maximum value that you can specify is 100.
 To retrieve the remaining results, make another call with the returned `NextToken` value.
 Type: Integer
 Valid Range: Minimum value of 1.
 Required: No
 
- ** MetricName **
+ ** [MetricName](#API_DescribeAnomalyDetectors_RequestSyntax) **   <a name="ACW-DescribeAnomalyDetectors-request-MetricName"></a>
 Limits the results to only the anomaly detection models that are associated with the specified metric name. If there are multiple metrics with this name in different namespaces that have anomaly detection models, they're all returned.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: No
 
- ** Namespace **
+ ** [Namespace](#API_DescribeAnomalyDetectors_RequestSyntax) **   <a name="ACW-DescribeAnomalyDetectors-request-Namespace"></a>
 Limits the results to only the anomaly detection models that are associated with the specified namespace.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[^:].*`
 Required: No
 
- ** NextToken **
+ ** [NextToken](#API_DescribeAnomalyDetectors_RequestSyntax) **   <a name="ACW-DescribeAnomalyDetectors-request-NextToken"></a>
 Use the token returned by the previous operation to request the next page of results.
 Type: String
 Required: No
 
+## Response Syntax
+<a name="API_DescribeAnomalyDetectors_ResponseSyntax"></a>
+
+```
+{
+   "AnomalyDetectors": [
+      {
+         "AnomalyDetectorId": "string",
+         "Configuration": {
+            "ExcludedTimeRanges": [
+               {
+                  "EndTime": number,
+                  "StartTime": number
+               }
+            ],
+            "MetricTimezone": "string"
+         },
+         "Dimensions": [
+            {
+               "Name": "string",
+               "Value": "string"
+            }
+         ],
+         "MetricCharacteristics": {
+            "PeriodicSpikes": boolean
+         },
+         "MetricMathAnomalyDetector": {
+            "MetricDataQueries": [
+               {
+                  "AccountId": "string",
+                  "Expression": "string",
+                  "Id": "string",
+                  "Label": "string",
+                  "MetricStat": {
+                     "Metric": {
+                        "Dimensions": [
+                           {
+                              "Name": "string",
+                              "Value": "string"
+                           }
+                        ],
+                        "MetricName": "string",
+                        "Namespace": "string"
+                     },
+                     "Period": number,
+                     "Stat": "string",
+                     "Unit": "string"
+                  },
+                  "Period": number,
+                  "ReturnData": boolean
+               }
+            ]
+         },
+         "MetricName": "string",
+         "Namespace": "string",
+         "SingleMetricAnomalyDetector": {
+            "AccountId": "string",
+            "Dimensions": [
+               {
+                  "Name": "string",
+                  "Value": "string"
+               }
+            ],
+            "MetricName": "string",
+            "Namespace": "string",
+            "Stat": "string"
+         },
+         "Stat": "string",
+         "StateValue": "string"
+      }
+   ],
+   "NextToken": "string"
+}
+```
+
 ## Response Elements
 <a name="API_DescribeAnomalyDetectors_ResponseElements"></a>
 
-The following elements are returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** AnomalyDetectors **
+The following data is returned in JSON format by the service.
+
+ ** [AnomalyDetectors](#API_DescribeAnomalyDetectors_ResponseSyntax) **   <a name="ACW-DescribeAnomalyDetectors-response-AnomalyDetectors"></a>
 The list of anomaly detection models returned by the operation.
 Type: Array of [AnomalyDetector](API_AnomalyDetector.md) objects
 
- ** NextToken **
+ ** [NextToken](#API_DescribeAnomalyDetectors_ResponseSyntax) **   <a name="ACW-DescribeAnomalyDetectors-response-NextToken"></a>
 A token that you can use in a subsequent operation to retrieve the next set of results.
 Type: String
 

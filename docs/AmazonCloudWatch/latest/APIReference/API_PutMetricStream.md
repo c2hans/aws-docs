@@ -22,33 +22,79 @@ When you use `PutMetricStream` to create a new metric stream, the stream is crea
 
 If you are using CloudWatch cross-account observability and you create a metric stream in a monitoring account, you can choose whether to include metrics from source accounts in the stream. For more information, see [CloudWatch cross-account observability](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Unified-Cross-Account.html).
 
+## Request Syntax
+<a name="API_PutMetricStream_RequestSyntax"></a>
+
+```
+{
+   "ExcludeFilters": [
+      {
+         "MetricNames": [ "{{string}}" ],
+         "Namespace": "{{string}}"
+      }
+   ],
+   "FirehoseArn": "{{string}}",
+   "IncludeFilters": [
+      {
+         "MetricNames": [ "{{string}}" ],
+         "Namespace": "{{string}}"
+      }
+   ],
+   "IncludeLinkedAccountsMetrics": {{boolean}},
+   "Name": "{{string}}",
+   "OutputFormat": "{{string}}",
+   "RoleArn": "{{string}}",
+   "StatisticsConfigurations": [
+      {
+         "AdditionalStatistics": [ "{{string}}" ],
+         "IncludeMetrics": [
+            {
+               "MetricName": "{{string}}",
+               "Namespace": "{{string}}"
+            }
+         ]
+      }
+   ],
+   "Tags": [
+      {
+         "Key": "{{string}}",
+         "Value": "{{string}}"
+      }
+   ]
+}
+```
+
 ## Request Parameters
 <a name="API_PutMetricStream_RequestParameters"></a>
 
- ** ExcludeFilters **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [ExcludeFilters](#API_PutMetricStream_RequestSyntax) **   <a name="ACW-PutMetricStream-request-ExcludeFilters"></a>
 If you specify this parameter, the stream sends metrics from all metric namespaces except for the namespaces that you specify here.
 You cannot include `ExcludeFilters` and `IncludeFilters` in the same operation.
 Type: Array of [MetricStreamFilter](API_MetricStreamFilter.md) objects
 Required: No
 
- ** FirehoseArn **
+ ** [FirehoseArn](#API_PutMetricStream_RequestSyntax) **   <a name="ACW-PutMetricStream-request-FirehoseArn"></a>
 The ARN of the Amazon Kinesis Data Firehose delivery stream to use for this metric stream. This Amazon Kinesis Data Firehose delivery stream must already exist and must be in the same account as the metric stream.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: Yes
 
- ** IncludeFilters **
+ ** [IncludeFilters](#API_PutMetricStream_RequestSyntax) **   <a name="ACW-PutMetricStream-request-IncludeFilters"></a>
 If you specify this parameter, the stream sends only the metrics from the metric namespaces that you specify here.
 You cannot include `IncludeFilters` and `ExcludeFilters` in the same operation.
 Type: Array of [MetricStreamFilter](API_MetricStreamFilter.md) objects
 Required: No
 
- ** IncludeLinkedAccountsMetrics **
+ ** [IncludeLinkedAccountsMetrics](#API_PutMetricStream_RequestSyntax) **   <a name="ACW-PutMetricStream-request-IncludeLinkedAccountsMetrics"></a>
 If you are creating a metric stream in a monitoring account, specify `true` to include metrics from source accounts in the metric stream.
 Type: Boolean
 Required: No
 
- ** Name **
+ ** [Name](#API_PutMetricStream_RequestSyntax) **   <a name="ACW-PutMetricStream-request-Name"></a>
 If you are creating a new metric stream, this is the name for the new stream. The name must be different than the names of other metric streams in this account and Region.
 If you are updating a metric stream, specify the name of that stream here.
 Valid characters are A-Z, a-z, 0-9, "-" and "\_".
@@ -56,14 +102,14 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes
 
- ** OutputFormat **
+ ** [OutputFormat](#API_PutMetricStream_RequestSyntax) **   <a name="ACW-PutMetricStream-request-OutputFormat"></a>
 The output format for the stream. Valid values are `json`, `opentelemetry1.0`, and `opentelemetry0.7`. For more information about metric stream output formats, see [ Metric streams output formats](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-metric-streams-formats.html).
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Valid Values: `json | opentelemetry0.7 | opentelemetry1.0`
 Required: Yes
 
- ** RoleArn **
+ ** [RoleArn](#API_PutMetricStream_RequestSyntax) **   <a name="ACW-PutMetricStream-request-RoleArn"></a>
 The ARN of an IAM role that this metric stream will use to access Amazon Kinesis Data Firehose resources. This IAM role must already exist and must be in the same account as the metric stream. This IAM role must include the following permissions:
 + firehose:PutRecord
 + firehose:PutRecordBatch
@@ -71,25 +117,36 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: Yes
 
- ** StatisticsConfigurations **
+ ** [StatisticsConfigurations](#API_PutMetricStream_RequestSyntax) **   <a name="ACW-PutMetricStream-request-StatisticsConfigurations"></a>
 By default, a metric stream always sends the `MAX`, `MIN`, `SUM`, and `SAMPLECOUNT` statistics for each metric that is streamed. You can use this parameter to have the metric stream also send additional statistics in the stream. This array can have up to 100 members.
 For each entry in this array, you specify one or more metrics and the list of additional statistics to stream for those metrics. The additional statistics that you can stream depend on the stream's `OutputFormat`. If the `OutputFormat` is `json`, you can stream any additional statistic that is supported by CloudWatch, listed in [ CloudWatch statistics definitions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Statistics-definitions.html). If the `OutputFormat` is `opentelemetry1.0` or `opentelemetry0.7`, you can stream percentile statistics such as p95, p99.9, and so on.
 Type: Array of [MetricStreamStatisticsConfiguration](API_MetricStreamStatisticsConfiguration.md) objects
 Required: No
 
- ** Tags **
+ ** [Tags](#API_PutMetricStream_RequestSyntax) **   <a name="ACW-PutMetricStream-request-Tags"></a>
 A list of key-value pairs to associate with the metric stream. You can associate as many as 50 tags with a metric stream.
 Tags can help you organize and categorize your resources. You can also use them to scope user permissions by granting a user permission to access or change only resources with certain tag values.
 You can use this parameter only when you are creating a new metric stream. If you are using this operation to update an existing metric stream, any tags you specify in this parameter are ignored. To change the tags of an existing metric stream, use [TagResource](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_TagResource.html) or [UntagResource](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_UntagResource.html).
 Type: Array of [Tag](API_Tag.md) objects
 Required: No
 
+## Response Syntax
+<a name="API_PutMetricStream_ResponseSyntax"></a>
+
+```
+{
+   "Arn": "string"
+}
+```
+
 ## Response Elements
 <a name="API_PutMetricStream_ResponseElements"></a>
 
-The following element is returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** Arn **
+The following data is returned in JSON format by the service.
+
+ ** [Arn](#API_PutMetricStream_ResponseSyntax) **   <a name="ACW-PutMetricStream-response-Arn"></a>
 The ARN of the metric stream.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.

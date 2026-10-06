@@ -25,22 +25,94 @@ CloudWatch needs raw data points to calculate percentile statistics. If you publ
 + The `SampleCount` value of the statistic set is 1 and `Min`, `Max`, and `Sum` are all equal.
 + The `Min` and `Max` are equal, and `Sum` is equal to `Min` multiplied by `SampleCount`.
 
+## Request Syntax
+<a name="API_PutMetricData_RequestSyntax"></a>
+
+```
+{
+   "EntityMetricData": [
+      {
+         "Entity": {
+            "Attributes": {
+               "{{string}}" : "{{string}}"
+            },
+            "KeyAttributes": {
+               "{{string}}" : "{{string}}"
+            }
+         },
+         "MetricData": [
+            {
+               "Counts": [ {{number}} ],
+               "Dimensions": [
+                  {
+                     "Name": "{{string}}",
+                     "Value": "{{string}}"
+                  }
+               ],
+               "MetricName": "{{string}}",
+               "StatisticValues": {
+                  "Maximum": {{number}},
+                  "Minimum": {{number}},
+                  "SampleCount": {{number}},
+                  "Sum": {{number}}
+               },
+               "StorageResolution": {{number}},
+               "Timestamp": {{number}},
+               "Unit": "{{string}}",
+               "Value": {{number}},
+               "Values": [ {{number}} ]
+            }
+         ]
+      }
+   ],
+   "MetricData": [
+      {
+         "Counts": [ {{number}} ],
+         "Dimensions": [
+            {
+               "Name": "{{string}}",
+               "Value": "{{string}}"
+            }
+         ],
+         "MetricName": "{{string}}",
+         "StatisticValues": {
+            "Maximum": {{number}},
+            "Minimum": {{number}},
+            "SampleCount": {{number}},
+            "Sum": {{number}}
+         },
+         "StorageResolution": {{number}},
+         "Timestamp": {{number}},
+         "Unit": "{{string}}",
+         "Value": {{number}},
+         "Values": [ {{number}} ]
+      }
+   ],
+   "Namespace": "{{string}}",
+   "StrictEntityValidation": {{boolean}}
+}
+```
+
 ## Request Parameters
 <a name="API_PutMetricData_RequestParameters"></a>
 
- ** EntityMetricData **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [EntityMetricData](#API_PutMetricData_RequestSyntax) **   <a name="ACW-PutMetricData-request-EntityMetricData"></a>
 Data for metrics that contain associated entity information. You can include up to two `EntityMetricData` objects, each of which can contain a single `Entity` and associated metrics.
 The limit of metrics allowed, 1000, is the sum of both `EntityMetricData` and `MetricData` metrics.
 Type: Array of [EntityMetricData](API_EntityMetricData.md) objects
 Required: No
 
- ** MetricData **
+ ** [MetricData](#API_PutMetricData_RequestSyntax) **   <a name="ACW-PutMetricData-request-MetricData"></a>
 The data for the metrics. Use this parameter if your metrics do not contain associated entities. The array can include no more than 1000 metrics per call.
 The limit of metrics allowed, 1000, is the sum of both `EntityMetricData` and `MetricData` metrics.
 Type: Array of [MetricDatum](API_MetricDatum.md) objects
 Required: No
 
- ** Namespace **
+ ** [Namespace](#API_PutMetricData_RequestSyntax) **   <a name="ACW-PutMetricData-request-Namespace"></a>
 The namespace for the metric data. You can use ASCII characters for the namespace, except for control characters which are not supported.
 To avoid conflicts with AWS service namespaces, you should not specify a namespace that begins with `AWS/`
 Type: String
@@ -48,7 +120,7 @@ Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[^:].*`
 Required: Yes
 
- ** StrictEntityValidation **
+ ** [StrictEntityValidation](#API_PutMetricData_RequestSyntax) **   <a name="ACW-PutMetricData-request-StrictEntityValidation"></a>
 Whether to accept valid metric data when an invalid entity is sent.
 + When set to `true`: Any validation error (for entity or metric data) will fail the entire request, and no data will be ingested. The failed operation will return a 400 result with the error.
 + When set to `false`: Validation errors in the entity will not associate the metric with the entity, but the metric data will still be accepted and ingested. Validation errors in the metric data will fail the entire request, and no data will be ingested.
@@ -65,6 +137,11 @@ Whether to accept valid metric data when an invalid entity is sent.
 This parameter is *required* when `EntityMetricData` is included.
 Type: Boolean
 Required: No
+
+## Response Elements
+<a name="API_PutMetricData_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
 
 ## Errors
 <a name="API_PutMetricData_Errors"></a>

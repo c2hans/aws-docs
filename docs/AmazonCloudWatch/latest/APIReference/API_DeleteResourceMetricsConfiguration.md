@@ -11,15 +11,33 @@ This operation returns a `ResourceNotFoundException` if no resource metrics conf
 
 To delete a resource metrics configuration, you must have the `cloudwatch:DeleteResourceMetricsConfiguration` permission. For information about scoping this permission to specific resources, see [Condition keys for resource metrics configuration access](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/iam-cw-condition-keys-resource-arn.html) in the *Amazon CloudWatch User Guide*.
 
+## Request Syntax
+<a name="API_DeleteResourceMetricsConfiguration_RequestSyntax"></a>
+
+```
+{
+   "ResourceArn": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_DeleteResourceMetricsConfiguration_RequestParameters"></a>
 
- ** ResourceArn **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [ResourceArn](#API_DeleteResourceMetricsConfiguration_RequestSyntax) **   <a name="ACW-DeleteResourceMetricsConfiguration-request-ResourceArn"></a>
 The Amazon Resource Name (ARN) of the AWS resource to delete the resource metrics configuration for.
 Type: String
 Length Constraints: Minimum length of 20. Maximum length of 2048.
 Pattern: `arn:[a-zA-Z0-9-]+:[a-zA-Z0-9-]+:[a-zA-Z0-9-]*:\d{12}:.+`
 Required: Yes
+
+## Response Elements
+<a name="API_DeleteResourceMetricsConfiguration_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
 
 ## Errors
 <a name="API_DeleteResourceMetricsConfiguration_Errors"></a>

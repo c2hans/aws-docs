@@ -9,10 +9,26 @@ Add new tags to the specified resource.
 
 Currently this only supports [Connection](API_Connection.md) resources.
 
+## Request Syntax
+<a name="API_TagResource_RequestSyntax"></a>
+
+```
+{
+   "arn": "{{string}}",
+   "tags": {
+      "{{string}}" : "{{string}}"
+   }
+}
+```
+
 ## Request Parameters
 <a name="API_TagResource_RequestParameters"></a>
 
- ** arn **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [arn](#API_TagResource_RequestSyntax) **   <a name="interconnect-TagResource-request-arn"></a>
 The ARN of the resource that should receive the new tags.
 Currently this must be an ARN for a [Connection](API_Connection.md) resource.
 Type: String
@@ -20,12 +36,17 @@ Length Constraints: Minimum length of 59. Maximum length of 150.
 Pattern: `arn:aws[a-z-]*:interconnect:[^:]+:[0-9]{12}:connection/(mcc|lmcc)-[a-z0-9]{8}`
 Required: Yes
 
- ** tags **
+ ** [tags](#API_TagResource_RequestSyntax) **   <a name="interconnect-TagResource-request-tags"></a>
 A map of tags to apply to the specified resource.
 Type: String to string map
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
 Value Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: Yes
+
+## Response Elements
+<a name="API_TagResource_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
 
 ## Errors
 <a name="API_TagResource_Errors"></a>

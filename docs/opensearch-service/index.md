@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/opensearch-service/index.html
 title: 'Amazon OpenSearch Service Documentation'
 canonical_url: https://docs.aws.amazon.com/opensearch-service/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # Amazon OpenSearch Service Documentation

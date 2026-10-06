@@ -1208,6 +1208,7 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/poli
 + [AWSSavingsPlansReadOnlyAccess](AWSSavingsPlansReadOnlyAccess.md)
 + [AWSSDMPServiceRolePolicy](AWSSDMPServiceRolePolicy.md)
 + [AWSSecretsManagerClientReadOnlyAccess](AWSSecretsManagerClientReadOnlyAccess.md)
++ [AWSSecurityAgentContinuousPentestPolicy](AWSSecurityAgentContinuousPentestPolicy.md)
 + [AWSSecurityAgentServiceRolePolicy](AWSSecurityAgentServiceRolePolicy.md)
 + [AWSSecurityAgentWebAppPolicy](AWSSecurityAgentWebAppPolicy.md)
 + [AWSSecurityHubFullAccess](AWSSecurityHubFullAccess.md)

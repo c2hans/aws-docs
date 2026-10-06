@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/deploying-a-supply-chain-data-
 title: 'Guidance for Deploying a Supply Chain Data Hub on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/deploying-a-supply-chain-data-hub-on-aws/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # Guidance for Deploying a Supply Chain Data Hub on AWS

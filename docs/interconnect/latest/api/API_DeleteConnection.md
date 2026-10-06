@@ -9,27 +9,70 @@ Deletes an existing [Connection](API_Connection.md) with the supplied identifier
 
 This operation will also inform the remote partner of your intention to delete your connection. Note, the partner may still require you to delete to fully clean up resources, but the network connectivity provided by the [Connection](API_Connection.md) will cease to exist.
 
+## Request Syntax
+<a name="API_DeleteConnection_RequestSyntax"></a>
+
+```
+{
+   "clientToken": "{{string}}",
+   "identifier": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_DeleteConnection_RequestParameters"></a>
 
- ** clientToken **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [clientToken](#API_DeleteConnection_RequestSyntax) **   <a name="interconnect-DeleteConnection-request-clientToken"></a>
 Idempotency token used for the request.
 Type: String
 Required: No
 
- ** identifier **
+ ** [identifier](#API_DeleteConnection_RequestSyntax) **   <a name="interconnect-DeleteConnection-request-identifier"></a>
 The identifier of the [Connection](API_Connection.md) to be deleted.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 32.
 Pattern: `(mcc|lmcc)-[a-z0-9]{8}`
 Required: Yes
 
+## Response Syntax
+<a name="API_DeleteConnection_ResponseSyntax"></a>
+
+```
+{
+   "connection": {
+      "activationKey": "string",
+      "arn": "string",
+      "attachPoint": { ... },
+      "bandwidth": "string",
+      "billingTier": number,
+      "description": "string",
+      "environmentId": "string",
+      "id": "string",
+      "location": "string",
+      "ownerAccount": "string",
+      "provider": { ... },
+      "sharedId": "string",
+      "state": "string",
+      "tags": {
+         "string" : "string"
+      },
+      "type": "string"
+   }
+}
+```
+
 ## Response Elements
 <a name="API_DeleteConnection_ResponseElements"></a>
 
-The following element is returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** connection **
+The following data is returned in JSON format by the service.
+
+ ** [connection](#API_DeleteConnection_ResponseSyntax) **   <a name="interconnect-DeleteConnection-response-connection"></a>
 The [Connection](API_Connection.md) object that has been marked for deletion.
 Type: [Connection](API_Connection.md) object
 

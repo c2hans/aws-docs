@@ -47,7 +47,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 The ARN of your Gemini API key on AgentCore Identity.
 *Required*: Yes
 *Type*: String
-*Pattern*: `^arn:aws:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:token-vault/[a-zA-Z0-9-.]+/apikeycredentialprovider/[a-zA-Z0-9-.]+$`
+*Pattern*: `^arn:aws(-[^:]+)?:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:token-vault/[a-zA-Z0-9-.]+/apikeycredentialprovider/[a-zA-Z0-9-.]+$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `MaxTokens`  <a name="cfn-bedrockagentcore-harness-harnessgeminimodelconfig-maxtokens"></a>

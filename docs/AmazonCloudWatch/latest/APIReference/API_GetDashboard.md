@@ -11,28 +11,54 @@ To copy an existing dashboard, use `GetDashboard`, and then use the data returne
 
 You might have recently enabled an [opt-in Region (Region that is disabled by default)](https://docs.aws.amazon.com/glossary/latest/reference/glos-chap.html#optinregion) for your account. In that Region, `GetDashboard` can return an access denied error for up to 24 hours after you enable the Region. This delay occurs while dashboard data propagates. The error does not indicate a problem with your permissions. Because dashboards are global, you can call `GetDashboard` in any other enabled Region, or retry after propagation completes.
 
+## Request Syntax
+<a name="API_GetDashboard_RequestSyntax"></a>
+
+```
+{
+   "DashboardName": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_GetDashboard_RequestParameters"></a>
 
- ** DashboardName **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [DashboardName](#API_GetDashboard_RequestSyntax) **   <a name="ACW-GetDashboard-request-DashboardName"></a>
 The name of the dashboard to be described.
 Type: String
 Required: Yes
 
+## Response Syntax
+<a name="API_GetDashboard_ResponseSyntax"></a>
+
+```
+{
+   "DashboardArn": "string",
+   "DashboardBody": "string",
+   "DashboardName": "string"
+}
+```
+
 ## Response Elements
 <a name="API_GetDashboard_ResponseElements"></a>
 
-The following elements are returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** DashboardArn **
+The following data is returned in JSON format by the service.
+
+ ** [DashboardArn](#API_GetDashboard_ResponseSyntax) **   <a name="ACW-GetDashboard-response-DashboardArn"></a>
 The Amazon Resource Name (ARN) of the dashboard.
 Type: String
 
- ** DashboardBody **
+ ** [DashboardBody](#API_GetDashboard_ResponseSyntax) **   <a name="ACW-GetDashboard-response-DashboardBody"></a>
 The detailed information about the dashboard, including what widgets are included and their location on the dashboard. For more information about the `DashboardBody` syntax, see [Dashboard Body Structure and Syntax](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Dashboard-Body-Structure.html).
 Type: String
 
- ** DashboardName **
+ ** [DashboardName](#API_GetDashboard_ResponseSyntax) **   <a name="ACW-GetDashboard-response-DashboardName"></a>
 The name of the dashboard.
 Type: String
 

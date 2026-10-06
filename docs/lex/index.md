@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/lex/index.html
 title: 'Amazon Lex Documentation'
 canonical_url: https://docs.aws.amazon.com/lex/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # Amazon Lex Documentation

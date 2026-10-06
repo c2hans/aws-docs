@@ -9,30 +9,65 @@ Returns a list of all the Contributor Insights rules in your account.
 
 For more information about Contributor Insights, see [Using Contributor Insights to Analyze High-Cardinality Data](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ContributorInsights.html).
 
+## Request Syntax
+<a name="API_DescribeInsightRules_RequestSyntax"></a>
+
+```
+{
+   "MaxResults": {{number}},
+   "NextToken": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_DescribeInsightRules_RequestParameters"></a>
 
- ** MaxResults **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [MaxResults](#API_DescribeInsightRules_RequestSyntax) **   <a name="ACW-DescribeInsightRules-request-MaxResults"></a>
 The maximum number of results to return in one operation. If you omit this parameter, the default of 500 is used.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 500.
 Required: No
 
- ** NextToken **
+ ** [NextToken](#API_DescribeInsightRules_RequestSyntax) **   <a name="ACW-DescribeInsightRules-request-NextToken"></a>
 Include this value, if it was returned by the previous operation, to get the next set of rules.
 Type: String
 Required: No
 
+## Response Syntax
+<a name="API_DescribeInsightRules_ResponseSyntax"></a>
+
+```
+{
+   "InsightRules": [
+      {
+         "ApplyOnTransformedLogs": boolean,
+         "Definition": "string",
+         "ManagedRule": boolean,
+         "Name": "string",
+         "Schema": "string",
+         "State": "string"
+      }
+   ],
+   "NextToken": "string"
+}
+```
+
 ## Response Elements
 <a name="API_DescribeInsightRules_ResponseElements"></a>
 
-The following elements are returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** InsightRules **
+The following data is returned in JSON format by the service.
+
+ ** [InsightRules](#API_DescribeInsightRules_ResponseSyntax) **   <a name="ACW-DescribeInsightRules-response-InsightRules"></a>
 The rules returned by the operation.
 Type: Array of [InsightRule](API_InsightRule.md) objects
 
- ** NextToken **
+ ** [NextToken](#API_DescribeInsightRules_ResponseSyntax) **   <a name="ACW-DescribeInsightRules-response-NextToken"></a>
 If this parameter is present, it is a token that marks the start of the next batch of returned results.
 Type: String
 

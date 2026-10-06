@@ -7,36 +7,78 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_List
 
 Retrieves a list of instance types supported by Amazon WorkSpaces Instances, enabling precise workspace infrastructure configuration.
 
+## Request Syntax
+<a name="API_ListInstanceTypes_RequestSyntax"></a>
+
+```
+{
+   "InstanceConfigurationFilter": {
+      "BillingMode": "{{string}}",
+      "PlatformType": "{{string}}",
+      "Tenancy": "{{string}}"
+   },
+   "MaxResults": {{number}},
+   "NextToken": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_ListInstanceTypes_RequestParameters"></a>
 
- ** InstanceConfigurationFilter **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [InstanceConfigurationFilter](#API_ListInstanceTypes_RequestSyntax) **   <a name="workspacesinstances-ListInstanceTypes-request-InstanceConfigurationFilter"></a>
 Optional filter to narrow instance type results based on configuration requirements. Only returns instance types that support the specified combination of tenancy, platform type, and billing mode.
 Type: [InstanceConfigurationFilter](API_InstanceConfigurationFilter.md) object
 Required: No
 
- ** MaxResults **
+ ** [MaxResults](#API_ListInstanceTypes_RequestSyntax) **   <a name="workspacesinstances-ListInstanceTypes-request-MaxResults"></a>
 Maximum number of instance types to return in a single API call. Enables pagination of instance type results.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 600.
 Required: No
 
- ** NextToken **
+ ** [NextToken](#API_ListInstanceTypes_RequestSyntax) **   <a name="workspacesinstances-ListInstanceTypes-request-NextToken"></a>
 Pagination token for retrieving subsequent pages of instance type results.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Required: No
 
+## Response Syntax
+<a name="API_ListInstanceTypes_ResponseSyntax"></a>
+
+```
+{
+   "InstanceTypes": [
+      {
+         "InstanceType": "string",
+         "SupportedInstanceConfigurations": [
+            {
+               "BillingMode": "string",
+               "PlatformType": "string",
+               "Tenancy": "string"
+            }
+         ]
+      }
+   ],
+   "NextToken": "string"
+}
+```
+
 ## Response Elements
 <a name="API_ListInstanceTypes_ResponseElements"></a>
 
-The following elements are returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** InstanceTypes **
+The following data is returned in JSON format by the service.
+
+ ** [InstanceTypes](#API_ListInstanceTypes_ResponseSyntax) **   <a name="workspacesinstances-ListInstanceTypes-response-InstanceTypes"></a>
 Collection of supported instance types for WorkSpaces Instances.
 Type: Array of [InstanceTypeInfo](API_InstanceTypeInfo.md) objects
 
- ** NextToken **
+ ** [NextToken](#API_ListInstanceTypes_ResponseSyntax) **   <a name="workspacesinstances-ListInstanceTypes-response-NextToken"></a>
 Token for retrieving additional instance types if the result set is paginated.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.

@@ -9,36 +9,58 @@ Approves a step in a plan execution that requires manual approval. When you crea
 
 You must specify the plan ARN, execution ID, step name, and approval status. You can also provide an optional comment explaining the approval decision.
 
+## Request Syntax
+<a name="API_ApprovePlanExecutionStep_RequestSyntax"></a>
+
+```
+{
+   "approval": "{{string}}",
+   "comment": "{{string}}",
+   "executionId": "{{string}}",
+   "planArn": "{{string}}",
+   "stepName": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_ApprovePlanExecutionStep_RequestParameters"></a>
 
- ** approval **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [approval](#API_ApprovePlanExecutionStep_RequestSyntax) **   <a name="regionswitch-ApprovePlanExecutionStep-request-approval"></a>
 The status of approval for a plan execution step.
 Type: String
 Valid Values: `approve | decline`
 Required: Yes
 
- ** comment **
+ ** [comment](#API_ApprovePlanExecutionStep_RequestSyntax) **   <a name="regionswitch-ApprovePlanExecutionStep-request-comment"></a>
 A comment that you can enter about a plan execution.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1024.
 Required: No
 
- ** executionId **
+ ** [executionId](#API_ApprovePlanExecutionStep_RequestSyntax) **   <a name="regionswitch-ApprovePlanExecutionStep-request-executionId"></a>
 The execution identifier of a plan execution.
 Type: String
 Required: Yes
 
- ** planArn **
+ ** [planArn](#API_ApprovePlanExecutionStep_RequestSyntax) **   <a name="regionswitch-ApprovePlanExecutionStep-request-planArn"></a>
 The Amazon Resource Name (ARN) of the plan.
 Type: String
 Pattern: `arn:aws[a-zA-Z-]*:arc-region-switch::[0-9]{12}:plan/([a-zA-Z0-9](?:[a-zA-Z0-9-]{0,30}[a-zA-Z0-9])?):([a-z0-9]{6})`
 Required: Yes
 
- ** stepName **
+ ** [stepName](#API_ApprovePlanExecutionStep_RequestSyntax) **   <a name="regionswitch-ApprovePlanExecutionStep-request-stepName"></a>
 The name of a step in a plan execution.
 Type: String
 Required: Yes
+
+## Response Elements
+<a name="API_ApprovePlanExecutionStep_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
 
 ## Errors
 <a name="API_ApprovePlanExecutionStep_Errors"></a>

@@ -9,22 +9,53 @@ Permanently deletes the specified Contributor Insights rules.
 
 If you create a rule, delete it, and then re-create it with the same name, historical data from the first time the rule was created might not be available.
 
+## Request Syntax
+<a name="API_DeleteInsightRules_RequestSyntax"></a>
+
+```
+{
+   "RuleNames": [ "{{string}}" ]
+}
+```
+
 ## Request Parameters
 <a name="API_DeleteInsightRules_RequestParameters"></a>
 
- ** RuleNames **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [RuleNames](#API_DeleteInsightRules_RequestSyntax) **   <a name="ACW-DeleteInsightRules-request-RuleNames"></a>
 An array of the rule names to delete. If you need to find out the names of your rules, use [DescribeInsightRules](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_DescribeInsightRules.html).
 Type: Array of strings
 Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `[\x20-\x7E]+`
 Required: Yes
 
+## Response Syntax
+<a name="API_DeleteInsightRules_ResponseSyntax"></a>
+
+```
+{
+   "Failures": [
+      {
+         "ExceptionType": "string",
+         "FailureCode": "string",
+         "FailureDescription": "string",
+         "FailureResource": "string"
+      }
+   ]
+}
+```
+
 ## Response Elements
 <a name="API_DeleteInsightRules_ResponseElements"></a>
 
-The following element is returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** Failures **
+The following data is returned in JSON format by the service.
+
+ ** [Failures](#API_DeleteInsightRules_ResponseSyntax) **   <a name="ACW-DeleteInsightRules-response-Failures"></a>
 An array listing the rules that could not be deleted. You cannot delete built-in rules.
 Type: Array of [PartialFailure](API_PartialFailure.md) objects
 

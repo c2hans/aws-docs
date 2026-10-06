@@ -101,6 +101,11 @@ The reasoning behind the finding, explaining why it was identified as a vulnerab
 Type: String
 Required: No
 
+ ** remediationCode **   <a name="securityagent-Type-Finding-remediationCode"></a>
+The suggested fix for the finding, describing the changes recommended to remediate the vulnerability, with example code or configuration.
+Type: String
+Required: No
+
  ** revalidationJobIds **   <a name="securityagent-Type-Finding-revalidationJobIds"></a>
 The list of pentest job identifiers for revalidation jobs that retested this finding.
 Type: Array of strings

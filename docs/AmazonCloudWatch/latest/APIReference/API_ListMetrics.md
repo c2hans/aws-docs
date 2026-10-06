@@ -15,66 +15,114 @@ If you are using CloudWatch cross-account observability, you can use this operat
 
  `ListMetrics` doesn't return information about metrics if those metrics haven't reported data in the past two weeks. To retrieve those metrics, use [GetMetricData](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_GetMetricData.html) or [GetMetricStatistics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_GetMetricStatistics.html).
 
+## Request Syntax
+<a name="API_ListMetrics_RequestSyntax"></a>
+
+```
+{
+   "Dimensions": [
+      {
+         "Name": "{{string}}",
+         "Value": "{{string}}"
+      }
+   ],
+   "IncludeLinkedAccounts": {{boolean}},
+   "MetricName": "{{string}}",
+   "Namespace": "{{string}}",
+   "NextToken": "{{string}}",
+   "OwningAccount": "{{string}}",
+   "RecentlyActive": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_ListMetrics_RequestParameters"></a>
 
- ** Dimensions **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [Dimensions](#API_ListMetrics_RequestSyntax) **   <a name="ACW-ListMetrics-request-Dimensions"></a>
 The dimensions to filter against. Only the dimension with names that match exactly will be returned. If you specify one dimension name and a metric has that dimension and also other dimensions, it will be returned.
 Type: Array of [DimensionFilter](API_DimensionFilter.md) objects
 Array Members: Maximum number of 10 items.
 Required: No
 
- ** IncludeLinkedAccounts **
+ ** [IncludeLinkedAccounts](#API_ListMetrics_RequestSyntax) **   <a name="ACW-ListMetrics-request-IncludeLinkedAccounts"></a>
 If you are using this operation in a monitoring account, specify `true` to include metrics from source accounts in the returned data.
 The default is `false`.
 Type: Boolean
 Required: No
 
- ** MetricName **
+ ** [MetricName](#API_ListMetrics_RequestSyntax) **   <a name="ACW-ListMetrics-request-MetricName"></a>
 The name of the metric to filter against. Only the metrics with names that match exactly will be returned.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: No
 
- ** Namespace **
+ ** [Namespace](#API_ListMetrics_RequestSyntax) **   <a name="ACW-ListMetrics-request-Namespace"></a>
 The metric namespace to filter against. Only the namespace that matches exactly will be returned.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[^:].*`
 Required: No
 
- ** NextToken **
+ ** [NextToken](#API_ListMetrics_RequestSyntax) **   <a name="ACW-ListMetrics-request-NextToken"></a>
 The token returned by a previous call to indicate that there is more data available.
 Type: String
 Required: No
 
- ** OwningAccount **
+ ** [OwningAccount](#API_ListMetrics_RequestSyntax) **   <a name="ACW-ListMetrics-request-OwningAccount"></a>
 When you use this operation in a monitoring account, use this field to return metrics only from one source account. To do so, specify that source account ID in this field, and also specify `true` for `IncludeLinkedAccounts`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: No
 
- ** RecentlyActive **
+ ** [RecentlyActive](#API_ListMetrics_RequestSyntax) **   <a name="ACW-ListMetrics-request-RecentlyActive"></a>
 To filter the results to show only metrics that have had data points published in the past three hours, specify this parameter with a value of `PT3H`. This is the only valid value for this parameter.
 The results that are returned are an approximation of the value you specify. There is a low probability that the returned results include metrics with last published data as much as 50 minutes more than the specified time interval.
 Type: String
 Valid Values: `PT3H`
 Required: No
 
+## Response Syntax
+<a name="API_ListMetrics_ResponseSyntax"></a>
+
+```
+{
+   "Metrics": [
+      {
+         "Dimensions": [
+            {
+               "Name": "string",
+               "Value": "string"
+            }
+         ],
+         "MetricName": "string",
+         "Namespace": "string"
+      }
+   ],
+   "NextToken": "string",
+   "OwningAccounts": [ "string" ]
+}
+```
+
 ## Response Elements
 <a name="API_ListMetrics_ResponseElements"></a>
 
-The following elements are returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** Metrics **
+The following data is returned in JSON format by the service.
+
+ ** [Metrics](#API_ListMetrics_ResponseSyntax) **   <a name="ACW-ListMetrics-response-Metrics"></a>
 The metrics that match your request.
 Type: Array of [Metric](API_Metric.md) objects
 
- ** NextToken **
+ ** [NextToken](#API_ListMetrics_ResponseSyntax) **   <a name="ACW-ListMetrics-response-NextToken"></a>
 The token that marks the start of the next batch of returned results.
 Type: String
 
- ** OwningAccounts **
+ ** [OwningAccounts](#API_ListMetrics_ResponseSyntax) **   <a name="ACW-ListMetrics-response-OwningAccounts"></a>
 If you are using this operation in a monitoring account, this array contains the account IDs of the source accounts where the metrics in the returned data are from.
 This field is a 1:1 mapping between each metric that is returned and the ID of the owning account.
 Type: Array of strings

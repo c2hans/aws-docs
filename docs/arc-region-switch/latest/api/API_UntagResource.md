@@ -7,21 +7,40 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_UntagRe
 
 Removes tags from a Region switch resource.
 
+## Request Syntax
+<a name="API_UntagResource_RequestSyntax"></a>
+
+```
+{
+   "arn": "{{string}}",
+   "resourceTagKeys": [ "{{string}}" ]
+}
+```
+
 ## Request Parameters
 <a name="API_UntagResource_RequestParameters"></a>
 
- ** arn **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [arn](#API_UntagResource_RequestSyntax) **   <a name="regionswitch-UntagResource-request-arn"></a>
 The Amazon Resource Name (ARN) for a tag you remove a resource from.
 Type: String
 Pattern: `arn:aws[a-zA-Z-]*:arc-region-switch::[0-9]{12}:plan/([a-zA-Z0-9](?:[a-zA-Z0-9-]{0,30}[a-zA-Z0-9])?):([a-z0-9]{6})`
 Required: Yes
 
- ** resourceTagKeys **
+ ** [resourceTagKeys](#API_UntagResource_RequestSyntax) **   <a name="regionswitch-UntagResource-request-resourceTagKeys"></a>
 Tag keys that you remove from a resource.
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 200 items.
 Length Constraints: Minimum length of 1. Maximum length of 128.
 Required: Yes
+
+## Response Elements
+<a name="API_UntagResource_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
 
 ## Errors
 <a name="API_UntagResource_Errors"></a>

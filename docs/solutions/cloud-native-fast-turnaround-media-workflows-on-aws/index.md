@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com//solutions/cloud-native-fast-turnaround-
 title: 'Guidance for Cloud-Native Fast-Turnaround Media Workflows on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/cloud-native-fast-turnaround-media-workflows-on-aws/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # Guidance for Cloud-Native Fast-Turnaround Media Workflows on AWS

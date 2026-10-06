@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/multi-agent-orchestration-on-a
 title: 'Guidance for Multi-Agent Orchestration on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/multi-agent-orchestration-on-aws/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # Guidance for Multi-Agent Orchestration on AWS

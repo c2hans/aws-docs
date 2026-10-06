@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/ingesting-amazon-vendor-centra
 title: 'Guidance for Ingesting Amazon Vendor Central and Amazon Ads Data on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/ingesting-amazon-vendor-central-and-amazon-ads-data-on-aws/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # Guidance for Ingesting Amazon Vendor Central and Amazon Ads Data on AWS

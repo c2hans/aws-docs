@@ -14,4 +14,4 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ## Anonymized data collection
 <a name="anonymized-data-collection"></a>
 
-This Guidance does not currently emit anonymized operational metrics.
+This Guidance does not emit anonymized operational metrics.

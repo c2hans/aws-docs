@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/keyspaces/index.html
 title: 'Amazon Keyspaces (for Apache Cassandra) Documentation'
 canonical_url: https://docs.aws.amazon.com/keyspaces/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # Amazon Keyspaces (for Apache Cassandra) Documentation

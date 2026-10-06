@@ -7,15 +7,33 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 
 Starts the streaming of metrics for one or more of your metric streams.
 
+## Request Syntax
+<a name="API_StartMetricStreams_RequestSyntax"></a>
+
+```
+{
+   "Names": [ "{{string}}" ]
+}
+```
+
 ## Request Parameters
 <a name="API_StartMetricStreams_RequestParameters"></a>
 
- ** Names **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [Names](#API_StartMetricStreams_RequestSyntax) **   <a name="ACW-StartMetricStreams-request-Names"></a>
 The array of the names of metric streams to start streaming.
 This is an "all or nothing" operation. If you do not have permission to access all of the metric streams that you list here, then none of the streams that you list in the operation will start streaming.
 Type: Array of strings
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes
+
+## Response Elements
+<a name="API_StartMetricStreams_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
 
 ## Errors
 <a name="API_StartMetricStreams_Errors"></a>

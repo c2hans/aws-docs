@@ -7,22 +7,51 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_List
 
 Retrieves tags for a WorkSpace Instance.
 
+## Request Syntax
+<a name="API_ListTagsForResource_RequestSyntax"></a>
+
+```
+{
+   "WorkspaceInstanceId": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_ListTagsForResource_RequestParameters"></a>
 
- ** WorkspaceInstanceId **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [WorkspaceInstanceId](#API_ListTagsForResource_RequestSyntax) **   <a name="workspacesinstances-ListTagsForResource-request-WorkspaceInstanceId"></a>
 Unique identifier of the WorkSpace Instance.
 Type: String
 Length Constraints: Minimum length of 15. Maximum length of 70.
 Pattern: `wsinst-[0-9a-zA-Z]{8,63}`
 Required: Yes
 
+## Response Syntax
+<a name="API_ListTagsForResource_ResponseSyntax"></a>
+
+```
+{
+   "Tags": [
+      {
+         "Key": "string",
+         "Value": "string"
+      }
+   ]
+}
+```
+
 ## Response Elements
 <a name="API_ListTagsForResource_ResponseElements"></a>
 
-The following element is returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** Tags **
+The following data is returned in JSON format by the service.
+
+ ** [Tags](#API_ListTagsForResource_ResponseSyntax) **   <a name="workspacesinstances-ListTagsForResource-response-Tags"></a>
 Collection of tags associated with the WorkSpace Instance.
 Type: Array of [Tag](API_Tag.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 50 items.

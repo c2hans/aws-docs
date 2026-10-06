@@ -231,12 +231,16 @@ def discover_pages(sitemap_url: str, timeout: float) -> list[str]:
     if not pages:
         raise RetiredSitemap(f"sitemap contains no pages: {sitemap_url}")
     base_host = urlparse(BASE).netloc
+    # Some entries carry tracking parameters (e.g. a retired guide's sitemap
+    # redirecting to "page.html?pg=...&refid=..."). The page, and its .md
+    # export, are the same without them, so keep only the canonical URL.
+    parsed_pages = [urlparse(p)._replace(query="", fragment="") for p in pages]
     return [
-        p
-        for p in pages
-        if urlparse(p).path.endswith(".html")
-        and urlparse(p).scheme == "https"
-        and urlparse(p).netloc == base_host
+        urlunparse(p)
+        for p in parsed_pages
+        if p.path.endswith(".html")
+        and p.scheme == "https"
+        and p.netloc == base_host
     ]
 
 

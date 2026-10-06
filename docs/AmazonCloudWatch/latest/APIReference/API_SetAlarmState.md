@@ -13,33 +13,54 @@ If you use `SetAlarmState` on a composite alarm, the composite alarm is not guar
 
 If an alarm triggers EC2 Auto Scaling policies or application Auto Scaling policies, you must include information in the `StateReasonData` parameter to enable the policy to take the correct action.
 
+## Request Syntax
+<a name="API_SetAlarmState_RequestSyntax"></a>
+
+```
+{
+   "AlarmName": "{{string}}",
+   "StateReason": "{{string}}",
+   "StateReasonData": "{{string}}",
+   "StateValue": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_SetAlarmState_RequestParameters"></a>
 
- ** AlarmName **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [AlarmName](#API_SetAlarmState_RequestSyntax) **   <a name="ACW-SetAlarmState-request-AlarmName"></a>
 The name of the alarm.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes
 
- ** StateReason **
+ ** [StateReason](#API_SetAlarmState_RequestSyntax) **   <a name="ACW-SetAlarmState-request-StateReason"></a>
 The reason that this alarm is set to this specific state, in text format.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1023.
 Required: Yes
 
- ** StateReasonData **
+ ** [StateReasonData](#API_SetAlarmState_RequestSyntax) **   <a name="ACW-SetAlarmState-request-StateReasonData"></a>
 The reason that this alarm is set to this specific state, in JSON format.
 For SNS or EC2 alarm actions, this is just informational. But for EC2 Auto Scaling or application Auto Scaling alarm actions, the Auto Scaling policy uses the information in this field to take the correct action.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 4000.
 Required: No
 
- ** StateValue **
+ ** [StateValue](#API_SetAlarmState_RequestSyntax) **   <a name="ACW-SetAlarmState-request-StateValue"></a>
 The value of the state.
 Type: String
 Valid Values: `OK | ALARM | INSUFFICIENT_DATA`
 Required: Yes
+
+## Response Elements
+<a name="API_SetAlarmState_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
 
 ## Errors
 <a name="API_SetAlarmState_Errors"></a>

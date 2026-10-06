@@ -14,7 +14,7 @@ Provides detailed fidelity analysis for a specific policy variable, including wh
 The name of the policy variable being analyzed in this report.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `[A-Za-z][A-Za-z0-9_]*`
+Pattern: `\p{L}[\p{L}\p{M}0-9_]*( [\p{L}\p{M}0-9_]+)*`
 Required: Yes
 
  ** accuracyJustification **   <a name="bedrock-Type-AutomatedReasoningPolicyVariableReport-accuracyJustification"></a>

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/digital-twin-framework-on-aws/
 title: 'Guidance for Digital Twin Framework on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/digital-twin-framework-on-aws/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # Guidance for Digital Twin Framework on AWS

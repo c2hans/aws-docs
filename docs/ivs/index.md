@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/ivs/index.html
 title: 'Amazon Interactive Video Service Documentation'
 canonical_url: https://docs.aws.amazon.com/ivs/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # Amazon Interactive Video Service Documentation

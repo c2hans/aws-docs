@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/blockchain-templates/index.html
 title: 'AWS Blockchain Templates Documentation'
 canonical_url: https://docs.aws.amazon.com/blockchain-templates/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # AWS Blockchain Templates Documentation

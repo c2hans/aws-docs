@@ -23,8 +23,11 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Properties" : {
       "[ApprovalConfiguration](#cfn-agentregistry-registry-approvalconfiguration)" : {{ApprovalConfiguration}},
       "[AuthorizerType](#cfn-agentregistry-registry-authorizertype)" : {{String}},
+      "[AutoDetectionEnabled](#cfn-agentregistry-registry-autodetectionenabled)" : {{Boolean}},
+      "[AutoDetectionScope](#cfn-agentregistry-registry-autodetectionscope)" : {{String}},
       "[Description](#cfn-agentregistry-registry-description)" : {{String}},
       "[DiscoveryConfiguration](#cfn-agentregistry-registry-discoveryconfiguration)" : {{DiscoveryConfiguration}},
+      "[EncryptionConfiguration](#cfn-agentregistry-registry-encryptionconfiguration)" : {{EncryptionConfiguration}},
       "[Name](#cfn-agentregistry-registry-name)" : {{String}},
       "[Tags](#cfn-agentregistry-registry-tags)" : {{[ Tag, ... ]}}
     }
@@ -40,9 +43,13 @@ Properties:
   [ApprovalConfiguration](#cfn-agentregistry-registry-approvalconfiguration): {{
     ApprovalConfiguration}}
   [AuthorizerType](#cfn-agentregistry-registry-authorizertype): {{String}}
+  [AutoDetectionEnabled](#cfn-agentregistry-registry-autodetectionenabled): {{Boolean}}
+  [AutoDetectionScope](#cfn-agentregistry-registry-autodetectionscope): {{String}}
   [Description](#cfn-agentregistry-registry-description): {{String}}
   [DiscoveryConfiguration](#cfn-agentregistry-registry-discoveryconfiguration): {{
     DiscoveryConfiguration}}
+  [EncryptionConfiguration](#cfn-agentregistry-registry-encryptionconfiguration): {{
+    EncryptionConfiguration}}
   [Name](#cfn-agentregistry-registry-name): {{String}}
   [Tags](#cfn-agentregistry-registry-tags): {{
     - Tag}}
@@ -64,6 +71,19 @@ The type of authorizer that controls how consumers access the registry's search 
 *Allowed values*: `CUSTOM_JWT | AWS_IAM`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
+`AutoDetectionEnabled`  <a name="cfn-agentregistry-registry-autodetectionenabled"></a>
+Property description not available.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`AutoDetectionScope`  <a name="cfn-agentregistry-registry-autodetectionscope"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `ORGANIZATION`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `Description`  <a name="cfn-agentregistry-registry-description"></a>
 The description of the registry.
 *Required*: No
@@ -77,6 +97,12 @@ The discovery configuration for the registry. It controls how consumers are auth
 *Required*: No
 *Type*: [DiscoveryConfiguration](aws-properties-agentregistry-registry-discoveryconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`EncryptionConfiguration`  <a name="cfn-agentregistry-registry-encryptionconfiguration"></a>
+The server-side encryption configuration for the registry. Appears only when a customer-managed AWS KMS key encrypts the registry.
+*Required*: No
+*Type*: [EncryptionConfiguration](aws-properties-agentregistry-registry-encryptionconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Name`  <a name="cfn-agentregistry-registry-name"></a>
 The name of the registry.
@@ -115,6 +141,9 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 
 ####
 <a name="aws-resource-agentregistry-registry-return-values-fn--getatt-fn--getatt"></a>
+
+`AutoDetectionStatus`  <a name="AutoDetectionStatus-fn::getatt"></a>
+The current auto-detection status. `ACTIVE` indicates that the registry is actively being populated with detected resources. `INACTIVE` indicates that the preconditions required at the configured scope are not currently met.
 
 `CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The timestamp when the registry was created.

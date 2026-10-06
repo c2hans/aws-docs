@@ -14,7 +14,7 @@ Represents a modification to a value within an existing custom type.
 The current identifier or name of the type value to update.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `[A-Za-z][A-Za-z0-9_]*`
+Pattern: `\p{L}[\p{L}\p{M}0-9_]*( [\p{L}\p{M}0-9_]+)*`
 Required: Yes
 
  ** description **   <a name="bedrock-Type-AutomatedReasoningPolicyUpdateTypeValue-description"></a>
@@ -28,7 +28,7 @@ Required: No
 The new identifier or name for the type value, if you want to rename it.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `[A-Za-z][A-Za-z0-9_]*`
+Pattern: `\p{L}[\p{L}\p{M}0-9_]*( [\p{L}\p{M}0-9_]+)*`
 Required: No
 
 ## See Also

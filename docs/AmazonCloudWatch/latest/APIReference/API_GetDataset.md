@@ -11,34 +11,60 @@ Only the `default` dataset is supported. The `default` dataset is implicit for e
 
 To associate a customer managed KMS key with a dataset, use [AssociateDatasetKmsKey](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_AssociateDatasetKmsKey.html). To remove the association, use [DisassociateDatasetKmsKey](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_DisassociateDatasetKmsKey.html).
 
+## Request Syntax
+<a name="API_GetDataset_RequestSyntax"></a>
+
+```
+{
+   "DatasetIdentifier": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_GetDataset_RequestParameters"></a>
 
- ** DatasetIdentifier **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [DatasetIdentifier](#API_GetDataset_RequestSyntax) **   <a name="ACW-GetDataset-request-DatasetIdentifier"></a>
 Specifies the identifier of the dataset to retrieve. For the `default` dataset, you can specify either `default` or the full dataset Amazon Resource Name (ARN) in the format `arn:aws:cloudwatch:Region:account-id:dataset/default`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `(default|arn:[a-zA-Z0-9-]+:cloudwatch:[a-zA-Z0-9-]*:\d{12}:dataset/default)`
 Required: Yes
 
+## Response Syntax
+<a name="API_GetDataset_ResponseSyntax"></a>
+
+```
+{
+   "Arn": "string",
+   "DatasetId": "string",
+   "KmsKeyArn": "string"
+}
+```
+
 ## Response Elements
 <a name="API_GetDataset_ResponseElements"></a>
 
-The following elements are returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** Arn **
+The following data is returned in JSON format by the service.
+
+ ** [Arn](#API_GetDataset_ResponseSyntax) **   <a name="ACW-GetDataset-response-Arn"></a>
 Returns the Amazon Resource Name (ARN) of the dataset, in the format `arn:aws:cloudwatch:Region:account-id:dataset/dataset-id `.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `arn:[a-zA-Z0-9-]+:cloudwatch:[a-zA-Z0-9-]*:\d{12}:dataset/default`
 
- ** DatasetId **
+ ** [DatasetId](#API_GetDataset_ResponseSyntax) **   <a name="ACW-GetDataset-response-DatasetId"></a>
 Returns the identifier of the dataset.
 Type: String
 Length Constraints: Fixed length of 7.
 Pattern: `default`
 
- ** KmsKeyArn **
+ ** [KmsKeyArn](#API_GetDataset_ResponseSyntax) **   <a name="ACW-GetDataset-response-KmsKeyArn"></a>
 Returns the Amazon Resource Name (ARN) of the customer managed AWS KMS key that is currently associated with the dataset, if any. If the dataset is not associated with a customer managed KMS key, this field is not included in the response and the dataset is encrypted at rest using an AWS owned key.
 Type: String
 Length Constraints: Minimum length of 20. Maximum length of 2048.

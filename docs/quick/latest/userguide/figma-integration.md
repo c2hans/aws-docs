@@ -5,10 +5,10 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/figma-integration
 # Figma integration
 <a name="figma-integration"></a>
 
-With the Figma action connector, you can manage design files, retrieve file metadata, and access design assets directly in Amazon Quick through natural language.
+Figma is a collaborative design platform where teams create, share, and manage design files and prototypes. The Figma connector brings your design work into Amazon Quick. You can ask questions in natural language to manage design files, retrieve file metadata, and access design assets without switching to the Figma application.
 
-Amazon Quick supports two authentication methods for Figma. Choose the method that best fits your organization's security requirements.
-+ **Default OAuth app** – Uses an AWS-managed OAuth application. No additional credentials are needed. Users authenticate directly with their Figma account.
+With Amazon Quick, you can use two authentication methods for Figma. Choose the method that best fits your organization's security requirements:
++ **Default OAuth app** – Uses an OAuth application managed by AWS. No additional credentials are needed. Users authenticate directly with their Figma account.
 + **Custom OAuth app** – Uses a customer-managed OAuth application. This option gives your organization full control over the OAuth configuration.
 
 For more information about the authentication methods that Amazon Quick supports, see [Authentication methods](quick-action-auth.md).
@@ -16,7 +16,7 @@ For more information about the authentication methods that Amazon Quick supports
 ## Before you begin
 <a name="figma-integration-prerequisites"></a>
 
-Make sure that you have the following before you set up the integration.
+Make sure that you have the following before you set up the integration:
 + An active Figma account with access to the files and projects that you want to use.
 + For **Custom OAuth app**: An OAuth app configured in the Figma Developer settings. For more information, see [Figma OAuth 2.0](https://www.figma.com/developers/api#oauth2) in the Figma developer documentation.
 + For Amazon Quick subscription requirements, see [Set up integrations in the console](integration-console-setup-process.md).
@@ -26,7 +26,15 @@ Make sure that you have the following before you set up the integration.
 
 If you are using **Default OAuth app** authentication, skip this section and proceed to [Setting up the connector in Amazon Quick](#figma-quicksuite-setup).
 
-For Custom OAuth app authentication, create an OAuth app in your Figma Developer settings and add the Amazon Quick callback URL `https://{{{region}}}.quicksight.aws.amazon.com/sn/oauthcallback` as a redirect URI. Replace {{{region}}} with your AWS Region (for example, `us-east-1`). For step-by-step instructions, see [Figma MCP server](https://developers.figma.com/docs/figma-mcp-server/) in the Figma developer documentation. Record the Client ID and Client Secret — you need them when you configure Amazon Quick.
+For Custom OAuth app authentication, create an OAuth app in your Figma Developer settings and configure it to work with Amazon Quick.
+
+1. Sign in to Figma and go to your Figma Developer settings.
+
+1. Create an OAuth app. For step-by-step instructions, see [Figma OAuth 2.0](https://www.figma.com/developers/api#oauth2) in the Figma developer documentation.
+
+1. Add the Amazon Quick callback URL as a redirect URI: `https://{{{region}}}.quicksight.aws.amazon.com/sn/oauthcallback`. Replace {{{region}}} with your AWS Region (for example, `us-east-1`).
+
+1. Record the Client ID and Client Secret that Figma generates. You need these values when you configure the connector in Amazon Quick.
 
 ## Setting up the connector in Amazon Quick
 <a name="figma-quicksuite-setup"></a>
@@ -42,7 +50,7 @@ If you want to use Default OAuth app authentication, you can connect directly fr
 
 1. Complete the Figma sign-in flow and grant the requested permissions.
 
-To configure a connector with Custom OAuth app instead, use the **Create for your team** tab as described below.
+To configure a connector with Custom OAuth app instead, use the **Create for your team** tab, as described in the following section.
 
 ### Create from the Create for your team tab
 <a name="figma-full-setup"></a>
@@ -65,7 +73,7 @@ To configure a connector with Custom OAuth app instead, use the **Create for you
 
    1. For **Custom OAuth app**, configure the following fields:
       + **Client ID** – The client ID from your Figma OAuth app.
-      + **Public OAuth client** (Optional) – Select this option if your Figma OAuth app is configured as a public client (no client secret).
+      + (Optional) **Public OAuth client** – Select this option if your Figma OAuth app is configured as a public client (no client secret).
       + **Client secret** – The client secret from your Figma OAuth app.
       + **Token URL** – The token endpoint. Default: `https://api.figma.com/v1/oauth/token`
       + **Authorization URL** – The authorization endpoint. Default: `https://www.figma.com/oauth/mcp`
@@ -95,7 +103,3 @@ To edit, share, or delete your connector, see [Managing existing integrations](i
 <a name="figma-troubleshooting-auth"></a>
 + **Sign-in fails (Default OAuth app or Custom OAuth app)** – Verify that your Figma account is active and that you can sign in to Figma directly. For Custom OAuth app, confirm that the redirect URI in your Figma OAuth app matches the Amazon Quick callback URL.
 + **Invalid client credentials (Custom OAuth app)** – Verify that the Client ID and Client secret match the values in your Figma OAuth app.
-
-## See also
-
-* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

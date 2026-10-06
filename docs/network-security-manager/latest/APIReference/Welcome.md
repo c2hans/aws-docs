@@ -13,4 +13,4 @@ This API reference describes the operations and data types for AWS Network Secur
 
 For conceptual information, tutorials, and guidance on writing rule configurations, see the [AWS Network Security Manager Developer Guide](https://docs.aws.amazon.com/network-security-manager/latest/devguide/what-is.html). For the default quotas that apply to your account, see [Quotas](https://docs.aws.amazon.com/network-security-manager/latest/devguide/quotas.html). For the service endpoints available in each Region, see [AWS Network Security Manager endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/network-security-manager.html) in the *AWS General Reference*.
 
-This document was last published on October 2, 2026.
+This document was last published on October 5, 2026.

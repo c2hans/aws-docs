@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/ecs/index.html
 title: 'Amazon Elastic Container Service Documentation'
 canonical_url: https://docs.aws.amazon.com/ecs/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # Amazon Elastic Container Service Documentation

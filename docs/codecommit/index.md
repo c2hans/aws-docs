@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/codecommit/index.html
 title: 'AWS CodeCommit Documentation'
 canonical_url: https://docs.aws.amazon.com/codecommit/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # AWS CodeCommit Documentation

@@ -63,4 +63,4 @@ Security, activity, and resource management in Amazon CodeCatalyst, by calling t
 **Note**
 If you are using the Amazon CodeCatalyst APIs with an SDK or the AWS CLI, you must configure your computer to work with Amazon CodeCatalyst and single sign-on (SSO). For more information, see [Setting up to use the AWS CLI with Amazon CodeCatalyst](https://docs.aws.amazon.com/codecatalyst/latest/userguide/set-up-cli.html) and the SSO documentation for your SDK.
 
-This document was last published on October 2, 2026.
+This document was last published on October 5, 2026.

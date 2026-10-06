@@ -9,10 +9,24 @@ Removes tags from the specified resource.
 
 Currently this only supports [Connection](API_Connection.md) resources.
 
+## Request Syntax
+<a name="API_UntagResource_RequestSyntax"></a>
+
+```
+{
+   "arn": "{{string}}",
+   "tagKeys": [ "{{string}}" ]
+}
+```
+
 ## Request Parameters
 <a name="API_UntagResource_RequestParameters"></a>
 
- ** arn **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [arn](#API_UntagResource_RequestSyntax) **   <a name="interconnect-UntagResource-request-arn"></a>
 The ARN of the resource from which the specified tags should be removed.
 Currently this must be an ARN for a [Connection](API_Connection.md) resource.
 Type: String
@@ -20,11 +34,16 @@ Length Constraints: Minimum length of 59. Maximum length of 150.
 Pattern: `arn:aws[a-z-]*:interconnect:[^:]+:[0-9]{12}:connection/(mcc|lmcc)-[a-z0-9]{8}`
 Required: Yes
 
- ** tagKeys **
+ ** [tagKeys](#API_UntagResource_RequestSyntax) **   <a name="interconnect-UntagResource-request-tagKeys"></a>
 The list of tag keys that should be removed from the resource.
 Type: Array of strings
 Length Constraints: Minimum length of 1. Maximum length of 128.
 Required: Yes
+
+## Response Elements
+<a name="API_UntagResource_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
 
 ## Errors
 <a name="API_UntagResource_Errors"></a>

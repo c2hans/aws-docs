@@ -19,15 +19,33 @@ Disassociating a KMS key from a dataset does not immediately remove the `kms:Dec
 
 For more information about using customer managed keys with Amazon CloudWatch, see [Encryption at rest with customer managed keys](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cmk-encryption.html) in the *Amazon CloudWatch User Guide*.
 
+## Request Syntax
+<a name="API_DisassociateDatasetKmsKey_RequestSyntax"></a>
+
+```
+{
+   "DatasetIdentifier": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_DisassociateDatasetKmsKey_RequestParameters"></a>
 
- ** DatasetIdentifier **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [DatasetIdentifier](#API_DisassociateDatasetKmsKey_RequestSyntax) **   <a name="ACW-DisassociateDatasetKmsKey-request-DatasetIdentifier"></a>
 Specifies the identifier of the dataset from which to remove the KMS key association. For the `default` dataset, you can specify either `default` or the full dataset Amazon Resource Name (ARN) in the format `arn:aws:cloudwatch:Region:account-id:dataset/default`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `(default|arn:[a-zA-Z0-9-]+:cloudwatch:[a-zA-Z0-9-]*:\d{12}:dataset/default)`
 Required: Yes
+
+## Response Elements
+<a name="API_DisassociateDatasetKmsKey_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
 
 ## Errors
 <a name="API_DisassociateDatasetKmsKey_Errors"></a>

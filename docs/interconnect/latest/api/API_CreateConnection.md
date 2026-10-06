@@ -13,60 +13,110 @@ The [AttachPoint](API_AttachPoint.md) specifies where within the AWS Network you
 
 After a successful call to this method, the resulting [Connection](API_Connection.md) will return an Activation Key which will need to be brought to the specific partner's portal to confirm the [Connection](API_Connection.md) on both sides. (See [Environment:activationPageUrl](API_Environment.md#interconnect-Type-Environment-activationPageUrl) for a direct link to the partner portal).
 
+## Request Syntax
+<a name="API_CreateConnection_RequestSyntax"></a>
+
+```
+{
+   "attachPoint": { ... },
+   "bandwidth": "{{string}}",
+   "clientToken": "{{string}}",
+   "description": "{{string}}",
+   "environmentId": "{{string}}",
+   "remoteAccount": { ... },
+   "tags": {
+      "{{string}}" : "{{string}}"
+   }
+}
+```
+
 ## Request Parameters
 <a name="API_CreateConnection_RequestParameters"></a>
 
- ** attachPoint **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [attachPoint](#API_CreateConnection_RequestSyntax) **   <a name="interconnect-CreateConnection-request-attachPoint"></a>
 The [AttachPoint](API_AttachPoint.md) to which the connection should be associated."
 Type: [AttachPoint](API_AttachPoint.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: Yes
 
- ** bandwidth **
+ ** [bandwidth](#API_CreateConnection_RequestSyntax) **   <a name="interconnect-CreateConnection-request-bandwidth"></a>
 The desired bandwidth of the requested [Connection](API_Connection.md)
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 8.
 Pattern: `\d+[MG]bps`
 Required: Yes
 
- ** clientToken **
+ ** [clientToken](#API_CreateConnection_RequestSyntax) **   <a name="interconnect-CreateConnection-request-clientToken"></a>
 Idempotency token used for the request.
 Type: String
 Required: No
 
- ** description **
+ ** [description](#API_CreateConnection_RequestSyntax) **   <a name="interconnect-CreateConnection-request-description"></a>
 A description to distinguish this [Connection](API_Connection.md).
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[-a-zA-Z0-9_ ]+`
 Required: No
 
- ** environmentId **
+ ** [environmentId](#API_CreateConnection_RequestSyntax) **   <a name="interconnect-CreateConnection-request-environmentId"></a>
 The identifier of the [Environment](API_Environment.md) across which this [Connection](API_Connection.md) should be created.
 The available [Environment](API_Environment.md) objects can be determined using [ListEnvironments](API_ListEnvironments.md).
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: Yes
 
- ** remoteAccount **
+ ** [remoteAccount](#API_CreateConnection_RequestSyntax) **   <a name="interconnect-CreateConnection-request-remoteAccount"></a>
 Account and/or principal identifying information that can be verified by the partner of this specific Environment.
 Type: [RemoteAccountIdentifier](API_RemoteAccountIdentifier.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: No
 
- ** tags **
+ ** [tags](#API_CreateConnection_RequestSyntax) **   <a name="interconnect-CreateConnection-request-tags"></a>
 The tag to associate with the resulting [Connection](API_Connection.md).
 Type: String to string map
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
 Value Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 
+## Response Syntax
+<a name="API_CreateConnection_ResponseSyntax"></a>
+
+```
+{
+   "connection": {
+      "activationKey": "string",
+      "arn": "string",
+      "attachPoint": { ... },
+      "bandwidth": "string",
+      "billingTier": number,
+      "description": "string",
+      "environmentId": "string",
+      "id": "string",
+      "location": "string",
+      "ownerAccount": "string",
+      "provider": { ... },
+      "sharedId": "string",
+      "state": "string",
+      "tags": {
+         "string" : "string"
+      },
+      "type": "string"
+   }
+}
+```
+
 ## Response Elements
 <a name="API_CreateConnection_ResponseElements"></a>
 
-The following element is returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** connection **
+The following data is returned in JSON format by the service.
+
+ ** [connection](#API_CreateConnection_ResponseSyntax) **   <a name="interconnect-CreateConnection-response-connection"></a>
 The resulting [Connection](API_Connection.md).
 Type: [Connection](API_Connection.md) object
 

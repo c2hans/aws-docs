@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/eu-cyber-resilience-act-on-aws
 title: 'Guidance for EU Cyber Resilience Act on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/eu-cyber-resilience-act-on-aws/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # Guidance for EU Cyber Resilience Act on AWS

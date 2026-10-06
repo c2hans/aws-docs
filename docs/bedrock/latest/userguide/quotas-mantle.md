@@ -42,23 +42,10 @@ The endpoint may apply additional internal rate limiting that is not exposed in 
 
 The `bedrock-runtime` endpoint's TPM quotas count input and output tokens together against a single per-model quota, while the `bedrock-mantle` endpoint applies separate input-tokens-per-minute and output-tokens-per-minute quotas. If you run workloads on both endpoints, plan capacity for each endpoint independently. For details on the runtime endpoint's quotas, see [Quotas for the bedrock-runtime endpoint](quotas-runtime.md).
 
-## Default quota values
+## View quota values
 <a name="quotas-mantle-defaults"></a>
 
-The following table lists default quotas for models on the `bedrock-mantle` endpoint. Actual quota allocations can vary by account and AWS Region, and new AWS accounts might receive reduced quotas. Some models require additional account-level access before quota allocations are provided.
-
-**Default bedrock-mantle quotas by model**
-
-| Model | Default input TPM | Default output TPM |
-| --- | --- | --- |
-| Anthropic Claude Opus 4.7 | 20,000,000 | 4,000,000 |
-
-Additional models will be listed in this table as they launch on the endpoint.
-
-### Models without published TPM quotas
-<a name="quotas-mantle-no-quota-models"></a>
-
-The `bedrock-mantle` endpoint enforces published TPM quotas only for the models listed in the table above. Other models served on this endpoint don't have per-account TPM quotas exposed in Service Quotas today – their throughput is governed by internal service capacity. AWS might introduce per-account quotas for additional models as usage scales. Use retry logic with exponential backoff to handle transient throttling. If you need a published quota for a specific model, contact AWS Support.
+Quota values vary by model, account, and AWS Region. To view the current default and applied quota values for models available to your account, open the [Service Quotas console](https://docs.aws.amazon.com/servicequotas/latest/userguide/gs-request-quota.html), select **Amazon Bedrock**, and search for `bedrock-mantle endpoint`. Each quota name identifies the model and whether the value applies to input or output tokens per minute.
 
 ## Supported Regions
 <a name="quotas-mantle-supported-regions"></a>

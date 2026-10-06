@@ -7,20 +7,62 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 
  Creates a managed Contributor Insights rule for a specified AWS resource. When you enable a managed rule, you create a Contributor Insights rule that collects data from AWS services. You cannot edit these rules with `PutInsightRule`. The rules can be enabled, disabled, and deleted using `EnableInsightRules`, `DisableInsightRules`, and `DeleteInsightRules`. If a previously created managed rule is currently disabled, a subsequent call to this API will re-enable it. Use `ListManagedInsightRules` to describe all available rules.
 
+## Request Syntax
+<a name="API_PutManagedInsightRules_RequestSyntax"></a>
+
+```
+{
+   "ManagedRules": [
+      {
+         "ResourceARN": "{{string}}",
+         "Tags": [
+            {
+               "Key": "{{string}}",
+               "Value": "{{string}}"
+            }
+         ],
+         "TemplateName": "{{string}}"
+      }
+   ]
+}
+```
+
 ## Request Parameters
 <a name="API_PutManagedInsightRules_RequestParameters"></a>
 
- ** ManagedRules **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [ManagedRules](#API_PutManagedInsightRules_RequestSyntax) **   <a name="ACW-PutManagedInsightRules-request-ManagedRules"></a>
  A list of `ManagedRules` to enable.
 Type: Array of [ManagedRule](API_ManagedRule.md) objects
 Required: Yes
 
+## Response Syntax
+<a name="API_PutManagedInsightRules_ResponseSyntax"></a>
+
+```
+{
+   "Failures": [
+      {
+         "ExceptionType": "string",
+         "FailureCode": "string",
+         "FailureDescription": "string",
+         "FailureResource": "string"
+      }
+   ]
+}
+```
+
 ## Response Elements
 <a name="API_PutManagedInsightRules_ResponseElements"></a>
 
-The following element is returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** Failures **
+The following data is returned in JSON format by the service.
+
+ ** [Failures](#API_PutManagedInsightRules_ResponseSyntax) **   <a name="ACW-PutManagedInsightRules-response-Failures"></a>
  An array that lists the rules that could not be enabled.
 Type: Array of [PartialFailure](API_PartialFailure.md) objects
 

@@ -7,15 +7,33 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 
 Disables the actions for the specified alarms. When an alarm's actions are disabled, the alarm actions do not execute when the alarm state changes.
 
+## Request Syntax
+<a name="API_DisableAlarmActions_RequestSyntax"></a>
+
+```
+{
+   "AlarmNames": [ "{{string}}" ]
+}
+```
+
 ## Request Parameters
 <a name="API_DisableAlarmActions_RequestParameters"></a>
 
- ** AlarmNames **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [AlarmNames](#API_DisableAlarmActions_RequestSyntax) **   <a name="ACW-DisableAlarmActions-request-AlarmNames"></a>
 The names of the alarms.
 Type: Array of strings
 Array Members: Maximum number of 100 items.
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes
+
+## Response Elements
+<a name="API_DisableAlarmActions_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
 
 ## Errors
 <a name="API_DisableAlarmActions_Errors"></a>

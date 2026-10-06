@@ -85,6 +85,7 @@ Content-type: application/json
          "pentestId": "string",
          "pentestJobId": "string",
          "reasoning": "string",
+         "remediationCode": "string",
          "revalidationJobIds": [ "string" ],
          "riskLevel": "string",
          "riskScore": "string",

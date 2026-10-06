@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/contextual-intelligence-advert
 title: 'Guidance for Contextual Intelligence Advertising Using Generative AI on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/contextual-intelligence-advertising-using-generative-ai-on-aws/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # Guidance for Contextual Intelligence Advertising Using Generative AI on AWS

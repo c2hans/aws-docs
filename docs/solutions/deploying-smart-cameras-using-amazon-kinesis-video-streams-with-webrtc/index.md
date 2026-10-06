@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/deploying-smart-cameras-using-
 title: 'Guidance for Deploying Smart Cameras Using Amazon Kinesis Video Streams with WebRTC'
 canonical_url: https://docs.aws.amazon.com/solutions/deploying-smart-cameras-using-amazon-kinesis-video-streams-with-webrtc/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # Guidance for Deploying Smart Cameras Using Amazon Kinesis Video Streams with WebRTC

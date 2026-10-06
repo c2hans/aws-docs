@@ -28,7 +28,7 @@ Required: Yes
  ** provider **   <a name="securityagent-Type-IntegrationSummary-provider"></a>
 The integration provider.
 Type: String
-Valid Values: `GITHUB | GITLAB | BITBUCKET | CONFLUENCE`
+Valid Values: `GITHUB | GITLAB | BITBUCKET | CONFLUENCE | AZURE_DEVOPS`
 Required: Yes
 
  ** providerType **   <a name="securityagent-Type-IntegrationSummary-providerType"></a>
@@ -44,6 +44,11 @@ Required: No
 
  ** targetUrl **   <a name="securityagent-Type-IntegrationSummary-targetUrl"></a>
 The HTTPS URL of the customer self-hosted instance, such as a GitHub Enterprise Server or self-managed GitLab instance. This value is absent for SaaS integrations.
+Type: String
+Required: No
+
+ ** webhookUrl **   <a name="securityagent-Type-IntegrationSummary-webhookUrl"></a>
+The payload URL of the integration's webhook, once it has been created. The signing secret is never returned on a read.
 Type: String
 Required: No
 

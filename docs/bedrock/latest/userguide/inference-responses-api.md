@@ -345,7 +345,7 @@ Two condition keys let a policy on either resource constrain the other. The infe
 + **Server-side tool use and pre-configured tools aren't available**, including [web search](web-search.md). Client-side tool use works on both endpoints.
 + **Only the default project is supported.** The `OpenAI-Project` header is accepted only as `default` or as your own default project ARN; any other value is rejected. See [Projects (OpenAI-compatible)](projects.md).
 + **Application inference profiles aren't supported.** A request that names one as its inference target is rejected with a 400 error. System, geographic, and global inference profiles work normally.
-+ **[Guardrails](guardrails.md) don't apply to the Responses API.** To apply a guardrail to a GPT model on this endpoint, call the [Converse API](conversation-inference.md) instead.
++ **[Guardrails](guardrails.md) are supported.** Set the `X-Amzn-Bedrock-GuardrailIdentifier` and `X-Amzn-Bedrock-GuardrailVersion` request headers. With the OpenAI SDK, pass these values through `extra_headers`. For more information, see [Test your guardrail](guardrails-test.md).
 + **A stored response belongs to the AWS Region that served it.** Retrieving, canceling, or deleting it, and continuing the conversation with `previous_response_id`, are all handled by that Region. A response ID that can't be found — because it never existed, belongs to another account, or was never stored — returns the same 404 error in every case.
 
 **Monitoring and cost**

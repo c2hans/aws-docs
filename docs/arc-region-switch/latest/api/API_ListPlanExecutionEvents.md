@@ -7,46 +7,87 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_ListPla
 
 Lists the events that occurred during a plan execution. These events provide a detailed timeline of the execution process.
 
+## Request Syntax
+<a name="API_ListPlanExecutionEvents_RequestSyntax"></a>
+
+```
+{
+   "executionId": "{{string}}",
+   "maxResults": {{number}},
+   "name": "{{string}}",
+   "nextToken": "{{string}}",
+   "planArn": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_ListPlanExecutionEvents_RequestParameters"></a>
 
- ** executionId **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [executionId](#API_ListPlanExecutionEvents_RequestSyntax) **   <a name="regionswitch-ListPlanExecutionEvents-request-executionId"></a>
 The execution identifier of a plan execution.
 Type: String
 Required: Yes
 
- ** maxResults **
+ ** [maxResults](#API_ListPlanExecutionEvents_RequestSyntax) **   <a name="regionswitch-ListPlanExecutionEvents-request-maxResults"></a>
 The number of objects that you want to return with this call.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 100.
 Required: No
 
- ** name **
+ ** [name](#API_ListPlanExecutionEvents_RequestSyntax) **   <a name="regionswitch-ListPlanExecutionEvents-request-name"></a>
 The name of the plan execution event.
 Type: String
 Required: No
 
- ** nextToken **
+ ** [nextToken](#API_ListPlanExecutionEvents_RequestSyntax) **   <a name="regionswitch-ListPlanExecutionEvents-request-nextToken"></a>
 Specifies that you want to receive the next page of results. Valid only if you received a `nextToken` response in the previous request. If you did, it indicates that more output is available. Set this parameter to the value provided by the previous call's `nextToken` response to request the next page of results.
 Type: String
 Required: No
 
- ** planArn **
+ ** [planArn](#API_ListPlanExecutionEvents_RequestSyntax) **   <a name="regionswitch-ListPlanExecutionEvents-request-planArn"></a>
 The Amazon Resource Name (ARN) of the plan.
 Type: String
 Pattern: `arn:aws[a-zA-Z-]*:arc-region-switch::[0-9]{12}:plan/([a-zA-Z0-9](?:[a-zA-Z0-9-]{0,30}[a-zA-Z0-9])?):([a-z0-9]{6})`
 Required: Yes
 
+## Response Syntax
+<a name="API_ListPlanExecutionEvents_ResponseSyntax"></a>
+
+```
+{
+   "items": [
+      {
+         "description": "string",
+         "error": "string",
+         "eventId": "string",
+         "executionBlockType": "string",
+         "previousEventId": "string",
+         "resources": [ "string" ],
+         "stepName": "string",
+         "timestamp": number,
+         "type": "string"
+      }
+   ],
+   "nextToken": "string"
+}
+```
+
 ## Response Elements
 <a name="API_ListPlanExecutionEvents_ResponseElements"></a>
 
-The following elements are returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** items **
+The following data is returned in JSON format by the service.
+
+ ** [items](#API_ListPlanExecutionEvents_ResponseSyntax) **   <a name="regionswitch-ListPlanExecutionEvents-response-items"></a>
 The items in the plan execution event.
 Type: Array of [ExecutionEvent](API_ExecutionEvent.md) objects
 
- ** nextToken **
+ ** [nextToken](#API_ListPlanExecutionEvents_ResponseSyntax) **   <a name="regionswitch-ListPlanExecutionEvents-response-nextToken"></a>
 Specifies that you want to receive the next page of results. Valid only if you received a `nextToken` response in the previous request. If you did, it indicates that more output is available. Set this parameter to the value provided by the previous call's `nextToken` response to request the next page of results.
 Type: String
 

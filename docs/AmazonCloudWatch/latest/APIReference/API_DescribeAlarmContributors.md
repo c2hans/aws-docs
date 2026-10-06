@@ -7,30 +7,65 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 
 Returns the information of the current alarm contributors that are in `ALARM` state. This operation returns details about the individual time series that contribute to the alarm's state.
 
+## Request Syntax
+<a name="API_DescribeAlarmContributors_RequestSyntax"></a>
+
+```
+{
+   "AlarmName": "{{string}}",
+   "NextToken": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_DescribeAlarmContributors_RequestParameters"></a>
 
- ** AlarmName **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [AlarmName](#API_DescribeAlarmContributors_RequestSyntax) **   <a name="ACW-DescribeAlarmContributors-request-AlarmName"></a>
 The name of the alarm for which to retrieve contributor information.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes
 
- ** NextToken **
+ ** [NextToken](#API_DescribeAlarmContributors_RequestSyntax) **   <a name="ACW-DescribeAlarmContributors-request-NextToken"></a>
 The token returned by a previous call to indicate that there is more data available.
 Type: String
 Required: No
 
+## Response Syntax
+<a name="API_DescribeAlarmContributors_ResponseSyntax"></a>
+
+```
+{
+   "AlarmContributors": [
+      {
+         "ContributorAttributes": {
+            "string" : "string"
+         },
+         "ContributorId": "string",
+         "StateReason": "string",
+         "StateTransitionedTimestamp": number
+      }
+   ],
+   "NextToken": "string"
+}
+```
+
 ## Response Elements
 <a name="API_DescribeAlarmContributors_ResponseElements"></a>
 
-The following elements are returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** AlarmContributors **
+The following data is returned in JSON format by the service.
+
+ ** [AlarmContributors](#API_DescribeAlarmContributors_ResponseSyntax) **   <a name="ACW-DescribeAlarmContributors-response-AlarmContributors"></a>
 A list of alarm contributors that provide details about the individual time series contributing to the alarm's state.
 Type: Array of [AlarmContributor](API_AlarmContributor.md) objects
 
- ** NextToken **
+ ** [NextToken](#API_DescribeAlarmContributors_ResponseSyntax) **   <a name="ACW-DescribeAlarmContributors-response-NextToken"></a>
 The token that marks the start of the next batch of returned results.
 Type: String
 

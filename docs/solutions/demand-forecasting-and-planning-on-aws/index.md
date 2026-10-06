@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/demand-forecasting-and-plannin
 title: 'Guidance for Demand Forecasting & Planning on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/demand-forecasting-and-planning-on-aws/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # Guidance for Demand Forecasting & Planning on AWS

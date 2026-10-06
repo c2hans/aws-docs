@@ -11,28 +11,100 @@ If you have enabled unified cross-account observability, and this account is a m
 
 For more information, see [CloudWatch Anomaly Detection](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Anomaly_Detection.html).
 
+## Request Syntax
+<a name="API_PutAnomalyDetector_RequestSyntax"></a>
+
+```
+{
+   "Configuration": {
+      "ExcludedTimeRanges": [
+         {
+            "EndTime": {{number}},
+            "StartTime": {{number}}
+         }
+      ],
+      "MetricTimezone": "{{string}}"
+   },
+   "Dimensions": [
+      {
+         "Name": "{{string}}",
+         "Value": "{{string}}"
+      }
+   ],
+   "MetricCharacteristics": {
+      "PeriodicSpikes": {{boolean}}
+   },
+   "MetricMathAnomalyDetector": {
+      "MetricDataQueries": [
+         {
+            "AccountId": "{{string}}",
+            "Expression": "{{string}}",
+            "Id": "{{string}}",
+            "Label": "{{string}}",
+            "MetricStat": {
+               "Metric": {
+                  "Dimensions": [
+                     {
+                        "Name": "{{string}}",
+                        "Value": "{{string}}"
+                     }
+                  ],
+                  "MetricName": "{{string}}",
+                  "Namespace": "{{string}}"
+               },
+               "Period": {{number}},
+               "Stat": "{{string}}",
+               "Unit": "{{string}}"
+            },
+            "Period": {{number}},
+            "ReturnData": {{boolean}}
+         }
+      ]
+   },
+   "MetricName": "{{string}}",
+   "Namespace": "{{string}}",
+   "SingleMetricAnomalyDetector": {
+      "AccountId": "{{string}}",
+      "Dimensions": [
+         {
+            "Name": "{{string}}",
+            "Value": "{{string}}"
+         }
+      ],
+      "MetricName": "{{string}}",
+      "Namespace": "{{string}}",
+      "Stat": "{{string}}"
+   },
+   "Stat": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_PutAnomalyDetector_RequestParameters"></a>
 
- ** Configuration **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [Configuration](#API_PutAnomalyDetector_RequestSyntax) **   <a name="ACW-PutAnomalyDetector-request-Configuration"></a>
 The configuration specifies details about how the anomaly detection model is to be trained, including time ranges to exclude when training and updating the model. You can specify as many as 10 time ranges.
 The configuration can also include the time zone to use for the metric.
 Type: [AnomalyDetectorConfiguration](API_AnomalyDetectorConfiguration.md) object
 Required: No
 
- ** Dimensions **
+ ** [Dimensions](#API_PutAnomalyDetector_RequestSyntax) **   <a name="ACW-PutAnomalyDetector-request-Dimensions"></a>
  *This parameter has been deprecated.*
 The metric dimensions to create the anomaly detection model for.
 Type: Array of [Dimension](API_Dimension.md) objects
 Array Members: Maximum number of 30 items.
 Required: No
 
- ** MetricCharacteristics **
+ ** [MetricCharacteristics](#API_PutAnomalyDetector_RequestSyntax) **   <a name="ACW-PutAnomalyDetector-request-MetricCharacteristics"></a>
 Use this object to include parameters to provide information about your metric to CloudWatch to help it build more accurate anomaly detection models. Currently, it includes the `PeriodicSpikes` parameter.
 Type: [MetricCharacteristics](API_MetricCharacteristics.md) object
 Required: No
 
- ** MetricMathAnomalyDetector **
+ ** [MetricMathAnomalyDetector](#API_PutAnomalyDetector_RequestSyntax) **   <a name="ACW-PutAnomalyDetector-request-MetricMathAnomalyDetector"></a>
 The metric math anomaly detector to be created.
 When using `MetricMathAnomalyDetector`, you cannot include the following parameters in the same operation:
 +  `Dimensions`
@@ -44,14 +116,14 @@ Instead, specify the metric math anomaly detector attributes as part of the prop
 Type: [MetricMathAnomalyDetector](API_MetricMathAnomalyDetector.md) object
 Required: No
 
- ** MetricName **
+ ** [MetricName](#API_PutAnomalyDetector_RequestSyntax) **   <a name="ACW-PutAnomalyDetector-request-MetricName"></a>
  *This parameter has been deprecated.*
 The name of the metric to create the anomaly detection model for.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: No
 
- ** Namespace **
+ ** [Namespace](#API_PutAnomalyDetector_RequestSyntax) **   <a name="ACW-PutAnomalyDetector-request-Namespace"></a>
  *This parameter has been deprecated.*
 The namespace of the metric to create the anomaly detection model for.
 Type: String
@@ -59,7 +131,7 @@ Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[^:].*`
 Required: No
 
- ** SingleMetricAnomalyDetector **
+ ** [SingleMetricAnomalyDetector](#API_PutAnomalyDetector_RequestSyntax) **   <a name="ACW-PutAnomalyDetector-request-SingleMetricAnomalyDetector"></a>
 A single metric anomaly detector to be created.
 When using `SingleMetricAnomalyDetector`, you cannot include the following parameters in the same operation:
 +  `Dimensions`
@@ -71,7 +143,7 @@ Instead, specify the single metric anomaly detector attributes as part of the pr
 Type: [SingleMetricAnomalyDetector](API_SingleMetricAnomalyDetector.md) object
 Required: No
 
- ** Stat **
+ ** [Stat](#API_PutAnomalyDetector_RequestSyntax) **   <a name="ACW-PutAnomalyDetector-request-Stat"></a>
  *This parameter has been deprecated.*
 The statistic to use for the metric and the anomaly detection model.
 Type: String
@@ -79,12 +151,23 @@ Length Constraints: Maximum length of 50.
 Pattern: `(SampleCount|Average|Sum|Minimum|Maximum|IQM|(p|tc|tm|ts|wm)(\d{1,2}(\.\d{0,10})?|100)|[ou]\d+(\.\d*)?)(_E|_L|_H)?|(TM|TC|TS|WM)\(((((\d{1,2})(\.\d{0,10})?|100(\.0{0,10})?)%)?:((\d{1,2})(\.\d{0,10})?|100(\.0{0,10})?)%|((\d{1,2})(\.\d{0,10})?|100(\.0{0,10})?)%:(((\d{1,2})(\.\d{0,10})?|100(\.0{0,10})?)%)?)\)|(TM|TC|TS|WM|PR)\(((\d+(\.\d{0,10})?|(\d+(\.\d{0,10})?[Ee][+-]?\d+)):((\d+(\.\d{0,10})?|(\d+(\.\d{0,10})?[Ee][+-]?\d+)))?|((\d+(\.\d{0,10})?|(\d+(\.\d{0,10})?[Ee][+-]?\d+)))?:(\d+(\.\d{0,10})?|(\d+(\.\d{0,10})?[Ee][+-]?\d+)))\)`
 Required: No
 
+## Response Syntax
+<a name="API_PutAnomalyDetector_ResponseSyntax"></a>
+
+```
+{
+   "AnomalyDetectorId": "string"
+}
+```
+
 ## Response Elements
 <a name="API_PutAnomalyDetector_ResponseElements"></a>
 
-The following element is returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** AnomalyDetectorId **
+The following data is returned in JSON format by the service.
+
+ ** [AnomalyDetectorId](#API_PutAnomalyDetector_ResponseSyntax) **   <a name="ACW-PutAnomalyDetector-response-AnomalyDetectorId"></a>
 The unique identifier of the anomaly detector that you created or updated.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.

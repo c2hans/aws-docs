@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/sentiment-analysis-on-aws/inde
 title: 'Guidance for Sentiment Analysis on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/sentiment-analysis-on-aws/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # Guidance for Sentiment Analysis on AWS

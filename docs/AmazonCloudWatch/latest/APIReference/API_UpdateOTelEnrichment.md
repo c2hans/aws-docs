@@ -9,10 +9,34 @@ Replaces the filters that determine which CloudWatch vended metrics are enriched
 
 The filters in the request completely replace the stored filters; they are not merged with them. `IncludeFilters` and `ExcludeFilters` are replaced as a pair, so a request that specifies only `IncludeFilters` also clears the stored `ExcludeFilters`, and a request that specifies neither clears both.
 
+## Request Syntax
+<a name="API_UpdateOTelEnrichment_RequestSyntax"></a>
+
+```
+{
+   "ExcludeFilters": [
+      {
+         "MetricNames": [ "{{string}}" ],
+         "Namespace": "{{string}}"
+      }
+   ],
+   "IncludeFilters": [
+      {
+         "MetricNames": [ "{{string}}" ],
+         "Namespace": "{{string}}"
+      }
+   ]
+}
+```
+
 ## Request Parameters
 <a name="API_UpdateOTelEnrichment_RequestParameters"></a>
 
- ** ExcludeFilters **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [ExcludeFilters](#API_UpdateOTelEnrichment_RequestSyntax) **   <a name="ACW-UpdateOTelEnrichment-request-ExcludeFilters"></a>
 The metric namespaces, and the metric names, to leave unenriched. If this parameter is omitted, nothing is excluded.
 Amazon CloudWatch applies `ExcludeFilters` after `IncludeFilters`, so a metric that both parameters match is not enriched.
 A maximum of 100 filters is allowed across `IncludeFilters` and `ExcludeFilters` combined.
@@ -20,33 +44,57 @@ Type: Array of [OTelEnrichmentMetricSelector](API_OTelEnrichmentMetricSelector.m
 Array Members: Minimum number of 0 items. Maximum number of 100 items.
 Required: No
 
- ** IncludeFilters **
+ ** [IncludeFilters](#API_UpdateOTelEnrichment_RequestSyntax) **   <a name="ACW-UpdateOTelEnrichment-request-IncludeFilters"></a>
 The metric namespaces, and the metric names, to enrich. If this parameter is omitted, every namespace that Amazon CloudWatch supports for enrichment is in scope.
 A maximum of 100 filters is allowed across `IncludeFilters` and `ExcludeFilters` combined.
 Type: Array of [OTelEnrichmentMetricSelector](API_OTelEnrichmentMetricSelector.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 100 items.
 Required: No
 
+## Response Syntax
+<a name="API_UpdateOTelEnrichment_ResponseSyntax"></a>
+
+```
+{
+   "CreatedAt": number,
+   "ExcludeFilters": [
+      {
+         "MetricNames": [ "string" ],
+         "Namespace": "string"
+      }
+   ],
+   "IncludeFilters": [
+      {
+         "MetricNames": [ "string" ],
+         "Namespace": "string"
+      }
+   ],
+   "UpdatedAt": number
+}
+```
+
 ## Response Elements
 <a name="API_UpdateOTelEnrichment_ResponseElements"></a>
 
-The following elements are returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** CreatedAt **
+The following data is returned in JSON format by the service.
+
+ ** [CreatedAt](#API_UpdateOTelEnrichment_ResponseSyntax) **   <a name="ACW-UpdateOTelEnrichment-response-CreatedAt"></a>
 The date and time that enrichment started for the account.
 Type: Timestamp
 
- ** ExcludeFilters **
+ ** [ExcludeFilters](#API_UpdateOTelEnrichment_ResponseSyntax) **   <a name="ACW-UpdateOTelEnrichment-response-ExcludeFilters"></a>
 The exclude filters that are stored for the account after the replacement. This parameter is omitted when the request cleared the exclude filters, which means that nothing is excluded.
 Type: Array of [OTelEnrichmentMetricSelector](API_OTelEnrichmentMetricSelector.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 100 items.
 
- ** IncludeFilters **
+ ** [IncludeFilters](#API_UpdateOTelEnrichment_ResponseSyntax) **   <a name="ACW-UpdateOTelEnrichment-response-IncludeFilters"></a>
 The include filters that are stored for the account after the replacement. This parameter is omitted when the request cleared the include filters, which means that every supported namespace is in scope.
 Type: Array of [OTelEnrichmentMetricSelector](API_OTelEnrichmentMetricSelector.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 100 items.
 
- ** UpdatedAt **
+ ** [UpdatedAt](#API_UpdateOTelEnrichment_ResponseSyntax) **   <a name="ACW-UpdateOTelEnrichment-response-UpdatedAt"></a>
 The date and time that the enrichment configuration for the account was last stored.
 Type: Timestamp
 

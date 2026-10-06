@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/iam/index.html
 title: 'AWS Identity and Access Management Documentation'
 canonical_url: https://docs.aws.amazon.com/iam/
 source: aws-documentation
-generated_on: 2026-10-03
+generated_on: 2026-10-05
 ---
 
 # AWS Identity and Access Management Documentation

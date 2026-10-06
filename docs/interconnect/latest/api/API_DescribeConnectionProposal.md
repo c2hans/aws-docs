@@ -7,37 +7,64 @@ source_url: https://docs.aws.amazon.com/interconnect/latest/api/API_DescribeConn
 
 Describes the details of a connection proposal generated at a partner's portal. This proposal is delivered in the form of an Activation Key.
 
+## Request Syntax
+<a name="API_DescribeConnectionProposal_RequestSyntax"></a>
+
+```
+{
+   "activationKey": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_DescribeConnectionProposal_RequestParameters"></a>
 
- ** activationKey **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [activationKey](#API_DescribeConnectionProposal_RequestSyntax) **   <a name="interconnect-DescribeConnectionProposal-request-activationKey"></a>
 An Activation Key that was generated on a supported partner's portal. This key captures the desired parameters from the initial creation request.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Required: Yes
 
+## Response Syntax
+<a name="API_DescribeConnectionProposal_ResponseSyntax"></a>
+
+```
+{
+   "bandwidth": "string",
+   "environmentId": "string",
+   "location": "string",
+   "provider": { ... }
+}
+```
+
 ## Response Elements
 <a name="API_DescribeConnectionProposal_ResponseElements"></a>
 
-The following elements are returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** bandwidth **
+The following data is returned in JSON format by the service.
+
+ ** [bandwidth](#API_DescribeConnectionProposal_ResponseSyntax) **   <a name="interconnect-DescribeConnectionProposal-response-bandwidth"></a>
 The bandwidth of the proposed [Connection](API_Connection.md).
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 8.
 Pattern: `\d+[MG]bps`
 
- ** environmentId **
+ ** [environmentId](#API_DescribeConnectionProposal_ResponseSyntax) **   <a name="interconnect-DescribeConnectionProposal-response-environmentId"></a>
 The identifier of the [Environment](API_Environment.md) upon which the [Connection](API_Connection.md) would be placed if this proposal were accepted.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 
- ** location **
+ ** [location](#API_DescribeConnectionProposal_ResponseSyntax) **   <a name="interconnect-DescribeConnectionProposal-response-location"></a>
 The partner specific location distinguisher of the specific [Environment](API_Environment.md) of the proposal.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 255.
 
- ** provider **
+ ** [provider](#API_DescribeConnectionProposal_ResponseSyntax) **   <a name="interconnect-DescribeConnectionProposal-response-provider"></a>
 The partner provider of the specific [Environment](API_Environment.md) of the proposal.
 Type: [Provider](API_Provider.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.

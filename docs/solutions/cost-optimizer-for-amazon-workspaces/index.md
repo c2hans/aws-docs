@@ -6,15 +6,15 @@ source_url: https://docs.aws.amazon.com//solutions/cost-optimizer-for-amazon-wor
 title: 'Cost Optimizer for Amazon WorkSpaces'
 canonical_url: https://docs.aws.amazon.com/solutions/cost-optimizer-for-amazon-workspaces/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # Cost Optimizer for Amazon WorkSpaces
 
 Monitor Amazon WorkSpaces usage and optimize costs
 
-- **Version**: 2.9.12
-- **Released**: 9/2026
+- **Version**: 2.9.13
+- **Released**: 10/2026
 - **Author**: AWS
 - **Est. deployment time**: 5-15 mins
 - **Estimated cost**: [See details](/solutions/latest/cost-optimizer-for-workspaces/cost.html)

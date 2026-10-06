@@ -14,7 +14,7 @@ An annotation for modifying an existing variable in an Automated Reasoning polic
 The current name of the variable to update.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `[A-Za-z][A-Za-z0-9_]*`
+Pattern: `\p{L}[\p{L}\p{M}0-9_]*( [\p{L}\p{M}0-9_]+)*`
 Required: Yes
 
  ** description **   <a name="bedrock-Type-AutomatedReasoningPolicyUpdateVariableAnnotation-description"></a>
@@ -28,7 +28,7 @@ Required: No
 The new name for the variable, if you want to rename it. If not provided, the name remains unchanged.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `[A-Za-z][A-Za-z0-9_]*`
+Pattern: `\p{L}[\p{L}\p{M}0-9_]*( [\p{L}\p{M}0-9_]+)*`
 Required: No
 
 ## See Also

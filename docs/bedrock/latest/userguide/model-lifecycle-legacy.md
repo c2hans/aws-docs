@@ -74,14 +74,6 @@ The following table shows models that are currently in the Legacy state or are p
   - **Public extended access start date:** —
 
 - **Amazon**
-  - **Model name:** Nova Premier
-  - **Model ID:** amazon.nova-premier-v1:0
-  - **Regions:** us-east-1, us-east-2, us-west-2
-  - **Legacy date:** March 13, 2026
-  - **EOL date:** September 14, 2026
-  - **Public extended access start date:** —
-
-- **Amazon**
   - **Model name:** Nova Sonic
   - **Model ID:** amazon.nova-sonic-v1:0
   - **Regions:** ap-northeast-1, eu-north-1, us-east-1

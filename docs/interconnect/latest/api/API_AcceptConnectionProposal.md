@@ -11,47 +11,95 @@ The proposal contains the [Environment](API_Environment.md) and bandwidth that w
 
 Upon accepting the proposal a connection will be made between the AWS network as accessed via the selected [AttachPoint](API_AttachPoint.md) and the network previously selected network on the partner's portal.
 
+## Request Syntax
+<a name="API_AcceptConnectionProposal_RequestSyntax"></a>
+
+```
+{
+   "activationKey": "{{string}}",
+   "attachPoint": { ... },
+   "clientToken": "{{string}}",
+   "description": "{{string}}",
+   "tags": {
+      "{{string}}" : "{{string}}"
+   }
+}
+```
+
 ## Request Parameters
 <a name="API_AcceptConnectionProposal_RequestParameters"></a>
 
- ** activationKey **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [activationKey](#API_AcceptConnectionProposal_RequestSyntax) **   <a name="interconnect-AcceptConnectionProposal-request-activationKey"></a>
 An Activation Key that was generated on a supported partner's portal. This key captures the desired parameters from the initial creation request.
 The details of this request can be described using with [DescribeConnectionProposal](API_DescribeConnectionProposal.md).
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Required: Yes
 
- ** attachPoint **
+ ** [attachPoint](#API_AcceptConnectionProposal_RequestSyntax) **   <a name="interconnect-AcceptConnectionProposal-request-attachPoint"></a>
 The [AttachPoint](API_AttachPoint.md) to which the connection should be associated.
 Type: [AttachPoint](API_AttachPoint.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: Yes
 
- ** clientToken **
+ ** [clientToken](#API_AcceptConnectionProposal_RequestSyntax) **   <a name="interconnect-AcceptConnectionProposal-request-clientToken"></a>
 Idempotency token used for the request.
 Type: String
 Required: No
 
- ** description **
+ ** [description](#API_AcceptConnectionProposal_RequestSyntax) **   <a name="interconnect-AcceptConnectionProposal-request-description"></a>
 A description to distinguish this [Connection](API_Connection.md).
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[-a-zA-Z0-9_ ]+`
 Required: No
 
- ** tags **
+ ** [tags](#API_AcceptConnectionProposal_RequestSyntax) **   <a name="interconnect-AcceptConnectionProposal-request-tags"></a>
 The tags to associate with the resulting [Connection](API_Connection.md).
 Type: String to string map
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
 Value Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 
+## Response Syntax
+<a name="API_AcceptConnectionProposal_ResponseSyntax"></a>
+
+```
+{
+   "connection": {
+      "activationKey": "string",
+      "arn": "string",
+      "attachPoint": { ... },
+      "bandwidth": "string",
+      "billingTier": number,
+      "description": "string",
+      "environmentId": "string",
+      "id": "string",
+      "location": "string",
+      "ownerAccount": "string",
+      "provider": { ... },
+      "sharedId": "string",
+      "state": "string",
+      "tags": {
+         "string" : "string"
+      },
+      "type": "string"
+   }
+}
+```
+
 ## Response Elements
 <a name="API_AcceptConnectionProposal_ResponseElements"></a>
 
-The following element is returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** connection **
+The following data is returned in JSON format by the service.
+
+ ** [connection](#API_AcceptConnectionProposal_ResponseSyntax) **   <a name="interconnect-AcceptConnectionProposal-response-connection"></a>
 The created [Connection](API_Connection.md) object.
 Type: [Connection](API_Connection.md) object
 

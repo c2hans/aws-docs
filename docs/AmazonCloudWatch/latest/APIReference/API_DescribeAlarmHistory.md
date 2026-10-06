@@ -11,70 +11,116 @@ CloudWatch retains the history of an alarm even if you delete the alarm.
 
 To use this operation and return information about a composite alarm, you must be signed on with the `cloudwatch:DescribeAlarmHistory` permission that is scoped to `*`. You can't return information about composite alarms if your `cloudwatch:DescribeAlarmHistory` permission has a narrower scope.
 
+## Request Syntax
+<a name="API_DescribeAlarmHistory_RequestSyntax"></a>
+
+```
+{
+   "AlarmContributorId": "{{string}}",
+   "AlarmName": "{{string}}",
+   "AlarmTypes": [ "{{string}}" ],
+   "EndDate": {{number}},
+   "HistoryItemType": "{{string}}",
+   "MaxRecords": {{number}},
+   "NextToken": "{{string}}",
+   "ScanBy": "{{string}}",
+   "StartDate": {{number}}
+}
+```
+
 ## Request Parameters
 <a name="API_DescribeAlarmHistory_RequestParameters"></a>
 
- ** AlarmContributorId **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [AlarmContributorId](#API_DescribeAlarmHistory_RequestSyntax) **   <a name="ACW-DescribeAlarmHistory-request-AlarmContributorId"></a>
 The unique identifier of a specific alarm contributor to filter the alarm history results.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 16.
 Required: No
 
- ** AlarmName **
+ ** [AlarmName](#API_DescribeAlarmHistory_RequestSyntax) **   <a name="ACW-DescribeAlarmHistory-request-AlarmName"></a>
 The name of the alarm.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: No
 
- ** AlarmTypes **
+ ** [AlarmTypes](#API_DescribeAlarmHistory_RequestSyntax) **   <a name="ACW-DescribeAlarmHistory-request-AlarmTypes"></a>
 Use this parameter to specify whether you want the operation to return metric alarms, composite alarms, or log alarms. If you omit this parameter, only metric alarms are returned.
 Type: Array of strings
 Valid Values: `CompositeAlarm | MetricAlarm | LogAlarm`
 Required: No
 
- ** EndDate **
+ ** [EndDate](#API_DescribeAlarmHistory_RequestSyntax) **   <a name="ACW-DescribeAlarmHistory-request-EndDate"></a>
 The ending date to retrieve alarm history.
 Type: Timestamp
 Required: No
 
- ** HistoryItemType **
+ ** [HistoryItemType](#API_DescribeAlarmHistory_RequestSyntax) **   <a name="ACW-DescribeAlarmHistory-request-HistoryItemType"></a>
 The type of alarm histories to retrieve.
 Type: String
 Valid Values: `ConfigurationUpdate | StateUpdate | Action | AlarmContributorStateUpdate | AlarmContributorAction`
 Required: No
 
- ** MaxRecords **
+ ** [MaxRecords](#API_DescribeAlarmHistory_RequestSyntax) **   <a name="ACW-DescribeAlarmHistory-request-MaxRecords"></a>
 The maximum number of alarm history records to retrieve.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 100.
 Required: No
 
- ** NextToken **
+ ** [NextToken](#API_DescribeAlarmHistory_RequestSyntax) **   <a name="ACW-DescribeAlarmHistory-request-NextToken"></a>
 The token returned by a previous call to indicate that there is more data available.
 Type: String
 Required: No
 
- ** ScanBy **
+ ** [ScanBy](#API_DescribeAlarmHistory_RequestSyntax) **   <a name="ACW-DescribeAlarmHistory-request-ScanBy"></a>
 Specified whether to return the newest or oldest alarm history first. Specify `TimestampDescending` to have the newest event history returned first, and specify `TimestampAscending` to have the oldest history returned first.
 Type: String
 Valid Values: `TimestampDescending | TimestampAscending`
 Required: No
 
- ** StartDate **
+ ** [StartDate](#API_DescribeAlarmHistory_RequestSyntax) **   <a name="ACW-DescribeAlarmHistory-request-StartDate"></a>
 The starting date to retrieve alarm history.
 Type: Timestamp
 Required: No
 
+## Response Syntax
+<a name="API_DescribeAlarmHistory_ResponseSyntax"></a>
+
+```
+{
+   "AlarmHistoryItems": [
+      {
+         "AlarmContributorAttributes": {
+            "string" : "string"
+         },
+         "AlarmContributorId": "string",
+         "AlarmName": "string",
+         "AlarmType": "string",
+         "HistoryData": "string",
+         "HistoryItemType": "string",
+         "HistorySummary": "string",
+         "Timestamp": number
+      }
+   ],
+   "NextToken": "string"
+}
+```
+
 ## Response Elements
 <a name="API_DescribeAlarmHistory_ResponseElements"></a>
 
-The following elements are returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** AlarmHistoryItems **
+The following data is returned in JSON format by the service.
+
+ ** [AlarmHistoryItems](#API_DescribeAlarmHistory_ResponseSyntax) **   <a name="ACW-DescribeAlarmHistory-response-AlarmHistoryItems"></a>
 The alarm histories, in JSON format.
 Type: Array of [AlarmHistoryItem](API_AlarmHistoryItem.md) objects
 
- ** NextToken **
+ ** [NextToken](#API_DescribeAlarmHistory_ResponseSyntax) **   <a name="ACW-DescribeAlarmHistory-response-NextToken"></a>
 The token that marks the start of the next batch of returned results.
 Type: String
 

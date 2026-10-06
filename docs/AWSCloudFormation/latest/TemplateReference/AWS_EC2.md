@@ -72,6 +72,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::EC2::RouteServerPeer](aws-resource-ec2-routeserverpeer.md)
 + [AWS::EC2::RouteServerPropagation](aws-resource-ec2-routeserverpropagation.md)
 + [AWS::EC2::RouteTable](aws-resource-ec2-routetable.md)
++ [AWS::EC2::SecondaryNetwork](aws-resource-ec2-secondarynetwork.md)
 + [AWS::EC2::SecurityGroup](aws-resource-ec2-securitygroup.md)
 + [AWS::EC2::SecurityGroupEgress](aws-resource-ec2-securitygroupegress.md)
 + [AWS::EC2::SecurityGroupIngress](aws-resource-ec2-securitygroupingress.md)

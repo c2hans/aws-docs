@@ -7,32 +7,73 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_ListPla
 
 Lists all Region switch plans in your AWS account.
 
+## Request Syntax
+<a name="API_ListPlans_RequestSyntax"></a>
+
+```
+{
+   "maxResults": {{number}},
+   "nextToken": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_ListPlans_RequestParameters"></a>
 
- ** maxResults **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [maxResults](#API_ListPlans_RequestSyntax) **   <a name="regionswitch-ListPlans-request-maxResults"></a>
 The number of objects that you want to return with this call.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 100.
 Required: No
 
- ** nextToken **
+ ** [nextToken](#API_ListPlans_RequestSyntax) **   <a name="regionswitch-ListPlans-request-nextToken"></a>
 Specifies that you want to receive the next page of results. Valid only if you received a `nextToken` response in the previous request. If you did, it indicates that more output is available. Set this parameter to the value provided by the previous call's `nextToken` response to request the next page of results.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Required: No
 
+## Response Syntax
+<a name="API_ListPlans_ResponseSyntax"></a>
+
+```
+{
+   "nextToken": "string",
+   "plans": [
+      {
+         "activePlanExecution": "string",
+         "arn": "string",
+         "description": "string",
+         "executionRole": "string",
+         "name": "string",
+         "owner": "string",
+         "primaryRegion": "string",
+         "recoveryApproach": "string",
+         "recoveryTimeObjectiveMinutes": number,
+         "regions": [ "string" ],
+         "updatedAt": number,
+         "version": "string"
+      }
+   ]
+}
+```
+
 ## Response Elements
 <a name="API_ListPlans_ResponseElements"></a>
 
-The following elements are returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** nextToken **
+The following data is returned in JSON format by the service.
+
+ ** [nextToken](#API_ListPlans_ResponseSyntax) **   <a name="regionswitch-ListPlans-response-nextToken"></a>
 Specifies that you want to receive the next page of results. Valid only if you received a `nextToken` response in the previous request. If you did, it indicates that more output is available. Set this parameter to the value provided by the previous call's `nextToken` response to request the next page of results.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 
- ** plans **
+ ** [plans](#API_ListPlans_ResponseSyntax) **   <a name="regionswitch-ListPlans-response-plans"></a>
 The plans that were requested.
 Type: Array of [AbbreviatedPlan](API_AbbreviatedPlan.md) objects
 

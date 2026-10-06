@@ -88,7 +88,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/da
 + [Migrate an on-premises Microsoft SQL Server database to Amazon EC2 using MGN](migrate-microsoft-sql-server-to-amazon-ec2-using-aws-mgn.md)
 + [Migrate on-premises Cloudera workloads to Cloudera Data Platform on AWS](migrate-on-premises-cloudera-workloads-to-cloudera-data-platform-on-aws.md)
 + [Migrate on-premises MySQL databases to Aurora MySQL using Percona XtraBackup, Amazon EFS, and Amazon S3](migrate-on-premises-mysql-databases-to-aurora-mysql-using-percona-xtrabackup-amazon-efs-and-amazon-s3.md)
-+ [Migrate Oracle Business Intelligence 12c to the AWS Cloud from on-premises servers](migrate-oracle-business-intelligence-12c-to-the-aws-cloud-from-on-premises-servers.md)
 + [Migrate Oracle CLOB values to individual rows in PostgreSQL on AWS](migrate-oracle-clob-values-to-individual-rows-in-postgresql-on-aws.md)
 + [Migrate Oracle Database error codes to an Amazon Aurora PostgreSQL-Compatible database](migrate-oracle-database-error-codes-to-an-amazon-aurora-postgresql-compatible-database.md)
 + [Migrate Oracle external tables to Amazon Aurora PostgreSQL-Compatible](migrate-oracle-external-tables-to-amazon-aurora-postgresql-compatible.md)

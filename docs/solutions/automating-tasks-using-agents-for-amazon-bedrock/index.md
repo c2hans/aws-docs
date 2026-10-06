@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/automating-tasks-using-agents-
 title: 'Guidance for Automating Tasks Using Agents for Amazon Bedrock'
 canonical_url: https://docs.aws.amazon.com/solutions/automating-tasks-using-agents-for-amazon-bedrock/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # Guidance for Automating Tasks Using Agents for Amazon Bedrock

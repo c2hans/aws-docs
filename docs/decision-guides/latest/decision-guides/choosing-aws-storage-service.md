@@ -10,34 +10,30 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/c
 |  |  |
 | --- |--- |
 | **Purpose** | Help determine which AWS storage service is the best fit for your organization. |
-| **Last updated** | June 26, 2024 |
-| **Covered services** |  +  [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/GetStartedWithS3.html) <br />+  [Amazon EBS](https://docs.aws.amazon.com/ebs/latest/userguide/what-is-ebs.html) <br />+  [Amazon EFS](https://docs.aws.amazon.com/efs/latest/ug/getting-started.html) <br />+  [Amazon FSx](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/getting-started.html) <br />+  [Amazon File Cache](https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/getting-started.html) <br />+  [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/getting-started.html) <br />+  [AWS DataSync](https://docs.aws.amazon.com/datasync/latest/userguide/getting-started.html) <br />+  [AWS Snow Family](https://docs.aws.amazon.com/snowball/) <br />+  [AWS Storage Gateway](https://docs.aws.amazon.com/storagegateway/) <br />+  [AWS Transfer Family](https://docs.aws.amazon.com/transfer/latest/userguide/getting-started.html)   |
+| **Last updated** | October 5, 2026 |
+| **Covered services** |  +  [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/GetStartedWithS3.html) <br />+  [Amazon EBS](https://docs.aws.amazon.com/ebs/latest/userguide/what-is-ebs.html) <br />+  [Amazon EFS](https://docs.aws.amazon.com/efs/latest/ug/getting-started.html) <br />+  [Amazon FSx](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/getting-started.html) <br />+  [Amazon File Cache](https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/getting-started.html) <br />+  [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/getting-started.html) <br />+  [AWS DataSync](https://docs.aws.amazon.com/datasync/latest/userguide/getting-started.html) <br />+  [AWS Data Transfer Terminal](https://docs.aws.amazon.com/datatransferterminal/latest/userguide/what-is-dtt.html) <br />+  [AWS Storage Gateway](https://docs.aws.amazon.com/storagegateway/) <br />+  [AWS Transfer Family](https://docs.aws.amazon.com/transfer/latest/userguide/getting-started.html)   |
 
 ## Introduction
 <a name="intro"></a>
 
-AWS offers a broad portfolio of reliable, scalable, and secure storage services for storing, accessing, protecting, and analyzing your data. This makes it easier to match your storage methods with your needs, and provides storage options that are not easily achievable with on-premises infrastructure. When selecting a storage service, ensuring that it aligns with your access patterns will be critical to achieving the performance you want.
+AWS offers a broad portfolio of reliable, scalable, and secure storage services for storing, accessing, protecting, and analyzing your data. This makes it easier to match your storage methods with your needs, and provides storage options that are not easily achievable with on-premises infrastructure. When selecting a storage service, ensuring that it aligns with your access patterns will be critical to achieving the performance, cost, efficiency, security, and resiliency you want.
 
 You can select from block, file, and object storage services as well as cloud data migration options for your workload. Choosing the right storage service for your workload requires you to make a series of decisions based on your business needs.
 
-This decision guide will help you ask the right questions, provide a clear path for implementation, and help you migrate from your existing on-premises storage.
-
-[![AWS Videos](https://img.youtube.com/vi/A14EbSrZeFM?start=16&end=377/0.jpg)](https://www.youtube.com/watch?v=A14EbSrZeFM?start=16&end=377)
+This decision guide will help you ask the right questions, provide a clear path for implementation, and help you migrate from your existing on-premises or cloud storage.
 
 ## Understand
 <a name="understand"></a>
 
-Data is a cornerstone of successful application deployments, analytics workflows, and machine learning innovations. Well-architected systems use multiple storage services and enable different features to improve performance.
+Data is a cornerstone of successful application deployments, analytics workflows, and machine learning innovations. Well-architected workloads frequently use multiple storage services and enable different features to improve performance.
 
 In many cases, however, choosing the right storage service will start with how well it aligns with what you're already using (or are familiar with). Working with storage services that you are familiar with will make it easier for you to get started - and can make migration of your data easier and potentially faster.
 
-![Diagram showing data protection, data at work, and data in motion with the Amazon FSx data storage family.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/amazon-fsx-data-storage-family.png)
-
-For example, services in the Amazon FSx data storage family come in four options that align to popular file systems:
+For example, services in the Amazon FSx data storage family come in four options that align to widely used file systems and protocols:
 + **Amazon FSx for Windows File Server** provides fully managed Microsoft Windows file servers, backed by a fully native Windows file system.
-+ **Amazon FSx for Lustre** allows you to launch and run the high-performance Lustre file system.
++ **Amazon FSx for Lustre** is designed for use with Unix/Linux-based file systems. FSx for Lustre is optimized for workloads where speed matters, such as machine learning, high-performance computing (HPC), video processing, and financial modeling.
 + **Amazon FSx for OpenZFS** a fully managed file storage service that enables you to move data to AWS from on-premises ZFS or other Linux-based file servers.
-+ **Amazon FSx for NetApp ONTAP** a fully managed service that provides highly reliable, scalable, high-performing, and feature-rich file storage built on NetApp's popular ONTAP file system.
++ **Amazon FSx for NetApp ONTAP** a fully managed service that provides scalable file storage built on the NetApp ONTAP file system.
 
 ### Definitions
 <a name="definitions"></a>
@@ -45,7 +41,7 @@ For example, services in the Amazon FSx data storage family come in four options
 There are AWS service options for the following storage types:
 + **Block** — Block storage is technology that controls data storage and storage devices. It takes any data, like a file or database entry, and divides it into blocks of equal sizes. The block storage system then stores the data block on underlying physical storage in a manner that is optimized for fast access and retrieval.
 + **File system** — File systems store data in a hierarchical structure of files and folders. In network environments, file-based storage often uses network-attached storage (NAS) technology. NAS allows users to access network storage data in similar ways to a local hard drive. File storage is user-friendly and allows users to manage file-sharing control.
-+ **Object** — Object storage is a technology that stores and manages data in an unstructured format called objects. Each object is tagged with a unique identifier and contains metadata that describes the underlying content.
++ **Object** — Object storage is a technology that stores and manages data in an unstructured format called objects. Each object is tagged with a unique identifier and contains metadata that describes the underlying content. In addition to object storage, Amazon S3 also supports table storage (S3 Tables, for Apache Iceberg analytics), vector storage (S3 Vectors, for AI and ML embeddings), and file access to your Amazon S3 data (S3 Files).
 + **Cache** — A cache is a high-speed data storage layer used to temporarily store frequently accessed or recently used data closer to the point of access, with the aim of improving system performance and reducing latency. It serves as a buffer between the slower and larger primary storage (such as disks or remote storage) and the computing resources that need to access the data.
 + **Hybrid/Edge** — Hybrid/Edge storage combines on-premises storage infrastructure with cloud storage services, allowing data mobility between the two environments based on requirements like performance, cost, and compliance. It provides benefits such as low-latency access, cost optimization, data sovereignty, cloud scalability, and business continuity.
 
@@ -53,12 +49,12 @@ There are AWS service options for the following storage types:
 <a name="migration_options"></a>
 
 In addition to choosing a storage service, you will need to make choices about how you migrate your data to live within the chosen services. AWS offers several choices to migrate your data - based on whether it needs to live online or offline.
-+ **Online migration** involves transferring data and applications over the internet while they are still running in the on-premises data center. This approach can be more efficient than offline migration since it minimizes downtime and enables organizations to start using cloud resources sooner. However, it requires a reliable internet connection and may not be suitable for large amounts of data or mission-critical applications.
++ **Online migration** involves transferring data and applications over the internet while they are still running in your on-premises data center or another cloud environment. This approach can be more efficient than offline migration since it minimizes downtime and enables organizations to start using cloud resources sooner. However, it requires a reliable internet connection and may not be suitable for large amounts of data or mission-critical applications.
 + **Offline migration** involves moving data and applications without any connection to the internet. This approach requires physically transporting the data on external hard drives or other storage media to the cloud provider’s data center. This method is typically used when there are large amounts of data to transfer, limited bandwidth or connectivity, or concerns about security and privacy.
 
 There are two key considerations:
 + **Speed - ** Choose online migration when speed matters. Online is measured in minutes or hours, and offline can be measured by days. If data is frequently updated and time-critical, choose online. Choose offline when it’s a one-time move, and not time-critical.
-+ **Bandwidth -** Moving data online takes away from available bandwidth used for day-to-day. Choose offline when there are network constraints, and data can be offline while in transit without disrupting your business. AWS services in the Snow Family offer an option for offline migration.
++ **Bandwidth -** Moving data online takes away from available bandwidth used for day-to-day. Choose offline when there are network constraints, and data can be offline while in transit without disrupting your business. For offline or physical transfers, you can use AWS Data Transfer Terminal and AWS Partner solutions. The Snow Family is no longer available to new customers; existing customers, including AWS GovCloud (US) customers with active Snow jobs, are unaffected. For online transfers, you can use AWS DataSync.
 
 ## Consider
 <a name="consider"></a>
@@ -82,7 +78,9 @@ Protocols play a crucial role when considering AWS storage services as they dete
 
 It's important to consider the operating system of the clients that will be accessing the data. Windows-based clients can use file-based storage options such as Amazon FSx for Windows File Server. It provides highly available storage to your Windows applications with full Server Message Block (SMB) support.
 
-Amazon FSx for Lustre (for high-performance file systems) is designed for use with Unix/Linux-based file systems. FSx for Lustre is optimized for workloads where speed matters, such as machine learning, high performance computing (HPC), video processing, and financial modeling.
+Amazon FSx for Lustre (for high-performance file systems) is designed for use with Unix/Linux-based file systems. FSx for Lustre is optimized for workloads where speed matters, such as machine learning, high-performance computing (HPC), video processing, and financial modeling.
+
+Amazon FSx for NetApp ONTAP supports both NFS and SMB protocols, including concurrent multi-protocol access to the same data. This makes it suitable for mixed environments where both Linux and Windows clients need access to shared data, such as when migrating from on-premises NetApp appliances.
 
 The choice of client type for an AWS storage service is critical to ensure easy access and sharing of data across workloads. Selecting a service that is compatible with the file systems and protocols used by your clients is key to avoiding compatibility issues and ensuring seamless data access and transfer.
 
@@ -94,16 +92,18 @@ Performance is a critical factor to consider when choosing an AWS storage servic
 + Do other metrics (such as IOPS or throughput) dominate your applications performance profile?
 + Is your workload read or write-heavy?
 
+Different storage services provide different performance ceilings. For example, Amazon EBS gp3 volumes support up to 64 TiB of capacity, 80,000 IOPS, and 2,000 MB/s of throughput.
+
 ------
 #### [ Migration strategy and risks ]
 
-The skills of your organization are a major factor when deciding which container services you use. The approach you take can require some investment in DevOps and Site Reliability Engineer (SRE) teams. Building out an automated pipeline to deploy applications is common for most modern application development.
+When you migrate to AWS storage, start by assessing what data you need to move and how it is used. Decide whether to transfer data online or offline based on data size, available bandwidth, and time constraints. Match each dataset to a target storage service that fits its access patterns, and plan for data integrity validation and cutover to minimize downtime.
 
 Some factors to consider when migrating your on-premises storage to AWS are:
 + **Data transfer**: what is the most efficient method to transfer your data to AWS?
-+ **Compatibility**: For example, if you already leverage NetApp ONTAP appliances on-premises services (such as Amazon FSx for NetApp ONTAP) provide a seamless migration path.
++ **Compatibility**: For example, if you already use NetApp ONTAP appliances on premises, Amazon FSx for NetApp ONTAP and its SnapMirror replication provide a direct migration path.
 + **Application integration**: Evaluate how your applications will integrate with AWS storage services. Consider any necessary modifications or configurations required to enable seamless connectivity and functionality between your applications and the AWS environment.
-+ **Data Management and lifecycle:** Plan for data management tasks such as backup, replication, and lifecycle management in the AWS environment. Consider AWS services and features that can help automate these tasks, such as versioning, lifecycle policies, and cross-region replication.
++ **Data management and lifecycle:** Plan for data management tasks such as backup, replication, and lifecycle management in the AWS environment. Consider AWS services and features that can help automate these tasks, such as versioning, lifecycle policies, and cross-Region replication.
 + **Security and compliance**: Ensure that your data remains secure during the migration process. Implement appropriate security measures, such as encryption and access controls, to protect your data both in transit and at rest.
 + **Cost optimization**: Analyze the cost implications of migrating your storage solution to AWS. Consider factors such as storage pricing, data transfer costs, and any associated services or features required to optimize costs.
 
@@ -116,7 +116,9 @@ Backup and protection requirements are critical factors to consider when choosin
 
 Without adequate backup and protection measures, data can be lost due to accidental deletion, hardware failure, or natural disasters, which can have severe consequences for your business.
 
-Familiarize yourself with services such as [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/getting-started.html), which can backup your data on demand or automatically as part of a scheduled backup plan. AWS Backup also offers cross-region replication which can be particularly valuable if you have business continuity or compliance requirements to store backups a minimum distance away from your production data.
+Familiarize yourself with services such as [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/getting-started.html), which can backup your data on demand or automatically as part of a scheduled backup plan. AWS Backup also offers cross-Region replication which can be particularly valuable if you have business continuity or compliance requirements to store backups a minimum distance away from your production data.
+
+AWS Backup supports the FSx Intelligent-Tiering storage class, so you can protect data stored in that class as part of your backup plans.
 
 ------
 #### [ Disaster recovery ]
@@ -125,13 +127,18 @@ Disaster recovery is a critical consideration when choosing an AWS storage servi
 
 Choosing a storage service that provides disaster recovery features, such as replication across multiple availability zones, can help minimize the impact of a disaster on your business. It's important to consider factors such as recovery time objectives (RTO) and recovery point objectives (RPO) when evaluating disaster recovery options and choose a storage service that meets your business needs.
 
+You can also use AWS Elastic Disaster Recovery (AWS DRS) to recover applications by replicating them to AWS and launching recovery instances when needed.
+
 ------
 #### [ Cost ]
 
 Beyond the base storage costs, there are other factors that impact pricing such as storage capacity, data transfer, and availability that impacts the total cost of storage. The following can help you reduce cost when using an AWS storage service:
 + Use the appropriate storage service for your workload type.
-+ Use [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/) and other [billing tools](https://aws.amazon.com/aws-cost-management/) to monitor organizational speed.
++ Use [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/) and other [billing tools](https://aws.amazon.com/aws-cost-management/) to monitor organizational spend.
 + Understand your data and how it is being used.
++ Use storage classes and tiering features that match your access patterns. For example, use Amazon S3 Intelligent-Tiering for object data, or the FSx Intelligent-Tiering storage class for Amazon FSx for OpenZFS and Amazon FSx for Lustre workloads. The FSx Intelligent-Tiering storage class automatically tiers data across Frequent Access, Infrequent Access, and Archive tiers to reduce storage costs for data with changing access patterns.
++ For cold, rarely accessed file data, use the Amazon EFS Archive storage class. This class provides lower-cost storage for data that you access only a few times a year. You enable it through Amazon EFS Lifecycle Management, whose default policy transitions data to Archive after 90 days without access.
++ Amazon S3 no longer applies a 30-day minimum storage duration for transitions to Amazon S3 Standard-Infrequent Access and Amazon S3 One Zone-Infrequent Access.
 
 We also recommend that you use the [AWS Pricing Calculator](https://calculator.aws/#/) to estimate your cost when choosing an AWS storage service.
 
@@ -141,6 +148,31 @@ We also recommend that you use the [AWS Pricing Calculator](https://calculator.a
 Security at AWS is a [shared responsibility](https://aws.amazon.com/compliance/shared-responsibility-model/). AWS provides a secure foundation for customers to build and deploy their applications, but customers are responsible for implementing their own security measures to protect their data, applications, and infrastructure.
 
 You should consider aspects of security such as access control, data encryption, compliance requirements, monitoring and logging, and incident response when choosing an AWS storage service. By doing so, you can help ensure that your data is protected while using AWS services.
+
+To help protect stored data, you can use Amazon Macie to discover and classify sensitive data in Amazon S3, and Amazon S3 Object Lock to store objects using a write-once, read-many (WORM) model for immutability and compliance requirements.
+
+------
+#### [ Data residency and sovereignty ]
+
+If your workload has data-location or regulatory requirements, consider where your data is stored and who can access it. AWS Digital Sovereignty capabilities and AWS Control Tower data residency controls help you define and enforce where data resides. When data must stay in a specific location, Hybrid/Edge options and AWS Outposts can keep data on premises or in a chosen Region.
+
+------
+#### [ Sustainability ]
+
+The AWS Well-Architected Framework sustainability pillar provides guidance for reducing the environmental impact of your workloads. For storage, choosing right-sized storage classes and using tiering such as Intelligent-Tiering and Infrequent Access or Archive tiers helps reduce your storage footprint.
+
+------
+#### [ Modern workloads (AI/ML and containers) ]
+
+For AI and ML pipelines, match storage to each stage:
++ Use S3 Vectors to store embeddings for retrieval-augmented generation (RAG) and semantic search.
++ Use S3 Express One Zone for latency-sensitive training and inference.
++ Use S3 Files and Amazon FSx for Lustre for data preparation and training datasets.
+
+For container workloads, you can provide file, block, and object access to workloads on Amazon EKS:
++ Attach file and block storage through Container Storage Interface (CSI) drivers, such as the Amazon EFS CSI driver and the Amazon EBS CSI driver.
++ Mount S3 Files on Amazon EKS pods for file access to Amazon S3 data.
++ Use Amazon EC2 instance store for ephemeral, pod-local storage.
 
 ------
 
@@ -154,19 +186,19 @@ The following table highlights which storage options are optimized for which cir
 | Storage type | What is it optimized for? | Storage services or tools |
 | --- |--- |--- |
 | Block | Applications requiring low-latency, high-performance durable storage attached to single Amazon EC2 instances or containers, such as databases and general-purpose local instance storage. | [Amazon EBS](https://docs.aws.amazon.com/ebs/latest/userguide/what-is-ebs.html)<br />[ Amazon EC2 instance store ](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) |
-|  File system  |  Applications and workloads requiring shared read and write access across multiple Amazon EC2 instances or containers, or from multiple on-prem servers, such as team file shares, highly-available enterprise applications, analytics workloads, and ML training.  |  [Amazon EFS](https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html) [Amazon FSx](https://docs.aws.amazon.com/fsx/) [Amazon FSx for Lustre](https://docs.aws.amazon.com/fsx/latest/LustreGuide/what-is.html) [Amazon FSx for NetApp ONTAP](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html) [Amazon FSx for OpenZFS](https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/what-is-fsx.html) [Amazon FSx for Windows File Server](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/what-is.html) [Amazon S3 File Gateway](https://docs.aws.amazon.com/filegateway/latest/files3/what-is-file-s3.html) [Amazon FSx File Gateway](https://docs.aws.amazon.com/filegateway/latest/filefsxw/what-is-file-fsxw.html)  |
+|  File system  |  Applications and workloads requiring shared read and write access across multiple Amazon EC2 instances or containers, or from multiple on-premises servers, such as team file shares, highly available enterprise applications, analytics workloads, and ML training.  |  [Amazon EFS](https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html) [Amazon FSx](https://docs.aws.amazon.com/fsx/) [Amazon FSx for Lustre](https://docs.aws.amazon.com/fsx/latest/LustreGuide/what-is.html) [Amazon FSx for NetApp ONTAP](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html) [Amazon FSx for OpenZFS](https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/what-is-fsx.html) [Amazon FSx for Windows File Server](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/what-is.html) [Amazon S3 File Gateway](https://docs.aws.amazon.com/filegateway/latest/files3/what-is-file-s3.html) [Amazon FSx File Gateway](https://docs.aws.amazon.com/filegateway/latest/filefsxw/what-is-file-fsxw.html) [S3 Files](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files.html) (file access to Amazon S3 data)  |
 | --- |--- |--- |
 | Object | Read-heavy workloads such as content distribution, web hosting, big data analytics, and ML workflows. Well-suited for scenarios where data needs to be stored, accessed, and distributed globally over the internet. | [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/GetStartedWithS3.html) |
-|  Cache  |  Fully managed, scalable, and high-speed cache on AWS for processing file data stored in disparate locations—including on premises NFS file systems, and/or in cloud file systems (Amazon FSx for OpenZFS, Amazon FSx for NetApp ONTAP), and Amazon S3.  |  [Amazon File Cache](https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/getting-started.html)  |
+|  Cache  |  Fully managed, scalable, and high-speed cache on AWS for processing file data stored in disparate locations—including on-premises NFS file systems, and/or in cloud file systems (Amazon FSx for OpenZFS, Amazon FSx for NetApp ONTAP), and Amazon S3.  |  [Amazon File Cache](https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/getting-started.html)  |
 | --- |--- |--- |
-| Hybrid/Edge | Deliver low-latency data to on-premises applications and providing on-premises applications access to cloud-backed storage. | [AWS Storage Gateway Tape Gateway](https://docs.aws.amazon.com/storagegateway/latest/tgw/WhatIsStorageGateway.html)<br />[AWS Storage Gateway Volume Gateway](https://docs.aws.amazon.com/storagegateway/latest/vgw/WhatIsStorageGateway.html) |
+| Hybrid/Edge | Deliver low-latency data to on-premises applications and providing on-premises applications access to cloud-backed storage. | [Amazon S3 File Gateway](https://docs.aws.amazon.com/filegateway/latest/files3/what-is-file-s3.html)<br />[AWS Storage Gateway Tape Gateway](https://docs.aws.amazon.com/storagegateway/latest/tgw/WhatIsStorageGateway.html)<br />[AWS Storage Gateway Volume Gateway](https://docs.aws.amazon.com/storagegateway/latest/vgw/WhatIsStorageGateway.html) |
 
 The following table provides a detailed look at your online and offline options.
 
 | Migration options | When speed is the priority | When bandwidth is important | Storage services or tools |
 | --- |--- |--- |--- |
 | Online | Online is optimized for frequent updates to data. Use it for time-critical or ongoing workloads. | Consider scheduling your transfer during off hours when you have sufficient bandwidth. | [AWS DataSync](https://docs.aws.amazon.com/datasync/latest/userguide/setting-up.html)<br />[AWS Transfer Family](https://docs.aws.amazon.com/transfer/latest/userguide/getting-started.html)<br />[ Amazon FSx for NetApp ONTAP SnapMirror ](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/scheduled-replication.html)<br />[AWS Storage Gateway](https://docs.aws.amazon.com/storagegateway/) |
-|  Offline  | Suitable for one-time or periodic uploads - and when data can be static in transit. |  This choice makes sense when you need to use only the minimum available bandwidth - and you prefer the predictability of physical moves.   |  [AWS Snowball](https://docs.aws.amazon.com/snowball/)  |
+|  Offline  | Suitable for one-time or periodic uploads - and when data can be static in transit. |  This choice makes sense when you need to use only the minimum available bandwidth - and you prefer the predictability of physical moves.   |  [AWS Data Transfer Terminal](https://docs.aws.amazon.com/datatransferterminal/latest/userguide/what-is-dtt.html) The Snow Family remains available to existing customers only.  |
 | --- |--- |--- |--- |
 
 ## Use
@@ -239,7 +271,7 @@ To explore how to use and learn more about each of the available AWS storage ser
    [Explore the guide](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/getting-started.html)
 +  **Getting started with Amazon FSx for Lustre**
 
-  Learn how to use your Amazon FSx for Lustre file system to process the data in your Amazon S3 bucket with your file-based applications.
+  Amazon FSx for Lustre accelerates AI, ML, and high-performance computing (HPC) workloads. It integrates with Amazon S3 and natively integrates with Amazon SageMaker HyperPod. FSx for Lustre offers the SSD and Intelligent-Tiering storage classes. Learn how to use your Amazon FSx for Lustre file system to process the data in your Amazon S3 bucket with your file-based applications.
 
    [Explore the guide](https://docs.aws.amazon.com/fsx/latest/LustreGuide/getting-started.html)
 +  **What is Amazon FSx for Windows File Server?**
@@ -254,7 +286,7 @@ To explore how to use and learn more about each of the available AWS storage ser
    [Get started with the tutorial](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/getting-started.html)
 +  **Learn how to get started with Amazon FSx for OpenZFS**
 
-  This guide provides an introduction to Amazon FSx for OpenZFS.
+  This guide provides an introduction to Amazon FSx for OpenZFS. Amazon FSx for OpenZFS includes FSx Intelligent-Tiering for automatic cost optimization, and supports Amazon S3 Access Points, which makes file data accessible to AI, ML, and analytics services without moving data.
 
    [Get started with the tutorial](https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/getting-started.html)
 
@@ -267,7 +299,7 @@ To explore how to use and learn more about each of the available AWS storage ser
    [Get started with the tutorial](https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/getting-started.html)
 +  **Amazon File Cache in action**
 
-  This video shows how Amazon File Cache can be used as a temporary high performance storage location for data stored in on premises file systems.
+  This video shows how Amazon File Cache can be used as a temporary high-performance storage location for data stored in on-premises file systems.
 
    [Watch the video](https://www.youtube.com/watch?v=6G4DapCmNG4&t=41s)
 
@@ -332,17 +364,22 @@ To explore how to use and learn more about each of the available AWS storage ser
   Learn how to set up an SFTP connector, and then transfer files between Amazon S3 storage and an SFTP server.
 
 ------
-#### [ AWS Snow Family ]
-+  **Getting started with AWS Snow Family**
+#### [ AWS Data Transfer Terminal ]
++  **Getting started with AWS Data Transfer Terminal**
 
-  These guides provide links to documentation covering all current services in the Snow Family.
+  AWS Data Transfer Terminal is a network-ready physical facility where you bring your own storage devices and upload data over a high-throughput connection to AWS storage services such as Amazon S3 and Amazon EFS. It is available only to AWS Enterprise Support customers at this time, and is the recommended path for new offline data migration workloads.
+
+   [Explore the guide](https://docs.aws.amazon.com/datatransferterminal/latest/userguide/what-is-dtt.html)
++  **Make a data transfer**
+
+  Learn how to access a terminal site and upload data from your storage devices.
+
+   [Get started with the tutorial](https://docs.aws.amazon.com/datatransferterminal/latest/userguide/accessing-site.html)
++  **AWS Snow Family end of support**
+
+  AWS will discontinue support for AWS Snowball devices in all AWS commercial Regions on December 31, 2026. This does not affect AWS GovCloud (US) customers with active Snow jobs.
 
    [Explore the guides](https://docs.aws.amazon.com/snowball/)
-+  **AWS Snowball Edge developer guide**
-
-  This guide includes guidance for local storage and compute, clustering, importing and exporting data into Amazon S3, and other features of a Snowball Edge device.
-
-   [Explore the guide](https://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html)
 
 ------
 
@@ -353,7 +390,7 @@ To explore how to use and learn more about each of the available AWS storage ser
 + [Decision makers](https://aws.amazon.com/free/storage/)
 + **Architecture diagrams**
 
-  Explore reference architecture diagrams for containers on AWS.
+  Explore reference architecture diagrams for storage on AWS.
 
   [ Explore architecture diagrams](https://aws.amazon.com/architecture/?cards-all.sort-by=item.additionalFields.sortDate&cards-all.sort-order=desc&awsf.content-type=content-type%23reference-arch-diagram&awsf.methodology=*all&awsf.tech-category=tech-category%23storage&awsf.industries=*all&awsf.business-category=*all)
 + **Whitepapers**
@@ -363,6 +400,6 @@ To explore how to use and learn more about each of the available AWS storage ser
   [Explore whitepapers ](https://aws.amazon.com/whitepapers/?whitepapers-main.sort-by=item.additionalFields.sortDate&whitepapers-main.sort-order=desc&awsf.whitepapers-content-type=content-type%23whitepaper&awsf.whitepapers-global-methodology=*all&awsf.whitepapers-tech-category=tech-category%23storage&awsf.whitepapers-industries=*all&awsf.whitepapers-business-category=*all)
 + **AWS Solutions**
 
-  Explore vetted solutions and architectural guidance for common use cases for containers.
+  Explore vetted solutions and architectural guidance for common use cases for storage.
 
   [Explore solutions](https://aws.amazon.com/solutions/storage/)

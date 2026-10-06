@@ -9,57 +9,160 @@ Retrieves the alarms for the specified metric. To filter the results, specify a 
 
 This operation retrieves only standard alarms that are based on the specified metric. It does not return alarms based on math expressions that use the specified metric, or composite alarms that use the specified metric.
 
+## Request Syntax
+<a name="API_DescribeAlarmsForMetric_RequestSyntax"></a>
+
+```
+{
+   "Dimensions": [
+      {
+         "Name": "{{string}}",
+         "Value": "{{string}}"
+      }
+   ],
+   "ExtendedStatistic": "{{string}}",
+   "MetricName": "{{string}}",
+   "Namespace": "{{string}}",
+   "Period": {{number}},
+   "Statistic": "{{string}}",
+   "Unit": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_DescribeAlarmsForMetric_RequestParameters"></a>
 
- ** Dimensions **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [Dimensions](#API_DescribeAlarmsForMetric_RequestSyntax) **   <a name="ACW-DescribeAlarmsForMetric-request-Dimensions"></a>
 The dimensions associated with the metric. If the metric has any associated dimensions, you must specify them in order for the call to succeed.
 Type: Array of [Dimension](API_Dimension.md) objects
 Array Members: Maximum number of 30 items.
 Required: No
 
- ** ExtendedStatistic **
+ ** [ExtendedStatistic](#API_DescribeAlarmsForMetric_RequestSyntax) **   <a name="ACW-DescribeAlarmsForMetric-request-ExtendedStatistic"></a>
 The percentile statistic for the metric. Specify a value between p0.0 and p100.
 Type: String
 Required: No
 
- ** MetricName **
+ ** [MetricName](#API_DescribeAlarmsForMetric_RequestSyntax) **   <a name="ACW-DescribeAlarmsForMetric-request-MetricName"></a>
 The name of the metric.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes
 
- ** Namespace **
+ ** [Namespace](#API_DescribeAlarmsForMetric_RequestSyntax) **   <a name="ACW-DescribeAlarmsForMetric-request-Namespace"></a>
 The namespace of the metric.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[^:].*`
 Required: Yes
 
- ** Period **
+ ** [Period](#API_DescribeAlarmsForMetric_RequestSyntax) **   <a name="ACW-DescribeAlarmsForMetric-request-Period"></a>
 The period, in seconds, over which the statistic is applied.
 Type: Integer
 Valid Range: Minimum value of 1.
 Required: No
 
- ** Statistic **
+ ** [Statistic](#API_DescribeAlarmsForMetric_RequestSyntax) **   <a name="ACW-DescribeAlarmsForMetric-request-Statistic"></a>
 The statistic for the metric, other than percentiles. For percentile statistics, use `ExtendedStatistics`.
 Type: String
 Valid Values: `SampleCount | Average | Sum | Minimum | Maximum`
 Required: No
 
- ** Unit **
+ ** [Unit](#API_DescribeAlarmsForMetric_RequestSyntax) **   <a name="ACW-DescribeAlarmsForMetric-request-Unit"></a>
 The unit for the metric.
 Type: String
 Valid Values: `Seconds | Microseconds | Milliseconds | Bytes | Kilobytes | Megabytes | Gigabytes | Terabytes | Bits | Kilobits | Megabits | Gigabits | Terabits | Percent | Count | Bytes/Second | Kilobytes/Second | Megabytes/Second | Gigabytes/Second | Terabytes/Second | Bits/Second | Kilobits/Second | Megabits/Second | Gigabits/Second | Terabits/Second | Count/Second | None`
 Required: No
 
+## Response Syntax
+<a name="API_DescribeAlarmsForMetric_ResponseSyntax"></a>
+
+```
+{
+   "MetricAlarms": [
+      {
+         "ActionsEnabled": boolean,
+         "AlarmActions": [ "string" ],
+         "AlarmArn": "string",
+         "AlarmConfigurationUpdatedTimestamp": number,
+         "AlarmDescription": "string",
+         "AlarmName": "string",
+         "ComparisonOperator": "string",
+         "DatapointsToAlarm": number,
+         "Dimensions": [
+            {
+               "Name": "string",
+               "Value": "string"
+            }
+         ],
+         "EvaluateLowSampleCountPercentile": "string",
+         "EvaluationCriteria": { ... },
+         "EvaluationInterval": number,
+         "EvaluationPeriods": number,
+         "EvaluationState": "string",
+         "EvaluationWindow": { ... },
+         "ExtendedStatistic": "string",
+         "InsufficientDataActions": [ "string" ],
+         "MetricName": "string",
+         "Metrics": [
+            {
+               "AccountId": "string",
+               "Expression": "string",
+               "Id": "string",
+               "Label": "string",
+               "MetricStat": {
+                  "Metric": {
+                     "Dimensions": [
+                        {
+                           "Name": "string",
+                           "Value": "string"
+                        }
+                     ],
+                     "MetricName": "string",
+                     "Namespace": "string"
+                  },
+                  "Period": number,
+                  "Stat": "string",
+                  "Unit": "string"
+               },
+               "Period": number,
+               "ReturnData": boolean
+            }
+         ],
+         "Namespace": "string",
+         "OKActions": [ "string" ],
+         "Period": number,
+         "StateReason": "string",
+         "StateReasonData": "string",
+         "StateTransitionedTimestamp": number,
+         "StateUpdatedTimestamp": number,
+         "StateValue": "string",
+         "Statistic": "string",
+         "Threshold": number,
+         "ThresholdMetricId": "string",
+         "TreatMissingData": "string",
+         "Unit": "string",
+         "WarmUpConfiguration": {
+            "OnlyStartEvaluatingAfterWarmUpPeriodEnds": boolean,
+            "WarmUpPeriodDurationInMinutes": number
+         }
+      }
+   ]
+}
+```
+
 ## Response Elements
 <a name="API_DescribeAlarmsForMetric_ResponseElements"></a>
 
-The following element is returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** MetricAlarms **
+The following data is returned in JSON format by the service.
+
+ ** [MetricAlarms](#API_DescribeAlarmsForMetric_ResponseSyntax) **   <a name="ACW-DescribeAlarmsForMetric-response-MetricAlarms"></a>
 The information for each alarm with the specified metric.
 Type: Array of [MetricAlarm](API_MetricAlarm.md) objects
 

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/scaling-electronic-design-auto
 title: 'Guidance for Scaling Electronic Design Automation (EDA) on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/scaling-electronic-design-automation-on-aws/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # Guidance for Scaling Electronic Design Automation (EDA) on AWS

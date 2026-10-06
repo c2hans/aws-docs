@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com//solutions/trade-promotion-deduction-age
 title: 'Guidance for Trade Promotion Deduction Agents on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/trade-promotion-deduction-agents-on-aws/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # Guidance for Trade Promotion Deduction Agents on AWS

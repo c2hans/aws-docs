@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/scalable-analytics-using-apach
 title: 'Guidance for Scalable Analytics Using Apache Druid on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/scalable-analytics-using-apache-druid-on-aws/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # Guidance for Scalable Analytics Using Apache Druid on AWS

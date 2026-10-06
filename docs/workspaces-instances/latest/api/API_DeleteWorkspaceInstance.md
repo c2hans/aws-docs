@@ -10,15 +10,33 @@ Deletes the specified WorkSpace
 **Important**
 Usage of this API will result in deletion of the resource in question.
 
+## Request Syntax
+<a name="API_DeleteWorkspaceInstance_RequestSyntax"></a>
+
+```
+{
+   "WorkspaceInstanceId": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_DeleteWorkspaceInstance_RequestParameters"></a>
 
- ** WorkspaceInstanceId **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [WorkspaceInstanceId](#API_DeleteWorkspaceInstance_RequestSyntax) **   <a name="workspacesinstances-DeleteWorkspaceInstance-request-WorkspaceInstanceId"></a>
 Unique identifier of the WorkSpaces Instance targeted for deletion.
 Type: String
 Length Constraints: Minimum length of 15. Maximum length of 70.
 Pattern: `wsinst-[0-9a-zA-Z]{8,63}`
 Required: Yes
+
+## Response Elements
+<a name="API_DeleteWorkspaceInstance_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
 
 ## Errors
 <a name="API_DeleteWorkspaceInstance_Errors"></a>

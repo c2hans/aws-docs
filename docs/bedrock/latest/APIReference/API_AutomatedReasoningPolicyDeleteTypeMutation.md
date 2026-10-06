@@ -14,7 +14,7 @@ A mutation operation that removes a custom type from the policy definition durin
 The name of the custom type to delete.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `[A-Za-z][A-Za-z0-9_]*`
+Pattern: `\p{L}[\p{L}\p{M}0-9_]*( [\p{L}\p{M}0-9_]+)*`
 Required: Yes
 
 ## See Also

@@ -27,15 +27,90 @@ You can set an alarm on metrics in the current account, or in another account. T
 + The account where the metrics are located (the *sharing account*) must already have a sharing role named **CloudWatch-CrossAccountSharingRole**. If it does not already have this role, you must create it using the instructions in **Set up a sharing account** in [ Cross-account cross-Region CloudWatch console](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cross-Account-Cross-Region.html#enable-cross-account-cross-Region). The policy for that role must grant access to the ID of the account where you are creating the alarm.
 + The account where you are creating the alarm (the *monitoring account*) must already have a service-linked role named **AWSServiceRoleForCloudWatchCrossAccount** to allow CloudWatch to assume the sharing role in the sharing account. If it does not, you must create it following the directions in **Set up a monitoring account** in [ Cross-account cross-Region CloudWatch console](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cross-Account-Cross-Region.html#enable-cross-account-cross-Region).
 
+## Request Syntax
+<a name="API_PutMetricAlarm_RequestSyntax"></a>
+
+```
+{
+   "ActionsEnabled": {{boolean}},
+   "AlarmActions": [ "{{string}}" ],
+   "AlarmDescription": "{{string}}",
+   "AlarmName": "{{string}}",
+   "ComparisonOperator": "{{string}}",
+   "DatapointsToAlarm": {{number}},
+   "Dimensions": [
+      {
+         "Name": "{{string}}",
+         "Value": "{{string}}"
+      }
+   ],
+   "EvaluateLowSampleCountPercentile": "{{string}}",
+   "EvaluationCriteria": { ... },
+   "EvaluationInterval": {{number}},
+   "EvaluationPeriods": {{number}},
+   "EvaluationWindow": { ... },
+   "ExtendedStatistic": "{{string}}",
+   "InsufficientDataActions": [ "{{string}}" ],
+   "MetricName": "{{string}}",
+   "Metrics": [
+      {
+         "AccountId": "{{string}}",
+         "Expression": "{{string}}",
+         "Id": "{{string}}",
+         "Label": "{{string}}",
+         "MetricStat": {
+            "Metric": {
+               "Dimensions": [
+                  {
+                     "Name": "{{string}}",
+                     "Value": "{{string}}"
+                  }
+               ],
+               "MetricName": "{{string}}",
+               "Namespace": "{{string}}"
+            },
+            "Period": {{number}},
+            "Stat": "{{string}}",
+            "Unit": "{{string}}"
+         },
+         "Period": {{number}},
+         "ReturnData": {{boolean}}
+      }
+   ],
+   "Namespace": "{{string}}",
+   "OKActions": [ "{{string}}" ],
+   "Period": {{number}},
+   "Statistic": "{{string}}",
+   "Tags": [
+      {
+         "Key": "{{string}}",
+         "Value": "{{string}}"
+      }
+   ],
+   "Threshold": {{number}},
+   "ThresholdMetricId": "{{string}}",
+   "TreatMissingData": "{{string}}",
+   "Unit": "{{string}}",
+   "WarmUpConfiguration": {
+      "OnlyStartEvaluatingAfterWarmUpPeriodEnds": {{boolean}},
+      "WarmUpPeriodDurationInMinutes": {{number}}
+   }
+}
+```
+
 ## Request Parameters
 <a name="API_PutMetricAlarm_RequestParameters"></a>
 
- ** ActionsEnabled **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [ActionsEnabled](#API_PutMetricAlarm_RequestSyntax) **   <a name="ACW-PutMetricAlarm-request-ActionsEnabled"></a>
 Indicates whether actions should be executed during any changes to the alarm state. The default is `TRUE`.
 Type: Boolean
 Required: No
 
- ** AlarmActions **
+ ** [AlarmActions](#API_PutMetricAlarm_RequestSyntax) **   <a name="ACW-PutMetricAlarm-request-AlarmActions"></a>
 The actions to execute when this alarm transitions to the `ALARM` state from any other state. Each action is specified as an Amazon Resource Name (ARN). Valid values:
  **EC2 actions:**
 +  `arn:aws:automate:region:ec2:stop`
@@ -64,46 +139,46 @@ Array Members: Maximum number of 5 items.
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
- ** AlarmDescription **
+ ** [AlarmDescription](#API_PutMetricAlarm_RequestSyntax) **   <a name="ACW-PutMetricAlarm-request-AlarmDescription"></a>
 The description for the alarm.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1024.
 Required: No
 
- ** AlarmName **
+ ** [AlarmName](#API_PutMetricAlarm_RequestSyntax) **   <a name="ACW-PutMetricAlarm-request-AlarmName"></a>
 The name for the alarm. This name must be unique within the Region.
 The name must contain only UTF-8 characters, and can't contain ASCII control characters
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes
 
- ** ComparisonOperator **
+ ** [ComparisonOperator](#API_PutMetricAlarm_RequestSyntax) **   <a name="ACW-PutMetricAlarm-request-ComparisonOperator"></a>
  The arithmetic operation to use when comparing the specified statistic and threshold. The specified statistic value is used as the first operand.
 The values `LessThanLowerOrGreaterThanUpperThreshold`, `LessThanLowerThreshold`, and `GreaterThanUpperThreshold` are used only for alarms based on anomaly detection models.
 Type: String
 Valid Values: `GreaterThanOrEqualToThreshold | GreaterThanThreshold | LessThanThreshold | LessThanOrEqualToThreshold | LessThanLowerOrGreaterThanUpperThreshold | LessThanLowerThreshold | GreaterThanUpperThreshold`
 Required: No
 
- ** DatapointsToAlarm **
+ ** [DatapointsToAlarm](#API_PutMetricAlarm_RequestSyntax) **   <a name="ACW-PutMetricAlarm-request-DatapointsToAlarm"></a>
 The number of data points that must be breaching to trigger the alarm. This is used only if you are setting an "M out of N" alarm. In that case, this value is the M. For more information, see [Evaluating an Alarm](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html#alarm-evaluation) in the *Amazon CloudWatch User Guide*.
 Type: Integer
 Valid Range: Minimum value of 1.
 Required: No
 
- ** Dimensions **
+ ** [Dimensions](#API_PutMetricAlarm_RequestSyntax) **   <a name="ACW-PutMetricAlarm-request-Dimensions"></a>
 The dimensions for the metric specified in `MetricName`.
 Type: Array of [Dimension](API_Dimension.md) objects
 Array Members: Maximum number of 30 items.
 Required: No
 
- ** EvaluateLowSampleCountPercentile **
+ ** [EvaluateLowSampleCountPercentile](#API_PutMetricAlarm_RequestSyntax) **   <a name="ACW-PutMetricAlarm-request-EvaluateLowSampleCountPercentile"></a>
  Used only for alarms based on percentiles. If you specify `ignore`, the alarm state does not change during periods with too few data points to be statistically significant. If you specify `evaluate` or omit this parameter, the alarm is always evaluated and possibly changes state no matter how many data points are available. For more information, see [Percentile-Based CloudWatch Alarms and Low Data Samples](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html#percentiles-with-low-samples).
 Valid Values: `evaluate | ignore`
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: No
 
- ** EvaluationCriteria **
+ ** [EvaluationCriteria](#API_PutMetricAlarm_RequestSyntax) **   <a name="ACW-PutMetricAlarm-request-EvaluationCriteria"></a>
 The evaluation criteria for the alarm. For each `PutMetricAlarm` operation, you must specify either `MetricName`, a `Metrics` array, or an `EvaluationCriteria`.
 If you use the `EvaluationCriteria` parameter, you cannot include the `Namespace`, `MetricName`, `Dimensions`, `Period`, `Unit`, `Statistic`, `ExtendedStatistic`, `Metrics`, `Threshold`, `ComparisonOperator`, `ThresholdMetricId`, `EvaluationPeriods`, or `DatapointsToAlarm` parameters of `PutMetricAlarm` in the same operation. Instead, all evaluation parameters are defined within this structure.
 For an example of how to use this parameter, see the **PromQL alarm** example on this page.
@@ -111,20 +186,20 @@ Type: [EvaluationCriteria](API_EvaluationCriteria.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: No
 
- ** EvaluationInterval **
+ ** [EvaluationInterval](#API_PutMetricAlarm_RequestSyntax) **   <a name="ACW-PutMetricAlarm-request-EvaluationInterval"></a>
 The frequency, in seconds, at which the alarm is evaluated. Valid values are 10, 20, 30, and any multiple of 60.
 This parameter is required for alarms that use `EvaluationCriteria`, and cannot be specified for alarms configured with `MetricName` or `Metrics`.
 Type: Integer
 Valid Range: Minimum value of 10. Maximum value of 3600.
 Required: No
 
- ** EvaluationPeriods **
+ ** [EvaluationPeriods](#API_PutMetricAlarm_RequestSyntax) **   <a name="ACW-PutMetricAlarm-request-EvaluationPeriods"></a>
 The number of periods over which data is compared to the specified threshold. If you are setting an alarm that requires that a number of consecutive data points be breaching to trigger the alarm, this value specifies that number. If you are setting an "M out of N" alarm, this value is the N.
 Type: Integer
 Valid Range: Minimum value of 1.
 Required: No
 
- ** EvaluationWindow **
+ ** [EvaluationWindow](#API_PutMetricAlarm_RequestSyntax) **   <a name="ACW-PutMetricAlarm-request-EvaluationWindow"></a>
 The evaluation window that the alarm uses to select the range of metric data that it evaluates. Specify either a sliding window or a wall clock window. If you omit this parameter, the alarm uses a sliding window.
 A sliding window advances each time the alarm is evaluated, forming a rolling time window. A wall clock window aligns the evaluated range to fixed clock boundaries, such as the top of the hour or the start of the day.
 You can use `EvaluationWindow` with any type of metric alarm except alarms that are based on a PromQL query.
@@ -133,7 +208,7 @@ Type: [EvaluationWindow](API_EvaluationWindow.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: No
 
- ** ExtendedStatistic **
+ ** [ExtendedStatistic](#API_PutMetricAlarm_RequestSyntax) **   <a name="ACW-PutMetricAlarm-request-ExtendedStatistic"></a>
 The extended statistic for the metric specified in `MetricName`. When you call `PutMetricAlarm` and specify a `MetricName`, you must specify either `Statistic` or `ExtendedStatistic` but not both.
 If you specify `ExtendedStatistic`, the following are valid values:
 +  `p90`
@@ -151,7 +226,7 @@ For more information about these extended statistics, see [CloudWatch statistics
 Type: String
 Required: No
 
- ** InsufficientDataActions **
+ ** [InsufficientDataActions](#API_PutMetricAlarm_RequestSyntax) **   <a name="ACW-PutMetricAlarm-request-InsufficientDataActions"></a>
 The actions to execute when this alarm transitions to the `INSUFFICIENT_DATA` state from any other state. Each action is specified as an Amazon Resource Name (ARN). Valid values:
  **EC2 actions:**
 +  `arn:aws:automate:region:ec2:stop`
@@ -178,14 +253,14 @@ Array Members: Maximum number of 5 items.
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
- ** MetricName **
+ ** [MetricName](#API_PutMetricAlarm_RequestSyntax) **   <a name="ACW-PutMetricAlarm-request-MetricName"></a>
 The name for the metric associated with the alarm. For each `PutMetricAlarm` operation, you must specify either `MetricName`, a `Metrics` array, or an `EvaluationCriteria`.
 If you are creating an alarm based on a math expression, you cannot specify this parameter, or any of the `Namespace`, `Dimensions`, `Period`, `Unit`, `Statistic`, or `ExtendedStatistic` parameters. Instead, you specify all this information in the `Metrics` array.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: No
 
- ** Metrics **
+ ** [Metrics](#API_PutMetricAlarm_RequestSyntax) **   <a name="ACW-PutMetricAlarm-request-Metrics"></a>
 An array of `MetricDataQuery` structures that enable you to create an alarm based on the result of a metric math expression. For each `PutMetricAlarm` operation, you must specify either `MetricName`, a `Metrics` array, or an `EvaluationCriteria`.
 Each item in the `Metrics` array either retrieves a metric or performs a math expression.
 One item in the `Metrics` array is the expression that the alarm watches. You designate this expression by setting `ReturnData` to true for this object in the array. For more information, see [MetricDataQuery](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_MetricDataQuery.html).
@@ -193,14 +268,14 @@ If you use the `Metrics` parameter, you cannot include the `Namespace`, `MetricN
 Type: Array of [MetricDataQuery](API_MetricDataQuery.md) objects
 Required: No
 
- ** Namespace **
+ ** [Namespace](#API_PutMetricAlarm_RequestSyntax) **   <a name="ACW-PutMetricAlarm-request-Namespace"></a>
 The namespace for the metric associated specified in `MetricName`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[^:].*`
 Required: No
 
- ** OKActions **
+ ** [OKActions](#API_PutMetricAlarm_RequestSyntax) **   <a name="ACW-PutMetricAlarm-request-OKActions"></a>
 The actions to execute when this alarm transitions to an `OK` state from any other state. Each action is specified as an Amazon Resource Name (ARN). Valid values:
  **EC2 actions:**
 +  `arn:aws:automate:region:ec2:stop`
@@ -227,7 +302,7 @@ Array Members: Maximum number of 5 items.
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
- ** Period **
+ ** [Period](#API_PutMetricAlarm_RequestSyntax) **   <a name="ACW-PutMetricAlarm-request-Period"></a>
 The length, in seconds, used each time the metric specified in `MetricName` is evaluated. Valid values are 10, 20, 30, and any multiple of 60.
  `Period` is required for alarms based on static thresholds. If you are creating an alarm based on a metric math expression, you specify the period for each metric within the objects in the `Metrics` array.
 Be sure to specify 10, 20, or 30 only for metrics that are stored by a `PutMetricData` call with a `StorageResolution` of 1. If you specify a period of 10, 20, or 30 for a metric that does not have sub-minute resolution, the alarm still attempts to gather data at the period rate that you specify. In this case, it does not receive data for the attempts that do not correspond to a one-minute data resolution, and the alarm might often lapse into INSUFFICENT\_DATA status. Specifying 10, 20, or 30 also sets this alarm as a high-resolution alarm, which has a higher charge than other alarms. For more information about pricing, see [Amazon CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/).
@@ -236,13 +311,13 @@ Type: Integer
 Valid Range: Minimum value of 10.
 Required: No
 
- ** Statistic **
+ ** [Statistic](#API_PutMetricAlarm_RequestSyntax) **   <a name="ACW-PutMetricAlarm-request-Statistic"></a>
 The statistic for the metric specified in `MetricName`, other than percentile. For percentile statistics, use `ExtendedStatistic`. When you call `PutMetricAlarm` and specify a `MetricName`, you must specify either `Statistic` or `ExtendedStatistic,` but not both.
 Type: String
 Valid Values: `SampleCount | Average | Sum | Minimum | Maximum`
 Required: No
 
- ** Tags **
+ ** [Tags](#API_PutMetricAlarm_RequestSyntax) **   <a name="ACW-PutMetricAlarm-request-Tags"></a>
 A list of key-value pairs to associate with the alarm. You can associate as many as 50 tags with an alarm. To be able to associate tags with the alarm when you create the alarm, you must have the `cloudwatch:TagResource` permission.
 Tags can help you organize and categorize your resources. You can also use them to scope user permissions by granting a user permission to access or change only resources with certain tag values.
 If you are using this operation to update an existing alarm, any tags you specify in this parameter are ignored. To change the tags of an existing alarm, use [TagResource](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_TagResource.html) or [UntagResource](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_UntagResource.html).
@@ -250,13 +325,13 @@ To use this field to set tags for an alarm when you create it, you must be signe
 Type: Array of [Tag](API_Tag.md) objects
 Required: No
 
- ** Threshold **
+ ** [Threshold](#API_PutMetricAlarm_RequestSyntax) **   <a name="ACW-PutMetricAlarm-request-Threshold"></a>
 The value against which the specified statistic is compared.
 This parameter is required for alarms based on static thresholds, but should not be used for alarms based on anomaly detection models.
 Type: Double
 Required: No
 
- ** ThresholdMetricId **
+ ** [ThresholdMetricId](#API_PutMetricAlarm_RequestSyntax) **   <a name="ACW-PutMetricAlarm-request-ThresholdMetricId"></a>
 If this is an alarm based on an anomaly detection model, make this value match the ID of the `ANOMALY_DETECTION_BAND` function.
 For an example of how to use this parameter, see the **Anomaly Detection Model Alarm** example on this page.
 If your alarm uses this parameter, it cannot have Auto Scaling actions.
@@ -264,7 +339,7 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: No
 
- ** TreatMissingData **
+ ** [TreatMissingData](#API_PutMetricAlarm_RequestSyntax) **   <a name="ACW-PutMetricAlarm-request-TreatMissingData"></a>
  Sets how this alarm is to handle missing data points. If `TreatMissingData` is omitted, the default behavior of `missing` is used. For more information, see [Configuring How CloudWatch Alarms Treats Missing Data](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html#alarms-and-missing-data).
 Valid Values: `breaching | notBreaching | ignore | missing`
 Alarms that evaluate metrics in the `AWS/DynamoDB` namespace always `ignore` missing data even if you choose a different option for `TreatMissingData`. When an `AWS/DynamoDB` metric has missing data, alarms that evaluate that metric remain in their current state.
@@ -273,7 +348,7 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: No
 
- ** Unit **
+ ** [Unit](#API_PutMetricAlarm_RequestSyntax) **   <a name="ACW-PutMetricAlarm-request-Unit"></a>
 The unit of measure for the statistic. For example, the units for the Amazon EC2 NetworkIn metric are Bytes because NetworkIn tracks the number of bytes that an instance receives on all network interfaces. You can also specify a unit when you create a custom metric. Units help provide conceptual meaning to your data. Metric data points that specify a unit of measure, such as Percent, are aggregated separately. If you are creating an alarm based on a metric math expression, you can specify the unit for each metric (if needed) within the objects in the `Metrics` array.
 If you don't specify `Unit`, CloudWatch retrieves all unit types that have been published for the metric and attempts to evaluate the alarm. Usually, metrics are published with only one unit, so the alarm works as intended.
 However, if the metric is published with multiple types of units and you don't specify a unit, the alarm's behavior is not defined and it behaves unpredictably.
@@ -282,11 +357,16 @@ Type: String
 Valid Values: `Seconds | Microseconds | Milliseconds | Bytes | Kilobytes | Megabytes | Gigabytes | Terabytes | Bits | Kilobits | Megabits | Gigabits | Terabits | Percent | Count | Bytes/Second | Kilobytes/Second | Megabytes/Second | Gigabytes/Second | Terabytes/Second | Bits/Second | Kilobits/Second | Megabits/Second | Gigabits/Second | Terabits/Second | Count/Second | None`
 Required: No
 
- ** WarmUpConfiguration **
+ ** [WarmUpConfiguration](#API_PutMetricAlarm_RequestSyntax) **   <a name="ACW-PutMetricAlarm-request-WarmUpConfiguration"></a>
 The warm-up configuration for the alarm. A warm-up period delays alarm evaluation after you create or update the alarm. The warm-up period reduces alarm noise from missing data while a new resource or service starts publishing metrics.
 For more information, see [Alarm warm-up periods](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/alarm-warm-up.html) in the *Amazon CloudWatch User Guide*.
 Type: [WarmUpConfiguration](API_WarmUpConfiguration.md) object
 Required: No
+
+## Response Elements
+<a name="API_PutMetricAlarm_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
 
 ## Errors
 <a name="API_PutMetricAlarm_Errors"></a>

@@ -14,7 +14,7 @@ A mutation operation that removes a variable from the policy definition during t
 The name of the variable to delete.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `[A-Za-z][A-Za-z0-9_]*`
+Pattern: `\p{L}[\p{L}\p{M}0-9_]*( [\p{L}\p{M}0-9_]+)*`
 Required: Yes
 
 ## See Also

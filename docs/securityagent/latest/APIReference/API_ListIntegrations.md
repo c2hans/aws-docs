@@ -63,7 +63,8 @@ Content-type: application/json
          "privateConnectionName": "string",
          "provider": "string",
          "providerType": "string",
-         "targetUrl": "string"
+         "targetUrl": "string",
+         "webhookUrl": "string"
       }
    ],
    "nextToken": "string"

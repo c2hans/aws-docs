@@ -9,14 +9,32 @@ Deletes a Region switch plan. You must specify the ARN of the plan to delete.
 
 You cannot delete a plan that has an active execution in progress.
 
+## Request Syntax
+<a name="API_DeletePlan_RequestSyntax"></a>
+
+```
+{
+   "arn": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_DeletePlan_RequestParameters"></a>
 
- ** arn **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [arn](#API_DeletePlan_RequestSyntax) **   <a name="regionswitch-DeletePlan-request-arn"></a>
 The Amazon Resource Name (ARN) of the plan.
 Type: String
 Pattern: `arn:aws[a-zA-Z-]*:arc-region-switch::[0-9]{12}:plan/([a-zA-Z0-9](?:[a-zA-Z0-9-]{0,30}[a-zA-Z0-9])?):([a-z0-9]{6})`
 Required: Yes
+
+## Response Elements
+<a name="API_DeletePlan_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
 
 ## Errors
 <a name="API_DeletePlan_Errors"></a>

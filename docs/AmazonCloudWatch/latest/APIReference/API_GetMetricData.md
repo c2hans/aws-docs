@@ -27,44 +27,89 @@ If you omit `Unit` in your request, all data that was collected with any unit is
 
 You can't mix a Metric Insights query and metric math syntax in the same expression, but you can reference results from a Metrics Insights query within other Metric math expressions. A Metrics Insights query without a **GROUP BY** clause returns a single time-series (TS), and can be used as input for a metric math expression that expects a single time series. A Metrics Insights query with a **GROUP BY** clause returns an array of time-series (TS[]), and can be used as input for a metric math expression that expects an array of time series.
 
+## Request Syntax
+<a name="API_GetMetricData_RequestSyntax"></a>
+
+```
+{
+   "EndTime": {{number}},
+   "LabelOptions": {
+      "Timezone": "{{string}}"
+   },
+   "MaxDatapoints": {{number}},
+   "MetricDataQueries": [
+      {
+         "AccountId": "{{string}}",
+         "Expression": "{{string}}",
+         "Id": "{{string}}",
+         "Label": "{{string}}",
+         "MetricStat": {
+            "Metric": {
+               "Dimensions": [
+                  {
+                     "Name": "{{string}}",
+                     "Value": "{{string}}"
+                  }
+               ],
+               "MetricName": "{{string}}",
+               "Namespace": "{{string}}"
+            },
+            "Period": {{number}},
+            "Stat": "{{string}}",
+            "Unit": "{{string}}"
+         },
+         "Period": {{number}},
+         "ReturnData": {{boolean}}
+      }
+   ],
+   "NextToken": "{{string}}",
+   "ScanBy": "{{string}}",
+   "StartTime": {{number}}
+}
+```
+
 ## Request Parameters
 <a name="API_GetMetricData_RequestParameters"></a>
 
- ** EndTime **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [EndTime](#API_GetMetricData_RequestSyntax) **   <a name="ACW-GetMetricData-request-EndTime"></a>
 The time stamp indicating the latest data to be returned.
 The value specified is exclusive; results include data points up to the specified time stamp.
 For better performance, specify `StartTime` and `EndTime` values that align with the value of the metric's `Period` and sync up with the beginning and end of an hour. For example, if the `Period` of a metric is 5 minutes, specifying 12:05 or 12:30 as `EndTime` can get a faster response from CloudWatch than setting 12:07 or 12:29 as the `EndTime`.
 Type: Timestamp
 Required: Yes
 
- ** LabelOptions **
+ ** [LabelOptions](#API_GetMetricData_RequestSyntax) **   <a name="ACW-GetMetricData-request-LabelOptions"></a>
 This structure includes the `Timezone` parameter, which you can use to specify your time zone so that the labels of returned data display the correct time for your time zone.
 Type: [LabelOptions](API_LabelOptions.md) object
 Required: No
 
- ** MaxDatapoints **
+ ** [MaxDatapoints](#API_GetMetricData_RequestSyntax) **   <a name="ACW-GetMetricData-request-MaxDatapoints"></a>
 The maximum number of data points the request should return before paginating. If you omit this, the default of 100,800 is used.
 Type: Integer
 Required: No
 
- ** MetricDataQueries **
+ ** [MetricDataQueries](#API_GetMetricData_RequestSyntax) **   <a name="ACW-GetMetricData-request-MetricDataQueries"></a>
 The metric queries to be returned. A single `GetMetricData` call can include as many as 500 `MetricDataQuery` structures. Each of these structures can specify either a metric to retrieve, a Metrics Insights query, or a math expression to perform on retrieved data.
 Type: Array of [MetricDataQuery](API_MetricDataQuery.md) objects
 Required: Yes
 
- ** NextToken **
+ ** [NextToken](#API_GetMetricData_RequestSyntax) **   <a name="ACW-GetMetricData-request-NextToken"></a>
 Include this value, if it was returned by the previous `GetMetricData` operation, to get the next set of data points.
 Type: String
 Required: No
 
- ** ScanBy **
+ ** [ScanBy](#API_GetMetricData_RequestSyntax) **   <a name="ACW-GetMetricData-request-ScanBy"></a>
 The order in which data points should be returned. `TimestampDescending` returns the newest data first and paginates when the `MaxDatapoints` limit is reached. `TimestampAscending` returns the oldest data first and paginates when the `MaxDatapoints` limit is reached.
 If you omit this parameter, the default of `TimestampDescending` is used.
 Type: String
 Valid Values: `TimestampDescending | TimestampAscending`
 Required: No
 
- ** StartTime **
+ ** [StartTime](#API_GetMetricData_RequestSyntax) **   <a name="ACW-GetMetricData-request-StartTime"></a>
 The time stamp indicating the earliest data to be returned.
 The value specified is inclusive; results include data points with the specified time stamp.
 CloudWatch rounds the specified time stamp as follows:
@@ -76,21 +121,53 @@ For better performance, specify `StartTime` and `EndTime` values that align with
 Type: Timestamp
 Required: Yes
 
+## Response Syntax
+<a name="API_GetMetricData_ResponseSyntax"></a>
+
+```
+{
+   "Messages": [
+      {
+         "Code": "string",
+         "Value": "string"
+      }
+   ],
+   "MetricDataResults": [
+      {
+         "Id": "string",
+         "Label": "string",
+         "Messages": [
+            {
+               "Code": "string",
+               "Value": "string"
+            }
+         ],
+         "StatusCode": "string",
+         "Timestamps": [ number ],
+         "Values": [ number ]
+      }
+   ],
+   "NextToken": "string"
+}
+```
+
 ## Response Elements
 <a name="API_GetMetricData_ResponseElements"></a>
 
-The following elements are returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** Messages **
+The following data is returned in JSON format by the service.
+
+ ** [Messages](#API_GetMetricData_ResponseSyntax) **   <a name="ACW-GetMetricData-response-Messages"></a>
 Contains a message about this `GetMetricData` operation, if the operation results in such a message. An example of a message that might be returned is `Maximum number of allowed metrics exceeded`. If there is a message, as much of the operation as possible is still executed.
 A message appears here only if it is related to the global `GetMetricData` operation. Any message about a specific metric returned by the operation appears in the `MetricDataResult` object returned for that metric.
 Type: Array of [MessageData](API_MessageData.md) objects
 
- ** MetricDataResults **
+ ** [MetricDataResults](#API_GetMetricData_ResponseSyntax) **   <a name="ACW-GetMetricData-response-MetricDataResults"></a>
 The metrics that are returned, including the metric name, namespace, and dimensions.
 Type: Array of [MetricDataResult](API_MetricDataResult.md) objects
 
- ** NextToken **
+ ** [NextToken](#API_GetMetricData_ResponseSyntax) **   <a name="ACW-GetMetricData-response-NextToken"></a>
 A token that marks the next batch of returned results.
 Type: String
 

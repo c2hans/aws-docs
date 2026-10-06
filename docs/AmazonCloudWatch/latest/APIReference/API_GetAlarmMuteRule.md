@@ -18,60 +18,101 @@ The returned status indicates the current state of the mute rule:
 
 To retrieve details for a mute rule, you need the `cloudwatch:GetAlarmMuteRule` permission on the alarm mute rule resource.
 
+## Request Syntax
+<a name="API_GetAlarmMuteRule_RequestSyntax"></a>
+
+```
+{
+   "AlarmMuteRuleName": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_GetAlarmMuteRule_RequestParameters"></a>
 
- ** AlarmMuteRuleName **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [AlarmMuteRuleName](#API_GetAlarmMuteRule_RequestSyntax) **   <a name="ACW-GetAlarmMuteRule-request-AlarmMuteRuleName"></a>
 The name of the alarm mute rule to retrieve.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes
 
+## Response Syntax
+<a name="API_GetAlarmMuteRule_ResponseSyntax"></a>
+
+```
+{
+   "AlarmMuteRuleArn": "string",
+   "Description": "string",
+   "ExpireDate": number,
+   "LastUpdatedTimestamp": number,
+   "MuteTargets": {
+      "AlarmNames": [ "string" ]
+   },
+   "MuteType": "string",
+   "Name": "string",
+   "Rule": {
+      "Schedule": {
+         "Duration": "string",
+         "Expression": "string",
+         "Timezone": "string"
+      }
+   },
+   "StartDate": number,
+   "Status": "string"
+}
+```
+
 ## Response Elements
 <a name="API_GetAlarmMuteRule_ResponseElements"></a>
 
-The following elements are returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** AlarmMuteRuleArn **
+The following data is returned in JSON format by the service.
+
+ ** [AlarmMuteRuleArn](#API_GetAlarmMuteRule_ResponseSyntax) **   <a name="ACW-GetAlarmMuteRule-response-AlarmMuteRuleArn"></a>
 The Amazon Resource Name (ARN) of the alarm mute rule.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1600.
 
- ** Description **
+ ** [Description](#API_GetAlarmMuteRule_ResponseSyntax) **   <a name="ACW-GetAlarmMuteRule-response-Description"></a>
 The description of the alarm mute rule.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1024.
 
- ** ExpireDate **
+ ** [ExpireDate](#API_GetAlarmMuteRule_ResponseSyntax) **   <a name="ACW-GetAlarmMuteRule-response-ExpireDate"></a>
 The date and time when the mute rule expires and is no longer evaluated.
 Type: Timestamp
 
- ** LastUpdatedTimestamp **
+ ** [LastUpdatedTimestamp](#API_GetAlarmMuteRule_ResponseSyntax) **   <a name="ACW-GetAlarmMuteRule-response-LastUpdatedTimestamp"></a>
 The date and time when the mute rule was last updated.
 Type: Timestamp
 
- ** MuteTargets **
+ ** [MuteTargets](#API_GetAlarmMuteRule_ResponseSyntax) **   <a name="ACW-GetAlarmMuteRule-response-MuteTargets"></a>
 Specifies which alarms this rule applies to.
 Type: [MuteTargets](API_MuteTargets.md) object
 
- ** MuteType **
+ ** [MuteType](#API_GetAlarmMuteRule_ResponseSyntax) **   <a name="ACW-GetAlarmMuteRule-response-MuteType"></a>
 Indicates whether the mute rule is one-time or recurring. Valid values are `ONE_TIME` or `RECURRING`.
 Type: String
 
- ** Name **
+ ** [Name](#API_GetAlarmMuteRule_ResponseSyntax) **   <a name="ACW-GetAlarmMuteRule-response-Name"></a>
 The name of the alarm mute rule.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 
- ** Rule **
+ ** [Rule](#API_GetAlarmMuteRule_ResponseSyntax) **   <a name="ACW-GetAlarmMuteRule-response-Rule"></a>
 The configuration that defines when and how long alarms are muted.
 Type: [Rule](API_Rule.md) object
 
- ** StartDate **
+ ** [StartDate](#API_GetAlarmMuteRule_ResponseSyntax) **   <a name="ACW-GetAlarmMuteRule-response-StartDate"></a>
 The date and time when the mute rule becomes active. If not set, the rule is active immediately.
 Type: Timestamp
 
- ** Status **
+ ** [Status](#API_GetAlarmMuteRule_ResponseSyntax) **   <a name="ACW-GetAlarmMuteRule-response-Status"></a>
 The current status of the alarm mute rule. Valid values are `SCHEDULED`, `ACTIVE`, or `EXPIRED`.
 Type: String
 Valid Values: `SCHEDULED | ACTIVE | EXPIRED`

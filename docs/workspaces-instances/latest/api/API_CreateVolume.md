@@ -7,75 +7,118 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Crea
 
 Creates a new volume for WorkSpace Instances.
 
+## Request Syntax
+<a name="API_CreateVolume_RequestSyntax"></a>
+
+```
+{
+   "AvailabilityZone": "{{string}}",
+   "ClientToken": "{{string}}",
+   "Encrypted": {{boolean}},
+   "Iops": {{number}},
+   "KmsKeyId": "{{string}}",
+   "SizeInGB": {{number}},
+   "SnapshotId": "{{string}}",
+   "TagSpecifications": [
+      {
+         "ResourceType": "{{string}}",
+         "Tags": [
+            {
+               "Key": "{{string}}",
+               "Value": "{{string}}"
+            }
+         ]
+      }
+   ],
+   "Throughput": {{number}},
+   "VolumeType": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_CreateVolume_RequestParameters"></a>
 
- ** AvailabilityZone **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [AvailabilityZone](#API_CreateVolume_RequestSyntax) **   <a name="workspacesinstances-CreateVolume-request-AvailabilityZone"></a>
 Availability zone for the volume.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 64.
 Required: Yes
 
- ** ClientToken **
+ ** [ClientToken](#API_CreateVolume_RequestSyntax) **   <a name="workspacesinstances-CreateVolume-request-ClientToken"></a>
 Unique token to prevent duplicate volume creation.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `[\x20-\x7E]+`
 Required: No
 
- ** Encrypted **
+ ** [Encrypted](#API_CreateVolume_RequestSyntax) **   <a name="workspacesinstances-CreateVolume-request-Encrypted"></a>
 Indicates if the volume should be encrypted.
 Type: Boolean
 Required: No
 
- ** Iops **
+ ** [Iops](#API_CreateVolume_RequestSyntax) **   <a name="workspacesinstances-CreateVolume-request-Iops"></a>
 Input/output operations per second for the volume.
 Type: Integer
 Valid Range: Minimum value of 0.
 Required: No
 
- ** KmsKeyId **
+ ** [KmsKeyId](#API_CreateVolume_RequestSyntax) **   <a name="workspacesinstances-CreateVolume-request-KmsKeyId"></a>
 KMS key for volume encryption.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 128.
 Required: No
 
- ** SizeInGB **
+ ** [SizeInGB](#API_CreateVolume_RequestSyntax) **   <a name="workspacesinstances-CreateVolume-request-SizeInGB"></a>
 Volume size in gigabytes.
 Type: Integer
 Valid Range: Minimum value of 0.
 Required: No
 
- ** SnapshotId **
+ ** [SnapshotId](#API_CreateVolume_RequestSyntax) **   <a name="workspacesinstances-CreateVolume-request-SnapshotId"></a>
 Source snapshot for volume creation.
 Type: String
 Pattern: `snap-[0-9a-zA-Z]{1,63}`
 Required: No
 
- ** TagSpecifications **
+ ** [TagSpecifications](#API_CreateVolume_RequestSyntax) **   <a name="workspacesinstances-CreateVolume-request-TagSpecifications"></a>
 Metadata tags for the volume.
 Type: Array of [TagSpecification](API_TagSpecification.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 30 items.
 Required: No
 
- ** Throughput **
+ ** [Throughput](#API_CreateVolume_RequestSyntax) **   <a name="workspacesinstances-CreateVolume-request-Throughput"></a>
 Volume throughput performance.
 Type: Integer
 Valid Range: Minimum value of 0.
 Required: No
 
- ** VolumeType **
+ ** [VolumeType](#API_CreateVolume_RequestSyntax) **   <a name="workspacesinstances-CreateVolume-request-VolumeType"></a>
 Type of EBS volume.
 Type: String
 Valid Values: `standard | io1 | io2 | gp2 | sc1 | st1 | gp3`
 Required: No
 
+## Response Syntax
+<a name="API_CreateVolume_ResponseSyntax"></a>
+
+```
+{
+   "VolumeId": "string"
+}
+```
+
 ## Response Elements
 <a name="API_CreateVolume_ResponseElements"></a>
 
-The following element is returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** VolumeId **
+The following data is returned in JSON format by the service.
+
+ ** [VolumeId](#API_CreateVolume_ResponseSyntax) **   <a name="workspacesinstances-CreateVolume-response-VolumeId"></a>
 Unique identifier for the new volume.
 Type: String
 Pattern: `vol-[0-9a-zA-Z]{1,63}`

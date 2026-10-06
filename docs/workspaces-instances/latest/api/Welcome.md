@@ -7,4 +7,4 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/Welcome.
 
 Amazon WorkSpaces Instances provides an API framework for managing virtual workspace environments across multiple AWS regions, enabling programmatic creation and configuration of desktop infrastructure.
 
-This document was last published on October 2, 2026.
+This document was last published on October 5, 2026.

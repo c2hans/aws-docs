@@ -7,22 +7,64 @@ source_url: https://docs.aws.amazon.com/interconnect/latest/api/API_GetConnectio
 
 Describes the current state of a Connection resource as specified by the identifier.
 
+## Request Syntax
+<a name="API_GetConnection_RequestSyntax"></a>
+
+```
+{
+   "identifier": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_GetConnection_RequestParameters"></a>
 
- ** identifier **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [identifier](#API_GetConnection_RequestSyntax) **   <a name="interconnect-GetConnection-request-identifier"></a>
 The identifier of the requested [Connection](API_Connection.md)
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 32.
 Pattern: `(mcc|lmcc)-[a-z0-9]{8}`
 Required: Yes
 
+## Response Syntax
+<a name="API_GetConnection_ResponseSyntax"></a>
+
+```
+{
+   "connection": {
+      "activationKey": "string",
+      "arn": "string",
+      "attachPoint": { ... },
+      "bandwidth": "string",
+      "billingTier": number,
+      "description": "string",
+      "environmentId": "string",
+      "id": "string",
+      "location": "string",
+      "ownerAccount": "string",
+      "provider": { ... },
+      "sharedId": "string",
+      "state": "string",
+      "tags": {
+         "string" : "string"
+      },
+      "type": "string"
+   }
+}
+```
+
 ## Response Elements
 <a name="API_GetConnection_ResponseElements"></a>
 
-The following element is returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** connection **
+The following data is returned in JSON format by the service.
+
+ ** [connection](#API_GetConnection_ResponseSyntax) **   <a name="interconnect-GetConnection-response-connection"></a>
 The existing [Connection](API_Connection.md) resource.
 Type: [Connection](API_Connection.md) object
 

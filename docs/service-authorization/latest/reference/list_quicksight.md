@@ -1491,6 +1491,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [quicksight:DescribeTemplate](#list_quicksight-action-DescribeTemplate)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [quicksight:DescribeTheme](#list_quicksight-action-DescribeTheme)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [quicksight:PassDataSet](#list_quicksight-action-PassDataSet)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+  - **IAM action:**  [quicksight:PassTopic](#list_quicksight-action-PassTopic)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [quicksight:UpdateDashboard](#list_quicksight-action-UpdateDashboard)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
 
 - **   UpdateDashboardLinks  **

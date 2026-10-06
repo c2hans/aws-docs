@@ -14,7 +14,7 @@ Represents a custom user-defined viarble type in an Automated Reasoning policy. 
 The name of the custom type.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `[A-Za-z][A-Za-z0-9_]*`
+Pattern: `\p{L}[\p{L}\p{M}0-9_]*( [\p{L}\p{M}0-9_]+)*`
 Required: Yes
 
  ** values **   <a name="bedrock-Type-AutomatedReasoningPolicyDefinitionType-values"></a>

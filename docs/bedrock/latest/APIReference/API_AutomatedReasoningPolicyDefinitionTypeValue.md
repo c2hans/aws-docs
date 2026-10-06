@@ -14,7 +14,7 @@ Represents a single value within a custom type definition, including its identif
 The actual value or identifier for this type value.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `[A-Za-z][A-Za-z0-9_]*`
+Pattern: `\p{L}[\p{L}\p{M}0-9_]*( [\p{L}\p{M}0-9_]+)*`
 Required: Yes
 
  ** description **   <a name="bedrock-Type-AutomatedReasoningPolicyDefinitionTypeValue-description"></a>

@@ -14,15 +14,33 @@ It is possible to create a loop or cycle of composite alarms, where composite al
 To get out of such a situation, you must break the cycle by changing the rule of one of the composite alarms in the cycle to remove a dependency that creates the cycle. The simplest change to make to break a cycle is to change the `AlarmRule` of one of the alarms to `false`.
 Additionally, the evaluation of composite alarms stops if CloudWatch detects a cycle in the evaluation path.
 
+## Request Syntax
+<a name="API_DeleteAlarms_RequestSyntax"></a>
+
+```
+{
+   "AlarmNames": [ "{{string}}" ]
+}
+```
+
 ## Request Parameters
 <a name="API_DeleteAlarms_RequestParameters"></a>
 
- ** AlarmNames **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [AlarmNames](#API_DeleteAlarms_RequestSyntax) **   <a name="ACW-DeleteAlarms-request-AlarmNames"></a>
 The alarms to be deleted. Do not enclose the alarm names in quote marks.
 Type: Array of strings
 Array Members: Maximum number of 100 items.
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes
+
+## Response Elements
+<a name="API_DeleteAlarms_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
 
 ## Errors
 <a name="API_DeleteAlarms_Errors"></a>

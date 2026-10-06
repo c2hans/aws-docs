@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/RFID-store-inventory-on-aws/in
 title: 'Guidance for RFID Store Inventory on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/RFID-store-inventory-on-aws/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # Guidance for RFID Store Inventory on AWS

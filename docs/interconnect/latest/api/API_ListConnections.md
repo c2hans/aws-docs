@@ -15,55 +15,100 @@ Allows for optional filtering by the following properties:
 
 Only [Connection](API_Connection.md) objects matching all filters will be returned.
 
+## Request Syntax
+<a name="API_ListConnections_RequestSyntax"></a>
+
+```
+{
+   "attachPoint": { ... },
+   "environmentId": "{{string}}",
+   "maxResults": {{number}},
+   "nextToken": "{{string}}",
+   "provider": { ... },
+   "state": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_ListConnections_RequestParameters"></a>
 
- ** attachPoint **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [attachPoint](#API_ListConnections_RequestSyntax) **   <a name="interconnect-ListConnections-request-attachPoint"></a>
 Filter results to only include [Connection](API_Connection.md) objects attached to the given [AttachPoint](API_AttachPoint.md).
 Type: [AttachPoint](API_AttachPoint.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: No
 
- ** environmentId **
+ ** [environmentId](#API_ListConnections_RequestSyntax) **   <a name="interconnect-ListConnections-request-environmentId"></a>
 Filter the results to only include [Connection](API_Connection.md) objects on the given [Environment](API_Environment.md).
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: No
 
- ** maxResults **
+ ** [maxResults](#API_ListConnections_RequestSyntax) **   <a name="interconnect-ListConnections-request-maxResults"></a>
 The max number of list results in a single paginated response.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 100.
 Required: No
 
- ** nextToken **
+ ** [nextToken](#API_ListConnections_RequestSyntax) **   <a name="interconnect-ListConnections-request-nextToken"></a>
 A pagination token from a previous paginated response indicating you wish to get the next page of results.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
- ** provider **
+ ** [provider](#API_ListConnections_RequestSyntax) **   <a name="interconnect-ListConnections-request-provider"></a>
 Filter the results to only include [Connection](API_Connection.md) objects to the given [Provider](API_Provider.md).
 Type: [Provider](API_Provider.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: No
 
- ** state **
+ ** [state](#API_ListConnections_RequestSyntax) **   <a name="interconnect-ListConnections-request-state"></a>
 Filter the results to only include [Connection](API_Connection.md) objects in the given [Connection:state](API_Connection.md#interconnect-Type-Connection-state).
 Type: String
 Valid Values: `available | requested | pending | down | deleting | deleted | failed | updating`
 Required: No
 
+## Response Syntax
+<a name="API_ListConnections_ResponseSyntax"></a>
+
+```
+{
+   "connections": [
+      {
+         "arn": "string",
+         "attachPoint": { ... },
+         "bandwidth": "string",
+         "billingTier": number,
+         "description": "string",
+         "environmentId": "string",
+         "id": "string",
+         "location": "string",
+         "provider": { ... },
+         "sharedId": "string",
+         "state": "string",
+         "type": "string"
+      }
+   ],
+   "nextToken": "string"
+}
+```
+
 ## Response Elements
 <a name="API_ListConnections_ResponseElements"></a>
 
-The following elements are returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** connections **
+The following data is returned in JSON format by the service.
+
+ ** [connections](#API_ListConnections_ResponseSyntax) **   <a name="interconnect-ListConnections-response-connections"></a>
 The resulting list of [Connection](API_Connection.md) objects.
 Type: Array of [ConnectionSummary](API_ConnectionSummary.md) objects
 
- ** nextToken **
+ ** [nextToken](#API_ListConnections_ResponseSyntax) **   <a name="interconnect-ListConnections-response-nextToken"></a>
 A pagination token for use in subsequent calls to fetch the next page of results.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/research-data-monetization-on-
 title: 'Guidance for Research Data Monetization on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/research-data-monetization-on-aws/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # Guidance for Research Data Monetization on AWS

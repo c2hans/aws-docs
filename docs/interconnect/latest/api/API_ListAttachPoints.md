@@ -7,37 +7,70 @@ source_url: https://docs.aws.amazon.com/interconnect/latest/api/API_ListAttachPo
 
 Lists all [AttachPoint](API_AttachPoint.md) options the caller has access to that are valid for the specified [Environment](API_Environment.md).
 
+## Request Syntax
+<a name="API_ListAttachPoints_RequestSyntax"></a>
+
+```
+{
+   "environmentId": "{{string}}",
+   "maxResults": {{number}},
+   "nextToken": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_ListAttachPoints_RequestParameters"></a>
 
- ** environmentId **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [environmentId](#API_ListAttachPoints_RequestSyntax) **   <a name="interconnect-ListAttachPoints-request-environmentId"></a>
 The identifier of the [Environment](API_Environment.md) for which to list valid Attach Points.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: Yes
 
- ** maxResults **
+ ** [maxResults](#API_ListAttachPoints_RequestSyntax) **   <a name="interconnect-ListAttachPoints-request-maxResults"></a>
 The max number of list results in a single paginated response.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 100.
 Required: No
 
- ** nextToken **
+ ** [nextToken](#API_ListAttachPoints_RequestSyntax) **   <a name="interconnect-ListAttachPoints-request-nextToken"></a>
 A pagination token from a previous paginated response indicating you wish to get the next page.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
+## Response Syntax
+<a name="API_ListAttachPoints_ResponseSyntax"></a>
+
+```
+{
+   "attachPoints": [
+      {
+         "identifier": "string",
+         "name": "string",
+         "type": "string"
+      }
+   ],
+   "nextToken": "string"
+}
+```
+
 ## Response Elements
 <a name="API_ListAttachPoints_ResponseElements"></a>
 
-The following elements are returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** attachPoints **
+The following data is returned in JSON format by the service.
+
+ ** [attachPoints](#API_ListAttachPoints_ResponseSyntax) **   <a name="interconnect-ListAttachPoints-response-attachPoints"></a>
 The valid [AttachPoint](API_AttachPoint.md)
 Type: Array of [AttachPointDescriptor](API_AttachPointDescriptor.md) objects
 
- ** nextToken **
+ ** [nextToken](#API_ListAttachPoints_ResponseSyntax) **   <a name="interconnect-ListAttachPoints-response-nextToken"></a>
 A pagination token indicating that there are more results that can be fetched.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.

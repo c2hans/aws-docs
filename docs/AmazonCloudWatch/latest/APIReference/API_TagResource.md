@@ -15,10 +15,29 @@ You can use the `TagResource` action with an alarm that already has tags. If you
 
 You can associate as many as 50 tags with a CloudWatch resource.
 
+## Request Syntax
+<a name="API_TagResource_RequestSyntax"></a>
+
+```
+{
+   "ResourceARN": "{{string}}",
+   "Tags": [
+      {
+         "Key": "{{string}}",
+         "Value": "{{string}}"
+      }
+   ]
+}
+```
+
 ## Request Parameters
 <a name="API_TagResource_RequestParameters"></a>
 
- ** ResourceARN **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [ResourceARN](#API_TagResource_RequestSyntax) **   <a name="ACW-TagResource-request-ResourceARN"></a>
 The ARN of the CloudWatch resource that you're adding tags to.
 The ARN format of an alarm is `arn:aws:cloudwatch:Region:account-id:alarm:alarm-name `
 The ARN format of a Contributor Insights rule is `arn:aws:cloudwatch:Region:account-id:insight-rule/insight-rule-name `
@@ -29,10 +48,15 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: Yes
 
- ** Tags **
+ ** [Tags](#API_TagResource_RequestSyntax) **   <a name="ACW-TagResource-request-Tags"></a>
 The list of key-value pairs to associate with the alarm.
 Type: Array of [Tag](API_Tag.md) objects
 Required: Yes
+
+## Response Elements
+<a name="API_TagResource_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
 
 ## Errors
 <a name="API_TagResource_Errors"></a>

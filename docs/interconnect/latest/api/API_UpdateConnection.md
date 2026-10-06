@@ -7,10 +7,26 @@ source_url: https://docs.aws.amazon.com/interconnect/latest/api/API_UpdateConnec
 
 Modifies an existing connection. Currently we support modifications to the connection's description and/or bandwidth.
 
+## Request Syntax
+<a name="API_UpdateConnection_RequestSyntax"></a>
+
+```
+{
+   "bandwidth": "{{string}}",
+   "clientToken": "{{string}}",
+   "description": "{{string}}",
+   "identifier": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_UpdateConnection_RequestParameters"></a>
 
- ** bandwidth **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [bandwidth](#API_UpdateConnection_RequestSyntax) **   <a name="interconnect-UpdateConnection-request-bandwidth"></a>
 Request a new bandwidth size on the given [Connection](API_Connection.md).
 Note that changes to the size may be subject to additional policy, and does require the remote partner provider to acknowledge and permit this new bandwidth size.
 Type: String
@@ -18,31 +34,60 @@ Length Constraints: Minimum length of 1. Maximum length of 8.
 Pattern: `\d+[MG]bps`
 Required: No
 
- ** clientToken **
+ ** [clientToken](#API_UpdateConnection_RequestSyntax) **   <a name="interconnect-UpdateConnection-request-clientToken"></a>
 Idempotency token used for the request.
 Type: String
 Required: No
 
- ** description **
+ ** [description](#API_UpdateConnection_RequestSyntax) **   <a name="interconnect-UpdateConnection-request-description"></a>
 An updated description to apply to the [Connection](API_Connection.md)
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[-a-zA-Z0-9_ ]+`
 Required: No
 
- ** identifier **
+ ** [identifier](#API_UpdateConnection_RequestSyntax) **   <a name="interconnect-UpdateConnection-request-identifier"></a>
 The identifier of the [Connection](API_Connection.md) that should be updated.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 32.
 Pattern: `(mcc|lmcc)-[a-z0-9]{8}`
 Required: Yes
 
+## Response Syntax
+<a name="API_UpdateConnection_ResponseSyntax"></a>
+
+```
+{
+   "connection": {
+      "activationKey": "string",
+      "arn": "string",
+      "attachPoint": { ... },
+      "bandwidth": "string",
+      "billingTier": number,
+      "description": "string",
+      "environmentId": "string",
+      "id": "string",
+      "location": "string",
+      "ownerAccount": "string",
+      "provider": { ... },
+      "sharedId": "string",
+      "state": "string",
+      "tags": {
+         "string" : "string"
+      },
+      "type": "string"
+   }
+}
+```
+
 ## Response Elements
 <a name="API_UpdateConnection_ResponseElements"></a>
 
-The following element is returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** connection **
+The following data is returned in JSON format by the service.
+
+ ** [connection](#API_UpdateConnection_ResponseSyntax) **   <a name="interconnect-UpdateConnection-response-connection"></a>
 The resulting updated [Connection](API_Connection.md)
 Type: [Connection](API_Connection.md) object
 

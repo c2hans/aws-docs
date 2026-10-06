@@ -16,17 +16,31 @@ There is a limit of 20 transactions per second for this API. Each `GetMetricWidg
 + As many as 100 metrics in the graph.
 + Up to 100 KB uncompressed payload.
 
+## Request Syntax
+<a name="API_GetMetricWidgetImage_RequestSyntax"></a>
+
+```
+{
+   "MetricWidget": "{{string}}",
+   "OutputFormat": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_GetMetricWidgetImage_RequestParameters"></a>
 
- ** MetricWidget **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [MetricWidget](#API_GetMetricWidgetImage_RequestSyntax) **   <a name="ACW-GetMetricWidgetImage-request-MetricWidget"></a>
 A JSON string that defines the bitmap graph to be retrieved. The string includes the metrics to include in the graph, statistics, annotations, title, axis limits, and so on. You can include only one `MetricWidget` parameter in each `GetMetricWidgetImage` call.
 For more information about the syntax of `MetricWidget` see [GetMetricWidgetImage: Metric Widget Structure and Syntax](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Metric-Widget-Structure.html).
 If any metric on the graph could not load all the requested data points, an orange triangle with an exclamation point appears next to the graph legend.
 Type: String
 Required: Yes
 
- ** OutputFormat **
+ ** [OutputFormat](#API_GetMetricWidgetImage_RequestSyntax) **   <a name="ACW-GetMetricWidgetImage-request-OutputFormat"></a>
 The format of the resulting image. Only PNG images are supported.
 The default is `png`. If you specify `png`, the API returns an HTTP response with the content-type set to `text/xml`. The image data is in a `MetricWidgetImage` field. For example:
  ` <GetMetricWidgetImageResponse xmlns=<URLstring>>`
@@ -43,12 +57,23 @@ The `image/png` setting is intended only for custom HTTP requests. For most use 
 Type: String
 Required: No
 
+## Response Syntax
+<a name="API_GetMetricWidgetImage_ResponseSyntax"></a>
+
+```
+{
+   "MetricWidgetImage": blob
+}
+```
+
 ## Response Elements
 <a name="API_GetMetricWidgetImage_ResponseElements"></a>
 
-The following element is returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** MetricWidgetImage **
+The following data is returned in JSON format by the service.
+
+ ** [MetricWidgetImage](#API_GetMetricWidgetImage_ResponseSyntax) **   <a name="ACW-GetMetricWidgetImage-response-MetricWidgetImage"></a>
 The image of the graph, in the output format specified. The output is base64-encoded.
 Type: Base64-encoded binary data object
 

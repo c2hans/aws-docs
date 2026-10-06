@@ -20,6 +20,12 @@ Indicates whether the integration can create code remediation pull requests.
 Type: Boolean
 Required: No
 
+ ** triggerFilterGroups **   <a name="securityagent-Type-GitHubResourceCapabilities-triggerFilterGroups"></a>
+The filter groups that control which pull request events start an automatic code review when `leaveComments` is enabled. A review starts when any group matches. If you omit this, a review starts on `PULL_REQUEST_READY_FOR_REVIEW` events.
+Type: Array of [TriggerFilterGroup](API_TriggerFilterGroup.md) objects
+Array Members: Minimum number of 1 item. Maximum number of 5 items.
+Required: No
+
 ## See Also
 <a name="API_GitHubResourceCapabilities_SeeAlso"></a>
 

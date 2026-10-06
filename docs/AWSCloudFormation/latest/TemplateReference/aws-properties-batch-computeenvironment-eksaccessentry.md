@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-batch-computeenvironment-eksaccessentry-properties"></a>
 
 `DesiredState`  <a name="cfn-batch-computeenvironment-eksaccessentry-desiredstate"></a>
-The desired access entry state for the compute environment. Valid values:
+The desired access entry state for the compute environment. When omitted in a AWS CloudFormation template, AWS Batch applies `INHERIT_FROM_CLUSTER` as the default value. Valid values:
 ENABLED
 AWS Batch manages an access entry on the cluster for the compute environment.
 DISABLED
@@ -52,7 +52,8 @@ AWS Batch defers to the cluster's current access entry `status`. On a cluster wh
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Status`  <a name="cfn-batch-computeenvironment-eksaccessentry-status"></a>
-The observed state of the access entry on the cluster. `ACTIVE` means that an access entry for the compute environment exists on the cluster and takes precedence over the `aws-auth` ConfigMap. `INACTIVE` means that no AWS Batch-managed access entry is present. This is a read-only field returned by `DescribeComputeEnvironments`.
+The observed state of the access entry on the cluster. `ACTIVE` means that an access entry for the compute environment exists on the cluster and takes precedence over the `aws-auth` ConfigMap. `INACTIVE` means that no AWS Batch-managed access entry is present.
+This field is read-only and only appears in the [DescribeComputeEnvironments](https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeComputeEnvironments.html) response.
 *Required*: No
 *Type*: String
 *Allowed values*: `ACTIVE | INACTIVE`

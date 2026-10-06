@@ -13,9 +13,19 @@ The provider-specific input for creating an integration. This is a union type th
 **Important**
 This data type is a UNION, so only one of the following members can be specified when used or returned.
 
+ ** azureDevOps **   <a name="securityagent-Type-ProviderInput-azureDevOps"></a>
+The Azure DevOps-specific input for creating an integration.
+Type: [AzureDevOpsIntegrationInput](API_AzureDevOpsIntegrationInput.md) object
+Required: No
+
  ** bitbucket **   <a name="securityagent-Type-ProviderInput-bitbucket"></a>
 The configuration for a Bitbucket integration.
 Type: [BitbucketIntegrationInput](API_BitbucketIntegrationInput.md) object
+Required: No
+
+ ** bitbucketDataCenter **   <a name="securityagent-Type-ProviderInput-bitbucketDataCenter"></a>
+The Bitbucket Data Center-specific input for creating an integration.
+Type: [BitbucketDataCenterIntegrationInput](API_BitbucketDataCenterIntegrationInput.md) object
 Required: No
 
  ** confluence **   <a name="securityagent-Type-ProviderInput-confluence"></a>

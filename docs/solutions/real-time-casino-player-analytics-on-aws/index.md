@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/real-time-casino-player-analyt
 title: 'Guidance for Real-Time Casino Player Analytics on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/real-time-casino-player-analytics-on-aws/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # Guidance for Real-Time Casino Player Analytics on AWS

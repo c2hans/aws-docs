@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/traditional-pos-checkout-on-aw
 title: 'Guidance for Traditional POS Checkout on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/traditional-pos-checkout-on-aws/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # Guidance for Traditional POS Checkout on AWS

@@ -14,7 +14,7 @@ An annotation for removing a custom type from an Automated Reasoning policy.
 The name of the custom type to delete from the policy. The type must not be referenced by any variables or rules.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `[A-Za-z][A-Za-z0-9_]*`
+Pattern: `\p{L}[\p{L}\p{M}0-9_]*( [\p{L}\p{M}0-9_]+)*`
 Required: Yes
 
 ## See Also

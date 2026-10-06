@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/swf/index.html
 title: 'Amazon Simple Workflow Service Documentation'
 canonical_url: https://docs.aws.amazon.com/swf/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # Amazon Simple Workflow Service Documentation

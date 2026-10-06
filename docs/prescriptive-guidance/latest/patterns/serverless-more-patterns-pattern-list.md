@@ -33,7 +33,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/se
 + [Ensure Amazon EMR logging to Amazon S3 is enabled at launch](ensure-amazon-emr-logging-to-amazon-s3-is-enabled-at-launch.md)
 + [Estimate the cost of a DynamoDB table for on-demand capacity](estimate-the-cost-of-a-dynamodb-table-for-on-demand-capacity.md)
 + [Generate personalized and re-ranked recommendations using Amazon Personalize](generate-personalized-and-re-ranked-recommendations-using-amazon-personalize.md)
-+ [Generate test data using an AWS Glue job and Python](generate-test-data-using-an-aws-glue-job-and-python.md)
 + [Implement SHA1 hashing for PII data when migrating from SQL Server to PostgreSQL](implement-sha1-hashing-for-pii-data-when-migrating-from-sql-server-to-postgresql.md)
 + [Improve operational performance by enabling Amazon DevOps Guru across multiple AWS Regions, accounts, and OUs with the AWS CDK](improve-operational-performance-by-enabling-amazon-devops-guru-across-multiple-aws-regions-accounts-and-ous-with-the-aws-cdk.md)
 + [Launch a CodeBuild project across AWS accounts using Step Functions and a Lambda proxy function](launch-a-codebuild-project-across-aws-accounts-using-step-functions-and-a-lambda-proxy-function.md)

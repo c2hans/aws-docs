@@ -7,31 +7,56 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 
 Returns the current status of vended metric enrichment for the account, including whether CloudWatch vended metrics are enriched with resource ARN and resource tag labels and queryable using PromQL. For the list of supported resources, see [Supported AWS infrastructure metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/UsingResourceTagsForTelemetry.html).
 
+## Response Syntax
+<a name="API_GetOTelEnrichment_ResponseSyntax"></a>
+
+```
+{
+   "CreatedAt": number,
+   "ExcludeFilters": [
+      {
+         "MetricNames": [ "string" ],
+         "Namespace": "string"
+      }
+   ],
+   "IncludeFilters": [
+      {
+         "MetricNames": [ "string" ],
+         "Namespace": "string"
+      }
+   ],
+   "Status": "string",
+   "UpdatedAt": number
+}
+```
+
 ## Response Elements
 <a name="API_GetOTelEnrichment_ResponseElements"></a>
 
-The following elements are returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** CreatedAt **
+The following data is returned in JSON format by the service.
+
+ ** [CreatedAt](#API_GetOTelEnrichment_ResponseSyntax) **   <a name="ACW-GetOTelEnrichment-response-CreatedAt"></a>
 The date and time that enrichment started for the account. This parameter is omitted when enrichment is stopped.
 Type: Timestamp
 
- ** ExcludeFilters **
+ ** [ExcludeFilters](#API_GetOTelEnrichment_ResponseSyntax) **   <a name="ACW-GetOTelEnrichment-response-ExcludeFilters"></a>
 The metric namespaces, and the metric names, that are left unenriched. This parameter is omitted when enrichment is stopped, and when enrichment is running with no exclude filters, which means that nothing is excluded.
 Type: Array of [OTelEnrichmentMetricSelector](API_OTelEnrichmentMetricSelector.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 100 items.
 
- ** IncludeFilters **
+ ** [IncludeFilters](#API_GetOTelEnrichment_ResponseSyntax) **   <a name="ACW-GetOTelEnrichment-response-IncludeFilters"></a>
 The metric namespaces, and the metric names, that are enriched. This parameter is omitted when enrichment is stopped, and when enrichment is running with no include filters, which means that every supported namespace is in scope.
 Type: Array of [OTelEnrichmentMetricSelector](API_OTelEnrichmentMetricSelector.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 100 items.
 
- ** Status **
+ ** [Status](#API_GetOTelEnrichment_ResponseSyntax) **   <a name="ACW-GetOTelEnrichment-response-Status"></a>
 The status of OTel enrichment for the account. Valid values are `Running` (enrichment is enabled) and `Stopped` (enrichment is disabled).
 Type: String
 Valid Values: `Running | Stopped`
 
- ** UpdatedAt **
+ ** [UpdatedAt](#API_GetOTelEnrichment_ResponseSyntax) **   <a name="ACW-GetOTelEnrichment-response-UpdatedAt"></a>
 The date and time that the enrichment configuration for the account was last stored.
 Type: Timestamp
 

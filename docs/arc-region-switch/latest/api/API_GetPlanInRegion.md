@@ -7,21 +7,99 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_GetPlan
 
 Retrieves information about a Region switch plan in a specific AWS Region. This operation is useful for getting Region-specific information about a plan.
 
+## Request Syntax
+<a name="API_GetPlanInRegion_RequestSyntax"></a>
+
+```
+{
+   "arn": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_GetPlanInRegion_RequestParameters"></a>
 
- ** arn **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [arn](#API_GetPlanInRegion_RequestSyntax) **   <a name="regionswitch-GetPlanInRegion-request-arn"></a>
 The Amazon Resource Name (ARN) of the plan in Region.
 Type: String
 Pattern: `arn:aws[a-zA-Z-]*:arc-region-switch::[0-9]{12}:plan/([a-zA-Z0-9](?:[a-zA-Z0-9-]{0,30}[a-zA-Z0-9])?):([a-z0-9]{6})`
 Required: Yes
 
+## Response Syntax
+<a name="API_GetPlanInRegion_ResponseSyntax"></a>
+
+```
+{
+   "plan": {
+      "arn": "string",
+      "associatedAlarms": {
+         "string" : {
+            "alarmType": "string",
+            "crossAccountRole": "string",
+            "externalId": "string",
+            "resourceIdentifier": "string"
+         }
+      },
+      "description": "string",
+      "executionRole": "string",
+      "name": "string",
+      "owner": "string",
+      "primaryRegion": "string",
+      "recoveryApproach": "string",
+      "recoveryTimeObjectiveMinutes": number,
+      "regions": [ "string" ],
+      "reportConfiguration": {
+         "reportOutput": [
+            { ... }
+         ]
+      },
+      "triggers": [
+         {
+            "action": "string",
+            "conditions": [
+               {
+                  "associatedAlarmName": "string",
+                  "condition": "string"
+               }
+            ],
+            "description": "string",
+            "minDelayMinutesBetweenExecutions": number,
+            "targetRegion": "string"
+         }
+      ],
+      "updatedAt": number,
+      "version": "string",
+      "workflows": [
+         {
+            "steps": [
+               {
+                  "description": "string",
+                  "executionBlockConfiguration": { ... },
+                  "executionBlockType": "string",
+                  "name": "string"
+               }
+            ],
+            "workflowDescription": "string",
+            "workflowTargetAction": "string",
+            "workflowTargetRegion": "string"
+         }
+      ]
+   }
+}
+```
+
 ## Response Elements
 <a name="API_GetPlanInRegion_ResponseElements"></a>
 
-The following element is returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** plan **
+The following data is returned in JSON format by the service.
+
+ ** [plan](#API_GetPlanInRegion_ResponseSyntax) **   <a name="regionswitch-GetPlanInRegion-response-plan"></a>
 The details of the Region switch plan.
 Type: [Plan](API_Plan.md) object
 

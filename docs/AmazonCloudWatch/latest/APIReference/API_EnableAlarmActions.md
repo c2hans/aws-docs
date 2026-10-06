@@ -7,15 +7,33 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 
 Enables the actions for the specified alarms.
 
+## Request Syntax
+<a name="API_EnableAlarmActions_RequestSyntax"></a>
+
+```
+{
+   "AlarmNames": [ "{{string}}" ]
+}
+```
+
 ## Request Parameters
 <a name="API_EnableAlarmActions_RequestParameters"></a>
 
- ** AlarmNames **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [AlarmNames](#API_EnableAlarmActions_RequestSyntax) **   <a name="ACW-EnableAlarmActions-request-AlarmNames"></a>
 The names of the alarms.
 Type: Array of strings
 Array Members: Maximum number of 100 items.
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes
+
+## Response Elements
+<a name="API_EnableAlarmActions_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
 
 ## Errors
 <a name="API_EnableAlarmActions_Errors"></a>

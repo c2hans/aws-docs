@@ -7,10 +7,23 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 
 Displays the tags associated with a CloudWatch resource. Currently, alarms, dashboards, metric streams and Contributor Insights rules support tagging.
 
+## Request Syntax
+<a name="API_ListTagsForResource_RequestSyntax"></a>
+
+```
+{
+   "ResourceARN": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_ListTagsForResource_RequestParameters"></a>
 
- ** ResourceARN **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [ResourceARN](#API_ListTagsForResource_RequestSyntax) **   <a name="ACW-ListTagsForResource-request-ResourceARN"></a>
 The ARN of the CloudWatch resource that you want to view tags for.
 The ARN format of an alarm is `arn:aws:cloudwatch:Region:account-id:alarm:alarm-name `
 The ARN format of a Contributor Insights rule is `arn:aws:cloudwatch:Region:account-id:insight-rule/insight-rule-name `
@@ -21,12 +34,28 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: Yes
 
+## Response Syntax
+<a name="API_ListTagsForResource_ResponseSyntax"></a>
+
+```
+{
+   "Tags": [
+      {
+         "Key": "string",
+         "Value": "string"
+      }
+   ]
+}
+```
+
 ## Response Elements
 <a name="API_ListTagsForResource_ResponseElements"></a>
 
-The following element is returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** Tags **
+The following data is returned in JSON format by the service.
+
+ ** [Tags](#API_ListTagsForResource_ResponseSyntax) **   <a name="ACW-ListTagsForResource-response-Tags"></a>
 The list of tag keys and values associated with the resource you specified.
 Type: Array of [Tag](API_Tag.md) objects
 

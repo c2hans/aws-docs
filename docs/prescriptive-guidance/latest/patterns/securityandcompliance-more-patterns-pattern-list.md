@@ -45,7 +45,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/se
 + [Improve operational performance by enabling Amazon DevOps Guru across multiple AWS Regions, accounts, and OUs with the AWS CDK](improve-operational-performance-by-enabling-amazon-devops-guru-across-multiple-aws-regions-accounts-and-ous-with-the-aws-cdk.md)
 + [Ingest and migrate EC2 Windows instances into an AWS Managed Services account](ingest-and-migrate-ec2-windows-instances-into-an-aws-managed-services-account.md)
 + [Migrate Amazon RDS for Oracle to Amazon RDS for PostgreSQL in SSL mode by using AWS DMS](migrate-amazon-rds-for-oracle-to-amazon-rds-for-postgresql-in-ssl-mode-by-using-aws-dms.md)
-+ [Migrate an ELK Stack to Elastic Cloud on AWS](migrate-an-elk-stack-to-elastic-cloud-on-aws.md)
 + [Migrate an F5 BIG-IP workload to F5 BIG-IP VE on the AWS Cloud](migrate-an-f5-big-ip-workload-to-f5-big-ip-ve-on-the-aws-cloud.md)
 + [Provision least-privilege IAM roles by deploying a role vending machine solution](provision-least-privilege-iam-roles-by-deploying-a-role-vending-machine-solution.md)
 + [Send AWS WAF logs to Splunk by using AWS Firewall Manager and Amazon Data Firehose](send-aws-waf-logs-to-splunk-by-using-aws-firewall-manager-and-amazon-data-firehose.md)

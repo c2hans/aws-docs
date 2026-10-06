@@ -129,7 +129,7 @@ Long-context rates apply to the full request when input exceeds 272,000 tokens.
 
 | **Inference option** | **Input** | **Input — cache write** | **Input — cache read** | **Output** |
 | --- | --- | --- | --- | --- |
-| Regional (Mantle in IAD) | $2.20 | $2.75 | $0.11 | $11.00 |
+| Regional (bedrock-mantle in US East (N. Virginia)) | $2.20 | $2.75 | $0.11 | $11.00 |
 | US CRIS (bedrock-runtime) | $2.20 | $2.75 | $0.11 | $11.00 |
 | Global CRIS (bedrock-runtime) | $2.00 | $2.50 | $0.10 | $10.00 |
 
@@ -138,7 +138,7 @@ Long-context rates apply to the full request when input exceeds 272,000 tokens.
 
 | **Inference option** | **Input** | **Input — cache write** | **Input — cache read** | **Output** |
 | --- | --- | --- | --- | --- |
-| Regional (Mantle in IAD) | $4.40 | $5.50 | $0.22 | $16.50 |
+| Regional (bedrock-mantle in US East (N. Virginia)) | $4.40 | $5.50 | $0.22 | $16.50 |
 | US CRIS (bedrock-runtime) | $4.40 | $5.50 | $0.22 | $16.50 |
 | Global CRIS (bedrock-runtime) | $4.00 | $5.00 | $0.20 | $15.00 |
 
@@ -152,7 +152,7 @@ To call this model from code, use the following model IDs and endpoint URLs. For
 | bedrock-mantle | openai.gpt-6.1-sol | https://bedrock-mantle.us-east-1.api.aws/openai/v1 | Not supported | Not supported |
 | bedrock-runtime | openai.gpt-6.1-sol | Not supported | us.openai.gpt-6.1-sol | global.openai.gpt-6.1-sol |
 
-*For in-Region access, use `bedrock-mantle` in `us-east-1` (N. Virginia, IAD). On `bedrock-runtime`, use `us.openai.gpt-6.1-sol` for US geographic cross-Region inference or `global.openai.gpt-6.1-sol` for global cross-Region inference. Direct in-Region invocation is not supported on `bedrock-runtime`. Use a source Region enabled for the profile you choose; see [Route model inference requests across AWS Regions with cross-Region inference](cross-region-inference.md).*
+*For in-Region access, use `bedrock-mantle` in `us-east-1` (N. Virginia). On `bedrock-runtime`, use `us.openai.gpt-6.1-sol` for US geographic cross-Region inference or `global.openai.gpt-6.1-sol` for global cross-Region inference. Direct in-Region invocation is not supported on `bedrock-runtime`. Use a source Region enabled for the profile you choose; see [Route model inference requests across AWS Regions with cross-Region inference](cross-region-inference.md).*
 
 ## Service Tiers
 <a name="model-card-openai-gpt-6-1-sol-tiers"></a>
@@ -168,7 +168,7 @@ Amazon Bedrock offers several service tiers for different workloads. **Standard*
 
 ***Regional availability at a glance***
 
-Mantle access is available in US East (N. Virginia), `us-east-1` (IAD). Runtime access supports both US geographic and global inference profiles. For more information, see [Regional availability by models](models-region-compatibility.md).
+Mantle access is available in `us-east-1` (N. Virginia). Runtime access supports both US geographic and global inference profiles. For more information, see [Regional availability by models](models-region-compatibility.md).
 
 **Availability using the `bedrock-mantle` endpoint**
 
@@ -181,6 +181,23 @@ Mantle access is available in US East (N. Virginia), `us-east-1` (IAD). Runtime 
 | **Scope** | **In-Region** | **Geo** | **Global** |
 | --- | --- | --- | --- |
 | US geographic and global inference | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
+
+***Geo inference details***
+
+The destination Regions available to a geographic inference profile depend on the source Region. To retrieve the current routing configuration, call [GetInferenceProfile](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetInferenceProfile.html) from the source Region.
+
+**Geo: US**
+
+Geo inference ID: `us.openai.gpt-6.1-sol`
+
+| **Source Region** | **Destination Regions** |
+| --- | --- |
+| us-east-1 (N. Virginia) | us-east-1 (N. Virginia), us-east-2 (Ohio), us-west-2 (Oregon) |
+| us-east-2 (Ohio) | us-east-1 (N. Virginia), us-east-2 (Ohio), us-west-2 (Oregon) |
+| us-west-1 (N. California) | us-east-1 (N. Virginia), us-east-2 (Ohio), us-west-1 (N. California), us-west-2 (Oregon) |
+| us-west-2 (Oregon) | us-east-1 (N. Virginia), us-east-2 (Ohio), us-west-2 (Oregon) |
+| ca-central-1 (Canada) | ca-central-1 (Canada), us-east-1 (N. Virginia), us-east-2 (Ohio), us-west-2 (Oregon) |
+| ca-west-1 (Calgary) | ca-west-1 (Calgary), us-east-1 (N. Virginia), us-east-2 (Ohio), us-west-2 (Oregon) |
 
 ## Quotas and Limits
 <a name="model-card-openai-gpt-6-1-sol-quotas"></a>

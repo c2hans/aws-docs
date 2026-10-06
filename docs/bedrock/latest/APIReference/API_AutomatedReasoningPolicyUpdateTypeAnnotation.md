@@ -14,7 +14,7 @@ An annotation for modifying an existing custom type in an Automated Reasoning po
 The current name of the custom type to update.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `[A-Za-z][A-Za-z0-9_]*`
+Pattern: `\p{L}[\p{L}\p{M}0-9_]*( [\p{L}\p{M}0-9_]+)*`
 Required: Yes
 
  ** values **   <a name="bedrock-Type-AutomatedReasoningPolicyUpdateTypeAnnotation-values"></a>
@@ -34,7 +34,7 @@ Required: No
 The new name for the custom type, if you want to rename it. If not provided, the name remains unchanged.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `[A-Za-z][A-Za-z0-9_]*`
+Pattern: `\p{L}[\p{L}\p{M}0-9_]*( [\p{L}\p{M}0-9_]+)*`
 Required: No
 
 ## See Also

@@ -7,4 +7,4 @@ source_url: https://docs.aws.amazon.com/trustedadvisor/latest/APIReference/Welco
 
 TrustedAdvisor Public API
 
-This document was last published on October 2, 2026.
+This document was last published on October 5, 2026.

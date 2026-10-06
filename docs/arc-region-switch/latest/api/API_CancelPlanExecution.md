@@ -9,25 +9,45 @@ Cancels an in-progress plan execution. This operation stops the execution of the
 
 You must specify the plan ARN and execution ID. You can also provide an optional comment explaining why the execution was canceled.
 
+## Request Syntax
+<a name="API_CancelPlanExecution_RequestSyntax"></a>
+
+```
+{
+   "comment": "{{string}}",
+   "executionId": "{{string}}",
+   "planArn": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_CancelPlanExecution_RequestParameters"></a>
 
- ** comment **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [comment](#API_CancelPlanExecution_RequestSyntax) **   <a name="regionswitch-CancelPlanExecution-request-comment"></a>
 A comment that you can enter about canceling a plan execution step.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1024.
 Required: No
 
- ** executionId **
+ ** [executionId](#API_CancelPlanExecution_RequestSyntax) **   <a name="regionswitch-CancelPlanExecution-request-executionId"></a>
 The execution identifier of a plan execution.
 Type: String
 Required: Yes
 
- ** planArn **
+ ** [planArn](#API_CancelPlanExecution_RequestSyntax) **   <a name="regionswitch-CancelPlanExecution-request-planArn"></a>
 The Amazon Resource Name (ARN) of the plan.
 Type: String
 Pattern: `arn:aws[a-zA-Z-]*:arc-region-switch::[0-9]{12}:plan/([a-zA-Z0-9](?:[a-zA-Z0-9-]{0,30}[a-zA-Z0-9])?):([a-z0-9]{6})`
 Required: Yes
+
+## Response Elements
+<a name="API_CancelPlanExecution_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
 
 ## Errors
 <a name="API_CancelPlanExecution_Errors"></a>

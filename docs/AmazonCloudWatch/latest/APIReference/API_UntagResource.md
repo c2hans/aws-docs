@@ -7,10 +7,24 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 
 Removes one or more tags from the specified resource. Currently, alarms, dashboards, metric streams and Contributor Insights rules support tagging.
 
+## Request Syntax
+<a name="API_UntagResource_RequestSyntax"></a>
+
+```
+{
+   "ResourceARN": "{{string}}",
+   "TagKeys": [ "{{string}}" ]
+}
+```
+
 ## Request Parameters
 <a name="API_UntagResource_RequestParameters"></a>
 
- ** ResourceARN **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [ResourceARN](#API_UntagResource_RequestSyntax) **   <a name="ACW-UntagResource-request-ResourceARN"></a>
 The ARN of the CloudWatch resource that you're removing tags from.
 The ARN format of an alarm is `arn:aws:cloudwatch:Region:account-id:alarm:alarm-name `
 The ARN format of a Contributor Insights rule is `arn:aws:cloudwatch:Region:account-id:insight-rule/insight-rule-name `
@@ -21,11 +35,16 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: Yes
 
- ** TagKeys **
+ ** [TagKeys](#API_UntagResource_RequestSyntax) **   <a name="ACW-UntagResource-request-TagKeys"></a>
 The list of tag keys to remove from the resource.
 Type: Array of strings
 Length Constraints: Minimum length of 1. Maximum length of 128.
 Required: Yes
+
+## Response Elements
+<a name="API_UntagResource_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
 
 ## Errors
 <a name="API_UntagResource_Errors"></a>

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/building-queries-clean-rooms/i
 title: 'Guidance for Building Queries in AWS Clean Rooms'
 canonical_url: https://docs.aws.amazon.com/solutions/building-queries-clean-rooms/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # Guidance for Building Queries in AWS Clean Rooms

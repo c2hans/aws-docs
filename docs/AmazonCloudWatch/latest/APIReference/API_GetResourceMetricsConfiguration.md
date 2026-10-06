@@ -11,22 +11,55 @@ This operation returns a `ResourceNotFoundException` if no resource metrics conf
 
 To retrieve a resource metrics configuration, you must have the `cloudwatch:GetResourceMetricsConfiguration` permission. For information about scoping this permission to specific resources, see [Condition keys for resource metrics configuration access](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/iam-cw-condition-keys-resource-arn.html) in the *Amazon CloudWatch User Guide*.
 
+## Request Syntax
+<a name="API_GetResourceMetricsConfiguration_RequestSyntax"></a>
+
+```
+{
+   "ResourceArn": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_GetResourceMetricsConfiguration_RequestParameters"></a>
 
- ** ResourceArn **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [ResourceArn](#API_GetResourceMetricsConfiguration_RequestSyntax) **   <a name="ACW-GetResourceMetricsConfiguration-request-ResourceArn"></a>
 The Amazon Resource Name (ARN) of the AWS resource to retrieve the resource metrics configuration for.
 Type: String
 Length Constraints: Minimum length of 20. Maximum length of 2048.
 Pattern: `arn:[a-zA-Z0-9-]+:[a-zA-Z0-9-]+:[a-zA-Z0-9-]*:\d{12}:.+`
 Required: Yes
 
+## Response Syntax
+<a name="API_GetResourceMetricsConfiguration_ResponseSyntax"></a>
+
+```
+{
+   "ResourceMetricsConfiguration": {
+      "CreatedAt": number,
+      "MetricSelections": [
+         {
+            "IncludeMetrics": [ "string" ]
+         }
+      ],
+      "ResourceArn": "string",
+      "UpdatedAt": number
+   }
+}
+```
+
 ## Response Elements
 <a name="API_GetResourceMetricsConfiguration_ResponseElements"></a>
 
-The following element is returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** ResourceMetricsConfiguration **
+The following data is returned in JSON format by the service.
+
+ ** [ResourceMetricsConfiguration](#API_GetResourceMetricsConfiguration_ResponseSyntax) **   <a name="ACW-GetResourceMetricsConfiguration-response-ResourceMetricsConfiguration"></a>
 The resource metrics configuration for the specified resource.
 Type: [ResourceMetricsConfiguration](API_ResourceMetricsConfiguration.md) object
 

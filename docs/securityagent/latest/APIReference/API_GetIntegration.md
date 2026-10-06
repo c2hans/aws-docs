@@ -49,7 +49,8 @@ Content-type: application/json
    "privateConnectionName": "string",
    "provider": "string",
    "providerType": "string",
-   "targetUrl": "string"
+   "targetUrl": "string",
+   "webhookUrl": "string"
 }
 ```
 
@@ -83,7 +84,7 @@ Type: String
  ** [provider](#API_GetIntegration_ResponseSyntax) **   <a name="securityagent-GetIntegration-response-provider"></a>
 The integration provider.
 Type: String
-Valid Values: `GITHUB | GITLAB | BITBUCKET | CONFLUENCE`
+Valid Values: `GITHUB | GITLAB | BITBUCKET | CONFLUENCE | AZURE_DEVOPS`
 
  ** [providerType](#API_GetIntegration_ResponseSyntax) **   <a name="securityagent-GetIntegration-response-providerType"></a>
 The type of the integration provider.
@@ -92,6 +93,10 @@ Valid Values: `SOURCE_CODE | DOCUMENTATION`
 
  ** [targetUrl](#API_GetIntegration_ResponseSyntax) **   <a name="securityagent-GetIntegration-response-targetUrl"></a>
 The HTTPS URL of the customer self-hosted instance, such as a GitHub Enterprise Server or self-managed GitLab instance. This value is absent for SaaS integrations.
+Type: String
+
+ ** [webhookUrl](#API_GetIntegration_ResponseSyntax) **   <a name="securityagent-GetIntegration-response-webhookUrl"></a>
+The payload URL of the integration's webhook, once it has been created. The signing secret is never returned on a read.
 Type: String
 
 ## Errors

@@ -13,6 +13,11 @@ The capabilities for an integrated resource from a third-party provider. This is
 **Important**
 This data type is a UNION, so only one of the following members can be specified when used or returned.
 
+ ** azureDevOps **   <a name="securityagent-Type-ProviderResourceCapabilities-azureDevOps"></a>
+The Azure DevOps-specific resource capabilities.
+Type: [AzureDevOpsResourceCapabilities](API_AzureDevOpsResourceCapabilities.md) object
+Required: No
+
  ** bitbucket **   <a name="securityagent-Type-ProviderResourceCapabilities-bitbucket"></a>
 Capabilities for an integrated Bitbucket repository.
 Type: [BitbucketResourceCapabilities](API_BitbucketResourceCapabilities.md) object

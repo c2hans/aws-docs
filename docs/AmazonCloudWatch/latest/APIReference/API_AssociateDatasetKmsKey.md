@@ -28,17 +28,31 @@ If any of these checks on the new key fails, the operation fails and the existin
 
 For more information about using customer managed keys with Amazon CloudWatch, see [Encryption at rest with customer managed keys](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cmk-encryption.html) in the *Amazon CloudWatch User Guide*.
 
+## Request Syntax
+<a name="API_AssociateDatasetKmsKey_RequestSyntax"></a>
+
+```
+{
+   "DatasetIdentifier": "{{string}}",
+   "KmsKeyArn": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_AssociateDatasetKmsKey_RequestParameters"></a>
 
- ** DatasetIdentifier **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [DatasetIdentifier](#API_AssociateDatasetKmsKey_RequestSyntax) **   <a name="ACW-AssociateDatasetKmsKey-request-DatasetIdentifier"></a>
 Specifies the identifier of the dataset that you want to associate the KMS key with. For the `default` dataset, you can specify either `default` or the full dataset Amazon Resource Name (ARN) in the format `arn:aws:cloudwatch:Region:account-id:dataset/default`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `(default|arn:[a-zA-Z0-9-]+:cloudwatch:[a-zA-Z0-9-]*:\d{12}:dataset/default)`
 Required: Yes
 
- ** KmsKeyArn **
+ ** [KmsKeyArn](#API_AssociateDatasetKmsKey_RequestSyntax) **   <a name="ACW-AssociateDatasetKmsKey-request-KmsKeyArn"></a>
 Specifies the Amazon Resource Name (ARN) of the customer managed KMS key to associate with the dataset. The key must be a symmetric encryption KMS key (`SYMMETRIC_DEFAULT`) in the same AWS Region as the dataset.
 The ARN must be in the format `arn:aws:kms:Region:account-id:key/key-id `. Key IDs, aliases, and alias ARNs are not accepted.
 For more information about KMS key ARNs, see [Key ARN](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-id-key-ARN) in the * AWS Key Management Service Developer Guide*.
@@ -46,6 +60,11 @@ Type: String
 Length Constraints: Minimum length of 20. Maximum length of 2048.
 Pattern: `arn:[a-zA-Z0-9-]+:kms:[a-zA-Z0-9-]+:\d{12}:key/[a-f0-9-]+`
 Required: Yes
+
+## Response Elements
+<a name="API_AssociateDatasetKmsKey_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
 
 ## Errors
 <a name="API_AssociateDatasetKmsKey_Errors"></a>

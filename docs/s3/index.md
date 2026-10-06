@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/s3/index.html
 title: 'Amazon Simple Storage Service Documentation'
 canonical_url: https://docs.aws.amazon.com/s3/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # Amazon Simple Storage Service Documentation

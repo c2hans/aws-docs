@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/index.html
 title: 'AWS SDK for SAP ABAP'
 canonical_url: https://docs.aws.amazon.com/sdk-for-sapabap/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # AWS SDK for SAP ABAP

@@ -15,7 +15,11 @@ POST /oauth2/provider/register HTTP/1.1
 Content-type: application/json
 
 {
-   "provider": "{{string}}"
+   "clientId": "{{string}}",
+   "clientSecret": "{{string}}",
+   "organizationName": "{{string}}",
+   "provider": "{{string}}",
+   "targetUrl": "{{string}}"
 }
 ```
 
@@ -29,11 +33,31 @@ The request does not use any URI parameters.
 
 The request accepts the following data in JSON format.
 
- ** [provider](#API_InitiateProviderRegistration_RequestSyntax) **   <a name="securityagent-InitiateProviderRegistration-request-provider"></a>
-The provider to initiate registration with. Currently, only GITHUB is supported.
+ ** [clientId](#API_InitiateProviderRegistration_RequestSyntax) **   <a name="securityagent-InitiateProviderRegistration-request-clientId"></a>
+The client ID of the OAuth application registered on your self-managed provider instance.
 Type: String
-Valid Values: `GITHUB | GITLAB | BITBUCKET | CONFLUENCE`
+Required: No
+
+ ** [clientSecret](#API_InitiateProviderRegistration_RequestSyntax) **   <a name="securityagent-InitiateProviderRegistration-request-clientSecret"></a>
+The client secret of the OAuth application registered on your self-managed provider instance.
+Type: String
+Required: No
+
+ ** [organizationName](#API_InitiateProviderRegistration_RequestSyntax) **   <a name="securityagent-InitiateProviderRegistration-request-organizationName"></a>
+The name of the organization to connect.
+Type: String
+Required: No
+
+ ** [provider](#API_InitiateProviderRegistration_RequestSyntax) **   <a name="securityagent-InitiateProviderRegistration-request-provider"></a>
+The provider to initiate registration with.
+Type: String
+Valid Values: `GITHUB | GITLAB | BITBUCKET | CONFLUENCE | AZURE_DEVOPS`
 Required: Yes
+
+ ** [targetUrl](#API_InitiateProviderRegistration_RequestSyntax) **   <a name="securityagent-InitiateProviderRegistration-request-targetUrl"></a>
+The HTTPS URL of a self-managed provider instance. Omit for SaaS providers.
+Type: String
+Required: No
 
 ## Response Syntax
 <a name="API_InitiateProviderRegistration_ResponseSyntax"></a>

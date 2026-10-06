@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/internal-sales-consultant-perf
 title: 'Guidance for Internal Sales Consultant Performance Analysis using Generative AI on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/internal-sales-consultant-performance-analysis-using-generative-ai-on-aws/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # Guidance for Internal Sales Consultant Performance Analysis using Generative AI on AWS

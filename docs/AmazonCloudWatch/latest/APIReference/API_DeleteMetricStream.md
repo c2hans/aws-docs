@@ -7,14 +7,32 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 
 Permanently deletes the metric stream that you specify.
 
+## Request Syntax
+<a name="API_DeleteMetricStream_RequestSyntax"></a>
+
+```
+{
+   "Name": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_DeleteMetricStream_RequestParameters"></a>
 
- ** Name **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [Name](#API_DeleteMetricStream_RequestSyntax) **   <a name="ACW-DeleteMetricStream-request-Name"></a>
 The name of the metric stream to delete.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes
+
+## Response Elements
+<a name="API_DeleteMetricStream_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
 
 ## Errors
 <a name="API_DeleteMetricStream_Errors"></a>

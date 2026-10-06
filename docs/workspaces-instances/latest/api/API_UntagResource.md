@@ -7,10 +7,24 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Unta
 
 Removes tags from a WorkSpace Instance.
 
+## Request Syntax
+<a name="API_UntagResource_RequestSyntax"></a>
+
+```
+{
+   "TagKeys": [ "{{string}}" ],
+   "WorkspaceInstanceId": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_UntagResource_RequestParameters"></a>
 
- ** TagKeys **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [TagKeys](#API_UntagResource_RequestSyntax) **   <a name="workspacesinstances-UntagResource-request-TagKeys"></a>
 Keys of tags to be removed.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 50 items.
@@ -18,12 +32,17 @@ Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `([\p{L}\p{Z}\p{N}_.:/=+\-@]+)`
 Required: Yes
 
- ** WorkspaceInstanceId **
+ ** [WorkspaceInstanceId](#API_UntagResource_RequestSyntax) **   <a name="workspacesinstances-UntagResource-request-WorkspaceInstanceId"></a>
 Unique identifier of the WorkSpace Instance to untag.
 Type: String
 Length Constraints: Minimum length of 15. Maximum length of 70.
 Pattern: `wsinst-[0-9a-zA-Z]{8,63}`
 Required: Yes
+
+## Response Elements
+<a name="API_UntagResource_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
 
 ## Errors
 <a name="API_UntagResource_Errors"></a>

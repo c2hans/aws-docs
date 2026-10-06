@@ -21,14 +21,14 @@ Required: Yes
 The name of the variable. Use descriptive names that clearly indicate the concept being represented.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `[A-Za-z][A-Za-z0-9_]*`
+Pattern: `\p{L}[\p{L}\p{M}0-9_]*( [\p{L}\p{M}0-9_]+)*`
 Required: Yes
 
  ** type **   <a name="bedrock-Type-AutomatedReasoningPolicyDefinitionVariable-type"></a>
 The data type of the variable. Valid types include bool, int, real, enum, and custom types that you can provide.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `[A-Za-z][A-Za-z0-9_]*`
+Pattern: `\p{L}[\p{L}\p{M}0-9_]*( [\p{L}\p{M}0-9_]+)*`
 Required: Yes
 
 ## See Also

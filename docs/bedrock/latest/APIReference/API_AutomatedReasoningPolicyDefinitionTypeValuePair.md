@@ -14,14 +14,14 @@ Associates a type name with a specific value name, used for referencing type val
 The name of the custom type that contains the referenced value.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `[A-Za-z][A-Za-z0-9_]*`
+Pattern: `\p{L}[\p{L}\p{M}0-9_]*( [\p{L}\p{M}0-9_]+)*`
 Required: Yes
 
  ** valueName **   <a name="bedrock-Type-AutomatedReasoningPolicyDefinitionTypeValuePair-valueName"></a>
 The name of the specific value within the type.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `[A-Za-z][A-Za-z0-9_]*`
+Pattern: `\p{L}[\p{L}\p{M}0-9_]*( [\p{L}\p{M}0-9_]+)*`
 Required: Yes
 
 ## See Also

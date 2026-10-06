@@ -13,6 +13,11 @@ Contains metadata about an integrated resource. This is a union type that contai
 **Important**
 This data type is a UNION, so only one of the following members can be specified when used or returned.
 
+ ** azureDevOpsRepository **   <a name="securityagent-Type-IntegratedResourceMetadata-azureDevOpsRepository"></a>
+The Azure DevOps repository metadata.
+Type: [AzureDevOpsRepositoryMetadata](API_AzureDevOpsRepositoryMetadata.md) object
+Required: No
+
  ** bitbucketRepository **   <a name="securityagent-Type-IntegratedResourceMetadata-bitbucketRepository"></a>
 Metadata for an integrated Bitbucket repository.
 Type: [BitbucketRepositoryMetadata](API_BitbucketRepositoryMetadata.md) object

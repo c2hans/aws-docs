@@ -13,6 +13,11 @@ Represents an integrated resource from a third-party provider. This is a union t
 **Important**
 This data type is a UNION, so only one of the following members can be specified when used or returned.
 
+ ** azureDevOpsRepository **   <a name="securityagent-Type-IntegratedResource-azureDevOpsRepository"></a>
+The Azure DevOps repository resource information.
+Type: [AzureDevOpsRepositoryResource](API_AzureDevOpsRepositoryResource.md) object
+Required: No
+
  ** bitbucketRepository **   <a name="securityagent-Type-IntegratedResource-bitbucketRepository"></a>
 A Bitbucket repository integrated as a resource.
 Type: [BitbucketRepositoryResource](API_BitbucketRepositoryResource.md) object

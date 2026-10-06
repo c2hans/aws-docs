@@ -7,32 +7,62 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_List
 
 Retrieves a list of AWS regions supported by Amazon WorkSpaces Instances, enabling region discovery for workspace deployments.
 
+## Request Syntax
+<a name="API_ListRegions_RequestSyntax"></a>
+
+```
+{
+   "MaxResults": {{number}},
+   "NextToken": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_ListRegions_RequestParameters"></a>
 
- ** MaxResults **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [MaxResults](#API_ListRegions_RequestSyntax) **   <a name="workspacesinstances-ListRegions-request-MaxResults"></a>
 Maximum number of regions to return in a single API call. Enables pagination of region results.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 25.
 Required: No
 
- ** NextToken **
+ ** [NextToken](#API_ListRegions_RequestSyntax) **   <a name="workspacesinstances-ListRegions-request-NextToken"></a>
 Pagination token for retrieving subsequent pages of region results.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Required: No
 
+## Response Syntax
+<a name="API_ListRegions_ResponseSyntax"></a>
+
+```
+{
+   "NextToken": "string",
+   "Regions": [
+      {
+         "RegionName": "string"
+      }
+   ]
+}
+```
+
 ## Response Elements
 <a name="API_ListRegions_ResponseElements"></a>
 
-The following elements are returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** NextToken **
+The following data is returned in JSON format by the service.
+
+ ** [NextToken](#API_ListRegions_ResponseSyntax) **   <a name="workspacesinstances-ListRegions-response-NextToken"></a>
 Token for retrieving additional regions if the result set is paginated.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 
- ** Regions **
+ ** [Regions](#API_ListRegions_ResponseSyntax) **   <a name="workspacesinstances-ListRegions-response-Regions"></a>
 Collection of AWS regions supported by WorkSpaces Instances.
 Type: Array of [Region](API_Region.md) objects
 

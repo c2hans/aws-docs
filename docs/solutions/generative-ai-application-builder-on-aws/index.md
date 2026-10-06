@@ -6,14 +6,14 @@ source_url: https://docs.aws.amazon.com//solutions/generative-ai-application-bui
 title: 'Generative AI Application Builder on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/generative-ai-application-builder-on-aws/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # Generative AI Application Builder on AWS
 
 Rapidly develop and deploy production-ready Agentic AI applications
 
-- **Version**: 4.1.25
+- **Version**: 4.1.26
 - **Released**: 9/2026
 - **Author**: AWS
 - **Est. deployment time**: 10 mins

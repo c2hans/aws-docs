@@ -9,43 +9,85 @@ Provides the list of all [Environment](API_Environment.md) objects known to the 
 
 When creating a [Connection](API_Connection.md), the selected [Environment](API_Environment.md) is used to determine the partner and location the resulting connectivity provides access to.
 
+## Request Syntax
+<a name="API_ListEnvironments_RequestSyntax"></a>
+
+```
+{
+   "location": "{{string}}",
+   "maxResults": {{number}},
+   "nextToken": "{{string}}",
+   "provider": { ... }
+}
+```
+
 ## Request Parameters
 <a name="API_ListEnvironments_RequestParameters"></a>
 
- ** location **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [location](#API_ListEnvironments_RequestSyntax) **   <a name="interconnect-ListEnvironments-request-location"></a>
 Filter results to only include [Environment](API_Environment.md) objects that connect to a given location distiguisher.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 255.
 Required: No
 
- ** maxResults **
+ ** [maxResults](#API_ListEnvironments_RequestSyntax) **   <a name="interconnect-ListEnvironments-request-maxResults"></a>
 The max number of list results in a single paginated response.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 100.
 Required: No
 
- ** nextToken **
+ ** [nextToken](#API_ListEnvironments_RequestSyntax) **   <a name="interconnect-ListEnvironments-request-nextToken"></a>
 A pagination token from a previous paginated response indicating you wish to get the next page of results.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
- ** provider **
+ ** [provider](#API_ListEnvironments_RequestSyntax) **   <a name="interconnect-ListEnvironments-request-provider"></a>
 Filter results to only include [Environment](API_Environment.md) objects that connect to the [Provider](API_Provider.md).
 Type: [Provider](API_Provider.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: No
 
+## Response Syntax
+<a name="API_ListEnvironments_ResponseSyntax"></a>
+
+```
+{
+   "environments": [
+      {
+         "activationPageUrl": "string",
+         "bandwidths": {
+            "available": [ "string" ],
+            "supported": [ "string" ]
+         },
+         "environmentId": "string",
+         "location": "string",
+         "provider": { ... },
+         "remoteIdentifierType": "string",
+         "state": "string",
+         "type": "string"
+      }
+   ],
+   "nextToken": "string"
+}
+```
+
 ## Response Elements
 <a name="API_ListEnvironments_ResponseElements"></a>
 
-The following elements are returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** environments **
+The following data is returned in JSON format by the service.
+
+ ** [environments](#API_ListEnvironments_ResponseSyntax) **   <a name="interconnect-ListEnvironments-response-environments"></a>
 The list of matching [Environment](API_Environment.md) objects.
 Type: Array of [Environment](API_Environment.md) objects
 
- ** nextToken **
+ ** [nextToken](#API_ListEnvironments_ResponseSyntax) **   <a name="interconnect-ListEnvironments-response-nextToken"></a>
 A pagination token for use in subsequent calls to fetch the next page of results.
 Type: String
 

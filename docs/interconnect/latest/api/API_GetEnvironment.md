@@ -7,21 +7,57 @@ source_url: https://docs.aws.amazon.com/interconnect/latest/api/API_GetEnvironme
 
 Describes a specific [Environment](API_Environment.md)
 
+## Request Syntax
+<a name="API_GetEnvironment_RequestSyntax"></a>
+
+```
+{
+   "id": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_GetEnvironment_RequestParameters"></a>
 
- ** id **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [id](#API_GetEnvironment_RequestSyntax) **   <a name="interconnect-GetEnvironment-request-id"></a>
 The identifier of the specific [Environment](API_Environment.md) to describe.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: Yes
 
+## Response Syntax
+<a name="API_GetEnvironment_ResponseSyntax"></a>
+
+```
+{
+   "environment": {
+      "activationPageUrl": "string",
+      "bandwidths": {
+         "available": [ "string" ],
+         "supported": [ "string" ]
+      },
+      "environmentId": "string",
+      "location": "string",
+      "provider": { ... },
+      "remoteIdentifierType": "string",
+      "state": "string",
+      "type": "string"
+   }
+}
+```
+
 ## Response Elements
 <a name="API_GetEnvironment_ResponseElements"></a>
 
-The following element is returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** environment **
+The following data is returned in JSON format by the service.
+
+ ** [environment](#API_GetEnvironment_ResponseSyntax) **   <a name="interconnect-GetEnvironment-response-environment"></a>
 The requested [Environment](API_Environment.md) structure.
 Type: [Environment](API_Environment.md) object
 

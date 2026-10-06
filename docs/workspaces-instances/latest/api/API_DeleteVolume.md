@@ -7,14 +7,32 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Dele
 
 Deletes a specified volume.
 
+## Request Syntax
+<a name="API_DeleteVolume_RequestSyntax"></a>
+
+```
+{
+   "VolumeId": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_DeleteVolume_RequestParameters"></a>
 
- ** VolumeId **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [VolumeId](#API_DeleteVolume_RequestSyntax) **   <a name="workspacesinstances-DeleteVolume-request-VolumeId"></a>
 Identifier of the volume to delete.
 Type: String
 Pattern: `vol-[0-9a-zA-Z]{1,63}`
 Required: Yes
+
+## Response Elements
+<a name="API_DeleteVolume_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
 
 ## Errors
 <a name="API_DeleteVolume_Errors"></a>

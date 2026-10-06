@@ -11,7 +11,6 @@ The following Amazon models are available in Amazon Bedrock:
 | --- | --- |
 | [Nova 2 Lite](model-card-amazon-nova-2-lite.md) | Nova 2 Lite is Amazon's cost-efficient multimodal model for simple automation, document processing, and customer support across text, images, and video. |
 | [Nova 2 Sonic](model-card-amazon-nova-2-sonic.md) | Nova 2 Sonic is Amazon's speech-to-speech foundation model for building natural, real-time voice conversation applications. |
-| [Nova Premier](model-card-amazon-nova-premier.md) | Nova Premier is Amazon's multimodal model for complex reasoning, agentic workflows, and model distillation. |
 | [Nova Sonic](model-card-amazon-nova-sonic.md) | Nova Sonic is Amazon's speech-to-speech model that enables natural, real-time voice conversations with low latency and support for multiple languages. |
 | [Nova Lite](model-card-amazon-nova-lite.md) | Nova Lite is Amazon's low-cost multimodal model that processes text, images, and video inputs for tasks like document analysis and visual Q&A. |
 | [Nova Micro](model-card-amazon-nova-micro.md) | Nova Micro is Amazon's fastest text-only model, optimized for speed and low cost in tasks like summarization, translation, and classification. |

@@ -7,71 +7,126 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 
 Returns information about the metric stream that you specify.
 
+## Request Syntax
+<a name="API_GetMetricStream_RequestSyntax"></a>
+
+```
+{
+   "Name": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_GetMetricStream_RequestParameters"></a>
 
- ** Name **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [Name](#API_GetMetricStream_RequestSyntax) **   <a name="ACW-GetMetricStream-request-Name"></a>
 The name of the metric stream to retrieve information about.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes
 
+## Response Syntax
+<a name="API_GetMetricStream_ResponseSyntax"></a>
+
+```
+{
+   "Arn": "string",
+   "CreationDate": number,
+   "ExcludeFilters": [
+      {
+         "MetricNames": [ "string" ],
+         "Namespace": "string"
+      }
+   ],
+   "FirehoseArn": "string",
+   "IncludeFilters": [
+      {
+         "MetricNames": [ "string" ],
+         "Namespace": "string"
+      }
+   ],
+   "IncludeLinkedAccountsMetrics": boolean,
+   "LastUpdateDate": number,
+   "Name": "string",
+   "OutputFormat": "string",
+   "RoleArn": "string",
+   "State": "string",
+   "StatisticsConfigurations": [
+      {
+         "AdditionalStatistics": [ "string" ],
+         "IncludeMetrics": [
+            {
+               "MetricName": "string",
+               "Namespace": "string"
+            }
+         ]
+      }
+   ]
+}
+```
+
 ## Response Elements
 <a name="API_GetMetricStream_ResponseElements"></a>
 
-The following elements are returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** Arn **
+The following data is returned in JSON format by the service.
+
+ ** [Arn](#API_GetMetricStream_ResponseSyntax) **   <a name="ACW-GetMetricStream-response-Arn"></a>
 The ARN of the metric stream.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 
- ** CreationDate **
+ ** [CreationDate](#API_GetMetricStream_ResponseSyntax) **   <a name="ACW-GetMetricStream-response-CreationDate"></a>
 The date that the metric stream was created.
 Type: Timestamp
 
- ** ExcludeFilters **
+ ** [ExcludeFilters](#API_GetMetricStream_ResponseSyntax) **   <a name="ACW-GetMetricStream-response-ExcludeFilters"></a>
 If this array of metric namespaces is present, then these namespaces are the only metric namespaces that are not streamed by this metric stream. In this case, all other metric namespaces in the account are streamed by this metric stream.
 Type: Array of [MetricStreamFilter](API_MetricStreamFilter.md) objects
 
- ** FirehoseArn **
+ ** [FirehoseArn](#API_GetMetricStream_ResponseSyntax) **   <a name="ACW-GetMetricStream-response-FirehoseArn"></a>
 The ARN of the Amazon Kinesis Data Firehose delivery stream that is used by this metric stream.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 
- ** IncludeFilters **
+ ** [IncludeFilters](#API_GetMetricStream_ResponseSyntax) **   <a name="ACW-GetMetricStream-response-IncludeFilters"></a>
 If this array of metric namespaces is present, then these namespaces are the only metric namespaces that are streamed by this metric stream.
 Type: Array of [MetricStreamFilter](API_MetricStreamFilter.md) objects
 
- ** IncludeLinkedAccountsMetrics **
+ ** [IncludeLinkedAccountsMetrics](#API_GetMetricStream_ResponseSyntax) **   <a name="ACW-GetMetricStream-response-IncludeLinkedAccountsMetrics"></a>
 If this is `true` and this metric stream is in a monitoring account, then the stream includes metrics from source accounts that the monitoring account is linked to.
 Type: Boolean
 
- ** LastUpdateDate **
+ ** [LastUpdateDate](#API_GetMetricStream_ResponseSyntax) **   <a name="ACW-GetMetricStream-response-LastUpdateDate"></a>
 The date of the most recent update to the metric stream's configuration.
 Type: Timestamp
 
- ** Name **
+ ** [Name](#API_GetMetricStream_ResponseSyntax) **   <a name="ACW-GetMetricStream-response-Name"></a>
 The name of the metric stream.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 
- ** OutputFormat **
+ ** [OutputFormat](#API_GetMetricStream_ResponseSyntax) **   <a name="ACW-GetMetricStream-response-OutputFormat"></a>
 The output format for the stream. Valid values are `json`, `opentelemetry1.0`, and `opentelemetry0.7`. For more information about metric stream output formats, see [Metric streams output formats](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-metric-streams-formats.html).
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Valid Values: `json | opentelemetry0.7 | opentelemetry1.0`
 
- ** RoleArn **
+ ** [RoleArn](#API_GetMetricStream_ResponseSyntax) **   <a name="ACW-GetMetricStream-response-RoleArn"></a>
 The ARN of the IAM role that is used by this metric stream.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 
- ** State **
+ ** [State](#API_GetMetricStream_ResponseSyntax) **   <a name="ACW-GetMetricStream-response-State"></a>
 The state of the metric stream. The possible values are `running` and `stopped`.
 Type: String
 
- ** StatisticsConfigurations **
+ ** [StatisticsConfigurations](#API_GetMetricStream_ResponseSyntax) **   <a name="ACW-GetMetricStream-response-StatisticsConfigurations"></a>
 Each entry in this array displays information about one or more metrics that include additional statistics in the metric stream. For more information about the additional statistics, see [ CloudWatch statistics definitions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Statistics-definitions.html).
 Type: Array of [MetricStreamStatisticsConfiguration](API_MetricStreamStatisticsConfiguration.md) objects
 

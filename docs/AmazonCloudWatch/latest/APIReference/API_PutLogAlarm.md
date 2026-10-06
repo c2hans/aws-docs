@@ -17,25 +17,78 @@ If you call this operation with the name of an existing log alarm, the operation
 
 To create or update a log alarm, you must have the `cloudwatch:PutLogAlarm` permission. The IAM role specified in `ScheduledQueryRoleARN` must grant the CloudWatch Alarms service permission to execute scheduled queries on the specified log groups. If you set `ActionLogLineCount`, the role specified in `ActionLogLineRoleArn` must grant permission to retrieve log events for inclusion in alarm notifications.
 
+## Request Syntax
+<a name="API_PutLogAlarm_RequestSyntax"></a>
+
+```
+{
+   "ActionLogLineCount": {{number}},
+   "ActionLogLineRoleArn": "{{string}}",
+   "ActionsEnabled": {{boolean}},
+   "AlarmActions": [ "{{string}}" ],
+   "AlarmDescription": "{{string}}",
+   "AlarmName": "{{string}}",
+   "ComparisonOperator": "{{string}}",
+   "InsufficientDataActions": [ "{{string}}" ],
+   "OKActions": [ "{{string}}" ],
+   "QueryResultsToAlarm": {{number}},
+   "QueryResultsToEvaluate": {{number}},
+   "ScheduledQueryConfiguration": {
+      "AggregationExpression": "{{string}}",
+      "LogGroupIdentifiers": [ "{{string}}" ],
+      "QueryARN": "{{string}}",
+      "QueryString": "{{string}}",
+      "ScheduleConfiguration": {
+         "EndTimeOffset": {{number}},
+         "ScheduleExpression": "{{string}}",
+         "StartTimeOffset": {{number}}
+      },
+      "ScheduledQueryRoleARN": "{{string}}",
+      "Tags": [
+         {
+            "Key": "{{string}}",
+            "Value": "{{string}}"
+         }
+      ]
+   },
+   "Tags": [
+      {
+         "Key": "{{string}}",
+         "Value": "{{string}}"
+      }
+   ],
+   "Threshold": {{number}},
+   "TreatMissingData": "{{string}}",
+   "WarmUpConfiguration": {
+      "OnlyStartEvaluatingAfterWarmUpPeriodEnds": {{boolean}},
+      "WarmUpPeriodDurationInMinutes": {{number}}
+   }
+}
+```
+
 ## Request Parameters
 <a name="API_PutLogAlarm_RequestParameters"></a>
 
- ** ActionLogLineCount **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [ActionLogLineCount](#API_PutLogAlarm_RequestSyntax) **   <a name="ACW-PutLogAlarm-request-ActionLogLineCount"></a>
 The number of log lines from the most recent scheduled query execution to include in alarm action notifications. Valid range is 0 through 50. The default is 0, which means no log lines are included.
 Type: Integer
 Required: No
 
- ** ActionLogLineRoleArn **
+ ** [ActionLogLineRoleArn](#API_PutLogAlarm_RequestSyntax) **   <a name="ACW-PutLogAlarm-request-ActionLogLineRoleArn"></a>
 The Amazon Resource Name (ARN) of an IAM role that CloudWatch assumes to retrieve log events for inclusion in alarm action notifications. Required when `ActionLogLineCount` is greater than 0.
 Type: String
 Required: No
 
- ** ActionsEnabled **
+ ** [ActionsEnabled](#API_PutLogAlarm_RequestSyntax) **   <a name="ACW-PutLogAlarm-request-ActionsEnabled"></a>
 Indicates whether actions should be executed during any changes to the alarm state. The default is `true`.
 Type: Boolean
 Required: No
 
- ** AlarmActions **
+ ** [AlarmActions](#API_PutLogAlarm_RequestSyntax) **   <a name="ACW-PutLogAlarm-request-AlarmActions"></a>
 The actions to execute when this alarm transitions to the `ALARM` state from any other state. Each action is specified as an Amazon Resource Name (ARN).
 Valid Values:
  **Amazon SNS actions:**
@@ -51,25 +104,25 @@ Array Members: Maximum number of 5 items.
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
- ** AlarmDescription **
+ ** [AlarmDescription](#API_PutLogAlarm_RequestSyntax) **   <a name="ACW-PutLogAlarm-request-AlarmDescription"></a>
 The description for the alarm.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1024.
 Required: No
 
- ** AlarmName **
+ ** [AlarmName](#API_PutLogAlarm_RequestSyntax) **   <a name="ACW-PutLogAlarm-request-AlarmName"></a>
 The name for the alarm. This name must be unique within the AWS account and Region.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes
 
- ** ComparisonOperator **
+ ** [ComparisonOperator](#API_PutLogAlarm_RequestSyntax) **   <a name="ACW-PutLogAlarm-request-ComparisonOperator"></a>
 The arithmetic operation to use when comparing the aggregated query result and the threshold. The aggregated query result is used as the first operand. Valid values are `GreaterThanThreshold`, `GreaterThanOrEqualToThreshold`, `LessThanThreshold`, and `LessThanOrEqualToThreshold`.
 Type: String
 Valid Values: `GreaterThanOrEqualToThreshold | GreaterThanThreshold | LessThanThreshold | LessThanOrEqualToThreshold | LessThanLowerOrGreaterThanUpperThreshold | LessThanLowerThreshold | GreaterThanUpperThreshold`
 Required: Yes
 
- ** InsufficientDataActions **
+ ** [InsufficientDataActions](#API_PutLogAlarm_RequestSyntax) **   <a name="ACW-PutLogAlarm-request-InsufficientDataActions"></a>
 The actions to execute when this alarm transitions to the `INSUFFICIENT_DATA` state from any other state. Each action is specified as an Amazon Resource Name (ARN).
 Valid Values:
  **Amazon SNS actions:**
@@ -83,7 +136,7 @@ Array Members: Maximum number of 5 items.
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
- ** OKActions **
+ ** [OKActions](#API_PutLogAlarm_RequestSyntax) **   <a name="ACW-PutLogAlarm-request-OKActions"></a>
 The actions to execute when this alarm transitions to the `OK` state from any other state. Each action is specified as an Amazon Resource Name (ARN).
 Valid Values:
  **Amazon SNS actions:**
@@ -97,44 +150,49 @@ Array Members: Maximum number of 5 items.
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
- ** QueryResultsToAlarm **
+ ** [QueryResultsToAlarm](#API_PutLogAlarm_RequestSyntax) **   <a name="ACW-PutLogAlarm-request-QueryResultsToAlarm"></a>
 The number of query results, out of the most recent `QueryResultsToEvaluate` results, that must breach the threshold to trigger the alarm to transition to `ALARM` (the M in M-of-N evaluation). Must be less than or equal to `QueryResultsToEvaluate`.
 Type: Integer
 Valid Range: Minimum value of 1.
 Required: Yes
 
- ** QueryResultsToEvaluate **
+ ** [QueryResultsToEvaluate](#API_PutLogAlarm_RequestSyntax) **   <a name="ACW-PutLogAlarm-request-QueryResultsToEvaluate"></a>
 The number of most recent scheduled query results to evaluate against the threshold (the N in M-of-N evaluation). Valid range is 1 through 100.
 Type: Integer
 Valid Range: Minimum value of 1.
 Required: Yes
 
- ** ScheduledQueryConfiguration **
+ ** [ScheduledQueryConfiguration](#API_PutLogAlarm_RequestSyntax) **   <a name="ACW-PutLogAlarm-request-ScheduledQueryConfiguration"></a>
 The configuration of the underlying CloudWatch Logs scheduled query that this alarm evaluates, including the query string, log groups, schedule, and aggregation expression.
 Type: [ScheduledQueryConfiguration](API_ScheduledQueryConfiguration.md) object
 Required: Yes
 
- ** Tags **
+ ** [Tags](#API_PutLogAlarm_RequestSyntax) **   <a name="ACW-PutLogAlarm-request-Tags"></a>
 A list of key-value pairs to associate with the alarm. You can use tags to categorize and manage your alarms.
 Type: Array of [Tag](API_Tag.md) objects
 Required: No
 
- ** Threshold **
+ ** [Threshold](#API_PutLogAlarm_RequestSyntax) **   <a name="ACW-PutLogAlarm-request-Threshold"></a>
 The value to compare with the aggregated query result.
 Type: Double
 Required: Yes
 
- ** TreatMissingData **
+ ** [TreatMissingData](#API_PutLogAlarm_RequestSyntax) **   <a name="ACW-PutLogAlarm-request-TreatMissingData"></a>
 Sets how this alarm is to handle missing data points. Valid values are `breaching`, `notBreaching`, `ignore`, and `missing`. If this parameter is omitted, the default behavior of `missing` is used.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: No
 
- ** WarmUpConfiguration **
+ ** [WarmUpConfiguration](#API_PutLogAlarm_RequestSyntax) **   <a name="ACW-PutLogAlarm-request-WarmUpConfiguration"></a>
 The warm-up configuration for the alarm. A warm-up period delays alarm evaluation after you create or update the alarm. The warm-up period reduces alarm noise from missing data while a new resource or service starts publishing data.
 For more information, see [Alarm warm-up periods](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/alarm-warm-up.html) in the *Amazon CloudWatch User Guide*.
 Type: [WarmUpConfiguration](API_WarmUpConfiguration.md) object
 Required: No
+
+## Response Elements
+<a name="API_PutLogAlarm_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
 
 ## Errors
 <a name="API_PutLogAlarm_Errors"></a>

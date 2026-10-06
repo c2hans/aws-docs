@@ -58,9 +58,9 @@ Type: String
 Required: No
 
  ** [provider](#API_CreateIntegration_RequestSyntax) **   <a name="securityagent-CreateIntegration-request-provider"></a>
-The integration provider. Currently, only GITHUB is supported.
+The integration provider.
 Type: String
-Valid Values: `GITHUB | GITLAB | BITBUCKET | CONFLUENCE`
+Valid Values: `GITHUB | GITLAB | BITBUCKET | CONFLUENCE | AZURE_DEVOPS`
 Required: Yes
 
  ** [tags](#API_CreateIntegration_RequestSyntax) **   <a name="securityagent-CreateIntegration-request-tags"></a>

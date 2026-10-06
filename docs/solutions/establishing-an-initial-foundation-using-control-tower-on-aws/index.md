@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/establishing-an-initial-founda
 title: 'Guidance for Establishing an Initial Foundation using Control Tower on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/establishing-an-initial-foundation-using-control-tower-on-aws/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # Guidance for Establishing an Initial Foundation using Control Tower on AWS

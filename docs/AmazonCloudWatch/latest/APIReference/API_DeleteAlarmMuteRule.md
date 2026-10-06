@@ -15,14 +15,32 @@ This operation is idempotent. If you delete a mute rule that does not exist, the
 
 To delete a mute rule, you need the `cloudwatch:DeleteAlarmMuteRule` permission on the alarm mute rule resource.
 
+## Request Syntax
+<a name="API_DeleteAlarmMuteRule_RequestSyntax"></a>
+
+```
+{
+   "AlarmMuteRuleName": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_DeleteAlarmMuteRule_RequestParameters"></a>
 
- ** AlarmMuteRuleName **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [AlarmMuteRuleName](#API_DeleteAlarmMuteRule_RequestSyntax) **   <a name="ACW-DeleteAlarmMuteRule-request-AlarmMuteRuleName"></a>
 The name of the alarm mute rule to delete.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes
+
+## Response Elements
+<a name="API_DeleteAlarmMuteRule_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
 
 ## Errors
 <a name="API_DeleteAlarmMuteRule_Errors"></a>

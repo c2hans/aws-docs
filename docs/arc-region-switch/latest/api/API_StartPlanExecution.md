@@ -9,79 +9,114 @@ Starts the execution of a Region switch plan. You can execute a plan in either `
 
 Specifing `ungraceful` mode either changes the behavior of the execution blocks in a workflow or skips specific execution blocks.
 
+## Request Syntax
+<a name="API_StartPlanExecution_RequestSyntax"></a>
+
+```
+{
+   "action": "{{string}}",
+   "clientToken": "{{string}}",
+   "comment": "{{string}}",
+   "latestVersion": "{{string}}",
+   "mode": "{{string}}",
+   "planArn": "{{string}}",
+   "recoveryExecutionId": "{{string}}",
+   "targetRegion": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_StartPlanExecution_RequestParameters"></a>
 
- ** action **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [action](#API_StartPlanExecution_RequestSyntax) **   <a name="regionswitch-StartPlanExecution-request-action"></a>
 The action to perform. Valid values are `activate` (to shift traffic to the target Region) or `deactivate` (to shift traffic away from the target Region).
 Type: String
 Valid Values: `activate | deactivate | postRecovery`
 Required: Yes
 
- ** clientToken **
+ ** [clientToken](#API_StartPlanExecution_RequestSyntax) **   <a name="regionswitch-StartPlanExecution-request-clientToken"></a>
 A unique, case-sensitive identifier to ensure that the operation completes no more than one time. If this token matches a previous request, the service ignores the request and returns the result of the original successful request. If you don't provide a client token, the service automatically generates one. For more information about idempotency, see [Making retries safe with idempotent APIs](https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/).
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `[\x21-\x7E]+`
 Required: No
 
- ** comment **
+ ** [comment](#API_StartPlanExecution_RequestSyntax) **   <a name="regionswitch-StartPlanExecution-request-comment"></a>
 An optional comment explaining why the plan execution is being started.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1024.
 Required: No
 
- ** latestVersion **
+ ** [latestVersion](#API_StartPlanExecution_RequestSyntax) **   <a name="regionswitch-StartPlanExecution-request-latestVersion"></a>
 A boolean value indicating whether to use the latest version of the plan. If set to false, you must specify a specific version.
 Type: String
 Required: No
 
- ** mode **
+ ** [mode](#API_StartPlanExecution_RequestSyntax) **   <a name="regionswitch-StartPlanExecution-request-mode"></a>
 The plan execution mode. Valid values are `graceful`, for starting the execution in graceful mode, or `ungraceful`, for starting the execution in ungraceful mode.
 Type: String
 Valid Values: `graceful | ungraceful`
 Required: No
 
- ** planArn **
+ ** [planArn](#API_StartPlanExecution_RequestSyntax) **   <a name="regionswitch-StartPlanExecution-request-planArn"></a>
 The Amazon Resource Name (ARN) of the plan to execute.
 Type: String
 Pattern: `arn:aws[a-zA-Z-]*:arc-region-switch::[0-9]{12}:plan/([a-zA-Z0-9](?:[a-zA-Z0-9-]{0,30}[a-zA-Z0-9])?):([a-z0-9]{6})`
 Required: Yes
 
- ** recoveryExecutionId **
+ ** [recoveryExecutionId](#API_StartPlanExecution_RequestSyntax) **   <a name="regionswitch-StartPlanExecution-request-recoveryExecutionId"></a>
 The execution identifier of the recovery execution that ran in the opposite region post-recovery is ran in. Required when starting a post-recovery execution.
 Type: String
 Pattern: `[a-z]{2}(-[a-z]+)+-[0-9]+/[0-9a-fA-F]{16}`
 Required: No
 
- ** targetRegion **
+ ** [targetRegion](#API_StartPlanExecution_RequestSyntax) **   <a name="regionswitch-StartPlanExecution-request-targetRegion"></a>
 The AWS Region to target with this execution. This is the Region that traffic will be shifted to or from, depending on the action.
 Type: String
 Required: Yes
 
+## Response Syntax
+<a name="API_StartPlanExecution_ResponseSyntax"></a>
+
+```
+{
+   "activateRegion": "string",
+   "deactivateRegion": "string",
+   "executionId": "string",
+   "plan": "string",
+   "planVersion": "string"
+}
+```
+
 ## Response Elements
 <a name="API_StartPlanExecution_ResponseElements"></a>
 
-The following elements are returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** activateRegion **
+The following data is returned in JSON format by the service.
+
+ ** [activateRegion](#API_StartPlanExecution_ResponseSyntax) **   <a name="regionswitch-StartPlanExecution-response-activateRegion"></a>
 The AWS Region to activate.
 Type: String
 
- ** deactivateRegion **
+ ** [deactivateRegion](#API_StartPlanExecution_ResponseSyntax) **   <a name="regionswitch-StartPlanExecution-response-deactivateRegion"></a>
 The AWS Region to deactivate.
 Type: String
 
- ** executionId **
+ ** [executionId](#API_StartPlanExecution_ResponseSyntax) **   <a name="regionswitch-StartPlanExecution-response-executionId"></a>
 The execution identifier of a plan execution.
 Type: String
 
- ** plan **
+ ** [plan](#API_StartPlanExecution_ResponseSyntax) **   <a name="regionswitch-StartPlanExecution-response-plan"></a>
 The details of the Region switch plan.
 Type: String
 Pattern: `arn:aws[a-zA-Z-]*:arc-region-switch::[0-9]{12}:plan/([a-zA-Z0-9](?:[a-zA-Z0-9-]{0,30}[a-zA-Z0-9])?):([a-z0-9]{6})`
 
- ** planVersion **
+ ** [planVersion](#API_StartPlanExecution_ResponseSyntax) **   <a name="regionswitch-StartPlanExecution-response-planVersion"></a>
 The version of the plan, a unique number generated by Region switch.
 Type: String
 

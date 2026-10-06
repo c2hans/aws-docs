@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com//solutions/real-time-multilingual-subtit
 title: 'Guidance for Real-Time Multilingual Subtitling for Live Video on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/real-time-multilingual-subtitling-for-live-video-on-aws/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # Guidance for Real-Time Multilingual Subtitling for Live Video on AWS

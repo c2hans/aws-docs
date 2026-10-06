@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/handling-data-during-traffic-s
 title: 'Guidance for Handling Data during Traffic Spikes on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/handling-data-during-traffic-spikes-on-aws/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # Guidance for Handling Data during Traffic Spikes on AWS

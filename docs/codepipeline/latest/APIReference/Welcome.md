@@ -65,4 +65,4 @@ You can work with third party jobs by calling:
 +  [PutThirdPartyJobFailureResult](API_PutThirdPartyJobFailureResult.md), which provides details of a job failure.
 +  [PutThirdPartyJobSuccessResult](API_PutThirdPartyJobSuccessResult.md), which provides details of a job success.
 
-This document was last published on October 2, 2026.
+This document was last published on October 5, 2026.

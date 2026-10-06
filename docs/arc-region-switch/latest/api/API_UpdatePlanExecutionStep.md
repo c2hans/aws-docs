@@ -7,36 +7,58 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_UpdateP
 
 Updates a specific step in an in-progress plan execution. This operation allows you to modify the step's comment or action.
 
+## Request Syntax
+<a name="API_UpdatePlanExecutionStep_RequestSyntax"></a>
+
+```
+{
+   "actionToTake": "{{string}}",
+   "comment": "{{string}}",
+   "executionId": "{{string}}",
+   "planArn": "{{string}}",
+   "stepName": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_UpdatePlanExecutionStep_RequestParameters"></a>
 
- ** actionToTake **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [actionToTake](#API_UpdatePlanExecutionStep_RequestSyntax) **   <a name="regionswitch-UpdatePlanExecutionStep-request-actionToTake"></a>
 The updated action to take for the step. This can be used to skip or retry a step.
 Type: String
 Valid Values: `switchToUngraceful | skip`
 Required: Yes
 
- ** comment **
+ ** [comment](#API_UpdatePlanExecutionStep_RequestSyntax) **   <a name="regionswitch-UpdatePlanExecutionStep-request-comment"></a>
 An optional comment about the plan execution.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1024.
 Required: Yes
 
- ** executionId **
+ ** [executionId](#API_UpdatePlanExecutionStep_RequestSyntax) **   <a name="regionswitch-UpdatePlanExecutionStep-request-executionId"></a>
 The unique identifier of the plan execution containing the step to update.
 Type: String
 Required: Yes
 
- ** planArn **
+ ** [planArn](#API_UpdatePlanExecutionStep_RequestSyntax) **   <a name="regionswitch-UpdatePlanExecutionStep-request-planArn"></a>
 The Amazon Resource Name (ARN) of the plan containing the execution step to update.
 Type: String
 Pattern: `arn:aws[a-zA-Z-]*:arc-region-switch::[0-9]{12}:plan/([a-zA-Z0-9](?:[a-zA-Z0-9-]{0,30}[a-zA-Z0-9])?):([a-z0-9]{6})`
 Required: Yes
 
- ** stepName **
+ ** [stepName](#API_UpdatePlanExecutionStep_RequestSyntax) **   <a name="regionswitch-UpdatePlanExecutionStep-request-stepName"></a>
 The name of the execution step to update.
 Type: String
 Required: Yes
+
+## Response Elements
+<a name="API_UpdatePlanExecutionStep_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
 
 ## Errors
 <a name="API_UpdatePlanExecutionStep_Errors"></a>

@@ -7,21 +7,47 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_ListTag
 
 Lists the tags attached to a Region switch resource.
 
+## Request Syntax
+<a name="API_ListTagsForResource_RequestSyntax"></a>
+
+```
+{
+   "arn": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_ListTagsForResource_RequestParameters"></a>
 
- ** arn **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [arn](#API_ListTagsForResource_RequestSyntax) **   <a name="regionswitch-ListTagsForResource-request-arn"></a>
 The Amazon Resource Name (ARN) of the resource.
 Type: String
 Pattern: `arn:aws[a-zA-Z-]*:arc-region-switch::[0-9]{12}:plan/([a-zA-Z0-9](?:[a-zA-Z0-9-]{0,30}[a-zA-Z0-9])?):([a-z0-9]{6})`
 Required: Yes
 
+## Response Syntax
+<a name="API_ListTagsForResource_ResponseSyntax"></a>
+
+```
+{
+   "resourceTags": {
+      "string" : "string"
+   }
+}
+```
+
 ## Response Elements
 <a name="API_ListTagsForResource_ResponseElements"></a>
 
-The following element is returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** resourceTags **
+The following data is returned in JSON format by the service.
+
+ ** [resourceTags](#API_ListTagsForResource_ResponseSyntax) **   <a name="regionswitch-ListTagsForResource-response-resourceTags"></a>
 The tags for a resource.
 Type: String to string map
 Map Entries: Minimum number of 0 items. Maximum number of 200 items.

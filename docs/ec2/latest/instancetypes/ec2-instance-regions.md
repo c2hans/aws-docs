@@ -170,7 +170,7 @@ The following instance types are available in Asia Pacific (Singapore).
 + **Memory Optimized:** R3 \| R4 \| R5 \| R5a \| R5ad \| R5b \| R5d \| R5dn \| R5n \| R6a \| R6g \| R6gd \| R6i \| R6id \| R6idn \| R6in \| R7g \| R7gd \| R7i \| R8g \| R8gd \| R8i \| R8i-flex \| U-3tb1 \| U-6tb1 \| U7i-6tb \| U7i-8tb \| U7i-12tb \| U7in-16tb \| X1 \| X1e \| X2idn \| X2iedn \| X8i \| z1d
 + **Storage Optimized:** D2 \| D3 \| D3en \| I2 \| I3 \| I3en \| I4g \| I4i \| I7i \| I7ie \| I8g \| I8ge \| Im4gn \| Is4gen
 + **Accelerated Computing:** G4dn \| G5g \| Inf1 \| Inf2 \| P4de
-+ **High Performance Computing:** Hpc6a
++ **High Performance Computing:** Hpc6a \| Hpc8a
 + **Previous Generation:** A1 \| C1 \| C3 \| C4 \| I2 \| M1 \| M2 \| M3 \| M4 \| R3 \| R4 \| T1
 
 ## Asia Pacific (Sydney) — `ap-southeast-2`

@@ -11,29 +11,62 @@ Returns a list of the dashboards for your account. If you include `DashboardName
 
 You might have recently enabled an [opt-in Region (Region that is disabled by default)](https://docs.aws.amazon.com/glossary/latest/reference/glos-chap.html#optinregion) for your account. In that Region, `ListDashboards` can return an access denied error for up to 24 hours after you enable the Region. This delay occurs while dashboard data propagates. The error does not indicate a problem with your permissions. Because dashboards are global, you can call `ListDashboards` in any other enabled Region, or retry after propagation completes.
 
+## Request Syntax
+<a name="API_ListDashboards_RequestSyntax"></a>
+
+```
+{
+   "DashboardNamePrefix": "{{string}}",
+   "NextToken": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_ListDashboards_RequestParameters"></a>
 
- ** DashboardNamePrefix **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [DashboardNamePrefix](#API_ListDashboards_RequestSyntax) **   <a name="ACW-ListDashboards-request-DashboardNamePrefix"></a>
 If you specify this parameter, only the dashboards with names starting with the specified string are listed. The maximum length is 255, and valid characters are A-Z, a-z, 0-9, ".", "-", and "\_".
 Type: String
 Required: No
 
- ** NextToken **
+ ** [NextToken](#API_ListDashboards_RequestSyntax) **   <a name="ACW-ListDashboards-request-NextToken"></a>
 The token returned by a previous call to indicate that there is more data available.
 Type: String
 Required: No
 
+## Response Syntax
+<a name="API_ListDashboards_ResponseSyntax"></a>
+
+```
+{
+   "DashboardEntries": [
+      {
+         "DashboardArn": "string",
+         "DashboardName": "string",
+         "LastModified": number,
+         "Size": number
+      }
+   ],
+   "NextToken": "string"
+}
+```
+
 ## Response Elements
 <a name="API_ListDashboards_ResponseElements"></a>
 
-The following elements are returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** DashboardEntries **
+The following data is returned in JSON format by the service.
+
+ ** [DashboardEntries](#API_ListDashboards_ResponseSyntax) **   <a name="ACW-ListDashboards-response-DashboardEntries"></a>
 The list of matching dashboards.
 Type: Array of [DashboardEntry](API_DashboardEntry.md) objects
 
- ** NextToken **
+ ** [NextToken](#API_ListDashboards_ResponseSyntax) **   <a name="ACW-ListDashboards-response-NextToken"></a>
 The token that marks the start of the next batch of returned results.
 Type: String
 

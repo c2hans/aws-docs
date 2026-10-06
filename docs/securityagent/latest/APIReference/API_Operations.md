@@ -92,6 +92,7 @@ The following actions are supported:
 +  [UpdateCodeReview](API_UpdateCodeReview.md)
 +  [UpdateFinding](API_UpdateFinding.md)
 +  [UpdateIntegratedResources](API_UpdateIntegratedResources.md)
++  [UpdateIntegration](API_UpdateIntegration.md)
 +  [UpdatePentest](API_UpdatePentest.md)
 +  [UpdatePrivateConnectionCertificate](API_UpdatePrivateConnectionCertificate.md)
 +  [UpdateSecurityRequirementPack](API_UpdateSecurityRequirementPack.md)

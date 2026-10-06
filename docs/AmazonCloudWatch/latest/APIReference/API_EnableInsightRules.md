@@ -7,22 +7,53 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 
 Enables the specified Contributor Insights rules. When rules are enabled, they immediately begin analyzing log data.
 
+## Request Syntax
+<a name="API_EnableInsightRules_RequestSyntax"></a>
+
+```
+{
+   "RuleNames": [ "{{string}}" ]
+}
+```
+
 ## Request Parameters
 <a name="API_EnableInsightRules_RequestParameters"></a>
 
- ** RuleNames **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [RuleNames](#API_EnableInsightRules_RequestSyntax) **   <a name="ACW-EnableInsightRules-request-RuleNames"></a>
 An array of the rule names to enable. If you need to find out the names of your rules, use [DescribeInsightRules](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_DescribeInsightRules.html).
 Type: Array of strings
 Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `[\x20-\x7E]+`
 Required: Yes
 
+## Response Syntax
+<a name="API_EnableInsightRules_ResponseSyntax"></a>
+
+```
+{
+   "Failures": [
+      {
+         "ExceptionType": "string",
+         "FailureCode": "string",
+         "FailureDescription": "string",
+         "FailureResource": "string"
+      }
+   ]
+}
+```
+
 ## Response Elements
 <a name="API_EnableInsightRules_ResponseElements"></a>
 
-The following element is returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** Failures **
+The following data is returned in JSON format by the service.
+
+ ** [Failures](#API_EnableInsightRules_ResponseSyntax) **   <a name="ACW-EnableInsightRules-response-Failures"></a>
 An array listing the rules that could not be enabled. You cannot disable or enable built-in rules.
 Type: Array of [PartialFailure](API_PartialFailure.md) objects
 

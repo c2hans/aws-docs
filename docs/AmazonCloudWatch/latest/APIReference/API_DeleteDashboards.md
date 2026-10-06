@@ -7,13 +7,31 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 
 Deletes all dashboards that you specify. You can specify up to 100 dashboards to delete. If there is an error during this call, the operation attempts to delete as many dashboards as possible.
 
+## Request Syntax
+<a name="API_DeleteDashboards_RequestSyntax"></a>
+
+```
+{
+   "DashboardNames": [ "{{string}}" ]
+}
+```
+
 ## Request Parameters
 <a name="API_DeleteDashboards_RequestParameters"></a>
 
- ** DashboardNames **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [DashboardNames](#API_DeleteDashboards_RequestSyntax) **   <a name="ACW-DeleteDashboards-request-DashboardNames"></a>
 The dashboards to be deleted. This parameter is required.
 Type: Array of strings
 Required: Yes
+
+## Response Elements
+<a name="API_DeleteDashboards_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
 
 ## Errors
 <a name="API_DeleteDashboards_Errors"></a>

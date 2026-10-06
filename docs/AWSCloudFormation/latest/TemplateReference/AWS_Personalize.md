@@ -8,6 +8,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 <a name="AWS_Personalize"></a>
 
 **Resource types**
++ [AWS::Personalize::Campaign](aws-resource-personalize-campaign.md)
 + [AWS::Personalize::Dataset](aws-resource-personalize-dataset.md)
 + [AWS::Personalize::DatasetGroup](aws-resource-personalize-datasetgroup.md)
 + [AWS::Personalize::EventTracker](aws-resource-personalize-eventtracker.md)

@@ -9,30 +9,51 @@ Retrieves the specified alarms. You can filter the results by specifying a prefi
 
 To use this operation and return information about composite alarms, you must be signed on with the `cloudwatch:DescribeAlarms` permission that is scoped to `*`. You can't return information about composite alarms if your `cloudwatch:DescribeAlarms` permission has a narrower scope.
 
+## Request Syntax
+<a name="API_DescribeAlarms_RequestSyntax"></a>
+
+```
+{
+   "ActionPrefix": "{{string}}",
+   "AlarmNamePrefix": "{{string}}",
+   "AlarmNames": [ "{{string}}" ],
+   "AlarmTypes": [ "{{string}}" ],
+   "ChildrenOfAlarmName": "{{string}}",
+   "MaxRecords": {{number}},
+   "NextToken": "{{string}}",
+   "ParentsOfAlarmName": "{{string}}",
+   "StateValue": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_DescribeAlarms_RequestParameters"></a>
 
- ** ActionPrefix **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [ActionPrefix](#API_DescribeAlarms_RequestSyntax) **   <a name="ACW-DescribeAlarms-request-ActionPrefix"></a>
 Use this parameter to filter the results of the operation to only those alarms that use a certain alarm action. For example, you could specify the ARN of an SNS topic to find all alarms that send notifications to that topic.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
- ** AlarmNamePrefix **
+ ** [AlarmNamePrefix](#API_DescribeAlarms_RequestSyntax) **   <a name="ACW-DescribeAlarms-request-AlarmNamePrefix"></a>
 An alarm name prefix. If you specify this parameter, you receive information about all alarms that have names that start with this prefix.
 If this parameter is specified, you cannot specify `AlarmNames`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: No
 
- ** AlarmNames **
+ ** [AlarmNames](#API_DescribeAlarms_RequestSyntax) **   <a name="ACW-DescribeAlarms-request-AlarmNames"></a>
 The names of the alarms to retrieve information about.
 Type: Array of strings
 Array Members: Maximum number of 100 items.
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: No
 
- ** AlarmTypes **
+ ** [AlarmTypes](#API_DescribeAlarms_RequestSyntax) **   <a name="ACW-DescribeAlarms-request-AlarmTypes"></a>
 Use this parameter to specify whether you want the operation to return metric alarms, composite alarms, or log alarms. If you omit this parameter, only metric alarms are returned, even if composite alarms or log alarms exist in the account.
 For example, if you omit this parameter or specify `MetricAlarms`, the operation returns only a list of metric alarms. It does not return any composite alarms or log alarms, even if they exist in the account.
 If you specify `CompositeAlarms`, the operation returns only a list of composite alarms, and does not return any metric alarms or log alarms.
@@ -41,7 +62,7 @@ Type: Array of strings
 Valid Values: `CompositeAlarm | MetricAlarm | LogAlarm`
 Required: No
 
- ** ChildrenOfAlarmName **
+ ** [ChildrenOfAlarmName](#API_DescribeAlarms_RequestSyntax) **   <a name="ACW-DescribeAlarms-request-ChildrenOfAlarmName"></a>
 If you use this parameter and specify the name of a composite alarm, the operation returns information about the "children" alarms of the alarm you specify. These are the metric alarms and composite alarms referenced in the `AlarmRule` field of the composite alarm that you specify in `ChildrenOfAlarmName`. Information about the composite alarm that you name in `ChildrenOfAlarmName` is not returned.
 If you specify `ChildrenOfAlarmName`, you cannot specify any other parameters in the request except for `MaxRecords` and `NextToken`. If you do so, you receive a validation error.
 Only the `Alarm Name`, `ARN`, `StateValue` (OK/ALARM/INSUFFICIENT\_DATA), and `StateUpdatedTimestamp` information are returned by this operation when you use this parameter. To get complete information about these alarms, perform another `DescribeAlarms` operation and specify the parent alarm names in the `AlarmNames` parameter.
@@ -49,18 +70,18 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: No
 
- ** MaxRecords **
+ ** [MaxRecords](#API_DescribeAlarms_RequestSyntax) **   <a name="ACW-DescribeAlarms-request-MaxRecords"></a>
 The maximum number of alarm descriptions to retrieve.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 100.
 Required: No
 
- ** NextToken **
+ ** [NextToken](#API_DescribeAlarms_RequestSyntax) **   <a name="ACW-DescribeAlarms-request-NextToken"></a>
 The token returned by a previous call to indicate that there is more data available.
 Type: String
 Required: No
 
- ** ParentsOfAlarmName **
+ ** [ParentsOfAlarmName](#API_DescribeAlarms_RequestSyntax) **   <a name="ACW-DescribeAlarms-request-ParentsOfAlarmName"></a>
 If you use this parameter and specify the name of a metric or composite alarm, the operation returns information about the "parent" alarms of the alarm you specify. These are the composite alarms that have `AlarmRule` parameters that reference the alarm named in `ParentsOfAlarmName`. Information about the alarm that you specify in `ParentsOfAlarmName` is not returned.
 If you specify `ParentsOfAlarmName`, you cannot specify any other parameters in the request except for `MaxRecords` and `NextToken`. If you do so, you receive a validation error.
 Only the Alarm Name and ARN are returned by this operation when you use this parameter. To get complete information about these alarms, perform another `DescribeAlarms` operation and specify the parent alarm names in the `AlarmNames` parameter.
@@ -68,30 +89,180 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: No
 
- ** StateValue **
+ ** [StateValue](#API_DescribeAlarms_RequestSyntax) **   <a name="ACW-DescribeAlarms-request-StateValue"></a>
 Specify this parameter to receive information only about alarms that are currently in the state that you specify.
 Type: String
 Valid Values: `OK | ALARM | INSUFFICIENT_DATA`
 Required: No
 
+## Response Syntax
+<a name="API_DescribeAlarms_ResponseSyntax"></a>
+
+```
+{
+   "CompositeAlarms": [
+      {
+         "ActionsEnabled": boolean,
+         "ActionsSuppressedBy": "string",
+         "ActionsSuppressedReason": "string",
+         "ActionsSuppressor": "string",
+         "ActionsSuppressorExtensionPeriod": number,
+         "ActionsSuppressorWaitPeriod": number,
+         "AlarmActions": [ "string" ],
+         "AlarmArn": "string",
+         "AlarmConfigurationUpdatedTimestamp": number,
+         "AlarmDescription": "string",
+         "AlarmName": "string",
+         "AlarmRule": "string",
+         "InsufficientDataActions": [ "string" ],
+         "OKActions": [ "string" ],
+         "StateReason": "string",
+         "StateReasonData": "string",
+         "StateTransitionedTimestamp": number,
+         "StateUpdatedTimestamp": number,
+         "StateValue": "string"
+      }
+   ],
+   "LogAlarms": [
+      {
+         "ActionLogLineCount": number,
+         "ActionLogLineRoleArn": "string",
+         "ActionsEnabled": boolean,
+         "AlarmActions": [ "string" ],
+         "AlarmArn": "string",
+         "AlarmConfigurationUpdatedTimestamp": number,
+         "AlarmDescription": "string",
+         "AlarmName": "string",
+         "ComparisonOperator": "string",
+         "EvaluationState": "string",
+         "InsufficientDataActions": [ "string" ],
+         "OKActions": [ "string" ],
+         "QueryResultsToAlarm": number,
+         "QueryResultsToEvaluate": number,
+         "ScheduledQueryConfiguration": {
+            "AggregationExpression": "string",
+            "LogGroupIdentifiers": [ "string" ],
+            "QueryARN": "string",
+            "QueryString": "string",
+            "ScheduleConfiguration": {
+               "EndTimeOffset": number,
+               "ScheduleExpression": "string",
+               "StartTimeOffset": number
+            },
+            "ScheduledQueryRoleARN": "string",
+            "Tags": [
+               {
+                  "Key": "string",
+                  "Value": "string"
+               }
+            ]
+         },
+         "StateReason": "string",
+         "StateReasonData": "string",
+         "StateTransitionedTimestamp": number,
+         "StateUpdatedTimestamp": number,
+         "StateValue": "string",
+         "Threshold": number,
+         "TreatMissingData": "string",
+         "WarmUpConfiguration": {
+            "OnlyStartEvaluatingAfterWarmUpPeriodEnds": boolean,
+            "WarmUpPeriodDurationInMinutes": number
+         }
+      }
+   ],
+   "MetricAlarms": [
+      {
+         "ActionsEnabled": boolean,
+         "AlarmActions": [ "string" ],
+         "AlarmArn": "string",
+         "AlarmConfigurationUpdatedTimestamp": number,
+         "AlarmDescription": "string",
+         "AlarmName": "string",
+         "ComparisonOperator": "string",
+         "DatapointsToAlarm": number,
+         "Dimensions": [
+            {
+               "Name": "string",
+               "Value": "string"
+            }
+         ],
+         "EvaluateLowSampleCountPercentile": "string",
+         "EvaluationCriteria": { ... },
+         "EvaluationInterval": number,
+         "EvaluationPeriods": number,
+         "EvaluationState": "string",
+         "EvaluationWindow": { ... },
+         "ExtendedStatistic": "string",
+         "InsufficientDataActions": [ "string" ],
+         "MetricName": "string",
+         "Metrics": [
+            {
+               "AccountId": "string",
+               "Expression": "string",
+               "Id": "string",
+               "Label": "string",
+               "MetricStat": {
+                  "Metric": {
+                     "Dimensions": [
+                        {
+                           "Name": "string",
+                           "Value": "string"
+                        }
+                     ],
+                     "MetricName": "string",
+                     "Namespace": "string"
+                  },
+                  "Period": number,
+                  "Stat": "string",
+                  "Unit": "string"
+               },
+               "Period": number,
+               "ReturnData": boolean
+            }
+         ],
+         "Namespace": "string",
+         "OKActions": [ "string" ],
+         "Period": number,
+         "StateReason": "string",
+         "StateReasonData": "string",
+         "StateTransitionedTimestamp": number,
+         "StateUpdatedTimestamp": number,
+         "StateValue": "string",
+         "Statistic": "string",
+         "Threshold": number,
+         "ThresholdMetricId": "string",
+         "TreatMissingData": "string",
+         "Unit": "string",
+         "WarmUpConfiguration": {
+            "OnlyStartEvaluatingAfterWarmUpPeriodEnds": boolean,
+            "WarmUpPeriodDurationInMinutes": number
+         }
+      }
+   ],
+   "NextToken": "string"
+}
+```
+
 ## Response Elements
 <a name="API_DescribeAlarms_ResponseElements"></a>
 
-The following elements are returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** CompositeAlarms **
+The following data is returned in JSON format by the service.
+
+ ** [CompositeAlarms](#API_DescribeAlarms_ResponseSyntax) **   <a name="ACW-DescribeAlarms-response-CompositeAlarms"></a>
 The information about any composite alarms returned by the operation.
 Type: Array of [CompositeAlarm](API_CompositeAlarm.md) objects
 
- ** LogAlarms **
+ ** [LogAlarms](#API_DescribeAlarms_ResponseSyntax) **   <a name="ACW-DescribeAlarms-response-LogAlarms"></a>
 The information about any log alarms returned by the operation.
 Type: Array of [LogAlarm](API_LogAlarm.md) objects
 
- ** MetricAlarms **
+ ** [MetricAlarms](#API_DescribeAlarms_ResponseSyntax) **   <a name="ACW-DescribeAlarms-response-MetricAlarms"></a>
 The information about any metric alarms returned by the operation.
 Type: Array of [MetricAlarm](API_MetricAlarm.md) objects
 
- ** NextToken **
+ ** [NextToken](#API_DescribeAlarms_ResponseSyntax) **   <a name="ACW-DescribeAlarms-response-NextToken"></a>
 The token that marks the start of the next batch of returned results.
 Type: String
 

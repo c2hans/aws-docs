@@ -62,7 +62,7 @@ The API format to use when calling the OpenAI provider.
 The ARN of your OpenAI API key on AgentCore Identity.
 *Required*: Yes
 *Type*: String
-*Pattern*: `^arn:aws:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:token-vault/[a-zA-Z0-9-.]+/apikeycredentialprovider/[a-zA-Z0-9-.]+$`
+*Pattern*: `^arn:aws(-[^:]+)?:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:token-vault/[a-zA-Z0-9-.]+/apikeycredentialprovider/[a-zA-Z0-9-.]+$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `MaxTokens`  <a name="cfn-bedrockagentcore-harness-harnessopenaimodelconfig-maxtokens"></a>

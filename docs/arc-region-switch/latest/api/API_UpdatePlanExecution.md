@@ -7,31 +7,52 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_UpdateP
 
 Updates an in-progress plan execution. This operation allows you to modify certain aspects of the execution, such as adding a comment or changing the action.
 
+## Request Syntax
+<a name="API_UpdatePlanExecution_RequestSyntax"></a>
+
+```
+{
+   "action": "{{string}}",
+   "comment": "{{string}}",
+   "executionId": "{{string}}",
+   "planArn": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_UpdatePlanExecution_RequestParameters"></a>
 
- ** action **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [action](#API_UpdatePlanExecution_RequestSyntax) **   <a name="regionswitch-UpdatePlanExecution-request-action"></a>
 The action specified for a plan execution, for example, Switch to Graceful or Pause.
 Type: String
 Valid Values: `switchToGraceful | switchToUngraceful | pause | resume`
 Required: Yes
 
- ** comment **
+ ** [comment](#API_UpdatePlanExecution_RequestSyntax) **   <a name="regionswitch-UpdatePlanExecution-request-comment"></a>
 An optional comment about the plan execution.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1024.
 Required: No
 
- ** executionId **
+ ** [executionId](#API_UpdatePlanExecution_RequestSyntax) **   <a name="regionswitch-UpdatePlanExecution-request-executionId"></a>
 The execution identifier of a plan execution.
 Type: String
 Required: Yes
 
- ** planArn **
+ ** [planArn](#API_UpdatePlanExecution_RequestSyntax) **   <a name="regionswitch-UpdatePlanExecution-request-planArn"></a>
 The Amazon Resource Name (ARN) of the plan with the execution to update.
 Type: String
 Pattern: `arn:aws[a-zA-Z-]*:arc-region-switch::[0-9]{12}:plan/([a-zA-Z0-9](?:[a-zA-Z0-9-]{0,30}[a-zA-Z0-9])?):([a-z0-9]{6})`
 Required: Yes
+
+## Response Elements
+<a name="API_UpdatePlanExecution_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
 
 ## Errors
 <a name="API_UpdatePlanExecution_Errors"></a>

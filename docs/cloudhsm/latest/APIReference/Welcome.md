@@ -9,4 +9,4 @@ Welcome to the AWS CloudHSM API Reference.
 
 For more information about AWS CloudHSM, see [AWS CloudHSM](http://aws.amazon.com/cloudhsm/) and the [AWS CloudHSM User Guide](https://docs.aws.amazon.com/cloudhsm/latest/userguide/).
 
-This document was last published on October 2, 2026.
+This document was last published on October 5, 2026.

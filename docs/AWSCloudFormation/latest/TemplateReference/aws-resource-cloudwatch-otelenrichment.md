@@ -9,7 +9,9 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 Enables OpenTelemetry (OTel) metric enrichment in Amazon CloudWatch, allowing CloudWatch vended metrics to be available for PromQL querying enriched with AWS resource tags and metadata.
 
-This is a singleton resource — only one `OTelEnrichment` resource can exist per AWS account. The resource has no configurable properties. Creating the resource starts enrichment, and deleting it stops enrichment.
+This is a singleton resource — only one `OTelEnrichment` resource can exist per AWS account. Creating the resource starts enrichment, and deleting it stops enrichment.
+
+By default, enrichment applies to every namespace that CloudWatch supports. To limit enrichment to a subset of metrics, specify `IncludeFilters`, `ExcludeFilters`, or both. You can change the filters without interrupting enrichment. CloudFormation applies the change by calling `UpdateOTelEnrichment`.
 
 Before creating this resource, you must enable resource tags on telemetry for your account. For more information, see [Supported AWS infrastructure metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/UsingResourceTagsForTelemetry.html) in the *Amazon CloudWatch User Guide*.
 

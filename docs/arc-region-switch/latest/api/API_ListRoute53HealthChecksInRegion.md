@@ -7,49 +7,86 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_ListRou
 
 List the Amazon Route 53 health checks in a specific AWS Region.
 
+## Request Syntax
+<a name="API_ListRoute53HealthChecksInRegion_RequestSyntax"></a>
+
+```
+{
+   "arn": "{{string}}",
+   "hostedZoneId": "{{string}}",
+   "maxResults": {{number}},
+   "nextToken": "{{string}}",
+   "recordName": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_ListRoute53HealthChecksInRegion_RequestParameters"></a>
 
- ** arn **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [arn](#API_ListRoute53HealthChecksInRegion_RequestSyntax) **   <a name="regionswitch-ListRoute53HealthChecksInRegion-request-arn"></a>
 The Amazon Resource Name (ARN) of the Arc Region Switch Plan.
 Type: String
 Pattern: `arn:aws[a-zA-Z-]*:arc-region-switch::[0-9]{12}:plan/([a-zA-Z0-9](?:[a-zA-Z0-9-]{0,30}[a-zA-Z0-9])?):([a-z0-9]{6})`
 Required: Yes
 
- ** hostedZoneId **
+ ** [hostedZoneId](#API_ListRoute53HealthChecksInRegion_RequestSyntax) **   <a name="regionswitch-ListRoute53HealthChecksInRegion-request-hostedZoneId"></a>
 The hosted zone ID for the health checks.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 32.
 Required: No
 
- ** maxResults **
+ ** [maxResults](#API_ListRoute53HealthChecksInRegion_RequestSyntax) **   <a name="regionswitch-ListRoute53HealthChecksInRegion-request-maxResults"></a>
 The maximum number of results to return in the response.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 100.
 Required: No
 
- ** nextToken **
+ ** [nextToken](#API_ListRoute53HealthChecksInRegion_RequestSyntax) **   <a name="regionswitch-ListRoute53HealthChecksInRegion-request-nextToken"></a>
 Specifies that you want to receive the next page of results. Valid only if you received a `nextToken` response in the previous request. If you did, it indicates that more output is available. Set this parameter to the value provided by the previous call's `nextToken` response to request the next page of results.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Required: No
 
- ** recordName **
+ ** [recordName](#API_ListRoute53HealthChecksInRegion_RequestSyntax) **   <a name="regionswitch-ListRoute53HealthChecksInRegion-request-recordName"></a>
 The record name for the health checks.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
+## Response Syntax
+<a name="API_ListRoute53HealthChecksInRegion_ResponseSyntax"></a>
+
+```
+{
+   "healthChecks": [
+      {
+         "healthCheckId": "string",
+         "hostedZoneId": "string",
+         "recordName": "string",
+         "region": "string",
+         "status": "string"
+      }
+   ],
+   "nextToken": "string"
+}
+```
+
 ## Response Elements
 <a name="API_ListRoute53HealthChecksInRegion_ResponseElements"></a>
 
-The following elements are returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** healthChecks **
+The following data is returned in JSON format by the service.
+
+ ** [healthChecks](#API_ListRoute53HealthChecksInRegion_ResponseSyntax) **   <a name="regionswitch-ListRoute53HealthChecksInRegion-response-healthChecks"></a>
 List of the health checks requested.
 Type: Array of [Route53HealthCheck](API_Route53HealthCheck.md) objects
 
- ** nextToken **
+ ** [nextToken](#API_ListRoute53HealthChecksInRegion_ResponseSyntax) **   <a name="regionswitch-ListRoute53HealthChecksInRegion-response-nextToken"></a>
 A pagination token. A response may contain no results while still including a `nextToken`. Continue paginating until `nextToken` is null to retrieve all results.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.

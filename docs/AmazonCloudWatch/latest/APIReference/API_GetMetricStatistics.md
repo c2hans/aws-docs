@@ -29,41 +29,67 @@ CloudWatch started retaining 5-minute and 1-hour metric data as of July 9, 2016.
 
 For information about metrics and dimensions supported by AWS services, see the [Amazon CloudWatch Metrics and Dimensions Reference](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CW_Support_For_AWS.html) in the *Amazon CloudWatch User Guide*.
 
+## Request Syntax
+<a name="API_GetMetricStatistics_RequestSyntax"></a>
+
+```
+{
+   "Dimensions": [
+      {
+         "Name": "{{string}}",
+         "Value": "{{string}}"
+      }
+   ],
+   "EndTime": {{number}},
+   "ExtendedStatistics": [ "{{string}}" ],
+   "MetricName": "{{string}}",
+   "Namespace": "{{string}}",
+   "Period": {{number}},
+   "StartTime": {{number}},
+   "Statistics": [ "{{string}}" ],
+   "Unit": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_GetMetricStatistics_RequestParameters"></a>
 
- ** Dimensions **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [Dimensions](#API_GetMetricStatistics_RequestSyntax) **   <a name="ACW-GetMetricStatistics-request-Dimensions"></a>
 The dimensions. If the metric contains multiple dimensions, you must include a value for each dimension. CloudWatch treats each unique combination of dimensions as a separate metric. If a specific combination of dimensions was not published, you can't retrieve statistics for it. You must specify the same dimensions that were used when the metrics were created. For an example, see [Dimension Combinations](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch_concepts.html#dimension-combinations) in the *Amazon CloudWatch User Guide*. For more information about specifying dimensions, see [Publishing Metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/publishingMetrics.html) in the *Amazon CloudWatch User Guide*.
 Type: Array of [Dimension](API_Dimension.md) objects
 Array Members: Maximum number of 30 items.
 Required: No
 
- ** EndTime **
+ ** [EndTime](#API_GetMetricStatistics_RequestSyntax) **   <a name="ACW-GetMetricStatistics-request-EndTime"></a>
 The time stamp that determines the last data point to return.
 The value specified is exclusive; results include data points up to the specified time stamp. In a raw HTTP query, the time stamp must be in ISO 8601 UTC format (for example, 2016-10-10T23:00:00Z).
 Type: Timestamp
 Required: Yes
 
- ** ExtendedStatistics **
+ ** [ExtendedStatistics](#API_GetMetricStatistics_RequestSyntax) **   <a name="ACW-GetMetricStatistics-request-ExtendedStatistics"></a>
 The percentile statistics. Specify values between p0.0 and p100. When calling `GetMetricStatistics`, you must specify either `Statistics` or `ExtendedStatistics`, but not both. Percentile statistics are not available for metrics when any of the metric values are negative numbers.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Required: No
 
- ** MetricName **
+ ** [MetricName](#API_GetMetricStatistics_RequestSyntax) **   <a name="ACW-GetMetricStatistics-request-MetricName"></a>
 The name of the metric, with or without spaces.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes
 
- ** Namespace **
+ ** [Namespace](#API_GetMetricStatistics_RequestSyntax) **   <a name="ACW-GetMetricStatistics-request-Namespace"></a>
 The namespace of the metric, with or without spaces.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[^:].*`
 Required: Yes
 
- ** Period **
+ ** [Period](#API_GetMetricStatistics_RequestSyntax) **   <a name="ACW-GetMetricStatistics-request-Period"></a>
 The granularity, in seconds, of the returned data points. For metrics with regular resolution, a period can be as short as one minute (60 seconds) and must be a multiple of 60. For high-resolution metrics that are collected at intervals of less than one minute, the period can be 1, 5, 10, 20, 30, 60, or any multiple of 60. High-resolution metrics are those metrics stored by a `PutMetricData` call that includes a `StorageResolution` of 1 second.
 If the `StartTime` parameter specifies a time stamp that is greater than 3 hours ago, you must specify the period as follows or no data points in that time range is returned:
 + Start time between 3 hours and 15 days ago - Use a multiple of 60 seconds (1 minute).
@@ -73,7 +99,7 @@ Type: Integer
 Valid Range: Minimum value of 1.
 Required: Yes
 
- ** StartTime **
+ ** [StartTime](#API_GetMetricStatistics_RequestSyntax) **   <a name="ACW-GetMetricStatistics-request-StartTime"></a>
 The time stamp that determines the first data point to return. Start times are evaluated relative to the time that CloudWatch receives the request.
 The value specified is inclusive; results include data points with the specified time stamp. In a raw HTTP query, the time stamp must be in ISO 8601 UTC format (for example, 2016-10-03T23:00:00Z).
 CloudWatch rounds the specified time stamp as follows:
@@ -84,29 +110,54 @@ If you set `Period` to 5, 10, 20, or 30, the start time of your request is round
 Type: Timestamp
 Required: Yes
 
- ** Statistics **
+ ** [Statistics](#API_GetMetricStatistics_RequestSyntax) **   <a name="ACW-GetMetricStatistics-request-Statistics"></a>
 The metric statistics, other than percentile. For percentile statistics, use `ExtendedStatistics`. When calling `GetMetricStatistics`, you must specify either `Statistics` or `ExtendedStatistics`, but not both.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 5 items.
 Valid Values: `SampleCount | Average | Sum | Minimum | Maximum`
 Required: No
 
- ** Unit **
+ ** [Unit](#API_GetMetricStatistics_RequestSyntax) **   <a name="ACW-GetMetricStatistics-request-Unit"></a>
 The unit for a given metric. If you omit `Unit`, all data that was collected with any unit is returned, along with the corresponding units that were specified when the data was reported to CloudWatch. If you specify a unit, the operation returns only data that was collected with that unit specified. If you specify a unit that does not match the data collected, the results of the operation are null. CloudWatch does not perform unit conversions.
 Type: String
 Valid Values: `Seconds | Microseconds | Milliseconds | Bytes | Kilobytes | Megabytes | Gigabytes | Terabytes | Bits | Kilobits | Megabits | Gigabits | Terabits | Percent | Count | Bytes/Second | Kilobytes/Second | Megabytes/Second | Gigabytes/Second | Terabytes/Second | Bits/Second | Kilobits/Second | Megabits/Second | Gigabits/Second | Terabits/Second | Count/Second | None`
 Required: No
 
+## Response Syntax
+<a name="API_GetMetricStatistics_ResponseSyntax"></a>
+
+```
+{
+   "Datapoints": [
+      {
+         "Average": number,
+         "ExtendedStatistics": {
+            "string" : number
+         },
+         "Maximum": number,
+         "Minimum": number,
+         "SampleCount": number,
+         "Sum": number,
+         "Timestamp": number,
+         "Unit": "string"
+      }
+   ],
+   "Label": "string"
+}
+```
+
 ## Response Elements
 <a name="API_GetMetricStatistics_ResponseElements"></a>
 
-The following elements are returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** Datapoints **
+The following data is returned in JSON format by the service.
+
+ ** [Datapoints](#API_GetMetricStatistics_ResponseSyntax) **   <a name="ACW-GetMetricStatistics-response-Datapoints"></a>
 The data points for the specified metric.
 Type: Array of [Datapoint](API_Datapoint.md) objects
 
- ** Label **
+ ** [Label](#API_GetMetricStatistics_ResponseSyntax) **   <a name="ACW-GetMetricStatistics-response-Label"></a>
 A label for the specified metric.
 Type: String
 

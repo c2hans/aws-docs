@@ -15,42 +15,78 @@ This operation supports pagination for accounts with many mute rules. Use the `M
 
 To list mute rules, you need the `cloudwatch:ListAlarmMuteRules` permission.
 
+## Request Syntax
+<a name="API_ListAlarmMuteRules_RequestSyntax"></a>
+
+```
+{
+   "AlarmName": "{{string}}",
+   "MaxRecords": {{number}},
+   "NextToken": "{{string}}",
+   "Statuses": [ "{{string}}" ]
+}
+```
+
 ## Request Parameters
 <a name="API_ListAlarmMuteRules_RequestParameters"></a>
 
- ** AlarmName **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [AlarmName](#API_ListAlarmMuteRules_RequestSyntax) **   <a name="ACW-ListAlarmMuteRules-request-AlarmName"></a>
 Filter results to show only mute rules that target the specified alarm name.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: No
 
- ** MaxRecords **
+ ** [MaxRecords](#API_ListAlarmMuteRules_RequestSyntax) **   <a name="ACW-ListAlarmMuteRules-request-MaxRecords"></a>
 The maximum number of mute rules to return in one call. The default is 50.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 100.
 Required: No
 
- ** NextToken **
+ ** [NextToken](#API_ListAlarmMuteRules_RequestSyntax) **   <a name="ACW-ListAlarmMuteRules-request-NextToken"></a>
 The token returned from a previous call to indicate where to continue retrieving results.
 Type: String
 Required: No
 
- ** Statuses **
+ ** [Statuses](#API_ListAlarmMuteRules_RequestSyntax) **   <a name="ACW-ListAlarmMuteRules-request-Statuses"></a>
 Filter results to show only mute rules with the specified statuses. Valid values are `SCHEDULED`, `ACTIVE`, or `EXPIRED`.
 Type: Array of strings
 Valid Values: `SCHEDULED | ACTIVE | EXPIRED`
 Required: No
 
+## Response Syntax
+<a name="API_ListAlarmMuteRules_ResponseSyntax"></a>
+
+```
+{
+   "AlarmMuteRuleSummaries": [
+      {
+         "AlarmMuteRuleArn": "string",
+         "ExpireDate": number,
+         "LastUpdatedTimestamp": number,
+         "MuteType": "string",
+         "Status": "string"
+      }
+   ],
+   "NextToken": "string"
+}
+```
+
 ## Response Elements
 <a name="API_ListAlarmMuteRules_ResponseElements"></a>
 
-The following elements are returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** AlarmMuteRuleSummaries **
+The following data is returned in JSON format by the service.
+
+ ** [AlarmMuteRuleSummaries](#API_ListAlarmMuteRules_ResponseSyntax) **   <a name="ACW-ListAlarmMuteRules-response-AlarmMuteRuleSummaries"></a>
 A list of alarm mute rule summaries.
 Type: Array of [AlarmMuteRuleSummary](API_AlarmMuteRuleSummary.md) objects
 
- ** NextToken **
+ ** [NextToken](#API_ListAlarmMuteRules_ResponseSyntax) **   <a name="ACW-ListAlarmMuteRules-response-NextToken"></a>
 The token to use when requesting the next set of results. If this field is absent, there are no more results to retrieve.
 Type: String
 

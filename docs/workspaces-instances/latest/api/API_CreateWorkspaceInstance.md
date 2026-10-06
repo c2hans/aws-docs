@@ -7,38 +7,243 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Crea
 
 Launches a new WorkSpace Instance with specified configuration parameters, enabling programmatic workspace deployment.
 
+## Request Syntax
+<a name="API_CreateWorkspaceInstance_RequestSyntax"></a>
+
+```
+{
+   "BillingConfiguration": {
+      "BillingMode": "{{string}}"
+   },
+   "ClientToken": "{{string}}",
+   "ManagedInstance": {
+      "BlockDeviceMappings": [
+         {
+            "DeviceName": "{{string}}",
+            "Ebs": {
+               "Encrypted": {{boolean}},
+               "Iops": {{number}},
+               "KmsKeyId": "{{string}}",
+               "Throughput": {{number}},
+               "VolumeSize": {{number}},
+               "VolumeType": "{{string}}"
+            },
+            "NoDevice": "{{string}}",
+            "VirtualName": "{{string}}"
+         }
+      ],
+      "CapacityReservationSpecification": {
+         "CapacityReservationPreference": "{{string}}",
+         "CapacityReservationTarget": {
+            "CapacityReservationId": "{{string}}",
+            "CapacityReservationResourceGroupArn": "{{string}}"
+         }
+      },
+      "CpuOptions": {
+         "AmdSevSnp": "{{string}}",
+         "CoreCount": {{number}},
+         "NestedVirtualization": "{{string}}",
+         "ThreadsPerCore": {{number}}
+      },
+      "CreditSpecification": {
+         "CpuCredits": "{{string}}"
+      },
+      "DisableApiStop": {{boolean}},
+      "EbsOptimized": {{boolean}},
+      "EnablePrimaryIpv6": {{boolean}},
+      "EnclaveOptions": {
+         "Enabled": {{boolean}}
+      },
+      "HibernationOptions": {
+         "Configured": {{boolean}}
+      },
+      "IamInstanceProfile": {
+         "Arn": "{{string}}",
+         "Name": "{{string}}"
+      },
+      "ImageId": "{{string}}",
+      "InstanceMarketOptions": {
+         "MarketType": "{{string}}",
+         "SpotOptions": {
+            "BlockDurationMinutes": {{number}},
+            "InstanceInterruptionBehavior": "{{string}}",
+            "MaxPrice": "{{string}}",
+            "SpotInstanceType": "{{string}}",
+            "ValidUntilUtc": {{number}}
+         }
+      },
+      "InstanceType": "{{string}}",
+      "Ipv6AddressCount": {{number}},
+      "Ipv6Addresses": [
+         {
+            "Ipv6Address": "{{string}}",
+            "IsPrimaryIpv6": {{boolean}}
+         }
+      ],
+      "KernelId": "{{string}}",
+      "KeyName": "{{string}}",
+      "LicenseSpecifications": [
+         {
+            "LicenseConfigurationArn": "{{string}}"
+         }
+      ],
+      "MaintenanceOptions": {
+         "AutoRecovery": "{{string}}"
+      },
+      "MetadataOptions": {
+         "HttpEndpoint": "{{string}}",
+         "HttpProtocolIpv6": "{{string}}",
+         "HttpPutResponseHopLimit": {{number}},
+         "HttpTokens": "{{string}}",
+         "InstanceMetadataTags": "{{string}}"
+      },
+      "Monitoring": {
+         "Enabled": {{boolean}}
+      },
+      "NetworkInterfaces": [
+         {
+            "AssociateCarrierIpAddress": {{boolean}},
+            "AssociatePublicIpAddress": {{boolean}},
+            "ConnectionTrackingSpecification": {
+               "TcpEstablishedTimeout": {{number}},
+               "UdpStreamTimeout": {{number}},
+               "UdpTimeout": {{number}}
+            },
+            "Description": "{{string}}",
+            "DeviceIndex": {{number}},
+            "EnaSrdSpecification": {
+               "EnaSrdEnabled": {{boolean}},
+               "EnaSrdUdpSpecification": {
+                  "EnaSrdUdpEnabled": {{boolean}}
+               }
+            },
+            "Groups": [ "{{string}}" ],
+            "InterfaceType": "{{string}}",
+            "Ipv4PrefixCount": {{number}},
+            "Ipv4Prefixes": [
+               {
+                  "Ipv4Prefix": "{{string}}"
+               }
+            ],
+            "Ipv6AddressCount": {{number}},
+            "Ipv6Addresses": [
+               {
+                  "Ipv6Address": "{{string}}",
+                  "IsPrimaryIpv6": {{boolean}}
+               }
+            ],
+            "Ipv6PrefixCount": {{number}},
+            "Ipv6Prefixes": [
+               {
+                  "Ipv6Prefix": "{{string}}"
+               }
+            ],
+            "NetworkCardIndex": {{number}},
+            "NetworkInterfaceId": "{{string}}",
+            "PrimaryIpv6": {{boolean}},
+            "PrivateIpAddress": "{{string}}",
+            "PrivateIpAddresses": [
+               {
+                  "Primary": {{boolean}},
+                  "PrivateIpAddress": "{{string}}"
+               }
+            ],
+            "SecondaryPrivateIpAddressCount": {{number}},
+            "SubnetId": "{{string}}"
+         }
+      ],
+      "NetworkPerformanceOptions": {
+         "BandwidthWeighting": "{{string}}"
+      },
+      "Placement": {
+         "Affinity": "{{string}}",
+         "AvailabilityZone": "{{string}}",
+         "GroupId": "{{string}}",
+         "GroupName": "{{string}}",
+         "HostId": "{{string}}",
+         "HostResourceGroupArn": "{{string}}",
+         "PartitionNumber": {{number}},
+         "Tenancy": "{{string}}"
+      },
+      "PrivateDnsNameOptions": {
+         "EnableResourceNameDnsAAAARecord": {{boolean}},
+         "EnableResourceNameDnsARecord": {{boolean}},
+         "HostnameType": "{{string}}"
+      },
+      "PrivateIpAddress": "{{string}}",
+      "RamdiskId": "{{string}}",
+      "SecurityGroupIds": [ "{{string}}" ],
+      "SecurityGroups": [ "{{string}}" ],
+      "SubnetId": "{{string}}",
+      "TagSpecifications": [
+         {
+            "ResourceType": "{{string}}",
+            "Tags": [
+               {
+                  "Key": "{{string}}",
+                  "Value": "{{string}}"
+               }
+            ]
+         }
+      ],
+      "UserData": "{{string}}"
+   },
+   "Tags": [
+      {
+         "Key": "{{string}}",
+         "Value": "{{string}}"
+      }
+   ]
+}
+```
+
 ## Request Parameters
 <a name="API_CreateWorkspaceInstance_RequestParameters"></a>
 
- ** BillingConfiguration **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [BillingConfiguration](#API_CreateWorkspaceInstance_RequestSyntax) **   <a name="workspacesinstances-CreateWorkspaceInstance-request-BillingConfiguration"></a>
 Optional billing configuration for the WorkSpace Instance. Allows customers to specify their preferred billing mode when creating a new instance. Defaults to hourly billing if not specified.
 Type: [BillingConfiguration](API_BillingConfiguration.md) object
 Required: No
 
- ** ClientToken **
+ ** [ClientToken](#API_CreateWorkspaceInstance_RequestSyntax) **   <a name="workspacesinstances-CreateWorkspaceInstance-request-ClientToken"></a>
 Unique token to ensure idempotent instance creation, preventing duplicate workspace launches.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `[\x20-\x7E]+`
 Required: No
 
- ** ManagedInstance **
+ ** [ManagedInstance](#API_CreateWorkspaceInstance_RequestSyntax) **   <a name="workspacesinstances-CreateWorkspaceInstance-request-ManagedInstance"></a>
 Comprehensive configuration settings for the WorkSpaces Instance, including network, compute, and storage parameters.
 Type: [ManagedInstanceRequest](API_ManagedInstanceRequest.md) object
 Required: Yes
 
- ** Tags **
+ ** [Tags](#API_CreateWorkspaceInstance_RequestSyntax) **   <a name="workspacesinstances-CreateWorkspaceInstance-request-Tags"></a>
 Optional metadata tags for categorizing and managing WorkSpaces Instances.
 Type: Array of [Tag](API_Tag.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 50 items.
 Required: No
 
+## Response Syntax
+<a name="API_CreateWorkspaceInstance_ResponseSyntax"></a>
+
+```
+{
+   "WorkspaceInstanceId": "string"
+}
+```
+
 ## Response Elements
 <a name="API_CreateWorkspaceInstance_ResponseElements"></a>
 
-The following element is returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** WorkspaceInstanceId **
+The following data is returned in JSON format by the service.
+
+ ** [WorkspaceInstanceId](#API_CreateWorkspaceInstance_ResponseSyntax) **   <a name="workspacesinstances-CreateWorkspaceInstance-response-WorkspaceInstanceId"></a>
 Unique identifier assigned to the newly created WorkSpaces Instance.
 Type: String
 Length Constraints: Minimum length of 15. Maximum length of 70.

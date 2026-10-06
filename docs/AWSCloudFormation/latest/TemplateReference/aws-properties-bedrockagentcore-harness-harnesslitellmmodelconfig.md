@@ -63,7 +63,7 @@ The base URL for the model provider's API endpoint.
 The ARN of the API key in AgentCore Identity for authenticating with the model provider.
 *Required*: No
 *Type*: String
-*Pattern*: `^arn:aws:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:token-vault/[a-zA-Z0-9-.]+/apikeycredentialprovider/[a-zA-Z0-9-.]+$`
+*Pattern*: `^arn:aws(-[^:]+)?:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:token-vault/[a-zA-Z0-9-.]+/apikeycredentialprovider/[a-zA-Z0-9-.]+$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `MaxTokens`  <a name="cfn-bedrockagentcore-harness-harnesslitellmmodelconfig-maxtokens"></a>

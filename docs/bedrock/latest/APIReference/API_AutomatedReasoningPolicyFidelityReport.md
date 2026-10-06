@@ -38,7 +38,7 @@ Required: Yes
 A mapping from variable names to detailed fidelity reports for each variable, showing which source statements ground each variable and how accurate it is.
 Type: String to [AutomatedReasoningPolicyVariableReport](API_AutomatedReasoningPolicyVariableReport.md) object map
 Key Length Constraints: Minimum length of 1. Maximum length of 64.
-Key Pattern: `[A-Za-z][A-Za-z0-9_]*`
+Key Pattern: `\p{L}[\p{L}\p{M}0-9_]*( [\p{L}\p{M}0-9_]+)*`
 Required: Yes
 
 ## See Also

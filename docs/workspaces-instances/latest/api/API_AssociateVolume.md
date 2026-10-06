@@ -7,27 +7,47 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Asso
 
 Attaches a volume to a WorkSpace Instance.
 
+## Request Syntax
+<a name="API_AssociateVolume_RequestSyntax"></a>
+
+```
+{
+   "Device": "{{string}}",
+   "VolumeId": "{{string}}",
+   "WorkspaceInstanceId": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_AssociateVolume_RequestParameters"></a>
 
- ** Device **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [Device](#API_AssociateVolume_RequestSyntax) **   <a name="workspacesinstances-AssociateVolume-request-Device"></a>
 Device path for volume attachment.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 32.
 Required: Yes
 
- ** VolumeId **
+ ** [VolumeId](#API_AssociateVolume_RequestSyntax) **   <a name="workspacesinstances-AssociateVolume-request-VolumeId"></a>
 Volume to be attached.
 Type: String
 Pattern: `vol-[0-9a-zA-Z]{1,63}`
 Required: Yes
 
- ** WorkspaceInstanceId **
+ ** [WorkspaceInstanceId](#API_AssociateVolume_RequestSyntax) **   <a name="workspacesinstances-AssociateVolume-request-WorkspaceInstanceId"></a>
 WorkSpace Instance to attach volume to.
 Type: String
 Length Constraints: Minimum length of 15. Maximum length of 70.
 Pattern: `wsinst-[0-9a-zA-Z]{8,63}`
 Required: Yes
+
+## Response Elements
+<a name="API_AssociateVolume_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
 
 ## Errors
 <a name="API_AssociateVolume_Errors"></a>

@@ -18,20 +18,39 @@ You can also optionally return one or more statistics about each data point in t
 +  `Maximum` -- the maximum value from a single observation during the time period represented by that data point.
 +  `Average` -- the average value from all contributors during the time period represented by that data point.
 
+## Request Syntax
+<a name="API_GetInsightRuleReport_RequestSyntax"></a>
+
+```
+{
+   "EndTime": {{number}},
+   "MaxContributorCount": {{number}},
+   "Metrics": [ "{{string}}" ],
+   "OrderBy": "{{string}}",
+   "Period": {{number}},
+   "RuleName": "{{string}}",
+   "StartTime": {{number}}
+}
+```
+
 ## Request Parameters
 <a name="API_GetInsightRuleReport_RequestParameters"></a>
 
- ** EndTime **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [EndTime](#API_GetInsightRuleReport_RequestSyntax) **   <a name="ACW-GetInsightRuleReport-request-EndTime"></a>
 The end time of the data to use in the report. When used in a raw HTTP Query API, it is formatted as `yyyy-MM-dd'T'HH:mm:ss`. For example, `2019-07-01T23:59:59`.
 Type: Timestamp
 Required: Yes
 
- ** MaxContributorCount **
+ ** [MaxContributorCount](#API_GetInsightRuleReport_RequestSyntax) **   <a name="ACW-GetInsightRuleReport-request-MaxContributorCount"></a>
 The maximum number of contributors to include in the report. The range is 1 to 100. If you omit this, the default of 10 is used.
 Type: Integer
 Required: No
 
- ** Metrics **
+ ** [Metrics](#API_GetInsightRuleReport_RequestSyntax) **   <a name="ACW-GetInsightRuleReport-request-Metrics"></a>
 Specifies which metrics to use for aggregation of contributor values for the report. You can specify one or more of the following metrics:
 +  `UniqueContributors` -- the number of unique contributors for each data point.
 +  `MaxContributorValue` -- the value of the top contributor for each data point. The identity of the contributor might change for each data point in the graph.
@@ -47,57 +66,95 @@ Length Constraints: Minimum length of 1. Maximum length of 32.
 Pattern: `[\x20-\x7E]+`
 Required: No
 
- ** OrderBy **
+ ** [OrderBy](#API_GetInsightRuleReport_RequestSyntax) **   <a name="ACW-GetInsightRuleReport-request-OrderBy"></a>
 Determines what statistic to use to rank the contributors. Valid values are `Sum` and `Maximum`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 32.
 Pattern: `[\x20-\x7E]+`
 Required: No
 
- ** Period **
+ ** [Period](#API_GetInsightRuleReport_RequestSyntax) **   <a name="ACW-GetInsightRuleReport-request-Period"></a>
 The period, in seconds, to use for the statistics in the `InsightRuleMetricDatapoint` results.
 Type: Integer
 Valid Range: Minimum value of 1.
 Required: Yes
 
- ** RuleName **
+ ** [RuleName](#API_GetInsightRuleReport_RequestSyntax) **   <a name="ACW-GetInsightRuleReport-request-RuleName"></a>
 The name of the rule that you want to see data from.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `[\x20-\x7E]+`
 Required: Yes
 
- ** StartTime **
+ ** [StartTime](#API_GetInsightRuleReport_RequestSyntax) **   <a name="ACW-GetInsightRuleReport-request-StartTime"></a>
 The start time of the data to use in the report. When used in a raw HTTP Query API, it is formatted as `yyyy-MM-dd'T'HH:mm:ss`. For example, `2019-07-01T23:59:59`.
 Type: Timestamp
 Required: Yes
 
+## Response Syntax
+<a name="API_GetInsightRuleReport_ResponseSyntax"></a>
+
+```
+{
+   "AggregateValue": number,
+   "AggregationStatistic": "string",
+   "ApproximateUniqueCount": number,
+   "Contributors": [
+      {
+         "ApproximateAggregateValue": number,
+         "Datapoints": [
+            {
+               "ApproximateValue": number,
+               "Timestamp": number
+            }
+         ],
+         "Keys": [ "string" ]
+      }
+   ],
+   "KeyLabels": [ "string" ],
+   "MetricDatapoints": [
+      {
+         "Average": number,
+         "MaxContributorValue": number,
+         "Maximum": number,
+         "Minimum": number,
+         "SampleCount": number,
+         "Sum": number,
+         "Timestamp": number,
+         "UniqueContributors": number
+      }
+   ]
+}
+```
+
 ## Response Elements
 <a name="API_GetInsightRuleReport_ResponseElements"></a>
 
-The following elements are returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** AggregateValue **
+The following data is returned in JSON format by the service.
+
+ ** [AggregateValue](#API_GetInsightRuleReport_ResponseSyntax) **   <a name="ACW-GetInsightRuleReport-response-AggregateValue"></a>
 The sum of the values from all individual contributors that match the rule.
 Type: Double
 
- ** AggregationStatistic **
+ ** [AggregationStatistic](#API_GetInsightRuleReport_ResponseSyntax) **   <a name="ACW-GetInsightRuleReport-response-AggregationStatistic"></a>
 Specifies whether this rule aggregates contributor data by COUNT or SUM.
 Type: String
 
- ** ApproximateUniqueCount **
+ ** [ApproximateUniqueCount](#API_GetInsightRuleReport_ResponseSyntax) **   <a name="ACW-GetInsightRuleReport-response-ApproximateUniqueCount"></a>
 An approximate count of the unique contributors found by this rule in this time period.
 Type: Long
 
- ** Contributors **
+ ** [Contributors](#API_GetInsightRuleReport_ResponseSyntax) **   <a name="ACW-GetInsightRuleReport-response-Contributors"></a>
 An array of the unique contributors found by this rule in this time period. If the rule contains multiple keys, each combination of values for the keys counts as a unique contributor.
 Type: Array of [InsightRuleContributor](API_InsightRuleContributor.md) objects
 
- ** KeyLabels **
+ ** [KeyLabels](#API_GetInsightRuleReport_ResponseSyntax) **   <a name="ACW-GetInsightRuleReport-response-KeyLabels"></a>
 An array of the strings used as the keys for this rule. The keys are the dimensions used to classify contributors. If the rule contains more than one key, then each unique combination of values for the keys is counted as a unique contributor.
 Type: Array of strings
 
- ** MetricDatapoints **
+ ** [MetricDatapoints](#API_GetInsightRuleReport_ResponseSyntax) **   <a name="ACW-GetInsightRuleReport-response-MetricDatapoints"></a>
 A time series of metric data points that matches the time period in the rule request.
 Type: Array of [InsightRuleMetricDatapoint](API_InsightRuleMetricDatapoint.md) objects
 

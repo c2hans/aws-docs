@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[Id](#cfn-quicksight-dashboard-sheetlayoutgroupmember-id)" : {{String}},
-  "[Type](#cfn-quicksight-dashboard-sheetlayoutgroupmember-type)" : {{}}
+  "[Type](#cfn-quicksight-dashboard-sheetlayoutgroupmember-type)" : {{String}}
 }
 ```
 
@@ -29,8 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [Id](#cfn-quicksight-dashboard-sheetlayoutgroupmember-id): {{String}}
-  [Type](#cfn-quicksight-dashboard-sheetlayoutgroupmember-type): {{
-    }}
+  [Type](#cfn-quicksight-dashboard-sheetlayoutgroupmember-type): {{String}}
 ```
 
 ## Properties
@@ -48,6 +47,6 @@ The unique identifier of the group member.
 `Type`  <a name="cfn-quicksight-dashboard-sheetlayoutgroupmember-type"></a>
 The type of the group member.
 *Required*: Yes
-*Type*:
+*Type*: String
 *Allowed values*: `ELEMENT | GROUP`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

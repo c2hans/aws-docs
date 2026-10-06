@@ -11,10 +11,34 @@ Before calling this operation, you must enable resource tags on telemetry for yo
 
 Optionally, `IncludeFilters` and `ExcludeFilters` limit enrichment to a subset of the account's metrics. These filters are stored only when this operation starts enrichment. Calling `StartOTelEnrichment` for an account where enrichment is already running has no effect and does not modify the filters that are applied. To change them, use [UpdateOTelEnrichment](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_UpdateOTelEnrichment.html).
 
+## Request Syntax
+<a name="API_StartOTelEnrichment_RequestSyntax"></a>
+
+```
+{
+   "ExcludeFilters": [
+      {
+         "MetricNames": [ "{{string}}" ],
+         "Namespace": "{{string}}"
+      }
+   ],
+   "IncludeFilters": [
+      {
+         "MetricNames": [ "{{string}}" ],
+         "Namespace": "{{string}}"
+      }
+   ]
+}
+```
+
 ## Request Parameters
 <a name="API_StartOTelEnrichment_RequestParameters"></a>
 
- ** ExcludeFilters **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [ExcludeFilters](#API_StartOTelEnrichment_RequestSyntax) **   <a name="ACW-StartOTelEnrichment-request-ExcludeFilters"></a>
 The metric namespaces, and the metric names, to leave unenriched. If this parameter is omitted, nothing is excluded.
 Amazon CloudWatch applies `ExcludeFilters` after `IncludeFilters`, so a metric that both parameters match is not enriched.
 A maximum of 100 filters is allowed across `IncludeFilters` and `ExcludeFilters` combined.
@@ -22,33 +46,57 @@ Type: Array of [OTelEnrichmentMetricSelector](API_OTelEnrichmentMetricSelector.m
 Array Members: Minimum number of 0 items. Maximum number of 100 items.
 Required: No
 
- ** IncludeFilters **
+ ** [IncludeFilters](#API_StartOTelEnrichment_RequestSyntax) **   <a name="ACW-StartOTelEnrichment-request-IncludeFilters"></a>
 The metric namespaces, and the metric names, to enrich. If this parameter is omitted, every namespace that Amazon CloudWatch supports for enrichment is in scope.
 A maximum of 100 filters is allowed across `IncludeFilters` and `ExcludeFilters` combined.
 Type: Array of [OTelEnrichmentMetricSelector](API_OTelEnrichmentMetricSelector.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 100 items.
 Required: No
 
+## Response Syntax
+<a name="API_StartOTelEnrichment_ResponseSyntax"></a>
+
+```
+{
+   "CreatedAt": number,
+   "ExcludeFilters": [
+      {
+         "MetricNames": [ "string" ],
+         "Namespace": "string"
+      }
+   ],
+   "IncludeFilters": [
+      {
+         "MetricNames": [ "string" ],
+         "Namespace": "string"
+      }
+   ],
+   "UpdatedAt": number
+}
+```
+
 ## Response Elements
 <a name="API_StartOTelEnrichment_ResponseElements"></a>
 
-The following elements are returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** CreatedAt **
+The following data is returned in JSON format by the service.
+
+ ** [CreatedAt](#API_StartOTelEnrichment_ResponseSyntax) **   <a name="ACW-StartOTelEnrichment-response-CreatedAt"></a>
 The date and time that enrichment started for the account.
 Type: Timestamp
 
- ** ExcludeFilters **
+ ** [ExcludeFilters](#API_StartOTelEnrichment_ResponseSyntax) **   <a name="ACW-StartOTelEnrichment-response-ExcludeFilters"></a>
 The exclude filters that are stored for the account.
 Type: Array of [OTelEnrichmentMetricSelector](API_OTelEnrichmentMetricSelector.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 100 items.
 
- ** IncludeFilters **
+ ** [IncludeFilters](#API_StartOTelEnrichment_ResponseSyntax) **   <a name="ACW-StartOTelEnrichment-response-IncludeFilters"></a>
 The include filters that are stored for the account.
 Type: Array of [OTelEnrichmentMetricSelector](API_OTelEnrichmentMetricSelector.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 100 items.
 
- ** UpdatedAt **
+ ** [UpdatedAt](#API_StartOTelEnrichment_ResponseSyntax) **   <a name="ACW-StartOTelEnrichment-response-UpdatedAt"></a>
 The date and time that the enrichment configuration for the account was last stored.
 Type: Timestamp
 

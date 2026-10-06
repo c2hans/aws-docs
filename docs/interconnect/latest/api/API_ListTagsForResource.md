@@ -9,10 +9,23 @@ List all current tags on the specified resource.
 
 Currently this only supports [Connection](API_Connection.md) resources.
 
+## Request Syntax
+<a name="API_ListTagsForResource_RequestSyntax"></a>
+
+```
+{
+   "arn": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_ListTagsForResource_RequestParameters"></a>
 
- ** arn **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [arn](#API_ListTagsForResource_RequestSyntax) **   <a name="interconnect-ListTagsForResource-request-arn"></a>
 The resource ARN for which to list tags.
 Currently this must be an ARN for a [Connection](API_Connection.md) resource.
 Type: String
@@ -20,12 +33,25 @@ Length Constraints: Minimum length of 59. Maximum length of 150.
 Pattern: `arn:aws[a-z-]*:interconnect:[^:]+:[0-9]{12}:connection/(mcc|lmcc)-[a-z0-9]{8}`
 Required: Yes
 
+## Response Syntax
+<a name="API_ListTagsForResource_ResponseSyntax"></a>
+
+```
+{
+   "tags": {
+      "string" : "string"
+   }
+}
+```
+
 ## Response Elements
 <a name="API_ListTagsForResource_ResponseElements"></a>
 
-The following element is returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** tags **
+The following data is returned in JSON format by the service.
+
+ ** [tags](#API_ListTagsForResource_ResponseSyntax) **   <a name="interconnect-ListTagsForResource-response-tags"></a>
 The tags on the specified ARN.
 Type: String to string map
 Key Length Constraints: Minimum length of 1. Maximum length of 128.

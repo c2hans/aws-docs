@@ -13,29 +13,67 @@ This operation returns a `ResourceNotFoundException` if no resource metrics conf
 
 To update a resource metrics configuration, you must have the `cloudwatch:UpdateResourceMetricsConfiguration` permission. For information about scoping this permission to specific resources, see [Condition keys for resource metrics configuration access](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/iam-cw-condition-keys-resource-arn.html) in the *Amazon CloudWatch User Guide*.
 
+## Request Syntax
+<a name="API_UpdateResourceMetricsConfiguration_RequestSyntax"></a>
+
+```
+{
+   "MetricSelections": [
+      {
+         "IncludeMetrics": [ "{{string}}" ]
+      }
+   ],
+   "ResourceArn": "{{string}}"
+}
+```
+
 ## Request Parameters
 <a name="API_UpdateResourceMetricsConfiguration_RequestParameters"></a>
 
- ** MetricSelections **
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [MetricSelections](#API_UpdateResourceMetricsConfiguration_RequestSyntax) **   <a name="ACW-UpdateResourceMetricsConfiguration-request-MetricSelections"></a>
 Specifies which metrics Amazon CloudWatch collects for the resource. The selections that you provide completely replace any existing metric selections.
 If you omit this parameter, Amazon CloudWatch removes any existing metric selection filter and collects all available detailed metrics for the resource.
 Type: Array of [ResourceMetricSelection](API_ResourceMetricSelection.md) objects
 Array Members: Fixed number of 1 item.
 Required: No
 
- ** ResourceArn **
+ ** [ResourceArn](#API_UpdateResourceMetricsConfiguration_RequestSyntax) **   <a name="ACW-UpdateResourceMetricsConfiguration-request-ResourceArn"></a>
 The Amazon Resource Name (ARN) of the AWS resource to update the resource metrics configuration for.
 Type: String
 Length Constraints: Minimum length of 20. Maximum length of 2048.
 Pattern: `arn:[a-zA-Z0-9-]+:[a-zA-Z0-9-]+:[a-zA-Z0-9-]*:\d{12}:.+`
 Required: Yes
 
+## Response Syntax
+<a name="API_UpdateResourceMetricsConfiguration_ResponseSyntax"></a>
+
+```
+{
+   "ResourceMetricsConfiguration": {
+      "CreatedAt": number,
+      "MetricSelections": [
+         {
+            "IncludeMetrics": [ "string" ]
+         }
+      ],
+      "ResourceArn": "string",
+      "UpdatedAt": number
+   }
+}
+```
+
 ## Response Elements
 <a name="API_UpdateResourceMetricsConfiguration_ResponseElements"></a>
 
-The following element is returned by the service.
+If the action is successful, the service sends back an HTTP 200 response.
 
- ** ResourceMetricsConfiguration **
+The following data is returned in JSON format by the service.
+
+ ** [ResourceMetricsConfiguration](#API_UpdateResourceMetricsConfiguration_ResponseSyntax) **   <a name="ACW-UpdateResourceMetricsConfiguration-response-ResourceMetricsConfiguration"></a>
 The resource metrics configuration after the update was applied.
 Type: [ResourceMetricsConfiguration](API_ResourceMetricsConfiguration.md) object
 

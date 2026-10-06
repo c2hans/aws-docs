@@ -38,7 +38,7 @@ A list of custom types that are defined but not referenced by any variables or r
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 150 items.
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `[A-Za-z][A-Za-z0-9_]*`
+Pattern: `\p{L}[\p{L}\p{M}0-9_]*( [\p{L}\p{M}0-9_]+)*`
 Required: Yes
 
  ** unusedTypeValues **   <a name="bedrock-Type-AutomatedReasoningPolicyDefinitionQualityReport-unusedTypeValues"></a>
@@ -52,7 +52,7 @@ A list of variables that are defined but not referenced by any rules, suggesting
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 600 items.
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `[A-Za-z][A-Za-z0-9_]*`
+Pattern: `\p{L}[\p{L}\p{M}0-9_]*( [\p{L}\p{M}0-9_]+)*`
 Required: Yes
 
  ** variableCount **   <a name="bedrock-Type-AutomatedReasoningPolicyDefinitionQualityReport-variableCount"></a>

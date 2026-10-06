@@ -204,7 +204,7 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 Returns the compute environment ARN, such as `arn:aws:batch:us-east-1:111122223333:compute-environment/ComputeEnvironmentName`.
 
 `EksConfiguration.AccessEntry.Status`  <a name="EksConfiguration.AccessEntry.Status-fn::getatt"></a>
-The current status of the compute environment (for example, `CREATING` or `VALID`).
+The observed state of the AWS Batch-managed Amazon EKS access entry on the cluster (`ACTIVE` or `INACTIVE`).
 
 ## Examples
 <a name="aws-resource-batch-computeenvironment--examples"></a>

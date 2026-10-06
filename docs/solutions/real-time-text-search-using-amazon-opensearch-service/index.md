@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/real-time-text-search-using-am
 title: 'Guidance for Real-Time Text Search Using Amazon OpenSearch Service'
 canonical_url: https://docs.aws.amazon.com/solutions/real-time-text-search-using-amazon-opensearch-service/
 source: aws-documentation
-generated_on: 2026-10-02
+generated_on: 2026-10-05
 ---
 
 # Guidance for Real-Time Text Search Using Amazon OpenSearch Service
