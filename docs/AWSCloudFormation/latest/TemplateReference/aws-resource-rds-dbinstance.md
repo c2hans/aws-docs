@@ -716,6 +716,8 @@ Valid Values:
 +  `sqlserver-se`
 +  `sqlserver-ex`
 +  `sqlserver-web`
++ `sqlserver-dev-ee` (for RDS for SQL Server Developer Edition with Enterprise Edition capabilities)
++ `sqlserver-dev-se` (for RDS for SQL Server Developer Edition with Standard Edition capabilities)
 *Required*: Conditional
 *Type*: String
 *Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)

@@ -185,17 +185,17 @@ To make the most of your Bedrock Builder deployment:
 
 The Bedrock Builder CDK application simplifies the deployment and management of secure Bedrock Agents. By automating the configuration process and providing flexible integration options, you can focus on building generative AI solutions that use your platform’s governed data assets rather than managing infrastructure.
 
-### GAIA v2 Chatbot Backend
-<a name="gaia-v2-chatbot-backend"></a>
+### GenAI Chatbot v2
+<a name="genai-chatbot-v2"></a>
 
-The Generative AI Accelerator v2 (`@aws-mdaa/gaia-v2`) module deploys an authenticated GenAI chatbot backend. It replaces GAIA v1, which is deprecated and scheduled for removal in v1.9.0. GAIA v2 introduces:
+The GenAI Chatbot v2 (`@aws-mdaa/gaia-v2`) module deploys an authenticated GenAI chatbot backend. It replaces GAIA v1 (`@aws-mdaa/gaia` and `@aws-mdaa/gaia-l3-construct`), which was removed from the MDAA repository in v1.9.0. GAIA v2 introduces:
 + AppSync Events API for real-time bidirectional streaming, fronted by a Cognito User Pool with optional external OIDC (for example, Microsoft Entra ID)
 + Pluggable data source model — exactly one of Bedrock Knowledge Base RAG, direct Bedrock model invocation with streaming, or a customer-provided Lambda
 + Optional client and admin CloudFront UIs with custom-domain and ACM certificate support
 + Chat history, feedback, and service-interruption banner backed by KMS-encrypted DynamoDB tables
 + WAF protection (regional and global), VPC-attached Lambda execution, and synth-time validation of misconfigurations
 
-Existing GAIA v1 deployments continue to function but will not receive new features. See the `MIGRATION_TO_V2.md` in the `gaia-app` package for migration guidance.
+The previously published `@aws-mdaa/gaia@1.8.1` and `@aws-mdaa/gaia-l3-construct@1.8.1` packages remain available on the npm registry, marked deprecated, so existing deployments can continue to build while migrating; new features land in v2 only. See [Migrating from GAIA v1 to GAIA v2](troubleshooting.md#gaia-v1-to-v2-migration) for migration guidance.
 
 ### Data Protection on AgentCore Runtime
 <a name="data-protection-on-agentcore-runtime"></a>

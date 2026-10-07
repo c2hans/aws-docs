@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/building-custom-chatbots-for-o
 title: 'Guidance for Building Custom Chatbots for Order Recommendations Using Agents for Amazon Bedrock'
 canonical_url: https://docs.aws.amazon.com/solutions/building-custom-chatbots-for-order-recommendations-using-agents-for-amazon-bedrock/
 source: aws-documentation
-generated_on: 2026-10-05
+generated_on: 2026-10-06
 ---
 
 # Guidance for Building Custom Chatbots for Order Recommendations Using Agents for Amazon Bedrock

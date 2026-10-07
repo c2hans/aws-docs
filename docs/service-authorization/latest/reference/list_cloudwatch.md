@@ -283,6 +283,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   PutLogAlarm  **
   - **SDK client:** cloudwatch
+  - **IAM action:**  [cloudwatch:ListTagsForResource](#list_cloudwatch-action-ListTagsForResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** List
   - **IAM action:**  [cloudwatch:PutLogAlarm](#list_cloudwatch-action-PutLogAlarm)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [cloudwatch:TagResource](#list_cloudwatch-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** cloudwatch.amazonaws.com / **Access level:** Write

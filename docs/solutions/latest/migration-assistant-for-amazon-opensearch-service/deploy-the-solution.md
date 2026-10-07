@@ -45,39 +45,25 @@ curl -sL -o aws-bootstrap.sh \
   && chmod +x aws-bootstrap.sh
 ```
 
-Run `./aws-bootstrap.sh --help` to see every available flag for the version you downloaded.
-
 ### Bootstrap flag reference
 <a name="bootstrap-flag-reference"></a>
 
-The flags below cover the most common cases. The script always installs the matching Helm chart and Amazon CloudWatch dashboards after the AWS CloudFormation stack succeeds.
+The following table highlights the flags most users need first:
 
-| Group | Flag | Purpose |
+| Group | Flag | Typical use |
 | --- | --- | --- |
-|  **Mode (one required)**  |  `--deploy-create-vpc-cfn`  | Create a new VPC and Amazon EKS cluster |
-|  |  `--deploy-import-vpc-cfn`  | Reuse an existing VPC. Requires `--vpc-id` and `--subnet-ids`  |
-|  |  `--skip-cfn-deploy`  | Skip AWS CloudFormation. Use when the stack already exists and you only want to re-bootstrap the cluster |
-|  **Identity**  |  `--stack-name <name>`  | AWS CloudFormation stack name (required with `--deploy-*-cfn`) |
-|  |  `--stage <name>`  | Short label for cluster and resource names. Defaults to `dev`  |
-|  |  `--region <region>`  | AWS Region |
-|  |  `--vpc-id <id>`  | Existing VPC ID (with `--deploy-import-vpc-cfn`) |
-|  |  `--subnet-ids <id1,id2>`  | Comma-separated subnets in different Availability Zones (with `--deploy-import-vpc-cfn`) |
-|  **Versioning**  |  `--version <tag>`  | Pin to a specific release version. Use this for reproducible deployments. See the [Migration Assistant documentation](https://docs.aws.amazon.com/solutions/migration-assistant-for-amazon-opensearch-service/) for available versions. |
-|  |  `--build`  | Build all artifacts from source (requires a repository checkout). Mutually exclusive with `--version`  |
-|  **Networking**  |  `--create-vpc-endpoints`  | Create the seven VPC endpoints needed for isolated subnets (Amazon S3, Amazon ECR API, Amazon ECR Docker, Amazon CloudWatch Logs, Amazon EFS, AWS STS, Amazon EKS Auth) |
-|  |  `--use-public-images`  | Skip mirroring images into private Amazon ECR. Use only when the cluster has internet access and you do not want a private mirror |
-|  |  `--ma-images-source <registry>`  | Copy Migration Assistant images from another Amazon ECR registry. Useful when images were built on a separate cluster with internet access |
-|  **Access**  |  `--eks-access-principal-arn <arn>`  | Grant a CI role or teammate cluster-admin access. Combine with `--skip-cfn-deploy --skip-console-exec` to grant access without redeploying |
-|  |  `--kubectl-context <name>`  | Set a custom alias for the kubectl context (defaults to the Amazon EKS cluster name) |
-|  |  `--skip-setting-k8s-context`  | Don’t switch your active kubectl context to the new cluster |
-|  |  `--skip-console-exec`  | Don’t auto-exec into the Migration Console pod when the script finishes |
-|  **TLS (Capture proxy)**  |  `--tls-mode none`  | Do not enable AWS Private CA integration. The workflow still provisions self-signed proxy certificates by default; set a proxy’s `tls.mode` to `plaintext` only when you intentionally want no proxy TLS. |
-|  |  `--tls-mode self-signed`  | Use the default cert-manager-issued self-signed certificate path for capture proxy TLS |
-|  |  `--tls-mode pca-existing --pca-arn <arn>`  | Use an existing AWS Private CA |
-|  |  `--tls-mode pca-create`  | Create a new AWS Private CA via ACK |
-|  **Helm**  |  `--namespace <name>`  | Override the Migration Assistant namespace (default: `ma`) |
-|  |  `--helm-values <path>`  | Extra values file for the Helm install — for example, to customize `workloadsNodePool.architectures`  |
-|  |  `--use-general-node-pool`  | Use the Amazon EKS Auto Mode general-purpose pool instead of the production Karpenter NodePool |
+|  **Help**  |  ** `--help` **  |  **Show all of the options, including those not shown here**  |
+| Mode |  `--deploy-create-vpc-cfn`  | Create a new VPC and Amazon EKS cluster |
+|  |  `--deploy-import-vpc-cfn`  | Reuse an existing VPC with `--vpc-id` and `--subnet-ids`  |
+|  |  `--skip-cfn-deploy`  | Re-bootstrap an existing cluster without rerunning AWS CloudFormation |
+| Identity |  `--stack-name <name>`  | Set the AWS CloudFormation stack name for `--deploy-*-cfn`  |
+|  |  `--stage <name>`  | Set the environment label used in resource names |
+|  |  `--region <region>`  | Choose the AWS Region |
+| Networking |  `--vpc-id <id>`  | Identify the existing VPC to reuse |
+|  |  `--subnet-ids <id1,id2>`  | Provide subnets in different Availability Zones |
+| Access |  `--grant-eks-access-only`  | Grant access to an existing cluster and exit |
+|  |  `--eks-access-principal-arn <arn>`  | Specify the IAM principal to grant cluster-admin access |
+| Versioning |  `--version <tag>`  | Pin to a specific published release for reproducible deployments |
 
 ## Step 2: Deploy into a new or existing VPC
 <a name="step-2-deploy"></a>
@@ -233,18 +219,30 @@ If you prefer to manage VPC endpoints with another tool, omit `--create-vpc-endp
 ## Grant kubectl access to a CI role or teammate
 <a name="grant-additional-access"></a>
 
-You can run the bootstrap script in access-only mode after the stack is already deployed:
+After the cluster is already bootstrapped, run the script in grant-only mode to add a second admin principal:
 
 ```
 ./aws-bootstrap.sh \
-  --skip-cfn-deploy \
+  --grant-eks-access-only \
   --eks-access-principal-arn arn:aws:iam::123456789012:role/MyCIRole \
   --stage dev \
-  --region us-east-2 \
-  --skip-console-exec
+  --region us-east-2
 ```
 
-This grants the principal cluster-admin access to the existing Amazon EKS cluster without redeploying anything else.
+This applies the Amazon EKS access entry and policy association for the principal, then exits. It does not redeploy AWS CloudFormation, mirror images, run Helm, or update your `kubeconfig`, and it skips the `jq`, `kubectl`, and `helm` prerequisite checks.
+
+Verify the access entry from the account that owns the cluster:
+
+```
+aws eks list-access-entries \
+  --cluster-name <CLUSTER_NAME> \
+  --region <REGION>
+
+aws eks list-associated-access-policies \
+  --cluster-name <CLUSTER_NAME> \
+  --principal-arn arn:aws:iam::123456789012:role/MyCIRole \
+  --region <REGION>
+```
 
 ## Recovery if the bootstrap fails
 <a name="recovery"></a>

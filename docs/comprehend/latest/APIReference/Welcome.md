@@ -22,4 +22,4 @@ The following resources provide additional information about the Amazon Comprehe
 +  * AWS Command Line Interface *
   +  [ Amazon Comprehend CLI commands](https://docs.aws.amazon.com/cli/latest/reference/comprehend/index.html).
 
-This document was last published on October 5, 2026.
+This document was last published on October 6, 2026.

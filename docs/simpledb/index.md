@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/simpledb/index.html
 title: 'Amazon SimpleDB Documentation'
 canonical_url: https://docs.aws.amazon.com/simpledb/
 source: aws-documentation
-generated_on: 2026-10-05
+generated_on: 2026-10-06
 ---
 
 # Amazon SimpleDB Documentation

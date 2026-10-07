@@ -12,6 +12,9 @@ Amazon Bedrock provides the OpenAI Responses API on both the `bedrock-runtime` a
 | bedrock-runtime (recommended) | https://bedrock-runtime.{region}.amazonaws.com/openai/v1 | New applications and migrations when the required model and Responses API features are supported. |
 | bedrock-mantle (compatibility) | https://bedrock-mantle.{region}.api.aws/v1 | Existing applications and workloads that require Mantle-only support, such as Responses API access to GPT OSS models, background inference, or server-side tools. |
 
+**Note**
+On `bedrock-mantle`, the path prefix varies by model. Most models are served under `/v1`, as shown in the preceding table, but some are served under `/openai/v1` instead. A request that uses the wrong prefix for a model is rejected with `model `<model-id>` isn't supported on this route`. To confirm the base URL for a specific model, see the **Programmatic Access** table on its card in [Models at a glance](model-cards.md).
+
 The two endpoints don't have identical feature support. Requests on `bedrock-runtime` are always synchronous, server-side tools aren't available, and only the default project is supported. For the full comparison, see [Endpoints supported by Amazon Bedrock](endpoints.md), and for the details of each difference, see [Using the Responses API on the bedrock-runtime endpoint](#bedrock-mantle-responses-runtime).
 
 **Important**

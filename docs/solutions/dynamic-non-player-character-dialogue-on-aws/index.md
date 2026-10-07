@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/dynamic-non-player-character-d
 title: 'Guidance for Dynamic Non-Player Character (NPC) Dialogue on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/dynamic-non-player-character-dialogue-on-aws/
 source: aws-documentation
-generated_on: 2026-10-05
+generated_on: 2026-10-06
 ---
 
 # Guidance for Dynamic Non-Player Character (NPC) Dialogue on AWS

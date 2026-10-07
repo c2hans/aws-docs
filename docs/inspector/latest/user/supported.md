@@ -9,6 +9,9 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/supported.html
 +  Amazon Elastic Compute Cloud (Amazon EC2) instances
 **Note**
  For Amazon EC2 instances, Amazon Inspector can scan for package vulnerabilities in operating systems that support agent-based scanning. Amazon Inspector can also scan for package vulnerabilities in operating systems and programming languages that support hybrid scanning. Amazon Inspector does not scan for toolchain vulnerabilities. The version of the programming language compiler used to build the application introduces these vulnerabilities.
++  Machine images (AMIs) that your account owns
+**Note**
+ For machine images, Amazon Inspector can scan for operating system and programming language package vulnerabilities. For the operating systems that Amazon Inspector supports for machine image scanning, see [Supported operating systems: machine image scanning](#supported-os-ami). Amazon Inspector does not scan for toolchain vulnerabilities. The version of the programming language compiler used to build the application introduces these vulnerabilities.
 +  Container images stored in Amazon Elastic Container Registry (Amazon ECR) repositories
 **Note**
  For ECR container images, Amazon Inspector can scan for operating system and programming language package vulnerabilities. Amazon Inspector also supports hardened images provided by Chainguard, Minimus, Echo, Docker, and Red Hat. Amazon Inspector does not scan for toolchain vulnerabilities in Rust——the version of the programming language compiler used to build the application introduces these vulnerabilities.
@@ -32,104 +35,176 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/supported.html
 ## Supported operating systems
 <a name="supported-os"></a>
 
- This section lists the operating systems Amazon Inspector supports.
+ This section lists the operating systems Amazon Inspector supports. Each table specifies the advisory source and advisory status for each operating system.
+
+ The **Advisory status** column lists the vendor advisory statuses that Amazon Inspector uses to generate findings for an operating system. The column can contain the following values:
+
+Fixed
+ The vendor has released a fix for the vulnerability.
+
+Open
+ The vendor has acknowledged the vulnerability but hasn't released a fix.
+
+Active
+ The vendor is tracking the vulnerability, and a fix isn't available yet.
+
+Pending
+ The vendor is preparing a fix that hasn't been released yet.
+
+ For some operating systems, the **Advisory source** includes additional repositories:
+
+RHEL
+ The advisory source includes the BaseOS repository and the EUS, E2S, and E4S repositories. For more information, see [Red Hat Enterprise Linux Life Cycle](https://access.redhat.com/support/policy/updates/errata) on the Red Hat website.
+
+Ubuntu
+ The advisory source includes Ubuntu Pro (esm-infra and esm-apps). For more information, see [Ubuntu Security Notices](https://ubuntu.com/security/notices) and [Expanded Security Maintenance](https://ubuntu.com/security/esm) on the Ubuntu website.
 
 ### Supported operating systems: Amazon EC2 scanning
 <a name="supported-os-ec2"></a>
 
- The following table lists the operating systems Amazon Inspector supports for the scanning of Amazon EC2 instances. It specifies the vendor security advisory for each operating system and which operating systems support [agent-based scanning](https://docs.aws.amazon.com/inspector/latest/user/scanning-ec2.html#agent-based) and [agentless scanning](https://docs.aws.amazon.com/inspector/latest/user/scanning-ec2.html#agentless).
+ The following table lists the operating systems Amazon Inspector supports for the scanning of Amazon EC2 instances. It specifies the advisory source and advisory status for each operating system and which operating systems support [agent-based scanning](https://docs.aws.amazon.com/inspector/latest/user/scanning-ec2.html#agent-based) and [agentless scanning](https://docs.aws.amazon.com/inspector/latest/user/scanning-ec2.html#agentless).
 
  When using the agent-based scanning method, you configure the SSM agent to perform continuous scans on all eligible instances. Amazon Inspector recommends that you configure a version of the SSM agent that's greater than 3.2.2086.0. For more information, see [Working with the SSM Agent](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html) in the *Amazon EC2 Systems Manager User Guide*.
 
  Linux operating system detections are supported only for the default package manager repository (rpm and dpkg). Detections don't include third-party applications, extended support repositories, or optional repositories (application streams) unless otherwise specified below. Amazon Inspector scans the running kernel for vulnerabilities. For some operating systems, like Ubuntu, a reboot is required for upgrades to show in active findings.
 
-| Operating system | Version | Vendor security advisories | Agentless scan support | Agent-based scan support |
-| --- | --- | --- | --- | --- |
-| AlmaLinux | 8 | Errata CVE | Yes | Yes |
-| AlmaLinux | 9 | Errata CVE | Yes | Yes |
-| AlmaLinux | 10 | Errata CVE | Yes | Yes |
-| Amazon Linux 2023 (AL2023) | AL2023 | ALAS Errata CVE | Yes | Yes |
-| Bottlerocket | 1.7.0 and later | Errata CVE | Yes | Yes |
-| Debian Server (Bookworm) | 12 | DSA CVE | Yes | Yes |
-| Debian Server (Trixie) | 13 | DSA CVE | Yes | Yes |
-| Fedora | 43 | Errata CVE | Yes | Yes |
-| Fedora | 44 | Errata CVE | Yes | Yes |
-| Oracle Linux | 8 | Errata CVE | Yes | Yes |
-| Oracle Linux | 9 | Errata CVE | Yes | Yes |
-| Oracle Linux | 10 | Errata CVE | Yes | Yes |
-| Red Hat Enterprise Linux (RHEL) | 8 | RHEL CVE (BaseOS & EUS/E2S/E4S) | Yes | Yes |
-| Red Hat Enterprise Linux (RHEL) | 9 | RHEL CVE (BaseOS & EUS/E2S/E4S) | Yes | Yes |
-| Red Hat Enterprise Linux (RHEL) | 10 | RHEL CVE (BaseOS & EUS/E2S/E4S) | Yes | Yes |
-| Rocky Linux | 8 | Errata CVE | Yes | Yes |
-| Rocky Linux | 9 | Errata CVE | Yes | Yes |
-| Rocky Linux | 10 | Errata CVE | Yes | Yes |
-| SUSE Linux Enterprise Server (SLES) | 15.7 | SUSE CVE | Yes | Yes |
-| SUSE Linux Enterprise Server (SLES) | 16.0 | SUSE CVE | Yes | Yes |
-| Ubuntu (Bionic) | 18.04 | USN, Ubuntu Pro (esm-infra & esm-apps) | Yes | Yes |
-| Ubuntu (Focal) | 20.04 | USN, Ubuntu Pro (esm-infra & esm-apps) | Yes | Yes |
-| Ubuntu (Jammy) | 22.04 | USN, Ubuntu Pro (esm-infra & esm-apps) | Yes | Yes |
-| Ubuntu (Noble) | 24.04 | USN, Ubuntu Pro (esm-infra & esm-apps) | Yes | Yes |
-| Ubuntu (Resolute) | 26.04 | USN, Ubuntu Pro (esm-infra & esm-apps) | Yes | Yes |
-| Windows Server | 2016 | MSKB | Yes | Yes |
-| Windows Server | 2019 | MSKB | Yes | Yes |
-| Windows Server | 2022 | MSKB | Yes | Yes |
-| Windows Server | 2025 | MSKB | Yes | Yes |
-| macOS (Mojave) | 10.14 | APPLE-SA | No | Yes |
-| macOS (Catalina) | 10.15 | APPLE-SA | No | Yes |
-| macOS (Big Sur) | 11 | APPLE-SA | No | Yes |
-| macOS (Monterey) | 12 | APPLE-SA | No | Yes |
-| macOS (Ventura) | 13 | APPLE-SA | No | Yes |
-| macOS (Sonoma) | 14 | APPLE-SA | No | Yes |
-| macOS (Sequoia) | 15 | APPLE-SA | No | Yes |
-| macOS (Tahoe) | 26 | APPLE-SA | No | Yes |
+ For definitions of the advisory status values and details about advisory sources, see [Supported operating systems](#supported-os).
+
+| Operating system | Version | Advisory source | Advisory status | Agentless scan support | Agent-based scan support |
+| --- | --- | --- | --- | --- | --- |
+| AlmaLinux | 8 | CVE Errata | Fixed | Yes | Yes |
+| AlmaLinux | 9 | CVE Errata | Fixed | Yes | Yes |
+| AlmaLinux | 10 | CVE Errata | Fixed | Yes | Yes |
+| Amazon Linux 2023 (AL2023) | AL2023 | CVE Errata | Fixed | Yes | Yes |
+| Bottlerocket | 1.7.0 and later | CVE Errata | Fixed | Yes | Yes |
+| Debian Server (Bookworm) | 12 | DSA CVE | Fixed, Open | Yes | Yes |
+| Debian Server (Trixie) | 13 | DSA CVE | Fixed, Open | Yes | Yes |
+| Fedora | 43 | CVE Errata | Fixed | Yes | Yes |
+| Fedora | 44 | CVE Errata | Fixed | Yes | Yes |
+| Oracle Linux | 8 | CVE Errata | Fixed | Yes | Yes |
+| Oracle Linux | 9 | CVE Errata | Fixed | Yes | Yes |
+| Oracle Linux | 10 | CVE Errata | Fixed | Yes | Yes |
+| Red Hat Enterprise Linux (RHEL) | 8 | RHEL VEX CVE | Fixed | Yes | Yes |
+| Red Hat Enterprise Linux (RHEL) | 9 | RHEL VEX CVE | Fixed | Yes | Yes |
+| Red Hat Enterprise Linux (RHEL) | 10 | RHEL VEX CVE | Fixed | Yes | Yes |
+| Rocky Linux | 8 | CVE Errata | Fixed | Yes | Yes |
+| Rocky Linux | 9 | CVE Errata | Fixed | Yes | Yes |
+| Rocky Linux | 10 | CVE Errata | Fixed | Yes | Yes |
+| SUSE Linux Enterprise Server (SLES) | 15.7 | CVE Errata | Fixed | Yes | Yes |
+| SUSE Linux Enterprise Server (SLES) | 16.0 | CVE Errata | Fixed | Yes | Yes |
+| Ubuntu (Bionic) | 18.04 | USN | Fixed, Active, Pending | Yes | Yes |
+| Ubuntu (Focal) | 20.04 | USN | Fixed, Active, Pending | Yes | Yes |
+| Ubuntu (Jammy) | 22.04 | USN | Fixed, Active, Pending | Yes | Yes |
+| Ubuntu (Noble) | 24.04 | USN | Fixed, Active, Pending | Yes | Yes |
+| Ubuntu (Resolute) | 26.04 | USN | Fixed, Active, Pending | Yes | Yes |
+| Windows Server | 2016 | MSKB | Fixed | Yes | Yes |
+| Windows Server | 2019 | MSKB | Fixed | Yes | Yes |
+| Windows Server | 2022 | MSKB | Fixed | Yes | Yes |
+| Windows Server | 2025 | MSKB | Fixed | Yes | Yes |
+| macOS (Mojave) | 10.14 | APPLE-SA | Fixed | No | Yes |
+| macOS (Catalina) | 10.15 | APPLE-SA | Fixed | No | Yes |
+| macOS (Big Sur) | 11 | APPLE-SA | Fixed | No | Yes |
+| macOS (Monterey) | 12 | APPLE-SA | Fixed | No | Yes |
+| macOS (Ventura) | 13 | APPLE-SA | Fixed | No | Yes |
+| macOS (Sonoma) | 14 | APPLE-SA | Fixed | No | Yes |
+| macOS (Sequoia) | 15 | APPLE-SA | Fixed | No | Yes |
+| macOS (Tahoe) | 26 | APPLE-SA | Fixed | No | Yes |
+
+### Supported operating systems: machine image scanning
+<a name="supported-os-ami"></a>
+
+ The following table lists the operating systems Amazon Inspector supports for the scanning of machine images (AMIs). It specifies the advisory source and advisory status for each operating system.
+
+ Machine image scanning doesn't use an agent. Amazon Inspector reads the software inventory directly from the Amazon EBS snapshots that back the image, so you don't need to install the SSM Agent or launch an instance from the image. For more information, see [Scanning machine images with Amazon Inspector](scanning-machine-images.md).
+
+ Linux operating system detections are supported only for the default package manager repository (rpm and dpkg). Detections don't include third-party applications, extended support repositories, or optional repositories (application streams) unless otherwise specified below.
+
+**Note**
+ Amazon Inspector doesn't support machine image scanning for macOS. Amazon Inspector reports a scan status of `UNSUPPORTED_OS` for a machine image that runs an operating system that isn't listed in the following table, and for a machine image whose snapshots use a configuration that Amazon Inspector can't read, such as Logical Volume Manager (LVM).
+
+ For definitions of the advisory status values and details about advisory sources, see [Supported operating systems](#supported-os).
+
+| Operating system | Version | Advisory source | Advisory status |
+| --- | --- | --- | --- |
+| AlmaLinux | 8 | CVE Errata | Fixed |
+| AlmaLinux | 9 | CVE Errata | Fixed |
+| AlmaLinux | 10 | CVE Errata | Fixed |
+| Amazon Linux 2023 (AL2023) | AL2023 | CVE Errata | Fixed |
+| Bottlerocket | 1.7.0 and later | CVE Errata | Fixed |
+| Debian Server (Bookworm) | 12 | DSA CVE | Fixed, Open |
+| Debian Server (Trixie) | 13 | DSA CVE | Fixed, Open |
+| Fedora | 43 | CVE Errata | Fixed |
+| Fedora | 44 | CVE Errata | Fixed |
+| Oracle Linux | 8 | CVE Errata | Fixed |
+| Oracle Linux | 9 | CVE Errata | Fixed |
+| Oracle Linux | 10 | CVE Errata | Fixed |
+| Red Hat Enterprise Linux (RHEL) | 8 | RHEL VEX CVE | Fixed |
+| Red Hat Enterprise Linux (RHEL) | 9 | RHEL VEX CVE | Fixed |
+| Red Hat Enterprise Linux (RHEL) | 10 | RHEL VEX CVE | Fixed |
+| Rocky Linux | 8 | CVE Errata | Fixed |
+| Rocky Linux | 9 | CVE Errata | Fixed |
+| Rocky Linux | 10 | CVE Errata | Fixed |
+| SUSE Linux Enterprise Server (SLES) | 15.7 | CVE Errata | Fixed |
+| SUSE Linux Enterprise Server (SLES) | 16.0 | CVE Errata | Fixed |
+| Ubuntu (Bionic) | 18.04 | USN | Fixed, Active, Pending |
+| Ubuntu (Focal) | 20.04 | USN | Fixed, Active, Pending |
+| Ubuntu (Jammy) | 22.04 | USN | Fixed, Active, Pending |
+| Ubuntu (Noble) | 24.04 | USN | Fixed, Active, Pending |
+| Ubuntu (Resolute) | 26.04 | USN | Fixed, Active, Pending |
+| Windows Server | 2016 | MSKB | Fixed |
+| Windows Server | 2019 | MSKB | Fixed |
+| Windows Server | 2022 | MSKB | Fixed |
+| Windows Server | 2025 | MSKB | Fixed |
 
 ### Supported operating systems: Amazon ECR scanning with Amazon Inspector
 <a name="supported-os-ecr"></a>
 
- The following table lists the operating systems Amazon Inspector supports for the scanning of container images in Amazon ECR repositories. It also specifies the vendor security advisory for each operating system.
+ The following table lists the operating systems Amazon Inspector supports for the scanning of container images in Amazon ECR repositories. It also specifies the advisory source and advisory status for each operating system.
 
-| Operating system | Version | Vendor security advisories | Basic scanning | Enhanced scanning |
-| --- | --- | --- | --- | --- |
-| AlmaLinux | 8 | Errata CVE | Yes | Yes |
-| AlmaLinux | 9 | Errata CVE | Yes | Yes |
-| AlmaLinux | 10 | Errata CVE | Yes | Yes |
-| Alpine Linux | 3.21 | Errata CVE | Yes | Yes |
-| Alpine Linux | 3.22 | Errata CVE | Yes | Yes |
-| Alpine Linux | 3.23 | Errata CVE | Yes | Yes |
-| Alpine Linux | 3.24 | Errata CVE | Yes | Yes |
-| Amazon Linux 2023 (AL2023) | AL2023 | ALAS Errata CVE | Yes | Yes |
-| Azure Linux | 3 | Errata CVE | Yes | Yes |
-| BusyBox | – | MITRE CVE | Yes | Yes |
-| Chainguard | – | Errata CVE | Yes | Yes |
-| Debian Server (Bookworm) | 12 | DSA CVE | Yes | Yes |
-| Debian Server (Trixie) | 13 | DSA CVE | Yes | Yes |
-| Echo | 2 | Errata CVE | Yes | Yes |
-| Fedora | 43 | Errata CVE | Yes | Yes |
-| Fedora | 44 | Errata CVE | Yes | Yes |
-| Hummingbird OS | – | Errata CVE | Yes | No |
-| MinimOS | – | Errata CVE | Yes | Yes |
-| Oracle Linux | 8 | Errata CVE | Yes | Yes |
-| Oracle Linux | 9 | Errata CVE | Yes | Yes |
-| Oracle Linux | 10 | Errata CVE | Yes | Yes |
-| Photon OS | 4 | Errata CVE | Yes | Yes |
-| Photon OS | 5 | Errata CVE | Yes | Yes |
-| Red Hat Enterprise Linux (RHEL) | 8 | RHEL CVE (BaseOS & EUS/E2S/E4S) | Yes | Yes |
-| Red Hat Enterprise Linux (RHEL) | 9 | RHEL CVE (BaseOS & EUS/E2S/E4S) | Yes | Yes |
-| Red Hat Enterprise Linux (RHEL) | 10 | RHEL CVE (BaseOS & EUS/E2S/E4S) | Yes | Yes |
-| Rocky Linux | 8 | Errata CVE | Yes | Yes |
-| Rocky Linux | 9 | Errata CVE | Yes | Yes |
-| Rocky Linux | 10 | Errata CVE | Yes | Yes |
-| SUSE Linux Enterprise Server (SLES) | 15.7 | SUSE CVE | Yes | Yes |
-| SUSE Linux Enterprise Server (SLES) | 16.0 | SUSE CVE | Yes | Yes |
-| Ubuntu (Bionic) | 18.04 | USN, Ubuntu Pro (esm-infra & esm-apps) | Yes | Yes |
-| Ubuntu (Focal) | 20.04 | USN, Ubuntu Pro (esm-infra & esm-apps) | Yes | Yes |
-| Ubuntu (Jammy) | 22.04 | USN, Ubuntu Pro (esm-infra & esm-apps) | Yes | Yes |
-| Ubuntu (Noble) | 24.04 | USN, Ubuntu Pro (esm-infra & esm-apps) | Yes | Yes |
-| Ubuntu (Resolute) | 26.04 | USN, Ubuntu Pro (esm-infra & esm-apps) | Yes | Yes |
-| Windows Server | 2019 | MSKB | Yes | No |
-| Windows Server | 2022 | MSKB | Yes | No |
-| Windows Server | 2025 | MSKB | Yes | No |
-| Wolfi | – | Errata CVE | Yes | Yes |
+ For definitions of the advisory status values and details about advisory sources, see [Supported operating systems](#supported-os).
+
+| Operating system | Version | Advisory source | Advisory status | Basic scanning | Enhanced scanning |
+| --- | --- | --- | --- | --- | --- |
+| AlmaLinux | 8 | CVE Errata | Fixed | Yes | Yes |
+| AlmaLinux | 9 | CVE Errata | Fixed | Yes | Yes |
+| AlmaLinux | 10 | CVE Errata | Fixed | Yes | Yes |
+| Alpine Linux | 3.21 | CVE Errata | Fixed | Yes | Yes |
+| Alpine Linux | 3.22 | CVE Errata | Fixed | Yes | Yes |
+| Alpine Linux | 3.23 | CVE Errata | Fixed | Yes | Yes |
+| Alpine Linux | 3.24 | CVE Errata | Fixed | Yes | Yes |
+| Amazon Linux 2023 (AL2023) | AL2023 | CVE Errata | Fixed | Yes | Yes |
+| Azure Linux | 3 | CVE Errata | Fixed | Yes | Yes |
+| BusyBox | – | MITRE CVE | Fixed | Yes | Yes |
+| Chainguard | – | OSV | Fixed | Yes | Yes |
+| Debian Server (Bookworm) | 12 | DSA CVE | Fixed, Open | Yes | Yes |
+| Debian Server (Trixie) | 13 | DSA CVE | Fixed, Open | Yes | Yes |
+| Echo | 2 | CVE Errata | Fixed | Yes | Yes |
+| Fedora | 43 | CVE Errata | Fixed | Yes | Yes |
+| Fedora | 44 | CVE Errata | Fixed | Yes | Yes |
+| Hummingbird OS | – | RHEL VEX CVE | Fixed | Yes | No |
+| MinimOS | – | CVE Errata | Fixed | Yes | Yes |
+| Oracle Linux | 8 | CVE Errata | Fixed | Yes | Yes |
+| Oracle Linux | 9 | CVE Errata | Fixed | Yes | Yes |
+| Oracle Linux | 10 | CVE Errata | Fixed | Yes | Yes |
+| Photon OS | 4 | CVE Errata | Fixed | Yes | Yes |
+| Photon OS | 5 | CVE Errata | Fixed | Yes | Yes |
+| Red Hat Enterprise Linux (RHEL) | 8 | RHEL VEX CVE | Fixed | Yes | Yes |
+| Red Hat Enterprise Linux (RHEL) | 9 | RHEL VEX CVE | Fixed | Yes | Yes |
+| Red Hat Enterprise Linux (RHEL) | 10 | RHEL VEX CVE | Fixed | Yes | Yes |
+| Rocky Linux | 8 | CVE Errata | Fixed | Yes | Yes |
+| Rocky Linux | 9 | CVE Errata | Fixed | Yes | Yes |
+| Rocky Linux | 10 | CVE Errata | Fixed | Yes | Yes |
+| SUSE Linux Enterprise Server (SLES) | 15.7 | CVE Errata | Fixed | Yes | Yes |
+| SUSE Linux Enterprise Server (SLES) | 16.0 | CVE Errata | Fixed | Yes | Yes |
+| Ubuntu (Bionic) | 18.04 | USN | Fixed, Active, Pending | Yes | Yes |
+| Ubuntu (Focal) | 20.04 | USN | Fixed, Active, Pending | Yes | Yes |
+| Ubuntu (Jammy) | 22.04 | USN | Fixed, Active, Pending | Yes | Yes |
+| Ubuntu (Noble) | 24.04 | USN | Fixed, Active, Pending | Yes | Yes |
+| Ubuntu (Resolute) | 26.04 | USN | Fixed, Active, Pending | Yes | Yes |
+| Windows Server | 2019 | MSKB | Fixed | Yes | No |
+| Windows Server | 2022 | MSKB | Fixed | Yes | No |
+| Windows Server | 2025 | MSKB | Fixed | Yes | No |
+| Wolfi | – | OSV | Fixed | Yes | Yes |
 
 ### Supported operating systems: CIS scanning
 <a name="supported-os-cis"></a>

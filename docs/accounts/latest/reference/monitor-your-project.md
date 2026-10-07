@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/accounts/latest/reference/monitor-your-project.html
 ---
 
-# Monitor your project
+# Monitor your project using AWS CloudTrail
 <a name="monitor-your-project"></a>
 
 **Warning**
@@ -87,7 +87,7 @@ To connect the `onBehalfOf` parameter to a team member using the AWS CLI:
 1. Run the following command to describe the team member who corresponds to the `onBehalfOf` parameter.
 
    ```
-   aws identitystore describe-user --user-id 00000-e00f-000-000-0000000 --region us-east-1 --identity-store-id d-000000
+   aws identitystore describe-user --user-id {{00000-e00f-000-000-0000000}} --region us-east-1 --identity-store-id {{d-000000}}
    ```
 
    The output will look like the following:

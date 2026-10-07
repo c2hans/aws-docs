@@ -8,6 +8,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 <a name="AWS_IVS"></a>
 
 **Resource types**
++ [AWS::IVS::AdConfiguration](aws-resource-ivs-adconfiguration.md)
 + [AWS::IVS::Channel](aws-resource-ivs-channel.md)
 + [AWS::IVS::EncoderConfiguration](aws-resource-ivs-encoderconfiguration.md)
 + [AWS::IVS::IngestConfiguration](aws-resource-ivs-ingestconfiguration.md)

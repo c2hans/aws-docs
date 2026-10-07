@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/recovery-plans-canc
 
 Canceling an execution stops AWS Elastic Disaster Recovery from starting any more steps.
 
+To cancel an execution with the AWS CLI, use the `cancel-recovery-plan-execution` command and pass the ARN of the execution that you want to cancel:
+
 ```
 aws drs cancel-recovery-plan-execution \
     --recovery-plan-execution-arn {{EXECUTION_ARN}}

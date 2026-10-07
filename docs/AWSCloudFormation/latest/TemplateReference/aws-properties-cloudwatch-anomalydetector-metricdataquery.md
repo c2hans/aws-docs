@@ -71,7 +71,7 @@ Within each MetricDataQuery object, you must specify either `Expression` or `Met
 *Required*: No
 *Type*: String
 *Minimum*: `1`
-*Maximum*: `2048`
+*Maximum*: `1024`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Id`  <a name="cfn-cloudwatch-anomalydetector-metricdataquery-id"></a>

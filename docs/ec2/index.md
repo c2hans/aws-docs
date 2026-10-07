@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/ec2/index.html
 title: 'Amazon Elastic Compute Cloud Documentation'
 canonical_url: https://docs.aws.amazon.com/ec2/
 source: aws-documentation
-generated_on: 2026-10-05
+generated_on: 2026-10-06
 ---
 
 # Amazon Elastic Compute Cloud Documentation

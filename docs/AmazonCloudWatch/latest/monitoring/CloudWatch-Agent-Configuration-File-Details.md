@@ -1018,6 +1018,11 @@ The `traces` section can include the following fields:
 ## CloudWatch agent configuration file: OpenTelemetry section
 <a name="CloudWatch-Agent-Configuration-File-OpenTelemetrysection"></a>
 
+The `opentelemetry` section depends on the agent's OTLP receiver, which was introduced in CloudWatch agent version 1.300070.0. Earlier versions do not support it. To check the installed version, read `/opt/aws/amazon-cloudwatch-agent/bin/CWAGENT_VERSION`.
+
+**Note**
+On Amazon Linux 2023, the `yum install amazon-cloudwatch-agent` and `dnf install amazon-cloudwatch-agent` commands install a version that meets this minimum. If your package repository offers a version earlier than 1.300070.0, install the agent from the CloudWatch agent download instead. For more information, see [Collect metrics, logs, and traces using the CloudWatch agent](Install-CloudWatch-Agent.md).
+
 The `opentelemetry` section can include the following fields:
 + `cluster_name` – Optional. Specifies the name of the Kubernetes cluster. The agent applies this value to all telemetry collected under the `opentelemetry` section.
 + `resource_attributes` – Optional. Specifies additional resource attributes to add to every metric, log, and trace collected under the `opentelemetry` section. This field is an object of string key-value pairs. You can specify up to 30 attributes. The maximum length of each value is 1024 characters. For attributes that the agent detects automatically, such as `cloud.region`, `host.id`, and `cloud.provider`, the detected value takes precedence. Use this field for attributes that the agent does not detect on its own.

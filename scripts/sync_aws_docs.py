@@ -5,8 +5,10 @@ mirror under docs/, and commit any changes to git.
 
 Strategy per page:
   1. Fetch the site's native Markdown export (<path>.md, Content-Type: text/markdown).
-     Every public docs.aws.amazon.com page serves one; a page that doesn't is
-     logged as an error rather than scraped from HTML.
+     Every public docs.aws.amazon.com page serves one, except redirect stubs
+     whose HTML is only a meta refresh to another site (e.g. the doxygen trees
+     under embedded-csdk/*/lib-ref); those are skipped. Any other page without
+     an export is logged as an error rather than scraped from HTML.
   2. Normalize whitespace, so re-running the script against unchanged upstream
      content always reproduces byte-identical output (idempotent -> empty
      `git status`).
@@ -33,6 +35,7 @@ import time
 from contextlib import contextmanager
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass, field
+from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urljoin, urlparse, urlunparse
 from xml.etree import ElementTree
@@ -253,7 +256,7 @@ class FetchResult:
     url: str
     local_path: Path
     markdown: str | None
-    source: str  # "md" | "cached" | "error" | "blocked"
+    source: str  # "md" | "cached" | "offsite" | "gone" | "error" | "blocked"
     etag: str | None = None
     last_modified: str | None = None
     error: str | None = None
@@ -304,6 +307,34 @@ def markdown_url(url: str) -> str:
     return urlunparse(parsed._replace(path=parsed.path[:-5] + ".md"))
 
 
+class _MetaRefreshParser(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.target: str | None = None
+
+    def handle_starttag(self, tag, attrs):
+        if tag != "meta" or self.target is not None:
+            return
+        attrs = {k.lower(): (v or "") for k, v in attrs}
+        if attrs.get("http-equiv", "").lower() != "refresh":
+            return
+        m = re.search(r"url\s*=\s*['\"]?([^'\">\s]+)", attrs.get("content", ""), re.I)
+        if m:
+            self.target = m.group(1)
+
+
+def offsite_refresh_target(html: str, page_url: str) -> str | None:
+    """Return the target if the page is a meta-refresh stub pointing off docs.aws.amazon.com."""
+    parser = _MetaRefreshParser()
+    parser.feed(html)
+    if parser.target is None:
+        return None
+    target = urljoin(page_url, parser.target)
+    if urlparse(target).hostname == urlparse(BASE).hostname:
+        return None
+    return target
+
+
 def sha256(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
@@ -350,6 +381,33 @@ def fetch_page(url: str, timeout: float, cache_entry: dict | None) -> FetchResul
             etag=resp.headers.get("ETag"),
             last_modified=resp.headers.get("Last-Modified"),
         )
+
+    if resp.status_code == 404:
+        # Some trees (e.g. embedded-csdk/*/lib-ref doxygen output) are listed in
+        # the sitemaps but every page is a stub that meta-refreshes to another
+        # site and has no .md export. There is no AWS content to mirror there.
+        try:
+            html_resp = session().get(url, timeout=timeout)
+        except requests.RequestException as e:
+            return FetchResult(url, local_path, None, "error", error=str(e))
+        if urlparse(html_resp.url).hostname != urlparse(BASE).hostname:
+            target = html_resp.url
+        elif html_resp.status_code == 200:
+            target = offsite_refresh_target(html_resp.text, html_resp.url)
+        else:
+            target = None
+        if target:
+            return FetchResult(
+                url, local_path, None, "offsite", error=f"redirect stub to {target}"
+            )
+        if html_resp.status_code in {404, 410}:
+            # Dead sitemap entry (e.g. freertos/latest/lib-ref lists broken
+            # relative paths like .../lib-ref/embedded-csdk/...): neither the
+            # page nor its export exists.
+            return FetchResult(
+                url, local_path, None, "gone",
+                error=f"page itself returns HTTP {html_resp.status_code}",
+            )
 
     return FetchResult(
         url,
@@ -519,6 +577,8 @@ class Stats:
     written: int = 0
     unchanged: int = 0
     cached_skip: int = 0
+    offsite: int = 0
+    gone: int = 0
     errors: int = 0
     lock: threading.Lock = field(default_factory=threading.Lock)
 
@@ -544,7 +604,7 @@ def process_url(
                 cache_entry = None
     result = fetch_page(url, timeout, cache_entry)
 
-    if result.source in {"error", "blocked"}:
+    if result.source in {"error", "blocked", "offsite", "gone"}:
         return result.source, f"{url}: {result.error}"
 
     if result.source == "cached":
@@ -752,6 +812,8 @@ def run_sync(args: argparse.Namespace) -> int:
 
     stats = Stats(total=len(all_pages))
     changed_urls: list[str] = []
+    offsite_urls: set[str] = set()
+    gone_urls: set[str] = set()
     t0 = time.time()
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
         futures = {
@@ -790,16 +852,35 @@ def run_sync(args: argparse.Namespace) -> int:
                 stats.bump(unchanged=1)
             elif kind == "cached_skip":
                 stats.bump(cached_skip=1)
+            elif kind == "offsite":
+                stats.bump(offsite=1)
+                offsite_urls.add(futures[fut])
+            elif kind == "gone":
+                stats.bump(gone=1)
+                gone_urls.add(futures[fut])
             done += 1
             if done % 200 == 0 or done == len(all_pages):
                 elapsed = time.time() - t0
                 print(
                     f"  {done}/{len(all_pages)} done "
                     f"(written={stats.written} unchanged={stats.unchanged} "
-                    f"cached={stats.cached_skip} errors={stats.errors}) "
+                    f"cached={stats.cached_skip} offsite={stats.offsite} gone={stats.gone} "
+                    f"errors={stats.errors}) "
                     f"[{elapsed:.0f}s]",
                     file=sys.stderr,
                 )
+
+    if offsite_urls:
+        print(
+            f"Skipped {len(offsite_urls)} page(s) that only redirect off "
+            "docs.aws.amazon.com (no .md export).",
+            file=sys.stderr,
+        )
+    if gone_urls:
+        print(
+            f"Skipped {len(gone_urls)} sitemap entr(y/ies) whose page returns 404/410.",
+            file=sys.stderr,
+        )
 
     changed_paths = [url_to_local_path(url) for url in changed_urls]
 
@@ -814,9 +895,11 @@ def run_sync(args: argparse.Namespace) -> int:
     )
     removed_paths: list[Path] = []
     if complete_full_run:
+        # Off-site stubs and dead entries have no mirror; any file left from
+        # before a page became one is stale.
         removed_paths, stale_errors = remove_stale_pages(
             manifest,
-            set(all_pages),
+            set(all_pages) - offsite_urls - gone_urls,
             args.dry_run,
             lambda url: is_english(url) and not is_sdk_reference(url),
         )
@@ -830,7 +913,7 @@ def run_sync(args: argparse.Namespace) -> int:
     print(
         f"\nDone. total={stats.total} written={stats.written} "
         f"unchanged={stats.unchanged} cached_skip={stats.cached_skip} "
-        f"errors={stats.errors} elapsed={time.time()-t0:.0f}s",
+        f"offsite_skip={stats.offsite} gone_skip={stats.gone} errors={stats.errors} elapsed={time.time()-t0:.0f}s",
         file=sys.stderr,
     )
 

@@ -74,6 +74,11 @@ Export failure reason description.
 Type: String
 Required: No
 
+ ** FilterSpecification **   <a name="DDB-Type-ExportDescription-FilterSpecification"></a>
+The filter criteria applied to the export. When present, only items that match the specified key conditions and filter expressions are included in the export output.
+Type: [FilterSpecification](API_FilterSpecification.md) object
+Required: No
+
  ** IncrementalExportSpecification **   <a name="DDB-Type-ExportDescription-IncrementalExportSpecification"></a>
 Optional object containing the parameters specific to an incremental export.
 Type: [IncrementalExportSpecification](API_IncrementalExportSpecification.md) object

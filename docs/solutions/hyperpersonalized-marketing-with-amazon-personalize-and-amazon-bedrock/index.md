@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/hyperpersonalized-marketing-wi
 title: 'Guidance for Hyperpersonalized Marketing with Amazon Personalize and Amazon Bedrock'
 canonical_url: https://docs.aws.amazon.com/solutions/hyperpersonalized-marketing-with-amazon-personalize-and-amazon-bedrock/
 source: aws-documentation
-generated_on: 2026-10-05
+generated_on: 2026-10-06
 ---
 
 # Guidance for Hyperpersonalized Marketing with Amazon Personalize and Amazon Bedrock

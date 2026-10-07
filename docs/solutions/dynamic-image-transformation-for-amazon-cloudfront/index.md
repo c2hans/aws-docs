@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com//solutions/dynamic-image-transformation-
 title: 'Dynamic Image Transformation for Amazon CloudFront'
 canonical_url: https://docs.aws.amazon.com/solutions/dynamic-image-transformation-for-amazon-cloudfront/
 source: aws-documentation
-generated_on: 2026-10-05
+generated_on: 2026-10-06
 ---
 
 # Dynamic Image Transformation for Amazon CloudFront

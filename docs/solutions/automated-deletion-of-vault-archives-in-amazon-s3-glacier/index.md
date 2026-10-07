@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/automated-deletion-of-vault-ar
 title: 'Guidance for Automated Deletion of Vault Archives in Amazon S3 Glacier'
 canonical_url: https://docs.aws.amazon.com/solutions/automated-deletion-of-vault-archives-in-amazon-s3-glacier/
 source: aws-documentation
-generated_on: 2026-10-05
+generated_on: 2026-10-06
 ---
 
 # Guidance for Automated Deletion of Vault Archives in Amazon S3 Glacier

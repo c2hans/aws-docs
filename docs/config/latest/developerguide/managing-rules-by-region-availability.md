@@ -5711,6 +5711,8 @@ AWS Config currently supports the following managed rules. Before using these ru
 + [emr-block-public-access](./emr-block-public-access.html)
 + [emr-kerberos-enabled](./emr-kerberos-enabled.html)
 + [emr-master-no-public-ip](./emr-master-no-public-ip.html)
++ [emr-security-configuration-encryption-rest](./emr-security-configuration-encryption-rest.html)
++ [emr-security-configuration-encryption-transit](./emr-security-configuration-encryption-transit.html)
 + [encrypted-volumes](./encrypted-volumes.html)
 + [fsx-openzfs-copy-tags-enabled](./fsx-openzfs-copy-tags-enabled.html)
 + [fsx-openzfs-deployment-type-check](./fsx-openzfs-deployment-type-check.html)

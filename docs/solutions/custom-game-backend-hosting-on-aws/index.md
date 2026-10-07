@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/custom-game-backend-hosting-on
 title: 'Guidance for Custom Game Backend Hosting on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/custom-game-backend-hosting-on-aws/
 source: aws-documentation
-generated_on: 2026-10-05
+generated_on: 2026-10-06
 ---
 
 # Guidance for Custom Game Backend Hosting on AWS

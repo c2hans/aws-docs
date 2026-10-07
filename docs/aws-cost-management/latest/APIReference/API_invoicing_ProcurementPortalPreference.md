@@ -105,12 +105,12 @@ Pattern: `[\s\S]*`
 Required: No
 
  ** MarketplacePunchOutEnabled **   <a name="awscostmanagement-Type-invoicing_ProcurementPortalPreference-MarketplacePunchOutEnabled"></a>
-Indicates whether Marketplace PunchOut is enabled for this procurement portal preference. Defaults to `false`.
+Indicates whether AWS Marketplace PunchOut is enabled for this procurement portal preference. Defaults to `false`.
 Type: Boolean
 Required: No
 
  ** MarketplacePunchOutPreference **   <a name="awscostmanagement-Type-invoicing_ProcurementPortalPreference-MarketplacePunchOutPreference"></a>
-The Marketplace PunchOut configuration for this procurement portal preference. This is present when `MarketplacePunchOutEnabled` is `true`.
+The AWS Marketplace PunchOut configuration for this procurement portal preference. This is present when `MarketplacePunchOutEnabled` is `true`.
 Type: [MarketplacePunchOutPreference](API_invoicing_MarketplacePunchOutPreference.md) object
 Required: No
 

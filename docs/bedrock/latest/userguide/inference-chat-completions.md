@@ -12,6 +12,9 @@ The OpenAI Chat Completions API generates conversational responses using Amazon 
 | bedrock-runtime (recommended) | https://bedrock-runtime.{region}.amazonaws.com/openai/v1/chat/completions | AWS credentials (SigV4) or Amazon Bedrock API key |
 | bedrock-mantle (compatibility) | https://bedrock-mantle.{region}.api.aws/v1/chat/completions | Amazon Bedrock API key or AWS credentials |
 
+**Note**
+On `bedrock-mantle`, the path prefix varies by model. Most models are served under `/v1`, as shown in the preceding table, but some are served under `/openai/v1` instead. A request that uses the wrong prefix for a model is rejected with `model `<model-id>` isn't supported on this route`. To confirm the base URL for a specific model, see the **Programmatic Access** table on its card in [Models at a glance](model-cards.md).
+
 Each endpoint has its own per-model token quotas. For details on the quotas applied to traffic on each endpoint, see [Quotas for the bedrock-runtime endpoint](quotas-runtime.md) and [Quotas for the bedrock-mantle endpoint](quotas-mantle.md).
 
 ## Chat Completions with the bedrock-runtime endpoint

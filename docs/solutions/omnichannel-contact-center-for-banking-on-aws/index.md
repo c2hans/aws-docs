@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/omnichannel-contact-center-for
 title: 'Guidance for Omnichannel Contact Center for Banking on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/omnichannel-contact-center-for-banking-on-aws/
 source: aws-documentation
-generated_on: 2026-10-05
+generated_on: 2026-10-06
 ---
 
 # Guidance for Omnichannel Contact Center for Banking on AWS

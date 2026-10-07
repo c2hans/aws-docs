@@ -62,7 +62,7 @@ Setting a custom embedding length is optional. The embedding default length is 1
 ## Preparing datasets
 <a name="titanmm-datasets"></a>
 
-For the training dataset, create a `.jsonl`file with multiple JSON lines. Each JSON line contains both an `image-ref` and `caption` attributes similar to [Sagemaker Augmented Manifest format](sagemaker/latest/dg/augmented-manifest.html). A validation dataset is required. Auto-captioning is not currently supported.
+For the training dataset, create a `.jsonl`file with multiple JSON lines. Each JSON line contains both an `image-ref` and `caption` attributes similar to [Sagemaker Augmented Manifest format](https://docs.aws.amazon.com/sagemaker/latest/dg/augmented-manifest.html). A validation dataset is required. Auto-captioning is not currently supported.
 
 ```
    {"image-ref": "s3://bucket-1/folder1/0001.png", "caption": "some text"}
@@ -72,7 +72,7 @@ For the training dataset, create a `.jsonl`file with multiple JSON lines. Each J
 
 For both the training and validation datasets, you will create `.jsonl`files with multiple JSON lines.
 
-The Amazon S3 paths need to be in the same folders where you have provided permissions for Amazon Bedrock to access the data by attaching an IAM policy to your Amazon Bedrock service role. For more information on granting an IAM policies for training data, see [Grant custom jobs access to your training data](bedrock/latest/userguide/security_iam_id-based-policy-examples.html#security_iam_id-based-policy-examples-model-customization).
+The Amazon S3 paths need to be in the same folders where you have provided permissions for Amazon Bedrock to access the data by attaching an IAM policy to your Amazon Bedrock service role. For more information on granting an IAM policies for training data, see [Grant custom jobs access to your training data](https://docs.aws.amazon.com/bedrock/latest/userguide/security_iam_id-based-policy-examples.html#security_iam_id-based-policy-examples-model-customization).
 
 ## Hyperparameters
 <a name="titanmm-hyperparameters"></a>

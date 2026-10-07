@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/building-a-sap-cloud-data-ware
 title: 'Guidance for Building a SAP Cloud Data Warehouse on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/building-a-sap-cloud-data-warehouse-on-aws/
 source: aws-documentation
-generated_on: 2026-10-05
+generated_on: 2026-10-06
 ---
 
 # Guidance for Building a SAP Cloud Data Warehouse on AWS

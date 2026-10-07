@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 
 The serverless model removes infrastructure management but also removes several cluster-level capabilities that exist on an Amazon OpenSearch Service domain. Plan for the following before you migrate to an Amazon OpenSearch Serverless NextGen collection.
 
- **Index size.** For an Amazon OpenSearch Serverless NextGen `SEARCH` or `VECTORSEARCH` collection, an index can hold up to 1 TiB of data. If a source index would exceed this limit, split it before migration or reduce its scope.
-
  **Request payload size.** Amazon OpenSearch Serverless NextGen enforces a maximum size for an individual indexing request. Reindex-from-Snapshot limits bulk requests with both `documentsSizePerBulkRequest` (default 10 MiB) and `documentsPerBulkRequest`. If backfill returns request-too-large errors against the collection, lower `documentsSizePerBulkRequest`; if many small documents still produce oversized requests, also lower `documentsPerBulkRequest`.
 
  **RFS work coordination.** RFS tracks shard leases and completion state in an OpenSearch-compatible coordination store. Do not set `documentBackfillConfig.useTargetClusterForWorkCoordination` to `true` for an Amazon OpenSearch Serverless NextGen target; Serverless does not support the coordination indices RFS requires. Leave the setting at its default `false` so the workflow deploys a temporary single-node OpenSearch coordinator cluster.

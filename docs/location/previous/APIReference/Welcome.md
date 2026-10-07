@@ -7,4 +7,4 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/Welcome.h
 
 "Suite of geospatial services including Maps, Places, Routes, Tracking, and Geofencing"
 
-This document was last published on October 5, 2026.
+This document was last published on October 6, 2026.

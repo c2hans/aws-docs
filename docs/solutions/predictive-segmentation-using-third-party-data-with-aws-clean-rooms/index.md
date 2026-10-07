@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/predictive-segmentation-using-
 title: 'Guidance for Predictive Segmentation using Third-Party Data with AWS Clean Rooms'
 canonical_url: https://docs.aws.amazon.com/solutions/predictive-segmentation-using-third-party-data-with-aws-clean-rooms/
 source: aws-documentation
-generated_on: 2026-10-05
+generated_on: 2026-10-06
 ---
 
 # Guidance for Predictive Segmentation using Third-Party Data with AWS Clean Rooms

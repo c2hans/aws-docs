@@ -16,6 +16,32 @@ Exports table data to an S3 bucket. The table must have point in time recovery e
    "ExportFormat": "{{string}}",
    "ExportTime": {{number}},
    "ExportType": "{{string}}",
+   "FilterSpecification": {
+      "ExpressionAttributeNames": {
+         "{{string}}" : "{{string}}"
+      },
+      "ExpressionAttributeValues": {
+         "{{string}}" : {
+            "B": {{blob}},
+            "BOOL": {{boolean}},
+            "BS": [ {{blob}} ],
+            "L": [
+               "AttributeValue"
+            ],
+            "M": {
+               "{{string}}" : "AttributeValue"
+            },
+            "N": "{{string}}",
+            "NS": [ "{{string}}" ],
+            "NULL": {{boolean}},
+            "S": "{{string}}",
+            "SS": [ "{{string}}" ]
+         }
+      },
+      "FilterExpression": "{{string}}",
+      "KeyConditionExpression": "{{string}}",
+      "ProjectionExpression": "{{string}}"
+   },
    "IncrementalExportSpecification": {
       "ExportFromTime": {{number}},
       "ExportToTime": {{number}},
@@ -76,6 +102,11 @@ Type: String
 Valid Values: `FULL_EXPORT | INCREMENTAL_EXPORT`
 Required: No
 
+ ** [FilterSpecification](#API_ExportTableToPointInTime_RequestSyntax) **   <a name="DDB-ExportTableToPointInTime-request-FilterSpecification"></a>
+The criteria used to filter which items are included in the point-in-time export. When you specify this parameter, only items that match the key conditions and filter expressions are exported.
+Type: [FilterSpecification](API_FilterSpecification.md) object
+Required: No
+
  ** [IncrementalExportSpecification](#API_ExportTableToPointInTime_RequestSyntax) **   <a name="DDB-ExportTableToPointInTime-request-IncrementalExportSpecification"></a>
 Optional object containing the parameters specific to an incremental export.
 Type: [IncrementalExportSpecification](API_IncrementalExportSpecification.md) object
@@ -125,6 +156,32 @@ Required: No
       "ExportType": "string",
       "FailureCode": "string",
       "FailureMessage": "string",
+      "FilterSpecification": {
+         "ExpressionAttributeNames": {
+            "string" : "string"
+         },
+         "ExpressionAttributeValues": {
+            "string" : {
+               "B": blob,
+               "BOOL": boolean,
+               "BS": [ blob ],
+               "L": [
+                  "AttributeValue"
+               ],
+               "M": {
+                  "string" : "AttributeValue"
+               },
+               "N": "string",
+               "NS": [ "string" ],
+               "NULL": boolean,
+               "S": "string",
+               "SS": [ "string" ]
+            }
+         },
+         "FilterExpression": "string",
+         "KeyConditionExpression": "string",
+         "ProjectionExpression": "string"
+      },
       "IncrementalExportSpecification": {
          "ExportFromTime": number,
          "ExportToTime": number,

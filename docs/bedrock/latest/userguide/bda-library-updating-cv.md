@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bda-library-upd
 # Updating Vocabulary Entities
 <a name="bda-library-updating-cv"></a>
 
-Use the [InvokeDataAutomationLibraryIngestionJob](bedrock/latest/APIReference/API_data-automation_InvokeDataAutomationLibraryIngestionJob.html) with "UPSERT" operation type to update existing vocabulary entities for the same entityId. This will replace the entire entity with the new content.
+Use the [InvokeDataAutomationLibraryIngestionJob](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-automation_InvokeDataAutomationLibraryIngestionJob.html) with "UPSERT" operation type to update existing vocabulary entities for the same entityId. This will replace the entire entity with the new content.
 
 **Important**
 UPSERT operations are clobber-style at the entity level. The entire entity is replaced, not merged.

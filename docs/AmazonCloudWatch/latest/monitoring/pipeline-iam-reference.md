@@ -805,3 +805,85 @@ To use AI-assisted processor configuration in the CloudWatch pipelines console, 
     ]
 }
 ```
+
+## Configuring lookup processor permissions
+<a name="lookup-processor-permissions"></a>
+
+If your pipeline configuration includes a Lookup processor, the source role needs to have the `logs:GetLookupTable` permission on the lookup table ARN. The role must also be assumable by `logs.amazonaws.com`.
+
+Add the following statement to the source role's permissions policy, for all source types.
+
+**Example Permissions policy statement for lookup table access**
+
+```
+{
+    "Sid": "LookupTableAccess",
+    "Effect": "Allow",
+    "Action": "logs:GetLookupTable",
+    "Resource": "arn:aws:logs:{{us-east-1}}:{{111122223333}}:lookup-table:{{your-lookup-table-name}}"
+}
+```
+
+Replace the following values in the policy:
++ The AWS Region (shown as `us-east-1`) – Replace with your own Region
++ The 12-digit AWS account ID (shown as `111122223333`) – Replace with your own account ID
++ {{your-lookup-table-name}} – The name of your lookup table
+
+The source role trust policy requirement differs by source type.
+
+**Custom data from CloudWatch Logs and vended AWS service logs**
+
+For [Custom data from CloudWatch Logs](#custom-data-cloudwatch-logs) and [Vended AWS service logs](#vended-service-logs), the role already trusts `logs.amazonaws.com`, so no trust policy change is required. The following trust policy shows the existing configuration.
+
+**Example Trust policy for CloudWatch Logs sources (no change required)**
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "logs.amazonaws.com"
+            },
+            "Action": "sts:AssumeRole"
+        }
+    ]
+}
+```
+
+**Third-party sources**
+
+For [Third-party sources (API Pull)](#third-party-api-pull) and [Third-party sources (S3 delivery)](#third-party-s3-delivery), add a second statement to the trust policy so that `logs.amazonaws.com` can assume the role in addition to the existing telemetry service principal. The following trust policy shows both statements.
+
+**Example Trust policy for third-party sources (add logs.amazonaws.com)**
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "telemetry-pipelines.observabilityadmin.amazonaws.com"
+            },
+            "Action": "sts:AssumeRole"
+        },
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "logs.amazonaws.com"
+            },
+            "Action": "sts:AssumeRole",
+            "Condition": {
+                "StringEquals": {
+                    "aws:SourceAccount": "{{111122223333}}"
+                }
+            }
+        }
+    ]
+}
+```
+
+**Note**
+If your caller identity policy scopes `iam:PassRole` with the `iam:PassedToService` condition, list `logs.amazonaws.com` alongside `telemetry-pipelines.observabilityadmin.amazonaws.com`. An unconditioned `iam:PassRole` grant already covers both. For more information, see [API caller permissions](#api-caller-permissions).

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/industrial-digital-twin-on-aws
 title: 'Guidance for Industrial Digital Twin on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/industrial-digital-twin-on-aws/
 source: aws-documentation
-generated_on: 2026-10-05
+generated_on: 2026-10-06
 ---
 
 # Guidance for Industrial Digital Twin on AWS

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/decision-guides/index.html
 title: 'AWS Decision Guides'
 canonical_url: https://docs.aws.amazon.com/decision-guides/
 source: aws-documentation
-generated_on: 2026-10-05
+generated_on: 2026-10-06
 ---
 
 # AWS Decision Guides
@@ -21,6 +21,7 @@ Decision guides provide structured comparisons and guidance to help you evaluate
 
 ## Recently updated
 
+- [Choosing an AWS storage service](/decision-guides/latest/decision-guides/choosing-aws-storage-service.html): Compare block, file, and object storage services to choose the right storage solution for your data access patterns. **Last updated: October 2026**
 - [Choosing an AWS serverless service](/decision-guides/latest/decision-guides/choosing-aws-serverless-service.html): Evaluate serverless compute, API, integration, data, and deployment services to choose the right combination for your workload. **Last updated: September 2026**
 - [Amazon Lightsail, AWS Elastic Beanstalk, or Amazon EC2?](/decision-guides/latest/decision-guides/lightsail-elastic-beanstalk-ec2.html): Compare simplified, managed, and full-control compute options for deploying web applications. **Last updated: September 2026**
 - [AWS Fargate or AWS Lambda?](/decision-guides/latest/decision-guides/fargate-or-lambda.html): Understand the differences between serverless containers and serverless functions to pick the right compute model. **Last updated: August 2026**
@@ -107,7 +108,7 @@ Choose the right serverless and integration services for your workloads. These g
 Choose the right AWS storage or database service for your data. AWS offers block, file, object, and cache storage options, plus purpose-built databases for relational, key-value, document, graph, and other data models.
 
 - [Choosing an AWS database service](/decision-guides/latest/decision-guides/databases-on-aws-how-to-choose.html): Evaluate relational, key-value, document, graph, and other purpose-built database services to match your data model. **Last updated: June 2026**
-- [Choosing an AWS storage service](/decision-guides/latest/decision-guides/choosing-aws-storage-service.html): Compare block, file, and object storage services to choose the right storage solution for your data access patterns. **Last updated: April 2025**
+- [Choosing an AWS storage service](/decision-guides/latest/decision-guides/choosing-aws-storage-service.html): Compare block, file, and object storage services to choose the right storage solution for your data access patterns. **Last updated: October 2026**
 
 ---
 

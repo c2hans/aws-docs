@@ -13,4 +13,4 @@ Use the following links to get started with the Control Catalog API:
 +  [Common parameters](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/CommonParameters.html): Parameters that all operations can use.
 +  [Common errors](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/CommonErrors.html): Client and server errors that all operations can return.
 
-This document was last published on October 5, 2026.
+This document was last published on October 6, 2026.

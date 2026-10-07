@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/claude-platform/index.html
 title: 'Claude Platform on AWS Documentation'
 canonical_url: https://docs.aws.amazon.com/claude-platform/
 source: aws-documentation
-generated_on: 2026-10-05
+generated_on: 2026-10-06
 ---
 
 # Claude Platform on AWS Documentation

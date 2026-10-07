@@ -143,7 +143,7 @@ context:
     subnet_id: subnet-09090909090
 ```
 
- **Issue:** Failure in deploying Generative AI Accelerator
+ **Issue:** Failure in deploying GenerativeAI Chatbot
 
 Error Message:
 
@@ -365,3 +365,93 @@ The `-e` (environment) and `-d` (domain) CLI flags do NOT bypass this validation
 1. To upgrade to the CLI version already installed, omit the version argument: `mdaa upgrade`.
 
 1. If `upgrade` prompts about a modified file such as `CLAUDE.md`, choose whether to keep your edits. Pass `--overwrite` to replace those files without prompting, or `--no-prompt` to leave them untouched.
+
+## Migrating from GAIA v1 to GAIA v2
+<a name="gaia-v1-to-v2-migration"></a>
+
+ `@aws-mdaa/gaia` (v1) has been removed in favor of `@aws-mdaa/gaia-v2`. This guide describes what changed, what does not have a drop-in equivalent, and how to migrate an existing deployment.
+
+**Note**
+ **Status:** v1 has been removed from the MDAA repository as of the v1.9.0 release. The previously published `@aws-mdaa/gaia@1.8.1` and `@aws-mdaa/gaia-l3-construct@1.8.1` packages remain available on the npm registry (marked deprecated) so existing deployments can continue to build while migrating. New features land in v2 only.
+
+### Why v2 exists
+<a name="why-v2-exists"></a>
+
+v2 is a re-architected GAIA backend. v1 and v2 are not bytecode-compatible, config-compatible, or data-compatible. The two modules ship as separately named packages so they can coexist in the same workspace.
+
+Summary of architectural differences:
+
+| Area | v1 (`@aws-mdaa/gaia`) | v2 (`@aws-mdaa/gaia-v2`) |
+| --- | --- | --- |
+| API entry point | API Gateway REST \+ WebSocket APIs | AppSync Events \+ API Gateway REST |
+| Auth | Cognito with custom authorizers | Cognito with direct AppSync/API Gateway authorization |
+| Real-time transport | WebSocket via API Gateway | AppSync Events |
+| Message brokering | SNS topic \+ SQS queues | Direct Lambda invocation via AppSync |
+| Model interface | SageMaker \+ Bedrock Lambdas behind SQS | Bedrock-first via Lambda data sources |
+| RAG engines | Aurora PgVector, Kendra | Bedrock Knowledge Bases (via `@aws-mdaa/bedrock-builder`) |
+| Ingestion pipeline | S3 event → ingestion SQS → Step Functions | S3 event → Bedrock Knowledge Base sync |
+| Frontend delivery | Customer-provided, hosted externally | Optional CloudFront distribution serving `aws-exports.json`  |
+| WAF | Fronting API Gateway | Fronting CloudFront |
+
+### Compatibility and upgrade path
+<a name="compatibility-and-upgrade-path"></a>
+
+There is **no in-place upgrade** from v1 to v2. Deployed v1 resources are not migrated to v2 by running the v2 module against an existing v1 config. Plan migration as a parallel deployment followed by cutover.
+
+Recommended approach:
+
+1.  **Deploy v2 alongside v1** in a new domain or environment inside your existing `mdaa.yaml`. Let both run side by side during migration.
+
+1.  **Re-create your knowledge content** in v2’s Bedrock Knowledge Base. v1’s RAG stores (Aurora PgVector indices, Kendra indices) do not port directly.
+
+1.  **Update your frontend** to target v2’s AppSync Events endpoint and REST endpoint. The runtime request/response shapes differ from v1; inspect the deployed v2 API (API Gateway console / AppSync schema) for the current contract. `SCHEMA.md` documents the module’s deployment configuration, not the runtime API payloads.
+
+1.  **Cut over traffic** once you have validated v2. Leave v1 deployed until you are confident in v2, then destroy the v1 stack.
+
+### Config migration
+<a name="config-migration"></a>
+
+v1 and v2 configs are not interchangeable. Some key-by-key pointers:
+
+#### Things that map cleanly
+<a name="things-that-map-cleanly"></a>
++  `gaia.waf` - conceptually the same. v2’s WAF sits in front of CloudFront, not API Gateway. Configuration shape is similar but property names differ. Review `@aws-mdaa/gaia-v2’s schema.
++  `gaia.cognito` - user pool and identity pool config concepts carry over. v2 adds `authProvider` for autologin via federated IdPs (for example `EntraID-OIDC`).
++  `nag_suppressions` - identical shape; move any suppressions from the v1 config into the v2 config as-is.
++  `sagemakerBlueprint`, `service_catalog_product_config` - shared across v1 and v2.
+
+#### Things that change
+<a name="things-that-change"></a>
++  `gaia.ragEngines` - v1 supported Aurora PgVector and Kendra as first-class RAG stores. v2 delegates RAG to `@aws-mdaa/bedrock-builder`, which uses Bedrock Knowledge Bases backed by OpenSearch Serverless by default. Existing indices will not port; re-ingest your documents through the bedrock-builder module.
++  `gaia.llms` - v1 had per-provider Lambda model interfaces (SageMaker, Bedrock). v2 targets Bedrock models and foundation-model-hosted endpoints. Custom SageMaker endpoints are not natively wired in v2; if you need them, configure them through `bedrock-builder’s custom data source or contribute a v2 enhancement.
++  `gaia.adminUi` (v2-only) - configures the optional CloudFront-served admin UI. No v1 equivalent.
+
+#### Things that go away
+<a name="things-that-go-away"></a>
++ SQS ingestion queue / SNS broker config - v2 has no SQS/SNS in the request path. Any tuning of queue visibility timeouts or SNS filter policies is not applicable.
++ Step Functions ingestion workflow - v2 uses Bedrock Knowledge Base native sync. Custom Step Functions branches are not supported in the built-in ingestion path.
++ Custom API Gateway authorizers - v2 uses Cognito authorizers directly; custom Lambda authorizer config does not carry over.
+
+### Frontend considerations
+<a name="frontend-considerations"></a>
+
+v1 exposed a REST API and a WebSocket API at API Gateway. v2 exposes a REST API at API Gateway and an AppSync Events endpoint for streaming. If you have an existing frontend built against v1:
++  **REST calls** will need endpoint URL updates and request/response schema changes. These runtime payloads are defined by the deployed v2 backend (inspect the API Gateway / AppSync definitions of your stack); v2’s `config-schema.json` describes the module’s deployment configuration, not the API payload shapes.
++  **WebSocket consumers** must migrate to an AppSync Events client. There is no adapter.
++  **Auth flow** is simpler in v2 because there are no custom authorizers. If you were using the v1 custom authorizer to inject per-user attributes, that logic moves into v2’s Cognito user pool triggers (`PreTokenGeneration`) or into your client.
+
+### Roll-back
+<a name="roll-back"></a>
+
+If you deploy v2 but decide to stay on v1, deleting the v2 stack returns you to the v1 state with no side effects, because the two run in isolated resource namespaces. Revert your `mdaa.yaml` to point at `@aws-mdaa/gaia` and redeploy. Your v1 data (DynamoDB tables, Aurora databases, S3 buckets) remains untouched by v2.
+
+### Open questions / out of scope
+<a name="open-questions-out-of-scope"></a>
++  **Aurora PgVector data migration to OpenSearch Serverless** - not provided. If you have production data in v1’s RAG store, plan to re-ingest documents rather than migrate vector data directly.
++  **Chat history migration** - v1 stores chat sessions in DynamoDB tables created by the v1 stack. v2 uses its own session tables with a different schema. A scripted migration tool is not provided; if required, file a feature request.
++  **Kendra migration** - v2 does not ship a Kendra data source out of the box. Continuing Kendra use is possible through `bedrock-builder` with a custom data source, but it is not a default.
+
+### Questions or gaps
+<a name="questions-or-gaps"></a>
+
+If you hit a migration scenario not covered here, open an issue against the [MDAA repository](https://github.com/aws/modern-data-architecture-accelerator) and tag it `gaia-v2-migration`. The MDAA maintainers will either extend this guide or point you at a workaround.

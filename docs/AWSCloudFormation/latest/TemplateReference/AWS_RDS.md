@@ -11,6 +11,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::RDS::ClusterSnapshot](aws-resource-rds-clustersnapshot.md)
 + [AWS::RDS::CustomDBEngineVersion](aws-resource-rds-customdbengineversion.md)
 + [AWS::RDS::DBCluster](aws-resource-rds-dbcluster.md)
++ [AWS::RDS::DBClusterEndpoint](aws-resource-rds-dbclusterendpoint.md)
 + [AWS::RDS::DBClusterParameterGroup](aws-resource-rds-dbclusterparametergroup.md)
 + [AWS::RDS::DBInstance](aws-resource-rds-dbinstance.md)
 + [AWS::RDS::DBParameterGroup](aws-resource-rds-dbparametergroup.md)

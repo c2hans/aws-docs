@@ -112,12 +112,12 @@ Type: [EinvoiceDeliveryPreference](API_invoicing_EinvoiceDeliveryPreference.md) 
 Required: No
 
  ** [MarketplacePunchOutEnabled](#API_invoicing_CreateProcurementPortalPreference_RequestSyntax) **   <a name="awscostmanagement-invoicing_CreateProcurementPortalPreference-request-MarketplacePunchOutEnabled"></a>
-Specifies whether Marketplace PunchOut is enabled for this procurement portal connection. The default value is false.
+Specifies whether AWS Marketplace PunchOut is enabled for this procurement portal connection. The default value is false.
 Type: Boolean
 Required: No
 
  ** [MarketplacePunchOutPreference](#API_invoicing_CreateProcurementPortalPreference_RequestSyntax) **   <a name="awscostmanagement-invoicing_CreateProcurementPortalPreference-request-MarketplacePunchOutPreference"></a>
-The configuration for Marketplace PunchOut. This member is required for Coupa when `MarketplacePunchOutEnabled` is `true`.
+The configuration for AWS Marketplace PunchOut. This member is required for Coupa when `MarketplacePunchOutEnabled` is `true`.
 Type: [MarketplacePunchOutPreference](API_invoicing_MarketplacePunchOutPreference.md) object
 Required: No
 

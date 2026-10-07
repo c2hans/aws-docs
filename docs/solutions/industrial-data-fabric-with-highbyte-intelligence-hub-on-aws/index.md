@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/industrial-data-fabric-with-hi
 title: 'Guidance for Industrial Data Fabric with HighByte Intelligence Hub on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/industrial-data-fabric-with-highbyte-intelligence-hub-on-aws/
 source: aws-documentation
-generated_on: 2026-10-05
+generated_on: 2026-10-06
 ---
 
 # Guidance for Industrial Data Fabric with HighByte Intelligence Hub on AWS

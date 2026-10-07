@@ -69,9 +69,18 @@ For the `aws-marketplace:Subscribe` action only, you can use the `aws-marketplac
 Models from the following providers aren't sold through AWS Marketplace and don't have product keys, so you can't scope the `aws-marketplace` actions to them:
 Amazon
 DeepSeek
-Mistral AI
+Google
 Meta
+MiniMax
+Mistral AI
+Moonshot AI
+NVIDIA
 Qwen
+xAI
+Z.AI
+Some providers sell only part of their model catalog through AWS Marketplace. The following models don't have product keys even though other models from the same provider do:
+OpenAI open-weight models: gpt-oss-120b, gpt-oss-20b, gpt-oss-safeguard-120b, and gpt-oss-safeguard-20b. These models are available to all Amazon Bedrock users and don't require a AWS Marketplace subscription.
+Writer Palmyra Vision 7B.
 You can, however, prevent the usage of these models by denying Amazon Bedrock actions and specifying these model IDs in the `Resource` field. For an example, see [Prevent an identity from using a model after access has already been granted](#model-access-prevent-usage).
 
 Select a section to see IAM policy examples for a specific use case:

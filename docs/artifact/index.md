@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/artifact/index.html
 title: 'AWS Artifact Documentation'
 canonical_url: https://docs.aws.amazon.com/artifact/
 source: aws-documentation
-generated_on: 2026-10-05
+generated_on: 2026-10-06
 ---
 
 # AWS Artifact Documentation

@@ -67,8 +67,6 @@ The cache instance type. Valid values are
 +  `LARGE_12X`
 Historically, instance types were identified by an EC2-style value. As of July 2020, this is deprecated, and the generic identifiers above should be used.
 The following legacy instance types are available, but their use is discouraged:
-+  **T2\_SMALL**: A t2.small instance type.
-+  **T2\_MEDIUM**: A t2.medium instance type.
 +  **R4\_LARGE**: A r4.large instance type.
 +  **R4\_XLARGE**: A r4.xlarge instance type.
 +  **R4\_2XLARGE**: A r4.2xlarge instance type.

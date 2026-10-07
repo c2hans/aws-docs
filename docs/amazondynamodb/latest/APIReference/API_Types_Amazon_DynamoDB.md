@@ -49,6 +49,7 @@ The following data types are supported by Amazon DynamoDB:
 +  [ExportDescription](API_ExportDescription.md)
 +  [ExportSummary](API_ExportSummary.md)
 +  [FailureException](API_FailureException.md)
++  [FilterSpecification](API_FilterSpecification.md)
 +  [Get](API_Get.md)
 +  [GlobalSecondaryIndex](API_GlobalSecondaryIndex.md)
 +  [GlobalSecondaryIndexAutoScalingUpdate](API_GlobalSecondaryIndexAutoScalingUpdate.md)

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/cloudformation/index.html
 title: 'AWS CloudFormation Documentation'
 canonical_url: https://docs.aws.amazon.com/cloudformation/
 source: aws-documentation
-generated_on: 2026-10-05
+generated_on: 2026-10-06
 ---
 
 # AWS CloudFormation Documentation

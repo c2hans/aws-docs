@@ -150,7 +150,15 @@ green  open   my-index    bGfGtYoeSU6U6p8leR5NAQ   1   0          3            0
 ### Verifying no failed documents
 <a name="verify-failed-documents"></a>
 
-Use the following Amazon CloudWatch Logs Insights query to identify failed documents:
+If you enabled the failed document stream, confirm that the failed document count is `0`:
+
+```
+console failed-document-stream count
+```
+
+For details on enabling the stream, inspecting failures, and resubmitting documents, see [Tracking and remediating failed documents](tracking-failed-documents.md).
+
+If the failed document stream is not enabled, use the following Amazon CloudWatch Logs Insights query to identify failed documents:
 
 ```
 fields @message

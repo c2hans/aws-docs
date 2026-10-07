@@ -490,7 +490,7 @@ This feature is available in all AWS Regions where Connect Customer AI Agents is
 
 Connect Customer Outbound Campaigns now allows you to dial contacts in configurable priority order based on up to 10 profile attributes for voice campaigns and voice activities in journeys. This helps you focus agent time on the most valuable customers or time-sensitive opportunities, improving campaign effectiveness and conversion rates. Initial dial attempts always take precedence over reattempts, ensuring your priority order is maintained throughout campaign execution.
 
-To get started, configure sort attributes when building segments in Connect Customer Customer Profiles. For more information, see [Outbound Campaigns best practices](https://docs.aws.amazon.com/connect/latest/adminguide/outbound-campaigns-best-practices.html).
+To get started, configure sort attributes when building segments in Connect Customer Customer Profiles. For more information, see [Outbound Campaigns best practices](https://docs.aws.amazon.com/connect/latest/adminguide/outbound-campaign-best-practices.html#sorted-segments-best-practices).
 
 ### Outbound Campaigns now supports hourly segment refresh
 <a name="apr26-hourly-segment-refresh"></a>

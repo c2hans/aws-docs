@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/ses/index.html
 title: 'Amazon Simple Email Service Documentation'
 canonical_url: https://docs.aws.amazon.com/ses/
 source: aws-documentation
-generated_on: 2026-10-05
+generated_on: 2026-10-06
 ---
 
 # Amazon Simple Email Service Documentation

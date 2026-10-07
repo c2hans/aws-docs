@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/building-payment-systems-using
 title: 'Guidance for Building Payment Systems Using Event-Driven Architecture on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/building-payment-systems-using-event-driven-architecture-on-aws/
 source: aws-documentation
-generated_on: 2026-10-05
+generated_on: 2026-10-06
 ---
 
 # Guidance for Building Payment Systems Using Event-Driven Architecture on AWS

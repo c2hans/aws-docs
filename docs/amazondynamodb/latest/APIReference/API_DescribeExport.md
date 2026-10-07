@@ -47,6 +47,32 @@ Required: Yes
       "ExportType": "string",
       "FailureCode": "string",
       "FailureMessage": "string",
+      "FilterSpecification": {
+         "ExpressionAttributeNames": {
+            "string" : "string"
+         },
+         "ExpressionAttributeValues": {
+            "string" : {
+               "B": blob,
+               "BOOL": boolean,
+               "BS": [ blob ],
+               "L": [
+                  "AttributeValue"
+               ],
+               "M": {
+                  "string" : "AttributeValue"
+               },
+               "N": "string",
+               "NS": [ "string" ],
+               "NULL": boolean,
+               "S": "string",
+               "SS": [ "string" ]
+            }
+         },
+         "FilterExpression": "string",
+         "KeyConditionExpression": "string",
+         "ProjectionExpression": "string"
+      },
       "IncrementalExportSpecification": {
          "ExportFromTime": number,
          "ExportToTime": number,

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bda-library-add
 # Adding New Vocabulary Entities
 <a name="bda-library-adding-cv"></a>
 
-You can add vocabulary to your library using the [InvokeDataAutomationLibraryIngestionJob](bedrock/latest/APIReference/API_data-automation_InvokeDataAutomationLibraryIngestionJob.html) API. You can provide vocabulary through an S3 manifest file or inline payload.
+You can add vocabulary to your library using the [InvokeDataAutomationLibraryIngestionJob](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-automation_InvokeDataAutomationLibraryIngestionJob.html) API. You can provide vocabulary through an S3 manifest file or inline payload.
 
 **Important**
 UPSERT operations use a clobber-style replacement at the entity level, meaning the entire entity is replaced rather than merged with existing content.
@@ -43,7 +43,7 @@ aws s3 cp vocabulary-manifest.json s3://my-bucket/manifests/
 ### Step 3: Start the ingestion job
 <a name="bda-library-adding-cv-manifest-step3"></a>
 
-Use the [InvokeDataAutomationLibraryIngestionJob](bedrock/latest/APIReference/API_data-automation_InvokeDataAutomationLibraryIngestionJob.html) to start a vocabulary ingestion job.
+Use the [InvokeDataAutomationLibraryIngestionJob](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-automation_InvokeDataAutomationLibraryIngestionJob.html) to start a vocabulary ingestion job.
 
 **AWS CLI Example:**
 
@@ -83,7 +83,7 @@ aws bedrock-data-automation-data-automation invoke-data-automation-library-inges
 
 This option can be used for quick updates with up to 100 phrases.
 
-Use the [InvokeDataAutomationLibraryIngestionJob](bedrock/latest/APIReference/API_data-automation_InvokeDataAutomationLibraryIngestionJob.html) to start a vocabulary ingestion job.
+Use the [InvokeDataAutomationLibraryIngestionJob](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-automation_InvokeDataAutomationLibraryIngestionJob.html) to start a vocabulary ingestion job.
 
 **AWS CLI Example:**
 

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/partner-central/index.html
 title: 'AWS Partner Central Documentation'
 canonical_url: https://docs.aws.amazon.com/partner-central/
 source: aws-documentation
-generated_on: 2026-10-05
+generated_on: 2026-10-06
 ---
 
 # AWS Partner Central Documentation

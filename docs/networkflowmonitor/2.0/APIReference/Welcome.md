@@ -11,4 +11,4 @@ In addition, when you create a monitor, Network Flow Monitor provides a network 
 
 To learn more about Network Flow Monitor, see the [Network Flow Monitor User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-NetworkFlowMonitor.html) in the Amazon CloudWatch User Guide.
 
-This document was last published on October 5, 2026.
+This document was last published on October 6, 2026.

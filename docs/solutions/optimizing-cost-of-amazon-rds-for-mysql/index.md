@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/optimizing-cost-of-amazon-rds-
 title: 'Guidance for Optimizing Cost of Amazon RDS for MySQL'
 canonical_url: https://docs.aws.amazon.com/solutions/optimizing-cost-of-amazon-rds-for-mysql/
 source: aws-documentation
-generated_on: 2026-10-05
+generated_on: 2026-10-06
 ---
 
 # Guidance for Optimizing Cost of Amazon RDS for MySQL

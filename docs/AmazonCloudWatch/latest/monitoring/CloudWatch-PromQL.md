@@ -33,6 +33,7 @@ You can use PromQL queries interactively in [Running PromQL queries in Query Stu
 
 **Note**
 CloudWatch uses PromQL based on the Prometheus 3.0 specification. This includes support for UTF-8 metric names and label names.
+Some query patterns from Prometheus documentation assume cumulative histograms and don't apply to OpenTelemetry delta histograms. For more information, see [Querying histogram metrics](CloudWatch-PromQL-Querying.md#CloudWatch-PromQL-Querying-Histograms).
 
 The following concepts are fundamental to working with PromQL in CloudWatch.
 

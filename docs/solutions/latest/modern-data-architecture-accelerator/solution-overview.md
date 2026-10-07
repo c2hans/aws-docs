@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 # Accelerate the Deployment of Secure and Compliant Modern Data Architectures for Advanced Analytics and AI
 <a name="solution-overview"></a>
 
-Publication date: *September 2026 (Version 1.8.1). For updates, refer to the [release notes](https://github.com/aws/modern-data-architecture-accelerator/releases/) in the GitHub repository.*
+Publication date: *October 2026 (Version 1.9.0). For updates, refer to the [release notes](https://github.com/aws/modern-data-architecture-accelerator/releases/) in the GitHub repository.*
 
 The Modern Data Architecture Accelerator (MDAA) on AWS helps customers rapidly deploy and manage sophisticated data platform architectures on AWS. This solution provides a flexible framework that can adapt to most common analytics platform architectures, including basic Data Lakes and Data Warehouses, Lake House architectures, complex Data Mesh implementations, and generative AI development environments. The solution helps you establish a modern data foundation with built-in security, governance, and operational capabilities. Through a simplified configuration approach, you can:
 + Deploy generative AI development environments with integrated AWS services

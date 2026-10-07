@@ -1,0 +1,11 @@
+- [AgentCore Environment](project_agentcore-env.md) — the two in-scope accounts, tooling quirks, and AgentCore service/resource facts for Bedrock AgentCore runs
+- [AgentCore Test Methods](reference_agentcore-test-methods.md) — reusable techniques: boto3 setup, MCP SigV4 invoke, in-account HTTP collector, cheap resource substrates
+- [End User Messaging](reference_end-user-messaging.md) — client/op mapping, registration teardown cascade, ValidateNotifyCodeVerification status-only oracle
+- [AMG Grafana Test Methods](reference_amg-grafana-test-methods.md) — AMG v13 workspace provisioning, data-plane RBAC/SSRF/NAC facts, L4c privesc, L11 cross-account stop, plan reconciliation gotchas
+- [Elemental Inference](reference_elemental-inference.md) — EI regions, shared data-plane GetMetadata IDOR oracle, PutFeedPolicy wildcard-Principal validation bypass (confirmed), accessRoleArn same-account PassRole, s3:// SSRF filter
+- [Identity Center Test Methods](reference_identitycenter-test-methods.md) — IdC account-instance substrate, UpdateIdentityStore NetworkConfig L1 gap + self-lockout guard, TTI config-plane, token-exchange hard-stop, clean tenant isolation
+- [Security Hub V2 Exposure](reference_securityhub-v2-exposure.md) — SH V2 not enabled in test accts; freetrial DA-gate holds; DescribeSecurityHubV2 enforced; which exposure leads are perma-blocked
+- [Client VPN Authz-Policy Methods](reference_clientvpn-authz-methods.md) — no-endpoint DryRun IAM oracle, decode-authz action discovery, L1 refuted (dedicated actions), minimal endpoint recipe
+- [Security Agent Test Methods](reference_securityagent-test-methods.md) — securityagent 2025-09-06 resource model, endpoint-vs-actor-URI target-verification gap (L3), clean tenant isolation, ARN-scoping works, PassRole/xacct guards
+- [Bedrock Mantle / BMA](reference_bedrock-mantle-bma.md) — SigV4 raw-HTTPS technique, BMA agent-sessions NOT provisioned (401 preview-gate, both accts/3 regions), inference-only reachable, L10 Model-cond + L6 bearer both refuted, BearerTokenType enforced value LONG_TERM
+- [Deadline Cloud Test Methods](reference_deadline-cloud-test-methods.md) — cheap CMF substrate (no EC2), AssumeQueueRoleForWorker per-session-assignment service-enforcement (scope-break REFUTED), SMF-only remanence gating, clean AWS-authored IAM artifacts

@@ -9,10 +9,12 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 **Resource types**
 + [AWS::SMSVOICE::ConfigurationSet](aws-resource-smsvoice-configurationset.md)
++ [AWS::SMSVOICE::NotifyConfiguration](aws-resource-smsvoice-notifyconfiguration.md)
 + [AWS::SMSVOICE::OptOutList](aws-resource-smsvoice-optoutlist.md)
 + [AWS::SMSVOICE::PhoneNumber](aws-resource-smsvoice-phonenumber.md)
 + [AWS::SMSVOICE::Pool](aws-resource-smsvoice-pool.md)
 + [AWS::SMSVOICE::ProtectConfiguration](aws-resource-smsvoice-protectconfiguration.md)
++ [AWS::SMSVOICE::RcsAgent](aws-resource-smsvoice-rcsagent.md)
 + [AWS::SMSVOICE::Registration](aws-resource-smsvoice-registration.md)
 + [AWS::SMSVOICE::RegistrationAttachment](aws-resource-smsvoice-registrationattachment.md)
 + [AWS::SMSVOICE::ResourcePolicy](aws-resource-smsvoice-resourcepolicy.md)

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/identifying-and-resolving-dupl
 title: 'Guidance for Identifying and Resolving Duplicate Customer Records on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/identifying-and-resolving-duplicate-customer-records-on-aws/
 source: aws-documentation
-generated_on: 2026-10-05
+generated_on: 2026-10-06
 ---
 
 # Guidance for Identifying and Resolving Duplicate Customer Records on AWS

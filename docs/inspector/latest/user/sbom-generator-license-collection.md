@@ -37,6 +37,9 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/sbom-generator-lic
   ]
 ```
 
+**Note**
+ When a package nests child components – for example DPKG and RPM binary packages under a source package – each child reports its own license rather than inheriting the parent's license or being omitted. Nested-component license reporting applies to container, localhost, and volume scans run with `--collect-licenses`.
+
 ## Supported packages
 <a name="w2aac39c31b7"></a>
 
@@ -85,3 +88,6 @@ MIT AND Apache-2.0
 
 **Custom exception prefix**
  Custom exceptions are prefixed with `AdditionRef-`, such as `AdditionRef-CustomException`.
+
+**Non-license values**
+ Values that do not name a license are ignored rather than recorded. This includes the SPDX `NOASSERTION` and `NONE` assertions and the full text of a license.

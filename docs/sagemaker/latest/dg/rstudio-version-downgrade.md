@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/rstudio-version-down
 # Downgrade to a previous version
 <a name="rstudio-version-downgrade"></a>
 
-You can manually downgrade the version of your existing RStudio application to the `2024.04.2+764.pro1` version.
+You can manually downgrade the version of your existing RStudio application to the `2025.05.1+513.pro3` version.
 
 **To downgrade to a previous version**
 
@@ -19,16 +19,16 @@ You can manually downgrade the version of your existing RStudio application to t
        --app-name default
    ```
 
-1. Pass the corresponding `2024.04.2+764.pro1` ARN for your Region as part of the `update-domain` command. For a list of all available ARNs, see [Versioning](rstudio-version.md#rstudio-version-new). You must also pass an execution role ARN for the domain that provides permissions to update the domain.
+1. Pass the corresponding `2025.05.1+513.pro3` ARN for your Region as part of the `update-domain` command. For a list of all available ARNs, see [Versioning](rstudio-version.md#rstudio-version-new). You must also pass an execution role ARN for the domain that provides permissions to update the domain.
 
    ```
    aws sagemaker update-domain \
        --region {{region}} \
        --domain-id {{domainId}} \
-       --domain-settings-for-update "{\"RStudioServerProDomainSettingsForUpdate\":{\"DefaultResourceSpec\": {\"SageMakerImageArn\": \"{{arn-for-2024.04.2+764.pro1-version}}\", \"InstanceType\": \"system\"}, \"DomainExecutionRoleArn\": \"{{execution-role-arn}}\"}}"
+       --domain-settings-for-update "{\"RStudioServerProDomainSettingsForUpdate\":{\"DefaultResourceSpec\": {\"SageMakerImageArn\": \"{{arn-for-2025.05.1+513.pro3-version}}\", \"InstanceType\": \"system\"}, \"DomainExecutionRoleArn\": \"{{execution-role-arn}}\"}}"
    ```
 
-1. Create a new `RStudioServerPro` application in the existing domain. The RStudio version defaults to `2024.04.2+764.pro1`.
+1. Create a new `RStudioServerPro` application in the existing domain. RStudio sets the version to `2025.05.1+513.pro3`.
 
    ```
    aws sagemaker create-app \
@@ -38,4 +38,4 @@ You can manually downgrade the version of your existing RStudio application to t
        --app-name default
    ```
 
-Your `RStudioServerPro` application is now downgraded to version `2024.04.2+764.pro1`.
+Your `RStudioServerPro` application is now downgraded to version `2025.05.1+513.pro3`.

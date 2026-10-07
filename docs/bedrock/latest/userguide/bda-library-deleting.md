@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bda-library-del
 # Deleting a Library
 <a name="bda-library-deleting"></a>
 
-Use the [DeleteDataAutomationLibrary](bedrock/latest/APIReference/API_data-automation_DeleteDataAutomationLibrary.html) API to delete the library and its entities.
+Use the [DeleteDataAutomationLibrary](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-automation_DeleteDataAutomationLibrary.html) API to delete the library and its entities.
 
 ## AWS CLI Example:
 <a name="bda-library-deleting-cli"></a>

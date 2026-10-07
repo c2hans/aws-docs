@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/implementing-ai-powered-visual
 title: 'Guidance for Implementing AI-Powered Visual Quality Management with SoftServe EdgeInsight on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/implementing-ai-powered-visual-quality-management-with-softserve-edgeinsight-on-aws/
 source: aws-documentation
-generated_on: 2026-10-05
+generated_on: 2026-10-06
 ---
 
 # Guidance for Implementing AI-Powered Visual Quality Management with SoftServe EdgeInsight on AWS

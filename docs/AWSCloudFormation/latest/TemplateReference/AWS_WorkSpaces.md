@@ -9,6 +9,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 **Resource types**
 + [AWS::WorkSpaces::ConnectionAlias](aws-resource-workspaces-connectionalias.md)
++ [AWS::WorkSpaces::Directory](aws-resource-workspaces-directory.md)
 + [AWS::WorkSpaces::Workspace](aws-resource-workspaces-workspace.md)
 + [AWS::WorkSpaces::WorkspaceIpGroup](aws-resource-workspaces-workspaceipgroup.md)
 + [AWS::WorkSpaces::WorkspacesPool](aws-resource-workspaces-workspacespool.md)

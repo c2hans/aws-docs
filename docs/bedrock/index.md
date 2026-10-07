@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/bedrock/index.html
 title: 'Amazon Bedrock Documentation'
 canonical_url: https://docs.aws.amazon.com/bedrock/
 source: aws-documentation
-generated_on: 2026-10-05
+generated_on: 2026-10-06
 ---
 
 # Amazon Bedrock Documentation

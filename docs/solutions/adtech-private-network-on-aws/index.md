@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/adtech-private-network-on-aws/
 title: 'Guidance for AdTech Private Network on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/adtech-private-network-on-aws/
 source: aws-documentation
-generated_on: 2026-10-05
+generated_on: 2026-10-06
 ---
 
 # Guidance for AdTech Private Network on AWS

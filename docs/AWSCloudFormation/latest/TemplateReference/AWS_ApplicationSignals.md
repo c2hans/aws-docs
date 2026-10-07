@@ -10,4 +10,5 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 **Resource types**
 + [AWS::ApplicationSignals::Discovery](aws-resource-applicationsignals-discovery.md)
 + [AWS::ApplicationSignals::GroupingConfiguration](aws-resource-applicationsignals-groupingconfiguration.md)
++ [AWS::ApplicationSignals::InstrumentationConfig](aws-resource-applicationsignals-instrumentationconfig.md)
 + [AWS::ApplicationSignals::ServiceLevelObjective](aws-resource-applicationsignals-servicelevelobjective.md)

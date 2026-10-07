@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/drs/index.html
 title: 'AWS Elastic Disaster Recovery Documentation'
 canonical_url: https://docs.aws.amazon.com/drs/
 source: aws-documentation
-generated_on: 2026-10-05
+generated_on: 2026-10-06
 ---
 
 # AWS Elastic Disaster Recovery Documentation

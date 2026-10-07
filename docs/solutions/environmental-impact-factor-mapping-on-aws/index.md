@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/environmental-impact-factor-ma
 title: 'Guidance for Environmental Impact Factor Mapping on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/environmental-impact-factor-mapping-on-aws/
 source: aws-documentation
-generated_on: 2026-10-05
+generated_on: 2026-10-06
 ---
 
 # Guidance for Environmental Impact Factor Mapping on AWS

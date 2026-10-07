@@ -31,8 +31,7 @@ Gemma 4 26B-A4B is Google's mixture-of-experts model with 25.2 billion total par
 
 **Note**
 Gemma 4 models are available only on the `bedrock-mantle` endpoint.
-
-*On `bedrock-mantle`, this model is served at `/openai/v1/responses`, not the default `/v1/responses`.*
+On `bedrock-mantle`, Gemma 4 models are served under the `/openai/v1` path prefix, not the `/v1` prefix that most other models on this endpoint use. Use `/openai/v1/chat/completions` and `/openai/v1/responses`, and set your client's base URL to `https://bedrock-mantle.{region}.api.aws/openai/v1`. A request to `/v1/chat/completions` or `/v1/responses` is rejected with `model `google.gemma-4-26b-a4b` isn't supported on this route`.
 
 ## Capabilities and Features
 <a name="model-card-google-gemma-4-26b-a4b-capabilities"></a>
